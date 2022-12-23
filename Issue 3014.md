@@ -1,11 +1,21 @@
 # Issue 3014: ZZ.random_element -- corrupted docstring (easy to fix)
 
-Issue created by migration from https://trac.sagemath.org/ticket/3014
-
-Original creator: was
-
-Original creation time: 2008-04-24 02:42:40
-
+archive/issues_003014.json:
+```json
+{
+    "body": "Assignee: tba\n\n\n```\nsage: ZZ.random_element?\n...    \n            Return a random integer.\n    \n                ZZ.random_element() -- return an integer using the default \n                  distribution described below\n                ZZ.random_element(n) -- return an integer uniformly \n                  distributed between 0 and n-1, inclusive.\n                ZZ.random_element(min, max) -- return an integer uniformly \n                  destributed between min and max-1, inclusive.\n    \n            The default distribution for ZZ.random_element() is based on\n            X = trunc(4/(5R)), where R is a random variable\n            uniformly distributed between -1 and 1.  This gives\n            Pr(X = 0) = 1/5, and Pr(X = n) =\n            2/(5|n|(|n|+1)) for n \n    eq 0.  Most of the samples will be\n            small; -1, 0, and 1 occur with probability 1/5 each.  But we\n}}\n\nNotice the messed up second t the last line!\n\nThis hit me during my demo today. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3014\n\n",
+    "created_at": "2008-04-24T02:42:40Z",
+    "labels": [
+        "documentation",
+        "major",
+        "bug"
+    ],
+    "title": "ZZ.random_element -- corrupted docstring (easy to fix)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3014",
+    "user": "was"
+}
+```
 Assignee: tba
 
 
@@ -34,10 +44,25 @@ Notice the messed up second t the last line!
 
 This hit me during my demo today. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3014
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-04-25 06:48:21
+archive/issue_comments_020715.json:
+```json
+{
+    "body": "With the patch applied we get:\n\n```\n            The default distribution for ZZ.random_element() is based on\n            X = trunc(4/(5R)), where R is a random variable\n            uniformly distributed between -1 and 1.  This gives\n            Pr(X = 0) = 1/5, and Pr(X = n) = 2/(5|n|(|n|+1)) for n neq 0.\n            Most of the samples will be small; -1, 0, and 1 occur with\n            probability 1/5 each.  But we also have a small but\n            non-negligible proportion of ``outliers''; Pr(|X| >= n) = 4/(5n),\n            so for instance, we expect that |X| >= 1000 on one in\n            1250 samples.\n```\n",
+    "created_at": "2008-04-25T06:48:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3014",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3014#issuecomment-20715",
+    "user": "mabshoff"
+}
+```
 
 With the patch applied we get:
 
@@ -55,41 +80,109 @@ With the patch applied we get:
 
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-25 06:48:21
+archive/issue_comments_020716.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-04-25T06:48:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3014",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3014#issuecomment-20716",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-25 06:48:21
+archive/issue_comments_020717.json:
+```json
+{
+    "body": "Changing assignee from tba to mabshoff.",
+    "created_at": "2008-04-25T06:48:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3014",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3014#issuecomment-20717",
+    "user": "mabshoff"
+}
+```
 
 Changing assignee from tba to mabshoff.
 
 
+
 ---
+
+archive/issue_comments_020718.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-04-25T06:51:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3014",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3014#issuecomment-20718",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by gfurnish created at 2008-04-25 06:54:30
+archive/issue_comments_020719.json:
+```json
+{
+    "body": "applies cleanly and passes doctests",
+    "created_at": "2008-04-25T06:54:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3014",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3014#issuecomment-20719",
+    "user": "gfurnish"
+}
+```
 
 applies cleanly and passes doctests
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-25 06:55:20
+archive/issue_comments_020720.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-04-25T06:55:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3014",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3014#issuecomment-20720",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-25 06:55:20
+archive/issue_comments_020721.json:
+```json
+{
+    "body": "Merged in Sage 3.0.1.alpha0",
+    "created_at": "2008-04-25T06:55:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3014",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3014#issuecomment-20721",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.1.alpha0

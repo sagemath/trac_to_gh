@@ -1,11 +1,21 @@
 # Issue 6251: LogoutResource in sage/server/simple/twist.py doesn't really log you out
 
-Issue created by migration from https://trac.sagemath.org/ticket/6251
-
-Original creator: ddrake
-
-Original creation time: 2009-06-09 01:20:04
-
+archive/issues_006251.json:
+```json
+{
+    "body": "Assignee: boothby\n\nCC:  robertwb\n\nKeywords: simple server logout\n\nI'm using the simple server, and it seems like the logout command doesn't really log you out. From a regular Python (2.6) session:\n\n```\n>>> import urllib\n>>> def get_url(url): h = urllib.urlopen(url); data = h.read(); h.close(); return data \n... \n>>> print(get_url('http://localhost:8000/simple/login?username=admin&password=xxx'))\n{\n\"session\": \"515f64ef06471627e1d4a903ee921899\"\n}\n___S_A_G_E___\n\n>>> sess = \"515f64ef06471627e1d4a903ee921899\"\n>>> print(get_url('http://localhost:8000/simple/compute?session={0}&code=2*2'.format(sess)))\n{\n\"status\": \"done\",\n\"files\": [],\n\"cell_id\": 1\n}\n___S_A_G_E___\n\n4\n\n>>> print(get_url('http://localhost:8000/simple/logout?session={0}'.format(sess)))\n{\n\"session\": \"515f64ef06471627e1d4a903ee921899\"\n}\n___S_A_G_E___\n\n```\n\n\nBut you can still issue compute commands and have them evaluated. In the same Python session:\n\n```\n>>> print(get_url('http://localhost:8000/simple/compute?session={0}&code=3*3'.format(sess)))\n{\n\"status\": \"done\",\n\"files\": [],\n\"cell_id\": 3\n}\n___S_A_G_E___\n\n9\n\n```\n\nIn the LogoutResource class of twist.py, I see that we quit the worksheet and remove all the cells, but it's retaining some state -- note above that after we logout, the next compute command uses  cell 3. You never explicitly remove \"session\" from the sessions dictionary; is that something that should be done?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6251\n\n",
+    "created_at": "2009-06-09T01:20:04Z",
+    "labels": [
+        "notebook",
+        "major",
+        "bug"
+    ],
+    "title": "LogoutResource in sage/server/simple/twist.py doesn't really log you out",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6251",
+    "user": "ddrake"
+}
+```
 Assignee: boothby
 
 CC:  robertwb
@@ -62,29 +72,79 @@ ___S_A_G_E___
 In the LogoutResource class of twist.py, I see that we quit the worksheet and remove all the cells, but it's retaining some state -- note above that after we logout, the next compute command uses  cell 3. You never explicitly remove "session" from the sessions dictionary; is that something that should be done?
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6251
+
+
+
+
 
 ---
 
-Comment by ddrake created at 2009-06-09 01:24:33
+archive/issue_comments_049921.json:
+```json
+{
+    "body": "I should add a bit about why I'm concerned about this: I'm working on some SageTeX stuff that uses the simple server, and I had run maybe 20 tests and the server now had 20 running worksheets and was consuming tons of memory. I want to make sure that when you issue a logout command, the worksheet and session really are disposed of, so that we don't unncessarily use memory and resources.",
+    "created_at": "2009-06-09T01:24:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6251",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6251#issuecomment-49921",
+    "user": "ddrake"
+}
+```
 
 I should add a bit about why I'm concerned about this: I'm working on some SageTeX stuff that uses the simple server, and I had run maybe 20 tests and the server now had 20 running worksheets and was consuming tons of memory. I want to make sure that when you issue a logout command, the worksheet and session really are disposed of, so that we don't unncessarily use memory and resources.
 
 
+
 ---
 
-Comment by robertwb created at 2009-06-09 04:20:11
+archive/issue_comments_049922.json:
+```json
+{
+    "body": "Yes, this should be fixed. It's a security issue as well. I'm surprised the session is still good!",
+    "created_at": "2009-06-09T04:20:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6251",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6251#issuecomment-49922",
+    "user": "robertwb"
+}
+```
 
 Yes, this should be fixed. It's a security issue as well. I'm surprised the session is still good!
 
 
+
 ---
+
+archive/issue_comments_049923.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-06-09T07:23:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6251",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6251#issuecomment-49923",
+    "user": "ddrake"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by ddrake created at 2009-06-09 07:32:12
+archive/issue_comments_049924.json:
+```json
+{
+    "body": "I've attached one attempt at some kind of solution. I noticed that the SessionObject never gets deleted, so I thought I would just remove it from the \"sessions\" dictionary. This does make the session unavailable from the simple server, but I thought it might not properly get rid of the worksheet...but it seems like it does. Perhaps when the SessionObject gets deleted from the sessions dictionary, the worksheet and so on all get garbage collected?\n\nThe GC theory seems a bit plausible, especially since I noticed the line `sessions['test'] = session` in the file, which seems like some leftover debugging cruft...I deleted that line and things seem to work better, since now there isn't a spurious second reference to the session object.\n\nHere's a question: in the simple server, we create a worksheet, and to get rid of it, we simply delete its directory. Is that sufficient? My thinking is that it is, since we aren't creating the worksheet within the notebook, so there's no other record of the worksheet's existence; hence deleting the files removes all traces of the worksheet on disk. Is this correct?\n\nI've tested this some, and it seems to solve my problems. Please check this over!",
+    "created_at": "2009-06-09T07:32:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6251",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6251#issuecomment-49924",
+    "user": "ddrake"
+}
+```
 
 I've attached one attempt at some kind of solution. I noticed that the SessionObject never gets deleted, so I thought I would just remove it from the "sessions" dictionary. This does make the session unavailable from the simple server, but I thought it might not properly get rid of the worksheet...but it seems like it does. Perhaps when the SessionObject gets deleted from the sessions dictionary, the worksheet and so on all get garbage collected?
 
@@ -95,16 +155,38 @@ Here's a question: in the simple server, we create a worksheet, and to get rid o
 I've tested this some, and it seems to solve my problems. Please check this over!
 
 
+
 ---
 
-Comment by robertwb created at 2009-06-09 08:52:40
+archive/issue_comments_049925.json:
+```json
+{
+    "body": "Actually, if you log into the notebook you will see these transient worksheets get created (or at least did at one point). Everything lives in the directory, but there may be pointers to it from elsewhere. I think when the notebook restarts it does more extensive cleanup though.",
+    "created_at": "2009-06-09T08:52:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6251",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6251#issuecomment-49925",
+    "user": "robertwb"
+}
+```
 
 Actually, if you log into the notebook you will see these transient worksheets get created (or at least did at one point). Everything lives in the directory, but there may be pointers to it from elsewhere. I think when the notebook restarts it does more extensive cleanup though.
 
 
+
 ---
 
-Comment by ddrake created at 2009-06-09 09:30:27
+archive/issue_comments_049926.json:
+```json
+{
+    "body": "Replying to [comment:4 robertwb]:\n> Actually, if you log into the notebook you will see these transient worksheets get created (or at least did at one point). Everything lives in the directory, but there may be pointers to it from elsewhere. I think when the notebook restarts it does more extensive cleanup though. \n\nI don't see the transient worksheets in the usual web notebook, and if load `nb.sobj` after running some sessions, I don't see any worksheets there (but I might have missed something). I've tested this on my own machine, sage.math, and bsd.math.\n\nThe \"further-stuff\" patch removes the nodoctest, since the file does pass doctests. It also adds the server to the reference manual and improves the documentation a bit. It doesn't have anything to do with fixing the issue in this ticket, but while we're there, we might as well fix some things up.",
+    "created_at": "2009-06-09T09:30:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6251",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6251#issuecomment-49926",
+    "user": "ddrake"
+}
+```
 
 Replying to [comment:4 robertwb]:
 > Actually, if you log into the notebook you will see these transient worksheets get created (or at least did at one point). Everything lives in the directory, but there may be pointers to it from elsewhere. I think when the notebook restarts it does more extensive cleanup though. 
@@ -114,37 +196,92 @@ I don't see the transient worksheets in the usual web notebook, and if load `nb.
 The "further-stuff" patch removes the nodoctest, since the file does pass doctests. It also adds the server to the reference manual and improves the documentation a bit. It doesn't have anything to do with fixing the issue in this ticket, but while we're there, we might as well fix some things up.
 
 
+
 ---
 
-Comment by ddrake created at 2009-06-09 09:30:27
+archive/issue_comments_049927.json:
+```json
+{
+    "body": "Changing assignee from boothby to ddrake.",
+    "created_at": "2009-06-09T09:30:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6251",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6251#issuecomment-49927",
+    "user": "ddrake"
+}
+```
 
 Changing assignee from boothby to ddrake.
 
 
+
 ---
 
-Comment by ddrake created at 2009-06-09 09:30:27
+archive/issue_comments_049928.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-06-09T09:30:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6251",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6251#issuecomment-49928",
+    "user": "ddrake"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by ddrake created at 2009-06-15 07:17:06
+archive/issue_comments_049929.json:
+```json
+{
+    "body": "robertwb, can you review this? If this patch is good, I'd like to see it get into Sage very soon, so I can more publicly release my remote-sagetex script.",
+    "created_at": "2009-06-15T07:17:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6251",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6251#issuecomment-49929",
+    "user": "ddrake"
+}
+```
 
 robertwb, can you review this? If this patch is good, I'd like to see it get into Sage very soon, so I can more publicly release my remote-sagetex script.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-07-20 02:42:15
+archive/issue_comments_049930.json:
+```json
+{
+    "body": "One quick comment: in \"trac_6251-further-stuff.patch\", you don't need to add the file \"twist.rst\": it is autogenerated (as it says) -- it is created automatically because of the line you added to \"doc/en/reference/notebook.rst\".",
+    "created_at": "2009-07-20T02:42:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6251",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6251#issuecomment-49930",
+    "user": "jhpalmieri"
+}
+```
 
 One quick comment: in "trac_6251-further-stuff.patch", you don't need to add the file "twist.rst": it is autogenerated (as it says) -- it is created automatically because of the line you added to "doc/en/reference/notebook.rst".
 
 
+
 ---
 
-Comment by ddrake created at 2009-07-20 05:17:39
+archive/issue_comments_049931.json:
+```json
+{
+    "body": "Replying to [comment:7 jhpalmieri]:\n> One quick comment: in \"trac_6251-further-stuff.patch\", you don't need to add the file \"twist.rst\": it is autogenerated (as it says) -- it is created automatically because of the line you added to \"doc/en/reference/notebook.rst\".\n\nOkay, thanks. I still don't really know what I'm doing with the documentation system. I'll get an updated version of this patch up.",
+    "created_at": "2009-07-20T05:17:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6251",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6251#issuecomment-49931",
+    "user": "ddrake"
+}
+```
 
 Replying to [comment:7 jhpalmieri]:
 > One quick comment: in "trac_6251-further-stuff.patch", you don't need to add the file "twist.rst": it is autogenerated (as it says) -- it is created automatically because of the line you added to "doc/en/reference/notebook.rst".
@@ -152,27 +289,73 @@ Replying to [comment:7 jhpalmieri]:
 Okay, thanks. I still don't really know what I'm doing with the documentation system. I'll get an updated version of this patch up.
 
 
+
 ---
 
-Comment by was created at 2009-07-26 02:19:52
+archive/issue_comments_049932.json:
+```json
+{
+    "body": "Positive review subject to removing twist.rst from the patch.",
+    "created_at": "2009-07-26T02:19:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6251",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6251#issuecomment-49932",
+    "user": "was"
+}
+```
 
 Positive review subject to removing twist.rst from the patch.
 
 
+
 ---
+
+archive/issue_comments_049933.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-07-26T05:36:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6251",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6251#issuecomment-49933",
+    "user": "ddrake"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mvngu created at 2009-07-29 12:11:56
+archive/issue_comments_049934.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-07-29T12:11:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6251",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6251#issuecomment-49934",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mvngu created at 2009-07-29 12:11:56
+archive/issue_comments_049935.json:
+```json
+{
+    "body": "Merged both patches.",
+    "created_at": "2009-07-29T12:11:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6251",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6251#issuecomment-49935",
+    "user": "mvngu"
+}
+```
 
 Merged both patches.

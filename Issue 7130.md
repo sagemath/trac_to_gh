@@ -1,20 +1,30 @@
 # Issue 7130: libpng 1.2.35 always builds 32-bit libraries on Solaris.
 
-Issue created by migration from https://trac.sagemath.org/ticket/7130
-
-Original creator: drkirkby
-
-Original creation time: 2009-10-05 23:21:28
-
+archive/issues_007130.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  jsp\n\nUsing\n* A Sun Blade 2000 running Solaris 10 update 7\n* Sage 4.1.2.rc0\n* gcc 4.4.1\n* SAGE64 exported to \"yes\"\n\nWe can see that libpng is building 32-bit libraries, despite other packages are building 64-bit libraries. \n\n\n```\nlibpng12.so:    ELF 32-bit MSB dynamic lib SPARC32PLUS Version 1, V8+ Required, dynamically linked, not stripped\nlibpng12.so.0:  ELF 32-bit MSB dynamic lib SPARC32PLUS Version 1, V8+ Required, dynamically linked, not stripped\nlibpng12.so.0.35.0:     ELF 32-bit MSB dynamic lib SPARC32PLUS Version 1, V8+ Required, dynamically linked, not stripped\nlibreadline.a:  current ar archive, not a dynamic executable or shared object\nlibreadline.so: ELF 64-bit MSB dynamic lib SPARCV9 Version 1, dynamically linked, not stripped\nlibreadline.so.6:       ELF 64-bit MSB dynamic lib SPARCV9 Version 1, dynamically linked, not stripped\n```\n\n\nOther packages building 32-bit libraries, even when SAGE64 is set to  yes include, but are probably not limited to. \n* zlib #7128\n* libgpg_error #7129\n\nI will sort this package out after creating a new sage-env, which exports all the variables properly, including the flag for building 64-bit code, which is not always -m64.\n\nAlthough there is no support for AIX or HP-UX in Sage yet, we could potentially add it - I personally own machines running AIX and HP-UX.\n\nIBM's compiler on AIX uses -q64, and HP's on HP-UX uses +DD64.\n\nThe sensible way to resolve this is to add the correct flag on every platform. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7130\n\n",
+    "created_at": "2009-10-05T23:21:28Z",
+    "labels": [
+        "algebra",
+        "major",
+        "bug"
+    ],
+    "title": "libpng 1.2.35 always builds 32-bit libraries on Solaris.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7130",
+    "user": "drkirkby"
+}
+```
 Assignee: tbd
 
 CC:  jsp
 
 Using
- * A Sun Blade 2000 running Solaris 10 update 7
- * Sage 4.1.2.rc0
- * gcc 4.4.1
- * SAGE64 exported to "yes"
+* A Sun Blade 2000 running Solaris 10 update 7
+* Sage 4.1.2.rc0
+* gcc 4.4.1
+* SAGE64 exported to "yes"
 
 We can see that libpng is building 32-bit libraries, despite other packages are building 64-bit libraries. 
 
@@ -30,8 +40,8 @@ libreadline.so.6:       ELF 64-bit MSB dynamic lib SPARCV9 Version 1, dynamicall
 
 
 Other packages building 32-bit libraries, even when SAGE64 is set to  yes include, but are probably not limited to. 
- * zlib #7128
- * libgpg_error #7129
+* zlib #7128
+* libgpg_error #7129
 
 I will sort this package out after creating a new sage-env, which exports all the variables properly, including the flag for building 64-bit code, which is not always -m64.
 
@@ -41,24 +51,61 @@ IBM's compiler on AIX uses -q64, and HP's on HP-UX uses +DD64.
 
 The sensible way to resolve this is to add the correct flag on every platform. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7130
+
+
+
+
 
 ---
 
-Comment by drkirkby created at 2009-10-05 23:28:01
+archive/issue_comments_059138.json:
+```json
+{
+    "body": "Changing component from algebra to solaris.",
+    "created_at": "2009-10-05T23:28:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7130",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7130#issuecomment-59138",
+    "user": "drkirkby"
+}
+```
 
 Changing component from algebra to solaris.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-01-02 21:38:19
+archive/issue_comments_059139.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-01-02T21:38:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7130",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7130#issuecomment-59139",
+    "user": "drkirkby"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-01-02 21:38:19
+archive/issue_comments_059140.json:
+```json
+{
+    "body": "This is a quick hack, to get this to build only with only gcc and perhaps Sun Studio, as they both take -m64. A more portable solution, which will work for any compiler will be implemented later. \n\nhttp://boxen.math.washington.edu/home/kirkby/portability/libpng-1.2.35.p0/\n\ndave",
+    "created_at": "2010-01-02T21:38:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7130",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7130#issuecomment-59140",
+    "user": "drkirkby"
+}
+```
 
 This is a quick hack, to get this to build only with only gcc and perhaps Sun Studio, as they both take -m64. A more portable solution, which will work for any compiler will be implemented later. 
 
@@ -67,14 +114,38 @@ http://boxen.math.washington.edu/home/kirkby/portability/libpng-1.2.35.p0/
 dave
 
 
+
 ---
+
+archive/issue_comments_059141.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-01-28T15:15:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7130",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7130#issuecomment-59141",
+    "user": "drkirkby"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by drkirkby created at 2010-06-19 13:17:43
+archive/issue_comments_059142.json:
+```json
+{
+    "body": "This can be closed. The latest version of libpng (libpng-1.2.35.p2) in Sage builds fine without problems. I don't know what ticket number fixed it, but these two log entries \n\n\n\n```\nchangeset:   13:ae01944f408c\nuser:        Jaap Spies <jaapspies@gmail.com>\ndate:        Thu Feb 04 19:32:51 2010 +0100\nsummary:     Corrected stupid typo I thought I had corrected earlier.\n\nchangeset:   12:329a8eb6dd2e\nuser:        Jaap Spies <jaapspies@gmail.com>\ndate:        Wed Feb 03 19:09:41 2010 +0100\nsummary:     Let SAGE64=yes work not only on OSX, but also on Open Solaris and possibly on other platform\n```\n\n\nAs such, this can be closed as \"fixed\"",
+    "created_at": "2010-06-19T13:17:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7130",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7130#issuecomment-59142",
+    "user": "drkirkby"
+}
+```
 
 This can be closed. The latest version of libpng (libpng-1.2.35.p2) in Sage builds fine without problems. I don't know what ticket number fixed it, but these two log entries 
 
@@ -96,8 +167,19 @@ summary:     Let SAGE64=yes work not only on OSX, but also on Open Solaris and p
 As such, this can be closed as "fixed"
 
 
+
 ---
 
-Comment by drkirkby created at 2010-06-19 13:17:43
+archive/issue_comments_059143.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-06-19T13:17:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7130",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7130#issuecomment-59143",
+    "user": "drkirkby"
+}
+```
 
 Resolution: fixed

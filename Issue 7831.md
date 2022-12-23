@@ -1,11 +1,21 @@
 # Issue 7831: numpy-1.3.0.p2 fixes for FreeBSD
 
-Issue created by migration from https://trac.sagemath.org/ticket/7831
-
-Original creator: pjeremy
-
-Original creation time: 2010-01-03 09:14:11
-
+archive/issues_007831.json:
+```json
+{
+    "body": "Assignee: pjeremy\n\n* !__init!__.py needs a sage-specific patch to prefer sage_fortran on FreeBSD.  Without this, numpy reports:\n\n```\nRunning from numpy source directory.\nF2PY Version 2\nblas_opt_info:\nblas_mkl_info:\n  libraries mkl,vml,guide not found in /home/peter/sage/sage-4.3/local/lib\n  NOT AVAILABLE\n\natlas_blas_threads_info:\nSetting PTATLAS=ATLAS\n  libraries ptf77blas,ptcblas,atlas_r not found in /home/peter/sage/sage-4.3/local/lib\n  NOT AVAILABLE\n\natlas_blas_info:\n  libraries f77blas,cblas,atlas_r not found in /home/peter/sage/sage-4.3/local/lib\n  NOT AVAILABLE\n\n/home/peter/sage/sage-4.3/spkg/build/numpy-1.3.0.p2/src/numpy/distutils/system_info.py:1383: UserWarning: \n    Atlas (http://math-atlas.sourceforge.net/) libraries not found.\n    Directories to search for the libraries can be specified in the\n    numpy/distutils/site.cfg file (section [atlas]) or by setting\n    the ATLAS environment variable.\n  warnings.warn(AtlasNotFoundError.__doc__)\nblas_info:\n  FOUND:\n    libraries = ['blas']\n    library_dirs = ['/home/peter/sage/sage-4.3/local/lib']\n    language = f77\n\n  FOUND:\n```\n\n\nThis also causes matplotlib to die with\n\n```\nREQUIRED DEPENDENCIES\n                 numpy: no\n                        * You must install numpy 1.1 or later to build\n                        * matplotlib.\n```\n\n\n* By default, numpy references threaded atlas libraries, as well as a custom variant on the lapack library, on FreeBSD. The reasoning behind this is unclear - there is nothing in the numpy documentation to indicate whether a threaded or non-threaded atlas is needed and the publicly available SVN logs do not mention this code. A query to the numpy mailing list elicited a response that either threaded or non-threaded atlas can be used and suggesting that the special-casing for FreeBSD may be obsolete. By default, atlas is built non-threaded and r-2.6.1.p23 assumes a non-threaded atlas and fails when only the threaded libraries are installed. Based on this, the special casing for FreeBSD was removed from numpy - it now uses the same libraries irrespective of the host OS.  This part of the patch could potentially be integrated upstream but this has not been done yet.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7831\n\n",
+    "created_at": "2010-01-03T09:14:11Z",
+    "labels": [
+        "porting: BSD",
+        "major",
+        "bug"
+    ],
+    "title": "numpy-1.3.0.p2 fixes for FreeBSD",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7831",
+    "user": "pjeremy"
+}
+```
 Assignee: pjeremy
 
 * !__init!__.py needs a sage-specific patch to prefer sage_fortran on FreeBSD.  Without this, numpy reports:
@@ -53,42 +63,101 @@ REQUIRED DEPENDENCIES
 ```
 
 
-   * By default, numpy references threaded atlas libraries, as well as a custom variant on the lapack library, on FreeBSD. The reasoning behind this is unclear - there is nothing in the numpy documentation to indicate whether a threaded or non-threaded atlas is needed and the publicly available SVN logs do not mention this code. A query to the numpy mailing list elicited a response that either threaded or non-threaded atlas can be used and suggesting that the special-casing for FreeBSD may be obsolete. By default, atlas is built non-threaded and r-2.6.1.p23 assumes a non-threaded atlas and fails when only the threaded libraries are installed. Based on this, the special casing for FreeBSD was removed from numpy - it now uses the same libraries irrespective of the host OS.  This part of the patch could potentially be integrated upstream but this has not been done yet.
+* By default, numpy references threaded atlas libraries, as well as a custom variant on the lapack library, on FreeBSD. The reasoning behind this is unclear - there is nothing in the numpy documentation to indicate whether a threaded or non-threaded atlas is needed and the publicly available SVN logs do not mention this code. A query to the numpy mailing list elicited a response that either threaded or non-threaded atlas can be used and suggesting that the special-casing for FreeBSD may be obsolete. By default, atlas is built non-threaded and r-2.6.1.p23 assumes a non-threaded atlas and fails when only the threaded libraries are installed. Based on this, the special casing for FreeBSD was removed from numpy - it now uses the same libraries irrespective of the host OS.  This part of the patch could potentially be integrated upstream but this has not been done yet.
+
+Issue created by migration from https://trac.sagemath.org/ticket/7831
+
+
+
 
 
 ---
 
-Comment by pjeremy created at 2010-01-03 09:25:25
+archive/issue_comments_067821.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-01-03T09:25:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7831",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7831#issuecomment-67821",
+    "user": "pjeremy"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mhansen created at 2010-01-03 16:41:49
+archive/issue_comments_067822.json:
+```json
+{
+    "body": "These changes look good to me.  Could you look over the ones at #7321?  I'll handle making an spkg with all of these rolled together.\n\nThanks!",
+    "created_at": "2010-01-03T16:41:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7831",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7831#issuecomment-67822",
+    "user": "mhansen"
+}
+```
 
 These changes look good to me.  Could you look over the ones at #7321?  I'll handle making an spkg with all of these rolled together.
 
 Thanks!
 
 
+
 ---
 
-Comment by mhansen created at 2010-01-03 16:41:49
+archive/issue_comments_067823.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-01-03T16:41:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7831",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7831#issuecomment-67823",
+    "user": "mhansen"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mvngu created at 2010-02-13 07:22:12
+archive/issue_comments_067824.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_work.",
+    "created_at": "2010-02-13T07:22:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7831",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7831#issuecomment-67824",
+    "user": "mvngu"
+}
+```
 
 Changing status from positive_review to needs_work.
 
 
+
 ---
 
-Comment by mvngu created at 2010-02-13 07:22:12
+archive/issue_comments_067825.json:
+```json
+{
+    "body": "Updated spkg at\n\nhttp://sage.math.washington.edu/home/mvngu/spkg/standard/numpy/numpy-1.3.0.p3.spkg\n\nwhich incorporates the patch [7831.numpy.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7831/7831.numpy.patch). This spkg needs review by anyone other than me.",
+    "created_at": "2010-02-13T07:22:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7831",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7831#issuecomment-67825",
+    "user": "mvngu"
+}
+```
 
 Updated spkg at
 
@@ -97,117 +166,295 @@ http://sage.math.washington.edu/home/mvngu/spkg/standard/numpy/numpy-1.3.0.p3.sp
 which incorporates the patch [7831.numpy.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7831/7831.numpy.patch). This spkg needs review by anyone other than me.
 
 
+
 ---
 
-Comment by mvngu created at 2010-02-13 07:22:24
+archive/issue_comments_067826.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-02-13T07:22:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7831",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7831#issuecomment-67826",
+    "user": "mvngu"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by mhansen created at 2010-06-22 23:09:30
+archive/issue_comments_067827.json:
+```json
+{
+    "body": "Looks fine.  The the changes based on the newest spkg are at \n\nhttp://sage.math.washington.edu/home/mhansen/numpy-1.3.0.p4.spkg",
+    "created_at": "2010-06-22T23:09:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7831",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7831#issuecomment-67827",
+    "user": "mhansen"
+}
+```
 
 Looks fine.  The the changes based on the newest spkg are at 
 
 http://sage.math.washington.edu/home/mhansen/numpy-1.3.0.p4.spkg
 
 
+
 ---
 
-Comment by mhansen created at 2010-06-22 23:09:30
+archive/issue_comments_067828.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-06-22T23:09:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7831",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7831#issuecomment-67828",
+    "user": "mhansen"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by rlm created at 2010-06-25 05:34:44
+archive/issue_comments_067829.json:
+```json
+{
+    "body": "There is another ticket updating numpy as well: #8010. These two conflicting spkg's need to be resolved.",
+    "created_at": "2010-06-25T05:34:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7831",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7831#issuecomment-67829",
+    "user": "rlm"
+}
+```
 
 There is another ticket updating numpy as well: #8010. These two conflicting spkg's need to be resolved.
 
 
+
 ---
 
-Comment by rlm created at 2010-06-28 17:05:44
+archive/issue_comments_067830.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_work.",
+    "created_at": "2010-06-28T17:05:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7831",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7831#issuecomment-67830",
+    "user": "rlm"
+}
+```
 
 Changing status from positive_review to needs_work.
 
 
+
 ---
 
-Comment by kcrisman created at 2010-11-03 12:58:19
+archive/issue_comments_067831.json:
+```json
+{
+    "body": "Since #8010 has been closed, it would be helpful to know whether the changes here are still needed (which I can't test, unfortunately).",
+    "created_at": "2010-11-03T12:58:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7831",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7831#issuecomment-67831",
+    "user": "kcrisman"
+}
+```
 
 Since #8010 has been closed, it would be helpful to know whether the changes here are still needed (which I can't test, unfortunately).
 
 
+
 ---
 
-Comment by flawrence created at 2010-11-05 06:50:13
+archive/issue_comments_067832.json:
+```json
+{
+    "body": "Can someone verify whether this is fixed by other changes to the numpy package in 4.6.1alpha0?",
+    "created_at": "2010-11-05T06:50:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7831",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7831#issuecomment-67832",
+    "user": "flawrence"
+}
+```
 
 Can someone verify whether this is fixed by other changes to the numpy package in 4.6.1alpha0?
 
 
+
 ---
 
-Comment by pjeremy created at 2010-11-18 19:01:06
+archive/issue_comments_067833.json:
+```json
+{
+    "body": "The __init__.py changes don't appear to be needed any longer but the remaining fixes are still required.",
+    "created_at": "2010-11-18T19:01:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7831",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7831#issuecomment-67833",
+    "user": "pjeremy"
+}
+```
 
 The __init__.py changes don't appear to be needed any longer but the remaining fixes are still required.
 
 
+
 ---
+
+archive/issue_comments_067834.json:
+```json
+{
+    "body": "Attachment\n\nNote that numpy 1.5.1 is on the way to Sage - #10792.   It would be great to get this incorporated with that.",
+    "created_at": "2011-03-12T04:11:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7831",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7831#issuecomment-67834",
+    "user": "kcrisman"
+}
+```
 
 Attachment
 
 Note that numpy 1.5.1 is on the way to Sage - #10792.   It would be great to get this incorporated with that.
 
 
+
 ---
 
-Comment by kcrisman created at 2012-01-31 02:05:19
+archive/issue_comments_067835.json:
+```json
+{
+    "body": "Apparently [Stephen Montgomery-Smith](http://groups.google.com/group/sage-devel/browse_thread/thread/2feec7c5511c4ae5/857a00a9aa271f17) has had some success with this recently as a \"port\".",
+    "created_at": "2012-01-31T02:05:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7831",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7831#issuecomment-67835",
+    "user": "kcrisman"
+}
+```
 
 Apparently [Stephen Montgomery-Smith](http://groups.google.com/group/sage-devel/browse_thread/thread/2feec7c5511c4ae5/857a00a9aa271f17) has had some success with this recently as a "port".
 
 
+
 ---
 
-Comment by kcrisman created at 2012-06-20 15:56:31
+archive/issue_comments_067836.json:
+```json
+{
+    "body": "More success at [this thread](https://groups.google.com/forum/?fromgroups#!topic/sage-devel/yPGIKHRSANs).  Checking whether it was with a system version or Sage version.",
+    "created_at": "2012-06-20T15:56:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7831",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7831#issuecomment-67836",
+    "user": "kcrisman"
+}
+```
 
 More success at [this thread](https://groups.google.com/forum/?fromgroups#!topic/sage-devel/yPGIKHRSANs).  Checking whether it was with a system version or Sage version.
 
 
+
 ---
 
-Comment by kcrisman created at 2012-06-20 15:56:31
+archive/issue_comments_067837.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_info.",
+    "created_at": "2012-06-20T15:56:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7831",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7831#issuecomment-67837",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_work to needs_info.
 
 
+
 ---
 
-Comment by kcrisman created at 2012-06-20 18:24:38
+archive/issue_comments_067838.json:
+```json
+{
+    "body": "Just noting here that although this was the Sage version, Numpy upstream still has the special FreeBSD code, [here as of June 2012](https://github.com/numpy/numpy/blob/master/numpy/distutils/system_info.py#L972), so the patch definitely hasn't been applied.  My sense is that probably the R upgrades over the years is what made this obsolete.\n\nSo I'm putting this to positive review as it builds (and so does R) and passes the overwhelming majority of tests on FreeBSD 8 and 9, but leaving this info here in case in certain unusual cases this ends up being a problem after all.",
+    "created_at": "2012-06-20T18:24:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7831",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7831#issuecomment-67838",
+    "user": "kcrisman"
+}
+```
 
 Just noting here that although this was the Sage version, Numpy upstream still has the special FreeBSD code, [here as of June 2012](https://github.com/numpy/numpy/blob/master/numpy/distutils/system_info.py#L972), so the patch definitely hasn't been applied.  My sense is that probably the R upgrades over the years is what made this obsolete.
 
 So I'm putting this to positive review as it builds (and so does R) and passes the overwhelming majority of tests on FreeBSD 8 and 9, but leaving this info here in case in certain unusual cases this ends up being a problem after all.
 
 
+
 ---
 
-Comment by kcrisman created at 2012-06-20 18:24:38
+archive/issue_comments_067839.json:
+```json
+{
+    "body": "Changing status from needs_info to needs_review.",
+    "created_at": "2012-06-20T18:24:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7831",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7831#issuecomment-67839",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_info to needs_review.
 
 
+
 ---
 
-Comment by kcrisman created at 2012-06-20 18:25:05
+archive/issue_comments_067840.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2012-06-20T18:25:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7831",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7831#issuecomment-67840",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-07-04 07:11:32
+archive/issue_comments_067841.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2012-07-04T07:11:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7831",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7831#issuecomment-67841",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: duplicate

@@ -1,11 +1,21 @@
 # Issue 6811: prime_pi.plot is wrong (!)
 
-Issue created by migration from https://trac.sagemath.org/ticket/6811
-
-Original creator: was
-
-Original creation time: 2009-08-23 04:11:08
-
+archive/issues_006811.json:
+```json
+{
+    "body": "Assignee: was\n\nI was computed Riemann's analytic formula for pi(X), and was disturbed it wasn't converging to pi(X).  It turned out that the function in Sage for a while for plotting prime_pi is buggy! For example, try this:\n\n```\nsage: prime_pi.plot(5,10).show(gridlines='minor',frame=True)\nsage: prime_pi(8)\n4\n```\n\nYou'll see a plot that has a horizontal line at height 5 on it.  \n\nThis is very bad and embarrassing!\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6811\n\n",
+    "created_at": "2009-08-23T04:11:08Z",
+    "labels": [
+        "number theory",
+        "critical",
+        "bug"
+    ],
+    "title": "prime_pi.plot is wrong (!)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6811",
+    "user": "was"
+}
+```
 Assignee: was
 
 I was computed Riemann's analytic formula for pi(X), and was disturbed it wasn't converging to pi(X).  It turned out that the function in Sage for a while for plotting prime_pi is buggy! For example, try this:
@@ -21,10 +31,25 @@ You'll see a plot that has a horizontal line at height 5 on it.
 This is very bad and embarrassing!
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6811
+
+
+
+
 
 ---
 
-Comment by was created at 2009-08-23 05:13:43
+archive/issue_comments_056061.json:
+```json
+{
+    "body": "I've attached code to fix this bug.  It does things right.  \n\n  (1) I created a plot_step_function command that can be used to plot general step functions, and added it to the reference manual. \n\n  (2) I changed the current broken prime_pi.plot to use that and use a much easier to understand (hence right) algorithm to generate the plot.\n\n  (3) I fixed a bunch of ReST mistakes in prime_pi.pyx while I was at it.  \n\n  (4) I added prime_pi to the reference manual.",
+    "created_at": "2009-08-23T05:13:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6811",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6811#issuecomment-56061",
+    "user": "was"
+}
+```
 
 I've attached code to fix this bug.  It does things right.  
 
@@ -37,18 +62,42 @@ I've attached code to fix this bug.  It does things right.
   (4) I added prime_pi to the reference manual.
 
 
+
 ---
+
+archive/issue_comments_056062.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-08-23T05:14:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6811",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6811#issuecomment-56062",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by ohanar created at 2009-08-23 09:45:12
+archive/issue_comments_056063.json:
+```json
+{
+    "body": "Looks fine:\n1. Importing sage.plot.all is no longer necessary in prime_pi.pyx\n2. May want to change\n\n```\nfor i in range(len(v)):\n    w.append(v[i])\n    if i+1 < len(v):\n        w.append((v[i+1][0],v[i][1]))\n```\n\nto\n\n```\nfor i in range(len(v)-1):\n    w.append(v[i])\n    w.append((v[i+1][0],v[i][1]))\nw.append(v[len(v)-1])\n```\n\nfor readability.\n1. The plot_step_function always starts horizontal and ends vertically, this can sometimes lead to rather odd looking results in my opinion. For example, compare\n\n```\nsage: plot_step_function([(i,i^3) for i in range(6)])\nsage: plot_step_function([(i,i^3) for i in range(6)]) + line([(5,125),(6,125)])\n```\n\na. If we are to make any changes to this, we would need to consider uneven intervals of definition (say the function `[(i<sup>2,i</sup>3) for i in range(6)]`).\n1. Might be useful to use the plot_step_function elsewhere. For example, with Riemann sums it is either difficult or impossible to enable vertical lines, and the floor function is in the opposite situation.",
+    "created_at": "2009-08-23T09:45:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6811",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6811#issuecomment-56063",
+    "user": "ohanar"
+}
+```
 
 Looks fine:
- 1. Importing sage.plot.all is no longer necessary in prime_pi.pyx
- 1. May want to change
+1. Importing sage.plot.all is no longer necessary in prime_pi.pyx
+2. May want to change
 
 ```
 for i in range(len(v)):
@@ -67,47 +116,104 @@ w.append(v[len(v)-1])
 ```
 
 for readability.
- 1. The plot_step_function always starts horizontal and ends vertically, this can sometimes lead to rather odd looking results in my opinion. For example, compare
+1. The plot_step_function always starts horizontal and ends vertically, this can sometimes lead to rather odd looking results in my opinion. For example, compare
 
 ```
 sage: plot_step_function([(i,i^3) for i in range(6)])
 sage: plot_step_function([(i,i^3) for i in range(6)]) + line([(5,125),(6,125)])
 ```
 
-    a. If we are to make any changes to this, we would need to consider uneven intervals of definition (say the function `[(i<sup>2,i</sup>3) for i in range(6)]`).
- 1. Might be useful to use the plot_step_function elsewhere. For example, with Riemann sums it is either difficult or impossible to enable vertical lines, and the floor function is in the opposite situation.
+a. If we are to make any changes to this, we would need to consider uneven intervals of definition (say the function `[(i<sup>2,i</sup>3) for i in range(6)]`).
+1. Might be useful to use the plot_step_function elsewhere. For example, with Riemann sums it is either difficult or impossible to enable vertical lines, and the floor function is in the opposite situation.
+
 
 
 ---
 
-Comment by ohanar created at 2009-08-23 09:57:23
+archive/issue_comments_056064.json:
+```json
+{
+    "body": "Also, we need to fix the credit situation in prime_pi.pyx",
+    "created_at": "2009-08-23T09:57:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6811",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6811#issuecomment-56064",
+    "user": "ohanar"
+}
+```
 
 Also, we need to fix the credit situation in prime_pi.pyx
 
 
+
 ---
 
-Comment by mvngu created at 2009-08-24 06:03:47
+archive/issue_comments_056065.json:
+```json
+{
+    "body": "reviewer patch; fixes typos",
+    "created_at": "2009-08-24T06:03:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6811",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6811#issuecomment-56065",
+    "user": "mvngu"
+}
+```
 
 reviewer patch; fixes typos
 
 
+
 ---
+
+archive/issue_comments_056066.json:
+```json
+{
+    "body": "Attachment\n\nThe reviewer patch `trac_6811-reviewer.patch` fixes some typos in `trac_6811.patch`. One of these typos results in a warning when building the reference manual.",
+    "created_at": "2009-08-24T06:05:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6811",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6811#issuecomment-56066",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
 The reviewer patch `trac_6811-reviewer.patch` fixes some typos in `trac_6811.patch`. One of these typos results in a warning when building the reference manual.
 
 
+
 ---
 
-Comment by mvngu created at 2009-08-24 06:43:15
+archive/issue_comments_056067.json:
+```json
+{
+    "body": "Merged both patches.",
+    "created_at": "2009-08-24T06:43:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6811",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6811#issuecomment-56067",
+    "user": "mvngu"
+}
+```
 
 Merged both patches.
 
 
+
 ---
 
-Comment by mvngu created at 2009-08-24 06:43:15
+archive/issue_comments_056068.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-08-24T06:43:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6811",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6811#issuecomment-56068",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

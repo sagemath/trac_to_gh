@@ -1,11 +1,21 @@
 # Issue 6899: weird bug taking float of real part of a symbolic
 
-Issue created by migration from https://trac.sagemath.org/ticket/6899
-
-Original creator: was
-
-Original creation time: 2009-09-07 03:21:53
-
+archive/issues_006899.json:
+```json
+{
+    "body": "Assignee: burcin\n\nHere's a simple example:\n\n```\nsage: a = real((-I*float(1))^2); a\n-1.00000000000000\nsage: float(a)\nTraceback (most recent call last):\n...\nTypeError: can't convert complex to float; use abs(z)\nsage: b = a.simplify(); b\n-1.0\nsage: float(b)\n-1.0\n```\n\n\nDylan Thurston reported this on sage-support, but in a more complicated situation involving plotting. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6899\n\n",
+    "created_at": "2009-09-07T03:21:53Z",
+    "labels": [
+        "calculus",
+        "major",
+        "bug"
+    ],
+    "title": "weird bug taking float of real part of a symbolic",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6899",
+    "user": "was"
+}
+```
 Assignee: burcin
 
 Here's a simple example:
@@ -26,36 +36,97 @@ sage: float(b)
 
 Dylan Thurston reported this on sage-support, but in a more complicated situation involving plotting. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6899
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2009-09-07 20:57:27
+archive/issue_comments_056995.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-09-07T20:57:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6899",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6899#issuecomment-56995",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mhansen created at 2009-09-07 20:57:27
+archive/issue_comments_056996.json:
+```json
+{
+    "body": "The issue is that `ComplexNumber.__float__` was automatically throwing an error.  However, that method is used for _conversions_ as well as coercions.  I made it work when the complex number is actually real.",
+    "created_at": "2009-09-07T20:57:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6899",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6899#issuecomment-56996",
+    "user": "mhansen"
+}
+```
 
 The issue is that `ComplexNumber.__float__` was automatically throwing an error.  However, that method is used for _conversions_ as well as coercions.  I made it work when the complex number is actually real.
 
 
+
 ---
 
-Comment by mhansen created at 2009-09-07 20:57:27
+archive/issue_comments_056997.json:
+```json
+{
+    "body": "Changing assignee from burcin to mhansen.",
+    "created_at": "2009-09-07T20:57:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6899",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6899#issuecomment-56997",
+    "user": "mhansen"
+}
+```
 
 Changing assignee from burcin to mhansen.
 
 
+
 ---
 
-Comment by burcin created at 2009-09-12 18:55:37
+archive/issue_comments_056998.json:
+```json
+{
+    "body": "faster conversion to float",
+    "created_at": "2009-09-12T18:55:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6899",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6899#issuecomment-56998",
+    "user": "burcin"
+}
+```
 
 faster conversion to float
 
 
+
 ---
+
+archive/issue_comments_056999.json:
+```json
+{
+    "body": "Attachment\n\nattachment:trac_6899.take2.patch doesn't go through python function calls for the conversions. Thus, it is much faster.\n\nWith the python calls to `.is_real()` and `.real_part()`:\n\n\n```\nsage: t = CC([2^20,0])\nsage: float(t)\n1048576.0\nsage: %timeit u = float(t)\n100000 loops, best of 3: 1.48 \u00b5s per loop\n```\n\n\nUsing mpfr directly:\n\n\n```\nsage: t = CC([2^20,0])\nsage: float(t)\n1048576.0\nsage: %timeit u = float(t)\n1000000 loops, best of 3: 221 ns per loop\n```\n\n\nI give a positive review to Mike's changes. Mike, can you look over the two lines I touched?",
+    "created_at": "2009-09-12T19:02:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6899",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6899#issuecomment-56999",
+    "user": "burcin"
+}
+```
 
 Attachment
 
@@ -88,31 +159,75 @@ sage: %timeit u = float(t)
 I give a positive review to Mike's changes. Mike, can you look over the two lines I touched?
 
 
+
 ---
 
-Comment by kcrisman created at 2009-09-22 21:07:28
+archive/issue_comments_057000.json:
+```json
+{
+    "body": "I see several doctest failures in rings/polynomial/pbori.pyx (sorry, can't cut and paste it here) involving the stable_hash function.  \n\nOther than that passes tests in sage/rings and plot/complex_plot (perhaps a doctest should be added somewhere in plot/plot that shows this works?), and the mpfr fix seems appropriate, though perhaps an expert should weigh in...",
+    "created_at": "2009-09-22T21:07:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6899",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6899#issuecomment-57000",
+    "user": "kcrisman"
+}
+```
 
 I see several doctest failures in rings/polynomial/pbori.pyx (sorry, can't cut and paste it here) involving the stable_hash function.  
 
 Other than that passes tests in sage/rings and plot/complex_plot (perhaps a doctest should be added somewhere in plot/plot that shows this works?), and the mpfr fix seems appropriate, though perhaps an expert should weigh in...
 
 
+
 ---
 
-Comment by burcin created at 2009-09-22 21:50:59
+archive/issue_comments_057001.json:
+```json
+{
+    "body": "The errors with `stable_hash()` in `pbori.pyx` are probably a 32/64 bit issue caused by #6177. They definitely have nothing to do with this ticket.",
+    "created_at": "2009-09-22T21:50:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6899",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6899#issuecomment-57001",
+    "user": "burcin"
+}
+```
 
 The errors with `stable_hash()` in `pbori.pyx` are probably a 32/64 bit issue caused by #6177. They definitely have nothing to do with this ticket.
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-05 04:44:11
+archive/issue_comments_057002.json:
+```json
+{
+    "body": "I just tested this, and Burcin's changes look good to me.",
+    "created_at": "2009-10-05T04:44:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6899",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6899#issuecomment-57002",
+    "user": "mhansen"
+}
+```
 
 I just tested this, and Burcin's changes look good to me.
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-15 09:49:03
+archive/issue_comments_057003.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-10-15T09:49:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6899",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6899#issuecomment-57003",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

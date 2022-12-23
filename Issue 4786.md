@@ -1,11 +1,21 @@
 # Issue 4786: fix some bugs / typos in the solve function
 
-Issue created by migration from https://trac.sagemath.org/ticket/4786
-
-Original creator: was
-
-Original creation time: 2008-12-13 21:43:31
-
+archive/issues_004786.json:
+```json
+{
+    "body": "Assignee: burcin\n\n\n```\nIs this the right place for suggestions for the function \"solve\" ?\n\n1) The docstring has a typo : \"... solve an equation of system ...\"\nShould be an \"or\" here.\n\n2) The section\n\" solution_dict = True -- return a list of dictionaries containing the\nsolutions. \"\nmade me think that solution_dict defaults to True which is not the case.\nMaybe this could be made more clear.\n\n3) 'solution_dict = True' fails when only a single univariate equation\nis given. The solution is then not a list of lists and the conversion to\ndictionary fails:\n\nsage: var('a')\na\nsage: solve ([a^2-1],a,solution_dict=True)\n-\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/tom/<ipython console> in <module>()\n\n/usr/local/sage/local/lib/python2.5/site-packages/sage/calculus/equations.pyc\nin solve(f, *args, **kwds)\n  1436         sol_list = string_to_list_of_solutions(a)\n  1437         if 'solution_dict' in kwds and kwds['solution_dict']==True:\n- -> 1438             sol_dict=[dict([[eq.left(),eq.right()] for eq in\nsolution]) for solution in sol_list]\n  1439             return sol_dict\n  1440         else:\n\nAttributeError: 'SymbolicVariable' object has no attribute 'left'\n\n\nThanks for your great work.\nThomas\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4786\n\n",
+    "created_at": "2008-12-13T21:43:31Z",
+    "labels": [
+        "calculus",
+        "major",
+        "bug"
+    ],
+    "title": "fix some bugs / typos in the solve function",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4786",
+    "user": "was"
+}
+```
 Assignee: burcin
 
 
@@ -51,22 +61,61 @@ Thomas
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4786
+
+
+
+
 
 ---
+
+archive/issue_comments_036278.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-01-22T18:27:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4786",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4786#issuecomment-36278",
+    "user": "jason"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by jason created at 2009-01-22 18:27:45
+archive/issue_comments_036279.json:
+```json
+{
+    "body": "I believe this patch takes care of all the issues pointed out above.",
+    "created_at": "2009-01-22T18:27:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4786",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4786#issuecomment-36279",
+    "user": "jason"
+}
+```
 
 I believe this patch takes care of all the issues pointed out above.
 
 
+
 ---
 
-Comment by mhansen created at 2009-01-24 15:01:34
+archive/issue_comments_036280.json:
+```json
+{
+    "body": "I get the following failures:\n\n\n```\n**********************************************************************\nFile \"/opt/sage/devel/sage-main/sage/calculus/equations.py\", line 1392:\n    sage: solve([3==3, 1.00000000000000*x^3 == 0], x)\nExpected:\n    [x == 0]\nGot:\n    [[x == 0]]\n**********************************************************************\nFile \"/opt/sage/devel/sage-main/sage/calculus/equations.py\", line 1394:\n    sage: solve([1.00000000000000*x^3 == 0], x)\nExpected:\n    [x == 0]\nGot:\n    [[x == 0]]\n```\n",
+    "created_at": "2009-01-24T15:01:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4786",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4786#issuecomment-36280",
+    "user": "mhansen"
+}
+```
 
 I get the following failures:
 
@@ -90,36 +139,84 @@ Got:
 
 
 
+
 ---
+
+archive/issue_comments_036281.json:
+```json
+{
+    "body": "Attachment\n\nBased on 4.1.1",
+    "created_at": "2009-08-26T15:25:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4786",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4786#issuecomment-36281",
+    "user": "kcrisman"
+}
+```
 
 Attachment
 
 Based on 4.1.1
 
 
+
 ---
 
-Comment by kcrisman created at 2009-08-26 15:27:02
+archive/issue_comments_036282.json:
+```json
+{
+    "body": "Apply only second patch.  This should fix the same things post-Pynac switch, and passes all tests in sage/calculus and sage/symbolic.",
+    "created_at": "2009-08-26T15:27:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4786",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4786#issuecomment-36282",
+    "user": "kcrisman"
+}
+```
 
 Apply only second patch.  This should fix the same things post-Pynac switch, and passes all tests in sage/calculus and sage/symbolic.
 
 
+
 ---
 
-Comment by burcin created at 2009-09-10 12:38:50
+archive/issue_comments_036283.json:
+```json
+{
+    "body": "new version of kcrisman's patch",
+    "created_at": "2009-09-10T12:38:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4786",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4786#issuecomment-36283",
+    "user": "burcin"
+}
+```
 
 new version of kcrisman's patch
 
 
+
 ---
+
+archive/issue_comments_036284.json:
+```json
+{
+    "body": "Attachment\n\nHi Karl-Dieter,\n\nI uploaded a new version of your patch at attachment:trac_4786-solution_dict.take2.patch. The changes are:\n* used `sorted( d.items() )` to print a dictionary in a doctest\n* changed the block:\n {{{\n            try:\n                sol_dict=[dict([[eq.left(),eq.right()] for eq in solution]) for solution in sol_list]\n            except TypeError:\n                if not isinstance(sol_list[0],list):\n                    sol_list = [[i] for i in sol_list]\n                    sol_dict=[dict([[eq.left(),eq.right()] for eq in solution]) for solution in sol_list]\n }}}\n to\n {{{\n            if isinstance(sol_list[0], list):\n                sol_dict=[dict([[eq.left(),eq.right()] for eq in solution])\n                        for solution in sol_list]\n            else:\n                sol_dict=[{eq.left():eq.right()} for eq in sol_list]\n }}}\n\nPlease give this ticket a positive review if you're ok with my changes.\n\n----\n\nMinh, only apply: attachment:trac_4786-solution_dict.take2.patch",
+    "created_at": "2009-09-10T12:48:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4786",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4786#issuecomment-36284",
+    "user": "burcin"
+}
+```
 
 Attachment
 
 Hi Karl-Dieter,
 
 I uploaded a new version of your patch at attachment:trac_4786-solution_dict.take2.patch. The changes are:
- * used `sorted( d.items() )` to print a dictionary in a doctest
- * changed the block:
+* used `sorted( d.items() )` to print a dictionary in a doctest
+* changed the block:
  {{{
             try:
                 sol_dict=[dict([[eq.left(),eq.right()] for eq in solution]) for solution in sol_list]
@@ -144,9 +241,20 @@ Please give this ticket a positive review if you're ok with my changes.
 Minh, only apply: attachment:trac_4786-solution_dict.take2.patch
 
 
+
 ---
 
-Comment by kcrisman created at 2009-09-10 14:13:42
+archive/issue_comments_036285.json:
+```json
+{
+    "body": "That change sounds fine - I am used to catching Errors, but in this case isinstance makes much more sense.\n\nIronically, though:\n\n```\n**********************************************************************\nFile \"/Users/.../sage-4.1.1/devel/sage-morepatchtests/sage/symbolic/relation.py\", line 455:\n    sage: map(lambda x: sorted(x.items()), res)\nExpected:\n    [[(y, 4), (x, 2)], [(y, 4), (x, -2)]]\nGot:\n    [[(x, 2), (y, 4)], [(x, -2), (y, 4)]]\n**********************************************************************\n```\n\nSo I fixed that in the latest version, and hopefully now you can give it positive review!",
+    "created_at": "2009-09-10T14:13:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4786",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4786#issuecomment-36285",
+    "user": "kcrisman"
+}
+```
 
 That change sounds fine - I am used to catching Errors, but in this case isinstance makes much more sense.
 
@@ -166,50 +274,131 @@ Got:
 So I fixed that in the latest version, and hopefully now you can give it positive review!
 
 
+
 ---
+
+archive/issue_comments_036286.json:
+```json
+{
+    "body": "Attachment\n\nApply only take3.",
+    "created_at": "2009-09-10T14:14:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4786",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4786#issuecomment-36286",
+    "user": "kcrisman"
+}
+```
 
 Attachment
 
 Apply only take3.
 
 
+
 ---
+
+archive/issue_comments_036287.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-09-12T13:13:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4786",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4786#issuecomment-36287",
+    "user": "burcin"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by burcin created at 2009-09-12 13:15:45
+archive/issue_comments_036288.json:
+```json
+{
+    "body": "Somehow, `y` is shown first on my laptop, better to just print the values for each variable as Mike has done just a few lines above. \n\nI attached a new patch only with this doctest changed. Hopefully this is the last one. :)",
+    "created_at": "2009-09-12T13:15:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4786",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4786#issuecomment-36288",
+    "user": "burcin"
+}
+```
 
 Somehow, `y` is shown first on my laptop, better to just print the values for each variable as Mike has done just a few lines above. 
 
 I attached a new patch only with this doctest changed. Hopefully this is the last one. :)
 
 
+
 ---
 
-Comment by kcrisman created at 2009-09-13 00:22:15
+archive/issue_comments_036289.json:
+```json
+{
+    "body": "Looks good!  I guess I don't feel comfortable putting positive review on a patch I largely wrote, but I'll add my name to the reviewer list and you can add your name to the author list if you feel that's appropriate.",
+    "created_at": "2009-09-13T00:22:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4786",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4786#issuecomment-36289",
+    "user": "kcrisman"
+}
+```
 
 Looks good!  I guess I don't feel comfortable putting positive review on a patch I largely wrote, but I'll add my name to the reviewer list and you can add your name to the author list if you feel that's appropriate.
 
 
+
 ---
 
-Comment by burcin created at 2009-09-13 10:35:33
+archive/issue_comments_036290.json:
+```json
+{
+    "body": "Positive review.",
+    "created_at": "2009-09-13T10:35:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4786",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4786#issuecomment-36290",
+    "user": "burcin"
+}
+```
 
 Positive review.
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-15 19:34:55
+archive/issue_comments_036291.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-09-15T19:34:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4786",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4786#issuecomment-36291",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-15 19:34:55
+archive/issue_comments_036292.json:
+```json
+{
+    "body": "Merged `trac_4786-solution_dict.take4.patch`.",
+    "created_at": "2009-09-15T19:34:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4786",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4786#issuecomment-36292",
+    "user": "mvngu"
+}
+```
 
 Merged `trac_4786-solution_dict.take4.patch`.

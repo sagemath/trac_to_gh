@@ -1,11 +1,21 @@
 # Issue 7591: Boolean Polynomial Ring coercion broken
 
-Issue created by migration from https://trac.sagemath.org/ticket/7591
-
-Original creator: malb
-
-Original creation time: 2009-12-03 12:53:02
-
+archive/issues_007591.json:
+```json
+{
+    "body": "Assignee: malb\n\nCC:  burcin\n\nThis is really bad\n\n\n```\nsage: B.<a,b,c> = BooleanPolynomialRing(order='lex')\nsage: P.<a,b,c> = BooleanPolynomialRing(order='degrevlex')\nsage: P(B('a')) # good\na\nsage: B(P('c')) # urgh!\na\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7591\n\n",
+    "created_at": "2009-12-03T12:53:02Z",
+    "labels": [
+        "commutative algebra",
+        "major",
+        "bug"
+    ],
+    "title": "Boolean Polynomial Ring coercion broken",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7591",
+    "user": "malb"
+}
+```
 Assignee: malb
 
 CC:  burcin
@@ -23,37 +33,98 @@ a
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7591
+
+
+
+
 
 ---
 
-Comment by malb created at 2009-12-04 15:07:39
+archive/issue_comments_064721.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-12-04T15:07:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7591",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7591#issuecomment-64721",
+    "user": "malb"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by malb created at 2009-12-04 15:07:39
+archive/issue_comments_064722.json:
+```json
+{
+    "body": "The attached patch fixes the issue for me. Burcin, can I ask you to review this patch?",
+    "created_at": "2009-12-04T15:07:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7591",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7591#issuecomment-64722",
+    "user": "malb"
+}
+```
 
 The attached patch fixes the issue for me. Burcin, can I ask you to review this patch?
 
 
+
 ---
 
-Comment by burcin created at 2009-12-06 17:39:02
+archive/issue_comments_064723.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-12-06T17:39:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7591",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7591#issuecomment-64723",
+    "user": "burcin"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
+
+archive/issue_comments_064724.json:
+```json
+{
+    "body": "Attachment\n\nLooks good to me.",
+    "created_at": "2009-12-06T17:39:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7591",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7591#issuecomment-64724",
+    "user": "burcin"
+}
+```
 
 Attachment
 
 Looks good to me.
 
 
+
 ---
 
-Comment by mhansen created at 2009-12-07 08:09:21
+archive/issue_comments_064725.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-12-07T08:09:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7591",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7591#issuecomment-64725",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

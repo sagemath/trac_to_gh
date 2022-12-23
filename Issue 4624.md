@@ -1,11 +1,21 @@
 # Issue 4624: Sage 3.2.1.a1: add ipy_profile_sage.py to list of files copied when sdisting
 
-Issue created by migration from https://trac.sagemath.org/ticket/4624
-
-Original creator: mabshoff
-
-Original creation time: 2008-11-26 14:56:24
-
+archive/issues_004624.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nCC:  mhansen\n\nSigh:\n\n```\nsage-3.2.1.alpha2/spkg/standard/sage_scripts-3.2.1.alpha1$ hg stat\n! ipy_profile_sage.py\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4624\n\n",
+    "created_at": "2008-11-26T14:56:24Z",
+    "labels": [
+        "distribution",
+        "major",
+        "bug"
+    ],
+    "title": "Sage 3.2.1.a1: add ipy_profile_sage.py to list of files copied when sdisting",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4624",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 CC:  mhansen
@@ -18,17 +28,43 @@ sage-3.2.1.alpha2/spkg/standard/sage_scripts-3.2.1.alpha1$ hg stat
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4624
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-11-26 15:02:34
+archive/issue_comments_034774.json:
+```json
+{
+    "body": "Changing priority from major to blocker.",
+    "created_at": "2008-11-26T15:02:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4624",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4624#issuecomment-34774",
+    "user": "mabshoff"
+}
+```
 
 Changing priority from major to blocker.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-26 15:02:34
+archive/issue_comments_034775.json:
+```json
+{
+    "body": "One way to fix this is to rename the file sage-ipy_profile.py which is likely a lot less pain long term.\n\nMike: any thoughts?\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-26T15:02:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4624",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4624#issuecomment-34775",
+    "user": "mabshoff"
+}
+```
 
 One way to fix this is to rename the file sage-ipy_profile.py which is likely a lot less pain long term.
 
@@ -39,16 +75,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mhansen created at 2008-11-26 15:09:58
+archive/issue_comments_034776.json:
+```json
+{
+    "body": "This doesn't work because ipython wants it explictly named that way for looking up the profile.",
+    "created_at": "2008-11-26T15:09:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4624",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4624#issuecomment-34776",
+    "user": "mhansen"
+}
+```
 
 This doesn't work because ipython wants it explictly named that way for looking up the profile.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-26 15:15:45
+archive/issue_comments_034777.json:
+```json
+{
+    "body": "Replying to [comment:2 mhansen]:\n> This doesn't work because ipython wants it explictly named that way for looking up the profile.\n\nYep, I looked at the file and I came to the same conclusion. I have \"fixed\" the issue by correcting the sage_scripts repo in the 3.2.1.a1 tarball manually for now, but will take care of this once I catch some sleep.\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-26T15:15:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4624",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4624#issuecomment-34777",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:2 mhansen]:
 > This doesn't work because ipython wants it explictly named that way for looking up the profile.
@@ -60,12 +118,38 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_034778.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-11-27T01:35:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4624",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4624#issuecomment-34778",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_034779.json:
+```json
+{
+    "body": "Attachment\n\nWith the second patch this is good to go.\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-27T01:41:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4624",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4624#issuecomment-34779",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -76,15 +160,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-27 02:06:45
+archive/issue_comments_034780.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-11-27T02:06:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4624",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4624#issuecomment-34780",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-27 02:06:45
+archive/issue_comments_034781.json:
+```json
+{
+    "body": "Merged both patches in Sage 3.2.1.alpha2",
+    "created_at": "2008-11-27T02:06:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4624",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4624#issuecomment-34781",
+    "user": "mabshoff"
+}
+```
 
 Merged both patches in Sage 3.2.1.alpha2

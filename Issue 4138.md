@@ -1,11 +1,21 @@
 # Issue 4138: [with patch, needs review] Sage 3.1.2.rc5: fix documentation build issues
 
-Issue created by migration from https://trac.sagemath.org/ticket/4138
-
-Original creator: mabshoff
-
-Original creation time: 2008-09-17 03:39:34
-
+archive/issues_004138.json:
+```json
+{
+    "body": "Assignee: tba\n\nTwo patches, one for the documentation, one for the Sage library.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4138\n\n",
+    "created_at": "2008-09-17T03:39:34Z",
+    "labels": [
+        "documentation",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch, needs review] Sage 3.1.2.rc5: fix documentation build issues",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4138",
+    "user": "mabshoff"
+}
+```
 Assignee: tba
 
 Two patches, one for the documentation, one for the Sage library.
@@ -14,47 +24,132 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/4138
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-09-17 03:39:40
+archive/issue_comments_030039.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-09-17T03:39:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4138",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4138#issuecomment-30039",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-17 03:39:40
+archive/issue_comments_030040.json:
+```json
+{
+    "body": "Changing assignee from tba to mabshoff.",
+    "created_at": "2008-09-17T03:39:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4138",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4138#issuecomment-30040",
+    "user": "mabshoff"
+}
+```
 
 Changing assignee from tba to mabshoff.
 
 
+
 ---
+
+archive/issue_comments_030041.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-09-17T03:43:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4138",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4138#issuecomment-30041",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_030042.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-09-17T03:43:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4138",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4138#issuecomment-30042",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2008-09-17 03:44:23
+archive/issue_comments_030043.json:
+```json
+{
+    "body": "Look good to me.",
+    "created_at": "2008-09-17T03:44:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4138",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4138#issuecomment-30043",
+    "user": "mhansen"
+}
+```
 
 Look good to me.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-17 03:52:08
+archive/issue_comments_030044.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-09-17T03:52:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4138",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4138#issuecomment-30044",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-17 03:52:08
+archive/issue_comments_030045.json:
+```json
+{
+    "body": "Merged in Sage 3.1.2.rc5",
+    "created_at": "2008-09-17T03:52:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4138",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4138#issuecomment-30045",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.1.2.rc5

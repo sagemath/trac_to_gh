@@ -1,11 +1,21 @@
 # Issue 3595: the matplotlibrc file is missing
 
-Issue created by migration from https://trac.sagemath.org/ticket/3595
-
-Original creator: was
-
-Original creation time: 2008-07-07 23:14:18
-
+archive/issues_003595.json:
+```json
+{
+    "body": "Assignee: cwitty\n\nDelete or move your $HOME/.sage then:\n\n\n```\nbsd:sage-3.0.4.alpha2 was$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\ncp: /Users/was/build/sage-3.0.4.alpha2/matplotlibrc: No such file or directory\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3595\n\n",
+    "created_at": "2008-07-07T23:14:18Z",
+    "labels": [
+        "misc",
+        "blocker",
+        "bug"
+    ],
+    "title": "the matplotlibrc file is missing",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3595",
+    "user": "was"
+}
+```
 Assignee: cwitty
 
 Delete or move your $HOME/.sage then:
@@ -19,23 +29,60 @@ cp: /Users/was/build/sage-3.0.4.alpha2/matplotlibrc: No such file or directory
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3595
+
+
+
+
 
 ---
 
-Comment by was created at 2008-07-07 23:16:36
+archive/issue_comments_025407.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-07-07T23:16:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3595",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3595#issuecomment-25407",
+    "user": "was"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by was created at 2008-07-07 23:16:36
+archive/issue_comments_025408.json:
+```json
+{
+    "body": "I just put it back.",
+    "created_at": "2008-07-07T23:16:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3595",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3595#issuecomment-25408",
+    "user": "was"
+}
+```
 
 I just put it back.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-07 23:23:34
+archive/issue_comments_025409.json:
+```json
+{
+    "body": "Merged in Sage 3.0.4.rc0",
+    "created_at": "2008-07-07T23:23:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3595",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3595#issuecomment-25409",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.4.rc0

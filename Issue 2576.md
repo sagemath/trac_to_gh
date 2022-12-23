@@ -1,11 +1,21 @@
 # Issue 2576: preserve docstrings of decorated methods
 
-Issue created by migration from https://trac.sagemath.org/ticket/2576
-
-Original creator: was
-
-Original creation time: 2008-03-17 18:50:10
-
+archive/issues_002576.json:
+```json
+{
+    "body": "Assignee: tba\n\n\n```\n\nHi,\n\nHow does one preserve the behavior of docstrings when using\ndecorators?  I just noticed, for example, that I couldn't easily\naccess the docstring of various things in rings/polynomial/\nmulti_polynomial_ideal.py because they have been decorated.  It is\nunclear to me how to easily fix that - does anyone know a simple\nsolution?\n\nThanks,\nM. Hampton\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2576\n\n",
+    "created_at": "2008-03-17T18:50:10Z",
+    "labels": [
+        "documentation",
+        "major",
+        "bug"
+    ],
+    "title": "preserve docstrings of decorated methods",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2576",
+    "user": "was"
+}
+```
 Assignee: tba
 
 
@@ -25,15 +35,43 @@ M. Hampton
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2576
+
+
+
+
 
 ---
 
-Comment by was created at 2008-03-17 18:51:14
+archive/issue_comments_017607.json:
+```json
+{
+    "body": "this fixes one particular instance of the problem",
+    "created_at": "2008-03-17T18:51:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2576",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2576#issuecomment-17607",
+    "user": "was"
+}
+```
 
 this fixes one particular instance of the problem
 
 
+
 ---
+
+archive/issue_comments_017608.json:
+```json
+{
+    "body": "Attachment\n\nTo test the attached:\n\n```\nR.<x,y,z> = PolynomialRing(QQ, 3, order='lex')\np = z^2 + 1; q = z^3 + 2\nI = (p*q^2, y-z^2)*R\npd = I.complete_primary_decomposition?\n```\n",
+    "created_at": "2008-03-17T18:52:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2576",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2576#issuecomment-17608",
+    "user": "was"
+}
+```
 
 Attachment
 
@@ -48,9 +86,20 @@ pd = I.complete_primary_decomposition?
 
 
 
+
 ---
 
-Comment by malb created at 2008-03-17 23:17:41
+archive/issue_comments_017609.json:
+```json
+{
+    "body": "Michael Brickenstein on [sage-devel]:\n\n```\nBy the way\nwrapper.__name__=func.__name__\nis usually also a good practice.\n```\n",
+    "created_at": "2008-03-17T23:17:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2576",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2576#issuecomment-17609",
+    "user": "malb"
+}
+```
 
 Michael Brickenstein on [sage-devel]:
 
@@ -62,9 +111,20 @@ is usually also a good practice.
 
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-18 00:31:51
+archive/issue_comments_017610.json:
+```json
+{
+    "body": "Replying to [comment:1 was]:\n> To test the attached:\n> {{{\n> R.<x,y,z> = PolynomialRing(QQ, 3, order='lex')\n> p = z^2 + 1; q = z^3 + 2\n> I = (p*q^2, y-z^2)*R\n> pd = I.complete_primary_decomposition?\n> }}}\n\nTo test you need \n\n```\nR.<x,y,z> = PolynomialRing(QQ, 3, order='lex')\np = z^2 + 1; q = z^3 + 2\nI = (p*q^2, y-z^2)*R\nI.complete_primary_decomposition?\n```\n \nAt least I did. Anyway, the patch applies and does what it is supposed to do. Positive review.",
+    "created_at": "2008-03-18T00:31:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2576",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2576#issuecomment-17610",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:1 was]:
 > To test the attached:
@@ -82,19 +142,42 @@ R.<x,y,z> = PolynomialRing(QQ, 3, order='lex')
 p = z^2 + 1; q = z^3 + 2
 I = (p*q^2, y-z^2)*R
 I.complete_primary_decomposition?
-}}} 
+```
+ 
 At least I did. Anyway, the patch applies and does what it is supposed to do. Positive review.
+
 
 
 ---
 
-Comment by mabshoff created at 2008-03-18 00:32:49
+archive/issue_comments_017611.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-03-18T00:32:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2576",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2576#issuecomment-17611",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-18 00:32:49
+archive/issue_comments_017612.json:
+```json
+{
+    "body": "Merged in Sage 2.11.alpha0",
+    "created_at": "2008-03-18T00:32:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2576",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2576#issuecomment-17612",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.11.alpha0

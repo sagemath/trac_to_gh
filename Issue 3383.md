@@ -1,11 +1,21 @@
 # Issue 3383: division_points() fails for elliptic curve over number field
 
-Issue created by migration from https://trac.sagemath.org/ticket/3383
-
-Original creator: cremona
-
-Original creation time: 2008-06-08 17:04:20
-
+archive/issues_003383.json:
+```json
+{
+    "body": "Assignee: was\n\nKeywords: elliptic curve\n\nWhile testing/reviewing #3377 I found a problem with E.division_points() over a number field:\n\n\n```\nsage: E = EllipticCurve('19a1')\nsage: K.<t> = NumberField(x^9-3*x^8-4*x^7+16*x^6-3*x^5-21*x^4+5*x^3+7*x^2-7*x+1)\nsage: EK = E.base_extend(K)\nsage: E(0).division_points(3)\n[(0 : 1 : 0), (5 : -10 : 1), (5 : 9 : 1)]\nsage: EK(0).division_points(3)\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/jec/<ipython console> in <module>()\n\n/home/jec/sage-current/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_point.py in division_points(self, m, poly_only)\n    586             [(1 : 1 : 1)]\n    587         \"\"\"\n--> 588         return self._division_points(m, poly_only=False)\n    589\n    590     def _division_points(self, m, poly_only):\n\n/home/jec/sage-current/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_point.py in _division_points(self, m, poly_only)\n    609         F_to_E = F.isomorphism_to(E)\n    610         E_to_F = E.isomorphism_to(F)\n--> 611         f = F.multiplication_by_m(m, x_only=True)\n    612\n    613         # Map self (our point) over to the short Weierstrass model.\n\n/home/jec/sage-current/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_generic.py in multiplication_by_m(self, m, x_only)\n   1822         # Silverman AEC Ex III.3.7, page 105.\n   1823         phi_m = x*psi(m)**2 - psi(m+1)*psi(m-1)\n-> 1824         x_coord = normalize(phi_m / psi_m**2)\n   1825         if x_only:\n   1826             # Return it if the optional parameter x_only is set.\n\n/home/jec/sage-current/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_generic.py in normalize(f)\n   1817         Q = R.quotient(y**2 - x**3 - A*x - B)\n   1818         def normalize(f):\n-> 1819             return Q(f.numerator()).lift() / Q(f.denominator()).lift()\n   1820\n   1821         # Write down the x coordinate using the formula in\n\n/home/jec/sage-current/local/lib/python2.5/site-packages/sage/rings/quotient_ring.py in __call__(self, x, coerce)\n    402             R = self.cover_ring()\n    403             x = R(x)\n--> 404         return quotient_ring_element.QuotientRingElement(self, x)\n    405\n    406     def _coerce_impl(self, x):\n\n/home/jec/sage-current/local/lib/python2.5/site-packages/sage/rings/quotient_ring_element.py in __init__(self, parent, rep, reduce)\n     72         self.__rep = rep\n     73         if reduce:\n---> 74             self._reduce_()\n     75\n     76     def _reduce_(self):\n\n/home/jec/sage-current/local/lib/python2.5/site-packages/sage/rings/quotient_ring_element.py in _reduce_(self)\n     76     def _reduce_(self):\n     77         I = self.parent().defining_ideal()\n---> 78         self.__rep = I.reduce(self.__rep)\n     79\n     80     def copy(self):\n\n/home/jec/sage-current/local/lib/python2.5/site-packages/sage/rings/polynomial/multi_polynomial_ideal.py in reduce(self, f)\n   1921         very expensive operation.\n   1922         \"\"\"\n-> 1923         gb = self.groebner_basis()\n   1924         return f.reduce(gb)\n   1925\n\n/home/jec/sage-current/local/lib/python2.5/site-packages/sage/rings/polynomial/multi_polynomial_ideal.py in groebner_basis(self, algorithm, *args, **kwds)\n   1840                 except TypeError: # conversion to Singular not supported\n   1841                     # we might want to print a warning here\n-> 1842                     gb = toy_buchberger.buchberger_improved(self, *args, **kwds)\n   1843         elif algorithm.startswith('singular:'):\n   1844             gb = self._groebner_basis_using_singular(algorithm[9:])\n\n/home/jec/sage-current/local/lib/python2.5/site-packages/sage/rings/polynomial/toy_buchberger.py in buchberger_improved(F)\n    203     function printing intermediate Groebner bases.\n    204     \"\"\"\n--> 205     F = inter_reduction(F.gens())\n    206\n    207     G = set()\n\n/home/jec/sage-current/local/lib/python2.5/site-packages/sage/rings/polynomial/toy_buchberger.py in inter_reduction(Q)\n    343         for p in Qbar:\n    344             p = Q.pop()\n--> 345             h = p.reduce(Q)\n    346             if h!=0:\n    347                 Q.add(h)\n\n/home/jec/sage-current/local/lib/python2.5/site-packages/sage/rings/polynomial/multi_polynomial_element.py in reduce(self, I)\n   1543                         break\n   1544                 else:\n-> 1545                     plt = p.lt()\n   1546                     r += plt\n   1547                     p -= plt\n\n/home/jec/sage-current/local/lib/python2.5/site-packages/sage/rings/polynomial/multi_polynomial_element.py in lt(self)\n   1160             R = self.parent()\n   1161             f = self._MPolynomial_element__element.dict()\n-> 1162             res = self._MPolynomial_element__element.lcmt( R.term_order().greater_tuple )\n   1163             self.__lt = MPolynomial_polydict(R,polydict.PolyDict({res:f[res]},force_int_exponents=False, force_etuples=False))\n   1164             return self.__lt\n\n/home/jec/sage-current/local/lib/python2.5/site-packages/sage/rings/polynomial/term_order.py in __getattr__(self, name)\n    351         elif name=='greater_tuple':\n    352             if len(self.blocks) == 1:\n--> 353                 return getattr(self,'greater_tuple_'+self.__singular_str)\n    354             else:\n    355                 return self.greater_tuple_block\n\n/home/jec/sage-current/local/lib/python2.5/site-packages/sage/rings/polynomial/term_order.py in __getattr__(self, name)\n    355                 return self.greater_tuple_block\n    356         else:\n--> 357             raise AttributeError,name\n    358\n    359     def compare_tuples_lp(self,f,g):\n\nAttributeError: greater_tuple_revlex\n```\n\n\nIt looks quite deep in polynomial code but might turn out to be something simple.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3383\n\n",
+    "created_at": "2008-06-08T17:04:20Z",
+    "labels": [
+        "algebraic geometry",
+        "major",
+        "bug"
+    ],
+    "title": "division_points() fails for elliptic curve over number field",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3383",
+    "user": "cremona"
+}
+```
 Assignee: was
 
 Keywords: elliptic curve
@@ -136,19 +146,45 @@ AttributeError: greater_tuple_revlex
 
 It looks quite deep in polynomial code but might turn out to be something simple.
 
+Issue created by migration from https://trac.sagemath.org/ticket/3383
+
+
+
+
 
 ---
 
-Comment by malb created at 2008-06-10 18:02:47
+archive/issue_comments_023679.json:
+```json
+{
+    "body": "The code tries to compute in \n* a local ordering \"revlex\" for which toy_buchberger.py is inadequat\n* a ordering \"revlex\" which isn't really supported or misnamed, we do have \"invlex\"",
+    "created_at": "2008-06-10T18:02:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3383",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3383#issuecomment-23679",
+    "user": "malb"
+}
+```
 
 The code tries to compute in 
- * a local ordering "revlex" for which toy_buchberger.py is inadequat
- * a ordering "revlex" which isn't really supported or misnamed, we do have "invlex"
+* a local ordering "revlex" for which toy_buchberger.py is inadequat
+* a ordering "revlex" which isn't really supported or misnamed, we do have "invlex"
+
 
 
 ---
 
-Comment by cremona created at 2008-06-10 19:13:36
+archive/issue_comments_023680.json:
+```json
+{
+    "body": "Replying to [comment:2 malb]:\n> The code tries to compute in \n>  * a local ordering \"revlex\" for which toy_buchberger.py is inadequat\n>  * a ordering \"revlex\" which isn't really supported or misnamed, we do have \"invlex\"\n\nmalb: I am fixing this as part of a rewrite for division-polynomial related stuff, which will not need to use such things at all, so I don't think you need to worry about this (at least for now).\nJohn",
+    "created_at": "2008-06-10T19:13:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3383",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3383#issuecomment-23680",
+    "user": "cremona"
+}
+```
 
 Replying to [comment:2 malb]:
 > The code tries to compute in 
@@ -159,9 +195,20 @@ malb: I am fixing this as part of a rewrite for division-polynomial related stuf
 John
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-13 07:23:35
+archive/issue_comments_023681.json:
+```json
+{
+    "body": "This works for me:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.alpha2$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.1.alpha1, Release Date: 2008-08-11                  |\n| Type notebook() for the GUI, and license() for information.        |\nsage: E = EllipticCurve('19a1')\nsage: K.<t> = NumberField(x^9-3*x^8-4*x^7+16*x^6-3*x^5-21*x^4+5*x^3+7*x^2-7*x+1)\nsage: EK = E.base_extend(K)\nsage: E(0).division_points(3)\n[(0 : 1 : 0), (5 : -10 : 1), (5 : 9 : 1)]\nsage: EK(0).division_points(3)\n[(0 : 1 : 0), (5 : 9 : 1), (5 : -10 : 1)]\n```\n",
+    "created_at": "2008-08-13T07:23:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3383",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3383#issuecomment-23681",
+    "user": "mabshoff"
+}
+```
 
 This works for me:
 
@@ -182,9 +229,20 @@ sage: EK(0).division_points(3)
 
 
 
+
 ---
 
-Comment by cremona created at 2008-08-13 08:27:52
+archive/issue_comments_023682.json:
+```json
+{
+    "body": "It works for me too.  I think that something deep down changed, so now it just works.\n\nIt is still true that I am working on improving division poly stuff -- but on a clone which is on a machine currently broken, preventing me from finishing it off.\n\nIn the meantime, let's just close this.",
+    "created_at": "2008-08-13T08:27:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3383",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3383#issuecomment-23682",
+    "user": "cremona"
+}
+```
 
 It works for me too.  I think that something deep down changed, so now it just works.
 
@@ -193,9 +251,20 @@ It is still true that I am working on improving division poly stuff -- but on a 
 In the meantime, let's just close this.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-13 08:32:23
+archive/issue_comments_023683.json:
+```json
+{
+    "body": "Hi John,\n\nReplying to [comment:5 cremona]:\n> It works for me too.  I think that something deep down changed, so now it just works.\n> \n> It is still true that I am working on improving division poly stuff -- but on a clone which is on a machine currently broken, preventing me from finishing it off.\n> \n> In the meantime, let's just close this.\n\nI agree, but let's add a doctest to catch this in case someone breaks it again.\n\nCheers,\n\nMichael",
+    "created_at": "2008-08-13T08:32:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3383",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3383#issuecomment-23683",
+    "user": "mabshoff"
+}
+```
 
 Hi John,
 
@@ -213,9 +282,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by cremona created at 2008-08-13 08:37:13
+archive/issue_comments_023684.json:
+```json
+{
+    "body": "Replying to [comment:6 mabshoff]:\n> Hi John,\n> \n> Replying to [comment:5 cremona]:\n> > It works for me too.  I think that something deep down changed, so now it just works.\n> > \n> > It is still true that I am working on improving division poly stuff -- but on a clone which is on a machine currently broken, preventing me from finishing it off.\n> > \n> > In the meantime, let's just close this.\n> \n> I agree, but let's add a doctest to catch this in case someone breaks it again.\n> \n\nComing up...\n\nJohn\n\n> Cheers,\n> \n> Michael",
+    "created_at": "2008-08-13T08:37:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3383",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3383#issuecomment-23684",
+    "user": "cremona"
+}
+```
 
 Replying to [comment:6 mabshoff]:
 > Hi John,
@@ -239,16 +319,40 @@ John
 > Michael
 
 
+
 ---
+
+archive/issue_comments_023685.json:
+```json
+{
+    "body": "Attachment\n\nThe patch just adds a doctest to show that the bug no longer exists.",
+    "created_at": "2008-08-13T08:46:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3383",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3383#issuecomment-23685",
+    "user": "cremona"
+}
+```
 
 Attachment
 
 The patch just adds a doctest to show that the bug no longer exists.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-13 09:14:09
+archive/issue_comments_023686.json:
+```json
+{
+    "body": "Looks good to me and doctests fine. William also likes it.\n\nCheers,\n\nMichael",
+    "created_at": "2008-08-13T09:14:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3383",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3383#issuecomment-23686",
+    "user": "mabshoff"
+}
+```
 
 Looks good to me and doctests fine. William also likes it.
 
@@ -257,15 +361,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-13 09:14:30
+archive/issue_comments_023687.json:
+```json
+{
+    "body": "Merged in Sage 3.1.alpha2",
+    "created_at": "2008-08-13T09:14:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3383",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3383#issuecomment-23687",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.1.alpha2
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-13 09:14:30
+archive/issue_comments_023688.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-08-13T09:14:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3383",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3383#issuecomment-23688",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

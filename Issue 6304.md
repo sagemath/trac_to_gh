@@ -1,11 +1,21 @@
 # Issue 6304: intermittent crash in bernmm (4.0.2.rc0)
 
-Issue created by migration from https://trac.sagemath.org/ticket/6304
-
-Original creator: dmharvey
-
-Original creation time: 2009-06-15 19:04:21
-
+archive/issues_006304.json:
+```json
+{
+    "body": "Assignee: tbd\n\n\n```\nbsd$ uname -a\nDarwin bsd.local 9.7.0 Darwin Kernel Version 9.7.0: Tue Mar 31 22:52:17 PDT 2009; root:xnu-1228.12.14~1/RELEASE_I386 i386\n\n~/sage-4.0.2.rc0\nbsd$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: w = bernoulli(100000, algorithm=\"bernmm\", num_threads=8)\nsage: w = bernoulli(100000, algorithm=\"bernmm\", num_threads=8)\n/Users/dmharvey/sage-4.0.2.rc0/local/bin/sage-sage: line 198: 62412 Illegal instruction     sage-ipython \"$@\" -i\n| Sage Version 4.0.2.rc0, Release Date: 2009-06-15                   |\n| Type notebook() for the GUI, and license() for information.        |\n~/sage-4.0.2.rc0\nbsd$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: w = bernoulli(100000, algorithm=\"bernmm\", num_threads=8)\nsage: w = bernoulli(100000, algorithm=\"bernmm\", num_threads=8)\nsage: w = bernoulli(100000, algorithm=\"bernmm\", num_threads=8)\nsage: w = bernoulli(100000, algorithm=\"bernmm\", num_threads=8)\nsage: w = bernoulli(100000, algorithm=\"bernmm\", num_threads=8)\nsage: w = bernoulli(100000, algorithm=\"bernmm\", num_threads=8)\n/Users/dmharvey/sage-4.0.2.rc0/local/bin/sage-sage: line 198: 62473 Illegal instruction     sage-ipython \"$@\" -i\n```\n\n| Sage Version 4.0.2.rc0, Release Date: 2009-06-15                   |\n| Type notebook() for the GUI, and license() for information.        |\n\nIssue created by migration from https://trac.sagemath.org/ticket/6304\n\n",
+    "created_at": "2009-06-15T19:04:21Z",
+    "labels": [
+        "algebra",
+        "major",
+        "bug"
+    ],
+    "title": "intermittent crash in bernmm (4.0.2.rc0)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6304",
+    "user": "dmharvey"
+}
+```
 Assignee: tbd
 
 
@@ -38,57 +48,127 @@ sage: w = bernoulli(100000, algorithm="bernmm", num_threads=8)
 | Sage Version 4.0.2.rc0, Release Date: 2009-06-15                   |
 | Type notebook() for the GUI, and license() for information.        |
 
+Issue created by migration from https://trac.sagemath.org/ticket/6304
+
+
+
+
 
 ---
 
-Comment by dmharvey created at 2009-06-15 20:46:59
+archive/issue_comments_050303.json:
+```json
+{
+    "body": "I can reproduce this from outside Sage, on the same machine, building bernmm directly against GMP and NTL, using only two threads.\n\ngdb says the crash happens somewhere inside GMP, during one of the large XGCD operations.",
+    "created_at": "2009-06-15T20:46:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6304#issuecomment-50303",
+    "user": "dmharvey"
+}
+```
 
 I can reproduce this from outside Sage, on the same machine, building bernmm directly against GMP and NTL, using only two threads.
 
 gdb says the crash happens somewhere inside GMP, during one of the large XGCD operations.
 
 
+
 ---
 
-Comment by dmharvey created at 2009-06-15 21:46:51
+archive/issue_comments_050304.json:
+```json
+{
+    "body": "I've been trying to debug this for almost three hours, and I have absolutely no idea what is going wrong.\n\nI can't reproduce the error on any other systems. Only seems to happen on OSX 10.5.",
+    "created_at": "2009-06-15T21:46:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6304#issuecomment-50304",
+    "user": "dmharvey"
+}
+```
 
 I've been trying to debug this for almost three hours, and I have absolutely no idea what is going wrong.
 
 I can't reproduce the error on any other systems. Only seems to happen on OSX 10.5.
 
 
+
 ---
 
-Comment by was created at 2009-06-19 13:23:01
+archive/issue_comments_050305.json:
+```json
+{
+    "body": "> I can't reproduce the error on any other systems. Only seems to happen on OSX 10.5. \n\nI would be OK with the following:\n\n* if somebody tries to use the bernmm algorithm on OS X 10.5, then it gives a warning and falls back to the single threaded PARI version.\n\n* on OS X 10.5 the default algorithm never uses bernmm.\n\n -- William",
+    "created_at": "2009-06-19T13:23:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6304#issuecomment-50305",
+    "user": "was"
+}
+```
 
 > I can't reproduce the error on any other systems. Only seems to happen on OSX 10.5. 
 
 I would be OK with the following:
 
-  * if somebody tries to use the bernmm algorithm on OS X 10.5, then it gives a warning and falls back to the single threaded PARI version.
+* if somebody tries to use the bernmm algorithm on OS X 10.5, then it gives a warning and falls back to the single threaded PARI version.
 
-  * on OS X 10.5 the default algorithm never uses bernmm.
+* on OS X 10.5 the default algorithm never uses bernmm.
 
  -- William
 
 
+
 ---
 
-Comment by was created at 2009-06-19 13:23:01
+archive/issue_comments_050306.json:
+```json
+{
+    "body": "Changing component from algebra to combinatorics.",
+    "created_at": "2009-06-19T13:23:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6304#issuecomment-50306",
+    "user": "was"
+}
+```
 
 Changing component from algebra to combinatorics.
 
 
+
 ---
 
-Comment by was created at 2009-06-19 13:23:01
+archive/issue_comments_050307.json:
+```json
+{
+    "body": "Changing assignee from tbd to mhansen.",
+    "created_at": "2009-06-19T13:23:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6304#issuecomment-50307",
+    "user": "was"
+}
+```
 
 Changing assignee from tbd to mhansen.
 
 
+
 ---
 
-Comment by dmharvey created at 2009-06-19 13:37:46
+archive/issue_comments_050308.json:
+```json
+{
+    "body": "William,\n\nI got the feeling while trying to debug that it could be a compiler issue. The gcc version is 4.0.1 on that box. I've read online that newer versions of XCode for leopard also include gcc 4.2.1, but it's not switched on by default. I couldn't find it on that machine. Would it be possible to try installing apple's newer xcode/gcc to see if that helps?\n\ndavid",
+    "created_at": "2009-06-19T13:37:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6304#issuecomment-50308",
+    "user": "dmharvey"
+}
+```
 
 William,
 
@@ -97,9 +177,20 @@ I got the feeling while trying to debug that it could be a compiler issue. The g
 david
 
 
+
 ---
 
-Comment by was created at 2009-06-20 10:56:02
+archive/issue_comments_050309.json:
+```json
+{
+    "body": "> Would it be possible to try installing apple's newer xcode/gcc to see if that helps? \n\nThat's a very good idea.  What happens on your laptop (I assume you can't replicate the issue). \n\nAnyway, I can't do anything admin-wise on that box until August when I back in Seattle.",
+    "created_at": "2009-06-20T10:56:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6304#issuecomment-50309",
+    "user": "was"
+}
+```
 
 > Would it be possible to try installing apple's newer xcode/gcc to see if that helps? 
 
@@ -108,16 +199,38 @@ That's a very good idea.  What happens on your laptop (I assume you can't replic
 Anyway, I can't do anything admin-wise on that box until August when I back in Seattle.
 
 
+
 ---
 
-Comment by dmharvey created at 2009-06-20 20:41:01
+archive/issue_comments_050310.json:
+```json
+{
+    "body": "Hmmm, no. I can make it fail on my OS 10.4.11 laptop too.",
+    "created_at": "2009-06-20T20:41:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6304#issuecomment-50310",
+    "user": "dmharvey"
+}
+```
 
 Hmmm, no. I can make it fail on my OS 10.4.11 laptop too.
 
 
+
 ---
 
-Comment by dmharvey created at 2009-06-22 15:55:42
+archive/issue_comments_050311.json:
+```json
+{
+    "body": "I tried on my wife's laptop which is OS 10.5.7. I switched over to apple's gcc 4.2.1, but I cannot build sage 4.0.2, I get\n\n\n```\ncc1: error: unrecognized command line option \"-Wno-long-double\"\n```\n\n\nwhile building python-2.5.4.p1.",
+    "created_at": "2009-06-22T15:55:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6304#issuecomment-50311",
+    "user": "dmharvey"
+}
+```
 
 I tried on my wife's laptop which is OS 10.5.7. I switched over to apple's gcc 4.2.1, but I cannot build sage 4.0.2, I get
 
@@ -130,9 +243,20 @@ cc1: error: unrecognized command line option "-Wno-long-double"
 while building python-2.5.4.p1.
 
 
+
 ---
 
-Comment by was created at 2009-08-15 22:24:30
+archive/issue_comments_050312.json:
+```json
+{
+    "body": "\n```\n\nOn Sat, Aug 15, 2009 at 9:52 AM, William Stein<wstein@gmail.com> wrote:\n> On Sat, Aug 15, 2009 at 9:42 AM, David Harvey<dmharvey@cims.nyu.edu> wrote:\n>>\n>> On Aug 15, 2009, at 12:40 PM, William Stein wrote:\n>>\n>>> On Sat, Aug 15, 2009 at 9:33 AM, David Harvey<dmharvey@cims.nyu.edu>\n>>> wrote:\n>>>>\n>>>> On Aug 15, 2009, at 12:28 PM, William Stein wrote:\n>>>>\n>>>>> gcc version 4.0.1 (Apple Inc. build 5493)\n>>>>\n>>>> but still gcc 4.0.1?\n>>>>\n>>>> Try \"man gcc_select\"?\n>>>\n>>> Yes.  So just for clarification, the bug happens with all builds of\n>>> GCC 4.0.1, but can be got around by switching to GCC 4.2.x?\n>>\n>> I don't know. My guess is that there is a bug in the threading support in\n>> gcc 4.0.1, but of course it could also be a bug in my code. I spent several\n>> hours debugging one day and found nothing. From memory I then tried to build\n>> sage using gcc 4.2.x (?) on 10.5 but was not successful, and then I got\n>> distracted by other things....\n>>\n>\n> OK, thanks for the clarification.  You do in fact clearly explain this\n> at http://trac.sagemath.org/sage_trac/ticket/6304/.  At least it\n> crashes instead of giving wrong answers.\n>\n> There is no gcc_select command with that name on OS X.  I switched to\n> gcc-4.2.1 just by changing two symlinks in /usr/bin/.   (For gcc and\n> g++.)   I'll try building Sage on that box with that compiler now.\n>\n\nI completely built with the latest gcc-4.2.1, and bernmm test still fails.   I've updated the ticket accordingly.  I think the right thig to do at this point is to make using bernmm off by default for OS X 10.5 intel, and put a remark in the docstring that it will sometimes crash sage with an illegal instruction error, and that using the latest XCode with either GCC 4.0.1 or 4.2.1 does not fix the problem.    Robust multithreaded programming is hard. \n```\n",
+    "created_at": "2009-08-15T22:24:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6304#issuecomment-50312",
+    "user": "was"
+}
+```
 
 
 ```
@@ -177,51 +301,128 @@ I completely built with the latest gcc-4.2.1, and bernmm test still fails.   I'v
 
 
 
+
 ---
 
-Comment by dmharvey created at 2009-08-16 13:37:31
+archive/issue_comments_050313.json:
+```json
+{
+    "body": "I am trying to debug again on my laptop (core 2 duo, 2 cores, mac os 10.4.11). If I build bernmm standalone using GMP 4.3.1 + NTL 5.4.2 with default configure options, I can get the test suite to fail quite regularly (bus error) with `./bernmm-test --rational 40000 8`. Interestingly, if I configure GMP 4.3.1 with recommended \"maximum debuggability options\" (`--disable-shared --enable-assert --enable-alloca=debug --build=none CFLAGS=\"-m64 -g\"`), I can't get it to crash any more.",
+    "created_at": "2009-08-16T13:37:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6304#issuecomment-50313",
+    "user": "dmharvey"
+}
+```
 
 I am trying to debug again on my laptop (core 2 duo, 2 cores, mac os 10.4.11). If I build bernmm standalone using GMP 4.3.1 + NTL 5.4.2 with default configure options, I can get the test suite to fail quite regularly (bus error) with `./bernmm-test --rational 40000 8`. Interestingly, if I configure GMP 4.3.1 with recommended "maximum debuggability options" (`--disable-shared --enable-assert --enable-alloca=debug --build=none CFLAGS="-m64 -g"`), I can't get it to crash any more.
 
 
+
 ---
 
-Comment by dmharvey created at 2009-08-16 13:53:37
+archive/issue_comments_050314.json:
+```json
+{
+    "body": "Now I tried compiling GMP with `--disable-shared --enable-assert --enable-alloca=debug CFLAGS=\"-g -O2 -pedantic -m64 -mtune=k8\"` (the latter is the default CFLAGS plus \"-g\"), and there seem to be no crashes. This suggests the problem is not in the GMP assembly code.",
+    "created_at": "2009-08-16T13:53:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6304#issuecomment-50314",
+    "user": "dmharvey"
+}
+```
 
 Now I tried compiling GMP with `--disable-shared --enable-assert --enable-alloca=debug CFLAGS="-g -O2 -pedantic -m64 -mtune=k8"` (the latter is the default CFLAGS plus "-g"), and there seem to be no crashes. This suggests the problem is not in the GMP assembly code.
 
 
+
 ---
 
-Comment by dmharvey created at 2009-08-16 14:03:03
+archive/issue_comments_050315.json:
+```json
+{
+    "body": "Tried again, this time removing `--disable-shared`. Still doesn't crash.",
+    "created_at": "2009-08-16T14:03:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6304#issuecomment-50315",
+    "user": "dmharvey"
+}
+```
 
 Tried again, this time removing `--disable-shared`. Still doesn't crash.
 
 
+
 ---
 
-Comment by dmharvey created at 2009-08-16 15:12:18
+archive/issue_comments_050316.json:
+```json
+{
+    "body": "Now making progress.... on sage.math, if I run bernmm-test under valgrind, even for n = 4 and one thread, I get all kind of invalid read errors.",
+    "created_at": "2009-08-16T15:12:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6304#issuecomment-50316",
+    "user": "dmharvey"
+}
+```
 
 Now making progress.... on sage.math, if I run bernmm-test under valgrind, even for n = 4 and one thread, I get all kind of invalid read errors.
 
 
+
 ---
 
-Comment by dmharvey created at 2009-08-16 16:36:15
+archive/issue_comments_050317.json:
+```json
+{
+    "body": "Actually no progress at all. I discovered after another hour that valgrind even reports invalid read errors for a simple program that computes \"2+2\" using GMP. I have no idea what to make of this.",
+    "created_at": "2009-08-16T16:36:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6304#issuecomment-50317",
+    "user": "dmharvey"
+}
+```
 
 Actually no progress at all. I discovered after another hour that valgrind even reports invalid read errors for a simple program that computes "2+2" using GMP. I have no idea what to make of this.
 
 
+
 ---
 
-Comment by dmharvey created at 2009-08-16 16:58:52
+archive/issue_comments_050318.json:
+```json
+{
+    "body": "Moving back to my laptop, if I compile GMP without the `--enable-alloca=debug` option, the crashes reappear.",
+    "created_at": "2009-08-16T16:58:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6304#issuecomment-50318",
+    "user": "dmharvey"
+}
+```
 
 Moving back to my laptop, if I compile GMP without the `--enable-alloca=debug` option, the crashes reappear.
 
 
+
 ---
 
-Comment by dmharvey created at 2009-08-16 19:22:57
+archive/issue_comments_050319.json:
+```json
+{
+    "body": "Finally got somewhere.\n\nIt appears to be a stack overflow issue. It occurs inside GMP's xgcd function. The default stack size for new threads is 8 MB on sage.math but apparently only 512 KB on OSX. If I increase the thread stack size inside bernmm, the crashes stop happening.\n\nI wrote a test program (below) that calls `mpz_invert` for a given input size using a given thread stack size. (The `mpz_invert` call is what seems to be causing the problems in bernmm.) I found that for stack size = 512 KB, GMP doesn't have any problems, but if I bump it down to only 448 KB, it starts crashing for inputs of 2800 limbs and above. This is around about the largest size that is used in bernmm for computing B(40000), which is the value of k where problems seem to start occurring. So if bernmm is only using a few 10's of KB of stack, it could push GMP over the limit.\n\nI haven't tried any of this with MPIR, but given that it uses a similar quasi-linear XGCD algorithm, it wouldn't surprise me that the cause is the same.\n\nThis is not so easy to address. A band-aid solution is to make bernmm use a bigger stack. The real issue is whether it is reasonable for GMP to require so much stack space for the XGCD operation (or conversely whether the default stack size on OSX is too small). I will ask on the GMP mailing list about this.\n\n\n```\n#include <limits.h>\n#include <stdio.h>\n#include <gmp.h>\n#include <pthread.h>\n\n\nvoid*\nworker (void* arg)\n{\n  size_t n = * (size_t*) arg;\n\n  mpz_t a, b;\n  mpz_init (a);\n  mpz_init (b);\n\n  /* try to invert a random number modulo B^n + 1 */\n  mpz_random (a, n);\n  mpz_set_ui (b, 1);\n  mpz_mul_2exp (b, b, n * GMP_NUMB_BITS);\n  mpz_add_ui (b, b, 1);\n  mpz_invert (a, a, b);\n\n  mpz_clear (b);\n  mpz_clear (a);\n}\n\nint\nmain (int argc, char* argv[])\n{\n  if (argc < 3)\n    {\n      printf (\"syntax: test <n> <stacksize>\\n\");\n      return 0;\n    }\n\n  size_t n = atol (argv[1]);\n  size_t old_stacksize;\n  size_t new_stacksize = atol (argv[2]);\n\n  pthread_attr_t attr;\n  pthread_attr_init (&attr);\n\n  pthread_attr_getstacksize (&attr, &old_stacksize);\n  printf (\"old stacksize = %ld\\n\", old_stacksize);\n\n  int retval = pthread_attr_setstacksize (&attr, new_stacksize);\n  if (retval != 0)\n    {\n      printf (\"PTHREAD_STACK_MIN = %ld\\n\", PTHREAD_STACK_MIN);\n      printf (\"pthread_attr_setstacksize call failed with size = %ld\\n\",\n              new_stacksize);\n      return 0;\n    }\n\n  pthread_t thread;\n  pthread_create (&thread, &attr, worker, &n);\n  pthread_join (thread, NULL);\n\n  pthread_attr_destroy (&attr);\n\n  return 0;\n}\n```\n",
+    "created_at": "2009-08-16T19:22:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6304#issuecomment-50319",
+    "user": "dmharvey"
+}
+```
 
 Finally got somewhere.
 
@@ -301,29 +502,75 @@ main (int argc, char* argv[])
 
 
 
+
 ---
+
+archive/issue_comments_050320.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-08-20T14:57:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6304#issuecomment-50320",
+    "user": "dmharvey"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by dmharvey created at 2009-08-20 15:00:10
+archive/issue_comments_050321.json:
+```json
+{
+    "body": "I have released bernmm 1.1 which addresses this issue, by providing a THREAD_STACK_SIZE compile-time option. See attached patch.\n\nThis doesn't address the underlying issue (that in my opinion, GMP/MPIR uses too much stack space by default for XGCD), but it will have to do for the moment.",
+    "created_at": "2009-08-20T15:00:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6304#issuecomment-50321",
+    "user": "dmharvey"
+}
+```
 
 I have released bernmm 1.1 which addresses this issue, by providing a THREAD_STACK_SIZE compile-time option. See attached patch.
 
 This doesn't address the underlying issue (that in my opinion, GMP/MPIR uses too much stack space by default for XGCD), but it will have to do for the moment.
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-03 06:13:23
+archive/issue_comments_050322.json:
+```json
+{
+    "body": "This changed fixed things for me.  I'm going to go ahead and give it a positive review.",
+    "created_at": "2009-10-03T06:13:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6304#issuecomment-50322",
+    "user": "mhansen"
+}
+```
 
 This changed fixed things for me.  I'm going to go ahead and give it a positive review.
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-15 07:13:44
+archive/issue_comments_050323.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-10-15T07:13:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6304#issuecomment-50323",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

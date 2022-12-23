@@ -1,11 +1,21 @@
 # Issue 5698: Sage 3.4.1.rc1: doctest failure in schemes/elliptic_curves/monsky_washnitzer.py
 
-Issue created by migration from https://trac.sagemath.org/ticket/5698
-
-Original creator: mabshoff
-
-Original creation time: 2009-04-06 19:03:44
-
+archive/issues_005698.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nThe following happens all the sudden when updating FLINT:\n\n```\nsage -t -long \"devel/sage/sage/schemes/elliptic_curves/monsky_washnitzer.py\"\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.rc2/devel/sage/sage/schemes/elliptic_curves/monsky_washnitzer.py\", line 1487:\n    sage: B = A.change_ring(Integers(p**prec)); B               # long time\nExpected:\n    [74311982 57996908]\n    [95877067 25828133]\nGot:\n    [54572546 87269244]\n    [10839343 79974813]\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.rc2/devel/sage/sage/schemes/elliptic_curves/monsky_washnitzer.py\", line 1490:\n    sage: B.det()                                               # long time\nExpected:\n    10007\nGot:\n    29700776\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.rc2/devel/sage/sage/schemes/elliptic_curves/monsky_washnitzer.py\", line 1492:\n    sage: B.trace()                                             # long time\nExpected:\n    66\nGot:\n    34407310\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.rc2/devel/sage/sage/schemes/elliptic_curves/monsky_washnitzer.py\", line 1562:\n    sage: B.det()                                               # long time\nExpected:\n    11 + 484*t^2 + 451*t^3 + O(t^4)\nGot:\n    245 + 240*t + 724*t^2 + 808*t^3 + O(t^4)\n**********************************************************************\n```\n\nBut it is unclear if FLINT is the cause here. Downgrading FLINT makes it disappear, but the cause could be and likely is in some other patch. Note also the following issue valgrind found:\n\n```\n==30646== Conditional jump or move depends on uninitialised value(s)\n==30646==    at 0x8F302EC: gdiv (in /scratch/mabshoff/sage-3.4.1.rc0/local/lib/libpari-gmp.so.2)\n==30646==    by 0x828FAFE: QQ_to_t_FRAC (in /scratch/mabshoff/sage-3.4.1.rc0/devel/sage-main/c_lib/libcsage.so)\n==30646==    by 0x22EB14E7: __pyx_f_4sage_6matrix_21matrix_rational_dense_pari_GEN (matrix_rational_dense.c:25089)\n==30646==    by 0x22EE0D3C: __pyx_pf_4sage_6matrix_21matrix_rational_dense_21Matrix_rational_dense__invert_pari (matrix_rational_dense.c:24157)\n==30646==    by 0x417E92: PyObject_Call (abstract.c:1861)\n==30646==    by 0x22ED954D: __pyx_pf_4sage_6matrix_21matrix_rational_dense_21Matrix_rational_dense___invert__main (matrix_rational_dense.c:9542)\n==30646==    by 0x417E92: PyObject_Call (abstract.c:1861)\n==30646==    by 0x22EAF80A: __pyx_pf_4sage_6matrix_21matrix_rational_dense_21Matrix_rational_dense___invert__ (matrix_rational_dense.c:8933)\n==30646==    by 0x216C1751: __pyx_pf_4sage_6matrix_7matrix0_6Matrix___invert__ (matrix0.c:22763)\n==30646==    by 0xEDAA1DA: __pyx_f_4sage_9structure_7element_generic_power_c (element.c:23281)\n==30646==    by 0xEDAC821: __pyx_pf_4sage_9structure_7element_11RingElement___pow__ (element.c:10954)\n==30646==    by 0x457FBC: wrap_ternaryfunc (typeobject.c:3621)\n==30646==    by 0x417E92: PyObject_Call (abstract.c:1861)\n==30646==    by 0x4816E1: PyEval_CallObjectWithKeywords (ceval.c:3442)\n==30646==    by 0x4D0F9D: wrapperdescr_call (descrobject.c:304)\n==30646==    by 0x417E92: PyObject_Call (abstract.c:1861)\n==30646==    by 0x216C13C0: __pyx_pf_4sage_6matrix_7matrix0_6Matrix___pow__ (matrix0.c:23157)\n==30646==    by 0x418AC4: ternary_op (abstract.c:518)\n==30646==    by 0x4850BD: PyEval_EvalFrameEx (ceval.c:1063)\n==30646==    by 0x489A95: PyEval_EvalCodeEx (ceval.c:2836)\n==30646==    by 0x4D40D7: function_call (funcobject.c:517)\n==30646==    by 0x417E92: PyObject_Call (abstract.c:1861)\n==30646==    by 0x41E6CE: instancemethod_call (classobject.c:2519)\n==30646==    by 0x417E92: PyObject_Call (abstract.c:1861)\n==30646==    by 0x45A257: slot_tp_init (typeobject.c:4943)\n==30646== \n==30646== Conditional jump or move depends on uninitialised value(s)\n==30646==    at 0x8F3004B: gdiv (in /scratch/mabshoff/sage-3.4.1.rc0/local/lib/libpari-gmp.so.2)\n==30646==    by 0x8E67C57: gauss_intern (in /scratch/mabshoff/sage-3.4.1.rc0/local/lib/libpari-gmp.so.2)\n==30646==    by 0x8E67F45: gauss (in /scratch/mabshoff/sage-3.4.1.rc0/local/lib/libpari-gmp.so.2)\n==30646==    by 0x22EE0D9C: __pyx_pf_4sage_6matrix_21matrix_rational_dense_21Matrix_rational_dense__invert_pari (matrix_rational_dense.c:24218)\n==30646==    by 0x417E92: PyObject_Call (abstract.c:1861)\n==30646==    by 0x22ED954D: __pyx_pf_4sage_6matrix_21matrix_rational_dense_21Matrix_rational_dense___invert__main (matrix_rational_dense.c:9542)\n==30646==    by 0x417E92: PyObject_Call (abstract.c:1861)\n==30646==    by 0x22EAF80A: __pyx_pf_4sage_6matrix_21matrix_rational_dense_21Matrix_rational_dense___invert__ (matrix_rational_dense.c:8933)\n==30646==    by 0x216C1751: __pyx_pf_4sage_6matrix_7matrix0_6Matrix___invert__ (matrix0.c:22763)\n==30646==    by 0xEDAA1DA: __pyx_f_4sage_9structure_7element_generic_power_c (element.c:23281)\n==30646==    by 0xEDAC821: __pyx_pf_4sage_9structure_7element_11RingElement___pow__ (element.c:10954)\n==30646==    by 0x457FBC: wrap_ternaryfunc (typeobject.c:3621)\n==30646==    by 0x417E92: PyObject_Call (abstract.c:1861)\n==30646==    by 0x4816E1: PyEval_CallObjectWithKeywords (ceval.c:3442)\n==30646==    by 0x4D0F9D: wrapperdescr_call (descrobject.c:304)\n==30646==    by 0x417E92: PyObject_Call (abstract.c:1861)\n==30646==    by 0x216C13C0: __pyx_pf_4sage_6matrix_7matrix0_6Matrix___pow__ (matrix0.c:23157)\n==30646==    by 0x418AC4: ternary_op (abstract.c:518)\n==30646==    by 0x4850BD: PyEval_EvalFrameEx (ceval.c:1063)\n==30646==    by 0x489A95: PyEval_EvalCodeEx (ceval.c:2836)\n==30646==    by 0x4D40D7: function_call (funcobject.c:517)\n==30646==    by 0x417E92: PyObject_Call (abstract.c:1861)\n==30646==    by 0x41E6CE: instancemethod_call (classobject.c:2519)\n==30646==    by 0x417E92: PyObject_Call (abstract.c:1861)\n==30646==    by 0x45A257: slot_tp_init (typeobject.c:4943)\n```\n\nThis is likely caused by the Brandt module patch when William optimized the \"small LA\" cases.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5698\n\n",
+    "created_at": "2009-04-06T19:03:44Z",
+    "labels": [
+        "doctest coverage",
+        "blocker",
+        "bug"
+    ],
+    "title": "Sage 3.4.1.rc1: doctest failure in schemes/elliptic_curves/monsky_washnitzer.py",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5698",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 The following happens all the sudden when updating FLINT:
@@ -109,10 +119,25 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/5698
+
+
+
+
 
 ---
 
-Comment by was created at 2009-04-09 02:46:36
+archive/issue_comments_044542.json:
+```json
+{
+    "body": "This is a bug in FLINT:\n\n```\nsage: R.<t> = Zmod(next_prime(8000^3))[]\nsage: f = R.random_element(degree=3200)\nsage: pari(f)*pari(f) == pari(f*f)\nFalse\n```\n\n\nThis happens for most numbers > 8000 above, but not for smaller numbers. If we downgrade to the previous FLINT, the problem goes away. \n\nThis is an \"aliasing problem\". \n\n\n```\nwstein@sage:/scratch/mabshoff/sage-3.4.1.rc1$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: R.<t> = Zmod(next_prime(8000^3))[]\nsage: f = R.random_element(degree=3200)\nsage: pari(f)*pari(f) == pari(f*f)\n| Sage Version 3.4.1.rc1, Release Date: 2009-04-05                   |\n| Type notebook() for the GUI, and license() for information.        |\nsage: sage: R.<t> = Zmod(next_prime(8000^3))[]\nsage: sage: f = R.random_element(degree=3200)\nsage: sage: pari(f)*pari(f) == pari(f*f)\nFalse\nsage: \nsage: g = f+1\nsage: pari(f)*pari(g) == pari(f*g)\nTrue\nsage: g = f+2\nsage: pari(f)*pari(g) == pari(f*g)\nTrue\nsage: pari(f)*pari(g-2) == pari(f*(g-2))\nTrue\nsage: pari(f)*pari(f) == pari(f*f)\nFalse\nsage: pari(f)*pari(f+1-1) == pari(f*(f+1-1))\nTrue\n```\n\n\nTurning off using David Harvey's znpoly fixes this problem.  The spkg up here turns off znpoly.  With this the whole test suite passes fine:\n\nhttp://sage.math.washington.edu/home/wstein/patches/flint-1.2.4.p1.spkg",
+    "created_at": "2009-04-09T02:46:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5698",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5698#issuecomment-44542",
+    "user": "was"
+}
+```
 
 This is a bug in FLINT:
 
@@ -163,9 +188,20 @@ Turning off using David Harvey's znpoly fixes this problem.  The spkg up here tu
 http://sage.math.washington.edu/home/wstein/patches/flint-1.2.4.p1.spkg
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-09 05:36:43
+archive/issue_comments_044543.json:
+```json
+{
+    "body": "After turning on the test suite again I did doctest this on all of SkyNet and monsky now passes. Positive review. The valgrind issue should be moved to its own followup ticket.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-09T05:36:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5698",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5698#issuecomment-44543",
+    "user": "mabshoff"
+}
+```
 
 After turning on the test suite again I did doctest this on all of SkyNet and monsky now passes. Positive review. The valgrind issue should be moved to its own followup ticket.
 
@@ -174,16 +210,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-09 05:51:40
+archive/issue_comments_044544.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-04-09T05:51:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5698",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5698#issuecomment-44544",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-09 05:51:40
+archive/issue_comments_044545.json:
+```json
+{
+    "body": "Merged in Sage 3.4.1.rc2.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-09T05:51:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5698",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5698#issuecomment-44545",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.4.1.rc2.
 
@@ -192,8 +250,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by dmharvey created at 2009-04-12 12:35:05
+archive/issue_comments_044546.json:
+```json
+{
+    "body": "For the record, I believe this is due to a bug in `zn_poly` 0.8 which was fixed in `zn_poly` 0.9 (released about 6 months ago). FLINT still includes `zn_poly` 0.8. If FLINT upgrades to 0.9, I expect this problem will go away.",
+    "created_at": "2009-04-12T12:35:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5698",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5698#issuecomment-44546",
+    "user": "dmharvey"
+}
+```
 
 For the record, I believe this is due to a bug in `zn_poly` 0.8 which was fixed in `zn_poly` 0.9 (released about 6 months ago). FLINT still includes `zn_poly` 0.8. If FLINT upgrades to 0.9, I expect this problem will go away.

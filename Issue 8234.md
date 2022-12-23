@@ -1,11 +1,21 @@
 # Issue 8234: Data file deletion in notebook throws errors
 
-Issue created by migration from https://trac.sagemath.org/ticket/8234
-
-Original creator: rbeezer
-
-Original creation time: 2010-02-10 18:45:13
-
+archive/issues_008234.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  robert.marik\n\nDelete a file in the data directory of the notebook and you get a page back about an \"Internal Server Error\"  (by selecting the file in the drop-down box, and clicking on the \"delete\" hyperlink).  File is actually deleted, though.\n\nTrace back from Sage command-line invocation of `notebook()` below.\n\nThis does not happen on 4.3.2rc0, but does happen on 4.3.2.  Some discussion, but not much that isn't here already:  \nhttp://groups.google.com/group/sage-notebook/browse_thread/thread/dd2e03d2af01f852\n\n\n```\n2010-02-10 09:22:48-0800 [HTTPChannel,10,127.0.0.1] Exception rendering:\n2010-02-10 09:22:48-0800 [HTTPChannel,10,127.0.0.1] Unhandled Error\n        Traceback (most recent call last):\n          File \"/sage/dev/local/lib/python2.6/site-packages/twisted/internet/defer.py\", line 186, in addCallbacks\n            self._runCallbacks()\n          File \"/sage/dev/local/lib/python2.6/site-packages/twisted/internet/defer.py\", line 328, in _runCallbacks\n            self.result = callback(self.result, *args, **kw)\n          File \"/sage/dev/local/lib/python2.6/site-packages/twisted/internet/defer.py\", line 289, in _continue\n            self.unpause()\n          File \"/sage/dev/local/lib/python2.6/site-packages/twisted/internet/defer.py\", line 285, in unpause\n            self._runCallbacks()\n        --- <exception caught here> ---\n          File \"/sage/dev/local/lib/python2.6/site-packages/twisted/internet/defer.py\", line 328, in _runCallbacks\n            self.result = callback(self.result, *args, **kw)\n          File \"/sage/dev/local/lib/python2.6/site-packages/twisted/web2/server.py\", line 296, in <lambda>\n            d.addCallback(lambda res, req: res.renderHTTP(req), self)\n          File \"/sage/dev/local/lib/python2.6/site-packages/twisted/web2/resource.py\", line 85, in renderHTTP\n            return method(request)\n          File \"/sage/dev/local/lib/python2.6/site-packages/twisted/web2/resource.py\", line 202, in http_GET\n            return super(Resource, self).http_GET(request)\n          File \"/sage/dev/local/lib/python2.6/site-packages/twisted/web2/resource.py\", line 128, in http_GET\n            return self.render(request)\n          File \"/sage/dev/local/lib/python2.6/site-packages/sagenb-0.7.4-py2.6.egg/sagenb/notebook/twist.py\", line 671, in render\n            title=u'%s delete successful' % filename))\n        exceptions.TypeError: message() got an unexpected keyword argument 'title'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8234\n\n",
+    "created_at": "2010-02-10T18:45:13Z",
+    "labels": [
+        "notebook",
+        "major",
+        "bug"
+    ],
+    "title": "Data file deletion in notebook throws errors",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8234",
+    "user": "rbeezer"
+}
+```
 Assignee: was
 
 CC:  robert.marik
@@ -47,74 +57,188 @@ http://groups.google.com/group/sage-notebook/browse_thread/thread/dd2e03d2af01f8
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8234
+
+
+
+
 
 ---
 
-Comment by mpatel created at 2010-02-14 00:16:42
+archive/issue_comments_072734.json:
+```json
+{
+    "body": "#6069 should fix this.  If it doesn't, please let me know.",
+    "created_at": "2010-02-14T00:16:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8234",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8234#issuecomment-72734",
+    "user": "mpatel"
+}
+```
 
 #6069 should fix this.  If it doesn't, please let me know.
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-14 00:20:32
+archive/issue_comments_072735.json:
+```json
+{
+    "body": "But we still need to fix the page title (\"Error -- Sage\"), which is wrong.",
+    "created_at": "2010-02-14T00:20:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8234",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8234#issuecomment-72735",
+    "user": "mpatel"
+}
+```
 
 But we still need to fix the page title ("Error -- Sage"), which is wrong.
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-14 01:22:19
+archive/issue_comments_072736.json:
+```json
+{
+    "body": "Replying to [comment:2 mpatel]:\n> But we still need to fix the page title (\"Error -- Sage\"), which is wrong.\nSee V3 at #6069.",
+    "created_at": "2010-02-14T01:22:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8234",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8234#issuecomment-72736",
+    "user": "mpatel"
+}
+```
 
 Replying to [comment:2 mpatel]:
 > But we still need to fix the page title ("Error -- Sage"), which is wrong.
 See V3 at #6069.
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-14 01:32:19
+archive/issue_comments_072737.json:
+```json
+{
+    "body": "Changing priority from major to blocker.",
+    "created_at": "2010-02-14T01:32:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8234",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8234#issuecomment-72737",
+    "user": "mpatel"
+}
+```
 
 Changing priority from major to blocker.
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-14 03:38:31
+archive/issue_comments_072738.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-02-14T03:38:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8234",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8234#issuecomment-72738",
+    "user": "mpatel"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mpatel created at 2010-03-12 18:26:17
+archive/issue_comments_072739.json:
+```json
+{
+    "body": "When #6069 is merged, we should close this ticket.",
+    "created_at": "2010-03-12T18:26:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8234",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8234#issuecomment-72739",
+    "user": "mpatel"
+}
+```
 
 When #6069 is merged, we should close this ticket.
 
 
+
 ---
 
-Comment by timdumol created at 2010-03-15 09:10:52
+archive/issue_comments_072740.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-03-15T09:10:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8234",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8234#issuecomment-72740",
+    "user": "timdumol"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by timdumol created at 2010-03-15 09:10:52
+archive/issue_comments_072741.json:
+```json
+{
+    "body": "As #6069 is marked as positive review, I'll do the same for this.",
+    "created_at": "2010-03-15T09:10:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8234",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8234#issuecomment-72741",
+    "user": "timdumol"
+}
+```
 
 As #6069 is marked as positive review, I'll do the same for this.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-23 04:41:11
+archive/issue_comments_072742.json:
+```json
+{
+    "body": "(I'm not changing any notebook code in Sage 4.4.)",
+    "created_at": "2010-04-23T04:41:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8234",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8234#issuecomment-72742",
+    "user": "jhpalmieri"
+}
+```
 
 (I'm not changing any notebook code in Sage 4.4.)
 
 
+
 ---
 
-Comment by timdumol created at 2010-05-04 04:42:59
+archive/issue_comments_072743.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-05-04T04:42:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8234",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8234#issuecomment-72743",
+    "user": "timdumol"
+}
+```
 
 Resolution: fixed

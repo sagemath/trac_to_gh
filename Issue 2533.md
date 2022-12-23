@@ -1,11 +1,21 @@
 # Issue 2533: add "-p" flag to $CP for make install
 
-Issue created by migration from https://trac.sagemath.org/ticket/2533
-
-Original creator: mabshoff
-
-Original creation time: 2008-03-15 22:15:35
-
+archive/issues_002533.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\n\n```\nOn Saturday 15 March 2008, Paul Zimmermann wrote:\n>        Hi,\n\n> I wonder why sage -br takes so much time after a fresh build from source\n> and make install. Normally, since everything was just compiled, it should\n> have nothing to do. I guess the reason lies in:\n\n>    bash-3.00$ make install DESTDIR=/usr/local/sage-2.10.3 -n\n>    ...\n>    cp -rv * /usr/local/sage-2.10.3/sage/\n>    ...\n\n> where 'cp' does not preserve the dates of the files, and thus the correct\n> dependencies are lost. Maybe \"mv * /usr/local/sage-2.10.3/sage/\" would\n> solve that problem?\n\nOr use\n    cp -prv * ...\nthe -p option preserve timestamps.\n\nBill\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2533\n\n",
+    "created_at": "2008-03-15T22:15:35Z",
+    "labels": [
+        "build",
+        "major",
+        "bug"
+    ],
+    "title": "add \"-p\" flag to $CP for make install",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2533",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 
@@ -34,35 +44,96 @@ Bill
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2533
+
+
+
+
 
 ---
+
+archive/issue_comments_017271.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-03-15T22:19:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2533",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2533#issuecomment-17271",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-15 22:19:45
+archive/issue_comments_017272.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-03-15T22:19:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2533",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2533#issuecomment-17272",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mhansen created at 2008-03-15 22:22:13
+archive/issue_comments_017273.json:
+```json
+{
+    "body": "Looks good to me.",
+    "created_at": "2008-03-15T22:22:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2533",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2533#issuecomment-17273",
+    "user": "mhansen"
+}
+```
 
 Looks good to me.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-15 22:26:04
+archive/issue_comments_017274.json:
+```json
+{
+    "body": "Merged in Sage 2.10.4.rc0",
+    "created_at": "2008-03-15T22:26:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2533",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2533#issuecomment-17274",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.4.rc0
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-15 22:26:04
+archive/issue_comments_017275.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-03-15T22:26:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2533",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2533#issuecomment-17275",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

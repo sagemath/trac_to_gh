@@ -1,46 +1,117 @@
 # Issue 8190: decrease the number of docbuild warnings to 147
 
-Issue created by migration from https://trac.sagemath.org/ticket/8190
-
-Original creator: mvngu
-
-Original creation time: 2010-02-05 07:48:00
-
+archive/issues_008190.json:
+```json
+{
+    "body": "Assignee: mvngu\n\nAs the subject says.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8190\n\n",
+    "created_at": "2010-02-05T07:48:00Z",
+    "labels": [
+        "documentation",
+        "major",
+        "bug"
+    ],
+    "title": "decrease the number of docbuild warnings to 147",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8190",
+    "user": "mvngu"
+}
+```
 Assignee: mvngu
 
 As the subject says.
 
+Issue created by migration from https://trac.sagemath.org/ticket/8190
+
+
+
+
 
 ---
+
+archive/issue_comments_072185.json:
+```json
+{
+    "body": "Attachment\n\nbased on Sage 4.3.2.rc0",
+    "created_at": "2010-02-05T07:49:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8190",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8190#issuecomment-72185",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
 based on Sage 4.3.2.rc0
 
 
+
 ---
 
-Comment by mvngu created at 2010-02-05 07:50:21
+archive/issue_comments_072186.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-02-05T07:50:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8190",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8190#issuecomment-72186",
+    "user": "mvngu"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mvngu created at 2010-02-05 07:50:21
+archive/issue_comments_072187.json:
+```json
+{
+    "body": "Changing priority from major to trivial.",
+    "created_at": "2010-02-05T07:50:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8190",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8190#issuecomment-72187",
+    "user": "mvngu"
+}
+```
 
 Changing priority from major to trivial.
 
 
+
 ---
 
-Comment by hivert created at 2010-02-06 09:00:06
+archive/issue_comments_072188.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-02-06T09:00:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8190",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8190#issuecomment-72188",
+    "user": "hivert"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-11 14:29:55
+archive/issue_comments_072189.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-02-11T14:29:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8190",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8190#issuecomment-72189",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed

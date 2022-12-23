@@ -1,52 +1,138 @@
 # Issue 6743: port Sage to Microsoft Windows (via Cygwin)
 
-Issue created by migration from https://trac.sagemath.org/ticket/6743
-
-Original creator: was
-
-Original creation time: 2009-08-14 06:41:45
-
+archive/issues_006743.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  dimpase mhansen jpflori kcrisman simonking\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6743\n\n",
+    "created_at": "2009-08-14T06:41:45Z",
+    "labels": [
+        "porting",
+        "major",
+        "enhancement"
+    ],
+    "title": "port Sage to Microsoft Windows (via Cygwin)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6743",
+    "user": "was"
+}
+```
 Assignee: tbd
 
 CC:  dimpase mhansen jpflori kcrisman simonking
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6743
+
+
+
+
 
 ---
 
-Comment by was created at 2009-08-14 06:42:54
+archive/issue_comments_055249.json:
+```json
+{
+    "body": "The goal of this ticket is to port the standard Sage release to at least build and startup under Cygwin with GCC>=4.3.2.\n\nThis ticket could be closed by any significant advanced in this direction that can be merged in.",
+    "created_at": "2009-08-14T06:42:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55249",
+    "user": "was"
+}
+```
 
 The goal of this ticket is to port the standard Sage release to at least build and startup under Cygwin with GCC>=4.3.2.
 
 This ticket could be closed by any significant advanced in this direction that can be merged in.
 
 
+
 ---
+
+archive/issue_comments_055250.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-08-14T07:17:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55250",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_055251.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-08-19T23:31:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55251",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_055252.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-09-26T01:23:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55252",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2009-10-24 22:37:52
+archive/issue_comments_055253.json:
+```json
+{
+    "body": "Important remark.  I got passed a lot of issues toward startup by copying csage.so to be /bin/csage.dll.   Also, this program is very helpful: http://www.dependencywalker.com/",
+    "created_at": "2009-10-24T22:37:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55253",
+    "user": "was"
+}
+```
 
 Important remark.  I got passed a lot of issues toward startup by copying csage.so to be /bin/csage.dll.   Also, this program is very helpful: http://www.dependencywalker.com/
 
 
+
 ---
 
-Comment by was created at 2009-10-24 23:00:26
+archive/issue_comments_055254.json:
+```json
+{
+    "body": "After using the dependency thing above, and only importing half the sage library, I finally got to test out libsingular... and it works fine!\n\n```\nsage: R.<x,y,z> = QQ[]\nsage: f = (x+y+z+1)^2; f\nx^2 + 2*x*y + y^2 + 2*x*z + 2*y*z + z^2 + 2*x + 2*y + 2*z + 1\nsage: type(f)\n<type 'sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular'>\n```\n\n\n\nAnother key point is one should increase the RAM available to cygwin by editing the registry, as explained in the Cygwin user's manual.  The default 384MB limit with all cygwin installs is way way too small for sage.  Make it a gig. \n\nMy working sage install is /home/wstein/sage-4.1 on the winxp3 virtual machine.",
+    "created_at": "2009-10-24T23:00:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55254",
+    "user": "was"
+}
+```
 
 After using the dependency thing above, and only importing half the sage library, I finally got to test out libsingular... and it works fine!
 
@@ -65,98 +151,258 @@ Another key point is one should increase the RAM available to cygwin by editing 
 My working sage install is /home/wstein/sage-4.1 on the winxp3 virtual machine.
 
 
+
 ---
 
-Comment by was created at 2010-02-14 06:55:56
+archive/issue_comments_055255.json:
+```json
+{
+    "body": "Changing assignee from tbd to was.",
+    "created_at": "2010-02-14T06:55:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55255",
+    "user": "was"
+}
+```
 
 Changing assignee from tbd to was.
 
 
+
 ---
 
-Comment by was created at 2010-02-16 02:57:43
+archive/issue_comments_055256.json:
+```json
+{
+    "body": "I rebased the sage library patch to get the sage library to build against sage-4.3.3.  Applying this patch *and* fixing some library naming issues (mainly .so --> .dll) allows \"sage -b\" to work. Sage does not startup though.",
+    "created_at": "2010-02-16T02:57:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55256",
+    "user": "was"
+}
+```
 
 I rebased the sage library patch to get the sage library to build against sage-4.3.3.  Applying this patch *and* fixing some library naming issues (mainly .so --> .dll) allows "sage -b" to work. Sage does not startup though.
 
 
+
 ---
+
+archive/issue_comments_055257.json:
+```json
+{
+    "body": "Attachment\n\nthese are my notes when I tried to build sage-4.3.3.alpha0 from source on cygwin",
+    "created_at": "2010-02-16T02:59:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55257",
+    "user": "was"
+}
+```
 
 Attachment
 
 these are my notes when I tried to build sage-4.3.3.alpha0 from source on cygwin
 
 
+
 ---
+
+archive/issue_comments_055258.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-02-16T08:11:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55258",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2010-02-16 08:11:19
+archive/issue_comments_055259.json:
+```json
+{
+    "body": "Changing component from porting to cygwin.",
+    "created_at": "2010-02-16T08:11:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55259",
+    "user": "mhansen"
+}
+```
 
 Changing component from porting to cygwin.
 
 
+
 ---
 
-Comment by kcrisman created at 2011-06-15 23:28:44
+archive/issue_comments_055260.json:
+```json
+{
+    "body": "Anyone interested in this should check out [the wiki page](CygwinPort) for the latest.",
+    "created_at": "2011-06-15T23:28:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55260",
+    "user": "kcrisman"
+}
+```
 
 Anyone interested in this should check out [the wiki page](CygwinPort) for the latest.
 
 
+
 ---
 
-Comment by kcrisman created at 2011-06-28 18:50:28
+archive/issue_comments_055261.json:
+```json
+{
+    "body": "My proposal is that once Cygwin actually is able to be built out of the box (not necessarily running) that this ticket is then closed by updating prereq to include the various prereqs.  Again, see [the Cygwin wiki page on Sage Trac](CygwinPort) for details of what is currently needed.",
+    "created_at": "2011-06-28T18:50:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55261",
+    "user": "kcrisman"
+}
+```
 
 My proposal is that once Cygwin actually is able to be built out of the box (not necessarily running) that this ticket is then closed by updating prereq to include the various prereqs.  Again, see [the Cygwin wiki page on Sage Trac](CygwinPort) for details of what is currently needed.
 
 
+
 ---
 
-Comment by kcrisman created at 2011-06-29 03:11:22
+archive/issue_comments_055262.json:
+```json
+{
+    "body": "Updating description to have more precise instructions, at least for one particular setup that will hopefully work.",
+    "created_at": "2011-06-29T03:11:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55262",
+    "user": "kcrisman"
+}
+```
 
 Updating description to have more precise instructions, at least for one particular setup that will hopefully work.
 
 
+
 ---
 
-Comment by kcrisman created at 2011-06-30 01:00:34
+archive/issue_comments_055263.json:
+```json
+{
+    "body": "I just got Sage to build on Cygwin 1.7.3 (not most recent) on XP (not most recent) with the ONLY stops being once when the computer decided to do an automatic update and restarted, and once when I had to add the patch at #11499.  So I would say that this is as close to automatic as you can get.  (Once again, Maxima built fun - and runs in `sage -maxima`.)",
+    "created_at": "2011-06-30T01:00:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55263",
+    "user": "kcrisman"
+}
+```
 
 I just got Sage to build on Cygwin 1.7.3 (not most recent) on XP (not most recent) with the ONLY stops being once when the computer decided to do an automatic update and restarted, and once when I had to add the patch at #11499.  So I would say that this is as close to automatic as you can get.  (Once again, Maxima built fun - and runs in `sage -maxima`.)
 
 
+
 ---
 
-Comment by saliola created at 2011-07-05 04:19:07
+archive/issue_comments_055264.json:
+```json
+{
+    "body": "I just tried to go through the install on Windows 7 and Cygwin 1.7.9-1 (latest version) with sage-4.7.1.alpha4, but there was an error while building python. I'm going to attach the install.log file.",
+    "created_at": "2011-07-05T04:19:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55264",
+    "user": "saliola"
+}
+```
 
 I just tried to go through the install on Windows 7 and Cygwin 1.7.9-1 (latest version) with sage-4.7.1.alpha4, but there was an error while building python. I'm going to attach the install.log file.
 
 
+
 ---
+
+archive/issue_comments_055265.json:
+```json
+{
+    "body": "Attachment\n\nwindows 7, cygwin 1.7.9-1, python build error",
+    "created_at": "2011-07-05T04:20:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55265",
+    "user": "saliola"
+}
+```
 
 Attachment
 
 windows 7, cygwin 1.7.9-1, python build error
 
 
+
 ---
 
-Comment by mhansen created at 2011-07-05 04:29:54
+archive/issue_comments_055266.json:
+```json
+{
+    "body": "Franco, see http://cygwin.com/faq/faq.using.html#faq.using.bloda .  You may also want to do a rebaseall.",
+    "created_at": "2011-07-05T04:29:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55266",
+    "user": "mhansen"
+}
+```
 
 Franco, see http://cygwin.com/faq/faq.using.html#faq.using.bloda .  You may also want to do a rebaseall.
 
 
+
 ---
 
-Comment by mhansen created at 2011-07-05 04:31:53
+archive/issue_comments_055267.json:
+```json
+{
+    "body": "Also, see http://comments.gmane.org/gmane.os.cygwin.xfree/20979",
+    "created_at": "2011-07-05T04:31:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55267",
+    "user": "mhansen"
+}
+```
 
 Also, see http://comments.gmane.org/gmane.os.cygwin.xfree/20979
 
 
+
 ---
 
-Comment by kcrisman created at 2011-07-05 14:01:08
+archive/issue_comments_055268.json:
+```json
+{
+    "body": "Replying to [comment:30 saliola]:\n> I just tried to go through the install on Windows 7 and Cygwin 1.7.9-1 (latest version) with sage-4.7.1.alpha4, but there was an error while building python. I'm going to attach the install.log file.\n> \nThanks so much for trying this.  I think that it's almost certainly the case that mhansen's comment will lead you to happiness.  The Python spkg seems to be particularly vulnerable to this problem, in other reports as well as my own experience.  By the way, there are more detailed instructions about how to rebase the Sage dlls (not just the system ones) at the [wiki page about this](CygwinPort).",
+    "created_at": "2011-07-05T14:01:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55268",
+    "user": "kcrisman"
+}
+```
 
 Replying to [comment:30 saliola]:
 > I just tried to go through the install on Windows 7 and Cygwin 1.7.9-1 (latest version) with sage-4.7.1.alpha4, but there was an error while building python. I'm going to attach the install.log file.
@@ -164,18 +410,40 @@ Replying to [comment:30 saliola]:
 Thanks so much for trying this.  I think that it's almost certainly the case that mhansen's comment will lead you to happiness.  The Python spkg seems to be particularly vulnerable to this problem, in other reports as well as my own experience.  By the way, there are more detailed instructions about how to rebase the Sage dlls (not just the system ones) at the [wiki page about this](CygwinPort).
 
 
+
 ---
 
-Comment by kcrisman created at 2011-07-05 14:02:10
+archive/issue_comments_055269.json:
+```json
+{
+    "body": "Replying to [comment:32 mhansen]:\n> Also, see http://comments.gmane.org/gmane.os.cygwin.xfree/20979\nWhich precise comment?  [http://permalink.gmane.org/gmane.os.cygwin.xfree/21742](http://permalink.gmane.org/gmane.os.cygwin.xfree/21742) or [http://permalink.gmane.org/gmane.os.cygwin.xfree/21344](http://permalink.gmane.org/gmane.os.cygwin.xfree/21344) or a different one?",
+    "created_at": "2011-07-05T14:02:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55269",
+    "user": "kcrisman"
+}
+```
 
 Replying to [comment:32 mhansen]:
 > Also, see http://comments.gmane.org/gmane.os.cygwin.xfree/20979
 Which precise comment?  [http://permalink.gmane.org/gmane.os.cygwin.xfree/21742](http://permalink.gmane.org/gmane.os.cygwin.xfree/21742) or [http://permalink.gmane.org/gmane.os.cygwin.xfree/21344](http://permalink.gmane.org/gmane.os.cygwin.xfree/21344) or a different one?
 
 
+
 ---
 
-Comment by saliola created at 2011-07-05 14:24:19
+archive/issue_comments_055270.json:
+```json
+{
+    "body": "Replying to [comment:33 kcrisman]:\n> Thanks so much for trying this.\n\nIt is the least I can do, considering all the hard work by all of you. Your email on sage-devel convinced me to try.\n\n> I think that it's almost certainly the case that mhansen's comment will lead you to happiness.  The Python spkg seems to be particularly vulnerable to this problem, in other reports as well as my own experience.  By the way, there are more detailed instructions about how to rebase the Sage dlls (not just the system ones) at the [wiki page about this](CygwinPort).\n\nSo far, I just rebased Cygwin using `rebaseall -v`. I don't know whether this also rebases the Sage dlls, but the compilation is now continuing (it finished compiling Python).\n\nI'm convinced that my problem is related to Windows update. I have Windows 7 installed on a partition on my laptop and almost never boot into it. It was really, really behind on updates, and Windows just kept on applying update and update (even after it told me there were no more updates to apply, it somehow managed to download some new updates....). It seems to have stopped updating now. Fingers crossed.",
+    "created_at": "2011-07-05T14:24:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55270",
+    "user": "saliola"
+}
+```
 
 Replying to [comment:33 kcrisman]:
 > Thanks so much for trying this.
@@ -189,9 +457,20 @@ So far, I just rebased Cygwin using `rebaseall -v`. I don't know whether this al
 I'm convinced that my problem is related to Windows update. I have Windows 7 installed on a partition on my laptop and almost never boot into it. It was really, really behind on updates, and Windows just kept on applying update and update (even after it told me there were no more updates to apply, it somehow managed to download some new updates....). It seems to have stopped updating now. Fingers crossed.
 
 
+
 ---
 
-Comment by kcrisman created at 2011-07-05 14:26:03
+archive/issue_comments_055271.json:
+```json
+{
+    "body": "> I'm convinced that my problem is related to Windows update. I have Windows 7 installed on a partition on my laptop and almost never boot into it. It was really, really behind on updates, and Windows just kept on applying update and update (even after it told me there were no more updates to apply, it somehow managed to download some new updates....). It seems to have stopped updating now. Fingers crossed.\n\nYes, you are totally right about this problem.  Windows just does it again and again without really asking.\n\nYou know what I do?  I disconnect from the internet :)  But that is on a computer I rented from our IT just for this purpose, hard to do with a main computer.",
+    "created_at": "2011-07-05T14:26:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55271",
+    "user": "kcrisman"
+}
+```
 
 > I'm convinced that my problem is related to Windows update. I have Windows 7 installed on a partition on my laptop and almost never boot into it. It was really, really behind on updates, and Windows just kept on applying update and update (even after it told me there were no more updates to apply, it somehow managed to download some new updates....). It seems to have stopped updating now. Fingers crossed.
 
@@ -200,53 +479,130 @@ Yes, you are totally right about this problem.  Windows just does it again and a
 You know what I do?  I disconnect from the internet :)  But that is on a computer I rented from our IT just for this purpose, hard to do with a main computer.
 
 
+
 ---
 
-Comment by leif created at 2011-07-12 18:14:57
+archive/issue_comments_055272.json:
+```json
+{
+    "body": "FLINT spkg now references the new p8 ([re]based on the latest p7 from #11246), located on `spkg-upload`.",
+    "created_at": "2011-07-12T18:14:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55272",
+    "user": "leif"
+}
+```
 
 FLINT spkg now references the new p8 ([re]based on the latest p7 from #11246), located on `spkg-upload`.
 
 
+
 ---
 
-Comment by was created at 2011-08-24 23:48:12
+archive/issue_comments_055273.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"sd32\".",
+    "created_at": "2011-08-24T23:48:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55273",
+    "user": "was"
+}
+```
 
 Changing keywords from "" to "sd32".
 
 
+
 ---
 
-Comment by kcrisman created at 2011-08-25 01:43:22
+archive/issue_comments_055274.json:
+```json
+{
+    "body": "Changing keywords from \"sd32\" to \"sd31 sd32\".",
+    "created_at": "2011-08-25T01:43:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55274",
+    "user": "kcrisman"
+}
+```
 
 Changing keywords from "sd32" to "sd31 sd32".
 
 
+
 ---
 
-Comment by jpflori created at 2012-07-10 21:34:43
+archive/issue_comments_055275.json:
+```json
+{
+    "body": "For info, to build the python spkg 2.7.3-p0 from sage 5.1.rc1, at least the patches from python issue tracker issues 9665, 14437, 14438 are needed.",
+    "created_at": "2012-07-10T21:34:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55275",
+    "user": "jpflori"
+}
+```
 
 For info, to build the python spkg 2.7.3-p0 from sage 5.1.rc1, at least the patches from python issue tracker issues 9665, 14437, 14438 are needed.
 
 
----
-
-Comment by kcrisman created at 2012-07-11 02:04:57
-
-If you can also update [CygwinPort](CygwinPort), that would be wonderful!  (This is just for building - that is for _everything_.)
-
 
 ---
 
-Comment by jpflori created at 2012-07-11 02:06:23
+archive/issue_comments_055276.json:
+```json
+{
+    "body": "If you can also update [CygwinPort](CygwinPort), that would be wonderful!  (This is just for building - that is for *everything*.)",
+    "created_at": "2012-07-11T02:04:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55276",
+    "user": "kcrisman"
+}
+```
+
+If you can also update [CygwinPort](CygwinPort), that would be wonderful!  (This is just for building - that is for *everything*.)
+
+
+
+---
+
+archive/issue_comments_055277.json:
+```json
+{
+    "body": "I'll do when I'm finished (if that ever happens).\nI've just beaten MPIR, don't know what's coming next.\nThe main issue is that everything is so slow....",
+    "created_at": "2012-07-11T02:06:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55277",
+    "user": "jpflori"
+}
+```
 
 I'll do when I'm finished (if that ever happens).
 I've just beaten MPIR, don't know what's coming next.
 The main issue is that everything is so slow....
 
 
+
 ---
 
-Comment by kcrisman created at 2012-07-11 02:08:38
+archive/issue_comments_055278.json:
+```json
+{
+    "body": "> I'll do when I'm finished (if that ever happens).\nYeah, just be sure to keep every issue if you only know it works on one kind of Windows.\n> I've just beaten MPIR, don't know what's coming next.\nHopefully just #12089 and then the Pari segfault?  We'll see.\n> The main issue is that everything is so slow....\nTrue.  And rebasing.",
+    "created_at": "2012-07-11T02:08:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55278",
+    "user": "kcrisman"
+}
+```
 
 > I'll do when I'm finished (if that ever happens).
 Yeah, just be sure to keep every issue if you only know it works on one kind of Windows.
@@ -256,41 +612,85 @@ Hopefully just #12089 and then the Pari segfault?  We'll see.
 True.  And rebasing.
 
 
+
 ---
 
-Comment by jpflori created at 2012-12-06 15:52:09
+archive/issue_comments_055279.json:
+```json
+{
+    "body": "I had to install zlib-devel as well or had horrible linking problems with freetype and gd.",
+    "created_at": "2012-12-06T15:52:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55279",
+    "user": "jpflori"
+}
+```
 
 I had to install zlib-devel as well or had horrible linking problems with freetype and gd.
 
 
+
 ---
 
-Comment by kcrisman created at 2012-12-06 16:19:32
+archive/issue_comments_055280.json:
+```json
+{
+    "body": "> I had to install zlib-devel as well or had horrible linking problems with freetype and gd.\nHuh, maybe that's only on Win 7.  Well, add it to the list here and on the [CygwinPort](CygwinPort) page.",
+    "created_at": "2012-12-06T16:19:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55280",
+    "user": "kcrisman"
+}
+```
 
 > I had to install zlib-devel as well or had horrible linking problems with freetype and gd.
 Huh, maybe that's only on Win 7.  Well, add it to the list here and on the [CygwinPort](CygwinPort) page.
 
 
+
 ---
 
-Comment by kcrisman created at 2012-12-18 21:09:56
+archive/issue_comments_055281.json:
+```json
+{
+    "body": "What we now need is mainly an update to the prereq spkg.  We need to somehow check for:\n* `file`\n* `patch`\n* `liblapack`, `liblapack0`, `liblapack-devel`\n* `libiconv`, `openssl`, `openssl-devel`\n* `libgc-devel`\n* `zlib-devel`\n* `libncurses-devel`\n* `make`, `perl`, `m4`\n* `gcc4-x.y.z` and `g++-x.y.z`, `fortran`; the versions **must** match\nHow does one go about doing this?  I assume that it should happen in `prereq-1.x-install` and not the configure, but I don't know a lot about these things.  I've also asked about this at [this sage-devel thread](https://groups.google.com/forum/?fromgroups#!topic/sage-devel/NAWeTIsQrQw).",
+    "created_at": "2012-12-18T21:09:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55281",
+    "user": "kcrisman"
+}
+```
 
 What we now need is mainly an update to the prereq spkg.  We need to somehow check for:
- * `file`
- * `patch`
- * `liblapack`, `liblapack0`, `liblapack-devel`
- * `libiconv`, `openssl`, `openssl-devel`
- * `libgc-devel`
- * `zlib-devel`
- * `libncurses-devel`
- * `make`, `perl`, `m4`
- * `gcc4-x.y.z` and `g++-x.y.z`, `fortran`; the versions *must* match
+* `file`
+* `patch`
+* `liblapack`, `liblapack0`, `liblapack-devel`
+* `libiconv`, `openssl`, `openssl-devel`
+* `libgc-devel`
+* `zlib-devel`
+* `libncurses-devel`
+* `make`, `perl`, `m4`
+* `gcc4-x.y.z` and `g++-x.y.z`, `fortran`; the versions **must** match
 How does one go about doing this?  I assume that it should happen in `prereq-1.x-install` and not the configure, but I don't know a lot about these things.  I've also asked about this at [this sage-devel thread](https://groups.google.com/forum/?fromgroups#!topic/sage-devel/NAWeTIsQrQw).
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-12-19 08:01:56
+archive/issue_comments_055282.json:
+```json
+{
+    "body": "Replying to [comment:72 kcrisman]:\n> What we now need is mainly an update to the prereq spkg.  We need to somehow check for:\n>  * `file`\nWhy is this needed? I don't think Sage should ever use `file`.\n\n>  * `patch`\nWhy do we need this? `patch` comes with Sage.\n\n>  * `liblapack`, `liblapack0`, `liblapack-devel`\nWhy do we need this? `lapack` comes with Sage.\n\n>  * `libiconv`\nWhy do we need this? `iconv` comes with Sage.\n\n>  * `openssl`, `openssl-devel`\nI don't think these are required anymore.\n\n>  * `libgc-devel`\nIs this `boehm_gc`? This comes with Sage.\n\n>  * `zlib-devel`\nWhy do we need this? `zlib` comes with Sage.\n\n>  * `libncurses-devel`\nAre you sure this is needed? Does #12725 help with not requiring `ncurses`?\n\n>  * `make`, `perl`, `m4`\nThis is already checked I believe.\n\n>  * `gcc4-x.y.z` and `g++-x.y.z`, `fortran`; the versions **must** match\nSo, the GCC spkg doesn't build on Cygwin? Then also `spkg/install` should be changed not to install GCC on Cygwin. The version checking already exists.\n\n> I assume that it should happen in `prereq-1.x-install` and not the configure.\nPlease don't! Ideally, `prereq-1.x-install` should be essentially empty and all checks are done in `configure`. That's how things are supposed to be done autotools-style.",
+    "created_at": "2012-12-19T08:01:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55282",
+    "user": "jdemeyer"
+}
+```
 
 Replying to [comment:72 kcrisman]:
 > What we now need is mainly an update to the prereq spkg.  We need to somehow check for:
@@ -321,16 +721,27 @@ Are you sure this is needed? Does #12725 help with not requiring `ncurses`?
 >  * `make`, `perl`, `m4`
 This is already checked I believe.
 
->  * `gcc4-x.y.z` and `g++-x.y.z`, `fortran`; the versions *must* match
+>  * `gcc4-x.y.z` and `g++-x.y.z`, `fortran`; the versions **must** match
 So, the GCC spkg doesn't build on Cygwin? Then also `spkg/install` should be changed not to install GCC on Cygwin. The version checking already exists.
 
 > I assume that it should happen in `prereq-1.x-install` and not the configure.
 Please don't! Ideally, `prereq-1.x-install` should be essentially empty and all checks are done in `configure`. That's how things are supposed to be done autotools-style.
 
 
+
 ---
 
-Comment by jpflori created at 2012-12-19 08:23:50
+archive/issue_comments_055283.json:
+```json
+{
+    "body": "The resulting install is not that bad, see\nhttp://boxen.math.washington.edu/home/jpflori/ptest-sage-5.5.rc0-cygwin.log\n\nI got a lot of OverflowError, surely due to the fact that I'm running a 64 bits Windows 7.\nAnd my install also lacks some tickets posted here and there on Trac.\n\nNot sure about the prereq, but I seem to remember that without zlib-devel a lot of things including zlib-devel got messed up in freetype and spkg depending on it (I'd say gd), I'll try to dig out the logs.\n\nAbout patch, not sure what http://trac.sagemath.org/sage_trac/ticket/11232 does.",
+    "created_at": "2012-12-19T08:23:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55283",
+    "user": "jpflori"
+}
+```
 
 The resulting install is not that bad, see
 http://boxen.math.washington.edu/home/jpflori/ptest-sage-5.5.rc0-cygwin.log
@@ -343,25 +754,58 @@ Not sure about the prereq, but I seem to remember that without zlib-devel a lot 
 About patch, not sure what http://trac.sagemath.org/sage_trac/ticket/11232 does.
 
 
+
 ---
 
-Comment by jpflori created at 2012-12-19 10:09:37
+archive/issue_comments_055284.json:
+```json
+{
+    "body": "I've reinstalled a minimal Cygwin (a few weeks old though, no internet access on the used computer right now) and will add required Cygwin packages incrementally to be sure of what matters.",
+    "created_at": "2012-12-19T10:09:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55284",
+    "user": "jpflori"
+}
+```
 
 I've reinstalled a minimal Cygwin (a few weeks old though, no internet access on the used computer right now) and will add required Cygwin packages incrementally to be sure of what matters.
 
 
+
 ---
 
-Comment by vbraun created at 2012-12-19 12:04:45
+archive/issue_comments_055285.json:
+```json
+{
+    "body": "First of all, please put the cygwin package checking into its own script. Its opposite to any sane prerequisite checking, but then thats because the underlying platform lacks sanity.\n\nEach Cygwin package installs a gzipped listing of files under `/etc/setup/<package>.lst.gz`, so I would use that to check that the prerequisite packages are installed. As usual, setting `SAGE_PORT=yes` should let you skip the prerequisite check if you think you know better.",
+    "created_at": "2012-12-19T12:04:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55285",
+    "user": "vbraun"
+}
+```
 
 First of all, please put the cygwin package checking into its own script. Its opposite to any sane prerequisite checking, but then thats because the underlying platform lacks sanity.
 
 Each Cygwin package installs a gzipped listing of files under `/etc/setup/<package>.lst.gz`, so I would use that to check that the prerequisite packages are installed. As usual, setting `SAGE_PORT=yes` should let you skip the prerequisite check if you think you know better.
 
 
+
 ---
 
-Comment by dimpase created at 2012-12-19 12:52:37
+archive/issue_comments_055286.json:
+```json
+{
+    "body": "Replying to [comment:73 jdemeyer]:\n> >  * `liblapack`, `liblapack0`, `liblapack-devel`\n> Why do we need this? `lapack` comes with Sage.\n> \natlas 3.8 does not build on cygwin.",
+    "created_at": "2012-12-19T12:52:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55286",
+    "user": "dimpase"
+}
+```
 
 Replying to [comment:73 jdemeyer]:
 > >  * `liblapack`, `liblapack0`, `liblapack-devel`
@@ -370,9 +814,20 @@ Replying to [comment:73 jdemeyer]:
 atlas 3.8 does not build on cygwin.
 
 
+
 ---
 
-Comment by kcrisman created at 2012-12-19 14:17:32
+archive/issue_comments_055287.json:
+```json
+{
+    "body": "> > What we now need is mainly an update to the prereq spkg.  We need to somehow check for:\n> >  * `file`\n> Why is this needed? I don't think Sage should ever use `file`.\n\nI appreciate all the questions here trying to narrow it down.  However, I think the point is to FIRST get Sage to build reliably on Cygwin, and if we need all these things, then so be it.  We can remove them later, precisely because we're not targeting people just randomly building Sage on Cygwin.\n\nAlso, these were definitely all needed at some point in the process, but it's been 3+ years, so of course some might not be.  But Cygwin is *remarkably* picky about these things.  With respect to patch, for instance, why not just require it on such an unusual platform?\n\nSimilarly, I have no idea if the gcc package builds on Cygwin, but we still need *some* compiler to build *that*!  It would be worth testing it without that, but I at least have no time to try all the various permutations and combinations of prereqs.  Let's get this done first, then remove things we don't need, otherwise we'll *never* catch up to Sage (if only because of updates to spkgs).",
+    "created_at": "2012-12-19T14:17:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55287",
+    "user": "kcrisman"
+}
+```
 
 > > What we now need is mainly an update to the prereq spkg.  We need to somehow check for:
 > >  * `file`
@@ -380,14 +835,25 @@ Comment by kcrisman created at 2012-12-19 14:17:32
 
 I appreciate all the questions here trying to narrow it down.  However, I think the point is to FIRST get Sage to build reliably on Cygwin, and if we need all these things, then so be it.  We can remove them later, precisely because we're not targeting people just randomly building Sage on Cygwin.
 
-Also, these were definitely all needed at some point in the process, but it's been 3+ years, so of course some might not be.  But Cygwin is _remarkably_ picky about these things.  With respect to patch, for instance, why not just require it on such an unusual platform?
+Also, these were definitely all needed at some point in the process, but it's been 3+ years, so of course some might not be.  But Cygwin is *remarkably* picky about these things.  With respect to patch, for instance, why not just require it on such an unusual platform?
 
-Similarly, I have no idea if the gcc package builds on Cygwin, but we still need _some_ compiler to build _that_!  It would be worth testing it without that, but I at least have no time to try all the various permutations and combinations of prereqs.  Let's get this done first, then remove things we don't need, otherwise we'll _never_ catch up to Sage (if only because of updates to spkgs).
+Similarly, I have no idea if the gcc package builds on Cygwin, but we still need *some* compiler to build *that*!  It would be worth testing it without that, but I at least have no time to try all the various permutations and combinations of prereqs.  Let's get this done first, then remove things we don't need, otherwise we'll *never* catch up to Sage (if only because of updates to spkgs).
+
 
 
 ---
 
-Comment by jdemeyer created at 2012-12-19 14:27:15
+archive/issue_comments_055288.json:
+```json
+{
+    "body": "Replying to [comment:78 kcrisman]:\n> I appreciate all the questions here trying to narrow it down.  However, I think the point is to FIRST get Sage to build reliably on Cygwin, and if we need all these things, then so be it.  We can remove them later, precisely because we're not targeting people just randomly building Sage on Cygwin.\n\nIf you're still at this early stage like you're suggesting, maybe updating the prereq should be postponed until it's clearer what the real requirements are. What's the point of putting effort in checking some dependency if the dependency might be removed in a next release? (honest question, no offense meant)",
+    "created_at": "2012-12-19T14:27:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55288",
+    "user": "jdemeyer"
+}
+```
 
 Replying to [comment:78 kcrisman]:
 > I appreciate all the questions here trying to narrow it down.  However, I think the point is to FIRST get Sage to build reliably on Cygwin, and if we need all these things, then so be it.  We can remove them later, precisely because we're not targeting people just randomly building Sage on Cygwin.
@@ -395,20 +861,42 @@ Replying to [comment:78 kcrisman]:
 If you're still at this early stage like you're suggesting, maybe updating the prereq should be postponed until it's clearer what the real requirements are. What's the point of putting effort in checking some dependency if the dependency might be removed in a next release? (honest question, no offense meant)
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-12-19 14:28:46
+archive/issue_comments_055289.json:
+```json
+{
+    "body": "Replying to [comment:78 kcrisman]:\n> I have no idea if the gcc package builds on Cygwin, but we still need *some* compiler to build *that*!\nSure, but this is already checked in `prereq`. Also, the fact that the gcc/g++/gfortran versions match (if GCC isn't built) is checked already. Both these are relevant for all platforms, not only Cygwin.",
+    "created_at": "2012-12-19T14:28:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55289",
+    "user": "jdemeyer"
+}
+```
 
 Replying to [comment:78 kcrisman]:
-> I have no idea if the gcc package builds on Cygwin, but we still need _some_ compiler to build _that_!
+> I have no idea if the gcc package builds on Cygwin, but we still need *some* compiler to build *that*!
 Sure, but this is already checked in `prereq`. Also, the fact that the gcc/g++/gfortran versions match (if GCC isn't built) is checked already. Both these are relevant for all platforms, not only Cygwin.
 
 
+
 ---
 
-Comment by kcrisman created at 2012-12-19 14:38:55
+archive/issue_comments_055290.json:
+```json
+{
+    "body": "> > I have no idea if the gcc package builds on Cygwin, but we still need *some* compiler to build *that*!\n> Sure, but this is already checked in `prereq`. Also, the fact that the gcc/g++/gfortran versions match (if GCC isn't built) is checked already. Both these are relevant for all platforms, not only Cygwin.\nOh, that's very helpful.\n> What's the point of putting effort in checking some dependency if the dependency might be removed in a next release? (honest question, no offense meant)\nNone taken.  The amount of effort put into this port thus far by JP, Mike Hansen, William, Dima, myself, ... I think that I probably speak for them in saying that the marginal effort of checking for the dependency is nil compared to the value of not having to worry about it.  That said, naturally if JP wants to check them, I'm not opposed. \n\nI should also point out that I will not have access to my XP machine starting Friday afternoon US for several weeks, so anything XP-specific would be nice to have resolved by then.",
+    "created_at": "2012-12-19T14:38:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55290",
+    "user": "kcrisman"
+}
+```
 
-> > I have no idea if the gcc package builds on Cygwin, but we still need _some_ compiler to build _that_!
+> > I have no idea if the gcc package builds on Cygwin, but we still need *some* compiler to build *that*!
 > Sure, but this is already checked in `prereq`. Also, the fact that the gcc/g++/gfortran versions match (if GCC isn't built) is checked already. Both these are relevant for all platforms, not only Cygwin.
 Oh, that's very helpful.
 > What's the point of putting effort in checking some dependency if the dependency might be removed in a next release? (honest question, no offense meant)
@@ -417,9 +905,20 @@ None taken.  The amount of effort put into this port thus far by JP, Mike Hansen
 I should also point out that I will not have access to my XP machine starting Friday afternoon US for several weeks, so anything XP-specific would be nice to have resolved by then.
 
 
+
 ---
 
-Comment by jpflori created at 2012-12-19 23:19:03
+archive/issue_comments_055291.json:
+```json
+{
+    "body": "For what it is worth, I've begun looking at prereqs for cygwin by starting with a minimal cygwin install and only adding packages when needed and am posting results on the [CygwinPort](CygwinPort) page.\n\nIn particular, something should be done for libiconv.\n\nAs far as the gcc spkg is concerned I got a segfault earlier after a few hours.\nMaybe that was just because of memory leaks and memory exhaustion, so Ive relaunched a build now, but it takes hours...",
+    "created_at": "2012-12-19T23:19:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55291",
+    "user": "jpflori"
+}
+```
 
 For what it is worth, I've begun looking at prereqs for cygwin by starting with a minimal cygwin install and only adding packages when needed and am posting results on the [CygwinPort](CygwinPort) page.
 
@@ -429,23 +928,56 @@ As far as the gcc spkg is concerned I got a segfault earlier after a few hours.
 Maybe that was just because of memory leaks and memory exhaustion, so Ive relaunched a build now, but it takes hours...
 
 
+
 ---
 
-Comment by jpflori created at 2012-12-20 12:17:13
+archive/issue_comments_055292.json:
+```json
+{
+    "body": "So the gcc spkg failed again because of exhaustion memory, but restarting from the build dir finishes fine and everything seems ok then.",
+    "created_at": "2012-12-20T12:17:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55292",
+    "user": "jpflori"
+}
+```
 
 So the gcc spkg failed again because of exhaustion memory, but restarting from the build dir finishes fine and everything seems ok then.
 
 
+
 ---
 
-Comment by jpflori created at 2012-12-20 12:34:08
+archive/issue_comments_055293.json:
+```json
+{
+    "body": "In fact it seems to fail to compile ECL from #13324.",
+    "created_at": "2012-12-20T12:34:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55293",
+    "user": "jpflori"
+}
+```
 
 In fact it seems to fail to compile ECL from #13324.
 
 
+
 ---
 
-Comment by jpflori created at 2012-12-20 12:41:32
+archive/issue_comments_055294.json:
+```json
+{
+    "body": "The ECL problem was already encountered here:\nhttp://sourceforge.net/mailarchive/message.php?msg_id=28466506\n\n(This did not happen with the Cywgin gcc 4.5.something.)",
+    "created_at": "2012-12-20T12:41:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55294",
+    "user": "jpflori"
+}
+```
 
 The ECL problem was already encountered here:
 http://sourceforge.net/mailarchive/message.php?msg_id=28466506
@@ -453,9 +985,20 @@ http://sourceforge.net/mailarchive/message.php?msg_id=28466506
 (This did not happen with the Cywgin gcc 4.5.something.)
 
 
+
 ---
 
-Comment by jpflori created at 2012-12-20 14:29:37
+archive/issue_comments_055295.json:
+```json
+{
+    "body": "Replying to [comment:77 dimpase]:\n> Replying to [comment:73 jdemeyer]:\n> > >  * `liblapack`, `liblapack0`, `liblapack-devel`\n> > Why do we need this? `lapack` comes with Sage.\n> > \n> atlas 3.8 does not build on cygwin. \n> \nAny hint why?\n\nWill atlas 3.10 from #10508 fix this issue?",
+    "created_at": "2012-12-20T14:29:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55295",
+    "user": "jpflori"
+}
+```
 
 Replying to [comment:77 dimpase]:
 > Replying to [comment:73 jdemeyer]:
@@ -469,16 +1012,38 @@ Any hint why?
 Will atlas 3.10 from #10508 fix this issue?
 
 
+
 ---
 
-Comment by vbraun created at 2012-12-20 14:54:34
+archive/issue_comments_055296.json:
+```json
+{
+    "body": "Its possible to build ATLAS on Windows but as with both ATLAS and Windows my best guess is that it won't work right out of the box. I certainly haven't even tried.",
+    "created_at": "2012-12-20T14:54:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55296",
+    "user": "vbraun"
+}
+```
 
 Its possible to build ATLAS on Windows but as with both ATLAS and Windows my best guess is that it won't work right out of the box. I certainly haven't even tried.
 
 
+
 ---
 
-Comment by dimpase created at 2012-12-20 14:58:02
+archive/issue_comments_055297.json:
+```json
+{
+    "body": "Replying to [comment:86 jpflori]:\n> Replying to [comment:77 dimpase]:\n> > Replying to [comment:73 jdemeyer]:\n> > > >  * `liblapack`, `liblapack0`, `liblapack-devel`\n> > > Why do we need this? `lapack` comes with Sage.\n> > > \n> > atlas 3.8 does not build on cygwin. \n> > \n> Any hint why?\n\nE.g. [MANIFEST crap](https://sites.google.com/site/dpovey/compilation-instructions-for-atlas-with-cygwin-under-windows-7)\nI imagine it's only part of the story.\n> \n> Will atlas 3.10 from #10508 fix this issue?\nperhaps. Or maybe not... But, again, the more stuff we build, the more stuff we will need to rebase, etc...\n\nActually, we should make a Windows batch file to automate the build/rebase loop.",
+    "created_at": "2012-12-20T14:58:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55297",
+    "user": "dimpase"
+}
+```
 
 Replying to [comment:86 jpflori]:
 > Replying to [comment:77 dimpase]:
@@ -499,9 +1064,20 @@ perhaps. Or maybe not... But, again, the more stuff we build, the more stuff we 
 Actually, we should make a Windows batch file to automate the build/rebase loop.
 
 
+
 ---
 
-Comment by jpflori created at 2012-12-20 15:11:54
+archive/issue_comments_055298.json:
+```json
+{
+    "body": "Not sure if cygwin got better, but with my 5.5.rc0 I only had to rebase when I actually wanted to launch sage, so this might not be a real issue anymore.\n\nThe most worrying things for me are:\n* memory leaks, I've removed many things which made dlls from windows linked to different cygwin process and I don't see anything fishy now, but they are still here,\n* slowness, especially for all the configure stuff.",
+    "created_at": "2012-12-20T15:11:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55298",
+    "user": "jpflori"
+}
+```
 
 Not sure if cygwin got better, but with my 5.5.rc0 I only had to rebase when I actually wanted to launch sage, so this might not be a real issue anymore.
 
@@ -510,9 +1086,20 @@ The most worrying things for me are:
 * slowness, especially for all the configure stuff.
 
 
+
 ---
 
-Comment by jpflori created at 2012-12-20 16:04:57
+archive/issue_comments_055299.json:
+```json
+{
+    "body": "About ATLAS, I'm mostly asking that because the policy of Sage seems to be: require the fewest system packages as possible.\n\nSo if ATLAS can be built without much hassle let's build it by default, just as we only require gcc and build g++ and gfortran by default and try to build patch.\n\nThe user can always decide to install the g++ and gfortran and to set SAGE_ATLAS_LIB.\n\nPersonally I never install the ATLAS spkg, but use the system one, because it always took ages to build when it did not fail, and could never correctly detect my cpus to choose a sensible default.\nI would be very happy to use my system patch as well (but I guess that some creepy system do not even provide a working patch so the spkg is needed).",
+    "created_at": "2012-12-20T16:04:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55299",
+    "user": "jpflori"
+}
+```
 
 About ATLAS, I'm mostly asking that because the policy of Sage seems to be: require the fewest system packages as possible.
 
@@ -524,9 +1111,20 @@ Personally I never install the ATLAS spkg, but use the system one, because it al
 I would be very happy to use my system patch as well (but I guess that some creepy system do not even provide a working patch so the spkg is needed).
 
 
+
 ---
 
-Comment by jpflori created at 2012-12-21 16:42:48
+archive/issue_comments_055300.json:
+```json
+{
+    "body": "Replying to [comment:88 dimpase]:\n> Replying to [comment:86 jpflori]:\n> > Replying to [comment:77 dimpase]:\n> > > Replying to [comment:73 jdemeyer]:\n> > > > >  * `liblapack`, `liblapack0`, `liblapack-devel`\n> > > > Why do we need this? `lapack` comes with Sage.\n> > > > \n> > > atlas 3.8 does not build on cygwin. \n> > > \n> > Any hint why?\n> \n> E.g. [MANIFEST crap](https://sites.google.com/site/dpovey/compilation-instructions-for-atlas-with-cygwin-under-windows-7)\n> I imagine it's only part of the story.\nNo it looks like its all of it and is not needed anymore from 3.9.\n\nThe final crap is because they want a .lib file we do not care about.\n> > \n> > Will atlas 3.10 from #10508 fix this issue?\n> perhaps. Or maybe not... But, again, the more stuff we build, the more stuff we will need to rebase, etc...\n> \n> Actually, we should make a Windows batch file to automate the build/rebase loop.\n>",
+    "created_at": "2012-12-21T16:42:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55300",
+    "user": "jpflori"
+}
+```
 
 Replying to [comment:88 dimpase]:
 > Replying to [comment:86 jpflori]:
@@ -552,16 +1150,38 @@ The final crap is because they want a .lib file we do not care about.
 >
 
 
+
 ---
 
-Comment by kcrisman created at 2013-01-04 14:38:52
+archive/issue_comments_055301.json:
+```json
+{
+    "body": "By the way, JP, did you end up needing libiconv or not?",
+    "created_at": "2013-01-04T14:38:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55301",
+    "user": "kcrisman"
+}
+```
 
 By the way, JP, did you end up needing libiconv or not?
 
 
+
 ---
 
-Comment by jpflori created at 2013-01-04 14:43:32
+archive/issue_comments_055302.json:
+```json
+{
+    "body": "Replying to [comment:93 kcrisman]:\n> By the way, JP, did you end up needing libiconv or not?\nNot sure yet if the one provided by cygwin is now sufficient.\nI'll test this weekend.\n\nWhat is sure is that building the libiconv spkg on a minimal cygwin was a real pain.\nBut I'll provide that as well, for \"completeness\".",
+    "created_at": "2013-01-04T14:43:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55302",
+    "user": "jpflori"
+}
+```
 
 Replying to [comment:93 kcrisman]:
 > By the way, JP, did you end up needing libiconv or not?
@@ -572,9 +1192,20 @@ What is sure is that building the libiconv spkg on a minimal cygwin was a real p
 But I'll provide that as well, for "completeness".
 
 
+
 ---
 
-Comment by kcrisman created at 2013-01-04 16:47:07
+archive/issue_comments_055303.json:
+```json
+{
+    "body": "> I'll test this weekend.\nI see now that we only use the iconv spkg on Solaris, Cygwin, and (?) HP-UX, so maybe in the meantime we don't need it.\n> What is sure is that building the libiconv spkg on a minimal cygwin was a real pain.\nOr maybe we do...\n> But I'll provide that as well, for \"completeness\".",
+    "created_at": "2013-01-04T16:47:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55303",
+    "user": "kcrisman"
+}
+```
 
 > I'll test this weekend.
 I see now that we only use the iconv spkg on Solaris, Cygwin, and (?) HP-UX, so maybe in the meantime we don't need it.
@@ -583,18 +1214,40 @@ Or maybe we do...
 > But I'll provide that as well, for "completeness".
 
 
+
 ---
 
-Comment by jpflori created at 2013-01-04 16:52:35
+archive/issue_comments_055304.json:
+```json
+{
+    "body": "The easiest way to build the libiconv spkg is to install the Cygwin libiconv package, although I don't think it is the most proper solution as it add a (kind of lame) new dependency.\n\nApart from that, it is also possible that now, building our own spkg is not necessary anymore, Cygwin package seem to tend to become better as time passes (see the libm example, we now do not need to build our own cephes!).",
+    "created_at": "2013-01-04T16:52:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55304",
+    "user": "jpflori"
+}
+```
 
 The easiest way to build the libiconv spkg is to install the Cygwin libiconv package, although I don't think it is the most proper solution as it add a (kind of lame) new dependency.
 
 Apart from that, it is also possible that now, building our own spkg is not necessary anymore, Cygwin package seem to tend to become better as time passes (see the libm example, we now do not need to build our own cephes!).
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-01-08 12:53:41
+archive/issue_comments_055305.json:
+```json
+{
+    "body": "Dear Cygwin testers, could you please test the following two PARI packages, whether these build (if possible with `SAGE_CHECK=yes`) and whether `./sage --gp` seems to work.\n\n1. [http://boxen.math.washington.edu/home/jdemeyer/spkg/pari-2.5.3.p2.spkg](http://boxen.math.washington.edu/home/jdemeyer/spkg/pari-2.5.3.p2.spkg) (a plain bug-fix package, #13921)\n\n2. [http://boxen.math.washington.edu/home/jdemeyer/spkg/pari-2.5.3.p3.spkg](http://boxen.math.washington.edu/home/jdemeyer/spkg/pari-2.5.3.p3.spkg) (some Cygwin-specific workarounds removed)",
+    "created_at": "2013-01-08T12:53:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55305",
+    "user": "jdemeyer"
+}
+```
 
 Dear Cygwin testers, could you please test the following two PARI packages, whether these build (if possible with `SAGE_CHECK=yes`) and whether `./sage --gp` seems to work.
 
@@ -603,9 +1256,20 @@ Dear Cygwin testers, could you please test the following two PARI packages, whet
 2. [http://boxen.math.washington.edu/home/jdemeyer/spkg/pari-2.5.3.p3.spkg](http://boxen.math.washington.edu/home/jdemeyer/spkg/pari-2.5.3.p3.spkg) (some Cygwin-specific workarounds removed)
 
 
+
 ---
 
-Comment by kcrisman created at 2013-01-15 18:08:39
+archive/issue_comments_055306.json:
+```json
+{
+    "body": "> 1. [http://boxen.math.washington.edu/home/jdemeyer/spkg/pari-2.5.3.p2.spkg](http://boxen.math.washington.edu/home/jdemeyer/spkg/pari-2.5.3.p2.spkg) (a plain bug-fix package, #13921)\n> \nLooks like JP experienced success with this, given that he compiled 5.6.rc0.  I'm currently doing this one.\n\n> 2. [http://boxen.math.washington.edu/home/jdemeyer/spkg/pari-2.5.3.p3.spkg](http://boxen.math.washington.edu/home/jdemeyer/spkg/pari-2.5.3.p3.spkg) (some Cygwin-specific workarounds removed)\n\nMaking him aware of this one - I assume there isn't a ticket yet :)",
+    "created_at": "2013-01-15T18:08:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55306",
+    "user": "kcrisman"
+}
+```
 
 > 1. [http://boxen.math.washington.edu/home/jdemeyer/spkg/pari-2.5.3.p2.spkg](http://boxen.math.washington.edu/home/jdemeyer/spkg/pari-2.5.3.p2.spkg) (a plain bug-fix package, #13921)
 > 
@@ -616,16 +1280,38 @@ Looks like JP experienced success with this, given that he compiled 5.6.rc0.  I'
 Making him aware of this one - I assume there isn't a ticket yet :)
 
 
+
 ---
 
-Comment by jpflori created at 2013-01-15 18:33:44
+archive/issue_comments_055307.json:
+```json
+{
+    "body": "Not sure what exactly the pari p3 spkg is but the changes look sane (if the first hacks are indeed not needed anymore, the second one definitely looks useless now).",
+    "created_at": "2013-01-15T18:33:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55307",
+    "user": "jpflori"
+}
+```
 
 Not sure what exactly the pari p3 spkg is but the changes look sane (if the first hacks are indeed not needed anymore, the second one definitely looks useless now).
 
 
+
 ---
 
-Comment by kcrisman created at 2013-01-15 18:44:49
+archive/issue_comments_055308.json:
+```json
+{
+    "body": "> 1. [http://boxen.math.washington.edu/home/jdemeyer/spkg/pari-2.5.3.p2.spkg](http://boxen.math.washington.edu/home/jdemeyer/spkg/pari-2.5.3.p2.spkg) (a plain bug-fix package, #13921)\nWith `SAGE_CHECK=yes`, I get a successful installation and almost successful tests.  However, the factoring example in the description of #13921 works fine.  Here's [the only failure](http://sage.math.washington.edu/home/kcrisman/program-sta.dif):\n\n```\n*** ../src/test/32/program\t2012-09-25 17:10:47.000000000 -0400\n--- gp.out\t2013-01-15 13:26:27.531250000 -0500\n***************\n*** 129,137 ****\n  400 1.632424285532931448171405619\n  ? install(addii,GG)\n  ? addii(1,2)\n! 3\n  ? kill(addii)\n  ? getheap\n! [23, 3317]\n  ? print(\"Total time spent: \",gettime);\n! Total time spent: 24\n--- 129,139 ----\n  400 1.632424285532931448171405619\n  ? install(addii,GG)\n  ? addii(1,2)\n!   ***   at top-level: addii(1,2)\n!   ***                 ^----------\n!   *** addii: bug in PARI/GP (Segmentation Fault), please report\n  ? kill(addii)\n  ? getheap\n! [22, 3310]\n  ? print(\"Total time spent: \",gettime);\n! Total time spent: 31\n```\n\n> 2. [http://boxen.math.washington.edu/home/jdemeyer/spkg/pari-2.5.3.p3.spkg](http://boxen.math.washington.edu/home/jdemeyer/spkg/pari-2.5.3.p3.spkg) (some Cygwin-specific workarounds removed)\nI'll check this next.",
+    "created_at": "2013-01-15T18:44:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55308",
+    "user": "kcrisman"
+}
+```
 
 > 1. [http://boxen.math.washington.edu/home/jdemeyer/spkg/pari-2.5.3.p2.spkg](http://boxen.math.washington.edu/home/jdemeyer/spkg/pari-2.5.3.p2.spkg) (a plain bug-fix package, #13921)
 With `SAGE_CHECK=yes`, I get a successful installation and almost successful tests.  However, the factoring example in the description of #13921 works fine.  Here's [the only failure](http://sage.math.washington.edu/home/kcrisman/program-sta.dif):
@@ -662,37 +1348,81 @@ With `SAGE_CHECK=yes`, I get a successful installation and almost successful tes
 I'll check this next.
 
 
+
 ---
 
-Comment by kcrisman created at 2013-01-15 18:49:13
+archive/issue_comments_055309.json:
+```json
+{
+    "body": "Replying to [comment:102 jpflori]:\nJust checking - looks like you removed zlib-devel, libgc-devel, file, and patch from the prereqs - but are these fixes in yet?  Add these if necessary above.  What happened to libgc-devel and file?\n* #13914\n* #13844",
+    "created_at": "2013-01-15T18:49:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55309",
+    "user": "kcrisman"
+}
+```
 
 Replying to [comment:102 jpflori]:
 Just checking - looks like you removed zlib-devel, libgc-devel, file, and patch from the prereqs - but are these fixes in yet?  Add these if necessary above.  What happened to libgc-devel and file?
- * #13914
- * #13844
+* #13914
+* #13844
+
 
 
 ---
 
-Comment by kcrisman created at 2013-01-15 19:12:36
+archive/issue_comments_055310.json:
+```json
+{
+    "body": "> > 2. [http://boxen.math.washington.edu/home/jdemeyer/spkg/pari-2.5.3.p3.spkg](http://boxen.math.washington.edu/home/jdemeyer/spkg/pari-2.5.3.p3.spkg) (some Cygwin-specific workarounds removed)\n> I'll check this next.\nIt built and installed fine, with pretty much the same exact error in the tests, and factored the huge number fine in the console.  If all else is well, these spkgs can be included.  Well, I guess one of them is :)",
+    "created_at": "2013-01-15T19:12:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55310",
+    "user": "kcrisman"
+}
+```
 
 > > 2. [http://boxen.math.washington.edu/home/jdemeyer/spkg/pari-2.5.3.p3.spkg](http://boxen.math.washington.edu/home/jdemeyer/spkg/pari-2.5.3.p3.spkg) (some Cygwin-specific workarounds removed)
 > I'll check this next.
 It built and installed fine, with pretty much the same exact error in the tests, and factored the huge number fine in the console.  If all else is well, these spkgs can be included.  Well, I guess one of them is :)
 
 
+
 ---
 
-Comment by kcrisman created at 2013-01-15 19:18:13
+archive/issue_comments_055311.json:
+```json
+{
+    "body": "> Not sure what exactly the pari p3 spkg is but the changes look sane (if the first hacks are indeed not needed anymore, the second one definitely looks useless now).\n\nI can't comment on whether these really are or are not necessary, but apparently not if self-tests are passing?  I haven't had a chance to test any files that *use* Pari, and I'll probably get forking errors anyway :(",
+    "created_at": "2013-01-15T19:18:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55311",
+    "user": "kcrisman"
+}
+```
 
 > Not sure what exactly the pari p3 spkg is but the changes look sane (if the first hacks are indeed not needed anymore, the second one definitely looks useless now).
 
-I can't comment on whether these really are or are not necessary, but apparently not if self-tests are passing?  I haven't had a chance to test any files that _use_ Pari, and I'll probably get forking errors anyway :(
+I can't comment on whether these really are or are not necessary, but apparently not if self-tests are passing?  I haven't had a chance to test any files that *use* Pari, and I'll probably get forking errors anyway :(
+
 
 
 ---
 
-Comment by jpflori created at 2013-01-15 20:21:47
+archive/issue_comments_055312.json:
+```json
+{
+    "body": "Replying to [comment:105 kcrisman]:\n> Replying to [comment:102 jpflori]:\n> Just checking - looks like you removed zlib-devel, libgc-devel, file, and patch from the prereqs - but are these fixes in yet?  Add these if necessary above.  What happened to libgc-devel and file?\n>  * #13914\n>  * #13844\nI removed them because I was able to build and run Sage without installing them;\nQuoting from [CygwinPort](CygwinPort) the Cygwin packages I have installed:\n\n```\n$ cygcheck -c\nCygwin Package Information\nPackage              Version              Status\n_autorebase          000192-1             OK\n_update-info-dir     01100-1              OK\nalternatives         1.3.30c-10           OK\nbase-cygwin          3.1-1                OK\nbase-files           4.1-1                OK\nbash                 4.1.10-4             OK\nbinutils             2.22.51-2            OK\nbzip2                1.0.6-2              OK\ncoreutils            8.15-1               OK\ncrypt                1.2-1                OK\ncsih                 0.9.6-1              OK\ncygrunsrv            1.40-2               OK\ncygutils             1.4.10-2             OK\ncygwin               1.7.17-1             OK\ncygwin-doc           1.7-1                OK\ndash                 0.5.7-1              OK\ndiffutils            3.2-1                OK\ndos2unix             6.0.2-1              OK\neditrights           1.01-2               OK\nfile                 5.11-1               OK\nfindutils            4.5.9-2              OK\ngawk                 4.0.2-1              OK\ngcc4-core            4.5.3-3              OK\ngettext              0.18.1.1-2           OK\ngrep                 2.6.3-1              OK\ngroff                1.21-2               OK\ngzip                 1.4-1                OK\nipc-utils            1.0-1                OK\nlapack               3.4.2-1              OK\nless                 444-1                OK\nlibasn1_8            1.5.2-4              OK\nlibattr1             2.4.46-1             OK\nlibbz2_1             1.0.6-2              OK\nlibcharset1          1.14-2               OK\nlibcloog0            0.15.7-1             OK\nlibcom_err2          1.42.6-1             OK\nlibdb4.5             4.5.20.2-3           OK\nlibedit0             20120311-1           OK\nlibexpat1            2.1.0-1              OK\nlibffi4              4.5.3-3              OK\nlibgcc1              4.5.3-3              OK\nlibgdbm4             1.8.3-20             OK\nlibgfortran3         4.5.3-3              OK\nlibgmp3              4.3.2-1              OK\nlibgmpxx4            4.3.2-1              OK\nlibgomp1             4.5.3-3              OK\nlibgssapi3           1.5.2-4              OK\nlibheimbase1         1.5.2-4              OK\nlibheimntlm0         1.5.2-4              OK\nlibhx509_5           1.5.2-4              OK\nlibiconv             1.14-2               OK\nlibiconv2            1.14-2               OK\nlibintl8             0.18.1.1-2           OK\nlibkafs0             1.5.2-4              OK\nlibkrb5_26           1.5.2-4              OK\nliblapack-devel      3.4.2-1              OK\nliblapack0           3.4.2-1              OK\nliblzma5             5.0.2_20110517-1     OK\nlibmpc1              0.8-1                OK\nlibmpfr1             2.4.1-4              OK\nlibmpfr4             3.0.1-1              OK\nlibncurses-devel     5.7-18               OK\nlibncurses10         5.7-18               OK\nlibncurses9          5.7-16               OK\nlibncursesw10        5.7-18               OK\nlibopenssl100        1.0.1c-2             OK\nlibpcre0             8.21-2               OK\nlibpopt0             1.6.4-4              OK\nlibppl               0.10.2-1             OK\nlibreadline7         6.1.2-3              OK\nlibroken18           1.5.2-4              OK\nlibsigsegv2          2.10-1               OK\nlibsqlite3_0         3.7.13-1             OK\nlibssp0              4.5.3-3              OK\nlibstdc++6           4.5.3-3              OK\nlibwind0             1.5.2-4              OK\nlibwrap0             7.6-21               OK\nlibxml2              2.9.0-1              OK\nlogin                1.10-10              OK\nm4                   1.4.16-1             OK\nmake                 3.82.90-1            OK\nman                  1.6g-1               OK\nmintty               1.1.2-1              OK\nnano                 2.2.5-1              OK\nopenssh              6.1p1-1              OK\nperl                 5.14.2-3             OK\nperl_vendor          5.14.2-3             OK\nrebase               4.3.0-1              OK\nrun                  1.1.13-1             OK\nsed                  4.2.1-2              OK\ntar                  1.26-1               OK\nterminfo             5.7_20091114-14      OK\ntexinfo              4.13-4               OK\ntzcode               2012j-1              OK\nw32api               9999-1               OK\nw32api-headers       3.0b_svn5496-1       OK\nw32api-runtime       3.0b_svn5496-1       OK\nwhich                2.20-2               OK\nxz                   5.0.2_20110517-1     OK\nzlib0                1.2.7-1              OK\n```\n\nyou can check they were indeed not installed.\n\nOf course, you don't need patch and zlib-devel if you use the fixed spkg I posted at #13844 and #13914, not sure about libgc-devel, but hey it was not there and I had no problems yet.\nOf course I did not test everything so if it appears it is really needed, I'll put it back it as a prereq to \"run\" Sage.",
+    "created_at": "2013-01-15T20:21:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55312",
+    "user": "jpflori"
+}
+```
 
 Replying to [comment:105 kcrisman]:
 > Replying to [comment:102 jpflori]:
@@ -814,14 +1544,25 @@ Of course, you don't need patch and zlib-devel if you use the fixed spkg I poste
 Of course I did not test everything so if it appears it is really needed, I'll put it back it as a prereq to "run" Sage.
 
 
+
 ---
 
-Comment by jpflori created at 2013-01-15 20:25:47
+archive/issue_comments_055313.json:
+```json
+{
+    "body": "Replying to [comment:107 kcrisman]:\n> > Not sure what exactly the pari p3 spkg is but the changes look sane (if the first hacks are indeed not needed anymore, the second one definitely looks useless now).\n> \n> I can't comment on whether these really are or are not necessary, but apparently not if self-tests are passing?  I haven't had a chance to test any files that *use* Pari, and I'll probably get forking errors anyway :(\nIf both you oon XP and I on 7 are able to \"build\" PARI, then these changes should definitely get in.\nThey remove useless Cygwin specific \"hacks\", so this is a good thing.\n\nAnd as I said, I think the second one is indeed useless, I barely have doubts about that, as it must have been fixed by a patch I suggested upstream.\n\nAs far as the second one is concerned, the fact you could build PARI leaves little doubt as well.",
+    "created_at": "2013-01-15T20:25:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55313",
+    "user": "jpflori"
+}
+```
 
 Replying to [comment:107 kcrisman]:
 > > Not sure what exactly the pari p3 spkg is but the changes look sane (if the first hacks are indeed not needed anymore, the second one definitely looks useless now).
 > 
-> I can't comment on whether these really are or are not necessary, but apparently not if self-tests are passing?  I haven't had a chance to test any files that _use_ Pari, and I'll probably get forking errors anyway :(
+> I can't comment on whether these really are or are not necessary, but apparently not if self-tests are passing?  I haven't had a chance to test any files that *use* Pari, and I'll probably get forking errors anyway :(
 If both you oon XP and I on 7 are able to "build" PARI, then these changes should definitely get in.
 They remove useless Cygwin specific "hacks", so this is a good thing.
 
@@ -830,9 +1571,20 @@ And as I said, I think the second one is indeed useless, I barely have doubts ab
 As far as the second one is concerned, the fact you could build PARI leaves little doubt as well.
 
 
+
 ---
 
-Comment by kcrisman created at 2013-01-15 20:28:00
+archive/issue_comments_055314.json:
+```json
+{
+    "body": "Replying to [comment:109 jpflori]:\n> Replying to [comment:105 kcrisman]:\n> > Replying to [comment:102 jpflori]:\n> > Just checking - looks like you removed zlib-devel, libgc-devel, file, and patch from the prereqs - but are these fixes in yet?  Add these if necessary above.  What happened to libgc-devel and file?\n> >  * #13914\n> >  * #13844\n> I removed them because I was able to build and run Sage without installing them;\nMy point was that you didn't add the two tickets here, without which assuredly patch would not have worked, which is used a lot!  I added them to the list above, as you can check.\n\nBut `file` is in your list in comment:109, so I'm not sure why you removed it from the list.  Did it install with something else automatically?\n> Of course, you don't need patch and zlib-devel if you use the fixed spkg I posted at #13844 and #13914, not sure about libgc-devel, but hey it was not there and I had no problems yet.\n> Of course I did not test everything so if it appears it is really needed, I'll put it back it as a prereq to \"run\" Sage.\nIt's conceivable that libgc-devel is, but I think that #9617 fixed that.",
+    "created_at": "2013-01-15T20:28:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55314",
+    "user": "kcrisman"
+}
+```
 
 Replying to [comment:109 jpflori]:
 > Replying to [comment:105 kcrisman]:
@@ -849,9 +1601,20 @@ But `file` is in your list in comment:109, so I'm not sure why you removed it fr
 It's conceivable that libgc-devel is, but I think that #9617 fixed that.
 
 
+
 ---
 
-Comment by jpflori created at 2013-01-15 20:33:43
+archive/issue_comments_055315.json:
+```json
+{
+    "body": "Replying to [comment:111 kcrisman]:\n\n> > I removed them because I was able to build and run Sage without installing them;\n> My point was that you didn't add the two tickets here, without which assuredly patch would not have worked, which is used a lot!  I added them to the list above, as you can check.\nGood point.\n> \n> But `file` is in your list in comment:109, so I'm not sure why you removed it from the list.  Did it install with something else automatically?\nOops, I was not careful.\nBut indeed I did not explicitely add it, so either it was there with the basic Cygwin install, or it was pulled by something else, I'll tend to say it's the former solution as every time I installed something I had a quick look at what was pulled, but I might have missed it as well...",
+    "created_at": "2013-01-15T20:33:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55315",
+    "user": "jpflori"
+}
+```
 
 Replying to [comment:111 kcrisman]:
 
@@ -864,18 +1627,40 @@ Oops, I was not careful.
 But indeed I did not explicitely add it, so either it was there with the basic Cygwin install, or it was pulled by something else, I'll tend to say it's the former solution as every time I installed something I had a quick look at what was pulled, but I might have missed it as well...
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-01-15 22:02:05
+archive/issue_comments_055316.json:
+```json
+{
+    "body": "Replying to [comment:101 kcrisman]:\n> I assume there isn't a ticket yet :)\nNot yet.  I just noticed this Cygwin-specific stuff when working on #13921 and wondered whether it could be removed.  Apparently yes.",
+    "created_at": "2013-01-15T22:02:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55316",
+    "user": "jdemeyer"
+}
+```
 
 Replying to [comment:101 kcrisman]:
 > I assume there isn't a ticket yet :)
 Not yet.  I just noticed this Cygwin-specific stuff when working on #13921 and wondered whether it could be removed.  Apparently yes.
 
 
+
 ---
 
-Comment by jpflori created at 2013-01-16 08:26:56
+archive/issue_comments_055317.json:
+```json
+{
+    "body": "I ran ptest over the night and the result is not bad at all, especially that I did not include all the fixes we have (lcalc, rpy2 ar least), some of them are time outs (potentially just because Cygwin is sloooooooooooow), some of them passed when reran (e.g. the maxima.py one) and some of them are still the PARI lacking memory (cos I cannot devise how to convince Cygwin to get more than 500000000 bytes).\n\nThe result is at http://boxen.math.washington.edu/home/jpflori/ptest-5.6.rc0-cygwin.log\n\nI've got a previous one at http://boxen.math.washington.edu/home/jpflori/ptest-5.5.rc0-cygwin.log which is not that bad as well.",
+    "created_at": "2013-01-16T08:26:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55317",
+    "user": "jpflori"
+}
+```
 
 I ran ptest over the night and the result is not bad at all, especially that I did not include all the fixes we have (lcalc, rpy2 ar least), some of them are time outs (potentially just because Cygwin is sloooooooooooow), some of them passed when reran (e.g. the maxima.py one) and some of them are still the PARI lacking memory (cos I cannot devise how to convince Cygwin to get more than 500000000 bytes).
 
@@ -884,16 +1669,38 @@ The result is at http://boxen.math.washington.edu/home/jpflori/ptest-5.6.rc0-cyg
 I've got a previous one at http://boxen.math.washington.edu/home/jpflori/ptest-5.5.rc0-cygwin.log which is not that bad as well.
 
 
+
 ---
 
-Comment by jpflori created at 2013-01-16 12:45:06
+archive/issue_comments_055318.json:
+```json
+{
+    "body": "Not really sure anymore about the libncurses-devel dependency as I'm rebuilding singular on top of my 5.6.rc0 after removing libncurses-devel and it does not complain (yet).",
+    "created_at": "2013-01-16T12:45:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55318",
+    "user": "jpflori"
+}
+```
 
 Not really sure anymore about the libncurses-devel dependency as I'm rebuilding singular on top of my 5.6.rc0 after removing libncurses-devel and it does not complain (yet).
 
 
+
 ---
 
-Comment by jpflori created at 2013-01-30 17:16:09
+archive/issue_comments_055319.json:
+```json
+{
+    "body": "New ptest log for 5.7.beta1 at\nhttp://boxen.math.washington.edu/home/jpflori/ptest-5.7.beta1-cygwin.log\n\nThe failing tests are:\n\n```\nThe following tests failed:\n\n\tsage -t  -force_lib devel/sagenb-main/sagenb/misc/misc.py # Exception from doctest framework\n\tsage -t  -force_lib devel/sage/sage/functions/other.py # 1 doctests failed\n\tsage -t  -force_lib devel/sage/sage/geometry/lattice_polytope.py # 96 doctests failed\n\tsage -t  -force_lib devel/sage/sage/graphs/genus.pyx # 2 doctests failed\n\tsage -t  -force_lib devel/sage/sage/gsl/ode.pyx # 3 doctests failed\n\tsage -t  -force_lib devel/sage/sage/libs/lcalc/lcalc_Lfunction.pyx # 69 doctests failed\n\tsage -t  -force_lib devel/sage/sage/libs/pari/gen.pyx # 4 doctests failed\n\tsage -t  -force_lib devel/sage/sage/misc/cython.py # 3 doctests failed\n\tsage -t  -force_lib devel/sage/sage/misc/getusage.py # 4 doctests failed\n\tsage -t  -force_lib devel/sage/sage/misc/inline_fortran.py # 3 doctests failed\n\tsage -t  -force_lib devel/sage/sage/misc/sageinspect.py # 1 doctests failed\n\tsage -t  -force_lib devel/sage/sage/plot/graphics.py # Time out\n\tsage -t  -force_lib devel/sage/sage/plot/plot.py # Time out\n\tsage -t  -force_lib devel/sage/sage/plot/plot3d/implicit_plot3d.py # Time out\n\tsage -t  -force_lib devel/sage/sage/plot/plot3d/plot3d.py # Time out\n\tsage -t  -force_lib devel/sage/sage/quadratic_forms/quadratic_form__ternary_Tornaria.py # 13 doctests failed\n\tsage -t  -force_lib devel/sage/sage/rings/arith.py # 1 doctests failed\n\tsage -t  -force_lib devel/sage/sage/rings/tests.py # 4 doctests failed\n\tsage -t  -force_lib devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py # Time out\n\tsage -t  -force_lib devel/sage/sage/schemes/elliptic_curves/heegner.py # Time out\n\tsage -t  -force_lib devel/sage/sage/schemes/toric/fano_variety.py # 12 doctests failed\n\tsage -t  -force_lib devel/sage/sage/symbolic/expression.pyx # 1 doctests failed\n\tsage -t  -force_lib devel/sage/sage/tests/cmdline.py # Time out\n----------------------------------------------------------------------\n```\n\n\nSome were expected:\n* sage/libs/lcalc/lcalc_Lfunction.pyx with fix at #13351\n* sage/geometry/lattice_polytope.py with fix at #13960\n* sage/schemes/toric/fano_variety.py is #13960 as well\n* sage/misc/getusage.py which is #9170\n* sage/graphs/genus.pyx which is in fact #9170\n* sage/libs/pari/gen.pyx which is also #9170\n* sage/rings/tests.py as well #9170\n* sage/quadratic_forms/quadratic_form__ternary_Tornaria.py which is hopefully the same pari stack problem as #9176\nSome are trivial:\n* sage/functions/other.py which is numerical noise\n* sage/rings/arith.py as well\n* sage/symbolic/expression.pyx as well\nSome look more serious:\n* sage/misc/cython.py but that might just be a dynamic library extension problem\n* sage/misc/inline_fortran.py which does not find gfortran?!\n* sage/misc/sageinspect.py -> fork errors... maybe a rebase could fix that\n* sage/gsl/ode.pyx\n\nAnd the other are timeouts (for now).\n\n\nBut the aim of this ticket is to build Sage, so I guess we can say we are quite finished with that :)\nAnd #13841 which aims at starting Sage is as well :)",
+    "created_at": "2013-01-30T17:16:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55319",
+    "user": "jpflori"
+}
+```
 
 New ptest log for 5.7.beta1 at
 http://boxen.math.washington.edu/home/jpflori/ptest-5.7.beta1-cygwin.log
@@ -956,23 +1763,56 @@ But the aim of this ticket is to build Sage, so I guess we can say we are quite 
 And #13841 which aims at starting Sage is as well :)
 
 
+
 ---
 
-Comment by jpflori created at 2013-01-30 17:16:09
+archive/issue_comments_055320.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2013-01-30T17:16:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55320",
+    "user": "jpflori"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jpflori created at 2013-01-30 17:20:34
+archive/issue_comments_055321.json:
+```json
+{
+    "body": "FYI a rebase fixed the sage/misc/sageinspect.py failure.",
+    "created_at": "2013-01-30T17:20:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55321",
+    "user": "jpflori"
+}
+```
 
 FYI a rebase fixed the sage/misc/sageinspect.py failure.
 
 
+
 ---
 
-Comment by jpflori created at 2013-01-30 17:52:35
+archive/issue_comments_055322.json:
+```json
+{
+    "body": "Replying to [comment:116 jpflori]:\n> New ptest log for 5.7.beta1 at\n> http://boxen.math.washington.edu/home/jpflori/ptest-5.7.beta1-cygwin.log\n>\n> Some were expected:\n> * sage/libs/lcalc/lcalc_Lfunction.pyx with fix at #13351\nFixed by #13351 indeed.\n> * sage/geometry/lattice_polytope.py with fix at #13960\n> * sage/schemes/toric/fano_variety.py is #13960 as well\nBoth fixed by #13960 indeed.\n> * sage/misc/getusage.py which is #9170\n> * sage/graphs/genus.pyx which is in fact #9170\n> * sage/libs/pari/gen.pyx which is also #9170\n> * sage/rings/tests.py as well #9170\nAll fixed by #9170 indeed.\n> * sage/quadratic_forms/quadratic_form__ternary_Tornaria.py which is hopefully the same pari stack problem as #9176\nFixed after increasing the max cygwin heap size of python.exe using peflags (\"peflags --cygwin-heap=600 local/bin/python.exe\").\n> Some are trivial:\n> * sage/functions/other.py which is numerical noise\n> * sage/rings/arith.py as well\n> * sage/symbolic/expression.pyx as well\n> Some look more serious:\n> * sage/misc/cython.py but that might just be a dynamic library extension problem\n> * sage/misc/inline_fortran.py which does not find gfortran?!\n> * sage/misc/sageinspect.py -> fork errors... maybe a rebase could fix that\n> * sage/gsl/ode.pyx\n> \n> And the other are timeouts (for now).\n> \n> \n> But the aim of this ticket is to build Sage, so I guess we can say we are quite finished with that :)\n> And #13841 which aims at starting Sage is as well :)",
+    "created_at": "2013-01-30T17:52:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55322",
+    "user": "jpflori"
+}
+```
 
 Replying to [comment:116 jpflori]:
 > New ptest log for 5.7.beta1 at
@@ -1008,9 +1848,20 @@ Fixed after increasing the max cygwin heap size of python.exe using peflags ("pe
 > And #13841 which aims at starting Sage is as well :)
 
 
+
 ---
 
-Comment by jpflori created at 2013-01-30 17:54:16
+archive/issue_comments_055323.json:
+```json
+{
+    "body": "Replying to [comment:118 jpflori]:\n> > Some are trivial:\n> > * sage/functions/other.py which is numerical noise\n> > * sage/rings/arith.py as well\n> > * sage/symbolic/expression.pyx as well\nSee https://groups.google.com/d/topic/sage-devel/QACdziLhniU/discussion which looks related.",
+    "created_at": "2013-01-30T17:54:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55323",
+    "user": "jpflori"
+}
+```
 
 Replying to [comment:118 jpflori]:
 > > Some are trivial:
@@ -1020,9 +1871,20 @@ Replying to [comment:118 jpflori]:
 See https://groups.google.com/d/topic/sage-devel/QACdziLhniU/discussion which looks related.
 
 
+
 ---
 
-Comment by kcrisman created at 2013-01-30 17:58:45
+archive/issue_comments_055324.json:
+```json
+{
+    "body": "> But the aim of this ticket is to build Sage, so I guess we can say we are quite finished with that :)\n> And #13841 which aims at starting Sage is as well :) \n\nAwesome!  But we do need something in prereq or configure or SOMEWHERE that ensures that these things still will stay the case.  So we can't close it yet.",
+    "created_at": "2013-01-30T17:58:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55324",
+    "user": "kcrisman"
+}
+```
 
 > But the aim of this ticket is to build Sage, so I guess we can say we are quite finished with that :)
 > And #13841 which aims at starting Sage is as well :) 
@@ -1030,16 +1892,38 @@ Comment by kcrisman created at 2013-01-30 17:58:45
 Awesome!  But we do need something in prereq or configure or SOMEWHERE that ensures that these things still will stay the case.  So we can't close it yet.
 
 
+
 ---
 
-Comment by jpflori created at 2013-01-30 18:46:39
+archive/issue_comments_055325.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2013-01-30T18:46:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55325",
+    "user": "jpflori"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by jpflori created at 2013-01-30 18:46:39
+archive/issue_comments_055326.json:
+```json
+{
+    "body": "After increasing SAGE_TIMEOUT, the following tests passed:\n* sage/plot/graphics.py\n* sage/plot/plot3d/implicit_plot3d.py\n* sage/plot/plot3d/plot3d.py\n* sage/schemes/elliptic_curves/heegner.py\n\nThe following still fail:\n* sage/plot/plot.py problems with GSL like sage/gsl/ode.pyx (GSL handler blabla)\n* sage/schemes/elliptic_curves/ell_rational_field.py fork erros it seems when starting external programs\n* sage/tests/cmdline.py seemingly fork errors (calling os.fork() might not be a great idea)\n\nAnd there is the one I omitted before:\n* sagenb/misc/misc.py # Exception from doctest framework\nThe exception bit seems to be from an error I had with previous release as well about an alarm set to 1 second and is random.\nI guess Cygwin is just to slow for such a timeout.\nAfter a few tries I indeed get a bunch only one real error on the test with 'print \"ignore this' because of a (Python) RuntimeError about \"no available port\" from the find_next_available_port function.",
+    "created_at": "2013-01-30T18:46:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55326",
+    "user": "jpflori"
+}
+```
 
 After increasing SAGE_TIMEOUT, the following tests passed:
 * sage/plot/graphics.py
@@ -1059,35 +1943,79 @@ I guess Cygwin is just to slow for such a timeout.
 After a few tries I indeed get a bunch only one real error on the test with 'print "ignore this' because of a (Python) RuntimeError about "no available port" from the find_next_available_port function.
 
 
+
 ---
 
-Comment by kcrisman created at 2013-01-30 19:02:19
+archive/issue_comments_055327.json:
+```json
+{
+    "body": "> After increasing SAGE_TIMEOUT, the following tests passed:\n\nMaybe it's time to open a new ticket to get Cygwin to pass all tests (at least on 64-bit)?",
+    "created_at": "2013-01-30T19:02:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55327",
+    "user": "kcrisman"
+}
+```
 
 > After increasing SAGE_TIMEOUT, the following tests passed:
 
 Maybe it's time to open a new ticket to get Cygwin to pass all tests (at least on 64-bit)?
 
 
+
 ---
 
-Comment by jpflori created at 2013-01-30 20:03:21
+archive/issue_comments_055328.json:
+```json
+{
+    "body": "Yep, I guess so.\nAlthough I'm not convinced we will ever be able to deal with the one involving horrible fork errors.",
+    "created_at": "2013-01-30T20:03:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55328",
+    "user": "jpflori"
+}
+```
 
 Yep, I guess so.
 Although I'm not convinced we will ever be able to deal with the one involving horrible fork errors.
 
 
+
 ---
 
-Comment by kcrisman created at 2013-01-31 02:09:28
+archive/issue_comments_055329.json:
+```json
+{
+    "body": "Well, it was partly rhetorical!  Maybe we could repurpose #13841 to have it pass most reasonable tests.\n\nSorry I can't help at all right now other than morally - zero time and of course crazy fork/BLODA problems.  I will try to ask my computer folks for a Win 7 box to try things on when things calm down.",
+    "created_at": "2013-01-31T02:09:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55329",
+    "user": "kcrisman"
+}
+```
 
 Well, it was partly rhetorical!  Maybe we could repurpose #13841 to have it pass most reasonable tests.
 
 Sorry I can't help at all right now other than morally - zero time and of course crazy fork/BLODA problems.  I will try to ask my computer folks for a Win 7 box to try things on when things calm down.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-01-31 13:16:34
+archive/issue_comments_055330.json:
+```json
+{
+    "body": "Replying to [comment:106 kcrisman]:\n> It built and installed fine, with pretty much the same exact error in the tests, and factored the huge number fine in the console.  If all else is well, these spkgs can be included.  Well, I guess one of them is :)\n\nI have to update PARI anyway for #13054 and will remove all Cygwin-specific code from `spkg-install`.",
+    "created_at": "2013-01-31T13:16:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55330",
+    "user": "jdemeyer"
+}
+```
 
 Replying to [comment:106 kcrisman]:
 > It built and installed fine, with pretty much the same exact error in the tests, and factored the huge number fine in the console.  If all else is well, these spkgs can be included.  Well, I guess one of them is :)
@@ -1095,9 +2023,20 @@ Replying to [comment:106 kcrisman]:
 I have to update PARI anyway for #13054 and will remove all Cygwin-specific code from `spkg-install`.
 
 
+
 ---
 
-Comment by kcrisman created at 2013-01-31 14:52:38
+archive/issue_comments_055331.json:
+```json
+{
+    "body": "> > It built and installed fine, with pretty much the same exact error in the tests, and factored the huge number fine in the console.  If all else is well, these spkgs can be included.  Well, I guess one of them is :)\n> \n> I have to update PARI anyway for #13054 and will remove all Cygwin-specific code from `spkg-install`.\n\nJP, did you have any problems with this?  I guess you can just try the spkg from #13054, which does what Jeroen says.",
+    "created_at": "2013-01-31T14:52:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55331",
+    "user": "kcrisman"
+}
+```
 
 > > It built and installed fine, with pretty much the same exact error in the tests, and factored the huge number fine in the console.  If all else is well, these spkgs can be included.  Well, I guess one of them is :)
 > 
@@ -1106,41 +2045,96 @@ Comment by kcrisman created at 2013-01-31 14:52:38
 JP, did you have any problems with this?  I guess you can just try the spkg from #13054, which does what Jeroen says.
 
 
+
 ---
 
-Comment by jpflori created at 2013-02-04 21:06:07
+archive/issue_comments_055332.json:
+```json
+{
+    "body": "FYI, although it might be unrelated, the GSL failing tests passed after I installed a shared version of the lib and rebuilt the related Sage library files.",
+    "created_at": "2013-02-04T21:06:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55332",
+    "user": "jpflori"
+}
+```
 
 FYI, although it might be unrelated, the GSL failing tests passed after I installed a shared version of the lib and rebuilt the related Sage library files.
 
 
+
 ---
 
-Comment by jpflori created at 2013-02-05 09:55:28
+archive/issue_comments_055333.json:
+```json
+{
+    "body": "I've started building 5.7.beta2 plus some patches on a notebook running a 32 bits Windows 7 install.",
+    "created_at": "2013-02-05T09:55:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55333",
+    "user": "jpflori"
+}
+```
 
 I've started building 5.7.beta2 plus some patches on a notebook running a 32 bits Windows 7 install.
 
 
+
 ---
 
-Comment by jpflori created at 2013-02-06 14:23:09
+archive/issue_comments_055334.json:
+```json
+{
+    "body": "R was upgraded at #14008 and merged in sage-5.7.beta2 and now needs math functions for long doubles, more precisely logl, which is not provided by Cygwin's libm.\n\nNot sure if its possible to disable the use of this function in R, otherwise I guess we're back to installing Cephes on Cygwin.",
+    "created_at": "2013-02-06T14:23:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55334",
+    "user": "jpflori"
+}
+```
 
 R was upgraded at #14008 and merged in sage-5.7.beta2 and now needs math functions for long doubles, more precisely logl, which is not provided by Cygwin's libm.
 
 Not sure if its possible to disable the use of this function in R, otherwise I guess we're back to installing Cephes on Cygwin.
 
 
+
 ---
 
-Comment by jpflori created at 2013-02-06 14:36:15
+archive/issue_comments_055335.json:
+```json
+{
+    "body": "In the devel version there is support to build without long double, see\nhttp://stat.ethz.ch/R-manual/R-devel/doc/html/NEWS.html\nbut that does not seem to be the case in 2.15.2.",
+    "created_at": "2013-02-06T14:36:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55335",
+    "user": "jpflori"
+}
+```
 
 In the devel version there is support to build without long double, see
 http://stat.ethz.ch/R-manual/R-devel/doc/html/NEWS.html
 but that does not seem to be the case in 2.15.2.
 
 
+
 ---
 
-Comment by dimpase created at 2013-02-06 14:43:30
+archive/issue_comments_055336.json:
+```json
+{
+    "body": "Replying to [comment:129 jpflori]:\n> R was upgraded at #14008 and merged in sage-5.7.beta2 and now needs math functions for long doubles, more precisely logl, which is not provided by Cygwin's libm.\n> \n> Not sure if its possible to disable the use of this function in R, otherwise I guess we're back to installing Cephes on Cygwin.\nYes, that's where my Cygwin install of 5.7.beta2 got stuck, too.\n\nas a temporary plug, we can do something like\n\n```\n#define logl log\n```\n\nin the right place.\nCygwin has a weird long double size - 12 bytes, so in that sense it's not as huge loss of precision as for sane platforms.",
+    "created_at": "2013-02-06T14:43:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55336",
+    "user": "dimpase"
+}
+```
 
 Replying to [comment:129 jpflori]:
 > R was upgraded at #14008 and merged in sage-5.7.beta2 and now needs math functions for long doubles, more precisely logl, which is not provided by Cygwin's libm.
@@ -1158,17 +2152,39 @@ in the right place.
 Cygwin has a weird long double size - 12 bytes, so in that sense it's not as huge loss of precision as for sane platforms.
 
 
+
 ---
 
-Comment by jpflori created at 2013-02-06 14:47:17
+archive/issue_comments_055337.json:
+```json
+{
+    "body": "I'm seeing if we cannot just backport the support for --disable-long-double.\nThat seems difficult but who knows.",
+    "created_at": "2013-02-06T14:47:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55337",
+    "user": "jpflori"
+}
+```
 
 I'm seeing if we cannot just backport the support for --disable-long-double.
 That seems difficult but who knows.
 
 
+
 ---
 
-Comment by jpflori created at 2013-02-06 17:17:48
+archive/issue_comments_055338.json:
+```json
+{
+    "body": "Replying to [comment:131 dimpase]:\n> Replying to [comment:129 jpflori]:\n> > R was upgraded at #14008 and merged in sage-5.7.beta2 and now needs math functions for long doubles, more precisely logl, which is not provided by Cygwin's libm.\n> > \n> > Not sure if its possible to disable the use of this function in R, otherwise I guess we're back to installing Cephes on Cygwin.\n> Yes, that's where my Cygwin install of 5.7.beta2 got stuck, too.\n> \n> as a temporary plug, we can do something like\n> {{{\n> #define logl log\n> }}}\n> in the right place.\nFYI this is exactly what R (not using the same mechanism) does when --disable-long-double.\n> Cygwin has a weird long double size - 12 bytes, so in that sense it's not as huge loss of precision as for sane platforms.",
+    "created_at": "2013-02-06T17:17:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55338",
+    "user": "jpflori"
+}
+```
 
 Replying to [comment:131 dimpase]:
 > Replying to [comment:129 jpflori]:
@@ -1186,9 +2202,20 @@ FYI this is exactly what R (not using the same mechanism) does when --disable-lo
 > Cygwin has a weird long double size - 12 bytes, so in that sense it's not as huge loss of precision as for sane platforms.
 
 
+
 ---
 
-Comment by jpflori created at 2013-02-06 17:34:52
+archive/issue_comments_055339.json:
+```json
+{
+    "body": "But it also completely disable long double, which is a little unfortunate, so I guess we'll have to provide a custom patch to just disable the use of logl.\n\nIt later lots of such functions get used we could consider falling back to --disable-long-double or using Cephes.\n\nAny thoughts?",
+    "created_at": "2013-02-06T17:34:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55339",
+    "user": "jpflori"
+}
+```
 
 But it also completely disable long double, which is a little unfortunate, so I guess we'll have to provide a custom patch to just disable the use of logl.
 
@@ -1197,25 +2224,58 @@ It later lots of such functions get used we could consider falling back to --dis
 Any thoughts?
 
 
+
 ---
 
-Comment by kcrisman created at 2013-02-06 17:58:19
+archive/issue_comments_055340.json:
+```json
+{
+    "body": "Anything that allows us to get this Cygwin show on the road is best, assuming it is not about \"core\" functionality.  I think it's okay to have the custom patch as long as it doesn't break R being used at all; we shouldn't be relying on R for multi precision stuff anyway.  Add that patch just for Cygwin.",
+    "created_at": "2013-02-06T17:58:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55340",
+    "user": "kcrisman"
+}
+```
 
 Anything that allows us to get this Cygwin show on the road is best, assuming it is not about "core" functionality.  I think it's okay to have the custom patch as long as it doesn't break R being used at all; we shouldn't be relying on R for multi precision stuff anyway.  Add that patch just for Cygwin.
 
 
+
 ---
 
-Comment by jpflori created at 2013-02-07 10:09:26
+archive/issue_comments_055341.json:
+```json
+{
+    "body": "See #14078 for the R issue.\n\nBy the way all Sage and its doc built fine on my 32 bits Windows 7.",
+    "created_at": "2013-02-07T10:09:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55341",
+    "user": "jpflori"
+}
+```
 
 See #14078 for the R issue.
 
 By the way all Sage and its doc built fine on my 32 bits Windows 7.
 
 
+
 ---
 
-Comment by jpflori created at 2013-02-08 12:32:55
+archive/issue_comments_055342.json:
+```json
+{
+    "body": "And result of \"make ptest\" is\n\n```\nThe following tests failed:\n\n\tsage -t  -force_lib devel/sagenb-main/sagenb/misc/misc.py # Exception from doctest framework\n\tsage -t  -force_lib devel/sage/sage/combinat/partition_algebra.py # Time out\n\tsage -t  -force_lib devel/sage/sage/combinat/skew_tableau.py # Time out\n\tsage -t  -force_lib devel/sage/sage/combinat/crystals/kirillov_reshetikhin.py # Time out\n\tsage -t  -force_lib devel/sage/sage/functions/other.py # 1 doctests failed\n\tsage -t  -force_lib devel/sage/sage/geometry/lattice_polytope.py # Time out\n\tsage -t  -force_lib devel/sage/sage/groups/perm_gps/cubegroup.py # 1 doctests failed\n\tsage -t  -force_lib devel/sage/sage/interfaces/sage0.py # Time out\n\tsage -t  -force_lib devel/sage/sage/libs/gap/test_long.py # Time out\n\tsage -t  -force_lib devel/sage/sage/misc/cython.py # 3 doctests failed\n\tsage -t  -force_lib devel/sage/sage/misc/inline_fortran.py # 3 doctests failed\n\tsage -t  -force_lib devel/sage/sage/misc/temporary_file.py # 5 doctests failed\n\tsage -t  -force_lib devel/sage/sage/plot/graphics.py # Time out\n\tsage -t  -force_lib devel/sage/sage/plot/plot.py # Time out\n\tsage -t  -force_lib devel/sage/sage/plot/plot3d/implicit_plot3d.py # Time out\n\tsage -t  -force_lib devel/sage/sage/plot/plot3d/plot3d.py # Time out\n\tsage -t  -force_lib devel/sage/sage/quadratic_forms/quadratic_form__ternary_Tornaria.py # 13 doctests failed\n\tsage -t  -force_lib devel/sage/sage/rings/arith.py # 1 doctests failed\n\tsage -t  -force_lib devel/sage/sage/sandpiles/sandpile.py # Time out\n\tsage -t  -force_lib devel/sage/sage/schemes/elliptic_curves/ell_number_field.py # Time out\n\tsage -t  -force_lib devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py # Time out\n\tsage -t  -force_lib devel/sage/sage/schemes/elliptic_curves/heegner.py # Time out\n\tsage -t  -force_lib devel/sage/sage/symbolic/expression.pyx # 1 doctests failed\n\tsage -t  -force_lib devel/sage/sage/tests/cmdline.py # Time out\n----------------------------------------------------------------------\nTotal time for all tests: 92015.4 seconds\n```\n",
+    "created_at": "2013-02-08T12:32:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55342",
+    "user": "jpflori"
+}
+```
 
 And result of "make ptest" is
 
@@ -1252,9 +2312,20 @@ Total time for all tests: 92015.4 seconds
 
 
 
+
 ---
 
-Comment by jpflori created at 2013-02-08 12:37:59
+archive/issue_comments_055343.json:
+```json
+{
+    "body": "Log is at http://boxen.math.washington.edu/home/jpflori/ptest-5.7.beta2-cygwin-w7-32.log\n\nApart from time outs and errors similar to the one on my 64 bits W7, we got:\n* cubegroup.py, strange error about string out of range,\n* temporary_file.py which looks like a time out as well.",
+    "created_at": "2013-02-08T12:37:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55343",
+    "user": "jpflori"
+}
+```
 
 Log is at http://boxen.math.washington.edu/home/jpflori/ptest-5.7.beta2-cygwin-w7-32.log
 
@@ -1263,34 +2334,78 @@ Apart from time outs and errors similar to the one on my 64 bits W7, we got:
 * temporary_file.py which looks like a time out as well.
 
 
+
 ---
 
-Comment by jpflori created at 2013-02-08 13:31:06
+archive/issue_comments_055344.json:
+```json
+{
+    "body": "Increasing the timeout limit, let all tests which teimed out pass except for:\n* heegner.py because of the limited size of the PARI stack,\n* cmdline.py which fails like temporary_file.py because of \"timeout in test_executable()\", note there were no fork errors!",
+    "created_at": "2013-02-08T13:31:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55344",
+    "user": "jpflori"
+}
+```
 
 Increasing the timeout limit, let all tests which teimed out pass except for:
 * heegner.py because of the limited size of the PARI stack,
 * cmdline.py which fails like temporary_file.py because of "timeout in test_executable()", note there were no fork errors!
 
 
+
 ---
 
-Comment by jpflori created at 2013-02-08 13:34:30
+archive/issue_comments_055345.json:
+```json
+{
+    "body": "Also note that sage/schemes/elliptic_curves/ell_rational_field.py did not fail with fork errors as on my 64bits W7.",
+    "created_at": "2013-02-08T13:34:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55345",
+    "user": "jpflori"
+}
+```
 
 Also note that sage/schemes/elliptic_curves/ell_rational_field.py did not fail with fork errors as on my 64bits W7.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-02-08 13:38:25
+archive/issue_comments_055346.json:
+```json
+{
+    "body": "Replying to [comment:139 jpflori]:\n> heegner.py because of the limited size of the PARI stack\nIt's known that this test simply needs a lot of RAM, so perhaps your machine doesn't have enough memory available. What's the error message and how much memory do you have?",
+    "created_at": "2013-02-08T13:38:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55346",
+    "user": "jdemeyer"
+}
+```
 
 Replying to [comment:139 jpflori]:
 > heegner.py because of the limited size of the PARI stack
 It's known that this test simply needs a lot of RAM, so perhaps your machine doesn't have enough memory available. What's the error message and how much memory do you have?
 
 
+
 ---
 
-Comment by jpflori created at 2013-02-08 13:43:45
+archive/issue_comments_055347.json:
+```json
+{
+    "body": "Replying to [comment:141 jdemeyer]:\n> Replying to [comment:139 jpflori]:\n> > heegner.py because of the limited size of the PARI stack\n> It's known that this test simply needs a lot of RAM, so perhaps your machine doesn't have enough memory available. What's the error message and how much memory do you have?\nI'm aware of that, I was just reporting the results of a straight test.\nThe problem on Cygwin is that the maximal virtual memomy available is limited to something quite low by default, I'd say about 512MB.\nIn particular it prevents the PARI stack to grow above (a little less than) this limit, even if you have 1 billion GB of RAM available.\nThe solution is to modify this limit by hand for the python.exe file using the peflags executable, see some comments on #9176.",
+    "created_at": "2013-02-08T13:43:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55347",
+    "user": "jpflori"
+}
+```
 
 Replying to [comment:141 jdemeyer]:
 > Replying to [comment:139 jpflori]:
@@ -1302,62 +2417,139 @@ In particular it prevents the PARI stack to grow above (a little less than) this
 The solution is to modify this limit by hand for the python.exe file using the peflags executable, see some comments on #9176.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-02-08 13:50:55
+archive/issue_comments_055348.json:
+```json
+{
+    "body": "OK fair enough, you obviously already thought about this :-)",
+    "created_at": "2013-02-08T13:50:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55348",
+    "user": "jdemeyer"
+}
+```
 
 OK fair enough, you obviously already thought about this :-)
 
 
+
 ---
 
-Comment by jpflori created at 2013-02-08 14:21:58
+archive/issue_comments_055349.json:
+```json
+{
+    "body": "After increasing the timeout value in sage/tests/cmdline.py:test_executable():\n* temporary_file.py passes,\n* one doctest fails in cmdline.py, the one at line 376 which return -6 instead of 0.",
+    "created_at": "2013-02-08T14:21:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55349",
+    "user": "jpflori"
+}
+```
 
 After increasing the timeout value in sage/tests/cmdline.py:test_executable():
 * temporary_file.py passes,
 * one doctest fails in cmdline.py, the one at line 376 which return -6 instead of 0.
 
 
+
 ---
 
-Comment by jpflori created at 2013-02-08 14:41:32
+archive/issue_comments_055350.json:
+```json
+{
+    "body": "FYI, quadratic_form__ternary_Tornaria.py and heegner.py pass their doctests after peflagging python.exe with cygwin-heap=600",
+    "created_at": "2013-02-08T14:41:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55350",
+    "user": "jpflori"
+}
+```
 
 FYI, quadratic_form__ternary_Tornaria.py and heegner.py pass their doctests after peflagging python.exe with cygwin-heap=600
 
 
+
 ---
 
-Comment by jpflori created at 2013-02-08 15:24:32
+archive/issue_comments_055351.json:
+```json
+{
+    "body": "And going through the \"alarm set to 1 second\" hassle, devel/sagenb-main/sagenb/misc/misc.py passed its doctests contrary to my 64bits W7 install (no port available blah).",
+    "created_at": "2013-02-08T15:24:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55351",
+    "user": "jpflori"
+}
+```
 
 And going through the "alarm set to 1 second" hassle, devel/sagenb-main/sagenb/misc/misc.py passed its doctests contrary to my 64bits W7 install (no port available blah).
 
 
+
 ---
 
-Comment by jpflori created at 2013-02-12 21:18:18
+archive/issue_comments_055352.json:
+```json
+{
+    "body": "I guess that with #14033, #11696 and #13351 Sage should build, run and pass tests quite nicely.\n\nNow let's take care of adding some doc and modifying prereqs or whatever.",
+    "created_at": "2013-02-12T21:18:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55352",
+    "user": "jpflori"
+}
+```
 
 I guess that with #14033, #11696 and #13351 Sage should build, run and pass tests quite nicely.
 
 Now let's take care of adding some doc and modifying prereqs or whatever.
 
 
+
 ---
 
-Comment by jpflori created at 2013-02-12 21:20:59
+archive/issue_comments_055353.json:
+```json
+{
+    "body": "Replying to [comment:139 jpflori]:\n> * cmdline.py which fails like temporary_file.py because of \"timeout in test_executable()\", note there were no fork errors!\nQuestion for Jeroen: how would you deal with such problems? and even more with the one with the alarm set to 1 second getting triggered when one tries to launch the notebook? would setting the default timeoutsvelue to None and then setting then to something sensible in the function code depending on uname seem ok?",
+    "created_at": "2013-02-12T21:20:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55353",
+    "user": "jpflori"
+}
+```
 
 Replying to [comment:139 jpflori]:
 > * cmdline.py which fails like temporary_file.py because of "timeout in test_executable()", note there were no fork errors!
 Question for Jeroen: how would you deal with such problems? and even more with the one with the alarm set to 1 second getting triggered when one tries to launch the notebook? would setting the default timeoutsvelue to None and then setting then to something sensible in the function code depending on uname seem ok?
 
 
+
 ---
 
-Comment by dimpase created at 2013-02-13 04:43:43
+archive/issue_comments_055354.json:
+```json
+{
+    "body": "few things about Cygwin rebase/rebaseall.\n \n* we should rebase .so files, too;\n* `rebase` has a new handy -O switch, which means rebase (new) things, but do not touch the system dlls. So instead of rebaseall, assuming one installs Sage on a system without previous versions of Sage installed, one can do, at the Cygwin shell (no need to kill all the Cygwin processes, as is the case for rebaseall):\n\n```\n$ cd $SAGE_ROOT\n$ find . -name *.dll >/tmp/list_of_files\n$ find . -name *.so >>/tmp/list_of_files\n$ rebase -O -T /tmp/list_of_files\n```\n\n* previous versions of Sage clog up the limited static dll address space maintained by Cygwin in `/etc/rebase*` databases. I recommend to wipe them out before installing the new version of Sage; i.e. remove Sage installation(s) and `/etc/rebase*` and run rebaseall as usual, in `ash` or `dash`.",
+    "created_at": "2013-02-13T04:43:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55354",
+    "user": "dimpase"
+}
+```
 
 few things about Cygwin rebase/rebaseall.
  
-  * we should rebase .so files, too;
-  * `rebase` has a new handy -O switch, which means rebase (new) things, but do not touch the system dlls. So instead of rebaseall, assuming one installs Sage on a system without previous versions of Sage installed, one can do, at the Cygwin shell (no need to kill all the Cygwin processes, as is the case for rebaseall):
+* we should rebase .so files, too;
+* `rebase` has a new handy -O switch, which means rebase (new) things, but do not touch the system dlls. So instead of rebaseall, assuming one installs Sage on a system without previous versions of Sage installed, one can do, at the Cygwin shell (no need to kill all the Cygwin processes, as is the case for rebaseall):
 
 ```
 $ cd $SAGE_ROOT
@@ -1366,12 +2558,23 @@ $ find . -name *.so >>/tmp/list_of_files
 $ rebase -O -T /tmp/list_of_files
 ```
 
-  * previous versions of Sage clog up the limited static dll address space maintained by Cygwin in `/etc/rebase*` databases. I recommend to wipe them out before installing the new version of Sage; i.e. remove Sage installation(s) and `/etc/rebase*` and run rebaseall as usual, in `ash` or `dash`.
+* previous versions of Sage clog up the limited static dll address space maintained by Cygwin in `/etc/rebase*` databases. I recommend to wipe them out before installing the new version of Sage; i.e. remove Sage installation(s) and `/etc/rebase*` and run rebaseall as usual, in `ash` or `dash`.
+
 
 
 ---
 
-Comment by jpflori created at 2013-02-13 12:50:13
+archive/issue_comments_055355.json:
+```json
+{
+    "body": "Replying to [comment:149 dimpase]:\n> few things about Cygwin rebase/rebaseall.\n>  \n>   * we should rebase .so files, too;\nI think you should go even further and only have *.dll files.\n>   * `rebase` has a new handy -O switch, which means rebase (new) things, but do not touch the system dlls. So instead of rebaseall, assuming one installs Sage on a system without previous versions of Sage installed, one can do, at the Cygwin shell (no need to kill all the Cygwin processes, as is the case for rebaseall):\n> {{{\n> $ cd $SAGE_ROOT\n> $ find . -name *.dll >/tmp/list_of_files\n> $ find . -name *.so >>/tmp/list_of_files\n> $ rebase -O -T /tmp/list_of_files\n> }}}\nGood to know, thanks for the hint!\nI finally got rid of the BLODA which memleak on my 64 bis W7 (that was the Lenovo FastBoot thing, not even sure what it does, except keeping 20K of memory in page table for every app ever launched, Cygwin or not...) and might find this really useful.\n>   * previous versions of Sage clog up the limited static dll address space maintained by Cygwin in `/etc/rebase*` databases. I recommend to wipe them out before installing the new version of Sage; i.e. remove Sage installation(s) and `/etc/rebase*` and run rebaseall as usual, in `ash` or `dash`.\nYup, that's a good idea.\n\nCould you provide more info, or pointers, on why Cygwin running on a native 32 bits system would have more address space available than one running under wow64 on 64 bits, and so less affected by fork errors, one as I seem to remember you evoked that at some point here?\nI would be interested.",
+    "created_at": "2013-02-13T12:50:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55355",
+    "user": "jpflori"
+}
+```
 
 Replying to [comment:149 dimpase]:
 > few things about Cygwin rebase/rebaseall.
@@ -1394,9 +2597,20 @@ Could you provide more info, or pointers, on why Cygwin running on a native 32 b
 I would be interested.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-02-13 13:08:43
+archive/issue_comments_055356.json:
+```json
+{
+    "body": "Replying to [comment:148 jpflori]:\n> Replying to [comment:139 jpflori]:\n> > * cmdline.py which fails like temporary_file.py because of \"timeout in test_executable()\", note there were no fork errors!\n> Question for Jeroen: how would you deal with such problems?\nI don't mind if you increase the timeout unconditionally in `test_executable()`. Would 100 seconds (now it is 50) be sufficient?\n\n> and even more with the one with the alarm set to 1 second getting triggered when one tries to launch the notebook?\nIncrease the alarm time.\n\nI don't like the `find_next_available_port()` function anyway, it's un-Pythonic (the Pythonic thing to do would be to try to `bind()` to a port and use a next port if that fails) and therefore prone to race conditions.",
+    "created_at": "2013-02-13T13:08:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55356",
+    "user": "jdemeyer"
+}
+```
 
 Replying to [comment:148 jpflori]:
 > Replying to [comment:139 jpflori]:
@@ -1410,9 +2624,20 @@ Increase the alarm time.
 I don't like the `find_next_available_port()` function anyway, it's un-Pythonic (the Pythonic thing to do would be to try to `bind()` to a port and use a next port if that fails) and therefore prone to race conditions.
 
 
+
 ---
 
-Comment by dimpase created at 2013-02-13 13:28:37
+archive/issue_comments_055357.json:
+```json
+{
+    "body": "Replying to [comment:150 jpflori]:\n> Could you provide more info, or pointers, on why Cygwin running on a native 32 bits system would have more address space available than one running under wow64 on 64 bits, and so less affected by fork errors, one as I seem to remember you evoked that at some point here?\n> I would be interested.\n\nno, my conviction was that it's not possible to have a full install of Cygwin and a Sage on a 32-bit system, they just don't fit in that addess space - which is bigger on wow64 on 64 bits. You are welcome to prove me wrong. Perhaps it was some BLODA on that system I no longer have, anyway.",
+    "created_at": "2013-02-13T13:28:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55357",
+    "user": "dimpase"
+}
+```
 
 Replying to [comment:150 jpflori]:
 > Could you provide more info, or pointers, on why Cygwin running on a native 32 bits system would have more address space available than one running under wow64 on 64 bits, and so less affected by fork errors, one as I seem to remember you evoked that at some point here?
@@ -1421,9 +2646,20 @@ Replying to [comment:150 jpflori]:
 no, my conviction was that it's not possible to have a full install of Cygwin and a Sage on a 32-bit system, they just don't fit in that addess space - which is bigger on wow64 on 64 bits. You are welcome to prove me wrong. Perhaps it was some BLODA on that system I no longer have, anyway.
 
 
+
 ---
 
-Comment by jpflori created at 2013-02-13 13:33:48
+archive/issue_comments_055358.json:
+```json
+{
+    "body": "Replying to [comment:152 dimpase]:\n> Replying to [comment:150 jpflori]:\n> > Could you provide more info, or pointers, on why Cygwin running on a native 32 bits system would have more address space available than one running under wow64 on 64 bits, and so less affected by fork errors, one as I seem to remember you evoked that at some point here?\n> > I would be interested.\n> \n> no, my conviction was that it's not possible to have a full install of Cygwin and a Sage on a 32-bit system, they just don't fit in that addess space - which is bigger on wow64 on 64 bits. You are welcome to prove me wrong. Perhaps it was some BLODA on that system I no longer have, anyway.\nHum, I got less problems with my 32bits W7 (although it was slower and had less cores) than with my 64bits W7.\nIndeed, I got fork errors in the end on the 64 bits install and not on the 32 bits install.",
+    "created_at": "2013-02-13T13:33:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55358",
+    "user": "jpflori"
+}
+```
 
 Replying to [comment:152 dimpase]:
 > Replying to [comment:150 jpflori]:
@@ -1435,9 +2671,20 @@ Hum, I got less problems with my 32bits W7 (although it was slower and had less 
 Indeed, I got fork errors in the end on the 64 bits install and not on the 32 bits install.
 
 
+
 ---
 
-Comment by kcrisman created at 2013-02-13 15:46:58
+archive/issue_comments_055359.json:
+```json
+{
+    "body": "> > Could you provide more info, or pointers, on why Cygwin running on a native 32 bits system would have more address space available than one running under wow64 on 64 bits, and so less affected by fork errors, one as I seem to remember you evoked that at some point here?\n> > I would be interested.\n> \n> no, my conviction was that it's not possible to have a full install of Cygwin and a Sage on a 32-bit system, they just don't fit in that addess space - which is bigger on wow64 on 64 bits. You are welcome to prove me wrong. Perhaps it was some BLODA on that system I no longer have, anyway.\n\nBut that actually makes a lot of sense for the problems I've had.  I haven't had any time lately but perhaps next week I will completely uninstall and reinstall Cygwin on my XP box and see what happens.\n\nAlso, love the idea to have the `rebase` instead of `rebaseall`.  Could the relevant ticket about the Cygwin rebase script (#14031) be updated with that too?",
+    "created_at": "2013-02-13T15:46:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55359",
+    "user": "kcrisman"
+}
+```
 
 > > Could you provide more info, or pointers, on why Cygwin running on a native 32 bits system would have more address space available than one running under wow64 on 64 bits, and so less affected by fork errors, one as I seem to remember you evoked that at some point here?
 > > I would be interested.
@@ -1449,9 +2696,20 @@ But that actually makes a lot of sense for the problems I've had.  I haven't had
 Also, love the idea to have the `rebase` instead of `rebaseall`.  Could the relevant ticket about the Cygwin rebase script (#14031) be updated with that too?
 
 
+
 ---
 
-Comment by jpflori created at 2013-02-20 14:56:05
+archive/issue_comments_055360.json:
+```json
+{
+    "body": "Ok, I think we now only need #13351 to get Sage to quite completely build, start, correctly work and pass (most of) its doctests.\n\nWe should open other tickets to add doc about usage of peflags, use of the rebasing script (#14031), modifying prereqs and other cosmetic things.\n\nThen we should deal with the failing doctests mentioned above, most of them are \"quite\" easy or we can just document why they are expected to fail (e.g., you have to peflags python.exe, or Cygwin is just too slow, so you have to increase SAGE_TIMEOUT, or you have to install procps to have top).",
+    "created_at": "2013-02-20T14:56:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55360",
+    "user": "jpflori"
+}
+```
 
 Ok, I think we now only need #13351 to get Sage to quite completely build, start, correctly work and pass (most of) its doctests.
 
@@ -1460,50 +2718,116 @@ We should open other tickets to add doc about usage of peflags, use of the rebas
 Then we should deal with the failing doctests mentioned above, most of them are "quite" easy or we can just document why they are expected to fail (e.g., you have to peflags python.exe, or Cygwin is just too slow, so you have to increase SAGE_TIMEOUT, or you have to install procps to have top).
 
 
+
 ---
 
-Comment by jpflori created at 2013-02-20 14:56:42
+archive/issue_comments_055361.json:
+```json
+{
+    "body": "We should also deal with the few .so files remaining.",
+    "created_at": "2013-02-20T14:56:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55361",
+    "user": "jpflori"
+}
+```
 
 We should also deal with the few .so files remaining.
 
 
+
 ---
 
-Comment by jpflori created at 2013-02-25 14:22:21
+archive/issue_comments_055362.json:
+```json
+{
+    "body": "See #14179 for the problematic default timeout values.",
+    "created_at": "2013-02-25T14:22:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55362",
+    "user": "jpflori"
+}
+```
 
 See #14179 for the problematic default timeout values.
 
 
+
 ---
 
-Comment by jpflori created at 2013-03-01 10:35:09
+archive/issue_comments_055363.json:
+```json
+{
+    "body": "I've opened #14207 for documenting usage of peflags and leverage max heap memory issues.",
+    "created_at": "2013-03-01T10:35:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55363",
+    "user": "jpflori"
+}
+```
 
 I've opened #14207 for documenting usage of peflags and leverage max heap memory issues.
 
 
+
 ---
 
-Comment by jpflori created at 2013-03-01 10:37:29
+archive/issue_comments_055364.json:
+```json
+{
+    "body": "And #14208 for *.so files, this could be a metaticket if there is a lot of work.",
+    "created_at": "2013-03-01T10:37:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55364",
+    "user": "jpflori"
+}
+```
 
 And #14208 for *.so files, this could be a metaticket if there is a lot of work.
 
 
+
 ---
 
-Comment by kcrisman created at 2013-03-06 01:55:56
+archive/issue_comments_055365.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2013-03-06T01:55:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55365",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by kcrisman created at 2013-03-06 01:55:56
+archive/issue_comments_055366.json:
+```json
+{
+    "body": "Replying to [comment:155 jpflori]:\n> Ok, I think we now only need #13351 to get Sage to quite completely build, start, correctly work and pass (most of) its doctests.\nSo ... once that is merged, is this ticket done?\n> We should open other tickets to add doc about usage of peflags, use of the rebasing script (#14031), modifying prereqs and other cosmetic things.\nSo is there really no prereq modification necessary here?  (Or, as Volker says, some other script somewhere to check this?) All along, from when William opened this ticket, the assumption was that we would put *some* checking in that a given Cygwin had the proper prereqs to function.  From [the wiki](http://trac.sagemath.org/sage_trac/wiki/CygwinPort): \n\n```\nAlso installed the lapack packages, the gcc, g++ and gfortran ones, m4, make, binutils, perl\n```\n\nWe do ask for gcc, m4, make, and perl ahead of time.  Does Sage already throw an error at the start if the lapack stuff isn't there?  What about binutils - is that equivalent to a \"standard\" dependency?\n\nThe top/procps/file thing is presumably separate - we don't need that to build, just test, correct?  Also there was that \"custom GSL\" remark, but perhaps that wasn't an issue.\n\nOne reason I am a little scared about this is the tendency of Sage to creep beyond the latest efforts here.  So I want to hesitate to close this until we are really sure we are \"state-of-the-art\".  I wish we could acquire a Cygwin buildbot.\n\nAnyway, all that to say that I should have a little time for this in the next week and a half to help test some of the many many fixes you have contributed - amazing stuff.  Thank you to Dima so much for picking up a lot of my slack on this the past few months.",
+    "created_at": "2013-03-06T01:55:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55366",
+    "user": "kcrisman"
+}
+```
 
 Replying to [comment:155 jpflori]:
 > Ok, I think we now only need #13351 to get Sage to quite completely build, start, correctly work and pass (most of) its doctests.
 So ... once that is merged, is this ticket done?
 > We should open other tickets to add doc about usage of peflags, use of the rebasing script (#14031), modifying prereqs and other cosmetic things.
-So is there really no prereq modification necessary here?  (Or, as Volker says, some other script somewhere to check this?) All along, from when William opened this ticket, the assumption was that we would put _some_ checking in that a given Cygwin had the proper prereqs to function.  From [the wiki](http://trac.sagemath.org/sage_trac/wiki/CygwinPort): 
+So is there really no prereq modification necessary here?  (Or, as Volker says, some other script somewhere to check this?) All along, from when William opened this ticket, the assumption was that we would put *some* checking in that a given Cygwin had the proper prereqs to function.  From [the wiki](http://trac.sagemath.org/sage_trac/wiki/CygwinPort): 
 
 ```
 Also installed the lapack packages, the gcc, g++ and gfortran ones, m4, make, binutils, perl
@@ -1518,25 +2842,58 @@ One reason I am a little scared about this is the tendency of Sage to creep beyo
 Anyway, all that to say that I should have a little time for this in the next week and a half to help test some of the many many fixes you have contributed - amazing stuff.  Thank you to Dima so much for picking up a lot of my slack on this the past few months.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-03-06 07:40:31
+archive/issue_comments_055367.json:
+```json
+{
+    "body": "Replying to [comment:160 kcrisman]:\n> We do ask for gcc, m4, make, and perl ahead of time.  Does Sage already throw an error at the start if the lapack stuff isn't there?  What about binutils - is that equivalent to a \"standard\" dependency?\nA C compiler, `m4`, `make`, `perl` and `binutils` are always checked by prereq. Lapack surely not, since it's included with Sage.",
+    "created_at": "2013-03-06T07:40:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55367",
+    "user": "jdemeyer"
+}
+```
 
 Replying to [comment:160 kcrisman]:
 > We do ask for gcc, m4, make, and perl ahead of time.  Does Sage already throw an error at the start if the lapack stuff isn't there?  What about binutils - is that equivalent to a "standard" dependency?
 A C compiler, `m4`, `make`, `perl` and `binutils` are always checked by prereq. Lapack surely not, since it's included with Sage.
 
 
+
 ---
 
-Comment by lftabera created at 2013-03-06 14:35:22
+archive/issue_comments_055368.json:
+```json
+{
+    "body": "This is amazing. Thanks to all the people involved. I have checked that sage-5.8.beta2 compiles on a windows vista machine, 32 bits OS. I had to rebase once while compiling and another after compiling for booting sage without errors.",
+    "created_at": "2013-03-06T14:35:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55368",
+    "user": "lftabera"
+}
+```
 
 This is amazing. Thanks to all the people involved. I have checked that sage-5.8.beta2 compiles on a windows vista machine, 32 bits OS. I had to rebase once while compiling and another after compiling for booting sage without errors.
 
 
+
 ---
 
-Comment by jpflori created at 2013-03-06 15:16:54
+archive/issue_comments_055369.json:
+```json
+{
+    "body": "Replying to [comment:161 jdemeyer]:\n> Replying to [comment:160 kcrisman]:\n> > We do ask for gcc, m4, make, and perl ahead of time.  Does Sage already throw an error at the start if the lapack stuff isn't there?  What about binutils - is that equivalent to a \"standard\" dependency?\n> A C compiler, `m4`, `make`, `perl` and `binutils` are always checked by prereq. Lapack surely not, since it's included with Sage.\nThe current ATLAS spkg exits if it does not finds a system wide ATLAS or LAPACK, don't remember, and asks you to install the corresponding Cygwin packages (lapack-bin, lapack-devel IIRC, or stg like that).\n\nNonetheless, I'm quite convinced we can build the new ATLAS spkg from #10508 quite easily on Cygwin.\nI've had some trouble with shared library and the 3.8 ATLAS spkg, with memleaks on top of that.\nBu now I've removed the memleaks culprit so I could try again to vuild ATLAS 3.10.\n\nUnfortunately that's not my top priority, and on top of that I'm very happy with installing a system wide ATLAS.",
+    "created_at": "2013-03-06T15:16:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55369",
+    "user": "jpflori"
+}
+```
 
 Replying to [comment:161 jdemeyer]:
 > Replying to [comment:160 kcrisman]:
@@ -1551,34 +2908,78 @@ Bu now I've removed the memleaks culprit so I could try again to vuild ATLAS 3.1
 Unfortunately that's not my top priority, and on top of that I'm very happy with installing a system wide ATLAS.
 
 
+
 ---
 
-Comment by jpflori created at 2013-03-06 15:18:27
+archive/issue_comments_055370.json:
+```json
+{
+    "body": "For the record, note that GCC 4.6.3 cannot compile ECL on Cygwin.",
+    "created_at": "2013-03-06T15:18:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55370",
+    "user": "jpflori"
+}
+```
 
 For the record, note that GCC 4.6.3 cannot compile ECL on Cygwin.
 
 
+
 ---
 
-Comment by jpflori created at 2013-03-06 15:19:25
+archive/issue_comments_055371.json:
+```json
+{
+    "body": "Replying to [comment:162 lftabera]:\n> This is amazing. Thanks to all the people involved. I have checked that sage-5.8.beta2 compiles on a windows vista machine, 32 bits OS. I had to rebase once while compiling and another after compiling for booting sage without errors.\nGreat news!",
+    "created_at": "2013-03-06T15:19:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55371",
+    "user": "jpflori"
+}
+```
 
 Replying to [comment:162 lftabera]:
 > This is amazing. Thanks to all the people involved. I have checked that sage-5.8.beta2 compiles on a windows vista machine, 32 bits OS. I had to rebase once while compiling and another after compiling for booting sage without errors.
 Great news!
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-03-06 15:35:57
+archive/issue_comments_055372.json:
+```json
+{
+    "body": "Replying to [comment:164 jpflori]:\n> For the record, note that GCC 4.6.3 cannot compile ECL on Cygwin.\nIs there a ticket for this?  What goes wrong?",
+    "created_at": "2013-03-06T15:35:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55372",
+    "user": "jdemeyer"
+}
+```
 
 Replying to [comment:164 jpflori]:
 > For the record, note that GCC 4.6.3 cannot compile ECL on Cygwin.
 Is there a ticket for this?  What goes wrong?
 
 
+
 ---
 
-Comment by kcrisman created at 2013-03-06 15:46:30
+archive/issue_comments_055373.json:
+```json
+{
+    "body": "> The current ATLAS spkg exits if it does not finds a system wide ATLAS or LAPACK, don't remember, and asks you to install the corresponding Cygwin packages (lapack-bin, lapack-devel IIRC, or stg like that).\n\n```\n# On Cygwin we simply require that the system-wide lapack is installed.\n# This includes BLAS and is enough to build the rest of Sage.\nif conf['CYGWIN?']:\n    lib = '/usr/lib/libblas.dll.a'\n    if not os.path.exists(lib):\n        print '*'*75\n        print 'On Cygwin you must install the standard LAPACK Cygwin package'\n        print 'via the Cygwin setup.exe program in the \"Math\" category.'\n        print '*'*75 \n        sys.exit(1)\n    cp(lib, os.path.join(conf['SAGE_LOCAL'], 'lib'))\n    sys.exit(0)\n```\n\nI think this should be updated, perhaps at #10508, to be VERY explicit about which packages to install, and so we are not *quite* ready to close this ticket.  Also, we might want to make sure that this dll.a is really all that we need to check for to not run into trouble.  That said, the default should be to not install ATLAS, but one should be able to force it with an appropriate environment variable or something - I thought #10508 dealt with that, but maybe not?  With 334 comments and counting, wow...",
+    "created_at": "2013-03-06T15:46:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55373",
+    "user": "kcrisman"
+}
+```
 
 > The current ATLAS spkg exits if it does not finds a system wide ATLAS or LAPACK, don't remember, and asks you to install the corresponding Cygwin packages (lapack-bin, lapack-devel IIRC, or stg like that).
 
@@ -1597,12 +2998,23 @@ if conf['CYGWIN?']:
     sys.exit(0)
 ```
 
-I think this should be updated, perhaps at #10508, to be VERY explicit about which packages to install, and so we are not _quite_ ready to close this ticket.  Also, we might want to make sure that this dll.a is really all that we need to check for to not run into trouble.  That said, the default should be to not install ATLAS, but one should be able to force it with an appropriate environment variable or something - I thought #10508 dealt with that, but maybe not?  With 334 comments and counting, wow...
+I think this should be updated, perhaps at #10508, to be VERY explicit about which packages to install, and so we are not *quite* ready to close this ticket.  Also, we might want to make sure that this dll.a is really all that we need to check for to not run into trouble.  That said, the default should be to not install ATLAS, but one should be able to force it with an appropriate environment variable or something - I thought #10508 dealt with that, but maybe not?  With 334 comments and counting, wow...
+
 
 
 ---
 
-Comment by jpflori created at 2013-03-06 15:48:43
+archive/issue_comments_055374.json:
+```json
+{
+    "body": "Replying to [comment:166 jdemeyer]:\n> Replying to [comment:164 jpflori]:\n> > For the record, note that GCC 4.6.3 cannot compile ECL on Cygwin.\n> Is there a ticket for this?  What goes wrong?\nNo tickets here.\n\nIt goes ok with Cygwin 4.5.3 gcc or Sage's 4.7.2.\n\nFor more details see:\nhttp://www.mail-archive.com/ecls-list`@`lists.sourceforge.net/msg02368.html\n\nUpstream bug report:\nhttp://gcc.gnu.org/bugzilla/show_bug.cgi?id=52061",
+    "created_at": "2013-03-06T15:48:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55374",
+    "user": "jpflori"
+}
+```
 
 Replying to [comment:166 jdemeyer]:
 > Replying to [comment:164 jpflori]:
@@ -1619,9 +3031,20 @@ Upstream bug report:
 http://gcc.gnu.org/bugzilla/show_bug.cgi?id=52061
 
 
+
 ---
 
-Comment by jpflori created at 2013-03-06 15:49:40
+archive/issue_comments_055375.json:
+```json
+{
+    "body": "Replying to [comment:167 kcrisman]:\n> > The current ATLAS spkg exits if it does not finds a system wide ATLAS or LAPACK, don't remember, and asks you to install the corresponding Cygwin packages (lapack-bin, lapack-devel IIRC, or stg like that).\n> {{{\n> # On Cygwin we simply require that the system-wide lapack is installed.\n> # This includes BLAS and is enough to build the rest of Sage.\n> if conf['CYGWIN?']:\n>     lib = '/usr/lib/libblas.dll.a'\n>     if not os.path.exists(lib):\n>         print '*'*75\n>         print 'On Cygwin you must install the standard LAPACK Cygwin package'\n>         print 'via the Cygwin setup.exe program in the \"Math\" category.'\n>         print '*'*75 \n>         sys.exit(1)\n>     cp(lib, os.path.join(conf['SAGE_LOCAL'], 'lib'))\n>     sys.exit(0)\n> }}}\n> I think this should be updated, perhaps at #10508, to be VERY explicit about which packages to install, and so we are not *quite* ready to close this ticket.  Also, we might want to make sure that this dll.a is really all that we need to check for to not run into trouble.  That said, the default should be to not install ATLAS, but one should be able to force it with an appropriate environment variable or something - I thought #10508 dealt with that, but maybe not?  With 334 comments and counting, wow...\nThe latest spkg from #10508 let you \"force\" ATLAS build by setting SAGE_ATLAS_ARCH.",
+    "created_at": "2013-03-06T15:49:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55375",
+    "user": "jpflori"
+}
+```
 
 Replying to [comment:167 kcrisman]:
 > > The current ATLAS spkg exits if it does not finds a system wide ATLAS or LAPACK, don't remember, and asks you to install the corresponding Cygwin packages (lapack-bin, lapack-devel IIRC, or stg like that).
@@ -1639,13 +3062,24 @@ Replying to [comment:167 kcrisman]:
 >     cp(lib, os.path.join(conf['SAGE_LOCAL'], 'lib'))
 >     sys.exit(0)
 > }}}
-> I think this should be updated, perhaps at #10508, to be VERY explicit about which packages to install, and so we are not _quite_ ready to close this ticket.  Also, we might want to make sure that this dll.a is really all that we need to check for to not run into trouble.  That said, the default should be to not install ATLAS, but one should be able to force it with an appropriate environment variable or something - I thought #10508 dealt with that, but maybe not?  With 334 comments and counting, wow...
+> I think this should be updated, perhaps at #10508, to be VERY explicit about which packages to install, and so we are not *quite* ready to close this ticket.  Also, we might want to make sure that this dll.a is really all that we need to check for to not run into trouble.  That said, the default should be to not install ATLAS, but one should be able to force it with an appropriate environment variable or something - I thought #10508 dealt with that, but maybe not?  With 334 comments and counting, wow...
 The latest spkg from #10508 let you "force" ATLAS build by setting SAGE_ATLAS_ARCH.
+
 
 
 ---
 
-Comment by jdemeyer created at 2013-03-06 15:55:00
+archive/issue_comments_055376.json:
+```json
+{
+    "body": "Replying to [comment:168 jpflori]:\n> It goes ok with Cygwin 4.5.3 gcc or Sage's 4.7.2.\n> \n> For more details see:\n> http://www.mail-archive.com/ecls-list`@`lists.sourceforge.net/msg02368.html\n> \n> Upstream bug report:\n> http://gcc.gnu.org/bugzilla/show_bug.cgi?id=52061\nThanks for the pointers, too bad upstream doesn't care.",
+    "created_at": "2013-03-06T15:55:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55376",
+    "user": "jdemeyer"
+}
+```
 
 Replying to [comment:168 jpflori]:
 > It goes ok with Cygwin 4.5.3 gcc or Sage's 4.7.2.
@@ -1658,18 +3092,40 @@ Replying to [comment:168 jpflori]:
 Thanks for the pointers, too bad upstream doesn't care.
 
 
+
 ---
 
-Comment by kcrisman created at 2013-03-07 04:46:29
+archive/issue_comments_055377.json:
+```json
+{
+    "body": "Currently uninstalled and now reinstalling Cygwin on my XP box.  Let's hope :)\n\nBy the way, should closing this ticket also require removing the `SAGE_PORT=yes` necessity for Cygwin?  Just a thought.",
+    "created_at": "2013-03-07T04:46:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55377",
+    "user": "kcrisman"
+}
+```
 
 Currently uninstalled and now reinstalling Cygwin on my XP box.  Let's hope :)
 
 By the way, should closing this ticket also require removing the `SAGE_PORT=yes` necessity for Cygwin?  Just a thought.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-03-07 07:37:57
+archive/issue_comments_055378.json:
+```json
+{
+    "body": "Replying to [comment:171 kcrisman]:\n> By the way, should closing this ticket also require removing the `SAGE_PORT=yes` necessity for Cygwin?\nIndeed, maybe we should repurpose this ticket to do just that.\n\nWe also need to change `spkg/install` never to install Sage's GCC on Cygwin, since it doesn't work for ECL.",
+    "created_at": "2013-03-07T07:37:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55378",
+    "user": "jdemeyer"
+}
+```
 
 Replying to [comment:171 kcrisman]:
 > By the way, should closing this ticket also require removing the `SAGE_PORT=yes` necessity for Cygwin?
@@ -1678,9 +3134,20 @@ Indeed, maybe we should repurpose this ticket to do just that.
 We also need to change `spkg/install` never to install Sage's GCC on Cygwin, since it doesn't work for ECL.
 
 
+
 ---
 
-Comment by jpflori created at 2013-03-07 08:11:40
+archive/issue_comments_055379.json:
+```json
+{
+    "body": "Replying to [comment:172 jdemeyer]:\n> Replying to [comment:171 kcrisman]:\n> > By the way, should closing this ticket also require removing the `SAGE_PORT=yes` necessity for Cygwin?\n> Indeed, maybe we should repurpose this ticket to do just that.\n> \n> We also need to change `spkg/install` never to install Sage's GCC on Cygwin, since it doesn't work for ECL.\nAlso note that Sage's GCC 4.7.2 is fine so we could check that all Cygwin gcc, g++ and gfortran 4.5.3 are installed or suggest using the Sage's optional 4.7.2 spkg.",
+    "created_at": "2013-03-07T08:11:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55379",
+    "user": "jpflori"
+}
+```
 
 Replying to [comment:172 jdemeyer]:
 > Replying to [comment:171 kcrisman]:
@@ -1691,16 +3158,38 @@ Replying to [comment:172 jdemeyer]:
 Also note that Sage's GCC 4.7.2 is fine so we could check that all Cygwin gcc, g++ and gfortran 4.5.3 are installed or suggest using the Sage's optional 4.7.2 spkg.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-03-07 09:27:51
+archive/issue_comments_055380.json:
+```json
+{
+    "body": "Or upgrade GCC-in-Sage to version 4.7.2, I wouldn't have an objection with that.",
+    "created_at": "2013-03-07T09:27:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55380",
+    "user": "jdemeyer"
+}
+```
 
 Or upgrade GCC-in-Sage to version 4.7.2, I wouldn't have an objection with that.
 
 
+
 ---
 
-Comment by leif created at 2013-03-07 13:16:39
+archive/issue_comments_055381.json:
+```json
+{
+    "body": "Replying to [comment:174 jdemeyer]:\n> Or upgrade GCC-in-Sage to version 4.7.2, I wouldn't have an objection with that.\n\nYep.  Any reason we shouldn't [yet]?",
+    "created_at": "2013-03-07T13:16:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55381",
+    "user": "leif"
+}
+```
 
 Replying to [comment:174 jdemeyer]:
 > Or upgrade GCC-in-Sage to version 4.7.2, I wouldn't have an objection with that.
@@ -1708,9 +3197,20 @@ Replying to [comment:174 jdemeyer]:
 Yep.  Any reason we shouldn't [yet]?
 
 
+
 ---
 
-Comment by kcrisman created at 2013-03-07 14:19:14
+archive/issue_comments_055382.json:
+```json
+{
+    "body": "Latest XP build report:\n\nWeirdly, I just tried a brand-new Cygwin install with the minimal prereqs that JP has been talking about, and got a very strange error about cygmpfr-4.dll cannot open shared object file (as well as that I didn't have Gnu cc and that cc couldn't make executables.  Installing the mpfr-4 package from Cygwin seems to have allowed compilation to begin, but that mpfr came with a SLEW of other packages I didn't really want.  In this case, it seems that even our gcc package would not have compiled, since Sage thought that the gcc4 on Cygwin was defective somehow.  \n\nAssuming this behaves properly over the next 48 hours or so, I'll yet again uninstall Cygwin and see what happens with a new one.  That said, IF we can build gcc-4.7 with the gcc3 that is preinstalled on Cygwin, maybe that would be a reason for the 4.7 standard version.",
+    "created_at": "2013-03-07T14:19:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55382",
+    "user": "kcrisman"
+}
+```
 
 Latest XP build report:
 
@@ -1719,9 +3219,20 @@ Weirdly, I just tried a brand-new Cygwin install with the minimal prereqs that J
 Assuming this behaves properly over the next 48 hours or so, I'll yet again uninstall Cygwin and see what happens with a new one.  That said, IF we can build gcc-4.7 with the gcc3 that is preinstalled on Cygwin, maybe that would be a reason for the 4.7 standard version.
 
 
+
 ---
 
-Comment by jpflori created at 2013-03-07 14:27:49
+archive/issue_comments_055383.json:
+```json
+{
+    "body": "Replying to [comment:176 kcrisman]:\n> Latest XP build report:\n> \n> Weirdly, I just tried a brand-new Cygwin install with the minimal prereqs that JP has been talking about, and got a very strange error about cygmpfr-4.dll cannot open shared object file (as well as that I didn't have Gnu cc and that cc couldn't make executables.  Installing the mpfr-4 package from Cygwin seems to have allowed compilation to begin, but that mpfr came with a SLEW of other packages I didn't really want.  In this case, it seems that even our gcc package would not have compiled, since Sage thought that the gcc4 on Cygwin was defective somehow.  \n> \nStrange, Ive always used the gcc4 package (more precisely, the latest version available for gcc4-core) and got no problems either with that package only to builg Sage's GCC 4.6.3 or 4.7.2, or together with the corresponding gcc4-g++ and gcc4-gfortran to builg Sage directly.\nI think I never ever tried the gcc3 packages.\nI've nevere (intentionally) installed gmp, mpfr not mpc neither.\n\nI'll put my hand on a XP box and will give it a shot.\nThat may be in a week or two only though.\n> Assuming this behaves properly over the next 48 hours or so, I'll yet again uninstall Cygwin and see what happens with a new one.  That said, IF we can build gcc-4.7 with the gcc3 that is preinstalled on Cygwin, maybe that would be a reason for the 4.7 standard version.",
+    "created_at": "2013-03-07T14:27:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55383",
+    "user": "jpflori"
+}
+```
 
 Replying to [comment:176 kcrisman]:
 > Latest XP build report:
@@ -1737,9 +3248,20 @@ That may be in a week or two only though.
 > Assuming this behaves properly over the next 48 hours or so, I'll yet again uninstall Cygwin and see what happens with a new one.  That said, IF we can build gcc-4.7 with the gcc3 that is preinstalled on Cygwin, maybe that would be a reason for the 4.7 standard version.
 
 
+
 ---
 
-Comment by leif created at 2013-03-07 14:36:36
+archive/issue_comments_055384.json:
+```json
+{
+    "body": "Replying to [comment:176 kcrisman]:\n> Latest XP build report:\n> \n> Weirdly, I just tried a brand-new Cygwin install with the minimal prereqs that JP has been talking about, and got a very strange error about cygmpfr-4.dll cannot open shared object file (as well as that I didn't have Gnu cc and that cc couldn't make executables.  Installing the mpfr-4 package from Cygwin seems to have allowed compilation to begin, but that mpfr came with a SLEW of other packages I didn't really want.  In this case, it seems that even our gcc package would not have compiled, since Sage thought that the gcc4 on Cygwin was defective somehow.\n\nGCC 4.x (in contrast to 3.x) requires GMP, MPFR (and since 4.5 IIRC also MPC), so these packages should have been pulled in by Cygwin if/when you installed the GCC4 package.\n\nBut didn't you say \"GCC3\" was the default?",
+    "created_at": "2013-03-07T14:36:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55384",
+    "user": "leif"
+}
+```
 
 Replying to [comment:176 kcrisman]:
 > Latest XP build report:
@@ -1751,9 +3273,20 @@ GCC 4.x (in contrast to 3.x) requires GMP, MPFR (and since 4.5 IIRC also MPC), s
 But didn't you say "GCC3" was the default?
 
 
+
 ---
 
-Comment by jpflori created at 2013-03-07 14:43:15
+archive/issue_comments_055385.json:
+```json
+{
+    "body": "Replying to [comment:178 leif]:\n> Replying to [comment:176 kcrisman]:\n> > Latest XP build report:\n> > \n> > Weirdly, I just tried a brand-new Cygwin install with the minimal prereqs that JP has been talking about, and got a very strange error about cygmpfr-4.dll cannot open shared object file (as well as that I didn't have Gnu cc and that cc couldn't make executables.  Installing the mpfr-4 package from Cygwin seems to have allowed compilation to begin, but that mpfr came with a SLEW of other packages I didn't really want.  In this case, it seems that even our gcc package would not have compiled, since Sage thought that the gcc4 on Cygwin was defective somehow.\n> \n> GCC 4.x (in contrast to 3.x) requires GMP, MPFR (and since 4.5 IIRC also MPC), so these packages should have been pulled in by Cygwin if/when you installed the GCC4 package.\n> \n> But didn't you say \"GCC3\" was the default?\nDon't know what the official Cygwin guidelines are, but you may say its the default because it what the \"gcc\" package points to.\n\nIf you want GCC 4.x (which ships 4.5.x currently), you have to choose the \"gcc4\" packages (moreprecisely the \"gcc4-core\" one if you want the C compiler, and it should indeed pull mpfr and mpc automagically unless you prevent setup.exe from doing it, see a list of package I had installed and with which I got a mostly working Sage install at http://trac.sagemath.org/sage_trac/wiki/CygwinPort#TestingSage5.6.rc0on64bitsWindows7 )",
+    "created_at": "2013-03-07T14:43:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55385",
+    "user": "jpflori"
+}
+```
 
 Replying to [comment:178 leif]:
 > Replying to [comment:176 kcrisman]:
@@ -1769,9 +3302,20 @@ Don't know what the official Cygwin guidelines are, but you may say its the defa
 If you want GCC 4.x (which ships 4.5.x currently), you have to choose the "gcc4" packages (moreprecisely the "gcc4-core" one if you want the C compiler, and it should indeed pull mpfr and mpc automagically unless you prevent setup.exe from doing it, see a list of package I had installed and with which I got a mostly working Sage install at http://trac.sagemath.org/sage_trac/wiki/CygwinPort#TestingSage5.6.rc0on64bitsWindows7 )
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-03-07 14:44:55
+archive/issue_comments_055386.json:
+```json
+{
+    "body": "Replying to [comment:176 kcrisman]:\n> IF we can build gcc-4.7 with the gcc3 that is preinstalled on Cygwin\n\nIn theory, this should work.",
+    "created_at": "2013-03-07T14:44:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55386",
+    "user": "jdemeyer"
+}
+```
 
 Replying to [comment:176 kcrisman]:
 > IF we can build gcc-4.7 with the gcc3 that is preinstalled on Cygwin
@@ -1779,9 +3323,20 @@ Replying to [comment:176 kcrisman]:
 In theory, this should work.
 
 
+
 ---
 
-Comment by kcrisman created at 2013-03-07 19:11:14
+archive/issue_comments_055387.json:
+```json
+{
+    "body": "> GCC 4.x (in contrast to 3.x) requires GMP, MPFR (and since 4.5 IIRC also MPC), so these packages should have been pulled in by Cygwin if/when you installed the GCC4 package.\n\nSee, that's just what I thought.  So I was really surprised.  Perhaps something got interrupted in the download - Windows autoupdated or something, maybe.  I'm not worried about it.\n\nAnyway, it's well into polybori now, so that is a positive sign.",
+    "created_at": "2013-03-07T19:11:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55387",
+    "user": "kcrisman"
+}
+```
 
 > GCC 4.x (in contrast to 3.x) requires GMP, MPFR (and since 4.5 IIRC also MPC), so these packages should have been pulled in by Cygwin if/when you installed the GCC4 package.
 
@@ -1790,23 +3345,56 @@ See, that's just what I thought.  So I was really surprised.  Perhaps something 
 Anyway, it's well into polybori now, so that is a positive sign.
 
 
----
-
-Comment by kcrisman created at 2013-03-08 12:25:56
-
-I only had trouble with #13351 and fork problems during matplotlib (which even rebasing didn't solve).  I do _not_ have libncurses-devel (checked `cygcheck -c`), only libncurses 8 through w10, so I'm removing that as a dependency based on the experiences JP reports above.
-
 
 ---
 
-Comment by kcrisman created at 2013-03-08 12:57:14
+archive/issue_comments_055388.json:
+```json
+{
+    "body": "I only had trouble with #13351 and fork problems during matplotlib (which even rebasing didn't solve).  I do *not* have libncurses-devel (checked `cygcheck -c`), only libncurses 8 through w10, so I'm removing that as a dependency based on the experiences JP reports above.",
+    "created_at": "2013-03-08T12:25:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55388",
+    "user": "kcrisman"
+}
+```
+
+I only had trouble with #13351 and fork problems during matplotlib (which even rebasing didn't solve).  I do *not* have libncurses-devel (checked `cygcheck -c`), only libncurses 8 through w10, so I'm removing that as a dependency based on the experiences JP reports above.
+
+
+
+---
+
+archive/issue_comments_055389.json:
+```json
+{
+    "body": "Another question: will #12415 make all doctesting on Cygwin hopeless, given the problems with forking?",
+    "created_at": "2013-03-08T12:57:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55389",
+    "user": "kcrisman"
+}
+```
 
 Another question: will #12415 make all doctesting on Cygwin hopeless, given the problems with forking?
 
 
+
 ---
 
-Comment by kcrisman created at 2013-03-08 16:30:10
+archive/issue_comments_055390.json:
+```json
+{
+    "body": "> Another question: will #12415 make all doctesting on Cygwin hopeless, given the problems with forking?\nThough I should say that on my current box, it's hopeless anyway; so many tests fail with something related to rebasing or forking or an inability to start gap or pari or maxima (or, currently, the lack of matplotlib).  There are one or two actually interesting tests I observe, randomly.  Like\n\n```\nFile ... exp_integral.py, line 585\nsage: N(f.integrate(x,2.0,3.0))\nExpected:\n    0.6016...587\nGot:\n    0.6016...588\n```\n\nBut in general it's a mess when other programs are called.",
+    "created_at": "2013-03-08T16:30:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55390",
+    "user": "kcrisman"
+}
+```
 
 > Another question: will #12415 make all doctesting on Cygwin hopeless, given the problems with forking?
 Though I should say that on my current box, it's hopeless anyway; so many tests fail with something related to rebasing or forking or an inability to start gap or pari or maxima (or, currently, the lack of matplotlib).  There are one or two actually interesting tests I observe, randomly.  Like
@@ -1823,9 +3411,20 @@ Got:
 But in general it's a mess when other programs are called.
 
 
+
 ---
 
-Comment by kcrisman created at 2013-03-12 00:44:41
+archive/issue_comments_055391.json:
+```json
+{
+    "body": "> Strange, Ive always used the gcc4 package (more precisely, the latest version available for gcc4-core) and got no problems either with that package only to builg Sage's GCC 4.6.3 or 4.7.2, or together with the corresponding gcc4-g++ and gcc4-gfortran to builg Sage directly.\n\nOkay, I'm noting that on a Win 7 box I just got my hands on (just for this week) I'm getting exactly the same error message about mpfr-4 - failure in the same place, in fact, in the very first compilation, it won't even do bzip2.  Adding the gcc (as opposed to gcc-core et al.) package doesn't help.  Adding the libmpfr-4 package solves things.  I can't explain the discrepancy to JP's experience.  I have Cygwin 1.7.17-1 - I just installed it less than a half-hour ago, so it must be up-to-date!\n\nAlso, just as a point of information, it turns out gcc (3) does not install by default, I don't have it now.",
+    "created_at": "2013-03-12T00:44:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55391",
+    "user": "kcrisman"
+}
+```
 
 > Strange, Ive always used the gcc4 package (more precisely, the latest version available for gcc4-core) and got no problems either with that package only to builg Sage's GCC 4.6.3 or 4.7.2, or together with the corresponding gcc4-g++ and gcc4-gfortran to builg Sage directly.
 
@@ -1834,19 +3433,41 @@ Okay, I'm noting that on a Win 7 box I just got my hands on (just for this week)
 Also, just as a point of information, it turns out gcc (3) does not install by default, I don't have it now.
 
 
+
 ---
 
-Comment by kcrisman created at 2013-03-12 02:39:03
+archive/issue_comments_055392.json:
+```json
+{
+    "body": "More fun on Win 7, two threads:\n* zn_poly only will build properly with one thread, otherwise the tuning goes too slow or something.\n* Got some probably rebase need in polybori.\n* Did I do something wrong in that lapack is really built?  Atlas just gets copied from /usr/lib/, but I had thought that lapack would just copy from the lapack Cygwin package.  Not important, probably just my ignorance.",
+    "created_at": "2013-03-12T02:39:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55392",
+    "user": "kcrisman"
+}
+```
 
 More fun on Win 7, two threads:
- * zn_poly only will build properly with one thread, otherwise the tuning goes too slow or something.
- * Got some probably rebase need in polybori.
- * Did I do something wrong in that lapack is really built?  Atlas just gets copied from /usr/lib/, but I had thought that lapack would just copy from the lapack Cygwin package.  Not important, probably just my ignorance.
+* zn_poly only will build properly with one thread, otherwise the tuning goes too slow or something.
+* Got some probably rebase need in polybori.
+* Did I do something wrong in that lapack is really built?  Atlas just gets copied from /usr/lib/, but I had thought that lapack would just copy from the lapack Cygwin package.  Not important, probably just my ignorance.
+
 
 
 ---
 
-Comment by kcrisman created at 2013-03-12 03:41:15
+archive/issue_comments_055393.json:
+```json
+{
+    "body": "I get on startup (and test) a lot of \n\n```\nException OverflowError: 'long int too large to convert to int' in <sage.structure.coerce_dict.TripleDictEraser object at 0xff9ad044> ignored\n```\n\nmessages.  Doc did not build.  This seems also to have led to some doctest errors in sage/algebras/free_algebra.py.  Full test results tomorrow, if I can get it out.",
+    "created_at": "2013-03-12T03:41:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55393",
+    "user": "kcrisman"
+}
+```
 
 I get on startup (and test) a lot of 
 
@@ -1857,9 +3478,20 @@ Exception OverflowError: 'long int too large to convert to int' in <sage.structu
 messages.  Doc did not build.  This seems also to have led to some doctest errors in sage/algebras/free_algebra.py.  Full test results tomorrow, if I can get it out.
 
 
+
 ---
 
-Comment by dimpase created at 2013-03-12 05:54:00
+archive/issue_comments_055394.json:
+```json
+{
+    "body": "Replying to [comment:187 kcrisman]:\n> I get on startup (and test) a lot of \n> {{{\n> Exception OverflowError: 'long int too large to convert to int' in <sage.structure.coerce_dict.TripleDictEraser object at 0xff9ad044> ignored\n> }}}\n> messages.  Doc did not build.  \nnot a surprise that docs don't get built, as you have a startup error...\nMaybe Simon King can comment on this, as he's been working on this stuff a lot lately.  If you ask me, conversion of long ints to ints should not happen!",
+    "created_at": "2013-03-12T05:54:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55394",
+    "user": "dimpase"
+}
+```
 
 Replying to [comment:187 kcrisman]:
 > I get on startup (and test) a lot of 
@@ -1871,16 +3503,38 @@ not a surprise that docs don't get built, as you have a startup error...
 Maybe Simon King can comment on this, as he's been working on this stuff a lot lately.  If you ask me, conversion of long ints to ints should not happen!
 
 
+
 ---
 
-Comment by dimpase created at 2013-03-12 05:54:00
+archive/issue_comments_055395.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_info.",
+    "created_at": "2013-03-12T05:54:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55395",
+    "user": "dimpase"
+}
+```
 
 Changing status from needs_review to needs_info.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-03-12 06:34:18
+archive/issue_comments_055396.json:
+```json
+{
+    "body": "Replying to [comment:187 kcrisman]:\n> {{{\n> Exception OverflowError: 'long int too large to convert to int' in <sage.structure.coerce_dict.TripleDictEraser object at 0xff9ad044> ignored\n> }}}\nThat is fixed by #14254.",
+    "created_at": "2013-03-12T06:34:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55396",
+    "user": "jdemeyer"
+}
+```
 
 Replying to [comment:187 kcrisman]:
 > {{{
@@ -1889,9 +3543,20 @@ Replying to [comment:187 kcrisman]:
 That is fixed by #14254.
 
 
+
 ---
 
-Comment by kcrisman created at 2013-03-12 13:12:20
+archive/issue_comments_055397.json:
+```json
+{
+    "body": "> > {{{\n> > Exception OverflowError: 'long int too large to convert to int' in <sage.structure.coerce_dict.TripleDictEraser object at 0xff9ad044> ignored\n> > }}}\n> That is fixed by #14254.\nThanks, I'll try applying that and rerunning failed tests once they complete; as far as I can tell the only tests that failed were due to this (if one includes the tests that fail due to unbuilt doc, which as Dima points out is also due to this).\n\nRelated to this... did we ever merge a test option that reruns only the most recent failed tests?  I seem to recall discussion about this, maybe it's part of #12415, though I haven't been following that ticket.",
+    "created_at": "2013-03-12T13:12:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55397",
+    "user": "kcrisman"
+}
+```
 
 > > {{{
 > > Exception OverflowError: 'long int too large to convert to int' in <sage.structure.coerce_dict.TripleDictEraser object at 0xff9ad044> ignored
@@ -1902,19 +3567,41 @@ Thanks, I'll try applying that and rerunning failed tests once they complete; as
 Related to this... did we ever merge a test option that reruns only the most recent failed tests?  I seem to recall discussion about this, maybe it's part of #12415, though I haven't been following that ticket.
 
 
+
 ---
 
-Comment by SimonKing created at 2013-03-12 14:18:08
+archive/issue_comments_055398.json:
+```json
+{
+    "body": "Replying to [comment:190 kcrisman]:\n> Related to this... did we ever merge a test option that reruns only the most recent failed tests?  I seem to recall discussion about this, maybe it's part of #12415, though I haven't been following that ticket.\n\nThis would be useful. But since #14254 is implicitly used in every single instance of coercion (hence, *everywhere*!), I think rerunning the full test suite makes sense in this case.",
+    "created_at": "2013-03-12T14:18:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55398",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:190 kcrisman]:
 > Related to this... did we ever merge a test option that reruns only the most recent failed tests?  I seem to recall discussion about this, maybe it's part of #12415, though I haven't been following that ticket.
 
-This would be useful. But since #14254 is implicitly used in every single instance of coercion (hence, _everywhere_!), I think rerunning the full test suite makes sense in this case.
+This would be useful. But since #14254 is implicitly used in every single instance of coercion (hence, *everywhere*!), I think rerunning the full test suite makes sense in this case.
+
 
 
 ---
 
-Comment by kcrisman created at 2013-03-12 14:56:41
+archive/issue_comments_055399.json:
+```json
+{
+    "body": "As it turns out, #14254 wasn't the (whole) problem.  Most of the errors were of the following ilk.\n\n```\nsage -t  devel/sage-main/sage/algebras/free_algebra.py\nException KeyError: (The ring pointer -0x1f5282c,) in 'sage.libs.singular.ring.singular_ring_delete' ignored\nException KeyError: (The ring pointer -0x1f52768,) in 'sage.libs.singular.ring.singular_ring_delete' ignored\nException KeyError: (The ring pointer -0x1f526a4,) in 'sage.libs.singular.ring.singular_ring_delete' ignored\n**********************************************************************\nFile \"/home/sagetest/sage-5.8.beta4/devel/sage-main/sage/algebras/free_algebra.py\", line 820:\n    sage: G=A.g_algebra({y*x:-x*y})\nException raised:\n    Traceback (most recent call last):\n      File \"/home/sagetest/sage-5.8.beta4/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/sagetest/sage-5.8.beta4/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/sagetest/sage-5.8.beta4/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_18[3]>\", line 1, in <module>\n        G=A.g_algebra({y*x:-x*y})###line 820:\n    sage: G=A.g_algebra({y*x:-x*y})\n      File \"/home/sagetest/sage-5.8.beta4/local/lib/python/site-packages/sage/algebras/free_algebra.py\", line 872, in g_algebra\n        order=order, check=check)\n      File \"factory.pyx\", line 143, in sage.structure.factory.UniqueFactory.__call__ (sage/structure/factory.c:1119)\n      File \"factory.pyx\", line 170, in sage.structure.factory.UniqueFactory.get_object (sage/structure/factory.c:1311)\n      File \"plural.pyx\", line 180, in sage.rings.polynomial.plural.G_AlgFactory.create_object (sage/rings/polynomial/plural.cpp:4289)\n      File \"plural.pyx\", line 358, in sage.rings.polynomial.plural.NCPolynomialRing_plural.__init__ (sage/rings/polynomial/plural.cpp:5351)\n      File \"plural.pyx\", line 1471, in sage.rings.polynomial.plural.NCPolynomial_plural.__richcmp__ (sage/rings/polynomial/plural.cpp:11452)\n      File \"element.pyx\", line 855, in sage.structure.element.Element._richcmp (sage/structure/element.c:7980)\n      File \"coerce.pyx\", line 913, in sage.structure.coerce.CoercionModel_cache_maps.canonical_coercion (sage/structure/coerce.c:8304)\n      File \"coerce.pyx\", line 1068, in sage.structure.coerce.CoercionModel_cache_maps.coercion_maps (sage/structure/coerce.c:9855)\n      File \"coerce.pyx\", line 1209, in sage.structure.coerce.CoercionModel_cache_maps.discover_coercion (sage/structure/coerce.c:11405)\n      File \"parent.pyx\", line 2116, in sage.structure.parent.Parent.coerce_map_from (sage/structure/parent.c:14383)\n      File \"parent.pyx\", line 2937, in sage.structure.parent._register_pair (sage/structure/parent.c:21545)\n      File \"parent.pyx\", line 2911, in sage.structure.parent.EltPair.__hash__ (sage/structure/parent.c:21193)\n      File \"plural.pyx\", line 573, in sage.rings.polynomial.plural.NCPolynomialRing_plural.__hash__ (sage/rings/polynomial/plural.cpp:6487)\n    OverflowError: Python int too large to convert to C long\n```\n\nNotice the similarity, but now it's in sage/rings/polynomial/plural.\n\n----\nUnrelated to these:\n\n```\nsage -t  devel/sage-main/sage/misc/inline_fortran.py\n**********************************************************************\nFile \"/home/sagetest/sage-5.8.beta4/devel/sage-main/sage/misc/inline_fortran.py\", line 29:\n    sage: fortran(_example)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/sagetest/sage-5.8.beta4/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/sagetest/sage-5.8.beta4/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/sagetest/sage-5.8.beta4/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_1[4]>\", line 1, in <module>\n        fortran(_example)###line 29:\n    sage: fortran(_example)\n      File \"/home/sagetest/sage-5.8.beta4/local/lib/python/site-packages/sage/misc/inline_fortran.py\", line 21, in __call__\n        return self.eval(*args, **kwds)\n      File \"/home/sagetest/sage-5.8.beta4/local/lib/python/site-packages/sage/misc/inline_fortran.py\", line 93, in eval\n        raise RuntimeError(\"failed to compile Fortran code:\\n\" + log_string)\n    RuntimeError: failed to compile Fortran code:\n    Found executable /home/sagetest/sage-5.8.beta4/local/bin/sage-inline-fortran\n    gnu: no Fortran 90 compiler found\n Found executable /usr/bin/ld\n    Found executable /usr/bin/ar\n    Found executable /usr/bin/ranlib\n    gnu: no Fortran 90 compiler found\n\n**********************************************************************\n```\n\n\n\n```\nsage -t  devel/sage-main/sage/functions/other.py\n**********************************************************************\nFile \"/home/sagetest/sage-5.8.beta4/devel/sage-main/sage/functions/other.py\", line 664:\n    sage: gamma1(float(6))\nExpected:\n    120.0\nGot:\n    119.99999999999997\n**********************************************************************\n```\n\n\n\n```\nsage -t  devel/sage-main/sage/misc/cython.py\nCompiling hello.spyx...\ncp: cannot stat `/home/Administrator/.sage/temp/CETGORD_J5FGIPM/7732/spyx/hello/hello.so': No such file or directory\n**********************************************************************\nFile \"/home/sagetest/sage-5.8.beta4/devel/sage-main/sage/misc/cython.py\", line 695:\n    sage: cython_create_local_so('hello.spyx')\nException raised:\n    Traceback (most recent call last):\n      File \"/home/sagetest/sage-5.8.beta4/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/sagetest/sage-5.8.beta4/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/sagetest/sage-5.8.beta4/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_13[8]>\", line 1, in <module>\n        cython_create_local_so('hello.spyx')###line 695:\n    sage: cython_create_local_so('hello.spyx')\n      File \"/home/sagetest/sage-5.8.beta4/local/lib/python/site-packages/sage/misc/cython.py\", line 706, in cython_create_local_so\n        cython(filename, compile_message=True, use_cache=False, create_local_so_file=True)\n      File \"/home/sagetest/sage-5.8.beta4/local/lib/python/site-packages/sage/misc/cython.py\", line 554, in cython\n        raise RuntimeError, \"Error making local copy of shared object library for %s\"%filename\n    RuntimeError: Error making local copy of shared object library for hello.spyx\n**********************************************************************\n```\n\n\n\n```\nsage -t  devel/sage-main/sage/symbolic/expression.pyx\n**********************************************************************\nFile \"/home/sagetest/sage-5.8.beta4/devel/sage-main/sage/symbolic/expression.pyx\", line 6721:\n    sage: SR(10.0r).gamma()\nExpected:\n    362880.0\nGot:\n    362879.9999999998\n#0: simplify_sum(expr='sum(q^k,k,0,inf))\n#1: simplify_sum(expr=a*'sum(q^k,k,0,inf))\n**********************************************************************\n```\n\n\n\n```\nsage -t  devel/sage-main/sage/structure/sage_object.pyx\n**********************************************************************\nFile \"/home/sagetest/sage-5.8.beta4/devel/sage-main/sage/structure/sage_object.pyx\", line 1215:\n    sage: if uid==0:\n        raise OSError('You must not run the doctests as root, geez!')\n    else: sage.structure.sage_object.picklejar(Integer(1), dir + '/noaccess')\nExpected:\n    Traceback (most recent call last):\n    ...\n    OSError: ...\nGot nothing\n**********************************************************************\n```\n\n\n\n```\nsage -t  devel/sage-main/sage/tests/cmdline.py\n**********************************************************************\nFile \"/home/sagetest/sage-5.8.beta4/devel/sage-main/sage/tests/cmdline.py\", line 376:\n    sage: ret\nExpected:\n    0\nGot:\n    -6\n**********************************************************************\n```\n",
+    "created_at": "2013-03-12T14:56:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55399",
+    "user": "kcrisman"
+}
+```
 
 As it turns out, #14254 wasn't the (whole) problem.  Most of the errors were of the following ilk.
 
@@ -2082,9 +3769,20 @@ Got:
 
 
 
+
 ---
 
-Comment by kcrisman created at 2013-03-12 15:07:18
+archive/issue_comments_055400.json:
+```json
+{
+    "body": "> As it turns out, #14254 wasn't the (whole) problem.  Most of the errors were of the following ilk.\n> {{{\n> Exception KeyError: (The ring pointer -0x1f5282c,) in 'sage.libs.singular.ring.singular_ring_delete' ignored\n> }}}\nI don't know what is going on here.\n>{{{\n>       File \"plural.pyx\", line 573, in sage.rings.polynomial.plural.NCPolynomialRing_plural.__hash__ (sage/rings/polynomial/plural.cpp:6487)\n>     OverflowError: Python int too large to convert to C long\n> }}}\nSo ... would importing and using the `signed_id` function from #14254 be sufficient here?\n> {{{\n>     Found executable /home/sagetest/sage-5.8.beta4/local/bin/sage-inline-fortran\n>     gnu: no Fortran 90 compiler found\n>  Found executable /usr/bin/ld\n>     Found executable /usr/bin/ar\n>     Found executable /usr/bin/ranlib\n>     gnu: no Fortran 90 compiler found\n> }}}\nI'm not sure why this isn't working.\n> {{{\n> sage -t  devel/sage-main/sage/functions/other.py\n> **********************************************************************\n> File \"/home/sagetest/sage-5.8.beta4/devel/sage-main/sage/functions/other.py\", line 664:\n>     sage: gamma1(float(6))\n> Expected:\n>     120.0\n> Got:\n>     119.99999999999997\n> **********************************************************************\n> }}}\nThis seems very familiar.  I am pretty sure we have other platforms where this happens - #10285 seems to have this, for instance.  #8847 should have fixed this a long time ago, but maybe I have the wrong stuff now?\n> {{{\n> sage -t  devel/sage-main/sage/misc/cython.py\n> Compiling hello.spyx...\n> cp: cannot stat `/home/Administrator/.sage/temp/CETGORD_J5FGIPM/7732/spyx/hello/hello.so': No such file or directory\n> **********************************************************************\n> File \"/home/sagetest/sage-5.8.beta4/devel/sage-main/sage/misc/cython.py\", line 695:\n>     sage: cython_create_local_so('hello.spyx')\n>     RuntimeError: Error making local copy of shared object library for hello.spyx\n> **********************************************************************\n> }}}\nNo idea.  Maybe a permissions thing?\n> {{{\n> sage -t  devel/sage-main/sage/symbolic/expression.pyx\n> **********************************************************************\n> File \"/home/sagetest/sage-5.8.beta4/devel/sage-main/sage/symbolic/expression.pyx\", line 6721:\n>     sage: SR(10.0r).gamma()\n> Expected:\n>     362880.0\n> Got:\n>     362879.9999999998\n> #0: simplify_sum(expr='sum(q^k,k,0,inf))\n> #1: simplify_sum(expr=a*'sum(q^k,k,0,inf))\n> **********************************************************************\n> }}}\nSame issue as above, I would say.\n> {{{\n> sage -t  devel/sage-main/sage/structure/sage_object.pyx\n> **********************************************************************\n> File \"/home/sagetest/sage-5.8.beta4/devel/sage-main/sage/structure/sage_object.pyx\", line 1215:\n>     sage: if uid==0:\n>         raise OSError('You must not run the doctests as root, geez!')\n>     else: sage.structure.sage_object.picklejar(Integer(1), dir + '/noaccess')\n> Expected:\n>     Traceback (most recent call last):\n>     ...\n>     OSError: ...\n> Got nothing\n> **********************************************************************\n> }}}\nAside from the bizarre expected OSError, I would guess this is closely related to the next one.\n> {{{\n> sage -t  devel/sage-main/sage/tests/cmdline.py\n> **********************************************************************\n> File \"/home/sagetest/sage-5.8.beta4/devel/sage-main/sage/tests/cmdline.py\", line 376:\n>     sage: ret\n> Expected:\n>     0\n> Got:\n>     -6\n> **********************************************************************\n> }}}\nThis seems to be from the command\n\n```\nsage: (out, err, ret) = test_executable([\"sage\", \"--ipython\"], \"\\n3**33\\n\")\n```\n\nbut when would IPython return negative 6?",
+    "created_at": "2013-03-12T15:07:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55400",
+    "user": "kcrisman"
+}
+```
 
 > As it turns out, #14254 wasn't the (whole) problem.  Most of the errors were of the following ilk.
 > {{{
@@ -2177,9 +3875,20 @@ sage: (out, err, ret) = test_executable(["sage", "--ipython"], "\n3**33\n")
 but when would IPython return negative 6?
 
 
+
 ---
 
-Comment by SimonKing created at 2013-03-12 15:22:02
+archive/issue_comments_055401.json:
+```json
+{
+    "body": "Replying to [comment:193 kcrisman]:\n> > As it turns out, #14254 wasn't the (whole) problem.  Most of the errors were of the following ilk.\n> > {{{\n> > Exception KeyError: (The ring pointer -0x1f5282c,) in 'sage.libs.singular.ring.singular_ring_delete' ignored\n> > }}}\n> I don't know what is going on here.\n\nThere is a ticket #13447 concerning garbage collection of libsingular rings. The work stalled, because of problems related with #715 that eventually turned out to be upstream bugs in (a) Singular and (b) Cython. It would certainly make sense to try and revive this ticket.\n\n> >{{{\n> >       File \"plural.pyx\", line 573, in sage.rings.polynomial.plural.NCPolynomialRing_plural.__hash__ (sage/rings/polynomial/plural.cpp:6487)\n> >     OverflowError: Python int too large to convert to C long\n> > }}}\n> So ... would importing and using the `signed_id` function from #14254 be sufficient here?\n\nNote that the error message is different: Now, it is not a long int that can not be converted to an int, but it is a Python int that is too long for a long.",
+    "created_at": "2013-03-12T15:22:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55401",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:193 kcrisman]:
 > > As it turns out, #14254 wasn't the (whole) problem.  Most of the errors were of the following ilk.
@@ -2199,9 +3908,20 @@ There is a ticket #13447 concerning garbage collection of libsingular rings. The
 Note that the error message is different: Now, it is not a long int that can not be converted to an int, but it is a Python int that is too long for a long.
 
 
+
 ---
 
-Comment by kcrisman created at 2013-03-12 15:25:44
+archive/issue_comments_055402.json:
+```json
+{
+    "body": "> Note that the error message is different: Now, it is not a long int that can not be converted to an int, but it is a Python int that is too long for a long.\nHmm, good point.\n\n----\n\nOf course, none of this should keep us from finishing this ticket with the atlas check - just wanted to see if anyone else got these.  Certainly we don't need all tests to pass yet, though the moving target continues to be frustrating.",
+    "created_at": "2013-03-12T15:25:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55402",
+    "user": "kcrisman"
+}
+```
 
 > Note that the error message is different: Now, it is not a long int that can not be converted to an int, but it is a Python int that is too long for a long.
 Hmm, good point.
@@ -2211,9 +3931,20 @@ Hmm, good point.
 Of course, none of this should keep us from finishing this ticket with the atlas check - just wanted to see if anyone else got these.  Certainly we don't need all tests to pass yet, though the moving target continues to be frustrating.
 
 
+
 ---
 
-Comment by jpflori created at 2013-03-14 00:31:33
+archive/issue_comments_055403.json:
+```json
+{
+    "body": "I had a quick look at the errors Karl Dieter reported and most of them are the same as the ones I reported earlier.\n\nThe strangest is from \"sage -t  devel/sage-main/sage/tests/cmdline.py\" where there seems to be some missynchronization.\n\nI did not have time to llok at the gfortran and cython ones yet and have no clue whether they will be really problematic or not.\n\nThe precision problems seem indeed similar to the ones on ARM platforms, surely a glibc bug.\n\nThe coercion issues involving overflow are new.\nI'll try to give a shot at 5.9.beta0 tomorrow.\n\nAnd I think its normal the cblas and lapack spkg are really built, its just the atlas one which is not (at the moment, maybe #10508 will get merged one day and we'll build atlas on cygwin by default in a follow up ticket).",
+    "created_at": "2013-03-14T00:31:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55403",
+    "user": "jpflori"
+}
+```
 
 I had a quick look at the errors Karl Dieter reported and most of them are the same as the ones I reported earlier.
 
@@ -2229,34 +3960,67 @@ I'll try to give a shot at 5.9.beta0 tomorrow.
 And I think its normal the cblas and lapack spkg are really built, its just the atlas one which is not (at the moment, maybe #10508 will get merged one day and we'll build atlas on cygwin by default in a follow up ticket).
 
 
+
 ---
 
-Comment by kcrisman created at 2013-03-14 13:02:00
+archive/issue_comments_055404.json:
+```json
+{
+    "body": "Here is the current status for this ticket, then, in my view.\n* Figure out whether mpfr-4 needs to be installed or not.  I now have two different brand-new installs of Cygwin that failed with the current package list until I installed it.  It was *not* pulled in with gcc-core and friends.\n* Patch to remove `SAGE_PORT=yes` requirement for Cygwin.\n  * Related to that, we still get the message about `sqrtl in -lm` outdated math library, which presumably would make things fail if `SAGE_PORT` wasn't set, so we need to somehow fix things so that's not an issue.  What happens on FreeBSD?\n* Patch to atlas spkg-install (possibly at #10508, or possibly earlier) to say *precisely* which lapack packages to install, as in the ticket description.\n* As Jeroen points out, make sure that we put something in so that we don't use the (current) Sage 4.6 GCC spkg to build on Cygwin.  This could involve making the 4.7.2 spkg standard (I don't believe there is a ticket for this yet, though there is a sage-devel thread reporting a fair amount of success), or something else.",
+    "created_at": "2013-03-14T13:02:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55404",
+    "user": "kcrisman"
+}
+```
 
 Here is the current status for this ticket, then, in my view.
- * Figure out whether mpfr-4 needs to be installed or not.  I now have two different brand-new installs of Cygwin that failed with the current package list until I installed it.  It was _not_ pulled in with gcc-core and friends.
- * Patch to remove `SAGE_PORT=yes` requirement for Cygwin.
-   * Related to that, we still get the message about `sqrtl in -lm` outdated math library, which presumably would make things fail if `SAGE_PORT` wasn't set, so we need to somehow fix things so that's not an issue.  What happens on FreeBSD?
- * Patch to atlas spkg-install (possibly at #10508, or possibly earlier) to say _precisely_ which lapack packages to install, as in the ticket description.
- * As Jeroen points out, make sure that we put something in so that we don't use the (current) Sage 4.6 GCC spkg to build on Cygwin.  This could involve making the 4.7.2 spkg standard (I don't believe there is a ticket for this yet, though there is a sage-devel thread reporting a fair amount of success), or something else.
+* Figure out whether mpfr-4 needs to be installed or not.  I now have two different brand-new installs of Cygwin that failed with the current package list until I installed it.  It was *not* pulled in with gcc-core and friends.
+* Patch to remove `SAGE_PORT=yes` requirement for Cygwin.
+  * Related to that, we still get the message about `sqrtl in -lm` outdated math library, which presumably would make things fail if `SAGE_PORT` wasn't set, so we need to somehow fix things so that's not an issue.  What happens on FreeBSD?
+* Patch to atlas spkg-install (possibly at #10508, or possibly earlier) to say *precisely* which lapack packages to install, as in the ticket description.
+* As Jeroen points out, make sure that we put something in so that we don't use the (current) Sage 4.6 GCC spkg to build on Cygwin.  This could involve making the 4.7.2 spkg standard (I don't believe there is a ticket for this yet, though there is a sage-devel thread reporting a fair amount of success), or something else.
+
 
 
 ---
 
-Comment by jdemeyer created at 2013-03-14 13:17:27
+archive/issue_comments_055405.json:
+```json
+{
+    "body": "Replying to [comment:197 kcrisman]:\n> Here is the current status for this ticket, then, in my view.\n>  * Figure out whether mpfr-4 needs to be installed or not.  I now have two different brand-new installs of Cygwin that failed with the current package list until I installed it.  It was *not* pulled in with gcc-core and friends.\n\nJust to make sure that I understand you correctly: you say that\n1. A \"brand-new install of Cygwin\" does not come with a C compiler.\n2. If one tries to install GCC by installing gcc-core, it does not automatically install the mpfr dependency.",
+    "created_at": "2013-03-14T13:17:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55405",
+    "user": "jdemeyer"
+}
+```
 
 Replying to [comment:197 kcrisman]:
 > Here is the current status for this ticket, then, in my view.
->  * Figure out whether mpfr-4 needs to be installed or not.  I now have two different brand-new installs of Cygwin that failed with the current package list until I installed it.  It was _not_ pulled in with gcc-core and friends.
+>  * Figure out whether mpfr-4 needs to be installed or not.  I now have two different brand-new installs of Cygwin that failed with the current package list until I installed it.  It was *not* pulled in with gcc-core and friends.
 
 Just to make sure that I understand you correctly: you say that
 1. A "brand-new install of Cygwin" does not come with a C compiler.
 2. If one tries to install GCC by installing gcc-core, it does not automatically install the mpfr dependency.
 
 
+
 ---
 
-Comment by kcrisman created at 2013-03-14 13:27:58
+archive/issue_comments_055406.json:
+```json
+{
+    "body": "Another weird data point; when trying to build with `SAGE_INSTALL_GCC=yes` and the Sage gcc-4.7 package, I get\n\n```\nchecking for __gmpz_init in -lgmp... no\nconfigure: error: libgmp not found or uses a different ABI (including static vs shared).\nError configuring MPC.\n```\n\nI assume this is because of the \"reduced\" MPIR that we build when building gcc.  Properly speaking, this belongs on some other ticket, but I figured I'd point it out here.\n\n----\n\nAs to Jeroen's question, I would say \"yes\" and \"yes\", but with the caveat of installing gcc4-core only installs mpfr-1, not mpfr-4 (whatever the difference is).  However, JP seems to have had a different experience, which is why I say \"figure out\", not just \"add to prereqs\".",
+    "created_at": "2013-03-14T13:27:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55406",
+    "user": "kcrisman"
+}
+```
 
 Another weird data point; when trying to build with `SAGE_INSTALL_GCC=yes` and the Sage gcc-4.7 package, I get
 
@@ -2273,9 +4037,20 @@ I assume this is because of the "reduced" MPIR that we build when building gcc. 
 As to Jeroen's question, I would say "yes" and "yes", but with the caveat of installing gcc4-core only installs mpfr-1, not mpfr-4 (whatever the difference is).  However, JP seems to have had a different experience, which is why I say "figure out", not just "add to prereqs".
 
 
+
 ---
 
-Comment by jpflori created at 2013-03-14 14:50:33
+archive/issue_comments_055407.json:
+```json
+{
+    "body": "Replying to [comment:199 kcrisman]:\n> Another weird data point; when trying to build with `SAGE_INSTALL_GCC=yes` and the Sage gcc-4.7 package, I get\n> {{{\n> checking for __gmpz_init in -lgmp... no\n> configure: error: libgmp not found or uses a different ABI (including static vs shared).\n> Error configuring MPC.\n> }}}\n> I assume this is because of the \"reduced\" MPIR that we build when building gcc.  Properly speaking, this belongs on some other ticket, but I figured I'd point it out here.\nStrange I just succesfully compiled gcc 4.7.2.p0 spkg with the list of Cygwin packages I posted earlier installed.\n> \n> ----\n> \n> As to Jeroen's question, I would say \"yes\" and \"yes\", but with the caveat of installing gcc4-core only installs mpfr-1, not mpfr-4 (whatever the difference is).  However, JP seems to have had a different experience, which is why I say \"figure out\", not just \"add to prereqs\".\nIndeed, no compiler by default.\n\nI'll check what happens on a clean install later as well.",
+    "created_at": "2013-03-14T14:50:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55407",
+    "user": "jpflori"
+}
+```
 
 Replying to [comment:199 kcrisman]:
 > Another weird data point; when trying to build with `SAGE_INSTALL_GCC=yes` and the Sage gcc-4.7 package, I get
@@ -2295,22 +4070,44 @@ Indeed, no compiler by default.
 I'll check what happens on a clean install later as well.
 
 
+
 ---
 
-Comment by kcrisman created at 2013-03-14 20:21:18
+archive/issue_comments_055408.json:
+```json
+{
+    "body": ">  * Patch to atlas spkg-install (possibly at #10508, or possibly earlier) to say *precisely* which lapack packages to install, as in the ticket description.\nNote that in trying #10508 \"straight up\", I needed to move /usr/lib/libblas.dll.a and /usr/lib/liblapack.a to `$SAGE_LOCAL/lib`.  The latter for Scipy to build, I assume the former for the Sage library to build.  So whether or not this ticket goes in before #10508, we need to deal with this issue.",
+    "created_at": "2013-03-14T20:21:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55408",
+    "user": "kcrisman"
+}
+```
 
->  * Patch to atlas spkg-install (possibly at #10508, or possibly earlier) to say _precisely_ which lapack packages to install, as in the ticket description.
+>  * Patch to atlas spkg-install (possibly at #10508, or possibly earlier) to say *precisely* which lapack packages to install, as in the ticket description.
 Note that in trying #10508 "straight up", I needed to move /usr/lib/libblas.dll.a and /usr/lib/liblapack.a to `$SAGE_LOCAL/lib`.  The latter for Scipy to build, I assume the former for the Sage library to build.  So whether or not this ticket goes in before #10508, we need to deal with this issue.
 
 
+
 ---
 
-Comment by jpflori created at 2013-03-14 21:34:57
+archive/issue_comments_055409.json:
+```json
+{
+    "body": "Replying to [comment:198 jdemeyer]:\n> Replying to [comment:197 kcrisman]:\n> > Here is the current status for this ticket, then, in my view.\n> >  * Figure out whether mpfr-4 needs to be installed or not.  I now have two different brand-new installs of Cygwin that failed with the current package list until I installed it.  It was *not* pulled in with gcc-core and friends.\n> \n> Just to make sure that I understand you correctly: you say that\n> 1. A \"brand-new install of Cygwin\" does not come with a C compiler.\n> 2. If one tries to install GCC by installing gcc-core, it does not automatically install the mpfr dependency.\nI just reinstalled Cygwin on my 32 bits W7 and pulled in the following packages:\n* make\n* perl\n* binutils\n* m4\n* lapack\n* liblapack-devel\n* gcc4\n* gcc4-core\n* gcc4-g++\n* gcc4-gfortran\nI took the 4.7.2-1 versions which just popped up.\nAnd indeed only the libmpfr1 package was pulled automatically and not the libmpfr4.\nHere is the list of packages currently installed:\n\n```\nCygwin Package Information\nPackage              Version              Status\n_autorebase          000218-1             OK\n_update-info-dir     01114-1              OK\nalternatives         1.3.30c-10           OK\nbase-cygwin          3.1-1                OK\nbase-files           4.1-2                OK\nbash                 4.1.10-4             OK\nbinutils             2.23.51-1            OK\nbzip2                1.0.6-2              OK\ncoreutils            8.15-1               OK\ncrypt                1.2-1                OK\ncygutils             1.4.10-2             OK\ncygwin               1.7.17-1             OK\ncygwin-doc           1.7-1                OK\ndash                 0.5.7-1              OK\ndiffutils            3.2-1                OK\ndos2unix             6.0.3-1              OK\neditrights           1.01-2               OK\nfile                 5.11-1               OK\nfindutils            4.5.9-2              OK\ngawk                 4.0.2-1              OK\ngcc4                 4.7.2-1              OK\ngcc4-core            4.7.2-1              OK\ngcc4-fortran         4.7.2-1              OK\ngcc4-g++             4.7.2-1              OK\ngettext              0.18.1.1-2           OK\ngrep                 2.6.3-1              OK\ngroff                1.21-2               OK\ngzip                 1.4-1                OK\nipc-utils            1.0-1                OK\nlapack               3.4.2-1              OK\nless                 444-1                OK\nlibattr1             2.4.46-1             OK\nlibbz2_1             1.0.6-2              OK\nlibcloog0            0.15.7-1             OK\nlibdb4.5             4.5.20.2-3           OK\nlibexpat1            2.1.0-1              OK\nlibffi4              4.7.2-1              OK\nlibgcc1              4.7.2-1              OK\nlibgdbm4             1.8.3-20             OK\nlibgfortran3         4.7.2-1              OK\nlibgmp3              4.3.2-1              OK\nlibgmpxx4            4.3.2-1              OK\nlibgomp1             4.7.2-1              OK\nlibiconv2            1.14-2               OK\nlibintl8             0.18.1.1-2           OK\nliblapack-devel      3.4.2-1              OK\nliblapack0           3.4.2-1              OK\nliblzma5             5.0.2_20110517-1     OK\nlibmpc1              0.8-1                OK\nlibmpfr1             2.4.1-4              OK\nlibncurses10         5.7-18               OK\nlibncursesw10        5.7-18               OK\nlibopenssl100        1.0.1e-2             OK\nlibpcre0             8.21-2               OK\nlibpopt0             1.6.4-4              OK\nlibppl               0.10.2-1             OK\nlibquadmath0         4.7.2-1              OK\nlibreadline7         6.1.2-3              OK\nlibsigsegv2          2.10-1               OK\nlibssp0              4.7.2-1              OK\nlibstdc++6           4.7.2-1              OK\nlibstdc++6-devel     4.7.2-1              OK\nlibxml2              2.9.0-2              OK\nlogin                1.10-10              OK\nm4                   1.4.16-1             OK\nmake                 3.82.90-1            OK\nman                  1.6g-1               OK\nmintty               1.1.2-1              OK\nperl                 5.14.2-3             OK\nperl_vendor          5.14.2-3             OK\nrebase               4.4.0-1              OK\nrun                  1.1.13-1             OK\nsed                  4.2.1-2              OK\ntar                  1.26-1               OK\nterminfo             5.7_20091114-14      OK\ntexinfo              4.13-4               OK\ntzcode               2012j-1              OK\nupx-debuginfo        3.09-1               OK\nw32api               9999-1               OK\nw32api-headers       3.0b_svn5591-1       OK\nw32api-runtime       3.0b_svn5591-1       OK\nwhich                2.20-2               OK\nxz                   5.0.2_20110517-1     OK\nzlib0                1.2.7-1              OK\n```\n\nI'll launch the Sage build now and report later.\n\nOn my 64 bits W7 system with an old Cygwin install, I could build 5.9.beta0 with Cygwin gcc4 4.5.3 used to bootstrap Sage's gcc 4.7.2, except for matplotlib because of forking issues as reported by Karl Dieter.\nlibmpfr4 is present, not sure when it was pulled.",
+    "created_at": "2013-03-14T21:34:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55409",
+    "user": "jpflori"
+}
+```
 
 Replying to [comment:198 jdemeyer]:
 > Replying to [comment:197 kcrisman]:
 > > Here is the current status for this ticket, then, in my view.
-> >  * Figure out whether mpfr-4 needs to be installed or not.  I now have two different brand-new installs of Cygwin that failed with the current package list until I installed it.  It was _not_ pulled in with gcc-core and friends.
+> >  * Figure out whether mpfr-4 needs to be installed or not.  I now have two different brand-new installs of Cygwin that failed with the current package list until I installed it.  It was *not* pulled in with gcc-core and friends.
 > 
 > Just to make sure that I understand you correctly: you say that
 > 1. A "brand-new install of Cygwin" does not come with a C compiler.
@@ -2425,9 +4222,20 @@ On my 64 bits W7 system with an old Cygwin install, I could build 5.9.beta0 with
 libmpfr4 is present, not sure when it was pulled.
 
 
+
 ---
 
-Comment by jpflori created at 2013-03-14 21:45:53
+archive/issue_comments_055410.json:
+```json
+{
+    "body": "And the 32 bits build immediately failed because gcc could not find some library '? printed).\n\nI guess libmpfr4 is indeed needed now and maybe was as well earlier.\nSee http://cygwin.1069669.n5.nabble.com/Shouldn-t-gcc-4-depend-on-libmpfr4-td96533.html\n\nI just installed it and at least the build process starts.",
+    "created_at": "2013-03-14T21:45:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55410",
+    "user": "jpflori"
+}
+```
 
 And the 32 bits build immediately failed because gcc could not find some library '? printed).
 
@@ -2437,9 +4245,20 @@ See http://cygwin.1069669.n5.nabble.com/Shouldn-t-gcc-4-depend-on-libmpfr4-td965
 I just installed it and at least the build process starts.
 
 
+
 ---
 
-Comment by kcrisman created at 2013-03-15 00:35:22
+archive/issue_comments_055411.json:
+```json
+{
+    "body": "> I took the 4.7.2-1 versions which just popped up.\nInteresting.  Indeed, then we could just make that the dependency and not build Sage's gcc.\n> And indeed only the libmpfr1 package was pulled automatically and not the libmpfr4.\nGlad your experience was similar.\n> On my 64 bits W7 system with an old Cygwin install, I could build 5.9.beta0 with Cygwin gcc4 4.5.3 used to bootstrap Sage's gcc 4.7.2, except for matplotlib because of forking issues as reported by Karl Dieter.\n> libmpfr4 is present, not sure when it was pulled.\nI have a feeling that at some time not so long ago gcc4 *did* pull this, but that that changed recently - your thread implies there was a lot of confusion about it!\n\n----\n\nIn other news, can we figure out *exactly* which lapack things we need minimally?  In particular, you took fewer than in the ticket description - in fact, not even a subset.  I don't care which, but we do need to know!  (Until we just build atlas, I suppose; it's annoying that we have to wait on that, but for now it's better to get this ticket done properly.)",
+    "created_at": "2013-03-15T00:35:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55411",
+    "user": "kcrisman"
+}
+```
 
 > I took the 4.7.2-1 versions which just popped up.
 Interesting.  Indeed, then we could just make that the dependency and not build Sage's gcc.
@@ -2447,25 +4266,47 @@ Interesting.  Indeed, then we could just make that the dependency and not build 
 Glad your experience was similar.
 > On my 64 bits W7 system with an old Cygwin install, I could build 5.9.beta0 with Cygwin gcc4 4.5.3 used to bootstrap Sage's gcc 4.7.2, except for matplotlib because of forking issues as reported by Karl Dieter.
 > libmpfr4 is present, not sure when it was pulled.
-I have a feeling that at some time not so long ago gcc4 _did_ pull this, but that that changed recently - your thread implies there was a lot of confusion about it!
+I have a feeling that at some time not so long ago gcc4 *did* pull this, but that that changed recently - your thread implies there was a lot of confusion about it!
 
 ----
 
-In other news, can we figure out _exactly_ which lapack things we need minimally?  In particular, you took fewer than in the ticket description - in fact, not even a subset.  I don't care which, but we do need to know!  (Until we just build atlas, I suppose; it's annoying that we have to wait on that, but for now it's better to get this ticket done properly.)
+In other news, can we figure out *exactly* which lapack things we need minimally?  In particular, you took fewer than in the ticket description - in fact, not even a subset.  I don't care which, but we do need to know!  (Until we just build atlas, I suppose; it's annoying that we have to wait on that, but for now it's better to get this ticket done properly.)
+
 
 
 ---
 
-Comment by jdemeyer created at 2013-03-15 22:09:29
+archive/issue_comments_055412.json:
+```json
+{
+    "body": "Replying to [comment:197 kcrisman]:\n>    * Related to that, we still get the message about `sqrtl in -lm` outdated math library, which presumably would make things fail if `SAGE_PORT` wasn't set, so we need to somehow fix things so that's not an issue.\nPlease elaborate (or better yet: post the prereq log, including `config.log` inside the prereq \"build\" directory).",
+    "created_at": "2013-03-15T22:09:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55412",
+    "user": "jdemeyer"
+}
+```
 
 Replying to [comment:197 kcrisman]:
 >    * Related to that, we still get the message about `sqrtl in -lm` outdated math library, which presumably would make things fail if `SAGE_PORT` wasn't set, so we need to somehow fix things so that's not an issue.
 Please elaborate (or better yet: post the prereq log, including `config.log` inside the prereq "build" directory).
 
 
+
 ---
 
-Comment by kcrisman created at 2013-03-19 12:47:36
+archive/issue_comments_055413.json:
+```json
+{
+    "body": "In the prereq spkg log, at the end:\n\n```\nchecking gcc version... 4.5.3\nchecking if g++ accepts -dumpversion option... yes\nchecking g++ version... 4.5.3\nconfigure: Excellent, the C, C++ and Fortran compilers are all GCC 4.5.3\nconfigure: Excellent, GCC 4.5.3 is later than the minimum\nconfigure: needed to build Sage, which is GCC version 4.0.1\nchecking for sqrt in -lm... yes\nchecking for sqrtl in -lm... no\nconfigure: You have an outdated and/or broken math library.\nconfigure: error: Exiting, since the library function 'sqrtl()' was not found.\nYou do not have all of the prerequisites needed to build Sage\nfrom source. See the errors above.\nHowever, since 'SAGE_PORT' is set, we will try to build anyway.\nNow cleaning up tmp files.\n```\n\nSupposedly this was (I think?) provided by Cephes, but of course that never actually built on Cygwin, as JP discovered.  I wonder when this was even added in the configure script in the tar.gz in base.\n\nGrepping through the entire Sage root directory shows that sqrtl mostly comes in play with Pynac and Scipy/Numpy, and we seem to even (?) define our own sqrtl... oh, also in the partitions code in combinat this is needed.  The Pari references I think are to sqrtlift, something else.  Maybe we don't need this any more?  I presume this was added by David Kirkby for Solaris or other platforms with weird base libraries.",
+    "created_at": "2013-03-19T12:47:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55413",
+    "user": "kcrisman"
+}
+```
 
 In the prereq spkg log, at the end:
 
@@ -2491,9 +4332,20 @@ Supposedly this was (I think?) provided by Cephes, but of course that never actu
 Grepping through the entire Sage root directory shows that sqrtl mostly comes in play with Pynac and Scipy/Numpy, and we seem to even (?) define our own sqrtl... oh, also in the partitions code in combinat this is needed.  The Pari references I think are to sqrtlift, something else.  Maybe we don't need this any more?  I presume this was added by David Kirkby for Solaris or other platforms with weird base libraries.
 
 
+
 ---
 
-Comment by kcrisman created at 2013-03-19 13:12:33
+archive/issue_comments_055414.json:
+```json
+{
+    "body": "To be more specific, this was added in #8052:\n\n```\nChecks for the library function sqrtl() which will be found on modern systems, but may not on older systems. \nA warning is issued if the library function does not exist, but the build continues, to aid porting efforts. \n(I believe FreeBSD may lack this).\n```\n\nI don't know whether this is actually true (that sqrtl is needed), though, nor where the Cygwin build gets its sqrtl in that event.",
+    "created_at": "2013-03-19T13:12:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55414",
+    "user": "kcrisman"
+}
+```
 
 To be more specific, this was added in #8052:
 
@@ -2506,9 +4358,20 @@ A warning is issued if the library function does not exist, but the build contin
 I don't know whether this is actually true (that sqrtl is needed), though, nor where the Cygwin build gets its sqrtl in that event.
 
 
+
 ---
 
-Comment by leif created at 2013-03-19 15:31:51
+archive/issue_comments_055415.json:
+```json
+{
+    "body": "Replying to [comment:206 kcrisman]:\n> In the prereq spkg log, at the end:\n> {{{\n> ...\n> checking for sqrtl in -lm... no\n> configure: You have an outdated and/or broken math library.\n> configure: error: Exiting, since the library function 'sqrtl()' was not found.\n> ...\n> }}}\n> Supposedly this was (I think?) provided by Cephes, but of course that never actually built on Cygwin, as JP discovered.\n\nWHAT?!  The only reason for including Cephes as a standard package was Cygwin, because it was said to lack some `long double` versions ('`l`' suffix) of standard math functions (such as `sqrt()`).\n\n> Grepping through the entire Sage root directory shows that sqrtl mostly comes in play with Pynac and !Scipy/Numpy, and we seem to even (?) define our own sqrtl...\n\nI recall somebody somewhere replacing (`#define`ing?) `sqrtl()` by `sqrt()`, arguing `double` precision was sufficient there, for the sake of Cygwin, and that AFAIK didn't get removed even after the inclusion of Cephes.  (Not 100% sure whether it was really `sqrt()`; probably some other function, but Cygwin was lacking its `long double` implementation.)\n\n> oh, also in the partitions code in combinat this is needed.  The Pari references I think are to sqrtlift, something else.  Maybe we don't need this any more?  I presume this was added by David Kirkby for Solaris or other platforms with weird base libraries.\n\nCertainly not for Solaris... ;-)",
+    "created_at": "2013-03-19T15:31:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55415",
+    "user": "leif"
+}
+```
 
 Replying to [comment:206 kcrisman]:
 > In the prereq spkg log, at the end:
@@ -2532,9 +4395,20 @@ I recall somebody somewhere replacing (`#define`ing?) `sqrtl()` by `sqrt()`, arg
 Certainly not for Solaris... ;-)
 
 
+
 ---
 
-Comment by kcrisman created at 2013-03-19 15:43:06
+archive/issue_comments_055416.json:
+```json
+{
+    "body": "> > In the prereq spkg log, at the end:\n> > {{{\n> > ...\n> > checking for sqrtl in -lm... no\n> > configure: You have an outdated and/or broken math library.\n> > configure: error: Exiting, since the library function 'sqrtl()' was not found.\n> > ...\n> > }}}\n> > Supposedly this was (I think?) provided by Cephes, but of course that never actually built on Cygwin, as JP discovered.\n> \n> WHAT?!  The only reason for including Cephes as a standard package was Cygwin, because it was said to lack some `long double` versions ('`l`' suffix) of standard math functions (such as `sqrt()`).\n> I recall somebody somewhere replacing (`#define`ing?) `sqrtl()` by `sqrt()`, arguing `double` precision was sufficient there, for the sake of Cygwin, and that AFAIK didn't get removed even after the inclusion of Cephes.  (Not 100% sure whether it was really `sqrt()`; probably some other function, but Cygwin was lacking its `long double` implementation.)\nWow, that would have been a long time ago... If you can find a reference that would be helpful.\n\nAnyway, #8052 makes it reasonably clear that FreeBSD is the one David had in mind with this test, not Cygwin.  And we do indeed now use Cephes on FreeBSD (only), see #9543.",
+    "created_at": "2013-03-19T15:43:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55416",
+    "user": "kcrisman"
+}
+```
 
 > > In the prereq spkg log, at the end:
 > > {{{
@@ -2553,15 +4427,26 @@ Wow, that would have been a long time ago... If you can find a reference that wo
 Anyway, #8052 makes it reasonably clear that FreeBSD is the one David had in mind with this test, not Cygwin.  And we do indeed now use Cephes on FreeBSD (only), see #9543.
 
 
+
 ---
 
-Comment by leif created at 2013-03-19 15:58:38
+archive/issue_comments_055417.json:
+```json
+{
+    "body": "Replying to [comment:210 kcrisman]:\n> > I recall somebody somewhere replacing (`#define`ing?) `sqrtl()` by `sqrt()`, arguing `double` precision was sufficient there, for the sake of Cygwin, and that AFAIK didn't get removed even after the inclusion of Cephes.  (Not 100% sure whether it was really `sqrt()`; probably some other function, but Cygwin was lacking its `long double` implementation.)\n> Wow, that would have been a long time ago... If you can find a reference that would be helpful.\n\nAccording to #14078 it was `logl()` (my second guess :-) [third was `gammal()` or `lgammal()`]), but the ticket only refers to R, while *I think<sup>TM</sup>* the replacement was (also) done somewhere else.\n\n\n\n\n> Anyway, #8052 makes it reasonably clear that FreeBSD is the one David had in mind with this test, not Cygwin.  And we do indeed now use Cephes on FreeBSD (only), see #9543.\n\nYes, FreeBSD is pretty broken as well...",
+    "created_at": "2013-03-19T15:58:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55417",
+    "user": "leif"
+}
+```
 
 Replying to [comment:210 kcrisman]:
 > > I recall somebody somewhere replacing (`#define`ing?) `sqrtl()` by `sqrt()`, arguing `double` precision was sufficient there, for the sake of Cygwin, and that AFAIK didn't get removed even after the inclusion of Cephes.  (Not 100% sure whether it was really `sqrt()`; probably some other function, but Cygwin was lacking its `long double` implementation.)
 > Wow, that would have been a long time ago... If you can find a reference that would be helpful.
 
-According to #14078 it was `logl()` (my second guess :-) [third was `gammal()` or `lgammal()`]), but the ticket only refers to R, while _I think<sup>TM</sup>_ the replacement was (also) done somewhere else.
+According to #14078 it was `logl()` (my second guess :-) [third was `gammal()` or `lgammal()`]), but the ticket only refers to R, while *I think<sup>TM</sup>* the replacement was (also) done somewhere else.
 
 
 
@@ -2571,25 +4456,47 @@ According to #14078 it was `logl()` (my second guess :-) [third was `gammal()` o
 Yes, FreeBSD is pretty broken as well...
 
 
+
 ---
 
-Comment by leif created at 2013-03-19 16:11:41
+archive/issue_comments_055418.json:
+```json
+{
+    "body": "Replying to [comment:211 leif]:\n> Replying to [comment:210 kcrisman]:\n> > > I recall somebody somewhere replacing (`#define`ing?) `sqrtl()` by `sqrt()`, arguing `double` precision was sufficient there, for the sake of Cygwin, and that AFAIK didn't get removed even after the inclusion of Cephes.  (Not 100% sure whether it was really `sqrt()`; probably some other function, but Cygwin was lacking its `long double` implementation.)\n> > Wow, that would have been a long time ago... If you can find a reference that would be helpful.\n> \n> According to #14078 it was `logl()` (my second guess :-) [third was `gammal()` or `lgammal()`]), but the ticket only refers to R, while *I think<sup>TM</sup>* the replacement was (also) done somewhere else.\n\nI only found #8847 (and #9162), but I don't think these are the instances I meant.\n\n(#8847 adds wrapper functions with `#ifdef __CYGWIN__ ...`.)",
+    "created_at": "2013-03-19T16:11:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55418",
+    "user": "leif"
+}
+```
 
 Replying to [comment:211 leif]:
 > Replying to [comment:210 kcrisman]:
 > > > I recall somebody somewhere replacing (`#define`ing?) `sqrtl()` by `sqrt()`, arguing `double` precision was sufficient there, for the sake of Cygwin, and that AFAIK didn't get removed even after the inclusion of Cephes.  (Not 100% sure whether it was really `sqrt()`; probably some other function, but Cygwin was lacking its `long double` implementation.)
 > > Wow, that would have been a long time ago... If you can find a reference that would be helpful.
 > 
-> According to #14078 it was `logl()` (my second guess :-) [third was `gammal()` or `lgammal()`]), but the ticket only refers to R, while _I think<sup>TM</sup>_ the replacement was (also) done somewhere else.
+> According to #14078 it was `logl()` (my second guess :-) [third was `gammal()` or `lgammal()`]), but the ticket only refers to R, while *I think<sup>TM</sup>* the replacement was (also) done somewhere else.
 
 I only found #8847 (and #9162), but I don't think these are the instances I meant.
 
 (#8847 adds wrapper functions with `#ifdef __CYGWIN__ ...`.)
 
 
+
 ---
 
-Comment by jpflori created at 2013-03-19 16:25:57
+archive/issue_comments_055419.json:
+```json
+{
+    "body": "Replying to [comment:209 leif]:\n> Replying to [comment:206 kcrisman]:\n> > In the prereq spkg log, at the end:\n> > {{{\n> > ...\n> > checking for sqrtl in -lm... no\n> > configure: You have an outdated and/or broken math library.\n> > configure: error: Exiting, since the library function 'sqrtl()' was not found.\n> > ...\n> > }}}\n> > Supposedly this was (I think?) provided by Cephes, but of course that never actually built on Cygwin, as JP discovered.\n> \n> WHAT?!  The only reason for including Cephes as a standard package was Cygwin, because it was said to lack some `long double` versions ('`l`' suffix) of standard math functions (such as `sqrt()`).\nI don't really know, but Cygwin libm was really lacking a LOT of functions, some of them were pulled from Cephes at some point, but not al of what Cephes provides, and the libm Cygwin now ships seems mostly sufficient to build Sage.\nAt least it was until a few realease and an update of R which requires one \"long double\"function, but that got easily patched (rather than requiring again to build Cephes which I would be happy with as well, but seems harder to maintain).\n> \n> > Grepping through the entire Sage root directory shows that sqrtl mostly comes in play with Pynac and !Scipy/Numpy, and we seem to even (?) define our own sqrtl...\n> \n> I recall somebody somewhere replacing (`#define`ing?) `sqrtl()` by `sqrt()`, arguing `double` precision was sufficient there, for the sake of Cygwin, and that AFAIK didn't get removed even after the inclusion of Cephes.  (Not 100% sure whether it was really `sqrt()`; probably some other function, but Cygwin was lacking its `long double` implementation.)\n> \n> > oh, also in the partitions code in combinat this is needed.  The Pari references I think are to sqrtlift, something else.  Maybe we don't need this any more?  I presume this was added by David Kirkby for Solaris or other platforms with weird base libraries.\n> \n> Certainly not for Solaris... ;-)\n>",
+    "created_at": "2013-03-19T16:25:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55419",
+    "user": "jpflori"
+}
+```
 
 Replying to [comment:209 leif]:
 > Replying to [comment:206 kcrisman]:
@@ -2617,16 +4524,38 @@ At least it was until a few realease and an update of R which requires one "long
 >
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-03-20 07:53:41
+archive/issue_comments_055420.json:
+```json
+{
+    "body": "So the conclusion is that we should remove the `sqrtl()` test?",
+    "created_at": "2013-03-20T07:53:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55420",
+    "user": "jdemeyer"
+}
+```
 
 So the conclusion is that we should remove the `sqrtl()` test?
 
 
+
 ---
 
-Comment by dimpase created at 2013-03-20 08:12:44
+archive/issue_comments_055421.json:
+```json
+{
+    "body": "Replying to [comment:214 jdemeyer]:\n> So the conclusion is that we should remove the `sqrtl()` test?\n\nIIRC, R uses logl(), and a workaround has been put in place for this.\nI don't recall the details, but, perhaps, the test for logl() instead would work, or can be made to work, on Cygwin.",
+    "created_at": "2013-03-20T08:12:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55421",
+    "user": "dimpase"
+}
+```
 
 Replying to [comment:214 jdemeyer]:
 > So the conclusion is that we should remove the `sqrtl()` test?
@@ -2635,9 +4564,20 @@ IIRC, R uses logl(), and a workaround has been put in place for this.
 I don't recall the details, but, perhaps, the test for logl() instead would work, or can be made to work, on Cygwin.
 
 
+
 ---
 
-Comment by jpflori created at 2013-03-28 23:08:28
+archive/issue_comments_055422.json:
+```json
+{
+    "body": "I think Im on the track of the matplotlib failure.\nOn my system, the fork errors look like:\n\n```\n2 [main] python2.7 3540 child_info_fork::abort: C:\\cygwin\\home\\jp\\sage-5.9.beta0\\local\\bin\\libpython2.7.dll: Loaded to different address: parent(0x5EC70000) != child(0x6A640000)\n```\n\nAnd in the rebase database, I can see\n\n```\n$ rebase -i -s|grep \"libpython\"\n/usr/bin/libpython2.7.dll                                                                                                                                     base 0x5ec70000 size 0x00176000\n/home/jp/sage-5.9.beta0/local/bin/libpython2.7.dll                                                                                                            base 0x6a640000 size 0x00599000\n```\n\nSo it seems the system and Sage libpython2.7.dll get mixed up.\nThis was surely not a problem before as Cygwin just recently updated to Python 2.7, see http://cygwin.com/ml/cygwin-announce/2012-12/msg00024.html\n\nLet's now find out why both libraries get mixed up.",
+    "created_at": "2013-03-28T23:08:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55422",
+    "user": "jpflori"
+}
+```
 
 I think Im on the track of the matplotlib failure.
 On my system, the fork errors look like:
@@ -2660,26 +4600,59 @@ This was surely not a problem before as Cygwin just recently updated to Python 2
 Let's now find out why both libraries get mixed up.
 
 
+
 ---
 
-Comment by jpflori created at 2013-03-28 23:18:47
+archive/issue_comments_055423.json:
+```json
+{
+    "body": "And indeed, uninstalling the system wide python let matplotlib install correctly.\nOf course that's not the right solution to promote :)",
+    "created_at": "2013-03-28T23:18:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55423",
+    "user": "jpflori"
+}
+```
 
 And indeed, uninstalling the system wide python let matplotlib install correctly.
 Of course that's not the right solution to promote :)
 
 
+
 ---
 
-Comment by jpflori created at 2013-03-28 23:52:02
+archive/issue_comments_055424.json:
+```json
+{
+    "body": "It seems its the _ctypes.dll library which loads the system wide libpython2.7.dll.\nJust moving _ctypes.dll so that it does not get loaded and the wrong libpython2.7.dll does not, let matplotlib build.\nStrange.",
+    "created_at": "2013-03-28T23:52:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55424",
+    "user": "jpflori"
+}
+```
 
 It seems its the _ctypes.dll library which loads the system wide libpython2.7.dll.
 Just moving _ctypes.dll so that it does not get loaded and the wrong libpython2.7.dll does not, let matplotlib build.
 Strange.
 
 
+
 ---
 
-Comment by jpflori created at 2013-03-29 00:09:07
+archive/issue_comments_055425.json:
+```json
+{
+    "body": "Indeed in ctypes/__init__.py\n\n```\nelif _sys.platform == \"cygwin\":\n    pythonapi = PyDLL(\"libpython%d.%d.dll\" % _sys.version_info[:2])\n```\n\n\nBasically PyDLL, loads the library calling _dlopen which is an alias from LoadLibrary from the _ctypes module (with an underscore).\n\nAnd it seems it does not care about PATH.\nBut if I set LD_LIBRARY_PATH to point to where Sage's libpython2.7.dll is, then its correctly loaded rather than the system one.\n\nNot sure what happens on linux :)\nI seem to remember some recent discussion about _ctypes which was not built before and caused troubles recently.",
+    "created_at": "2013-03-29T00:09:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55425",
+    "user": "jpflori"
+}
+```
 
 Indeed in ctypes/__init__.py
 
@@ -2698,48 +4671,103 @@ Not sure what happens on linux :)
 I seem to remember some recent discussion about _ctypes which was not built before and caused troubles recently.
 
 
+
 ---
 
-Comment by jpflori created at 2013-03-29 00:11:40
+archive/issue_comments_055426.json:
+```json
+{
+    "body": "My vague souvenir was about #14309 so not related.",
+    "created_at": "2013-03-29T00:11:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55426",
+    "user": "jpflori"
+}
+```
 
 My vague souvenir was about #14309 so not related.
 
 
+
 ---
 
-Comment by jpflori created at 2013-03-29 00:22:28
+archive/issue_comments_055427.json:
+```json
+{
+    "body": "Strange that the fact $SAGE_LOCAL/bin is in $PATH is not sufficient but whatever.\nAnd not sure why in sage-enc $SAGE_LOCAL/lib is appended rather than prepended.\nI mean, were prepending $SAGE_LOCAL/bin, so...",
+    "created_at": "2013-03-29T00:22:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55427",
+    "user": "jpflori"
+}
+```
 
 Strange that the fact $SAGE_LOCAL/bin is in $PATH is not sufficient but whatever.
 And not sure why in sage-enc $SAGE_LOCAL/lib is appended rather than prepended.
 I mean, were prepending $SAGE_LOCAL/bin, so...
 
 
+
 ---
 
-Comment by leif created at 2013-03-29 01:05:14
+archive/issue_comments_055428.json:
+```json
+{
+    "body": "Replying to [comment:221 jpflori]:\n> Strange that the fact $SAGE_LOCAL/bin is in $PATH is not sufficient but whatever.\n> And not sure why in sage-enc $SAGE_LOCAL/lib is appended rather than prepended.\n> I mean, were prepending $SAGE_LOCAL/bin, so...\n\n? In both cases (`PATH` as well as `LD_LIBRARY_PATH`), directories get **pre**pended (provided they exist).\n\nOn Unices, `libpython-*.so*` is in `$SAGE_LOCAL/{lib,lib32,lib64}/`, so can be found along `$LD_LIBRARY_PATH`.\n\nIf Cygwin's `dlopen()` conforms to POSIX (it probably does), it doesn't use `PATH` but `LD_LIBRARY_PATH` (if set), unless an absolute path was given in the filename argument.",
+    "created_at": "2013-03-29T01:05:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55428",
+    "user": "leif"
+}
+```
 
 Replying to [comment:221 jpflori]:
 > Strange that the fact $SAGE_LOCAL/bin is in $PATH is not sufficient but whatever.
 > And not sure why in sage-enc $SAGE_LOCAL/lib is appended rather than prepended.
 > I mean, were prepending $SAGE_LOCAL/bin, so...
 
-? In both cases (`PATH` as well as `LD_LIBRARY_PATH`), directories get *pre*pended (provided they exist).
+? In both cases (`PATH` as well as `LD_LIBRARY_PATH`), directories get **pre**pended (provided they exist).
 
 On Unices, `libpython-*.so*` is in `$SAGE_LOCAL/{lib,lib32,lib64}/`, so can be found along `$LD_LIBRARY_PATH`.
 
 If Cygwin's `dlopen()` conforms to POSIX (it probably does), it doesn't use `PATH` but `LD_LIBRARY_PATH` (if set), unless an absolute path was given in the filename argument.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-03-29 04:13:34
+archive/issue_comments_055429.json:
+```json
+{
+    "body": "See #14378 for upgrading GCC.",
+    "created_at": "2013-03-29T04:13:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55429",
+    "user": "jdemeyer"
+}
+```
 
 See #14378 for upgrading GCC.
 
 
+
 ---
 
-Comment by jpflori created at 2013-03-29 08:07:10
+archive/issue_comments_055430.json:
+```json
+{
+    "body": "Replying to [comment:222 leif]:\n> Replying to [comment:221 jpflori]:\n> > Strange that the fact $SAGE_LOCAL/bin is in $PATH is not sufficient but whatever.\n> > And not sure why in sage-enc $SAGE_LOCAL/lib is appended rather than prepended.\n> > I mean, were prepending $SAGE_LOCAL/bin, so...\n> \n> ? In both cases (`PATH` as well as `LD_LIBRARY_PATH`), directories get **pre**pended (provided they exist).\nIt seems PATH is not, in sage-env:\n\n```\nexport PATH=\"$SAGE_PACKAGES/bin:$SAGE_LOCAL/bin:$PATH\"\n```\n\n> \n> On Unices, `libpython-*.so*` is in `$SAGE_LOCAL/{lib,lib32,lib64}/`, so can be found along `$LD_LIBRARY_PATH`.\nBut on Cygwin its in .../bin/ whence the problem I guess.\n> \n> If Cygwin's `dlopen()` conforms to POSIX (it probably does), it doesn't use `PATH` but `LD_LIBRARY_PATH` (if set), unless an absolute path was given in the filename argument.\nYup.\nThat's fine, but also disturbing as all the (rest of the) dll magic uses PATH rather than LD_LIBRARY_PATH on Cygwin.\n>",
+    "created_at": "2013-03-29T08:07:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55430",
+    "user": "jpflori"
+}
+```
 
 Replying to [comment:222 leif]:
 > Replying to [comment:221 jpflori]:
@@ -2747,7 +4775,7 @@ Replying to [comment:222 leif]:
 > > And not sure why in sage-enc $SAGE_LOCAL/lib is appended rather than prepended.
 > > I mean, were prepending $SAGE_LOCAL/bin, so...
 > 
-> ? In both cases (`PATH` as well as `LD_LIBRARY_PATH`), directories get *pre*pended (provided they exist).
+> ? In both cases (`PATH` as well as `LD_LIBRARY_PATH`), directories get **pre**pended (provided they exist).
 It seems PATH is not, in sage-env:
 
 ```
@@ -2764,9 +4792,20 @@ That's fine, but also disturbing as all the (rest of the) dll magic uses PATH ra
 >
 
 
+
 ---
 
-Comment by jpflori created at 2013-03-29 09:30:50
+archive/issue_comments_055431.json:
+```json
+{
+    "body": "Replying to [comment:224 jpflori]:\n> Replying to [comment:222 leif]:\n> > Replying to [comment:221 jpflori]:\n> > > Strange that the fact $SAGE_LOCAL/bin is in $PATH is not sufficient but whatever.\n> > > And not sure why in sage-enc $SAGE_LOCAL/lib is appended rather than prepended.\n> > > I mean, were prepending $SAGE_LOCAL/bin, so...\n> > \n> > ? In both cases (`PATH` as well as `LD_LIBRARY_PATH`), directories get **pre**pended (provided they exist).\n> It seems PATH is not, in sage-env:\n> {{{\n> export PATH=\"$SAGE_PACKAGES/bin:$SAGE_LOCAL/bin:$PATH\"\n> }}}\nAnd I think it's normal.\nWe want Sage binaries to be found first.\n\nAs far as [LD_]LIBRARY_PATH is concerned, I wouldn't find it so disturbing to prepend SAGE local dirs as well.\n\nBut note that PATH is usually set (or the shell used might not be so useful) whereas [LD]_LIBRARY_PATH is not.\nSo prepending our local values in the first case is really the most sensible choice, whereas in the second you might think that the user has added something unusual knowingly and he wants it first, if that breaks that's his problem.\n> > \n> > On Unices, `libpython-*.so*` is in `$SAGE_LOCAL/{lib,lib32,lib64}/`, so can be found along `$LD_LIBRARY_PATH`.\n> But on Cygwin its in .../bin/ whence the problem I guess.\n> > \n> > If Cygwin's `dlopen()` conforms to POSIX (it probably does), it doesn't use `PATH` but `LD_LIBRARY_PATH` (if set), unless an absolute path was given in the filename argument.\n> Yup.\n> That's fine, but also disturbing as all the (rest of the) dll magic uses PATH rather than LD_LIBRARY_PATH on Cygwin.\n> >",
+    "created_at": "2013-03-29T09:30:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55431",
+    "user": "jpflori"
+}
+```
 
 Replying to [comment:224 jpflori]:
 > Replying to [comment:222 leif]:
@@ -2775,7 +4814,7 @@ Replying to [comment:224 jpflori]:
 > > > And not sure why in sage-enc $SAGE_LOCAL/lib is appended rather than prepended.
 > > > I mean, were prepending $SAGE_LOCAL/bin, so...
 > > 
-> > ? In both cases (`PATH` as well as `LD_LIBRARY_PATH`), directories get *pre*pended (provided they exist).
+> > ? In both cases (`PATH` as well as `LD_LIBRARY_PATH`), directories get **pre**pended (provided they exist).
 > It seems PATH is not, in sage-env:
 > {{{
 > export PATH="$SAGE_PACKAGES/bin:$SAGE_LOCAL/bin:$PATH"
@@ -2797,9 +4836,20 @@ So prepending our local values in the first case is really the most sensible cho
 > >
 
 
+
 ---
 
-Comment by jpflori created at 2013-03-29 09:42:26
+archive/issue_comments_055432.json:
+```json
+{
+    "body": "Replying to [comment:224 jpflori]:\n> Replying to [comment:222 leif]:\n> > Replying to [comment:221 jpflori]:\n> > > Strange that the fact $SAGE_LOCAL/bin is in $PATH is not sufficient but whatever.\n> > > And not sure why in sage-enc $SAGE_LOCAL/lib is appended rather than prepended.\n> > > I mean, were prepending $SAGE_LOCAL/bin, so...\n> > \n> > ? In both cases (`PATH` as well as `LD_LIBRARY_PATH`), directories get **pre**pended (provided they exist).\n> It seems PATH is not, in sage-env:\n> {{{\n> export PATH=\"$SAGE_PACKAGES/bin:$SAGE_LOCAL/bin:$PATH\"\n> }}}\n> > \n> > On Unices, `libpython-*.so*` is in `$SAGE_LOCAL/{lib,lib32,lib64}/`, so can be found along `$LD_LIBRARY_PATH`.\n> But on Cygwin its in .../bin/ whence the problem I guess.\n> > \n> > If Cygwin's `dlopen()` conforms to POSIX (it probably does), it doesn't use `PATH` but `LD_LIBRARY_PATH` (if set), unless an absolute path was given in the filename argument.\n> Yup.\n> That's fine, but also disturbing as all the (rest of the) dll magic uses PATH rather than LD_LIBRARY_PATH on Cygwin.\n> > \nIn fact that's not really POSIX requested, from the doc of dlopen in POSIX specs (if those are what is at http://pubs.opengroup.org/onlinepubs/9699919799/):\n\n```\n...\nThe file argument is used to construct a pathname to the object file. If file contains a slash character, the file argument is used as the pathname for the file.\nOtherwise, file is used in an implementation-defined manner to yield a pathname.\n...\n```\n\nSo Cygwin could decide to use PATH :)",
+    "created_at": "2013-03-29T09:42:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55432",
+    "user": "jpflori"
+}
+```
 
 Replying to [comment:224 jpflori]:
 > Replying to [comment:222 leif]:
@@ -2808,7 +4858,7 @@ Replying to [comment:224 jpflori]:
 > > > And not sure why in sage-enc $SAGE_LOCAL/lib is appended rather than prepended.
 > > > I mean, were prepending $SAGE_LOCAL/bin, so...
 > > 
-> > ? In both cases (`PATH` as well as `LD_LIBRARY_PATH`), directories get *pre*pended (provided they exist).
+> > ? In both cases (`PATH` as well as `LD_LIBRARY_PATH`), directories get **pre**pended (provided they exist).
 > It seems PATH is not, in sage-env:
 > {{{
 > export PATH="$SAGE_PACKAGES/bin:$SAGE_LOCAL/bin:$PATH"
@@ -2833,16 +4883,38 @@ Otherwise, file is used in an implementation-defined manner to yield a pathname.
 So Cygwin could decide to use PATH :)
 
 
+
 ---
 
-Comment by jpflori created at 2013-03-29 10:23:31
+archive/issue_comments_055433.json:
+```json
+{
+    "body": "This is now #14380.",
+    "created_at": "2013-03-29T10:23:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55433",
+    "user": "jpflori"
+}
+```
 
 This is now #14380.
 
 
+
 ---
 
-Comment by leif created at 2013-03-29 12:45:55
+archive/issue_comments_055434.json:
+```json
+{
+    "body": "Replying to [comment:225 jpflori]:\n> Replying to [comment:224 jpflori]:\n> > Replying to [comment:222 leif]:\n> > > Replying to [comment:221 jpflori]:\n> > > > Strange that the fact $SAGE_LOCAL/bin is in $PATH is not sufficient but whatever.\n> > > > And not sure why in sage-enc $SAGE_LOCAL/lib is appended rather than prepended.\n> > > > I mean, were prepending $SAGE_LOCAL/bin, so...\n> > > \n> > > ? In both cases (`PATH` as well as `LD_LIBRARY_PATH`), directories get **pre**pended (provided they exist).\n> > It seems PATH is not, in sage-env:\n> > {{{\n> > export PATH=\"$SAGE_PACKAGES/bin:$SAGE_LOCAL/bin:$PATH\"\n> > }}}\n> And I think it's normal.\n> We want Sage binaries to be found first.\n> \n> As far as [LD_]LIBRARY_PATH is concerned, I wouldn't find it so disturbing to prepend SAGE local dirs as well.\n> \n> But note that PATH is usually set (or the shell used might not be so useful) whereas [LD]_LIBRARY_PATH is not.\n> So prepending our local values in the first case is really the most sensible choice, whereas in the second you might think that the user has added something unusual knowingly and he wants it first, if that breaks that's his problem.\n\nI still don't understand what you mean.  In both cases, we already prepend *Sage's* directories, such that Sage's shared libraries and binaries come first.\n\n(That's orthogonal to putting DLLs into `*/bin/` or adding DLL dirs to `PATH` on Cygwin.  Note that IIRC we already do the former for some packages, so if you add `$SAGE_LOCAL/lib/` to `PATH` as well, we IMHO should no longer copy DLLs into `$SAGE_LOCAL/bin/`.)",
+    "created_at": "2013-03-29T12:45:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55434",
+    "user": "leif"
+}
+```
 
 Replying to [comment:225 jpflori]:
 > Replying to [comment:224 jpflori]:
@@ -2852,7 +4924,7 @@ Replying to [comment:225 jpflori]:
 > > > > And not sure why in sage-enc $SAGE_LOCAL/lib is appended rather than prepended.
 > > > > I mean, were prepending $SAGE_LOCAL/bin, so...
 > > > 
-> > > ? In both cases (`PATH` as well as `LD_LIBRARY_PATH`), directories get *pre*pended (provided they exist).
+> > > ? In both cases (`PATH` as well as `LD_LIBRARY_PATH`), directories get **pre**pended (provided they exist).
 > > It seems PATH is not, in sage-env:
 > > {{{
 > > export PATH="$SAGE_PACKAGES/bin:$SAGE_LOCAL/bin:$PATH"
@@ -2865,18 +4937,29 @@ Replying to [comment:225 jpflori]:
 > But note that PATH is usually set (or the shell used might not be so useful) whereas [LD]_LIBRARY_PATH is not.
 > So prepending our local values in the first case is really the most sensible choice, whereas in the second you might think that the user has added something unusual knowingly and he wants it first, if that breaks that's his problem.
 
-I still don't understand what you mean.  In both cases, we already prepend _Sage's_ directories, such that Sage's shared libraries and binaries come first.
+I still don't understand what you mean.  In both cases, we already prepend *Sage's* directories, such that Sage's shared libraries and binaries come first.
 
 (That's orthogonal to putting DLLs into `*/bin/` or adding DLL dirs to `PATH` on Cygwin.  Note that IIRC we already do the former for some packages, so if you add `$SAGE_LOCAL/lib/` to `PATH` as well, we IMHO should no longer copy DLLs into `$SAGE_LOCAL/bin/`.)
 
 
+
 ---
 
-Comment by jpflori created at 2013-03-29 13:50:47
+archive/issue_comments_055435.json:
+```json
+{
+    "body": "Replying to [comment:228 leif]:\n> Replying to [comment:225 jpflori]:\n> > > > ? In both cases (`PATH` as well as `LD_LIBRARY_PATH`), directories get **pre**pended (provided they exist).\n> > > It seems PATH is not, in sage-env:\n> > > {{{\n> > > export PATH=\"$SAGE_PACKAGES/bin:$SAGE_LOCAL/bin:$PATH\"\n> > > }}}\n> > And I think it's normal.\n> > We want Sage binaries to be found first.\n> > \n> > As far as [LD_]LIBRARY_PATH is concerned, I wouldn't find it so disturbing to prepend SAGE local dirs as well.\n> > \n> > But note that PATH is usually set (or the shell used might not be so useful) whereas [LD]_LIBRARY_PATH is not.\n> > So prepending our local values in the first case is really the most sensible choice, whereas in the second you might think that the user has added something unusual knowingly and he wants it first, if that breaks that's his problem.\n> \n> I still don't understand what you mean.  In both cases, we already prepend *Sage's* directories, such that Sage's shared libraries and binaries come first.\nOh youre right...\nI misread the LD_LIBRARY_PATH part.\n\n```\nPATH=\"$SAGE_ROOT:$SAGE_LOCAL/bin:$PATH\" && export PATH\n```\n\n\n```\nfor d in lib/openmpi lib/R/lib lib32 lib64 lib; do\n    libdir=\"$SAGE_LOCAL/$d\"\n    # Add only existing directories\n    if [ -d \"$libdir\" ]; then\n        [ -z \"$LD_LIBRARY_PATH\" ] || LD_LIBRARY_PATH=\":${LD_LIBRARY_PATH}\"\n        LD_LIBRARY_PATH=\"${libdir}$LD_LIBRARY_PATH\"\n    fi\ndone\nexport LD_LIBRARY_PATH\n```\n\nBut taht's only true on non Cygwin system.\nThere we have\n\n```\nif [ \"$UNAME\" = \"CYGWIN\" ]; then\n    PATH=\"$PATH:$SAGE_LOCAL/lib:$SAGE_LOCAL/lib/R/lib\" && export PATH\nfi\n```\n\n\n> \n> (That's orthogonal to putting DLLs into `*/bin/` or adding DLL dirs to `PATH` on Cygwin.  Note that IIRC we already do the former for some packages, so if you add `$SAGE_LOCAL/lib/` to `PATH` as well, we IMHO should no longer copy DLLs into `$SAGE_LOCAL/bin/`.)\nWe don't really copy anything anymore in */bin/\nAt least for all the spkg I've taken care of.\nThe default scheme on Cygwin is to have:\n* static archive (.a), import libraries (.dll.a), libtool magic (.la) in lib\n* shared libraries (.dll), executables (.exe) in bin\nAnd you shouldn't have to look in bin for libraries.\nNormally (at least from my little experience) when you link (not when you load at runtime) you either use the static archive (which is in lib) or the import library (which is in lib), or you want to skip the import library mess and give full path to the shared library in bin.\nAnd when you end up using the import library, in the end it points you to the shared library in bin, and in your own library or executable there is no trace of the import library, only of the shared library itself.\n\nThat's what Python does, but dlopen skip all the fun of import libraries (and it's right, it does not want to link to the library, it just wants to load it) and wants a real shared library ending in .dll.\nAnd with our current values of LD_LIBRARY_PATH and PATH, it first find the system wide one because (that's only a guess) there must be some default search path used between LD_LIBRARY_PATH and PATH.",
+    "created_at": "2013-03-29T13:50:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55435",
+    "user": "jpflori"
+}
+```
 
 Replying to [comment:228 leif]:
 > Replying to [comment:225 jpflori]:
-> > > > ? In both cases (`PATH` as well as `LD_LIBRARY_PATH`), directories get *pre*pended (provided they exist).
+> > > > ? In both cases (`PATH` as well as `LD_LIBRARY_PATH`), directories get **pre**pended (provided they exist).
 > > > It seems PATH is not, in sage-env:
 > > > {{{
 > > > export PATH="$SAGE_PACKAGES/bin:$SAGE_LOCAL/bin:$PATH"
@@ -2889,7 +4972,7 @@ Replying to [comment:228 leif]:
 > > But note that PATH is usually set (or the shell used might not be so useful) whereas [LD]_LIBRARY_PATH is not.
 > > So prepending our local values in the first case is really the most sensible choice, whereas in the second you might think that the user has added something unusual knowingly and he wants it first, if that breaks that's his problem.
 > 
-> I still don't understand what you mean.  In both cases, we already prepend _Sage's_ directories, such that Sage's shared libraries and binaries come first.
+> I still don't understand what you mean.  In both cases, we already prepend *Sage's* directories, such that Sage's shared libraries and binaries come first.
 Oh youre right...
 I misread the LD_LIBRARY_PATH part.
 
@@ -2935,26 +5018,48 @@ That's what Python does, but dlopen skip all the fun of import libraries (and it
 And with our current values of LD_LIBRARY_PATH and PATH, it first find the system wide one because (that's only a guess) there must be some default search path used between LD_LIBRARY_PATH and PATH.
 
 
+
 ---
 
-Comment by kcrisman created at 2013-03-29 16:19:31
+archive/issue_comments_055436.json:
+```json
+{
+    "body": "> Here is the current status for this ticket, then, in my view.\n>  * Figure out whether mpfr-4 needs to be installed or not.  I now have two different brand-new installs of Cygwin that failed with the current package list until I installed it.  It was *not* pulled in with gcc-core and friends.\nLooks like it's needed for now, or is there any action on the Cygwin front?\n>  * Patch to remove `SAGE_PORT=yes` requirement for Cygwin.\nStill needed.\n>    * Related to that, we still get the message about `sqrtl in -lm` outdated math library, which presumably would make things fail if `SAGE_PORT` wasn't set, so we need to somehow fix things so that's not an issue.  What happens on FreeBSD?\nAny updates with what we should do here?  The code for the sqrtl business that David wrote is a little convoluted for me, but perhaps it wouldn't be that hard to change to logl as was suggested above.\n>  * Patch to atlas spkg-install (possibly at #10508, or possibly earlier) to say *precisely* which lapack packages to install, as in the ticket description.\n#10508 seems to now have taken care of this.\n>  * As Jeroen points out, make sure that we put something in so that we don't use the (current) Sage 4.6 GCC spkg to build on Cygwin.  This could involve making the 4.7.2 spkg standard (I don't believe there is a ticket for this yet, though there is a sage-devel thread reporting a fair amount of success), or something else.\nThis is #14378, and Jeroen even has an spkg.",
+    "created_at": "2013-03-29T16:19:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55436",
+    "user": "kcrisman"
+}
+```
 
 > Here is the current status for this ticket, then, in my view.
->  * Figure out whether mpfr-4 needs to be installed or not.  I now have two different brand-new installs of Cygwin that failed with the current package list until I installed it.  It was _not_ pulled in with gcc-core and friends.
+>  * Figure out whether mpfr-4 needs to be installed or not.  I now have two different brand-new installs of Cygwin that failed with the current package list until I installed it.  It was *not* pulled in with gcc-core and friends.
 Looks like it's needed for now, or is there any action on the Cygwin front?
 >  * Patch to remove `SAGE_PORT=yes` requirement for Cygwin.
 Still needed.
 >    * Related to that, we still get the message about `sqrtl in -lm` outdated math library, which presumably would make things fail if `SAGE_PORT` wasn't set, so we need to somehow fix things so that's not an issue.  What happens on FreeBSD?
 Any updates with what we should do here?  The code for the sqrtl business that David wrote is a little convoluted for me, but perhaps it wouldn't be that hard to change to logl as was suggested above.
->  * Patch to atlas spkg-install (possibly at #10508, or possibly earlier) to say _precisely_ which lapack packages to install, as in the ticket description.
+>  * Patch to atlas spkg-install (possibly at #10508, or possibly earlier) to say *precisely* which lapack packages to install, as in the ticket description.
 #10508 seems to now have taken care of this.
 >  * As Jeroen points out, make sure that we put something in so that we don't use the (current) Sage 4.6 GCC spkg to build on Cygwin.  This could involve making the 4.7.2 spkg standard (I don't believe there is a ticket for this yet, though there is a sage-devel thread reporting a fair amount of success), or something else.
 This is #14378, and Jeroen even has an spkg.
 
 
+
 ---
 
-Comment by kcrisman created at 2013-03-30 01:05:12
+archive/issue_comments_055437.json:
+```json
+{
+    "body": "> sage -t  devel/sage-main/sage/misc/inline_fortran.py\nThis is now #14386.\n> \n> sage -t  devel/sage-main/sage/functions/other.py\n> sage -t  devel/sage-main/sage/misc/cython.py\n\nThis is now #14387.",
+    "created_at": "2013-03-30T01:05:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55437",
+    "user": "kcrisman"
+}
+```
 
 > sage -t  devel/sage-main/sage/misc/inline_fortran.py
 This is now #14386.
@@ -2965,9 +5070,20 @@ This is now #14386.
 This is now #14387.
 
 
+
 ---
 
-Comment by kcrisman created at 2013-03-30 01:25:12
+archive/issue_comments_055438.json:
+```json
+{
+    "body": "I got a few new failures, but I think they will be solved mostly by #14370.\n\nHere's one I don't recall seeing before.\n\n```\n$ ./sage -t devel/sage/sage/libs/gap/element.pyx\nRunning doctests with ID 2013-03-29-21-22-54-2674b5b5.\nDoctesting 1 file.\nsage -t devel/sage/sage/libs/gap/element.pyx\n**********************************************************************\nFile \"devel/sage/sage/libs/gap/element.pyx\", line 1327, in sage.libs.gap.element.GapElement_Function.__call__\nFailed example:\n    libgap_exec('echo hello from the shell > /dev/null')\nExpected nothing\nGot:\n    The system cannot find the path specified.\n**********************************************************************\n1 item had failures:\n   1 of  26 in sage.libs.gap.element.GapElement_Function.__call__\n    [256 tests, 1 failure, 4.6 s]\n----------------------------------------------------------------------\nsage -t devel/sage/sage/libs/gap/element.pyx  # 1 doctest failed\n----------------------------------------------------------------------\nTotal time for all tests: 10.7 seconds\n    cpu time: 3.7 seconds\n    cumulative wall time: 4.6 seconds\n```\n\nAnyone seen this?",
+    "created_at": "2013-03-30T01:25:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55438",
+    "user": "kcrisman"
+}
+```
 
 I got a few new failures, but I think they will be solved mostly by #14370.
 
@@ -3000,9 +5116,20 @@ Total time for all tests: 10.7 seconds
 Anyone seen this?
 
 
+
 ---
 
-Comment by kcrisman created at 2013-03-30 01:32:19
+archive/issue_comments_055439.json:
+```json
+{
+    "body": "> As it turns out, #14254 wasn't the (whole) problem.  Most of the errors were of the following ilk.\n> {{{\n> sage -t  devel/sage-main/sage/algebras/free_algebra.py\n> Exception KeyError: (The ring pointer -0x1f5282c,) in 'sage.libs.singular.ring.singular_ring_delete' ignored\n> Exception KeyError: (The ring pointer -0x1f52768,) in 'sage.libs.singular.ring.singular_ring_delete' ignored\n> Exception KeyError: (The ring pointer -0x1f526a4,) in 'sage.libs.singular.ring.singular_ring_delete' ignored\n> **********************************************************************\n> File \"/home/sagetest/sage-5.8.beta4/devel/sage-main/sage/algebras/free_algebra.py\", line 820:\n>     sage: G=A.g_algebra({y*x:-x*y})\n> Exception raised:\n>     Traceback (most recent call last):\n>       File \"/home/sagetest/sage-5.8.beta4/local/bin/ncadoctest.py\", line 1231, in run_one_test\n>         self.run_one_example(test, example, filename, compileflags)\n>       File \"/home/sagetest/sage-5.8.beta4/local/bin/sagedoctest.py\", line 38, in run_one_example\n>         OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n>       File \"/home/sagetest/sage-5.8.beta4/local/bin/ncadoctest.py\", line 1172, in run_one_example\n>         compileflags, 1) in test.globs\n>       File \"<doctest __main__.example_18[3]>\", line 1, in <module>\n>         G=A.g_algebra({y*x:-x*y})###line 820:\n>     sage: G=A.g_algebra({y*x:-x*y})\n>       File \"/home/sagetest/sage-5.8.beta4/local/lib/python/site-packages/sage/algebras/free_algebra.py\", line 872, in g_algebra\n>         order=order, check=check)\n>       File \"factory.pyx\", line 143, in sage.structure.factory.UniqueFactory.__call__ (sage/structure/factory.c:1119)\n>       File \"factory.pyx\", line 170, in sage.structure.factory.UniqueFactory.get_object (sage/structure/factory.c:1311)\n>       File \"plural.pyx\", line 180, in sage.rings.polynomial.plural.G_AlgFactory.create_object (sage/rings/polynomial/plural.cpp:4289)\n>       File \"plural.pyx\", line 358, in sage.rings.polynomial.plural.NCPolynomialRing_plural.__init__ (sage/rings/polynomial/plural.cpp:5351)\n>       File \"plural.pyx\", line 1471, in sage.rings.polynomial.plural.NCPolynomial_plural.__richcmp__ (sage/rings/polynomial/plural.cpp:11452)\n>       File \"element.pyx\", line 855, in sage.structure.element.Element._richcmp (sage/structure/element.c:7980)\n>       File \"coerce.pyx\", line 913, in sage.structure.coerce.CoercionModel_cache_maps.canonical_coercion (sage/structure/coerce.c:8304)\n>       File \"coerce.pyx\", line 1068, in sage.structure.coerce.CoercionModel_cache_maps.coercion_maps (sage/structure/coerce.c:9855)\n>       File \"coerce.pyx\", line 1209, in sage.structure.coerce.CoercionModel_cache_maps.discover_coercion (sage/structure/coerce.c:11405)\n>       File \"parent.pyx\", line 2116, in sage.structure.parent.Parent.coerce_map_from (sage/structure/parent.c:14383)\n>       File \"parent.pyx\", line 2937, in sage.structure.parent._register_pair (sage/structure/parent.c:21545)\n>       File \"parent.pyx\", line 2911, in sage.structure.parent.EltPair.__hash__ (sage/structure/parent.c:21193)\n>       File \"plural.pyx\", line 573, in sage.rings.polynomial.plural.NCPolynomialRing_plural.__hash__ (sage/rings/polynomial/plural.cpp:6487)\n>     OverflowError: Python int too large to convert to C long\n> }}}\nThis is now #14388.",
+    "created_at": "2013-03-30T01:32:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55439",
+    "user": "kcrisman"
+}
+```
 
 > As it turns out, #14254 wasn't the (whole) problem.  Most of the errors were of the following ilk.
 > {{{
@@ -3044,20 +5171,42 @@ Comment by kcrisman created at 2013-03-30 01:32:19
 This is now #14388.
 
 
+
 ---
 
-Comment by jpflori created at 2013-03-30 13:40:54
+archive/issue_comments_055440.json:
+```json
+{
+    "body": "Replying to [comment:230 kcrisman]:\n> > Here is the current status for this ticket, then, in my view.\n> >  * Figure out whether mpfr-4 needs to be installed or not.  I now have two different brand-new installs of Cygwin that failed with the current package list until I installed it.  It was *not* pulled in with gcc-core and friends.\n> Looks like it's needed for now, or is there any action on the Cygwin front?\nLooks like their gcc packages were really old and the maintainer has to change...",
+    "created_at": "2013-03-30T13:40:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55440",
+    "user": "jpflori"
+}
+```
 
 Replying to [comment:230 kcrisman]:
 > > Here is the current status for this ticket, then, in my view.
-> >  * Figure out whether mpfr-4 needs to be installed or not.  I now have two different brand-new installs of Cygwin that failed with the current package list until I installed it.  It was _not_ pulled in with gcc-core and friends.
+> >  * Figure out whether mpfr-4 needs to be installed or not.  I now have two different brand-new installs of Cygwin that failed with the current package list until I installed it.  It was *not* pulled in with gcc-core and friends.
 > Looks like it's needed for now, or is there any action on the Cygwin front?
 Looks like their gcc packages were really old and the maintainer has to change...
 
 
+
 ---
 
-Comment by jpflori created at 2013-03-30 15:07:56
+archive/issue_comments_055441.json:
+```json
+{
+    "body": "So from the old errors (I've not run \"make ptest\"):\nReplying to [comment:116 jpflori]:\n> New ptest log for 5.7.beta1 at\n> {{{\n> The following tests failed:\n> \n> \tsage -t  -force_lib devel/sagenb-main/sagenb/misc/misc.py # Exception from doctest framework\n> \tsage -t  -force_lib devel/sage/sage/functions/other.py # 1 doctests failed\n> \tsage -t  -force_lib devel/sage/sage/geometry/lattice_polytope.py # 96 doctests failed\n> \tsage -t  -force_lib devel/sage/sage/graphs/genus.pyx # 2 doctests failed\n> \tsage -t  -force_lib devel/sage/sage/gsl/ode.pyx # 3 doctests failed\n> \tsage -t  -force_lib devel/sage/sage/libs/lcalc/lcalc_Lfunction.pyx # 69 doctests failed\n> \tsage -t  -force_lib devel/sage/sage/libs/pari/gen.pyx # 4 doctests failed\n> \tsage -t  -force_lib devel/sage/sage/misc/cython.py # 3 doctests failed\n> \tsage -t  -force_lib devel/sage/sage/misc/getusage.py # 4 doctests failed\n> \tsage -t  -force_lib devel/sage/sage/misc/inline_fortran.py # 3 doctests failed\n> \tsage -t  -force_lib devel/sage/sage/misc/sageinspect.py # 1 doctests failed\n> \tsage -t  -force_lib devel/sage/sage/plot/graphics.py # Time out\n> \tsage -t  -force_lib devel/sage/sage/plot/plot.py # Time out\n> \tsage -t  -force_lib devel/sage/sage/plot/plot3d/implicit_plot3d.py # Time out\n> \tsage -t  -force_lib devel/sage/sage/plot/plot3d/plot3d.py # Time out\n> \tsage -t  -force_lib devel/sage/sage/quadratic_forms/quadratic_form__ternary_Tornaria.py # 13 doctests failed\n> \tsage -t  -force_lib devel/sage/sage/rings/arith.py # 1 doctests failed\n> \tsage -t  -force_lib devel/sage/sage/rings/tests.py # 4 doctests failed\n> \tsage -t  -force_lib devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py # Time out\n> \tsage -t  -force_lib devel/sage/sage/schemes/elliptic_curves/heegner.py # Time out\n> \tsage -t  -force_lib devel/sage/sage/schemes/toric/fano_variety.py # 12 doctests failed\n> \tsage -t  -force_lib devel/sage/sage/symbolic/expression.pyx # 1 doctests failed\n> \tsage -t  -force_lib devel/sage/sage/tests/cmdline.py # Time out\n> ----------------------------------------------------------------------\n> }}}\n> \n> Some were expected:\n> * sage/libs/lcalc/lcalc_Lfunction.pyx with fix at #13351\n> * sage/geometry/lattice_polytope.py with fix at #13960\n> * sage/schemes/toric/fano_variety.py is #13960 as well\n> * sage/misc/getusage.py which is #9170\n> * sage/graphs/genus.pyx which is in fact #9170\n> * sage/libs/pari/gen.pyx which is also #9170\n> * sage/rings/tests.py as well #9170\n> * sage/quadratic_forms/quadratic_form__ternary_Tornaria.py which is hopefully the same pari stack problem as #9176\nFixed.\n> Some are trivial:\n> * sage/functions/other.py which is numerical noise\n> * sage/rings/arith.py as well\n> * sage/symbolic/expression.pyx as well\nSame glibc bug (https://bugs.launchpad.net/ubuntu/+source/eglibc/+bug/713985) as #14077, #10285, #12449.\narith.py now passes for me.\nThe two other doctests still fail. \n> Some look more serious:\n> * sage/misc/cython.py but that might just be a dynamic library extension problem\n> * sage/misc/inline_fortran.py which does not find gfortran?!\nFixed at #14386 and #14387.\n> * sage/misc/sageinspect.py -> fork errors... maybe a rebase could fix that\nPasses now on my system.\n> * sage/gsl/ode.pyx\nFixed at #14096.",
+    "created_at": "2013-03-30T15:07:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55441",
+    "user": "jpflori"
+}
+```
 
 So from the old errors (I've not run "make ptest"):
 Replying to [comment:116 jpflori]:
@@ -3118,9 +5267,20 @@ Passes now on my system.
 Fixed at #14096.
 
 
+
 ---
 
-Comment by kcrisman created at 2013-03-30 20:49:30
+archive/issue_comments_055442.json:
+```json
+{
+    "body": "Here's what I get for 5.9.beta2 on Win7 (presumably 32-bit, I have no idea) after a solution to #14388, though not the final one that JP put there, which I will be trying next.  Most will likely be fixed by #14387, #14386, and #14370, just putting for reference.\n\n```\n----------------------------------------------------------------------\nsage -t sage/tests/interrupt.pyx  # Killed due to segmentation fault\nsage -t sage/tests/cmdline.py  # 1 doctest failed\nsage -t sage/symbolic/expression.pyx  # 1 doctest failed\nsage -t sage/misc/interpreter.py  # 2 doctests failed\nsage -t sage/misc/cython.py  # 3 doctests failed\nsage -t sage/parallel/decorate.py  # 1 doctest failed\nsage -t sage/functions/other.py  # 1 doctest failed\nsage -t sage/interfaces/rubik.py  # 1 doctest failed\nsage -t sage/structure/sage_object.pyx  # 1 doctest failed\nsage -t sage/misc/inline_fortran.py  # 3 doctests failed\nsage -t sage/libs/gap/element.pyx  # 1 doctest failed\nsage -t sage/misc/sage_extension.py  # 10 doctests failed\nsage -t sage/libs/ecl.pyx  # Killed due to segmentation fault\n----------------------------------------------------------------------\n```\n\nAlso, after a rebaseall (rebase -O was not sufficient) an XP build is once again on its way to completion.",
+    "created_at": "2013-03-30T20:49:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55442",
+    "user": "kcrisman"
+}
+```
 
 Here's what I get for 5.9.beta2 on Win7 (presumably 32-bit, I have no idea) after a solution to #14388, though not the final one that JP put there, which I will be trying next.  Most will likely be fixed by #14387, #14386, and #14370, just putting for reference.
 
@@ -3145,9 +5305,20 @@ sage -t sage/libs/ecl.pyx  # Killed due to segmentation fault
 Also, after a rebaseall (rebase -O was not sufficient) an XP build is once again on its way to completion.
 
 
+
 ---
 
-Comment by kcrisman created at 2013-03-30 21:11:07
+archive/issue_comments_055443.json:
+```json
+{
+    "body": "Other than the expected numerical ones, all that remains is\n\n```\nsage -t sage/libs/gap/element.pyx\n**********************************************************************\nFile \"sage/libs/gap/element.pyx\", line 1327, in sage.libs.gap.element.GapElement_Function.__call__\nFailed example:\n    libgap_exec('echo hello from the shell > /dev/null')\nExpected nothing\nGot:\n    The system cannot find the path specified.\n**********************************************************************\n1 item had failures:\n   1 of  26 in sage.libs.gap.element.GapElement_Function.__call__\n    [256 tests, 1 failure, 4.6 s]\nsage -t sage/structure/sage_object.pyx\n**********************************************************************\nFile \"sage/structure/sage_object.pyx\", line 1215, in sage.structure.sage_object.picklejar\nFailed example:\n    if uid==0:\n        raise OSError('You must not run the doctests as root, geez!')\n    else: sage.structure.sage_object.picklejar(1, dir + '/noaccess')\nExpected:\n    Traceback (most recent call last):\n    ...\n    OSError: ...\nGot:\n    <BLANKLINE>\n**********************************************************************\n1 item had failures:\n   1 of  10 in sage.structure.sage_object.picklejar\n    [152 tests, 1 failure, 5.1 s]\nsage -t sage/parallel/decorate.py\n**********************************************************************\nFile \"sage/parallel/decorate.py\", line 559, in sage.parallel.decorate.fork\nFailed example:\n    print \"this works\"; g()\nExpected:\n    this works...\n    <BLANKLINE>\n    ------------------------------------------------------------------------\n    Unhandled SIG...\n    ------------------------------------------------------------------------\n    'NO DATA'\nGot:\n    this works\n    'NO DATA'\n**********************************************************************\n1 item had failures:\n   1 of  18 in sage.parallel.decorate.fork\n    [90 tests, 1 failure, 14.4 s]\nsage -t sage/tests/cmdline.py\n**********************************************************************\nFile \"sage/tests/cmdline.py\", line 415, in sage.tests.cmdline.test_executable\nFailed example:\n    ret\nExpected:\n    0\nGot:\n    -6\n*******************************************************************\n```\n\nand the more long\n\n```\n    Killed due to segmentation fault\n**********************************************************************\nTests run before process failed:\nsage: from sage.tests.interrupt import return_exception ## line 74 ##\nsage: @return_exception\ndef raise_interrupt():\n    raise KeyboardInterrupt(\"just testing\") ## line 75 ##\nsage: raise_interrupt() ## line 78 ##\nKeyboardInterrupt('just testing',)\nsage: sig_on_count() ## line 80 ##\n0\nsage: import sage.tests.interrupt ## line 105 ##\nsage: try:\n    sage.tests.interrupt.interrupt_after_delay()\n    factor(10^1000 + 3)\nexcept KeyboardInterrupt:\n    print \"Caught KeyboardInterrupt\" ## line 106 ##\nCaught KeyboardInterrupt\nsage: sig_on_count() ## line 112 ##\n0\nsage: from sage.tests.interrupt import * ## line 123 ##\nsage: test_sig_off() ## line 124 ##\nsage: sig_on_count() ## line 125 ##\n0\nsage: from sage.tests.interrupt import * ## line 134 ##\nsage: test_sig_on() ## line 135 ##\nKeyboardInterrupt()\nsage: sig_on_count() ## line 137 ##\n0\nsage: from sage.tests.interrupt import * ## line 146 ##\nsage: test_sig_str() ## line 147 ##\nsage: sig_on_count() ## line 151 ##\n0\nsage: from sage.tests.interrupt import * ## line 165 ##\nsage: test_sig_on_cython() ## line 166 ##\nKeyboardInterrupt()\nsage: sig_on_count() ## line 168 ##\n0\nsage: from sage.tests.interrupt import * ## line 181 ##\nsage: test_sig_on_cython_except() ## line 182 ##\nKeyboardInterrupt()\nsage: sig_on_count() ## line 184 ##\n0\nsage: from sage.tests.interrupt import * ## line 197 ##\nsage: test_sig_on_cython_except_all() ## line 198 ##\nKeyboardInterrupt()\nsage: sig_on_count() ## line 200 ##\n0\nsage: from sage.tests.interrupt import * ## line 209 ##\nsage: test_sig_check() ## line 210 ##\nKeyboardInterrupt()\nsage: sig_on_count() ## line 212 ##\n0\nsage: from sage.tests.interrupt import * ## line 222 ##\nsage: test_sig_check_inside_sig_on() ## line 223 ##\nKeyboardInterrupt()\nsage: sig_on_count() ## line 225 ##\n0\nsage: from sage.tests.interrupt import * ## line 235 ##\nsage: test_sig_retry() ## line 236 ##\n10\nsage: sig_on_count() ## line 238 ##\n0\nsage: from sage.tests.interrupt import * ## line 253 ##\nsage: test_sig_retry_and_signal() ## line 254 ##\nKeyboardInterrupt()\nsage: sig_on_count() ## line 256 ##\n0\nsage: from sage.tests.interrupt import * ## line 273 ##\nsage: test_sig_on_no_except() ## line 274 ##\n42\nsage: sig_on_count() ## line 276 ##\n0\nsage: from sage.tests.interrupt import * ## line 301 ##\nsage: test_sig_str_no_except() ## line 302 ##\nsage: sig_on_count() ## line 306 ##\n0\nsage: from sage.tests.interrupt import * ## line 324 ##\nsage: test_sig_check_no_except() ## line 325 ##\nKeyboardInterrupt()\nsage: sig_on_count() ## line 327 ##\n0\nsage: from sage.tests.interrupt import * ## line 342 ##\nsage: test_old_sig_off() ## line 343 ##\nsage: sig_on_count() ## line 344 ##\n0\nsage: from sage.tests.interrupt import * ## line 353 ##\nsage: test_old_sig_on() ## line 354 ##\nKeyboardInterrupt()\nsage: sig_on_count() ## line 356 ##\n0\nsage: from sage.tests.interrupt import * ## line 365 ##\nsage: test_old_sig_str() ## line 366 ##\nsage: sig_on_count() ## line 370 ##\n0\nsage: from sage.tests.interrupt import * ## line 383 ##\nsage: test_signal_segv() ## line 384 ##\nsage: sig_on_count() ## line 388 ##\n0\nsage: from sage.tests.interrupt import * ## line 397 ##\nsage: test_signal_fpe() ## line 398 ##\nsage: sig_on_count() ## line 402 ##\n0\nsage: from sage.tests.interrupt import * ## line 411 ##\nsage: test_signal_ill() ## line 412 ##\nsage: sig_on_count() ## line 416 ##\n0\nsage: from sage.tests.interrupt import * ## line 425 ##\nsage: test_signal_abrt() ## line 426 ##\nsage: sig_on_count() ## line 430 ##\n0\nsage: from sage.tests.interrupt import * ## line 439 ##\nsage: test_signal_bus() ## line 440 ##\nsage: sig_on_count() ## line 444 ##\n0\nsage: from sage.tests.interrupt import * ## line 460 ##\nsage: test_dereference_null_pointer() ## line 461 ##\n\n**********************************************************************\n```\n",
+    "created_at": "2013-03-30T21:11:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55443",
+    "user": "kcrisman"
+}
+```
 
 Other than the expected numerical ones, all that remains is
 
@@ -3338,9 +5509,20 @@ sage: test_dereference_null_pointer() ## line 461 ##
 
 
 
+
 ---
 
-Comment by vbraun created at 2013-03-30 21:26:45
+archive/issue_comments_055444.json:
+```json
+{
+    "body": "Does the following work? In a Cygwin shell:\n\n```\n$ echo > /dev/null\n$ ls -l /dev/null\n```\n\nor in a windows shell (cmd.exe):\n\n```\nC:\\> dir > NUL\n```\n",
+    "created_at": "2013-03-30T21:26:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55444",
+    "user": "vbraun"
+}
+```
 
 Does the following work? In a Cygwin shell:
 
@@ -3357,9 +5539,20 @@ C:\> dir > NUL
 
 
 
+
 ---
 
-Comment by jpflori created at 2013-03-30 21:39:59
+archive/issue_comments_055445.json:
+```json
+{
+    "body": "\n```\njp@THINKPAD ~\n$ echo > /dev/null\n\njp@THINKPAD ~\n$ ls -l /dev/null\ncrw-rw-rw- 1 jp None 1, 3 30 mars  22:37 /dev/null\n\njp@THINKPAD ~\n$ \n```\n\nand\n\n```\nC:\\> dir > NUL\n\nC:\\>\n```\n\nNo errors.",
+    "created_at": "2013-03-30T21:39:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55445",
+    "user": "jpflori"
+}
+```
 
 
 ```
@@ -3385,9 +5578,20 @@ C:\>
 No errors.
 
 
+
 ---
 
-Comment by jpflori created at 2013-03-30 21:59:25
+archive/issue_comments_055446.json:
+```json
+{
+    "body": "On my 64 bits W7, Sage 5.9.beta0:\nReplying to [comment:236 kcrisman]:\n> sage -t sage/tests/interrupt.pyx  # Killed due to segmentation fault\nSame long errors and  segfault as you.\n> sage -t sage/tests/cmdline.py  # 1 doctest failed\nI used to get a similar one (-6 instead of 0) but it passes now although I don't think anything changed.\n> sage -t sage/symbolic/expression.pyx  # 1 doctest failed\nNumerical noise.\n> sage -t sage/misc/interpreter.py  # 2 doctests failed\nUnicode, fixed IIRC.\n> sage -t sage/misc/cython.py  # 3 doctests failed\nExtension, fixed.\n> sage -t sage/parallel/decorate.py  # 1 doctest failed\nSame as you.\n> sage -t sage/functions/other.py  # 1 doctest failed\nNumerical noise.\n> sage -t sage/interfaces/rubik.py  # 1 doctest failed\nNo problem for me.\n> sage -t sage/structure/sage_object.pyx  # 1 doctest failed\nNo problem here.\n> sage -t sage/misc/inline_fortran.py  # 3 doctests failed\nExtension, fixed.\n> sage -t sage/libs/gap/element.pyx  # 1 doctest failed\nSame error as you.\n> sage -t sage/misc/sage_extension.py  # 10 doctests failed\nUnicode, fixed.\n> sage -t sage/libs/ecl.pyx  # Killed due to segmentation fault\nNo problem here.",
+    "created_at": "2013-03-30T21:59:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55446",
+    "user": "jpflori"
+}
+```
 
 On my 64 bits W7, Sage 5.9.beta0:
 Replying to [comment:236 kcrisman]:
@@ -3419,9 +5623,20 @@ Unicode, fixed.
 No problem here.
 
 
+
 ---
 
-Comment by kcrisman created at 2013-03-31 04:07:07
+archive/issue_comments_055447.json:
+```json
+{
+    "body": "Replying to [comment:239 jpflori]:\n> {{{\n> jp`@`THINKPAD ~\n> $ echo > /dev/null\n> \n> jp`@`THINKPAD ~\n> $ ls -l /dev/null\n> crw-rw-rw- 1 jp None 1, 3 30 mars  22:37 /dev/null\n> \n\nYeah, I don't have any problems here either.",
+    "created_at": "2013-03-31T04:07:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55447",
+    "user": "kcrisman"
+}
+```
 
 Replying to [comment:239 jpflori]:
 > {{{
@@ -3436,9 +5651,20 @@ Replying to [comment:239 jpflori]:
 Yeah, I don't have any problems here either.
 
 
+
 ---
 
-Comment by kcrisman created at 2013-04-02 01:48:14
+archive/issue_comments_055448.json:
+```json
+{
+    "body": "Some of these disappeared, sorry for not being more specific.  Here is what is left for me on Win7, if I recall correctly.\n> > sage -t sage/tests/interrupt.pyx  # Killed due to segmentation fault\n> Same long errors and  segfault as you.\n> > sage -t sage/tests/cmdline.py  # 1 doctest failed\n> I used to get a similar one (-6 instead of 0) but it passes now although I don't think anything changed.\n> > sage -t sage/symbolic/expression.pyx  # 1 doctest failed\n> Numerical noise.\n> > sage -t sage/parallel/decorate.py  # 1 doctest failed\n> Same as you.\n> > sage -t sage/functions/other.py  # 1 doctest failed\n> Numerical noise.\n> > sage -t sage/libs/gap/element.pyx  # 1 doctest failed\n> Same error as you.\nUnfortunately, repeated rebasing doesn't help that I can't run doctests on XP.  I can run individual doctests and although I get fork errors and rebase messages, they can pass.  But trying to run all of them doesn't work.  I may try the trick at comment:9:ticket:14031 and see if that helps there.",
+    "created_at": "2013-04-02T01:48:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55448",
+    "user": "kcrisman"
+}
+```
 
 Some of these disappeared, sorry for not being more specific.  Here is what is left for me on Win7, if I recall correctly.
 > > sage -t sage/tests/interrupt.pyx  # Killed due to segmentation fault
@@ -3456,16 +5682,38 @@ Some of these disappeared, sorry for not being more specific.  Here is what is l
 Unfortunately, repeated rebasing doesn't help that I can't run doctests on XP.  I can run individual doctests and although I get fork errors and rebase messages, they can pass.  But trying to run all of them doesn't work.  I may try the trick at comment:9:ticket:14031 and see if that helps there.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-04-03 13:04:02
+archive/issue_comments_055449.json:
+```json
+{
+    "body": "Please see #14406 for prereq",
+    "created_at": "2013-04-03T13:04:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55449",
+    "user": "jdemeyer"
+}
+```
 
 Please see #14406 for prereq
 
 
+
 ---
 
-Comment by kcrisman created at 2013-04-03 14:36:06
+archive/issue_comments_055450.json:
+```json
+{
+    "body": "> > Here is the current status for this ticket, then, in my view.\n> >  * Patch to remove `SAGE_PORT=yes` requirement for Cygwin.\n> Still needed.\nThis is #14406, probably will be included soon.\n> >    * Related to that, we still get the message about `sqrtl in -lm` outdated math library, which presumably would make things fail if `SAGE_PORT` wasn't set, so we need to somehow fix things so that's not an issue.  What happens on FreeBSD?\n> Any updates with what we should do here?  The code for the sqrtl business that David wrote is a little convoluted for me, but perhaps it wouldn't be that hard to change to logl as was suggested above.\nAlso #14406.\n> >  * As Jeroen points out, make sure that we put something in so that we don't use the (current) Sage 4.6 GCC spkg to build on Cygwin.  This could involve making the 4.7.2 spkg standard (I don't believe there is a ticket for this yet, though there is a sage-devel thread reporting a fair amount of success), or something else.\n> This is #14378, and Jeroen even has an spkg.\nAnd it's been closed.\n\n----\n\n> >  * Figure out whether mpfr-4 needs to be installed or not.  I now have two different brand-new installs of Cygwin that failed with the current package list until I installed it.  It was *not* pulled in with gcc-core and friends.\n> Looks like it's needed for now, or is there any action on the Cygwin front?\nSo the sole remaining issue *for this ticket* is the check for mpfr-4.  What should we do about this?",
+    "created_at": "2013-04-03T14:36:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55450",
+    "user": "kcrisman"
+}
+```
 
 > > Here is the current status for this ticket, then, in my view.
 > >  * Patch to remove `SAGE_PORT=yes` requirement for Cygwin.
@@ -3480,47 +5728,80 @@ And it's been closed.
 
 ----
 
-> >  * Figure out whether mpfr-4 needs to be installed or not.  I now have two different brand-new installs of Cygwin that failed with the current package list until I installed it.  It was _not_ pulled in with gcc-core and friends.
+> >  * Figure out whether mpfr-4 needs to be installed or not.  I now have two different brand-new installs of Cygwin that failed with the current package list until I installed it.  It was *not* pulled in with gcc-core and friends.
 > Looks like it's needed for now, or is there any action on the Cygwin front?
-So the sole remaining issue _for this ticket_ is the check for mpfr-4.  What should we do about this?
+So the sole remaining issue *for this ticket* is the check for mpfr-4.  What should we do about this?
+
 
 
 ---
 
-Comment by jpflori created at 2013-04-03 14:55:49
+archive/issue_comments_055451.json:
+```json
+{
+    "body": "Replying to [comment:244 kcrisman]:\n> So the sole remaining issue *for this ticket* is the check for mpfr-4.  What should we do about this?\nI think we should do nothing.\nThe Cygwin folks seems to be working on a complete overhaul of their GCC packages so we can hope that quite quickly the situation will get better and installing \"gcc4-core\" will just work as it used to be and as it should be.\nIt is really a Cygwin packaging issue, not a Sage one, and trusting the Cygwin folk will avoid us the trouble to add a prereq that will soon be obsolete.",
+    "created_at": "2013-04-03T14:55:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55451",
+    "user": "jpflori"
+}
+```
 
 Replying to [comment:244 kcrisman]:
-> So the sole remaining issue _for this ticket_ is the check for mpfr-4.  What should we do about this?
+> So the sole remaining issue *for this ticket* is the check for mpfr-4.  What should we do about this?
 I think we should do nothing.
 The Cygwin folks seems to be working on a complete overhaul of their GCC packages so we can hope that quite quickly the situation will get better and installing "gcc4-core" will just work as it used to be and as it should be.
 It is really a Cygwin packaging issue, not a Sage one, and trusting the Cygwin folk will avoid us the trouble to add a prereq that will soon be obsolete.
 
 
+
 ---
 
-Comment by kcrisman created at 2013-04-03 15:24:43
+archive/issue_comments_055452.json:
+```json
+{
+    "body": "> > So the sole remaining issue *for this ticket* is the check for mpfr-4.  What should we do about this?\n> I think we should do nothing.\n> The Cygwin folks seems to be working on a complete overhaul of their GCC packages so we can hope that quite quickly the situation will get better and installing \"gcc4-core\" will just work as it used to be and as it should be.\n> It is really a Cygwin packaging issue, not a Sage one, and trusting the Cygwin folk will avoid us the trouble to add a prereq that will soon be obsolete.\nHow soon is soon?  At any rate, I think that somewhere (maybe not even in prereq) there should be a warning.  In principle, we want someone to be able to download a Sage tarball, open it in Cygwin with the required Sage packages for any distro, and then do \"make\".  Maybe with some info about rebasing.\n\nMaybe that means that we need to change the *installation guide* here instead of the prereq!  We would need to provide info about rebasing anyway.  What do you think of that for resolving this ticket?  Then we could put a `..NOTE` to warn about mpfr-4 that could easily be removed.",
+    "created_at": "2013-04-03T15:24:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55452",
+    "user": "kcrisman"
+}
+```
 
-> > So the sole remaining issue _for this ticket_ is the check for mpfr-4.  What should we do about this?
+> > So the sole remaining issue *for this ticket* is the check for mpfr-4.  What should we do about this?
 > I think we should do nothing.
 > The Cygwin folks seems to be working on a complete overhaul of their GCC packages so we can hope that quite quickly the situation will get better and installing "gcc4-core" will just work as it used to be and as it should be.
 > It is really a Cygwin packaging issue, not a Sage one, and trusting the Cygwin folk will avoid us the trouble to add a prereq that will soon be obsolete.
 How soon is soon?  At any rate, I think that somewhere (maybe not even in prereq) there should be a warning.  In principle, we want someone to be able to download a Sage tarball, open it in Cygwin with the required Sage packages for any distro, and then do "make".  Maybe with some info about rebasing.
 
-Maybe that means that we need to change the _installation guide_ here instead of the prereq!  We would need to provide info about rebasing anyway.  What do you think of that for resolving this ticket?  Then we could put a `..NOTE` to warn about mpfr-4 that could easily be removed.
+Maybe that means that we need to change the *installation guide* here instead of the prereq!  We would need to provide info about rebasing anyway.  What do you think of that for resolving this ticket?  Then we could put a `..NOTE` to warn about mpfr-4 that could easily be removed.
+
 
 
 ---
 
-Comment by jpflori created at 2013-04-03 16:37:32
+archive/issue_comments_055453.json:
+```json
+{
+    "body": "Replying to [comment:246 kcrisman]:\n> > > So the sole remaining issue *for this ticket* is the check for mpfr-4.  What should we do about this?\n> > I think we should do nothing.\n> > The Cygwin folks seems to be working on a complete overhaul of their GCC packages so we can hope that quite quickly the situation will get better and installing \"gcc4-core\" will just work as it used to be and as it should be.\n> > It is really a Cygwin packaging issue, not a Sage one, and trusting the Cygwin folk will avoid us the trouble to add a prereq that will soon be obsolete.\n> How soon is soon?  At any rate, I think that somewhere (maybe not even in prereq) there should be a warning.  In principle, we want someone to be able to download a Sage tarball, open it in Cygwin with the required Sage packages for any distro, and then do \"make\".  Maybe with some info about rebasing.\n> \n> Maybe that means that we need to change the *installation guide* here instead of the prereq!  We would need to provide info about rebasing anyway.  What do you think of that for resolving this ticket?  Then we could put a `..NOTE` to warn about mpfr-4 that could easily be removed.\nI'd say wait, from http://cygwin.com/ml/cygwin/2013-03/msg00116.html:\n\n```\nForget the current gcc packages, they're history.  We're about to\nupgrade to 4.7 and we anyways need another rebuild before it goes\nstable.  If we ship all the updated prereqs now, each built against the\nnewest gmp, then 4.7.2-2 can be built against them and we won't have\nthis problem from here on out.\n```\n\nYou could argue that you only trust what you see.",
+    "created_at": "2013-04-03T16:37:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55453",
+    "user": "jpflori"
+}
+```
 
 Replying to [comment:246 kcrisman]:
-> > > So the sole remaining issue _for this ticket_ is the check for mpfr-4.  What should we do about this?
+> > > So the sole remaining issue *for this ticket* is the check for mpfr-4.  What should we do about this?
 > > I think we should do nothing.
 > > The Cygwin folks seems to be working on a complete overhaul of their GCC packages so we can hope that quite quickly the situation will get better and installing "gcc4-core" will just work as it used to be and as it should be.
 > > It is really a Cygwin packaging issue, not a Sage one, and trusting the Cygwin folk will avoid us the trouble to add a prereq that will soon be obsolete.
 > How soon is soon?  At any rate, I think that somewhere (maybe not even in prereq) there should be a warning.  In principle, we want someone to be able to download a Sage tarball, open it in Cygwin with the required Sage packages for any distro, and then do "make".  Maybe with some info about rebasing.
 > 
-> Maybe that means that we need to change the _installation guide_ here instead of the prereq!  We would need to provide info about rebasing anyway.  What do you think of that for resolving this ticket?  Then we could put a `..NOTE` to warn about mpfr-4 that could easily be removed.
+> Maybe that means that we need to change the *installation guide* here instead of the prereq!  We would need to provide info about rebasing anyway.  What do you think of that for resolving this ticket?  Then we could put a `..NOTE` to warn about mpfr-4 that could easily be removed.
 I'd say wait, from http://cygwin.com/ml/cygwin/2013-03/msg00116.html:
 
 ```
@@ -3534,30 +5815,63 @@ this problem from here on out.
 You could argue that you only trust what you see.
 
 
+
 ---
 
-Comment by jpflori created at 2013-04-03 16:48:04
+archive/issue_comments_055454.json:
+```json
+{
+    "body": "And I was quite surprised to discover the Cygwin crew seems to be actively working on 64 bits Cygwin:\nhttp://cygwin.com/ml/cygwin-developers/2013-03/msg00008.html",
+    "created_at": "2013-04-03T16:48:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55454",
+    "user": "jpflori"
+}
+```
 
 And I was quite surprised to discover the Cygwin crew seems to be actively working on 64 bits Cygwin:
 http://cygwin.com/ml/cygwin-developers/2013-03/msg00008.html
 
 
+
 ---
 
-Comment by kcrisman created at 2013-04-03 16:52:33
+archive/issue_comments_055455.json:
+```json
+{
+    "body": "Slight update:\nNote that actually we do still need the lapack thing since #10508 isn't in, see #14406 for details on this where JP mentions it.  So that's two issues.\n> > > > So the sole remaining issue *for this ticket* is the check for mpfr-4.  What should we do about this?\n> > > I think we should do nothing.\n> I'd say wait, from http://cygwin.com/ml/cygwin/2013-03/msg00116.html:\n> You could argue that you only trust what you see.\nWell, in any case I think that we should put something in the installation guide, since it even mentions AIX but not Cygwin.  I did just update [http://wiki.sagemath.org/SupportedPlatforms](http://wiki.sagemath.org/SupportedPlatforms).",
+    "created_at": "2013-04-03T16:52:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55455",
+    "user": "kcrisman"
+}
+```
 
 Slight update:
 Note that actually we do still need the lapack thing since #10508 isn't in, see #14406 for details on this where JP mentions it.  So that's two issues.
-> > > > So the sole remaining issue _for this ticket_ is the check for mpfr-4.  What should we do about this?
+> > > > So the sole remaining issue *for this ticket* is the check for mpfr-4.  What should we do about this?
 > > > I think we should do nothing.
 > I'd say wait, from http://cygwin.com/ml/cygwin/2013-03/msg00116.html:
 > You could argue that you only trust what you see.
 Well, in any case I think that we should put something in the installation guide, since it even mentions AIX but not Cygwin.  I did just update [http://wiki.sagemath.org/SupportedPlatforms](http://wiki.sagemath.org/SupportedPlatforms).
 
 
+
 ---
 
-Comment by jpflori created at 2013-04-03 17:03:34
+archive/issue_comments_055456.json:
+```json
+{
+    "body": "Replying to [comment:250 kcrisman]:\n> Slight update:\n> Note that actually we do still need the lapack thing since #10508 isn't in, see #14406 for details on this where JP mentions it.  So that's two issues.\nPlease note that the spkg currently provided at #10508 will not build ATLAS on Cygwin by default.\nAnd even if you set SAGE_ATLAS_ARCH as suggested to force the build, it will not work because the magic (or rather circumventing libtool stupidity) needed to build the shared libraries on Cygwin is not included yet and we don't install static libraries.\nI don't plan on including any of these changes in #10508 although I think we should include both these changes.\nThat will be for follow up tickets, #10508 has been bitrotting for too long.\n> > > > > So the sole remaining issue *for this ticket* is the check for mpfr-4.  What should we do about this?\n> > > > I think we should do nothing.\n> > I'd say wait, from http://cygwin.com/ml/cygwin/2013-03/msg00116.html:\n> > You could argue that you only trust what you see.\n> Well, in any case I think that we should put something in the installation guide, since it even mentions AIX but not Cygwin.  I did just update [http://wiki.sagemath.org/SupportedPlatforms](http://wiki.sagemath.org/SupportedPlatforms).\nYes and take care of peflags and rebasing scripts and that will be most of it.\nAnd a patchbot would be great, or even three of them at least (XP 32, 7 64 and 8 64 I'd say), preferably not virtual machines, but let's not dream too much.",
+    "created_at": "2013-04-03T17:03:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55456",
+    "user": "jpflori"
+}
+```
 
 Replying to [comment:250 kcrisman]:
 > Slight update:
@@ -3566,7 +5880,7 @@ Please note that the spkg currently provided at #10508 will not build ATLAS on C
 And even if you set SAGE_ATLAS_ARCH as suggested to force the build, it will not work because the magic (or rather circumventing libtool stupidity) needed to build the shared libraries on Cygwin is not included yet and we don't install static libraries.
 I don't plan on including any of these changes in #10508 although I think we should include both these changes.
 That will be for follow up tickets, #10508 has been bitrotting for too long.
-> > > > > So the sole remaining issue _for this ticket_ is the check for mpfr-4.  What should we do about this?
+> > > > > So the sole remaining issue *for this ticket* is the check for mpfr-4.  What should we do about this?
 > > > > I think we should do nothing.
 > > I'd say wait, from http://cygwin.com/ml/cygwin/2013-03/msg00116.html:
 > > You could argue that you only trust what you see.
@@ -3575,14 +5889,25 @@ Yes and take care of peflags and rebasing scripts and that will be most of it.
 And a patchbot would be great, or even three of them at least (XP 32, 7 64 and 8 64 I'd say), preferably not virtual machines, but let's not dream too much.
 
 
+
 ---
 
-Comment by kcrisman created at 2013-04-03 17:15:54
+archive/issue_comments_055457.json:
+```json
+{
+    "body": "> > Note that actually we do still need the lapack thing since #10508 isn't in, see #14406 for details on this where JP mentions it.  So that's two issues.\n> Please note that the spkg currently provided at #10508 will not build ATLAS on Cygwin by default.\nYes, I realize all this; I was just saying that at least there was a useful error message in some patch/spkg somewhere on that ticket.\n> > > > > > So the sole remaining issue *for this ticket* is the check for mpfr-4.  What should we do about this?\n> > > > > I think we should do nothing.\n> > Well, in any case I think that we should put something in the installation guide, since it even mentions AIX but not Cygwin.  I did just update [http://wiki.sagemath.org/SupportedPlatforms](http://wiki.sagemath.org/SupportedPlatforms).\n> Yes and take care of peflags and rebasing scripts and that will be most of it.\nYes, though those aren't necessary to close this ticket.\n> And a patchbot would be great, or even three of them at least (XP 32, 7 64 and 8 64 I'd say), preferably not virtual machines, but let's not dream too much.\nUmm, no!  Especially since I can't get testing to even work on XP 32 - presumably because every time I rebase, I get a different problem related to having not enough space.  I wonder if deleting all the dlls in devel/sage/sage/ would work, since the ones in devel/sage/build/ are the ones that are actually (currently) used?",
+    "created_at": "2013-04-03T17:15:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55457",
+    "user": "kcrisman"
+}
+```
 
 > > Note that actually we do still need the lapack thing since #10508 isn't in, see #14406 for details on this where JP mentions it.  So that's two issues.
 > Please note that the spkg currently provided at #10508 will not build ATLAS on Cygwin by default.
 Yes, I realize all this; I was just saying that at least there was a useful error message in some patch/spkg somewhere on that ticket.
-> > > > > > So the sole remaining issue _for this ticket_ is the check for mpfr-4.  What should we do about this?
+> > > > > > So the sole remaining issue *for this ticket* is the check for mpfr-4.  What should we do about this?
 > > > > > I think we should do nothing.
 > > Well, in any case I think that we should put something in the installation guide, since it even mentions AIX but not Cygwin.  I did just update [http://wiki.sagemath.org/SupportedPlatforms](http://wiki.sagemath.org/SupportedPlatforms).
 > Yes and take care of peflags and rebasing scripts and that will be most of it.
@@ -3591,42 +5916,86 @@ Yes, though those aren't necessary to close this ticket.
 Umm, no!  Especially since I can't get testing to even work on XP 32 - presumably because every time I rebase, I get a different problem related to having not enough space.  I wonder if deleting all the dlls in devel/sage/sage/ would work, since the ones in devel/sage/build/ are the ones that are actually (currently) used?
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-04-03 17:52:08
+archive/issue_comments_055458.json:
+```json
+{
+    "body": "Replying to [comment:250 kcrisman]:\n> I did just update [http://wiki.sagemath.org/SupportedPlatforms](http://wiki.sagemath.org/SupportedPlatforms).\nRemember that this is meant for **released versions**, not betas.",
+    "created_at": "2013-04-03T17:52:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55458",
+    "user": "jdemeyer"
+}
+```
 
 Replying to [comment:250 kcrisman]:
 > I did just update [http://wiki.sagemath.org/SupportedPlatforms](http://wiki.sagemath.org/SupportedPlatforms).
-Remember that this is meant for *released versions*, not betas.
+Remember that this is meant for **released versions**, not betas.
+
 
 
 ---
 
-Comment by kcrisman created at 2013-04-03 17:58:42
+archive/issue_comments_055459.json:
+```json
+{
+    "body": "No, I didn't realize this.  However, I think Sage 5.8 builds and passes most doctests, so I don't think this was really that wrong.  That said, you can revert it if you need to.",
+    "created_at": "2013-04-03T17:58:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55459",
+    "user": "kcrisman"
+}
+```
 
 No, I didn't realize this.  However, I think Sage 5.8 builds and passes most doctests, so I don't think this was really that wrong.  That said, you can revert it if you need to.
 
 
+
 ---
 
-Comment by leif created at 2013-04-03 18:03:51
+archive/issue_comments_055460.json:
+```json
+{
+    "body": "Replying to [comment:253 jdemeyer]:\n> Replying to [comment:250 kcrisman]:\n> > I did just update [http://wiki.sagemath.org/SupportedPlatforms](http://wiki.sagemath.org/SupportedPlatforms).\n> Remember that this is meant for **released versions**, not betas.\n\n\n  *Dear Sage lovers,*\n  \n  *We're **releasing** Sage 5.9.**beta2**.*\n\n;-)",
+    "created_at": "2013-04-03T18:03:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55460",
+    "user": "leif"
+}
+```
 
 Replying to [comment:253 jdemeyer]:
 > Replying to [comment:250 kcrisman]:
 > > I did just update [http://wiki.sagemath.org/SupportedPlatforms](http://wiki.sagemath.org/SupportedPlatforms).
-> Remember that this is meant for *released versions*, not betas.
+> Remember that this is meant for **released versions**, not betas.
 
 
-  _Dear Sage lovers,_
+  *Dear Sage lovers,*
   
-  _We're *releasing* Sage 5.9.*beta2*._
+  *We're **releasing** Sage 5.9.**beta2**.*
 
 ;-)
 
 
+
 ---
 
-Comment by leif created at 2013-04-03 18:10:06
+archive/issue_comments_055461.json:
+```json
+{
+    "body": "Replying to [comment:249 jpflori]:\n> [...] the Cygwin crew seems to be actively working on 64 bits Cygwin:\n> http://cygwin.com/ml/cygwin-developers/2013-03/msg00008.html\n\nSo Cygwin will keep you busy for the next few years... B)",
+    "created_at": "2013-04-03T18:10:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55461",
+    "user": "leif"
+}
+```
 
 Replying to [comment:249 jpflori]:
 > [...] the Cygwin crew seems to be actively working on 64 bits Cygwin:
@@ -3635,43 +6004,98 @@ Replying to [comment:249 jpflori]:
 So Cygwin will keep you busy for the next few years... B)
 
 
+
 ---
 
-Comment by jpflori created at 2013-04-04 07:53:02
+archive/issue_comments_055462.json:
+```json
+{
+    "body": "I've opened #14410 for the ATLAS on Cygwin stuff.",
+    "created_at": "2013-04-04T07:53:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55462",
+    "user": "jpflori"
+}
+```
 
 I've opened #14410 for the ATLAS on Cygwin stuff.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-04-04 08:06:12
+archive/issue_comments_055463.json:
+```json
+{
+    "body": "Replying to [comment:254 kcrisman]:\n> No, I didn't realize this.  However, I think Sage 5.8 builds and passes most doctests, so I don't think this was really that wrong.  That said, you can revert it if you need to.\nGiven that it doesn't even pass prereq on Sage 5.8, I did indeed move that part to \"Probably will not work\" to avoid confusion.",
+    "created_at": "2013-04-04T08:06:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55463",
+    "user": "jdemeyer"
+}
+```
 
 Replying to [comment:254 kcrisman]:
 > No, I didn't realize this.  However, I think Sage 5.8 builds and passes most doctests, so I don't think this was really that wrong.  That said, you can revert it if you need to.
 Given that it doesn't even pass prereq on Sage 5.8, I did indeed move that part to "Probably will not work" to avoid confusion.
 
 
+
 ---
 
-Comment by kcrisman created at 2013-04-04 13:29:21
+archive/issue_comments_055464.json:
+```json
+{
+    "body": "> > No, I didn't realize this.  However, I think Sage 5.8 builds and passes most doctests, so I don't think this was really that wrong.  That said, you can revert it if you need to.\n> Given that it doesn't even pass prereq on Sage 5.8, I did indeed move that part to \"Probably will not work\" to avoid confusion.\nGood point.  I moved it back but with the caveat about `SAGE_PORT`.  Since several of the other things on the \"almost works\" list need special packages etc., I think that this is ok.",
+    "created_at": "2013-04-04T13:29:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55464",
+    "user": "kcrisman"
+}
+```
 
 > > No, I didn't realize this.  However, I think Sage 5.8 builds and passes most doctests, so I don't think this was really that wrong.  That said, you can revert it if you need to.
 > Given that it doesn't even pass prereq on Sage 5.8, I did indeed move that part to "Probably will not work" to avoid confusion.
 Good point.  I moved it back but with the caveat about `SAGE_PORT`.  Since several of the other things on the "almost works" list need special packages etc., I think that this is ok.
 
 
+
 ---
 
-Comment by kcrisman created at 2013-04-10 02:41:21
+archive/issue_comments_055465.json:
+```json
+{
+    "body": "Apply trac_6743-doc.patch for a first attempt at a doc patch.  This would satisfy my concern about libmpfr4 for now (in the meantime, the gcc4 package [apparently has been \"orphaned\"](http://cygwin.com/ml/cygwin/2013-03/msg00172.html)).\n\nIs the only other issue here #14031?  I sort of assumed that was the case in my patch, but of course that is just a draft and references to those things could be removed.",
+    "created_at": "2013-04-10T02:41:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55465",
+    "user": "kcrisman"
+}
+```
 
 Apply trac_6743-doc.patch for a first attempt at a doc patch.  This would satisfy my concern about libmpfr4 for now (in the meantime, the gcc4 package [apparently has been "orphaned"](http://cygwin.com/ml/cygwin/2013-03/msg00172.html)).
 
 Is the only other issue here #14031?  I sort of assumed that was the case in my patch, but of course that is just a draft and references to those things could be removed.
 
 
+
 ---
 
-Comment by jpflori created at 2013-04-11 20:31:17
+archive/issue_comments_055466.json:
+```json
+{
+    "body": "Replying to [comment:260 kcrisman]:\n> Apply trac_6743-doc.patch for a first attempt at a doc patch.  This would satisfy my concern about libmpfr4 for now (in the meantime, the gcc4 package [apparently has been \"orphaned\"](http://cygwin.com/ml/cygwin/2013-03/msg00172.html)).\n> \nThis is no longer necessary as the cygwin folks finally fixed the gcc 4.5.3 dependencies. See:\n* http://cygwin.com/ml/cygwin/2013-04/msg00174.html\n* http://cygwin.com/ml/cygwin/2013-04/msg00170.html\nand a fresh install of mine has pulled it automatically.\n> Is the only other issue here #14031?  I sort of assumed that was the case in my patch, but of course that is just a draft and references to those things could be removed.",
+    "created_at": "2013-04-11T20:31:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55466",
+    "user": "jpflori"
+}
+```
 
 Replying to [comment:260 kcrisman]:
 > Apply trac_6743-doc.patch for a first attempt at a doc patch.  This would satisfy my concern about libmpfr4 for now (in the meantime, the gcc4 package [apparently has been "orphaned"](http://cygwin.com/ml/cygwin/2013-03/msg00172.html)).
@@ -3683,32 +6107,78 @@ and a fresh install of mine has pulled it automatically.
 > Is the only other issue here #14031?  I sort of assumed that was the case in my patch, but of course that is just a draft and references to those things could be removed.
 
 
+
 ---
 
-Comment by kcrisman created at 2013-04-12 01:24:28
+archive/issue_comments_055467.json:
+```json
+{
+    "body": "So annoying!  I totally waited for a while to do this in the hopes it would happen, and it happens just after I write this.\n\nThat said, I still think most of this is worthwhile.  What do you think of this updated patch?",
+    "created_at": "2013-04-12T01:24:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55467",
+    "user": "kcrisman"
+}
+```
 
 So annoying!  I totally waited for a while to do this in the hopes it would happen, and it happens just after I write this.
 
 That said, I still think most of this is worthwhile.  What do you think of this updated patch?
 
 
+
 ---
+
+archive/issue_comments_055468.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2013-04-12T01:24:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55468",
+    "user": "kcrisman"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-04-12 07:16:09
+archive/issue_comments_055469.json:
+```json
+{
+    "body": "Remove the comment about `SAGE_TESTDIR`, that variable isn't used anymore.",
+    "created_at": "2013-04-12T07:16:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55469",
+    "user": "jdemeyer"
+}
+```
 
 Remove the comment about `SAGE_TESTDIR`, that variable isn't used anymore.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-04-12 07:18:14
+archive/issue_comments_055470.json:
+```json
+{
+    "body": "Also mention *how* one is supposed to run the `sage-rebase_sage.bat` or `sage-rebase_sage.sh` scripts. Something like: open a Sage shell and then type \"sage-rebase_sage.sh\" or equivalently\n\n```\n./sage --sh sage-rebase_sage.sh\n```\n",
+    "created_at": "2013-04-12T07:18:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55470",
+    "user": "jdemeyer"
+}
+```
 
-Also mention _how_ one is supposed to run the `sage-rebase_sage.bat` or `sage-rebase_sage.sh` scripts. Something like: open a Sage shell and then type "sage-rebase_sage.sh" or equivalently
+Also mention *how* one is supposed to run the `sage-rebase_sage.bat` or `sage-rebase_sage.sh` scripts. Something like: open a Sage shell and then type "sage-rebase_sage.sh" or equivalently
 
 ```
 ./sage --sh sage-rebase_sage.sh
@@ -3716,9 +6186,20 @@ Also mention _how_ one is supposed to run the `sage-rebase_sage.bat` or `sage-re
 
 
 
+
 ---
 
-Comment by jpflori created at 2013-04-12 11:52:37
+archive/issue_comments_055471.json:
+```json
+{
+    "body": "Replying to [comment:252 kcrisman]:\n> Umm, no!  Especially since I can't get testing to even work on XP 32 - presumably because every time I rebase, I get a different problem related to having not enough space.  I wonder if deleting all the dlls in devel/sage/sage/ would work, since the ones in devel/sage/build/ are the ones that are actually (currently) used?\nFYI I succesfully built Sage on a 32 bits Windows XP (within a virtual machine).\nJust had to rebase once to build the doc, and tests can be run fine!",
+    "created_at": "2013-04-12T11:52:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55471",
+    "user": "jpflori"
+}
+```
 
 Replying to [comment:252 kcrisman]:
 > Umm, no!  Especially since I can't get testing to even work on XP 32 - presumably because every time I rebase, I get a different problem related to having not enough space.  I wonder if deleting all the dlls in devel/sage/sage/ would work, since the ones in devel/sage/build/ are the ones that are actually (currently) used?
@@ -3726,21 +6207,43 @@ FYI I succesfully built Sage on a 32 bits Windows XP (within a virtual machine).
 Just had to rebase once to build the doc, and tests can be run fine!
 
 
+
 ---
 
-Comment by kcrisman created at 2013-04-12 12:43:20
+archive/issue_comments_055472.json:
+```json
+{
+    "body": "> Remove the comment about SAGE_TESTDIR, that variable isn't used anymore.\nReally?  What is the new way to change the test directory?  (This is still necessary at times to avoid spaces, as far as I know.)\n> Also mention how one is supposed to run the sage-rebase_sage.bat or sage-rebase_sage.sh scripts. \nI sort of purposely didn't, because I don't know how the bat one works.  Maybe this ticket should depend on #14031?\n> FYI I succesfully built Sage on a 32 bits Windows XP (within a virtual machine). Just had to rebase once to build the doc, and tests can be run fine!\nAwesome!  I guess my hardware even without a VM is just not powerful enough to avoid the eternal rebase.  It's really weird.  It *is* an older machine.",
+    "created_at": "2013-04-12T12:43:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55472",
+    "user": "kcrisman"
+}
+```
 
 > Remove the comment about SAGE_TESTDIR, that variable isn't used anymore.
 Really?  What is the new way to change the test directory?  (This is still necessary at times to avoid spaces, as far as I know.)
 > Also mention how one is supposed to run the sage-rebase_sage.bat or sage-rebase_sage.sh scripts. 
 I sort of purposely didn't, because I don't know how the bat one works.  Maybe this ticket should depend on #14031?
 > FYI I succesfully built Sage on a 32 bits Windows XP (within a virtual machine). Just had to rebase once to build the doc, and tests can be run fine!
-Awesome!  I guess my hardware even without a VM is just not powerful enough to avoid the eternal rebase.  It's really weird.  It _is_ an older machine.
+Awesome!  I guess my hardware even without a VM is just not powerful enough to avoid the eternal rebase.  It's really weird.  It *is* an older machine.
+
 
 
 ---
 
-Comment by jdemeyer created at 2013-04-12 14:52:57
+archive/issue_comments_055473.json:
+```json
+{
+    "body": "Replying to [comment:266 kcrisman]:\n> > Remove the comment about SAGE_TESTDIR, that variable isn't used anymore.\n> Really?  What is the new way to change the test directory?\nThe whole concept of a \"test directory\" is gone.",
+    "created_at": "2013-04-12T14:52:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55473",
+    "user": "jdemeyer"
+}
+```
 
 Replying to [comment:266 kcrisman]:
 > > Remove the comment about SAGE_TESTDIR, that variable isn't used anymore.
@@ -3748,9 +6251,20 @@ Replying to [comment:266 kcrisman]:
 The whole concept of a "test directory" is gone.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-04-12 14:56:11
+archive/issue_comments_055474.json:
+```json
+{
+    "body": "Has anybody ever tried to make a binary Cygwin distribution with the usual command\n\n```\n./sage --bdist 5.9.beta5\n```\n",
+    "created_at": "2013-04-12T14:56:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55474",
+    "user": "jdemeyer"
+}
+```
 
 Has anybody ever tried to make a binary Cygwin distribution with the usual command
 
@@ -3760,9 +6274,20 @@ Has anybody ever tried to make a binary Cygwin distribution with the usual comma
 
 
 
+
 ---
 
-Comment by kcrisman created at 2013-04-12 15:01:31
+archive/issue_comments_055475.json:
+```json
+{
+    "body": "> The whole concept of a \"test directory\" is gone.\nI didn't realize that was part of the change in the doctest framework - I only paid tangential attention to that :(\n> Has anybody ever tried to make a binary Cygwin distribution with the usual command\nNot yet!  (Or, at least not for quite a while - maybe William knows.)  That would be for another ticket :)",
+    "created_at": "2013-04-12T15:01:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55475",
+    "user": "kcrisman"
+}
+```
 
 > The whole concept of a "test directory" is gone.
 I didn't realize that was part of the change in the doctest framework - I only paid tangential attention to that :(
@@ -3770,9 +6295,20 @@ I didn't realize that was part of the change in the doctest framework - I only p
 Not yet!  (Or, at least not for quite a while - maybe William knows.)  That would be for another ticket :)
 
 
+
 ---
 
-Comment by jpflori created at 2013-04-16 09:39:24
+archive/issue_comments_055476.json:
+```json
+{
+    "body": "Replying to [comment:269 jdemeyer]:\n> Has anybody ever tried to make a binary Cygwin distribution with the usual command\n> {{{\n> ./sage --bdist 5.9.beta5\n> }}}\nI tried and it seems to have worked fine.\nI've not tried to unpack the archive into another Cygwin install yet though.",
+    "created_at": "2013-04-16T09:39:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55476",
+    "user": "jpflori"
+}
+```
 
 Replying to [comment:269 jdemeyer]:
 > Has anybody ever tried to make a binary Cygwin distribution with the usual command
@@ -3783,18 +6319,40 @@ I tried and it seems to have worked fine.
 I've not tried to unpack the archive into another Cygwin install yet though.
 
 
+
 ---
 
-Comment by leif created at 2013-04-16 17:26:19
+archive/issue_comments_055477.json:
+```json
+{
+    "body": "[SCNR.](http://www.fsf.org/blogs/community/friends-dont-let-friends-use-windows-8)\n\nShould we ship the info graphic with Sage (and display it on Cygwin)? XD",
+    "created_at": "2013-04-16T17:26:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55477",
+    "user": "leif"
+}
+```
 
 [SCNR.](http://www.fsf.org/blogs/community/friends-dont-let-friends-use-windows-8)
 
 Should we ship the info graphic with Sage (and display it on Cygwin)? XD
 
 
+
 ---
 
-Comment by jpflori created at 2013-04-16 20:19:34
+archive/issue_comments_055478.json:
+```json
+{
+    "body": "Replying to [comment:263 jdemeyer]:\n> Remove the comment about `SAGE_TESTDIR`, that variable isn't used anymore.\nI've begun working on Karl-Dieter patch and came to the conclusion I'd better clean up much more of source.rst which is quite messy.\nSo I propose to move that to another ticket and make it a dependency here.",
+    "created_at": "2013-04-16T20:19:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55478",
+    "user": "jpflori"
+}
+```
 
 Replying to [comment:263 jdemeyer]:
 > Remove the comment about `SAGE_TESTDIR`, that variable isn't used anymore.
@@ -3802,9 +6360,20 @@ I've begun working on Karl-Dieter patch and came to the conclusion I'd better cl
 So I propose to move that to another ticket and make it a dependency here.
 
 
+
 ---
 
-Comment by jpflori created at 2013-04-16 21:25:47
+archive/issue_comments_055479.json:
+```json
+{
+    "body": "Replying to [comment:271 jpflori]:\n> Replying to [comment:269 jdemeyer]:\n> > Has anybody ever tried to make a binary Cygwin distribution with the usual command\n> > {{{\n> > ./sage --bdist 5.9.beta5\n> > }}}\n> I tried and it seems to have worked fine.\n> I've not tried to unpack the archive into another Cygwin install yet though.\nThe archive was produced on 32 bits Windows XP within a virtual machine. \nI've untarred it in another 64 bits Windows 7 still within a virtual machine.\nThe Cygwin setup is basically the same, which surely explains I had no rebase troubles.\nAnd Sage seems to work fine (I've not run \"make ptestlong\" though).\nI can post the build somewhere if someone is interested but it was built on a recent enough Core i7 so won't be that portable.",
+    "created_at": "2013-04-16T21:25:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55479",
+    "user": "jpflori"
+}
+```
 
 Replying to [comment:271 jpflori]:
 > Replying to [comment:269 jdemeyer]:
@@ -3821,26 +6390,59 @@ And Sage seems to work fine (I've not run "make ptestlong" though).
 I can post the build somewhere if someone is interested but it was built on a recent enough Core i7 so won't be that portable.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-04-16 21:39:32
+archive/issue_comments_055480.json:
+```json
+{
+    "body": "That's super-cool. Any chance for a Cygwin buildbot?",
+    "created_at": "2013-04-16T21:39:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55480",
+    "user": "jdemeyer"
+}
+```
 
 That's super-cool. Any chance for a Cygwin buildbot?
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-04-16 21:41:19
+archive/issue_comments_055481.json:
+```json
+{
+    "body": "Replying to [comment:274 jpflori]:\n\n> I can post the build somewhere if someone is interested but it was built on a recent enough Core i7 so won't be that portable.\nIf you build Sage with `SAGE_FAT_BINARY=yes`, it *should* work on other processors too (which doesn't mean that it actually *will*, there are surely bugs with `SAGE_FAT_BINARY`).",
+    "created_at": "2013-04-16T21:41:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55481",
+    "user": "jdemeyer"
+}
+```
 
 Replying to [comment:274 jpflori]:
 
 > I can post the build somewhere if someone is interested but it was built on a recent enough Core i7 so won't be that portable.
-If you build Sage with `SAGE_FAT_BINARY=yes`, it _should_ work on other processors too (which doesn't mean that it actually _will_, there are surely bugs with `SAGE_FAT_BINARY`).
+If you build Sage with `SAGE_FAT_BINARY=yes`, it *should* work on other processors too (which doesn't mean that it actually *will*, there are surely bugs with `SAGE_FAT_BINARY`).
+
 
 
 ---
 
-Comment by dimpase created at 2013-04-17 08:37:46
+archive/issue_comments_055482.json:
+```json
+{
+    "body": "Replying to [comment:275 jdemeyer]:\n> That's super-cool. Any chance for a Cygwin buildbot?\nin some cases one has to rebase the whole Cygwin installation, and this can't be done from within Cygwin. So this requires more hacks, \nand it is not so clear if this will work well enough.\n\nAs a first step towards this one would need to automate rebasing at the time Sage is built. This is already not 100% trivial, as fork errors can manifest themselves in different ways.",
+    "created_at": "2013-04-17T08:37:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55482",
+    "user": "dimpase"
+}
+```
 
 Replying to [comment:275 jdemeyer]:
 > That's super-cool. Any chance for a Cygwin buildbot?
@@ -3850,30 +6452,74 @@ and it is not so clear if this will work well enough.
 As a first step towards this one would need to automate rebasing at the time Sage is built. This is already not 100% trivial, as fork errors can manifest themselves in different ways.
 
 
+
 ---
 
-Comment by jpflori created at 2013-04-17 21:51:34
+archive/issue_comments_055483.json:
+```json
+{
+    "body": "I've put the updated source.rst patch a #14465.",
+    "created_at": "2013-04-17T21:51:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55483",
+    "user": "jpflori"
+}
+```
 
 I've put the updated source.rst patch a #14465.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-05-13 20:39:35
+archive/issue_comments_055484.json:
+```json
+{
+    "body": "Should this ticket be closed or do we want to do that only when there is a Cygwin buildbot?",
+    "created_at": "2013-05-13T20:39:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55484",
+    "user": "jdemeyer"
+}
+```
 
 Should this ticket be closed or do we want to do that only when there is a Cygwin buildbot?
 
 
+
 ---
 
-Comment by jpflori created at 2013-05-13 21:24:04
+archive/issue_comments_055485.json:
+```json
+{
+    "body": "I'd say we can close it.\nOf course, it does not really builds completely automatically because you have to rebase sometimes (i had to do that once for 5.8 and 3 times for 5.9) but at least thats documented and we cannot really solve this prolblem in an easy way without hacking the build system.",
+    "created_at": "2013-05-13T21:24:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55485",
+    "user": "jpflori"
+}
+```
 
 I'd say we can close it.
 Of course, it does not really builds completely automatically because you have to rebase sometimes (i had to do that once for 5.8 and 3 times for 5.9) but at least thats documented and we cannot really solve this prolblem in an easy way without hacking the build system.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-05-22 12:30:20
+archive/issue_comments_055486.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2013-05-22T12:30:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6743#issuecomment-55486",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: fixed

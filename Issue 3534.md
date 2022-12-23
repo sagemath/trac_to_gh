@@ -1,11 +1,21 @@
 # Issue 3534: plot -- fix circle example in the documentation
 
-Issue created by migration from https://trac.sagemath.org/ticket/3534
-
-Original creator: was
-
-Original creation time: 2008-06-30 00:37:59
-
+archive/issues_003534.json:
+```json
+{
+    "body": "Assignee: tba\n\n\n```\n\n> The first example here:\n> http://www.sagemath.org/doc/html/tut/node21.html\n> .. shows creating a circle plot via:\n> L = [[cos(pi*i/100),sin(pi*i/100)] for i in range(200)]\n> p = polygon(L, rgbcolor=(1,1,0))\n> p.save()          ## or   p.show()\n>\n> When I try this, I get an ellipse!  Or more precisely, the plot has\n> unequal axis scaling.\n>\n> Here's a picture:\n> http://backspaces.net/temp/Safari116.png\n\nUse this instead:\n\nL = [[cos(pi*i/100),sin(pi*i/100)] for i in range(200)]\np = polygon(L, rgbcolor=(1,1,0))\np.save(aspect_ratio=1)          ## or   p.show()\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3534\n\n",
+    "created_at": "2008-06-30T00:37:59Z",
+    "labels": [
+        "documentation",
+        "minor",
+        "bug"
+    ],
+    "title": "plot -- fix circle example in the documentation",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3534",
+    "user": "was"
+}
+```
 Assignee: tba
 
 
@@ -33,17 +43,45 @@ p.save(aspect_ratio=1)          ## or   p.show()
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3534
+
+
+
+
 
 ---
 
-Comment by was created at 2008-06-30 00:43:26
+archive/issue_comments_024944.json:
+```json
+{
+    "body": "The attached patch fixes the above issue.  It also greatly improves all the examples to simply\nshow the plots instead of having hacking notes outside the examples to show the plots, which was\ndone before when the doctesting framework couldn't handle plotting.",
+    "created_at": "2008-06-30T00:43:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3534",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3534#issuecomment-24944",
+    "user": "was"
+}
+```
 
 The attached patch fixes the above issue.  It also greatly improves all the examples to simply
 show the plots instead of having hacking notes outside the examples to show the plots, which was
 done before when the doctesting framework couldn't handle plotting.
 
 
+
 ---
+
+archive/issue_comments_024945.json:
+```json
+{
+    "body": "Attachment\n\nIt would be better to patch against the new version of the tutorial (the one in 3.0.4.alpha1): see\n[http://trac.sagemath.org/sage_trac/ticket/3347](http://trac.sagemath.org/sage_trac/ticket/3347).",
+    "created_at": "2008-06-30T02:07:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3534",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3534#issuecomment-24945",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
@@ -51,43 +89,111 @@ It would be better to patch against the new version of the tutorial (the one in 
 [http://trac.sagemath.org/sage_trac/ticket/3347](http://trac.sagemath.org/sage_trac/ticket/3347).
 
 
+
 ---
 
-Comment by mhansen created at 2008-07-02 21:04:29
+archive/issue_comments_024946.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"editor_mhansen\".",
+    "created_at": "2008-07-02T21:04:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3534",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3534#issuecomment-24946",
+    "user": "mhansen"
+}
+```
 
 Changing keywords from "" to "editor_mhansen".
 
 
+
 ---
 
-Comment by mhansen created at 2008-07-02 21:04:29
+archive/issue_comments_024947.json:
+```json
+{
+    "body": "I'll be an editor for this since I did #3347.",
+    "created_at": "2008-07-02T21:04:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3534",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3534#issuecomment-24947",
+    "user": "mhansen"
+}
+```
 
 I'll be an editor for this since I did #3347.
 
 
+
 ---
+
+archive/issue_comments_024948.json:
+```json
+{
+    "body": "Attachment\n\nHere's a new patch, based on William's but done against the new version of the tutorial.  (This means that the details are different, but I've tried to preserve the ideas behind his changes.)",
+    "created_at": "2008-07-15T18:49:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3534",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3534#issuecomment-24948",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
 Here's a new patch, based on William's but done against the new version of the tutorial.  (This means that the details are different, but I've tried to preserve the ideas behind his changes.)
 
 
+
 ---
 
-Comment by mhansen created at 2008-09-16 02:17:27
+archive/issue_comments_024949.json:
+```json
+{
+    "body": "Looks good to me.  I'll make these changes in the ReST version too.",
+    "created_at": "2008-09-16T02:17:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3534",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3534#issuecomment-24949",
+    "user": "mhansen"
+}
+```
 
 Looks good to me.  I'll make these changes in the ReST version too.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-16 03:53:17
+archive/issue_comments_024950.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-09-16T03:53:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3534",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3534#issuecomment-24950",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-16 03:53:17
+archive/issue_comments_024951.json:
+```json
+{
+    "body": "Merged in Sage 3.1.2.rc5",
+    "created_at": "2008-09-16T03:53:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3534",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3534#issuecomment-24951",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.1.2.rc5

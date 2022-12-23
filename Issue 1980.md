@@ -1,11 +1,21 @@
 # Issue 1980: flint fails to build with -fstack-protector
 
-Issue created by migration from https://trac.sagemath.org/ticket/1980
-
-Original creator: malb
-
-Original creation time: 2008-01-30 10:31:07
-
+archive/issues_001980.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nError message:\n\n\n```\n.o mpz_poly.o ZmodF_poly.o long_extras.o -L/home/malb/sage-2.10.1.rc2-stack-protector/local/lib/  -\nlgmp -lpthread -lm\n/home/malb/sage-2.10.1.rc2-stack-protector/local/lib//libgmp.so: undefined reference to `__stack_chk_guard'\n/home/malb/sage-2.10.1.rc2-stack-protector/local/lib//libgmp.so: undefined reference to `__stack_chk_fail'\ncollect2: ld returned 1 exit status\nmake[2]: *** [mpn_extras-test] Error 1\nmake[2]: Leaving directory `/home/malb/sage-2.10.1.rc2-stack-protector/spkg/build/flint-1.06/src'\n./spkg-check: line 46: ./mpn_extras-test: No such file or directory\n./spkg-check: line 47: ./ZmodF-test: No such file or directory\n...\n```\n\n\nSee http://lists.debian.org/debian-devel-announce/2008/01/msg00006.html and http://wiki.debian.org/Hardening for rationale of `-fstack-protector`.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1980\n\n",
+    "created_at": "2008-01-30T10:31:07Z",
+    "labels": [
+        "packages: standard",
+        "minor",
+        "bug"
+    ],
+    "title": "flint fails to build with -fstack-protector",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1980",
+    "user": "malb"
+}
+```
 Assignee: mabshoff
 
 Error message:
@@ -28,10 +38,25 @@ make[2]: Leaving directory `/home/malb/sage-2.10.1.rc2-stack-protector/spkg/buil
 See http://lists.debian.org/debian-devel-announce/2008/01/msg00006.html and http://wiki.debian.org/Hardening for rationale of `-fstack-protector`.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1980
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-01-30 10:34:24
+archive/issue_comments_012834.json:
+```json
+{
+    "body": "Did the `-fstack-protector` get passed on to gmp? How do you pass `CFLAGS` and so on to all the other packages? \n\nCheers,\n\nMichael",
+    "created_at": "2008-01-30T10:34:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1980",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1980#issuecomment-12834",
+    "user": "mabshoff"
+}
+```
 
 Did the `-fstack-protector` get passed on to gmp? How do you pass `CFLAGS` and so on to all the other packages? 
 
@@ -40,9 +65,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by malb created at 2008-01-30 10:37:36
+archive/issue_comments_012835.json:
+```json
+{
+    "body": "Sorry for being ambiguous. To reproduce:\n\n\n```\nexport CFLAGS=\"-fstack-protector\"\nexport CXXLAGS=\"-fstack-protector\"\ncd <SAGE_ROOT>\nmake\n```\n\n\nThis requires GCC 4.1 and up.",
+    "created_at": "2008-01-30T10:37:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1980",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1980#issuecomment-12835",
+    "user": "malb"
+}
+```
 
 Sorry for being ambiguous. To reproduce:
 
@@ -58,29 +94,73 @@ make
 This requires GCC 4.1 and up.
 
 
+
 ---
 
-Comment by malb created at 2008-01-30 10:38:12
+archive/issue_comments_012836.json:
+```json
+{
+    "body": "erm, it is supposed to be `CXXFLAGS`.",
+    "created_at": "2008-01-30T10:38:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1980",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1980#issuecomment-12836",
+    "user": "malb"
+}
+```
 
 erm, it is supposed to be `CXXFLAGS`.
 
 
+
 ---
 
-Comment by aapitzsch created at 2014-08-18 18:30:17
+archive/issue_comments_012837.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2014-08-18T18:30:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1980",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1980#issuecomment-12837",
+    "user": "aapitzsch"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by aapitzsch created at 2014-08-18 18:30:17
+archive/issue_comments_012838.json:
+```json
+{
+    "body": "Works for me.",
+    "created_at": "2014-08-18T18:30:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1980",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1980#issuecomment-12838",
+    "user": "aapitzsch"
+}
+```
 
 Works for me.
 
 
+
 ---
 
-Comment by vbraun created at 2014-10-25 21:43:59
+archive/issue_comments_012839.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2014-10-25T21:43:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1980",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1980#issuecomment-12839",
+    "user": "vbraun"
+}
+```
 
 Resolution: fixed

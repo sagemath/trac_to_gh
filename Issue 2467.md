@@ -1,11 +1,21 @@
 # Issue 2467: sage-2.10.3: failures in tut.tex
 
-Issue created by migration from https://trac.sagemath.org/ticket/2467
-
-Original creator: was
-
-Original creation time: 2008-03-11 02:26:45
-
+archive/issues_002467.json:
+```json
+{
+    "body": "Assignee: failure\n\n\n```\nsage -t  tut.tex                                            **********************************************************************\nFile \"tut.py\", line 1453:\n    : eigvecs = g.eigenspaces()[0][1], g.eigenspaces()[1][1]; eigvecs\nExpected:\n    ([\n    (1, 5)\n    ], [\n    (1, 1)\n    ])\nGot:\n    (Vector space of degree 2 and dimension 1 over Finite Field of size 7\n    User basis matrix:\n    [1 5], Vector space of degree 2 and dimension 1 over Finite Field of size 7\n    User basis matrix:\n    [1 1])\n**********************************************************************\nFile \"tut.py\", line 1604:\n    : e.word_problem([b1,b2,b3,b4,b5],display=False)\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/was/build/sage-2.10.3.rc3/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_63[7]>\", line 1, in <module>\n        e.word_problem([b1,b2,b3,b4,b5],display=False)###line 1604:\n    : e.word_problem([b1,b2,b3,b4,b5],display=False)\n    TypeError: word_problem() got an unexpected keyword argument 'display'\n**********************************************************************\n2 items had failures:\n   1 of   4 in __main__.example_57\n   1 of  16 in __main__.example_63\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file .doctest_tut.tex\n\t [17.5 s]\nexit code: 256\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  tut.tex\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2467\n\n",
+    "created_at": "2008-03-11T02:26:45Z",
+    "labels": [
+        "doctest coverage",
+        "blocker",
+        "bug"
+    ],
+    "title": "sage-2.10.3: failures in tut.tex",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2467",
+    "user": "was"
+}
+```
 Assignee: failure
 
 
@@ -53,16 +63,42 @@ The following tests failed:
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2467
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-03-11 02:50:29
+archive/issue_comments_016715.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-03-11T02:50:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2467",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2467#issuecomment-16715",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-11 02:50:29
+archive/issue_comments_016716.json:
+```json
+{
+    "body": "Same as #2371.",
+    "created_at": "2008-03-11T02:50:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2467",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2467#issuecomment-16716",
+    "user": "mabshoff"
+}
+```
 
 Same as #2371.

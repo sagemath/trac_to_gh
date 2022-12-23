@@ -1,11 +1,21 @@
 # Issue 2364: animate .show() method is poorly documented
 
-Issue created by migration from https://trac.sagemath.org/ticket/2364
-
-Original creator: cwitty
-
-Original creation time: 2008-03-01 22:14:14
-
+archive/issues_002364.json:
+```json
+{
+    "body": "Assignee: was\n\nIt should be better documented in animate.py how to specify the interframe delay and the number of iterations.  At the very least, this should be described in the .show() docstring; better yet if it was also documented in the class docstring for Animation, which is what you see when you type:\n\n```\nsage: animate?\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2364\n\n",
+    "created_at": "2008-03-01T22:14:14Z",
+    "labels": [
+        "algebraic geometry",
+        "major",
+        "bug"
+    ],
+    "title": "animate .show() method is poorly documented",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2364",
+    "user": "cwitty"
+}
+```
 Assignee: was
 
 It should be better documented in animate.py how to specify the interframe delay and the number of iterations.  At the very least, this should be described in the .show() docstring; better yet if it was also documented in the class docstring for Animation, which is what you see when you type:
@@ -16,22 +26,61 @@ sage: animate?
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2364
+
+
+
+
 
 ---
 
-Comment by AlexGhitza created at 2008-03-16 02:23:52
+archive/issue_comments_015939.json:
+```json
+{
+    "body": "Changing component from algebraic geometry to documentation.",
+    "created_at": "2008-03-16T02:23:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2364",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2364#issuecomment-15939",
+    "user": "AlexGhitza"
+}
+```
 
 Changing component from algebraic geometry to documentation.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2008-03-16 02:23:52
+archive/issue_comments_015940.json:
+```json
+{
+    "body": "Changing assignee from was to tba.",
+    "created_at": "2008-03-16T02:23:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2364",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2364#issuecomment-15940",
+    "user": "AlexGhitza"
+}
+```
 
 Changing assignee from was to tba.
 
 
+
 ---
+
+archive/issue_comments_015941.json:
+```json
+{
+    "body": "Attachment\n\nHere's a patch, based on 3.1.3.alpha2. I started working on animate.py before I knew about this ticket, so the patch does more than is required:\n\n1. It improves the documentation for `show` and `animate`, as requested.\n\n2. It adds docstrings and doctests to several functions for which they were missing; the file now has over 90% coverage.  (Only `__init__` is undocumented now.)\n\n3. Many doctests used to be optional, things like\n\n```\nsage: a = animate([sin(x + float(k)) for k in srange(0,2*pi,0.3)], \n...                xmin=0, xmax=2*pi, figsize=[2,1])\n```\n\nThese don't need to be optional -- the optional part comes in calls to `a.show()`, which calls the `convert` program -- so I've removed lots of optional tags. This way more of the code is actually doctested.\n\n4. I also deleted one method: `_set_axes`. This method was undocumented. It was short and pretty simple. It was also called every time an animation was created; indeed, that was its only appearance in the code. So I just copied its contents (only 5 lines) to where it was called in the `__init__` method.",
+    "created_at": "2008-10-01T21:07:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2364",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2364#issuecomment-15941",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
@@ -53,16 +102,38 @@ These don't need to be optional -- the optional part comes in calls to `a.show()
 4. I also deleted one method: `_set_axes`. This method was undocumented. It was short and pretty simple. It was also called every time an animation was created; indeed, that was its only appearance in the code. So I just copied its contents (only 5 lines) to where it was called in the `__init__` method.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2008-10-01 21:07:15
+archive/issue_comments_015942.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"animate, documentation, doctest\".",
+    "created_at": "2008-10-01T21:07:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2364",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2364#issuecomment-15942",
+    "user": "jhpalmieri"
+}
+```
 
 Changing keywords from "" to "animate, documentation, doctest".
 
 
+
 ---
 
-Comment by jhpalmieri created at 2008-10-01 21:11:37
+archive/issue_comments_015943.json:
+```json
+{
+    "body": "5. Oh, one other thing: in the `gif` method (and hence in `save` and `show` which call it), I added a message saying where the file was being saved.  Before, you would type\n\n```\na.save('bozo.gif')\n```\n\nand, if you were using the notebook interface, the file would be saved something like 5 subdirectories below .sage.  This is still true, but at least now you're told where the file is.",
+    "created_at": "2008-10-01T21:11:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2364",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2364#issuecomment-15943",
+    "user": "jhpalmieri"
+}
+```
 
 5. Oh, one other thing: in the `gif` method (and hence in `save` and `show` which call it), I added a message saying where the file was being saved.  Before, you would type
 
@@ -73,34 +144,80 @@ a.save('bozo.gif')
 and, if you were using the notebook interface, the file would be saved something like 5 subdirectories below .sage.  This is still true, but at least now you're told where the file is.
 
 
+
 ---
 
-Comment by mhampton created at 2008-10-22 19:40:52
+archive/issue_comments_015944.json:
+```json
+{
+    "body": "Although I too have been frustrated sometimes by the depth of the saves of things in sage, I don't think I like the solution here of always printing the path.  I think this should be an option - perhaps a keyword/default like show_path = False, and if show_path were True then the path is displayed.  That would also be useful for other saved graphics as well.\n\nOtherwise this patch gets a very positive review; in general the show() documentation needs a lot of work and this is a great step in that direction.",
+    "created_at": "2008-10-22T19:40:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2364",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2364#issuecomment-15944",
+    "user": "mhampton"
+}
+```
 
 Although I too have been frustrated sometimes by the depth of the saves of things in sage, I don't think I like the solution here of always printing the path.  I think this should be an option - perhaps a keyword/default like show_path = False, and if show_path were True then the path is displayed.  That would also be useful for other saved graphics as well.
 
 Otherwise this patch gets a very positive review; in general the show() documentation needs a lot of work and this is a great step in that direction.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2008-10-22 20:59:44
+archive/issue_comments_015945.json:
+```json
+{
+    "body": "do not apply: this is only here to help the referee",
+    "created_at": "2008-10-22T20:59:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2364",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2364#issuecomment-15945",
+    "user": "jhpalmieri"
+}
+```
 
 do not apply: this is only here to help the referee
 
 
+
 ---
+
+archive/issue_comments_015946.json:
+```json
+{
+    "body": "Attachment\n\nHere are two new patches to deal with mhampton's comments.  The one which should be applied is **2364-new.patch**.  The other patch, **2364-delta.patch**, shows the difference between the old patch and the new patch.  This way mhampton (for example) can referee the new patch more easily, I hope.  \n\n(That is, if you apply the original patch and then 2364-delta.patch, it should give the same result as just applying the new patch.  I'm trying to achieve ease of refereeing as well as ease of incorporating the patch...)",
+    "created_at": "2008-10-22T21:04:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2364",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2364#issuecomment-15946",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
-Here are two new patches to deal with mhampton's comments.  The one which should be applied is *2364-new.patch*.  The other patch, *2364-delta.patch*, shows the difference between the old patch and the new patch.  This way mhampton (for example) can referee the new patch more easily, I hope.  
+Here are two new patches to deal with mhampton's comments.  The one which should be applied is **2364-new.patch**.  The other patch, **2364-delta.patch**, shows the difference between the old patch and the new patch.  This way mhampton (for example) can referee the new patch more easily, I hope.  
 
 (That is, if you apply the original patch and then 2364-delta.patch, it should give the same result as just applying the new patch.  I'm trying to achieve ease of refereeing as well as ease of incorporating the patch...)
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-28 12:49:43
+archive/issue_comments_015947.json:
+```json
+{
+    "body": "I don't particularly like the delta patch, i.e. the test file generated should be saved in SAGE_TMP for example since the $SAGE_ROOT tree or cwd might not be writable. \n\nCheers,\n\nMichael",
+    "created_at": "2008-10-28T12:49:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2364",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2364#issuecomment-15947",
+    "user": "mabshoff"
+}
+```
 
 I don't particularly like the delta patch, i.e. the test file generated should be saved in SAGE_TMP for example since the $SAGE_ROOT tree or cwd might not be writable. 
 
@@ -109,9 +226,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by jhpalmieri created at 2008-10-28 14:46:51
+archive/issue_comments_015948.json:
+```json
+{
+    "body": "Replying to [comment:6 mabshoff]:\n> I don't particularly like the delta patch, i.e. the test file generated should be saved in SAGE_TMP for example since the $SAGE_ROOT tree or cwd might not be writable. \n\nI didn't change the location of the file -- as far as I know it's always been this way.  Given this, it seems like the patch does not make anything worse, and for the most part improves the original file.  I think the issue about the location of the save file should be a new ticket.",
+    "created_at": "2008-10-28T14:46:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2364",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2364#issuecomment-15948",
+    "user": "jhpalmieri"
+}
+```
 
 Replying to [comment:6 mabshoff]:
 > I don't particularly like the delta patch, i.e. the test file generated should be saved in SAGE_TMP for example since the $SAGE_ROOT tree or cwd might not be writable. 
@@ -119,9 +247,20 @@ Replying to [comment:6 mabshoff]:
 I didn't change the location of the file -- as far as I know it's always been this way.  Given this, it seems like the patch does not make anything worse, and for the most part improves the original file.  I think the issue about the location of the save file should be a new ticket.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-28 14:49:58
+archive/issue_comments_015949.json:
+```json
+{
+    "body": "Replying to [comment:7 jhpalmieri]:\n\n> I didn't change the location of the file -- as far as I know it's always been this way.  Given this, it seems like the patch does not make anything worse, and for the most part improves the original file.  I think the issue about the location of the save file should be a new ticket.\n\nSure. The issue will pop up once somebody runs doctests as non-owner. I don't particularly care if that issue gets fixed now or not, so a new ticket would get this patch a positive review.\n\nCheers,\n\nMichael",
+    "created_at": "2008-10-28T14:49:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2364",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2364#issuecomment-15949",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:7 jhpalmieri]:
 
@@ -134,18 +273,40 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by jhpalmieri created at 2008-10-28 15:01:53
+archive/issue_comments_015950.json:
+```json
+{
+    "body": "Unfortunately (?), doctests won't catch it, since these commands are all optional -- they all rely on the `convert` command being present.\n\n  John",
+    "created_at": "2008-10-28T15:01:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2364",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2364#issuecomment-15950",
+    "user": "jhpalmieri"
+}
+```
 
 Unfortunately (?), doctests won't catch it, since these commands are all optional -- they all rely on the `convert` command being present.
 
   John
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-28 15:06:04
+archive/issue_comments_015951.json:
+```json
+{
+    "body": "Replying to [comment:9 jhpalmieri]:\n> Unfortunately (?), doctests won't catch it, since these commands are all optional -- they all rely on the `convert` command being present.\n> \n>   John\n\nYes, but someone [can you guess? :)] has started running Sage with \"-t -long -optional\", so in the future we will catch this. I am all for merging this patch after someone verifies that the animate command still works as expected. \n\nCheers,\n\nMichael",
+    "created_at": "2008-10-28T15:06:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2364",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2364#issuecomment-15951",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:9 jhpalmieri]:
 > Unfortunately (?), doctests won't catch it, since these commands are all optional -- they all rely on the `convert` command being present.
@@ -159,9 +320,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by jhpalmieri created at 2008-10-28 18:43:31
+archive/issue_comments_015952.json:
+```json
+{
+    "body": "Oh dear.  I don't know how to write the doctests, then.  For example, I have a doctest which shows what happens when `convert` is missing: \n\n```\n        If ImageMagick is not installed, you will get an error message:\n            sage: a.gif()       # optional\n            /usr/local/share/sage/local/bin/sage-native-execute: 8: convert: not\n            found\n\n            Error: ImageMagick does not appear to be installed. Saving an\n            animation to a GIF file or displaying an animation requires\n            ImageMagick, so please install it and try again.\n\n            See www.imagemagick.org, for example.\n```\n\nThis will fail if you run the optional doctests with `convert` installed.  Should I delete the doctest and just display the error message?\n\nAlso, I have doctests like this\n\n```\n            sage: a.save(show_path=True)  # optional\n            Animation saved to file /home/isaac/.sage/sage0.gif.\n```\n\nin which I have inserted an invented pathname. What should I do about these?",
+    "created_at": "2008-10-28T18:43:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2364",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2364#issuecomment-15952",
+    "user": "jhpalmieri"
+}
+```
 
 Oh dear.  I don't know how to write the doctests, then.  For example, I have a doctest which shows what happens when `convert` is missing: 
 
@@ -190,9 +362,20 @@ Also, I have doctests like this
 in which I have inserted an invented pathname. What should I do about these?
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-28 18:56:14
+archive/issue_comments_015953.json:
+```json
+{
+    "body": "Replying to [comment:11 jhpalmieri]:\n> Oh dear.  I don't know how to write the doctests, then.  For example, I have a doctest which shows what happens when `convert` is missing: \n> {{{\n>         If ImageMagick is not installed, you will get an error message:\n>             sage: a.gif()       # optional\n>             /usr/local/share/sage/local/bin/sage-native-execute: 8: convert: not\n>             found\n> \n>             Error: ImageMagick does not appear to be installed. Saving an\n>             animation to a GIF file or displaying an animation requires\n>             ImageMagick, so please install it and try again.\n> \n>             See www.imagemagick.org, for example.\n> }}}\n> This will fail if you run the optional doctests with `convert` installed.  Should I delete the doctest and just display the error message?\n\nNope, if someone runs optional doctests and the binary required is not there it will blow up. Nothing can change that until we have a more clever \"#optinal\" doctest treatment. \n\n> Also, I have doctests like this\n> {{{\n>             sage: a.save(show_path=True)  # optional\n>             Animation saved to file /home/isaac/.sage/sage0.gif.\n> }}}\n> in which I have inserted an invented pathname. What should I do about these?\n\nThis would need to be changed to \n\n \"Animation saved to file .../sage0.gif.\"\n\nCheers,\n\nMichael",
+    "created_at": "2008-10-28T18:56:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2364",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2364#issuecomment-15953",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:11 jhpalmieri]:
 > Oh dear.  I don't know how to write the doctests, then.  For example, I have a doctest which shows what happens when `convert` is missing: 
@@ -228,36 +411,84 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by jhpalmieri created at 2008-10-28 19:58:27
+archive/issue_comments_015954.json:
+```json
+{
+    "body": "fix optional doctests",
+    "created_at": "2008-10-28T19:58:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2364",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2364#issuecomment-15954",
+    "user": "jhpalmieri"
+}
+```
 
 fix optional doctests
 
 
+
 ---
+
+archive/issue_comments_015955.json:
+```json
+{
+    "body": "Attachment\n\nonly apply this patch!",
+    "created_at": "2008-10-28T19:58:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2364",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2364#issuecomment-15955",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
 only apply this patch!
 
 
+
 ---
+
+archive/issue_comments_015956.json:
+```json
+{
+    "body": "Attachment\n\nHere are two patches, fixing the optional doctests.  Now `sage -t -optional animate.py` works on my machine.\n\nThe patch **2364-doctest-delta.patch** shows the differences between the previous patch and this one: only a few doctests were changed.\n\nThe patch **2364-new.patch** incorporates all of the patches into one file (so if you apply 2364.patch, 2364-delta.patch, and 2364-doctest-delta.patch, you will get the same as if you just applied this one).\n\nSo: either the two delta patches need to be refereed (since 2364.patch has received an essentially positive review), or 2364-new.patch needs to be refereed.",
+    "created_at": "2008-10-28T20:04:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2364",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2364#issuecomment-15956",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
 Here are two patches, fixing the optional doctests.  Now `sage -t -optional animate.py` works on my machine.
 
-The patch *2364-doctest-delta.patch* shows the differences between the previous patch and this one: only a few doctests were changed.
+The patch **2364-doctest-delta.patch** shows the differences between the previous patch and this one: only a few doctests were changed.
 
-The patch *2364-new.patch* incorporates all of the patches into one file (so if you apply 2364.patch, 2364-delta.patch, and 2364-doctest-delta.patch, you will get the same as if you just applied this one).
+The patch **2364-new.patch** incorporates all of the patches into one file (so if you apply 2364.patch, 2364-delta.patch, and 2364-doctest-delta.patch, you will get the same as if you just applied this one).
 
 So: either the two delta patches need to be refereed (since 2364.patch has received an essentially positive review), or 2364-new.patch needs to be refereed.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-30 08:39:29
+archive/issue_comments_015957.json:
+```json
+{
+    "body": "Bug Day 15 review material. This patch could bit rot easily, so let's get it in.\n\nCheers,\n\nMichael",
+    "created_at": "2008-10-30T08:39:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2364",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2364#issuecomment-15957",
+    "user": "mabshoff"
+}
+```
 
 Bug Day 15 review material. This patch could bit rot easily, so let's get it in.
 
@@ -266,22 +497,55 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mhampton created at 2008-10-30 12:21:12
+archive/issue_comments_015958.json:
+```json
+{
+    "body": "Thanks for incorporating all those changes.  I think this looks very good now.  Optional tests pass on my machine.",
+    "created_at": "2008-10-30T12:21:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2364",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2364#issuecomment-15958",
+    "user": "mhampton"
+}
+```
 
 Thanks for incorporating all those changes.  I think this looks very good now.  Optional tests pass on my machine.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-30 16:20:10
+archive/issue_comments_015959.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-10-30T16:20:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2364",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2364#issuecomment-15959",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-30 16:20:10
+archive/issue_comments_015960.json:
+```json
+{
+    "body": "Merged 2364-new.patch in Sage 3.2.alpha2",
+    "created_at": "2008-10-30T16:20:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2364",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2364#issuecomment-15960",
+    "user": "mabshoff"
+}
+```
 
 Merged 2364-new.patch in Sage 3.2.alpha2

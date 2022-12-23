@@ -1,11 +1,21 @@
 # Issue 2329: [with patch, needs review] add interface to Pari's rnfisnorm
 
-Issue created by migration from https://trac.sagemath.org/ticket/2329
-
-Original creator: craigcitro
-
-Original creation time: 2008-02-27 09:03:44
-
+archive/issues_002329.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  ncalexan mstreng jdemeyer\n\nThis patch adds support to solve norm equations via Pari. \n\nQuick summary: given an element `x` of any number field (even `QQ`), `x.is_norm(L)` will return `False` if `x` is not a norm from `L`, and if `x` is a norm from `L`, will return an element of `L` whose norm is `x`. \n\nAccording to the Pari documentation, these functions depend on GRH when `L/K` is not known to be Galois, and work independent of any such hypothesis otherwise (at least, that's what I got from reading the Pari manual). \n\nThe data used by Pari to compute whether or not an element is a norm can be computed once for each extension `L/K`. The function `pari_rnfnorm_data` computes exactly this, and its result can be passed to `is_norm` to avoid recomputing it each time in the case that `K != QQ`. If `K` is `QQ`, there is no need to save any such data -- the only data needed is that of `K.pari_bnf()`, which is used instead, and is already cached by `K`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2329\n\n",
+    "created_at": "2008-02-27T09:03:44Z",
+    "labels": [
+        "number theory",
+        "minor",
+        "enhancement"
+    ],
+    "title": "[with patch, needs review] add interface to Pari's rnfisnorm",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2329",
+    "user": "craigcitro"
+}
+```
 Assignee: was
 
 CC:  ncalexan mstreng jdemeyer
@@ -18,15 +28,43 @@ According to the Pari documentation, these functions depend on GRH when `L/K` is
 
 The data used by Pari to compute whether or not an element is a norm can be computed once for each extension `L/K`. The function `pari_rnfnorm_data` computes exactly this, and its result can be passed to `is_norm` to avoid recomputing it each time in the case that `K != QQ`. If `K` is `QQ`, there is no need to save any such data -- the only data needed is that of `K.pari_bnf()`, which is used instead, and is already cached by `K`.
 
+Issue created by migration from https://trac.sagemath.org/ticket/2329
+
+
+
+
 
 ---
+
+archive/issue_comments_015503.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-02-27T09:04:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15503",
+    "user": "craigcitro"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by ncalexan created at 2008-02-27 19:41:51
+archive/issue_comments_015504.json:
+```json
+{
+    "body": "I have some questions.\n\nThere seems to be two things in this patch: changes to pari/gen, and access to stuff to do with norms.  Is the latter independent of the former?  I'd be a lot happier with the latter if that's true, because I'm not expert in the Pari interface.\n\nAlso, what relation does this have to \"elements_of_norm\"?  There needs to be some unification, I think.  Also, having is_norm() not always return a boolean is not good, IMO.  I say is_norm -> Boolean and element_of_norm raises an exception if is_norm is not True.\n\nI will gladly referee and have cc'ed myself.",
+    "created_at": "2008-02-27T19:41:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15504",
+    "user": "ncalexan"
+}
+```
 
 I have some questions.
 
@@ -37,47 +75,128 @@ Also, what relation does this have to "elements_of_norm"?  There needs to be som
 I will gladly referee and have cc'ed myself.
 
 
+
 ---
 
-Comment by craigcitro created at 2008-02-27 21:49:41
+archive/issue_comments_015505.json:
+```json
+{
+    "body": "Changing assignee from was to craigcitro.",
+    "created_at": "2008-02-27T21:49:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15505",
+    "user": "craigcitro"
+}
+```
 
 Changing assignee from was to craigcitro.
 
 
+
 ---
 
-Comment by craigcitro created at 2008-02-27 21:49:41
+archive/issue_comments_015506.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-02-27T21:49:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15506",
+    "user": "craigcitro"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by ncalexan created at 2008-03-31 23:45:38
+archive/issue_comments_015507.json:
+```json
+{
+    "body": "Craig, what's the status on this patch?  I need it as we speak :)  Are you interested in completing this or should I implement the changes I think are necessary and kick it back to you for refereeing?",
+    "created_at": "2008-03-31T23:45:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15507",
+    "user": "ncalexan"
+}
+```
 
 Craig, what's the status on this patch?  I need it as we speak :)  Are you interested in completing this or should I implement the changes I think are necessary and kick it back to you for refereeing?
 
 
+
 ---
 
-Comment by craigcitro created at 2008-04-01 00:19:36
+archive/issue_comments_015508.json:
+```json
+{
+    "body": "Nick, I'd be more than happy to have you finish this guy off. I think all the code is there, it just needs to be cleaned up and unified here and there. I just haven't had time to get back to it since you posted the referee report -- but if you want to clean this up, I'll review it for you lickety-split.",
+    "created_at": "2008-04-01T00:19:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15508",
+    "user": "craigcitro"
+}
+```
 
 Nick, I'd be more than happy to have you finish this guy off. I think all the code is there, it just needs to be cleaned up and unified here and there. I just haven't had time to get back to it since you posted the referee report -- but if you want to clean this up, I'll review it for you lickety-split.
 
 
+
 ---
 
-Comment by craigcitro created at 2008-04-05 23:41:38
+archive/issue_comments_015509.json:
+```json
+{
+    "body": "Added a second patch that addresses all of the above issues.",
+    "created_at": "2008-04-05T23:41:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15509",
+    "user": "craigcitro"
+}
+```
 
 Added a second patch that addresses all of the above issues.
 
 
+
 ---
+
+archive/issue_comments_015510.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-04-06T23:09:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15510",
+    "user": "craigcitro"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_015511.json:
+```json
+{
+    "body": "Attachment\n\nThe last patch separates out very useful fixes to the pari/gen.pyx that should be applied now.\n\nThe remainder of the functionality requires some more substantial changes and is a work in progress.",
+    "created_at": "2008-04-15T06:23:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15511",
+    "user": "ncalexan"
+}
+```
 
 Attachment
 
@@ -86,16 +205,38 @@ The last patch separates out very useful fixes to the pari/gen.pyx that should b
 The remainder of the functionality requires some more substantial changes and is a work in progress.
 
 
+
 ---
 
-Comment by craigcitro created at 2008-06-20 04:30:06
+archive/issue_comments_015512.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"editor_craigcitro\".",
+    "created_at": "2008-06-20T04:30:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15512",
+    "user": "craigcitro"
+}
+```
 
 Changing keywords from "" to "editor_craigcitro".
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-27 22:34:29
+archive/issue_comments_015513.json:
+```json
+{
+    "body": "This has been sitting around forever. Any movement here?\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-27T22:34:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15513",
+    "user": "mabshoff"
+}
+```
 
 This has been sitting around forever. Any movement here?
 
@@ -104,30 +245,74 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-07-20 19:55:45
+archive/issue_comments_015514.json:
+```json
+{
+    "body": "Changing component from number theory to number fields.",
+    "created_at": "2009-07-20T19:55:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15514",
+    "user": "davidloeffler"
+}
+```
 
 Changing component from number theory to number fields.
 
 
+
 ---
 
-Comment by mstreng created at 2010-07-10 13:10:29
+archive/issue_comments_015515.json:
+```json
+{
+    "body": "Same question as mabshoff 22 months ago...",
+    "created_at": "2010-07-10T13:10:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15515",
+    "user": "mstreng"
+}
+```
 
 Same question as mabshoff 22 months ago...
 
 
+
 ---
 
-Comment by mstreng created at 2010-08-17 14:04:06
+archive/issue_comments_015516.json:
+```json
+{
+    "body": "Changing priority from minor to major.",
+    "created_at": "2010-08-17T14:04:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15516",
+    "user": "mstreng"
+}
+```
 
 Changing priority from minor to major.
 
 
+
 ---
 
-Comment by mstreng created at 2010-08-17 14:04:06
+archive/issue_comments_015517.json:
+```json
+{
+    "body": "As nobody replied here any more, I attacked the ticket myself by changing Craig's patch.\n\nI've addressed Nick's concerns and replaced the documentation to reflect better what is in the Pari documentation (which weakens some claims considerably unfortunately).\n\nx.is_norm() now decides whether an element x is a norm (proven output), while x.rnfisnorm() gives exactly the output that Pari's rnfisnorm would give.\n\nThe output of is_norm is True or False. With element=True, it also gives an element of norm x (or None if it doesn't exist). The function element_of_norm is removed, to avoid confusion with elements_of_norm.",
+    "created_at": "2010-08-17T14:04:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15517",
+    "user": "mstreng"
+}
+```
 
 As nobody replied here any more, I attacked the ticket myself by changing Craig's patch.
 
@@ -138,16 +323,40 @@ x.is_norm() now decides whether an element x is a norm (proven output), while x.
 The output of is_norm is True or False. With element=True, it also gives an element of norm x (or None if it doesn't exist). The function element_of_norm is removed, to avoid confusion with elements_of_norm.
 
 
+
 ---
+
+archive/issue_comments_015518.json:
+```json
+{
+    "body": "Attachment\n\napply only this latest file",
+    "created_at": "2010-08-18T14:09:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15518",
+    "user": "mstreng"
+}
+```
 
 Attachment
 
 apply only this latest file
 
 
+
 ---
 
-Comment by mstreng created at 2010-08-18 14:12:12
+archive/issue_comments_015519.json:
+```json
+{
+    "body": "Ready for review, volunteer needed!\n\nThe only doctest that failed fails without the patch as well:\n\n```\nK.<a> = QuadraticField(-5)\nK.selmer_group([K.ideal(2, -a+1), K.ideal(3, a+1), K.ideal(a)], 3)\n[2, a + 1, a]\n```\n\nThe documentation says it should be `[2, a+1, -a]`",
+    "created_at": "2010-08-18T14:12:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15519",
+    "user": "mstreng"
+}
+```
 
 Ready for review, volunteer needed!
 
@@ -162,16 +371,38 @@ K.selmer_group([K.ideal(2, -a+1), K.ideal(3, a+1), K.ideal(a)], 3)
 The documentation says it should be `[2, a+1, -a]`
 
 
+
 ---
 
-Comment by mstreng created at 2010-08-18 14:12:12
+archive/issue_comments_015520.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-08-18T14:12:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15520",
+    "user": "mstreng"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by davidloeffler created at 2010-09-23 09:47:13
+archive/issue_comments_015521.json:
+```json
+{
+    "body": "Patch applies fine under 4.6.alpha1 but fails to compile:\n\n```\nError converting Pyrex file to C:\n------------------------------------------------------------\n...\n        return self.new_gen(thueinit(self.g, flag, prec))\n\n\n    def rnfisnorminit(self, polrel, flag=2):\n        _sig_on\n        return self.new_gen(rnfisnorminit(self.g, (<gen>polrel).g, flag))\n                                        ^\n------------------------------------------------------------\n\n/storage/masiao/sage-4.6.alpha1/devel/sage-hacking/sage/libs/pari/gen.pyx:7160:41: undeclared name not builtin: rnfisnorminit\n```\n\nAdding \n\n```\n    GEN     rnfisnorminit(GEN T, GEN relpol, int galois)\n```\n\nto `sage/libs/pari/decl.pxi` fixes that issue, but this reveals another failure:\n\n```\nsage/libs/pari/gen.c: In function \u2018__pyx_pf_4sage_4libs_4pari_3gen_3gen_bnfisnorm\u2019:\nsage/libs/pari/gen.c:24097: error: too many arguments to function \u2018bnfisnorm\u2019\n```\n\nThis seems to be because the \"prec\" argument to \"bnfisnorm\" has been removed, but taking out the extra argument, it *still* doesn't work:\n\n```\nsage -t  number_field_element.pyx\n**********************************************************************\nFile \"/storage/masiao/sage-4.6.alpha1/devel/sage-hacking/sage/rings/number_field/number_field_element.pyx\", line 971:\n    sage: (beta/2).is_norm(L)\nException raised:\n    Traceback (most recent call last):\n      File \"/storage/masiao/sage-4.6.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/storage/masiao/sage-4.6.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/storage/masiao/sage-4.6.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_28[5]>\", line 1, in <module>\n        (beta/Integer(2)).is_norm(L)###line 971:\n    sage: (beta/2).is_norm(L)\n      File \"number_field_element.pyx\", line 999, in sage.rings.number_field.number_field_element.NumberFieldElement.is_norm (sage/rings/number_field/number_field_element.cpp:8726)\n        return self.is_norm(L, element = True, proof = proof)[0]\n      File \"number_field_element.pyx\", line 1017, in sage.rings.number_field.number_field_element.NumberFieldElement.is_norm (sage/rings/number_field/number_field_element.cpp:9083)\n        a, b = self.rnfisnorm(L, certify = proof)\n      File \"number_field_element.pyx\", line 1108, in sage.rings.number_field.number_field_element.NumberFieldElement.rnfisnorm (sage/rings/number_field/number_field_element.cpp:9820)\n        x, q = self._pari_('y').rnfisnorm(rnf_data)\n      File \"gen.pyx\", line 9470, in sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:45353)\n    PariError:  (5)\n**********************************************************************\n```\n\nAt that point I gave up. Sorry. That's \"needs work\".\n\nDavid",
+    "created_at": "2010-09-23T09:47:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15521",
+    "user": "davidloeffler"
+}
+```
 
 Patch applies fine under 4.6.alpha1 but fails to compile:
 
@@ -238,23 +469,56 @@ At that point I gave up. Sorry. That's "needs work".
 David
 
 
+
 ---
 
-Comment by davidloeffler created at 2010-09-23 09:47:13
+archive/issue_comments_015522.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-09-23T09:47:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15522",
+    "user": "davidloeffler"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by mstreng created at 2010-11-03 10:01:01
+archive/issue_comments_015523.json:
+```json
+{
+    "body": "If anyone wants to fix this, go ahead. It worked just fine on my 4.5.something, so I guess a solution can be found by looking at the differences between the pari interfaces of 4.5 and 4.6.",
+    "created_at": "2010-11-03T10:01:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15523",
+    "user": "mstreng"
+}
+```
 
 If anyone wants to fix this, go ahead. It worked just fine on my 4.5.something, so I guess a solution can be found by looking at the differences between the pari interfaces of 4.5 and 4.6.
 
 
+
 ---
 
-Comment by fwclarke created at 2010-11-04 08:38:43
+archive/issue_comments_015524.json:
+```json
+{
+    "body": "Replying to [comment:15 davidloeffler]:\n\n> ..., it *still* doesn't work:\n\n```\nsage -t  number_field_element.pyx \n********************************************************************** \nFile \"/storage/masiao/sage-4.6.alpha1/devel/sage-hacking/sage/rings/number_field/number_field_element.pyx\", line 971:\n    sage: (beta/2).is_norm(L)\nException raised:\n    Traceback (most recent call last):\n... \nFile \"gen.pyx\", line 9470, in sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:45353) \nPariError:  (5) \n********************************************************************** \n```\n\n> At that point I gave up. Sorry. That's \"needs work\".\n\nLooks like a Pari bug.  This is what the doctest asks Pari to do (with the equivalent of\u00a0beta.is_norm(L)\u00a0first):\n\n\n```\ntrousseau-bash% sage-4.6/sage -gp\n                   GP/PARI CALCULATOR Version 2.4.3 (development svn-12577:12605)\n                    i386 running darwin (x86-64/GMP-4.2.1 kernel) 64-bit version\n...\nparisize = 8000000, primelimit = 500509\n? bnf = bnfinit(y^3 + 5);\n? p = x^2 + x + Mod(y, y^3 + 5);\n? T = rnfisnorminit(bnf, p);\n? rnfisnorm(T, Mod(y, y^3 + 5))\n%4 = [Mod(x, x^2 + x + Mod(y, y^3 + 5)), 1]\n? rnfisnorm(T, Mod(y/2, y^3 + 5))\n  ***   at top-level: rnfisnorm(T,Mod(y/2,\n  ***                 ^--------------------\n  *** rnfisnorm: zero argument in factorint.\n  ***   Break loop: type 'break' to go back to GP\nbreak> break\n```\n\nBut previously, it worked alright:\n\n\n```\ntrousseau-bash% sage-4.5.3/sage -gp\n                            GP/PARI CALCULATOR Version 2.3.5 (released)\n                    i386 running darwin (x86-64/GMP-4.2.1 kernel) 64-bit version\n...\nparisize = 8000000, primelimit = 500000\n? bnf = bnfinit(y^3 + 5);\n? p = x^2 + x + Mod(y, y^3 + 5);\n? T = rnfisnorminit(bnf, p);\n? rnfisnorm(T, Mod(y, y^3 + 5))\n%4 = [Mod(-x, x^2 + x + Mod(y, y^3 + 5)), 1]\n? rnfisnorm(T, Mod(y/2, y^3 + 5))\n%5 = [Mod(Mod(-1/2, y^3 + 5)*x, x^2 + x + Mod(y, y^3 + 5)), 2]\n? \n```\n\nNote also that the two versions give a different result at %4.",
+    "created_at": "2010-11-04T08:38:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15524",
+    "user": "fwclarke"
+}
+```
 
 Replying to [comment:15 davidloeffler]:
 
@@ -319,18 +583,40 @@ parisize = 8000000, primelimit = 500000
 Note also that the two versions give a different result at %4.
 
 
+
 ---
 
-Comment by mstreng created at 2010-12-02 12:56:54
+archive/issue_comments_015525.json:
+```json
+{
+    "body": "Hi Francis,\nDid you report this bug to pari?\nMarco",
+    "created_at": "2010-12-02T12:56:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15525",
+    "user": "mstreng"
+}
+```
 
 Hi Francis,
 Did you report this bug to pari?
 Marco
 
 
+
 ---
 
-Comment by fwclarke created at 2010-12-02 13:42:52
+archive/issue_comments_015526.json:
+```json
+{
+    "body": "Replying to [comment:18 mstreng]:\n\n> Did you report this bug to pari? Marco\n\nNo, I didn't. \u00a0But I have done now.",
+    "created_at": "2010-12-02T13:42:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15526",
+    "user": "fwclarke"
+}
+```
 
 Replying to [comment:18 mstreng]:
 
@@ -339,9 +625,20 @@ Replying to [comment:18 mstreng]:
 No, I didn't.  But I have done now.
 
 
+
 ---
 
-Comment by mstreng created at 2010-12-02 15:48:04
+archive/issue_comments_015527.json:
+```json
+{
+    "body": "The bug with non-integral elements in rnfisnorm was reported to pari by fwclarke, and I wrote a simple workaround for the time it takes a pari-fix to reach sage.\n\nTurns out there is another problem:\n\n```\nsage: K.<a> = NumberField(x^2 + x + 1) \nsage: Q.<X> = K[] \nsage: L.<b> = NumberField(X^3 + a) \nsage: K.pari_rnfnorm_data(L)\nPariError: incorrect type (11)\n```\n\n\nAgain caused by something that works fine in pari 2.3.4 and is broken in pari 2.4.3 (alpha)\n\n```\ngp > bnf = bnfinit(y^2+y+1);\ngp > polrel = Mod(1, y^2 + y + 1)*x^3 + Mod(y, y^2 + y + 1);\ngp > rnfisnorminit(bnf, polrel)\n  ***   at top-level: rnfisnorminit(bnf,po\n  ***                 ^--------------------\n  *** rnfisnorminit: incorrect type in RgX_RgXQ_eval.\n  ***   Break loop: type 'break' to go back to GP\n```\n\n\nIdeas anyone?",
+    "created_at": "2010-12-02T15:48:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15527",
+    "user": "mstreng"
+}
+```
 
 The bug with non-integral elements in rnfisnorm was reported to pari by fwclarke, and I wrote a simple workaround for the time it takes a pari-fix to reach sage.
 
@@ -372,64 +669,154 @@ gp > rnfisnorminit(bnf, polrel)
 Ideas anyone?
 
 
+
 ---
 
-Comment by mstreng created at 2010-12-02 22:24:11
+archive/issue_comments_015528.json:
+```json
+{
+    "body": "I've added a new file that seems to work after the pari upgrade, including workarounds for 2 new pari bugs. I'll do some additional testing before I make it \"needs review\" again.\n\nThe bugs have been reported to pari [http://pari.math.u-bordeaux.fr/cgi-bin/bugreport.cgi?bug=1143](http://pari.math.u-bordeaux.fr/cgi-bin/bugreport.cgi?bug=1143) and [http://pari.math.u-bordeaux.fr/cgi-bin/bugreport.cgi?bug=1144](http://pari.math.u-bordeaux.fr/cgi-bin/bugreport.cgi?bug=1144)",
+    "created_at": "2010-12-02T22:24:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15528",
+    "user": "mstreng"
+}
+```
 
 I've added a new file that seems to work after the pari upgrade, including workarounds for 2 new pari bugs. I'll do some additional testing before I make it "needs review" again.
 
 The bugs have been reported to pari [http://pari.math.u-bordeaux.fr/cgi-bin/bugreport.cgi?bug=1143](http://pari.math.u-bordeaux.fr/cgi-bin/bugreport.cgi?bug=1143) and [http://pari.math.u-bordeaux.fr/cgi-bin/bugreport.cgi?bug=1144](http://pari.math.u-bordeaux.fr/cgi-bin/bugreport.cgi?bug=1144)
 
 
+
 ---
+
+archive/issue_comments_015529.json:
+```json
+{
+    "body": "Attachment\n\napply only this latest file (works on sage 4.6.1.alpha2)",
+    "created_at": "2010-12-03T15:28:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15529",
+    "user": "mstreng"
+}
+```
 
 Attachment
 
 apply only this latest file (works on sage 4.6.1.alpha2)
 
 
+
 ---
 
-Comment by mstreng created at 2010-12-03 15:31:03
+archive/issue_comments_015530.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-12-03T15:31:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15530",
+    "user": "mstreng"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by mstreng created at 2010-12-03 15:31:03
+archive/issue_comments_015531.json:
+```json
+{
+    "body": "All tests pass again.",
+    "created_at": "2010-12-03T15:31:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15531",
+    "user": "mstreng"
+}
+```
 
 All tests pass again.
 
 
+
 ---
 
-Comment by mstreng created at 2010-12-06 10:59:01
+archive/issue_comments_015532.json:
+```json
+{
+    "body": "For the Buildbot's sake:\n\nApply trac_2329_rnfisnorm3.patch",
+    "created_at": "2010-12-06T10:59:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15532",
+    "user": "mstreng"
+}
+```
 
 For the Buildbot's sake:
 
 Apply trac_2329_rnfisnorm3.patch
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-12-06 13:13:41
+archive/issue_comments_015533.json:
+```json
+{
+    "body": "Can you justify why you use `<gen>` instead of the `t0GEN()` mechanism in `gen.pyx`?  Even if `<gen>` happens to work, using `t0GEN()` is safer because it will prevent the `GEN` from being garbage collected.",
+    "created_at": "2010-12-06T13:13:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15533",
+    "user": "jdemeyer"
+}
+```
 
 Can you justify why you use `<gen>` instead of the `t0GEN()` mechanism in `gen.pyx`?  Even if `<gen>` happens to work, using `t0GEN()` is safer because it will prevent the `GEN` from being garbage collected.
 
 
+
 ---
 
-Comment by mstreng created at 2010-12-06 14:16:56
+archive/issue_comments_015534.json:
+```json
+{
+    "body": "Replying to [comment:26 jdemeyer]\n\nNo I can't, I didn't write that part.",
+    "created_at": "2010-12-06T14:16:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15534",
+    "user": "mstreng"
+}
+```
 
 Replying to [comment:26 jdemeyer]
 
 No I can't, I didn't write that part.
 
 
+
 ---
 
-Comment by fwclarke created at 2010-12-07 08:38:17
+archive/issue_comments_015535.json:
+```json
+{
+    "body": "There remain several problems for relative extensions.  In particular, the function `sage.rings.number_field.number_field_rel.NumberField_relative.is_galois_relative` cannot be relied on at present (4.6.1.alpha3):\n\n\n```\nsage: K.<w> = NumberField(x^2 + x + 1)\nsage: L.<a> = K.extension(x^3 - 2)\nsage: L.is_galois_relative()\nFalse\n```\n\nBut\n\n\n```\nsage: L.is_galois_absolute()\nTrue\n```\n\nand indeed\n\n\n```\nsage: len([g for g in End(L) if g(w) == w]) == L.relative_degree()\nTrue\n```\n\nI will post a patch for this in the next couple of days, and suggest other changes to improve the behaviour of `is_norm` with relative extensions.",
+    "created_at": "2010-12-07T08:38:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15535",
+    "user": "fwclarke"
+}
+```
 
 There remain several problems for relative extensions.  In particular, the function `sage.rings.number_field.number_field_rel.NumberField_relative.is_galois_relative` cannot be relied on at present (4.6.1.alpha3):
 
@@ -460,16 +847,40 @@ True
 I will post a patch for this in the next couple of days, and suggest other changes to improve the behaviour of `is_norm` with relative extensions.
 
 
+
 ---
+
+archive/issue_comments_015536.json:
+```json
+{
+    "body": "Attachment\n\napply only this latest file (works on sage 4.6.1.alpha2)",
+    "created_at": "2010-12-08T13:48:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15536",
+    "user": "mstreng"
+}
+```
 
 Attachment
 
 apply only this latest file (works on sage 4.6.1.alpha2)
 
 
+
 ---
 
-Comment by mstreng created at 2010-12-08 14:01:39
+archive/issue_comments_015537.json:
+```json
+{
+    "body": "Here's a new file that addresses Jeroen's \"<gen>\" issue.\n\nI don't think #9390, which Francis mentions, should stop anyone from reviewing the patch here at #2329. There must be more functionality of sage that assumes is_galois_relative to be correct, this is just one more of them, and Francis says #9390 will be fixed soon anyway. No fix of #9390 will conflict with #2329.\n\nAs for \"changes to improve behaviour of is_norm\". I'm not sure what you're aiming at, but if you want, you can make these changes yourself, in this ticket or a future ticket. That would be a lot more efficient.\n\nSo it is still \"needs review\" at the moment.",
+    "created_at": "2010-12-08T14:01:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15537",
+    "user": "mstreng"
+}
+```
 
 Here's a new file that addresses Jeroen's "<gen>" issue.
 
@@ -480,38 +891,93 @@ As for "changes to improve behaviour of is_norm". I'm not sure what you're aimin
 So it is still "needs review" at the moment.
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-12-09 08:49:05
+archive/issue_comments_015538.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-12-09T08:49:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15538",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-12-09 08:49:05
+archive/issue_comments_015539.json:
+```json
+{
+    "body": "Planning to make a reviewer patch, focusing on the PARI interface.",
+    "created_at": "2010-12-09T08:49:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15539",
+    "user": "jdemeyer"
+}
+```
 
 Planning to make a reviewer patch, focusing on the PARI interface.
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-12-09 08:50:17
+archive/issue_comments_015540.json:
+```json
+{
+    "body": "Also: it might be better to wait make this ticket depend on #10430 (so we don't need the workaround).",
+    "created_at": "2010-12-09T08:50:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15540",
+    "user": "jdemeyer"
+}
+```
 
 Also: it might be better to wait make this ticket depend on #10430 (so we don't need the workaround).
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-12-10 12:57:40
+archive/issue_comments_015541.json:
+```json
+{
+    "body": "Macro, I recommend you to take a look at my new PARI spkg at #10430, you can download it from [http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.alpha.p1.spkg](http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.alpha.p1.spkg).\nCould you please check whether this fixes the issues you had?  If this works, you should remove the workarounds for these bugs.",
+    "created_at": "2010-12-10T12:57:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15541",
+    "user": "jdemeyer"
+}
+```
 
 Macro, I recommend you to take a look at my new PARI spkg at #10430, you can download it from [http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.alpha.p1.spkg](http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.alpha.p1.spkg).
 Could you please check whether this fixes the issues you had?  If this works, you should remove the workarounds for these bugs.
 
 
+
 ---
 
-Comment by fwclarke created at 2010-12-10 15:11:20
+archive/issue_comments_015542.json:
+```json
+{
+    "body": "Replying to [comment:29 mstreng]:\n\n> ... I don't think #9390, which Francis mentions, should stop anyone from reviewing the patch here at #2329. There must be more functionality of sage that assumes is_galois_relative to be correct, this is just one more of them, and Francis says #9390 will be fixed soon anyway.\n\nActually `is_galois_relative` doesn't seem to be used anywhere else.\n\nBut anyway I have now added a (very short) patch to #9390.",
+    "created_at": "2010-12-10T15:11:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15542",
+    "user": "fwclarke"
+}
+```
 
 Replying to [comment:29 mstreng]:
 
@@ -522,47 +988,104 @@ Actually `is_galois_relative` doesn't seem to be used anywhere else.
 But anyway I have now added a (very short) patch to #9390.
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-12-11 13:56:52
+archive/issue_comments_015543.json:
+```json
+{
+    "body": "New spkg at #10430: [http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.alpha.p2.spkg](http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.alpha.p2.spkg)",
+    "created_at": "2010-12-11T13:56:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15543",
+    "user": "jdemeyer"
+}
+```
 
 New spkg at #10430: [http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.alpha.p2.spkg](http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.alpha.p2.spkg)
 
 
+
 ---
 
-Comment by fwclarke created at 2010-12-27 11:37:23
+archive/issue_comments_015544.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-12-27T11:37:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15544",
+    "user": "fwclarke"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by fwclarke created at 2010-12-27 11:37:23
+archive/issue_comments_015545.json:
+```json
+{
+    "body": "The patch `trac_2329_rnfisnorm4.patch` is a modified version of `trac_2329_rnfisnorm3.patch`, designed to be applied after\n\n1. #10430's http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.alpha.p2.spkg;\n2. #9390's `trac_9390-3rd_replacement.patch`.\n\nThe following changes have been made:\n\n1. The workarounds to deal with the pari bugs have been removed.\n2. The doctests to `sage.rings.number_field.number_field_element.is_norm` involving non-Galois extensions have been changed.  The first such example was in fact a Galois extension (isomorphic to `CyclotomicField(9)`), which without the patch to #9390 was asserted to be Galois by `is_galois_relative`.\n3. A minor change to `pari_rnfnorm_data` in `number_field.py` (replacing `defining_polynomial` by `absolute_polynomial`) and more significant changes to `rnfisnorm` in `number_field_element.pyx` to allow this function to work with extensions L/K where K itself is a relative extension.  These are the changes I was referring to [comment:28 above]. Doctests have been added to illustrate this functionality.\n4. Several spaces have been removed in order to comply more closely with the style conventions given in the Developer's Guide, in particular: \"Don't use spaces around the '=' sign when used to indicate a keyword argument or a default parameter value\".\n\nThis all seems to work with 4.6.1.alpha3.",
+    "created_at": "2010-12-27T11:37:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15545",
+    "user": "fwclarke"
+}
+```
 
 The patch `trac_2329_rnfisnorm4.patch` is a modified version of `trac_2329_rnfisnorm3.patch`, designed to be applied after
 
- 1. #10430's http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.alpha.p2.spkg;
- 1. #9390's `trac_9390-3rd_replacement.patch`.
+1. #10430's http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.alpha.p2.spkg;
+2. #9390's `trac_9390-3rd_replacement.patch`.
 
 The following changes have been made:
 
- 1. The workarounds to deal with the pari bugs have been removed.
- 1. The doctests to `sage.rings.number_field.number_field_element.is_norm` involving non-Galois extensions have been changed.  The first such example was in fact a Galois extension (isomorphic to `CyclotomicField(9)`), which without the patch to #9390 was asserted to be Galois by `is_galois_relative`.
- 1. A minor change to `pari_rnfnorm_data` in `number_field.py` (replacing `defining_polynomial` by `absolute_polynomial`) and more significant changes to `rnfisnorm` in `number_field_element.pyx` to allow this function to work with extensions L/K where K itself is a relative extension.  These are the changes I was referring to [comment:28 above]. Doctests have been added to illustrate this functionality.
- 1. Several spaces have been removed in order to comply more closely with the style conventions given in the Developer's Guide, in particular: "Don't use spaces around the '=' sign when used to indicate a keyword argument or a default parameter value".
+1. The workarounds to deal with the pari bugs have been removed.
+2. The doctests to `sage.rings.number_field.number_field_element.is_norm` involving non-Galois extensions have been changed.  The first such example was in fact a Galois extension (isomorphic to `CyclotomicField(9)`), which without the patch to #9390 was asserted to be Galois by `is_galois_relative`.
+3. A minor change to `pari_rnfnorm_data` in `number_field.py` (replacing `defining_polynomial` by `absolute_polynomial`) and more significant changes to `rnfisnorm` in `number_field_element.pyx` to allow this function to work with extensions L/K where K itself is a relative extension.  These are the changes I was referring to [comment:28 above]. Doctests have been added to illustrate this functionality.
+4. Several spaces have been removed in order to comply more closely with the style conventions given in the Developer's Guide, in particular: "Don't use spaces around the '=' sign when used to indicate a keyword argument or a default parameter value".
 
 This all seems to work with 4.6.1.alpha3.
 
 
+
 ---
 
-Comment by fwclarke created at 2010-12-27 11:38:20
+archive/issue_comments_015546.json:
+```json
+{
+    "body": "apply only this latest file (works on sage 4.6.1.alpha3)",
+    "created_at": "2010-12-27T11:38:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15546",
+    "user": "fwclarke"
+}
+```
 
 apply only this latest file (works on sage 4.6.1.alpha3)
 
 
+
 ---
+
+archive/issue_comments_015547.json:
+```json
+{
+    "body": "Attachment\n\nReplying to [comment:37 fwclarke]:\n\n> ... This all seems to work with 4.6.1.alpha3.\n\nAnd with 4.6.1.rc0.",
+    "created_at": "2010-12-28T13:03:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15547",
+    "user": "fwclarke"
+}
+```
 
 Attachment
 
@@ -573,65 +1096,168 @@ Replying to [comment:37 fwclarke]:
 And with 4.6.1.rc0.
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-01-23 14:23:29
+archive/issue_comments_015548.json:
+```json
+{
+    "body": "Changing keywords from \"editor_craigcitro\" to \"editor_craigcitro pari\".",
+    "created_at": "2011-01-23T14:23:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15548",
+    "user": "jdemeyer"
+}
+```
 
 Changing keywords from "editor_craigcitro" to "editor_craigcitro pari".
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-01-23 14:23:29
+archive/issue_comments_015549.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2011-01-23T14:23:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15549",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-01-23 14:23:29
+archive/issue_comments_015550.json:
+```json
+{
+    "body": "Making some changes...",
+    "created_at": "2011-01-23T14:23:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15550",
+    "user": "jdemeyer"
+}
+```
 
 Making some changes...
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-01-23 18:13:22
+archive/issue_comments_015551.json:
+```json
+{
+    "body": "I moved the PARI part of this patch to #10677, so this patch now depends on #10677.",
+    "created_at": "2011-01-23T18:13:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15551",
+    "user": "jdemeyer"
+}
+```
 
 I moved the PARI part of this patch to #10677, so this patch now depends on #10677.
 
 
+
 ---
+
+archive/issue_comments_015552.json:
+```json
+{
+    "body": "Attachment\n\nApply only this, rebased to sage-4.6.2.alpha1 + #10677",
+    "created_at": "2011-01-23T18:13:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15552",
+    "user": "jdemeyer"
+}
+```
 
 Attachment
 
 Apply only this, rebased to sage-4.6.2.alpha1 + #10677
 
 
+
 ---
+
+archive/issue_comments_015553.json:
+```json
+{
+    "body": "Attachment\n\nApply only this, rebased to sage-4.6.2.alpha1 + #10677",
+    "created_at": "2011-01-23T18:16:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15553",
+    "user": "jdemeyer"
+}
+```
 
 Attachment
 
 Apply only this, rebased to sage-4.6.2.alpha1 + #10677
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-01-23 20:12:07
+archive/issue_comments_015554.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2011-01-23T20:12:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15554",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-02-10 16:27:09
+archive/issue_comments_015555.json:
+```json
+{
+    "body": "For me, this ticket gets positive review.  However, somebody needs to review my reviewer patch.",
+    "created_at": "2011-02-10T16:27:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15555",
+    "user": "jdemeyer"
+}
+```
 
 For me, this ticket gets positive review.  However, somebody needs to review my reviewer patch.
 
 
+
 ---
 
-Comment by davidloeffler created at 2011-02-10 16:59:19
+archive/issue_comments_015556.json:
+```json
+{
+    "body": "This line worries me slightly:\n\n```\n2613\t        Kbnf = self.pari_bnf(certify=certify).nf_subst(\"'y\") \n```\n\n\nIs that supposed to be `(\"y\")` or `(\"'y'\")` perhaps?",
+    "created_at": "2011-02-10T16:59:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15556",
+    "user": "davidloeffler"
+}
+```
 
 This line worries me slightly:
 
@@ -643,14 +1269,38 @@ This line worries me slightly:
 Is that supposed to be `("y")` or `("'y'")` perhaps?
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-02-11 08:23:00
+archive/issue_comments_015557.json:
+```json
+{
+    "body": "Apply on top of previous patch",
+    "created_at": "2011-02-11T08:23:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15557",
+    "user": "jdemeyer"
+}
+```
 
 Apply on top of previous patch
 
 
+
 ---
+
+archive/issue_comments_015558.json:
+```json
+{
+    "body": "Attachment\n\nReplying to [comment:45 davidloeffler]:\n> Is that supposed to be `(\"y\")` or `(\"'y'\")` perhaps?\n\nNo, `'y` is correct.  I have added some comments to that code in the patch.\n\nBasically, the `'y` syntax is PARI's way of refering to a *variable* (as opposed to the *value* of a variable).  See the following `gp` session:\n\n\n```\ngp> y = 42\n%1 = 42\ngp> y\n%2 = 42\ngp> 'y\n%3 = y\ngp> subst(x^3, x, y)\n%4 = 74088\ngp> subst(x^3, x, 'y)\n%5 = y^3\n```\n",
+    "created_at": "2011-02-11T08:29:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15558",
+    "user": "jdemeyer"
+}
+```
 
 Attachment
 
@@ -659,7 +1309,7 @@ Replying to [comment:45 davidloeffler]:
 
 No, `'y` is correct.  I have added some comments to that code in the patch.
 
-Basically, the `'y` syntax is PARI's way of refering to a _variable_ (as opposed to the _value_ of a variable).  See the following `gp` session:
+Basically, the `'y` syntax is PARI's way of refering to a *variable* (as opposed to the *value* of a variable).  See the following `gp` session:
 
 
 ```
@@ -677,58 +1327,146 @@ gp> subst(x^3, x, 'y)
 
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-02-11 08:31:27
+archive/issue_comments_015559.json:
+```json
+{
+    "body": "Let me also clarify that, even though I uploaded [attachment:trac_2329_rnfisnorm5.patch], I only rebased the existing patch and moved parts of it to #10677.  So I believe that I am allowed to review that patch.  Only [attachment:2329_reviewer.patch] still needs review.",
+    "created_at": "2011-02-11T08:31:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15559",
+    "user": "jdemeyer"
+}
+```
 
 Let me also clarify that, even though I uploaded [attachment:trac_2329_rnfisnorm5.patch], I only rebased the existing patch and moved parts of it to #10677.  So I believe that I am allowed to review that patch.  Only [attachment:2329_reviewer.patch] still needs review.
 
 
+
 ---
 
-Comment by davidloeffler created at 2011-02-11 14:09:28
+archive/issue_comments_015560.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2011-02-11T14:09:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15560",
+    "user": "davidloeffler"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by davidloeffler created at 2011-02-11 14:09:28
+archive/issue_comments_015561.json:
+```json
+{
+    "body": "Thanks for the very clear explanation. The two patches apply and compile fine, and all doctests pass.",
+    "created_at": "2011-02-11T14:09:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15561",
+    "user": "davidloeffler"
+}
+```
 
 Thanks for the very clear explanation. The two patches apply and compile fine, and all doctests pass.
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-03-04 10:14:09
+archive/issue_comments_015562.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_work.",
+    "created_at": "2011-03-04T10:14:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15562",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from positive_review to needs_work.
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-03-04 10:15:07
+archive/issue_comments_015563.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2011-03-04T10:15:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15563",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-03-04 10:15:07
+archive/issue_comments_015564.json:
+```json
+{
+    "body": "I have a new patch to change the Selmer group test, since the signs can change randomly.  Needs review.",
+    "created_at": "2011-03-04T10:15:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15564",
+    "user": "jdemeyer"
+}
+```
 
 I have a new patch to change the Selmer group test, since the signs can change randomly.  Needs review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-03-04 12:46:56
+archive/issue_comments_015565.json:
+```json
+{
+    "body": "Changing priority from major to blocker.",
+    "created_at": "2011-03-04T12:46:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15565",
+    "user": "jdemeyer"
+}
+```
 
 Changing priority from major to blocker.
 
 
+
 ---
 
-Comment by fbissey created at 2011-03-05 05:15:40
+archive/issue_comments_015566.json:
+```json
+{
+    "body": "Probably related, I got this on x86 with 4.7.alpha2\n\n```\nsage -t -long  -force_lib devel/sage-main/sage/rings/rational.pyx\n**********************************************************************\nFile  \n\"/storage/strogdon/gentoo/usr/share/sage/devel/sage-main/sage/rings/rational.pyx\",  \nline 1222:\n     sage: (1/5).is_norm(QuadraticField(5/4, 'a'), element=True)\nExpected:\n     (True, -1/5*a + 1/2)\nGot:\n     (True, 1/5*a - 1/2)\n```\n\nThe log is from a friend of mine who has it as well on x86 but it doesn't show up on his amd64 hardware. I cannot test on amd64 or OSX at the present time.",
+    "created_at": "2011-03-05T05:15:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15566",
+    "user": "fbissey"
+}
+```
 
 Probably related, I got this on x86 with 4.7.alpha2
 
@@ -748,16 +1486,38 @@ Got:
 The log is from a friend of mine who has it as well on x86 but it doesn't show up on his amd64 hardware. I cannot test on amd64 or OSX at the present time.
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-03-07 19:18:09
+archive/issue_comments_015567.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2011-03-07T19:18:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15567",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-03-07 19:18:09
+archive/issue_comments_015568.json:
+```json
+{
+    "body": "Replying to [comment:52 fbissey]:\n> Probably related, I got this on x86 with 4.7.alpha2\n\nGood to know this.  But keep in mind that sage-4.7.alpha2 has not been released (not even sage-4.7.alpha0).  In the future it would be better to test released versions with patches applied instead of unreleased versions.\n\nI will test this patch on a 32-bit system and see what needs to be fixed.",
+    "created_at": "2011-03-07T19:18:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15568",
+    "user": "jdemeyer"
+}
+```
 
 Replying to [comment:52 fbissey]:
 > Probably related, I got this on x86 with 4.7.alpha2
@@ -767,23 +1527,58 @@ Good to know this.  But keep in mind that sage-4.7.alpha2 has not been released 
 I will test this patch on a 32-bit system and see what needs to be fixed.
 
 
+
 ---
+
+archive/issue_comments_015569.json:
+```json
+{
+    "body": "Attachment\n\nAdditional patch",
+    "created_at": "2011-03-11T12:53:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15569",
+    "user": "jdemeyer"
+}
+```
 
 Attachment
 
 Additional patch
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-03-11 12:54:13
+archive/issue_comments_015570.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2011-03-11T12:54:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15570",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by drkirkby created at 2011-03-11 22:53:28
+archive/issue_comments_015571.json:
+```json
+{
+    "body": "I can confirm that the doctest now passes on a 32-bit build of sage-4.7.alpha1 on OpenSolaris 06/2009 (Intel Xeon chip)\n\n\n```\nsage -t -long -force_lib \"devel/sage/sage/rings/number_field/number_field.py\"\n\t [48.8 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 48.8 seconds\n```\n\n\nPrior to adding the 3 patches to sage-4.7.alpha1, I got. \n\n\n```\nFile \"/export/home/drkirkby/sage-4.7.alpha1/devel/sage-main/sage/rings/number_field/number_field.py\", line 3035:\n    sage: K.selmer_group([K.ideal(2, -a+1), K.ideal(3, a+1), K.ideal(a)], 3)\nExpected:\n    [2, a + 1, a]\nGot:\n    [2, a + 1, -a] \n```\n\n\n\nI don't know enough about the maths to understand what the patch does, so whilst it appears to fix the problems I see in sage-4.7.alpha1, I don't feel I should give this a positive review - it needs a mathematician to check it too. \n\nDave",
+    "created_at": "2011-03-11T22:53:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15571",
+    "user": "drkirkby"
+}
+```
 
 I can confirm that the doctest now passes on a 32-bit build of sage-4.7.alpha1 on OpenSolaris 06/2009 (Intel Xeon chip)
 
@@ -817,42 +1612,97 @@ I don't know enough about the maths to understand what the patch does, so whilst
 Dave
 
 
----
-
-Comment by jdemeyer created at 2011-03-12 09:52:25
-
-David, could you please test both _with_ and _without_ `-long`.
-
 
 ---
 
-Comment by drkirkby created at 2011-03-14 06:52:54
+archive/issue_comments_015572.json:
+```json
+{
+    "body": "David, could you please test both *with* and *without* `-long`.",
+    "created_at": "2011-03-12T09:52:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15572",
+    "user": "jdemeyer"
+}
+```
+
+David, could you please test both *with* and *without* `-long`.
+
+
+
+---
+
+archive/issue_comments_015573.json:
+```json
+{
+    "body": "Replying to [comment:57 jdemeyer]:\n> David, could you please test both *with* and *without* `-long`.\nWith the patch applied, it is taking about 22 seconds *without* -long, and 46 seconds *with* -long. \n\nIf the patch is not applied, it fails *with* or *without* -long.",
+    "created_at": "2011-03-14T06:52:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15573",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:57 jdemeyer]:
-> David, could you please test both _with_ and _without_ `-long`.
-With the patch applied, it is taking about 22 seconds _without_ -long, and 46 seconds _with_ -long. 
+> David, could you please test both *with* and *without* `-long`.
+With the patch applied, it is taking about 22 seconds *without* -long, and 46 seconds *with* -long. 
 
-If the patch is not applied, it fails _with_ or _without_ -long.
+If the patch is not applied, it fails *with* or *without* -long.
+
 
 
 ---
 
-Comment by davidloeffler created at 2011-03-14 14:23:30
+archive/issue_comments_015574.json:
+```json
+{
+    "body": "> it needs a mathematician to check it too. \n\nLooks OK to me.",
+    "created_at": "2011-03-14T14:23:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15574",
+    "user": "davidloeffler"
+}
+```
 
 > it needs a mathematician to check it too. 
 
 Looks OK to me.
 
 
+
 ---
 
-Comment by davidloeffler created at 2011-03-14 14:23:30
+archive/issue_comments_015575.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2011-03-14T14:23:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15575",
+    "user": "davidloeffler"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-03-17 19:23:55
+archive/issue_comments_015576.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2011-03-17T19:23:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2329#issuecomment-15576",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 2899: Make RDF round and friends return Integers
 
-Issue created by migration from https://trac.sagemath.org/ticket/2899
-
-Original creator: jason
-
-Original creation time: 2008-04-12 16:09:26
-
+archive/issues_002899.json:
+```json
+{
+    "body": "Assignee: robertwb\n\n\n```\n> Also, round(RR(3.0)) returns an Integer...should RDF behave the same\n> > way? (currently round(RDF(3.0)) returns an RDF).\n\nWe recently changed round, floor, ceiling, and trunc on RR to return\nintegers; yes, I think the corresponding RDF methods should change as\nwell.\n\nCarl\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2899\n\n",
+    "created_at": "2008-04-12T16:09:26Z",
+    "labels": [
+        "coercion",
+        "major",
+        "bug"
+    ],
+    "title": "Make RDF round and friends return Integers",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2899",
+    "user": "jason"
+}
+```
 Assignee: robertwb
 
 
@@ -22,38 +32,99 @@ Carl
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2899
+
+
+
+
 
 ---
 
-Comment by jason created at 2008-04-13 04:39:18
+archive/issue_comments_019969.json:
+```json
+{
+    "body": "The fix for #2898 will fix this.",
+    "created_at": "2008-04-13T04:39:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2899",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2899#issuecomment-19969",
+    "user": "jason"
+}
+```
 
 The fix for #2898 will fix this.
 
 
+
 ---
+
+archive/issue_comments_019970.json:
+```json
+{
+    "body": "Attachment\n\nThis makes floor and ceil do what I expect for RIF.  I believe that #2898 does make RDF work.",
+    "created_at": "2008-08-14T00:38:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2899",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2899#issuecomment-19970",
+    "user": "ncalexan"
+}
+```
 
 Attachment
 
 This makes floor and ceil do what I expect for RIF.  I believe that #2898 does make RDF work.
 
 
+
 ---
 
-Comment by craigcitro created at 2008-11-27 08:11:11
+archive/issue_comments_019971.json:
+```json
+{
+    "body": "I just tried to apply this against 3.2, and it fails. It's just a matter of moving the doctests around, I think.",
+    "created_at": "2008-11-27T08:11:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2899",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2899#issuecomment-19971",
+    "user": "craigcitro"
+}
+```
 
 I just tried to apply this against 3.2, and it fails. It's just a matter of moving the doctests around, I think.
 
 
+
 ---
 
-Comment by robertwb created at 2009-05-18 21:45:45
+archive/issue_comments_019972.json:
+```json
+{
+    "body": "Resolution: worksforme",
+    "created_at": "2009-05-18T21:45:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2899",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2899#issuecomment-19972",
+    "user": "robertwb"
+}
+```
 
 Resolution: worksforme
 
 
+
 ---
 
-Comment by robertwb created at 2009-05-18 21:45:45
+archive/issue_comments_019973.json:
+```json
+{
+    "body": "This appears to have already been fixed. \n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| Sage Version 3.4.2, Release Date: 2009-05-05                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: a = RDF(3.4)\n\nsage: a.round(), a.floor(), a.ceil()\n (3, 3, 4)\n\n```\n",
+    "created_at": "2009-05-18T21:45:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2899",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2899#issuecomment-19973",
+    "user": "robertwb"
+}
+```
 
 This appears to have already been fixed. 
 
@@ -72,9 +143,20 @@ sage: a.round(), a.floor(), a.ceil()
 
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-18 21:59:34
+archive/issue_comments_019974.json:
+```json
+{
+    "body": "Did someone add a doctest? Otherwise this should not have been closed.\n\nCheers,\n\nMichael",
+    "created_at": "2009-05-18T21:59:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2899",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2899#issuecomment-19974",
+    "user": "mabshoff"
+}
+```
 
 Did someone add a doctest? Otherwise this should not have been closed.
 
@@ -83,16 +165,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-19 04:56:59
+archive/issue_comments_019975.json:
+```json
+{
+    "body": "Resolution changed from worksforme to ",
+    "created_at": "2009-05-19T04:56:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2899",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2899#issuecomment-19975",
+    "user": "mabshoff"
+}
+```
 
 Resolution changed from worksforme to 
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-19 04:56:59
+archive/issue_comments_019976.json:
+```json
+{
+    "body": "Reopening until someone either points to a doctests or post a doctest patch.\n\nCheers,\n\nMichael",
+    "created_at": "2009-05-19T04:56:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2899",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2899#issuecomment-19976",
+    "user": "mabshoff"
+}
+```
 
 Reopening until someone either points to a doctests or post a doctest patch.
 
@@ -101,16 +205,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-19 04:56:59
+archive/issue_comments_019977.json:
+```json
+{
+    "body": "Changing status from closed to reopened.",
+    "created_at": "2009-05-19T04:56:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2899",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2899#issuecomment-19977",
+    "user": "mabshoff"
+}
+```
 
 Changing status from closed to reopened.
 
 
+
 ---
 
-Comment by ncalexan created at 2009-05-19 16:31:15
+archive/issue_comments_019978.json:
+```json
+{
+    "body": "There are doctests for RDF for sure:\n\n\n```\n\n    def round(self):\n        \"\"\"\n        Given real number x, rounds up if fractional part is greater than\n        .5, rounds down if fractional part is less than .5.\n\n        EXAMPLES::\n        \n            sage: RDF(0.49).round()\n            0\n            sage: a=RDF(0.51).round(); a\n            1\n        \"\"\"\n        return Integer(round(self._value))\n\n    def floor(self):\n        \"\"\"\n        Returns the floor of this number\n        \n        EXAMPLES::\n        \n            sage: RDF(2.99).floor()\n            2\n            sage: RDF(2.00).floor()\n            2\n            sage: RDF(-5/2).floor()\n            -3\n        \"\"\"\n        return Integer(math.floor(self._value))\n\n    def ceil(self):\n        \"\"\"\n        Returns the ceiling of this number\n        \n        OUTPUT: integer\n        \n        EXAMPLES::\n        \n            sage: RDF(2.99).ceil()\n            3\n            sage: RDF(2.00).ceil()\n            2\n            sage: RDF(-5/2).ceil()\n            -2\n        \"\"\"\n        return Integer(math.ceil(self._value))\n```\n",
+    "created_at": "2009-05-19T16:31:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2899",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2899#issuecomment-19978",
+    "user": "ncalexan"
+}
+```
 
 There are doctests for RDF for sure:
 
@@ -166,16 +292,38 @@ There are doctests for RDF for sure:
 
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-19 16:33:25
+archive/issue_comments_019979.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-05-19T16:33:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2899",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2899#issuecomment-19979",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-19 16:33:25
+archive/issue_comments_019980.json:
+```json
+{
+    "body": "Excellent. Closed as fixed.\n\nCheers,\n\nMichael",
+    "created_at": "2009-05-19T16:33:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2899",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2899#issuecomment-19980",
+    "user": "mabshoff"
+}
+```
 
 Excellent. Closed as fixed.
 
@@ -184,23 +332,56 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-19 20:48:17
+archive/issue_comments_019981.json:
+```json
+{
+    "body": "Resolution changed from fixed to ",
+    "created_at": "2009-05-19T20:48:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2899",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2899#issuecomment-19981",
+    "user": "mabshoff"
+}
+```
 
 Resolution changed from fixed to 
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-19 20:48:17
+archive/issue_comments_019982.json:
+```json
+{
+    "body": "Changing status from closed to reopened.",
+    "created_at": "2009-05-19T20:48:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2899",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2899#issuecomment-19982",
+    "user": "mabshoff"
+}
+```
 
 Changing status from closed to reopened.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-19 20:48:17
+archive/issue_comments_019983.json:
+```json
+{
+    "body": "Wait. There are doctests via Nick's ticket, but that patch has not been merged into the Sage library, but fixed in some other way, i.e. the symbolics switch in 4.0. I assume.\n\nIn that case we might still need doctests, so until this is sorted out I am reopening this again :(\n\nCheers,\n\nMichael",
+    "created_at": "2009-05-19T20:48:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2899",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2899#issuecomment-19983",
+    "user": "mabshoff"
+}
+```
 
 Wait. There are doctests via Nick's ticket, but that patch has not been merged into the Sage library, but fixed in some other way, i.e. the symbolics switch in 4.0. I assume.
 
@@ -211,15 +392,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by robertwb created at 2010-01-16 23:47:00
+archive/issue_comments_019984.json:
+```json
+{
+    "body": "There are doctests.",
+    "created_at": "2010-01-16T23:47:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2899",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2899#issuecomment-19984",
+    "user": "robertwb"
+}
+```
 
 There are doctests.
 
 
+
 ---
 
-Comment by robertwb created at 2010-01-16 23:47:00
+archive/issue_comments_019985.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-16T23:47:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2899",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2899#issuecomment-19985",
+    "user": "robertwb"
+}
+```
 
 Resolution: fixed

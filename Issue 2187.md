@@ -1,11 +1,21 @@
 # Issue 2187: [with patch, needs review] improve refman autogeneration; add and rewrite much reference manual text
 
-Issue created by migration from https://trac.sagemath.org/ticket/2187
-
-Original creator: cwitty
-
-Original creation time: 2008-02-17 05:35:37
-
+archive/issues_002187.json:
+```json
+{
+    "body": "Assignee: tba\n\nI have two patches.  One, for hg_doc, improves the consistency between the formatting of module docstrings, class docstrings, and function docstrings.  The main effect of this is that \"AUTHORS:\" blocks are now specially translated in class docstrings, to match the behavior of module and function docstrings.\n\nThe other patch, for hg_sage, adds and rewrites a fair bit of text: fixing typos, adding LaTeX formatting, etc.\n\nI also snuck in a bugfix: `IntegerMod_gmp` and `IntegerMod_int` had an `__index__` method, so that values could be used as array indices; but the method was missing from `IntegerMod_int64`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2187\n\n",
+    "created_at": "2008-02-17T05:35:37Z",
+    "labels": [
+        "documentation",
+        "major",
+        "enhancement"
+    ],
+    "title": "[with patch, needs review] improve refman autogeneration; add and rewrite much reference manual text",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2187",
+    "user": "cwitty"
+}
+```
 Assignee: tba
 
 I have two patches.  One, for hg_doc, improves the consistency between the formatting of module docstrings, class docstrings, and function docstrings.  The main effect of this is that "AUTHORS:" blocks are now specially translated in class docstrings, to match the behavior of module and function docstrings.
@@ -14,28 +24,80 @@ The other patch, for hg_sage, adds and rewrites a fair bit of text: fixing typos
 
 I also snuck in a bugfix: `IntegerMod_gmp` and `IntegerMod_int` had an `__index__` method, so that values could be used as array indices; but the method was missing from `IntegerMod_int64`.
 
+Issue created by migration from https://trac.sagemath.org/ticket/2187
+
+
+
+
 
 ---
+
+archive/issue_comments_014360.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-02-17T05:37:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2187#issuecomment-14360",
+    "user": "cwitty"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_014361.json:
+```json
+{
+    "body": "Attachment\n\nBoth patches looks good to me, they apply cleanly -> positive review.",
+    "created_at": "2008-02-17T13:04:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2187#issuecomment-14361",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 Both patches looks good to me, they apply cleanly -> positive review.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-17 13:04:56
+archive/issue_comments_014362.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-02-17T13:04:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2187#issuecomment-14362",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-17 13:04:56
+archive/issue_comments_014363.json:
+```json
+{
+    "body": "Merged in Sage 2.10.2.alpha1",
+    "created_at": "2008-02-17T13:04:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2187#issuecomment-14363",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.2.alpha1

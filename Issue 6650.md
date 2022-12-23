@@ -1,21 +1,46 @@
 # Issue 6650: semicolon does not hide output in notebook
 
-Issue created by migration from https://trac.sagemath.org/ticket/6650
-
-Original creator: hemmecke
-
-Original creation time: 2009-07-28 21:12:24
-
+archive/issues_006650.json:
+```json
+{
+    "body": "Assignee: boothby\n\nwhile in command-line sage 4.1\n1;\n(with semicolon) shows no output whereas the same input in a notebook cell will (falsely) output the 1.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6650\n\n",
+    "created_at": "2009-07-28T21:12:24Z",
+    "labels": [
+        "notebook",
+        "major",
+        "bug"
+    ],
+    "title": "semicolon does not hide output in notebook",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6650",
+    "user": "hemmecke"
+}
+```
 Assignee: boothby
 
 while in command-line sage 4.1
 1;
 (with semicolon) shows no output whereas the same input in a notebook cell will (falsely) output the 1.
 
+Issue created by migration from https://trac.sagemath.org/ticket/6650
+
+
+
+
 
 ---
 
-Comment by was created at 2010-01-19 07:49:29
+archive/issue_comments_054590.json:
+```json
+{
+    "body": "Actually, I consider this a bug in IPython:\n\n```\nbash$ python\nPython 2.6.4 (r264:75706, Dec  7 2009, 18:43:55)\n[GCC 4.4.1] on linux2\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> 1;\n1\n```\n",
+    "created_at": "2010-01-19T07:49:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6650#issuecomment-54590",
+    "user": "was"
+}
+```
 
 Actually, I consider this a bug in IPython:
 
@@ -30,23 +55,56 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 
 
+
 ---
 
-Comment by acleone created at 2010-01-19 08:40:33
+archive/issue_comments_054591.json:
+```json
+{
+    "body": "Changing component from notebook to misc.",
+    "created_at": "2010-01-19T08:40:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6650#issuecomment-54591",
+    "user": "acleone"
+}
+```
 
 Changing component from notebook to misc.
 
 
+
 ---
 
-Comment by acleone created at 2010-01-19 08:41:32
+archive/issue_comments_054592.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2010-01-19T08:41:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6650#issuecomment-54592",
+    "user": "acleone"
+}
+```
 
 Resolution: invalid
 
 
+
 ---
 
-Comment by was created at 2010-01-19 09:46:14
+archive/issue_comments_054593.json:
+```json
+{
+    "body": "\n```\nHi William,\n\nOn Mon, Jan 18, 2010 at 11:52 PM, William Stein <wstein@gmail.com> wrote:\n>\n> SO, now I think this is a bug in *IPython*, not the sage notebook.\n> What do you think?\n\nIt's by design: one of the few places where early on, I explicitly and\ndeliberately deviated from default python behavior.\n\nIn interactive computing, one often ends up having computations that\nare known to produce gigantic output, and it's nice to have a simple\nway to say \"don't print the result of this computation, just do it\".\nI just checked and it turns out that matlab works this way too (though\nI didn't know that at the time, I hadn't tried matlab then):\n\n>> 1\n\nans =\n\n    1\n\n>> 1;\n>>\n\nI rely on this feature quite often, and I consider it a huge annoyance\nof the default python shell that you can not suppress output without\nmaking an assignment.\n\nCheers,\n\nF\n```\n",
+    "created_at": "2010-01-19T09:46:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6650#issuecomment-54593",
+    "user": "was"
+}
+```
 
 
 ```
@@ -86,9 +144,20 @@ F
 
 
 
+
 ---
 
-Comment by was created at 2010-01-19 11:07:53
+archive/issue_comments_054594.json:
+```json
+{
+    "body": "\n```\nOn Tue, Jan 19, 2010 at 2:54 AM, William Stein <> wrote:\n> Since IPython has tons and tons of options, maybe one could make this\n> another user-customizable option?  If you won't do it, any hints as to\n> what would need to be changed?\n\nThis could certainly be made an option, please file it so we don't\nforget about it:\n\n\nhttps://bugs.launchpad.net/ipython\n\nIn the meantime, hack out in IPython's prompts.py file around line 530 or so:\n\n           # do not print output if input ends in ';'\n           try:\n               if self.input_hist[self.prompt_count].endswith(';\\n'):\n                   return\n           except IndexError:\n               # some uses of ipshellembed may fail here\n               pass\n\nJust remove that block, and the 'feature' will be gone from your\npatched version.\n\nCheers,\n\nf\n```\n\n\n\nThanks.   I tried and it seems that site is broken for reporting bugs...  It says:\n\n```\nOops!\n\nSorry, something just went wrong in Launchpad.\n\nWe\u2019ve recorded what happened, and we\u2019ll fix it as soon as possible. Apologies for the inconvenience.\n\n(Error ID: OOPS-1480B921)\n```\n",
+    "created_at": "2010-01-19T11:07:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6650#issuecomment-54594",
+    "user": "was"
+}
+```
 
 
 ```

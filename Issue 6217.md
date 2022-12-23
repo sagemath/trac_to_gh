@@ -1,11 +1,21 @@
 # Issue 6217: [with patch, needs review] fix issues with sorting in formal_sum
 
-Issue created by migration from https://trac.sagemath.org/ticket/6217
-
-Original creator: mhansen
-
-Original creation time: 2009-06-05 00:22:10
-
+archive/issues_006217.json:
+```json
+{
+    "body": "Assignee: somebody\n\n\n```\nOk, note that this is rc1 on Fedora 10, 32 bit:\n\nThe followin tests failed:\n\n\nsage -t  \"devel/sage/sage/structure/formal_sum.py\"\n**********************************************************************\nFile \"/home/jaap/Download/sage-4.0.alpha0/devel/sage/sage/structure/formal_sum.py\", line 293:\n    sage: for z in FormalSum([(1,2), (5, 'a'), (-3, 7)]): print z\nExpected:\n    (5, 'a')\n    (1, 2)\n    (-3, 7)\nGot:\n    (1, 2)\n    (-3, 7)\n    (5, 'a')\n**********************************************************************\nFile \"/home/jaap/Download/sage-4.0.alpha0/devel/sage/sage/structure/formal_sum.py\", line 304:\n    sage: v = FormalSum([(1,2), (5, 'a'), (-3, 7)]); v\nExpected:\n    5*a + 2 - 3*7\nGot:\n    2 - 3*7 + 5*a\n**********************************************************************\nFile \"/home/jaap/Download/sage-4.0.alpha0/devel/sage/sage/structure/formal_sum.py\", line 306:\n    sage: v[0]         # indirect doctest\nExpected:\n    (5, 'a')\nGot:\n    (1, 2)\n**********************************************************************\nFile \"/home/jaap/Download/sage-4.0.alpha0/devel/sage/sage/structure/formal_sum.py\", line 308:\n    sage: v[1]\nExpected:\n    (1, 2)\nGot:\n    (-3, 7)\n**********************************************************************\nFile \"/home/jaap/Download/sage-4.0.alpha0/devel/sage/sage/structure/formal_sum.py\", line 310:\n    sage: v[2]\nExpected:\n    (-3, 7)\nGot:\n    (5, 'a')\n**********************************************************************\nFile \"/home/jaap/Download/sage-4.0.alpha0/devel/sage/sage/structure/formal_sum.py\", line 312:\n    sage: list(v)\nExpected:\n    [(5, 'a'), (1, 2), (-3, 7)]\nGot:\n    [(1, 2), (-3, 7), (5, 'a')]\n**********************************************************************\nFile \"/home/jaap/Download/sage-4.0.alpha0/devel/sage/sage/structure/formal_sum.py\", line 321:\n    sage: v = FormalSum([(1,2), (5, 'a'), (-3, 7)]); v\nExpected:\n    5*a + 2 - 3*7\nGot:\n    2 - 3*7 + 5*a\n**********************************************************************\n3 items had failures:\n   1 of   3 in __main__.example_12\n   5 of   7 in __main__.example_13\n   1 of   4 in __main__.example_14\n***Test Failed*** 7 failures.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6217\n\n",
+    "created_at": "2009-06-05T00:22:10Z",
+    "labels": [
+        "basic arithmetic",
+        "blocker",
+        "bug"
+    ],
+    "title": "[with patch, needs review] fix issues with sorting in formal_sum",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6217",
+    "user": "mhansen"
+}
+```
 Assignee: somebody
 
 
@@ -78,23 +88,62 @@ Got:
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6217
+
+
+
+
 
 ---
+
+archive/issue_comments_049663.json:
+```json
+{
+    "body": "Attachment\n\nI've made it so that the examples don't use the string 'a' as a bases since that was causing problems for the sorting.",
+    "created_at": "2009-06-05T00:53:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6217",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6217#issuecomment-49663",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 I've made it so that the examples don't use the string 'a' as a bases since that was causing problems for the sorting.
 
 
+
 ---
 
-Comment by was created at 2009-06-06 16:54:48
+archive/issue_comments_049664.json:
+```json
+{
+    "body": "merged in 4.0.1.rc3",
+    "created_at": "2009-06-06T16:54:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6217",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6217#issuecomment-49664",
+    "user": "was"
+}
+```
 
 merged in 4.0.1.rc3
 
 
+
 ---
 
-Comment by was created at 2009-06-06 16:54:48
+archive/issue_comments_049665.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-06-06T16:54:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6217",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6217#issuecomment-49665",
+    "user": "was"
+}
+```
 
 Resolution: fixed

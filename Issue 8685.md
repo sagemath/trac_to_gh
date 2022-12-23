@@ -1,11 +1,21 @@
 # Issue 8685: evaluation of Monsky-Washnitzer objects
 
-Issue created by migration from https://trac.sagemath.org/ticket/8685
-
-Original creator: jen
-
-Original creation time: 2010-04-14 06:20:29
-
+archive/issues_008685.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  robertwb kedlaya roed jpflori\n\nThe following should raise an error since f0 has a singularity at P  (and isn't necessarily 0 at all finite Weierstrass points):\n\n```\nsage: R.<x> = QQ['x']\nsage: H= HyperellipticCurve(x^3-10*x+9)\nsage: K = Qp(5,10)\nsage: HK = H.change_ring(K)\nsage: P = HK(1,0)\nsage: import sage.schemes.elliptic_curves.monsky_washnitzer as mw\nsage: Mfrob,forms=mw.matrix_of_frobenius_hyperelliptic(HK)\nsage: f0 = forms[0]\nsage: f0(P[0],P[1])\n0\nsage: f0(x,K(0))\n0\n\n```\n\nIn fact, Sage seems to knows this...just not when the y-coordinate is 0 in the p-adic field. So, a coercion error?\n\n```\nsage: f0(x,0)\n---------------------------------------------------------------------------\nZeroDivisionError                         Traceback (most recent call last)\n\nZeroDivisionError: Rational division by zero\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8685\n\n",
+    "created_at": "2010-04-14T06:20:29Z",
+    "labels": [
+        "number theory",
+        "major",
+        "bug"
+    ],
+    "title": "evaluation of Monsky-Washnitzer objects",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8685",
+    "user": "jen"
+}
+```
 Assignee: was
 
 CC:  robertwb kedlaya roed jpflori
@@ -40,10 +50,25 @@ ZeroDivisionError: Rational division by zero
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8685
+
+
+
+
 
 ---
 
-Comment by kedlaya created at 2010-04-15 20:27:45
+archive/issue_comments_079142.json:
+```json
+{
+    "body": "This appears to be a problem with (surprise) power series over p-adic fields:\n\n```\nsage: R.<y> = LaurentSeriesRing(Rationals())\nsage: K = Qp(5, 10)\nsage: u = y^(-1)\nsage: u(K(0)) ## Should blow up but doesn't\n0\nsage: u(0) ## Should blow up and does\n---------------------------------------------------------------------------\nZeroDivisionError                         Traceback (most recent call last)\n\nZeroDivisionError: Rational division by zero\n```\n",
+    "created_at": "2010-04-15T20:27:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8685",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8685#issuecomment-79142",
+    "user": "kedlaya"
+}
+```
 
 This appears to be a problem with (surprise) power series over p-adic fields:
 
@@ -62,45 +87,111 @@ ZeroDivisionError: Rational division by zero
 
 
 
+
 ---
 
-Comment by kedlaya created at 2016-03-23 22:40:52
+archive/issue_comments_079143.json:
+```json
+{
+    "body": "I just tried the test cases and (modulo the fact that monsky_washnitzer moved to hyperelliptic_curves) they no longer return the claimed errors. Probably this is due to some bug in p-adic power series getting fixed (perhaps #9457).\n\nIn light of that, I propose to resolve this ticket as \"fixed\".",
+    "created_at": "2016-03-23T22:40:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8685",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8685#issuecomment-79143",
+    "user": "kedlaya"
+}
+```
 
 I just tried the test cases and (modulo the fact that monsky_washnitzer moved to hyperelliptic_curves) they no longer return the claimed errors. Probably this is due to some bug in p-adic power series getting fixed (perhaps #9457).
 
 In light of that, I propose to resolve this ticket as "fixed".
 
 
+
 ---
 
-Comment by roed created at 2016-03-24 20:50:36
+archive/issue_comments_079144.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2016-03-24T20:50:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8685",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8685#issuecomment-79144",
+    "user": "roed"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by roed created at 2016-03-24 20:51:20
+archive/issue_comments_079145.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2016-03-24T20:51:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8685",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8685#issuecomment-79145",
+    "user": "roed"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by roed created at 2016-03-24 20:51:20
+archive/issue_comments_079146.json:
+```json
+{
+    "body": "Works for me.",
+    "created_at": "2016-03-24T20:51:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8685",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8685#issuecomment-79146",
+    "user": "roed"
+}
+```
 
 Works for me.
 
 
+
 ---
 
-Comment by vbraun created at 2016-03-26 12:02:11
+archive/issue_comments_079147.json:
+```json
+{
+    "body": "Resolution: worksforme",
+    "created_at": "2016-03-26T12:02:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8685",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8685#issuecomment-79147",
+    "user": "vbraun"
+}
+```
 
 Resolution: worksforme
 
 
+
 ---
 
-Comment by jen created at 2016-03-26 12:47:16
+archive/issue_comments_079148.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"days71\".",
+    "created_at": "2016-03-26T12:47:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8685",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8685#issuecomment-79148",
+    "user": "jen"
+}
+```
 
 Changing keywords from "" to "days71".

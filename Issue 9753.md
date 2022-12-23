@@ -1,109 +1,281 @@
 # Issue 9753: Simplify NumberFieldIdeal.gens_reduced()
 
-Issue created by migration from https://trac.sagemath.org/ticket/9753
-
-Original creator: jdemeyer
-
-Original creation time: 2010-08-15 19:56:54
-
+archive/issues_009753.json:
+```json
+{
+    "body": "Assignee: davidloeffler\n\nThe function NumberFieldIdeal.gens_reduced() can be simplified quite a bit without essentially changing its functionality.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9753\n\n",
+    "created_at": "2010-08-15T19:56:54Z",
+    "labels": [
+        "number fields",
+        "major",
+        "bug"
+    ],
+    "title": "Simplify NumberFieldIdeal.gens_reduced()",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9753",
+    "user": "jdemeyer"
+}
+```
 Assignee: davidloeffler
 
 The function NumberFieldIdeal.gens_reduced() can be simplified quite a bit without essentially changing its functionality.
 
+Issue created by migration from https://trac.sagemath.org/ticket/9753
+
+
+
+
 
 ---
 
-Comment by jdemeyer created at 2010-08-15 20:07:54
+archive/issue_comments_095502.json:
+```json
+{
+    "body": "Changing status from new to needs_work.",
+    "created_at": "2010-08-15T20:07:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9753",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9753#issuecomment-95502",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from new to needs_work.
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-08-15 20:07:54
+archive/issue_comments_095503.json:
+```json
+{
+    "body": "I will wait to fix the doctests until after #9343 and #9400.",
+    "created_at": "2010-08-15T20:07:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9753",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9753#issuecomment-95503",
+    "user": "jdemeyer"
+}
+```
 
 I will wait to fix the doctests until after #9343 and #9400.
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-09-13 07:45:48
+archive/issue_comments_095504.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-09-13T07:45:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9753",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9753#issuecomment-95504",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
+
+archive/issue_comments_095505.json:
+```json
+{
+    "body": "Attachment\n\nAdds function gens_two(), rewrites gens_reduced() and fixes doctests",
+    "created_at": "2010-09-16T00:43:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9753",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9753#issuecomment-95505",
+    "user": "jdemeyer"
+}
+```
 
 Attachment
 
 Adds function gens_two(), rewrites gens_reduced() and fixes doctests
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-09-16 16:59:37
+archive/issue_comments_095506.json:
+```json
+{
+    "body": "Changing type from defect to enhancement.",
+    "created_at": "2010-09-16T16:59:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9753",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9753#issuecomment-95506",
+    "user": "jdemeyer"
+}
+```
 
 Changing type from defect to enhancement.
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-09-16 16:59:37
+archive/issue_comments_095507.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"number field ideal gens_two idealtwoelt\".",
+    "created_at": "2010-09-16T16:59:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9753",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9753#issuecomment-95507",
+    "user": "jdemeyer"
+}
+```
 
 Changing keywords from "" to "number field ideal gens_two idealtwoelt".
 
 
+
 ---
 
-Comment by davidloeffler created at 2010-09-23 10:58:22
+archive/issue_comments_095508.json:
+```json
+{
+    "body": "Looks fine to me, and all tests pass on my machine.",
+    "created_at": "2010-09-23T10:58:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9753",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9753#issuecomment-95508",
+    "user": "davidloeffler"
+}
+```
 
 Looks fine to me, and all tests pass on my machine.
 
 
+
 ---
 
-Comment by davidloeffler created at 2010-09-23 10:58:22
+archive/issue_comments_095509.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-09-23T10:58:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9753",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9753#issuecomment-95509",
+    "user": "davidloeffler"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-28 09:34:37
+archive/issue_comments_095510.json:
+```json
+{
+    "body": "Could someone update the patch commit string with a more descriptive first line (still including the ticket number) and restore the positive review?",
+    "created_at": "2010-09-28T09:34:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9753",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9753#issuecomment-95510",
+    "user": "mpatel"
+}
+```
 
 Could someone update the patch commit string with a more descriptive first line (still including the ticket number) and restore the positive review?
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-28 09:34:37
+archive/issue_comments_095511.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_work.",
+    "created_at": "2010-09-28T09:34:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9753",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9753#issuecomment-95511",
+    "user": "mpatel"
+}
+```
 
 Changing status from positive_review to needs_work.
 
 
+
 ---
+
+archive/issue_comments_095512.json:
+```json
+{
+    "body": "Attachment\n\nNew version with better commit string",
+    "created_at": "2010-09-28T09:41:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9753",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9753#issuecomment-95512",
+    "user": "davidloeffler"
+}
+```
 
 Attachment
 
 New version with better commit string
 
 
+
 ---
 
-Comment by davidloeffler created at 2010-09-28 09:42:22
+archive/issue_comments_095513.json:
+```json
+{
+    "body": "Changing status from needs_work to positive_review.",
+    "created_at": "2010-09-28T09:42:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9753",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9753#issuecomment-95513",
+    "user": "davidloeffler"
+}
+```
 
 Changing status from needs_work to positive_review.
 
 
+
 ---
 
-Comment by davidloeffler created at 2010-09-28 09:42:22
+archive/issue_comments_095514.json:
+```json
+{
+    "body": "Done.",
+    "created_at": "2010-09-28T09:42:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9753",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9753#issuecomment-95514",
+    "user": "davidloeffler"
+}
+```
 
 Done.
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-28 10:55:54
+archive/issue_comments_095515.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-09-28T10:55:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9753",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9753#issuecomment-95515",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed

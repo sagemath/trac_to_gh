@@ -1,11 +1,21 @@
 # Issue 7752: RAM is not free after deleting a worksheet
 
-Issue created by migration from https://trac.sagemath.org/ticket/7752
-
-Original creator: pang
-
-Original creation time: 2009-12-23 14:16:30
-
+archive/issues_007752.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  was acleone mpatel\n\nTotal RAM use does not decrease after deleting a worksheet. In the Trash section, it appears as (running).\n\nI suggest the page is stopped, then deleted, as usually someone deleting a worksheet does not plan on working on it further.\n\nWhen I have to correct a lot of worksheets from the students, I upload one, correct it, save it, and delete it, but RAM eventually gets collapsed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7752\n\n",
+    "created_at": "2009-12-23T14:16:30Z",
+    "labels": [
+        "notebook",
+        "minor",
+        "bug"
+    ],
+    "title": "RAM is not free after deleting a worksheet",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7752",
+    "user": "pang"
+}
+```
 Assignee: was
 
 CC:  was acleone mpatel
@@ -16,44 +26,116 @@ I suggest the page is stopped, then deleted, as usually someone deleting a works
 
 When I have to correct a lot of worksheets from the students, I upload one, correct it, save it, and delete it, but RAM eventually gets collapsed.
 
+Issue created by migration from https://trac.sagemath.org/ticket/7752
+
+
+
+
 
 ---
+
+archive/issue_comments_066764.json:
+```json
+{
+    "body": "Attachment\n\nQuits a worksheet only if the only user viewing the worksheet is the person trashing it.",
+    "created_at": "2010-01-19T10:42:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7752",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7752#issuecomment-66764",
+    "user": "timdumol"
+}
+```
 
 Attachment
 
 Quits a worksheet only if the only user viewing the worksheet is the person trashing it.
 
 
+
 ---
 
-Comment by timdumol created at 2010-01-19 10:43:00
+archive/issue_comments_066765.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-01-19T10:43:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7752",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7752#issuecomment-66765",
+    "user": "timdumol"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by timdumol created at 2010-01-19 10:43:00
+archive/issue_comments_066766.json:
+```json
+{
+    "body": "This should do the trick. It only quits a worksheet if the only user viewing it is the person trashing it, as it may otherwise ruin other people's sessions.",
+    "created_at": "2010-01-19T10:43:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7752",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7752#issuecomment-66766",
+    "user": "timdumol"
+}
+```
 
 This should do the trick. It only quits a worksheet if the only user viewing it is the person trashing it, as it may otherwise ruin other people's sessions.
 
 
+
 ---
 
-Comment by acleone created at 2010-01-19 12:53:17
+archive/issue_comments_066767.json:
+```json
+{
+    "body": "LGTM.",
+    "created_at": "2010-01-19T12:53:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7752",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7752#issuecomment-66767",
+    "user": "acleone"
+}
+```
 
 LGTM.
 
 
+
 ---
 
-Comment by acleone created at 2010-01-19 12:53:17
+archive/issue_comments_066768.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-01-19T12:53:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7752",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7752#issuecomment-66768",
+    "user": "acleone"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mpatel created at 2010-01-25 01:01:58
+archive/issue_comments_066769.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-25T01:01:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7752",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7752#issuecomment-66769",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed

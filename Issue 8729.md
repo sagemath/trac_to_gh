@@ -1,11 +1,21 @@
 # Issue 8729: simple integral using trig functions gives wrong answer
 
-Issue created by migration from https://trac.sagemath.org/ticket/8729
-
-Original creator: jason
-
-Original creation time: 2010-04-20 16:52:51
-
+archive/issues_008729.json:
+```json
+{
+    "body": "Assignee: burcin\n\nCC:  kcrisman\n\nSee http://groups.google.com/group/sage-devel/browse_frm/thread/f82e24efdfe23b07/d9e563f086b1136d for a solution\n\n\n```\nsage: a=sqrt((sin(t))^2 + (cos(t))^2)\nsage: integrate(a, t, 0, 2*pi) # WRONG!\npi\nsage: a.simplify_full().simplify_trig()\n1\nsage: integrate(a.simplify_full().simplify_trig(), t, 0, 2*pi)\n2*pi \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8729\n\n",
+    "created_at": "2010-04-20T16:52:51Z",
+    "labels": [
+        "calculus",
+        "major",
+        "bug"
+    ],
+    "title": "simple integral using trig functions gives wrong answer",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8729",
+    "user": "jason"
+}
+```
 Assignee: burcin
 
 CC:  kcrisman
@@ -24,30 +34,78 @@ sage: integrate(a.simplify_full().simplify_trig(), t, 0, 2*pi)
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8729
+
+
+
+
 
 ---
 
-Comment by jason created at 2010-04-20 17:36:24
+archive/issue_comments_079737.json:
+```json
+{
+    "body": "It looks like this is fixed in maxima 5.21.0, so maybe we should just upgrade.",
+    "created_at": "2010-04-20T17:36:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8729",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8729#issuecomment-79737",
+    "user": "jason"
+}
+```
 
 It looks like this is fixed in maxima 5.21.0, so maybe we should just upgrade.
 
 
+
 ---
 
-Comment by jason created at 2010-05-13 04:33:41
+archive/issue_comments_079738.json:
+```json
+{
+    "body": "This is fixed in the maxima upgrade at #8731",
+    "created_at": "2010-05-13T04:33:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8729",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8729#issuecomment-79738",
+    "user": "jason"
+}
+```
 
 This is fixed in the maxima upgrade at #8731
 
 
+
 ---
 
-Comment by rlm created at 2010-06-25 11:23:32
+archive/issue_comments_079739.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2010-06-25T11:23:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8729",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8729#issuecomment-79739",
+    "user": "rlm"
+}
+```
 
 Resolution: duplicate
 
 
+
 ---
 
-Comment by kcrisman created at 2010-06-25 13:10:10
+archive/issue_comments_079740.json:
+```json
+{
+    "body": "Note put on #8731 to check this with a doctest when that ticket is done.",
+    "created_at": "2010-06-25T13:10:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8729",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8729#issuecomment-79740",
+    "user": "kcrisman"
+}
+```
 
 Note put on #8731 to check this with a doctest when that ticket is done.

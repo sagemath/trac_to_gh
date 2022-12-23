@@ -1,11 +1,21 @@
 # Issue 4633: fix additional "Fortran-style" names and a coercion
 
-Issue created by migration from https://trac.sagemath.org/ticket/4633
-
-Original creator: bpage
-
-Original creation time: 2008-11-27 01:42:53
-
+archive/issues_004633.json:
+```json
+{
+    "body": "Assignee: was\n\nKeywords: axiom\n\nIn order to run the the comparison of integration results between FriCAS and Maxima, it is also necessary to make some simple additions to the 'axiom.py' interface:\n\n\n```\nwspage@debian:~/sage-3.1.4/devel/sage-main/sage/interfaces$ hg diff\ndiff -r ed3f78f99d2a sage/interfaces/axiom.py\n--- a/sage/interfaces/axiom.py  Tue Nov 25 23:45:43 2008 -0500\n+++ b/sage/interfaces/axiom.py  Wed Nov 26 19:43:59 2008 -0500\n@@ -729,7 +729,10 @@\n        s = P.eval('unparse(%s::InputForm)'%self._name)\n        if 'translation error' in s or 'Cannot convert' in s:\n            raise NotImplementedError\n-        s = multiple_replace({'\\r\\n':'', # fix stupid Fortran-ish\n+        s = multiple_replace({'\\r\\n':'', # fix stupid Fortran-ish\n+                              'DLOG(':'log(',\n+                              'DEXP(':'exp(',\n+                              '::(':'', ',Symbol)':'',\n                              'DSIN(':'sin(',\n                              'DCOS(':'cos(',\n                              'DTAN(':'tan(',\n\n```\n\n\n----\n\nIntegration produce some additional \"Fortran-style\" names and a\ncoercion that have to be translated before the input form can be\nprocessed by Sage.\n\nWith this change we can do:\n\n\n```\n  test_int = integrand.integrate(x)\n  fricas_int = axiom.integrate(integrand,x).sage()\n  fricas_cmp = (test_int.simplify_full()-fricas_int.simplify_full()).simplify_full()\n  if (fricas_cmp == 0):\n      print \"FriCAS agrees with Maxima.\"\n\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4633\n\n",
+    "created_at": "2008-11-27T01:42:53Z",
+    "labels": [
+        "interfaces",
+        "major",
+        "bug"
+    ],
+    "title": "fix additional \"Fortran-style\" names and a coercion",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4633",
+    "user": "bpage"
+}
+```
 Assignee: was
 
 Keywords: axiom
@@ -54,10 +64,25 @@ With this change we can do:
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4633
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-11-27 01:44:05
+archive/issue_comments_034826.json:
+```json
+{
+    "body": "Hi Bill,\n\nplease attach a proper hg patch. \n\nCheers,\n\nMichael",
+    "created_at": "2008-11-27T01:44:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4633",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4633#issuecomment-34826",
+    "user": "mabshoff"
+}
+```
 
 Hi Bill,
 
@@ -68,23 +93,58 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_034827.json:
+```json
+{
+    "body": "Attachment\n\npatch file",
+    "created_at": "2008-11-27T01:46:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4633",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4633#issuecomment-34827",
+    "user": "bpage"
+}
+```
 
 Attachment
 
 patch file
 
 
+
 ---
 
-Comment by bpage created at 2008-11-27 01:48:00
+archive/issue_comments_034828.json:
+```json
+{
+    "body": "Sorry. What is a \"hg patch\"?",
+    "created_at": "2008-11-27T01:48:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4633",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4633#issuecomment-34828",
+    "user": "bpage"
+}
+```
 
 Sorry. What is a "hg patch"?
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-27 01:49:25
+archive/issue_comments_034829.json:
+```json
+{
+    "body": "Replying to [comment:2 bpage]:\n> Sorry. What is a \"hg patch\"?\n\nA mercurial patch. hg is the chemical symbol for mercurial, so that is why the mercurial binary is called hg. \n\nCheers,\n\nMichael",
+    "created_at": "2008-11-27T01:49:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4633",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4633#issuecomment-34829",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:2 bpage]:
 > Sorry. What is a "hg patch"?
@@ -96,75 +156,143 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by bpage created at 2008-11-27 01:50:28
+archive/issue_comments_034830.json:
+```json
+{
+    "body": "Further note: The new release of FriCAS-1.0.4 which is not yet available as a Sage spkg no longer produces this \"Fortranish\" functions names.",
+    "created_at": "2008-11-27T01:50:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4633",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4633#issuecomment-34830",
+    "user": "bpage"
+}
+```
 
 Further note: The new release of FriCAS-1.0.4 which is not yet available as a Sage spkg no longer produces this "Fortranish" functions names.
 
 
+
 ---
 
-Comment by bpage created at 2008-11-27 01:52:58
+archive/issue_comments_034831.json:
+```json
+{
+    "body": "> A mercurial patch. hg is the chemical symbol for mercurial, so that is why the mercurial binary is called hg. \n\n:~) I meant, how do I create a \"hg patch\" if not by \"hg diff\"?",
+    "created_at": "2008-11-27T01:52:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4633",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4633#issuecomment-34831",
+    "user": "bpage"
+}
+```
 
 > A mercurial patch. hg is the chemical symbol for mercurial, so that is why the mercurial binary is called hg. 
 
 :~) I meant, how do I create a "hg patch" if not by "hg diff"?
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-27 02:01:53
+archive/issue_comments_034832.json:
+```json
+{
+    "body": "Hi Bill,\n\n* Check in your changes: hg commit\n* export the last commit: hg export tip > trac_4633.patch\n* attach patch to this ticket\n* prepend \"[with patch, needs review] to summary line\n* wait for review \n\nCheers,\n\nMichael",
+    "created_at": "2008-11-27T02:01:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4633",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4633#issuecomment-34832",
+    "user": "mabshoff"
+}
+```
 
 Hi Bill,
 
- * Check in your changes: hg commit
- * export the last commit: hg export tip > trac_4633.patch
- * attach patch to this ticket
- * prepend "[with patch, needs review] to summary line
- * wait for review 
+* Check in your changes: hg commit
+* export the last commit: hg export tip > trac_4633.patch
+* attach patch to this ticket
+* prepend "[with patch, needs review] to summary line
+* wait for review 
 
 Cheers,
 
 Michael
 
 
+
 ---
+
+archive/issue_comments_034833.json:
+```json
+{
+    "body": "Attachment\n\n[with patch, needs review] Better?",
+    "created_at": "2008-11-27T05:05:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4633",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4633#issuecomment-34833",
+    "user": "bpage"
+}
+```
 
 Attachment
 
 [with patch, needs review] Better?
 
 
+
 ---
 
-Comment by tjlahey created at 2008-11-30 21:42:53
+archive/issue_comments_034834.json:
+```json
+{
+    "body": "Is there a specific procedure for installing (and testing) these kinds of patches? That is, how do I get Sage to know that the code has been updated? This kind of thing would be nice on a wiki page for new developers. Or have I just missed it?",
+    "created_at": "2008-11-30T21:42:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4633",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4633#issuecomment-34834",
+    "user": "tjlahey"
+}
+```
 
 Is there a specific procedure for installing (and testing) these kinds of patches? That is, how do I get Sage to know that the code has been updated? This kind of thing would be nice on a wiki page for new developers. Or have I just missed it?
 
 
+
 ---
 
-Comment by bpage created at 2008-12-01 03:54:05
+archive/issue_comments_034835.json:
+```json
+{
+    "body": "Replying to [comment:7 tjlahey]:\n> Is there a specific procedure for installing (and testing) these kinds of patches? That is, how do I get Sage to know that the code has been updated? This kind of thing would be nice on a wiki page for new developers. Or have I just missed it?\n\nThis is what I do:\n\n0. Pretest, e.g. try: axiom(1/log(x)).sage()\n\n```\n    NotImplementedError\n```\n\n1. Click on the link to that patch: \"trac_4633.patch\"\n2. Click on the link to \"original format\"\n3. Save the patch file somewhere, e.g. ~/trac_4633.patch\n4. cd sage*/devel/sage-main\n5. apply the patch: patch -p1 < ~/trac_4633.patch\n6. re-build sage: sage -br\n7. test, e.g. try: axiom(1/log(x)).sage()\n\n```\n    1/log(x)\n```\n\n\nI guess that in a more complete patch I should have added some tests like this to the doc tests. This just seemed too simple.",
+    "created_at": "2008-12-01T03:54:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4633",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4633#issuecomment-34835",
+    "user": "bpage"
+}
+```
 
 Replying to [comment:7 tjlahey]:
 > Is there a specific procedure for installing (and testing) these kinds of patches? That is, how do I get Sage to know that the code has been updated? This kind of thing would be nice on a wiki page for new developers. Or have I just missed it?
 
 This is what I do:
 
- 0. Pretest, e.g. try: axiom(1/log(x)).sage()
+0. Pretest, e.g. try: axiom(1/log(x)).sage()
 
 ```
     NotImplementedError
 ```
 
- 1. Click on the link to that patch: "trac_4633.patch"
- 2. Click on the link to "original format"
- 3. Save the patch file somewhere, e.g. ~/trac_4633.patch
- 4. cd sage*/devel/sage-main
- 5. apply the patch: patch -p1 < ~/trac_4633.patch
- 6. re-build sage: sage -br
- 7. test, e.g. try: axiom(1/log(x)).sage()
+1. Click on the link to that patch: "trac_4633.patch"
+2. Click on the link to "original format"
+3. Save the patch file somewhere, e.g. ~/trac_4633.patch
+4. cd sage*/devel/sage-main
+5. apply the patch: patch -p1 < ~/trac_4633.patch
+6. re-build sage: sage -br
+7. test, e.g. try: axiom(1/log(x)).sage()
 
 ```
     1/log(x)
@@ -174,9 +302,20 @@ This is what I do:
 I guess that in a more complete patch I should have added some tests like this to the doc tests. This just seemed too simple.
 
 
+
 ---
 
-Comment by tjlahey created at 2008-12-02 23:23:04
+archive/issue_comments_034836.json:
+```json
+{
+    "body": "Replying to [comment:8 bpage]:\n\nIt doesn't want to apply. In my version of sage/interfaces/axiom.py, I don't have:\n\n```\n         s = P.eval('unparse(%s::InputForm)'%self._name) \n         if 'translation error' in s or 'Cannot convert' in s: \n             raise NotImplementedError\n```\n\nso I get a rejection when I attempt to apply the patch. I'm using Sage 3.2.",
+    "created_at": "2008-12-02T23:23:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4633",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4633#issuecomment-34836",
+    "user": "tjlahey"
+}
+```
 
 Replying to [comment:8 bpage]:
 
@@ -191,9 +330,20 @@ It doesn't want to apply. In my version of sage/interfaces/axiom.py, I don't hav
 so I get a rejection when I attempt to apply the patch. I'm using Sage 3.2.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-02 23:24:44
+archive/issue_comments_034837.json:
+```json
+{
+    "body": "This is probably on top of #4036, which itself needs to be slightly rebased.\n\nCheers,\n\nMichael",
+    "created_at": "2008-12-02T23:24:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4633",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4633#issuecomment-34837",
+    "user": "mabshoff"
+}
+```
 
 This is probably on top of #4036, which itself needs to be slightly rebased.
 
@@ -202,9 +352,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by bpage created at 2008-12-03 00:20:09
+archive/issue_comments_034838.json:
+```json
+{
+    "body": "Replying to [comment:10 mabshoff]:\n> This is probably on top of #4036, which itself needs to be slightly rebased.\n\nCorrect. What is the proper procedure to follow in this case?",
+    "created_at": "2008-12-03T00:20:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4633",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4633#issuecomment-34838",
+    "user": "bpage"
+}
+```
 
 Replying to [comment:10 mabshoff]:
 > This is probably on top of #4036, which itself needs to be slightly rebased.
@@ -212,9 +373,20 @@ Replying to [comment:10 mabshoff]:
 Correct. What is the proper procedure to follow in this case?
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-03 00:23:15
+archive/issue_comments_034839.json:
+```json
+{
+    "body": "Hi Bill,\n\nJust mention it on the ticket and/or change the summary line like I just did.\n\nCheers,\n\nMichael",
+    "created_at": "2008-12-03T00:23:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4633",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4633#issuecomment-34839",
+    "user": "mabshoff"
+}
+```
 
 Hi Bill,
 
@@ -225,40 +397,95 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by was created at 2008-12-06 22:15:03
+archive/issue_comments_034840.json:
+```json
+{
+    "body": "Please add a doctest that illustrates what you're fixing and mark it \"#optional - fricas\".    The doctest could also include your integration example.\n\nThanks!!",
+    "created_at": "2008-12-06T22:15:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4633",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4633#issuecomment-34840",
+    "user": "was"
+}
+```
 
 Please add a doctest that illustrates what you're fixing and mark it "#optional - fricas".    The doctest could also include your integration example.
 
 Thanks!!
 
 
+
 ---
 
-Comment by chapoton created at 2014-07-19 12:31:28
+archive/issue_comments_034841.json:
+```json
+{
+    "body": "According to http://trac.sagemath.org/ticket/4633#comment:4, this is no longer needed in recent versions of FriCAS. Sage is now using FriCAS 1.0.9 (#9354).\n\nSo maybe this can be closed ?",
+    "created_at": "2014-07-19T12:31:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4633",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4633#issuecomment-34841",
+    "user": "chapoton"
+}
+```
 
 According to http://trac.sagemath.org/ticket/4633#comment:4, this is no longer needed in recent versions of FriCAS. Sage is now using FriCAS 1.0.9 (#9354).
 
 So maybe this can be closed ?
 
 
+
 ---
 
-Comment by chapoton created at 2014-07-19 12:31:28
+archive/issue_comments_034842.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2014-07-19T12:31:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4633",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4633#issuecomment-34842",
+    "user": "chapoton"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2014-10-16 11:23:11
+archive/issue_comments_034843.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2014-10-16T11:23:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4633",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4633#issuecomment-34843",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by vbraun created at 2014-10-27 16:26:00
+archive/issue_comments_034844.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2014-10-27T16:26:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4633",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4633#issuecomment-34844",
+    "user": "vbraun"
+}
+```
 
 Resolution: fixed

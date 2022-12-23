@@ -1,11 +1,21 @@
 # Issue 8929: add new methods to permgroup
 
-Issue created by migration from https://trac.sagemath.org/ticket/8929
-
-Original creator: jasonbhill
-
-Original creation time: 2010-05-07 20:52:45
-
+archive/issues_008929.json:
+```json
+{
+    "body": "Assignee: jasonbhill\n\nCC:  wjlaffin saliola\n\nKeywords: permgroup\n\n- changed is_transitive() to accept options for domain\n- added: is_primitive(), is_regular(), is_semi_regular, and others\n\nIssue created by migration from https://trac.sagemath.org/ticket/8929\n\n",
+    "created_at": "2010-05-07T20:52:45Z",
+    "labels": [
+        "group theory",
+        "major",
+        "enhancement"
+    ],
+    "title": "add new methods to permgroup",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8929",
+    "user": "jasonbhill"
+}
+```
 Assignee: jasonbhill
 
 CC:  wjlaffin saliola
@@ -15,31 +25,81 @@ Keywords: permgroup
 - changed is_transitive() to accept options for domain
 - added: is_primitive(), is_regular(), is_semi_regular, and others
 
+Issue created by migration from https://trac.sagemath.org/ticket/8929
+
+
+
+
 
 ---
+
+archive/issue_comments_082247.json:
+```json
+{
+    "body": "Attachment\n\nsame as original, with changes made to examples under is_regular()",
+    "created_at": "2010-05-17T19:41:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8929",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8929#issuecomment-82247",
+    "user": "jasonbhill"
+}
+```
 
 Attachment
 
 same as original, with changes made to examples under is_regular()
 
 
+
 ---
 
-Comment by wjlaffin created at 2010-05-18 00:22:39
+archive/issue_comments_082248.json:
+```json
+{
+    "body": "What work needs to be done yet?",
+    "created_at": "2010-05-18T00:22:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8929",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8929#issuecomment-82248",
+    "user": "wjlaffin"
+}
+```
 
 What work needs to be done yet?
 
 
+
 ---
 
-Comment by jasonbhill created at 2010-05-23 19:22:31
+archive/issue_comments_082249.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2010-05-23T19:22:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8929",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8929#issuecomment-82249",
+    "user": "jasonbhill"
+}
+```
 
 Resolution: invalid
 
 
+
 ---
 
-Comment by jasonbhill created at 2010-05-23 19:22:31
+archive/issue_comments_082250.json:
+```json
+{
+    "body": "I'm removing this, as\n(1) The present project to rewrite permutation groups will accomplish these tasks.\n(2) I've noticed that some of the methods are placed in the wrong subsections.",
+    "created_at": "2010-05-23T19:22:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8929",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8929#issuecomment-82250",
+    "user": "jasonbhill"
+}
+```
 
 I'm removing this, as
 (1) The present project to rewrite permutation groups will accomplish these tasks.

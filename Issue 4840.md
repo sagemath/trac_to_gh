@@ -1,11 +1,21 @@
 # Issue 4840: FLINT: call the stack cleanup function at exit
 
-Issue created by migration from https://trac.sagemath.org/ticket/4840
-
-Original creator: mabshoff
-
-Original creation time: 2008-12-20 22:11:53
-
+archive/issues_004840.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  burcin\n\nFLINT uses its own memory pool. In order to clean up Sage's valgrind log call  flint_stack_cleanup() right before unloading FLINT.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4840\n\n",
+    "created_at": "2008-12-20T22:11:53Z",
+    "labels": [
+        "linear algebra",
+        "major",
+        "bug"
+    ],
+    "title": "FLINT: call the stack cleanup function at exit",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4840",
+    "user": "mabshoff"
+}
+```
 Assignee: was
 
 CC:  burcin
@@ -16,59 +26,151 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/4840
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-12-20 22:12:07
+archive/issue_comments_036704.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-12-20T22:12:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4840",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4840#issuecomment-36704",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-20 22:12:07
+archive/issue_comments_036705.json:
+```json
+{
+    "body": "Changing component from linear algebra to memleak.",
+    "created_at": "2008-12-20T22:12:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4840",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4840#issuecomment-36705",
+    "user": "mabshoff"
+}
+```
 
 Changing component from linear algebra to memleak.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-20 22:12:07
+archive/issue_comments_036706.json:
+```json
+{
+    "body": "Changing assignee from was to mabshoff.",
+    "created_at": "2008-12-20T22:12:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4840",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4840#issuecomment-36706",
+    "user": "mabshoff"
+}
+```
 
 Changing assignee from was to mabshoff.
 
 
+
 ---
 
-Comment by burcin created at 2009-01-23 08:10:43
+archive/issue_comments_036707.json:
+```json
+{
+    "body": "Changing status from assigned to new.",
+    "created_at": "2009-01-23T08:10:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4840",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4840#issuecomment-36707",
+    "user": "burcin"
+}
+```
 
 Changing status from assigned to new.
 
 
+
 ---
 
-Comment by burcin created at 2009-01-23 08:10:43
+archive/issue_comments_036708.json:
+```json
+{
+    "body": "attachment:trac_4840-flint_free.patch should fix this.",
+    "created_at": "2009-01-23T08:10:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4840",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4840#issuecomment-36708",
+    "user": "burcin"
+}
+```
 
 attachment:trac_4840-flint_free.patch should fix this.
 
 
+
 ---
 
-Comment by burcin created at 2009-01-23 08:10:43
+archive/issue_comments_036709.json:
+```json
+{
+    "body": "Changing assignee from mabshoff to burcin.",
+    "created_at": "2009-01-23T08:10:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4840",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4840#issuecomment-36709",
+    "user": "burcin"
+}
+```
 
 Changing assignee from mabshoff to burcin.
 
 
+
 ---
 
-Comment by mhansen created at 2009-01-24 02:39:18
+archive/issue_comments_036710.json:
+```json
+{
+    "body": "Looks good to me.",
+    "created_at": "2009-01-24T02:39:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4840",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4840#issuecomment-36710",
+    "user": "mhansen"
+}
+```
 
 Looks good to me.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-24 14:09:05
+archive/issue_comments_036711.json:
+```json
+{
+    "body": "This patch does not apply to my tree? I am also curious why this is a git style patch considering that the history is messed up anyway with git style patches:\n\n```\nmabshoff@geom:/scratch/mabshoff/sage-3.3.alpha2/devel/sage$ hg import trac_4840-flint_free.patch \napplying trac_4840-flint_free.patch\nunable to find 'sage/libs/flint/flint.pxi' for patching\n1 out of 1 hunks FAILED -- saving rejects to file sage/libs/flint/flint.pxi.rej\nsage/libs/flint/flint.pxi: No such file or directory\nabort: patch failed to apply\n```\n\nWhat is going on here? Does this depend on something else?\n\nCheers,\n\nMichael",
+    "created_at": "2009-01-24T14:09:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4840",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4840#issuecomment-36711",
+    "user": "mabshoff"
+}
+```
 
 This patch does not apply to my tree? I am also curious why this is a git style patch considering that the history is messed up anyway with git style patches:
 
@@ -88,22 +190,57 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_036712.json:
+```json
+{
+    "body": "Attachment\n\nNew patch fixes merge failure.",
+    "created_at": "2009-01-24T17:34:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4840",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4840#issuecomment-36712",
+    "user": "burcin"
+}
+```
 
 Attachment
 
 New patch fixes merge failure.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-24 17:45:49
+archive/issue_comments_036713.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-01-24T17:45:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4840",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4840#issuecomment-36713",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-24 17:45:49
+archive/issue_comments_036714.json:
+```json
+{
+    "body": "Merged in Sage 3.3.alpha2",
+    "created_at": "2009-01-24T17:45:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4840",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4840#issuecomment-36714",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.3.alpha2

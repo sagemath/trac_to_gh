@@ -1,16 +1,26 @@
 # Issue 9537: trial_division in Sage is really slow
 
-Issue created by migration from https://trac.sagemath.org/ticket/9537
-
-Original creator: was
-
-Original creation time: 2010-07-18 14:31:40
-
+archive/issues_009537.json:
+```json
+{
+    "body": "Assignee: AlexGhitza\n\nSee my talk:\n*  http://wiki.sagemath.org/days24/schedule?action=AttachFile&do=view&target=stein-cython.pdf\n* http://sagenb.org/home/pub/2256/\n\nBasically, this sucks:\n\n```\nsage: n = 20110000038209\nsage: timeit('trial_division(n)')\n125 loops, best of 3: 2.75 ms per loop\n```\n\n\nEven in pure python one can easily implement this so it runs in about 650microseconds.  In C, it takes only 6 microseconds!\n\nIssue created by migration from https://trac.sagemath.org/ticket/9537\n\n",
+    "created_at": "2010-07-18T14:31:40Z",
+    "labels": [
+        "basic arithmetic",
+        "minor",
+        "enhancement"
+    ],
+    "title": "trial_division in Sage is really slow",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9537",
+    "user": "was"
+}
+```
 Assignee: AlexGhitza
 
 See my talk:
-  *  http://wiki.sagemath.org/days24/schedule?action=AttachFile&do=view&target=stein-cython.pdf
-  * http://sagenb.org/home/pub/2256/
+*  http://wiki.sagemath.org/days24/schedule?action=AttachFile&do=view&target=stein-cython.pdf
+* http://sagenb.org/home/pub/2256/
 
 Basically, this sucks:
 
@@ -23,35 +33,96 @@ sage: timeit('trial_division(n)')
 
 Even in pure python one can easily implement this so it runs in about 650microseconds.  In C, it takes only 6 microseconds!
 
+Issue created by migration from https://trac.sagemath.org/ticket/9537
+
+
+
+
 
 ---
 
-Comment by was created at 2010-07-18 19:22:32
+archive/issue_comments_091893.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-07-18T19:22:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9537",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9537#issuecomment-91893",
+    "user": "was"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by was created at 2010-07-18 19:44:39
+archive/issue_comments_091894.json:
+```json
+{
+    "body": "good.",
+    "created_at": "2010-07-18T19:44:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9537",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9537#issuecomment-91894",
+    "user": "was"
+}
+```
 
 good.
 
 
+
 ---
+
+archive/issue_comments_091895.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-07-18T20:13:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9537",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9537#issuecomment-91895",
+    "user": "spancratz"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by spancratz created at 2010-07-18 20:13:31
+archive/issue_comments_091896.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-07-18T20:13:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9537",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9537#issuecomment-91896",
+    "user": "spancratz"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mpatel created at 2010-07-20 09:21:50
+archive/issue_comments_091897.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-07-20T09:21:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9537",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9537#issuecomment-91897",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed

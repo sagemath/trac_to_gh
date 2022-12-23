@@ -1,11 +1,21 @@
 # Issue 7397: Updated Primes to the category system.
 
-Issue created by migration from https://trac.sagemath.org/ticket/7397
-
-Original creator: hivert
-
-Original creation time: 2009-11-05 16:09:22
-
+archive/issues_007397.json:
+```json
+{
+    "body": "Assignee: hivert\n\nCC:  sage-combinat\n\nKeywords: Prime numbers, categories\n\nThe set of prime number is now in the category `EnumeratedSets`. \n\nCheers, \n\nFlorent\n\nIssue created by migration from https://trac.sagemath.org/ticket/7397\n\n",
+    "created_at": "2009-11-05T16:09:22Z",
+    "labels": [
+        "combinatorics",
+        "major",
+        "enhancement"
+    ],
+    "title": "Updated Primes to the category system.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7397",
+    "user": "hivert"
+}
+```
 Assignee: hivert
 
 CC:  sage-combinat
@@ -18,37 +28,98 @@ Cheers,
 
 Florent
 
+Issue created by migration from https://trac.sagemath.org/ticket/7397
+
+
+
+
 
 ---
 
-Comment by hivert created at 2009-11-05 16:14:49
+archive/issue_comments_062195.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-11-05T16:14:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7397",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7397#issuecomment-62195",
+    "user": "hivert"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_062196.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-11-06T13:41:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7397",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7397#issuecomment-62196",
+    "user": "hivert"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by hivert created at 2009-11-06 13:42:37
+archive/issue_comments_062197.json:
+```json
+{
+    "body": "I just uploaded a new patch after Nicolas review.\n\nFlorent",
+    "created_at": "2009-11-06T13:42:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7397",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7397#issuecomment-62197",
+    "user": "hivert"
+}
+```
 
 I just uploaded a new patch after Nicolas review.
 
 Florent
 
 
+
 ---
 
-Comment by nthiery created at 2009-11-06 13:42:54
+archive/issue_comments_062198.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-11-06T13:42:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7397",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7397#issuecomment-62198",
+    "user": "nthiery"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mhansen created at 2009-11-19 16:58:57
+archive/issue_comments_062199.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-11-19T16:58:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7397",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7397#issuecomment-62199",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

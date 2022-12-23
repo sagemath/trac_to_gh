@@ -1,11 +1,21 @@
 # Issue 6415: "sage -t foo.pyx" should not by default dynamically build foo.so
 
-Issue created by migration from https://trac.sagemath.org/ticket/6415
-
-Original creator: GeorgSWeber
-
-Original creation time: 2009-06-25 21:28:29
-
+archive/issues_006415.json:
+```json
+{
+    "body": "Assignee: tbd\n\nRecently (during Sage Days 12 ?!) the doctesting code was changed so that \"sage -t\" on a certain class of *.pyx files now is broken.\nEspecially, they now get not only copied to some temp directory, but it is attempted to build dynamically the *.so extension out of them, as if they were all files to be loaded/attached.\nThis almost certainly must fail, if e.g. you have installed a package under $SAGE_ROOT/local/lib/python/site-packages/, with Cython extensions, building which needs certain libraries, additional C sources, special compiler flags, and so on.\n(And where one \"imports\" the functionality, not loads/attaches it.)\n\nPreviously, doctesting was very well suited to this situation, but is no more.\n\nSo the current (Sage 4.0.2) doctesting code should be enhanced in e.g. one of the following ways:\n\n1) If \"dynamically building\" of an extension fails, just \"try\" to import the functionality as a fallback (in other words: use a prebuilt *.so if one exists, and you can't build a fresh one)\n\n2) Change to the old behaviour, and additionally try build dynamically an extension only if it is missing and/or seems to be outdated compared to the *.pyx file\n\n3) Use the old/new behaviour depending on whether \".../site-packages/...\" is in the path of the *.pyx-file, or not.\n\nAt the core of these problems of course is the fact that there is no standard way to store the build information (not to talk of the \"full\" dependency information) for a Cython source file.\nThe Sage project e.g. invented its own custom-made monolithic \"module_list.py\" on the one hand, its custom-made #clib, #cinclude, ... pragmas on the other hand, but all this does not at all work smoothly together.\nLet alone being usable in Sage-related Cython projects which address a broader audience, and are thus placed under .../site-packages/.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6415\n\n",
+    "created_at": "2009-06-25T21:28:29Z",
+    "labels": [
+        "doctest",
+        "major",
+        "bug"
+    ],
+    "title": "\"sage -t foo.pyx\" should not by default dynamically build foo.so",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6415",
+    "user": "GeorgSWeber"
+}
+```
 Assignee: tbd
 
 Recently (during Sage Days 12 ?!) the doctesting code was changed so that "sage -t" on a certain class of *.pyx files now is broken.
@@ -27,31 +37,79 @@ At the core of these problems of course is the fact that there is no standard wa
 The Sage project e.g. invented its own custom-made monolithic "module_list.py" on the one hand, its custom-made #clib, #cinclude, ... pragmas on the other hand, but all this does not at all work smoothly together.
 Let alone being usable in Sage-related Cython projects which address a broader audience, and are thus placed under .../site-packages/.
 
+Issue created by migration from https://trac.sagemath.org/ticket/6415
+
+
+
+
 
 ---
 
-Comment by Stefan created at 2011-05-24 09:42:43
+archive/issue_comments_051511.json:
+```json
+{
+    "body": "I ran into this today, but it seems that the -force_lib option solves the issue (it did for me, at least). Am I right?",
+    "created_at": "2011-05-24T09:42:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6415",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6415#issuecomment-51511",
+    "user": "Stefan"
+}
+```
 
 I ran into this today, but it seems that the -force_lib option solves the issue (it did for me, at least). Am I right?
 
 
+
 ---
 
-Comment by GeorgSWeber created at 2011-05-25 20:17:36
+archive/issue_comments_051512.json:
+```json
+{
+    "body": "Changing type from defect to enhancement.",
+    "created_at": "2011-05-25T20:17:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6415",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6415#issuecomment-51512",
+    "user": "GeorgSWeber"
+}
+```
 
 Changing type from defect to enhancement.
 
 
+
 ---
 
-Comment by GeorgSWeber created at 2011-05-25 20:17:36
+archive/issue_comments_051513.json:
+```json
+{
+    "body": "Changing priority from major to minor.",
+    "created_at": "2011-05-25T20:17:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6415",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6415#issuecomment-51513",
+    "user": "GeorgSWeber"
+}
+```
 
 Changing priority from major to minor.
 
 
+
 ---
 
-Comment by GeorgSWeber created at 2011-05-25 20:17:36
+archive/issue_comments_051514.json:
+```json
+{
+    "body": "Hi Stefan,\ngood catch! Yes, I do think the issue of this ticket currently is solvable this way, i.e. alternative 1) of the description is actually (May 2011) implemented halfways.\n\n(No automatism yet, but there's this additional command-line option to forcefully use already existing prebuilt \"Python extension\" .so-files).\n\nIf this ticket bit-rots another two years, it should be closed as \"Won't Fix\".\n\nCheers,\nGeorg",
+    "created_at": "2011-05-25T20:17:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6415",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6415#issuecomment-51514",
+    "user": "GeorgSWeber"
+}
+```
 
 Hi Stefan,
 good catch! Yes, I do think the issue of this ticket currently is solvable this way, i.e. alternative 1) of the description is actually (May 2011) implemented halfways.
@@ -64,52 +122,129 @@ Cheers,
 Georg
 
 
+
 ---
 
-Comment by GeorgSWeber created at 2011-05-25 20:17:36
+archive/issue_comments_051515.json:
+```json
+{
+    "body": "Changing assignee from tbd to GeorgSWeber.",
+    "created_at": "2011-05-25T20:17:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6415",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6415#issuecomment-51515",
+    "user": "GeorgSWeber"
+}
+```
 
 Changing assignee from tbd to GeorgSWeber.
 
 
+
 ---
 
-Comment by roed created at 2013-03-14 21:59:50
+archive/issue_comments_051516.json:
+```json
+{
+    "body": "Well, it's been almost another two years.  ;-)\n\nWhat's the status of this ticket after #12415?  Are the problems still present?",
+    "created_at": "2013-03-14T21:59:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6415",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6415#issuecomment-51516",
+    "user": "roed"
+}
+```
 
 Well, it's been almost another two years.  ;-)
 
 What's the status of this ticket after #12415?  Are the problems still present?
 
 
+
 ---
 
-Comment by roed created at 2013-03-28 23:18:04
+archive/issue_comments_051517.json:
+```json
+{
+    "body": "Changing component from doctest to doctest framework.",
+    "created_at": "2013-03-28T23:18:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6415",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6415#issuecomment-51517",
+    "user": "roed"
+}
+```
 
 Changing component from doctest to doctest framework.
 
 
+
 ---
 
-Comment by roed created at 2013-03-28 23:27:00
+archive/issue_comments_051518.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2013-03-28T23:27:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6415",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6415#issuecomment-51518",
+    "user": "roed"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by roed created at 2013-03-28 23:27:49
+archive/issue_comments_051519.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2013-03-28T23:27:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6415",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6415#issuecomment-51519",
+    "user": "roed"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by roed created at 2013-03-28 23:27:49
+archive/issue_comments_051520.json:
+```json
+{
+    "body": "`sage -t foo.pyx` building the module is a feature not a bug.",
+    "created_at": "2013-03-28T23:27:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6415",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6415#issuecomment-51520",
+    "user": "roed"
+}
+```
 
 `sage -t foo.pyx` building the module is a feature not a bug.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-03-29 19:01:41
+archive/issue_comments_051521.json:
+```json
+{
+    "body": "Resolution: wontfix",
+    "created_at": "2013-03-29T19:01:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6415",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6415#issuecomment-51521",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: wontfix

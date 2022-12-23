@@ -1,55 +1,137 @@
 # Issue 7760: sage -merge fails silently when applying patches with rejects
 
-Issue created by migration from https://trac.sagemath.org/ticket/7760
-
-Original creator: mhansen
-
-Original creation time: 2009-12-24 11:03:04
-
+archive/issues_007760.json:
+```json
+{
+    "body": "Assignee: GeorgSWeber\n\nCC:  craigcitro\n\nWe need to make sure the hg qpush command is failing with the proper exit code and handle it appropriately.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7760\n\n",
+    "created_at": "2009-12-24T11:03:04Z",
+    "labels": [
+        "build",
+        "major",
+        "bug"
+    ],
+    "title": "sage -merge fails silently when applying patches with rejects",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7760",
+    "user": "mhansen"
+}
+```
 Assignee: GeorgSWeber
 
 CC:  craigcitro
 
 We need to make sure the hg qpush command is failing with the proper exit code and handle it appropriately.
 
+Issue created by migration from https://trac.sagemath.org/ticket/7760
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2010-01-16 17:46:05
+archive/issue_comments_066819.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-01-16T17:46:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7760",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7760#issuecomment-66819",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_066820.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-01-16T17:46:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7760",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7760#issuecomment-66820",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by craigcitro created at 2010-01-17 23:03:46
+archive/issue_comments_066821.json:
+```json
+{
+    "body": "This is clearly the right fix for the problem Mike ran into, and I'm giving it a positive review. \n\nI'm happy to see this merged, but it brings up a question: why aren't we checking the exit code from mercurial? A quick check of the code reveals the issue: we use `os.popen3` inside the hg interface, which we can't easily use to get the return code. (Or, at least, I don't know how to do it.) Maybe we should file an enhancement ticket to rewrite those lines to use `subprocess.Popen`, and correctly give back the return code?",
+    "created_at": "2010-01-17T23:03:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7760",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7760#issuecomment-66821",
+    "user": "craigcitro"
+}
+```
 
 This is clearly the right fix for the problem Mike ran into, and I'm giving it a positive review. 
 
 I'm happy to see this merged, but it brings up a question: why aren't we checking the exit code from mercurial? A quick check of the code reveals the issue: we use `os.popen3` inside the hg interface, which we can't easily use to get the return code. (Or, at least, I don't know how to do it.) Maybe we should file an enhancement ticket to rewrite those lines to use `subprocess.Popen`, and correctly give back the return code?
 
 
+
 ---
 
-Comment by craigcitro created at 2010-01-17 23:03:46
+archive/issue_comments_066822.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-01-17T23:03:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7760",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7760#issuecomment-66822",
+    "user": "craigcitro"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mhansen created at 2010-01-17 23:18:05
+archive/issue_comments_066823.json:
+```json
+{
+    "body": "Yep, I think that sounds good.  I don't know how to get it from os.popen3.",
+    "created_at": "2010-01-17T23:18:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7760",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7760#issuecomment-66823",
+    "user": "mhansen"
+}
+```
 
 Yep, I think that sounds good.  I don't know how to get it from os.popen3.
 
 
+
 ---
 
-Comment by rlm created at 2010-01-19 00:42:51
+archive/issue_comments_066824.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-19T00:42:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7760",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7760#issuecomment-66824",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed

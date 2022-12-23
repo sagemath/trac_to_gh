@@ -1,11 +1,21 @@
 # Issue 8521: Optional package  libcocoa-0.9930 fails to install on Solaris 10 SPARC
 
-Issue created by migration from https://trac.sagemath.org/ticket/8521
-
-Original creator: drkirkby
-
-Original creation time: 2010-03-13 14:29:38
-
+archive/issues_008521.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  jhpalmieri chapoton dimpase\n\nKeywords: GNUism\n\n## Hardware & associated software\n\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM\n* Solaris 10 03/2005 (first release of Solaris 10)\n* gcc 4.4.3 (uses Sun linker and assembler)\n\n == Sage version ==\n* 4.3.4.alpha1\n* Patch #8509 removing the -o option to grep to allow packages to install. \n\n == The problem with the optional libcocoa-0.9930 ==\nThis looks at least partially, perhaps completely because of a GNUism, as a non-POSIX option to 'ar' is used. Instead, only POSIX options should be used for portability.\n\nhttp://www.opengroup.org/onlinepubs/9699919799/\n\n\n```\nCompiling TmpFrobby.o\nCompiling RegisterServerOpsFrobby.o\nar: bad option `S'\nusage: ar -d[-vV] archive file ...\n       ar -m[-abivV] [posname] archive file ...\n       ar -p[-vV][-s] archive [file ...]\n       ar -q[-cuvV] [-abi] [posname] [file ...]\n       ar -r[-cuvV] [-abi] [posname] [file ...]\n       ar -t[-vV][-s] archive [file ...]\n       ar -x[-vV][-sCT] archive [file ...]\nmake[3]: *** [../../lib/libcocoa.a] Error 1\nmake[3]: Leaving directory `/export/home/drkirkby/sage-4.3.4.alpha1/local/lib/cocoa-0.9930/src/src/AlgebraicCore'\n*****[[Compilation[failed[in[CoCoA[library[source[subdirectory[AlgebraicCore/[[*****\n*****  Compilation failed in CoCoA library source subdirectory AlgebraicCore/  *****\n*****[[Compilation[failed[in[CoCoA[library[source[subdirectory[AlgebraicCore/[[*****\nmake[2]: *** [library] Error 1\nmake[2]: Leaving directory `/export/home/drkirkby/sage-4.3.4.alpha1/local/lib/cocoa-0.9930/src/src'\nmake[1]: *** [library] Error 2\nmake[1]: Leaving directory `/export/home/drkirkby/sage-4.3.4.alpha1/local/lib/cocoa-0.9930/src'\nmake: *** [default] Error 2\nDoing the build in the following directory:\n/export/home/drkirkby/sage-4.3.4.alpha1/local/lib/cocoa-0.9930\n./configure  --with-libgmp=$SAGE_LOCAL/lib/libgmp.so\nNow running Make\nmake\nThere are known test failures that should be listed above.\nThey are literally 'not yet implemented' errors from the\nCoCOA library.   I.e., CoCOA releases purposely don't pass\ntheir own test suite at present.\nError libcocoa.a did not build.\n\nreal    4m38.919s\nuser    4m13.797s\nsys     0m21.777s\nsage: An error occurred while installing libcocoa-0.9930\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8521\n\n",
+    "created_at": "2010-03-13T14:29:38Z",
+    "labels": [
+        "packages: optional",
+        "major",
+        "bug"
+    ],
+    "title": "Optional package  libcocoa-0.9930 fails to install on Solaris 10 SPARC",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8521",
+    "user": "drkirkby"
+}
+```
 Assignee: tbd
 
 CC:  jhpalmieri chapoton dimpase
@@ -14,15 +24,15 @@ Keywords: GNUism
 
 ## Hardware & associated software
 
- * Sun Blade 1000
- * 2 x 900 MHz UltraSPARC III+ CPUs
- * 2 GB RAM
- * Solaris 10 03/2005 (first release of Solaris 10)
- * gcc 4.4.3 (uses Sun linker and assembler)
+* Sun Blade 1000
+* 2 x 900 MHz UltraSPARC III+ CPUs
+* 2 GB RAM
+* Solaris 10 03/2005 (first release of Solaris 10)
+* gcc 4.4.3 (uses Sun linker and assembler)
 
  == Sage version ==
- * 4.3.4.alpha1
- * Patch #8509 removing the -o option to grep to allow packages to install. 
+* 4.3.4.alpha1
+* Patch #8509 removing the -o option to grep to allow packages to install. 
 
  == The problem with the optional libcocoa-0.9930 ==
 This looks at least partially, perhaps completely because of a GNUism, as a non-POSIX option to 'ar' is used. Instead, only POSIX options should be used for portability.
@@ -70,10 +80,25 @@ sage: An error occurred while installing libcocoa-0.9930
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8521
+
+
+
+
 
 ---
 
-Comment by chapoton created at 2018-12-18 07:30:08
+archive/issue_comments_076984.json:
+```json
+{
+    "body": "I confirm that there are still some \"ar -S\" in cocoalib 0.99600.\n\nFor example in /CoCoALib-0.99600/src/AlgebraicCore/Makefile\n\nGNU doc about `ar S`:\n\n```\nS\n\nDo not generate an archive symbol table. This can speed up building a large library \nin several steps. The resulting archive can not be used with the linker. In order \nto build a symbol table, you must omit the S modifier on the last execution of ar, \nor you must run ranlib on the archive.\n```\n",
+    "created_at": "2018-12-18T07:30:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8521",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8521#issuecomment-76984",
+    "user": "chapoton"
+}
+```
 
 I confirm that there are still some "ar -S" in cocoalib 0.99600.
 
@@ -92,22 +117,55 @@ or you must run ranlib on the archive.
 
 
 
+
 ---
 
-Comment by mkoeppe created at 2020-06-19 18:07:10
+archive/issue_comments_076985.json:
+```json
+{
+    "body": "solaris tickets should be closed as outdated",
+    "created_at": "2020-06-19T18:07:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8521",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8521#issuecomment-76985",
+    "user": "mkoeppe"
+}
+```
 
 solaris tickets should be closed as outdated
 
 
+
 ---
 
-Comment by mkoeppe created at 2020-06-19 18:07:10
+archive/issue_comments_076986.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2020-06-19T18:07:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8521",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8521#issuecomment-76986",
+    "user": "mkoeppe"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by chapoton created at 2020-06-19 18:47:55
+archive/issue_comments_076987.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2020-06-19T18:47:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8521",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8521#issuecomment-76987",
+    "user": "chapoton"
+}
+```
 
 Resolution: invalid

@@ -1,11 +1,21 @@
 # Issue 8861: sagenb-0.8.p0.spkg: broken dependencies, requires internet conn. to build
 
-Issue created by migration from https://trac.sagemath.org/ticket/8861
-
-Original creator: GeorgSWeber
-
-Original creation time: 2010-05-03 19:02:55
-
+archive/issues_008861.json:
+```json
+{
+    "body": "Assignee: GeorgSWeber\n\nCC:  was timdumol\n\nThis was first noted by John Cremona.\nOn a computer that is not connected to the internet, the build fails:\n\n```\nProcessing sagenb-0.8-py2.6.egg\nremoving '/home/john/sage-4.4.1.rc0/local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg'\n(and everything under it)\ncreating /home/john/sage-4.4.1.rc0/local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg\nExtracting sagenb-0.8-py2.6.egg to\n/home/john/sage-4.4.1.rc0/local/lib/python2.6/site-packages\nsagenb 0.8 is already the active version in easy-install.pth\nInstalling jmol script to /home/john/sage-4.4.1.rc0/local/bin\nInstalling sage3d script to /home/john/sage-4.4.1.rc0/local/bin\n\nInstalled /home/john/sage-4.4.1.rc0/local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg\nProcessing dependencies for sagenb==0.8\nSearching for mechanize<0.2dev\nReading http://pypi.python.org/simple/mechanize/\nDownload error: [Errno -2] Name or service not known -- Some packages\nmay not be found!\nReading http://pypi.python.org/simple/mechanize/\n...\n```\n\nOn a computer with internet connection, one finds in the install.log:\n\n```\nProcessing dependencies for zope.testbrowser==3.8.1\nSearching for mechanize<0.2dev\nReading http://pypi.python.org/simple/mechanize/\nReading http://wwwsearch.sourceforge.net/mechanize/\nBest match: mechanize 0.1.11\nDownloading http://wwwsearch.sourceforge.net/mechanize/src/mechanize-0.1.11.tar.gz\nProcessing mechanize-0.1.11.tar.gz\nRunning mechanize-0.1.11/setup.py -q bdist_egg --dist-dir /tmp/easy_install-XXPn64/mechanize-0.1.11/egg-dist-tmp-fxjRAP\nno previously-included directories found matching 'docs-in-progress'\nRemoving mechanize 0.2.0 from easy-install.pth file\nAdding mechanize 0.1.11 to easy-install.pth file\n\n...\n```\n\nSo the solution seems to be pretty easy: \n\nMake a new sagenb-0.8.p1.spkg, by throwing out \"mechanize-0.2.0.tar.gz\" under /src/, adding back the old \"mechanize-0.1.11.zip\", and finally adjusting the corresponding line 6 in the spkg-install file.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8861\n\n",
+    "created_at": "2010-05-03T19:02:55Z",
+    "labels": [
+        "build",
+        "blocker",
+        "bug"
+    ],
+    "title": "sagenb-0.8.p0.spkg: broken dependencies, requires internet conn. to build",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8861",
+    "user": "GeorgSWeber"
+}
+```
 Assignee: GeorgSWeber
 
 CC:  was timdumol
@@ -56,17 +66,43 @@ So the solution seems to be pretty easy:
 
 Make a new sagenb-0.8.p1.spkg, by throwing out "mechanize-0.2.0.tar.gz" under /src/, adding back the old "mechanize-0.1.11.zip", and finally adjusting the corresponding line 6 in the spkg-install file.
 
+Issue created by migration from https://trac.sagemath.org/ticket/8861
+
+
+
+
 
 ---
 
-Comment by GeorgSWeber created at 2010-05-03 19:10:46
+archive/issue_comments_081433.json:
+```json
+{
+    "body": "(corrected numbering of the package cited)",
+    "created_at": "2010-05-03T19:10:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8861",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8861#issuecomment-81433",
+    "user": "GeorgSWeber"
+}
+```
 
 (corrected numbering of the package cited)
 
 
+
 ---
 
-Comment by GeorgSWeber created at 2010-05-03 19:40:43
+archive/issue_comments_081434.json:
+```json
+{
+    "body": "I just couldn't resist and did exactly that, the spkg is here:\n\nhttp://sage.math.washington.edu/home/weberg/spkg/sagenb-0.8.p2.spkg\n\nI note this still as \"needs work\" for three reasons:\n1.\nMy own test is not done yet --- one needs to do it on a computer *without* internet connection (I'll do overnight and report tomorrow).\n\n2.\nThe sagenb spkg inexplicably misses the required hg repository (to able to monitor changes in spkg-install for example).\n\n3.\nIn the file SPKG.txt, adding a note about testing on a computer without internet connection seems appropriate.",
+    "created_at": "2010-05-03T19:40:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8861",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8861#issuecomment-81434",
+    "user": "GeorgSWeber"
+}
+```
 
 I just couldn't resist and did exactly that, the spkg is here:
 
@@ -83,23 +119,56 @@ The sagenb spkg inexplicably misses the required hg repository (to able to monit
 In the file SPKG.txt, adding a note about testing on a computer without internet connection seems appropriate.
 
 
+
 ---
 
-Comment by GeorgSWeber created at 2010-05-03 19:40:43
+archive/issue_comments_081435.json:
+```json
+{
+    "body": "Changing status from new to needs_work.",
+    "created_at": "2010-05-03T19:40:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8861",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8861#issuecomment-81435",
+    "user": "GeorgSWeber"
+}
+```
 
 Changing status from new to needs_work.
 
 
+
 ---
 
-Comment by timdumol created at 2010-05-04 04:22:57
+archive/issue_comments_081436.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-05-04T04:22:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8861",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8861#issuecomment-81436",
+    "user": "timdumol"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by timdumol created at 2010-05-04 04:22:57
+archive/issue_comments_081437.json:
+```json
+{
+    "body": "Thanks for the quick work!\n\nReplying to [comment:2 GeorgSWeber]:\n> I just couldn't resist and did exactly that, the spkg is here:\n> \n> http://sage.math.washington.edu/home/weberg/spkg/sagenb-0.8.p2.spkg\n> \n> I note this still as \"needs work\" for three reasons:\n> 1.\n> My own test is not done yet --- one needs to do it on a computer *without* internet connection (I'll do overnight and report tomorrow).\n> \n> 2.\n> The sagenb spkg inexplicably misses the required hg repository (to able to monitor changes in spkg-install for example).\n\nThe sagenb spkg is automatically generated by src/sagenb/spkg-dist, therefore the hg repository is actually in src/sagenb.\n\n> \n> 3.\n> In the file SPKG.txt, adding a note about testing on a computer without internet connection seems appropriate.\n\nDone.\n\nI've posted the version with the changes in the hg repo here: http://sage.math.washington.edu/home/timdumol/sagenb-0.8.p2.spkg",
+    "created_at": "2010-05-04T04:22:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8861",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8861#issuecomment-81437",
+    "user": "timdumol"
+}
+```
 
 Thanks for the quick work!
 
@@ -126,9 +195,20 @@ Done.
 I've posted the version with the changes in the hg repo here: http://sage.math.washington.edu/home/timdumol/sagenb-0.8.p2.spkg
 
 
+
 ---
 
-Comment by GeorgSWeber created at 2010-05-04 15:47:08
+archive/issue_comments_081438.json:
+```json
+{
+    "body": "I goofed it. I r-eadded \"mechanize.0.1.11.zip\", and in the file spkg-install, changed the version number in the corresponding line. But then, the line 6 reads \"easy_install mechanize-0.1.11.tar.gz\". Since there is now ...tar.gz, but \"only\" a ...zip, the install blows up exactly as before, if there is not internet connection.\n\nI changed the line to end with ...zip instead, and everything went fine (on a MacIntel with OS X 10.4.11), even all doctests pass!\n\nBut since that computer has no internet connection, I wasn't able to upload that yet.\n\nTim, your version of the spkg also still suffers from this flaw, so I fear this ticket is back to \"needs_work\" again.",
+    "created_at": "2010-05-04T15:47:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8861",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8861#issuecomment-81438",
+    "user": "GeorgSWeber"
+}
+```
 
 I goofed it. I r-eadded "mechanize.0.1.11.zip", and in the file spkg-install, changed the version number in the corresponding line. But then, the line 6 reads "easy_install mechanize-0.1.11.tar.gz". Since there is now ...tar.gz, but "only" a ...zip, the install blows up exactly as before, if there is not internet connection.
 
@@ -139,23 +219,56 @@ But since that computer has no internet connection, I wasn't able to upload that
 Tim, your version of the spkg also still suffers from this flaw, so I fear this ticket is back to "needs_work" again.
 
 
+
 ---
 
-Comment by GeorgSWeber created at 2010-05-04 15:47:08
+archive/issue_comments_081439.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-05-04T15:47:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8861",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8861#issuecomment-81439",
+    "user": "GeorgSWeber"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by timdumol created at 2010-05-04 16:03:54
+archive/issue_comments_081440.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-05-04T16:03:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8861",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8861#issuecomment-81440",
+    "user": "timdumol"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by timdumol created at 2010-05-04 16:03:54
+archive/issue_comments_081441.json:
+```json
+{
+    "body": "I checked the spkg I posted, and I don't see any problem.\n\n\n```\n\ntimdumol@tim-pc sagenb-0.8]$ ls src/\nsagenb/                    zope.i18nmessageid-3.5.2.zip\nClientForm-0.2.10.tar.gz   zope.interface-3.6.1.tar.gz\nmechanize-0.1.11.tar.gz    zope.schema-3.6.3.zip\npytz-2010h.zip             zope.testbrowser-3.8.1.tar.gz\nzope.event-3.5.0-1.tar.gz\n\n```\n",
+    "created_at": "2010-05-04T16:03:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8861",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8861#issuecomment-81441",
+    "user": "timdumol"
+}
+```
 
 I checked the spkg I posted, and I don't see any problem.
 
@@ -173,9 +286,20 @@ zope.event-3.5.0-1.tar.gz
 
 
 
+
 ---
 
-Comment by timdumol created at 2010-05-04 16:09:25
+archive/issue_comments_081442.json:
+```json
+{
+    "body": "And the contents of spkg-install:\n\n\n```\n\ncd src\neasy_install pytz-2010h.zip\neasy_install zope.i18nmessageid-3.5.2.zip\neasy_install zope.event-3.5.0-1.tar.gz\neasy_install ClientForm-0.2.10.tar.gz\neasy_install mechanize-0.1.11.tar.gz\neasy_install zope.interface-3.6.1.tar.gz\neasy_install zope.schema-3.6.3.zip\neasy_install zope.testbrowser-3.8.1.tar.gz\ncd sagenb\npython setup.py install\n\n```\n",
+    "created_at": "2010-05-04T16:09:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8861",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8861#issuecomment-81442",
+    "user": "timdumol"
+}
+```
 
 And the contents of spkg-install:
 
@@ -198,9 +322,20 @@ python setup.py install
 
 
 
+
 ---
 
-Comment by mvngu created at 2010-05-04 16:58:42
+archive/issue_comments_081443.json:
+```json
+{
+    "body": "A trivial point. When uncompressed, Tim's updated spkg has this name:\n\n\n```sh\n[mvngu@sage sagenb]$ ls\nsagenb-0.7.2.spkg  sagenb-0.7.5.1.spkg  sagenb-0.7.5.2.spkg  sagenb-0.8.p2.spkg\n[mvngu@sage sagenb]$ tar -jxf sagenb-0.8.p2.spkg\n[mvngu@sage sagenb]$ ls\nsagenb-0.7.2.spkg    sagenb-0.7.5.2.spkg  sagenb-0.8.p2.spkg\nsagenb-0.7.5.1.spkg  sagenb-0.8\n```\n\n\nNotice the directory name `sagenb-0.8`. It should be `sagenb-0.8.p2`. An updated package with directory name conforming to the Developer's Guide is available at\n\nhttp://sage.math.washington.edu/home/mvngu/spkg/standard/sagenb/sagenb-0.8.p2.spkg\n\nThis is essentially Tim's spkg, but I changed the name as per above instructions, prior to tar gzip2 compressing the updated spkg.",
+    "created_at": "2010-05-04T16:58:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8861",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8861#issuecomment-81443",
+    "user": "mvngu"
+}
+```
 
 A trivial point. When uncompressed, Tim's updated spkg has this name:
 
@@ -222,60 +357,115 @@ http://sage.math.washington.edu/home/mvngu/spkg/standard/sagenb/sagenb-0.8.p2.sp
 This is essentially Tim's spkg, but I changed the name as per above instructions, prior to tar gzip2 compressing the updated spkg.
 
 
+
 ---
 
-Comment by GeorgSWeber created at 2010-05-04 17:57:34
+archive/issue_comments_081444.json:
+```json
+{
+    "body": "Tim, Minh, you both are right, of course!",
+    "created_at": "2010-05-04T17:57:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8861",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8861#issuecomment-81444",
+    "user": "GeorgSWeber"
+}
+```
 
 Tim, Minh, you both are right, of course!
 
 
+
 ---
 
-Comment by GeorgSWeber created at 2010-05-04 19:45:00
+archive/issue_comments_081445.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-05-04T19:45:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8861",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8861#issuecomment-81445",
+    "user": "GeorgSWeber"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by GeorgSWeber created at 2010-05-04 19:45:00
+archive/issue_comments_081446.json:
+```json
+{
+    "body": "OK, using the (slightly altered) version that Minh posted from Tim's p2 spkg, I found out the following:\n\n* this spkg solves the original problem, i.e. does not need an internet connection to build (I tested this \"on top\" of a full sage-4.4.1 build, forcing sagenb to be rebuilt)\n\n* all sagenb doctests still pass\n\n* the notebook starts up and passes some smoke tests\n\n* the mercurial repository is clean, and the spkg is based upon the previous version 0.8.p1 (i.e. the last patch applied by Mike Hansen for some t2 issue IIRC should be still in)\n\n* the changes made look sane (esp. about \"== 0.1.11\" w.r.t. the mechanize version)\n\n* the one reviewer comment about testing has been incorporated into the SPKG.txt\n \nI now understand the sagenb spkg better, i.e. that the file \"spkg-install\" is being generated, and that the dependencies under src/ are being downloaded during a standard generation of some new version of this spkg. So the discrepancy that crept in my goofed attempt just cannot occur this way. What I disliked, is that this did lead also to the following updates of certain dependencies in between sagenb-0.8.p1.spkg and sagenb-0.8.p2.spkg:\n\n* zope.event-3.4.1.tar.gz --> zope.event-3.5.0-1.tar.gz\n\n* zope.i18nmessageid-3.5.1.tar.gz --> zope.i18nmessageid-3.5.2.zip\n\n* zope.interface-3.5.3.tar.gz --> zope.interface-3.6.1.tar.gz\n\n* zope.schema-3.6.1.tar.gz --> zope.schema-3.6.3.zip\n\nPersonally, in the light of my other findings and tests above, I do not consider this as critical, assuming that sagenb does not use any \"bleeding edge\" functionality of the above four zope packages, that would be affected by these updates. If somebody thinks I'm wrong here, then please feel free to switch the status back to \"needs_work\".",
+    "created_at": "2010-05-04T19:45:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8861",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8861#issuecomment-81446",
+    "user": "GeorgSWeber"
+}
+```
 
 OK, using the (slightly altered) version that Minh posted from Tim's p2 spkg, I found out the following:
 
- * this spkg solves the original problem, i.e. does not need an internet connection to build (I tested this "on top" of a full sage-4.4.1 build, forcing sagenb to be rebuilt)
+* this spkg solves the original problem, i.e. does not need an internet connection to build (I tested this "on top" of a full sage-4.4.1 build, forcing sagenb to be rebuilt)
 
- * all sagenb doctests still pass
+* all sagenb doctests still pass
 
- * the notebook starts up and passes some smoke tests
+* the notebook starts up and passes some smoke tests
 
- * the mercurial repository is clean, and the spkg is based upon the previous version 0.8.p1 (i.e. the last patch applied by Mike Hansen for some t2 issue IIRC should be still in)
+* the mercurial repository is clean, and the spkg is based upon the previous version 0.8.p1 (i.e. the last patch applied by Mike Hansen for some t2 issue IIRC should be still in)
 
- * the changes made look sane (esp. about "== 0.1.11" w.r.t. the mechanize version)
+* the changes made look sane (esp. about "== 0.1.11" w.r.t. the mechanize version)
 
- * the one reviewer comment about testing has been incorporated into the SPKG.txt
+* the one reviewer comment about testing has been incorporated into the SPKG.txt
  
 I now understand the sagenb spkg better, i.e. that the file "spkg-install" is being generated, and that the dependencies under src/ are being downloaded during a standard generation of some new version of this spkg. So the discrepancy that crept in my goofed attempt just cannot occur this way. What I disliked, is that this did lead also to the following updates of certain dependencies in between sagenb-0.8.p1.spkg and sagenb-0.8.p2.spkg:
 
- * zope.event-3.4.1.tar.gz --> zope.event-3.5.0-1.tar.gz
+* zope.event-3.4.1.tar.gz --> zope.event-3.5.0-1.tar.gz
 
- * zope.i18nmessageid-3.5.1.tar.gz --> zope.i18nmessageid-3.5.2.zip
+* zope.i18nmessageid-3.5.1.tar.gz --> zope.i18nmessageid-3.5.2.zip
 
- * zope.interface-3.5.3.tar.gz --> zope.interface-3.6.1.tar.gz
+* zope.interface-3.5.3.tar.gz --> zope.interface-3.6.1.tar.gz
 
- * zope.schema-3.6.1.tar.gz --> zope.schema-3.6.3.zip
+* zope.schema-3.6.1.tar.gz --> zope.schema-3.6.3.zip
 
 Personally, in the light of my other findings and tests above, I do not consider this as critical, assuming that sagenb does not use any "bleeding edge" functionality of the above four zope packages, that would be affected by these updates. If somebody thinks I'm wrong here, then please feel free to switch the status back to "needs_work".
 
 
+
 ---
 
-Comment by timdumol created at 2010-05-04 19:55:08
+archive/issue_comments_081447.json:
+```json
+{
+    "body": "Zope very rarely makes backward incompatible changes to its API (afaik), so I think it's reasonably safe to update automatically. Any problems will be spotted during testing, anyways. Otherwise, we can change the dependencies to '==' instead of '>='.",
+    "created_at": "2010-05-04T19:55:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8861",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8861#issuecomment-81447",
+    "user": "timdumol"
+}
+```
 
 Zope very rarely makes backward incompatible changes to its API (afaik), so I think it's reasonably safe to update automatically. Any problems will be spotted during testing, anyways. Otherwise, we can change the dependencies to '==' instead of '>='.
 
 
+
 ---
 
-Comment by mvngu created at 2010-05-08 21:36:21
+archive/issue_comments_081448.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-05-08T21:36:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8861",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8861#issuecomment-81448",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

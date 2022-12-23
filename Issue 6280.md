@@ -1,11 +1,21 @@
 # Issue 6280: the R r-2.6.1.p22.spkg spkg is full of OS X crap ._ files
 
-Issue created by migration from https://trac.sagemath.org/ticket/6280
-
-Original creator: was
-
-Original creation time: 2009-06-14 09:23:08
-
+archive/issues_006280.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\n\n```\ntar jxvf r-2.6.1.p22.spkg\n...\nr-2.6.1.p22/src/tools/config.guess\nr-2.6.1.p22/src/tools/._config.rpath\nr-2.6.1.p22/src/tools/config.rpath\nr-2.6.1.p22/src/tools/._config.sub\nr-2.6.1.p22/src/tools/config.sub\nr-2.6.1.p22/src/tools/._copy-if-change\nr-2.6.1.p22/src/tools/copy-if-change\nr-2.6.1.p22/src/tools/._GETCONFIG\nr-2.6.1.p22/src/tools/GETCONFIG\nr-2.6.1.p22/src/tools/._GETDISTNAME\nr-2.6.1.p22/src/tools/GETDISTNAME\nr-2.6.1.p22/src/tools/._GETMAKEVAL\nr-2.6.1.p22/src/tools/GETMAKEVAL\nr-2.6.1.p22/src/tools/._getsp.class\nr-2.6.1.p22/src/tools/getsp.class\nr-2.6.1.p22/src/tools/._getsp.java\nr-2.6.1.p22/src/tools/getsp.java\nr-2.6.1.p22/src/tools/._GETVERSION\nr-2.6.1.p22/src/tools/GETVERSION\nr-2.6.1.p22/src/tools/._help2man.pl\nr-2.6.1.p22/src/tools/help2man.pl\nr-2.6.1.p22/src/tools/._install-info.pl\nr-2.6.1.p22/src/tools/install-info.pl\nr-2.6.1.p22/src/tools/._install-sh\nr-2.6.1.p22/src/tools/install-sh\nr-2.6.1.p22/src/tools/._keywords2html.pl\nr-2.6.1.p22/src/tools/keywords2html.pl\nr-2.6.1.p22/src/tools/._ldAIX4\nr-2.6.1.p22/src/tools/ldAIX4\nr-2.6.1.p22/src/tools/._link-recommended\nr-2.6.1.p22/src/tools/link-recommended\nr-2.6.1.p22/src/tools/._linkcheck.pl\nr-2.6.1.p22/src/tools/linkcheck.pl\nr-2.6.1.p22/src/tools/._ltmain.sh\nr-2.6.1.p22/src/tools/ltmain.sh\nr-2.6.1.p22/src/tools/._Makefile.in\nr-2.6.1.p22/src/tools/Makefile.in\nr-2.6.1.p22/src/tools/._mdate-sh\nr-2.6.1.p22/src/tools/mdate-sh\nr-2.6.1.p22/src/tools/._missing\nr-2.6.1.p22/src/tools/missing\nr-2.6.1.p22/src/tools/._move-if-change\nr-2.6.1.p22/src/tools/move-if-change\nr-2.6.1.p22/src/tools/._pkg2tex.pl\nr-2.6.1.p22/src/tools/pkg2tex.pl\nr-2.6.1.p22/src/tools/._Rdnewer.pl\nr-2.6.1.p22/src/tools/Rdnewer.pl\nr-2.6.1.p22/src/tools/._README\nr-2.6.1.p22/src/tools/README\nr-2.6.1.p22/src/tools/._rsync-recommended\nr-2.6.1.p22/src/tools/rsync-recommended\nr-2.6.1.p22/src/tools/._updatefat\nr-2.6.1.p22/src/tools/updatefat\nr-2.6.1.p22/src/._VERSION\nr-2.6.1.p22/src/VERSION\n```\n\n\nNotice all the ._'s.  These are the result of improperly building the spkg on an OS X box.   They all need to be deleted.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6280\n\n",
+    "created_at": "2009-06-14T09:23:08Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "the R r-2.6.1.p22.spkg spkg is full of OS X crap ._ files",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6280",
+    "user": "was"
+}
+```
 Assignee: mabshoff
 
 
@@ -72,37 +82,96 @@ r-2.6.1.p22/src/VERSION
 
 Notice all the ._'s.  These are the result of improperly building the spkg on an OS X box.   They all need to be deleted.
 
+Issue created by migration from https://trac.sagemath.org/ticket/6280
+
+
+
+
 
 ---
 
-Comment by jason created at 2009-09-16 16:34:02
+archive/issue_comments_050152.json:
+```json
+{
+    "body": "This is a dup of #6181.",
+    "created_at": "2009-09-16T16:34:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6280",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6280#issuecomment-50152",
+    "user": "jason"
+}
+```
 
 This is a dup of #6181.
 
 
+
 ---
 
-Comment by jason created at 2009-09-16 16:35:15
+archive/issue_comments_050153.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-09-16T16:35:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6280",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6280#issuecomment-50153",
+    "user": "jason"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by jason created at 2009-09-16 16:35:15
+archive/issue_comments_050154.json:
+```json
+{
+    "body": "Changing assignee from mabshoff to jason.",
+    "created_at": "2009-09-16T16:35:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6280",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6280#issuecomment-50154",
+    "user": "jason"
+}
+```
 
 Changing assignee from mabshoff to jason.
 
 
+
 ---
 
-Comment by mvngu created at 2009-10-01 06:01:32
+archive/issue_comments_050155.json:
+```json
+{
+    "body": "Closing this as wontfix. We have upgraded to R version 2.9.2 in Sage 4.1.2.alpha3. See ticket #6972.",
+    "created_at": "2009-10-01T06:01:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6280",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6280#issuecomment-50155",
+    "user": "mvngu"
+}
+```
 
 Closing this as wontfix. We have upgraded to R version 2.9.2 in Sage 4.1.2.alpha3. See ticket #6972.
 
 
+
 ---
 
-Comment by mvngu created at 2009-10-01 06:01:32
+archive/issue_comments_050156.json:
+```json
+{
+    "body": "Resolution: wontfix",
+    "created_at": "2009-10-01T06:01:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6280",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6280#issuecomment-50156",
+    "user": "mvngu"
+}
+```
 
 Resolution: wontfix

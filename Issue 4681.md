@@ -1,11 +1,21 @@
 # Issue 4681: General Smith normal form implementation
 
-Issue created by migration from https://trac.sagemath.org/ticket/4681
-
-Original creator: davidloeffler
-
-Original creation time: 2008-12-03 00:01:47
-
+archive/issues_004681.json:
+```json
+{
+    "body": "Assignee: davidloeffler\n\nCC:  ncalexan\n\nKeywords: matrix, smith normal form\n\nSmith form is a useful canonical form for matrices over a PID. Sage already has it for ZZ. I've coded up a very basic implementation that should work over any PID Sage knows about (although it is not fast).\n\nIssue created by migration from https://trac.sagemath.org/ticket/4681\n\n",
+    "created_at": "2008-12-03T00:01:47Z",
+    "labels": [
+        "linear algebra",
+        "major",
+        "enhancement"
+    ],
+    "title": "General Smith normal form implementation",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4681",
+    "user": "davidloeffler"
+}
+```
 Assignee: davidloeffler
 
 CC:  ncalexan
@@ -14,45 +24,117 @@ Keywords: matrix, smith normal form
 
 Smith form is a useful canonical form for matrices over a PID. Sage already has it for ZZ. I've coded up a very basic implementation that should work over any PID Sage knows about (although it is not fast).
 
+Issue created by migration from https://trac.sagemath.org/ticket/4681
+
+
+
+
 
 ---
 
-Comment by davidloeffler created at 2008-12-03 00:05:42
+archive/issue_comments_035261.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-12-03T00:05:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4681",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4681#issuecomment-35261",
+    "user": "davidloeffler"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by davidloeffler created at 2008-12-03 00:05:42
+archive/issue_comments_035262.json:
+```json
+{
+    "body": "The above patch is based on sage 3.2.1. It adds the basic algorithm, plus some minor fiddlings needed to get the examples to work :-)",
+    "created_at": "2008-12-03T00:05:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4681",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4681#issuecomment-35262",
+    "user": "davidloeffler"
+}
+```
 
 The above patch is based on sage 3.2.1. It adds the basic algorithm, plus some minor fiddlings needed to get the examples to work :-)
 
 
+
 ---
 
-Comment by jason created at 2008-12-03 19:28:59
+archive/issue_comments_035263.json:
+```json
+{
+    "body": "I just glanced at this; could you put in doctests for the additive_order function?",
+    "created_at": "2008-12-03T19:28:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4681",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4681#issuecomment-35263",
+    "user": "jason"
+}
+```
 
 I just glanced at this; could you put in doctests for the additive_order function?
 
 
+
 ---
+
+archive/issue_comments_035264.json:
+```json
+{
+    "body": "Attachment\n\nI've done a new patch (replacing the old one) which includes a doctest; sorry for the omission.",
+    "created_at": "2008-12-03T20:35:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4681",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4681#issuecomment-35264",
+    "user": "davidloeffler"
+}
+```
 
 Attachment
 
 I've done a new patch (replacing the old one) which includes a doctest; sorry for the omission.
 
 
+
 ---
 
-Comment by was created at 2008-12-04 22:11:50
+archive/issue_comments_035265.json:
+```json
+{
+    "body": "THANK YOU!  I've been wanting somebody to do this right (even if slow) forever... and at least two students have tried and failed before, so I'm really glad you did this.",
+    "created_at": "2008-12-04T22:11:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4681",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4681#issuecomment-35265",
+    "user": "was"
+}
+```
 
 THANK YOU!  I've been wanting somebody to do this right (even if slow) forever... and at least two students have tried and failed before, so I'm really glad you did this.
 
 
+
 ---
 
-Comment by was created at 2008-12-05 07:06:20
+archive/issue_comments_035266.json:
+```json
+{
+    "body": "I noticed that this docstring is slightly wrong.  The m and y are confused:\n\n```\n \t4669\tdef _smith_augment(x, m): \n \t4670\t    r\"\"\" For internal use by the smith_form routine. Given scalar x and matrix \n \t4671\t    y, construct the block-diagonal matrix [x,0 ; 0, y]. \n```\n",
+    "created_at": "2008-12-05T07:06:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4681",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4681#issuecomment-35266",
+    "user": "was"
+}
+```
 
 I noticed that this docstring is slightly wrong.  The m and y are confused:
 
@@ -64,21 +146,56 @@ I noticed that this docstring is slightly wrong.  The m and y are confused:
 
 
 
+
 ---
+
+archive/issue_comments_035267.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-12-05T11:36:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4681",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4681#issuecomment-35267",
+    "user": "davidloeffler"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by davidloeffler created at 2008-12-05 11:40:42
+archive/issue_comments_035268.json:
+```json
+{
+    "body": "On reflection I realised that my \"_smith_augment\" function was a waste of space anyway as the same job can be done using the existing \"block_sum\" method from matrix1.py. I've added a new version of the patch, which replaces the old one (I forgot to tick the replace box in the trac upload page).",
+    "created_at": "2008-12-05T11:40:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4681",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4681#issuecomment-35268",
+    "user": "davidloeffler"
+}
+```
 
 On reflection I realised that my "_smith_augment" function was a waste of space anyway as the same job can be done using the existing "block_sum" method from matrix1.py. I've added a new version of the patch, which replaces the old one (I forgot to tick the replace box in the trac upload page).
 
 
+
 ---
 
-Comment by was created at 2008-12-07 00:12:49
+archive/issue_comments_035269.json:
+```json
+{
+    "body": "I read the code, which looks fine.  The doctests pass.  This test passes:\n\n```\nfor i in range(10):\n   print i\n   a = random_matrix(ZZ[sqrt(-1)],7)\n   d,u,v = a.smith_form()\n   assert u*a*v == d\n   assert u.det() == 1\n   assert v.det() == 1\n```\n\n\nThis fails pretty quickly, but it's not the fault of this code:\n\n```\nK.<a>=NumberField(x^3-2)\nprint \"h = \", K.class_number()\nfor i in range(10):\n   print i\n   a = random_matrix(K,3)\n   d,u,v = a.smith_form()\n   assert u*a*v == d\n   assert u.det() == 1\n   assert v.det() == 1\n...\n\nTraceback (most recent call last):       d,u,v = a.smith_form()\n\n  File \"element.pyx\", line 1269, in sage.structure.element.CommutativeRingElement.inverse_mod (sage/structure/element.c:10039)\nNotImplementedError\n```\n\n\nIt's the fault of other stuff missing in Sage.\n\nAnother thing -- in matrices over ZZ there is a smith_form function, and it's inputs, etc., are *not* consistent with the above.  It doesn't have a transformation option - instead it always gives the transformation matrices.  However, it also says to use the function \"elementary_divisors\" to get the diagonal entries.   I attached a patch that fixes this by making the sage integer matrix snf have the same interface as the generic one. \n\nThe definition of smith_form between your new code and Sage's code (which relies on pari) is inconsistent (see below).  This needs to be somehow resolved.  I haven't done this yet at all.\n\n```\nsage: a = matrix(ZZ,3,[1..9]); a\n\n[1 2 3]\n[4 5 6]\n[7 8 9]\nsage: a.smith_form()\n\n([0 0 0]\n[0 3 0]\n[0 0 1],\n [ 1 -2  1]\n[ 0 -1  1]\n[ 0  2 -1],\n [ 1  2 -1]\n[-2 -1  1]\n[ 1  0  0])\nsage: a.smith_form(transformation=False)\n\n[0 0 0]\n[0 3 0]\n[0 0 1]\nsage: a = matrix(ZZ[i],3,[1..9]); a\n\n[1 2 3]\n[4 5 6]\n[7 8 9]\nsage: a.smith_form(transformation=False)\n\n[ 1  0  0]\n[ 0 -3  0]\n[ 0  0  0]\n```\n\n\nTo get this into Sage, please:\n* review my matrix_integer_dense patch\n* decide on what to do about the inconsistency between sage/pari/your code.",
+    "created_at": "2008-12-07T00:12:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4681",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4681#issuecomment-35269",
+    "user": "was"
+}
+```
 
 I read the code, which looks fine.  The doctests pass.  This test passes:
 
@@ -156,11 +273,24 @@ sage: a.smith_form(transformation=False)
 
 
 To get this into Sage, please:
-  * review my matrix_integer_dense patch
-  * decide on what to do about the inconsistency between sage/pari/your code.
+* review my matrix_integer_dense patch
+* decide on what to do about the inconsistency between sage/pari/your code.
+
 
 
 ---
+
+archive/issue_comments_035270.json:
+```json
+{
+    "body": "Attachment\n\nHmm. On reflection, perhaps the way the Sage code was already doing it is the right way: smith_form should always return the transformation matrix, and elementary_divisors should be provided separately.\n\nThis seems more logical to me, because one can define analogues of elementary divisors over any Dedekind domain, but the result is a list of ideals rather than of elements and thus there is no analogue of the transformation matrix. PARI/GP has a function that does this over rings of integers of a general number field. Also, even over ZZ where the transformation matrices do make sense there are some fast algorithms for elementary divisors that don't give them.\n\nAs for the inconsistency of ordering the results, I've called for a quick straw poll on sage-devel.\n\nThe other issue is one of sign. Conventionally elementary divisors are always *nonnegative* integers; one wouldn't want to calculate the invariants of a finitely generated abelian group and be told that it had a direct summand that was cyclic of order -5. But for general PID's there's no canonical choice of sign for the generator of an ideal. I'm sure nobody will actually be all that bothered by this, but I will drop the insistence that U and V have det 1 and replace it with the insistence that the d_i are >= 0, even though this is pretty meaningless.\n\nIncidentally, I just realised the doctests don't pass! I added an is_noetherian method for number field orders, but didn't notice that there is a doctest in sage/rings/ring.pyx that is actually broken by this -- it creates an order, calls is_noetherian() on it and insists that the result should be NotImplementedError. I will fix this.",
+    "created_at": "2008-12-08T12:55:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4681",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4681#issuecomment-35270",
+    "user": "davidloeffler"
+}
+```
 
 Attachment
 
@@ -175,14 +305,38 @@ The other issue is one of sign. Conventionally elementary divisors are always *n
 Incidentally, I just realised the doctests don't pass! I added an is_noetherian method for number field orders, but didn't notice that there is a doctest in sage/rings/ring.pyx that is actually broken by this -- it creates an order, calls is_noetherian() on it and insists that the result should be NotImplementedError. I will fix this.
 
 
+
 ---
 
-Comment by davidloeffler created at 2008-12-08 16:24:38
+archive/issue_comments_035271.json:
+```json
+{
+    "body": "New patch, against 3.2.2.alpha0",
+    "created_at": "2008-12-08T16:24:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4681",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4681#issuecomment-35271",
+    "user": "davidloeffler"
+}
+```
 
 New patch, against 3.2.2.alpha0
 
 
+
 ---
+
+archive/issue_comments_035272.json:
+```json
+{
+    "body": "Attachment\n\n(cc'ed to ncalexan as symplectic_basis is his territory)\n\nNobody's objected violently to the change yet on sage-devel, so the following patch changes SNF over ZZ, to put 1's first and 0's last. (Also, when M is non-square it puts the nonzero entries in the [i,i] diagonal, not on some shifted diagonal ending in the bottom corner like the previous code did -- I found that rather inconvenient.)\n\nAs I suggested above, I've changed the call syntax over a general ring to be consistent with the existing code over ZZ, so I got rid of the \"transformation=True\" argument and added an extra function \"elementary_divisors\" which returns the diagonal entries of M. This can be overridden later, if anyone feels like implementing a fast algorithm for elementary divisors for more general rings.\n\nI've also fixed up \"symplectic_basis\" to be consistent with the new \"smith_form\"; it doesn't explicitly use smith_form, but the conventions for the output are chosen for consistency with smith_form, so I've changed them in tandem. (ncalexan: is this OK with you?)\n\nI didn't actually make it choose ideal representatives that compare as >= 0 -- I decided I couldn't bear to fix such a horrible convention. This means that if R is a general PID, coercing integer matrices from ZZ to R doesn't quite commute with Smith form, but I don't see why one should expect it to.",
+    "created_at": "2008-12-08T16:50:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4681",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4681#issuecomment-35272",
+    "user": "davidloeffler"
+}
+```
 
 Attachment
 
@@ -197,28 +351,74 @@ I've also fixed up "symplectic_basis" to be consistent with the new "smith_form"
 I didn't actually make it choose ideal representatives that compare as >= 0 -- I decided I couldn't bear to fix such a horrible convention. This means that if R is a general PID, coercing integer matrices from ZZ to R doesn't quite commute with Smith form, but I don't see why one should expect it to.
 
 
+
 ---
 
-Comment by davidloeffler created at 2008-12-08 18:08:06
+archive/issue_comments_035273.json:
+```json
+{
+    "body": "fixes broken docstring + handling of empty matrices",
+    "created_at": "2008-12-08T18:08:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4681",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4681#issuecomment-35273",
+    "user": "davidloeffler"
+}
+```
 
 fixes broken docstring + handling of empty matrices
 
 
+
 ---
+
+archive/issue_comments_035274.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-12-08T18:09:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4681",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4681#issuecomment-35274",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by davidloeffler created at 2008-12-08 18:13:10
+archive/issue_comments_035275.json:
+```json
+{
+    "body": "Just realised that (a) I missed the fact that there is a doctest for symplectic_basis in matrix2.pyx and (b) there is an open ticket #3068 regarding Smith form of empty matrices. I've added a tiny patchlet that fixes both things.",
+    "created_at": "2008-12-08T18:13:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4681",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4681#issuecomment-35275",
+    "user": "davidloeffler"
+}
+```
 
 Just realised that (a) I missed the fact that there is a doctest for symplectic_basis in matrix2.pyx and (b) there is an open ticket #3068 regarding Smith form of empty matrices. I've added a tiny patchlet that fixes both things.
 
 
+
 ---
 
-Comment by ncalexan created at 2008-12-09 21:25:37
+archive/issue_comments_035276.json:
+```json
+{
+    "body": "Hi, I can't figure out what patches are supposed to work.\n\nIf I apply 4681-smithform-consistent.patch and then 4681-docstringfix.patch, everything works on sage.math but not on my home machine -- there is no inverse_mod for the maximal order elements in question.  Can you clarify?  Do I need some other patches from other tickets?\n\nBTW, I am fine with the changes you made to symplectic_basis.",
+    "created_at": "2008-12-09T21:25:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4681",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4681#issuecomment-35276",
+    "user": "ncalexan"
+}
+```
 
 Hi, I can't figure out what patches are supposed to work.
 
@@ -227,46 +427,114 @@ If I apply 4681-smithform-consistent.patch and then 4681-docstringfix.patch, eve
 BTW, I am fine with the changes you made to symplectic_basis.
 
 
+
 ---
 
-Comment by ncalexan created at 2008-12-09 21:34:32
+archive/issue_comments_035277.json:
+```json
+{
+    "body": "I see that it requires 4537.  I'll apply that and test again.",
+    "created_at": "2008-12-09T21:34:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4681",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4681#issuecomment-35277",
+    "user": "ncalexan"
+}
+```
 
 I see that it requires 4537.  I'll apply that and test again.
 
 
+
 ---
 
-Comment by ncalexan created at 2008-12-09 21:39:11
+archive/issue_comments_035278.json:
+```json
+{
+    "body": "Works for me, and the code is fairly straight forward.  It also fixes (and doctests) 3068.  Apply only the final two patches.",
+    "created_at": "2008-12-09T21:39:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4681",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4681#issuecomment-35278",
+    "user": "ncalexan"
+}
+```
 
 Works for me, and the code is fairly straight forward.  It also fixes (and doctests) 3068.  Apply only the final two patches.
 
 
+
 ---
+
+archive/issue_comments_035279.json:
+```json
+{
+    "body": "Attachment\n\napply after previous two patches",
+    "created_at": "2008-12-09T21:53:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4681",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4681#issuecomment-35279",
+    "user": "davidloeffler"
+}
+```
 
 Attachment
 
 apply after previous two patches
 
 
+
 ---
 
-Comment by davidloeffler created at 2008-12-09 21:58:16
+archive/issue_comments_035280.json:
+```json
+{
+    "body": "Actually, after your comments on sage-devel, regarding the lack of doctests over base rings other than number field orders, I have done a third patch adding these. I meant to upload this yesterday but trac was down at the time. It also now raises an error over non-exact base rings, because I tested it with a 2x2 random matrix over CC and it got stuck in an infinite loop; and it always chooses 1 as a generator of the unit ideal so the results look nicer over fields. See the above third patch, to be applied on top of the previous two.\n\nApologies for the profusion of patches!",
+    "created_at": "2008-12-09T21:58:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4681",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4681#issuecomment-35280",
+    "user": "davidloeffler"
+}
+```
 
 Actually, after your comments on sage-devel, regarding the lack of doctests over base rings other than number field orders, I have done a third patch adding these. I meant to upload this yesterday but trac was down at the time. It also now raises an error over non-exact base rings, because I tested it with a 2x2 random matrix over CC and it got stuck in an infinite loop; and it always chooses 1 as a generator of the unit ideal so the results look nicer over fields. See the above third patch, to be applied on top of the previous two.
 
 Apologies for the profusion of patches!
 
 
+
 ---
 
-Comment by ncalexan created at 2008-12-10 02:06:43
+archive/issue_comments_035281.json:
+```json
+{
+    "body": "Looks good to me.",
+    "created_at": "2008-12-10T02:06:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4681",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4681#issuecomment-35281",
+    "user": "ncalexan"
+}
+```
 
 Looks good to me.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-10 07:23:15
+archive/issue_comments_035282.json:
+```json
+{
+    "body": "Unfortunately there is a slight reject for trac_4681_part1_smithform-consistent.patch:\n\n```\nsage-3.2.2.alpha1/devel/sage$ patch -p1 < trac_4681_part1_smithform-consistent.patch \npatching file sage/matrix/matrix2.pyx\nHunk #1 FAILED at 4549.\n1 out of 1 hunk FAILED -- saving rejects to file sage/matrix/matrix2.pyx.rej\npatching file sage/matrix/matrix_integer_dense.pyx\npatching file sage/matrix/symplectic_basis.py\npatching file sage/modular/etaproducts.py\npatching file sage/rings/number_field/number_field_element.pyx\npatching file sage/rings/number_field/number_field_ideal.py\npatching file sage/rings/number_field/order.py\npatching file sage/rings/polynomial/polynomial_element.pyx\npatching file sage/rings/ring.pyx\n```\n\n\n3.2.2.alpha1 should be out in a couple hours, so please rebase. For the record: I want to apply\n\n* trac_4681_part1_smithform-consistent.patch\n* 4681-docstringfix.patch\n* 4681-more-doctests.patch\n\nCheers,\n\nMichael",
+    "created_at": "2008-12-10T07:23:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4681",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4681#issuecomment-35282",
+    "user": "mabshoff"
+}
+```
 
 Unfortunately there is a slight reject for trac_4681_part1_smithform-consistent.patch:
 
@@ -288,25 +556,47 @@ patching file sage/rings/ring.pyx
 
 3.2.2.alpha1 should be out in a couple hours, so please rebase. For the record: I want to apply
 
- * trac_4681_part1_smithform-consistent.patch
- * 4681-docstringfix.patch
- * 4681-more-doctests.patch
+* trac_4681_part1_smithform-consistent.patch
+* 4681-docstringfix.patch
+* 4681-more-doctests.patch
 
 Cheers,
 
 Michael
 
 
+
 ---
 
-Comment by davidloeffler created at 2008-12-10 10:20:32
+archive/issue_comments_035283.json:
+```json
+{
+    "body": "Looks like it's clashing with trac_4493_matrix-derivative.patch -- nothing else in release-cycles-3.2.2/alpha1 seems to change matrix2.pyx. I'll rebase it around that, and combine the three patches into one at the same time.",
+    "created_at": "2008-12-10T10:20:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4681",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4681#issuecomment-35283",
+    "user": "davidloeffler"
+}
+```
 
 Looks like it's clashing with trac_4493_matrix-derivative.patch -- nothing else in release-cycles-3.2.2/alpha1 seems to change matrix2.pyx. I'll rebase it around that, and combine the three patches into one at the same time.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-10 10:24:49
+archive/issue_comments_035284.json:
+```json
+{
+    "body": "Replying to [comment:18 davidloeffler]:\n\nHi David,\n\n> Looks like it's clashing with trac_4493_matrix-derivative.patch -- nothing else in release-cycles-3.2.2/alpha1 seems to change matrix2.pyx. I'll rebase it around that, and combine the three patches into one at the same time.\n\nExcellent, I can wait a couple hours before doing alpha1 since I can work on some other fixes in the meantime. Note that you can test if your patch applies to my current merge tree at\n\n\n  /scratch/mabshoff/release-cycle/sage-3.2.2.alpha1/devel/sage\n\nby running \"patch -p1 --dry-run < foo.patch\" from inside that directory on sage.math.\n\nCheers,\n\nMichael",
+    "created_at": "2008-12-10T10:24:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4681",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4681#issuecomment-35284",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:18 davidloeffler]:
 
@@ -326,23 +616,58 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by davidloeffler created at 2008-12-10 11:01:48
+archive/issue_comments_035285.json:
+```json
+{
+    "body": "Replaces all previous patches, rebased to apply over the top of #4493",
+    "created_at": "2008-12-10T11:01:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4681",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4681#issuecomment-35285",
+    "user": "davidloeffler"
+}
+```
 
 Replaces all previous patches, rebased to apply over the top of #4493
 
 
+
 ---
+
+archive/issue_comments_035286.json:
+```json
+{
+    "body": "Attachment\n\nHere is the rebased combined patch. I've checked on sage.math as you suggest and it applies OK to the current merge tree.",
+    "created_at": "2008-12-10T11:03:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4681",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4681#issuecomment-35286",
+    "user": "davidloeffler"
+}
+```
 
 Attachment
 
 Here is the rebased combined patch. I've checked on sage.math as you suggest and it applies OK to the current merge tree.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-10 11:09:29
+archive/issue_comments_035287.json:
+```json
+{
+    "body": "Thanks David,\n\nit does indeed apply cleanly and I am doctesting it now.\n\nCheers,\n\nMichael",
+    "created_at": "2008-12-10T11:09:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4681",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4681#issuecomment-35287",
+    "user": "mabshoff"
+}
+```
 
 Thanks David,
 
@@ -353,16 +678,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-10 11:25:53
+archive/issue_comments_035288.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-12-10T11:25:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4681",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4681#issuecomment-35288",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-10 11:25:53
+archive/issue_comments_035289.json:
+```json
+{
+    "body": "Merged 4681-smithform-all.patch in Sage 3.2.2.alpha1.\n\nAll doctest including -long pass\n\nCheers,\n\nMichael",
+    "created_at": "2008-12-10T11:25:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4681",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4681#issuecomment-35289",
+    "user": "mabshoff"
+}
+```
 
 Merged 4681-smithform-all.patch in Sage 3.2.2.alpha1.
 

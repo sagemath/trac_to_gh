@@ -1,11 +1,21 @@
 # Issue 4266: overflow error in SR approx
 
-Issue created by migration from https://trac.sagemath.org/ticket/4266
-
-Original creator: robertwb
-
-Original creation time: 2008-10-11 14:06:33
-
+archive/issues_004266.json:
+```json
+{
+    "body": "Assignee: burcin\n\n\n```\nsage: round(sqrt(Integer('1'*500)))\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/misc/functional.py\", line 865, in round\n    except AttributeError: return RealDoubleElement(__builtin__.round(x, 0))\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 6164, in __float__\n    return float(f._approx_(float(g)))\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 7941, in _approx_\n    return math.sqrt(x)\nOverflowError: math range error\n```\n\n\nApprox should fall back to mpfr if float fails. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4266\n\n",
+    "created_at": "2008-10-11T14:06:33Z",
+    "labels": [
+        "calculus",
+        "major",
+        "bug"
+    ],
+    "title": "overflow error in SR approx",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4266",
+    "user": "robertwb"
+}
+```
 Assignee: burcin
 
 
@@ -26,31 +36,81 @@ OverflowError: math range error
 
 Approx should fall back to mpfr if float fails. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4266
+
+
+
+
 
 ---
 
-Comment by robertwb created at 2008-10-30 22:02:22
+archive/issue_comments_031112.json:
+```json
+{
+    "body": "This is related to #188...",
+    "created_at": "2008-10-30T22:02:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4266",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4266#issuecomment-31112",
+    "user": "robertwb"
+}
+```
 
 This is related to #188...
 
 
+
 ---
+
+archive/issue_comments_031113.json:
+```json
+{
+    "body": "Attachment\n\nI assume there is good reason that \"always return an RDF\" is enforced. SR elements should probably implement round() themselves.",
+    "created_at": "2008-10-30T22:16:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4266",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4266#issuecomment-31113",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 I assume there is good reason that "always return an RDF" is enforced. SR elements should probably implement round() themselves.
 
 
+
 ---
 
-Comment by mhansen created at 2008-11-21 17:24:58
+archive/issue_comments_031114.json:
+```json
+{
+    "body": "Actually, I don't know of a good reason that \"always return as RDF\" is enforced.  It seems like floor, round, and ceiling should return Integers where possible.  There is a trac ticket by Nick Alexander that does this for some objects.",
+    "created_at": "2008-11-21T17:24:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4266",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4266#issuecomment-31114",
+    "user": "mhansen"
+}
+```
 
 Actually, I don't know of a good reason that "always return as RDF" is enforced.  It seems like floor, round, and ceiling should return Integers where possible.  There is a trac ticket by Nick Alexander that does this for some objects.
 
 
+
 ---
 
-Comment by was created at 2008-11-27 17:46:35
+archive/issue_comments_031115.json:
+```json
+{
+    "body": "REFEREE REPORT:\n\nThe attached patch fixes the reported problem.\n\nI agree that changing round, etc., to not return RDF's makes perfect sense, but I think that should be an entirely new trac ticket. \n\nI doctested only the calculus tree after applying this patch, and all was good.",
+    "created_at": "2008-11-27T17:46:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4266",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4266#issuecomment-31115",
+    "user": "was"
+}
+```
 
 REFEREE REPORT:
 
@@ -61,15 +121,37 @@ I agree that changing round, etc., to not return RDF's makes perfect sense, but 
 I doctested only the calculus tree after applying this patch, and all was good.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-28 07:32:47
+archive/issue_comments_031116.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-11-28T07:32:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4266",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4266#issuecomment-31116",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-28 07:32:47
+archive/issue_comments_031117.json:
+```json
+{
+    "body": "Merged in Sage 3.2.1.rc0",
+    "created_at": "2008-11-28T07:32:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4266",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4266#issuecomment-31117",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.2.1.rc0

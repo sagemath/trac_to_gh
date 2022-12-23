@@ -1,11 +1,21 @@
 # Issue 7164: readline-6.0 fails to build on HP-UX 11i (PA-RISC)
 
-Issue created by migration from https://trac.sagemath.org/ticket/7164
-
-Original creator: drkirkby
-
-Original creation time: 2009-10-08 21:33:02
-
+archive/issues_007164.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  david.kirkby@onetel.net\n\nKeywords: HP-UX\n\nI decided to attempt a build of Sage on HP-UX. The setup is:\n\n* HP C3600 workstation\n* PS-RISC processor running at 552 MHz.\n* 1 GB RAM\n* 2 x 36 GB disks \n* HP-UK 11i \n \nThe first failure is readline-6.0\n\n \n\n```\n       gcc -c -DHAVE_CONFIG_H    -I. -I. -DRL_LIBRARY_VERSION='\"6.0\"' -O2  -g  -Wall  misc.c\nmisc.c: In function '_rl_revert_all_lines':\nmisc.c:456: warning: suggest parentheses around assignment used as truth value\n        rm -f compat.o\n        gcc -c -DHAVE_CONFIG_H    -I. -I. -DRL_LIBRARY_VERSION='\"6.0\"' -O2  -g  -Wall  compat.c\n        rm -f xmalloc.o\n        gcc -c -DHAVE_CONFIG_H    -I. -I. -DRL_LIBRARY_VERSION='\"6.0\"' -O2  -g  -Wall  xmalloc.c\n        rm -f history.o\n        gcc -c -DHAVE_CONFIG_H    -I. -I. -DRL_LIBRARY_VERSION='\"6.0\"' -O2  -g  -Wall  history.c\n        rm -f histexpand.o\n        gcc -c -DHAVE_CONFIG_H    -I. -I. -DRL_LIBRARY_VERSION='\"6.0\"' -O2  -g  -Wall  histexpand.c\nhistexpand.c: In function 'get_history_event':\nhistexpand.c:207: warning: suggest parentheses around assignment used as truth value\n        rm -f histfile.o\n        gcc -c -DHAVE_CONFIG_H    -I. -I. -DRL_LIBRARY_VERSION='\"6.0\"' -O2  -g  -Wall  histfile.c\nhistfile.c: In function 'read_history_range':\nhistfile.c:251: warning: array subscript has type 'char'\nhistfile.c:268: warning: array subscript has type 'char'\nhistfile.c: In function 'history_truncate_file':\nhistfile.c:378: warning: array subscript has type 'char'\nhistfile.c:390: warning: array subscript has type 'char'\n        rm -f histsearch.o\n        gcc -c -DHAVE_CONFIG_H    -I. -I. -DRL_LIBRARY_VERSION='\"6.0\"' -O2  -g  -Wall  histsearch.c\n        rm -f shell.o\n        gcc -c -DHAVE_CONFIG_H    -I. -I. -DRL_LIBRARY_VERSION='\"6.0\"' -O2  -g  -Wall  shell.c\n        rm -f mbutil.o\n        gcc -c -DHAVE_CONFIG_H    -I. -I. -DRL_LIBRARY_VERSION='\"6.0\"' -O2  -g  -Wall  mbutil.c\n        rm -f tilde.o\n        gcc -DHAVE_CONFIG_H    -I. -I. -DRL_LIBRARY_VERSION='\"6.0\"' -O2  -g  -Wall  -DREADLINE_LIBRARY -c ./tilde.c\n./tilde.c: In function 'tilde_expand':\n./tilde.c:199: warning: suggest parentheses around assignment used as truth value\n        rm -f libreadline.a\n        ar cr libreadline.a readline.o vi_mode.o funmap.o keymaps.o parens.o search.o  rltty.o complete.o bind.o isearch.o display.o signals.o  util.o kill.o undo.o macro.o input.o callback.o terminal.o  text.o nls.o misc.o compat.o xmalloc.o history.o histexpand.o histfile.o histsearch.o shell.o mbutil.o tilde.o\n        test -n \"ranlib\" && ranlib libreadline.a\n        rm -f libhistory.a\n        ar cr libhistory.a history.o histexpand.o histfile.o histsearch.o shell.o mbutil.o xmalloc.o\n        test -n \"ranlib\" && ranlib libhistory.a\n        for f in readline.h chardefs.h keymaps.h history.h tilde.h  rlstdc.h rlconf.h rltypedefs.h; do \\\n                ./support/install.sh -c -m 644 ./$f /home/drkirkby/sage-4.1.2.rc0/local/include/readline ; \\\n        done\n        ( if test -d doc ; then \\\n                cd doc && \\\n                make b infodir=/home/drkirkby/sage-4.1.2.rc0/local/share/info DESTDIR= install; \\\n          fi )\nMake: Don't know how to make b.  Stop.\n*** Error exit code 1 (ignored)\n        test -d shlib || mkdir shlib\n        ( cd shlib ; make b all )\nMake: Don't know how to make b.  Stop.\n*** Error exit code 1 (ignored)\n        ( cd examples ; make b DESTDIR= install )\nMake: Don't know how to make b.  Stop.\n*** Error exit code 1 (ignored)\n        mv /home/drkirkby/sage-4.1.2.rc0/local/lib/libreadline.a /home/drkirkby/sage-4.1.2.rc0/local/lib/libreadline.old\nmv: /home/drkirkby/sage-4.1.2.rc0/local/lib/libreadline.a: cannot access: No such file or directory\n*** Error exit code 1 (ignored)\n        ./support/install.sh -c -m 644 libreadline.a /home/drkirkby/sage-4.1.2.rc0/local/lib/libreadline.a\n        test -n \"ranlib\" && ranlib /home/drkirkby/sage-4.1.2.rc0/local/lib/libreadline.a\n        mv /home/drkirkby/sage-4.1.2.rc0/local/lib/libhistory.a /home/drkirkby/sage-4.1.2.rc0/local/lib/libhistory.old\nmv: /home/drkirkby/sage-4.1.2.rc0/local/lib/libhistory.a: cannot access: No such file or directory\n*** Error exit code 1 (ignored)\n        ./support/install.sh -c -m 644 libhistory.a /home/drkirkby/sage-4.1.2.rc0/local/lib/libhistory.a\n        test -n \"ranlib\" && ranlib /home/drkirkby/sage-4.1.2.rc0/local/lib/libhistory.a\n        ( cd shlib ; make b DESTDIR= install )\nMake: Don't know how to make b.  Stop.\n*** Error exit code 1 (ignored)\nReadline's build claims to have finished, but files that should have been built weren't.\n\nreal    7m22.286s\nuser    1m7.990s\nsys     0m15.820s\nsage: An error occurred while installing readline-6.0\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7164\n\n",
+    "created_at": "2009-10-08T21:33:02Z",
+    "labels": [
+        "porting",
+        "minor",
+        "bug"
+    ],
+    "title": "readline-6.0 fails to build on HP-UX 11i (PA-RISC)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7164",
+    "user": "drkirkby"
+}
+```
 Assignee: tbd
 
 CC:  david.kirkby@onetel.net
@@ -14,11 +24,11 @@ Keywords: HP-UX
 
 I decided to attempt a build of Sage on HP-UX. The setup is:
 
- * HP C3600 workstation
- * PS-RISC processor running at 552 MHz.
- * 1 GB RAM
- * 2 x 36 GB disks 
- * HP-UK 11i 
+* HP C3600 workstation
+* PS-RISC processor running at 552 MHz.
+* 1 GB RAM
+* 2 x 36 GB disks 
+* HP-UK 11i 
  
 The first failure is readline-6.0
 
@@ -101,10 +111,25 @@ sage: An error occurred while installing readline-6.0
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7164
+
+
+
+
 
 ---
 
-Comment by drkirkby created at 2009-11-21 18:18:35
+archive/issue_comments_059385.json:
+```json
+{
+    "body": "This fix to this was very simple. The spkg-install contains a long list of different names for the library on different platforms\n\n\n```\nif [ $UNAME = \"Darwin\" ]; then\n  DYLIB_NAME=$SAGE_LOCAL/lib/libreadline.dylib\nelif [ $UNAME = \"CYGWIN\" ]; then\n  # It is of course very lame that readline names the file .dll.a, but that's what it does.\n  DYLIB_NAME=$SAGE_LOCAL/lib/libreadline.dll.a\nelif [ \"$UNAME\" = \"OpenBSD\" ]; then\n  DYLIB_NAME=$SAGE_LOCAL/lib/libreadline.so.6.0\nelif [ \"$UNAME\" = \"FreeBSD\" ]; then\n  DYLIB_NAME=$SAGE_LOCAL/lib/libreadline.so.6\nelse\n  DYLIB_NAME=$SAGE_LOCAL/lib/libreadline.so\nfi\n```\n\n\nAll I needed to do was to add the appropriate two lines for HP-UX. \n\n\n```\nelif [ \"$UNAME\" = \"HP-UX\" ]; then\n  DYLIB_NAME=$SAGE_LOCAL/lib/libreadline.sl.6\n```\n\n\nHP use the extenstion 'sl' for shared libraries on HP-UX. \n\nThe updated spkg, along with the SPKG.txt and spkg-install can be found here. \nhttp://sage.math.washington.edu/home/kirkby/HP-UX-fixes/readline-6.0.p0/",
+    "created_at": "2009-11-21T18:18:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7164",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7164#issuecomment-59385",
+    "user": "drkirkby"
+}
+```
 
 This fix to this was very simple. The spkg-install contains a long list of different names for the library on different platforms
 
@@ -140,59 +165,147 @@ The updated spkg, along with the SPKG.txt and spkg-install can be found here.
 http://sage.math.washington.edu/home/kirkby/HP-UX-fixes/readline-6.0.p0/
 
 
+
 ---
 
-Comment by drkirkby created at 2009-11-21 18:18:35
+archive/issue_comments_059386.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-11-21T18:18:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7164",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7164#issuecomment-59386",
+    "user": "drkirkby"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by malb created at 2009-12-08 13:56:35
+archive/issue_comments_059387.json:
+```json
+{
+    "body": "There isn't much I can referee since I don't use HP-UX at all. As far as I can see the patch is fine.",
+    "created_at": "2009-12-08T13:56:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7164",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7164#issuecomment-59387",
+    "user": "malb"
+}
+```
 
 There isn't much I can referee since I don't use HP-UX at all. As far as I can see the patch is fine.
 
 
+
 ---
 
-Comment by malb created at 2009-12-08 13:56:35
+archive/issue_comments_059388.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-12-08T13:56:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7164",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7164#issuecomment-59388",
+    "user": "malb"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by was created at 2009-12-08 18:26:22
+archive/issue_comments_059389.json:
+```json
+{
+    "body": "The spkg here doesn't have the changes checked in: http://sage.math.washington.edu/home/kirkby/HP-UX-fixes/readline-6.0.p0/\n\nOtherwise, this is as safe as a bank vault, so I'm fine with it going in.",
+    "created_at": "2009-12-08T18:26:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7164",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7164#issuecomment-59389",
+    "user": "was"
+}
+```
 
 The spkg here doesn't have the changes checked in: http://sage.math.washington.edu/home/kirkby/HP-UX-fixes/readline-6.0.p0/
 
 Otherwise, this is as safe as a bank vault, so I'm fine with it going in.
 
 
+
 ---
 
-Comment by was created at 2009-12-08 18:26:46
+archive/issue_comments_059390.json:
+```json
+{
+    "body": "Mhansen -- if you merge this, be sure to fix the spkg, which doesn't have the hg repo checked in!",
+    "created_at": "2009-12-08T18:26:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7164",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7164#issuecomment-59390",
+    "user": "was"
+}
+```
 
 Mhansen -- if you merge this, be sure to fix the spkg, which doesn't have the hg repo checked in!
 
 
+
 ---
 
-Comment by malb created at 2009-12-08 18:31:43
+archive/issue_comments_059391.json:
+```json
+{
+    "body": "Doh! I will write \"I will check the hg repo\" 100 times now on my blackboard.",
+    "created_at": "2009-12-08T18:31:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7164",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7164#issuecomment-59391",
+    "user": "malb"
+}
+```
 
 Doh! I will write "I will check the hg repo" 100 times now on my blackboard.
 
 
+
 ---
 
-Comment by mhansen created at 2009-12-09 02:35:03
+archive/issue_comments_059392.json:
+```json
+{
+    "body": "I've merged  http://sage.math.washington.edu/home/mhansen/readline-6.0.p1.spkg which has these changes along with the ones at #7610..",
+    "created_at": "2009-12-09T02:35:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7164",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7164#issuecomment-59392",
+    "user": "mhansen"
+}
+```
 
 I've merged  http://sage.math.washington.edu/home/mhansen/readline-6.0.p1.spkg which has these changes along with the ones at #7610..
 
 
+
 ---
 
-Comment by mhansen created at 2009-12-09 02:35:03
+archive/issue_comments_059393.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-12-09T02:35:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7164",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7164#issuecomment-59393",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

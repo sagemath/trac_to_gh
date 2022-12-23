@@ -1,11 +1,21 @@
 # Issue 1983: [with patch; needs review] change 0^0, for 0 a Sage integer, to evaluate to 1 for consistency with Python, PARI, Magma, Maple, MPFR, GMP, etc.
 
-Issue created by migration from https://trac.sagemath.org/ticket/1983
-
-Original creator: was
-
-Original creation time: 2008-01-30 13:35:24
-
+archive/issues_001983.json:
+```json
+{
+    "body": "Assignee: somebody\n\nAs justification that this is for *consistency*, everybody defines 0^0 to be 1, except Mathematica:\n\n\n```\n\nsage: gp('0^0')\n1\nsage: magma('0^0')\n1\nsage: mathematica('0^0')\n...\nMathematica ERROR:\n\t                                        0\nPower::indet: Indeterminate expression 0  encountered.\nsage: maple('0^0')\n1\nsage: int(0)^int(0)\n1\nsage: float(0)^float(0)\n1.0\nsage: 0.0^0.0\n1.00000000000000\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1983\n\n",
+    "created_at": "2008-01-30T13:35:24Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch; needs review] change 0^0, for 0 a Sage integer, to evaluate to 1 for consistency with Python, PARI, Magma, Maple, MPFR, GMP, etc.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1983",
+    "user": "was"
+}
+```
 Assignee: somebody
 
 As justification that this is for *consistency*, everybody defines 0^0 to be 1, except Mathematica:
@@ -33,28 +43,78 @@ sage: 0.0^0.0
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1983
+
+
+
+
 
 ---
+
+archive/issue_comments_012848.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-01-30T13:36:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1983",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1983#issuecomment-12848",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by jkantor created at 2008-02-01 05:00:14
+archive/issue_comments_012849.json:
+```json
+{
+    "body": "This works as described.",
+    "created_at": "2008-02-01T05:00:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1983",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1983#issuecomment-12849",
+    "user": "jkantor"
+}
+```
 
 This works as described.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-01 05:02:43
+archive/issue_comments_012850.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-02-01T05:02:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1983",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1983#issuecomment-12850",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-01 05:02:43
+archive/issue_comments_012851.json:
+```json
+{
+    "body": "Merged in Sage 2.10.1.rc4",
+    "created_at": "2008-02-01T05:02:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1983",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1983#issuecomment-12851",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.1.rc4

@@ -1,11 +1,21 @@
 # Issue 9680: Don't greedily replace 'self' with classname in documentation
 
-Issue created by migration from https://trac.sagemath.org/ticket/9680
-
-Original creator: boothby
-
-Original creation time: 2010-08-03 23:32:00
-
+archive/issues_009680.json:
+```json
+{
+    "body": "Assignee: mvngu\n\nI just found this gem.  Apparently, something replaces \"self\" with the current classname in the documentation.  Amusingly, this almost made something comprehensible by accident.\n\n\n```\nsage: DLXMatrix?\n...\nThe 0 entry is reserved internally... Blame the original author, or fix it yourDLXMatrix.\n```\n\n\nwhere it should read \"yourself\" at the end of the sentence.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9680\n\n",
+    "created_at": "2010-08-03T23:32:00Z",
+    "labels": [
+        "documentation",
+        "trivial",
+        "bug"
+    ],
+    "title": "Don't greedily replace 'self' with classname in documentation",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9680",
+    "user": "boothby"
+}
+```
 Assignee: mvngu
 
 I just found this gem.  Apparently, something replaces "self" with the current classname in the documentation.  Amusingly, this almost made something comprehensible by accident.
@@ -20,10 +30,25 @@ The 0 entry is reserved internally... Blame the original author, or fix it yourD
 
 where it should read "yourself" at the end of the sentence.
 
+Issue created by migration from https://trac.sagemath.org/ticket/9680
+
+
+
+
 
 ---
 
-Comment by jhpalmieri created at 2010-08-04 00:14:25
+archive/issue_comments_094108.json:
+```json
+{
+    "body": "I only see this in the notebook.  The cause for the replacement lies in the file sagenb/misc/sageinspect.py, the line\n\n```\n        s = s.replace('self.','%s.'%obj_name)\n```\n\nin the function sage_getdoc.  There is an identical line in sage/misc/sageinspect.py, so I'm not sure why this doesn't show up in the command line, but I don't remember all the intricacies of how docstrings are produced in the two settings.",
+    "created_at": "2010-08-04T00:14:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9680",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9680#issuecomment-94108",
+    "user": "jhpalmieri"
+}
+```
 
 I only see this in the notebook.  The cause for the replacement lies in the file sagenb/misc/sageinspect.py, the line
 
@@ -34,16 +59,38 @@ I only see this in the notebook.  The cause for the replacement lies in the file
 in the function sage_getdoc.  There is an identical line in sage/misc/sageinspect.py, so I'm not sure why this doesn't show up in the command line, but I don't remember all the intricacies of how docstrings are produced in the two settings.
 
 
+
 ---
 
-Comment by mmezzarobba created at 2015-04-13 13:11:31
+archive/issue_comments_094109.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2015-04-13T13:11:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9680",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9680#issuecomment-94109",
+    "user": "mmezzarobba"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mmezzarobba created at 2015-04-13 13:11:31
+archive/issue_comments_094110.json:
+```json
+{
+    "body": "`DLXMatrix?` now (6.6.rc3) displays\n\n```\n  ...\n   Note: The 0 entry is reserved internally for headers in the\n     sparse representation, so rows and columns begin their indexing\n     with 1. Apologies for any heartache this causes. Blame the\n     original author, or fix it yourself.\n   ...\n```\n\nas expected.",
+    "created_at": "2015-04-13T13:11:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9680",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9680#issuecomment-94110",
+    "user": "mmezzarobba"
+}
+```
 
 `DLXMatrix?` now (6.6.rc3) displays
 
@@ -59,15 +106,37 @@ Comment by mmezzarobba created at 2015-04-13 13:11:31
 as expected.
 
 
+
 ---
 
-Comment by vdelecroix created at 2015-04-22 19:26:29
+archive/issue_comments_094111.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2015-04-22T19:26:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9680",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9680#issuecomment-94111",
+    "user": "vdelecroix"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by vbraun created at 2015-04-23 01:45:07
+archive/issue_comments_094112.json:
+```json
+{
+    "body": "Resolution: wontfix",
+    "created_at": "2015-04-23T01:45:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9680",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9680#issuecomment-94112",
+    "user": "vbraun"
+}
+```
 
 Resolution: wontfix

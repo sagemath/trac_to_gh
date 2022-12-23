@@ -1,11 +1,21 @@
 # Issue 7378: Subdivide edges in a graph
 
-Issue created by migration from https://trac.sagemath.org/ticket/7378
-
-Original creator: ncohen
-
-Original creation time: 2009-11-03 09:26:13
-
+archive/issues_007378.json:
+```json
+{
+    "body": "Assignee: rlm\n\nIt is often useful to subdivide the edges of a graph, so there should be a function in Sage for this.\n\nWhen an edge e between u and v is subdivided in a DiGraph, perhaps the best thing to do would be to name the new vertices as (e, 0), (e, 1), (e, 2), etc ...\n\nWe are left with a similar problem concerning the Graphs and here I have to admit I do not know which name to use without inducing some orientation..\n\nThis being said, it has to be done ! :-)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7378\n\n",
+    "created_at": "2009-11-03T09:26:13Z",
+    "labels": [
+        "graph theory",
+        "major",
+        "enhancement"
+    ],
+    "title": "Subdivide edges in a graph",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7378",
+    "user": "ncohen"
+}
+```
 Assignee: rlm
 
 It is often useful to subdivide the edges of a graph, so there should be a function in Sage for this.
@@ -18,26 +28,63 @@ This being said, it has to be done ! :-)
 
 Nathann
 
+Issue created by migration from https://trac.sagemath.org/ticket/7378
+
+
+
+
 
 ---
 
-Comment by ncohen created at 2010-04-04 15:15:13
+archive/issue_comments_062028.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-04-04T15:15:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7378",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7378#issuecomment-62028",
+    "user": "ncohen"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by ncohen created at 2010-04-04 15:15:13
+archive/issue_comments_062029.json:
+```json
+{
+    "body": "Here it is !!!\n\nNathann",
+    "created_at": "2010-04-04T15:15:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7378",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7378#issuecomment-62029",
+    "user": "ncohen"
+}
+```
 
 Here it is !!!
 
 Nathann
 
 
+
 ---
 
-Comment by jason created at 2010-04-20 04:53:34
+archive/issue_comments_062030.json:
+```json
+{
+    "body": "In the docs, you say that the following are valid forms:\n\nG.add_edge( 1, 2, 8 )\n\nG.add_edge( (1, 2), 8 )\n\nHowever, reading the code seems to indicate that it should be subdivide_edge, not add_edge.",
+    "created_at": "2010-04-20T04:53:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7378",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7378#issuecomment-62030",
+    "user": "jason"
+}
+```
 
 In the docs, you say that the following are valid forms:
 
@@ -48,80 +95,190 @@ G.add_edge( (1, 2), 8 )
 However, reading the code seems to indicate that it should be subdivide_edge, not add_edge.
 
 
+
 ---
 
-Comment by jason created at 2010-04-20 04:53:34
+archive/issue_comments_062031.json:
+```json
+{
+    "body": "Changing assignee from rlm to jason.",
+    "created_at": "2010-04-20T04:53:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7378",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7378#issuecomment-62031",
+    "user": "jason"
+}
+```
 
 Changing assignee from rlm to jason.
 
 
+
 ---
 
-Comment by ncohen created at 2010-04-20 07:32:23
+archive/issue_comments_062032.json:
+```json
+{
+    "body": "Indeed. Fixed :-)\n\nNathann",
+    "created_at": "2010-04-20T07:32:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7378",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7378#issuecomment-62032",
+    "user": "ncohen"
+}
+```
 
 Indeed. Fixed :-)
 
 Nathann
 
 
+
 ---
 
-Comment by ncohen created at 2010-04-23 11:43:24
+archive/issue_comments_062033.json:
+```json
+{
+    "body": "I just applied this patch on top of #7608, and there was nothing wrong to report :-)",
+    "created_at": "2010-04-23T11:43:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7378",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7378#issuecomment-62033",
+    "user": "ncohen"
+}
+```
 
 I just applied this patch on top of #7608, and there was nothing wrong to report :-)
 
 
+
 ---
 
-Comment by rlm created at 2010-06-17 20:50:55
+archive/issue_comments_062034.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-06-17T20:50:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7378",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7378#issuecomment-62034",
+    "user": "rlm"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by rlm created at 2010-06-17 20:50:55
+archive/issue_comments_062035.json:
+```json
+{
+    "body": "\"If the given edge is labelled with `l`, all the edges created by the subdivision will have the same label.\"\n\n... You should also specify what happens to labels when `l` is not given. In addition, you should have all these cases doctested.",
+    "created_at": "2010-06-17T20:50:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7378",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7378#issuecomment-62035",
+    "user": "rlm"
+}
+```
 
 "If the given edge is labelled with `l`, all the edges created by the subdivision will have the same label."
 
 ... You should also specify what happens to labels when `l` is not given. In addition, you should have all these cases doctested.
 
 
+
 ---
 
-Comment by rlm created at 2010-06-17 20:53:30
+archive/issue_comments_062036.json:
+```json
+{
+    "body": "> ... You should also specify what happens to labels when `l` is not given. In addition, you should have all these cases doctested.\n\nThat said, all tests pass. So once the above is addressed, I'll probably be happy.",
+    "created_at": "2010-06-17T20:53:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7378",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7378#issuecomment-62036",
+    "user": "rlm"
+}
+```
 
 > ... You should also specify what happens to labels when `l` is not given. In addition, you should have all these cases doctested.
 
 That said, all tests pass. So once the above is addressed, I'll probably be happy.
 
 
+
 ---
 
-Comment by ncohen created at 2010-06-18 11:55:09
+archive/issue_comments_062037.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-06-18T11:55:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7378",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7378#issuecomment-62037",
+    "user": "ncohen"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by ncohen created at 2010-06-18 11:55:09
+archive/issue_comments_062038.json:
+```json
+{
+    "body": "What about this ? :-)\n\nNathann",
+    "created_at": "2010-06-18T11:55:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7378",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7378#issuecomment-62038",
+    "user": "ncohen"
+}
+```
 
 What about this ? :-)
 
 Nathann
 
 
+
 ---
 
-Comment by rlm created at 2010-06-18 15:20:58
+archive/issue_comments_062039.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-06-18T15:20:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7378",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7378#issuecomment-62039",
+    "user": "rlm"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by rlm created at 2010-06-18 15:20:58
+archive/issue_comments_062040.json:
+```json
+{
+    "body": "I don't think this quite works as advertised. If I have edge `(u, v, 1)` and I do `G.subdivide_edge((u, v, 2), 5)`, then the edge `(u, v, 1)` is never deleted.\n\nIs the input label the new label, or the label of the existing edge?\n\nMaybe there should be a `new_label` argument instead? I'm not sure the best way to approach this, and I'm interested in your opinion.",
+    "created_at": "2010-06-18T15:20:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7378",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7378#issuecomment-62040",
+    "user": "rlm"
+}
+```
 
 I don't think this quite works as advertised. If I have edge `(u, v, 1)` and I do `G.subdivide_edge((u, v, 2), 5)`, then the edge `(u, v, 1)` is never deleted.
 
@@ -130,9 +287,20 @@ Is the input label the new label, or the label of the existing edge?
 Maybe there should be a `new_label` argument instead? I'm not sure the best way to approach this, and I'm interested in your opinion.
 
 
+
 ---
 
-Comment by ncohen created at 2010-06-20 17:51:00
+archive/issue_comments_062041.json:
+```json
+{
+    "body": "Oh... The behaviour I had in mind was rather to raise an ValueError excetion saying : edge(u,v,2) does not exist. I really think of this as a topological method, so the user is expected to relabel his edges later if there is any need of it. I really wanted the edge to be \"split\" into several parts, all bearing the same label. \n\nWhat would you think about it ? I'll update the patch to match this behaviour, just because it is easy to do so, though if you don't like it we can still remove it ! :-)\n\nNathann",
+    "created_at": "2010-06-20T17:51:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7378",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7378#issuecomment-62041",
+    "user": "ncohen"
+}
+```
 
 Oh... The behaviour I had in mind was rather to raise an ValueError excetion saying : edge(u,v,2) does not exist. I really think of this as a topological method, so the user is expected to relabel his edges later if there is any need of it. I really wanted the edge to be "split" into several parts, all bearing the same label. 
 
@@ -141,26 +309,74 @@ What would you think about it ? I'll update the patch to match this behaviour, j
 Nathann
 
 
+
 ---
+
+archive/issue_comments_062042.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-06-20T18:04:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7378",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7378#issuecomment-62042",
+    "user": "ncohen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by rlm created at 2010-06-21 17:38:31
+archive/issue_comments_062043.json:
+```json
+{
+    "body": "Apply after trac_7378.patch",
+    "created_at": "2010-06-21T17:38:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7378",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7378#issuecomment-62043",
+    "user": "rlm"
+}
+```
 
 Apply after trac_7378.patch
 
 
+
 ---
 
-Comment by rlm created at 2010-06-21 17:40:17
+archive/issue_comments_062044.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-06-21T17:40:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7378",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7378#issuecomment-62044",
+    "user": "rlm"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
+
+archive/issue_comments_062045.json:
+```json
+{
+    "body": "Attachment\n\nReplying to [comment:10 ncohen]:\n> I really wanted the edge to be \"split\" into several parts, all bearing the same label. \n\nThanks for clarifying. I've tried to make this clear in the documentation. If you approve of my referee patch, please set the ticket to positive review.",
+    "created_at": "2010-06-21T17:40:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7378",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7378#issuecomment-62045",
+    "user": "rlm"
+}
+```
 
 Attachment
 
@@ -170,54 +386,131 @@ Replying to [comment:10 ncohen]:
 Thanks for clarifying. I've tried to make this clear in the documentation. If you approve of my referee patch, please set the ticket to positive review.
 
 
+
 ---
 
-Comment by ncohen created at 2010-06-21 20:15:38
+archive/issue_comments_062046.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-06-21T20:15:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7378",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7378#issuecomment-62046",
+    "user": "ncohen"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by ncohen created at 2010-06-21 20:15:38
+archive/issue_comments_062047.json:
+```json
+{
+    "body": "Thank youuuuuuuuuuu !!! :-)\n\nNathann",
+    "created_at": "2010-06-21T20:15:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7378",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7378#issuecomment-62047",
+    "user": "ncohen"
+}
+```
 
 Thank youuuuuuuuuuu !!! :-)
 
 Nathann
 
 
+
 ---
 
-Comment by ncohen created at 2010-06-21 20:17:44
+archive/issue_comments_062048.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_work.",
+    "created_at": "2010-06-21T20:17:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7378",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7378#issuecomment-62048",
+    "user": "ncohen"
+}
+```
 
 Changing status from positive_review to needs_work.
 
 
+
 ---
 
-Comment by ncohen created at 2010-06-21 20:17:53
+archive/issue_comments_062049.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-06-21T20:17:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7378",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7378#issuecomment-62049",
+    "user": "ncohen"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by ncohen created at 2010-06-21 20:30:20
+archive/issue_comments_062050.json:
+```json
+{
+    "body": "wrong alert, positive review ! :-)\n\nNathann",
+    "created_at": "2010-06-21T20:30:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7378",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7378#issuecomment-62050",
+    "user": "ncohen"
+}
+```
 
 wrong alert, positive review ! :-)
 
 Nathann
 
 
+
 ---
 
-Comment by ncohen created at 2010-06-21 20:30:20
+archive/issue_comments_062051.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-06-21T20:30:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7378",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7378#issuecomment-62051",
+    "user": "ncohen"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by rlm created at 2010-06-29 16:43:03
+archive/issue_comments_062052.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-06-29T16:43:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7378",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7378#issuecomment-62052",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed

@@ -1,17 +1,44 @@
 # Issue 4481: Fix cached_function to accept functions without func_doc or func_name (with patch)
 
-Issue created by migration from https://trac.sagemath.org/ticket/4481
-
-Original creator: nthiery
-
-Original creation time: 2008-11-09 14:13:04
-
+archive/issues_004481.json:
+```json
+{
+    "body": "Assignee: cwitty\n\nFix cached_function to accept functions without func_doc or func_name (with patch)\n\nIssue created by migration from https://trac.sagemath.org/ticket/4481\n\n",
+    "created_at": "2008-11-09T14:13:04Z",
+    "labels": [
+        "misc",
+        "minor",
+        "bug"
+    ],
+    "title": "Fix cached_function to accept functions without func_doc or func_name (with patch)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4481",
+    "user": "nthiery"
+}
+```
 Assignee: cwitty
 
 Fix cached_function to accept functions without func_doc or func_name (with patch)
 
+Issue created by migration from https://trac.sagemath.org/ticket/4481
+
+
+
+
 
 ---
+
+archive/issue_comments_033110.json:
+```json
+{
+    "body": "Attachment\n\nHi Nicolas,\n\nplease make sure to mark tickets with patches properly, i.e. prepend \"[with patch, needs review]\". That way the automated reports pick up this ticket.\n\nYou should also accept the ticket, so that the patch is properly credited to you in trac.\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-09T16:22:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4481",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4481#issuecomment-33110",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -26,44 +53,110 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by nthiery created at 2008-11-09 21:01:36
+archive/issue_comments_033111.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-11-09T21:01:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4481",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4481#issuecomment-33111",
+    "user": "nthiery"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by nthiery created at 2008-11-09 21:01:36
+archive/issue_comments_033112.json:
+```json
+{
+    "body": "Changing assignee from cwitty to nthiery.",
+    "created_at": "2008-11-09T21:01:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4481",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4481#issuecomment-33112",
+    "user": "nthiery"
+}
+```
 
 Changing assignee from cwitty to nthiery.
 
 
+
 ---
 
-Comment by nthiery created at 2008-11-09 21:01:36
+archive/issue_comments_033113.json:
+```json
+{
+    "body": "Oops, done. Thanks Michael.",
+    "created_at": "2008-11-09T21:01:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4481",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4481#issuecomment-33113",
+    "user": "nthiery"
+}
+```
 
 Oops, done. Thanks Michael.
 
 
+
 ---
 
-Comment by mhansen created at 2008-11-29 03:05:28
+archive/issue_comments_033114.json:
+```json
+{
+    "body": "Looks good.",
+    "created_at": "2008-11-29T03:05:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4481",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4481#issuecomment-33114",
+    "user": "mhansen"
+}
+```
 
 Looks good.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-29 04:18:38
+archive/issue_comments_033115.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-11-29T04:18:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4481",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4481#issuecomment-33115",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-29 04:18:38
+archive/issue_comments_033116.json:
+```json
+{
+    "body": "Merged in Sage 3.2.1.rc0.\n\nNicolas: Please make sure to post an hg patch instead of a diff next time. The patch has been checked in under your name, so credit is preserved.\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-29T04:18:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4481",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4481#issuecomment-33116",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.2.1.rc0.
 

@@ -1,11 +1,21 @@
 # Issue 6839: Implementation of crystal of letters for type E7
 
-Issue created by migration from https://trac.sagemath.org/ticket/6839
-
-Original creator: aschilling
-
-Original creation time: 2009-08-29 06:34:56
-
+archive/issues_006839.json:
+```json
+{
+    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nKeywords: combinat, crystals\n\n- Implemented crystal of letters for type E7\n- Added the method that goes to the highest weight element from any crystal element\n  (living in a highest weight crystal)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6839\n\n",
+    "created_at": "2009-08-29T06:34:56Z",
+    "labels": [
+        "combinatorics",
+        "major",
+        "enhancement"
+    ],
+    "title": "Implementation of crystal of letters for type E7",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6839",
+    "user": "aschilling"
+}
+```
 Assignee: mhansen
 
 CC:  sage-combinat
@@ -16,22 +26,61 @@ Keywords: combinat, crystals
 - Added the method that goes to the highest weight element from any crystal element
   (living in a highest weight crystal)
 
+Issue created by migration from https://trac.sagemath.org/ticket/6839
+
+
+
+
 
 ---
+
+archive/issue_comments_056405.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-08-29T06:48:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6839",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6839#issuecomment-56405",
+    "user": "aschilling"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by aschilling created at 2009-08-29 06:49:52
+archive/issue_comments_056406.json:
+```json
+{
+    "body": "Changing assignee from mhansen to aschilling.",
+    "created_at": "2009-08-29T06:49:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6839",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6839#issuecomment-56406",
+    "user": "aschilling"
+}
+```
 
 Changing assignee from mhansen to aschilling.
 
 
+
 ---
 
-Comment by bump created at 2009-09-04 18:04:42
+archive/issue_comments_056407.json:
+```json
+{
+    "body": "This patch creates the E7 crystal with highest weight\nvector the last fundamental weight. This is the 56-dimensional\none. As usual, once the crystal of letters is implemented,\nothers follow using CrystalOfTableaux, though for such a\nlarge group this will be computationally intensive.\n\nThe patch applies without change to sage 4.1.1.\n\nIt passes `sage --testall`.\n\nI convinced myself that the crystal created is correct. For\nexample, it branches correctly to E6, A6 and D6.\n\nThe new method to_highest_weight() is very useful. You\ncan specify a subset of the index set and partition the\ncrystal into subcrystals for any Levi subgroup.",
+    "created_at": "2009-09-04T18:04:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6839",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6839#issuecomment-56407",
+    "user": "bump"
+}
+```
 
 This patch creates the E7 crystal with highest weight
 vector the last fundamental weight. This is the 56-dimensional
@@ -51,9 +100,20 @@ can specify a subset of the index set and partition the
 crystal into subcrystals for any Levi subgroup.
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-07 17:25:36
+archive/issue_comments_056408.json:
+```json
+{
+    "body": "The following docstring causes warnings when building the reference manual:\n\n```\n1287\t    TESTS:: \n1288\t \n1289\t    sage: C = CrystalOfLetters(['E',7]) \n1290\t    sage: C.module_generators \n1291\t    [[7]] \n1292\t    sage: C.list() \n1293\t    [[7], [-7, 6], [-6, 5], [-5, 4], [-4, 2, 3], [-2, 3], [-3, 1, 2], [-1, \n1294\t    2], [-3, -2, 1, 4], [-1, -2, 4], [-4, 1, 5], [-4, -1, 3, 5], [-3, 5], \n1295\t    [-5, 6, 1], [-5, -1, 3, 6], [-5, -3, 4, 6], [-4, 2, 6], [-2, 6], [-6, 7, \n1296\t    1], [-1, -6, 3, 7], [-6, -3, 7, 4], [-6, -4, 2, 7, 5], [-6, -2, 7, 5], \n1297\t    [-5, 7, 2], [-5, -2, 4, 7], [-4, 7, 3], [-3, 1, 7], [-1, 7], [-7, 1], \n1298\t    [-1, -7, 3], [-7, -3, 4], [-4, -7, 2, 5], [-7, -2, 5], [-5, -7, 6, 2], \n1299\t    [-5, -2, -7, 4, 6], [-7, -4, 6, 3], [-3, -7, 1, 6], [-7, -1, 6], [-6, \n1300\t    2], [-2, -6, 4], [-6, -4, 5, 3], [-3, -6, 1, 5], [-6, -1, 5], [-5, 3], \n1301\t    [-3, -5, 4, 1], [-5, -1, 4], [-4, 1, 2], [-1, -4, 3, 2], [-3, 2], [-2, \n1302\t    -3, 4], [-4, 5], [-5, 6], [-6, 7], [-7], [-2, 1], [-2, -1, 3]] \n1303\t    sage: C.check() \n1304\t    True \n1305\t    sage: all(b.f(i).e(i) == b for i in C.index_set() for b in C if b.f(i) is not None) \n1306\t    True \n1307\t    sage: all(b.e(i).f(i) == b for i in C.index_set() for b in C if b.e(i) is not None) \n1308\t    True \n1309\t    sage: G = C.digraph() \n1310\t    sage: G.show(edge_labels=true, figsize=12, vertex_size=1) \n```\n\nSee #6901 for a follow-up to this ticket.",
+    "created_at": "2009-09-07T17:25:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6839",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6839#issuecomment-56408",
+    "user": "mvngu"
+}
+```
 
 The following docstring causes warnings when building the reference manual:
 
@@ -87,8 +147,19 @@ The following docstring causes warnings when building the reference manual:
 See #6901 for a follow-up to this ticket.
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-07 17:25:36
+archive/issue_comments_056409.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-09-07T17:25:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6839",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6839#issuecomment-56409",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

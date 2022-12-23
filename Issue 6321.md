@@ -1,11 +1,21 @@
 # Issue 6321: optional doctest failure -- sympow
 
-Issue created by migration from https://trac.sagemath.org/ticket/6321
-
-Original creator: was
-
-Original creation time: 2009-06-16 14:51:52
-
+archive/issues_006321.json:
+```json
+{
+    "body": "Assignee: tbd\n\n\n```\nsage -t -long --optional devel/sage/sage/lfunctions/sympow.py\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/lfunctions/sympow.py\", line 127:\n    sage: a = sympow.L(EllipticCurve('11a'), 2, 16); a   # optional\nExpected:\n    '1.057599244590958E+00'\nGot:\n    \"Inertia Group is  C1 MULTIPLICATIVE REDUCTION\\nConductor is 11\\n**ERROR** P02L not found in param_data file\\nIt can be added with './sympow -new_data 2'\"\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/lfunctions/sympow.py\", line 129:\n    sage: RR(a)                    # optional -- requires precomputations\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_4[3]>\", line 1, in <module>\n        RR(a)                    # optional -- requires precomputations###line 129:\n    sage: RR(a)                    # optional -- requires precomputations\n      File \"parent.pyx\", line 323, in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:4130)\n      File \"coerce_maps.pyx\", line 82, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3058)\n      File \"coerce_maps.pyx\", line 77, in sage.structure.coerce_maps._call_ (sage/structure/coerce_maps.c:2949)\n      File \"real_mpfr.pyx\", line 379, in sage.rings.real_mpfr.RealField._element_constructor_ (sage/rings/real_mpfr.c:5241)\n      File \"real_mpfr.pyx\", line 983, in sage.rings.real_mpfr.RealNumber._set (sage/rings/real_mpfr.c:8892)\n    TypeError: Unable to convert x (='InertiaGroupisC1MULTIPLICATIVEREDUCTION\n    Conductoris11\n    **ERROR**P02Lnotfoundinparam_datafile\n    Itcanbeaddedwith'./sympow-new_data2'') to real number.\n**********************************************************************\n1 items had failures:\n   2 of   4 in __main__.example_4\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /home/wstein/build/sage-4.0.2.alpha3/tmp/.doctest_sympow.py\n\t [6.5 s]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6321\n\n",
+    "created_at": "2009-06-16T14:51:52Z",
+    "labels": [
+        "packages: optional",
+        "major",
+        "bug"
+    ],
+    "title": "optional doctest failure -- sympow",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6321",
+    "user": "was"
+}
+```
 Assignee: tbd
 
 
@@ -50,10 +60,25 @@ For whitespace errors, see the file /home/wstein/build/sage-4.0.2.alpha3/tmp/.do
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6321
+
+
+
+
 
 ---
 
-Comment by was created at 2009-06-16 14:52:13
+archive/issue_comments_050445.json:
+```json
+{
+    "body": "More failures:\n\n```\nsage -t -long --optional devel/sage/sage/schemes/elliptic_curves/lseries_ell.py\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/schemes/elliptic_curves/lseries_ell.py\", line 165:\n    sage: a      # optional\nExpected:\n    '2.492262044273650E+00'\nGot:\n    \"Inertia Group is  C1 MULTIPLICATIVE REDUCTION\\nConductor is 37\\n**ERROR** P02L not found in param_data file\\nIt can be added with './sympow -new_data 2'\"\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/schemes/elliptic_curves/lseries_ell.py\", line 167:\n    sage: RR(a)                      # optional\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_7[5]>\", line 1, in <module>\n        RR(a)                      # optional###line 167:\n    sage: RR(a)                      # optional\n      File \"parent.pyx\", line 323, in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:4130)\n      File \"coerce_maps.pyx\", line 82, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3058)\n      File \"coerce_maps.pyx\", line 77, in sage.structure.coerce_maps._call_ (sage/structure/coerce_maps.c:2949)\n      File \"real_mpfr.pyx\", line 379, in sage.rings.real_mpfr.RealField._element_constructor_ (sage/rings/real_mpfr.c:5241)\n      File \"real_mpfr.pyx\", line 983, in sage.rings.real_mpfr.RealNumber._set (sage/rings/real_mpfr.c:8892)\n    TypeError: Unable to convert x (='InertiaGroupisC1MULTIPLICATIVEREDUCTION\n    Conductoris37\n    **ERROR**P02Lnotfoundinparam_datafile\n    Itcanbeaddedwith'./sympow-new_data2'') to real number.\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/schemes/elliptic_curves/lseries_ell.py\", line 193:\n    sage: print E.lseries().sympow_derivs(1,16,2)      # optional -- requires precomputing \"sympow('-new_data 2')\"\nExpected:\n    sympow 1.018 RELEASE  (c) Mark Watkins --- see README and COPYING for details\n    Minimal model of curve  is [0,0,1,-1,0]\n    At 37: Inertia Group is  C1 MULTIPLICATIVE REDUCTION\n    Conductor is 37\n    sp 1: Conductor at 37 is 1+0, root number is 1\n    sp 1: Euler factor at 37 is 1+1*x\n    1st sym power conductor is 37, global root number is -1\n    NT 1d0: 35\n    NT 1d1: 32\n    NT 1d2: 28\n    Maximal number of terms is 35\n    Done with small primes 1049\n    Computed:  1d0  1d1  1d2\n    Checked out:  1d1\n     1n0: 3.837774351482055E-01\n     1w0: 3.777214305638848E-01\n     1n1: 3.059997738340522E-01\n     1w1: 3.059997738340524E-01\n     1n2: 1.519054910249753E-01\n     1w2: 1.545605024269432E-01\nGot:\n    sympow 1.018 RELEASE  (c) Mark Watkins --- see README and COPYING for details\n    Minimal model of curve  is [0,0,1,-1,0]\n    At 37: Inertia Group is  C1 MULTIPLICATIVE REDUCTION\n    Conductor is 37\n    **ERROR** P01E not found in param_data file\n    It can be added with sympow('-new_data 1d0')\n**********************************************************************\n2 items had failures:\n   2 of   6 in __main__.example_7\n   1 of   4 in __main__.example_8\n***Test Failed*** 3 failures.\n```\n",
+    "created_at": "2009-06-16T14:52:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6321",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6321#issuecomment-50445",
+    "user": "was"
+}
+```
 
 More failures:
 
@@ -129,9 +154,20 @@ Got:
 
 
 
+
 ---
 
-Comment by jdemeyer created at 2015-09-06 17:52:45
+archive/issue_comments_050446.json:
+```json
+{
+    "body": "\n```\n$ ./sage -t --long --optional=all src/sage/lfunctions/sympow.py\ntoo many failed tests, not using stored timings\nRunning doctests with ID 2015-09-06-19-51-28-9336e066.\nGit branch: t/19146/brial_python\nUsing --optional=all\nDoctesting 1 file.\nsage -t --long src/sage/lfunctions/sympow.py\n    [13 tests, 3.39 s]\n----------------------------------------------------------------------\nAll tests passed!\n----------------------------------------------------------------------\nTotal time for all tests: 3.4 seconds\n    cpu time: 0.1 seconds\n    cumulative wall time: 3.4 seconds\n```\n",
+    "created_at": "2015-09-06T17:52:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6321",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6321#issuecomment-50446",
+    "user": "jdemeyer"
+}
+```
 
 
 ```
@@ -153,22 +189,55 @@ Total time for all tests: 3.4 seconds
 
 
 
+
 ---
 
-Comment by jdemeyer created at 2015-09-06 17:52:45
+archive/issue_comments_050447.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2015-09-06T17:52:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6321",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6321#issuecomment-50447",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2015-09-06 17:52:51
+archive/issue_comments_050448.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2015-09-06T17:52:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6321",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6321#issuecomment-50448",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by vbraun created at 2015-09-12 13:57:49
+archive/issue_comments_050449.json:
+```json
+{
+    "body": "Resolution: worksforme",
+    "created_at": "2015-09-12T13:57:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6321",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6321#issuecomment-50449",
+    "user": "vbraun"
+}
+```
 
 Resolution: worksforme

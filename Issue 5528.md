@@ -1,11 +1,21 @@
 # Issue 5528: implement functionality for deformation theory
 
-Issue created by migration from https://trac.sagemath.org/ticket/5528
-
-Original creator: AlexGhitza
-
-Original creation time: 2009-03-16 09:43:56
-
+archive/issues_005528.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  minz\n\nKeywords: deformation theory\n\nThis was requested by several people at Sage Days 14.  For specifics and sample \"dream code\", see Daniel Erman's contribution at http://wiki.sagemath.org/DeformationTheory\n\nThe page also refers to related work done by Bernd Martin in Singular.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5528\n\n",
+    "created_at": "2009-03-16T09:43:56Z",
+    "labels": [
+        "algebraic geometry",
+        "major",
+        "enhancement"
+    ],
+    "title": "implement functionality for deformation theory",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5528",
+    "user": "AlexGhitza"
+}
+```
 Assignee: was
 
 CC:  minz
@@ -16,9 +26,24 @@ This was requested by several people at Sage Days 14.  For specifics and sample 
 
 The page also refers to related work done by Bernd Martin in Singular.
 
+Issue created by migration from https://trac.sagemath.org/ticket/5528
+
+
+
+
 
 ---
 
-Comment by mrennekamp created at 2017-02-05 23:46:05
+archive/issue_comments_042999.json:
+```json
+{
+    "body": "What's new?",
+    "created_at": "2017-02-05T23:46:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5528",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5528#issuecomment-42999",
+    "user": "mrennekamp"
+}
+```
 
 What's new?

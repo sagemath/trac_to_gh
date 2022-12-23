@@ -1,11 +1,21 @@
 # Issue 6331: optional doctest failure -- magma interface slight problems
 
-Issue created by migration from https://trac.sagemath.org/ticket/6331
-
-Original creator: was
-
-Original creation time: 2009-06-16 15:08:39
-
+archive/issues_006331.json:
+```json
+{
+    "body": "Assignee: tbd\n\n\n```\nsage -t -long --optional devel/sage/sage/interfaces/mathematica.py\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/interfaces/mathematica.py\", line 181:\n    sage: n.FactorInteger()                  # optional - mathematica\nExpected:\n    {{2, 2}, {3, 2}, {5, 3}, {541, 1}}       # optional - mathematica\nGot:\n    {{2, 2}, {3, 2}, {5, 3}, {541, 1}}\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/interfaces/mathematica.py\", line 236:\n    sage: math_bessel_K(2,I)                      # optional - mathematica\nExpected:\n    0.180489972066962*I - 2.592886175491197\nGot:\n    -2.592886175491196978 + 0.1804899720669620266*I\n**********************************************************************\n1 items had failures:\n   2 of  62 in __main__.example_0\n***Test Failed*** 2 failures.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6331\n\n",
+    "created_at": "2009-06-16T15:08:39Z",
+    "labels": [
+        "packages: optional",
+        "major",
+        "bug"
+    ],
+    "title": "optional doctest failure -- magma interface slight problems",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6331",
+    "user": "was"
+}
+```
 Assignee: tbd
 
 
@@ -32,30 +42,78 @@ Got:
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6331
+
+
+
+
 
 ---
 
-Comment by flawrence created at 2009-09-14 07:17:41
+archive/issue_comments_050545.json:
+```json
+{
+    "body": "Both these errors are addressed in #4948.  The first error (an extra \"# optional - mathematica\") is fixed properly.  The second error is probably due to 32/64 bit versions of mathematica, or maybe even just different versions of mathematica.  The patch in #4948 adds -2.592886175491196978 + 0.1804899720669620266*I as a legitimate solution.",
+    "created_at": "2009-09-14T07:17:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6331",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6331#issuecomment-50545",
+    "user": "flawrence"
+}
+```
 
 Both these errors are addressed in #4948.  The first error (an extra "# optional - mathematica") is fixed properly.  The second error is probably due to 32/64 bit versions of mathematica, or maybe even just different versions of mathematica.  The patch in #4948 adds -2.592886175491196978 + 0.1804899720669620266*I as a legitimate solution.
 
 
+
 ---
 
-Comment by flawrence created at 2009-09-23 04:20:54
+archive/issue_comments_050546.json:
+```json
+{
+    "body": "I believe that this should be fixed in 4.1.2.alpha2 since #4948 was merged.",
+    "created_at": "2009-09-23T04:20:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6331",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6331#issuecomment-50546",
+    "user": "flawrence"
+}
+```
 
 I believe that this should be fixed in 4.1.2.alpha2 since #4948 was merged.
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-05 04:47:25
+archive/issue_comments_050547.json:
+```json
+{
+    "body": "Seems good to me.  Fixed by #4948.",
+    "created_at": "2009-10-05T04:47:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6331",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6331#issuecomment-50547",
+    "user": "mhansen"
+}
+```
 
 Seems good to me.  Fixed by #4948.
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-05 04:47:25
+archive/issue_comments_050548.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2009-10-05T04:47:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6331",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6331#issuecomment-50548",
+    "user": "mhansen"
+}
+```
 
 Resolution: duplicate

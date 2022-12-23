@@ -1,11 +1,21 @@
 # Issue 3211: rref function for matrices
 
-Issue created by migration from https://trac.sagemath.org/ticket/3211
-
-Original creator: jason
-
-Original creation time: 2008-05-15 13:43:48
-
+archive/issues_003211.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  was kcrisman rbeezer\n\nThe rref() function would copy the matrix to a matrix over the field of fractions of its base ring, then return echelon_form() of the new matrix.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3211\n\n",
+    "created_at": "2008-05-15T13:43:48Z",
+    "labels": [
+        "linear algebra",
+        "major",
+        "enhancement"
+    ],
+    "title": "rref function for matrices",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3211",
+    "user": "jason"
+}
+```
 Assignee: was
 
 CC:  was kcrisman rbeezer
@@ -14,10 +24,25 @@ The rref() function would copy the matrix to a matrix over the field of fraction
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3211
+
+
+
+
 
 ---
 
-Comment by was created at 2008-05-15 14:02:44
+archive/issue_comments_022200.json:
+```json
+{
+    "body": "\n```\n06:40 < jason-> Running an idea past people: an RREF function for matrices which first converts the matrix to be over the field of fractions of its base ring, then \n                returns the echelon form.\n06:41 < jason-> Thoughts?\n06:41 < jason-> (except, of course, the function would be lower-cased: m.rref() )\n06:43 -!- mhampton [n=hampton@75-163-23-225.dlth.qwest.net] has quit []\n06:56 < wstein> jason- ICK!\n06:56 < wstein> Are you serious?\n06:56 < jason-> wow, I didn't expect such a huge negative reaction\n06:56 < wstein> You are advocating that we have E.echelon_form() with the current behavior, but\n06:57 < wstein> E.rref() with completely different behavior?\n06:57 < jason-> is that really bad?\n06:57 < wstein> Well, yes.\n06:57 < wstein> An abreviation must have exactly the same behavior.\n06:57 < wstein> Also, the current E.echelon_form() *is* reduced row echelon form.\n06:58 < mabshoff> well, #3211 ought to be changed/invalidated then\n06:58 < wstein> Yep, I don't like it.\n06:58 < jason-> the current echelon_form function was really confusing for some people that are senior people in linear algebra....\n06:58 < wstein> People will expect rref = echelon_form.\n06:58 < jason-> and undergrad students in linear algebra\n06:58 < jason-> because the default ring is ZZ\n06:58 < wstein> True.\n06:58 < jason-> so matrix(3, range(9))\n06:59 < jason-> gives a *much* different rref than any other software or calculator out there.\n06:59 < wstein> Not true.\n06:59 < wstein> It gives exactly the same answer as the *only* other program out there that has a notion of \"matrix over ZZ\".\n06:59 < wstein> Namely Magma.\n07:00 < jason-> okay, except magma?\n07:00 < jason-> sure.\n07:00 < jason-> most of these people don't know about magma/can't afford to run magma, etc.\n07:00 < jason-> (especially the undergrad students)\n07:00 < jason-> is there a way we could have a function that returns the echelon_form over the fraction field?\n07:00 < wstein> One option is that the implicit choice of base ring for  matrix(...) would be QQ instead of ZZ.\n07:00 < jason-> That would be really nice.\n07:00 < jason-> I was afraid of suggesting that, though\n07:01 < jason-> for fear that too much stuff would break\n07:01 < wstein> But if one explicitly writes matrix(ZZ,...) then it's over ZZ.\n07:01 < jason-> I would support the implicit choice being over QQ\n07:01 < wstein> I think most anything where the ZZ really matters is explicit.\n07:01 < jason-> Do you want me to make that change, then?\n07:01 < wstein> Can you suggest it on sage-devel?\n07:01 < jason-> That way, if someone *knows* what they want, they can explicitly say over ZZ\n07:01 < wstein> Yep.\n07:02 < wstein> Could you suggest it on sage-devel.\n07:02 < jason-> otherwise it's more what people generally expect\n07:02 < jason-> yes.\n07:02 < wstein> I don't make changes like this (or like your #3211) by dictatorship.\n07:02 < jason-> and I'll hold off on the dubious rref function\n```\n",
+    "created_at": "2008-05-15T14:02:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3211",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3211#issuecomment-22200",
+    "user": "was"
+}
+```
 
 
 ```
@@ -72,9 +97,20 @@ Comment by was created at 2008-05-15 14:02:44
 
 
 
+
 ---
 
-Comment by was created at 2008-05-15 14:03:59
+archive/issue_comments_022201.json:
+```json
+{
+    "body": "\n```\n07:03 < wstein> If you do implicit QQ instead of ZZ you *have* to do implicit QQ(x) instead of QQ[x], by the way.\n07:03 < wstein> I.e., if Frac(R) is defined, it has to be used.\n07:03 < wstein> Otherwise matrix(...) will be to weird.\n```\n",
+    "created_at": "2008-05-15T14:03:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3211",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3211#issuecomment-22201",
+    "user": "was"
+}
+```
 
 
 ```
@@ -85,16 +121,38 @@ Comment by was created at 2008-05-15 14:03:59
 
 
 
+
 ---
 
-Comment by jason created at 2008-05-15 14:25:54
+archive/issue_comments_022202.json:
+```json
+{
+    "body": "See http://groups.google.com/group/sage-devel/browse_thread/thread/6ca33dd59ef09bd4 , which probably should have been more properly titled \"Changing it so that matrix() returns a matrix over a field, unless the ring is specified\"",
+    "created_at": "2008-05-15T14:25:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3211",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3211#issuecomment-22202",
+    "user": "jason"
+}
+```
 
 See http://groups.google.com/group/sage-devel/browse_thread/thread/6ca33dd59ef09bd4 , which probably should have been more properly titled "Changing it so that matrix() returns a matrix over a field, unless the ring is specified"
 
 
+
 ---
 
-Comment by jason created at 2008-05-21 15:46:30
+archive/issue_comments_022203.json:
+```json
+{
+    "body": "The conclusion from the thread from William was:\n\n\n```\nI think based on this whole discussion:\n\n(1) matrix(3, range(9)) returning a matrix over QQ is *definitely* out.\nIf there is a trac ticket it should be marked invalid.\n\n(2) The echelon_form command should be changed to always return\na result over the fraction field, thus making a break with Magma.\n\n(3) Rewrite all the rest of code in Sage that depends on the current\nbehavior of echelon_form.  This code will have to call hermite_form\ninstead.  E.g., code in modules/free_module.py will have to change.\nCode in a.kernel() will have to change, etc.\n\nDoing (1), (2) is almost trivial.  Do (3) will be a little more difficult, and\ncould introduce bugs.\n\nI'm very much against\n   a.echelon_form(...)\nbeing over ZZ or QQ depending on arguments to echelon_form.\nIf for no other reason than even if one does that then it will\nstill be necessary to do all of (3) above.\n\nI've cc'd David Kohel on this email, since he is 100% responsible\nfor the current state of affairs regarding echelon form, and I want\nto give him a chance to speak up before we do (1)-(3) above.\n```\n",
+    "created_at": "2008-05-21T15:46:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3211",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3211#issuecomment-22203",
+    "user": "jason"
+}
+```
 
 The conclusion from the thread from William was:
 
@@ -129,9 +187,20 @@ to give him a chance to speak up before we do (1)-(3) above.
 
 
 
+
 ---
 
-Comment by jason created at 2008-05-23 16:39:55
+archive/issue_comments_022204.json:
+```json
+{
+    "body": "This ticket has now morphed into doing:\n\nRename echelon_form to hermite_form, and make a \nnew echelon_form function that computes hermite_form over the fraction field of the base ring.\n\nRewrite all the rest of code in Sage that depends on the current\nbehavior of echelon_form.  This code will have to call hermite_form\ninstead.  E.g., code in modules/free_module.py will have to change.\nCode in a.kernel() will have to change, etc.",
+    "created_at": "2008-05-23T16:39:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3211",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3211#issuecomment-22204",
+    "user": "jason"
+}
+```
 
 This ticket has now morphed into doing:
 
@@ -144,111 +213,295 @@ instead.  E.g., code in modules/free_module.py will have to change.
 Code in a.kernel() will have to change, etc.
 
 
+
 ---
 
-Comment by jason created at 2008-12-06 07:26:32
+archive/issue_comments_022205.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-12-06T07:26:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3211",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3211#issuecomment-22205",
+    "user": "jason"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by jason created at 2008-12-06 07:26:32
+archive/issue_comments_022206.json:
+```json
+{
+    "body": "Changing assignee from was to jason.",
+    "created_at": "2008-12-06T07:26:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3211",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3211#issuecomment-22206",
+    "user": "jason"
+}
+```
 
 Changing assignee from was to jason.
 
 
+
 ---
 
-Comment by jason created at 2009-09-19 03:28:54
+archive/issue_comments_022207.json:
+```json
+{
+    "body": "See #5014 for one issue which could be solved by this ticket.",
+    "created_at": "2009-09-19T03:28:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3211",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3211#issuecomment-22207",
+    "user": "jason"
+}
+```
 
 See #5014 for one issue which could be solved by this ticket.
 
 
+
 ---
 
-Comment by robertwb created at 2009-09-22 04:37:58
+archive/issue_comments_022208.json:
+```json
+{
+    "body": "More discussion at http://groups.google.com/group/sage-devel/browse_thread/thread/5f247122fce6a129/cf753d838b969b8c , this is still considered a good idea.",
+    "created_at": "2009-09-22T04:37:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3211",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3211#issuecomment-22208",
+    "user": "robertwb"
+}
+```
 
 More discussion at http://groups.google.com/group/sage-devel/browse_thread/thread/5f247122fce6a129/cf753d838b969b8c , this is still considered a good idea.
 
 
+
 ---
 
-Comment by jason created at 2009-09-22 04:59:31
+archive/issue_comments_022209.json:
+```json
+{
+    "body": "Also, I've been working (yet again) on a patch...",
+    "created_at": "2009-09-22T04:59:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3211",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3211#issuecomment-22209",
+    "user": "jason"
+}
+```
 
 Also, I've been working (yet again) on a patch...
 
 
+
 ---
+
+archive/issue_comments_022210.json:
+```json
+{
+    "body": "Attachment\n\nunfinished",
+    "created_at": "2009-10-01T08:07:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3211",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3211#issuecomment-22210",
+    "user": "jason"
+}
+```
 
 Attachment
 
 unfinished
 
 
+
 ---
 
-Comment by jason created at 2009-10-01 08:08:21
+archive/issue_comments_022211.json:
+```json
+{
+    "body": "I'm attaching the work-in-progress so that it's archived somewhere other than my computer.",
+    "created_at": "2009-10-01T08:08:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3211",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3211#issuecomment-22211",
+    "user": "jason"
+}
+```
 
 I'm attaching the work-in-progress so that it's archived somewhere other than my computer.
 
 
+
 ---
+
+archive/issue_comments_022212.json:
+```json
+{
+    "body": "Attachment\n\napply instead of previous patch.",
+    "created_at": "2009-12-03T14:07:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3211",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3211#issuecomment-22212",
+    "user": "jason"
+}
+```
 
 Attachment
 
 apply instead of previous patch.
 
 
+
 ---
 
-Comment by jason created at 2009-12-03 14:07:47
+archive/issue_comments_022213.json:
+```json
+{
+    "body": "apply on top of previous patch",
+    "created_at": "2009-12-03T14:07:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3211",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3211#issuecomment-22213",
+    "user": "jason"
+}
+```
 
 apply on top of previous patch
 
 
+
 ---
+
+archive/issue_comments_022214.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-12-03T14:08:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3211",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3211#issuecomment-22214",
+    "user": "jason"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by jason created at 2009-12-03 14:08:45
+archive/issue_comments_022215.json:
+```json
+{
+    "body": "The previous two patches are a *rough draft* of a patch.  I had them applied to sage-4.1.2.alpha2.",
+    "created_at": "2009-12-03T14:08:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3211",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3211#issuecomment-22215",
+    "user": "jason"
+}
+```
 
 The previous two patches are a *rough draft* of a patch.  I had them applied to sage-4.1.2.alpha2.
 
 
+
 ---
 
-Comment by jason created at 2010-01-19 18:55:06
+archive/issue_comments_022216.json:
+```json
+{
+    "body": "apply instead of previous patches",
+    "created_at": "2010-01-19T18:55:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3211",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3211#issuecomment-22216",
+    "user": "jason"
+}
+```
 
 apply instead of previous patches
 
 
+
 ---
+
+archive/issue_comments_022217.json:
+```json
+{
+    "body": "Attachment\n\nOkay, I've posted a single rebased patch which applies on top of 4.3.1.rc1.",
+    "created_at": "2010-01-19T18:55:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3211",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3211#issuecomment-22217",
+    "user": "jason"
+}
+```
 
 Attachment
 
 Okay, I've posted a single rebased patch which applies on top of 4.3.1.rc1.
 
 
+
 ---
 
-Comment by kcrisman created at 2010-01-19 19:22:46
+archive/issue_comments_022218.json:
+```json
+{
+    "body": "I realize this isn't ready for review yet, but at the very least we would want to put in a DeprecationWarning for the missing echelon_form etc. methods :)  How hard will it be to make echelon_form = hermite_form(quotient field)?",
+    "created_at": "2010-01-19T19:22:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3211",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3211#issuecomment-22218",
+    "user": "kcrisman"
+}
+```
 
 I realize this isn't ready for review yet, but at the very least we would want to put in a DeprecationWarning for the missing echelon_form etc. methods :)  How hard will it be to make echelon_form = hermite_form(quotient field)?
 
 
+
 ---
 
-Comment by mvngu created at 2010-03-02 21:55:51
+archive/issue_comments_022219.json:
+```json
+{
+    "body": "Close as fixed by #8008.",
+    "created_at": "2010-03-02T21:55:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3211",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3211#issuecomment-22219",
+    "user": "mvngu"
+}
+```
 
 Close as fixed by #8008.
 
 
+
 ---
 
-Comment by mvngu created at 2010-03-02 21:55:51
+archive/issue_comments_022220.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-03-02T21:55:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3211",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3211#issuecomment-22220",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

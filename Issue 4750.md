@@ -1,48 +1,117 @@
 # Issue 4750: make it so sage -t foo.sage pulls in the preparsed version of all the code in foo.sage before doctesting foo.py; make it so "sage -t foo.py" has an option to pull in all code from foo.py before doctesting it.
 
-Issue created by migration from https://trac.sagemath.org/ticket/4750
-
-Original creator: was
-
-Original creation time: 2008-12-10 12:34:53
-
+archive/issues_004750.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nCC:  ddrake abergeron\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4750\n\n",
+    "created_at": "2008-12-10T12:34:53Z",
+    "labels": [
+        "doctest coverage",
+        "major",
+        "bug"
+    ],
+    "title": "make it so sage -t foo.sage pulls in the preparsed version of all the code in foo.sage before doctesting foo.py; make it so \"sage -t foo.py\" has an option to pull in all code from foo.py before doctesting it.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4750",
+    "user": "was"
+}
+```
 Assignee: mabshoff
 
 CC:  ddrake abergeron
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4750
+
+
+
+
 
 ---
 
-Comment by mderickx created at 2011-08-24 16:29:10
+archive/issue_comments_035948.json:
+```json
+{
+    "body": "I'm not sure if this is a good idea to do by default. We also use the doctests to give examples for the endusers. Enabling this functionality by default makes it possible to write passing doctests which are not working in interactive sage sessions.",
+    "created_at": "2011-08-24T16:29:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4750",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4750#issuecomment-35948",
+    "user": "mderickx"
+}
+```
 
 I'm not sure if this is a good idea to do by default. We also use the doctests to give examples for the endusers. Enabling this functionality by default makes it possible to write passing doctests which are not working in interactive sage sessions.
 
 
+
 ---
 
-Comment by roed created at 2012-02-06 05:15:22
+archive/issue_comments_035949.json:
+```json
+{
+    "body": "I don't understand what this ticket is suggesting.  I thought we already imported the classes and functions defined in a .sage file....",
+    "created_at": "2012-02-06T05:15:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4750",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4750#issuecomment-35949",
+    "user": "roed"
+}
+```
 
 I don't understand what this ticket is suggesting.  I thought we already imported the classes and functions defined in a .sage file....
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-02-28 15:58:07
+archive/issue_comments_035950.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2013-02-28T15:58:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4750",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4750#issuecomment-35950",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-02-28 15:58:13
+archive/issue_comments_035951.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2013-02-28T15:58:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4750",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4750#issuecomment-35951",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-03-07 08:12:15
+archive/issue_comments_035952.json:
+```json
+{
+    "body": "Resolution: worksforme",
+    "created_at": "2013-03-07T08:12:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4750",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4750#issuecomment-35952",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: worksforme

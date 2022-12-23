@@ -1,32 +1,81 @@
 # Issue 1946: Tate's algorithm has NO DOCTESTS!  See sage/schemes/elliptic_curves/ell_number_field.py
 
-Issue created by migration from https://trac.sagemath.org/ticket/1946
-
-Original creator: was
-
-Original creation time: 2008-01-27 02:36:59
-
+archive/issues_001946.json:
+```json
+{
+    "body": "Assignee: was\n\nI'm sure -- after a bit of a glance, for example, at scale_curve,\nthat lots of this code is broken as a result of having no doctests!\n\nIssue created by migration from https://trac.sagemath.org/ticket/1946\n\n",
+    "created_at": "2008-01-27T02:36:59Z",
+    "labels": [
+        "number theory",
+        "major",
+        "bug"
+    ],
+    "title": "Tate's algorithm has NO DOCTESTS!  See sage/schemes/elliptic_curves/ell_number_field.py",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1946",
+    "user": "was"
+}
+```
 Assignee: was
 
 I'm sure -- after a bit of a glance, for example, at scale_curve,
 that lots of this code is broken as a result of having no doctests!
 
+Issue created by migration from https://trac.sagemath.org/ticket/1946
+
+
+
+
 
 ---
 
-Comment by was created at 2008-01-27 15:09:09
+archive/issue_comments_012353.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-01-27T15:09:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1946",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1946#issuecomment-12353",
+    "user": "was"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by cremona created at 2008-01-28 06:28:25
+archive/issue_comments_012354.json:
+```json
+{
+    "body": "patch for elliptic_curve and number_field stuff",
+    "created_at": "2008-01-28T06:28:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1946",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1946#issuecomment-12354",
+    "user": "cremona"
+}
+```
 
 patch for elliptic_curve and number_field stuff
 
 
+
 ---
+
+archive/issue_comments_012355.json:
+```json
+{
+    "body": "Attachment\n\nLots of doctests for elliptic curves with many bug fixes for bugs revealed by them.\n\nSeveral new functions for changing models:  thought still needed on how to return the isomorphism as well as the new model;  if not Magma style then by storing the map as an attribute of the new curve as is done for number fields?\n\nJoint work by John Cremona and William Stein.",
+    "created_at": "2008-01-28T06:32:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1946",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1946#issuecomment-12355",
+    "user": "cremona"
+}
+```
 
 Attachment
 
@@ -37,9 +86,20 @@ Several new functions for changing models:  thought still needed on how to retur
 Joint work by John Cremona and William Stein.
 
 
+
 ---
 
-Comment by cremona created at 2008-01-31 05:17:08
+archive/issue_comments_012356.json:
+```json
+{
+    "body": "The previous patch left some failing doctests in number_field_ideal_rel.py.\nThis patch 8090.patch fixed those with some substantial reworking of the classes NumberFieldIdeal, NumberFieldFractionalIdeal and NumberFieldFractionalIdeal_rel. \n\nPlease would people with experience of the elliptic curve classes review 8089.patch and someone who knows the number field code review 8090.patch (which should be applied after 8089.patch.\n\nBy the way, I have checked all doctest in both number_field/ and elliptic_curve/ directories (and have added lots to these), and also the doc and const directories (where a couple of changes were needed).",
+    "created_at": "2008-01-31T05:17:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1946",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1946#issuecomment-12356",
+    "user": "cremona"
+}
+```
 
 The previous patch left some failing doctests in number_field_ideal_rel.py.
 This patch 8090.patch fixed those with some substantial reworking of the classes NumberFieldIdeal, NumberFieldFractionalIdeal and NumberFieldFractionalIdeal_rel. 
@@ -49,23 +109,56 @@ Please would people with experience of the elliptic curve classes review 8089.pa
 By the way, I have checked all doctest in both number_field/ and elliptic_curve/ directories (and have added lots to these), and also the doc and const directories (where a couple of changes were needed).
 
 
+
 ---
 
-Comment by ncalexan created at 2008-02-15 05:09:04
+archive/issue_comments_012357.json:
+```json
+{
+    "body": "8090 looks fine to me, lots of good doctests.  I can't view 8089.",
+    "created_at": "2008-02-15T05:09:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1946",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1946#issuecomment-12357",
+    "user": "ncalexan"
+}
+```
 
 8090 looks fine to me, lots of good doctests.  I can't view 8089.
 
 
+
 ---
 
-Comment by cremona created at 2008-02-18 08:57:33
+archive/issue_comments_012358.json:
+```json
+{
+    "body": "8090.patch has a positive review but 8089 has not yet been reviewed.  I don't know why it cannot be viewed directly from the trac page!",
+    "created_at": "2008-02-18T08:57:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1946",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1946#issuecomment-12358",
+    "user": "cremona"
+}
+```
 
 8090.patch has a positive review but 8089 has not yet been reviewed.  I don't know why it cannot be viewed directly from the trac page!
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-18 19:24:47
+archive/issue_comments_012359.json:
+```json
+{
+    "body": "Replying to [comment:5 cremona]:\n>  8090.patch has a positive review but 8089 has not yet been reviewed.  I don't know why it cannot be viewed directly from the trac page!\n> \n\nThe parent of the patch is in 2.10.2.alpha0 and the trac installations uses the release branch. You can still download the patch and look at it \"manually\".\n\nCheers,\n\nMichael",
+    "created_at": "2008-02-18T19:24:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1946",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1946#issuecomment-12359",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:5 cremona]:
 >  8090.patch has a positive review but 8089 has not yet been reviewed.  I don't know why it cannot be viewed directly from the trac page!
@@ -78,30 +171,76 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_012360.json:
+```json
+{
+    "body": "Attachment\n\nThis replaces Cremona's previous version; but has a comment and applies cleanly.",
+    "created_at": "2008-02-19T16:25:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1946",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1946#issuecomment-12360",
+    "user": "was"
+}
+```
 
 Attachment
 
 This replaces Cremona's previous version; but has a comment and applies cleanly.
 
 
+
 ---
 
-Comment by was created at 2008-02-19 17:22:24
+archive/issue_comments_012361.json:
+```json
+{
+    "body": "Changing assignee from was to cremona.",
+    "created_at": "2008-02-19T17:22:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1946",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1946#issuecomment-12361",
+    "user": "was"
+}
+```
 
 Changing assignee from was to cremona.
 
 
+
 ---
 
-Comment by was created at 2008-02-19 17:22:24
+archive/issue_comments_012362.json:
+```json
+{
+    "body": "Changing status from assigned to new.",
+    "created_at": "2008-02-19T17:22:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1946",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1946#issuecomment-12362",
+    "user": "was"
+}
+```
 
 Changing status from assigned to new.
 
 
+
 ---
 
-Comment by was created at 2008-02-19 17:22:24
+archive/issue_comments_012363.json:
+```json
+{
+    "body": "REFEREE REPORT:\n\n1. I applied both patches to sage-2.10.1.alpha0.  There is one rejected hunk\nin the second patch (8090.patch).  I replaced 8090.patch by one that works without\nany problems.\n\n2. After applying both patches all doctests in elliptic curves and number fields pass. \n\n3. I fixed a number of formating issues with the new docstrings. See the third patch 3.\n\n4. This patch rocks!  It is a major significant contribution to improving the doctest coverage and quality of the sage elliptic curve code. Very positive review.",
+    "created_at": "2008-02-19T17:22:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1946",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1946#issuecomment-12363",
+    "user": "was"
+}
+```
 
 REFEREE REPORT:
 
@@ -116,16 +255,40 @@ any problems.
 4. This patch rocks!  It is a major significant contribution to improving the doctest coverage and quality of the sage elliptic curve code. Very positive review.
 
 
+
 ---
+
+archive/issue_comments_012364.json:
+```json
+{
+    "body": "Attachment\n\napply all three patches, including this one",
+    "created_at": "2008-02-19T17:22:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1946",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1946#issuecomment-12364",
+    "user": "was"
+}
+```
 
 Attachment
 
 apply all three patches, including this one
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-19 17:35:27
+archive/issue_comments_012365.json:
+```json
+{
+    "body": "I am getting more rejects if I apply against my current version of 2.10.2.alpha1 (which will be alpha2 in about 30 minutes):\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-2.10.2.alpha1/devel/sage$ patch -p1 --dry-run < 8089.patch\npatching file sage/rings/ideal.py\npatching file sage/rings/number_field/all.py\nHunk #1 succeeded at 6 with fuzz 1.\npatching file sage/rings/number_field/number_field.py\nHunk #1 succeeded at 162 (offset 5 lines).\nHunk #2 succeeded at 1248 (offset 24 lines).\nHunk #3 succeeded at 1259 (offset 24 lines).\nHunk #4 succeeded at 1289 (offset 24 lines).\npatching file sage/rings/number_field/number_field_element.pyx\nHunk #1 succeeded at 1550 (offset 12 lines).\nHunk #2 succeeded at 1563 with fuzz 1 (offset 12 lines).\npatching file sage/rings/number_field/number_field_ideal.py\npatching file sage/rings/number_field/number_field_ideal_rel.py\npatching file sage/schemes/elliptic_curves/cm.py\npatching file sage/schemes/elliptic_curves/ell_field.py\npatching file sage/schemes/elliptic_curves/ell_finite_field.py\nHunk #1 FAILED at 42.\nHunk #2 FAILED at 66.\nHunk #3 FAILED at 81.\nHunk #4 FAILED at 142.\nHunk #5 FAILED at 211.\nHunk #6 FAILED at 241.\nHunk #7 FAILED at 298.\nHunk #8 FAILED at 400.\nHunk #9 succeeded at 783 with fuzz 2 (offset 359 lines).\nHunk #10 FAILED at 801.\n9 out of 10 hunks FAILED -- saving rejects to file sage/schemes/elliptic_curves/ell_finite_field.py.rej\npatching file sage/schemes/elliptic_curves/ell_generic.py\nHunk #3 succeeded at 1483 (offset 23 lines).\nHunk #4 succeeded at 1629 (offset 23 lines).\npatching file sage/schemes/elliptic_curves/ell_number_field.py\npatching file sage/schemes/elliptic_curves/ell_rational_field.py\nHunk #2 succeeded at 1519 (offset 11 lines).\nHunk #3 succeeded at 1574 (offset 11 lines).\nHunk #4 succeeded at 1607 (offset 11 lines).\nHunk #5 succeeded at 1680 (offset 11 lines).\nHunk #6 succeeded at 2176 (offset 11 lines).\nHunk #7 succeeded at 2886 (offset 46 lines).\npatching file sage/schemes/elliptic_curves/padics.py\nHunk #1 succeeded at 36 (offset 1 line).\nHunk #2 succeeded at 1195 (offset 210 lines).\nHunk #3 succeeded at 1244 (offset 210 lines).\npatching file sage/schemes/elliptic_curves/weierstrass_morphism.py\n```\n\nI suggest rebasing against 2.10.2.alpha2.\n\nCheers,\n\nMichael",
+    "created_at": "2008-02-19T17:35:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1946",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1946#issuecomment-12365",
+    "user": "mabshoff"
+}
+```
 
 I am getting more rejects if I apply against my current version of 2.10.2.alpha1 (which will be alpha2 in about 30 minutes):
 
@@ -183,18 +346,40 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by was created at 2008-02-19 17:45:14
+archive/issue_comments_012366.json:
+```json
+{
+    "body": "Gees!  This all applies cleanly to alpha0.  Here's an hg bundle that I made by applying all three patches cleanly to alpha 0 and doing hg_sage.send:\n\nhttp://sage.math.washington.edu/home/was/tmp/1946.hg",
+    "created_at": "2008-02-19T17:45:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1946",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1946#issuecomment-12366",
+    "user": "was"
+}
+```
 
 Gees!  This all applies cleanly to alpha0.  Here's an hg bundle that I made by applying all three patches cleanly to alpha 0 and doing hg_sage.send:
 
 http://sage.math.washington.edu/home/was/tmp/1946.hg
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-21 13:19:33
+archive/issue_comments_012367.json:
+```json
+{
+    "body": "Replying to [comment:9 was]:\n> Gees!  This all applies cleanly to alpha0.  Here's an hg bundle that I made by applying all three patches cleanly to alpha 0 and doing hg_sage.send:\n> \n> http://sage.math.washington.edu/home/was/tmp/1946.hg\n\nEven that bundle does not apply cleanly against my 2.10.2.a1 or 2.10.2.a2. It looks like a whole bunch of trivial, white space related rejects. One exception is the fixed doctest, but that is easy to fix.\n\nCheers,\n\nMichael",
+    "created_at": "2008-02-21T13:19:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1946",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1946#issuecomment-12367",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:9 was]:
 > Gees!  This all applies cleanly to alpha0.  Here's an hg bundle that I made by applying all three patches cleanly to alpha 0 and doing hg_sage.send:
@@ -208,9 +393,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by was created at 2008-02-21 15:14:06
+archive/issue_comments_012368.json:
+```json
+{
+    "body": "This is a new bundle rebased against alpha2.  It also contains one additional patch that fixes two doctest failures (one in elliptic_curve/padic.py and one number field\nideal doctest). \n\nhttp://sage.math.washington.edu/home/was/patches/sage-1946.hg",
+    "created_at": "2008-02-21T15:14:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1946",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1946#issuecomment-12368",
+    "user": "was"
+}
+```
 
 This is a new bundle rebased against alpha2.  It also contains one additional patch that fixes two doctest failures (one in elliptic_curve/padic.py and one number field
 ideal doctest). 
@@ -218,15 +414,37 @@ ideal doctest).
 http://sage.math.washington.edu/home/was/patches/sage-1946.hg
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-21 15:17:45
+archive/issue_comments_012369.json:
+```json
+{
+    "body": "Merged sage-1946.hg in Sage 2.10.2.rc0",
+    "created_at": "2008-02-21T15:17:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1946",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1946#issuecomment-12369",
+    "user": "mabshoff"
+}
+```
 
 Merged sage-1946.hg in Sage 2.10.2.rc0
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-21 15:17:45
+archive/issue_comments_012370.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-02-21T15:17:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1946",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1946#issuecomment-12370",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

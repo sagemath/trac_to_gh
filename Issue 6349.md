@@ -1,11 +1,21 @@
 # Issue 6349: graphs -- bug in DiGraph constructor
 
-Issue created by migration from https://trac.sagemath.org/ticket/6349
-
-Original creator: was
-
-Original creation time: 2009-06-17 22:27:52
-
+archive/issues_006349.json:
+```json
+{
+    "body": "Assignee: rlm\n\n\n```\nsage: DiGraph(matrix(2,[0,0,-1,1]), format=\"incidence_matrix\")\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/Users/wstein/.sage/sage_notebook/worksheets/admin/187/code/29.py\", line 7, in <module>\n    DiGraph(matrix(_sage_const_2 ,[_sage_const_0 ,_sage_const_0 ,-_sage_const_1 ,_sage_const_1 ]), format=\"incidence_matrix\")\n  File \"/Users/wstein/s/local/lib/python2.5/site-packages/Jinja-1.2-py2.5-macosx-10.3-i386.egg/\", line 1, in <module>\n    \n  File \"/Users/wstein/s/local/lib/python2.5/site-packages/sage/graphs/graph.py\", line 9894, in __init__\n    raise ValueError(msg + msg2)\nTypeError: cannot concatenate 'str' and 'exceptions.AssertionError' objects\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6349\n\n",
+    "created_at": "2009-06-17T22:27:52Z",
+    "labels": [
+        "graph theory",
+        "minor",
+        "bug"
+    ],
+    "title": "graphs -- bug in DiGraph constructor",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6349",
+    "user": "was"
+}
+```
 Assignee: rlm
 
 
@@ -24,21 +34,60 @@ TypeError: cannot concatenate 'str' and 'exceptions.AssertionError' objects
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6349
+
+
+
+
 
 ---
+
+archive/issue_comments_050775.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-06-17T22:53:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6349",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6349#issuecomment-50775",
+    "user": "rlm"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by rlm created at 2009-06-17 22:53:57
+archive/issue_comments_050776.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-06-17T22:53:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6349",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6349#issuecomment-50776",
+    "user": "rlm"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by rlm created at 2009-06-24 10:11:53
+archive/issue_comments_050777.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-06-24T10:11:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6349",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6349#issuecomment-50777",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed

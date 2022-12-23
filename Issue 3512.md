@@ -1,11 +1,21 @@
 # Issue 3512: [with spkg, needs review] upgrade to sqlalchemy 0.4.6
 
-Issue created by migration from https://trac.sagemath.org/ticket/3512
-
-Original creator: yi
-
-Original creation time: 2008-06-25 21:51:23
-
+archive/issues_003512.json:
+```json
+{
+    "body": "Assignee: yi\n\nCC:  jvoight\n\nJohn Voight ran into a problem running dsage that is caused by a bug in the version of sqlalchemy (0.4.3) we ship. The latest upstream stable version is 0.4.6. \nAll dsage unit tests pass with the new sqlalchemy installed, and I think dsage is the only package using sqlalchemy currently.\n\nHere is the new spkg:\n\nhttp://sage.math.washington.edu/home/yqiang/spkgs/sqlalchemy-0.4.6.p0.spkg\n\nI commented out copying the documentation since it's readily available online, and I saw very little else in $SAGE_ROOT/local/doc. Feel to uncomment that if need be. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3512\n\n",
+    "created_at": "2008-06-25T21:51:23Z",
+    "labels": [
+        "dsage",
+        "major",
+        "bug"
+    ],
+    "title": "[with spkg, needs review] upgrade to sqlalchemy 0.4.6",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3512",
+    "user": "yi"
+}
+```
 Assignee: yi
 
 CC:  jvoight
@@ -19,10 +29,25 @@ http://sage.math.washington.edu/home/yqiang/spkgs/sqlalchemy-0.4.6.p0.spkg
 
 I commented out copying the documentation since it's readily available online, and I saw very little else in $SAGE_ROOT/local/doc. Feel to uncomment that if need be. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3512
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-06-26 03:10:36
+archive/issue_comments_024740.json:
+```json
+{
+    "body": "Positive review. I added a line to delete old SQLAlchemy installs.\n\nCheers,\n\nMichael",
+    "created_at": "2008-06-26T03:10:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3512",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3512#issuecomment-24740",
+    "user": "mabshoff"
+}
+```
 
 Positive review. I added a line to delete old SQLAlchemy installs.
 
@@ -31,29 +56,73 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-26 03:10:36
+archive/issue_comments_024741.json:
+```json
+{
+    "body": "Changing assignee from yi to mabshoff.",
+    "created_at": "2008-06-26T03:10:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3512",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3512#issuecomment-24741",
+    "user": "mabshoff"
+}
+```
 
 Changing assignee from yi to mabshoff.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-26 03:10:36
+archive/issue_comments_024742.json:
+```json
+{
+    "body": "Changing component from dsage to packages.",
+    "created_at": "2008-06-26T03:10:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3512",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3512#issuecomment-24742",
+    "user": "mabshoff"
+}
+```
 
 Changing component from dsage to packages.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-26 03:10:51
+archive/issue_comments_024743.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-06-26T03:10:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3512",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3512#issuecomment-24743",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-26 03:10:51
+archive/issue_comments_024744.json:
+```json
+{
+    "body": "Merged in Sage 3.0.4.alpha1",
+    "created_at": "2008-06-26T03:10:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3512",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3512#issuecomment-24744",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.4.alpha1

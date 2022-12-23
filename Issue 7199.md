@@ -1,11 +1,21 @@
 # Issue 7199: inefficiency of creation of sparse matrices
 
-Issue created by migration from https://trac.sagemath.org/ticket/7199
-
-Original creator: zimmerma
-
-Original creation time: 2009-10-13 13:32:12
-
+archive/issues_007199.json:
+```json
+{
+    "body": "Assignee: was\n\nThe following was reported to me by David Monniaux.\n\n```\nsparseflag=True\n\ndef essai1():\n    m=identity_matrix(QQ,dimen,sparse=sparseflag)\n    compound=m\n    for i in xrange(count):\n        compound = compound.stack(m)\n\ndef essai2():\n    m_rows=identity_matrix(QQ,dimen,sparse=sparseflag).rows()\n    compound_l=[]\n    for i in xrange(count):\n        compound_l += m_rows\n    m=Matrix(QQ,compound_l,sparse=sparseflag)\n\ndef essai3():\n    m=identity_matrix(QQ,dimen,sparse=sparseflag)\n    compound=Matrix(QQ,m.nrows()*count,m.ncols(),sparse=sparseflag)\n    for i in xrange(count):\n        compound[m.nrows()*i:m.nrows()*(i+1),:] = m\n```\n\nI get with Sage 4.1.1 on a 2.83Ghz Core 2:\n\n```\nsage: count=200\nsage: dimen=30\nsage: timeit('essai1()',number=1)\n1 loops, best of 3: 33.1 s per loop\nsage: timeit('essai2()',number=1)\n1 loops, best of 3: 25.4 s per loop\nsage: timeit('essai3()')\n5 loops, best of 3: 820 ms per loop\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7199\n\n",
+    "created_at": "2009-10-13T13:32:12Z",
+    "labels": [
+        "linear algebra",
+        "major",
+        "enhancement"
+    ],
+    "title": "inefficiency of creation of sparse matrices",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7199",
+    "user": "zimmerma"
+}
+```
 Assignee: was
 
 The following was reported to me by David Monniaux.
@@ -47,10 +57,25 @@ sage: timeit('essai3()')
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7199
+
+
+
+
 
 ---
 
-Comment by zimmerma created at 2009-10-13 17:05:38
+archive/issue_comments_059733.json:
+```json
+{
+    "body": "Another example (still from David Monniaux):\n\n```\nsage: count2=1000\nsage: sparseflag=True\nsage: def vessai1():\n....:         v = vector(QQ,dimen)\n....:     v[0]=1\n....:     compound = Matrix(QQ, [v for i in xrange(count2)], sparse=sparseflag)\n....: \nsage: def vessai2():\n....:         v = vector(QQ,dimen)\n....:     v[0]=1\n....:     compound = Matrix(QQ, count2, dimen, sparse=sparseflag)\n....:     for i in xrange(count2):\n....:             compound[i,:] = v\nsage: dimen=30\nsage: timeit('vessai1()')\n5 loops, best of 3: 168 ms per loop\nsage: timeit('vessai2()')\n25 loops, best of 3: 14.8 ms per loop\n```\n",
+    "created_at": "2009-10-13T17:05:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7199",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7199#issuecomment-59733",
+    "user": "zimmerma"
+}
+```
 
 Another example (still from David Monniaux):
 
@@ -77,49 +102,128 @@ sage: timeit('vessai2()')
 
 
 
+
 ---
 
-Comment by zimmerma created at 2010-02-05 20:34:38
+archive/issue_comments_059734.json:
+```json
+{
+    "body": "still there in 4.3.1. No progress in 4 months!",
+    "created_at": "2010-02-05T20:34:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7199",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7199#issuecomment-59734",
+    "user": "zimmerma"
+}
+```
 
 still there in 4.3.1. No progress in 4 months!
 
 
+
 ---
 
-Comment by robertwb created at 2010-02-05 21:50:33
+archive/issue_comments_059735.json:
+```json
+{
+    "body": "Been busy with other stuff: http://trac.sagemath.org/sage_trac/query?status=closed&status=positive_review&order=priority&milestone=sage-4.3.2&milestone=sage-4.3.1&milestone=sage-4.3&milestone=sage-4.2.1&milestone=sage-4.2",
+    "created_at": "2010-02-05T21:50:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7199",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7199#issuecomment-59735",
+    "user": "robertwb"
+}
+```
 
 Been busy with other stuff: http://trac.sagemath.org/sage_trac/query?status=closed&status=positive_review&order=priority&milestone=sage-4.3.2&milestone=sage-4.3.1&milestone=sage-4.3&milestone=sage-4.2.1&milestone=sage-4.2
 
 
+
 ---
+
+archive/issue_comments_059736.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-08-15T14:57:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7199",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7199#issuecomment-59736",
+    "user": "ylchapuy"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by ylchapuy created at 2010-08-15 14:58:30
+archive/issue_comments_059737.json:
+```json
+{
+    "body": "With the provided patch, `essai1` becomes faster than `essai3`.",
+    "created_at": "2010-08-15T14:58:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7199",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7199#issuecomment-59737",
+    "user": "ylchapuy"
+}
+```
 
 With the provided patch, `essai1` becomes faster than `essai3`.
 
 
+
 ---
 
-Comment by ylchapuy created at 2010-08-15 14:58:30
+archive/issue_comments_059738.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-08-15T14:58:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7199",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7199#issuecomment-59738",
+    "user": "ylchapuy"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by zimmerma created at 2010-09-01 20:27:49
+archive/issue_comments_059739.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-09-01T20:27:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7199",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7199#issuecomment-59739",
+    "user": "zimmerma"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by zimmerma created at 2010-09-01 20:27:49
+archive/issue_comments_059740.json:
+```json
+{
+    "body": "Replying to [comment:4 ylchapuy]:\n> With the provided patch, `essai1` becomes faster than `essai3`.\n\nI confirm, with Sage 4.4.4, still on a 2.83Ghz Core 2 (note however the regression in the timing for `essai3` between 4.1.1 and 4.4.4, which is independent from this patch):\n\n```\nsage: count=200\nsage: dimen=30\nsage: timeit('essai1()')\n5 loops, best of 3: 431 ms per loop\nsage: timeit('essai3()')\n5 loops, best of 3: 1.18 s per loop\n```\n\n\nGood work,Yann!\n\nPaul",
+    "created_at": "2010-09-01T20:27:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7199",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7199#issuecomment-59740",
+    "user": "zimmerma"
+}
+```
 
 Replying to [comment:4 ylchapuy]:
 > With the provided patch, `essai1` becomes faster than `essai3`.
@@ -141,8 +245,19 @@ Good work,Yann!
 Paul
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-15 09:54:36
+archive/issue_comments_059741.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-09-15T09:54:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7199",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7199#issuecomment-59741",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed

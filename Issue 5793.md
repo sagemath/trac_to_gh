@@ -1,11 +1,21 @@
 # Issue 5793: [with patch, needs review] New algorithm for Max Clique in Graph class using Cython
 
-Issue created by migration from https://trac.sagemath.org/ticket/5793
-
-Original creator: ncohen
-
-Original creation time: 2009-04-16 01:00:04
-
+archive/issues_005793.json:
+```json
+{
+    "body": "Assignee: rlm\n\nCC:  rlm\n\nAfter the discussion that has followed the following patch :\nhttp://trac.sagemath.org/sage_trac/ticket/5669\n\nI began to re-write the same functions using Cython. There is now no need of a spkg package, and I hope it will be faster this way (and prettier) ;-)\n\nIssue created by migration from https://trac.sagemath.org/ticket/5793\n\n",
+    "created_at": "2009-04-16T01:00:04Z",
+    "labels": [
+        "graph theory",
+        "minor",
+        "enhancement"
+    ],
+    "title": "[with patch, needs review] New algorithm for Max Clique in Graph class using Cython",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5793",
+    "user": "ncohen"
+}
+```
 Assignee: rlm
 
 CC:  rlm
@@ -15,10 +25,25 @@ http://trac.sagemath.org/sage_trac/ticket/5669
 
 I began to re-write the same functions using Cython. There is now no need of a spkg package, and I hope it will be faster this way (and prettier) ;-)
 
+Issue created by migration from https://trac.sagemath.org/ticket/5793
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2009-04-16 05:47:05
+archive/issue_comments_045365.json:
+```json
+{
+    "body": "Hi,\n\nthe patch as is will not go into Sage since you are putting the sources for cliquer-1.2 into the Sage library tree where they do not belong. \n\nI have not looked at the cython interface, but my guess would be that we need to change cliquer-1.2 to create a library. Please split the cython interface work (the code you wrote minus the cliquer-1.2 source code) and the cliquer-1.2.spkg work. The Cython code should remain here while spkg should go to #5669.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-16T05:47:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45365",
+    "user": "mabshoff"
+}
+```
 
 Hi,
 
@@ -31,41 +56,85 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by ncohen created at 2009-06-18 13:07:41
+archive/issue_comments_045366.json:
+```json
+{
+    "body": "A new patch using the SPKG you can find at :\nhttp://trac.sagemath.org/sage_trac/ticket/6355",
+    "created_at": "2009-06-18T13:07:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45366",
+    "user": "ncohen"
+}
+```
 
 A new patch using the SPKG you can find at :
 http://trac.sagemath.org/sage_trac/ticket/6355
 
 
+
 ---
 
-Comment by rlm created at 2009-06-22 22:35:04
+archive/issue_comments_045367.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2009-06-22T22:35:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45367",
+    "user": "rlm"
+}
+```
 
 Resolution: duplicate
 
 
+
 ---
 
-Comment by rlm created at 2009-06-22 22:35:04
+archive/issue_comments_045368.json:
+```json
+{
+    "body": "Duplication of #6355.",
+    "created_at": "2009-06-22T22:35:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45368",
+    "user": "rlm"
+}
+```
 
 Duplication of #6355.
 
 
+
 ---
 
-Comment by jason created at 2009-07-01 05:40:44
+archive/issue_comments_045369.json:
+```json
+{
+    "body": "To get this going again, here are some specific suggestions for patch 12427.patch and the associated spkg:\n\n* copy the header files to somewhere in $SAGE_LOCAL/include (maybe $SAGE_LOCAL/include/cliquer/*.h\n\n* Make a cliquer.pxd file that declares the necessary functions and structs from the header files.  Make sure that you are only doing cdef externs from the header files, not the .c files like the patch is currently doing.  Don't include the path; just do  `cdef extern from \"cliquer/graph.h\":` since the header is in the include path.  This cliquer.pxd file can go into sage/graphs.\n\n* Make a cliquer.pyx in sage/graphs that contains the definitions of max_clique, all_max_clique, and clique_number.  Document and add doctests to these functions.\n\n* Delete the lines\n\n```\nfrom sage.graphs.graph import Graph \n#from distutils.core import setup \n#from distutils.extension import Extension \nfrom Cython.Distutils import build_ext \n```\n\n\n* In module_list.py, add a `libraries = ['cliquer']` option (see the surrounding declarations for examples of this).\n\n* Compile the cliquer sources into a shared library, named libcliquer.so, using the instructions in the HowTo William posted.  Place this shared library into $SAGE_LOCAL/lib.\n\n* In the graphs.py, I don't think you need to do `from sage.graphs.cliquer import clique_number`.  Since the module will be in that directory, I think it would be sufficient to do `from cliquer import clique_number`.",
+    "created_at": "2009-07-01T05:40:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45369",
+    "user": "jason"
+}
+```
 
 To get this going again, here are some specific suggestions for patch 12427.patch and the associated spkg:
 
-  * copy the header files to somewhere in $SAGE_LOCAL/include (maybe $SAGE_LOCAL/include/cliquer/*.h
+* copy the header files to somewhere in $SAGE_LOCAL/include (maybe $SAGE_LOCAL/include/cliquer/*.h
 
-  * Make a cliquer.pxd file that declares the necessary functions and structs from the header files.  Make sure that you are only doing cdef externs from the header files, not the .c files like the patch is currently doing.  Don't include the path; just do  `cdef extern from "cliquer/graph.h":` since the header is in the include path.  This cliquer.pxd file can go into sage/graphs.
+* Make a cliquer.pxd file that declares the necessary functions and structs from the header files.  Make sure that you are only doing cdef externs from the header files, not the .c files like the patch is currently doing.  Don't include the path; just do  `cdef extern from "cliquer/graph.h":` since the header is in the include path.  This cliquer.pxd file can go into sage/graphs.
 
-  * Make a cliquer.pyx in sage/graphs that contains the definitions of max_clique, all_max_clique, and clique_number.  Document and add doctests to these functions.
+* Make a cliquer.pyx in sage/graphs that contains the definitions of max_clique, all_max_clique, and clique_number.  Document and add doctests to these functions.
 
-  * Delete the lines
+* Delete the lines
 
 ```
 from sage.graphs.graph import Graph 
@@ -75,58 +144,135 @@ from Cython.Distutils import build_ext
 ```
 
 
-  * In module_list.py, add a `libraries = ['cliquer']` option (see the surrounding declarations for examples of this).
+* In module_list.py, add a `libraries = ['cliquer']` option (see the surrounding declarations for examples of this).
 
-  * Compile the cliquer sources into a shared library, named libcliquer.so, using the instructions in the HowTo William posted.  Place this shared library into $SAGE_LOCAL/lib.
+* Compile the cliquer sources into a shared library, named libcliquer.so, using the instructions in the HowTo William posted.  Place this shared library into $SAGE_LOCAL/lib.
 
-  * In the graphs.py, I don't think you need to do `from sage.graphs.cliquer import clique_number`.  Since the module will be in that directory, I think it would be sufficient to do `from cliquer import clique_number`.
+* In the graphs.py, I don't think you need to do `from sage.graphs.cliquer import clique_number`.  Since the module will be in that directory, I think it would be sufficient to do `from cliquer import clique_number`.
+
 
 
 ---
 
-Comment by jason created at 2009-07-01 05:45:26
+archive/issue_comments_045370.json:
+```json
+{
+    "body": "Changing status from closed to reopened.",
+    "created_at": "2009-07-01T05:45:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45370",
+    "user": "jason"
+}
+```
 
 Changing status from closed to reopened.
 
 
+
 ---
 
-Comment by jason created at 2009-07-01 05:45:26
+archive/issue_comments_045371.json:
+```json
+{
+    "body": "rlm: this ticket has what looks like the most current patch, whereas #6355 does not have a patch.  I'm reopening this ticket so that the \"active\" patch is not closed (but I am not opposed to moving this patch to #6355 to consolidate things!).  I feel a bit silly commenting on a patch here when the ticket is closed, but the patch clearly has not been moved/merged/etc.",
+    "created_at": "2009-07-01T05:45:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45371",
+    "user": "jason"
+}
+```
 
 rlm: this ticket has what looks like the most current patch, whereas #6355 does not have a patch.  I'm reopening this ticket so that the "active" patch is not closed (but I am not opposed to moving this patch to #6355 to consolidate things!).  I feel a bit silly commenting on a patch here when the ticket is closed, but the patch clearly has not been moved/merged/etc.
 
 
+
 ---
 
-Comment by jason created at 2009-07-01 05:45:26
+archive/issue_comments_045372.json:
+```json
+{
+    "body": "Resolution changed from duplicate to ",
+    "created_at": "2009-07-01T05:45:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45372",
+    "user": "jason"
+}
+```
 
 Resolution changed from duplicate to 
 
 
+
 ---
 
-Comment by jason created at 2009-07-01 05:50:44
+archive/issue_comments_045373.json:
+```json
+{
+    "body": "Suggestions 1 and 6 in my comment above apply to the spkg, not the patch.",
+    "created_at": "2009-07-01T05:50:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45373",
+    "user": "jason"
+}
+```
 
 Suggestions 1 and 6 in my comment above apply to the spkg, not the patch.
 
 
+
 ---
 
-Comment by robertwb created at 2009-07-01 06:01:41
+archive/issue_comments_045374.json:
+```json
+{
+    "body": "Whence the \"../../../../local/lib/cliquer-1.2/cliquer.h\" if there's no spkg. Also, I belive local/include is in the include path, so no need to have this long path. (And include files belong in local/include, not local/lib.) I would probably drop the 1.2 suffix so we don't have to update the link paths every time the version gets bumped.",
+    "created_at": "2009-07-01T06:01:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45374",
+    "user": "robertwb"
+}
+```
 
 Whence the "../../../../local/lib/cliquer-1.2/cliquer.h" if there's no spkg. Also, I belive local/include is in the include path, so no need to have this long path. (And include files belong in local/include, not local/lib.) I would probably drop the 1.2 suffix so we don't have to update the link paths every time the version gets bumped.
 
 
+
 ---
 
-Comment by jason created at 2009-07-01 06:47:44
+archive/issue_comments_045375.json:
+```json
+{
+    "body": "that's what I meant by point 2 (just do `cdef extern from \"cliquer/graph.h\"`) and point 1 (put the headers in $SAGE_LOCAL/include/cliquer/*.h)",
+    "created_at": "2009-07-01T06:47:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45375",
+    "user": "jason"
+}
+```
 
 that's what I meant by point 2 (just do `cdef extern from "cliquer/graph.h"`) and point 1 (put the headers in $SAGE_LOCAL/include/cliquer/*.h)
 
 
+
 ---
 
-Comment by ncohen created at 2009-07-07 13:14:48
+archive/issue_comments_045376.json:
+```json
+{
+    "body": "Here is a new patch ( number 12428 ) using a shared library !!! I hope you will appreciate it as it took me some time to figure out the inner behavior of Sage ;-)\n\nThe new spkg is available on http://trac.sagemath.org/sage_trac/ticket/6355\n\nNathann",
+    "created_at": "2009-07-07T13:14:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45376",
+    "user": "ncohen"
+}
+```
 
 Here is a new patch ( number 12428 ) using a shared library !!! I hope you will appreciate it as it took me some time to figure out the inner behavior of Sage ;-)
 
@@ -135,39 +281,96 @@ The new spkg is available on http://trac.sagemath.org/sage_trac/ticket/6355
 Nathann
 
 
+
 ---
 
-Comment by ncohen created at 2009-07-17 19:01:59
+archive/issue_comments_045377.json:
+```json
+{
+    "body": "My version is working, but I am a bit lost with all the patches... How can I produce a patch containing all the modifications I made since the begining ( since I cloned the original branch, actually ) ?\n\nThanks !!!",
+    "created_at": "2009-07-17T19:01:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45377",
+    "user": "ncohen"
+}
+```
 
 My version is working, but I am a bit lost with all the patches... How can I produce a patch containing all the modifications I made since the begining ( since I cloned the original branch, actually ) ?
 
 Thanks !!!
 
 
+
 ---
 
-Comment by rlm created at 2009-07-17 19:05:30
+archive/issue_comments_045378.json:
+```json
+{
+    "body": "One option is to clone the branch using `hg_sage.clone`, but to give it the revision number corresponding to the last patch not part of your changes (the base). Then you can copy the affected files over, and it is as if you have done all the work, but you have not checked anything in.",
+    "created_at": "2009-07-17T19:05:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45378",
+    "user": "rlm"
+}
+```
 
 One option is to clone the branch using `hg_sage.clone`, but to give it the revision number corresponding to the last patch not part of your changes (the base). Then you can copy the affected files over, and it is as if you have done all the work, but you have not checked anything in.
 
 
+
 ---
 
-Comment by ncohen created at 2009-07-17 19:26:05
+archive/issue_comments_045379.json:
+```json
+{
+    "body": "New patch \"cliquer.patch\" containing all the modifications for cliquer since the beginning. And with the good directory's name ;-)",
+    "created_at": "2009-07-17T19:26:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45379",
+    "user": "ncohen"
+}
+```
 
 New patch "cliquer.patch" containing all the modifications for cliquer since the beginning. And with the good directory's name ;-)
 
 
+
 ---
+
+archive/issue_comments_045380.json:
+```json
+{
+    "body": "Attachment\n\nCliquer, from the beginning to the end, with the good directory's name !",
+    "created_at": "2009-07-17T19:26:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45380",
+    "user": "ncohen"
+}
+```
 
 Attachment
 
 Cliquer, from the beginning to the end, with the good directory's name !
 
 
+
 ---
 
-Comment by rlm created at 2009-07-18 17:48:51
+archive/issue_comments_045381.json:
+```json
+{
+    "body": "Nathann,\n\nI have deleted the previous patches to avoid confusion.\n\nWhen addressing the following issues, please post another patch to be applied on top of the first (this makes review easier).\n\n1. `algorithm=='networkx'` is never tested, and if it were, it would fail, due to the `cliques` parameter\n\n2. Why are you using `cliquer.pxi` instead of `cliquer.pxd`? If it were `pxd` instead, then other Cython files could `cimport` the same data types.\n\n3. It should go:\n\n```\nif algorithm=='networkx':\n    ...\nelif algorithm=='cliquer':\n    ...\nelse:\n    raise NotImplementedError(\"Only 'networkx' and 'cliquer' are supported.\")\n```\n\nAlso you need to change one instance of `'Cliquer'` to `'cliquer'`.\n\n4. In maximum_cliques, \"vertex set\" should be \"vertex sets\"",
+    "created_at": "2009-07-18T17:48:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45381",
+    "user": "rlm"
+}
+```
 
 Nathann,
 
@@ -195,9 +398,20 @@ Also you need to change one instance of `'Cliquer'` to `'cliquer'`.
 4. In maximum_cliques, "vertex set" should be "vertex sets"
 
 
+
 ---
 
-Comment by ncohen created at 2009-07-19 19:24:59
+archive/issue_comments_045382.json:
+```json
+{
+    "body": "I hope all is fixed now... Though I just renamed cliquer.pxi to cliquer.pxd without really understanding the difference ^^;\n\nBy the way, I am not really sure this possibility to change the algorithm used to compute the cliquer number is that useful... Just take a look at this :\n\nsage: g=graphs.RandomGNP(100,.5)\nsage: time g.clique_number(algorithm=\"networkx\")\nCPU times: user 2.49 s, sys: 0.00 s, total: 2.49 s\nWall time: 2.49 s\n9\nsage: time g.clique_number()\nCPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.01 s\n9\nsage: g=graphs.RandomGNP(150,.5)\nsage: time g.clique_number(algorithm=\"networkx\")\nCPU times: user 18.45 s, sys: 0.04 s, total: 18.49 s\nWall time: 18.49 s\n10\nsage: time g.clique_number()\nCPU times: user 0.03 s, sys: 0.00 s, total: 0.03 s\nWall time: 0.03 s\n10\nsage: g=graphs.RandomGNP(200,.5)\nsage: time g.clique_number(algorithm=\"networkx\")\nCPU times: user 82.33 s, sys: 0.18 s, total: 82.52 s\nWall time: 82.54 s\n11\nsage: time g.clique_number()\nCPU times: user 0.07 s, sys: 0.00 s, total: 0.07 s\nWall time: 0.07 s\n11\n\nAnyway, from the practical point of view, it works now ;-)\n\nNathann",
+    "created_at": "2009-07-19T19:24:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45382",
+    "user": "ncohen"
+}
+```
 
 I hope all is fixed now... Though I just renamed cliquer.pxi to cliquer.pxd without really understanding the difference ^^;
 
@@ -236,21 +450,56 @@ Anyway, from the practical point of view, it works now ;-)
 Nathann
 
 
+
 ---
 
-Comment by ncohen created at 2009-07-19 19:28:42
+archive/issue_comments_045383.json:
+```json
+{
+    "body": "Second patch",
+    "created_at": "2009-07-19T19:28:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45383",
+    "user": "ncohen"
+}
+```
 
 Second patch
 
 
+
 ---
+
+archive/issue_comments_045384.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-07-20T11:24:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45384",
+    "user": "ncohen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by rlm created at 2009-07-20 15:17:59
+archive/issue_comments_045385.json:
+```json
+{
+    "body": "Replying to [comment:15 ncohen]:\n> By the way, I am not really sure this possibility to change the algorithm used to compute the cliquer number is that useful...\n\nThere are plenty of reasons to have two different implementations, and one I can think of right off the top of my head is to compare results for correctness.\n\n1. You have removed the input \"cliques,\" which is used by NetworkX. You need to put this back in, and mention that it is ignored unless the algorithm is \"networkx.\"\n\n2. The `include '../ext/cliquer.pxd'` line at the beginning of cliquer.pyx is not necessary. \"include\" is a plain text include, and `pxd` files are forward declarations, which get automatically included by Cython as long as the other part of the filename is the same.\n\n3. One thing I should have mentioned last round: the three functions introduced in cliquer.pyx need to be documented, including some nontrivial doctests.\n\nAfter all this is done, we should be very close to finished!",
+    "created_at": "2009-07-20T15:17:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45385",
+    "user": "rlm"
+}
+```
 
 Replying to [comment:15 ncohen]:
 > By the way, I am not really sure this possibility to change the algorithm used to compute the cliquer number is that useful...
@@ -266,9 +515,20 @@ There are plenty of reasons to have two different implementations, and one I can
 After all this is done, we should be very close to finished!
 
 
+
 ---
 
-Comment by ncohen created at 2009-07-20 18:04:29
+archive/issue_comments_045386.json:
+```json
+{
+    "body": "Hmmmmmm.... There is a perhaps-not-so-small problem :\n\nG = Graph({0:[1,2,3], 1:[2], 3:[0,1]})\nG.maximum_clique()\n2\n\nWhen it is obviously 3...\n\nWhat do we do in this situation ? ^^;",
+    "created_at": "2009-07-20T18:04:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45386",
+    "user": "ncohen"
+}
+```
 
 Hmmmmmm.... There is a perhaps-not-so-small problem :
 
@@ -281,9 +541,20 @@ When it is obviously 3...
 What do we do in this situation ? ^^;
 
 
+
 ---
 
-Comment by rlm created at 2009-07-20 18:20:55
+archive/issue_comments_045387.json:
+```json
+{
+    "body": "Replying to [comment:18 ncohen]:\n> What do we do in this situation ? ^^;\n\nWe debug! I'm looking into this now, but I'm not sure what I'll be able to find out...\n\n4. Another thing is that `cliquer.pxd` needs to be in the same directory as `cliquer.pyx`.",
+    "created_at": "2009-07-20T18:20:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45387",
+    "user": "rlm"
+}
+```
 
 Replying to [comment:18 ncohen]:
 > What do we do in this situation ? ^^;
@@ -293,9 +564,20 @@ We debug! I'm looking into this now, but I'm not sure what I'll be able to find 
 4. Another thing is that `cliquer.pxd` needs to be in the same directory as `cliquer.pyx`.
 
 
+
 ---
 
-Comment by ncohen created at 2009-07-20 18:23:02
+archive/issue_comments_045388.json:
+```json
+{
+    "body": "it does not come from cliquer itself, which is a relief. I ran cliquer on the command lineand on this file :\np edges 4 5\ne 1 2\ne 1 3\ne 1 4\ne 2 3\ne 2 4\n\n~/cliquer-1.2$ ./cl example \nReading graph from example...OK\nSearching for a single maximum weight clique...\n  2/4 (max  2)  0.00 s  (0.00 s/round)\n  3/4 (max  3)  0.00 s  (0.00 s/round)\n  4/4 (max  3)  0.00 s  (0.00 s/round)\nsize=3, weight=3:   1 2 4\n~/cliquer-1.2$",
+    "created_at": "2009-07-20T18:23:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45388",
+    "user": "ncohen"
+}
+```
 
 it does not come from cliquer itself, which is a relief. I ran cliquer on the command lineand on this file :
 p edges 4 5
@@ -315,9 +597,20 @@ size=3, weight=3:   1 2 4
 ~/cliquer-1.2$
 
 
+
 ---
 
-Comment by ncohen created at 2009-07-20 18:26:22
+archive/issue_comments_045389.json:
+```json
+{
+    "body": "It works when I replace : \n\nbuf=' e %d %d' %(u,v)\n\nby\n\nbuf=' e %d %d' %(u+1,v+1)\n\nin cliquer.pyx. I thought it may come from the difference between 0....n-1 and 1...n and it seems correct. I am running other tests with NetworkX to check.",
+    "created_at": "2009-07-20T18:26:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45389",
+    "user": "ncohen"
+}
+```
 
 It works when I replace : 
 
@@ -330,16 +623,40 @@ buf=' e %d %d' %(u+1,v+1)
 in cliquer.pyx. I thought it may come from the difference between 0....n-1 and 1...n and it seems correct. I am running other tests with NetworkX to check.
 
 
+
 ---
+
+archive/issue_comments_045390.json:
+```json
+{
+    "body": "Attachment\n\nDO NOT APPLY!",
+    "created_at": "2009-07-20T18:26:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45390",
+    "user": "rlm"
+}
+```
 
 Attachment
 
 DO NOT APPLY!
 
 
+
 ---
 
-Comment by rlm created at 2009-07-20 18:28:21
+archive/issue_comments_045391.json:
+```json
+{
+    "body": "It seems as if Cliquer is subtracting one from each vertex in the input, and so the input needs to have one added to it. To see this, apply `trac_5793_debug_only.patch`, and you get:\n\n\n```\nsage: G = Graph({0:[1,2,3], 1:[2], 3:[0,1]}); G.maximum_clique()\n(0, 1, None)\n e 0 1\nUnweighted graph has 4 vertices, 0 edges (density 0.00).\n 0 ->\n 1 ->\n 2 ->\n 3 ->\n(0, 2, None)\n e 0 2\nUnweighted graph has 4 vertices, 0 edges (density 0.00).\n 0 ->\n 1 ->\n 2 ->\n 3 ->\n(0, 3, None)\n e 0 3\nUnweighted graph has 4 vertices, 0 edges (density 0.00).\n 0 ->\n 1 ->\n 2 ->\n 3 ->\n(1, 2, None)\n e 1 2\nUnweighted graph has 4 vertices, 1 edges (density 0.17).\n 0 -> 1\n 1 -> 0\n 2 ->\n 3 ->\n(1, 3, None)\n e 1 3\nUnweighted graph has 4 vertices, 2 edges (density 0.33).\n 0 -> 1 2\n 1 -> 0\n 2 -> 0\n 3 ->\n[0, 2]\n```\n\n\nYou should probably also expose at least this `print_graph` function in the official versions.",
+    "created_at": "2009-07-20T18:28:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45391",
+    "user": "rlm"
+}
+```
 
 It seems as if Cliquer is subtracting one from each vertex in the input, and so the input needs to have one added to it. To see this, apply `trac_5793_debug_only.patch`, and you get:
 
@@ -388,28 +705,74 @@ Unweighted graph has 4 vertices, 2 edges (density 0.33).
 You should probably also expose at least this `print_graph` function in the official versions.
 
 
+
 ---
 
-Comment by rlm created at 2009-07-20 18:29:13
+archive/issue_comments_045392.json:
+```json
+{
+    "body": "Oops, looks like we were duplicating effort! But I'll be online for a while, so this might get positively reviewed today!",
+    "created_at": "2009-07-20T18:29:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45392",
+    "user": "rlm"
+}
+```
 
 Oops, looks like we were duplicating effort! But I'll be online for a while, so this might get positively reviewed today!
 
 
+
 ---
 
-Comment by ncohen created at 2009-07-20 18:39:17
+archive/issue_comments_045393.json:
+```json
+{
+    "body": "New patch !!",
+    "created_at": "2009-07-20T18:39:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45393",
+    "user": "ncohen"
+}
+```
 
 New patch !!
 
 
+
 ---
+
+archive/issue_comments_045394.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-07-20T18:39:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45394",
+    "user": "ncohen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by rlm created at 2009-07-20 18:56:41
+archive/issue_comments_045395.json:
+```json
+{
+    "body": "OK, I have a few more requests:\n\n1. I think you should expose Cliquer's `graph_print` function in `cliquer.pxd`, so other people see it when they try to play around with the interface.\n\n2. In general, doctests should be indented, so e.g.\n\n```\nEXAMPLES:: \n\nsage: C=graphs.PetersenGraph() \nsage: max_clique(C) \n[7, 9] \n\"\"\" \n```\n\nshould be\n\n```\nEXAMPLES:: \n\n    sage: C=graphs.PetersenGraph() \n    sage: max_clique(C) \n    [7, 9] \n\n\"\"\" \n```\n\n\n3. In fact, you should probably check out\n\nhttp://www.sagemath.org/doc/developer/conventions.html\n\nFor example, the following belongs in an `INPUT:` block, and would look much more professional there:\n\n\n```\nThe parameter 'cliques' is an optional list of cliques that can be input if already computed. \nONLY USED BY NetworkX !!!\n```\n\n\n4. There are several functions in `graph.py` which compute with cliques, which haven't been exposed to this new interface. For example, `G.cliques()`. It would be nice to take care of those functions now too, so people don't unnecessarily complain about these functions being slow later. They are all in the same part of the file, which starts with `### Cliques`.",
+    "created_at": "2009-07-20T18:56:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45395",
+    "user": "rlm"
+}
+```
 
 OK, I have a few more requests:
 
@@ -455,9 +818,20 @@ ONLY USED BY NetworkX !!!
 4. There are several functions in `graph.py` which compute with cliques, which haven't been exposed to this new interface. For example, `G.cliques()`. It would be nice to take care of those functions now too, so people don't unnecessarily complain about these functions being slow later. They are all in the same part of the file, which starts with `### Cliques`.
 
 
+
 ---
 
-Comment by rlm created at 2009-07-20 19:21:04
+archive/issue_comments_045396.json:
+```json
+{
+    "body": "5. There is one other thing to be aware of. You are assuming that the vertex set is *always* {0,...,n-1}. In fact, this will cause some trouble:\n\n```\nsage: C = graphs.CubeGraph(4)\nsage: C.maximum_clique()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n...\nTypeError: cannot concatenate 'str' and 'int' objects\nsage: C.vertices()[0]\n'0000'\n```\n\n\nHere is the idea to get around this, since this problem has come up many times before:\n\n```\nsage: C = graphs.CubeGraph(4)\nsage: G,d = C.relabel(inplace=False, return_map=True)\nsage: d_inv = {}\nsage: for v in d:\n....:     d_inv[d[v]] = v\n....:     \nsage: C.vertices()\n\n['0000',\n '0001',\n '0010',\n '0011',\n '0100',\n '0101',\n '0110',\n '0111',\n '1000',\n '1001',\n '1010',\n '1011',\n '1100',\n '1101',\n '1110',\n '1111']\nsage: G.vertices()\n[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]\nsage: d\n\n{'0000': 0,\n '0001': 1,\n '0010': 2,\n '0011': 3,\n '0100': 4,\n '0101': 5,\n '0110': 6,\n '0111': 7,\n '1000': 8,\n '1001': 9,\n '1010': 10,\n '1011': 11,\n '1100': 12,\n '1101': 13,\n '1110': 14,\n '1111': 15}\nsage: d_inv\n\n{0: '0000',\n 1: '0001',\n 2: '0010',\n 3: '0011',\n 4: '0100',\n 5: '0101',\n 6: '0110',\n 7: '0111',\n 8: '1000',\n 9: '1001',\n 10: '1010',\n 11: '1011',\n 12: '1100',\n 13: '1101',\n 14: '1110',\n 15: '1111'}\n```\n",
+    "created_at": "2009-07-20T19:21:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45396",
+    "user": "rlm"
+}
+```
 
 5. There is one other thing to be aware of. You are assuming that the vertex set is *always* {0,...,n-1}. In fact, this will cause some trouble:
 
@@ -542,9 +916,20 @@ sage: d_inv
 
 
 
+
 ---
 
-Comment by ncohen created at 2009-07-21 08:15:57
+archive/issue_comments_045397.json:
+```json
+{
+    "body": "Patch number 4 :\n- Cliquer now deals with graphs with vertex labels not in 0..n-1\n- Some functions of Graph could use cliquer and now can. ( some functions dealing with MAXIMAL cliques instead of MAXIMUM cliques can not use cliquer, though ! )\n- Some documentations have been rearranged\n- Cliquer's graph_print function is added to cliquer.pxd if needed",
+    "created_at": "2009-07-21T08:15:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45397",
+    "user": "ncohen"
+}
+```
 
 Patch number 4 :
 - Cliquer now deals with graphs with vertex labels not in 0..n-1
@@ -553,23 +938,58 @@ Patch number 4 :
 - Cliquer's graph_print function is added to cliquer.pxd if needed
 
 
+
 ---
+
+archive/issue_comments_045398.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-07-21T08:16:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45398",
+    "user": "ncohen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by rlm created at 2009-07-21 14:26:25
+archive/issue_comments_045399.json:
+```json
+{
+    "body": "OK, you've done a ton of work on this. There are a few minor details left, but I will take care of them myself, and post a referee patch. This ticket should be ready today.\n\nPS -- A maximum clique is just a clique of maximal size, so those functions are also applicable to Cliquer, but I'll update those myself. :)",
+    "created_at": "2009-07-21T14:26:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45399",
+    "user": "rlm"
+}
+```
 
 OK, you've done a ton of work on this. There are a few minor details left, but I will take care of them myself, and post a referee patch. This ticket should be ready today.
 
 PS -- A maximum clique is just a clique of maximal size, so those functions are also applicable to Cliquer, but I'll update those myself. :)
 
 
+
 ---
 
-Comment by ncohen created at 2009-07-21 14:36:47
+archive/issue_comments_045400.json:
+```json
+{
+    "body": "Thank you very much !! ;-)\n\nConcerning the cliques, I agree when you say that a \"A maximum clique is just a clique of maximal size\", but a \"maximal clique\" is a clique such that there is no bigger clique in the graph -- according to the subset inclusion order (all the maximal cliques of a graph need not have the same cardinality) -- and this I what I thought I had read in the descriptions of the others functions.\n\nAnd.... now that this seems to be finished, I only have left to take care of the LP/MIP patch, which seems quite another adventure... ;-) \n\nThanks again !",
+    "created_at": "2009-07-21T14:36:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45400",
+    "user": "ncohen"
+}
+```
 
 Thank you very much !! ;-)
 
@@ -580,14 +1000,38 @@ And.... now that this seems to be finished, I only have left to take care of the
 Thanks again !
 
 
+
 ---
+
+archive/issue_comments_045401.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-07-21T17:18:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45401",
+    "user": "rlm"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by rlm created at 2009-07-21 18:04:16
+archive/issue_comments_045402.json:
+```json
+{
+    "body": "Replying to [comment:29 ncohen]:\n> Concerning the cliques, I agree when you say that a \"A maximum clique is just a clique of maximal size\", but a \"maximal clique\" is a clique such that there is no bigger clique in the graph -- according to the subset inclusion order (all the maximal cliques of a graph need not have the same cardinality) -- and this I what I thought I had read in the descriptions of the others functions.\n\nI had realized this some time after writing that comment. Please forgive me.",
+    "created_at": "2009-07-21T18:04:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45402",
+    "user": "rlm"
+}
+```
 
 Replying to [comment:29 ncohen]:
 > Concerning the cliques, I agree when you say that a "A maximum clique is just a clique of maximal size", but a "maximal clique" is a clique such that there is no bigger clique in the graph -- according to the subset inclusion order (all the maximal cliques of a graph need not have the same cardinality) -- and this I what I thought I had read in the descriptions of the others functions.
@@ -595,23 +1039,58 @@ Replying to [comment:29 ncohen]:
 I had realized this some time after writing that comment. Please forgive me.
 
 
+
 ---
 
-Comment by rlm created at 2009-07-21 18:56:33
+archive/issue_comments_045403.json:
+```json
+{
+    "body": "Editing.",
+    "created_at": "2009-07-21T18:56:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45403",
+    "user": "rlm"
+}
+```
 
 Editing.
 
 
+
 ---
+
+archive/issue_comments_045404.json:
+```json
+{
+    "body": "Attachment\n\nFlattened patch based on sage-4.1.",
+    "created_at": "2009-07-21T18:57:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45404",
+    "user": "rlm"
+}
+```
 
 Attachment
 
 Flattened patch based on sage-4.1.
 
 
+
 ---
 
-Comment by rlm created at 2009-07-21 19:03:15
+archive/issue_comments_045405.json:
+```json
+{
+    "body": "In the last patch:\n\n1. I made all clique related functions start with `clique_` so that you can do `G.clique<tab>` and see all of them.\n\n2. Added a few doctests here and there\n\n3. Deprecated cliques, since it is ambiguous.",
+    "created_at": "2009-07-21T19:03:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45405",
+    "user": "rlm"
+}
+```
 
 In the last patch:
 
@@ -622,9 +1101,20 @@ In the last patch:
 3. Deprecated cliques, since it is ambiguous.
 
 
+
 ---
 
-Comment by mvngu created at 2009-07-23 04:32:09
+archive/issue_comments_045406.json:
+```json
+{
+    "body": "With the SPKG at #6355 and the patch on this ticket, I got the following doctest failures:\n\n```\nsage -t -long devel/sage-main/sage/groups/perm_gps/partn_ref/refinement_graphs.pyx\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1.alpha0/devel/sage-main/sage/groups/perm_gps/partn_ref/refinement_graphs.pyx\", line 318:\n    sage: clqs = (HS.complement()).cliques()\nExpected nothing\nGot:\n    doctest:1: DeprecationWarning: The function 'cliques' has been deprecated. Use 'cliques_maximal' or 'cliques_maximum'.\n**********************************************************************\n1 items had failures:\n   1 of  89 in __main__.example_2\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1.alpha0/tmp/.doctest_refinement_graphs.py\n\t [231.6 s]\n\n<SNIP>\n\nsage -t -long devel/sage-main/sage/graphs/graph_coloring.py\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1.alpha0/devel/sage-main/sage/graphs/graph_coloring.py\", line 208:\n    sage: chromatic_number(G)\nExpected:\n    3\nGot:\n    doctest:224: DeprecationWarning: The function 'cliques' has been deprecated. Use 'cliques_maximal' or 'cliques_maximum'.\n    3\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_5\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1.alpha0/tmp/.doctest_graph_coloring.py\n\t [2.3 s]\n```\n",
+    "created_at": "2009-07-23T04:32:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45406",
+    "user": "mvngu"
+}
+```
 
 With the SPKG at #6355 and the patch on this ticket, I got the following doctest failures:
 
@@ -664,16 +1154,38 @@ For whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1.alpha0/tmp
 
 
 
+
 ---
 
-Comment by rlm created at 2009-07-23 16:55:43
+archive/issue_comments_045407.json:
+```json
+{
+    "body": "Note: making the `refinement_graphs` doctest use Cliquer instead of NetworkX shaves about 21 seconds from the doctest time for the file!",
+    "created_at": "2009-07-23T16:55:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45407",
+    "user": "rlm"
+}
+```
 
 Note: making the `refinement_graphs` doctest use Cliquer instead of NetworkX shaves about 21 seconds from the doctest time for the file!
 
 
+
 ---
 
-Comment by ncohen created at 2009-07-23 17:31:22
+archive/issue_comments_045408.json:
+```json
+{
+    "body": "I do not really know how to read patch files, but it seems to me you replaced :\nm = max([len(c) for c in G.cliques()]) \nby\nm = max([len(c) for c in G.cliques_maximum()]) \n\nIf right, I have two remarks :\n- The syntax of max([len(c) for c in G.cliques()])  makes me think that G.cliques() was meant to return the list of the maximAL cliques, and m is then meant to be the clique number of G. The expression max([len(c) for c in G.cliques_maximum()])  is syntaxically correct, thought as cliques_maximum returns only the maxiMUM cliques we may as well return the length of the first one as they all have the same size.\n- In the end, and if I make no mistake, why about just setting m=G.clique_number() ?\n\nI expect it to be way faster than an enumeration of all the cliques ! ;-)",
+    "created_at": "2009-07-23T17:31:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45408",
+    "user": "ncohen"
+}
+```
 
 I do not really know how to read patch files, but it seems to me you replaced :
 m = max([len(c) for c in G.cliques()]) 
@@ -687,14 +1199,38 @@ If right, I have two remarks :
 I expect it to be way faster than an enumeration of all the cliques ! ;-)
 
 
+
 ---
 
-Comment by rlm created at 2009-07-23 17:37:19
+archive/issue_comments_045409.json:
+```json
+{
+    "body": "Apply on top of flattened patch",
+    "created_at": "2009-07-23T17:37:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45409",
+    "user": "rlm"
+}
+```
 
 Apply on top of flattened patch
 
 
+
 ---
+
+archive/issue_comments_045410.json:
+```json
+{
+    "body": "Attachment\n\nNathann,\n\nThanks for spotting that. The patch is updated!",
+    "created_at": "2009-07-23T17:37:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45410",
+    "user": "rlm"
+}
+```
 
 Attachment
 
@@ -703,19 +1239,41 @@ Nathann,
 Thanks for spotting that. The patch is updated!
 
 
+
 ---
 
-Comment by mvngu created at 2009-07-31 17:50:10
+archive/issue_comments_045411.json:
+```json
+{
+    "body": "I applied patches in the following order:\n1. the SPKG at #6355\n2. `trac_5793-cliquer-flattened.patch`\n3. `trac_5793-part-6.patch`\nAll doctests passed with Sage 4.1.1.rc0. So positive review.",
+    "created_at": "2009-07-31T17:50:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45411",
+    "user": "mvngu"
+}
+```
 
 I applied patches in the following order:
- 1. the SPKG at #6355
- 1. `trac_5793-cliquer-flattened.patch`
- 1. `trac_5793-part-6.patch`
+1. the SPKG at #6355
+2. `trac_5793-cliquer-flattened.patch`
+3. `trac_5793-part-6.patch`
 All doctests passed with Sage 4.1.1.rc0. So positive review.
 
 
+
 ---
 
-Comment by mvngu created at 2009-07-31 23:32:09
+archive/issue_comments_045412.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-07-31T23:32:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5793",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5793#issuecomment-45412",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

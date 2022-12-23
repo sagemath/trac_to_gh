@@ -1,11 +1,21 @@
 # Issue 4650: matrix_modn_sparse needs cleanup
 
-Issue created by migration from https://trac.sagemath.org/ticket/4650
-
-Original creator: boothby
-
-Original creation time: 2008-11-29 02:35:02
-
+archive/issues_004650.json:
+```json
+{
+    "body": "Assignee: boothby\n\nKeywords: sparse\n\nmatrix_modn_sparse needs some housecleaning.  One gem, in particular:\n\n\n```\n    cdef Py_ssize_t i, j, k\n    k = 0\n    for i from 0 <= i < self._nrows:\n        for j from 0 <= j < self.rows[i].num_nonzero:\n            k+=1\n    return QQ(k)/QQ(self.nrows()*self.ncols()) \n```\n\n\nalso, it could use some fast nonzero_positions, getitem, etc. methods\n\nIssue created by migration from https://trac.sagemath.org/ticket/4650\n\n",
+    "created_at": "2008-11-29T02:35:02Z",
+    "labels": [
+        "linear algebra",
+        "minor",
+        "bug"
+    ],
+    "title": "matrix_modn_sparse needs cleanup",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4650",
+    "user": "boothby"
+}
+```
 Assignee: boothby
 
 Keywords: sparse
@@ -25,15 +35,43 @@ matrix_modn_sparse needs some housecleaning.  One gem, in particular:
 
 also, it could use some fast nonzero_positions, getitem, etc. methods
 
+Issue created by migration from https://trac.sagemath.org/ticket/4650
+
+
+
+
 
 ---
 
-Comment by craigcitro created at 2009-01-15 23:08:14
+archive/issue_comments_034998.json:
+```json
+{
+    "body": "Changing assignee from boothby to craigcitro.",
+    "created_at": "2009-01-15T23:08:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4650#issuecomment-34998",
+    "user": "craigcitro"
+}
+```
 
 Changing assignee from boothby to craigcitro.
 
 
+
 ---
+
+archive/issue_comments_034999.json:
+```json
+{
+    "body": "Attachment\n\nI agree, this file needs a lot of cleanup.\n\nI fixed the one example Tom mentioned above ... lots more needs to be done, but I thought it would be good to close this and open a new series of specific tickets (most of which will probably get handled at SD12 in San Diego).",
+    "created_at": "2009-01-15T23:08:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4650#issuecomment-34999",
+    "user": "craigcitro"
+}
+```
 
 Attachment
 
@@ -42,16 +80,38 @@ I agree, this file needs a lot of cleanup.
 I fixed the one example Tom mentioned above ... lots more needs to be done, but I thought it would be good to close this and open a new series of specific tickets (most of which will probably get handled at SD12 in San Diego).
 
 
+
 ---
 
-Comment by craigcitro created at 2009-01-15 23:08:14
+archive/issue_comments_035000.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-01-15T23:08:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4650#issuecomment-35000",
+    "user": "craigcitro"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-18 04:50:29
+archive/issue_comments_035001.json:
+```json
+{
+    "body": "Positive review. I change the summary to properly reflect what you fixed.\n\nAs you pointed out followup should happen via individual tickets.\n\nCheers,\n\nMichael",
+    "created_at": "2009-01-18T04:50:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4650#issuecomment-35001",
+    "user": "mabshoff"
+}
+```
 
 Positive review. I change the summary to properly reflect what you fixed.
 
@@ -62,15 +122,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-18 04:50:41
+archive/issue_comments_035002.json:
+```json
+{
+    "body": "Merged in Sage 3.3.alpha0",
+    "created_at": "2009-01-18T04:50:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4650#issuecomment-35002",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.3.alpha0
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-18 04:50:41
+archive/issue_comments_035003.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-01-18T04:50:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4650#issuecomment-35003",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

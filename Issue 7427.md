@@ -1,11 +1,21 @@
 # Issue 7427: angle "wheel" widget for interacts
 
-Issue created by migration from https://trac.sagemath.org/ticket/7427
-
-Original creator: jason
-
-Original creation time: 2009-11-11 04:01:57
-
+archive/issues_007427.json:
+```json
+{
+    "body": "Assignee: boothby\n\nCC:  mpatel\n\nI find myself lots of times needing an angle for input in an interact.  It would be cool to have a \"wheel\" widget like this:\n\nhttp://wiki.jqueryui.com/Wheel\n\nSee also http://maninblack.info/_proj/jquery-ui-wheel/demos/wheel/\n\nIssue created by migration from https://trac.sagemath.org/ticket/7427\n\n",
+    "created_at": "2009-11-11T04:01:57Z",
+    "labels": [
+        "notebook",
+        "major",
+        "enhancement"
+    ],
+    "title": "angle \"wheel\" widget for interacts",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7427",
+    "user": "jason"
+}
+```
 Assignee: boothby
 
 CC:  mpatel
@@ -16,37 +26,96 @@ http://wiki.jqueryui.com/Wheel
 
 See also http://maninblack.info/_proj/jquery-ui-wheel/demos/wheel/
 
+Issue created by migration from https://trac.sagemath.org/ticket/7427
+
+
+
+
 
 ---
 
-Comment by mpatel created at 2009-11-11 18:35:48
+archive/issue_comments_062502.json:
+```json
+{
+    "body": "An aside about the rapid-fire update problem mentioned at [comment:1:ticket:7267 #7267].  Even if `auto_update=False`, the browser piles on callbacks.  This is understandable.  But clicking \"Update\" before the browser runs through the backlog --- when the \"spinner\" is still active --- sends the queued events to the server.",
+    "created_at": "2009-11-11T18:35:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7427",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7427#issuecomment-62502",
+    "user": "mpatel"
+}
+```
 
 An aside about the rapid-fire update problem mentioned at [comment:1:ticket:7267 #7267].  Even if `auto_update=False`, the browser piles on callbacks.  This is understandable.  But clicking "Update" before the browser runs through the backlog --- when the "spinner" is still active --- sends the queued events to the server.
 
 
+
 ---
 
-Comment by mpatel created at 2009-11-16 18:54:10
+archive/issue_comments_062503.json:
+```json
+{
+    "body": "Are the any objections to trying out [the demo mentioned above](http://maninblack.info/_proj/jquery-ui-wheel/demos/wheel/)?  It may be our only option!",
+    "created_at": "2009-11-16T18:54:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7427",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7427#issuecomment-62503",
+    "user": "mpatel"
+}
+```
 
 Are the any objections to trying out [the demo mentioned above](http://maninblack.info/_proj/jquery-ui-wheel/demos/wheel/)?  It may be our only option!
 
 
+
 ---
 
-Comment by jason created at 2009-11-16 18:59:10
+archive/issue_comments_062504.json:
+```json
+{
+    "body": "definitely no objections!",
+    "created_at": "2009-11-16T18:59:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7427",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7427#issuecomment-62504",
+    "user": "jason"
+}
+```
 
 definitely no objections!
 
 
+
 ---
 
-Comment by jdemeyer created at 2017-07-04 14:27:48
+archive/issue_comments_062505.json:
+```json
+{
+    "body": "This should be moved to ipywidgets.",
+    "created_at": "2017-07-04T14:27:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7427",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7427#issuecomment-62505",
+    "user": "jdemeyer"
+}
+```
 
 This should be moved to ipywidgets.
 
 
+
 ---
 
-Comment by jdemeyer created at 2017-07-04 14:27:48
+archive/issue_comments_062506.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2017-07-04T14:27:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7427",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7427#issuecomment-62506",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: invalid

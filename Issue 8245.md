@@ -1,11 +1,21 @@
 # Issue 8245: tutorial: typo in section "Euler’s Method for Systems of Differential Equations"
 
-Issue created by migration from https://trac.sagemath.org/ticket/8245
-
-Original creator: mvngu
-
-Original creation time: 2010-02-12 03:51:50
-
+archive/issues_008245.json:
+```json
+{
+    "body": "Assignee: mvngu\n\nCC:  kcrisman\n\nFrom [sage-support](http://groups.google.com/group/sage-support/browse_frm/thread/437ae27f84e3a05):\n\n```\nIn the section, \"A Guided Tour\"->\"Basic Algebra and Calculus\"-\n>\"Euler\u2019s Method for Systems of Differential Equations\", I found that\n\nthe answer of the example is z(1)\u22480.75, which seems to be wrong.\n\nThe calculation is\n------------------------------------------------------------------------\nsage: t,x,y = PolynomialRing(RealField(10),3,\"txy\").gens()\nsage: f = y; g = -x - y * t\nsage: eulers_method_2x2(f,g, 0, 1, 0, 1/4, 1)\n      t                x            h*f(t,x,y)                y\nh*g(t,x,y)\n      0                1                  0.00\n0           -0.25\n    1/4              1.0                -0.062\n-0.25           -0.23\n    1/2             0.94                 -0.12\n-0.48           -0.17\n    3/4             0.82                 -0.16\n-0.66          -0.081\n      1             0.65                 -0.18\n-0.74           0.02\n------------------------------------------------------------------------\n\nSo I think the right answer should be z(1)\u22480.65 \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8245\n\n",
+    "created_at": "2010-02-12T03:51:50Z",
+    "labels": [
+        "documentation",
+        "minor",
+        "bug"
+    ],
+    "title": "tutorial: typo in section \"Euler\u2019s Method for Systems of Differential Equations\"",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8245",
+    "user": "mvngu"
+}
+```
 Assignee: mvngu
 
 CC:  kcrisman
@@ -41,54 +51,137 @@ So I think the right answer should be z(1)≈0.65
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8245
+
+
+
+
 
 ---
 
-Comment by jason created at 2010-05-26 15:19:39
+archive/issue_comments_072921.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"beginner\".",
+    "created_at": "2010-05-26T15:19:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8245",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8245#issuecomment-72921",
+    "user": "jason"
+}
+```
 
 Changing keywords from "" to "beginner".
 
 
+
 ---
 
-Comment by ksmith created at 2012-01-11 21:27:38
+archive/issue_comments_072922.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2012-01-11T21:27:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8245",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8245#issuecomment-72922",
+    "user": "ksmith"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_072923.json:
+```json
+{
+    "body": "Attachment\n\nI just made that one change making the 7 a 6.",
+    "created_at": "2012-01-11T21:27:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8245",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8245#issuecomment-72923",
+    "user": "ksmith"
+}
+```
 
 Attachment
 
 I just made that one change making the 7 a 6.
 
 
+
 ---
 
-Comment by ksmith created at 2012-01-11 22:04:31
+archive/issue_comments_072924.json:
+```json
+{
+    "body": "Changing keywords from \"beginner\" to \"beginner sd35.5\".",
+    "created_at": "2012-01-11T22:04:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8245",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8245#issuecomment-72924",
+    "user": "ksmith"
+}
+```
 
 Changing keywords from "beginner" to "beginner sd35.5".
 
 
+
 ---
 
-Comment by kcrisman created at 2012-01-11 22:26:53
+archive/issue_comments_072925.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2012-01-11T22:26:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8245",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8245#issuecomment-72925",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by kcrisman created at 2012-01-11 22:26:53
+archive/issue_comments_072926.json:
+```json
+{
+    "body": "And the math turns out to be right.  The example itself is somewhat elliptically expressed, but this is fine.  \n\nCurious as to why we have both `:math:` and the backticks... but anyway, that would be a general overhaul of the tutorial.",
+    "created_at": "2012-01-11T22:26:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8245",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8245#issuecomment-72926",
+    "user": "kcrisman"
+}
+```
 
 And the math turns out to be right.  The example itself is somewhat elliptically expressed, but this is fine.  
 
 Curious as to why we have both `:math:` and the backticks... but anyway, that would be a general overhaul of the tutorial.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-01-12 08:33:38
+archive/issue_comments_072927.json:
+```json
+{
+    "body": "Replying to [comment:6 kcrisman]:\n> Curious as to why we have both `:math:` and the backticks... but anyway, that would be a general overhaul of the tutorial.\n\nWithin Sage, ``foo`` is equivalent to `:math:`foo``.  In general ReST code, this is not true.",
+    "created_at": "2012-01-12T08:33:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8245",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8245#issuecomment-72927",
+    "user": "jdemeyer"
+}
+```
 
 Replying to [comment:6 kcrisman]:
 > Curious as to why we have both `:math:` and the backticks... but anyway, that would be a general overhaul of the tutorial.
@@ -96,9 +189,20 @@ Replying to [comment:6 kcrisman]:
 Within Sage, ``foo`` is equivalent to `:math:`foo``.  In general ReST code, this is not true.
 
 
+
 ---
 
-Comment by kcrisman created at 2012-01-12 14:16:21
+archive/issue_comments_072928.json:
+```json
+{
+    "body": "> > Curious as to why we have both `:math:` and the backticks... but anyway, that would be a general overhaul of the tutorial.\n> \n> Within Sage, ``foo`` is equivalent to `:math:`foo``.  In general ReST code, this is not true.\nAh, so it's historical in that sense.  Thanks for the clarification.",
+    "created_at": "2012-01-12T14:16:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8245",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8245#issuecomment-72928",
+    "user": "kcrisman"
+}
+```
 
 > > Curious as to why we have both `:math:` and the backticks... but anyway, that would be a general overhaul of the tutorial.
 > 
@@ -106,8 +210,19 @@ Comment by kcrisman created at 2012-01-12 14:16:21
 Ah, so it's historical in that sense.  Thanks for the clarification.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-01-13 23:07:29
+archive/issue_comments_072929.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2012-01-13T23:07:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8245",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8245#issuecomment-72929",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: fixed

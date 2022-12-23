@@ -1,19 +1,44 @@
 # Issue 2069: change copyright year on http://sagemath.org/pub.html (trivial)
 
-Issue created by migration from https://trac.sagemath.org/ticket/2069
-
-Original creator: AlexGhitza
-
-Original creation time: 2008-02-05 23:21:33
-
+archive/issues_002069.json:
+```json
+{
+    "body": "Assignee: was\n\nChange the year from 2007 to 2008 on http://sagemath.org/pub.html\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2069\n\n",
+    "created_at": "2008-02-05T23:21:33Z",
+    "labels": [
+        "website/wiki",
+        "trivial",
+        "bug"
+    ],
+    "title": "change copyright year on http://sagemath.org/pub.html (trivial)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2069",
+    "user": "AlexGhitza"
+}
+```
 Assignee: was
 
 Change the year from 2007 to 2008 on http://sagemath.org/pub.html
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2069
+
+
+
+
 
 ---
 
-Comment by was created at 2008-02-06 01:06:58
+archive/issue_comments_013389.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-02-06T01:06:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2069",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2069#issuecomment-13389",
+    "user": "was"
+}
+```
 
 Resolution: fixed

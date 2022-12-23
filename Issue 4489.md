@@ -1,11 +1,21 @@
 # Issue 4489: weird introspection question, specifically with certain objects in cython files
 
-Issue created by migration from https://trac.sagemath.org/ticket/4489
-
-Original creator: craigcitro
-
-Original creation time: 2008-11-10 04:37:58
-
+archive/issues_004489.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  ncalexan robertwb wjp\n\nThere are two weird introspection issues that Jon Hanke pointed out, and I took the time to track down. In particular, there are issues with introspection on top-level `def` and `cpdef` methods in any `.pyx` file. \n\nHere are two examples of what can go on:\n\n```\nsage: sage.rings.polynomial.polynomial_element.make_generic_polynomial??\nType:             builtin_function_or_method\nBase Class:       <type 'builtin_function_or_method'>\nString Form:   <built-in function make_generic_polynomial>\nNamespace:        Interactive\nSource:\ndef make_generic_polynomial(parent, coeffs):\n    return parent(coeffs)\n```\n\nThe problem here is that the source file that this function comes from does not appear anywhere, even though it should.\n\nHowever, things can get worse:\n\n```\nType:           builtin_function_or_method\nBase Class:     <type 'builtin_function_or_method'>\nString Form:    <built-in function is_Polynomial>\nNamespace:      Interactive\nSource:\ndef is_Polynomial(f):\n    \"\"\"\n    Return True if f is of type univariate polynomial.\n\n    INPUT:\n        f -- an object\n\n    EXAMPLES:\n        sage: from sage.rings.polynomial.polynomial_element import is_Polynomial\n        sage: R.<x> = ZZ[]\n        sage: is_Polynomial(x^3 + x + 1)\n        True\n        sage: S.<y> = R[]\n        sage: f = y^3 + x*y -3*x; f\n        y^3 + x*y - 3*x\n        sage: is_Polynomial(f)\n        True\n\n    However this function does not return True for genuine multivariate\n    polynomial type objects or symbolic polynomials, since those are not\n    of the same data type as univariate polynomials:\n        sage: R.<x,y> = QQ[]\n        sage: f = y^3 + x*y -3*x; f\n        y^3 + x*y - 3*x\n        sage: is_Polynomial(f)\n        False\n        sage: var('x,y')\n        (x, y)\n        sage: f = y^3 + x*y -3*x; f\n        y^3 + x*y - 3*x\n        sage: is_Polynomial(f)\n        False\n    \"\"\"\n    return PY_TYPE_CHECK(f, Polynomial)Class Docstring:\n    <attribute '__doc__' of 'builtin_function_or_method' objects>\n```\n\nI have several issues with this:\n\n* the info in the top block is wrong\n* no source file appears\n* both the formatting and placement of the `Class Docstring` bit at the end are weird.\n\nNow, it's actually much worse than just that -- `is_Polynomial` is (currently) imported into the global namespace, and the entry in the global namespace is pretty messed up:\n\n```\nsage: is_Polynomial\n<functools.partial object at 0x7ca3b40>\n\nsage: is_Polynomial??\nError getting source: could not find class definition\nType:             partial\nBase Class:       <type 'functools.partial'>\nString Form:   <functools.partial object at 0x7ca3b40>\nNamespace:        Interactive\nFile:             /Users/craigcitro/three-two/local/lib/python/functools.py\nDocstring [source file open failed]:\n    partial(func, *args, **keywords) - new function with partial application\n        of the given arguments and keywords.\n```\n\nIt seems to think that `is_Polynomial` is a completely different type, in fact a Python builtin!!\n\nSo I've only dug around a bit, but here's what I've found. First, this looks bad:\n\n```\nsage: sage.rings.polynomial.polynomial_element.is_Polynomial\n<built-in function is_Polynomial>\n\nsage: sage.rings.polynomial.all.is_Polynomial\n<built-in function is_Polynomial>\n\nsage: sage.rings.all.is_Polynomial\n<built-in function is_Polynomial>\n\nsage: sage.all.is_Polynomial\n<functools.partial object at 0x7ca3b40>\n\nsage: sage.all.is_Polynomial == sage.rings.all.is_Polynomial\nFalse\n```\n\n\nThis **could** mean that in the process of doing imports after `sage.rings.all`, some module imports `is_Polynomial` and breaks something.\n\nInterestingly, the docstring printed above is **not** the docstring that the module has for `is_Polynomial`:\n\n```\nsage: sage.rings.all.__dict__['is_Polynomial'].__doc__\n\"File: sage/rings/polynomial/polynomial_element.pyx (starting at line 72)\\n\\n    Return True if f is of type univariate polynomial.\\n\\n    INPUT:\\n        f -- an object\\n\\n    EXAMPLES:\\n        sage: from sage.rings.polynomial.polynomial_element import is_Polynomial\\n        sage: R.<x> = ZZ[]\\n        sage: is_Polynomial(x^3 + x + 1)\\n        True\\n        sage: S.<y> = R[]\\n        sage: f = y^3 + x*y -3*x; f\\n        y^3 + x*y - 3*x\\n        sage: is_Polynomial(f)\\n        True\\n\\n    However this function does not return True for genuine multivariate\\n    polynomial type objects or symbolic polynomials, since those are not\\n    of the same data type as univariate polynomials:\\n        sage: R.<x,y> = QQ[]\\n        sage: f = y^3 + x*y -3*x; f\\n        y^3 + x*y - 3*x\\n        sage: is_Polynomial(f)\\n        False\\n        sage: var('x,y')\\n        (x, y)\\n        sage: f = y^3 + x*y -3*x; f\\n        y^3 + x*y - 3*x\\n        sage: is_Polynomial(f)\\n        False\\n    \"\n```\n\n\nI'm starting to believe that this is two separate isssues: one for imports, and one for the docstring getting mis-parsed during introspection. I'm adding Rob Bradshaw to the first, because I think he'll know right offhand if anything funny is going on with the way the `polynomial_element` module gets initialized in the Cython code, and Nick Alexander, because I'm sure he'll be able to quickly point me in the right direction on the introspection stuff.\n\nPlease comment if you find anything -- I'll happily try and fix if someone points me in the right direction. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4489\n\n",
+    "created_at": "2008-11-10T04:37:58Z",
+    "labels": [
+        "user interface",
+        "major",
+        "bug"
+    ],
+    "title": "weird introspection question, specifically with certain objects in cython files",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4489",
+    "user": "craigcitro"
+}
+```
 Assignee: was
 
 CC:  ncalexan robertwb wjp
@@ -74,9 +84,9 @@ def is_Polynomial(f):
 
 I have several issues with this:
 
- * the info in the top block is wrong
- * no source file appears
- * both the formatting and placement of the `Class Docstring` bit at the end are weird.
+* the info in the top block is wrong
+* no source file appears
+* both the formatting and placement of the `Class Docstring` bit at the end are weird.
 
 Now, it's actually much worse than just that -- `is_Polynomial` is (currently) imported into the global namespace, and the entry in the global namespace is pretty messed up:
 
@@ -118,9 +128,9 @@ False
 ```
 
 
-This *could* mean that in the process of doing imports after `sage.rings.all`, some module imports `is_Polynomial` and breaks something.
+This **could** mean that in the process of doing imports after `sage.rings.all`, some module imports `is_Polynomial` and breaks something.
 
-Interestingly, the docstring printed above is *not* the docstring that the module has for `is_Polynomial`:
+Interestingly, the docstring printed above is **not** the docstring that the module has for `is_Polynomial`:
 
 ```
 sage: sage.rings.all.__dict__['is_Polynomial'].__doc__
@@ -132,10 +142,25 @@ I'm starting to believe that this is two separate isssues: one for imports, and 
 
 Please comment if you find anything -- I'll happily try and fix if someone points me in the right direction. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4489
+
+
+
+
 
 ---
 
-Comment by was created at 2008-11-17 23:52:57
+archive/issue_comments_033155.json:
+```json
+{
+    "body": "REMARK: This is an issue *only* in Ipython.  In the notebook the output looks, e.g., like this for `prod??`:\n\n\n```\nFile: /Users/was/s/devel/sage/sage/misc/misc_c.pyx\nSource Code (starting at line 54):\ndef prod(x, z=None, Py_ssize_t recursion_cutoff = 5):\n```\n",
+    "created_at": "2008-11-17T23:52:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4489",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4489#issuecomment-33155",
+    "user": "was"
+}
+```
 
 REMARK: This is an issue *only* in Ipython.  In the notebook the output looks, e.g., like this for `prod??`:
 
@@ -148,9 +173,20 @@ def prod(x, z=None, Py_ssize_t recursion_cutoff = 5):
 
 
 
+
 ---
 
-Comment by wjp created at 2011-01-10 02:28:10
+archive/issue_comments_033156.json:
+```json
+{
+    "body": "Part of the mentioned issues have been fixed as part of #3342, I think.\n\nThe remaining problem, that the sage command line doesn't show cython source files is what the patch I'm attaching should take care of.\n\nIt patches `sageinspect.py`, so I'm attaching patches for both sage and sagenb, to keep the files in sync as much as possible.\n\nThe approach I'm taking is monkey-patching `inspect.getabsfile`, replacing it by `sage_getfile`. The IPython code getting the file is deeply embedded in a long function, and calls `inspect.getabsfile` directly, so there seems to be no more elegant way of overriding the behaviour.",
+    "created_at": "2011-01-10T02:28:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4489",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4489#issuecomment-33156",
+    "user": "wjp"
+}
+```
 
 Part of the mentioned issues have been fixed as part of #3342, I think.
 
@@ -161,47 +197,128 @@ It patches `sageinspect.py`, so I'm attaching patches for both sage and sagenb, 
 The approach I'm taking is monkey-patching `inspect.getabsfile`, replacing it by `sage_getfile`. The IPython code getting the file is deeply embedded in a long function, and calls `inspect.getabsfile` directly, so there seems to be no more elegant way of overriding the behaviour.
 
 
+
 ---
+
+archive/issue_comments_033157.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2011-01-10T02:29:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4489",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4489#issuecomment-33157",
+    "user": "wjp"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by wjp created at 2011-01-10 02:29:13
+archive/issue_comments_033158.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2011-01-10T02:29:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4489",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4489#issuecomment-33158",
+    "user": "wjp"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_033159.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2011-01-10T02:29:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4489",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4489#issuecomment-33159",
+    "user": "wjp"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by jhpalmieri created at 2011-07-23 20:08:54
+archive/issue_comments_033160.json:
+```json
+{
+    "body": "Are the issues here solved by the patches at #11298?",
+    "created_at": "2011-07-23T20:08:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4489",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4489#issuecomment-33160",
+    "user": "jhpalmieri"
+}
+```
 
 Are the issues here solved by the patches at #11298?
 
 
+
 ---
 
-Comment by wjp created at 2011-07-26 12:28:16
+archive/issue_comments_033161.json:
+```json
+{
+    "body": "No, this patch solves a separate issue.",
+    "created_at": "2011-07-26T12:28:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4489",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4489#issuecomment-33161",
+    "user": "wjp"
+}
+```
 
 No, this patch solves a separate issue.
 
 
+
 ---
 
-Comment by tkluck created at 2012-12-23 19:13:07
+archive/issue_comments_033162.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_info.",
+    "created_at": "2012-12-23T19:13:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4489",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4489#issuecomment-33162",
+    "user": "tkluck"
+}
+```
 
 Changing status from needs_review to needs_info.
 
 
+
 ---
 
-Comment by tkluck created at 2012-12-23 19:13:07
+archive/issue_comments_033163.json:
+```json
+{
+    "body": "As far as I can tell, this bug has been resolved in the mean time. In my limited testing, the source code for cython functions are correctly loaded. Also, this patch doesn't apply anymore.\n\nI would close this ticket, but I haven't got the right permissions. I'll set it to `needs_info` instead, so that it is clear that it currently does not need review.",
+    "created_at": "2012-12-23T19:13:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4489",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4489#issuecomment-33163",
+    "user": "tkluck"
+}
+```
 
 As far as I can tell, this bug has been resolved in the mean time. In my limited testing, the source code for cython functions are correctly loaded. Also, this patch doesn't apply anymore.
 

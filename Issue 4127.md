@@ -1,11 +1,21 @@
 # Issue 4127: Python scripts to search for libraries that get wrongly called in
 
-Issue created by migration from https://trac.sagemath.org/ticket/4127
-
-Original creator: dphilp
-
-Original creation time: 2008-09-15 05:42:06
-
+archive/issues_004127.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nCC:  dphilp jason\n\nThe build process isn't very robust, and occasionally links to unintended libraries from e.g. /sw and /opt.  These scripts are good for detecting when and where that happens.  (OS X only)\n\nFirst, construct a whitelist on a OS X-and-Sage vanilla installation.  (Run the script from SAGE_ROOT after sourcing sage-env.)\n\n```/usr/bin/env python\n\n# Run this script on a vanilla sage build on a clean OS X to figure out \n# what external libraries vanilla sage links to.  This forms a reference\n# for figuring out build problems with non-vanilla configurations.\n# dphilp 15/9/8\n\nimport os\nimport re\n\nSAGE_ROOT=os.environ.get('SAGE_ROOT')\n\n# We are building a list of known good external libraries\nwhitelist = []\n\n# Find all binaries that could be pulling in external libraries\nbinary_list = os.popen('find . -name *.so -or -name *.dylib').readlines()\n\n# For removing the trailing (compatiblity version .....) stuff\nbrace_pattern = re.compile('\\(.*\\)')\ndef trim_linked_file(x) :\n  return re.sub(brace_pattern, '', x).strip()\n\n# For identifying relative file paths, or absolute paths that refer to things\n# inside SAGE_ROOT\nnonlocal_file_pattern = re.compile('^(?!'+SAGE_ROOT+')/')\n\nfor file in binary_list :\n  binary_name = file.strip()\n  # Find what the binary links to\n  linked_file_list = os.popen('otool -L ' + binary_name).readlines()\n  # Strip whitespace, and ignore first result (it's the binary name)\n  linked_file_list = [i.strip() for i in linked_file_list[1:]]\n  for linked_file in linked_file_list :\n    # Just get the file name\n    linked_name = trim_linked_file(linked_file)\n    # If it's not a local file, and not already known, give an error message\n    if re.match(nonlocal_file_pattern, linked_name) and not(linked_name in whitelist):\n      whitelist.append(linked_name)\n\nwhitelist.sort()\nwhitelist = [ i + '\\n' for i in whitelist]\nWHITELIST_FILE = open('tmp/linked_file_whitelist.txt', 'w')\nWHITELIST_FILE.writelines(whitelist)\n```\n\n\nSecond, copy the whitelist to the non-vanilla configuration.\n\nThird, run this script from non-vanilla SAGE_ROOT:\n\n```/usr/bin/env python\n\n# Identify any external (non-sage) libraries that are linked by\n# sage binaries, that are not on the 'known good' whitelist.\n# dphilp 15/9/8\n\nimport os\nimport re\n\nSAGE_ROOT=os.environ.get('SAGE_ROOT')\n\n# List of non-local files we're allowed to link to\nwhitelist = open('tmp/linked_file_whitelist.txt').readlines()\nwhitelist = [i.strip() for i in whitelist]\n\n# Find all binaries that could be pulling in naughty libraries\nbinary_list = os.popen('find . -name *.so -or -name *.dylib').readlines()\n\n# For removing the trailing (compatiblity version .....) stuff\nbrace_pattern = re.compile('\\(.*\\)')\ndef trim_linked_file(x) :\n  return re.sub(brace_pattern, '', x).strip()\n\n# For identifying relative file paths, or absolute paths that refer to things\n# inside SAGE_ROOT\nnonlocal_file_pattern = re.compile('^(?!'+SAGE_ROOT+')/')\n\nfor file in binary_list :\n  binary_name = file.strip()\n  # Find what the binary links to\n  linked_file_list = os.popen('otool -L ' + binary_name).readlines()\n  # Strip whitespace, and ignore first result (it's the binary name)\n  linked_file_list = [i.strip() for i in linked_file_list[1:]]\n  for linked_file in linked_file_list :\n    # Just get the file name\n    linked_name = trim_linked_file(linked_file)\n    # If it's not a local file, and not already known, give an error message\n    if re.match(nonlocal_file_pattern, linked_name) and not(linked_name in whitelist):\n      print binary_name + ' links to non-whitelisted file ' + linked_name\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4127\n\n",
+    "created_at": "2008-09-15T05:42:06Z",
+    "labels": [
+        "build",
+        "minor",
+        "bug"
+    ],
+    "title": "Python scripts to search for libraries that get wrongly called in",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4127",
+    "user": "dphilp"
+}
+```
 Assignee: mabshoff
 
 CC:  dphilp jason
@@ -108,10 +118,25 @@ for file in binary_list :
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4127
+
+
+
+
 
 ---
 
-Comment by dphilp created at 2008-09-15 05:44:34
+archive/issue_comments_029927.json:
+```json
+{
+    "body": "Sample output:\n\n```\n./local/lib/python2.5/site-packages/matplotlib/_image.so links to non-whitelisted file /opt/local/lib/libpng12.0.dylib\n./local/lib/python2.5/site-packages/matplotlib/backends/_backend_agg.so links to non-whitelisted file /opt/local/lib/libpng12.0.dylib\n./local/lib/python2.5/site-packages/matplotlib/backends/_tkagg.so links to non-whitelisted file /opt/local/lib/libpng12.0.dylib\n```\n",
+    "created_at": "2008-09-15T05:44:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4127",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4127#issuecomment-29927",
+    "user": "dphilp"
+}
+```
 
 Sample output:
 
@@ -123,9 +148,20 @@ Sample output:
 
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-15 08:54:13
+archive/issue_comments_029928.json:
+```json
+{
+    "body": "David,\n\n*very* nice work. Can you name them sage-$FOO, add them to the repo in $SAGE_ROOT/local/bin and post a patch? One possibility would be to unifiy both scripts and depending on command line option either create a whitelist or alternatively look for \"bad\" extensions. Another one would be that if the whitelist does not exist it is created automatically in $SAGE_ROOT/tmp. Using the script should be idiot proof :)\n\nOnce we got this in and 3.1.2 is out we can start fixing the issues you are hitting. This will make debugging issues much, much easier.\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-15T08:54:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4127",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4127#issuecomment-29928",
+    "user": "mabshoff"
+}
+```
 
 David,
 
@@ -138,37 +174,94 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-15 08:54:13
+archive/issue_comments_029929.json:
+```json
+{
+    "body": "Changing priority from minor to blocker.",
+    "created_at": "2008-09-15T08:54:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4127",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4127#issuecomment-29929",
+    "user": "mabshoff"
+}
+```
 
 Changing priority from minor to blocker.
 
 
+
 ---
 
-Comment by dphilp created at 2008-09-15 11:03:33
+archive/issue_comments_029930.json:
+```json
+{
+    "body": "I didn't want to merge the two scripts because they are used at entirely different times and in entirely different ways.  The make-whitelist script would be run when making the sage source distribution, the check script run at diagnosis.\n\nThat means there is some second rate duplication of code, though.",
+    "created_at": "2008-09-15T11:03:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4127",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4127#issuecomment-29930",
+    "user": "dphilp"
+}
+```
 
 I didn't want to merge the two scripts because they are used at entirely different times and in entirely different ways.  The make-whitelist script would be run when making the sage source distribution, the check script run at diagnosis.
 
 That means there is some second rate duplication of code, though.
 
 
+
 ---
 
-Comment by dphilp created at 2008-09-16 21:41:20
+archive/issue_comments_029931.json:
+```json
+{
+    "body": "Ok, I merged them.  The -w option creates a whitelist in data/extcode.  The -o file exports the 'whitelist' as it would be constructed on the current machine to 'file'.  And without any options, it runs in 'check against whitelist' mode.",
+    "created_at": "2008-09-16T21:41:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4127",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4127#issuecomment-29931",
+    "user": "dphilp"
+}
+```
 
 Ok, I merged them.  The -w option creates a whitelist in data/extcode.  The -o file exports the 'whitelist' as it would be constructed on the current machine to 'file'.  And without any options, it runs in 'check against whitelist' mode.
 
 
+
 ---
+
+archive/issue_comments_029932.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-09-17T00:30:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4127",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4127#issuecomment-29932",
+    "user": "dphilp"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-20 00:50:23
+archive/issue_comments_029933.json:
+```json
+{
+    "body": "Nice work. Positive review.\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-20T00:50:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4127",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4127#issuecomment-29933",
+    "user": "mabshoff"
+}
+```
 
 Nice work. Positive review.
 
@@ -177,9 +270,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-20 00:57:14
+archive/issue_comments_029934.json:
+```json
+{
+    "body": "Merged in Sage 3.1.3.alpha0\n\nIn the future please post proper patches and not diffs, i.e. use hg export instead of hg diff.\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-20T00:57:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4127",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4127#issuecomment-29934",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.1.3.alpha0
 
@@ -190,23 +294,56 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-20 00:57:14
+archive/issue_comments_029935.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-09-20T00:57:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4127",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4127#issuecomment-29935",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by jason created at 2010-10-13 01:07:19
+archive/issue_comments_029936.json:
+```json
+{
+    "body": "I suppose we can use this script to see if the ban on macports is needed anymore.",
+    "created_at": "2010-10-13T01:07:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4127",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4127#issuecomment-29936",
+    "user": "jason"
+}
+```
 
 I suppose we can use this script to see if the ban on macports is needed anymore.
 
 
+
 ---
 
-Comment by kcrisman created at 2011-04-26 03:06:10
+archive/issue_comments_029937.json:
+```json
+{
+    "body": "Replying to [comment:7 jason]:\n> I suppose we can use this script to see if the ban on macports is needed anymore.\n\nAnd Fink.    It would probably depend on what libraries were present.  Note that even now, we still seem to be linking against a lot of non-prereqs:\n\n```\n/System/Library/Frameworks/Accelerate.framework/Versions/A/Accelerate\n/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libBLAS.dylib\n/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libLAPACK.dylib\n/System/Library/Frameworks/AppKit.framework/Versions/C/AppKit\n/System/Library/Frameworks/ApplicationServices.framework/Versions/A/ApplicationServices\n/System/Library/Frameworks/Carbon.framework/Versions/A/Carbon\n/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation\n/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation\n/System/Library/Frameworks/SystemConfiguration.framework/Versions/A/SystemConfiguration\n/System/Library/Frameworks/Tcl.framework/Versions/8.5/Tcl\n/System/Library/Frameworks/Tk.framework/Versions/8.5/Tk\n/usr/lib/libSystem.B.dylib\n/usr/lib/libcrypto.0.9.8.dylib\n/usr/lib/libffi.dylib\n/usr/lib/libiconv.2.dylib\n/usr/lib/libicucore.A.dylib\n/usr/lib/libncurses.5.4.dylib\n/usr/lib/libobjc.A.dylib\n/usr/lib/libpanel.5.4.dylib\n/usr/lib/libssl.0.9.8.dylib\n/usr/lib/libstdc++.6.dylib\n/usr/local/lib/libgcc_s.1.dylib\n/usr/local/lib/libgfortran.2.dylib\n```\n\nI thought at least some of these things were just part of Sage... well, anyway, this is a closed ticket :)",
+    "created_at": "2011-04-26T03:06:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4127",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4127#issuecomment-29937",
+    "user": "kcrisman"
+}
+```
 
 Replying to [comment:7 jason]:
 > I suppose we can use this script to see if the ban on macports is needed anymore.

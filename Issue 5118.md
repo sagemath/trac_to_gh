@@ -1,11 +1,21 @@
 # Issue 5118: [with patch, needs review] Improve elliptic curve printing
 
-Issue created by migration from https://trac.sagemath.org/ticket/5118
-
-Original creator: rlm
-
-Original creation time: 2009-01-28 19:05:22
-
+archive/issues_005118.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  cremona\n\nBefore:\n\n```\nElliptic Curve defined by y^2  = x^3 + x +1 ...\n```\n\n\nAfter:\n\n```\nElliptic Curve defined by y^2 = x^3 + x + 1 ...\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5118\n\n",
+    "created_at": "2009-01-28T19:05:22Z",
+    "labels": [
+        "number theory",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch, needs review] Improve elliptic curve printing",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5118",
+    "user": "rlm"
+}
+```
 Assignee: was
 
 CC:  cremona
@@ -24,8 +34,25 @@ Elliptic Curve defined by y^2 = x^3 + x + 1 ...
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5118
+
+
+
+
 
 ---
+
+archive/issue_comments_039122.json:
+```json
+{
+    "body": "Attachment\n\nPasses doctests and makes the printing consistent regarding spaces. Positive review. \n\nI am CCing John since he might be affected by this patch.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-02T05:52:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5118",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5118#issuecomment-39122",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -38,16 +65,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-02 05:53:43
+archive/issue_comments_039123.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-02-02T05:53:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5118",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5118#issuecomment-39123",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-02 05:53:43
+archive/issue_comments_039124.json:
+```json
+{
+    "body": "Merged in Sage 3.3.alpha4.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-02T05:53:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5118",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5118#issuecomment-39124",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.3.alpha4.
 

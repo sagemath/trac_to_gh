@@ -1,11 +1,21 @@
 # Issue 2729: [with patch] tiny jmol spheres have holes
 
-Issue created by migration from https://trac.sagemath.org/ticket/2729
-
-Original creator: robertwb
-
-Original creation time: 2008-03-30 00:01:21
-
+archive/issues_002729.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  jason\n\nFor example, try \n\n\n```\nsum([sphere((1+r,2,3), r/10, color='red') for r in [1..10]]).show(aspect_ratio=[1,1,1])\n```\n\n\nSee http://www.mail-archive.com/jmol-users`@`lists.sourceforge.net/msg07676.html (thanks to jason for this tip)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2729\n\n",
+    "created_at": "2008-03-30T00:01:21Z",
+    "labels": [
+        "graphics",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch] tiny jmol spheres have holes",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2729",
+    "user": "robertwb"
+}
+```
 Assignee: was
 
 CC:  jason
@@ -20,37 +30,98 @@ sum([sphere((1+r,2,3), r/10, color='red') for r in [1..10]]).show(aspect_ratio=[
 
 See http://www.mail-archive.com/jmol-users`@`lists.sourceforge.net/msg07676.html (thanks to jason for this tip)
 
+Issue created by migration from https://trac.sagemath.org/ticket/2729
+
+
+
+
 
 ---
 
-Comment by jason created at 2008-03-30 00:29:45
+archive/issue_comments_018791.json:
+```json
+{
+    "body": "positive review pending the deletion of the print statement.",
+    "created_at": "2008-03-30T00:29:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2729",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2729#issuecomment-18791",
+    "user": "jason"
+}
+```
 
 positive review pending the deletion of the print statement.
 
 
+
 ---
+
+archive/issue_comments_018792.json:
+```json
+{
+    "body": "Attachment\n\nOK, print statement is gone.",
+    "created_at": "2008-03-30T00:38:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2729",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2729#issuecomment-18792",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 OK, print statement is gone.
 
 
+
 ---
 
-Comment by jason created at 2008-03-30 00:45:26
+archive/issue_comments_018793.json:
+```json
+{
+    "body": "looks good.",
+    "created_at": "2008-03-30T00:45:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2729",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2729#issuecomment-18793",
+    "user": "jason"
+}
+```
 
 looks good.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-31 13:47:06
+archive/issue_comments_018794.json:
+```json
+{
+    "body": "Merged in Sage 3.0.alpha0",
+    "created_at": "2008-03-31T13:47:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2729",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2729#issuecomment-18794",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.alpha0
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-31 13:47:06
+archive/issue_comments_018795.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-03-31T13:47:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2729",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2729#issuecomment-18795",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

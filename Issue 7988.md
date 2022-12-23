@@ -1,58 +1,151 @@
 # Issue 7988: add testcc and testcxx to hgignore in scripts repo
 
-Issue created by migration from https://trac.sagemath.org/ticket/7988
-
-Original creator: rlm
-
-Original creation time: 2010-01-19 02:08:41
-
+archive/issues_007988.json:
+```json
+{
+    "body": "Assignee: AlexGhitza\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7988\n\n",
+    "created_at": "2010-01-19T02:08:41Z",
+    "labels": [
+        "algebra",
+        "major",
+        "bug"
+    ],
+    "title": "add testcc and testcxx to hgignore in scripts repo",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7988",
+    "user": "rlm"
+}
+```
 Assignee: AlexGhitza
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7988
+
+
+
+
 
 ---
+
+archive/issue_comments_069767.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-01-19T02:10:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7988",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7988#issuecomment-69767",
+    "user": "wjp"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by wjp created at 2010-01-19 02:10:44
+archive/issue_comments_069768.json:
+```json
+{
+    "body": "Trivial patch for the scripts repo attached.",
+    "created_at": "2010-01-19T02:10:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7988",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7988#issuecomment-69768",
+    "user": "wjp"
+}
+```
 
 Trivial patch for the scripts repo attached.
 
 
+
 ---
 
-Comment by wjp created at 2010-01-19 02:10:44
+archive/issue_comments_069769.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-01-19T02:10:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7988",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7988#issuecomment-69769",
+    "user": "wjp"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by rlm created at 2010-01-19 02:43:27
+archive/issue_comments_069770.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-01-19T02:43:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7988",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7988#issuecomment-69770",
+    "user": "rlm"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by rlm created at 2010-01-19 02:43:27
+archive/issue_comments_069771.json:
+```json
+{
+    "body": "finally!",
+    "created_at": "2010-01-19T02:43:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7988",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7988#issuecomment-69771",
+    "user": "rlm"
+}
+```
 
 finally!
 
 
+
 ---
 
-Comment by AlexGhitza created at 2010-01-19 04:45:16
+archive/issue_comments_069772.json:
+```json
+{
+    "body": "Changing component from algebra to distribution.",
+    "created_at": "2010-01-19T04:45:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7988",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7988#issuecomment-69772",
+    "user": "AlexGhitza"
+}
+```
 
 Changing component from algebra to distribution.
 
 
+
 ---
 
-Comment by rlm created at 2010-01-19 05:07:05
+archive/issue_comments_069773.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-19T05:07:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7988",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7988#issuecomment-69773",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed

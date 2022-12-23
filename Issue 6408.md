@@ -1,11 +1,21 @@
 # Issue 6408: notebook -- secure notebook doesn't work in sage-4.1.alpha1 because of twisted.web2 not being ported to python 2.6
 
-Issue created by migration from https://trac.sagemath.org/ticket/6408
-
-Original creator: was
-
-Original creation time: 2009-06-25 15:23:55
-
+archive/issues_006408.json:
+```json
+{
+    "body": "Assignee: mhansen\n\n\n```\nsage: notebook('foobar',secure=True,address='geom.math.washington.edu')\nThe notebook files are stored in: foobar\n******************************************************************\n*                                                                *\n* Open your web browser to https://geom.math.washington.edu:8000 *\n*                                                                *\n******************************************************************\nThere is an admin account.  If you do not remember the password,\nquit the notebook and type notebook(reset=True).\n/space/rlm/new_r/sage-4.1.alpha0/local/lib/python2.6/site-packages/twisted/persisted/sob.py:12: DeprecationWarning: the md5 module is deprecated; use hashlib instead\n  import os, md5, sys\n2009-06-25 08:17:28-0700 [-] Log opened.\n2009-06-25 08:17:28-0700 [-] twistd 8.2.0 (/space/rlm/new_r/sage-4.1.alpha0/local/bin/python 2.6.2) starting up.\n2009-06-25 08:17:28-0700 [-] reactor class: twisted.internet.selectreactor.SelectReactor.\n2009-06-25 08:17:28-0700 [-] twisted.web2.channel.http.HTTPFactory starting on 8000\n2009-06-25 08:17:28-0700 [-] Starting factory <twisted.web2.channel.http.HTTPFactory instance at 0x3e2b098>\nxprop:  unable to open display ''\n2009-06-25 08:17:28-0700 [twisted.web2.channel.http.HTTPFactory] Unhandled Error\n        Traceback (most recent call last):\n          File \"/space/rlm/new_r/sage-4.1.alpha0/local/lib/python2.6/site-packages/twisted/python/log.py\", line 69, in callWithContext\n            return context.call({ILogContext: newCtx}, func, *args, **kw)\n          File \"/space/rlm/new_r/sage-4.1.alpha0/local/lib/python2.6/site-packages/twisted/python/context.py\", line 59, in callWithContext\n            return self.currentContext().callWithContext(ctx, func, *args, **kw)\n          File \"/space/rlm/new_r/sage-4.1.alpha0/local/lib/python2.6/site-packages/twisted/python/context.py\", line 37, in callWithContext\n            return func(*args,**kw)\n          File \"/space/rlm/new_r/sage-4.1.alpha0/local/lib/python2.6/site-packages/twisted/internet/selectreactor.py\", line 146, in _doReadOrWrite\n            why = getattr(selectable, method)()\n        --- <exception caught here> ---\n          File \"/space/rlm/new_r/sage-4.1.alpha0/local/lib/python2.6/site-packages/twisted/internet/tcp.py\", line 938, in doRead\n            transport = self.transport(skt, protocol, addr, self, s, self.reactor)\n        exceptions.TypeError: __init__() takes exactly 6 arguments (7 given)\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6408\n\n",
+    "created_at": "2009-06-25T15:23:55Z",
+    "labels": [
+        "notebook",
+        "blocker",
+        "bug"
+    ],
+    "title": "notebook -- secure notebook doesn't work in sage-4.1.alpha1 because of twisted.web2 not being ported to python 2.6",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6408",
+    "user": "was"
+}
+```
 Assignee: mhansen
 
 
@@ -45,19 +55,45 @@ xprop:  unable to open display ''
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6408
+
+
+
+
 
 ---
 
-Comment by was created at 2009-07-09 05:31:27
+archive/issue_comments_051453.json:
+```json
+{
+    "body": "The new spkg that fixes this problem is here:\n\n http://sage.math.washington.edu/home/wstein/patches/python_gnutls-1.1.4.p5.spkg",
+    "created_at": "2009-07-09T05:31:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6408",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6408#issuecomment-51453",
+    "user": "was"
+}
+```
 
 The new spkg that fixes this problem is here:
 
  http://sage.math.washington.edu/home/wstein/patches/python_gnutls-1.1.4.p5.spkg
 
 
+
 ---
 
-Comment by was created at 2009-07-09 19:08:46
+archive/issue_comments_051454.json:
+```json
+{
+    "body": "To referee this: just compre _init_.py with the version in src/\nYou'll see there is a 2-line trivial obvious change.\nThen just try installing the spkg and see that the secure notebook suddenly works again.\nThat's it.\n\n\n```\nteragon-2:python_gnutls-1.1.4.p5 wstein$ diff src/gnutls/interfaces/twisted/__init__.py  patches/__init__.py \n251c251\n<     def __init__(self, sock, protocol, client, server, sessionno):\n---\n>     def __init__(self, sock, protocol, client, server, sessionno, reactor):\n254c254\n<         tcp.Server.__init__(self, sock, protocol, client, server, sessionno)\n---\n>         tcp.Server.__init__(self, sock, protocol, client, server, sessionno, reactor)\n```\n",
+    "created_at": "2009-07-09T19:08:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6408",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6408#issuecomment-51454",
+    "user": "was"
+}
+```
 
 To referee this: just compre _init_.py with the version in src/
 You'll see there is a 2-line trivial obvious change.
@@ -79,15 +115,37 @@ teragon-2:python_gnutls-1.1.4.p5 wstein$ diff src/gnutls/interfaces/twisted/__in
 
 
 
+
 ---
 
-Comment by rlm created at 2009-07-09 19:10:37
+archive/issue_comments_051455.json:
+```json
+{
+    "body": "Why not? :)",
+    "created_at": "2009-07-09T19:10:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6408",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6408#issuecomment-51455",
+    "user": "rlm"
+}
+```
 
 Why not? :)
 
 
+
 ---
 
-Comment by rlm created at 2009-07-09 19:10:37
+archive/issue_comments_051456.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-07-09T19:10:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6408",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6408#issuecomment-51456",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed

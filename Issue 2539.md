@@ -1,11 +1,21 @@
 # Issue 2539: Sage 2.10.4.rc0: dsage/dist_functions/dist_factor.py timeout issue with -long
 
-Issue created by migration from https://trac.sagemath.org/ticket/2539
-
-Original creator: mabshoff
-
-Original creation time: 2008-03-16 01:30:30
-
+archive/issues_002539.json:
+```json
+{
+    "body": "Assignee: yi\n\n\n```\nsage -t -long devel/sage/sage/dsage/dist_functions/dist_factor.py\n**********************************************************************\nFile \"dist_factor.py\", line 29:\n    sage: f.wait(timeout=60) # long time\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-2.10.4.rc0/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[5]>\", line 1, in <module>\n        f.wait(timeout=Integer(60)) # long time###line 29:\n    sage: f.wait(timeout=60) # long time\n      File \"/scratch/mabshoff/release-cycle/sage-2.10.4.rc0/local/lib/python2.5/site-packages/sage/dsage/dist_functions/dist_function.py\", line 183, in wait\n        time.sleep(0.5)\n      File \"/scratch/mabshoff/release-cycle/sage-2.10.4.rc0/local/lib/python2.5/site-packages/sage/dsage/dist_functions/dist_function.py\", line 179, in handler\n        raise RuntimeError('Maximum wait time exceeded.')\n    RuntimeError: Maximum wait time exceeded.\n**********************************************************************\nFile \"dist_factor.py\", line 30:\n    sage: f.done # long time\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"dist_factor.py\", line 32:\n    sage: print f # long time\nExpected:\n    Factoring \"42535295865117307932921825928971026431\"\n    Prime factors found so far: [31, 601, 1801, 269089806001, 4710883168879506001]\nGot:\n    Factoring \"42535295865117307932921825928971026431\"\n    Prime factors found so far: [31, 601, 1801]\n**********************************************************************\n1 items had failures:\n   3 of   8 in __main__.example_0\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file .doctest_dist_factor.py\n```\n\n\nWhile the above doctest usually only takes about 25 seconds wall time when I do parallel testing it times out every couple doctests. Raising the limit for this long doctest to something larger might be a solution.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2539\n\n",
+    "created_at": "2008-03-16T01:30:30Z",
+    "labels": [
+        "doctest coverage",
+        "blocker",
+        "bug"
+    ],
+    "title": "Sage 2.10.4.rc0: dsage/dist_functions/dist_factor.py timeout issue with -long",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2539",
+    "user": "mabshoff"
+}
+```
 Assignee: yi
 
 
@@ -56,28 +66,65 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/2539
+
+
+
+
 
 ---
 
-Comment by yi created at 2008-03-16 21:59:19
+archive/issue_comments_017318.json:
+```json
+{
+    "body": "Interesting. \nHow do I turn parallel testing on to try and reproduce locally? \nIt would be better to see why it's taking more than 60 seconds than to simply raise the timeout. doctests that take 60 seconds (even for long time) are probably pretty bad.",
+    "created_at": "2008-03-16T21:59:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2539",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2539#issuecomment-17318",
+    "user": "yi"
+}
+```
 
 Interesting. 
 How do I turn parallel testing on to try and reproduce locally? 
 It would be better to see why it's taking more than 60 seconds than to simply raise the timeout. doctests that take 60 seconds (even for long time) are probably pretty bad.
 
 
+
 ---
 
-Comment by yi created at 2008-03-21 20:58:47
+archive/issue_comments_017319.json:
+```json
+{
+    "body": "Pinging Michael...\n\nIs this still an issue? I still don't understand what you mean by \"parallel testing\" or how to go about reproducing this.",
+    "created_at": "2008-03-21T20:58:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2539",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2539#issuecomment-17319",
+    "user": "yi"
+}
+```
 
 Pinging Michael...
 
 Is this still an issue? I still don't understand what you mean by "parallel testing" or how to go about reproducing this.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-09 04:12:03
+archive/issue_comments_017320.json:
+```json
+{
+    "body": "Replying to [comment:2 yi]:\n> Pinging Michael...\n> \n> Is this still an issue? I still don't understand what you mean by \"parallel testing\" or how to go about reproducing this. \n\nYes, it still regularly happens. Run \"sage -tp 10 devel/sage/sage\" on sage.math to trigger this. I am seeing it regularly with 3.0.alpha[0-3].\n\nCheers,\n\nMichael",
+    "created_at": "2008-04-09T04:12:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2539",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2539#issuecomment-17320",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:2 yi]:
 > Pinging Michael...
@@ -91,16 +138,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-26 02:54:31
+archive/issue_comments_017321.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-04-26T02:54:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2539",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2539#issuecomment-17321",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-26 02:54:31
+archive/issue_comments_017322.json:
+```json
+{
+    "body": "I have not seen this for several dozen \"-tp 8 -long\" on sage.math. Since I was the one who was able to trigger this reliably I am considering this fixed. \n\nCheers,\n\nMichael",
+    "created_at": "2008-04-26T02:54:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2539",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2539#issuecomment-17322",
+    "user": "mabshoff"
+}
+```
 
 I have not seen this for several dozen "-tp 8 -long" on sage.math. Since I was the one who was able to trigger this reliably I am considering this fixed. 
 

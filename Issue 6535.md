@@ -1,11 +1,21 @@
 # Issue 6535: add environ variables to "sage -pkg" script so don't get OS X metatfiles
 
-Issue created by migration from https://trac.sagemath.org/ticket/6535
-
-Original creator: was
-
-Original creation time: 2009-07-15 06:11:16
-
+archive/issues_006535.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nMany spkg's have tons of `._` files in them since the spkg's were made on OS X.  To fix this we just have to set two environment variables. \n\n\n```\nMarshall Hampton notes the following:\n\nHelpful post on avoiding this:\n\nhttp://norman.walsh.name/2008/02/22/tar\n\n...upshot is that one should add\n\nexport COPYFILE_DISABLE=true\n\nto your profile if using leopard, or\n\nCOPY_EXTENDED_ATTRIBUTES_DISABLE=true\n\nif using tiger or previous stuff (I don't think many sage developers\nare using something pre-tiger at this point though).\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6535\n\n",
+    "created_at": "2009-07-15T06:11:16Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "add environ variables to \"sage -pkg\" script so don't get OS X metatfiles",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6535",
+    "user": "was"
+}
+```
 Assignee: mabshoff
 
 Many spkg's have tons of `._` files in them since the spkg's were made on OS X.  To fix this we just have to set two environment variables. 
@@ -31,23 +41,60 @@ are using something pre-tiger at this point though).
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6535
+
+
+
+
 
 ---
 
-Comment by kcrisman created at 2012-06-01 18:44:45
+archive/issue_comments_053278.json:
+```json
+{
+    "body": "Huh, this is cool!  Although Jeroen and other release managers have been pretty good about marking such spkgs 'needs work' lately, does anyone know if this is still valid?",
+    "created_at": "2012-06-01T18:44:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6535",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6535#issuecomment-53278",
+    "user": "kcrisman"
+}
+```
 
 Huh, this is cool!  Although Jeroen and other release managers have been pretty good about marking such spkgs 'needs work' lately, does anyone know if this is still valid?
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-05-16 07:58:34
+archive/issue_comments_053279.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2013-05-16T07:58:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6535",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6535#issuecomment-53279",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: invalid
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-05-16 07:58:34
+archive/issue_comments_053280.json:
+```json
+{
+    "body": "As far as I know, all the instances of `.DS_Store` files currently in Sage actually come from upstream packages. So adding these environment variables wouldn't make a difference.",
+    "created_at": "2013-05-16T07:58:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6535",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6535#issuecomment-53280",
+    "user": "jdemeyer"
+}
+```
 
 As far as I know, all the instances of `.DS_Store` files currently in Sage actually come from upstream packages. So adding these environment variables wouldn't make a difference.

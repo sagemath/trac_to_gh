@@ -1,38 +1,98 @@
 # Issue 3403: [with patch; needs review] get doctest coverage for rational up to 100%
 
-Issue created by migration from https://trac.sagemath.org/ticket/3403
-
-Original creator: was
-
-Original creation time: 2008-06-12 15:14:25
-
+archive/issues_003403.json:
+```json
+{
+    "body": "Assignee: somebody\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3403\n\n",
+    "created_at": "2008-06-12T15:14:25Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch; needs review] get doctest coverage for rational up to 100%",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3403",
+    "user": "was"
+}
+```
 Assignee: somebody
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3403
+
+
+
+
 
 ---
+
+archive/issue_comments_023874.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-06-15T20:27:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3403",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3403#issuecomment-23874",
+    "user": "gfurnish"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-26 03:27:14
+archive/issue_comments_023875.json:
+```json
+{
+    "body": "Merged in Sage 3.0.4.alpha1",
+    "created_at": "2008-06-26T03:27:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3403",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3403#issuecomment-23875",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.4.alpha1
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-26 03:27:14
+archive/issue_comments_023876.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-06-26T03:27:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3403",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3403#issuecomment-23876",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-26 04:10:31
+archive/issue_comments_023877.json:
+```json
+{
+    "body": "We have one broken doctest:\n\n```\nsage -t  devel/sage/sage/misc/sageinspect.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.0.4.alpha1/tmp/sageinspect.py\", line 77:\n    sage: sage_getdoc(sage.rings.rational.make_rational).lstrip()\nExpected:\n    ''\nGot:\n    \"Make a rational number from s (a string in base 32)\\n\\n    INPUT:\\n        s -- string in base 32\\n    OUTPUT:\\n        Rational\\n        \\n    EXAMPLES:\\n        sage: (-7/15).str(32)\\n        '-7/f'\\n        sage: sage.rings.rational.make_rational('-7/f')\\n        -7/15    \\n    \"\n**********************************************************************\n1 items had failures:\n   1 of  26 in __main__.example_0\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.0.4.alpha1/tmp/.doctest_sageinspect.py\n\t [2.6 s]\nexit code: 1024\n```\n",
+    "created_at": "2008-06-26T04:10:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3403",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3403#issuecomment-23877",
+    "user": "mabshoff"
+}
+```
 
 We have one broken doctest:
 
@@ -56,9 +116,20 @@ exit code: 1024
 
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-26 05:03:46
+archive/issue_comments_023878.json:
+```json
+{
+    "body": "Fixed in Sage 3.0.4.alpha1 as discussed with William in person.\n\nCheers,\n\nMichael",
+    "created_at": "2008-06-26T05:03:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3403",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3403#issuecomment-23878",
+    "user": "mabshoff"
+}
+```
 
 Fixed in Sage 3.0.4.alpha1 as discussed with William in person.
 

@@ -1,11 +1,21 @@
 # Issue 4606: elliptic curves -- implement gross-Zagier L-functions
 
-Issue created by migration from https://trac.sagemath.org/ticket/4606
-
-Original creator: robertwb
-
-Original creation time: 2008-11-24 22:59:03
-
+archive/issues_004606.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  was craigcitro wuthrich\n\nMake it so one can do:\n\n```\nsage: e = EllipticCurve('37a')\nsage: K.<a> = QuadraticField(-40)\nsage: A = K.class_group().gen(0); A\nFractional ideal class (2, -1/2*a)\nsage: L = e.lseries_gross_zagier(A)  \nsage: L(2)\n0\nsage: L.taylor_series(2,5)\nnobody has seen this!\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4606\n\n",
+    "created_at": "2008-11-24T22:59:03Z",
+    "labels": [
+        "number theory",
+        "major",
+        "enhancement"
+    ],
+    "title": "elliptic curves -- implement gross-Zagier L-functions",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4606",
+    "user": "robertwb"
+}
+```
 Assignee: was
 
 CC:  was craigcitro wuthrich
@@ -25,38 +35,103 @@ nobody has seen this!
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4606
+
+
+
+
 
 ---
+
+archive/issue_comments_034530.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-11-25T06:44:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34530",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by robertwb created at 2008-11-25 06:46:16
+archive/issue_comments_034531.json:
+```json
+{
+    "body": "Still going to add some doctests right now, but here's the code. Note, however, the check \\sum_A L_A(E,s) = L(E/K,s) fails. :(",
+    "created_at": "2008-11-25T06:46:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34531",
+    "user": "robertwb"
+}
+```
 
 Still going to add some doctests right now, but here's the code. Note, however, the check \sum_A L_A(E,s) = L(E/K,s) fails. :(
 
 
+
 ---
+
+archive/issue_comments_034532.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-11-25T08:17:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34532",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_034533.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-11-28T11:10:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34533",
+    "user": "craigcitro"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by craigcitro created at 2008-11-28 11:38:29
+archive/issue_comments_034534.json:
+```json
+{
+    "body": "So I've attached a patch, which at least fixes a few issues. This patch fixes two definite bugs:\n\n* In `E.lseries_gross_zagier(A)`, you were caching the value -- no matter what value of `A` was getting passed in! That was an easy fix. :) Unfortunately, after fixing that, there were still issues. \n\n* There was a subtle issue in `I.quadratic_form()`, for `I` an ideal in a quadratic number field. For instance, with just the first two patches above, taking `K = QuadraticField(-40)` and `I` the trivial element in the class group, the code returned `x^2 + 40*y^2` for `I.quadratic_form()`. The underlying issue was one of choice of generators: you were using `K.gen()` where you really needed `K.ring_of_integers().gen()`, because you needed to know that something generated all of `I` over `ZZ`, not just `QQ`. I'm **fairly** certain that the current code is correct, but it's after 2AM, so someone should double check me. \n\nSo, now that those are fixed, we go back to the example Robert points out in the code: \n\n```\nsage: E = EllipticCurve('37a')\nsage: K.<a> = QuadraticField(-40)\nsage: A = K.class_group().gen(0)\nsage: L = E.lseries_gross_zagier(A)\nsage: LL = E.lseries_gross_zagier(A**2)\nsage: L(2) + LL(2)\n0.506799279512368\n\nsage: E.lseries()(2) * E.quadratic_twist(-40).lseries()(2)\n0.502803417587467\n```\n\n\nSo we're now quite close. In particular, I wonder if there isn't rounding going on:\n\n\n```\nsage: E.lseries().taylor_series(2,5) * E.quadratic_twist(-40).lseries().taylor_series(2,5)\n0.50 + 0.38*z - 0.16*z^2 + 0.0078*z^3 + 0.070*z^4 - 0.039*z^5 + O(z^6)\n```\n\n\nThat definitely seems to suggest small precision to me. In any event, we're getting close:\n\n\n```\nsage: L.taylor_series(2,5) + LL.taylor_series(2,5)\n0.506799279512368 + 0.360199571567893*z - 0.122141848388581*z^2 - 0.00635398874570253*z^3 + 0.0383995215484257*z^4 + O(z^5)\n\nsage: L.taylor_series(2,5) + LL.taylor_series(2,5) - (E.lseries().taylor_series(2,5) * E.quadratic_twist(-40).lseries().taylor_series(2,5))\n-0.016*z + 0.035*z^2 - 0.014*z^3 - 0.031*z^4 + O(z^5)\n```\n\n\nI'll cook up a few more examples and post what I find.",
+    "created_at": "2008-11-28T11:38:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34534",
+    "user": "craigcitro"
+}
+```
 
 So I've attached a patch, which at least fixes a few issues. This patch fixes two definite bugs:
 
- * In `E.lseries_gross_zagier(A)`, you were caching the value -- no matter what value of `A` was getting passed in! That was an easy fix. :) Unfortunately, after fixing that, there were still issues. 
+* In `E.lseries_gross_zagier(A)`, you were caching the value -- no matter what value of `A` was getting passed in! That was an easy fix. :) Unfortunately, after fixing that, there were still issues. 
 
- * There was a subtle issue in `I.quadratic_form()`, for `I` an ideal in a quadratic number field. For instance, with just the first two patches above, taking `K = QuadraticField(-40)` and `I` the trivial element in the class group, the code returned `x^2 + 40*y^2` for `I.quadratic_form()`. The underlying issue was one of choice of generators: you were using `K.gen()` where you really needed `K.ring_of_integers().gen()`, because you needed to know that something generated all of `I` over `ZZ`, not just `QQ`. I'm *fairly* certain that the current code is correct, but it's after 2AM, so someone should double check me. 
+* There was a subtle issue in `I.quadratic_form()`, for `I` an ideal in a quadratic number field. For instance, with just the first two patches above, taking `K = QuadraticField(-40)` and `I` the trivial element in the class group, the code returned `x^2 + 40*y^2` for `I.quadratic_form()`. The underlying issue was one of choice of generators: you were using `K.gen()` where you really needed `K.ring_of_integers().gen()`, because you needed to know that something generated all of `I` over `ZZ`, not just `QQ`. I'm **fairly** certain that the current code is correct, but it's after 2AM, so someone should double check me. 
 
 So, now that those are fixed, we go back to the example Robert points out in the code: 
 
@@ -98,16 +173,38 @@ sage: L.taylor_series(2,5) + LL.taylor_series(2,5) - (E.lseries().taylor_series(
 I'll cook up a few more examples and post what I find.
 
 
+
 ---
 
-Comment by robertwb created at 2008-11-28 18:12:14
+archive/issue_comments_034535.json:
+```json
+{
+    "body": "Excellent. That's looking very good. I was very tired the day I was finishing that up, so I'm glad you caught these errors.",
+    "created_at": "2008-11-28T18:12:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34535",
+    "user": "robertwb"
+}
+```
 
 Excellent. That's looking very good. I was very tired the day I was finishing that up, so I'm glad you caught these errors.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-28 18:25:37
+archive/issue_comments_034536.json:
+```json
+{
+    "body": "Replying to [comment:3 robertwb]:\n> Excellent. That's looking very good. I was very tired the day I was finishing that up, so I'm glad you caught these errors. \n\nShould this ticker be \"[with patch, needs review]\" ? \n\nCheers,\n\nMichael",
+    "created_at": "2008-11-28T18:25:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34536",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:3 robertwb]:
 > Excellent. That's looking very good. I was very tired the day I was finishing that up, so I'm glad you caught these errors. 
@@ -119,102 +216,258 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by robertwb created at 2008-11-28 18:28:40
+archive/issue_comments_034537.json:
+```json
+{
+    "body": "No, I don't think so yet (but if Craig is happy with it, then sure).",
+    "created_at": "2008-11-28T18:28:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34537",
+    "user": "robertwb"
+}
+```
 
 No, I don't think so yet (but if Craig is happy with it, then sure).
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-07-20 19:50:53
+archive/issue_comments_034538.json:
+```json
+{
+    "body": "Changing assignee from was to davidloeffler.",
+    "created_at": "2009-07-20T19:50:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34538",
+    "user": "davidloeffler"
+}
+```
 
 Changing assignee from was to davidloeffler.
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-07-20 19:50:53
+archive/issue_comments_034539.json:
+```json
+{
+    "body": "Changing component from number theory to elliptic curves.",
+    "created_at": "2009-07-20T19:50:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34539",
+    "user": "davidloeffler"
+}
+```
 
 Changing component from number theory to elliptic curves.
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-10-09 09:12:22
+archive/issue_comments_034540.json:
+```json
+{
+    "body": "Remove assignee davidloeffler.",
+    "created_at": "2009-10-09T09:12:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34540",
+    "user": "davidloeffler"
+}
+```
 
 Remove assignee davidloeffler.
 
 
+
 ---
 
-Comment by chapoton created at 2013-09-19 19:54:38
+archive/issue_comments_034541.json:
+```json
+{
+    "body": "for the **patchbots**:\n\napply only trac_4606_gross_zagier_lseries_rebased.patch",
+    "created_at": "2013-09-19T19:54:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34541",
+    "user": "chapoton"
+}
+```
 
-for the *patchbots*:
+for the **patchbots**:
 
 apply only trac_4606_gross_zagier_lseries_rebased.patch
 
 
+
 ---
+
+archive/issue_comments_034542.json:
+```json
+{
+    "body": "Attachment\n\nfolded all three patches and rebased on 5.12.beta5",
+    "created_at": "2013-09-20T16:09:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34542",
+    "user": "chapoton"
+}
+```
 
 Attachment
 
 folded all three patches and rebased on 5.12.beta5
 
 
+
 ---
 
-Comment by chapoton created at 2013-10-15 19:25:36
+archive/issue_comments_034543.json:
+```json
+{
+    "body": "apply trac_4606_gross_zagier_lseries_rebased.patch",
+    "created_at": "2013-10-15T19:25:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34543",
+    "user": "chapoton"
+}
+```
 
 apply trac_4606_gross_zagier_lseries_rebased.patch
 
 
+
 ---
 
-Comment by chapoton created at 2014-01-09 19:34:53
+archive/issue_comments_034544.json:
+```json
+{
+    "body": "Changing status from new to needs_info.",
+    "created_at": "2014-01-09T19:34:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34544",
+    "user": "chapoton"
+}
+```
 
 Changing status from new to needs_info.
 
 
+
 ---
 
-Comment by chapoton created at 2014-01-09 19:34:53
+archive/issue_comments_034545.json:
+```json
+{
+    "body": "New commits:",
+    "created_at": "2014-01-09T19:34:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34545",
+    "user": "chapoton"
+}
+```
 
 New commits:
 
 
+
 ---
 
-Comment by chapoton created at 2014-01-09 19:35:06
+archive/issue_comments_034546.json:
+```json
+{
+    "body": "Changing status from needs_info to needs_work.",
+    "created_at": "2014-01-09T19:35:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34546",
+    "user": "chapoton"
+}
+```
 
 Changing status from needs_info to needs_work.
 
 
+
 ---
 
-Comment by git created at 2015-04-25 16:21:04
+archive/issue_comments_034547.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2015-04-25T16:21:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34547",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by git created at 2015-04-26 07:54:06
+archive/issue_comments_034548.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2015-04-26T07:54:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34548",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by git created at 2015-05-01 19:54:54
+archive/issue_comments_034549.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2015-05-01T19:54:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34549",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by chapoton created at 2015-05-02 07:32:18
+archive/issue_comments_034550.json:
+```json
+{
+    "body": "It seems that the Dirichlet coefficients of\n\n- the product of Dirichlet series for E and its twists\n- the sum of Dirichlet series for (E,A) over all classes A\n\ndo not quite exactly match. I have not been able to locate the error so far. It could be either in the quadratic form code implemented here or elsewhere. Quadratic forms theta series should be checked against the generic implementation of theta series.",
+    "created_at": "2015-05-02T07:32:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34550",
+    "user": "chapoton"
+}
+```
 
 It seems that the Dirichlet coefficients of
 
@@ -224,25 +477,58 @@ It seems that the Dirichlet coefficients of
 do not quite exactly match. I have not been able to locate the error so far. It could be either in the quadratic form code implemented here or elsewhere. Quadratic forms theta series should be checked against the generic implementation of theta series.
 
 
+
 ---
 
-Comment by chapoton created at 2015-05-02 07:40:06
+archive/issue_comments_034551.json:
+```json
+{
+    "body": "Apparently, the theta series is good (but slower than the generic implementation).\n\nSo the problem must be in the Dirichlet convolution code",
+    "created_at": "2015-05-02T07:40:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34551",
+    "user": "chapoton"
+}
+```
 
 Apparently, the theta series is good (but slower than the generic implementation).
 
 So the problem must be in the Dirichlet convolution code
 
 
+
 ---
 
-Comment by git created at 2015-05-02 14:00:30
+archive/issue_comments_034552.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2015-05-02T14:00:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34552",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by chapoton created at 2015-05-02 14:22:47
+archive/issue_comments_034553.json:
+```json
+{
+    "body": "Hum, here is the current state of affairs:\n\n```\nsage: E = EllipticCurve('37a')\nsage: K.<a> = QuadraticField(-40)\nsage: A = K.class_group().gen(0)\nsage: L = E.lseries_gross_zagier(A)\nsage: LL = E.lseries_gross_zagier(A**2)\nsage: L(2) + LL(2)\n0.506799279512368\nsage: E.lseries()(2) * E.quadratic_twist(-40).lseries()(2)\n0.502803417587467\n```\n\nNot so good, in fact. Now let us compare Taylor expansions:\n\n```\nsage: L.taylor_series(2, 5)+LL.taylor_series(2, 5)\n0.506799279512368 + 0.360199571567893*z - 0.122141848388581*z^2 - 0.00635398874570253*z^3 + 0.0383995215484257*z^4 + O(z^5)\nsage: E.lseries().taylor_series(2,series_prec=5) * E.quadratic_twist(-40).lseries().taylor_series(2,series_prec=5)\n0.502803417587467 + 0.374948906665456*z - 0.144641137632262*z^2 + 0.00702138852027905*z^3 + 0.0487513598755609*z^4 + O(z^5)\n```\n\nNot far, but definitely not good. Note that the syntax of taylor expansion differs.",
+    "created_at": "2015-05-02T14:22:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34553",
+    "user": "chapoton"
+}
+```
 
 Hum, here is the current state of affairs:
 
@@ -270,16 +556,38 @@ sage: E.lseries().taylor_series(2,series_prec=5) * E.quadratic_twist(-40).lserie
 Not far, but definitely not good. Note that the syntax of taylor expansion differs.
 
 
+
 ---
 
-Comment by git created at 2015-05-02 16:01:58
+archive/issue_comments_034554.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2015-05-02T16:01:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34554",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by chapoton created at 2015-05-02 16:23:23
+archive/issue_comments_034555.json:
+```json
+{
+    "body": "I think that I have checked fully the computation of the Dirichet coefficients.\n\nSo well... maybe something is wrong in the parameters given to Dokchitser program ?\n\n```\nsage: e = EllipticCurve('37a')\nsage: K.<a> = QuadraticField(-40)\nsage: A = K.class_group().gen(0)\nsage: from sage.modular.modform.l_series import GrossZagierLseries\nsage: G = GrossZagierLseries(e, A)\nsage: G._dokchister.check_functional_equation()\n-80.1679727952639\nsage: G = GrossZagierLseries(e, A**2)\nsage: G._dokchister.check_functional_equation()\n47.5616711441054\n```\n",
+    "created_at": "2015-05-02T16:23:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34555",
+    "user": "chapoton"
+}
+```
 
 I think that I have checked fully the computation of the Dirichet coefficients.
 
@@ -300,23 +608,56 @@ sage: G._dokchister.check_functional_equation()
 
 
 
+
 ---
 
-Comment by git created at 2015-05-02 18:23:37
+archive/issue_comments_034556.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2015-05-02T18:23:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34556",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by git created at 2015-05-02 18:29:21
+archive/issue_comments_034557.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2015-05-02T18:29:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34557",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by chapoton created at 2015-05-02 18:53:59
+archive/issue_comments_034558.json:
+```json
+{
+    "body": "This is now working\n\n```\nsage: sage: e = EllipticCurve('37a')\nsage: sage: K.<a> = QuadraticField(-40)\nsage: sage: A = K.class_group().gen(0)\nsage: sage: from sage.modular.modform.l_series import GrossZagierLseries\nsage: sage: G = GrossZagierLseries(e, A)\nsage: sage: G._dokchister.check_functional_equation()\n2.77555756156289e-17\nsage: sage: G = GrossZagierLseries(e, A**2)\nsage: sage: G._dokchister.check_functional_equation()\n-3.64291929955129e-17\n```\n\nAfter six years !",
+    "created_at": "2015-05-02T18:53:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34558",
+    "user": "chapoton"
+}
+```
 
 This is now working
 
@@ -336,30 +677,74 @@ sage: sage: G._dokchister.check_functional_equation()
 After six years !
 
 
+
 ---
 
-Comment by cremona created at 2015-05-02 19:03:36
+archive/issue_comments_034559.json:
+```json
+{
+    "body": "Congratulations! I will look at it, but at the moment I am rebuilding with #18340 (new Pari version), and this should surely be tested on top of that?",
+    "created_at": "2015-05-02T19:03:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34559",
+    "user": "cremona"
+}
+```
 
 Congratulations! I will look at it, but at the moment I am rebuilding with #18340 (new Pari version), and this should surely be tested on top of that?
 
 
+
 ---
 
-Comment by cremona created at 2015-05-04 12:04:28
+archive/issue_comments_034560.json:
+```json
+{
+    "body": "I just wrote a report which trac swallowed and deleted as I was not logged in.  I am not going to rewrite it!  More after I have done some more testing.",
+    "created_at": "2015-05-04T12:04:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34560",
+    "user": "cremona"
+}
+```
 
 I just wrote a report which trac swallowed and deleted as I was not logged in.  I am not going to rewrite it!  More after I have done some more testing.
 
 
+
 ---
 
-Comment by cremona created at 2015-05-04 12:05:26
+archive/issue_comments_034561.json:
+```json
+{
+    "body": "Why is this not \"needs review\"?",
+    "created_at": "2015-05-04T12:05:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34561",
+    "user": "cremona"
+}
+```
 
 Why is this not "needs review"?
 
 
+
 ---
 
-Comment by chapoton created at 2015-05-04 12:14:27
+archive/issue_comments_034562.json:
+```json
+{
+    "body": "I see some remaining things that should be done:\n\n- maybe use the generic theta function code if it is faster than the one provided here for binary quadratic forms (as it seems to be)\n\n- make sure that the syntax is similar to the other L-functions we have\n\n- test with many curves and many quadratic number fields\n\n- have an expert say something about the conductor. I changed it using my very small understanding of Dokchister parameters and it worked. But I am not very sure if it is the right answer for all curves and all fields.",
+    "created_at": "2015-05-04T12:14:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34562",
+    "user": "chapoton"
+}
+```
 
 I see some remaining things that should be done:
 
@@ -372,9 +757,20 @@ I see some remaining things that should be done:
 - have an expert say something about the conductor. I changed it using my very small understanding of Dokchister parameters and it worked. But I am not very sure if it is the right answer for all curves and all fields.
 
 
+
 ---
 
-Comment by cremona created at 2015-05-04 13:33:26
+archive/issue_comments_034563.json:
+```json
+{
+    "body": "Replying to [comment:33 chapoton]:\n> I see some remaining things that should be done:\n> \n> - maybe use the generic theta function code if it is faster than the one provided here for binary quadratic forms (as it seems to be)\n\nSurely such a possible improvement can be noted for later work, and not delay this?\n\n> \n> - make sure that the syntax is similar to the other L-functions we have\n\nGood point.  \n\n> \n> - test with many curves and many quadratic number fields\n>\n\nI tested with one curve and many fields.  This led to the one suggestion I have:\n\n- somewhere, perhaps in the constructor for GrossZagierLseries, test that the ideal class is associated to an imaginary quadratic field.  If you construct it from an ideal in a real quadratic field there is a resulting error in the quadratic forms code, and this should be more graceful.\n\nJohn\n \n> - have an expert say something about the conductor. I changed it using my very small understanding of Dokchister parameters and it worked. But I am not very sure if it is the right answer for all curves and all fields.",
+    "created_at": "2015-05-04T13:33:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34563",
+    "user": "cremona"
+}
+```
 
 Replying to [comment:33 chapoton]:
 > I see some remaining things that should be done:
@@ -401,45 +797,111 @@ John
 > - have an expert say something about the conductor. I changed it using my very small understanding of Dokchister parameters and it worked. But I am not very sure if it is the right answer for all curves and all fields.
 
 
+
 ---
 
-Comment by git created at 2015-05-04 15:10:13
+archive/issue_comments_034564.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2015-05-04T15:10:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34564",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by cremona created at 2015-05-04 16:46:01
+archive/issue_comments_034565.json:
+```json
+{
+    "body": "Thanks for the IQF patch.\nWe should have someone look at the conductor though.  I won't have time (and would have to look things up for sure). Who?",
+    "created_at": "2015-05-04T16:46:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34565",
+    "user": "cremona"
+}
+```
 
 Thanks for the IQF patch.
 We should have someone look at the conductor though.  I won't have time (and would have to look things up for sure). Who?
 
 
+
 ---
 
-Comment by git created at 2015-05-04 19:52:17
+archive/issue_comments_034566.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2015-05-04T19:52:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34566",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by git created at 2015-05-13 09:59:58
+archive/issue_comments_034567.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2015-05-13T09:59:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34567",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by git created at 2015-05-13 12:16:57
+archive/issue_comments_034568.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2015-05-13T12:16:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34568",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by chapoton created at 2015-05-13 12:18:40
+archive/issue_comments_034569.json:
+```json
+{
+    "body": "Now working better, but not perfectly (some problems with trivial ideal classes)\n\n```\nsage: K=QuadraticField(-79)\nsage: K.class_group()\nClass group of order 5 with structure C5 of Number Field in a with defining polynomial x^2 + 79\nsage: A=K.class_group().gen()\nsage: E=EllipticCurve('433a1')\nsage: sum(E.lseries_gross_zagier(A**i)(2) for i in range(5))\n0.173957331997956\nsage: E.lseries()(2)*E.quadratic_twist(-79).lseries()(2)\n0.327922081982688\nsage: lgz=E.lseries_gross_zagier(A)\nsage: lgz._dokchister.check_functional_equation()\n8.32667268468867e-17\nsage: lgz=E.lseries_gross_zagier(A**2)\nsage: lgz._dokchister.check_functional_equation()\n-2.20309881449055e-16\nsage: lgz=E.lseries_gross_zagier(A**3)\nsage: lgz._dokchister.check_functional_equation()\n-2.20309881449055e-16\nsage: lgz=E.lseries_gross_zagier(A**4)\nsage: lgz._dokchister.check_functional_equation()\n8.32667268468867e-17\nsage: lgz=E.lseries_gross_zagier(A**5)\nsage: lgz._dokchister.check_functional_equation()\n-1383.90668128107\n```\n",
+    "created_at": "2015-05-13T12:18:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34569",
+    "user": "chapoton"
+}
+```
 
 Now working better, but not perfectly (some problems with trivial ideal classes)
 
@@ -472,9 +934,20 @@ sage: lgz._dokchister.check_functional_equation()
 
 
 
+
 ---
 
-Comment by chapoton created at 2015-05-13 12:30:04
+archive/issue_comments_034570.json:
+```json
+{
+    "body": "Is the following thing normal ?\n\n```\nsage: K=QuadraticField(-79)\nsage: A=K.class_group().gen()\nsage: [(A**i).ideal().quadratic_form().discriminant() for i in range(5)]\n[-316, -79, -79, -79, -79]\n```\n",
+    "created_at": "2015-05-13T12:30:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34570",
+    "user": "chapoton"
+}
+```
 
 Is the following thing normal ?
 
@@ -487,60 +960,148 @@ sage: [(A**i).ideal().quadratic_form().discriminant() for i in range(5)]
 
 
 
+
 ---
 
-Comment by git created at 2015-05-13 13:39:26
+archive/issue_comments_034571.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2015-05-13T13:39:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34571",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by chapoton created at 2015-05-13 13:48:22
+archive/issue_comments_034572.json:
+```json
+{
+    "body": "Ok. Now everything seems to work fine. As far as I can tell.\n\nThere remains to add a little more doc.",
+    "created_at": "2015-05-13T13:48:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34572",
+    "user": "chapoton"
+}
+```
 
 Ok. Now everything seems to work fine. As far as I can tell.
 
 There remains to add a little more doc.
 
 
+
 ---
 
-Comment by git created at 2015-05-17 19:45:07
+archive/issue_comments_034573.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2015-05-17T19:45:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34573",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by git created at 2015-05-17 19:47:29
+archive/issue_comments_034574.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2015-05-17T19:47:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34574",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by chapoton created at 2015-05-17 19:58:12
+archive/issue_comments_034575.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2015-05-17T19:58:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34575",
+    "user": "chapoton"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by chapoton created at 2015-05-17 19:58:12
+archive/issue_comments_034576.json:
+```json
+{
+    "body": "Anybody interested, please give me feed back. It seems to work.",
+    "created_at": "2015-05-17T19:58:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34576",
+    "user": "chapoton"
+}
+```
 
 Anybody interested, please give me feed back. It seems to work.
 
 
+
 ---
 
-Comment by chapoton created at 2015-06-26 11:31:51
+archive/issue_comments_034577.json:
+```json
+{
+    "body": "ping ?",
+    "created_at": "2015-06-26T11:31:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34577",
+    "user": "chapoton"
+}
+```
 
 ping ?
 
 
+
 ---
 
-Comment by wuthrich created at 2015-06-28 20:15:39
+archive/issue_comments_034578.json:
+```json
+{
+    "body": "... pong!\n\nI added a little bit more to the documentation. Just pointing to the article is not enough.\n\nI tested this (merged into 6.8.beta6) and all passed. \n----\nNew commits:",
+    "created_at": "2015-06-28T20:15:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34578",
+    "user": "wuthrich"
+}
+```
 
 ... pong!
 
@@ -551,59 +1112,147 @@ I tested this (merged into 6.8.beta6) and all passed.
 New commits:
 
 
+
 ---
 
-Comment by wuthrich created at 2015-06-28 20:15:39
+archive/issue_comments_034579.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2015-06-28T20:15:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34579",
+    "user": "wuthrich"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by wuthrich created at 2015-06-28 20:17:03
+archive/issue_comments_034580.json:
+```json
+{
+    "body": "oops, sorry, something went wrong. I should be able fix that..",
+    "created_at": "2015-06-28T20:17:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34580",
+    "user": "wuthrich"
+}
+```
 
 oops, sorry, something went wrong. I should be able fix that..
 
 
+
 ---
 
-Comment by wuthrich created at 2015-06-28 20:17:03
+archive/issue_comments_034581.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_work.",
+    "created_at": "2015-06-28T20:17:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34581",
+    "user": "wuthrich"
+}
+```
 
 Changing status from positive_review to needs_work.
 
 
+
 ---
 
-Comment by wuthrich created at 2015-06-29 07:52:34
+archive/issue_comments_034582.json:
+```json
+{
+    "body": "done and retested.\n----\nNew commits:",
+    "created_at": "2015-06-29T07:52:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34582",
+    "user": "wuthrich"
+}
+```
 
 done and retested.
 ----
 New commits:
 
 
+
 ---
 
-Comment by wuthrich created at 2015-06-29 07:52:34
+archive/issue_comments_034583.json:
+```json
+{
+    "body": "Changing status from needs_work to positive_review.",
+    "created_at": "2015-06-29T07:52:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34583",
+    "user": "wuthrich"
+}
+```
 
 Changing status from needs_work to positive_review.
 
 
+
 ---
 
-Comment by wuthrich created at 2015-06-29 08:34:42
+archive/issue_comments_034584.json:
+```json
+{
+    "body": "There is one thing, I should add here, although I am in favour of putting this into sage: It is unlikely that this code will be used much. I might be wrong.",
+    "created_at": "2015-06-29T08:34:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34584",
+    "user": "wuthrich"
+}
+```
 
 There is one thing, I should add here, although I am in favour of putting this into sage: It is unlikely that this code will be used much. I might be wrong.
 
 
+
 ---
 
-Comment by cremona created at 2015-06-29 08:49:45
+archive/issue_comments_034585.json:
+```json
+{
+    "body": "You may well be right, and the fact that nothing much happened to this code for 7 years tends to support that.  But surely that does not matter -- far better that the code be here, properly documented and tested for the future, than that it should wither and die!",
+    "created_at": "2015-06-29T08:49:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34585",
+    "user": "cremona"
+}
+```
 
 You may well be right, and the fact that nothing much happened to this code for 7 years tends to support that.  But surely that does not matter -- far better that the code be here, properly documented and tested for the future, than that it should wither and die!
 
 
+
 ---
 
-Comment by vbraun created at 2015-06-29 22:31:25
+archive/issue_comments_034586.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2015-06-29T22:31:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4606",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4606#issuecomment-34586",
+    "user": "vbraun"
+}
+```
 
 Resolution: fixed

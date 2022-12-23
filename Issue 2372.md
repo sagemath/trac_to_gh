@@ -1,38 +1,98 @@
 # Issue 2372: [with patch, needs review] speedup to matrix_from_rows_and_columns
 
-Issue created by migration from https://trac.sagemath.org/ticket/2372
-
-Original creator: dfdeshom
-
-Original creation time: 2008-03-03 05:32:28
-
+archive/issues_002372.json:
+```json
+{
+    "body": "Assignee: dfdeshom\n\nWe make `matrix_from_rows_and_columns` a little faster by using well-known pyrex tricks.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2372\n\n",
+    "created_at": "2008-03-03T05:32:28Z",
+    "labels": [
+        "linear algebra",
+        "minor",
+        "bug"
+    ],
+    "title": "[with patch, needs review] speedup to matrix_from_rows_and_columns",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2372",
+    "user": "dfdeshom"
+}
+```
 Assignee: dfdeshom
 
 We make `matrix_from_rows_and_columns` a little faster by using well-known pyrex tricks.
 
+Issue created by migration from https://trac.sagemath.org/ticket/2372
+
+
+
+
 
 ---
 
-Comment by dfdeshom created at 2008-03-03 05:34:59
+archive/issue_comments_016004.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-03-03T05:34:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2372",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2372#issuecomment-16004",
+    "user": "dfdeshom"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by dfdeshom created at 2008-03-03 15:23:16
+archive/issue_comments_016005.json:
+```json
+{
+    "body": "Note: this is closely related to #2355, since speeding up  `matrix_from_rows_and_columns` will speed up `matrix.__getitem__()`",
+    "created_at": "2008-03-03T15:23:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2372",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2372#issuecomment-16005",
+    "user": "dfdeshom"
+}
+```
 
 Note: this is closely related to #2355, since speeding up  `matrix_from_rows_and_columns` will speed up `matrix.__getitem__()`
 
 
+
 ---
 
-Comment by jsp created at 2008-03-12 13:49:57
+archive/issue_comments_016006.json:
+```json
+{
+    "body": "This patch looks cleaner(?)",
+    "created_at": "2008-03-12T13:49:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2372",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2372#issuecomment-16006",
+    "user": "jsp"
+}
+```
 
 This patch looks cleaner(?)
 
 
+
 ---
+
+archive/issue_comments_016007.json:
+```json
+{
+    "body": "Attachment\n\nSorry for the duplicate! I missed that. But I could not resist to send my patch!\n\nWhat do you think?\n\nCheers,\n\nJaap",
+    "created_at": "2008-03-12T13:52:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2372",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2372#issuecomment-16007",
+    "user": "jsp"
+}
+```
 
 Attachment
 
@@ -45,9 +105,20 @@ Cheers,
 Jaap
 
 
+
 ---
 
-Comment by dfdeshom created at 2008-03-12 18:34:02
+archive/issue_comments_016008.json:
+```json
+{
+    "body": "Replying to [comment:4 jsp]:\n> Sorry for the duplicate! I missed that. But I could not resist to send my patch!\n> \n> What do you think?\n> \n> Cheers,\n> \n> Jaap\n> \n\nHi Jaap,\nI'm willing to sacrifice a little elegance for speed gains. My function seems to be faster so far:\n\n```\nsage:  w = random_matrix(ZZ,2000,2000)\n\nsage: %time w.matrix_from_rows_and_columns(range(1000),range(1300));\nCPU times: user 0.42 s, sys: 0.13 s, total: 0.55 s\nWall time: 0.55\n\nsage: %time w.matrix_from_rows_and_columns(range(1000),range(1300));\nCPU times: user 0.48 s, sys: 0.05 s, total: 0.53 s\nWall time: 0.54\n\nsage: %time w.matrix_from_rows_and_columns(range(1000),range(1300));\nCPU times: user 0.49 s, sys: 0.05 s, total: 0.54 s\nWall time: 0.53\n```\n\n\nvs\n\n```\nLoading SAGE library. Current Mercurial branch is: jaap\n\nsage:  w = random_matrix(ZZ,2000,2000)\n\nsage: %time w.matrix_from_rows_and_columns(range(1000),range(1300));\nCPU times: user 0.73 s, sys: 0.12 s, total: 0.84 s\nWall time: 0.84\n\nsage: %time w.matrix_from_rows_and_columns(range(1000),range(1300));\nCPU times: user 0.74 s, sys: 0.10 s, total: 0.84 s\nWall time: 0.84\n\nsage: %time w.matrix_from_rows_and_columns(range(1000),range(1300));\nCPU times: user 0.72 s, sys: 0.12 s, total: 0.84 s\nWall time: 0.83\n```\n\n\nAll times are on sage.math. If you can do better, great :)",
+    "created_at": "2008-03-12T18:34:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2372",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2372#issuecomment-16008",
+    "user": "dfdeshom"
+}
+```
 
 Replying to [comment:4 jsp]:
 > Sorry for the duplicate! I missed that. But I could not resist to send my patch!
@@ -103,9 +174,20 @@ Wall time: 0.83
 All times are on sage.math. If you can do better, great :)
 
 
+
 ---
 
-Comment by jsp created at 2008-03-14 13:26:32
+archive/issue_comments_016009.json:
+```json
+{
+    "body": "Ok, time is money. So I better give a positive review.\n\nOne question before I do so:\nwhy not cdef i an j?\n\n```\n        cdef Py_ssize_t nrows, ncols,i,j,k,r\n\n```\n\n\nAll test in deve/sage/sage/matrix passed.",
+    "created_at": "2008-03-14T13:26:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2372",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2372#issuecomment-16009",
+    "user": "jsp"
+}
+```
 
 Ok, time is money. So I better give a positive review.
 
@@ -121,14 +203,38 @@ why not cdef i an j?
 All test in deve/sage/sage/matrix passed.
 
 
+
 ---
+
+archive/issue_comments_016010.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-03-14T14:36:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2372",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2372#issuecomment-16010",
+    "user": "dfdeshom"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by dfdeshom created at 2008-03-14 14:38:18
+archive/issue_comments_016011.json:
+```json
+{
+    "body": "Replying to [comment:6 jsp]:\n> why not cdef i an j?\n> {{{\n>         cdef Py_ssize_t nrows, ncols,i,j,k,r\n> \n> }}}\n\nGood point. I've added these declarations and updated the patch (2372.patch). All tests in sage/matrix pass.",
+    "created_at": "2008-03-14T14:38:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2372",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2372#issuecomment-16011",
+    "user": "dfdeshom"
+}
+```
 
 Replying to [comment:6 jsp]:
 > why not cdef i an j?
@@ -140,22 +246,55 @@ Replying to [comment:6 jsp]:
 Good point. I've added these declarations and updated the patch (2372.patch). All tests in sage/matrix pass.
 
 
+
 ---
 
-Comment by jsp created at 2008-03-14 18:34:38
+archive/issue_comments_016012.json:
+```json
+{
+    "body": "I had that tested already :)",
+    "created_at": "2008-03-14T18:34:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2372",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2372#issuecomment-16012",
+    "user": "jsp"
+}
+```
 
 I had that tested already :)
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-16 00:01:58
+archive/issue_comments_016013.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-03-16T00:01:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2372",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2372#issuecomment-16013",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-16 00:01:58
+archive/issue_comments_016014.json:
+```json
+{
+    "body": "Merged 2372.patch in Sage 2.10.4.rc0",
+    "created_at": "2008-03-16T00:01:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2372",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2372#issuecomment-16014",
+    "user": "mabshoff"
+}
+```
 
 Merged 2372.patch in Sage 2.10.4.rc0

@@ -1,11 +1,21 @@
 # Issue 6742: Stylesheets are not always loaded in Chrome
 
-Issue created by migration from https://trac.sagemath.org/ticket/6742
-
-Original creator: mpatel
-
-Original creation time: 2009-08-14 05:26:01
-
+archive/issues_006742.json:
+```json
+{
+    "body": "Assignee: boothby\n\nStart a local Sage notebook server and open a worksheet list or any worksheet in Chrome.  The HTML is rendered strangely, as if `main.css` has not been retrieved.  In particular, \"Searching for Sage server...\" is always visible at the top of a worksheet, as are the slide controls.\n\nHowever, the \"Edit,\" \"Text,\" \"Undo,\" \"Share,\" and \"Publish\" pages, say, are rendered properly.\n\nThis happens in Chrome 2 on Windows XP when connecting to a Fedora 10 Linux Sage notebook server on the same subnet.\n\n[This](http://code.google.com/p/chromium/issues/detail?id=4181) might be relevant.\n\nCuriously, this **does not** happen with worksheets at `sagenb.org`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6742\n\n",
+    "created_at": "2009-08-14T05:26:01Z",
+    "labels": [
+        "notebook",
+        "major",
+        "bug"
+    ],
+    "title": "Stylesheets are not always loaded in Chrome",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6742",
+    "user": "mpatel"
+}
+```
 Assignee: boothby
 
 Start a local Sage notebook server and open a worksheet list or any worksheet in Chrome.  The HTML is rendered strangely, as if `main.css` has not been retrieved.  In particular, "Searching for Sage server..." is always visible at the top of a worksheet, as are the slide controls.
@@ -16,19 +26,47 @@ This happens in Chrome 2 on Windows XP when connecting to a Fedora 10 Linux Sage
 
 [This](http://code.google.com/p/chromium/issues/detail?id=4181) might be relevant.
 
-Curiously, this *does not* happen with worksheets at `sagenb.org`.
+Curiously, this **does not** happen with worksheets at `sagenb.org`.
+
+Issue created by migration from https://trac.sagemath.org/ticket/6742
+
+
+
 
 
 ---
+
+archive/issue_comments_055245.json:
+```json
+{
+    "body": "Attachment\n\nServe main.css with MIME type text/css.",
+    "created_at": "2009-08-14T06:40:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6742",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6742#issuecomment-55245",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
 Serve main.css with MIME type text/css.
 
 
+
 ---
 
-Comment by mpatel created at 2009-08-14 06:52:57
+archive/issue_comments_055246.json:
+```json
+{
+    "body": "With the attached patch, the notebook server now serves `main.css` with the MIME type `text/css`.  This placates Chrome, which now renders worksheets and the worksheet list properly.\n\nIn particular, the Web Inspector's console no longer contains the line\n\n```\nResource interpreted as stylesheet but transferred with MIME type text/plain.\n```\n\nabout `main.css`.  There are a similar messages\n\n```\nResource interpreted as script but transferred with MIME type text/plain.\nResource interpreted as other but transferred with MIME type text/x-javascript.\n```\n\nfor `main.js` and the jsMath extensions.  It seems that WebKit / Chrome lets this pass, for now.",
+    "created_at": "2009-08-14T06:52:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6742",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6742#issuecomment-55246",
+    "user": "mpatel"
+}
+```
 
 With the attached patch, the notebook server now serves `main.css` with the MIME type `text/css`.  This placates Chrome, which now renders worksheets and the worksheet list properly.
 
@@ -48,15 +86,37 @@ Resource interpreted as other but transferred with MIME type text/x-javascript.
 for `main.js` and the jsMath extensions.  It seems that WebKit / Chrome lets this pass, for now.
 
 
+
 ---
 
-Comment by mhansen created at 2009-09-01 22:43:39
+archive/issue_comments_055247.json:
+```json
+{
+    "body": "Looks good to me.  Yep, this should also be done for the javascript code that is served up by twisted.",
+    "created_at": "2009-09-01T22:43:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6742",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6742#issuecomment-55247",
+    "user": "mhansen"
+}
+```
 
 Looks good to me.  Yep, this should also be done for the javascript code that is served up by twisted.
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-02 05:15:57
+archive/issue_comments_055248.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-09-02T05:15:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6742",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6742#issuecomment-55248",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

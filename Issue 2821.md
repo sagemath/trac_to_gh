@@ -1,46 +1,117 @@
 # Issue 2821: get rid of anything "about this document" sections of any sage docs that say "send email to stein"
 
-Issue created by migration from https://trac.sagemath.org/ticket/2821
-
-Original creator: was
-
-Original creation time: 2008-04-06 04:04:03
-
+archive/issues_002821.json:
+```json
+{
+    "body": "Assignee: tba\n\nI'm tired of getting personal emails that are much better put on list.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2821\n\n",
+    "created_at": "2008-04-06T04:04:03Z",
+    "labels": [
+        "documentation",
+        "major",
+        "bug"
+    ],
+    "title": "get rid of anything \"about this document\" sections of any sage docs that say \"send email to stein\"",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2821",
+    "user": "was"
+}
+```
 Assignee: tba
 
 I'm tired of getting personal emails that are much better put on list.
 
+Issue created by migration from https://trac.sagemath.org/ticket/2821
+
+
+
+
 
 ---
+
+archive/issue_comments_019365.json:
+```json
+{
+    "body": "Attachment\n\ndoc patch",
+    "created_at": "2008-04-25T00:36:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2821",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2821#issuecomment-19365",
+    "user": "AlexGhitza"
+}
+```
 
 Attachment
 
 doc patch
 
 
+
 ---
 
-Comment by AlexGhitza created at 2008-04-25 00:36:50
+archive/issue_comments_019366.json:
+```json
+{
+    "body": "See the attached patch.",
+    "created_at": "2008-04-25T00:36:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2821",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2821#issuecomment-19366",
+    "user": "AlexGhitza"
+}
+```
 
 See the attached patch.
 
 
+
 ---
 
-Comment by wdj created at 2008-04-25 03:41:55
+archive/issue_comments_019367.json:
+```json
+{
+    "body": "Applies cleanly using hg_doc.apply and all the latex docs pass sage -t. Also, every change in the diff file looks reasonable. Looks like a good doc patch to me.",
+    "created_at": "2008-04-25T03:41:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2821",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2821#issuecomment-19367",
+    "user": "wdj"
+}
+```
 
 Applies cleanly using hg_doc.apply and all the latex docs pass sage -t. Also, every change in the diff file looks reasonable. Looks like a good doc patch to me.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-25 04:14:23
+archive/issue_comments_019368.json:
+```json
+{
+    "body": "Merged in Sage 3.0.1.alpha0",
+    "created_at": "2008-04-25T04:14:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2821",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2821#issuecomment-19368",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.1.alpha0
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-25 04:14:23
+archive/issue_comments_019369.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-04-25T04:14:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2821",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2821#issuecomment-19369",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

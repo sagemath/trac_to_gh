@@ -1,11 +1,21 @@
 # Issue 6785: Doctest failure in sage-4.1.1/devel/sage/doc/en/constructions/plotting.rst
 
-Issue created by migration from https://trac.sagemath.org/ticket/6785
-
-Original creator: drkirkby
-
-Original creation time: 2009-08-20 21:48:32
-
+archive/issues_006785.json:
+```json
+{
+    "body": "Assignee: was\n\nOn Solaris 10 update 7 (SPARC), the following test failed. Both ECL and Maxima were updated - ECL version 9.8.4, Maxima version 5.19.1. Sage was built with gcc 4.4.1\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nThu Aug 20 20:02:37 BST 2009\ndsage-trial tmp directory doesn't exist - creating ...\nThis script will run the unit tests for DSage\n```\n\n| Sage Version 4.1.1, Release Date: 2009-08-14                       |\n| Type notebook() for the GUI, and license() for information.        |\n<SNIP>\n\n\n```\n**********************************************************************\nFile \"/export/home/drkirkby/sage/sage-4.1.1/devel/sage/doc/en/constructions/plotting.rst\", line 209:\n    sage: maxima.eval('load(\"plotdf\");')\nExpected:\n    '\".../local/share/maxima/5.16.3/share/dynamics/plotdf.lisp\"'\nGot:\n    '\"/export/home/drkirkby/sage/sage-4.1.1/local/share/maxima/5.19.1/share/dynamics/plotdf.lisp\"'\n**********************************************************************\n1 items had failures:\n   1 of   3 in __main__.example_11\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /export/home/drkirkby/sage/sage-4.1.1/tmp/.doctest_plotting.py\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6785\n\n",
+    "created_at": "2009-08-20T21:48:32Z",
+    "labels": [
+        "graphics",
+        "major",
+        "bug"
+    ],
+    "title": "Doctest failure in sage-4.1.1/devel/sage/doc/en/constructions/plotting.rst",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6785",
+    "user": "drkirkby"
+}
+```
 Assignee: was
 
 On Solaris 10 update 7 (SPARC), the following test failed. Both ECL and Maxima were updated - ECL version 9.8.4, Maxima version 5.19.1. Sage was built with gcc 4.4.1
@@ -39,51 +49,134 @@ For whitespace errors, see the file /export/home/drkirkby/sage/sage-4.1.1/tmp/.d
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6785
+
+
+
+
 
 ---
 
-Comment by AlexGhitza created at 2009-08-20 23:40:03
+archive/issue_comments_055920.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-08-20T23:40:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6785",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6785#issuecomment-55920",
+    "user": "AlexGhitza"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-08-20 23:40:03
+archive/issue_comments_055921.json:
+```json
+{
+    "body": "Trivial: the Maxima version changed.  See attached patch.",
+    "created_at": "2009-08-20T23:40:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6785",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6785#issuecomment-55921",
+    "user": "AlexGhitza"
+}
+```
 
 Trivial: the Maxima version changed.  See attached patch.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-08-20 23:40:03
+archive/issue_comments_055922.json:
+```json
+{
+    "body": "Changing assignee from was to AlexGhitza.",
+    "created_at": "2009-08-20T23:40:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6785",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6785#issuecomment-55922",
+    "user": "AlexGhitza"
+}
+```
 
 Changing assignee from was to AlexGhitza.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-08-20 23:40:03
+archive/issue_comments_055923.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"maxima\".",
+    "created_at": "2009-08-20T23:40:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6785",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6785#issuecomment-55923",
+    "user": "AlexGhitza"
+}
+```
 
 Changing keywords from "" to "maxima".
 
 
+
 ---
+
+archive/issue_comments_055924.json:
+```json
+{
+    "body": "Attachment\n\napply after the spkg's at #6564 and #6699",
+    "created_at": "2009-08-20T23:41:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6785",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6785#issuecomment-55924",
+    "user": "AlexGhitza"
+}
+```
 
 Attachment
 
 apply after the spkg's at #6564 and #6699
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-02 10:59:07
+archive/issue_comments_055925.json:
+```json
+{
+    "body": "This is fixed by #6699.",
+    "created_at": "2009-09-02T10:59:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6785",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6785#issuecomment-55925",
+    "user": "mvngu"
+}
+```
 
 This is fixed by #6699.
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-02 10:59:29
+archive/issue_comments_055926.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-09-02T10:59:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6785",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6785#issuecomment-55926",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

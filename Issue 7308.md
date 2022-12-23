@@ -1,11 +1,21 @@
 # Issue 7308: cliquer's spkg-install does not work on cygwin
 
-Issue created by migration from https://trac.sagemath.org/ticket/7308
-
-Original creator: mhansen
-
-Original creation time: 2009-10-26 09:23:36
-
+archive/issues_007308.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  dkirkby was\n\nKeywords: cliquer\n\nThe section where SAGESOFLAGS are set assumes that the operating system is Linux, OS X, or Solaris.  The spkg-install script exists even if SAGE_PORT is set to yes.\n\n\nI'll post a patch and a new SPKG here shortly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7308\n\n",
+    "created_at": "2009-10-26T09:23:36Z",
+    "labels": [
+        "porting: Cygwin",
+        "major",
+        "bug"
+    ],
+    "title": "cliquer's spkg-install does not work on cygwin",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7308",
+    "user": "mhansen"
+}
+```
 Assignee: tbd
 
 CC:  dkirkby was
@@ -17,26 +27,65 @@ The section where SAGESOFLAGS are set assumes that the operating system is Linux
 
 I'll post a patch and a new SPKG here shortly.
 
+Issue created by migration from https://trac.sagemath.org/ticket/7308
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2009-10-26 09:30:01
+archive/issue_comments_061028.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-10-26T09:30:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7308",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7308#issuecomment-61028",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_061029.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-10-27T13:49:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7308",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7308#issuecomment-61029",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by drkirkby created at 2009-10-30 14:41:22
+archive/issue_comments_061030.json:
+```json
+{
+    "body": "I'm not in a position to test this, but if you need to make any changes, I would suggest the following would be helpful. Some are I admit code I introduced, which is probaby not necessary. None are particularly important. \n\n* There is no longer any need to have \n\n\n```\nif [ -n \"$SAGE_FORTRAN_LIB\" ] && [ ! -e \"$SAGE_FORTRAN_LIB\" ]; then\n    echo \"SAGE_FORTRAN_LIB is defined as $SAGE_FORTRAN_LIB, but does not exist\"\n    exit 1\nfi\n```\n \nsince code in the recent *prereq-0.4* (#7021) script checks this, so the above code is redundant. \n\n* There is no need to have the following line\n\n` if [ \"x$SAGE64\" = \"xyes\" ] || [ \"x$SAGE64\" = \"x1\" ]; then `\n\nIt should instead be replaced by\n\n   ` if [ \"x$SAGE64\" = \"xyes\" ]; then `\n\nsince some earlier code in the *prereq-0.3* script written by William only allows SAGE64 to be unset, or set to *yes* or *no*. It is not possible to set it to *1*, so there is no point testing if it is *1*. The same behaviour is followed in my recent updated to prereq-0.4 (#7021) and also to prereq-0.5 which I have awaiting review (#7352)\n\n* There is no need to have \n  {{{\n   # We exit here, since we are possibly on an unsupported platform.\n   if [ -n \"${SAGE_PORT:-x}\" ]; then\n       echo \"Cannot determine your platform or it is not supported... exiting\"\n       exit 1\n   else\n  }}}\nsince the recent *prereq-0.4* update will exit for **all** unsupported platforms unless SAGE_PORT is set to 'yes'.",
+    "created_at": "2009-10-30T14:41:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7308",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7308#issuecomment-61030",
+    "user": "drkirkby"
+}
+```
 
 I'm not in a position to test this, but if you need to make any changes, I would suggest the following would be helpful. Some are I admit code I introduced, which is probaby not necessary. None are particularly important. 
 
- * There is no longer any need to have 
+* There is no longer any need to have 
 
 
 ```
@@ -44,10 +93,11 @@ if [ -n "$SAGE_FORTRAN_LIB" ] && [ ! -e "$SAGE_FORTRAN_LIB" ]; then
     echo "SAGE_FORTRAN_LIB is defined as $SAGE_FORTRAN_LIB, but does not exist"
     exit 1
 fi
-}}} 
-since code in the recent ''prereq-0.4'' (#7021) script checks this, so the above code is redundant. 
+```
+ 
+since code in the recent *prereq-0.4* (#7021) script checks this, so the above code is redundant. 
 
- * There is no need to have the following line
+* There is no need to have the following line
 
 ` if [ "x$SAGE64" = "xyes" ] || [ "x$SAGE64" = "x1" ]; then `
 
@@ -55,79 +105,178 @@ It should instead be replaced by
 
    ` if [ "x$SAGE64" = "xyes" ]; then `
 
-since some earlier code in the ''prereq-0.3'' script written by William only allows SAGE64 to be unset, or set to ''yes'' or ''no''. It is not possible to set it to ''1'', so there is no point testing if it is ''1''. The same behaviour is followed in my recent updated to prereq-0.4 (#7021) and also to prereq-0.5 which I have awaiting review (#7352)
+since some earlier code in the *prereq-0.3* script written by William only allows SAGE64 to be unset, or set to *yes* or *no*. It is not possible to set it to *1*, so there is no point testing if it is *1*. The same behaviour is followed in my recent updated to prereq-0.4 (#7021) and also to prereq-0.5 which I have awaiting review (#7352)
 
- * There is no need to have 
+* There is no need to have 
   {{{
-    # We exit here, since we are possibly on an unsupported platform.
-    if [ -n "${SAGE_PORT:-x}" ]; then
-        echo "Cannot determine your platform or it is not supported... exiting"
-        exit 1
-    else
-   }}}
-since the recent ''prereq-0.4'' update will exit for '''all''' unsupported platforms unless SAGE_PORT is set to 'yes'.
+   # We exit here, since we are possibly on an unsupported platform.
+   if [ -n "${SAGE_PORT:-x}" ]; then
+       echo "Cannot determine your platform or it is not supported... exiting"
+       exit 1
+   else
+  }}}
+since the recent *prereq-0.4* update will exit for **all** unsupported platforms unless SAGE_PORT is set to 'yes'.
+
 
 
 ---
 
-Comment by was created at 2010-02-07 05:52:56
+archive/issue_comments_061031.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-02-07T05:52:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7308",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7308#issuecomment-61031",
+    "user": "was"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by was created at 2010-02-07 05:52:56
+archive/issue_comments_061032.json:
+```json
+{
+    "body": "The actual patch looks fine to me.    Kirkby's comments are all fine, but of course shouldn't be part of this ticket.  There is no point in confusing things by doing too much at once.",
+    "created_at": "2010-02-07T05:52:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7308",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7308#issuecomment-61032",
+    "user": "was"
+}
+```
 
 The actual patch looks fine to me.    Kirkby's comments are all fine, but of course shouldn't be part of this ticket.  There is no point in confusing things by doing too much at once.
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-10 16:53:06
+archive/issue_comments_061033.json:
+```json
+{
+    "body": "I think the existing package is called `cliquer-1.2.p3`.  Should we make the new one `p4`?",
+    "created_at": "2010-02-10T16:53:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7308",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7308#issuecomment-61033",
+    "user": "mpatel"
+}
+```
 
 I think the existing package is called `cliquer-1.2.p3`.  Should we make the new one `p4`?
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-10 23:45:02
+archive/issue_comments_061034.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_work.",
+    "created_at": "2010-02-10T23:45:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7308",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7308#issuecomment-61034",
+    "user": "mpatel"
+}
+```
 
 Changing status from positive_review to needs_work.
 
 
+
 ---
 
-Comment by was created at 2010-02-13 06:41:20
+archive/issue_comments_061035.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-02-13T06:41:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7308",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7308#issuecomment-61035",
+    "user": "was"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by was created at 2010-02-13 06:42:00
+archive/issue_comments_061036.json:
+```json
+{
+    "body": "I rebased Mike's patch, refereed it, and posted a new spkg with the rebased patch here:\n\n   http://wstein.org/home/wstein/ports/cygwin/cliquer-1.2.p4.spkg",
+    "created_at": "2010-02-13T06:42:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7308",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7308#issuecomment-61036",
+    "user": "was"
+}
+```
 
 I rebased Mike's patch, refereed it, and posted a new spkg with the rebased patch here:
 
    http://wstein.org/home/wstein/ports/cygwin/cliquer-1.2.p4.spkg
 
 
+
 ---
 
-Comment by was created at 2010-02-13 06:42:00
+archive/issue_comments_061037.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-02-13T06:42:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7308",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7308#issuecomment-61037",
+    "user": "was"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mvngu created at 2010-02-16 04:26:12
+archive/issue_comments_061038.json:
+```json
+{
+    "body": "Feel free to open another ticket to address the issues that drkirkby raised.",
+    "created_at": "2010-02-16T04:26:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7308",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7308#issuecomment-61038",
+    "user": "mvngu"
+}
+```
 
 Feel free to open another ticket to address the issues that drkirkby raised.
 
 
+
 ---
 
-Comment by mvngu created at 2010-02-16 04:26:12
+archive/issue_comments_061039.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-02-16T04:26:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7308",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7308#issuecomment-61039",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

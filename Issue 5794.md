@@ -1,11 +1,21 @@
 # Issue 5794: [with patch, needs review] G2 branching rules
 
-Issue created by migration from https://trac.sagemath.org/ticket/5794
-
-Original creator: bump
-
-Original creation time: 2009-04-16 01:16:30
-
+archive/issues_005794.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  sage-combinat\n\nThis patch implements branching rules for the following inclusions\nof Lie groups: \n\n\n```\nA1 in G2 (along short root) \nA2 in G2\nG2 in B3\nG2 in D4\n```\n\n\nIt goes on top of the following patches:\n\n\n```\ntrac_5721-a.patch\ntrac_5721-b.patch\ntrac_5751.patch\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5794\n\n",
+    "created_at": "2009-04-16T01:16:30Z",
+    "labels": [
+        "algebra",
+        "major",
+        "enhancement"
+    ],
+    "title": "[with patch, needs review] G2 branching rules",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5794",
+    "user": "bump"
+}
+```
 Assignee: tbd
 
 CC:  sage-combinat
@@ -32,31 +42,79 @@ trac_5751.patch
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5794
+
+
+
+
 
 ---
 
-Comment by bump created at 2009-04-16 04:59:41
+archive/issue_comments_045413.json:
+```json
+{
+    "body": "Changing assignee from tbd to joyner.",
+    "created_at": "2009-04-16T04:59:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45413",
+    "user": "bump"
+}
+```
 
 Changing assignee from tbd to joyner.
 
 
+
 ---
 
-Comment by bump created at 2009-04-16 04:59:41
+archive/issue_comments_045414.json:
+```json
+{
+    "body": "Changing component from algebra to group_theory.",
+    "created_at": "2009-04-16T04:59:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45414",
+    "user": "bump"
+}
+```
 
 Changing component from algebra to group_theory.
 
 
+
 ---
 
-Comment by bump created at 2009-04-16 04:59:41
+archive/issue_comments_045415.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"lie groups\".",
+    "created_at": "2009-04-16T04:59:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45415",
+    "user": "bump"
+}
+```
 
 Changing keywords from "" to "lie groups".
 
 
+
 ---
 
-Comment by bump created at 2009-04-18 13:09:12
+archive/issue_comments_045416.json:
+```json
+{
+    "body": "The last change indicates that I changed the owner from tbd to joyner. I don't\nremember doing that, and I don't see how I could have done it accidentally.\nMaybe someone else changed the owner, presumably wdj or mabshoff, but then\ntrac shouldn't show that I did. I am puzzled by this.\n\nHere are some comments about the G2=>A1 Levi branching rule. There is a\nbranching rule G2=>A1xA1 (rule = \"extended\"). This is not implemented yet.\nCurrently Weyl character rings are broke for reducible root systems. (I have a\npatch for that but it is not posted on trac yet.) I intend to implement branching\nto reducible root systems but first I want to do a few exceptional branching\nrules first before tackling the *many* cases of branching to reducible root systems.\n\nSo G2=>A1xA1 will come in a later patch but it is relevant here so I will discuss it.\n\nIn the branching rule G2=>A1xA1, the second A1 is almost but not\nquite the A1 in the G2=>A1 Levi branching rule. (The short root A1.) So it might\nseem that one should implement G2=>A1xA1 and then you would get the G2=>A1\n(rule = \"levi\") branching rule. However this is not quite true. The A1 in the G2=>A1\nbranching rule is GL(2) and the A1 in A1xA1 is SL(2).",
+    "created_at": "2009-04-18T13:09:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45416",
+    "user": "bump"
+}
+```
 
 The last change indicates that I changed the owner from tbd to joyner. I don't
 remember doing that, and I don't see how I could have done it accidentally.
@@ -79,9 +137,20 @@ seem that one should implement G2=>A1xA1 and then you would get the G2=>A1
 branching rule is GL(2) and the A1 in A1xA1 is SL(2).
 
 
+
 ---
 
-Comment by bump created at 2009-04-18 13:56:14
+archive/issue_comments_045417.json:
+```json
+{
+    "body": "I uploaded a second patch trac_5794-f4.patch which goes on top of\nthe first. It implements branching rules F4=>B3 (levi), F4=>C3 (levi)\nand F4=>B4 (extended).\n\nThere is another extended rule F4=>C3xA1 (not implemented yet,\nbut hopefully to be implemented later).\n\nIn contrast with G2, for F4, both Levi branching rules are redundant\nsince the Levi subgroups are not maximal. They factor through branching\nrules F4=>B4=>B3 and F4=>C3xA1=>C3. However I implemented them\nfor convenience. You can check directly that\nF4(x).branch(B3,rule=\"levi\") and\nF4(x).branch(B4,rule=\"extended\").branch(B3,rule=\"levi\") return the\nsame thing for x in F4.fundamental_weights().\n\nI compared the output for these rules against those that I could find in a book, \nPatera and Sankoff, Branching rules for representations of simple Lie algebras.",
+    "created_at": "2009-04-18T13:56:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45417",
+    "user": "bump"
+}
+```
 
 I uploaded a second patch trac_5794-f4.patch which goes on top of
 the first. It implements branching rules F4=>B3 (levi), F4=>C3 (levi)
@@ -102,9 +171,20 @@ I compared the output for these rules against those that I could find in a book,
 Patera and Sankoff, Branching rules for representations of simple Lie algebras.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-18 16:49:17
+archive/issue_comments_045418.json:
+```json
+{
+    "body": "Hi Dan,\n\nthe change in ownership happend because you changed the component to \"group_thoery\". For every ticket you work on and post patches you should accept it (see the bottom left), that way ownership stays with you.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-18T16:49:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45418",
+    "user": "mabshoff"
+}
+```
 
 Hi Dan,
 
@@ -115,50 +195,131 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by bump created at 2009-04-18 19:18:10
+archive/issue_comments_045419.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-04-18T19:18:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45419",
+    "user": "bump"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by bump created at 2009-04-18 19:18:10
+archive/issue_comments_045420.json:
+```json
+{
+    "body": "Changing assignee from joyner to bump.",
+    "created_at": "2009-04-18T19:18:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45420",
+    "user": "bump"
+}
+```
 
 Changing assignee from joyner to bump.
 
 
+
 ---
+
+archive/issue_comments_045421.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-05-06T20:16:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45421",
+    "user": "bump"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by bump created at 2009-05-06 20:21:36
+archive/issue_comments_045422.json:
+```json
+{
+    "body": "I'm taking the liberty of changing the milestone to 4.0 in case there\nis a chance of getting this merged. It is quite a substantial enhancement.",
+    "created_at": "2009-05-06T20:21:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45422",
+    "user": "bump"
+}
+```
 
 I'm taking the liberty of changing the milestone to 4.0 in case there
 is a chance of getting this merged. It is quite a substantial enhancement.
 
 
+
 ---
 
-Comment by bump created at 2009-05-07 04:28:09
+archive/issue_comments_045423.json:
+```json
+{
+    "body": "Here are some tests supplementing those implemented in the doctests:\n\nhttp://sporadic.stanford.edu/bump/branch.sage",
+    "created_at": "2009-05-07T04:28:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45423",
+    "user": "bump"
+}
+```
 
 Here are some tests supplementing those implemented in the doctests:
 
 http://sporadic.stanford.edu/bump/branch.sage
 
 
+
 ---
+
+archive/issue_comments_045424.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-05-12T15:27:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45424",
+    "user": "bump"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by bump created at 2009-05-16 22:26:44
+archive/issue_comments_045425.json:
+```json
+{
+    "body": "Is it possible to remove the first two patches:\n\n\n```\ntrac_5794.patch\ntrac_5794-f4.patch\n```\n\n\nThey are superceded by the other patches. I am going to be adding some\nmore patches to this series, and I think it would be less confusing if the\nfirst two patches are removed. I don't think I can do this without help\nfrom admin.\n\nDan",
+    "created_at": "2009-05-16T22:26:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45425",
+    "user": "bump"
+}
+```
 
 Is it possible to remove the first two patches:
 
@@ -177,26 +338,74 @@ from admin.
 Dan
 
 
+
 ---
+
+archive/issue_comments_045426.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-05-16T23:10:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45426",
+    "user": "bump"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_045427.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-05-20T20:23:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45427",
+    "user": "bump"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mvngu created at 2009-06-08 03:54:29
+archive/issue_comments_045428.json:
+```json
+{
+    "body": "Since I don't know the order in which patches should be applied, let alone which one to apply, I skimmed through all 4 patches. Most docstrings adhere to the ReST format, but some don't. I'm merely enforcing proper ReST formatting, not reviewing the patches.",
+    "created_at": "2009-06-08T03:54:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45428",
+    "user": "mvngu"
+}
+```
 
 Since I don't know the order in which patches should be applied, let alone which one to apply, I skimmed through all 4 patches. Most docstrings adhere to the ReST format, but some don't. I'm merely enforcing proper ReST formatting, not reviewing the patches.
 
 
+
 ---
 
-Comment by bump created at 2009-06-11 05:34:59
+archive/issue_comments_045429.json:
+```json
+{
+    "body": "Apply all four patches in order.\n\n\n```\ntrac_5794-revised.patch\ntrac_5794-continued.patch\ntrac_5794-exceptional.patch\ntrac_5794-more-exceptional.patch\n```\n\n\n> Most docstrings adhere to the ReST format, but some don't.\n\nIf you find nonconforming docstrings, please cite them by line number.\nThere is a lot of doc in these patches.",
+    "created_at": "2009-06-11T05:34:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45429",
+    "user": "bump"
+}
+```
 
 Apply all four patches in order.
 
@@ -215,9 +424,20 @@ If you find nonconforming docstrings, please cite them by line number.
 There is a lot of doc in these patches.
 
 
+
 ---
 
-Comment by mvngu created at 2009-06-19 21:52:02
+archive/issue_comments_045430.json:
+```json
+{
+    "body": "Replying to [comment:19 bump]:\n> Apply all four patches in order.\n> \n> {{{\n> trac_5794-revised.patch\n> trac_5794-continued.patch\n> trac_5794-exceptional.patch\n> trac_5794-more-exceptional.patch\n> }}}\n>\n> > Most docstrings adhere to the ReST format, but some don't.\n> \n> If you find nonconforming docstrings, please cite them by line number.\n> There is a lot of doc in these patches.\nNote that I'm not qualified to review the mathematical content of the patch. However, I would like to point out that the following patches and line numbers don't conform to ReST formatting:\n\n\n\nIn `trac_5794-revised.patch`:\n* Patching against the file `sage/combinat/root_system/type_A.py`, the examples section starting from line 117.\n* Patching against the file `sage/combinat/root_system/type_reducible.py`, the examples section starting from line 249.\n* Patching against the file `sage/combinat/root_system/weyl_characters.py`, the examples section starting from line 458, the example starting from line 1202, the examples section starting from line 1211, the example starting from line 1227, the examples section starting from line 1235, the example starting from line 1280, the example section starting from line 1299.\nIn `trac_5794-continued.patch`:\n* Patching against the file `sage/combinat/root_system/weyl_characters.py`, the example starting from line 1431, the example starting from line 1443, the example starting from line 1452, the example starting from line 1831, the example starting from line 1842.\nThe following files are not in the reference manual. You might want to consider exposing their features by adding them to the reference manual:\n1. `sage/combinat/root_system/type_A.py`\n2. `sage/combinat/root_system/type_reducible.py`",
+    "created_at": "2009-06-19T21:52:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45430",
+    "user": "mvngu"
+}
+```
 
 Replying to [comment:19 bump]:
 > Apply all four patches in order.
@@ -238,17 +458,30 @@ Note that I'm not qualified to review the mathematical content of the patch. How
 
 
 In `trac_5794-revised.patch`:
- * Patching against the file `sage/combinat/root_system/type_A.py`, the examples section starting from line 117.
- * Patching against the file `sage/combinat/root_system/type_reducible.py`, the examples section starting from line 249.
- * Patching against the file `sage/combinat/root_system/weyl_characters.py`, the examples section starting from line 458, the example starting from line 1202, the examples section starting from line 1211, the example starting from line 1227, the examples section starting from line 1235, the example starting from line 1280, the example section starting from line 1299.
+* Patching against the file `sage/combinat/root_system/type_A.py`, the examples section starting from line 117.
+* Patching against the file `sage/combinat/root_system/type_reducible.py`, the examples section starting from line 249.
+* Patching against the file `sage/combinat/root_system/weyl_characters.py`, the examples section starting from line 458, the example starting from line 1202, the examples section starting from line 1211, the example starting from line 1227, the examples section starting from line 1235, the example starting from line 1280, the example section starting from line 1299.
 In `trac_5794-continued.patch`:
- * Patching against the file `sage/combinat/root_system/weyl_characters.py`, the example starting from line 1431, the example starting from line 1443, the example starting from line 1452, the example starting from line 1831, the example starting from line 1842.
+* Patching against the file `sage/combinat/root_system/weyl_characters.py`, the example starting from line 1431, the example starting from line 1443, the example starting from line 1452, the example starting from line 1831, the example starting from line 1842.
 The following files are not in the reference manual. You might want to consider exposing their features by adding them to the reference manual:
- 1. `sage/combinat/root_system/type_A.py`
- 1. `sage/combinat/root_system/type_reducible.py`
+1. `sage/combinat/root_system/type_A.py`
+2. `sage/combinat/root_system/type_reducible.py`
+
 
 
 ---
+
+archive/issue_comments_045431.json:
+```json
+{
+    "body": "Attachment\n\nNicolas Thiery wrote the patch `trac_5794-reviewer-nt.patch`.\nIt is in the combinat patch queue. I took the liberty of uploading\nit.\n\nIt addresses at least some of the ReST complaints.\n\nI am changing the title back to [with patch, needs review] since\napart from the issue of the ReST formatting, the patches still\nneeds a technical review. The following remark is addressed\nto whoever does the technical review. (Brant Jones was suggested.)\n\nThe patches as posted differ slightly from the versions in the combinat queue.\nThe reason for the difference is that the meaning of the is_reducible\nCartan type attribute is changed by #4326. After #4326 (which preceed\nthese patches in the queue) the root system D2 is not reducible. See\n\nhttp://groups.google.com/group/sage-combinat-devel/msg/8b3569b4e2f2b7e1?hl=en\n\nand thread for discussion. (Note: the `patch cartan_type_temporary-1.patch` \nmentioned in that message was qfolded shortly afterwards.)",
+    "created_at": "2009-07-21T17:08:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45431",
+    "user": "bump"
+}
+```
 
 Attachment
 
@@ -274,9 +507,20 @@ and thread for discussion. (Note: the `patch cartan_type_temporary-1.patch`
 mentioned in that message was qfolded shortly afterwards.)
 
 
+
 ---
 
-Comment by sage-combinat created at 2009-07-23 14:40:58
+archive/issue_comments_045432.json:
+```json
+{
+    "body": "Patch review: trac_5794\n\nThe patch author is a widely acknowledged expert in the area, having written a textbook which includes a discussion of the root systems and branching rules implemented here.  Although we did not check all of the details of the algorithms, the root system code has been used by the reviewer to implement the alcove path model for crystals of Lenart and Postnikov, and the branching code has computed some verified data in type E_6.  This patch implements useful mathematics and the extensive documentation includes references to relevant mathematical literature.\n\nThere are currently two warnings for the reference manual (sage -docbuild reference html); these require help from Sage developers to be fixed.  The Sage library test passes, and all methods have doctests which pass.\n\n-- Brant Jones",
+    "created_at": "2009-07-23T14:40:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45432",
+    "user": "sage-combinat"
+}
+```
 
 Patch review: trac_5794
 
@@ -287,58 +531,148 @@ There are currently two warnings for the reference manual (sage -docbuild refere
 -- Brant Jones
 
 
+
 ---
 
-Comment by mvngu created at 2009-07-23 14:51:48
+archive/issue_comments_045433.json:
+```json
+{
+    "body": "This depends on #4326.",
+    "created_at": "2009-07-23T14:51:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45433",
+    "user": "mvngu"
+}
+```
 
 This depends on #4326.
 
 
+
 ---
+
+archive/issue_comments_045434.json:
+```json
+{
+    "body": "Attachment\n\nAnnotates the long tests with their time, and disables one which took 160s.",
+    "created_at": "2009-11-19T11:25:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45434",
+    "user": "nthiery"
+}
+```
 
 Attachment
 
 Annotates the long tests with their time, and disables one which took 160s.
 
 
+
 ---
 
-Comment by nthiery created at 2009-11-19 11:25:33
+archive/issue_comments_045435.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_work.",
+    "created_at": "2009-11-19T11:25:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45435",
+    "user": "nthiery"
+}
+```
 
 Changing status from positive_review to needs_work.
 
 
+
 ---
 
-Comment by nthiery created at 2009-11-19 11:25:43
+archive/issue_comments_045436.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2009-11-19T11:25:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45436",
+    "user": "nthiery"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by nthiery created at 2009-11-19 15:56:13
+archive/issue_comments_045437.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-11-19T15:56:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45437",
+    "user": "nthiery"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by nthiery created at 2009-11-19 15:56:13
+archive/issue_comments_045438.json:
+```json
+{
+    "body": "Positive review from Dan on sage-combinat-devel",
+    "created_at": "2009-11-19T15:56:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45438",
+    "user": "nthiery"
+}
+```
 
 Positive review from Dan on sage-combinat-devel
 
 
+
 ---
 
-Comment by mhansen created at 2009-11-19 17:02:33
+archive/issue_comments_045439.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-11-19T17:02:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45439",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-12-14 02:06:09
+archive/issue_comments_045440.json:
+```json
+{
+    "body": "Did `trac_5794-long-time-nt.patch` actually get merged?  I don't see these changes in sage-4.3.rc0, and therefore running long doctests on weyl_characters.py still takes forever:\n\n\n```\n[ghitza@sage root_system]$ sd -t -long weyl_characters.py \nsage -t -long \"devel/sage-main/sage/combinat/root_system/weyl_characters.py\"\n         [242.2 s]\n```\n",
+    "created_at": "2009-12-14T02:06:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45440",
+    "user": "AlexGhitza"
+}
+```
 
 Did `trac_5794-long-time-nt.patch` actually get merged?  I don't see these changes in sage-4.3.rc0, and therefore running long doctests on weyl_characters.py still takes forever:
 
@@ -351,15 +685,37 @@ sage -t -long "devel/sage-main/sage/combinat/root_system/weyl_characters.py"
 
 
 
+
 ---
 
-Comment by mhansen created at 2009-12-14 16:12:24
+archive/issue_comments_045441.json:
+```json
+{
+    "body": "Thanks for picking that up.  I've merged that one patch in 4.3.rc1.",
+    "created_at": "2009-12-14T16:12:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45441",
+    "user": "mhansen"
+}
+```
 
 Thanks for picking that up.  I've merged that one patch in 4.3.rc1.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-10-17 07:33:52
+archive/issue_comments_045442.json:
+```json
+{
+    "body": "I seems the patches here on Trac are not the ones which were actually merged 4 years ago, which was discovered in #15279.",
+    "created_at": "2013-10-17T07:33:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5794#issuecomment-45442",
+    "user": "jdemeyer"
+}
+```
 
 I seems the patches here on Trac are not the ones which were actually merged 4 years ago, which was discovered in #15279.

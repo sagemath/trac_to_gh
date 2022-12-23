@@ -1,11 +1,21 @@
 # Issue 7505: Add scripts which check C and C++ compilers, and report what they are.
 
-Issue created by migration from https://trac.sagemath.org/ticket/7505
-
-Original creator: drkirkby
-
-Original creation time: 2009-11-20 18:09:29
-
+archive/issues_007505.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  malb david.kirkby@onetel.net was pjeremy\n\nIn some parts of Sage, it is desirable to know what compiler is being used - in particular if its gcc or Sun, but there are other cases too. \n\nThe two scripts check the variable CC and CXX, and try to determine what the compiler is. I've no idea where the scripts should go though - ultimately they should be copied to SAGE_LOCAL/bin, but if great if someone can put them in a sensible place to start with. I would be appreciate that. \n\nThe scripts can report one of several answers.  \n\n* GNU (for GNU gcc, on any platform.)\n* Sun_on_Solaris (for the Sun Studio compiler on Solaris)\n* Intel_improved_GCC (An improved commercial version of gcc by Intel. Compatible with gcc, but supposedly faster)\n* Sun_improved_GCC (A compiler by Sun, that appears to code to be gcc, but uses Sun Studio as a back-end.)\n* HP_on_Alpha_Linux (HP compiler on Alpha hardware running Linux)\n* HP_on_HPUX (HP's commerical compiler on HP-UX)\n* IBM_on_AIX (IBM's commercial compiler on AIX)\n* HP_on_Tru64 (HP's commerical compiler on Tru64)\n* Unknown  (The scripts can't work out what the compiler is). \n\nThese two scripts work by testing what pre-processor directives the compilers test. For example, gcc will define __GNUC__. \n\nBut so will the Intel and Sun compilers which try to be GNU like. But the Intel one will define __INTEL_COMPILER \nRhe Sun compilers defined __SUNPRO_C  so it's possible to differentiate the GNU, Intel and Sun compilers, even though they all aim to be GCC-like. \n Compiler documentation was obtained from various sites, and is documented in the scripts. \n == Testing ==\nObviously a reviewer can test these scripts on any platforms they have access to, but here are some tests I performed. I've not managed to check these scripts on every platform and compiler for which they are aimed to work on, due to lack of access to the hardware. \n\n* On a Sun Blade 2000 SPARC box, with Sun Studio 12.1\n\n```\ndrkirkby@swan:[~] $ uname -a\nSunOS swan 5.10 Generic_139555-08 sun4u sparc SUNW,Sun-Blade-1000\ndrkirkby@swan:[~] $ echo $CC\n/opt/xxxsunstudio12.1/bin/cc\ndrkirkby@swan:[~] $ echo $CXX\n/opt/xxxsunstudio12.1/bin/CC\ndrkirkby@swan:[~] $ ./testcc\nSun_on_Solaris\ndrkirkby@swan:[~] $ ./testcxx\nSun_on_Solaris\n```\n\n\n*  On the same Sun Blade 2000, but with CC and CXX set to gcc and g++\n\n```\ndrkirkby@swan:[~] $ export CC=gcc\ndrkirkby@swan:[~] $ export CXX=g++\ndrkirkby@swan:[~] $ ./testcc \nGNU\ndrkirkby@swan:[~] $ ./testcxx\nGNU\n```\n\n\n* On a Sun Ultra 27, but with CC defined to be a simple *hello world program*, to prove the code returns *Unknown* when it can not determine the compiler. \n\n```\nSunOS hawk 5.11 snv_111b i86pc i386 i86pc\nbash-3.2$ gcc hello.c -o hello\nbash-3.2$ export CC=./hello\nbash-3.2$ ./testcc\nUnknown\n```\n\n\n* On an IBM machine running AIX 6.\n\n```\n$ uname -a\nAIX client9 1 6 00C6B7C04C00\n$ export CC=gcc\n$ export CXX=g++\n$ ./testcc\nGNU\n$ ./testcxx\nGNU\n```\n\n\n* On the same IBM machine running AIX 6, but with CC and CXX set to the IBM commercial compilers. \n\n```\n$ uname -a\nAIX client9 1 6 00C6B7C04C00\n$ export CC=/usr/vacpp/bin/xlc\n$ export CXX=/usr/vacpp/bin/xlc++\n$ ./testcc\nIBM_on_AIX\n$ ./testcxx\nIBM_on_AIX\n```\n\n\n* On a HP C3600 running HP-UX 11.11, CC and CXX set to GNU compilers. \n\n```\n$ uname -a\nHP-UX hpbox B.11.11 U 9000/785 2016698240 unlimited-user license\n$ export CC=gcc\n$ export CXX=g++\n$ ./testcc\nGNU\n$ ./testcxx\nGNU\n```\n\n\n* On the same HP C3600, but this time using trial versions of HP's commercial C and C++ compilers. \n\n```\n$ export CC=/opt/ansic/bin/cc\n$ export CXX=/opt/aCC/bin/aCC\n$ ./testcc\nHP_on_HPUX\n$ ./testcxx\nHP_on_HPUX\n```\n\n\n* On a linux machine (sage.math.washington.edu), with the variable CC and CXX not set. In this case, the exit code is 1, not 0. \n\n```\nkirkby@sage:~$ unset CC\nkirkby@sage:~$ unset CXX\nkirkby@sage:~$ ./testcc\nSorry, you should define the environment variable CC\nkirkby@sage:~$ ./testcxx\nSorry, you should define the environment variable CXX\n```\n\n\n* On the same Linux machine, but with CC and CXX set to locations of GNU compilers. In one case an absolute path is given, in the other case it is not \n\n```\nkirkby@sage:~$ uname -a\nLinux sage.math.washington.edu 2.6.24-23-server #1 SMP Wed Apr 1 22:14:30 UTC 2009 x86_64 GNU/Linux\nkirkby@sage:~$ export CC=/usr/bin/gcc\nkirkby@sage:~$ export CXX=g++\nkirkby@sage:~$ ./testcc\nGNU\nkirkby@sage:~$ ./testcxx\nGNU\n```\n\n\n* On an Apple (bsd.math.washington.edu) running OS X \n\n```\n[kirkby@bsd ~]$ uname -a\nDarwin bsd.local 10.2.0 Darwin Kernel Version 10.2.0: Tue Nov  3 10:37:10 PST 2009; root:xnu-1486.2.11~1/RELEASE_I386 i386 i386 MacPro1,1 Darwin\n[kirkby@bsd ~]$ export CC=gcc\n[kirkby@bsd ~]$ export CXX=g++\n[kirkby@bsd ~]$ ./testcc\nGNU\n[kirkby@bsd ~]$ ./testcxx\nGNU\n```\n\n\nThe code was tested by someone else on Tru64, but I can not show the results of this. \n\nI have not verified it with the Sun or Intel compilers which are GCC compatible, nor on Alpha linux. In each case, I've used compiler documentation, and hope it is right. \n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/7505\n\n",
+    "created_at": "2009-11-20T18:09:29Z",
+    "labels": [
+        "build",
+        "minor",
+        "enhancement"
+    ],
+    "title": "Add scripts which check C and C++ compilers, and report what they are.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7505",
+    "user": "drkirkby"
+}
+```
 Assignee: tbd
 
 CC:  malb david.kirkby@onetel.net was pjeremy
@@ -16,15 +26,15 @@ The two scripts check the variable CC and CXX, and try to determine what the com
 
 The scripts can report one of several answers.  
 
-    * GNU (for GNU gcc, on any platform.)
-    * Sun_on_Solaris (for the Sun Studio compiler on Solaris)
-    * Intel_improved_GCC (An improved commercial version of gcc by Intel. Compatible with gcc, but supposedly faster)
-    * Sun_improved_GCC (A compiler by Sun, that appears to code to be gcc, but uses Sun Studio as a back-end.)
-    * HP_on_Alpha_Linux (HP compiler on Alpha hardware running Linux)
-    * HP_on_HPUX (HP's commerical compiler on HP-UX)
-    * IBM_on_AIX (IBM's commercial compiler on AIX)
-    * HP_on_Tru64 (HP's commerical compiler on Tru64)
-    * Unknown  (The scripts can't work out what the compiler is). 
+* GNU (for GNU gcc, on any platform.)
+* Sun_on_Solaris (for the Sun Studio compiler on Solaris)
+* Intel_improved_GCC (An improved commercial version of gcc by Intel. Compatible with gcc, but supposedly faster)
+* Sun_improved_GCC (A compiler by Sun, that appears to code to be gcc, but uses Sun Studio as a back-end.)
+* HP_on_Alpha_Linux (HP compiler on Alpha hardware running Linux)
+* HP_on_HPUX (HP's commerical compiler on HP-UX)
+* IBM_on_AIX (IBM's commercial compiler on AIX)
+* HP_on_Tru64 (HP's commerical compiler on Tru64)
+* Unknown  (The scripts can't work out what the compiler is). 
 
 These two scripts work by testing what pre-processor directives the compilers test. For example, gcc will define __GNUC__. 
 
@@ -34,7 +44,7 @@ Rhe Sun compilers defined __SUNPRO_C  so it's possible to differentiate the GNU,
  == Testing ==
 Obviously a reviewer can test these scripts on any platforms they have access to, but here are some tests I performed. I've not managed to check these scripts on every platform and compiler for which they are aimed to work on, due to lack of access to the hardware. 
 
- * On a Sun Blade 2000 SPARC box, with Sun Studio 12.1
+* On a Sun Blade 2000 SPARC box, with Sun Studio 12.1
 
 ```
 drkirkby@swan:[~] $ uname -a
@@ -50,7 +60,7 @@ Sun_on_Solaris
 ```
 
 
- *  On the same Sun Blade 2000, but with CC and CXX set to gcc and g++
+*  On the same Sun Blade 2000, but with CC and CXX set to gcc and g++
 
 ```
 drkirkby@swan:[~] $ export CC=gcc
@@ -62,7 +72,7 @@ GNU
 ```
 
 
- * On a Sun Ultra 27, but with CC defined to be a simple _hello world program_, to prove the code returns _Unknown_ when it can not determine the compiler. 
+* On a Sun Ultra 27, but with CC defined to be a simple *hello world program*, to prove the code returns *Unknown* when it can not determine the compiler. 
 
 ```
 SunOS hawk 5.11 snv_111b i86pc i386 i86pc
@@ -73,7 +83,7 @@ Unknown
 ```
 
 
- * On an IBM machine running AIX 6.
+* On an IBM machine running AIX 6.
 
 ```
 $ uname -a
@@ -87,7 +97,7 @@ GNU
 ```
 
 
- * On the same IBM machine running AIX 6, but with CC and CXX set to the IBM commercial compilers. 
+* On the same IBM machine running AIX 6, but with CC and CXX set to the IBM commercial compilers. 
 
 ```
 $ uname -a
@@ -101,7 +111,7 @@ IBM_on_AIX
 ```
 
 
- * On a HP C3600 running HP-UX 11.11, CC and CXX set to GNU compilers. 
+* On a HP C3600 running HP-UX 11.11, CC and CXX set to GNU compilers. 
 
 ```
 $ uname -a
@@ -115,7 +125,7 @@ GNU
 ```
 
 
- * On the same HP C3600, but this time using trial versions of HP's commercial C and C++ compilers. 
+* On the same HP C3600, but this time using trial versions of HP's commercial C and C++ compilers. 
 
 ```
 $ export CC=/opt/ansic/bin/cc
@@ -127,7 +137,7 @@ HP_on_HPUX
 ```
 
 
- * On a linux machine (sage.math.washington.edu), with the variable CC and CXX not set. In this case, the exit code is 1, not 0. 
+* On a linux machine (sage.math.washington.edu), with the variable CC and CXX not set. In this case, the exit code is 1, not 0. 
 
 ```
 kirkby@sage:~$ unset CC
@@ -139,7 +149,7 @@ Sorry, you should define the environment variable CXX
 ```
 
 
- * On the same Linux machine, but with CC and CXX set to locations of GNU compilers. In one case an absolute path is given, in the other case it is not 
+* On the same Linux machine, but with CC and CXX set to locations of GNU compilers. In one case an absolute path is given, in the other case it is not 
 
 ```
 kirkby@sage:~$ uname -a
@@ -153,7 +163,7 @@ GNU
 ```
 
 
- * On an Apple (bsd.math.washington.edu) running OS X 
+* On an Apple (bsd.math.washington.edu) running OS X 
 
 ```
 [kirkby@bsd ~]$ uname -a
@@ -173,36 +183,99 @@ I have not verified it with the Sun or Intel compilers which are GCC compatible,
 
 Dave
 
+Issue created by migration from https://trac.sagemath.org/ticket/7505
+
+
+
+
 
 ---
 
-Comment by drkirkby created at 2009-11-20 18:10:11
+archive/issue_comments_063444.json:
+```json
+{
+    "body": "Small shell script to check the type of C compiler",
+    "created_at": "2009-11-20T18:10:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7505#issuecomment-63444",
+    "user": "drkirkby"
+}
+```
 
 Small shell script to check the type of C compiler
 
 
+
 ---
+
+archive/issue_comments_063445.json:
+```json
+{
+    "body": "Attachment\n\nSmall shell script to check the type of C++ compiler",
+    "created_at": "2009-11-20T18:10:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7505#issuecomment-63445",
+    "user": "drkirkby"
+}
+```
 
 Attachment
 
 Small shell script to check the type of C++ compiler
 
 
+
 ---
+
+archive/issue_comments_063446.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-11-20T18:14:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7505#issuecomment-63446",
+    "user": "drkirkby"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by drkirkby created at 2009-11-20 18:14:45
+archive/issue_comments_063447.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-11-20T18:14:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7505#issuecomment-63447",
+    "user": "drkirkby"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by malb created at 2009-11-21 12:15:00
+archive/issue_comments_063448.json:
+```json
+{
+    "body": "I was worried that the sage_scripts repository would be installed too late for these scripts but I was wrong. I agree with Mike that this is where these scripts belong.\n\nThe only issue I can see is that `# of C++ code, and checking what are defined.` in testcc should be `C code`. There are a few of these copy'n'paste 'errors' in the docs, which are beautiful in general! \n\nAlso, I'd call the scripts `testcc.sh` and `testcxx.sh` to emphasise that they are shell scripts.",
+    "created_at": "2009-11-21T12:15:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7505#issuecomment-63448",
+    "user": "malb"
+}
+```
 
 I was worried that the sage_scripts repository would be installed too late for these scripts but I was wrong. I agree with Mike that this is where these scripts belong.
 
@@ -211,42 +284,86 @@ The only issue I can see is that `# of C++ code, and checking what are defined.`
 Also, I'd call the scripts `testcc.sh` and `testcxx.sh` to emphasise that they are shell scripts.
 
 
+
 ---
 
-Comment by drkirkby created at 2009-11-25 03:40:35
+archive/issue_comments_063449.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2009-11-25T03:40:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7505#issuecomment-63449",
+    "user": "drkirkby"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by drkirkby created at 2009-11-25 03:40:35
+archive/issue_comments_063450.json:
+```json
+{
+    "body": "Thank you for your comments. I am now exactly sure what you mean by the \"The only issue I can see is that # of C++ code, and checking what are defined. in testcc should be C code.\"\n\n\nI did intend making a change to these scripts. I thought it would be better if they returned 'GNU' for **any** compiler which was like gcc (i.e. whether produced by Sun, Intel or HP), and only gave very specific information about whether it was Sun/Intel/HP if an option was passed to the scripts. This is because, in 99% of cases, the user will only want to know if the compiler acts like gcc, and will probably not care if it the GNU distribution, or an improved one from HP, Intel or Sun. \n\nOnce I know exactly what you mean by your comment, I'll make the changes, rename the files with a .sh extension, and submit again for review. \nDave",
+    "created_at": "2009-11-25T03:40:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7505#issuecomment-63450",
+    "user": "drkirkby"
+}
+```
 
 Thank you for your comments. I am now exactly sure what you mean by the "The only issue I can see is that # of C++ code, and checking what are defined. in testcc should be C code."
 
 
-I did intend making a change to these scripts. I thought it would be better if they returned 'GNU' for *any* compiler which was like gcc (i.e. whether produced by Sun, Intel or HP), and only gave very specific information about whether it was Sun/Intel/HP if an option was passed to the scripts. This is because, in 99% of cases, the user will only want to know if the compiler acts like gcc, and will probably not care if it the GNU distribution, or an improved one from HP, Intel or Sun. 
+I did intend making a change to these scripts. I thought it would be better if they returned 'GNU' for **any** compiler which was like gcc (i.e. whether produced by Sun, Intel or HP), and only gave very specific information about whether it was Sun/Intel/HP if an option was passed to the scripts. This is because, in 99% of cases, the user will only want to know if the compiler acts like gcc, and will probably not care if it the GNU distribution, or an improved one from HP, Intel or Sun. 
 
 Once I know exactly what you mean by your comment, I'll make the changes, rename the files with a .sh extension, and submit again for review. 
 Dave
 
 
+
 ---
 
-Comment by malb created at 2009-11-25 11:31:27
+archive/issue_comments_063451.json:
+```json
+{
+    "body": "Oh, its just that you talk about C++ in the C script in the comments. That's all.",
+    "created_at": "2009-11-25T11:31:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7505#issuecomment-63451",
+    "user": "malb"
+}
+```
 
 Oh, its just that you talk about C++ in the C script in the comments. That's all.
 
 
+
 ---
 
-Comment by drkirkby created at 2009-11-27 11:03:10
+archive/issue_comments_063452.json:
+```json
+{
+    "body": "I made a few changes. \n* Renamed to testcc.sh and testcxx.sh as suggested\n* Corrected the comment which has C++ in it, when the script was for testing the C++ compiler. \n* Added a usage message, if the scripts are called with any arguments at all, as they are not designed to be. \n* Abandoned attempts to find the different variants of gcc. It was more difficult than I thought. \n\nI'm a bit concerned these need to be available very early on, before bzip2 is built, as that has options which depend on the compiler type, as it creates position independent code, the option for which is not standard. Wherever testcc.sh and testcxx.sh are added, then need execute permission. \n\nDave \n\nDave",
+    "created_at": "2009-11-27T11:03:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7505#issuecomment-63452",
+    "user": "drkirkby"
+}
+```
 
 I made a few changes. 
- * Renamed to testcc.sh and testcxx.sh as suggested
- * Corrected the comment which has C++ in it, when the script was for testing the C++ compiler. 
- * Added a usage message, if the scripts are called with any arguments at all, as they are not designed to be. 
- * Abandoned attempts to find the different variants of gcc. It was more difficult than I thought. 
+* Renamed to testcc.sh and testcxx.sh as suggested
+* Corrected the comment which has C++ in it, when the script was for testing the C++ compiler. 
+* Added a usage message, if the scripts are called with any arguments at all, as they are not designed to be. 
+* Abandoned attempts to find the different variants of gcc. It was more difficult than I thought. 
 
 I'm a bit concerned these need to be available very early on, before bzip2 is built, as that has options which depend on the compiler type, as it creates position independent code, the option for which is not standard. Wherever testcc.sh and testcxx.sh are added, then need execute permission. 
 
@@ -255,25 +372,58 @@ Dave
 Dave
 
 
+
 ---
 
-Comment by drkirkby created at 2009-11-27 11:03:10
+archive/issue_comments_063453.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2009-11-27T11:03:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7505#issuecomment-63453",
+    "user": "drkirkby"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by drkirkby created at 2009-11-28 22:32:39
+archive/issue_comments_063454.json:
+```json
+{
+    "body": "I'm uploading a slightly changed version, which changes the output from 'Sun_on_Solaris' to 'Sun_Studio' as I'd overlooked the fact that Sun Studio can be installed on Linux too. \n\nDave",
+    "created_at": "2009-11-28T22:32:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7505#issuecomment-63454",
+    "user": "drkirkby"
+}
+```
 
 I'm uploading a slightly changed version, which changes the output from 'Sun_on_Solaris' to 'Sun_Studio' as I'd overlooked the fact that Sun Studio can be installed on Linux too. 
 
 Dave
 
 
+
 ---
 
-Comment by drkirkby created at 2009-12-08 11:13:17
+archive/issue_comments_063455.json:
+```json
+{
+    "body": "I'm a bit worried about where these two files should go. Putting them in the \n\n\n\n```\nsage_scripts-$version.spkg\n```\n\n \n\nwill **not** be suitable, as this a bzip2 compressed file. Hence bzip2 needs to be built before that can extracted. But these two scripts which test the compiler needs to be available before bzip2 is compiled. They need to be available before bzip2 is compiled - particularly since bzip2 does have some compiler-specific flags, as it creates a shared library. \n\nDave",
+    "created_at": "2009-12-08T11:13:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7505#issuecomment-63455",
+    "user": "drkirkby"
+}
+```
 
 I'm a bit worried about where these two files should go. Putting them in the 
 
@@ -285,21 +435,43 @@ sage_scripts-$version.spkg
 
  
 
-will *not* be suitable, as this a bzip2 compressed file. Hence bzip2 needs to be built before that can extracted. But these two scripts which test the compiler needs to be available before bzip2 is compiled. They need to be available before bzip2 is compiled - particularly since bzip2 does have some compiler-specific flags, as it creates a shared library. 
+will **not** be suitable, as this a bzip2 compressed file. Hence bzip2 needs to be built before that can extracted. But these two scripts which test the compiler needs to be available before bzip2 is compiled. They need to be available before bzip2 is compiled - particularly since bzip2 does have some compiler-specific flags, as it creates a shared library. 
 
 Dave
 
 
----
-
-Comment by malb created at 2009-12-08 12:03:38
-
-Hi, sorry for letting it bitrot so long. The scripts are fine, so you get a positive review as soon as we figured out where to put them. How about adding them to the *prereq SPKG*?
-
 
 ---
 
-Comment by drkirkby created at 2009-12-08 14:55:00
+archive/issue_comments_063456.json:
+```json
+{
+    "body": "Hi, sorry for letting it bitrot so long. The scripts are fine, so you get a positive review as soon as we figured out where to put them. How about adding them to the **prereq SPKG**?",
+    "created_at": "2009-12-08T12:03:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7505#issuecomment-63456",
+    "user": "malb"
+}
+```
+
+Hi, sorry for letting it bitrot so long. The scripts are fine, so you get a positive review as soon as we figured out where to put them. How about adding them to the **prereq SPKG**?
+
+
+
+---
+
+archive/issue_comments_063457.json:
+```json
+{
+    "body": "Hi,\nthe prereq spkg seems a good idea, as that is a tar file, so needed nothing to extract it. I'll add that later today - I am in the middle of decorating now, and being the winter, there are not many daylight hours here in the UK\n\nDave",
+    "created_at": "2009-12-08T14:55:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7505#issuecomment-63457",
+    "user": "drkirkby"
+}
+```
 
 Hi,
 the prereq spkg seems a good idea, as that is a tar file, so needed nothing to extract it. I'll add that later today - I am in the middle of decorating now, and being the winter, there are not many daylight hours here in the UK
@@ -307,9 +479,20 @@ the prereq spkg seems a good idea, as that is a tar file, so needed nothing to e
 Dave
 
 
+
 ---
 
-Comment by drkirkby created at 2009-12-08 23:25:46
+archive/issue_comments_063458.json:
+```json
+{
+    "body": "Having looked at prereq, it is not a collection of scripts, so I do not believe that is the appropriate place for them. \n\nI believe if the two scripts are put in the directory \n\n\n```\n$SAGE_ROOT/spkg/base/\n```\n\n\nand the file \n\n\n```\n$SAGE_ROOT/spkg/install\n```\n\n\nis updated to copy these two scripts to $SAGE_LOCAL/bin (as it does some other files), then that will solve the problem. That 'SAGE_ROOT/spkg/install' script is run very early (before even prereq), so an added bonus is that the script could be called from within prereq if needed. \n\nI'm not sure how to check these in properly though vi hg. I've never got to grips with that properly. I'll drop you an email about that. \n\nI'm attaching the revised install script, and the patch file. \n\nDave",
+    "created_at": "2009-12-08T23:25:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7505#issuecomment-63458",
+    "user": "drkirkby"
+}
+```
 
 Having looked at prereq, it is not a collection of scripts, so I do not believe that is the appropriate place for them. 
 
@@ -338,23 +521,60 @@ I'm attaching the revised install script, and the patch file.
 Dave
 
 
+
 ---
+
+archive/issue_comments_063459.json:
+```json
+{
+    "body": "Attachment\n\nUpdated 'install' scipt which copies testcc.sh and testcxx.sh to $SAGE_LOCAL/bin",
+    "created_at": "2009-12-08T23:28:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7505#issuecomment-63459",
+    "user": "drkirkby"
+}
+```
 
 Attachment
 
 Updated 'install' scipt which copies testcc.sh and testcxx.sh to $SAGE_LOCAL/bin
 
 
+
 ---
+
+archive/issue_comments_063460.json:
+```json
+{
+    "body": "Attachment\n\nPatch, showing changes between the old an new versions of the install script",
+    "created_at": "2009-12-08T23:29:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7505#issuecomment-63460",
+    "user": "drkirkby"
+}
+```
 
 Attachment
 
 Patch, showing changes between the old an new versions of the install script
 
 
+
 ---
 
-Comment by drkirkby created at 2009-12-20 12:58:45
+archive/issue_comments_063461.json:
+```json
+{
+    "body": "The review of this has got a bit complex, mainly since agreeing where the scripts should go has not been without some problem, but I also slightly changed the output shown, in view of difficulty of the fact Sun Studio can be run on Solaris, and difficulties finding some information I wanted. \n\nHence I thought I'd clarify some things. \n\nThe scripts output one of:\n\n* GCC\n* Sun_Studio\n* HP_on_Tru64\n* HP_on_Alpha_Linux\n* HP_on_HP-UX\n* IBM_on_AIX\n* Unknown\n\nI believe the scripts (see attached) should be:\n\n```\n$SAGE_ROOT/spkg/base/testcc.sh\n$SAGE_ROOT/spkg/base/testcxx.sh\n```\n\nThe file\n\n```\n$SAGE_ROOT/spkg/install\n```\n\nneeds to be modified (patch attached), so it copies the two scripts to \n\n```\n$SAGE_LOCAL/bin\n```\n\n\nin addition to the files it already copies there. This allows the scripts to be called from anywhere, including the prereq script, which might be necessary. \n\nThe scripts can't actually break anything in Sage, as they are not called at all. But calling them will simplify a lot of portability issues later one. \n\nDave",
+    "created_at": "2009-12-20T12:58:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7505#issuecomment-63461",
+    "user": "drkirkby"
+}
+```
 
 The review of this has got a bit complex, mainly since agreeing where the scripts should go has not been without some problem, but I also slightly changed the output shown, in view of difficulty of the fact Sun Studio can be run on Solaris, and difficulties finding some information I wanted. 
 
@@ -362,13 +582,13 @@ Hence I thought I'd clarify some things.
 
 The scripts output one of:
 
- * GCC
- * Sun_Studio
- * HP_on_Tru64
- * HP_on_Alpha_Linux
- * HP_on_HP-UX
- * IBM_on_AIX
- * Unknown
+* GCC
+* Sun_Studio
+* HP_on_Tru64
+* HP_on_Alpha_Linux
+* HP_on_HP-UX
+* IBM_on_AIX
+* Unknown
 
 I believe the scripts (see attached) should be:
 
@@ -397,28 +617,74 @@ The scripts can't actually break anything in Sage, as they are not called at all
 Dave
 
 
+
 ---
 
-Comment by drkirkby created at 2009-12-20 12:58:45
+archive/issue_comments_063462.json:
+```json
+{
+    "body": "Changing priority from minor to major.",
+    "created_at": "2009-12-20T12:58:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7505#issuecomment-63462",
+    "user": "drkirkby"
+}
+```
 
 Changing priority from minor to major.
 
 
----
-
-Comment by drkirkby created at 2009-12-20 13:01:40
-
-Oops, I mean the fact Sun Studio could be run on *Linux* caused me to change the output - everyone known they can run on Solaris!
-
 
 ---
 
-Comment by drkirkby created at 2009-12-30 02:07:36
+archive/issue_comments_063463.json:
+```json
+{
+    "body": "Oops, I mean the fact Sun Studio could be run on **Linux** caused me to change the output - everyone known they can run on Solaris!",
+    "created_at": "2009-12-20T13:01:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7505#issuecomment-63463",
+    "user": "drkirkby"
+}
+```
+
+Oops, I mean the fact Sun Studio could be run on **Linux** caused me to change the output - everyone known they can run on Solaris!
+
+
+
+---
+
+archive/issue_comments_063464.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2009-12-30T02:07:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7505#issuecomment-63464",
+    "user": "drkirkby"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
+
+archive/issue_comments_063465.json:
+```json
+{
+    "body": "Attachment\n\nPeter Jeremy has found a cleaner way of testing the compiler, which I intend using. It makes use of the pre-processor in exactly the same way, but it is simpler to maintain, they way Peter wrote it. \n\nThis needs a bit of further testing, so I've stuck it back to 'needs work' for now. Then hopefully it can be reviewed when I've uploaded a couple of revised versions of testcc.sh and testcxx.sh\n\nDave",
+    "created_at": "2009-12-30T02:07:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7505#issuecomment-63465",
+    "user": "drkirkby"
+}
+```
 
 Attachment
 
@@ -429,53 +695,136 @@ This needs a bit of further testing, so I've stuck it back to 'needs work' for n
 Dave
 
 
+
 ---
+
+archive/issue_comments_063466.json:
+```json
+{
+    "body": "Attachment\n\nSimpler version of file to check the c-compiler",
+    "created_at": "2009-12-30T15:57:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7505#issuecomment-63466",
+    "user": "drkirkby"
+}
+```
 
 Attachment
 
 Simpler version of file to check the c-compiler
 
 
+
 ---
+
+archive/issue_comments_063467.json:
+```json
+{
+    "body": "Attachment\n\nSimpler version of file to check the C++ compiler",
+    "created_at": "2009-12-30T15:58:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7505#issuecomment-63467",
+    "user": "drkirkby"
+}
+```
 
 Attachment
 
 Simpler version of file to check the C++ compiler
 
 
+
 ---
 
-Comment by drkirkby created at 2009-12-30 16:00:17
+archive/issue_comments_063468.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2009-12-30T16:00:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7505#issuecomment-63468",
+    "user": "drkirkby"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by drkirkby created at 2009-12-30 16:02:28
+archive/issue_comments_063469.json:
+```json
+{
+    "body": "Here are revised versions of the scripts, which report the compiler type. They use the same method as before (checking was macros are predefined), but avoid the use of some grep statments and generally look a lot cleaner. Thank you Peter for the revisions. \n\nDave",
+    "created_at": "2009-12-30T16:02:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7505#issuecomment-63469",
+    "user": "drkirkby"
+}
+```
 
 Here are revised versions of the scripts, which report the compiler type. They use the same method as before (checking was macros are predefined), but avoid the use of some grep statments and generally look a lot cleaner. Thank you Peter for the revisions. 
 
 Dave
 
 
+
 ---
+
+archive/issue_comments_063470.json:
+```json
+{
+    "body": "Attachment\n\nA patch to be used in place of Martin's earlier version.",
+    "created_at": "2009-12-30T22:23:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7505#issuecomment-63470",
+    "user": "drkirkby"
+}
+```
 
 Attachment
 
 A patch to be used in place of Martin's earlier version.
 
 
+
 ---
 
-Comment by was created at 2009-12-31 16:31:51
+archive/issue_comments_063471.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2009-12-31T16:31:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7505#issuecomment-63471",
+    "user": "was"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by was created at 2009-12-31 16:31:51
+archive/issue_comments_063472.json:
+```json
+{
+    "body": "REFEREE REPORT:\n\nPlease read everything below before making any changes.\n\n1. In the usage it says:\n\"Will return one of the following, to indicate the C compiler\". \nHowever, shell scripts don't return anything.  It is more precise to say \"Will print one of the following to stdout, to indicate the C compiler.\"\n\n2. I would expect to also get the usage message when CC isn't defined. \n\n```\nflat:Downloads wstein$ ./testcc.sh\nSorry, you must define the environment variable CC\n```\n\n\nCurrently, the *only* way to get the usage is to call the command with an extra argument (in which case one doesn't get an error message, by the way):\n\n```\nflat:Downloads wstein$ ./testcc.sh foo\nUsage: ./testcc.sh\n  Will return one of the following, to indicate the C compiler\n...\n```\n\n\n\n\n3. Perhaps change the message to say \"You must export the CC environment variable\", because of course defining the CC variable as instructed above doesn't work:\n\n```\nflat:Downloads wstein$ CC=gcc\nflat:Downloads wstein$ ./testcc.sh \nSorry, you must define the environment variable CC\nflat:Downloads wstein$ CC=gcc; export CC\nflat:Downloads wstein$ ./testcc.sh \nGCC\n```\n\n\n4. I wonder about the design. If I were writing this script I would make it take a single argument:\n\n```\n$  ./testcc.sh <path to compiler>\n```\n\ninstead of using an environment variable.   Then the usage info would naturally be printed no matter what when one does \n\n```\n$ ./testcc.sh\n```\n\nand one doesn't have to mess with (= muck up) the environment at all in order to use this command.     You could use it like you already plan to by just doing\n\n```\ntestcc.sh \"$CC\"\n```\n\nTo me, that would fit much, much better with standard conventions for command line tools. \n\n5. I think the script should immediately bail in case \n\n```\nTESTFILE=/tmp/test.$$.c\n```\n\nalready exists.  Its entirely possible somebody else makes a shell script that uses a similar \"strategy\" for making temp files and your script just clobbers them.  (The right way to make temp files is to use the tmpfile C library calls.  It would be reasonably easy to rewrite this script, say in Python, to do that, and then temp files would be properly handled and never clash.  This should be done later, since your script is nicely laying down the interface.   Yes, this would depend on some Python being installed system-wide, but that's OK.)\n\nMaybe you could completely avoid using temp files by using - to get input from stdin, e.g. use `$CC -` and pipe the input in. \n\n```\n$ echo \"main(){}\" | gcc - -E\n# 1 \"<stdin>\"\n# 1 \"<built-in>\"\n# 1 \"<command-line>\"\n# 1 \"<stdin>\"\nmain(){}\n```\n\n\n\nSUMMARY: I personally think that testcc and testcxx should take one command line argument instead of using the environment to pass arguments.  Their documentation could be slightly clarified.  The use of the temp file could also be very slightly made more robust.   In fact -- much better -- perhaps just rewrite the script to not use temp files at all. \n\nSorry for being so picky.  It's just because I just spent a bunch of my limited time reading through this all very carefully and just want to contribute something of value.",
+    "created_at": "2009-12-31T16:31:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7505#issuecomment-63472",
+    "user": "was"
+}
+```
 
 REFEREE REPORT:
 
@@ -563,17 +912,28 @@ SUMMARY: I personally think that testcc and testcxx should take one command line
 Sorry for being so picky.  It's just because I just spent a bunch of my limited time reading through this all very carefully and just want to contribute something of value.
 
 
+
 ---
 
-Comment by drkirkby created at 2009-12-31 17:44:48
+archive/issue_comments_063473.json:
+```json
+{
+    "body": "Thank you for the helpful comments. \n\n* I agree about the documentation. That is easy to fix. \n* I'll change them so they take a command line argument as the compiler, rather than use CC and CXX. \n* These scripts are designed to improve portability and should therefore not rely on having python installed. Neither my HP-UX box or the AIX box I use at Metamodul.com has python. I expect the same would be true of many cut-down Linux installations on mobile phones and similar. That's a definite no-no as far as I am concerned. \n* I did try an earlier version where no temp file was created, but it did not work as intended. I was involved in some discussion about this on comp.unix.shell, but creating the file inline was not working. I'd rather not revisit that. \n* I would have thought it **extremely** unlikely for the temp file to clobber anything else.    \n  * First, the Unix file permissions would prevent it unless someone was stupid enough to set their UMASK in such a way to allow anyone else to write over their files. If they do that, I suspect having a temp file clobbered would be the least of their worries. \n  * Secondly, the filename contains the unique PID of the process. It's a common technique to include the PID like this, as the PID is unique at any one time. It would not be acceptable for a security application where I would worry about race conditions, fake files etc. But that is not an issue. I know 'mktemp' exists on many platforms, but not all. It is not part of POSIX. So that is another no-no. In any case, the extension is important here otherwise the compilers will probably not understand it. Would it be acceptable to you if the file name was much more complex, say \n {{{\n/tmp/hkldfz-test-for-c-compiler-6sokljkhsdhfdf.$$.c \n }}}\n  Even if two people run the same program, at the same time, on the same system, this would not result in a file being clobbered. Since /tmp is not shared amount different computers, it could never be an issue across networks either. \n\nDave",
+    "created_at": "2009-12-31T17:44:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7505#issuecomment-63473",
+    "user": "drkirkby"
+}
+```
 
 Thank you for the helpful comments. 
 
- * I agree about the documentation. That is easy to fix. 
- * I'll change them so they take a command line argument as the compiler, rather than use CC and CXX. 
- * These scripts are designed to improve portability and should therefore not rely on having python installed. Neither my HP-UX box or the AIX box I use at Metamodul.com has python. I expect the same would be true of many cut-down Linux installations on mobile phones and similar. That's a definite no-no as far as I am concerned. 
- * I did try an earlier version where no temp file was created, but it did not work as intended. I was involved in some discussion about this on comp.unix.shell, but creating the file inline was not working. I'd rather not revisit that. 
- * I would have thought it *extremely* unlikely for the temp file to clobber anything else.    
+* I agree about the documentation. That is easy to fix. 
+* I'll change them so they take a command line argument as the compiler, rather than use CC and CXX. 
+* These scripts are designed to improve portability and should therefore not rely on having python installed. Neither my HP-UX box or the AIX box I use at Metamodul.com has python. I expect the same would be true of many cut-down Linux installations on mobile phones and similar. That's a definite no-no as far as I am concerned. 
+* I did try an earlier version where no temp file was created, but it did not work as intended. I was involved in some discussion about this on comp.unix.shell, but creating the file inline was not working. I'd rather not revisit that. 
+* I would have thought it **extremely** unlikely for the temp file to clobber anything else.    
   * First, the Unix file permissions would prevent it unless someone was stupid enough to set their UMASK in such a way to allow anyone else to write over their files. If they do that, I suspect having a temp file clobbered would be the least of their worries. 
   * Secondly, the filename contains the unique PID of the process. It's a common technique to include the PID like this, as the PID is unique at any one time. It would not be acceptable for a security application where I would worry about race conditions, fake files etc. But that is not an issue. I know 'mktemp' exists on many platforms, but not all. It is not part of POSIX. So that is another no-no. In any case, the extension is important here otherwise the compilers will probably not understand it. Would it be acceptable to you if the file name was much more complex, say 
  {{{
@@ -584,39 +944,98 @@ Thank you for the helpful comments.
 Dave
 
 
+
 ---
 
-Comment by mvngu created at 2009-12-31 18:41:50
+archive/issue_comments_063474.json:
+```json
+{
+    "body": "based on Sage 4.3",
+    "created_at": "2009-12-31T18:41:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7505#issuecomment-63474",
+    "user": "mvngu"
+}
+```
 
 based on Sage 4.3
 
 
+
 ---
+
+archive/issue_comments_063475.json:
+```json
+{
+    "body": "Attachment\n\nversion of kirkby's patch suitable for applying to spkg/base repository",
+    "created_at": "2009-12-31T18:49:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7505#issuecomment-63475",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
 version of kirkby's patch suitable for applying to spkg/base repository
 
 
+
 ---
 
-Comment by mvngu created at 2009-12-31 19:23:06
+archive/issue_comments_063476.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2009-12-31T19:23:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7505#issuecomment-63476",
+    "user": "mvngu"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
+
+archive/issue_comments_063477.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-12-31T19:23:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7505#issuecomment-63477",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mvngu created at 2009-12-31 19:25:27
+archive/issue_comments_063478.json:
+```json
+{
+    "body": "The patch `trac_7505-test-scripts.patch` contains two shell scripts: one for testing the type of C compiler, and the other for testing the type of C++ compiler. Here are the results of my testing them on different combinations of platform and hardware:\n\n* AIX 6.1 (access provided by OpenAIX at http://www.metamodul.com/10.html), PowerPC_POWER5 `@` 2097 MHz, with GCC 4.2.4. Unfortunately, the license for the IBM commercial compilers on this machine has expired, so I wasn't able to use those IBM compilers to test the scripts.\n {{{\n[mvngu`@`client9 ~]$ gcc -v\nUsing built-in specs.\nTarget: powerpc-ibm-aix5.3.0.0\nConfigured with: ../stage/gcc-4.2.4/configure --disable-shared \n--enable-threads=posix --prefix=/opt/pware --with-long-double-128 \n--with-mpfr=/opt/pware --with-gmp=/opt/pware\nThread model: aix\ngcc version 4.2.4\n }}}\n Without setting CC and CXX:\n {{{\n[mvngu`@`client9 ~]$ uname -a\nAIX client1 1 6 00C6B7C04C00\n[mvngu`@`client9 ~]$ ./testcc.sh \nSorry, you must define the environment variable CC\n[mvngu`@`client9 ~]$ ./testcxx.sh \nSorry, you should define the environment variable CXX\n }}}\n Now set CC and CXX to gcc and g++:\n {{{\n[mvngu`@`client9 ~]$ uname -a\nAIX client1 1 6 00C6B7C04C00\n[mvngu`@`client9 ~]$ export CC=gcc\n[mvngu`@`client9 ~]$ export CXX=g++\n[mvngu`@`client9 ~]$ ./testcc.sh \nGCC\n[mvngu`@`client9 ~]$ ./testcxx.sh \nGCC\n }}}\n* Cygwin on Windows XP (winxp1 on boxen.math), Intel(R) Xeon(R) CPU X7460  `@` 2.66GHz, with GCC 3.4.4 and GCC 4.3.2:\n {{{\nmvngu`@`winxp ~\n$ gcc -v\nUsing built-in specs.\nTarget: i686-pc-cygwin\nConfigured with: /gnu/gcc/package/gcc4-4.3.2-2/src/gcc-4.3.2/configure \n--srcdir=/gnu/gcc/package/gcc4-4.3.2-2/src/gcc-4.3.2 --prefix=/usr \n--exec-prefix=/usr --bindir=/usr/bin --sbindir=/usr/sbin --libexecdir=/usr/sbin\n--datadir=/usr/share --localstatedir=/var --sysconfdir=/etc \n--infodir=/usr/share/info --mandir=/usr/share/man --datadir=/usr/share \n--infodir=/usr/share/info --mandir=/usr/share/man -v --with-gmp=/usr \n--with-mpfr=/usr --enable-bootstrap --enable-version-specific-runtime-libs \n--with-slibdir=/usr/bin --libexecdir=/usr/lib --enable-static --enable-shared \n--enable-shared-libgcc --enable-__cxa_atexit --with-gnu-ld --with-gnu-as \n--with-dwarf2 --disable-sjlj-exceptions \n--enable-languages=ada,c,c++,fortran,java,objc,obj-c++ --disable-symvers \n--enable-libjava --program-suffix=-4 --enable-libgomp --enable-libssp \n--enable-libada --enable-threads=posix \nAS=/opt/gcc-tools/bin/as.exe \nAS_FOR_TARGET=/opt/gcc-tools/bin/as.exe LD=/opt/gcc-tools/bin/ld.exe\nLD_FOR_TARGET=/opt/gcc-tools/bin/ld.exe\nThread model: posix\ngcc version 4.3.2 20080827 (beta) 2 (GCC)\nmvngu`@`winxp ~\n$ cc -v\nReading specs from /usr/lib/gcc/i686-pc-cygwin/3.4.4/specs\nConfigured with: /managed/gcc-build/final-v3-bootstrap/gcc-3.4.4-999/configure \n--verbose --program-suffix=-3 --prefix=/usr --exec-prefix=/usr --sysconfdir=/etc\n--libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man \n--infodir=/usr/share/info --enable-languages=c,ada,c++,d,f77,pascal,java,objc \n--enable-nls --without-included-gettext --enable-version-specific-runtime-libs \n--without-x --enable-libgcj --disable-java-awt --with-system-zlib \n--enable-interpreter --disable-libgcj-debug --enable-threads=posix \n--enable-java-gc=boehm --disable-win32-registry --enable-sjlj-exceptions \n--enable-hash-synchronization --enable-libstdcxx-debug\nThread model: posix\ngcc version 3.4.4 (cygming special, gdc 0.12, using dmd 0.125)\n }}}\n Without setting CC and CXX:\n {{{\nmvngu`@`winxp ~\n$ uname -a\nCYGWIN_NT-5.1 winxp 1.5.25(0.156/4/2) 2008-06-12 19:34 i686 Cygwin\n\nmvngu`@`winxp ~\n$ ./testcc.sh \nSorry, you must define the environment variable CC\n\nmvngu`@`winxp ~\n$ ./testcxx.sh \nSorry, you should define the environment variable CXX\n }}}\n Now set CC and CXX to GCC 3.4.4:\n {{{\nmvngu`@`winxp ~\n$ uname -a\nCYGWIN_NT-5.1 winxp 1.5.25(0.156/4/2) 2008-06-12 19:34 i686 Cygwin\n\nmvngu`@`winxp ~\n$ export CC=cc\n\nmvngu`@`winxp ~\n$ export CXX=c++\n\nmvngu`@`winxp ~\n$ ./testcc.sh \nGCC\n\nmvngu`@`winxp ~\n$ ./testcxx.sh \nGCC\n }}}\n Now set CC and CXX to use GCC 4.3.2 20080827 (beta) 2:\n {{{\nmvngu`@`winxp ~\n$ uname -a\nCYGWIN_NT-5.1 winxp 1.5.25(0.156/4/2) 2008-06-12 19:34 i686 Cygwin\n\nmvngu`@`winxp ~\n$ export CC=gcc\n\nmvngu`@`winxp ~\n$ export CXX=g++\n\nmvngu`@`winxp ~\n$ ./testcc.sh \nGCC\n\nmvngu`@`winxp ~\n$ ./testcxx.sh \nGCC\n }}}\n* Fedora 12 (cicero on SkyNet), Intel(R) Pentium(R) 4 CPU 2.66GHz, GCC 4.4.2:\n {{{\n[mvngu`@`cicero ~]$ gcc -v\nUsing built-in specs.\nTarget: i686-pc-linux-gnu\nConfigured with: /usr/local/gcc-4.4.2/src/gcc-4.4.2/configure \n--enable-languages=c,c++,fortran --with-gnu-as \n--with-as=/usr/local/binutils-2.20/x86-Linux-pentium4-gcc-4.4.2/bin/as \n--with-gnu-ld \n--with-ld=/usr/local/binutils-2.20/x86-Linux-pentium4-gcc-4.4.2/bin/ld \n--with-gmp=/usr/local/mpir-1.2.1/x86-Linux-pentium4-gcc-4.4.0 \n--with-mpfr=/usr/local/mpfr-2.4.1/x86-Linux-pentium4-mpir-1.2.1-gcc-4.4.0 \n--prefix=/usr/local/gcc-4.4.2/x86-Linux-pentium4-binutils-2.20\nThread model: posix\ngcc version 4.4.2 (GCC)\n }}}\n Without setting CC and CXX:\n {{{\n[mvngu`@`cicero ~]$ uname -a\nLinux cicero 2.6.31.6-145.fc12.i686 #1 SMP Sat Nov 21 16:28:23 EST 2009 i686 i686 i386 GNU/Linux\n[mvngu`@`cicero ~]$ ./testcc.sh \nSorry, you must define the environment variable CC\n[mvngu`@`cicero ~]$ ./testcxx.sh \nSorry, you should define the environment variable CXX\n }}}\n Now with CC and CXX set:\n {{{\n[mvngu`@`cicero ~]$ uname -a\nLinux cicero 2.6.31.6-145.fc12.i686 #1 SMP Sat Nov 21 16:28:23 EST 2009 i686 i686 i386 GNU/Linux\n[mvngu`@`cicero ~]$ export CC=gcc\n[mvngu`@`cicero ~]$ export CXX=g++\n[mvngu`@`cicero ~]$ ./testcc.sh \nGCC\n[mvngu`@`cicero ~]$ ./testcxx.sh \nGCC\n }}}\n* Fedora 12 (eno on SkyNet), Intel(R) Core(TM)2 Quad CPU Q6600 `@` 2.40GHz, GCC 4.4.2:\n {{{\n[mvngu`@`eno ~]$ gcc -v\nUsing built-in specs.\nTarget: x86_64-unknown-linux-gnu\nConfigured with: /usr/local/gcc-4.4.2/src/gcc-4.4.2/configure \n--enable-languages=c,c++,fortran --with-gnu-as \n--with-gnu-as=/usr/local/binutils-2.20/x86_64-Linux-core2-fc-gcc-4.4.2/bin/as \n--with-gnu-ld \n--with-ld=/usr/local/binutils-2.20/x86_64-Linux-core2-fc-gcc-4.4.2/bin/ld \n--with-gmp=/usr/local/mpir-1.2.1/x86_64-Linux-core2-gcc-4.4.0 \n--with-mpfr=/usr/local/mpfr-2.4.1/x86_64-Linux-core2-mpir-1.2.1-gcc-4.4.0 \n--prefix=/usr/local/gcc-4.4.2/x86_64-Linux-core2-fc-binutils-2.20\nThread model: posix\ngcc version 4.4.2 (GCC)\n }}}\n Without setting CC and CXX:\n {{{\n[mvngu`@`eno ~]$ uname -a\nLinux eno 2.6.31.6-166.fc12.x86_64 #1 SMP Wed Dec 9 10:46:22 EST 2009 x86_64 x86_64 x86_64 GNU/Linux\n[mvngu`@`eno ~]$ ./testcc.sh \nSorry, you must define the environment variable CC\n[mvngu`@`eno ~]$ ./testcxx.sh \nSorry, you should define the environment variable CXX\n }}}\n Now with CC and CXX set:\n {{{\n[mvngu`@`eno ~]$ uname -a\nLinux eno 2.6.31.6-166.fc12.x86_64 #1 SMP Wed Dec 9 10:46:22 EST 2009 x86_64 x86_64 x86_64 GNU/Linux\n[mvngu`@`eno ~]$ export CC=gcc\n[mvngu`@`eno ~]$ export CXX=g++\n[mvngu`@`eno ~]$ ./testcc.sh \nGCC\n[mvngu`@`eno ~]$ ./testcxx.sh \nGCC\n }}}\n* Fedora 12 (lena on SkyNet), AMD Phenom(tm) II X4 940 Processor, GCC 4.4.2:\n {{{\n[mvngu`@`lena ~]$ gcc -v\nUsing built-in specs.\nTarget: x86_64-unknown-linux-gnu\nConfigured with: /usr/local/gcc-4.4.2/src/gcc-4.4.2/configure \n--enable-languages=c,c++,fortran --with-gnu-as \n--with-gnu-as=/usr/local/binutils-2.20/x86_64-Linux-k10-gcc-4.4.2/bin/as \n--with-gnu-ld \n--with-ld=/usr/local/binutils-2.20/x86_64-Linux-k10-gcc-4.4.2/bin/ld \n--with-gmp=/usr/local/mpir-1.2.1/x86_64-Linux-k10-gcc-4.1.2-rh \n--with-mpfr=/usr/local/mpfr-2.4.2/x86_64-Linux-k10-mpir-1.2.1-gcc-4.4.2-rh \n--prefix=/usr/local/gcc-4.4.2/x86_64-Linux-k10-fc\nThread model: posix\ngcc version 4.4.2 (GCC)\n }}}\n Without setting CC and CXX:\n {{{\n[mvngu`@`lena ~]$ uname -a\nLinux lena 2.6.31.6-145.fc12.x86_64 #1 SMP Sat Nov 21 15:57:45 EST 2009 x86_64 x86_64 x86_64 GNU/Linux\n[mvngu`@`lena ~]$ ./testcc.sh \nSorry, you must define the environment variable CC\n[mvngu`@`lena ~]$ ./testcxx.sh \nSorry, you should define the environment variable CXX\n }}}\n Now with CC and CXX set:\n {{{\n[mvngu`@`lena ~]$ uname -a\nLinux lena 2.6.31.6-145.fc12.x86_64 #1 SMP Sat Nov 21 15:57:45 EST 2009 x86_64 x86_64 x86_64 GNU/Linux\n[mvngu`@`lena ~]$ export CC=gcc\n[mvngu`@`lena ~]$ export CXX=g++\n[mvngu`@`lena ~]$ ./testcc.sh \nGCC\n[mvngu`@`lena ~]$ ./testcxx.sh \nGCC\n }}}\n* HP-UX 11i (David Kirkby's machine), PA-RISC processor `@` 552 MHz, GCC 4.3.3 and HP-UX C/C++ compilers:\n {{{\n[mvngu`@`hpbox ~]$ /opt/hp-gcc-4.3.3/bin/gcc -v\nUsing built-in specs.\nTarget: hppa1.1-hp-hpux11.11\nConfigured with: /tmp/gcc-4.3.3.tar.gz/gcc-4.3.3/configure --host=hppa1.1-hp-hpux11.11 --target=hppa1.1-hp-hpux11.11 --build=hppa1.1-hp-hpux11.11 --prefix=/opt/hp-gcc-4.3.3 --with-gnu-as --without-gnu-ld --enable-threads=posix --enable-languages=c,c++ --with-gmp=/proj/opensrc/be/hppa1.1-hp-hpux11.11 --with-mpfr=/proj/opensrc/be/hppa1.1-hp-hpux11.11\nThread model: posix\ngcc version 4.3.3 (GCC)\n }}}\n Without setting CC and CXX:\n {{{\n[mvngu`@`hpbox ~]$ uname -a\nHP-UX hpbox B.11.11 U 9000/785 2016698240 unlimited-user license\n[mvngu`@`hpbox ~]$ ./testcc.sh                                                   \nSorry, you must define the environment variable CC\n[mvngu`@`hpbox ~]$ ./testcxx.sh                                                  \nSorry, you should define the environment variable CXX\n }}}\n Now set CC and CXX to use GCC:\n {{{\n[mvngu`@`hpbox ~]$ uname -a\nHP-UX hpbox B.11.11 U 9000/785 2016698240 unlimited-user license\n[mvngu`@`hpbox ~]$ export CC=/opt/hp-gcc-4.3.3/bin/gcc                           \n[mvngu`@`hpbox ~]$ export CXX=/opt/hp-gcc-4.3.3/bin/g++                          \n[mvngu`@`hpbox ~]$ ./testcc.sh                                                   \nGCC\n[mvngu`@`hpbox ~]$ ./testcxx.sh                                                  \nGCC\n }}}\n Now set CC and CXX to use HP-UX compilers:\n {{{\n[mvngu`@`hpbox ~]$ uname -a\nHP-UX hpbox B.11.11 U 9000/785 2016698240 unlimited-user license\n[mvngu`@`hpbox ~]$ export CC=/opt/ansic/bin/cc                                   \n[mvngu`@`hpbox ~]$ export CXX=/opt/aCC/bin/aCC                                   \n[mvngu`@`hpbox ~]$ ./testcc.sh                                                   \nHP_on_HP-UX\n[mvngu`@`hpbox ~]$ ./testcxx.sh                                                  \nHP_on_HP-UX\n }}}\n* Mac OS X 10.4.11 (my own MacBook), Intel Core 2 Duo 2 GHz, GCC 4.0.1:\n {{{\n[mvngu`@`darkstar mvngu]$ gcc -v\nUsing built-in specs.\nTarget: i686-apple-darwin8\nConfigured with: /private/var/tmp/gcc/gcc-5367.obj~1/src/configure \n--disable-checking -enable-werror --prefix=/usr --mandir=/share/man \n--enable-languages=c,objc,c++,obj-c++ \n--program-transform-name=/<sup>[cg][</sup>.-]*$/s/$/-4.0/ \n--with-gxx-include-dir=/include/c++/4.0.0 --with-slibdir=/usr/lib \n--build=powerpc-apple-darwin8 --with-arch=nocona --with-tune=generic \n--program-prefix= --host=i686-apple-darwin8 --target=i686-apple-darwin8\nThread model: posix\ngcc version 4.0.1 (Apple Computer, Inc. build 5367)\n }}}\n Without setting CC and CXX:\n {{{\n[mvngu`@`darkstar mvngu]$ uname -a\nDarwin darkstar.local 8.11.1 Darwin Kernel Version 8.11.1: Wed Oct 10 18:23:28 PDT 2007; root:xnu-792.25.20~1/RELEASE_I386 i386 i386\n[mvngu`@`darkstar mvngu]$ ./testcc.sh \nSorry, you must define the environment variable CC\n[mvngu`@`darkstar mvngu]$ ./testcxx.sh \nSorry, you should define the environment variable CXX\n }}}\n Now with CC and CXX set:\n {{{\n[mvngu`@`darkstar mvngu]$ uname -a\nDarwin darkstar.local 8.11.1 Darwin Kernel Version 8.11.1: Wed Oct 10 18:23:28 PDT 2007; root:xnu-792.25.20~1/RELEASE_I386 i386 i386\n[mvngu`@`darkstar mvngu]$ export CC=gcc\n[mvngu`@`darkstar mvngu]$ export CXX=g++\n[mvngu`@`darkstar mvngu]$ ./testcc.sh \nGCC\n[mvngu`@`darkstar mvngu]$ ./testcxx.sh \nGCC\n }}}\n* Mac OS X 10.6.2 (bsd.math), Dual-Core Intel Xeon 2.66 GHz, GCC 4.2.1:\n {{{\n[mvngu`@`bsd mvngu]$ gcc -v\nUsing built-in specs.\nTarget: i686-apple-darwin10\nConfigured with: /var/tmp/gcc/gcc-5646.1~2/src/configure --disable-checking \n--enable-werror --prefix=/usr --mandir=/share/man \n--enable-languages=c,objc,c++,obj-c++ \n--program-transform-name=/<sup>[cg][</sup>.-]*$/s/$/-4.2/ --with-slibdir=/usr/lib \n--build=i686-apple-darwin10 --with-gxx-include-dir=/include/c++/4.2.1 \n--program-prefix=i686-apple-darwin10- --host=x86_64-apple-darwin10 \n--target=i686-apple-darwin10\nThread model: posix\ngcc version 4.2.1 (Apple Inc. build 5646) (dot 1)\n }}}\n Without setting CC and CXX:\n {{{\n[mvngu`@`bsd mvngu]$ uname -a\nDarwin bsd.local 10.2.0 Darwin Kernel Version 10.2.0: Tue Nov  3 10:37:10 PST 2009; root:xnu-1486.2.11~1/RELEASE_I386 i386\n[mvngu`@`bsd mvngu]$ ./testcc.sh \nSorry, you must define the environment variable CC\n[mvngu`@`bsd mvngu]$ ./testcxx.sh \nSorry, you should define the environment variable CXX\n }}}\n Now with CC and CXX set:\n {{{\n[mvngu`@`bsd mvngu]$ uname -a\nDarwin bsd.local 10.2.0 Darwin Kernel Version 10.2.0: Tue Nov  3 10:37:10 PST 2009; root:xnu-1486.2.11~1/RELEASE_I386 i386\n[mvngu`@`bsd mvngu]$ export CC=gcc\n[mvngu`@`bsd mvngu]$ export CXX=g++\n[mvngu`@`bsd mvngu]$ ./testcc.sh \nGCC\n[mvngu`@`bsd mvngu]$ ./testcxx.sh \nGCC\n }}}\n* openSUSE 11.1 (menas on SkyNet), Intel(R) Core(TM)2 Quad CPU Q6600 `@` 2.40GHz, GCC 4.4.2:\n {{{\n[mvngu`@`menas ~]$ gcc -v\nUsing built-in specs.\nTarget: x86_64-unknown-linux-gnu\nConfigured with: /usr/local/gcc-4.4.2/src/gcc-4.4.2/configure \n--enable-languages=c,c++,fortran --with-gnu-as \n--with-as=/usr/local/binutils-2.20/x86_64-Linux-core2-suse-gcc-4.4.2/bin/as \n--with-gnu-ld \n--with-ld=/usr/local/binutils-2.20/x86_64-Linux-core2-suse-gcc-4.4.2/bin/ld \n--with-gmp=/usr/local/mpir-1.2.1/x86_64-Linux-core2-gcc-4.4.0 \n--with-mpfr=/usr/local/mpfr-2.4.1/x86_64-Linux-core2-mpir-1.2.1-gcc-4.4.0 \n--prefix=/usr/local/gcc-4.4.2/x86_64-Linux-core2-suse-binutils-2.20\nThread model: posix\ngcc version 4.4.2 (GCC)\n }}}\n Without setting CC and CXX:\n {{{\n[mvngu`@`menas ~]$ uname -a\nLinux menas 2.6.27.39-0.2-default #1 SMP 2009-11-23 12:57:38 +0100 x86_64 x86_64 x86_64 GNU/Linux\n[mvngu`@`menas ~]$ ./testcc.sh \nSorry, you must define the environment variable CC\n[mvngu`@`menas ~]$ ./testcxx.sh \nSorry, you should define the environment variable CXX\n }}}\n Now with CC and CXX set:\n {{{\n[mvngu`@`menas ~]$ uname -a\nLinux menas 2.6.27.39-0.2-default #1 SMP 2009-11-23 12:57:38 +0100 x86_64 x86_64 x86_64 GNU/Linux\n[mvngu`@`menas ~]$ export CC=gcc\n[mvngu`@`menas ~]$ export CXX=g++\n[mvngu`@`menas ~]$ ./testcc.sh \nGCC\n[mvngu`@`menas ~]$ ./testcxx.sh \nGCC\n }}}\n* Red Hat Enterprise Linux Server 5.3 (cleo on SkyNet), IA-64 Itanium 2, GCC 4.4.2:\n {{{\n[mvngu`@`cleo ~]$ gcc -v\nUsing built-in specs.\nTarget: ia64-unknown-linux-gnu\nConfigured with: /usr/local/gcc-4.4.2/src/gcc-4.4.2/configure \n--enable-languages=c,c++,fortran --with-gnu-as \n--with-as=/usr/local/binutils-2.20/ia64-Linux-rhel-gcc-4.4.2/bin/as \n--with-gnu-ld \n--with-ld=/usr/local/binutils-2.20/ia64-Linux-rhel-gcc-4.4.2/bin/ld \n--with-gmp=/usr/local/mpir-1.2.1/ia64-Linux-rhel-gcc-4.4.0 \n--with-mpfr=/usr/local/mpfr-2.4.1/ia64-Linux-mpir-1.2.1-gcc-4.4.0 \n--prefix=/usr/local/gcc-4.4.2/ia64-Linux-rhel-binutils-2.20\nThread model: posix\ngcc version 4.4.2 (GCC)\n }}}\n Without setting CC and CXX:\n {{{\n[mvngu`@`cleo ~]$ uname -a\nLinux cleo 2.6.18-128.1.1.el5 #1 SMP Mon Jan 26 13:57:09 EST 2009 ia64 ia64 ia64 GNU/Linux\n[mvngu`@`cleo ~]$ ./testcc.sh \nSorry, you must define the environment variable CC\n[mvngu`@`cleo ~]$ ./testcxx.sh \nSorry, you should define the environment variable CXX\n }}}\n Now with CC and CXX set:\n {{{\n[mvngu`@`cleo ~]$ uname -a\nLinux cleo 2.6.18-128.1.1.el5 #1 SMP Mon Jan 26 13:57:09 EST 2009 ia64 ia64 ia64 GNU/Linux\n[mvngu`@`cleo ~]$ export CC=gcc\n[mvngu`@`cleo ~]$ export CXX=g++\n[mvngu`@`cleo ~]$ ./testcc.sh \nGCC\n[mvngu`@`cleo ~]$ ./testcxx.sh \nGCC\n }}}\n* Red Hat Enterprise Linux Server 5.4 (rosemary.math), Intel(R) Xeon(R) CPU X7460 `@` 2.66GHz, GCC 4.1.2:\n {{{\n[wstein`@`rosemary mvngu]$ gcc -v\nUsing built-in specs.\nTarget: x86_64-redhat-linux\nConfigured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-libgcj-multifile --enable-languages=c,c++,objc,obj-c++,java,fortran,ada --enable-java-awt=gtk --disable-dssi --enable-plugin --with-java-home=/usr/lib/jvm/java-1.4.2-gcj-1.4.2.0/jre --with-cpu=generic --host=x86_64-redhat-linux\nThread model: posix\ngcc version 4.1.2 20080704 (Red Hat 4.1.2-46)\n }}}\n Without setting CC and CXX:\n {{{\n[wstein`@`rosemary mvngu]$ uname -a\nLinux rosemary.math.uga.edu 2.6.18-164.2.1.el5 #1 SMP Mon Sep 21 04:37:42 EDT 2009 x86_64 x86_64 x86_64 GNU/Linux\n[wstein`@`rosemary mvngu]$ ./testcc.sh \nSorry, you must define the environment variable CC\n[wstein`@`rosemary mvngu]$ ./testcxx.sh \nSorry, you should define the environment variable CXX\n }}}\n Now with CC and CXX set to use GCC:\n {{{\n[wstein`@`rosemary mvngu]$ uname -a\nLinux rosemary.math.uga.edu 2.6.18-164.2.1.el5 #1 SMP Mon Sep 21 04:37:42 EDT 2009 x86_64 x86_64 x86_64 GNU/Linux\n[wstein`@`rosemary mvngu]$ export CC=gcc\n[wstein`@`rosemary mvngu]$ export CXX=g++\n[wstein`@`rosemary mvngu]$ ./testcc.sh \nGCC\n[wstein`@`rosemary mvngu]$ ./testcxx.sh \nGCC\n }}}\n* Solaris 10 (fulvia on SkyNet), i386 CPU `@` 2400 MHz, Sun Studio 12 and GCC 4.4.2:\n {{{\n[mvngu`@`fulvia ~]$ /usr/local/SunStudio12-200709/x86_64-SunOS/SUNWspro/bin/cc -V                                                                                                                                                   \ncc: Sun C 5.9 SunOS_i386 Patch 124868-01 2007/07/12\n[mvngu`@`fulvia ~]$ /usr/local/SunStudio12-200709/x86_64-SunOS/SUNWspro/bin/CC -V\nCC: Sun C++ 5.9 SunOS_i386 Patch 124864-01 2007/07/25\n[mvngu`@`fulvia ~]$ gcc -v\nUsing built-in specs.\nTarget: i386-pc-solaris2.10\nConfigured with: /usr/local/gcc-4.4.2/src/gcc-4.4.2/configure \n--enable-languages=c,c++,fortran --with-gnu-as \n--with-as=/usr/local/binutils-2.20/x86_64-SunOS-core2-gcc-4.4.2/bin/as \n--with-gnu-ld \n--with-ld=/usr/local/binutils-2.20/x86_64-SunOS-core2-gcc-4.4.2/bin/ld \n--with-gmp=/usr/local/mpir-1.2.1/x86_64-SunOS-core2-gcc-4.4.0-abi32 \n--with-mpfr=/usr/local/mpfr-2.4.1/x86_64-SunOS-core2-mpir-1.2.1-gcc-4.4.0-abi32\n--prefix=/usr/local/gcc-4.4.2/x86_64-SunOS-core2-binutils-2.20\nThread model: posix\ngcc version 4.4.2 (GCC)\n }}}\n Without setting CC and CXX:\n {{{\n[mvngu`@`fulvia ~]$ uname -a\nSunOS fulvia 5.10 Generic_127128-11 i86pc i386 i86pc\n[mvngu`@`fulvia ~]$ ./testcc.sh                                                  \nSorry, you must define the environment variable CC\n[mvngu`@`fulvia ~]$ ./testcxx.sh                                                 \nSorry, you should define the environment variable CXX\n }}}\n Now set CC and CXX to gcc and g++:\n {{{\n[mvngu`@`fulvia ~]$ uname -a\nSunOS fulvia 5.10 Generic_127128-11 i86pc i386 i86pc\n[mvngu`@`fulvia ~]$ export CC=gcc                                                \n[mvngu`@`fulvia ~]$ export CXX=g++                                               \n[mvngu`@`fulvia ~]$ ./testcc.sh                                                  \nGCC\n[mvngu`@`fulvia ~]$ ./testcxx.sh                                                 \nGCC\n }}}\n Now set CC and CXX to use Sun Studio 12:\n {{{\n[mvngu`@`fulvia ~]$ uname -a\nSunOS fulvia 5.10 Generic_127128-11 i86pc i386 i86pc\n[mvngu`@`fulvia ~]$ export CC=/usr/local/SunStudio12-200709/x86_64-SunOS/SUNWspro/bin/cc                                                                                                                                            \n[mvngu`@`fulvia ~]$ export CXX=/usr/local/SunStudio12-200709/x86_64-SunOS/SUNWspro/bin/CC                                                                                                                                           \n[mvngu`@`fulvia ~]$ ./testcc.sh                                                                                                                                                                                                     \nSun_Studio\n[mvngu`@`fulvia ~]$ ./testcxx.sh                                                                                                                                                                                                    \nSun_Studio\n }}}\n* Solaris 10 (t2.math), SPARC T5240, with Sun Studio 12 and GCC 4.4.1:\n {{{\n[mvngu`@`t2 ~]$ /opt/SUNWspro/prod/bin/cc -V\ncc: Sun C 5.9 SunOS_sparc Patch 124867-11 2009/04/30\nusage: cc [ options] files.  Use 'cc -flags' for details\n[mvngu`@`t2 ~]$ /opt/SUNWspro/prod/bin/CC -V\nCC: Sun C++ 5.9 SunOS_sparc Patch 124863-17 2009/10/27\n[mvngu`@`t2 ~]$ gcc -v\nUsing built-in specs.\nTarget: sparc-sun-solaris2.10\nConfigured with: ../gcc-4.4.1/configure \n--prefix=/usr/local/gcc-4.4.1-sun-linker/ --with-as=/usr/ccs/bin/as \n--without-gnu-as --with-ld=/usr/ccs/bin/ld --without-gnu-ld \n--enable-languages=c,c++,fortran --with-mpfr-include=/usr/local/include \n--with-mpfr-lib=/usr/local/lib --with-gmp-include=/usr/local/include \n--with-gmp-lib=/usr/local/lib CC=/usr/sfw/bin/gcc CXX=/usr/sfw/bin/g++\nThread model: posix\ngcc version 4.4.1 (GCC)\n }}}\n Without setting CC and CXX:\n {{{\n[mvngu`@`t2 ~]$ uname -a\nSunOS t2 5.10 Generic_141414-02 sun4v sparc SUNW,T5240\n[mvngu`@`t2 ~]$ ./testcc.sh \nSorry, you must define the environment variable CC\n[mvngu`@`t2 ~]$ ./testcxx.sh \nSorry, you should define the environment variable CXX\n }}}\n Now set CC and CXX to gcc and g++:\n {{{\n[mvngu`@`t2 ~]$ uname -a\nSunOS t2 5.10 Generic_141414-02 sun4v sparc SUNW,T5240\n[mvngu`@`t2 ~]$ export CC=gcc\n[mvngu`@`t2 ~]$ export CXX=g++\n[mvngu`@`t2 ~]$ ./testcc.sh \nGCC\n[mvngu`@`t2 ~]$ ./testcxx.sh \nGCC\n }}}\n Now set CC and CXX to use Sun Studio 12:\n {{{\n[mvngu`@`t2 ~]$ uname -a\nSunOS t2 5.10 Generic_141414-02 sun4v sparc SUNW,T5240\n[mvngu`@`t2 ~]$ export CC=/opt/SUNWspro/prod/bin/cc\n[mvngu`@`t2 ~]$ export CXX=/opt/SUNWspro/prod/bin/CC\n[mvngu`@`t2 ~]$ ./testcc.sh \nSun_Studio\n[mvngu`@`t2 ~]$ ./testcxx.sh \nSun_Studio\n }}}\n* SUSE Linux Enterprise Server 10 SP1 (iras on SkyNet), IA-64, GCC 4.4.2:\n {{{\n[mvngu`@`iras ~]$ gcc -v\nUsing built-in specs.\nTarget: ia64-unknown-linux-gnu\nConfigured with: /usr/local/gcc-4.4.2/src/gcc-4.4.2/configure \n--enable-languages=c,c++,fortran --with-gnu-as \n--with-as=/usr/local/binutils-2.20/ia64-Linux-suse-gcc-4.4.2/bin/as \n--with-gnu-ld \n--with-ld=/usr/local/binutils-2.20/ia64-Linux-suse-gcc-4.4.2/bin/ld \n--with-gmp=/usr/local/mpir-1.2.1/ia64-Linux-rhel-gcc-4.4.0 \n--with-mpfr=/usr/local/mpfr-2.4.1/ia64-Linux-mpir-1.2.1-gcc-4.4.0 \n--prefix=/usr/local/gcc-4.4.2/ia64-Linux-suse-binutils-2.20\nThread model: posix\ngcc version 4.4.2 (GCC)\n }}}\n Without setting CC and CXX:\n {{{\n[mvngu`@`iras ~]$ uname -a\nLinux iras 2.6.16.46-0.12-default #1 SMP Thu May 17 14:00:09 UTC 2007 ia64 ia64 ia64 GNU/Linux\n[mvngu`@`iras ~]$ ./testcc.sh \nSorry, you must define the environment variable CC\n[mvngu`@`iras ~]$ ./testcxx.sh \nSorry, you should define the environment variable CXX\n }}}\n Now with CC and CXX set:\n {{{\n[mvngu`@`iras ~]$ uname -a\nLinux iras 2.6.16.46-0.12-default #1 SMP Thu May 17 14:00:09 UTC 2007 ia64 ia64 ia64 GNU/Linux\n[mvngu`@`iras ~]$ export CC=gcc\n[mvngu`@`iras ~]$ export CXX=g++\n[mvngu`@`iras ~]$ ./testcc.sh \nGCC\n[mvngu`@`iras ~]$ ./testcxx.sh \nGCC\n }}}\n* Ubuntu 8.04.3 LTS (boxen.math), Intel(R) Xeon(R) CPU X7460 `@` 2.66GHz, GCC 4.2.4:\n {{{\n[mvngu`@`boxen mvngu]$ gcc -v\nUsing built-in specs.\nTarget: x86_64-linux-gnu\nConfigured with: ../src/configure -v \n--enable-languages=c,c++,fortran,objc,obj-c++,treelang --prefix=/usr \n--enable-shared --with-system-zlib --libexecdir=/usr/lib \n--without-included-gettext --enable-threads=posix --enable-nls \n--with-gxx-include-dir=/usr/include/c++/4.2 --program-suffix=-4.2 \n--enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --enable-mpfr \n--enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu \n--target=x86_64-linux-gnu\nThread model: posix\ngcc version 4.2.4 (Ubuntu 4.2.4-1ubuntu4)\n }}}\n Without setting CC and CXX:\n {{{\n[mvngu`@`boxen mvngu]$ uname -a\nLinux boxen 2.6.24-24-server #1 SMP Sat Aug 22 00:59:57 UTC 2009 x86_64 GNU/Linux\n[mvngu`@`boxen mvngu]$ ./testcc.sh \nSorry, you must define the environment variable CC\n[mvngu`@`boxen mvngu]$ ./testcxx.sh \nSorry, you should define the environment variable CXX\n }}}\n Now with CC and CXX set:\n {{{\n[mvngu`@`boxen mvngu]$ uname -a\nLinux boxen 2.6.24-24-server #1 SMP Sat Aug 22 00:59:57 UTC 2009 x86_64 GNU/Linux\n[mvngu`@`boxen mvngu]$ export CC=gcc\n[mvngu`@`boxen mvngu]$ export CXX=g++\n[mvngu`@`boxen mvngu]$ ./testcc.sh \nGCC\n[mvngu`@`boxen mvngu]$ ./testcxx.sh \nGCC\n }}}\n* Ubuntu 9.10 (running on my MacBook), Intel(R) Core(TM)2 CPU T7200 `@` 2.00GHz, GCC 4.4.1:\n {{{\n[mvngu`@`darkstar ~]$ gcc -v\nUsing built-in specs.\nTarget: i486-linux-gnu\nConfigured with: ../src/configure -v --with-pkgversion='Ubuntu 4.4.1-4ubuntu8' \n--with-bugurl=file:///usr/share/doc/gcc-4.4/README.Bugs \n--enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --enable-shared \n--enable-multiarch --enable-linker-build-id --with-system-zlib \n--libexecdir=/usr/lib --without-included-gettext --enable-threads=posix \n--with-gxx-include-dir=/usr/include/c++/4.4 --program-suffix=-4.4 --enable-nls \n--enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc \n--enable-targets=all --disable-werror --with-arch-32=i486 --with-tune=generic \n--enable-checking=release --build=i486-linux-gnu --host=i486-linux-gnu \n--target=i486-linux-gnu\nThread model: posix\ngcc version 4.4.1 (Ubuntu 4.4.1-4ubuntu8)\n }}}\n Without setting CC and CXX:\n {{{\n[mvngu`@`darkstar ~]$ uname -a\nLinux darkstar 2.6.31-16-generic #53-Ubuntu SMP Tue Dec 8 04:01:29 UTC 2009 i686 GNU/Linux\n[mvngu`@`darkstar ~]$ ./testcc.sh \nSorry, you must define the environment variable CC\n[mvngu`@`darkstar ~]$ ./testcxx.sh \nSorry, you should define the environment variable CXX\n }}}\n Now with CC and CXX set:\n {{{\n[mvngu`@`darkstar ~]$ uname -a\nLinux darkstar 2.6.31-16-generic #53-Ubuntu SMP Tue Dec 8 04:01:29 UTC 2009 i686 GNU/Linux\n[mvngu`@`darkstar ~]$ export CC=gcc\n[mvngu`@`darkstar ~]$ export CXX=g++\n[mvngu`@`darkstar ~]$ ./testcc.sh \nGCC\n[mvngu`@`darkstar ~]$ ./testcxx.sh     \nGCC\n }}}\n\nIn each case, the test scripts work as claimed. We can say that the scripts have been tested and work as claimed on various versions of the following platforms with GCC and the relevant commercial compilers: AIX, Cygwin on Windows XP, Fedora, HP-UX, Mac OS X, openSUSE, Red Hat Enterprise Linux, Solaris, SUSE Linux Enterprise Server, Ubuntu. So far, no one has been able to test the scripts on Tru64 or Alpha Linux because we don't have access to the relevant platform/hardware combinations. At this [sage-devel](http://groups.google.com/group/sage-devel/msg/8ea858e120eec662) thread, Peter Jeremy mentions that he has access to a Tru64 machine, but he won't be able to test the scripts on that machine within the next few weeks from now. But that should not prevent the scripts from being merged in Sage.\n\n\n\n\nThe patch `trac_7505-test-scripts.patch` needs to be applied to `SAGE_ROOT/spkg/base`. But note that with Sage 4.3 some files under `SAGE_ROOT/spkg/base` are not yet managed by revision control:\n\n```\n[mvngu@boxen base]$ pwd\n/dev/shm/mvngu/sage-4.3/spkg/base\n[mvngu@boxen base]$ hg st\nM sage-env\nM sage-spkg\n! prereq-0.3-install\n? prereq-0.5-install\n? prereq-0.5.tar\n```\n\nThe file `prereq-0.3-install` is now superseded by `prereq-0.5-install` so `prereq-0.3-install` can be removed as follows:\n\n```\n[mvngu@boxen base]$ hg remove prereq-0.3-install\n[mvngu@boxen base]$ hg st\nM sage-env\nM sage-spkg\nR prereq-0.3-install\n? prereq-0.5-install\n? prereq-0.5.tar\n```\n\nAlso, the file `prereq-0.5-install` needs to be checked in with:\n\n```\n[mvngu@boxen base]$ hg add prereq-0.5-install\n[mvngu@boxen base]$ hg st\nM sage-env\nM sage-spkg\nA prereq-0.5-install\nR prereq-0.3-install\n? prereq-0.5.tar\n```\n\nBut the file `prereq-0.5.tar` need not be under revision control. In that case, the release manager could edit the file `.hgignore` to ignore that particular tarball. Anyway, I have attached the patch `trac_7505-revision-control.patch` which should take care of editing `.hgignore`, adding `prereq-0.5-install` and removing `prereq-0.3-install`. I have attached a version of David Kirkby's patch that contains his name so that when his scripts are checked in, they are committed in his name. Finally, note that the files `sage-env` and `sage-spkg` must be first checked in before applying any of the above patches. That is, patches/changes should be applied/made to the directory `SAGE_ROOT/spkg/base` in the following order:\n\n1. Check in the changes to `sage-env` and `sage-spkg`.\n2. Apply `trac_7505-revision-control.patch` to properly put three existing files under revision control.\n3. Finally, apply `trac_7505-scripts.patch` which has the same changes as `trac_7505-test-scripts.patch`, but any check ins would be made in David's name.",
+    "created_at": "2009-12-31T19:25:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7505#issuecomment-63478",
+    "user": "mvngu"
+}
+```
 
 The patch `trac_7505-test-scripts.patch` contains two shell scripts: one for testing the type of C compiler, and the other for testing the type of C++ compiler. Here are the results of my testing them on different combinations of platform and hardware:
 
- * AIX 6.1 (access provided by OpenAIX at http://www.metamodul.com/10.html), PowerPC_POWER5 `@` 2097 MHz, with GCC 4.2.4. Unfortunately, the license for the IBM commercial compilers on this machine has expired, so I wasn't able to use those IBM compilers to test the scripts.
+* AIX 6.1 (access provided by OpenAIX at http://www.metamodul.com/10.html), PowerPC_POWER5 `@` 2097 MHz, with GCC 4.2.4. Unfortunately, the license for the IBM commercial compilers on this machine has expired, so I wasn't able to use those IBM compilers to test the scripts.
  {{{
 [mvngu`@`client9 ~]$ gcc -v
 Using built-in specs.
@@ -647,7 +1066,7 @@ GCC
 [mvngu`@`client9 ~]$ ./testcxx.sh 
 GCC
  }}}
- * Cygwin on Windows XP (winxp1 on boxen.math), Intel(R) Xeon(R) CPU X7460  `@` 2.66GHz, with GCC 3.4.4 and GCC 4.3.2:
+* Cygwin on Windows XP (winxp1 on boxen.math), Intel(R) Xeon(R) CPU X7460  `@` 2.66GHz, with GCC 3.4.4 and GCC 4.3.2:
  {{{
 mvngu`@`winxp ~
 $ gcc -v
@@ -740,7 +1159,7 @@ mvngu`@`winxp ~
 $ ./testcxx.sh 
 GCC
  }}}
- * Fedora 12 (cicero on SkyNet), Intel(R) Pentium(R) 4 CPU 2.66GHz, GCC 4.4.2:
+* Fedora 12 (cicero on SkyNet), Intel(R) Pentium(R) 4 CPU 2.66GHz, GCC 4.4.2:
  {{{
 [mvngu`@`cicero ~]$ gcc -v
 Using built-in specs.
@@ -776,7 +1195,7 @@ GCC
 [mvngu`@`cicero ~]$ ./testcxx.sh 
 GCC
  }}}
- * Fedora 12 (eno on SkyNet), Intel(R) Core(TM)2 Quad CPU Q6600 `@` 2.40GHz, GCC 4.4.2:
+* Fedora 12 (eno on SkyNet), Intel(R) Core(TM)2 Quad CPU Q6600 `@` 2.40GHz, GCC 4.4.2:
  {{{
 [mvngu`@`eno ~]$ gcc -v
 Using built-in specs.
@@ -812,7 +1231,7 @@ GCC
 [mvngu`@`eno ~]$ ./testcxx.sh 
 GCC
  }}}
- * Fedora 12 (lena on SkyNet), AMD Phenom(tm) II X4 940 Processor, GCC 4.4.2:
+* Fedora 12 (lena on SkyNet), AMD Phenom(tm) II X4 940 Processor, GCC 4.4.2:
  {{{
 [mvngu`@`lena ~]$ gcc -v
 Using built-in specs.
@@ -848,7 +1267,7 @@ GCC
 [mvngu`@`lena ~]$ ./testcxx.sh 
 GCC
  }}}
- * HP-UX 11i (David Kirkby's machine), PA-RISC processor `@` 552 MHz, GCC 4.3.3 and HP-UX C/C++ compilers:
+* HP-UX 11i (David Kirkby's machine), PA-RISC processor `@` 552 MHz, GCC 4.3.3 and HP-UX C/C++ compilers:
  {{{
 [mvngu`@`hpbox ~]$ /opt/hp-gcc-4.3.3/bin/gcc -v
 Using built-in specs.
@@ -888,7 +1307,7 @@ HP_on_HP-UX
 [mvngu`@`hpbox ~]$ ./testcxx.sh                                                  
 HP_on_HP-UX
  }}}
- * Mac OS X 10.4.11 (my own MacBook), Intel Core 2 Duo 2 GHz, GCC 4.0.1:
+* Mac OS X 10.4.11 (my own MacBook), Intel Core 2 Duo 2 GHz, GCC 4.0.1:
  {{{
 [mvngu`@`darkstar mvngu]$ gcc -v
 Using built-in specs.
@@ -923,7 +1342,7 @@ GCC
 [mvngu`@`darkstar mvngu]$ ./testcxx.sh 
 GCC
  }}}
- * Mac OS X 10.6.2 (bsd.math), Dual-Core Intel Xeon 2.66 GHz, GCC 4.2.1:
+* Mac OS X 10.6.2 (bsd.math), Dual-Core Intel Xeon 2.66 GHz, GCC 4.2.1:
  {{{
 [mvngu`@`bsd mvngu]$ gcc -v
 Using built-in specs.
@@ -958,7 +1377,7 @@ GCC
 [mvngu`@`bsd mvngu]$ ./testcxx.sh 
 GCC
  }}}
- * openSUSE 11.1 (menas on SkyNet), Intel(R) Core(TM)2 Quad CPU Q6600 `@` 2.40GHz, GCC 4.4.2:
+* openSUSE 11.1 (menas on SkyNet), Intel(R) Core(TM)2 Quad CPU Q6600 `@` 2.40GHz, GCC 4.4.2:
  {{{
 [mvngu`@`menas ~]$ gcc -v
 Using built-in specs.
@@ -994,7 +1413,7 @@ GCC
 [mvngu`@`menas ~]$ ./testcxx.sh 
 GCC
  }}}
- * Red Hat Enterprise Linux Server 5.3 (cleo on SkyNet), IA-64 Itanium 2, GCC 4.4.2:
+* Red Hat Enterprise Linux Server 5.3 (cleo on SkyNet), IA-64 Itanium 2, GCC 4.4.2:
  {{{
 [mvngu`@`cleo ~]$ gcc -v
 Using built-in specs.
@@ -1030,7 +1449,7 @@ GCC
 [mvngu`@`cleo ~]$ ./testcxx.sh 
 GCC
  }}}
- * Red Hat Enterprise Linux Server 5.4 (rosemary.math), Intel(R) Xeon(R) CPU X7460 `@` 2.66GHz, GCC 4.1.2:
+* Red Hat Enterprise Linux Server 5.4 (rosemary.math), Intel(R) Xeon(R) CPU X7460 `@` 2.66GHz, GCC 4.1.2:
  {{{
 [wstein`@`rosemary mvngu]$ gcc -v
 Using built-in specs.
@@ -1059,7 +1478,7 @@ GCC
 [wstein`@`rosemary mvngu]$ ./testcxx.sh 
 GCC
  }}}
- * Solaris 10 (fulvia on SkyNet), i386 CPU `@` 2400 MHz, Sun Studio 12 and GCC 4.4.2:
+* Solaris 10 (fulvia on SkyNet), i386 CPU `@` 2400 MHz, Sun Studio 12 and GCC 4.4.2:
  {{{
 [mvngu`@`fulvia ~]$ /usr/local/SunStudio12-200709/x86_64-SunOS/SUNWspro/bin/cc -V                                                                                                                                                   
 cc: Sun C 5.9 SunOS_i386 Patch 124868-01 2007/07/12
@@ -1110,7 +1529,7 @@ Sun_Studio
 [mvngu`@`fulvia ~]$ ./testcxx.sh                                                                                                                                                                                                    
 Sun_Studio
  }}}
- * Solaris 10 (t2.math), SPARC T5240, with Sun Studio 12 and GCC 4.4.1:
+* Solaris 10 (t2.math), SPARC T5240, with Sun Studio 12 and GCC 4.4.1:
  {{{
 [mvngu`@`t2 ~]$ /opt/SUNWspro/prod/bin/cc -V
 cc: Sun C 5.9 SunOS_sparc Patch 124867-11 2009/04/30
@@ -1160,7 +1579,7 @@ Sun_Studio
 [mvngu`@`t2 ~]$ ./testcxx.sh 
 Sun_Studio
  }}}
- * SUSE Linux Enterprise Server 10 SP1 (iras on SkyNet), IA-64, GCC 4.4.2:
+* SUSE Linux Enterprise Server 10 SP1 (iras on SkyNet), IA-64, GCC 4.4.2:
  {{{
 [mvngu`@`iras ~]$ gcc -v
 Using built-in specs.
@@ -1196,7 +1615,7 @@ GCC
 [mvngu`@`iras ~]$ ./testcxx.sh 
 GCC
  }}}
- * Ubuntu 8.04.3 LTS (boxen.math), Intel(R) Xeon(R) CPU X7460 `@` 2.66GHz, GCC 4.2.4:
+* Ubuntu 8.04.3 LTS (boxen.math), Intel(R) Xeon(R) CPU X7460 `@` 2.66GHz, GCC 4.2.4:
  {{{
 [mvngu`@`boxen mvngu]$ gcc -v
 Using built-in specs.
@@ -1232,7 +1651,7 @@ GCC
 [mvngu`@`boxen mvngu]$ ./testcxx.sh 
 GCC
  }}}
- * Ubuntu 9.10 (running on my MacBook), Intel(R) Core(TM)2 CPU T7200 `@` 2.00GHz, GCC 4.4.1:
+* Ubuntu 9.10 (running on my MacBook), Intel(R) Core(TM)2 CPU T7200 `@` 2.00GHz, GCC 4.4.1:
  {{{
 [mvngu`@`darkstar ~]$ gcc -v
 Using built-in specs.
@@ -1315,63 +1734,155 @@ R prereq-0.3-install
 
 But the file `prereq-0.5.tar` need not be under revision control. In that case, the release manager could edit the file `.hgignore` to ignore that particular tarball. Anyway, I have attached the patch `trac_7505-revision-control.patch` which should take care of editing `.hgignore`, adding `prereq-0.5-install` and removing `prereq-0.3-install`. I have attached a version of David Kirkby's patch that contains his name so that when his scripts are checked in, they are committed in his name. Finally, note that the files `sage-env` and `sage-spkg` must be first checked in before applying any of the above patches. That is, patches/changes should be applied/made to the directory `SAGE_ROOT/spkg/base` in the following order:
 
- 1. Check in the changes to `sage-env` and `sage-spkg`.
- 1. Apply `trac_7505-revision-control.patch` to properly put three existing files under revision control.
- 1. Finally, apply `trac_7505-scripts.patch` which has the same changes as `trac_7505-test-scripts.patch`, but any check ins would be made in David's name.
+1. Check in the changes to `sage-env` and `sage-spkg`.
+2. Apply `trac_7505-revision-control.patch` to properly put three existing files under revision control.
+3. Finally, apply `trac_7505-scripts.patch` which has the same changes as `trac_7505-test-scripts.patch`, but any check ins would be made in David's name.
+
 
 
 ---
 
-Comment by mvngu created at 2009-12-31 19:25:27
+archive/issue_comments_063479.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-12-31T19:25:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7505#issuecomment-63479",
+    "user": "mvngu"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mvngu created at 2009-12-31 19:30:38
+archive/issue_comments_063480.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_work.",
+    "created_at": "2009-12-31T19:30:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7505#issuecomment-63480",
+    "user": "mvngu"
+}
+```
 
 Changing status from positive_review to needs_work.
 
 
+
 ---
 
-Comment by mvngu created at 2009-12-31 19:31:49
+archive/issue_comments_063481.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2009-12-31T19:31:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7505#issuecomment-63481",
+    "user": "mvngu"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by mvngu created at 2009-12-31 19:33:51
+archive/issue_comments_063482.json:
+```json
+{
+    "body": "I forgot to say that someone needs to make sure that my patch `trac_7505-revision-control.patch` works as claimed. Once that is done, I think the whole ticket would receive positive review.",
+    "created_at": "2009-12-31T19:33:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7505#issuecomment-63482",
+    "user": "mvngu"
+}
+```
 
 I forgot to say that someone needs to make sure that my patch `trac_7505-revision-control.patch` works as claimed. Once that is done, I think the whole ticket would receive positive review.
 
 
+
 ---
 
-Comment by drkirkby created at 2009-12-31 19:50:38
+archive/issue_comments_063483.json:
+```json
+{
+    "body": "Tests C compiler reading from the command line, not environment variable CC",
+    "created_at": "2009-12-31T19:50:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7505#issuecomment-63483",
+    "user": "drkirkby"
+}
+```
 
 Tests C compiler reading from the command line, not environment variable CC
 
 
+
 ---
+
+archive/issue_comments_063484.json:
+```json
+{
+    "body": "Attachment\n\nTests C++ compiler reading from the command line, not environment variable CXX",
+    "created_at": "2009-12-31T19:51:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7505#issuecomment-63484",
+    "user": "drkirkby"
+}
+```
 
 Attachment
 
 Tests C++ compiler reading from the command line, not environment variable CXX
 
 
+
 ---
+
+archive/issue_comments_063485.json:
+```json
+{
+    "body": "Attachment\n\nI've attached the revised versions. I did not overwrite the file names, and note they now have a 2 appended to the names, which was done by the trac server, not me.",
+    "created_at": "2009-12-31T19:53:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7505#issuecomment-63485",
+    "user": "drkirkby"
+}
+```
 
 Attachment
 
 I've attached the revised versions. I did not overwrite the file names, and note they now have a 2 appended to the names, which was done by the trac server, not me.
 
 
+
 ---
 
-Comment by drkirkby created at 2009-12-31 19:55:48
+archive/issue_comments_063486.json:
+```json
+{
+    "body": "Oops my comments seems to have been missed. \n\nMinh\n\ndid you not see William's comments? The revised scripts attach address them. \n\n\nI do not know if the trac server is in some way out of sync, but I thought I put this comment a few mins ago. The fact Minh seems to have missed something William wrote, makes me wonder if there is a problem with the trac server\n\ndave",
+    "created_at": "2009-12-31T19:55:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7505#issuecomment-63486",
+    "user": "drkirkby"
+}
+```
 
 Oops my comments seems to have been missed. 
 
@@ -1385,9 +1896,20 @@ I do not know if the trac server is in some way out of sync, but I thought I put
 dave
 
 
+
 ---
 
-Comment by mvngu created at 2009-12-31 20:00:12
+archive/issue_comments_063487.json:
+```json
+{
+    "body": "Replying to [comment:27 drkirkby]:\n> did you not see William's comments? \n\nI missed those comments.\n\n\n\n\n> The revised scripts attach address them. \n\nI'll have a look at them.\n\n\n\n\n> I do not know if the trac server is in some way out of sync, but I thought I put this comment a few mins ago. The fact Minh seems to have missed something William wrote, makes me wonder if there is a problem with the trac server\n\nI wasn't CC'd on the ticket. So when I was reviewing your previous attachments, I missed William's comments. There's no need to worry. I can review your newer attachments.",
+    "created_at": "2009-12-31T20:00:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7505#issuecomment-63487",
+    "user": "mvngu"
+}
+```
 
 Replying to [comment:27 drkirkby]:
 > did you not see William's comments? 
@@ -1409,18 +1931,40 @@ I'll have a look at them.
 I wasn't CC'd on the ticket. So when I was reviewing your previous attachments, I missed William's comments. There's no need to worry. I can review your newer attachments.
 
 
+
 ---
 
-Comment by drkirkby created at 2009-12-31 20:07:50
+archive/issue_comments_063488.json:
+```json
+{
+    "body": "PS, regarding your comment about checking in prereq 0.5, see #7781 \n\nDave",
+    "created_at": "2009-12-31T20:07:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7505#issuecomment-63488",
+    "user": "drkirkby"
+}
+```
 
 PS, regarding your comment about checking in prereq 0.5, see #7781 
 
 Dave
 
 
+
 ---
 
-Comment by mvngu created at 2009-12-31 20:25:34
+archive/issue_comments_063489.json:
+```json
+{
+    "body": "There is a mismatch in documentation in `testcc.2.sh`:\n\n```\n54  # Exit if the user supplies any command-line arguments.\n55\tif [ $# -ne 1 ] ; then\n56\t  usage\n57\t  exit 1\n58\tfi\n59\tCC_LOCAL=$1\n```\n\nDo you also want to change the above section to something like the following?\n\n```\n# Exit if the user does not supply one command line argument.\nif [ $# -ne 1 ] ; then\n  usage\n  exit 1\nfi\n\nCC_LOCAL=$1 # Compiler name or path as argument to script. \n```\n\nThis would also be in line with the corresponding documentation in `testcxx.2.sh`.\n\n\n\n\nPS: If you want to replace an earlier version of an attachment with the same name, you could do so. On the page for uploading files, there should be a check box to indicate that you want to replace files of the same name.",
+    "created_at": "2009-12-31T20:25:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7505#issuecomment-63489",
+    "user": "mvngu"
+}
+```
 
 There is a mismatch in documentation in `testcc.2.sh`:
 
@@ -1453,14 +1997,38 @@ This would also be in line with the corresponding documentation in `testcxx.2.sh
 PS: If you want to replace an earlier version of an attachment with the same name, you could do so. On the page for uploading files, there should be a check box to indicate that you want to replace files of the same name.
 
 
+
 ---
+
+archive/issue_comments_063490.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-12-31T20:40:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7505#issuecomment-63490",
+    "user": "drkirkby"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by drkirkby created at 2009-12-31 20:52:21
+archive/issue_comments_063491.json:
+```json
+{
+    "body": "Hi Minh, \nyes, I did want the comment updated, as now the scripts take one argument, not zero as before. I'd purposely chosen to leave the older version on the server, but perhaps with hindsight that was not wise. \n\nDave",
+    "created_at": "2009-12-31T20:52:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7505#issuecomment-63491",
+    "user": "drkirkby"
+}
+```
 
 Hi Minh, 
 yes, I did want the comment updated, as now the scripts take one argument, not zero as before. I'd purposely chosen to leave the older version on the server, but perhaps with hindsight that was not wise. 
@@ -1468,16 +2036,38 @@ yes, I did want the comment updated, as now the scripts take one argument, not z
 Dave
 
 
+
 ---
 
-Comment by was created at 2009-12-31 22:19:04
+archive/issue_comments_063492.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-12-31T22:19:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7505#issuecomment-63492",
+    "user": "was"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by was created at 2009-12-31 22:19:04
+archive/issue_comments_063493.json:
+```json
+{
+    "body": "> Would it be acceptable to you if the file name was much more complex, say [...]\n\nYes.  \"/tmp/test.$$.c\" seems just a little too generic.  I like the change you made in your latest script. \n\nMinh -- thanks for all your testing!\n\nDefinite positive review.",
+    "created_at": "2009-12-31T22:19:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7505#issuecomment-63493",
+    "user": "was"
+}
+```
 
 > Would it be acceptable to you if the file name was much more complex, say [...]
 
@@ -1488,21 +2078,43 @@ Minh -- thanks for all your testing!
 Definite positive review.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-01-03 22:23:55
+archive/issue_comments_063494.json:
+```json
+{
+    "body": "## Note to Mike (release manager)\n\nThis ticket might have got a bit confusing. Just to recap, these things need going in. \n\n* install.patch  (308 bytes) \n* testcc.3.sh  (but named as testcc.sh)\n* testcxx.2.sh (but named as testcxx.sh)",
+    "created_at": "2010-01-03T22:23:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7505#issuecomment-63494",
+    "user": "drkirkby"
+}
+```
 
 ## Note to Mike (release manager)
 
 This ticket might have got a bit confusing. Just to recap, these things need going in. 
 
- * install.patch  (308 bytes) 
- * testcc.3.sh  (but named as testcc.sh)
- * testcxx.2.sh (but named as testcxx.sh)
+* install.patch  (308 bytes) 
+* testcc.3.sh  (but named as testcc.sh)
+* testcxx.2.sh (but named as testcxx.sh)
+
 
 
 ---
 
-Comment by mhansen created at 2010-01-04 01:47:46
+archive/issue_comments_063495.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-04T01:47:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7505",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7505#issuecomment-63495",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

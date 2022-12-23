@@ -1,26 +1,64 @@
 # Issue 4516: make check on binaries should smoothly 100% pass -- right now it fails on the docs and gives lots of verbosity at the start, and #4515
 
+archive/issues_004516.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4516\n\n",
+    "created_at": "2008-11-13T22:59:26Z",
+    "labels": [
+        "distribution",
+        "major",
+        "bug"
+    ],
+    "title": "make check on binaries should smoothly 100% pass -- right now it fails on the docs and gives lots of verbosity at the start, and #4515",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4516",
+    "user": "was"
+}
+```
+Assignee: mabshoff
+
+
+
 Issue created by migration from https://trac.sagemath.org/ticket/4516
 
-Original creator: was
-
-Original creation time: 2008-11-13 22:59:26
-
-Assignee: mabshoff
 
 
 
 
 ---
 
-Comment by was created at 2008-11-14 00:45:03
+archive/issue_comments_033523.json:
+```json
+{
+    "body": "The main bug is that the devel/doc directory isn't copied into the bdist.  This is because of a stupid bug in local/bin/sage-bdist, which is fixed by the attached 1-line patch. \n\nTo test this, apply the patch, do \"./sage -bdist\" then look in the SAGE_ROOT/dist directory and confirm that the resulting binary has a devel/doc directory.",
+    "created_at": "2008-11-14T00:45:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4516",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4516#issuecomment-33523",
+    "user": "was"
+}
+```
 
 The main bug is that the devel/doc directory isn't copied into the bdist.  This is because of a stupid bug in local/bin/sage-bdist, which is fixed by the attached 1-line patch. 
 
 To test this, apply the patch, do "./sage -bdist" then look in the SAGE_ROOT/dist directory and confirm that the resulting binary has a devel/doc directory.
 
 
+
 ---
+
+archive/issue_comments_033524.json:
+```json
+{
+    "body": "Attachment\n\nBy chance, I had experimented with \"sage -bdist\" on Sage 3.2.alpha2, so I could verify that indeed, without this patch the \"devel/doc-main\" directory is missing.\n\nWith this patch applied, it is there after \"sage-bdist\".",
+    "created_at": "2008-11-14T22:39:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4516",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4516#issuecomment-33524",
+    "user": "GeorgSWeber"
+}
+```
 
 Attachment
 
@@ -29,15 +67,37 @@ By chance, I had experimented with "sage -bdist" on Sage 3.2.alpha2, so I could 
 With this patch applied, it is there after "sage-bdist".
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-15 05:04:50
+archive/issue_comments_033525.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-11-15T05:04:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4516",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4516#issuecomment-33525",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-15 05:04:50
+archive/issue_comments_033526.json:
+```json
+{
+    "body": "Merged in Sage 3.2.rc1",
+    "created_at": "2008-11-15T05:04:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4516",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4516#issuecomment-33526",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.2.rc1

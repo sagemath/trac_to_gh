@@ -1,11 +1,21 @@
 # Issue 8408: Update sqlite to 3.6.22 (the latest version)
 
-Issue created by migration from https://trac.sagemath.org/ticket/8408
-
-Original creator: drkirkby
-
-Original creation time: 2010-03-01 13:33:20
-
+archive/issues_008408.json:
+```json
+{
+    "body": "Assignee: GeorgSWeber\n\nOne doctest that fails on Solaris #8400 is solved by updating the version of sqlite to the latest upstream release, which is http://www.sqlite.org/sqlite-amalgamation-3.6.22.tar.gz\n\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8408\n\n",
+    "created_at": "2010-03-01T13:33:20Z",
+    "labels": [
+        "build",
+        "major",
+        "bug"
+    ],
+    "title": "Update sqlite to 3.6.22 (the latest version)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8408",
+    "user": "drkirkby"
+}
+```
 Assignee: GeorgSWeber
 
 One doctest that fails on Solaris #8400 is solved by updating the version of sqlite to the latest upstream release, which is http://www.sqlite.org/sqlite-amalgamation-3.6.22.tar.gz
@@ -15,56 +25,139 @@ One doctest that fails on Solaris #8400 is solved by updating the version of sql
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8408
+
+
+
+
 
 ---
 
-Comment by drkirkby created at 2010-03-01 14:24:38
+archive/issue_comments_075333.json:
+```json
+{
+    "body": "Actually, this solves **ALL** the doctest failures on Solaris, so assuming nobody manages to break anything, Sage 4.3.4 should work on Solaris with all doctests passing! \n\nThe new package can be found at http://boxen.math.washington.edu/home/kirkby/Solaris-fixes/sqlite-3.6.22/sqlite-3.6.22.spkg\n\nDave",
+    "created_at": "2010-03-01T14:24:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8408",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8408#issuecomment-75333",
+    "user": "drkirkby"
+}
+```
 
-Actually, this solves *ALL* the doctest failures on Solaris, so assuming nobody manages to break anything, Sage 4.3.4 should work on Solaris with all doctests passing! 
+Actually, this solves **ALL** the doctest failures on Solaris, so assuming nobody manages to break anything, Sage 4.3.4 should work on Solaris with all doctests passing! 
 
 The new package can be found at http://boxen.math.washington.edu/home/kirkby/Solaris-fixes/sqlite-3.6.22/sqlite-3.6.22.spkg
 
 Dave
 
 
+
 ---
 
-Comment by drkirkby created at 2010-03-01 14:24:38
+archive/issue_comments_075334.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-03-01T14:24:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8408",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8408#issuecomment-75334",
+    "user": "drkirkby"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_075335.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-03-01T14:25:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8408",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8408#issuecomment-75335",
+    "user": "drkirkby"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mpatel created at 2010-03-03 08:05:05
+archive/issue_comments_075336.json:
+```json
+{
+    "body": "Do we know what changed from 3.6.19 to 3.6.22 that might have fixed the segmentation faults?",
+    "created_at": "2010-03-03T08:05:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8408",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8408#issuecomment-75336",
+    "user": "mpatel"
+}
+```
 
 Do we know what changed from 3.6.19 to 3.6.22 that might have fixed the segmentation faults?
 
 
+
 ---
 
-Comment by mpatel created at 2010-03-03 08:05:05
+archive/issue_comments_075337.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-03-03T08:05:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8408",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8408#issuecomment-75337",
+    "user": "mpatel"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mhansen created at 2010-03-06 08:23:07
+archive/issue_comments_075338.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-03-06T08:23:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8408",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8408#issuecomment-75338",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by drkirkby created at 2010-03-06 21:58:48
+archive/issue_comments_075339.json:
+```json
+{
+    "body": "**Notes to the release manager**\n\nSorry, I should have written on the ticket, but #8397, #8398, #8399 #8400 and #8401 can all be closed now this is fixed. \n\nDave",
+    "created_at": "2010-03-06T21:58:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8408",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8408#issuecomment-75339",
+    "user": "drkirkby"
+}
+```
 
-*Notes to the release manager*
+**Notes to the release manager**
 
 Sorry, I should have written on the ticket, but #8397, #8398, #8399 #8400 and #8401 can all be closed now this is fixed. 
 

@@ -1,11 +1,21 @@
 # Issue 3421: [with patch, needs review] MPolynomialRing_libsingular should accept longs in __call__
 
-Issue created by migration from https://trac.sagemath.org/ticket/3421
-
-Original creator: malb
-
-Original creation time: 2008-06-13 22:08:37
-
+archive/issues_003421.json:
+```json
+{
+    "body": "Assignee: malb\n\nCC:  burcin\n\nThis now works:\n\n```\nsage: P.<x,y> = PolynomialRing(QQ)\nsage: P(\"111111111111111111111111111111111111111111111111111111111\")\n111111111111111111111111111111111111111111111111111111111\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3421\n\n",
+    "created_at": "2008-06-13T22:08:37Z",
+    "labels": [
+        "commutative algebra",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch, needs review] MPolynomialRing_libsingular should accept longs in __call__",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3421",
+    "user": "malb"
+}
+```
 Assignee: malb
 
 CC:  burcin
@@ -19,10 +29,25 @@ sage: P("111111111111111111111111111111111111111111111111111111111")
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3421
+
+
+
+
 
 ---
 
-Comment by burcin created at 2008-06-14 00:20:34
+archive/issue_comments_024078.json:
+```json
+{
+    "body": "This still fails on sage.math:\n\n\n```\nsage: P(\"31367566080\")\n---------------------------------------------------------------------------\nOverflowError                             Traceback (most recent call last)\n\n/home/burcin/sage-3.0.2/<ipython console> in <module>()\n\n/home/burcin/sage-3.0.2/multi_polynomial_libsingular.pyx in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomialRing_libsingular.__call__ (sage/rings/polynomial/multi_polynomial_libsingular.cpp:4707)()\n\n/home/burcin/sage-3.0.2/parent.pyx in sage.structure.parent.Parent._coerce_c (sage/structure/parent.c:3400)()\n\n/home/burcin/sage-3.0.2/multi_polynomial_libsingular.pyx in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomialRing_libsingular._coerce_c_impl (sage/rings/polynomial/multi_polynomial_libsingular.cpp:4283)()\n\nOverflowError: value too large to convert to int\n```\n",
+    "created_at": "2008-06-14T00:20:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3421",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3421#issuecomment-24078",
+    "user": "burcin"
+}
+```
 
 This still fails on sage.math:
 
@@ -45,36 +70,93 @@ OverflowError: value too large to convert to int
 
 
 
+
 ---
 
-Comment by malb created at 2008-06-14 00:47:21
+archive/issue_comments_024079.json:
+```json
+{
+    "body": "updated patch to address review",
+    "created_at": "2008-06-14T00:47:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3421",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3421#issuecomment-24079",
+    "user": "malb"
+}
+```
 
 updated patch to address review
 
 
+
 ---
+
+archive/issue_comments_024080.json:
+```json
+{
+    "body": "Attachment\n\nThe updated patch addresses that bug.",
+    "created_at": "2008-06-14T00:47:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3421",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3421#issuecomment-24080",
+    "user": "malb"
+}
+```
 
 Attachment
 
 The updated patch addresses that bug.
 
 
+
 ---
 
-Comment by burcin created at 2008-06-14 00:57:51
+archive/issue_comments_024081.json:
+```json
+{
+    "body": "Looks good to me.",
+    "created_at": "2008-06-14T00:57:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3421",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3421#issuecomment-24081",
+    "user": "burcin"
+}
+```
 
 Looks good to me.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-15 15:09:41
+archive/issue_comments_024082.json:
+```json
+{
+    "body": "Merged in Sage 3.0.3.rc0",
+    "created_at": "2008-06-15T15:09:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3421",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3421#issuecomment-24082",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.3.rc0
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-15 15:09:41
+archive/issue_comments_024083.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-06-15T15:09:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3421",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3421#issuecomment-24083",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

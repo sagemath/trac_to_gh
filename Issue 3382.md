@@ -1,46 +1,117 @@
 # Issue 3382: Compute Newton polytopes without polymake
 
-Issue created by migration from https://trac.sagemath.org/ticket/3382
-
-Original creator: mhampton
-
-Original creation time: 2008-06-08 12:50:15
-
+archive/issues_003382.json:
+```json
+{
+    "body": "Assignee: mhansen\n\nKeywords: polytope, polyhedra, polynomials\n\nCurrently multivariable polynomials have a newton_polytope method which doesn't work without the optional polymake package installed.  This patch switches this method to using the Sage-native code in geometry/polyhedra.py, which only needs the default cddlib (in the future, this might optionally use lrs as well).  \n\nIssue created by migration from https://trac.sagemath.org/ticket/3382\n\n",
+    "created_at": "2008-06-08T12:50:15Z",
+    "labels": [
+        "geometry",
+        "minor",
+        "enhancement"
+    ],
+    "title": "Compute Newton polytopes without polymake",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3382",
+    "user": "mhampton"
+}
+```
 Assignee: mhansen
 
 Keywords: polytope, polyhedra, polynomials
 
 Currently multivariable polynomials have a newton_polytope method which doesn't work without the optional polymake package installed.  This patch switches this method to using the Sage-native code in geometry/polyhedra.py, which only needs the default cddlib (in the future, this might optionally use lrs as well).  
 
+Issue created by migration from https://trac.sagemath.org/ticket/3382
+
+
+
+
 
 ---
+
+archive/issue_comments_023674.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-06-08T19:14:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3382",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3382#issuecomment-23674",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by craigcitro created at 2008-06-15 22:03:48
+archive/issue_comments_023675.json:
+```json
+{
+    "body": "Changing keywords from \"polytope, polyhedra, polynomials\" to \"polytope, polyhedra, polynomials, editor_mhansen\".",
+    "created_at": "2008-06-15T22:03:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3382",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3382#issuecomment-23675",
+    "user": "craigcitro"
+}
+```
 
 Changing keywords from "polytope, polyhedra, polynomials" to "polytope, polyhedra, polynomials, editor_mhansen".
 
 
+
 ---
 
-Comment by mhansen created at 2008-06-16 05:50:34
+archive/issue_comments_023676.json:
+```json
+{
+    "body": "Looks good and passes tests for me.",
+    "created_at": "2008-06-16T05:50:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3382",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3382#issuecomment-23676",
+    "user": "mhansen"
+}
+```
 
 Looks good and passes tests for me.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-23 09:34:21
+archive/issue_comments_023677.json:
+```json
+{
+    "body": "Merged in Sage 3.0.4.alpha0",
+    "created_at": "2008-06-23T09:34:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3382",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3382#issuecomment-23677",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.4.alpha0
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-23 09:34:21
+archive/issue_comments_023678.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-06-23T09:34:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3382",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3382#issuecomment-23678",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

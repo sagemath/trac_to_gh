@@ -1,11 +1,21 @@
 # Issue 4712: Make the doctest timeouts in Sage easily adjustable
 
-Issue created by migration from https://trac.sagemath.org/ticket/4712
-
-Original creator: mabshoff
-
-Original creation time: 2008-12-05 06:49:41
-
+archive/issues_004712.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nThis is a left over from #717. The fix here is to define some env variables that can be used to overwrite the default doctesting timeouts. Those are defined in sage-doctest right at the top:\n\n```\n# the default timeout for doctests: 6 minutes (in seconds)\nTIMEOUT      = 20\n# the timeout value for long doctests: 30 minutes (in seconds)\nTIMEOUT_LONG = 30 * 60\n# the timeout for doctests running under valgrind tools: unreasonably long\nTIMEOUT_VALGRIND = 1024*1024\n```\n\nCanonical names would be IMHO:\n\n```\nSAGE_TIMEOUT\nSAGE_TIMEOUT_LONG\nSAGE_TIMEOUT_VALGRIND\n```\n\nBonus points for running some performance counter once and then adjusting the timeout by some factor on slower machines.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4712\n\n",
+    "created_at": "2008-12-05T06:49:41Z",
+    "labels": [
+        "doctest coverage",
+        "major",
+        "bug"
+    ],
+    "title": "Make the doctest timeouts in Sage easily adjustable",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4712",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 This is a left over from #717. The fix here is to define some env variables that can be used to overwrite the default doctesting timeouts. Those are defined in sage-doctest right at the top:
@@ -33,25 +43,64 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/4712
+
+
+
+
 
 ---
 
-Comment by jhpalmieri created at 2009-06-10 23:16:38
+archive/issue_comments_035526.json:
+```json
+{
+    "body": "Here's a patch; apply to the scripts repository.\n\n(This doesn't earn the bonus points Michael referred to.)",
+    "created_at": "2009-06-10T23:16:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4712",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4712#issuecomment-35526",
+    "user": "jhpalmieri"
+}
+```
 
 Here's a patch; apply to the scripts repository.
 
 (This doesn't earn the bonus points Michael referred to.)
 
 
+
 ---
+
+archive/issue_comments_035527.json:
+```json
+{
+    "body": "Attachment\n\nFine by me.",
+    "created_at": "2009-06-15T19:09:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4712",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4712#issuecomment-35527",
+    "user": "ncalexan"
+}
+```
 
 Attachment
 
 Fine by me.
 
 
+
 ---
 
-Comment by boothby created at 2009-06-26 17:46:55
+archive/issue_comments_035528.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-06-26T17:46:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4712",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4712#issuecomment-35528",
+    "user": "boothby"
+}
+```
 
 Resolution: fixed

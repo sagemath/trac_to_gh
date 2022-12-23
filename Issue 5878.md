@@ -1,11 +1,21 @@
 # Issue 5878: Add support for constructing irreducible matrix representations of the symmetric group
 
-Issue created by migration from https://trac.sagemath.org/ticket/5878
-
-Original creator: saliola
-
-Original creation time: 2009-04-23 16:57:53
-
+archive/issues_005878.json:
+```json
+{
+    "body": "Assignee: saliola\n\nCC:  sage-combinat\n\nKeywords: sage-combinat\n\nIt would be great to be able to construct the matrices for the irreducible representations of the symmetric group.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5878\n\n",
+    "created_at": "2009-04-23T16:57:53Z",
+    "labels": [
+        "combinatorics",
+        "major",
+        "enhancement"
+    ],
+    "title": "Add support for constructing irreducible matrix representations of the symmetric group",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5878",
+    "user": "saliola"
+}
+```
 Assignee: saliola
 
 CC:  sage-combinat
@@ -14,26 +24,65 @@ Keywords: sage-combinat
 
 It would be great to be able to construct the matrices for the irreducible representations of the symmetric group.
 
+Issue created by migration from https://trac.sagemath.org/ticket/5878
+
+
+
+
 
 ---
+
+archive/issue_comments_046437.json:
+```json
+{
+    "body": "Attachment\n\nThe patch adds functionality to construct Young's seminormal and orthogonal representations as well as the Specht representation. This is done via Yang-Baxter graphs, so the patch implements that as well.",
+    "created_at": "2009-04-23T17:05:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5878",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5878#issuecomment-46437",
+    "user": "saliola"
+}
+```
 
 Attachment
 
 The patch adds functionality to construct Young's seminormal and orthogonal representations as well as the Specht representation. This is done via Yang-Baxter graphs, so the patch implements that as well.
 
 
+
 ---
 
-Comment by saliola created at 2009-04-23 17:10:12
+archive/issue_comments_046438.json:
+```json
+{
+    "body": "Warning: The patch depends on #5877.\n\nBut it doesn't have to though: #5877 fixes an issue that is required for the `to_character` method, and this method is not necessary for the rest of the code.",
+    "created_at": "2009-04-23T17:10:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5878",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5878#issuecomment-46438",
+    "user": "saliola"
+}
+```
 
 Warning: The patch depends on #5877.
 
 But it doesn't have to though: #5877 fixes an issue that is required for the `to_character` method, and this method is not necessary for the rest of the code.
 
 
+
 ---
 
-Comment by mvngu created at 2009-05-19 05:57:15
+archive/issue_comments_046439.json:
+```json
+{
+    "body": "Using sage-4.0.alpha0 with patch from #6048, doctesting with options `-t -long` gave me BOOM!:\n\n```\n[mvngu@sage sage-4.0.alpha0]$ ./sage -t -long devel/sage-5878/sage/combinat/symmetric_group_representations.py\n<LOTS_OF_BOOM!>\n```\n\n[Here's](http://sage.math.washington.edu/home/mvngu/patch/5878/log.txt) the full (but very long) error log from the doctests.",
+    "created_at": "2009-05-19T05:57:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5878",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5878#issuecomment-46439",
+    "user": "mvngu"
+}
+```
 
 Using sage-4.0.alpha0 with patch from #6048, doctesting with options `-t -long` gave me BOOM!:
 
@@ -45,9 +94,20 @@ Using sage-4.0.alpha0 with patch from #6048, doctesting with options `-t -long` 
 [Here's](http://sage.math.washington.edu/home/mvngu/patch/5878/log.txt) the full (but very long) error log from the doctests.
 
 
+
 ---
 
-Comment by saliola created at 2009-05-19 08:03:47
+archive/issue_comments_046440.json:
+```json
+{
+    "body": "Replying to [comment:3 mvngu]:\n> Using sage-4.0.alpha0 with patch from #6048, doctesting with options `-t -long` gave me BOOM!:\n\nI can't reproduce this. When I run the tests, with or without #6048, I get no failures:\n\n\n```\nkarkwa: sage-4.0 -version\n| Sage Version 4.0.alpha0, Release Date: 2009-05-15                  |\nkarkwa: hg qapplied \nnon-ascii.patch\ntrac_5878.patch\n\nkarkwa: sage-4.0 -b && sage-4.0 -t -long symmetric_group_representations.py yang_baxter_graph.py \n...\nreal    0m1.263s\nuser    0m1.004s\nsys     0m0.244s\nsage -t -long \"devel/sage-main/sage/combinat/symmetric_group_representations.py\"\n         [5.8 s]\nsage -t -long \"devel/sage-main/sage/combinat/yang_baxter_graph.py\"\n         [3.4 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 9.2 seconds\n```\n\n\nCan you re-check this?\n\nThanks,\nFranco",
+    "created_at": "2009-05-19T08:03:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5878",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5878#issuecomment-46440",
+    "user": "saliola"
+}
+```
 
 Replying to [comment:3 mvngu]:
 > Using sage-4.0.alpha0 with patch from #6048, doctesting with options `-t -long` gave me BOOM!:
@@ -84,21 +144,56 @@ Thanks,
 Franco
 
 
+
 ---
 
-Comment by mhansen created at 2009-06-04 18:48:09
+archive/issue_comments_046441.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-06-04T18:48:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5878",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5878#issuecomment-46441",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mhansen created at 2009-06-04 18:48:09
+archive/issue_comments_046442.json:
+```json
+{
+    "body": "Changing assignee from saliola to mhansen.",
+    "created_at": "2009-06-04T18:48:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5878",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5878#issuecomment-46442",
+    "user": "mhansen"
+}
+```
 
 Changing assignee from saliola to mhansen.
 
 
+
 ---
+
+archive/issue_comments_046443.json:
+```json
+{
+    "body": "Attachment\n\nThings look good to me after I've applied my reviewer patch which takes care of the issues with the upgrade to 4.0.\n\nFranco, can you just check over these?",
+    "created_at": "2009-06-04T18:48:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5878",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5878#issuecomment-46443",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
@@ -107,9 +202,20 @@ Things look good to me after I've applied my reviewer patch which takes care of 
 Franco, can you just check over these?
 
 
+
 ---
 
-Comment by saliola created at 2009-06-04 22:26:02
+archive/issue_comments_046444.json:
+```json
+{
+    "body": "Replying to [comment:5 mhansen]:\n> Things look good to me after I've applied my reviewer patch which takes care of the issues with the upgrade to 4.0.\n> \n> Franco, can you just check over these?\n\nChecked. They are correct.\n\nPositive review for the reviewer patch.",
+    "created_at": "2009-06-04T22:26:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5878",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5878#issuecomment-46444",
+    "user": "saliola"
+}
+```
 
 Replying to [comment:5 mhansen]:
 > Things look good to me after I've applied my reviewer patch which takes care of the issues with the upgrade to 4.0.
@@ -121,29 +227,73 @@ Checked. They are correct.
 Positive review for the reviewer patch.
 
 
+
 ---
 
-Comment by mvngu created at 2009-06-08 03:58:39
+archive/issue_comments_046445.json:
+```json
+{
+    "body": "So all patches have proper review? If so, then the summary should be changed.",
+    "created_at": "2009-06-08T03:58:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5878",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5878#issuecomment-46445",
+    "user": "mvngu"
+}
+```
 
 So all patches have proper review? If so, then the summary should be changed.
 
 
+
 ---
 
-Comment by ncalexan created at 2009-06-15 20:51:25
+archive/issue_comments_046446.json:
+```json
+{
+    "body": "Patch looks good, tests pass on sage.math and my OS X 10.5 laptop.  I'm not expert enough to say the code is correct.  Is this positive review?",
+    "created_at": "2009-06-15T20:51:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5878",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5878#issuecomment-46446",
+    "user": "ncalexan"
+}
+```
 
 Patch looks good, tests pass on sage.math and my OS X 10.5 laptop.  I'm not expert enough to say the code is correct.  Is this positive review?
 
 
+
 ---
 
-Comment by boothby created at 2009-06-19 18:34:22
+archive/issue_comments_046447.json:
+```json
+{
+    "body": "This is ridiculous.  Mhansen gave it a positive review pending saliola's opinion.  Saliola confirmed mhansen's review and +1'd mhansen's patch.  I'm merging this one.",
+    "created_at": "2009-06-19T18:34:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5878",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5878#issuecomment-46447",
+    "user": "boothby"
+}
+```
 
 This is ridiculous.  Mhansen gave it a positive review pending saliola's opinion.  Saliola confirmed mhansen's review and +1'd mhansen's patch.  I'm merging this one.
 
 
+
 ---
 
-Comment by rlm created at 2009-06-24 09:58:04
+archive/issue_comments_046448.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-06-24T09:58:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5878",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5878#issuecomment-46448",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed

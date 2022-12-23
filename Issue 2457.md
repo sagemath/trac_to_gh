@@ -1,11 +1,21 @@
 # Issue 2457: ideal.py doctest failure
 
-Issue created by migration from https://trac.sagemath.org/ticket/2457
-
-Original creator: gfurnish
-
-Original creation time: 2008-03-10 14:07:03
-
+archive/issues_002457.json:
+```json
+{
+    "body": "Assignee: gfurnish\n\n\n```\nFile \"ideal.py\", line 384:\n    sage: I.is_prime()\nExpected:\n    Traceback (most recent call last):\n    ...\n    NotImplementedError\nGot:\n    True\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2457\n\n",
+    "created_at": "2008-03-10T14:07:03Z",
+    "labels": [
+        "group theory",
+        "major",
+        "bug"
+    ],
+    "title": "ideal.py doctest failure",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2457",
+    "user": "gfurnish"
+}
+```
 Assignee: gfurnish
 
 
@@ -22,29 +32,79 @@ Got:
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2457
+
+
+
+
 
 ---
+
+archive/issue_comments_016639.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-03-10T14:08:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2457",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2457#issuecomment-16639",
+    "user": "gfurnish"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by gfurnish created at 2008-03-10 14:09:16
+archive/issue_comments_016640.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-03-10T14:09:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2457",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2457#issuecomment-16640",
+    "user": "gfurnish"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by gfurnish created at 2008-03-10 14:09:16
+archive/issue_comments_016641.json:
+```json
+{
+    "body": "This doctest did not work because 7 is in a PID and thus has an is_prime function.",
+    "created_at": "2008-03-10T14:09:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2457",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2457#issuecomment-16641",
+    "user": "gfurnish"
+}
+```
 
 This doctest did not work because 7 is in a PID and thus has an is_prime function.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-10 14:54:32
+archive/issue_comments_016642.json:
+```json
+{
+    "body": "Patch looks good to me and fixes the issue.\n\nCheers,\n\nMichael",
+    "created_at": "2008-03-10T14:54:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2457",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2457#issuecomment-16642",
+    "user": "mabshoff"
+}
+```
 
 Patch looks good to me and fixes the issue.
 
@@ -53,15 +113,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-10 14:55:31
+archive/issue_comments_016643.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-03-10T14:55:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2457",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2457#issuecomment-16643",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-10 14:55:31
+archive/issue_comments_016644.json:
+```json
+{
+    "body": "Merged in Sage 2.10.3.rc4",
+    "created_at": "2008-03-10T14:55:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2457",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2457#issuecomment-16644",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.3.rc4

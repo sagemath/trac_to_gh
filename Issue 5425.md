@@ -1,11 +1,25 @@
 # Issue 5425: Move MW cohomology to new coercion model
 
-Issue created by migration from https://trac.sagemath.org/ticket/5425
-
-Original creator: robertwb
-
-Original creation time: 2009-03-03 09:23:43
-
+archive/issues_005425.json:
+```json
+{
+    "body": "Assignee: robertwb\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5425\n\n",
+    "created_at": "2009-03-03T09:23:43Z",
+    "labels": [
+        "coercion",
+        "major",
+        "bug"
+    ],
+    "title": "Move MW cohomology to new coercion model",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5425",
+    "user": "robertwb"
+}
+```
 Assignee: robertwb
+
+
+
+Issue created by migration from https://trac.sagemath.org/ticket/5425
 
 

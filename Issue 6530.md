@@ -1,11 +1,21 @@
 # Issue 6530: methods not shown in documentation search
 
-Issue created by migration from https://trac.sagemath.org/ticket/6530
-
-Original creator: gpannwitz
-
-Original creation time: 2009-07-14 07:39:42
-
+archive/issues_006530.json:
+```json
+{
+    "body": "Assignee: schilly\n\nI did a search, on www.sagemath.org, for \"gram schmidt\".  In the Documentation section, there was no link returned for the documentation of the method \"gram_schmidt\", although this was exactly what I was looking for:\n\nhttp://www.sagemath.org/doc/reference/sage/matrix/matrix2.html#sage.matrix.matrix2.Matrix.gram_schmidt\n\nPerhaps our custom Google search can be tweaked?\n\nIssue created by migration from https://trac.sagemath.org/ticket/6530\n\n",
+    "created_at": "2009-07-14T07:39:42Z",
+    "labels": [
+        "website/wiki",
+        "minor",
+        "bug"
+    ],
+    "title": "methods not shown in documentation search",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6530",
+    "user": "gpannwitz"
+}
+```
 Assignee: schilly
 
 I did a search, on www.sagemath.org, for "gram schmidt".  In the Documentation section, there was no link returned for the documentation of the method "gram_schmidt", although this was exactly what I was looking for:
@@ -14,10 +24,25 @@ http://www.sagemath.org/doc/reference/sage/matrix/matrix2.html#sage.matrix.matri
 
 Perhaps our custom Google search can be tweaked?
 
+Issue created by migration from https://trac.sagemath.org/ticket/6530
+
+
+
+
 
 ---
 
-Comment by schilly created at 2009-07-14 08:09:06
+archive/issue_comments_053235.json:
+```json
+{
+    "body": "technically, it is all set so that it should work. I've added some redundant sites:\n\n```\n\thttp://www.sagemath.org/doc/numerical_sage    doc \n\thttp://www.sagemath.org/doc/a_tour_of_sage/    doc \n\thttp://www.sagemath.org/doc/installation/    doc \n\thttp://www.sagemath.org/doc/reference/    doc \n\thttp://www.sagemath.org/doc/developer/    developer \n\thttp://www.sagemath.org/doc/constructions    doc \n\thttp://www.sagemath.org/doc/tutorial/    doc \n```\n\n(label \"doc\" is for used for documentation)\n\nand a master page for the reference to point to all pages\n\n```\nhttp://www.sagemath.org/doc/reference/genindex-all.html [extract linked partial sites]   doc   \n```\n\n\nmaybe it works now better, but i'm not sure.",
+    "created_at": "2009-07-14T08:09:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6530",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6530#issuecomment-53235",
+    "user": "schilly"
+}
+```
 
 technically, it is all set so that it should work. I've added some redundant sites:
 
@@ -43,15 +68,37 @@ http://www.sagemath.org/doc/reference/genindex-all.html [extract linked partial 
 maybe it works now better, but i'm not sure.
 
 
+
 ---
 
-Comment by schilly created at 2009-11-19 22:03:29
+archive/issue_comments_053236.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-11-19T22:03:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6530",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6530#issuecomment-53236",
+    "user": "schilly"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by schilly created at 2009-11-19 22:03:29
+archive/issue_comments_053237.json:
+```json
+{
+    "body": "tested again, it finds \"gram_schmidt\" now. only \"gram schmidt\" seems to be too vague. ticket can be closed.",
+    "created_at": "2009-11-19T22:03:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6530",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6530#issuecomment-53237",
+    "user": "schilly"
+}
+```
 
 tested again, it finds "gram_schmidt" now. only "gram schmidt" seems to be too vague. ticket can be closed.

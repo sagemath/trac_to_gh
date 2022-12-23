@@ -1,11 +1,21 @@
 # Issue 2573: problem with Abelian groups and trivial elements
 
-Issue created by migration from https://trac.sagemath.org/ticket/2573
-
-Original creator: ncalexan
-
-Original creation time: 2008-03-17 18:12:34
-
+archive/issues_002573.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nCC:  ncalexan\n\nKeywords: trivial abelian group class group\n\nThis is a problem:\n\n\n```\nsage: AbelianGroup(1, [1], names='e')\nTrivial Abelian Group\nsage: AbelianGroup(1, [1], names='e').list()\n[]\n```\n\n\nThe handling of 1's in the list of element orders is a problem:\n\n\n```\nsage: AbelianGroup(3, [2, 1, 2], names=list('abc')).list()\n---------------------------------------------------------------------------\n<type 'exceptions.IndexError'>            Traceback (most recent call last)\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/<ipython console> in <module>()\n\n/Users/ncalexan/sage-2.10.3.rc3/local/lib/python2.5/site-packages/sage/groups/abelian_gps/abelian_group.py in AbelianGroup(n, invfac, names)\n    304     elif len(invfac) > n:\n    305         raise ValueError, \"invfac (=%s) must have length n (=%s)\"%(invfac, n)\n--> 306     M = AbelianGroup_class(n, invfac, names)\n    307     return M\n    308 \n\n/Users/ncalexan/sage-2.10.3.rc3/local/lib/python2.5/site-packages/sage/groups/abelian_gps/abelian_group.py in __init__(self, n, invfac, names)\n    371         # *now* define ngens\n    372         self.__ngens = len(self.__invariants)\n--> 373         self._assign_names(names)\n    374 \n    375 \n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/parent_gens.pyx in sage.structure.parent_gens.ParentWithGens._assign_names()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/parent_gens.pyx in sage.structure.parent_gens.normalize_names()\n\n<type 'exceptions.IndexError'>: the number of names must equal the number of generators\n```\n\n\nThis is the cause of strange things like:\n\n\n```\nsage: x = ZZ['x'].gen()\nsage: K\nNumber Field in a with defining polynomial x^4 + 4*x^2 + 2\nsage: K = NumberField(x^4 + 4*x^2 + 2, 'a')\nsage: K.class_group()\nClass group of order 1 with structure  of Number Field in a with defining polynomial x^4 + 4*x^2 + 2\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2573\n\n",
+    "created_at": "2008-03-17T18:12:34Z",
+    "labels": [
+        "porting: Cygwin",
+        "major",
+        "bug"
+    ],
+    "title": "problem with Abelian groups and trivial elements",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2573",
+    "user": "ncalexan"
+}
+```
 Assignee: mabshoff
 
 CC:  ncalexan
@@ -68,9 +78,24 @@ Class group of order 1 with structure  of Number Field in a with defining polyno
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2573
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2008-03-17 20:04:54
+archive/issue_comments_017582.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2008-03-17T20:04:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2573",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2573#issuecomment-17582",
+    "user": "mhansen"
+}
+```
 
 Resolution: duplicate

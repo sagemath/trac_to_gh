@@ -1,30 +1,79 @@
 # Issue 6153: [with patch; needs review] fix repo -- incorrect delete of spkg-debian-maybe
 
-Issue created by migration from https://trac.sagemath.org/ticket/6153
-
-Original creator: was
-
-Original creation time: 2009-05-30 03:32:53
-
+archive/issues_006153.json:
+```json
+{
+    "body": "Assignee: cwitty\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6153\n\n",
+    "created_at": "2009-05-30T03:32:53Z",
+    "labels": [
+        "misc",
+        "blocker",
+        "bug"
+    ],
+    "title": "[with patch; needs review] fix repo -- incorrect delete of spkg-debian-maybe",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6153",
+    "user": "was"
+}
+```
 Assignee: cwitty
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6153
+
+
+
+
 
 ---
+
+archive/issue_comments_049108.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-05-30T03:33:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6153",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6153#issuecomment-49108",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by jason created at 2009-05-30 03:38:40
+archive/issue_comments_049109.json:
+```json
+{
+    "body": "Works great!  Positive review.",
+    "created_at": "2009-05-30T03:38:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6153",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6153#issuecomment-49109",
+    "user": "jason"
+}
+```
 
 Works great!  Positive review.
 
 
+
 ---
 
-Comment by was created at 2009-05-30 04:59:37
+archive/issue_comments_049110.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-05-30T04:59:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6153",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6153#issuecomment-49110",
+    "user": "was"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 4330: interfaces function_call(...) function is a total MESS
 
-Issue created by migration from https://trac.sagemath.org/ticket/4330
-
-Original creator: was
-
-Original creation time: 2008-10-20 15:39:25
-
+archive/issues_004330.json:
+```json
+{
+    "body": "Assignee: was\n\nI just noticed that the functional_call function in the interfaces directory (defined in various files) is a bug-ridden mess.\n\nFor example\n\n```\nsage: a = mathematica('N[BesselK[1+I, 2+ 3*I], 20]')\nsage: a.Re()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/was/build/sage-3.1.3.alpha3/<ipython console> in <module>()\n\n/home/was/build/sage-3.1.3.alpha3/local/lib/python2.5/site-packages/sage/interfaces/expect.pyc in __call__(self, *args, **kwds)\n   1241\n   1242     def __call__(self, *args, **kwds):\n-> 1243         return self._obj.parent().function_call(self._name, [self._obj] + list(args), kwds)\n   1244\n   1245     def help(self):\n\nTypeError: function_call() takes at most 3 arguments (4 given)\nsage:\n```\n\n\nAlso, I noticed that in expect.py the definition of function_call is:\n\n```\ndef function_call(self, function, args=[], kwds={}):\n```\n\nThis is the typical stupid Python newbiew mistake (of course I'm the newbie that is to blame here...), which leads to massive subtle bugs.  Things are done right in function_call in r.py, and that pattern should be used everywhere else.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4330\n\n",
+    "created_at": "2008-10-20T15:39:25Z",
+    "labels": [
+        "interfaces",
+        "major",
+        "bug"
+    ],
+    "title": "interfaces function_call(...) function is a total MESS",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4330",
+    "user": "was"
+}
+```
 Assignee: was
 
 I just noticed that the functional_call function in the interfaces directory (defined in various files) is a bug-ridden mess.
@@ -42,24 +52,61 @@ This is the typical stupid Python newbiew mistake (of course I'm the newbie that
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4330
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2008-10-23 16:48:27
+archive/issue_comments_031756.json:
+```json
+{
+    "body": "Changing assignee from was to mhansen.",
+    "created_at": "2008-10-23T16:48:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4330",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4330#issuecomment-31756",
+    "user": "mhansen"
+}
+```
 
 Changing assignee from was to mhansen.
 
 
+
 ---
 
-Comment by mhansen created at 2008-10-23 16:48:27
+archive/issue_comments_031757.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-10-23T16:48:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4330",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4330#issuecomment-31757",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mhansen created at 2008-11-21 21:27:15
+archive/issue_comments_031758.json:
+```json
+{
+    "body": "I also included a fix which makes the GAP interface way more usable.  It makes the interface work when GAP functions don't return values so that you can do\n\n\n```\nsage: rws.MakeConfluent()\n```\n\n\ninstead of \n\n\n```\nsage: gap.eval(\"MakeConfluent(%s)\"%rws.name()) \n```\n",
+    "created_at": "2008-11-21T21:27:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4330",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4330#issuecomment-31758",
+    "user": "mhansen"
+}
+```
 
 I also included a fix which makes the GAP interface way more usable.  It makes the interface work when GAP functions don't return values so that you can do
 
@@ -78,7 +125,20 @@ sage: gap.eval("MakeConfluent(%s)"%rws.name())
 
 
 
+
 ---
+
+archive/issue_comments_031759.json:
+```json
+{
+    "body": "Attachment\n\nPositive review, though it would be nice to remove \"import random\" from gap.py\nand it would be good to add my example\n\n```\nsage: a = mathematica('N[BesselK[1+I, 2+ 3*I], 20]')\nsage: a.Re()\n```\n\nas an optional doctest.\n\nWilliam",
+    "created_at": "2008-11-22T01:21:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4330",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4330#issuecomment-31759",
+    "user": "was"
+}
+```
 
 Attachment
 
@@ -95,15 +155,37 @@ as an optional doctest.
 William
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-23 01:58:38
+archive/issue_comments_031760.json:
+```json
+{
+    "body": "Merged in Sage 3.2.1.alpha0",
+    "created_at": "2008-11-23T01:58:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4330",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4330#issuecomment-31760",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.2.1.alpha0
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-23 01:58:38
+archive/issue_comments_031761.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-11-23T01:58:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4330",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4330#issuecomment-31761",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

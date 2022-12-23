@@ -1,11 +1,21 @@
 # Issue 3376: matrix multiplication should use Strassen's algorithm
 
-Issue created by migration from https://trac.sagemath.org/ticket/3376
-
-Original creator: zimmerma
-
-Original creation time: 2008-06-06 06:54:44
-
+archive/issues_003376.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  malb\n\nMultiplication of large matrices over GF(2) seems to use a cubic algorithm in Sage, whereas Magma\nimplements Strassen's algorithm:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.0.2, Release Date: 2008-05-24                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: A=Matrix(GF(2),2048);A.randomize()\nsage: B=Matrix(GF(2),2048);B.randomize()\nsage: time C=A*B\nCPU times: user 0.03 s, sys: 0.00 s, total: 0.03 s\nWall time: 0.03 s\n\nsage: A=Matrix(GF(2),4096);A.randomize()\nsage: B=Matrix(GF(2),4096);B.randomize()\nsage: time C=A*B\nCPU times: user 0.26 s, sys: 0.00 s, total: 0.26 s\nWall time: 0.26 s\n\nsage: A=Matrix(GF(2),8192);A.randomize()\nsage: B=Matrix(GF(2),8192);B.randomize()\nsage: time C=A*B\nCPU times: user 4.31 s, sys: 0.01 s, total: 4.31 s\nWall time: 4.31 s\n```\n\nAnd in Magma:\n\n```\nMagma V2.14-8     Fri Jun  6 2008 08:25:49 on pasta    [Seed = 1195890521]\nType ? for help.  Type <Ctrl>-D to quit.\n\nLoading startup file \"/users/cacao/zimmerma/.magmarc\"\n\n> n:=2048;\n> A:=RandomMatrix(GF(2),n,n);\n> B:=RandomMatrix(GF(2),n,n);\n> time C:=A*B;\nTime: 0.030\n\n> n:=4096;\n> A:=RandomMatrix(GF(2),n,n);\n> B:=RandomMatrix(GF(2),n,n);\n> time C:=A*B;\nTime: 0.200\n\n> n:=8192;\n> A:=RandomMatrix(GF(2),n,n);\n> B:=RandomMatrix(GF(2),n,n);\n> time C:=A*B;\nTime: 1.370\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3376\n\n",
+    "created_at": "2008-06-06T06:54:44Z",
+    "labels": [
+        "linear algebra",
+        "minor",
+        "enhancement"
+    ],
+    "title": "matrix multiplication should use Strassen's algorithm",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3376",
+    "user": "zimmerma"
+}
+```
 Assignee: was
 
 CC:  malb
@@ -65,10 +75,25 @@ Time: 1.370
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3376
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-06-06 07:01:34
+archive/issue_comments_023610.json:
+```json
+{
+    "body": "Hi Paul,\n\ncheck out #3204 which has been merged into 3.0.3.a1. The discussion about speeding up m4ri lasted 85 messages - see \n\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/aa4edc241ca4d6bb/7b928e8c28dfd4a2\n\nThe final number according to malb were:\n\n```\n64-bit Debian/GNU Linux, 2.33Ghz Core2Duo (Macbook Pro, 2nd Gen.)\nMatrix Dimension        Magma           GAP             M4RI\n10,000 x 10,000         2.920           6.691           1.760\n16,384 x 16,384         11.140          36.063          6.760\n20,000 x 20,000         20.370          -               12.200\n32,000 x 32,000         74.260          -               51.510 \n```\n\nThere is likely more work planned on this at Dev1 next week. Maybe malb can comment on this a little more.\n\nCheers,\n\nMichael",
+    "created_at": "2008-06-06T07:01:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3376",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3376#issuecomment-23610",
+    "user": "mabshoff"
+}
+```
 
 Hi Paul,
 
@@ -95,13 +120,24 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by malb created at 2008-06-06 09:53:17
+archive/issue_comments_023611.json:
+```json
+{
+    "body": "Actually, some clarifications:\n* Sage as is, uses a O(n<sup>3</sup>/log_2(n)) algorithm (\"Method of the Four Russians\", sometimes also called greasing)\n* At these sizes (up to 8192) the difference between n<sup>3</sup>/log_2(n) and n<sup>2.807</sup> isn't that important yet (at least on the Core2Duo):\n\n```\nsage: A = random_matrix(GF(2),8192)\nsage: B = random_matrix(GF(2),8192); B\n8192 x 8192 dense matrix over Finite Field of size 2\nsage: time C = A*B\nCPU times: user 0.96 s, sys: 0.01 s, total: 0.97 s\nWall time: 0.97\n```\n\n\n```\n> n:=8192;\n> A:=RandomMatrix(GF(2),n,n);\n> B:=RandomMatrix(GF(2),n,n);\n> time C:= A*B;\nTime: 1.570\n```\n\n* The times mentioned by Michael (and posted by me above) are (at least slightly) off since they compare a non-optimised Magma against an optimised Sage, times on the Opteron are more fair:\n\n```\n64-bit Suse Linux, 2.4Ghz Opteron \nMatrix Dimension Magma 2.13-5 M4RI-20080521\n10,000 x 10,000  2.940        2.250\n16,384 x 16,384  9.250        8.800\n20,000 x 20,000  16.570       15.480\n32,000 x 32,000  59.100       57.800\n```\n\n* In Sage 3.0.3 you get dramatically better performance but still no Strassen-Winograd multiplication by default, since I haven't implemented L2 cache detection yet. To use Strassen-Winograd, do\n\n```\nsage: time A._multiply_strassen(B,cutoff=4096)\nCPU times: user 0.96 s, sys: 0.01 s, total: 0.97 s\nWall time: 0.97\n```\n\nas you can see: It isn't really much faster than M4RM yet, since the tricky part is cache friendliness in that region and our M4RM as seen some love there (see the thread mentioned by Michael).",
+    "created_at": "2008-06-06T09:53:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3376",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3376#issuecomment-23611",
+    "user": "malb"
+}
+```
 
 Actually, some clarifications:
- * Sage as is, uses a O(n<sup>3</sup>/log_2(n)) algorithm ("Method of the Four Russians", sometimes also called greasing)
- * At these sizes (up to 8192) the difference between n<sup>3</sup>/log_2(n) and n<sup>2.807</sup> isn't that important yet (at least on the Core2Duo):
+* Sage as is, uses a O(n<sup>3</sup>/log_2(n)) algorithm ("Method of the Four Russians", sometimes also called greasing)
+* At these sizes (up to 8192) the difference between n<sup>3</sup>/log_2(n) and n<sup>2.807</sup> isn't that important yet (at least on the Core2Duo):
 
 ```
 sage: A = random_matrix(GF(2),8192)
@@ -121,7 +157,7 @@ Wall time: 0.97
 Time: 1.570
 ```
 
- * The times mentioned by Michael (and posted by me above) are (at least slightly) off since they compare a non-optimised Magma against an optimised Sage, times on the Opteron are more fair:
+* The times mentioned by Michael (and posted by me above) are (at least slightly) off since they compare a non-optimised Magma against an optimised Sage, times on the Opteron are more fair:
 
 ```
 64-bit Suse Linux, 2.4Ghz Opteron 
@@ -132,7 +168,7 @@ Matrix Dimension Magma 2.13-5 M4RI-20080521
 32,000 x 32,000  59.100       57.800
 ```
 
- * In Sage 3.0.3 you get dramatically better performance but still no Strassen-Winograd multiplication by default, since I haven't implemented L2 cache detection yet. To use Strassen-Winograd, do
+* In Sage 3.0.3 you get dramatically better performance but still no Strassen-Winograd multiplication by default, since I haven't implemented L2 cache detection yet. To use Strassen-Winograd, do
 
 ```
 sage: time A._multiply_strassen(B,cutoff=4096)
@@ -143,23 +179,56 @@ Wall time: 0.97
 as you can see: It isn't really much faster than M4RM yet, since the tricky part is cache friendliness in that region and our M4RM as seen some love there (see the thread mentioned by Michael).
 
 
+
 ---
 
-Comment by malb created at 2008-06-06 12:52:08
+archive/issue_comments_023612.json:
+```json
+{
+    "body": "Changing assignee from was to malb.",
+    "created_at": "2008-06-06T12:52:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3376",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3376#issuecomment-23612",
+    "user": "malb"
+}
+```
 
 Changing assignee from was to malb.
 
 
+
 ---
 
-Comment by malb created at 2008-06-06 12:52:08
+archive/issue_comments_023613.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-06-06T12:52:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3376",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3376#issuecomment-23613",
+    "user": "malb"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by zimmerma created at 2008-06-10 08:00:48
+archive/issue_comments_023614.json:
+```json
+{
+    "body": "Thank you very much Michael and Martin. It seems indeed you had some fun\noptimizing m4ri! Looking at the discussion, especially when I saw Gray code,\nI wondered whether the techniques we used to multiply polynomials over GF(2)\nmight be useful too. See <http://hal.inria.fr/inria-00188261/en>.\n\nMy initial interest was modular composition: Brent and Kung's 1978 Algo 2.1\nenables one to perform a fast modular composition using fast matrix \nmultiplication. In turn, modular composition enables to improve polynomial\nfactorisation or irreducibility tests.\n\nDo you know if Sage implements modular composition, i.e, f(g) mod h over\nGF(p)[x]?",
+    "created_at": "2008-06-10T08:00:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3376",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3376#issuecomment-23614",
+    "user": "zimmerma"
+}
+```
 
 Thank you very much Michael and Martin. It seems indeed you had some fun
 optimizing m4ri! Looking at the discussion, especially when I saw Gray code,
@@ -175,9 +244,20 @@ Do you know if Sage implements modular composition, i.e, f(g) mod h over
 GF(p)[x]?
 
 
+
 ---
 
-Comment by malb created at 2008-06-10 12:14:35
+archive/issue_comments_023615.json:
+```json
+{
+    "body": "I forwarded your question to [sage-devel]\n\n   http://groups.google.com/group/sage-devel/browse_thread/thread/96433650dd75b104\n\nsince I don't know the answer. Though, quite likely Sage doesn't implement it. Thanks for the link to the GF(2)[x] paper!",
+    "created_at": "2008-06-10T12:14:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3376",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3376#issuecomment-23615",
+    "user": "malb"
+}
+```
 
 I forwarded your question to [sage-devel]
 
@@ -186,7 +266,20 @@ I forwarded your question to [sage-devel]
 since I don't know the answer. Though, quite likely Sage doesn't implement it. Thanks for the link to the GF(2)[x] paper!
 
 
+
 ---
+
+archive/issue_comments_023616.json:
+```json
+{
+    "body": "Attachment\n\nThe patch requires\n\n   http://sage.math.washington.edu/home/malb/spkgs/libm4ri-20080601.spkg",
+    "created_at": "2008-08-06T16:31:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3376",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3376#issuecomment-23616",
+    "user": "malb"
+}
+```
 
 Attachment
 
@@ -195,27 +288,62 @@ The patch requires
    http://sage.math.washington.edu/home/malb/spkgs/libm4ri-20080601.spkg
 
 
+
 ---
+
+archive/issue_comments_023617.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-08-06T16:38:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3376",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3376#issuecomment-23617",
+    "user": "malb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by malb created at 2008-08-06 16:41:22
+archive/issue_comments_023618.json:
+```json
+{
+    "body": "=Correction=\n\n* apply #3324\n* apply #3780\n* install http://sage.math.washington.edu/home/malb/spkgs/libm4ri-20080624.spkg\n* apply `m4ri_strassen_standard.patch`\n* apply `m4ri_20080620.patch`",
+    "created_at": "2008-08-06T16:41:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3376",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3376#issuecomment-23618",
+    "user": "malb"
+}
+```
 
 =Correction=
 
- * apply #3324
- * apply #3780
- * install http://sage.math.washington.edu/home/malb/spkgs/libm4ri-20080624.spkg
- * apply `m4ri_strassen_standard.patch`
- * apply `m4ri_20080620.patch`
+* apply #3324
+* apply #3780
+* install http://sage.math.washington.edu/home/malb/spkgs/libm4ri-20080624.spkg
+* apply `m4ri_strassen_standard.patch`
+* apply `m4ri_20080620.patch`
+
 
 
 ---
 
-Comment by mabshoff created at 2008-08-31 00:35:32
+archive/issue_comments_023619.json:
+```json
+{
+    "body": "Positive review for the spkg. Note that there is some debug output to be killed:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.2.alpha3$ ./sage -t devel/sage/sage/matrix/matrix_mod2_dense.pyx\nsage -t  devel/sage/sage/matrix/matrix_mod2_dense.pyx       k: 1\nk: 1\nk: 1\nk: 1\nk: 1\nk: 1\nk: 1\nk: 1\nk: 1\nk: 1\nk: 1\nk: 5\nk: 3\nk: 2\nk: 1\nk: 1\nk: 2\nk: 3\nk: 3\nk: 3\nk: 3\nk: 3\nk: 1\nk: 1\n\n         [2.9 s]\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2008-08-31T00:35:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3376",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3376#issuecomment-23619",
+    "user": "mabshoff"
+}
+```
 
 Positive review for the spkg. Note that there is some debug output to be killed:
 
@@ -255,23 +383,56 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by rlm created at 2008-08-31 00:39:03
+archive/issue_comments_023620.json:
+```json
+{
+    "body": "The two patches here look good.",
+    "created_at": "2008-08-31T00:39:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3376",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3376#issuecomment-23620",
+    "user": "rlm"
+}
+```
 
 The two patches here look good.
 
 
+
 ---
 
-Comment by rlm created at 2008-08-31 00:42:21
+archive/issue_comments_023621.json:
+```json
+{
+    "body": "The `k: 1` crap is coming from line 573, `src/src/brilliantrussian.c`.",
+    "created_at": "2008-08-31T00:42:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3376",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3376#issuecomment-23621",
+    "user": "rlm"
+}
+```
 
 The `k: 1` crap is coming from line 573, `src/src/brilliantrussian.c`.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-31 00:53:11
+archive/issue_comments_023622.json:
+```json
+{
+    "body": "Martin,\n\nI have deleted the line rlm pointed out against policy in the src directory. Please make sure to fix it upstream. I have also cleaned up SPKG.txt a little, so please base the next libm4ri.spkg off the one in Sage 3.1.2.alpha3 since I saw another updated libm4ri.spkg in you spkg directory on sage.math.\n\nCheers,\n\nMichael",
+    "created_at": "2008-08-31T00:53:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3376",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3376#issuecomment-23622",
+    "user": "mabshoff"
+}
+```
 
 Martin,
 
@@ -282,23 +443,56 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-31 00:53:27
+archive/issue_comments_023623.json:
+```json
+{
+    "body": "Merged both patches and the spkg in Sage 3.1.2.alpha3",
+    "created_at": "2008-08-31T00:53:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3376",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3376#issuecomment-23623",
+    "user": "mabshoff"
+}
+```
 
 Merged both patches and the spkg in Sage 3.1.2.alpha3
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-31 00:53:27
+archive/issue_comments_023624.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-08-31T00:53:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3376",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3376#issuecomment-23624",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-31 03:55:03
+archive/issue_comments_023625.json:
+```json
+{
+    "body": "Note that the two patches attached to this ticket are diffs. I did commit them in Martin's name.\n\nCheers,\n\nMichael",
+    "created_at": "2008-08-31T03:55:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3376",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3376#issuecomment-23625",
+    "user": "mabshoff"
+}
+```
 
 Note that the two patches attached to this ticket are diffs. I did commit them in Martin's name.
 

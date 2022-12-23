@@ -1,11 +1,21 @@
 # Issue 2345: negative indicies in vectors
 
-Issue created by migration from https://trac.sagemath.org/ticket/2345
-
-Original creator: mhansen
-
-Original creation time: 2008-02-28 08:47:58
-
+archive/issues_002345.json:
+```json
+{
+    "body": "Assignee: was\n\n\n```\nsage: vector(RR,range(3))[2]\n 2.00000000000000\n\nsage: vector(RR,range(3))[-1]\n----------------------------------------------------\n\n/home/dfdeshom/custom/sage/devel/sage-gcd2/<ipython\nconsole> in <module>()\n\n/home/dfdeshom/custom/sage/devel/sage-gcd2/free_modu\nle_element.pyx in sage.modules.free_module_element.F\nreeModuleElement_generic_dense.__getitem__()\n\n<type 'exceptions.IndexError'>: index (i=-1) must be\n between 0 and 2\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2345\n\n",
+    "created_at": "2008-02-28T08:47:58Z",
+    "labels": [
+        "linear algebra",
+        "major",
+        "bug"
+    ],
+    "title": "negative indicies in vectors",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2345",
+    "user": "mhansen"
+}
+```
 Assignee: was
 
 
@@ -28,36 +38,97 @@ reeModuleElement_generic_dense.__getitem__()
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2345
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2008-02-28 09:36:58
+archive/issue_comments_015703.json:
+```json
+{
+    "body": "Changing assignee from was to mhansen.",
+    "created_at": "2008-02-28T09:36:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2345",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2345#issuecomment-15703",
+    "user": "mhansen"
+}
+```
 
 Changing assignee from was to mhansen.
 
 
+
 ---
+
+archive/issue_comments_015704.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-02-28T09:36:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2345",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2345#issuecomment-15704",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2008-02-28 09:36:58
+archive/issue_comments_015705.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-02-28T09:36:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2345",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2345#issuecomment-15705",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by dfdeshom created at 2008-02-28 14:33:10
+archive/issue_comments_015706.json:
+```json
+{
+    "body": "The patch looks great, thanks!",
+    "created_at": "2008-02-28T14:33:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2345",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2345#issuecomment-15706",
+    "user": "dfdeshom"
+}
+```
 
 The patch looks great, thanks!
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-03 02:55:16
+archive/issue_comments_015707.json:
+```json
+{
+    "body": "There was a long discussion about it and in the end the patch was voted in in the thread:\n\nhttps://groups.google.com/group/sage-devel/browse_thread/thread/0aadcca5557ea45a/80148bb28bec02d1#80148bb28bec02d1\n\nCheers,\n\nMichael",
+    "created_at": "2008-03-03T02:55:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2345",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2345#issuecomment-15707",
+    "user": "mabshoff"
+}
+```
 
 There was a long discussion about it and in the end the patch was voted in in the thread:
 
@@ -68,15 +139,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-03 02:55:16
+archive/issue_comments_015708.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-03-03T02:55:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2345",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2345#issuecomment-15708",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mhansen created at 2008-03-03 03:42:22
+archive/issue_comments_015709.json:
+```json
+{
+    "body": "Merged in 2.10.3.rc1.",
+    "created_at": "2008-03-03T03:42:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2345",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2345#issuecomment-15709",
+    "user": "mhansen"
+}
+```
 
 Merged in 2.10.3.rc1.

@@ -1,18 +1,28 @@
 # Issue 7620: Inconsistent ordering when composing functors
 
-Issue created by migration from https://trac.sagemath.org/ticket/7620
-
-Original creator: SimonKing
-
-Original creation time: 2009-12-08 13:02:23
-
+archive/issues_007620.json:
+```json
+{
+    "body": "Assignee: nthiery\n\nKeywords: Functor composition order\n\nApparently the composition of construction functors is inconsistent.\n\n**__Examples__**\n\n\n```\nsage: from sage.categories.pushout import construction_tower\nsage: P = QQ['x','y']\nsage: construction_tower(P)\n[(None, Multivariate Polynomial Ring in x, y over Rational Field),\n (MPoly[x,y], Rational Field),\n (FractionField, Integer Ring)]\n```\n\n\nLet us see what the product of the two functors above does:\n\n```\nsage: F = prod([X[0] for X in construction_tower(P) if X[0] is not None])\nsage: F\nMPoly[x,y](FractionField(...))\n```\n\n\nOK, that's reasonable, we have `F1*F2(X) = F1(F2(X))`.\n\nBut in a slightly more complicated example, the product gets messed up:\n\n\n```\nsage: P = QQ['x'].fraction_field()['y']\nsage: construction_tower(P)\n[(None,\n  Univariate Polynomial Ring in y over Fraction Field of Univariate Polynomial Ring in x over Rational Field),\n (Poly[y],\n  Fraction Field of Univariate Polynomial Ring in x over Rational Field),\n (FractionField, Univariate Polynomial Ring in x over Rational Field),\n (Poly[x], Rational Field),\n (FractionField, Integer Ring)]\n```\n\n\nNow we do the same product as above:\n\n```\nsage: F = prod([X[0] for X in construction_tower(P) if X[0] is not None])\nsage: F\nFractionField(Poly[x](Poly[y](FractionField(...))))\n```\n\n\nSo, apparently the order is perturbed.\n\nRelated with it, it seems counter-intuitive that the product over the expansion of a functor does not return the functor:\n\n\n```\nsage: F\nFractionField(Poly[x](Poly[y](FractionField(...))))\nsage: prod(F.expand())\nFractionField(Poly[x](FractionField(Poly[y](...))))\n```\n\n\n**__Conventions__**\n\nPossible conventions on the order of composition are: `F1*F2(X)=F1(F2(X))` and `F1*F2(X)=F2(F1(X))`\n\nMy personal preference is `F1*F2(X)=F1(F2(X))`, and it happens to be used in the generic multiplication method of ConstructionFunctor:\n\n\n```\nclass ConstructionFunctor(Functor):\n    def __mul__(self, other):\n        if not isinstance(self, ConstructionFunctor) and not isinstance(other, ConstructionFunctor):\n            raise CoercionException, \"Non-constructive product\"\n        return CompositConstructionFunctor(other, self)\n```\n\n\nSo, I think the convention `F1*F2(X)=F1(F2(X))` should be (or is already) the official Sage convention.\n\n**__About expand()__**\n\n\n```\nclass CompositConstructionFunctor(ConstructionFunctor):\n    def expand(self):\n        return self.all\n```\n\nSince the convention `F1*F2(X)=F1(F2(X))` is used, this method should return `list(reversed(self.all))`.\n\n**__Wrong multiplication order__**\n\n\n```\nclass CompositConstructionFunctor(ConstructionFunctor):\n    def __init__(self, *args):\n        self.all = []\n        for c in args:\n            if isinstance(c, list):\n                self.all += c\n            elif isinstance(c, CompositConstructionFunctor):\n                self.all += c.all\n            else:\n                self.all.append(c)\n        Functor.__init__(self, self.all[0].domain(), self.all[-1].codomain())\n    def __mul__(self, other):\n        if isinstance(self, CompositConstructionFunctor):\n            all = self.all + [other]\n        else:\n            all = [self] + other.all\n        return CompositConstructionFunctor(*all)\n```\n\n\nThat means `self` is applied *before* `other`!\n\n**__Suggested fix__**\n\n1. I suggest that `CompositConstructionFunctor.expand()` returns `list(reversed(self.all))`. Then, we would have `prod(F.expand())==F`. \n\n2. Change the order of `self` and `other` in the multiplication method of `CompositFunctor`\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7620\n\n",
+    "created_at": "2009-12-08T13:02:23Z",
+    "labels": [
+        "categories",
+        "critical",
+        "bug"
+    ],
+    "title": "Inconsistent ordering when composing functors",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7620",
+    "user": "SimonKing"
+}
+```
 Assignee: nthiery
 
 Keywords: Functor composition order
 
 Apparently the composition of construction functors is inconsistent.
 
-*__Examples__*
+**__Examples__**
 
 
 ```
@@ -74,7 +84,7 @@ FractionField(Poly[x](FractionField(Poly[y](...))))
 ```
 
 
-*__Conventions__*
+**__Conventions__**
 
 Possible conventions on the order of composition are: `F1*F2(X)=F1(F2(X))` and `F1*F2(X)=F2(F1(X))`
 
@@ -92,7 +102,7 @@ class ConstructionFunctor(Functor):
 
 So, I think the convention `F1*F2(X)=F1(F2(X))` should be (or is already) the official Sage convention.
 
-*__About expand()__*
+**__About expand()__**
 
 
 ```
@@ -103,7 +113,7 @@ class CompositConstructionFunctor(ConstructionFunctor):
 
 Since the convention `F1*F2(X)=F1(F2(X))` is used, this method should return `list(reversed(self.all))`.
 
-*__Wrong multiplication order__*
+**__Wrong multiplication order__**
 
 
 ```
@@ -127,26 +137,52 @@ class CompositConstructionFunctor(ConstructionFunctor):
 ```
 
 
-That means `self` is applied _before_ `other`!
+That means `self` is applied *before* `other`!
 
-*__Suggested fix__*
+**__Suggested fix__**
 
 1. I suggest that `CompositConstructionFunctor.expand()` returns `list(reversed(self.all))`. Then, we would have `prod(F.expand())==F`. 
 
 2. Change the order of `self` and `other` in the multiplication method of `CompositFunctor`
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7620
+
+
+
+
 
 ---
 
-Comment by SimonKing created at 2009-12-08 13:12:14
+archive/issue_comments_065120.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-12-08T13:12:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7620",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7620#issuecomment-65120",
+    "user": "SimonKing"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by SimonKing created at 2009-12-08 13:12:14
+archive/issue_comments_065121.json:
+```json
+{
+    "body": "With the patch, that should apply to sage-4.3.alpha1, one has\n\n\n```\nsage: from sage.categories.pushout import CompositConstructionFunctor\nsage: F1 = CompositConstructionFunctor(QQ.construction()[0],ZZ['x'].construction()[0])\nsage: F2 = CompositConstructionFunctor(QQ.construction()[0],ZZ['y'].construction()[0])\nsage: F1*F2\nPoly[x](FractionField(Poly[y](FractionField(...))))\n```\n\n\nand \n\n\n```\nsage: from sage.categories.pushout import CompositConstructionFunctor\nsage: F = CompositConstructionFunctor(QQ.construction()[0],ZZ['x'].construction()[0],QQ.construction()[0],ZZ['y'].construction()[0])\nsage: F\nPoly[y](FractionField(Poly[x](FractionField(...))))\nsage: prod(F.expand()) == F\nTrue\n```\n\n\nand I think that is how it should be.",
+    "created_at": "2009-12-08T13:12:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7620",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7620#issuecomment-65121",
+    "user": "SimonKing"
+}
+```
 
 With the patch, that should apply to sage-4.3.alpha1, one has
 
@@ -176,22 +212,57 @@ True
 and I think that is how it should be.
 
 
+
 ---
+
+archive/issue_comments_065122.json:
+```json
+{
+    "body": "Attachment\n\nFixing bugs in the composition order of CompositConstructionFunctor, and adding some doc",
+    "created_at": "2009-12-08T13:13:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7620",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7620#issuecomment-65122",
+    "user": "SimonKing"
+}
+```
 
 Attachment
 
 Fixing bugs in the composition order of CompositConstructionFunctor, and adding some doc
 
 
+
 ---
 
-Comment by mhansen created at 2009-12-27 15:54:08
+archive/issue_comments_065123.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-12-27T15:54:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7620",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7620#issuecomment-65123",
+    "user": "mhansen"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mhansen created at 2010-01-03 21:46:42
+archive/issue_comments_065124.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-03T21:46:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7620",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7620#issuecomment-65124",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

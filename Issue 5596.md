@@ -1,21 +1,46 @@
 # Issue 5596: [with patch, needs review] refactor coercion to catch fewer exceptions
 
-Issue created by migration from https://trac.sagemath.org/ticket/5596
-
-Original creator: robertwb
-
-Original creation time: 2009-03-24 05:06:32
-
+archive/issues_005596.json:
+```json
+{
+    "body": "Assignee: robertwb\n\nCC:  nthiery georgsweber\n\nSee discussion at http://groups.google.com/group/sage-devel/browse_thread/thread/d2145cd313f92bb8/c3049a540f91bab3?hl=en&lnk=gst&q=coercion#c3049a540f91bab3\n\nIssue created by migration from https://trac.sagemath.org/ticket/5596\n\n",
+    "created_at": "2009-03-24T05:06:32Z",
+    "labels": [
+        "coercion",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch, needs review] refactor coercion to catch fewer exceptions",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5596",
+    "user": "robertwb"
+}
+```
 Assignee: robertwb
 
 CC:  nthiery georgsweber
 
 See discussion at http://groups.google.com/group/sage-devel/browse_thread/thread/d2145cd313f92bb8/c3049a540f91bab3?hl=en&lnk=gst&q=coercion#c3049a540f91bab3
 
+Issue created by migration from https://trac.sagemath.org/ticket/5596
+
+
+
+
 
 ---
 
-Comment by mvngu created at 2009-03-27 06:25:49
+archive/issue_comments_043578.json:
+```json
+{
+    "body": "Nope, for me the patch failed to apply against Sage 3.4:\n\n```\nsage: hg_sage.apply(\"/home/mvngu/patch/5596/5596-coerce-exceptions.patch\")\ncd \"/home/mvngu/scratch/sage-3.4/devel/sage\" && hg status\ncd \"/home/mvngu/scratch/sage-3.4/devel/sage\" && hg status\ncd \"/home/mvngu/scratch/sage-3.4/devel/sage\" && hg import   \"/home/mvngu/patch/5596/5596-coerce-exceptions.patch\"\napplying /home/mvngu/patch/5596/5596-coerce-exceptions.patch\nabort: malformed patch a/sage/structure/parent_old.pyx @@ -602,39 +496,4 @@\n```\n",
+    "created_at": "2009-03-27T06:25:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5596",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5596#issuecomment-43578",
+    "user": "mvngu"
+}
+```
 
 Nope, for me the patch failed to apply against Sage 3.4:
 
@@ -30,9 +55,20 @@ abort: malformed patch a/sage/structure/parent_old.pyx @@ -602,39 +496,4 @@
 
 
 
+
 ---
 
-Comment by GeorgSWeber created at 2009-03-30 20:43:32
+archive/issue_comments_043579.json:
+```json
+{
+    "body": "Against 3.4.1.alpha0, the situation gets even worse:\n\n```\napplying ../../../patches/5596-coerce-exceptions.patch\npatching file sage/rings/infinity.py\nHunk #1 FAILED at 87\nHunk #2 FAILED at 100\n2 out of 2 hunks FAILED -- saving rejects to file sage/rings/infinity.py.rej\nabort: malformed patch a/sage/structure/parent_old.pyx @@ -602,39 +496,4 @@\n\n```\n\nThe content of infinity.py.rej is essentially that now there are \"ValueErrors\" instead of \"TypeErrors\" to be exchanged.\n\nI don't know where the \"malformed-ness\" already noticed by Minh comes from, but it hits me also from the command line (using the hg from Sage-3.4.1.alpha0).",
+    "created_at": "2009-03-30T20:43:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5596",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5596#issuecomment-43579",
+    "user": "GeorgSWeber"
+}
+```
 
 Against 3.4.1.alpha0, the situation gets even worse:
 
@@ -51,30 +87,76 @@ The content of infinity.py.rej is essentially that now there are "ValueErrors" i
 I don't know where the "malformed-ness" already noticed by Minh comes from, but it hits me also from the command line (using the hg from Sage-3.4.1.alpha0).
 
 
+
 ---
 
-Comment by robertwb created at 2009-04-25 07:49:33
+archive/issue_comments_043580.json:
+```json
+{
+    "body": "OK, I'll try and rebase these for 3.4.2",
+    "created_at": "2009-04-25T07:49:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5596",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5596#issuecomment-43580",
+    "user": "robertwb"
+}
+```
 
 OK, I'll try and rebase these for 3.4.2
 
 
+
 ---
+
+archive/issue_comments_043581.json:
+```json
+{
+    "body": "Attachment\n\nRebased against 4.1.1",
+    "created_at": "2009-09-24T04:25:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5596",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5596#issuecomment-43581",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 Rebased against 4.1.1
 
 
+
 ---
 
-Comment by robertwb created at 2009-09-24 04:26:24
+archive/issue_comments_043582.json:
+```json
+{
+    "body": "OK, I finally got around to rebasing this. Don't know what the \"malformed-ness\" was either, but it's gone.",
+    "created_at": "2009-09-24T04:26:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5596",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5596#issuecomment-43582",
+    "user": "robertwb"
+}
+```
 
 OK, I finally got around to rebasing this. Don't know what the "malformed-ness" was either, but it's gone.
 
 
+
 ---
 
-Comment by nthiery created at 2009-09-24 09:48:53
+archive/issue_comments_043583.json:
+```json
+{
+    "body": "Thanks for working on this. This will be a big step forward in debuggability or coercion problems!\nIn particular, reducing the amount of poking around \"let's try if this method does not break horribly on this element\" is\ndefinitely going in the right direction. \n\nI just went through the patch, and each change sounds sensible. I haven't checked that they are 100% correct, by lack of expertise.\nIn particular, I haven't checked line by line the big chunks of diffs corresponding to indentation changes (inclusion in a try).\n\nOverall, +1 for setting positive review, but I would prefer if some expert could double check.\n\nI am now on my way to run the tests, and see how this patch interact with the category patches.\n\n\nOne comment:\n\nIn Sage-Combinat, we often have operations which are partially defined, and return None when they are not. How does this fit with the\nchange in the specifications of _mul_ and friends, suggesting to return None rather than raising NotImplemented?\n\nShould \"Returning None indicates that this action is not implemented\" be replaced by something like:\n\n\"Returning None indicates that this action is not defined, or not implemented here, for the given elements\"?\n\nAlternatively, I could possibly suggest to instead check that self._lmul (say) is\nnot the default \"NotImplemented\" implementation of Element, before actually calling it. I guess I am trying to have an analogue of\nthe abstract_method idiom for cpdef methods. Would it be possible to attach some sort of \"abstract method\" flag to a cpdef method,\nthat we could test without actually having to execute the method?\n\nBut I don't mind if this waits for a later patch.",
+    "created_at": "2009-09-24T09:48:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5596",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5596#issuecomment-43583",
+    "user": "nthiery"
+}
+```
 
 Thanks for working on this. This will be a big step forward in debuggability or coercion problems!
 In particular, reducing the amount of poking around "let's try if this method does not break horribly on this element" is
@@ -105,9 +187,20 @@ that we could test without actually having to execute the method?
 But I don't mind if this waits for a later patch.
 
 
+
 ---
 
-Comment by GeorgSWeber created at 2009-09-24 22:36:24
+archive/issue_comments_043584.json:
+```json
+{
+    "body": "Sorry, but\n\n> Overall, +1 for setting positive review, but I would prefer if some expert could double check.\n\nalthough it is always a good thing to have \"some expert\" double checking a patch.\nBut who else, but you two, could you think of for reviewing this specific patch?\n\nIf you could point out to me certain \"suspicious\" lines, I would be happy to look at these, and listen to your explanations, and learn something from it, but I fear that's all I can do. There are damn few experts around for programming \"code doing coercions\" ...\n\nCheers,\nGeorg",
+    "created_at": "2009-09-24T22:36:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5596",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5596#issuecomment-43584",
+    "user": "GeorgSWeber"
+}
+```
 
 Sorry, but
 
@@ -122,9 +215,20 @@ Cheers,
 Georg
 
 
+
 ---
 
-Comment by robertwb created at 2009-09-24 23:15:04
+archive/issue_comments_043585.json:
+```json
+{
+    "body": "Replying to [comment:6 nthiery]:\n\n> I just went through the patch, and each change sounds sensible. I haven't checked that they are 100% correct, by lack of expertise.\n> In particular, I haven't checked line by line the big chunks of diffs corresponding to indentation changes (inclusion in a try).\n> \n> Overall, +1 for setting positive review, but I would prefer if some expert could double check.\n\nI'll second Georg's comments, you are as much of an \"expert\" in this area as nearly anyone else (except maybe me, but I can't review it myself...). \n\n> I am now on my way to run the tests, and see how this patch interact with the category patches.\n\nI saw some tests failing--looks like easy fixes, I'll try and post a patch later tonight. \n\n> One comment:\n> \n> In Sage-Combinat, we often have operations which are partially defined, and return None when they are not. How does this fit with the\n> change in the specifications of _mul_ and friends, suggesting to return None rather than raising NotImplemented?\n> \n> Should \"Returning None indicates that this action is not implemented\" be replaced by something like:\n> \n> \"Returning None indicates that this action is not defined, or not implemented here, for the given elements\"?\n\nI'll change that to say \"not implemented here.\"\n\n> Alternatively, I could possibly suggest to instead check that self._lmul (say) is\n> not the default \"NotImplemented\" implementation of Element, before actually calling it. I guess I am trying to have an analogue of\n> the abstract_method idiom for cpdef methods. Would it be possible to attach some sort of \"abstract method\" flag to a cpdef method,\n> that we could test without actually having to execute the method?\n\nThis can be done, kind of, if one knows the baseclass where the \"abstract\" method is implemented, though it's a bit hackish. I think you underestimate how fast calling a c(p)def method can be though. \n\n> But I don't mind if this waits for a later patch.\n\nYeah, that'd take some thinking, probably best put off 'till later.",
+    "created_at": "2009-09-24T23:15:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5596",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5596#issuecomment-43585",
+    "user": "robertwb"
+}
+```
 
 Replying to [comment:6 nthiery]:
 
@@ -162,16 +266,38 @@ This can be done, kind of, if one knows the baseclass where the "abstract" metho
 Yeah, that'd take some thinking, probably best put off 'till later.
 
 
+
 ---
 
-Comment by robertwb created at 2009-09-25 08:32:02
+archive/issue_comments_043586.json:
+```json
+{
+    "body": "OK, all doctests should pass now.",
+    "created_at": "2009-09-25T08:32:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5596",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5596#issuecomment-43586",
+    "user": "robertwb"
+}
+```
 
 OK, all doctests should pass now.
 
 
+
 ---
 
-Comment by nthiery created at 2009-09-30 11:06:42
+archive/issue_comments_043587.json:
+```json
+{
+    "body": "Replying to [comment:8 robertwb]:\n> Replying to [comment:6 nthiery]:\n> I'll second Georg's comments, you are as much of an \"expert\" in this area as nearly anyone else (except maybe me, but I can't review it myself...). \n\nFair enough :-)\n\n> > I am now on my way to run the tests, and see how this patch interact with the category patches.\n> \n> I saw some tests failing--looks like easy fixes, I'll try and post a patch later tonight. \n\nArgl. I am always off by one version. I now have to compile a 4.1.2 alpha4\n\n> > Alternatively, I could possibly suggest to instead check that self._lmul (say) is\n> > not the default \"NotImplemented\" implementation of Element, before actually calling it. I guess I am trying to have an analogue of\n> > the abstract_method idiom for cpdef methods. Would it be possible to attach some sort of \"abstract method\" flag to a cpdef method,\n> > that we could test without actually having to execute the method?\n> \n> This can be done, kind of, if one knows the baseclass where the \"abstract\" method is implemented, though it's a bit hackish. I think you underestimate how fast calling a c(p)def method can be though. \n\nOh, thanks for pointing this.\n\nNo, I am not worried at all about speed, but about semantic and lazyness. Let's say we are investigating whether there is an action of A on B. That's (mostly) a mathematical question about the parents A and B. So it's preferable to \"ask them\", rather than poking around with some of their elements (which could have some special property). Part of it comes from experience with MuPAD telling that lot of trouble can be avoided if a parent does not construct any element unless asked for explicitly; in particular, lazyness helps handling cross-dependent parents. At the same time, a coercion lookup may involve many intermediate parents which will, or not, play a role in the end.\n\nNow: what do I mean by \"ask them\". That can be using introspection, possibly on their element class. Preferably, it would be by having A and B (or some common boss) declare explicitly the action\nto the coercion system. I actually have in my stack of todo's a preliminary implementation of this, as this is needed for symmetric functions and friends.\n\nHmm, that discussion is becoming long. We should move it to sage-devel.\n\n> Yeah, that'd take some thinking, probably best put off 'till later. \n\nOk. So I put a positive review, pending confirmation that all tests pass smoothly on 4.1.2 alpha4.\n.",
+    "created_at": "2009-09-30T11:06:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5596",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5596#issuecomment-43587",
+    "user": "nthiery"
+}
+```
 
 Replying to [comment:8 robertwb]:
 > Replying to [comment:6 nthiery]:
@@ -207,16 +333,38 @@ Ok. So I put a positive review, pending confirmation that all tests pass smoothl
 .
 
 
+
 ---
 
-Comment by robertwb created at 2009-10-01 07:06:21
+archive/issue_comments_043588.json:
+```json
+{
+    "body": "BTW, there is a `_get_action_` method on Parents themselves. And I *am* worried about speed, or at least the ability to be fast, as this stuff gets invoked for integer arithmetic, etc. :)",
+    "created_at": "2009-10-01T07:06:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5596",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5596#issuecomment-43588",
+    "user": "robertwb"
+}
+```
 
 BTW, there is a `_get_action_` method on Parents themselves. And I *am* worried about speed, or at least the ability to be fast, as this stuff gets invoked for integer arithmetic, etc. :)
 
 
+
 ---
 
-Comment by nthiery created at 2009-10-02 20:40:26
+archive/issue_comments_043589.json:
+```json
+{
+    "body": "Replying to [comment:11 robertwb]:\n> BTW, there is a `_get_action_` method on Parents themselves.\n\nYup.\n\n> And I *am* worried about speed, or at least the ability to be fast, as this stuff gets invoked for integer arithmetic, etc. :)\n\nSure:-)\n\n I should have said that my comment about speed was under the assumption that the coercion lookup was cached.",
+    "created_at": "2009-10-02T20:40:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5596",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5596#issuecomment-43589",
+    "user": "nthiery"
+}
+```
 
 Replying to [comment:11 robertwb]:
 > BTW, there is a `_get_action_` method on Parents themselves.
@@ -230,9 +378,20 @@ Sure:-)
  I should have said that my comment about speed was under the assumption that the coercion lookup was cached.
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-15 07:48:07
+archive/issue_comments_043590.json:
+```json
+{
+    "body": "I get the following failures against 4.1.2:\n\n\n```\nsage -t  \"devel/sage-main/sage/modules/fg_pid/fgp_module.py\"\n**********************************************************************\nFile \"/scratch/mhansen/release/4.2/alpha0/sage-4.2.alpha0/devel/sage-main/sage/modules/fg_pid/fgp_module.py\", line 1280:\n    sage: A._hom_from_smith(Sequence([B.0]), B)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mhansen/release/4.2/alpha0/sage-4.2.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mhansen/release/4.2/alpha0/sage-4.2.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mhansen/release/4.2/alpha0/sage-4.2.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_33[7]>\", line 1, in <module>\n        A._hom_from_smith(Sequence([B.gen(0)]), B)###line 1280:\n    sage: A._hom_from_smith(Sequence([B.0]), B)\n      File \"sage_object.pyx\", line 101, in sage.structure.sage_object.SageObject.__repr__ (sage/structure/sage_object.c:1416)\n      File \"/scratch/mhansen/release/4.2/alpha0/sage-4.2.alpha0/local/lib/python/site-packages/sage/modules/fg_pid/fgp_morphism.py\", line 131, in _repr_\n        list(self.im_gens()))\n      File \"/scratch/mhansen/release/4.2/alpha0/sage-4.2.alpha0/local/lib/python/site-packages/sage/modules/fg_pid/fgp_morphism.py\", line 149, in im_gens\n        self.__im_gens = tuple([self(x) for x in self.domain().gens()])\n      File \"<doctest __main__.example_32[2]>\", line 3, in gens\n    NameError: global name 'tuple' is not defined\n**********************************************************************\n1 items had failures:\n   1 of   8 in __main__.example_33\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/mhansen/.sage//tmp/.doctest_fgp_module.py\n         [7.6 s]\nexit code: 1024\n\n\nsage -t -long \"devel/sage-main/sage/calculus/wester.py\"     \n**********************************************************************\nFile \"/scratch/mhansen/release/4.2/alpha0/sage-4.2.alpha0/devel/sage-main/sage/calculus/wester.py\", line 122:\n    sage: bool(f == g)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mhansen/release/4.2/alpha0/sage-4.2.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mhansen/release/4.2/alpha0/sage-4.2.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mhansen/release/4.2/alpha0/sage-4.2.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[36]>\", line 1, in <module>\n        bool(f == g)###line 122:\n    sage: bool(f == g)\n      File \"expression.pyx\", line 1340, in sage.symbolic.expression.Expression.__nonzero__ (sage/symbolic/expression.cpp:7786)\n      File \"expression.pyx\", line 1483, in sage.symbolic.expression.Expression.test_relation (sage/symbolic/expression.cpp:9153)\n      File \"expression.pyx\", line 2807, in sage.symbolic.expression.Expression.substitute (sage/symbolic/expression.cpp:13840)\n      File \"element.pyx\", line 1177, in sage.structure.element.RingElement.__mul__ (sage/structure/element.c:9945)\n      File \"coerce.pyx\", line 707, in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:6096)\n      File \"coerce.pyx\", line 1160, in sage.structure.coerce.CoercionModel_cache_maps.get_action (sage/structure/coerce.c:10589)\n      File \"coerce.pyx\", line 1283, in sage.structure.coerce.CoercionModel_cache_maps.discover_action (sage/structure/coerce.c:11682)\n      File \"parent.pyx\", line 1203, in sage.structure.parent.Parent.get_action (sage/structure/parent.c:10828)\n      File \"parent_old.pyx\", line 478, in sage.structure.parent_old.Parent._get_action_ (sage/structure/parent_old.c:5974)\n      File \"parent_old.pyx\", line 198, in sage.structure.parent_old.Parent.get_action_c (sage/structure/parent_old.c:2757)\n      File \"parent_old.pyx\", line 210, in sage.structure.parent_old.Parent.get_action_impl (sage/structure/parent_old.c:3068)\n      File \"parent_old.pyx\", line 214, in sage.structure.parent_old.Parent.get_action_c_impl (sage/structure/parent_old.c:3118)\n      File \"parent.pyx\", line 1306, in sage.structure.parent.Parent.discover_action (sage/structure/parent.c:12094)\n      File \"coerce_actions.pyx\", line 92, in sage.structure.coerce_actions.ModuleAction.__init__ (sage/structure/coerce_actions.c:3415)\n      File \"/scratch/mhansen/release/4.2/alpha0/sage-4.2.alpha0/local/lib/python/site-packages/sage/categories/pushout.py\", line 692, in pushout\n        return all(Z)\n      File \"/scratch/mhansen/release/4.2/alpha0/sage-4.2.alpha0/local/lib/python/site-packages/sage/categories/pushout.py\", line 64, in __call__\n        R = c(R)\n      File \"/scratch/mhansen/release/4.2/alpha0/sage-4.2.alpha0/local/lib/python/site-packages/sage/categories/pushout.py\", line 406, in __call__\n        return R.completion(self.p, self.prec, self.extras)\n      File \"/scratch/mhansen/release/4.2/alpha0/sage-4.2.alpha0/local/lib/python/site-packages/sage/rings/number_field/number_field.py\", line 1074, in completion\n        return QQ.completion(p, prec, extras).algebraic_closure()\n      File \"ring.pyx\", line 1752, in sage.rings.ring.Field.algebraic_closure (sage/rings/ring.c:9235)\n    NotImplementedError: Algebraic closures of general fields not implemented.\n**********************************************************************\n1 items had failures:\n   1 of 194 in __main__.example_0\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/mhansen/.sage//tmp/.doctest_wester.py\n         [5.3 s]\nexit code: 1024\n```\n",
+    "created_at": "2009-10-15T07:48:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5596",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5596#issuecomment-43590",
+    "user": "mhansen"
+}
+```
 
 I get the following failures against 4.1.2:
 
@@ -319,16 +478,38 @@ exit code: 1024
 
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-15 07:48:07
+archive/issue_comments_043591.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_work.",
+    "created_at": "2009-10-15T07:48:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5596",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5596#issuecomment-43591",
+    "user": "mhansen"
+}
+```
 
 Changing status from positive_review to needs_work.
 
 
+
 ---
 
-Comment by robertwb created at 2009-10-15 07:50:08
+archive/issue_comments_043592.json:
+```json
+{
+    "body": "\n```\nglobal name 'tuple' is not defined\n```\n\n\nHuh? \n\nI'll take a look when I upgrade.",
+    "created_at": "2009-10-15T07:50:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5596",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5596#issuecomment-43592",
+    "user": "robertwb"
+}
+```
 
 
 ```
@@ -341,28 +522,74 @@ Huh?
 I'll take a look when I upgrade.
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-16 09:45:45
+archive/issue_comments_043593.json:
+```json
+{
+    "body": "Yeah, it's very weird.",
+    "created_at": "2009-10-16T09:45:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5596",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5596#issuecomment-43593",
+    "user": "mhansen"
+}
+```
 
 Yeah, it's very weird.
 
 
+
 ---
 
-Comment by robertwb created at 2009-10-19 21:37:27
+archive/issue_comments_043594.json:
+```json
+{
+    "body": "The NotImplementedError is an easy fix. I'll look at the other one later today, hopefully to get this into 4.2.",
+    "created_at": "2009-10-19T21:37:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5596",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5596#issuecomment-43594",
+    "user": "robertwb"
+}
+```
 
 The NotImplementedError is an easy fix. I'll look at the other one later today, hopefully to get this into 4.2.
 
 
+
 ---
 
-Comment by robertwb created at 2009-10-20 05:26:50
+archive/issue_comments_043595.json:
+```json
+{
+    "body": "apply on top of previous",
+    "created_at": "2009-10-20T05:26:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5596",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5596#issuecomment-43595",
+    "user": "robertwb"
+}
+```
 
 apply on top of previous
 
 
+
 ---
+
+archive/issue_comments_043596.json:
+```json
+{
+    "body": "Attachment\n\nOK, this was one of those weird bugs that was only reproducible in doctests, and an all around pain to track down. Apparently the coercion changes caused some parents to not get garbage collected as eagerly, which exposed a bug when fgp modules are cached and reused. I am still unsure what exactly the bug is (I have a hunch it has to do with parents that are defined in doctests getting reused in other doctests after their environment has been recycled or something) but I have disabled caching for now to get it to work. \n\nI refreshed the exposure-fixes patch, should work fine now.",
+    "created_at": "2009-10-20T05:31:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5596",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5596#issuecomment-43596",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
@@ -371,36 +598,93 @@ OK, this was one of those weird bugs that was only reproducible in doctests, and
 I refreshed the exposure-fixes patch, should work fine now.
 
 
+
 ---
 
-Comment by robertwb created at 2009-10-20 05:31:11
+archive/issue_comments_043597.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2009-10-20T05:31:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5596",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5596#issuecomment-43597",
+    "user": "robertwb"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
+
+archive/issue_comments_043598.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-10-21T05:19:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5596",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5596#issuecomment-43598",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-21 05:22:11
+archive/issue_comments_043599.json:
+```json
+{
+    "body": "I added a small patch which just reworked the doctest since the action of the symmetric group on polynomials from the right already exists.\n\nOther than that, everything looks good to me.",
+    "created_at": "2009-10-21T05:22:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5596",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5596#issuecomment-43599",
+    "user": "mhansen"
+}
+```
 
 I added a small patch which just reworked the doctest since the action of the symmetric group on polynomials from the right already exists.
 
 Other than that, everything looks good to me.
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-21 05:22:11
+archive/issue_comments_043600.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-10-21T05:22:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5596",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5596#issuecomment-43600",
+    "user": "mhansen"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-21 05:22:32
+archive/issue_comments_043601.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-10-21T05:22:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5596",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5596#issuecomment-43601",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

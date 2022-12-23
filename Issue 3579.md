@@ -1,11 +1,21 @@
 # Issue 3579: bug in RandonGNP graph constructor
 
-Issue created by migration from https://trac.sagemath.org/ticket/3579
-
-Original creator: was
-
-Original creation time: 2008-07-07 00:37:28
-
+archive/issues_003579.json:
+```json
+{
+    "body": "Assignee: rlm\n\n\n```\n17:32 < itolkov> sage: graphs.RandomGNP(n=4, p=1)\n17:32 < itolkov> Traceback ... OverflowError: math range error\n17:32 < itolkov> bug?\n17:34 < wstein-3576> nt necessarily.\n17:35 < wstein-3576> the line lp=math.log(1.0-p) shows why it doesn't work.\n17:35 < wstein-3576> The docs do not ban probability 1, so yes, it is a bug.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3579\n\n",
+    "created_at": "2008-07-07T00:37:28Z",
+    "labels": [
+        "graph theory",
+        "major",
+        "bug"
+    ],
+    "title": "bug in RandonGNP graph constructor",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3579",
+    "user": "was"
+}
+```
 Assignee: rlm
 
 
@@ -19,28 +29,78 @@ Assignee: rlm
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3579
+
+
+
+
 
 ---
+
+archive/issue_comments_025270.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-07-10T17:06:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3579",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3579#issuecomment-25270",
+    "user": "ekirkman"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by rlm created at 2008-07-10 17:09:28
+archive/issue_comments_025271.json:
+```json
+{
+    "body": "+1",
+    "created_at": "2008-07-10T17:09:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3579",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3579#issuecomment-25271",
+    "user": "rlm"
+}
+```
 
 +1
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-15 01:49:19
+archive/issue_comments_025272.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-07-15T01:49:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3579",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3579#issuecomment-25272",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-15 01:49:19
+archive/issue_comments_025273.json:
+```json
+{
+    "body": "Merged in Sage 3.0.6.alpha0",
+    "created_at": "2008-07-15T01:49:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3579",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3579#issuecomment-25273",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.6.alpha0

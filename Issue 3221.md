@@ -1,11 +1,21 @@
 # Issue 3221: libSingular segfaults Sage on startup on OSX 64
 
-Issue created by migration from https://trac.sagemath.org/ticket/3221
-
-Original creator: mabshoff
-
-Original creation time: 2008-05-16 16:20:23
-
+archive/issues_003221.json:
+```json
+{
+    "body": "Assignee: malb\n\nWith a custom 3.0.2.alpha0 build [not all fixes are in Sage yet to actually build Sage out of the box] I get the following backtrace when I run `P.<x,y>=QQ[]` [I disabled some default imports so Sage doesn't segfault on startup]:\n\n```\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: P.<x,y>=QQ[]\n| SAGE Version 3.0.2.alpha0, Release Date: 2008-05-11                |\n| Type notebook() for the GUI, and license() for information.        |\nProgram received signal EXC_BAD_ACCESS, Could not access memory.\nReason: KERN_INVALID_ADDRESS at address: 0x0000000000000018\n0x0000000107baa12b in omInsertBinPage [inlined] () at om_Alloc.c:109\n109           after->next->prev = page;\n(gdb) bt\nFunction omInsertBinPage was inlined into function omAllocBinFromFullPage at line 145.\n#1  0x0000000107baa12b in omAllocBinFromFullPage (bin=0x107517050) at om_Alloc.c:145\n#2  0x0000000107ba86fe in __omDebugAlloc (size_bin=0x107517050, flags=<value temporarily unavailable, due to optimizations>, track=<value temporarily unavailable, due to optimizations>, f=<value temporarily unavailable, due to optimizations>, l=<value temporarily unavailable, due to optimizations>) at om_Alloc.c:145\n#3  0x0000000107b943d3 in __pyx_pf_4sage_5rings_10polynomial_28multi_polynomial_libsingular_27MPolynomialRing_libsingular___init__ (__pyx_v_self=0x10990ec30, __pyx_args=<value temporarily unavailable, due to optimizations>, __pyx_kwds=<value temporarily unavailable, due to optimizations>) at om_Alloc.c:145\n#4  0x000000010005dfbc in type_call (type=0x107517050, args=0x10011b500, kwds=0x2) at om_Alloc.c:145\n#5  0x000000010000710b in PyObject_Call (func=<value temporarily unavailable, due to optimizations>, arg=<value temporarily unavailable, due to optimizations>, kw=<value temporarily unavailable, due to optimizations>) at om_Alloc.c:145\n#6  0x000000010009ae39 in PyEval_EvalFrameEx (f=0x2, throwflag=<value temporarily unavailable, due to optimizations>) at om_Alloc.c:145\n#7  0x000000010009e049 in PyEval_EvalFrameEx (f=0x2, throwflag=<value temporarily unavailable, due to optimizations>) at om_Alloc.c:145\n#8  0x000000010009e776 in PyEval_EvalCodeEx (co=0x2, globals=<value temporarily unavailable, due to optimizations>, locals=<value temporarily unavailable, due to optimizations>, args=0x10011b500, argcount=2, kws=0x0, kwcount=0, defs=0x105168af8, defcount=6, closure=0x0) at om_Alloc.c:145\n#9  0x000000010002b469 in function_call (func=0x10528bc80, arg=0x10982a320, kw=0x10011b500) at om_Alloc.c:145\n#10 0x000000010000710b in PyObject_Call (func=<value temporarily unavailable, due to optimizations>, arg=<value temporarily unavailable, due to optimizations>, kw=<value temporarily unavailable, due to optimizations>) at om_Alloc.c:145\n#11 0x0000000101e6e447 in __pyx_pf_4sage_5rings_4ring_4Ring___getitem__ (__pyx_v_self=0x101ba8200, __pyx_v_x=0x10011b500) at om_Alloc.c:145\n#12 0x000000010000710b in PyObject_Call (func=<value temporarily unavailable, due to optimizations>, arg=<value temporarily unavailable, due to optimizations>, kw=<value temporarily unavailable, due to optimizations>) at om_Alloc.c:145\n#13 0x0000000100066fff in call_method (o=0x101ba8200, name=<value temporarily unavailable, due to optimizations>, nameobj=0x100153400, format=0x1000edc2b \"(O)\") at om_Alloc.c:145\n#14 0x00000001000997d2 in PyEval_EvalFrameEx (f=0x2, throwflag=<value temporarily unavailable, due to optimizations>) at om_Alloc.c:145\n#15 0x000000010009e776 in PyEval_EvalCodeEx (co=0x2, globals=<value temporarily unavailable, due to optimizations>, locals=<value temporarily unavailable, due to optimizations>, args=0x10011b500, argcount=0, kws=0x0, kwcount=0, defs=0x0, defcount=0, closure=0x0) at om_Alloc.c:145\n#16 0x000000010009d915 in PyEval_EvalFrameEx (f=0x2, throwflag=<value temporarily unavailable, due to optimizations>) at om_Alloc.c:145\n#17 0x000000010009e776 in PyEval_EvalCodeEx (co=0x2, globals=<value temporarily unavailable, due to optimizations>, locals=<value temporarily unavailable, due to optimizations>, args=0x10011b500, argcount=2, kws=0x1086fb7d0, kwcount=0, defs=0x0, defcount=0, closure=0x0) at om_Alloc.c:145\n#18 0x000000010009c78c in PyEval_EvalFrameEx (f=0x2, throwflag=<value temporarily unavailable, due to optimizations>) at om_Alloc.c:145\n#19 0x000000010009e776 in PyEval_EvalCodeEx (co=0x2, globals=<value temporarily unavailable, due to optimizations>, locals=<value temporarily unavailable, due to optimizations>, args=0x10011b500, argcount=3, kws=0x10990b110, kwcount=0, defs=0x101968d58, defcount=2, closure=0x0) at om_Alloc.c:145\n#20 0x000000010009c78c in PyEval_EvalFrameEx (f=0x2, throwflag=<value temporarily unavailable, due to optimizations>) at om_Alloc.c:145\n#21 0x000000010009e049 in PyEval_EvalFrameEx (f=0x2, throwflag=<value temporarily unavailable, due to optimizations>) at om_Alloc.c:145\n#22 0x000000010009e776 in PyEval_EvalCodeEx (co=0x2, globals=<value temporarily unavailable, due to optimizations>, locals=<value temporarily unavailable, due to optimizations>, args=0x10011b500, argcount=2, kws=0x100272228, kwcount=0, defs=0x1019712a8, defcount=1, closure=0x0) at om_Alloc.c:145\n#23 0x000000010009c78c in PyEval_EvalFrameEx (f=0x2, throwflag=<value temporarily unavailable, due to optimizations>) at om_Alloc.c:145\n#24 0x000000010009e776 in PyEval_EvalCodeEx (co=0x2, globals=<value temporarily unavailable, due to optimizations>, locals=<value temporarily unavailable, due to optimizations>, args=0x10011b500, argcount=2, kws=0x1002c46d0, kwcount=0, defs=0x101971268, defcount=1, closure=0x0) at om_Alloc.c:145\n#25 0x000000010009c78c in PyEval_EvalFrameEx (f=0x2, throwflag=<value temporarily unavailable, due to optimizations>) at om_Alloc.c:145\n#26 0x000000010009e776 in PyEval_EvalCodeEx (co=0x2, globals=<value temporarily unavailable, due to optimizations>, locals=<value temporarily unavailable, due to optimizations>, args=0x10011b500, argcount=1, kws=0x100217500, kwcount=2, defs=0x101823ec0, defcount=2, closure=0x0) at om_Alloc.c:145\n#27 0x000000010009c78c in PyEval_EvalFrameEx (f=0x2, throwflag=<value temporarily unavailable, due to optimizations>) at om_Alloc.c:145\n#28 0x000000010009e776 in PyEval_EvalCodeEx (co=0x2, globals=<value temporarily unavailable, due to optimizations>, locals=<value temporarily unavailable, due to optimizations>, args=0x10011b500, argcount=0, kws=0x0, kwcount=0, defs=0x0, defcount=0, closure=0x0) at om_Alloc.c:145\n#29 0x000000010009e9d6 in PyEval_EvalCode (co=<value temporarily unavailable, due to optimizations>, globals=<value temporarily unavailable, due to optimizations>, locals=<value temporarily unavailable, due to optimizations>) at om_Alloc.c:145\n#30 0x00000001000c3641 in PyRun_FileExFlags (fp=0x7fff70600b20, filename=0x10990ec30 \"\\001\", start=<value temporarily unavailable, due to optimizations>, globals=0x100206790, locals=0x100206790, closeit=0, flags=0x10011b500) at om_Alloc.c:145\n#31 0x00000001000c3991 in PyRun_SimpleFileExFlags (fp=<value temporarily unavailable, due to optimizations>, filename=0x107bc9ee0 \"\", closeit=1160448, flags=0x7fff5fbfdf70) at om_Alloc.c:145\n#32 0x00000001000ce5db in Py_Main (argc=<value temporarily unavailable, due to optimizations>, argv=<value temporarily unavailable, due to optimizations>) at om_Alloc.c:145\n#33 0x0000000100001248 in _start ()\n#34 0x0000000100001161 in start ()\n(gdb)                                                                                                   }}}\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3221\n\n",
+    "created_at": "2008-05-16T16:20:23Z",
+    "labels": [
+        "commutative algebra",
+        "major",
+        "bug"
+    ],
+    "title": "libSingular segfaults Sage on startup on OSX 64",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3221",
+    "user": "mabshoff"
+}
+```
 Assignee: malb
 
 With a custom 3.0.2.alpha0 build [not all fixes are in Sage yet to actually build Sage out of the box] I get the following backtrace when I run `P.<x,y>=QQ[]` [I disabled some default imports so Sage doesn't segfault on startup]:
@@ -60,10 +70,25 @@ Function omInsertBinPage was inlined into function omAllocBinFromFullPage at lin
 (gdb)                                                                                                   }}}
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3221
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-05-19 13:29:08
+archive/issue_comments_022298.json:
+```json
+{
+    "body": "The solution here is to compile [lib]Singular with \"--with-malloc=system\" in 64 bit mode on OSX.\n\nCheers,\n\nMichale",
+    "created_at": "2008-05-19T13:29:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3221",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3221#issuecomment-22298",
+    "user": "mabshoff"
+}
+```
 
 The solution here is to compile [lib]Singular with "--with-malloc=system" in 64 bit mode on OSX.
 
@@ -72,30 +97,74 @@ Cheers,
 Michale
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-19 13:29:08
+archive/issue_comments_022299.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-05-19T13:29:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3221",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3221#issuecomment-22299",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-19 13:29:08
+archive/issue_comments_022300.json:
+```json
+{
+    "body": "Changing assignee from malb to mabshoff.",
+    "created_at": "2008-05-19T13:29:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3221",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3221#issuecomment-22300",
+    "user": "mabshoff"
+}
+```
 
 Changing assignee from malb to mabshoff.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-19 22:47:42
+archive/issue_comments_022301.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-08-19T22:47:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3221",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3221#issuecomment-22301",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-19 22:47:42
+archive/issue_comments_022302.json:
+```json
+{
+    "body": "This is fixed by the spkg at #3194.\n\nCheers,\n\nMichael",
+    "created_at": "2008-08-19T22:47:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3221",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3221#issuecomment-22302",
+    "user": "mabshoff"
+}
+```
 
 This is fixed by the spkg at #3194.
 

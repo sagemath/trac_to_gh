@@ -1,11 +1,21 @@
 # Issue 2503: Sage 2.10.4.alpha4: doctest failout in sage/misc/functional.py from #2421
 
-Issue created by migration from https://trac.sagemath.org/ticket/2503
-
-Original creator: mabshoff
-
-Original creation time: 2008-03-12 21:19:49
-
+archive/issues_002503.json:
+```json
+{
+    "body": "Assignee: failure\n\nThe following doctest failure in sage/misc/functional.py happends due to #2421:\n\n```\nsage -t -long devel/sage-main/sage/misc/functional.py\n**********************************************************************\nFile \"functional.py\", line 848:\n    sage: round(b)\nExpected:\n    5.0000000000000000\nGot:\n    5\n**********************************************************************\n1 items had failures:\n   1 of   5 in __main__.example_52\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctest_functional.py\n         [5.0 s]\nexit code: 256\n\n----------------------------------------------------------------------\n```\n\nThe fix is obvious - patch coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2503\n\n",
+    "created_at": "2008-03-12T21:19:49Z",
+    "labels": [
+        "doctest coverage",
+        "major",
+        "bug"
+    ],
+    "title": "Sage 2.10.4.alpha4: doctest failout in sage/misc/functional.py from #2421",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2503",
+    "user": "mabshoff"
+}
+```
 Assignee: failure
 
 The following doctest failure in sage/misc/functional.py happends due to #2421:
@@ -36,28 +46,78 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/2503
+
+
+
+
 
 ---
+
+archive/issue_comments_016959.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-03-12T21:23:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2503",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2503#issuecomment-16959",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2008-03-13 02:54:57
+archive/issue_comments_016960.json:
+```json
+{
+    "body": "Works for me.",
+    "created_at": "2008-03-13T02:54:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2503",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2503#issuecomment-16960",
+    "user": "mhansen"
+}
+```
 
 Works for me.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-13 06:01:46
+archive/issue_comments_016961.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-03-13T06:01:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2503",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2503#issuecomment-16961",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-13 06:01:46
+archive/issue_comments_016962.json:
+```json
+{
+    "body": "Merged in Sage 2.10.4.alpha0",
+    "created_at": "2008-03-13T06:01:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2503",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2503#issuecomment-16962",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.4.alpha0

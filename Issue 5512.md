@@ -1,11 +1,21 @@
 # Issue 5512: CombinatorialSpeciesStructures with different labels are equal
 
-Issue created by migration from https://trac.sagemath.org/ticket/5512
-
-Original creator: saliola
-
-Original creation time: 2009-03-13 17:31:47
-
+archive/issues_005512.json:
+```json
+{
+    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nKeywords: species\n\n\n```\nsage: T = species.BinaryTreeSpecies()\nsage: t = T.structures([1,2,3])[0]; t\n1*(2*3)\nsage: t[0], t[1][0]\n1, 2\nsage: t[0] == t[1][0]\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5512\n\n",
+    "created_at": "2009-03-13T17:31:47Z",
+    "labels": [
+        "combinatorics",
+        "major",
+        "bug"
+    ],
+    "title": "CombinatorialSpeciesStructures with different labels are equal",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5512",
+    "user": "saliola"
+}
+```
 Assignee: mhansen
 
 CC:  sage-combinat
@@ -24,38 +34,97 @@ True
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5512
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2011-01-24 23:12:33
+archive/issue_comments_042810.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2011-01-24T23:12:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5512",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5512#issuecomment-42810",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by elnorreip created at 2011-02-08 11:12:37
+archive/issue_comments_042811.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2011-02-08T11:12:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5512",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5512#issuecomment-42811",
+    "user": "elnorreip"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by elnorreip created at 2011-02-08 13:17:02
+archive/issue_comments_042812.json:
+```json
+{
+    "body": "Added reviewers.",
+    "created_at": "2011-02-08T13:17:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5512",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5512#issuecomment-42812",
+    "user": "elnorreip"
+}
+```
 
 Added reviewers.
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-03-11 22:24:28
+archive/issue_comments_042813.json:
+```json
+{
+    "body": "Moving to sage-feature as long as #10227 does not have a positive_review.",
+    "created_at": "2011-03-11T22:24:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5512",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5512#issuecomment-42813",
+    "user": "jdemeyer"
+}
+```
 
 Moving to sage-feature as long as #10227 does not have a positive_review.
 
 
+
 ---
 
-Comment by hivert created at 2011-06-10 18:16:43
+archive/issue_comments_042814.json:
+```json
+{
+    "body": "Hi Jeroen,\n\nThanks for pointing that #10227 is still awaiting for review. \n\nOne question concerning sage-wait: if someone (eg: me this week end if I find the time) review #10227, am I supposed to change the milestone of this one ? \n\nFlorent",
+    "created_at": "2011-06-10T18:16:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5512",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5512#issuecomment-42814",
+    "user": "hivert"
+}
+```
 
 Hi Jeroen,
 
@@ -66,9 +135,20 @@ One question concerning sage-wait: if someone (eg: me this week end if I find th
 Florent
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-06-14 17:26:29
+archive/issue_comments_042815.json:
+```json
+{
+    "body": "Replying to [comment:9 hivert]:\n> Hi Jeroen,\n> \n> Thanks for pointing that #10227 is still awaiting for review. \n> \n> One question concerning sage-wait: if someone (eg: me this week end if I find the time) review #10227, am I supposed to change the milestone of this one ? \n\nI would say: yes, you can do that, at least if you are sufficient familiar with *this* ticket to be sure that there is no further obstruction.",
+    "created_at": "2011-06-14T17:26:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5512",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5512#issuecomment-42815",
+    "user": "jdemeyer"
+}
+```
 
 Replying to [comment:9 hivert]:
 > Hi Jeroen,
@@ -77,37 +157,94 @@ Replying to [comment:9 hivert]:
 > 
 > One question concerning sage-wait: if someone (eg: me this week end if I find the time) review #10227, am I supposed to change the milestone of this one ? 
 
-I would say: yes, you can do that, at least if you are sufficient familiar with _this_ ticket to be sure that there is no further obstruction.
+I would say: yes, you can do that, at least if you are sufficient familiar with *this* ticket to be sure that there is no further obstruction.
+
 
 
 ---
 
-Comment by mhansen created at 2012-07-31 22:01:00
+archive/issue_comments_042816.json:
+```json
+{
+    "body": "Checking the patch, there is no hard dependency on #10227.",
+    "created_at": "2012-07-31T22:01:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5512",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5512#issuecomment-42816",
+    "user": "mhansen"
+}
+```
 
 Checking the patch, there is no hard dependency on #10227.
 
 
+
 ---
 
-Comment by mhansen created at 2012-07-31 22:06:55
+archive/issue_comments_042817.json:
+```json
+{
+    "body": "Apply trac_5512-species_equality.patch",
+    "created_at": "2012-07-31T22:06:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5512",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5512#issuecomment-42817",
+    "user": "mhansen"
+}
+```
 
 Apply trac_5512-species_equality.patch
 
 
+
 ---
+
+archive/issue_comments_042818.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2012-08-03T10:28:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5512",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5512#issuecomment-42818",
+    "user": "jdemeyer"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-08-03 10:28:48
+archive/issue_comments_042819.json:
+```json
+{
+    "body": "Rebased to sage-5.3.beta0.",
+    "created_at": "2012-08-03T10:28:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5512",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5512#issuecomment-42819",
+    "user": "jdemeyer"
+}
+```
 
 Rebased to sage-5.3.beta0.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-08-12 18:58:28
+archive/issue_comments_042820.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2012-08-12T18:58:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5512",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5512#issuecomment-42820",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 6781: Library access to ecl
 
-Issue created by migration from https://trac.sagemath.org/ticket/6781
-
-Original creator: nbruin
-
-Original creation time: 2009-08-20 20:00:57
-
+archive/issues_006781.json:
+```json
+{
+    "body": "CC:  burcin\n\necl can be run \"embedded\" and has a fairly clean C interface, which should be tightly wrappable in cython.\nThere are good macros provided for accessing ecl objects, and many of the atomic values should be fairly easily mappable to/from sage or python native datatypes. Hence, data communication on binary level with the ecl library should be doable, and would be a stepping stone towards a binary interface with maxima.\n\nISSUES:\n\n1. I quote from Section 5.2 of the ECL reference manual:\n\nThe collector will not scan the data sectors. If you embed ECL in another program, or link libraries with ECL, you will have to notify ECL which variables point to lisp objects.\n\nSo, cython wrapper objects that keep track of an object under ECL memory management will have to do something, but the manual doesn't say what.\n\n2. Maxima currently gets built as a stand-alone executable. Somewhere in the build process, there must exist a lisp-environment that has Maxima built but not running. In order to communicate with maxima as a library (via ECL's API), one would have to get such an image. It does look like Maxima just store its state in LISP's global state, so just calling maxima routines from LISP should work.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6781\n\n",
+    "created_at": "2009-08-20T20:00:57Z",
+    "labels": [
+        "symbolics",
+        "major",
+        "enhancement"
+    ],
+    "title": "Library access to ecl",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6781",
+    "user": "nbruin"
+}
+```
 CC:  burcin
 
 ecl can be run "embedded" and has a fairly clean C interface, which should be tightly wrappable in cython.
@@ -21,17 +31,45 @@ So, cython wrapper objects that keep track of an object under ECL memory managem
 
 2. Maxima currently gets built as a stand-alone executable. Somewhere in the build process, there must exist a lisp-environment that has Maxima built but not running. In order to communicate with maxima as a library (via ECL's API), one would have to get such an image. It does look like Maxima just store its state in LISP's global state, so just calling maxima routines from LISP should work.
 
+Issue created by migration from https://trac.sagemath.org/ticket/6781
+
+
+
+
 
 ---
+
+archive/issue_comments_055842.json:
+```json
+{
+    "body": "Attachment\n\nPatch to allow library access to ecl",
+    "created_at": "2009-08-22T00:04:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55842",
+    "user": "nbruin"
+}
+```
 
 Attachment
 
 Patch to allow library access to ecl
 
 
+
 ---
 
-Comment by nbruin created at 2009-08-22 00:09:40
+archive/issue_comments_055843.json:
+```json
+{
+    "body": "the new patch (which should apply cleanly against 4.1.1) provides enough interface to communicate with ecl via strings.\nas proof of concept, there is also a routine to parse CONSes into python lists. Assuming there is an appropriate Maxima image, this interface can already be used to communicate with Maxima. Example session:\n\n\n```\nsage: from sage.libs.ecl import *\nsage: init_ecl()\nsage: \nsage: ecl_eval(\"(require 'asdf)\");\n;;; Loading #P\"/usr/local/sage/4.1.1/local/lib/ecl-9.4.1/asdf.fas\"\n;;; Loading #P\"/usr/local/sage/4.1.1/local/lib/ecl-9.4.1/cmp.fas\"\n;;; Loading #P\"/usr/local/sage/4.1.1/local/lib/ecl-9.4.1/sysfun.lsp\"\nsage: ecl_eval('(load \"%s\")'%(SAGE_ROOT+\"/local/lib/maxima/maxima.fasb\"))\n;;; Loading \"/usr/local/sage/4.1.1/local/lib/maxima/maxima.fasb\"\n<ECL: #P\"/usr/local/sage/4.1.1/local/lib/maxima/maxima.fasb\" >\nsage: ecl_eval('(in-package :maxima)')\n<ECL: #<\"MAXIMA\" package> >\nsage: \nsage: #There is a maxima macro to ease expression parsing\nsage: string_to_object(\"#$x^2$\")\n<ECL: (MEVAL* '((MEXPT) $X 2)) >\nsage: \nsage: #we can also execute maxima routines\nsage: L=ecl_eval('($integrate #$x^2$ #$x$)')\nsage: L\n<ECL: ((MTIMES SIMP) ((RAT SIMP) 1 3) ((MEXPT SIMP) $X 3)) >\nsage: #rudimentary parsing of ECL constructs into python\nsage: L.python()\n\n[[<ECL: MTIMES >, [<ECL: SIMP >, <ECL: NIL >]],\n [[[<ECL: RAT >, [<ECL: SIMP >, <ECL: NIL >]],\n   [<ECL: 1 >, [<ECL: 3 >, <ECL: NIL >]]],\n  [[[<ECL: MEXPT >, [<ECL: SIMP >, <ECL: NIL >]],\n    [<ECL: $X >, [<ECL: 3 >, <ECL: NIL >]]],\n   <ECL: NIL >]]]\n```\n",
+    "created_at": "2009-08-22T00:09:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55843",
+    "user": "nbruin"
+}
+```
 
 the new patch (which should apply cleanly against 4.1.1) provides enough interface to communicate with ecl via strings.
 as proof of concept, there is also a routine to parse CONSes into python lists. Assuming there is an appropriate Maxima image, this interface can already be used to communicate with Maxima. Example session:
@@ -72,9 +110,20 @@ sage: L.python()
 
 
 
+
 ---
 
-Comment by nbruin created at 2009-09-01 00:20:45
+archive/issue_comments_055844.json:
+```json
+{
+    "body": "With the new maxima package, the building of maxima.fasb is even easier. The following lines can be appended to spkg-install in \"maxima-5.19.1.p0.spkg\" (for now available from http://sage.math.washington.edu/home/ghitza/maxima-5.19.1.p0.spkg):\n\n```\ncd src/src\necl -eval \"(require 'asdf)\" -eval '(load \"maxima-build.lisp\")' -eval  '(asdf:make-build :maxima :type :fasl)' -eval \"(quit)\"\ncp maxima.fasb $SAGE_LOCAL/lib/maxima\ncd ../..\n```\n\nWe should probably try to catch errors a little better, although the hard part of the building has already happened at this point. It might also be nice to build maxima as a \".fas\", which seems to be the more usual format for ecl. We could even just place it in ecl's library then and avoid pathnames altogether.\n\nFurthermore, ecl's cvs version seems to build cleanly in sage too (modulo instabilities inherent to cvs versions). In principle all obstacles have been solved:\n- we can simply remove ECL's signal handlers after boot. As long as sage's signal handlers return when they are supposed to, we should be fine with that.\n- the new rewrites of ecl's bignums allow for an option to prevent ecl from assigning memory management functions to gmp (with very little effect. It only means that some bignum registers will live outside of ecl's normal heap) The memory manager turned out to be the source of the segfault on closing and would have led to segfaults in many extensive computations.",
+    "created_at": "2009-09-01T00:20:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55844",
+    "user": "nbruin"
+}
+```
 
 With the new maxima package, the building of maxima.fasb is even easier. The following lines can be appended to spkg-install in "maxima-5.19.1.p0.spkg" (for now available from http://sage.math.washington.edu/home/ghitza/maxima-5.19.1.p0.spkg):
 
@@ -88,13 +137,24 @@ cd ../..
 We should probably try to catch errors a little better, although the hard part of the building has already happened at this point. It might also be nice to build maxima as a ".fas", which seems to be the more usual format for ecl. We could even just place it in ecl's library then and avoid pathnames altogether.
 
 Furthermore, ecl's cvs version seems to build cleanly in sage too (modulo instabilities inherent to cvs versions). In principle all obstacles have been solved:
- - we can simply remove ECL's signal handlers after boot. As long as sage's signal handlers return when they are supposed to, we should be fine with that.
- - the new rewrites of ecl's bignums allow for an option to prevent ecl from assigning memory management functions to gmp (with very little effect. It only means that some bignum registers will live outside of ecl's normal heap) The memory manager turned out to be the source of the segfault on closing and would have led to segfaults in many extensive computations.
+- we can simply remove ECL's signal handlers after boot. As long as sage's signal handlers return when they are supposed to, we should be fine with that.
+- the new rewrites of ecl's bignums allow for an option to prevent ecl from assigning memory management functions to gmp (with very little effect. It only means that some bignum registers will live outside of ecl's normal heap) The memory manager turned out to be the source of the segfault on closing and would have led to segfaults in many extensive computations.
+
 
 
 ---
 
-Comment by nbruin created at 2009-09-15 01:12:30
+archive/issue_comments_055845.json:
+```json
+{
+    "body": "As Juanjo suggested on:\n\nhttp://sourceforge.net/mailarchive/message.php?msg_name=c159f9ab0809140803h1cfc3473p17a7b7afb82a4e71%40mail.gmail.com\n\nwe can do a good error-catch by using CL's equivalent of try...except:\n\n```\n(defun my-safe-eval (form)\n    (handler-case\n        (values (eval form))\n        (serious-condition (c) (return-from my-safe-eval (values nil (princ-to-string c))))))\n```\n\nwe lose any multiple return values, but detecting if an error occurred is cheap via NVALUES. VALUES(1) will be a nice string\ndescribing the error (princ seems to turn the condition object into the most informative string)\n\nFurthermore, it seems that renaming a \".fasb\" to \".fas\" is all that is needed to make the file respond to the usual\n\"require\". If we furthermore symbolically link <ECL-LIBRARY>/maxima.fas to maxima.fasb then loading maxima is really as easy as\n(require 'maxima).\n\nTo find out the pathname of the current ecl library, do \n\n```\necl -eval \"(princ (SI:GET-LIBRARY-PATHNAME))\" -eval \"(quit)\"\n```\n",
+    "created_at": "2009-09-15T01:12:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55845",
+    "user": "nbruin"
+}
+```
 
 As Juanjo suggested on:
 
@@ -124,37 +184,92 @@ ecl -eval "(princ (SI:GET-LIBRARY-PATHNAME))" -eval "(quit)"
 
 
 
+
 ---
 
-Comment by nbruin created at 2009-10-26 04:37:04
+archive/issue_comments_055846.json:
+```json
+{
+    "body": "Set assignee to nbruin.",
+    "created_at": "2009-10-26T04:37:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55846",
+    "user": "nbruin"
+}
+```
 
 Set assignee to nbruin.
 
 
+
 ---
 
-Comment by nbruin created at 2009-10-26 04:37:27
+archive/issue_comments_055847.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-10-26T04:37:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55847",
+    "user": "nbruin"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by nbruin created at 2009-10-26 04:40:08
+archive/issue_comments_055848.json:
+```json
+{
+    "body": "Changing component from symbolics to packages.",
+    "created_at": "2009-10-26T04:40:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55848",
+    "user": "nbruin"
+}
+```
 
 Changing component from symbolics to packages.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-11-02 15:44:03
+archive/issue_comments_055849.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2009-11-02T15:44:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55849",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-11-02 15:44:03
+archive/issue_comments_055850.json:
+```json
+{
+    "body": "So far, this looks good.  For some reason I am having trouble with #7287 working properly, and it's possible this is to blame, but this patch on its own seems ok.  I can't give it a positive review, because I do not know enough about Lisp to competently judge it, but various tests I got from random Lisp websites for things not in the doctests also gave correct answers, which is good!\n\nA couple of very minor things:  I notice a few functions in the 800s which aren't separated by a blank line, which makes it harder to read.  There is also a typo in init_ecl - it should be \"Do not\", not \"No not\".  I also occasionally get output like this:\n\n```\nsage: ecl_eval(\"(command object)\");\noutputsage:\n```\n\nas opposed to \n\n```\nsage: ecl_eval(\"(command object)\");\noutput\nsage:\n```\n\nI can't determine very well when this happens, though it seems to occur fairly reliably after various print commands, like \n\n```\nsage: ecl_eval(\"(print 3)\") ;\n\n3 sage: \n```\n\nNote that if I don't use the ;, since it returns the ECL object, I don't have the problem then:\n\n```\nsage: ecl_eval(\"(print 3)\")\n\n3 <ECL: 3>\nsage: \n```\n\n\nSo I'm putting this to \"needs work\" because of these very minor issues, but really it seems good and we just need someone who knows something about Lisp to review it!  Looks nice.",
+    "created_at": "2009-11-02T15:44:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55850",
+    "user": "kcrisman"
+}
+```
 
 So far, this looks good.  For some reason I am having trouble with #7287 working properly, and it's possible this is to blame, but this patch on its own seems ok.  I can't give it a positive review, because I do not know enough about Lisp to competently judge it, but various tests I got from random Lisp websites for things not in the doctests also gave correct answers, which is good!
 
@@ -194,9 +309,20 @@ sage:
 So I'm putting this to "needs work" because of these very minor issues, but really it seems good and we just need someone who knows something about Lisp to review it!  Looks nice.
 
 
+
 ---
 
-Comment by nbruin created at 2009-11-02 18:29:25
+archive/issue_comments_055851.json:
+```json
+{
+    "body": "Replying to [comment:8 kcrisman]:\n> {{{\n> sage: ecl_eval(\"(command object)\");\n> outputsage:\n> }}}\n> as opposed to \n> {{{\n> sage: ecl_eval(\"(command object)\");\n> output\nThat is not the fault of the interface. Compare:\n\n```\nsage: os.system(\"echo hi\");\nhi\nsage: os.system(\"echo -n hi\");\nhisage: \n```\n\nI think most common lisp print routines do NOT include a trailing newline, so I think the above behaviour is expected. ecl_eval and friends should not send anything to STDOUT by themselves.\n\nThanks for spotting the typos.\n\nI'm changing back to needs_review to invite a more lisp-savvy reviewer.",
+    "created_at": "2009-11-02T18:29:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55851",
+    "user": "nbruin"
+}
+```
 
 Replying to [comment:8 kcrisman]:
 > {{{
@@ -223,9 +349,20 @@ Thanks for spotting the typos.
 I'm changing back to needs_review to invite a more lisp-savvy reviewer.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-11-04 15:14:37
+archive/issue_comments_055852.json:
+```json
+{
+    "body": "Is it possible to do this?\n\nERROR: Please define a s == loads(dumps(s)) doctest.\n\nNow, I get \n\n```\nsage: dumps(x)\n---------------------------------------------------------------------------\nPicklingError                             Traceback (most recent call last)\n<snip>\nPicklingError: Can't pickle <type 'ecl.EclObject'>: import of module ecl failed\n```\n\nso maybe it isn't possible to do this, but I thought I'd point it out anyway in case it's trivial to fix this and I just don't realize it.",
+    "created_at": "2009-11-04T15:14:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55852",
+    "user": "kcrisman"
+}
+```
 
 Is it possible to do this?
 
@@ -244,16 +381,38 @@ PicklingError: Can't pickle <type 'ecl.EclObject'>: import of module ecl failed
 so maybe it isn't possible to do this, but I thought I'd point it out anyway in case it's trivial to fix this and I just don't realize it.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-11-04 15:14:46
+archive/issue_comments_055853.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2009-11-04T15:14:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55853",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by nbruin created at 2009-11-05 16:27:24
+archive/issue_comments_055854.json:
+```json
+{
+    "body": "Replying to [comment:10 kcrisman]:\n> Is it possible to do this?\n> \n> ERROR: Please define a s == loads(dumps(s)) doctest.\n\nI noticed that sage doctesting routines prefer to have a test like that. My first reaction is \"can't be done\". Common Lisp's general approach to saving state is just that: Dump a memory image, so CL is not going to be much help for implementing a workable solution.\n\nI am sure that for many particular ECL structures, one can come up with a reasonable pickling procedure. How do other interfaces solve that (pari, magma, maxima/pexpect, maple)?\n\nFor our intended use of the ECL interface, we do not need pickling. A symbolic expression would get translated to Maxima, processed and translated back into SR. So LISP expressions would not persist beyond short timespans.",
+    "created_at": "2009-11-05T16:27:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55854",
+    "user": "nbruin"
+}
+```
 
 Replying to [comment:10 kcrisman]:
 > Is it possible to do this?
@@ -267,9 +426,20 @@ I am sure that for many particular ECL structures, one can come up with a reason
 For our intended use of the ECL interface, we do not need pickling. A symbolic expression would get translated to Maxima, processed and translated back into SR. So LISP expressions would not persist beyond short timespans.
 
 
+
 ---
 
-Comment by was created at 2009-11-06 05:56:10
+archive/issue_comments_055855.json:
+```json
+{
+    "body": "> I noticed that sage doctesting routines prefer to have a test like that.\n>  My first reaction is \"can't be done\". \n\nYes it can.    If s == loads(dumps(s)) will be false for any element, or raise an error, put a discussion of that fact in a docstring and put in a doctest like this:\n\n```\nsage: s == loads(dumps(s))\nboom or False\n```\n\nThere's no reason to hide that this doesn't work from users.\n\n> How do other interfaces solve that (pari, magma, maxima/pexpect, maple)\n\nmagma can't.  pari has the amazing property that for any pretty much any x in pari we have eval(str(x)) == x (with pari notation).    I think the same is true in maxima for symbolic expressions.\n\nThis code is new, so is going to be held to a higher standard before being included than code from 2005.",
+    "created_at": "2009-11-06T05:56:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55855",
+    "user": "was"
+}
+```
 
 > I noticed that sage doctesting routines prefer to have a test like that.
 >  My first reaction is "can't be done". 
@@ -290,9 +460,20 @@ magma can't.  pari has the amazing property that for any pretty much any x in pa
 This code is new, so is going to be held to a higher standard before being included than code from 2005.
 
 
+
 ---
 
-Comment by nbruin created at 2009-11-07 04:26:43
+archive/issue_comments_055856.json:
+```json
+{
+    "body": "Yes, pickling is so nice to have that it makes sense to mention explicitly when it doesn't work. ECL does not support serialization natively, so there is nothing to interface with on that end. There are independent serialization libraries for CL that claim to work with ECL. I do not know their quality.\n\nThere is CL-STORE:\n\nhttp://common-lisp.net/project/cl-store/\n\ncurrent version 0.8.10\n\nwhich even claims to be able to serialize CLOS object instances. I am not advocating including an extra lisp library at this point, but if someone at some point really want lisp serialization, that would be a place to start looking.\n\nI am updating the attached patch ecllib.patch with:\n- extra newlines between some defs\n- fixed typo\n- `__reduce__` method raising a NotImplementedError and a docstring.",
+    "created_at": "2009-11-07T04:26:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55856",
+    "user": "nbruin"
+}
+```
 
 Yes, pickling is so nice to have that it makes sense to mention explicitly when it doesn't work. ECL does not support serialization natively, so there is nothing to interface with on that end. There are independent serialization libraries for CL that claim to work with ECL. I do not know their quality.
 
@@ -305,63 +486,120 @@ current version 0.8.10
 which even claims to be able to serialize CLOS object instances. I am not advocating including an extra lisp library at this point, but if someone at some point really want lisp serialization, that would be a place to start looking.
 
 I am updating the attached patch ecllib.patch with:
- - extra newlines between some defs
- - fixed typo
- - `__reduce__` method raising a NotImplementedError and a docstring.
+- extra newlines between some defs
+- fixed typo
+- `__reduce__` method raising a NotImplementedError and a docstring.
+
 
 
 ---
 
-Comment by kcrisman created at 2009-11-10 22:36:33
+archive/issue_comments_055857.json:
+```json
+{
+    "body": "In case there was question - this reviewer still thinks it looks good, still waiting on a Lisp expert to review it.  Problem is, does the Sage team have any of those other than the author?",
+    "created_at": "2009-11-10T22:36:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55857",
+    "user": "kcrisman"
+}
+```
 
 In case there was question - this reviewer still thinks it looks good, still waiting on a Lisp expert to review it.  Problem is, does the Sage team have any of those other than the author?
 
 
+
 ---
 
-Comment by kcrisman created at 2009-12-21 02:06:28
+archive/issue_comments_055858.json:
+```json
+{
+    "body": "Does this still work with the newest Maxima?  We don't have an spkg yet, but hopefully will soon - [http://groups.google.com/group/sage-devel/browse_thread/thread/bbd2c801032392f7](http://groups.google.com/group/sage-devel/browse_thread/thread/bbd2c801032392f7)",
+    "created_at": "2009-12-21T02:06:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55858",
+    "user": "kcrisman"
+}
+```
 
 Does this still work with the newest Maxima?  We don't have an spkg yet, but hopefully will soon - [http://groups.google.com/group/sage-devel/browse_thread/thread/bbd2c801032392f7](http://groups.google.com/group/sage-devel/browse_thread/thread/bbd2c801032392f7)
 
 
+
 ---
+
+archive/issue_comments_055859.json:
+```json
+{
+    "body": "Attachment\n\nRebased against 4.3, with str -> bytes changes",
+    "created_at": "2010-01-16T09:01:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55859",
+    "user": "nbruin"
+}
+```
 
 Attachment
 
 Rebased against 4.3, with str -> bytes changes
 
 
+
 ---
 
-Comment by nbruin created at 2010-01-16 09:03:46
+archive/issue_comments_055860.json:
+```json
+{
+    "body": "Updated the patch to apply against 4.3. Cython started to complain about not being able to translate str -> C types anymore and recommended using \"bytes\" instead. That change has been propagated seemingly without adverse side-effects. Patch seems to work fine in 4.3 now.",
+    "created_at": "2010-01-16T09:03:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55860",
+    "user": "nbruin"
+}
+```
 
 Updated the patch to apply against 4.3. Cython started to complain about not being able to translate str -> C types anymore and recommended using "bytes" instead. That change has been propagated seemingly without adverse side-effects. Patch seems to work fine in 4.3 now.
 
 
+
 ---
 
-Comment by burcin created at 2010-02-04 11:42:30
+archive/issue_comments_055861.json:
+```json
+{
+    "body": "Hi Nils,\n\nSorry for not looking at this before. I just read the patch and it looks really good. I'd like to try to get this in the next release if possible, to prepare for #7377 proper.\n\nA few quick comments after reading the patch (didn't apply or build yet, maybe over the weekend):\n* The module name you declare on line 431 of `module_list.py` should be sage.libs.ecl.ecl.\n* We would normally put the declarations imported from a header file in a `decl.pxd` in `sage/libs/ecl/`. I suggest renaming the current `ecl.pxd` to `decl.pxd`, and using `from sage.libs.ecl.decl cimport ...` in `ecl.pyx` to import the declarations you need. Then `ecl.pxd` can be used to declare the Cython methods/classes from `ecl.pyx` which should be available for imports from other modules.\n* In `ecl.pyx`, I'm not sure if you need both of these lines\n\n```\ncimport sage.rings.integer \nfrom sage.rings.integer cimport Integer\n```\n\n* line 280 in `ecl.pyx` should be `elif pyobj is None:`. Testing with `is` is much faster than a comparison.\n* Including a TODO list at the beginning could be helpful. For example you can note that optimizing conversion of gmp integers and rationals needs work. My editor highlights \"TODO\" so you can also just put that as a part of the comment in the `python_to_ecl()` function.\n* In `ecl.pyx`, line 653 - 664 are redundant.\n* The doctests for `car()`, `cdr()`, `caar()`, etc. are very instructive, but they are all the same. If anything goes wrong we'll get the same error from all the functions, not knowing where to look. Since this is not going to be exposed much to the users, I suggest putting the instructive example somewhere along the top of the file, and including a test only for the corresponding function in the docstring.\n* It's more pythonic to use `is_character()`, `is_null()`, `is_list()`, etc. instead of `characterp()`, `nullp()`, `listp()`, ...\n* You can replace line 996-997 of `ecl.pyx` with the following:\n\n```\ncdef EclObject obj = <EclObject>PY_NEW(EclObject)\n```\n\n This will avoid the python class initialization overhead and make things slightly faster.\n\n\nThanks a lot for your work.",
+    "created_at": "2010-02-04T11:42:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55861",
+    "user": "burcin"
+}
+```
 
 Hi Nils,
 
 Sorry for not looking at this before. I just read the patch and it looks really good. I'd like to try to get this in the next release if possible, to prepare for #7377 proper.
 
 A few quick comments after reading the patch (didn't apply or build yet, maybe over the weekend):
- * The module name you declare on line 431 of `module_list.py` should be sage.libs.ecl.ecl.
- * We would normally put the declarations imported from a header file in a `decl.pxd` in `sage/libs/ecl/`. I suggest renaming the current `ecl.pxd` to `decl.pxd`, and using `from sage.libs.ecl.decl cimport ...` in `ecl.pyx` to import the declarations you need. Then `ecl.pxd` can be used to declare the Cython methods/classes from `ecl.pyx` which should be available for imports from other modules.
- * In `ecl.pyx`, I'm not sure if you need both of these lines
+* The module name you declare on line 431 of `module_list.py` should be sage.libs.ecl.ecl.
+* We would normally put the declarations imported from a header file in a `decl.pxd` in `sage/libs/ecl/`. I suggest renaming the current `ecl.pxd` to `decl.pxd`, and using `from sage.libs.ecl.decl cimport ...` in `ecl.pyx` to import the declarations you need. Then `ecl.pxd` can be used to declare the Cython methods/classes from `ecl.pyx` which should be available for imports from other modules.
+* In `ecl.pyx`, I'm not sure if you need both of these lines
 
 ```
 cimport sage.rings.integer 
 from sage.rings.integer cimport Integer
 ```
 
- * line 280 in `ecl.pyx` should be `elif pyobj is None:`. Testing with `is` is much faster than a comparison.
- * Including a TODO list at the beginning could be helpful. For example you can note that optimizing conversion of gmp integers and rationals needs work. My editor highlights "TODO" so you can also just put that as a part of the comment in the `python_to_ecl()` function.
- * In `ecl.pyx`, line 653 - 664 are redundant.
- * The doctests for `car()`, `cdr()`, `caar()`, etc. are very instructive, but they are all the same. If anything goes wrong we'll get the same error from all the functions, not knowing where to look. Since this is not going to be exposed much to the users, I suggest putting the instructive example somewhere along the top of the file, and including a test only for the corresponding function in the docstring.
- * It's more pythonic to use `is_character()`, `is_null()`, `is_list()`, etc. instead of `characterp()`, `nullp()`, `listp()`, ...
- * You can replace line 996-997 of `ecl.pyx` with the following:
+* line 280 in `ecl.pyx` should be `elif pyobj is None:`. Testing with `is` is much faster than a comparison.
+* Including a TODO list at the beginning could be helpful. For example you can note that optimizing conversion of gmp integers and rationals needs work. My editor highlights "TODO" so you can also just put that as a part of the comment in the `python_to_ecl()` function.
+* In `ecl.pyx`, line 653 - 664 are redundant.
+* The doctests for `car()`, `cdr()`, `caar()`, etc. are very instructive, but they are all the same. If anything goes wrong we'll get the same error from all the functions, not knowing where to look. Since this is not going to be exposed much to the users, I suggest putting the instructive example somewhere along the top of the file, and including a test only for the corresponding function in the docstring.
+* It's more pythonic to use `is_character()`, `is_null()`, `is_list()`, etc. instead of `characterp()`, `nullp()`, `listp()`, ...
+* You can replace line 996-997 of `ecl.pyx` with the following:
 
 ```
 cdef EclObject obj = <EclObject>PY_NEW(EclObject)
@@ -373,9 +611,20 @@ cdef EclObject obj = <EclObject>PY_NEW(EclObject)
 Thanks a lot for your work.
 
 
+
 ---
 
-Comment by nbruin created at 2010-02-08 07:43:52
+archive/issue_comments_055862.json:
+```json
+{
+    "body": "Thanks for your feedback! It'll be nice to get this in.\n\n>  * The module name you declare on line 431 of `module_list.py` should be sage.libs.ecl.ecl.\n\nAre you sure? the current thing seems to work too and I like not typing the extra ecl.\n\n>  * We would normally put the declarations imported from a header file in a `decl.pxd` in `sage/libs/ecl/`. I suggest renaming the current `ecl.pxd` to `decl.pxd`, and using `from sage.libs.ecl.decl cimport ...` in `ecl.pyx` to import the declarations you need. Then `ecl.pxd` can be used to declare the Cython methods/classes from `ecl.pyx` which should be available for imports from other modules.\n\nSure. However, I just picked and chose from the ecl headers, and I orthogonalized some of the names. Wouldn't moving those to decl.pxd raise the false impression that the declarations there are a literal translation of ecl.h ?\n\n>  * In `ecl.pyx`, I'm not sure if you need both of these lines\n> {{{\n> cimport sage.rings.integer \n> from sage.rings.integer cimport Integer\n> }}}\n\nI guess we can try without, but I think I put it in because it didn't work without.\n\n>  * line 280 in `ecl.pyx` should be `elif pyobj is None:`. Testing with `is` is much faster than a comparison.\n\nGood one!\n>  * Including a TODO list at the beginning could be helpful. For example you can note that optimizing conversion of gmp integers and rationals needs work. My editor highlights \"TODO\" so you can also just put that as a part of the comment in the `python_to_ecl()` function.\n\nYou have a good editor. Mine doesn't do that.\n\n>  * In `ecl.pyx`, line 653 - 664 are redundant.\n\nBut they don't hurt performance either do they? I like them for documentation purposes, so that I know the codes that go into a rich_cmp\n\n>  * The doctests for `car()`, `cdr()`, `caar()`, etc. are very instructive, but they are all the same. If anything goes wrong we'll get the same error from all the functions, not knowing where to look. Since this is not going to be exposed much to the users, I suggest putting the instructive example somewhere along the top of the file, and including a test only for the corresponding function in the docstring.\n\nDo you think any time spent on tuning those tests is well-spent? They're really just there because they need some test. If they fail, nothing in ecl will work.\n\n>  * It's more pythonic to use `is_character()`, `is_null()`, `is_list()`, etc. instead of `characterp()`, `nullp()`, `listp()`, ...\n\nbut characters not being strings is not very pythonic either. We're interfacing with a different language, so I think it makes sense to depart from python's naming conventions. Also, CL routines are standard and well-documented. If we use those names, we get a well-defined interface without thinking. If we start changing function names for wrappers, we need to start thinking and may screw up.\n\n>  * You can replace line 996-997 of `ecl.pyx` with the following:\n> {{{\n> cdef EclObject obj = <EclObject>PY_NEW(EclObject)\n> }}}\n\nGreat!\n\nI'll see if I can update the patch once you've had some run time with it and commented on its functionality.",
+    "created_at": "2010-02-08T07:43:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55862",
+    "user": "nbruin"
+}
+```
 
 Thanks for your feedback! It'll be nice to get this in.
 
@@ -424,9 +673,20 @@ Great!
 I'll see if I can update the patch once you've had some run time with it and commented on its functionality.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-02-22 00:03:31
+archive/issue_comments_055863.json:
+```json
+{
+    "body": "Has this been checked on Solaris? There's general information about building on Solaris at\n\n http://wiki.sagemath.org/solaris\n\nInformation specifically for 't2' at\n\n http://wiki.sagemath.org/devel/Building-Sage-on-the-T5240-t2\n\nBoth the source (4.3.0.1 is the latest to build on Solaris) and a binary which will run on any SPARC can be found at http://www.sagemath.org/download-source.html\n\nDave",
+    "created_at": "2010-02-22T00:03:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55863",
+    "user": "drkirkby"
+}
+```
 
 Has this been checked on Solaris? There's general information about building on Solaris at
 
@@ -441,16 +701,38 @@ Both the source (4.3.0.1 is the latest to build on Solaris) and a binary which w
 Dave
 
 
+
 ---
 
-Comment by drkirkby created at 2010-02-22 00:03:31
+archive/issue_comments_055864.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_info.",
+    "created_at": "2010-02-22T00:03:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55864",
+    "user": "drkirkby"
+}
+```
 
 Changing status from needs_review to needs_info.
 
 
+
 ---
 
-Comment by burcin created at 2010-02-25 13:03:27
+archive/issue_comments_055865.json:
+```json
+{
+    "body": "Replying to [comment:20 nbruin]:\n> Thanks for your feedback! It'll be nice to get this in.\n\nI'm sorry I took so long to respond. At least I managed to test your patch(es, with #7377) in the meanwhile. \n\nI'm generally happy with how they look / work and I'd like to get them merged as soon as possible (I know I'm the main cause of delays). Feel free to change this ticket to positive review once the minor issues below are resolved.\n\n> >  * The module name you declare on line 431 of `module_list.py` should be sage.libs.ecl.ecl.\n> \n> Are you sure? the current thing seems to work too and I like not typing the extra ecl.\n\nThe convention is to make the module name correspond to the file name. If you think a single file will be enough, then you can just remove the directory `ecl` and put the `ecl.p*` files under `sage/libs/` directly. I'm afraid I have to insist on one of these options.\n\n> >  * We would normally put the declarations imported from a header file in a `decl.pxd` in `sage/libs/ecl/`. I suggest renaming the current `ecl.pxd` to `decl.pxd`, and using `from sage.libs.ecl.decl cimport ...` in `ecl.pyx` to import the declarations you need. Then `ecl.pxd` can be used to declare the Cython methods/classes from `ecl.pyx` which should be available for imports from other modules.\n> \n> Sure. However, I just picked and chose from the ecl headers, and I orthogonalized some of the names. Wouldn't moving those to decl.pxd raise the false impression that the declarations there are a literal translation of ecl.h ?\n\nIt's common to change the types or the function names a little. This is a minor issue though, I just think the code will be easier to maintain that way. \n\n> >  * In `ecl.pyx`, I'm not sure if you need both of these lines\n> > {{{\n> > cimport sage.rings.integer \n> > from sage.rings.integer cimport Integer\n> > }}}\n> \n> I guess we can try without, but I think I put it in because it didn't work without.\n\nOK.\n\n> >  * line 280 in `ecl.pyx` should be `elif pyobj is None:`. Testing with `is` is much faster than a comparison.\n> \n> Good one!\n> >  * Including a TODO list at the beginning could be helpful. For example you can note that optimizing conversion of gmp integers and rationals needs work. My editor highlights \"TODO\" so you can also just put that as a part of the comment in the `python_to_ecl()` function.\n> \n> You have a good editor. Mine doesn't do that.\n\nI just use `vim`. :)\n> \n> >  * In `ecl.pyx`, line 653 - 664 are redundant.\n> \n> But they don't hurt performance either do they? I like them for documentation purposes, so that I know the codes that go into a rich_cmp\n\nWhy don't you just put them in comments? Looking at the code, especially if you're scrolling up, it's not immediately clear that those lines are never used. If they are only for information, they should be comments.\n\n> >  * The doctests for `car()`, `cdr()`, `caar()`, etc. are very instructive, but they are all the same. If anything goes wrong we'll get the same error from all the functions, not knowing where to look. Since this is not going to be exposed much to the users, I suggest putting the instructive example somewhere along the top of the file, and including a test only for the corresponding function in the docstring.\n> \n> Do you think any time spent on tuning those tests is well-spent? They're really just there because they need some test. If they fail, nothing in ecl will work.\n\nOK.\n\n> >  * It's more pythonic to use `is_character()`, `is_null()`, `is_list()`, etc. instead of `characterp()`, `nullp()`, `listp()`, ...\n> \n> but characters not being strings is not very pythonic either. We're interfacing with a different language, so I think it makes sense to depart from python's naming conventions. Also, CL routines are standard and well-documented. If we use those names, we get a well-defined interface without thinking. If we start changing function names for wrappers, we need to start thinking and may screw up.\n\nOK.\n \n> >  * You can replace line 996-997 of `ecl.pyx` with the following:\n> > {{{\n> > cdef EclObject obj = <EclObject>PY_NEW(EclObject)\n> > }}}\n> \n> Great!\n\nI see that you used `EclObject.__new__()` in your last patch attached to #7377. How does that compare with using `PY_NEW()` in terms of performance?\n\nAFAICT, some of the changes I suggest above are available in the last patch attached to #7377. Can you submit a patch with only that changes above to this ticket? Then we can get this ticket merged without waiting to solve the problems with the other one. If you don't have time, I can also make a patch with these changes (hopefully in reasonable time).\n\nMany thanks for this interface again!\n\nBTW, I don't see why this needs to be tested on Solaris. (In any case, expecting every developer to test their patches on solaris is unreasonable, IMHO.)",
+    "created_at": "2010-02-25T13:03:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55865",
+    "user": "burcin"
+}
+```
 
 Replying to [comment:20 nbruin]:
 > Thanks for your feedback! It'll be nice to get this in.
@@ -524,16 +806,38 @@ Many thanks for this interface again!
 BTW, I don't see why this needs to be tested on Solaris. (In any case, expecting every developer to test their patches on solaris is unreasonable, IMHO.)
 
 
+
 ---
 
-Comment by burcin created at 2010-02-25 13:03:27
+archive/issue_comments_055866.json:
+```json
+{
+    "body": "Changing status from needs_info to needs_work.",
+    "created_at": "2010-02-25T13:03:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55866",
+    "user": "burcin"
+}
+```
 
 Changing status from needs_info to needs_work.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-02-25 13:37:25
+archive/issue_comments_055867.json:
+```json
+{
+    "body": "Replying to [comment:22 burcin]:\nMany thanks for this interface again!\n> \n> BTW, I don't see why this needs to be tested on Solaris. (In any case, expecting every developer to test their patches on solaris is unreasonable, IMHO.)\n\nThat might be your opinion, but I suggest you take that up with William. \n\nQuoting from the Sage developer's guide. \n\nhttp://www.sagemath.org/doc/developer/inclusion.html\n\n*Some Sage developers are willing to help you port to OS X, Solaris and Windows. But this is no guarantee and you or your project are expected to do the heavy lifting and also support those ports upstream if there is no Sage developer who is willing to share the burden.*\n\nFrom the Sage installation guide \n\nhttp://www.sagemath.org/doc/installation/source.html\n\n*We do plan to fully support Solaris - it\u2019s a very important platform. Work is ongoing.*\n\nWilliam has taken hardware (specifically 't2') from Sun for Sage development, as well as an OpenSolaris machine from elsewhere. He also sent me an email on the 16th December 2009, underlying the importance of getting Sage working on Solaris\n\n\n```\nDavid,\n\n(1) I couldn't get anywhere building Sage on x86 Solaris on skynet (fulvia).  Can you?  This was pretty annoying to the people that bought us fulvia.\n\n(2) Sun wants to know if we have a Sage available yet for t2.  See below.\n\nI really need to shift into the mode of actually providing something that *works* on Solaris, despite hickups, rather than just polishing foundations...\n```\n\n\nAs such, I do not believe it is unreasonable that the packages are tested on Solaris. If Solaris is important, and the current version of this package works on Solaris, a failure to work on Solaris would be a reason for the changes not to be incorporated. \n\nDave",
+    "created_at": "2010-02-25T13:37:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55867",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:22 burcin]:
 Many thanks for this interface again!
@@ -546,13 +850,13 @@ Quoting from the Sage developer's guide.
 
 http://www.sagemath.org/doc/developer/inclusion.html
 
-_Some Sage developers are willing to help you port to OS X, Solaris and Windows. But this is no guarantee and you or your project are expected to do the heavy lifting and also support those ports upstream if there is no Sage developer who is willing to share the burden._
+*Some Sage developers are willing to help you port to OS X, Solaris and Windows. But this is no guarantee and you or your project are expected to do the heavy lifting and also support those ports upstream if there is no Sage developer who is willing to share the burden.*
 
 From the Sage installation guide 
 
 http://www.sagemath.org/doc/installation/source.html
 
-_We do plan to fully support Solaris - it’s a very important platform. Work is ongoing._
+*We do plan to fully support Solaris - it’s a very important platform. Work is ongoing.*
 
 William has taken hardware (specifically 't2') from Sun for Sage development, as well as an OpenSolaris machine from elsewhere. He also sent me an email on the 16th December 2009, underlying the importance of getting Sage working on Solaris
 
@@ -573,16 +877,38 @@ As such, I do not believe it is unreasonable that the packages are tested on Sol
 Dave
 
 
----
-
-Comment by drkirkby created at 2010-02-25 13:50:58
-
-I realise the library access is not currently in Sage (I was confusing it with another ticket) but the rest of the comments apply. Given Solaris is considered *very important platform* things need to work there.
-
 
 ---
 
-Comment by burcin created at 2010-02-25 13:57:45
+archive/issue_comments_055868.json:
+```json
+{
+    "body": "I realise the library access is not currently in Sage (I was confusing it with another ticket) but the rest of the comments apply. Given Solaris is considered **very important platform** things need to work there.",
+    "created_at": "2010-02-25T13:50:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55868",
+    "user": "drkirkby"
+}
+```
+
+I realise the library access is not currently in Sage (I was confusing it with another ticket) but the rest of the comments apply. Given Solaris is considered **very important platform** things need to work there.
+
+
+
+---
+
+archive/issue_comments_055869.json:
+```json
+{
+    "body": "Replying to [comment:23 drkirkby]:\n> Replying to [comment:22 burcin]:\n> > \n> > BTW, I don't see why this needs to be tested on Solaris. (In any case, expecting every developer to test their patches on solaris is unreasonable, IMHO.)\n> \n> That might be your opinion, but I suggest you take that up with William. \n> \n> Quoting from the Sage developer's guide. \n> \n> http://www.sagemath.org/doc/developer/inclusion.html\n> \n> *Some Sage developers are willing to help you port to OS X, Solaris and Windows. But this is no guarantee and you or your project are expected to do the heavy lifting and also support those ports upstream if there is no Sage developer who is willing to share the burden.*\n<snip>\n\nThis ticket is not talking about including a new package in Sage.\n\n\n> As such, I do not believe it is unreasonable that the packages are tested on Solaris. If Solaris is important, and the current version of this package works on Solaris, a failure to work on Solaris would be a reason for the changes not to be incorporated. \n\nAgain, there is no new package associated to this ticket. It just contains a single patch to be applied to the Sage library. The package was merged with #7287.\n\nI maintain my position that requiring every single patch submitted to Sage be tested on Solaris is unreasonable (unless this process is automated somehow).",
+    "created_at": "2010-02-25T13:57:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55869",
+    "user": "burcin"
+}
+```
 
 Replying to [comment:23 drkirkby]:
 > Replying to [comment:22 burcin]:
@@ -595,7 +921,7 @@ Replying to [comment:23 drkirkby]:
 > 
 > http://www.sagemath.org/doc/developer/inclusion.html
 > 
-> _Some Sage developers are willing to help you port to OS X, Solaris and Windows. But this is no guarantee and you or your project are expected to do the heavy lifting and also support those ports upstream if there is no Sage developer who is willing to share the burden._
+> *Some Sage developers are willing to help you port to OS X, Solaris and Windows. But this is no guarantee and you or your project are expected to do the heavy lifting and also support those ports upstream if there is no Sage developer who is willing to share the burden.*
 <snip>
 
 This ticket is not talking about including a new package in Sage.
@@ -608,9 +934,20 @@ Again, there is no new package associated to this ticket. It just contains a sin
 I maintain my position that requiring every single patch submitted to Sage be tested on Solaris is unreasonable (unless this process is automated somehow).
 
 
+
 ---
 
-Comment by drkirkby created at 2010-02-25 14:40:15
+archive/issue_comments_055870.json:
+```json
+{
+    "body": "I find it hard to believe it could be much simpler to test a package on Solaris using the instructions at \n\nhttp://wiki.sagemath.org/devel/Building-Sage-on-the-T5240-t2\n\nwhich require the user to \n\n* Add 3 lines to the bottom of their $HOME/.profile \n* Extract the file http://boxen.math.washington.edu/sage/solaris/sage-4.3.0.1.tar\n* incorporate their changes. \n* Log into 't2'\n* Type 'make' \n\nIs that hard or unreasonable, given the notes in the developers guide, installation guide and the contents of the email I just posted from William? \n\nLooking at the patches, I doubt this will have any Solaris specific issues, but it would be appreciated very much if someone could check it. The patches are quite old, so there should be no issues with the fact the current version for Solaris is a month or two old. \n\nI believe the issues which caused the library to fail to build recently have probably been resolved, so soon the latest version of Sage should build OK. \n\nMicheal was paid full-time to work on the Solaris port, though I realise he did do other things too. I know for a fact he was actually appointed to do the Solaris port. He has been the only full-time paid employee for the Sage project. \n\nGiven the hardware costs and Micheal's salary, it is probably not unreasonable to estimate around $100,000 has been spent on the Solaris port. \n\nDave",
+    "created_at": "2010-02-25T14:40:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55870",
+    "user": "drkirkby"
+}
+```
 
 I find it hard to believe it could be much simpler to test a package on Solaris using the instructions at 
 
@@ -618,11 +955,11 @@ http://wiki.sagemath.org/devel/Building-Sage-on-the-T5240-t2
 
 which require the user to 
 
- * Add 3 lines to the bottom of their $HOME/.profile 
- * Extract the file http://boxen.math.washington.edu/sage/solaris/sage-4.3.0.1.tar
- * incorporate their changes. 
- * Log into 't2'
- * Type 'make' 
+* Add 3 lines to the bottom of their $HOME/.profile 
+* Extract the file http://boxen.math.washington.edu/sage/solaris/sage-4.3.0.1.tar
+* incorporate their changes. 
+* Log into 't2'
+* Type 'make' 
 
 Is that hard or unreasonable, given the notes in the developers guide, installation guide and the contents of the email I just posted from William? 
 
@@ -637,48 +974,116 @@ Given the hardware costs and Micheal's salary, it is probably not unreasonable t
 Dave
 
 
+
 ---
 
-Comment by burcin created at 2010-04-02 23:34:41
+archive/issue_comments_055871.json:
+```json
+{
+    "body": "apply after `ecllib.patch`",
+    "created_at": "2010-04-02T23:34:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55871",
+    "user": "burcin"
+}
+```
 
 apply after `ecllib.patch`
 
 
+
 ---
 
-Comment by burcin created at 2010-04-02 23:38:17
+archive/issue_comments_055872.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"ecl, library\".",
+    "created_at": "2010-04-02T23:38:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55872",
+    "user": "burcin"
+}
+```
 
 Changing keywords from "" to "ecl, library".
 
 
+
 ---
 
-Comment by burcin created at 2010-04-02 23:38:17
+archive/issue_comments_055873.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-04-02T23:38:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55873",
+    "user": "burcin"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by burcin created at 2010-04-02 23:38:17
+archive/issue_comments_055874.json:
+```json
+{
+    "body": "Changing component from packages to interfaces.",
+    "created_at": "2010-04-02T23:38:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55874",
+    "user": "burcin"
+}
+```
 
 Changing component from packages to interfaces.
 
 
+
 ---
+
+archive/issue_comments_055875.json:
+```json
+{
+    "body": "Attachment\n\nattachment:trac_6781-review.patch contains some minor changes also mentioned in comment:22. I give a positive review to attachment:ecllib.patch, if someone can review my changes this will be good to go.\n\nThe patches to be applied are:\n* attachment:ecllib.patch\n* attachment:trac_6781-review.patch",
+    "created_at": "2010-04-02T23:38:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55875",
+    "user": "burcin"
+}
+```
 
 Attachment
 
 attachment:trac_6781-review.patch contains some minor changes also mentioned in comment:22. I give a positive review to attachment:ecllib.patch, if someone can review my changes this will be good to go.
 
 The patches to be applied are:
- * attachment:ecllib.patch
- * attachment:trac_6781-review.patch
+* attachment:ecllib.patch
+* attachment:trac_6781-review.patch
+
 
 
 ---
 
-Comment by nbruin created at 2010-04-12 00:33:45
+archive/issue_comments_055876.json:
+```json
+{
+    "body": "That all looks great. However, I think the PY_NEW call should really be\n\n```\ncdef EclObject obj = EclObject.__new__(EclObject)\n```\n\nAccording to\nhttp://wiki.cython.org/FAQ#CanCythoncreateobjectsorapplyoperatorstolocallycreatedobjectsaspureCcode.3F\nit seems that PY_NEW was a hack that was only required prior to Cython 0.12\n\nA lot of the includes are not necessary either for the code to seemingly work properly. Wouldn't it be better to leave them out?\n\nI am probably not allowed to give the patch a positive review, but I can confirm that the original reviewer requested those changes to be made and they look fine to me (the author of the original enhancement).\n\nThanks for trying to unstall the inclusion of this patch!",
+    "created_at": "2010-04-12T00:33:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55876",
+    "user": "nbruin"
+}
+```
 
 That all looks great. However, I think the PY_NEW call should really be
 
@@ -697,7 +1102,20 @@ I am probably not allowed to give the patch a positive review, but I can confirm
 Thanks for trying to unstall the inclusion of this patch!
 
 
+
 ---
+
+archive/issue_comments_055877.json:
+```json
+{
+    "body": "Attachment\n\nReplying to [comment:28 nbruin]:\n> That all looks great. However, I think the PY_NEW call should really be\n {{{\n cdef EclObject obj = EclObject.__new__(EclObject)\n }}}\n> According to\n> http://wiki.cython.org/FAQ#CanCythoncreateobjectsorapplyoperatorstolocallycreatedobjectsaspureCcode.3F\n> it seems that PY_NEW was a hack that was only required prior to Cython 0.12\n\nThanks for pointing this out. I didn't know the new convention.\n\n> A lot of the includes are not necessary either for the code to seemingly work properly. Wouldn't it be better to leave them out?\n\nThe includes weren't necessary at all after getting rid of the `PY_NEW` call. \n\nI uploaded a new patch attachment:trac_6781-review.take2.patch addressing these comments. The new patch replaces attachment:trac_6781-review.patch.\n\n> I am probably not allowed to give the patch a positive review, but I can confirm that the original reviewer requested those changes to be made and they look fine to me (the author of the original enhancement).\n\nYou can change the ticket to positive review. I reviewed your patch and gave a positive review, if you're ok with my additional changes and think that they deserve a positive review, then the whole ticket is good to go. \n\n> Thanks for trying to unstall the inclusion of this patch!\n\nI want to get the rest of the interface (#7377) merged ASAP as well. Unfortunately we had a setback with #8645. I hope the latter gets resolved soon so we can proceed.\n\n\nBased on Nils' comments above, I am changing this to a positive review.\n\nThe patches to be applied are:\n* attachment:ecllib.patch\n* attachment:trac_6781-review.take2.patch",
+    "created_at": "2010-04-12T08:55:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55877",
+    "user": "burcin"
+}
+```
 
 Attachment
 
@@ -730,136 +1148,336 @@ I want to get the rest of the interface (#7377) merged ASAP as well. Unfortunate
 Based on Nils' comments above, I am changing this to a positive review.
 
 The patches to be applied are:
- * attachment:ecllib.patch
- * attachment:trac_6781-review.take2.patch
+* attachment:ecllib.patch
+* attachment:trac_6781-review.take2.patch
+
 
 
 ---
 
-Comment by burcin created at 2010-04-12 08:55:12
+archive/issue_comments_055878.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-04-12T08:55:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55878",
+    "user": "burcin"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by kcrisman created at 2010-04-12 12:56:41
+archive/issue_comments_055879.json:
+```json
+{
+    "body": "Awesome! I'm very sorry I haven't been able to work on this (or Sage) at all the last several months. Great work, and thanks.",
+    "created_at": "2010-04-12T12:56:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55879",
+    "user": "kcrisman"
+}
+```
 
 Awesome! I'm very sorry I haven't been able to work on this (or Sage) at all the last several months. Great work, and thanks.
 
 
+
 ---
 
-Comment by burcin created at 2010-04-12 22:58:14
+archive/issue_comments_055880.json:
+```json
+{
+    "body": "The author credit for this ticket belongs entirely to Nils. I just made minor changes as a reviewer.",
+    "created_at": "2010-04-12T22:58:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55880",
+    "user": "burcin"
+}
+```
 
 The author credit for this ticket belongs entirely to Nils. I just made minor changes as a reviewer.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-15 20:05:44
+archive/issue_comments_055881.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-04-15T20:05:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55881",
+    "user": "jhpalmieri"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-15 20:05:44
+archive/issue_comments_055882.json:
+```json
+{
+    "body": "Merged in 4.4.alpha0:\n\n- ecllib.patch\n- trac_6781-review.take2.patch",
+    "created_at": "2010-04-15T20:05:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55882",
+    "user": "jhpalmieri"
+}
+```
 
 Merged in 4.4.alpha0:
 
- - ecllib.patch
- - trac_6781-review.take2.patch
+- ecllib.patch
+- trac_6781-review.take2.patch
+
 
 
 ---
 
-Comment by jhpalmieri created at 2010-04-16 02:47:51
+archive/issue_comments_055883.json:
+```json
+{
+    "body": "Changing status from closed to needs_work.",
+    "created_at": "2010-04-16T02:47:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55883",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from closed to needs_work.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-16 02:47:51
+archive/issue_comments_055884.json:
+```json
+{
+    "body": "If I understand this correctly, it requires ecl to be built before Sage.  Is that right?  If so, the file SAGE_ROOT/spkg/standard/deps needs to be changed.  Please review my changes.",
+    "created_at": "2010-04-16T02:47:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55884",
+    "user": "jhpalmieri"
+}
+```
 
 If I understand this correctly, it requires ecl to be built before Sage.  Is that right?  If so, the file SAGE_ROOT/spkg/standard/deps needs to be changed.  Please review my changes.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-16 02:49:27
+archive/issue_comments_055885.json:
+```json
+{
+    "body": "new version of SAGE_ROOT/spkg/standard/deps",
+    "created_at": "2010-04-16T02:49:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55885",
+    "user": "jhpalmieri"
+}
+```
 
 new version of SAGE_ROOT/spkg/standard/deps
 
 
+
 ---
+
+archive/issue_comments_055886.json:
+```json
+{
+    "body": "Attachment\n\ndiff for the file \"deps\"",
+    "created_at": "2010-04-16T02:49:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55886",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
 diff for the file "deps"
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-16 02:51:08
+archive/issue_comments_055887.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-04-16T02:51:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55887",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-16 02:51:22
+archive/issue_comments_055888.json:
+```json
+{
+    "body": "Resolution changed from fixed to ",
+    "created_at": "2010-04-16T02:51:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55888",
+    "user": "jhpalmieri"
+}
+```
 
 Resolution changed from fixed to 
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-16 02:51:22
+archive/issue_comments_055889.json:
+```json
+{
+    "body": "Changing status from closed to new.",
+    "created_at": "2010-04-16T02:51:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55889",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from closed to new.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-16 02:51:29
+archive/issue_comments_055890.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-04-16T02:51:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55890",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-16 02:51:52
+archive/issue_comments_055891.json:
+```json
+{
+    "body": "(Okay, I think this has the right label now.)",
+    "created_at": "2010-04-16T02:51:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55891",
+    "user": "jhpalmieri"
+}
+```
 
 (Okay, I think this has the right label now.)
 
 
+
 ---
 
-Comment by burcin created at 2010-04-16 10:38:23
+archive/issue_comments_055892.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-04-16T10:38:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55892",
+    "user": "burcin"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by burcin created at 2010-04-16 10:38:23
+archive/issue_comments_055893.json:
+```json
+{
+    "body": "It didn't occur to me that we need to update the dependencies, sorry for the trouble.\n\nI'm not sure what it takes to review the `deps` file. The proposed change definitely makes sense, but I don't think I can test it easily. I'm giving a positive review nevertheless.",
+    "created_at": "2010-04-16T10:38:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55893",
+    "user": "burcin"
+}
+```
 
 It didn't occur to me that we need to update the dependencies, sorry for the trouble.
 
 I'm not sure what it takes to review the `deps` file. The proposed change definitely makes sense, but I don't think I can test it easily. I'm giving a positive review nevertheless.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-16 17:15:19
+archive/issue_comments_055894.json:
+```json
+{
+    "body": "Merged new version of \"deps\" into 4.4.alpha0.",
+    "created_at": "2010-04-16T17:15:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55894",
+    "user": "jhpalmieri"
+}
+```
 
 Merged new version of "deps" into 4.4.alpha0.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-16 17:15:19
+archive/issue_comments_055895.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-04-16T17:15:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6781",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6781#issuecomment-55895",
+    "user": "jhpalmieri"
+}
+```
 
 Resolution: fixed

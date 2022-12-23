@@ -1,24 +1,62 @@
 # Issue 2760: [with patch; needs review] Debian amd64 fixes for NTL
 
-Issue created by migration from https://trac.sagemath.org/ticket/2760
-
-Original creator: tabbott
-
-Original creation time: 2008-04-01 21:28:20
-
+archive/issues_002760.json:
+```json
+{
+    "body": "Assignee: tabbott\n\nI've attached the patch I needed to apply to the Debianization of NTL to make it build on amd64.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2760\n\n",
+    "created_at": "2008-04-01T21:28:20Z",
+    "labels": [
+        "debian-package",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch; needs review] Debian amd64 fixes for NTL",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2760",
+    "user": "tabbott"
+}
+```
 Assignee: tabbott
 
 I've attached the patch I needed to apply to the Debianization of NTL to make it build on amd64.
 
+Issue created by migration from https://trac.sagemath.org/ticket/2760
+
+
+
+
 
 ---
+
+archive/issue_comments_018967.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-04-01T21:28:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2760",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2760#issuecomment-18967",
+    "user": "tabbott"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-01 21:50:37
+archive/issue_comments_018968.json:
+```json
+{
+    "body": "Patch looks good to me. Positive review.\n\nCheers,\n\nMichael",
+    "created_at": "2008-04-01T21:50:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2760",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2760#issuecomment-18968",
+    "user": "mabshoff"
+}
+```
 
 Patch looks good to me. Positive review.
 
@@ -27,15 +65,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-01 21:51:07
+archive/issue_comments_018969.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-04-01T21:51:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2760",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2760#issuecomment-18969",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-01 21:51:07
+archive/issue_comments_018970.json:
+```json
+{
+    "body": "Merged in ntl-5.4.2.p0 in Sage 3.0.alpha0",
+    "created_at": "2008-04-01T21:51:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2760",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2760#issuecomment-18970",
+    "user": "mabshoff"
+}
+```
 
 Merged in ntl-5.4.2.p0 in Sage 3.0.alpha0

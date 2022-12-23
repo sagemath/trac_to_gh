@@ -1,11 +1,21 @@
 # Issue 7304: [With patch, needs review] Contract edge in graph
 
-Issue created by migration from https://trac.sagemath.org/ticket/7304
-
-Original creator: AJonsson
-
-Original creation time: 2009-10-25 20:04:34
-
+archive/issues_007304.json:
+```json
+{
+    "body": "Assignee: rlm\n\nCC:  brunellus lkeough dcoudert tscrim stefan yomcat\n\nThis patch contract an edge (u,v) in a graph. In the resulting graph vertex u is merged into vertex v.\n\nThe variables u and v can be passed as variables, a tuple (u,v) or a 3-tuple (u,v,'label'). The last allows us to use an element from G.edges() for contraction.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7304\n\n",
+    "created_at": "2009-10-25T20:04:34Z",
+    "labels": [
+        "graph theory",
+        "major",
+        "bug"
+    ],
+    "title": "[With patch, needs review] Contract edge in graph",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7304",
+    "user": "AJonsson"
+}
+```
 Assignee: rlm
 
 CC:  brunellus lkeough dcoudert tscrim stefan yomcat
@@ -14,52 +24,135 @@ This patch contract an edge (u,v) in a graph. In the resulting graph vertex u is
 
 The variables u and v can be passed as variables, a tuple (u,v) or a 3-tuple (u,v,'label'). The last allows us to use an element from G.edges() for contraction.
 
+Issue created by migration from https://trac.sagemath.org/ticket/7304
+
+
+
+
 
 ---
+
+archive/issue_comments_060915.json:
+```json
+{
+    "body": "Attachment\n\nInitial patch for review",
+    "created_at": "2009-10-25T20:06:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60915",
+    "user": "AJonsson"
+}
+```
 
 Attachment
 
 Initial patch for review
 
 
+
 ---
 
-Comment by AJonsson created at 2009-10-25 20:12:56
+archive/issue_comments_060916.json:
+```json
+{
+    "body": "Changing type from defect to enhancement.",
+    "created_at": "2009-10-25T20:12:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60916",
+    "user": "AJonsson"
+}
+```
 
 Changing type from defect to enhancement.
 
 
+
 ---
 
-Comment by AJonsson created at 2009-10-25 20:12:56
+archive/issue_comments_060917.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-10-25T20:12:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60917",
+    "user": "AJonsson"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by AJonsson created at 2009-10-25 21:05:23
+archive/issue_comments_060918.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2009-10-25T21:05:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60918",
+    "user": "AJonsson"
+}
+```
 
 Resolution: duplicate
 
 
+
 ---
 
-Comment by AJonsson created at 2009-10-25 21:05:23
+archive/issue_comments_060919.json:
+```json
+{
+    "body": "Duplicate of #7159 . That ticket is about vertex merging, but it is basically the same thing.",
+    "created_at": "2009-10-25T21:05:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60919",
+    "user": "AJonsson"
+}
+```
 
 Duplicate of #7159 . That ticket is about vertex merging, but it is basically the same thing.
 
 
+
 ---
 
-Comment by AJonsson created at 2009-10-27 18:19:01
+archive/issue_comments_060920.json:
+```json
+{
+    "body": "Resolution changed from duplicate to ",
+    "created_at": "2009-10-27T18:19:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60920",
+    "user": "AJonsson"
+}
+```
 
 Resolution changed from duplicate to 
 
 
+
 ---
 
-Comment by AJonsson created at 2009-10-27 18:19:01
+archive/issue_comments_060921.json:
+```json
+{
+    "body": "On second thought, reopening.\n\nMerging vertices gives a slightly different result for certain cases that are important in deletion-contraction algorithms, so this function has a place to fill as well.\n\nExample of case that contract_edge() handles differently:\n\nIf we have two vertices A, B, with two parallel edges between them, a merging of A and B results in a single vertex with no edge or loops. If we instead choose to contract one of the two parallel edges (and allow loops), we will end up with a single vertex which has a loop.",
+    "created_at": "2009-10-27T18:19:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60921",
+    "user": "AJonsson"
+}
+```
 
 On second thought, reopening.
 
@@ -70,32 +163,76 @@ Example of case that contract_edge() handles differently:
 If we have two vertices A, B, with two parallel edges between them, a merging of A and B results in a single vertex with no edge or loops. If we instead choose to contract one of the two parallel edges (and allow loops), we will end up with a single vertex which has a loop.
 
 
+
 ---
 
-Comment by AJonsson created at 2009-10-27 18:19:01
+archive/issue_comments_060922.json:
+```json
+{
+    "body": "Changing status from closed to new.",
+    "created_at": "2009-10-27T18:19:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60922",
+    "user": "AJonsson"
+}
+```
 
 Changing status from closed to new.
 
 
+
 ---
 
-Comment by AJonsson created at 2009-10-27 18:19:19
+archive/issue_comments_060923.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-10-27T18:19:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60923",
+    "user": "AJonsson"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mvngu created at 2009-10-28 12:30:08
+archive/issue_comments_060924.json:
+```json
+{
+    "body": "Replying to [comment:2 AJonsson]:\n> Duplicate of #7159 . That ticket is about vertex merging, but it is basically the same thing.\nAnders, please don't close tickets. That's the job of the release manager. See [this section](http://www.sagemath.org/doc/developer/trac.html#closing-tickets) of the Developer's Guide for conventions on closing tickets.",
+    "created_at": "2009-10-28T12:30:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60924",
+    "user": "mvngu"
+}
+```
 
 Replying to [comment:2 AJonsson]:
 > Duplicate of #7159 . That ticket is about vertex merging, but it is basically the same thing.
 Anders, please don't close tickets. That's the job of the release manager. See [this section](http://www.sagemath.org/doc/developer/trac.html#closing-tickets) of the Developer's Guide for conventions on closing tickets.
 
 
+
 ---
 
-Comment by AJonsson created at 2009-10-28 19:43:56
+archive/issue_comments_060925.json:
+```json
+{
+    "body": "Replying to [comment:6 mvngu]:\n> Anders, please don't close tickets. That's the job of the release manager. See [this section](http://www.sagemath.org/doc/developer/trac.html#closing-tickets) of the Developer's Guide for conventions on closing tickets.\n\nWhoops. Hadn't seen that section. Won't happen again.",
+    "created_at": "2009-10-28T19:43:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60925",
+    "user": "AJonsson"
+}
+```
 
 Replying to [comment:6 mvngu]:
 > Anders, please don't close tickets. That's the job of the release manager. See [this section](http://www.sagemath.org/doc/developer/trac.html#closing-tickets) of the Developer's Guide for conventions on closing tickets.
@@ -103,25 +240,58 @@ Replying to [comment:6 mvngu]:
 Whoops. Hadn't seen that section. Won't happen again.
 
 
+
 ---
 
-Comment by ncohen created at 2009-10-31 20:39:25
+archive/issue_comments_060926.json:
+```json
+{
+    "body": "I understand your point, but do you think it useful to have 2 different functions to merge vertices, instead of having just one with more options ? It could be a bit confusing...\n\nNathann",
+    "created_at": "2009-10-31T20:39:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60926",
+    "user": "ncohen"
+}
+```
 
 I understand your point, but do you think it useful to have 2 different functions to merge vertices, instead of having just one with more options ? It could be a bit confusing...
 
 Nathann
 
 
+
 ---
 
-Comment by ncohen created at 2009-10-31 20:39:32
+archive/issue_comments_060927.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_info.",
+    "created_at": "2009-10-31T20:39:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60927",
+    "user": "ncohen"
+}
+```
 
 Changing status from needs_review to needs_info.
 
 
+
 ---
 
-Comment by AJonsson created at 2009-11-01 09:52:01
+archive/issue_comments_060928.json:
+```json
+{
+    "body": "Replying to [comment:8 ncohen]:\n> I understand your point, but do you think it useful to have 2 different functions to merge vertices, instead of having just one with more options ? It could be a bit confusing...\n> \n> Nathann\n\nI don't feel too strongly about it. As long as full functionality exists, it matters little to me if it is in one or two functions.",
+    "created_at": "2009-11-01T09:52:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60928",
+    "user": "AJonsson"
+}
+```
 
 Replying to [comment:8 ncohen]:
 > I understand your point, but do you think it useful to have 2 different functions to merge vertices, instead of having just one with more options ? It could be a bit confusing...
@@ -131,9 +301,20 @@ Replying to [comment:8 ncohen]:
 I don't feel too strongly about it. As long as full functionality exists, it matters little to me if it is in one or two functions.
 
 
+
 ---
 
-Comment by ncohen created at 2009-11-01 09:57:18
+archive/issue_comments_060929.json:
+```json
+{
+    "body": "My advice exactly ! \n\nCould you then write a patch to modify #7159 as soon as it will be merged ? You could also directly modify the trac ticket as it is not merged yet, but then we would be looking for someone else to review it, as for #7814...\n\nAs you said, I do not mind as long as the two behaviours exist.. If you think your version of merging should be the default one, it's up to you ! :-)",
+    "created_at": "2009-11-01T09:57:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60929",
+    "user": "ncohen"
+}
+```
 
 My advice exactly ! 
 
@@ -142,30 +323,74 @@ Could you then write a patch to modify #7159 as soon as it will be merged ? You 
 As you said, I do not mind as long as the two behaviours exist.. If you think your version of merging should be the default one, it's up to you ! :-)
 
 
+
 ---
 
-Comment by AJonsson created at 2009-11-01 10:06:54
+archive/issue_comments_060930.json:
+```json
+{
+    "body": "Ok, will look closer into a modification of #7159 to be added after that ticket has been merged to Sage.",
+    "created_at": "2009-11-01T10:06:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60930",
+    "user": "AJonsson"
+}
+```
 
 Ok, will look closer into a modification of #7159 to be added after that ticket has been merged to Sage.
 
 
+
 ---
 
-Comment by AJonsson created at 2009-11-01 10:06:54
+archive/issue_comments_060931.json:
+```json
+{
+    "body": "Changing status from needs_info to needs_work.",
+    "created_at": "2009-11-01T10:06:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60931",
+    "user": "AJonsson"
+}
+```
 
 Changing status from needs_info to needs_work.
 
 
+
 ---
 
-Comment by ncohen created at 2009-12-05 09:05:17
+archive/issue_comments_060932.json:
+```json
+{
+    "body": "should we keep this ticket open, or close it and open a new one with your modification of #7159 ?",
+    "created_at": "2009-12-05T09:05:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60932",
+    "user": "ncohen"
+}
+```
 
 should we keep this ticket open, or close it and open a new one with your modification of #7159 ?
 
 
+
 ---
 
-Comment by AJonsson created at 2009-12-07 00:28:06
+archive/issue_comments_060933.json:
+```json
+{
+    "body": "Replying to [comment:13 ncohen]:\n> should we keep this ticket open, or close it and open a new one with your modification of #7159 ?\n\nLet's keep it open, otherwise we would just open an almost identical ticket. I will see if I get the time to finish the function sometime next week.",
+    "created_at": "2009-12-07T00:28:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60933",
+    "user": "AJonsson"
+}
+```
 
 Replying to [comment:13 ncohen]:
 > should we keep this ticket open, or close it and open a new one with your modification of #7159 ?
@@ -173,16 +398,38 @@ Replying to [comment:13 ncohen]:
 Let's keep it open, otherwise we would just open an almost identical ticket. I will see if I get the time to finish the function sometime next week.
 
 
+
 ---
 
-Comment by bascorp created at 2010-04-30 14:33:13
+archive/issue_comments_060934.json:
+```json
+{
+    "body": "[\u043a\u0443\u043f\u043b\u044e \u043c\u043e\u0431\u0438\u043b\u044c\u043d\u044b\u0439 \u0442\u0435\u043b\u0435\u0444\u043e\u043d](http://forum.mobile-shop.kiev.ua/)",
+    "created_at": "2010-04-30T14:33:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60934",
+    "user": "bascorp"
+}
+```
 
 [куплю мобильный телефон](http://forum.mobile-shop.kiev.ua/)
 
 
+
 ---
 
-Comment by Stefan created at 2011-04-11 15:03:04
+archive/issue_comments_060935.json:
+```json
+{
+    "body": "There's a spam link above here that needs removing.\n\nAs a matroid theorist, I look at deletion and contraction a bit differently. It bothers me that I cannot write something along the lines of\n\nH = G.delete((1,2)).contract([(3,5),(6,7)])\n\nwithout modifying G.",
+    "created_at": "2011-04-11T15:03:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60935",
+    "user": "Stefan"
+}
+```
 
 There's a spam link above here that needs removing.
 
@@ -193,18 +440,40 @@ H = G.delete((1,2)).contract([(3,5),(6,7)])
 without modifying G.
 
 
+
 ---
 
-Comment by ncohen created at 2011-04-11 15:18:46
+archive/issue_comments_060936.json:
+```json
+{
+    "body": "What would your code do ? Are your pairs edges or vertices ? Right now your have a merge_vertices commands in Graph that lets you contract any set of vertices.\n\nNathann",
+    "created_at": "2011-04-11T15:18:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60936",
+    "user": "ncohen"
+}
+```
 
 What would your code do ? Are your pairs edges or vertices ? Right now your have a merge_vertices commands in Graph that lets you contract any set of vertices.
 
 Nathann
 
 
+
 ---
 
-Comment by Stefan created at 2011-04-11 19:19:26
+archive/issue_comments_060937.json:
+```json
+{
+    "body": "My pairs would be edges. In an even more ideal world, I would refer to them by their labels. For comparison, if M is a matroid with elements 'e', 'f', 'g', I currently have some experimental code allowing me to write\n\nN = M / ['e'] \\ ['f', 'g']\n\nresulting in the matroid with e contracted and f,g deleted. From a matroid-theoretic point of view, if you contract an edge, all edges parallel to it should turn into loops. The current merge_vertices doesn't do that, even if I call G.allow_loops(True) first. With this behavior, contracting a loop should probably equal deleting a loop.\n\nAnyway, my main point is that I feel there should be methods for deletion and contraction that return a new graph, rather than modifying the graph itself.\n\nReal use case: the other day I was wondering about maximal planar subgraphs of a small graph G. In that case you want to explore: first delete edge 'e', then delete edge 'f', then 'f' and 'g', then 'f' and 'h', and finally only edge 'h'. The current implementation makes such exploration of minors a bit cumbersome: you frequently make copies of G, which you then modify.",
+    "created_at": "2011-04-11T19:19:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60937",
+    "user": "Stefan"
+}
+```
 
 My pairs would be edges. In an even more ideal world, I would refer to them by their labels. For comparison, if M is a matroid with elements 'e', 'f', 'g', I currently have some experimental code allowing me to write
 
@@ -217,9 +486,20 @@ Anyway, my main point is that I feel there should be methods for deletion and co
 Real use case: the other day I was wondering about maximal planar subgraphs of a small graph G. In that case you want to explore: first delete edge 'e', then delete edge 'f', then 'f' and 'g', then 'f' and 'h', and finally only edge 'h'. The current implementation makes such exploration of minors a bit cumbersome: you frequently make copies of G, which you then modify.
 
 
+
 ---
 
-Comment by ncohen created at 2011-04-12 19:08:57
+archive/issue_comments_060938.json:
+```json
+{
+    "body": "> Anyway, my main point is that I feel there should be methods for deletion and contraction that return a new graph, rather than modifying the graph itself.\n\nWould you be interested in mixing the two ? Like sometimes calling a delete_edge function which returns a graph, and some other times a method which modifies the graph ?\n\nThe current behaviour is necessary for many functions, and replacing it would mean a huge loss in efficiency. It is possible to add a keyword to all those methods so that a graph will be returned instead of modifying the current graph. I don't quite like this, as it would mean some additional tests for each of all those very fundamental functions, but then again...\nOn the other hand, if you are not interested in mixing the two type of operations, perhaps the best is to work on an immutable graph class. Many people have asked this already, and when working on an immutable graph class having a default behaviour of \"returning an immutable copy of the graph modified as requested\" does not seem too unnatural. What about this then ? `:-)`\n\nNathann",
+    "created_at": "2011-04-12T19:08:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60938",
+    "user": "ncohen"
+}
+```
 
 > Anyway, my main point is that I feel there should be methods for deletion and contraction that return a new graph, rather than modifying the graph itself.
 
@@ -231,16 +511,38 @@ On the other hand, if you are not interested in mixing the two type of operation
 Nathann
 
 
+
 ---
 
-Comment by Stefan created at 2011-04-19 15:06:38
+archive/issue_comments_060939.json:
+```json
+{
+    "body": "I'm not at all in favor of having two different behaviors encoded in one function. One option would be to implement the __div__ and _backslash_ operators to do, respectively, contraction and deletion without changing the object.",
+    "created_at": "2011-04-19T15:06:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60939",
+    "user": "Stefan"
+}
+```
 
 I'm not at all in favor of having two different behaviors encoded in one function. One option would be to implement the __div__ and _backslash_ operators to do, respectively, contraction and deletion without changing the object.
 
 
+
 ---
 
-Comment by ncohen created at 2011-04-19 15:09:53
+archive/issue_comments_060940.json:
+```json
+{
+    "body": "> I'm not at all in favor of having two different behaviors encoded in one function. One option would be to implement the __div__ and _backslash_ operators to do, respectively, contraction and deletion without changing the object.\n\nGot it !\n\nThis being said, I understand that's how matroid theory is written \"on the paper\", but do you think it would be possible to write useful code using only those symbols when any of them means copying the whole structure ? But perhaps I do not know how you intend to code it, and how much such operations could cost in memory and time ...\n\nNathann",
+    "created_at": "2011-04-19T15:09:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60940",
+    "user": "ncohen"
+}
+```
 
 > I'm not at all in favor of having two different behaviors encoded in one function. One option would be to implement the __div__ and _backslash_ operators to do, respectively, contraction and deletion without changing the object.
 
@@ -251,9 +553,20 @@ This being said, I understand that's how matroid theory is written "on the paper
 Nathann
 
 
+
 ---
 
-Comment by rlm created at 2011-04-19 18:18:11
+archive/issue_comments_060941.json:
+```json
+{
+    "body": "Replying to [comment:20 Stefan]:\n> I'm not at all in favor of having two different behaviors encoded in one function.\n\nThis is often the case. For example many graph functions in Sage have an `inplace` option, which provides exactly this choice.",
+    "created_at": "2011-04-19T18:18:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60941",
+    "user": "rlm"
+}
+```
 
 Replying to [comment:20 Stefan]:
 > I'm not at all in favor of having two different behaviors encoded in one function.
@@ -261,9 +574,20 @@ Replying to [comment:20 Stefan]:
 This is often the case. For example many graph functions in Sage have an `inplace` option, which provides exactly this choice.
 
 
+
 ---
 
-Comment by Stefan created at 2011-04-20 07:30:14
+archive/issue_comments_060942.json:
+```json
+{
+    "body": "Replying to [comment:22 rlm]:\n> Replying to [comment:20 Stefan]:\n> > I'm not at all in favor of having two different behaviors encoded in one function.\n> \n> This is often the case. For example many graph functions in Sage have an `inplace` option, which provides exactly this choice.\n\nIndeed it does! I'm not sure that this happens often, but so far I found subgraph() and relabel(). The former defaults to inplace=False; the latter defaults to inplace=True.\n\nIn that case it would be preferable not to have extra methods (the list is quite long enough as it stands). Defining the forward and backslashes might still be a neat addition.\n\nNathann, typical work with matroids is on relatively small ground sets. I don't expect intensive calculations on graphs with more than, say, a few dozen edges. We would wrap the graph in a GraphicMatroid object anyway, so it's easy to compensate for any functionality in the graph code that is not entirely fit for our purpose. So you need not worry about our needs for the time being.\n\nWhat remains is the question of contracting one edge from a parallel pair (see above).",
+    "created_at": "2011-04-20T07:30:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60942",
+    "user": "Stefan"
+}
+```
 
 Replying to [comment:22 rlm]:
 > Replying to [comment:20 Stefan]:
@@ -280,36 +604,80 @@ Nathann, typical work with matroids is on relatively small ground sets. I don't 
 What remains is the question of contracting one edge from a parallel pair (see above).
 
 
+
 ---
 
-Comment by brunellus created at 2012-01-31 14:48:16
+archive/issue_comments_060943.json:
+```json
+{
+    "body": "So, what do you say to my patch? It provides\n\n1. loops handling (see #9807)\n2. ``contract_edge`` option\n3. ``inplace`` option",
+    "created_at": "2012-01-31T14:48:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60943",
+    "user": "brunellus"
+}
+```
 
 So, what do you say to my patch? It provides
 
- 1. loops handling (see #9807)
- 1. ``contract_edge`` option
- 1. ``inplace`` option
+1. loops handling (see #9807)
+2. ``contract_edge`` option
+3. ``inplace`` option
+
 
 
 ---
 
-Comment by brunellus created at 2012-01-31 14:48:16
+archive/issue_comments_060944.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2012-01-31T14:48:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60944",
+    "user": "brunellus"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by davidloeffler created at 2012-03-10 13:00:31
+archive/issue_comments_060945.json:
+```json
+{
+    "body": "Apply trac_7304_contract_edge.patch\n\n(for patchbot)",
+    "created_at": "2012-03-10T13:00:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60945",
+    "user": "davidloeffler"
+}
+```
 
 Apply trac_7304_contract_edge.patch
 
 (for patchbot)
 
 
+
 ---
 
-Comment by boothby created at 2012-03-21 20:48:35
+archive/issue_comments_060946.json:
+```json
+{
+    "body": "Brunellus,\n\nThis isn't quite there, and you haven't tested everything.\n\nGraphs have a copy method -- `g = g.copy()` is faster than `g=copy(g)`.  There are two problems with the block\n\n\n```\n        if vertices and vertices[0] is None: \n\t    vertices[0] = g.add_vertex()\n```\n\n\nfirst off, this assumes that `g.add_vertex()` returns the label of the added vertex.  It does not.  Second, it modifies `vertices` for no good reason (what if the users passes in a tuple, set, or generator?)",
+    "created_at": "2012-03-21T20:48:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60946",
+    "user": "boothby"
+}
+```
 
 Brunellus,
 
@@ -327,16 +695,38 @@ Graphs have a copy method -- `g = g.copy()` is faster than `g=copy(g)`.  There a
 first off, this assumes that `g.add_vertex()` returns the label of the added vertex.  It does not.  Second, it modifies `vertices` for no good reason (what if the users passes in a tuple, set, or generator?)
 
 
+
 ---
 
-Comment by boothby created at 2012-03-21 21:07:52
+archive/issue_comments_060947.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2012-03-21T21:07:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60947",
+    "user": "boothby"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by boothby created at 2012-03-21 22:21:21
+archive/issue_comments_060948.json:
+```json
+{
+    "body": "Ah, I see that g.add_vertex() indeed returns the label for the current alpha of 5.0.  Please update this to not modify the users's input with\n\n\n```\n    vertices = list(vertices)\n```\n\n\nand use `g.copy()` instead of copy, and I'll give this a positive review.",
+    "created_at": "2012-03-21T22:21:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60948",
+    "user": "boothby"
+}
+```
 
 Ah, I see that g.add_vertex() indeed returns the label for the current alpha of 5.0.  Please update this to not modify the users's input with
 
@@ -349,67 +739,168 @@ Ah, I see that g.add_vertex() indeed returns the label for the current alpha of 
 and use `g.copy()` instead of copy, and I'll give this a positive review.
 
 
+
 ---
 
-Comment by brunellus created at 2012-05-16 09:00:02
+archive/issue_comments_060949.json:
+```json
+{
+    "body": "Thanks for the review! I will update the patch right now.",
+    "created_at": "2012-05-16T09:00:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60949",
+    "user": "brunellus"
+}
+```
 
 Thanks for the review! I will update the patch right now.
 
 
+
 ---
+
+archive/issue_comments_060950.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2012-05-16T10:34:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60950",
+    "user": "brunellus"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by brunellus created at 2012-05-16 10:35:17
+archive/issue_comments_060951.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2012-05-16T10:35:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60951",
+    "user": "brunellus"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by lkeough created at 2012-07-15 21:25:42
+archive/issue_comments_060952.json:
+```json
+{
+    "body": "I have been working on getting the Tutte polynomial into Sage (#1314).  The Tutte polynomial needs contraction with keeping any resulting multiedges and loops (but removing the edge you contracted).  It seems your code does this if you allow multiedges and loops and use the contract_edge feature.\n\nI think they may have had this discussion above, but I can't tell what was concluded:  Would adding an option like \"simplegraph = True\" be a reasonable thing to do?",
+    "created_at": "2012-07-15T21:25:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60952",
+    "user": "lkeough"
+}
+```
 
 I have been working on getting the Tutte polynomial into Sage (#1314).  The Tutte polynomial needs contraction with keeping any resulting multiedges and loops (but removing the edge you contracted).  It seems your code does this if you allow multiedges and loops and use the contract_edge feature.
 
 I think they may have had this discussion above, but I can't tell what was concluded:  Would adding an option like "simplegraph = True" be a reasonable thing to do?
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-07-27 20:43:02
+archive/issue_comments_060953.json:
+```json
+{
+    "body": "Please fill in your real name as Author.",
+    "created_at": "2012-07-27T20:43:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60953",
+    "user": "jdemeyer"
+}
+```
 
 Please fill in your real name as Author.
 
 
+
 ---
 
-Comment by ncohen created at 2012-11-26 10:32:39
+archive/issue_comments_060954.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_info.",
+    "created_at": "2012-11-26T10:32:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60954",
+    "user": "ncohen"
+}
+```
 
 Changing status from needs_review to needs_info.
 
 
+
 ---
 
-Comment by ncohen created at 2012-11-26 10:32:39
+archive/issue_comments_060955.json:
+```json
+{
+    "body": "Ok.... Which is the patch that needs to be reviewed ? Is it [attachment:trac_7304_contract_edge.patch] ?\n\nNathann",
+    "created_at": "2012-11-26T10:32:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60955",
+    "user": "ncohen"
+}
+```
 
 Ok.... Which is the patch that needs to be reviewed ? Is it [attachment:trac_7304_contract_edge.patch] ?
 
 Nathann
 
 
+
 ---
 
-Comment by zgershkoff created at 2017-06-22 00:58:28
+archive/issue_comments_060956.json:
+```json
+{
+    "body": "Changing status from needs_info to needs_review.",
+    "created_at": "2017-06-22T00:58:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60956",
+    "user": "zgershkoff"
+}
+```
 
 Changing status from needs_info to needs_review.
 
 
+
 ---
 
-Comment by zgershkoff created at 2017-06-22 00:58:28
+archive/issue_comments_060957.json:
+```json
+{
+    "body": "I ended up writing some new methods for edge contraction. I didn't use either patch here. The first one didn't seem to respect edge labels, and `allow_loops_multiedges` seems redundant since these are intrinsic to the graph, and the second one seemed too complicated to disentangle from `merge_vertices`. I also didn't include an `inplace` option for consistency with `delete_edge`.\n\nThe `contract_edges()` method was tough because if the user inputs a list of edges, the vertices need to be updated dynamically as the contractions occur and vertices are lost. I ended up using nested while loops to accomplish this. Maybe there's a faster way?\n----\nNew commits:",
+    "created_at": "2017-06-22T00:58:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60957",
+    "user": "zgershkoff"
+}
+```
 
 I ended up writing some new methods for edge contraction. I didn't use either patch here. The first one didn't seem to respect edge labels, and `allow_loops_multiedges` seems redundant since these are intrinsic to the graph, and the second one seemed too complicated to disentangle from `merge_vertices`. I also didn't include an `inplace` option for consistency with `delete_edge`.
 
@@ -418,79 +909,200 @@ The `contract_edges()` method was tough because if the user inputs a list of edg
 New commits:
 
 
+
 ---
 
-Comment by git created at 2017-06-22 00:59:53
+archive/issue_comments_060958.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2017-06-22T00:59:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60958",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by git created at 2017-06-22 01:31:39
+archive/issue_comments_060959.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2017-06-22T01:31:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60959",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by git created at 2017-06-22 01:33:13
+archive/issue_comments_060960.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2017-06-22T01:33:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60960",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by zgershkoff created at 2017-06-22 01:59:18
+archive/issue_comments_060961.json:
+```json
+{
+    "body": "Let's wait until I speed up `contract_edges()`.",
+    "created_at": "2017-06-22T01:59:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60961",
+    "user": "zgershkoff"
+}
+```
 
 Let's wait until I speed up `contract_edges()`.
 
 
+
 ---
 
-Comment by zgershkoff created at 2017-06-22 01:59:18
+archive/issue_comments_060962.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2017-06-22T01:59:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60962",
+    "user": "zgershkoff"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by git created at 2017-06-22 05:22:03
+archive/issue_comments_060963.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2017-06-22T05:22:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60963",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by git created at 2017-06-22 17:02:48
+archive/issue_comments_060964.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2017-06-22T17:02:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60964",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by zgershkoff created at 2017-06-22 17:06:23
+archive/issue_comments_060965.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2017-06-22T17:06:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60965",
+    "user": "zgershkoff"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by zgershkoff created at 2017-06-22 17:06:23
+archive/issue_comments_060966.json:
+```json
+{
+    "body": "For the sake of not having two implementations for the same thing, I adapted brunellus's earlier patch and rewrote `contract_edge()` to use `merge_vertices()`. This depends on #23290 to resolve a defect in `merge_vertices()`.",
+    "created_at": "2017-06-22T17:06:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60966",
+    "user": "zgershkoff"
+}
+```
 
 For the sake of not having two implementations for the same thing, I adapted brunellus's earlier patch and rewrote `contract_edge()` to use `merge_vertices()`. This depends on #23290 to resolve a defect in `merge_vertices()`.
 
 
+
 ---
 
-Comment by git created at 2017-06-23 07:02:44
+archive/issue_comments_060967.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2017-06-23T07:02:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60967",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by dcoudert created at 2017-06-23 08:25:15
+archive/issue_comments_060968.json:
+```json
+{
+    "body": "Some comments for `contract_edges`:\n* instead of dropping non-edges, it is better to not add such edge to the list\n* construct the list of vertices at the same time to add edges to the list\n* Instead of implementing your own disjoint set methods, you can use `DisjointSet`\n* If you use `DS = DisjointSet(...)`, you can use `DS.root_to_elements_dict()` instead of `vertices = [v for v in vertices if v!= destination[v]]`",
+    "created_at": "2017-06-23T08:25:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60968",
+    "user": "dcoudert"
+}
+```
 
 Some comments for `contract_edges`:
 * instead of dropping non-edges, it is better to not add such edge to the list
@@ -499,16 +1111,38 @@ Some comments for `contract_edges`:
 * If you use `DS = DisjointSet(...)`, you can use `DS.root_to_elements_dict()` instead of `vertices = [v for v in vertices if v!= destination[v]]`
 
 
+
 ---
 
-Comment by git created at 2017-06-25 18:52:27
+archive/issue_comments_060969.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2017-06-25T18:52:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60969",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by zgershkoff created at 2017-06-25 18:57:32
+archive/issue_comments_060970.json:
+```json
+{
+    "body": "Replying to [comment:52 dcoudert]:\n> Some comments for `contract_edges`:\n> * instead of dropping non-edges, it is better to not add such edge to the list\n> * construct the list of vertices at the same time to add edges to the list\nDone.\n> * Instead of implementing your own disjoint set methods, you can use `DisjointSet`\n> * If you use `DS = DisjointSet(...)`, you can use `DS.root_to_elements_dict()` instead of `vertices = [v for v in vertices if v!= destination[v]]`\nIt's nice that sage already has an implementation of this algorithm, but I find it lacking. If I want a list of non-roots, I can do `vertices = [v for v in vertices if (v not in DS.root_to_elements_dict() )]`, but there doesn't seem to be an analog to my `root()` method. So at the end, when I need to know what the root of a vertex is, I don't see any easy way to do that if I'm using `DisjointSet`.",
+    "created_at": "2017-06-25T18:57:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60970",
+    "user": "zgershkoff"
+}
+```
 
 Replying to [comment:52 dcoudert]:
 > Some comments for `contract_edges`:
@@ -520,39 +1154,94 @@ Done.
 It's nice that sage already has an implementation of this algorithm, but I find it lacking. If I want a list of non-roots, I can do `vertices = [v for v in vertices if (v not in DS.root_to_elements_dict() )]`, but there doesn't seem to be an analog to my `root()` method. So at the end, when I need to know what the root of a vertex is, I don't see any easy way to do that if I'm using `DisjointSet`.
 
 
+
 ---
 
-Comment by zgershkoff created at 2017-06-25 19:01:57
+archive/issue_comments_060971.json:
+```json
+{
+    "body": "There's another issue I've been considering: if a user has loops on but multiedges off, then iterated contraction with `contract_edge()` will never create loops, but giving the same input as a list to `contract_edges()` could create loops because it will bypass when the edges are in parallel. On one hand, it seems like it should be consistent, but on the other hand, if a user has loops on and multiedges off, I don't know what business they have contracting edges, so I don't know what their desired output would be.",
+    "created_at": "2017-06-25T19:01:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60971",
+    "user": "zgershkoff"
+}
+```
 
 There's another issue I've been considering: if a user has loops on but multiedges off, then iterated contraction with `contract_edge()` will never create loops, but giving the same input as a list to `contract_edges()` could create loops because it will bypass when the edges are in parallel. On one hand, it seems like it should be consistent, but on the other hand, if a user has loops on and multiedges off, I don't know what business they have contracting edges, so I don't know what their desired output would be.
 
 
+
 ---
 
-Comment by dcoudert created at 2017-06-25 19:06:38
+archive/issue_comments_060972.json:
+```json
+{
+    "body": "> It's nice that sage already has an implementation of this algorithm, but I find it lacking. If I want a list of non-roots, I can do `vertices = [v for v in vertices if (v not in DS.root_to_elements_dict() )]`, but there doesn't seem to be an analog to my `root()` method. So at the end, when I need to know what the root of a vertex is, I don't see any easy way to do that if I'm using `DisjointSet`.\n\n`vertices = [v for v in vertices if v != DS.find(v)]` should give you non-roots, no?",
+    "created_at": "2017-06-25T19:06:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60972",
+    "user": "dcoudert"
+}
+```
 
 > It's nice that sage already has an implementation of this algorithm, but I find it lacking. If I want a list of non-roots, I can do `vertices = [v for v in vertices if (v not in DS.root_to_elements_dict() )]`, but there doesn't seem to be an analog to my `root()` method. So at the end, when I need to know what the root of a vertex is, I don't see any easy way to do that if I'm using `DisjointSet`.
 
 `vertices = [v for v in vertices if v != DS.find(v)]` should give you non-roots, no?
 
 
+
 ---
 
-Comment by git created at 2017-06-25 19:22:09
+archive/issue_comments_060973.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2017-06-25T19:22:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60973",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by zgershkoff created at 2017-06-25 19:22:38
+archive/issue_comments_060974.json:
+```json
+{
+    "body": "Ah, right. I misread the description of that method.",
+    "created_at": "2017-06-25T19:22:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60974",
+    "user": "zgershkoff"
+}
+```
 
 Ah, right. I misread the description of that method.
 
 
+
 ---
 
-Comment by dcoudert created at 2017-06-26 06:40:20
+archive/issue_comments_060975.json:
+```json
+{
+    "body": "Replying to [comment:55 zgershkoff]:\n> There's another issue I've been considering: if a user has loops on but multiedges off, then iterated contraction with `contract_edge()` will never create loops, but giving the same input as a list to `contract_edges()` could create loops because it will bypass when the edges are in parallel. On one hand, it seems like it should be consistent, but on the other hand, if a user has loops on and multiedges off, I don't know what business they have contracting edges, so I don't know what their desired output would be.\n\nThis is the main difficulty with such method: what's the good answer? what is the user expected ? It is really application dependent. For instance, in some cases you want to contract an edge unless it creates a loop.\\\\\nI would say that as long as the behavior is clearly documented, it's fine. If the user wants something else, he can code his own method.\n\n \n\nOne remark. You could use `edges_incident.extend( self.outgoing_edges(v) )` instead of `out_edges=self.edge_boundary([v])`. You can also use `self.incoming_edges(v)`.",
+    "created_at": "2017-06-26T06:40:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60975",
+    "user": "dcoudert"
+}
+```
 
 Replying to [comment:55 zgershkoff]:
 > There's another issue I've been considering: if a user has loops on but multiedges off, then iterated contraction with `contract_edge()` will never create loops, but giving the same input as a list to `contract_edges()` could create loops because it will bypass when the edges are in parallel. On one hand, it seems like it should be consistent, but on the other hand, if a user has loops on and multiedges off, I don't know what business they have contracting edges, so I don't know what their desired output would be.
@@ -565,30 +1254,74 @@ I would say that as long as the behavior is clearly documented, it's fine. If th
 One remark. You could use `edges_incident.extend( self.outgoing_edges(v) )` instead of `out_edges=self.edge_boundary([v])`. You can also use `self.incoming_edges(v)`.
 
 
+
 ---
 
-Comment by zgershkoff created at 2017-06-26 20:48:21
+archive/issue_comments_060976.json:
+```json
+{
+    "body": "Thanks for the comments. I think if I use both `self.incoming_edges(v)` and `self.outgoing_edges(v)` then I will get loops on `v` twice, so I'm leaving `out_edges=self.edge_boundary([v])` as it is, but I will extend `edges_incident` by `self.incoming_edges(v)`.",
+    "created_at": "2017-06-26T20:48:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60976",
+    "user": "zgershkoff"
+}
+```
 
 Thanks for the comments. I think if I use both `self.incoming_edges(v)` and `self.outgoing_edges(v)` then I will get loops on `v` twice, so I'm leaving `out_edges=self.edge_boundary([v])` as it is, but I will extend `edges_incident` by `self.incoming_edges(v)`.
 
 
+
 ---
 
-Comment by git created at 2017-06-26 21:33:11
+archive/issue_comments_060977.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2017-06-26T21:33:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60977",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by git created at 2017-06-26 21:34:20
+archive/issue_comments_060978.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2017-06-26T21:34:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60978",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by dcoudert created at 2017-06-27 06:46:12
+archive/issue_comments_060979.json:
+```json
+{
+    "body": "Another round of comments. \n\nIn method `contract_edge`\n- in the `INPUT` block, some lines are for `contract_edges` and so should be removed from here.\n- remove the `OUTPUT` block. It is useless here\n- If I call `G.contract_edge( (u, v) )` and that the graph has edge `(u, v, 'label')`, then the method will do nothing. Is this the behavior you expect? If so, it should be documented.\n- you may replace `for e in self.edges_incident(v):` with `for x,y,l in self.edges_incident(v):`. I don't know which option is the best.\n\nIn method `contract_edges`:\n- The first line is too long. Usually, the first line is short, and followed with a longer description\n- Again the `OUTPUT` block is useless\n- in the `TESTS` block, you have an indentation problem\n- If we pass a list of 2-tuples but that all edges of the graph have non `None` labels, nothing will happen. If it's expected behavior, it should be documented\n- after the `for e in edges:` loop, you should add a termination test like `if not edge_list: return` or `if not edge_list or not vertices: return`\n- `out_edges=self.edge_boundary([v])` -> `out_edges = self.edge_boundary([v])`\n- `edges_incident = edges_incident + self.edges_incident(v)` -> `edges_incident.extend(self.edges_incident(v))`\n- `for (u, v, label) in edges_incident:` -> `for u, v, label in edges_incident:`.",
+    "created_at": "2017-06-27T06:46:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60979",
+    "user": "dcoudert"
+}
+```
 
 Another round of comments. 
 
@@ -609,9 +1342,20 @@ In method `contract_edges`:
 - `for (u, v, label) in edges_incident:` -> `for u, v, label in edges_incident:`.
 
 
+
 ---
 
-Comment by zgershkoff created at 2017-06-27 20:11:44
+archive/issue_comments_060980.json:
+```json
+{
+    "body": "Replying to [comment:63 dcoudert]:\n> Another round of comments. \n> \n> In method `contract_edge`\n> - in the `INPUT` block, some lines are for `contract_edges` and so should be removed from here.\n> - remove the `OUTPUT` block. It is useless here\n> - If I call `G.contract_edge( (u, v) )` and that the graph has edge `(u, v, 'label')`, then the method will do nothing. Is this the behavior you expect? If so, it should be documented.\n\nI can't reproduce this. `self.has_edge(u,v)` works the same as `self.has_edge(u,v,None)`. It seems though the last edge it has in memory between `u` and `v` gets contracted.\n\n```\nsage: edgelist = [(0,1,0), (0,1,9), (0,1,2), (0,2,2), (1,2,3)]\nsage: G = Graph(edgelist, loops=True, multiedges=True)\nsage: G.contract_edge(0,1); G.edges()\n[(0, 0, 0), (0, 0, 9), (0, 2, 2), (0, 2, 3)]\nsage: edgelist = [(0,1,0), (0,1,2), (0,1,9), (0,2,2), (1,2,3)]\nsage: G = Graph(edgelist, loops=True, multiedges=True)\nsage: G.contract_edge(0,1); G.edges()\n[(0, 0, 0), (0, 0, 2), (0, 2, 2), (0, 2, 3)]\n```\n\n\n> - you may replace `for e in self.edges_incident(v):` with `for x,y,l in self.edges_incident(v):`. I don't know which option is the best.\n\nI changed it to `x,y,l` for consistency.\n\nWhy is `x,y,l` preferred over `(x,y,l)`? I don't see anything about this in PEP8, but I've been using the parentheses around the tuple a lot because I think it's easier to read that way.",
+    "created_at": "2017-06-27T20:11:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60980",
+    "user": "zgershkoff"
+}
+```
 
 Replying to [comment:63 dcoudert]:
 > Another round of comments. 
@@ -642,16 +1386,38 @@ I changed it to `x,y,l` for consistency.
 Why is `x,y,l` preferred over `(x,y,l)`? I don't see anything about this in PEP8, but I've been using the parentheses around the tuple a lot because I think it's easier to read that way.
 
 
+
 ---
 
-Comment by git created at 2017-06-27 20:31:51
+archive/issue_comments_060981.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2017-06-27T20:31:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60981",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by zgershkoff created at 2017-06-27 20:48:41
+archive/issue_comments_060982.json:
+```json
+{
+    "body": "I have a few more questions.\n\n- Is `return` preferred over `return None`? I've changed them to just `return`.\n- Where is the indentation error in `contract_edges()`? Is it the space in front of some of the edges in the output? That matches the output, and it makes the html display correctly.\n- I've noticed that there are problems for `contract_edges()` if the input is a mix of 2-tuples and 3-tuples as the example below shows, but this is kind of a GIGO situation and I don't know if I should bother addressing it.\n\n\n```\nsage: edgelist = [(0,1,0), (0,1,1), (0,1,2)]\nsage: G = Graph(edgelist, loops=True, multiedges=True)\nsage: G.contract_edges([(0,1,2), (0,1)]); G.edges()\n[(0, 0, 0)]\nsage: G = Graph(edgelist, loops=True, multiedges=True)\nsage: G.contract_edges([(0,1), (0,1,2)]); G.edges()\n[(0, 0, 0), (0, 0, 1)]\n```\n",
+    "created_at": "2017-06-27T20:48:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60982",
+    "user": "zgershkoff"
+}
+```
 
 I have a few more questions.
 
@@ -672,16 +1438,38 @@ sage: G.contract_edges([(0,1), (0,1,2)]); G.edges()
 
 
 
+
 ---
 
-Comment by git created at 2017-06-27 21:01:51
+archive/issue_comments_060983.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2017-06-27T21:01:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60983",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by dcoudert created at 2017-06-28 07:15:10
+archive/issue_comments_060984.json:
+```json
+{
+    "body": "Something has changed in the tests for method `contract_edge`. Now we are loosing loops. I don't know why\n\n```\nsage: edgelist = [(0,0,'a'), (0,1,'b'), (1,1,'c')]\nsage: G = Graph(edgelist, loops=True, multiedges=True)\nsage: G.contract_edge(0,1,'b'); G.edges()\n[(0, 0, 'a')]\nsage: D = DiGraph(edgelist, loops=True, multiedges=True)\nsage: D.contract_edge(0,1,'b'); D.edges()\n[(0, 0, 'a')]\n```\n\n\nIn `contract_edges`:\n*`if not edges:` -> `if not edge_list:`\n* indentation of tests `With loops in a digraph::`",
+    "created_at": "2017-06-28T07:15:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60984",
+    "user": "dcoudert"
+}
+```
 
 Something has changed in the tests for method `contract_edge`. Now we are loosing loops. I don't know why
 
@@ -701,9 +1489,20 @@ In `contract_edges`:
 * indentation of tests `With loops in a digraph::`
 
 
+
 ---
 
-Comment by zgershkoff created at 2017-06-28 07:42:57
+archive/issue_comments_060985.json:
+```json
+{
+    "body": "Replying to [comment:68 dcoudert]:\n> Something has changed in the tests for method `contract_edge`. Now we are loosing loops. I don't know why\n\nI think I put those tests in before I rewrote `contract_edge` to use `merge_vertices`. Maybe it's irrelevant to have those tests there now. Now that uses `merge_vertices`, it's dependent on #23290 to keep the loops. I should have been clearer about that, sorry.\n\n> In `contract_edges`:\n> *`if not edges:` -> `if not edge_list:`\n> * indentation of tests `With loops in a digraph::`\n\nYes, I see it now. I'll fix those shortly.",
+    "created_at": "2017-06-28T07:42:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60985",
+    "user": "zgershkoff"
+}
+```
 
 Replying to [comment:68 dcoudert]:
 > Something has changed in the tests for method `contract_edge`. Now we are loosing loops. I don't know why
@@ -717,23 +1516,56 @@ I think I put those tests in before I rewrote `contract_edge` to use `merge_vert
 Yes, I see it now. I'll fix those shortly.
 
 
+
 ---
 
-Comment by git created at 2017-06-28 17:58:39
+archive/issue_comments_060986.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2017-06-28T17:58:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60986",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by zgershkoff created at 2017-06-28 18:00:52
+archive/issue_comments_060987.json:
+```json
+{
+    "body": "I took the liberty of moving #23290 into this since it's closed. All tests pass now.",
+    "created_at": "2017-06-28T18:00:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60987",
+    "user": "zgershkoff"
+}
+```
 
 I took the liberty of moving #23290 into this since it's closed. All tests pass now.
 
 
+
 ---
 
-Comment by dcoudert created at 2017-06-28 20:13:03
+archive/issue_comments_060988.json:
+```json
+{
+    "body": "Right, better to rebase on top of #23290.\n\nIn method `contract_edge`, I suggest the following change. Do you agree ?\n\n```\n       if self.allows_loops() and (not self.has_edge(u, u) or self.allows_multiple_edges()):\n           # add loops\n           for (x, y, l) in self.edges_incident(v):\n               if set([x, y]) == set([u, v]):\n                   self.add_edge(u, u, l)\n```\n\n\nIn method `contract_edges`\n- the test `if len(set([len(e) for e in edges])) > 1:` is fun ;)\n- `if self.has_edge((u, v, label)):` -> `if self.has_edge(u, v, label):`. This is to avoid guessing the format in method `has_edge`.",
+    "created_at": "2017-06-28T20:13:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60988",
+    "user": "dcoudert"
+}
+```
 
 Right, better to rebase on top of #23290.
 
@@ -753,9 +1585,20 @@ In method `contract_edges`
 - `if self.has_edge((u, v, label)):` -> `if self.has_edge(u, v, label):`. This is to avoid guessing the format in method `has_edge`.
 
 
+
 ---
 
-Comment by zgershkoff created at 2017-06-28 20:51:43
+archive/issue_comments_060989.json:
+```json
+{
+    "body": "Replying to [comment:72 dcoudert]:\n> Right, better to rebase on top of #23290.\n> \n> In method `contract_edge`, I suggest the following change. Do you agree ?\n> {{{\n>        if self.allows_loops() and (not self.has_edge(u, u) or self.allows_multiple_edges()):\n>            # add loops\n>            for (x, y, l) in self.edges_incident(v):\n>                if set([x, y]) == set([u, v]):\n>                    self.add_edge(u, u, l)\n> }}}\nI think sage will fail silently if multiedges are off, but it makes sense in principle to check first. I changed the order of the tests because I figured checking a boolean with `self.allows_multiple_edges()` is probably faster than looking for an edge.\n> In method `contract_edges`\n> - the test `if len(set([len(e) for e in edges])) > 1:` is fun ;)\n> - `if self.has_edge((u, v, label)):` -> `if self.has_edge(u, v, label):`. This is to avoid guessing the format in method `has_edge`.\nThat also makes sense.",
+    "created_at": "2017-06-28T20:51:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60989",
+    "user": "zgershkoff"
+}
+```
 
 Replying to [comment:72 dcoudert]:
 > Right, better to rebase on top of #23290.
@@ -775,58 +1618,146 @@ I think sage will fail silently if multiedges are off, but it makes sense in pri
 That also makes sense.
 
 
+
 ---
 
-Comment by git created at 2017-06-28 20:52:05
+archive/issue_comments_060990.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2017-06-28T20:52:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60990",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by zgershkoff created at 2017-06-29 04:30:08
+archive/issue_comments_060991.json:
+```json
+{
+    "body": "It occurs to me that in `contract_edge`, loops will never be created unless there are already multiedges. Thus we only need to check if multiedges are allowed once when adding loops.",
+    "created_at": "2017-06-29T04:30:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60991",
+    "user": "zgershkoff"
+}
+```
 
 It occurs to me that in `contract_edge`, loops will never be created unless there are already multiedges. Thus we only need to check if multiedges are allowed once when adding loops.
 
 
+
 ---
 
-Comment by zgershkoff created at 2017-06-29 04:44:11
+archive/issue_comments_060992.json:
+```json
+{
+    "body": "Nevermind. A digraph can have two arcs in different directions between a pair of vertices and still have multiedges disabled, so contraction can create a loop. I suppose it's better like it is, since if there's already a loop at `u`, it will always be kept with its original label now.",
+    "created_at": "2017-06-29T04:44:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60992",
+    "user": "zgershkoff"
+}
+```
 
 Nevermind. A digraph can have two arcs in different directions between a pair of vertices and still have multiedges disabled, so contraction can create a loop. I suppose it's better like it is, since if there's already a loop at `u`, it will always be kept with its original label now.
 
 
+
 ---
 
-Comment by dcoudert created at 2017-06-29 11:12:26
+archive/issue_comments_060993.json:
+```json
+{
+    "body": "The patch looks good to me, but I'm wondering if we have taken all cases into account (functionality and/or tests)",
+    "created_at": "2017-06-29T11:12:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60993",
+    "user": "dcoudert"
+}
+```
 
 The patch looks good to me, but I'm wondering if we have taken all cases into account (functionality and/or tests)
 
 
+
 ---
 
-Comment by git created at 2017-06-29 23:26:31
+archive/issue_comments_060994.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2017-06-29T23:26:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60994",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by git created at 2017-06-29 23:34:36
+archive/issue_comments_060995.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2017-06-29T23:34:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60995",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by zgershkoff created at 2017-06-29 23:36:15
+archive/issue_comments_060996.json:
+```json
+{
+    "body": "I added tests for labeled edges, and for attempting to contract non-edges. I think that covers it.",
+    "created_at": "2017-06-29T23:36:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60996",
+    "user": "zgershkoff"
+}
+```
 
 I added tests for labeled edges, and for attempting to contract non-edges. I think that covers it.
 
 
+
 ---
 
-Comment by dcoudert created at 2017-07-01 19:59:53
+archive/issue_comments_060997.json:
+```json
+{
+    "body": "Final comments (sorry for that).\n\nFor method `contract_edge`:\n- at the top of the `generic_graph.py` file, could you ensure that the description of `contract_edge` is the same as in the method. I propose to put: `Contract an edge from `u` to `v``. Note that I use `Contract` and not `Contracts`.\n- Then in the method, split the first line to `Contract an edge from `u` to `v`` and then have a next paragraph with `This method returns silently if the edge does not exist.`\n\nFor method `contract_edges`:\n- at the top of the `generic_graph.py` file, for `contract_edges`: use `Contract` instead of `Contracts`\n- improve the alignment of paragraph `If `e` is an edge that is...`\n- In the `INPUT` block, `- ``edges`` - a list...` -> `- ``edges`` -- a list...`. You will certainly have to put the last word (edges) on the next line to be in 80 columns format.\n- In the `TESTS:` block, just before `With loops in a digraph::`, remove the empty `::` block. I was not able to build the documentation and it took me a while to understand that it was caused by this `::` stuff.\n- I'm not sure the empty line `....:` is useful. You can remove it.\n\nI hope it's the last round of corrections ;)",
+    "created_at": "2017-07-01T19:59:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60997",
+    "user": "dcoudert"
+}
+```
 
 Final comments (sorry for that).
 
@@ -844,30 +1775,74 @@ For method `contract_edges`:
 I hope it's the last round of corrections ;)
 
 
+
 ---
 
-Comment by git created at 2017-07-02 23:14:38
+archive/issue_comments_060998.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2017-07-02T23:14:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60998",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by git created at 2017-07-02 23:16:26
+archive/issue_comments_060999.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2017-07-02T23:16:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-60999",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by zgershkoff created at 2017-07-02 23:16:50
+archive/issue_comments_061000.json:
+```json
+{
+    "body": "Done. Thanks for walking me through it.",
+    "created_at": "2017-07-02T23:16:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-61000",
+    "user": "zgershkoff"
+}
+```
 
 Done. Thanks for walking me through it.
 
 
+
 ---
 
-Comment by dcoudert created at 2017-07-02 23:46:10
+archive/issue_comments_061001.json:
+```json
+{
+    "body": "You have used `from 'u' to 'v'` with `'` instead of ```. I think that ``` is more appropriate. It is nicer in the documentation and it avoids confusion with string.\n\nYou have to do the correction both at the top of the file and at the beginning of `contract_edge`.\n\nAfter that you can set the ticket to positive review (or I will do it later).\n\nBest,",
+    "created_at": "2017-07-02T23:46:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-61001",
+    "user": "dcoudert"
+}
+```
 
 You have used `from 'u' to 'v'` with `'` instead of ```. I think that ``` is more appropriate. It is nicer in the documentation and it avoids confusion with string.
 
@@ -878,43 +1853,109 @@ After that you can set the ticket to positive review (or I will do it later).
 Best,
 
 
+
 ---
 
-Comment by git created at 2017-07-03 00:04:13
+archive/issue_comments_061002.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2017-07-03T00:04:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-61002",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by zgershkoff created at 2017-07-03 00:39:40
+archive/issue_comments_061003.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2017-07-03T00:39:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-61003",
+    "user": "zgershkoff"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by zgershkoff created at 2017-07-03 00:39:40
+archive/issue_comments_061004.json:
+```json
+{
+    "body": "I can't personally verify that the documentation builds correctly (perhaps an error with the beta I have installed), but doctests pass, so I'll take your word for it. Thanks for the review.",
+    "created_at": "2017-07-03T00:39:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-61004",
+    "user": "zgershkoff"
+}
+```
 
 I can't personally verify that the documentation builds correctly (perhaps an error with the beta I have installed), but doctests pass, so I'll take your word for it. Thanks for the review.
 
 
+
 ---
 
-Comment by dcoudert created at 2017-07-03 03:17:50
+archive/issue_comments_061005.json:
+```json
+{
+    "body": "I checked and the documentation looks good. So we are done.",
+    "created_at": "2017-07-03T03:17:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-61005",
+    "user": "dcoudert"
+}
+```
 
 I checked and the documentation looks good. So we are done.
 
 
+
 ---
 
-Comment by vbraun created at 2017-08-14 22:39:39
+archive/issue_comments_061006.json:
+```json
+{
+    "body": "If you depend on a pre-git ticket then the release script will never figure out that the dependencies are merged FYI",
+    "created_at": "2017-08-14T22:39:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-61006",
+    "user": "vbraun"
+}
+```
 
 If you depend on a pre-git ticket then the release script will never figure out that the dependencies are merged FYI
 
 
+
 ---
 
-Comment by vbraun created at 2017-08-16 18:46:08
+archive/issue_comments_061007.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2017-08-16T18:46:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7304#issuecomment-61007",
+    "user": "vbraun"
+}
+```
 
 Resolution: fixed

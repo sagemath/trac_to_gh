@@ -1,11 +1,21 @@
 # Issue 6684: warnings when building reference manual in Sage 4.1.1.rc2
 
-Issue created by migration from https://trac.sagemath.org/ticket/6684
-
-Original creator: mvngu
-
-Original creation time: 2009-08-07 10:39:55
-
+archive/issues_006684.json:
+```json
+{
+    "body": "Assignee: tba\n\nCC:  jhpalmieri\n\nI received the following warning messages when building the reference manual under Sage 4.1.1.rc2:\n\n```\nWARNING: /scratch/mvngu/sandbox-2/sage-4.1.1.rc2/local/lib/python2.6/site-packages/sage/graphs/graph.py:docstring of sage.graphs.graph.GenericGraph.kirchhoff_matrix:56: (WARNING/2) Literal block ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/sandbox-2/sage-4.1.1.rc2/local/lib/python2.6/site-packages/sage/graphs/graph.py:docstring of sage.graphs.graph.GenericGraph.laplacian_matrix:56: (WARNING/2) Literal block ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/sandbox-2/sage-4.1.1.rc2/local/lib/python2.6/site-packages/sage/graphs/graph.py:docstring of sage.graphs.graph.Graph.clique_number:19: (WARNING/2) Inline literal start-string without end-string.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6684\n\n",
+    "created_at": "2009-08-07T10:39:55Z",
+    "labels": [
+        "documentation",
+        "major",
+        "bug"
+    ],
+    "title": "warnings when building reference manual in Sage 4.1.1.rc2",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6684",
+    "user": "mvngu"
+}
+```
 Assignee: tba
 
 CC:  jhpalmieri
@@ -19,23 +29,62 @@ WARNING: /scratch/mvngu/sandbox-2/sage-4.1.1.rc2/local/lib/python2.6/site-packag
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6684
+
+
+
+
 
 ---
+
+archive/issue_comments_054957.json:
+```json
+{
+    "body": "Attachment\n\nbased on Sage 4.1.1.rc2",
+    "created_at": "2009-08-07T10:59:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6684",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6684#issuecomment-54957",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
 based on Sage 4.1.1.rc2
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-08-07 16:15:24
+archive/issue_comments_054958.json:
+```json
+{
+    "body": "This fixes the warnings and the rendering of this page of the reference manual.  All tests pass.",
+    "created_at": "2009-08-07T16:15:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6684",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6684#issuecomment-54958",
+    "user": "jhpalmieri"
+}
+```
 
 This fixes the warnings and the rendering of this page of the reference manual.  All tests pass.
 
 
+
 ---
 
-Comment by mvngu created at 2009-08-11 23:20:04
+archive/issue_comments_054959.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-08-11T23:20:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6684",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6684#issuecomment-54959",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 2872: 3d graphics can't be saved to a file
 
-Issue created by migration from https://trac.sagemath.org/ticket/2872
-
-Original creator: was
-
-Original creation time: 2008-04-10 20:14:29
-
+archive/issues_002872.json:
+```json
+{
+    "body": "Assignee: was\n\nThe bug is described below.  To fix this and close this ticket, just slightly\nrefactor the code in sage/sage/plot/plot3d/base.pyx so that save to png on a 3d image\nsaves the tachyon rendered file, gives an sobj on an sobj or no extension, and \ngives an error on all other extension.   This will be all one gets initially.\n\nAnother *later* ticket should -- if possible -- make it possible to get the static\nimage from jmol (if possible).\n\n\n```\nOn Thu, Apr 10, 2008 at 11:42 AM, Hector Villafuerte wrote:\n> \n>  Hi,\n>  I noticed the following (inconsistent?) behavior: saving 2D plots\n>  works as expected (a graphic file is stored), but saving 3D plots\n>  gives .sobj files instead (see sample code below). Is there a way to\n>  save 3D plots from the Notebook? By the way, I know how to save them\n>  using jMol's GUI (as reached from Sage terminal), but the idea is to\n>  be able to script this.\n>\n\nThis is a bug.  There's currently no easy nice way to script\nsaving 3d graphics using Tachyon.   If you do the following\n\n  sage: p = point3d([(k,k^2,0) for k in [0..10]], size=5, viewer='tachyon')\n  sage: p.show(filename='a', viewer='tachyon')\n\nthen the file a.png will be produced but unfortunately a browser window\nwill also appear showing this file.\n\n\n>  --\n>   Hector\n>  \n>  \n>  sage: p = point([(k,k^2) for k in [0..10]])\n>  sage: p.save(DATA+'plot2d.png')\n>  sage: type(p)\n>  <class 'sage.plot.plot.Graphics'>\n>  \n>  sage: p = point3d([(k,k^2,0) for k in [0..10]], size=5)\n>  sage: p.save(DATA+'plot3d-1.png')\n>  sage: type(p)\n>  <class 'sage.plot.plot3d.base.Graphics3dGroup'>\n>  \n>  sage: p = point3d([(k,k^2,0) for k in [0..10]], size=5, viewer='tachyon')\n>  sage: p.save(DATA+'plot3d-2.png')\n>  sage: type(p)\n>  <class 'sage.plot.plot3d.base.Graphics3dGroup'>\n\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2872\n\n",
+    "created_at": "2008-04-10T20:14:29Z",
+    "labels": [
+        "graphics",
+        "major",
+        "bug"
+    ],
+    "title": "3d graphics can't be saved to a file",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2872",
+    "user": "was"
+}
+```
 Assignee: was
 
 The bug is described below.  To fix this and close this ticket, just slightly
@@ -62,10 +72,25 @@ will also appear showing this file.
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2872
+
+
+
+
 
 ---
 
-Comment by was created at 2009-09-10 15:24:32
+archive/issue_comments_019707.json:
+```json
+{
+    "body": "Another nice description of the problem by Jason Grout:\n\n```\nThis has come up before---p.save() for 2d graphics tries\nto save an image.  p.save() for 3d graphics doesn't try to save an\nimage.  It's an inconsistency.  One way to get fix this is to override\nthe 3d graphics save routine to do what the 2d graphics save routine\ndoes---look at the file extension and if it is a recognized image\nextension, save the image; otherwise, save a Sage sobj pickle.  This is\nalso why 3d things don't work with animate().  animate() expects to be\nable to do p.save('test.png') and have a graphic image test.png saved\nout to disk.\n\nYou can save a 3d graphics by hand by plotting in jmol and either\nselecting \"Get Image\" next to the image, which converts to jpg, or if\nyou're doing this from the command line, you can select File|Export from\nthe java viewer that pops up.  That's rather laborious for creating an\nanimation, though.\n\nTo get an image using tachyon, use show() with filename and viewer\nparameters:\n\nsage: show(sphere(), filename='test',viewer='tachyon')\n\nYou can use that trick to make a .save() method for 3d graphics (maybe\nTransformGroup class or something?) that behaves like the 2d graphics\nsave.  Then animate should work.\n\nI don't have time to do this right now, but I think this should give\nsomeone enough information to be able to fix things if they are interested.\n\nThanks,\n```\n",
+    "created_at": "2009-09-10T15:24:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2872",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2872#issuecomment-19707",
+    "user": "was"
+}
+```
 
 Another nice description of the problem by Jason Grout:
 
@@ -103,16 +128,38 @@ Thanks,
 
 
 
+
 ---
 
-Comment by wcauchois created at 2010-01-17 02:33:19
+archive/issue_comments_019708.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-01-17T02:33:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2872",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2872#issuecomment-19708",
+    "user": "wcauchois"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by wcauchois created at 2010-01-17 02:33:19
+archive/issue_comments_019709.json:
+```json
+{
+    "body": "The attached patch implements this feature as described. When a filename ending in an image format extension is passed to save (several formats are supported through PIL), Tachyon is used to render the Graphics3d.\n\nI had to factor some code out of show() into _process_viewing_options(), but hopefully that won't break anything (and I think it makes show() much cleaner).\n\nI think this is ready for review.",
+    "created_at": "2010-01-17T02:33:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2872",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2872#issuecomment-19709",
+    "user": "wcauchois"
+}
+```
 
 The attached patch implements this feature as described. When a filename ending in an image format extension is passed to save (several formats are supported through PIL), Tachyon is used to render the Graphics3d.
 
@@ -121,58 +168,148 @@ I had to factor some code out of show() into _process_viewing_options(), but hop
 I think this is ready for review.
 
 
+
 ---
 
-Comment by timdumol created at 2010-01-17 19:55:40
+archive/issue_comments_019710.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-01-17T19:55:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2872",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2872#issuecomment-19710",
+    "user": "timdumol"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by timdumol created at 2010-01-17 19:55:40
+archive/issue_comments_019711.json:
+```json
+{
+    "body": "Works perfectly, but it may be worth adding a short docstring for `_process_viewing_options()` for developers. Also, PIL supports JPEG, so perhaps that should be added as well. '.tif' should also be accepted. It may be worth nothing that PIL requires libjpeg and libtiff to be present when compiled in order to support JPEG and TIFF.",
+    "created_at": "2010-01-17T19:55:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2872",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2872#issuecomment-19711",
+    "user": "timdumol"
+}
+```
 
 Works perfectly, but it may be worth adding a short docstring for `_process_viewing_options()` for developers. Also, PIL supports JPEG, so perhaps that should be added as well. '.tif' should also be accepted. It may be worth nothing that PIL requires libjpeg and libtiff to be present when compiled in order to support JPEG and TIFF.
 
 
+
 ---
+
+archive/issue_comments_019712.json:
+```json
+{
+    "body": "Attachment\n\nbased on sage 4.3.1.rc0",
+    "created_at": "2010-01-19T00:00:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2872",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2872#issuecomment-19712",
+    "user": "wcauchois"
+}
+```
 
 Attachment
 
 based on sage 4.3.1.rc0
 
 
+
 ---
 
-Comment by wcauchois created at 2010-01-19 00:01:35
+archive/issue_comments_019713.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-01-19T00:01:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2872",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2872#issuecomment-19713",
+    "user": "wcauchois"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by robertwb created at 2010-01-20 08:45:46
+archive/issue_comments_019714.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-01-20T08:45:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2872",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2872#issuecomment-19714",
+    "user": "robertwb"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by robertwb created at 2010-01-20 08:45:46
+archive/issue_comments_019715.json:
+```json
+{
+    "body": "Nice. Followup patch looks good and works great for me.",
+    "created_at": "2010-01-20T08:45:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2872",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2872#issuecomment-19715",
+    "user": "robertwb"
+}
+```
 
 Nice. Followup patch looks good and works great for me.
 
 
+
 ---
 
-Comment by robertwb created at 2010-01-20 08:57:22
+archive/issue_comments_019716.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_work.",
+    "created_at": "2010-01-20T08:57:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2872",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2872#issuecomment-19716",
+    "user": "robertwb"
+}
+```
 
 Changing status from positive_review to needs_work.
 
 
+
 ---
 
-Comment by robertwb created at 2010-01-20 08:57:22
+archive/issue_comments_019717.json:
+```json
+{
+    "body": "Trivial failure in sage/plot/plot3d/base.pyx\n\n\n```\n    sage: G.texture_set()\nExpected:\n    set([Texture(texture..., yellow, ffff00), Texture(texture..., red, ff0000)])\nGot:\n    set([Texture(texture816, red, ff0000), Texture(texture817, yellow, ffff00)])\n```\n",
+    "created_at": "2010-01-20T08:57:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2872",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2872#issuecomment-19717",
+    "user": "robertwb"
+}
+```
 
 Trivial failure in sage/plot/plot3d/base.pyx
 
@@ -187,9 +324,20 @@ Got:
 
 
 
+
 ---
 
-Comment by wcauchois created at 2010-01-20 09:29:11
+archive/issue_comments_019718.json:
+```json
+{
+    "body": "Replying to [comment:6 robertwb]:\n> Trivial failure in sage/plot/plot3d/base.pyx\n> \n> {{{\n>     sage: G.texture_set()\n> Expected:\n>     set([Texture(texture..., yellow, ffff00), Texture(texture..., red, ff0000)])\n> Got:\n>     set([Texture(texture816, red, ff0000), Texture(texture817, yellow, ffff00)])\n> }}}\n\nThis doctest failure has been in base.pyx for a long time. I fixed it in #7985. It is not related to the changes in this ticket.\n\nThanks for being a thorough reviewer :).",
+    "created_at": "2010-01-20T09:29:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2872",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2872#issuecomment-19718",
+    "user": "wcauchois"
+}
+```
 
 Replying to [comment:6 robertwb]:
 > Trivial failure in sage/plot/plot3d/base.pyx
@@ -207,30 +355,74 @@ This doctest failure has been in base.pyx for a long time. I fixed it in #7985. 
 Thanks for being a thorough reviewer :).
 
 
+
 ---
 
-Comment by timdumol created at 2010-01-20 11:39:31
+archive/issue_comments_019719.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-01-20T11:39:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2872",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2872#issuecomment-19719",
+    "user": "timdumol"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by timdumol created at 2010-01-20 11:39:31
+archive/issue_comments_019720.json:
+```json
+{
+    "body": "It passes for me in sage-4.3.rc1. I'm putting this back to positive review.",
+    "created_at": "2010-01-20T11:39:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2872",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2872#issuecomment-19720",
+    "user": "timdumol"
+}
+```
 
 It passes for me in sage-4.3.rc1. I'm putting this back to positive review.
 
 
+
 ---
 
-Comment by timdumol created at 2010-01-20 11:39:36
+archive/issue_comments_019721.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-01-20T11:39:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2872",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2872#issuecomment-19721",
+    "user": "timdumol"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-10 14:57:11
+archive/issue_comments_019722.json:
+```json
+{
+    "body": "Applied to 4.3.2, the patch yields\n\n\n```\nFile \"/mnt/usb1/scratch/release/sage-4.3.3.alpha0/devel/sage/sage/plot/plot3d/base.pyx\", line 1395:\n    sage: G.texture_set()\nExpected:\n    set([Texture(texture..., yellow, ffff00), Texture(texture..., red, ff0000)])\nGot:\n    set([Texture(texture816, red, ff0000), Texture(texture817, yellow, ffff00)])\n```\n",
+    "created_at": "2010-02-10T14:57:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2872",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2872#issuecomment-19722",
+    "user": "mpatel"
+}
+```
 
 Applied to 4.3.2, the patch yields
 
@@ -246,9 +438,20 @@ Got:
 
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-10 14:58:37
+archive/issue_comments_019723.json:
+```json
+{
+    "body": "This is on sage.math.  The patch queue:\n\n```\ntrac_8219.patch\ntrac_3683-upgrade_moinmoin.patch\ntrac_8183-French_pdf.patch\ntrac_8190-docbuild.patch\ntrac_8184-eclib.patch\ntrac_8184-indentation.patch\ntrac_8155.patch\ntrac_8124-selmer-nf.review.patch\ntrac_7575.patch\ntrac_7575-followup.patch\ntrac_8189-hg.patch\ntrac_7935.patch\ntrac_7935b.2.patch\ntrac_6296.patch\ntrac_6296-part2.patch\ntrac6942_jordan.patch\ntrac6942_jordan_tests.patch\ntrac_6942-reviewer.patch\ntrac_8128-latex_cell_unicode.patch\ntrac_7313-multiline.patch\ntrac_8203-doc.patch\ntrac_8206_developer-doc.patch\ntrac_7944-dev-guide.patch\ntrac-8211.patch\ntrac_8044-categories_finite_groups-nt.patch\ntrac_8215_empty_word-sl.patch\ntrac_8186_length_handling-sl.patch\ntrac_8186_minor_doc_changes-abm.patch\ntrac_8140-sturmian-sl.patch\ntrac_8140-doc_fixes-abm.patch\ntrac_8140_cf-arg-sl.patch\ntrac_8093_palindromes_prefixes-abm.patch\ntrac_8093_doc_fixes-sl.patch\ntrac_7978_crystal_cleanup-as.2.patch\ntrac_6775-disjoint_set-sl.patch\n7580_fixes_and_extensions_total.patch\ntrac_8120-uniquerep_hash-fh.patch\ntrac_8212-minimal_weight_poly_defining_GF2n.patch\n6199-fast-int-mul-all.patch\ntrac_8188.patch\ntrac_8138-one_column_index-v2.patch\ntrac_8209-mathtt.3.patch\ntrac_8199-dev-guide.patch\ntrac_7947.patch\ntrac_7793-zorder-disk.patch\ntrac_4838-vd.patch\ntrac_8082.patch\ntrac-8004-region_plot.patch\ntrac_6878_exclude.patch\ntrac_2872.patch                  # You are here!\n8185-numerical-noise.patch\ntrac_8180-kpsewhich.patch\n```\n",
+    "created_at": "2010-02-10T14:58:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2872",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2872#issuecomment-19723",
+    "user": "mpatel"
+}
+```
 
 This is on sage.math.  The patch queue:
 
@@ -309,16 +512,38 @@ trac_8180-kpsewhich.patch
 
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-10 14:58:37
+archive/issue_comments_019724.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_work.",
+    "created_at": "2010-02-10T14:58:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2872",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2872#issuecomment-19724",
+    "user": "mpatel"
+}
+```
 
 Changing status from positive_review to needs_work.
 
 
+
 ---
 
-Comment by wcauchois created at 2010-02-10 23:10:15
+archive/issue_comments_019725.json:
+```json
+{
+    "body": "Replying to [comment:10 mpatel]:\n> Applied to 4.3.2, the patch yields\n> \n> {{{\n> File \"/mnt/usb1/scratch/release/sage-4.3.3.alpha0/devel/sage/sage/plot/plot3d/base.pyx\", line 1395:\n>     sage: G.texture_set()\n> Expected:\n>     set([Texture(texture..., yellow, ffff00), Texture(texture..., red, ff0000)])\n> Got:\n>     set([Texture(texture816, red, ff0000), Texture(texture817, yellow, ffff00)])\n> }}}\n\nI don't get it, wasn't #7985 merged? I get no such doctest failure with Sage 4.3.1, which I downloaded from the website.",
+    "created_at": "2010-02-10T23:10:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2872",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2872#issuecomment-19725",
+    "user": "wcauchois"
+}
+```
 
 Replying to [comment:10 mpatel]:
 > Applied to 4.3.2, the patch yields
@@ -335,16 +560,38 @@ Replying to [comment:10 mpatel]:
 I don't get it, wasn't #7985 merged? I get no such doctest failure with Sage 4.3.1, which I downloaded from the website.
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-10 23:28:44
+archive/issue_comments_019726.json:
+```json
+{
+    "body": "The \"new\" failure seems to be in a different place (line 1395 vs. 758).",
+    "created_at": "2010-02-10T23:28:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2872",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2872#issuecomment-19726",
+    "user": "mpatel"
+}
+```
 
 The "new" failure seems to be in a different place (line 1395 vs. 758).
 
 
+
 ---
 
-Comment by wcauchois created at 2010-02-11 00:37:12
+archive/issue_comments_019727.json:
+```json
+{
+    "body": "Replying to [comment:13 mpatel]:\n> The \"new\" failure seems to be in a different place (line 1395 vs. 758).\n\nI see. So there's another nefarious texture_set() doctest that isn't consistent across runs. I'll open a ticket and fix this one too.",
+    "created_at": "2010-02-11T00:37:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2872",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2872#issuecomment-19727",
+    "user": "wcauchois"
+}
+```
 
 Replying to [comment:13 mpatel]:
 > The "new" failure seems to be in a different place (line 1395 vs. 758).
@@ -352,16 +599,38 @@ Replying to [comment:13 mpatel]:
 I see. So there's another nefarious texture_set() doctest that isn't consistent across runs. I'll open a ticket and fix this one too.
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-11 00:41:27
+archive/issue_comments_019728.json:
+```json
+{
+    "body": "If the fix is similar to that at #7985, feel free to add the patch here and add a comment requesting a review.",
+    "created_at": "2010-02-11T00:41:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2872",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2872#issuecomment-19728",
+    "user": "mpatel"
+}
+```
 
 If the fix is similar to that at #7985, feel free to add the patch here and add a comment requesting a review.
 
 
+
 ---
 
-Comment by wcauchois created at 2010-02-11 01:12:01
+archive/issue_comments_019729.json:
+```json
+{
+    "body": "Replying to [comment:15 mpatel]:\n> If the fix is similar to that at #7985, feel free to add the patch here and add a comment requesting a review.\n\nHmm... that's a good idea. But its too late. I already wasted one of our precious ticket numbers on this tiny tiny patch... see #8235.\n\nDo you think you could review it real quick?",
+    "created_at": "2010-02-11T01:12:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2872",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2872#issuecomment-19729",
+    "user": "wcauchois"
+}
+```
 
 Replying to [comment:15 mpatel]:
 > If the fix is similar to that at #7985, feel free to add the patch here and add a comment requesting a review.
@@ -371,22 +640,55 @@ Hmm... that's a good idea. But its too late. I already wasted one of our preciou
 Do you think you could review it real quick?
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-11 10:11:32
+archive/issue_comments_019730.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-02-11T10:11:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2872",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2872#issuecomment-19730",
+    "user": "mpatel"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-11 10:11:43
+archive/issue_comments_019731.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-02-11T10:11:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2872",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2872#issuecomment-19731",
+    "user": "mpatel"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-11 15:03:54
+archive/issue_comments_019732.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-02-11T15:03:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2872",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2872#issuecomment-19732",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed

@@ -1,33 +1,82 @@
 # Issue 6132: cmp for number field elements
 
-Issue created by migration from https://trac.sagemath.org/ticket/6132
-
-Original creator: robertwb
-
-Original creation time: 2009-05-26 18:20:57
-
+archive/issues_006132.json:
+```json
+{
+    "body": "Assignee: somebody\n\nSee discussion at http://groups.google.com/group/sage-nt/browse_thread/thread/422606e40805d5d0?hl=en\n\nNote that `cmp(list(a), list(b))` can be slow...\n\nIssue created by migration from https://trac.sagemath.org/ticket/6132\n\n",
+    "created_at": "2009-05-26T18:20:57Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "bug"
+    ],
+    "title": "cmp for number field elements",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6132",
+    "user": "robertwb"
+}
+```
 Assignee: somebody
 
 See discussion at http://groups.google.com/group/sage-nt/browse_thread/thread/422606e40805d5d0?hl=en
 
 Note that `cmp(list(a), list(b))` can be slow...
 
+Issue created by migration from https://trac.sagemath.org/ticket/6132
+
+
+
+
 
 ---
 
-Comment by rlm created at 2009-05-26 19:13:55
+archive/issue_comments_048974.json:
+```json
+{
+    "body": "Minor, but I just fixed two of these elsewhere: it's spelled \"consistent\"",
+    "created_at": "2009-05-26T19:13:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6132",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6132#issuecomment-48974",
+    "user": "rlm"
+}
+```
 
 Minor, but I just fixed two of these elsewhere: it's spelled "consistent"
 
 
+
 ---
+
+archive/issue_comments_048975.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-05-26T19:16:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6132",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6132#issuecomment-48975",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-05-30 08:38:41
+archive/issue_comments_048976.json:
+```json
+{
+    "body": "The patch applies with some fuzz to 4.0.rc2, but I'm seeing a bunch of doctest failures in sage/rings:\n\n\n```\nThe following tests failed:\n\n\n\tsage -t  \"devel/sage-main/sage/rings/number_field/number_field.py\"\n\tsage -t  \"devel/sage-main/sage/rings/number_field/number_field_rel.py\"\n\tsage -t  \"devel/sage-main/sage/rings/number_field/order.py\"\n\tsage -t  \"devel/sage-main/sage/rings/number_field/galois_group.py\"\n\tsage -t  \"devel/sage-main/sage/rings/number_field/number_field_element.pyx\"\n\tsage -t  \"devel/sage-main/sage/rings/number_field/number_field_ideal.py\"\n\tsage -t  \"devel/sage-main/sage/rings/number_field/number_field_ideal_rel.py\"\n\tsage -t  \"devel/sage-main/sage/rings/number_field/unit_group.py\"\n\tsage -t  \"devel/sage-main/sage/rings/polynomial/complex_roots.py\"\n\tsage -t  \"devel/sage-main/sage/rings/polynomial/polynomial_element.pyx\"\n```\n",
+    "created_at": "2009-05-30T08:38:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6132",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6132#issuecomment-48976",
+    "user": "AlexGhitza"
+}
+```
 
 The patch applies with some fuzz to 4.0.rc2, but I'm seeing a bunch of doctest failures in sage/rings:
 
@@ -50,9 +99,20 @@ The following tests failed:
 
 
 
+
 ---
 
-Comment by nbruin created at 2010-01-28 18:08:03
+archive/issue_comments_048977.json:
+```json
+{
+    "body": "In Python 3, \"greater than\" etc. comparisons between objects where no natural ordering exist are supposed to raise a \"TypeError\"\n\nAlready, comparing complex numbers in Python 2.6.2 raises\n`TypeError: no ordering relation is defined for complex numbers`\n\nChanging this will probably lead to even more doctest failures, but brings us closer to Python's way of doing things and to mathematical sanity.",
+    "created_at": "2010-01-28T18:08:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6132",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6132#issuecomment-48977",
+    "user": "nbruin"
+}
+```
 
 In Python 3, "greater than" etc. comparisons between objects where no natural ordering exist are supposed to raise a "TypeError"
 
@@ -62,66 +122,165 @@ Already, comparing complex numbers in Python 2.6.2 raises
 Changing this will probably lead to even more doctest failures, but brings us closer to Python's way of doing things and to mathematical sanity.
 
 
+
 ---
 
-Comment by nbruin created at 2010-01-28 18:08:03
+archive/issue_comments_048978.json:
+```json
+{
+    "body": "Changing assignee from somebody to nbruin.",
+    "created_at": "2010-01-28T18:08:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6132",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6132#issuecomment-48978",
+    "user": "nbruin"
+}
+```
 
 Changing assignee from somebody to nbruin.
 
 
+
 ---
 
-Comment by nbruin created at 2010-01-28 19:03:51
+archive/issue_comments_048979.json:
+```json
+{
+    "body": "Remove assignee nbruin.",
+    "created_at": "2010-01-28T19:03:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6132",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6132#issuecomment-48979",
+    "user": "nbruin"
+}
+```
 
 Remove assignee nbruin.
 
 
+
 ---
 
-Comment by robertwb created at 2010-01-28 19:05:18
+archive/issue_comments_048980.json:
+```json
+{
+    "body": "Note that to follow this convention, we have to use __richcmp__ as == and != should still work for unordered elements.",
+    "created_at": "2010-01-28T19:05:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6132",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6132#issuecomment-48980",
+    "user": "robertwb"
+}
+```
 
 Note that to follow this convention, we have to use __richcmp__ as == and != should still work for unordered elements.
 
 
+
 ---
 
-Comment by kcrisman created at 2011-02-07 15:43:08
+archive/issue_comments_048981.json:
+```json
+{
+    "body": "Apparently related to #7160 and #10064, see [this sage-devel discussion](http://groups.google.com/group/sage-support/browse_thread/thread/28bbd04a78dadb57/01168722573ff736).",
+    "created_at": "2011-02-07T15:43:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6132",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6132#issuecomment-48981",
+    "user": "kcrisman"
+}
+```
 
 Apparently related to #7160 and #10064, see [this sage-devel discussion](http://groups.google.com/group/sage-support/browse_thread/thread/28bbd04a78dadb57/01168722573ff736).
 
 
+
 ---
 
-Comment by was created at 2011-03-21 01:17:06
+archive/issue_comments_048982.json:
+```json
+{
+    "body": "See also #9572.",
+    "created_at": "2011-03-21T01:17:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6132",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6132#issuecomment-48982",
+    "user": "was"
+}
+```
 
 See also #9572.
 
 
+
 ---
 
-Comment by kcrisman created at 2011-03-21 12:50:39
+archive/issue_comments_048983.json:
+```json
+{
+    "body": "Replying to [comment:8 was]:\n> See also #9572. \nThat is a SageNB release ticket.  ?",
+    "created_at": "2011-03-21T12:50:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6132",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6132#issuecomment-48983",
+    "user": "kcrisman"
+}
+```
 
 Replying to [comment:8 was]:
 > See also #9572. 
 That is a SageNB release ticket.  ?
 
 
+
 ---
 
-Comment by was created at 2011-12-20 06:54:49
+archive/issue_comments_048984.json:
+```json
+{
+    "body": "See #7160 for a related ticket/discussion.",
+    "created_at": "2011-12-20T06:54:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6132",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6132#issuecomment-48984",
+    "user": "was"
+}
+```
 
 See #7160 for a related ticket/discussion.
 
 
+
 ---
 
-Comment by mhansen created at 2013-07-22 15:02:22
+archive/issue_comments_048985.json:
+```json
+{
+    "body": "I think we can close this as a duplicate of those other tickets now that they are merged.",
+    "created_at": "2013-07-22T15:02:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6132",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6132#issuecomment-48985",
+    "user": "mhansen"
+}
+```
 
 I think we can close this as a duplicate of those other tickets now that they are merged.
 
 
+
 ---
 
-Comment by mhansen created at 2013-07-22 15:02:22
+archive/issue_comments_048986.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2013-07-22T15:02:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6132",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6132#issuecomment-48986",
+    "user": "mhansen"
+}
+```
 
 Resolution: duplicate

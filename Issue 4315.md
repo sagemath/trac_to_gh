@@ -1,11 +1,21 @@
 # Issue 4315: symbolic computing is terribly slow
 
-Issue created by migration from https://trac.sagemath.org/ticket/4315
-
-Original creator: zimmerma
-
-Original creation time: 2008-10-17 19:13:23
-
+archive/issues_004315.json:
+```json
+{
+    "body": "Assignee: burcin\n\nCC:  zimmerma\n\nComputing the 10th derivative of x<sup>(x</sup>x) in Sage is terribly slow:\n\n```\nbash-3.2$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.1.4, Release Date: 2008-10-16                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: time a = diff(x^(x^x), x, 10)\nCPU times: user 1.71 s, sys: 0.08 s, total: 1.80 s\nWall time: 17.69 s\n```\n\nIn comparison with Mathemagix I get:\n\n```\nbash-3.2$ time ./mmxlight/build/mmx-light \n--------------------------------------------------------------\n--------------------------------------------------------------\n1] use \"symbolix\"\n2] a = derive (x^x^x, x^^10);\n3] quit\n|:*)          Welcome to Mathemagix-light 0.4             (*:|\n|  This software falls under the GNU General Public License  |\n|          It comes without any warranty whatsoever          |\n|------------------------------------------------------------|\n|                    (c) 2001--2008 by                       |\n|           Joris van der Hoeven, Gregoire Lecerf,           |\n|        Bernard Mourrain, Olivier Ruatta and others         |\nreal    0m10.021s\nuser    0m0.339s\nsys     0m0.052s\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4315\n\n",
+    "created_at": "2008-10-17T19:13:23Z",
+    "labels": [
+        "calculus",
+        "major",
+        "bug"
+    ],
+    "title": "symbolic computing is terribly slow",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4315",
+    "user": "zimmerma"
+}
+```
 Assignee: burcin
 
 CC:  zimmerma
@@ -45,10 +55,25 @@ sys     0m0.052s
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4315
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2008-10-17 21:24:12
+archive/issue_comments_031586.json:
+```json
+{
+    "body": "Hi Paul,\n\nThis is certainly much better with the use of Pynac which will (hopefully) be in 3.2:\n\n\n```\nsage: x = var('x',ns=1)\nsage: %time a = (x^(x^x)).diff(x,10)\nCPU times: user 0.68 s, sys: 0.00 s, total: 0.68 s\nWall time: 0.71 s\n```\n",
+    "created_at": "2008-10-17T21:24:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4315",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4315#issuecomment-31586",
+    "user": "mhansen"
+}
+```
 
 Hi Paul,
 
@@ -64,9 +89,20 @@ Wall time: 0.71 s
 
 
 
+
 ---
 
-Comment by jason created at 2008-10-18 07:09:19
+archive/issue_comments_031587.json:
+```json
+{
+    "body": "For comparison, on sage.math, mathematica gives:\n\n\n```\nIn[1]:= Timing[D[x^(x^x), {x, 10}];]\n\nOut[1]= {0.164011, Null}\n```\n\n\nwhile pynac gives:\n\n\n```\nsage: %timeit a=(x**(x**x)).diff(x,10)\n10 loops, best of 3: 609 ms per loop\n```\n",
+    "created_at": "2008-10-18T07:09:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4315",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4315#issuecomment-31587",
+    "user": "jason"
+}
+```
 
 For comparison, on sage.math, mathematica gives:
 
@@ -88,16 +124,38 @@ sage: %timeit a=(x**(x**x)).diff(x,10)
 
 
 
+
 ---
 
-Comment by zimmerma created at 2008-10-18 07:53:41
+archive/issue_comments_031588.json:
+```json
+{
+    "body": "great, Pynac seems indeed much faster. I thus wait for 3.2.",
+    "created_at": "2008-10-18T07:53:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4315",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4315#issuecomment-31588",
+    "user": "zimmerma"
+}
+```
 
 great, Pynac seems indeed much faster. I thus wait for 3.2.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-18 09:03:16
+archive/issue_comments_031589.json:
+```json
+{
+    "body": "Yep, closed since the main pynac ticket (#3872) has been merged.\n\nCheers,\n\nMichael",
+    "created_at": "2008-10-18T09:03:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4315",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4315#issuecomment-31589",
+    "user": "mabshoff"
+}
+```
 
 Yep, closed since the main pynac ticket (#3872) has been merged.
 
@@ -106,8 +164,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-18 09:03:16
+archive/issue_comments_031590.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-10-18T09:03:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4315",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4315#issuecomment-31590",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

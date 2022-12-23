@@ -1,11 +1,21 @@
 # Issue 5890: clean up schemes/elliptic_curves/ell_generic.py
 
-Issue created by migration from https://trac.sagemath.org/ticket/5890
-
-Original creator: AlexGhitza
-
-Original creation time: 2009-04-24 23:43:37
-
+archive/issues_005890.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  was cremona\n\nKeywords: elliptic curve field\n\nAs noted at #5765, `ell_generic.py` has some functions that do not make sense over a general ring and should rather be moved down to `ell_field.py` or one of its descendants.\n\nNote also William's comment from #5765: I think it would be nice to be able to implement the elliptic curve factorization method (ECM) without having to use this hack:\n\n\n```\nR = Zmod(N)\nR.is_field = lambda: True\nE = EllipticCurve(R, [-1,0])\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5890\n\n",
+    "created_at": "2009-04-24T23:43:37Z",
+    "labels": [
+        "number theory",
+        "major",
+        "bug"
+    ],
+    "title": "clean up schemes/elliptic_curves/ell_generic.py",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5890",
+    "user": "AlexGhitza"
+}
+```
 Assignee: was
 
 CC:  was cremona
@@ -25,19 +35,45 @@ E = EllipticCurve(R, [-1,0])
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5890
+
+
+
+
 
 ---
 
-Comment by AlexGhitza created at 2009-04-25 05:07:29
+archive/issue_comments_046570.json:
+```json
+{
+    "body": "For the record, to understand William's comment have a look at line 572 of `tests/book_stein_ent.py`, where he implements ECM and uses this hack.\n\nHowever, his function works for me in 3.4.1, so I think it's already been fixed.",
+    "created_at": "2009-04-25T05:07:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5890",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5890#issuecomment-46570",
+    "user": "AlexGhitza"
+}
+```
 
 For the record, to understand William's comment have a look at line 572 of `tests/book_stein_ent.py`, where he implements ECM and uses this hack.
 
 However, his function works for me in 3.4.1, so I think it's already been fixed.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-04-25 05:08:18
+archive/issue_comments_046571.json:
+```json
+{
+    "body": "Replying to [comment:1 AlexGhitza]:\n> For the record, to understand William's comment have a look at line 572 of `tests/book_stein_ent.py`, where he implements ECM and uses this hack.\n> \n> However, his function works for me in 3.4.1, so I think it's already been fixed.\n> \n I mean of course that it works for me in 3.4.1 without the hackish line that fools Sage into thinking that R is a field.",
+    "created_at": "2009-04-25T05:08:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5890",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5890#issuecomment-46571",
+    "user": "AlexGhitza"
+}
+```
 
 Replying to [comment:1 AlexGhitza]:
 > For the record, to understand William's comment have a look at line 572 of `tests/book_stein_ent.py`, where he implements ECM and uses this hack.
@@ -47,9 +83,20 @@ Replying to [comment:1 AlexGhitza]:
  I mean of course that it works for me in 3.4.1 without the hackish line that fools Sage into thinking that R is a field.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-04-25 05:15:46
+archive/issue_comments_046572.json:
+```json
+{
+    "body": "The attached patch does some cleaning up, and it depends on #5765.\n\nIt moves all the twists-related methods from `ell_generic.py` to `ell_field.py`, as well as the alias `base_field = base_ring`.\n\nIt also makes `change_ring` into an alias for `base_extend`, since the two have the exact same functionality and equivalent code.\n\nLastly, the standalone function `Hasse_bounds` is moved from `ell_generic.py` to `schemes/plane_curves/projective_curve.py`, which is a more natural place for it.\n\nThere are more things to do, but they are issues with the generic code for curves rather than the code for elliptic curves, so I think they should be fixed in `schemes/plane_curves` instead.  I'll be looking into that soon.",
+    "created_at": "2009-04-25T05:15:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5890",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5890#issuecomment-46572",
+    "user": "AlexGhitza"
+}
+```
 
 The attached patch does some cleaning up, and it depends on #5765.
 
@@ -62,35 +109,92 @@ Lastly, the standalone function `Hasse_bounds` is moved from `ell_generic.py` to
 There are more things to do, but they are issues with the generic code for curves rather than the code for elliptic curves, so I think they should be fixed in `schemes/plane_curves` instead.  I'll be looking into that soon.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-04-25 05:15:46
+archive/issue_comments_046573.json:
+```json
+{
+    "body": "Changing assignee from was to AlexGhitza.",
+    "created_at": "2009-04-25T05:15:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5890",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5890#issuecomment-46573",
+    "user": "AlexGhitza"
+}
+```
 
 Changing assignee from was to AlexGhitza.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-04-25 05:15:46
+archive/issue_comments_046574.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-04-25T05:15:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5890",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5890#issuecomment-46574",
+    "user": "AlexGhitza"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-04-25 05:16:24
+archive/issue_comments_046575.json:
+```json
+{
+    "body": "depends on the latest patch at #5765",
+    "created_at": "2009-04-25T05:16:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5890",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5890#issuecomment-46575",
+    "user": "AlexGhitza"
+}
+```
 
 depends on the latest patch at #5765
 
 
+
 ---
+
+archive/issue_comments_046576.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-04-25T05:26:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5890",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5890#issuecomment-46576",
+    "user": "AlexGhitza"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by cremona created at 2009-04-29 11:39:46
+archive/issue_comments_046577.json:
+```json
+{
+    "body": "Review: first of all, this is just moving code around, all perfectly sensible (lots of stuff moved down from ell_generic to ell_field, and Hasse_bound function moved off to plane curves (where I should have put it in the first place).\n\nI applied first 12097.patch (from #5919) then trac_5765-rebased.patch (from #5765) and then trac_5890.patch (from here), all successfully.\n\nDoctests in schemes/plane_curves and schemes/elliptic_curves pass.  I will give this a positive review, despite the following, which will make it harder to do EC factoring (but the fault lies not in the patch here, rather in moving the test for a point lying on a curve which is now more sophisticated to harder to fool.... but that is not for this ticket to sort out.\n\nThe example\n\n```\nN = 1001\nR = Zmod(N)\nR.is_field = lambda: True\nE = EllipticCurve(R, [-1,0])\n```\n\nworks but you cannot construct a point in the curve (e.g. E(0,0)) since this happens:\n\n```\nsage: P = E(0,0)\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n\n/home/masgaj/.sage/temp/host_56_150/32116/_home_masgaj__sage_init_sage_0.py in <module>()\n\n/local/jec/sage-3.4.2.alpha0/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_generic.pyc in __call__(self, *args, **kwds)\n    609                 args = tuple(args[0])\n    610\n--> 611         return plane_curve.ProjectiveCurve_generic.__call__(self, *args, **kwds)\n    612\n    613     def _reduce_point(self, R, p):\n\n/local/jec/sage-3.4.2.alpha0/local/lib/python2.5/site-packages/sage/schemes/generic/scheme.pyc in __call__(self, *args)\n    196                 else:\n    197                     return self.point(S)\n--> 198         return self.point(args)\n    199\n    200     def point_homset(self, S = None):\n\n/local/jec/sage-3.4.2.alpha0/local/lib/python2.5/site-packages/sage/schemes/generic/scheme.pyc in point(self, v, check)\n    230\n    231     def point(self, v, check=True):\n--> 232         return self._point_class(self, v, check=check)\n    233\n    234     def _point_class(self):\n\n/local/jec/sage-3.4.2.alpha0/local/lib/python2.5/site-packages/sage/schemes/generic/morphism.pyc in __init__(self, X, v, check)\n    415     \"\"\"\n    416     def __init__(self, X, v, check=True):\n--> 417         raise NotImplementedError\n    418\n    419\n\nNotImplementedError:\n```\n",
+    "created_at": "2009-04-29T11:39:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5890",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5890#issuecomment-46577",
+    "user": "cremona"
+}
+```
 
 Review: first of all, this is just moving code around, all perfectly sensible (lots of stuff moved down from ell_generic to ell_field, and Hasse_bound function moved off to plane curves (where I should have put it in the first place).
 
@@ -149,9 +253,20 @@ NotImplementedError:
 
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-30 00:54:18
+archive/issue_comments_046578.json:
+```json
+{
+    "body": "Merged in Sage 3.4.2.rc0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-30T00:54:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5890",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5890#issuecomment-46578",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.4.2.rc0.
 
@@ -160,8 +275,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-30 00:54:18
+archive/issue_comments_046579.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-04-30T00:54:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5890",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5890#issuecomment-46579",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

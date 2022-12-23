@@ -1,21 +1,31 @@
 # Issue 7032: symmetrica ignores CC
 
-Issue created by migration from https://trac.sagemath.org/ticket/7032
-
-Original creator: drkirkby
-
-Original creation time: 2009-09-27 14:44:54
-
+archive/issues_007032.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  jsp\n\nUsing\n\n* Solaris 10 update 7 on SPARC\n* sage-4.1.2.alpha2\n* Sun Studio 12.1\n* An updated configure script to allow the Sun compiler to be used  (#7021)\n\nCC was set to the Sun C compiler, and CXX to the Sun C++ compiler. It's apparent that singular is ignoring CC and using gcc instead. \n\n```\nsymmetrica-2.0.p4/src/zyk.c\nsymmetrica-2.0.p4/src/zyk.doc\nsymmetrica-2.0.p4/src/zykelind.c\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS swan 5.10 Generic_139555-08 sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\n/opt/xxxsunstudio12.1/bin/cc -v\nusage: cc [ options] files.  Use 'cc -flags' for details\n****************************************************\nmake[2]: Entering directory `/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/spkg/build/symmetrica-2.0.p4/src'\ngcc -c -O1 -fPIC -g -DFAST -DALLTRUE bar.c\ngcc -c -O1 -fPIC -g -DFAST -DALLTRUE bi.c\n```\n\n\nIt does build ok with gcc, even though CC is set to the Sun compiler. There is no C++ code, so I can't immediately tell whether CXX is ignored too, but I suspect it is. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7032\n\n",
+    "created_at": "2009-09-27T14:44:54Z",
+    "labels": [
+        "build",
+        "major",
+        "bug"
+    ],
+    "title": "symmetrica ignores CC",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7032",
+    "user": "drkirkby"
+}
+```
 Assignee: tbd
 
 CC:  jsp
 
 Using
 
-    * Solaris 10 update 7 on SPARC
-    * sage-4.1.2.alpha2
-    * Sun Studio 12.1
-    * An updated configure script to allow the Sun compiler to be used  (#7021)
+* Solaris 10 update 7 on SPARC
+* sage-4.1.2.alpha2
+* Sun Studio 12.1
+* An updated configure script to allow the Sun compiler to be used  (#7021)
 
 CC was set to the Sun C compiler, and CXX to the Sun C++ compiler. It's apparent that singular is ignoring CC and using gcc instead. 
 
@@ -42,10 +52,25 @@ gcc -c -O1 -fPIC -g -DFAST -DALLTRUE bi.c
 
 It does build ok with gcc, even though CC is set to the Sun compiler. There is no C++ code, so I can't immediately tell whether CXX is ignored too, but I suspect it is. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7032
+
+
+
+
 
 ---
 
-Comment by drkirkby created at 2010-01-07 01:57:39
+archive/issue_comments_058236.json:
+```json
+{
+    "body": "I've created a fix for this long standing bug. Basically replacing 'gcc' with '$(CC)' in the makefile. \n\nI also changed spkg-install so SAGE64 was respected at the same time (in fact, that was my main motivation for fixing this ticket, as the failure to observe CC is not fatal, but a failure to observe SAGE64 is). \n\nThe symmetica package is odd, in that the SPKG.txt makes it clear that fixes are applied to the source directly, not via patches. I find that a bit odd, but followed in the same way. I needed to fix the 'makefile' but left a copy of what I think is the original makefile as /src/makefile.original \n\nThe package now add -m64 with SAGE64 set to yes, and fully respects CC. \n\n**This must be updated as a package, and not simply a patch applied, due to the fact that changes are made directly in the src directory.**\n\nI've put everything at \n\nhttp://boxen.math.washington.edu/home/kirkby/portability/symmetrica-2.0.p5/",
+    "created_at": "2010-01-07T01:57:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7032",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7032#issuecomment-58236",
+    "user": "drkirkby"
+}
+```
 
 I've created a fix for this long standing bug. Basically replacing 'gcc' with '$(CC)' in the makefile. 
 
@@ -55,23 +80,45 @@ The symmetica package is odd, in that the SPKG.txt makes it clear that fixes are
 
 The package now add -m64 with SAGE64 set to yes, and fully respects CC. 
 
-*This must be updated as a package, and not simply a patch applied, due to the fact that changes are made directly in the src directory.*
+**This must be updated as a package, and not simply a patch applied, due to the fact that changes are made directly in the src directory.**
 
 I've put everything at 
 
 http://boxen.math.washington.edu/home/kirkby/portability/symmetrica-2.0.p5/
 
 
+
 ---
 
-Comment by drkirkby created at 2010-01-07 01:57:39
+archive/issue_comments_058237.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-01-07T01:57:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7032",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7032#issuecomment-58237",
+    "user": "drkirkby"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jsp created at 2010-01-10 22:27:50
+archive/issue_comments_058238.json:
+```json
+{
+    "body": "Looks good, works on Fedora and Open Solaris.\n\nPositive review.\n\nJaap",
+    "created_at": "2010-01-10T22:27:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7032",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7032#issuecomment-58238",
+    "user": "jsp"
+}
+```
 
 Looks good, works on Fedora and Open Solaris.
 
@@ -80,15 +127,37 @@ Positive review.
 Jaap
 
 
+
 ---
 
-Comment by jsp created at 2010-01-10 22:27:50
+archive/issue_comments_058239.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-01-10T22:27:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7032",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7032#issuecomment-58239",
+    "user": "jsp"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by rlm created at 2010-01-14 02:01:31
+archive/issue_comments_058240.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-14T02:01:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7032",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7032#issuecomment-58240",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed

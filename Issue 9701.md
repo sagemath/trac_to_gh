@@ -1,11 +1,21 @@
 # Issue 9701: NumberFieldElement should have a conversion to float
 
-Issue created by migration from https://trac.sagemath.org/ticket/9701
-
-Original creator: cwitty
-
-Original creation time: 2010-08-07 00:37:10
-
+archive/issues_009701.json:
+```json
+{
+    "body": "Assignee: davidloeffler\n\nThe missing conversion from `NumberFieldElement` to float is the cause of this strangeness:\n\n\n```\nsage: RR(I*I)\n-1.00000000000000\nsage: float(I*I)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/cwitty/svn-ironpython/IronPython_Main/<ipython console> in <module>()\n\n/home/cwitty/sage-4.5.2.alpha1/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.__float__ (sage/symbolic/expression.cpp:5205)()\n\nTypeError: unable to simplify to float approximation\n```\n\n\n(I'll have a patch posted for this in a few minutes.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9701\n\n",
+    "created_at": "2010-08-07T00:37:10Z",
+    "labels": [
+        "number fields",
+        "major",
+        "bug"
+    ],
+    "title": "NumberFieldElement should have a conversion to float",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9701",
+    "user": "cwitty"
+}
+```
 Assignee: davidloeffler
 
 The missing conversion from `NumberFieldElement` to float is the cause of this strangeness:
@@ -28,8 +38,25 @@ TypeError: unable to simplify to float approximation
 
 (I'll have a patch posted for this in a few minutes.)
 
+Issue created by migration from https://trac.sagemath.org/ticket/9701
+
+
+
+
 
 ---
+
+archive/issue_comments_094337.json:
+```json
+{
+    "body": "Attachment\n\nThe attached patch adds the missing method and adds a doctest in symbolics where I originally saw the problem.\n\nAll doctests pass.",
+    "created_at": "2010-08-07T01:17:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9701",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9701#issuecomment-94337",
+    "user": "cwitty"
+}
+```
 
 Attachment
 
@@ -38,29 +65,73 @@ The attached patch adds the missing method and adds a doctest in symbolics where
 All doctests pass.
 
 
+
 ---
 
-Comment by cwitty created at 2010-08-07 01:17:34
+archive/issue_comments_094338.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-08-07T01:17:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9701",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9701#issuecomment-94338",
+    "user": "cwitty"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by davidloeffler created at 2010-09-23 10:04:45
+archive/issue_comments_094339.json:
+```json
+{
+    "body": "Looks good to me.",
+    "created_at": "2010-09-23T10:04:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9701",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9701#issuecomment-94339",
+    "user": "davidloeffler"
+}
+```
 
 Looks good to me.
 
 
+
 ---
 
-Comment by davidloeffler created at 2010-09-23 10:04:45
+archive/issue_comments_094340.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-09-23T10:04:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9701",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9701#issuecomment-94340",
+    "user": "davidloeffler"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-29 04:23:21
+archive/issue_comments_094341.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-09-29T04:23:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9701",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9701#issuecomment-94341",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed

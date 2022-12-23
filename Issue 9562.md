@@ -1,11 +1,21 @@
 # Issue 9562: Add M4RIE to Sage
 
-Issue created by migration from https://trac.sagemath.org/ticket/9562
-
-Original creator: malb
-
-Original creation time: 2010-07-21 10:41:53
-
+archive/issues_009562.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  mvngu simonking\n\nKeywords: m4ri\n\nM4RIE is a library for linear algebra over small extension of GF(2). It is still in an early stage but already offers performance comparable to Magma for many inputs and is more than 1000 times faster than what we have in Sage right now.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9562\n\n",
+    "created_at": "2010-07-21T10:41:53Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "enhancement"
+    ],
+    "title": "Add M4RIE to Sage",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9562",
+    "user": "malb"
+}
+```
 Assignee: tbd
 
 CC:  mvngu simonking
@@ -14,47 +24,117 @@ Keywords: m4ri
 
 M4RIE is a library for linear algebra over small extension of GF(2). It is still in an early stage but already offers performance comparable to Magma for many inputs and is more than 1000 times faster than what we have in Sage right now.
 
+Issue created by migration from https://trac.sagemath.org/ticket/9562
+
+
+
+
 
 ---
 
-Comment by malb created at 2010-07-21 10:43:56
+archive/issue_comments_092172.json:
+```json
+{
+    "body": "The SPKG is here:\n\nhttp://sage.math.washington.edu/home/malb/spkgs/libm4ri-20100730.spkg",
+    "created_at": "2010-07-21T10:43:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92172",
+    "user": "malb"
+}
+```
 
 The SPKG is here:
 
 http://sage.math.washington.edu/home/malb/spkgs/libm4ri-20100730.spkg
 
 
+
 ---
 
-Comment by malb created at 2010-07-21 10:45:48
+archive/issue_comments_092173.json:
+```json
+{
+    "body": "The attached patch depends on #9475",
+    "created_at": "2010-07-21T10:45:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92173",
+    "user": "malb"
+}
+```
 
 The attached patch depends on #9475
 
 
+
 ---
 
-Comment by malb created at 2010-07-21 10:50:03
+archive/issue_comments_092174.json:
+```json
+{
+    "body": "The package compiles on t2. sage-check fails because libstdc++ cannot be found (I believe this is due to a problem in the old Sage I have on t2). I cannot apply my patch against this old version of Sage either.",
+    "created_at": "2010-07-21T10:50:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92174",
+    "user": "malb"
+}
+```
 
 The package compiles on t2. sage-check fails because libstdc++ cannot be found (I believe this is due to a problem in the old Sage I have on t2). I cannot apply my patch against this old version of Sage either.
 
 
+
 ---
 
-Comment by mhansen created at 2010-07-21 12:24:02
+archive/issue_comments_092175.json:
+```json
+{
+    "body": "This builds a static library only on Cygwin, but segfaults on both of the tests.",
+    "created_at": "2010-07-21T12:24:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92175",
+    "user": "mhansen"
+}
+```
 
 This builds a static library only on Cygwin, but segfaults on both of the tests.
 
 
+
 ---
 
-Comment by malb created at 2010-07-21 12:43:37
+archive/issue_comments_092176.json:
+```json
+{
+    "body": "Mike, is there a Sage I can copy on winxp1?",
+    "created_at": "2010-07-21T12:43:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92176",
+    "user": "malb"
+}
+```
 
 Mike, is there a Sage I can copy on winxp1?
 
 
+
 ---
 
-Comment by malb created at 2010-07-21 13:20:58
+archive/issue_comments_092177.json:
+```json
+{
+    "body": "\n```\nsage -t  devel/sage/sage/modular/modsym/space.py # 1 doctests failed\nsage -t  devel/sage/sage/misc/sagedoc.py # 3 doctests failed\nsage -t  devel/sage/sage/crypto/mq/mpolynomialsystem.py # 19 doctests failed\nsage -t  devel/sage/sage/crypto/mq/sr.py # 7 doctests failed\nsage -t  devel/sage/sage/modular/modsym/modsym.py # 1 doctests failed\nsage -t  devel/sage/sage/rings/polynomial/pbori.pyx # 2 doctests failed\nsage -t  devel/sage/sage/crypto/block_cipher/miniaes.py # 72 doctests failed\n\n```\n",
+    "created_at": "2010-07-21T13:20:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92177",
+    "user": "malb"
+}
+```
 
 
 ```
@@ -70,9 +150,20 @@ sage -t  devel/sage/sage/crypto/block_cipher/miniaes.py # 72 doctests failed
 
 
 
+
 ---
 
-Comment by drkirkby created at 2010-07-21 14:40:14
+archive/issue_comments_092178.json:
+```json
+{
+    "body": "Replying to [comment:4 malb]:\n> The package compiles on t2. sage-check fails because libstdc++ cannot be found (I believe this is due to a problem in the old Sage I have on t2). I cannot apply my patch against this old version of Sage either.\n\nThere's a Sage 4.5.1 package in /usr/local.",
+    "created_at": "2010-07-21T14:40:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92178",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:4 malb]:
 > The package compiles on t2. sage-check fails because libstdc++ cannot be found (I believe this is due to a problem in the old Sage I have on t2). I cannot apply my patch against this old version of Sage either.
@@ -80,9 +171,20 @@ Replying to [comment:4 malb]:
 There's a Sage 4.5.1 package in /usr/local.
 
 
+
 ---
 
-Comment by malb created at 2010-07-21 15:33:47
+archive/issue_comments_092179.json:
+```json
+{
+    "body": "After unpacking that I get\n\n\n```\n     21 from numpy.lib import triu\n---> 22 from numpy.linalg import lapack_lite\n     23 from numpy.core.defmatrix import matrix_power\n     24 \n\nImportError: ld.so.1: python: fatal: libgfortran.so.3: open failed: No such file or directory\nError importing ipy_profile_sage - perhaps you should run %upgrade?\nWARNING: Loading of ipy_profile_sage failed.\n\n```\n\nAny ideas?",
+    "created_at": "2010-07-21T15:33:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92179",
+    "user": "malb"
+}
+```
 
 After unpacking that I get
 
@@ -102,25 +204,58 @@ WARNING: Loading of ipy_profile_sage failed.
 Any ideas?
 
 
+
 ---
 
-Comment by malb created at 2010-07-21 20:49:41
+archive/issue_comments_092180.json:
+```json
+{
+    "body": "Changing status from new to needs_work.",
+    "created_at": "2010-07-21T20:49:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92180",
+    "user": "malb"
+}
+```
 
 Changing status from new to needs_work.
 
 
+
 ---
 
-Comment by malb created at 2010-07-21 20:49:41
+archive/issue_comments_092181.json:
+```json
+{
+    "body": "The updated patch fixes all doctest failures.\u00a0\n\nPS: CCing Minh since I'm touching his code in a potentially non-trivial way/",
+    "created_at": "2010-07-21T20:49:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92181",
+    "user": "malb"
+}
+```
 
 The updated patch fixes all doctest failures. 
 
 PS: CCing Minh since I'm touching his code in a potentially non-trivial way/
 
 
+
 ---
 
-Comment by drkirkby created at 2010-07-21 23:09:22
+archive/issue_comments_092182.json:
+```json
+{
+    "body": "It's not passing the tests properly on 64-bit OpenSolaris, and I doubt anywhere where SAGE64 needs to be set to yes. The -m64 flag is not getting passed when running the tests, so whilst it builds a 64-bit library, it looks like it tries to create 32-bit objects and link to that 64-bit library. \n\nI have not investigated this in any detail, but they were my initial observations. I would try building on 't2' with SAGE64 set to yes. Not all of Sage will build 64-bit without some hacks, but it should be fairly easy to get enough of Sage built to build this library. \n\n\n```\nSuccessfully installed libm4ri-20100730\nRunning the test suite.\nTesting the M4RI library\nmake -j12  test_elimination test_multiplication\nmake[1]: Entering directory `/export/home/drkirkby/sage-4.5/spkg/build/libm4ri-20100730/m4rie'\nmake[1]: warning: -jN forced in submake: disabling jobserver mode.\ng++ -DHAVE_CONFIG_H -I. -I./src   -I/export/home/drkirkby/sage-4.5/local/include -m64  -g -O2 -MT test_elimination.o -MD -MP -MF .deps/test_elimination.Tpo -c -o test_elimination.o `test -f 'tests/test_elimination.cc' || echo './'`tests/test_elimination.cc\ng++ -DHAVE_CONFIG_H -I. -I./src   -I/export/home/drkirkby/sage-4.5/local/include -m64  -g -O2 -MT test_multiplication.o -MD -MP -MF .deps/test_multiplication.Tpo -c -o test_multiplication.o `test -f 'tests/test_multiplication.cc' || echo './'`tests/test_multiplication.cc\nmv -f .deps/test_elimination.Tpo .deps/test_elimination.Po\n/bin/sh ./libtool --tag=CXX   --mode=link g++  -g -O2 -lm4rie -lm4ri -lgivaro -lntl -lgmpxx -lgmp -lm -lstdc++  -o test_elimination test_elimination.o  \nmv -f .deps/test_multiplication.Tpo .deps/test_multiplication.Po\n/bin/sh ./libtool --tag=CXX   --mode=link g++  -g -O2 -lm4rie -lm4ri -lgivaro -lntl -lgmpxx -lgmp -lm -lstdc++  -o test_multiplication test_multiplication.o  \nlibtool: link: g++ -g -O2 -o .libs/test_elimination test_elimination.o  /export/home/drkirkby/sage-4.5/spkg/build/libm4ri-20100730/m4rie/.libs/libm4rie.so -L/export/home/drkirkby/sage-4.5/local/lib /export/home/drkirkby/sage-4.5/local/lib/libm4ri.so /export/home/drkirkby/sage-4.5/local/lib/libgivaro.so -L/export/home/drkirkby/sage-4.5/local//lib -lntl /export/home/drkirkby/sage-4.5/local/lib/libgmpxx.so /export/home/drkirkby/sage-4.5/local/lib/libgmp.so /usr/local/gcc-4.4.4-multilib/lib/amd64/libstdc++.so -lm -Wl,-R -Wl,/export/home/drkirkby/sage-4.5/local/lib -Wl,-R -Wl,/usr/local/gcc-4.4.4-multilib/lib/amd64\nlibtool: link: g++ -g -O2 -o .libs/test_multiplication test_multiplication.o  /export/home/drkirkby/sage-4.5/spkg/build/libm4ri-20100730/m4rie/.libs/libm4rie.so -L/export/home/drkirkby/sage-4.5/local/lib /export/home/drkirkby/sage-4.5/local/lib/libm4ri.so /export/home/drkirkby/sage-4.5/local/lib/libgivaro.so -L/export/home/drkirkby/sage-4.5/local//lib -lntl /export/home/drkirkby/sage-4.5/local/lib/libgmpxx.so /export/home/drkirkby/sage-4.5/local/lib/libgmp.so /usr/local/gcc-4.4.4-multilib/lib/amd64/libstdc++.so -lm -Wl,-R -Wl,/export/home/drkirkby/sage-4.5/local/lib -Wl,-R -Wl,/usr/local/gcc-4.4.4-multilib/lib/amd64\nldld::  fatal: filefatal :test_multiplication.o :file  wrong test_elimination.o: wrong ELF class:ELF ELFCLASS64\nld: fatal:  file processing errors.class No:  output ELFCLASS64written \nto .libs/test_multiplication\nld: fatal: file processing errors. No output written to .libs/test_elimination\ncollect2: ld returned 1 exit status\ncollect2: ld returned 1 exit status\nmake[1]: *** [test_multiplication] Error 1\nmake[1]: *** Waiting for unfinished jobs....\nmake[1]: *** [test_elimination] Error 1\nmake[1]: Leaving directory `/export/home/drkirkby/sage-4.5/spkg/build/libm4ri-20100730/m4rie'\nmake: *** [check-am] Error 2\nError testing M4RI\n*************************************\nError testing package ** libm4ri-20100730 **\n*************************************\nsage: An error occurred while testing libm4ri-20100730\n```\n",
+    "created_at": "2010-07-21T23:09:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92182",
+    "user": "drkirkby"
+}
+```
 
 It's not passing the tests properly on 64-bit OpenSolaris, and I doubt anywhere where SAGE64 needs to be set to yes. The -m64 flag is not getting passed when running the tests, so whilst it builds a 64-bit library, it looks like it tries to create 32-bit objects and link to that 64-bit library. 
 
@@ -162,52 +297,107 @@ sage: An error occurred while testing libm4ri-20100730
 
 
 
+
 ---
 
-Comment by malb created at 2010-07-21 23:39:13
+archive/issue_comments_092183.json:
+```json
+{
+    "body": "I updated the SPKG linked above\n\n* Building shared libraries on Cygwin now\n* Fixed the crashes in spkg-check in Cygwin (this was actually a real bug)\n* Fixed flags for SAGE64",
+    "created_at": "2010-07-21T23:39:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92183",
+    "user": "malb"
+}
+```
 
 I updated the SPKG linked above
 
- * Building shared libraries on Cygwin now
- * Fixed the crashes in spkg-check in Cygwin (this was actually a real bug)
- * Fixed flags for SAGE64
+* Building shared libraries on Cygwin now
+* Fixed the crashes in spkg-check in Cygwin (this was actually a real bug)
+* Fixed flags for SAGE64
+
 
 
 ---
 
-Comment by malb created at 2010-07-21 23:39:13
+archive/issue_comments_092184.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-07-21T23:39:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92184",
+    "user": "malb"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by mhansen created at 2010-07-22 00:08:07
+archive/issue_comments_092185.json:
+```json
+{
+    "body": "Everything works on my Cygwin install.",
+    "created_at": "2010-07-22T00:08:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92185",
+    "user": "mhansen"
+}
+```
 
 Everything works on my Cygwin install.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-07-22 00:33:55
+archive/issue_comments_092186.json:
+```json
+{
+    "body": "It passed all self-tests on 64-bit OpenSolaris (x64) and 64-bit Solaris 10 (SPARC). Since neither platform has a stable version of Sage yet, running the doctests is pointless. \n\nA few questions:\n\n* Has there been an agreement to add this library? If so, can you provide a link to it. \n* Why is it not in another package, rather than added to the libm4ri package? \n* Do the self tests pass on Linux? \n* Do the doctests pass on Linux? \n* Do the self-tests pass on 32-bit SPARC?  (Note my point above about there being a 4.5.1 in /usr/local on t2)\n* Do the doc tests pass on 32-bit SPARC? \n* Do the self-tests pass on OS X? \n* Do the doctests pass on OS X?",
+    "created_at": "2010-07-22T00:33:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92186",
+    "user": "drkirkby"
+}
+```
 
 It passed all self-tests on 64-bit OpenSolaris (x64) and 64-bit Solaris 10 (SPARC). Since neither platform has a stable version of Sage yet, running the doctests is pointless. 
 
 A few questions:
 
- * Has there been an agreement to add this library? If so, can you provide a link to it. 
- * Why is it not in another package, rather than added to the libm4ri package? 
- * Do the self tests pass on Linux? 
- * Do the doctests pass on Linux? 
- * Do the self-tests pass on 32-bit SPARC?  (Note my point above about there being a 4.5.1 in /usr/local on t2)
- * Do the doc tests pass on 32-bit SPARC? 
- * Do the self-tests pass on OS X? 
- * Do the doctests pass on OS X?
+* Has there been an agreement to add this library? If so, can you provide a link to it. 
+* Why is it not in another package, rather than added to the libm4ri package? 
+* Do the self tests pass on Linux? 
+* Do the doctests pass on Linux? 
+* Do the self-tests pass on 32-bit SPARC?  (Note my point above about there being a 4.5.1 in /usr/local on t2)
+* Do the doc tests pass on 32-bit SPARC? 
+* Do the self-tests pass on OS X? 
+* Do the doctests pass on OS X?
+
 
 
 ---
 
-Comment by malb created at 2010-07-22 01:16:42
+archive/issue_comments_092187.json:
+```json
+{
+    "body": "Replying to [comment:14 drkirkby]:\n\n> A few questions:\n> * Has there been an agreement to add this library? If so, can you provide a link to it.\u00a0\n\nNo decision on [sage-devel] has happened yet. However, the Sage developers here at Sage Days 24 seem to be in favour of adding it.\n\n> * Why is it not in another package, rather than added to the libm4ri package?\u00a0\n\nIt makes maintaining the thing easier for all sides: I'm the maintainer of both libraries for both upstream and the SPKGs. It isn't even decided yet whether the two libraries might get merged in the future. Finally, William asked me to not add a new SPKG but to add the M4RIe extension to the M4RI package.\n\n> * Do the self tests pass on Linux?\u00a0\n\nYes.\n\n> * Do the doctests pass on Linux?\u00a0\n\nYes.\n\n> * Do the self-tests pass on 32-bit SPARC?  (Note my point above about there being a 4.5.1 in /usr/local on t2)\n\nNote my point above about not being able to use it.\n\n> * Do the doc tests pass on 32-bit SPARC?\u00a0\n\nNo clue.\n\n> * Do the self-tests pass on OS X?\u00a0\n\nYes.\n\n> * Do the doctests pass on OS X?\u00a0\n\nYes.",
+    "created_at": "2010-07-22T01:16:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92187",
+    "user": "malb"
+}
+```
 
 Replying to [comment:14 drkirkby]:
 
@@ -245,9 +435,20 @@ Yes.
 Yes.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-07-22 07:00:29
+archive/issue_comments_092188.json:
+```json
+{
+    "body": "Replying to [comment:15 malb]:\n> Replying to [comment:14 drkirkby]:\n> \n> > A few questions:\n> > * Has there been an agreement to add this library? If so, can you provide a link to it.\u00a0\n> \n> No decision on [sage-devel] has happened yet. However, the Sage developers here at Sage Days 24 seem to be in favour of adding it.\n\nIf the packages does get positive review, there should be a note to the release manager(s) not to merge it until there has been an agreement. Though in this case, it looks like getting a vote seems a formality. \n \n> > * Why is it not in another package, rather than added to the libm4ri package?\u00a0\n> \n> It makes maintaining the thing easier for all sides: I'm the maintainer of both libraries for both upstream and the SPKGs. It isn't even decided yet whether the two libraries might get merged in the future. Finally, William asked me to not add a new SPKG but to add the M4RIe extension to the M4RI package.\n\nOne obvious disadvantage of that approach is that since one library relies on the other, the first could be built in parallel with some other packages. That could potentially slow parallel builds. \n \n> > * Do the self tests pass on Linux?\u00a0\n> \n> Yes.\n> \n> > * Do the doctests pass on Linux?\u00a0\n> \n> Yes.\n> \n> > * Do the self-tests pass on 32-bit SPARC?  (Note my point above about there being a 4.5.1 in /usr/local on t2)\n> \n> Note my point above about not being able to use it.\n\nYour point above says that's probably because you have an old version. \n\nBut I said above, there is the latest version on there - (`/usr/local/sage-4.5.1-Solaris_10_SPARC-sun4u-SunOS.tar.gz` is a pre-built copy of the latest version of Sage on 't2').  If that does not work, let me know - I'd be very surprised if it does not. Otherwise, you could just build Sage from source. \n\n> > * Do the doc tests pass on 32-bit SPARC?\u00a0\n> \n> No clue.\n\nSee point above. \n\nDave",
+    "created_at": "2010-07-22T07:00:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92188",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:15 malb]:
 > Replying to [comment:14 drkirkby]:
@@ -290,9 +491,20 @@ See point above.
 Dave
 
 
+
 ---
 
-Comment by malb created at 2010-07-22 17:09:11
+archive/issue_comments_092189.json:
+```json
+{
+    "body": "Dave, the testuite fails:\n\n\n```\n/bin/bash ./libtool --tag=CXX   --mode=link g++  -g -O2 -lm4rie -lm4ri -lgivaro -lntl -lgmpxx -lgmp -lm -lstdc++  -o test_elimination test_elimination.o  \nlibtool: link: warning: library `/home/malb/t2/sage-4.5.1-Solaris_10_SPARC-sun4u-SunOS/local/lib/libstdc++.la' was moved.\nlibtool: link: cannot find the library `/usr/local/gcc-4.4.3/lib/libstdc++.la' or unhandled argument `/usr/local/gcc-4.4.3/lib/libstdc++.la'\nmake[1]: *** [test_elimination] Error 1\nmake[1]: Leaving directory `/home/malb/t2/sage-4.5.1-Solaris_10_SPARC-sun4u-SunOS/spkg/build/libm4ri-20100730/m4rie'\n\n```\n\nAny idea why it wouldn't find libstdc++ on t2?",
+    "created_at": "2010-07-22T17:09:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92189",
+    "user": "malb"
+}
+```
 
 Dave, the testuite fails:
 
@@ -309,16 +521,38 @@ make[1]: Leaving directory `/home/malb/t2/sage-4.5.1-Solaris_10_SPARC-sun4u-SunO
 Any idea why it wouldn't find libstdc++ on t2?
 
 
+
 ---
 
-Comment by malb created at 2010-07-22 17:38:02
+archive/issue_comments_092190.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-07-22T17:38:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92190",
+    "user": "malb"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by malb created at 2010-07-22 21:50:03
+archive/issue_comments_092191.json:
+```json
+{
+    "body": "These lines:\n\n\n```\nlibtool: link: warning: library `/home/malb/t2/sage-4.5.1-Solaris_10_SPARC-sun4u-SunOS/local/lib/libstdc++.la' was moved.\nlibtool: link: cannot find the library `/usr/local/gcc-4.4.3/lib/libstdc++.la' or unhandled argument `/usr/local/gcc-4.4.3/lib/libstdc++.la'\n\n```\n\nmake me think it's the Sage binary that is broken? \u00a0Why is there be a libstdc++ in the Sage tarball ?",
+    "created_at": "2010-07-22T21:50:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92191",
+    "user": "malb"
+}
+```
 
 These lines:
 
@@ -332,9 +566,20 @@ libtool: link: cannot find the library `/usr/local/gcc-4.4.3/lib/libstdc++.la' o
 make me think it's the Sage binary that is broken?  Why is there be a libstdc++ in the Sage tarball ?
 
 
+
 ---
 
-Comment by drkirkby created at 2010-07-22 22:30:37
+archive/issue_comments_092192.json:
+```json
+{
+    "body": "Replying to [comment:19 malb]:\n> These lines:\n> \n> {{{\n> libtool: link: warning: library `/home/malb/t2/sage-4.5.1-Solaris_10_SPARC-sun4u-SunOS/local/lib/libstdc++.la' was moved.\n> libtool: link: cannot find the library `/usr/local/gcc-4.4.3/lib/libstdc++.la' or unhandled argument `/usr/local/gcc-4.4.3/lib/libstdc++.la'\n> \n> }}}\n> make me think it's the Sage binary that is broken? \u00a0Why is there be a libstdc++ in the Sage tarball ?\n\nThe reason it is there is that the version of gcc shipped with Solaris is 3.4.3, so there are no recent gcc libraries. The compiler is not built with Fortran support, so there is no libgfortran at all. One needs recent run-time libraries, with fortran support, so I added them to the Sage binary. \n\nIt may be that deleting (making a copy first) of those .la files will solve the problem. Otherwise, editing them to point at the location of the libraries in $SAGE_LOCAL/lib will almost certainly solve it. \n\nIf that does not work, just build Sage from source. It does not take too long if you build packages in parallel. \n\nDave",
+    "created_at": "2010-07-22T22:30:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92192",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:19 malb]:
 > These lines:
@@ -355,16 +600,38 @@ If that does not work, just build Sage from source. It does not take too long if
 Dave
 
 
+
 ---
 
-Comment by malb created at 2010-08-10 13:50:27
+archive/issue_comments_092193.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-08-10T13:50:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92193",
+    "user": "malb"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by malb created at 2010-08-10 13:50:27
+archive/issue_comments_092194.json:
+```json
+{
+    "body": "\n```\nmalb@t2:~/t2/sage-4.5.1$ ./sage -t devel/sage/sage/matrix/matrix_mod2_dense.pyx \n\nsage -t  \"devel/sage/sage/matrix/matrix_mod2_dense.pyx\"     \n\n         [92.7 s]\n\n ----------------------------------------------------------------------\n\nAll tests passed!\n\nTotal time for all tests: 92.8 seconds\n\nmalb@t2:~/t2/sage-4.5.1$ ./sage -t devel/sage/sage/matrix/matrix_mod2e_dense.pyx \n\nsage -t  \"devel/sage/sage/matrix/matrix_mod2e_dense.pyx\"    \n\n         [50.0 s]\n\n----------------------------------------------------------------------\n\nAll tests passed!\n\nTotal time for all tests: 50.0 seconds\n\n\n```\n\nAfter finally building Sage t2 I can confirm that doctests pass there too",
+    "created_at": "2010-08-10T13:50:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92194",
+    "user": "malb"
+}
+```
 
 
 ```
@@ -398,16 +665,38 @@ Total time for all tests: 50.0 seconds
 After finally building Sage t2 I can confirm that doctests pass there too
 
 
+
 ---
 
-Comment by drkirkby created at 2010-08-10 14:46:03
+archive/issue_comments_092195.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_info.",
+    "created_at": "2010-08-10T14:46:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92195",
+    "user": "drkirkby"
+}
+```
 
 Changing status from needs_review to needs_info.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-08-10 14:46:03
+archive/issue_comments_092196.json:
+```json
+{
+    "body": "It appears to be trying to use autoconf, but autoconf is not a perquisite for Sage. Are you sure the timestamps on all the files are right? \n\n\n```\nchecking for x86 cpuid 0x0 output... unknown\nchecking for the processor vendor... Unknown\nchecking the L1 cache size... 0 Bytes\nchecking the L2 cache size... 0 Bytes\nchecking whether make -j30 sets $(MAKE)... (cached) yes\nconfigure: creating ./config.status\nconfig.status: creating Makefile\nconfig.status: creating src/config.h\nconfig.status: executing depfiles commands\nconfig.status: executing libtool commands\n(CDPATH=\"${ZSH_VERSION+.}:\" && cd . && /bin/bash /rootpool2/local/kirkby/t2/64/s\nage-4.5.3.alpha0/spkg/build/libm4ri-20100730/m4ri/missing --run autoheader)\naclocal.m4:16: warning: this file was generated for autoconf 2.65.\nYou have another version of autoconf.  It may work, but is not guaranteed to.\nIf you have problems, you may need to regenerate the build system entirely.\nTo do so, use the procedure documented by the package, typically `autoreconf'.\nrm -f src/stamp-h1\ntouch src/config.h.in\ncd . && /bin/bash ./config.status src/config.h\nconfig.status: creating src/config.h\nconfig.status: src/config.h is unchanged\n```\n",
+    "created_at": "2010-08-10T14:46:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92196",
+    "user": "drkirkby"
+}
+```
 
 It appears to be trying to use autoconf, but autoconf is not a perquisite for Sage. Are you sure the timestamps on all the files are right? 
 
@@ -438,23 +727,56 @@ config.status: src/config.h is unchanged
 
 
 
+
 ---
 
-Comment by malb created at 2010-08-10 15:17:33
+archive/issue_comments_092197.json:
+```json
+{
+    "body": "I replaced the SPKG with a version where I touched both configure scripts again (I thought I did that before, but apparently I didn't). I tested it on t2 and it doesn't attempt to call autoconf.",
+    "created_at": "2010-08-10T15:17:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92197",
+    "user": "malb"
+}
+```
 
 I replaced the SPKG with a version where I touched both configure scripts again (I thought I did that before, but apparently I didn't). I tested it on t2 and it doesn't attempt to call autoconf.
 
 
+
 ---
 
-Comment by malb created at 2010-08-14 19:29:29
+archive/issue_comments_092198.json:
+```json
+{
+    "body": "Changing status from needs_info to needs_review.",
+    "created_at": "2010-08-14T19:29:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92198",
+    "user": "malb"
+}
+```
 
 Changing status from needs_info to needs_review.
 
 
+
 ---
 
-Comment by malb created at 2010-08-18 18:27:30
+archive/issue_comments_092199.json:
+```json
+{
+    "body": "Since there doesn't seem to be any movement on this ticket, I took the liberty to update the patch and to prepare a new SPKG:\n\nhttp://sage.math.washington.edu/home/malb/spkgs/libm4ri-20100817.spkg\n\nJust as before this ticket depends on #9717 which was merged in 4.5.3.alpha1.\n\nI successfully built and doctested the SPKG + the patch on:\n\n* **sage.math**: 64-bit Linux, Intel CPU, pass\n* **redhawk**: 64-bit Linux, AMD CPU, pass\n* **bsd:** OS X, pass\n* **t2**: Solaris, pass (I failed to build R thus those doctests failed)\n\nI also took a sage-4.5.3.alpha1.tar, replaced the M4RI SPKG and applied the patch. Then I built Sage from scratch on sage.math and ran make ptestlong. All doctests passed.\n\nPS: This new SPKG runs some tests to detect the L1 and L2 cache sizes, thus it compiles a little bit longer than older SPKGs for M4RI. The gained performance is well worth the wait on e.g. modern Intel CPUs where it is better to detect how much memory is fast for random access than to rely on the actual L2 cache size.",
+    "created_at": "2010-08-18T18:27:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92199",
+    "user": "malb"
+}
+```
 
 Since there doesn't seem to be any movement on this ticket, I took the liberty to update the patch and to prepare a new SPKG:
 
@@ -464,26 +786,48 @@ Just as before this ticket depends on #9717 which was merged in 4.5.3.alpha1.
 
 I successfully built and doctested the SPKG + the patch on:
 
- * *sage.math*: 64-bit Linux, Intel CPU, pass
- * *redhawk*: 64-bit Linux, AMD CPU, pass
- * *bsd:* OS X, pass
- * *t2*: Solaris, pass (I failed to build R thus those doctests failed)
+* **sage.math**: 64-bit Linux, Intel CPU, pass
+* **redhawk**: 64-bit Linux, AMD CPU, pass
+* **bsd:** OS X, pass
+* **t2**: Solaris, pass (I failed to build R thus those doctests failed)
 
 I also took a sage-4.5.3.alpha1.tar, replaced the M4RI SPKG and applied the patch. Then I built Sage from scratch on sage.math and ran make ptestlong. All doctests passed.
 
 PS: This new SPKG runs some tests to detect the L1 and L2 cache sizes, thus it compiles a little bit longer than older SPKGs for M4RI. The gained performance is well worth the wait on e.g. modern Intel CPUs where it is better to detect how much memory is fast for random access than to rely on the actual L2 cache size.
 
 
+
 ---
 
-Comment by mvngu created at 2010-10-18 09:11:55
+archive/issue_comments_092200.json:
+```json
+{
+    "body": "Do you want to ignore `m4ri` and `m4rie`? Also the `dist/` directory can now be removed as per ticket #5903.",
+    "created_at": "2010-10-18T09:11:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92200",
+    "user": "mvngu"
+}
+```
 
 Do you want to ignore `m4ri` and `m4rie`? Also the `dist/` directory can now be removed as per ticket #5903.
 
 
+
 ---
 
-Comment by mvngu created at 2010-10-18 09:12:51
+archive/issue_comments_092201.json:
+```json
+{
+    "body": "Replying to [comment:26 mvngu]:\n> Do you want to ignore `m4ri` and `m4rie`?\nWhat I mean is this:\n\n```\n[mvngu@sage libm4ri-20100817]$ hg st\n? m4ri/.hgtags\n? m4ri/AUTHORS\n? m4ri/COPYING\n? m4ri/ChangeLog\n? m4ri/INSTALL\n? m4ri/Makefile.am\n? m4ri/Makefile.in\n? m4ri/NEWS\n? m4ri/README\n? m4ri/aclocal.m4\n? m4ri/config.guess\n? m4ri/config.sub\n? m4ri/configure\n? m4ri/configure.ac\n? m4ri/depcomp\n? m4ri/install-sh\n? m4ri/ltmain.sh\n? m4ri/m4/ax_cache_size.m4\n? m4ri/m4/ax_cache_size_tune.m4\n? m4ri/m4/ax_check_compiler_flags.m4\n? m4ri/m4/ax_cpu_vendor.m4\n? m4ri/m4/ax_ext.m4\n? m4ri/m4/ax_gcc_x86_cpuid.m4\n? m4ri/m4/ax_openmp.m4\n? m4ri/m4/libtool.m4\n? m4ri/m4/ltoptions.m4\n? m4ri/m4/ltsugar.m4\n? m4ri/m4/ltversion.m4\n? m4ri/m4/lt~obsolete.m4\n? m4ri/m4ri\n? m4ri/m4ri.sln\n? m4ri/m4ri.vcproj\n? m4ri/missing\n? m4ri/testsuite/.directory\n? m4ri/testsuite/Makefile\n? m4ri/testsuite/bench_elimination.c\n? m4ri/testsuite/bench_multiplication.c\n? m4ri/testsuite/bench_pluq.c\n? m4ri/testsuite/bench_trsm_lowerleft.c\n? m4ri/testsuite/bench_trsm_lowerright.c\n? m4ri/testsuite/bench_trsm_upperleft.c\n? m4ri/testsuite/bench_trsm_upperright.c\n? m4ri/testsuite/cpucycles-20060326/alpha.c\n? m4ri/testsuite/cpucycles-20060326/alpha.h\n? m4ri/testsuite/cpucycles-20060326/amd64cpuinfo.c\n? m4ri/testsuite/cpucycles-20060326/amd64cpuinfo.h\n? m4ri/testsuite/cpucycles-20060326/amd64tscfreq.c\n? m4ri/testsuite/cpucycles-20060326/amd64tscfreq.h\n? m4ri/testsuite/cpucycles-20060326/clockmonotonic.c\n? m4ri/testsuite/cpucycles-20060326/clockmonotonic.h\n? m4ri/testsuite/cpucycles-20060326/compile\n? m4ri/testsuite/cpucycles-20060326/cpucycles.html\n? m4ri/testsuite/cpucycles-20060326/do\n? m4ri/testsuite/cpucycles-20060326/do.notes\n? m4ri/testsuite/cpucycles-20060326/gettimeofday.c\n? m4ri/testsuite/cpucycles-20060326/gettimeofday.h\n? m4ri/testsuite/cpucycles-20060326/hppapstat.c\n? m4ri/testsuite/cpucycles-20060326/hppapstat.h\n? m4ri/testsuite/cpucycles-20060326/powerpcaix.c\n? m4ri/testsuite/cpucycles-20060326/powerpcaix.h\n? m4ri/testsuite/cpucycles-20060326/powerpclinux.c\n? m4ri/testsuite/cpucycles-20060326/powerpclinux.h\n? m4ri/testsuite/cpucycles-20060326/powerpcmacos.c\n? m4ri/testsuite/cpucycles-20060326/powerpcmacos.h\n? m4ri/testsuite/cpucycles-20060326/sparc32psrinfo.c\n? m4ri/testsuite/cpucycles-20060326/sparc32psrinfo.h\n? m4ri/testsuite/cpucycles-20060326/sparcpsrinfo.c\n? m4ri/testsuite/cpucycles-20060326/sparcpsrinfo.h\n? m4ri/testsuite/cpucycles-20060326/test.c\n? m4ri/testsuite/cpucycles-20060326/x86cpuinfo.c\n? m4ri/testsuite/cpucycles-20060326/x86cpuinfo.h\n? m4ri/testsuite/cpucycles-20060326/x86tscfreq.c\n? m4ri/testsuite/cpucycles-20060326/x86tscfreq.h\n? m4ri/testsuite/test_elimination.c\n? m4ri/testsuite/test_kernel.c\n? m4ri/testsuite/test_multiplication.c\n? m4ri/testsuite/test_pluq.c\n? m4ri/testsuite/test_solve.c\n? m4ri/testsuite/test_trsm.c\n? m4ri/testsuite/walltime.h\n? m4rie/.hgignore\n? m4rie/.hgtags\n? m4rie/AUTHORS\n? m4rie/COPYING\n? m4rie/ChangeLog\n? m4rie/INSTALL\n? m4rie/Makefile.am\n? m4rie/Makefile.in\n? m4rie/NEWS\n? m4rie/README\n? m4rie/aclocal.m4\n? m4rie/bench/Makefile.am\n? m4rie/bench/Makefile.in\n? m4rie/bench/bench_elimination.cc\n? m4rie/bench/bench_multiplication.cc\n? m4rie/bench/cpucycles-20060326/alpha.c\n? m4rie/bench/cpucycles-20060326/alpha.h\n? m4rie/bench/cpucycles-20060326/amd64cpuinfo.c\n? m4rie/bench/cpucycles-20060326/amd64cpuinfo.h\n? m4rie/bench/cpucycles-20060326/amd64tscfreq.c\n? m4rie/bench/cpucycles-20060326/amd64tscfreq.h\n? m4rie/bench/cpucycles-20060326/clockmonotonic.c\n? m4rie/bench/cpucycles-20060326/clockmonotonic.h\n? m4rie/bench/cpucycles-20060326/compile\n? m4rie/bench/cpucycles-20060326/cpucycles.html\n? m4rie/bench/cpucycles-20060326/do\n? m4rie/bench/cpucycles-20060326/do.notes\n? m4rie/bench/cpucycles-20060326/gettimeofday.c\n? m4rie/bench/cpucycles-20060326/gettimeofday.h\n? m4rie/bench/cpucycles-20060326/hppapstat.c\n? m4rie/bench/cpucycles-20060326/hppapstat.h\n? m4rie/bench/cpucycles-20060326/powerpcaix.c\n? m4rie/bench/cpucycles-20060326/powerpcaix.h\n? m4rie/bench/cpucycles-20060326/powerpclinux.c\n? m4rie/bench/cpucycles-20060326/powerpclinux.h\n? m4rie/bench/cpucycles-20060326/powerpcmacos.c\n? m4rie/bench/cpucycles-20060326/powerpcmacos.h\n? m4rie/bench/cpucycles-20060326/sparc32psrinfo.c\n? m4rie/bench/cpucycles-20060326/sparc32psrinfo.h\n? m4rie/bench/cpucycles-20060326/sparcpsrinfo.c\n? m4rie/bench/cpucycles-20060326/sparcpsrinfo.h\n? m4rie/bench/cpucycles-20060326/test.c\n? m4rie/bench/cpucycles-20060326/x86cpuinfo.c\n? m4rie/bench/cpucycles-20060326/x86cpuinfo.h\n? m4rie/bench/cpucycles-20060326/x86tscfreq.c\n? m4rie/bench/cpucycles-20060326/x86tscfreq.h\n? m4rie/bench/walltime.h\n? m4rie/config.guess\n? m4rie/config.sub\n? m4rie/configure\n? m4rie/configure.ac\n? m4rie/depcomp\n? m4rie/gf2e_cxx/finite_field_givaro.h\n? m4rie/install-sh\n? m4rie/ltmain.sh\n? m4rie/m4/ax_cache_size.m4\n? m4rie/m4/ax_cache_size_tune.m4\n? m4rie/m4/ax_check_compiler_flags.m4\n? m4rie/m4/ax_cpu_vendor.m4\n? m4rie/m4/ax_ext.m4\n? m4rie/m4/ax_gcc_x86_cpuid.m4\n? m4rie/m4/ax_openmp.m4\n? m4rie/m4/libtool.m4\n? m4rie/m4/ltoptions.m4\n? m4rie/m4/ltsugar.m4\n? m4rie/m4/ltversion.m4\n? m4rie/m4/lt~obsolete.m4\n? m4rie/missing\n? m4rie/tests/Makefile\n? m4rie/tests/test_elimination.cc\n? m4rie/tests/test_multiplication.cc\n```\n",
+    "created_at": "2010-10-18T09:12:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92201",
+    "user": "mvngu"
+}
+```
 
 Replying to [comment:26 mvngu]:
 > Do you want to ignore `m4ri` and `m4rie`?
@@ -646,18 +990,40 @@ What I mean is this:
 
 
 
+
 ---
 
-Comment by malb created at 2010-10-18 09:44:53
+archive/issue_comments_092202.json:
+```json
+{
+    "body": "I've updated the SPKG accordingly at\n\n  http://sage.math.washington.edu/home/malb/spkgs/libm4ri-20100817.p0.spkg",
+    "created_at": "2010-10-18T09:44:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92202",
+    "user": "malb"
+}
+```
 
 I've updated the SPKG accordingly at
 
   http://sage.math.washington.edu/home/malb/spkgs/libm4ri-20100817.p0.spkg
 
 
+
 ---
 
-Comment by drkirkby created at 2010-11-07 11:04:56
+archive/issue_comments_092203.json:
+```json
+{
+    "body": "Whatever checks are being used to determine the cache size is not working very well. First it reports the L1 cache size is 0, then it spends a couple of minutes on a 3.33 GHz Xeon, to determine the cache size (I thought it had hanged). It's also producing some NaN in the calculation of the cache size - is that not a bug?  \n\nThe CPU is an Intel Xeon W3580 and the operating system OpenSolaris. \n\n\n```\nchecking for gcc option to accept ISO C99... -std=gnu99\nchecking for x86 cpuid  output... b:756e6547:6c65746e:49656e69\nchecking for x86 cpuid 0x0 output... b:756e6547:6c65746e:49656e69\nchecking for the processor vendor... Intel\nchecking for x86 cpuid 0x00000001 output... 106a5:100800:9ce3bd:bfebfbff\nchecking whether mmx is supported... yes\nchecking whether sse is supported... yes\nchecking whether sse2 is supported... yes\nchecking whether sse3 is supported... yes\nchecking whether ssse3 is supported... yes\nchecking whether C compiler accepts -mmmx... yes\nchecking whether C compiler accepts -msse... yes\nchecking whether C compiler accepts -msse2... yes\nchecking whether C compiler accepts -msse3... yes\nchecking mm_malloc.h usability... yes\nchecking mm_malloc.h presence... yes\nchecking for mm_malloc.h... yes\nchecking for x86 cpuid 0x0 output... (cached) b:756e6547:6c65746e:49656e69\nchecking for the processor vendor... (cached) Intel\nchecking for x86 cpuid 0x80000000 output... 80000008:0:0:0\nchecking for x86 cpuid 0x80000005 output... 0:0:0:0\nchecking for x86 cpuid 0x80000006 output... 0:0:1006040:0\nchecking the L1 cache size... 0 Bytes\nchecking the L2 cache size... 262144 Bytes\nchecking for cache sizes... \ns:     4, rx:   0.03, x:   0.03, wt:   0.03, dx:    NaN\ns:     8, rx:   0.06, x:   0.06, wt:   0.06, dx:   1.01\ns:    16, rx:   0.12, x:   0.12, wt:   0.12, dx:   1.00\ns:    32, rx:   0.24, x:   0.24, wt:   0.24, dx:   1.00\ns:    64, rx:   0.53, x:   0.53, wt:   0.53, dx:   1.10\ns:   128, rx:   0.32, x:   1.30, wt:   0.32, dx:   1.23\ns:   256, rx:   0.37, x:   2.95, wt:   0.37, dx:   1.14\ns:   512, rx:   0.42, x:   6.77, wt:   0.42, dx:   1.15\n\ns:     4, rx:   0.03, x:   0.03, wt:   0.03, dx:    NaN\ns:     8, rx:   0.06, x:   0.06, wt:   0.06, dx:   0.94\ns:    16, rx:   0.12, x:   0.12, wt:   0.12, dx:   0.99\ns:    32, rx:   0.24, x:   0.24, wt:   0.24, dx:   1.02\ns:    64, rx:   0.53, x:   0.53, wt:   0.53, dx:   1.09\ns:   128, rx:   0.32, x:   1.29, wt:   0.32, dx:   1.22\ns:   256, rx:   0.37, x:   2.97, wt:   0.37, dx:   1.16\ns:   512, rx:   0.43, x:   6.80, wt:   0.43, dx:   1.14\n\ns:     4, rx:   0.03, x:   0.03, wt:   0.03, dx:    NaN\ns:     8, rx:   0.06, x:   0.06, wt:   0.06, dx:   0.91\ns:    16, rx:   0.12, x:   0.12, wt:   0.12, dx:   1.01\ns:    32, rx:   0.24, x:   0.24, wt:   0.24, dx:   1.01\ns:    64, rx:   0.52, x:   0.52, wt:   0.52, dx:   1.09\ns:   128, rx:   0.32, x:   1.30, wt:   0.32, dx:   1.24\ns:   256, rx:   0.37, x:   2.94, wt:   0.37, dx:   1.13\ns:   512, rx:   0.41, x:   6.64, wt:   0.42, dx:   1.13\n\ns:     4, rx:   0.03, x:   0.03, wt:   0.03, dx:    NaN\ns:     8, rx:   0.06, x:   0.06, wt:   0.06, dx:   0.92\ns:    16, rx:   0.12, x:   0.12, wt:   0.12, dx:   1.02\ns:    32, rx:   0.24, x:   0.24, wt:   0.24, dx:   1.00\ns:    64, rx:   0.53, x:   0.53, wt:   0.53, dx:   1.11\ns:   128, rx:   0.33, x:   1.30, wt:   0.33, dx:   1.23\ns:   256, rx:   0.37, x:   2.98, wt:   0.37, dx:   1.14\ns:   512, rx:   0.41, x:   6.61, wt:   0.41, dx:   1.11\n\ns:     4, rx:   0.03, x:   0.03, wt:   0.03, dx:    NaN\ns:     8, rx:   0.06, x:   0.06, wt:   0.06, dx:   0.93\ns:    16, rx:   0.12, x:   0.12, wt:   0.12, dx:   1.01\ns:    32, rx:   0.24, x:   0.24, wt:   0.24, dx:   1.02\ns:    64, rx:   0.53, x:   0.53, wt:   0.53, dx:   1.09\ns:   128, rx:   0.32, x:   1.30, wt:   0.32, dx:   1.23\ns:   256, rx:   0.37, x:   2.94, wt:   0.37, dx:   1.13\ns:   512, rx:   0.42, x:   6.75, wt:   0.42, dx:   1.15\n\ns:   512, rx:   0.42, x:   0.42, wt:   0.42, dx:    NaN\ns:  1024, rx:   1.00, x:   1.00, wt:   1.00, dx:   1.18\ns:  1536, rx:   0.39, x:   1.57, wt:   0.39, dx:   1.05\ns:  2048, rx:   0.27, x:   2.19, wt:   0.27, dx:   1.04\ns:  3072, rx:   0.21, x:   3.32, wt:   0.21, dx:   1.01\ns:  4096, rx:   0.29, x:   4.60, wt:   0.29, dx:   1.04\ns:  6144, rx:   0.28, x:   8.85, wt:   0.28, dx:   1.28\ns:  8192, rx:   0.25, x:  15.96, wt:   0.25, dx:   1.35\ns: 16384, rx:   0.43, x:  55.40, wt:   0.44, dx:   1.74\ns: 32768, rx:   0.61, x: 156.25, wt:   0.62, dx:   1.41\n\ns:   512, rx:   0.43, x:   0.43, wt:   0.43, dx:    NaN\ns:  1024, rx:   0.99, x:   0.99, wt:   0.99, dx:   1.15\ns:  1536, rx:   0.39, x:   1.56, wt:   0.39, dx:   1.05\ns:  2048, rx:   0.27, x:   2.13, wt:   0.27, dx:   1.03\ns:  3072, rx:   0.21, x:   3.32, wt:   0.21, dx:   1.04\ns:  4096, rx:   0.28, x:   4.52, wt:   0.28, dx:   1.02\ns:  6144, rx:   0.27, x:   8.76, wt:   0.28, dx:   1.29\ns:  8192, rx:   0.25, x:  15.87, wt:   0.25, dx:   1.36\ns: 16384, rx:   0.42, x:  54.27, wt:   0.43, dx:   1.71\ns: 32768, rx:   0.61, x: 156.22, wt:   0.62, dx:   1.44\n\ns:   512, rx:   0.42, x:   0.42, wt:   0.42, dx:    NaN\ns:  1024, rx:   0.99, x:   0.99, wt:   0.99, dx:   1.17\ns:  1536, rx:   0.39, x:   1.56, wt:   0.39, dx:   1.05\ns:  2048, rx:   0.27, x:   2.14, wt:   0.27, dx:   1.03\ns:  3072, rx:   0.21, x:   3.31, wt:   0.21, dx:   1.03\ns:  4096, rx:   0.28, x:   4.53, wt:   0.29, dx:   1.03\ns:  6144, rx:   0.27, x:   8.73, wt:   0.28, dx:   1.28\ns:  8192, rx:   0.25, x:  16.01, wt:   0.25, dx:   1.38\ns: 16384, rx:   0.42, x:  54.24, wt:   0.43, dx:   1.69\ns: 32768, rx:   0.63, x: 162.00, wt:   0.65, dx:   1.49\n\ns:   512, rx:   0.43, x:   0.43, wt:   0.43, dx:    NaN\ns:  1024, rx:   1.01, x:   1.01, wt:   1.01, dx:   1.19\ns:  1536, rx:   0.20, x:   1.58, wt:   0.20, dx:   1.04\ns:  2048, rx:   0.28, x:   2.21, wt:   0.28, dx:   1.04\ns:  3072, rx:   0.21, x:   3.39, wt:   0.21, dx:   1.02\ns:  4096, rx:   0.29, x:   4.63, wt:   0.29, dx:   1.02\ns:  6144, rx:   0.28, x:   8.84, wt:   0.28, dx:   1.27\ns:  8192, rx:   0.25, x:  16.17, wt:   0.26, dx:   1.37\ns: 16384, rx:   0.43, x:  55.01, wt:   0.44, dx:   1.70\ns: 32768, rx:   0.61, x: 157.06, wt:   0.63, dx:   1.43\n\ns:   512, rx:   0.43, x:   0.43, wt:   0.43, dx:    NaN\ns:  1024, rx:   1.01, x:   1.01, wt:   1.01, dx:   1.17\ns:  1536, rx:   0.20, x:   1.59, wt:   0.20, dx:   1.05\ns:  2048, rx:   0.27, x:   2.19, wt:   0.27, dx:   1.03\ns:  3072, rx:   0.21, x:   3.40, wt:   0.21, dx:   1.03\ns:  4096, rx:   0.29, x:   4.63, wt:   0.29, dx:   1.02\ns:  6144, rx:   0.28, x:   8.90, wt:   0.28, dx:   1.28\ns:  8192, rx:   0.25, x:  16.12, wt:   0.26, dx:   1.36\ns: 16384, rx:   0.43, x:  54.90, wt:   0.44, dx:   1.70\ns: 32768, rx:   0.61, x: 157.41, wt:   0.63, dx:   1.43\n\n65536:8388608\nchecking the L1 cache size... 65536 Bytes\nchecking the L2 cache size... 8388608 Bytes\n```\n",
+    "created_at": "2010-11-07T11:04:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92203",
+    "user": "drkirkby"
+}
+```
 
 Whatever checks are being used to determine the cache size is not working very well. First it reports the L1 cache size is 0, then it spends a couple of minutes on a 3.33 GHz Xeon, to determine the cache size (I thought it had hanged). It's also producing some NaN in the calculation of the cache size - is that not a bug?  
 
@@ -797,9 +1163,20 @@ checking the L2 cache size... 8388608 Bytes
 
 
 
+
 ---
 
-Comment by malb created at 2010-11-07 13:57:27
+archive/issue_comments_092204.json:
+```json
+{
+    "body": "Replying to [comment:29 drkirkby]:\n> Whatever checks are being used to determine the cache size is not working very well.\n\nI disagree, it works fine as far as I know but it is slow. For your machine I'd assume that 65536:8388608 indeed gives pretty good performance. If you want to check whether this hunch is correct let me know and I can tell you how to patch and test M4RI for various cache size configurations.\n\n> First it reports the L1 cache size is 0,\n\nThat's probably because I don't know how to ask Solaris for the right information, however the tuning performed now is the better strategy anyway.\n\n> then it spends a couple of minutes on a 3.33 GHz Xeon, to determine the cache size (I thought it had hanged). \n\nTuning takes a while as described above. Some shells don't seem to print intermediate outputs, I don't know how to fix that. If you do, let me know. Also, I couldn't get reliable information if I lowered the time spent on tuning, if you have any ideas, let me know. \n\n> It's also producing some NaN in the calculation of the cache size - is that not a bug?  \n\nNo, the delta from the first element with respect to the previous element is not defined.",
+    "created_at": "2010-11-07T13:57:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92204",
+    "user": "malb"
+}
+```
 
 Replying to [comment:29 drkirkby]:
 > Whatever checks are being used to determine the cache size is not working very well.
@@ -819,16 +1196,38 @@ Tuning takes a while as described above. Some shells don't seem to print interme
 No, the delta from the first element with respect to the previous element is not defined.
 
 
+
 ---
 
-Comment by malb created at 2011-01-13 10:24:09
+archive/issue_comments_092205.json:
+```json
+{
+    "body": "Minh, do you think you'll have some time to review this?",
+    "created_at": "2011-01-13T10:24:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92205",
+    "user": "malb"
+}
+```
 
 Minh, do you think you'll have some time to review this?
 
 
+
 ---
 
-Comment by zimmerma created at 2011-03-30 12:01:34
+archive/issue_comments_092206.json:
+```json
+{
+    "body": "the speedup provided by this patch is quite impressive. With vanilla Sage 4.6 on a 2.83Ghz Core 2:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: m=matrix(GF(2^8,'x'),1000,1000)\nsage: m.randomize()\nsage: time r=m*m\nCPU times: user 76.33 s, sys: 0.10 s, total: 76.43 s\nWall time: 77.63 s\n```\n\nWith this patch applied:\n\n```\nsage: m=matrix(GF(2^8,'x'),1000,1000)   \nsage: m.randomize()\nsage: time r=m*m\nCPU times: user 0.27 s, sys: 0.00 s, total: 0.27 s\nWall time: 0.29 s\n```\n\nPaul Zimmermann",
+    "created_at": "2011-03-30T12:01:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92206",
+    "user": "zimmerma"
+}
+```
 
 the speedup provided by this patch is quite impressive. With vanilla Sage 4.6 on a 2.83Ghz Core 2:
 
@@ -855,9 +1254,20 @@ Wall time: 0.29 s
 Paul Zimmermann
 
 
+
 ---
 
-Comment by kcrisman created at 2011-06-30 14:03:59
+archive/issue_comments_092207.json:
+```json
+{
+    "body": "On PPC OS X 10.4, this spkg installation hangs at\n\n```\nchecking the L1 cache size... 32768 Bytes\nchecking the L2 cache size... 262144 Bytes\nchecking for cache sizes... \n```\n\nI'm assuming this \"cache size\" checking isn't supposed to take 10 or more minutes.",
+    "created_at": "2011-06-30T14:03:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92207",
+    "user": "kcrisman"
+}
+```
 
 On PPC OS X 10.4, this spkg installation hangs at
 
@@ -870,18 +1280,40 @@ checking for cache sizes...
 I'm assuming this "cache size" checking isn't supposed to take 10 or more minutes.
 
 
+
 ---
 
-Comment by malb created at 2011-06-30 14:17:33
+archive/issue_comments_092208.json:
+```json
+{
+    "body": "Can you run spkg-install manually, i.e. unpack the spkg and run ./spkg-install in a SAGE shell? It will print intermediate information which might tell us whether it just takes long or whether it really hangs?",
+    "created_at": "2011-06-30T14:17:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92208",
+    "user": "malb"
+}
+```
 
 Can you run spkg-install manually, i.e. unpack the spkg and run ./spkg-install in a SAGE shell? It will print intermediate information which might tell us whether it just takes long or whether it really hangs?
 
 
+
 ---
 
-Comment by kcrisman created at 2011-06-30 14:34:42
+archive/issue_comments_092209.json:
+```json
+{
+    "body": "So far it just seems to be **extremely** slow.  Well, this *is* a machine with a 700MHz processor...\n\nIn lines like\n\n```\ns:   512, rx:  18.03, x:  18.03, wt:  18.03, dx:    NaN\ns:  1024, rx:  73.30, x:  73.30, wt:  73.31, dx:   2.03\n```\n\nwhich column gives the timing, if any?",
+    "created_at": "2011-06-30T14:34:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92209",
+    "user": "kcrisman"
+}
+```
 
-So far it just seems to be *extremely* slow.  Well, this _is_ a machine with a 700MHz processor...
+So far it just seems to be **extremely** slow.  Well, this *is* a machine with a 700MHz processor...
 
 In lines like
 
@@ -893,11 +1325,22 @@ s:  1024, rx:  73.30, x:  73.30, wt:  73.31, dx:   2.03
 which column gives the timing, if any?
 
 
+
 ---
 
-Comment by kcrisman created at 2011-06-30 18:05:43
+archive/issue_comments_092210.json:
+```json
+{
+    "body": "Okay, it *did* finally finish!  \n\n```\nchecking for cache sizes... \ns:     4, rx:   0.20, x:   0.20, wt:   0.20, dx:    NaN\ns:     8, rx:   0.38, x:   0.38, wt:   0.38, dx:   0.96\ns:    16, rx:   0.39, x:   0.79, wt:   0.39, dx:   1.03\ns:    32, rx:   0.46, x:   1.83, wt:   0.46, dx:   1.16\ns:    64, rx:   0.49, x:   3.92, wt:   0.49, dx:   1.07\ns:   128, rx:   0.57, x:   9.17, wt:   0.57, dx:   1.17\ns:   256, rx:   0.63, x:  40.57, wt:   0.64, dx:   2.21\ns:   512, rx:   1.17, x: 300.03, wt:   1.18, dx:   3.70\n\ns:     4, rx:   0.19, x:   0.19, wt:   0.19, dx:    NaN\ns:     8, rx:   0.38, x:   0.38, wt:   0.38, dx:   1.01\ns:    16, rx:   0.42, x:   0.83, wt:   0.42, dx:   1.10\ns:    32, rx:   0.44, x:   1.78, wt:   0.44, dx:   1.06\ns:    64, rx:   0.50, x:   4.00, wt:   0.50, dx:   1.13\ns:   128, rx:   0.46, x:  14.83, wt:   0.46, dx:   1.85\ns:   256, rx:   0.99, x:  63.40, wt:   0.99, dx:   2.14\ns:   512, rx:   1.21, x: 310.35, wt:   1.22, dx:   2.45\n\ns:     4, rx:   0.17, x:   0.17, wt:   0.17, dx:    NaN\ns:     8, rx:   0.39, x:   0.39, wt:   0.39, dx:   1.14\ns:    16, rx:   0.43, x:   0.87, wt:   0.43, dx:   1.11\ns:    32, rx:   0.43, x:   1.73, wt:   0.43, dx:   1.00\ns:    64, rx:   0.47, x:   3.74, wt:   0.47, dx:   1.08\ns:   128, rx:   0.60, x:   9.58, wt:   0.60, dx:   1.28\ns:   256, rx:   0.56, x:  36.13, wt:   0.57, dx:   1.89\ns:   512, rx:   1.25, x: 320.55, wt:   1.26, dx:   4.44\n\ns:     4, rx:   0.21, x:   0.21, wt:   0.21, dx:    NaN\ns:     8, rx:   0.39, x:   0.39, wt:   0.39, dx:   0.94\ns:    16, rx:   0.43, x:   0.85, wt:   0.43, dx:   1.10\ns:    32, rx:   0.44, x:   1.74, wt:   0.44, dx:   1.02\ns:    64, rx:   0.48, x:   3.87, wt:   0.48, dx:   1.11\ns:   128, rx:   0.59, x:   9.39, wt:   0.59, dx:   1.21\ns:   256, rx:   0.63, x:  40.42, wt:   0.63, dx:   2.15\ns:   512, rx:   1.16, x: 297.41, wt:   1.17, dx:   3.68\n\ns:     4, rx:   0.19, x:   0.19, wt:   0.19, dx:    NaN\ns:     8, rx:   0.39, x:   0.39, wt:   0.39, dx:   1.01\ns:    16, rx:   0.41, x:   0.82, wt:   0.41, dx:   1.04\ns:    32, rx:   0.42, x:   1.69, wt:   0.42, dx:   1.04\ns:    64, rx:   0.48, x:   3.81, wt:   0.48, dx:   1.13\ns:   128, rx:   0.59, x:   9.40, wt:   0.59, dx:   1.23\ns:   256, rx:   0.73, x:  46.75, wt:   0.73, dx:   2.49\ns:   512, rx:   1.20, x: 306.20, wt:   1.20, dx:   3.27\n\ns:   512, rx:  20.54, x:  20.54, wt:  20.54, dx:    NaN\ns:  1024, rx:  68.61, x:  68.61, wt:  68.63, dx:   1.67\ns:  1536, rx:   0.24, x: 124.21, wt:   0.26, dx:   1.21\ns:  2048, rx:   0.18, x: 182.39, wt:   0.20, dx:   1.10\ns:  3072, rx:   0.30, x: 303.95, wt:   0.32, dx:   1.11\ns:  4096, rx:   0.24, x: 487.92, wt:   0.28, dx:   1.20\ns:  6144, rx:   0.19, x: 793.79, wt:   0.25, dx:   1.08\ns:  8192, rx:   0.00, x:   0.38, wt:   0.08, dx:   0.00\ns: 16384, rx:   0.00, x:   0.31, wt:   0.19, dx:   0.41\ns: 32768, rx:   0.00, x:   0.37, wt:   0.32, dx:   0.59\n\ns:   512, rx:  18.06, x:  18.06, wt:  18.07, dx:    NaN\ns:  1024, rx:  68.43, x:  68.43, wt:  68.43, dx:   1.89\ns:  1536, rx:   0.24, x: 125.17, wt:   0.26, dx:   1.22\ns:  2048, rx:   0.17, x: 169.91, wt:   0.18, dx:   1.02\ns:  3072, rx:   0.31, x: 318.15, wt:   0.34, dx:   1.25\ns:  4096, rx:   0.22, x: 444.11, wt:   0.26, dx:   1.05\ns:  6144, rx:   0.20, x: 803.39, wt:   0.26, dx:   1.21\ns:  8192, rx:   0.00, x:   0.30, wt:   0.08, dx:   0.00\ns: 16384, rx:   0.00, x:   0.38, wt:   0.15, dx:   0.62\ns: 32768, rx:   0.00, x:   0.31, wt:   0.31, dx:   0.41\n\ns:   512, rx:  17.85, x:  17.85, wt:  17.86, dx:    NaN\ns:  1024, rx:  68.59, x:  68.59, wt:  68.60, dx:   1.92\ns:  1536, rx:   0.26, x: 131.07, wt:   0.27, dx:   1.27\ns:  2048, rx:   0.18, x: 182.17, wt:   0.20, dx:   1.04\ns:  3072, rx:   0.32, x: 323.67, wt:   0.34, dx:   1.18\ns:  4096, rx:   0.22, x: 444.65, wt:   0.26, dx:   1.03\ns:  6144, rx:   0.19, x: 788.59, wt:   0.25, dx:   1.18\ns:  8192, rx:   0.29, x: 1203.62, wt:   0.38, dx:   1.14\ns: 16384, rx:   0.00, x:   0.35, wt:   0.16, dx:   0.00\ns: 32768, rx:   0.00, x:   0.35, wt:   0.33, dx:   0.50\n\ns:   512, rx:  17.39, x:  17.39, wt:  17.40, dx:    NaN\ns:  1024, rx:  68.02, x:  68.02, wt:  68.03, dx:   1.96\ns:  1536, rx:   0.24, x: 123.60, wt:   0.26, dx:   1.21\ns:  2048, rx:   0.17, x: 178.99, wt:   0.19, dx:   1.09\ns:  3072, rx:   0.29, x: 301.11, wt:   0.32, dx:   1.12\ns:  4096, rx:   0.24, x: 501.66, wt:   0.28, dx:   1.25\ns:  6144, rx:   0.19, x: 796.99, wt:   0.25, dx:   1.06\ns:  8192, rx:   0.28, x: 1141.88, wt:   0.36, dx:   1.07\ns: 16384, rx:   0.00, x:   0.36, wt:   0.15, dx:   0.00\ns: 32768, rx:   0.00, x:   0.37, wt:   0.31, dx:   0.51\n\ns:   512, rx:  19.65, x:  19.65, wt:  19.66, dx:    NaN\ns:  1024, rx:  68.37, x:  68.37, wt:  68.38, dx:   1.74\ns:  1536, rx:   0.23, x: 119.48, wt:   0.26, dx:   1.16\ns:  2048, rx:   0.20, x: 202.14, wt:   0.22, dx:   1.27\ns:  3072, rx:   0.29, x: 299.73, wt:   0.32, dx:   0.99\ns:  4096, rx:   0.22, x: 441.61, wt:   0.26, dx:   1.11\ns:  6144, rx:   0.19, x: 795.29, wt:   0.25, dx:   1.20\ns:  8192, rx:   0.28, x: 1141.73, wt:   0.35, dx:   1.08\ns: 16384, rx:   0.00, x:   0.35, wt:   0.16, dx:   0.00\ns: 32768, rx:   0.00, x:   0.35, wt:   0.32, dx:   0.50\n\n262144:524288\n```\n\n\n\n----\n\nDoctest failure:\n\n```\n    sage: A.pivots() # indirect doctest\nExpected:\n     [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]\nGot:\n    (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14)\n```\n\n\nSeries of failures, for all such doctests:\n\n```\n    AttributeError: 'sage.matrix.matrix_mod2e_dense.Matrix_mod2e_dense' object has no attribute '_multiply_classical'\n```\n\nIs something not inheriting properly?  This method seems to be defined in Sage, and similar doctests in the rest of the matrix/ folder pass (in fact, all other tests in crypto and matrix pass other than one unrelated one from something I did on this installation).",
+    "created_at": "2011-06-30T18:05:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92210",
+    "user": "kcrisman"
+}
+```
 
-Okay, it _did_ finally finish!  
+Okay, it *did* finally finish!  
 
 ```
 checking for cache sizes... 
@@ -1028,12 +1471,23 @@ Series of failures, for all such doctests:
 Is something not inheriting properly?  This method seems to be defined in Sage, and similar doctests in the rest of the matrix/ folder pass (in fact, all other tests in crypto and matrix pass other than one unrelated one from something I did on this installation).
 
 
+
 ---
 
-Comment by malb created at 2011-06-30 20:35:45
+archive/issue_comments_092211.json:
+```json
+{
+    "body": "Replying to [comment:37 kcrisman]:\n> Okay, it *did* finally finish!  \n\nOkay, good ... well, I'm still not sure what I should do about this. The easiest might be to disable cache tuning on PPC?\n\n> ----\n> \n> Doctest failure:\n> {{{\n>     sage: A.pivots() # indirect doctest\n> Expected:\n>      [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]\n> Got:\n>     (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14)\n> }}}\n\nI can reproduce this one.\n\n> Series of failures, for all such doctests:\n> {{{\n>     AttributeError: 'sage.matrix.matrix_mod2e_dense.Matrix_mod2e_dense' object has no attribute '_multiply_classical'\n> }}}\n> Is something not inheriting properly?  This method seems to be defined in Sage, and similar doctests in the rest of the matrix/ folder pass (in fact, all other tests in crypto and matrix pass other than one unrelated one from something I did on this installation).\n\nI cannot seem to reproduce these (in the matrix/ folder). Which file does give this?\n\nPS: Thank you so much for taking an interest in this ticket!",
+    "created_at": "2011-06-30T20:35:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92211",
+    "user": "malb"
+}
+```
 
 Replying to [comment:37 kcrisman]:
-> Okay, it _did_ finally finish!  
+> Okay, it *did* finally finish!  
 
 Okay, good ... well, I'm still not sure what I should do about this. The easiest might be to disable cache tuning on PPC?
 
@@ -1061,9 +1515,20 @@ I cannot seem to reproduce these (in the matrix/ folder). Which file does give t
 PS: Thank you so much for taking an interest in this ticket!
 
 
+
 ---
 
-Comment by kcrisman created at 2011-07-01 00:12:57
+archive/issue_comments_092212.json:
+```json
+{
+    "body": "> Okay, good ... well, I'm still not sure what I should do about this. The easiest might be to disable cache tuning on PPC?\n\nWhat I would say is to disable this on any machine that is probably old and slow - this is probably not a PPC thing per se.  That would be OS X 10.4, probably older versions of Ubuntu, ... I don't know how one would do this, though.\n\n> > Series of failures, for all such doctests:\n> > {{{\n> >     AttributeError: 'sage.matrix.matrix_mod2e_dense.Matrix_mod2e_dense' object has no attribute '_multiply_classical'\n> > }}}\n> \n> I cannot seem to reproduce these (in the matrix/ folder). Which file does give this?\n> \n\nThis is the new file and class 'sage.matrix.matrix_mod2e_dense.Matrix_mod2e_dense' as indicated above.  Since the tests for `_multiply_classical` work in other files, something isn't working about the inheritance.  \n\nThis *could* be related to my having installed numpy 1.6 before testing.  But that would seem strange, since neither this nor the other multiplication rely on this, they are .pyx files... and all the other ones work...\n\n> PS: Thank you so much for taking an interest in this ticket!\nI just have an interest in making sure older systems can still use Sage.  There is too much planned obsolescence in computers already.",
+    "created_at": "2011-07-01T00:12:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92212",
+    "user": "kcrisman"
+}
+```
 
 > Okay, good ... well, I'm still not sure what I should do about this. The easiest might be to disable cache tuning on PPC?
 
@@ -1079,22 +1544,44 @@ What I would say is to disable this on any machine that is probably old and slow
 
 This is the new file and class 'sage.matrix.matrix_mod2e_dense.Matrix_mod2e_dense' as indicated above.  Since the tests for `_multiply_classical` work in other files, something isn't working about the inheritance.  
 
-This _could_ be related to my having installed numpy 1.6 before testing.  But that would seem strange, since neither this nor the other multiplication rely on this, they are .pyx files... and all the other ones work...
+This *could* be related to my having installed numpy 1.6 before testing.  But that would seem strange, since neither this nor the other multiplication rely on this, they are .pyx files... and all the other ones work...
 
 > PS: Thank you so much for taking an interest in this ticket!
 I just have an interest in making sure older systems can still use Sage.  There is too much planned obsolescence in computers already.
 
 
+
 ---
 
-Comment by malb created at 2011-07-01 15:12:32
+archive/issue_comments_092213.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2011-07-01T15:12:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92213",
+    "user": "malb"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by malb created at 2011-07-01 15:12:32
+archive/issue_comments_092214.json:
+```json
+{
+    "body": "Hi, can you give\n\n   http://sage.math.washington.edu/home/malb/spkgs/libm4ri-20110701.alpha.spkg\n\na try? It doesn't fix the doctest failures but compilation should be quicker and provide more feedback.",
+    "created_at": "2011-07-01T15:12:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92214",
+    "user": "malb"
+}
+```
 
 Hi, can you give
 
@@ -1103,37 +1590,92 @@ Hi, can you give
 a try? It doesn't fix the doctest failures but compilation should be quicker and provide more feedback.
 
 
+
 ---
 
-Comment by kcrisman created at 2011-07-01 16:35:22
+archive/issue_comments_092215.json:
+```json
+{
+    "body": "Sorry, I won't have access to that machine for a while now.",
+    "created_at": "2011-07-01T16:35:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92215",
+    "user": "kcrisman"
+}
+```
 
 Sorry, I won't have access to that machine for a while now.
 
 
+
 ---
 
-Comment by kcrisman created at 2011-07-05 13:56:07
+archive/issue_comments_092216.json:
+```json
+{
+    "body": "I'm a little confused.  The spkgs here and at #11574 are both libm4ri, and seem to be numbered backwards (the \"earlier\" one in the dependency is from 2011).",
+    "created_at": "2011-07-05T13:56:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92216",
+    "user": "kcrisman"
+}
+```
 
 I'm a little confused.  The spkgs here and at #11574 are both libm4ri, and seem to be numbered backwards (the "earlier" one in the dependency is from 2011).
 
 
+
 ---
 
-Comment by kcrisman created at 2011-07-05 14:50:32
+archive/issue_comments_092217.json:
+```json
+{
+    "body": "Okay, I figured it out - sorry for the noise.  I agree that it is very annoying to have two things inside the same spkg.  There is, for instance, an open ticket to remove rpy2 from the r spkg.",
+    "created_at": "2011-07-05T14:50:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92217",
+    "user": "kcrisman"
+}
+```
 
 Okay, I figured it out - sorry for the noise.  I agree that it is very annoying to have two things inside the same spkg.  There is, for instance, an open ticket to remove rpy2 from the r spkg.
 
 
+
 ---
 
-Comment by kcrisman created at 2011-07-05 14:50:32
+archive/issue_comments_092218.json:
+```json
+{
+    "body": "Remove assignee tbd.",
+    "created_at": "2011-07-05T14:50:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92218",
+    "user": "kcrisman"
+}
+```
 
 Remove assignee tbd.
 
 
+
 ---
 
-Comment by malb created at 2011-07-05 15:12:45
+archive/issue_comments_092219.json:
+```json
+{
+    "body": "Replying to [comment:44 kcrisman]:\n> Okay, I figured it out - sorry for the noise.\n\nNP, I should have explained things better.\n\n> I agree that it is very annoying to have two things inside the same spkg.  \n> There is, for instance, an open ticket to remove rpy2 from the r spkg.  \n\nWell, it makes it easier to re-use tuning results. For example, I plan to run the cache tuning only once, i.e. for M4RI and M4RIE would re-use the results.",
+    "created_at": "2011-07-05T15:12:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92219",
+    "user": "malb"
+}
+```
 
 Replying to [comment:44 kcrisman]:
 > Okay, I figured it out - sorry for the noise.
@@ -1146,9 +1688,20 @@ NP, I should have explained things better.
 Well, it makes it easier to re-use tuning results. For example, I plan to run the cache tuning only once, i.e. for M4RI and M4RIE would re-use the results.
 
 
+
 ---
 
-Comment by kcrisman created at 2011-07-05 15:17:07
+archive/issue_comments_092220.json:
+```json
+{
+    "body": "Replying to [comment:45 malb]:\n> Replying to [comment:44 kcrisman]:\n> > I agree that it is very annoying to have two things inside the same spkg.  \n> > There is, for instance, an open ticket to remove rpy2 from the r spkg.  \n> \n> Well, it makes it easier to re-use tuning results. For example, I plan to run the cache tuning only once, i.e. for M4RI and M4RIE would re-use the results. \n\nThat makes a lot of sense, especially since that takes a while even on speedy machines.\n\n----\nBy the way, I tried #11574 but ran into trouble with an undefined symbol about `m4ri_swap_bits`, perhaps due to my having installed #9562 first.  I did apply the patch at #11574.  Anyway, I'm reverting to the vanilla Sage version, and then going back to #11574 (I already had done the PolyBoRi upgrade).",
+    "created_at": "2011-07-05T15:17:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92220",
+    "user": "kcrisman"
+}
+```
 
 Replying to [comment:45 malb]:
 > Replying to [comment:44 kcrisman]:
@@ -1163,51 +1716,130 @@ That makes a lot of sense, especially since that takes a while even on speedy ma
 By the way, I tried #11574 but ran into trouble with an undefined symbol about `m4ri_swap_bits`, perhaps due to my having installed #9562 first.  I did apply the patch at #11574.  Anyway, I'm reverting to the vanilla Sage version, and then going back to #11574 (I already had done the PolyBoRi upgrade).
 
 
+
 ---
 
-Comment by malb created at 2011-07-05 15:22:33
+archive/issue_comments_092221.json:
+```json
+{
+    "body": "Hi, I updated the patch for #11574 21h ago, did you try it? It fixes the missing symbol stuff.",
+    "created_at": "2011-07-05T15:22:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92221",
+    "user": "malb"
+}
+```
 
 Hi, I updated the patch for #11574 21h ago, did you try it? It fixes the missing symbol stuff.
 
 
+
 ---
 
-Comment by kcrisman created at 2011-07-05 15:34:12
+archive/issue_comments_092222.json:
+```json
+{
+    "body": "Replying to [comment:47 malb]:\n> Hi, I updated the patch for #11574 21h ago, did you try it? It fixes the missing symbol stuff.\nYes, for some reason I must have had things applied in the wrong order, though, so I am starting from scratch.",
+    "created_at": "2011-07-05T15:34:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92222",
+    "user": "kcrisman"
+}
+```
 
 Replying to [comment:47 malb]:
 > Hi, I updated the patch for #11574 21h ago, did you try it? It fixes the missing symbol stuff.
 Yes, for some reason I must have had things applied in the wrong order, though, so I am starting from scratch.
 
 
+
 ---
 
-Comment by malb created at 2011-07-06 16:41:24
+archive/issue_comments_092223.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2011-07-06T16:41:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92223",
+    "user": "malb"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by malb created at 2011-07-06 16:48:05
+archive/issue_comments_092224.json:
+```json
+{
+    "body": "apply to root repository not to normal Sage repository",
+    "created_at": "2011-07-06T16:48:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92224",
+    "user": "malb"
+}
+```
 
 apply to root repository not to normal Sage repository
 
 
+
 ---
+
+archive/issue_comments_092225.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2011-07-06T16:48:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92225",
+    "user": "malb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by fbissey created at 2011-07-06 18:54:48
+archive/issue_comments_092226.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2011-07-06T18:54:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92226",
+    "user": "fbissey"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by fbissey created at 2011-07-06 18:54:48
+archive/issue_comments_092227.json:
+```json
+{
+    "body": "Please no\n\n```\ndepends = [SAGE_ROOT + \"/local/include/m4rie/m4rie.h\"],\n```\n\nin module_list.py I have just cleaned up (#11377) do\n\n```\ndepends = [SAGE_INC + \"m4rie/m4rie.h\"],\n```\n\ninstead.",
+    "created_at": "2011-07-06T18:54:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92227",
+    "user": "fbissey"
+}
+```
 
 Please no
 
@@ -1224,32 +1856,76 @@ depends = [SAGE_INC + "m4rie/m4rie.h"],
 instead.
 
 
+
 ---
 
-Comment by malb created at 2011-07-07 09:30:02
+archive/issue_comments_092228.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2011-07-07T09:30:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92228",
+    "user": "malb"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by malb created at 2011-07-07 09:30:02
+archive/issue_comments_092229.json:
+```json
+{
+    "body": "Okay, fixed.",
+    "created_at": "2011-07-07T09:30:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92229",
+    "user": "malb"
+}
+```
 
 Okay, fixed.
 
 
+
 ---
 
-Comment by fbissey created at 2011-07-10 04:16:35
+archive/issue_comments_092230.json:
+```json
+{
+    "body": "If I could just squeeze an extra request (not counting for review): could you tag a corresponding release of m4rie on bitbucket? That way I could make a gentoo ebuild from the bitbucket release rather than pulling the spkg. \n\nI also see that suddenly we have split libm4rie from libm4ri (which I am happy about) but without apparent warnings.",
+    "created_at": "2011-07-10T04:16:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92230",
+    "user": "fbissey"
+}
+```
 
 If I could just squeeze an extra request (not counting for review): could you tag a corresponding release of m4rie on bitbucket? That way I could make a gentoo ebuild from the bitbucket release rather than pulling the spkg. 
 
 I also see that suddenly we have split libm4rie from libm4ri (which I am happy about) but without apparent warnings.
 
 
+
 ---
 
-Comment by malb created at 2011-07-10 11:30:38
+archive/issue_comments_092231.json:
+```json
+{
+    "body": "Yeah, sorry I was a bit lazy:\n\n1) There will be an official 20110715 release of both M4RI and M4RIE. I put together the SPKGs to test whether they work with Sage. So perhaps I shouldn't have set \"needs review\"\n\n2) Yes, I gave in to the demand to split them. I should have mentioned it.",
+    "created_at": "2011-07-10T11:30:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92231",
+    "user": "malb"
+}
+```
 
 Yeah, sorry I was a bit lazy:
 
@@ -1258,37 +1934,92 @@ Yeah, sorry I was a bit lazy:
 2) Yes, I gave in to the demand to split them. I should have mentioned it.
 
 
+
 ---
 
-Comment by malb created at 2011-07-10 11:30:38
+archive/issue_comments_092232.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2011-07-10T11:30:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92232",
+    "user": "malb"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by fbissey created at 2011-07-10 19:44:16
+archive/issue_comments_092233.json:
+```json
+{
+    "body": "I must say it only occurred to me yesterday while looking at tags on bitbucket that 20110715 is in the future.",
+    "created_at": "2011-07-10T19:44:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92233",
+    "user": "fbissey"
+}
+```
 
 I must say it only occurred to me yesterday while looking at tags on bitbucket that 20110715 is in the future.
 
 
+
 ---
 
-Comment by malb created at 2011-07-11 14:22:59
+archive/issue_comments_092234.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2011-07-11T14:22:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92234",
+    "user": "malb"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by malb created at 2011-07-11 14:22:59
+archive/issue_comments_092235.json:
+```json
+{
+    "body": "It's now officially released.",
+    "created_at": "2011-07-11T14:22:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92235",
+    "user": "malb"
+}
+```
 
 It's now officially released.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-08-15 16:53:03
+archive/issue_comments_092236.json:
+```json
+{
+    "body": "I get numerous errors when trying to install the spkg. The following is just a small selection of errors:\n\n```\n...\n/mnt/local/king/SAGE/sage-4.7.1.rc1/spkg/build/libm4rie-20110715/m4rie/src/travolta.c:248: error: too many arguments to function 'mzed_make_table'\n/mnt/local/king/SAGE/sage-4.7.1.rc1/spkg/build/libm4rie-20110715/m4rie/src/travolta.c:249: warning: passing argument 2 of 'mzed_make_table' makes pointer from integer without a cast\n/mnt/local/king/SAGE/sage-4.7.1.rc1/spkg/build/libm4rie-20110715/m4rie/src/travolta.c:145: note: expected 'struct mzed_t *' but argument is of type 'size_t'\n/mnt/local/king/SAGE/sage-4.7.1.rc1/spkg/build/libm4rie-20110715/m4rie/src/travolta.c:249: warning: passing argument 3 of 'mzed_make_table' makes pointer from integer without a cast\n/mnt/local/king/SAGE/sage-4.7.1.rc1/spkg/build/libm4rie-20110715/m4rie/src/travolta.c:145: note: expected 'struct gf2e *' but argument is of type 'size_t'\n/mnt/local/king/SAGE/sage-4.7.1.rc1/spkg/build/libm4rie-20110715/m4rie/src/travolta.c:249: error: too many arguments to function 'mzed_make_table'\n/mnt/local/king/SAGE/sage-4.7.1.rc1/spkg/build/libm4rie-20110715/m4rie/src/travolta.c:251: error: 'mzed_t' has no member named 'nrows'\n/mnt/local/king/SAGE/sage-4.7.1.rc1/spkg/build/libm4rie-20110715/m4rie/src/travolta.c:251: warning: passing argument 2 of 'mzed_process_rows3' makes pointer from integer without a cast\n/mnt/local/king/SAGE/sage-4.7.1.rc1/spkg/build/libm4rie-20110715/m4rie/src/travolta.h:172: note: expected 'struct mzed_t *' but argument is of type 'size_t'\n/mnt/local/king/SAGE/sage-4.7.1.rc1/spkg/build/libm4rie-20110715/m4rie/src/travolta.c:251: warning: passing argument 4 of 'mzed_process_rows3' makes pointer from integer without a cast\n/mnt/local/king/SAGE/sage-4.7.1.rc1/spkg/build/libm4rie-20110715/m4rie/src/travolta.h:172: note: expected 'struct mzed_t *' but argument is of type 'size_t'\n/mnt/local/king/SAGE/sage-4.7.1.rc1/spkg/build/libm4rie-20110715/m4rie/src/travolta.c:251: error: too many arguments to function 'mzed_process_rows3'\n/mnt/local/king/SAGE/sage-4.7.1.rc1/spkg/build/libm4rie-20110715/m4rie/src/travolta.c:253: warning: passing argument 3 of 'mzed_process_rows3' makes pointer from integer without a cast\n/mnt/local/king/SAGE/sage-4.7.1.rc1/spkg/build/libm4rie-20110715/m4rie/src/travolta.h:172: note: expected 'struct mzed_t *' but argument is of type 'size_t'\n/mnt/local/king/SAGE/sage-4.7.1.rc1/spkg/build/libm4rie-20110715/m4rie/src/travolta.c:253: warning: passing argument 4 of 'mzed_process_rows3' makes pointer from integer without a cast\n/mnt/local/king/SAGE/sage-4.7.1.rc1/spkg/build/libm4rie-20110715/m4rie/src/travolta.h:172: note: expected 'struct mzed_t *' but argument is of type 'size_t'\n/mnt/local/king/SAGE/sage-4.7.1.rc1/spkg/build/libm4rie-20110715/m4rie/src/travolta.c:253: error: too many arguments to function 'mzed_process_rows3'\n/mnt/local/king/SAGE/sage-4.7.1.rc1/spkg/build/libm4rie-20110715/m4rie/src/travolta.c:256: warning: passing argument 2 of 'mzed_make_table' makes pointer from integer without a cast\n/mnt/local/king/SAGE/sage-4.7.1.rc1/spkg/build/libm4rie-20110715/m4rie/src/travolta.c:145: note: expected 'struct mzed_t *' but argument is of type 'size_t'\nmake[1]: libtool: compile:  gcc -std=gnu99 -DHAVE_CONFIG_H -I. -I/mnt/local/king/SAGE/sage-4.7.1.rc1/spkg/build/libm4rie-20110715/m4rie -I./src -I/mnt/local/king/SAGE/sage-4.7.1.rc1/local/include -I/mnt/local/king/SAGE/sage-4.7.1.rc1/local/include -g -fPIC -Wall -pedantic -O2 -MT finite_field.lo -MD -MP -MF .deps/finite_field.Tpo -c /mnt/local/king/SAGE/sage-4.7.1.rc1/spkg/build/libm4rie-20110715/m4rie/src/finite_field.c -o finite_field.o >/dev/null 2>&1\n*** [gf2e_matrix.lo] Fehler 1\n...\n```\n\n\nWhat may be the problem? Is it needed to apply the patches first (in contrast to what is said in the ticket description)?",
+    "created_at": "2011-08-15T16:53:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92236",
+    "user": "SimonKing"
+}
+```
 
 I get numerous errors when trying to install the spkg. The following is just a small selection of errors:
 
@@ -1322,51 +2053,128 @@ make[1]: libtool: compile:  gcc -std=gnu99 -DHAVE_CONFIG_H -I. -I/mnt/local/king
 What may be the problem? Is it needed to apply the patches first (in contrast to what is said in the ticket description)?
 
 
+
 ---
 
-Comment by SimonKing created at 2011-08-15 16:53:03
+archive/issue_comments_092237.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2011-08-15T16:53:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92237",
+    "user": "SimonKing"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-08-15 16:53:56
+archive/issue_comments_092238.json:
+```json
+{
+    "body": "Ouch. Sorry. Right when hitting the \"submit\" button, I saw that the ticket has a dependency that I forgot to apply first.",
+    "created_at": "2011-08-15T16:53:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92238",
+    "user": "SimonKing"
+}
+```
 
 Ouch. Sorry. Right when hitting the "submit" button, I saw that the ticket has a dependency that I forgot to apply first.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-08-15 16:54:05
+archive/issue_comments_092239.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2011-08-15T16:54:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92239",
+    "user": "SimonKing"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-08-15 20:11:02
+archive/issue_comments_092240.json:
+```json
+{
+    "body": "I got doctest failures in 4 files. But I have to admit that I applied your patch on top of various other patches, in particular #9138 (which is quite invasive). So, it could be that the problems are ultimately due to other patches.",
+    "created_at": "2011-08-15T20:11:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92240",
+    "user": "SimonKing"
+}
+```
 
 I got doctest failures in 4 files. But I have to admit that I applied your patch on top of various other patches, in particular #9138 (which is quite invasive). So, it could be that the problems are ultimately due to other patches.
 
 
+
 ---
 
-Comment by malb created at 2011-08-15 20:27:56
+archive/issue_comments_092241.json:
+```json
+{
+    "body": "I'll build 4.7.1.rc2 (on sage.math and locally) and test with that.",
+    "created_at": "2011-08-15T20:27:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92241",
+    "user": "malb"
+}
+```
 
 I'll build 4.7.1.rc2 (on sage.math and locally) and test with that.
 
 
+
 ---
 
-Comment by malb created at 2011-08-15 22:26:22
+archive/issue_comments_092242.json:
+```json
+{
+    "body": "Simon, did you install #11261 as well and rebuild pbori.pyx? It's a dependency of the M4RI update and easy to overlook.",
+    "created_at": "2011-08-15T22:26:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92242",
+    "user": "malb"
+}
+```
 
 Simon, did you install #11261 as well and rebuild pbori.pyx? It's a dependency of the M4RI update and easy to overlook.
 
 
+
 ---
 
-Comment by malb created at 2011-08-15 22:54:14
+archive/issue_comments_092243.json:
+```json
+{
+    "body": "With everything applied + 4.7.1.rc2 I get\n\n\n```\nThe following tests failed:\n\nsage -t  -long -force_lib devel/sage/sage/tests/cmdline.py # 1 doctests failed\n```\n\n\nwhich is normal on sage.math.",
+    "created_at": "2011-08-15T22:54:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92243",
+    "user": "malb"
+}
+```
 
 With everything applied + 4.7.1.rc2 I get
 
@@ -1381,9 +2189,20 @@ sage -t  -long -force_lib devel/sage/sage/tests/cmdline.py # 1 doctests failed
 which is normal on sage.math.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-08-16 06:10:39
+archive/issue_comments_092244.json:
+```json
+{
+    "body": "Replying to [comment:67 malb]:\n> Simon, did you install #11261 as well and rebuild pbori.pyx? It's a dependency of the M4RI update and easy to overlook.\n\nMe stupid! I only installed #11574, but not its dependency!",
+    "created_at": "2011-08-16T06:10:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92244",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:67 malb]:
 > Simon, did you install #11261 as well and rebuild pbori.pyx? It's a dependency of the M4RI update and easy to overlook.
@@ -1391,23 +2210,56 @@ Replying to [comment:67 malb]:
 Me stupid! I only installed #11574, but not its dependency!
 
 
+
 ---
 
-Comment by SimonKing created at 2011-08-16 10:44:41
+archive/issue_comments_092245.json:
+```json
+{
+    "body": "The doc tests pass, but I think the documentation must be put into the reference manual.",
+    "created_at": "2011-08-16T10:44:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92245",
+    "user": "SimonKing"
+}
+```
 
 The doc tests pass, but I think the documentation must be put into the reference manual.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-08-16 10:44:41
+archive/issue_comments_092246.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2011-08-16T10:44:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92246",
+    "user": "SimonKing"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-08-16 11:54:11
+archive/issue_comments_092247.json:
+```json
+{
+    "body": "I found one benchmark that you should improve:\n\n\n```\nsage: MS = MatrixSpace(GF(64,'a'),5000,5000)\nsage: K = MS.base_ring()\nsage: c = K.random_element()\nsage: %time A*c\nCPU times: user 1.33 s, sys: 0.02 s, total: 1.35 s\nWall time: 1.35 s\n5000 x 5000 dense matrix over Finite Field in a of size 2^6\nsage: MS1 = MatrixSpace(GF(64,'a'),1,5000)\nsage: B = MS1.random_element()\nsage: %timeit B*c\n625 loops, best of 3: 291 \u00b5s per loop\n```\n\n\nThe reason is that \"A*c\" relies on a slow generic implementation.\n\nI am sure that your library has a fast way to multiply a row respectively a matrix with a scalar. But you should overload `_lmul_` (please not `_rmul_`, according to the documentation), so that the user can benefit from it.",
+    "created_at": "2011-08-16T11:54:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92247",
+    "user": "SimonKing"
+}
+```
 
 I found one benchmark that you should improve:
 
@@ -1432,9 +2284,20 @@ The reason is that "A*c" relies on a slow generic implementation.
 I am sure that your library has a fast way to multiply a row respectively a matrix with a scalar. But you should overload `_lmul_` (please not `_rmul_`, according to the documentation), so that the user can benefit from it.
 
 
+
 ---
 
-Comment by malb created at 2011-08-16 12:18:17
+archive/issue_comments_092248.json:
+```json
+{
+    "body": "Replying to [comment:70 SimonKing]:\n> The doc tests pass, but I think the documentation must be put into the reference manual.\n\nI'm not sure that's desirable: most functions are cdefs and hence won't show up. Other functions begin with underscores (`_foo`) and hence won't show up. Thus, it looks pretty weird and as if very few actual functionality was implemented.",
+    "created_at": "2011-08-16T12:18:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92248",
+    "user": "malb"
+}
+```
 
 Replying to [comment:70 SimonKing]:
 > The doc tests pass, but I think the documentation must be put into the reference manual.
@@ -1442,23 +2305,56 @@ Replying to [comment:70 SimonKing]:
 I'm not sure that's desirable: most functions are cdefs and hence won't show up. Other functions begin with underscores (`_foo`) and hence won't show up. Thus, it looks pretty weird and as if very few actual functionality was implemented.
 
 
+
 ---
 
-Comment by malb created at 2011-08-16 12:39:04
+archive/issue_comments_092249.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2011-08-16T12:39:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92249",
+    "user": "malb"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by malb created at 2011-08-16 12:39:04
+archive/issue_comments_092250.json:
+```json
+{
+    "body": "The updated patch includes `_lmul_` and includes this class in the reference manual. However, there isn't much content any way so it might be better not to include it?",
+    "created_at": "2011-08-16T12:39:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92250",
+    "user": "malb"
+}
+```
 
 The updated patch includes `_lmul_` and includes this class in the reference manual. However, there isn't much content any way so it might be better not to include it?
 
 
+
 ---
 
-Comment by SimonKing created at 2011-08-16 12:43:07
+archive/issue_comments_092251.json:
+```json
+{
+    "body": "Replying to [comment:73 malb]:\n> The updated patch includes `_lmul_` and includes this class in the reference manual. However, there isn't much content any way so it might be better not to include it?\n\nActually it seems you are right. ALL attributes of `sage.matrix.matrix_mod2_dense.Matrix_mod2_dense` either start with \"_\" or override a method that is documented in `sage.matrix.matrix_dense.Matrix_dense`.",
+    "created_at": "2011-08-16T12:43:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92251",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:73 malb]:
 > The updated patch includes `_lmul_` and includes this class in the reference manual. However, there isn't much content any way so it might be better not to include it?
@@ -1466,25 +2362,58 @@ Replying to [comment:73 malb]:
 Actually it seems you are right. ALL attributes of `sage.matrix.matrix_mod2_dense.Matrix_mod2_dense` either start with "_" or override a method that is documented in `sage.matrix.matrix_dense.Matrix_dense`.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-08-16 12:56:24
+archive/issue_comments_092252.json:
+```json
+{
+    "body": "I am puzzled. I see that your new patch version contains _lmul_. When I downloaded it and read it in an editor, I find _lmul_. When I qdelete the old patch and qimport the new one, then _lmul_ is missing.\n\nDo you have any explanation for what I did wrong?",
+    "created_at": "2011-08-16T12:56:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92252",
+    "user": "SimonKing"
+}
+```
 
 I am puzzled. I see that your new patch version contains _lmul_. When I downloaded it and read it in an editor, I find _lmul_. When I qdelete the old patch and qimport the new one, then _lmul_ is missing.
 
 Do you have any explanation for what I did wrong?
 
 
+
 ---
 
-Comment by malb created at 2011-08-16 13:00:05
+archive/issue_comments_092253.json:
+```json
+{
+    "body": "`qpush` missing?",
+    "created_at": "2011-08-16T13:00:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92253",
+    "user": "malb"
+}
+```
 
 `qpush` missing?
 
 
+
 ---
 
-Comment by SimonKing created at 2011-08-16 14:15:11
+archive/issue_comments_092254.json:
+```json
+{
+    "body": "Replying to [comment:76 malb]:\n> `qpush` missing?\n\nNo. When I tried first, I simply did `qpush` after the qimport, and `sage -br`, but found that `_lmul_` was missing.\n\nWhen one qimports a patch, then it is stored in the folder `.hg/patches`. When one qdeletes it, it is also removed from the folder.\n\nAnd when I qimported your new patch, a file with the given patch name was created in `.hg/patches`, but that file did *not* contain the string \"lmul\".\n\nThat never happened to me before today.",
+    "created_at": "2011-08-16T14:15:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92254",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:76 malb]:
 > `qpush` missing?
@@ -1493,31 +2422,64 @@ No. When I tried first, I simply did `qpush` after the qimport, and `sage -br`, 
 
 When one qimports a patch, then it is stored in the folder `.hg/patches`. When one qdeletes it, it is also removed from the folder.
 
-And when I qimported your new patch, a file with the given patch name was created in `.hg/patches`, but that file did _not_ contain the string "lmul".
+And when I qimported your new patch, a file with the given patch name was created in `.hg/patches`, but that file did *not* contain the string "lmul".
 
 That never happened to me before today.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-08-16 14:19:24
+archive/issue_comments_092255.json:
+```json
+{
+    "body": "I worked around the problem: I downloaded the new patch, saved it locally, and qimported it from the local file. I wonder, though, why the old patch version was not used when qimporting it with the http-address?",
+    "created_at": "2011-08-16T14:19:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92255",
+    "user": "SimonKing"
+}
+```
 
 I worked around the problem: I downloaded the new patch, saved it locally, and qimported it from the local file. I wonder, though, why the old patch version was not used when qimporting it with the http-address?
 
 
+
 ---
 
-Comment by SimonKing created at 2011-08-16 14:20:52
+archive/issue_comments_092256.json:
+```json
+{
+    "body": "Replying to [comment:78 SimonKing]:\n> I wonder, though, why the old patch version was not used when qimporting it with the http-address?\n\nOne negation to many: \"... why the old patch version was *used* when qimporting it via http\".",
+    "created_at": "2011-08-16T14:20:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92256",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:78 SimonKing]:
 > I wonder, though, why the old patch version was not used when qimporting it with the http-address?
 
-One negation to many: "... why the old patch version was _used_ when qimporting it via http".
+One negation to many: "... why the old patch version was *used* when qimporting it via http".
+
 
 
 ---
 
-Comment by SimonKing created at 2011-08-16 14:34:10
+archive/issue_comments_092257.json:
+```json
+{
+    "body": "The timings have clearly improved:\n\n```\nsage: MS = MatrixSpace(GF(64,'a'),5000,5000)\nsage: K = MS.base_ring()\nsage: c = K.random_element()\nsage: A = MS.random_element()\nsage: %time A*c\nCPU times: user 0.68 s, sys: 0.02 s, total: 0.70 s\nWall time: 0.71 s\n5000 x 5000 dense matrix over Finite Field in a of size 2^6\nsage: MS1 = MatrixSpace(GF(64,'a'),1,5000)\nsage: B = MS1.random_element()\nsage: %timeit B*c\n625 loops, best of 3: 88.3 \u00b5s per loop\n```\n\n\nThat is good enough, I'd say.\n\nPersonally, I am still not happy, since scalar multiplication will very frequently occur in my application. My Meataxe fork does the first example in 39.4 ms and the second one in 20 \u00b5s. On the other hand, the time that I can gain by using M4RIE in echelon computation will probably be more than the time lost in scalar multiplication...",
+    "created_at": "2011-08-16T14:34:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92257",
+    "user": "SimonKing"
+}
+```
 
 The timings have clearly improved:
 
@@ -1542,23 +2504,56 @@ That is good enough, I'd say.
 Personally, I am still not happy, since scalar multiplication will very frequently occur in my application. My Meataxe fork does the first example in 39.4 ms and the second one in 20 µs. On the other hand, the time that I can gain by using M4RIE in echelon computation will probably be more than the time lost in scalar multiplication...
 
 
+
 ---
 
-Comment by malb created at 2011-08-16 16:02:10
+archive/issue_comments_092258.json:
+```json
+{
+    "body": "this is now https://bitbucket.org/malb/m4rie/issue/9/improve-scalar-multiplication-for-mzed_t",
+    "created_at": "2011-08-16T16:02:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92258",
+    "user": "malb"
+}
+```
 
 this is now https://bitbucket.org/malb/m4rie/issue/9/improve-scalar-multiplication-for-mzed_t
 
 
+
 ---
 
-Comment by malb created at 2011-08-17 14:14:10
+archive/issue_comments_092259.json:
+```json
+{
+    "body": "the updated patch avoids adding this class to the reference manual.",
+    "created_at": "2011-08-17T14:14:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92259",
+    "user": "malb"
+}
+```
 
 the updated patch avoids adding this class to the reference manual.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-08-17 16:58:27
+archive/issue_comments_092260.json:
+```json
+{
+    "body": "With the old version of the M4RI and M4RIE patches, I got some doctest errors on mark (which is solaris):\n\n```\n        sage -t  -force_lib \"devel/sage/sage/rings/polynomial/pbori.pyx\"\n        sage -t  -force_lib \"devel/sage/sage/rings/polynomial/multi_polynomial_sequence.py\"\n        sage -t  -force_lib \"devel/sage/sage/plot/plot.py\" # Time out\n        sage -t  -force_lib \"devel/sage/sage/crypto/mq/mpolynomialsystem.py\"\n        sage -t  -force_lib \"devel/sage/sage/crypto/mq/sr.py\"\n        sage -t  -force_lib \"devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\" # Time out  \n        sage -t  -force_lib \"devel/sage/sage/schemes/elliptic_curves/heegner.py\" # Time out\n```\n\n\nI need to investigate it further.",
+    "created_at": "2011-08-17T16:58:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92260",
+    "user": "SimonKing"
+}
+```
 
 With the old version of the M4RI and M4RIE patches, I got some doctest errors on mark (which is solaris):
 
@@ -1576,9 +2571,20 @@ With the old version of the M4RI and M4RIE patches, I got some doctest errors on
 I need to investigate it further.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-08-17 17:01:40
+archive/issue_comments_092261.json:
+```json
+{
+    "body": "Replying to [comment:83 SimonKing]:\n> With the old version of the M4RI and M4RIE patches, I got some doctest errors on mark (which is solaris):\n\nAnd that's since I am stupid!!! Again I forgot to install the dependencies!",
+    "created_at": "2011-08-17T17:01:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92261",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:83 SimonKing]:
 > With the old version of the M4RI and M4RIE patches, I got some doctest errors on mark (which is solaris):
@@ -1586,9 +2592,20 @@ Replying to [comment:83 SimonKing]:
 And that's since I am stupid!!! Again I forgot to install the dependencies!
 
 
+
 ---
 
-Comment by SimonKing created at 2011-08-17 17:06:34
+archive/issue_comments_092262.json:
+```json
+{
+    "body": "Replying to [comment:84 SimonKing]:\n>  \n> And that's since I am stupid!!! Again I forgot to install the dependencies!\n\nOr perhaps not. The new polybori spkg from #11261 is installed, and so is the new M4RI spkg and the corresponding patches.\n\nI have to leave office now. But it seems that either #11574 or this ticket are causing the problem.",
+    "created_at": "2011-08-17T17:06:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92262",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:84 SimonKing]:
 >  
@@ -1599,16 +2616,38 @@ Or perhaps not. The new polybori spkg from #11261 is installed, and so is the ne
 I have to leave office now. But it seems that either #11574 or this ticket are causing the problem.
 
 
+
 ---
 
-Comment by malb created at 2011-08-17 17:13:39
+archive/issue_comments_092263.json:
+```json
+{
+    "body": "Can you touch `sage/libs/polybori/decl.pxd`, run `sage -b` and try those again?",
+    "created_at": "2011-08-17T17:13:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92263",
+    "user": "malb"
+}
+```
 
 Can you touch `sage/libs/polybori/decl.pxd`, run `sage -b` and try those again?
 
 
+
 ---
 
-Comment by SimonKing created at 2011-08-17 18:29:37
+archive/issue_comments_092264.json:
+```json
+{
+    "body": "Replying to [comment:86 malb]:\n> Can you touch `sage/libs/polybori/decl.pxd`, run `sage -b` and try those again? \n\nI did, and get a segfault in `sage -t -force_lib \"devel/sage/sage/rings/polynomial/pbori.pyx\"`. That actually happens with #11574, so, I should report there.",
+    "created_at": "2011-08-17T18:29:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92264",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:86 malb]:
 > Can you touch `sage/libs/polybori/decl.pxd`, run `sage -b` and try those again? 
@@ -1616,16 +2655,38 @@ Replying to [comment:86 malb]:
 I did, and get a segfault in `sage -t -force_lib "devel/sage/sage/rings/polynomial/pbori.pyx"`. That actually happens with #11574, so, I should report there.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-08-20 13:27:18
+archive/issue_comments_092265.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2011-08-20T13:27:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92265",
+    "user": "SimonKing"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-08-20 13:27:18
+archive/issue_comments_092266.json:
+```json
+{
+    "body": "Finally, the tests on 32 bit solaris (mark on skynet) are finshed. They passed, modulo the usual timeouts. The long tests pass on my machine. If I understand the discussion above, it builds on 64 bit solaris and on Cygwin as well, and of course on linux and os x.\n\nMoreover, it provides a very impressive speedup compared with old Sage matrices over GF(2<sup>e</sup>). If I am not mistaken, it is even faster than Magma.\n\nSo, it is almost a positive review.\n\nBut there remain a few things to do.\n\n1. David Kirkby noted that we are adding a new standard spkg here. So, there should be a voting on sage-devel. So, that's \"needs info\".\n\n2. I found some issues with the \"randomize\" methods. \n\n   i) The randomize method in sage/libs/ntl/ntl_mat_GF2E.pyx is not documented (thus, also has no tests), and it lacks the usual optional arguments `density` and `nonzero`.\n\n   ii) The doc of Matrix_mod2e_dense.randomize gives no use cases for the optional arguments. Actually, the behaviour when passing the optional arguments is clearly not what we want:\n   {{{\nsage: MS = MatrixSpace(GF(64,'a'),100,100)\nsage: A = MS.random_element(densitiy=0.3)\nsage: A.density()\n4913/5000\nsage: B = MS.random_element(nonzero=True)\nsage: B.density()\n2469/2500\nsage: C = MS.random_element(nonzero=True, density=1)\nsage: C.density()\n2461/2500\nsage: D = MS.random_element(density=0)\nsage: D.density()\n983/1000\n  }}}\n\n3. The doc of many methods needs some polishing.\n\n   * It would be nice to have a reference to research articles. I had never heard of Travolta tables before. Strassen-Winograd and Karatsuba may be better known, but still, a reference could help.\n\n   * _matrix_times_matrix is not documented.\n\n   * `__init__`, `__cinit__` do not specify their arguments.\n\n   * `_lmul_`, `__neg__`, `__richcmp__`, `__invert__`, `__reduce__`, `set_unsafe` and `get_unsafe` do not state what they do, and the method names do not occur in the example (so, it should be marked as an indirect doctest). \n\n   * cdef'd methods such as rescale_row_c or add_multiple_of_row_c or swap_rows_c and so on may not be as easily visible by the user than Python methods. However, as a courtesy to developers who actually read the source file, the arguments of those methods should be specified.\n\n   * \"echelonize\" should state what it does and what its optional arguments are. If I am not mistaken, it changes the matrix inplace, and that should be documented.\n\n   * When I read \"Classical cubic matrix multiplication.\", I first understood that the matrix is cubic. But perhaps I'm a bit square here...\n \nSo, that's \"needs work\" for now.\n\nSince there should be a vote on sage-devel anyway, we might also ask whether it should be included in the docs. I am still not sure: On the one hand, I think a reference manual should be thorough. On the other hand, all \"new\" methods that are no cdef'd methods and do not start with an underscore overwrite methods from super-classes that are documented elsewhere.",
+    "created_at": "2011-08-20T13:27:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92266",
+    "user": "SimonKing"
+}
+```
 
 Finally, the tests on 32 bit solaris (mark on skynet) are finshed. They passed, modulo the usual timeouts. The long tests pass on my machine. If I understand the discussion above, it builds on 64 bit solaris and on Cygwin as well, and of course on linux and os x.
 
@@ -1639,10 +2700,10 @@ But there remain a few things to do.
 
 2. I found some issues with the "randomize" methods. 
 
-  i) The randomize method in sage/libs/ntl/ntl_mat_GF2E.pyx is not documented (thus, also has no tests), and it lacks the usual optional arguments `density` and `nonzero`.
+   i) The randomize method in sage/libs/ntl/ntl_mat_GF2E.pyx is not documented (thus, also has no tests), and it lacks the usual optional arguments `density` and `nonzero`.
 
-  ii) The doc of Matrix_mod2e_dense.randomize gives no use cases for the optional arguments. Actually, the behaviour when passing the optional arguments is clearly not what we want:
-  {{{
+   ii) The doc of Matrix_mod2e_dense.randomize gives no use cases for the optional arguments. Actually, the behaviour when passing the optional arguments is clearly not what we want:
+   {{{
 sage: MS = MatrixSpace(GF(64,'a'),100,100)
 sage: A = MS.random_element(densitiy=0.3)
 sage: A.density()
@@ -1660,35 +2721,57 @@ sage: D.density()
 
 3. The doc of many methods needs some polishing.
 
- * It would be nice to have a reference to research articles. I had never heard of Travolta tables before. Strassen-Winograd and Karatsuba may be better known, but still, a reference could help.
+   * It would be nice to have a reference to research articles. I had never heard of Travolta tables before. Strassen-Winograd and Karatsuba may be better known, but still, a reference could help.
 
- * _matrix_times_matrix is not documented.
+   * _matrix_times_matrix is not documented.
 
- * `__init__`, `__cinit__` do not specify their arguments.
+   * `__init__`, `__cinit__` do not specify their arguments.
 
- * `_lmul_`, `__neg__`, `__richcmp__`, `__invert__`, `__reduce__`, `set_unsafe` and `get_unsafe` do not state what they do, and the method names do not occur in the example (so, it should be marked as an indirect doctest). 
+   * `_lmul_`, `__neg__`, `__richcmp__`, `__invert__`, `__reduce__`, `set_unsafe` and `get_unsafe` do not state what they do, and the method names do not occur in the example (so, it should be marked as an indirect doctest). 
 
- * cdef'd methods such as rescale_row_c or add_multiple_of_row_c or swap_rows_c and so on may not be as easily visible by the user than Python methods. However, as a courtesy to developers who actually read the source file, the arguments of those methods should be specified.
+   * cdef'd methods such as rescale_row_c or add_multiple_of_row_c or swap_rows_c and so on may not be as easily visible by the user than Python methods. However, as a courtesy to developers who actually read the source file, the arguments of those methods should be specified.
 
- * "echelonize" should state what it does and what its optional arguments are. If I am not mistaken, it changes the matrix inplace, and that should be documented.
+   * "echelonize" should state what it does and what its optional arguments are. If I am not mistaken, it changes the matrix inplace, and that should be documented.
 
- * When I read "Classical cubic matrix multiplication.", I first understood that the matrix is cubic. But perhaps I'm a bit square here...
+   * When I read "Classical cubic matrix multiplication.", I first understood that the matrix is cubic. But perhaps I'm a bit square here...
  
 So, that's "needs work" for now.
 
 Since there should be a vote on sage-devel anyway, we might also ask whether it should be included in the docs. I am still not sure: On the one hand, I think a reference manual should be thorough. On the other hand, all "new" methods that are no cdef'd methods and do not start with an underscore overwrite methods from super-classes that are documented elsewhere.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-08-20 15:40:41
+archive/issue_comments_092267.json:
+```json
+{
+    "body": "For the record: I asked for a [vote on sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/bf75a0509d3ec978).",
+    "created_at": "2011-08-20T15:40:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92267",
+    "user": "SimonKing"
+}
+```
 
 For the record: I asked for a [vote on sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/bf75a0509d3ec978).
 
 
+
 ---
 
-Comment by leif created at 2011-08-20 16:26:38
+archive/issue_comments_092268.json:
+```json
+{
+    "body": "Replying to [comment:45 malb]:\n> Replying to [comment:44 kcrisman]:\n> > I agree that it is very annoying to have two things inside the same spkg.  \n> > There is, for instance, an open ticket to remove rpy2 from the r spkg.  \n> \n> Well, it makes it easier to re-use tuning results. For example, I plan to run the cache tuning only once, i.e. for M4RI and M4RIE would re-use the results.\n\nSave them to some file in, say, `$SAGE_ROOT/local/share/m4ri/`?",
+    "created_at": "2011-08-20T16:26:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92268",
+    "user": "leif"
+}
+```
 
 Replying to [comment:45 malb]:
 > Replying to [comment:44 kcrisman]:
@@ -1700,9 +2783,20 @@ Replying to [comment:45 malb]:
 Save them to some file in, say, `$SAGE_ROOT/local/share/m4ri/`?
 
 
+
 ---
 
-Comment by leif created at 2011-08-20 16:51:38
+archive/issue_comments_092269.json:
+```json
+{
+    "body": "P.S.: This would perhaps even allow specifying cache sizes manually, though the proper way would be something like\n\n```sh\n$ export M4RI_EXTRA_OPTS=\"--L1-cache-size=32 --L2-cache-size=1024\" # passed to M4RI[E]'s 'configure'\n$ sage -i m4rie\n```\n\n(And similar options for other cache parameters like the cache line sizes.)\n\nSpecifying these may at least *speed up* the tuning (by omitting a lot of tries); don't know if you could skip tuning, given these, in whole.\n\nStoring and using tuning parameters analoguous to GMP's `gmp-mparams.h` (including defaults for a couple of platforms / processors) wouldn't be bad either; then [optionally] bypassing self-tuning would really make sense.\n\n[Disclaimer: Haven't looked at the spkg at all, so there might be better or other ways to achieve this.]",
+    "created_at": "2011-08-20T16:51:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92269",
+    "user": "leif"
+}
+```
 
 P.S.: This would perhaps even allow specifying cache sizes manually, though the proper way would be something like
 
@@ -1713,16 +2807,27 @@ $ sage -i m4rie
 
 (And similar options for other cache parameters like the cache line sizes.)
 
-Specifying these may at least _speed up_ the tuning (by omitting a lot of tries); don't know if you could skip tuning, given these, in whole.
+Specifying these may at least *speed up* the tuning (by omitting a lot of tries); don't know if you could skip tuning, given these, in whole.
 
 Storing and using tuning parameters analoguous to GMP's `gmp-mparams.h` (including defaults for a couple of platforms / processors) wouldn't be bad either; then [optionally] bypassing self-tuning would really make sense.
 
 [Disclaimer: Haven't looked at the spkg at all, so there might be better or other ways to achieve this.]
 
 
+
 ---
 
-Comment by leif created at 2011-08-20 18:03:21
+archive/issue_comments_092270.json:
+```json
+{
+    "body": "Replying to [comment:91 leif]:\n> [Disclaimer: Haven't looked at the spkg at all, so there might be better or other ways to achieve this.]\n\nLooks like you're currently not trying to query any of\n\n```C\n    _SC_LEVEL1_ICACHE_SIZE\n    _SC_LEVEL1_ICACHE_ASSOC\n    _SC_LEVEL1_ICACHE_LINESIZE\n    _SC_LEVEL1_DCACHE_SIZE\n    _SC_LEVEL1_DCACHE_ASSOC\n    _SC_LEVEL1_DCACHE_LINESIZE\n    _SC_LEVEL2_CACHE_SIZE\n    _SC_LEVEL2_CACHE_ASSOC\n    _SC_LEVEL2_CACHE_LINESIZE\n    _SC_LEVEL3_CACHE_SIZE\n    _SC_LEVEL3_CACHE_ASSOC\n    _SC_LEVEL3_CACHE_LINESIZE\n    _SC_LEVEL4_CACHE_SIZE\n    _SC_LEVEL4_CACHE_ASSOC\n    _SC_LEVEL4_CACHE_LINESIZE\n```\n\n(with `sysconf()`). At least some of these values aren't available on every platform, but if they are, you could perhaps use them.\n\nAFAIK you'd have to set some feature test macro before including `unistd.h` on Solaris, although I doubt it supports any of the above.",
+    "created_at": "2011-08-20T18:03:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92270",
+    "user": "leif"
+}
+```
 
 Replying to [comment:91 leif]:
 > [Disclaimer: Haven't looked at the spkg at all, so there might be better or other ways to achieve this.]
@@ -1752,19 +2857,41 @@ Looks like you're currently not trying to query any of
 AFAIK you'd have to set some feature test macro before including `unistd.h` on Solaris, although I doubt it supports any of the above.
 
 
+
 ---
 
-Comment by malb created at 2011-08-20 18:05:45
+archive/issue_comments_092271.json:
+```json
+{
+    "body": "* there's an optional parameter `--with-cachesize` for M4RI's configure which allows to specify L1 and L2.\n  * However, this is not exported to Sage, i.e. M4RI_EXTRA_OPTS does not exist yet.\n  * M4RIE does not re-tune any more but re-uses the data from M4RI.\n  * In my experience (on i7s for example) tuning is much better than using the data reported by the CPU. That is, if one trusts L1 and L2 as reported by the CPU (which are correct) the code is much slower than tuning which essentially uses L3 instead of L2.",
+    "created_at": "2011-08-20T18:05:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92271",
+    "user": "malb"
+}
+```
 
 * there's an optional parameter `--with-cachesize` for M4RI's configure which allows to specify L1 and L2.
- * However, this is not exported to Sage, i.e. M4RI_EXTRA_OPTS does not exist yet.
- * M4RIE does not re-tune any more but re-uses the data from M4RI.
- * In my experience (on i7s for example) tuning is much better than using the data reported by the CPU. That is, if one trusts L1 and L2 as reported by the CPU (which are correct) the code is much slower than tuning which essentially uses L3 instead of L2.
+  * However, this is not exported to Sage, i.e. M4RI_EXTRA_OPTS does not exist yet.
+  * M4RIE does not re-tune any more but re-uses the data from M4RI.
+  * In my experience (on i7s for example) tuning is much better than using the data reported by the CPU. That is, if one trusts L1 and L2 as reported by the CPU (which are correct) the code is much slower than tuning which essentially uses L3 instead of L2.
+
 
 
 ---
 
-Comment by malb created at 2011-08-20 18:12:55
+archive/issue_comments_092272.json:
+```json
+{
+    "body": "Replying to [comment:88 SimonKing]:\n \n> 2. I found some issues with the \"randomize\" methods. \n> \n>   i) The randomize method in sage/libs/ntl/ntl_mat_GF2E.pyx is not documented (thus, also has no tests), and it lacks the usual optional arguments `density` and `nonzero`.\n\nOkay, I'll take a look. Note that `ntl_mat_GF2E` does not have the same interface as normal matrices though. But it makes sense to make it consistent where possible.\n \n>   ii) The doc of Matrix_mod2e_dense.randomize gives no use cases for the optional arguments. Actually, the behaviour when passing the optional arguments is clearly not what we want:\n\nOkay, I'll take a look.\n\n> 3. The doc of many methods needs some polishing.\n> \n>  * It would be nice to have a reference to research articles. I had never heard of Travolta tables before. Strassen-Winograd and Karatsuba may be better known, but still, a reference could help.\n\nThere is no research article on Travolta tables yet since I made them up for M4RIE. But for the other ones I can add references.\n \n\n\n>  * _matrix_times_matrix is not documented.\n\nThis is an internal method which is part of the standard matrix interface. I'd say it is hence understood what it does.\n \n>  * `__init__`, `__cinit__` do not specify their arguments.\n\nOkay.\n\n>  * `_lmul_`, `__neg__`, `__richcmp__`, `__invert__`, `__reduce__`, `set_unsafe` and `get_unsafe` do not state what they do, and the method names do not occur in the example (so, it should be marked as an indirect doctest). \n\nThese are special methods where either Python or our Matrix classes define what they do. I'd say it is hence understood what they do.\n\n>  * cdef'd methods such as rescale_row_c or add_multiple_of_row_c or swap_rows_c and so on may not be as easily visible by the user than Python methods. However, as a courtesy to developers who actually read the source file, the arguments of those methods should be specified.\n\nOkay.\n \n>  * \"echelonize\" should state what it does and what its optional arguments are. If I am not mistaken, it changes the matrix inplace, and that should be documented.\n\nOkay.\n \n>  * When I read \"Classical cubic matrix multiplication.\", I first understood that the matrix is cubic. But perhaps I'm a bit square here...\n>  \n> So, that's \"needs work\" for now.\n \n> Since there should be a vote on sage-devel anyway, we might also ask whether it should be included in the docs. I am still not sure: On the one hand, I think a reference manual should be thorough. On the other hand, all \"new\" methods that are no cdef'd methods and do not start with an underscore overwrite methods from super-classes that are documented elsewhere.\n\nI'd much rather add a note to the reference manual which lists which library drives which base field?",
+    "created_at": "2011-08-20T18:12:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92272",
+    "user": "malb"
+}
+```
 
 Replying to [comment:88 SimonKing]:
  
@@ -1815,51 +2942,128 @@ Okay.
 I'd much rather add a note to the reference manual which lists which library drives which base field?
 
 
+
 ---
 
-Comment by leif created at 2011-08-20 18:32:46
+archive/issue_comments_092273.json:
+```json
+{
+    "body": "The `dist/` (Debian) directory can and should be deleted (see #5903).",
+    "created_at": "2011-08-20T18:32:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92273",
+    "user": "leif"
+}
+```
 
 The `dist/` (Debian) directory can and should be deleted (see #5903).
 
 
+
 ---
 
-Comment by malb created at 2011-08-20 21:10:22
+archive/issue_comments_092274.json:
+```json
+{
+    "body": "Agreed!",
+    "created_at": "2011-08-20T21:10:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92274",
+    "user": "malb"
+}
+```
 
 Agreed!
 
 
+
 ---
 
-Comment by malb created at 2011-08-22 03:00:38
+archive/issue_comments_092275.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2011-08-22T03:00:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92275",
+    "user": "malb"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by malb created at 2011-08-22 03:00:38
+archive/issue_comments_092276.json:
+```json
+{
+    "body": "The updated patch + updated SPKG should address the comments above. Simon, as an added bonus the new SPKG also contains the faster scalar product.",
+    "created_at": "2011-08-22T03:00:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92276",
+    "user": "malb"
+}
+```
 
 The updated patch + updated SPKG should address the comments above. Simon, as an added bonus the new SPKG also contains the faster scalar product.
 
 
+
 ---
 
-Comment by malb created at 2011-08-22 05:25:35
+archive/issue_comments_092277.json:
+```json
+{
+    "body": "doctests pass on sage.math btw.",
+    "created_at": "2011-08-22T05:25:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92277",
+    "user": "malb"
+}
+```
 
 doctests pass on sage.math btw.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-08-22 07:45:51
+archive/issue_comments_092278.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_info.",
+    "created_at": "2011-08-22T07:45:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92278",
+    "user": "SimonKing"
+}
+```
 
 Changing status from needs_review to needs_info.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-08-22 07:45:51
+archive/issue_comments_092279.json:
+```json
+{
+    "body": "I did `sage -f http://sage.math.washington.edu/home/malb/spkgs/libm4rie-20110821.spkg`, I removed the old version of `m4rie_for_sage.patch`, qimported the new one, checked that my computer was really downloading the new version, did qpush, and `sage -br`.\n\nHowever, I get\n\n```\nsage: MS = MatrixSpace(GF(64,'a'),800,800)\nsage: A = MS.random_element(densitiy=1)\nsage: RR(A.density())\n0.984492187500000\nsage: A = MS.random_element(densitiy=0.001)\nsage: RR(A.density())\n0.984167187500000\n```\n\nI verified (by `A.randomize?`) that the new patch is applied.\n\nDo you have any clue why that happened?",
+    "created_at": "2011-08-22T07:45:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92279",
+    "user": "SimonKing"
+}
+```
 
 I did `sage -f http://sage.math.washington.edu/home/malb/spkgs/libm4rie-20110821.spkg`, I removed the old version of `m4rie_for_sage.patch`, qimported the new one, checked that my computer was really downloading the new version, did qpush, and `sage -br`.
 
@@ -1880,39 +3084,94 @@ I verified (by `A.randomize?`) that the new patch is applied.
 Do you have any clue why that happened?
 
 
+
 ---
 
-Comment by SimonKing created at 2011-08-22 07:48:56
+archive/issue_comments_092280.json:
+```json
+{
+    "body": "Strange enough, the doc tests for matrix_mod2e_dense pass.\n\nSo, perhaps `MS.random_element(...)` is calling `randomize(...)` in a wrong way.",
+    "created_at": "2011-08-22T07:48:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92280",
+    "user": "SimonKing"
+}
+```
 
 Strange enough, the doc tests for matrix_mod2e_dense pass.
 
 So, perhaps `MS.random_element(...)` is calling `randomize(...)` in a wrong way.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-08-22 07:52:22
+archive/issue_comments_092281.json:
+```json
+{
+    "body": "Yes, it is passing the wrong arguments, due to a typo on my end: I wrote densitiy, not density). Sorry.",
+    "created_at": "2011-08-22T07:52:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92281",
+    "user": "SimonKing"
+}
+```
 
 Yes, it is passing the wrong arguments, due to a typo on my end: I wrote densitiy, not density). Sorry.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-08-22 07:52:22
+archive/issue_comments_092282.json:
+```json
+{
+    "body": "Changing status from needs_info to needs_review.",
+    "created_at": "2011-08-22T07:52:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92282",
+    "user": "SimonKing"
+}
+```
 
 Changing status from needs_info to needs_review.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-08-22 09:33:48
+archive/issue_comments_092283.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2011-08-22T09:33:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92283",
+    "user": "SimonKing"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-08-22 09:33:48
+archive/issue_comments_092284.json:
+```json
+{
+    "body": "__Questions / To do__\n\n* The hg repository of the spkg needs being updated. Even though the last log entry is of today (August 22), the status report is\n\n```\n$ hg status\n? config.log\n? m4rie/.hgignore\n? m4rie/.hgtags\n? m4rie/AUTHORS\n? m4rie/COPYING\n? m4rie/ChangeLog\n? m4rie/INSTALL\n? m4rie/Makefile.am\n? m4rie/Makefile.in\n? m4rie/NEWS\n? m4rie/README\n? m4rie/aclocal.m4\n? m4rie/bench/Makefile.am\n? m4rie/bench/Makefile.in\n? m4rie/bench/bench_elimination.cc\n? m4rie/bench/bench_multiplication.cc\n? m4rie/bench/bench_smallops.cc\n? m4rie/bench/benchmarking.cc\n? m4rie/bench/benchmarking.h\n? m4rie/bench/cpucycles-20060326/alpha.c\n? m4rie/bench/cpucycles-20060326/alpha.h\n? m4rie/bench/cpucycles-20060326/amd64cpuinfo.c\n? m4rie/bench/cpucycles-20060326/amd64cpuinfo.h\n? m4rie/bench/cpucycles-20060326/amd64tscfreq.c\n? m4rie/bench/cpucycles-20060326/amd64tscfreq.h\n? m4rie/bench/cpucycles-20060326/clockmonotonic.c\n? m4rie/bench/cpucycles-20060326/clockmonotonic.h\n? m4rie/bench/cpucycles-20060326/compile\n? m4rie/bench/cpucycles-20060326/cpucycles.html\n? m4rie/bench/cpucycles-20060326/do\n? m4rie/bench/cpucycles-20060326/do.notes\n? m4rie/bench/cpucycles-20060326/gettimeofday.c\n? m4rie/bench/cpucycles-20060326/gettimeofday.h\n? m4rie/bench/cpucycles-20060326/hppapstat.c\n? m4rie/bench/cpucycles-20060326/hppapstat.h\n? m4rie/bench/cpucycles-20060326/powerpcaix.c\n? m4rie/bench/cpucycles-20060326/powerpcaix.h\n? m4rie/bench/cpucycles-20060326/powerpclinux.c\n? m4rie/bench/cpucycles-20060326/powerpclinux.h\n? m4rie/bench/cpucycles-20060326/powerpcmacos.c\n? m4rie/bench/cpucycles-20060326/powerpcmacos.h\n? m4rie/bench/cpucycles-20060326/sparc32psrinfo.c\n? m4rie/bench/cpucycles-20060326/sparc32psrinfo.h\n? m4rie/bench/cpucycles-20060326/sparcpsrinfo.c\n? m4rie/bench/cpucycles-20060326/sparcpsrinfo.h\n? m4rie/bench/cpucycles-20060326/test.c\n? m4rie/bench/cpucycles-20060326/x86cpuinfo.c\n? m4rie/bench/cpucycles-20060326/x86cpuinfo.h\n? m4rie/bench/cpucycles-20060326/x86tscfreq.c\n? m4rie/bench/cpucycles-20060326/x86tscfreq.h\n? m4rie/config.guess\n? m4rie/config.sub\n? m4rie/configure\n? m4rie/configure.ac\n? m4rie/depcomp\n? m4rie/gf2e_cxx/finite_field_givaro.h\n? m4rie/install-sh\n? m4rie/ltmain.sh\n? m4rie/m4/ax_check_compiler_flags.m4\n? m4rie/m4/ax_openmp.m4\n? m4rie/m4/libtool.m4\n? m4rie/m4/ltoptions.m4\n? m4rie/m4/ltsugar.m4\n? m4rie/m4/ltversion.m4\n? m4rie/m4/lt~obsolete.m4\n? m4rie/missing\n? m4rie/tests/test_elimination.cc\n? m4rie/tests/test_multiplication.cc\n? m4rie/tests/test_smallops.cc\n? m4rie/tests/testing.h\n```\n\n\n* spkg-check does not seem to work. After opening the package and working in a sage shell, I get\n\n```\n$ ./spkg-check \n./spkg-check: Zeile 30: cd: build/m4ri: Datei oder Verzeichnis nicht gefunden\nTesting the M4RI library\nmake: *** Keine Regel, um \u00bbcheck\u00ab zu erstellen.  Schluss.\nError testing M4RI\n```\n\n\n* Have you already implemented the ideas for storing the cache size information, so that installation of the package does not take so long? Or will that be in a future release?\n\n* You said you'd much rather add a note to the reference manual which lists which library drives which base field. Did you do so? I can not find it in the patch.\n\n__Done__\n\n* The long doctests in doc/ and sage/ pass on my machine. The doctests in sage/matrix pass on 32 bit solaris.\n\n* Randomize seems to work fine.\n\n* Scalar multiplication has improved:\n\n```\n\nsage: MS = MatrixSpace(GF(64,'a'),5000,5000)\nsage: K = MS.base_ring()\nsage: c = K.random_element()\nsage: A = MS.random_element()\nsage: %time A*c\nCPU times: user 0.05 s, sys: 0.01 s, total: 0.06 s\nWall time: 0.06 s\n5000 x 5000 dense matrix over Finite Field in a of size 2^6\nsage: MS1 = MatrixSpace(GF(64,'a'),1,5000)\nsage: B = MS1.random_element()\nsage: %timeit B*c\n625 loops, best of 3: 51.5 \u00b5s per loop\n```\n\n\n* The docs are now almost fine from my point of view. We only have\n\n```\n$ sage -coverage sage/matrix/matrix_mod2e_dense.pyx\n----------------------------------------------------------------------\nsage/matrix/matrix_mod2e_dense.pyx\nSCORE sage/matrix/matrix_mod2e_dense.pyx: 100% (27 of 27)\n\nPossibly wrong (function name doesn't occur in doctests):\n         * Matrix_mod2e_dense _multiply_travolta(Matrix_mod2e_dense self, Matrix_mod2e_dense right):\n         * Matrix_mod2e_dense _multiply_karatsuba(Matrix_mod2e_dense self, Matrix_mod2e_dense right):\n         * Matrix_mod2e_dense _multiply_strassen(Matrix_mod2e_dense self, Matrix_mod2e_dense right, cutoff=0):\n         * ModuleElement _lmul_(self, RingElement right):\n\n----------------------------------------------------------------------\n```\n\nand I suggest that I add a referee patch that simply adds a \"indirect doctest\" in the appropriate places.\n\n__Conclusion__\n\nI put it \"needs work\", but that's only since I'd like to create a referee patch. If you did not add the information on which library drives which base field yet, I can do so as well.\n\nPlease check in the changes to the hg repository, or \"hg ignore\" them. Please fix the self tests (or tell me why my attempt to call spkg-check did not work).",
+    "created_at": "2011-08-22T09:33:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92284",
+    "user": "SimonKing"
+}
+```
 
 __Questions / To do__
 
@@ -2059,9 +3318,20 @@ I put it "needs work", but that's only since I'd like to create a referee patch.
 Please check in the changes to the hg repository, or "hg ignore" them. Please fix the self tests (or tell me why my attempt to call spkg-check did not work).
 
 
+
 ---
 
-Comment by SimonKing created at 2011-08-22 09:37:27
+archive/issue_comments_092285.json:
+```json
+{
+    "body": "Replying to [comment:103 SimonKing]:\n> I put it \"needs work\", but that's only since I'd like to create a referee patch.\n\nSorry, I did a mistake when editing. I wrote that line before noticing the spkg-check and hg status issues. These need fixes as well.",
+    "created_at": "2011-08-22T09:37:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92285",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:103 SimonKing]:
 > I put it "needs work", but that's only since I'd like to create a referee patch.
@@ -2069,9 +3339,20 @@ Replying to [comment:103 SimonKing]:
 Sorry, I did a mistake when editing. I wrote that line before noticing the spkg-check and hg status issues. These need fixes as well.
 
 
+
 ---
 
-Comment by leif created at 2011-08-22 09:58:32
+archive/issue_comments_092286.json:
+```json
+{
+    "body": "Replying to [comment:103 SimonKing]:\n> * spkg-check does not seem to work. After opening the package and working in a sage shell, I get\n\n```\n$ ./spkg-check \n./spkg-check: Zeile 30: cd: build/m4ri: Datei oder Verzeichnis nicht gefunden\nTesting the M4RI library\nmake: *** Keine Regel, um \u00bbcheck\u00ab zu erstellen.  Schluss.\nError testing M4RI\n```\n\n\nI guess you'll first have to build, which also creates the directory and the Makefile there.\n\nDid you try `env SAGE_CHECK=yes sage -f ...`?\n\nIf you've run `sage -i` also with `-s`, entering the build directory and doing `./spkg-check` should also work.",
+    "created_at": "2011-08-22T09:58:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92286",
+    "user": "leif"
+}
+```
 
 Replying to [comment:103 SimonKing]:
 > * spkg-check does not seem to work. After opening the package and working in a sage shell, I get
@@ -2092,9 +3373,20 @@ Did you try `env SAGE_CHECK=yes sage -f ...`?
 If you've run `sage -i` also with `-s`, entering the build directory and doing `./spkg-check` should also work.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-08-22 13:00:16
+archive/issue_comments_092287.json:
+```json
+{
+    "body": "Replying to [comment:105 leif]:\n> I guess you'll first have to build, which also creates the directory and the Makefile there.\n> \n> Did you try `env SAGE_CHECK=yes sage -f ...`?\n\nI tried now, but it did not work.\n\n> If you've run `sage -i` also with `-s`, entering the build directory and doing `./spkg-check` should also work.\n\nWell, I learnt that `./spkg-check` should work if you have simply have opened the package and use a sage shell.",
+    "created_at": "2011-08-22T13:00:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92287",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:105 leif]:
 > I guess you'll first have to build, which also creates the directory and the Makefile there.
@@ -2108,9 +3400,20 @@ I tried now, but it did not work.
 Well, I learnt that `./spkg-check` should work if you have simply have opened the package and use a sage shell.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-08-22 13:20:28
+archive/issue_comments_092288.json:
+```json
+{
+    "body": "Replying to [comment:106 SimonKing]:\n> Well, I learnt that `./spkg-check` should work if you have simply have opened the package and use a sage shell.\n\nAnd `export SAGE_CHECK=\"yes\"` followed by `sage -f` should work as well. But it doesn't",
+    "created_at": "2011-08-22T13:20:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92288",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:106 SimonKing]:
 > Well, I learnt that `./spkg-check` should work if you have simply have opened the package and use a sage shell.
@@ -2118,9 +3421,20 @@ Replying to [comment:106 SimonKing]:
 And `export SAGE_CHECK="yes"` followed by `sage -f` should work as well. But it doesn't
 
 
+
 ---
 
-Comment by malb created at 2011-08-22 17:45:41
+archive/issue_comments_092289.json:
+```json
+{
+    "body": "Replying to [comment:103 SimonKing]:\n> * The hg repository of the spkg needs being updated. Even though the last log entry is of today (August 22), the status report is\n\nAgreed & fixed in the SPKG I'll update in a minute.\n \n> * spkg-check does not seem to work. After opening the package and working in a sage shell, I get\n\nFixed.\n \n> * Have you already implemented the ideas for storing the cache size information, so that installation of the package does not take so long? Or will that be in a future release?\n\nI only implemented that M4RIE avoids detecting the cache size. It has nothing to do with cache size detection any more it just uses M4RI's results.\n\n> * You said you'd much rather add a note to the reference manual which lists which library drives which base field. Did you do so? I can not find it in the patch.\n\nWe should open a new ticket for this?\n \n> * The docs are now almost fine from my point of view. We only have\n> and I suggest that I add a referee patch that simply adds a \"indirect doctest\" in the appropriate places.\n\nI'll do that.",
+    "created_at": "2011-08-22T17:45:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92289",
+    "user": "malb"
+}
+```
 
 Replying to [comment:103 SimonKing]:
 > * The hg repository of the spkg needs being updated. Even though the last log entry is of today (August 22), the status report is
@@ -2145,53 +3459,130 @@ We should open a new ticket for this?
 I'll do that.
 
 
+
 ---
 
-Comment by malb created at 2011-08-22 17:53:55
+archive/issue_comments_092290.json:
+```json
+{
+    "body": "SPKG + patch updated.",
+    "created_at": "2011-08-22T17:53:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92290",
+    "user": "malb"
+}
+```
 
 SPKG + patch updated.
 
 
+
 ---
 
-Comment by malb created at 2011-08-22 17:53:55
+archive/issue_comments_092291.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2011-08-22T17:53:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92291",
+    "user": "malb"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by was created at 2011-08-24 23:48:36
+archive/issue_comments_092292.json:
+```json
+{
+    "body": "Changing keywords from \"m4ri\" to \"m4ri, sd32\".",
+    "created_at": "2011-08-24T23:48:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92292",
+    "user": "was"
+}
+```
 
 Changing keywords from "m4ri" to "m4ri, sd32".
 
 
+
 ---
 
-Comment by SimonKing created at 2011-08-26 07:03:29
+archive/issue_comments_092293.json:
+```json
+{
+    "body": "m4rie_for_sage.patch did not apply on top of my private patch chain. The conflict is with #4260. So, one should be made dependent on the other.\n\nMartin, what seems to be more stable? This M4RIE patches? Or the Linbox patches?",
+    "created_at": "2011-08-26T07:03:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92293",
+    "user": "SimonKing"
+}
+```
 
 m4rie_for_sage.patch did not apply on top of my private patch chain. The conflict is with #4260. So, one should be made dependent on the other.
 
 Martin, what seems to be more stable? This M4RIE patches? Or the Linbox patches?
 
 
+
 ---
 
-Comment by SimonKing created at 2011-08-26 07:03:29
+archive/issue_comments_092294.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_info.",
+    "created_at": "2011-08-26T07:03:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92294",
+    "user": "SimonKing"
+}
+```
 
 Changing status from needs_review to needs_info.
 
 
+
 ---
 
-Comment by malb created at 2011-08-26 12:39:47
+archive/issue_comments_092295.json:
+```json
+{
+    "body": "Changing status from needs_info to needs_review.",
+    "created_at": "2011-08-26T12:39:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92295",
+    "user": "malb"
+}
+```
 
 Changing status from needs_info to needs_review.
 
 
+
 ---
 
-Comment by malb created at 2011-08-26 12:39:47
+archive/issue_comments_092296.json:
+```json
+{
+    "body": "Replying to [comment:112 SimonKing]:\n> m4rie_for_sage.patch did not apply on top of my private patch chain. \n\nOuch, how unfortunate. I guess it's in `matrix_space.py`?\n\n> The conflict is with #4260. So, one should be made dependent on the other.\n\nI'm not so sure about this. They are fairly independent. I suggest each is reviewed independently and whichever gets in later is re-based accordingly.\n\n> Martin, what seems to be more stable? This M4RIE patches? Or the Linbox patches?\n\nI'd say M4RIE:\n* the M4RIE interface has been around for months and months\n* I'm willing to debug any issue that might come up because I'm quite invested in this ticket.\n* Many people have looked at M4RIE over the time.\n* The LinBox switch-over has not received a single review yet.\n* You reported some speed issues with the new LinBox interface\n* It is unclearly whether the new LinBox interface works/builds on anything besides 64-bit Linux.",
+    "created_at": "2011-08-26T12:39:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92296",
+    "user": "malb"
+}
+```
 
 Replying to [comment:112 SimonKing]:
 > m4rie_for_sage.patch did not apply on top of my private patch chain. 
@@ -2205,17 +3596,28 @@ I'm not so sure about this. They are fairly independent. I suggest each is revie
 > Martin, what seems to be more stable? This M4RIE patches? Or the Linbox patches?
 
 I'd say M4RIE:
- * the M4RIE interface has been around for months and months
- * I'm willing to debug any issue that might come up because I'm quite invested in this ticket.
- * Many people have looked at M4RIE over the time.
- * The LinBox switch-over has not received a single review yet.
- * You reported some speed issues with the new LinBox interface
- * It is unclearly whether the new LinBox interface works/builds on anything besides 64-bit Linux.
+* the M4RIE interface has been around for months and months
+* I'm willing to debug any issue that might come up because I'm quite invested in this ticket.
+* Many people have looked at M4RIE over the time.
+* The LinBox switch-over has not received a single review yet.
+* You reported some speed issues with the new LinBox interface
+* It is unclearly whether the new LinBox interface works/builds on anything besides 64-bit Linux.
+
 
 
 ---
 
-Comment by SimonKing created at 2011-08-26 12:51:43
+archive/issue_comments_092297.json:
+```json
+{
+    "body": "Replying to [comment:113 malb]:\n> Replying to [comment:112 SimonKing]:\n> > m4rie_for_sage.patch did not apply on top of my private patch chain. \n> \n> Ouch, how unfortunate. I guess it's in `matrix_space.py`?\n\nSure. It is when the `__matrix_class` is determined. And of course I have already modified the patches in my private patch chain, so that I can continue to work...\n\n> I'm not so sure about this. They are fairly independent. I suggest each is reviewed independently and whichever gets in later is re-based accordingly.\n\nMakes sense.",
+    "created_at": "2011-08-26T12:51:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92297",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:113 malb]:
 > Replying to [comment:112 SimonKing]:
@@ -2230,34 +3632,78 @@ Sure. It is when the `__matrix_class` is determined. And of course I have alread
 Makes sense.
 
 
+
 ---
 
-Comment by malb created at 2011-09-01 09:56:05
+archive/issue_comments_092298.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2011-09-01T09:56:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92298",
+    "user": "malb"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by malb created at 2011-09-01 09:56:05
+archive/issue_comments_092299.json:
+```json
+{
+    "body": "This clearly needs work since M4RIE does not add the appropriate -msse2 flag if M4RI was built with it.",
+    "created_at": "2011-09-01T09:56:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92299",
+    "user": "malb"
+}
+```
 
 This clearly needs work since M4RIE does not add the appropriate -msse2 flag if M4RI was built with it.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-10-04 07:02:05
+archive/issue_comments_092300.json:
+```json
+{
+    "body": "Is it still \"needs work\", or does your new patch fixes the -msse2 flag issue? The official work issues are `Fix some docs and fix \"randomize()\"`. Is that still relevant?",
+    "created_at": "2011-10-04T07:02:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92300",
+    "user": "SimonKing"
+}
+```
 
 Is it still "needs work", or does your new patch fixes the -msse2 flag issue? The official work issues are `Fix some docs and fix "randomize()"`. Is that still relevant?
 
 
+
 ---
 
-Comment by malb created at 2011-10-04 11:34:07
+archive/issue_comments_092301.json:
+```json
+{
+    "body": "I've released a new version of M4RIE, \n\ncf. https://bitbucket.org/malb/m4rie/wiki/M4RIE-20111004\n\nwhich fixes bugs, deals with M4RI SSE2 flags correctly, implements asymptotically fast Gaussian elimination and triangular system solving, has a new Travolta table creation which is much much faster ...\n\nThe attached patch also takes care of any work issues I am aware of.\n\nI've tested this code (patch + SPKG) on cicero, sage.math, bsd. I'm currently testing on iras.",
+    "created_at": "2011-10-04T11:34:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92301",
+    "user": "malb"
+}
+```
 
 I've released a new version of M4RIE, 
 
-   cf. https://bitbucket.org/malb/m4rie/wiki/M4RIE-20111004
+cf. https://bitbucket.org/malb/m4rie/wiki/M4RIE-20111004
 
 which fixes bugs, deals with M4RI SSE2 flags correctly, implements asymptotically fast Gaussian elimination and triangular system solving, has a new Travolta table creation which is much much faster ...
 
@@ -2266,72 +3712,184 @@ The attached patch also takes care of any work issues I am aware of.
 I've tested this code (patch + SPKG) on cicero, sage.math, bsd. I'm currently testing on iras.
 
 
+
 ---
 
-Comment by malb created at 2011-10-04 11:34:07
+archive/issue_comments_092302.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2011-10-04T11:34:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92302",
+    "user": "malb"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-10-04 11:41:26
+archive/issue_comments_092303.json:
+```json
+{
+    "body": "Sorry, I will be unable to review for a few days. #11339 has destroyed most of my patch chain, and I will be busy with rebasing the majority of the patches that I've been working on in the last couple of weeks.",
+    "created_at": "2011-10-04T11:41:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92303",
+    "user": "SimonKing"
+}
+```
 
 Sorry, I will be unable to review for a few days. #11339 has destroyed most of my patch chain, and I will be busy with rebasing the majority of the patches that I've been working on in the last couple of weeks.
 
 
+
 ---
 
-Comment by malb created at 2011-10-04 11:47:25
+archive/issue_comments_092304.json:
+```json
+{
+    "body": "Yep, expected that much. Sorry, for being involved causing you this much trouble!",
+    "created_at": "2011-10-04T11:47:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92304",
+    "user": "malb"
+}
+```
 
 Yep, expected that much. Sorry, for being involved causing you this much trouble!
 
 
+
 ---
 
-Comment by malb created at 2011-10-04 14:59:18
+archive/issue_comments_092305.json:
+```json
+{
+    "body": "doctests also pass on iras, except for R doctests since I didn't bother to look up how to build R on iras.",
+    "created_at": "2011-10-04T14:59:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92305",
+    "user": "malb"
+}
+```
 
 doctests also pass on iras, except for R doctests since I didn't bother to look up how to build R on iras.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-10-26 20:45:23
+archive/issue_comments_092306.json:
+```json
+{
+    "body": "#4260 has been merged into sage-4.7.3.alpha0, but there is a conflict with the patch from here, namely in sage/matrix/matrix_space.py. I suggest that the patch will be rebased against #4260.",
+    "created_at": "2011-10-26T20:45:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92306",
+    "user": "SimonKing"
+}
+```
 
 #4260 has been merged into sage-4.7.3.alpha0, but there is a conflict with the patch from here, namely in sage/matrix/matrix_space.py. I suggest that the patch will be rebased against #4260.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-10-26 20:45:23
+archive/issue_comments_092307.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2011-10-26T20:45:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92307",
+    "user": "SimonKing"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by malb created at 2011-10-27 17:52:48
+archive/issue_comments_092308.json:
+```json
+{
+    "body": "rebased to 4.7.3.alpha0",
+    "created_at": "2011-10-27T17:52:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92308",
+    "user": "malb"
+}
+```
 
 rebased to 4.7.3.alpha0
 
 
+
 ---
+
+archive/issue_comments_092309.json:
+```json
+{
+    "body": "Attachment\n\nokay, rebased.",
+    "created_at": "2011-10-27T17:53:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92309",
+    "user": "malb"
+}
+```
 
 Attachment
 
 okay, rebased.
 
 
+
 ---
 
-Comment by malb created at 2011-10-27 17:53:06
+archive/issue_comments_092310.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2011-10-27T17:53:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92310",
+    "user": "malb"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-10-28 05:25:19
+archive/issue_comments_092311.json:
+```json
+{
+    "body": "Replying to [comment:124 malb]:\n> okay, rebased.\n\nThank you! The new patch applies cleanly.",
+    "created_at": "2011-10-28T05:25:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92311",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:124 malb]:
 > okay, rebased.
@@ -2339,9 +3897,20 @@ Replying to [comment:124 malb]:
 Thank you! The new patch applies cleanly.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-10-28 13:18:35
+archive/issue_comments_092312.json:
+```json
+{
+    "body": "It seems to me that all previous complaints are addressed in the new spkg and patches.\n\nIn particular, if one has opened the spkg, starts a sage shell and does ./spkg-install, then ./spkg-check works, with all tests. passing.\n\nhg status in the spkg is fine, and SPKG.txt looks fine as well (except a typo in the last line, should be \"split from\", not \"split form\" - but please leave that error, since the Gods don't like perfection among the mortals :)\n\nMoreover, `sage -coverage sage/matrix/matrix_mod2e_dense.pyx` is OK.\n\nAll doc tests pass as well, and I think the original problems with t2 had been dealt with.\n\nThus, I hope all participants agree that it is a positive review!",
+    "created_at": "2011-10-28T13:18:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92312",
+    "user": "SimonKing"
+}
+```
 
 It seems to me that all previous complaints are addressed in the new spkg and patches.
 
@@ -2356,16 +3925,38 @@ All doc tests pass as well, and I think the original problems with t2 had been d
 Thus, I hope all participants agree that it is a positive review!
 
 
+
 ---
 
-Comment by SimonKing created at 2011-10-28 13:18:35
+archive/issue_comments_092313.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2011-10-28T13:18:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92313",
+    "user": "SimonKing"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by leif created at 2011-10-28 13:29:30
+archive/issue_comments_092314.json:
+```json
+{
+    "body": "Replying to [comment:126 SimonKing]:\n> Thus, I hope all participants agree that it is a positive review!\n\nSollte ich dein Urteil infrage stellen weil du uns f\u00fcr sterblich h\u00e4ltst?",
+    "created_at": "2011-10-28T13:29:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92314",
+    "user": "leif"
+}
+```
 
 Replying to [comment:126 SimonKing]:
 > Thus, I hope all participants agree that it is a positive review!
@@ -2373,50 +3964,127 @@ Replying to [comment:126 SimonKing]:
 Sollte ich dein Urteil infrage stellen weil du uns für sterblich hältst?
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-11-15 08:55:13
+archive/issue_comments_092315.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2011-11-15T08:55:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92315",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-11-20 10:24:29
+archive/issue_comments_092316.json:
+```json
+{
+    "body": "Changing status from closed to new.",
+    "created_at": "2011-11-20T10:24:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92316",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from closed to new.
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-11-20 10:24:29
+archive/issue_comments_092317.json:
+```json
+{
+    "body": "Resolution changed from fixed to ",
+    "created_at": "2011-11-20T10:24:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92317",
+    "user": "jdemeyer"
+}
+```
 
 Resolution changed from fixed to 
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-11-20 10:24:29
+archive/issue_comments_092318.json:
+```json
+{
+    "body": "Reopened because of issues with #4260.",
+    "created_at": "2011-11-20T10:24:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92318",
+    "user": "jdemeyer"
+}
+```
 
 Reopened because of issues with #4260.
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-11-20 10:24:37
+archive/issue_comments_092319.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2011-11-20T10:24:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92319",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-11-20 10:24:44
+archive/issue_comments_092320.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2011-11-20T10:24:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92320",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-12-01 08:12:30
+archive/issue_comments_092321.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2011-12-01T08:12:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9562#issuecomment-92321",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: fixed

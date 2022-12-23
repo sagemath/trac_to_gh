@@ -1,11 +1,21 @@
 # Issue 9004: __cmp__ in sage/sets/set.py doesn't do what it's supposed to do.
 
-Issue created by migration from https://trac.sagemath.org/ticket/9004
-
-Original creator: fbissey
-
-Original creation time: 2010-05-21 04:11:24
-
+archive/issues_009004.json:
+```json
+{
+    "body": "Assignee: AlexGhitza\n\nAccording to the comments in the code:\n-----\n        Compare self and right.\n\n        If right is not a Set compare types.  If right is also a Set,\n        returns comparison on the underlying objects.\n----\nBut that is not what is currently done. In the case where \nright is not a Set (more accurately a \"Set_object\" that's\npossibly another issue) the following is evaluated:\n\n\n```\ncmp(type(right), type(Set_object))\n```\n\n\nThe correct thing would be to compare type(right) with\nthe type \"Set_object\" [which is type(self)] not the type\n**of** Set_object.\n\nPatch to follow.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9004\n\n",
+    "created_at": "2010-05-21T04:11:24Z",
+    "labels": [
+        "algebra",
+        "minor",
+        "bug"
+    ],
+    "title": "__cmp__ in sage/sets/set.py doesn't do what it's supposed to do.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9004",
+    "user": "fbissey"
+}
+```
 Assignee: AlexGhitza
 
 According to the comments in the code:
@@ -27,46 +37,118 @@ cmp(type(right), type(Set_object))
 
 The correct thing would be to compare type(right) with
 the type "Set_object" [which is type(self)] not the type
-*of* Set_object.
+**of** Set_object.
 
 Patch to follow.
 
+Issue created by migration from https://trac.sagemath.org/ticket/9004
+
+
+
+
 
 ---
+
+archive/issue_comments_083294.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-05-21T04:15:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9004",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9004#issuecomment-83294",
+    "user": "fbissey"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mvngu created at 2010-05-21 10:51:50
+archive/issue_comments_083295.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-05-21T10:51:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9004",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9004#issuecomment-83295",
+    "user": "mvngu"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mvngu created at 2010-05-21 10:52:46
+archive/issue_comments_083296.json:
+```json
+{
+    "body": "Looks good to me.",
+    "created_at": "2010-05-21T10:52:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9004",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9004#issuecomment-83296",
+    "user": "mvngu"
+}
+```
 
 Looks good to me.
 
 
+
 ---
 
-Comment by mvngu created at 2010-05-21 10:52:46
+archive/issue_comments_083297.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-05-21T10:52:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9004",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9004#issuecomment-83297",
+    "user": "mvngu"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by was created at 2010-06-03 15:47:23
+archive/issue_comments_083298.json:
+```json
+{
+    "body": "This patch was still wrong, since it was backwards still.   See #9121 which is basically the same.",
+    "created_at": "2010-06-03T15:47:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9004",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9004#issuecomment-83298",
+    "user": "was"
+}
+```
 
 This patch was still wrong, since it was backwards still.   See #9121 which is basically the same.
 
 
+
 ---
 
-Comment by was created at 2010-06-03 15:47:23
+archive/issue_comments_083299.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2010-06-03T15:47:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9004",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9004#issuecomment-83299",
+    "user": "was"
+}
+```
 
 Resolution: duplicate

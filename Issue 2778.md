@@ -1,26 +1,62 @@
 # Issue 2778: SymbolicFormula class
 
-Issue created by migration from https://trac.sagemath.org/ticket/2778
-
-Original creator: jason
-
-Original creation time: 2008-04-02 18:48:30
-
+archive/issues_002778.json:
+```json
+{
+    "body": "Assignee: was\n\nCreate a class that lets us combine SymbolicEquations using logical operators (and, or, not, xor, etc.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2778\n\n",
+    "created_at": "2008-04-02T18:48:30Z",
+    "labels": [
+        "calculus",
+        "major",
+        "enhancement"
+    ],
+    "title": "SymbolicFormula class",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2778",
+    "user": "jason"
+}
+```
 Assignee: was
 
 Create a class that lets us combine SymbolicEquations using logical operators (and, or, not, xor, etc.)
 
+Issue created by migration from https://trac.sagemath.org/ticket/2778
+
+
+
+
 
 ---
 
-Comment by burcin created at 2009-04-16 11:25:46
+archive/issue_comments_019084.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2009-04-16T11:25:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2778",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2778#issuecomment-19084",
+    "user": "burcin"
+}
+```
 
 Resolution: duplicate
 
 
+
 ---
 
-Comment by burcin created at 2009-04-16 11:25:46
+archive/issue_comments_019085.json:
+```json
+{
+    "body": "This is a duplicate of #2744.\n\n\n```\n<burcin> #2778 seems to be a duplicate of #2744\n<mabs> ok\n<mabs> I agree. Close #2778 as a dupe, move the other one to the wishlist milestone.\n<mabs> Unles you want to implement #2744 obviously :)\n```\n",
+    "created_at": "2009-04-16T11:25:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2778",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2778#issuecomment-19085",
+    "user": "burcin"
+}
+```
 
 This is a duplicate of #2744.
 

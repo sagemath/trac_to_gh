@@ -1,11 +1,21 @@
 # Issue 6816: sage/maxima hang when doing an indefinite integral
 
-Issue created by migration from https://trac.sagemath.org/ticket/6816
-
-Original creator: was
-
-Original creation time: 2009-08-24 00:07:01
-
+archive/issues_006816.json:
+```json
+{
+    "body": "Assignee: burcin\n\nCC:  mhansen\n\nIntegration sometimes hangs in sage-4.1.1.\n\n\n```\nflat:~ wstein$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: var('t,theta')\n(t, theta)\nsage: integrate(t * cos(-theta*t), (t,-oo,oo))\n[.. and it hangs forever ..]\n```\n\n| Sage Version 4.1.1, Release Date: 2009-08-14                       |\n| Type notebook() for the GUI, and license() for information.        |\nIn fact, in Maxima what is happening is the following:\n\n```\n(%i6) integrate(t*cos(-theta*t),t,-inf,inf);\nIs  theta  positive, negative, or zero?\n\npositive       <--- i type this.\n\n;\n(%o6)                                  0\n(%i7) \n```\n\n\nFor some reason the question \"Is  theta  positive, negative, or zero?\" is not getting seen by pexpect as it should.  Argh!\n\nThis works in Maxima:\n\n```\n(%i1) assume(theta>0);\n(%o1)                             [theta > 0]\n(%i2) integrate(t*cos(-theta*t),t,-inf,inf);\n(%o2)                                  0\n```\n\n\nThe same doesn't work in Sage though, which is very weird:\n\n```\nsage: var('t,theta')\n(t, theta)\nsage: assume(theta>0)\nsage: integrate(t * cos(-theta*t), (t,-oo,oo))\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6816\n\n",
+    "created_at": "2009-08-24T00:07:01Z",
+    "labels": [
+        "calculus",
+        "major",
+        "bug"
+    ],
+    "title": "sage/maxima hang when doing an indefinite integral",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6816",
+    "user": "was"
+}
+```
 Assignee: burcin
 
 CC:  mhansen
@@ -61,19 +71,45 @@ sage: integrate(t * cos(-theta*t), (t,-oo,oo))
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6816
+
+
+
+
 
 ---
 
-Comment by kcrisman created at 2009-09-24 13:49:10
+archive/issue_comments_056203.json:
+```json
+{
+    "body": "Just an update; in Maxima 5.19.1 (in Sage, in fact from maxima_console() ) this particular example does not even ask a question but returns zero.\n\nBut it still hangs in Sage.  That is really strange.  Note that the indefinite integral works fine in Sage.",
+    "created_at": "2009-09-24T13:49:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6816",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6816#issuecomment-56203",
+    "user": "kcrisman"
+}
+```
 
 Just an update; in Maxima 5.19.1 (in Sage, in fact from maxima_console() ) this particular example does not even ask a question but returns zero.
 
 But it still hangs in Sage.  That is really strange.  Note that the indefinite integral works fine in Sage.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-10-05 15:45:51
+archive/issue_comments_056204.json:
+```json
+{
+    "body": "This ticket is invalid.  \n\n\n```\nsage: var('t,theta')\n(t, theta)\nsage: integrate(t*cos(-theta*t),t,-oo,oo)\n0\n```\n\n\nIn fact, ANY sage integration attempted with the syntax provided by the originator of the ticket will fail!!!  That's because (for better or for worse) we don't have #1221 or #2787 in Sage.  But those tickets already exist.",
+    "created_at": "2009-10-05T15:45:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6816",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6816#issuecomment-56204",
+    "user": "kcrisman"
+}
+```
 
 This ticket is invalid.  
 
@@ -89,58 +125,148 @@ sage: integrate(t*cos(-theta*t),t,-oo,oo)
 In fact, ANY sage integration attempted with the syntax provided by the originator of the ticket will fail!!!  That's because (for better or for worse) we don't have #1221 or #2787 in Sage.  But those tickets already exist.
 
 
+
 ---
 
-Comment by was created at 2009-10-05 15:52:51
+archive/issue_comments_056205.json:
+```json
+{
+    "body": "I don't consider this ticket invalid. The fact that Sage totally hangs without an error is bad.  Independent of implementing #1221 and #2787, we could easily and quickly improve the type checking of the input to integrate.",
+    "created_at": "2009-10-05T15:52:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6816",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6816#issuecomment-56205",
+    "user": "was"
+}
+```
 
 I don't consider this ticket invalid. The fact that Sage totally hangs without an error is bad.  Independent of implementing #1221 and #2787, we could easily and quickly improve the type checking of the input to integrate.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-10-05 15:55:41
+archive/issue_comments_056206.json:
+```json
+{
+    "body": "Good point.",
+    "created_at": "2009-10-05T15:55:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6816",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6816#issuecomment-56206",
+    "user": "kcrisman"
+}
+```
 
 Good point.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-10-05 16:19:30
+archive/issue_comments_056207.json:
+```json
+{
+    "body": "I am fixing the error, but not actually adding documentation (other than in testing) that this works, because I view that as the proper place of the afore-mentioned tickets, which still need to resolve how backwards-incompatibility will be dealt with and probably have much better ways of dealing with it than my hackish solution.  I'm also not accepting lists, just tuples, which I think is reasonable given the syntax of all the other calculus functions.",
+    "created_at": "2009-10-05T16:19:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6816",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6816#issuecomment-56207",
+    "user": "kcrisman"
+}
+```
 
 I am fixing the error, but not actually adding documentation (other than in testing) that this works, because I view that as the proper place of the afore-mentioned tickets, which still need to resolve how backwards-incompatibility will be dealt with and probably have much better ways of dealing with it than my hackish solution.  I'm also not accepting lists, just tuples, which I think is reasonable given the syntax of all the other calculus functions.
 
 
+
 ---
 
-Comment by was created at 2009-10-05 16:28:56
+archive/issue_comments_056208.json:
+```json
+{
+    "body": "I read it and it looks good. If it passes tests I would give it a positive review....  I don't have time right now.",
+    "created_at": "2009-10-05T16:28:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6816",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6816#issuecomment-56208",
+    "user": "was"
+}
+```
 
 I read it and it looks good. If it passes tests I would give it a positive review....  I don't have time right now.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-10-20 06:23:09
+archive/issue_comments_056209.json:
+```json
+{
+    "body": "Based on 4.2.alpha0",
+    "created_at": "2009-10-20T06:23:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6816",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6816#issuecomment-56209",
+    "user": "kcrisman"
+}
+```
 
 Based on 4.2.alpha0
 
 
+
 ---
+
+archive/issue_comments_056210.json:
+```json
+{
+    "body": "Attachment\n\nRebased, otherwise should be fine.",
+    "created_at": "2009-10-20T06:23:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6816",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6816#issuecomment-56210",
+    "user": "kcrisman"
+}
+```
 
 Attachment
 
 Rebased, otherwise should be fine.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-10-28 01:13:05
+archive/issue_comments_056211.json:
+```json
+{
+    "body": "Now that #7327 has been opened, one of these two is a duplicate.",
+    "created_at": "2009-10-28T01:13:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6816",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6816#issuecomment-56211",
+    "user": "kcrisman"
+}
+```
 
 Now that #7327 has been opened, one of these two is a duplicate.
 
 
+
 ---
 
-Comment by jason created at 2009-10-28 01:28:40
+archive/issue_comments_056212.json:
+```json
+{
+    "body": "Hmm...that code looks pretty long.  Why not just:\n\n\n```\nif 1<=len(v)<=3:\n    return integral(expression,*v)\n```\n\n\nand take care of all three cases in one swoop?\n\nAlso, it completely ignores the rest of the parameters in the function call, like algorithm, etc.",
+    "created_at": "2009-10-28T01:28:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6816",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6816#issuecomment-56212",
+    "user": "jason"
+}
+```
 
 Hmm...that code looks pretty long.  Why not just:
 
@@ -156,29 +282,73 @@ and take care of all three cases in one swoop?
 Also, it completely ignores the rest of the parameters in the function call, like algorithm, etc.
 
 
+
 ---
 
-Comment by jason created at 2009-10-28 01:28:40
+archive/issue_comments_056213.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2009-10-28T01:28:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6816",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6816#issuecomment-56213",
+    "user": "jason"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-11-05 17:45:26
+archive/issue_comments_056214.json:
+```json
+{
+    "body": "To release manager: please close this as a duplicate of #7327, where a patch including the doctests for the specific bug above resides.",
+    "created_at": "2009-11-05T17:45:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6816",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6816#issuecomment-56214",
+    "user": "kcrisman"
+}
+```
 
 To release manager: please close this as a duplicate of #7327, where a patch including the doctests for the specific bug above resides.
 
 
+
 ---
 
-Comment by mhansen created at 2009-11-06 05:53:32
+archive/issue_comments_056215.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2009-11-06T05:53:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6816",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6816#issuecomment-56215",
+    "user": "mhansen"
+}
+```
 
 Resolution: duplicate
 
 
+
 ---
 
-Comment by kcrisman created at 2009-12-22 16:30:25
+archive/issue_comments_056216.json:
+```json
+{
+    "body": "Just an update - it turns out the original integral reported here is not, in fact, convergent - it is an odd function, so the limit of the indefinite integral evaluated at N and -N is 0, though.  Fixing this doctest so something mathematically correct happens will be done in #7745, since Maxima 5.20.1 simply returns that integral now, as opposed to giving 0.",
+    "created_at": "2009-12-22T16:30:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6816",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6816#issuecomment-56216",
+    "user": "kcrisman"
+}
+```
 
 Just an update - it turns out the original integral reported here is not, in fact, convergent - it is an odd function, so the limit of the indefinite integral evaluated at N and -N is 0, though.  Fixing this doctest so something mathematically correct happens will be done in #7745, since Maxima 5.20.1 simply returns that integral now, as opposed to giving 0.

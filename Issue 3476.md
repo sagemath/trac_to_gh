@@ -1,11 +1,21 @@
 # Issue 3476: [with patch, needs review] save timeit information with sage -t -timeit
 
-Issue created by migration from https://trac.sagemath.org/ticket/3476
-
-Original creator: ncalexan
-
-Original creation time: 2008-06-19 21:53:02
-
+archive/issues_003476.json:
+```json
+{
+    "body": "Assignee: failure\n\nKeywords: testing doctest timing timeit profile regression\n\nThere are several parts to this patch.\n\nThe first is an update to `sage.misc.sage_timeit` that generalizes the interface to return an object that prints itself as a timing string rather than the string itself.  The advantage is that the information does not need to be parsed from the string later.  This patch is a requirement of the later ones but is conceptually independent.\n\nThe second adds a file `ncadoctest.py` to **scripts** that is a slightly modified version of Python's `doctest.py` file.  It is easier to subclass the various classes with this version.\n\nThe third uses `ncadoctest.py` to subclass the doctest architecture and updates `sage-doctest` to use these updated classes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3476\n\n",
+    "created_at": "2008-06-19T21:53:02Z",
+    "labels": [
+        "doctest coverage",
+        "major",
+        "enhancement"
+    ],
+    "title": "[with patch, needs review] save timeit information with sage -t -timeit",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3476",
+    "user": "ncalexan"
+}
+```
 Assignee: failure
 
 Keywords: testing doctest timing timeit profile regression
@@ -14,68 +24,177 @@ There are several parts to this patch.
 
 The first is an update to `sage.misc.sage_timeit` that generalizes the interface to return an object that prints itself as a timing string rather than the string itself.  The advantage is that the information does not need to be parsed from the string later.  This patch is a requirement of the later ones but is conceptually independent.
 
-The second adds a file `ncadoctest.py` to *scripts* that is a slightly modified version of Python's `doctest.py` file.  It is easier to subclass the various classes with this version.
+The second adds a file `ncadoctest.py` to **scripts** that is a slightly modified version of Python's `doctest.py` file.  It is easier to subclass the various classes with this version.
 
 The third uses `ncadoctest.py` to subclass the doctest architecture and updates `sage-doctest` to use these updated classes.
 
+Issue created by migration from https://trac.sagemath.org/ticket/3476
+
+
+
+
 
 ---
+
+archive/issue_comments_024492.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-06-19T21:54:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3476",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3476#issuecomment-24492",
+    "user": "ncalexan"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_024493.json:
+```json
+{
+    "body": "Attachment\n\nThe attachments came in the wrong order -- the one with `sage-scripts` applies to sage/local/bin.",
+    "created_at": "2008-06-19T21:56:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3476",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3476#issuecomment-24493",
+    "user": "ncalexan"
+}
+```
 
 Attachment
 
 The attachments came in the wrong order -- the one with `sage-scripts` applies to sage/local/bin.
 
 
+
 ---
+
+archive/issue_comments_024494.json:
+```json
+{
+    "body": "Attachment\n\n`diff-python-doctest-to-ncadoctest` records the changes from upstream Python `doctest.py` to `ncadoctest.py` for future reference.",
+    "created_at": "2008-06-19T22:18:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3476",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3476#issuecomment-24494",
+    "user": "ncalexan"
+}
+```
 
 Attachment
 
 `diff-python-doctest-to-ncadoctest` records the changes from upstream Python `doctest.py` to `ncadoctest.py` for future reference.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-06 10:56:48
+archive/issue_comments_024495.json:
+```json
+{
+    "body": "Changing keywords from \"testing doctest timing timeit profile regression\" to \"testing doctest timing timeit profile regression, editor_mabshoff\".",
+    "created_at": "2008-07-06T10:56:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3476",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3476#issuecomment-24495",
+    "user": "mabshoff"
+}
+```
 
 Changing keywords from "testing doctest timing timeit profile regression" to "testing doctest timing timeit profile regression, editor_mabshoff".
 
 
+
 ---
 
-Comment by gfurnish created at 2008-08-14 03:09:53
+archive/issue_comments_024496.json:
+```json
+{
+    "body": "Changing keywords from \"testing doctest timing timeit profile regression, editor_mabshoff\" to \"testing doctest timing timeit profile regression, editor_mabshoff, editor_gfurnish\".",
+    "created_at": "2008-08-14T03:09:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3476",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3476#issuecomment-24496",
+    "user": "gfurnish"
+}
+```
 
 Changing keywords from "testing doctest timing timeit profile regression, editor_mabshoff" to "testing doctest timing timeit profile regression, editor_mabshoff, editor_gfurnish".
 
 
+
 ---
 
-Comment by rlm created at 2008-08-28 23:34:40
+archive/issue_comments_024497.json:
+```json
+{
+    "body": "This should be applied after #3982.",
+    "created_at": "2008-08-28T23:34:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3476",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3476#issuecomment-24497",
+    "user": "rlm"
+}
+```
 
 This should be applied after #3982.
 
 
+
 ---
 
-Comment by rlm created at 2008-08-28 23:44:54
+archive/issue_comments_024498.json:
+```json
+{
+    "body": "Changing keywords from \"testing doctest timing timeit profile regression, editor_mabshoff, editor_gfurnish\" to \"testing doctest timing timeit profile regression, editor_mhansen\".",
+    "created_at": "2008-08-28T23:44:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3476",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3476#issuecomment-24498",
+    "user": "rlm"
+}
+```
 
 Changing keywords from "testing doctest timing timeit profile regression, editor_mabshoff, editor_gfurnish" to "testing doctest timing timeit profile regression, editor_mhansen".
 
 
+
 ---
 
-Comment by mhansen created at 2008-09-04 03:49:37
+archive/issue_comments_024499.json:
+```json
+{
+    "body": "Since my one main concern at #3982 is taken care of, I think this can go in.",
+    "created_at": "2008-09-04T03:49:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3476",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3476#issuecomment-24499",
+    "user": "mhansen"
+}
+```
 
 Since my one main concern at #3982 is taken care of, I think this can go in.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-04 23:37:40
+archive/issue_comments_024500.json:
+```json
+{
+    "body": "There is a reject apllying Nick's first patch:\n\n```\n--- sage-doctest\n+++ sage-doctest\n@@ -218,8 +241,8 @@ def extract_doc(file_name, module):\n             doc = doc_preparse(F[i:j+3])\n         except SyntaxError:\n             doc = F[i:j+3]\n-        if len(doc):\n-            doc = '\"\"\">>> set_random_seed(0L)\\n\\n' + doc[3:]\n+#         if len(doc):\n+#             doc = '\"\"\">>> print \"YYY\"; print random() # ; set_random_seed(0L)\\n\\n' + doc[3:]\n         s += \"\\tr\"+ doc + \"\\n\\n\"\n         F = F[j+3:]\n```\n\nI am attempting to merge this manually.\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-04T23:37:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3476",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3476#issuecomment-24500",
+    "user": "mabshoff"
+}
+```
 
 There is a reject apllying Nick's first patch:
 
@@ -101,9 +220,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-04 23:43:41
+archive/issue_comments_024501.json:
+```json
+{
+    "body": "Ok, the reject seems to happen due to merging the warning patch into sage-doctest.\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-04T23:43:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3476",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3476#issuecomment-24501",
+    "user": "mabshoff"
+}
+```
 
 Ok, the reject seems to happen due to merging the warning patch into sage-doctest.
 
@@ -112,9 +242,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-05 00:06:44
+archive/issue_comments_024502.json:
+```json
+{
+    "body": "If I merge the patch without the troublesome hunk I see 4 doctests related to the random framework and timeit itself fail:\n\n```\n\tsage -t -long devel/sage/sage/misc/sage_timeit_class.pyx # 7 doctests failed\n\tsage -t -long devel/sage/sage/misc/sage_timeit.py # 2 doctests failed\n\tsage -t -long devel/sage/sage/misc/prandom.py # 2 doctests failed\n\tsage -t -long devel/sage/sage/misc/randstate.pyx # 6 doctests failed\n```\n\n\nOh well, life sucks :)\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-05T00:06:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3476",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3476#issuecomment-24502",
+    "user": "mabshoff"
+}
+```
 
 If I merge the patch without the troublesome hunk I see 4 doctests related to the random framework and timeit itself fail:
 
@@ -133,21 +274,56 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_024503.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-11-08T05:05:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3476",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3476#issuecomment-24503",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2008-11-08 05:07:39
+archive/issue_comments_024504.json:
+```json
+{
+    "body": "I've added two updated patches which fix the issue.  The problem was that the 'timeit' in test.globs was set to \"False\" from the options in sage-doctest instead of being the actual timeit function from Sage.  Thus, you'd only hit the problem with doctests that used timeit.",
+    "created_at": "2008-11-08T05:07:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3476",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3476#issuecomment-24504",
+    "user": "mhansen"
+}
+```
 
 I've added two updated patches which fix the issue.  The problem was that the 'timeit' in test.globs was set to "False" from the options in sage-doctest instead of being the actual timeit function from Sage.  Thus, you'd only hit the problem with doctests that used timeit.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-08 08:00:52
+archive/issue_comments_024505.json:
+```json
+{
+    "body": "For \"sage -sdist\" to work we need to copy ncadoctest.py, sagedoctest.py in sage-make_devel_packages after \n\n```\n  cp -p $SAGE_ROOT/local/bin/SbuildHack.pm $SCRIPTS/\n```\n\nI will take care of this once the patch passes doctests.\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-08T08:00:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3476",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3476#issuecomment-24505",
+    "user": "mabshoff"
+}
+```
 
 For "sage -sdist" to work we need to copy ncadoctest.py, sagedoctest.py in sage-make_devel_packages after 
 
@@ -162,9 +338,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-08 17:22:53
+archive/issue_comments_024506.json:
+```json
+{
+    "body": "Hi Mike,\n\nthere is one tiny easy to fix doctest issue left:\n\n```\nsage -t -long devel/sage/sage/misc/sage_timeit.py           \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.rc0/devel/sage/sage/misc/sage_timeit.py\", line 48:\n    sage: sage_timeit(\"a = 2\\nb=131\\nfactor(a^b-1)\", globals(), number=10)\nExpected:\n    '10 loops, best of 3: ... per loop'\nGot:\n    10 loops, best of 3: 18.4 ms per loop\n**********************************************************************\n```\n\nI will fix this via a followup patch.\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-08T17:22:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3476",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3476#issuecomment-24506",
+    "user": "mabshoff"
+}
+```
 
 Hi Mike,
 
@@ -189,15 +376,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-08 20:11:23
+archive/issue_comments_024507.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-11-08T20:11:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3476",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3476#issuecomment-24507",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-08 20:11:23
+archive/issue_comments_024508.json:
+```json
+{
+    "body": "Merged in Sage 3.2.rc0",
+    "created_at": "2008-11-08T20:11:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3476",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3476#issuecomment-24508",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.2.rc0

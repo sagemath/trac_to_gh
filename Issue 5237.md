@@ -1,11 +1,21 @@
 # Issue 5237: qsieve hangs on some machines when doctesting book_stein_ent.py
 
-Issue created by migration from https://trac.sagemath.org/ticket/5237
-
-Original creator: mabshoff
-
-Original creation time: 2009-02-11 22:56:54
-
+archive/issues_005237.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  alexghitza\n\nReported in http://groups.google.com/group/sage-devel/browse_thread/thread/894d29e0bde4550c as well as once by Alex Ghitza:\n\n```\nTrying: \n    qsieve(n)###line 289:_sage_    : qsieve(n) \nExpecting: \n    ([6340271405786663791648052309, \n      46102313108592180286398757159], '') \n*** *** Error: TIMED OUT! PROCESS KILLED! *** *** \n*** *** Error: TIMED OUT! *** *** \n         [360.3 s] \nexit code: 1024 \n```\n\n\nThis is Bill Hart's quadratic sieve, but an ancient version from 2007. We should really get rid of that code and use the current code in FLINT 1.1.x.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5237\n\n",
+    "created_at": "2009-02-11T22:56:54Z",
+    "labels": [
+        "factorization",
+        "major",
+        "bug"
+    ],
+    "title": "qsieve hangs on some machines when doctesting book_stein_ent.py",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5237",
+    "user": "mabshoff"
+}
+```
 Assignee: tbd
 
 CC:  alexghitza
@@ -31,30 +41,78 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/5237
+
+
+
+
 
 ---
 
-Comment by jdemeyer created at 2016-01-22 10:57:12
+archive/issue_comments_040131.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2016-01-22T10:57:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5237",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5237#issuecomment-40131",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2016-01-22 10:57:12
+archive/issue_comments_040132.json:
+```json
+{
+    "body": "I assume this very old ticket is no longer relevant.",
+    "created_at": "2016-01-22T10:57:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5237",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5237#issuecomment-40132",
+    "user": "jdemeyer"
+}
+```
 
 I assume this very old ticket is no longer relevant.
 
 
+
 ---
 
-Comment by jdemeyer created at 2016-01-22 10:57:16
+archive/issue_comments_040133.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2016-01-22T10:57:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5237",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5237#issuecomment-40133",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by vbraun created at 2016-02-23 22:52:58
+archive/issue_comments_040134.json:
+```json
+{
+    "body": "Resolution: wontfix",
+    "created_at": "2016-02-23T22:52:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5237",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5237#issuecomment-40134",
+    "user": "vbraun"
+}
+```
 
 Resolution: wontfix

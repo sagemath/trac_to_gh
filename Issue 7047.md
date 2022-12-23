@@ -1,20 +1,30 @@
 # Issue 7047: lapack sends GNU option -fPIC to Sun fortran compiler.
 
-Issue created by migration from https://trac.sagemath.org/ticket/7047
-
-Original creator: drkirkby
-
-Original creation time: 2009-09-28 09:13:11
-
+archive/issues_007047.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  dimpase\n\nUsing\n* Solaris 10 update 7 on SPARC\n* sage-4.1.2.alpha4\n* Sun Studio 12.1\n* An updated configure script to allow the Sun compiler to be used http://sagetrac.org/sage_trac/ticket/7021 \n\nI tried to build Sage with Sun Studio and see:\n\n\n```\nlapack-20071123.p0/spkg-install~\nlapack-20071123.p0/spkg-install\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS swan 5.10 Generic_139555-08 sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\n/opt/xxxsunstudio12.1/bin/cc -v\nusage: cc [ options] files.  Use 'cc -flags' for details\n****************************************************\nmake[2]: Entering directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/lapack-20071123.p0/src'\n( cd INSTALL; make; ./testlsame; ./testslamch; \\\n  ./testdlamch; ./testsecond; ./testdsecnd; ./testversion )\nmake[3]: Entering directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/lapack-20071123.p0/src/INSTALL'\nsage_fortran -fPIC  -c lsame.f -o lsame.o\nf95: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise\nf95: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise\nsage_fortran -fPIC  -c lsametst.f -o lsametst.o\nf95: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise\nf95: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise\nsage_fortran  -o testlsame lsame.o lsametst.o\nf95: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise\nld: fatal: option -f and building a dynamic executable are incompatible\nld: fatal: Flags processing errors\nmake[3]: *** [testlsame] Error 1\nmake[3]: Leaving directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/lapack-20071123.p0/src/INSTALL'\n/bin/sh: ./testlsame: not found\n/bin/sh: ./testslamch: not found\n/bin/sh: ./testdlamch: not found\n/bin/sh: ./testsecond: not found\n/bin/sh: ./testdsecnd: not found\n/bin/sh: ./testversion: not found\nmake[2]: *** [lapack_install] Error 1\nmake[2]: Leaving directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/lapack-20071123.p0/src'\nError compiling lapack.\n\nreal    0m0.415s\nuser    0m0.150s\nsys     0m0.215s\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7047\n\n",
+    "created_at": "2009-09-28T09:13:11Z",
+    "labels": [
+        "algebra",
+        "major",
+        "bug"
+    ],
+    "title": "lapack sends GNU option -fPIC to Sun fortran compiler.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7047",
+    "user": "drkirkby"
+}
+```
 Assignee: tbd
 
 CC:  dimpase
 
 Using
-    * Solaris 10 update 7 on SPARC
-    * sage-4.1.2.alpha4
-    * Sun Studio 12.1
-    * An updated configure script to allow the Sun compiler to be used http://sagetrac.org/sage_trac/ticket/7021 
+* Solaris 10 update 7 on SPARC
+* sage-4.1.2.alpha4
+* Sun Studio 12.1
+* An updated configure script to allow the Sun compiler to be used http://sagetrac.org/sage_trac/ticket/7021 
 
 I tried to build Sage with Sun Studio and see:
 
@@ -65,26 +75,63 @@ sys     0m0.215s
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7047
+
+
+
+
 
 ---
 
-Comment by drkirkby created at 2009-11-09 14:07:41
+archive/issue_comments_058341.json:
+```json
+{
+    "body": "Changing component from algebra to solaris.",
+    "created_at": "2009-11-09T14:07:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7047",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7047#issuecomment-58341",
+    "user": "drkirkby"
+}
+```
 
 Changing component from algebra to solaris.
 
 
+
 ---
 
-Comment by drkirkby created at 2011-05-25 07:22:46
+archive/issue_comments_058342.json:
+```json
+{
+    "body": "Are you sure this is not an upstream problem? You appear to have set a number of tickets to N/A, but that might not be the case. \n\nDave",
+    "created_at": "2011-05-25T07:22:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7047",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7047#issuecomment-58342",
+    "user": "drkirkby"
+}
+```
 
 Are you sure this is not an upstream problem? You appear to have set a number of tickets to N/A, but that might not be the case. 
 
 Dave
 
 
+
 ---
 
-Comment by ltw created at 2011-05-25 17:57:46
+archive/issue_comments_058343.json:
+```json
+{
+    "body": "Replying to [comment:3 drkirkby]:\n> Are you sure this is not an upstream problem? You appear to have set a number of tickets to N/A, but that might not be the case. \n> \n> Dave \n\nI simply modified the descriptions so that tickets would be referenced as \"#NNNN\" rather than by URL (see: http://groups.google.com/group/sage-devel/browse_thread/thread/a97f1a4473848617). I could not figure out why Trac kept thinking that I set the upstream field, even though I never touched it. My apologies if I ruined something!",
+    "created_at": "2011-05-25T17:57:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7047",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7047#issuecomment-58343",
+    "user": "ltw"
+}
+```
 
 Replying to [comment:3 drkirkby]:
 > Are you sure this is not an upstream problem? You appear to have set a number of tickets to N/A, but that might not be the case. 
@@ -94,23 +141,56 @@ Replying to [comment:3 drkirkby]:
 I simply modified the descriptions so that tickets would be referenced as "#NNNN" rather than by URL (see: http://groups.google.com/group/sage-devel/browse_thread/thread/a97f1a4473848617). I could not figure out why Trac kept thinking that I set the upstream field, even though I never touched it. My apologies if I ruined something!
 
 
+
 ---
 
-Comment by mkoeppe created at 2020-07-08 16:51:35
+archive/issue_comments_058344.json:
+```json
+{
+    "body": "Outdated, should be closed",
+    "created_at": "2020-07-08T16:51:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7047",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7047#issuecomment-58344",
+    "user": "mkoeppe"
+}
+```
 
 Outdated, should be closed
 
 
+
 ---
 
-Comment by mkoeppe created at 2020-07-08 16:51:35
+archive/issue_comments_058345.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2020-07-08T16:51:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7047",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7047#issuecomment-58345",
+    "user": "mkoeppe"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mjo created at 2020-07-12 20:05:25
+archive/issue_comments_058346.json:
+```json
+{
+    "body": "The goal of these tickets is laudable, but:\n\n* We need at least one user who is able to test.\n* The package/OS information on this ticket is outdated beyond usefulness.\n* Upstream is a better place to report portability issues these days.",
+    "created_at": "2020-07-12T20:05:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7047",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7047#issuecomment-58346",
+    "user": "mjo"
+}
+```
 
 The goal of these tickets is laudable, but:
 
@@ -119,22 +199,55 @@ The goal of these tickets is laudable, but:
 * Upstream is a better place to report portability issues these days.
 
 
+
 ---
 
-Comment by mjo created at 2020-07-12 20:05:25
+archive/issue_comments_058347.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2020-07-12T20:05:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7047",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7047#issuecomment-58347",
+    "user": "mjo"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by chapoton created at 2020-07-15 07:18:41
+archive/issue_comments_058348.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2020-07-15T07:18:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7047",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7047#issuecomment-58348",
+    "user": "chapoton"
+}
+```
 
 Resolution: invalid
 
 
+
 ---
 
-Comment by chapoton created at 2020-07-15 07:18:41
+archive/issue_comments_058349.json:
+```json
+{
+    "body": "Closing very old sun/solaris tickets. Any tentative for this OS should start afresh.",
+    "created_at": "2020-07-15T07:18:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7047",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7047#issuecomment-58349",
+    "user": "chapoton"
+}
+```
 
 Closing very old sun/solaris tickets. Any tentative for this OS should start afresh.

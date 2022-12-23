@@ -1,11 +1,21 @@
 # Issue 7234: [with patch, needs work] Unit groups for finite fields (and more generally)
 
-Issue created by migration from https://trac.sagemath.org/ticket/7234
-
-Original creator: fwclarke
-
-Original creation time: 2009-10-16 14:30:18
-
+archive/issues_007234.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  rbeezer cremona kcrisman slelievre\n\nKeywords: unit group finite field ring\n\nThe attached patch implements unit groups for finite fields.  It is \nmodelled on John Cremona's code for the unit groups of number fields.  One \ndifference is that if F is a finite field,  while F.unit_group() yields \nthe group of units (just as for a number field), F.unit_group(n) gives the \ngroup of n-th roots of unity.\n\nI have designated it as \"needs work\" for two reasons:\n\n1.  Both pieces of code deserve generalising to more general rings.  In\nparticular, Rob Beezer has\n[expressed](http://groups.google.com/group/sage-devel/browse_thread/thread/4f903f830aed653d) \na need to have the group of units of the integers modulo n.\n\n2.  There are certain aspects of the notation/terminology/implementation\nthat I am not totally happy with.  Maybe `F.unit_group(n)` is not such a\ngood idea.  Also it seems\nodd that one has\n\n```\nsage: F.<g> = FiniteField(16)\nsage: UF = F.unit_group()\nsage: UF.gen()\ng\nsage: g in UF\nTrue\n```\n\nbut\n\n```\nsage: UF(g)\nu\nsage: UF(1 + g + g^3)\nu^7\n```\n\nIt's similar for number fields:\n\n```\nsage: K.<a> = NumberField(x^3 - 39*x - 91)\nsage: UK = K.unit_group()\nsage: UK.gens()\n[-1, a^2 - 4*a - 22, a + 3]\nsage: UK(a + 3)\nu2\n```\n\nNote also that `UF(UF(g))` and `UK(UK(a + 3))` both lead to errors.\n\nDeciding how to be more consistent probably needs to be done at a more\ngeneral level and will most likely best be done by introducing a class\n`UnitGroupElement` based (for commutative rings anyway) on\n`AbelianGroupElement`, something that has been avoided in the finite field\nand number field cases.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7234\n\n",
+    "created_at": "2009-10-16T14:30:18Z",
+    "labels": [
+        "algebra",
+        "major",
+        "enhancement"
+    ],
+    "title": "[with patch, needs work] Unit groups for finite fields (and more generally)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7234",
+    "user": "fwclarke"
+}
+```
 Assignee: tbd
 
 CC:  rbeezer cremona kcrisman slelievre
@@ -68,31 +78,81 @@ general level and will most likely best be done by introducing a class
 and number field cases.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7234
+
+
+
+
 
 ---
 
-Comment by AlexGhitza created at 2009-11-15 13:21:41
+archive/issue_comments_060004.json:
+```json
+{
+    "body": "Changing status from new to needs_work.",
+    "created_at": "2009-11-15T13:21:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7234",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7234#issuecomment-60004",
+    "user": "AlexGhitza"
+}
+```
 
 Changing status from new to needs_work.
 
 
+
 ---
+
+archive/issue_comments_060005.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-11-15T13:21:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7234",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7234#issuecomment-60005",
+    "user": "AlexGhitza"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by cremona created at 2009-11-15 15:48:54
+archive/issue_comments_060006.json:
+```json
+{
+    "body": "When I implemented that for number fields I ran into these issues.  Initially I tried to construct a UnitGroupElement but gave up -- the problem I faced was the underlying AbelianGroup class, and that has not (yet) improved.\n\nConcerning `(Z/nZ)^*`, note that this is implemented over number fields (by me and Maite) using pari functions for that, including generalised discrete logs.  Sage already has Integers(n).unit_group_gens() using some native code; it could also use pari.",
+    "created_at": "2009-11-15T15:48:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7234",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7234#issuecomment-60006",
+    "user": "cremona"
+}
+```
 
 When I implemented that for number fields I ran into these issues.  Initially I tried to construct a UnitGroupElement but gave up -- the problem I faced was the underlying AbelianGroup class, and that has not (yet) improved.
 
 Concerning `(Z/nZ)^*`, note that this is implemented over number fields (by me and Maite) using pari functions for that, including generalised discrete logs.  Sage already has Integers(n).unit_group_gens() using some native code; it could also use pari.
 
 
+
 ---
 
-Comment by slelievre created at 2018-06-25 06:31:37
+archive/issue_comments_060007.json:
+```json
+{
+    "body": "This feature is requested in\n\n- [Ask Sage question 42726: Multiplicative group of a field](https://ask.sagemath.org/question/42726)\n\nFrancis or John, would you turn the patch into a branch?\n\nThe group of roots of unity could be for another ticket\nif that is the blocking point.",
+    "created_at": "2018-06-25T06:31:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7234",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7234#issuecomment-60007",
+    "user": "slelievre"
+}
+```
 
 This feature is requested in
 
@@ -104,48 +164,114 @@ The group of roots of unity could be for another ticket
 if that is the blocking point.
 
 
+
 ---
 
-Comment by slelievre created at 2018-06-25 06:31:37
+archive/issue_comments_060008.json:
+```json
+{
+    "body": "Changing keywords from \"unit group finite field ring\" to \"unit group, finite field, ring\".",
+    "created_at": "2018-06-25T06:31:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7234",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7234#issuecomment-60008",
+    "user": "slelievre"
+}
+```
 
 Changing keywords from "unit group finite field ring" to "unit group, finite field, ring".
 
 
+
 ---
 
-Comment by chapoton created at 2018-06-26 09:04:51
+archive/issue_comments_060009.json:
+```json
+{
+    "body": "here is a branch, refreshed, but not working\n----\nNew commits:",
+    "created_at": "2018-06-26T09:04:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7234",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7234#issuecomment-60009",
+    "user": "chapoton"
+}
+```
 
 here is a branch, refreshed, but not working
 ----
 New commits:
 
 
+
 ---
 
-Comment by git created at 2018-06-26 09:07:05
+archive/issue_comments_060010.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2018-06-26T09:07:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7234",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7234#issuecomment-60010",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by chapoton created at 2018-06-26 09:07:19
+archive/issue_comments_060011.json:
+```json
+{
+    "body": "now working again",
+    "created_at": "2018-06-26T09:07:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7234",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7234#issuecomment-60011",
+    "user": "chapoton"
+}
+```
 
 now working again
 
 
+
 ---
 
-Comment by slelievre created at 2018-08-25 16:51:38
+archive/issue_comments_060012.json:
+```json
+{
+    "body": "Another use case:\n\n- [math stack exchange question 2893434: Character table of multiplicative group of ZZ/9ZZ](https://math.stackexchange.com/q/2893434)",
+    "created_at": "2018-08-25T16:51:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7234",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7234#issuecomment-60012",
+    "user": "slelievre"
+}
+```
 
 Another use case:
 
 - [math stack exchange question 2893434: Character table of multiplicative group of ZZ/9ZZ](https://math.stackexchange.com/q/2893434)
 
 
+
 ---
 
-Comment by slelievre created at 2022-06-15 05:03:07
+archive/issue_comments_060013.json:
+```json
+{
+    "body": "This came up again at\n\n- [Ask Sage question 62822: Morphism between multiplicative groups of GF(p^2) and GF(p)](https://ask.sagemath.org/question/62822)",
+    "created_at": "2022-06-15T05:03:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7234",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7234#issuecomment-60013",
+    "user": "slelievre"
+}
+```
 
 This came up again at
 

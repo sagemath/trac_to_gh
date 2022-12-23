@@ -1,11 +1,21 @@
 # Issue 8864: make zeta function symbolic
 
-Issue created by migration from https://trac.sagemath.org/ticket/8864
-
-Original creator: zimmerma
-
-Original creation time: 2010-05-03 20:58:14
-
+archive/issues_008864.json:
+```json
+{
+    "body": "Assignee: AlexGhitza\n\nConsider:\n\n```\nsage: zeta(3)\n1.20205690315959\n```\n\nWe expect `zeta(3)` as answer.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8864\n\n",
+    "created_at": "2010-05-03T20:58:14Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "enhancement"
+    ],
+    "title": "make zeta function symbolic",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8864",
+    "user": "zimmerma"
+}
+```
 Assignee: AlexGhitza
 
 Consider:
@@ -17,15 +27,43 @@ sage: zeta(3)
 
 We expect `zeta(3)` as answer.
 
+Issue created by migration from https://trac.sagemath.org/ticket/8864
+
+
+
+
 
 ---
 
-Comment by zimmerma created at 2010-05-03 21:00:04
+archive/issue_comments_081456.json:
+```json
+{
+    "body": "Note: this is a followup of #7748.",
+    "created_at": "2010-05-03T21:00:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8864",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8864#issuecomment-81456",
+    "user": "zimmerma"
+}
+```
 
 Note: this is a followup of #7748.
 
 
+
 ---
+
+archive/issue_comments_081457.json:
+```json
+{
+    "body": "Attachment\n\nWith attachment:trac_8864-symbolic_zeta.patch you can do this:\n\n\n```\nsage: zeta(3)\nzeta(3)\nsage: zeta(2)\n1/6*pi^2\n```\n\n\nProbably, the changes to `sage/symbolic/random_tests.py` depend on #6949.",
+    "created_at": "2010-05-06T20:01:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8864",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8864#issuecomment-81457",
+    "user": "burcin"
+}
+```
 
 Attachment
 
@@ -43,23 +81,56 @@ sage: zeta(2)
 Probably, the changes to `sage/symbolic/random_tests.py` depend on #6949.
 
 
+
 ---
 
-Comment by burcin created at 2010-05-06 20:01:38
+archive/issue_comments_081458.json:
+```json
+{
+    "body": "Changing component from basic arithmetic to symbolics.",
+    "created_at": "2010-05-06T20:01:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8864",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8864#issuecomment-81458",
+    "user": "burcin"
+}
+```
 
 Changing component from basic arithmetic to symbolics.
 
 
+
 ---
 
-Comment by burcin created at 2010-05-06 20:01:38
+archive/issue_comments_081459.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-05-06T20:01:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8864",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8864#issuecomment-81459",
+    "user": "burcin"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by zimmerma created at 2010-05-08 12:08:04
+archive/issue_comments_081460.json:
+```json
+{
+    "body": "I applied that patch to 4.4.1. The new behaviour is ok, I get only one doctest failure in\n`lfunctions/dokchitser.py`. With 4.4.1 we got:\n\n```\nsage:  h = RR('0.0000000000001') \nsage: (zeta(2+h) - zeta(2))/h\n-0.937028232783632\n```\n\nWith the patch, we get:\n\n```\nsage: h = RR('0.0000000000001') \nsage: (zeta(2+h) - zeta(2))/h\n-1.66666666666667e12*pi^2 + 1.64493406684813e13\n```\n\nI guess the doctest result has to be changed, or zeta(2) changed to zeta(2.), since Sage does not\nautomatically propagate floats, for example `pi+1.0` remains unchanged.",
+    "created_at": "2010-05-08T12:08:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8864",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8864#issuecomment-81460",
+    "user": "zimmerma"
+}
+```
 
 I applied that patch to 4.4.1. The new behaviour is ok, I get only one doctest failure in
 `lfunctions/dokchitser.py`. With 4.4.1 we got:
@@ -82,30 +153,76 @@ I guess the doctest result has to be changed, or zeta(2) changed to zeta(2.), si
 automatically propagate floats, for example `pi+1.0` remains unchanged.
 
 
+
 ---
 
-Comment by zimmerma created at 2010-05-08 12:08:04
+archive/issue_comments_081461.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-05-08T12:08:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8864",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8864#issuecomment-81461",
+    "user": "zimmerma"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
+
+archive/issue_comments_081462.json:
+```json
+{
+    "body": "Attachment\n\napply only this patch",
+    "created_at": "2010-05-08T22:19:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8864",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8864#issuecomment-81462",
+    "user": "burcin"
+}
+```
 
 Attachment
 
 apply only this patch
 
 
+
 ---
 
-Comment by burcin created at 2010-05-08 22:24:13
+archive/issue_comments_081463.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-05-08T22:24:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8864",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8864#issuecomment-81463",
+    "user": "burcin"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by burcin created at 2010-05-08 22:24:13
+archive/issue_comments_081464.json:
+```json
+{
+    "body": "I uploaded attachment:trac_8864-symbolic_zeta.take2.patch which also includes a fix for the `lfunctions/dokchitser.py` doctest. I simply replaced `zeta(2)` with `zeta(2)` to get a numeric evaluation.\n\nI agree that `pi+1.0` looks strange, but that is not so trivial to fix. :) FWIW, maple also seems to leave that unevaluated:\n\n\n```\n    |\\^/|     Maple 12 (IBM INTEL LINUX)\n._|\\|   |/|_. Copyright (c) Maplesoft, a division of Waterloo Maple Inc. 2008\n \\  MAPLE  /  All rights reserved. Maple is a trademark of\n <____ ____>  Waterloo Maple Inc.\n      |       Type ? for help.\n> Pi +1.0;\n                                   Pi + 1.0\n\n> 1.0*Pi;\n                                    1.0 Pi\n```\n",
+    "created_at": "2010-05-08T22:24:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8864",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8864#issuecomment-81464",
+    "user": "burcin"
+}
+```
 
 I uploaded attachment:trac_8864-symbolic_zeta.take2.patch which also includes a fix for the `lfunctions/dokchitser.py` doctest. I simply replaced `zeta(2)` with `zeta(2)` to get a numeric evaluation.
 
@@ -127,24 +244,57 @@ I agree that `pi+1.0` looks strange, but that is not so trivial to fix. :) FWIW,
 
 
 
+
 ---
 
-Comment by zimmerma created at 2010-05-09 09:21:52
+archive/issue_comments_081465.json:
+```json
+{
+    "body": "All tests pass now. Thus a positive review. Good work!\n\nPaul",
+    "created_at": "2010-05-09T09:21:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8864",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8864#issuecomment-81465",
+    "user": "zimmerma"
+}
+```
 
 All tests pass now. Thus a positive review. Good work!
 
 Paul
 
 
+
 ---
 
-Comment by zimmerma created at 2010-05-09 09:21:52
+archive/issue_comments_081466.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-05-09T09:21:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8864",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8864#issuecomment-81466",
+    "user": "zimmerma"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mhansen created at 2010-06-06 07:35:03
+archive/issue_comments_081467.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-06-06T07:35:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8864",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8864#issuecomment-81467",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

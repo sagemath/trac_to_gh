@@ -1,11 +1,21 @@
 # Issue 9144: Make printing automatically load a print stylesheet
 
-Issue created by migration from https://trac.sagemath.org/ticket/9144
-
-Original creator: jason
-
-Original creation time: 2010-06-05 03:40:03
-
+archive/issues_009144.json:
+```json
+{
+    "body": "Assignee: jason, was\n\nCC:  chapoton\n\nIf we did this, then we could maybe just eliminate the \"Print\" button?  I don't know; maybe.\n\nSee http://groups.google.com/group/sage-devel/browse_frm/thread/98969b6b9035bf6d/3c5d4c2647e974b7 for a discussion of how to do this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9144\n\n",
+    "created_at": "2010-06-05T03:40:03Z",
+    "labels": [
+        "notebook",
+        "major",
+        "bug"
+    ],
+    "title": "Make printing automatically load a print stylesheet",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9144",
+    "user": "jason"
+}
+```
 Assignee: jason, was
 
 CC:  chapoton
@@ -14,37 +24,96 @@ If we did this, then we could maybe just eliminate the "Print" button?  I don't 
 
 See http://groups.google.com/group/sage-devel/browse_frm/thread/98969b6b9035bf6d/3c5d4c2647e974b7 for a discussion of how to do this.
 
+Issue created by migration from https://trac.sagemath.org/ticket/9144
+
+
+
+
 
 ---
 
-Comment by jason created at 2010-06-05 03:40:10
+archive/issue_comments_085389.json:
+```json
+{
+    "body": "Changing type from defect to enhancement.",
+    "created_at": "2010-06-05T03:40:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9144",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9144#issuecomment-85389",
+    "user": "jason"
+}
+```
 
 Changing type from defect to enhancement.
 
 
+
 ---
 
-Comment by mkoeppe created at 2020-08-18 00:36:52
+archive/issue_comments_085390.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2020-08-18T00:36:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9144",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9144#issuecomment-85390",
+    "user": "mkoeppe"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mkoeppe created at 2020-08-18 00:36:52
+archive/issue_comments_085391.json:
+```json
+{
+    "body": "Proposing to close all sagenb tickets as outdated, so that all remaining open tickets in the notebook component are about the Jupyter notebook.",
+    "created_at": "2020-08-18T00:36:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9144",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9144#issuecomment-85391",
+    "user": "mkoeppe"
+}
+```
 
 Proposing to close all sagenb tickets as outdated, so that all remaining open tickets in the notebook component are about the Jupyter notebook.
 
 
+
 ---
 
-Comment by dimpase created at 2020-08-25 09:24:05
+archive/issue_comments_085392.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2020-08-25T09:24:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9144",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9144#issuecomment-85392",
+    "user": "dimpase"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by chapoton created at 2020-08-27 08:43:23
+archive/issue_comments_085393.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2020-08-27T08:43:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9144",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9144#issuecomment-85393",
+    "user": "chapoton"
+}
+```
 
 Resolution: invalid

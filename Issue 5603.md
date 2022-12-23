@@ -1,11 +1,21 @@
 # Issue 5603: make a .mix() method for Sage color objects
 
-Issue created by migration from https://trac.sagemath.org/ticket/5603
-
-Original creator: jason
-
-Original creation time: 2009-03-24 21:29:56
-
+archive/issues_005603.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  mvngu\n\nSee the end of http://groups.google.com/group/sage-support/browse_thread/thread/44971aa416574675\n\nWe could also call it .blend() to agree with MMA's terminology:\n\nhttp://reference.wolfram.com/mathematica/ref/Blend.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/5603\n\n",
+    "created_at": "2009-03-24T21:29:56Z",
+    "labels": [
+        "graphics",
+        "minor",
+        "enhancement"
+    ],
+    "title": "make a .mix() method for Sage color objects",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5603",
+    "user": "jason"
+}
+```
 Assignee: was
 
 CC:  mvngu
@@ -16,10 +26,25 @@ We could also call it .blend() to agree with MMA's terminology:
 
 http://reference.wolfram.com/mathematica/ref/Blend.html
 
+Issue created by migration from https://trac.sagemath.org/ticket/5603
+
+
+
+
 
 ---
 
-Comment by jason created at 2010-05-11 20:33:30
+archive/issue_comments_043737.json:
+```json
+{
+    "body": "This is now implemented as \"blend\":\n\n\n```\nsage: sage.plot.colors.red.blend(sage.plot.colors.blue)\nRGB color (0.5, 0.0, 0.5)\n\n```\n\n\nSo this ticket should be closed.",
+    "created_at": "2010-05-11T20:33:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5603",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5603#issuecomment-43737",
+    "user": "jason"
+}
+```
 
 This is now implemented as "blend":
 
@@ -34,9 +59,20 @@ RGB color (0.5, 0.0, 0.5)
 So this ticket should be closed.
 
 
+
 ---
 
-Comment by mvngu created at 2010-05-11 20:39:29
+archive/issue_comments_043738.json:
+```json
+{
+    "body": "Close as fixed:\n\n\n```\n[mvngu@sage ~]$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: b = sage.plot.colors.blue\nsage: r = sage.plot.colors.red\nsage: g = sage.plot.colors.green\nsage: b.blend(r)\nRGB color (0.5, 0.0, 0.5)\nsage: r.blend(b)\nRGB color (0.5, 0.0, 0.5)\nsage: r.blend(g)\nRGB color (0.5, 0.25098039215686274, 0.0)\nsage: g.blend(r)\nRGB color (0.5, 0.25098039215686274, 0.0)\nsage: g.blend(b)\nRGB color (0.0, 0.25098039215686274, 0.5)\nsage: b.blend(g)\nRGB color (0.0, 0.25098039215686274, 0.5)\n```\n",
+    "created_at": "2010-05-11T20:39:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5603",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5603#issuecomment-43738",
+    "user": "mvngu"
+}
+```
 
 Close as fixed:
 
@@ -64,8 +100,19 @@ RGB color (0.0, 0.25098039215686274, 0.5)
 
 
 
+
 ---
 
-Comment by mvngu created at 2010-05-11 20:39:29
+archive/issue_comments_043739.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-05-11T20:39:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5603",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5603#issuecomment-43739",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

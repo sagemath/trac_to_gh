@@ -1,11 +1,21 @@
 # Issue 3490: notebook -- improve registration error checking and reporting
 
-Issue created by migration from https://trac.sagemath.org/ticket/3490
-
-Original creator: TimothyClemans
-
-Original creation time: 2008-06-21 04:48:49
-
+archive/issues_003490.json:
+```json
+{
+    "body": "Assignee: boothby\n\nKeywords: editor_wstein\n\nThis is a follow up to #3483.\n\nis_valid_username should be upgraded to follow this rule:\n\n```\nYour username must start with a letter and be between 4 and 32 characters long. You may only use letters, numbers, underscores, and one dot (.).\n```\n\n\nA new function, is_valid_password, should be added that follows this rule:\n\n```\nYour password must be between 6 and 32 characters long. Your password can not contain your username nor spaces.\n```\n\n\nCheck to make sure the input for password and retype_password are the same.\n\nCurrently only one error is reported even if there is several of them. Report all errors to the user.\n\nDon't loose the user's input except for password/retype_password when returning error reports.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3490\n\n",
+    "created_at": "2008-06-21T04:48:49Z",
+    "labels": [
+        "notebook",
+        "major",
+        "enhancement"
+    ],
+    "title": "notebook -- improve registration error checking and reporting",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3490",
+    "user": "TimothyClemans"
+}
+```
 Assignee: boothby
 
 Keywords: editor_wstein
@@ -32,40 +42,116 @@ Currently only one error is reported even if there is several of them. Report al
 
 Don't loose the user's input except for password/retype_password when returning error reports.
 
+Issue created by migration from https://trac.sagemath.org/ticket/3490
+
+
+
+
 
 ---
+
+archive/issue_comments_024585.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-06-23T20:55:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3490",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3490#issuecomment-24585",
+    "user": "TimothyClemans"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_024586.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-06-23T20:56:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3490",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3490#issuecomment-24586",
+    "user": "TimothyClemans"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_024587.json:
+```json
+{
+    "body": "Attachment\n\nnote: sage-3490_2.patch puts a somehow removed extract_title function",
+    "created_at": "2008-06-23T20:57:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3490",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3490#issuecomment-24587",
+    "user": "TimothyClemans"
+}
+```
 
 Attachment
 
 note: sage-3490_2.patch puts a somehow removed extract_title function
 
 
+
 ---
 
-Comment by boothby created at 2008-06-24 07:15:41
+archive/issue_comments_024588.json:
+```json
+{
+    "body": "nice",
+    "created_at": "2008-06-24T07:15:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3490",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3490#issuecomment-24588",
+    "user": "boothby"
+}
+```
 
 nice
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-25 06:34:13
+archive/issue_comments_024589.json:
+```json
+{
+    "body": "Merged in Sage 3.0.4.alpha1",
+    "created_at": "2008-06-25T06:34:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3490",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3490#issuecomment-24589",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.4.alpha1
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-25 06:34:13
+archive/issue_comments_024590.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-06-25T06:34:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3490",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3490#issuecomment-24590",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

@@ -1,89 +1,226 @@
 # Issue 8654: add "sage -sqlite3" command line option
 
-Issue created by migration from https://trac.sagemath.org/ticket/8654
-
-Original creator: was
-
-Original creation time: 2010-04-06 16:49:12
-
+archive/issues_008654.json:
+```json
+{
+    "body": "Assignee: jason\n\nJust like \"sage -gap\", we should have \"sage -sqlite3\" to run the command line sqlite3 database included with Sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8654\n\n",
+    "created_at": "2010-04-06T16:49:12Z",
+    "labels": [
+        "misc",
+        "minor",
+        "enhancement"
+    ],
+    "title": "add \"sage -sqlite3\" command line option",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8654",
+    "user": "was"
+}
+```
 Assignee: jason
 
 Just like "sage -gap", we should have "sage -sqlite3" to run the command line sqlite3 database included with Sage.
 
+Issue created by migration from https://trac.sagemath.org/ticket/8654
+
+
+
+
 
 ---
 
-Comment by ohanar created at 2010-11-12 11:02:19
+archive/issue_comments_078516.json:
+```json
+{
+    "body": "#21 fixes this.",
+    "created_at": "2010-11-12T11:02:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8654",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8654#issuecomment-78516",
+    "user": "ohanar"
+}
+```
 
 #21 fixes this.
 
 
+
 ---
 
-Comment by ohanar created at 2011-09-13 01:51:15
+archive/issue_comments_078517.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2011-09-13T01:51:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8654",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8654#issuecomment-78517",
+    "user": "ohanar"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_078518.json:
+```json
+{
+    "body": "Attachment\n\nSince #21 probably needs to be rewritten from scratch by now.",
+    "created_at": "2011-09-13T01:51:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8654",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8654#issuecomment-78518",
+    "user": "ohanar"
+}
+```
 
 Attachment
 
 Since #21 probably needs to be rewritten from scratch by now.
 
 
+
 ---
 
-Comment by was created at 2011-09-28 04:44:30
+archive/issue_comments_078519.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2011-09-28T04:44:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8654",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8654#issuecomment-78519",
+    "user": "was"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by was created at 2011-09-28 04:44:30
+archive/issue_comments_078520.json:
+```json
+{
+    "body": "Nice.  I'm glad you implemented this.  Works fine.",
+    "created_at": "2011-09-28T04:44:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8654",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8654#issuecomment-78520",
+    "user": "was"
+}
+```
 
 Nice.  I'm glad you implemented this.  Works fine.
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-10-04 08:14:18
+archive/issue_comments_078521.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_work.",
+    "created_at": "2011-10-04T08:14:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8654",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8654#issuecomment-78521",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from positive_review to needs_work.
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-10-04 08:14:38
+archive/issue_comments_078522.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2011-10-04T08:14:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8654",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8654#issuecomment-78522",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-10-04 08:14:38
+archive/issue_comments_078523.json:
+```json
+{
+    "body": "[attachment:8654_test.patch] needs review.",
+    "created_at": "2011-10-04T08:14:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8654",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8654#issuecomment-78523",
+    "user": "jdemeyer"
+}
+```
 
 [attachment:8654_test.patch] needs review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-10-10 10:18:00
+archive/issue_comments_078524.json:
+```json
+{
+    "body": "Ping.  Needs review.",
+    "created_at": "2011-10-10T10:18:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8654",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8654#issuecomment-78524",
+    "user": "jdemeyer"
+}
+```
 
 Ping.  Needs review.
 
 
+
 ---
 
-Comment by leif created at 2011-10-29 21:40:31
+archive/issue_comments_078525.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2011-10-29T21:40:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8654",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8654#issuecomment-78525",
+    "user": "leif"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by leif created at 2011-10-29 21:40:31
+archive/issue_comments_078526.json:
+```json
+{
+    "body": "Testing for the exact version number in `sage/tests/cmdline.py` is certainly suboptimal.\n\n\n`install_scripts()` (in `sage/misc/dist.py`) needs to be updated, too.\n\n\n----\n\nCould do some bikeshedding here:\n\n* The following\n\n```sh\n    some_program \"$@\"\n    exit $?\n```\n\n   should be just\n\n```sh\n    exec some_program \"$@\"\n```\n\n   (perhaps followed by `exit $?` if we want to go triple-safe).\n\n* The help messages should use the long option form (`--foo` rather than `-foo`). \n\n  Stating that `sage -foobar` runs Sage's version of `foobar` foreach foobar \\in {A,...,Z} is of questionable value.\n\n* Doing\n\n```sh\nif [ foo = bar -o foo = BAR ]; then\n    ...\nfi\n\nif [ foo = baz -o foo = BAZ ]; then\n    ...\nfi\n\nif [ foo = whatever ]; then\n    ...\nfi\n```\n\n   is very poor.  It should simply be\n\n```sh\ncase foo in\n    bar|BAR)\n        ...\n        ;;\n    baz|BAZ)\n        ...\n        ;;\n    ...\nesac\n```\n\n   which is faster, safer, easier to read and also less error-prone.\n\n\nOne could change *all* of these at once on a separate ticket, but it's IMHO dumb to always replicate the same bad code again.  So I'd change it at least in the new parts (and in general those one touches anyway or the ones near to them.)",
+    "created_at": "2011-10-29T21:40:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8654",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8654#issuecomment-78526",
+    "user": "leif"
+}
+```
 
 Testing for the exact version number in `sage/tests/cmdline.py` is certainly suboptimal.
 
@@ -95,7 +232,7 @@ Testing for the exact version number in `sage/tests/cmdline.py` is certainly sub
 
 Could do some bikeshedding here:
 
- * The following
+* The following
 
 ```sh
     some_program "$@"
@@ -110,11 +247,11 @@ Could do some bikeshedding here:
 
    (perhaps followed by `exit $?` if we want to go triple-safe).
 
- * The help messages should use the long option form (`--foo` rather than `-foo`). 
+* The help messages should use the long option form (`--foo` rather than `-foo`). 
 
-   Stating that `sage -foobar` runs Sage's version of `foobar` foreach foobar \in {A,...,Z} is of questionable value.
+  Stating that `sage -foobar` runs Sage's version of `foobar` foreach foobar \in {A,...,Z} is of questionable value.
 
- * Doing
+* Doing
 
 ```sh
 if [ foo = bar -o foo = BAR ]; then
@@ -147,33 +284,68 @@ esac
    which is faster, safer, easier to read and also less error-prone.
 
 
-One could change _all_ of these at once on a separate ticket, but it's IMHO dumb to always replicate the same bad code again.  So I'd change it at least in the new parts (and in general those one touches anyway or the ones near to them.)
+One could change *all* of these at once on a separate ticket, but it's IMHO dumb to always replicate the same bad code again.  So I'd change it at least in the new parts (and in general those one touches anyway or the ones near to them.)
+
 
 
 ---
 
-Comment by ohanar created at 2011-10-30 00:46:31
+archive/issue_comments_078527.json:
+```json
+{
+    "body": "Replying to [comment:10 leif]:\n> Could do some bikeshedding here: \n\n> ... \n\n> One could change *all* of these at once on a separate ticket, but it's IMHO dumb to always replicate the same bad code again.  So I'd change it at least in the new parts (and in general those one touches anyway or the ones near to them.)\n\nSee #21, although that patch will probably need to get rewritten with argparse now that optparse has been deprecated.",
+    "created_at": "2011-10-30T00:46:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8654",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8654#issuecomment-78527",
+    "user": "ohanar"
+}
+```
 
 Replying to [comment:10 leif]:
 > Could do some bikeshedding here: 
 
 > ... 
 
-> One could change _all_ of these at once on a separate ticket, but it's IMHO dumb to always replicate the same bad code again.  So I'd change it at least in the new parts (and in general those one touches anyway or the ones near to them.)
+> One could change *all* of these at once on a separate ticket, but it's IMHO dumb to always replicate the same bad code again.  So I'd change it at least in the new parts (and in general those one touches anyway or the ones near to them.)
 
 See #21, although that patch will probably need to get rewritten with argparse now that optparse has been deprecated.
 
 
+
 ---
+
+archive/issue_comments_078528.json:
+```json
+{
+    "body": "Attachment\n\nAdd test for --sqlite3 command line option",
+    "created_at": "2011-10-30T11:06:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8654",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8654#issuecomment-78528",
+    "user": "jdemeyer"
+}
+```
 
 Attachment
 
 Add test for --sqlite3 command line option
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-10-30 11:09:28
+archive/issue_comments_078529.json:
+```json
+{
+    "body": "Replying to [comment:10 leif]:\n> Testing for the exact version number in `sage/tests/cmdline.py` is certainly suboptimal.\nChanged.\n\n> `install_scripts()` (in `sage/misc/dist.py`) needs to be updated, too.\nDone.\n\n> One could change *all* of these at once on a separate ticket, but it's IMHO dumb to always replicate the same bad code again.  So I'd change it at least in the new parts (and in general those one touches anyway or the ones near to them.)\nWell, I agree that we should change all this in a separate ticket (I guess #21 is the place to be).  By copying the same so-called \"bad\" code we at least have consistency which is also a good thing.  If every command line option is implemented in a different way, that will make the code harder to understand.  Moreover, this ticket is not the correct place to discuss what the \"right\" code is.",
+    "created_at": "2011-10-30T11:09:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8654",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8654#issuecomment-78529",
+    "user": "jdemeyer"
+}
+```
 
 Replying to [comment:10 leif]:
 > Testing for the exact version number in `sage/tests/cmdline.py` is certainly suboptimal.
@@ -182,47 +354,113 @@ Changed.
 > `install_scripts()` (in `sage/misc/dist.py`) needs to be updated, too.
 Done.
 
-> One could change _all_ of these at once on a separate ticket, but it's IMHO dumb to always replicate the same bad code again.  So I'd change it at least in the new parts (and in general those one touches anyway or the ones near to them.)
+> One could change *all* of these at once on a separate ticket, but it's IMHO dumb to always replicate the same bad code again.  So I'd change it at least in the new parts (and in general those one touches anyway or the ones near to them.)
 Well, I agree that we should change all this in a separate ticket (I guess #21 is the place to be).  By copying the same so-called "bad" code we at least have consistency which is also a good thing.  If every command line option is implemented in a different way, that will make the code harder to understand.  Moreover, this ticket is not the correct place to discuss what the "right" code is.
+
 
 
 ---
 
-Comment by jdemeyer created at 2011-10-30 11:09:28
+archive/issue_comments_078530.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2011-10-30T11:09:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8654",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8654#issuecomment-78530",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2011-11-02 01:26:01
+archive/issue_comments_078531.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2011-11-02T01:26:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8654",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8654#issuecomment-78531",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2011-11-02 01:26:01
+archive/issue_comments_078532.json:
+```json
+{
+    "body": "Looks good to me.",
+    "created_at": "2011-11-02T01:26:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8654",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8654#issuecomment-78532",
+    "user": "jhpalmieri"
+}
+```
 
 Looks good to me.
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-11-02 08:29:58
+archive/issue_comments_078533.json:
+```json
+{
+    "body": "Many thanks for the review, this has taken long enough.",
+    "created_at": "2011-11-02T08:29:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8654",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8654#issuecomment-78533",
+    "user": "jdemeyer"
+}
+```
 
 Many thanks for the review, this has taken long enough.
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-11-03 08:51:31
+archive/issue_comments_078534.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2011-11-03T08:51:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8654",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8654#issuecomment-78534",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-11-03 16:14:43
+archive/issue_comments_078535.json:
+```json
+{
+    "body": "Milestone sage-4.7.3 deleted",
+    "created_at": "2011-11-03T16:14:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8654",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8654#issuecomment-78535",
+    "user": "jdemeyer"
+}
+```
 
 Milestone sage-4.7.3 deleted

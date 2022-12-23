@@ -1,11 +1,21 @@
 # Issue 4749: improve coercion of points between elliptic curves and reduction of points mod p
 
-Issue created by migration from https://trac.sagemath.org/ticket/4749
-
-Original creator: was
-
-Original creation time: 2008-12-10 01:00:06
-
+archive/issues_004749.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  cswiercz\n\nIf I have a point P on an elliptic curve E and F is another curve, then F(P) should work if possible.  It doesn't.   For example:\n\n```\nE = EllipticCurve([1,-1,0,94,9]) \nR = E([0,3]) + 5*E([8,31])      # big denom's\nE11 = E.change_ring(GF(11))\nE11(R) \n BOOM!\n```\n\nBut it should clear denominators and coerce in the triple like so:\n\n```\ndef reduce(R, p):\n    x, y = R.xy()\n    d = LCM(x.denominator(), y.denominator())\n    return R.curve().change_ring(GF(p))([x*d,y*d,d])\n```\n\n}}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/4749\n\n",
+    "created_at": "2008-12-10T01:00:06Z",
+    "labels": [
+        "number theory",
+        "major",
+        "enhancement"
+    ],
+    "title": "improve coercion of points between elliptic curves and reduction of points mod p",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4749",
+    "user": "was"
+}
+```
 Assignee: was
 
 CC:  cswiercz
@@ -31,48 +41,133 @@ def reduce(R, p):
 
 }}}
 
+Issue created by migration from https://trac.sagemath.org/ticket/4749
+
+
+
+
 
 ---
 
-Comment by cswiercz created at 2008-12-16 05:23:09
+archive/issue_comments_035937.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"elliptic curves\".",
+    "created_at": "2008-12-16T05:23:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4749",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4749#issuecomment-35937",
+    "user": "cswiercz"
+}
+```
 
 Changing keywords from "" to "elliptic curves".
 
 
+
 ---
 
-Comment by cswiercz created at 2008-12-16 05:23:09
+archive/issue_comments_035938.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-12-16T05:23:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4749",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4749#issuecomment-35938",
+    "user": "cswiercz"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
+
+archive/issue_comments_035939.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-12-16T05:23:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4749",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4749#issuecomment-35939",
+    "user": "cswiercz"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by cswiercz created at 2008-12-16 05:23:09
+archive/issue_comments_035940.json:
+```json
+{
+    "body": "Changing assignee from was to cswiercz.",
+    "created_at": "2008-12-16T05:23:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4749",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4749#issuecomment-35940",
+    "user": "cswiercz"
+}
+```
 
 Changing assignee from was to cswiercz.
 
 
+
 ---
 
-Comment by was created at 2008-12-16 16:55:13
+archive/issue_comments_035941.json:
+```json
+{
+    "body": "Change \"This functionality is implemented in the \\code{__call__} method. \" to \"This functionality is used in the \\code{__call__} method for elliptic curves.\"",
+    "created_at": "2008-12-16T16:55:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4749",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4749#issuecomment-35941",
+    "user": "was"
+}
+```
 
 Change "This functionality is implemented in the \code{__call__} method. " to "This functionality is used in the \code{__call__} method for elliptic curves."
 
 
+
 ---
+
+archive/issue_comments_035942.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-12-16T19:05:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4749",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4749#issuecomment-35942",
+    "user": "cswiercz"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by cremona created at 2008-12-19 17:08:48
+archive/issue_comments_035943.json:
+```json
+{
+    "body": "I have to give this a negative review.  This code does not treat the case where the point is 0 (i.e. E(0)).  It fails to reduce E(0) since the E.xy() will crash.  In the example, E11(E(0)) works ok since the __call__ function must test the input via is_zero() so that works, but:\n\n```\nsage: S = E11._reduce_point(E(0), 11)\n---------------------------------------------------------------------------\nZeroDivisionError  \n```\n\n\nSecondly, I don't know why this code is in ell_generic.  It only applies to elliptic curves defined over Q.  I think it belongs in ell_point.py, as a member function of class  EllipticCurvePoint_number_field.\n\nI noticed this patch just when I was working on something almost identical, though my code works over number fields.  So I would like to replace this patch with another, not just to correct the small glitch of E(0), but to make it work over number fields.  In fact, here is a chunk of code I wrote before I saw this patch posted in here with no changes:\n\n```\n        if K is rings.QQ:\n            pi = P\n        else:\n            pi = K.uniformizer(P)\n\n        # Make sure the curve is integral and locally minimal at P:\n        Emin = E.local_minimal_model(P)\n        urst = E.isomorphism_to(Emin)\n        Q = urst(self)\n\n        # Scale the homogeneous coordinates of the point to be primitive:\n        xyz = list(Q)\n        e = min([c.valuation(P) for c in xyz])\n        if e !=0:            \n            if K is rings.QQ:\n                pi = P\n            else:\n                pi = K.uniformizer(P)\n            pie = pi**e\n            xyz = [c/pie for c in xyz]\n```\n\nThis was just to get homogeneous coordinates in which one of x,y,z is a unit mod P, but then you could directly construct a point on the reduction from it.  (I was also concerned with having a non-minimal model at P.) \n\nI expect that I will post an alternative patch here before long.",
+    "created_at": "2008-12-19T17:08:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4749",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4749#issuecomment-35943",
+    "user": "cremona"
+}
+```
 
 I have to give this a negative review.  This code does not treat the case where the point is 0 (i.e. E(0)).  It fails to reduce E(0) since the E.xy() will crash.  In the example, E11(E(0)) works ok since the __call__ function must test the input via is_zero() so that works, but:
 
@@ -115,27 +210,73 @@ This was just to get homogeneous coordinates in which one of x,y,z is a unit mod
 I expect that I will post an alternative patch here before long.
 
 
+
 ---
+
+archive/issue_comments_035944.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-12-19T17:23:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4749",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4749#issuecomment-35944",
+    "user": "cremona"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by cremona created at 2008-12-19 17:27:02
+archive/issue_comments_035945.json:
+```json
+{
+    "body": "OK, I relented.  I have added a patch which addresses the specific bug.  There is still a case for something more general, but it is quite hard to see how to get the __call__ function to do the right thing.  There has to be a way of telling in some more generality whether the base field of the point is a residue field of the base field of the curve (I mean that the other way round).  So it's harder than I thought, and its 5.22pm on the last Friday before a holiday, and the patch does do something which is already useful, so let's go for it!",
+    "created_at": "2008-12-19T17:27:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4749",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4749#issuecomment-35945",
+    "user": "cremona"
+}
+```
 
 OK, I relented.  I have added a patch which addresses the specific bug.  There is still a case for something more general, but it is quite hard to see how to get the __call__ function to do the right thing.  There has to be a way of telling in some more generality whether the base field of the point is a residue field of the base field of the curve (I mean that the other way round).  So it's harder than I thought, and its 5.22pm on the last Friday before a holiday, and the patch does do something which is already useful, so let's go for it!
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-21 12:37:24
+archive/issue_comments_035946.json:
+```json
+{
+    "body": "Merged all three patches in Sage 3.2.3.alpha0",
+    "created_at": "2008-12-21T12:37:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4749",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4749#issuecomment-35946",
+    "user": "mabshoff"
+}
+```
 
 Merged all three patches in Sage 3.2.3.alpha0
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-21 12:37:24
+archive/issue_comments_035947.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-12-21T12:37:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4749",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4749#issuecomment-35947",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

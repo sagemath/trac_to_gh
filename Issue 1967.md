@@ -1,11 +1,21 @@
 # Issue 1967: fix matplotlib local-related bugs once and for all (?)
 
-Issue created by migration from https://trac.sagemath.org/ticket/1967
-
-Original creator: was
-
-Original creation time: 2008-01-29 09:57:58
-
+archive/issues_001967.json:
+```json
+{
+    "body": "Assignee: was\n\nMany people have reported issues with locale.py going boom on quite a range of different OS X (and Linux?) machines.  The very slightly patched version of \n\n  SAGE_ROOT/local/lib/python2.5/site-packages/matplotlib/cbook.py\n\nattached to this ticket may very likely fix the problem.  See this thread:\n  \n  http://groups.google.com/group/sage-support/browse_thread/thread/edcf2740f7276e6a?hl=en#78ee7d78a0a99f12\n\nIf this really turns out to be the fix, cbook.py should be put into the matplotlib spkg as a patch. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1967\n\n",
+    "created_at": "2008-01-29T09:57:58Z",
+    "labels": [
+        "graphics",
+        "major",
+        "bug"
+    ],
+    "title": "fix matplotlib local-related bugs once and for all (?)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1967",
+    "user": "was"
+}
+```
 Assignee: was
 
 Many people have reported issues with locale.py going boom on quite a range of different OS X (and Linux?) machines.  The very slightly patched version of 
@@ -20,8 +30,25 @@ If this really turns out to be the fix, cbook.py should be put into the matplotl
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1967
+
+
+
+
 
 ---
+
+archive/issue_comments_012738.json:
+```json
+{
+    "body": "Attachment\n\nThe spkg at \n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-2.10.1/rc4/matplotlib-0.91.1.p3.spkg\n\nfixes this issue as well as #2014\n\nCheers,\n\nMichael",
+    "created_at": "2008-02-01T00:42:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1967",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1967#issuecomment-12738",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -36,15 +63,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-01 02:00:02
+archive/issue_comments_012739.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-02-01T02:00:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1967",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1967#issuecomment-12739",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-01 02:00:02
+archive/issue_comments_012740.json:
+```json
+{
+    "body": "Merged in Sage 2.10.1.rc4",
+    "created_at": "2008-02-01T02:00:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1967",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1967#issuecomment-12740",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.1.rc4

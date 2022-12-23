@@ -1,11 +1,21 @@
 # Issue 7794: PolynomialRing_integral_domain ignores Ctrl-C and segfaults
 
-Issue created by migration from https://trac.sagemath.org/ticket/7794
-
-Original creator: SimonKing
-
-Original creation time: 2009-12-30 10:52:47
-
+archive/issues_007794.json:
+```json
+{
+    "body": "Assignee: AlexGhitza\n\nKeywords: Polynomial Ring KeyboardInterrupt\n\nThe following was reported by Alex P on [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/d92efb12f35e758a):\n\n```\nsage: F.<a> = FiniteField(3)\nsage: P.<T> = PolynomialRing(F)\nsage: PP.<z> = PolynomialRing(P)\nsage: PP\nUnivariate Polynomial Ring in z over Univariate Polynomial Ring in T over Finite Field of size 3\nsage: type(PP)\n<class 'sage.rings.polynomial.polynomial_ring.PolynomialRing_integral_domain'>\nsage: (z^3 + T*z)^(81*3)\n^CException KeyboardInterrupt: KeyboardInterrupt() in 'sage.rings.polynomial.polynomial_zmod_flint.get_cparent' ignored\n^C^C\n\n------------------------------------------------------------\nUnhandled SIGFPE: An unhandled floating point exception occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\n\nSo: First, Ctrl-C is ignored, which is bad IMO. Then, hitting Ctrl-C again (actually twice) results in a segfault, which is a desaster.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7794\n\n",
+    "created_at": "2009-12-30T10:52:47Z",
+    "labels": [
+        "algebra",
+        "critical",
+        "bug"
+    ],
+    "title": "PolynomialRing_integral_domain ignores Ctrl-C and segfaults",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7794",
+    "user": "SimonKing"
+}
+```
 Assignee: AlexGhitza
 
 Keywords: Polynomial Ring KeyboardInterrupt
@@ -39,17 +49,43 @@ So: First, Ctrl-C is ignored, which is bad IMO. Then, hitting Ctrl-C again (actu
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7794
+
+
+
+
 
 ---
 
-Comment by SimonKing created at 2011-05-19 18:08:26
+archive/issue_comments_067266.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2011-05-19T18:08:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67266",
+    "user": "SimonKing"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-05-19 18:08:26
+archive/issue_comments_067267.json:
+```json
+{
+    "body": "I just verified that the problem seems to be fixed in sage-4.6.2.\n\nFirstly, the original example now works sufficiently quickly, so that there is no need to interrupt the computation:\n\n```\nsage: F.<a> = FiniteField(3)\nsage: P.<T> = PolynomialRing(F)\nsage: PP.<z> = PolynomialRing(P)\nsage: PP\nUnivariate Polynomial Ring in z over Univariate Polynomial Ring in T over Finite Field of size 3\nsage: type(PP)\n<class 'sage.rings.polynomial.polynomial_ring.PolynomialRing_integral_domain'>\nsage: (z^3 + T*z)^(81*3)\nz^729 + T^243*z^243\n```\n\n\nSecondly, if one tries the same thing with a higher exponent, hitting Ctrl-c works (or at least it does after several attempts):\n\n```\nsage: (z^3 + T*z)^(81^3)\n^C^C^C---------------------------------------------------------------------------\nKeyboardInterrupt                         Traceback (most recent call last)\n\n/home/king/<ipython console> in <module>()\n\n/mnt/local/king/SAGE/broken/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_element.so in sage.rings.polynomial.polynomial_element.Polynomial.__pow__ (sage/rings/polynomial/polynomial_element.c:12738)()\n\n/mnt/local/king/SAGE/broken/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.generic_power (sage/structure/element.c:20326)()\n...\n<LONG TRACEBACK>\n...\n/mnt/local/king/SAGE/broken/local/lib/python2.6/site-packages/sage/interfaces/get_sigs.pyc in my_sigint(x, n)\n      7\n      8 def my_sigint(x, n):\n----> 9     raise KeyboardInterrupt\n     10\n     11 def my_sigfpe(x, n):\n\nKeyboardInterrupt:\n```\n\n\nSo, I believe this ticket can be closed! If I am not mistaken, I first need to put it as \"needs review\"...",
+    "created_at": "2011-05-19T18:08:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67267",
+    "user": "SimonKing"
+}
+```
 
 I just verified that the problem seems to be fixed in sage-4.6.2.
 
@@ -97,23 +133,56 @@ KeyboardInterrupt:
 So, I believe this ticket can be closed! If I am not mistaken, I first need to put it as "needs review"...
 
 
+
 ---
 
-Comment by SimonKing created at 2011-05-19 18:10:34
+archive/issue_comments_067268.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2011-05-19T18:10:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67268",
+    "user": "SimonKing"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-05-19 18:10:34
+archive/issue_comments_067269.json:
+```json
+{
+    "body": "I miss the possibility to change the ticket into the state \"worksforme\", but that's my review, in one word...",
+    "created_at": "2011-05-19T18:10:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67269",
+    "user": "SimonKing"
+}
+```
 
 I miss the possibility to change the ticket into the state "worksforme", but that's my review, in one word...
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-05-19 20:00:10
+archive/issue_comments_067270.json:
+```json
+{
+    "body": "I'm still able to reproduce the problem on sage-4.7.rc2 (note that interrupt handling was completely rewritten in #9678, merged in sage-4.7.alpha1, so testing this with sage-4.6.2 is pointless).\n\n\n```\nsage: F.<a> = FiniteField(3)\nsage: P.<T> = PolynomialRing(F)\nsage: PP.<z> = PolynomialRing(P)\nsage: (z^3 + T*z)^(81*3)\n^C^CException KeyboardInterrupt in 'sage.rings.polynomial.polynomial_zmod_flint.get_cparent' ignored\nz^729 + T^243*z^243\nsage: (z^3 + T*z)^(81*3)\n^C/usr/local/src/sage-4.7/local/lib/libcsage.so(print_backtrace+0x31)[0x7f3398533e02]\n/usr/local/src/sage-4.7/local/lib/libcsage.so(sigdie+0x14)[0x7f3398533e34]\n/usr/local/src/sage-4.7/local/lib/libcsage.so(sage_signal_handler+0x1e6)[0x7f3398533a5c]\n/lib/libpthread.so.0(+0xf400)[0x7f339d78c400]\n/usr/local/src/sage-4.7/local/lib/libgmp.so.3(__gmp_exception+0x1e)[0x7f33982c357e]\n/usr/local/src/sage-4.7/local/lib/libgmp.so.3(+0xb5ae)[0x7f33982c35ae]\n/usr/local/src/sage-4.7/local/lib/libgmp.so.3(__gmpz_fdiv_ui+0x0)[0x7f33982cfed0]\n/usr/local/src/sage-4.7/local/lib/libflint.so(zn_mod_init+0x5c)[0x7f33902e109c]\n/usr/local/src/sage-4.7/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_zmod_flint.so(+0x19ce6)[0x7f336d5ddce6]\n/usr/local/src/sage-4.7/local/lib/libpython2.6.so.1.0(+0x9b85c)[0x7f339da3485c]\n/usr/local/src/sage-4.7/local/lib/libpython2.6.so.1.0(PyObject_Call+0x53)[0x7f339d9e3cf3]\n/usr/local/src/sage-4.7/local/lib/libpython2.6.so.1.0(PyEval_CallObjectWithKeywords+0x47)[0x7f339da76617]\n/usr/local/src/sage-4.7/local/lib/libpython2.6.so.1.0(+0x61747)[0x7f339d9fa747]\n/usr/local/src/sage-4.7/local/lib/libpython2.6.so.1.0(PyObject_Call+0x53)[0x7f339d9e3cf3]\n/usr/local/src/sage-4.7/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_zmod_flint.so(+0xad24)[0x7f336d5ced24]\n/usr/local/src/sage-4.7/local/lib/libpython2.6.so.1.0(+0xa1098)[0x7f339da3a098]\n/usr/local/src/sage-4.7/local/lib/libpython2.6.so.1.0(PyObject_Call+0x53)[0x7f339d9e3cf3]\n/usr/local/src/sage-4.7/local/lib/libpython2.6.so.1.0(PyEval_EvalFrameEx+0x3a79)[0x7f339da7a689]\n/usr/local/src/sage-4.7/local/lib/libpython2.6.so.1.0(PyEval_EvalCodeEx+0x879)[0x7f339da7d819]\n/usr/local/src/sage-4.7/local/lib/libpython2.6.so.1.0(+0x70b26)[0x7f339da09b26]\n/usr/local/src/sage-4.7/local/lib/libpython2.6.so.1.0(PyObject_Call+0x53)[0x7f339d9e3cf3]\n/usr/local/src/sage-4.7/local/lib/libpython2.6.so.1.0(+0x5793f)[0x7f339d9f093f]\n/usr/local/src/sage-4.7/local/lib/libpython2.6.so.1.0(PyObject_Call+0x53)[0x7f339d9e3cf3]\n/usr/local/src/sage-4.7/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_element.so(+0x12ec1)[0x7f3388decec1]\n/usr/local/src/sage-4.7/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_element.so(+0x12beb)[0x7f3388decbeb]\n/usr/local/src/sage-4.7/local/lib/python2.6/site-packages/sage/categories/map.so(+0x6be5)[0x7f3394501be5]\n/usr/local/src/sage-4.7/local/lib/python2.6/site-packages/sage/structure/coerce.so(+0x1fb4d)[0x7f339473eb4d]\n/usr/local/src/sage-4.7/local/lib/python2.6/site-packages/sage/structure/coerce.so(+0x179e0)[0x7f33947369e0]\n/usr/local/src/sage-4.7/local/lib/python2.6/site-packages/sage/structure/element.so(+0x108d9)[0x7f339496b8d9]\n/usr/local/src/sage-4.7/local/lib/python2.6/site-packages/sage/structure/element.so(+0x3a681)[0x7f3394995681]\n/usr/local/src/sage-4.7/local/lib/libpython2.6.so.1.0(+0x4621c)[0x7f339d9df21c]\n/usr/local/src/sage-4.7/local/lib/libpython2.6.so.1.0(PyNumber_Add+0x20)[0x7f339d9e1640]\n/usr/local/src/sage-4.7/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_element.so(+0x41f03)[0x7f3388e1bf03]\n/usr/local/src/sage-4.7/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_element.so(+0x6ff62)[0x7f3388e49f62]\n/usr/local/src/sage-4.7/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_element.so(+0x6ed99)[0x7f3388e48d99]\n/usr/local/src/sage-4.7/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_element.so(+0x6ef0c)[0x7f3388e48f0c]\n/usr/local/src/sage-4.7/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_element.so(+0x6edcf)[0x7f3388e48dcf]\n\n------------------------------------------------------------------------\nUnhandled SIGFPE: An unhandled floating point exception occurred in Sage.\nThis probably occurred because a *compiled* component of Sage has a bug\nin it and is not properly wrapped with sig_on(), sig_off(). You might\nwant to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate.\n------------------------------------------------------------------------\n```\n",
+    "created_at": "2011-05-19T20:00:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67270",
+    "user": "jdemeyer"
+}
+```
 
 I'm still able to reproduce the problem on sage-4.7.rc2 (note that interrupt handling was completely rewritten in #9678, merged in sage-4.7.alpha1, so testing this with sage-4.6.2 is pointless).
 
@@ -175,16 +244,38 @@ Sage will now terminate.
 
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-05-19 20:00:10
+archive/issue_comments_067271.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_work.",
+    "created_at": "2011-05-19T20:00:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67271",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from positive_review to needs_work.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-05-20 05:36:04
+archive/issue_comments_067272.json:
+```json
+{
+    "body": "Replying to [comment:3 jdemeyer]:\n> I'm still able to reproduce the problem on sage-4.7.rc2 (note that interrupt handling was completely rewritten in #9678, merged in sage-4.7.alpha1, so testing this with sage-4.6.2 is pointless).\n\nWhat a pity!",
+    "created_at": "2011-05-20T05:36:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67272",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:3 jdemeyer]:
 > I'm still able to reproduce the problem on sage-4.7.rc2 (note that interrupt handling was completely rewritten in #9678, merged in sage-4.7.alpha1, so testing this with sage-4.6.2 is pointless).
@@ -192,9 +283,20 @@ Replying to [comment:3 jdemeyer]:
 What a pity!
 
 
+
 ---
 
-Comment by SimonKing created at 2011-05-20 06:25:39
+archive/issue_comments_067273.json:
+```json
+{
+    "body": "Since the problem seems to be related with get_cparent, I was first looking into that. There was a bare \"except:\", where it should be catching an attribute error. But that was not the problem.\n\nNext, I looked into polynomial_template.pxi, where get_cparent is frequently used. Too frequently, actually. In many methods it is called several times. So, it would be better to assign its output to a cdef'd variable -- that would actually boost the speed a lot!\n\nNamely, working on other tickets, I know that the \"harmless\" method `modulus()` takes the most time when doing arithmetic with polynomials over finite fields. `modulus()` is called in get_cparent (actually, it is called twice!), and get_cparent is called several times in both _pow_ and _mul_ (as in polynomial_template.pxi).\n\nSo, one approach would be to remove the redundant calls - which makes sense anyway. If that does not help with the segfault, one could still try to wrap it into sig_on()/sig_off().",
+    "created_at": "2011-05-20T06:25:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67273",
+    "user": "SimonKing"
+}
+```
 
 Since the problem seems to be related with get_cparent, I was first looking into that. There was a bare "except:", where it should be catching an attribute error. But that was not the problem.
 
@@ -205,30 +307,74 @@ Namely, working on other tickets, I know that the "harmless" method `modulus()` 
 So, one approach would be to remove the redundant calls - which makes sense anyway. If that does not help with the segfault, one could still try to wrap it into sig_on()/sig_off().
 
 
+
 ---
 
-Comment by SimonKing created at 2011-05-20 06:39:22
+archive/issue_comments_067274.json:
+```json
+{
+    "body": "It is really surprising how many redundant calls can be found in polynomial_template.pxi. I guess that's why get_cparent is defined as an inline cpdef function -- but that won't help if it internally calls pure Python functions!",
+    "created_at": "2011-05-20T06:39:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67274",
+    "user": "SimonKing"
+}
+```
 
 It is really surprising how many redundant calls can be found in polynomial_template.pxi. I guess that's why get_cparent is defined as an inline cpdef function -- but that won't help if it internally calls pure Python functions!
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-05-20 08:41:25
+archive/issue_comments_067275.json:
+```json
+{
+    "body": "The attached patch seems to fix the problem, but I haven't checked carefully whether it might break other stuff.  I'm putting it to needs_review, but I haven't really thought about it much.",
+    "created_at": "2011-05-20T08:41:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67275",
+    "user": "jdemeyer"
+}
+```
 
 The attached patch seems to fix the problem, but I haven't checked carefully whether it might break other stuff.  I'm putting it to needs_review, but I haven't really thought about it much.
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-05-20 08:41:25
+archive/issue_comments_067276.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2011-05-20T08:41:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67276",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-05-20 12:13:35
+archive/issue_comments_067277.json:
+```json
+{
+    "body": "Hi Jeroen,\n\nCan you give me a pointer to the documentation of the `except? 0` syntax? Sounds useful.\n\nI'll try your patch. I have prepared another patch, with the purpose of reducing the number of calls to get_cparent() (and thus to modulus()). But this will concern performance and should thus be on another ticket.",
+    "created_at": "2011-05-20T12:13:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67277",
+    "user": "SimonKing"
+}
+```
 
 Hi Jeroen,
 
@@ -237,25 +383,58 @@ Can you give me a pointer to the documentation of the `except? 0` syntax? Sounds
 I'll try your patch. I have prepared another patch, with the purpose of reducing the number of calls to get_cparent() (and thus to modulus()). But this will concern performance and should thus be on another ticket.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-05-20 12:18:01
+archive/issue_comments_067278.json:
+```json
+{
+    "body": "I think a found a [reference](http://docs.cython.org/src/userguide/language_basics.html#error-return-values) to handling Cython errors.",
+    "created_at": "2011-05-20T12:18:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67278",
+    "user": "SimonKing"
+}
+```
 
 I think a found a [reference](http://docs.cython.org/src/userguide/language_basics.html#error-return-values) to handling Cython errors.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-05-20 12:22:38
+archive/issue_comments_067279.json:
+```json
+{
+    "body": "After reading the documentation, it seems to me that your approach makes very much sense. The original problem seems to be solved.\n\nSo, if the long doctests pass then I'll give it a positive review.",
+    "created_at": "2011-05-20T12:22:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67279",
+    "user": "SimonKing"
+}
+```
 
 After reading the documentation, it seems to me that your approach makes very much sense. The original problem seems to be solved.
 
 So, if the long doctests pass then I'll give it a positive review.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-05-20 12:33:12
+archive/issue_comments_067280.json:
+```json
+{
+    "body": "Meanwhile I wonder:\n\nIn the original version of get_cparent, an attribute error was caught internally, and then zero was returned. Now, you return zero on error, and you do not catch the error internally. Couldn't that result in confusion, if the argument `parent` has no `modulus()` method?\n\nPerhaps it is safer to keep modify the internal try-except clause (namely replace the bare `except:` by `except AttributeError:`) and declare the Cython funtion as `cdef inline cparent get_cparent(parent) except -1:`.\n\nNamely, -1 can not result as a regular return value (the return value is the modulus of a ring, and thus a positive number), and so it would be safe to reserve -1 for errors (then you can also remove the question mark from `except?`).\n\nWill you do this change (if you agree with my arguing), or shall I make the change in a separate patch?",
+    "created_at": "2011-05-20T12:33:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67280",
+    "user": "SimonKing"
+}
+```
 
 Meanwhile I wonder:
 
@@ -268,35 +447,68 @@ Namely, -1 can not result as a regular return value (the return value is the mod
 Will you do this change (if you agree with my arguing), or shall I make the change in a separate patch?
 
 
+
 ---
 
-Comment by SimonKing created at 2011-05-20 12:49:47
+archive/issue_comments_067281.json:
+```json
+{
+    "body": "Replying to [comment:11 SimonKing]:\n> Perhaps it is safer to keep modify the internal try-except clause (namely replace the bare `except:` by `except AttributeError:`) and declare the Cython funtion as `cdef inline cparent get_cparent(parent) except -1:`.\n\nOn the other hand:\n\n* In polynomial_zmod_flint, get_cparent is supposed to return unsigned int. So, -1 does not make sense.\n\n* The modulus is positive. So, actually 0 should be a clear sign that something went wrong. I wonder if the function is ever called with `parent=None` (because this is the only situation in which zero is returned).\n\nI will test whether `parent is None` ever occurs. If not, then we could keep 0 as return value on error, but could remove the question mark (which should result in a faster code).",
+    "created_at": "2011-05-20T12:49:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67281",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:11 SimonKing]:
 > Perhaps it is safer to keep modify the internal try-except clause (namely replace the bare `except:` by `except AttributeError:`) and declare the Cython funtion as `cdef inline cparent get_cparent(parent) except -1:`.
 
 On the other hand:
 
- * In polynomial_zmod_flint, get_cparent is supposed to return unsigned int. So, -1 does not make sense.
+* In polynomial_zmod_flint, get_cparent is supposed to return unsigned int. So, -1 does not make sense.
 
- * The modulus is positive. So, actually 0 should be a clear sign that something went wrong. I wonder if the function is ever called with `parent=None` (because this is the only situation in which zero is returned).
+* The modulus is positive. So, actually 0 should be a clear sign that something went wrong. I wonder if the function is ever called with `parent=None` (because this is the only situation in which zero is returned).
 
 I will test whether `parent is None` ever occurs. If not, then we could keep 0 as return value on error, but could remove the question mark (which should result in a faster code).
 
 
+
 ---
 
-Comment by SimonKing created at 2011-05-20 12:52:30
+archive/issue_comments_067282.json:
+```json
+{
+    "body": "Replying to [comment:12 SimonKing]:\n> I will test whether `parent is None` ever occurs. If not, then we could keep 0 as return value on error, but could remove the question mark (which should result in a faster code).\n\nYes, it *is* called with `parent=None`, namely when unpickling.",
+    "created_at": "2011-05-20T12:52:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67282",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:12 SimonKing]:
 > I will test whether `parent is None` ever occurs. If not, then we could keep 0 as return value on error, but could remove the question mark (which should result in a faster code).
 
-Yes, it _is_ called with `parent=None`, namely when unpickling.
+Yes, it *is* called with `parent=None`, namely when unpickling.
+
 
 
 ---
 
-Comment by SimonKing created at 2011-05-20 13:11:38
+archive/issue_comments_067283.json:
+```json
+{
+    "body": "I considered the following version of get_cparent in polynomial_zmod_flint.pyx:\n\n```\ncdef inline cparent get_cparent(parent) except 1:\n    if parent is None:\n        return 0\n    try:\n        return <unsigned long>(parent.modulus())\n    except AttributeError:\n        return 0\n```\n\n\nRationale:\n\nThe original code was catching an error that should probably be an attribute error - so, we do the same, and return the same value that was returned by the original version.\n\nBut the return value 1 can never occur (which I verified by the doctests of sage/rings/). So, it is safe to reserve 1 as the exceptional value, without question mark after `except`.\n\nHowever, our two patch versions performed equally when I tried some timings. Hence, unless you say that I convinced you to use 1 as exceptional return value (without question mark), I will give your patch a positive review, provided the doc tests pass.",
+    "created_at": "2011-05-20T13:11:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67283",
+    "user": "SimonKing"
+}
+```
 
 I considered the following version of get_cparent in polynomial_zmod_flint.pyx:
 
@@ -320,32 +532,76 @@ But the return value 1 can never occur (which I verified by the doctests of sage
 However, our two patch versions performed equally when I tried some timings. Hence, unless you say that I convinced you to use 1 as exceptional return value (without question mark), I will give your patch a positive review, provided the doc tests pass.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-05-20 13:49:33
+archive/issue_comments_067284.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2011-05-20T13:49:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67284",
+    "user": "SimonKing"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-05-20 13:49:33
+archive/issue_comments_067285.json:
+```json
+{
+    "body": "Tests pass. So, let it be a positive review to your patch!",
+    "created_at": "2011-05-20T13:49:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67285",
+    "user": "SimonKing"
+}
+```
 
 Tests pass. So, let it be a positive review to your patch!
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-05-20 18:00:37
+archive/issue_comments_067286.json:
+```json
+{
+    "body": "Replying to [comment:14 SimonKing]:\n> But the return value 1 can never occur (which I verified by the doctests of sage/rings/). So, it is safe to reserve 1 as the exceptional value, without question mark after `except`.\nAre you **very sure** that 1 cannot occur?  You might be right, but I would not count on it.",
+    "created_at": "2011-05-20T18:00:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67286",
+    "user": "jdemeyer"
+}
+```
 
 Replying to [comment:14 SimonKing]:
 > But the return value 1 can never occur (which I verified by the doctests of sage/rings/). So, it is safe to reserve 1 as the exceptional value, without question mark after `except`.
-Are you *very sure* that 1 cannot occur?  You might be right, but I would not count on it.
+Are you **very sure** that 1 cannot occur?  You might be right, but I would not count on it.
+
 
 
 ---
 
-Comment by jdemeyer created at 2011-05-20 18:05:12
+archive/issue_comments_067287.json:
+```json
+{
+    "body": "you are probably right about `except AttributeError`. How about\n\n```\ncdef inline cparent get_cparent(parent) except? 0:\n    try:\n        return <unsigned long>(parent.modulus())\n    except AttributeError:\n        return 0\n```\n\nThis will also catch the case `parent == None`.",
+    "created_at": "2011-05-20T18:05:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67287",
+    "user": "jdemeyer"
+}
+```
 
 you are probably right about `except AttributeError`. How about
 
@@ -360,16 +616,38 @@ cdef inline cparent get_cparent(parent) except? 0:
 This will also catch the case `parent == None`.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-05-21 06:17:15
+archive/issue_comments_067288.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_work.",
+    "created_at": "2011-05-21T06:17:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67288",
+    "user": "SimonKing"
+}
+```
 
 Changing status from positive_review to needs_work.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-05-21 06:17:15
+archive/issue_comments_067289.json:
+```json
+{
+    "body": "Replying to [comment:17 jdemeyer]:\n> you are probably right about `except AttributeError`. How about\n> {{{\n> cdef inline cparent get_cparent(parent) except? 0:\n>     try:\n>         return <unsigned long>(parent.modulus())\n>     except AttributeError:\n>         return 0\n> }}}\n> This will also catch the case `parent == None`.\n\nYes, that looks a bit better. \n\nConcerning modulus 1:\n\nIt is possible to explicitly construct an instance of `sage.rings.polynomial.polynomial_zmod_flint.Polynomial_zmod_flint` whose parent has modulus 1:\n\n```\nsage: from sage.rings.polynomial.polynomial_ring import PolynomialRing_dense_mod_n\nsage: P = PolynomialRing_dense_mod_n(Zmod(1),'x')\nsage: type(P.0)\n<type 'sage.rings.polynomial.polynomial_zmod_flint.Polynomial_zmod_flint'>\n```\n\n\nSo, in order to be on the safe side, one should not have `get_cparent(parent) except 1:`.\n\nOne may argue, however, that it can not occur if one constructs a ring as one is supposed to, namely by calling the polynomial ring constructor:\n\n```\nsage: P.<x> = Zmod(1)[]\nsage: type(x)\n<type 'sage.rings.polynomial.polynomial_element.Polynomial_generic_dense'>\n```\n\n\nBut better safe than sorry, in particular since your safe solution (`... except? 0:`) should have no serious time penalty.\n\nNamely, as much as I understand, `cdef get_cparent(parent) except? 0:` will slow things down only if the return value is 0, because then it will be tested whether an error has actually occured.\n\nBut, to the best of my knowledge, it is *impossible* to have a parent with modulus zero, even if one works around the polynomial ring constructor:\n\n```\nsage: P = PolynomialRing_dense_mod_n(ZZ,'x')\nTraceback (most recent call last):\n...\nValueError: invalid integer: +Infinity\n```\n\n\nSo, if one has return value zero then something exceptional must be happening: Either it is a real error, or it is during pickling, when `parent` is None. So, we can certainly afford to test for an error in that situation.\n\nCan you update your patch, so that the attribute error is caught? Then I'll run the tests again, and will hoppefully be able to renew my positive review.",
+    "created_at": "2011-05-21T06:17:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67289",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:17 jdemeyer]:
 > you are probably right about `except AttributeError`. How about
@@ -411,7 +689,7 @@ But better safe than sorry, in particular since your safe solution (`... except?
 
 Namely, as much as I understand, `cdef get_cparent(parent) except? 0:` will slow things down only if the return value is 0, because then it will be tested whether an error has actually occured.
 
-But, to the best of my knowledge, it is _impossible_ to have a parent with modulus zero, even if one works around the polynomial ring constructor:
+But, to the best of my knowledge, it is *impossible* to have a parent with modulus zero, even if one works around the polynomial ring constructor:
 
 ```
 sage: P = PolynomialRing_dense_mod_n(ZZ,'x')
@@ -426,21 +704,56 @@ So, if one has return value zero then something exceptional must be happening: E
 Can you update your patch, so that the attribute error is caught? Then I'll run the tests again, and will hoppefully be able to renew my positive review.
 
 
+
 ---
+
+archive/issue_comments_067290.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2011-05-21T06:23:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67290",
+    "user": "jdemeyer"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-05-21 06:24:49
+archive/issue_comments_067291.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2011-05-21T06:24:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67291",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-05-21 09:04:59
+archive/issue_comments_067292.json:
+```json
+{
+    "body": "All long tests passed with your new patch.\n\nI tried to add a doc test, as follows:\n\n```\n    sage: def test():\n    ...    P = GF(3)['T']\n    ...    PP = P['z']\n    ...    T = P.gen()\n    ...    z = PP.gen()\n    ...    alarm(1)\n    ...    try:\n    ...       while(1):\n    ...           x = (z**3+T*z)**243\n    ...    except KeyboardInterrupt:\n    ...       print \"First interrupt caught\"\n    ...    alarm(1)\n    ...    try:\n    ...        while(1):\n    ...            x = (z**3+T*z)**243\n    ...    except KeyboardInterrupt:\n    ...        print \"Second interrupt caught\"\n    sage: test()\n    First interrupt caught\n    Second interrupt caught\n```\n\n\nHowever, it did not work, since there seem to be other places in which errors are not properly caught. Namely, I occasionally got:\n\n```\nsage: test()\nFirst interrupt caught\nException KeyboardInterrupt: KeyboardInterrupt('computation timed out because alarm was set for 1 seconds',) in T^79 + 2*T^78 + 2*T^77 + T^74 ignored\n^CSecond interrupt caught\n```\n\nSo, the first alarm worked, but the second didn't, and only when I pressed <ctrl>-c then the computation was interrupted.\n\nWhat shall we do now? Clearly, your patch is a progress. So, I tend to give it a positive review (because all tests pass), and deal with the remaining problem on a different ticket.\n\nWhat do you think?",
+    "created_at": "2011-05-21T09:04:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67292",
+    "user": "SimonKing"
+}
+```
 
 All long tests passed with your new patch.
 
@@ -486,9 +799,20 @@ What shall we do now? Clearly, your patch is a progress. So, I tend to give it a
 What do you think?
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-05-23 10:38:19
+archive/issue_comments_067293.json:
+```json
+{
+    "body": "Replying to [comment:21 SimonKing]:\n> What do you think?\n\nI'll see if I can identify the problem.",
+    "created_at": "2011-05-23T10:38:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67293",
+    "user": "jdemeyer"
+}
+```
 
 Replying to [comment:21 SimonKing]:
 > What do you think?
@@ -496,23 +820,56 @@ Replying to [comment:21 SimonKing]:
 I'll see if I can identify the problem.
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-05-23 15:09:19
+archive/issue_comments_067294.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2011-05-23T15:09:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67294",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-05-23 15:09:19
+archive/issue_comments_067295.json:
+```json
+{
+    "body": "I cannot easily identify the problem, so let's put it to positive_review (even though I agree the isuue is not 100% solved).",
+    "created_at": "2011-05-23T15:09:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67295",
+    "user": "jdemeyer"
+}
+```
 
 I cannot easily identify the problem, so let's put it to positive_review (even though I agree the isuue is not 100% solved).
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-05-24 07:52:00
+archive/issue_comments_067296.json:
+```json
+{
+    "body": "I have tracked the `Exception KeyboardInterrupt... ignored` problem\ndown to the following Cython-generated code in `sage/rings/polynomial/polynomial_zmod_flint.c`:\n\n\n```\nstatic void __pyx_tp_dealloc_4sage_5rings_10polynomial_21polynomial_zmod_flint_Polynomial_template(PyObject *o) {\n  {\n    PyObject *etype, *eval, *etb;\n    PyErr_Fetch(&etype, &eval, &etb);\n    ++Py_REFCNT(o);\n    __pyx_pf_4sage_5rings_10polynomial_21polynomial_zmod_flint_19Polynomial_template_3__dealloc__(o);\n    if (PyErr_Occurred()) PyErr_WriteUnraisable(o);\n    --Py_REFCNT(o);\n    PyErr_Restore(etype, eval, etb);\n  }\n  __pyx_ptype_4sage_5rings_10polynomial_18polynomial_element_Polynomial->tp_dealloc(o);\n}\n```\n\n\nThe problem is the line\n\n```\nif (PyErr_Occurred()) PyErr_WriteUnraisable(o);\n```\n\nSince this code is generated by Cython, perhaps it is not possible to solve this problem without patching Cython.",
+    "created_at": "2011-05-24T07:52:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67296",
+    "user": "jdemeyer"
+}
+```
 
 I have tracked the `Exception KeyboardInterrupt... ignored` problem
 down to the following Cython-generated code in `sage/rings/polynomial/polynomial_zmod_flint.c`:
@@ -543,16 +900,38 @@ if (PyErr_Occurred()) PyErr_WriteUnraisable(o);
 Since this code is generated by Cython, perhaps it is not possible to solve this problem without patching Cython.
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-05-24 09:06:58
+archive/issue_comments_067297.json:
+```json
+{
+    "body": "I believe the \"Exception ignored\" to be harmless, in the sense that it's not going to break anything or cause segmentation faults.  If the exception is ignored, the computation simply continues and the user can press ctrl-C a second time and that should do it.",
+    "created_at": "2011-05-24T09:06:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67297",
+    "user": "jdemeyer"
+}
+```
 
 I believe the "Exception ignored" to be harmless, in the sense that it's not going to break anything or cause segmentation faults.  If the exception is ignored, the computation simply continues and the user can press ctrl-C a second time and that should do it.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-05-24 09:23:16
+archive/issue_comments_067298.json:
+```json
+{
+    "body": "Replying to [comment:25 jdemeyer]:\n> I believe the \"Exception ignored\" to be harmless, in the sense that it's not going to break anything or cause segmentation faults.  If the exception is ignored, the computation simply continues and the user can press ctrl-C a second time and that should do it.\n\nYes, but it made it impossible for me to create a doctest for your fix!",
+    "created_at": "2011-05-24T09:23:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67298",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:25 jdemeyer]:
 > I believe the "Exception ignored" to be harmless, in the sense that it's not going to break anything or cause segmentation faults.  If the exception is ignored, the computation simply continues and the user can press ctrl-C a second time and that should do it.
@@ -560,8 +939,19 @@ Replying to [comment:25 jdemeyer]:
 Yes, but it made it impossible for me to create a doctest for your fix!
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-05-30 14:52:02
+archive/issue_comments_067299.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2011-05-30T14:52:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7794#issuecomment-67299",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: fixed

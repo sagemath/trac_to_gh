@@ -1,11 +1,21 @@
 # Issue 3495: [with patch, needs review] bug in cyclotomic charpoly for 1x1 matrices
 
-Issue created by migration from https://trac.sagemath.org/ticket/3495
-
-Original creator: craigcitro
-
-Original creation time: 2008-06-23 18:53:49
-
+archive/issues_003495.json:
+```json
+{
+    "body": "Assignee: craigcitro\n\nThe following will crash in sage:\n\n\n```\nsage: Matrix(CyclotomicField(3), 1, [0]).charpoly()\n```\n\n\nThe attached patch fixes it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3495\n\n",
+    "created_at": "2008-06-23T18:53:49Z",
+    "labels": [
+        "linear algebra",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch, needs review] bug in cyclotomic charpoly for 1x1 matrices",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3495",
+    "user": "craigcitro"
+}
+```
 Assignee: craigcitro
 
 The following will crash in sage:
@@ -18,39 +28,100 @@ sage: Matrix(CyclotomicField(3), 1, [0]).charpoly()
 
 The attached patch fixes it.
 
+Issue created by migration from https://trac.sagemath.org/ticket/3495
+
+
+
+
 
 ---
+
+archive/issue_comments_024611.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-06-23T18:54:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3495",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3495#issuecomment-24611",
+    "user": "craigcitro"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2008-06-23 19:17:54
+archive/issue_comments_024612.json:
+```json
+{
+    "body": "REFEREE REPORT:\n\n* +1; this works as advertised\n\nReminder -- need to also fix 0x0 as another ticket...",
+    "created_at": "2008-06-23T19:17:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3495",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3495#issuecomment-24612",
+    "user": "was"
+}
+```
 
 REFEREE REPORT:
 
-  * +1; this works as advertised
+* +1; this works as advertised
 
 Reminder -- need to also fix 0x0 as another ticket...
 
 
+
 ---
 
-Comment by craigcitro created at 2008-06-23 19:22:01
+archive/issue_comments_024613.json:
+```json
+{
+    "body": "The 0x0 is #3496.",
+    "created_at": "2008-06-23T19:22:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3495",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3495#issuecomment-24613",
+    "user": "craigcitro"
+}
+```
 
 The 0x0 is #3496.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-23 23:10:22
+archive/issue_comments_024614.json:
+```json
+{
+    "body": "Merged in Sage 3.0.4.alpha1",
+    "created_at": "2008-06-23T23:10:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3495",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3495#issuecomment-24614",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.4.alpha1
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-23 23:10:22
+archive/issue_comments_024615.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-06-23T23:10:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3495",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3495#issuecomment-24615",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

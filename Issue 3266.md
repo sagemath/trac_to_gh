@@ -1,11 +1,21 @@
 # Issue 3266: Sage 3.0.2.alpha1: doctest failure in sage/server/simple/twist.py
 
-Issue created by migration from https://trac.sagemath.org/ticket/3266
-
-Original creator: mabshoff
-
-Original creation time: 2008-05-21 13:54:36
-
+archive/issues_003266.json:
+```json
+{
+    "body": "Assignee: failure\n\n\n```\nsage -t -long devel/sage/sage/server/simple/twist.py        \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.0.2.rc0/tmp/twist.py\", line 81:\n    sage: nb.dispose()\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.0.2.rc0/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[20]>\", line 1, in <module>\n        nb.dispose()###line 81:\n    sage: nb.dispose()\n      File \"/scratch/mabshoff/release-cycle/sage-3.0.2.rc0/local/lib/python2.5/site-packages/sage/server/notebook/notebook_object.py\", line 195, in dispose\n        p.expect(\"Press control-C again to exit\")\n      File \"/scratch/mabshoff/release-cycle/sage-3.0.2.rc0/local/lib/python2.5/site-packages/pexpect.py\", line 912, in expect\n        return self.expect_list(compiled_pattern_list, timeout, searchwindowsize)\n      File \"/scratch/mabshoff/release-cycle/sage-3.0.2.rc0/local/lib/python2.5/site-packages/pexpect.py\", line 978, in expect_list\n        raise EOF (str(e) + '\\n' + str(self))\n    EOF: End of File (EOF) in read_nonblocking(). Very pokey platform.\n    <pexpect.spawn instance at 0x2b73dba18518>\n    version: 2.0 ($Revision: 1.151 $)\n    command: /scratch/mabshoff/release-cycle/sage-3.0.2.rc0/sage\n    args: ['/scratch/mabshoff/release-cycle/sage-3.0.2.rc0/sage', '-twistd', '--pidfile=tmpR1esq-/twistd.pid', '-ny', 'tmpR1esq-/twistedconf.tac']\n    patterns:\n        Press control-C again to exit\n    buffer (last 100 chars):\n    before (last 100 chars): 2008-05-21 06:53:03-0700 [-] Main loop terminated.\n    2008-05-21 06:53:03-0700 [-] Server Shut Down.\n\n    after: <class 'pexpect.EOF'>\n    match: None\n    match_index: None\n    exitstatus: 0\n    flag_eof: 1\n    pid: 724\n    child_fd: 3\n    timeout: 30\n    delimiter: <class 'pexpect.EOF'>\n    logfile: None\n    maxread: 2000\n    searchwindowsize: None\n    delaybeforesend: 0.1\n**********************************************************************\n1 items had failures:\n   1 of  21 in __main__.example_0\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.0.2.rc0/tmp/.doctest_twist.py\n         [38.7 s]\nexit code: 1024\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3266\n\n",
+    "created_at": "2008-05-21T13:54:36Z",
+    "labels": [
+        "doctest coverage",
+        "blocker",
+        "bug"
+    ],
+    "title": "Sage 3.0.2.alpha1: doctest failure in sage/server/simple/twist.py",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3266",
+    "user": "mabshoff"
+}
+```
 Assignee: failure
 
 
@@ -61,15 +71,43 @@ exit code: 1024
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3266
+
+
+
+
 
 ---
+
+archive/issue_comments_022613.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-05-23T06:41:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3266",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3266#issuecomment-22613",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-23 07:08:23
+archive/issue_comments_022614.json:
+```json
+{
+    "body": "The patch fixes the issue. Positive review.\n\nCheers,\n\nMichael",
+    "created_at": "2008-05-23T07:08:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3266",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3266#issuecomment-22614",
+    "user": "mabshoff"
+}
+```
 
 The patch fixes the issue. Positive review.
 
@@ -78,15 +116,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-23 07:09:14
+archive/issue_comments_022615.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-05-23T07:09:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3266",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3266#issuecomment-22615",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-23 07:09:14
+archive/issue_comments_022616.json:
+```json
+{
+    "body": "Merged in Sage 3.0.2.rc0",
+    "created_at": "2008-05-23T07:09:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3266",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3266#issuecomment-22616",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.2.rc0

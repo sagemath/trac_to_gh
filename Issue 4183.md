@@ -1,19 +1,44 @@
 # Issue 4183: ?? can't always find the source for new style classes
 
-Issue created by migration from https://trac.sagemath.org/ticket/4183
-
-Original creator: robertwb
-
-Original creation time: 2008-09-24 01:25:02
-
+archive/issues_004183.json:
+```json
+{
+    "body": "Assignee: was\n\nI think one needs to check bit 9 (Py_TPFLAGS_HEAPTYPE) of the __class__.__flags__ attribute to see if one should do the same trick as in #2777 or something like that.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4183\n\n",
+    "created_at": "2008-09-24T01:25:02Z",
+    "labels": [
+        "user interface",
+        "major",
+        "bug"
+    ],
+    "title": "?? can't always find the source for new style classes",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4183",
+    "user": "robertwb"
+}
+```
 Assignee: was
 
 I think one needs to check bit 9 (Py_TPFLAGS_HEAPTYPE) of the __class__.__flags__ attribute to see if one should do the same trick as in #2777 or something like that.
 
+Issue created by migration from https://trac.sagemath.org/ticket/4183
+
+
+
+
 
 ---
 
-Comment by aginiewicz created at 2008-09-24 02:40:50
+archive/issue_comments_030358.json:
+```json
+{
+    "body": "I didn't though about if for #2777, but based on [http://psyco.sourceforge.net/psycoguide/metaclass.html](http://psyco.sourceforge.net/psycoguide/metaclass.html), i.e. part \"... if `x` contains an instance of ... a new-style class, then `type(x)` will be `x.__class__` instead of `types.InstanceType`.\" - I think that test like:\n\n`hasattr(arg, __class__) and type(arg) == arg.__class__`\n\ncould do the thing, maybe not best way but it works for example with instances of `sage.rings.rational_field.RationalField`... no code to attach yet (just in-place tests in console, it's 4:30 am here) - will try to do some small patch soon",
+    "created_at": "2008-09-24T02:40:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4183",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4183#issuecomment-30358",
+    "user": "aginiewicz"
+}
+```
 
 I didn't though about if for #2777, but based on [http://psyco.sourceforge.net/psycoguide/metaclass.html](http://psyco.sourceforge.net/psycoguide/metaclass.html), i.e. part "... if `x` contains an instance of ... a new-style class, then `type(x)` will be `x.__class__` instead of `types.InstanceType`." - I think that test like:
 
@@ -22,16 +47,38 @@ I didn't though about if for #2777, but based on [http://psyco.sourceforge.net/p
 could do the thing, maybe not best way but it works for example with instances of `sage.rings.rational_field.RationalField`... no code to attach yet (just in-place tests in console, it's 4:30 am here) - will try to do some small patch soon
 
 
+
 ---
 
-Comment by robertwb created at 2008-09-24 05:10:38
+archive/issue_comments_030359.json:
+```json
+{
+    "body": "Ah, that sounds like a much nicer way to detect it.",
+    "created_at": "2008-09-24T05:10:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4183",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4183#issuecomment-30359",
+    "user": "robertwb"
+}
+```
 
 Ah, that sounds like a much nicer way to detect it.
 
 
+
 ---
 
-Comment by aginiewicz created at 2008-09-24 22:16:03
+archive/issue_comments_030360.json:
+```json
+{
+    "body": "Used other approach, above with type equal class is true for too much, for example:\n\n\n```\nsage: type(arg)\n<type 'function'>\nsage: arg.__class__\n<type 'function'>\n```\n\n\nCheck like:\n\n`obj.__class__.__module__ not in ('__builtin__', 'exceptions')`\n\nseems to work both old and new style classes, the problem seems to be that everything is object, so best we can do is check if something is object of non built-in class",
+    "created_at": "2008-09-24T22:16:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4183",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4183#issuecomment-30360",
+    "user": "aginiewicz"
+}
+```
 
 Used other approach, above with type equal class is true for too much, for example:
 
@@ -51,43 +98,111 @@ Check like:
 seems to work both old and new style classes, the problem seems to be that everything is object, so best we can do is check if something is object of non built-in class
 
 
+
 ---
 
-Comment by aginiewicz created at 2008-09-25 00:43:01
+archive/issue_comments_030361.json:
+```json
+{
+    "body": "second try",
+    "created_at": "2008-09-25T00:43:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4183",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4183#issuecomment-30361",
+    "user": "aginiewicz"
+}
+```
 
 second try
 
 
+
 ---
+
+archive/issue_comments_030362.json:
+```json
+{
+    "body": "Attachment\n\nin previous patch I trusted the \"everything is object\" too much... so not everything have `__class__`, that's why I added back the check for `__class__` and also `__module__`, though every class should have one... better safe than sorry",
+    "created_at": "2008-09-25T00:47:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4183",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4183#issuecomment-30362",
+    "user": "aginiewicz"
+}
+```
 
 Attachment
 
 in previous patch I trusted the "everything is object" too much... so not everything have `__class__`, that's why I added back the check for `__class__` and also `__module__`, though every class should have one... better safe than sorry
 
 
+
 ---
 
-Comment by robertwb created at 2008-10-14 19:44:10
+archive/issue_comments_030363.json:
+```json
+{
+    "body": "Applies cleanly and works well. This is very nice.",
+    "created_at": "2008-10-14T19:44:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4183",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4183#issuecomment-30363",
+    "user": "robertwb"
+}
+```
 
 Applies cleanly and works well. This is very nice.
 
 
+
 ---
 
-Comment by robertwb created at 2008-10-14 19:44:27
+archive/issue_comments_030364.json:
+```json
+{
+    "body": "Note: apply only the second patch.",
+    "created_at": "2008-10-14T19:44:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4183",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4183#issuecomment-30364",
+    "user": "robertwb"
+}
+```
 
 Note: apply only the second patch.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-18 12:03:30
+archive/issue_comments_030365.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-10-18T12:03:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4183",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4183#issuecomment-30365",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-18 12:03:30
+archive/issue_comments_030366.json:
+```json
+{
+    "body": "Merged 4183-2.patch in Sage 3.2.alpha0",
+    "created_at": "2008-10-18T12:03:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4183",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4183#issuecomment-30366",
+    "user": "mabshoff"
+}
+```
 
 Merged 4183-2.patch in Sage 3.2.alpha0

@@ -1,11 +1,21 @@
 # Issue 4034: [with spkg, needs review] Fix rubiks.spkg build on Solaris
 
-Issue created by migration from https://trac.sagemath.org/ticket/4034
-
-Original creator: mabshoff
-
-Original creation time: 2008-09-01 09:50:03
-
+archive/issues_004034.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nThis is a similar problem like the singular.spkg: /usr/bin/install does not exist. The spkg at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.1.2/alpha4/rubiks-20070912.p8.spkg\n\nworks around that.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4034\n\n",
+    "created_at": "2008-09-01T09:50:03Z",
+    "labels": [
+        "porting: Solaris",
+        "major",
+        "bug"
+    ],
+    "title": "[with spkg, needs review] Fix rubiks.spkg build on Solaris",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4034",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 This is a similar problem like the singular.spkg: /usr/bin/install does not exist. The spkg at
@@ -18,30 +28,78 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/4034
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-09-01 09:50:18
+archive/issue_comments_029103.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-09-01T09:50:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4034",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4034#issuecomment-29103",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by malb created at 2008-09-01 10:35:28
+archive/issue_comments_029104.json:
+```json
+{
+    "body": "Installs fine on my 64-bit Debian/GNU Linux Core2Duo. `sage -t interfaces/rubik.py` works.",
+    "created_at": "2008-09-01T10:35:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4034",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4034#issuecomment-29104",
+    "user": "malb"
+}
+```
 
 Installs fine on my 64-bit Debian/GNU Linux Core2Duo. `sage -t interfaces/rubik.py` works.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-01 11:34:23
+archive/issue_comments_029105.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-09-01T11:34:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4034",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4034#issuecomment-29105",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-01 11:34:23
+archive/issue_comments_029106.json:
+```json
+{
+    "body": "Merged in Sage 3.1.2.alpha4",
+    "created_at": "2008-09-01T11:34:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4034",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4034#issuecomment-29106",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.1.2.alpha4

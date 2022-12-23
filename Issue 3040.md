@@ -1,19 +1,46 @@
 # Issue 3040: [with patch; needs review] make it so magma(A) works for matrices over cyclotomic number fields
 
-Issue created by migration from https://trac.sagemath.org/ticket/3040
-
-Original creator: was
-
-Original creation time: 2008-04-27 03:21:07
-
+archive/issues_003040.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  ncalexan\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3040\n\n",
+    "created_at": "2008-04-27T03:21:07Z",
+    "labels": [
+        "linear algebra",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch; needs review] make it so magma(A) works for matrices over cyclotomic number fields",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3040",
+    "user": "was"
+}
+```
 Assignee: was
 
 CC:  ncalexan
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3040
+
+
+
+
 
 ---
+
+archive/issue_comments_020915.json:
+```json
+{
+    "body": "Attachment\n\nWhoever reviews this also ought to review #2171\n\nCheers,\n\nMichael",
+    "created_at": "2008-04-27T03:32:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3040",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3040#issuecomment-20915",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -24,9 +51,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by ncalexan created at 2008-05-05 18:39:40
+archive/issue_comments_020916.json:
+```json
+{
+    "body": "As written, this does not work.  Was it the wrong version of the patch?\n\nHere's a potential doctest, it fails because magma(K) does not work.\n\n\n```\n        We coerce a matrix over a cyclotomic field, where the\n        generator must be named during the coercion.\n            sage: K.<z> = CyclotomicField(12)\n            sage: A = matrix(K, 2, 3, [z, 1+z, z^7 - z + 10/3, 1, 0, z^2 + z + 9*z^11])\n            sage: B = magma(A); B                       # optional\n            sage: B.Type()                              # optional\n            ModMatFldElt\n            sage: B.Parent()                            # optional\n            Full KMatrixSpace of 2 by 3 matrices over XXX\n```\n",
+    "created_at": "2008-05-05T18:39:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3040",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3040#issuecomment-20916",
+    "user": "ncalexan"
+}
+```
 
 As written, this does not work.  Was it the wrong version of the patch?
 
@@ -47,21 +85,56 @@ Here's a potential doctest, it fails because magma(K) does not work.
 
 
 
+
 ---
 
-Comment by craigcitro created at 2008-05-10 10:44:45
+archive/issue_comments_020917.json:
+```json
+{
+    "body": "This works fine -- assuming you have the first patch from #3042 applied. Once that's in place, this is awesome.",
+    "created_at": "2008-05-10T10:44:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3040",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3040#issuecomment-20917",
+    "user": "craigcitro"
+}
+```
 
 This works fine -- assuming you have the first patch from #3042 applied. Once that's in place, this is awesome.
 
 
+
 ---
 
-Comment by craigcitro created at 2008-05-10 11:00:44
+archive/issue_comments_020918.json:
+```json
+{
+    "body": "Oh, and I noticed that this patch didn't have a doctest. I mistakenly let it through -- so I'm adding one, and attaching a patch.",
+    "created_at": "2008-05-10T11:00:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3040",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3040#issuecomment-20918",
+    "user": "craigcitro"
+}
+```
 
 Oh, and I noticed that this patch didn't have a doctest. I mistakenly let it through -- so I'm adding one, and attaching a patch.
 
 
+
 ---
+
+archive/issue_comments_020919.json:
+```json
+{
+    "body": "Attachment\n\nsage-3040.patch no longer applies cleanly. Please rebase.\n\nCheers,\n\nMichael",
+    "created_at": "2008-06-08T22:53:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3040",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3040#issuecomment-20919",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -72,28 +145,74 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_020920.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-06-09T07:25:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3040",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3040#issuecomment-20920",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-09 07:42:19
+archive/issue_comments_020921.json:
+```json
+{
+    "body": "Merged sage-3040-rebase.patch and sage-3040-doctest-rebase.patch in Sage 3.0.3.alpha2",
+    "created_at": "2008-06-09T07:42:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3040",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3040#issuecomment-20921",
+    "user": "mabshoff"
+}
+```
 
 Merged sage-3040-rebase.patch and sage-3040-doctest-rebase.patch in Sage 3.0.3.alpha2
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-09 07:42:19
+archive/issue_comments_020922.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-06-09T07:42:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3040",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3040#issuecomment-20922",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-09 07:47:16
+archive/issue_comments_020923.json:
+```json
+{
+    "body": "The patches have been rebased, so correct the \"Summary\".\n\nCheers,\n\nMichael",
+    "created_at": "2008-06-09T07:47:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3040",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3040#issuecomment-20923",
+    "user": "mabshoff"
+}
+```
 
 The patches have been rebased, so correct the "Summary".
 

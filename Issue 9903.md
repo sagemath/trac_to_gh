@@ -1,11 +1,21 @@
 # Issue 9903: ATLAS fails to build on OpenSolaris if SAGE_FAT_BINARY=yes
 
-Issue created by migration from https://trac.sagemath.org/ticket/9904
-
-Original creator: drkirkby
-
-Original creation time: 2010-09-13 20:47:24
-
+archive/issues_009903.json:
+```json
+{
+    "body": "Assignee: drkirkby\n\nCC:  jhpalmieri jsp\n\nThe subject pretty much says it all. This consistently fails for me. Two fairly critical looking messages below are:\n\n\n```\n/var/tmp//ccJwayyJ.s: Assembler messages:\n/var/tmp//ccJwayyJ.s:35: Error: suffix or operands invalid for `mov'\n```\n\n\nI suspect the rest of the problems stem from that. This was on a a Sun Ultra 27 running OpenSolaris 06/2009, but I would suspect the same would happen on a Solaris 10 x86 system such as fulvia. \n\n\n\n```\ngcc -DL2SIZE=4194304 -I/opt/sagemath/OpenSolaris/sage-4.5.3/spkg/build/atlas-3.8.3.p14/ATLAS-build/include -I/opt/sagemath/OpenSolaris/sage-4.5.3/spkg/build/atlas-3.8.3.p14/ATLAS-build/../src//include -I/opt/sagemath/OpenSolaris/sage-4.5.3/spkg/build/atlas-3.8.3.p14/ATLAS-build/../src//include/contrib -DAdd_ -DF77_INTEGER=int -DStringSunStyle -DATL_OS_SunOS -DATL_ARCH_HAMMER -DATL_CPUMHZ=3325 -DSUN_HR -DATL_SSE2 -DATL_SSE1 -DATL_GAS_x8632  -DATL_UCLEANM -DATL_UCLEANN -DATL_UCLEANK -fomit-frame-pointer -mfpmath=387 -O2 -falign-loops=4 -fPIC -m32 -c ATL_cupNBmm_b0.c\ngcc -fPIC -m32 -DL2SIZE=4194304 -I/opt/sagemath/OpenSolaris/sage-4.5.3/spkg/build/atlas-3.8.3.p14/ATLAS-build/include -I/opt/sagemath/OpenSolaris/sage-4.5.3/spkg/build/atlas-3.8.3.p14/ATLAS-build/../src//include -I/opt/sagemath/OpenSolaris/sage-4.5.3/spkg/build/atlas-3.8.3.p14/ATLAS-build/../src//include/contrib -DAdd_ -DF77_INTEGER=int -DStringSunStyle -DATL_OS_SunOS -DATL_ARCH_HAMMER -DATL_CPUMHZ=3325 -DSUN_HR -DATL_SSE2 -DATL_SSE1 -DATL_GAS_x8632  -DATL_UCLEANM -DATL_UCLEANN -DATL_UCLEANK -DATL_BETA=0 -c -x assembler-with-cpp ATL_cupNBmm0_1_0_b0.c\n/var/tmp//ccJwayyJ.s: Assembler messages:\n/var/tmp//ccJwayyJ.s:35: Error: suffix or operands invalid for `mov'\nmake[7]: *** [ATL_cupNBmm0_1_0_b0.o] Error 1\nmake[7]: Leaving directory `/opt/sagemath/OpenSolaris/sage-4.5.3/spkg/build/atlas-3.8.3.p14/ATLAS-build/src/blas/gemm/KERNEL'\nmake[6]: *** [ccleanuplib] Error 2\nmake[6]: Leaving directory `/opt/sagemath/OpenSolaris/sage-4.5.3/spkg/build/atlas-3.8.3.p14/ATLAS-build/src/blas/gemm'\nmake[5]: *** [clib] Error 2\nmake[5]: Leaving directory `/opt/sagemath/OpenSolaris/sage-4.5.3/spkg/build/atlas-3.8.3.p14/ATLAS-build/src/blas/gemm'\nmake[4]: *** [cmmlib] Error 2\nmake[4]: Leaving directory `/opt/sagemath/OpenSolaris/sage-4.5.3/spkg/build/atlas-3.8.3.p14/ATLAS-build/tune/blas/gemm'\nmake[3]: *** [cinstall] Error 2\nmake[3]: Leaving directory `/opt/sagemath/OpenSolaris/sage-4.5.3/spkg/build/atlas-3.8.3.p14/ATLAS-build/tune/blas/gemm'\nmake[2]: *** [MMinstall] Error 2\nmake[2]: Leaving directory `/opt/sagemath/OpenSolaris/sage-4.5.3/spkg/build/atlas-3.8.3.p14/ATLAS-build/bin'\nmake[2]: Entering directory `/opt/sagemath/OpenSolaris/sage-4.5.3/spkg/build/atlas-3.8.3.p14/ATLAS-build/bin'\ncd /opt/sagemath/OpenSolaris/sage-4.5.3/spkg/build/atlas-3.8.3.p14/ATLAS-build/tune/blas/gemm ; make res/atlas_csNKB.h\nmake[3]: Entering directory `/opt/sagemath/OpenSolaris/sage-4.5.3/spkg/build/atlas-3.8.3.p14/ATLAS-build/tune/blas/gemm'\nmake csRunFindCE\nmake[4]: Entering directory `/opt/sagemath/OpenSolaris/sage-4.5.3/spkg/build/atlas-3.8.3.p14/ATLAS-build/tune/blas/gemm'\ncd /opt/sagemath/OpenSolaris/sage-4.5.3/spkg/build/atlas-3.8.3.p14/ATLAS-build/src/blas/gemm ; make clib\nmake[5]: Entering directory `/opt/sagemath/OpenSolaris/sage-4.5.3/spkg/build/atlas-3.8.3.p14/ATLAS-build/src/blas/gemm'\nmake auxillib ccleanuplib cusergemm\nmake[6]: Entering directory `/opt/sagemath/OpenSolaris/sage-4.5.3/spkg/build/atlas-3.8.3.p14/ATLAS-build/src/blas/gemm'\ncd /opt/sagemath/OpenSolaris/sage-4.5.3/spkg/build/atlas-3.8.3.p14/ATLAS-build/src/auxil ; make lib\nmake[7]: Entering directory `/opt/sagemath/OpenSolaris/sage-4.5.3/spkg/build/atlas-3.8.3.p14/ATLAS-build/src/auxil'\nmake[7]: Nothing to be done for `lib'.\nmake[7]: Leaving directory `/opt/sagemath/OpenSolaris/sage-4.5.3/spkg/build/atlas-3.8.3.p14/ATLAS-build/src/auxil'\ncd KERNEL ; make -f cMakefile clib\nmake[7]: Entering directory `/opt/sagemath/OpenSolaris/sage-4.5.3/spkg/build/atlas-3.8.3.p14/ATLAS-build/src/blas/gemm/KERNEL'\ngcc -fPIC -m32 -DL2SIZE=4194304 -I/opt/sagemath/OpenSolaris/sage-4.5.3/spkg/build/atlas-3.8.3.p14/ATLAS-build/include -I/opt/sagemath/OpenSolaris/sage-4.5.3/spkg/build/atlas-3.8.3.p14/ATLAS-build/../src//include -I/opt/sagemath/OpenSolaris/sage-4.5.3/spkg/build/atlas-3.8.3.p14/ATLAS-build/../src//include/contrib -DAdd_ -DF77_INTEGER=int -DStringSunStyle -DATL_OS_SunOS -DATL_ARCH_HAMMER -DATL_CPUMHZ=3325 -DSUN_HR -DATL_SSE2 -DATL_SSE1 -DATL_GAS_x8632  -DATL_UCLEANM -DATL_UCLEANN -DATL_UCLEANK -DATL_BETA=0 -c -x assembler-with-cpp ATL_cupNBmm0_1_0_b0.c\n/var/tmp//cc1xa4zJ.s: Assembler messages:\n/var/tmp//cc1xa4zJ.s:35: Error: suffix or operands invalid for `mov'\nmake[7]: *** [ATL_cupNBmm0_1_0_b0.o] Error 1\nmake[7]: Leaving directory `/opt/sagemath/OpenSolaris/sage-4.5.3/spkg/build/atlas-3.8.3.p14/ATLAS-build/src/blas/gemm/KERNEL'\nmake[6]: *** [ccleanuplib] Error 2\nmake[6]: Leaving directory `/opt/sagemath/OpenSolaris/sage-4.5.3/spkg/build/atlas-3.8.3.p14/ATLAS-build/src/blas/gemm'\nmake[5]: *** [clib] Error 2\nmake[5]: Leaving directory `/opt/sagemath/OpenSolaris/sage-4.5.3/spkg/build/atlas-3.8.3.p14/ATLAS-build/src/blas/gemm'\nmake[4]: *** [cmmlib] Error 2\nmake[4]: Leaving directory `/opt/sagemath/OpenSolaris/sage-4.5.3/spkg/build/atlas-3.8.3.p14/ATLAS-build/tune/blas/gemm'\nmake[3]: *** [res/atlas_csNKB.h] Error 2\nmake[3]: Leaving directory `/opt/sagemath/OpenSolaris/sage-4.5.3/spkg/build/atlas-3.8.3.p14/ATLAS-build/tune/blas/gemm'\nmake[2]: *** [/opt/sagemath/OpenSolaris/sage-4.5.3/spkg/build/atlas-3.8.3.p14/ATLAS-build/tune/blas/gemm/res/atlas_csNKB.h] Error 2\nmake[2]: Leaving directory `/opt/sagemath/OpenSolaris/sage-4.5.3/spkg/build/atlas-3.8.3.p14/ATLAS-build/bin'\nERROR 664 DURING CACHE EDGE DETECTION!!.\nmake[2]: Entering directory `/opt/sagemath/OpenSolaris/sage-4.5.3/spkg/build/atlas-3.8.3.p14/ATLAS-build/bin'\ncd /opt/sagemath/OpenSolaris/sage-4.5.3/spkg/build/atlas-3.8.3.p14/ATLAS-build ; make error_report\nmake[3]: Entering directory `/opt/sagemath/OpenSolaris/sage-4.5.3/spkg/build/atlas-3.8.3.p14/ATLAS-build'\nmake -f Make.top error_report\nmake[4]: Entering directory `/opt/sagemath/OpenSolaris/sage-4.5.3/spkg/build/atlas-3.8.3.p14/ATLAS-build'\nuname -a 2>&1 >> bin/INSTALL_LOG/ERROR.LOG\ngcc -v 2>&1  >> bin/INSTALL_LOG/ERROR.LOG\nUsing built-in specs.\nCOLLECT_GCC=gcc\nCOLLECT_LTO_WRAPPER=/usr/local/gcc-4.5.0/libexec/gcc/i386-pc-solaris2.10/4.5.0/lto-wrapper\nTarget: i386-pc-solaris2.10\nConfigured with: ../gcc-4.5.0/configure --prefix=/usr/local/gcc-4.5.0 --build=i386-pc-solaris2.10 --enable-languages=c,c++,fortran --with-gmp=/usr/local/gcc-4.5.0 --with-mpfr=/usr/local/gcc-4.5.0 --disable-nls --enable-checking=release --enable-werror=no --enable-multilib -with-system-zlib --enable-bootstrap --with-gnu-as --with-as=/usr/local/binutils-2.20/bin/as --without-gnu-ld --with-ld=/usr/ccs/bin/ld\nThread model: posix\ngcc version 4.5.0 (GCC) \ngcc -V 2>&1  >> bin/INSTALL_LOG/ERROR.LOG\ngcc: '-V' option must have argument\nmake[4]: [error_report] Error 1 (ignored)\ngcc --version 2>&1  >> bin/INSTALL_LOG/ERROR.LOG\ntar cf error_HAMMER32SSE2.tar Make.inc bin/INSTALL_LOG/*\ngzip --best error_HAMMER32SSE2.tar\nmv error_HAMMER32SSE2.tar.gz error_HAMMER32SSE2.tgz\nmake[4]: Leaving directory `/opt/sagemath/OpenSolaris/sage-4.5.3/spkg/build/atlas-3.8.3.p14/ATLAS-build'\nmake[3]: Leaving directory `/opt/sagemath/OpenSolaris/sage-4.5.3/spkg/build/atlas-3.8.3.p14/ATLAS-build'\nmake[2]: Leaving directory `/opt/sagemath/OpenSolaris/sage-4.5.3/spkg/build/atlas-3.8.3.p14/ATLAS-build/bin'\nError report error_<ARCH>.tgz has been created in your top-level ATLAS\ndirectory.  Be sure to include this file in any help request.\ncat: ../../CONFIG/error.txt: cannot open [No such file or directory]\ncat: ../../CONFIG/error.txt: cannot open [No such file or directory]\n      Performance: 5035.85 (151.45 percent of of detected clock rate)\nmake -f Makefile INSTALL_LOG/cNCNB pre=c 2>&1 | ./xatlas_tee INSTALL_LOG/cMMSEARCH.LOGmake -f Makefile INSTALL_LOG/cbestNN_24x24x24 pre=c nb=24 2>&1 | ./xatlas_tee INSTALL_LOG/cMMSEARCH.LOG      NCgemmNN : muladd=1, lat=5, pf=513, nb=24, mu=4, nu=1 ku=24,\n                 ForceFetch=0, ifetch=3 nfetch=2\n                 Performance = 5141.82 (102.10 of copy matmul, 154.64 of clock)\nmake -f Makefile INSTALL_LOG/cbestNT_24x24x24 pre=c nb=24 2>&1 | ./xatlas_tee INSTALL_LOG/cMMSEARCH.LOG      NCgemmNT : muladd=1, lat=6, pf=513, nb=24, mu=4, nu=1 ku=24,\n                 ForceFetch=0, ifetch=3 nfetch=2\n                 Performance = 4988.79 (99.07 of copy matmul, 150.04 of clock)\nmake -f Makefile INSTALL_LOG/cbestTN_24x24x24 pre=c nb=24 2>&1 | ./xatlas_tee INSTALL_LOG/cMMSEARCH.LOG      NCgemmTN : muladd=1, lat=2, pf=513, nb=24, mu=4, nu=1 ku=24,\n                 ForceFetch=0, ifetch=3 nfetch=2\n                 Performance = 4979.41 (98.88 of copy matmul, 149.76 of clock)\nmake -f Makefile INSTALL_LOG/cbestTT_24x24x24 pre=c nb=24 2>&1 | ./xatlas_tee INSTALL_LOG/cMMSEARCH.LOG      NCgemmTT : muladd=1, lat=8, pf=513, nb=24, mu=4, nu=1 ku=24,\n                 ForceFetch=0, ifetch=3 nfetch=2\n                 Performance = 4835.23 (96.02 of copy matmul, 145.42 of clock)\nmake -f Makefile MMinstall pre=c 2>&1 | ./xatlas_tee INSTALL_LOG/cMMSEARCH.LOG\n\n\n   STAGE 2-4-2: CacheEdge DETECTION\nmake -f Makefile INSTALL_LOG/atlas_csNKB.h pre=c 2>&1 | ./xatlas_tee INSTALL_LOG/cMMCACHEEDGE.LOG\nmake[1]: *** [build] Error 255\nmake[1]: Leaving directory `/opt/sagemath/OpenSolaris/sage-4.5.3/spkg/build/atlas-3.8.3.p14/ATLAS-build'\nmake: *** [build] Error 2\nFailed to build ATLAS.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9904\n\n",
+    "created_at": "2010-09-13T20:47:24Z",
+    "labels": [
+        "porting: Solaris",
+        "major",
+        "bug"
+    ],
+    "title": "ATLAS fails to build on OpenSolaris if SAGE_FAT_BINARY=yes",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9903",
+    "user": "drkirkby"
+}
+```
 Assignee: drkirkby
 
 CC:  jhpalmieri jsp
@@ -124,16 +134,42 @@ Failed to build ATLAS.
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/9904
+
+
+
+
 
 ---
 
-Comment by jdemeyer created at 2012-08-23 18:46:48
+archive/issue_comments_098461.json:
+```json
+{
+    "body": "Works for me with sage-5.3.rc0...",
+    "created_at": "2012-08-23T18:46:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9903",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9903#issuecomment-98461",
+    "user": "jdemeyer"
+}
+```
 
 Works for me with sage-5.3.rc0...
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-08-23 18:46:48
+archive/issue_comments_098462.json:
+```json
+{
+    "body": "Resolution: worksforme",
+    "created_at": "2012-08-23T18:46:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9903",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9903#issuecomment-98462",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: worksforme

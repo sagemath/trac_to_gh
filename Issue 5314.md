@@ -1,11 +1,21 @@
 # Issue 5314: [with patch, needs review] The empty permutations exists !
 
-Issue created by migration from https://trac.sagemath.org/ticket/5314
-
-Original creator: hivert
-
-Original creation time: 2009-02-19 19:33:12
-
+archive/issues_005314.json:
+```json
+{
+    "body": "Assignee: hivert\n\nCC:  sage-combinat\n\nKeywords: permutations, empty\n\nRight now sage consider that there is no empty permutations.\n\n```\nsage: [] in Permutations()\nFalse\n```\n\nThere seems to be an agreement about the fact that the empty permutations exists ! Indeed there exists an empty set, and there exits exactly one function from the empty set to itself which is clearly bijective.\n\nThe patch solve this defect:\n\n```\nsage: import sage_emacs as emacs\nsage: [] in Permutations()\nTrue\nsage: Permutations(0).list()\n[[]]\nsage: Permutations(0).count()\n1\n```\n\n\nAuthor: Florent Hivert\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5314\n\n",
+    "created_at": "2009-02-19T19:33:12Z",
+    "labels": [
+        "combinatorics",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch, needs review] The empty permutations exists !",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5314",
+    "user": "hivert"
+}
+```
 Assignee: hivert
 
 CC:  sage-combinat
@@ -37,38 +47,99 @@ sage: Permutations(0).count()
 Author: Florent Hivert
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5314
+
+
+
+
 
 ---
 
-Comment by hivert created at 2009-02-19 19:34:02
+archive/issue_comments_040932.json:
+```json
+{
+    "body": "Patch proposal",
+    "created_at": "2009-02-19T19:34:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5314",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5314#issuecomment-40932",
+    "user": "hivert"
+}
+```
 
 Patch proposal
 
 
+
 ---
 
-Comment by mhansen created at 2009-02-19 19:37:56
+archive/issue_comments_040933.json:
+```json
+{
+    "body": "Changing assignee from hivert to mhansen.",
+    "created_at": "2009-02-19T19:37:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5314",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5314#issuecomment-40933",
+    "user": "mhansen"
+}
+```
 
 Changing assignee from hivert to mhansen.
 
 
+
 ---
 
-Comment by mhansen created at 2009-02-19 19:37:56
+archive/issue_comments_040934.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-02-19T19:37:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5314",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5314#issuecomment-40934",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
+
+archive/issue_comments_040935.json:
+```json
+{
+    "body": "Attachment\n\nLooks good and passes tests for me.",
+    "created_at": "2009-02-19T19:37:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5314",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5314#issuecomment-40935",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 Looks good and passes tests for me.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-20 07:24:22
+archive/issue_comments_040936.json:
+```json
+{
+    "body": "Merged in Sage 3.3.rc3.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-20T07:24:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5314",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5314#issuecomment-40936",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.3.rc3.
 
@@ -77,8 +148,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-20 07:24:22
+archive/issue_comments_040937.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-02-20T07:24:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5314",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5314#issuecomment-40937",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

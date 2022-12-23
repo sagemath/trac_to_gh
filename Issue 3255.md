@@ -1,35 +1,82 @@
 # Issue 3255: Add support for generic backtracking algorithms
 
-Issue created by migration from https://trac.sagemath.org/ticket/3255
-
-Original creator: mhansen
-
-Original creation time: 2008-05-19 13:31:44
-
+archive/issues_003255.json:
+```json
+{
+    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3255\n\n",
+    "created_at": "2008-05-19T13:31:44Z",
+    "labels": [
+        "combinatorics",
+        "minor",
+        "enhancement"
+    ],
+    "title": "Add support for generic backtracking algorithms",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3255",
+    "user": "mhansen"
+}
+```
 Assignee: mhansen
 
 CC:  sage-combinat
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3255
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2008-05-19 13:59:10
+archive/issue_comments_022517.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-05-19T13:59:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3255",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3255#issuecomment-22517",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by wdj created at 2008-05-19 17:10:13
+archive/issue_comments_022518.json:
+```json
+{
+    "body": "This patch should be refereed by someone else but it seems like an extremely useful direction of work, so I wanted to help out in a small way. I applied this to sage 3.0.2.alpha1. It applies cleanly and has the same sage -testall failures that the unpatched build has (doctest failures). In other words, this patch \"passed\" sage -testall.",
+    "created_at": "2008-05-19T17:10:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3255",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3255#issuecomment-22518",
+    "user": "wdj"
+}
+```
 
 This patch should be refereed by someone else but it seems like an extremely useful direction of work, so I wanted to help out in a small way. I applied this to sage 3.0.2.alpha1. It applies cleanly and has the same sage -testall failures that the unpatched build has (doctest failures). In other words, this patch "passed" sage -testall.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-19 19:45:01
+archive/issue_comments_022519.json:
+```json
+{
+    "body": "From http://blog.phasing.org/?p=6, i.e. Mike Hansen's new blog:\n\nAnother place that the comes in handy is in the generation of non-attacking fillings of augmented lattice diagrams. These are used to compute the non-symmetric Macdonald polynomials in type A.\n\nHere are some timings of the new code.\n\nBefore:\n\n```\nsage: time Permutations(8, avoiding=[[1,3,2],[2,1,3]]).count()\nCPU times: user 11.44 s, sys: 0.01 s, total: 11.45 s\nWall time: 12.35\n128\nsage: time NonattackingFillings([3,2,1,2]).count() \nCPU times: user 17.02 s, sys: 0.02 s, total: 17.04 s\nWall time: 17.36\n4\nsage: time NonattackingFillings([1,2,3,2]).count() \nCPU times: user 16.78 s, sys: 0.00 s, total: 16.78 s\nWall time: 16.80\n24\n```\n\nAfter:\n\n```\nsage: time Permutations(8, avoiding=[[1,3,2],[2,1,3]]).count()\nCPU times: user 1.58 s, sys: 0.00 s, total: 1.58 s\nWall time: 1.58\n128\nsage: sage: time NonattackingFillings([3,2,1,2]).count() \nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\n4\nsage: sage: time NonattackingFillings([1,2,3,2]).count() \nCPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.01\n24\n```\n",
+    "created_at": "2008-05-19T19:45:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3255",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3255#issuecomment-22519",
+    "user": "mabshoff"
+}
+```
 
 From http://blog.phasing.org/?p=6, i.e. Mike Hansen's new blog:
 
@@ -73,16 +120,40 @@ Wall time: 0.01
 
 
 
+
 ---
 
-Comment by ddrake created at 2008-05-23 05:07:42
+archive/issue_comments_022520.json:
+```json
+{
+    "body": "I'm giving this a tentative positive review. Tentative only because my knowledge of these algorithms and methods isn't complete. Someone else should look this over!\n\nThat said, the basic backtracker class is very simple and looks good. Fast algorithms for pattern avoidance in permutations are very desirable.",
+    "created_at": "2008-05-23T05:07:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3255",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3255#issuecomment-22520",
+    "user": "ddrake"
+}
+```
 
 I'm giving this a tentative positive review. Tentative only because my knowledge of these algorithms and methods isn't complete. Someone else should look this over!
 
 That said, the basic backtracker class is very simple and looks good. Fast algorithms for pattern avoidance in permutations are very desirable.
 
 
+
 ---
+
+archive/issue_comments_022521.json:
+```json
+{
+    "body": "Attachment\n\nI'm changing this to a positive review because I now understand this patch well enough to have written code which uses it, and it makes things super easy and fast. This should get into Sage right away.\n\nHere's the code for making Dyck paths. It may not be the fastest or best way to do it, but it literally worked the very first time I loaded it.\n\n```\nclass DyckPaths(GenericBacktracker):\n  def __init__(self, n):\n    GenericBacktracker.__init__(self, [], (0, 0))\n    self._n = n\n\n  def _rec(self, path, state):\n    if is_odd(self._n):\n      return\n\n    len, ht = state\n\n    if len < self._n:\n      # if length is less than n, we need to keep building the path, so\n      # new length will be 1 longer, and we don't yield the path yet.\n      newlen = len + 1\n\n      # if we're not touching the x-axis, we can yield a path with a\n      # downstep at the end\n      if ht > 0:\n        yield path + [-1], (newlen, ht - 1), False\n\n      # if the path isn't too high, it can also take an upstep\n      if ht < (self._n - len):\n        yield path + [1], (newlen, ht + 1), False\n    else:\n      # if length is n, set state to None so we stop trying to make new\n      # paths, and yield what we've got\n      yield path, None, True\n```\n\n\nNow, let's say you want Dyck paths with no peaks at even height. (This is an example I came up with off the top off my head in IRC; unsurprisingly, [the number of such paths is already known](http://www.ams.org/mathscinet-getitem?mr=2004242).) You only need to change the \"`if ht > 0`\" block to the following:\n\n```\n      # if we're not touching the x-axis, we can yield a path with a\n      # downstep at the end, provided we don't make a peak at even\n      # height\n      if ht > 0:\n        if is_odd(ht) or (path[-1] != 1):\n          yield path + [-1], (newlen, ht - 1), False\n```\n\nThis also worked the very first time I tried it!",
+    "created_at": "2008-05-26T03:17:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3255",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3255#issuecomment-22521",
+    "user": "ddrake"
+}
+```
 
 Attachment
 
@@ -136,23 +207,56 @@ Now, let's say you want Dyck paths with no peaks at even height. (This is an exa
 This also worked the very first time I tried it!
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-26 05:19:53
+archive/issue_comments_022522.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-05-26T05:19:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3255",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3255#issuecomment-22522",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-26 05:19:53
+archive/issue_comments_022523.json:
+```json
+{
+    "body": "Merged in Sage 3.0.3.alpha0",
+    "created_at": "2008-05-26T05:19:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3255",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3255#issuecomment-22523",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.3.alpha0
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-26 05:36:25
+archive/issue_comments_022524.json:
+```json
+{
+    "body": "Hello sage-combinat-devel, \n\nI see that the CC notification works. So if you open/see a ticket that is relevant to sage-combinat please add \"sage-combinat\" in the CC field at the bottom of the ticket page. In case there already are other accounts listed just append it and separate entries by a comma. If you want to remove notification from a ticket just remove \"sage-combinat\" form the CC field. \n\nAs is you will get email notifications on all changes, including comments, status changes and so on. The only action not resulting in an email is the attachment of a patch.\n\nThis specific ticket is Mike Hansen's generic backtracking code which has been merged into Sage 3.0.3.alpha0.\n\nLet me know if there are any questions.\n\nCheers,\n\nMichael",
+    "created_at": "2008-05-26T05:36:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3255",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3255#issuecomment-22524",
+    "user": "mabshoff"
+}
+```
 
 Hello sage-combinat-devel, 
 
@@ -169,9 +273,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-26 05:55:21
+archive/issue_comments_022525.json:
+```json
+{
+    "body": "Ok, this message should show up on sage-combinat-commits.\n\nCheers,\n\nMichael",
+    "created_at": "2008-05-26T05:55:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3255",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3255#issuecomment-22525",
+    "user": "mabshoff"
+}
+```
 
 Ok, this message should show up on sage-combinat-commits.
 
@@ -180,8 +295,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mhansen created at 2008-05-26 06:00:39
+archive/issue_comments_022526.json:
+```json
+{
+    "body": "Testing sage-combinat-commits.",
+    "created_at": "2008-05-26T06:00:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3255",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3255#issuecomment-22526",
+    "user": "mhansen"
+}
+```
 
 Testing sage-combinat-commits.

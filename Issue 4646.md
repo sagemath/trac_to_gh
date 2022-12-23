@@ -1,11 +1,21 @@
 # Issue 4646: Create Sage 3.2.1 release notes
 
-Issue created by migration from https://trac.sagemath.org/ticket/4646
-
-Original creator: mabshoff
-
-Original creation time: 2008-11-28 23:08:43
-
+archive/issues_004646.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nCC:  mvngu\n\nAs the summary says :)\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4646\n\n",
+    "created_at": "2008-11-28T23:08:43Z",
+    "labels": [
+        "build",
+        "major",
+        "bug"
+    ],
+    "title": "Create Sage 3.2.1 release notes",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4646",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 CC:  mvngu
@@ -16,24 +26,63 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/4646
+
+
+
+
 
 ---
+
+archive/issue_comments_034971.json:
+```json
+{
+    "body": "Attachment\n\nDraft 1 is based in 3.2.1.rc1, so some things will likely be added in 3.2.1.final",
+    "created_at": "2008-12-01T11:10:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4646",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4646#issuecomment-34971",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 Draft 1 is based in 3.2.1.rc1, so some things will likely be added in 3.2.1.final
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-01 11:12:52
+archive/issue_comments_034972.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-12-01T11:12:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4646",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4646#issuecomment-34972",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-01 11:12:52
+archive/issue_comments_034973.json:
+```json
+{
+    "body": "Hi Minh,\n\nhere is draft 1. As mentioned there is likely some change log to be added for 3.2.1.final. Some of the data like release dates, final tally of tickets and so on still need to be filled in once we get closed to the real 3.2.1.\n\nIf you got any fixes please post a patch against draft 1. \n\nCheers,\n\nMichael",
+    "created_at": "2008-12-01T11:12:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4646",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4646#issuecomment-34973",
+    "user": "mabshoff"
+}
+```
 
 Hi Minh,
 
@@ -46,16 +95,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mvngu created at 2008-12-01 22:46:45
+archive/issue_comments_034974.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"release note\".",
+    "created_at": "2008-12-01T22:46:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4646",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4646#issuecomment-34974",
+    "user": "mvngu"
+}
+```
 
 Changing keywords from "" to "release note".
 
 
+
 ---
 
-Comment by mvngu created at 2008-12-01 22:46:45
+archive/issue_comments_034975.json:
+```json
+{
+    "body": "Replying to [comment:1 mabshoff]:\n> Hi Minh,\n> \n> here is draft 1. As mentioned there is likely some change log to be added for 3.2.1.final. Some of the data like release dates, final tally of tickets and so on still need to be filled in once we get closed to the real 3.2.1.\n\n\nThe first draft is good. I'm planning to edit notes for the release tour of Sage 3.2.1, and hopefully have some high-level stuff to patch against your first draft, before Sage 3.2.1 is released. So I can definitely give your patch a positive review as it now stands.",
+    "created_at": "2008-12-01T22:46:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4646",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4646#issuecomment-34975",
+    "user": "mvngu"
+}
+```
 
 Replying to [comment:1 mabshoff]:
 > Hi Minh,
@@ -66,14 +137,27 @@ Replying to [comment:1 mabshoff]:
 The first draft is good. I'm planning to edit notes for the release tour of Sage 3.2.1, and hopefully have some high-level stuff to patch against your first draft, before Sage 3.2.1 is released. So I can definitely give your patch a positive review as it now stands.
 
 
+
 ---
+
+archive/issue_comments_034976.json:
+```json
+{
+    "body": "Attachment\n\nthe only change draft1->draft2 was the correct assignment of credit for #4646. Two more small fixes are needed:\n\n* now the list of names is no longer alphabetically sorted\n* It should say \"3.2.1\" in known issues instead of \"3.2\"\n\ndraft3 coming up.\n\nCheers,\n\nMichael",
+    "created_at": "2008-12-02T06:44:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4646",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4646#issuecomment-34976",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 the only change draft1->draft2 was the correct assignment of credit for #4646. Two more small fixes are needed:
 
- * now the list of names is no longer alphabetically sorted
- * It should say "3.2.1" in known issues instead of "3.2"
+* now the list of names is no longer alphabetically sorted
+* It should say "3.2.1" in known issues instead of "3.2"
 
 draft3 coming up.
 
@@ -82,14 +166,38 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_034977.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-12-02T06:45:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4646",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4646#issuecomment-34977",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-02 13:09:33
+archive/issue_comments_034978.json:
+```json
+{
+    "body": "\n```\n[04:23am] mabshoff|zzzz: craigcitro, mhansen: the problem is that we cleanup up which flags to consider.\n[04:24am] mhansen: I don't understand why this should affect a build from source.\n[04:36am] gabkdlly joined the chat room.\n[04:53am] mabshoff|zzzz: on sage.math it is likely an upgrade.\n[04:53am] mabshoff|zzzz: So the flags file with the old flags already existed.\n[04:54am] mabshoff|zzzz: I am not sure it is worth working around that since the\nproblem only happens when upgrading from 3.2, so in a couple releases this will \nbecome a non-issue.\n[04:54am] mhansen: I got this on my own box too.\n[04:56am] gabkdlly left the chat room. (\"Leaving.\")\n[05:00am] mabshoff|zzzz: Did you upgrade?\n[05:01am] mhansen: Yes\n[05:01am] mabshoff|zz:\n[05:01am] mabshoff|zz: delete $SAGE_LOCAL/lib/sage-flags.txt and the problem is gone\n[05:02am] mhansen: Yes, I know.  I fixed it on my box and sage.math.\n[05:02am] mabshoff|zz: thanks\n[05:02am] mabshoff|zz: It is an annoyance and I think we shouldn't add a workaround to the detection code.\n[05:03am] mabshoff|zz: The people who can upgrade will be able to fix it themselves, but we might want to add an FAQ entry\n[05:03am] mabshoff|zz: Going back to catch a few more z \n[05:03am] mhansen: Or send a preemptive email to sage-devel.\n[05:03am] mabshoff|zz: +1\n[05:04am] mabshoff|zz: knock yourself out \n[05:04am] mabshoff|zz: We might as well add  a warning to the release notes to \"KNOWN ISSUES\".\n[05:04am] mhansen: Too busy with #3950\n[05:04am] mabshoff|zz: I.e feel free to post a patch at #4646\n[05:05am] mabshoff|zz: Ok, I will do it then.\n```\n",
+    "created_at": "2008-12-02T13:09:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4646",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4646#issuecomment-34978",
+    "user": "mabshoff"
+}
+```
 
 
 ```
@@ -123,9 +231,20 @@ become a non-issue.
 
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-07 03:42:07
+archive/issue_comments_034979.json:
+```json
+{
+    "body": "The release notes have been posted.\n\nCheers,\n\nMichael",
+    "created_at": "2008-12-07T03:42:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4646",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4646#issuecomment-34979",
+    "user": "mabshoff"
+}
+```
 
 The release notes have been posted.
 
@@ -134,8 +253,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-07 03:42:07
+archive/issue_comments_034980.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-12-07T03:42:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4646",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4646#issuecomment-34980",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

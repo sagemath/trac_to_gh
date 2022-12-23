@@ -1,11 +1,21 @@
 # Issue 3807: [with patch, needs review] Fix gcc 4.3 issues in David Harvey Bernoulli modp code
 
-Issue created by migration from https://trac.sagemath.org/ticket/3807
-
-Original creator: mabshoff
-
-Original creation time: 2008-08-12 01:32:49
-
+archive/issues_003807.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nThere are two build issues in the Bernoulli mod p code with gcc 4.3 or higher. The attached patch fixes those.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3807\n\n",
+    "created_at": "2008-08-12T01:32:49Z",
+    "labels": [
+        "build",
+        "blocker",
+        "bug"
+    ],
+    "title": "[with patch, needs review] Fix gcc 4.3 issues in David Harvey Bernoulli modp code",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3807",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 There are two build issues in the Bernoulli mod p code with gcc 4.3 or higher. The attached patch fixes those.
@@ -14,15 +24,43 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/3807
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-08-12 01:32:56
+archive/issue_comments_027055.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-08-12T01:32:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3807",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3807#issuecomment-27055",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
+
+archive/issue_comments_027056.json:
+```json
+{
+    "body": "Attachment\n\nWorks fine on osx with gcc 4.0.1.\n\nI say positive review unless something funny comes up in alpha2 testing.",
+    "created_at": "2008-08-12T01:55:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3807",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3807#issuecomment-27056",
+    "user": "was"
+}
+```
 
 Attachment
 
@@ -31,15 +69,37 @@ Works fine on osx with gcc 4.0.1.
 I say positive review unless something funny comes up in alpha2 testing.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-12 02:16:25
+archive/issue_comments_027057.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-08-12T02:16:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3807",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3807#issuecomment-27057",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-12 02:16:25
+archive/issue_comments_027058.json:
+```json
+{
+    "body": "Merged in Sage 3.1.alpha2",
+    "created_at": "2008-08-12T02:16:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3807",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3807#issuecomment-27058",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.1.alpha2

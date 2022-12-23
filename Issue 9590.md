@@ -1,11 +1,21 @@
 # Issue 9590: Doctest failures in cone.py and toric_lattice_element.pyx on 32-bit Linux
 
-Issue created by migration from https://trac.sagemath.org/ticket/9590
-
-Original creator: mpatel
-
-Original creation time: 2010-07-24 02:56:51
-
+archive/issues_009590.json:
+```json
+{
+    "body": "Assignee: mhampton\n\nCC:  cremona davidloeffler leif novoselt vbraun\n\n[Seen by John Cremona and Leif Leonhardy on 32-bit SUSE and 32-bit Ubuntu, respectively](http://groups.google.com/group/sage-release/browse_thread/thread/cc0b1929f66e0658/6b8cef45c9f5e56c#6b8cef45c9f5e56c):\n\n```\nsage -t -long \"devel/sage/sage/geometry/toric_lattice_element.pyx\"\n**********************************************************************\nFile \"/local/jec/sage-4.5.2.alpha0/devel/sage/sage/geometry/toric_lattice_element.pyx\",\nline 235:\n    sage: n.set_immutable()\nExpected:\n    2528502973977326415\nGot nothing\n\nsage -t -long \"devel/sage/sage/geometry/cone.py\"\n**********************************************************************\nFile \"/local/jec/sage-4.5.2.alpha0/devel/sage/sage/geometry/cone.py\", line 559:\n    sage: c = Cone([(1,0), (0,1)])\nExpected:\n    4372618627376133801\nGot nothing\n```\n\nThese may stem from one or more of #8986, #8987, and #9062.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9590\n\n",
+    "created_at": "2010-07-24T02:56:51Z",
+    "labels": [
+        "geometry",
+        "blocker",
+        "bug"
+    ],
+    "title": "Doctest failures in cone.py and toric_lattice_element.pyx on 32-bit Linux",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9590",
+    "user": "mpatel"
+}
+```
 Assignee: mhampton
 
 CC:  cremona davidloeffler leif novoselt vbraun
@@ -33,29 +43,79 @@ Got nothing
 
 These may stem from one or more of #8986, #8987, and #9062.
 
+Issue created by migration from https://trac.sagemath.org/ticket/9590
+
+
+
+
 
 ---
+
+archive/issue_comments_092734.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-07-24T05:19:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9590",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9590#issuecomment-92734",
+    "user": "novoselt"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by novoselt created at 2010-07-24 05:20:56
+archive/issue_comments_092735.json:
+```json
+{
+    "body": "This should work, please test it on a 32-bit system as I don't have one set up.",
+    "created_at": "2010-07-24T05:20:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9590",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9590#issuecomment-92735",
+    "user": "novoselt"
+}
+```
 
 This should work, please test it on a 32-bit system as I don't have one set up.
 
 
+
 ---
 
-Comment by novoselt created at 2010-07-24 05:20:56
+archive/issue_comments_092736.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-07-24T05:20:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9590",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9590#issuecomment-92736",
+    "user": "novoselt"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by leif created at 2010-07-24 13:38:18
+archive/issue_comments_092737.json:
+```json
+{
+    "body": "\n```sh\nleif@californication:~/sage-4.5.2.alpha0-j6/devel/sage-9590$ ../../sage -t -long sage/geometry/\nsage -t -long \"devel/sage-9590/sage/geometry/fan.py\"        \n\t [10.9 s]\nsage -t -long \"devel/sage-9590/sage/geometry/polytope.py\"   \n\t [3.0 s]\nsage -t -long \"devel/sage-9590/sage/geometry/__init__.py\"   \n\t [0.1 s]\nsage -t -long \"devel/sage-9590/sage/geometry/all.py\"        \n\t [0.1 s]\nsage -t -long \"devel/sage-9590/sage/geometry/cone.py\"       \n\t [7.9 s]\nsage -t -long \"devel/sage-9590/sage/geometry/lattice_polytope.py\"\n\t [13.0 s]\nsage -t -long \"devel/sage-9590/sage/geometry/polyhedra.py\"  \n\t [152.0 s]\nsage -t -long \"devel/sage-9590/sage/geometry/toric_lattice.py\"\n\t [3.1 s]\nsage -t -long \"devel/sage-9590/sage/geometry/toric_lattice_element.pyx\"\n\t [3.1 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 193.4 seconds\nleif@californication:~/sage-4.5.2.alpha0-j6/devel/sage-9590$ hg log | head -n 11\nchangeset:   14742:ebb1e171e138\ntag:         tip\nuser:        Andrey Novoseltsev <novoselt@gmail.com>\ndate:        Fri Jul 23 23:09:59 2010 -0600\nsummary:     Trac 9590: Doctest failures in cone and toric_lattice_element.\n\nchangeset:   14741:af5f40a73eda\nuser:        Mitesh Patel <qed777@gmail.com>\ndate:        Wed Jul 21 20:13:55 2010 -0700\nsummary:     4.5.2.alpha0\n\n```\n\n(This is on Ubuntu 9.04 x86, Pentium 4 Prescott, gcc 4.3.3.)\n\nSo I can give Andrey's patch a positive review.\n\nWe could have added the hash codes for 32-bit systems, too, instead.",
+    "created_at": "2010-07-24T13:38:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9590",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9590#issuecomment-92737",
+    "user": "leif"
+}
+```
 
 
 ```sh
@@ -103,9 +163,20 @@ So I can give Andrey's patch a positive review.
 We could have added the hash codes for 32-bit systems, too, instead.
 
 
+
 ---
 
-Comment by novoselt created at 2010-07-24 15:20:14
+archive/issue_comments_092738.json:
+```json
+{
+    "body": "Replying to [comment:2 leif]:\n> We could have added the hash codes for 32-bit systems, too, instead.\n\nWe could, but I don't know how to get those values for 32-bit systems on 64-bit ones and as I understand those numbers don't have any sense anyway and can potentially change. So these doctests just check that `hash` can be used and it returns the same value. If adding 32-bit hashes would be better, please add them.\n\nI find it very peculiar how slow is `polyhedra.py` in this test. On sage.math most tests are a little bit faster, but this one takes only 41 second! On my quite old Mobile AMD Athlon 64 3000+ (1.8GHz) results are closer to those above, but `polyhedra.py` still tests only in 74 seconds! Is it just the difference between 32 and 64 bits?..",
+    "created_at": "2010-07-24T15:20:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9590",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9590#issuecomment-92738",
+    "user": "novoselt"
+}
+```
 
 Replying to [comment:2 leif]:
 > We could have added the hash codes for 32-bit systems, too, instead.
@@ -115,9 +186,20 @@ We could, but I don't know how to get those values for 32-bit systems on 64-bit 
 I find it very peculiar how slow is `polyhedra.py` in this test. On sage.math most tests are a little bit faster, but this one takes only 41 second! On my quite old Mobile AMD Athlon 64 3000+ (1.8GHz) results are closer to those above, but `polyhedra.py` still tests only in 74 seconds! Is it just the difference between 32 and 64 bits?..
 
 
+
 ---
 
-Comment by leif created at 2010-07-24 16:07:25
+archive/issue_comments_092739.json:
+```json
+{
+    "body": "Replying to [comment:3 novoselt]:\n> I find it very peculiar how slow is `polyhedra.py` in this test. On sage.math most tests are a little bit faster, but this one takes only 41 second! On my quite old Mobile AMD Athlon 64 3000+ (1.8GHz) results are closer to those above, but `polyhedra.py` still tests only in 74 seconds! Is it just the difference between 32 and 64 bits?..\n\nThis is on an otherwise idle Core2 (64-bit):\n\n```sh\nleif@quadriga:~/sage-4.5.2.alpha0$ ./sage -t -long devel/sage/sage/geometry/\nsage -t -long \"devel/sage/sage/geometry/__init__.py\"\n         [0.0 s]\nsage -t -long \"devel/sage/sage/geometry/toric_lattice_element.pyx\"\n         [1.0 s]\nsage -t -long \"devel/sage/sage/geometry/toric_lattice.py\"\n         [1.0 s]\nsage -t -long \"devel/sage/sage/geometry/polytope.py\"\n         [1.0 s]\nsage -t -long \"devel/sage/sage/geometry/lattice_polytope.py\"\n         [5.1 s]\nsage -t -long \"devel/sage/sage/geometry/fan.py\"\n         [4.7 s]\nsage -t -long \"devel/sage/sage/geometry/cone.py\"\n         [3.3 s]\nsage -t -long \"devel/sage/sage/geometry/all.py\"\n         [0.0 s]\nsage -t -long \"devel/sage/sage/geometry/polyhedra.py\"\n         [58.7 s]\n\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 74.9 seconds\n```\n",
+    "created_at": "2010-07-24T16:07:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9590",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9590#issuecomment-92739",
+    "user": "leif"
+}
+```
 
 Replying to [comment:3 novoselt]:
 > I find it very peculiar how slow is `polyhedra.py` in this test. On sage.math most tests are a little bit faster, but this one takes only 41 second! On my quite old Mobile AMD Athlon 64 3000+ (1.8GHz) results are closer to those above, but `polyhedra.py` still tests only in 74 seconds! Is it just the difference between 32 and 64 bits?..
@@ -152,18 +234,40 @@ Total time for all tests: 74.9 seconds
 
 
 
+
 ---
 
-Comment by leif created at 2010-07-24 16:21:03
+archive/issue_comments_092740.json:
+```json
+{
+    "body": "Just for the record: I've just tested the patch on that system, too. All tests in `sage/geometry` now take 0.4s less in total... ;-)\n\n(The timings per file vary by sometimes more than 0.1s even on an idling machine.)",
+    "created_at": "2010-07-24T16:21:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9590",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9590#issuecomment-92740",
+    "user": "leif"
+}
+```
 
 Just for the record: I've just tested the patch on that system, too. All tests in `sage/geometry` now take 0.4s less in total... ;-)
 
 (The timings per file vary by sometimes more than 0.1s even on an idling machine.)
 
 
+
 ---
 
-Comment by leif created at 2010-07-24 19:29:30
+archive/issue_comments_092741.json:
+```json
+{
+    "body": "If anyone wants this to be fixed in a different way, here are two alternatives in a single patch:\n\n```patch\ndiff --git a/sage/geometry/cone.py b/sage/geometry/cone.py\n--- a/sage/geometry/cone.py\n+++ b/sage/geometry/cone.py\n@@ -557,8 +557,12 @@\n         TESTS::\n \n             sage: c = Cone([(1,0), (0,1)])\n-            sage: hash(c)  # 64-bit\n-            4372618627376133801\n+            sage: hash(c)\n+            1996666537 # 32-bit\n+            4372618627376133801 # 64-bit\n+            sage: c2 = Cone([(1,0), (0,1)])\n+            sage: hash(c) == hash(c2)\n+            True\n         \"\"\"\n         if \"_hash\" not in self.__dict__:\n             self._hash = hash(self._rays)\ndiff --git a/sage/geometry/toric_lattice_element.pyx b/sage/geometry/toric_lattice_element.pyx\n--- a/sage/geometry/toric_lattice_element.pyx\n+++ b/sage/geometry/toric_lattice_element.pyx\n@@ -233,8 +233,13 @@\n             ...\n             TypeError: mutable vectors are unhashable\n             sage: n.set_immutable()\n-            sage: hash(n)  # 64-bit\n-            2528502973977326415\n+            sage: hash(n)\n+            -378539185 # 32-bit\n+            2528502973977326415 # 64-bit\n+            sage: n2 = N(1,2,3)\n+            sage: n2.set_immutable()\n+            sage: hash(n) == hash(n2)\n+            True\n         \"\"\"\n         return Vector_integer_dense.__hash__(self)\n```\n\n(This is against vanilla alpha0.)\n\nOtherwise (Seattle, wake up!) I'll set this to \"positive review\" (as is), s.t. it can be merged into alpha1.",
+    "created_at": "2010-07-24T19:29:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9590",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9590#issuecomment-92741",
+    "user": "leif"
+}
+```
 
 If anyone wants this to be fixed in a different way, here are two alternatives in a single patch:
 
@@ -211,32 +315,76 @@ diff --git a/sage/geometry/toric_lattice_element.pyx b/sage/geometry/toric_latti
 Otherwise (Seattle, wake up!) I'll set this to "positive review" (as is), s.t. it can be merged into alpha1.
 
 
+
 ---
 
-Comment by leif created at 2010-07-25 08:17:13
+archive/issue_comments_092742.json:
+```json
+{
+    "body": "Ok, since nobody complained [in time], I'll set this to \"positive review\".\n\nMitesh, please merge... ;-)",
+    "created_at": "2010-07-25T08:17:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9590",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9590#issuecomment-92742",
+    "user": "leif"
+}
+```
 
 Ok, since nobody complained [in time], I'll set this to "positive review".
 
 Mitesh, please merge... ;-)
 
 
+
 ---
 
-Comment by leif created at 2010-07-25 08:17:13
+archive/issue_comments_092743.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-07-25T08:17:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9590",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9590#issuecomment-92743",
+    "user": "leif"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mpatel created at 2010-07-26 00:32:47
+archive/issue_comments_092744.json:
+```json
+{
+    "body": "I also see the failures in the description on t2 with 4.5.2.alpha0 + #8059 (I ignored the patch rejects).  But the patch above fixes them.",
+    "created_at": "2010-07-26T00:32:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9590",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9590#issuecomment-92744",
+    "user": "mpatel"
+}
+```
 
 I also see the failures in the description on t2 with 4.5.2.alpha0 + #8059 (I ignored the patch rejects).  But the patch above fixes them.
 
 
+
 ---
 
-Comment by ddrake created at 2010-07-26 07:36:58
+archive/issue_comments_092745.json:
+```json
+{
+    "body": "I thought that maybe Leif's suggestions would be preferred, but Carl Witty said (https://groups.google.com/group/sage-devel/browse_thread/thread/9a0f357c8ec9bbd):\n\n```\nHmm... looks like the current state of affairs is a mess.  Looking\nthrough the 'def __hash__' grep hits in sage/rings, there are quite a\nfew of each of the following:\n\n1) no doctest at all\n2) provide both 32-bit and 64-bit doctests\n3) define your hash function to produce a 32-bit output that's the\nsame on 32-bit and 64-bit systems; doctest an instance of that output\n4) doctest hash value equality without ever showing a doctest output\n\nplus one instance where the hash output is marked \"# random\".\n\nSo whatever you do with this particular patch, it won't make things\nmuch worse :) \n```\n\nSo, I'll merge this, and maybe we'll figure out a better way to test hashing later.",
+    "created_at": "2010-07-26T07:36:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9590",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9590#issuecomment-92745",
+    "user": "ddrake"
+}
+```
 
 I thought that maybe Leif's suggestions would be preferred, but Carl Witty said (https://groups.google.com/group/sage-devel/browse_thread/thread/9a0f357c8ec9bbd):
 
@@ -260,8 +408,19 @@ much worse :)
 So, I'll merge this, and maybe we'll figure out a better way to test hashing later.
 
 
+
 ---
 
-Comment by ddrake created at 2010-07-26 07:40:42
+archive/issue_comments_092746.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-07-26T07:40:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9590",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9590#issuecomment-92746",
+    "user": "ddrake"
+}
+```
 
 Resolution: fixed

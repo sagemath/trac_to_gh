@@ -1,11 +1,21 @@
 # Issue 6062: [with patch; needs review] QQ method is_padic_square fails when argument is python int
 
-Issue created by migration from https://trac.sagemath.org/ticket/6062
-
-Original creator: tornaria
-
-Original creation time: 2009-05-18 05:08:40
-
+archive/issues_006062.json:
+```json
+{
+    "body": "Assignee: tornaria\n\nWith sage-4.0.alpha0:\n\n```\nsage: QQ(5).is_padic_square(int(2))\n...\nAttributeError: 'int' object has no attribute 'is_prime'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6062\n\n",
+    "created_at": "2009-05-18T05:08:40Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch; needs review] QQ method is_padic_square fails when argument is python int",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6062",
+    "user": "tornaria"
+}
+```
 Assignee: tornaria
 
 With sage-4.0.alpha0:
@@ -17,45 +27,117 @@ AttributeError: 'int' object has no attribute 'is_prime'
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6062
+
+
+
+
 
 ---
 
-Comment by tornaria created at 2009-05-18 05:15:53
+archive/issue_comments_048253.json:
+```json
+{
+    "body": "allow python int argument in is_padic_square",
+    "created_at": "2009-05-18T05:15:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6062",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6062#issuecomment-48253",
+    "user": "tornaria"
+}
+```
 
 allow python int argument in is_padic_square
 
 
+
 ---
+
+archive/issue_comments_048254.json:
+```json
+{
+    "body": "Attachment\n\nNote: this is needed to fix doctests in quadratic forms (#5954, #6037, #6040).",
+    "created_at": "2009-05-18T05:20:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6062",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6062#issuecomment-48254",
+    "user": "tornaria"
+}
+```
 
 Attachment
 
 Note: this is needed to fix doctests in quadratic forms (#5954, #6037, #6040).
 
 
+
 ---
 
-Comment by tornaria created at 2009-05-18 05:33:08
+archive/issue_comments_048255.json:
+```json
+{
+    "body": "Note: the added doctest requires the patch in #6064 to pass.",
+    "created_at": "2009-05-18T05:33:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6062",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6062#issuecomment-48255",
+    "user": "tornaria"
+}
+```
 
 Note: the added doctest requires the patch in #6064 to pass.
 
 
+
 ---
 
-Comment by cremona created at 2009-05-18 21:18:42
+archive/issue_comments_048256.json:
+```json
+{
+    "body": "Joint review with #6064: applied both patches, both are fine and tests pass.",
+    "created_at": "2009-05-18T21:18:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6062",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6062#issuecomment-48256",
+    "user": "cremona"
+}
+```
 
 Joint review with #6064: applied both patches, both are fine and tests pass.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-19 00:42:39
+archive/issue_comments_048257.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-05-19T00:42:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6062",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6062#issuecomment-48257",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-19 00:42:39
+archive/issue_comments_048258.json:
+```json
+{
+    "body": "Merged iN Sage 4.0.rc0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-05-19T00:42:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6062",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6062#issuecomment-48258",
+    "user": "mabshoff"
+}
+```
 
 Merged iN Sage 4.0.rc0.
 

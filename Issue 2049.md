@@ -1,11 +1,21 @@
 # Issue 2049: symbolic matrix exp (easy to implement)
 
-Issue created by migration from https://trac.sagemath.org/ticket/2049
-
-Original creator: was
-
-Original creation time: 2008-02-05 04:55:07
-
+archive/issues_002049.json:
+```json
+{
+    "body": "Assignee: was\n\n\n```\n\n> On a related issue: is there a command corresponding to Mathematica's\n> MatrixExp? For example,\n> \n> sage: var('t')\n> sage: M=matrix(SR,2,[0,t,-t,0])\n> sage: M.matrix_exp()\n> \n> [cos(t), sin(t)]\n> [-sin(t), cos(t)]\n> \n\nThere is no such command in Sage, really.  Maxima\ndoes have such a command, so it would be\npossible to implement something easily:\n\nsage: t = var('t')\nsage: M = matrix(SR,2,[0,t,-t,0])\nsage: mm = maxima(M)\nsage: mm.matrixexp()\nmatrix([%e^-(%i*t)*(%e^(2*%i*t)+1)/2,-%e^-(%i*t)*(%i*%e^(2*%i*t)-%i)/2],[%e^-(%i*t)*(%i*%e^(2*%i*t)-%i)/2,%e^-(%i*t)*(%e^(2*%i*t)+1)/2])\n\nSo there will be an M.exp() function in some future version\nof Sage. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2049\n\n",
+    "created_at": "2008-02-05T04:55:07Z",
+    "labels": [
+        "calculus",
+        "major",
+        "enhancement"
+    ],
+    "title": "symbolic matrix exp (easy to implement)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2049",
+    "user": "was"
+}
+```
 Assignee: was
 
 
@@ -37,31 +47,81 @@ of Sage.
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2049
+
+
+
+
 
 ---
 
-Comment by was created at 2008-02-05 05:15:18
+archive/issue_comments_013270.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-02-05T05:15:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2049",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2049#issuecomment-13270",
+    "user": "was"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
+
+archive/issue_comments_013271.json:
+```json
+{
+    "body": "Attachment\n\nThis patch has already been merged (checked in 2.10.2.rc0).",
+    "created_at": "2008-02-23T01:23:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2049",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2049#issuecomment-13271",
+    "user": "AlexGhitza"
+}
+```
 
 Attachment
 
 This patch has already been merged (checked in 2.10.2.rc0).
 
 
+
 ---
 
-Comment by AlexGhitza created at 2008-02-23 01:23:26
+archive/issue_comments_013272.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-02-23T01:23:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2049",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2049#issuecomment-13272",
+    "user": "AlexGhitza"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-23 01:27:59
+archive/issue_comments_013273.json:
+```json
+{
+    "body": "This one snuck in via one of the bundles from #174 or #2190. Bundles are bad.\n\nIt would be nice if anybody could give this a proper review, despite the fact that it already is in 2.10.2.\n\nCheers,\n\nMichael",
+    "created_at": "2008-02-23T01:27:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2049",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2049#issuecomment-13273",
+    "user": "mabshoff"
+}
+```
 
 This one snuck in via one of the bundles from #174 or #2190. Bundles are bad.
 
@@ -72,9 +132,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by AlexGhitza created at 2008-02-23 01:36:02
+archive/issue_comments_013274.json:
+```json
+{
+    "body": "Oh, yes, I looked at it, thought it looked good, tried to import the patch and got a bunch of rejects, noticed that it had already been merged.\n\nConclusion: it's good, should be applied, and was applied.",
+    "created_at": "2008-02-23T01:36:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2049",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2049#issuecomment-13274",
+    "user": "AlexGhitza"
+}
+```
 
 Oh, yes, I looked at it, thought it looked good, tried to import the patch and got a bunch of rejects, noticed that it had already been merged.
 

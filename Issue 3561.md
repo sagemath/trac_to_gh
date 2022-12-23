@@ -1,19 +1,44 @@
 # Issue 3561: make it so sage does *not* import numpy by default on startup.
 
+archive/issues_003561.json:
+```json
+{
+    "body": "Assignee: cwitty\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3561\n\n",
+    "created_at": "2008-07-06T08:46:08Z",
+    "labels": [
+        "misc",
+        "major",
+        "bug"
+    ],
+    "title": "make it so sage does *not* import numpy by default on startup.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3561",
+    "user": "was"
+}
+```
+Assignee: cwitty
+
+
+
 Issue created by migration from https://trac.sagemath.org/ticket/3561
 
-Original creator: was
-
-Original creation time: 2008-07-06 08:46:08
-
-Assignee: cwitty
 
 
 
 
 ---
 
-Comment by was created at 2008-07-06 09:18:14
+archive/issue_comments_025168.json:
+```json
+{
+    "body": "The attached patch gets rid of a bunch of numpy imports.  However, according to \n\n```\n  sage -timeup\n```\n\n(see #3559) there is still some mysterious numpy import that gets triggered in real_double_vector.pyx.  I'm very confused by that since there is no python \"import numpy\" anywhere there.  Fixing that can be another ticket for later.",
+    "created_at": "2008-07-06T09:18:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3561",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3561#issuecomment-25168",
+    "user": "was"
+}
+```
 
 The attached patch gets rid of a bunch of numpy imports.  However, according to 
 
@@ -24,22 +49,57 @@ The attached patch gets rid of a bunch of numpy imports.  However, according to
 (see #3559) there is still some mysterious numpy import that gets triggered in real_double_vector.pyx.  I'm very confused by that since there is no python "import numpy" anywhere there.  Fixing that can be another ticket for later.
 
 
+
 ---
+
+archive/issue_comments_025169.json:
+```json
+{
+    "body": "Attachment\n\nPatch looks good to me. Positive review.",
+    "created_at": "2008-07-06T09:25:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3561",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3561#issuecomment-25169",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 Patch looks good to me. Positive review.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-06 09:47:37
+archive/issue_comments_025170.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-07-06T09:47:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3561",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3561#issuecomment-25170",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-06 09:47:37
+archive/issue_comments_025171.json:
+```json
+{
+    "body": "Merged in Sage 3.0.4.alpha2",
+    "created_at": "2008-07-06T09:47:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3561",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3561#issuecomment-25171",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.4.alpha2

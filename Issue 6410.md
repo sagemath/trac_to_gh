@@ -1,11 +1,21 @@
 # Issue 6410: optimize creation of diagonal matrices
 
-Issue created by migration from https://trac.sagemath.org/ticket/6410
-
-Original creator: was
-
-Original creation time: 2009-06-25 16:13:11
-
+archive/issues_006410.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  jason\n\n\n```\n\nActually there are two issues.\n\nSure, the determinant issue is fairly easily diagnosed. No wonder that an n!\nalgorithm takes time. I'll try to look into this.\n\nBut it's not the only thing.\n\n> sage: p=3\n> sage: n=1000\n> sage: K=GF(p)\n> sage: KP.<x>=PolynomialRing(K)\n> sage: time xI=diagonal_matrix([x for i in range(n)])\n> CPU times: user 32.18 s, sys: 0.14 s, total: 32.33 s\n> Wall time: 32.34 s\n\nWhile in comparison, doing\nM=matrix(KP,n)\nfor i in range(n): M[i,i]=x\n\nreturns instantly.\n\nTracing it down, it seems that when calling diagonal_matrix:\n\n- The list is converted to a dictionary.\n- Because a dense matrix was requested, this dictionary is in turn converted\nto a flat list of n^2 entries.\n- The base __matrix_class constructor is called, and calls the parent ring\nconversion routine for each entry.\n\nI don't know whether it's reasonable or not to have a million coercions of\nzero take thirty seconds total (quite possibly not), but in any case these\ncan be avoided.\n\nI suggest the attached patch.\n\nEmmanuel.Thome at gmail.com\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6410\n\n",
+    "created_at": "2009-06-25T16:13:11Z",
+    "labels": [
+        "linear algebra",
+        "major",
+        "enhancement"
+    ],
+    "title": "optimize creation of diagonal matrices",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6410",
+    "user": "was"
+}
+```
 Assignee: was
 
 CC:  jason
@@ -52,15 +62,43 @@ Emmanuel.Thome at gmail.com
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6410
+
+
+
+
 
 ---
+
+archive/issue_comments_051472.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-06-25T16:13:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6410",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6410#issuecomment-51472",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by cremona created at 2009-06-28 15:21:35
+archive/issue_comments_051473.json:
+```json
+{
+    "body": "Sorry, Emmanuel, but you'll have to remove the accent from your name since the patch cannot be applied:\n\n```\njohn@ubuntu%sage -hg qpush\napplying diagonal_matrix.patch\ntransaction abort!\nrollback completed\ncleaning up working directory...done\nabort: decoding near 'anuel Thom\ufffd <Emmanue': 'utf8' codec can't decode bytes in position 13-15: invalid data!\n```\n\n\nI edited the patch in order to apply it, but found that your example was just as slow afterwards.  Is the diagonal_matrix() function actually calling the function you changed?\n\nAlso, there should be a doctest with your example in.",
+    "created_at": "2009-06-28T15:21:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6410",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6410#issuecomment-51473",
+    "user": "cremona"
+}
+```
 
 Sorry, Emmanuel, but you'll have to remove the accent from your name since the patch cannot be applied:
 
@@ -79,37 +117,94 @@ I edited the patch in order to apply it, but found that your example was just as
 Also, there should be a doctest with your example in.
 
 
+
 ---
 
-Comment by cremona created at 2009-06-28 15:31:03
+archive/issue_comments_051474.json:
+```json
+{
+    "body": "Apologies -- I had two clones mixed up.  After the patch it *is* much faster (instantaneous).  But you still need to remove the accent and add a doctest!",
+    "created_at": "2009-06-28T15:31:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6410",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6410#issuecomment-51474",
+    "user": "cremona"
+}
+```
 
 Apologies -- I had two clones mixed up.  After the patch it *is* much faster (instantaneous).  But you still need to remove the accent and add a doctest!
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-19 19:45:07
+archive/issue_comments_051475.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2009-10-19T19:45:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6410",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6410#issuecomment-51475",
+    "user": "mhansen"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-19 19:45:07
+archive/issue_comments_051476.json:
+```json
+{
+    "body": "Apply only trac_6410.patch.\n\nI've updated it to take care of the issues that John pointed out.",
+    "created_at": "2009-10-19T19:45:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6410",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6410#issuecomment-51476",
+    "user": "mhansen"
+}
+```
 
 Apply only trac_6410.patch.
 
 I've updated it to take care of the issues that John pointed out.
 
 
+
 ---
 
-Comment by rbeezer created at 2009-10-27 04:12:30
+archive/issue_comments_051477.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2009-10-27T04:12:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6410",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6410#issuecomment-51477",
+    "user": "rbeezer"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
+
+archive/issue_comments_051478.json:
+```json
+{
+    "body": "Attachment\n\nIt appears to me the slowdown results when a dense matrix has many entries that need to be coerced.  So for a diagonal matrix built as a dense matrix, this means all of the off-diagonal entries need to be coerced.  But the behavior is caused more generally by `matrix()`.  Consider the following session:\n\n\n```\nsage: K=GF(3)\nsage: KP.<x>=PolynomialRing(K)\nsage: G={}; H={}\nsage: for i in range(200):\n....:     for j in range(200):\n....:         H[(i,j)]=KP(1)\n....:         G[(i,j)]=1\n....:\nsage: timeit('matrix(KP,200,H,sparse=False)')\n5 loops, best of 3: 136 ms per loop\nsage: timeit('matrix(KP,200,G,sparse=False)')\n5 loops, best of 3: 1.09 s per loop\n```\n\n\nThis is with the patch applied.  The only difference is the dictionary H has the elements coerced, while the dictionary G does not.  The timings are nearly identical to pre-patch behavior.\n\nIt seems to me that in the patch, the line `A = self(0)` still causes `n^2` coercions of the zero element in `__call__` (of which it is a part)?  I could very well be mistaken, but I can't see a method one can use to semi-automatically coerce 0 once (and only once) and then fill a dense matrix with that single coerced zero.  Should the behavior of `zero_matrix()` be changed, so it does not just use `__call__`?\n\nIna any event, this review is not for nought.  The doctest has `sage;` (w/ a semi-colon) and not a `sage:` (w/ a colon) so it seems to not even be coming through in the documentation, and likely the test is not run?",
+    "created_at": "2009-10-27T04:12:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6410",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6410#issuecomment-51478",
+    "user": "rbeezer"
+}
+```
 
 Attachment
 
@@ -139,9 +234,20 @@ It seems to me that in the patch, the line `A = self(0)` still causes `n^2` coer
 Ina any event, this review is not for nought.  The doctest has `sage;` (w/ a semi-colon) and not a `sage:` (w/ a colon) so it seems to not even be coming through in the documentation, and likely the test is not run?
 
 
+
 ---
 
-Comment by mmezzarobba created at 2014-03-15 08:09:34
+archive/issue_comments_051479.json:
+```json
+{
+    "body": "sage-6.2.beta4:\n\n```\nsage: p=3\nsage: n=1000\nsage: K = GF(p)\nsage: KP.<x> = K[]                                                                            \nsage: %timeit xI=diagonal_matrix([x for i in range(n)])                                       \n10 loops, best of 3: 15.8 ms per loop                                                         \n```\n",
+    "created_at": "2014-03-15T08:09:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6410",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6410#issuecomment-51479",
+    "user": "mmezzarobba"
+}
+```
 
 sage-6.2.beta4:
 
@@ -156,29 +262,73 @@ sage: %timeit xI=diagonal_matrix([x for i in range(n)])
 
 
 
+
 ---
 
-Comment by mmezzarobba created at 2014-03-15 08:09:34
+archive/issue_comments_051480.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2014-03-15T08:09:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6410",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6410#issuecomment-51480",
+    "user": "mmezzarobba"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by ncohen created at 2014-03-25 12:35:51
+archive/issue_comments_051481.json:
+```json
+{
+    "body": "(set a ticket to positive review when it is invalid)",
+    "created_at": "2014-03-25T12:35:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6410",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6410#issuecomment-51481",
+    "user": "ncohen"
+}
+```
 
 (set a ticket to positive review when it is invalid)
 
 
+
 ---
 
-Comment by ncohen created at 2014-03-25 12:35:51
+archive/issue_comments_051482.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2014-03-25T12:35:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6410",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6410#issuecomment-51482",
+    "user": "ncohen"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by vbraun created at 2014-03-31 12:29:50
+archive/issue_comments_051483.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2014-03-31T12:29:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6410",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6410#issuecomment-51483",
+    "user": "vbraun"
+}
+```
 
 Resolution: fixed

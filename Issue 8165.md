@@ -1,11 +1,21 @@
 # Issue 8165: title cuts off on worksheet upload
 
-Issue created by migration from https://trac.sagemath.org/ticket/8165
-
-Original creator: jason
-
-Original creation time: 2010-02-03 05:39:24
-
+archive/issues_008165.json:
+```json
+{
+    "body": "Assignee: was\n\nI just tried uploading the following worksheet:\n\nhttp://sagenb.org/home/pub/1139/\n\nby pasting the URL into the middle box of the upload page on a (fairly fresh) 4.3.1 install.  When I opened up the worksheet on the local server, the title was cut off to be about 14 characters long.  This is a bug.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8165\n\n",
+    "created_at": "2010-02-03T05:39:24Z",
+    "labels": [
+        "notebook",
+        "major",
+        "bug"
+    ],
+    "title": "title cuts off on worksheet upload",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8165",
+    "user": "jason"
+}
+```
 Assignee: was
 
 I just tried uploading the following worksheet:
@@ -15,24 +25,63 @@ http://sagenb.org/home/pub/1139/
 by pasting the URL into the middle box of the upload page on a (fairly fresh) 4.3.1 install.  When I opened up the worksheet on the local server, the title was cut off to be about 14 characters long.  This is a bug.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8165
+
+
+
+
 
 ---
+
+archive/issue_comments_071841.json:
+```json
+{
+    "body": "Attachment\n\nDon't use `rstrip` to chop `'.sws'`.  sagenb repo.",
+    "created_at": "2010-02-03T06:17:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8165",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8165#issuecomment-71841",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
 Don't use `rstrip` to chop `'.sws'`.  sagenb repo.
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-03 06:20:44
+archive/issue_comments_071842.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-02-03T06:20:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8165",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8165#issuecomment-71842",
+    "user": "mpatel"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-03 06:20:44
+archive/issue_comments_071843.json:
+```json
+{
+    "body": "The problem is the use of [str.rstrip](http://docs.python.org/library/stdtypes.html#str.rstrip) in `twist.Worksheet_download`:\n\n```python\nsage: '112 - 01 - Review.sws'.rstrip('.sws')\n'112 - 01 - Revie'\n```\n\nThe patch uses `str.endswith` and a slice, instead.",
+    "created_at": "2010-02-03T06:20:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8165",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8165#issuecomment-71843",
+    "user": "mpatel"
+}
+```
 
 The problem is the use of [str.rstrip](http://docs.python.org/library/stdtypes.html#str.rstrip) in `twist.Worksheet_download`:
 
@@ -44,33 +93,77 @@ sage: '112 - 01 - Review.sws'.rstrip('.sws')
 The patch uses `str.endswith` and a slice, instead.
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-03 06:23:07
+archive/issue_comments_071844.json:
+```json
+{
+    "body": "Related: #7663, #7924.\n\nTo review this, if you have the time, I suggest using the latest spkg at #8051.",
+    "created_at": "2010-02-03T06:23:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8165",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8165#issuecomment-71844",
+    "user": "mpatel"
+}
+```
 
 Related: #7663, #7924.
 
 To review this, if you have the time, I suggest using the latest spkg at #8051.
 
 
+
 ---
 
-Comment by rbeezer created at 2010-02-07 06:49:48
+archive/issue_comments_071845.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-02-07T06:49:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8165",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8165#issuecomment-71845",
+    "user": "rbeezer"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by rbeezer created at 2010-02-07 06:49:48
+archive/issue_comments_071846.json:
+```json
+{
+    "body": "I've reproduced the problem on 4.3.1, then applied the patch on top of sagenb-0.7.4.spkg and the title survives properly when saved to an sws file and subsequently loaded into a notebook.\n\nPositive review.",
+    "created_at": "2010-02-07T06:49:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8165",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8165#issuecomment-71846",
+    "user": "rbeezer"
+}
+```
 
 I've reproduced the problem on 4.3.1, then applied the patch on top of sagenb-0.7.4.spkg and the title survives properly when saved to an sws file and subsequently loaded into a notebook.
 
 Positive review.
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-10 18:32:38
+archive/issue_comments_071847.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-02-10T18:32:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8165",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8165#issuecomment-71847",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed

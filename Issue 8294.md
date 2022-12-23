@@ -1,11 +1,21 @@
 # Issue 8294: Copy is broken on 2x2 integer matrix (mutability is not set)
 
-Issue created by migration from https://trac.sagemath.org/ticket/8294
-
-Original creator: hivert
-
-Original creation time: 2010-02-17 15:31:26
-
+archive/issues_008294.json:
+```json
+{
+    "body": "Assignee: h\n\nKeywords: Matrix 2x2, mutability, copy\n\n\n```\nsage: M = sage.matrix.matrix_integer_2x2.MatrixSpace_ZZ_2x2()\nsage: mat = M([3,4,5,6])\nsage: mat.is_mutable()\nTrue\nsage: mat = copy(mat)\nsage: mat.is_mutable()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/hivert/<ipython console> in <module>()\n\n/usr/local/sage2/local/lib/python2.6/site-packages/sage/matrix/matrix0.so in sage.matrix.matrix0.Matrix.is_mutable (sage/matrix/matrix0.c:3928)()\n\nAttributeError: 'NoneType' object has no attribute 'is_mutable'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8294\n\n",
+    "created_at": "2010-02-17T15:31:26Z",
+    "labels": [
+        "linear algebra",
+        "major",
+        "bug"
+    ],
+    "title": "Copy is broken on 2x2 integer matrix (mutability is not set)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8294",
+    "user": "hivert"
+}
+```
 Assignee: h
 
 Keywords: Matrix 2x2, mutability, copy
@@ -29,8 +39,25 @@ AttributeError: 'NoneType' object has no attribute 'is_mutable'
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8294
+
+
+
+
 
 ---
+
+archive/issue_comments_073478.json:
+```json
+{
+    "body": "Attachment\n\nShould be ready for review.\n\nFlorent",
+    "created_at": "2010-02-17T15:41:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8294",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8294#issuecomment-73478",
+    "user": "hivert"
+}
+```
 
 Attachment
 
@@ -39,38 +66,93 @@ Should be ready for review.
 Florent
 
 
+
 ---
 
-Comment by hivert created at 2010-02-17 15:41:33
+archive/issue_comments_073479.json:
+```json
+{
+    "body": "Changing assignee from h to hivert.",
+    "created_at": "2010-02-17T15:41:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8294",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8294#issuecomment-73479",
+    "user": "hivert"
+}
+```
 
 Changing assignee from h to hivert.
 
 
+
 ---
 
-Comment by hivert created at 2010-02-17 15:41:44
+archive/issue_comments_073480.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-02-17T15:41:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8294",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8294#issuecomment-73480",
+    "user": "hivert"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mraum created at 2010-02-20 13:02:46
+archive/issue_comments_073481.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-02-20T13:02:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8294",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8294#issuecomment-73481",
+    "user": "mraum"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mraum created at 2010-02-20 13:02:46
+archive/issue_comments_073482.json:
+```json
+{
+    "body": "This applies cleanly and all tests pass. Positive review as is.\n#8276 will follow soon.",
+    "created_at": "2010-02-20T13:02:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8294",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8294#issuecomment-73482",
+    "user": "mraum"
+}
+```
 
 This applies cleanly and all tests pass. Positive review as is.
 #8276 will follow soon.
 
 
+
 ---
 
-Comment by hivert created at 2010-02-20 13:53:12
+archive/issue_comments_073483.json:
+```json
+{
+    "body": "Replying to [comment:3 mraum]:\n> This applies cleanly and all tests pass. Positive review as is.\n> #8276 will follow soon.\n\nThanks a lot for this quick help !",
+    "created_at": "2010-02-20T13:53:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8294",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8294#issuecomment-73483",
+    "user": "hivert"
+}
+```
 
 Replying to [comment:3 mraum]:
 > This applies cleanly and all tests pass. Positive review as is.
@@ -79,8 +161,19 @@ Replying to [comment:3 mraum]:
 Thanks a lot for this quick help !
 
 
+
 ---
 
-Comment by mvngu created at 2010-03-03 14:27:07
+archive/issue_comments_073484.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-03-03T14:27:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8294",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8294#issuecomment-73484",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 8135: prime_pi approximation involving zeta zeros
 
-Issue created by migration from https://trac.sagemath.org/ticket/8135
-
-Original creator: kevin.stueve
-
-Original creation time: 2010-01-31 06:20:29
-
+archive/issues_008135.json:
+```json
+{
+    "body": "Assignee: Kevin Stueve\n\nCC:  leif\n\nKeywords: prime counting function Riemann zeta zeros\n\nGet an analytic approximation to prime_pi, the prime counting function that uses the nontrivial zeros of the Riemann zeta function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8135\n\n",
+    "created_at": "2010-01-31T06:20:29Z",
+    "labels": [
+        "number theory",
+        "major",
+        "enhancement"
+    ],
+    "title": "prime_pi approximation involving zeta zeros",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8135",
+    "user": "kevin.stueve"
+}
+```
 Assignee: Kevin Stueve
 
 CC:  leif
@@ -14,10 +24,25 @@ Keywords: prime counting function Riemann zeta zeros
 
 Get an analytic approximation to prime_pi, the prime counting function that uses the nontrivial zeros of the Riemann zeta function.
 
+Issue created by migration from https://trac.sagemath.org/ticket/8135
+
+
+
+
 
 ---
 
-Comment by kevin.stueve created at 2010-01-31 06:43:42
+archive/issue_comments_071541.json:
+```json
+{
+    "body": "Below is a conversation between myself and Tomas Oliviera e Silva (Universidade de Aveiro, Portugal).  I have included only the content relevant to this ticket in particular (more of the conversation is at [http://trac.sagemath.org/sage_trac/ticket/7013#comment:42](http://trac.sagemath.org/sage_trac/ticket/7013#comment:42)).\n\nKevin Stueve:\n\nI am currently researching the error of Riemann's exact formula for\npi(x) in the form of equation 13 at\nhttp://mathworld.wolfram.com/RiemannPrimeCountingFunction.html.  I am\ncontemplating various ways of compressing a table of values of the\nprime counting function.  Because storage cost is a major bottleneck,\neven a savings of 10% or less would be worth the effort.\n\nAre you willing to release the code you used for your estimates of the\nprime counting function at http://www.ieeta.pt/~tos/primes.html#e\nunder a GPL compatible license?\n\nTomas Oliviera e Silva (TOS):\n\nThe equation 13 you mentioned is PROBABLY wrong: check Andrey V. Kulsha'\npost of 11/18/2008 entitled \"On the explicit formula for the Prime-counting\nfunction pi(x)\" on the NMBRTHRY`@`LISTSERV.NODAK.EDU list. To me, it seems\nfar better to compress the pi(x) data using simply pi(x)=li(x)-e(x). Instead\nof storing pi(x) you would store the (positive) value of e(x) rounded to the\nnearest integer. Note that li(x) can be computed easily and that e(x) should\nbe of the order of sqrt(x). Replacing li(x) by R(x) would not help much,\nbecause the error term could be either positive or negative (one more bit).\nUsing a few zeros of the zeta function could reduce the error term, but my\nexperience is that it would take much more time to compute the approximation\n(it would be necessary to evaluate $li(x^rho)$ accurately, and also\npi(sqrt(x)), pi(cbrt(x)), etc.).\n\nKevin Stueve:\n\nI am very interested in what is possible with the Riemann correction\nterms.  Even if they are not reasonable for use in a production prime\ncounting function, I would love to find a fast implementation I can\nuse for research (and for Sage) without implementing it myself.\nImplementing it myself would be very educational (I suppose I might\nstart with the Gram series), but it could consume a great deal of my\ntime that could be spent elsewhere.  Because I started out as a\ncomputer science major, I see the problem of how much a table of\nvalues of the prime counting function can be compressed and quickly\nretrieved in theory as a problem worthy in its own right.\n\nTOS:\n\nWould you consider using the gmp and mprf packages to do the floating\npoint computations? I can adapt my code to compute Riemman's formula for\npi(x) using them --- it would contain calls to pi(x) itself, which I would\nnot implement, to compute pi(sqrt(x)), pi(cbrt(x)), etc.\n\nKevin Stueve:\n\nYes.  I would consider using gmp and mprf.  I could compute the\nrecursive pi(sqrt(x)) calls etc.\n\nTomas Oliviera e Silva:\nHere goes a simple implementation of Riemann's formula in pari-gp.\n\nThanks Tomas!  \n\nKevin Stueve",
+    "created_at": "2010-01-31T06:43:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8135#issuecomment-71541",
+    "user": "kevin.stueve"
+}
+```
 
 Below is a conversation between myself and Tomas Oliviera e Silva (Universidade de Aveiro, Portugal).  I have included only the content relevant to this ticket in particular (more of the conversation is at [http://trac.sagemath.org/sage_trac/ticket/7013#comment:42](http://trac.sagemath.org/sage_trac/ticket/7013#comment:42)).
 
@@ -82,9 +107,20 @@ Thanks Tomas!
 Kevin Stueve
 
 
+
 ---
 
-Comment by kevin.stueve created at 2010-01-31 06:54:56
+archive/issue_comments_071542.json:
+```json
+{
+    "body": "Sorry about the formatting error: \n\n$li(x<sup>rho</sup>)$ accurately, and also pi(sqrt(x)), pi(cbrt(x)), etc.\n\nThis formatting error is my fault.",
+    "created_at": "2010-01-31T06:54:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8135#issuecomment-71542",
+    "user": "kevin.stueve"
+}
+```
 
 Sorry about the formatting error: 
 
@@ -93,9 +129,20 @@ $li(x<sup>rho</sup>)$ accurately, and also pi(sqrt(x)), pi(cbrt(x)), etc.
 This formatting error is my fault.
 
 
+
 ---
 
-Comment by kevin.stueve created at 2010-01-31 07:07:09
+archive/issue_comments_071543.json:
+```json
+{
+    "body": "Sincere apologies for misspelling Tom\u00e1s Oliveira e Silva's name in the above comment.\n\nEditing recent comments on Sagetrac is a REALLY missing feature.\n\nAlso, it looks like a mailing list name beginning with NMBRTHRY, followed by an at sign, and ending in LISTSERV.NODAK.EDU was stripped by the trac server for anti-spam purposes.",
+    "created_at": "2010-01-31T07:07:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8135#issuecomment-71543",
+    "user": "kevin.stueve"
+}
+```
 
 Sincere apologies for misspelling Tomás Oliveira e Silva's name in the above comment.
 
@@ -104,35 +151,96 @@ Editing recent comments on Sagetrac is a REALLY missing feature.
 Also, it looks like a mailing list name beginning with NMBRTHRY, followed by an at sign, and ending in LISTSERV.NODAK.EDU was stripped by the trac server for anti-spam purposes.
 
 
+
 ---
 
-Comment by kevin.stueve created at 2010-01-31 07:19:07
+archive/issue_comments_071544.json:
+```json
+{
+    "body": "pari-gp code from Tom\u00e1s Oliveira e Silva",
+    "created_at": "2010-01-31T07:19:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8135#issuecomment-71544",
+    "user": "kevin.stueve"
+}
+```
 
 pari-gp code from Tomás Oliveira e Silva
 
 
+
 ---
+
+archive/issue_comments_071545.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-01-31T07:19:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8135#issuecomment-71545",
+    "user": "kevin.stueve"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_071546.json:
+```json
+{
+    "body": "Attachment\n\nrewrote TOS's riemann_pi.gp in python (paste into cell)",
+    "created_at": "2010-02-04T06:56:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8135#issuecomment-71546",
+    "user": "kevin.stueve"
+}
+```
 
 Attachment
 
 rewrote TOS's riemann_pi.gp in python (paste into cell)
 
 
+
 ---
 
-Comment by kevin.stueve created at 2010-02-04 07:02:21
+archive/issue_comments_071547.json:
+```json
+{
+    "body": "Attached TOS's riemann_pi.gp converted to Python.  It would be AWESOME to see this code written in optimized multithreaded C (or assembly), or at least Cython.  Thanks again to Tom\u00e1s Oliveira e Silva for releasing this code!\n\nKevin Stueve",
+    "created_at": "2010-02-04T07:02:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8135#issuecomment-71547",
+    "user": "kevin.stueve"
+}
+```
 
 Attached TOS's riemann_pi.gp converted to Python.  It would be AWESOME to see this code written in optimized multithreaded C (or assembly), or at least Cython.  Thanks again to Tomás Oliveira e Silva for releasing this code!
 
 Kevin Stueve
 
 
+
 ---
+
+archive/issue_comments_071548.json:
+```json
+{
+    "body": "Attachment\n\nRewrote periodic terms in C with real and imaginary components calculated individually",
+    "created_at": "2010-03-31T08:48:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8135#issuecomment-71548",
+    "user": "kevin.stueve"
+}
+```
 
 Attachment
 

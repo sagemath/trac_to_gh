@@ -1,11 +1,21 @@
 # Issue 5268: General design and documentation for Combinatorial Classes.
 
-Issue created by migration from https://trac.sagemath.org/ticket/5268
-
-Original creator: hivert
-
-Original creation time: 2009-02-14 11:01:51
-
+archive/issues_005268.json:
+```json
+{
+    "body": "Assignee: hivert\n\nCC:  sage-combinat\n\nKeywords: combinatorial classes, design\n\nThere are a lot of design issues which concern combinatorial classes. They are currently discussed on the mailing list and on the wiki. See\n    http://groups.google.com/group/sage-combinat-devel/\n    http://groups.google.com/group/sage-combinat-devel/browse_thread/thread/fbf6d9c2ba7cac15\n    http://wiki.sagemath.org/CombinatorialClass \nSomeones has to lead/moderate these discussions, to summarize the result and to incorporate it into sage doc. After this we should emit a bunch of tickets to update the various combinatorial classes to this design. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5268\n\n",
+    "created_at": "2009-02-14T11:01:51Z",
+    "labels": [
+        "combinatorics",
+        "major",
+        "enhancement"
+    ],
+    "title": "General design and documentation for Combinatorial Classes.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5268",
+    "user": "hivert"
+}
+```
 Assignee: hivert
 
 CC:  sage-combinat
@@ -18,44 +28,114 @@ There are a lot of design issues which concern combinatorial classes. They are c
     http://wiki.sagemath.org/CombinatorialClass 
 Someones has to lead/moderate these discussions, to summarize the result and to incorporate it into sage doc. After this we should emit a bunch of tickets to update the various combinatorial classes to this design. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5268
+
+
+
+
 
 ---
 
-Comment by hivert created at 2009-02-14 11:02:08
+archive/issue_comments_040442.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-02-14T11:02:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5268",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5268#issuecomment-40442",
+    "user": "hivert"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mkoeppe created at 2021-09-07 08:00:03
+archive/issue_comments_040443.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2021-09-07T08:00:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5268",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5268#issuecomment-40443",
+    "user": "mkoeppe"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mkoeppe created at 2021-09-07 08:00:03
+archive/issue_comments_040444.json:
+```json
+{
+    "body": "outdated, should close",
+    "created_at": "2021-09-07T08:00:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5268",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5268#issuecomment-40444",
+    "user": "mkoeppe"
+}
+```
 
 outdated, should close
 
 
+
 ---
 
-Comment by klee created at 2021-09-10 10:52:52
+archive/issue_comments_040445.json:
+```json
+{
+    "body": "I agree",
+    "created_at": "2021-09-10T10:52:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5268",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5268#issuecomment-40445",
+    "user": "klee"
+}
+```
 
 I agree
 
 
+
 ---
 
-Comment by klee created at 2021-09-10 10:52:52
+archive/issue_comments_040446.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2021-09-10T10:52:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5268",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5268#issuecomment-40446",
+    "user": "klee"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mkoeppe created at 2021-09-10 17:33:19
+archive/issue_comments_040447.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2021-09-10T17:33:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5268",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5268#issuecomment-40447",
+    "user": "mkoeppe"
+}
+```
 
 Resolution: invalid

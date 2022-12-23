@@ -1,18 +1,28 @@
 # Issue 6424: One can no longer convert I=sqrt(-1) to sympy
 
-Issue created by migration from https://trac.sagemath.org/ticket/6424
-
-Original creator: drkirkby
-
-Original creation time: 2009-06-26 15:02:01
-
+archive/issues_006424.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  david.kirkby@onetel.net\n\nAs a comment related to trac item 6423, \n\n*By the way, evidently one can no longer convert I=sqrt(-1) to sympy:*\n\n```\nsage: (x+sqrt(2))._sympy_()\nx + 2**(1/2)\nsage: (x+I)._sympy_()\nSympifyError: SympifyError: I is NOT a valid SymPy expression\n```\n\n\nHe wanted this, and the other issue reported as TRAC tickets, but was busy writing a talk. \n\nI don't feel able to comment much more on this, and personally don't intend trying to fix it (outside my knowledge), so I've just reported it.\n\nCan someone else please add appropriate priority, milestones, keywords etc, as this is completely outside my comfort zone.\n\nDavid Kirkby\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6424\n\n",
+    "created_at": "2009-06-26T15:02:01Z",
+    "labels": [
+        "algebra",
+        "major",
+        "bug"
+    ],
+    "title": "One can no longer convert I=sqrt(-1) to sympy",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6424",
+    "user": "drkirkby"
+}
+```
 Assignee: tbd
 
 CC:  david.kirkby@onetel.net
 
 As a comment related to trac item 6423, 
 
-_By the way, evidently one can no longer convert I=sqrt(-1) to sympy:_
+*By the way, evidently one can no longer convert I=sqrt(-1) to sympy:*
 
 ```
 sage: (x+sqrt(2))._sympy_()
@@ -31,17 +41,43 @@ Can someone else please add appropriate priority, milestones, keywords etc, as t
 David Kirkby
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6424
+
+
+
+
 
 ---
 
-Comment by AlexGhitza created at 2009-07-11 11:28:23
+archive/issue_comments_051582.json:
+```json
+{
+    "body": "Changing component from algebra to symbolics.",
+    "created_at": "2009-07-11T11:28:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6424",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6424#issuecomment-51582",
+    "user": "AlexGhitza"
+}
+```
 
 Changing component from algebra to symbolics.
 
 
+
 ---
 
-Comment by mvngu created at 2009-07-14 03:08:39
+archive/issue_comments_051583.json:
+```json
+{
+    "body": "From this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/c484e5ccbc884998) thread by Ondrej Certik:\n\nCurrently this fails:\n\nsage: sympy.test(\"sympy/test_external/\")\n============================= test process starts ==============================\nexecutable:   /home/ondrej/sage-4.1-sage.math.washington.edu-x86_64-Linux/local/bin/sage.bin\n (2.6.2-final-0)\n\nsympy/test_external/test_codegen_c_cc.py[5] .....                           [OK]\nsympy/test_external/test_numpy.py[19] ...................                   [OK]\nsympy/test_external/test_sage.py[13] .E...........                        [FAIL]\n[...]\n File \"/home/ondrej/sage-4.1-sage.math.washington.edu-x86_64-Linux/local/lib/python2.6/site-packages/sympy/core/sympify.py\",\nline 194, in _sympify\n   raise SympifyError(\"%r is NOT a valid SymPy expression\" % (a,))\nSympifyError: SympifyError: I is NOT a valid SymPy expression\n\n=========== tests finished: 36 passed, 1 exceptions in 3.26 seconds ============\nDO *NOT* COMMIT!\nFalse\n\n\nThis patch fixes it:\n\ndiff -r ca1f31d6f6bf sage/symbolic/expression_conversions.py\n--- a/sage/symbolic/expression_conversions.py   Thu Jul 09 15:14:36 2009 -0700\n+++ b/sage/symbolic/expression_conversions.py   Mon Jul 13 16:57:22 2009 -0700\n`@``@` -572,7 +572,7 `@``@`\n        \"\"\"\n        import sympy\n        operator = arithmetic_operators[operator]\n-        ops = [self(a) for a in ex.operands()]\n+        ops = [sympy.sympify(self(a)) for a in ex.operands()]\n        if operator == \"+\":\n            return sympy.Add(*ops)\n        elif operator == \"*\":\n\nNow:\n\nsage: sympy.test(\"sympy/test_external/\")\n============================= test process starts ==============================\nexecutable:   /home/ondrej/sage-4.1-sage.math.washington.edu-x86_64-Linux/local/bin/sage.bin\n (2.6.2-final-0)\n\nsympy/test_external/test_codegen_c_cc.py[5] .....                           [OK]\nsympy/test_external/test_numpy.py[19] ...................                   [OK]\nsympy/test_external/test_sage.py[13] .............                          [OK]\n\n================== tests finished: 37 passed in 2.29 seconds ===================\nTrue\n\n\nI vaguely remember William run into this bug recently. It was caused\nby switching to the new symbolic, the problem was that passing things\ndirectly to Mul classes in sympy goes in the fast track and only\nsympifies easy things like python ints. For Sage integers, a full\nsympify must be called, which is what my patch does. The core of the\nproblem is in fact in sympy cache mechanism, which only does fast\ntrack sympify for performance reasons, so the proper fix is to fix our\ncache, which is exactly what we plan to do --- get rid of it,\nhopefully by the end of the summer.\n\nWe are about to release a new sympy now, so the above patch makes all\nsympy 0.6.6 tests pass.",
+    "created_at": "2009-07-14T03:08:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6424",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6424#issuecomment-51583",
+    "user": "mvngu"
+}
+```
 
 From this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/c484e5ccbc884998) thread by Ondrej Certik:
 
@@ -110,43 +146,111 @@ We are about to release a new sympy now, so the above patch makes all
 sympy 0.6.6 tests pass.
 
 
+
 ---
 
-Comment by dsm created at 2011-12-14 01:00:25
+archive/issue_comments_051584.json:
+```json
+{
+    "body": "fix sympy conversion of I",
+    "created_at": "2011-12-14T01:00:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6424",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6424#issuecomment-51584",
+    "user": "dsm"
+}
+```
 
 fix sympy conversion of I
 
 
+
 ---
+
+archive/issue_comments_051585.json:
+```json
+{
+    "body": "Attachment\n\nFor various reasons I need this to work.  Patch attached, which simply does what Ondrej recommended and adds a doctest.",
+    "created_at": "2011-12-14T01:01:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6424",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6424#issuecomment-51585",
+    "user": "dsm"
+}
+```
 
 Attachment
 
 For various reasons I need this to work.  Patch attached, which simply does what Ondrej recommended and adds a doctest.
 
 
+
 ---
 
-Comment by dsm created at 2011-12-14 01:01:57
+archive/issue_comments_051586.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2011-12-14T01:01:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6424",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6424#issuecomment-51586",
+    "user": "dsm"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mhansen created at 2011-12-17 20:49:50
+archive/issue_comments_051587.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2011-12-17T20:49:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6424",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6424#issuecomment-51587",
+    "user": "mhansen"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mhansen created at 2011-12-17 20:49:50
+archive/issue_comments_051588.json:
+```json
+{
+    "body": "Looks good to me.",
+    "created_at": "2011-12-17T20:49:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6424",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6424#issuecomment-51588",
+    "user": "mhansen"
+}
+```
 
 Looks good to me.
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-12-22 13:06:27
+archive/issue_comments_051589.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2011-12-22T13:06:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6424",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6424#issuecomment-51589",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 2700: scaling y-axis of plots to fit the data
 
-Issue created by migration from https://trac.sagemath.org/ticket/2700
-
-Original creator: jason
-
-Original creation time: 2008-03-28 17:13:40
-
+archive/issues_002700.json:
+```json
+{
+    "body": "Assignee: was\n\n\n```\n>>  I have tried to plot a graphic in the notebook with a small scale (<1)\n>>  and it end up by showing up nothing:\n>>    sage: var('x')\n>>    sage: plot(sin(x), 0, 0.01)\n>>\n> \n> Try this:\n> \n> sage: plot(sin(x), 0, 0.01).show(0,0.01, 0, 0.01)\n> \n> The problem is plot's default scale isn't good enough.  using show you can force\n> something more useful.\n\n\n(turning this into a dev discussion :)\n\nYou know, we do evaluate the function for lots of points in the interval, so we ought to have a pretty intelligent idea of the max and min of the function.  This ought to let us get a pretty good guess at a ymin and ymax.  If we really wanted to get fancy, we could do a small statistical analysis to throw out outliers too.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2700\n\n",
+    "created_at": "2008-03-28T17:13:40Z",
+    "labels": [
+        "graphics",
+        "minor",
+        "enhancement"
+    ],
+    "title": "scaling y-axis of plots to fit the data",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2700",
+    "user": "jason"
+}
+```
 Assignee: was
 
 
@@ -30,16 +40,42 @@ You know, we do evaluate the function for lots of points in the interval, so we 
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2700
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2008-09-02 19:49:18
+archive/issue_comments_018623.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-09-02T19:49:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2700",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2700#issuecomment-18623",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mhansen created at 2008-09-02 19:49:18
+archive/issue_comments_018624.json:
+```json
+{
+    "body": "This was fixed by #3806.",
+    "created_at": "2008-09-02T19:49:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2700",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2700#issuecomment-18624",
+    "user": "mhansen"
+}
+```
 
 This was fixed by #3806.

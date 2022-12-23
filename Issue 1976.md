@@ -1,37 +1,97 @@
 # Issue 1976: [with 1-line patch; needs review] disable the use of openssl on linux as a hack to generate security certificates quickly
 
-Issue created by migration from https://trac.sagemath.org/ticket/1976
-
-Original creator: was
-
-Original creation time: 2008-01-30 04:17:23
-
+archive/issues_001976.json:
+```json
+{
+    "body": "Assignee: boothby\n\nThis needs review and testing on linux with brand new GNUtls package.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1976\n\n",
+    "created_at": "2008-01-30T04:17:23Z",
+    "labels": [
+        "notebook",
+        "major",
+        "bug"
+    ],
+    "title": "[with 1-line patch; needs review] disable the use of openssl on linux as a hack to generate security certificates quickly",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1976",
+    "user": "was"
+}
+```
 Assignee: boothby
 
 This needs review and testing on linux with brand new GNUtls package.
 
+Issue created by migration from https://trac.sagemath.org/ticket/1976
+
+
+
+
 
 ---
+
+archive/issue_comments_012812.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-03-12T05:15:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1976",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1976#issuecomment-12812",
+    "user": "rlm"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by AlexGhitza created at 2008-03-13 12:55:18
+archive/issue_comments_012813.json:
+```json
+{
+    "body": "I tested this on a Gentoo machine with gnutls-2.0.4 installed.  It works, and it's really fast.",
+    "created_at": "2008-03-13T12:55:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1976",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1976#issuecomment-12813",
+    "user": "AlexGhitza"
+}
+```
 
 I tested this on a Gentoo machine with gnutls-2.0.4 installed.  It works, and it's really fast.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-14 13:46:27
+archive/issue_comments_012814.json:
+```json
+{
+    "body": "Merged in Sage 2.10.4.alpha0",
+    "created_at": "2008-03-14T13:46:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1976",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1976#issuecomment-12814",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.4.alpha0
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-14 13:46:27
+archive/issue_comments_012815.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-03-14T13:46:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1976",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1976#issuecomment-12815",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

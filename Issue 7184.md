@@ -1,11 +1,21 @@
 # Issue 7184: [with patch, needs review] Implement counting of spanning trees for graphs and digraphs
 
-Issue created by migration from https://trac.sagemath.org/ticket/7184
-
-Original creator: AJonsson
-
-Original creation time: 2009-10-10 17:59:38
-
+archive/issues_007184.json:
+```json
+{
+    "body": "Assignee: rlm\n\nCC:  boothby\n\nThis patch allows us to count the number of spanning trees in a simple graph, as well as the spanning out-trees from a user-defined root node in a digraph.\n\nMethod used: Kirchhoff's matrix tree theorem [1] and the Laplacian matrix for the simple graphs, and a variation of the same [2] in the directed case.\n\n\n[1] http://en.wikipedia.org/wiki/Kirchhoff%27s_theorem\n[2] corollary 4.4 in http://books.google.se/books?id=vbxdqhDKOSYC&printsec=frontcover&hl=en&source=gbs_navlinks_s\n\nIssue created by migration from https://trac.sagemath.org/ticket/7184\n\n",
+    "created_at": "2009-10-10T17:59:38Z",
+    "labels": [
+        "graph theory",
+        "major",
+        "enhancement"
+    ],
+    "title": "[with patch, needs review] Implement counting of spanning trees for graphs and digraphs",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7184",
+    "user": "AJonsson"
+}
+```
 Assignee: rlm
 
 CC:  boothby
@@ -18,47 +28,97 @@ Method used: Kirchhoff's matrix tree theorem [1] and the Laplacian matrix for th
 [1] http://en.wikipedia.org/wiki/Kirchhoff%27s_theorem
 [2] corollary 4.4 in http://books.google.se/books?id=vbxdqhDKOSYC&printsec=frontcover&hl=en&source=gbs_navlinks_s
 
+Issue created by migration from https://trac.sagemath.org/ticket/7184
+
+
+
+
 
 ---
 
-Comment by AJonsson created at 2009-10-10 18:00:46
+archive/issue_comments_059490.json:
+```json
+{
+    "body": "count spanning trees of graphs",
+    "created_at": "2009-10-10T18:00:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7184",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7184#issuecomment-59490",
+    "user": "AJonsson"
+}
+```
 
 count spanning trees of graphs
 
 
+
 ---
+
+archive/issue_comments_059491.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-10-10T18:03:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7184",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7184#issuecomment-59491",
+    "user": "AJonsson"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by AJonsson created at 2009-10-10 18:05:43
+archive/issue_comments_059492.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-10-10T18:05:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7184",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7184#issuecomment-59492",
+    "user": "AJonsson"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by ncohen created at 2009-10-18 12:16:29
+archive/issue_comments_059493.json:
+```json
+{
+    "body": "Here is a new patch based on yours, plus some modifications :\n* I was not able at first to apply your patch, as it was based on an old version of Sage. This new version is now based on 4.1.2.rc0.\n* I fixed some docstrings :\n      * you set \"math\" mode with this sign : ` \n        ( exemple : `x^2` )\n      * you set \"sage\" mode with this sign : `` \n        ( exemple : ``graph.am()`` )\n* I renamed the function from spanning_trees to spanning_tree_count as the first seemed to imply an iterator over spanning_trees\n* Some details concerning the root_vertex too. Many graphs have vertices not among integers but among strings, or tuples, etc. Besides, it is not necessary to enumerate all the vertices to get the first one :\n  {{{\n  v=G.vertices()[0]\n  }}}\n  You can also do :\n  {{{\n  v=G.vertex_iterator().next()\n  }}}\n* You had to modify the adjacency matrix to fit the definition used in your references. This was perfectly fine, but also meant there was an error in the definition of ``kirchhoff_matrix`` for directed graph. This patch fixes this, plus some docstrings error in the kirchhoff_matrix function.\n\nShort of these details, you algorithm works fine, thank you for having sent this patch !!\n\nIf you agree with this nex patch I am sending, you can set this ticket to positive_review\n\nThanks !\n\nNathann\n\nAlgorithm is OK, both for Graphs and Digraphs. You had to re-define",
+    "created_at": "2009-10-18T12:16:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7184",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7184#issuecomment-59493",
+    "user": "ncohen"
+}
+```
 
 Here is a new patch based on yours, plus some modifications :
-    * I was not able at first to apply your patch, as it was based on an old version of Sage. This new version is now based on 4.1.2.rc0.
-    * I fixed some docstrings :
-          * you set "math" mode with this sign : ` 
-            ( exemple : `x^2` )
-          * you set "sage" mode with this sign : `` 
-            ( exemple : ``graph.am()`` )
-    * I renamed the function from spanning_trees to spanning_tree_count as the first seemed to imply an iterator over spanning_trees
-    * Some details concerning the root_vertex too. Many graphs have vertices not among integers but among strings, or tuples, etc. Besides, it is not necessary to enumerate all the vertices to get the first one :
-      {{{
-      v=G.vertices()[0]
-      }}}
-      You can also do :
-      {{{
-      v=G.vertex_iterator().next()
-      }}}
-    * You had to modify the adjacency matrix to fit the definition used in your references. This was perfectly fine, but also meant there was an error in the definition of ``kirchhoff_matrix`` for directed graph. This patch fixes this, plus some docstrings error in the kirchhoff_matrix function.
+* I was not able at first to apply your patch, as it was based on an old version of Sage. This new version is now based on 4.1.2.rc0.
+* I fixed some docstrings :
+      * you set "math" mode with this sign : ` 
+        ( exemple : `x^2` )
+      * you set "sage" mode with this sign : `` 
+        ( exemple : ``graph.am()`` )
+* I renamed the function from spanning_trees to spanning_tree_count as the first seemed to imply an iterator over spanning_trees
+* Some details concerning the root_vertex too. Many graphs have vertices not among integers but among strings, or tuples, etc. Besides, it is not necessary to enumerate all the vertices to get the first one :
+  {{{
+  v=G.vertices()[0]
+  }}}
+  You can also do :
+  {{{
+  v=G.vertex_iterator().next()
+  }}}
+* You had to modify the adjacency matrix to fit the definition used in your references. This was perfectly fine, but also meant there was an error in the definition of ``kirchhoff_matrix`` for directed graph. This patch fixes this, plus some docstrings error in the kirchhoff_matrix function.
 
 Short of these details, you algorithm works fine, thank you for having sent this patch !!
 
@@ -71,16 +131,38 @@ Nathann
 Algorithm is OK, both for Graphs and Digraphs. You had to re-define
 
 
+
 ---
 
-Comment by ncohen created at 2009-10-18 12:18:29
+archive/issue_comments_059494.json:
+```json
+{
+    "body": "Ooops, sorry for the last line, which was not meant to be included in my message. Besides, I meant that you had to redefine the kirchhoff matrix, not the adjacency matrix.. Sorry :-)",
+    "created_at": "2009-10-18T12:18:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7184",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7184#issuecomment-59494",
+    "user": "ncohen"
+}
+```
 
 Ooops, sorry for the last line, which was not meant to be included in my message. Besides, I meant that you had to redefine the kirchhoff matrix, not the adjacency matrix.. Sorry :-)
 
 
+
 ---
 
-Comment by boothby created at 2009-10-18 17:10:02
+archive/issue_comments_059495.json:
+```json
+{
+    "body": "Ncohen, you've broken kirchhoff_matrix.  According to the definition, row-sums of the Kirchhoff matrix should be zero.  Here's the doctest before you changed it:\n\n```\nsage: G = DiGraph({1:{1:2,2:3}, 2:{1:4}}, weighted=True,sparse=True) \nsage: G.laplacian_matrix() \n[ 3 -3] \n[-4  4] \n```\n\nhere, the row-sums are zero.\n\nBut you actually had to change the doctest to make the code pass,\n\n```\nsage: G = DiGraph({1:{1:2,2:3}, 2:{1:4}}, weighted=True,sparse=True) \nsage: G.laplacian_matrix() \n[ 4 -3] \n[-4  3] \n```\n\nbut the row-sums aren't zero!  Don't break math to make code work!",
+    "created_at": "2009-10-18T17:10:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7184",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7184#issuecomment-59495",
+    "user": "boothby"
+}
+```
 
 Ncohen, you've broken kirchhoff_matrix.  According to the definition, row-sums of the Kirchhoff matrix should be zero.  Here's the doctest before you changed it:
 
@@ -105,23 +187,45 @@ sage: G.laplacian_matrix()
 but the row-sums aren't zero!  Don't break math to make code work!
 
 
+
 ---
 
-Comment by boothby created at 2009-10-18 17:10:12
+archive/issue_comments_059496.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2009-10-18T17:10:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7184",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7184#issuecomment-59496",
+    "user": "boothby"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by ncohen created at 2009-10-18 17:42:25
+archive/issue_comments_059497.json:
+```json
+{
+    "body": "Hello !!\n\nYes, I indeed changed the docstring because I thought this was a bug in kirchoff_matrix. As it is written in the patch I sent, the definition of kirchhoff matrix perfectly matches the definition from http://en.wikipedia.org/wiki/Laplacian_matrix\nTwo differences : the kirchhoff matrix can be defined when the graph is a DiGraph. \n* In this case, as defined ( for example ) in the book AJonsson is mentionning, the diagonal values should be set to the indegree of each vertex ( and not their out-degree as it is currenty the case ). He has, in his own code, to change manually the values from the returned kirchhoff_matrix, which I felt was not right if the kirchhoff_matrix function was \"correctly\" defined ( \"correctly\" here means : according to this book ).\n* In this docstring, you test your code against a special graph, as it has loops. As you see, the definition from wikipedia does not include the case where the graph includes loops. The definition from the book AJonsson mentions in his docstring ( I have it as a pdf file and can send it to you if you like ) produces the output of the functions kirchoff_matrix when my patch is applied.\n\nI honestly thought this was just a bug happening in special cases ( DiGraph + loops ), and checked several times the definition. Could you tell me which one you used ? \n\nSorry for the trouble. In added you in Cc uniquely to avoid unnoticed changes like this. Oh, and btw, I ran sage -testall to be sure this modifications broke no part of Sage. \n\nNathann",
+    "created_at": "2009-10-18T17:42:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7184",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7184#issuecomment-59497",
+    "user": "ncohen"
+}
+```
 
 Hello !!
 
 Yes, I indeed changed the docstring because I thought this was a bug in kirchoff_matrix. As it is written in the patch I sent, the definition of kirchhoff matrix perfectly matches the definition from http://en.wikipedia.org/wiki/Laplacian_matrix
 Two differences : the kirchhoff matrix can be defined when the graph is a DiGraph. 
-    * In this case, as defined ( for example ) in the book AJonsson is mentionning, the diagonal values should be set to the indegree of each vertex ( and not their out-degree as it is currenty the case ). He has, in his own code, to change manually the values from the returned kirchhoff_matrix, which I felt was not right if the kirchhoff_matrix function was "correctly" defined ( "correctly" here means : according to this book ).
-    * In this docstring, you test your code against a special graph, as it has loops. As you see, the definition from wikipedia does not include the case where the graph includes loops. The definition from the book AJonsson mentions in his docstring ( I have it as a pdf file and can send it to you if you like ) produces the output of the functions kirchoff_matrix when my patch is applied.
+* In this case, as defined ( for example ) in the book AJonsson is mentionning, the diagonal values should be set to the indegree of each vertex ( and not their out-degree as it is currenty the case ). He has, in his own code, to change manually the values from the returned kirchhoff_matrix, which I felt was not right if the kirchhoff_matrix function was "correctly" defined ( "correctly" here means : according to this book ).
+* In this docstring, you test your code against a special graph, as it has loops. As you see, the definition from wikipedia does not include the case where the graph includes loops. The definition from the book AJonsson mentions in his docstring ( I have it as a pdf file and can send it to you if you like ) produces the output of the functions kirchoff_matrix when my patch is applied.
 
 I honestly thought this was just a bug happening in special cases ( DiGraph + loops ), and checked several times the definition. Could you tell me which one you used ? 
 
@@ -130,9 +234,20 @@ Sorry for the trouble. In added you in Cc uniquely to avoid unnoticed changes li
 Nathann
 
 
+
 ---
 
-Comment by AJonsson created at 2009-10-19 19:48:00
+archive/issue_comments_059498.json:
+```json
+{
+    "body": "Hello Nathann,\nthanks for your review. I agree with your changes and have made an updated patch against sage 4.1.2. I did some more testing and noticed that the code for digraphs could easily be crashed by adding string-labeled vertices, so added a type check for that.\n\n\nAs for the Laplacian matrix, I left the current function alone since I saw the following on wikipedia: \"In the case of directed graphs, either the indegree or the outdegree might be used [for the diagonal values], depending on the application.\" At the present only the out-degree is used in sage, but it would of course be possible to make it a user option at creation of the Laplacian matrix if in- or out-degrees are to be used.",
+    "created_at": "2009-10-19T19:48:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7184",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7184#issuecomment-59498",
+    "user": "AJonsson"
+}
+```
 
 Hello Nathann,
 thanks for your review. I agree with your changes and have made an updated patch against sage 4.1.2. I did some more testing and noticed that the code for digraphs could easily be crashed by adding string-labeled vertices, so added a type check for that.
@@ -141,21 +256,56 @@ thanks for your review. I agree with your changes and have made an updated patch
 As for the Laplacian matrix, I left the current function alone since I saw the following on wikipedia: "In the case of directed graphs, either the indegree or the outdegree might be used [for the diagonal values], depending on the application." At the present only the out-degree is used in sage, but it would of course be possible to make it a user option at creation of the Laplacian matrix if in- or out-degrees are to be used.
 
 
+
 ---
 
-Comment by AJonsson created at 2009-10-19 19:48:00
+archive/issue_comments_059499.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2009-10-19T19:48:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7184",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7184#issuecomment-59499",
+    "user": "AJonsson"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by AJonsson created at 2009-10-19 19:49:27
+archive/issue_comments_059500.json:
+```json
+{
+    "body": "built against sage 4.1.2, extra typecheck",
+    "created_at": "2009-10-19T19:49:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7184",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7184#issuecomment-59500",
+    "user": "AJonsson"
+}
+```
 
 built against sage 4.1.2, extra typecheck
 
 
+
 ---
+
+archive/issue_comments_059501.json:
+```json
+{
+    "body": "Attachment\n\nConsidering the view Tom Boothby had of my little modification of kirchhoff_matrix, it may be better not to touch it for the moment in this patch. If as you say, the two different ways are used, the best option would be to modify kirchhoff_matrix as you say, to let the user choose its own definition. ( the problem with the loops still remains, though, but we do not really care about it in this special application ).\n\nI am still worried about what you said considering Strings, though. If as you say, your code can be broken if vertices are strings, then you did not really solve your problem by taking this into account, as vertices can actually be of any immutable type. See for example patch #7246 where vertices are defined as Words ( which is a totally independent Sage object ). This does not fit in the integer case, nor in the String case.\n\nIf I make no mistake remembering what is written in the book you mentioned, they also talk of a different way to compute the number of out-trees : you do not add this special vertex, but just consider the kirchhoff matrix of the first graph, then add 1 to the vertex you want to take as root. It is ( I think ) an easier way to define your matrix in this case, without having to consider these types.. You just have to deal with the matrix ! ( I'm sorry I can not write this patch myself now, I do not have the correct tools on the computer I use and have some urgent work to get done until tomorrow... :-) )\n\nNathann",
+    "created_at": "2009-10-19T20:19:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7184",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7184#issuecomment-59501",
+    "user": "ncohen"
+}
+```
 
 Attachment
 
@@ -168,39 +318,94 @@ If I make no mistake remembering what is written in the book you mentioned, they
 Nathann
 
 
+
 ---
 
-Comment by ncohen created at 2009-10-19 20:19:48
+archive/issue_comments_059502.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2009-10-19T20:19:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7184",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7184#issuecomment-59502",
+    "user": "ncohen"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by AJonsson created at 2009-10-20 17:02:54
+archive/issue_comments_059503.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2009-10-20T17:02:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7184",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7184#issuecomment-59503",
+    "user": "AJonsson"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by AJonsson created at 2009-10-20 17:02:54
+archive/issue_comments_059504.json:
+```json
+{
+    "body": "Hello Nathann, thanks for pointing me in the right way, I have made a new patch that just increases the diagonal value of the root vertex by 1, which indeed is a simpler solution. As a bonus there is no longer any need to copy the graph, since we no longer do any changes to the original graph in our computations.\n\nAnders",
+    "created_at": "2009-10-20T17:02:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7184",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7184#issuecomment-59504",
+    "user": "AJonsson"
+}
+```
 
 Hello Nathann, thanks for pointing me in the right way, I have made a new patch that just increases the diagonal value of the root vertex by 1, which indeed is a simpler solution. As a bonus there is no longer any need to copy the graph, since we no longer do any changes to the original graph in our computations.
 
 Anders
 
 
+
 ---
 
-Comment by boothby created at 2009-10-21 01:13:37
+archive/issue_comments_059505.json:
+```json
+{
+    "body": "Nathann, I was wrong!  I've ONLY dealt with Kirchhoff matrices in the context of electrical networks, in which loops are utterly insignificant.  For me, the definition of the Kirchhoff matrix is that the diagonal is the row-sum of the weighted adjacency matrix.  But, the definition you are using appears to be standard, and as noted here, more useful.",
+    "created_at": "2009-10-21T01:13:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7184",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7184#issuecomment-59505",
+    "user": "boothby"
+}
+```
 
 Nathann, I was wrong!  I've ONLY dealt with Kirchhoff matrices in the context of electrical networks, in which loops are utterly insignificant.  For me, the definition of the Kirchhoff matrix is that the diagonal is the row-sum of the weighted adjacency matrix.  But, the definition you are using appears to be standard, and as noted here, more useful.
 
 
+
 ---
 
-Comment by ncohen created at 2009-10-21 10:07:16
+archive/issue_comments_059506.json:
+```json
+{
+    "body": "This patch should satisfy all of us, I hope. It includes the last version of AJonsson's code, and it adds an argument to kirchhoff_matrix so that the user may chose if D is the matrix of indegree or outdegrees.\n\nI added the corresponding documentation to the kirchhoff_matrix function.\n\nI have to mention that the way kirchhoff_matrix is written contains a lot of repetitions because of the possibility of different values for the indegree variable. I thought of other ways to write it to preserve the code, but these ways could have at some point impaired the performances, as checks for the values of the variable indegree could have happened much more often. I write it this way as the function is still very short and this should not be a problem for its maintenance.\n\nOh, and the patch is based on 4.1.2.rc0\n\nNathann",
+    "created_at": "2009-10-21T10:07:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7184",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7184#issuecomment-59506",
+    "user": "ncohen"
+}
+```
 
 This patch should satisfy all of us, I hope. It includes the last version of AJonsson's code, and it adds an argument to kirchhoff_matrix so that the user may chose if D is the matrix of indegree or outdegrees.
 
@@ -213,21 +418,56 @@ Oh, and the patch is based on 4.1.2.rc0
 Nathann
 
 
+
 ---
 
-Comment by AJonsson created at 2009-10-21 12:07:08
+archive/issue_comments_059507.json:
+```json
+{
+    "body": "Looks fine to me. With your patch applied there is another line in count_spanning_trees that no longer is needed. Apply this patch on top of trac_7184-reviewer.patch to remove that line.",
+    "created_at": "2009-10-21T12:07:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7184",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7184#issuecomment-59507",
+    "user": "AJonsson"
+}
+```
 
 Looks fine to me. With your patch applied there is another line in count_spanning_trees that no longer is needed. Apply this patch on top of trac_7184-reviewer.patch to remove that line.
 
 
+
 ---
 
-Comment by AJonsson created at 2009-10-21 12:08:38
+archive/issue_comments_059508.json:
+```json
+{
+    "body": "remove unneeded reassignment of all diagonal entries of Kirchhoff matrix",
+    "created_at": "2009-10-21T12:08:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7184",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7184#issuecomment-59508",
+    "user": "AJonsson"
+}
+```
 
 remove unneeded reassignment of all diagonal entries of Kirchhoff matrix
 
 
+
 ---
+
+archive/issue_comments_059509.json:
+```json
+{
+    "body": "Attachment\n\nSorryyyyyyy !! I had forgotten to edit your function after I edited kirchhoff_matrix !\n\nHere is a new patch removing this line which is now integrated into kirchhoff_matrix. Besides, I wanted to do something about \n\n```\n\t            for i in self.vertices():  \n\t                        M[j,j]=self.in_degree(i)  \n\t                        if (self.vertices()[j]== root_vertex):  \n\t                            M[j,j]= M[j,j] + 1  \n\t                        j= j + 1  \n```\n\nWith these lines, you are evaluating all the vertices at each look, just to return its jth element. As the vertices do not change, you could have stored the list of vertices in a variable, each time trying to find the jth element of this list ( without listing allt he vertices again ). But with this new patch, you are just getting the index of the vertex you are interested in, and updating the matrix... And with some luck, this patch is the last one :-)",
+    "created_at": "2009-10-21T12:55:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7184",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7184#issuecomment-59509",
+    "user": "ncohen"
+}
+```
 
 Attachment
 
@@ -246,7 +486,20 @@ Here is a new patch removing this line which is now integrated into kirchhoff_ma
 With these lines, you are evaluating all the vertices at each look, just to return its jth element. As the vertices do not change, you could have stored the list of vertices in a variable, each time trying to find the jth element of this list ( without listing allt he vertices again ). But with this new patch, you are just getting the index of the vertex you are interested in, and updating the matrix... And with some luck, this patch is the last one :-)
 
 
+
 ---
+
+archive/issue_comments_059510.json:
+```json
+{
+    "body": "Attachment\n\nLooks really nice. I'm fully satisfied with the patch.\n\nAnders",
+    "created_at": "2009-10-21T14:37:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7184",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7184#issuecomment-59510",
+    "user": "AJonsson"
+}
+```
 
 Attachment
 
@@ -255,57 +508,145 @@ Looks really nice. I'm fully satisfied with the patch.
 Anders
 
 
+
 ---
 
-Comment by ncohen created at 2009-10-22 08:04:50
+archive/issue_comments_059511.json:
+```json
+{
+    "body": "Do we both agree on a positive review, then ? ;-)",
+    "created_at": "2009-10-22T08:04:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7184",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7184#issuecomment-59511",
+    "user": "ncohen"
+}
+```
 
 Do we both agree on a positive review, then ? ;-)
 
 
+
 ---
 
-Comment by ncohen created at 2009-10-26 07:03:05
+archive/issue_comments_059512.json:
+```json
+{
+    "body": "Well, I'll take your \"Looks really nice. I'm fully satisfied with the patch\" as as an answer :-)",
+    "created_at": "2009-10-26T07:03:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7184",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7184#issuecomment-59512",
+    "user": "ncohen"
+}
+```
 
 Well, I'll take your "Looks really nice. I'm fully satisfied with the patch" as as an answer :-)
 
 
+
 ---
 
-Comment by ncohen created at 2009-10-26 07:03:05
+archive/issue_comments_059513.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-10-26T07:03:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7184",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7184#issuecomment-59513",
+    "user": "ncohen"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by boothby created at 2009-10-26 23:01:30
+archive/issue_comments_059514.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_work.",
+    "created_at": "2009-10-26T23:01:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7184",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7184#issuecomment-59514",
+    "user": "boothby"
+}
+```
 
 Changing status from positive_review to needs_work.
 
 
+
 ---
 
-Comment by boothby created at 2009-10-26 23:01:30
+archive/issue_comments_059515.json:
+```json
+{
+    "body": "Sorry guys, reviewers need to not touch the code.  Rather... authors can't give the final +1.",
+    "created_at": "2009-10-26T23:01:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7184",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7184#issuecomment-59515",
+    "user": "boothby"
+}
+```
 
 Sorry guys, reviewers need to not touch the code.  Rather... authors can't give the final +1.
 
 
+
 ---
 
-Comment by boothby created at 2009-10-26 23:01:39
+archive/issue_comments_059516.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2009-10-26T23:01:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7184",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7184#issuecomment-59516",
+    "user": "boothby"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by mhansen created at 2009-12-07 08:47:33
+archive/issue_comments_059517.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-12-07T08:47:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7184",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7184#issuecomment-59517",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mhansen created at 2009-12-07 08:47:33
+archive/issue_comments_059518.json:
+```json
+{
+    "body": "Looks good to me.",
+    "created_at": "2009-12-07T08:47:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7184",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7184#issuecomment-59518",
+    "user": "mhansen"
+}
+```
 
 Looks good to me.

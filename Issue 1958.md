@@ -1,33 +1,82 @@
 # Issue 1958: [with patch, needs review] fix problems with ANSI codes in sage0.py
 
-Issue created by migration from https://trac.sagemath.org/ticket/1958
-
-Original creator: craigcitro
-
-Original creation time: 2008-01-28 04:36:50
-
+archive/issues_001958.json:
+```json
+{
+    "body": "Assignee: craigcitro\n\nThere were some annoying doctest failures in sage0.py in 2.10.1.rc1, which are due to weird issues with ANSI codes ending up in the result of eval(). This parses them to get the correct answer.\n\nI think there's possibly a deeper readline issue here, but that's mostly wild speculation.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1958\n\n",
+    "created_at": "2008-01-28T04:36:50Z",
+    "labels": [
+        "interfaces",
+        "blocker",
+        "bug"
+    ],
+    "title": "[with patch, needs review] fix problems with ANSI codes in sage0.py",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1958",
+    "user": "craigcitro"
+}
+```
 Assignee: craigcitro
 
 There were some annoying doctest failures in sage0.py in 2.10.1.rc1, which are due to weird issues with ANSI codes ending up in the result of eval(). This parses them to get the correct answer.
 
 I think there's possibly a deeper readline issue here, but that's mostly wild speculation.
 
+Issue created by migration from https://trac.sagemath.org/ticket/1958
+
+
+
+
 
 ---
+
+archive/issue_comments_012640.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-01-28T04:39:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1958",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1958#issuecomment-12640",
+    "user": "craigcitro"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by craigcitro created at 2008-01-28 04:40:06
+archive/issue_comments_012641.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-01-28T04:40:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1958",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1958#issuecomment-12641",
+    "user": "craigcitro"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-28 06:37:38
+archive/issue_comments_012642.json:
+```json
+{
+    "body": "There is some more info on #1942, which now has been closed as a dupe of this ticket.\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-28T06:37:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1958",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1958#issuecomment-12642",
+    "user": "mabshoff"
+}
+```
 
 There is some more info on #1942, which now has been closed as a dupe of this ticket.
 
@@ -36,23 +85,58 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_012643.json:
+```json
+{
+    "body": "Attachment\n\nAttached a better band-aid for this, at wstein's suggestion.",
+    "created_at": "2008-01-28T06:50:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1958",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1958#issuecomment-12643",
+    "user": "craigcitro"
+}
+```
 
 Attachment
 
 Attached a better band-aid for this, at wstein's suggestion.
 
 
+
 ---
 
-Comment by craigcitro created at 2008-01-28 07:04:49
+archive/issue_comments_012644.json:
+```json
+{
+    "body": "Note: you only want the second patch; it's a *replacement* for the first, not in addition to.",
+    "created_at": "2008-01-28T07:04:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1958",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1958#issuecomment-12644",
+    "user": "craigcitro"
+}
+```
 
 Note: you only want the second patch; it's a *replacement* for the first, not in addition to.
 
 
+
 ---
 
-Comment by jsp created at 2008-01-28 11:36:24
+archive/issue_comments_012645.json:
+```json
+{
+    "body": "Worked for me on Fedoa 7:\n\n\n\n```\nsage -t  devel/sage-main/sage/interfaces/sage0.py           ^[[?1034h\n         [7.1 s]\n\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 7.1 seconds\n\n```\n\n\nHow about the extra escape code on each test line?",
+    "created_at": "2008-01-28T11:36:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1958",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1958#issuecomment-12645",
+    "user": "jsp"
+}
+```
 
 Worked for me on Fedoa 7:
 
@@ -72,15 +156,37 @@ Total time for all tests: 7.1 seconds
 How about the extra escape code on each test line?
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-29 12:43:52
+archive/issue_comments_012646.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-29T12:43:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1958",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1958#issuecomment-12646",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-29 12:43:52
+archive/issue_comments_012647.json:
+```json
+{
+    "body": "Merged 1958-bandaid-v2.patch in Sage 2.10.1.rc3",
+    "created_at": "2008-01-29T12:43:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1958",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1958#issuecomment-12647",
+    "user": "mabshoff"
+}
+```
 
 Merged 1958-bandaid-v2.patch in Sage 2.10.1.rc3

@@ -1,11 +1,21 @@
 # Issue 8808: upgrade ecl from 10.2.1 to 10.4.1 (or whatever is newest upstream)
 
-Issue created by migration from https://trac.sagemath.org/ticket/8808
-
-Original creator: was
-
-Original creation time: 2010-04-28 18:26:36
-
+archive/issues_008808.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  nbruin\n\nDownload the newest tarball from:\n\n   http://sourceforge.net/projects/ecls/\n\nThis *should* also fix #7690.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8808\n\n",
+    "created_at": "2010-04-28T18:26:36Z",
+    "labels": [
+        "packages: standard",
+        "critical",
+        "enhancement"
+    ],
+    "title": "upgrade ecl from 10.2.1 to 10.4.1 (or whatever is newest upstream)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8808",
+    "user": "was"
+}
+```
 Assignee: tbd
 
 CC:  nbruin
@@ -16,40 +26,99 @@ Download the newest tarball from:
 
 This *should* also fix #7690.
 
+Issue created by migration from https://trac.sagemath.org/ticket/8808
+
+
+
+
 
 ---
 
-Comment by was created at 2010-04-28 18:35:03
+archive/issue_comments_080836.json:
+```json
+{
+    "body": "Changing priority from critical to major.",
+    "created_at": "2010-04-28T18:35:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8808",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8808#issuecomment-80836",
+    "user": "was"
+}
+```
 
 Changing priority from critical to major.
 
 
+
 ---
 
-Comment by was created at 2010-04-28 18:35:03
+archive/issue_comments_080837.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-04-28T18:35:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8808",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8808#issuecomment-80837",
+    "user": "was"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by was created at 2010-04-28 18:35:03
+archive/issue_comments_080838.json:
+```json
+{
+    "body": "Here's the new spkg:\n\n   http://wstein.org/home/wstein/patches/ecl-10.4.1.spkg",
+    "created_at": "2010-04-28T18:35:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8808",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8808#issuecomment-80838",
+    "user": "was"
+}
+```
 
 Here's the new spkg:
 
    http://wstein.org/home/wstein/patches/ecl-10.4.1.spkg
 
 
+
 ---
 
-Comment by was created at 2010-04-28 18:36:43
+archive/issue_comments_080839.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-04-28T18:36:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8808",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8808#issuecomment-80839",
+    "user": "was"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by was created at 2010-04-28 18:36:43
+archive/issue_comments_080840.json:
+```json
+{
+    "body": "NOTE:\n\nMaxima-5.20.1.p0 doesn't just build with this ECL\n\n```\nSummary:\nECL enabled. Executable name: \"ecl\"\ndefault lisp: ecl\nwish executable name: \"wish\"\nMaking all in src\nmake[1]: Entering directory `/mnt/usb1/scratch/wstein/build/san_diego/sage-4.4/spkg/build/maxima-5.20.1.p0/src/src'\ntest -d binary-ecl || mkdir binary-ecl\necl -norc -eval '(progn (load \"../lisp-utils/defsystem.lisp\") (funcall (intern (symbol-name :operate-on-system) :mk) \"maxima\" :compile :verbose t) (build-maxima-lib))' -eval '(ext:quit)'\n;;; Loading \"/mnt/usb1/scratch/wstein/build/san_diego/sage-4.4/spkg/build/maxima-5.20.1.p0/src/src/../lisp-utils/defsystem.lisp\"\n;;; Loading #P\"/mnt/usb1/scratch/wstein/build/san_diego/sage-4.4/local/lib/ecl/cmp.fas\"\n;;; Loading #P\"/mnt/usb1/scratch/wstein/build/san_diego/sage-4.4/local/lib/ecl/sysfun.lsp\"\nAn error occurred during initialization:\nAttempt to redefine function REQUIRE in locked package..\nmake[1]: *** [binary-ecl/maxima] Error 1\nmake[1]: Leaving directory `/mnt/usb1/scratch/wstein/build/san_diego/sage-4.4/spkg/build/maxima-5.20.1.p0/src/src'\nmake: *** [all-recursive] Error 1\n***********************************************************\nFailed to make Maxima.\n***********************************************************\n\nreal    0m3.803s\nuser    0m1.190s\nsys     0m1.200s\nsage: An error occurred while installing maxima-5.20.1.p0\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /mnt/usb1/scratch/wstein/build/san_diego/sage-4.4/install.log.  Describe your computer, operating system, etc.\nIf you want to try to fix the problem yourself, *don't* just cd to\n/mnt/usb1/scratch/wstein/build/san_diego/sage-4.4/spkg/build/maxima-5.20.1.p0 and type 'make check' or whatever is appropriate.\nInstead, the following commands setup all environment variables\ncorrectly and load a subshell for you to debug the error:\n(cd '/mnt/usb1/scratch/wstein/build/san_diego/sage-4.4/spkg/build/maxima-5.20.1.p0' && '/mnt/usb1/scratch/wstein/build/san_diego/sage-4.4/sage' -sh)\nWhen you are done debugging, you can type \"exit\" to leave the\nsubshell.\n```\n",
+    "created_at": "2010-04-28T18:36:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8808",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8808#issuecomment-80840",
+    "user": "was"
+}
+```
 
 NOTE:
 
@@ -94,23 +163,56 @@ subshell.
 
 
 
+
 ---
 
-Comment by was created at 2010-04-28 18:54:11
+archive/issue_comments_080841.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-04-28T18:54:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8808",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8808#issuecomment-80841",
+    "user": "was"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by kcrisman created at 2010-04-28 19:03:00
+archive/issue_comments_080842.json:
+```json
+{
+    "body": "Question: Does this ECL incorporate the patch nbruin mentions in #8645?",
+    "created_at": "2010-04-28T19:03:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8808",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8808#issuecomment-80842",
+    "user": "kcrisman"
+}
+```
 
 Question: Does this ECL incorporate the patch nbruin mentions in #8645?
 
 
+
 ---
 
-Comment by jason created at 2010-05-13 04:18:52
+archive/issue_comments_080843.json:
+```json
+{
+    "body": "Replying to [comment:5 kcrisman]:\n> Question: Does this ECL incorporate the patch nbruin mentions in #8645?\n\nThat patch just adds a Changelog entry.  This spkg has a different changelog entry (i.e., William updated this spkg, not Nils).  So this is a nonissue.",
+    "created_at": "2010-05-13T04:18:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8808",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8808#issuecomment-80843",
+    "user": "jason"
+}
+```
 
 Replying to [comment:5 kcrisman]:
 > Question: Does this ECL incorporate the patch nbruin mentions in #8645?
@@ -118,39 +220,94 @@ Replying to [comment:5 kcrisman]:
 That patch just adds a Changelog entry.  This spkg has a different changelog entry (i.e., William updated this spkg, not Nils).  So this is a nonissue.
 
 
+
 ---
 
-Comment by jason created at 2010-05-13 06:13:17
+archive/issue_comments_080844.json:
+```json
+{
+    "body": "The spkg looks good, and the new maxima (#8731) builds with it.\n\nThis should *only* be merged simultaneously with the new maxima at #8731.",
+    "created_at": "2010-05-13T06:13:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8808",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8808#issuecomment-80844",
+    "user": "jason"
+}
+```
 
 The spkg looks good, and the new maxima (#8731) builds with it.
 
 This should *only* be merged simultaneously with the new maxima at #8731.
 
 
+
 ---
 
-Comment by jason created at 2010-05-13 06:13:17
+archive/issue_comments_080845.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-05-13T06:13:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8808",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8808#issuecomment-80845",
+    "user": "jason"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by kcrisman created at 2010-05-13 13:09:10
+archive/issue_comments_080846.json:
+```json
+{
+    "body": "I think you should look at #8951 too.  It seems silly to have competing ECL packages, although of course they were addressing two different things.  Maybe there could be an immediate p0, or maybe that fix could be incorporated here?  It isn't a change to ECL, but just a change to how to determine if you build 64-bit on Solaris and a conditional removal of temp files, so either way of solving it seems reasonable.",
+    "created_at": "2010-05-13T13:09:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8808",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8808#issuecomment-80846",
+    "user": "kcrisman"
+}
+```
 
 I think you should look at #8951 too.  It seems silly to have competing ECL packages, although of course they were addressing two different things.  Maybe there could be an immediate p0, or maybe that fix could be incorporated here?  It isn't a change to ECL, but just a change to how to determine if you build 64-bit on Solaris and a conditional removal of temp files, so either way of solving it seems reasonable.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-05-14 12:25:35
+archive/issue_comments_080847.json:
+```json
+{
+    "body": "I've updated #8951 so it includes both the changes here (upadate of ECL) and the changes on that ticket (remove /tmp/ECL*).",
+    "created_at": "2010-05-14T12:25:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8808",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8808#issuecomment-80847",
+    "user": "drkirkby"
+}
+```
 
 I've updated #8951 so it includes both the changes here (upadate of ECL) and the changes on that ticket (remove /tmp/ECL*).
 
 
+
 ---
 
-Comment by nbruin created at 2010-05-14 16:46:43
+archive/issue_comments_080848.json:
+```json
+{
+    "body": "Just note that ticket #8645 is about the same issue. The ticket there is closed because the \"src\" directory there is not the same as in the official ECL distribution.\n\nHowever, the instructions for making an ECL spkg explicitly mention that these directories should be removed. So, either change the instructions on building an ECL spkg or remove those directories from the spkg.\n\nThe reasons why those directories should be removed are mentioned in the instructions.",
+    "created_at": "2010-05-14T16:46:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8808",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8808#issuecomment-80848",
+    "user": "nbruin"
+}
+```
 
 Just note that ticket #8645 is about the same issue. The ticket there is closed because the "src" directory there is not the same as in the official ECL distribution.
 
@@ -159,22 +316,55 @@ However, the instructions for making an ECL spkg explicitly mention that these d
 The reasons why those directories should be removed are mentioned in the instructions.
 
 
+
 ---
 
-Comment by nbruin created at 2010-05-14 16:46:43
+archive/issue_comments_080849.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_work.",
+    "created_at": "2010-05-14T16:46:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8808",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8808#issuecomment-80849",
+    "user": "nbruin"
+}
+```
 
 Changing status from positive_review to needs_work.
 
 
+
 ---
 
-Comment by jason created at 2010-05-14 17:10:29
+archive/issue_comments_080850.json:
+```json
+{
+    "body": "Thanks for pointing this out.  I didn't see that.",
+    "created_at": "2010-05-14T17:10:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8808",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8808#issuecomment-80850",
+    "user": "jason"
+}
+```
 
 Thanks for pointing this out.  I didn't see that.
 
 
+
 ---
 
-Comment by mvngu created at 2010-05-14 21:30:16
+archive/issue_comments_080851.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2010-05-14T21:30:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8808",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8808#issuecomment-80851",
+    "user": "mvngu"
+}
+```
 
 Resolution: invalid

@@ -1,11 +1,21 @@
 # Issue 7319: gdmodule requires libiconv on cygwin
 
-Issue created by migration from https://trac.sagemath.org/ticket/7319
-
-Original creator: mhansen
-
-Original creation time: 2009-10-27 05:13:46
-
+archive/issues_007319.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  was\n\nOn Cywgin, the gdmodule spkg requires libiconv.  I think we have two choices for handling this:\n\n1. Making sure that libiconv is always installed in the system Cygwin environment.  We can probably have control over this if we include the Cygwin install with Sage.\n\n2. Add a libiconv spkg that is only installed if we are in Cygwin.  Note that this would probably amount to including it in all source tarballs.\n\nOnce libiconv is present, we need to patch Setup.py in gdmodule to add libiconv to the list of required libraries.\n\nI'll put up an spkg for libiconv and gdmodule here shortly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7319\n\n",
+    "created_at": "2009-10-27T05:13:46Z",
+    "labels": [
+        "porting: Cygwin",
+        "major",
+        "bug"
+    ],
+    "title": "gdmodule requires libiconv on cygwin",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7319",
+    "user": "mhansen"
+}
+```
 Assignee: tbd
 
 CC:  was
@@ -20,24 +30,61 @@ Once libiconv is present, we need to patch Setup.py in gdmodule to add libiconv 
 
 I'll put up an spkg for libiconv and gdmodule here shortly.
 
+Issue created by migration from https://trac.sagemath.org/ticket/7319
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2009-10-27 14:01:18
+archive/issue_comments_061149.json:
+```json
+{
+    "body": "The spkg can be found a http://sage.math.washington.edu/home/mhansen/gdmodule-0.56.p7.spkg",
+    "created_at": "2009-10-27T14:01:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7319",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7319#issuecomment-61149",
+    "user": "mhansen"
+}
+```
 
 The spkg can be found a http://sage.math.washington.edu/home/mhansen/gdmodule-0.56.p7.spkg
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-27 14:01:18
+archive/issue_comments_061150.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-10-27T14:01:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7319",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7319#issuecomment-61150",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-01-31 05:26:32
+archive/issue_comments_061151.json:
+```json
+{
+    "body": "The latest version of R will need iconv on Solaris - currently an option to configure, something like --no-iconv is added on R. But iconv is mandatory on the latest version with Solaris. Given iconv is not large, and does not take long to build, I believe that is should be added. I would also suggest it is installed on all platforms - not just Cygwin and Solaris. It would give one more item which is fixed, and so less need to worry if someone's problem might be their version of iconv is  too old or broken in some way. \n\n\nDave",
+    "created_at": "2010-01-31T05:26:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7319",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7319#issuecomment-61151",
+    "user": "drkirkby"
+}
+```
 
 The latest version of R will need iconv on Solaris - currently an option to configure, something like --no-iconv is added on R. But iconv is mandatory on the latest version with Solaris. Given iconv is not large, and does not take long to build, I believe that is should be added. I would also suggest it is installed on all platforms - not just Cygwin and Solaris. It would give one more item which is fixed, and so less need to worry if someone's problem might be their version of iconv is  too old or broken in some way. 
 
@@ -45,116 +92,270 @@ The latest version of R will need iconv on Solaris - currently an option to conf
 Dave
 
 
+
 ---
 
-Comment by drkirkby created at 2010-01-31 05:31:01
+archive/issue_comments_061152.json:
+```json
+{
+    "body": "Note, SPKG.txt has:\n\n### gdmodule-0.56.p5 (Mike Hansen, October 27th, 2009)\n* Make gdmodule work on Cygwin.\n\n### gdmodule-0.56.p5 (Michael Abshoff)\n* add .hgignore, SPKG.txt\n* clean up patches directory\n* build gdmodule against libpng12 instead of libpng (#5289)\n\nwith no entry for a p6 or p7. So this needs a bit of work, but even then, I'm unable to test on Cygwin, so you would need another reviewer too.",
+    "created_at": "2010-01-31T05:31:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7319",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7319#issuecomment-61152",
+    "user": "drkirkby"
+}
+```
 
 Note, SPKG.txt has:
 
 ### gdmodule-0.56.p5 (Mike Hansen, October 27th, 2009)
- * Make gdmodule work on Cygwin.
+* Make gdmodule work on Cygwin.
 
 ### gdmodule-0.56.p5 (Michael Abshoff)
- * add .hgignore, SPKG.txt
- * clean up patches directory
- * build gdmodule against libpng12 instead of libpng (#5289)
+* add .hgignore, SPKG.txt
+* clean up patches directory
+* build gdmodule against libpng12 instead of libpng (#5289)
 
 with no entry for a p6 or p7. So this needs a bit of work, but even then, I'm unable to test on Cygwin, so you would need another reviewer too.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-01-31 05:31:01
+archive/issue_comments_061153.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-01-31T05:31:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7319",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7319#issuecomment-61153",
+    "user": "drkirkby"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-02-05 10:35:35
+archive/issue_comments_061154.json:
+```json
+{
+    "body": "As I stated above, R also needs iconv on Solaris now - the R developers have now disabled the option to not use iconv. I've created #8191 to create an iconv package. This seems the most logical way. I can't see any possible workaround with R. \n\nDave",
+    "created_at": "2010-02-05T10:35:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7319",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7319#issuecomment-61154",
+    "user": "drkirkby"
+}
+```
 
 As I stated above, R also needs iconv on Solaris now - the R developers have now disabled the option to not use iconv. I've created #8191 to create an iconv package. This seems the most logical way. I can't see any possible workaround with R. 
 
 Dave
 
 
+
 ---
 
-Comment by drkirkby created at 2010-02-15 14:35:21
+archive/issue_comments_061155.json:
+```json
+{
+    "body": "#8191 now has an iconv package, awaiting review, so there should be no need for Mike to create an iconv package.",
+    "created_at": "2010-02-15T14:35:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7319",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7319#issuecomment-61155",
+    "user": "drkirkby"
+}
+```
 
 #8191 now has an iconv package, awaiting review, so there should be no need for Mike to create an iconv package.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-03-01 01:44:20
+archive/issue_comments_061156.json:
+```json
+{
+    "body": "#8191 now has positive review, so iconv should soon be in Sage.",
+    "created_at": "2010-03-01T01:44:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7319",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7319#issuecomment-61156",
+    "user": "drkirkby"
+}
+```
 
 #8191 now has positive review, so iconv should soon be in Sage.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-03-19 22:27:04
+archive/issue_comments_061157.json:
+```json
+{
+    "body": "Can this ticket be closed, given there is now an iconv package as a standard .spkg file in Sage? \n\ndave",
+    "created_at": "2010-03-19T22:27:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7319",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7319#issuecomment-61157",
+    "user": "drkirkby"
+}
+```
 
 Can this ticket be closed, given there is now an iconv package as a standard .spkg file in Sage? 
 
 dave
 
 
+
 ---
 
-Comment by mhansen created at 2010-03-19 23:17:22
+archive/issue_comments_061158.json:
+```json
+{
+    "body": "I'm not sure since the spkg here has other changes to it.  I'll double check.",
+    "created_at": "2010-03-19T23:17:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7319",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7319#issuecomment-61158",
+    "user": "mhansen"
+}
+```
 
 I'm not sure since the spkg here has other changes to it.  I'll double check.
 
 
+
 ---
 
-Comment by mhansen created at 2010-04-06 18:18:43
+archive/issue_comments_061159.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-04-06T18:18:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7319",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7319#issuecomment-61159",
+    "user": "mhansen"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by mhansen created at 2010-04-06 18:18:43
+archive/issue_comments_061160.json:
+```json
+{
+    "body": "There is an spkg at http://sage.math.washington.edu/home/mhansen/cygwin_port/gdmodule-0.56.p7.spkg that should be used.  This still needs a review.",
+    "created_at": "2010-04-06T18:18:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7319",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7319#issuecomment-61160",
+    "user": "mhansen"
+}
+```
 
 There is an spkg at http://sage.math.washington.edu/home/mhansen/cygwin_port/gdmodule-0.56.p7.spkg that should be used.  This still needs a review.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-04-07 13:12:39
+archive/issue_comments_061161.json:
+```json
+{
+    "body": "Has this been tested on at least one Linux, Solaris and OS X system? There are quite a few non-trivial changes here, and I am aware iconv and gd have caused problems recently, so I think we need to be especially careful this is very well tested. \n\nDave",
+    "created_at": "2010-04-07T13:12:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7319",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7319#issuecomment-61161",
+    "user": "drkirkby"
+}
+```
 
 Has this been tested on at least one Linux, Solaris and OS X system? There are quite a few non-trivial changes here, and I am aware iconv and gd have caused problems recently, so I think we need to be especially careful this is very well tested. 
 
 Dave
 
 
+
 ---
 
-Comment by mhansen created at 2010-04-07 17:31:03
+archive/issue_comments_061162.json:
+```json
+{
+    "body": "I've tested it on Cygwin and Linux.  The only change is Cygwin-specific and does not happen on any other platform.  The rest of the last commit was just checking in files to the repo that should have been but were not.",
+    "created_at": "2010-04-07T17:31:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7319",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7319#issuecomment-61162",
+    "user": "mhansen"
+}
+```
 
 I've tested it on Cygwin and Linux.  The only change is Cygwin-specific and does not happen on any other platform.  The rest of the last commit was just checking in files to the repo that should have been but were not.
 
 
+
 ---
 
-Comment by was created at 2010-04-27 00:08:30
+archive/issue_comments_061163.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-04-27T00:08:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7319",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7319#issuecomment-61163",
+    "user": "was"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by was created at 2010-04-29 05:04:54
+archive/issue_comments_061164.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-04-29T05:04:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7319",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7319#issuecomment-61164",
+    "user": "was"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by was created at 2010-06-02 02:26:15
+archive/issue_comments_061165.json:
+```json
+{
+    "body": "I'm having trouble with this on Cygwin now:\n\n```\n\nE_LIBFONTCONFIG -I/home/wstein/sage-4.4.3.alpha1/local/include -I/usr/include -I/usr/include/X11 -I/home/wstein/sage-4.4.3.al\n -c _gdmodule.c -o build/temp.cygwin-1.7.1-i686-2.6/_gdmodule.o\n_gdmodule.c:152: warning: function declaration isn\u2019t a prototype\n_gdmodule.c:169: warning: function declaration isn\u2019t a prototype\n_gdmodule.c: In function \u2018image_string\u2019:\n_gdmodule.c:993: warning: pointer targets in passing argument 5 of \u2018gdImageString\u2019 differ in signedness\n_gdmodule.c: In function \u2018image_string16\u2019:\n_gdmodule.c:1008: warning: passing argument 5 of \u2018gdImageString16\u2019 from incompatible pointer type\n_gdmodule.c: In function \u2018image_stringup\u2019:\n_gdmodule.c:1022: warning: pointer targets in passing argument 5 of \u2018gdImageStringUp\u2019 differ in signedness\n_gdmodule.c: In function \u2018image_stringup16\u2019:\n_gdmodule.c:1037: warning: passing argument 5 of \u2018gdImageStringUp16\u2019 from incompatible pointer type\ngcc -shared -Wl,--enable-auto-image-base build/temp.cygwin-1.7.1-i686-2.6/_gdmodule.o -L/home/wstein/sage-4.4.3.alpha1/local/\n1 -L/home/wstein/sage-4.4.3.alpha1/local/lib/python2.6/config -lgd -lpng12 -lz -lfreetype -liconv -lfontconfig -lpython2.6 -o\n-2.6/_gd.dll\nbuild/temp.cygwin-1.7.1-i686-2.6/_gdmodule.o: In function `write_file':\n/home/wstein/sage-4.4.3.alpha1/spkg/build/gdmodule-0.56.p7/src/_gdmodule.c:248: undefined reference to `_gdImagePngPtr'\n/home/wstein/sage-4.4.3.alpha1/spkg/build/gdmodule-0.56.p7/src/_gdmodule.c:250: undefined reference to `_gdImagePng'\nbuild/temp.cygwin-1.7.1-i686-2.6/_gdmodule.o:_gdmodule.c:(.rdata+0x7e4): undefined reference to `_gdImageCreateFromPng'\nbuild/temp.cygwin-1.7.1-i686-2.6/_gdmodule.o:_gdmodule.c:(.rdata+0x824): undefined reference to `_gdImageCreateFromPngCtx'\ncollect2: ld returned 1 exit status\nerror: command 'gcc' failed with exit status 1\nFailure to build gdmodule\n\nreal    0m3.434s\nuser    0m0.760s\nsys     0m1.991s\nsage: An error occurred while installing gdmodule-0.56.p7\n\n```\n",
+    "created_at": "2010-06-02T02:26:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7319",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7319#issuecomment-61165",
+    "user": "was"
+}
+```
 
 I'm having trouble with this on Cygwin now:
 

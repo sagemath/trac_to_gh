@@ -1,11 +1,21 @@
 # Issue 2001: --long doctests -- seven files have doctst failures in sage-2.10.rc3
 
-Issue created by migration from https://trac.sagemath.org/ticket/2001
-
-Original creator: was
-
-Original creation time: 2008-01-31 06:37:42
-
+archive/issues_002001.json:
+```json
+{
+    "body": "Assignee: failure\n\n\n```\n        sage -t -long devel/sage-main/sage/groups/perm_gps/cubegroup.py\n        sage -t -long devel/sage-main/sage/groups/group.pyx\n        sage -t -long devel/sage-main/sage/groups/matrix_gps/matrix_group.py\n        sage -t -long devel/sage-main/sage/crypto/mq/sr.py\n        sage -t -long devel/sage-main/sage/libs/pari/gen.pyx\n        sage -t -long devel/sage-main/sage/schemes/elliptic_curves/sha.py\n        sage -t -long devel/sage-main/sage/schemes/elliptic_curves/ell_number_field.py\n```\n\n\nI've attached the full test log for this run.  (I'm too tired to do more right now.)  This ticket might get busted up into several smaller ones or something...\n\nIssue created by migration from https://trac.sagemath.org/ticket/2001\n\n",
+    "created_at": "2008-01-31T06:37:42Z",
+    "labels": [
+        "doctest coverage",
+        "major",
+        "bug"
+    ],
+    "title": "--long doctests -- seven files have doctst failures in sage-2.10.rc3",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2001",
+    "user": "was"
+}
+```
 Assignee: failure
 
 
@@ -22,22 +32,61 @@ Assignee: failure
 
 I've attached the full test log for this run.  (I'm too tired to do more right now.)  This ticket might get busted up into several smaller ones or something...
 
+Issue created by migration from https://trac.sagemath.org/ticket/2001
+
+
+
+
 
 ---
+
+archive/issue_comments_012942.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-01-31T06:38:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2001",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2001#issuecomment-12942",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2008-01-31 06:40:01
+archive/issue_comments_012943.json:
+```json
+{
+    "body": "(I think the preview of the attached file is broken and only shows the second half.  So you should download the file and view it locally.)",
+    "created_at": "2008-01-31T06:40:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2001",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2001#issuecomment-12943",
+    "user": "was"
+}
+```
 
 (I think the preview of the attached file is broken and only shows the second half.  So you should download the file and view it locally.)
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-31 08:06:00
+archive/issue_comments_012944.json:
+```json
+{
+    "body": "From the above log:\n\n```\nsage -t -long devel/sage-main/sage/groups/perm_gps/cubegroup.py\nsage -t -long devel/sage-main/sage/groups/group.pyx\nsage -t -long devel/sage-main/sage/groups/matrix_gps/matrix_group.py\nsage -t -long devel/sage-main/sage/crypto/mq/sr.py\nsage -t -long devel/sage-main/sage/libs/pari/gen.pyx\nsage -t -long devel/sage-main/sage/schemes/elliptic_curves/sha.py\nsage -t -long devel/sage-main/sage/schemes/elliptic_curves/ell_number_field.py\n```\n\n`devel/sage-main/sage/crypto/mq/sr.py` works fine, it just times out. I am working on patches for some of the other issues.\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-31T08:06:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2001",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2001#issuecomment-12944",
+    "user": "mabshoff"
+}
+```
 
 From the above log:
 
@@ -58,7 +107,20 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_012945.json:
+```json
+{
+    "body": "Attachment\n\n`schemes/elliptic_curves/sha.py` also works fine, it just timed out with the 3 minute default timeout value. There is also a patch up for the `groups/matrix_gps/matrix_group.py` doctest failure.\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-31T08:17:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2001",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2001#issuecomment-12945",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -69,23 +131,58 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_012946.json:
+```json
+{
+    "body": "Attachment\n\nThe fix might be needed due to the pari 2.3.3 update.",
+    "created_at": "2008-01-31T08:32:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2001",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2001#issuecomment-12946",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 The fix might be needed due to the pari 2.3.3 update.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-31 08:34:01
+archive/issue_comments_012947.json:
+```json
+{
+    "body": "Four down, three to go. I am wandering if we shouldn't remove the two remaining `#long` from  gen.pyx since doctesting with the long option needs 12 seconds versus 5 seconds without.",
+    "created_at": "2008-01-31T08:34:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2001",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2001#issuecomment-12947",
+    "user": "mabshoff"
+}
+```
 
 Four down, three to go. I am wandering if we shouldn't remove the two remaining `#long` from  gen.pyx since doctesting with the long option needs 12 seconds versus 5 seconds without.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-31 08:37:42
+archive/issue_comments_012948.json:
+```json
+{
+    "body": "The remaining issues:\n\n```\nsage -t -long devel/sage-main/sage/groups/perm_gps/cubegroup.py\n**********************************************************************\nFile \"cubegroup.py\", line 918:\n    sage: C.solve(algorithm='gap')  # long time\nExpected:\n    'L*R'\nGot:\n    'L R'\n**********************************************************************\n```\n\nAnd:\n\n```\nsage -t -long devel/sage-main/sage/groups/group.pyx\n**********************************************************************\nFile \"group.pyx\", line 146:\n    sage: G.show3d(vertex_size=0.03, edge_size=0.01, edge_size2=0.02, vertex_colors={(1,1,1):x.vertices()}, bgcolor=(0,0,0), color_by_label=True, xres=700, yres=700, iterations=200) # long time\nException raised:\n    Traceback (most recent call last):\n      File \"/home/was/build/sage-2.10.1.rc3/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_17[6]>\", line 1, in <module>\n        G.show3d(vertex_size=RealNumber('0.03'), edge_size=RealNumber('0.01'), edge_size2=RealNumber('0.02'), vertex_colors={(Integer(1),Integer(1),Integer(1)):x.vertices()}, bgcolor=(Integer(0),Integer(0),Integer(0)), color_by_label=True, xres=Integer(700), yres=Integer(700), iterations=Integer(200)) # long time###line 146:\n    sage: G.show3d(vertex_size=0.03, edge_size=0.01, edge_size2=0.02, vertex_colors={(1,1,1):x.vertices()}, bgcolor=(0,0,0), color_by_label=True, xres=700, yres=700, iterations=200) # long time\n    AttributeError: 'SymbolicVariable' object has no attribute 'vertices'\n**********************************************************************\n```\n\nFinally:\n\n```\nsage -t -long devel/sage-main/sage/schemes/elliptic_curves/ell_number_field.py\n**********************************************************************\nFile \"ell_number_field.py\", line 137:\n    sage: v = E.simon_two_descent(); v  # long time\nExpected:\n    (1, -1, [])\nGot:\n    (1, 3, [(-4 : -3/2*a + 3/2 : 1), (8 : 18 : 1), (15/32*a - 59/32 : -75/128*a + 519/128 : 1), (-286/361 : -7215/13718*a - 75/722 : 1), (15/8*a + 19/8 : -105/16*a + 3/16 : 1), (-2 : 3 : 1)])\n**********************************************************************\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-31T08:37:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2001",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2001#issuecomment-12948",
+    "user": "mabshoff"
+}
+```
 
 The remaining issues:
 
@@ -139,14 +236,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by was created at 2008-02-02 09:34:16
+archive/issue_comments_012949.json:
+```json
+{
+    "body": "this fixes all remaining problems (I claim, and have tested fairly carefully)",
+    "created_at": "2008-02-02T09:34:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2001",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2001#issuecomment-12949",
+    "user": "was"
+}
+```
 
 this fixes all remaining problems (I claim, and have tested fairly carefully)
 
 
+
 ---
+
+archive/issue_comments_012950.json:
+```json
+{
+    "body": "Attachment\n\nAll three patches look good, i.e. was reviewed mine and the other way around.\n\nCheers,\n\nMichael",
+    "created_at": "2008-02-02T09:51:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2001",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2001#issuecomment-12950",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -157,15 +278,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-02 09:52:03
+archive/issue_comments_012951.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-02-02T09:52:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2001",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2001#issuecomment-12951",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-02 09:52:03
+archive/issue_comments_012952.json:
+```json
+{
+    "body": "Merged all three patches in Sage 2.10.1.rc5",
+    "created_at": "2008-02-02T09:52:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2001",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2001#issuecomment-12952",
+    "user": "mabshoff"
+}
+```
 
 Merged all three patches in Sage 2.10.1.rc5

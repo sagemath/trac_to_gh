@@ -1,25 +1,61 @@
 # Issue 6248: remove executable bits from sage-README-osx.txt
 
-Issue created by migration from https://trac.sagemath.org/ticket/6248
-
-Original creator: ddrake
-
-Original creation time: 2009-06-08 14:41:05
-
+archive/issues_006248.json:
+```json
+{
+    "body": "Assignee: tbd\n\nThe file sage-README-osx.txt in SAGE_ROOT has mode 755, which is silly for a text file. Someone in charge of the \"official\" tarball should run a \"chmod 644\" on that file so it's not executable.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6248\n\n",
+    "created_at": "2009-06-08T14:41:05Z",
+    "labels": [
+        "distribution",
+        "trivial",
+        "enhancement"
+    ],
+    "title": "remove executable bits from sage-README-osx.txt",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6248",
+    "user": "ddrake"
+}
+```
 Assignee: tbd
 
 The file sage-README-osx.txt in SAGE_ROOT has mode 755, which is silly for a text file. Someone in charge of the "official" tarball should run a "chmod 644" on that file so it's not executable.
 
+Issue created by migration from https://trac.sagemath.org/ticket/6248
+
+
+
+
 
 ---
 
-Comment by craigcitro created at 2009-06-18 10:32:06
+archive/issue_comments_049904.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-06-18T10:32:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6248",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6248#issuecomment-49904",
+    "user": "craigcitro"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by craigcitro created at 2009-06-18 10:32:06
+archive/issue_comments_049905.json:
+```json
+{
+    "body": "Done.",
+    "created_at": "2009-06-18T10:32:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6248",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6248#issuecomment-49905",
+    "user": "craigcitro"
+}
+```
 
 Done.

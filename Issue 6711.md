@@ -1,25 +1,63 @@
 # Issue 6711: spell-check all modules under sage/
 
-Issue created by migration from https://trac.sagemath.org/ticket/6711
-
-Original creator: mvngu
-
-Original creation time: 2009-08-09 11:46:27
-
+archive/issues_006711.json:
+```json
+{
+    "body": "Assignee: tba\n\nAs the subject says.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6711\n\n",
+    "created_at": "2009-08-09T11:46:27Z",
+    "labels": [
+        "documentation",
+        "major",
+        "bug"
+    ],
+    "title": "spell-check all modules under sage/",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6711",
+    "user": "mvngu"
+}
+```
 Assignee: tba
 
 As the subject says.
 
+Issue created by migration from https://trac.sagemath.org/ticket/6711
+
+
+
+
 
 ---
+
+archive/issue_comments_055105.json:
+```json
+{
+    "body": "Attachment\n\nbased on Sage 4.1.1.rc2",
+    "created_at": "2009-08-11T11:40:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6711",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6711#issuecomment-55105",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
 based on Sage 4.1.1.rc2
 
 
+
 ---
 
-Comment by mvngu created at 2009-08-12 06:23:34
+archive/issue_comments_055106.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-08-12T06:23:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6711",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6711#issuecomment-55106",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 4941: pari list slicing is extremely slow -- make it much faster
 
-Issue created by migration from https://trac.sagemath.org/ticket/4941
-
-Original creator: was
-
-Original creation time: 2009-01-05 17:10:35
-
+archive/issues_004941.json:
+```json
+{
+    "body": "Assignee: was\n\nThe following illustrates that list slicing in Pari is ridiculously slow.\n\n\n```\nsage: time p=pari.prime_list(10^6)\nCPU times: user 0.06 s, sys: 0.02 s, total: 0.08 s\nWall time: 0.09 s\nsage: len(p)\n1000000\nsage: time c=p[0:]\nCPU times: user 45.05 s, sys: 0.54 s, total: 45.59 s\nWall time: 46.20 s\n```\n\n\nThe code responsible for this is in pari/gen.pyx (line 825 in sage-3.2.3) in __getitem__:\n\n```\n        elif PyObject_TypeCheck(n, slice):\n            l = glength(self.g)\n            inds = _normalize_slice(n, l)\n            k = len(inds)\n            v = P.vector(k)\n            for i in range(k):\n                v[i] = self[inds[i]]\n            return v\n```\n\n\nThere must be dramatically faster ways to do a list slice in pari than the above.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4941\n\n",
+    "created_at": "2009-01-05T17:10:35Z",
+    "labels": [
+        "interfaces",
+        "major",
+        "enhancement"
+    ],
+    "title": "pari list slicing is extremely slow -- make it much faster",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4941",
+    "user": "was"
+}
+```
 Assignee: was
 
 The following illustrates that list slicing in Pari is ridiculously slow.
@@ -41,10 +51,25 @@ There must be dramatically faster ways to do a list slice in pari than the above
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4941
+
+
+
+
 
 ---
 
-Comment by ylchapuy created at 2009-01-19 20:51:35
+archive/issue_comments_037496.json:
+```json
+{
+    "body": "in GP I would do something like\n\n```\nu=start-step; v=vector(k,unused,p[u+=step])\n```\n\n\nbut I don't know how to translate this...\n\notherwise for big blocks,\n\n```\np.vecextract('\"150..10000\"')\n```\n\nmight be faster",
+    "created_at": "2009-01-19T20:51:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4941",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4941#issuecomment-37496",
+    "user": "ylchapuy"
+}
+```
 
 in GP I would do something like
 
@@ -64,30 +89,74 @@ p.vecextract('"150..10000"')
 might be faster
 
 
+
 ---
 
-Comment by ylchapuy created at 2009-01-20 18:46:10
+archive/issue_comments_037497.json:
+```json
+{
+    "body": "This patch solves only the easy part of the problem, for slices of type [::1] or [::-1], still better than nothing.",
+    "created_at": "2009-01-20T18:46:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4941",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4941#issuecomment-37497",
+    "user": "ylchapuy"
+}
+```
 
 This patch solves only the easy part of the problem, for slices of type [::1] or [::-1], still better than nothing.
 
 
+
 ---
 
-Comment by ylchapuy created at 2009-01-20 18:47:47
+archive/issue_comments_037498.json:
+```json
+{
+    "body": "oh, and it needs to be applied after patching #4974",
+    "created_at": "2009-01-20T18:47:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4941",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4941#issuecomment-37498",
+    "user": "ylchapuy"
+}
+```
 
 oh, and it needs to be applied after patching #4974
 
 
+
 ---
 
-Comment by ylchapuy created at 2009-01-20 20:40:12
+archive/issue_comments_037499.json:
+```json
+{
+    "body": "I removed my broken patch",
+    "created_at": "2009-01-20T20:40:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4941",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4941#issuecomment-37499",
+    "user": "ylchapuy"
+}
+```
 
 I removed my broken patch
 
 
+
 ---
 
-Comment by ylchapuy created at 2009-01-21 08:50:47
+archive/issue_comments_037500.json:
+```json
+{
+    "body": "corrected patch, sorry for the spam...\n\nit uses vecextract when possible.\n\nall tests pass",
+    "created_at": "2009-01-21T08:50:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4941",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4941#issuecomment-37500",
+    "user": "ylchapuy"
+}
+```
 
 corrected patch, sorry for the spam...
 
@@ -96,22 +165,57 @@ it uses vecextract when possible.
 all tests pass
 
 
+
 ---
+
+archive/issue_comments_037501.json:
+```json
+{
+    "body": "Attachment\n\nfor polynomials, slicing for generic polynomials returns a polynomial, whereas with pari it returns a vector. I think we should change this behavior.",
+    "created_at": "2009-01-21T12:54:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4941",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4941#issuecomment-37501",
+    "user": "ylchapuy"
+}
+```
 
 Attachment
 
 for polynomials, slicing for generic polynomials returns a polynomial, whereas with pari it returns a vector. I think we should change this behavior.
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-05 18:46:34
+archive/issue_comments_037502.json:
+```json
+{
+    "body": "Looks good to me. If we want to change the behavior, then I would make that a seperate ticket.",
+    "created_at": "2009-10-05T18:46:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4941",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4941#issuecomment-37502",
+    "user": "mhansen"
+}
+```
 
 Looks good to me. If we want to change the behavior, then I would make that a seperate ticket.
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-15 05:25:28
+archive/issue_comments_037503.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-10-15T05:25:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4941",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4941#issuecomment-37503",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

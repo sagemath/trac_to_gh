@@ -1,18 +1,43 @@
 # Issue 9732: don't delete interact output when auto_update=False
 
-Issue created by migration from https://trac.sagemath.org/ticket/9732
-
-Original creator: jason
-
-Original creation time: 2010-08-12 06:38:10
-
+archive/issues_009732.json:
+```json
+{
+    "body": "Assignee: jason, was\n\nThis was from sage-devel on 14 Jul.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9732\n\n",
+    "created_at": "2010-08-12T06:38:10Z",
+    "labels": [
+        "notebook",
+        "major",
+        "enhancement"
+    ],
+    "title": "don't delete interact output when auto_update=False",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9732",
+    "user": "jason"
+}
+```
 Assignee: jason, was
 
 This was from sage-devel on 14 Jul.
 
+Issue created by migration from https://trac.sagemath.org/ticket/9732
+
+
+
+
 
 ---
 
-Comment by jdemeyer created at 2017-07-04 13:52:37
+archive/issue_comments_095116.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2017-07-04T13:52:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9732",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9732#issuecomment-95116",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: invalid

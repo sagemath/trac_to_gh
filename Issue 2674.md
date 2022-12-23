@@ -1,11 +1,21 @@
 # Issue 2674: Bug in modforms
 
-Issue created by migration from https://trac.sagemath.org/ticket/2674
-
-Original creator: justin
-
-Original creation time: 2008-03-26 16:37:12
-
+archive/issues_002674.json:
+```json
+{
+    "body": "Assignee: was\n\nReported by Jay Pottharst <sharlaon`@`gmail.com>:\n\n```\nsage: b=CuspForms(22).basis()\nsage: sum(b)\nTraceback (most recent call last):\n...\nNameError: global name 'other' is not defined\n```\n\nThis covers up a possibly larger problem:\n\n```\nsage: ssum=0\nsage: for u in b:\n...     ssum=(ssum+u)\n...\nTraceback (most recent call last):\n...\nTypeError: unsupported operand parent(s) for '+': 'Integer Ring' and\n'Cuspidal subspace of dimension 2 of Modular Forms space of dimension\n5 for Congruence Subgroup Gamma0(22) of weight 2 over Rational Field'\n```\n\n\nThe first problem is easily fixed.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2674\n\n",
+    "created_at": "2008-03-26T16:37:12Z",
+    "labels": [
+        "modular forms",
+        "major",
+        "bug"
+    ],
+    "title": "Bug in modforms",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2674",
+    "user": "justin"
+}
+```
 Assignee: was
 
 Reported by Jay Pottharst <sharlaon`@`gmail.com>:
@@ -37,15 +47,43 @@ The first problem is easily fixed.
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2674
+
+
+
+
 
 ---
 
-Comment by justin created at 2008-03-26 16:37:49
+archive/issue_comments_018400.json:
+```json
+{
+    "body": "Fix for the first of the two reported problms.",
+    "created_at": "2008-03-26T16:37:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2674",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2674#issuecomment-18400",
+    "user": "justin"
+}
+```
 
 Fix for the first of the two reported problms.
 
 
+
 ---
+
+archive/issue_comments_018401.json:
+```json
+{
+    "body": "Attachment\n\nI disagree that the second issue is a bug:\n\n```\n\nNote that \n\n  b[0] + 0\n\nand \n\n  0 + b[0]\n\nshould *not* work, since in each case that's a canonical coercion,\nand there is no natural map from ZZ (the parent of 0) into CuspForms(...)\nfor any weight except 0.   In Sage coercions should not happen automatically\nunless they are in some way natural and well defined on the whole domain\nof the coercion (in this case ZZ).\n```\n",
+    "created_at": "2008-03-26T18:03:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2674",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2674#issuecomment-18401",
+    "user": "was"
+}
+```
 
 Attachment
 
@@ -70,7 +108,20 @@ of the coercion (in this case ZZ).
 
 
 
+
 ---
+
+archive/issue_comments_018402.json:
+```json
+{
+    "body": "Attachment\n\nThis new patch fixes the first issue reported above, as well as making the natural coercion from a subspace of modular forms into its parent work. \n\nInterestingly, this makes the second issue work, too.\n\nSo I'm not sure whether or not I like that this second issue works, because I agree with William's point that it should only work if there is a coercion from ZZ to a space of ModularForms. However, it's working \"for free\" for us, because it ultimately uses that the following works:\n\n\n```\nsage: M = ZZ**5\nsage: M(0)\n(0, 0, 0, 0, 0)\nsage: M(1)\n...\n<type 'exceptions.TypeError'>: can't initialize vector from nonzero non-list\n```\n\n\nThe issue is that a free module knows how to coerce 0 in, but no other integer (even when the module is rank 1 over ZZ, which I think is a good thing). So we could easily change it to make William's expectations correct by changing free modules, where the same issue arises.",
+    "created_at": "2008-03-26T18:34:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2674",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2674#issuecomment-18402",
+    "user": "craigcitro"
+}
+```
 
 Attachment
 
@@ -94,43 +145,111 @@ sage: M(1)
 The issue is that a free module knows how to coerce 0 in, but no other integer (even when the module is rank 1 over ZZ, which I think is a good thing). So we could easily change it to make William's expectations correct by changing free modules, where the same issue arises.
 
 
+
 ---
 
-Comment by craigcitro created at 2008-03-26 22:56:23
+archive/issue_comments_018403.json:
+```json
+{
+    "body": "Changing assignee from was to craigcitro.",
+    "created_at": "2008-03-26T22:56:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2674",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2674#issuecomment-18403",
+    "user": "craigcitro"
+}
+```
 
 Changing assignee from was to craigcitro.
 
 
+
 ---
+
+archive/issue_comments_018404.json:
+```json
+{
+    "body": "Attachment\n\nApply the bottom two patches in order, and this should also make coercion from `ModularForms(Gamma0(N))` to `ModularForms(Gamma0(Nd))` work. Note that it's currently *not* going to work involving `Gamma1(N)` -- this is because of a bug in `sturm_bound` (namely that it assumes it's working on `Gamma0`); I'm going to file another ticket for this, because I don't have time to fix it right now.",
+    "created_at": "2008-03-26T22:56:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2674",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2674#issuecomment-18404",
+    "user": "craigcitro"
+}
+```
 
 Attachment
 
 Apply the bottom two patches in order, and this should also make coercion from `ModularForms(Gamma0(N))` to `ModularForms(Gamma0(Nd))` work. Note that it's currently *not* going to work involving `Gamma1(N)` -- this is because of a bug in `sturm_bound` (namely that it assumes it's working on `Gamma0`); I'm going to file another ticket for this, because I don't have time to fix it right now.
 
 
+
 ---
 
-Comment by craigcitro created at 2008-03-26 22:56:23
+archive/issue_comments_018405.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-03-26T22:56:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2674",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2674#issuecomment-18405",
+    "user": "craigcitro"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by robertwb created at 2008-03-26 23:12:57
+archive/issue_comments_018406.json:
+```json
+{
+    "body": "Nice work. Apply only the second two patches in order (they do more than just fix this bug).",
+    "created_at": "2008-03-26T23:12:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2674",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2674#issuecomment-18406",
+    "user": "robertwb"
+}
+```
 
 Nice work. Apply only the second two patches in order (they do more than just fix this bug).
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-26 23:18:21
+archive/issue_comments_018407.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-03-26T23:18:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2674",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2674#issuecomment-18407",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-26 23:18:21
+archive/issue_comments_018408.json:
+```json
+{
+    "body": "Merged trac-2674.patch and trac-2674-pt2.patch in Sage 2.11.alpha2",
+    "created_at": "2008-03-26T23:18:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2674",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2674#issuecomment-18408",
+    "user": "mabshoff"
+}
+```
 
 Merged trac-2674.patch and trac-2674-pt2.patch in Sage 2.11.alpha2

@@ -1,47 +1,116 @@
 # Issue 8704: Improve the _repr_ of IntegerRange
 
-Issue created by migration from https://trac.sagemath.org/ticket/8704
-
-Original creator: hivert
-
-Original creation time: 2010-04-17 09:53:05
-
+archive/issues_008704.json:
+```json
+{
+    "body": "Assignee: hivert\n\nThe actual printing in in discussion on [this thread](http://groups.google.com/group/sage-combinat-devel/browse_thread/thread/5ff945e9d813392c) of sage-combinat-devel. I'll implement it as soon as the decision is made.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8704\n\n",
+    "created_at": "2010-04-17T09:53:05Z",
+    "labels": [
+        "combinatorics",
+        "major",
+        "bug"
+    ],
+    "title": "Improve the _repr_ of IntegerRange",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8704",
+    "user": "hivert"
+}
+```
 Assignee: hivert
 
 The actual printing in in discussion on [this thread](http://groups.google.com/group/sage-combinat-devel/browse_thread/thread/5ff945e9d813392c) of sage-combinat-devel. I'll implement it as soon as the decision is made.
 
+Issue created by migration from https://trac.sagemath.org/ticket/8704
+
+
+
+
 
 ---
 
-Comment by hivert created at 2010-05-13 17:56:08
+archive/issue_comments_079395.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-05-13T17:56:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8704",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8704#issuecomment-79395",
+    "user": "hivert"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by hivert created at 2010-05-13 17:56:08
+archive/issue_comments_079396.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"integer range\".",
+    "created_at": "2010-05-13T17:56:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8704",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8704#issuecomment-79396",
+    "user": "hivert"
+}
+```
 
 Changing keywords from "" to "integer range".
 
 
+
 ---
 
-Comment by hivert created at 2010-05-13 17:56:08
+archive/issue_comments_079397.json:
+```json
+{
+    "body": "Changing type from defect to enhancement.",
+    "created_at": "2010-05-13T17:56:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8704",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8704#issuecomment-79397",
+    "user": "hivert"
+}
+```
 
 Changing type from defect to enhancement.
 
 
+
 ---
 
-Comment by hivert created at 2010-05-15 17:05:50
+archive/issue_comments_079398.json:
+```json
+{
+    "body": "I fixed a doctest failure... All tests should pass now.",
+    "created_at": "2010-05-15T17:05:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8704",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8704#issuecomment-79398",
+    "user": "hivert"
+}
+```
 
 I fixed a doctest failure... All tests should pass now.
 
 
+
 ---
 
-Comment by hivert created at 2010-05-31 21:51:17
+archive/issue_comments_079399.json:
+```json
+{
+    "body": "I fixed the following issues raised by Nicolas on sage-combinat-devel\n\n```\n> >> The output of IntegerRange is much nicer now. I was about to put a\n> >> positive review, when I had a last doubt about the consistency between:\n> >>\n> >>      sage: I = IntegerRange(2,100,5); I\n> >>      {2, 7 .. 97}\n> >>      sage: I = IntegerRange(54,Infinity,3); I\n> >>      {54, 57, ..}\n> >>\n> >> Should there be a comma in both cases, in none, or is it good as is?\n> >\n> > I would say {2, 7 .. 97} should be replaced by {2, 7, .., 97} for\n> > consistency.\n```\n",
+    "created_at": "2010-05-31T21:51:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8704",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8704#issuecomment-79399",
+    "user": "hivert"
+}
+```
 
 I fixed the following issues raised by Nicolas on sage-combinat-devel
 
@@ -62,27 +131,73 @@ I fixed the following issues raised by Nicolas on sage-combinat-devel
 
 
 
+
 ---
+
+archive/issue_comments_079400.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-05-31T21:51:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8704",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8704#issuecomment-79400",
+    "user": "hivert"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2010-06-06 08:34:51
+archive/issue_comments_079401.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-06-06T08:34:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8704",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8704#issuecomment-79401",
+    "user": "mhansen"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mhansen created at 2010-06-06 08:34:51
+archive/issue_comments_079402.json:
+```json
+{
+    "body": "Looks good to me.",
+    "created_at": "2010-06-06T08:34:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8704",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8704#issuecomment-79402",
+    "user": "mhansen"
+}
+```
 
 Looks good to me.
 
 
+
 ---
 
-Comment by mhansen created at 2010-06-06 08:35:05
+archive/issue_comments_079403.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-06-06T08:35:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8704",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8704#issuecomment-79403",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

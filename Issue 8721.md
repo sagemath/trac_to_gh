@@ -1,11 +1,21 @@
 # Issue 8721: Residue fields for relative number fields broken (again)
 
-Issue created by migration from https://trac.sagemath.org/ticket/8721
-
-Original creator: davidloeffler
-
-Original creation time: 2010-04-20 08:57:22
-
+archive/issues_008721.json:
+```json
+{
+    "body": "Assignee: davidloeffler\n\n\n```\nsage: L.<a, b> = NumberField([x^2 - 3, x^2 - 5])\nsage: L.ideal(a).residue_field()\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (921, 0))\n\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/masiao/<ipython console> in <module>()\n\n/storage/masiao/sage-4.4.alpha0/local/lib/python2.6/site-packages/sage/rings/number_field/number_field_ideal.pyc in residue_field(self, names)\n   2372         if not self.is_prime():\n   2373             raise ValueError, \"The ideal must be prime\"\n-> 2374         return self.number_field().residue_field(self, names = names)\n   2375 \n   2376     def residue_class_degree(self):\n\n/storage/masiao/sage-4.4.alpha0/local/lib/python2.6/site-packages/sage/rings/number_field/number_field.pyc in residue_field(self, prime, names, check)\n   4171             raise ValueError, \"%s is not a prime ideal\"%prime\n   4172         from sage.rings.residue_field import ResidueField\n-> 4173         return ResidueField(prime, names = names, check = False)\n   4174 \n   4175     def signature(self):\n\n/storage/masiao/sage-4.4.alpha0/local/lib/python2.6/site-packages/sage/rings/residue_field.so in sage.rings.residue_field.ResidueField (sage/rings/residue_field.c:4132)()\n\n/storage/masiao/sage-4.4.alpha0/local/lib/python2.6/site-packages/sage/rings/number_field/number_field_ideal.pyc in __call__(self, x)\n   2476         # Write back in terms of K\n   2477         z = w * self.__M_OK_map\n-> 2478         return self.__OK(z.list())\n   2479 \n   2480     def __repr__(self):\n\n/storage/masiao/sage-4.4.alpha0/local/lib/python2.6/site-packages/sage/rings/number_field/order.pyc in __call__(self, x)\n   1399         \"\"\"\n   1400 \n-> 1401         x = self._K(x)\n   1402         abs_order = self._absolute_order\n   1403         to_abs = abs_order._K.structure()[1]\n\n/storage/masiao/sage-4.4.alpha0/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:6161)()\n\n/storage/masiao/sage-4.4.alpha0/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3109)()\n\n/storage/masiao/sage-4.4.alpha0/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3011)()\n\n/storage/masiao/sage-4.4.alpha0/local/lib/python2.6/site-packages/sage/rings/number_field/number_field.pyc in _element_constructor_(self, x)\n   1019                  self.base_ring().has_coerce_map_from(x.parent().base_ring())):\n   1020             if len(x) != self.relative_degree():\n-> 1021                 raise ValueError, \"Length must be equal to the degree of this number field\"\n   1022             result = x[0]\n   1023             for i in xrange(1,self.relative_degree()):\n\nValueError: Length must be equal to the degree of this number field\n```\n\nWe've had problems with similar issues before -- see #6463 -- and the doctest I added back then shows that not all relative residue fields are broken; but this one seems to be!\n\nIssue created by migration from https://trac.sagemath.org/ticket/8721\n\n",
+    "created_at": "2010-04-20T08:57:22Z",
+    "labels": [
+        "number fields",
+        "major",
+        "bug"
+    ],
+    "title": "Residue fields for relative number fields broken (again)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8721",
+    "user": "davidloeffler"
+}
+```
 Assignee: davidloeffler
 
 
@@ -69,42 +79,114 @@ ValueError: Length must be equal to the degree of this number field
 
 We've had problems with similar issues before -- see #6463 -- and the doctest I added back then shows that not all relative residue fields are broken; but this one seems to be!
 
+Issue created by migration from https://trac.sagemath.org/ticket/8721
+
+
+
+
 
 ---
 
-Comment by davidloeffler created at 2011-01-25 17:15:31
+archive/issue_comments_079644.json:
+```json
+{
+    "body": "Here's a patch.",
+    "created_at": "2011-01-25T17:15:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8721",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8721#issuecomment-79644",
+    "user": "davidloeffler"
+}
+```
 
 Here's a patch.
 
 
+
 ---
 
-Comment by davidloeffler created at 2011-01-25 17:15:31
+archive/issue_comments_079645.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2011-01-25T17:15:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8721",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8721#issuecomment-79645",
+    "user": "davidloeffler"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_079646.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2011-01-25T17:18:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8721",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8721#issuecomment-79646",
+    "user": "davidloeffler"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mstreng created at 2011-01-27 16:46:03
+archive/issue_comments_079647.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2011-01-27T16:46:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8721",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8721#issuecomment-79647",
+    "user": "mstreng"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mstreng created at 2011-01-27 16:46:03
+archive/issue_comments_079648.json:
+```json
+{
+    "body": "fixes at least this example, all tests pass, and everything I tried worked",
+    "created_at": "2011-01-27T16:46:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8721",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8721#issuecomment-79648",
+    "user": "mstreng"
+}
+```
 
 fixes at least this example, all tests pass, and everything I tried worked
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-02-07 08:14:28
+archive/issue_comments_079649.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2011-02-07T08:14:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8721",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8721#issuecomment-79649",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: fixed

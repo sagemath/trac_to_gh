@@ -1,11 +1,21 @@
 # Issue 6008: Improved efficiency  of elliptic curve torsion computation
 
-Issue created by migration from https://trac.sagemath.org/ticket/6008
-
-Original creator: cremona
-
-Original creation time: 2009-05-08 16:49:38
-
+archive/issues_006008.json:
+```json
+{
+    "body": "Assignee: was\n\nKeywords: elliptic curve torsion\n\nThis patch makes an improvement to the efficiency of elliptic curve torsion subgroup computation (over number fields).\n\nI noticed something in the code I wrote which can be improved.  This\nis something which was not in Chris Wuthrich's original\nimplementation, so it is my fault.\n\nHere's what we do:  (1) find an upper bound on the torsion order, i.e.\na positive integer N such that the torsion order is certainly a\ndivisor of N.  This uses the function _torsion_bound() in\nell_number_field.py.    (2) For each prime dividing N, find a basis\nfor  the p-primary torsion.  This is done in\n_p_primary_torsion_basis() in ell_generic.py.  (3) Put together the\nprimary parts.\n\nHere's the inefficiency.  In step (2) I ignore the bound we have on\nthe exponent of each prime.  This wastes time in computing the\np-primary torsion basis.  So I will change the function\n_p_primary_torsion_basis() to take an optional parameter which is a\nbound on the  exponent of the order (not the exponent of the p-primary\nsubgroup).\n\ne.g. in Jim's example, the bound is 49 and the actual torion is C7xC7. But when we compute the 7-primary torsion, after finding that the 7-torsion is complete and of order 49, we do not stop, but test 8 points in the 7-torsion subgroup to see if they can be divided further by 7.  that last part is obiously a waste of time since we have already reached the bound.\n\nBefore: Jim's example took 12.64s.  After: 9.73s.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6008\n\n",
+    "created_at": "2009-05-08T16:49:38Z",
+    "labels": [
+        "number theory",
+        "minor",
+        "enhancement"
+    ],
+    "title": "Improved efficiency  of elliptic curve torsion computation",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6008",
+    "user": "cremona"
+}
+```
 Assignee: was
 
 Keywords: elliptic curve torsion
@@ -35,56 +45,137 @@ e.g. in Jim's example, the bound is 49 and the actual torion is C7xC7. But when 
 
 Before: Jim's example took 12.64s.  After: 9.73s.
 
+Issue created by migration from https://trac.sagemath.org/ticket/6008
+
+
+
+
 
 ---
 
-Comment by stankewicz created at 2009-05-09 18:01:53
+archive/issue_comments_047804.json:
+```json
+{
+    "body": "Doctests all came out clean.\n\nMoreover the example given took 71 seconds in 3.4.2 on my travel notebook before the patch and 62 seconds after the patch.",
+    "created_at": "2009-05-09T18:01:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6008",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6008#issuecomment-47804",
+    "user": "stankewicz"
+}
+```
 
 Doctests all came out clean.
 
 Moreover the example given took 71 seconds in 3.4.2 on my travel notebook before the patch and 62 seconds after the patch.
 
 
+
 ---
 
-Comment by cremona created at 2009-05-09 19:24:16
+archive/issue_comments_047805.json:
+```json
+{
+    "body": "Thanks Jim -- you could give the patch a positive review now, and it might get into Sage 4.0 which is out soon!",
+    "created_at": "2009-05-09T19:24:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6008",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6008#issuecomment-47805",
+    "user": "cremona"
+}
+```
 
 Thanks Jim -- you could give the patch a positive review now, and it might get into Sage 4.0 which is out soon!
 
 
+
 ---
 
-Comment by stankewicz created at 2009-05-09 21:15:53
+archive/issue_comments_047806.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-05-09T21:15:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6008",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6008#issuecomment-47806",
+    "user": "stankewicz"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by stankewicz created at 2009-05-09 21:18:56
+archive/issue_comments_047807.json:
+```json
+{
+    "body": "Changing status from closed to reopened.",
+    "created_at": "2009-05-09T21:18:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6008",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6008#issuecomment-47807",
+    "user": "stankewicz"
+}
+```
 
 Changing status from closed to reopened.
 
 
+
 ---
 
-Comment by stankewicz created at 2009-05-09 21:18:56
+archive/issue_comments_047808.json:
+```json
+{
+    "body": "Resolution changed from fixed to ",
+    "created_at": "2009-05-09T21:18:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6008",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6008#issuecomment-47808",
+    "user": "stankewicz"
+}
+```
 
 Resolution changed from fixed to 
 
 
+
 ---
 
-Comment by cremona created at 2009-05-09 21:44:12
+archive/issue_comments_047809.json:
+```json
+{
+    "body": "Replying to [comment:5 stankewicz]:\n\nThanks for the positive review.  [Only Michael Abshoff changes the status to \"fixed\", when the patch has been merged in the next release.]",
+    "created_at": "2009-05-09T21:44:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6008",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6008#issuecomment-47809",
+    "user": "cremona"
+}
+```
 
 Replying to [comment:5 stankewicz]:
 
 Thanks for the positive review.  [Only Michael Abshoff changes the status to "fixed", when the patch has been merged in the next release.]
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-10 04:17:52
+archive/issue_comments_047810.json:
+```json
+{
+    "body": "The hunk in this patch changing `sage/version.py` needs to be removed before merging the patch since it will cause rejects and should have never been part of the patch to begin with ;)\n\nThanks for reopening - I think it is pretty clear in the trac guidelines not to close tickets, but it happens on occasion by new reviewers.\n\nCheers,\n\nMichael",
+    "created_at": "2009-05-10T04:17:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6008",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6008#issuecomment-47810",
+    "user": "mabshoff"
+}
+```
 
 The hunk in this patch changing `sage/version.py` needs to be removed before merging the patch since it will cause rejects and should have never been part of the patch to begin with ;)
 
@@ -95,16 +186,40 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_047811.json:
+```json
+{
+    "body": "Attachment\n\nReplace previous one with this",
+    "created_at": "2009-05-10T08:07:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6008",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6008#issuecomment-47811",
+    "user": "cremona"
+}
+```
 
 Attachment
 
 Replace previous one with this
 
 
+
 ---
 
-Comment by cremona created at 2009-05-10 08:08:02
+archive/issue_comments_047812.json:
+```json
+{
+    "body": "Replying to [comment:7 mabshoff]:\n> The hunk in this patch changing `sage/version.py` needs to be removed before merging the patch since it will cause rejects and should have never been part of the patch to begin with ;)\n\nDone -- I have no idea how that got in there!  Soory\n\n> \n> Thanks for reopening - I think it is pretty clear in the trac guidelines not to close tickets, but it happens on occasion by new reviewers.\n> \n> Cheers,\n> \n> Michael",
+    "created_at": "2009-05-10T08:08:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6008",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6008#issuecomment-47812",
+    "user": "cremona"
+}
+```
 
 Replying to [comment:7 mabshoff]:
 > The hunk in this patch changing `sage/version.py` needs to be removed before merging the patch since it will cause rejects and should have never been part of the patch to begin with ;)
@@ -119,9 +234,20 @@ Done -- I have no idea how that got in there!  Soory
 > Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-12 21:03:35
+archive/issue_comments_047813.json:
+```json
+{
+    "body": "Merged in Sage 4.0.alpha0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-05-12T21:03:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6008",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6008#issuecomment-47813",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 4.0.alpha0.
 
@@ -130,8 +256,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-12 21:03:35
+archive/issue_comments_047814.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-05-12T21:03:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6008",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6008#issuecomment-47814",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

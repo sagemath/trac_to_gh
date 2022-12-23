@@ -1,11 +1,21 @@
 # Issue 9749: huge performance regression in computing with level one modular forms
 
-Issue created by migration from https://trac.sagemath.org/ticket/9749
-
-Original creator: was
-
-Original creation time: 2010-08-14 19:06:36
-
+archive/issues_009749.json:
+```json
+{
+    "body": "Assignee: craigcitro\n\nCC:  alexghitza craigcitro\n\nI was working on the Ribet-Stein book, and a computation that is trivial in Magma, and must have been trivial in Sage until recently is now impossibly hard.\n\n\n```\nsage: M = ModularForms(1,512)\nsage: time M.hecke_matrix(5)\n[[takes a very, very long time indeed.]]\n```\n\nThis is very sad, since M has dimension only 43. Also, it is easy to get the answer directly --from start to finish in less than a second! -- as follows:\n\n```\nsage: time B = victor_miller_basis(512,5*43+1)\nCPU times: user 0.21 s, sys: 0.00 s, total: 0.21 s\nWall time: 0.21 s\nsage: time t5 = hecke_operator_on_basis(B, 5, 512)\nCPU times: user 0.61 s, sys: 0.00 s, total: 0.61 s\nWall time: 0.61 s\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9749\n\n",
+    "created_at": "2010-08-14T19:06:36Z",
+    "labels": [
+        "modular forms",
+        "major",
+        "bug"
+    ],
+    "title": "huge performance regression in computing with level one modular forms",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9749",
+    "user": "was"
+}
+```
 Assignee: craigcitro
 
 CC:  alexghitza craigcitro
@@ -32,54 +42,150 @@ Wall time: 0.61 s
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/9749
+
+
+
+
 
 ---
+
+archive/issue_comments_095473.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-08-31T08:55:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9749",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9749#issuecomment-95473",
+    "user": "AlexGhitza"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by AlexGhitza created at 2010-08-31 08:56:48
+archive/issue_comments_095474.json:
+```json
+{
+    "body": "The attached patch makes ambient spaces of level 1 modular forms use the Victor Miller basis for Hecke matrix computations.",
+    "created_at": "2010-08-31T08:56:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9749",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9749#issuecomment-95474",
+    "user": "AlexGhitza"
+}
+```
 
 The attached patch makes ambient spaces of level 1 modular forms use the Victor Miller basis for Hecke matrix computations.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2010-08-31 08:56:48
+archive/issue_comments_095475.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-08-31T08:56:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9749",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9749#issuecomment-95475",
+    "user": "AlexGhitza"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by was created at 2010-09-07 17:16:36
+archive/issue_comments_095476.json:
+```json
+{
+    "body": "Positive review.  Note -- I made a new patch that fixes a typo: \"Endusers\" --> \"End users\".",
+    "created_at": "2010-09-07T17:16:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9749",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9749#issuecomment-95476",
+    "user": "was"
+}
+```
 
 Positive review.  Note -- I made a new patch that fixes a typo: "Endusers" --> "End users".
 
 
+
 ---
 
-Comment by was created at 2010-09-07 17:16:36
+archive/issue_comments_095477.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-09-07T17:16:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9749",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9749#issuecomment-95477",
+    "user": "was"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by was created at 2010-09-07 17:16:57
+archive/issue_comments_095478.json:
+```json
+{
+    "body": "apply this one only.",
+    "created_at": "2010-09-07T17:16:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9749",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9749#issuecomment-95478",
+    "user": "was"
+}
+```
 
 apply this one only.
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-15 10:39:46
+archive/issue_comments_095479.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-09-15T10:39:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9749",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9749#issuecomment-95479",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
+
+archive/issue_comments_095480.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-09-15T10:39:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9749",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9749#issuecomment-95480",
+    "user": "mpatel"
+}
+```
 
 Attachment

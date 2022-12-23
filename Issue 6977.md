@@ -1,11 +1,21 @@
 # Issue 6977: Implement __len__ to add support for MuPAD objects as Python containers
 
-Issue created by migration from https://trac.sagemath.org/ticket/6977
-
-Original creator: nthiery
-
-Original creation time: 2009-09-21 13:43:23
-
+archive/issues_006977.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  mhansen@gmail.com sage-combinat\n\nKeywords: MuPAD len\n\nThe title says it all; after the patch, one can do:\n\n            sage: len(mupad([1,2,3]))\n            3\n            sage: map(ZZ, list(mupad([1,2,3])))\n            [1, 2, 3]\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6977\n\n",
+    "created_at": "2009-09-21T13:43:23Z",
+    "labels": [
+        "interfaces",
+        "major",
+        "enhancement"
+    ],
+    "title": "Implement __len__ to add support for MuPAD objects as Python containers",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6977",
+    "user": "nthiery"
+}
+```
 Assignee: was
 
 CC:  mhansen@gmail.com sage-combinat
@@ -21,31 +31,79 @@ The title says it all; after the patch, one can do:
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6977
+
+
+
+
 
 ---
 
-Comment by nthiery created at 2009-09-21 19:35:02
+archive/issue_comments_057699.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-09-21T19:35:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6977",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6977#issuecomment-57699",
+    "user": "nthiery"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by nthiery created at 2009-09-21 19:35:02
+archive/issue_comments_057700.json:
+```json
+{
+    "body": "Changing assignee from was to nthiery.",
+    "created_at": "2009-09-21T19:35:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6977",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6977#issuecomment-57700",
+    "user": "nthiery"
+}
+```
 
 Changing assignee from was to nthiery.
 
 
+
 ---
 
-Comment by mhansen created at 2009-09-26 03:44:40
+archive/issue_comments_057701.json:
+```json
+{
+    "body": "Looks good to me.  There should be double colons after EXAMPLES, but since the rest of the file hasn't been converted over, we can wait to fix it then.",
+    "created_at": "2009-09-26T03:44:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6977",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6977#issuecomment-57701",
+    "user": "mhansen"
+}
+```
 
 Looks good to me.  There should be double colons after EXAMPLES, but since the rest of the file hasn't been converted over, we can wait to fix it then.
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-26 08:40:08
+archive/issue_comments_057702.json:
+```json
+{
+    "body": "Any doctest involving MuPAD must be tagged as optional, otherwise one would get doctest failures. For example, for the patch `trac_6977_mupad_len.patch` the test\n\n```\nsage: len(mupad([1,2,3])) # indirect doctest\n```\n\ndepends on having MuPAD one's local machine, so it should be written as\n\n```\nsage: len(mupad([1,2,3])) # optional indirect doctest\n```\n\nAfter applying the patch, I got these doctest failures:\n\n```\nsage -t -long devel/sage/sage/interfaces/mupad.py\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.2.alpha2/devel/sage-main/sage/interfaces/mupad.py\", line 599:\n    sage: len(mupad([1,2,3])) # indirect doctest\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mvngu/release/sage-4.1.2.alpha2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mvngu/release/sage-4.1.2.alpha2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mvngu/release/sage-4.1.2.alpha2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_34[2]>\", line 1, in <module>\n        len(mupad([Integer(1),Integer(2),Integer(3)])) # indirect doctest###line 599:\n    sage: len(mupad([1,2,3])) # indirect doctest\n      File \"/scratch/mvngu/release/sage-4.1.2.alpha2/local/lib/python/site-packages/sage/interfaces/expect.py\", line 1044, in __call__\n        raise TypeError, msg\n    TypeError: Unable to start MuPAD because the command 'mupkern -P e -U SAGE=TRUE' failed.\n\n    In order to use the MuPAD interface you need to have MuPAD installed\n    and have a script in your PATH called \"mupkern\" that runs the\n    command-line version of MuPAD. \n\n      (1) You might have to buy MuPAD.\n          \n      (2) * LINUX: The mupkern script comes standard with your Mupad install.\n            \n          * APPLE OS X:\n             ???\n\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.2.alpha2/devel/sage-main/sage/interfaces/mupad.py\", line 601:\n    sage: type(len(mupad([1,2,3])))\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mvngu/release/sage-4.1.2.alpha2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mvngu/release/sage-4.1.2.alpha2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mvngu/release/sage-4.1.2.alpha2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_34[3]>\", line 1, in <module>\n        type(len(mupad([Integer(1),Integer(2),Integer(3)])))###line 601:\n    sage: type(len(mupad([1,2,3])))\n      File \"/scratch/mvngu/release/sage-4.1.2.alpha2/local/lib/python/site-packages/sage/interfaces/expect.py\", line 1044, in __call__\n        raise TypeError, msg\n    TypeError: Unable to start MuPAD because the command 'mupkern -P e -U SAGE=TRUE' failed.\n\n    In order to use the MuPAD interface you need to have MuPAD installed\n    and have a script in your PATH called \"mupkern\" that runs the\n    command-line version of MuPAD. \n\n      (1) You might have to buy MuPAD.\n          \n      (2) * LINUX: The mupkern script comes standard with your Mupad install.\n            \n          * APPLE OS X:\n             ???\n\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.2.alpha2/devel/sage-main/sage/interfaces/mupad.py\", line 604:\n    sage: len(mupad(4))\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mvngu/release/sage-4.1.2.alpha2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mvngu/release/sage-4.1.2.alpha2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mvngu/release/sage-4.1.2.alpha2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_34[4]>\", line 1, in <module>\n        len(mupad(Integer(4)))###line 604:\n    sage: len(mupad(4))\n      File \"/scratch/mvngu/release/sage-4.1.2.alpha2/local/lib/python/site-packages/sage/interfaces/expect.py\", line 1033, in __call__\n        return self._coerce_from_special_method(x)\n      File \"/scratch/mvngu/release/sage-4.1.2.alpha2/local/lib/python/site-packages/sage/interfaces/expect.py\", line 1059, in _coerce_from_special_method\n        return self(x._interface_init_())\n      File \"/scratch/mvngu/release/sage-4.1.2.alpha2/local/lib/python/site-packages/sage/interfaces/expect.py\", line 1031, in __call__\n        return cls(self, x, name=name)\n      File \"/scratch/mvngu/release/sage-4.1.2.alpha2/local/lib/python/site-packages/sage/interfaces/expect.py\", line 1447, in __init__\n        raise TypeError, x\n    TypeError: Unable to start MuPAD because the command 'mupkern -P e -U SAGE=TRUE' failed.\n\n    In order to use the MuPAD interface you need to have MuPAD installed\n    and have a script in your PATH called \"mupkern\" that runs the\n    command-line version of MuPAD. \n\n      (1) You might have to buy MuPAD.\n          \n      (2) * LINUX: The mupkern script comes standard with your Mupad install.\n            \n          * APPLE OS X:\n             ???\n\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.2.alpha2/devel/sage-main/sage/interfaces/mupad.py\", line 610:\n    sage: map(ZZ, list(mupad([1,2,3])))\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mvngu/release/sage-4.1.2.alpha2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mvngu/release/sage-4.1.2.alpha2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mvngu/release/sage-4.1.2.alpha2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_34[5]>\", line 1, in <module>\n        map(ZZ, list(mupad([Integer(1),Integer(2),Integer(3)])))###line 610:\n    sage: map(ZZ, list(mupad([1,2,3])))\n      File \"/scratch/mvngu/release/sage-4.1.2.alpha2/local/lib/python/site-packages/sage/interfaces/expect.py\", line 1044, in __call__\n        raise TypeError, msg\n    TypeError: Unable to start MuPAD because the command 'mupkern -P e -U SAGE=TRUE' failed.\n\n    In order to use the MuPAD interface you need to have MuPAD installed\n    and have a script in your PATH called \"mupkern\" that runs the\n    command-line version of MuPAD. \n\n      (1) You might have to buy MuPAD.\n          \n      (2) * LINUX: The mupkern script comes standard with your Mupad install.\n            \n          * APPLE OS X:\n             ???\n\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.2.alpha2/devel/sage-main/sage/interfaces/mupad.py\", line 613:\n    sage: [int(x) for x in mupad([1,2,3]) ]\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mvngu/release/sage-4.1.2.alpha2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mvngu/release/sage-4.1.2.alpha2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mvngu/release/sage-4.1.2.alpha2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_34[6]>\", line 1, in <module>\n        [int(x) for x in mupad([Integer(1),Integer(2),Integer(3)]) ]###line 613:\n    sage: [int(x) for x in mupad([1,2,3]) ]\n      File \"/scratch/mvngu/release/sage-4.1.2.alpha2/local/lib/python/site-packages/sage/interfaces/expect.py\", line 1044, in __call__\n        raise TypeError, msg\n    TypeError: Unable to start MuPAD because the command 'mupkern -P e -U SAGE=TRUE' failed.\n\n    In order to use the MuPAD interface you need to have MuPAD installed\n    and have a script in your PATH called \"mupkern\" that runs the\n    command-line version of MuPAD. \n\n      (1) You might have to buy MuPAD.\n          \n      (2) * LINUX: The mupkern script comes standard with your Mupad install.\n            \n          * APPLE OS X:\n             ???\n\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.2.alpha2/devel/sage-main/sage/interfaces/mupad.py\", line 616:\n    sage: [int(x) for x in mupad(\"{1,2,3,5}\") ]\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mvngu/release/sage-4.1.2.alpha2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mvngu/release/sage-4.1.2.alpha2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mvngu/release/sage-4.1.2.alpha2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_34[7]>\", line 1, in <module>\n        [int(x) for x in mupad(\"{1,2,3,5}\") ]###line 616:\n    sage: [int(x) for x in mupad(\"{1,2,3,5}\") ]\n      File \"/scratch/mvngu/release/sage-4.1.2.alpha2/local/lib/python/site-packages/sage/interfaces/expect.py\", line 1031, in __call__\n        return cls(self, x, name=name)\n      File \"/scratch/mvngu/release/sage-4.1.2.alpha2/local/lib/python/site-packages/sage/interfaces/expect.py\", line 1447, in __init__\n        raise TypeError, x\n    TypeError: Unable to start MuPAD because the command 'mupkern -P e -U SAGE=TRUE' failed.\n\n    In order to use the MuPAD interface you need to have MuPAD installed\n    and have a script in your PATH called \"mupkern\" that runs the\n    command-line version of MuPAD. \n\n      (1) You might have to buy MuPAD.\n          \n      (2) * LINUX: The mupkern script comes standard with your Mupad install.\n            \n          * APPLE OS X:\n             ???\n\n**********************************************************************\n1 items had failures:\n   6 of   8 in __main__.example_34\n***Test Failed*** 6 failures.\nFor whitespace errors, see the file /home/mvngu/.sage//tmp/.doctest_mupad.py\n\t [2.0 s]\n```\n",
+    "created_at": "2009-09-26T08:40:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6977",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6977#issuecomment-57702",
+    "user": "mvngu"
+}
+```
 
 Any doctest involving MuPAD must be tagged as optional, otherwise one would get doctest failures. For example, for the patch `trac_6977_mupad_len.patch` the test
 
@@ -255,32 +313,78 @@ For whitespace errors, see the file /home/mvngu/.sage//tmp/.doctest_mupad.py
 
 
 
+
 ---
+
+archive/issue_comments_057703.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-09-30T10:19:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6977",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6977#issuecomment-57703",
+    "user": "nthiery"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by nthiery created at 2009-09-30 10:23:39
+archive/issue_comments_057704.json:
+```json
+{
+    "body": "The updated version adds\n- The missing #optional flags, the missing '::' (Oops, thanks Minh & Mike for the review and spotting those)\n- Fixes the implementation of len (bigger Oops: with MuPAD-Combinat, l := [1,2,3]; l::nops gives FAIL!!!!)\n- Add a comment about another failing test\n\nNow: should this be seen as a bug fix or enhancement ? I.e. go through the feature freeze for 4.1.2? It does not risk to break much anyway.",
+    "created_at": "2009-09-30T10:23:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6977",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6977#issuecomment-57704",
+    "user": "nthiery"
+}
+```
 
 The updated version adds
- - The missing #optional flags, the missing '::' (Oops, thanks Minh & Mike for the review and spotting those)
- - Fixes the implementation of len (bigger Oops: with MuPAD-Combinat, l := [1,2,3]; l::nops gives FAIL!!!!)
- - Add a comment about another failing test
+- The missing #optional flags, the missing '::' (Oops, thanks Minh & Mike for the review and spotting those)
+- Fixes the implementation of len (bigger Oops: with MuPAD-Combinat, l := [1,2,3]; l::nops gives FAIL!!!!)
+- Add a comment about another failing test
 
 Now: should this be seen as a bug fix or enhancement ? I.e. go through the feature freeze for 4.1.2? It does not risk to break much anyway.
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-05 07:34:16
+archive/issue_comments_057705.json:
+```json
+{
+    "body": "Looks good.",
+    "created_at": "2009-10-05T07:34:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6977",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6977#issuecomment-57705",
+    "user": "mhansen"
+}
+```
 
 Looks good.
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-15 08:53:27
+archive/issue_comments_057706.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-10-15T08:53:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6977",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6977#issuecomment-57706",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

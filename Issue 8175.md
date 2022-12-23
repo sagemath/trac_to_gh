@@ -1,11 +1,21 @@
 # Issue 8175: update installation guide for SPARC Solaris 10
 
-Issue created by migration from https://trac.sagemath.org/ticket/8175
-
-Original creator: mvngu
-
-Original creation time: 2010-02-03 17:46:54
-
+archive/issues_008175.json:
+```json
+{
+    "body": "Assignee: mvngu\n\nCC:  drkirkby\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/msg/5f802a0117b78016):\n\n```\nThank you.\n\nhttp://www.sagemath.org/doc/installation/source.html\n\nalso needs updating, as it says\n\n-----------------------------------------------------\nSolaris? FreeBSD? OS X 10.5 in 64 bit mode?: Complete compilation of Sage is\ncurrently not supported on Solaris or *BSD. It is possible to compile most of\nSage on Solaris machines and to fill in the extra parts using standard packages;\nplease email sage-devel if you desperately need to run Sage on Solaris. We do\nplan to fully support Solaris - it s a very important platform. Work is ongoing.\n-----------------------------------------------------\n\nIt's clearly now possible to compile all of Sage on Solaris 10 on SPARC hardware.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8175\n\n",
+    "created_at": "2010-02-03T17:46:54Z",
+    "labels": [
+        "documentation",
+        "major",
+        "bug"
+    ],
+    "title": "update installation guide for SPARC Solaris 10",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8175",
+    "user": "mvngu"
+}
+```
 Assignee: mvngu
 
 CC:  drkirkby
@@ -31,30 +41,78 @@ It's clearly now possible to compile all of Sage on Solaris 10 on SPARC hardware
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8175
+
+
+
+
 
 ---
 
-Comment by kcrisman created at 2012-01-28 02:58:52
+archive/issue_comments_072029.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2012-01-28T02:58:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8175",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8175#issuecomment-72029",
+    "user": "kcrisman"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by kcrisman created at 2012-01-28 02:58:52
+archive/issue_comments_072030.json:
+```json
+{
+    "body": "Given the current state of the webpage, this is clearly no longer valid.",
+    "created_at": "2012-01-28T02:58:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8175",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8175#issuecomment-72030",
+    "user": "kcrisman"
+}
+```
 
 Given the current state of the webpage, this is clearly no longer valid.
 
 
+
 ---
 
-Comment by kcrisman created at 2012-01-28 02:59:04
+archive/issue_comments_072031.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2012-01-28T02:59:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8175",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8175#issuecomment-72031",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-01-31 09:38:49
+archive/issue_comments_072032.json:
+```json
+{
+    "body": "Resolution: worksforme",
+    "created_at": "2012-01-31T09:38:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8175",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8175#issuecomment-72032",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: worksforme

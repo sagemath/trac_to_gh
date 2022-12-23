@@ -1,25 +1,61 @@
 # Issue 6533: sage >= 4.1.rc1 doesn't build on cleo (ia64-Linux-rhel5)
 
-Issue created by migration from https://trac.sagemath.org/ticket/6533
-
-Original creator: was
-
-Original creation time: 2009-07-14 18:39:01
-
+archive/issues_006533.json:
+```json
+{
+    "body": "Assignee: tbd\n\nThe Sage library fails to build (when linking symmetrica) on  ia64-Linux-rhel5.  I am investigating this. Note that sage-4.1.rc0 built fine, and there are minimal changes between rc0 and rc1. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6533\n\n",
+    "created_at": "2009-07-14T18:39:01Z",
+    "labels": [
+        "build",
+        "blocker",
+        "bug"
+    ],
+    "title": "sage >= 4.1.rc1 doesn't build on cleo (ia64-Linux-rhel5)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6533",
+    "user": "was"
+}
+```
 Assignee: tbd
 
 The Sage library fails to build (when linking symmetrica) on  ia64-Linux-rhel5.  I am investigating this. Note that sage-4.1.rc0 built fine, and there are minimal changes between rc0 and rc1. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6533
+
+
+
+
 
 ---
 
-Comment by was created at 2009-11-11 17:43:16
+archive/issue_comments_053269.json:
+```json
+{
+    "body": "According to the sysadmin, this appears to be a problem with the binutils and compiler setup on that computer.  So I'm closing this as invalid for now.",
+    "created_at": "2009-11-11T17:43:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6533",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6533#issuecomment-53269",
+    "user": "was"
+}
+```
 
 According to the sysadmin, this appears to be a problem with the binutils and compiler setup on that computer.  So I'm closing this as invalid for now.
 
 
+
 ---
 
-Comment by was created at 2009-11-11 17:43:16
+archive/issue_comments_053270.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2009-11-11T17:43:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6533",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6533#issuecomment-53270",
+    "user": "was"
+}
+```
 
 Resolution: invalid

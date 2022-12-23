@@ -1,11 +1,21 @@
 # Issue 3007: gap.Factorization? is useless
 
-Issue created by migration from https://trac.sagemath.org/ticket/3007
-
-Original creator: was
-
-Original creation time: 2008-04-23 17:09:20
-
+archive/issues_003007.json:
+```json
+{
+    "body": "Assignee: was\n\nSee this thread.  The solution suggested by Steve Linton below does *not* work exactly as suggested.\n\n\n```\n\n\nForwarded conversation\nSubject: [sage-support] Documentation with several entries\n------------------------\n\nFrom: Hector Villafuerte <hectorvd@gmail.com>\nDate: Tue, Apr 22, 2008 at 5:12 PM\nTo: sage-support@googlegroups.com\n\n\n\nHi,\nwhile trying this:\nsage: gap.Factorization?\n\nI got this...\n\nType:        <class 'sage.interfaces.gap.GapFunction'>\nDefinition:  gap.Factorization( [noargspec] )\nDocstring:\nHelp: several entries match this topic - type ?2 to get match [2]\n\n[1] Reference: factorization\n[2] Reference: Factorization\n\n\nWhich I can't get to work in either the Notebook or the command line. Any ideas?\nThanks!\n--\n Hector\n\n--~--~---------~--~----~------------~-------~--~----~\nTo post to this group, send email to sage-support@googlegroups.com\nTo unsubscribe from this group, send email to sage-support-unsubscribe@googlegroups.com\nFor more options, visit this group at http://groups.google.com/group/sage-support\nURLs: http://www.sagemath.org\n-~----------~----~----~----~------~----~------~--~---\n\n----------\nFrom: William Stein <wstein@gmail.com>\nDate: Wed, Apr 23, 2008 at 7:42 AM\nTo: Steve Linton <sal@cs.st-and.ac.uk>\n\n\nAny thoughts about how to disambiguate this sort of thing in the context\nof Sage?  Of course, you can just plead that you work on the gap interface\nalmost 2.5 years ago and remember nothing :-)\n--\nWilliam Stein\nAssociate Professor of Mathematics\nUniversity of Washington\nhttp://wstein.org\n----------\nFrom: Steve Linton <sal@cs.st-and.ac.uk>\nDate: Wed, Apr 23, 2008 at 8:34 AM\nTo: William Stein <wstein@gmail.com>\n\n\ngap.2? might just work.\n\nYou simply need to send GAP ?2 or HELP(\"2\");\n\nThe message is being generated from HELP_SHOW_MATCHES in lib/helpbase.gi (line\n713). I dare say we could move that message to a global variable so that you\ncould change it to  \"type gap.2? ....\" in a future release.\n\n       Steve\n--\nSteve Linton    School of Computer Science  &\n     Centre for Interdisciplinary Research in Computational Algebra\n            University of St Andrews    Tel   +44 (1334) 463269\nhttp://www.cs.st-and.ac.uk/~sal          Fax   +44 (1334) 463278\nThe University is a charity registered in Scotland : No SC013532\n\n\n\n-- \nWilliam Stein\nAssociate Professor of Mathematics\nUniversity of Washington\nhttp://wstein.org \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3007\n\n",
+    "created_at": "2008-04-23T17:09:20Z",
+    "labels": [
+        "interfaces",
+        "major",
+        "bug"
+    ],
+    "title": "gap.Factorization? is useless",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3007",
+    "user": "was"
+}
+```
 Assignee: was
 
 See this thread.  The solution suggested by Steve Linton below does *not* work exactly as suggested.
@@ -97,17 +107,43 @@ http://wstein.org
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3007
+
+
+
+
 
 ---
 
-Comment by AlexGhitza created at 2009-01-23 02:42:37
+archive/issue_comments_020678.json:
+```json
+{
+    "body": "Changing type from defect to enhancement.",
+    "created_at": "2009-01-23T02:42:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3007",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3007#issuecomment-20678",
+    "user": "AlexGhitza"
+}
+```
 
 Changing type from defect to enhancement.
 
 
+
 ---
 
-Comment by iandrus created at 2012-06-05 18:47:46
+archive/issue_comments_020679.json:
+```json
+{
+    "body": "The following works except that it's not properly offset, i.e. you have to hit space a few times before you find the documentation for `Factorization`.\n\n\n```\nsage: gap.Factorization?\nType:\t\tGapFunction\nBase Class:\t<class 'sage.interfaces.gap.GapFunction'>\nString Form:\tFactorization\nNamespace:\tInteractive\nLoaded File:\t/Users/gvol/SageStuff/sage-5.0.rc0/local/lib/python2.7/site-packages/sage/interfaces/gap.py\nSource File:\t/Users/gvol/SageStuff/sage-5.0.rc0/devel/sage/sage/interfaces/gap.py\nDefinition:\tgap.Factorization(self, *args, **kwds)\nDocstring:\n    Help: several entries match this topic - type ?2 to get match [2]\n    \n    [1] Reference: factorization\n    [2] Reference: Factorization\n\nCall def:\tgap.Factorization(self, *args, **kwds)\n\nCall docstring:\n    x.__init__(...) initializes x; see help(type(x)) for signature\n\n\nsage: gap.\"2\"?\n...the real documentation...\n```\n",
+    "created_at": "2012-06-05T18:47:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3007",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3007#issuecomment-20679",
+    "user": "iandrus"
+}
+```
 
 The following works except that it's not properly offset, i.e. you have to hit space a few times before you find the documentation for `Factorization`.
 
@@ -139,29 +175,73 @@ sage: gap."2"?
 
 
 
+
 ---
 
-Comment by iandrus created at 2013-03-10 22:24:40
+archive/issue_comments_020680.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2013-03-10T22:24:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3007",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3007#issuecomment-20680",
+    "user": "iandrus"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by iandrus created at 2013-03-10 22:24:40
+archive/issue_comments_020681.json:
+```json
+{
+    "body": "This has been fixed in 5.7.",
+    "created_at": "2013-03-10T22:24:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3007",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3007#issuecomment-20681",
+    "user": "iandrus"
+}
+```
 
 This has been fixed in 5.7.
 
 
+
 ---
 
-Comment by tscrim created at 2013-03-20 23:12:02
+archive/issue_comments_020682.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2013-03-20T23:12:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3007",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3007#issuecomment-20682",
+    "user": "tscrim"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-03-29 18:55:55
+archive/issue_comments_020683.json:
+```json
+{
+    "body": "Resolution: worksforme",
+    "created_at": "2013-03-29T18:55:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3007",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3007#issuecomment-20683",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: worksforme

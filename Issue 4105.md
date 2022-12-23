@@ -1,11 +1,21 @@
 # Issue 4105: multiplication of permutations in distinct subgroups sometimes doesn't work
 
-Issue created by migration from https://trac.sagemath.org/ticket/4105
-
-Original creator: was
-
-Original creation time: 2008-09-12 15:47:05
-
+archive/issues_004105.json:
+```json
+{
+    "body": "Assignee: joyner\n\nI think the following session (reported by Beezer) says it all:\n\n\n```\ntetra=AlternatingGroup(4)\nstab1=PermutationGroup_subgroup(tetra, [\"(1,2,3)\"])\nstab4=PermutationGroup_subgroup(tetra, [\"(2,3,4)\"])\nfor g in stab1:\n for h in stab4:\n   print g*h\n///\n\nTraceback (most recent call last):       print g*h\n  File \"/home/wstein/sage/local/lib/python2.5/site-packages/SQLAlchemy-0.4.6-py2.5.egg/\", line 3, in <module>\n    \n  File \"element.pyx\", line 1090, in sage.structure.element.MonoidElement.__mul__ (sage/structure/element.c:7938)\n  File \"coerce.pyx\", line 651, in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:6154)\n  File \"permgroup_element.pyx\", line 463, in sage.groups.perm_gps.permgroup_element.PermutationGroupElement._r_action (sage/groups/perm_gps/permgroup_element.c:3598)\n  File \"permgroup_element.pyx\", line 254, in sage.groups.perm_gps.permgroup_element.PermutationGroupElement.__init__ (sage/groups/perm_gps/permgroup_element.c:2097)\n  File \"/home/wstein/sage/local/lib/python2.5/site-packages/sage/groups/perm_gps/permgroup_named.py\", line 134, in __init__\n    raise ValueError, \"n (=%s) must be >= 1\"%n\nValueError: n (=0) must be >= 1\n```\n\n\n\n```\ntetra=AlternatingGroup(4)\nstab1=PermutationGroup_subgroup(tetra, [\"(1,2,3)\"])\nstab4=PermutationGroup_subgroup(tetra, [\"(2,3,4)\"])\nfor g in stab1:\n for h in stab4:\n   print tetra(g)*tetra(h)\n///\n\n()\n(2,3,4)\n(2,4,3)\n(1,2,3)\n(1,3)(2,4)\n(1,4,3)\n(1,3,2)\n(1,4,2)\n(1,2)(3,4)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4105\n\n",
+    "created_at": "2008-09-12T15:47:05Z",
+    "labels": [
+        "group theory",
+        "minor",
+        "bug"
+    ],
+    "title": "multiplication of permutations in distinct subgroups sometimes doesn't work",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4105",
+    "user": "was"
+}
+```
 Assignee: joyner
 
 I think the following session (reported by Beezer) says it all:
@@ -55,26 +65,63 @@ for g in stab1:
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4105
+
+
+
+
 
 ---
 
-Comment by wdj created at 2008-09-13 01:59:28
+archive/issue_comments_029727.json:
+```json
+{
+    "body": "I'm not sure I should be the owner of this. I guess the _mul_ method should be changed to coerce the PermutationGroup elements into a common parent (like SymmetricGroup(n), where n =\nlargest_moved_point=LargestMovedPoint). Now the module for permutation_group_element is in Cython and the method _mul_ seems to be renamed as cdef MonoidElement _mul_c_impl ?\nI don't know how to make the changes though, sorry.",
+    "created_at": "2008-09-13T01:59:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4105",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4105#issuecomment-29727",
+    "user": "wdj"
+}
+```
 
 I'm not sure I should be the owner of this. I guess the _mul_ method should be changed to coerce the PermutationGroup elements into a common parent (like SymmetricGroup(n), where n =
 largest_moved_point=LargestMovedPoint). Now the module for permutation_group_element is in Cython and the method _mul_ seems to be renamed as cdef MonoidElement _mul_c_impl ?
 I don't know how to make the changes though, sorry.
 
 
+
 ---
 
-Comment by jason created at 2008-09-17 18:27:09
+archive/issue_comments_029728.json:
+```json
+{
+    "body": "Apparently #4139 fixes this, according to the description there.",
+    "created_at": "2008-09-17T18:27:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4105",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4105#issuecomment-29728",
+    "user": "jason"
+}
+```
 
 Apparently #4139 fixes this, according to the description there.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-31 03:14:10
+archive/issue_comments_029729.json:
+```json
+{
+    "body": "This remains unfixed by #4139:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.1.4, Release Date: 2008-10-16                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: tetra=AlternatingGroup(4)\nsage: stab1=PermutationGroup_subgroup(tetra, [\"(1,2,3)\"])\nsage: stab4=PermutationGroup_subgroup(tetra, [\"(2,3,4)\"])\nsage: for g in stab1:\n....:      for h in stab4:\n....:        print g*h\n....: \n---------------------------------------------------------------------------\nAssertionError                            Traceback (most recent call last)\n\n/scratch/mabshoff/release-cycle/sage-3.1.3.final/<ipython console> in <module>()\n\n/scratch/mabshoff/release-cycle/sage-3.1.3.final/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.MonoidElement.__mul__ (sage/structure/element.c:6829)()\n\n/scratch/mabshoff/release-cycle/sage-3.1.3.final/local/lib/python2.5/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:5206)()\n\n/scratch/mabshoff/release-cycle/sage-3.1.3.final/local/lib/python2.5/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.canonical_coercion (sage/structure/coerce.c:5743)()\n\n/scratch/mabshoff/release-cycle/sage-3.1.3.final/local/lib/python2.5/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.coercion_maps (sage/structure/coerce.c:6842)()\n\n/scratch/mabshoff/release-cycle/sage-3.1.3.final/local/lib/python2.5/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.discover_coercion (sage/structure/coerce.c:8090)()\n\n/scratch/mabshoff/release-cycle/sage-3.1.3.final/local/lib/python2.5/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.coerce_map_from (sage/structure/parent.c:7495)()\n\n/scratch/mabshoff/release-cycle/sage-3.1.3.final/local/lib/python2.5/site-packages/sage/groups/perm_gps/permgroup.pyc in __cmp__(self, other)\n   1910         c = cmp(self.ambient_group(), other.ambient_group())\n   1911         if c: return c\n-> 1912         if self.is_subgroup(other):\n   1913             return -1\n   1914         else:\n\n/scratch/mabshoff/release-cycle/sage-3.1.3.final/local/lib/python2.5/site-packages/sage/groups/perm_gps/permgroup.pyc in is_subgroup(self, other)\n   1541         for i in range(len(gens)):\n   1542             x = gens[i]\n-> 1543             if not (G.has_element(x)):\n   1544                 return False\n   1545         return True\n\n/scratch/mabshoff/release-cycle/sage-3.1.3.final/local/lib/python2.5/site-packages/sage/groups/perm_gps/permgroup.pyc in has_element(self, item)\n    491 \n    492         \"\"\"\n--> 493         item = PermutationGroupElement(item, self, check=False)\n    494         return item in self.list()\n    495 \n\n/scratch/mabshoff/release-cycle/sage-3.1.3.final/local/lib/python2.5/site-packages/sage/groups/perm_gps/permgroup_element.so in sage.groups.perm_gps.permgroup_element.PermutationGroupElement.__init__ (sage/groups/perm_gps/permgroup_element.c:2663)()\n\nAssertionError: \nsage: \nExiting SAGE (CPU time 0m1.22s, Wall time 0m28.50s).\nExiting spawned Gap process.\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2008-10-31T03:14:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4105",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4105#issuecomment-29729",
+    "user": "mabshoff"
+}
+```
 
 This remains unfixed by #4139:
 
@@ -142,9 +189,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by ppurka created at 2012-03-20 06:07:13
+archive/issue_comments_029730.json:
+```json
+{
+    "body": "Sorry for the necro, but this seems fixed at least in sage-5.0beta2.\n\n```\nsage: tetra=AlternatingGroup(4)\nsage: stab1=PermutationGroup_subgroup(tetra, [\"(1,2,3)\"])\nsage: stab4=PermutationGroup_subgroup(tetra, [\"(2,3,4)\"])\nsage: for g in stab1:\n....:     for h in stab4:\n....:         print g*h\n....:         \n()\n(2,3,4)\n(2,4,3)\n(1,2,3)\n(1,3)(2,4)\n(1,4,3)\n(1,3,2)\n(1,4,2)\n(1,2)(3,4)\n```\n",
+    "created_at": "2012-03-20T06:07:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4105",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4105#issuecomment-29730",
+    "user": "ppurka"
+}
+```
 
 Sorry for the necro, but this seems fixed at least in sage-5.0beta2.
 
@@ -169,36 +227,91 @@ sage: for g in stab1:
 
 
 
+
 ---
 
-Comment by tscrim created at 2012-12-10 19:35:37
+archive/issue_comments_029731.json:
+```json
+{
+    "body": "Works for me as well in `5.5.rc0`.",
+    "created_at": "2012-12-10T19:35:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4105",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4105#issuecomment-29731",
+    "user": "tscrim"
+}
+```
 
 Works for me as well in `5.5.rc0`.
 
 
+
 ---
 
-Comment by tscrim created at 2012-12-10 19:35:37
+archive/issue_comments_029732.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2012-12-10T19:35:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4105",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4105#issuecomment-29732",
+    "user": "tscrim"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by knsam created at 2013-02-02 10:18:33
+archive/issue_comments_029733.json:
+```json
+{
+    "body": "Works for me in Sage 5.6. So, I'd give this positive review.",
+    "created_at": "2013-02-02T10:18:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4105",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4105#issuecomment-29733",
+    "user": "knsam"
+}
+```
 
 Works for me in Sage 5.6. So, I'd give this positive review.
 
 
+
 ---
 
-Comment by knsam created at 2013-02-02 10:18:52
+archive/issue_comments_029734.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2013-02-02T10:18:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4105",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4105#issuecomment-29734",
+    "user": "knsam"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-02-03 19:20:34
+archive/issue_comments_029735.json:
+```json
+{
+    "body": "Resolution: worksforme",
+    "created_at": "2013-02-03T19:20:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4105",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4105#issuecomment-29735",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: worksforme

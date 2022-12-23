@@ -1,11 +1,21 @@
 # Issue 2588: [with patch, needs review] documentation and tests for sage.schemes.hyperelliptic_curves.jacobian_morphism
 
-Issue created by migration from https://trac.sagemath.org/ticket/2588
-
-Original creator: ncalexan
-
-Original creation time: 2008-03-18 18:38:29
-
+archive/issues_002588.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  ncalexan\n\nKeywords: jacobian morphism hyperelliptic curve\n\nBefore:\n\n\n```\n----------------------------------------------------------------------\nsage/schemes/hyperelliptic_curves/jacobian_morphism.py\nERROR: Please define a s == loads(dumps(s)) doctest.\nSCORE sage/schemes/hyperelliptic_curves/jacobian_morphism.py: 0% (0 of 15)\n\nMissing documentation:\n         * cantor_reduction_simple(a1,b1,f,genus)\n         * cantor_reduction(a,b,f,h,genus)\n         * cantor_composition_simple(D1,D2,f,genus)\n         * cantor_composition(D1,D2,f,h,genus)\n         * __init__(self, parent, polys, reduce=True, check=False)\n         * __repr__(self)\n         * scheme(self)\n         * list(self)\n         * __add__(self,other)\n         * __cmp__(self, other)\n         * __nonzero__(self)\n         * __sub__(self, other)\n         * __neg__(self)\n         * __mul__(self, n)\n         * _rmul_(self, n)\n\n----------------------------------------------------------------------\n```\n\n\nAfter:\n\n\n```\n----------------------------------------------------------------------\n./jacobian_morphism.py\nERROR: Please define a s == loads(dumps(s)) doctest.\nSCORE ./jacobian_morphism.py: 100% (17 of 17)\n----------------------------------------------------------------------\n```\n\n\nThe final `s == loads(dumps(s))` requires lots of other fixes to happen first, so it could be a while.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2588\n\n",
+    "created_at": "2008-03-18T18:38:29Z",
+    "labels": [
+        "algebraic geometry",
+        "major",
+        "enhancement"
+    ],
+    "title": "[with patch, needs review] documentation and tests for sage.schemes.hyperelliptic_curves.jacobian_morphism",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2588",
+    "user": "ncalexan"
+}
+```
 Assignee: was
 
 CC:  ncalexan
@@ -56,8 +66,25 @@ SCORE ./jacobian_morphism.py: 100% (17 of 17)
 
 The final `s == loads(dumps(s))` requires lots of other fixes to happen first, so it could be a while.
 
+Issue created by migration from https://trac.sagemath.org/ticket/2588
+
+
+
+
 
 ---
+
+archive/issue_comments_017711.json:
+```json
+{
+    "body": "Attachment\n\nReview:  this looks like an excellent job with a lot of useful explanations and examples.  I successfully applied the patch to 2.10.4.rc0.  Testing all files in sage/schemes/hyperelliptic/ resulted in one error:\n\n```\n**********************************************************************\nFile \"jacobian_morphism.py\", line 382:\n    sage: print latex(Q + Q)\nExpected:\n    \\left(x^{2} + 5x + 1, y + 3\\alpha x + 6\\alpha + 2\\right) # known failure (trac #2586)\nGot:\n    \\left(x^{2} + 5x + 1, y + 3\\alphax + 6\\alpha + 2\\right)\n**********************************************************************\n```\n",
+    "created_at": "2008-03-18T21:39:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2588",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2588#issuecomment-17711",
+    "user": "cremona"
+}
+```
 
 Attachment
 
@@ -76,18 +103,40 @@ Got:
 
 
 
+
 ---
 
-Comment by ncalexan created at 2008-03-18 22:34:21
+archive/issue_comments_017712.json:
+```json
+{
+    "body": "That example is marked known failure and the relevant trac number (#2586) is beside it.  I am happier with a useful failing doctest than no doctest, or a useless doctest, or a doctest certifying bad output.\n\nThanks for the prompt review!",
+    "created_at": "2008-03-18T22:34:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2588",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2588#issuecomment-17712",
+    "user": "ncalexan"
+}
+```
 
 That example is marked known failure and the relevant trac number (#2586) is beside it.  I am happier with a useful failing doctest than no doctest, or a useless doctest, or a doctest certifying bad output.
 
 Thanks for the prompt review!
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-19 12:15:50
+archive/issue_comments_017713.json:
+```json
+{
+    "body": "Replying to [comment:2 ncalexan]:\n> That example is marked known failure and the relevant trac number (#2586) is beside it.  I am happier with a useful failing doctest than no doctest, or a useless doctest, or a doctest certifying bad output.\n> \n> Thanks for the prompt review!\n\nI would recommend merging everything but the failing doctest and merge that hunk once #2586 is fixed. Any objections, Nick?\n\nCheers,\n\nMichael",
+    "created_at": "2008-03-19T12:15:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2588",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2588#issuecomment-17713",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:2 ncalexan]:
 > That example is marked known failure and the relevant trac number (#2586) is beside it.  I am happier with a useful failing doctest than no doctest, or a useless doctest, or a doctest certifying bad output.
@@ -101,16 +150,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by ncalexan created at 2008-03-19 19:21:31
+archive/issue_comments_017714.json:
+```json
+{
+    "body": "Sure, that's fine by me.  Maybe it's better to certify the failing output and change it when #2586 is complete.",
+    "created_at": "2008-03-19T19:21:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2588",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2588#issuecomment-17714",
+    "user": "ncalexan"
+}
+```
 
 Sure, that's fine by me.  Maybe it's better to certify the failing output and change it when #2586 is complete.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-20 01:40:44
+archive/issue_comments_017715.json:
+```json
+{
+    "body": "Nick, I changed the above lines to \n\n```\n+            sage: print latex(Q + Q)\n+            \\left(x^{2} + 5x + 1, y + 3\\alphax + 6\\alpha + 2\\right) # this is a bug - see trac #2586\n```\n\nOnce #2586 is fixed the doctest will fail and I am sure the person will fix the doctest.\n\nCheers,\n\nMichael",
+    "created_at": "2008-03-20T01:40:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2588",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2588#issuecomment-17715",
+    "user": "mabshoff"
+}
+```
 
 Nick, I changed the above lines to 
 
@@ -126,21 +197,56 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-20 01:41:02
+archive/issue_comments_017716.json:
+```json
+{
+    "body": "Merged in Sage 2.11.alpha0",
+    "created_at": "2008-03-20T01:41:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2588",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2588#issuecomment-17716",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.11.alpha0
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-20 01:41:02
+archive/issue_comments_017717.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-03-20T01:41:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2588",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2588#issuecomment-17717",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
+
+archive/issue_comments_017718.json:
+```json
+{
+    "body": "Attachment\n\nthis patch actually fixes the stupid mistake I introduces in the changed doctest",
+    "created_at": "2008-03-20T02:01:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2588",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2588#issuecomment-17718",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 

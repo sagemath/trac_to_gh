@@ -1,11 +1,21 @@
 # Issue 2523: bug in modular symbols for GammaH subgroup
 
-Issue created by migration from https://trac.sagemath.org/ticket/2523
-
-Original creator: was
-
-Original creation time: 2008-03-15 00:01:36
-
+archive/issues_002523.json:
+```json
+{
+    "body": "Assignee: was\n\n\n```\nsage: ModularSymbols(GammaH(33,[1,2]),2).cuspidal_subspace()\nTraceback (most recent call last):\n...\nKeyError: 11\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2523\n\n",
+    "created_at": "2008-03-15T00:01:36Z",
+    "labels": [
+        "number theory",
+        "major",
+        "bug"
+    ],
+    "title": "bug in modular symbols for GammaH subgroup",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2523",
+    "user": "was"
+}
+```
 Assignee: was
 
 
@@ -17,24 +27,61 @@ KeyError: 11
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2523
+
+
+
+
 
 ---
 
-Comment by AlexGhitza created at 2008-04-23 02:35:45
+archive/issue_comments_017206.json:
+```json
+{
+    "body": "Changing component from number theory to modular forms.",
+    "created_at": "2008-04-23T02:35:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2523",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2523#issuecomment-17206",
+    "user": "AlexGhitza"
+}
+```
 
 Changing component from number theory to modular forms.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2008-04-23 02:35:45
+archive/issue_comments_017207.json:
+```json
+{
+    "body": "Changing assignee from was to craigcitro.",
+    "created_at": "2008-04-23T02:35:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2523",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2523#issuecomment-17207",
+    "user": "AlexGhitza"
+}
+```
 
 Changing assignee from was to craigcitro.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2008-04-23 02:54:47
+archive/issue_comments_017208.json:
+```json
+{
+    "body": "I've done a bit of digging and gotten a bit closer to the source of the problem (which I think is actually in congroup.py):\n\n\n```\nsage: G = GammaH(6, [5])\nsage: M = ModularSymbols(G, 2)\nsage: B = M.boundary_space()\nsage: bas = M.basis(); bas\n((1,0), (3,2), (4,1))\nsage: B(bas[0])\n[Infinity] - [0]\nsage: B(bas[2])\n[0] - [-1/2]\nsage: B(bas[1])\nTraceback (most recent call last):\n...\nKeyError: 3\n```\n",
+    "created_at": "2008-04-23T02:54:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2523",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2523#issuecomment-17208",
+    "user": "AlexGhitza"
+}
+```
 
 I've done a bit of digging and gotten a bit closer to the source of the problem (which I think is actually in congroup.py):
 
@@ -57,9 +104,20 @@ KeyError: 3
 
 
 
+
 ---
 
-Comment by craigcitro created at 2008-04-26 11:25:58
+archive/issue_comments_017209.json:
+```json
+{
+    "body": "I'm attaching a fix. The fix also cleans up a few related functions. The problem was in the `_coset_reduction_data` functions -- specifically, one of the functions only generated data up to the square root of the level. However, in use, one needs more data -- at the very least, one needs to generate all data up to where the gcd of the term with N is at most square root of N. In that case, it seems easier to just generate all the data.\n\nAdded some doctests, though I'm not completely satisfied with my doctests: in particular, I couldn't come up with a doctest for `_reduce_cusp` that would have `t == -1`. I'd be happy if someone came up with one and added it. \n\nI just noticed that this patch is actually in the tree where I'd already applied AlexGhitza's patch from #2995. Given that it's already been merged anyway, I'm just not going to worry about it.",
+    "created_at": "2008-04-26T11:25:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2523",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2523#issuecomment-17209",
+    "user": "craigcitro"
+}
+```
 
 I'm attaching a fix. The fix also cleans up a few related functions. The problem was in the `_coset_reduction_data` functions -- specifically, one of the functions only generated data up to the square root of the level. However, in use, one needs more data -- at the very least, one needs to generate all data up to where the gcd of the term with N is at most square root of N. In that case, it seems easier to just generate all the data.
 
@@ -68,14 +126,38 @@ Added some doctests, though I'm not completely satisfied with my doctests: in pa
 I just noticed that this patch is actually in the tree where I'd already applied AlexGhitza's patch from #2995. Given that it's already been merged anyway, I'm just not going to worry about it.
 
 
+
 ---
 
-Comment by craigcitro created at 2008-04-26 11:25:58
+archive/issue_comments_017210.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-04-26T11:25:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2523",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2523#issuecomment-17210",
+    "user": "craigcitro"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
+
+archive/issue_comments_017211.json:
+```json
+{
+    "body": "Attachment\n\nThere are some typos, namely `specfically` in at least two places.\n\nI'm worried about the lack of `t==-1` doctest as well, but this looks good to me anyway.",
+    "created_at": "2008-04-26T17:20:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2523",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2523#issuecomment-17211",
+    "user": "ncalexan"
+}
+```
 
 Attachment
 
@@ -84,9 +166,20 @@ There are some typos, namely `specfically` in at least two places.
 I'm worried about the lack of `t==-1` doctest as well, but this looks good to me anyway.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2008-04-26 17:37:05
+archive/issue_comments_017212.json:
+```json
+{
+    "body": "Two comments:\n\n1. this patch is great; not only does it fix the current issue, but also fixes #2938.  Awesome!\n\n2. regarding t = -1: looking at the code, I notice that t = -1 is returned only if, towards the end, u > N_over_2; but before that u goes through a bunch of reductions modulo d, so u is at most d.  On the other hand, d=gcd(v,N), so the only way this can be bigger than half of N is if it's equal to N, i.e. if v = N.  Having run a lot of random examples, I don't think t is ever -1, but it would be nice to have a theoretical proof of this (maybe William or John know this, or maybe they know how to construct an example with t=-1).\n\nHaving said this, I think we should be grateful for point (1) and merge, and figure out point (2) later.",
+    "created_at": "2008-04-26T17:37:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2523",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2523#issuecomment-17212",
+    "user": "AlexGhitza"
+}
+```
 
 Two comments:
 
@@ -97,22 +190,57 @@ Two comments:
 Having said this, I think we should be grateful for point (1) and merge, and figure out point (2) later.
 
 
+
 ---
+
+archive/issue_comments_017213.json:
+```json
+{
+    "body": "Attachment\n\nAdded a small patch fixing the typos ncalexan pointed out. Also, I'm closing #2938 as fixed.",
+    "created_at": "2008-04-26T18:26:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2523",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2523#issuecomment-17213",
+    "user": "craigcitro"
+}
+```
 
 Attachment
 
 Added a small patch fixing the typos ncalexan pointed out. Also, I'm closing #2938 as fixed.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-26 21:19:06
+archive/issue_comments_017214.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-04-26T21:19:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2523",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2523#issuecomment-17214",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-26 21:19:06
+archive/issue_comments_017215.json:
+```json
+{
+    "body": "Merged in Sage 3.0.1.alpha1",
+    "created_at": "2008-04-26T21:19:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2523",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2523#issuecomment-17215",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.1.alpha1

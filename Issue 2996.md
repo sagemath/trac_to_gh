@@ -1,33 +1,80 @@
 # Issue 2996: lite webpage broken under Konqueror
 
-Issue created by migration from https://trac.sagemath.org/ticket/2996
-
-Original creator: gfurnish
-
-Original creation time: 2008-04-22 05:49:13
-
+archive/issues_002996.json:
+```json
+{
+    "body": "Assignee: was\n\nWith KDE 3.5.9, the background color of the window defaults to white, not purple.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/2996\n\n",
+    "created_at": "2008-04-22T05:49:13Z",
+    "labels": [
+        "website/wiki",
+        "major",
+        "bug"
+    ],
+    "title": "lite webpage broken under Konqueror",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2996",
+    "user": "gfurnish"
+}
+```
 Assignee: was
 
 With KDE 3.5.9, the background color of the window defaults to white, not purple.  
 
+Issue created by migration from https://trac.sagemath.org/ticket/2996
+
+
+
+
 
 ---
 
-Comment by malb created at 2008-08-18 17:30:04
+archive/issue_comments_020606.json:
+```json
+{
+    "body": "Looks identical to Firefox to me. I vote for invalid or fixed.",
+    "created_at": "2008-08-18T17:30:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2996",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2996#issuecomment-20606",
+    "user": "malb"
+}
+```
 
 Looks identical to Firefox to me. I vote for invalid or fixed.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-31 05:19:27
+archive/issue_comments_020607.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-08-31T05:19:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2996",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2996#issuecomment-20607",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-31 05:19:27
+archive/issue_comments_020608.json:
+```json
+{
+    "body": "Fixed it is. If someone can reproduce this please let us know which konqueror version is broken.\n\nCheers,\n\nMichael",
+    "created_at": "2008-08-31T05:19:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2996",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2996#issuecomment-20608",
+    "user": "mabshoff"
+}
+```
 
 Fixed it is. If someone can reproduce this please let us know which konqueror version is broken.
 
@@ -36,9 +83,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-31 05:22:36
+archive/issue_comments_020609.json:
+```json
+{
+    "body": "Mike Hansen just confirmed that the color issue is fixed with Konqueror 3.5.9.\n\nCheers,\n\nMichael",
+    "created_at": "2008-08-31T05:22:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2996",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2996#issuecomment-20609",
+    "user": "mabshoff"
+}
+```
 
 Mike Hansen just confirmed that the color issue is fixed with Konqueror 3.5.9.
 

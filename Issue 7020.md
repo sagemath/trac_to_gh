@@ -1,11 +1,21 @@
 # Issue 7020: Fix 32-bit versus 64-bit boolean_function issue in crypto
 
-Issue created by migration from https://trac.sagemath.org/ticket/7020
-
-Original creator: kcrisman
-
-Original creation time: 2009-09-27 00:52:13
-
+archive/issues_007020.json:
+```json
+{
+    "body": "Assignee: tbd\n\nSee #6870 for some discussion.  A random test behaves differently in 32/64 cases:\n\n```\nsage -t -long devel/sage/sage/crypto/boolean_function.pyx\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.2.alpha2/devel/sage-main/sage/crypto/boolean_function.pyx\", line 1013:\n    sage: B.nonlinearity()\nExpected:\n    217\nGot:\n    222\n**********************************************************************\n1 items had failures:\n   1 of   6 in __main__.example_36\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/mvngu/.sage//tmp/.doctest_boolean_function.py\n\t [5.3 s]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7020\n\n",
+    "created_at": "2009-09-27T00:52:13Z",
+    "labels": [
+        "doctest coverage",
+        "major",
+        "bug"
+    ],
+    "title": "Fix 32-bit versus 64-bit boolean_function issue in crypto",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7020",
+    "user": "kcrisman"
+}
+```
 Assignee: tbd
 
 See #6870 for some discussion.  A random test behaves differently in 32/64 cases:
@@ -28,29 +38,79 @@ For whitespace errors, see the file /home/mvngu/.sage//tmp/.doctest_boolean_func
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7020
+
+
+
+
 
 ---
 
-Comment by kcrisman created at 2009-09-27 00:53:31
+archive/issue_comments_058121.json:
+```json
+{
+    "body": "Either this patch or an identical one but with the other # (217 or 222) in the - line should apply and fix this.  Probably it should be renamed as well!",
+    "created_at": "2009-09-27T00:53:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7020",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7020#issuecomment-58121",
+    "user": "kcrisman"
+}
+```
 
 Either this patch or an identical one but with the other # (217 or 222) in the - line should apply and fix this.  Probably it should be renamed as well!
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-28 03:54:32
+archive/issue_comments_058122.json:
+```json
+{
+    "body": "based on Sage 4.1.2.alpha4",
+    "created_at": "2009-09-28T03:54:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7020",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7020#issuecomment-58122",
+    "user": "mvngu"
+}
+```
 
 based on Sage 4.1.2.alpha4
 
 
+
 ---
+
+archive/issue_comments_058123.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-09-28T03:55:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7020",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7020#issuecomment-58123",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by jsp created at 2009-09-28 09:45:54
+archive/issue_comments_058124.json:
+```json
+{
+    "body": "Works for me on Fedora 11, 32 bit:\n\n\n\n```\n[jaap@paix sage-4.1.2.alpha4]$ ./sage -t  \"devel/sage/sage/crypto/boolean_function.pyx\"\nsage -t  \"devel/sage/sage/crypto/boolean_function.pyx\"      \n\t [8.9 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 8.9 seconds\n\n```\n",
+    "created_at": "2009-09-28T09:45:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7020",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7020#issuecomment-58124",
+    "user": "jsp"
+}
+```
 
 Works for me on Fedora 11, 32 bit:
 
@@ -69,8 +129,19 @@ Total time for all tests: 8.9 seconds
 
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-29 11:37:12
+archive/issue_comments_058125.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-09-29T11:37:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7020",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7020#issuecomment-58125",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

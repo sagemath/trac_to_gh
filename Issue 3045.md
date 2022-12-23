@@ -1,11 +1,21 @@
 # Issue 3045: K.gen() where K = GF(p) returns 1, not a primitive element
 
-Issue created by migration from https://trac.sagemath.org/ticket/3045
-
-Original creator: jxxcarlson
-
-Original creation time: 2008-04-27 15:06:13
-
+archive/issues_003045.json:
+```json
+{
+    "body": "Assignee: was\n\nKeywords: galois field\n\n\n```\nsage: k = GF(7)\nsage: k.gen()\n1\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3045\n\n",
+    "created_at": "2008-04-27T15:06:13Z",
+    "labels": [
+        "number theory",
+        "major",
+        "bug"
+    ],
+    "title": "K.gen() where K = GF(p) returns 1, not a primitive element",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3045",
+    "user": "jxxcarlson"
+}
+```
 Assignee: was
 
 Keywords: galois field
@@ -20,22 +30,61 @@ sage: k.gen()
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3045
+
+
+
+
 
 ---
 
-Comment by AlexGhitza created at 2009-01-23 08:31:46
+archive/issue_comments_020967.json:
+```json
+{
+    "body": "This is actually the correct behaviour.  The function that returns a primitive element is K.multiplicative_generator(), not K.gen().  There was some inconsistency in the docstrings of the various types of finite fields, which is fixed by the attached patch.",
+    "created_at": "2009-01-23T08:31:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3045",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3045#issuecomment-20967",
+    "user": "AlexGhitza"
+}
+```
 
 This is actually the correct behaviour.  The function that returns a primitive element is K.multiplicative_generator(), not K.gen().  There was some inconsistency in the docstrings of the various types of finite fields, which is fixed by the attached patch.
 
 
+
 ---
 
-Comment by kedlaya created at 2009-01-23 22:20:08
+archive/issue_comments_020968.json:
+```json
+{
+    "body": "This otherwise deserves a positive review, except that I couldn't verify the claim in the doctest that the outputs of gen() and multiplicative_generator() can vary between runs. Is that really true?",
+    "created_at": "2009-01-23T22:20:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3045",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3045#issuecomment-20968",
+    "user": "kedlaya"
+}
+```
 
 This otherwise deserves a positive review, except that I couldn't verify the claim in the doctest that the outputs of gen() and multiplicative_generator() can vary between runs. Is that really true?
 
 
+
 ---
+
+archive/issue_comments_020969.json:
+```json
+{
+    "body": "Attachment\n\nKiran, I tried to find some examples and couldn't.  I think the point of the warning in the docstring is that we are not guaranteeing that the finite fields code wouldn't change in the future in such a way that other generators would be returned; or, for that matter, that the same version of Sage running on wildly different architectures won't return different generators.  I modified the docstrings a bit to (hopefully) make that more clear.\n\nNote that multiplicative_generator() calls pari's znprimroot(), so whatever fuzziness there is in pari's finding a generator gets automatically inherited by Sage.",
+    "created_at": "2009-01-24T00:47:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3045",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3045#issuecomment-20969",
+    "user": "AlexGhitza"
+}
+```
 
 Attachment
 
@@ -44,16 +93,38 @@ Kiran, I tried to find some examples and couldn't.  I think the point of the war
 Note that multiplicative_generator() calls pari's znprimroot(), so whatever fuzziness there is in pari's finding a generator gets automatically inherited by Sage.
 
 
+
 ---
 
-Comment by roed created at 2009-01-24 11:31:13
+archive/issue_comments_020970.json:
+```json
+{
+    "body": "Looks good to me.  I think the docstrings are clear enough.",
+    "created_at": "2009-01-24T11:31:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3045",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3045#issuecomment-20970",
+    "user": "roed"
+}
+```
 
 Looks good to me.  I think the docstrings are clear enough.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-25 02:20:34
+archive/issue_comments_020971.json:
+```json
+{
+    "body": "Merged in Sage 3.3.alpha2.\n\nCheers,\n\nMichael",
+    "created_at": "2009-01-25T02:20:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3045",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3045#issuecomment-20971",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.3.alpha2.
 
@@ -62,8 +133,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-25 02:20:34
+archive/issue_comments_020972.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-01-25T02:20:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3045",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3045#issuecomment-20972",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

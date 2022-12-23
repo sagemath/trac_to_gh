@@ -1,11 +1,21 @@
 # Issue 7857: Arithmetic operations in fraction fields
 
-Issue created by migration from https://trac.sagemath.org/ticket/7857
-
-Original creator: spancratz
-
-Original creation time: 2010-01-06 16:12:12
-
+archive/issues_007857.json:
+```json
+{
+    "body": "Assignee: spancratz\n\nCC:  robertwb\n\nKeywords: fraction field\n\nTo implement Henrici's algorithms (or the Henrici--Brown algorithms) for arithmetic operations in fraction fields.\n\nSee:\n    http://groups.google.com/group/sage-devel/browse_thread/thread/65064ad496db9c75\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7857\n\n",
+    "created_at": "2010-01-06T16:12:12Z",
+    "labels": [
+        "algebra",
+        "major",
+        "enhancement"
+    ],
+    "title": "Arithmetic operations in fraction fields",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7857",
+    "user": "spancratz"
+}
+```
 Assignee: spancratz
 
 CC:  robertwb
@@ -18,22 +28,61 @@ See:
     http://groups.google.com/group/sage-devel/browse_thread/thread/65064ad496db9c75
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7857
+
+
+
+
 
 ---
 
-Comment by spancratz created at 2010-01-06 16:13:11
+archive/issue_comments_068081.json:
+```json
+{
+    "body": "Changing status from new to needs_work.",
+    "created_at": "2010-01-06T16:13:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7857",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7857#issuecomment-68081",
+    "user": "spancratz"
+}
+```
 
 Changing status from new to needs_work.
 
 
+
 ---
+
+archive/issue_comments_068082.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-01-06T16:13:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7857",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7857#issuecomment-68082",
+    "user": "spancratz"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by spancratz created at 2010-01-06 17:38:46
+archive/issue_comments_068083.json:
+```json
+{
+    "body": "I've made a three more changes to the previous patch:\n\n- In two places I wrongfully used ``/`` instead of ``//``.\n- In another place I had ``base_ring`` instead of ``ring``.\n\nThis should be working now.  I've successfully run the doctests in the folder ``sage/rings``, and am currently running a complete test, too.\n\nSebastian",
+    "created_at": "2010-01-06T17:38:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7857",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7857#issuecomment-68083",
+    "user": "spancratz"
+}
+```
 
 I've made a three more changes to the previous patch:
 
@@ -45,21 +94,56 @@ This should be working now.  I've successfully run the doctests in the folder ``
 Sebastian
 
 
+
 ---
 
-Comment by spancratz created at 2010-01-06 17:38:46
+archive/issue_comments_068084.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-01-06T17:38:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7857",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7857#issuecomment-68084",
+    "user": "spancratz"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by spancratz created at 2010-01-06 17:39:29
+archive/issue_comments_068085.json:
+```json
+{
+    "body": "Second patch",
+    "created_at": "2010-01-06T17:39:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7857",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7857#issuecomment-68085",
+    "user": "spancratz"
+}
+```
 
 Second patch
 
 
+
 ---
+
+archive/issue_comments_068086.json:
+```json
+{
+    "body": "Attachment\n\nFirst comment:  Note that the \"second patch\" replaces the first one!\n\nI noticed a bare \"except:\"  which is bad style -- it should list the errors expected explicitly.\n\nQuestion:  the code for sub is (of course) almost identical to that for add.  Would it not be better to implement sub by adding the inverse?  I would have thought that the overhead would be trivial, and itmakes the code easier to maintain.\n\nThe (second) patch applies fine to 4.3 and all tests in sage/rings and sage/schemes/elliptic_curves pass.  (I tested the latter since I seemed to remember some fraction field arithmetic somewhere in there).  I also checked the docs still build ok.\n\nI'll tag this as \"needs work\" but it's very minor to fix the exception trapping and (perhaps) replace the subtraction code.",
+    "created_at": "2010-01-06T18:22:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7857",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7857#issuecomment-68086",
+    "user": "cremona"
+}
+```
 
 Attachment
 
@@ -74,32 +158,76 @@ The (second) patch applies fine to 4.3 and all tests in sage/rings and sage/sche
 I'll tag this as "needs work" but it's very minor to fix the exception trapping and (perhaps) replace the subtraction code.
 
 
+
 ---
 
-Comment by cremona created at 2010-01-06 18:22:17
+archive/issue_comments_068087.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-01-06T18:22:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7857",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7857#issuecomment-68087",
+    "user": "cremona"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by spancratz created at 2010-01-06 19:30:08
+archive/issue_comments_068088.json:
+```json
+{
+    "body": "This is only a brief message, in case someone is considering reviewing this tonight.  I've now tested the entire library (although without the \"long\" option), and this has flagged some type errors, so there isn't much point in reviewing this just yet.  I think this has to do with the fact that in the previous patch I only considered ``AttributeError``s and ``NotImplementedError``s, but forgot about ``TypeError``s.  (There are the only three types that are currently considered in the method ``reduce``.)  I'll fix this tonight and then run the tests again, so a hopefully correct version of the patch will be up tomorrow.\n\nSebastian",
+    "created_at": "2010-01-06T19:30:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7857",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7857#issuecomment-68088",
+    "user": "spancratz"
+}
+```
 
 This is only a brief message, in case someone is considering reviewing this tonight.  I've now tested the entire library (although without the "long" option), and this has flagged some type errors, so there isn't much point in reviewing this just yet.  I think this has to do with the fact that in the previous patch I only considered ``AttributeError``s and ``NotImplementedError``s, but forgot about ``TypeError``s.  (There are the only three types that are currently considered in the method ``reduce``.)  I'll fix this tonight and then run the tests again, so a hopefully correct version of the patch will be up tomorrow.
 
 Sebastian
 
 
+
 ---
 
-Comment by cremona created at 2010-01-06 19:57:28
+archive/issue_comments_068089.json:
+```json
+{
+    "body": "OK -- sounds like you will be dealing with the first point I made anyway.  It should be quick to do a second review though.",
+    "created_at": "2010-01-06T19:57:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7857",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7857#issuecomment-68089",
+    "user": "cremona"
+}
+```
 
 OK -- sounds like you will be dealing with the first point I made anyway.  It should be quick to do a second review though.
 
 
+
 ---
 
-Comment by spancratz created at 2010-01-06 21:51:45
+archive/issue_comments_068090.json:
+```json
+{
+    "body": "Dear John,\n\nThank you for looking at the patch this quickly.\n\nAbout your first point, I agree.  I followed the previous code of the method \"reduce\" in this part, which is why I am not completely sure I'll be able to find out exactly which exceptions might be raised.  But I will look into this.\n\nI think you are also right with your second point.  Of course, when I wrote the code I simply copied the method and replaced the appropriate signs to avoid the unnecessary overhead, but in this context this is probably a bad habit, since the maintainability of the code should take priority over a simple sign swap plus an extra function call.  By the way, the same applies to multiplication and division, too.\n\nI'll aim to complete this tonight or tomorrow.\n\nKind regards,\n\nSebastian\n\nReplying to [comment:3 cremona]:\n> First comment:  Note that the \"second patch\" replaces the first one!\n> \n> I noticed a bare \"except:\"  which is bad style -- it should list the errors expected explicitly.\n> \n> Question:  the code for sub is (of course) almost identical to that for add.  Would it not be better to implement sub by adding the inverse?  I would have thought that the overhead would be trivial, and itmakes the code easier to maintain.\n> \n> The (second) patch applies fine to 4.3 and all tests in sage/rings and sage/schemes/elliptic_curves pass.  (I tested the latter since I seemed to remember some fraction field arithmetic somewhere in there).  I also checked the docs still build ok.\n> \n> I'll tag this as \"needs work\" but it's very minor to fix the exception trapping and (perhaps) replace the subtraction code.",
+    "created_at": "2010-01-06T21:51:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7857",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7857#issuecomment-68090",
+    "user": "spancratz"
+}
+```
 
 Dear John,
 
@@ -127,16 +255,40 @@ Replying to [comment:3 cremona]:
 > I'll tag this as "needs work" but it's very minor to fix the exception trapping and (perhaps) replace the subtraction code.
 
 
+
 ---
+
+archive/issue_comments_068091.json:
+```json
+{
+    "body": "Attachment\n\nThird patch (replacing all previous ones)",
+    "created_at": "2010-01-06T23:37:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7857",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7857#issuecomment-68091",
+    "user": "spancratz"
+}
+```
 
 Attachment
 
 Third patch (replacing all previous ones)
 
 
+
 ---
 
-Comment by spancratz created at 2010-01-07 01:46:03
+archive/issue_comments_068092.json:
+```json
+{
+    "body": "At the moment, the following tests still fail:\n\n\n```\nsage -t  devel/sage-ff/sage/combinat/sf/hall_littlewood.py\nsage -t  devel/sage-ff/sage/combinat/sf/macdonald.py\nsage -t  devel/sage-ff/sage/combinat/sf/sf.py\nsage -t  devel/sage-ff/sage/combinat/sf/jack.py\nsage -t  devel/sage-ff/sage/coding/linear_code.py\nsage -t  devel/sage-ff/sage/algebras/quatalg/quaternion_algebra_element.pyx\nsage -t  devel/sage-ff/sage/matrix/matrix2.pyx\n```\n\n\nAfter taking a first look, it seems that some of these are just positive docstring changes (e.g. a previous ``(-1)/(-1)`` which is now correctly displayed as a ``1``), others are negative changes (e.g. a previous ``1`` now displayed as ``(1/3)/(1/3)``).  However, some ``AttributeError``s are raised for fraction field elements, suggesting that sometimes the numerator or denominator isn't in the ring (of the fraction field).  However, *assuming* that the numerators and denominators of the input to the arithmetic methods belong to the correct ring, I think the code should preserve this and so I should be right to always pass ``coerce=False``.  I could pass ``coerce=True`` to fix these, but assuming I am right (which might not be the case), this would just hide mistakes elsewhere.  In any case, I'll look at these points tomorrow.\n\nSebastian",
+    "created_at": "2010-01-07T01:46:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7857",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7857#issuecomment-68092",
+    "user": "spancratz"
+}
+```
 
 At the moment, the following tests still fail:
 
@@ -157,14 +309,38 @@ After taking a first look, it seems that some of these are just positive docstri
 Sebastian
 
 
+
 ---
 
-Comment by spancratz created at 2010-01-07 02:36:57
+archive/issue_comments_068093.json:
+```json
+{
+    "body": "Fourth patch (replacing all previous ones)",
+    "created_at": "2010-01-07T02:36:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7857",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7857#issuecomment-68093",
+    "user": "spancratz"
+}
+```
 
 Fourth patch (replacing all previous ones)
 
 
+
 ---
+
+archive/issue_comments_068094.json:
+```json
+{
+    "body": "Attachment\n\nThis patch should now fix the previously remaining doctest failures.  But I am currently testing everything again tonight and will report back tomorrow.\n\nSebastian",
+    "created_at": "2010-01-07T03:02:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7857",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7857#issuecomment-68094",
+    "user": "spancratz"
+}
+```
 
 Attachment
 
@@ -173,16 +349,38 @@ This patch should now fix the previously remaining doctest failures.  But I am c
 Sebastian
 
 
+
 ---
 
-Comment by robertwb created at 2010-01-07 06:25:41
+archive/issue_comments_068095.json:
+```json
+{
+    "body": "You seem to be catching and silencing a huge number of errors, without explanation (though the code before wasn't too good at that either). Also, what if inverse_of_unit raises a NotImplementedError, shouldn't it still be as reduced as possible?",
+    "created_at": "2010-01-07T06:25:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7857",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7857#issuecomment-68095",
+    "user": "robertwb"
+}
+```
 
 You seem to be catching and silencing a huge number of errors, without explanation (though the code before wasn't too good at that either). Also, what if inverse_of_unit raises a NotImplementedError, shouldn't it still be as reduced as possible?
 
 
+
 ---
 
-Comment by spancratz created at 2010-01-07 11:26:16
+archive/issue_comments_068096.json:
+```json
+{
+    "body": "Firstly, I wanted to say that the most recent patch file now passes all doctests on my machine.\n\nIt is definitely true that a lot of errors are silenced.  But this is done in essentially the same way as before, where, whenever ``reduce`` was called from ``__init__``, the three kinds of errors (``AttributeError``, ``NotImplementedError``, and ``TypeError``) were converted to an ``ArithmeticError``, which was then silenced in ``__init__``.  That is, the user would only actually see the errors if he called ``reduce`` directly.\n\nOf course, I am not entirely sure about this, but I think the behaviour might have been intended.  For example, I don't think someone using fraction fields of non-Euclidean PIDs or Euclidean domains without a GCD implementation should have to wrap all his basic arithmetic calls in ``try ... except``.  On the other hand, if someone explicitly calls ``reduce``, the exceptions should be raised and the caller ought to deal with them.  What do you think, Robert?\n\nAbout the second point, I had the impression that for rings the method ``inverse_of_unit`` was either implemented or not, rather than it being implemented only to return a ``NotImplementedError``, which is why I am only catching ``AttributeError``s.  However, if this is not the case, then I agree with you, ``NotImplementedError``s should be handled in exactly the same way as ``AttributeError``s in this place.  Could you please comment on this?\n\nThanks,\n\nSebastian\n\nReplying to [comment:10 robertwb]:\n> You seem to be catching and silencing a huge number of errors, without explanation (though the code before wasn't too good at that either). Also, what if inverse_of_unit raises a NotImplementedError, shouldn't it still be as reduced as possible?",
+    "created_at": "2010-01-07T11:26:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7857",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7857#issuecomment-68096",
+    "user": "spancratz"
+}
+```
 
 Firstly, I wanted to say that the most recent patch file now passes all doctests on my machine.
 
@@ -200,21 +398,56 @@ Replying to [comment:10 robertwb]:
 > You seem to be catching and silencing a huge number of errors, without explanation (though the code before wasn't too good at that either). Also, what if inverse_of_unit raises a NotImplementedError, shouldn't it still be as reduced as possible?
 
 
+
 ---
 
-Comment by spancratz created at 2010-01-07 11:26:16
+archive/issue_comments_068097.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-01-07T11:26:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7857",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7857#issuecomment-68097",
+    "user": "spancratz"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by spancratz created at 2010-01-09 02:37:58
+archive/issue_comments_068098.json:
+```json
+{
+    "body": "Fifth patch (replacing all previous ones)",
+    "created_at": "2010-01-09T02:37:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7857",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7857#issuecomment-68098",
+    "user": "spancratz"
+}
+```
 
 Fifth patch (replacing all previous ones)
 
 
+
 ---
+
+archive/issue_comments_068099.json:
+```json
+{
+    "body": "Attachment\n\nI've made three further improvements:\n\n- I've now incorporated Robert's suggestion to catch ``NotImplementedError``s, too.  \n- I've improved the method for computing the derivative further, noting that the second GCD computation was unnecessary since at that point in the computation the result was in lowest terms already.\n- I've added some test cases to the method ``_derivative``.\n\nSebastian",
+    "created_at": "2010-01-09T02:47:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7857",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7857#issuecomment-68099",
+    "user": "spancratz"
+}
+```
 
 Attachment
 
@@ -227,40 +460,84 @@ I've made three further improvements:
 Sebastian
 
 
+
 ---
 
-Comment by cremona created at 2010-01-10 14:20:26
+archive/issue_comments_068100.json:
+```json
+{
+    "body": "This looks pretty good, and I am checking it now (as it touches so many places I am doing a full test on both 32 and 64 bit machines).\n\nTwo small points:\n1. If you have several \"except\" clauses each with the same action, you can combine them thus:\n\n```\n    except (AttributeError, NotImplementedError, TypeError):\n```\n\n2. It's a bit perverse to call the num and den of \"self\" rnum and rden whle calling those of \"right\" snum and sden.   However, swapping the over without introducing any bugs would not be trivial!\n\nI will report back when the full tests have finished.",
+    "created_at": "2010-01-10T14:20:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7857",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7857#issuecomment-68100",
+    "user": "cremona"
+}
+```
 
 This looks pretty good, and I am checking it now (as it touches so many places I am doing a full test on both 32 and 64 bit machines).
 
 Two small points:
-    1. If you have several "except" clauses each with the same action, you can combine them thus:
+1. If you have several "except" clauses each with the same action, you can combine them thus:
 
 ```
     except (AttributeError, NotImplementedError, TypeError):
 ```
 
-   2. It's a bit perverse to call the num and den of "self" rnum and rden whle calling those of "right" snum and sden.   However, swapping the over without introducing any bugs would not be trivial!
+2. It's a bit perverse to call the num and den of "self" rnum and rden whle calling those of "right" snum and sden.   However, swapping the over without introducing any bugs would not be trivial!
 
 I will report back when the full tests have finished.
 
 
+
 ---
 
-Comment by cremona created at 2010-01-10 15:48:41
+archive/issue_comments_068101.json:
+```json
+{
+    "body": "OK, all tests pass on both 32 and 64 bit.  Hence positive review, as the points I made above are purely cosmetic.",
+    "created_at": "2010-01-10T15:48:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7857",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7857#issuecomment-68101",
+    "user": "cremona"
+}
+```
 
 OK, all tests pass on both 32 and 64 bit.  Hence positive review, as the points I made above are purely cosmetic.
 
 
+
 ---
 
-Comment by cremona created at 2010-01-10 15:48:41
+archive/issue_comments_068102.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-01-10T15:48:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7857",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7857#issuecomment-68102",
+    "user": "cremona"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by rlm created at 2010-01-13 08:10:46
+archive/issue_comments_068103.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-13T08:10:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7857",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7857#issuecomment-68103",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed

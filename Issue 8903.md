@@ -1,11 +1,21 @@
 # Issue 8903: update pynac to 0.2.0
 
-Issue created by migration from https://trac.sagemath.org/ticket/8903
-
-Original creator: burcin
-
-Original creation time: 2010-05-06 04:08:57
-
+archive/issues_008903.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  mhansen\n\nKeywords: pynac\n\nA new pynac package with several critical fixes is available here:\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.2.0.spkg\n\nIt contains fixes for:\n\n* #8542: function table for Cygwin\n* #8651: binomial(n, 0) -> 1\n* #8688: extra parenthesis when typesetting fractions\n* #8775: auto evaluation of conjugates\n\nNote that patches from the above tickets need to be applied to test this ticket. Without #8542, you'll get a segfault. The others fix doctests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8903\n\n",
+    "created_at": "2010-05-06T04:08:57Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "update pynac to 0.2.0",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8903",
+    "user": "burcin"
+}
+```
 Assignee: tbd
 
 CC:  mhansen
@@ -18,38 +28,86 @@ http://sage.math.washington.edu/home/burcin/pynac/pynac-0.2.0.spkg
 
 It contains fixes for:
 
- * #8542: function table for Cygwin
- * #8651: binomial(n, 0) -> 1
- * #8688: extra parenthesis when typesetting fractions
- * #8775: auto evaluation of conjugates
+* #8542: function table for Cygwin
+* #8651: binomial(n, 0) -> 1
+* #8688: extra parenthesis when typesetting fractions
+* #8775: auto evaluation of conjugates
 
 Note that patches from the above tickets need to be applied to test this ticket. Without #8542, you'll get a segfault. The others fix doctests.
+
+Issue created by migration from https://trac.sagemath.org/ticket/8903
+
+
+
 
 
 ---
 
-Comment by burcin created at 2010-05-06 04:32:29
+archive/issue_comments_081950.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-05-06T04:32:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8903",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8903#issuecomment-81950",
+    "user": "burcin"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by burcin created at 2010-05-06 18:04:32
+archive/issue_comments_081951.json:
+```json
+{
+    "body": "This package depends on the Python package at #8907.",
+    "created_at": "2010-05-06T18:04:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8903",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8903#issuecomment-81951",
+    "user": "burcin"
+}
+```
 
 This package depends on the Python package at #8907.
 
 
+
 ---
 
-Comment by burcin created at 2010-05-23 15:10:17
+archive/issue_comments_081952.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-05-23T15:10:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8903",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8903#issuecomment-81952",
+    "user": "burcin"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by burcin created at 2010-05-23 15:10:17
+archive/issue_comments_081953.json:
+```json
+{
+    "body": "The last patch for conjugates and power simplification included in this pynac version breaks doctests in `sage/rings/qqbar.py` and a bunch of other places.\n\nI suppose the fix will involve looking into the `power_helper` in detail, hopefully fixing #8959 on the way. I won't have time for this at least for a week though.\n\nIf anybody is interested in working on the cygwin port, I can prepare a package which includes only the patches relevant for that in the mean time.",
+    "created_at": "2010-05-23T15:10:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8903",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8903#issuecomment-81953",
+    "user": "burcin"
+}
+```
 
 The last patch for conjugates and power simplification included in this pynac version breaks doctests in `sage/rings/qqbar.py` and a bunch of other places.
 
@@ -58,51 +116,128 @@ I suppose the fix will involve looking into the `power_helper` in detail, hopefu
 If anybody is interested in working on the cygwin port, I can prepare a package which includes only the patches relevant for that in the mean time.
 
 
+
 ---
 
-Comment by mhansen created at 2010-05-25 22:19:09
+archive/issue_comments_081954.json:
+```json
+{
+    "body": "I've put a new spkg up at http://sage.math.washington.edu/home/burcin/pynac/pynac-0.2.0.spkg .  This just has a simple fix for #9307.",
+    "created_at": "2010-05-25T22:19:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8903",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8903#issuecomment-81954",
+    "user": "mhansen"
+}
+```
 
 I've put a new spkg up at http://sage.math.washington.edu/home/burcin/pynac/pynac-0.2.0.spkg .  This just has a simple fix for #9307.
 
 
+
 ---
 
-Comment by mhansen created at 2010-05-25 22:19:34
+archive/issue_comments_081955.json:
+```json
+{
+    "body": "err, #8907",
+    "created_at": "2010-05-25T22:19:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8903",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8903#issuecomment-81955",
+    "user": "mhansen"
+}
+```
 
 err, #8907
 
 
+
 ---
 
-Comment by mhansen created at 2010-05-25 22:20:47
+archive/issue_comments_081956.json:
+```json
+{
+    "body": "Third time is the charm: #9037",
+    "created_at": "2010-05-25T22:20:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8903",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8903#issuecomment-81956",
+    "user": "mhansen"
+}
+```
 
 Third time is the charm: #9037
 
 
+
 ---
 
-Comment by mhansen created at 2010-05-26 02:19:35
+archive/issue_comments_081957.json:
+```json
+{
+    "body": "I've made a new spkg at  http://sage.math.washington.edu/home/burcin/pynac/pynac-0.2.0.spkg which just backs out the commit which adds \"auto evaluation of conjugates\".  All tests in qqbar pass.  We can add the auto evaluation of conjugates in 0.2.1.",
+    "created_at": "2010-05-26T02:19:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8903",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8903#issuecomment-81957",
+    "user": "mhansen"
+}
+```
 
 I've made a new spkg at  http://sage.math.washington.edu/home/burcin/pynac/pynac-0.2.0.spkg which just backs out the commit which adds "auto evaluation of conjugates".  All tests in qqbar pass.  We can add the auto evaluation of conjugates in 0.2.1.
 
 
+
 ---
 
-Comment by was created at 2010-05-28 19:32:12
+archive/issue_comments_081958.json:
+```json
+{
+    "body": "I merged in   http://sage.math.washington.edu/home/burcin/pynac/pynac-0.2.0.spkg",
+    "created_at": "2010-05-28T19:32:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8903",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8903#issuecomment-81958",
+    "user": "was"
+}
+```
 
 I merged in   http://sage.math.washington.edu/home/burcin/pynac/pynac-0.2.0.spkg
 
 
+
 ---
 
-Comment by was created at 2010-05-28 19:32:12
+archive/issue_comments_081959.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-05-28T19:32:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8903",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8903#issuecomment-81959",
+    "user": "was"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by drkirkby created at 2010-05-30 12:06:56
+archive/issue_comments_081960.json:
+```json
+{
+    "body": "Despite Mike's comments on #9037, this does not resolve the issue there, as it still has:\n\n\n```\nif [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then\n    echo \"64 bit MacIntel\"\n    CXXFLAGS=\"-m64 -O2 -g\"; export CXXFLAGS\n    LDFLAGS=\"-m64\"; export LDFLAGS\nfi\n```\n\n\nI'll have to create a new package based on this one and apply the fix again. \n\nDave",
+    "created_at": "2010-05-30T12:06:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8903",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8903#issuecomment-81960",
+    "user": "drkirkby"
+}
+```
 
 Despite Mike's comments on #9037, this does not resolve the issue there, as it still has:
 
@@ -121,9 +256,20 @@ I'll have to create a new package based on this one and apply the fix again.
 Dave
 
 
+
 ---
 
-Comment by burcin created at 2010-05-30 12:12:25
+archive/issue_comments_081961.json:
+```json
+{
+    "body": "Hi Dave,\n\nWhich package are you looking at. Unfortunately, there are several packages named pynac-0.2.0.spkg floating around. My version at\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.2.0.spkg\n\ndoesn't have the said fix, but Mike's version at \n\nhttp://sage.math.washington.edu/home/mhansen/pynac-0.2.0.spkg\n\nmight do. I believe the version included in the release is the latter.",
+    "created_at": "2010-05-30T12:12:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8903",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8903#issuecomment-81961",
+    "user": "burcin"
+}
+```
 
 Hi Dave,
 
@@ -138,9 +284,20 @@ http://sage.math.washington.edu/home/mhansen/pynac-0.2.0.spkg
 might do. I believe the version included in the release is the latter.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-05-30 12:53:44
+archive/issue_comments_081962.json:
+```json
+{
+    "body": "Replying to [comment:12 burcin]:\n> Hi Dave,\n> \n> Which package are you looking at. Unfortunately, there are several packages named pynac-0.2.0.spkg floating around. My version at\n> \n> http://sage.math.washington.edu/home/burcin/pynac/pynac-0.2.0.spkg\n> \n> doesn't have the said fix, but Mike's version at \n> \n> http://sage.math.washington.edu/home/mhansen/pynac-0.2.0.spkg\n> \n> might do. I believe the version included in the release is the latter.\n\nI often wish there was a central repository, as having different versions and constant rebasing does get a bit annoying. \n\nMike's version at http://sage.math.washington.edu/home/mhansen/pynac-0.2.0.spkg does have the fix, but the only version mentioned on this trac ticket was yours at http://sage.math.washington.edu/home/burcin/pynac/pynac-0.2.0.spkg which does not have the fix. The comment from William was \n\n\"I merged in  http://sage.math.washington.edu/home/burcin/pynac/pynac-0.2.0.spkg\"\n\nso I can only assume your version, and not Mikes is merged. \n\nActually, it appears changing\n\n```\nif [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then\n```\n\nto \n\n```\nif [ \"$SAGE64\" = \"yes\" ]; then\n```\n\n\n(as in Mike's version), does not fully solve the 64-bit build issue on OpenSolaris. However, it is certainly a desirable change, so if you make any more changes to pynac, can you change that one line. \n\nIn the mean time, I'll work on trying to resolve why that is not a complete fix for the 64-bit OpenSolaris issue, but it is certainly a necessary change. \n\nDave",
+    "created_at": "2010-05-30T12:53:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8903",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8903#issuecomment-81962",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:12 burcin]:
 > Hi Dave,
@@ -183,16 +340,38 @@ In the mean time, I'll work on trying to resolve why that is not a complete fix 
 Dave
 
 
+
 ---
 
-Comment by mhansen created at 2010-05-30 18:16:08
+archive/issue_comments_081963.json:
+```json
+{
+    "body": "I'll make sure that mine is the one in 4.4.3.alpha1.",
+    "created_at": "2010-05-30T18:16:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8903",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8903#issuecomment-81963",
+    "user": "mhansen"
+}
+```
 
 I'll make sure that mine is the one in 4.4.3.alpha1.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-05-30 18:48:06
+archive/issue_comments_081964.json:
+```json
+{
+    "body": "Replying to [comment:14 mhansen]:\n> I'll make sure that mine is the one in 4.4.3.alpha1.\n\nThe ticket says Burchin's package has already been merged in sage-4.4.3.alpha1 - whether it is possible to reverse that easily I don't know. \n\nDave",
+    "created_at": "2010-05-30T18:48:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8903",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8903#issuecomment-81964",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:14 mhansen]:
 > I'll make sure that mine is the one in 4.4.3.alpha1.

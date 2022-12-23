@@ -1,16 +1,26 @@
 # Issue 7373: [with spkg; needs review] Disable assembly code in libgcrypt on Solaris x86 & rare platforms.
 
-Issue created by migration from https://trac.sagemath.org/ticket/7373
-
-Original creator: drkirkby
-
-Original creation time: 2009-11-02 01:05:58
-
+archive/issues_007373.json:
+```json
+{
+    "body": "Assignee: drkirkby\n\nOn my Sun Ultra 27, which has a quad core Xeon, running OpenSolaris 06/2009, libgrcypt would not build. The error message indicated it was related to the use of assembly code. \n\nHowever, I believe libgcrypt did not cause an issue on 'disk.math', so I'm somewhat surprised it did on my Ultra 27. But I think it is safer to disable assembly language on all Solaris x86 systems. (It is **not** necessary to do so on Solaris on SPARC)\n\nI also added some tests for other platforms (AIX, HP-UX, Tru64 and IRIX) and disabled assembly language on them too. It is most unlikely assembly code for them will work, and I hope to try at least some of these platforms in the near future. \n\nThe only updates are to spkg-install and SPKG.txt. The revised files will be put into \n\nhttp://sage.math.washington.edu/home/kirkby/Solaris-fixes/libgcrypt-1.4.4.p1 \n\nwithin 30 minutes of this post. (I thought I'd get the trac ticket in first, so the trac number can go into the SPKG.txt)\n\n\n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/7373\n\n",
+    "created_at": "2009-11-02T01:05:58Z",
+    "labels": [
+        "porting",
+        "major",
+        "bug"
+    ],
+    "title": "[with spkg; needs review] Disable assembly code in libgcrypt on Solaris x86 & rare platforms.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7373",
+    "user": "drkirkby"
+}
+```
 Assignee: drkirkby
 
 On my Sun Ultra 27, which has a quad core Xeon, running OpenSolaris 06/2009, libgrcypt would not build. The error message indicated it was related to the use of assembly code. 
 
-However, I believe libgcrypt did not cause an issue on 'disk.math', so I'm somewhat surprised it did on my Ultra 27. But I think it is safer to disable assembly language on all Solaris x86 systems. (It is *not* necessary to do so on Solaris on SPARC)
+However, I believe libgcrypt did not cause an issue on 'disk.math', so I'm somewhat surprised it did on my Ultra 27. But I think it is safer to disable assembly language on all Solaris x86 systems. (It is **not** necessary to do so on Solaris on SPARC)
 
 I also added some tests for other platforms (AIX, HP-UX, Tru64 and IRIX) and disabled assembly language on them too. It is most unlikely assembly code for them will work, and I hope to try at least some of these platforms in the near future. 
 
@@ -24,30 +34,78 @@ within 30 minutes of this post. (I thought I'd get the trac ticket in first, so 
 
 Dave
 
+Issue created by migration from https://trac.sagemath.org/ticket/7373
+
+
+
+
 
 ---
 
-Comment by drkirkby created at 2009-11-02 04:25:32
+archive/issue_comments_061772.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-11-02T04:25:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7373",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7373#issuecomment-61772",
+    "user": "drkirkby"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mhansen created at 2009-11-02 04:58:22
+archive/issue_comments_061773.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-11-02T04:58:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7373",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7373#issuecomment-61773",
+    "user": "mhansen"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mhansen created at 2009-11-02 04:58:22
+archive/issue_comments_061774.json:
+```json
+{
+    "body": "Looks good to me.",
+    "created_at": "2009-11-02T04:58:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7373",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7373#issuecomment-61774",
+    "user": "mhansen"
+}
+```
 
 Looks good to me.
 
 
+
 ---
 
-Comment by mhansen created at 2009-11-02 05:48:52
+archive/issue_comments_061775.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-11-02T05:48:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7373",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7373#issuecomment-61775",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

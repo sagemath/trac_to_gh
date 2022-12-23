@@ -1,21 +1,46 @@
 # Issue 9827: Upgrade to Cython 0.13
 
-Issue created by migration from https://trac.sagemath.org/ticket/9828
-
-Original creator: mpatel
-
-Original creation time: 2010-08-28 00:36:27
-
+archive/issues_009827.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  robertwb leif jason craigcitro timdumol mpatel\n\n[Here](http://wiki.cython.org/ReleaseNotes-0.13) are the release notes for [Cython](http://www.cython.org/) 0.13.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9828\n\n",
+    "created_at": "2010-08-28T00:36:27Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "enhancement"
+    ],
+    "title": "Upgrade to Cython 0.13",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9827",
+    "user": "mpatel"
+}
+```
 Assignee: tbd
 
 CC:  robertwb leif jason craigcitro timdumol mpatel
 
 [Here](http://wiki.cython.org/ReleaseNotes-0.13) are the release notes for [Cython](http://www.cython.org/) 0.13.
 
+Issue created by migration from https://trac.sagemath.org/ticket/9828
+
+
+
+
 
 ---
 
-Comment by leif created at 2010-09-15 16:56:34
+archive/issue_comments_096944.json:
+```json
+{
+    "body": "\n```\n...\nbyte-compiling /home/leif/Sage/sage-4.6.alpha0/local/lib/python2.6/site-packages/Cython/Compiler/Tests/TestBuffer.py to TestBuffer.pyc\nrunning install_scripts\ncopying build/scripts-2.6/cython -> /home/leif/Sage/sage-4.6.alpha0/local/bin\nchanging mode of /home/leif/Sage/sage-4.6.alpha0/local/bin/cython to 755\nrunning install_egg_info\nWriting /home/leif/Sage/sage-4.6.alpha0/local/lib/python2.6/site-packages/Cython-0.13-py2.6.egg-info\n\nreal\t0m33.965s\nuser\t0m28.080s\nsys\t0m0.800s\nSuccessfully installed cython-0.13\nNow cleaning up tmp files.\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing cython-0.13.spkg\n$ ./sage -ba-force\n*** TOUCHING ALL CYTHON (.pyx) FILES ***\nscons: `install' is up to date.\n\n----------------------------------------------------------\nsage: Building and installing modified Sage library files.\n\n\nInstalling c_lib\nscons: `install' is up to date.\nUpdating Cython code....\nBuilding modified file sage/algebras/quatalg/quaternion_algebra_element.pyx.\nBuilding modified file sage/algebras/quatalg/quaternion_algebra_cython.pyx.\nBuilding modified file sage/calculus/var.pyx.\nBuilding modified file sage/calculus/riemann.pyx.\nBuilding modified file sage/calculus/interpolators.pyx.\nBuilding modified file sage/categories/action.pyx.\nBuilding modified file sage/categories/functor.pyx.\nBuilding modified file sage/categories/map.pyx.\nBuilding modified file sage/categories/morphism.pyx.\nBuilding modified file sage/categories/examples/semigroups_cython.pyx.\nBuilding modified file sage/coding/binary_code.pyx.\nBuilding modified file sage/combinat/expnums.pyx.\nBuilding modified file sage/combinat/matrices/dancing_links.pyx.\nBuilding modified file sage/combinat/partitions.pyx.\nBuilding modified file sage/combinat/words/word_datatypes.pyx.\nBuilding modified file sage/combinat/permutation_cython.pyx.\nBuilding modified file sage/crypto/boolean_function.pyx.\nBuilding modified file sage/ext/fast_callable.pyx.\nBuilding modified file sage/ext/fast_eval.pyx.\nBuilding modified file sage/ext/interactive_constructors_c.pyx.\nBuilding modified file sage/ext/multi_modular.pyx.\nBuilding modified file sage/ext/sig.pyx.\nBuilding modified file sage/finance/fractal.pyx.\nBuilding modified file sage/finance/markov_multifractal_cython.pyx.\nBuilding modified file sage/finance/time_series.pyx.\nBuilding modified file sage/functions/prime_pi.pyx.\nBuilding modified file sage/games/sudoku_backtrack.pyx.\nBuilding modified file sage/geometry/toric_lattice_element.pyx.\nBuilding modified file sage/graphs/chrompoly.pyx.\nBuilding modified file sage/graphs/cliquer.pyx.\nBuilding modified file sage/graphs/generic_graph_pyx.pyx.\nBuilding modified file sage/graphs/modular_decomposition/modular_decomposition.pyx.\nBuilding modified file sage/graphs/planarity.pyx.\nBuilding modified file sage/graphs/trees.pyx.\nBuilding modified file sage/graphs/genus.pyx.\nBuilding modified file sage/graphs/base/c_graph.pyx.\nBuilding modified file sage/graphs/base/sparse_graph.pyx.\nBuilding modified file sage/graphs/base/dense_graph.pyx.\nBuilding modified file sage/groups/group.pyx.\nBuilding modified file sage/groups/perm_gps/permgroup_element.pyx.\nBuilding modified file sage/groups/perm_gps/partn_ref/automorphism_group_canonical_label.pyx.\nBuilding modified file sage/groups/perm_gps/partn_ref/double_coset.pyx.\nBuilding modified file sage/groups/perm_gps/partn_ref/refinement_binary.pyx.\nBuilding modified file sage/groups/perm_gps/partn_ref/refinement_graphs.pyx.\nBuilding modified file sage/groups/perm_gps/partn_ref/refinement_lists.pyx.\nBuilding modified file sage/groups/perm_gps/partn_ref/refinement_matrices.pyx.\nBuilding modified file sage/groups/perm_gps/partn_ref/refinement_python.pyx.\nBuilding modified file sage/gsl/callback.pyx.\nBuilding modified file sage/gsl/dwt.pyx.\nBuilding modified file sage/gsl/fft.pyx.\nBuilding modified file sage/gsl/gsl_array.pyx.\nBuilding modified file sage/gsl/integration.pyx.\nBuilding modified file sage/gsl/interpolation.pyx.\nBuilding modified file sage/gsl/ode.pyx.\nBuilding modified file sage/gsl/probability_distribution.pyx.\nBuilding modified file sage/libs/ecl.pyx.\nBuilding modified file sage/libs/flint/flint.pyx.\nBuilding modified file sage/libs/flint/fmpz_poly.pyx.\nBuilding modified file sage/libs/fplll/fplll.pyx.\nBuilding modified file sage/libs/linbox/linbox.pyx.\nBuilding modified file sage/libs/lcalc/lcalc_Lfunction.pyx.\nBuilding modified file sage/libs/libecm.pyx.\nBuilding modified file sage/libs/mwrank/mwrank.pyx.\nBuilding modified file sage/libs/pari/gen.pyx.\nBuilding modified file sage/libs/ratpoints.pyx.\nBuilding modified file sage/libs/singular/singular.pyx.\nBuilding modified file sage/libs/singular/polynomial.pyx.\nBuilding modified file sage/libs/singular/ring.pyx.\nBuilding modified file sage/libs/singular/groebner_strategy.pyx.\nBuilding modified file sage/libs/singular/function.pyx.\nBuilding modified file sage/libs/singular/option.pyx.\nBuilding modified file sage/libs/symmetrica/symmetrica.pyx.\nBuilding modified file sage/libs/mpmath/utils.pyx.\nBuilding modified file sage/libs/mpmath/ext_impl.pyx.\nBuilding modified file sage/libs/mpmath/ext_main.pyx.\nBuilding modified file sage/libs/mpmath/ext_libmp.pyx.\nBuilding modified file sage/libs/cremona/homspace.pyx.\nBuilding modified file sage/libs/cremona/mat.pyx.\nBuilding modified file sage/libs/cremona/newforms.pyx.\nBuilding modified file sage/libs/ntl/ntl_GF2.pyx.\nBuilding modified file sage/libs/ntl/ntl_GF2E.pyx.\nBuilding modified file sage/libs/ntl/ntl_GF2EContext.pyx.\nBuilding modified file sage/libs/ntl/ntl_GF2EX.pyx.\nBuilding modified file sage/libs/ntl/ntl_GF2X.pyx.\nBuilding modified file sage/libs/ntl/ntl_lzz_p.pyx.\nBuilding modified file sage/libs/ntl/ntl_lzz_pContext.pyx.\nBuilding modified file sage/libs/ntl/ntl_lzz_pX.pyx.\nBuilding modified file sage/libs/ntl/ntl_mat_GF2.pyx.\nBuilding modified file sage/libs/ntl/ntl_mat_GF2E.pyx.\nBuilding modified file sage/libs/ntl/ntl_mat_ZZ.pyx.\nBuilding modified file sage/libs/ntl/ntl_ZZ.pyx.\nBuilding modified file sage/libs/ntl/ntl_ZZX.pyx.\nBuilding modified file sage/libs/ntl/ntl_ZZ_p.pyx.\nBuilding modified file sage/libs/ntl/ntl_ZZ_pContext.pyx.\nBuilding modified file sage/libs/ntl/ntl_ZZ_pE.pyx.\nBuilding modified file sage/libs/ntl/ntl_ZZ_pEContext.pyx.\nBuilding modified file sage/libs/ntl/ntl_ZZ_pEX.pyx.\nBuilding modified file sage/libs/ntl/ntl_ZZ_pX.pyx.\nBuilding modified file sage/matrix/action.pyx.\nBuilding modified file sage/matrix/change_ring.pyx.\nBuilding modified file sage/matrix/matrix.pyx.\nBuilding modified file sage/matrix/matrix0.pyx.\nBuilding modified file sage/matrix/matrix1.pyx.\nBuilding modified file sage/matrix/matrix2.pyx.\nBuilding modified file sage/matrix/matrix_complex_double_dense.pyx.\nBuilding modified file sage/matrix/matrix_cyclo_dense.pyx.\nBuilding modified file sage/matrix/matrix_dense.pyx.\nBuilding modified file sage/matrix/matrix_double_dense.pyx.\nBuilding modified file sage/matrix/matrix_generic_dense.pyx.\nBuilding modified file sage/matrix/matrix_generic_sparse.pyx.\nBuilding modified file sage/matrix/matrix_integer_2x2.pyx.\nBuilding modified file sage/matrix/matrix_integer_dense.pyx.\nBuilding modified file sage/matrix/matrix_integer_sparse.pyx.\nBuilding modified file sage/matrix/matrix_mod2_dense.pyx.\nBuilding modified file sage/matrix/matrix_modn_dense.pyx.\nBuilding modified file sage/matrix/matrix_modn_sparse.pyx.\nBuilding modified file sage/matrix/matrix_mpolynomial_dense.pyx.\nBuilding modified file sage/matrix/matrix_rational_dense.pyx.\nBuilding modified file sage/matrix/matrix_rational_sparse.pyx.\nBuilding modified file sage/matrix/matrix_real_double_dense.pyx.\nBuilding modified file sage/matrix/matrix_sparse.pyx.\nBuilding modified file sage/matrix/matrix_symbolic_dense.pyx.\nBuilding modified file sage/matrix/matrix_window.pyx.\nBuilding modified file sage/matrix/matrix_window_modn_dense.pyx.\nBuilding modified file sage/matrix/misc.pyx.\nBuilding modified file sage/matrix/strassen.pyx.\nBuilding modified file sage/media/channels.pyx.\nBuilding modified file sage/misc/allocator.pyx.\nBuilding modified file sage/misc/bitset.pyx.\nBuilding modified file sage/misc/citation.pyx.\nBuilding modified file sage/misc/cython_c.pyx.\nBuilding modified file sage/misc/derivative.pyx.\nBuilding modified file sage/misc/fpickle.pyx.\nBuilding modified file sage/misc/misc_c.pyx.\nBuilding modified file sage/misc/parser.pyx.\nBuilding modified file sage/misc/pickle_old.pyx.\nBuilding modified file sage/misc/randstate.pyx.\nBuilding modified file sage/misc/refcount.pyx.\nBuilding modified file sage/misc/reset.pyx.\nBuilding modified file sage/misc/sage_timeit_class.pyx.\nBuilding modified file sage/misc/sagex_ds.pyx.\nBuilding modified file sage/misc/search.pyx.\nBuilding modified file sage/misc/session.pyx.\nBuilding modified file sage/modular/arithgroup/congroup_pyx.pyx.\nBuilding modified file sage/modular/modform/eis_series_cython.pyx.\nBuilding modified file sage/modular/modsym/apply.pyx.\nBuilding modified file sage/modular/modsym/heilbronn.pyx.\nBuilding modified file sage/modular/modsym/p1list.pyx.\nBuilding modified file sage/modules/free_module_element.pyx.\nBuilding modified file sage/modules/module.pyx.\nBuilding modified file sage/modules/vector_complex_double_dense.pyx.\nBuilding modified file sage/modules/vector_double_dense.pyx.\nBuilding modified file sage/modules/vector_integer_dense.pyx.\nBuilding modified file sage/modules/vector_modn_dense.pyx.\nBuilding modified file sage/modules/vector_mod2_dense.pyx.\nBuilding modified file sage/modules/vector_rational_dense.pyx.\nBuilding modified file sage/modules/vector_real_double_dense.pyx.\nBuilding modified file sage/numerical/mip.pyx.\nBuilding modified file sage/plot/complex_plot.pyx.\nBuilding modified file sage/plot/plot3d/base.pyx.\nBuilding modified file sage/plot/plot3d/implicit_surface.pyx.\nBuilding modified file sage/plot/plot3d/index_face_set.pyx.\nTraceback (most recent call last):\n  File \"setup.py\", line 753, in <module>\n    queue = compile_command_list(ext_modules, deps)\n  File \"setup.py\", line 713, in compile_command_list\n    dep_file, dep_time = deps.newest_dep(f)\n  File \"setup.py\", line 628, in newest_dep\n    for f in self.all_deps(filename):\n  File \"setup.py\", line 611, in all_deps\n    deps.update(self.all_deps(f, path))\n  File \"setup.py\", line 609, in all_deps\n    for f in self.immediate_deps(filename):\n  File \"setup.py\", line 591, in immediate_deps\n    self._deps[filename] = self.parse_deps(filename)\n  File \"setup.py\", line 581, in parse_deps\n    raise IOError, \"could not find dependency %s included in %s.\"%(path, filename)\nIOError: could not find dependency sage/ext/interpreters/python_object.pxd included in sage/ext/interpreters/wrapper_rdf.pxd.\nsage: There was an error installing modified sage library code.\n```\n",
+    "created_at": "2010-09-15T16:56:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96944",
+    "user": "leif"
+}
+```
 
 
 ```
@@ -229,33 +254,77 @@ sage: There was an error installing modified sage library code.
 
 
 
+
 ---
 
-Comment by leif created at 2010-09-15 17:06:47
+archive/issue_comments_096945.json:
+```json
+{
+    "body": "I get the same when trying to reinstall `sage-4.6.alpha0.spkg`, or afterwards again running `./sage -ba`.",
+    "created_at": "2010-09-15T17:06:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96945",
+    "user": "leif"
+}
+```
 
 I get the same when trying to reinstall `sage-4.6.alpha0.spkg`, or afterwards again running `./sage -ba`.
 
 
+
 ---
 
-Comment by leif created at 2010-09-15 17:14:56
+archive/issue_comments_096946.json:
+```json
+{
+    "body": "From the release notes:\n  *\"More shipped standard library declarations. The `python_*` and `stdlib/stdio .pxd` files have been deprecated in favor of `clib.*` and `cpython[.*]` and may get removed in a future release. \"*",
+    "created_at": "2010-09-15T17:14:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96946",
+    "user": "leif"
+}
+```
 
 From the release notes:
-  _"More shipped standard library declarations. The `python_*` and `stdlib/stdio .pxd` files have been deprecated in favor of `clib.*` and `cpython[.*]` and may get removed in a future release. "_
+  *"More shipped standard library declarations. The `python_*` and `stdlib/stdio .pxd` files have been deprecated in favor of `clib.*` and `cpython[.*]` and may get removed in a future release. "*
+
 
 
 ---
 
-Comment by mpatel created at 2010-09-15 19:52:27
+archive/issue_comments_096947.json:
+```json
+{
+    "body": "Did you apply the 8 Sage library patches mentioned [in this sage-devel thread](http://groups.google.com/group/sage-devel/browse_thread/thread/0239f712a39fce4a/ba4e7b77e4de1b10?#ba4e7b77e4de1b10)?\n\nDisclaimer: I haven't checked whether all of these patches are necessary and sufficient for Cython 0.13 final.",
+    "created_at": "2010-09-15T19:52:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96947",
+    "user": "mpatel"
+}
+```
 
 Did you apply the 8 Sage library patches mentioned [in this sage-devel thread](http://groups.google.com/group/sage-devel/browse_thread/thread/0239f712a39fce4a/ba4e7b77e4de1b10?#ba4e7b77e4de1b10)?
 
 Disclaimer: I haven't checked whether all of these patches are necessary and sufficient for Cython 0.13 final.
 
 
+
 ---
 
-Comment by leif created at 2010-09-15 20:04:10
+archive/issue_comments_096948.json:
+```json
+{
+    "body": "Replying to [comment:5 mpatel]:\n> Did you apply the 8 Sage library patches mentioned [in this sage-devel thread](http://groups.google.com/group/sage-devel/browse_thread/thread/0239f712a39fce4a/ba4e7b77e4de1b10?#ba4e7b77e4de1b10)?\n\nNo (I haven't read that thread), I just tried and looked what happens... :)\n\nI've created symbolic links to the pxds in the `Deprecated/` directory and now run (at least) into the missing `from cpython import bool` problem.\n\nI would have expected some more info / notes here or at the Cython site; Volker Braun asked on the IRC when Cython will get updated (I knew there was 0.12.2 and a new release coming up), so I took a look at this ticket.",
+    "created_at": "2010-09-15T20:04:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96948",
+    "user": "leif"
+}
+```
 
 Replying to [comment:5 mpatel]:
 > Did you apply the 8 Sage library patches mentioned [in this sage-devel thread](http://groups.google.com/group/sage-devel/browse_thread/thread/0239f712a39fce4a/ba4e7b77e4de1b10?#ba4e7b77e4de1b10)?
@@ -267,81 +336,236 @@ I've created symbolic links to the pxds in the `Deprecated/` directory and now r
 I would have expected some more info / notes here or at the Cython site; Volker Braun asked on the IRC when Cython will get updated (I knew there was 0.12.2 and a new release coming up), so I took a look at this ticket.
 
 
+
 ---
 
-Comment by robertwb created at 2010-09-16 00:46:05
+archive/issue_comments_096949.json:
+```json
+{
+    "body": "I've got an 0.13 spkg that has a tiny patch on top to fix the performance regression with `__getattr__`. Yes, you need to appply all 8 Sage library patches, though I plan to clean at least one of them up 'cause it's got unnecessary garbage in it. (I was actually working on this last night, and planned to finish it up tonight.)",
+    "created_at": "2010-09-16T00:46:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96949",
+    "user": "robertwb"
+}
+```
 
 I've got an 0.13 spkg that has a tiny patch on top to fix the performance regression with `__getattr__`. Yes, you need to appply all 8 Sage library patches, though I plan to clean at least one of them up 'cause it's got unnecessary garbage in it. (I was actually working on this last night, and planned to finish it up tonight.)
 
 
+
 ---
 
-Comment by robertwb created at 2010-09-16 09:18:13
+archive/issue_comments_096950.json:
+```json
+{
+    "body": "Spkg up at http://sage.math.washington.edu/home/robertwb/cython/cython-0.13.p0.spkg . I'm attaching a set of patches that should be necessary and sufficient.",
+    "created_at": "2010-09-16T09:18:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96950",
+    "user": "robertwb"
+}
+```
 
 Spkg up at http://sage.math.washington.edu/home/robertwb/cython/cython-0.13.p0.spkg . I'm attaching a set of patches that should be necessary and sufficient.
 
 
+
 ---
+
+archive/issue_comments_096951.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-09-16T09:24:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96951",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_096952.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-09-16T09:25:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96952",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_096953.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-09-16T09:25:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96953",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_096954.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-09-16T09:25:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96954",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_096955.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-09-16T09:25:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96955",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_096956.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-09-16T09:26:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96956",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by robertwb created at 2010-09-16 09:27:36
+archive/issue_comments_096957.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-09-16T09:27:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96957",
+    "user": "robertwb"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by robertwb created at 2010-09-16 09:27:36
+archive/issue_comments_096958.json:
+```json
+{
+    "body": "The last one, hudson_results.patch, isn't needed for Sage but makes continuous testing of Sage against cython-devel much easier.",
+    "created_at": "2010-09-16T09:27:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96958",
+    "user": "robertwb"
+}
+```
 
 The last one, hudson_results.patch, isn't needed for Sage but makes continuous testing of Sage against cython-devel much easier.
 
 
+
 ---
 
-Comment by leif created at 2010-09-16 09:34:08
+archive/issue_comments_096959.json:
+```json
+{
+    "body": "`spkg-install` and `SPKG.txt` (Changelog!) need little clean-up. (I made my own spkg yesterday, so I could carry the changes over.)",
+    "created_at": "2010-09-16T09:34:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96959",
+    "user": "leif"
+}
+```
 
 `spkg-install` and `SPKG.txt` (Changelog!) need little clean-up. (I made my own spkg yesterday, so I could carry the changes over.)
 
 
+
 ---
 
-Comment by robertwb created at 2010-09-16 16:12:28
+archive/issue_comments_096960.json:
+```json
+{
+    "body": "Feel free to carry your changes over. SPKG.txt doesn't have a changelog because it's all in the revision control and there's very little to say anyways (other than \"bumped revision\" which is pretty redundant). I'd be happy to review whatever you have.",
+    "created_at": "2010-09-16T16:12:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96960",
+    "user": "robertwb"
+}
+```
 
 Feel free to carry your changes over. SPKG.txt doesn't have a changelog because it's all in the revision control and there's very little to say anyways (other than "bumped revision" which is pretty redundant). I'd be happy to review whatever you have.
 
 
+
 ---
 
-Comment by leif created at 2010-09-16 16:29:15
+archive/issue_comments_096961.json:
+```json
+{
+    "body": "Replying to [comment:13 robertwb]:\n> Feel free to carry your changes over.\n\nOk.\n\n> SPKG.txt doesn't have a changelog because it's all in the revision control and there's very little to say anyways (other than \"bumped revision\" which is pretty redundant).\n\nWell, it wouldn't be bad to see in SPKG.txt which version was packaged when for Sage...\n\nIt's of course (at least currently) unlikely that Sage will patch Cython rather than report problems \"upstream\" and include a (quickly) fixed upstream version.\n\nHope you'll stay at Sage and Cython... ;-)",
+    "created_at": "2010-09-16T16:29:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96961",
+    "user": "leif"
+}
+```
 
 Replying to [comment:13 robertwb]:
 > Feel free to carry your changes over.
@@ -357,81 +581,208 @@ It's of course (at least currently) unlikely that Sage will patch Cython rather 
 Hope you'll stay at Sage and Cython... ;-)
 
 
+
 ---
 
-Comment by leif created at 2010-09-16 16:37:51
+archive/issue_comments_096962.json:
+```json
+{
+    "body": "Funny, my patch (also) intended to avoid exactly the error which is currently made in `spkg-install`. :D\n\nComing soon...",
+    "created_at": "2010-09-16T16:37:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96962",
+    "user": "leif"
+}
+```
 
 Funny, my patch (also) intended to avoid exactly the error which is currently made in `spkg-install`. :D
 
 Coming soon...
 
 
+
 ---
 
-Comment by leif created at 2010-09-16 17:07:14
+archive/issue_comments_096963.json:
+```json
+{
+    "body": "Patch is up.",
+    "created_at": "2010-09-16T17:07:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96963",
+    "user": "leif"
+}
+```
 
 Patch is up.
 
 
+
 ---
 
-Comment by robertwb created at 2010-09-16 17:21:44
+archive/issue_comments_096964.json:
+```json
+{
+    "body": "Looks fine to me, except that the change was to speed up `__getattr__` not `__getitem__` (specifically for Python descendants of cdef classes).",
+    "created_at": "2010-09-16T17:21:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96964",
+    "user": "robertwb"
+}
+```
 
 Looks fine to me, except that the change was to speed up `__getattr__` not `__getitem__` (specifically for Python descendants of cdef classes).
 
 
+
 ---
 
-Comment by leif created at 2010-09-16 17:23:22
+archive/issue_comments_096965.json:
+```json
+{
+    "body": "Oooops...",
+    "created_at": "2010-09-16T17:23:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96965",
+    "user": "leif"
+}
+```
 
 Oooops...
 
 
+
 ---
+
+archive/issue_comments_096966.json:
+```json
+{
+    "body": "Attachment\n\nSPKG patch. As the name says... (also quotes SAGE_LOCAL; some clean-up) Now with corrected SPKG.txt (__getattr__).",
+    "created_at": "2010-09-16T17:54:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96966",
+    "user": "leif"
+}
+```
 
 Attachment
 
 SPKG patch. As the name says... (also quotes SAGE_LOCAL; some clean-up) Now with corrected SPKG.txt (__getattr__).
 
 
+
 ---
 
-Comment by leif created at 2010-09-16 17:57:19
+archive/issue_comments_096967.json:
+```json
+{
+    "body": "I've replaced the patch with a corrected one (`__getitem__()` -> `__getattr__()` in the changelog).",
+    "created_at": "2010-09-16T17:57:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96967",
+    "user": "leif"
+}
+```
 
 I've replaced the patch with a corrected one (`__getitem__()` -> `__getattr__()` in the changelog).
 
 
+
 ---
+
+archive/issue_comments_096968.json:
+```json
+{
+    "body": "Attachment\n\napply to sage local repo",
+    "created_at": "2010-09-17T07:01:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96968",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 apply to sage local repo
 
 
+
 ---
+
+archive/issue_comments_096969.json:
+```json
+{
+    "body": "Attachment\n\nOkay, now I'm really confused about what patches I should apply where to review this.  Can someone give directions for reviewing?  Thanks!",
+    "created_at": "2010-09-28T22:53:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96969",
+    "user": "jason"
+}
+```
 
 Attachment
 
 Okay, now I'm really confused about what patches I should apply where to review this.  Can someone give directions for reviewing?  Thanks!
 
 
+
 ---
 
-Comment by robertwb created at 2010-09-29 07:38:58
+archive/issue_comments_096970.json:
+```json
+{
+    "body": "Thanks for being willing to take a look. Apply patches 0-7 and hudson_results.patch to the sage library in order. I have incorporated trac_9828-fix_applying_patch_and_more-spkg.patch into the spkg (at the same address as above). sage-local-hudson.patch gets applied to sage/local/bin. If you have any other questions, please don't hesitate to ask.",
+    "created_at": "2010-09-29T07:38:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96970",
+    "user": "robertwb"
+}
+```
 
 Thanks for being willing to take a look. Apply patches 0-7 and hudson_results.patch to the sage library in order. I have incorporated trac_9828-fix_applying_patch_and_more-spkg.patch into the spkg (at the same address as above). sage-local-hudson.patch gets applied to sage/local/bin. If you have any other questions, please don't hesitate to ask.
 
 
+
 ---
 
-Comment by leif created at 2010-09-30 05:29:56
+archive/issue_comments_096971.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-09-30T05:29:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96971",
+    "user": "leif"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by leif created at 2010-09-30 05:29:56
+archive/issue_comments_096972.json:
+```json
+{
+    "body": "Hmmm, patches still apply (without rejects) to Sage 4.6.alpha2[pre2], spkg installs ok, and `./sage -b` also works.\n\nBut after that, Sage doesn't start (Sphinx raises the same exception):\n\n```\n...\nTesting that Sage starts...\nTraceback (most recent call last):\n  File \"/home/leif/Sage/sage-4.6.alpha2pre2/local/bin/sage-eval\", line 4, in <module>\n    from sage.all import *\n  File \"/home/leif/Sage/sage-4.6.alpha2pre2/local/lib/python2.6/site-packages/sage/all.py\", line 64, in <module>\n    from sage.misc.all       import *         # takes a while\n  File \"/home/leif/Sage/sage-4.6.alpha2pre2/local/lib/python2.6/site-packages/sage/misc/all.py\", line 67, in <module>\n    from sage_input import sage_input\n  File \"/home/leif/Sage/sage-4.6.alpha2pre2/local/lib/python2.6/site-packages/sage/misc/sage_input.py\", line 163, in <module>\n    from sage.misc.functional import parent\n  File \"/home/leif/Sage/sage-4.6.alpha2pre2/local/lib/python2.6/site-packages/sage/misc/functional.py\", line 34, in <module>\n    import sage.interfaces.expect\n  File \"/home/leif/Sage/sage-4.6.alpha2pre2/local/lib/python2.6/site-packages/sage/interfaces/expect.py\", line 52, in <module>\n    from sage.structure.parent_base import ParentWithBase\n  File \"parent_base.pyx\", line 1, in init sage.structure.parent_base (sage/structure/parent_base.c:1934)\n  File \"parent_old.pyx\", line 1, in init sage.structure.parent_old (sage/structure/parent_old.c:7031)\n  File \"parent.pyx\", line 383, in init sage.structure.parent (sage/structure/parent.c:20048)\nAttributeError: type object 'sage.structure.parent.Parent' has no attribute '__getattr__'\nSage failed to startup.\nmake: *** [ptestlong] Error 1\n```\n\n\n`./sage -ba` (tried after that) doesn't work either, due to newly merged Cython code:\n\n```\n*** TOUCHING ALL CYTHON (.pyx) FILES ***\nscons: `install' is up to date.\n\n----------------------------------------------------------\nsage: Building and installing modified Sage library files.\n\n\nInstalling c_lib\nscons: `install' is up to date.\nUpdating Cython code....\nBuilding modified file sage/algebras/quatalg/quaternion_algebra_element.pyx.\nBuilding modified file sage/algebras/quatalg/quaternion_algebra_cython.pyx.\nBuilding modified file sage/calculus/var.pyx.\n...\nBuilding modified file sage/ext/interpreters/wrapper_rr.pyx.\nBuilding modified file sage/ext/interpreters/wrapper_py.pyx.\nBuilding modified file sage/ext/interpreters/wrapper_el.pyx.\nExecute 271 commands (using 8 threads)\n\nError converting Pyrex file to C:\n------------------------------------------------------------\n...\n    cdef int *vertices\n    cdef int **line_h_out\n    cdef int **line_h_in\n    cdef list g_vertices\n    cdef int i\n    cdef bool directed\n        ^\n------------------------------------------------------------\n\n/home/leif/Sage/sage-4.6.alpha2pre2/devel/sage-9828-cython/sage/graphs/generic_graph_pyx.pxd:26:9: 'bool' is not a type identifier\n...\npython `which cython` --embed-positions --directive cdivision=True,autotestdict=False -I/home/leif/Sage/sage-4.6.alpha2pre2/devel/sage-9828-cython -o sage/gsl/callback.c sage/gsl/callback.pyx\nsage/gsl/callback.pyx --> /home/leif/Sage/sage-4.6.alpha2pre2/local//lib/python/site-packages//sage/gsl/callback.pyx\npython `which cython` --embed-positions --directive cdivision=True,autotestdictwarning: /home/leif/Sage/sage-4.6.alpha2pre2/devel/sage-9828-cython/sage/gsl/gsl_array.pyx:1:0: __getslice__, __setslice__, and __delslice__ are not supported by Python 3, use __getitem__, __setitem__, and __delitem__ instead\nwarning: /home/leif/Sage/sage-4.6.alpha2pre2/devel/sage-9828-cython/sage/gsl/fft.pyx:1:0: __getslice__, __setslice__, and __delslice__ are not supported by Python 3, use __getitem__, __setitem__, and __delitem__ instead\nError running command, failed with status 256.\nsage: There was an error installing modified sage library code.\n```\n",
+    "created_at": "2010-09-30T05:29:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96972",
+    "user": "leif"
+}
+```
 
 Hmmm, patches still apply (without rejects) to Sage 4.6.alpha2[pre2], spkg installs ok, and `./sage -b` also works.
 
@@ -508,16 +859,38 @@ sage: There was an error installing modified sage library code.
 
 
 
+
 ---
 
-Comment by jason created at 2010-09-30 05:34:57
+archive/issue_comments_096973.json:
+```json
+{
+    "body": "Looks like a bool->bint was missed?",
+    "created_at": "2010-09-30T05:34:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96973",
+    "user": "jason"
+}
+```
 
 Looks like a bool->bint was missed?
 
 
+
 ---
 
-Comment by robertwb created at 2010-09-30 16:04:10
+archive/issue_comments_096974.json:
+```json
+{
+    "body": "Replying to [comment:23 jason]:\n> Looks like a bool->bint was missed?\n\nOr added since this spkg was created--it used to all work fine. I suppose I'll download the latest alpha and see what's up.",
+    "created_at": "2010-09-30T16:04:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96974",
+    "user": "robertwb"
+}
+```
 
 Replying to [comment:23 jason]:
 > Looks like a bool->bint was missed?
@@ -525,23 +898,58 @@ Replying to [comment:23 jason]:
 Or added since this spkg was created--it used to all work fine. I suppose I'll download the latest alpha and see what's up.
 
 
+
 ---
 
-Comment by robertwb created at 2010-10-01 08:33:51
+archive/issue_comments_096975.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-10-01T08:33:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96975",
+    "user": "robertwb"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
+
+archive/issue_comments_096976.json:
+```json
+{
+    "body": "Attachment\n\nOK, one more patch, and an updated spkg.",
+    "created_at": "2010-10-01T08:33:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96976",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 OK, one more patch, and an updated spkg.
 
 
+
 ---
 
-Comment by jason created at 2010-10-05 03:37:13
+archive/issue_comments_096977.json:
+```json
+{
+    "body": "I see Craig is the author of a lot of the patches.  robertwb: have you reviewed those patches?  Which patches still need review?\n\nI applied all patches and installed on a fresh copy of 4.6.alpha2 (I think it's a fresh copy), and had the following failures in ptestlong on Ubuntu 10.04 64-bit:\n\n\n```\nFile \"/home/grout/sage-4.6.alpha2/devel/sage-main/sage/misc/sageinspect.py\", line 1058:\n    sage: sage_getdef(sage.rings.integer.Integer.__init__, obj_name='__init__')\nExpected:\n    '__init__(x=None, base=0)'\nGot:\n    '__init__( [noargspec] )'\n```\n\n\n(that's a test that I thought one of the patches changed to the expected value listed above).\n\n\n```\n        sage -t  -long 4.6.alpha2/devel/sage/sage/plot/misc.py # 4 doctests failed\n        sage -t  -long 4.6.alpha2/devel/sage/sage/plot/plot.py # 12 doctests failed\n```\n\n\nThese are corrected in #9221, I think.",
+    "created_at": "2010-10-05T03:37:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96977",
+    "user": "jason"
+}
+```
 
 I see Craig is the author of a lot of the patches.  robertwb: have you reviewed those patches?  Which patches still need review?
 
@@ -570,16 +978,38 @@ Got:
 These are corrected in #9221, I think.
 
 
+
 ---
 
-Comment by robertwb created at 2010-10-05 05:05:24
+archive/issue_comments_096978.json:
+```json
+{
+    "body": "I've looked at all of the ones Craig wrote (way back) and they're all fine. I assume you did a sage -ba after installing Cython? The sageinspect output is what I got on a fresh 4.6.alpha2 on sage.math. I doubt the plot ones are related, but I didn't see them when I ran the tests which is strange.",
+    "created_at": "2010-10-05T05:05:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96978",
+    "user": "robertwb"
+}
+```
 
 I've looked at all of the ones Craig wrote (way back) and they're all fine. I assume you did a sage -ba after installing Cython? The sageinspect output is what I got on a fresh 4.6.alpha2 on sage.math. I doubt the plot ones are related, but I didn't see them when I ran the tests which is strange.
 
 
+
 ---
 
-Comment by jason created at 2010-10-05 17:16:46
+archive/issue_comments_096979.json:
+```json
+{
+    "body": "Replying to [comment:27 robertwb]:\n> I've looked at all of the ones Craig wrote (way back) and they're all fine. I assume you did a sage -ba after installing Cython? The sageinspect output is what I got on a fresh 4.6.alpha2 on sage.math. I doubt the plot ones are related, but I didn't see them when I ran the tests which is strange. \n\nI didn't do sage -ba.  I'm trying again now.",
+    "created_at": "2010-10-05T17:16:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96979",
+    "user": "jason"
+}
+```
 
 Replying to [comment:27 robertwb]:
 > I've looked at all of the ones Craig wrote (way back) and they're all fine. I assume you did a sage -ba after installing Cython? The sageinspect output is what I got on a fresh 4.6.alpha2 on sage.math. I doubt the plot ones are related, but I didn't see them when I ran the tests which is strange. 
@@ -587,9 +1017,20 @@ Replying to [comment:27 robertwb]:
 I didn't do sage -ba.  I'm trying again now.
 
 
+
 ---
 
-Comment by jason created at 2010-10-05 18:42:34
+archive/issue_comments_096980.json:
+```json
+{
+    "body": "I did sage -ba (4.6.alpha2, the above patches applied, and the new Cython spkg), and still got the following failures (Ubuntu 10.04 64-bit):\n\n\n```\nsage -t  -long local/lib/python2.6/site-packages/sagenb-0.8.2-py2.6.egg/sagenb/misc/sageinspect.py\n**********************************************************************\nFile \"/home/grout/sage-4.6.alpha2/local/lib/python2.6/site-packages/sagenb-0.8.2-py2.6.egg/sagenb/misc/sageinspect.py\", line 1074:\n    sage: sage_getsource(sage.rings.integer.Integer.__init__, is_binary=True)\nExpected:    Traceback (most recent call last):    ...    TypeError: arg is not a module, class, method, function, traceback, frame, or code objectGot:    '    def __init__(self, x=None, unsigned int base=0):\\n        \"\"\"\\n        EXAMPLES::\\n        \\n            sage: a = long(-901824309821093821093812093810928309183091832091)\\n            sage: b = ZZ(a); b\\n            -901824309821093821093812093810928309183091832091\\n            sage: ZZ(b)\\n            -901824309821093821093812093810928309183091832091\\n            sage: ZZ(\\'-901824309821093821093812093810928309183091832091\\')\\n            -901824309821093821093812093810928309183091832091\\n            sage: ZZ(int(-93820984323))\\n            -93820984323\\n            sage: ZZ(ZZ(-901824309821093821093812093810928309183091832091))\\n            -901824309821093821093812093810928309183091832091\\n            sage: ZZ(QQ(-901824309821093821093812093810928309183091832091))\\n            -901824309821093821093812093810928309183091832091\\n            sage: ZZ(RR(2.0)^80)\\n            1208925819614629174706176\\n            sage: ZZ(QQbar(sqrt(28-10*sqrt(3)) + sqrt(3)))\\n            5\\n            sage: ZZ(AA(32).nth_root(5))\\n            2\\n            sage: ZZ(pari(\\'Mod(-3,7)\\'))\\n            4\\n            sage: ZZ(\\'sage\\')\\n            Traceback (most recent call last):\\n            ...\\n            TypeError: unable to convert x (=sage) to an integer\\n            sage: Integer(\\'zz\\',36).str(36)\\n            \\'zz\\'\\n            sage: ZZ(\\'0x3b\\').str(16)\\n            \\'3b\\'\\n            sage: ZZ( ZZ(5).digits(3) , 3)\\n            5\\n            sage: import numpy\\n            sage: ZZ(numpy.int64(7^7))\\n            823543\\n            sage: ZZ(numpy.ubyte(-7))\\n            249\\n            sage: ZZ(True)\\n            1\\n            sage: ZZ(False)\\n            0\\n            sage: ZZ(1==0)\\n            0\\n            sage: ZZ(\\'+10\\')\\n            10\\n        \\n        ::\\n        \\n            sage: k = GF(2)\\n            sage: ZZ( (k(0),k(1)), 2)\\n            2\\n        \\n        ::\\n        \\n            sage: t = pari(0*ZZ[x].0 + 3)\\n            sage: t.type()\\n            \\'t_POL\\'\\n            sage: ZZ(t)\\n            3\\n\\n            sage: ZZ(float(2.0))\\n            2\\n            sage: ZZ(float(1.0/0.0))\\n            Traceback (most recent call last):\\n            ...\\n            OverflowError: cannot convert float infinity to integer\\n            sage: ZZ(float(0.0/0.0))\\n            Traceback (most recent call last):\\n            ...\\n            ValueError: cannot convert float NaN to integer\\n\\n        ::\\n\\n            sage: class MyInt(int):\\n            ...       pass\\n            sage: class MyLong(long):\\n            ...       pass\\n            sage: class MyFloat(float):\\n            ...       pass\\n            sage: ZZ(MyInt(3))\\n            3\\n            sage: ZZ(MyLong(4))\\n            4\\n            sage: ZZ(MyFloat(5))\\n            5\\n        \"\"\"\\n\\n        # TODO: All the code below should somehow be in an external\\n        # cdef\\'d function.  Then e.g., if a matrix or vector or\\n        # polynomial is getting filled by mpz_t\\'s, it can use the\\n        # rules below to do the fill construction of mpz_t\\'s, but\\n        # without the overhead of creating any Python objects at all.\\n        # The cdef\\'s function should be of the form\\n        #     mpz_init_set_sage(mpz_t y, object x)\\n        # Then this function becomes the one liner:\\n        #     mpz_init_set_sage(self.value, x)\\n\\n        cdef Integer tmp\\n        cdef char* xs\\n        \\n        cdef Element lift\\n        \\n        if x is None:\\n            if mpz_sgn(self.value) != 0:\\n                mpz_set_si(self.value, 0)\\n            \\n        else:\\n            # First do all the type-check versions; these are fast.\\n\\n            if PY_TYPE_CHECK(x, Integer):\\n                set_from_Integer(self, <Integer>x)\\n\\n            elif PY_TYPE_CHECK(x, bool):\\n                mpz_set_si(self.value, PyInt_AS_LONG(x))\\n\\n            elif PyInt_Check(x):\\n                mpz_set_si(self.value, PyInt_AS_LONG(x))\\n\\n            elif PyLong_Check(x):\\n                mpz_set_pylong(self.value, x)\\n\\n            elif PyFloat_Check(x):\\n                n = long(x)\\n                if n == x:\\n                    mpz_set_pylong(self.value, n)\\n                else:\\n                    raise TypeError, \"Cannot convert non-integral float to integer\"\\n\\n            elif PY_TYPE_CHECK(x, pari_gen):\\n                \\n                if typ((<pari_gen>x).g) == t_INT:\\n                    t_INT_to_ZZ(self.value, (<pari_gen>x).g)\\n                    \\n                else:\\n                    if typ((<pari_gen>x).g) == t_INTMOD:\\n                        x = x.lift()\\n                    # TODO: figure out how to convert to pari integer in base 16 ?\\n                    \\n                    # todo: having this \"s\" variable around here is causing\\n                    # Cython to play games with refcount for the None object, which\\n                    # seems really stupid.\\n                \\n                    try:\\n                        s = hex(x)\\n                        base = 16\\n                    except:\\n                        s = str(x)\\n                        base = 10\\n                        \\n                    if mpz_set_str(self.value, s, base) != 0:\\n                        raise TypeError, \"Unable to coerce PARI %s to an Integer.\"%x\\n\\n            elif PyString_Check(x):\\n                if base < 0 or base > 36:\\n                    raise ValueError, \"base (=%s) must be between 2 and 36\"%base\\n                \\n                xs = x\\n                if xs[0] == c\\'+\\':\\n                    xs += 1\\n                if mpz_set_str(self.value, xs, base) != 0:\\n                    raise TypeError, \"unable to convert x (=%s) to an integer\"%x\\n                \\n            elif PyObject_HasAttrString(x, \"_integer_\"):\\n                # todo: Note that PyObject_GetAttrString returns NULL if\\n                # the attribute was not found. If we could test for this,\\n                # we could skip the double lookup. Unfortunately Cython doesn\\'t\\n                # seem to let us do this; it flags an error if the function\\n                # returns NULL, because it can\\'t construct an \"object\" object\\n                # out of the NULL pointer. This really sucks. Perhaps we could\\n                # make the function prototype have return type void*, but\\n                # then how do we make Cython handle the reference counting?\\n                set_from_Integer(self, (<object> PyObject_GetAttrString(x, \"_integer_\"))(the_integer_ring))\\n\\n            elif (PY_TYPE_CHECK(x,\n list) or PY_TYPE_CHECK(x, tuple)) and base > 1:\\n                b = the_integer_ring(base)\\n                tmp = the_integer_ring(0)\\n                for i in range(len(x)):\\n                    tmp += t\nhe_integer_ring(x[i])*b**i\\n                mpz_set(self.value, tmp.value)\\n\\n            else:\\n                import numpy\\n                if isinstance(x, numpy.integer):\\n                    mpz_set_p\nylong(self.value, x.__long__())\\n                    return\\n                    \\n                elif PY_TYPE_CHECK(x, Element):\\n                    try:\\n                        lift = x.lift()\\n       \n                 if lift._parent != (<Element>x)._parent:\\n                            tmp = the_integer_ring(lift)\\n                            mpz_swap(tmp.value, self.value)\\n                            \nreturn\\n                    except AttributeError:\\n                        pass\\n                        \\n                raise TypeError, \"unable to coerce %s to an integer\" % type(x)\\n'\n**********************************************************************\nFile \"/home/grout/sage-4.6.alpha2/local/lib/python2.6/site-packages/sagenb-0.8.2-py2.6.egg/sagenb/misc/sageinspect.py\", line 1079:\n    sage: sage_getdef(sage.rings.integer.Integer.__init__, obj_name='__init__')\nExpected:\n    '__init__( [noargspec] )'\nGot:\n    '__init__(x=None, base=0)'\n**********************************************************************\n1 items had failures:\n   2 of  26 in __main__.example_23\n***Test Failed*** 2 failures.\n```\n",
+    "created_at": "2010-10-05T18:42:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96980",
+    "user": "jason"
+}
+```
 
 I did sage -ba (4.6.alpha2, the above patches applied, and the new Cython spkg), and still got the following failures (Ubuntu 10.04 64-bit):
 
@@ -620,18 +1061,40 @@ Got:
 
 
 
+
 ---
 
-Comment by jason created at 2010-10-05 18:49:16
+archive/issue_comments_096981.json:
+```json
+{
+    "body": "I just noticed those two failures were in sagenb.  I can replicate them doing `sage -t -sagenb`.  It looks like the same changes that were needed in sage/misc/sageinspect.py are also needed in the notebook version of that file?  (see the 8_alpha_fixes.patch above).\n\nI'm not sure how the two sageinspect.py files are related (in the library and in the notebook), so I'm CCing Tim and Mitesh on this.",
+    "created_at": "2010-10-05T18:49:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96981",
+    "user": "jason"
+}
+```
 
 I just noticed those two failures were in sagenb.  I can replicate them doing `sage -t -sagenb`.  It looks like the same changes that were needed in sage/misc/sageinspect.py are also needed in the notebook version of that file?  (see the 8_alpha_fixes.patch above).
 
 I'm not sure how the two sageinspect.py files are related (in the library and in the notebook), so I'm CCing Tim and Mitesh on this.
 
 
+
 ---
 
-Comment by timdumol created at 2010-10-05 18:52:30
+archive/issue_comments_096982.json:
+```json
+{
+    "body": "Replying to [comment:30 jason]:\n> I just noticed those two failures were in sagenb.  I can replicate them doing `sage -t -sagenb`.  It looks like the same changes that were needed in sage/misc/sageinspect.py are also needed in the notebook version of that file?  (see the 8_alpha_fixes.patch above).\n> \n> I'm not sure how the two sageinspect.py files are related (in the library and in the notebook), so I'm CCing Tim and Mitesh on this.\n\nThe `sageinspect.py` in SageNB was derived from the `sageinspect.py` of the main Sage library by William when the new SageNB was separated from the main Sage library. Feel free to make the same changes.",
+    "created_at": "2010-10-05T18:52:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96982",
+    "user": "timdumol"
+}
+```
 
 Replying to [comment:30 jason]:
 > I just noticed those two failures were in sagenb.  I can replicate them doing `sage -t -sagenb`.  It looks like the same changes that were needed in sage/misc/sageinspect.py are also needed in the notebook version of that file?  (see the 8_alpha_fixes.patch above).
@@ -641,9 +1104,20 @@ Replying to [comment:30 jason]:
 The `sageinspect.py` in SageNB was derived from the `sageinspect.py` of the main Sage library by William when the new SageNB was separated from the main Sage library. Feel free to make the same changes.
 
 
+
 ---
 
-Comment by jason created at 2010-10-05 19:01:18
+archive/issue_comments_096983.json:
+```json
+{
+    "body": "Replying to [comment:31 timdumol]:\n> Replying to [comment:30 jason]:\n> > I just noticed those two failures were in sagenb.  I can replicate them doing `sage -t -sagenb`.  It looks like the same changes that were needed in sage/misc/sageinspect.py are also needed in the notebook version of that file?  (see the 8_alpha_fixes.patch above).\n> > \n> > I'm not sure how the two sageinspect.py files are related (in the library and in the notebook), so I'm CCing Tim and Mitesh on this.\n> \n> The `sageinspect.py` in SageNB was derived from the `sageinspect.py` of the main Sage library by William when the new SageNB was separated from the main Sage library. Feel free to make the same changes.\n\n\nIs there any reason why it is not just imported, rather than being copied?",
+    "created_at": "2010-10-05T19:01:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96983",
+    "user": "jason"
+}
+```
 
 Replying to [comment:31 timdumol]:
 > Replying to [comment:30 jason]:
@@ -657,9 +1131,20 @@ Replying to [comment:31 timdumol]:
 Is there any reason why it is not just imported, rather than being copied?
 
 
+
 ---
 
-Comment by timdumol created at 2010-10-05 19:09:47
+archive/issue_comments_096984.json:
+```json
+{
+    "body": "Replying to [comment:32 jason]:\n> Replying to [comment:31 timdumol]:\n> > Replying to [comment:30 jason]:\n> > > I just noticed those two failures were in sagenb.  I can replicate them doing `sage -t -sagenb`.  It looks like the same changes that were needed in sage/misc/sageinspect.py are also needed in the notebook version of that file?  (see the 8_alpha_fixes.patch above).\n> > > \n> > > I'm not sure how the two sageinspect.py files are related (in the library and in the notebook), so I'm CCing Tim and Mitesh on this.\n> > \n> > The `sageinspect.py` in SageNB was derived from the `sageinspect.py` of the main Sage library by William when the new SageNB was separated from the main Sage library. Feel free to make the same changes.\n> \n> \n> Is there any reason why it is not just imported, rather than being copied?\n\nWilliam stated that he wanted SageNB to be usable separately from Sage, which means not having to import Sage libraries to function.",
+    "created_at": "2010-10-05T19:09:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96984",
+    "user": "timdumol"
+}
+```
 
 Replying to [comment:32 jason]:
 > Replying to [comment:31 timdumol]:
@@ -676,18 +1161,40 @@ Replying to [comment:32 jason]:
 William stated that he wanted SageNB to be usable separately from Sage, which means not having to import Sage libraries to function.
 
 
+
 ---
 
-Comment by robertwb created at 2010-10-05 23:25:46
+archive/issue_comments_096985.json:
+```json
+{
+    "body": "Yes, the sagenb version needs to be updated as well. Should I post a new sagenb spkg, or is there one already in the works? \n\nAnything else?",
+    "created_at": "2010-10-05T23:25:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96985",
+    "user": "robertwb"
+}
+```
 
 Yes, the sagenb version needs to be updated as well. Should I post a new sagenb spkg, or is there one already in the works? 
 
 Anything else?
 
 
+
 ---
 
-Comment by mpatel created at 2010-10-05 23:33:37
+archive/issue_comments_096986.json:
+```json
+{
+    "body": "Replying to [comment:34 robertwb]:\n> Yes, the sagenb version needs to be updated as well. Should I post a new sagenb spkg, or is there one already in the works? \n\nYou can just post patches here against #10036's SageNB 0.8.4.  I can add them to a 0.8.5 and update #10036.",
+    "created_at": "2010-10-05T23:33:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96986",
+    "user": "mpatel"
+}
+```
 
 Replying to [comment:34 robertwb]:
 > Yes, the sagenb version needs to be updated as well. Should I post a new sagenb spkg, or is there one already in the works? 
@@ -695,44 +1202,114 @@ Replying to [comment:34 robertwb]:
 You can just post patches here against #10036's SageNB 0.8.4.  I can add them to a 0.8.5 and update #10036.
 
 
+
 ---
 
-Comment by mpatel created at 2010-10-07 08:34:01
+archive/issue_comments_096987.json:
+```json
+{
+    "body": "Is a SageNB patch the only barrier to a positive review?",
+    "created_at": "2010-10-07T08:34:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96987",
+    "user": "mpatel"
+}
+```
 
 Is a SageNB patch the only barrier to a positive review?
 
 
+
 ---
 
-Comment by mpatel created at 2010-10-07 09:24:53
+archive/issue_comments_096988.json:
+```json
+{
+    "body": "SageNB doctest  fixes.  Apply to sagenb repository.",
+    "created_at": "2010-10-07T09:24:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96988",
+    "user": "mpatel"
+}
+```
 
 SageNB doctest  fixes.  Apply to sagenb repository.
 
 
+
 ---
+
+archive/issue_comments_096989.json:
+```json
+{
+    "body": "Attachment\n\nFolded sage repository patch.  Apply only this patch to the sage repository.",
+    "created_at": "2010-10-07T09:48:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96989",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
 Folded sage repository patch.  Apply only this patch to the sage repository.
 
 
+
 ---
+
+archive/issue_comments_096990.json:
+```json
+{
+    "body": "Attachment\n\nTicket number in scripts repo patch.  Apply only this patch to the scripts repo.",
+    "created_at": "2010-10-07T09:54:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96990",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
 Ticket number in scripts repo patch.  Apply only this patch to the scripts repo.
 
 
+
 ---
 
-Comment by mpatel created at 2010-10-07 10:00:51
+archive/issue_comments_096991.json:
+```json
+{
+    "body": "I've added a SageNB patch, folded sage repository patch, and updated scripts repository patch with the ticket number in the commit string.  The SageNB package link is in the description",
+    "created_at": "2010-10-07T10:00:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96991",
+    "user": "mpatel"
+}
+```
 
 I've added a SageNB patch, folded sage repository patch, and updated scripts repository patch with the ticket number in the commit string.  The SageNB package link is in the description
 
 
+
 ---
 
-Comment by mpatel created at 2010-10-07 10:11:44
+archive/issue_comments_096992.json:
+```json
+{
+    "body": "The long doctests pass for me on sage.math with 4.6.alpha2 + the spkgs and patches in the description.\n\nIf no one objects, I'm giving this a positive review.  Can someone please review #10036 soon?\n\nBy the way, does `XML_RESULTS = os.environ.get('XML_RESULTS', None)` internally do the same as\n\n```python\ntry:\n    XML_RESULTS = os.environ['XML_RESULTS']\nexcept KeyError:\n    XML_RESULTS = None\n```\n\n?",
+    "created_at": "2010-10-07T10:11:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96992",
+    "user": "mpatel"
+}
+```
 
 The long doctests pass for me on sage.math with 4.6.alpha2 + the spkgs and patches in the description.
 
@@ -750,23 +1327,56 @@ except KeyError:
 ?
 
 
+
 ---
 
-Comment by mpatel created at 2010-10-07 10:11:44
+archive/issue_comments_096993.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-10-07T10:11:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96993",
+    "user": "mpatel"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mpatel created at 2010-10-07 11:19:25
+archive/issue_comments_096994.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-10-07T11:19:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96994",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by jason created at 2010-10-07 13:39:56
+archive/issue_comments_096995.json:
+```json
+{
+    "body": "Replying to [comment:38 mpatel]:\n> The long doctests pass for me on sage.math with 4.6.alpha2 + the spkgs and patches in the description.\n> \n> If no one objects, I'm giving this a positive review.  Can someone please review #10036 soon?\n> \n> By the way, does `XML_RESULTS = os.environ.get('XML_RESULTS', None)` internally do the same as\n> {{{\n> #!python\n> try:\n>     XML_RESULTS = os.environ['XML_RESULTS']\n> except KeyError:\n>     XML_RESULTS = None\n> }}}\n> ?\n\nYes.  See http://docs.python.org/library/stdtypes.html#dict.get",
+    "created_at": "2010-10-07T13:39:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96995",
+    "user": "jason"
+}
+```
 
 Replying to [comment:38 mpatel]:
 > The long doctests pass for me on sage.math with 4.6.alpha2 + the spkgs and patches in the description.
@@ -786,9 +1396,20 @@ Replying to [comment:38 mpatel]:
 Yes.  See http://docs.python.org/library/stdtypes.html#dict.get
 
 
+
 ---
 
-Comment by robertwb created at 2010-10-07 15:59:07
+archive/issue_comments_096996.json:
+```json
+{
+    "body": "Replying to [comment:38 mpatel]:\n> The long doctests pass for me on sage.math with 4.6.alpha2 + the spkgs and patches in the description.\n> \n> If no one objects, I'm giving this a positive review.  \n\nThanks all! Next up, Cython 0.13.1 :) I'm neither planning to wait as long nor make as many changes, so it won't be near as bad...\n\n> Can someone please review #10036 soon?\n> \n> By the way, does `XML_RESULTS = os.environ.get('XML_RESULTS', None)` internally do the same as\n> {{{\n> #!python\n> try:\n>     XML_RESULTS = os.environ['XML_RESULTS']\n> except KeyError:\n>     XML_RESULTS = None\n> }}}\n> ?\n\nYes, that would have probably been cleaner.",
+    "created_at": "2010-10-07T15:59:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96996",
+    "user": "robertwb"
+}
+```
 
 Replying to [comment:38 mpatel]:
 > The long doctests pass for me on sage.math with 4.6.alpha2 + the spkgs and patches in the description.
@@ -812,9 +1433,20 @@ Thanks all! Next up, Cython 0.13.1 :) I'm neither planning to wait as long nor m
 Yes, that would have probably been cleaner.
 
 
+
 ---
 
-Comment by jason created at 2010-10-07 16:07:50
+archive/issue_comments_096997.json:
+```json
+{
+    "body": "Replying to [comment:42 robertwb]:\n\n> > \n> > By the way, does `XML_RESULTS = os.environ.get('XML_RESULTS', None)` internally do the same as\n> > {{{\n> > #!python\n> > try:\n> >     XML_RESULTS = os.environ['XML_RESULTS']\n> > except KeyError:\n> >     XML_RESULTS = None\n> > }}}\n> > ?\n> \n> Yes, that would have probably been cleaner. \n\nSince None is the default default value, it could even be shortened to `XML_RESULTS = os.environ.get('XML_RESULTS')`",
+    "created_at": "2010-10-07T16:07:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96997",
+    "user": "jason"
+}
+```
 
 Replying to [comment:42 robertwb]:
 
@@ -834,8 +1466,19 @@ Replying to [comment:42 robertwb]:
 Since None is the default default value, it could even be shortened to `XML_RESULTS = os.environ.get('XML_RESULTS')`
 
 
+
 ---
 
-Comment by jdemeyer created at 2019-01-11 13:31:41
+archive/issue_comments_096998.json:
+```json
+{
+    "body": "What is the purpose of this `XML_RESULTS` stuff which was introduced here?",
+    "created_at": "2019-01-11T13:31:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9827",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9827#issuecomment-96998",
+    "user": "jdemeyer"
+}
+```
 
 What is the purpose of this `XML_RESULTS` stuff which was introduced here?

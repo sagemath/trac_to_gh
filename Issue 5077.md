@@ -1,11 +1,21 @@
 # Issue 5077: bug in fibonacci function
 
-Issue created by migration from https://trac.sagemath.org/ticket/5077
-
-Original creator: was
-
-Original creation time: 2009-01-23 22:22:02
-
+archive/issues_005077.json:
+```json
+{
+    "body": "Assignee: somebody\n\nDelete this line from the docstring.  It is just inconsistent.\n\n\n```\n  For negative n, define F_{n} = -F_{|n|}.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5077\n\n",
+    "created_at": "2009-01-23T22:22:02Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "bug"
+    ],
+    "title": "bug in fibonacci function",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5077",
+    "user": "was"
+}
+```
 Assignee: somebody
 
 Delete this line from the docstring.  It is just inconsistent.
@@ -16,30 +26,80 @@ Delete this line from the docstring.  It is just inconsistent.
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5077
+
+
+
+
 
 ---
+
+archive/issue_comments_038665.json:
+```json
+{
+    "body": "Attachment\n\nTrivial patch attached.  While I was at it I fixed a couple of typos.",
+    "created_at": "2009-01-24T07:50:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5077",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5077#issuecomment-38665",
+    "user": "AlexGhitza"
+}
+```
 
 Attachment
 
 Trivial patch attached.  While I was at it I fixed a couple of typos.
 
 
+
 ---
 
-Comment by mhansen created at 2009-01-24 08:40:44
+archive/issue_comments_038666.json:
+```json
+{
+    "body": "Looks good to me.",
+    "created_at": "2009-01-24T08:40:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5077",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5077#issuecomment-38666",
+    "user": "mhansen"
+}
+```
 
 Looks good to me.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-24 14:48:29
+archive/issue_comments_038667.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-01-24T14:48:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5077",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5077#issuecomment-38667",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-24 14:48:29
+archive/issue_comments_038668.json:
+```json
+{
+    "body": "Merged in Sage 3.3.alpha2",
+    "created_at": "2009-01-24T14:48:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5077",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5077#issuecomment-38668",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.3.alpha2

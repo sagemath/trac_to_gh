@@ -1,11 +1,21 @@
 # Issue 2195: Givaro-related crash in finite fields
 
-Issue created by migration from https://trac.sagemath.org/ticket/2195
-
-Original creator: cwitty
-
-Original creation time: 2008-02-17 18:57:35
-
+archive/issues_002195.json:
+```json
+{
+    "body": "Assignee: somebody\n\nJohn Cremona reported this crash:\n\n```\nsage:  E=EllipticCurve(GF(5),[1,1])\nsage:  E1=E.base_extend(GF(125,'a'))\nsage:  E2=E1.base_extend(GF(125^2,'b'))\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------ \n```\n\n\nI got a backtrace for the crash, which looks like this:\n\n```\nProgram received signal SIGSEGV, Segmentation fault.\n[Switching to Thread 0xb7dfb8c0 (LWP 15819)]\n0xb5443782 in\n__pyx_f_4sage_5rings_19finite_field_givaro_25FiniteField_givaroElement__add_c_impl\n(__pyx_v_self=0x9e10d74, __pyx_v_right=0x9e10f7c)\n    at /home/cwitty/sage/local//include/givaro/givgfq.inl:292\n292     { _GIVARO_GFQ_ADD(r, a, b, GFqDom<TT>::_qm1,\nGFqDom<TT>::_plus1) ; return r; }\n(gdb) bt\n#0  0xb5443782 in\n__pyx_f_4sage_5rings_19finite_field_givaro_25FiniteField_givaroElement__add_c_impl\n(__pyx_v_self=0x9e10d74, __pyx_v_right=0x9e10f7c)\n    at /home/cwitty/sage/local//include/givaro/givgfq.inl:292\n#1  0xb71eac7f in\n__pyx_pf_4sage_9structure_7element_13ModuleElement___add__ (\n    __pyx_v_left=0x9e10d74, __pyx_v_right=0x9e10f7c)\n    at sage/structure/element.c:15976\n#2  0x0805ce33 in binary_op1 (v=0x9e10d74, w=0xbfb53d64, op_slot=0)\n    at Objects/abstract.c:398\n#3  0x0805d310 in PyNumber_Add (v=0x9e10d74, w=0x9e10f7c)\n    at Objects/abstract.c:638 \n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2195\n\n",
+    "created_at": "2008-02-17T18:57:35Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "bug"
+    ],
+    "title": "Givaro-related crash in finite fields",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2195",
+    "user": "cwitty"
+}
+```
 Assignee: somebody
 
 John Cremona reported this crash:
@@ -54,10 +64,25 @@ __pyx_pf_4sage_9structure_7element_13ModuleElement___add__ (
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2195
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-02-17 19:07:07
+archive/issue_comments_014410.json:
+```json
+{
+    "body": "Note that on sage.math the crash does not happen, instead we get an exception thrown by python complaining about:\n\n```\nsage: E=EllipticCurve(GF(5),[1,1])\nsage: E1=E.base_extend(GF(125,'a'))\nsage: E2=E1.base_extend(GF(125^2,'b'))\n---------------------------------------------------------------------------\n<type 'exceptions.ArithmeticError'>       Traceback (most recent call last)\n\n/scratch/mabshoff/release-cycle/sage-2.10.2.alpha1/<ipython console> in <module>()\n\n/scratch/mabshoff/release-cycle/sage-2.10.2.alpha1/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_generic.py in base_extend(self, R)\n    756         Elliptic Curve defined by y^2  = x^3 + x + (4*b^3+4*b^2+4*b+3) over Finite Field in b of size 5^4\n    757         \"\"\"\n--> 758         return constructor.EllipticCurve([R(a) for a in self.a_invariants()])\n    759\n    760     def base_ring(self):\n\n/scratch/mabshoff/release-cycle/sage-2.10.2.alpha1/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/constructor.py in EllipticCurve(x, y)\n    159\n    160     elif isinstance(x[0], rings.FiniteFieldElement) or rings.is_IntegerMod(x[0]):\n--> 161         return ell_finite_field.EllipticCurve_finite_field(x, y)\n    162\n    163     else:\n\n/scratch/mabshoff/release-cycle/sage-2.10.2.alpha1/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_finite_field.py in __init__(self, x, y)\n     73             raise TypeError\n     74\n---> 75         EllipticCurve_field.__init__(self, ainvs)\n     76\n     77         self._point_class = ell_point.EllipticCurvePoint_finite_field\n\n/scratch/mabshoff/release-cycle/sage-2.10.2.alpha1/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_generic.py in __init__(self, ainvs, extra)\n    135         if self.discriminant() == 0:\n    136             raise ArithmeticError, \\\n--> 137                   \"Invariants %s define a singular curve.\"%ainvs\n    138         PP = projective_space.ProjectiveSpace(2, K, names='xyz');\n    139         x, y, z = PP.coordinate_ring().gens()\n\n<type 'exceptions.ArithmeticError'>: Invariants [0, 0, 0, 0, 0] define a singular curve.\n```\n\nI ran the same code under valgrind and there are no leads from that end. It is probably some bug that is only triggered with certain compilers.\n\nCheers,\n\nMichael",
+    "created_at": "2008-02-17T19:07:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2195",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2195#issuecomment-14410",
+    "user": "mabshoff"
+}
+```
 
 Note that on sage.math the crash does not happen, instead we get an exception thrown by python complaining about:
 
@@ -108,7 +133,20 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_014411.json:
+```json
+{
+    "body": "Attachment\n\nI've attached a valgrind record from my laptop.  (Actually, this is only the beginning of the valgrind record... I cut out the memory leak reports at the end.)\n\nI wonder if it could be a 32-bit vs. 64-bit issue?  My laptop is 32-bit.",
+    "created_at": "2008-02-17T19:22:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2195",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2195#issuecomment-14411",
+    "user": "cwitty"
+}
+```
 
 Attachment
 
@@ -117,9 +155,20 @@ I've attached a valgrind record from my laptop.  (Actually, this is only the beg
 I wonder if it could be a 32-bit vs. 64-bit issue?  My laptop is 32-bit.
 
 
+
 ---
 
-Comment by cremona created at 2008-02-17 20:24:48
+archive/issue_comments_014412.json:
+```json
+{
+    "body": "Replying to [comment:2 cwitty]:\n> I've attached a valgrind record from my laptop.  (Actually, this is only the beginning of the valgrind record... I cut out the memory leak reports at the end.)\n> \n> I wonder if it could be a 32-bit vs. 64-bit issue?  My laptop is 32-bit.\n\nI'm pretty sure that my original report was from a 32-bit machine.",
+    "created_at": "2008-02-17T20:24:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2195",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2195#issuecomment-14412",
+    "user": "cremona"
+}
+```
 
 Replying to [comment:2 cwitty]:
 > I've attached a valgrind record from my laptop.  (Actually, this is only the beginning of the valgrind record... I cut out the memory leak reports at the end.)
@@ -129,9 +178,20 @@ Replying to [comment:2 cwitty]:
 I'm pretty sure that my original report was from a 32-bit machine.
 
 
+
 ---
 
-Comment by wdj created at 2008-03-01 13:04:00
+archive/issue_comments_014413.json:
+```json
+{
+    "body": "I think these are related bugs:\n\n\n```\nsage: version()\n'SAGE Version 2.10.3.alpha0, Release Date: 2008-02-25'\n\nsage: FF.<z> = GF(3^2,\"z\")\nsage: b = GF(3,\"zz\").random_element()\nsage: FF(b)\n2\n```\n\nThis works fine. Now try a bigger field:\n\n```\nsage: FF.<z> = GF(13^9,\"z\")\nsage: b = GF(13**3,\"zz\").random_element()\nsage: FF(b)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n...\n\n<type 'exceptions.TypeError'>: unable to coerce element to an integer\nno coercion defined\n```\n\nUnless my brain cells are mis-firing, GF(13**3) is a subfield of GF(13**9).\n\nHere is the smallest example I found:\n\n```\nsage: FF.<z> = GF(5^8,\"z\")\nsage: b = GF(5^4,\"zz\").random_element()\nsage: FF(b)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n....\n```\n\n\n(If you replace 5**8 -> 5**6 and 5**4 -> 5**3, it works okay.)\n\nAlso:\n\n```\nsage: FF.<z> = GF(5^6,\"z\")\nsage: b = GF(5^3,\"zz\")(0); b; FF(b)\n0\n2*z^3 + 4*z^2 + 4*z\nsage: b = GF(5^3,\"zz\")(1); b; FF(b)\n1\n2*z^3 + 4*z^2 + 4*z\n```\n\nIt doesn't give a traceback for some reason, though it is clearly wrong.",
+    "created_at": "2008-03-01T13:04:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2195",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2195#issuecomment-14413",
+    "user": "wdj"
+}
+```
 
 I think these are related bugs:
 
@@ -192,16 +252,38 @@ sage: b = GF(5^3,"zz")(1); b; FF(b)
 It doesn't give a traceback for some reason, though it is clearly wrong.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-15 02:28:33
+archive/issue_comments_014414.json:
+```json
+{
+    "body": "Changing priority from major to blocker.",
+    "created_at": "2008-03-15T02:28:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2195",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2195#issuecomment-14414",
+    "user": "mabshoff"
+}
+```
 
 Changing priority from major to blocker.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-15 02:43:52
+archive/issue_comments_014415.json:
+```json
+{
+    "body": "I ran this under 2.10.4.alpha0 with the updated givaro.spkg from #2525 and the valgrind log is clean. I guess time will tell if the problem is gone when cwitty will hopefully test this in the morning on a 32 bit setup.\n\nCheers,\n\nMichael",
+    "created_at": "2008-03-15T02:43:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2195",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2195#issuecomment-14415",
+    "user": "mabshoff"
+}
+```
 
 I ran this under 2.10.4.alpha0 with the updated givaro.spkg from #2525 and the valgrind log is clean. I guess time will tell if the problem is gone when cwitty will hopefully test this in the morning on a 32 bit setup.
 
@@ -210,23 +292,56 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-16 01:47:39
+archive/issue_comments_014416.json:
+```json
+{
+    "body": "Changing component from basic arithmetic to givaro.",
+    "created_at": "2008-03-16T01:47:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2195",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2195#issuecomment-14416",
+    "user": "mabshoff"
+}
+```
 
 Changing component from basic arithmetic to givaro.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-16 01:47:39
+archive/issue_comments_014417.json:
+```json
+{
+    "body": "Changing assignee from somebody to cpernet.",
+    "created_at": "2008-03-16T01:47:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2195",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2195#issuecomment-14417",
+    "user": "mabshoff"
+}
+```
 
 Changing assignee from somebody to cpernet.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-16 01:47:39
+archive/issue_comments_014418.json:
+```json
+{
+    "body": "This is still a problem with the updated Givaro.spkg from #2524. Assigning to Clement so he can hopefully hunt this down.\n\nCheers,\n\nMichael",
+    "created_at": "2008-03-16T01:47:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2195",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2195#issuecomment-14418",
+    "user": "mabshoff"
+}
+```
 
 This is still a problem with the updated Givaro.spkg from #2524. Assigning to Clement so he can hopefully hunt this down.
 
@@ -235,23 +350,56 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by wjp created at 2008-04-14 20:52:23
+archive/issue_comments_014419.json:
+```json
+{
+    "body": "After #2916 this should now always throw an exception instead of producing undefined behaviour. As wdj pointed out, casts between finite fields could give weird results.",
+    "created_at": "2008-04-14T20:52:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2195",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2195#issuecomment-14419",
+    "user": "wjp"
+}
+```
 
 After #2916 this should now always throw an exception instead of producing undefined behaviour. As wdj pointed out, casts between finite fields could give weird results.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-14 20:53:54
+archive/issue_comments_014420.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-04-14T20:53:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2195",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2195#issuecomment-14420",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-14 20:53:54
+archive/issue_comments_014421.json:
+```json
+{
+    "body": "After applying wjp's patch from #2916 I get the following now:\n\n```\nsage: sage:  E=EllipticCurve(GF(5),[1,1])\nsage: sage:  E1=E.base_extend(GF(125,'a'))\nsage: sage:  E2=E1.base_extend(GF(125^2,'b'))\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/scratch/mabshoff/release-cycle/sage-3.0.alpha5/<ipython console> in <module>()\n\n/scratch/mabshoff/release-cycle/sage-3.0.alpha5/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_generic.py in base_extend(self, R)\n    849         Elliptic Curve defined by y^2  = x^3 + x + (4*b^3+4*b^2+4*b+3) over Finite Field in b of size 5^4\n    850         \"\"\"\n--> 851         return constructor.EllipticCurve([R(a) for a in self.a_invariants()])\n    852\n    853     def base_ring(self):\n\n/scratch/mabshoff/release-cycle/sage-3.0.alpha5/finite_field_givaro.pyx in sage.rings.finite_field_givaro.FiniteField_givaro.__call__ (sage/rings/finite_field_givaro.cpp:3264)()\n\n<type 'exceptions.TypeError'>: unable to coerce from a finite field other than the prime subfield\nsage:\n```\n\nwjp confirmed that the issue is also fixed on his computer, so I am closing this.\n\nJohn: once you have 3.0.alpha5 or final can you please check that this is also fixed for you or otherwise reopen?\n\nGreat work wjp.\n\nCheers,\n\nMichael",
+    "created_at": "2008-04-14T20:53:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2195",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2195#issuecomment-14421",
+    "user": "mabshoff"
+}
+```
 
 After applying wjp's patch from #2916 I get the following now:
 
@@ -288,9 +436,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by cremona created at 2008-04-15 16:15:58
+archive/issue_comments_014422.json:
+```json
+{
+    "body": "Replying to [comment:9 mabshoff]:\n> After applying wjp's patch from #2916 I get the following now:\n> {{{\n> sage: sage:  E=EllipticCurve(GF(5),[1,1])\n> sage: sage:  E1=E.base_extend(GF(125,'a'))\n> sage: sage:  E2=E1.base_extend(GF(125^2,'b'))\n> ---------------------------------------------------------------------------\n> <type 'exceptions.TypeError'>             Traceback (most recent call last)\n> \n> /scratch/mabshoff/release-cycle/sage-3.0.alpha5/<ipython console> in <module>()\n> \n> /scratch/mabshoff/release-cycle/sage-3.0.alpha5/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_generic.py in base_extend(self, R)\n>     849         Elliptic Curve defined by y^2  = x^3 + x + (4*b<sup>3+4*b</sup>2+4*b+3) over Finite Field in b of size 5^4\n>     850         \"\"\"\n> --> 851         return constructor.EllipticCurve([R(a) for a in self.a_invariants()])\n>     852\n>     853     def base_ring(self):\n> \n> /scratch/mabshoff/release-cycle/sage-3.0.alpha5/finite_field_givaro.pyx in sage.rings.finite_field_givaro.FiniteField_givaro.__call__ (sage/rings/finite_field_givaro.cpp:3264)()\n> \n> <type 'exceptions.TypeError'>: unable to coerce from a finite field other than the prime subfield\n> sage:\n> }}}\n> wjp confirmed that the issue is also fixed on his computer, so I am closing this.\n> \n> John: once you have 3.0.alpha5 or final can you please check that this is also fixed for you or otherwise reopen?\n\nOK, I'll do that in the next day or so (I'm at a conference with no evening internet access).\n\nJohn\n\n> \n> Great work wjp.\n> \n> Cheers,\n> \n> Michael",
+    "created_at": "2008-04-15T16:15:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2195",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2195#issuecomment-14422",
+    "user": "cremona"
+}
+```
 
 Replying to [comment:9 mabshoff]:
 > After applying wjp's patch from #2916 I get the following now:
@@ -331,9 +490,20 @@ John
 > Michael
 
 
+
 ---
 
-Comment by cremona created at 2008-04-16 12:16:54
+archive/issue_comments_014423.json:
+```json
+{
+    "body": "The issue is resolved (in 3.0.alpha5) in the sense that it throws an exception rather than crashing.\n\nTo get anything better than that we will have to do serious work on the finite field implementationa (as in previous discussions which referred to the Cannon-Bosma-Steele paper describing how Magma does it).\n\nJohn",
+    "created_at": "2008-04-16T12:16:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2195",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2195#issuecomment-14423",
+    "user": "cremona"
+}
+```
 
 The issue is resolved (in 3.0.alpha5) in the sense that it throws an exception rather than crashing.
 

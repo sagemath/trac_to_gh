@@ -1,11 +1,21 @@
 # Issue 8679: conventions for spkg names, rewriting sage-spkg
 
-Issue created by migration from https://trac.sagemath.org/ticket/8679
-
-Original creator: jhpalmieri
-
-Original creation time: 2010-04-12 21:21:49
-
+archive/issues_008679.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  ddrake mvngu\n\nSome scripts in SAGE_ROOT/local/bin expect spkg names to have the form \n\n```\nmy_package-2.3.spkg\n```\n\nbut not \n\n```\nmy-package-2.3.spkg   (first hyphen is bad)\n```\n\nSee [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/8597ce93b420afe4) for some discussion.\n\nThe attached patches do three things:\n\n- Rewrite sage-pkg (in python instead of bash) to test whether the name has the right form.\n- Remove sage-pkg-nocompress, using sage-pkg instead (and thus unifying the two scripts sage-pkg and sage-pkg-nocompress).\n- Add some comments about this to the developer's guide (hence the cc for mvngu).\n\nI used python because in the old version of sage-pkg, we were already calling sed and perl, and we might need to call perl again (or something else?) to test whether the name has the right form.  It seems easier to maintain if it's all plain Python.\n\nHere is the standard being suggested by this patch: each Sage spkg should have a name of the following form:\n\n```\nBASENAME-VERSION.spkg\n```\n\nwhere BASENAME may lowercase letters, numbers, and underscores, but **no hyphens**.  VERSION **must be present** and **should start with a number**; it may contain numbers, letters, dots, and hyphens; it may end in a string of the form \"pNUM\", where \"NUM\" is a non-negative integer.  The new version of sage-pkg sets BASENAME to be everything up to the first hyphen, but it does not check to make sure only numbers, lowercase letters, and underscores are used.  It checks that VERSION is present, starts with a number, and contains only numbers, letters, periods, hyphens.  If not, it prints a warning and creates an spkg anyway.\n\nI've tried to implement the change at #2522, but I'm not sure how to test it.  Any suggestions?  What sort of \"OS X junk\" should I try to put in my directory, to make sure it is not put into the resulting spkg file?\n\nIssue created by migration from https://trac.sagemath.org/ticket/8679\n\n",
+    "created_at": "2010-04-12T21:21:49Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "enhancement"
+    ],
+    "title": "conventions for spkg names, rewriting sage-spkg",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8679",
+    "user": "jhpalmieri"
+}
+```
 Assignee: tbd
 
 CC:  ddrake mvngu
@@ -26,9 +36,9 @@ See [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/
 
 The attached patches do three things:
 
- - Rewrite sage-pkg (in python instead of bash) to test whether the name has the right form.
- - Remove sage-pkg-nocompress, using sage-pkg instead (and thus unifying the two scripts sage-pkg and sage-pkg-nocompress).
- - Add some comments about this to the developer's guide (hence the cc for mvngu).
+- Rewrite sage-pkg (in python instead of bash) to test whether the name has the right form.
+- Remove sage-pkg-nocompress, using sage-pkg instead (and thus unifying the two scripts sage-pkg and sage-pkg-nocompress).
+- Add some comments about this to the developer's guide (hence the cc for mvngu).
 
 I used python because in the old version of sage-pkg, we were already calling sed and perl, and we might need to call perl again (or something else?) to test whether the name has the right form.  It seems easier to maintain if it's all plain Python.
 
@@ -38,33 +48,83 @@ Here is the standard being suggested by this patch: each Sage spkg should have a
 BASENAME-VERSION.spkg
 ```
 
-where BASENAME may lowercase letters, numbers, and underscores, but *no hyphens*.  VERSION *must be present* and *should start with a number*; it may contain numbers, letters, dots, and hyphens; it may end in a string of the form "pNUM", where "NUM" is a non-negative integer.  The new version of sage-pkg sets BASENAME to be everything up to the first hyphen, but it does not check to make sure only numbers, lowercase letters, and underscores are used.  It checks that VERSION is present, starts with a number, and contains only numbers, letters, periods, hyphens.  If not, it prints a warning and creates an spkg anyway.
+where BASENAME may lowercase letters, numbers, and underscores, but **no hyphens**.  VERSION **must be present** and **should start with a number**; it may contain numbers, letters, dots, and hyphens; it may end in a string of the form "pNUM", where "NUM" is a non-negative integer.  The new version of sage-pkg sets BASENAME to be everything up to the first hyphen, but it does not check to make sure only numbers, lowercase letters, and underscores are used.  It checks that VERSION is present, starts with a number, and contains only numbers, letters, periods, hyphens.  If not, it prints a warning and creates an spkg anyway.
 
 I've tried to implement the change at #2522, but I'm not sure how to test it.  Any suggestions?  What sort of "OS X junk" should I try to put in my directory, to make sure it is not put into the resulting spkg file?
+
+Issue created by migration from https://trac.sagemath.org/ticket/8679
+
+
+
 
 
 ---
 
-Comment by jhpalmieri created at 2010-04-12 21:23:12
+archive/issue_comments_079057.json:
+```json
+{
+    "body": "sage repo (documentation)",
+    "created_at": "2010-04-12T21:23:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8679",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8679#issuecomment-79057",
+    "user": "jhpalmieri"
+}
+```
 
 sage repo (documentation)
 
 
+
 ---
+
+archive/issue_comments_079058.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-04-12T21:59:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8679",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8679#issuecomment-79058",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-12 21:59:11
+archive/issue_comments_079059.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-04-12T21:59:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8679",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8679#issuecomment-79059",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by was created at 2010-04-13 04:30:04
+archive/issue_comments_079060.json:
+```json
+{
+    "body": "* I read trac_8679-sage.patch and it looks wonderful!!\n\n* trac_8679-scripts.patch will of course probably cause some other patches to need rebases. \n\n-- So to finish a review, trac_8679-sage.patch needs to be tested:\n\n1. make an spkg\n\n2. make a non-compressed spkg\n\n3. Do a full build of all of sage.\n\nAnything else?\n\nIf somebody (e.g., me) reports the above works, then I would give this a positive review.\n\nAnd moving to Python is *great*, since now we can use this script in other scripts, and option parsing is done right.",
+    "created_at": "2010-04-13T04:30:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8679",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8679#issuecomment-79060",
+    "user": "was"
+}
+```
 
 * I read trac_8679-sage.patch and it looks wonderful!!
 
@@ -85,9 +145,20 @@ If somebody (e.g., me) reports the above works, then I would give this a positiv
 And moving to Python is *great*, since now we can use this script in other scripts, and option parsing is done right.
 
 
+
 ---
 
-Comment by ddrake created at 2010-04-13 12:25:27
+archive/issue_comments_079061.json:
+```json
+{
+    "body": "I applied the scripts patch, unpacked the fortran spkg, and tried \"sage -pkg_nc fortran-...\". It didn't go so well:\n\n\n```\nCreating Sage package fortran-20100118 with no compression\nTraceback (most recent call last):\n  File \"/home/drake/s/trac8679/sage-4.3.5/local/bin/sage-pkg\", line 130, in <module>\n    main()\n  File \"/home/drake/s/trac8679/sage-4.3.5/local/bin/sage-pkg\", line 81, in main\n    tar_file(dir, no_compress = options.no_compress)\n  File \"/home/drake/s/trac8679/sage-4.3.5/local/bin/sage-pkg\", line 36, in tar_file\n    tar = tarfile.open(file, mode=mode)\n  File \"/home/drake/s/trac8679/sage-4.3.5/local/lib/python/tarfile.py\", line 1682, in open\n    return cls.taropen(name, mode, fileobj, **kwargs)\n  File \"/home/drake/s/trac8679/sage-4.3.5/local/lib/python/tarfile.py\", line 1692, in taropen\n    return cls(name, mode, fileobj, **kwargs)\n  File \"/home/drake/s/trac8679/sage-4.3.5/local/lib/python/tarfile.py\", line 1519, in __init__\n    fileobj = bltn_open(name, self._mode)\nTypeError: coercing to Unicode: need string or buffer, type found\n```\n\nI think you never defined what \"file\" is in your \"tarfile.open\" call.",
+    "created_at": "2010-04-13T12:25:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8679",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8679#issuecomment-79061",
+    "user": "ddrake"
+}
+```
 
 I applied the scripts patch, unpacked the fortran spkg, and tried "sage -pkg_nc fortran-...". It didn't go so well:
 
@@ -113,16 +184,38 @@ TypeError: coercing to Unicode: need string or buffer, type found
 I think you never defined what "file" is in your "tarfile.open" call.
 
 
+
 ---
 
-Comment by ddrake created at 2010-04-13 12:25:27
+archive/issue_comments_079062.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-04-13T12:25:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8679",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8679#issuecomment-79062",
+    "user": "ddrake"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-13 18:19:59
+archive/issue_comments_079063.json:
+```json
+{
+    "body": "Replying to [comment:4 ddrake]:\n\n> I think you never defined what \"file\" is in your \"tarfile.open\" call.\n\nOops, you're right.  (The tar_file function used to be part of \"main\", so \"file\" was defined there.)\n\nHere's a new patch; it just changes `file` to `\"%s.spkg\" % dir`.",
+    "created_at": "2010-04-13T18:19:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8679",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8679#issuecomment-79063",
+    "user": "jhpalmieri"
+}
+```
 
 Replying to [comment:4 ddrake]:
 
@@ -133,67 +226,135 @@ Oops, you're right.  (The tar_file function used to be part of "main", so "file"
 Here's a new patch; it just changes `file` to `"%s.spkg" % dir`.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-13 18:19:59
+archive/issue_comments_079064.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-04-13T18:19:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8679",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8679#issuecomment-79064",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
+
+archive/issue_comments_079065.json:
+```json
+{
+    "body": "Attachment\n\nscripts repo",
+    "created_at": "2010-04-13T18:20:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8679",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8679#issuecomment-79065",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
 scripts repo
 
 
+
 ---
 
-Comment by leif created at 2010-04-13 18:32:58
+archive/issue_comments_079066.json:
+```json
+{
+    "body": "Funny thing. I'd rather change the *code* to reflect the common practice of using dashes in package names, i.e. taking the leftmost substring that *starts with a digit* (and of course is preceded by a hyphen) as the package version part.\n\nIMHO code that's unable to deal with dashes in package names is bad and should be fixed, not the names. We shouldn't introduce or keep restrictions that aren't really necessary, not only but especially if they rule out what's widely used.\n\n-Leif",
+    "created_at": "2010-04-13T18:32:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8679",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8679#issuecomment-79066",
+    "user": "leif"
+}
+```
 
-Funny thing. I'd rather change the _code_ to reflect the common practice of using dashes in package names, i.e. taking the leftmost substring that _starts with a digit_ (and of course is preceded by a hyphen) as the package version part.
+Funny thing. I'd rather change the *code* to reflect the common practice of using dashes in package names, i.e. taking the leftmost substring that *starts with a digit* (and of course is preceded by a hyphen) as the package version part.
 
 IMHO code that's unable to deal with dashes in package names is bad and should be fixed, not the names. We shouldn't introduce or keep restrictions that aren't really necessary, not only but especially if they rule out what's widely used.
 
 -Leif
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-13 18:51:57
+archive/issue_comments_079067.json:
+```json
+{
+    "body": "Replying to [comment:6 leif]:\n> Funny thing. I'd rather change the *code* to reflect the common practice of using dashes in package names, i.e. taking the leftmost substring that *starts with a digit* (and of course is preceded by a hyphen) as the package version part.\n> \n> IMHO code that's unable to deal with dashes in package names is bad and should be fixed, not the names. We shouldn't introduce or keep restrictions that aren't really necessary, not only but especially if they rule out what's widely used.\n\nFirst of all, what's widely used *in Sage* is the convention here: everything after the first hyphen is the version number.  Look at the names of the standard spkgs to see this.\n\nSecond, you might be right, but this is not the right place to discuss design decisions like this: sage-devel is.\n\nThird, this is an issue which will only arise for developers -- people producing new spkgs -- and they should be able to handle using hyphens or underscores according to the conventions.  So it's not a big deal.",
+    "created_at": "2010-04-13T18:51:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8679",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8679#issuecomment-79067",
+    "user": "jhpalmieri"
+}
+```
 
 Replying to [comment:6 leif]:
-> Funny thing. I'd rather change the _code_ to reflect the common practice of using dashes in package names, i.e. taking the leftmost substring that _starts with a digit_ (and of course is preceded by a hyphen) as the package version part.
+> Funny thing. I'd rather change the *code* to reflect the common practice of using dashes in package names, i.e. taking the leftmost substring that *starts with a digit* (and of course is preceded by a hyphen) as the package version part.
 > 
 > IMHO code that's unable to deal with dashes in package names is bad and should be fixed, not the names. We shouldn't introduce or keep restrictions that aren't really necessary, not only but especially if they rule out what's widely used.
 
-First of all, what's widely used _in Sage_ is the convention here: everything after the first hyphen is the version number.  Look at the names of the standard spkgs to see this.
+First of all, what's widely used *in Sage* is the convention here: everything after the first hyphen is the version number.  Look at the names of the standard spkgs to see this.
 
 Second, you might be right, but this is not the right place to discuss design decisions like this: sage-devel is.
 
 Third, this is an issue which will only arise for developers -- people producing new spkgs -- and they should be able to handle using hyphens or underscores according to the conventions.  So it's not a big deal.
 
 
+
 ---
 
-Comment by leif created at 2010-04-13 22:43:32
+archive/issue_comments_079068.json:
+```json
+{
+    "body": "Replying to [comment:7 jhpalmieri]:\n> First of all, what's widely used *in Sage* is the convention here\nWell, I didn't talk about common *spkg* names (of course they follow the old rule).\nNote that many spkgs are patched upstream packages, so their (original) names won't necessarily follow *Sage's* naming convention; there are indeed yet packages that had to be renamed.\n\n> Second, you might be right, but this is not the right place to discuss design decisions like this: sage-devel is.\nThe thread \"ends\" with a link to this ticket, whose description (re-)states the convention, while the thread's title only mentions the *mode* package;\nbut never mind, I'll repost it there. ;-)\n\n> Third, this is an issue which will only arise for developers -- people producing new spkgs -- and they should be able to handle using hyphens or underscores according to the conventions.\nI think there's (with intent) no sharp line between Sage developers/contributors/users; think of optional \"third party\" (s)pkgs.",
+    "created_at": "2010-04-13T22:43:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8679",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8679#issuecomment-79068",
+    "user": "leif"
+}
+```
 
 Replying to [comment:7 jhpalmieri]:
-> First of all, what's widely used _in Sage_ is the convention here
-Well, I didn't talk about common _spkg_ names (of course they follow the old rule).
-Note that many spkgs are patched upstream packages, so their (original) names won't necessarily follow _Sage's_ naming convention; there are indeed yet packages that had to be renamed.
+> First of all, what's widely used *in Sage* is the convention here
+Well, I didn't talk about common *spkg* names (of course they follow the old rule).
+Note that many spkgs are patched upstream packages, so their (original) names won't necessarily follow *Sage's* naming convention; there are indeed yet packages that had to be renamed.
 
 > Second, you might be right, but this is not the right place to discuss design decisions like this: sage-devel is.
-The thread "ends" with a link to this ticket, whose description (re-)states the convention, while the thread's title only mentions the _mode_ package;
+The thread "ends" with a link to this ticket, whose description (re-)states the convention, while the thread's title only mentions the *mode* package;
 but never mind, I'll repost it there. ;-)
 
 > Third, this is an issue which will only arise for developers -- people producing new spkgs -- and they should be able to handle using hyphens or underscores according to the conventions.
 I think there's (with intent) no sharp line between Sage developers/contributors/users; think of optional "third party" (s)pkgs.
 
 
+
 ---
 
-Comment by ddrake created at 2010-04-14 03:23:06
+archive/issue_comments_079069.json:
+```json
+{
+    "body": "Replying to [comment:3 was]:\n> -- So to finish a review, trac_8679-sage.patch needs to be tested:\n> \n> 1. make an spkg\n> \n> 2. make a non-compressed spkg\n> \n> 3. Do a full build of all of sage.\n\nI'm doing a full build of Sage right now. I took all the spkgs in spkg/standard, extracted them, and re-made them with \"sage -pkg\" (and \"sage -pkg_nc\") after applying the patch here. I'll report the results of the build, although so far it seems fine.",
+    "created_at": "2010-04-14T03:23:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8679",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8679#issuecomment-79069",
+    "user": "ddrake"
+}
+```
 
 Replying to [comment:3 was]:
 > -- So to finish a review, trac_8679-sage.patch needs to be tested:
@@ -207,9 +368,20 @@ Replying to [comment:3 was]:
 I'm doing a full build of Sage right now. I took all the spkgs in spkg/standard, extracted them, and re-made them with "sage -pkg" (and "sage -pkg_nc") after applying the patch here. I'll report the results of the build, although so far it seems fine.
 
 
+
 ---
 
-Comment by ddrake created at 2010-04-14 08:07:32
+archive/issue_comments_079070.json:
+```json
+{
+    "body": "Replying to [comment:9 ddrake]:\n> I'm doing a full build of Sage right now. I took all the spkgs in spkg/standard, extracted them, and re-made them with \"sage -pkg\" (and \"sage -pkg_nc\") after applying the patch here. I'll report the results of the build, although so far it seems fine.\n\nThe build went fine and all tests pass, so the new script produces spkgs that work perfectly well.\n\nJust as an idea, would it make sense to have \"sage -pkg\" add checksums, as in #329?",
+    "created_at": "2010-04-14T08:07:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8679",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8679#issuecomment-79070",
+    "user": "ddrake"
+}
+```
 
 Replying to [comment:9 ddrake]:
 > I'm doing a full build of Sage right now. I took all the spkgs in spkg/standard, extracted them, and re-made them with "sage -pkg" (and "sage -pkg_nc") after applying the patch here. I'll report the results of the build, although so far it seems fine.
@@ -219,9 +391,20 @@ The build went fine and all tests pass, so the new script produces spkgs that wo
 Just as an idea, would it make sense to have "sage -pkg" add checksums, as in #329?
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-14 17:31:44
+archive/issue_comments_079071.json:
+```json
+{
+    "body": "Replying to [comment:10 ddrake]:\n> Just as an idea, would it make sense to have \"sage -pkg\" add checksums, as in #329?\n\nI think that sounds good, but it belongs on another ticket.\n\nBy the way, I also applied this patch and then ran \"sage -sdist\" and built Sage from the resulting tar file without problems.",
+    "created_at": "2010-04-14T17:31:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8679",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8679#issuecomment-79071",
+    "user": "jhpalmieri"
+}
+```
 
 Replying to [comment:10 ddrake]:
 > Just as an idea, would it make sense to have "sage -pkg" add checksums, as in #329?
@@ -231,9 +414,20 @@ I think that sounds good, but it belongs on another ticket.
 By the way, I also applied this patch and then ran "sage -sdist" and built Sage from the resulting tar file without problems.
 
 
+
 ---
 
-Comment by ddrake created at 2010-04-15 01:08:08
+archive/issue_comments_079072.json:
+```json
+{
+    "body": "Replying to [comment:11 jhpalmieri]:\n> Replying to [comment:10 ddrake]:\n> > Just as an idea, would it make sense to have \"sage -pkg\" add checksums, as in #329?\n> \n> I think that sounds good, but it belongs on another ticket.\n\nOh, of course. I've created #8690 for that.\n\nIt seems we've met William's criteria for a positive review. I've created some spkgs (in Linux and OS X) with this patch applied, and everything works properly. I think we can call this a positive review.",
+    "created_at": "2010-04-15T01:08:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8679",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8679#issuecomment-79072",
+    "user": "ddrake"
+}
+```
 
 Replying to [comment:11 jhpalmieri]:
 > Replying to [comment:10 ddrake]:
@@ -246,25 +440,47 @@ Oh, of course. I've created #8690 for that.
 It seems we've met William's criteria for a positive review. I've created some spkgs (in Linux and OS X) with this patch applied, and everything works properly. I think we can call this a positive review.
 
 
+
 ---
 
-Comment by ddrake created at 2010-04-15 01:08:08
+archive/issue_comments_079073.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-04-15T01:08:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8679",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8679#issuecomment-79073",
+    "user": "ddrake"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by was created at 2010-04-15 01:21:45
+archive/issue_comments_079074.json:
+```json
+{
+    "body": "Replying to [comment:8 leif]:\n> Replying to [comment:7 jhpalmieri]:\n> > First of all, what's widely used *in Sage* is the convention here\n> Well, I didn't talk about common *spkg* names (of course they follow the old rule).\n> Note that many spkgs are patched upstream packages, so their (original) names won't necessarily follow *Sage's* naming convention; there are indeed yet packages that had to be renamed.\n> \n> > Second, you might be right, but this is not the right place to discuss design decisions like this: sage-devel is.\n> The thread \"ends\" with a link to this ticket, whose description (re-)states the convention, while the thread's title only mentions the *mode* package;\n> but never mind, I'll repost it there. ;-)\n> \n> > Third, this is an issue which will only arise for developers -- people producing new spkgs -- and they should be able to handle using hyphens or underscores according to the conventions.\n> I think there's (with intent) no sharp line between Sage developers/contributors/users; think of optional \"third party\" (s)pkgs.\n\njhpalmieri's patch rewrites an existing script with no changes in semantics, except to give an error if the package name breaks other parts of the Sage build system.  I think it should go in as is.  \n\nYour suggestions to change the package naming convention is reasonable consider.  However, I think that should be done independently of this particular ticket.  Keeping focus on one issue at a time is really important in order to make solid progress.",
+    "created_at": "2010-04-15T01:21:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8679",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8679#issuecomment-79074",
+    "user": "was"
+}
+```
 
 Replying to [comment:8 leif]:
 > Replying to [comment:7 jhpalmieri]:
-> > First of all, what's widely used _in Sage_ is the convention here
-> Well, I didn't talk about common _spkg_ names (of course they follow the old rule).
-> Note that many spkgs are patched upstream packages, so their (original) names won't necessarily follow _Sage's_ naming convention; there are indeed yet packages that had to be renamed.
+> > First of all, what's widely used *in Sage* is the convention here
+> Well, I didn't talk about common *spkg* names (of course they follow the old rule).
+> Note that many spkgs are patched upstream packages, so their (original) names won't necessarily follow *Sage's* naming convention; there are indeed yet packages that had to be renamed.
 > 
 > > Second, you might be right, but this is not the right place to discuss design decisions like this: sage-devel is.
-> The thread "ends" with a link to this ticket, whose description (re-)states the convention, while the thread's title only mentions the _mode_ package;
+> The thread "ends" with a link to this ticket, whose description (re-)states the convention, while the thread's title only mentions the *mode* package;
 > but never mind, I'll repost it there. ;-)
 > 
 > > Third, this is an issue which will only arise for developers -- people producing new spkgs -- and they should be able to handle using hyphens or underscores according to the conventions.
@@ -275,9 +491,20 @@ jhpalmieri's patch rewrites an existing script with no changes in semantics, exc
 Your suggestions to change the package naming convention is reasonable consider.  However, I think that should be done independently of this particular ticket.  Keeping focus on one issue at a time is really important in order to make solid progress.
 
 
+
 ---
 
-Comment by leif created at 2010-04-15 02:04:30
+archive/issue_comments_079075.json:
+```json
+{
+    "body": "Replying to [comment:13 was]:\n> jhpalmieri's patch rewrites an existing script with no changes in semantics, except to give an error if the package name breaks other parts of the Sage build system.  I think it should go in as is.  \n\nI didn't want to blame John's work nor give it a negative review.\n\nRelaxing the naming convention of course requires locating the code parts that (currently can't) deal with such names, so if at all tbd in another ticket.",
+    "created_at": "2010-04-15T02:04:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8679",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8679#issuecomment-79075",
+    "user": "leif"
+}
+```
 
 Replying to [comment:13 was]:
 > jhpalmieri's patch rewrites an existing script with no changes in semantics, except to give an error if the package name breaks other parts of the Sage build system.  I think it should go in as is.  
@@ -287,17 +514,39 @@ I didn't want to blame John's work nor give it a negative review.
 Relaxing the naming convention of course requires locating the code parts that (currently can't) deal with such names, so if at all tbd in another ticket.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-16 18:57:09
+archive/issue_comments_079076.json:
+```json
+{
+    "body": "Merged in 4.4.alpha0:\n- trac_8679-sage.patch\n- trac_8679-scripts.patch",
+    "created_at": "2010-04-16T18:57:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8679",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8679#issuecomment-79076",
+    "user": "jhpalmieri"
+}
+```
 
 Merged in 4.4.alpha0:
- - trac_8679-sage.patch
- - trac_8679-scripts.patch
+- trac_8679-sage.patch
+- trac_8679-scripts.patch
+
 
 
 ---
 
-Comment by jhpalmieri created at 2010-04-16 18:57:09
+archive/issue_comments_079077.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-04-16T18:57:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8679",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8679#issuecomment-79077",
+    "user": "jhpalmieri"
+}
+```
 
 Resolution: fixed

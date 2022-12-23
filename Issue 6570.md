@@ -1,11 +1,21 @@
 # Issue 6570: indexing a matrix with a non-integer should return an IndexError, not a TypeError
 
-Issue created by migration from https://trac.sagemath.org/ticket/6570
-
-Original creator: jason
-
-Original creation time: 2009-07-20 14:05:39
-
+archive/issues_006570.json:
+```json
+{
+    "body": "Assignee: was\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: a=random_matrix(ZZ,4)\nsage: a[1,1.5]  \n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n| Sage Version 4.1, Release Date: 2009-07-09                         |\n| Type notebook() for the GUI, and license() for information.        |\n/home/grout/.sage/temp/tiny/11658/_home_grout__sage_init_sage_0.py in <module>()\n\n/home/grout/sage/local/lib/python2.6/site-packages/sage/matrix/matrix0.so in sage.matrix.matrix0.Matrix.__getitem__ (sage/matrix/matrix0.c:4772)()\n    837             else:\n    838                 if not PyIndex_Check(col_index):\n--> 839                     raise TypeError, \"index must be an integer\"\n    840                 col = col_index\n    841                 if col < 0:\n\nTypeError: index must be an integer\nsage: a[1.5,1]\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/grout/.sage/temp/tiny/11658/_home_grout__sage_init_sage_0.py in <module>()\n\n/home/grout/sage/local/lib/python2.6/site-packages/sage/matrix/matrix0.so in sage.matrix.matrix0.Matrix.__getitem__ (sage/matrix/matrix0.c:4487)()\n    811             else:\n    812                 if not PyIndex_Check(row_index):\n--> 813                     raise TypeError, \"index must be an integer\"\n    814                 row = row_index\n    815                 if row < 0:\n\nTypeError: index must be an integer\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6570\n\n",
+    "created_at": "2009-07-20T14:05:39Z",
+    "labels": [
+        "linear algebra",
+        "major",
+        "bug"
+    ],
+    "title": "indexing a matrix with a non-integer should return an IndexError, not a TypeError",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6570",
+    "user": "jason"
+}
+```
 Assignee: was
 
 
@@ -45,10 +55,25 @@ TypeError: index must be an integer
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6570
+
+
+
+
 
 ---
 
-Comment by rbeezer created at 2009-07-21 03:29:30
+archive/issue_comments_053642.json:
+```json
+{
+    "body": "The Python Docs at\n\nhttp://docs.python.org/library/exceptions.html\n\nsay:\n\n`IndexError`\n\n    Raised when a sequence subscript is out of range. (Slice indices are silently truncated to fall in the allowed range; if an index is not a plain integer, `TypeError` is raised.)\n\nThis seems to be the way these are both being used in the locations referenced.  So it would appear that current use is consistent with the Python standards?",
+    "created_at": "2009-07-21T03:29:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6570",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6570#issuecomment-53642",
+    "user": "rbeezer"
+}
+```
 
 The Python Docs at
 
@@ -63,17 +88,39 @@ say:
 This seems to be the way these are both being used in the locations referenced.  So it would appear that current use is consistent with the Python standards?
 
 
+
 ---
 
-Comment by jason created at 2009-07-21 07:00:55
+archive/issue_comments_053643.json:
+```json
+{
+    "body": "Thanks for looking this up.  This ticket is obviously invalid, then.\n\nI feel silly.  I've had my hands in this code before, and now that you bring this up, it feels like I've looked this up before...",
+    "created_at": "2009-07-21T07:00:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6570",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6570#issuecomment-53643",
+    "user": "jason"
+}
+```
 
 Thanks for looking this up.  This ticket is obviously invalid, then.
 
 I feel silly.  I've had my hands in this code before, and now that you bring this up, it feels like I've looked this up before...
 
 
+
 ---
 
-Comment by mvngu created at 2009-07-21 07:02:41
+archive/issue_comments_053644.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2009-07-21T07:02:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6570",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6570#issuecomment-53644",
+    "user": "mvngu"
+}
+```
 
 Resolution: invalid

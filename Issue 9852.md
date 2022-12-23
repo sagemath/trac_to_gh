@@ -1,11 +1,21 @@
 # Issue 9852: Enumerate Integer solution of a LP through new CPLEX interface
 
-Issue created by migration from https://trac.sagemath.org/ticket/9853
-
-Original creator: ncohen
-
-Original creation time: 2010-09-03 18:39:05
-
+archive/issues_009852.json:
+```json
+{
+    "body": "Assignee: jason, jkantor\n\nCC:  nthiery\n\nThis tickets implements a new (and direct) interface to CPLEX, using its C library. We are now able to iterate over integer solutions of a MILP, which is a *very* good news (after quite a lot of work debugging Cython code) `:-D`\n\nI also updated the method MixedIntegerLinearProgram.solve to show two different ways to use CPLEX. #8880 is not needed either anymore once this patch is merged.\n\nTips for the reviewer :\n\n* Do not read the parts of the .patch file related to the changes in files mip_cplex and mip_osi cplex. Here is what happened : the former file named mip_cplex has been renamed to mip_osi_cplex (as it uses CPLEX through the OSI library), and the mip_cplex file is brand new, and contains the new interface. Of course, I changed in the docstrings of mip_osi_cplex lines such as \n  {{{\n  from sage.numerical.mip_cplex import [something]\n  }}}\n  to\n  {{{\n  from sage.numerical.mip_osi_cplex import [something]\n  }}}\n  So there is no need to deal with all these - and + lines.\n*  Please, pick an enumeration problem that you like, and check CPLEX is indeed returning ALL the solutions. It first \"forgot\" some of them, and I had to change a very badly documented parameter to get all the answers I wanted for my problems. Please check on some other examples `:-)`\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/9853\n\n",
+    "created_at": "2010-09-03T18:39:05Z",
+    "labels": [
+        "numerical",
+        "major",
+        "enhancement"
+    ],
+    "title": "Enumerate Integer solution of a LP through new CPLEX interface",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9852",
+    "user": "ncohen"
+}
+```
 Assignee: jason, jkantor
 
 CC:  nthiery
@@ -16,81 +26,186 @@ I also updated the method MixedIntegerLinearProgram.solve to show two different 
 
 Tips for the reviewer :
 
-    * Do not read the parts of the .patch file related to the changes in files mip_cplex and mip_osi cplex. Here is what happened : the former file named mip_cplex has been renamed to mip_osi_cplex (as it uses CPLEX through the OSI library), and the mip_cplex file is brand new, and contains the new interface. Of course, I changed in the docstrings of mip_osi_cplex lines such as 
-     {{{
-     from sage.numerical.mip_cplex import [something]
-     }}}
-     to
-     {{{
-     from sage.numerical.mip_osi_cplex import [something]
-     }}}
-     So there is no need to deal with all these - and + lines.
-   *  Please, pick an enumeration problem that you like, and check CPLEX is indeed returning ALL the solutions. It first "forgot" some of them, and I had to change a very badly documented parameter to get all the answers I wanted for my problems. Please check on some other examples `:-)`
+* Do not read the parts of the .patch file related to the changes in files mip_cplex and mip_osi cplex. Here is what happened : the former file named mip_cplex has been renamed to mip_osi_cplex (as it uses CPLEX through the OSI library), and the mip_cplex file is brand new, and contains the new interface. Of course, I changed in the docstrings of mip_osi_cplex lines such as 
+  {{{
+  from sage.numerical.mip_cplex import [something]
+  }}}
+  to
+  {{{
+  from sage.numerical.mip_osi_cplex import [something]
+  }}}
+  So there is no need to deal with all these - and + lines.
+*  Please, pick an enumeration problem that you like, and check CPLEX is indeed returning ALL the solutions. It first "forgot" some of them, and I had to change a very badly documented parameter to get all the answers I wanted for my problems. Please check on some other examples `:-)`
 
 Nathann
+
+Issue created by migration from https://trac.sagemath.org/ticket/9853
+
+
+
 
 
 ---
 
-Comment by ncohen created at 2010-09-03 18:41:02
+archive/issue_comments_097239.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-09-03T18:41:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9852",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9852#issuecomment-97239",
+    "user": "ncohen"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by ncohen created at 2010-09-06 11:11:01
+archive/issue_comments_097240.json:
+```json
+{
+    "body": "Changing component from numerical to linear programming.",
+    "created_at": "2010-09-06T11:11:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9852",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9852#issuecomment-97240",
+    "user": "ncohen"
+}
+```
 
 Changing component from numerical to linear programming.
 
 
+
 ---
+
+archive/issue_comments_097241.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-09-19T10:52:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9852",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9852#issuecomment-97241",
+    "user": "ncohen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by ncohen created at 2010-09-19 10:53:14
+archive/issue_comments_097242.json:
+```json
+{
+    "body": "(just added a sage_free where I had forgotten it) `:-)`\n\nNathann",
+    "created_at": "2010-09-19T10:53:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9852",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9852#issuecomment-97242",
+    "user": "ncohen"
+}
+```
 
 (just added a sage_free where I had forgotten it) `:-)`
 
 Nathann
 
 
+
 ---
 
-Comment by ncohen created at 2010-09-23 15:44:41
+archive/issue_comments_097243.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-09-23T15:44:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9852",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9852#issuecomment-97243",
+    "user": "ncohen"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by ncohen created at 2010-10-09 08:36:41
+archive/issue_comments_097244.json:
+```json
+{
+    "body": "This ticket also modifies files which are deleted by #10043. I'll rewrite it using the new interface anyway !\n\nNathann",
+    "created_at": "2010-10-09T08:36:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9852",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9852#issuecomment-97244",
+    "user": "ncohen"
+}
+```
 
 This ticket also modifies files which are deleted by #10043. I'll rewrite it using the new interface anyway !
 
 Nathann
 
 
+
 ---
 
-Comment by mpatel created at 2010-10-09 08:46:15
+archive/issue_comments_097245.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2010-10-09T08:46:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9852",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9852#issuecomment-97245",
+    "user": "mpatel"
+}
+```
 
 Resolution: invalid
 
 
+
 ---
 
-Comment by nthiery created at 2012-01-04 23:29:04
+archive/issue_comments_097246.json:
+```json
+{
+    "body": "Why was this ticket considered as invalid?",
+    "created_at": "2012-01-04T23:29:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9852",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9852#issuecomment-97246",
+    "user": "nthiery"
+}
+```
 
 Why was this ticket considered as invalid?
 
 
+
 ---
 
-Comment by ncohen created at 2012-01-04 23:36:53
+archive/issue_comments_097247.json:
+```json
+{
+    "body": "> Why was this ticket considered as invalid?\n\nBecause it worked on an ooooooold version of the LP backends, that have been totally rewritten since. But it is nice to have this code around, because I remember I went through hell to find the CPLEX methods that should be use to enumerate integer solutions.\n\nThis being said, we have a Gurobi backend too, now. Perhaps it can also enumerate integer solutions.",
+    "created_at": "2012-01-04T23:36:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9852",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9852#issuecomment-97247",
+    "user": "ncohen"
+}
+```
 
 > Why was this ticket considered as invalid?
 
@@ -99,9 +214,20 @@ Because it worked on an ooooooold version of the LP backends, that have been tot
 This being said, we have a Gurobi backend too, now. Perhaps it can also enumerate integer solutions.
 
 
+
 ---
 
-Comment by nthiery created at 2012-01-05 01:02:22
+archive/issue_comments_097248.json:
+```json
+{
+    "body": "Replying to [comment:8 ncohen]:\n> Because it worked on an ooooooold version of the LP backends, that have been totally rewritten since. But it is nice to have this code around, because I remember I went through hell to find the CPLEX methods that should be use to enumerate integer solutions.\n> \n> This being said, we have a Gurobi backend too, now. Perhaps it can also enumerate integer solutions.\n\nOk, so it's more like the current patch is invalid. The feature would still be useful (be it implemented through CPLEX or other). So, unless there is another ticket for this feature, I would recommend to (have the release manager?) reopen this ticket.\n\nCheers,\n                                Nicolas",
+    "created_at": "2012-01-05T01:02:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9852",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9852#issuecomment-97248",
+    "user": "nthiery"
+}
+```
 
 Replying to [comment:8 ncohen]:
 > Because it worked on an ooooooold version of the LP backends, that have been totally rewritten since. But it is nice to have this code around, because I remember I went through hell to find the CPLEX methods that should be use to enumerate integer solutions.

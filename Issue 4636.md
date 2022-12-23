@@ -1,11 +1,21 @@
 # Issue 4636: improve polynomial_modn_dense_ntl.Polynomial_dense_mod_p
 
-Issue created by migration from https://trac.sagemath.org/ticket/4636
-
-Original creator: ncalexan
-
-Original creation time: 2008-11-27 04:44:35
-
+archive/issues_004636.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  craigcitro\n\nKeywords: polynomial modn finite field gf\n\nsage.rings.polynomial.polynomial_modn_dense_ntl.Polynomial_dense_mod_p is very old.\n\nThe attached patch removes (but doesn't yet delete -- could you verify it can be removed, reviewer?) Polynomial_dense_mod_p and implements polynomial_modn_dense_ntl.Polynomial_dense_modp_ntl_zz/ZZ using the newer techniques.\n\nIt makes basic arithmetic faster.  I was finding that arithmetic in GF(next_prime(2^50))['x'] was slower than in Zmod(next_prime(2^50)+1)['x'], but now I cannot find the comparison!  In any case, this is much faster for doing gcd/xgcd in GF(p)['x'].\n\nIssue created by migration from https://trac.sagemath.org/ticket/4636\n\n",
+    "created_at": "2008-11-27T04:44:35Z",
+    "labels": [
+        "number theory",
+        "major",
+        "bug"
+    ],
+    "title": "improve polynomial_modn_dense_ntl.Polynomial_dense_mod_p",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4636",
+    "user": "ncalexan"
+}
+```
 Assignee: was
 
 CC:  craigcitro
@@ -18,29 +28,79 @@ The attached patch removes (but doesn't yet delete -- could you verify it can be
 
 It makes basic arithmetic faster.  I was finding that arithmetic in GF(next_prime(2^50))['x'] was slower than in Zmod(next_prime(2^50)+1)['x'], but now I cannot find the comparison!  In any case, this is much faster for doing gcd/xgcd in GF(p)['x'].
 
+Issue created by migration from https://trac.sagemath.org/ticket/4636
+
+
+
+
 
 ---
+
+archive/issue_comments_034864.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-11-27T04:51:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4636",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4636#issuecomment-34864",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by malb created at 2008-11-27 10:27:11
+archive/issue_comments_034865.json:
+```json
+{
+    "body": "Hi Nick, did you see the 'newest' technique to implement these things? It is not 100% polished yet (e.g. I suppose context handling should be improved) but it should be the most straight forward in terms of avoiding code duplication. See `sage.rings.polynomial.polynomial_gf2x` and `sage.rings.polynomial.polynomial_template` for details.",
+    "created_at": "2008-11-27T10:27:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4636",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4636#issuecomment-34865",
+    "user": "malb"
+}
+```
 
 Hi Nick, did you see the 'newest' technique to implement these things? It is not 100% polished yet (e.g. I suppose context handling should be improved) but it should be the most straight forward in terms of avoiding code duplication. See `sage.rings.polynomial.polynomial_gf2x` and `sage.rings.polynomial.polynomial_template` for details.
 
 
+
 ---
 
-Comment by was created at 2008-11-27 16:41:10
+archive/issue_comments_034866.json:
+```json
+{
+    "body": "Nick, Is this supposed be \"with patch; needs review\"?",
+    "created_at": "2008-11-27T16:41:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4636",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4636#issuecomment-34866",
+    "user": "was"
+}
+```
 
 Nick, Is this supposed be "with patch; needs review"?
 
 
+
 ---
 
-Comment by was created at 2008-11-28 04:45:08
+archive/issue_comments_034867.json:
+```json
+{
+    "body": "REFEREE REPORT:\n\nI applied this patch and doctested the rings directory.  I get a couple of doctest failures:\n\n\n```\nsage -t  devel/sage-main/sage/rings/integer_mod.pyx\n**********************************************************************\nFile \"/Users/wstein/sage/devel/sage-main/sage/rings/integer_mod.pyx\", line 505:\n    sage: type(a.polynomial())\nExpected:\n    <type 'sage.rings.polynomial.polynomial_modn_dense_ntl.Polynomial_dense_mod_p'>\nGot:\n    <type 'sage.rings.polynomial.polynomial_modn_dense_ntl.Polynomial_dense_modp_ntl_zz'>\n**********************************************************************\n\nsage -t  devel/sage-main/sage/rings/finite_field_givaro.pyx\n**********************************************************************\nFile \"/Users/wstein/sage/devel/sage-main/sage/rings/finite_field_givaro.pyx\", line 1799:\n    sage: type(f)\nExpected:\n    <type 'sage.rings.polynomial.polynomial_modn_dense_ntl.Polynomial_dense_mod_p'>\nGot:\n    <type 'sage.rings.polynomial.polynomial_modn_dense_ntl.Polynomial_dense_modp_ntl_zz'>\n**********************************************************************\n1 items had failures:\n\n\nsage -t  devel/sage-main/sage/rings/finite_field.py\n**********************************************************************\nFile \"/Users/wstein/sage/devel/sage-main/sage/rings/finite_field.py\", line 178:\n    sage: type(f)\nExpected:\n    <type 'sage.rings.polynomial.polynomial_modn_dense_ntl.Polynomial_dense_mod_p'>\nGot:\n    <type 'sage.rings.polynomial.polynomial_modn_dense_ntl.Polynomial_dense_modp_ntl_zz'>\n**********************************************************************\n1 items had failures:\n\n...\n\tsage -t  devel/sage-main/sage/rings/polynomial/multi_polynomial_libsingular.pyx # 1 doctests failed\n\tsage -t  devel/sage-main/sage/rings/integer_mod.pyx # 1 doctests failed\n\tsage -t  devel/sage-main/sage/rings/finite_field_givaro.pyx # 1 doctests failed\n\tsage -t  devel/sage-main/sage/rings/finite_field.py # 1 doctests failed\n\n```\n",
+    "created_at": "2008-11-28T04:45:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4636",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4636#issuecomment-34867",
+    "user": "was"
+}
+```
 
 REFEREE REPORT:
 
@@ -91,37 +151,92 @@ Got:
 
 
 
+
 ---
 
-Comment by malb created at 2009-01-23 07:16:45
+archive/issue_comments_034868.json:
+```json
+{
+    "body": "I should reimplement this using `polynomial_template.pxi` and Nick will review it once its done.",
+    "created_at": "2009-01-23T07:16:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4636",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4636#issuecomment-34868",
+    "user": "malb"
+}
+```
 
 I should reimplement this using `polynomial_template.pxi` and Nick will review it once its done.
 
 
+
 ---
 
-Comment by malb created at 2009-01-25 19:00:58
+archive/issue_comments_034869.json:
+```json
+{
+    "body": "Changing assignee from was to malb.",
+    "created_at": "2009-01-25T19:00:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4636",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4636#issuecomment-34869",
+    "user": "malb"
+}
+```
 
 Changing assignee from was to malb.
 
 
+
 ---
 
-Comment by malb created at 2009-01-25 19:00:58
+archive/issue_comments_034870.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-01-25T19:00:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4636",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4636#issuecomment-34870",
+    "user": "malb"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-19 17:36:29
+archive/issue_comments_034871.json:
+```json
+{
+    "body": "What is the status of this?  If no one is going to do the templated version, then we should probably include this code.",
+    "created_at": "2009-10-19T17:36:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4636",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4636#issuecomment-34871",
+    "user": "mhansen"
+}
+```
 
 What is the status of this?  If no one is going to do the templated version, then we should probably include this code.
 
 
+
 ---
 
-Comment by malb created at 2010-07-21 16:06:04
+archive/issue_comments_034872.json:
+```json
+{
+    "body": "I vote for closing this ticket\n\n\n```\nsage: f = GF(7)['x']([2, 1, 3])\nsage: type(f)\n<type 'sage.rings.polynomial.polynomial_zmod_flint.Polynomial_zmod_flint'>\n```\n",
+    "created_at": "2010-07-21T16:06:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4636",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4636#issuecomment-34872",
+    "user": "malb"
+}
+```
 
 I vote for closing this ticket
 
@@ -134,29 +249,73 @@ sage: type(f)
 
 
 
+
 ---
 
-Comment by mhansen created at 2012-05-28 07:33:53
+archive/issue_comments_034873.json:
+```json
+{
+    "body": "I agree with malb.",
+    "created_at": "2012-05-28T07:33:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4636",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4636#issuecomment-34873",
+    "user": "mhansen"
+}
+```
 
 I agree with malb.
 
 
+
 ---
 
-Comment by mhansen created at 2012-05-28 07:33:53
+archive/issue_comments_034874.json:
+```json
+{
+    "body": "Changing keywords from \"polynomial modn finite field gf\" to \"polynomial modn finite field gf sd40.5\".",
+    "created_at": "2012-05-28T07:33:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4636",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4636#issuecomment-34874",
+    "user": "mhansen"
+}
+```
 
 Changing keywords from "polynomial modn finite field gf" to "polynomial modn finite field gf sd40.5".
 
 
+
 ---
 
-Comment by mhansen created at 2012-05-28 07:33:53
+archive/issue_comments_034875.json:
+```json
+{
+    "body": "Changing status from needs_work to positive_review.",
+    "created_at": "2012-05-28T07:33:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4636",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4636#issuecomment-34875",
+    "user": "mhansen"
+}
+```
 
 Changing status from needs_work to positive_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-06-02 12:46:13
+archive/issue_comments_034876.json:
+```json
+{
+    "body": "Resolution: worksforme",
+    "created_at": "2012-06-02T12:46:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4636",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4636#issuecomment-34876",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: worksforme

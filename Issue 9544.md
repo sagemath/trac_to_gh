@@ -1,42 +1,100 @@
 # Issue 9544: Fix flintqs on FreeBSD
 
-Issue created by migration from https://trac.sagemath.org/ticket/9544
-
-Original creator: pjeremy
-
-Original creation time: 2010-07-18 20:01:27
-
+archive/issues_009544.json:
+```json
+{
+    "body": "Assignee: pjeremy\n\nTonelliShanks.h references int32_t but does not directly include <stdint.h> (where it is defined).  On FreeBSD using gcc45 (but not the base gcc), this causes compilation to fail.\n\nThe attached patch makes TonelliShanks.h idempotent on FreeBSD (it probably should be on all architectures but making the patch FreeBSD-specific simplifies testing).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9544\n\n",
+    "created_at": "2010-07-18T20:01:27Z",
+    "labels": [
+        "porting: BSD",
+        "major",
+        "enhancement"
+    ],
+    "title": "Fix flintqs on FreeBSD",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9544",
+    "user": "pjeremy"
+}
+```
 Assignee: pjeremy
 
 TonelliShanks.h references int32_t but does not directly include <stdint.h> (where it is defined).  On FreeBSD using gcc45 (but not the base gcc), this causes compilation to fail.
 
 The attached patch makes TonelliShanks.h idempotent on FreeBSD (it probably should be on all architectures but making the patch FreeBSD-specific simplifies testing).
 
+Issue created by migration from https://trac.sagemath.org/ticket/9544
+
+
+
+
 
 ---
 
-Comment by kcrisman created at 2012-01-31 02:00:15
+archive/issue_comments_091996.json:
+```json
+{
+    "body": "Apparently at least once [Stephen Montgomery-Smith](http://groups.google.com/group/sage-devel/browse_thread/thread/2feec7c5511c4ae5/857a00a9aa271f17) compiled Sage on a \"port\" successfully on FreeBSD without this.",
+    "created_at": "2012-01-31T02:00:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9544",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9544#issuecomment-91996",
+    "user": "kcrisman"
+}
+```
 
 Apparently at least once [Stephen Montgomery-Smith](http://groups.google.com/group/sage-devel/browse_thread/thread/2feec7c5511c4ae5/857a00a9aa271f17) compiled Sage on a "port" successfully on FreeBSD without this.
 
 
+
 ---
 
-Comment by stephen created at 2012-04-08 14:51:05
+archive/issue_comments_091997.json:
+```json
+{
+    "body": "Stephen Montgomery-Smith reports that this patch is absolutely necessary for building under FreeBSD.",
+    "created_at": "2012-04-08T14:51:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9544",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9544#issuecomment-91997",
+    "user": "stephen"
+}
+```
 
 Stephen Montgomery-Smith reports that this patch is absolutely necessary for building under FreeBSD.
 
 
+
 ---
 
-Comment by leif created at 2012-04-19 21:29:18
+archive/issue_comments_091998.json:
+```json
+{
+    "body": "Just for the record:  There'll be a new FLINTQS spkg at #12855 soon...",
+    "created_at": "2012-04-19T21:29:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9544",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9544#issuecomment-91998",
+    "user": "leif"
+}
+```
 
 Just for the record:  There'll be a new FLINTQS spkg at #12855 soon...
 
 
+
 ---
 
-Comment by kcrisman created at 2012-06-20 19:10:48
+archive/issue_comments_091999.json:
+```json
+{
+    "body": "The current spkg-install change being used in the port is\n\n\n```diff\n--- flintqs-20070817.p6/spkg-install-orig\t2012-04-08 00:46:21.000000000 +0000\n+++ flintqs-20070817.p6/spkg-install\t2012-04-08 00:55:33.000000000 +0000\n@@ -7,6 +7,7 @@\n fi\n \n cp patches/lanczos.h  src/\n+patch -p0 < patches/TonelliShanks.h.patch\n \n cd src\n```\n\n\nbut we'll have to check the exit status on that.  Or just add this into #12855 or something.",
+    "created_at": "2012-06-20T19:10:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9544",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9544#issuecomment-91999",
+    "user": "kcrisman"
+}
+```
 
 The current spkg-install change being used in the port is
 
@@ -57,48 +115,116 @@ The current spkg-install change being used in the port is
 but we'll have to check the exit status on that.  Or just add this into #12855 or something.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-06-21 10:25:06
+archive/issue_comments_092000.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2012-06-21T10:25:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9544",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9544#issuecomment-92000",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-06-21 10:25:39
+archive/issue_comments_092001.json:
+```json
+{
+    "body": "Rebased to #12855.",
+    "created_at": "2012-06-21T10:25:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9544",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9544#issuecomment-92001",
+    "user": "jdemeyer"
+}
+```
 
 Rebased to #12855.
 
 
+
 ---
+
+archive/issue_comments_092002.json:
+```json
+{
+    "body": "Attachment\n\nDiff for the flintqs spkg. For reference / review only.",
+    "created_at": "2012-06-21T10:26:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9544",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9544#issuecomment-92002",
+    "user": "jdemeyer"
+}
+```
 
 Attachment
 
 Diff for the flintqs spkg. For reference / review only.
 
 
+
 ---
 
-Comment by kcrisman created at 2012-06-21 12:58:40
+archive/issue_comments_092003.json:
+```json
+{
+    "body": "This looks good, but since it's applied universally and not just on FreeBSD I am hesitant to give it positive review.  Jeroen, did you try this out on some of the buildbots?\n\nAlso, is there even an \"upstream\"?  This is a five-year-old program, and some searching indicates that maybe a newer version is included in flint itself?  Anyway, I figure that the age makes reporting upstream inappropriate.",
+    "created_at": "2012-06-21T12:58:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9544",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9544#issuecomment-92003",
+    "user": "kcrisman"
+}
+```
 
 This looks good, but since it's applied universally and not just on FreeBSD I am hesitant to give it positive review.  Jeroen, did you try this out on some of the buildbots?
 
 Also, is there even an "upstream"?  This is a five-year-old program, and some searching indicates that maybe a newer version is included in flint itself?  Anyway, I figure that the age makes reporting upstream inappropriate.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-06-21 13:02:19
+archive/issue_comments_092004.json:
+```json
+{
+    "body": "Replying to [comment:9 kcrisman]:\n> Jeroen, did you try this out on some of the buildbots?\nNo, but I don't expect problems. What harm could an additional header file do?",
+    "created_at": "2012-06-21T13:02:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9544",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9544#issuecomment-92004",
+    "user": "jdemeyer"
+}
+```
 
 Replying to [comment:9 kcrisman]:
 > Jeroen, did you try this out on some of the buildbots?
 No, but I don't expect problems. What harm could an additional header file do?
 
 
+
 ---
 
-Comment by kcrisman created at 2012-06-21 13:09:15
+archive/issue_comments_092005.json:
+```json
+{
+    "body": "> > Jeroen, did you try this out on some of the buildbots?\n> No, but I don't expect problems. What harm could an additional header file do?\nI don't know, that's why I asked!  Extra imports in Python sometimes cause all kinds of circularity issues or slowdowns, and I don't know enough about C to say either way.\n\nBut since you just repackaged this, I think it's appropriate for you to be a reviewer as well.  And I checked that the package is well-formed and installs on OS X.\n\nI also notice that you included stdint after stdlib, while Stephen does the opposite in his patch [here](http://www.freebsd.org/cgi/cvsweb.cgi/ports/math/sage/files/spkg-patch-flintqs-20070817.p6_-_patches_TonelliShanks.h.patch?rev=1.1;content-type=text%2Fplain).  I assume this also doesn't matter?  Sorry for the very stupid questions.\n----\nSee also #11792?",
+    "created_at": "2012-06-21T13:09:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9544",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9544#issuecomment-92005",
+    "user": "kcrisman"
+}
+```
 
 > > Jeroen, did you try this out on some of the buildbots?
 > No, but I don't expect problems. What harm could an additional header file do?
@@ -111,9 +237,20 @@ I also notice that you included stdint after stdlib, while Stephen does the oppo
 See also #11792?
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-06-21 13:14:14
+archive/issue_comments_092006.json:
+```json
+{
+    "body": "Replying to [comment:11 kcrisman]:\n> > > Jeroen, did you try this out on some of the buildbots?\n> > No, but I don't expect problems. What harm could an additional header file do?\n> I don't know, that's why I asked!  Extra imports in Python sometimes cause all kinds of circularity issues or slowdowns, and I don't know enough about C to say either way.\nIn theory this could cause problems, but presumably the C headers are well-designed such that these problems don't occur.\n\n> I also notice that you included stdint after stdlib, while Stephen does the opposite in his patch\nIt also shouldn't matter. The way I did it looked more natural, but there's really no reason.",
+    "created_at": "2012-06-21T13:14:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9544",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9544#issuecomment-92006",
+    "user": "jdemeyer"
+}
+```
 
 Replying to [comment:11 kcrisman]:
 > > > Jeroen, did you try this out on some of the buildbots?
@@ -125,9 +262,20 @@ In theory this could cause problems, but presumably the C headers are well-desig
 It also shouldn't matter. The way I did it looked more natural, but there's really no reason.
 
 
+
 ---
 
-Comment by kcrisman created at 2012-06-21 13:37:11
+archive/issue_comments_092007.json:
+```json
+{
+    "body": "> It also shouldn't matter. The way I did it looked more natural, but there's really no reason.\nOk. \n\nI'm even having trouble finding where this is used.  `sage -grep` with various upper/lowercase of flintqs does nothing, it's not in `module_list.py`, in `spkg/standard/deps` it only has dependencies...  and I'm going to need CPU firepower in a few minutes, can't do a full doctest right now.  Weird.",
+    "created_at": "2012-06-21T13:37:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9544",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9544#issuecomment-92007",
+    "user": "kcrisman"
+}
+```
 
 > It also shouldn't matter. The way I did it looked more natural, but there's really no reason.
 Ok. 
@@ -135,9 +283,20 @@ Ok.
 I'm even having trouble finding where this is used.  `sage -grep` with various upper/lowercase of flintqs does nothing, it's not in `module_list.py`, in `spkg/standard/deps` it only has dependencies...  and I'm going to need CPU firepower in a few minutes, can't do a full doctest right now.  Weird.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-06-21 19:04:57
+archive/issue_comments_092008.json:
+```json
+{
+    "body": "Replying to [comment:13 kcrisman]:\n> I'm even having trouble finding where this is used.  `sage -grep` with various upper/lowercase of flintqs does nothing, it's not in `module_list.py`, in `spkg/standard/deps` it only has dependencies...  and I'm going to need CPU firepower in a few minutes, can't do a full doctest right now.  Weird.\n\nThe interface is `sage/interfaces/qsieve.py`.",
+    "created_at": "2012-06-21T19:04:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9544",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9544#issuecomment-92008",
+    "user": "jdemeyer"
+}
+```
 
 Replying to [comment:13 kcrisman]:
 > I'm even having trouble finding where this is used.  `sage -grep` with various upper/lowercase of flintqs does nothing, it's not in `module_list.py`, in `spkg/standard/deps` it only has dependencies...  and I'm going to need CPU firepower in a few minutes, can't do a full doctest right now.  Weird.
@@ -145,16 +304,38 @@ Replying to [comment:13 kcrisman]:
 The interface is `sage/interfaces/qsieve.py`.
 
 
+
 ---
 
-Comment by kcrisman created at 2012-06-21 19:17:13
+archive/issue_comments_092009.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2012-06-21T19:17:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9544",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9544#issuecomment-92009",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by kcrisman created at 2012-06-21 19:17:13
+archive/issue_comments_092010.json:
+```json
+{
+    "body": "> > I'm even having trouble finding where this is used.  `sage -grep` with various upper/lowercase of flintqs does nothing, it's not in `module_list.py`, in `spkg/standard/deps` it only has dependencies...  and I'm going to need CPU firepower in a few minutes, can't do a full doctest right now.  Weird.\n> \n> The interface is `sage/interfaces/qsieve.py`.\n\nGreat, thanks.  That passes long tests, so since there really isn't any reason anything should be bad, we are good to go.  (Yes, I did `sage -b`.)\n\nSince p7 is also 5.1, tentatively putting it there, but feel free to do whatever is convenient.",
+    "created_at": "2012-06-21T19:17:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9544",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9544#issuecomment-92010",
+    "user": "kcrisman"
+}
+```
 
 > > I'm even having trouble finding where this is used.  `sage -grep` with various upper/lowercase of flintqs does nothing, it's not in `module_list.py`, in `spkg/standard/deps` it only has dependencies...  and I'm going to need CPU firepower in a few minutes, can't do a full doctest right now.  Weird.
 > 
@@ -165,17 +346,39 @@ Great, thanks.  That passes long tests, so since there really isn't any reason a
 Since p7 is also 5.1, tentatively putting it there, but feel free to do whatever is convenient.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-06-21 19:33:10
+archive/issue_comments_092011.json:
+```json
+{
+    "body": "Replying to [comment:15 kcrisman]:\n> Since p7 is also 5.1, tentatively putting it there, but feel free to do whatever is convenient.\n.p7 still needs review...",
+    "created_at": "2012-06-21T19:33:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9544",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9544#issuecomment-92011",
+    "user": "jdemeyer"
+}
+```
 
 Replying to [comment:15 kcrisman]:
 > Since p7 is also 5.1, tentatively putting it there, but feel free to do whatever is convenient.
 .p7 still needs review...
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-06-28 09:36:36
+archive/issue_comments_092012.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2012-06-28T09:36:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9544",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9544#issuecomment-92012",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: fixed

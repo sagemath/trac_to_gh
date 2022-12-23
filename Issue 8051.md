@@ -1,33 +1,80 @@
 # Issue 8051: SageNB 0.7
 
-Issue created by migration from https://trac.sagemath.org/ticket/8051
-
-Original creator: mpatel
-
-Original creation time: 2010-01-24 18:53:29
-
+archive/issues_008051.json:
+```json
+{
+    "body": "Assignee: was\n\nNew spkg.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8051\n\n",
+    "created_at": "2010-01-24T18:53:29Z",
+    "labels": [
+        "notebook",
+        "major",
+        "bug"
+    ],
+    "title": "SageNB 0.7",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8051",
+    "user": "mpatel"
+}
+```
 Assignee: was
 
 New spkg.
 
+Issue created by migration from https://trac.sagemath.org/ticket/8051
+
+
+
+
 
 ---
 
-Comment by mpatel created at 2010-01-25 04:40:15
+archive/issue_comments_070397.json:
+```json
+{
+    "body": "If it's possible, I'd like to get into 0.7.1 as many of the now remaining \"needs review\" tickets as we can.  I'm rebasing these now.",
+    "created_at": "2010-01-25T04:40:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8051#issuecomment-70397",
+    "user": "mpatel"
+}
+```
 
 If it's possible, I'd like to get into 0.7.1 as many of the now remaining "needs review" tickets as we can.  I'm rebasing these now.
 
 
+
 ---
 
-Comment by mpatel created at 2010-01-25 04:40:15
+archive/issue_comments_070398.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-01-25T04:40:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8051#issuecomment-70398",
+    "user": "mpatel"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mpatel created at 2010-01-25 07:35:06
+archive/issue_comments_070399.json:
+```json
+{
+    "body": "Replying to [comment:2 mpatel]:\n> If it's possible, I'd like to get into 0.7.1 as many of the now remaining \"needs review\" tickets as we can.  I'm rebasing these now.\nHere's a possible queue:\n\n```\ntrac_7784-hgignore_update.patch\ntrac_5712-interrupt-notification.5.patch\ntrac_6069-missing_pub_ws.2.patch\ntrac_8038-email_plus_addressing_v2.patch\ntrac_7506-notebook_object-documentation.2.patch\ntrac_693-spawn_notebook.3.patch\ntrac_5177-delete-cell-dirs.3.patch\n```\n",
+    "created_at": "2010-01-25T07:35:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8051#issuecomment-70399",
+    "user": "mpatel"
+}
+```
 
 Replying to [comment:2 mpatel]:
 > If it's possible, I'd like to get into 0.7.1 as many of the now remaining "needs review" tickets as we can.  I'm rebasing these now.
@@ -45,23 +92,56 @@ trac_5177-delete-cell-dirs.3.patch
 
 
 
+
 ---
 
-Comment by mpatel created at 2010-01-27 05:40:28
+archive/issue_comments_070400.json:
+```json
+{
+    "body": "Changing assignee from was to mpatel.",
+    "created_at": "2010-01-27T05:40:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8051#issuecomment-70400",
+    "user": "mpatel"
+}
+```
 
 Changing assignee from was to mpatel.
 
 
+
 ---
 
-Comment by mpatel created at 2010-01-30 05:50:21
+archive/issue_comments_070401.json:
+```json
+{
+    "body": "I just noticed that long `'eval'` docstrings are truncated.  I'll add a reviewer patch to #3083.",
+    "created_at": "2010-01-30T05:50:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8051#issuecomment-70401",
+    "user": "mpatel"
+}
+```
 
 I just noticed that long `'eval'` docstrings are truncated.  I'll add a reviewer patch to #3083.
 
 
+
 ---
 
-Comment by robert.marik created at 2010-01-31 20:14:22
+archive/issue_comments_070402.json:
+```json
+{
+    "body": "All tickets got positive review and have been merged. So what should be reviewed in this ticket?\n\nI installed the spkg, seems to work fine (but I did not test everything), is this enough to give positive review?\n\nbtw: the link from description \"says\" http://boxen.math.washington.edu/home/mpatel/trac/8051/sagenb-0.7.2.spkg but it points to http://boxen.math.washington.edu/home/mpatel/trac/8051/sagenb-0.7.1.spkg",
+    "created_at": "2010-01-31T20:14:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8051#issuecomment-70402",
+    "user": "robert.marik"
+}
+```
 
 All tickets got positive review and have been merged. So what should be reviewed in this ticket?
 
@@ -70,9 +150,20 @@ I installed the spkg, seems to work fine (but I did not test everything), is thi
 btw: the link from description "says" http://boxen.math.washington.edu/home/mpatel/trac/8051/sagenb-0.7.2.spkg but it points to http://boxen.math.washington.edu/home/mpatel/trac/8051/sagenb-0.7.1.spkg
 
 
+
 ---
 
-Comment by mvngu created at 2010-01-31 23:12:09
+archive/issue_comments_070403.json:
+```json
+{
+    "body": "Replying to [comment:9 robert.marik]:\n> All tickets got positive review and have been merged. So what should be reviewed in this ticket?\n\nYou need to make sure that you can successfully install the updated spkg.\n\n\n\n\n\n> I installed the spkg, seems to work fine (but I did not test everything), is this enough to give positive review?\n\nI would say, all doctests must pass as well. In any case, if you can't run all doctests after installing the updated spkg, I can do that. A correct link to the updated spkg is\n\nhttp://boxen.math.washington.edu/home/mpatel/trac/8051/sagenb-0.7.2.spkg",
+    "created_at": "2010-01-31T23:12:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8051#issuecomment-70403",
+    "user": "mvngu"
+}
+```
 
 Replying to [comment:9 robert.marik]:
 > All tickets got positive review and have been merged. So what should be reviewed in this ticket?
@@ -90,9 +181,20 @@ I would say, all doctests must pass as well. In any case, if you can't run all d
 http://boxen.math.washington.edu/home/mpatel/trac/8051/sagenb-0.7.2.spkg
 
 
+
 ---
 
-Comment by mvngu created at 2010-01-31 23:25:37
+archive/issue_comments_070404.json:
+```json
+{
+    "body": "I don't understand why the spkg is not managed by Mercurial:\n\n```\n[mvngu@mod sagenb-0.7.2]$ hg st\nabort: There is no Mercurial repository here (.hg not found)!\n```\n\nThe file `spkg-install` should have its executable bits on:\n\n```\n[mvngu@mod sagenb-0.7.2]$ ls -g spkg-install\n-rw-r--r-- 1 mvngu 348 2010-01-30 16:37 spkg-install\n```\n\nAnd `SPKG.txt` is very sketchy about update details.",
+    "created_at": "2010-01-31T23:25:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8051#issuecomment-70404",
+    "user": "mvngu"
+}
+```
 
 I don't understand why the spkg is not managed by Mercurial:
 
@@ -111,25 +213,47 @@ The file `spkg-install` should have its executable bits on:
 And `SPKG.txt` is very sketchy about update details.
 
 
+
 ---
 
-Comment by mpatel created at 2010-01-31 23:29:54
+archive/issue_comments_070405.json:
+```json
+{
+    "body": "I suggest\n\n* Checking that the package installs and the notebook runs.\n* Checking the repo for unchecked-in changes, queued patches, etc.\n* Checking that the claimed merged tickets appear in `hg log`.\n* Running the doctests: `sage -t -sagenb`.\n\nIdeally, you should run the SageNB Selenium tests, too.  But they require special extra setup.  I'll make simplifying that setup a separate ticket.\n\nThanks for pointing out the link error.  I've updated it.",
+    "created_at": "2010-01-31T23:29:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8051#issuecomment-70405",
+    "user": "mpatel"
+}
+```
 
 I suggest
 
- * Checking that the package installs and the notebook runs.
- * Checking the repo for unchecked-in changes, queued patches, etc.
- * Checking that the claimed merged tickets appear in `hg log`.
- * Running the doctests: `sage -t -sagenb`.
+* Checking that the package installs and the notebook runs.
+* Checking the repo for unchecked-in changes, queued patches, etc.
+* Checking that the claimed merged tickets appear in `hg log`.
+* Running the doctests: `sage -t -sagenb`.
 
 Ideally, you should run the SageNB Selenium tests, too.  But they require special extra setup.  I'll make simplifying that setup a separate ticket.
 
 Thanks for pointing out the link error.  I've updated it.
 
 
+
 ---
 
-Comment by mpatel created at 2010-01-31 23:34:38
+archive/issue_comments_070406.json:
+```json
+{
+    "body": "The repository is in `sagenb-0.7.2/src/sagenb`.  We auto-generate the package with `sagenb-0.7.2/src/sagenb/spkg-dist`.\n\nI suggest that I make a separate ticket to update SPKG.txt.\n\nSee #7784 about\n\n```\n$ hg stat\n? release_notes.txt\n? setup.cfg\n```\n",
+    "created_at": "2010-01-31T23:34:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8051#issuecomment-70406",
+    "user": "mpatel"
+}
+```
 
 The repository is in `sagenb-0.7.2/src/sagenb`.  We auto-generate the package with `sagenb-0.7.2/src/sagenb/spkg-dist`.
 
@@ -145,9 +269,20 @@ $ hg stat
 
 
 
+
 ---
 
-Comment by mpatel created at 2010-01-31 23:38:54
+archive/issue_comments_070407.json:
+```json
+{
+    "body": "Replying to [comment:13 mpatel]:\n> I suggest that I make a separate ticket to update SPKG.txt.\n\nOr I can do this here later today.",
+    "created_at": "2010-01-31T23:38:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8051#issuecomment-70407",
+    "user": "mpatel"
+}
+```
 
 Replying to [comment:13 mpatel]:
 > I suggest that I make a separate ticket to update SPKG.txt.
@@ -155,58 +290,124 @@ Replying to [comment:13 mpatel]:
 Or I can do this here later today.
 
 
+
 ---
 
-Comment by mpatel created at 2010-01-31 23:39:58
+archive/issue_comments_070408.json:
+```json
+{
+    "body": "I'll fix the `spkg-install` problem, too.",
+    "created_at": "2010-01-31T23:39:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8051#issuecomment-70408",
+    "user": "mpatel"
+}
+```
 
 I'll fix the `spkg-install` problem, too.
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-01 03:44:55
+archive/issue_comments_070409.json:
+```json
+{
+    "body": "Please see #7784 for the changes.  If/when that ticket gets a positive review, I'll create SageNB 0.7.3 and post it here.",
+    "created_at": "2010-02-01T03:44:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8051#issuecomment-70409",
+    "user": "mpatel"
+}
+```
 
 Please see #7784 for the changes.  If/when that ticket gets a positive review, I'll create SageNB 0.7.3 and post it here.
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-01 04:34:56
+archive/issue_comments_070410.json:
+```json
+{
+    "body": "By the way, it seems that for the near future, I may be the only very active SageNB developer.  I'd be *very* happy to be proved (proven?) wrong!  There are many tasks to complete --- there are several cool new notebook features to implement.  It's not possible for me to cover them all, and I'd like to avoid stalling ongoing development.\n\nTo this end, I'll try to make it easier for Sage developers to review notebook tickets or make other contributions.  Please let me know what would help.  For example, I can make experimental spkgs that contain the latest patches in the queue.  Those who wish just to test the cumulative changes can install the package with `sage -f sagenb-*.spkg`.  But reviewers can also open the spkg, pop / push patches, and comment on specific ticket(s).  In either case, we'll get useful information about how the notebook behaves in a wider gamut of browser-OS combinations.  We'll also get more end user feedback.",
+    "created_at": "2010-02-01T04:34:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8051#issuecomment-70410",
+    "user": "mpatel"
+}
+```
 
-By the way, it seems that for the near future, I may be the only very active SageNB developer.  I'd be _very_ happy to be proved (proven?) wrong!  There are many tasks to complete --- there are several cool new notebook features to implement.  It's not possible for me to cover them all, and I'd like to avoid stalling ongoing development.
+By the way, it seems that for the near future, I may be the only very active SageNB developer.  I'd be *very* happy to be proved (proven?) wrong!  There are many tasks to complete --- there are several cool new notebook features to implement.  It's not possible for me to cover them all, and I'd like to avoid stalling ongoing development.
 
 To this end, I'll try to make it easier for Sage developers to review notebook tickets or make other contributions.  Please let me know what would help.  For example, I can make experimental spkgs that contain the latest patches in the queue.  Those who wish just to test the cumulative changes can install the package with `sage -f sagenb-*.spkg`.  But reviewers can also open the spkg, pop / push patches, and comment on specific ticket(s).  In either case, we'll get useful information about how the notebook behaves in a wider gamut of browser-OS combinations.  We'll also get more end user feedback.
 
 
+
 ---
 
-Comment by acleone created at 2010-02-01 05:43:38
+archive/issue_comments_070411.json:
+```json
+{
+    "body": "Experimental spkgs would be good.  I think the best way to get more testing/review would be a good guide to applying patches, testing spkgs, etc.\n\nIs there a mailing list or wiki page for coordinating development effort?",
+    "created_at": "2010-02-01T05:43:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8051#issuecomment-70411",
+    "user": "acleone"
+}
+```
 
 Experimental spkgs would be good.  I think the best way to get more testing/review would be a good guide to applying patches, testing spkgs, etc.
 
 Is there a mailing list or wiki page for coordinating development effort?
 
 
+
 ---
 
-Comment by mvngu created at 2010-02-01 05:54:43
+archive/issue_comments_070412.json:
+```json
+{
+    "body": "Replying to [comment:18 acleone]:\n> Is there a mailing list or wiki page for coordinating development effort?\n\nA relevant mailing is [sage-devel](http://groups.google.com/group/sage-devel). Most of the time, that list receives high volume traffic on development discussion. For coordinating release effort, the [sage-release](http://groups.google.com/group/sage-release) mailing list is appropriate. Some effort is underway to expand the Sage documentation with information to help beginners getting started with Sage development. The relevant tickets are:\n\n1. #8108: Expand the Sage Developer Guide for newcomers\n2. #6987: reorganize section on producing patches with Mercurial\n3. #8079: Better documentation for patching spgk's\n4. #8104: developer's guide for making spkgs should specify that patches need to be version controlled\n5. #3882: explain in the programming guide why spkg source patches should be applied by copying entire files\n6. #7944: update Developers' Guide to reflect new process for working on tickets",
+    "created_at": "2010-02-01T05:54:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8051#issuecomment-70412",
+    "user": "mvngu"
+}
+```
 
 Replying to [comment:18 acleone]:
 > Is there a mailing list or wiki page for coordinating development effort?
 
 A relevant mailing is [sage-devel](http://groups.google.com/group/sage-devel). Most of the time, that list receives high volume traffic on development discussion. For coordinating release effort, the [sage-release](http://groups.google.com/group/sage-release) mailing list is appropriate. Some effort is underway to expand the Sage documentation with information to help beginners getting started with Sage development. The relevant tickets are:
 
- 1. #8108: Expand the Sage Developer Guide for newcomers
- 1. #6987: reorganize section on producing patches with Mercurial
- 1. #8079: Better documentation for patching spgk's
- 1. #8104: developer's guide for making spkgs should specify that patches need to be version controlled
- 1. #3882: explain in the programming guide why spkg source patches should be applied by copying entire files
- 1. #7944: update Developers' Guide to reflect new process for working on tickets
+1. #8108: Expand the Sage Developer Guide for newcomers
+2. #6987: reorganize section on producing patches with Mercurial
+3. #8079: Better documentation for patching spgk's
+4. #8104: developer's guide for making spkgs should specify that patches need to be version controlled
+5. #3882: explain in the programming guide why spkg source patches should be applied by copying entire files
+6. #7944: update Developers' Guide to reflect new process for working on tickets
+
 
 
 ---
 
-Comment by mpatel created at 2010-02-01 05:58:46
+archive/issue_comments_070413.json:
+```json
+{
+    "body": "Both [sage-devel](http://groups.google.com/group/sage-devel) and [sage-notebook](http://groups.google.com/group/sage-notebook) are good places.  I suppose we should move this discussion to sage-notebook.\n\nOne source for ideas is [SageTasks](http://wiki.sagemath.org/devel/SageTasks), but it may be getting old.\n\nAddendum: Of course, we should also try to attract energetic developers who'd contribute fresh ideas, techniques, etc., to the SageNB project.",
+    "created_at": "2010-02-01T05:58:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8051#issuecomment-70413",
+    "user": "mpatel"
+}
+```
 
 Both [sage-devel](http://groups.google.com/group/sage-devel) and [sage-notebook](http://groups.google.com/group/sage-notebook) are good places.  I suppose we should move this discussion to sage-notebook.
 
@@ -215,9 +416,20 @@ One source for ideas is [SageTasks](http://wiki.sagemath.org/devel/SageTasks), b
 Addendum: Of course, we should also try to attract energetic developers who'd contribute fresh ideas, techniques, etc., to the SageNB project.
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-01 06:10:45
+archive/issue_comments_070414.json:
+```json
+{
+    "body": "While I'm here, I'd also like to suggest using `alpha.sagenb.org` or creating `ouch.sagenb.org` to test a bleeding-edge SageNB.  This could be a notebook with all positively reviewed patches applied or, more interestingly, an experimental spkg.\n\nWe could also set up a corresponding repository, different from http://boxen.math.washington.edu:8100/, to which to push experimental features and from which to backport what works.  A potential problem here is that Mercurial changesets are immutable.  But we might not care about keeping the history of this repository clean.\n\nJust some thoughts.",
+    "created_at": "2010-02-01T06:10:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8051#issuecomment-70414",
+    "user": "mpatel"
+}
+```
 
 While I'm here, I'd also like to suggest using `alpha.sagenb.org` or creating `ouch.sagenb.org` to test a bleeding-edge SageNB.  This could be a notebook with all positively reviewed patches applied or, more interestingly, an experimental spkg.
 
@@ -226,9 +438,20 @@ We could also set up a corresponding repository, different from http://boxen.mat
 Just some thoughts.
 
 
+
 ---
 
-Comment by robert.marik created at 2010-02-02 18:49:36
+archive/issue_comments_070415.json:
+```json
+{
+    "body": "Installs fine, works fine with jsmath image fonts, tests paseed, cannot check the rest, since I have probably old hg in my Debian Linux\n\n```\nsage@um-bc107:~/sagenb-0.7.2/src/sagenb$ hg log\nabort: requirement 'fncache' not supported!\nsage@um-bc107:~/sagenb-0.7.2/src/sagenb$ hg status\nabort: requirement 'fncache' not supported!\n```\n\n\nCan someone finish testing? I think that this is very important ticket and nice sage notebook is important to attract new users (and new developers). Thank you for working on it.",
+    "created_at": "2010-02-02T18:49:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8051#issuecomment-70415",
+    "user": "robert.marik"
+}
+```
 
 Installs fine, works fine with jsmath image fonts, tests paseed, cannot check the rest, since I have probably old hg in my Debian Linux
 
@@ -243,25 +466,58 @@ abort: requirement 'fncache' not supported!
 Can someone finish testing? I think that this is very important ticket and nice sage notebook is important to attract new users (and new developers). Thank you for working on it.
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-02 22:02:32
+archive/issue_comments_070416.json:
+```json
+{
+    "body": "If you have a spare moment, please review #7784, which is \"blocking\" this ticket.\n\nYou can use `sage -hg` instead of `hg`.",
+    "created_at": "2010-02-02T22:02:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8051#issuecomment-70416",
+    "user": "mpatel"
+}
+```
 
 If you have a spare moment, please review #7784, which is "blocking" this ticket.
 
 You can use `sage -hg` instead of `hg`.
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-03 02:31:27
+archive/issue_comments_070417.json:
+```json
+{
+    "body": "Minh -- Even with #8036, it's very likely the PDF reference manual won't build with this spkg, owing to #7249's Unicode doctests.  I'm not sure what we should do about this.",
+    "created_at": "2010-02-03T02:31:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8051#issuecomment-70417",
+    "user": "mpatel"
+}
+```
 
 Minh -- Even with #8036, it's very likely the PDF reference manual won't build with this spkg, owing to #7249's Unicode doctests.  I'm not sure what we should do about this.
 
 
+
 ---
 
-Comment by mvngu created at 2010-02-03 02:36:27
+archive/issue_comments_070418.json:
+```json
+{
+    "body": "Replying to [comment:24 mpatel]:\n> Minh -- Even with #8036, it's very likely the PDF reference manual won't build with this spkg, owing to #7249's Unicode doctests.  I'm not sure what we should do about this.\n\nThe release deadline for Sage 4.3.2 is Saturday 06th February 2010, which means there's not much time for sorting out failures when building the PDF version of the reference manual. I think [sagenb-0.7.3.spkg](http://boxen.math.washington.edu/home/mpatel/trac/8051/sagenb-0.7.3.spkg) needs to wait for after Sage 4.3.2 is done.",
+    "created_at": "2010-02-03T02:36:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8051#issuecomment-70418",
+    "user": "mvngu"
+}
+```
 
 Replying to [comment:24 mpatel]:
 > Minh -- Even with #8036, it's very likely the PDF reference manual won't build with this spkg, owing to #7249's Unicode doctests.  I'm not sure what we should do about this.
@@ -269,23 +525,56 @@ Replying to [comment:24 mpatel]:
 The release deadline for Sage 4.3.2 is Saturday 06th February 2010, which means there's not much time for sorting out failures when building the PDF version of the reference manual. I think [sagenb-0.7.3.spkg](http://boxen.math.washington.edu/home/mpatel/trac/8051/sagenb-0.7.3.spkg) needs to wait for after Sage 4.3.2 is done.
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-03 09:28:49
+archive/issue_comments_070419.json:
+```json
+{
+    "body": "Please see #8167.  If/when that ticket gets a positive review, I'll make 0.7.4...",
+    "created_at": "2010-02-03T09:28:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8051#issuecomment-70419",
+    "user": "mpatel"
+}
+```
 
 Please see #8167.  If/when that ticket gets a positive review, I'll make 0.7.4...
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-05 00:59:37
+archive/issue_comments_070420.json:
+```json
+{
+    "body": "I've posted SageNB 0.7.4 for review.",
+    "created_at": "2010-02-05T00:59:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8051#issuecomment-70420",
+    "user": "mpatel"
+}
+```
 
 I've posted SageNB 0.7.4 for review.
 
 
+
 ---
 
-Comment by robert.marik created at 2010-02-05 08:34:36
+archive/issue_comments_070421.json:
+```json
+{
+    "body": "Thanks for the update. But now I have too many sage notebooks\n\n```\n[marik@um-bc107 ../lib/python/site-packages]$ pwd\n/opt/sage/local/lib/python/site-packages\n[marik@um-bc107 ../lib/python/site-packages]$ ls -ld sagenb*\ndrwxr-xr-x 4 marik marik 4096  1.\u00a0\u00fano 17.16 sagenb-0.6-py2.6.egg\ndrwxr-xr-x 4 marik marik 4096  2.\u00a0\u00fano 19.33 sagenb-0.7.2-py2.6.egg\ndrwxr-xr-x 4 marik marik 4096  5.\u00a0\u00fano 09.13 sagenb-0.7.4-py2.6.egg\n```\n\n\nHow do I know, which one is actually used? Jsmath image fonts failed to install intro correct directory. Should the old sage notebook be removed, first? Should this be tested on fresh install only?",
+    "created_at": "2010-02-05T08:34:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8051#issuecomment-70421",
+    "user": "robert.marik"
+}
+```
 
 Thanks for the update. But now I have too many sage notebooks
 
@@ -302,9 +591,20 @@ drwxr-xr-x 4 marik marik 4096  5. úno 09.13 sagenb-0.7.4-py2.6.egg
 How do I know, which one is actually used? Jsmath image fonts failed to install intro correct directory. Should the old sage notebook be removed, first? Should this be tested on fresh install only?
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-05 09:20:18
+archive/issue_comments_070422.json:
+```json
+{
+    "body": "We install the sagenb package with [setuptools](http://peak.telecommunity.com/DevCenter/setuptools) ([PyPI](http://pypi.python.org/pypi/setuptools)), which updates `SAGE_LOCAL/lib/python/site-packages/easy-install.pth`.  This file contains paths prepended to `sys.path` on startup.\n\nYou can query the installed version with\n\n\n```python\nsage: from sagenb.misc.misc import SAGENB_VERSION\nsage: SAGENB_VERSION\n```\n\nwhich is essentially\n\n\n```python\nsage: from pkg_resources import Requirement, working_set\nsage: w = working_set.find(Requirement.parse('sagenb'))\nsage: w.version\n```\n\nMoreover, `w.location` gives the install directory.\n\nI'm checking the fonts now...",
+    "created_at": "2010-02-05T09:20:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8051#issuecomment-70422",
+    "user": "mpatel"
+}
+```
 
 We install the sagenb package with [setuptools](http://peak.telecommunity.com/DevCenter/setuptools) ([PyPI](http://pypi.python.org/pypi/setuptools)), which updates `SAGE_LOCAL/lib/python/site-packages/easy-install.pth`.  This file contains paths prepended to `sys.path` on startup.
 
@@ -330,16 +630,38 @@ Moreover, `w.location` gives the install directory.
 I'm checking the fonts now...
 
 
+
 ---
 
-Comment by acleone created at 2010-02-05 09:35:47
+archive/issue_comments_070423.json:
+```json
+{
+    "body": "sagenb 0.7.4 installed correctly for me.  All doc and selenium tests passed.  Still problems building the PDF docs but Ihaven't applied any of the unicode patches (using vanilla sage-4.3.2.alpha1).",
+    "created_at": "2010-02-05T09:35:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8051#issuecomment-70423",
+    "user": "acleone"
+}
+```
 
 sagenb 0.7.4 installed correctly for me.  All doc and selenium tests passed.  Still problems building the PDF docs but Ihaven't applied any of the unicode patches (using vanilla sage-4.3.2.alpha1).
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-05 09:42:46
+archive/issue_comments_070424.json:
+```json
+{
+    "body": "On the fonts: What is the output of\n\n```sh\negrep \"Copying jsMath image\"\\|\"Installed.*sagenb\" $SAGE_ROOT/install.log \n```\n\n?",
+    "created_at": "2010-02-05T09:42:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8051#issuecomment-70424",
+    "user": "mpatel"
+}
+```
 
 On the fonts: What is the output of
 
@@ -350,18 +672,40 @@ egrep "Copying jsMath image"\|"Installed.*sagenb" $SAGE_ROOT/install.log
 ?
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-05 10:24:01
+archive/issue_comments_070425.json:
+```json
+{
+    "body": "Replying to [comment:30 acleone]:\n> sagenb 0.7.4 installed correctly for me.  All doc and selenium tests passed.  Still problems building the PDF docs but Ihaven't applied any of the unicode patches (using vanilla sage-4.3.2.alpha1).\nPositive review?",
+    "created_at": "2010-02-05T10:24:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8051#issuecomment-70425",
+    "user": "mpatel"
+}
+```
 
 Replying to [comment:30 acleone]:
 > sagenb 0.7.4 installed correctly for me.  All doc and selenium tests passed.  Still problems building the PDF docs but Ihaven't applied any of the unicode patches (using vanilla sage-4.3.2.alpha1).
 Positive review?
 
 
+
 ---
 
-Comment by acleone created at 2010-02-05 12:56:29
+archive/issue_comments_070426.json:
+```json
+{
+    "body": "\n```\n$ egrep \"Copying jsMath image\"\\|\"Installed.*sagenb\" ~/sage-dev/sage-4.3.2.alpha1/install.log\nInstalled /home/alex/sage-dev/sage-4.3.2.alpha1/local/lib/python2.6/site-packages/sagenb-0.6-py2.6.egg\n```\n\nStrange.\n\n\n```\nsage: from sagenb.misc.misc import SAGENB_VERSION\nsage: SAGENB_VERSION\n'0.7.4'\n```\n\n\nHere's how I installed: \n\n1. `make` on an unmodified 4.3.2.alpha1 \n\n2. \n\n```\n$ tar -jxvf sagenb-0.7.4.spkg\n$ cd sagenb-0.7.4/src/sagenb/\n$ sage -python setup.py develop\n```\n\n3. Tested with `sage -t -sagenb` \n\n4. Selenium tests with `sage -python sagenb/testing/run_tests.py` \n\n5. Checking the PDF build with `sage -docbuild all pdf`",
+    "created_at": "2010-02-05T12:56:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8051#issuecomment-70426",
+    "user": "acleone"
+}
+```
 
 
 ```
@@ -398,25 +742,58 @@ $ sage -python setup.py develop
 5. Checking the PDF build with `sage -docbuild all pdf`
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-05 13:03:04
+archive/issue_comments_070427.json:
+```json
+{
+    "body": "I think this is OK, because the `SAGE_LOCAL/bin/sage-spkg` script invoked by `sage -f` updates `SAGE_ROOT/install.log` but the `sage -python setup.py` commands do not.",
+    "created_at": "2010-02-05T13:03:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8051#issuecomment-70427",
+    "user": "mpatel"
+}
+```
 
 I think this is OK, because the `SAGE_LOCAL/bin/sage-spkg` script invoked by `sage -f` updates `SAGE_ROOT/install.log` but the `sage -python setup.py` commands do not.
 
 
+
 ---
 
-Comment by acleone created at 2010-02-05 13:16:57
+archive/issue_comments_070428.json:
+```json
+{
+    "body": "The \"Use image fonts\" option is disabled (greyed out) in jsMath - is this a problem?\n\n`jsMath v3.6c (Unicode fonts)`",
+    "created_at": "2010-02-05T13:16:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8051#issuecomment-70428",
+    "user": "acleone"
+}
+```
 
 The "Use image fonts" option is disabled (greyed out) in jsMath - is this a problem?
 
 `jsMath v3.6c (Unicode fonts)`
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-05 13:22:28
+archive/issue_comments_070429.json:
+```json
+{
+    "body": "Are the image fonts installed?  In `twist.py`, we set the boolean\n\n```python\njsmath_image_fonts = is_package_installed(\"jsmath-image-fonts\")\n```\n\nwhich propagates to `jsmath.js`.  This should enable the option if the spkg is installed.  But the fonts need to be installed in the right place...",
+    "created_at": "2010-02-05T13:22:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8051#issuecomment-70429",
+    "user": "mpatel"
+}
+```
 
 Are the image fonts installed?  In `twist.py`, we set the boolean
 
@@ -427,43 +804,109 @@ jsmath_image_fonts = is_package_installed("jsmath-image-fonts")
 which propagates to `jsmath.js`.  This should enable the option if the spkg is installed.  But the fonts need to be installed in the right place...
 
 
+
 ---
 
-Comment by acleone created at 2010-02-05 13:26:11
+archive/issue_comments_070430.json:
+```json
+{
+    "body": "Ok then, LGTM.",
+    "created_at": "2010-02-05T13:26:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8051#issuecomment-70430",
+    "user": "acleone"
+}
+```
 
 Ok then, LGTM.
 
 
+
 ---
 
-Comment by acleone created at 2010-02-05 13:26:11
+archive/issue_comments_070431.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-02-05T13:26:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8051#issuecomment-70431",
+    "user": "acleone"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by was created at 2010-02-06 18:16:18
+archive/issue_comments_070432.json:
+```json
+{
+    "body": "I decided to try something random to see if I was running the right notebook.  So I tried #3154 first, and it appears that it is *NOT* fixed by this notebook upgrade.  Other things I tried are fixed though.",
+    "created_at": "2010-02-06T18:16:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8051#issuecomment-70432",
+    "user": "was"
+}
+```
 
 I decided to try something random to see if I was running the right notebook.  So I tried #3154 first, and it appears that it is *NOT* fixed by this notebook upgrade.  Other things I tried are fixed though.
 
 
+
 ---
 
-Comment by was created at 2010-02-06 18:16:18
+archive/issue_comments_070433.json:
+```json
+{
+    "body": "Remove assignee mpatel.",
+    "created_at": "2010-02-06T18:16:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8051#issuecomment-70433",
+    "user": "was"
+}
+```
 
 Remove assignee mpatel.
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-06 19:42:19
+archive/issue_comments_070434.json:
+```json
+{
+    "body": "It turns out that I merged #4217, not #3154, into SageNB 0.7.  I didn't notice that #4217's commit string was copied from #3154 by mistake.  I used `hg log` to make the list of merged tickets in the description.",
+    "created_at": "2010-02-06T19:42:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8051#issuecomment-70434",
+    "user": "mpatel"
+}
+```
 
 It turns out that I merged #4217, not #3154, into SageNB 0.7.  I didn't notice that #4217's commit string was copied from #3154 by mistake.  I used `hg log` to make the list of merged tickets in the description.
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-10 09:34:55
+archive/issue_comments_070435.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-02-10T09:34:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8051#issuecomment-70435",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed

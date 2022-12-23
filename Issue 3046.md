@@ -1,11 +1,21 @@
 # Issue 3046: version option returning clone branch name
 
-Issue created by migration from https://trac.sagemath.org/ticket/3046
-
-Original creator: wdj
-
-Original creation time: 2008-04-27 20:19:58
-
+archive/issues_003046.json:
+```json
+{
+    "body": "Assignee: was\n\nThe attached patch adds to version an option which returns the version and the branch clone name.\nNew behavior:\nsage: version()\nreturns exactly the same thing it did before no change.\nsage: version(True) # or replace \"True\" by anything except \"0\" or \"False\"\nreturns \n(Version, Branch name)\nFor example,\n\n```\nsage: version(1)\n\n('SAGE Version 3.0, Release Date: 2008-04-22',\n 'Mercurial clone branch: version')\n```\n\nin a Mercurial clone branch created using \"sage -clone version\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/3046\n\n",
+    "created_at": "2008-04-27T20:19:58Z",
+    "labels": [
+        "user interface",
+        "major",
+        "bug"
+    ],
+    "title": "version option returning clone branch name",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3046",
+    "user": "wdj"
+}
+```
 Assignee: was
 
 The attached patch adds to version an option which returns the version and the branch clone name.
@@ -26,15 +36,43 @@ sage: version(1)
 
 in a Mercurial clone branch created using "sage -clone version".
 
+Issue created by migration from https://trac.sagemath.org/ticket/3046
+
+
+
+
 
 ---
+
+archive/issue_comments_020973.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-04-27T20:20:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3046",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3046#issuecomment-20973",
+    "user": "wdj"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-11 11:08:06
+archive/issue_comments_020974.json:
+```json
+{
+    "body": "Patch looks good to me. Positive review.\n\nCheers,\n\nMichael",
+    "created_at": "2008-05-11T11:08:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3046",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3046#issuecomment-20974",
+    "user": "mabshoff"
+}
+```
 
 Patch looks good to me. Positive review.
 
@@ -43,30 +81,74 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-11 11:08:20
+archive/issue_comments_020975.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-05-11T11:08:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3046",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3046#issuecomment-20975",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-11 11:08:20
+archive/issue_comments_020976.json:
+```json
+{
+    "body": "Merged in Sage 3.0.2.alpha0",
+    "created_at": "2008-05-11T11:08:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3046",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3046#issuecomment-20976",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.2.alpha0
 
 
+
 ---
 
-Comment by was created at 2008-05-19 06:17:23
+archive/issue_comments_020977.json:
+```json
+{
+    "body": "Changing status from closed to reopened.",
+    "created_at": "2008-05-19T06:17:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3046",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3046#issuecomment-20977",
+    "user": "was"
+}
+```
 
 Changing status from closed to reopened.
 
 
+
 ---
 
-Comment by was created at 2008-05-19 06:17:23
+archive/issue_comments_020978.json:
+```json
+{
+    "body": "Very negative review because the patch adds this line:\n\n```\n\tr\"\"\"nodoctest \n```\n",
+    "created_at": "2008-05-19T06:17:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3046",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3046#issuecomment-20978",
+    "user": "was"
+}
+```
 
 Very negative review because the patch adds this line:
 
@@ -76,23 +158,56 @@ Very negative review because the patch adds this line:
 
 
 
+
 ---
 
-Comment by was created at 2008-05-19 06:17:23
+archive/issue_comments_020979.json:
+```json
+{
+    "body": "Resolution changed from fixed to ",
+    "created_at": "2008-05-19T06:17:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3046",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3046#issuecomment-20979",
+    "user": "was"
+}
+```
 
 Resolution changed from fixed to 
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-19 06:28:33
+archive/issue_comments_020980.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-05-19T06:28:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3046",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3046#issuecomment-20980",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-19 06:28:33
+archive/issue_comments_020981.json:
+```json
+{
+    "body": "I fixed this in the repo by removing \"nodoctest\". Doctests do pass now.\n\nCheers,\n\nMichael",
+    "created_at": "2008-05-19T06:28:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3046",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3046#issuecomment-20981",
+    "user": "mabshoff"
+}
+```
 
 I fixed this in the repo by removing "nodoctest". Doctests do pass now.
 
@@ -101,8 +216,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-19 06:32:19
+archive/issue_comments_020982.json:
+```json
+{
+    "body": "this patch removes 'nodoctest' and make the doctests actually pass - my bad for the sloppy review",
+    "created_at": "2008-05-19T06:32:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3046",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3046#issuecomment-20982",
+    "user": "mabshoff"
+}
+```
 
 this patch removes 'nodoctest' and make the doctests actually pass - my bad for the sloppy review

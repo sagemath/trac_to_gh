@@ -1,11 +1,21 @@
 # Issue 3288: linear_code -- memory errors in doctests -- need to be marked #long or otherwise fixed
 
-Issue created by migration from https://trac.sagemath.org/ticket/3288
-
-Original creator: was
-
-Original creation time: 2008-05-23 17:33:26
-
+archive/issues_003288.json:
+```json
+{
+    "body": "Assignee: rlm\n\nOn a machine with arch linux and 1GB RAM:\n\n```\nsage -t  devel/sage/sage/coding/linear_code.py              **********************************************************************\nFile \"/home/was/build/sage-3.0.2.rc0/tmp/linear_code.py\", line 402:\n    sage: for B in self_orthogonal_binary_codes(7,3):\n       print B\nException raised:\n    Traceback (most recent call last):\n      File \"/home/was/build/sage-3.0.2.rc0/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_6[1]>\", line 1, in <module>\n        for B in self_orthogonal_binary_codes(Integer(7),Integer(3)):###line 402:\n    sage: for B in self_orthogonal_binary_codes(7,3):\n      File \"/home/was/build/sage-3.0.2.rc0/local/lib/python2.5/site-packages/sage/coding/linear_code.py\", line 477, in self_orthogonal_binary_codes\n        for N in self_orthogonal_binary_codes(n, k, d, M, BC, in_test=in_test):\n      File \"/home/was/build/sage-3.0.2.rc0/local/lib/python2.5/site-packages/sage/coding/linear_code.py\", line 486, in self_orthogonal_binary_codes\n        for child in BC.generate_children(BinaryCode(parent), nn, d):\n      File \"binary_code.pyx\", line 3797, in sage.coding.binary_code.BinaryCodeClassifier.generate_children (sage/coding/binary_code.c:24498)\n    MemoryError\n**********************************************************************\nFile \"/home/was/build/sage-3.0.2.rc0/tmp/linear_code.py\", line 415:\n    sage: for B in self_orthogonal_binary_codes(7,3,4):\n       print B; print B.gen_mat()\nException raised:\n    Traceback (most recent call last):\n      File \"/home/was/build/sage-3.0.2.rc0/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_6[2]>\", line 1, in <module>\n        for B in self_orthogonal_binary_codes(Integer(7),Integer(3),Integer(4)):###line 415:\n    sage: for B in self_orthogonal_binary_codes(7,3,4):\n      File \"/home/was/build/sage-3.0.2.rc0/local/lib/python2.5/site-packages/sage/coding/linear_code.py\", line 477, in self_orthogonal_binary_codes\n        for N in self_orthogonal_binary_codes(n, k, d, M, BC, in_test=in_test):\n      File \"/home/was/build/sage-3.0.2.rc0/local/lib/python2.5/site-packages/sage/coding/linear_code.py\", line 486, in self_orthogonal_binary_codes\n        for child in BC.generate_children(BinaryCode(parent), nn, d):\n      File \"binary_code.pyx\", line 3797, in sage.coding.binary_code.BinaryCodeClassifier.generate_children (sage/coding/binary_code.c:24498)\n    MemoryError\n**********************************************************************\nFile \"/home/was/build/sage-3.0.2.rc0/tmp/linear_code.py\", line 429:\n    sage: for B in self_orthogonal_binary_codes(7,2,4):\n       print B; print B.gen_mat()\nException raised:\n    Traceback (most recent call last):\n      File \"/home/was/build/sage-3.0.2.rc0/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_6[3]>\", line 1, in <module>\n        for B in self_orthogonal_binary_codes(Integer(7),Integer(2),Integer(4)):###line 429:\n    sage: for B in self_orthogonal_binary_codes(7,2,4):\n      File \"/home/was/build/sage-3.0.2.rc0/local/lib/python2.5/site-packages/sage/coding/linear_code.py\", line 477, in self_orthogonal_binary_codes\n        for N in self_orthogonal_binary_codes(n, k, d, M, BC, in_test=in_test):\n      File \"/home/was/build/sage-3.0.2.rc0/local/lib/python2.5/site-packages/sage/coding/linear_code.py\", line 486, in self_orthogonal_binary_codes\n        for child in BC.generate_children(BinaryCode(parent), nn, d):\n      File \"binary_code.pyx\", line 3797, in sage.coding.binary_code.BinaryCodeClassifier.generate_children (sage/coding/binary_code.c:24498)\n    MemoryError\n**********************************************************************\nFile \"/home/was/build/sage-3.0.2.rc0/tmp/linear_code.py\", line 439:\n    sage: for B in self_orthogonal_binary_codes(8, 4, equal=True):\n        print B; print B.gen_mat()\nException raised:\n    Traceback (most recent call last):\n      File \"/home/was/build/sage-3.0.2.rc0/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_6[4]>\", line 1, in <module>\n        for B in self_orthogonal_binary_codes(Integer(8), Integer(4), equal=True):###line 439:\n    sage: for B in self_orthogonal_binary_codes(8, 4, equal=True):\n      File \"/home/was/build/sage-3.0.2.rc0/local/lib/python2.5/site-packages/sage/coding/linear_code.py\", line 477, in self_orthogonal_binary_codes\n        for N in self_orthogonal_binary_codes(n, k, d, M, BC, in_test=in_test):\n      File \"/home/was/build/sage-3.0.2.rc0/local/lib/python2.5/site-packages/sage/coding/linear_code.py\", line 486, in self_orthogonal_binary_codes\n        for child in BC.generate_children(BinaryCode(parent), nn, d):\n      File \"binary_code.pyx\", line 3797, in sage.coding.binary_code.BinaryCodeClassifier.generate_children (sage/coding/binary_code.c:24498)\n    MemoryError\n**********************************************************************\n1 items had failures:\n   4 of   6 in __main__.example_6\n***Test Failed*** 4 failures.\nFor whitespace errors, see the file /home/was/build/sage-3.0.2.rc0/tmp/.doctest_linear_code.py\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3288\n\n",
+    "created_at": "2008-05-23T17:33:26Z",
+    "labels": [
+        "coding theory",
+        "blocker",
+        "bug"
+    ],
+    "title": "linear_code -- memory errors in doctests -- need to be marked #long or otherwise fixed",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3288",
+    "user": "was"
+}
+```
 Assignee: rlm
 
 On a machine with arch linux and 1GB RAM:
@@ -87,10 +97,25 @@ For whitespace errors, see the file /home/was/build/sage-3.0.2.rc0/tmp/.doctest_
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3288
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-05-24 00:14:11
+archive/issue_comments_022753.json:
+```json
+{
+    "body": "According to top none of the coding style doctests use more than 400MB of RAM on a 64 bit box, so I am assuming this is caused by the issues from #3289 and #3285.\n\nCheers,\n\nMichael",
+    "created_at": "2008-05-24T00:14:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3288",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3288#issuecomment-22753",
+    "user": "mabshoff"
+}
+```
 
 According to top none of the coding style doctests use more than 400MB of RAM on a 64 bit box, so I am assuming this is caused by the issues from #3289 and #3285.
 
@@ -99,9 +124,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-24 00:57:58
+archive/issue_comments_022754.json:
+```json
+{
+    "body": "This is not fixed by applying the patch from #3285 - I am valgrinding now.\n\nCheers,\n\nMichael",
+    "created_at": "2008-05-24T00:57:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3288",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3288#issuecomment-22754",
+    "user": "mabshoff"
+}
+```
 
 This is not fixed by applying the patch from #3285 - I am valgrinding now.
 
@@ -110,16 +146,40 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_022755.json:
+```json
+{
+    "body": "Attachment\n\noops!",
+    "created_at": "2008-05-24T01:52:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3288",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3288#issuecomment-22755",
+    "user": "rlm"
+}
+```
 
 Attachment
 
 oops!
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-24 01:57:39
+archive/issue_comments_022756.json:
+```json
+{
+    "body": "The patch is the correct fix. On the affected box doctests now pass:\n\n```\nsage -t -long devel/sage/sage/coding/all.py\n         [1.9 s]\nsage -t -long devel/sage/sage/coding/binary_code.pyx\n         [12.9 s]\nsage -t -long devel/sage/sage/coding/code_bounds.py\n         [3.7 s]\nsage -t -long devel/sage/sage/coding/code_constructions.py\n         [7.0 s]\nsage -t -long devel/sage/sage/coding/guava.py\n         [2.9 s]\nsage -t -long devel/sage/sage/coding/linear_code.py\n         [24.5 s]\nsage -t -long devel/sage/sage/coding/sd_codes.py\n         [1.9 s]\n\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 54.8 seconds\n```\n\n\nPositive review.\n\nCheers,\n\nMichael",
+    "created_at": "2008-05-24T01:57:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3288",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3288#issuecomment-22756",
+    "user": "mabshoff"
+}
+```
 
 The patch is the correct fix. On the affected box doctests now pass:
 
@@ -152,15 +212,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-24 01:59:06
+archive/issue_comments_022757.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-05-24T01:59:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3288",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3288#issuecomment-22757",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-24 01:59:06
+archive/issue_comments_022758.json:
+```json
+{
+    "body": "Merged in Sage 3.0.2.rc3",
+    "created_at": "2008-05-24T01:59:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3288",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3288#issuecomment-22758",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.2.rc3

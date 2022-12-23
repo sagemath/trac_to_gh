@@ -1,22 +1,62 @@
 # Issue 4910: convert sage.functions.* docstrings to Sphinx
 
-Issue created by migration from https://trac.sagemath.org/ticket/4910
-
-Original creator: mhansen
-
-Original creation time: 2009-01-01 22:50:50
-
+archive/issues_004910.json:
+```json
+{
+    "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4910\n\n",
+    "created_at": "2009-01-01T22:50:50Z",
+    "labels": [
+        "documentation",
+        "major",
+        "bug"
+    ],
+    "title": "convert sage.functions.* docstrings to Sphinx",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4910",
+    "user": "mhansen"
+}
+```
 Assignee: tba
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4910
+
+
+
+
 
 ---
+
+archive/issue_comments_037261.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-01-02T02:26:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4910",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4910#issuecomment-37261",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_037262.json:
+```json
+{
+    "body": "Attachment\n\nI've found some minor problem in the patch:\n\n\n```\n-  Each *Legendre polynomial* `P_n(x)` is an $n$-th degree polynomial. \n```\n\nShould be\n\n```\n-  Each *Legendre polynomial* `P_n(x)` is an `n`-th degree polynomial. \n```\n\n\nAnd a little bit lower:\n\n```\n The *Legendre function of the second kind* $Q_n(x)$ is another \n```\n\nShould be\n\n```\n The *Legendre function of the second kind* `Q_n(x)` is another \n```\n\n\nA whole section\n\n```\nImplemented methods: \n  9 latex outout \n  10 __call__ \n[...]\n  39 extend_by_zero_to \n  40 unextend \n```\n\nseems to have vanished.",
+    "created_at": "2009-02-24T15:21:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4910",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4910#issuecomment-37262",
+    "user": "hivert"
+}
+```
 
 Attachment
 
@@ -61,9 +101,20 @@ Implemented methods:
 seems to have vanished.
 
 
+
 ---
 
-Comment by hivert created at 2009-02-24 15:36:33
+archive/issue_comments_037263.json:
+```json
+{
+    "body": "I've manually edited the patch to fixes the two \"$\" vs \"`\" problems. The corrected patch should follow. \n\nThe section implemented methods is removed on purpose (it is redundent with the code). Otherwise it seems Ok.\n\nAs for combinat, my rereading was a fast rereading. In particular, There are a lot of formulas that needs time to be checked carfully.",
+    "created_at": "2009-02-24T15:36:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4910",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4910#issuecomment-37263",
+    "user": "hivert"
+}
+```
 
 I've manually edited the patch to fixes the two "$" vs "`" problems. The corrected patch should follow. 
 
@@ -72,44 +123,112 @@ The section implemented methods is removed on purpose (it is redundent with the 
 As for combinat, my rereading was a fast rereading. In particular, There are a lot of formulas that needs time to be checked carfully.
 
 
+
 ---
+
+archive/issue_comments_037264.json:
+```json
+{
+    "body": "Attachment\n\nNew patch with hand fix.",
+    "created_at": "2009-02-24T15:37:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4910",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4910#issuecomment-37264",
+    "user": "hivert"
+}
+```
 
 Attachment
 
 New patch with hand fix.
 
 
+
 ---
 
-Comment by mhansen created at 2009-02-24 18:07:32
+archive/issue_comments_037265.json:
+```json
+{
+    "body": "Changing assignee from tba to mhansen.",
+    "created_at": "2009-02-24T18:07:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4910",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4910#issuecomment-37265",
+    "user": "mhansen"
+}
+```
 
 Changing assignee from tba to mhansen.
 
 
+
 ---
 
-Comment by mhansen created at 2009-02-24 18:07:32
+archive/issue_comments_037266.json:
+```json
+{
+    "body": "I put these changes in the fixes.patch in #5330.",
+    "created_at": "2009-02-24T18:07:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4910",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4910#issuecomment-37266",
+    "user": "mhansen"
+}
+```
 
 I put these changes in the fixes.patch in #5330.
 
 
+
 ---
 
-Comment by mhansen created at 2009-02-24 18:07:32
+archive/issue_comments_037267.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-02-24T18:07:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4910",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4910#issuecomment-37267",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-24 18:14:08
+archive/issue_comments_037268.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-02-24T18:14:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4910",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4910#issuecomment-37268",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-24 18:14:08
+archive/issue_comments_037269.json:
+```json
+{
+    "body": "Merged sage.functions-final-fixed.patch in Sage 3.4.alpha0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-24T18:14:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4910",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4910#issuecomment-37269",
+    "user": "mabshoff"
+}
+```
 
 Merged sage.functions-final-fixed.patch in Sage 3.4.alpha0.
 

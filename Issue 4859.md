@@ -1,11 +1,21 @@
 # Issue 4859: basic covering design module
 
-Issue created by migration from https://trac.sagemath.org/ticket/4859
-
-Original creator: dgordon
-
-Original creation time: 2008-12-23 17:18:59
-
+archive/issues_004859.json:
+```json
+{
+    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nI maintain a database of covering designs (k-subsets of a v-set such that all t-sets are\nin at least one of the k-sets) at http://www.ccrwest.org/cover.html.  This patch implements\ncovering designs in Sage using the IncidenceStructure class, and allows a user to get coverings\nfrom the website.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4859\n\n",
+    "created_at": "2008-12-23T17:18:59Z",
+    "labels": [
+        "combinatorics",
+        "major",
+        "enhancement"
+    ],
+    "title": "basic covering design module",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4859",
+    "user": "dgordon"
+}
+```
 Assignee: mhansen
 
 CC:  sage-combinat
@@ -15,15 +25,43 @@ in at least one of the k-sets) at http://www.ccrwest.org/cover.html.  This patch
 covering designs in Sage using the IncidenceStructure class, and allows a user to get coverings
 from the website.
 
+Issue created by migration from https://trac.sagemath.org/ticket/4859
+
+
+
+
 
 ---
+
+archive/issue_comments_036827.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-12-23T17:21:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4859",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4859#issuecomment-36827",
+    "user": "dgordon"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by wdj created at 2008-12-23 21:08:37
+archive/issue_comments_036828.json:
+```json
+{
+    "body": "Two minor comments:\n\n(1) I'm confused by this docstring\n\n\n```\nA $(v,k,t)$ covering design $C$ is an incidence structure ...\n```\n\n\ncombined with this behaviour:\n\n\n\n```\nsage: C = best_known_covering_design_www(7, 3, 2); C\n<class 'sage.combinat.designs.covering_design.CoveringDesign'>\nsage: D = C.incidence_structure\nsage: type(D)\n<class 'sage.combinat.designs.incidence_structures.IncidenceStructure'>\n```\n\n\nD is an incidence structure but the way of creating D seems slightly nonstandard.\nWhy not\n\n\n```\nsage: D = C.incidence_structure()\n```\n\ninstead? I'm not saying change this, just wondering why it is the way it is.\n\n(2) For future reference, the patch naming is slightly non-standard (trac_4859-covering-designs.patch or something like that is more typical).",
+    "created_at": "2008-12-23T21:08:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4859",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4859#issuecomment-36828",
+    "user": "wdj"
+}
+```
 
 Two minor comments:
 
@@ -61,22 +99,44 @@ instead? I'm not saying change this, just wondering why it is the way it is.
 (2) For future reference, the patch naming is slightly non-standard (trac_4859-covering-designs.patch or something like that is more typical).
 
 
+
 ---
 
-Comment by wdj created at 2008-12-30 02:56:27
+archive/issue_comments_036829.json:
+```json
+{
+    "body": "Got an email from Dan that he plans to go some minor modifications, after while I'll give this a positive review.",
+    "created_at": "2008-12-30T02:56:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4859",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4859#issuecomment-36829",
+    "user": "wdj"
+}
+```
 
 Got an email from Dan that he plans to go some minor modifications, after while I'll give this a positive review.
 
 
+
 ---
 
-Comment by was created at 2009-01-20 07:40:08
+archive/issue_comments_036830.json:
+```json
+{
+    "body": "REFEREE REPORT:\n\nThe overall style of the code looks really good.\n\n* This worries me:\n\n```\n        82\t    bound = 1.0 \n \t83\t    for i in range(t-1,-1,-1): \n \t84\t        bound = (bound*RDF(v-i)/RDF(k-i)).ceiling() \n \t85\t \n \t86\t    return bound \n```\n\nI'm worried about overflow.  Maybe using interval arithmetic would be better, i.e., the real interval field.  You could make a comment about why precision isn't an issue, but I sort of wonder. \n\n\n*  I think it might be nice to avoid confusion if you make all the attributes private (i.e., put an underscore (or two) in the beginning of their names), then have methods to access them, e.g., \n\n```\nThis is bad:\nsage:  C=CoveringDesign(7,3,2,7,range(7),[[0, 1, 2], [0, 3, 4], [0, 5, 6], [1, 3, 5], [1, 4, 6], [2, 3, 6], [2, 4, 5]],0, 'Projective Plane')\nsage: C.method\n'Projective Plane'\nsage: C.method = 'foo bar'\nsage: C.method\n'foo bar'\n\nThis is better:\nsage: C.method()\n'Projective Plane'\nsage: C.method?\nlots of nice documentation about what the C.__method *means* and how to use it. \n```\n\nDo the same with all the other attributes.   This is for consistency with the rest of Sage, and because it is easier for users. \n\n* You defined a `show` method. This is reserved for graphical display.   Instead call that method `_repr_`, so it gets automatically picked up by the print and str(...) methods.   Also `_repr_` should return a string instead of using the print command. \n\n* change ` requires internet, optional ` to `optional -- requires internet`.  Doing that isn't documented anywhere, but it's the \"new way\" now that I wrote an optional doctesting framework that really singles out various components. \n\n\nWith the above issues addressed, this code should go into sage.",
+    "created_at": "2009-01-20T07:40:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4859",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4859#issuecomment-36830",
+    "user": "was"
+}
+```
 
 REFEREE REPORT:
 
 The overall style of the code looks really good.
 
- * This worries me:
+* This worries me:
 
 ```
         82	    bound = 1.0 
@@ -89,7 +149,7 @@ The overall style of the code looks really good.
 I'm worried about overflow.  Maybe using interval arithmetic would be better, i.e., the real interval field.  You could make a comment about why precision isn't an issue, but I sort of wonder. 
 
 
- *  I think it might be nice to avoid confusion if you make all the attributes private (i.e., put an underscore (or two) in the beginning of their names), then have methods to access them, e.g., 
+*  I think it might be nice to avoid confusion if you make all the attributes private (i.e., put an underscore (or two) in the beginning of their names), then have methods to access them, e.g., 
 
 ```
 This is bad:
@@ -109,47 +169,104 @@ lots of nice documentation about what the C.__method *means* and how to use it.
 
 Do the same with all the other attributes.   This is for consistency with the rest of Sage, and because it is easier for users. 
 
- * You defined a `show` method. This is reserved for graphical display.   Instead call that method `_repr_`, so it gets automatically picked up by the print and str(...) methods.   Also `_repr_` should return a string instead of using the print command. 
+* You defined a `show` method. This is reserved for graphical display.   Instead call that method `_repr_`, so it gets automatically picked up by the print and str(...) methods.   Also `_repr_` should return a string instead of using the print command. 
 
- * change ` requires internet, optional ` to `optional -- requires internet`.  Doing that isn't documented anywhere, but it's the "new way" now that I wrote an optional doctesting framework that really singles out various components. 
+* change ` requires internet, optional ` to `optional -- requires internet`.  Doing that isn't documented anywhere, but it's the "new way" now that I wrote an optional doctesting framework that really singles out various components. 
 
 
 With the above issues addressed, this code should go into sage.
 
 
+
 ---
+
+archive/issue_comments_036831.json:
+```json
+{
+    "body": "Attachment\n\nfix to problems in first patch pointed out by the reviewers",
+    "created_at": "2009-01-27T23:13:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4859",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4859#issuecomment-36831",
+    "user": "dgordon"
+}
+```
 
 Attachment
 
 fix to problems in first patch pointed out by the reviewers
 
 
+
 ---
 
-Comment by wdj created at 2009-01-28 00:06:41
+archive/issue_comments_036832.json:
+```json
+{
+    "body": "Both patches (in order) apply cleanly to 3.3.alpha1. They pass sage -t and sage -t -optional. \n\nLooks good to me.",
+    "created_at": "2009-01-28T00:06:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4859",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4859#issuecomment-36832",
+    "user": "wdj"
+}
+```
 
 Both patches (in order) apply cleanly to 3.3.alpha1. They pass sage -t and sage -t -optional. 
 
 Looks good to me.
 
 
+
 ---
 
-Comment by was created at 2009-01-28 01:57:16
+archive/issue_comments_036833.json:
+```json
+{
+    "body": "MABSHOFF -- when you apply this patch, make sure to add Dan Gordon as an official Sage developer somehow to the list.",
+    "created_at": "2009-01-28T01:57:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4859",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4859#issuecomment-36833",
+    "user": "was"
+}
+```
 
 MABSHOFF -- when you apply this patch, make sure to add Dan Gordon as an official Sage developer somehow to the list.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-28 13:02:47
+archive/issue_comments_036834.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-01-28T13:02:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4859",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4859#issuecomment-36834",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-28 13:02:47
+archive/issue_comments_036835.json:
+```json
+{
+    "body": "Merged both patches into Sage 3.3.alpha3.\n\nCheers,\n\nMichael",
+    "created_at": "2009-01-28T13:02:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4859",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4859#issuecomment-36835",
+    "user": "mabshoff"
+}
+```
 
 Merged both patches into Sage 3.3.alpha3.
 

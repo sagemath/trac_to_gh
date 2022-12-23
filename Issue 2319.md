@@ -1,19 +1,44 @@
 # Issue 2319: change dsage docstrings to match rest of sage
 
-Issue created by migration from https://trac.sagemath.org/ticket/2319
-
-Original creator: yi
-
-Original creation time: 2008-02-26 17:45:06
-
+archive/issues_002319.json:
+```json
+{
+    "body": "Assignee: yi\n\nCurrently much of the dsage docstrings are written using reST syntax which apparently Sage does not use. It should be rewritten to be more like the other Sage docstrings. An alternative is for new Sage documentation to be written in something like reST which would allow much easier API doc generation through something like epydoc.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2319\n\n",
+    "created_at": "2008-02-26T17:45:06Z",
+    "labels": [
+        "dsage",
+        "major",
+        "bug"
+    ],
+    "title": "change dsage docstrings to match rest of sage",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2319",
+    "user": "yi"
+}
+```
 Assignee: yi
 
 Currently much of the dsage docstrings are written using reST syntax which apparently Sage does not use. It should be rewritten to be more like the other Sage docstrings. An alternative is for new Sage documentation to be written in something like reST which would allow much easier API doc generation through something like epydoc.
 
+Issue created by migration from https://trac.sagemath.org/ticket/2319
+
+
+
+
 
 ---
 
-Comment by was created at 2008-02-27 12:44:34
+archive/issue_comments_015425.json:
+```json
+{
+    "body": "> Currently much of the dsage docstrings are written using reST syntax \n> which apparently Sage does not use. It should be rewritten to be more \n> like the other Sage docstrings. \n> An alternative is for new Sage\n> documentation to be written in something like reST which would \n> allow much easier API doc generation through something like epydoc.\n\nSome comments:\n\n* Sage is MATH SOFTWARE, and as such reST is not what we want -- Latex very much is what we want.  For math, Latex is by far the best choice.  We're definitely not changing the docstring format in the rest of Sage (not an option). \n\n* DSage -- except for the examples -- is not specifically math software.  For dsage, latex is potentially just a nuisance.  \n\nJust keep those points in mind when thinking about this issue.",
+    "created_at": "2008-02-27T12:44:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2319",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2319#issuecomment-15425",
+    "user": "was"
+}
+```
 
 > Currently much of the dsage docstrings are written using reST syntax 
 > which apparently Sage does not use. It should be rewritten to be more 
@@ -24,22 +49,44 @@ Comment by was created at 2008-02-27 12:44:34
 
 Some comments:
 
- * Sage is MATH SOFTWARE, and as such reST is not what we want -- Latex very much is what we want.  For math, Latex is by far the best choice.  We're definitely not changing the docstring format in the rest of Sage (not an option). 
+* Sage is MATH SOFTWARE, and as such reST is not what we want -- Latex very much is what we want.  For math, Latex is by far the best choice.  We're definitely not changing the docstring format in the rest of Sage (not an option). 
 
- * DSage -- except for the examples -- is not specifically math software.  For dsage, latex is potentially just a nuisance.  
+* DSage -- except for the examples -- is not specifically math software.  For dsage, latex is potentially just a nuisance.  
 
 Just keep those points in mind when thinking about this issue.
 
 
+
 ---
 
-Comment by was created at 2010-01-19 07:39:21
+archive/issue_comments_015426.json:
+```json
+{
+    "body": "Resolution: wontfix",
+    "created_at": "2010-01-19T07:39:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2319",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2319#issuecomment-15426",
+    "user": "was"
+}
+```
 
 Resolution: wontfix
 
 
+
 ---
 
-Comment by was created at 2010-01-19 07:39:21
+archive/issue_comments_015427.json:
+```json
+{
+    "body": "Dsage has been deprecated.",
+    "created_at": "2010-01-19T07:39:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2319",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2319#issuecomment-15427",
+    "user": "was"
+}
+```
 
 Dsage has been deprecated.

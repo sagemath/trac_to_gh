@@ -1,11 +1,21 @@
 # Issue 3717: implement _latex_ method for formal derivative function (in symbolic calculus)
 
-Issue created by migration from https://trac.sagemath.org/ticket/3717
-
-Original creator: was
-
-Original creation time: 2008-07-24 10:06:46
-
+archive/issues_003717.json:
+```json
+{
+    "body": "Assignee: gfurnish\n\n\n```\n> sage: var('c x y t')\n> (c, x, y, t)\n> sage: x=function('x',t)\n> sage: y=function('y',t)\n> sage: f=c*x*y\n> sage: diff(f,t)\n> c*x(t)*diff(y(t), t, 1) + c*y(t)*diff(x(t), t, 1)\n>\n> In the above example, x and y are some functions of t while c is\n> independent of t. If I take the derivative of f=c*x(t)*y(t), I\n> correctly obtain diff(f(t),t)=c*x(t)*diff(y(t), t) + c*y(t)*diff(x(t),\n> t), but for the result looks a bit ugly and does not show well in\n> latex. Can diff(x(t), t) be expressed in a shorter way, such as x'(t),\n> similarly to Mathematica?\n\nTry using \"print\" for a much nicer \"ascii art\" view of symbolic expressions:\n\nsage: print diff(f,t)\n\n                           d                    d\n                   c x(t) (-- (y(t))) + c y(t) (-- (x(t)))\n                           dt                   dt\n\n(Hopefully the \"rich text formatting\" of this email works for you... or\njust try it out.)\n\n> Is there a way of getting derivatives\n> translated into latex code?\n\nYes, this would be easy for us to implement.\n\n\n> Something similar would apply to integrals.\n\nYep, same with my comments.\n\nWilliam\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3717\n\n",
+    "created_at": "2008-07-24T10:06:46Z",
+    "labels": [
+        "calculus",
+        "major",
+        "enhancement"
+    ],
+    "title": "implement _latex_ method for formal derivative function (in symbolic calculus)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3717",
+    "user": "was"
+}
+```
 Assignee: gfurnish
 
 
@@ -50,17 +60,43 @@ William
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3717
+
+
+
+
 
 ---
 
-Comment by jhpalmieri created at 2008-10-31 03:19:59
+archive/issue_comments_026375.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"latex, calculus\".",
+    "created_at": "2008-10-31T03:19:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3717",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3717#issuecomment-26375",
+    "user": "jhpalmieri"
+}
+```
 
 Changing keywords from "" to "latex, calculus".
 
 
+
 ---
 
-Comment by jhpalmieri created at 2008-10-31 03:19:59
+archive/issue_comments_026376.json:
+```json
+{
+    "body": "With f as above, if I do `latex(diff(f,t))`, I get\n\n```\n{{c x\\left(t\\right)} {{d}\\over{d\\,t}}\\,y\\left(t\\right)} + {{c y\\left(t\\right)} {{d}\\over{d\\,t}}\\,x\\left(t\\right)}\n```\n\nSo is there anything to be done here?  I suppose one could quibble about the spacing between the \"d\" and the \"t\", but otherwise, it already looks okay to me.",
+    "created_at": "2008-10-31T03:19:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3717",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3717#issuecomment-26376",
+    "user": "jhpalmieri"
+}
+```
 
 With f as above, if I do `latex(diff(f,t))`, I get
 
@@ -71,23 +107,56 @@ With f as above, if I do `latex(diff(f,t))`, I get
 So is there anything to be done here?  I suppose one could quibble about the spacing between the "d" and the "t", but otherwise, it already looks okay to me.
 
 
+
 ---
 
-Comment by jason created at 2009-01-18 02:05:41
+archive/issue_comments_026377.json:
+```json
+{
+    "body": "See #4202 for the ticket that enabled the behavior in the comment.  I believe this ticket can be closed because of #4202.",
+    "created_at": "2009-01-18T02:05:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3717",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3717#issuecomment-26377",
+    "user": "jason"
+}
+```
 
 See #4202 for the ticket that enabled the behavior in the comment.  I believe this ticket can be closed because of #4202.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-18 04:12:28
+archive/issue_comments_026378.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-01-18T04:12:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3717",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3717#issuecomment-26378",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-18 04:12:28
+archive/issue_comments_026379.json:
+```json
+{
+    "body": "With Sage 3.3.alpha0 this now works:\n\n```\nsage: k\nc*x(t)*diff(y(t), t, 1) + c*y(t)*diff(x(t), t, 1)\nsage: print(k)\n\n                            d                    d\n                    c x(t) (-- (y(t))) + c y(t) (-- (x(t)))\n                            dt                   dt\nsage: latex(k)\n{{c x\\left(t\\right)} {{{\\it \\partial}}\\over{{\\it \\partial}\\,t}}\\,y\\left(t\\right)} + \n{{c y\\left(t\\right)} {{{\\it \\partial}}\\over{{\\it \\partial}\\,t}}\\,x\\left(t\\right)}\n```\n\n\nI am closing this ticket as fixed. \n\nCheers,\n\nMichael",
+    "created_at": "2009-01-18T04:12:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3717",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3717#issuecomment-26379",
+    "user": "mabshoff"
+}
+```
 
 With Sage 3.3.alpha0 this now works:
 

@@ -1,32 +1,81 @@
 # Issue 6073: Developer guide somewhat wrong about cython extensions
 
-Issue created by migration from https://trac.sagemath.org/ticket/6073
-
-Original creator: mhampton
-
-Original creation time: 2009-05-18 18:09:02
-
+archive/issues_006073.json:
+```json
+{
+    "body": "Assignee: tba\n\nIn the developer guide, in the \"Coding in other languages\" section, it says that Cython pyx files should be added to setup.py, but they should really be added to module_list.py.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6073\n\n",
+    "created_at": "2009-05-18T18:09:02Z",
+    "labels": [
+        "documentation",
+        "minor",
+        "bug"
+    ],
+    "title": "Developer guide somewhat wrong about cython extensions",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6073",
+    "user": "mhampton"
+}
+```
 Assignee: tba
 
 In the developer guide, in the "Coding in other languages" section, it says that Cython pyx files should be added to setup.py, but they should really be added to module_list.py.
 
+Issue created by migration from https://trac.sagemath.org/ticket/6073
+
+
+
+
 
 ---
 
-Comment by jhpalmieri created at 2009-06-10 21:50:00
+archive/issue_comments_048348.json:
+```json
+{
+    "body": "I think the information about module_list.py is in the paragraph before the one you're mentioning.  Here's a patch which tries to clarify things a bit, and adds some new information.",
+    "created_at": "2009-06-10T21:50:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6073",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6073#issuecomment-48348",
+    "user": "jhpalmieri"
+}
+```
 
 I think the information about module_list.py is in the paragraph before the one you're mentioning.  Here's a patch which tries to clarify things a bit, and adds some new information.
 
 
+
 ---
+
+archive/issue_comments_048349.json:
+```json
+{
+    "body": "Attachment\n\nThis patch applies fine and the command \"/sage -docbuild developer html\" builts the docs without error. The addition clarifies and improves the documentation as advertised.",
+    "created_at": "2009-06-19T21:59:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6073",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6073#issuecomment-48349",
+    "user": "wdj"
+}
+```
 
 Attachment
 
 This patch applies fine and the command "/sage -docbuild developer html" builts the docs without error. The addition clarifies and improves the documentation as advertised.
 
 
+
 ---
 
-Comment by rlm created at 2009-06-24 10:09:43
+archive/issue_comments_048350.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-06-24T10:09:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6073",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6073#issuecomment-48350",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed

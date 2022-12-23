@@ -1,11 +1,21 @@
 # Issue 6111: [with patch; needs review] review symbolics in sage-4.0 (switch to pynac)
 
-Issue created by migration from https://trac.sagemath.org/ticket/6111
-
-Original creator: was
-
-Original creation time: 2009-05-21 09:44:00
-
+archive/issues_006111.json:
+```json
+{
+    "body": "Assignee: burcin\n\nCC:  mhansen\n\nGet sage-4.0.rc0 from \n\nhttp://sage.math.washington.edu/home/wstein/build/sage-4.0.rc0/dist/\n\nwhich is stable and has all the new symbolics code in it. \n\nYou can also do:\n\n./sage -upgrade http://sage.math.washington.edu/home/wstein/build/sage-4.0.rc0/\n\nNote that the code for symbolics is one big flattened patch.  The only way to referee it is is to read straight through all of devel/sage/sage/symbolics, devel/sage/sage/calculus, and also look at the diff outside of those two directories at the patch to see what else was changed. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6111\n\n",
+    "created_at": "2009-05-21T09:44:00Z",
+    "labels": [
+        "calculus",
+        "blocker",
+        "bug"
+    ],
+    "title": "[with patch; needs review] review symbolics in sage-4.0 (switch to pynac)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6111",
+    "user": "was"
+}
+```
 Assignee: burcin
 
 CC:  mhansen
@@ -24,10 +34,25 @@ Note that the code for symbolics is one big flattened patch.  The only way to re
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6111
+
+
+
+
 
 ---
 
-Comment by was created at 2009-05-21 21:20:24
+archive/issue_comments_048818.json:
+```json
+{
+    "body": "TODO: This doctest in infinity.py was commented out.  When uncommented we get a total hang:\n\n```\n            sage: bool(SR(oo) == sympy.oo)\n```\n\n\nThis is what we get:\n\n```\nsage:             sage: bool(SR(oo) == sympy.oo)\nterminate called after throwing an instance of 'std::runtime_error'\n  what():  indeterminate expression: Infinity - Infinity encountered.\n\n\n^V^C^C^C^C^C^C^Z\n```\n\n\nI'm uncomenting this in my referee patch.",
+    "created_at": "2009-05-21T21:20:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6111",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6111#issuecomment-48818",
+    "user": "was"
+}
+```
 
 TODO: This doctest in infinity.py was commented out.  When uncommented we get a total hang:
 
@@ -51,14 +76,38 @@ terminate called after throwing an instance of 'std::runtime_error'
 I'm uncomenting this in my referee patch.
 
 
+
 ---
 
-Comment by robertwb created at 2009-05-22 02:44:15
+archive/issue_comments_048819.json:
+```json
+{
+    "body": "I read through the first 2500 lines of expression.pyx earlier today, and it's looking good so far (collecting minor fixes into a patch). I won't be looking at it again until much later tonight.",
+    "created_at": "2009-05-22T02:44:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6111",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6111#issuecomment-48819",
+    "user": "robertwb"
+}
+```
 
 I read through the first 2500 lines of expression.pyx earlier today, and it's looking good so far (collecting minor fixes into a patch). I won't be looking at it again until much later tonight.
 
 
+
 ---
+
+archive/issue_comments_048820.json:
+```json
+{
+    "body": "Attachment\n\nFinished reading expression.pyx, it looks good. Should this work:\n\n\n```\nsage: ((x+y)^9).polynomial(None, ring=ZZ['x']['y']).list()\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"expression.pyx\", line 3616, in sage.symbolic.expression.Expression.polynomial (sage/symbolic/expression.cpp:17320)\n  File \"/home/robertwb/sage-4.0.rc0-x86_64-Linux/local/lib/python2.5/site-packages/sage/symbolic/expression_conversions.py\", line 975, in polynomial\n    converter = PolynomialConverter(ex, base_ring=base_ring, ring=ring)\n  File \"/home/robertwb/sage-4.0.rc0-x86_64-Linux/local/lib/python2.5/site-packages/sage/symbolic/expression_conversions.py\", line 833, in __init__\n    raise TypeError, \"%s is not a variable of %s\" %(v, ring)\nTypeError: y is not a variable of Univariate Polynomial Ring in y over Univariate Polynomial Ring in x over Integer Ring\n```\n\n\nAlso, there are a lot (too many IMHO) aliases for simplify_radical\n\n\n```\n    radical_simplify = simplify_log = log_simplify = simplify_radical\n    simplify_exp = exp_simplify = simplify_radical\n```\n",
+    "created_at": "2009-05-23T07:06:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6111",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6111#issuecomment-48820",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
@@ -89,21 +138,32 @@ Also, there are a lot (too many IMHO) aliases for simplify_radical
 
 
 
+
 ---
 
-Comment by burcin created at 2009-05-24 15:22:49
+archive/issue_comments_048821.json:
+```json
+{
+    "body": "Some comments after reading the changesets to pynac after the unreleased 0.1.6 version (numbers next to the bullets refer to changesets in the repository from the pynac-0.1.7.spkg file):\n\n\n* 90:fb6582f9bd81 \n\n isn't this already handled by the first lines of pyExpression_to_ex() in pynac.pyx?\n* 88:25d02eeb427d \n\n we should add error checking to py_get_constant() call, we can't guarantee that a constant with the same name will be available between different versions of Sage\n* 84:7b3272f4b4bf  is mine, author field lists Mike\n* 82:da7d7a220723  evalf for constants using a lookup table\n\n I already commented on this on IRC and the devel list. ginac/pynac already provides a framework to handle this, I would like to revert this in a future version. My previous message:\n http://groups.google.com/group/sage-devel/msg/dc46d9d94dd31b5e (scroll to the paragraph below the bullet items)\n\nI will try to prepare a new package which fixes the version numbers of the library and error handling of py_get_constant().",
+    "created_at": "2009-05-24T15:22:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6111",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6111#issuecomment-48821",
+    "user": "burcin"
+}
+```
 
 Some comments after reading the changesets to pynac after the unreleased 0.1.6 version (numbers next to the bullets refer to changesets in the repository from the pynac-0.1.7.spkg file):
 
 
- * 90:fb6582f9bd81 
+* 90:fb6582f9bd81 
 
  isn't this already handled by the first lines of pyExpression_to_ex() in pynac.pyx?
- * 88:25d02eeb427d 
+* 88:25d02eeb427d 
 
  we should add error checking to py_get_constant() call, we can't guarantee that a constant with the same name will be available between different versions of Sage
- * 84:7b3272f4b4bf  is mine, author field lists Mike
- * 82:da7d7a220723  evalf for constants using a lookup table
+* 84:7b3272f4b4bf  is mine, author field lists Mike
+* 82:da7d7a220723  evalf for constants using a lookup table
 
  I already commented on this on IRC and the devel list. ginac/pynac already provides a framework to handle this, I would like to revert this in a future version. My previous message:
  http://groups.google.com/group/sage-devel/msg/dc46d9d94dd31b5e (scroll to the paragraph below the bullet items)
@@ -111,9 +171,20 @@ Some comments after reading the changesets to pynac after the unreleased 0.1.6 v
 I will try to prepare a new package which fixes the version numbers of the library and error handling of py_get_constant().
 
 
+
 ---
 
-Comment by burcin created at 2009-05-24 19:59:52
+archive/issue_comments_048822.json:
+```json
+{
+    "body": "New package which adds error handling for py_get_constant() and changes the library version to 0.1.7 is here:\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.7-r1.spkg\n\nChanging the version numbers of the library might expose some modules in the Sage library which should be rebuilt when the package is updated. The fix is to add a dependency to the pynac header in module_list.py. I didn't try to see which files need this, since my tree wasn't clean and all the relevant files (sage/symbolic/* is more than enough) got rebuilt for me.\n\nAnswering my own comments above, I see that the patch I sent Mike for changeset 84 didn't have hg headers, and returning None from eval or derivative methods is a good trick to halt the evaluation. The evalf function for constants is still as it is, I don't think it's a good idea to introduce big changes at this stage.\n\nThanks everyone for all the work to make the switch, I still can't believe we're almost there.\n\nCheers,\n\nBurcin",
+    "created_at": "2009-05-24T19:59:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6111",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6111#issuecomment-48822",
+    "user": "burcin"
+}
+```
 
 New package which adds error handling for py_get_constant() and changes the library version to 0.1.7 is here:
 
@@ -130,7 +201,20 @@ Cheers,
 Burcin
 
 
+
 ---
+
+archive/issue_comments_048823.json:
+```json
+{
+    "body": "Attachment\n\nI like it!  I quickly read through all of sage/symbolic except for expression.pyx, and attached a patch fixing the issues I found.  Technically somebody else should review sage/symbolic/random_tests.py, since I wrote the original version; but if you do, be sure to review rc0+my reviewer patch, since the reviewer patch adds doctests.\n\nSo: positive review for sage/symbolic/* except for expression.pyx (which I didn't look at) and random_tests.py (which I can't review since I wrote it).",
+    "created_at": "2009-05-24T22:13:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6111",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6111#issuecomment-48823",
+    "user": "cwitty"
+}
+```
 
 Attachment
 
@@ -139,57 +223,149 @@ I like it!  I quickly read through all of sage/symbolic except for expression.py
 So: positive review for sage/symbolic/* except for expression.pyx (which I didn't look at) and random_tests.py (which I can't review since I wrote it).
 
 
+
 ---
+
+archive/issue_comments_048824.json:
+```json
+{
+    "body": "Attachment\n\nI read through most everything outside of symbolics/ and made a few little touchups in my attached patch.  Positive review for this part as well.",
+    "created_at": "2009-05-25T04:28:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6111",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6111#issuecomment-48824",
+    "user": "was"
+}
+```
 
 Attachment
 
 I read through most everything outside of symbolics/ and made a few little touchups in my attached patch.  Positive review for this part as well.
 
 
+
 ---
+
+archive/issue_comments_048825.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-05-28T02:41:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6111",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6111#issuecomment-48825",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2009-05-28 02:42:20
+archive/issue_comments_048826.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-05-28T02:42:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6111",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6111#issuecomment-48826",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mhansen created at 2009-05-28 02:42:20
+archive/issue_comments_048827.json:
+```json
+{
+    "body": "I looked over the first three patches, and they look good to me.\n\nI added a fourth patch which fixes a segfault that wstein's patch uncovers.",
+    "created_at": "2009-05-28T02:42:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6111",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6111#issuecomment-48827",
+    "user": "mhansen"
+}
+```
 
 I looked over the first three patches, and they look good to me.
 
 I added a fourth patch which fixes a segfault that wstein's patch uncovers.
 
 
+
 ---
 
-Comment by mhansen created at 2009-05-28 02:42:20
+archive/issue_comments_048828.json:
+```json
+{
+    "body": "Changing assignee from burcin to mhansen.",
+    "created_at": "2009-05-28T02:42:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6111",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6111#issuecomment-48828",
+    "user": "mhansen"
+}
+```
 
 Changing assignee from burcin to mhansen.
 
 
+
 ---
 
-Comment by was created at 2009-05-28 06:26:43
+archive/issue_comments_048829.json:
+```json
+{
+    "body": "Regarding, `sage: ((x+y)^9).polynomial(None, ring=ZZ['x']['y']).list()` --> boom, none of the above patches address this.  However, this ring option didn't even exist in sage < 4.0, so I'm not going to hold this ticket up for this.",
+    "created_at": "2009-05-28T06:26:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6111",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6111#issuecomment-48829",
+    "user": "was"
+}
+```
 
 Regarding, `sage: ((x+y)^9).polynomial(None, ring=ZZ['x']['y']).list()` --> boom, none of the above patches address this.  However, this ring option didn't even exist in sage < 4.0, so I'm not going to hold this ticket up for this.
 
 
+
 ---
 
-Comment by mhansen created at 2009-05-28 06:41:30
+archive/issue_comments_048830.json:
+```json
+{
+    "body": "Merged in 4.0.rc1.",
+    "created_at": "2009-05-28T06:41:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6111",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6111#issuecomment-48830",
+    "user": "mhansen"
+}
+```
 
 Merged in 4.0.rc1.
 
 
+
 ---
 
-Comment by mhansen created at 2009-05-28 06:41:30
+archive/issue_comments_048831.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-05-28T06:41:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6111",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6111#issuecomment-48831",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

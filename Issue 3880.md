@@ -1,11 +1,21 @@
 # Issue 3880: Bad behavior of arrows
 
-Issue created by migration from https://trac.sagemath.org/ticket/3880
-
-Original creator: itolkov
-
-Original creation time: 2008-08-16 19:22:55
-
+archive/issues_003880.json:
+```json
+{
+    "body": "Assignee: was\n\nAccording to the arrow documentation,\n\n```\nAn arrow from (xmin, ymin) to (xmax, ymax).\n```\n\n\nHowever, the current behavior is an arrow from (xmin, ymin) to (xmin + xmax, ymin + ymax).\n\nFor example:\n\n```\nsage: arrow((1, 1), (-1,-1))\n```\n\nwill draw an arrow from (1,1) to (0,0).\n\nIssue created by migration from https://trac.sagemath.org/ticket/3880\n\n",
+    "created_at": "2008-08-16T19:22:55Z",
+    "labels": [
+        "graphics",
+        "major",
+        "bug"
+    ],
+    "title": "Bad behavior of arrows",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3880",
+    "user": "itolkov"
+}
+```
 Assignee: was
 
 According to the arrow documentation,
@@ -25,10 +35,25 @@ sage: arrow((1, 1), (-1,-1))
 
 will draw an arrow from (1,1) to (0,0).
 
+Issue created by migration from https://trac.sagemath.org/ticket/3880
+
+
+
+
 
 ---
 
-Comment by itolkov created at 2008-08-16 19:25:52
+archive/issue_comments_027680.json:
+```json
+{
+    "body": "According to the docs on matplotlib:\n\n> patches.FancyArrow(x, y, dx, dy, ...\n\nFixing the line where this constructor is called should solve the problem.",
+    "created_at": "2008-08-16T19:25:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3880",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3880#issuecomment-27680",
+    "user": "itolkov"
+}
+```
 
 According to the docs on matplotlib:
 
@@ -37,28 +62,74 @@ According to the docs on matplotlib:
 Fixing the line where this constructor is called should solve the problem.
 
 
+
 ---
 
-Comment by rlm created at 2008-08-18 23:47:07
+archive/issue_comments_027681.json:
+```json
+{
+    "body": "This should be taken care of at the same time as #3877.",
+    "created_at": "2008-08-18T23:47:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3880",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3880#issuecomment-27681",
+    "user": "rlm"
+}
+```
 
 This should be taken care of at the same time as #3877.
 
 
+
 ---
 
-Comment by rlm created at 2008-08-19 01:22:42
+archive/issue_comments_027682.json:
+```json
+{
+    "body": "Jason is right, this is orthogonal to #3877. Shame on Alex for using such a stupid syntax as (xmin, ymin) to denote the tail coordinates of an arrow.",
+    "created_at": "2008-08-19T01:22:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3880",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3880#issuecomment-27682",
+    "user": "rlm"
+}
+```
 
 Jason is right, this is orthogonal to #3877. Shame on Alex for using such a stupid syntax as (xmin, ymin) to denote the tail coordinates of an arrow.
 
 
+
 ---
+
+archive/issue_comments_027683.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-08-19T01:28:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3880",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3880#issuecomment-27683",
+    "user": "rlm"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-19 01:39:15
+archive/issue_comments_027684.json:
+```json
+{
+    "body": "Patch looks good to me. Rlm explained to me what needed fixing.\n\nCheers,\n\nMichael",
+    "created_at": "2008-08-19T01:39:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3880",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3880#issuecomment-27684",
+    "user": "mabshoff"
+}
+```
 
 Patch looks good to me. Rlm explained to me what needed fixing.
 
@@ -67,20 +138,55 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-19 02:03:18
+archive/issue_comments_027685.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-08-19T02:03:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3880",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3880#issuecomment-27685",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-19 02:03:18
+archive/issue_comments_027686.json:
+```json
+{
+    "body": "Merged in Sage 3.1.2.alpha0",
+    "created_at": "2008-08-19T02:03:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3880",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3880#issuecomment-27686",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.1.2.alpha0
 
 
+
 ---
+
+archive/issue_comments_027687.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-08-19T02:32:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3880",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3880#issuecomment-27687",
+    "user": "mabshoff"
+}
+```
 
 Attachment

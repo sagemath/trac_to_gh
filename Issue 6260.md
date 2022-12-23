@@ -1,30 +1,79 @@
 # Issue 6260: sage -startuptime is totally broken in sage-4.0.1
 
-Issue created by migration from https://trac.sagemath.org/ticket/6260
-
-Original creator: was
-
-Original creation time: 2009-06-11 15:31:33
-
+archive/issues_006260.json:
+```json
+{
+    "body": "Assignee: cwitty\n\nsubject says it all.  This has something to do with hitting new code because of factoring out dsage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6260\n\n",
+    "created_at": "2009-06-11T15:31:33Z",
+    "labels": [
+        "misc",
+        "critical",
+        "bug"
+    ],
+    "title": "sage -startuptime is totally broken in sage-4.0.1",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6260",
+    "user": "was"
+}
+```
 Assignee: cwitty
 
 subject says it all.  This has something to do with hitting new code because of factoring out dsage.
 
+Issue created by migration from https://trac.sagemath.org/ticket/6260
+
+
+
+
 
 ---
+
+archive/issue_comments_049990.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-06-11T15:38:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6260",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6260#issuecomment-49990",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2009-06-11 18:06:01
+archive/issue_comments_049991.json:
+```json
+{
+    "body": "Looks good to me.  The old version wouldn't work when importing any module that used absolute imports (whose import signature is different than the old import signature.",
+    "created_at": "2009-06-11T18:06:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6260",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6260#issuecomment-49991",
+    "user": "mhansen"
+}
+```
 
 Looks good to me.  The old version wouldn't work when importing any module that used absolute imports (whose import signature is different than the old import signature.
 
 
+
 ---
 
-Comment by ncalexan created at 2009-06-13 22:54:33
+archive/issue_comments_049992.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-06-13T22:54:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6260",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6260#issuecomment-49992",
+    "user": "ncalexan"
+}
+```
 
 Resolution: fixed

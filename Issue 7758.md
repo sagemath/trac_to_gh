@@ -1,11 +1,21 @@
 # Issue 7758: doctest failure on OS X 10.5 intel due to randomization
 
-Issue created by migration from https://trac.sagemath.org/ticket/7758
-
-Original creator: was
-
-Original creation time: 2009-12-24 07:52:44
-
+archive/issues_007758.json:
+```json
+{
+    "body": "Assignee: tbd\n\n\n```\nsage -t -long \"devel/sage/sage/numerical/mip.pyx\"**********************************************************************\nFile \"/Users/wstein/build/sage-4.3.rc1/devel/sage/sage/numerical/mip.pyx\", line 364:\n    sage: p.show()\nExpected:\n    Maximization:\n      x0 + x1\n    Constraints:\n      -3*x0 + 2*x1 <= 2\n    Variables:\n      x1 is a real variable (min=0.0, max=+oo)\n      x0 is a real variable (min=0.0, max=+oo)\nGot:\n    Maximization:\n      x0 + x1\n    Constraints:\n      -3*x0 + 2*x1 <= 2\n    Variables:\n      x0 is a real variable (min=0.0, max=+oo)\n      x1 is a real variable (min=0.0, max=+oo)\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7758\n\n",
+    "created_at": "2009-12-24T07:52:44Z",
+    "labels": [
+        "doctest coverage",
+        "blocker",
+        "bug"
+    ],
+    "title": "doctest failure on OS X 10.5 intel due to randomization",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7758",
+    "user": "was"
+}
+```
 Assignee: tbd
 
 
@@ -33,40 +43,114 @@ Got:
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7758
+
+
+
+
 
 ---
 
-Comment by was created at 2009-12-24 07:55:47
+archive/issue_comments_066806.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-12-24T07:55:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7758",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7758#issuecomment-66806",
+    "user": "was"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_066807.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-12-24T07:55:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7758",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7758#issuecomment-66807",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2009-12-24 07:59:32
+archive/issue_comments_066808.json:
+```json
+{
+    "body": "I merged this into 4.3.rc2 anyways, since 4.3 is lingering forever.   I'm leaving this as \"needs review\" though.",
+    "created_at": "2009-12-24T07:59:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7758",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7758#issuecomment-66808",
+    "user": "was"
+}
+```
 
 I merged this into 4.3.rc2 anyways, since 4.3 is lingering forever.   I'm leaving this as "needs review" though.
 
 
+
 ---
+
+archive/issue_comments_066809.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-12-24T22:26:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7758",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7758#issuecomment-66809",
+    "user": "ncohen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by ncohen created at 2009-12-24 22:26:16
+archive/issue_comments_066810.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-12-24T22:26:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7758",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7758#issuecomment-66810",
+    "user": "ncohen"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by was created at 2009-12-25 10:01:40
+archive/issue_comments_066811.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-12-25T10:01:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7758",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7758#issuecomment-66811",
+    "user": "was"
+}
+```
 
 Resolution: fixed

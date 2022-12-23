@@ -1,11 +1,21 @@
 # Issue 6562: [with patch, needs review] Unicode support in TextCells
 
-Issue created by migration from https://trac.sagemath.org/ticket/6562
-
-Original creator: mora
-
-Original creation time: 2009-07-19 18:54:53
-
+archive/issues_006562.json:
+```json
+{
+    "body": "Assignee: boothby\n\nKeywords: textcell unicode\n\nIn a TextCell (shift+click on the blue line) I write some letters:\n\n http://www.math.bme.hu/~morap/sage_textcell1.png\n\nafter I save it. It looks fine:\n\n http://www.math.bme.hu/~morap/sage_textcell2.png\n\nbut when I double click on it to edit, then I get:\n\n http://www.math.bme.hu/~morap/sage_textcell3.png\n\nThat's the problem. I could not find out what (Python or TinyMCE) converts the special characters to html entities (for example \u00e9 to &eacute;), but it does not convert all of them.\n\nThe patch solves the problem. Without it the html code looks like:\n\n http://www.math.bme.hu/~morap/sage_textcell4.png\n\nusing the patch everything's fine. The html code after applying the patch:\n\n http://www.math.bme.hu/~morap/sage_textcell5.png\n\nIssue created by migration from https://trac.sagemath.org/ticket/6562\n\n",
+    "created_at": "2009-07-19T18:54:53Z",
+    "labels": [
+        "notebook",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch, needs review] Unicode support in TextCells",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6562",
+    "user": "mora"
+}
+```
 Assignee: boothby
 
 Keywords: textcell unicode
@@ -32,35 +42,96 @@ using the patch everything's fine. The html code after applying the patch:
 
  http://www.math.bme.hu/~morap/sage_textcell5.png
 
+Issue created by migration from https://trac.sagemath.org/ticket/6562
+
+
+
+
 
 ---
+
+archive/issue_comments_053521.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-07-19T18:55:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6562#issuecomment-53521",
+    "user": "mora"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mora created at 2009-07-25 01:20:35
+archive/issue_comments_053522.json:
+```json
+{
+    "body": "The Ticket 6464 is nearly the same. I suggest the solution of 6464 to use.",
+    "created_at": "2009-07-25T01:20:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6562#issuecomment-53522",
+    "user": "mora"
+}
+```
 
 The Ticket 6464 is nearly the same. I suggest the solution of 6464 to use.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-08-26 13:10:09
+archive/issue_comments_053523.json:
+```json
+{
+    "body": "To release manager: this should be closed as a duplicate of #6464, as mentioned above.",
+    "created_at": "2009-08-26T13:10:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6562#issuecomment-53523",
+    "user": "kcrisman"
+}
+```
 
 To release manager: this should be closed as a duplicate of #6464, as mentioned above.
 
 
+
 ---
 
-Comment by mvngu created at 2009-08-26 20:02:49
+archive/issue_comments_053524.json:
+```json
+{
+    "body": "Closing this as a duplicate of #6464.",
+    "created_at": "2009-08-26T20:02:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6562#issuecomment-53524",
+    "user": "mvngu"
+}
+```
 
 Closing this as a duplicate of #6464.
 
 
+
 ---
 
-Comment by mvngu created at 2009-08-26 20:02:49
+archive/issue_comments_053525.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2009-08-26T20:02:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6562#issuecomment-53525",
+    "user": "mvngu"
+}
+```
 
 Resolution: duplicate

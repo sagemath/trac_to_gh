@@ -1,21 +1,46 @@
 # Issue 7486: implement automatic definition of undefined variables in the Sage command line (ipython)
 
-Issue created by migration from https://trac.sagemath.org/ticket/7486
-
-Original creator: was
-
-Original creation time: 2009-11-18 09:30:43
-
+archive/issues_007486.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  olazo\n\nSee #7482, which is about doing this in the notebook.  For the command line, see the remarks below by the author of IPython.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7486\n\n",
+    "created_at": "2009-11-18T09:30:43Z",
+    "labels": [
+        "user interface",
+        "major",
+        "bug"
+    ],
+    "title": "implement automatic definition of undefined variables in the Sage command line (ipython)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7486",
+    "user": "was"
+}
+```
 Assignee: was
 
 CC:  olazo
 
 See #7482, which is about doing this in the notebook.  For the command line, see the remarks below by the author of IPython.
 
+Issue created by migration from https://trac.sagemath.org/ticket/7486
+
+
+
+
 
 ---
 
-Comment by was created at 2009-11-18 09:31:01
+archive/issue_comments_063230.json:
+```json
+{
+    "body": "From Fernando Perez:\n\n\n```\nActually no, not that hard: ipython executes all  user  code inside a\ndict created at initialization time.  One could replace this (today a\nplain python dict) with another dict that would implement the\nrequested behavior.  This would spring variables into existence when a\nKeyError was about to occur.\n\nThe command-line doesn't have the notion of a cell (yet, that will\nhopefully change soon) but it could be toggled with a function call.\n\nIt's basically a matter of instantiating the initial ipython with a\ncustom user_ns dict that does the above, that should be all.  And\nproviding a magic (or even plain) function in the global namespace to\ntoggle this behavior on/off at runtime.\n\nThe attached file (run it as 'ipauto.py') shows how it could work, I\ndidn't implement the toggling and it's a quick hack, but the basic\nidea is  there.  Here it is in action:\n\nIn [1]: %autocall 0\nAutomatic calling is: OFF\n\nIn [2]: x+y\nInjecting x\nInjecting y\nOut[2]: x + y\n\nIn [3]: type(x)\nOut[3]: <class 'sympy.core.symbol.Symbol'>\n\nIn [4]: x+3\nOut[4]: 3 + x\n\nIn [5]: x**2+x*x\nOut[5]: 2*x**2\n\nIn [6]: x+z**3\nInjecting z\nOut[6]: x + z**3\n\n\nA couple of notes:\n\n- It's key to disable autocalling for this to work, otherwise too many\nfalse positives are triggered.  If this idea proves to have  wings, it\nwill be one more argument in favor of disabling autocalling (it just\nhas too many uncontrollable side effects).\n\n- Unfortunately IPython as shipped needs a tiny patch for this to\nwork, due to a really silly omission.  The patch is a trivial 2-liner,\nin case anyone wants to take this further for Sage:\n\n(ipython-0.10)maqroll[0.10]> bzr diff\n### modified file 'IPython/Shell.py'\n--- IPython/Shell.py    2009-04-14 20:12:02 +0000\n+++ IPython/Shell.py    2009-11-18 09:03:01 +0000\n@@ -1230,7 +1230,7 @@\n\n\n # This is the one which should be called by external code.\n-def start(user_ns = None):\n+def start(user_ns = None, user_global_ns = None):\n    \"\"\"Return a running shell instance, dealing with threading options.\n\n    This is a factory function which will instantiate the proper IPython shell\n@@ -1238,7 +1238,7 @@\n    different GUI toolkits require different thread handling details.\"\"\"\n\n    shell = _select_shell(sys.argv)\n-    return shell(user_ns = user_ns)\n+    return shell(user_ns = user_ns, user_global_ns = user_global_ns)\n\n # Some aliases for backwards compatibility\n IPythonShell = IPShell\n\n\n\nCheers,\n\nf\n```\n",
+    "created_at": "2009-11-18T09:31:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7486",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7486#issuecomment-63230",
+    "user": "was"
+}
+```
 
 From Fernando Perez:
 
@@ -104,13 +129,37 @@ f
 
 
 
+
 ---
+
+archive/issue_comments_063231.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-08-21T23:26:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7486",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7486#issuecomment-63231",
+    "user": "olazo"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2012-03-20 20:05:27
+archive/issue_comments_063232.json:
+```json
+{
+    "body": "Changing type from defect to enhancement.",
+    "created_at": "2012-03-20T20:05:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7486",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7486#issuecomment-63232",
+    "user": "was"
+}
+```
 
 Changing type from defect to enhancement.

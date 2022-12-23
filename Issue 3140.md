@@ -1,11 +1,21 @@
 # Issue 3140: make sure Sage build prerequsists are available when running -upgrade
 
-Issue created by migration from https://trac.sagemath.org/ticket/3140
-
-Original creator: mabshoff
-
-Original creation time: 2008-05-09 10:32:07
-
+archive/issues_003140.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nPeople want to upgrade Sage they installed as a binary. That doesn't work too well if they don't have the needed devtools.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3140\n\n",
+    "created_at": "2008-05-09T10:32:07Z",
+    "labels": [
+        "build",
+        "blocker",
+        "bug"
+    ],
+    "title": "make sure Sage build prerequsists are available when running -upgrade",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3140",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 People want to upgrade Sage they installed as a binary. That doesn't work too well if they don't have the needed devtools.
@@ -14,44 +24,114 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/3140
+
+
+
+
 
 ---
 
-Comment by was created at 2009-06-15 23:19:38
+archive/issue_comments_021797.json:
+```json
+{
+    "body": "Changing priority from blocker to major.",
+    "created_at": "2009-06-15T23:19:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3140",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3140#issuecomment-21797",
+    "user": "was"
+}
+```
 
 Changing priority from blocker to major.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-12-29 23:10:03
+archive/issue_comments_021798.json:
+```json
+{
+    "body": "Building Sage doesn't work too well if people don't have the needed devtools. Not the fault of Sage...",
+    "created_at": "2013-12-29T23:10:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3140",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3140#issuecomment-21798",
+    "user": "jdemeyer"
+}
+```
 
 Building Sage doesn't work too well if people don't have the needed devtools. Not the fault of Sage...
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-12-29 23:10:03
+archive/issue_comments_021799.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2013-12-29T23:10:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3140",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3140#issuecomment-21799",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-12-29 23:12:01
+archive/issue_comments_021800.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2013-12-29T23:12:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3140",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3140#issuecomment-21800",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-12-29 23:12:01
+archive/issue_comments_021801.json:
+```json
+{
+    "body": "Building Sage doesn't work too well if people don't have the needed devtools. Not the fault of Sage...",
+    "created_at": "2013-12-29T23:12:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3140",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3140#issuecomment-21801",
+    "user": "jdemeyer"
+}
+```
 
 Building Sage doesn't work too well if people don't have the needed devtools. Not the fault of Sage...
 
 
+
 ---
 
-Comment by vbraun created at 2014-01-04 02:23:50
+archive/issue_comments_021802.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2014-01-04T02:23:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3140",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3140#issuecomment-21802",
+    "user": "vbraun"
+}
+```
 
 Resolution: invalid

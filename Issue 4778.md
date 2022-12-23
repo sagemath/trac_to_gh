@@ -1,11 +1,21 @@
 # Issue 4778: [with patch, needs review] Creates Scilab pexpect interface
 
-Issue created by migration from https://trac.sagemath.org/ticket/4778
-
-Original creator: ronanpaixao
-
-Original creation time: 2008-12-13 02:53:25
-
+archive/issues_004778.json:
+```json
+{
+    "body": "Assignee: ronanpaixao\n\nKeywords: scilab\n\nCreates an interface to Scilab numerical math software, available at www.scilab.org\n\nTested with Scilab version 5.0.3\n\nIssue created by migration from https://trac.sagemath.org/ticket/4778\n\n",
+    "created_at": "2008-12-13T02:53:25Z",
+    "labels": [
+        "optional packages",
+        "minor",
+        "enhancement"
+    ],
+    "title": "[with patch, needs review] Creates Scilab pexpect interface",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4778",
+    "user": "ronanpaixao"
+}
+```
 Assignee: ronanpaixao
 
 Keywords: scilab
@@ -14,17 +24,43 @@ Creates an interface to Scilab numerical math software, available at www.scilab.
 
 Tested with Scilab version 5.0.3
 
+Issue created by migration from https://trac.sagemath.org/ticket/4778
+
+
+
+
 
 ---
 
-Comment by jsp created at 2008-12-15 15:26:13
+archive/issue_comments_036207.json:
+```json
+{
+    "body": "Changing component from optional packages to interfaces.",
+    "created_at": "2008-12-15T15:26:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4778",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4778#issuecomment-36207",
+    "user": "jsp"
+}
+```
 
 Changing component from optional packages to interfaces.
 
 
+
 ---
 
-Comment by jsp created at 2008-12-15 15:26:13
+archive/issue_comments_036208.json:
+```json
+{
+    "body": "Installed scilab-5.0.3 with ./configure --without-javasci --without-gui\n\nHad to install matio\n\n\n\n```\n[jaap@paix scilab-5.0.3]$ bin/scilab -nogui\nWarning: Localization issue: Error while binding the domain from /home/jaap/downloads/scilab-5.0.3/../locale/ or /home/jaap/downloads/scilab-5.0.3/locale/: Switch to the default language (English).\n        ___________________________________________        \n                       scilab-5.0.3\n\n                 Consortium Scilab (DIGITEO)\n               Copyright (c) 1989-2008 (INRIA)\n               Copyright (c) 1989-2007 (ENPC)\n        ___________________________________________        \n \n \nStartup execution:\n  loading initial environment\n \n-->\n\n```\n\n\nRunning ./sage -t -optional -verbose devel/sage/sage/interfaces/scilab.py\n\n1 failure:\n\n\n```\nTrying:\n    a**Integer(10)                              # optional - scilab###line 19:_sage_    >>> a**10                              # optional - scilab\nExpecting:\n       1.000D+10\n**********************************************************************\nFile \"/home/jaap/work/downloads/sage-3.2.2.alpha2/devel/sage/sage/interfaces/scilab.py\", line 106, in __main__.example_0\nFailed example:\n    a**Integer(10)                              # optional - scilab###line 19:_sage_    >>> a**10                              # optional - scilab\nExpected:\n       1.000D+10\nGot:\n    <BLANKLINE>\n    <BLANKLINE>\n        1.000E+10\n\n```\n\n\nSee: [http://sage.math.washington.edu/home/jsp/tests/scilabtest.log](http://sage.math.washington.edu/home/jsp/tests/scilabtest.log)\n\nNo failures in matrix1.pyx\n\nSo no positive review yet.\n\nJaap",
+    "created_at": "2008-12-15T15:26:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4778",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4778#issuecomment-36208",
+    "user": "jsp"
+}
+```
 
 Installed scilab-5.0.3 with ./configure --without-javasci --without-gui
 
@@ -85,16 +121,38 @@ So no positive review yet.
 Jaap
 
 
+
 ---
 
-Comment by ronanpaixao created at 2008-12-15 17:40:23
+archive/issue_comments_036209.json:
+```json
+{
+    "body": "Strangely, this test passes here, since Scilab uses D notation here. This looks like a localization issue, specially since I don't get this warning in the beginning of the console session. I also found it strange to use this D instead of E, but since those french guys love breaking standards, I didn't mind. I'll see if I can set this up though.",
+    "created_at": "2008-12-15T17:40:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4778",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4778#issuecomment-36209",
+    "user": "ronanpaixao"
+}
+```
 
 Strangely, this test passes here, since Scilab uses D notation here. This looks like a localization issue, specially since I don't get this warning in the beginning of the console session. I also found it strange to use this D instead of E, but since those french guys love breaking standards, I didn't mind. I'll see if I can set this up though.
 
 
+
 ---
 
-Comment by jsp created at 2008-12-15 23:36:09
+archive/issue_comments_036210.json:
+```json
+{
+    "body": "Substitute:\n\ns/1.000D/1.000E/\n\nand most people will be happy :-)! For instance you with a positive review.\n\nJaap",
+    "created_at": "2008-12-15T23:36:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4778",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4778#issuecomment-36210",
+    "user": "jsp"
+}
+```
 
 Substitute:
 
@@ -105,9 +163,20 @@ and most people will be happy :-)! For instance you with a positive review.
 Jaap
 
 
+
 ---
 
-Comment by jsp created at 2008-12-15 23:40:52
+archive/issue_comments_036211.json:
+```json
+{
+    "body": "Replying to [comment:3 jsp]:\n> Substitute:\n> \n> s/1.000D/1.000E/\n> \n> and most people will be happy :-)! For instance you with a positive review.\n> \n> Jaap\n> \n\n[jaap`@`paix sage-3.2.2.alpha2]$ ./sage -t -optional devel/sage/sage/interfaces/scilab.py \nsage -t -optional \"devel/sage/sage/interfaces/scilab.py\"    \n\t [9.9 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 9.9 seconds",
+    "created_at": "2008-12-15T23:40:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4778",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4778#issuecomment-36211",
+    "user": "jsp"
+}
+```
 
 Replying to [comment:3 jsp]:
 > Substitute:
@@ -128,14 +197,38 @@ All tests passed!
 Total time for all tests: 9.9 seconds
 
 
+
 ---
 
-Comment by ronanpaixao created at 2008-12-16 00:34:23
+archive/issue_comments_036212.json:
+```json
+{
+    "body": "patch file, with preliminary E notation fix for doctest",
+    "created_at": "2008-12-16T00:34:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4778",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4778#issuecomment-36212",
+    "user": "ronanpaixao"
+}
+```
 
 patch file, with preliminary E notation fix for doctest
 
 
+
 ---
+
+archive/issue_comments_036213.json:
+```json
+{
+    "body": "Attachment\n\nLooks good to me:\n\n\n\n```\n137 tests in 24 items.\n137 passed and 0 failed.\nTest passed.\n\t [8.0 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 8.0 seconds\n\n```\n",
+    "created_at": "2008-12-16T00:40:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4778",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4778#issuecomment-36213",
+    "user": "jsp"
+}
+```
 
 Attachment
 
@@ -157,9 +250,20 @@ Total time for all tests: 8.0 seconds
 
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-17 14:51:19
+archive/issue_comments_036214.json:
+```json
+{
+    "body": "Ronan,\n\nfor future references: The name of the patch ought to be trac_XXXX_description.patch, not the commit number from the hg repo.\n\nCheers,\n\nMichael",
+    "created_at": "2008-12-17T14:51:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4778",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4778#issuecomment-36214",
+    "user": "mabshoff"
+}
+```
 
 Ronan,
 
@@ -170,9 +274,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-17 15:06:39
+archive/issue_comments_036215.json:
+```json
+{
+    "body": "This patch needs two simple one line fixes to make more doctests optional:\n\n```\nsage -t -long \"devel/sage/sage/interfaces/scilab.py\"        \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc1/devel/sage/sage/interfaces/scilab.py\", line 269:\n    sage: scilab.eval(\"5\")\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_6[2]>\", line 1, in <module>\n        scilab.eval(\"5\")###line 269:\n    sage: scilab.eval(\"5\")\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc1/local/lib/python2.5/site-packages/sage/interfaces/scilab.py\", line 274, in eval\n        s = Expect.eval(self, command).replace(\"\\x1b[?1l\\x1b>\",\"\").strip()\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc1/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 937, in eval\n        return '\\n'.join([self._eval_line(L, **kwds) for L in code.split('\\n') if L != ''])\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc1/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 633, in _eval_line\n        self._start()\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc1/local/lib/python2.5/site-packages/sage/interfaces/scilab.py\", line 261, in _start\n        Expect._start(self)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc1/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 470, in _start\n        raise RuntimeError, \"Unable to start %s\"%self.__name\n    RuntimeError: Unable to start scilab\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc1/devel/sage/sage/interfaces/scilab.py\", line 271:\n    sage: scilab.eval(\"d=44\")\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_6[3]>\", line 1, in <module>\n        scilab.eval(\"d=44\")###line 271:\n    sage: scilab.eval(\"d=44\")\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc1/local/lib/python2.5/site-packages/sage/interfaces/scilab.py\", line 274, in eval\n        s = Expect.eval(self, command).replace(\"\\x1b[?1l\\x1b>\",\"\").strip()\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc1/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 937, in eval\n        return '\\n'.join([self._eval_line(L, **kwds) for L in code.split('\\n') if L != ''])\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc1/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 633, in _eval_line\n        self._start()\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc1/local/lib/python2.5/site-packages/sage/interfaces/scilab.py\", line 261, in _start\n        Expect._start(self)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.rc1/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 470, in _start\n        raise RuntimeError, \"Unable to start %s\"%self.__name\n    RuntimeError: Unable to start scilab\n**********************************************************************\n1 items had failures:\n   2 of   4 in __main__.example_6\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.2.2.rc1/tmp/.doctest_scilab.py\n\t [2.3 s]\nexit code: 1024\n```\n\n\nReviewer patch coming up.\n\nCheers,\n\nMichael",
+    "created_at": "2008-12-17T15:06:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4778",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4778#issuecomment-36215",
+    "user": "mabshoff"
+}
+```
 
 This patch needs two simple one line fixes to make more doctests optional:
 
@@ -245,9 +360,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-17 15:08:00
+archive/issue_comments_036216.json:
+```json
+{
+    "body": "By the way:\n\n```\n        EXAMPLES:\n            sage: scilab.eval(\"5\")                      # optional - scilab\n            'ans  =\\n \\n    5.'\n            sage: scilab.eval(\"d=44\")                   # optional - scilab\n            'd  =\\n \\n    44.'\n```\n\nThis is plain ugly and needs to be fixed, i.e. stripping out the newlines and spaces.\n\nCheers,\n\nMichael",
+    "created_at": "2008-12-17T15:08:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4778",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4778#issuecomment-36216",
+    "user": "mabshoff"
+}
+```
 
 By the way:
 
@@ -266,9 +392,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-17 15:11:36
+archive/issue_comments_036217.json:
+```json
+{
+    "body": "Merged in Sage 3.2.2.rc1. I fixed the issue in the patch itself.\n\nCheers,\n\nMichael",
+    "created_at": "2008-12-17T15:11:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4778",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4778#issuecomment-36217",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.2.2.rc1. I fixed the issue in the patch itself.
 
@@ -277,16 +414,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-17 15:11:36
+archive/issue_comments_036218.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-12-17T15:11:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4778",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4778#issuecomment-36218",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by ronanpaixao created at 2008-12-19 16:49:46
+archive/issue_comments_036219.json:
+```json
+{
+    "body": "I know the newlines are ugly, but I left it as-is because correcting those would require a lot of strips which could truncate output in unexpected ways. I believe the principle of eval is to return whatever the program outputs to the user and let him do the processing. Imagine, for example, if one strips all newlines: the output of whos() would then be all rendered in one line, completely breaking the tables.\n\nThen, I thought about stripping at least the output of get() but then I ran into a problem with matrix formatting, in which the first line of a matrix would be misaligned, not to mention that taking newlines off would display matrices in a single line.\n\nRonan",
+    "created_at": "2008-12-19T16:49:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4778",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4778#issuecomment-36219",
+    "user": "ronanpaixao"
+}
+```
 
 I know the newlines are ugly, but I left it as-is because correcting those would require a lot of strips which could truncate output in unexpected ways. I believe the principle of eval is to return whatever the program outputs to the user and let him do the processing. Imagine, for example, if one strips all newlines: the output of whos() would then be all rendered in one line, completely breaking the tables.
 

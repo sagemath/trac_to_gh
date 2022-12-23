@@ -1,21 +1,46 @@
 # Issue 9432: remove remaining # optional - GLPK tags on doctests
 
-Issue created by migration from https://trac.sagemath.org/ticket/9432
-
-Original creator: rlm
-
-Original creation time: 2010-07-05 23:19:19
-
+archive/issues_009432.json:
+```json
+{
+    "body": "Assignee: jason, jkantor\n\nCC:  ncohen leif\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9432\n\n",
+    "created_at": "2010-07-05T23:19:19Z",
+    "labels": [
+        "numerical",
+        "blocker",
+        "bug"
+    ],
+    "title": "remove remaining # optional - GLPK tags on doctests",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9432",
+    "user": "rlm"
+}
+```
 Assignee: jason, jkantor
 
 CC:  ncohen leif
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/9432
+
+
+
+
 
 ---
 
-Comment by rlm created at 2010-07-06 03:49:09
+archive/issue_comments_090043.json:
+```json
+{
+    "body": "The following should also be addressed:\n\n\n```\nage -t -long \"devel/sage-main/sage/numerical/mip.pyx\"\n**********************************************************************\nFile \"/scratch/rlmill/release/sage-4.5.alpha2/devel/sage-main/sage/numerical/mip.pyx\",\nline 1055:\n   sage: p.get_values(x)\nExpected:\n   {0: 0.0, 1: 1.3333333333333333}\nGot:\n   {1: 0.0, 2: 1.3333333333333333}\n*********************************************************************\n```\n",
+    "created_at": "2010-07-06T03:49:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9432",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9432#issuecomment-90043",
+    "user": "rlm"
+}
+```
 
 The following should also be addressed:
 
@@ -35,14 +60,38 @@ Got:
 
 
 
+
 ---
 
-Comment by ncohen created at 2010-07-06 09:58:59
+archive/issue_comments_090044.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-07-06T09:58:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9432",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9432#issuecomment-90044",
+    "user": "ncohen"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_090045.json:
+```json
+{
+    "body": "Attachment\n\nUpdated ! There should not be any other trace of the optional GLPK package in Sage :-)\n\nNathann",
+    "created_at": "2010-07-06T09:58:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9432",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9432#issuecomment-90045",
+    "user": "ncohen"
+}
+```
 
 Attachment
 
@@ -51,15 +100,37 @@ Updated ! There should not be any other trace of the optional GLPK package in Sa
 Nathann
 
 
+
 ---
 
-Comment by rlm created at 2010-07-06 11:48:40
+archive/issue_comments_090046.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-07-06T11:48:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9432",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9432#issuecomment-90046",
+    "user": "rlm"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by rlm created at 2010-07-06 11:50:11
+archive/issue_comments_090047.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-07-06T11:50:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9432",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9432#issuecomment-90047",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed

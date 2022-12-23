@@ -1,11 +1,21 @@
 # Issue 9662: gp(string) always returns a value, even when it should not
 
-Issue created by migration from https://trac.sagemath.org/ticket/9662
-
-Original creator: jdemeyer
-
-Original creation time: 2010-08-01 17:37:29
-
+archive/issues_009662.json:
+```json
+{
+    "body": "Assignee: was\n\nWhen executing a GP command using the Sage interface, a value of 0 is returned when None would be expected.  For example, in a gp shell (started with sage -gp for example):\n\n\n```\ngp> kill(x)   /* No output */\n```\n\n\nBut in Sage:\n\n```\nsage: gp('kill(x)')\n0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9662\n\n",
+    "created_at": "2010-08-01T17:37:29Z",
+    "labels": [
+        "interfaces",
+        "major",
+        "bug"
+    ],
+    "title": "gp(string) always returns a value, even when it should not",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9662",
+    "user": "jdemeyer"
+}
+```
 Assignee: was
 
 When executing a GP command using the Sage interface, a value of 0 is returned when None would be expected.  For example, in a gp shell (started with sage -gp for example):
@@ -24,10 +34,25 @@ sage: gp('kill(x)')
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/9662
+
+
+
+
 
 ---
 
-Comment by jdemeyer created at 2010-08-01 17:44:10
+archive/issue_comments_093781.json:
+```json
+{
+    "body": "This is not easily fixed, it is due to the way how Expect assigns variables.  In fact, one could argue that the observed behaviour is as expected, because in gp, we get\n\n```\ngp> a = kill(x)\n0\n```\n\nSo, assigning a nil value makes it into a zero.",
+    "created_at": "2010-08-01T17:44:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9662",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9662#issuecomment-93781",
+    "user": "jdemeyer"
+}
+```
 
 This is not easily fixed, it is due to the way how Expect assigns variables.  In fact, one could argue that the observed behaviour is as expected, because in gp, we get
 
@@ -39,23 +64,56 @@ gp> a = kill(x)
 So, assigning a nil value makes it into a zero.
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-08-03 07:13:27
+archive/issue_comments_093782.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"pari\".",
+    "created_at": "2010-08-03T07:13:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9662",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9662#issuecomment-93782",
+    "user": "jdemeyer"
+}
+```
 
 Changing keywords from "" to "pari".
 
 
+
 ---
 
-Comment by mhansen created at 2013-07-24 12:23:34
+archive/issue_comments_093783.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2013-07-24T12:23:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9662",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9662#issuecomment-93783",
+    "user": "mhansen"
+}
+```
 
 Resolution: invalid
 
 
+
 ---
 
-Comment by mhansen created at 2013-07-24 12:23:34
+archive/issue_comments_093784.json:
+```json
+{
+    "body": "I agree that this is invalid.  Doing `gp('kill(x)')` means to create an object \"kill(x)\" in gp, assign it to a variable, and return a object pointing to that variable.\n\n\n```\nsage: type(gp('kill(x)'))\n<class 'sage.interfaces.gp.GpElement'>\n```\n\n\nThis is how it works for all the interfaces.  If you just want to evaluate a command, then you can do\n\n\n```\nsage: gp.eval('kill(x)')\n''\n```\n\n\nwhich appropriately returns an empty string.",
+    "created_at": "2013-07-24T12:23:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9662",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9662#issuecomment-93784",
+    "user": "mhansen"
+}
+```
 
 I agree that this is invalid.  Doing `gp('kill(x)')` means to create an object "kill(x)" in gp, assign it to a variable, and return a object pointing to that variable.
 

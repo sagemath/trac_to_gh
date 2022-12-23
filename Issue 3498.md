@@ -1,11 +1,21 @@
 # Issue 3498: make numpy the backend for matrices over CDF and RDF
 
-Issue created by migration from https://trac.sagemath.org/ticket/3498
-
-Original creator: jason
-
-Original creation time: 2008-06-23 22:51:33
-
+archive/issues_003498.json:
+```json
+{
+    "body": "Assignee: was\n\n\n```\n[20:17] <wstein-3053> numpy is usually better.\n[20:18] <jason--> okay; do you mind if we switch the determinant function to numpy for matrices over CDF?\n[20:18] <wstein-3053> jason-- please do.\n[20:19] <jason--> okay; ticket coming right up.\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3498\n\n",
+    "created_at": "2008-06-23T22:51:33Z",
+    "labels": [
+        "linear algebra",
+        "major",
+        "bug"
+    ],
+    "title": "make numpy the backend for matrices over CDF and RDF",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3498",
+    "user": "jason"
+}
+```
 Assignee: was
 
 
@@ -18,15 +28,43 @@ Assignee: was
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3498
+
+
+
+
 
 ---
 
-Comment by jason created at 2008-09-24 06:33:44
+archive/issue_comments_024635.json:
+```json
+{
+    "body": "numpy.2.patch is an update.  RDF matrices seem to work all right, except for 4 doctest failures: a loads(dumps()) doctest and three other doctests that should be changed.  Apparently the SVD format returned is different than the GSL format, and numpy correctly recognizes a singular matrix and throws an error whereas GSL went ahead and tried to compute an inverse.",
+    "created_at": "2008-09-24T06:33:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3498",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24635",
+    "user": "jason"
+}
+```
 
 numpy.2.patch is an update.  RDF matrices seem to work all right, except for 4 doctest failures: a loads(dumps()) doctest and three other doctests that should be changed.  Apparently the SVD format returned is different than the GSL format, and numpy correctly recognizes a singular matrix and throws an error whereas GSL went ahead and tried to compute an inverse.
 
 
+
 ---
+
+archive/issue_comments_024636.json:
+```json
+{
+    "body": "Attachment\n\nThe numpy-RDF-CDF.patch replaces all previous patches.\n\nBasically, I factored out stuff that was common between RDF and CDF matrices (which turned out to be almost everything except the very initial part), stripped out GSL stuff, and wrote a few more doctests.\n\nOops, I just realized that I didn't delete a few pieces of cruft still hanging around from the GSL implementation.  I'll post a follow-up patch shortly.",
+    "created_at": "2008-09-26T01:20:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3498",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24636",
+    "user": "jason"
+}
+```
 
 Attachment
 
@@ -37,23 +75,58 @@ Basically, I factored out stuff that was common between RDF and CDF matrices (wh
 Oops, I just realized that I didn't delete a few pieces of cruft still hanging around from the GSL implementation.  I'll post a follow-up patch shortly.
 
 
+
 ---
 
-Comment by jason created at 2008-09-26 01:37:47
+archive/issue_comments_024637.json:
+```json
+{
+    "body": "apply on top of previous patch",
+    "created_at": "2008-09-26T01:37:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3498",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24637",
+    "user": "jason"
+}
+```
 
 apply on top of previous patch
 
 
+
 ---
+
+archive/issue_comments_024638.json:
+```json
+{
+    "body": "Attachment\n\nThese patches are for 3.1.3alpha1.  With these patches, sage -t *.py and sage -t *.pyx both pass in the matrix/ directory.",
+    "created_at": "2008-09-26T01:39:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3498",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24638",
+    "user": "jason"
+}
+```
 
 Attachment
 
 These patches are for 3.1.3alpha1.  With these patches, sage -t *.py and sage -t *.pyx both pass in the matrix/ directory.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-26 01:45:49
+archive/issue_comments_024639.json:
+```json
+{
+    "body": "Hi Jason, \n\nany particular reason you delete the solve extension in setup.py, i.e.\n\n```\n604\t606\t#     matrix_padic_capped_relative_dense, \n605\t \t     solve, \n606\t607\t\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-26T01:45:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3498",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24639",
+    "user": "mabshoff"
+}
+```
 
 Hi Jason, 
 
@@ -71,9 +144,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-26 01:51:13
+archive/issue_comments_024640.json:
+```json
+{
+    "body": "Jason,\n\njust to make 100% sure: does this patch depend on any other patch?\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-26T01:51:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3498",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24640",
+    "user": "mabshoff"
+}
+```
 
 Jason,
 
@@ -84,18 +168,40 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by jason created at 2008-09-26 01:58:36
+archive/issue_comments_024641.json:
+```json
+{
+    "body": "Mabshoff: these patches do not depend on anything but a pristine 3.1.3alpha1\n\nI deleted the solve module because it seemed like it was purely a helper module for RDF/CDF matrices.  That was the only place I could a reference to it in the sage codebase.  The functionality should be present in the RDF/CDF matrix codebase; numpy has a function which does all that that module does in just a line or two.  At least, that's how I understood it when I looked at it.",
+    "created_at": "2008-09-26T01:58:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3498",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24641",
+    "user": "jason"
+}
+```
 
 Mabshoff: these patches do not depend on anything but a pristine 3.1.3alpha1
 
 I deleted the solve module because it seemed like it was purely a helper module for RDF/CDF matrices.  That was the only place I could a reference to it in the sage codebase.  The functionality should be present in the RDF/CDF matrix codebase; numpy has a function which does all that that module does in just a line or two.  At least, that's how I understood it when I looked at it.
 
 
+
 ---
 
-Comment by jason created at 2008-09-26 02:44:54
+archive/issue_comments_024642.json:
+```json
+{
+    "body": "Some timings.  First, a bunch of commands in 3.1.3alpha1 without the patches, then with the patches.\n\nThe matrix below is from `m=random_matrix(RDF,30,min=-2<sup>32,max=2</sup>32)`.  I then copied the same matrix to the other session, so the timings below are for the exact same matrix.\n\nbefore patches:\n\n```\nsage: timeit('Matrix(RDF, [[1,2],[3,4]])')\n625 loops, best of 3: 152 \u00b5s per loop\nsage: timeit('Matrix(CDF, [[1,2],[3,4]])')\n625 loops, best of 3: 207 \u00b5s per loop\nsage: m\n30 x 30 dense matrix over Real Double Field\nsage: timeit('m+m')\n625 loops, best of 3: 32.1 \u00b5s per loop\nsage: timeit('m*m')\n625 loops, best of 3: 57.2 \u00b5s per loop\nsage: timeit('~m')\n625 loops, best of 3: 194 \u00b5s per loop\nsage: timeit('m.det()')\n625 loops, best of 3: 2.58 \u00b5s per loop\nsage: timeit('m.transpose()')\n625 loops, best of 3: 30.9 \u00b5s per loop\nsage: timeit('m.LU()')\n625 loops, best of 3: 368 \u00b5s per loop\nsage: timeit('m.eigenspaces()')\n5 loops, best of 3: 43.3 ms per loop\nsage: timeit('m.SVD()')\n625 loops, best of 3: 1.39 ms per loop\nsage: timeit('m.QR()')\n625 loops, best of 3: 197 \u00b5s per loop\nsage: timeit('m.QR()')\n625 loops, best of 3: 196 \u00b5s per loop\nsage: b=vector(RDF,range(30))\nsage: timeit('m.solve_left(b)')\n625 loops, best of 3: 270 \u00b5s per loop\nsage: timeit('m.solve_left_LU(b)')\n625 loops, best of 3: 238 \u00b5s per loop\nsage: \n```\n\n\n\nafter patches:\n\n```\nsage:  timeit('Matrix(RDF, [[1,2],[3,4]])')\n625 loops, best of 3: 159 \u00b5s per loop\nsage: timeit('Matrix(CDF, [[1,2],[3,4]])')\n625 loops, best of 3: 176 \u00b5s per loop\nsage: m\n30 x 30 dense matrix over Real Double Field\nsage: timeit('m+m')\n625 loops, best of 3: 42.8 \u00b5s per loop\nsage: timeit('m*m')\n625 loops, best of 3: 67.2 \u00b5s per loop\nsage: timeit('~m')\n625 loops, best of 3: 452 \u00b5s per loop\nsage: timeit('m.det()')\n625 loops, best of 3: 200 \u00b5s per loop\nsage: timeit('m.transpose()')\n625 loops, best of 3: 34 \u00b5s per loop\nsage: timeit('m.LU()')\n625 loops, best of 3: 112 \u00b5s per loop\nsage: timeit('m.eigenspaces()')\n5 loops, best of 3: 50.4 ms per loop\nsage: timeit('m.SVD()')\n125 loops, best of 3: 3.52 ms per loop\nsage: timeit('m.QR()')\n625 loops, best of 3: 831 \u00b5s per loop\nsage: b=vector(RDF,range(30))\nsage: timeit('m.solve_left(b)')\n625 loops, best of 3: 256 \u00b5s per loop\n```\n",
+    "created_at": "2008-09-26T02:44:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3498",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24642",
+    "user": "jason"
+}
+```
 
 Some timings.  First, a bunch of commands in 3.1.3alpha1 without the patches, then with the patches.
 
@@ -174,9 +280,20 @@ sage: timeit('m.solve_left(b)')
 
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-26 03:18:06
+archive/issue_comments_024643.json:
+```json
+{
+    "body": "Jason, \n\nsince caching seems to affect the above numbers: can you turn off GSL caching and redo the numbers? Then open a ticket to add caching for the new numpy classes? As is there are some significant slowdowns.\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-26T03:18:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3498",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24643",
+    "user": "mabshoff"
+}
+```
 
 Jason, 
 
@@ -187,9 +304,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by jason created at 2008-09-26 03:21:40
+archive/issue_comments_024644.json:
+```json
+{
+    "body": "Some more timings from respectably-sized matrices show that numpy is indeed way faster most of the time and neck-and-neck the rest of the time.  The GSL determinant speed below is most likely from from caching the LU decomposition that had been computed for something before and using that to compute the determinant.\n\nBefore patch\n\n```\nsage: # Before patches: GSL\nsage: m=random_matrix(RDF,500,min=-2^32,max=2^32)\nsage: timeit('m+m')\n125 loops, best of 3: 7.2 ms per loop\nsage: timeit('m*m')\n5 loops, best of 3: 90.6 ms per loop\nsage: timeit('~m')\n5 loops, best of 3: 639 ms per loop\nsage: timeit('m.det()')\n625 loops, best of 3: 19.1 \u00b5s per loop\nsage: timeit('m.transpose()')\n125 loops, best of 3: 5.76 ms per loop\nsage: timeit('m.LU()')\n5 loops, best of 3: 97.6 ms per loop\nsage: %time m.SVD()\nCPU times: user 8.26 s, sys: 0.09 s, total: 8.35 s\nWall time: 9.16 s\n\n(500 x 500 dense matrix over Real Double Field,\n 500 x 500 dense matrix over Real Double Field,\n 500 x 500 dense matrix over Real Double Field)\nsage: %time m.QR()\nCPU times: user 2.37 s, sys: 0.05 s, total: 2.42 s\nWall time: 2.68 s\n\n(500 x 500 dense matrix over Real Double Field,\n 500 x 500 dense matrix over Real Double Field)\nsage: b=vector(RDF,range(500))\nsage: timeit('m.solve_left(b)')\n5 loops, best of 3: 72 ms per loop\nsage: %time a=m.eigenspaces()\nCPU times: user 26.61 s, sys: 0.42 s, total: 27.03 s\nWall time: 30.09 s\n```\n\n\nAfter patches\n\n```\nsage: # After patches: numpy\nsage: m=random_matrix(RDF,500,min=-2^32,max=2^32)\nsage: timeit('m+m')\n125 loops, best of 3: 2.78 ms per loop\nsage: timeit('m*m')\n5 loops, best of 3: 89.2 ms per loop\nsage: timeit('~m')\n5 loops, best of 3: 224 ms per loop\nsage: timeit('m.det()')\n5 loops, best of 3: 62 ms per loop\nsage: timeit('m.transpose()')\n625 loops, best of 3: 32.9 \u00b5s per loop\nsage: timeit('m.LU()')\n5 loops, best of 3: 15.1 ms per loop\nsage: timeit('m.SVD()')\n5 loops, best of 3: 1.42 s per loop\nsage: %time m.SVD()\nCPU times: user 1.19 s, sys: 0.06 s, total: 1.25 s\nWall time: 1.42 s\n\n(500 x 500 dense matrix over Real Double Field,\n 500 x 500 dense matrix over Real Double Field,\n 500 x 500 dense matrix over Real Double Field)\nsage: %time m.QR()\nCPU times: user 0.26 s, sys: 0.03 s, total: 0.28 s\nWall time: 0.32 s\n\n(500 x 500 dense matrix over Real Double Field,\n 500 x 500 dense matrix over Real Double Field)\nsage: b=vector(RDF,range(500))\nsage: timeit('m.solve_left(b)')\n5 loops, best of 3: 68.6 ms per loop\nsage: %time a=m.eigenspaces()\nCPU times: user 27.52 s, sys: 0.31 s, total: 27.83 s\nWall time: 30.00 s\nsage: \n```\n",
+    "created_at": "2008-09-26T03:21:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3498",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24644",
+    "user": "jason"
+}
+```
 
 Some more timings from respectably-sized matrices show that numpy is indeed way faster most of the time and neck-and-neck the rest of the time.  The GSL determinant speed below is most likely from from caching the LU decomposition that had been computed for something before and using that to compute the determinant.
 
@@ -275,15 +403,26 @@ sage:
 
 
 
+
 ---
 
-Comment by malb created at 2008-09-27 19:28:49
+archive/issue_comments_024645.json:
+```json
+{
+    "body": "**Review**\n* patch applies cleanly\n* I skimmed the code and it looks fine, I didn't thoroughly read it though\n* Is there any chance that we can get rid of the toplevel numpy imports (they were removed just recently and I wonder whether we can get away without them for startup time reasons)\n* doctests (64-bit Linux)\n\n```\nFile \"/home/malb/sage-3.1.3.alpha1/tmp/matrix_double_dense.py\", line 854:\n    sage: U*U.transpose()\nExpected:\n    [              1.0 2.13506512817e-16]\n    [2.13506512817e-16               1.0]\nGot:\n    [              1.0 2.66876364757e-16]\n    [2.66876364757e-16               1.0]\n**********************************************************************\nFile \"/home/malb/sage-3.1.3.alpha1/tmp/matrix_double_dense.py\", line 859:\n    sage: V*V.transpose()\nExpected:\n    [               1.0  2.02230810223e-16 -2.11947972194e-16]\n    [ 2.02230810223e-16                1.0  7.09339271349e-17]\n    [-2.11947972194e-16  7.09339271349e-17                1.0]\nGot:\n    [               1.0  5.94955942151e-17 -1.77117977403e-16]\n    [ 5.94955942151e-17                1.0 -8.87690528723e-17]\n    [-1.77117977403e-16 -8.87690528723e-17                1.0]\n**********************************************************************\n```\n",
+    "created_at": "2008-09-27T19:28:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3498",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24645",
+    "user": "malb"
+}
+```
 
-*Review*
- * patch applies cleanly
- * I skimmed the code and it looks fine, I didn't thoroughly read it though
- * Is there any chance that we can get rid of the toplevel numpy imports (they were removed just recently and I wonder whether we can get away without them for startup time reasons)
- * doctests (64-bit Linux)
+**Review**
+* patch applies cleanly
+* I skimmed the code and it looks fine, I didn't thoroughly read it though
+* Is there any chance that we can get rid of the toplevel numpy imports (they were removed just recently and I wonder whether we can get away without them for startup time reasons)
+* doctests (64-bit Linux)
 
 ```
 File "/home/malb/sage-3.1.3.alpha1/tmp/matrix_double_dense.py", line 854:
@@ -310,15 +449,26 @@ Got:
 
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-27 19:38:47
+archive/issue_comments_024646.json:
+```json
+{
+    "body": "Replying to [comment:10 malb]:\n\nHi malb,\n\n> **Review**\n>  * patch applies cleanly\n>  * I skimmed the code and it looks fine, I didn't thoroughly read it though\n\nI am valgrinding it right now. Jason and I spend four hours last night fixing problems with the new nump 1.2 and scip 0.7svn - see #4205.\n\n>  * Is there any chance that we can get rid of the toplevel numpy imports (they were removed just recently and I wonder whether we can get away without them for startup time reasons)\n\nUnfortunately not, but numpy 1.2 (which we are upgrading to in 3.1.3) imports in 0.2s or so on sage.math. \n\n>  * doctests (64-bit Linux)\n\nFixed in #4205. \n\nCheers,\n\nMichael",
+    "created_at": "2008-09-27T19:38:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3498",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24646",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:10 malb]:
 
 Hi malb,
 
-> *Review*
+> **Review**
 >  * patch applies cleanly
 >  * I skimmed the code and it looks fine, I didn't thoroughly read it though
 
@@ -337,19 +487,41 @@ Cheers,
 Michael
 
 
----
-
-Comment by malb created at 2008-09-27 19:43:06
-
-Hi, feel free to change to *positive review* when #4205 goes in.
-
 
 ---
 
-Comment by mabshoff created at 2008-09-27 19:45:28
+archive/issue_comments_024647.json:
+```json
+{
+    "body": "Hi, feel free to change to **positive review** when #4205 goes in.",
+    "created_at": "2008-09-27T19:43:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3498",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24647",
+    "user": "malb"
+}
+```
+
+Hi, feel free to change to **positive review** when #4205 goes in.
+
+
+
+---
+
+archive/issue_comments_024648.json:
+```json
+{
+    "body": "Replying to [comment:12 malb]:\n> Hi, feel free to change to **positive review** when #4205 goes in.\n\nCool. We are still fighting some problems with scipy 0.7svn, but Mike Hansen and I are on it. Unless we can resolve those issue and if there are memory leaks in this patch I will throw the new numpy and scipy out of 3.1.3. That also makes it likely that this patch would miss 3.1.3, but so far I am hopeful.\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-27T19:45:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3498",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24648",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:12 malb]:
-> Hi, feel free to change to *positive review* when #4205 goes in.
+> Hi, feel free to change to **positive review** when #4205 goes in.
 
 Cool. We are still fighting some problems with scipy 0.7svn, but Mike Hansen and I are on it. Unless we can resolve those issue and if there are memory leaks in this patch I will throw the new numpy and scipy out of 3.1.3. That also makes it likely that this patch would miss 3.1.3, but so far I am hopeful.
 
@@ -358,9 +530,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-27 20:06:48
+archive/issue_comments_024649.json:
+```json
+{
+    "body": "Ok, this is a problem:\n\n```\n==10940== LEAK SUMMARY:\n==10940==    definitely lost: 13,108 bytes in 321 blocks.\n==10940==      possibly lost: 303,196 bytes in 829 blocks.\n==10940==    still reachable: 34,200,409 bytes in 198,999 blocks.\n==10940==         suppressed: 340,122 bytes in 5,402 blocks.\n==10940== Reachable blocks (those to which a pointer was found) are not shown.\n==10940== To see them, rerun with: --leak-check=full --show-reachable=yes\n```\n\nThis happens when valgrinding sage/modules/complex_double_vector.pyx. But the issue is not the code that Jason wrote, but that we leak not insignificant amounts of memory if we (re)import numpy. So I would suggest doing it once at the toplevel and killing all other import numpy statements. \n\nAnother thing that concerns me is that the number of still reachable objects has gone up dramatically, i.e. contrast the above to the situation before:\n\n```\n==16395== LEAK SUMMARY:\n==16395==    definitely lost: 612 bytes in 11 blocks.\n==16395==      possibly lost: 312,717 bytes in 866 blocks.\n==16395==    still reachable: 33,376,714 bytes in 193,940 blocks.\n==16395==         suppressed: 329,948 bytes in 5,223 blocks.\n==16395== Reachable blocks (those to which a pointer was found) are not shown.\n==16395== To see them, rerun with: --leak-check=full --show-reachable=yes\n```\n\nOne would need to run some longer tests to see if this is just additional, but constant crap from numpy or if the amount grows as we use it more.\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-27T20:06:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3498",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24649",
+    "user": "mabshoff"
+}
+```
 
 Ok, this is a problem:
 
@@ -395,9 +578,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by was created at 2008-09-29 23:17:41
+archive/issue_comments_024650.json:
+```json
+{
+    "body": ">> Malb: Is there any chance that we can get rid of the toplevel numpy imports (they were removed just recently and I wonder whether we can get away without them for startup time reasons)\n\n> Mabshoff: Unfortunately not, but numpy 1.2 (which we are upgrading to in 3.1.3) imports in 0.2s or so on sage.math. \n\nFor the record, it is absolutely definitely always possible to get rid of numpy imports.",
+    "created_at": "2008-09-29T23:17:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3498",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24650",
+    "user": "was"
+}
+```
 
 >> Malb: Is there any chance that we can get rid of the toplevel numpy imports (they were removed just recently and I wonder whether we can get away without them for startup time reasons)
 
@@ -406,9 +600,20 @@ Comment by was created at 2008-09-29 23:17:41
 For the record, it is absolutely definitely always possible to get rid of numpy imports.
 
 
+
 ---
 
-Comment by malb created at 2008-09-30 08:29:04
+archive/issue_comments_024651.json:
+```json
+{
+    "body": "Replying to [comment:15 was]:\n> For the record, it is absolutely definitely always possible to get rid of numpy imports.\n\nI was thinking about inheriting from a numpy type or cdef'ing some numpy type in some pxd file (don't know if that's even possible) Other than that, I can't think of any situation where one couldn't do it.",
+    "created_at": "2008-09-30T08:29:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3498",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24651",
+    "user": "malb"
+}
+```
 
 Replying to [comment:15 was]:
 > For the record, it is absolutely definitely always possible to get rid of numpy imports.
@@ -416,14 +621,38 @@ Replying to [comment:15 was]:
 I was thinking about inheriting from a numpy type or cdef'ing some numpy type in some pxd file (don't know if that's even possible) Other than that, I can't think of any situation where one couldn't do it.
 
 
+
 ---
 
-Comment by jason created at 2008-10-21 03:21:15
+archive/issue_comments_024652.json:
+```json
+{
+    "body": "apply on top of previous patches",
+    "created_at": "2008-10-21T03:21:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3498",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24652",
+    "user": "jason"
+}
+```
 
 apply on top of previous patches
 
 
+
 ---
+
+archive/issue_comments_024653.json:
+```json
+{
+    "body": "Attachment\n\nI added numpy-3.patch (to be applied on top of the previous patches) which makes numpy *not* imported by default (imported lazily, though), and switches several functions from the numpy versions to the more careful/recommended scipy equivalents.\n\nEarlier today, I ran valgrind on several examples and mabshoff indicated that things looked good to him.  He might do additional testing to see if things really are okay to merge.",
+    "created_at": "2008-10-21T03:23:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3498",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24653",
+    "user": "jason"
+}
+```
 
 Attachment
 
@@ -432,16 +661,38 @@ I added numpy-3.patch (to be applied on top of the previous patches) which makes
 Earlier today, I ran valgrind on several examples and mabshoff indicated that things looked good to him.  He might do additional testing to see if things really are okay to merge.
 
 
+
 ---
 
-Comment by jason created at 2008-10-21 03:31:47
+archive/issue_comments_024654.json:
+```json
+{
+    "body": "These patches all apply on top of 3.1.4 and the doctests in matrix/*.pyx and matrix/*.py pass.",
+    "created_at": "2008-10-21T03:31:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3498",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24654",
+    "user": "jason"
+}
+```
 
 These patches all apply on top of 3.1.4 and the doctests in matrix/*.pyx and matrix/*.py pass.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-21 20:26:22
+archive/issue_comments_024655.json:
+```json
+{
+    "body": "The last patch repeatedly runs\n\n```\nimport scipy.linalg\n```\n\nThis import also needs to be done lazily.\n\nCheers,\n\nMichael",
+    "created_at": "2008-10-21T20:26:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3498",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24655",
+    "user": "mabshoff"
+}
+```
 
 The last patch repeatedly runs
 
@@ -456,16 +707,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by jason created at 2008-10-22 00:18:49
+archive/issue_comments_024656.json:
+```json
+{
+    "body": "After running some tests to see about leaking and the \"import scipy.linalg\" issue, mabshoff said on IRC that the output \"looks good to me\".  I don't have the logs on me, but I'm sure he can paste them in or comment if there is still an issue.",
+    "created_at": "2008-10-22T00:18:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3498",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24656",
+    "user": "jason"
+}
+```
 
 After running some tests to see about leaking and the "import scipy.linalg" issue, mabshoff said on IRC that the output "looks good to me".  I don't have the logs on me, but I'm sure he can paste them in or comment if there is still an issue.
 
 
+
 ---
 
-Comment by jason created at 2008-10-22 15:07:12
+archive/issue_comments_024657.json:
+```json
+{
+    "body": "okay, copying the private review request here for posterity :)\n\n\n```\nMartin and Mike,\n\nI'm emailing you two since you've both already looked at the patches at http://trac.sagemath.org/sage_trac/ticket/3498.  Martin, you almost gave it a positive review, pending resolution of the deprecation warnings.  I think mabshoff fixed the deprecation warnings without applying #4205.  Mike, you expressed some concerns over leaks.  I took care of the global numpy import issue and ran some tests with valgrind and, based on those, mabshoff said today on IRC: \"Someone other than me needs to (re)review. Blessing from me on memory issues AFAIK :)\"\n\n\nMichael also said he was still a bit suspicious, though, and it seems like he'd like to run valgrind on it himself as well.\n\n\nSo, would either of you like to (re)review the patches at #3498, especially for the mathematical content?  Michael can run valgrind on it again if he wants as well.\n\nThanks,\n\nJason\n```\n",
+    "created_at": "2008-10-22T15:07:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3498",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24657",
+    "user": "jason"
+}
+```
 
 okay, copying the private review request here for posterity :)
 
@@ -488,16 +761,38 @@ Jason
 
 
 
+
 ---
 
-Comment by robertwb created at 2008-10-24 04:32:39
+archive/issue_comments_024658.json:
+```json
+{
+    "body": "Is there any reason you still have the `gsl_matrix` field in the new class? Also, have you looked into using the new buffer interface, e.g., for element access (see http://wiki.cython.org/tutorials/numpy )? Perhaps this should be a separate ticket though.",
+    "created_at": "2008-10-24T04:32:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3498",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24658",
+    "user": "robertwb"
+}
+```
 
 Is there any reason you still have the `gsl_matrix` field in the new class? Also, have you looked into using the new buffer interface, e.g., for element access (see http://wiki.cython.org/tutorials/numpy )? Perhaps this should be a separate ticket though.
 
 
+
 ---
 
-Comment by jason created at 2008-10-24 11:30:30
+archive/issue_comments_024659.json:
+```json
+{
+    "body": "I don't believe there is any gsl_matrix field in the new class.  Where are you seeing it (after applying the patches)?\n\nAlso, yes, I have looked at using the new buffer interface.  However, for some reason, I didn't think we had current enough numpy/cython to be able to use it, and even if we did, it seemed like it was still under development.  I was going to wait until there was a clear, complete implementation.  I'm excited about it, though!\n\nI agree it ought to be a separate ticket.",
+    "created_at": "2008-10-24T11:30:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3498",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24659",
+    "user": "jason"
+}
+```
 
 I don't believe there is any gsl_matrix field in the new class.  Where are you seeing it (after applying the patches)?
 
@@ -506,67 +801,168 @@ Also, yes, I have looked at using the new buffer interface.  However, for some r
 I agree it ought to be a separate ticket.
 
 
+
 ---
+
+archive/issue_comments_024660.json:
+```json
+{
+    "body": "Attachment\n\napply on top of previous patches",
+    "created_at": "2008-10-24T11:35:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3498",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24660",
+    "user": "jason"
+}
+```
 
 Attachment
 
 apply on top of previous patches
 
 
+
 ---
 
-Comment by jason created at 2008-10-24 11:36:09
+archive/issue_comments_024661.json:
+```json
+{
+    "body": "Okay, I see two places where I still import gsl.pxi.  I've deleted those with remove-gsl-import.patch.  Apply that patch on top of all the previous patches.\n\nIs that what you were talking about, Robert?",
+    "created_at": "2008-10-24T11:36:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3498",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24661",
+    "user": "jason"
+}
+```
 
 Okay, I see two places where I still import gsl.pxi.  I've deleted those with remove-gsl-import.patch.  Apply that patch on top of all the previous patches.
 
 Is that what you were talking about, Robert?
 
 
+
 ---
 
-Comment by jason created at 2008-10-27 20:32:02
+archive/issue_comments_024662.json:
+```json
+{
+    "body": "robertwb: Here's a ping about reviewing this ticket, if you have time.  I think I corrected the problems you pointed out.",
+    "created_at": "2008-10-27T20:32:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3498",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24662",
+    "user": "jason"
+}
+```
 
 robertwb: Here's a ping about reviewing this ticket, if you have time.  I think I corrected the problems you pointed out.
 
 
+
 ---
 
-Comment by robertwb created at 2008-10-28 18:08:29
+archive/issue_comments_024663.json:
+```json
+{
+    "body": "Yes, this is what I was talking about.",
+    "created_at": "2008-10-28T18:08:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3498",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24663",
+    "user": "robertwb"
+}
+```
 
 Yes, this is what I was talking about.
 
 
+
 ---
 
-Comment by jason created at 2008-10-30 02:06:51
+archive/issue_comments_024664.json:
+```json
+{
+    "body": "robertwb: does that mean you give this another positive review?  I'm not trying to push for a positive review, just trying to help the review process along.",
+    "created_at": "2008-10-30T02:06:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3498",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24664",
+    "user": "jason"
+}
+```
 
 robertwb: does that mean you give this another positive review?  I'm not trying to push for a positive review, just trying to help the review process along.
 
 
+
 ---
 
-Comment by robertwb created at 2008-10-30 02:17:49
+archive/issue_comments_024665.json:
+```json
+{
+    "body": "I haven't looked into this enough to give it a positive review, but what I have looked at looks good. I'll give it a more thorough look during bug day tomorrow.",
+    "created_at": "2008-10-30T02:17:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3498",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24665",
+    "user": "robertwb"
+}
+```
 
 I haven't looked into this enough to give it a positive review, but what I have looked at looks good. I'll give it a more thorough look during bug day tomorrow.
 
 
+
 ---
 
-Comment by jason created at 2008-10-30 03:14:06
+archive/issue_comments_024666.json:
+```json
+{
+    "body": "Thanks!!  I've started working moving RDF/CDF vectors to numpy too, but that's another trac ticket.",
+    "created_at": "2008-10-30T03:14:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3498",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24666",
+    "user": "jason"
+}
+```
 
 Thanks!!  I've started working moving RDF/CDF vectors to numpy too, but that's another trac ticket.
 
 
+
 ---
 
-Comment by jason created at 2008-11-03 21:57:35
+archive/issue_comments_024667.json:
+```json
+{
+    "body": "robertwb: Did you have time to look at this patch on bug day?",
+    "created_at": "2008-11-03T21:57:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3498",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24667",
+    "user": "jason"
+}
+```
 
 robertwb: Did you have time to look at this patch on bug day?
 
 
+
 ---
 
-Comment by robertwb created at 2008-11-04 07:03:21
+archive/issue_comments_024668.json:
+```json
+{
+    "body": "Hmm... what's up with \n\n\n```\n-sage: from scipy import linsolve   \n+sage: from scipy.sparse.linalg.dsolve import linsolve\n```\n\nin sage/numerical/test.py? Does scipy.linsolve not work anymore?",
+    "created_at": "2008-11-04T07:03:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3498",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24668",
+    "user": "robertwb"
+}
+```
 
 Hmm... what's up with 
 
@@ -579,18 +975,40 @@ Hmm... what's up with
 in sage/numerical/test.py? Does scipy.linsolve not work anymore?
 
 
+
 ---
 
-Comment by robertwb created at 2008-11-04 07:05:43
+archive/issue_comments_024669.json:
+```json
+{
+    "body": "Sorry, that was in reference to #4205. \n\nI did look some at this on bug day, and the code looks solid and well written. I also say positive review, pending #4205.",
+    "created_at": "2008-11-04T07:05:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3498",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24669",
+    "user": "robertwb"
+}
+```
 
 Sorry, that was in reference to #4205. 
 
 I did look some at this on bug day, and the code looks solid and well written. I also say positive review, pending #4205.
 
 
+
 ---
 
-Comment by jason created at 2008-11-04 11:33:16
+archive/issue_comments_024670.json:
+```json
+{
+    "body": "To my understanding, this patch does not depend on #4205.  #4205 was to resolve some issues with upgrading to numpy 1.2.  That upgrade has already happened.  mabshoff took care of the warnings in question by modifying the numpy 1.2 code to not give the warnings, so it was a temporary fix.  However, that issue is separate from this patch.\n\nIn other words, this patch depends on numpy 1.2, which has already been upgraded in Sage.  Dealing with the deprecations in numpy 1.2 is a separate issue from this ticket, and should not be considered a prerequisite for this ticket.\n\nrobertwb: given that, does this patch earn a positive review?",
+    "created_at": "2008-11-04T11:33:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3498",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24670",
+    "user": "jason"
+}
+```
 
 To my understanding, this patch does not depend on #4205.  #4205 was to resolve some issues with upgrading to numpy 1.2.  That upgrade has already happened.  mabshoff took care of the warnings in question by modifying the numpy 1.2 code to not give the warnings, so it was a temporary fix.  However, that issue is separate from this patch.
 
@@ -599,30 +1017,74 @@ In other words, this patch depends on numpy 1.2, which has already been upgraded
 robertwb: given that, does this patch earn a positive review?
 
 
+
 ---
 
-Comment by jason created at 2008-11-04 11:36:31
+archive/issue_comments_024671.json:
+```json
+{
+    "body": "(of course, that's assuming that this patch actually applies and doctests run smoothly without applying #4205; I think it does, but can't check it again right now.  robertwb, did you *have* to apply #4205 before this patch would apply?)",
+    "created_at": "2008-11-04T11:36:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3498",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24671",
+    "user": "jason"
+}
+```
 
 (of course, that's assuming that this patch actually applies and doctests run smoothly without applying #4205; I think it does, but can't check it again right now.  robertwb, did you *have* to apply #4205 before this patch would apply?)
 
 
+
 ---
 
-Comment by robertwb created at 2008-11-04 19:50:09
+archive/issue_comments_024672.json:
+```json
+{
+    "body": "No, I did not have to apply #4205. I was deferring to malb that there was some (unknown to me) reason that #4205 should be first. But it does look good to me, so I'm giving this a positive review.",
+    "created_at": "2008-11-04T19:50:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3498",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24672",
+    "user": "robertwb"
+}
+```
 
 No, I did not have to apply #4205. I was deferring to malb that there was some (unknown to me) reason that #4205 should be first. But it does look good to me, so I'm giving this a positive review.
 
 
+
 ---
 
-Comment by jason created at 2008-11-04 21:16:19
+archive/issue_comments_024673.json:
+```json
+{
+    "body": "Thanks.  At that time, it was unclear what to do about the deprecation warnings in numpy/scipy, so #4205 was probably a prerequisite then.  As explained above, it is no longer a prerequisite, but should still be taken care of soon (i.e., before the next update of numpy/scipy).",
+    "created_at": "2008-11-04T21:16:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3498",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24673",
+    "user": "jason"
+}
+```
 
 Thanks.  At that time, it was unclear what to do about the deprecation warnings in numpy/scipy, so #4205 was probably a prerequisite then.  As explained above, it is no longer a prerequisite, but should still be taken care of soon (i.e., before the next update of numpy/scipy).
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-05 18:13:31
+archive/issue_comments_024674.json:
+```json
+{
+    "body": "The patch needs to be rebased - likely due to #799. 3.2.alpha2 should be out shortly, so I would suggest using that.\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha3/devel/sage$ patch -p1 < trac_3498_part_1_numpy-RDF-CDF.patch \npatching file sage/ext/numpy.pxd\npatching file sage/matrix/change_ring.pyx\npatching file sage/matrix/constructor.py\npatching file sage/matrix/matrix_complex_double_dense.pxd\npatching file sage/matrix/matrix_complex_double_dense.pyx\nHunk #3 FAILED at 83.\n1 out of 3 hunks FAILED -- saving rejects to file sage/matrix/matrix_complex_double_dense.pyx.rej\npatching file sage/matrix/matrix_double_dense.pxd\npatching file sage/matrix/matrix_double_dense.pyx\npatching file sage/matrix/matrix_real_double_dense.pxd\npatching file sage/matrix/matrix_real_double_dense.pyx\nHunk #5 FAILED at 81.\n1 out of 5 hunks FAILED -- saving rejects to file sage/matrix/matrix_real_double_dense.pyx.rej\npatching file sage/matrix/solve.pyx\npatching file setup.py\nHunk #2 succeeded at 488 (offset 2 lines).\nHunk #3 succeeded at 601 (offset 2 lines).\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-05T18:13:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3498",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24674",
+    "user": "mabshoff"
+}
+```
 
 The patch needs to be rebased - likely due to #799. 3.2.alpha2 should be out shortly, so I would suggest using that.
 
@@ -653,9 +1115,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-05 18:15:05
+archive/issue_comments_024675.json:
+```json
+{
+    "body": "Oh yeah: While you are at is also please fold all four patches into one and add a proper license statemant to the file sage/ext/numpy.pxd.\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-05T18:15:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3498",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24675",
+    "user": "mabshoff"
+}
+```
 
 Oh yeah: While you are at is also please fold all four patches into one and add a proper license statemant to the file sage/ext/numpy.pxd.
 
@@ -664,32 +1137,78 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by jason created at 2008-11-08 06:43:07
+archive/issue_comments_024676.json:
+```json
+{
+    "body": "ignore all previous files; this reverts the relevant parts of #4439 and then #778, which no longer apply to the affected files since the code has been factored out to matrix_double_dense.pyx.",
+    "created_at": "2008-11-08T06:43:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3498",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24676",
+    "user": "jason"
+}
+```
 
 ignore all previous files; this reverts the relevant parts of #4439 and then #778, which no longer apply to the affected files since the code has been factored out to matrix_double_dense.pyx.
 
 
+
 ---
+
+archive/issue_comments_024677.json:
+```json
+{
+    "body": "Attachment\n\napply on top of revert-trac_4439_778.patch",
+    "created_at": "2008-11-08T06:45:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3498",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24677",
+    "user": "jason"
+}
+```
 
 Attachment
 
 apply on top of revert-trac_4439_778.patch
 
 
+
 ---
 
-Comment by jason created at 2008-11-08 06:47:42
+archive/issue_comments_024678.json:
+```json
+{
+    "body": "Apply revert-trac_4439_778.patch and then numpy-RDF-CDF-final.patch to mabshoff's current (as of right now; this timestamp) 3.1.4rc0 tree.\n\nI think all comments have been addressed (finally! :).",
+    "created_at": "2008-11-08T06:47:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3498",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24678",
+    "user": "jason"
+}
+```
 
 Apply revert-trac_4439_778.patch and then numpy-RDF-CDF-final.patch to mabshoff's current (as of right now; this timestamp) 3.1.4rc0 tree.
 
 I think all comments have been addressed (finally! :).
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-09 18:14:02
+archive/issue_comments_024679.json:
+```json
+{
+    "body": "There are some numerical noise issues to fix:\n\n```\nsage -t -long devel/sage/sage/matrix/matrix_double_dense.pyx\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.rc0/devel/sage/sage/matrix/matrix_double_dense.pyx\", line 887:\n    sage: U*U.transpose()\nExpected:\n    [              1.0 2.13506512817e-16]\n    [2.13506512817e-16               1.0]\nGot:\n    [              1.0 2.66876364757e-16]\n    [2.66876364757e-16               1.0]\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.rc0/devel/sage/sage/matrix/matrix_double_dense.pyx\", line 892:\n    sage: V*V.transpose()\nExpected:\n    [               1.0  2.02230810223e-16 -2.11947972194e-16]\n    [ 2.02230810223e-16                1.0  7.09339271349e-17]\n    [-2.11947972194e-16  7.09339271349e-17                1.0]\nGot:\n    [               1.0  5.94955942151e-17 -1.77117977403e-16]\n    [ 5.94955942151e-17                1.0 -8.87690528723e-17]\n    [-1.77117977403e-16 -8.87690528723e-17                1.0]\n**********************************************************************\n```\n",
+    "created_at": "2008-11-09T18:14:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3498",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24679",
+    "user": "mabshoff"
+}
+```
 
 There are some numerical noise issues to fix:
 
@@ -720,9 +1239,20 @@ Got:
 
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-09 18:20:27
+archive/issue_comments_024680.json:
+```json
+{
+    "body": "Merged revert-trac_4439_778.patch and numpy-RDF-CDF-final.patch in Sage 3.2.rc0.\n\nI will fix the numerical noise in a referee patch.\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-09T18:20:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3498",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24680",
+    "user": "mabshoff"
+}
+```
 
 Merged revert-trac_4439_778.patch and numpy-RDF-CDF-final.patch in Sage 3.2.rc0.
 
@@ -733,8 +1263,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-09 18:20:27
+archive/issue_comments_024681.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-11-09T18:20:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3498",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3498#issuecomment-24681",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

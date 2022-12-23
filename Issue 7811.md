@@ -1,11 +1,21 @@
 # Issue 7811: Worksheet list CSS: Account for special characters in login names
 
-Issue created by migration from https://trac.sagemath.org/ticket/7811
-
-Original creator: mpatel
-
-Original creation time: 2010-01-01 22:47:15
-
+archive/issues_007811.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  robert.marik timdumol was\n\nWe need to account for this difference\n\n```\n$ grep compile twist.py template.py\ntwist.py:re_valid_username = re.compile('[a-z|A-Z|0-9|_|.|@]*')\ntemplate.py:css_illegal_re = re.compile(r'[^-A-Za-z_0-9]')\n```\n\nwhen processing the checkboxes in a worksheet listing.  Otherwise, the Archive, Stop, and Delete buttons will not work for users whose login names contain dots (`.`) or [at signs](http://en.wikipedia.org/wiki/At_sign) (``@``).\n\nThis is a follow-up to #7332.  See [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/9da7dd211fe5570b) for the bug report.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7811\n\n",
+    "created_at": "2010-01-01T22:47:15Z",
+    "labels": [
+        "notebook",
+        "major",
+        "bug"
+    ],
+    "title": "Worksheet list CSS: Account for special characters in login names",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7811",
+    "user": "mpatel"
+}
+```
 Assignee: was
 
 CC:  robert.marik timdumol was
@@ -22,73 +32,191 @@ when processing the checkboxes in a worksheet listing.  Otherwise, the Archive, 
 
 This is a follow-up to #7332.  See [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/9da7dd211fe5570b) for the bug report.
 
+Issue created by migration from https://trac.sagemath.org/ticket/7811
+
+
+
+
 
 ---
 
-Comment by mpatel created at 2010-01-01 23:03:03
+archive/issue_comments_067584.json:
+```json
+{
+    "body": "Escape /, `@`, and . in worksheet list CSS IDs.  sagenb repo.",
+    "created_at": "2010-01-01T23:03:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7811",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7811#issuecomment-67584",
+    "user": "mpatel"
+}
+```
 
 Escape /, `@`, and . in worksheet list CSS IDs.  sagenb repo.
 
 
+
 ---
 
-Comment by mpatel created at 2010-01-01 23:05:52
+archive/issue_comments_067585.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-01-01T23:05:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7811",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7811#issuecomment-67585",
+    "user": "mpatel"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_067586.json:
+```json
+{
+    "body": "Attachment\n\nPlease let me know if I've missed any other characters.",
+    "created_at": "2010-01-01T23:05:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7811",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7811#issuecomment-67586",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
 Please let me know if I've missed any other characters.
 
 
+
 ---
 
-Comment by timdumol created at 2010-01-02 07:12:05
+archive/issue_comments_067587.json:
+```json
+{
+    "body": "Why not use /[^-A-Za-z_0-9]/g ? If the regexp for usernames is updated for all valid emails, then '+' will be allowed for usernames, which is illegal as a CSS id.",
+    "created_at": "2010-01-02T07:12:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7811",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7811#issuecomment-67587",
+    "user": "timdumol"
+}
+```
 
 Why not use /[^-A-Za-z_0-9]/g ? If the regexp for usernames is updated for all valid emails, then '+' will be allowed for usernames, which is illegal as a CSS id.
 
 
+
 ---
 
-Comment by mpatel created at 2010-01-02 08:42:32
+archive/issue_comments_067588.json:
+```json
+{
+    "body": "Excellent point.  I'll update the patch.",
+    "created_at": "2010-01-02T08:42:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7811",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7811#issuecomment-67588",
+    "user": "mpatel"
+}
+```
 
 Excellent point.  I'll update the patch.
 
 
+
 ---
+
+archive/issue_comments_067589.json:
+```json
+{
+    "body": "Attachment\n\nMore general RegExp.  Replaces previous.",
+    "created_at": "2010-01-02T08:55:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7811",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7811#issuecomment-67589",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
 More general RegExp.  Replaces previous.
 
 
+
 ---
 
-Comment by robert.marik created at 2010-01-02 09:59:51
+archive/issue_comments_067590.json:
+```json
+{
+    "body": "Works for me. Is it neceassary to run ./sage -t even when upgrading spkg package?",
+    "created_at": "2010-01-02T09:59:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7811",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7811#issuecomment-67590",
+    "user": "robert.marik"
+}
+```
 
 Works for me. Is it neceassary to run ./sage -t even when upgrading spkg package?
 
 
+
 ---
 
-Comment by mpatel created at 2010-01-02 10:07:12
+archive/issue_comments_067591.json:
+```json
+{
+    "body": "If you mean `sage -b` --- it's necessary only for changes to the main Sage library, under `SAGE_ROOT/devel/sage`, but not if you're just installing a spkg.",
+    "created_at": "2010-01-02T10:07:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7811",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7811#issuecomment-67591",
+    "user": "mpatel"
+}
+```
 
 If you mean `sage -b` --- it's necessary only for changes to the main Sage library, under `SAGE_ROOT/devel/sage`, but not if you're just installing a spkg.
 
 
+
 ---
 
-Comment by timdumol created at 2010-01-02 10:08:58
+archive/issue_comments_067592.json:
+```json
+{
+    "body": "Ideally this should be tested with `sage -t -sagenb` when #7650 comes in, or with a Selenium test (sagenb.testing), specifically in `sagenb.testing.tests.test_accounts`.",
+    "created_at": "2010-01-02T10:08:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7811",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7811#issuecomment-67592",
+    "user": "timdumol"
+}
+```
 
 Ideally this should be tested with `sage -t -sagenb` when #7650 comes in, or with a Selenium test (sagenb.testing), specifically in `sagenb.testing.tests.test_accounts`.
 
 
+
 ---
 
-Comment by robert.marik created at 2010-01-02 11:37:38
+archive/issue_comments_067593.json:
+```json
+{
+    "body": "Replying to [comment:5 mpatel]:\n> If you mean `sage -b` --- it's necessary only for changes to the main Sage library, under `SAGE_ROOT/devel/sage`, but not if you're just installing a spkg.\n\nNo, I meant actually sage -t. I wondered, if I can give positive review without doctesting.",
+    "created_at": "2010-01-02T11:37:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7811",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7811#issuecomment-67593",
+    "user": "robert.marik"
+}
+```
 
 Replying to [comment:5 mpatel]:
 > If you mean `sage -b` --- it's necessary only for changes to the main Sage library, under `SAGE_ROOT/devel/sage`, but not if you're just installing a spkg.
@@ -96,29 +224,73 @@ Replying to [comment:5 mpatel]:
 No, I meant actually sage -t. I wondered, if I can give positive review without doctesting.
 
 
+
 ---
 
-Comment by robert.marik created at 2010-01-03 13:47:13
+archive/issue_comments_067594.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-01-03T13:47:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7811",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7811#issuecomment-67594",
+    "user": "robert.marik"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by robert.marik created at 2010-01-03 13:47:13
+archive/issue_comments_067595.json:
+```json
+{
+    "body": "Wors fine. Tests passed. Doctests are not meaningful for this patch. Positive review.",
+    "created_at": "2010-01-03T13:47:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7811",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7811#issuecomment-67595",
+    "user": "robert.marik"
+}
+```
 
 Wors fine. Tests passed. Doctests are not meaningful for this patch. Positive review.
 
 
+
 ---
 
-Comment by was created at 2010-01-04 06:57:53
+archive/issue_comments_067596.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-04T06:57:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7811",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7811#issuecomment-67596",
+    "user": "was"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by was created at 2010-01-04 06:57:53
+archive/issue_comments_067597.json:
+```json
+{
+    "body": "merged into sagenb-0.4.8",
+    "created_at": "2010-01-04T06:57:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7811",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7811#issuecomment-67597",
+    "user": "was"
+}
+```
 
 merged into sagenb-0.4.8

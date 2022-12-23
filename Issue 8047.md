@@ -1,11 +1,21 @@
 # Issue 8047: Sage 4.3.1 has both lapack-20071123.p0.spkg and lapack-20071123.p1.spkg
 
-Issue created by migration from https://trac.sagemath.org/ticket/8047
-
-Original creator: mvngu
-
-Original creation time: 2010-01-24 00:11:55
-
+archive/issues_008047.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  georgsweber\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/5dd9110f797f81d3):\n\n```\nI just noticed the following. In the Sage-4.3.1 source tarball, there\nare both the packages \"lapack-20071123.p0.spkg\" as well as\n\"lapack-20071123.p1.spkg\". If you build Sage from source, no problem\n(yet), under /spkg/installed/ there will be only the newer \"p1\" spkg.\nBut if you \"sage -bdist ...\" a binary Sage distribution, then, under /\nspkg/standard/, for both the \"p0\" and the \"p1\" spkg, a placeholder\nfile will be created (that shouldn't happen).\n\nWorse, if I take this binary distribution, install Sage (elsewhere)\nfrom that one, and issue \"make test\", then happily the \"p0\" lapack\nspkg will not be found as installed (it isn't, \"p1\" is installed ---\nbut the \"p0\" shouldn't be looked for, which is bad), and then Sage\nbegins to download the \"p0\" one from the web and begins to build it\n(deleting the files from the \"p1\" spkg first, according to the logs).\nThat should not happen at all!\n\nI hardly got accustomed to the fact that \"make test\" in the above\nsituation will, at the beginning, output quite some crap, e.g. about\n\"circular dependencies dropped\", and then rebuild just all of the\ndocumentation files (taking a long time), for nothing --- these were\nalready provided. But trying to download older packages than the ones\nprovided, and installing these older ones over the newer ones is a bit\ntoo ugly for my taste.\n\nDid anyone experience the same problem(s)? We should create some\ntickets, then.\n\nCheers,\nGeorg \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8047\n\n",
+    "created_at": "2010-01-24T00:11:55Z",
+    "labels": [
+        "packages: standard",
+        "critical",
+        "bug"
+    ],
+    "title": "Sage 4.3.1 has both lapack-20071123.p0.spkg and lapack-20071123.p1.spkg",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8047",
+    "user": "mvngu"
+}
+```
 Assignee: tbd
 
 CC:  georgsweber
@@ -45,10 +55,25 @@ Georg
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8047
+
+
+
+
 
 ---
 
-Comment by mvngu created at 2010-01-24 14:03:34
+archive/issue_comments_070338.json:
+```json
+{
+    "body": "Here's a fix from [sage-devel](http://groups.google.com/group/sage-devel/msg/c566520ce6f51bb7):\n\n```\nThis is now ticket #8047 [2]. Like the recent problem with Sage\n4.3.1.alpha0 [3], a fix here is to delete lapack-20071123.p0.spkg from\nSAGE_ROOT/spkg/standard (in the source tarball) and leave\nlapack-20071123.p1.spkg alone.\n\n[1] http://trac.sagemath.org/sage_trac/ticket/7943\n\n[2] http://trac.sagemath.org/sage_trac/ticket/8047\n\n[3] http://groups.google.com/group/sage-devel/msg/08cf0bd4afb3cf01 \n```\n",
+    "created_at": "2010-01-24T14:03:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8047",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8047#issuecomment-70338",
+    "user": "mvngu"
+}
+```
 
 Here's a fix from [sage-devel](http://groups.google.com/group/sage-devel/msg/c566520ce6f51bb7):
 
@@ -67,15 +92,37 @@ lapack-20071123.p1.spkg alone.
 
 
 
+
 ---
 
-Comment by mvngu created at 2010-01-24 14:05:27
+archive/issue_comments_070339.json:
+```json
+{
+    "body": "I deleted lapack-20071123.p0.spkg per the above instructions.",
+    "created_at": "2010-01-24T14:05:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8047",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8047#issuecomment-70339",
+    "user": "mvngu"
+}
+```
 
 I deleted lapack-20071123.p0.spkg per the above instructions.
 
 
+
 ---
 
-Comment by mvngu created at 2010-01-24 14:05:27
+archive/issue_comments_070340.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-24T14:05:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8047",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8047#issuecomment-70340",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 8892: Many doctests fails since the update of NetworkX !
 
-Issue created by migration from https://trac.sagemath.org/ticket/8892
-
-Original creator: ncohen
-
-Original creation time: 2010-05-05 17:44:26
-
+archive/issues_008892.json:
+```json
+{
+    "body": "Assignee: jason, ncohen, rlm\n\nHello everybody !!!\n\nI noticed working on something quite different that many doctests were failing in Sage's graph library because of the recent update of NetworkX... The reason is easy : the default edge label is not \"None\" anymore but {}. Besides, dictionary are not hashable !!!\n\nThis patch fixes it ! \n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/8892\n\n",
+    "created_at": "2010-05-05T17:44:26Z",
+    "labels": [
+        "graph theory",
+        "major",
+        "bug"
+    ],
+    "title": "Many doctests fails since the update of NetworkX !",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8892",
+    "user": "ncohen"
+}
+```
 Assignee: jason, ncohen, rlm
 
 Hello everybody !!!
@@ -16,10 +26,25 @@ This patch fixes it !
 
 Nathann
 
+Issue created by migration from https://trac.sagemath.org/ticket/8892
+
+
+
+
 
 ---
 
-Comment by jason created at 2010-05-05 18:39:12
+archive/issue_comments_081747.json:
+```json
+{
+    "body": "Apparently now, networkx has moved to having a dictionary of edge attributes, rather than a specific \"label\".  See http://networkx.lanl.gov/reference/api_1.0.html#edge-attributes\n\nI'm not saying we should follow the convention, but it does seem to make sense.  Instead of just storing a single value, store a dict of attributes.\n\nWhy is it important that dictionaries are not hashable?",
+    "created_at": "2010-05-05T18:39:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8892",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8892#issuecomment-81747",
+    "user": "jason"
+}
+```
 
 Apparently now, networkx has moved to having a dictionary of edge attributes, rather than a specific "label".  See http://networkx.lanl.gov/reference/api_1.0.html#edge-attributes
 
@@ -28,9 +53,20 @@ I'm not saying we should follow the convention, but it does seem to make sense. 
 Why is it important that dictionaries are not hashable?
 
 
+
 ---
 
-Comment by ncohen created at 2010-05-05 18:48:07
+archive/issue_comments_081748.json:
+```json
+{
+    "body": "Because I sometimes stored them as keys of dictionaries. It means I will need to forget to store the label, and just the endpoints. The other detail is that in many algorithms, the labels are used as a weight, and I you will see very often in Sage's code :\nweight = lambda label : 1 if label is None else label\n\nSo all these occurrences need to be replaces to label == {} in this case... Does that mean we should assume labels are ALWAYS dictionaries ? This would mean trouble... Where would we store numerical values for edges then.. a default field ?\n\nNathann",
+    "created_at": "2010-05-05T18:48:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8892",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8892#issuecomment-81748",
+    "user": "ncohen"
+}
+```
 
 Because I sometimes stored them as keys of dictionaries. It means I will need to forget to store the label, and just the endpoints. The other detail is that in many algorithms, the labels are used as a weight, and I you will see very often in Sage's code :
 weight = lambda label : 1 if label is None else label
@@ -40,18 +76,40 @@ So all these occurrences need to be replaces to label == {} in this case... Does
 Nathann
 
 
+
 ---
 
-Comment by jason created at 2010-05-05 18:58:28
+archive/issue_comments_081749.json:
+```json
+{
+    "body": "A little farther down the networkx page listed, we find http://networkx.lanl.gov/reference/api_1.0.html#converting-your-existing-code-to-networkx-1-0, which says that now all algorithms (in Networkx) look for the \"weight\" edge attribute.\n\nSounds like that would be a huge change for Sage code, though...",
+    "created_at": "2010-05-05T18:58:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8892",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8892#issuecomment-81749",
+    "user": "jason"
+}
+```
 
 A little farther down the networkx page listed, we find http://networkx.lanl.gov/reference/api_1.0.html#converting-your-existing-code-to-networkx-1-0, which says that now all algorithms (in Networkx) look for the "weight" edge attribute.
 
 Sounds like that would be a huge change for Sage code, though...
 
 
+
 ---
 
-Comment by rbeezer created at 2010-05-06 03:22:17
+archive/issue_comments_081750.json:
+```json
+{
+    "body": "Hi Nathann,\n\nThanks for uncovering this one.  Not sure right now I have a good idea about what should be done.\n\nHowever, is there a patch to go on this?  I'm not seeing one.\n\nRob",
+    "created_at": "2010-05-06T03:22:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8892",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8892#issuecomment-81750",
+    "user": "rbeezer"
+}
+```
 
 Hi Nathann,
 
@@ -62,18 +120,40 @@ However, is there a patch to go on this?  I'm not seeing one.
 Rob
 
 
+
 ---
 
-Comment by ncohen created at 2010-05-06 03:25:17
+archive/issue_comments_081751.json:
+```json
+{
+    "body": "Not yet. For the moment, my patch is a nasty one : replaces tests \"is None\" by \"is None or == {}\". I thought it may be better to settle on what we want to do with these labels, but I can upload it otherwise (somewhere on another computer at the moment) :-)\n\nNathann",
+    "created_at": "2010-05-06T03:25:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8892",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8892#issuecomment-81751",
+    "user": "ncohen"
+}
+```
 
 Not yet. For the moment, my patch is a nasty one : replaces tests "is None" by "is None or == {}". I thought it may be better to settle on what we want to do with these labels, but I can upload it otherwise (somewhere on another computer at the moment) :-)
 
 Nathann
 
 
+
 ---
 
-Comment by ncohen created at 2010-05-08 00:53:47
+archive/issue_comments_081752.json:
+```json
+{
+    "body": "Here is a patch that does not make any choice. I replaced the \"is None\" by \"in RR\" :-)\n\nThe failing docstrings come from GraphViz ( at least on my computer ) !\n\nNathann",
+    "created_at": "2010-05-08T00:53:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8892",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8892#issuecomment-81752",
+    "user": "ncohen"
+}
+```
 
 Here is a patch that does not make any choice. I replaced the "is None" by "in RR" :-)
 
@@ -82,16 +162,38 @@ The failing docstrings come from GraphViz ( at least on my computer ) !
 Nathann
 
 
+
 ---
 
-Comment by ncohen created at 2010-05-08 00:53:47
+archive/issue_comments_081753.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-05-08T00:53:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8892",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8892#issuecomment-81753",
+    "user": "ncohen"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by ncohen created at 2010-05-10 17:31:33
+archive/issue_comments_081754.json:
+```json
+{
+    "body": "Now also fixes the edge_coloring function from the graph_coloring module, as reported by Minh in #8781\n\nSorry for that !\n\nNathann",
+    "created_at": "2010-05-10T17:31:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8892",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8892#issuecomment-81754",
+    "user": "ncohen"
+}
+```
 
 Now also fixes the edge_coloring function from the graph_coloring module, as reported by Minh in #8781
 
@@ -100,49 +202,130 @@ Sorry for that !
 Nathann
 
 
+
 ---
+
+archive/issue_comments_081755.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-05-10T17:32:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8892",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8892#issuecomment-81755",
+    "user": "ncohen"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_081756.json:
+```json
+{
+    "body": "Attachment\n\nI'm mostly happy with [trac_8892.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8892/trac_8892.patch). I have attached a reviewer patch that deals with the part I'm not happy with, i.e. fix some typos introduced by the first patch. Apart from myself, anyone is welcome to give a final sign off on this ticket.",
+    "created_at": "2010-05-11T06:53:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8892",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8892#issuecomment-81756",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
 I'm mostly happy with [trac_8892.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8892/trac_8892.patch). I have attached a reviewer patch that deals with the part I'm not happy with, i.e. fix some typos introduced by the first patch. Apart from myself, anyone is welcome to give a final sign off on this ticket.
 
 
+
 ---
 
-Comment by jason created at 2010-05-11 07:15:41
+archive/issue_comments_081757.json:
+```json
+{
+    "body": "I sign off on your changes.  Are you asking someone else to also sign off on the original patch?",
+    "created_at": "2010-05-11T07:15:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8892",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8892#issuecomment-81757",
+    "user": "jason"
+}
+```
 
 I sign off on your changes.  Are you asking someone else to also sign off on the original patch?
 
 
+
 ---
 
-Comment by jason created at 2010-05-11 07:15:41
+archive/issue_comments_081758.json:
+```json
+{
+    "body": "Changing assignee from jason, ncohen, rlm to jason.",
+    "created_at": "2010-05-11T07:15:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8892",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8892#issuecomment-81758",
+    "user": "jason"
+}
+```
 
 Changing assignee from jason, ncohen, rlm to jason.
 
 
+
 ---
 
-Comment by jason created at 2010-05-11 07:15:58
+archive/issue_comments_081759.json:
+```json
+{
+    "body": "Changing assignee from jason to ncohen.",
+    "created_at": "2010-05-11T07:15:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8892",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8892#issuecomment-81759",
+    "user": "jason"
+}
+```
 
 Changing assignee from jason to ncohen.
 
 
+
 ---
 
-Comment by jason created at 2010-05-11 07:16:56
+archive/issue_comments_081760.json:
+```json
+{
+    "body": "(I didn't apply your changes, but it is clear that they are cosmetic things.)",
+    "created_at": "2010-05-11T07:16:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8892",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8892#issuecomment-81760",
+    "user": "jason"
+}
+```
 
 (I didn't apply your changes, but it is clear that they are cosmetic things.)
 
 
+
 ---
 
-Comment by mvngu created at 2010-05-11 08:05:57
+archive/issue_comments_081761.json:
+```json
+{
+    "body": "Replying to [comment:9 jason]:\n> Are you asking someone else to also sign off on the original patch?\n\nNot really. I'm OK with ncohen's patch.",
+    "created_at": "2010-05-11T08:05:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8892",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8892#issuecomment-81761",
+    "user": "mvngu"
+}
+```
 
 Replying to [comment:9 jason]:
 > Are you asking someone else to also sign off on the original patch?
@@ -150,15 +333,37 @@ Replying to [comment:9 jason]:
 Not really. I'm OK with ncohen's patch.
 
 
+
 ---
 
-Comment by mvngu created at 2010-05-11 08:05:57
+archive/issue_comments_081762.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-05-11T08:05:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8892",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8892#issuecomment-81762",
+    "user": "mvngu"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mvngu created at 2010-05-12 22:48:50
+archive/issue_comments_081763.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-05-12T22:48:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8892",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8892#issuecomment-81763",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

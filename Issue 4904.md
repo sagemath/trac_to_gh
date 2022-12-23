@@ -1,24 +1,62 @@
 # Issue 4904: convert sage.categories.* docstrings to Sphinx
 
-Issue created by migration from https://trac.sagemath.org/ticket/4904
-
-Original creator: mhansen
-
-Original creation time: 2009-01-01 22:46:45
-
+archive/issues_004904.json:
+```json
+{
+    "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4904\n\n",
+    "created_at": "2009-01-01T22:46:45Z",
+    "labels": [
+        "documentation",
+        "major",
+        "bug"
+    ],
+    "title": "convert sage.categories.* docstrings to Sphinx",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4904",
+    "user": "mhansen"
+}
+```
 Assignee: tba
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4904
+
+
+
+
 
 ---
+
+archive/issue_comments_037206.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-01-02T02:28:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4904",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4904#issuecomment-37206",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2009-01-03 04:51:40
+archive/issue_comments_037207.json:
+```json
+{
+    "body": "This is not your fault at all, but I just noticed this dubious line in a docstring for morphism.pyx:\n\n```\n134\t \t        function -- a Python function that takes elements of the domain as input \n135\t \t                    and returns elements of the domain. \n```\n\n\nI think the last \"domain\" should be \"codomain\".",
+    "created_at": "2009-01-03T04:51:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4904",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4904#issuecomment-37207",
+    "user": "was"
+}
+```
 
 This is not your fault at all, but I just noticed this dubious line in a docstring for morphism.pyx:
 
@@ -31,21 +69,56 @@ This is not your fault at all, but I just noticed this dubious line in a docstri
 I think the last "domain" should be "codomain".
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-01-07 22:09:01
+archive/issue_comments_037208.json:
+```json
+{
+    "body": "Everything looks good here.",
+    "created_at": "2009-01-07T22:09:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4904",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4904#issuecomment-37208",
+    "user": "jhpalmieri"
+}
+```
 
 Everything looks good here.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-24 18:43:20
+archive/issue_comments_037209.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-02-24T18:43:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4904",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4904#issuecomment-37209",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
+
+archive/issue_comments_037210.json:
+```json
+{
+    "body": "Attachment\n\nMerged in Sage 3.4.alpha0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-24T18:43:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4904",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4904#issuecomment-37210",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 

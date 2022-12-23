@@ -1,11 +1,21 @@
 # Issue 4553: [with patch, needs review] a few new methods for FiniteFieldElement
 
-Issue created by migration from https://trac.sagemath.org/ticket/4553
-
-Original creator: jhpalmieri
-
-Original creation time: 2008-11-19 18:05:02
-
+archive/issues_004553.json:
+```json
+{
+    "body": "Assignee: somebody\n\nKeywords: finite field element\n\nThe attached patch adds a few methods for finite field elements.  It seems as though `.additive_order()` (and therefore `.order()`) was not implemented before (!), so I've implemented that.  I've also implemented pth powers and pth roots, where p is the characteristic of the field.\n\nThese are written pretty naively, so they may not be that fast. If anyone has suggestions for improvements, I'm happy to hear them (or to have you implement them).\n\nIssue created by migration from https://trac.sagemath.org/ticket/4553\n\n",
+    "created_at": "2008-11-19T18:05:02Z",
+    "labels": [
+        "algebra",
+        "major",
+        "enhancement"
+    ],
+    "title": "[with patch, needs review] a few new methods for FiniteFieldElement",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4553",
+    "user": "jhpalmieri"
+}
+```
 Assignee: somebody
 
 Keywords: finite field element
@@ -14,15 +24,43 @@ The attached patch adds a few methods for finite field elements.  It seems as th
 
 These are written pretty naively, so they may not be that fast. If anyone has suggestions for improvements, I'm happy to hear them (or to have you implement them).
 
+Issue created by migration from https://trac.sagemath.org/ticket/4553
+
+
+
+
 
 ---
+
+archive/issue_comments_034128.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-11-19T18:05:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4553",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4553#issuecomment-34128",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by cremona created at 2008-11-22 17:33:44
+archive/issue_comments_034129.json:
+```json
+{
+    "body": "That's funny -- in 3.2 I get\n\n```\nsage: a = GF(13^5,'a').gen()\nsage: a.order()\n13\n```\n\nwhere the function order() is implemented just as in your patch.  But additive_order is not implemented.\n\nI definitely think that this functionality should go in.  But surely a.frobenius() should give `a^q` where q = a.parent().order() and not `a^p` where p = a.parent().characteristic()?  Secondly, you can use a.parent().degree(), there is no need to factor q to get the degree.\n\nLastly, I think it would be more efficient to compute (and cache) the matrix of frobenius as a linear map, viewing F_q as an F_p-vector space of dimension d where `q=p^d`.  I know an efficient way to do this (similar to tricks used in Berlekamp factorization).  Then taking q'th roots would be easy (invert the matrix).\n\nI'm not sure when I'll have time to try doing this!",
+    "created_at": "2008-11-22T17:33:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4553",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4553#issuecomment-34129",
+    "user": "cremona"
+}
+```
 
 That's funny -- in 3.2 I get
 
@@ -41,9 +79,20 @@ Lastly, I think it would be more efficient to compute (and cache) the matrix of 
 I'm not sure when I'll have time to try doing this!
 
 
+
 ---
 
-Comment by jhpalmieri created at 2008-11-24 03:25:07
+archive/issue_comments_034130.json:
+```json
+{
+    "body": "Replying to [comment:2 cremona]:\n> That's funny -- in 3.2 I get\n\n```\nsage: a = GF(13^5,'a').gen()\nsage: a.order()\n13\n```\n\n> where the function order() is implemented just as in your patch.  But additive_order is not implemented.\n\nI'm not sure why I was thinking that order() wasn't implemented.  Anyway, in sage/structure/element.pyx, it says something like \"don't override order, override additive_order instead\" -- this is for instances of the class ModuleElement, from which FiniteFieldElement inherits.  So I'll produce a new patch that removes order() from finite_field_element.py and has  the definition of additive_order() in element.pyx.\n\n>  I definitely think that this functionality should go in.  But surely\n>  a.frobenius() should give `a^q` where q = a.parent().order() and not\n>  `a^p` where p = a.parent().characteristic()?  \n\nBut then the Frobenius map would always be the identity! Also, for what it's worth, both wikipedia and mathworld describe the Frobenius as being the `p`th power map, not the `p^k`th power map.\n\n>Secondly, you can use\n>  a.parent().degree(), there is no need to factor q to get the degree.\n\nGood point. I was looking for this sort of thing and hadn't found it. Thanks.\n\n>  Lastly, I think it would be more efficient to compute (and cache) the\n>  matrix of frobenius as a linear map, viewing F_q as an F_p-vector space of\n>  dimension d where `q=p^d`.  I know an efficient way to do this\n>  (similar to tricks used in Berlekamp factorization).  Then taking q'th\n>  roots would be easy (invert the matrix).\n>\n>  I'm not sure when I'll have time to try doing this!\n\nIs it worth accepting a patch without this efficiency change, and then adding this in later (as a separate ticket)?",
+    "created_at": "2008-11-24T03:25:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4553",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4553#issuecomment-34130",
+    "user": "jhpalmieri"
+}
+```
 
 Replying to [comment:2 cremona]:
 > That's funny -- in 3.2 I get
@@ -80,14 +129,38 @@ Good point. I was looking for this sort of thing and hadn't found it. Thanks.
 Is it worth accepting a patch without this efficiency change, and then adding this in later (as a separate ticket)?
 
 
+
 ---
 
-Comment by jhpalmieri created at 2008-11-24 03:25:50
+archive/issue_comments_034131.json:
+```json
+{
+    "body": "this replaces the other patch",
+    "created_at": "2008-11-24T03:25:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4553",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4553#issuecomment-34131",
+    "user": "jhpalmieri"
+}
+```
 
 this replaces the other patch
 
 
+
 ---
+
+archive/issue_comments_034132.json:
+```json
+{
+    "body": "Attachment\n\nSorry about my silly comment about q'th power against p'th power, I was not thinking.\n\nThe linear algebra approach will have to wait until we have a common interface for all finite fields -- currently the functions available depend on q since they differ according to whether we use givaro or NTL or pari.  (e.g. an element a in GF(q) sometimes has a._coordinates() but not always.  So it's fine to go ahead with this one for now, perhaps with a note that a better implementation might be possible in future.\n\nI hope to review this properly, but Monday morning calls...",
+    "created_at": "2008-11-24T08:58:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4553",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4553#issuecomment-34132",
+    "user": "cremona"
+}
+```
 
 Attachment
 
@@ -98,9 +171,20 @@ The linear algebra approach will have to wait until we have a common interface f
 I hope to review this properly, but Monday morning calls...
 
 
+
 ---
 
-Comment by cremona created at 2008-11-25 12:52:12
+archive/issue_comments_034133.json:
+```json
+{
+    "body": "The new patch looks good, applies cleanly to 3.2 and the doctests in both the changed files pass.\n\nAll tests in sage/structure and sage/rings pass.\n\nI say: go for it!",
+    "created_at": "2008-11-25T12:52:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4553",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4553#issuecomment-34133",
+    "user": "cremona"
+}
+```
 
 The new patch looks good, applies cleanly to 3.2 and the doctests in both the changed files pass.
 
@@ -109,9 +193,20 @@ All tests in sage/structure and sage/rings pass.
 I say: go for it!
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-25 13:14:03
+archive/issue_comments_034134.json:
+```json
+{
+    "body": "Hmm, should we deprecate \"order\" in sage/rings/finite_field_element.py ?\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-25T13:14:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4553",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4553#issuecomment-34134",
+    "user": "mabshoff"
+}
+```
 
 Hmm, should we deprecate "order" in sage/rings/finite_field_element.py ?
 
@@ -120,15 +215,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-25 13:41:46
+archive/issue_comments_034135.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-11-25T13:41:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4553",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4553#issuecomment-34135",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-25 13:41:46
+archive/issue_comments_034136.json:
+```json
+{
+    "body": "Merged finitefieldelement_new.patch in Sage 3.2.1.alpha1",
+    "created_at": "2008-11-25T13:41:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4553",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4553#issuecomment-34136",
+    "user": "mabshoff"
+}
+```
 
 Merged finitefieldelement_new.patch in Sage 3.2.1.alpha1

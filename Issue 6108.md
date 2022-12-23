@@ -1,23 +1,61 @@
 # Issue 6108: sage -tp skips all.py!!
 
-Issue created by migration from https://trac.sagemath.org/ticket/6108
-
-Original creator: was
-
-Original creation time: 2009-05-21 05:57:59
-
+archive/issues_006108.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6108\n\n",
+    "created_at": "2009-05-21T05:57:59Z",
+    "labels": [
+        "doctest coverage",
+        "major",
+        "bug"
+    ],
+    "title": "sage -tp skips all.py!!",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6108",
+    "user": "was"
+}
+```
 Assignee: mabshoff
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6108
+
+
+
+
 
 ---
+
+archive/issue_comments_048800.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-05-21T18:05:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6108",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6108#issuecomment-48800",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by ncalexan created at 2009-06-13 22:56:33
+archive/issue_comments_048801.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-06-13T22:56:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6108",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6108#issuecomment-48801",
+    "user": "ncalexan"
+}
+```
 
 Resolution: fixed

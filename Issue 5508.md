@@ -1,11 +1,21 @@
 # Issue 5508: [with patch, needs review] Improvements for relative number fields
 
-Issue created by migration from https://trac.sagemath.org/ticket/5508
-
-Original creator: fwclarke
-
-Original creation time: 2009-03-13 11:55:25
-
+archive/issues_005508.json:
+```json
+{
+    "body": "Assignee: was\n\nThe attached patch implements many improvements for relative number fields.  \nIn particular a whole load of previously unimplemented functions for ideals in a relative number field now work, and others work better.\n\nFollowing discussion at\n[sage-nt thread](http://groups.google.co.uk/group/sage-nt/browse_thread/thread/16106258cd436515?hl=en-GB),\nfor several functions the distinction between the relative and absolute \nversion has been made explicit, in order to  avoid ambiguity.  \nThus, for example, for a relative number \nfield both relative_degree and absolute_degree are defined but degree is \nunimplemented, while for an absolute number field relative_degree, \nabsolute_degree and degree are *all* defined (with the same meaning).  \nThis has entailed a few minor changes to enable \nfunctions to work with either absolute or relative number fields.\n\nIt has been suggested that `NumberField` should only be allowed to generate \nan absolute number field.  I have not implemented this, but I have made `NumberFieldTower` publicly available and used it in several \ndoctests.  If a change was made to `NumberField`, `NumberFieldTower` could \nretain the old functionality of `NumberField`.\n\nA number of other minor changes have been made, and these seem to fix\n#5276, #5214 and #2551\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5508\n\n",
+    "created_at": "2009-03-13T11:55:25Z",
+    "labels": [
+        "number theory",
+        "major",
+        "enhancement"
+    ],
+    "title": "[with patch, needs review] Improvements for relative number fields",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5508",
+    "user": "fwclarke"
+}
+```
 Assignee: was
 
 The attached patch implements many improvements for relative number fields.  
@@ -18,7 +28,7 @@ version has been made explicit, in order to  avoid ambiguity.
 Thus, for example, for a relative number 
 field both relative_degree and absolute_degree are defined but degree is 
 unimplemented, while for an absolute number field relative_degree, 
-absolute_degree and degree are _all_ defined (with the same meaning).  
+absolute_degree and degree are *all* defined (with the same meaning).  
 This has entailed a few minor changes to enable 
 functions to work with either absolute or relative number fields.
 
@@ -32,8 +42,25 @@ A number of other minor changes have been made, and these seem to fix
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5508
+
+
+
+
 
 ---
+
+archive/issue_comments_042767.json:
+```json
+{
+    "body": "Attachment\n\nReview:  I read through the patch and was impressed by the thoroughness and attention to detail!  I don't know all the formulas for relative different (etc) off the top of my head, but what is tere looks reasonable.\n\nThe patch applies cleanly to 3.4.\n\nDoctesting sage/rings/number_field, the only problem was this:\n\n```\nsage -t  \"local/sage-3.4/devel/sage-5508/sage/rings/number_field//order.py\"\n**********************************************************************\nFile \"/home/masgaj/local/sage-3.4/devel/sage-5508/sage/rings/number_field/order.py\", line 1196:\n    sage: OK(a)\nExpected nothing\nGot:\n    a\n**********************************************************************\nFile \"/home/masgaj/local/sage-3.4/devel/sage-5508/sage/rings/number_field/order.py\", line 1197:\n    sage: a\nExpected nothing\nGot:\n    a\n```\n\nwhich is just a matter of deleting a rogue \"sage: \" prompt in front of one line of output.\n\nFix that and this will ready to go.  (I hope it merges ok with my units code at #5513!)",
+    "created_at": "2009-03-16T17:25:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5508",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5508#issuecomment-42767",
+    "user": "cremona"
+}
+```
 
 Attachment
 
@@ -64,55 +91,134 @@ which is just a matter of deleting a rogue "sage: " prompt in front of one line 
 Fix that and this will ready to go.  (I hope it merges ok with my units code at #5513!)
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-03-17 10:07:48
+archive/issue_comments_042768.json:
+```json
+{
+    "body": "This also seems to fix #4193.",
+    "created_at": "2009-03-17T10:07:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5508",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5508#issuecomment-42768",
+    "user": "davidloeffler"
+}
+```
 
 This also seems to fix #4193.
 
 
+
 ---
+
+archive/issue_comments_042769.json:
+```json
+{
+    "body": "Attachment\n\nreplaces previous",
+    "created_at": "2009-03-17T10:34:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5508",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5508#issuecomment-42769",
+    "user": "cremona"
+}
+```
 
 Attachment
 
 replaces previous
 
 
+
 ---
 
-Comment by cremona created at 2009-03-17 10:35:36
+archive/issue_comments_042770.json:
+```json
+{
+    "body": "I can confirm that #4193, #5276, #5214 and #2551 can all be closed as fixed once this one is merged.\n\nI have attached a patch whic his identical to the original except that it ocrrects one typo which means that all doctests in sage/rings/number_fields  pass, and hence this one gets a (very!) positive review.",
+    "created_at": "2009-03-17T10:35:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5508",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5508#issuecomment-42770",
+    "user": "cremona"
+}
+```
 
 I can confirm that #4193, #5276, #5214 and #2551 can all be closed as fixed once this one is merged.
 
 I have attached a patch whic his identical to the original except that it ocrrects one typo which means that all doctests in sage/rings/number_fields  pass, and hence this one gets a (very!) positive review.
 
 
+
 ---
 
-Comment by fwclarke created at 2009-03-18 20:56:26
+archive/issue_comments_042771.json:
+```json
+{
+    "body": "The patch doesn't actually merge well with the #5513 patches.  Moreover, after some intensive testing, I have found a whole lot more minor changes needed to give relative number fields most of the functionality of their absolute versions.  So my intention is to incorporate these a new patch which will merge ok.",
+    "created_at": "2009-03-18T20:56:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5508",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5508#issuecomment-42771",
+    "user": "fwclarke"
+}
+```
 
 The patch doesn't actually merge well with the #5513 patches.  Moreover, after some intensive testing, I have found a whole lot more minor changes needed to give relative number fields most of the functionality of their absolute versions.  So my intention is to incorporate these a new patch which will merge ok.
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-03-19 08:36:35
+archive/issue_comments_042772.json:
+```json
+{
+    "body": "Hmmm -- would you mind leaving this one as it is, since it's already been given a positive review, and making a new ticket for the follow-up patch, which can then be reviewed separately? I spent the best part of a day's work rebasing my patch at #5159 so it would apply happily on top of sage-5508.2.patch! \n\n(One wouldn't normally try and make improvements to a journal paper after it's been accepted for publication; one writes follow-up papers.)",
+    "created_at": "2009-03-19T08:36:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5508",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5508#issuecomment-42772",
+    "user": "davidloeffler"
+}
+```
 
 Hmmm -- would you mind leaving this one as it is, since it's already been given a positive review, and making a new ticket for the follow-up patch, which can then be reviewed separately? I spent the best part of a day's work rebasing my patch at #5159 so it would apply happily on top of sage-5508.2.patch! 
 
 (One wouldn't normally try and make improvements to a journal paper after it's been accepted for publication; one writes follow-up papers.)
 
 
+
 ---
 
-Comment by fwclarke created at 2009-03-19 09:09:14
+archive/issue_comments_042773.json:
+```json
+{
+    "body": "Yes, fine, let's leave it as it is.  I'll do the new changes separately, but not for a few days.",
+    "created_at": "2009-03-19T09:09:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5508",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5508#issuecomment-42773",
+    "user": "fwclarke"
+}
+```
 
 Yes, fine, let's leave it as it is.  I'll do the new changes separately, but not for a few days.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-03-23 20:06:20
+archive/issue_comments_042774.json:
+```json
+{
+    "body": "Does this patch depend on any other patch set? I am seeing the following doctest failure:\n\n```\nsage-3.4.1.alpha0$ ./sage -t -long devel/sage/sage/rings/number_field/number_field_ideal_rel.py\nsage -t -long \"devel/sage/sage/rings/number_field/number_field_ideal_rel.py\"\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.alpha0/devel/sage/sage/rings/number_field/number_field_ideal_rel.py\", line 598:\n    sage: z = I.element_1_mod(J); z\nExpected:\n    -21/2*b*a - 21/2\nGot:\n    -8*b*a + 24\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2009-03-23T20:06:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5508",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5508#issuecomment-42774",
+    "user": "mabshoff"
+}
+```
 
 Does this patch depend on any other patch set? I am seeing the following doctest failure:
 
@@ -134,16 +240,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by fwclarke created at 2009-03-23 22:48:58
+archive/issue_comments_042775.json:
+```json
+{
+    "body": "When I built it on top of 3.4 I got `-21/2*b*a - 21/2`, so I think something else must be the cause.  Of course `-8*b*a + 24` is also an acceptable answer.",
+    "created_at": "2009-03-23T22:48:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5508",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5508#issuecomment-42775",
+    "user": "fwclarke"
+}
+```
 
 When I built it on top of 3.4 I got `-21/2*b*a - 21/2`, so I think something else must be the cause.  Of course `-8*b*a + 24` is also an acceptable answer.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-03-24 22:58:44
+archive/issue_comments_042776.json:
+```json
+{
+    "body": "Replying to [comment:9 fwclarke]:\n> When I built it on top of 3.4 I got `-21/2*b*a - 21/2`, so I think something else must be the cause.  Of course `-8*b*a + 24` is also an acceptable answer.\n\nOk. Can you change the doctest since some other patches depend on this patch?\n\nCheers,\n\nMichael",
+    "created_at": "2009-03-24T22:58:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5508",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5508#issuecomment-42776",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:9 fwclarke]:
 > When I built it on top of 3.4 I got `-21/2*b*a - 21/2`, so I think something else must be the cause.  Of course `-8*b*a + 24` is also an acceptable answer.
@@ -155,9 +283,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by fwclarke created at 2009-03-25 08:40:55
+archive/issue_comments_042777.json:
+```json
+{
+    "body": "Replying to [comment:10 mabshoff]:\n\n> Ok. Can you change the doctest since some other patches depend on this patch?\n\nThe new `sage-5508.3.patch` has the revised doctest, but is otherwise the same as `sage-5508.2.patch`\n\nHope this solves the problem.\n\nFrancis",
+    "created_at": "2009-03-25T08:40:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5508",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5508#issuecomment-42777",
+    "user": "fwclarke"
+}
+```
 
 Replying to [comment:10 mabshoff]:
 
@@ -170,16 +309,40 @@ Hope this solves the problem.
 Francis
 
 
+
 ---
+
+archive/issue_comments_042778.json:
+```json
+{
+    "body": "Attachment\n\nReplaces previous",
+    "created_at": "2009-03-25T08:41:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5508",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5508#issuecomment-42778",
+    "user": "fwclarke"
+}
+```
 
 Attachment
 
 Replaces previous
 
 
+
 ---
 
-Comment by mabshoff created at 2009-03-25 08:42:47
+archive/issue_comments_042779.json:
+```json
+{
+    "body": "Ok, back to positive review then :)\n\nCheers,\n\nMichael",
+    "created_at": "2009-03-25T08:42:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5508",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5508#issuecomment-42779",
+    "user": "mabshoff"
+}
+```
 
 Ok, back to positive review then :)
 
@@ -188,16 +351,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-03-25 08:52:56
+archive/issue_comments_042780.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-03-25T08:52:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5508",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5508#issuecomment-42780",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-03-25 08:52:56
+archive/issue_comments_042781.json:
+```json
+{
+    "body": "Merged sage-5508.3.patch  in Sage 3.4.1.alpha0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-03-25T08:52:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5508",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5508#issuecomment-42781",
+    "user": "mabshoff"
+}
+```
 
 Merged sage-5508.3.patch  in Sage 3.4.1.alpha0.
 

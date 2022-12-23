@@ -1,39 +1,99 @@
 # Issue 4157: add introduction to README.txt
 
-Issue created by migration from https://trac.sagemath.org/ticket/4157
-
-Original creator: schilly
-
-Original creation time: 2008-09-20 10:41:29
-
+archive/issues_004157.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nThe SAGE_ROOT/README.txt should make clear that you don't have to do anything if you have the binary package. Include some introduction about that and then the build instructions for the source.\n\nThere are cases where users download the binary package, but do a make and end with a broken sage...\n\nIssue created by migration from https://trac.sagemath.org/ticket/4157\n\n",
+    "created_at": "2008-09-20T10:41:29Z",
+    "labels": [
+        "build",
+        "minor",
+        "enhancement"
+    ],
+    "title": "add introduction to README.txt",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4157",
+    "user": "schilly"
+}
+```
 Assignee: mabshoff
 
 The SAGE_ROOT/README.txt should make clear that you don't have to do anything if you have the binary package. Include some introduction about that and then the build instructions for the source.
 
 There are cases where users download the binary package, but do a make and end with a broken sage...
 
+Issue created by migration from https://trac.sagemath.org/ticket/4157
+
+
+
+
 
 ---
+
+archive/issue_comments_030182.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-09-28T02:06:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4157",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4157#issuecomment-30182",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2008-09-28 19:15:08
+archive/issue_comments_030183.json:
+```json
+{
+    "body": "Looks good to me.",
+    "created_at": "2008-09-28T19:15:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4157",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4157#issuecomment-30183",
+    "user": "mhansen"
+}
+```
 
 Looks good to me.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-28 19:19:29
+archive/issue_comments_030184.json:
+```json
+{
+    "body": "Merged in Sage 3.1.3.alpha2",
+    "created_at": "2008-09-28T19:19:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4157",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4157#issuecomment-30184",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.1.3.alpha2
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-28 19:19:29
+archive/issue_comments_030185.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-09-28T19:19:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4157",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4157#issuecomment-30185",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

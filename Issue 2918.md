@@ -1,34 +1,81 @@
 # Issue 2918: make scipy use umfpack
 
-Issue created by migration from https://trac.sagemath.org/ticket/2918
-
-Original creator: jkantor
-
-Original creation time: 2008-04-14 17:01:52
-
+archive/issues_002918.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nScipy can optionally use umfpack for sparse solvers. We currently build umfpack as part of cvxopt. \nWe don't make scipy use umfpack because the wrappers use swig. We need to autogenerate the swig wrappers so scipy can build against them without swig. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2918\n\n",
+    "created_at": "2008-04-14T17:01:52Z",
+    "labels": [
+        "Cygwin",
+        "major",
+        "bug"
+    ],
+    "title": "make scipy use umfpack",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2918",
+    "user": "jkantor"
+}
+```
 Assignee: mabshoff
 
 Scipy can optionally use umfpack for sparse solvers. We currently build umfpack as part of cvxopt. 
 We don't make scipy use umfpack because the wrappers use swig. We need to autogenerate the swig wrappers so scipy can build against them without swig. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2918
+
+
+
+
 
 ---
 
-Comment by jkantor created at 2008-04-14 17:02:19
+archive/issue_comments_020096.json:
+```json
+{
+    "body": "Changing component from Cygwin to numerical.",
+    "created_at": "2008-04-14T17:02:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2918",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2918#issuecomment-20096",
+    "user": "jkantor"
+}
+```
 
 Changing component from Cygwin to numerical.
 
 
+
 ---
 
-Comment by jkantor created at 2008-04-14 17:02:19
+archive/issue_comments_020097.json:
+```json
+{
+    "body": "Changing assignee from mabshoff to jkantor.",
+    "created_at": "2008-04-14T17:02:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2918",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2918#issuecomment-20097",
+    "user": "jkantor"
+}
+```
 
 Changing assignee from mabshoff to jkantor.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-02 02:03:53
+archive/issue_comments_020098.json:
+```json
+{
+    "body": "SciPy 0.7 is deprecating Umfpack support and moving it to a SciKit. It might be better to have an umfpack.spkg that also contains that new SciKit.\n\nCheers,\n\nMichael",
+    "created_at": "2008-12-02T02:03:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2918",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2918#issuecomment-20098",
+    "user": "mabshoff"
+}
+```
 
 SciPy 0.7 is deprecating Umfpack support and moving it to a SciKit. It might be better to have an umfpack.spkg that also contains that new SciKit.
 
@@ -37,9 +84,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-12 08:58:48
+archive/issue_comments_020099.json:
+```json
+{
+    "body": "Since scipy 0.7 is now out I am not sure what to do about this? Make it invalid? Change the ticket so that we install an optional umfpack-scikit.spkg? \n\nNote that cvxopt already compiles umfpack for intenal use, so we might be able to reuse it.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-12T08:58:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2918",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2918#issuecomment-20099",
+    "user": "mabshoff"
+}
+```
 
 Since scipy 0.7 is now out I am not sure what to do about this? Make it invalid? Change the ticket so that we install an optional umfpack-scikit.spkg? 
 
@@ -50,8 +108,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by jason created at 2010-03-17 05:09:43
+archive/issue_comments_020100.json:
+```json
+{
+    "body": "Changing type from defect to enhancement.",
+    "created_at": "2010-03-17T05:09:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2918",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2918#issuecomment-20100",
+    "user": "jason"
+}
+```
 
 Changing type from defect to enhancement.

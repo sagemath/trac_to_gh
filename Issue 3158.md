@@ -1,11 +1,21 @@
 # Issue 3158: singular-3-0-4-2-20080405.p1 requires flex
 
-Issue created by migration from https://trac.sagemath.org/ticket/3158
-
-Original creator: mabshoff
-
-Original creation time: 2008-05-11 12:35:49
-
+archive/issues_003158.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nsingular-3-0-4-2-20080405.p1 requires flex to build. This is because libparse.l has the same time stamp as libparse.cc:\n\n```\n[mabshoff@eno Singular]$ ls -al libparse.*\n-rw-r----- 1 mabshoff sage 109970 2008-03-19 13:44 libparse.cc\n-rw-r----- 1 mabshoff sage   1524 2008-03-25 11:04 libparse.h\n-rw-r----- 1 mabshoff sage  31422 2008-03-19 13:44 libparse.l\n-rw-r----- 1 mabshoff sage     52 1998-04-20 06:05 libparse.sed\n```\n\nThe fix is to touch libparse.cc so that the time stamp is older. I did that in the spkg linked at #2983.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3158\n\n",
+    "created_at": "2008-05-11T12:35:49Z",
+    "labels": [
+        "build",
+        "major",
+        "bug"
+    ],
+    "title": "singular-3-0-4-2-20080405.p1 requires flex",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3158",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 singular-3-0-4-2-20080405.p1 requires flex to build. This is because libparse.l has the same time stamp as libparse.cc:
@@ -24,30 +34,78 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/3158
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-05-11 12:36:03
+archive/issue_comments_021908.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-05-11T12:36:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3158",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3158#issuecomment-21908",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by broune created at 2008-05-11 13:12:41
+archive/issue_comments_021909.json:
+```json
+{
+    "body": "The spkg is functional (see review at #2983) and the issue is now resolved for the person who reported it. Positive review.",
+    "created_at": "2008-05-11T13:12:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3158",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3158#issuecomment-21909",
+    "user": "broune"
+}
+```
 
 The spkg is functional (see review at #2983) and the issue is now resolved for the person who reported it. Positive review.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-11 13:13:35
+archive/issue_comments_021910.json:
+```json
+{
+    "body": "Merged in Sage 3.0.2.alpha0",
+    "created_at": "2008-05-11T13:13:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3158",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3158#issuecomment-21910",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.2.alpha0
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-11 13:13:35
+archive/issue_comments_021911.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-05-11T13:13:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3158",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3158#issuecomment-21911",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

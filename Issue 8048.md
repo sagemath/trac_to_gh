@@ -1,11 +1,21 @@
 # Issue 8048: command to gather build report on a platform/hardware combination
 
-Issue created by migration from https://trac.sagemath.org/ticket/8048
-
-Original creator: mvngu
-
-Original creation time: 2010-01-24 02:16:43
-
+archive/issues_008048.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  saliola jasonbhill\n\nFrom [sage-release](http://groups.google.com/group/sage-release/msg/cf028395e198f4cf):\n\n```\n>> I'm not saying that this wiki page is not a useful resource, but I don't\n>> have the time or patience to go through this at each release.\n\n> I'm too am frustrated by the wiki at times. Sometimes it won't allow\n> me to save edits containing some strings, because it deemed those\n> strings to be a sign of spam content or something. I would then spend\n> minutes figuring out how to get the wiki to accept the edits or\n> rewrite my edits.\n\n> Anyway, if you want, you could send information according to the\n> template below to sage-release and I'd update the wiki with the\n> information you supply.\n\n> OS version:\n> Machine name:\n> Architecture:\n> 32/64 bit:\n> RAM:\n> Compiler:\n> Build:\n> Doctest:\n\nMaybe you should add a command to sage, e.g.,\n\n  sage: _build_report()\n\nor\n\n  sage -buildreport\n\nthat runs a script, gathers relevant information, then submits it\nsomewhere.  The resulting submission could then be summarized on a web\npage.   This is a perfect example of where it would be far, far better\nto spend time writing some code than doing something manually.\n\nWilliam\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8048\n\n",
+    "created_at": "2010-01-24T02:16:43Z",
+    "labels": [
+        "misc",
+        "major",
+        "enhancement"
+    ],
+    "title": "command to gather build report on a platform/hardware combination",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8048",
+    "user": "mvngu"
+}
+```
 Assignee: tbd
 
 CC:  saliola jasonbhill
@@ -52,24 +62,63 @@ William
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8048
+
+
+
+
 
 ---
+
+archive/issue_comments_070341.json:
+```json
+{
+    "body": "Attachment\n\nhalf-baked solution; based on Sage 4.3.2.rc0; don't use",
+    "created_at": "2010-03-02T02:26:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8048",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8048#issuecomment-70341",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
 half-baked solution; based on Sage 4.3.2.rc0; don't use
 
 
+
 ---
 
-Comment by mvngu created at 2010-03-02 02:28:07
+archive/issue_comments_070342.json:
+```json
+{
+    "body": "I have attached a half-baked patch, which is not ready for review. I leave it here so I, or anyone, can work on it later on.",
+    "created_at": "2010-03-02T02:28:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8048",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8048#issuecomment-70342",
+    "user": "mvngu"
+}
+```
 
 I have attached a half-baked patch, which is not ready for review. I leave it here so I, or anyone, can work on it later on.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-06-25 15:44:27
+archive/issue_comments_070343.json:
+```json
+{
+    "body": "Mathematica actually provides one called \n\n```\n  SystemInformation[]\n```\n\nhttp://reference.wolfram.com/mathematica/ref/SystemInformation.html\n\nhttp://reference.wolfram.com/mathematica/guide/SystemInformation.html\n\nIt also provides information on the machine precision. A look at what they provide might be useful.\n\nI would suggest we also include the value of exp(1.0), as that is system dependent, though care needs to be used in computing that so compilers don't inline the result. \n\nSome possible sources of information would be:\n\n == Solaris ==\n\n* $ /usr/sbin/prtconf | grep Memory (gives you memory information)\n* $ /usr/platform/`uname -i`/sbin/prtdiag (More hardware information)\n* $ showrev (more information)\n* $ /usr/sbin/psrinfo -v (gives you processor information)\n* $ prstat (like top, but more accurate on Solaris)\n* $ cat /etc/release (gives operating system information)\n* $ uname -a (gives you the usual things)\n* $ uptime (how long the system has been up, and load average)\n* $ dmesg (system messages)\n* $ df -h (gives you some information about disk usage)\n \nThe best way to find out if a Solaris system is running out of memory is to use the scan rate ('sr' column) of 'vmstat'. (Don't even think about believing top)\n\n == Linux ==\n\n* $ uname -a\n* $ cat /etc/issue\n* $ cat /proc/cpuinfo\n* $ cat /proc/meminfo\n\n == OS X ==\n* $ uname -a\n* $ /usr/sbin/system_profiler",
+    "created_at": "2010-06-25T15:44:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8048",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8048#issuecomment-70343",
+    "user": "drkirkby"
+}
+```
 
 Mathematica actually provides one called 
 
@@ -89,34 +138,45 @@ Some possible sources of information would be:
 
  == Solaris ==
 
- * $ /usr/sbin/prtconf | grep Memory (gives you memory information)
- * $ /usr/platform/`uname -i`/sbin/prtdiag (More hardware information)
- * $ showrev (more information)
- * $ /usr/sbin/psrinfo -v (gives you processor information)
- * $ prstat (like top, but more accurate on Solaris)
- * $ cat /etc/release (gives operating system information)
- * $ uname -a (gives you the usual things)
- * $ uptime (how long the system has been up, and load average)
- * $ dmesg (system messages)
- * $ df -h (gives you some information about disk usage)
+* $ /usr/sbin/prtconf | grep Memory (gives you memory information)
+* $ /usr/platform/`uname -i`/sbin/prtdiag (More hardware information)
+* $ showrev (more information)
+* $ /usr/sbin/psrinfo -v (gives you processor information)
+* $ prstat (like top, but more accurate on Solaris)
+* $ cat /etc/release (gives operating system information)
+* $ uname -a (gives you the usual things)
+* $ uptime (how long the system has been up, and load average)
+* $ dmesg (system messages)
+* $ df -h (gives you some information about disk usage)
  
 The best way to find out if a Solaris system is running out of memory is to use the scan rate ('sr' column) of 'vmstat'. (Don't even think about believing top)
 
  == Linux ==
 
- * $ uname -a
- * $ cat /etc/issue
- * $ cat /proc/cpuinfo
- * $ cat /proc/meminfo
+* $ uname -a
+* $ cat /etc/issue
+* $ cat /proc/cpuinfo
+* $ cat /proc/meminfo
 
  == OS X ==
- * $ uname -a
- * $ /usr/sbin/system_profiler
+* $ uname -a
+* $ /usr/sbin/system_profiler
+
 
 
 ---
 
-Comment by jasonbhill created at 2010-06-30 18:16:30
+archive/issue_comments_070344.json:
+```json
+{
+    "body": "I will take this and try to write it for linux and sunos. It should\n1) Be capable of being called from within Sage after installation.\n2) Be capable of being called from command line outside Sage assuming an installation failure. (Assuming python exists.)\n3) Be capable of returning precision,etc information from within Sage.\n4) Be scalable to a new OS.\n \n\nStay tuned.",
+    "created_at": "2010-06-30T18:16:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8048",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8048#issuecomment-70344",
+    "user": "jasonbhill"
+}
+```
 
 I will take this and try to write it for linux and sunos. It should
 1) Be capable of being called from within Sage after installation.
@@ -128,55 +188,103 @@ I will take this and try to write it for linux and sunos. It should
 Stay tuned.
 
 
+
 ---
+
+archive/issue_comments_070345.json:
+```json
+{
+    "body": "Attachment\n\nshell script to determine *somewhat verbose* environment and hardware info, Linux only currently",
+    "created_at": "2010-07-16T04:16:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8048",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8048#issuecomment-70345",
+    "user": "jasonbhill"
+}
+```
 
 Attachment
 
 shell script to determine *somewhat verbose* environment and hardware info, Linux only currently
 
 
+
 ---
 
-Comment by jasonbhill created at 2010-07-16 04:42:08
+archive/issue_comments_070346.json:
+```json
+{
+    "body": "Notes on hrdwr-info.sh as of July 15:\n\n* only writes to the screen, not to a file yet\n* is bash instead of python\n* only checks Linux right now. (The other OSs are easier, IMO, but I mainly have access to Linux and some Solaris machines. I'll do Solaris next.)\n\nThere are several things to consider: * Pruning info from /etc is not safe. It is not standardized, subject to user modifications, subject to lack of updates between distros (Ubuntu -> Mint etc). But, when the info exists it can be useful. It can also be badly formatted... with \\r and \\n explicit in the file. I used some 'sed' commands to get around this a bit.\n\n* Pruning from /proc is fine, since the data is standardized and updated by the OS. The only problem I have had in testing here is with virtual machines where the CPU is a virtual processor. But, the output in that case makes the situation obvious.\n* Getting your hands on the 32/64-bit declaration is tricky, since you'd like to use uname to do it. We can do that, but this ONLY returns information about the OS and not the hardware capabilities. I suppose that is fine, since we're testing installs and we only really care what bitlength the OS is capable of. But, many of the servers I've tested on are running 32-bit Linux distros on 64-bit capable hardware... and so I listed the OS and hardware bitlengths separately. I'm just curious if this will ever cause issues.\n\nQuestions I have: * Can you test it, break it?\n\n* What looks useful? What doesn't? What looks left out? Why?\n* How would something like this be used? I'm under the impression that this can get written to a log and the user can paste that log... where?\n\nI'll post a link with sample output since it isn't formatting nicely in this forum wysiwyg editor.",
+    "created_at": "2010-07-16T04:42:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8048",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8048#issuecomment-70346",
+    "user": "jasonbhill"
+}
+```
 
 Notes on hrdwr-info.sh as of July 15:
 
- * only writes to the screen, not to a file yet
- * is bash instead of python
- * only checks Linux right now. (The other OSs are easier, IMO, but I mainly have access to Linux and some Solaris machines. I'll do Solaris next.)
+* only writes to the screen, not to a file yet
+* is bash instead of python
+* only checks Linux right now. (The other OSs are easier, IMO, but I mainly have access to Linux and some Solaris machines. I'll do Solaris next.)
 
 There are several things to consider: * Pruning info from /etc is not safe. It is not standardized, subject to user modifications, subject to lack of updates between distros (Ubuntu -> Mint etc). But, when the info exists it can be useful. It can also be badly formatted... with \r and \n explicit in the file. I used some 'sed' commands to get around this a bit.
 
- * Pruning from /proc is fine, since the data is standardized and updated by the OS. The only problem I have had in testing here is with virtual machines where the CPU is a virtual processor. But, the output in that case makes the situation obvious.
- * Getting your hands on the 32/64-bit declaration is tricky, since you'd like to use uname to do it. We can do that, but this ONLY returns information about the OS and not the hardware capabilities. I suppose that is fine, since we're testing installs and we only really care what bitlength the OS is capable of. But, many of the servers I've tested on are running 32-bit Linux distros on 64-bit capable hardware... and so I listed the OS and hardware bitlengths separately. I'm just curious if this will ever cause issues.
+* Pruning from /proc is fine, since the data is standardized and updated by the OS. The only problem I have had in testing here is with virtual machines where the CPU is a virtual processor. But, the output in that case makes the situation obvious.
+* Getting your hands on the 32/64-bit declaration is tricky, since you'd like to use uname to do it. We can do that, but this ONLY returns information about the OS and not the hardware capabilities. I suppose that is fine, since we're testing installs and we only really care what bitlength the OS is capable of. But, many of the servers I've tested on are running 32-bit Linux distros on 64-bit capable hardware... and so I listed the OS and hardware bitlengths separately. I'm just curious if this will ever cause issues.
 
 Questions I have: * Can you test it, break it?
 
- * What looks useful? What doesn't? What looks left out? Why?
- * How would something like this be used? I'm under the impression that this can get written to a log and the user can paste that log... where?
+* What looks useful? What doesn't? What looks left out? Why?
+* How would something like this be used? I'm under the impression that this can get written to a log and the user can paste that log... where?
 
 I'll post a link with sample output since it isn't formatting nicely in this forum wysiwyg editor.
 
 
+
 ---
 
-Comment by jasonbhill created at 2010-07-16 04:50:51
+archive/issue_comments_070347.json:
+```json
+{
+    "body": "example outputs",
+    "created_at": "2010-07-16T04:50:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8048",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8048#issuecomment-70347",
+    "user": "jasonbhill"
+}
+```
 
 example outputs
 
 
+
 ---
+
+archive/issue_comments_070348.json:
+```json
+{
+    "body": "Attachment\n\nI had a look at this and have a few comments. \n* Overall, I was very impressed. It has nice output. \n* I believe it should be released under \"GPL 2, or at your option, any later version\". \n* It would be useful to know if CPU throttling is enabled or not. This can cause problems building ATLAS for example. \n* I would see if `pwd`/local/bin/sage-banner exists, and if so grab the sage version from there.\n* I would show the full output of gcc -v, rather than just part of it. \n* It would be useful to know if there is a server listening on port 8000 (default for Sage). I don't know how to do that though - I could find out on Solaris no doubt. \n* I would show the output of the following three commands:\n\n```\ndrkirkby@hawk:~$ command -v gcc\n/usr/local/gcc-4.4.4-multilib/bin/gcc\ndrkirkby@hawk:~$ command -v g++\n/usr/local/gcc-4.4.4-multilib/bin/g++\ndrkirkby@hawk:~$ command -v gfortran\n/usr/local/gcc-4.4.4-multilib/bin/gfortran\n```\n\n\n ('command -v' is portable - the use of 'which' is not). This will allow us to see if the compilers are a mix of compilers from places like `/usr/bin` and `/usr/local/bin`. \n* I don't know if you are aware of the [Useless Use of Cat Award](http://partmaps.org/era/unix/award.html) - well worth reading, as it is both educational and funny. Several of your commands use `cat` when it is not necessary. Both `sed` and `awk` can read from a file, so there is no need to `cat` the file and pipe it to these programs - it just creates another process, which slows things down. It's obviously not significant on small files, but it is on larger ones. It does make the code longer too. \n {{{\nHW_RELEASE=$(cat /etc/lsb-release | sed -e \"s/DISTRIB_/ /g\" | tr -d '\\r\\n' | sed -e \"s/^ //g\" 2> /dev/null)\n }}}\n could be changed to:\n {{{\nHW_RELEASE=$(sed \"s/DISTRIB_/ /g\" /etc/lsb-release | tr -d '\\r\\n' | sed \"s/^ //g\" 2> /dev/null)\n }}}\n (There is no need for the -e option to `sed` if there is only one command like here).  One could even combine the `sed` into one, but that gets more complex to write. Likewise\n {{{\nHW_CPU_NUM=$(cat /proc/cpuinfo | grep \"physical id\" | uniq | grep -c \"physical id\")\n }}}\n Could be changed to:\n {{{\n HW_CPU_NUM=$(grep \"physical id\" /proc/cpuinfo | uniq | grep -c \"physical id\")\n }}}\n by simply removing the unnecessary `cat`. Unless you are guaranteed the output of the first grep command is in sorted order, you should pipe to `sort` before `uniq`, as `uniq` only looks at adjacent lines. See below, where the word *hello* is in the file twice, but uniq does not indicate this:\n {{{\ndrkirkby`@`hawk:~$ cat test\nhello\nfred\nhello\njim\ndrkirkby`@`hawk:~$ uniq test\nhello\nfred\nhello\njim\ndrkirkby`@`hawk:~$ sort test | uniq\nfred\nhello\njim\n }}}\n* Given the number of different linux systems, I wonder if it might not be better to simply print the contents of `/etc/lsb-release`, `/etc/release` or whatever else exists, rather than try to parse them to get a distribution from them. It might be safer. \n* The comment on line 148 (`# function to return memory info for linux`) is wrong. \n* Although it would take 1 second to run, I think the output of:\n {{{\n  vmstat 1 2\n }}}\n could be useful, as it allows one to see more what is happening on a system at the point of failure. \n\nOverall, this looks very useful. I was quite impressed with it.",
+    "created_at": "2010-07-18T13:25:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8048",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8048#issuecomment-70348",
+    "user": "drkirkby"
+}
+```
 
 Attachment
 
 I had a look at this and have a few comments. 
- * Overall, I was very impressed. It has nice output. 
- * I believe it should be released under "GPL 2, or at your option, any later version". 
- * It would be useful to know if CPU throttling is enabled or not. This can cause problems building ATLAS for example. 
- * I would see if `pwd`/local/bin/sage-banner exists, and if so grab the sage version from there.
- * I would show the full output of gcc -v, rather than just part of it. 
- * It would be useful to know if there is a server listening on port 8000 (default for Sage). I don't know how to do that though - I could find out on Solaris no doubt. 
- * I would show the output of the following three commands:
+* Overall, I was very impressed. It has nice output. 
+* I believe it should be released under "GPL 2, or at your option, any later version". 
+* It would be useful to know if CPU throttling is enabled or not. This can cause problems building ATLAS for example. 
+* I would see if `pwd`/local/bin/sage-banner exists, and if so grab the sage version from there.
+* I would show the full output of gcc -v, rather than just part of it. 
+* It would be useful to know if there is a server listening on port 8000 (default for Sage). I don't know how to do that though - I could find out on Solaris no doubt. 
+* I would show the output of the following three commands:
 
 ```
 drkirkby@hawk:~$ command -v gcc
@@ -189,7 +297,7 @@ drkirkby@hawk:~$ command -v gfortran
 
 
  ('command -v' is portable - the use of 'which' is not). This will allow us to see if the compilers are a mix of compilers from places like `/usr/bin` and `/usr/local/bin`. 
- * I don't know if you are aware of the [Useless Use of Cat Award](http://partmaps.org/era/unix/award.html) - well worth reading, as it is both educational and funny. Several of your commands use `cat` when it is not necessary. Both `sed` and `awk` can read from a file, so there is no need to `cat` the file and pipe it to these programs - it just creates another process, which slows things down. It's obviously not significant on small files, but it is on larger ones. It does make the code longer too. 
+* I don't know if you are aware of the [Useless Use of Cat Award](http://partmaps.org/era/unix/award.html) - well worth reading, as it is both educational and funny. Several of your commands use `cat` when it is not necessary. Both `sed` and `awk` can read from a file, so there is no need to `cat` the file and pipe it to these programs - it just creates another process, which slows things down. It's obviously not significant on small files, but it is on larger ones. It does make the code longer too. 
  {{{
 HW_RELEASE=$(cat /etc/lsb-release | sed -e "s/DISTRIB_/ /g" | tr -d '\r\n' | sed -e "s/^ //g" 2> /dev/null)
  }}}
@@ -205,7 +313,7 @@ HW_CPU_NUM=$(cat /proc/cpuinfo | grep "physical id" | uniq | grep -c "physical i
  {{{
  HW_CPU_NUM=$(grep "physical id" /proc/cpuinfo | uniq | grep -c "physical id")
  }}}
- by simply removing the unnecessary `cat`. Unless you are guaranteed the output of the first grep command is in sorted order, you should pipe to `sort` before `uniq`, as `uniq` only looks at adjacent lines. See below, where the word _hello_ is in the file twice, but uniq does not indicate this:
+ by simply removing the unnecessary `cat`. Unless you are guaranteed the output of the first grep command is in sorted order, you should pipe to `sort` before `uniq`, as `uniq` only looks at adjacent lines. See below, where the word *hello* is in the file twice, but uniq does not indicate this:
  {{{
 drkirkby`@`hawk:~$ cat test
 hello
@@ -222,9 +330,9 @@ fred
 hello
 jim
  }}}
- * Given the number of different linux systems, I wonder if it might not be better to simply print the contents of `/etc/lsb-release`, `/etc/release` or whatever else exists, rather than try to parse them to get a distribution from them. It might be safer. 
- * The comment on line 148 (`# function to return memory info for linux`) is wrong. 
- * Although it would take 1 second to run, I think the output of:
+* Given the number of different linux systems, I wonder if it might not be better to simply print the contents of `/etc/lsb-release`, `/etc/release` or whatever else exists, rather than try to parse them to get a distribution from them. It might be safer. 
+* The comment on line 148 (`# function to return memory info for linux`) is wrong. 
+* Although it would take 1 second to run, I think the output of:
  {{{
   vmstat 1 2
  }}}
@@ -233,54 +341,120 @@ jim
 Overall, this looks very useful. I was quite impressed with it.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-07-23 21:28:59
+archive/issue_comments_070349.json:
+```json
+{
+    "body": "I used this on a bunch of machines earlier today to help produce the page [http://wiki.sagemath.org/skynet](http://wiki.sagemath.org/skynet).  Very nice.  I don't know how useful the username, pwd, and shell lines are, but they don't hurt.  On two machines, both with processors described by `arch` as \"ia64\" (is that itanium?), there is no line \"model name\" in /proc/cpuinfo, so the corresponding line in the summary printed by the script ends up blank.  Otherwise, it seems to work well on all of the linux machines I tried.\n\nOn Mac OS X, I think a lot of the relevant information can be extracted by running the command `sysctl -a`.  See [http://developer.apple.com/mac/library/documentation/Darwin/Reference/ManPages/man8/sysctl.8.html](http://developer.apple.com/mac/library/documentation/Darwin/Reference/ManPages/man8/sysctl.8.html) and [http://developer.apple.com/mac/library/documentation/Darwin/Reference/ManPages/man3/sysctl.3.html](http://developer.apple.com/mac/library/documentation/Darwin/Reference/ManPages/man3/sysctl.3.html).",
+    "created_at": "2010-07-23T21:28:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8048",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8048#issuecomment-70349",
+    "user": "jhpalmieri"
+}
+```
 
 I used this on a bunch of machines earlier today to help produce the page [http://wiki.sagemath.org/skynet](http://wiki.sagemath.org/skynet).  Very nice.  I don't know how useful the username, pwd, and shell lines are, but they don't hurt.  On two machines, both with processors described by `arch` as "ia64" (is that itanium?), there is no line "model name" in /proc/cpuinfo, so the corresponding line in the summary printed by the script ends up blank.  Otherwise, it seems to work well on all of the linux machines I tried.
 
 On Mac OS X, I think a lot of the relevant information can be extracted by running the command `sysctl -a`.  See [http://developer.apple.com/mac/library/documentation/Darwin/Reference/ManPages/man8/sysctl.8.html](http://developer.apple.com/mac/library/documentation/Darwin/Reference/ManPages/man8/sysctl.8.html) and [http://developer.apple.com/mac/library/documentation/Darwin/Reference/ManPages/man3/sysctl.3.html](http://developer.apple.com/mac/library/documentation/Darwin/Reference/ManPages/man3/sysctl.3.html).
 
 
+
 ---
 
-Comment by jasonbhill created at 2010-07-23 23:41:11
+archive/issue_comments_070350.json:
+```json
+{
+    "body": "jhpalmieri: Can you please send me (jason.b.hill`@`colorado.edu) the /proc/cpuinfo files for Cicero and Cleo? I have made some changes to the script via what David said above, but there are some things that I can improve if I know what those proc files look like, since there are a couple of cases when the script is catching errors and shouldn't be.\n\nI'll respond more after making those changes and re-uploading the script.",
+    "created_at": "2010-07-23T23:41:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8048",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8048#issuecomment-70350",
+    "user": "jasonbhill"
+}
+```
 
 jhpalmieri: Can you please send me (jason.b.hill`@`colorado.edu) the /proc/cpuinfo files for Cicero and Cleo? I have made some changes to the script via what David said above, but there are some things that I can improve if I know what those proc files look like, since there are a couple of cases when the script is catching errors and shouldn't be.
 
 I'll respond more after making those changes and re-uploading the script.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-07-24 00:00:14
+archive/issue_comments_070351.json:
+```json
+{
+    "body": "I've copied /proc/cpuinfo for cicero, cleo, and iras to the files\n\n- [http://sage.math.washington.edu/home/palmieri/misc/cicero-cpu.txt](http://sage.math.washington.edu/home/palmieri/misc/cicero-cpu.txt)\n\n- [http://sage.math.washington.edu/home/palmieri/misc/cleo-cpu.txt](http://sage.math.washington.edu/home/palmieri/misc/cleo-cpu.txt)\n\n- [http://sage.math.washington.edu/home/palmieri/misc/iras-cpu.txt](http://sage.math.washington.edu/home/palmieri/misc/iras-cpu.txt)",
+    "created_at": "2010-07-24T00:00:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8048",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8048#issuecomment-70351",
+    "user": "jhpalmieri"
+}
+```
 
 I've copied /proc/cpuinfo for cicero, cleo, and iras to the files
 
- - [http://sage.math.washington.edu/home/palmieri/misc/cicero-cpu.txt](http://sage.math.washington.edu/home/palmieri/misc/cicero-cpu.txt)
+- [http://sage.math.washington.edu/home/palmieri/misc/cicero-cpu.txt](http://sage.math.washington.edu/home/palmieri/misc/cicero-cpu.txt)
 
- - [http://sage.math.washington.edu/home/palmieri/misc/cleo-cpu.txt](http://sage.math.washington.edu/home/palmieri/misc/cleo-cpu.txt)
+- [http://sage.math.washington.edu/home/palmieri/misc/cleo-cpu.txt](http://sage.math.washington.edu/home/palmieri/misc/cleo-cpu.txt)
 
- - [http://sage.math.washington.edu/home/palmieri/misc/iras-cpu.txt](http://sage.math.washington.edu/home/palmieri/misc/iras-cpu.txt)
+- [http://sage.math.washington.edu/home/palmieri/misc/iras-cpu.txt](http://sage.math.washington.edu/home/palmieri/misc/iras-cpu.txt)
+
 
 
 ---
 
-Comment by jasonbhill created at 2010-07-24 02:36:38
+archive/issue_comments_070352.json:
+```json
+{
+    "body": "How many physical processors do Iras and Cleo have? (My guess is 2.) Have you noticed that their \"physical id\" tags are very strange? The physical cpu labels are 0 and 3 instead of 0 and 1. I'm wondering if this is consistent with other Itaniums.",
+    "created_at": "2010-07-24T02:36:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8048",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8048#issuecomment-70352",
+    "user": "jasonbhill"
+}
+```
 
 How many physical processors do Iras and Cleo have? (My guess is 2.) Have you noticed that their "physical id" tags are very strange? The physical cpu labels are 0 and 3 instead of 0 and 1. I'm wondering if this is consistent with other Itaniums.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-07-24 02:55:04
+archive/issue_comments_070353.json:
+```json
+{
+    "body": "How do I find out how many physical processors they have?  A comment on some random web page suggests that if two \"processors\" in /proc/cpuinfo have the same physical address, then they're the same processor.  How else do I tell?",
+    "created_at": "2010-07-24T02:55:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8048",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8048#issuecomment-70353",
+    "user": "jhpalmieri"
+}
+```
 
 How do I find out how many physical processors they have?  A comment on some random web page suggests that if two "processors" in /proc/cpuinfo have the same physical address, then they're the same processor.  How else do I tell?
 
 
+
 ---
 
-Comment by drkirkby created at 2010-07-24 03:02:50
+archive/issue_comments_070354.json:
+```json
+{
+    "body": "Replying to [comment:11 jhpalmieri]:\n> How do I find out how many physical processors they have?  A comment on some random web page suggests that if two \"processors\" in /proc/cpuinfo have the same physical address, then they're the same processor.  How else do I tell?\n\nOn Solaris or OpenSolaris:\n\n\n```\nkirkby@t2:[~] $  /usr/sbin/psrinfo -p\n2\n```\n\n\nbut I don't know about any other operating system.",
+    "created_at": "2010-07-24T03:02:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8048",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8048#issuecomment-70354",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:11 jhpalmieri]:
 > How do I find out how many physical processors they have?  A comment on some random web page suggests that if two "processors" in /proc/cpuinfo have the same physical address, then they're the same processor.  How else do I tell?
@@ -297,9 +471,20 @@ kirkby@t2:[~] $  /usr/sbin/psrinfo -p
 but I don't know about any other operating system.
 
 
+
 ---
 
-Comment by jasonbhill created at 2010-07-24 03:22:56
+archive/issue_comments_070355.json:
+```json
+{
+    "body": "_Usually_ the following happens: If the system has 1 cpu, then no \"physical id\" will be present in /proc/cpuinfo. Otherwise, physical_id gives the slot number of the cpu/core/thread in question. The problem with Itaniums is that the original \"topology\" listed the first slot as -1 on the board, instead of 0. So, it may be that there is still a bug in translating the topology.\n\nTry looking in\n/sys/devices/system/cpu/cpu0/topology\n/sys/devices/system/cpu/cpu1/topology\n/sys/devices/system/cpu/cpu2/topology\n...\n\nand seeing how many different entries you can find. Those, if they exist, should correspond to board slots for cpus.",
+    "created_at": "2010-07-24T03:22:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8048",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8048#issuecomment-70355",
+    "user": "jasonbhill"
+}
+```
 
 _Usually_ the following happens: If the system has 1 cpu, then no "physical id" will be present in /proc/cpuinfo. Otherwise, physical_id gives the slot number of the cpu/core/thread in question. The problem with Itaniums is that the original "topology" listed the first slot as -1 on the board, instead of 0. So, it may be that there is still a bug in translating the topology.
 
@@ -312,16 +497,38 @@ Try looking in
 and seeing how many different entries you can find. Those, if they exist, should correspond to board slots for cpus.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-07-24 04:51:50
+archive/issue_comments_070356.json:
+```json
+{
+    "body": "Cleo has four different directories `/sys/devices/system/cpu/cpuN/topology/`, for N from 0 to 3.  The file `cpu0/topology/core_id` is the same as that for cpu2 (and the ones for cpu1 and cpu3 are equal to each other), while the file `cpu0/topology/physical_package_id` is the same as that for cpu1, different from that for cpu2 and cpu3.  Same situation for iras.",
+    "created_at": "2010-07-24T04:51:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8048",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8048#issuecomment-70356",
+    "user": "jhpalmieri"
+}
+```
 
 Cleo has four different directories `/sys/devices/system/cpu/cpuN/topology/`, for N from 0 to 3.  The file `cpu0/topology/core_id` is the same as that for cpu2 (and the ones for cpu1 and cpu3 are equal to each other), while the file `cpu0/topology/physical_package_id` is the same as that for cpu1, different from that for cpu2 and cpu3.  Same situation for iras.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-07-24 20:53:27
+archive/issue_comments_070357.json:
+```json
+{
+    "body": "It looks like on Solaris, \n\n\n```\nkirkby@t2:[~] $ netstat -an | grep LISTEN | awk '{print $1}' | grep ^*.8000\nkirkby@t2:[~] $ \n```\n\n\ncan be used to determine if there is something listening on port 8000, which would be useful to know for Sage. \n\nSorry that don't help with the physical processors. To be honest, its not one of the most useful parameters though. I can't think of many Sage issues where the physical number of CPUs is going to be that important. \n\n[memconf](http://www.4schmidts.com/memconf.html) seems pretty clever on 't2,math'\n\n\n```\n# ./memconf\nGathering data for memconf. This may take over a minute. Please wait...\nhostname: t2\nSun Microsystems, Inc. T5240 (2 X 8-Core 8-Thread UltraSPARC-T2+ 1167MHz)\nMemory Interleave Factor: 8-way\nsocket MB/CMP0/BR0/CH0/D0 has a Samsung 501-7953-01 Rev 05 2GB FB-DIMM\nsocket MB/CMP0/BR0/CH0/D1 has a Samsung 501-7953-01 Rev 05 2GB FB-DIMM\nsocket MB/CMP0/BR0/CH1/D0 has a Samsung 501-7953-01 Rev 05 2GB FB-DIMM\nsocket MB/CMP0/BR0/CH1/D1 has a Samsung 501-7953-01 Rev 05 2GB FB-DIMM\nsocket MB/CMP0/BR1/CH0/D0 has a Samsung 501-7953-01 Rev 05 2GB FB-DIMM\nsocket MB/CMP0/BR1/CH0/D1 has a Samsung 501-7953-01 Rev 05 2GB FB-DIMM\nsocket MB/CMP0/BR1/CH1/D0 has a Samsung 501-7953-01 Rev 05 2GB FB-DIMM\nsocket MB/CMP0/BR1/CH1/D1 has a Samsung 501-7953-01 Rev 05 2GB FB-DIMM\nsocket MB/CMP1/BR0/CH0/D0 has a Samsung 501-7953-01 Rev 05 2GB FB-DIMM\nsocket MB/CMP1/BR0/CH0/D1 has a Samsung 501-7953-01 Rev 05 2GB FB-DIMM\nsocket MB/CMP1/BR0/CH1/D0 has a Samsung 501-7953-01 Rev 05 2GB FB-DIMM\nsocket MB/CMP1/BR0/CH1/D1 has a Samsung 501-7953-01 Rev 05 2GB FB-DIMM\nsocket MB/CMP1/BR1/CH0/D0 has a Samsung 501-7953-01 Rev 05 2GB FB-DIMM\nsocket MB/CMP1/BR1/CH0/D1 has a Samsung 501-7953-01 Rev 05 2GB FB-DIMM\nsocket MB/CMP1/BR1/CH1/D0 has a Samsung 501-7953-01 Rev 05 2GB FB-DIMM\nsocket MB/CMP1/BR1/CH1/D1 has a Samsung 501-7953-01 Rev 05 2GB FB-DIMM\nempty sockets: MB/CMP0/MR0/BR0/CH0/D2 MB/CMP0/MR0/BR0/CH0/D3 MB/CMP0/MR0/BR0/CH1/D2 MB/CMP0/MR0/BR0/CH1/D3 MB/CMP0/MR0/BR1/CH0/D2 MB/CMP0/MR0/BR1/CH0/D3 MB/CMP0/MR0/BR1/CH1/D2 MB/CMP0/MR0/BR1/CH1/D3 MB/CMP1/MR1/BR0/CH0/D2 MB/CMP1/MR1/BR0/CH0/D3 MB/CMP1/MR1/BR0/CH1/D2 MB/CMP1/MR1/BR0/CH1/D3 MB/CMP1/MR1/BR1/CH0/D2 MB/CMP1/MR1/BR1/CH0/D3 MB/CMP1/MR1/BR1/CH1/D2 MB/CMP1/MR1/BR1/CH1/D3\ntotal memory = 32768MB (32GB)\n```\n\n\nknowing how many CPUs there are, how many cores they have and how many threads there are. \n\n\nDave",
+    "created_at": "2010-07-24T20:53:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8048",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8048#issuecomment-70357",
+    "user": "drkirkby"
+}
+```
 
 It looks like on Solaris, 
 
@@ -372,16 +579,40 @@ knowing how many CPUs there are, how many cores they have and how many threads t
 Dave
 
 
+
 ---
 
-Comment by drkirkby created at 2010-07-24 20:55:34
+archive/issue_comments_070358.json:
+```json
+{
+    "body": "One thing that would be useful is the free disk space on whatever file system someone is building Sage on. Not sure the best way to find that out. Any ideas?\n\nDave",
+    "created_at": "2010-07-24T20:55:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8048",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8048#issuecomment-70358",
+    "user": "drkirkby"
+}
+```
 
 One thing that would be useful is the free disk space on whatever file system someone is building Sage on. Not sure the best way to find that out. Any ideas?
 
 Dave
 
 
+
 ---
+
+archive/issue_comments_070359.json:
+```json
+{
+    "body": "Attachment\n\nI attached a new file. I made the 'useless cat' and other changes. (Thanks Dave!)\n\nSome more notes:\n\n* cpu throttling: It is easy to determine if a cpu supports throttling, but can be a pain to determine (across various linux distributions) if it is enabled. Even from Ubuntu 9.10 to 10.04, this changed, and both are inconsistent with the Debian installations I've tried. So, I'm not incredibly optimistic here.\n* Getting the sage banner isn't a problem, so long as I know my pwd and how that relates to the banner's location. I haven't yet assumed that this script is executed anywhere specific.\n* I changed the gcc version command to output the entire output. The extra lines now included are only copyright info though, and so I'd question if we'd want them.\n* I'll add the netstat command (and/or equivalent).\n* diskspace is relatively easy. I'll add that as well.\n\nIt looks like the OS-X commands are somewhat straightforward, and the hardware is much more standardized there. Dave: We have a couple of lists of relevant Sunos commands... can we develop a single list of what is useful and what isn't? I have Open Solaris on a machine and so testing won't be an issue.\n\nJohn:\n\n* You want to update some of the skynet information you posted before. The cpu information for at least one of the machines changed (since I thought 'uniq' would apply 'sort' and it doesn't... meaning that the cores/cpu-count is off).\n* I also added the correct greps to attempt to get information from those Itaniums. My best guess as to why those topology numbers are so strange is that those machines may actually accept 4 processors, but only have 2 plugged in. If that's not the case, then it's buggy and there just aren't enough people using those cpus to make it worth fixing.",
+    "created_at": "2010-07-28T03:26:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8048",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8048#issuecomment-70359",
+    "user": "jasonbhill"
+}
+```
 
 Attachment
 
@@ -389,23 +620,34 @@ I attached a new file. I made the 'useless cat' and other changes. (Thanks Dave!
 
 Some more notes:
 
- * cpu throttling: It is easy to determine if a cpu supports throttling, but can be a pain to determine (across various linux distributions) if it is enabled. Even from Ubuntu 9.10 to 10.04, this changed, and both are inconsistent with the Debian installations I've tried. So, I'm not incredibly optimistic here.
- * Getting the sage banner isn't a problem, so long as I know my pwd and how that relates to the banner's location. I haven't yet assumed that this script is executed anywhere specific.
- * I changed the gcc version command to output the entire output. The extra lines now included are only copyright info though, and so I'd question if we'd want them.
- * I'll add the netstat command (and/or equivalent).
- * diskspace is relatively easy. I'll add that as well.
+* cpu throttling: It is easy to determine if a cpu supports throttling, but can be a pain to determine (across various linux distributions) if it is enabled. Even from Ubuntu 9.10 to 10.04, this changed, and both are inconsistent with the Debian installations I've tried. So, I'm not incredibly optimistic here.
+* Getting the sage banner isn't a problem, so long as I know my pwd and how that relates to the banner's location. I haven't yet assumed that this script is executed anywhere specific.
+* I changed the gcc version command to output the entire output. The extra lines now included are only copyright info though, and so I'd question if we'd want them.
+* I'll add the netstat command (and/or equivalent).
+* diskspace is relatively easy. I'll add that as well.
 
 It looks like the OS-X commands are somewhat straightforward, and the hardware is much more standardized there. Dave: We have a couple of lists of relevant Sunos commands... can we develop a single list of what is useful and what isn't? I have Open Solaris on a machine and so testing won't be an issue.
 
 John:
 
- * You want to update some of the skynet information you posted before. The cpu information for at least one of the machines changed (since I thought 'uniq' would apply 'sort' and it doesn't... meaning that the cores/cpu-count is off).
- * I also added the correct greps to attempt to get information from those Itaniums. My best guess as to why those topology numbers are so strange is that those machines may actually accept 4 processors, but only have 2 plugged in. If that's not the case, then it's buggy and there just aren't enough people using those cpus to make it worth fixing.
+* You want to update some of the skynet information you posted before. The cpu information for at least one of the machines changed (since I thought 'uniq' would apply 'sort' and it doesn't... meaning that the cores/cpu-count is off).
+* I also added the correct greps to attempt to get information from those Itaniums. My best guess as to why those topology numbers are so strange is that those machines may actually accept 4 processors, but only have 2 plugged in. If that's not the case, then it's buggy and there just aren't enough people using those cpus to make it worth fixing.
+
 
 
 ---
 
-Comment by drkirkby created at 2010-07-28 03:42:35
+archive/issue_comments_070360.json:
+```json
+{
+    "body": "Replying to [comment:17 jasonbhill]:\n> I attached a new file. I made the 'useless cat' and other changes. (Thanks Dave!)\n\nYou are welcome. \n \n> Some more notes:\n> \n>  * cpu throttling: It is easy to determine if a cpu supports throttling, but can be a pain to determine (across various linux distributions) if it is enabled. Even from Ubuntu 9.10 to 10.04, this changed, and both are inconsistent with the Debian installations I've tried. So, I'm not incredibly optimistic here.\n\nYou do not surprise me. I came to the same conclusion on Solaris too. \n\n>  * Getting the sage banner isn't a problem, so long as I know my pwd and how that relates to the banner's location. I haven't yet assumed that this script is executed anywhere specific.\n>  * I changed the gcc version command to output the entire output. The extra lines now included are only copyright info though, and so I'd question if we'd want them.\n\nWe should be able to get all the parameters that gcc was configured with\n\n\n```\ndrkirkby@hawk:~$ gcc -v\nUsing built-in specs.\nTarget: i386-pc-solaris2.11\nConfigured with: /export/home/drkirkby/gcc-4.4.4/configure --prefix=/usr/local/gcc-4.4.4-multilib --enable-languages=c,c++,fortran --with-gmp=/usr/local/gcc-4.4.4-multilib --with-mpfr=/usr/local/gcc-4.4.4-multilib --disable-nls --enable-checking=release --enable-werror=no --enable-multilib --with-system-zlib --enable-bootstrap --with-gnu-as --with-as=/usr/local/binutils-2.20/bin/as --without-gnu-ld --with-ld=/usr/ccs/bin/ld\nThread model: posix\ngcc version 4.4.4 (GCC) \n```\n\n\nthat lot can be very useful to know. \n\n>  * I'll add the netstat command (and/or equivalent).\n\nOK. \n\n>  * diskspace is relatively easy. I'll add that as well.\n\nHow do you propose to get the disk space? I came to the conclusion that was quite difficult, and have not found a way. \n \n> It looks like the OS-X commands are somewhat straightforward, and the hardware is much more standardized there. Dave: We have a couple of lists of relevant Sunos commands... can we develop a single list of what is useful and what isn't? I have Open Solaris on a machine and so testing won't be an issue.\n\n\nYes. It's late here. I will get onto that after some sleep. \n\nDave \n\n> John:\n> \n>  * You want to update some of the skynet information you posted before. The cpu information for at least one of the machines changed (since I thought 'uniq' would apply 'sort' and it doesn't... meaning that the cores/cpu-count is off).\n>  * I also added the correct greps to attempt to get information from those Itaniums. My best guess as to why those topology numbers are so strange is that those machines may actually accept 4 processors, but only have 2 plugged in. \n\nIt might be worth giving memconf a try, to see what it finds. I'm not suggesting including that, but it might confirm your guesses. \n\nIf that's not the case, then it's buggy and there just aren't enough people using those cpus to make it worth fixing.",
+    "created_at": "2010-07-28T03:42:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8048",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8048#issuecomment-70360",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:17 jasonbhill]:
 > I attached a new file. I made the 'useless cat' and other changes. (Thanks Dave!)
@@ -461,9 +703,20 @@ It might be worth giving memconf a try, to see what it finds. I'm not suggesting
 If that's not the case, then it's buggy and there just aren't enough people using those cpus to make it worth fixing.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-07-28 18:43:02
+archive/issue_comments_070361.json:
+```json
+{
+    "body": "Replying to [comment:18 drkirkby]:\n> Replying to [comment:17 jasonbhill]:\n\n> >  * You want to update some of the skynet information you posted before. \n\nThanks, I've done that.\n\n> It might be worth giving memconf a try, to see what it finds.\n\nmemconf doesn't seem to be installed on the skynet machines, or at least I haven't found it.",
+    "created_at": "2010-07-28T18:43:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8048",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8048#issuecomment-70361",
+    "user": "jhpalmieri"
+}
+```
 
 Replying to [comment:18 drkirkby]:
 > Replying to [comment:17 jasonbhill]:
@@ -477,9 +730,20 @@ Thanks, I've done that.
 memconf doesn't seem to be installed on the skynet machines, or at least I haven't found it.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-07-28 20:40:00
+archive/issue_comments_070362.json:
+```json
+{
+    "body": "Replying to [comment:19 jhpalmieri]:\n> Replying to [comment:18 drkirkby]:\n> > Replying to [comment:17 jasonbhill]:\n> \n> > >  * You want to update some of the skynet information you posted before. \n> \n> Thanks, I've done that.\n> \n> > It might be worth giving memconf a try, to see what it finds.\n> \n> memconf doesn't seem to be installed on the skynet machines, or at least I haven't found it.\n\nOn some systems it runs as a normal user process. It can be downloaded in a few seconds, change the permission to make it executable and you are ready to go. It does not need compiling- its just a perl script. \n\nOn 't2' it needs root access. I have no idea on other systems. I think it would work on mark without root access.",
+    "created_at": "2010-07-28T20:40:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8048",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8048#issuecomment-70362",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:19 jhpalmieri]:
 > Replying to [comment:18 drkirkby]:

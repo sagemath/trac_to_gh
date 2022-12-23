@@ -1,11 +1,21 @@
 # Issue 8470: new documentation categories "FAQ" and "Sage HOWTOs"
 
-Issue created by migration from https://trac.sagemath.org/ticket/8470
-
-Original creator: mvngu
-
-Original creation time: 2010-03-07 02:38:29
-
+archive/issues_008470.json:
+```json
+{
+    "body": "Assignee: mvngu\n\nCC:  wdj rlm ncohen rbeezer sage-combinat bump jhpalmieri jason\n\nKeywords: FAQ, HOWTO\n\nThis is a meta-ticket that helps in organizing changes and additions to the Sage standard documentation. On [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/95afb345e872f9af) and [sage-combinat-devel](http://groups.google.com/group/sage-combinat-devel/msg/662eb0246c7bf9fc), it is proposed that we create two new documentation categories called:\n\n* FAQ --- a collection of answers to frequently asked questions.\n* Sage HOWTOs --- a collection of in-depth tutorials on specific topics.\n\nFor starters, here is a list of tickets with enhancements for those two new documentation categories:\n\n* #8442 Lie Methods and Related Combinatorics\n* #8464 FAQ\n* #8465 Python Functional Programming for Mathematicians\n* #8466 Sage and Coding Theory\n* #8467 Linear Programming in Sage\n* #8468 Group Theory and Sage: A Primer\n* #8469 Number Theory and the RSA Public Key Cryptosystem\n\nOnce all the above tickets are closed, the current ticket can be closed as fixed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8470\n\n",
+    "created_at": "2010-03-07T02:38:29Z",
+    "labels": [
+        "documentation",
+        "major",
+        "enhancement"
+    ],
+    "title": "new documentation categories \"FAQ\" and \"Sage HOWTOs\"",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8470",
+    "user": "mvngu"
+}
+```
 Assignee: mvngu
 
 CC:  wdj rlm ncohen rbeezer sage-combinat bump jhpalmieri jason
@@ -14,47 +24,84 @@ Keywords: FAQ, HOWTO
 
 This is a meta-ticket that helps in organizing changes and additions to the Sage standard documentation. On [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/95afb345e872f9af) and [sage-combinat-devel](http://groups.google.com/group/sage-combinat-devel/msg/662eb0246c7bf9fc), it is proposed that we create two new documentation categories called:
 
- * FAQ --- a collection of answers to frequently asked questions.
- * Sage HOWTOs --- a collection of in-depth tutorials on specific topics.
+* FAQ --- a collection of answers to frequently asked questions.
+* Sage HOWTOs --- a collection of in-depth tutorials on specific topics.
 
 For starters, here is a list of tickets with enhancements for those two new documentation categories:
 
- * #8442 Lie Methods and Related Combinatorics
- * #8464 FAQ
- * #8465 Python Functional Programming for Mathematicians
- * #8466 Sage and Coding Theory
- * #8467 Linear Programming in Sage
- * #8468 Group Theory and Sage: A Primer
- * #8469 Number Theory and the RSA Public Key Cryptosystem
+* #8442 Lie Methods and Related Combinatorics
+* #8464 FAQ
+* #8465 Python Functional Programming for Mathematicians
+* #8466 Sage and Coding Theory
+* #8467 Linear Programming in Sage
+* #8468 Group Theory and Sage: A Primer
+* #8469 Number Theory and the RSA Public Key Cryptosystem
 
 Once all the above tickets are closed, the current ticket can be closed as fixed.
 
+Issue created by migration from https://trac.sagemath.org/ticket/8470
+
+
+
+
 
 ---
 
-Comment by nthiery created at 2010-03-08 10:26:55
+archive/issue_comments_076295.json:
+```json
+{
+    "body": "This sounds very good! Should the following appear there as well?\n\n- the category primer (sage.categories.primer)\n- the \"implementing a parent\" tutorial (sage.categories.tutorial); this needs further work!\n\nFor the record, in the Sage-Combinat queue, some work is being done on:\n\n- A tutorial on iterators\n- A tutorial on combinatorics",
+    "created_at": "2010-03-08T10:26:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8470",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8470#issuecomment-76295",
+    "user": "nthiery"
+}
+```
 
 This sounds very good! Should the following appear there as well?
 
- - the category primer (sage.categories.primer)
- - the "implementing a parent" tutorial (sage.categories.tutorial); this needs further work!
+- the category primer (sage.categories.primer)
+- the "implementing a parent" tutorial (sage.categories.tutorial); this needs further work!
 
 For the record, in the Sage-Combinat queue, some work is being done on:
 
- - A tutorial on iterators
- - A tutorial on combinatorics
+- A tutorial on iterators
+- A tutorial on combinatorics
+
 
 
 ---
 
-Comment by mvngu created at 2010-03-09 21:45:47
+archive/issue_comments_076296.json:
+```json
+{
+    "body": "Changing keywords from \"FAQ, HOWTO\" to \"FAQ, HOWTO, tutorial\".",
+    "created_at": "2010-03-09T21:45:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8470",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8470#issuecomment-76296",
+    "user": "mvngu"
+}
+```
 
 Changing keywords from "FAQ, HOWTO" to "FAQ, HOWTO, tutorial".
 
 
+
 ---
 
-Comment by bump created at 2010-03-15 23:34:33
+archive/issue_comments_076297.json:
+```json
+{
+    "body": "Here is a more complete list of patches that are relevant\nto this metaticket:\n\n\n```\ntrac_8480-clean-up.patch\ntrac_8464-faq-general.patch\ntrac_8464-faq-usage.patch\ntrac_8464-faq-contribute.patch\ntrac_8464-ref.patch\ntrac_8465-functional.patch\ntrac_8469-rsa.patch\ntrac_8468-groups.patch\ntrac_8411_branching_rules.patch\ntrac_8414_weyl_group_space.patch\ntrac_8442-lie-rebased.patch\ntrac_8442-reviewer.patch\ntrac_8492-ref.patch\n```\n\n\nIn addition three .png files from #8442 need to be copied into \n`doc/en/thematic_tutorials/static`.\n\nWith this preparation, the pdf and html documentation build and look very good.",
+    "created_at": "2010-03-15T23:34:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8470",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8470#issuecomment-76297",
+    "user": "bump"
+}
+```
 
 Here is a more complete list of patches that are relevant
 to this metaticket:
@@ -83,36 +130,91 @@ In addition three .png files from #8442 need to be copied into
 With this preparation, the pdf and html documentation build and look very good.
 
 
+
 ---
 
-Comment by rws created at 2014-08-18 05:34:31
+archive/issue_comments_076298.json:
+```json
+{
+    "body": "All done!",
+    "created_at": "2014-08-18T05:34:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8470",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8470#issuecomment-76298",
+    "user": "rws"
+}
+```
 
 All done!
 
 
+
 ---
 
-Comment by rws created at 2014-08-18 05:34:31
+archive/issue_comments_076299.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2014-08-18T05:34:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8470",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8470#issuecomment-76299",
+    "user": "rws"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by kcrisman created at 2014-08-27 15:44:15
+archive/issue_comments_076300.json:
+```json
+{
+    "body": "We certainly need better organization of documentation, but this ticket has achieved its purpose, you are right.  Too bad #8533 isn't finished yet, but oh well.",
+    "created_at": "2014-08-27T15:44:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8470",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8470#issuecomment-76300",
+    "user": "kcrisman"
+}
+```
 
 We certainly need better organization of documentation, but this ticket has achieved its purpose, you are right.  Too bad #8533 isn't finished yet, but oh well.
 
 
+
 ---
 
-Comment by kcrisman created at 2014-08-27 15:44:15
+archive/issue_comments_076301.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2014-08-27T15:44:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8470",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8470#issuecomment-76301",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by vbraun created at 2014-08-29 18:33:49
+archive/issue_comments_076302.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2014-08-29T18:33:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8470",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8470#issuecomment-76302",
+    "user": "vbraun"
+}
+```
 
 Resolution: fixed

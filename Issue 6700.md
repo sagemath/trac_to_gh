@@ -1,30 +1,79 @@
 # Issue 6700: spell-check all modules under sage/geometry
 
-Issue created by migration from https://trac.sagemath.org/ticket/6700
-
-Original creator: mvngu
-
-Original creation time: 2009-08-09 08:08:02
-
+archive/issues_006700.json:
+```json
+{
+    "body": "Assignee: tba\n\nAs the subject says.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6700\n\n",
+    "created_at": "2009-08-09T08:08:02Z",
+    "labels": [
+        "documentation",
+        "major",
+        "bug"
+    ],
+    "title": "spell-check all modules under sage/geometry",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6700",
+    "user": "mvngu"
+}
+```
 Assignee: tba
 
 As the subject says.
 
+Issue created by migration from https://trac.sagemath.org/ticket/6700
+
+
+
+
 
 ---
 
-Comment by mvngu created at 2009-08-11 11:26:53
+archive/issue_comments_055049.json:
+```json
+{
+    "body": "based on Sage 4.1.1.rc2",
+    "created_at": "2009-08-11T11:26:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6700",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6700#issuecomment-55049",
+    "user": "mvngu"
+}
+```
 
 based on Sage 4.1.1.rc2
 
 
+
 ---
+
+archive/issue_comments_055050.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-08-11T18:21:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6700",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6700#issuecomment-55050",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mvngu created at 2009-08-12 05:51:57
+archive/issue_comments_055051.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-08-12T05:51:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6700",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6700#issuecomment-55051",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

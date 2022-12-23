@@ -1,11 +1,21 @@
 # Issue 6526: remove naive suffix trees
 
-Issue created by migration from https://trac.sagemath.org/ticket/6526
-
-Original creator: rlm
-
-Original creation time: 2009-07-13 19:12:33
-
+archive/issues_006526.json:
+```json
+{
+    "body": "Assignee: mhansen\n\nCC:  saliola\n\nThis is one of the obstructions to switching the graph backends over to Cython by default.\n\nTo quote Franco:\n\n```\nBut all the doctest failures occur in the NaiveSuffixTreeClass, which\nis a naive implementation. This code was only intended for testing\npurposes, so I think it is fine to delete it (delete both\nNaiveSuffixTree and NaiveSuffixTreeClass). I am pretty certain it is\nnot used anywhere else (it should not be, if it is), because it is a\nvery slow implementation (hence, the name naive).\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6526\n\n",
+    "created_at": "2009-07-13T19:12:33Z",
+    "labels": [
+        "combinatorics",
+        "major",
+        "bug"
+    ],
+    "title": "remove naive suffix trees",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6526",
+    "user": "rlm"
+}
+```
 Assignee: mhansen
 
 CC:  saliola
@@ -24,35 +34,96 @@ very slow implementation (hence, the name naive).
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6526
+
+
+
+
 
 ---
 
-Comment by rlm created at 2009-07-13 19:12:47
+archive/issue_comments_053219.json:
+```json
+{
+    "body": "This will be based on #6519.",
+    "created_at": "2009-07-13T19:12:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6526",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6526#issuecomment-53219",
+    "user": "rlm"
+}
+```
 
 This will be based on #6519.
 
 
+
 ---
 
-Comment by rlm created at 2009-07-14 16:05:03
+archive/issue_comments_053220.json:
+```json
+{
+    "body": "based on #6519",
+    "created_at": "2009-07-14T16:05:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6526",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6526#issuecomment-53220",
+    "user": "rlm"
+}
+```
 
 based on #6519
 
 
+
 ---
+
+archive/issue_comments_053221.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-07-14T16:05:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6526",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6526#issuecomment-53221",
+    "user": "rlm"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by saliola created at 2009-07-16 23:47:10
+archive/issue_comments_053222.json:
+```json
+{
+    "body": "Positive review.",
+    "created_at": "2009-07-16T23:47:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6526",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6526#issuecomment-53222",
+    "user": "saliola"
+}
+```
 
 Positive review.
 
 
+
 ---
 
-Comment by mvngu created at 2009-07-18 14:50:06
+archive/issue_comments_053223.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-07-18T14:50:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6526",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6526#issuecomment-53223",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

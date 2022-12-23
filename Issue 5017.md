@@ -1,11 +1,21 @@
 # Issue 5017: graph.automorphism_group(translation=True) gives error in 3.2.3
 
-Issue created by migration from https://trac.sagemath.org/ticket/5017
-
-Original creator: jsp
-
-Original creation time: 2009-01-18 18:29:03
-
+archive/issues_005017.json:
+```json
+{
+    "body": "Assignee: rlm\n\n\n\n```\nNikos Apostolakis wrote:\n> > The \"translation=True\" flag does not work after upgrading to sage 3.2.3\n> > I am not sure when this behaviour was introduced.  In version 2.10.2 it\n> > works fine, unfortunately I don't have a more recent old sage to check.\n> > \n> >   sage: foo = Graph()\n> >   sage: foo.add_edges([(0,1,1),(1,2,2), (2,3,3)])\n> >   sage: foo.automorphism_group(translation=True)\n\n\nThis worked in sage-3.1.2 and before, giving\n  (Permutation Group with generators [(1,2)(3,4)], {0: 4, 1: 1, 2: 2, 3: 3})\n\nIn sage-3.2.1 and later this fails.\n\nJaap\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5017\n\n",
+    "created_at": "2009-01-18T18:29:03Z",
+    "labels": [
+        "graph theory",
+        "major",
+        "bug"
+    ],
+    "title": "graph.automorphism_group(translation=True) gives error in 3.2.3",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5017",
+    "user": "jsp"
+}
+```
 Assignee: rlm
 
 
@@ -31,15 +41,43 @@ Jaap
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5017
+
+
+
+
 
 ---
+
+archive/issue_comments_038225.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-01-18T20:36:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5017",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5017#issuecomment-38225",
+    "user": "rlm"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by jsp created at 2009-01-18 21:24:47
+archive/issue_comments_038226.json:
+```json
+{
+    "body": "After the patch:\n\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| Sage Version 3.2.3, Release Date: 2009-01-05                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: sage: foo = Graph()\n\nsage:  sage: foo.add_edges([(0,1,1),(1,2,2), (2,3,3)])\n\nsage:  sage: foo.automorphism_group(translation=True)\n (Permutation Group with generators [(1,2)(3,4)], {0: 4, 1: 1, 2: 2, 3: 3})\n\nsage: \n\n```\n\n\n\nlooking at the code, patch seems ok.\n\nJaap",
+    "created_at": "2009-01-18T21:24:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5017",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5017#issuecomment-38226",
+    "user": "jsp"
+}
+```
 
 After the patch:
 
@@ -68,24 +106,57 @@ looking at the code, patch seems ok.
 Jaap
 
 
+
 ---
 
-Comment by jsp created at 2009-01-18 23:07:58
+archive/issue_comments_038227.json:
+```json
+{
+    "body": "I can reproduce the error in sage-3.1.4 FWIW\n\nJaap",
+    "created_at": "2009-01-18T23:07:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5017",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5017#issuecomment-38227",
+    "user": "jsp"
+}
+```
 
 I can reproduce the error in sage-3.1.4 FWIW
 
 Jaap
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-19 04:15:43
+archive/issue_comments_038228.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-01-19T04:15:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5017",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5017#issuecomment-38228",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-19 04:15:43
+archive/issue_comments_038229.json:
+```json
+{
+    "body": "Merged in Sage 3.3.alpha0",
+    "created_at": "2009-01-19T04:15:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5017",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5017#issuecomment-38229",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.3.alpha0

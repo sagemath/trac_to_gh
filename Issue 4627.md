@@ -1,11 +1,21 @@
 # Issue 4627: CRT_list in HNF dominates computation
 
-Issue created by migration from https://trac.sagemath.org/ticket/4627
-
-Original creator: ncalexan
-
-Original creation time: 2008-11-26 19:06:10
-
+archive/issues_004627.json:
+```json
+{
+    "body": "Assignee: was\n\nKeywords: hermite normal form hnf gcd\n\n\n```\nOn 4-Sep-08, at 3:57 PM, Clement Pernet wrote:\n\nHi,\n\nNo problem, the patch looks fine, and I will run some testings to check\nit. Nick, are you going to open a ticket?\n\n--\nCl\u00e9ment\n\nWilliam Stein a \u00e9crit :\nOn Wed, Sep 3, 2008 at 4:39 PM, Nick Alexander <ncalexander@gmail.com> wrote:\nHi William,\n\nThe attached patch prevents recomputing a CRT a number of times when doing a\nmulti modular Hermite normal form.  I was finding that this CRT computation\nwas taking *much* longer than the rest of the calculation of a midsize HNF\n(40 x 40).  Has this been addressed?\n\nNo.\n\n Should this be run by Clement and some\nrandomized testing?\n\nYes, definitely.   I've cc'd Clement and included the attachment.\n\n-- William\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4627\n\n",
+    "created_at": "2008-11-26T19:06:10Z",
+    "labels": [
+        "linear algebra",
+        "major",
+        "enhancement"
+    ],
+    "title": "CRT_list in HNF dominates computation",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4627",
+    "user": "ncalexan"
+}
+```
 Assignee: was
 
 Keywords: hermite normal form hnf gcd
@@ -42,8 +52,25 @@ Yes, definitely.   I've cc'd Clement and included the attachment.
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4627
+
+
+
+
 
 ---
+
+archive/issue_comments_034795.json:
+```json
+{
+    "body": "Attachment\n\nWhat is the credit situation here?\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-26T23:13:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4627",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4627#issuecomment-34795",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -54,23 +81,58 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by craigcitro created at 2008-11-27 00:23:07
+archive/issue_comments_034796.json:
+```json
+{
+    "body": "So this code looks fine to me, but I can't find any cases where it makes a significant change in runtime. For instance, taking a random 40x40 matrix over ZZ, the runtimes are the same before and after the patch. \n\nNick, what is a good test case to see the performance improvement?",
+    "created_at": "2008-11-27T00:23:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4627",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4627#issuecomment-34796",
+    "user": "craigcitro"
+}
+```
 
 So this code looks fine to me, but I can't find any cases where it makes a significant change in runtime. For instance, taking a random 40x40 matrix over ZZ, the runtimes are the same before and after the patch. 
 
 Nick, what is a good test case to see the performance improvement?
 
 
+
 ---
+
+archive/issue_comments_034797.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-11-27T04:18:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4627",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4627#issuecomment-34797",
+    "user": "craigcitro"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by craigcitro created at 2008-11-27 04:21:01
+archive/issue_comments_034798.json:
+```json
+{
+    "body": "Looks good! Nick pointed out a nice example of a test case:\n\nBEFORE:\n\n```\nsage: y = polygen(ZZ)\nsage: M.<a> = NumberField(y^20 - 2*y^19 + 10*y^17 - 15*y^16 + 40*y^14 - 64*y^13 + 46*y^12 + 8*y^11 - 32*y^10 + 8*y^9 + 46*y^8 - 64*y^7 + 40*y^6 - 15*y^4 + 10*y^3 - 2*y + 1)\nsage: time M.ideal(prod(prime_range(6000,6200))).free_module()\nCPU times: user 33.71 s, sys: 2.02 s, total: 35.73 s\nWall time: 36.06 s\n\nFree module of degree 20 and rank 20 over Integer Ring\nUser basis matrix:\n20 x 20 dense matrix over Rational Field\n```\n\n\nAFTER:\n\n```\nsage: y = polygen(ZZ)\nsage: M.<a> = NumberField(y^20 - 2*y^19 + 10*y^17 - 15*y^16 + 40*y^14 - 64*y^13 + 46*y^12 + 8*y^11 - 32*y^10 + 8*y^9 + 46*y^8 - 64*y^7 + 40*y^6 - 15*y^4 + 10*y^3 - 2*y + 1)\nsage: time M.ideal(prod(prime_range(6000,6200))).free_module()\nCPU times: user 0.65 s, sys: 0.05 s, total: 0.70 s\nWall time: 0.70 s\n\nFree module of degree 20 and rank 20 over Integer Ring\nUser basis matrix:\n20 x 20 dense matrix over Rational Field\n```\n\n\nSpeedup of 50X -- not too shabby! In particular, it seems to apply when you have really large coefficients compared to the size of the matrix. (This seems reasonable, given that for small entries, the CRT simply doesn't get applied that many times, since one has a bound on the size of the output.)\n\nI added another doctest (which really needs compared between versions with `%timeit`), and committed the patch in Nick's name.",
+    "created_at": "2008-11-27T04:21:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4627",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4627#issuecomment-34798",
+    "user": "craigcitro"
+}
+```
 
 Looks good! Nick pointed out a nice example of a test case:
 
@@ -109,15 +171,37 @@ Speedup of 50X -- not too shabby! In particular, it seems to apply when you have
 I added another doctest (which really needs compared between versions with `%timeit`), and committed the patch in Nick's name.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-27 04:48:23
+archive/issue_comments_034799.json:
+```json
+{
+    "body": "Merged trac-4627-v2.patch in Sage 3.2.1.alpha2",
+    "created_at": "2008-11-27T04:48:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4627",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4627#issuecomment-34799",
+    "user": "mabshoff"
+}
+```
 
 Merged trac-4627-v2.patch in Sage 3.2.1.alpha2
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-27 04:48:23
+archive/issue_comments_034800.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-11-27T04:48:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4627",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4627#issuecomment-34800",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

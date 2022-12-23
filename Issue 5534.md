@@ -1,11 +1,21 @@
 # Issue 5534: sage.combinat.subword.smallest_positions modifying its input
 
-Issue created by migration from https://trac.sagemath.org/ticket/5534
-
-Original creator: nthiery
-
-Original creation time: 2009-03-16 20:46:13
-
+archive/issues_005534.json:
+```json
+{
+    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nI came across this function in Sage-Combinat,\n\nsage.combinat.subword.smallest_positions(word, subword, pos=0)\n\nRunning this function not only returns the positions in \"word\" where\n\"subword\" occurs, but it modifies \"subword\" to be this sequence of\npositions.  Is there a reason for this?  It seems to me that it should\nleave \"subword\" unchanged, but maybe I'm not thinking of something.\n\nsage: w = [\"a\", \"b\", \"c\", \"d\"]\nsage: ww = [\"b\", \"d\"]\nsage: sage.combinat.subword.smallest_positions?\nsage: sage.combinat.subword.smallest_positions(w, ww)\n[1, 3]\nsage: w\n['a', 'b', 'c', 'd']\nsage: ww\n[1, 3]\n\nThanks,\nSteve\n\nIssue created by migration from https://trac.sagemath.org/ticket/5534\n\n",
+    "created_at": "2009-03-16T20:46:13Z",
+    "labels": [
+        "combinatorics",
+        "minor",
+        "bug"
+    ],
+    "title": "sage.combinat.subword.smallest_positions modifying its input",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5534",
+    "user": "nthiery"
+}
+```
 Assignee: mhansen
 
 CC:  sage-combinat
@@ -32,10 +42,25 @@ sage: ww
 Thanks,
 Steve
 
+Issue created by migration from https://trac.sagemath.org/ticket/5534
+
+
+
+
 
 ---
 
-Comment by hivert created at 2009-03-17 09:59:47
+archive/issue_comments_043023.json:
+```json
+{
+    "body": "Fixed (see the attached patch):\n\nNow:\n\n```\nsage: w = [\"a\", \"b\", \"c\", \"d\"]\nsage: ww = [\"b\", \"d\"]\nsage: sage.combinat.subword.smallest_positions(w, ww)\n[1, 3]\nsage: w\n['a', 'b', 'c', 'd']\nsage: ww\n['b', 'd']\n```\n\n\nNote the patch only applies on top of #5200\n\nAuthor : Florent Hivert",
+    "created_at": "2009-03-17T09:59:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5534",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5534#issuecomment-43023",
+    "user": "hivert"
+}
+```
 
 Fixed (see the attached patch):
 
@@ -58,23 +83,56 @@ Note the patch only applies on top of #5200
 Author : Florent Hivert
 
 
+
 ---
 
-Comment by hivert created at 2009-03-17 09:59:47
+archive/issue_comments_043024.json:
+```json
+{
+    "body": "Changing assignee from mhansen to hivert.",
+    "created_at": "2009-03-17T09:59:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5534",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5534#issuecomment-43024",
+    "user": "hivert"
+}
+```
 
 Changing assignee from mhansen to hivert.
 
 
+
 ---
 
-Comment by hivert created at 2009-03-19 17:00:50
+archive/issue_comments_043025.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-03-19T17:00:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5534",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5534#issuecomment-43025",
+    "user": "hivert"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-03-25 07:01:50
+archive/issue_comments_043026.json:
+```json
+{
+    "body": "This patch causes doctest failures in \n\n```\n\tsage -t -long devel/sage/sage/combinat/subword.py # 23 doctests failed\n\tsage -t -long devel/sage/sage/combinat/subset.py # 10 doctests failed\n```\n\nFor example\"\n\n```\nsage -t -long \"devel/sage/sage/combinat/subset.py\"          \n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.alpha0/devel/sage/sage/combinat/subset.py\", line 566:\n    sage: [] in S\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/sage-3.4/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-3.4/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-3.4/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_25[3]>\", line 1, in <module>\n        [] in S###line 566:\n    sage: [] in S\n      File \"/scratch/mabshoff/sage-3.4.1.alpha0/local/lib/python2.5/site-packages/sage/combinat/subset.py\", line 579, in __contains__\n        return sorted(s) in subword.Subwords(self._s)\n      File \"/scratch/mabshoff/sage-3.4.1.alpha0/local/lib/python2.5/site-packages/sage/combinat/subword.py\", line 130, in __contains__\n        if smallest_positions(self.w, w) != False:\n      File \"/scratch/mabshoff/sage-3.4.1.alpha0/local/lib/python2.5/site-packages/sage/combinat/subword.py\", line 315, in smallest_positions\n        res = [None] * subword.length()\n    AttributeError: 'list' object has no attribute 'length'\n**********************************************************************\n```\n\n\nThis is with #5200 merged, so is there another dependency?\n\nCheers,\n\nMichael",
+    "created_at": "2009-03-25T07:01:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5534",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5534#issuecomment-43026",
+    "user": "mabshoff"
+}
+```
 
 This patch causes doctest failures in 
 
@@ -119,14 +177,38 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_043027.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-03-28T18:42:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5534",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5534#issuecomment-43027",
+    "user": "hivert"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by hivert created at 2009-03-28 18:47:43
+archive/issue_comments_043028.json:
+```json
+{
+    "body": "Oups !!! It looks like Nicolas last review requirement was simply syntactically wrong. He required to write\n`res = [None] * subword.length()` where he meant  `res = [None] * len(subword)`. The bad think is that no one of use take care to even launch the tests. Shame on us !!!\n\nThe re-sumbmitted patch should work. \n\nCheers,\n\nFlorent",
+    "created_at": "2009-03-28T18:47:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5534",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5534#issuecomment-43028",
+    "user": "hivert"
+}
+```
 
 Oups !!! It looks like Nicolas last review requirement was simply syntactically wrong. He required to write
 `res = [None] * subword.length()` where he meant  `res = [None] * len(subword)`. The bad think is that no one of use take care to even launch the tests. Shame on us !!!
@@ -138,16 +220,38 @@ Cheers,
 Florent
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-03 00:57:17
+archive/issue_comments_043029.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-04-03T00:57:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5534",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5534#issuecomment-43029",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-03 00:57:17
+archive/issue_comments_043030.json:
+```json
+{
+    "body": "Merged in Sage 3.4.1.rc0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-03T00:57:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5534",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5534#issuecomment-43030",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.4.1.rc0.
 

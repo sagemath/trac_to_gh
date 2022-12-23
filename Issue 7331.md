@@ -1,11 +1,21 @@
 # Issue 7331: Conditions for non-split multiplicative reduction in p_primary_bound of Tate-Shafarevich groups
 
-Issue created by migration from https://trac.sagemath.org/ticket/7331
-
-Original creator: wuthrich
-
-Original creation time: 2009-10-28 09:56:17
-
+archive/issues_007331.json:
+```json
+{
+    "body": "Assignee: davidloeffler\n\nCC:  was rlm\n\nKeywords: sha, tate-shafarevich group,  primary bound\n\n`p_primary_bound` fails on the following rank 0 curve with non-split multiplicative reduction.\n\n\n```\nE = EllipticCurve('270b')\nE.sha().p_primary_bound(5)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7331\n\n",
+    "created_at": "2009-10-28T09:56:17Z",
+    "labels": [
+        "elliptic curves",
+        "minor",
+        "bug"
+    ],
+    "title": "Conditions for non-split multiplicative reduction in p_primary_bound of Tate-Shafarevich groups",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7331",
+    "user": "wuthrich"
+}
+```
 Assignee: davidloeffler
 
 CC:  was rlm
@@ -21,38 +31,99 @@ E.sha().p_primary_bound(5)
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7331
+
+
+
+
 
 ---
 
-Comment by wuthrich created at 2009-10-28 13:00:47
+archive/issue_comments_061301.json:
+```json
+{
+    "body": "exported against sage 4.2.alpha1",
+    "created_at": "2009-10-28T13:00:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7331",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7331#issuecomment-61301",
+    "user": "wuthrich"
+}
+```
 
 exported against sage 4.2.alpha1
 
 
+
 ---
 
-Comment by wuthrich created at 2009-10-28 13:02:44
+archive/issue_comments_061302.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-10-28T13:02:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7331",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7331#issuecomment-61302",
+    "user": "wuthrich"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_061303.json:
+```json
+{
+    "body": "Attachment\n\nThis patch allows now for non-split multiplicative reduction and for p=3 when the rank is 0. (As we do not need p-adic heights in this case)",
+    "created_at": "2009-10-28T13:02:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7331",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7331#issuecomment-61303",
+    "user": "wuthrich"
+}
+```
 
 Attachment
 
 This patch allows now for non-split multiplicative reduction and for p=3 when the rank is 0. (As we do not need p-adic heights in this case)
 
 
+
 ---
 
-Comment by rlm created at 2009-10-28 16:28:35
+archive/issue_comments_061304.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2009-10-28T16:28:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7331",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7331#issuecomment-61304",
+    "user": "rlm"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by rlm created at 2009-10-28 16:28:35
+archive/issue_comments_061305.json:
+```json
+{
+    "body": "For `p=3`, an error is getting triggered in computation of the p-adic regulator:\n\n\n```\nsage: E = EllipticCurve('148a')\nsage: E.is_surjective(3)\n(True, None)\nsage: E.has_additive_reduction(3)\nFalse\nsage: E.has_nonsplit_multiplicative_reduction(3)\nFalse\nsage: E.is_good(3)\nTrue\nsage: E.is_ordinary(3)\nTrue\nsage: E.sha().p_primary_bound(3)\nBOOM\n```\n\n\nI have a feeling that this just means that the documentation needs to include the rank 0 condition when `p=3`:\n\n\n```\nE.rank()\n1\n```\n",
+    "created_at": "2009-10-28T16:28:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7331",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7331#issuecomment-61305",
+    "user": "rlm"
+}
+```
 
 For `p=3`, an error is getting triggered in computation of the p-adic regulator:
 
@@ -84,9 +155,20 @@ E.rank()
 
 
 
+
 ---
 
-Comment by rlm created at 2009-10-28 16:58:01
+archive/issue_comments_061306.json:
+```json
+{
+    "body": "This one is a different failure:\n\n```\nsage: E = EllipticCurve('336c')\nsage: E.rank()\n0\nsage: E.is_surjective(3)\n(True, None)\nsage: E.has_additive_reduction(3)\nFalse\nsage: E.has_nonsplit_multiplicative_reduction(3)\nFalse\nsage: E.is_good(3)\nFalse\nsage: E.is_ordinary(3)\nTrue\nsage: E.has_split_multiplicative_reduction(3)\nTrue\nsage: E.sha().p_primary_bound(3)\nTraceback (most recent call last):\n/space/rlm/sage-4.2.alpha0-x86_64-Linux/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/sha_tate.pyc in p_primary_bound(self, p)\n    588             if not su :\n    589                 raise ValueError, \"The mod-p Galois representation is not surjective. Current knowledge about Euler systems does not provide an upper bound in this case. Try an_padic for a conjectural bound.\"\n--> 590             shan = self.an_padic(p,prec = 0,use_twists=True)\n    591             if shan == 0:\n    592                 raise RuntimeError, \"There is a bug in an_padic.\"\n\n/space/rlm/sage-4.2.alpha0-x86_64-Linux/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/sha_tate.pyc in an_padic(self, p, prec, use_twists)\n    450             not_yet_enough_prec = True\n    451             while not_yet_enough_prec:\n--> 452                 lps = lp.series(n,quadratic_twist=D,prec=r+1)\n    453                 lstar = lps[r]\n    454                 if (lstar != 0) or (prec != 0):\n\n/space/rlm/sage-4.2.alpha0-x86_64-Linux/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/padic_lseries.pyc in series(self, n, quadratic_twist, prec)\n    762                 for ell in prime_divisors(D):\n    763                     if valuation(self._E.conductor(),ell) > valuation(D,ell) :\n--> 764                         raise ValueError, \"can not twist a curve of conductor (=%s) by the quadratic twist (=%s).\"%(self._E.conductor(),D)\n    765\n    766\n\nValueError: can not twist a curve of conductor (=168) by the quadratic twist (=-4).\n```\n",
+    "created_at": "2009-10-28T16:58:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7331",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7331#issuecomment-61306",
+    "user": "rlm"
+}
+```
 
 This one is a different failure:
 
@@ -134,38 +216,95 @@ ValueError: can not twist a curve of conductor (=168) by the quadratic twist (=-
 
 
 
+
 ---
 
-Comment by wuthrich created at 2009-10-28 18:48:29
+archive/issue_comments_061307.json:
+```json
+{
+    "body": "I agree that I should change the documentation about p=3 => rank 0. I prefer not to catch them at the start of `p_primary_bound` since in principle it should work. The only issue is that Kedlaya's algorithm is not implemented in sage for p=3. \n\nBut I can not reproduce your second issue. This should have been solved by #6455, merge in 4.2.alpha1.",
+    "created_at": "2009-10-28T18:48:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7331",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7331#issuecomment-61307",
+    "user": "wuthrich"
+}
+```
 
 I agree that I should change the documentation about p=3 => rank 0. I prefer not to catch them at the start of `p_primary_bound` since in principle it should work. The only issue is that Kedlaya's algorithm is not implemented in sage for p=3. 
 
 But I can not reproduce your second issue. This should have been solved by #6455, merge in 4.2.alpha1.
 
 
+
 ---
+
+archive/issue_comments_061308.json:
+```json
+{
+    "body": "Attachment\n\nto be applied after teh first patch",
+    "created_at": "2009-10-28T18:50:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7331",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7331#issuecomment-61308",
+    "user": "wuthrich"
+}
+```
 
 Attachment
 
 to be applied after teh first patch
 
 
+
 ---
 
-Comment by rlm created at 2009-10-30 17:30:11
+archive/issue_comments_061309.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2009-10-30T17:30:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7331",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7331#issuecomment-61309",
+    "user": "rlm"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by rlm created at 2009-10-30 17:30:19
+archive/issue_comments_061310.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-10-30T17:30:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7331",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7331#issuecomment-61310",
+    "user": "rlm"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-31 16:27:15
+archive/issue_comments_061311.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-10-31T16:27:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7331",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7331#issuecomment-61311",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 4253: polybori interface: equality operator for navigators
 
-Issue created by migration from https://trac.sagemath.org/ticket/4253
-
-Original creator: PolyBoRi
-
-Original creation time: 2008-10-08 06:42:41
-
+archive/issues_004253.json:
+```json
+{
+    "body": "Assignee: malb\n\nKeywords: polybori\n\n\n```\nsage: r.<x,y>=BooleanPolynomialRing(2)\n\nsage: p=r(\"0\")\nsage: p.navigation()==p.navigation()\nFalse\n```\n\nShould be True, probably `__eq__` not implemented.\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4253\n\n",
+    "created_at": "2008-10-08T06:42:41Z",
+    "labels": [
+        "commutative algebra",
+        "major",
+        "bug"
+    ],
+    "title": "polybori interface: equality operator for navigators",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4253",
+    "user": "PolyBoRi"
+}
+```
 Assignee: malb
 
 Keywords: polybori
@@ -23,28 +33,78 @@ Should be True, probably `__eq__` not implemented.
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/4253
+
+
+
+
 
 ---
+
+archive/issue_comments_030937.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-10-08T14:17:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4253",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4253#issuecomment-30937",
+    "user": "malb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by PolyBoRi created at 2008-10-09 06:48:43
+archive/issue_comments_030938.json:
+```json
+{
+    "body": "thanks, works :-)",
+    "created_at": "2008-10-09T06:48:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4253",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4253#issuecomment-30938",
+    "user": "PolyBoRi"
+}
+```
 
 thanks, works :-)
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-11 06:40:49
+archive/issue_comments_030939.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-10-11T06:40:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4253",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4253#issuecomment-30939",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-11 06:40:49
+archive/issue_comments_030940.json:
+```json
+{
+    "body": "Merged in Sage 3.1.3.rc0",
+    "created_at": "2008-10-11T06:40:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4253",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4253#issuecomment-30940",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.1.3.rc0

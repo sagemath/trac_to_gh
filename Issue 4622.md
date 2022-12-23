@@ -1,11 +1,21 @@
 # Issue 4622: Bug in variety()
 
-Issue created by migration from https://trac.sagemath.org/ticket/4622
-
-Original creator: SimonKing
-
-Original creation time: 2008-11-26 13:57:39
-
+archive/issues_004622.json:
+```json
+{
+    "body": "Assignee: malb\n\nKeywords: variety triang.lib\n\nReported by Alex Raichev at http://groups.google.com/group/sage-support/browse_thread/thread/39b5eeeddebd1910\n\nSlightly simplifying Alex's example, we have\n\n```\nsage: R.<w,z>= PolynomialRing(QQ,2,order='lex')\nsage: F= 19 -20*z -20*w +5*z^2 +14*z*w +5*w^2 -2*z^2*w -2*z*w^2 +z^2*w^2\nsage: G= (w*z-1)*F\nsage: I=ideal([G]+G.gradient())\nsage: I=ideal(I.groebner_basis())\nsage: I\nIdeal (w^2 - 2*w - 17/5*z^4 + 434/25*z^3 - 817/25*z^2 + 672/25*z - 179/25, w*z - w + 33/28*z^4 - 433/70*z^3 + 869/70*z^2 - 839/70*z + 641/140, z^5 - 27/5*z^4 + 56/5*z^3 - 56/5*z^2 + 27/5*z - 1) of Multivariate Polynomial Ring in w, z over Rational Field\nsage: I.variety()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n...\n```\n\n\nI repeat the command `I.variety()`, because then the Traceback provides one bit more of information:\n\n```\nsage: I.variety()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/king/Projekte/Cohom/CAS/fullBens/src/<ipython console> in <module>()\n\n/home/king/SAGE/devel/sage-3.1.4/local/lib/python2.5/site-packages/sage/rings/polynomial/multi_polynomial_ideal.pyc in variety(self, ring)\n   1528         P = self.ring()\n   1529         if ring is not None: P = P.change_ring(ring)\n-> 1530         T = self.triangular_decomposition('singular:triangLfak')\n   1531\n   1532         V = []\n\n/home/king/SAGE/devel/sage-3.1.4/local/lib/python2.5/site-packages/sage/rings/polynomial/multi_polynomial_ideal.pyc in triangular_decomposition(self, algorithm, singular)\n    777             Tbar = Ibar.triangL()\n    778         elif algorithm == \"singular:triangLfak\":\n--> 779             Tbar = Ibar.triangLfak()\n    780         elif algorithm == \"singular:triangM\":\n    781             Tbar = Ibar.triangM()\n\n/home/king/SAGE/devel/sage-3.1.4/local/lib/python2.5/site-packages/sage/interfaces/expect.pyc in __call__(self, *args, **kwds)\n   1248\n   1249     def __call__(self, *args, **kwds):\n-> 1250         return self._obj.parent().function_call(self._name, [self._obj] + list(args), kwds)\n   1251\n   1252     def help(self):\n\n/home/king/SAGE/devel/sage-3.1.4/local/lib/python2.5/site-packages/sage/interfaces/expect.pyc in function_call(self, function, args, kwds)\n   1168\n   1169         return self.new(\"%s(%s)\"%(function, \",\".join([s.name() for s in args]+\n-> 1170                                                      ['%s=%s'%(key,value.name()) for key, value in kwds.items()])))\n   1171\n   1172     def call(self, function_name, *args, **kwds):\n\n/home/king/SAGE/devel/sage-3.1.4/local/lib/python2.5/site-packages/sage/interfaces/expect.pyc in new(self, code)\n   1028\n   1029     def new(self, code):\n-> 1030         return self(code)\n   1031\n   1032     ###################################################################\n\n/home/king/SAGE/devel/sage-3.1.4/local/lib/python2.5/site-packages/sage/interfaces/singular.pyc in __call__(self, x, type)\n    591             x = str(x)[1:-1]\n    592\n--> 593         return SingularElement(self, type, x, False)\n    594\n    595\n\n/home/king/SAGE/devel/sage-3.1.4/local/lib/python2.5/site-packages/sage/interfaces/singular.pyc in __init__(self, parent, type, value, is_name)\n   1007             except (RuntimeError, TypeError, KeyboardInterrupt), x:\n   1008                 self._session_number = -1\n-> 1009                 raise TypeError, x\n   1010         else:\n   1011             self._name = value\n\nTypeError: Singular error:\n// ** redefining zerlegt\n   ? wrong range[2] in ideal/module(1)\n   ? error occurred in triang.lib::Erw_ggt_oT line 509: `parameter poly f; parameter  poly g; parameter  int v; parameter  ideal T;  `\n   ? wrong type declaration. type 'help poly;'\n   ? leaving triang.lib::Erw_ggt_oT\n   ? `f` is undefined\n   ? error occurred in triang.lib::Erw_ggt_oT line 511: `    poly p1 = f;`\n   ? expected poly-expression. type 'help poly;'\n   ? leaving triang.lib::Erw_ggt_oT\n   skipping text from `;` error at token `)`\n   ? leaving triang.lib::invertieren_oT\n   ? leaving triang.lib::normieren_oT\n   ? leaving triang.lib::Erw_ggt_oT\n   ? leaving triang.lib::invertieren_oT\n   ? leaving triang.lib::invertieren\n   ? leaving triang.lib::triangLbas\n   ? leaving triang.lib::triangLfak\n```\n\n\nSome observations:\n* There is a slight inconvenience, but not yet a bug: Singular apparently defines a name `zerlegt` and does not properly kill it. The following line in the Traceback only occurs when running `I.variety()` for the second time.\n\n```\nTypeError: Singular error:\n// ** redefining zerlegt\n```\n\n\n* The Traceback continues\n\n```\n   ? wrong range[2] in ideal/module(1)\n   ? error occurred in triang.lib::Erw_ggt_oT line 509: `parameter poly f; parameter  poly g; parameter  int v; parameter  ideal T;  `\n   ? wrong type declaration. type 'help poly;'\n```\n\n  hence, it looks like it was tried to address the second generator of an ideal or module in Singular, in order to assign it to either `f` or `g` to the arguments of the function `Erw_ggt_oT` in `triang.lib` -- which failed since the ideal or module only has a single generator.\n\n* Does that error come from a bug in Sage or a bug in Singular's `triang.lib`? It seems to me it is in `triang.lib`, since the Traceback ends with\n\n```\n   ? leaving triang.lib::Erw_ggt_oT\n   ? `f` is undefined\n   ? error occurred in triang.lib::Erw_ggt_oT line 511: `    poly p1 = f;`\n   ? expected poly-expression. type 'help poly;'\n   ? leaving triang.lib::Erw_ggt_oT\n   skipping text from `;` error at token `)`\n   ? leaving triang.lib::invertieren_oT\n   ? leaving triang.lib::normieren_oT\n   ? leaving triang.lib::Erw_ggt_oT\n   ? leaving triang.lib::invertieren_oT\n   ? leaving triang.lib::invertieren\n   ? leaving triang.lib::triangLbas\n   ? leaving triang.lib::triangLfak\n```\n \n  and AFAIK only `triangLfak` is directly called by Sage, the rest (in particular the failing call of `Erw_ggt_oT`) happens internally in `triang.lib`.\n\nBut even if it is a Singular issue, Michael Abshoff asked me to post it here, so I did.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4622\n\n",
+    "created_at": "2008-11-26T13:57:39Z",
+    "labels": [
+        "commutative algebra",
+        "major",
+        "bug"
+    ],
+    "title": "Bug in variety()",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4622",
+    "user": "SimonKing"
+}
+```
 Assignee: malb
 
 Keywords: variety triang.lib
@@ -109,7 +119,7 @@ TypeError: Singular error:
 
 
 Some observations:
- * There is a slight inconvenience, but not yet a bug: Singular apparently defines a name `zerlegt` and does not properly kill it. The following line in the Traceback only occurs when running `I.variety()` for the second time.
+* There is a slight inconvenience, but not yet a bug: Singular apparently defines a name `zerlegt` and does not properly kill it. The following line in the Traceback only occurs when running `I.variety()` for the second time.
 
 ```
 TypeError: Singular error:
@@ -117,7 +127,7 @@ TypeError: Singular error:
 ```
 
 
- * The Traceback continues
+* The Traceback continues
 
 ```
    ? wrong range[2] in ideal/module(1)
@@ -127,7 +137,7 @@ TypeError: Singular error:
 
   hence, it looks like it was tried to address the second generator of an ideal or module in Singular, in order to assign it to either `f` or `g` to the arguments of the function `Erw_ggt_oT` in `triang.lib` -- which failed since the ideal or module only has a single generator.
 
- * Does that error come from a bug in Sage or a bug in Singular's `triang.lib`? It seems to me it is in `triang.lib`, since the Traceback ends with
+* Does that error come from a bug in Sage or a bug in Singular's `triang.lib`? It seems to me it is in `triang.lib`, since the Traceback ends with
 
 ```
    ? leaving triang.lib::Erw_ggt_oT
@@ -143,15 +153,31 @@ TypeError: Singular error:
    ? leaving triang.lib::invertieren
    ? leaving triang.lib::triangLbas
    ? leaving triang.lib::triangLfak
-}}} 
+```
+ 
   and AFAIK only `triangLfak` is directly called by Sage, the rest (in particular the failing call of `Erw_ggt_oT`) happens internally in `triang.lib`.
 
 But even if it is a Singular issue, Michael Abshoff asked me to post it here, so I did.
 
+Issue created by migration from https://trac.sagemath.org/ticket/4622
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-11-28 00:35:34
+archive/issue_comments_034760.json:
+```json
+{
+    "body": "Another, simpler example by Alex:\n\n```\n---------------------------------------------------------------------- \n---------------------------------------------------------------------- \nsage: R.<w>= PolynomialRing(QQ,1) \nsage: H=w \nsage: I= ideal(H); I \nIdeal (w) of Multivariate Polynomial Ring in w over Rational Field \nsage: I.variety() \n--------------------------------------------------------------------------- \nTypeError                                 Traceback (most recent call \nlast) \n/Users/arai021/<ipython console> in <module>() \n/Applications/sage/local/lib/python2.5/site-packages/sage/rings/ \npolynomial/multi_polynomial_ideal.pyc in variety(self, ring) \n   1528         P = self.ring() \n   1529         if ring is not None: P = P.change_ring(ring) \n-> 1530         T = self.triangular_decomposition \n('singular:triangLfak') \n   1531 \n   1532         V = [] \n/Applications/sage/local/lib/python2.5/site-packages/sage/rings/ \npolynomial/multi_polynomial_ideal.pyc in triangular_decomposition \n(self, algorithm, singular) \n    740         P = self.ring() \n    741 \n--> 742         is_groebner = self.basis_is_groebner() \n    743 \n    744         # make sure to work w.r.t. 'lex' \n/Applications/sage/local/lib/python2.5/site-packages/sage/rings/ \npolynomial/multi_polynomial_ideal.pyc in basis_is_groebner(self, \nsingular) \n   1237         self.ring()._singular_().set_ring() \n   1238 \n-> 1239         F = singular( self.gens(), \"module\" ) \n   1240         LTF = singular( [f.lt() for f in self.gens()] , \n\"module\" ) \n   1241 \n/Applications/sage/local/lib/python2.5/site-packages/sage/interfaces/ \nsingular.pyc in __call__(self, x, type) \n    591             x = str(x)[1:-1] \n    592 \n--> 593         return SingularElement(self, type, x, False) \n    594 \n    595 \n/Applications/sage/local/lib/python2.5/site-packages/sage/interfaces/ \nsingular.pyc in __init__(self, parent, type, value, is_name) \n   1007             except (RuntimeError, TypeError, \nKeyboardInterrupt), x: \n   1008                 self._session_number = -1 \n-> 1009                 raise TypeError, x \n   1010         else: \n   1011             self._name = value \nTypeError: Singular error: \n   ? error occurred in STDIN line 23: `module sage4=w,;` \n   ? expected module-expression. type 'help module;' \n   ? last reserved name was `module` \n error at token `;` \n```\n",
+    "created_at": "2008-11-28T00:35:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4622",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4622#issuecomment-34760",
+    "user": "mabshoff"
+}
+```
 
 Another, simpler example by Alex:
 
@@ -216,9 +242,20 @@ TypeError: Singular error:
 
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-01 00:42:47
+archive/issue_comments_034761.json:
+```json
+{
+    "body": "Simon,\n\nplease make the summary of tickets more descriptive.\n\nCheers,\n\nMichael",
+    "created_at": "2008-12-01T00:42:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4622",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4622#issuecomment-34761",
+    "user": "mabshoff"
+}
+```
 
 Simon,
 
@@ -229,16 +266,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by malb created at 2009-08-25 19:27:25
+archive/issue_comments_034762.json:
+```json
+{
+    "body": "This seems to be fixed in (at least) 4.1.1. Simon, can you confirm this?",
+    "created_at": "2009-08-25T19:27:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4622",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4622#issuecomment-34762",
+    "user": "malb"
+}
+```
 
 This seems to be fixed in (at least) 4.1.1. Simon, can you confirm this?
 
 
+
 ---
 
-Comment by SimonKing created at 2009-08-25 21:29:37
+archive/issue_comments_034763.json:
+```json
+{
+    "body": "Replying to [comment:3 malb]:\n> This seems to be fixed in (at least) 4.1.1. Simon, can you confirm this?\n\nWith Sage 4.1, in the \"simpler\" example, I get\n\n```\nsage: sage: R.<w>= PolynomialRing(QQ,1)\nsage: sage: H=w\nsage: sage: I= ideal(H); I\nIdeal (w) of Multivariate Polynomial Ring in w over Rational Field\nsage: sage: I.variety()\nverbose 0 (1744: multi_polynomial_ideal.py, variety) Warning: falling back to very slow toy implementation.\n[{w: 0}]\n```\n\nwhich seems to be correct, or at least it doesn't crash. \n\nThe original example works as well:\n\n```\nsage: R.<w,z>= PolynomialRing(QQ,2,order='lex')\nsage: F= 19 -20*z -20*w +5*z^2 +14*z*w +5*w^2 -2*z^2*w -2*z*w^2 +z^2*w^2\nsage: G= (w*z-1)*F\nsage: I=ideal([G]+G.gradient())\nsage: I=ideal(I.groebner_basis())\nsage: I\nIdeal (w^2 - 2*w - 17/5*z^4 + 434/25*z^3 - 817/25*z^2 + 672/25*z - 179/25, w*z - w + 33/28*z^4 - 433/70*z^3 + 869/70*z^2 - 839/70*z + 641/140, z^5 - 27/5*z^4 + 56/5*z^3 - 56/5*z^2 + 27/5*z - 1) of Multivariate Polynomial Ring in w, z over Rational Field\nsage: I.variety()\n[{z: 1, w: 1}]\n```\n\n\nSo, yes, the crash seems fixed since at least Sage 4.1, probably when Singular was upgraded.",
+    "created_at": "2009-08-25T21:29:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4622",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4622#issuecomment-34763",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:3 malb]:
 > This seems to be fixed in (at least) 4.1.1. Simon, can you confirm this?
@@ -275,8 +334,19 @@ sage: I.variety()
 So, yes, the crash seems fixed since at least Sage 4.1, probably when Singular was upgraded.
 
 
+
 ---
 
-Comment by malb created at 2009-08-25 22:38:03
+archive/issue_comments_034764.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-08-25T22:38:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4622",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4622#issuecomment-34764",
+    "user": "malb"
+}
+```
 
 Resolution: fixed

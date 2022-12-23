@@ -1,11 +1,21 @@
 # Issue 6482: multivariate polynomial substitution has a design flaw
 
-Issue created by migration from https://trac.sagemath.org/ticket/6482
-
-Original creator: was
-
-Original creation time: 2009-07-08 13:08:58
-
+archive/issues_006482.json:
+```json
+{
+    "body": "Assignee: malb\n\n\n```\nOn Wed, Jul 8, 2009 at 1:28 AM, Kwankyu<...> wrote:\n>\n> Hi,\n>\n> I was surprised to see\n>\n> sage: R.<x,y>=QQ[]\n> sage: g=x+y\n> sage: g.subs({x:x+1,y:x*y})\n> x*y + x + y + 1\n>\n> So the order of substitution matters...unfortunately.\n>\n> sage: g.subs({x:x+1}).subs({y:x*y})\n> x*y + x + 1\n> sage: g.subs({y:x*y}).subs({x:x+1})\n> x*y + x + y + 1\n>\n> So the order seems to be from right to left. This seems to me\n> unnatural. Anyway this is undocumented. \n\nActually, i guess it is documented.  However, I consider it a serious design flaw.\nMany thanks for pointing this out!!\n\nI consider this a serious design flaw for the following reasons:\n\n (1) it is too hard to understand the above behavior, since it depends on the hash values symbolic variables, which might possibly be system-dependent.\n\n (2) it is totally inconsistent with the behavior for symbolic expressions, where things are done right.\n\n (3) it is totally inconsistent with the behavior of *homomorphisms*, where things are also done right.\n\nHere is a session to illustrate the above points:\n\n# BAD\nsage: R.<x,y>=QQ[]\nsage: g=x+y\nsage: g.subs({x:x+1,y:x*y})\nx*y + x + y + 1\n\n# BAD\nsage: R.<x,y>=QQ[]\nsage: g=x+y\nsage: g.subs(x=x+1,y=x*y)\nx*y + x + y + 1\n\n# GOOD\nsage: R.<x,y>=QQ[]\nsage: phi = R.hom([x+1,x*y])\nsage: g=x+y\nsage: phi(g)\nx*y + x + 1\n\n# GOOD\nsage: var('x,y')\nsage: g = x+y\nsage: g.subs({x:x+1,y:x*y})\nx*y + x + 1\n\n# GOOD\nsage: var('x,y')\nsage: g = x+y\nsage: g.subs(x=x+1,y=x*y)\nx*y + x + 1\n        \n\n> What should be done to this?\n\n1. I suggest that for now you use Hom, as illustrated above, as a workaround.  \n\n2. I think subs should be reimplemented using Hom ASAP.  Note that this could break existing code, so will have to be done carefully.    We can leave the old behavior in for speed, but as a non-default option.\n\n3. Come up with a fast way to implement the new behavior. \n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6482\n\n",
+    "created_at": "2009-07-08T13:08:58Z",
+    "labels": [
+        "commutative algebra",
+        "critical",
+        "bug"
+    ],
+    "title": "multivariate polynomial substitution has a design flaw",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6482",
+    "user": "was"
+}
+```
 Assignee: malb
 
 
@@ -87,10 +97,25 @@ x*y + x + 1
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6482
+
+
+
+
 
 ---
 
-Comment by malb created at 2009-07-08 13:56:42
+archive/issue_comments_052402.json:
+```json
+{
+    "body": "the main use-case for which I wrote it is (which **must** be fast):\n\n\n```\nsage: R.<x,y>=QQ[]\nsage: g=x+y\nsage: %timeit g.subs({x:2,y:1})\n10000 loops, best of 3: 62.9 \u00b5s per loop\n```\n\n\nThe performance for elements in R is:\n\n\n```\nsage: %timeit g.subs({x:x+1,y:x*y})\n10000 loops, best of 3: 153 \u00b5s per loop\n```\n\n\nHowever, to my surprise `hom` is faster:\n\n\n```\nsage: R.<x,y>=QQ[]\nsage: phi = R.hom([x+1,x*y])\nsage: g=x+y\nsage: %timeit phi(g)\n10000 loops, best of 3: 45.8 \u00b5s per loop\n```\n\n\n\nIs it because it caches or is really just better code?",
+    "created_at": "2009-07-08T13:56:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6482",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6482#issuecomment-52402",
+    "user": "malb"
+}
+```
 
 the main use-case for which I wrote it is (which **must** be fast):
 
@@ -128,9 +153,20 @@ sage: %timeit phi(g)
 Is it because it caches or is really just better code?
 
 
+
 ---
 
-Comment by was created at 2009-07-08 21:43:05
+archive/issue_comments_052403.json:
+```json
+{
+    "body": "> Is it because it caches or is really just better code? \n\nHom is implemented by Singular when the base ring is a singular ring. \n\n```\nsage: R.<x,y>=GF(next_prime(10^9))[]\nsage: phi = R.hom([x+1,x*y])\nsage: g=x+y\nsage: print type(g)\nsage: timeit('phi(g)')\n<type 'sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular'>\n625 loops, best of 3: 39.7 \u00b5s per loop\nsage: R.<x,y>=GF(next_prime(10^10))[]\nsage: phi = R.hom([x+1,x*y])\nsage: g=x+y\nsage: print type(g)\nsage: timeit('phi(g)')\n<class 'sage.rings.polynomial.multi_polynomial_element.MPolynomial_polydict'>\n625 loops, best of 3: 305 \u00b5s per loop     \n```\n",
+    "created_at": "2009-07-08T21:43:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6482",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6482#issuecomment-52403",
+    "user": "was"
+}
+```
 
 > Is it because it caches or is really just better code? 
 
@@ -155,9 +191,20 @@ sage: timeit('phi(g)')
 
 
 
+
 ---
 
-Comment by malb created at 2009-07-08 22:23:14
+archive/issue_comments_052404.json:
+```json
+{
+    "body": "So it is `_im_gens_` in `MPolynomial_libsingular` then (sorry for not checking myself earlier). \n\nIt seems the most straight-forward implementation possible including the comment `#TODO: very slow` in `_im_gens_` wins for small examples, but for bigger ones we get:\n\n\n```\nsage: P.<a,b,c,d,e> = PolynomialRing(QQ)\nsage: f = P.random_element(degree=3,terms=50)\nsage: g = {a:b,b:c,c:d,d:e,e:a}\nsage: %timeit f.subs(g)\n10000 loops, best of 3: 138 \u00b5s per loop\n```\n\n\n\n```\nsage: phi = P.hom([b,c,d,e,a])\nsage: %timeit phi(f)\n1000 loops, best of 3: 893 \u00b5s per loop\n```\n",
+    "created_at": "2009-07-08T22:23:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6482",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6482#issuecomment-52404",
+    "user": "malb"
+}
+```
 
 So it is `_im_gens_` in `MPolynomial_libsingular` then (sorry for not checking myself earlier). 
 
@@ -182,11 +229,24 @@ sage: %timeit phi(f)
 
 
 
+
 ---
+
+archive/issue_comments_052405.json:
+```json
+{
+    "body": "Attachment\n\n**Performance**\n\n\n```python\nsage: P.<a,b,c,d,e> = PolynomialRing(QQ)\nsage: f = P.random_element(degree=3,terms=50)\nsage: g = {a:b,b:c,c:d,d:e,e:a}\nsage: %timeit f.subs(g)\n1000 loops, best of 3: 271 \u00b5s per loop\n```\n\n\n\n```python\nsage: phi = P.hom([b,c,d,e,a])\nsage: %timeit phi(f)\n1000 loops, best of 3: 939 \u00b5s per loop\n```\n\n\n\n```python\nsage: phi(f)\n-a^2*b - 11/2*b^3 - 8*a^2*c + 1/51*b*c^2 + 1/2*c^3 - a^2*d + 1/3*a*b*d - 2/11*a*c*d + 195*b*c*d + 1/3*a*d^2 + 2*b*d^2 - c*d^2 - 2/3*a^2*e + 1/2*a*b*e - 203*b^2*e + 1/4*a*c*e + b*c*e - 5*c^2*e + 6*a*e^2 + b*e^2 - 1/3*c*e^2 - 5*d*e^2 + 3*e^3 + 1/3*a^2 - a*b - 7/48*a*c - 2*b*c - 53/2*c^2 - 1/3*a*d - 1/2*b*d + c*d - d^2 - a*e - 4*b*e - d*e + 13*e^2 - 2*a - 1/2*b - c + 9/2*d - 1/2\nsage: f.sub\nf.sub_m_mul_q  f.subs         f.substitute\nsage: f.subs(g)\n-a^2*b - 11/2*b^3 - 8*a^2*c + 1/51*b*c^2 + 1/2*c^3 - a^2*d + 1/3*a*b*d - 2/11*a*c*d + 195*b*c*d + 1/3*a*d^2 + 2*b*d^2 - c*d^2 - 2/3*a^2*e + 1/2*a*b*e - 203*b^2*e + 1/4*a*c*e + b*c*e - 5*c^2*e + 6*a*e^2 + b*e^2 - 1/3*c*e^2 - 5*d*e^2 + 3*e^3 + 1/3*a^2 - a*b - 7/48*a*c - 2*b*c - 53/2*c^2 - 1/3*a*d - 1/2*b*d + c*d - d^2 - a*e - 4*b*e - d*e + 13*e^2 - 2*a - 1/2*b - c + 9/2*d - 1/2\n```\n",
+    "created_at": "2009-09-09T20:12:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6482",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6482#issuecomment-52405",
+    "user": "malb"
+}
+```
 
 Attachment
 
-*Performance*
+**Performance**
 
 
 ```python
@@ -218,18 +278,40 @@ sage: f.subs(g)
 
 
 
+
 ---
 
-Comment by jason created at 2009-09-19 02:34:48
+archive/issue_comments_052406.json:
+```json
+{
+    "body": "Note that since dictionaries do not preserve order, in python, there is no way to distinguish between ` {x:x+1,y:x*y} ` and ` {y:x*y, x:x+1} `.  There are classes out there that implement ordered dictionaries, but if the feature request depends on looping through a standard dictionary in the order that the dictionary was specified, that seems pretty impossible.\n\nNote that this also means that there is no distinction between these calls: ` g(x=3, y=x) ` and ` g(y=x, x=3) `.",
+    "created_at": "2009-09-19T02:34:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6482",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6482#issuecomment-52406",
+    "user": "jason"
+}
+```
 
 Note that since dictionaries do not preserve order, in python, there is no way to distinguish between ` {x:x+1,y:x*y} ` and ` {y:x*y, x:x+1} `.  There are classes out there that implement ordered dictionaries, but if the feature request depends on looping through a standard dictionary in the order that the dictionary was specified, that seems pretty impossible.
 
 Note that this also means that there is no distinction between these calls: ` g(x=3, y=x) ` and ` g(y=x, x=3) `.
 
 
+
 ---
 
-Comment by jason created at 2009-09-19 02:41:59
+archive/issue_comments_052407.json:
+```json
+{
+    "body": "To emphasize the point, here is the result after applying the patch:\n\n\n```\nsage: R.<x,y>=QQ[] \nsage: g=x+y \nsage: g.subs({x:x+1,y:x*y}) \nx*y + x + 1\nsage: g.subs({y:x*y, x:x+1})\nx*y + x + 1\n```\n\n\nNote that things are *not* in order in the second example.\n\nI think this is probably hopeless as stated.  If the substitutions were given as a list of tuples, then you could depend on the order.  In other words, if you had something like `g.subs([(y,x*y), (x,x+1)])` then you could say something about doing the substitutions in order.  Or even if you did something like `g.subs((y,x*y), (x,x+1))` you could do something in order, since *args is a list that preserves the order of the arguments.",
+    "created_at": "2009-09-19T02:41:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6482",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6482#issuecomment-52407",
+    "user": "jason"
+}
+```
 
 To emphasize the point, here is the result after applying the patch:
 
@@ -249,24 +331,57 @@ Note that things are *not* in order in the second example.
 I think this is probably hopeless as stated.  If the substitutions were given as a list of tuples, then you could depend on the order.  In other words, if you had something like `g.subs([(y,x*y), (x,x+1)])` then you could say something about doing the substitutions in order.  Or even if you did something like `g.subs((y,x*y), (x,x+1))` you could do something in order, since *args is a list that preserves the order of the arguments.
 
 
+
 ---
 
-Comment by malb created at 2009-09-19 10:36:05
+archive/issue_comments_052408.json:
+```json
+{
+    "body": "It never even occurred to me that one could want to substitute in the order of the dictionary, so this is not what I tried to provide. 'ordered' to me only means 'by variables'. To me, the second example is in order but it might be a good idea to add a note to the docstring to clarify the behaviour.",
+    "created_at": "2009-09-19T10:36:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6482",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6482#issuecomment-52408",
+    "user": "malb"
+}
+```
 
 It never even occurred to me that one could want to substitute in the order of the dictionary, so this is not what I tried to provide. 'ordered' to me only means 'by variables'. To me, the second example is in order but it might be a good idea to add a note to the docstring to clarify the behaviour.
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-05 07:50:07
+archive/issue_comments_052409.json:
+```json
+{
+    "body": "I think that this patch should get a positive review.  The behavior after the patch is the correct behavior and is consistent with the rest of Sage.\n\nI think Jason just misinterpreted what the ticket was for.",
+    "created_at": "2009-10-05T07:50:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6482",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6482#issuecomment-52409",
+    "user": "mhansen"
+}
+```
 
 I think that this patch should get a positive review.  The behavior after the patch is the correct behavior and is consistent with the rest of Sage.
 
 I think Jason just misinterpreted what the ticket was for.
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-15 05:19:01
+archive/issue_comments_052410.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-10-15T05:19:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6482",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6482#issuecomment-52410",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

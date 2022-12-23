@@ -1,11 +1,21 @@
 # Issue 5888: quadratic forms added a stupid/broken new function to sage for random integer.  Remove!
 
-Issue created by migration from https://trac.sagemath.org/ticket/5888
-
-Original creator: was
-
-Original creation time: 2009-04-24 06:53:32
-
+archive/issues_005888.json:
+```json
+{
+    "body": "Assignee: somebody\n\nCC:  cremona\n\n\n```\n\n\nOn Thu, Apr 23, 2009 at 11:51 PM, Bill Hart <goodwillhart@googlemail.com> wrote:\n> Yeah, the random_int_upto function looks broken.\n> random_int_upto(2^100) is always divisible by 2^47. Not very random.\n\n\nI've never heard of that function, and expected it to be something you defined.\nI was surprised to find it is in Sage.\n\nThis was some weird crap that Jon Hanke just added to Sage in his big patch (bomb), evidently.\n\nFile:\t\t/Users/wstein/build/sage-3.4.1/local/lib/python2.5/site-packages/sage/quadratic_forms/extras.py\nDefinition:\trandom_int_upto(n)\nSource:\ndef random_int_upto(n):\n    \"\"\"\n    Returns a random integer x satisfying 0 <= x < n.\n\n    EXAMPLES:\n        sage: x = random_int_upto(10) \n        sage: x >= 0\n        True\n        sage: x < 10\n        True\n    \"\"\"\n    return floor(n * random())\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5888\n\n",
+    "created_at": "2009-04-24T06:53:32Z",
+    "labels": [
+        "basic arithmetic",
+        "critical",
+        "bug"
+    ],
+    "title": "quadratic forms added a stupid/broken new function to sage for random integer.  Remove!",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5888",
+    "user": "was"
+}
+```
 Assignee: somebody
 
 CC:  cremona
@@ -42,10 +52,25 @@ def random_int_upto(n):
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5888
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2009-04-24 07:04:51
+archive/issue_comments_046555.json:
+```json
+{
+    "body": "Well, random() returns a python float, so *boom* for anything large. That function should get a max size check, get deprecated and use generic infrastructure. \n\nCheers,\n\nMichael",
+    "created_at": "2009-04-24T07:04:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5888",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5888#issuecomment-46555",
+    "user": "mabshoff"
+}
+```
 
 Well, random() returns a python float, so *boom* for anything large. That function should get a max size check, get deprecated and use generic infrastructure. 
 
@@ -54,9 +79,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-24 10:53:17
+archive/issue_comments_046556.json:
+```json
+{
+    "body": "John Cremona fixes this at #5834.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-24T10:53:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5888",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5888#issuecomment-46556",
+    "user": "mabshoff"
+}
+```
 
 John Cremona fixes this at #5834.
 
@@ -65,30 +101,74 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by jonhanke created at 2009-04-25 16:40:15
+archive/issue_comments_046557.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-04-25T16:40:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5888",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5888#issuecomment-46557",
+    "user": "jonhanke"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by jonhanke created at 2009-04-25 16:40:15
+archive/issue_comments_046558.json:
+```json
+{
+    "body": "Changing assignee from somebody to jonhanke.",
+    "created_at": "2009-04-25T16:40:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5888",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5888#issuecomment-46558",
+    "user": "jonhanke"
+}
+```
 
 Changing assignee from somebody to jonhanke.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-04 18:16:52
+archive/issue_comments_046559.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-05-04T18:16:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5888",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5888#issuecomment-46559",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-04 18:16:52
+archive/issue_comments_046560.json:
+```json
+{
+    "body": "This has been fixed in Sage 4.0.alpha0 via #5834.\n\nCheers,\n\nMichael",
+    "created_at": "2009-05-04T18:16:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5888",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5888#issuecomment-46560",
+    "user": "mabshoff"
+}
+```
 
 This has been fixed in Sage 4.0.alpha0 via #5834.
 

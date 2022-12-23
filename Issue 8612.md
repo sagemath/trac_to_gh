@@ -1,11 +1,21 @@
 # Issue 8612: potentially horrible multimodular matrix echelon bug
 
-Issue created by migration from https://trac.sagemath.org/ticket/8612
-
-Original creator: was
-
-Original creation time: 2010-03-26 05:46:26
-
+archive/issues_008612.json:
+```json
+{
+    "body": "Assignee: was\n\nI was browsing the code in matrix/misc.pyx, and noticed:\n\n```\nThese lines are in misc.pyx:\n\n        if not proof:\n            verbose(\"Not checking validity of result (since proof=False).\", level=2, caller_name=\"multimod echelon\")\n            break\n        d   = E.denominator()\n        hdE = long(E.height())\n        if True or hdE * self.ncols() * height < prod:\n            break\n        M = prod * p*p*p\n\n```\n\n\nNotice the \"if True\" -- that disables proof checking no matter what!!  This must be removed.  This could get hit in rare cased by, e.g., the modular symbols code, and it would lead to weird inconsistencies later on.... which is something we've seen on big examples.\n\nI'm guessing this was the result of disabling proof checking while developing the code, then never switching it back.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8612\n\n",
+    "created_at": "2010-03-26T05:46:26Z",
+    "labels": [
+        "linear algebra",
+        "blocker",
+        "bug"
+    ],
+    "title": "potentially horrible multimodular matrix echelon bug",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8612",
+    "user": "was"
+}
+```
 Assignee: was
 
 I was browsing the code in matrix/misc.pyx, and noticed:
@@ -29,22 +39,61 @@ Notice the "if True" -- that disables proof checking no matter what!!  This must
 
 I'm guessing this was the result of disabling proof checking while developing the code, then never switching it back.
 
+Issue created by migration from https://trac.sagemath.org/ticket/8612
+
+
+
+
 
 ---
 
-Comment by was created at 2010-03-26 05:51:05
+archive/issue_comments_078034.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-03-26T05:51:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8612",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8612#issuecomment-78034",
+    "user": "was"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_078035.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-03-26T05:51:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8612",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8612#issuecomment-78035",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by rbeezer created at 2010-03-28 23:17:38
+archive/issue_comments_078036.json:
+```json
+{
+    "body": "In \n\n\n```\nd   = E.denominator()\nhdE = long(E.height())\nif True or hdE * self.ncols() * height < prod:\n    break\n```\n\n\ndoes  d  need to multiply  E.height()  at some point in the computation of hdE?  \n\nIt seems so in the algorithm as outlined in step (5) in the docstring.  And if not, does  d  then not need to be computed?  Hopefully, there's something mildly amiss here, but I've not studied the whole routine carefully.\n\nRob",
+    "created_at": "2010-03-28T23:17:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8612",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8612#issuecomment-78036",
+    "user": "rbeezer"
+}
+```
 
 In 
 
@@ -64,9 +113,20 @@ It seems so in the algorithm as outlined in step (5) in the docstring.  And if n
 Rob
 
 
+
 ---
 
-Comment by was created at 2010-03-29 04:29:42
+archive/issue_comments_078037.json:
+```json
+{
+    "body": "Yes, you're right, it needs to be \n\n```\nhdE = long((d*E).height())\n```\n\n\nThe algorithm is described with proof here: http://wstein.org/books/modform/modform/linear_algebra.html#echelon-forms-over\n\nI've posted a part2 patch that fixes the issue you've pointed out.",
+    "created_at": "2010-03-29T04:29:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8612",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8612#issuecomment-78037",
+    "user": "was"
+}
+```
 
 Yes, you're right, it needs to be 
 
@@ -80,51 +140,132 @@ The algorithm is described with proof here: http://wstein.org/books/modform/modf
 I've posted a part2 patch that fixes the issue you've pointed out.
 
 
+
 ---
+
+archive/issue_comments_078038.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-03-29T04:30:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8612",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8612#issuecomment-78038",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by rbeezer created at 2010-03-29 04:35:04
+archive/issue_comments_078039.json:
+```json
+{
+    "body": "OK, looks good then.  Wasn't sure just where to stuff the d.  ;-)\n\nI'm going to run tests, but it may be morning before I have a report.",
+    "created_at": "2010-03-29T04:35:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8612",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8612#issuecomment-78039",
+    "user": "rbeezer"
+}
+```
 
 OK, looks good then.  Wasn't sure just where to stuff the d.  ;-)
 
 I'm going to run tests, but it may be morning before I have a report.
 
 
+
 ---
 
-Comment by rbeezer created at 2010-03-29 05:38:11
+archive/issue_comments_078040.json:
+```json
+{
+    "body": "Passed all tests.  Positive review.  \n\nI'll post a consolidated patch.",
+    "created_at": "2010-03-29T05:38:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8612",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8612#issuecomment-78040",
+    "user": "rbeezer"
+}
+```
 
 Passed all tests.  Positive review.  
 
 I'll post a consolidated patch.
 
 
+
 ---
 
-Comment by rbeezer created at 2010-03-29 05:38:11
+archive/issue_comments_078041.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-03-29T05:38:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8612",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8612#issuecomment-78041",
+    "user": "rbeezer"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by rbeezer created at 2010-03-29 05:39:12
+archive/issue_comments_078042.json:
+```json
+{
+    "body": "Release manager: Apply just this patch.",
+    "created_at": "2010-03-29T05:39:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8612",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8612#issuecomment-78042",
+    "user": "rbeezer"
+}
+```
 
 Release manager: Apply just this patch.
 
 
+
 ---
 
-Comment by was created at 2010-03-29 22:06:58
+archive/issue_comments_078043.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-03-29T22:06:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8612",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8612#issuecomment-78043",
+    "user": "was"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
+
+archive/issue_comments_078044.json:
+```json
+{
+    "body": "Attachment\n\nMerged into sage-4.3.5",
+    "created_at": "2010-03-29T22:06:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8612",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8612#issuecomment-78044",
+    "user": "was"
+}
+```
 
 Attachment
 

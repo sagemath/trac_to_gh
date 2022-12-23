@@ -1,11 +1,21 @@
 # Issue 4288: _magma_init_ bug elliptic curve points
 
-Issue created by migration from https://trac.sagemath.org/ticket/4288
-
-Original creator: robertwb
-
-Original creation time: 2008-10-14 21:11:19
-
+archive/issues_004288.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  was\n\na test is failing, with _magma_init_(), and I wasn't able to fix it, it seems the _magma_().name() implementation is buggy:\n\n```\nFile \"/usr/local/sage-3.1.2/sage/tmp/ell_point.py\", line 1289:\n    sage: P._magma_init_()\nExpected:\n    'EllipticCurve([GF(17)!1,GF(17)!16])![13,4]'\nGot:\n    '_sage_[2]![_sage_[3],_sage_[4]]'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4288\n\n",
+    "created_at": "2008-10-14T21:11:19Z",
+    "labels": [
+        "interfaces",
+        "major",
+        "bug"
+    ],
+    "title": "_magma_init_ bug elliptic curve points",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4288",
+    "user": "robertwb"
+}
+```
 Assignee: was
 
 CC:  was
@@ -22,15 +32,43 @@ Got:
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4288
+
+
+
+
 
 ---
 
-Comment by zimmerma created at 2008-10-15 07:08:53
+archive/issue_comments_031387.json:
+```json
+{
+    "body": "This is related to #4277.",
+    "created_at": "2008-10-15T07:08:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4288",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4288#issuecomment-31387",
+    "user": "zimmerma"
+}
+```
 
 This is related to #4277.
 
 
+
 ---
+
+archive/issue_comments_031388.json:
+```json
+{
+    "body": "Attachment\n\nThe attached patch seems to do the trick.  It's wrong to use \"magma_name\" since that just gives somethin like \"sage[0]\", while \"_magma_init_()\" return a string which can be passed to a fresh magma session to create the equivalent object.\n\n#4277 is ok now too.",
+    "created_at": "2008-10-19T19:50:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4288",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4288#issuecomment-31388",
+    "user": "cremona"
+}
+```
 
 Attachment
 
@@ -39,22 +77,55 @@ The attached patch seems to do the trick.  It's wrong to use "magma_name" since 
 #4277 is ok now too.
 
 
+
 ---
 
-Comment by zimmerma created at 2008-10-19 20:23:14
+archive/issue_comments_031389.json:
+```json
+{
+    "body": "Note for the release manager: that patch should be applied after that for #4277.",
+    "created_at": "2008-10-19T20:23:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4288",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4288#issuecomment-31389",
+    "user": "zimmerma"
+}
+```
 
 Note for the release manager: that patch should be applied after that for #4277.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-20 14:03:54
+archive/issue_comments_031390.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-10-20T14:03:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4288",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4288#issuecomment-31390",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-20 14:03:54
+archive/issue_comments_031391.json:
+```json
+{
+    "body": "Merged in Sage 3.2.alpha0",
+    "created_at": "2008-10-20T14:03:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4288",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4288#issuecomment-31391",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.2.alpha0

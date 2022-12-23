@@ -1,11 +1,21 @@
 # Issue 4634: Sage 3.2.1.a1: numerical noise in sage/schemes/ elliptic_curves/ell_rational_field.py
 
-Issue created by migration from https://trac.sagemath.org/ticket/4634
-
-Original creator: mabshoff
-
-Original creation time: 2008-11-27 03:43:14
-
+archive/issues_004634.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nCC:  jhpalmieri\n\n\n```\nFile \"/Applications/sage-3.2.1.alpha1/devel/sage/sage/schemes/\nelliptic_curves/ell_rational_field.py\", line 4071:\n   sage: a = E.integral_points([P1,P2,P3], verbose=True)\nExpected:\n   Using mw_basis  [(2 : 0 : 1), (3 : -4 : 1), (8 : -22 : 1)]\n   e1,e2,e3:  -3.01243037259331 1.0658205476962... 1.94660982489710\n   Minimal eigenvalue of height pairing matrix:  0.63792081458500...\n   x-coords of points on compact component with  -3 <=x<= 1\n   [-3, -2, -1, 0, 1]\n   x-coords of points on non-compact component with  2 <=x<= 6\n   [2, 3, 4]\n   starting search of remaining points using coefficient bound  5\n   x-coords of extra integral points:\n   [2, 3, 4, 8, 11, 14, 21, 37, 52, 93, 342, 406, 816]\n   Total number of integral points: 18\nGot:\n   Using mw_basis  [(2 : 0 : 1), (3 : -4 : 1), (8 : -22 : 1)]\n   e1,e2,e3:  -3.01243037259330 1.06582054769621 1.94660982489710\n   Minimal eigenvalue of height pairing matrix:  0.637920814585007\n   x-coords of points on compact component with  -3 <=x<= 1\n   [-3, -2, -1, 0, 1]\n   x-coords of points on non-compact component with  2 <=x<= 6\n   [2, 3, 4]\n   starting search of remaining points using coefficient bound  5\n   x-coords of extra integral points:\n   [2, 3, 4, 8, 11, 14, 21, 37, 52, 93, 342, 406, 816]\n   Total number of integral points: 18\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4634\n\n",
+    "created_at": "2008-11-27T03:43:14Z",
+    "labels": [
+        "doctest coverage",
+        "blocker",
+        "bug"
+    ],
+    "title": "Sage 3.2.1.a1: numerical noise in sage/schemes/ elliptic_curves/ell_rational_field.py",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4634",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 CC:  jhpalmieri
@@ -42,15 +52,43 @@ Got:
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4634
+
+
+
+
 
 ---
+
+archive/issue_comments_034845.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-11-27T04:08:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4634",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4634#issuecomment-34845",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-27 04:09:01
+archive/issue_comments_034846.json:
+```json
+{
+    "body": "The problem is this:\n\n```\n   e1,e2,e3:  -3.01243037259331 1.0658205476962... 1.94660982489710\n   e1,e2,e3:  -3.01243037259330 1.06582054769621 1.94660982489710\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-27T04:09:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4634",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4634#issuecomment-34846",
+    "user": "mabshoff"
+}
+```
 
 The problem is this:
 
@@ -65,29 +103,73 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-27 04:09:31
+archive/issue_comments_034847.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-11-27T04:09:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4634",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4634#issuecomment-34847",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by ncalexan created at 2008-11-27 04:10:42
+archive/issue_comments_034848.json:
+```json
+{
+    "body": "Fine by me.",
+    "created_at": "2008-11-27T04:10:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4634",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4634#issuecomment-34848",
+    "user": "ncalexan"
+}
+```
 
 Fine by me.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-27 04:19:50
+archive/issue_comments_034849.json:
+```json
+{
+    "body": "Merged in Sage 3.2.1.alpha2",
+    "created_at": "2008-11-27T04:19:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4634",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4634#issuecomment-34849",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.2.1.alpha2
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-27 04:19:50
+archive/issue_comments_034850.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-11-27T04:19:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4634",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4634#issuecomment-34850",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

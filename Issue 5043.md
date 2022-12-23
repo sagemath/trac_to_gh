@@ -1,11 +1,21 @@
 # Issue 5043: gap_console help broken
 
-Issue created by migration from https://trac.sagemath.org/ticket/5043
-
-Original creator: was
-
-Original creation time: 2009-01-21 05:42:07
-
+archive/issues_005043.json:
+```json
+{
+    "body": "Assignee: was\n\n\n```\n\n\nOn Tue, Jan 20, 2009 at 8:03 PM, davidp <davidp@reed.edu> wrote:\n>\n> I will be teaching abstract algebra this semester and want to\n> introduce my students to Sage and GAP.  I have installed\n> gap_packages-4.4.10_6, but I am still having trouble with\n> documentation:\n>\n> ----------------------------------------------------------------------\n> | Sage Version 3.2.3, Release Date: 2009-01-05                       |\n> | Type notebook() for the GUI, and license() for information.        |\n> ----------------------------------------------------------------------\n> sage: gap_console()\n> GAP4, Version: 4.4.10 of 02-Oct-2007, i686-pc-linux-gnu-gcc\n> gap> ?SymmetricGroup\n> Help: Showing `Reference: SymmetricGroup'\n> Record: '<rec>.tempfile' must have an assigned value at\n> str := OutputTextFile( $SAGE.tempfile, false );\n>  called from\n> HELP_VIEWER_INFO.(viewer).show( data ); called from\n> HELP_PRINT_MATCH( i ); called from\n> HELP_SHOW_MATCHES( books, str, true ) called from\n> <function>( <arguments> ) called from read-eval-loop\n> Entering break read-eval-print loop ...\n> you can 'quit;' to quit to outer loop, or\n> you can 'return;' after assigning a value to continue\n> brk>\n>\n>\n> I am running Sage on a thinkpad with Fedora 10.\n>\n> Any suggestions would be appreciated.\n\nThe above happens because the default GAP workspace evidently that messes up the help system.  I think this is a bug (?), probably in GAP. \n\nYou can do the following instead:\n\nsage: gap_console(False)\n...\n\nOr\n\nsage: gap.SymmetricGroup?            # <--- i like this\n\n\nWilliam\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5043\n\n",
+    "created_at": "2009-01-21T05:42:07Z",
+    "labels": [
+        "interfaces",
+        "major",
+        "bug"
+    ],
+    "title": "gap_console help broken",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5043",
+    "user": "was"
+}
+```
 Assignee: was
 
 
@@ -60,10 +70,25 @@ William
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5043
+
+
+
+
 
 ---
 
-Comment by was created at 2009-01-21 10:18:00
+archive/issue_comments_038409.json:
+```json
+{
+    "body": "\n```\n#\n# SAGE support utilities to read into the GAP session.\n#\n$SAGE := rec();\n\n$SAGE.OldPager := Pager;\n\n\n$SAGE.NewPager :=\n         function( data )\n   local   str,  lines,  line, fn, start;\n\n   str := OutputTextFile($SAGE.tempfile,false);\n   start := 1;\n\nbut never sets $SAGE.tempfile anywhere.\n\nSteve\n- Show quoted text -\n\n\nOn 21 Jan 2009, at 06:39, William Stein wrote:\n\n    On Tue, Jan 20, 2009 at 8:03 PM, davidp <davidp@reed.edu> wrote:\n\n\n        I will be teaching abstract algebra this semester and want to\n        introduce my students to Sage and GAP.  I have installed\n        gap_packages-4.4.10_6, but I am still having trouble with\n        documentation:\n\n        ----------------------------------------------------------------------\n        | Sage Version 3.2.3, Release Date: 2009-01-05                       |\n        | Type notebook() for the GUI, and license() for information.        |\n        ----------------------------------------------------------------------\n        sage: gap_console()\n        GAP4, Version: 4.4.10 of 02-Oct-2007, i686-pc-linux-gnu-gcc\n        gap> ?SymmetricGroup\n        Help: Showing `Reference: SymmetricGroup'\n        Record: '<rec>.tempfile' must have an assigned value at\n        str := OutputTextFile( $SAGE.tempfile, false );\n        called from\n        HELP_VIEWER_INFO.(viewer).show( data ); called from\n        HELP_PRINT_MATCH( i ); called from\n        HELP_SHOW_MATCHES( books, str, true ) called from\n        <function>( <arguments> ) called from read-eval-loop\n        Entering break read-eval-print loop ...\n        you can 'quit;' to quit to outer loop, or\n        you can 'return;' after assigning a value to continue\n        brk>\n\n\n        I am running Sage on a thinkpad with Fedora 10.\n\n        Any suggestions would be appreciated.\n\n\n    The above happens because the default GAP workspace evidently that\n    messes up the help system.  I think this is a bug (?), probably in\n    GAP.\n\n    You can do the following instead:\n\n    sage: gap_console(False)\n\n    which will give you a gap session that by default has less\n    functionality loaded than otherwise.\n\n    ...\n\n    Or\n\n    sage: gap.SymmetricGroup?            # <--- i like this\n\n    I've made this bug trac #5043:\n\n             http://trac.sagemath.org/sage_trac/ticket/5043\n\n    I've also cc'd Steve Linton in case he has any remarks.\n\n    -- William\n\n\nSteve Linton    School of Computer Science  &\n```\n",
+    "created_at": "2009-01-21T10:18:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5043",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5043#issuecomment-38409",
+    "user": "was"
+}
+```
 
 
 ```
@@ -155,42 +180,112 @@ Steve Linton    School of Computer Science  &
 
 
 
+
 ---
+
+archive/issue_comments_038410.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2012-06-05T17:54:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5043",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5043#issuecomment-38410",
+    "user": "iandrus"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_038411.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2012-06-05T17:54:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5043",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5043#issuecomment-38411",
+    "user": "iandrus"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by iandrus created at 2012-06-05 18:02:52
+archive/issue_comments_038412.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2012-06-05T18:02:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5043",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5043#issuecomment-38412",
+    "user": "iandrus"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by iandrus created at 2012-06-05 18:02:52
+archive/issue_comments_038413.json:
+```json
+{
+    "body": "Since a console session and a session driven through expect are somewhat different, I think it makes sense to source a different file.  I could have made it so that `console.g` reads in `sage.g` if it wasn't already loaded, but I didn't see much use for the stuff in `sage.g` when interacting directly with GAP.  \n\nThis means there could be problems (I haven't tested) if someone calls `SaveWorkspace` and overwrites Sage's workspace with one in which `$SAGE` is not set.  However, it is currently possible to do that anyway though perhaps not quite as easily.  A much simpler way to mess things up is calling `$SAGE.StartInteract()` which screws with the expect interaction.",
+    "created_at": "2012-06-05T18:02:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5043",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5043#issuecomment-38413",
+    "user": "iandrus"
+}
+```
 
 Since a console session and a session driven through expect are somewhat different, I think it makes sense to source a different file.  I could have made it so that `console.g` reads in `sage.g` if it wasn't already loaded, but I didn't see much use for the stuff in `sage.g` when interacting directly with GAP.  
 
 This means there could be problems (I haven't tested) if someone calls `SaveWorkspace` and overwrites Sage's workspace with one in which `$SAGE` is not set.  However, it is currently possible to do that anyway though perhaps not quite as easily.  A much simpler way to mess things up is calling `$SAGE.StartInteract()` which screws with the expect interaction.
 
 
+
 ---
 
-Comment by kcrisman created at 2012-06-29 02:30:52
+archive/issue_comments_038414.json:
+```json
+{
+    "body": "Ivan, do you think this might help #3152 as well?",
+    "created_at": "2012-06-29T02:30:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5043",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5043#issuecomment-38414",
+    "user": "kcrisman"
+}
+```
 
 Ivan, do you think this might help #3152 as well?
 
 
+
 ---
 
-Comment by iandrus created at 2012-06-29 07:55:33
+archive/issue_comments_038415.json:
+```json
+{
+    "body": "Replying to [comment:3 kcrisman]:\n> Ivan, do you think this might help #3152 as well?\n\nI just tested and sadly it doesn't.",
+    "created_at": "2012-06-29T07:55:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5043",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5043#issuecomment-38415",
+    "user": "iandrus"
+}
+```
 
 Replying to [comment:3 kcrisman]:
 > Ivan, do you think this might help #3152 as well?
@@ -198,9 +293,20 @@ Replying to [comment:3 kcrisman]:
 I just tested and sadly it doesn't.
 
 
+
 ---
 
-Comment by kcrisman created at 2012-07-05 15:41:36
+archive/issue_comments_038416.json:
+```json
+{
+    "body": "This does fix the problem as stated, and of course the behavior with `False` remains the same.  The code makes sense, though I had to learn a little bit about how GAP does these things and our interface.\n\nThe issue with saving... I mean, when this is called, `$SAGE` is set, right?  So I'm not sure that this is really causing any new problems.  What use case are you worried about?  The `-L` isn't even called if we do `gap_console(False)`, and if one does `True` (default) then everything is the same as it was... I'm missing something here.  Unless you think of what the case was where this is really different from the previous behavior, positive review.\n\nPatchbot, apply [attachment:trac_5043-extcode-gap-console-help.patch] to the extcode repository and [attachment:trac_5043-gap-console-help.patch] to the Sage library.",
+    "created_at": "2012-07-05T15:41:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5043",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5043#issuecomment-38416",
+    "user": "kcrisman"
+}
+```
 
 This does fix the problem as stated, and of course the behavior with `False` remains the same.  The code makes sense, though I had to learn a little bit about how GAP does these things and our interface.
 
@@ -209,15 +315,37 @@ The issue with saving... I mean, when this is called, `$SAGE` is set, right?  So
 Patchbot, apply [attachment:trac_5043-extcode-gap-console-help.patch] to the extcode repository and [attachment:trac_5043-gap-console-help.patch] to the Sage library.
 
 
+
 ---
 
-Comment by kcrisman created at 2012-07-05 15:41:36
+archive/issue_comments_038417.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2012-07-05T15:41:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5043",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5043#issuecomment-38417",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-07-07 22:29:10
+archive/issue_comments_038418.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2012-07-07T22:29:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5043",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5043#issuecomment-38418",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: fixed

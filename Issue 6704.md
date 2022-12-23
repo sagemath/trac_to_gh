@@ -1,31 +1,80 @@
 # Issue 6704: spell-check all modules under sage/graphs
 
-Issue created by migration from https://trac.sagemath.org/ticket/6704
-
-Original creator: mvngu
-
-Original creation time: 2009-08-09 09:26:29
-
+archive/issues_006704.json:
+```json
+{
+    "body": "Assignee: tba\n\nAs the subject says.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6704\n\n",
+    "created_at": "2009-08-09T09:26:29Z",
+    "labels": [
+        "documentation",
+        "major",
+        "bug"
+    ],
+    "title": "spell-check all modules under sage/graphs",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6704",
+    "user": "mvngu"
+}
+```
 Assignee: tba
 
 As the subject says.
 
+Issue created by migration from https://trac.sagemath.org/ticket/6704
+
+
+
+
 
 ---
 
-Comment by mvngu created at 2009-08-12 05:35:44
+archive/issue_comments_055064.json:
+```json
+{
+    "body": "based on Sage 4.1.1.rc2",
+    "created_at": "2009-08-12T05:35:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6704",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6704#issuecomment-55064",
+    "user": "mvngu"
+}
+```
 
 based on Sage 4.1.1.rc2
 
 
+
 ---
 
-Comment by mvngu created at 2009-08-12 05:41:14
+archive/issue_comments_055065.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-08-12T05:41:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6704",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6704#issuecomment-55065",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
+
+archive/issue_comments_055066.json:
+```json
+{
+    "body": "Attachment\n\nThe patch `trac_6704-spell-check-graphs.patch` is a rebase; it depends on #6684.",
+    "created_at": "2009-08-12T05:41:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6704",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6704#issuecomment-55066",
+    "user": "mvngu"
+}
+```
 
 Attachment
 

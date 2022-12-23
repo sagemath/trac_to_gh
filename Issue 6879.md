@@ -1,11 +1,21 @@
 # Issue 6879: Elliptic curve constructor does not check if the base is a field properly
 
-Issue created by migration from https://trac.sagemath.org/ticket/6879
-
-Original creator: cremona
-
-Original creation time: 2009-09-03 16:24:13
-
+archive/issues_006879.json:
+```json
+{
+    "body": "Assignee: davidloeffler\n\nCC:  jcooley\n\nKeywords: elliptic curve\n\nExample:\n\n```\nsage: E = EllipticCurve(QQbar,[1,0])\nsage: E.base_field()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/jec/sage/isog50.py in <module>()\n\nAttributeError: 'EllipticCurve_generic' object has no attribute 'base_field'\n```\n\n\nThis is because the curve constructed is an ell_generic and not an ell_field, despite {{{QQbar.is_field()}} returning True.\n\nSimilarly with RR and CC in place of QQbar.\n\nAll that is required is a two-line addition around line 213 of elliptic_curves/constructor.py.\n\nPatch up soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6879\n\n",
+    "created_at": "2009-09-03T16:24:13Z",
+    "labels": [
+        "elliptic curves",
+        "minor",
+        "bug"
+    ],
+    "title": "Elliptic curve constructor does not check if the base is a field properly",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6879",
+    "user": "cremona"
+}
+```
 Assignee: davidloeffler
 
 CC:  jcooley
@@ -34,37 +44,98 @@ All that is required is a two-line addition around line 213 of elliptic_curves/c
 
 Patch up soon.
 
+Issue created by migration from https://trac.sagemath.org/ticket/6879
+
+
+
+
 
 ---
+
+archive/issue_comments_056785.json:
+```json
+{
+    "body": "Attachment\n\nApplies to 4.1.1",
+    "created_at": "2009-09-03T16:45:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6879",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6879#issuecomment-56785",
+    "user": "cremona"
+}
+```
 
 Attachment
 
 Applies to 4.1.1
 
 
+
 ---
 
-Comment by cremona created at 2009-09-03 16:46:31
+archive/issue_comments_056786.json:
+```json
+{
+    "body": "Patched applies to 4.1.1.  All sage/schemes/elliptic_curves tests ok.",
+    "created_at": "2009-09-03T16:46:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6879",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6879#issuecomment-56786",
+    "user": "cremona"
+}
+```
 
 Patched applies to 4.1.1.  All sage/schemes/elliptic_curves tests ok.
 
 
+
 ---
 
-Comment by mhansen created at 2009-09-26 04:37:06
+archive/issue_comments_056787.json:
+```json
+{
+    "body": "Looks good to me.",
+    "created_at": "2009-09-26T04:37:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6879",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6879#issuecomment-56787",
+    "user": "mhansen"
+}
+```
 
 Looks good to me.
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-26 07:05:00
+archive/issue_comments_056788.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-09-26T07:05:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6879",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6879#issuecomment-56788",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-27 10:51:07
+archive/issue_comments_056789.json:
+```json
+{
+    "body": "There is no 4.1.2.alpha3. Sage 4.1.2.alpha3 was William Stein's release for working on making the notebook a standalone package.",
+    "created_at": "2009-09-27T10:51:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6879",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6879#issuecomment-56789",
+    "user": "mvngu"
+}
+```
 
 There is no 4.1.2.alpha3. Sage 4.1.2.alpha3 was William Stein's release for working on making the notebook a standalone package.

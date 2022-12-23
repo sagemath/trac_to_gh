@@ -1,11 +1,21 @@
 # Issue 4196: write a new coercion section for the developer's/programmer's guide
 
-Issue created by migration from https://trac.sagemath.org/ticket/4196
-
-Original creator: jhpalmieri
-
-Original creation time: 2008-09-25 21:58:29
-
+archive/issues_004196.json:
+```json
+{
+    "body": "Assignee: somebody\n\nKeywords: coercion, documentation\n\nThe coercion section of the developer's guide is completely out of date and needs to be rewritten.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4196\n\n",
+    "created_at": "2008-09-25T21:58:29Z",
+    "labels": [
+        "documentation",
+        "major",
+        "bug"
+    ],
+    "title": "write a new coercion section for the developer's/programmer's guide",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4196",
+    "user": "jhpalmieri"
+}
+```
 Assignee: somebody
 
 Keywords: coercion, documentation
@@ -14,50 +24,135 @@ The coercion section of the developer's guide is completely out of date and need
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4196
+
+
+
+
 
 ---
 
-Comment by jhpalmieri created at 2008-10-13 17:26:23
+archive/issue_comments_030454.json:
+```json
+{
+    "body": "See also #4272.",
+    "created_at": "2008-10-13T17:26:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4196",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4196#issuecomment-30454",
+    "user": "jhpalmieri"
+}
+```
 
 See also #4272.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-02-14 21:29:14
+archive/issue_comments_030455.json:
+```json
+{
+    "body": "See also Robert Bradshaw's coercion docs on the [Sage wiki](http://wiki.sagemath.org/coercion).",
+    "created_at": "2009-02-14T21:29:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4196",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4196#issuecomment-30455",
+    "user": "jhpalmieri"
+}
+```
 
 See also Robert Bradshaw's coercion docs on the [Sage wiki](http://wiki.sagemath.org/coercion).
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-06-17 22:03:27
+archive/issue_comments_030456.json:
+```json
+{
+    "body": "Changing assignee from somebody to jhpalmieri.",
+    "created_at": "2009-06-17T22:03:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4196",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4196#issuecomment-30456",
+    "user": "jhpalmieri"
+}
+```
 
 Changing assignee from somebody to jhpalmieri.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-06-17 22:03:27
+archive/issue_comments_030457.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-06-17T22:03:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4196",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4196#issuecomment-30457",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
+
+archive/issue_comments_030458.json:
+```json
+{
+    "body": "Attachment\n\nHere's a patch.  This basically just refers to the coercion section in the reference manual, added in #5454.",
+    "created_at": "2009-06-17T22:03:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4196",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4196#issuecomment-30458",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
 Here's a patch.  This basically just refers to the coercion section in the reference manual, added in #5454.
 
 
+
 ---
 
-Comment by mvngu created at 2009-06-19 23:02:10
+archive/issue_comments_030459.json:
+```json
+{
+    "body": "rebased against Sage 4.0.2",
+    "created_at": "2009-06-19T23:02:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4196",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4196#issuecomment-30459",
+    "user": "mvngu"
+}
+```
 
 rebased against Sage 4.0.2
 
 
+
 ---
+
+archive/issue_comments_030460.json:
+```json
+{
+    "body": "Attachment\n\nWhen applying the patch `trac_4196.patch` against Sage 4.0.2, I received one hunk failure:\n\n```\nsage: hg_sage.apply(\"http://trac.sagemath.org/sage_trac/raw-attachment/ticket/4196/trac_4196.patch\")\nAttempting to load remote file: http://trac.sagemath.org/sage_trac/raw-attachment/ticket/4196/trac_4196.patch\nLoading: [..]\ncd \"/scratch/mvngu/sage-4.0.2/devel/sage\" && hg status\ncd \"/scratch/mvngu/sage-4.0.2/devel/sage\" && hg status\ncd \"/scratch/mvngu/sage-4.0.2/devel/sage\" && hg import   \"/home/mvngu/.sage/temp/sage.math.washington.edu/5611/tmp_1.patch\"\napplying /home/mvngu/.sage/temp/sage.math.washington.edu/5611/tmp_1.patch\npatching file doc/en/reference/coercion.rst\nHunk #3 FAILED at 244\n1 out of 3 hunks FAILED -- saving rejects to file doc/en/reference/coercion.rst.rej\nabort: patch failed to apply\n```\n\nThe patch `trac_4196.2.patch` is a rebase against Sage 4.0.2. It turns out that the cause of the failure was line 248 in the first patch. So the only difference between `trac_4196.patch` and `trac_4196.2.patch` is that in `trac_4196.2.patch` I left out line 248 in the original patch. Apart from the rebase, positive review.",
+    "created_at": "2009-06-19T23:10:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4196",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4196#issuecomment-30460",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
@@ -80,15 +175,37 @@ abort: patch failed to apply
 The patch `trac_4196.2.patch` is a rebase against Sage 4.0.2. It turns out that the cause of the failure was line 248 in the first patch. So the only difference between `trac_4196.patch` and `trac_4196.2.patch` is that in `trac_4196.2.patch` I left out line 248 in the original patch. Apart from the rebase, positive review.
 
 
+
 ---
 
-Comment by rlm created at 2009-06-24 09:48:50
+archive/issue_comments_030461.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-06-24T09:48:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4196",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4196#issuecomment-30461",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by robertwb created at 2009-06-25 10:20:41
+archive/issue_comments_030462.json:
+```json
+{
+    "body": "Yes, you beat me to it, but positive review from me too.",
+    "created_at": "2009-06-25T10:20:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4196",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4196#issuecomment-30462",
+    "user": "robertwb"
+}
+```
 
 Yes, you beat me to it, but positive review from me too.

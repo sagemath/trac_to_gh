@@ -1,11 +1,21 @@
 # Issue 5203: [with spkg, needs review] Update mpir to 0.9.rc3 release [latest upstream]
 
-Issue created by migration from https://trac.sagemath.org/ticket/5203
-
-Original creator: mabshoff
-
-Original creation time: 2009-02-08 01:10:15
-
+archive/issues_005203.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nThe spkg at\n\n \nupdates the gmp-mpir.spkg to latest upstream. For now the test suite is invoked automatically. It passes on\n\nSkyNet:\n\n* eno (x86_64, FC9)\n* mark (Sparc, Solaris)\n* fulvia (x86, Solaris)\n* cicero (x86, FC9)\n* menas (x86_64, OpenSUSE 10.3)\n* iras (Itanium, SLES 10)\n* cleo (Itanium, RHEL 5.2)\n* varro (PPC, OSX 10.4)\n\nMisc machines:\n\n* bsd (x86, OSX 10.5)\n* sage.math (x86_64, Ubuntu LTS 8.04)\n* sprocketer (x86-64, OSX 10.5)\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5203\n\n",
+    "created_at": "2009-02-08T01:10:15Z",
+    "labels": [
+        "packages: standard",
+        "critical",
+        "bug"
+    ],
+    "title": "[with spkg, needs review] Update mpir to 0.9.rc3 release [latest upstream]",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5203",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 The spkg at
@@ -15,43 +25,80 @@ updates the gmp-mpir.spkg to latest upstream. For now the test suite is invoked 
 
 SkyNet:
 
- * eno (x86_64, FC9)
- * mark (Sparc, Solaris)
- * fulvia (x86, Solaris)
- * cicero (x86, FC9)
- * menas (x86_64, OpenSUSE 10.3)
- * iras (Itanium, SLES 10)
- * cleo (Itanium, RHEL 5.2)
- * varro (PPC, OSX 10.4)
+* eno (x86_64, FC9)
+* mark (Sparc, Solaris)
+* fulvia (x86, Solaris)
+* cicero (x86, FC9)
+* menas (x86_64, OpenSUSE 10.3)
+* iras (Itanium, SLES 10)
+* cleo (Itanium, RHEL 5.2)
+* varro (PPC, OSX 10.4)
 
 Misc machines:
 
- * bsd (x86, OSX 10.5)
- * sage.math (x86_64, Ubuntu LTS 8.04)
- * sprocketer (x86-64, OSX 10.5)
+* bsd (x86, OSX 10.5)
+* sage.math (x86_64, Ubuntu LTS 8.04)
+* sprocketer (x86-64, OSX 10.5)
 
 Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/5203
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2009-02-08 01:10:46
+archive/issue_comments_039868.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-02-08T01:10:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5203",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5203#issuecomment-39868",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mhansen created at 2009-02-08 01:48:12
+archive/issue_comments_039869.json:
+```json
+{
+    "body": "Looks good.  Passes all tests for me.",
+    "created_at": "2009-02-08T01:48:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5203",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5203#issuecomment-39869",
+    "user": "mhansen"
+}
+```
 
 Looks good.  Passes all tests for me.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-08 01:58:34
+archive/issue_comments_039870.json:
+```json
+{
+    "body": "Merged in Sage 3.3.alpha6.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-08T01:58:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5203",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5203#issuecomment-39870",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.3.alpha6.
 
@@ -60,8 +107,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-08 01:58:34
+archive/issue_comments_039871.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-02-08T01:58:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5203",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5203#issuecomment-39871",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

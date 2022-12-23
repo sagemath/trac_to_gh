@@ -1,11 +1,21 @@
 # Issue 2004: [with patch, needs review] padic_height_via_multiply
 
-Issue created by migration from https://trac.sagemath.org/ticket/2004
-
-Original creator: dmharvey
-
-Original creation time: 2008-01-31 20:35:36
-
+archive/issues_002004.json:
+```json
+{
+    "body": "Assignee: was\n\nPatches implement new algorithm for computing (good ordinary) p-adic heights, with improved asymptotics for the high precision case:\n\n\n```\nsage: E = EllipticCurve(\"37a\")\nsage: P = E.gens()[0]\n\nsage: time E2 = E.padic_E2(5, 500)\nCPU times: user 7.00 s, sys: 0.74 s, total: 7.74 s\nWall time: 7.76\n\nsage: time h1 = E.padic_height(5, 500)(P)\nCPU times: user 9.34 s, sys: 0.86 s, total: 10.19 s\nWall time: 10.22\nsage: 10.22 - 7.76\n2.46000000000000\n\nsage: time h2 = E.padic_height_via_multiply(5, 500)(P)\nCPU times: user 7.36 s, sys: 0.74 s, total: 8.10 s\nWall time: 8.12\nsage: 8.12 - 7.76\n0.359999999999999\n\nsage: h1 == h2\nTrue\n```\n\n\nSo it's pretty much dominated by the computation of E2 now.\n\nIt's still fast for low precision too:\n\n\n```\nsage: time h1 = E.padic_height(5, 10)(P)\nCPU times: user 0.08 s, sys: 0.00 s, total: 0.08 s\nWall time: 0.08\n\nsage: time h2 = E.padic_height_via_multiply(5, 10)(P)\nCPU times: user 0.07 s, sys: 0.00 s, total: 0.08 s\nWall time: 0.08\n\nsage: h1 == h2\nTrue\n```\n\n\nI wrote the code a few weeks ago, but the patches are still okay against 2.10.1.rc1.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2004\n\n",
+    "created_at": "2008-01-31T20:35:36Z",
+    "labels": [
+        "algebraic geometry",
+        "major",
+        "enhancement"
+    ],
+    "title": "[with patch, needs review] padic_height_via_multiply",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2004",
+    "user": "dmharvey"
+}
+```
 Assignee: was
 
 Patches implement new algorithm for computing (good ordinary) p-adic heights, with improved asymptotics for the high precision case:
@@ -58,35 +68,98 @@ True
 I wrote the code a few weeks ago, but the patches are still okay against 2.10.1.rc1.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2004
+
+
+
+
 
 ---
+
+archive/issue_comments_012967.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-01-31T20:35:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2004",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2004#issuecomment-12967",
+    "user": "dmharvey"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_012968.json:
+```json
+{
+    "body": "Attachment\n\nyou need to apply both patch files",
+    "created_at": "2008-01-31T20:36:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2004",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2004#issuecomment-12968",
+    "user": "dmharvey"
+}
+```
 
 Attachment
 
 you need to apply both patch files
 
 
+
 ---
 
-Comment by cremona created at 2008-02-16 20:44:13
+archive/issue_comments_012969.json:
+```json
+{
+    "body": "While not an expert on p-adic height computations (few people are, David H amongst them) this looks very well done to me.  It is particularly commendable that he refers to a paper (to appear) to justify things -- and one in an excellent journal too ;).  I am tempted to ask the person who refereed that paper to referee this implementation, but unfortunately I do not think that would be possible without breaking the journal's anonymity policy.",
+    "created_at": "2008-02-16T20:44:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2004",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2004#issuecomment-12969",
+    "user": "cremona"
+}
+```
 
 While not an expert on p-adic height computations (few people are, David H amongst them) this looks very well done to me.  It is particularly commendable that he refers to a paper (to appear) to justify things -- and one in an excellent journal too ;).  I am tempted to ask the person who refereed that paper to referee this implementation, but unfortunately I do not think that would be possible without breaking the journal's anonymity policy.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-17 23:39:22
+archive/issue_comments_012970.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-02-17T23:39:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2004",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2004#issuecomment-12970",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-17 23:39:22
+archive/issue_comments_012971.json:
+```json
+{
+    "body": "Merged in Sage 2.10.2.alpha1",
+    "created_at": "2008-02-17T23:39:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2004",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2004#issuecomment-12971",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.2.alpha1

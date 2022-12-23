@@ -1,11 +1,21 @@
 # Issue 6801: weird bug in magma.eval
 
-Issue created by migration from https://trac.sagemath.org/ticket/6801
-
-Original creator: was
-
-Original creation time: 2009-08-22 10:22:58
-
+archive/issues_006801.json:
+```json
+{
+    "body": "Assignee: was\n\nThis gives a weird magma error:\n\n```\nmagma.eval(\"\"\"\nfunction t()\n    a:=1+2+3+4+5+6+7+8+9+0+1+2+3+4+5+6+7+8+9+0+1+2+3+4+5+6+7+8+9+0+1+2+3+4+5+6+7+8+9+0+1+2+3+4+5+6+7;\nend function;\n\"\"\")\n```\n\n\nThe same thing with a shorter line starting \"a:=\" does not fail. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6801\n\n",
+    "created_at": "2009-08-22T10:22:58Z",
+    "labels": [
+        "interfaces",
+        "major",
+        "bug"
+    ],
+    "title": "weird bug in magma.eval",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6801",
+    "user": "was"
+}
+```
 Assignee: was
 
 This gives a weird magma error:
@@ -21,10 +31,25 @@ end function;
 
 The same thing with a shorter line starting "a:=" does not fail. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6801
+
+
+
+
 
 ---
 
-Comment by klee created at 2009-08-26 07:44:13
+archive/issue_comments_056003.json:
+```json
+{
+    "body": "The weird error occurs because Sage try to use a file to input the second line \"a:=...\" \nwhen Magma is waiting for the remaining part of \"function t()\". Look at the following pexpect log.\n\n\n```\nfunction t()\n>>>load \"/Users/Kwankyu/.sage//temp/athena.local/72436//interface//tmp72436\";\nload \"/Users/Kwankyu/.sage//temp/athena.local/72436//interface//tmp72436\";\n\n>> load \"/Users/Kwankyu/.sage//temp/athena.local/72436//interface//tmp72436\";\n   ^\nUser error: bad syntax\n>>>end function;\nend function;\n\n>> end function;\n   ^\nUser error: bad syntax\n>>>\n```\n\n\nI don't understand why the parameter \"allow_use_file\" is defaulted to True, in \n\"sage/interfaces/expect.py(631)_eval_line()\". See\n\n\n```\ndef _eval_line(self, line, allow_use_file=True, wait_for_prompt=True):\n```\n",
+    "created_at": "2009-08-26T07:44:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6801",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6801#issuecomment-56003",
+    "user": "klee"
+}
+```
 
 The weird error occurs because Sage try to use a file to input the second line "a:=..." 
 when Magma is waiting for the remaining part of "function t()". Look at the following pexpect log.
@@ -58,16 +83,38 @@ def _eval_line(self, line, allow_use_file=True, wait_for_prompt=True):
 
 
 
+
 ---
 
-Comment by klee created at 2009-08-26 07:48:45
+archive/issue_comments_056004.json:
+```json
+{
+    "body": "I see... A file is used if the input line is longer than self._eval_using_file_cutoff, which is 100 in my case.",
+    "created_at": "2009-08-26T07:48:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6801",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6801#issuecomment-56004",
+    "user": "klee"
+}
+```
 
 I see... A file is used if the input line is longer than self._eval_using_file_cutoff, which is 100 in my case.
 
 
+
 ---
 
-Comment by klee created at 2009-08-26 08:22:16
+archive/issue_comments_056005.json:
+```json
+{
+    "body": "In \"sage/interfaces/magma.py(278)\", the default value 100 for the parameter \"eval_using_file_cutoff\" is set. \n\n\n```\n        Expect.__init__(self,\n                        name = \"magma\",\n                        prompt = \">>SAGE>>\",\n                        command = command,\n                        maxread = maxread,\n                        server = server, \n                        server_tmpdir = server_tmpdir,\n                        script_subdirectory = script_subdirectory,\n                        restart_on_ctrlc = False,\n                        logfile = logfile,\n                        eval_using_file_cutoff=100)      \n```\n\n\nI think 100 is too small. Many of my own Magma codes have lines exceeding 100. Should we simply set the value to a larger value, e.g., 300? This may be a solution, though not elegant.... Is there a smarter solution? One solution is to provide a method like\n\nmagma.SetDefaultFileCutoffLength(file_cutoff=300)\n\nso that users can adjust it for their convenience.",
+    "created_at": "2009-08-26T08:22:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6801",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6801#issuecomment-56005",
+    "user": "klee"
+}
+```
 
 In "sage/interfaces/magma.py(278)", the default value 100 for the parameter "eval_using_file_cutoff" is set. 
 
@@ -94,36 +141,91 @@ magma.SetDefaultFileCutoffLength(file_cutoff=300)
 so that users can adjust it for their convenience.
 
 
+
 ---
 
-Comment by mariah created at 2011-05-25 19:21:02
+archive/issue_comments_056006.json:
+```json
+{
+    "body": "This problem no longer seems to exist with sage-4.7.rc4 and magma-2.17-7.  I suggest that this ticket be closed.",
+    "created_at": "2011-05-25T19:21:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6801",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6801#issuecomment-56006",
+    "user": "mariah"
+}
+```
 
 This problem no longer seems to exist with sage-4.7.rc4 and magma-2.17-7.  I suggest that this ticket be closed.
 
 
+
 ---
 
-Comment by mariah created at 2011-05-25 19:21:02
+archive/issue_comments_056007.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2011-05-25T19:21:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6801",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6801#issuecomment-56007",
+    "user": "mariah"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by kedlaya created at 2011-06-18 05:41:04
+archive/issue_comments_056008.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2011-06-18T05:41:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6801",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6801#issuecomment-56008",
+    "user": "kedlaya"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by kedlaya created at 2011-06-18 05:41:04
+archive/issue_comments_056009.json:
+```json
+{
+    "body": "I think this can now be regarded as a duplicate of #9705 and thus closed.",
+    "created_at": "2011-06-18T05:41:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6801",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6801#issuecomment-56009",
+    "user": "kedlaya"
+}
+```
 
 I think this can now be regarded as a duplicate of #9705 and thus closed.
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-06-20 18:54:53
+archive/issue_comments_056010.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2011-06-20T18:54:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6801",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6801#issuecomment-56010",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: duplicate

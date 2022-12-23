@@ -1,11 +1,21 @@
 # Issue 9085: random_element fails for a cartesian product of fields
 
-Issue created by migration from https://trac.sagemath.org/ticket/9085
-
-Original creator: cremona
-
-Original creation time: 2010-05-29 11:24:12
-
+archive/issues_009085.json:
+```json
+{
+    "body": "Assignee: AlexGhitza\n\nCC:  nthiery\n\nKeywords: random element cartesian product\n\nVictor Miller reports:\n\n```\nHere's something a bit odd:\n\nsage: F = GF(2)\nsage: A = CartesianProduct(F,F)\nsage: print A.random_element()\n\nThis gets a trace back and the message\n\nTypeError: You must specify the names of the variables \n```\n\n\nHere is what is happening (certainly a bug).  In the code which picks a random element from F, F is treated as a sequence and then\nsubscripted with a random subscript.  But (as you can verify)\nevaluating F[0] or F[1] raises an error, since the `__getitem__` method of a field is used to create polynomial rings (as in F['x']).\n\nThis does not happen when you just do F.random_element() since that\nhas an independent implementation.\n\nI think the fault lies in line 125 of /sage/misc/prandom.py in the\nfunction choice() which says\n\n```\nreturn _pyrand().choice(seq)\n```\n\nbut in your example \"seq\" is the field F.  It would work if that said list(seq), since\n\n```\n_pyrand().choice(F)\n```\n\nfails but\n\n```\n_pyrand().choice(list(F))\n```\n\nworks.  But it would be more efficient if that choice function tried\nto call a random_element() function on its  argument instead --\nimagine if the field was very large, it would be stupid to construct a list of its elements for each random choice. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9085\n\n",
+    "created_at": "2010-05-29T11:24:12Z",
+    "labels": [
+        "algebra",
+        "major",
+        "bug"
+    ],
+    "title": "random_element fails for a cartesian product of fields",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9085",
+    "user": "cremona"
+}
+```
 Assignee: AlexGhitza
 
 CC:  nthiery
@@ -58,17 +68,43 @@ to call a random_element() function on its  argument instead --
 imagine if the field was very large, it would be stupid to construct a list of its elements for each random choice. 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/9085
+
+
+
+
 
 ---
 
-Comment by cremona created at 2010-05-29 17:21:19
+archive/issue_comments_084361.json:
+```json
+{
+    "body": "Suggestion:  in the {{{__item__}} method for rings, which constructs a polynomial ring (so that mathematicians can be happy writing things like ZZ['x']), it would be possible to test if ring R is finite and the argument was a non-negative integer n, to return the n'th element of list(R).",
+    "created_at": "2010-05-29T17:21:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9085",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9085#issuecomment-84361",
+    "user": "cremona"
+}
+```
 
 Suggestion:  in the {{{__item__}} method for rings, which constructs a polynomial ring (so that mathematicians can be happy writing things like ZZ['x']), it would be possible to test if ring R is finite and the argument was a non-negative integer n, to return the n'th element of list(R).
 
 
+
 ---
 
-Comment by chapoton created at 2016-02-05 12:27:42
+archive/issue_comments_084362.json:
+```json
+{
+    "body": "This works now.\n\n```\nsage: F = GF(1951)\nsage: A = F.cartesian_product(F)\nsage: A.random_element()\n(1405, 126)\nsage: A.random_element()\n(1151, 1050)\n```\n",
+    "created_at": "2016-02-05T12:27:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9085",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9085#issuecomment-84362",
+    "user": "chapoton"
+}
+```
 
 This works now.
 
@@ -83,16 +119,38 @@ sage: A.random_element()
 
 
 
+
 ---
 
-Comment by chapoton created at 2016-02-05 12:27:42
+archive/issue_comments_084363.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2016-02-05T12:27:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9085",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9085#issuecomment-84363",
+    "user": "chapoton"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by nthiery created at 2016-02-05 13:22:44
+archive/issue_comments_084364.json:
+```json
+{
+    "body": "And, thanks to #18411, also with the original syntax:\n\n```\n    sage: F = GF(2)\n    sage: A = CartesianProduct(F,F)\n    sage: print A.random_element()\n    (1,0)\n```\n\n\nThanks Fr\u00e9d\u00e9ric for spotting this outdated ticket.",
+    "created_at": "2016-02-05T13:22:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9085",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9085#issuecomment-84364",
+    "user": "nthiery"
+}
+```
 
 And, thanks to #18411, also with the original syntax:
 
@@ -107,15 +165,37 @@ And, thanks to #18411, also with the original syntax:
 Thanks Frédéric for spotting this outdated ticket.
 
 
+
 ---
 
-Comment by nthiery created at 2016-02-05 13:22:44
+archive/issue_comments_084365.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2016-02-05T13:22:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9085",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9085#issuecomment-84365",
+    "user": "nthiery"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by vbraun created at 2016-02-23 22:53:28
+archive/issue_comments_084366.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2016-02-23T22:53:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9085",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9085#issuecomment-84366",
+    "user": "vbraun"
+}
+```
 
 Resolution: invalid

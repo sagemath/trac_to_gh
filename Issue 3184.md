@@ -1,11 +1,21 @@
 # Issue 3184: broken p-adic getslice
 
-Issue created by migration from https://trac.sagemath.org/ticket/3184
-
-Original creator: dmharvey
-
-Original creation time: 2008-05-13 13:00:20
-
+archive/issues_003184.json:
+```json
+{
+    "body": "Assignee: somebody\n\nCC:  craigcitro\n\n(This ticket was split off from #2943)\n\nThis is okay:\n\n\n```\nsage: K = Qp(13,7)\nsage: R.<t> = K[]       \nsage: a = 13^7*t^3 + K(169,4)*t - 13^4\nsage: a[1:2]\n(13^2 + O(13^4))*t\n```\n\n\nThis dies:\n\n\n```\nsage: t[0:1]\n[boom]\n```\n\n\nThe original context for this bug was along the lines of (see #2943 for more examples):\n\n\n```\nsage: K = Qp(p,10)\nsage: C.<t> = LaurentSeriesRing(K)\nsage: D.<s> = PolynomialRing(C)\nsage: z = (1 + O(t)) + t*s^2\nsage: z * z\n[boom]\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3184\n\n",
+    "created_at": "2008-05-13T13:00:20Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "bug"
+    ],
+    "title": "broken p-adic getslice",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3184",
+    "user": "dmharvey"
+}
+```
 Assignee: somebody
 
 CC:  craigcitro
@@ -47,10 +57,25 @@ sage: z * z
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3184
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-11-23 10:15:37
+archive/issue_comments_022031.json:
+```json
+{
+    "body": "Craig has become a getslice expert, so let's CC him :)\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-23T10:15:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3184",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3184#issuecomment-22031",
+    "user": "mabshoff"
+}
+```
 
 Craig has become a getslice expert, so let's CC him :)
 
@@ -59,30 +84,76 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_022032.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-01-24T08:41:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3184",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3184#issuecomment-22032",
+    "user": "roed"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by jason created at 2009-02-04 15:17:25
+archive/issue_comments_022033.json:
+```json
+{
+    "body": "First comment: getslice is deprecated; it should be __getitem__ now.\n\nSecond, there is a standard block of code for slicing...using that will make sure that things are consistent for people that understand python slices.",
+    "created_at": "2009-02-04T15:17:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3184",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3184#issuecomment-22033",
+    "user": "jason"
+}
+```
 
 First comment: getslice is deprecated; it should be __getitem__ now.
 
 Second, there is a standard block of code for slicing...using that will make sure that things are consistent for people that understand python slices.
 
 
+
 ---
 
-Comment by dmharvey created at 2009-03-19 01:20:20
+archive/issue_comments_022034.json:
+```json
+{
+    "body": "Looks good to me.",
+    "created_at": "2009-03-19T01:20:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3184",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3184#issuecomment-22034",
+    "user": "dmharvey"
+}
+```
 
 Looks good to me.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-03-20 20:34:56
+archive/issue_comments_022035.json:
+```json
+{
+    "body": "Merged in Sage 3.4.1.alpha0.\n\nCheeers,\n\nMichael",
+    "created_at": "2009-03-20T20:34:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3184",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3184#issuecomment-22035",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.4.1.alpha0.
 
@@ -91,8 +162,19 @@ Cheeers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-03-20 20:34:56
+archive/issue_comments_022036.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-03-20T20:34:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3184",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3184#issuecomment-22036",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

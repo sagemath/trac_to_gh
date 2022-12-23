@@ -1,11 +1,21 @@
 # Issue 8836: sagenb doctest issue discovered on t2.
 
-Issue created by migration from https://trac.sagemath.org/ticket/8836
-
-Original creator: was
-
-Original creation time: 2010-05-01 06:34:35
-
+archive/issues_008836.json:
+```json
+{
+    "body": "Assignee: jason, was\n\nWilliam to Mike Hansen:\n\n```\nHi,\n\nIs this caused by your cygwin fixed?\n\nsage -t  -long \"local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg/sagenb/misc/misc.py\"\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.4.1.alpha2/local/lib/python2.6/site-packages/sagenb-0.8-py2.6.egg/sa\ngenb/misc/misc.py\", line 109:\n   sage: print \"ignore this\";\nsage.server.misc.find_next_available_port('', 9000, verbose=False)   #\nrandom output -- depends on network\nException raised:\n   Traceback (most recent call last):\n     File \"/scratch/wstein/build/sage-4.4.1.alpha2/local/bin/ncadoctest.py\",\nline 1231, in run_one_tes\nt\n       self.run_one_example(test, example, filename, compileflags)\n     File \"/scratch/wstein/build/sage-4.4.1.alpha2/local/bin/sagedoctest.py\",\nline 38, in run_one_exam\nple\n       OrigDocTestRunner.run_one_example(self, test, example,\nfilename, compileflags)\n     File \"/scratch/wstein/build/sage-4.4.1.alpha2/local/bin/ncadoctest.py\",\nline 1172, in run_one_exa\nmple\n       compileflags, 1) in test.globs\n     File \"<doctest __main__.example_2[2]>\", line 1, in <module>\n       print \"ignore this\";\nsage.server.misc.find_next_available_port('', Integer(9000),\nverbose=Fals\ne)   # random output -- depends on network###line 109:\n   sage: print \"ignore this\";\nsage.server.misc.find_next_available_port('', 9000, verbose=False)   #\nrandom output -- depends on network\n     File \"/scratch/wstein/build/sage-4.4.1.alpha2/local/lib/python/site-packages/sage/server/misc.py\"\n, line 105, in find_next_available_port\n       for port in range(start, start+max_tries+1):\n     File \"element.pyx\", line 1271, in\nsage.structure.element.RingElement.__add__ (sage/structure/elem\nent.c:10830)\n     File \"coerce.pyx\", line 765, in\nsage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/struc\nture/coerce.c:6966)\n   TypeError: unsupported operand parent(s) for '+': '<type 'str'>'\nand 'Integer Ring'\n**********************************************************************\n1 items had failures:\n  1 of   3 in __main__.example_2\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/wstein/sage//tmp/.doctest_misc.py\n        [16.3 s]\n```\n\n\nMike to William\n\n```\n> Is this caused by your cygwin fixed?\n\nYes.  The doctest is wrong:\n\n> sage.server.misc.find_next_available_port('', 9000, verbose=False)   #\n\nsage.server.misc.find_next_available_port was not changed --\nsagenb.misc.misc.find_next_available_port was.\n\n--Mike\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8836\n\n",
+    "created_at": "2010-05-01T06:34:35Z",
+    "labels": [
+        "notebook",
+        "blocker",
+        "bug"
+    ],
+    "title": "sagenb doctest issue discovered on t2.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8836",
+    "user": "was"
+}
+```
 Assignee: jason, was
 
 William to Mike Hansen:
@@ -82,21 +92,60 @@ sagenb.misc.misc.find_next_available_port was.
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8836
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2010-05-01 06:42:06
+archive/issue_comments_081246.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-05-01T06:42:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8836",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8836#issuecomment-81246",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_081247.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-05-01T06:42:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8836",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8836#issuecomment-81247",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2010-05-01 18:50:30
+archive/issue_comments_081248.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-05-01T18:50:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8836",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8836#issuecomment-81248",
+    "user": "was"
+}
+```
 
 Resolution: fixed

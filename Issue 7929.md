@@ -1,11 +1,21 @@
 # Issue 7929: Pickling fails for some residue fields
 
-Issue created by migration from https://trac.sagemath.org/ticket/7929
-
-Original creator: nthiery
-
-Original creation time: 2010-01-14 14:09:55
-
+archive/issues_007929.json:
+```json
+{
+    "body": "Assignee: davidloeffler\n\nCatched with #7921:\n\n\n```\nsage: K.<a> = NumberField(x^3-17)\nsage: P = K.ideal(29).factor()[0][0]\nsage: k = K.residue_field(P) # indirect doctest\nsage: F = ZZ.residue_field(17)  # indirect doctest\nsage: loads(dumps(k))\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"sage_object.pyx\", line 740, in sage.structure.sage_object.dumps (sage/structure/sage_object.c:8021)\n  File \"ring.pyx\", line 2424, in sage.rings.ring.FiniteField.__reduce__ (sage/rings/ring.c:12853)\nTypeError: 'NoneType' object is unsubscriptable\n\nsage: loads(dumps(k.an_element()))\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"sage_object.pyx\", line 740, in sage.structure.sage_object.dumps (sage/structure/sage_object.c:8021)\n  File \"ring.pyx\", line 2424, in sage.rings.ring.FiniteField.__reduce__ (sage/rings/ring.c:12853)\nTypeError: 'NoneType' object is unsubscriptable\n\nsage: loads(dumps(F))\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"sage_object.pyx\", line 740, in sage.structure.sage_object.dumps (sage/structure/sage_object.c:8021)\n  File \"ring.pyx\", line 2424, in sage.rings.ring.FiniteField.__reduce__ (sage/rings/ring.c:12853)\nTypeError: 'NoneType' object is unsubscriptable\n\nsage: loads(dumps(F.an_element()))\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"sage_object.pyx\", line 740, in sage.structure.sage_object.dumps (sage/structure/sage_object.c:8021)\n  File \"ring.pyx\", line 2424, in sage.rings.ring.FiniteField.__reduce__ (sage/rings/ring.c:12853)\nTypeError: 'NoneType' object is unsubscriptable\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7929\n\n",
+    "created_at": "2010-01-14T14:09:55Z",
+    "labels": [
+        "number fields",
+        "major",
+        "bug"
+    ],
+    "title": "Pickling fails for some residue fields",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7929",
+    "user": "nthiery"
+}
+```
 Assignee: davidloeffler
 
 Catched with #7921:
@@ -50,30 +60,78 @@ TypeError: 'NoneType' object is unsubscriptable
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7929
+
+
+
+
 
 ---
 
-Comment by roed created at 2011-11-19 02:38:55
+archive/issue_comments_069032.json:
+```json
+{
+    "body": "This works in 4.7.2.",
+    "created_at": "2011-11-19T02:38:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7929",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7929#issuecomment-69032",
+    "user": "roed"
+}
+```
 
 This works in 4.7.2.
 
 
+
 ---
 
-Comment by roed created at 2011-11-19 04:20:31
+archive/issue_comments_069033.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2011-11-19T04:20:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7929",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7929#issuecomment-69033",
+    "user": "roed"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by roed created at 2011-11-19 04:20:37
+archive/issue_comments_069034.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2011-11-19T04:20:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7929",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7929#issuecomment-69034",
+    "user": "roed"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-11-26 13:07:22
+archive/issue_comments_069035.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2011-11-26T13:07:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7929",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7929#issuecomment-69035",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: duplicate

@@ -1,54 +1,125 @@
 # Issue 7631: notebook -- republishing a worksheet doesn't update the displayed title
 
-Issue created by migration from https://trac.sagemath.org/ticket/7631
-
-Original creator: was
-
-Original creation time: 2009-12-08 23:10:37
-
+archive/issues_007631.json:
+```json
+{
+    "body": "Assignee: was\n\n1. Create a worksheet\n\n2. Publish it\n\n3. Change the title of the original worksheet and republish it.\n\nThe title of the published worksheet doesn't change. \n\nI only noticed this because of #7433.  Without #7433 this bug isn't observable. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7631\n\n",
+    "created_at": "2009-12-08T23:10:37Z",
+    "labels": [
+        "notebook",
+        "major",
+        "bug"
+    ],
+    "title": "notebook -- republishing a worksheet doesn't update the displayed title",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7631",
+    "user": "was"
+}
+```
 Assignee: was
 
-*1. Create a worksheet
+1. Create a worksheet
 
- 2. Publish it
+2. Publish it
 
- 3. Change the title of the original worksheet and republish it.
+3. Change the title of the original worksheet and republish it.
 
 The title of the published worksheet doesn't change. 
 
 I only noticed this because of #7433.  Without #7433 this bug isn't observable. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7631
+
+
+
+
 
 ---
+
+archive/issue_comments_065211.json:
+```json
+{
+    "body": "Attachment\n\nChanges worksheet name on republish",
+    "created_at": "2010-01-19T10:14:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7631",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7631#issuecomment-65211",
+    "user": "timdumol"
+}
+```
 
 Attachment
 
 Changes worksheet name on republish
 
 
+
 ---
 
-Comment by timdumol created at 2010-01-19 10:14:52
+archive/issue_comments_065212.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-01-19T10:14:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7631",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7631#issuecomment-65212",
+    "user": "timdumol"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by timdumol created at 2010-01-19 10:14:52
+archive/issue_comments_065213.json:
+```json
+{
+    "body": "This should do the trick",
+    "created_at": "2010-01-19T10:14:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7631",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7631#issuecomment-65213",
+    "user": "timdumol"
+}
+```
 
 This should do the trick
 
 
+
 ---
 
-Comment by mpatel created at 2010-01-20 03:24:35
+archive/issue_comments_065214.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-01-20T03:24:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7631",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7631#issuecomment-65214",
+    "user": "mpatel"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mpatel created at 2010-01-25 00:52:25
+archive/issue_comments_065215.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-25T00:52:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7631",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7631#issuecomment-65215",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 6164: Phan's Mini-AES for educational purposes
 
-Issue created by migration from https://trac.sagemath.org/ticket/6164
-
-Original creator: mvngu
-
-Original creation time: 2009-05-31 04:21:30
-
+archive/issues_006164.json:
+```json
+{
+    "body": "Assignee: somebody\n\nCC:  malb\n\nKeywords: Mini-AES, AES, cryptography\n\nTo facilitate the learning of cryptography (in particular the Advanced Encryption Standard), it's a good idea to add a class to allow students to explore the working of a block cipher. The goal here is to implement the Mini-AES block cipher of Phan as described in the paper:\n\nR. C.-W. Phan. Mini advanced encryption standard (mini-AES): a testbed for cryptanalysis students. Cryptologia, 26(4):283--306, 2002.\n\nThis is a simplified variant of the AES to be used for cryptography education.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6164\n\n",
+    "created_at": "2009-05-31T04:21:30Z",
+    "labels": [
+        "cryptography",
+        "major",
+        "enhancement"
+    ],
+    "title": "Phan's Mini-AES for educational purposes",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6164",
+    "user": "mvngu"
+}
+```
 Assignee: somebody
 
 CC:  malb
@@ -14,28 +24,65 @@ Keywords: Mini-AES, AES, cryptography
 
 To facilitate the learning of cryptography (in particular the Advanced Encryption Standard), it's a good idea to add a class to allow students to explore the working of a block cipher. The goal here is to implement the Mini-AES block cipher of Phan as described in the paper:
 
- R. C.-W. Phan. Mini advanced encryption standard (mini-AES): a testbed for cryptanalysis students. Cryptologia, 26(4):283--306, 2002.
+R. C.-W. Phan. Mini advanced encryption standard (mini-AES): a testbed for cryptanalysis students. Cryptologia, 26(4):283--306, 2002.
 
 This is a simplified variant of the AES to be used for cryptography education.
+
+Issue created by migration from https://trac.sagemath.org/ticket/6164
+
+
+
 
 
 ---
 
-Comment by mvngu created at 2009-05-31 04:25:41
+archive/issue_comments_049171.json:
+```json
+{
+    "body": "I'm CC'ing Martin, as he's the only person I know who might be interested in reviewing this ticket.",
+    "created_at": "2009-05-31T04:25:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6164",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6164#issuecomment-49171",
+    "user": "mvngu"
+}
+```
 
 I'm CC'ing Martin, as he's the only person I know who might be interested in reviewing this ticket.
 
 
+
 ---
 
-Comment by malb created at 2009-05-31 12:50:01
+archive/issue_comments_049172.json:
+```json
+{
+    "body": "Hi, how does the MiniAES compare to the small scale AES variants already in Sage? I guess, they should at least re-use the same building blocks. e.g. there is an S-Box class which might be worth using, some of the functions might do the same etc.",
+    "created_at": "2009-05-31T12:50:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6164",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6164#issuecomment-49172",
+    "user": "malb"
+}
+```
 
 Hi, how does the MiniAES compare to the small scale AES variants already in Sage? I guess, they should at least re-use the same building blocks. e.g. there is an S-Box class which might be worth using, some of the functions might do the same etc.
 
 
+
 ---
 
-Comment by mvngu created at 2009-06-01 01:15:48
+archive/issue_comments_049173.json:
+```json
+{
+    "body": "Replying to [comment:2 malb]:\n> Hi, how does the MiniAES compare to the small scale AES variants already in Sage? \n\n\nAs you know, Mini-AES was designed as a very small scale variant of the AES. It can be used to teach crypto to computer science students who don't have the necessary maths background to understand finite fields and (basic) abstract algebra. Ideally, such students should have taken at least two courses in basic calculus, and at least two courses in programming. As I see it, Mini-AES and the implementation contained in the patch require \"minimum\" maths background for crypto students to work through the processes of encryption and decryption. As noted in the paper\n\n\n\nC. Cid, S. Murphy, and M. Robshaw. Small scale variants of the AES. In Proceedings of Fast Software Encryption 2005. LNCS 3557, Springer Verlag, 2005.\n\n\n\nMini-AES and the simplified AES variant by Musa, Schaefer, and Wedig have been designed for teaching purposes. On the other hand, the small scale variants of the AES by Cid, Murphy, and Robshaw have been designed as a framework for cryptanalysis and comparing different cryptanalytic techniques that can be brought to bear on the AES or its small scale variants. As I see it, the small scale variants of Cid et al. require far more advanced maths to describe and use. To be fair, the simplified variant by Musa et al. also requires far too much advanced maths than is suitable for someone who requires a basic understanding of how AES works. \n\n\n\nWhat I want to do with the patch is to implement a variant of the AES that fits in with Neal Koblitz's idea of Kid Krypto, where one should not require too much advanced maths to describe the working of a cryptosystem. Each method of the class `MiniAES` is designed so that a student can follow through the whole processes of encryption and decryption, one step at a time. But the class also has a callable that a student can use to perform encryption or decryption in one step.\n\n\n\n> I guess, they should at least re-use the same building blocks. e.g. there is an S-Box class which might be worth using, some of the functions might do the same etc.\n\n\nYes. You got me there. I see what I can do to re-use the building blocks in `sage/crypto/mq/sr.py`",
+    "created_at": "2009-06-01T01:15:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6164",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6164#issuecomment-49173",
+    "user": "mvngu"
+}
+```
 
 Replying to [comment:2 malb]:
 > Hi, how does the MiniAES compare to the small scale AES variants already in Sage? 
@@ -63,9 +110,20 @@ What I want to do with the patch is to implement a variant of the AES that fits 
 Yes. You got me there. I see what I can do to re-use the building blocks in `sage/crypto/mq/sr.py`
 
 
+
 ---
 
-Comment by malb created at 2009-06-01 09:46:22
+archive/issue_comments_049174.json:
+```json
+{
+    "body": "Replying to [comment:3 mvngu]:\nThanks for reminding me about the differences between SR and MiniAES. I am not opposed to have the MiniAES in Sage, on the contrary I very much support it. We should have some clear docs somewhere to make sure that users don't get confused about the various AES variants we have. \n\n> > I guess, they should at least re-use the same building blocks. e.g. there is an S-Box class which might be worth using, some of the functions might do the same etc.\n> Yes. You got me there. I see what I can do to re-use the building blocks in `sage/crypto/mq/sr.py`\n\n`mq.SR` does not really make use of the S-Box class (since the S-Box is so structured). Have a look at `mq.SBox` (a weird place for that class, I know), it seems it would be useful for your purposes. Also, this class also gives you difference distribution tables etc. for free.\n\nBtw.   ``\\text{GF}(2^4)`` should now be ``\\GF{2^4}``.",
+    "created_at": "2009-06-01T09:46:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6164",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6164#issuecomment-49174",
+    "user": "malb"
+}
+```
 
 Replying to [comment:3 mvngu]:
 Thanks for reminding me about the differences between SR and MiniAES. I am not opposed to have the MiniAES in Sage, on the contrary I very much support it. We should have some clear docs somewhere to make sure that users don't get confused about the various AES variants we have. 
@@ -78,9 +136,20 @@ Thanks for reminding me about the differences between SR and MiniAES. I am not o
 Btw.   ``\text{GF}(2^4)`` should now be ``\GF{2^4}``.
 
 
+
 ---
 
-Comment by mvngu created at 2009-06-01 14:02:25
+archive/issue_comments_049175.json:
+```json
+{
+    "body": "Replying to [comment:4 malb]:\n> Replying to [comment:3 mvngu]:\n> Thanks for reminding me about the differences between SR and MiniAES. I am not opposed to have the MiniAES in Sage, on the contrary I very much support it. We should have some clear docs somewhere to make sure that users don't get confused about the various AES variants we have. \n\n\nI'm on it. I anticipate changing/adding to the documentation of `sage/mq/sr.py` and my patch.\n\n\n\n> `mq.SR` does not really make use of the S-Box class (since the S-Box is so structured). Have a look at `mq.SBox` (a weird place for that class, I know), it seems it would be useful for your purposes. Also, this class also gives you difference distribution tables etc. for free.\n\n\nThanks for the pointer. And for free courtesy of Martin :-)\n\n\n\n> Btw.   ``\\text{GF}(2^4)`` should now be ``\\GF{2^4}``.\n\n\nDuly noted.",
+    "created_at": "2009-06-01T14:02:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6164",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6164#issuecomment-49175",
+    "user": "mvngu"
+}
+```
 
 Replying to [comment:4 malb]:
 > Replying to [comment:3 mvngu]:
@@ -104,18 +173,40 @@ Thanks for the pointer. And for free courtesy of Martin :-)
 Duly noted.
 
 
+
 ---
 
-Comment by mvngu created at 2009-06-17 00:16:08
+archive/issue_comments_049176.json:
+```json
+{
+    "body": "The patch uses the S-box implementation in `sage/crypto/mq/sbox.py` for constructing the S-box of Mini-AES. It also distinguishes Mini-AES from SR, as implemented in `sage/crypto/mq/sr.py`.",
+    "created_at": "2009-06-17T00:16:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6164",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6164#issuecomment-49176",
+    "user": "mvngu"
+}
+```
 
 The patch uses the S-box implementation in `sage/crypto/mq/sbox.py` for constructing the S-box of Mini-AES. It also distinguishes Mini-AES from SR, as implemented in `sage/crypto/mq/sr.py`.
 
 
+
 ---
 
-Comment by malb created at 2009-06-17 20:07:14
+archive/issue_comments_049177.json:
+```json
+{
+    "body": "**Review Report**\n\n* as mentioned earlier, the module is beautifully documented. This is really nice!\n* I am wondering whether it would be better to have a directory `block_cipher` with a file `miniaes.py` inside instead of `block_cipher.py`?\n* I guess it would be nice to have a function `sbox` which returns the encryption S-Box for further study?\n* AFAIK, we agreed to not use `\\leq` but `<=` instead, because our users might not speak LaTeX\n* same for `\\times`\n* why are you more strict wrt types in `__call__` than in `encrypt`?\n* `D = \\sigma_{K_0} \\circ \\gamma^{-1} \\circ \\pi \\circ \\theta \\circ \\sigma_{K_1} \\circ \\gamma^{-1} \\circ \\pi \\circ \\sigma_{K_2} ` isn't exactly easily readable, but I guess it looks nice in the reference manual. Maybe there is some compromise though?\n* Maybe http://sphinx.pocoo.org/markup/misc.html#dir-tabularcolumns is a good alternative to LaTeX tabular for readability?\n\nNote, that most of the above are recommendations, not requirements. This ticket is much better documented than almost every other module in Sage!",
+    "created_at": "2009-06-17T20:07:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6164",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6164#issuecomment-49177",
+    "user": "malb"
+}
+```
 
-*Review Report*
+**Review Report**
 
 * as mentioned earlier, the module is beautifully documented. This is really nice!
 * I am wondering whether it would be better to have a directory `block_cipher` with a file `miniaes.py` inside instead of `block_cipher.py`?
@@ -129,12 +220,23 @@ Comment by malb created at 2009-06-17 20:07:14
 Note, that most of the above are recommendations, not requirements. This ticket is much better documented than almost every other module in Sage!
 
 
+
 ---
 
-Comment by mvngu created at 2009-06-17 20:53:18
+archive/issue_comments_049178.json:
+```json
+{
+    "body": "Replying to [comment:7 malb]:\n> **Review Report**\n> * I am wondering whether it would be better to have a directory `block_cipher` with a file `miniaes.py` inside instead of `block_cipher.py`?\nThat can be arranged.\n\n\n\n\n> * I guess it would be nice to have a function `sbox` which returns the encryption S-Box for further study?\nYou read my mind. I forgot to add that. Man, it's early in the morning over here :-)\n\n\n\n\n> * AFAIK, we agreed to not use `\\leq` but `<=` instead, because our users might not speak LaTeX\n> * same for `\\times`\nLet's leave them in for now and see how users react.\n\n\n\n\n> * why are you more strict wrt types in `__call__` than in `encrypt`?\nThe methods `encrypt` and `decrypt` are meant to deal with only 16-bit blocks of data, so they're very limited in the length of their input. As their input are matrices over a finite field, I think the structure of the input and output mimics how a student would go through the encryption/decryption by hand. If they rather work with integers than finite field elements, they could use the provided conversion methods.\n\nThe callable `__call__` is designed for performing encryption/decryption in one go, operating mainly on binary strings. So once someone is comfortable with how Mini-AES works, they can encrypt binary strings longer than 16 bits in length, which is at present not possible with the `encrypt` and `decrypt` methods. You can think of `__call__` as being there to do Mini-AES encryption/decryption on arbitrary data, while `encrypt` and `decrypt` aid in understanding the corresponding processes on a small scale, i.e. on 16-bit blocks.\n\n\n\n\n> * `D = \\sigma_{K_0} \\circ \\gamma^{-1} \\circ \\pi \\circ \\theta \\circ \\sigma_{K_1} \\circ \\gamma^{-1} \\circ \\pi \\circ \\sigma_{K_2} ` isn't exactly easily readable, but I guess it looks nice in the reference manual. Maybe there is some compromise though?\nI'm not sure. It's meant as a specification of the decryption process.\n\n\n\n\n> * Maybe http://sphinx.pocoo.org/markup/misc.html#dir-tabularcolumns is a good alternative to LaTeX tabular for readability?\nSure. Let me try that one for a change.",
+    "created_at": "2009-06-17T20:53:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6164",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6164#issuecomment-49178",
+    "user": "mvngu"
+}
+```
 
 Replying to [comment:7 malb]:
-> *Review Report*
+> **Review Report**
 > * I am wondering whether it would be better to have a directory `block_cipher` with a file `miniaes.py` inside instead of `block_cipher.py`?
 That can be arranged.
 
@@ -172,20 +274,42 @@ I'm not sure. It's meant as a specification of the decryption process.
 Sure. Let me try that one for a change.
 
 
+
 ---
 
-Comment by mvngu created at 2009-06-18 21:23:49
+archive/issue_comments_049179.json:
+```json
+{
+    "body": "Fixed the following issues raised by malb:\n* Mini-AES is now under the directory `sage/crypto/block_cipher`\n* add the function `sbox()` to return the S-box of MiniAES\n\nI still use LaTeX markup for tables, as the `tabularcolumns` tag of Sphinx doesn't give the effect I want, at least I can't figure out how to do so.",
+    "created_at": "2009-06-18T21:23:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6164",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6164#issuecomment-49179",
+    "user": "mvngu"
+}
+```
 
 Fixed the following issues raised by malb:
- * Mini-AES is now under the directory `sage/crypto/block_cipher`
- * add the function `sbox()` to return the S-box of MiniAES
+* Mini-AES is now under the directory `sage/crypto/block_cipher`
+* add the function `sbox()` to return the S-box of MiniAES
 
 I still use LaTeX markup for tables, as the `tabularcolumns` tag of Sphinx doesn't give the effect I want, at least I can't figure out how to do so.
 
 
+
 ---
 
-Comment by malb created at 2009-06-20 12:49:53
+archive/issue_comments_049180.json:
+```json
+{
+    "body": "Replying to [comment:8 mvngu]:\n> > * AFAIK, we agreed to not use `\\leq` but `<=` instead, because our users might not speak LaTeX\n> > * same for `\\times`\n> Let's leave them in for now and see how users react.\n\nIt is somewhere in the developer docs that we should expect users to speak LaTeX, so I'd recommend to change that. I'll give the patch a positive review and leave it to your decision to follow this advise or not.",
+    "created_at": "2009-06-20T12:49:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6164",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6164#issuecomment-49180",
+    "user": "malb"
+}
+```
 
 Replying to [comment:8 mvngu]:
 > > * AFAIK, we agreed to not use `\leq` but `<=` instead, because our users might not speak LaTeX
@@ -195,9 +319,20 @@ Replying to [comment:8 mvngu]:
 It is somewhere in the developer docs that we should expect users to speak LaTeX, so I'd recommend to change that. I'll give the patch a positive review and leave it to your decision to follow this advise or not.
 
 
+
 ---
 
-Comment by malb created at 2009-06-24 14:27:38
+archive/issue_comments_049181.json:
+```json
+{
+    "body": "Doctests fail in 4.1.alpha0:\n\n\n```\nsage: maes = MiniAES()\nNameError: name 'MiniAES' is not defined\n```\n",
+    "created_at": "2009-06-24T14:27:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6164",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6164#issuecomment-49181",
+    "user": "malb"
+}
+```
 
 Doctests fail in 4.1.alpha0:
 
@@ -209,29 +344,75 @@ NameError: name 'MiniAES' is not defined
 
 
 
+
 ---
 
-Comment by mvngu created at 2009-06-24 21:53:30
+archive/issue_comments_049182.json:
+```json
+{
+    "body": "based on Sage 4.1.alpha0",
+    "created_at": "2009-06-24T21:53:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6164",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6164#issuecomment-49182",
+    "user": "mvngu"
+}
+```
 
 based on Sage 4.1.alpha0
 
 
+
 ---
+
+archive/issue_comments_049183.json:
+```json
+{
+    "body": "Attachment\n\nCan you try again with the new patch?",
+    "created_at": "2009-06-24T21:56:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6164",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6164#issuecomment-49183",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
 Can you try again with the new patch?
 
 
+
 ---
 
-Comment by malb created at 2009-06-24 22:35:55
+archive/issue_comments_049184.json:
+```json
+{
+    "body": "Yep that works! positive review again!",
+    "created_at": "2009-06-24T22:35:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6164",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6164#issuecomment-49184",
+    "user": "malb"
+}
+```
 
 Yep that works! positive review again!
 
 
+
 ---
 
-Comment by boothby created at 2009-06-26 17:45:53
+archive/issue_comments_049185.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-06-26T17:45:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6164",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6164#issuecomment-49185",
+    "user": "boothby"
+}
+```
 
 Resolution: fixed

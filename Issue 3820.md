@@ -1,40 +1,98 @@
 # Issue 3820: notebook -- sometimes published worksheets are listed as being published by pub.
 
-Issue created by migration from https://trac.sagemath.org/ticket/3820
-
-Original creator: was
-
-Original creation time: 2008-08-12 16:17:51
-
+archive/issues_003820.json:
+```json
+{
+    "body": "Assignee: boothby\n\nnotebook -- sometimes published worksheets are listed as being published by pub; this should *never* be the case. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3820\n\n",
+    "created_at": "2008-08-12T16:17:51Z",
+    "labels": [
+        "notebook",
+        "minor",
+        "bug"
+    ],
+    "title": "notebook -- sometimes published worksheets are listed as being published by pub.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3820",
+    "user": "was"
+}
+```
 Assignee: boothby
 
 notebook -- sometimes published worksheets are listed as being published by pub; this should *never* be the case. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3820
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2009-01-24 05:26:37
+archive/issue_comments_027166.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-01-24T05:26:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3820",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3820#issuecomment-27166",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mhansen created at 2009-01-24 05:26:37
+archive/issue_comments_027167.json:
+```json
+{
+    "body": "I've added a test in the selenium suite for this.",
+    "created_at": "2009-01-24T05:26:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3820",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3820#issuecomment-27167",
+    "user": "mhansen"
+}
+```
 
 I've added a test in the selenium suite for this.
 
 
+
 ---
 
-Comment by mhansen created at 2009-01-24 05:26:37
+archive/issue_comments_027168.json:
+```json
+{
+    "body": "Changing assignee from boothby to mhansen.",
+    "created_at": "2009-01-24T05:26:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3820",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3820#issuecomment-27168",
+    "user": "mhansen"
+}
+```
 
 Changing assignee from boothby to mhansen.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-02 05:05:50
+archive/issue_comments_027169.json:
+```json
+{
+    "body": "This patch needs to be rebased unless there is some dependency I am not aware of:\n\n```\nsage-3.3.alpha4/devel/sage$ patch -p1 < trac_3820.patch\\?format\\=raw \npatching file sage/server/notebook/templates/worksheet_listing.html\nHunk #1 succeeded at 130 (offset 1 line).\nHunk #2 FAILED at 178.\n1 out of 2 hunks FAILED -- saving rejects to file sage/server/notebook/templates/worksheet_listing.html.rej\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-02T05:05:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3820",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3820#issuecomment-27169",
+    "user": "mabshoff"
+}
+```
 
 This patch needs to be rebased unless there is some dependency I am not aware of:
 
@@ -52,30 +110,76 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_027170.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-02-15T04:22:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3820",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3820#issuecomment-27170",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2009-02-15 04:23:50
+archive/issue_comments_027171.json:
+```json
+{
+    "body": "I've put up a rebased patch which applies against rc0.",
+    "created_at": "2009-02-15T04:23:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3820",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3820#issuecomment-27171",
+    "user": "mhansen"
+}
+```
 
 I've put up a rebased patch which applies against rc0.
 
 
+
 ---
 
-Comment by TimothyClemans created at 2009-03-16 20:32:47
+archive/issue_comments_027172.json:
+```json
+{
+    "body": "looks good\n\n* note that if original worksheet is deleted then the owner cell on the published worksheets page is blank",
+    "created_at": "2009-03-16T20:32:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3820",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3820#issuecomment-27172",
+    "user": "TimothyClemans"
+}
+```
 
 looks good
 
 * note that if original worksheet is deleted then the owner cell on the published worksheets page is blank
 
 
+
 ---
 
-Comment by mabshoff created at 2009-03-25 08:35:11
+archive/issue_comments_027173.json:
+```json
+{
+    "body": "Merged in Sage 3.4.1.alpha0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-03-25T08:35:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3820",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3820#issuecomment-27173",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.4.1.alpha0.
 
@@ -84,8 +188,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-03-25 08:35:11
+archive/issue_comments_027174.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-03-25T08:35:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3820",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3820#issuecomment-27174",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

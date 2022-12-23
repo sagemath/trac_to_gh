@@ -1,11 +1,21 @@
 # Issue 9886: slow coercion from integer ring to integer mod ring
 
-Issue created by migration from https://trac.sagemath.org/ticket/9887
-
-Original creator: dmharvey
-
-Original creation time: 2010-09-09 16:09:17
-
+archive/issues_009886.json:
+```json
+{
+    "body": "Assignee: tbd\n\nSage 4.5.3, 2.6GHz Opteron, Linux\n\n\n```\nsage: R = Integers(3^20)\nsage: u = Integer(2)\nsage: timeit(\"z = R(u)\")\n625 loops, best of 3: 6.84 \u00b5s per loop\n```\n\n\nWhy does it take 18000 cycles to convert a tiny integer to an element of R?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9887\n\n",
+    "created_at": "2010-09-09T16:09:17Z",
+    "labels": [
+        "performance",
+        "major",
+        "bug"
+    ],
+    "title": "slow coercion from integer ring to integer mod ring",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9886",
+    "user": "dmharvey"
+}
+```
 Assignee: tbd
 
 Sage 4.5.3, 2.6GHz Opteron, Linux
@@ -22,10 +32,25 @@ sage: timeit("z = R(u)")
 Why does it take 18000 cycles to convert a tiny integer to an element of R?
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/9887
+
+
+
+
 
 ---
 
-Comment by roed created at 2010-09-23 11:22:38
+archive/issue_comments_097990.json:
+```json
+{
+    "body": "This depends on #7883, #8333, #8334 and #9814.  In particular, you first need to apply\n\n```\n333_finite_fields_to_new_coercion.patch\n7883_ideals.patch\n7883_fixes.patch\n7585_9_1_frac_and_coerce_updates.patch\n8334_residue_fields-rebased_for_8446.patch\n7585_12_1_fixes.patch\n9814-2.patch\n```\n\nfrom those tickets.\n\nOn the other hand, it also addresses the speed issues in #9885, #9884, #9883 and #9882.  It should also fix #9886: the timings indicate that `ZZ.convert_map_from(R)` is getting called each time, rather than the morphism being found in the `convert_from_hash,` and I don't know why this would be the case.",
+    "created_at": "2010-09-23T11:22:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9886",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9886#issuecomment-97990",
+    "user": "roed"
+}
+```
 
 This depends on #7883, #8333, #8334 and #9814.  In particular, you first need to apply
 
@@ -44,16 +69,38 @@ from those tickets.
 On the other hand, it also addresses the speed issues in #9885, #9884, #9883 and #9882.  It should also fix #9886: the timings indicate that `ZZ.convert_map_from(R)` is getting called each time, rather than the morphism being found in the `convert_from_hash,` and I don't know why this would be the case.
 
 
+
 ---
 
-Comment by roed created at 2010-09-23 11:22:38
+archive/issue_comments_097991.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-09-23T11:22:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9886",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9886#issuecomment-97991",
+    "user": "roed"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by roed created at 2010-09-23 11:27:15
+archive/issue_comments_097992.json:
+```json
+{
+    "body": "Oops, the top of the dependencies got cut off, and there are newer versions of some of these patches.  It should read:\n\n```\n8333_parent_init.patch\n8333_finite_fields_to_new_coercion.2.patch\n7883_ideals.patch\n7883_fixes.patch\n7585_9_1_frac_and_coerce_updates.patch\n8334_residue_fields-rebased_for_8446.patch\n7585_12_1_fixes.patch.2\n9814-2.patch\n```\n\nNote that you can find `7585_12_1_fixes.patch` and `7585_9_1_frac_and_coerce_updates.patch` at #8334.",
+    "created_at": "2010-09-23T11:27:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9886",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9886#issuecomment-97992",
+    "user": "roed"
+}
+```
 
 Oops, the top of the dependencies got cut off, and there are newer versions of some of these patches.  It should read:
 
@@ -71,9 +118,20 @@ Oops, the top of the dependencies got cut off, and there are newer versions of s
 Note that you can find `7585_12_1_fixes.patch` and `7585_9_1_frac_and_coerce_updates.patch` at #8334.
 
 
+
 ---
 
-Comment by davidloeffler created at 2010-10-03 16:22:41
+archive/issue_comments_097993.json:
+```json
+{
+    "body": "I tried the test cases from tickets #9882-#9887 under 4.5.3, under 4.6.alpha2 without this patch, and with this patch. Apologies for the crappy ASCII-art table.\n\n\n```\n      -------------------------------\n      |   4.5.3 |  4.6.a2 | + patch |\n-------------------------------------\n#9882 | 19.8 \u00b5s | 15.9 \u00b5s | 3.87 \u00b5s |\n#9883 | 4.25 ms |  133 \u00b5s | 21.5 \u00b5s |\n#9884 | 1.04 ms |  385 \u00b5s |   18 \u00b5s |\n#9885 | 1.23 \u00b5s | 1.24 \u00b5s | 1.34 \u00b5s |\n#9886 | 33.7 \u00b5s | 32.5 \u00b5s | 32.9 \u00b5s |\n#9887 | 6.54 \u00b5s |  966 ns |  992 ns |\n-------------------------------------\n```\n\n\nSo it looks like David's other finite rings patches have already made a dramatic speed improvement to several of these, and the patch on this ticket further improves some of them. The fact that #9885 actually slowed down marginally as a result of the patch is slightly worrying; it might just be random noise, but I did several more runs and the slight slowdowns in #9885 and (to a lesser extent) #9887 seemed quite consistent. It might be a price worth paying for the dramatic speedups elsewhere, but it would be nice if we could avoid it.\n\nI'd be interested to see corresponding timings on other systems.",
+    "created_at": "2010-10-03T16:22:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9886",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9886#issuecomment-97993",
+    "user": "davidloeffler"
+}
+```
 
 I tried the test cases from tickets #9882-#9887 under 4.5.3, under 4.6.alpha2 without this patch, and with this patch. Apologies for the crappy ASCII-art table.
 
@@ -97,9 +155,20 @@ So it looks like David's other finite rings patches have already made a dramatic
 I'd be interested to see corresponding timings on other systems.
 
 
+
 ---
 
-Comment by roed created at 2010-10-15 08:44:14
+archive/issue_comments_097994.json:
+```json
+{
+    "body": "I'm not sure why there are slight slowdowns for #9885 and #9887.  But I did figure out why #9886 was unexpectedly slow: see #10130.\n\nHere are timings on my Macbook Pro (+ patch includes the patch at #10130):\n\n```\n      -------------------------------\n      | 4.3.rc0 |  4.6.a2 | + patch |\n-------------------------------------\n#9882 | 19.9 \u00b5s |   15 \u00b5s | 3.71 \u00b5s |\n#9883 | 4.34 ms |  117 \u00b5s | 20.2 \u00b5s |\n#9884 | 3.79 ms |  314 \u00b5s | 30.7 \u00b5s |\n#9885 | 1.22 \u00b5s |  850 ns |  938 ns |\n#9886 | 9.99 \u00b5s | 33.4 \u00b5s |  264 ns |\n#9887 |    ? \u00b5s |  787 ns |  814 ns |\n-------------------------------------\n```\n\nI got a range of values for #9885 in the middle column, from 835ns to 1.07\u00b5s.\n\nI wanted to check 9.99\u00b5s in the first column in a different branch, so rebuilt only to discover that that copy of sage was built when I had an earlier version of OS X and was thus running 32 bit...",
+    "created_at": "2010-10-15T08:44:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9886",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9886#issuecomment-97994",
+    "user": "roed"
+}
+```
 
 I'm not sure why there are slight slowdowns for #9885 and #9887.  But I did figure out why #9886 was unexpectedly slow: see #10130.
 
@@ -123,16 +192,38 @@ I got a range of values for #9885 in the middle column, from 835ns to 1.07µs.
 I wanted to check 9.99µs in the first column in a different branch, so rebuilt only to discover that that copy of sage was built when I had an earlier version of OS X and was thus running 32 bit...
 
 
+
 ---
 
-Comment by kedlaya created at 2011-06-17 16:07:22
+archive/issue_comments_097995.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2011-06-17T16:07:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9886",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9886#issuecomment-97995",
+    "user": "kedlaya"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by kedlaya created at 2011-06-17 16:07:22
+archive/issue_comments_097996.json:
+```json
+{
+    "body": "This patch fails to apply against 4.7:\n\n```\ncd \"/home/kedlaya/Downloads/sage-4.7/devel/sage\" && hg import   \"/home/kedlaya/Downloads/9887.patch\"\napplying /home/kedlaya/Downloads/9887.patch\npatching file sage/rings/finite_rings/integer_mod.pxd\nHunk #1 succeeded at 12 with fuzz 1 (offset 0 lines).\npatching file sage/rings/polynomial/polynomial_ring.py\nHunk #7 FAILED at 1246\n1 out of 13 hunks FAILED -- saving rejects to file sage/rings/polynomial/polynomial_ring.py.rej\nabort: patch failed to apply\n```\n",
+    "created_at": "2011-06-17T16:07:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9886",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9886#issuecomment-97996",
+    "user": "kedlaya"
+}
+```
 
 This patch fails to apply against 4.7:
 
@@ -149,77 +240,204 @@ abort: patch failed to apply
 
 
 
+
 ---
+
+archive/issue_comments_097997.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2011-06-21T19:51:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9886",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9886#issuecomment-97997",
+    "user": "roed"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by roed created at 2011-06-21 19:53:40
+archive/issue_comments_097998.json:
+```json
+{
+    "body": "It should apply against 4.7.1.alpha4.",
+    "created_at": "2011-06-21T19:53:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9886",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9886#issuecomment-97998",
+    "user": "roed"
+}
+```
 
 It should apply against 4.7.1.alpha4.
 
 
+
 ---
 
-Comment by roed created at 2011-06-21 19:53:40
+archive/issue_comments_097999.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2011-06-21T19:53:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9886",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9886#issuecomment-97999",
+    "user": "roed"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by roed created at 2011-06-22 08:14:03
+archive/issue_comments_098000.json:
+```json
+{
+    "body": "For patchbot (and others working against 4.7), apply 9887_vs_47.patch only.",
+    "created_at": "2011-06-22T08:14:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9886",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9886#issuecomment-98000",
+    "user": "roed"
+}
+```
 
 For patchbot (and others working against 4.7), apply 9887_vs_47.patch only.
 
 
+
 ---
 
-Comment by roed created at 2011-06-22 09:24:42
+archive/issue_comments_098001.json:
+```json
+{
+    "body": "Apply against 4.7",
+    "created_at": "2011-06-22T09:24:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9886",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9886#issuecomment-98001",
+    "user": "roed"
+}
+```
 
 Apply against 4.7
 
 
+
 ---
+
+archive/issue_comments_098002.json:
+```json
+{
+    "body": "Attachment\n\nWhat is the status of this patch now?  It looks like it could easily bit-rot (if it hasn't already).",
+    "created_at": "2011-12-13T16:11:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9886",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9886#issuecomment-98002",
+    "user": "jason"
+}
+```
 
 Attachment
 
 What is the status of this patch now?  It looks like it could easily bit-rot (if it hasn't already).
 
 
+
 ---
+
+archive/issue_comments_098003.json:
+```json
+{
+    "body": "Attachment\n\nApply against 4.8.alpha2",
+    "created_at": "2011-12-15T05:24:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9886",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9886#issuecomment-98003",
+    "user": "roed"
+}
+```
 
 Attachment
 
 Apply against 4.8.alpha2
 
 
+
 ---
 
-Comment by roed created at 2011-12-15 05:24:56
+archive/issue_comments_098004.json:
+```json
+{
+    "body": "Apply only 9887_vs_48a2.patch",
+    "created_at": "2011-12-15T05:24:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9886",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9886#issuecomment-98004",
+    "user": "roed"
+}
+```
 
 Apply only 9887_vs_48a2.patch
 
 
+
 ---
 
-Comment by davidloeffler created at 2012-03-11 16:13:08
+archive/issue_comments_098005.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2012-03-11T16:13:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9886",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9886#issuecomment-98005",
+    "user": "davidloeffler"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by davidloeffler created at 2012-03-11 16:13:08
+archive/issue_comments_098006.json:
+```json
+{
+    "body": "This does not apply to the current beta, as it conflicts with #9138 and #11900, so I'm afraid it will need yet another rebase.",
+    "created_at": "2012-03-11T16:13:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9886",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9886#issuecomment-98006",
+    "user": "davidloeffler"
+}
+```
 
 This does not apply to the current beta, as it conflicts with #9138 and #11900, so I'm afraid it will need yet another rebase.
 
 
+
 ---
 
-Comment by tscrim created at 2013-02-25 04:38:03
+archive/issue_comments_098007.json:
+```json
+{
+    "body": "There is at least some partial work on this done in `5.7.beta3`:\n\n```\nsage: R = Integers(3^20)\nsage: u = Integer(2)\nsage: %timeit z = R(u)\n100000 loops, best of 3: 1.48 us per loop\nsage: %timeit z = R(u)\n1000000 loops, best of 3: 1.74 us per loop\n```\n\n\nSo should we close this ticket?\n\nEdit - I'm running this test on my Ubuntu VM while video chatting on Skype in my Host OS.",
+    "created_at": "2013-02-25T04:38:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9886",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9886#issuecomment-98007",
+    "user": "tscrim"
+}
+```
 
 There is at least some partial work on this done in `5.7.beta3`:
 
@@ -238,30 +456,74 @@ So should we close this ticket?
 Edit - I'm running this test on my Ubuntu VM while video chatting on Skype in my Host OS.
 
 
+
 ---
 
-Comment by tscrim created at 2013-02-25 04:38:03
+archive/issue_comments_098008.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_info.",
+    "created_at": "2013-02-25T04:38:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9886",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9886#issuecomment-98008",
+    "user": "tscrim"
+}
+```
 
 Changing status from needs_work to needs_info.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2013-07-23 22:24:18
+archive/issue_comments_098009.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"sd51\".",
+    "created_at": "2013-07-23T22:24:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9886",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9886#issuecomment-98009",
+    "user": "AlexGhitza"
+}
+```
 
 Changing keywords from "" to "sd51".
 
 
+
 ---
 
-Comment by AlexGhitza created at 2013-07-23 22:24:18
+archive/issue_comments_098010.json:
+```json
+{
+    "body": "Changing status from needs_info to positive_review.",
+    "created_at": "2013-07-23T22:24:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9886",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9886#issuecomment-98010",
+    "user": "AlexGhitza"
+}
+```
 
 Changing status from needs_info to positive_review.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2013-07-23 22:24:18
+archive/issue_comments_098011.json:
+```json
+{
+    "body": "I second the request to close the ticket.  On sage-5.10:\n\n\n```\nsage: R = Integers(3^20)\nsage: u = Integer(2)\nsage: %timeit(\"z = R(u)\")\n10000000 loops, best of 3: 24.6 ns per loop\nsage: %timeit(\"z = ZZ(u)\")\n10000000 loops, best of 3: 24.5 ns per loop\n```\n\n\nIn other words, putting u into R takes the same time as putting u into ZZ (where it is already).  It shouldn't be possible to do any better.\n\nI'll tag this as \"positive review\" to bring it to the release manager's attention.",
+    "created_at": "2013-07-23T22:24:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9886",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9886#issuecomment-98011",
+    "user": "AlexGhitza"
+}
+```
 
 I second the request to close the ticket.  On sage-5.10:
 
@@ -281,8 +543,19 @@ In other words, putting u into R takes the same time as putting u into ZZ (where
 I'll tag this as "positive review" to bring it to the release manager's attention.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-08-13 08:43:03
+archive/issue_comments_098012.json:
+```json
+{
+    "body": "Resolution: worksforme",
+    "created_at": "2013-08-13T08:43:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9886",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9886#issuecomment-98012",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: worksforme

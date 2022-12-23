@@ -1,41 +1,101 @@
 # Issue 3566: dsage -- get rid of uuid import
 
-Issue created by migration from https://trac.sagemath.org/ticket/3566
-
-Original creator: was
-
-Original creation time: 2008-07-06 19:41:57
-
+archive/issues_003566.json:
+```json
+{
+    "body": "Assignee: yi\n\nThis is to optimize startup time.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3566\n\n",
+    "created_at": "2008-07-06T19:41:57Z",
+    "labels": [
+        "dsage",
+        "major",
+        "enhancement"
+    ],
+    "title": "dsage -- get rid of uuid import",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3566",
+    "user": "was"
+}
+```
 Assignee: yi
 
 This is to optimize startup time.
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3566
+
+
+
+
 
 ---
+
+archive/issue_comments_025196.json:
+```json
+{
+    "body": "Attachment\n\n+1",
+    "created_at": "2008-07-06T19:45:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3566",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3566#issuecomment-25196",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 +1
 
 
+
 ---
 
-Comment by yi created at 2008-07-06 19:48:14
+archive/issue_comments_025197.json:
+```json
+{
+    "body": "Looks good to me.",
+    "created_at": "2008-07-06T19:48:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3566",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3566#issuecomment-25197",
+    "user": "yi"
+}
+```
 
 Looks good to me.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-06 20:07:37
+archive/issue_comments_025198.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-07-06T20:07:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3566",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3566#issuecomment-25198",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-06 20:07:37
+archive/issue_comments_025199.json:
+```json
+{
+    "body": "Merged in Sage 3.0.4.alpha2",
+    "created_at": "2008-07-06T20:07:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3566",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3566#issuecomment-25199",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.4.alpha2

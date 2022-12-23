@@ -1,36 +1,98 @@
 # Issue 2528: File sage/modular/dims_doc.py should be removed soon
 
-Issue created by migration from https://trac.sagemath.org/ticket/2528
-
-Original creator: craigcitro
-
-Original creation time: 2008-03-15 05:53:18
-
+archive/issues_002528.json:
+```json
+{
+    "body": "Assignee: was\n\nThis file existed for only including certain parts of dims.py into the reference manual; this is no longer necessary, and the file should be removed. Care needs to be taken to not break the reference manual -- William has a fix that he's going to submit when I post this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2528\n\n",
+    "created_at": "2008-03-15T05:53:18Z",
+    "labels": [
+        "modular forms",
+        "minor",
+        "bug"
+    ],
+    "title": "File sage/modular/dims_doc.py should be removed soon",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2528",
+    "user": "craigcitro"
+}
+```
 Assignee: was
 
 This file existed for only including certain parts of dims.py into the reference manual; this is no longer necessary, and the file should be removed. Care needs to be taken to not break the reference manual -- William has a fix that he's going to submit when I post this.
 
+Issue created by migration from https://trac.sagemath.org/ticket/2528
+
+
+
+
 
 ---
+
+archive/issue_comments_017243.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-03-15T06:47:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2528",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2528#issuecomment-17243",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_017244.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-03-15T08:44:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2528",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2528#issuecomment-17244",
+    "user": "craigcitro"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by craigcitro created at 2008-03-15 08:45:51
+archive/issue_comments_017245.json:
+```json
+{
+    "body": "The second patch applies against the main repository, and removes the file in the title.",
+    "created_at": "2008-03-15T08:45:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2528",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2528#issuecomment-17245",
+    "user": "craigcitro"
+}
+```
 
 The second patch applies against the main repository, and removes the file in the title.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-15 22:03:34
+archive/issue_comments_017246.json:
+```json
+{
+    "body": "Somebody has been sneaking an extra hunk in trac-2528.patch. The first hunk has a merge conflict, which I cannot see [maybe white space?], but I ended up merging that hunk manually.\n\nCheers,\n\nMichael",
+    "created_at": "2008-03-15T22:03:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2528",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2528#issuecomment-17246",
+    "user": "mabshoff"
+}
+```
 
 Somebody has been sneaking an extra hunk in trac-2528.patch. The first hunk has a merge conflict, which I cannot see [maybe white space?], but I ended up merging that hunk manually.
 
@@ -39,16 +101,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by craigcitro created at 2008-03-15 22:07:35
+archive/issue_comments_017247.json:
+```json
+{
+    "body": "Actually, it's not an extra hunk -- I'm moving comments that were in `dims_doc.py` into `dims.py` so that they're not lost. Maybe I should have mentioned that more explicitly.",
+    "created_at": "2008-03-15T22:07:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2528",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2528#issuecomment-17247",
+    "user": "craigcitro"
+}
+```
 
 Actually, it's not an extra hunk -- I'm moving comments that were in `dims_doc.py` into `dims.py` so that they're not lost. Maybe I should have mentioned that more explicitly.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-15 22:29:52
+archive/issue_comments_017248.json:
+```json
+{
+    "body": "Replying to [comment:5 craigcitro]:\n> Actually, it's not an extra hunk -- I'm moving comments that were in `dims_doc.py` into `dims.py` so that they're not lost. Maybe I should have mentioned that more explicitly.\n> \n\nEither way, it is fixed :)\n\nCheers,\n\nMichael",
+    "created_at": "2008-03-15T22:29:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2528",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2528#issuecomment-17248",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:5 craigcitro]:
 > Actually, it's not an extra hunk -- I'm moving comments that were in `dims_doc.py` into `dims.py` so that they're not lost. Maybe I should have mentioned that more explicitly.
@@ -61,15 +145,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-15 22:30:07
+archive/issue_comments_017249.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-03-15T22:30:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2528",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2528#issuecomment-17249",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-15 22:30:07
+archive/issue_comments_017250.json:
+```json
+{
+    "body": "Merged in Sage 2.10.4.rc0",
+    "created_at": "2008-03-15T22:30:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2528",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2528#issuecomment-17250",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.4.rc0

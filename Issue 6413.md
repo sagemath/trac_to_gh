@@ -1,11 +1,21 @@
 # Issue 6413: Retrieving the multiplication-by-p isogeny on elliptic curves over fields of characteristic p fails.
 
-Issue created by migration from https://trac.sagemath.org/ticket/6413
-
-Original creator: hlaw
-
-Original creation time: 2009-06-25 18:23:38
-
+archive/issues_006413.json:
+```json
+{
+    "body": "Assignee: tba\n\nCC:  defeo jpflori lorenz\n\n\n```\nsage: p = 11\nsage: E = EllipticCurve(GF(p), [1,1])\nsage: E.multiplication_by_m(p)\n---------------------------------------------------------------------------\nZeroDivisionError                         Traceback (most recent call last)\n\n/Users/hlaw/.sage/temp/resid_tg082.upc.es/80890/_Users_hlaw__sage_init_sage_0.py in <module>()\n\n/Users/hlaw/src/sage-4.0.1/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_generic.pyc in multiplication_by_m(self, m, x_only)\n   2133         #  and hence 2*my+a1*mx+a3 = (1/m)*(2*y+a1*x+a3)*d(mx)/dx\n   2134 \n-> 2135         my = ((2*y+a1*x+a3)*mx.derivative(x)/m - a1*mx-a3)/2\n   2136 \n   2137         return mx, my\n\n/Users/hlaw/src/sage-4.0.1/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__div__ (sage/structure/element.c:10361)()\n\n/Users/hlaw/src/sage-4.0.1/local/lib/python2.5/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:6105)()\n\n/Users/hlaw/src/sage-4.0.1/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__div__ (sage/structure/element.c:10342)()\n\n/Users/hlaw/src/sage-4.0.1/local/lib/python2.5/site-packages/sage/rings/fraction_field_element.so in sage.rings.fraction_field_element.FractionFieldElement._div_ (sage/rings/fraction_field_element.c:5805)()\n\n/Users/hlaw/src/sage-4.0.1/local/lib/python2.5/site-packages/sage/rings/fraction_field_element.so in sage.rings.fraction_field_element.FractionFieldElement.__init__ (sage/rings/fraction_field_element.c:1954)()\n\nZeroDivisionError: fraction field element division by zero\n```\n\nOne can see from the line that causes the error that the calculation of the *y*-component of the isogeny involves a division by *m*, which in this case is the characteristic of the ground field.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6413\n\n",
+    "created_at": "2009-06-25T18:23:38Z",
+    "labels": [
+        "algebraic geometry",
+        "major",
+        "bug"
+    ],
+    "title": "Retrieving the multiplication-by-p isogeny on elliptic curves over fields of characteristic p fails.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6413",
+    "user": "hlaw"
+}
+```
 Assignee: tba
 
 CC:  defeo jpflori lorenz
@@ -40,21 +50,47 @@ ZeroDivisionError                         Traceback (most recent call last)
 ZeroDivisionError: fraction field element division by zero
 ```
 
-One can see from the line that causes the error that the calculation of the _y_-component of the isogeny involves a division by _m_, which in this case is the characteristic of the ground field.
+One can see from the line that causes the error that the calculation of the *y*-component of the isogeny involves a division by *m*, which in this case is the characteristic of the ground field.
+
+
+Issue created by migration from https://trac.sagemath.org/ticket/6413
+
+
 
 
 
 ---
 
-Comment by cremona created at 2009-07-09 08:30:21
+archive/issue_comments_051494.json:
+```json
+{
+    "body": "I wrote the offending line of code, knowing full well that it would not work in the inseparable case.  I may or may not have made a ticket at the time, but likely not.\n\nWhen someone writes code to deal with the inseparable case, just make sure that it continues to be efficient in the separable case!",
+    "created_at": "2009-07-09T08:30:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6413",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6413#issuecomment-51494",
+    "user": "cremona"
+}
+```
 
 I wrote the offending line of code, knowing full well that it would not work in the inseparable case.  I may or may not have made a ticket at the time, but likely not.
 
 When someone writes code to deal with the inseparable case, just make sure that it continues to be efficient in the separable case!
 
 
+
 ---
 
-Comment by AlexGhitza created at 2010-01-01 23:39:12
+archive/issue_comments_051495.json:
+```json
+{
+    "body": "Changing component from algebraic geometry to elliptic curves.",
+    "created_at": "2010-01-01T23:39:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6413",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6413#issuecomment-51495",
+    "user": "AlexGhitza"
+}
+```
 
 Changing component from algebraic geometry to elliptic curves.

@@ -1,21 +1,46 @@
 # Issue 6871: temporary passwords aren't temporary
 
-Issue created by migration from https://trac.sagemath.org/ticket/6871
-
-Original creator: ddrake
-
-Original creation time: 2009-09-03 03:19:25
-
+archive/issues_006871.json:
+```json
+{
+    "body": "Assignee: boothby\n\nAs described in comment:27:ticket:4135, when #4135 is applied, the \"temporary\" password you get when resetting a user's password isn't temporary -- you can log in, log out, and then log in again with it.\n\nAlso, the page that tells you the new password has a title of \"Error\" even though no error has occurred.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6871\n\n",
+    "created_at": "2009-09-03T03:19:25Z",
+    "labels": [
+        "notebook",
+        "major",
+        "bug"
+    ],
+    "title": "temporary passwords aren't temporary",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6871",
+    "user": "ddrake"
+}
+```
 Assignee: boothby
 
 As described in comment:27:ticket:4135, when #4135 is applied, the "temporary" password you get when resetting a user's password isn't temporary -- you can log in, log out, and then log in again with it.
 
 Also, the page that tells you the new password has a title of "Error" even though no error has occurred.
 
+Issue created by migration from https://trac.sagemath.org/ticket/6871
+
+
+
+
 
 ---
 
-Comment by startakovsky created at 2012-10-19 07:25:10
+archive/issue_comments_056735.json:
+```json
+{
+    "body": "This comment may be gratuitous, but the issue I'm having with the notebook running on Sage 5.3 is:\n\n1) I create a new user.\n\n2) I let the user know their temporary password.\n\n3) They log in successfully with their temporary password.\n\n4) They change their password.\n\n5) After automatic logout, neither password works, not the temporary nor the newly created password.  Screen reads \"wrong password\".\n\nThe weird thing is, when I do this with a longer than 4 letter name I don't get this problem...",
+    "created_at": "2012-10-19T07:25:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6871",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6871#issuecomment-56735",
+    "user": "startakovsky"
+}
+```
 
 This comment may be gratuitous, but the issue I'm having with the notebook running on Sage 5.3 is:
 
@@ -32,9 +57,20 @@ This comment may be gratuitous, but the issue I'm having with the notebook runni
 The weird thing is, when I do this with a longer than 4 letter name I don't get this problem...
 
 
+
 ---
 
-Comment by kcrisman created at 2014-12-10 19:30:53
+archive/issue_comments_056736.json:
+```json
+{
+    "body": "The 'error' message is long since gone.\n\nI cannot replicate the issue in comment:1, though it is certainly not gratuitous.  Partly that is because we now say\n> The username must start with a letter and be between 4 and 32 characters long.\n\nSo the only remaining issue is, of course, the one actually mentioned.  The question is whether this is a problem...",
+    "created_at": "2014-12-10T19:30:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6871",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6871#issuecomment-56736",
+    "user": "kcrisman"
+}
+```
 
 The 'error' message is long since gone.
 
@@ -44,22 +80,55 @@ I cannot replicate the issue in comment:1, though it is certainly not gratuitous
 So the only remaining issue is, of course, the one actually mentioned.  The question is whether this is a problem...
 
 
+
 ---
 
-Comment by kcrisman created at 2014-12-10 19:31:59
+archive/issue_comments_056737.json:
+```json
+{
+    "body": "https://github.com/sagemath/sagenb/issues/294",
+    "created_at": "2014-12-10T19:31:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6871",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6871#issuecomment-56737",
+    "user": "kcrisman"
+}
+```
 
 https://github.com/sagemath/sagenb/issues/294
 
 
+
 ---
 
-Comment by boothby created at 2020-03-29 02:12:30
+archive/issue_comments_056738.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2020-03-29T02:12:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6871",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6871#issuecomment-56738",
+    "user": "boothby"
+}
+```
 
 Resolution: invalid
 
 
+
 ---
 
-Comment by boothby created at 2020-03-29 02:12:30
+archive/issue_comments_056739.json:
+```json
+{
+    "body": "Closing deprecated notebook tickets",
+    "created_at": "2020-03-29T02:12:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6871",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6871#issuecomment-56739",
+    "user": "boothby"
+}
+```
 
 Closing deprecated notebook tickets

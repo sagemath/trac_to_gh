@@ -1,11 +1,21 @@
 # Issue 2050: disallow *generic* matrix eigenspaces for inexact fields (very easy to implement)
 
-Issue created by migration from https://trac.sagemath.org/ticket/2050
-
-Original creator: was
-
-Original creation time: 2008-02-05 05:00:28
-
+archive/issues_002050.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  ncalexander@gmail.com\n\nInstead of lying the following code should just raise a NotImplementedError.  Basically use the `is_exact()` method on rings to determine if the ring is not exact, and if so, raise an error on eigenspaces computation.  Some generic algorithms suck for inexact rings.   One thing, the error message for RR and CC could suggest using RDF or CDF... and maybe when prec <= 53, the code could use RDF or CDF (?). \n\n\n```\nsage: R=RealField(30)\nsage: M=matrix(R,2,[2,1,1,1])\nsage: M.eigenspaces()\n\n[\n(2.6180340, [\n\n]),\n(0.38196601, [\n\n])\n]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2050\n\n",
+    "created_at": "2008-02-05T05:00:28Z",
+    "labels": [
+        "linear algebra",
+        "major",
+        "bug"
+    ],
+    "title": "disallow *generic* matrix eigenspaces for inexact fields (very easy to implement)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2050",
+    "user": "was"
+}
+```
 Assignee: was
 
 CC:  ncalexander@gmail.com
@@ -29,22 +39,61 @@ sage: M.eigenspaces()
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2050
+
+
+
+
 
 ---
 
-Comment by was created at 2008-02-05 05:00:42
+archive/issue_comments_013275.json:
+```json
+{
+    "body": "See #1706 for a related ticket.",
+    "created_at": "2008-02-05T05:00:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2050",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2050#issuecomment-13275",
+    "user": "was"
+}
+```
 
 See #1706 for a related ticket.
 
 
+
 ---
+
+archive/issue_comments_013276.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-02-17T00:45:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2050",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2050#issuecomment-13276",
+    "user": "ncalexan"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2008-02-27 18:43:38
+archive/issue_comments_013277.json:
+```json
+{
+    "body": "I get the following against 2.10.3.alpha0:\n\n\n```\ncd \"/home/mhansen/sage-2.10.3.alpha0/devel/sage\" && hg status\ncd \"/home/mhansen/sage-2.10.3.alpha0/devel/sage\" && hg status\ncd \"/home/mhansen/sage-2.10.3.alpha0/devel/sage\" && hg import   \"/home/mhansen/.sage/temp/sage/15288/tmp_0.patch\"\napplying /home/mhansen/.sage/temp/sage/15288/tmp_0.patch\npatching file sage/matrix/matrix2.pyx\nHunk #4 succeeded at 2130 with fuzz 2 (offset 0 lines).\nHunk #5 FAILED at 2146\nHunk #6 FAILED at 2163\n2 out of 7 hunks FAILED -- saving rejects to file sage/matrix/matrix2.pyx.rej\nabort: patch failed to apply\n```\n",
+    "created_at": "2008-02-27T18:43:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2050",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2050#issuecomment-13277",
+    "user": "mhansen"
+}
+```
 
 I get the following against 2.10.3.alpha0:
 
@@ -64,27 +113,73 @@ abort: patch failed to apply
 
 
 
+
 ---
+
+archive/issue_comments_013278.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-02-27T22:57:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2050",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2050#issuecomment-13278",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2008-02-27 22:58:58
+archive/issue_comments_013279.json:
+```json
+{
+    "body": "I've made a patch 2050 which applies cleanly after #2299 .  All tests pass so things look good to me.",
+    "created_at": "2008-02-27T22:58:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2050",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2050#issuecomment-13279",
+    "user": "mhansen"
+}
+```
 
 I've made a patch 2050 which applies cleanly after #2299 .  All tests pass so things look good to me.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-28 00:57:07
+archive/issue_comments_013280.json:
+```json
+{
+    "body": "Merged 2050.patch in Sage 2.10.3.rc0",
+    "created_at": "2008-02-28T00:57:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2050",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2050#issuecomment-13280",
+    "user": "mabshoff"
+}
+```
 
 Merged 2050.patch in Sage 2.10.3.rc0
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-28 00:57:07
+archive/issue_comments_013281.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-02-28T00:57:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2050",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2050#issuecomment-13281",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

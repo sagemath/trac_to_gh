@@ -1,61 +1,154 @@
 # Issue 4705: Make in-line wysiwyg editor for text cells using TinyMCE
 
-Issue created by migration from https://trac.sagemath.org/ticket/4705
-
-Original creator: jason
-
-Original creation time: 2008-12-05 01:13:31
-
+archive/issues_004705.json:
+```json
+{
+    "body": "Assignee: boothby\n\nThis ticket splits off part of #4267.\n\nIt depends on #4704\n\nIssue created by migration from https://trac.sagemath.org/ticket/4705\n\n",
+    "created_at": "2008-12-05T01:13:31Z",
+    "labels": [
+        "notebook",
+        "major",
+        "bug"
+    ],
+    "title": "Make in-line wysiwyg editor for text cells using TinyMCE",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4705",
+    "user": "jason"
+}
+```
 Assignee: boothby
 
 This ticket splits off part of #4267.
 
 It depends on #4704
 
+Issue created by migration from https://trac.sagemath.org/ticket/4705
+
+
+
+
 
 ---
+
+archive/issue_comments_035454.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-12-05T01:13:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4705",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35454",
+    "user": "jason"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by jason created at 2008-12-05 01:14:41
+archive/issue_comments_035455.json:
+```json
+{
+    "body": "The spkg is at http://sage.math.washington.edu/home/jason/notebook/tinyMCE-3.2.0.2.spkg",
+    "created_at": "2008-12-05T01:14:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4705",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35455",
+    "user": "jason"
+}
+```
 
 The spkg is at http://sage.math.washington.edu/home/jason/notebook/tinyMCE-3.2.0.2.spkg
 
 
+
 ---
 
-Comment by jason created at 2008-12-05 01:15:38
+archive/issue_comments_035456.json:
+```json
+{
+    "body": "Changing assignee from boothby to jason.",
+    "created_at": "2008-12-05T01:15:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4705",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35456",
+    "user": "jason"
+}
+```
 
 Changing assignee from boothby to jason.
 
 
+
 ---
 
-Comment by jason created at 2008-12-05 01:15:38
+archive/issue_comments_035457.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-12-05T01:15:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4705",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35457",
+    "user": "jason"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by TimothyClemans created at 2008-12-20 21:16:07
+archive/issue_comments_035458.json:
+```json
+{
+    "body": "Works for me Apply #4674, #3767, #4704, #4705",
+    "created_at": "2008-12-20T21:16:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4705",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35458",
+    "user": "TimothyClemans"
+}
+```
 
 Works for me Apply #4674, #3767, #4704, #4705
 
 
+
 ---
 
-Comment by TimothyClemans created at 2008-12-20 21:16:07
+archive/issue_comments_035459.json:
+```json
+{
+    "body": "Changing type from defect to enhancement.",
+    "created_at": "2008-12-20T21:16:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4705",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35459",
+    "user": "TimothyClemans"
+}
+```
 
 Changing type from defect to enhancement.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-20 21:18:48
+archive/issue_comments_035460.json:
+```json
+{
+    "body": "This needs to be tested with a wide variety of browsers and OS combinations before this goes in. So please list what browser/OS combo worked for you.\n\nIt will likely have to wait for 3.4 anyway.\n\nCheers,\n\nMichael",
+    "created_at": "2008-12-20T21:18:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4705",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35460",
+    "user": "mabshoff"
+}
+```
 
 This needs to be tested with a wide variety of browsers and OS combinations before this goes in. So please list what browser/OS combo worked for you.
 
@@ -66,30 +159,74 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by TimothyClemans created at 2008-12-20 21:24:59
+archive/issue_comments_035461.json:
+```json
+{
+    "body": "SHIFT-CLICK on new cell bar doesn't work in Safari on Mac.",
+    "created_at": "2008-12-20T21:24:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4705",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35461",
+    "user": "TimothyClemans"
+}
+```
 
 SHIFT-CLICK on new cell bar doesn't work in Safari on Mac.
 
 
+
 ---
 
-Comment by jason created at 2008-12-20 21:29:12
+archive/issue_comments_035462.json:
+```json
+{
+    "body": "This is likely due to bugs in the extendedclicks jquery plugin.  The author is willing to work on this, we just need to isolate the problem.",
+    "created_at": "2008-12-20T21:29:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4705",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35462",
+    "user": "jason"
+}
+```
 
 This is likely due to bugs in the extendedclicks jquery plugin.  The author is willing to work on this, we just need to isolate the problem.
 
 
+
 ---
 
-Comment by jason created at 2008-12-22 17:30:40
+archive/issue_comments_035463.json:
+```json
+{
+    "body": "The bugs in Safari are not from the extendedclicks jquery plugin.  Timothy let me have access to his mac the other day and we determined that it has to do with Safari not evaluating javascript in any html that is inserted into the DOM on-the-fly.  Basically, in this patch, the new cell bar code has been changed from a mousedown event in the html code to a separate javascript function.  That javascript function is not evaluated by default in Safari (but is in FF).  So we need to add the html to the DOM, and then explicitly evaluate the javascript.  There is code to something similar to this, and I'm working on modifications to the patch.",
+    "created_at": "2008-12-22T17:30:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4705",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35463",
+    "user": "jason"
+}
+```
 
 The bugs in Safari are not from the extendedclicks jquery plugin.  Timothy let me have access to his mac the other day and we determined that it has to do with Safari not evaluating javascript in any html that is inserted into the DOM on-the-fly.  Basically, in this patch, the new cell bar code has been changed from a mousedown event in the html code to a separate javascript function.  That javascript function is not evaluated by default in Safari (but is in FF).  So we need to add the html to the DOM, and then explicitly evaluate the javascript.  There is code to something similar to this, and I'm working on modifications to the patch.
 
 
+
 ---
 
-Comment by jason created at 2008-12-22 21:17:31
+archive/issue_comments_035464.json:
+```json
+{
+    "body": "Some documentation:\n\nhttp://www.vulgarisoip.com/2007/06/22/execute-javascript-injected-using-innerhtml-attribute-even-with-safari/\n\nhttp://piecesofrakesh.blogspot.com/2008/10/understanding-eval-scope-spoiler-its.html\n\nhttp://snipplr.com/view/2325/ajax-insert-dynamic-script-into-head/\n\nhttp://www.webdeveloper.com/forum/archive/index.php/t-117817.html\n\nhttp://www.webmaster-talk.com/javascript-forum/116306-safari-pc-3-0-4-css.html\n\nhttp://www.optimalworks.net/blog/2007/web-development/javascript/innerhtml-alternative\n\nhttp://zeta-puppis.com/2006/03/07/javascript-script-execution-in-innerhtml-the-revenge/",
+    "created_at": "2008-12-22T21:17:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4705",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35464",
+    "user": "jason"
+}
+```
 
 Some documentation:
 
@@ -108,39 +245,96 @@ http://www.optimalworks.net/blog/2007/web-development/javascript/innerhtml-alter
 http://zeta-puppis.com/2006/03/07/javascript-script-execution-in-innerhtml-the-revenge/
 
 
+
 ---
+
+archive/issue_comments_035465.json:
+```json
+{
+    "body": "Attachment\n\napply on top of previous patch",
+    "created_at": "2008-12-22T23:06:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4705",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35465",
+    "user": "jason"
+}
+```
 
 Attachment
 
 apply on top of previous patch
 
 
+
 ---
 
-Comment by jason created at 2008-12-22 23:07:36
+archive/issue_comments_035466.json:
+```json
+{
+    "body": "safari-fix seems to take care of all of the Safari issues.\n\nOkay, everyone, hit this with everything that you have.  I've also updated the tinyMCE spkg (available from the above URL) to make the default font style inherit from the notebook.",
+    "created_at": "2008-12-22T23:07:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4705",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35466",
+    "user": "jason"
+}
+```
 
 safari-fix seems to take care of all of the Safari issues.
 
 Okay, everyone, hit this with everything that you have.  I've also updated the tinyMCE spkg (available from the above URL) to make the default font style inherit from the notebook.
 
 
+
 ---
 
-Comment by TimothyClemans created at 2008-12-22 23:11:56
+archive/issue_comments_035467.json:
+```json
+{
+    "body": "Works with FF 3.0.5 and Safari on Mac OS X.",
+    "created_at": "2008-12-22T23:11:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4705",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35467",
+    "user": "TimothyClemans"
+}
+```
 
 Works with FF 3.0.5 and Safari on Mac OS X.
 
 
+
 ---
 
-Comment by jason created at 2008-12-22 23:14:22
+archive/issue_comments_035468.json:
+```json
+{
+    "body": "To test this on supported browsers, we should test it on Firefox, Opera, and Safari.  I've tested it on FF 3.0.5 on Ubuntu 8.10 and the tinyMCE spkg and this patch seem to work okay.",
+    "created_at": "2008-12-22T23:14:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4705",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35468",
+    "user": "jason"
+}
+```
 
 To test this on supported browsers, we should test it on Firefox, Opera, and Safari.  I've tested it on FF 3.0.5 on Ubuntu 8.10 and the tinyMCE spkg and this patch seem to work okay.
 
 
+
 ---
 
-Comment by jason created at 2008-12-24 14:19:59
+archive/issue_comments_035469.json:
+```json
+{
+    "body": "Here are complete instructions to apply and test the tinymce patch:\n\nApply the following patches from 4674, 3767, 4704, and 4705, in order:\n\njsmath-spkg.patch\njquery-and-friends-spkg.2.patch\njquery-javascript-cleanup.patch\ntinymce-editable.patch\nsafari-fix.patch\n\nInstall the following packages from the above tickets.  You may have to do ./sage -f <spkg URL> to force an installation if you've already installed an spkg.\n\nhttp://sage.math.washington.edu/home/jason/notebook/jquery-1.2.6.spkg\nhttp://sage.math.washington.edu/home/jason/notebook/jqueryui-1.6r807svn.spkg\nhttp://sage.math.washington.edu/home/jason/notebook/jsmath-3.6a.spkg\nhttp://sage.math.washington.edu/home/jason/notebook/tinyMCE-3.2.0.2.spkg\n\nOptionally, you can also install the jsmath image fonts by installing:\nhttp://sage.math.washington.edu/home/jason/notebook/jsmath-image-fonts-1.3p0.spkg\n\nNow you should be able to shift-click on a new cell bar to create a text cell using tinyMCE.  You should also be able to double-click on an existing text cell to edit it in-place.",
+    "created_at": "2008-12-24T14:19:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4705",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35469",
+    "user": "jason"
+}
+```
 
 Here are complete instructions to apply and test the tinymce patch:
 
@@ -165,18 +359,40 @@ http://sage.math.washington.edu/home/jason/notebook/jsmath-image-fonts-1.3p0.spk
 Now you should be able to shift-click on a new cell bar to create a text cell using tinyMCE.  You should also be able to double-click on an existing text cell to edit it in-place.
 
 
+
 ---
 
-Comment by mhampton created at 2008-12-24 16:17:17
+archive/issue_comments_035470.json:
+```json
+{
+    "body": "I tested this on Safari and Firefox on OS X (10.5).  Everything looks good to me so far.  I will keep using this and see if I run into any problems.\n\n-Marshall",
+    "created_at": "2008-12-24T16:17:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4705",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35470",
+    "user": "mhampton"
+}
+```
 
 I tested this on Safari and Firefox on OS X (10.5).  Everything looks good to me so far.  I will keep using this and see if I run into any problems.
 
 -Marshall
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-24 17:47:23
+archive/issue_comments_035471.json:
+```json
+{
+    "body": "The spkg looks good to me. A slightly cleaned up version is at\n\nhttp://sage.math.washington.edu/home/mabshoff/spkgs/tinyMCE-3.2.0.2.p0.spkg\n\nCheers,\n\nMichael",
+    "created_at": "2008-12-24T17:47:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4705",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35471",
+    "user": "mabshoff"
+}
+```
 
 The spkg looks good to me. A slightly cleaned up version is at
 
@@ -187,9 +403,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by ddrake created at 2009-01-09 02:18:31
+archive/issue_comments_035472.json:
+```json
+{
+    "body": "I followed the instructions in [comment:14 comment 14] and there's at least one small problem. If I shift-click on the new cell bar, I get the TinyMCE editor thingy. If I click \"cancel\" without entering any text, the tooltip text (\"Doubleclick to edit...\") gets put into a text cell at that location.\n\nIf I choose \"Edit\" at the top, the text \"Doubleclick to edit...\" doesn't show up in the notebook, and if I click \"Save changes\", the extraneous text goes away.\n\nThis happens in Firefox, Opera, IE7, and Chrome. I applied all the patches and spkgs to 3.2.3.",
+    "created_at": "2009-01-09T02:18:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4705",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35472",
+    "user": "ddrake"
+}
+```
 
 I followed the instructions in [comment:14 comment 14] and there's at least one small problem. If I shift-click on the new cell bar, I get the TinyMCE editor thingy. If I click "cancel" without entering any text, the tooltip text ("Doubleclick to edit...") gets put into a text cell at that location.
 
@@ -198,9 +425,20 @@ If I choose "Edit" at the top, the text "Doubleclick to edit..." doesn't show up
 This happens in Firefox, Opera, IE7, and Chrome. I applied all the patches and spkgs to 3.2.3.
 
 
+
 ---
 
-Comment by jason created at 2009-01-09 02:25:37
+archive/issue_comments_035473.json:
+```json
+{
+    "body": "Replying to [comment:17 ddrake]:\n> I followed the instructions in [comment:14 comment 14] and there's at least one small problem. If I shift-click on the new cell bar, I get the TinyMCE editor thingy. If I click \"cancel\" without entering any text, the tooltip text (\"Doubleclick to edit...\") gets put into a text cell at that location.\n> \n> If I choose \"Edit\" at the top, the text \"Doubleclick to edit...\" doesn't show up in the notebook, and if I click \"Save changes\", the extraneous text goes away.\n> \n> This happens in Firefox, Opera, IE7, and Chrome. I applied all the patches and spkgs to 3.2.3.\n\nYes, that sounds like the intended behavior.  Whether or not that should be what happens may be up for debate, though.  The idea is that if you create a text cell, but put nothing in it, it is impossible to edit by double-clicking.  If you make any edits to the cell, though, the filler text goes away.",
+    "created_at": "2009-01-09T02:25:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4705",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35473",
+    "user": "jason"
+}
+```
 
 Replying to [comment:17 ddrake]:
 > I followed the instructions in [comment:14 comment 14] and there's at least one small problem. If I shift-click on the new cell bar, I get the TinyMCE editor thingy. If I click "cancel" without entering any text, the tooltip text ("Doubleclick to edit...") gets put into a text cell at that location.
@@ -212,9 +450,20 @@ Replying to [comment:17 ddrake]:
 Yes, that sounds like the intended behavior.  Whether or not that should be what happens may be up for debate, though.  The idea is that if you create a text cell, but put nothing in it, it is impossible to edit by double-clicking.  If you make any edits to the cell, though, the filler text goes away.
 
 
+
 ---
 
-Comment by ddrake created at 2009-01-09 10:41:32
+archive/issue_comments_035474.json:
+```json
+{
+    "body": "Replying to [comment:18 jason]:\n> Replying to [comment:17 ddrake]:\n> > I followed the instructions in [comment:14 comment 14] and there's at least one small problem. If I shift-click on the new cell bar, I get the TinyMCE editor thingy. If I click \"cancel\" without entering any text, the tooltip text (\"Doubleclick to edit...\") gets put into a text cell at that location.\n> > \n> > If I choose \"Edit\" at the top, the text \"Doubleclick to edit...\" doesn't show up in the notebook, and if I click \"Save changes\", the extraneous text goes away.\n> > \n> > This happens in Firefox, Opera, IE7, and Chrome. I applied all the patches and spkgs to 3.2.3.\n> \n> Yes, that sounds like the intended behavior.  Whether or not that should be what happens may be up for debate, though.  The idea is that if you create a text cell, but put nothing in it, it is impossible to edit by double-clicking.  If you make any edits to the cell, though, the filler text goes away.\n> \n\nHrm, it may be intended, but I don't like it at all. When I clicked \"cancel\", I wanted the entire business -- text cell and all -- to go away and, well, be cancelled. I had done one thing (shift-click) and when I clicked cancel, I wanted that one thing to be undone. I do see your point though, that shift-clicking (1) creates a text cell, and (2) starts the tinymce editor on it -- and the cancel button cancels (2).\n\nI'm also bothered by the text being \"ghostly\", in that you see it when viewing the notebook normally, but it doesn't show up in the usual text-based \"Edit\".",
+    "created_at": "2009-01-09T10:41:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4705",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35474",
+    "user": "ddrake"
+}
+```
 
 Replying to [comment:18 jason]:
 > Replying to [comment:17 ddrake]:
@@ -232,34 +481,56 @@ Hrm, it may be intended, but I don't like it at all. When I clicked "cancel", I 
 I'm also bothered by the text being "ghostly", in that you see it when viewing the notebook normally, but it doesn't show up in the usual text-based "Edit".
 
 
+
 ---
 
-Comment by ddrake created at 2009-01-09 12:26:00
+archive/issue_comments_035475.json:
+```json
+{
+    "body": "I have tested this and it appears to work fine with the following browser/OS combinations:\n\nUbuntu 8.10:\n\n* Firefox 3.0\n\nWin XP SP3:\n\n* Firefox 3.1 beta\n* IE 7\n* Opera (whatever the current version is)\n* Chrome\n\nOS X 10.5:\n\n* Firefox 3.0\n* Safari\n\nJust to screw around, I tried [iCab](http://www.icab.de/), which edited existing fields just fine, but the shift-click on the new cell bar didn't work. I think we can safely ignore the iCab browser market. :)",
+    "created_at": "2009-01-09T12:26:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4705",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35475",
+    "user": "ddrake"
+}
+```
 
 I have tested this and it appears to work fine with the following browser/OS combinations:
 
 Ubuntu 8.10:
 
-  * Firefox 3.0
+* Firefox 3.0
 
 Win XP SP3:
 
-  * Firefox 3.1 beta
-  * IE 7
-  * Opera (whatever the current version is)
-  * Chrome
+* Firefox 3.1 beta
+* IE 7
+* Opera (whatever the current version is)
+* Chrome
 
 OS X 10.5:
 
-  * Firefox 3.0
-  * Safari
+* Firefox 3.0
+* Safari
 
 Just to screw around, I tried [iCab](http://www.icab.de/), which edited existing fields just fine, but the shift-click on the new cell bar didn't work. I think we can safely ignore the iCab browser market. :)
 
 
+
 ---
 
-Comment by was created at 2009-01-10 20:53:51
+archive/issue_comments_035476.json:
+```json
+{
+    "body": "> I'm also bothered by the text being \"ghostly\", in that you see it when \n> viewing the notebook normally, but it doesn't show up in the usual text-based \"Edit\". \n\nI do not like either.  Actually, I'm very puzzled how it is possible that it wouldn't show up in Edit, since when one quits a notebook server and restarts it later, worksheets are loaded from disk entirely using their plane text representation (i.e., what you see in Edit), so it seems to me that if the text created is indeed \"ghostly\" as you claim, it will surely vanish when the server is restarted.",
+    "created_at": "2009-01-10T20:53:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4705",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35476",
+    "user": "was"
+}
+```
 
 > I'm also bothered by the text being "ghostly", in that you see it when 
 > viewing the notebook normally, but it doesn't show up in the usual text-based "Edit". 
@@ -267,43 +538,87 @@ Comment by was created at 2009-01-10 20:53:51
 I do not like either.  Actually, I'm very puzzled how it is possible that it wouldn't show up in Edit, since when one quits a notebook server and restarts it later, worksheets are loaded from disk entirely using their plane text representation (i.e., what you see in Edit), so it seems to me that if the text created is indeed "ghostly" as you claim, it will surely vanish when the server is restarted.
 
 
+
 ---
 
-Comment by mhampton created at 2009-01-10 23:10:17
+archive/issue_comments_035477.json:
+```json
+{
+    "body": "Maybe there is some confusion here - I think the only \"ghostly\" stuff is the \"Doubleclick to edit...\" message.  It doesn't appear in a view-page-source window.  It does block cell mergers.  It goes away after switching to Edit and saving, but not switching to Edit and canceling.  \n\nI don't think this annoyance is enough to block the inclusion of this functionality - I think we should put it in and make a follow-up ticket to try to change this.  It should be possible to easily delete at least.",
+    "created_at": "2009-01-10T23:10:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4705",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35477",
+    "user": "mhampton"
+}
+```
 
 Maybe there is some confusion here - I think the only "ghostly" stuff is the "Doubleclick to edit..." message.  It doesn't appear in a view-page-source window.  It does block cell mergers.  It goes away after switching to Edit and saving, but not switching to Edit and canceling.  
 
 I don't think this annoyance is enough to block the inclusion of this functionality - I think we should put it in and make a follow-up ticket to try to change this.  It should be possible to easily delete at least.
 
 
+
 ---
 
-Comment by mhampton created at 2009-01-11 00:11:52
+archive/issue_comments_035478.json:
+```json
+{
+    "body": "In trying to track down some of the behavior discussed above, I noticed that normal text cells (i.e. non-ghostly ones, with some content) do not have unique ids.  I am not sure if that is relevant to the ghost issue but it does seem like a bad thing and may induce other bugs.  I.e. normal executable cells have and outer id such as \"cell_outer_1\" and an inner id such as \"cell_1\".  The text cells have nested div elements with identical ids, for example both being \"cell_text_1\".",
+    "created_at": "2009-01-11T00:11:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4705",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35478",
+    "user": "mhampton"
+}
+```
 
 In trying to track down some of the behavior discussed above, I noticed that normal text cells (i.e. non-ghostly ones, with some content) do not have unique ids.  I am not sure if that is relevant to the ghost issue but it does seem like a bad thing and may induce other bugs.  I.e. normal executable cells have and outer id such as "cell_outer_1" and an inner id such as "cell_1".  The text cells have nested div elements with identical ids, for example both being "cell_text_1".
 
 
+
 ---
 
-Comment by jason created at 2009-01-11 00:23:56
+archive/issue_comments_035479.json:
+```json
+{
+    "body": "The ghostly text that is referred to is a TinyMCE setting.  Check the configuration for TinyMCE, right after the TinyMCE is included as a javascript file.  Somewhere in those configuration settings, there is the text \"Double click to edit\" (or whatever the text is).",
+    "created_at": "2009-01-11T00:23:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4705",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35479",
+    "user": "jason"
+}
+```
 
 The ghostly text that is referred to is a TinyMCE setting.  Check the configuration for TinyMCE, right after the TinyMCE is included as a javascript file.  Somewhere in those configuration settings, there is the text "Double click to edit" (or whatever the text is).
 
 
+
 ---
 
-Comment by jason created at 2009-01-13 15:54:42
+archive/issue_comments_035480.json:
+```json
+{
+    "body": "Here are the things that still need to be done to get this in.\n\n* testing with IE 6 on Windows\n* testing with FF 2.0.x on Windows, OSX and Linux\n* testing with Safari on 10.4\n* testing with Opera 9.5 on OSX,  Linux\n* review of the patches themselves\n* review of mabshoff's changes to the spkgs\n* trivial one-line patch to fix the \"ghostly text\" issue (just make the placeholder string the empty string in cell.py (search for \"placeholder\" in cell.py).\n* (maybe can wait for another patch): figure out what is going on with divs with the same id.  My guess is that it is an issue with setting the innerHTMl of an object, rather than replacing the object itself.  When the page is \"Edit\"ed and then reloaded, the duplicate nested IDs go away.  This points to the javascript code that inserts text cells as the problem.\n\nFrom mabshoff:\n> In the end having your assurance that you will available to fix some\n> of the inevitable issues would also be assuring.\n\nYou have my assurance.",
+    "created_at": "2009-01-13T15:54:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4705",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35480",
+    "user": "jason"
+}
+```
 
 Here are the things that still need to be done to get this in.
 
-  * testing with IE 6 on Windows
-  * testing with FF 2.0.x on Windows, OSX and Linux
-  * testing with Safari on 10.4
-  * testing with Opera 9.5 on OSX,  Linux
-  * review of the patches themselves
-  * review of mabshoff's changes to the spkgs
-  * trivial one-line patch to fix the "ghostly text" issue (just make the placeholder string the empty string in cell.py (search for "placeholder" in cell.py).
-  * (maybe can wait for another patch): figure out what is going on with divs with the same id.  My guess is that it is an issue with setting the innerHTMl of an object, rather than replacing the object itself.  When the page is "Edit"ed and then reloaded, the duplicate nested IDs go away.  This points to the javascript code that inserts text cells as the problem.
+* testing with IE 6 on Windows
+* testing with FF 2.0.x on Windows, OSX and Linux
+* testing with Safari on 10.4
+* testing with Opera 9.5 on OSX,  Linux
+* review of the patches themselves
+* review of mabshoff's changes to the spkgs
+* trivial one-line patch to fix the "ghostly text" issue (just make the placeholder string the empty string in cell.py (search for "placeholder" in cell.py).
+* (maybe can wait for another patch): figure out what is going on with divs with the same id.  My guess is that it is an issue with setting the innerHTMl of an object, rather than replacing the object itself.  When the page is "Edit"ed and then reloaded, the duplicate nested IDs go away.  This points to the javascript code that inserts text cells as the problem.
 
 From mabshoff:
 > In the end having your assurance that you will available to fix some
@@ -312,9 +627,20 @@ From mabshoff:
 You have my assurance.
 
 
+
 ---
 
-Comment by mhampton created at 2009-01-13 16:47:09
+archive/issue_comments_035481.json:
+```json
+{
+    "body": "It seems a little too demanding to ask that this works on IE 6 on Windows.  Other things don't work on that platform either, or are a little strange.  Is that really officially supported?  If so there should be a lot of tickets for it.  \n\nOn Safari on OS 10.4, I had some oddness inserting a text cell at the very top of a worksheet - nothing seemed to happen but when I re-opened it things were OK, the text cell was there.  That should be a followup ticket if anyone can reproduce it, but not enough to block this ticket getting merged in my opinion.\n\nThings seem to work fine on firefox 2.0.0.13 on my mac and windows machines.\n\nThe ghost text problem is gone, but there should be an easy way to delete an empty cell.  Currently if you open the text editor and delete all text, there is still some residual empty text cell that you can't see but which blocks cell mergers.  This can be deleted in \"Edit\" mode for the worksheet but a followup ticket should be made to make it easier.  Again, I don't think that should block this ticket.\n\nI used mabshoff's version of the tinymce spkg, seems fine.  I have not inspected it in detail.",
+    "created_at": "2009-01-13T16:47:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4705",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35481",
+    "user": "mhampton"
+}
+```
 
 It seems a little too demanding to ask that this works on IE 6 on Windows.  Other things don't work on that platform either, or are a little strange.  Is that really officially supported?  If so there should be a lot of tickets for it.  
 
@@ -327,9 +653,20 @@ The ghost text problem is gone, but there should be an easy way to delete an emp
 I used mabshoff's version of the tinymce spkg, seems fine.  I have not inspected it in detail.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-01-13 20:22:46
+archive/issue_comments_035482.json:
+```json
+{
+    "body": "Experience on Sage 3.2.1 with all patches and spkgs installed, using PPC OSX.4.\n\nGeneral: Works great, including tables and lists.  Recommend adding the font-size drop-down menu, perhaps also blockquote, to the standard TinyMCE installation for Sage, since presumably these will often be projected in class and finer control of size outside <h1> style tags would be useful.  Only general problems are known issue that Sage text cells are simply area between math cells, and I had some trouble getting added images to actually show up (but that could be me not knowing how to do them right).  So overall positive, and I would say positive review for Safari 3.2.1.  BUT...\n\nOn Firefox 2.0.0.13, encountered *terrible* bug of some kind, was reproducible on my machine.  When a larger text cell was opened using TinyMCE the rendering engine somehow did not do the scrolling properly, and multiple (six, seven, more) images of the same text showed up below or above the text cell; in addition, I could no longer find the editing panel in this situation and only by luck with scrolling found the save/cancel area to even exit this surreal landscape.  This seems to be a major problem, but I have no idea what the issue is, and am puzzled that Marshall did not encounter it.  If this is reproducible, it should probably be a blocker.",
+    "created_at": "2009-01-13T20:22:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4705",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35482",
+    "user": "kcrisman"
+}
+```
 
 Experience on Sage 3.2.1 with all patches and spkgs installed, using PPC OSX.4.
 
@@ -338,25 +675,58 @@ General: Works great, including tables and lists.  Recommend adding the font-siz
 On Firefox 2.0.0.13, encountered *terrible* bug of some kind, was reproducible on my machine.  When a larger text cell was opened using TinyMCE the rendering engine somehow did not do the scrolling properly, and multiple (six, seven, more) images of the same text showed up below or above the text cell; in addition, I could no longer find the editing panel in this situation and only by luck with scrolling found the save/cancel area to even exit this surreal landscape.  This seems to be a major problem, but I have no idea what the issue is, and am puzzled that Marshall did not encounter it.  If this is reproducible, it should probably be a blocker.
 
 
+
 ---
 
-Comment by mhampton created at 2009-01-13 20:59:17
+archive/issue_comments_035483.json:
+```json
+{
+    "body": "I could not reproduce the larger text cell problem.  Could you post an sws file somewhere that shows that behavior?  How big are you talking about?  I've pasted in a couple of pages worth of text of different types and didn't have a problem.",
+    "created_at": "2009-01-13T20:59:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4705",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35483",
+    "user": "mhampton"
+}
+```
 
 I could not reproduce the larger text cell problem.  Could you post an sws file somewhere that shows that behavior?  How big are you talking about?  I've pasted in a couple of pages worth of text of different types and didn't have a problem.
 
 
+
 ---
 
-Comment by ddrake created at 2009-01-14 01:22:12
+archive/issue_comments_035484.json:
+```json
+{
+    "body": "I tested Firefox 2.0.0.20 on Ubuntu Hardy and it appears to work fine. I couldn't reproduce the large text cell problem reported by kcrisman.\n\nNote that Firefox 2.0 has apparently been EOL'ed: [http://www.mozilla.com/en-US/firefox/all-older.html](http://www.mozilla.com/en-US/firefox/all-older.html). How long should we continue testing on that browser? (I'm not being sarcastic, I'm genuinely curious.)",
+    "created_at": "2009-01-14T01:22:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4705",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35484",
+    "user": "ddrake"
+}
+```
 
 I tested Firefox 2.0.0.20 on Ubuntu Hardy and it appears to work fine. I couldn't reproduce the large text cell problem reported by kcrisman.
 
 Note that Firefox 2.0 has apparently been EOL'ed: [http://www.mozilla.com/en-US/firefox/all-older.html](http://www.mozilla.com/en-US/firefox/all-older.html). How long should we continue testing on that browser? (I'm not being sarcastic, I'm genuinely curious.)
 
 
+
 ---
 
-Comment by kcrisman created at 2009-01-14 17:04:20
+archive/issue_comments_035485.json:
+```json
+{
+    "body": "Replying to [comment:29 ddrake]:\n> I tested Firefox 2.0.0.20 on Ubuntu Hardy and it appears to work fine. I couldn't reproduce the large text cell problem reported by kcrisman.\n> \n> Note that Firefox 2.0 has apparently been EOL'ed: [http://www.mozilla.com/en-US/firefox/all-older.html](http://www.mozilla.com/en-US/firefox/all-older.html). How long should we continue testing on that browser? (I'm not being sarcastic, I'm genuinely curious.)\n\nI updated to 2.0.0.20 and the problem persists. However, I downloaded FF3.0.5 and the problem is not there, so it's definitely FF2-specific.  My guess is that a lot of people using FF only on occasion (which might be quite a few PC and Mac people, as opposed to Linux) may not even be aware that FF3 is out there (it was very dimly on my radar), so it would be worth at least some testing.\n\n[Here is a worksheet](http://www.math.uchicago.edu/~crisman/TinyMCE_Test.sws) - click on the \"Here is a problem\" area and then scroll up and down, assuming that area appears toward the bottom of your initial browser window.\n\nI am not sure what the problem is - presumably something Aqua+OSX.4+PPC+FF2 related.  It would be nice for people to check out whether this problem shows up in any other less heavily used browsers - Konqueror, for example, if that's still in use.  If this is the only place it happens, perhaps it's not the worst thing ever - though it IS really hard to use in this one case.",
+    "created_at": "2009-01-14T17:04:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4705",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35485",
+    "user": "kcrisman"
+}
+```
 
 Replying to [comment:29 ddrake]:
 > I tested Firefox 2.0.0.20 on Ubuntu Hardy and it appears to work fine. I couldn't reproduce the large text cell problem reported by kcrisman.
@@ -370,18 +740,40 @@ I updated to 2.0.0.20 and the problem persists. However, I downloaded FF3.0.5 an
 I am not sure what the problem is - presumably something Aqua+OSX.4+PPC+FF2 related.  It would be nice for people to check out whether this problem shows up in any other less heavily used browsers - Konqueror, for example, if that's still in use.  If this is the only place it happens, perhaps it's not the worst thing ever - though it IS really hard to use in this one case.
 
 
+
 ---
 
-Comment by mhampton created at 2009-01-15 01:30:44
+archive/issue_comments_035486.json:
+```json
+{
+    "body": "I guess I can reproduce this - if I edit your \"Here is a problem area\" text cell, and then try to scroll the entire worksheet, the lower cells get messed up - sort of like tracers.  This is not good, but doesn't seem awful to me - if you are editing a text cell, you usually don't need to scroll around the whole worksheet?  \n\nLike some other things mentioned in this ticket, I think this deserves a followup ticket but shouldn't block the inclusion of this.  I think the only reason to block this patch is if it messes up some existing functionality or doctests.",
+    "created_at": "2009-01-15T01:30:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4705",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35486",
+    "user": "mhampton"
+}
+```
 
 I guess I can reproduce this - if I edit your "Here is a problem area" text cell, and then try to scroll the entire worksheet, the lower cells get messed up - sort of like tracers.  This is not good, but doesn't seem awful to me - if you are editing a text cell, you usually don't need to scroll around the whole worksheet?  
 
 Like some other things mentioned in this ticket, I think this deserves a followup ticket but shouldn't block the inclusion of this.  I think the only reason to block this patch is if it messes up some existing functionality or doctests.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-15 01:37:22
+archive/issue_comments_035487.json:
+```json
+{
+    "body": "Replying to [comment:31 mhampton]:\n\n> Like some other things mentioned in this ticket, I think this deserves a followup ticket but shouldn't block the inclusion of this.  I think the only reason to block this patch is if it messes up some existing functionality or doctests.\n\nYes, if the patch here in question does not mess up existing functionality, but has issues with the new functionality with some browsers this can be dealt with via a followup ticket. Getting this in working 99% now is much better than it bitrotting and I think Jason will be much happier, too :)\n\nSo someone give this a final positive review and it is in.\n\nCheers,\n\nMichael",
+    "created_at": "2009-01-15T01:37:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4705",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35487",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:31 mhampton]:
 
@@ -396,16 +788,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mhampton created at 2009-01-15 02:10:10
+archive/issue_comments_035488.json:
+```json
+{
+    "body": "I think now that people have hit this on a variety of platform combinations it should be merged.  Whatever alpha or release candidate it comes out on, I think it should be highlighted as something people should pound on, and we can make the necessary followup tickets.  But to move this forward it should go in.",
+    "created_at": "2009-01-15T02:10:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4705",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35488",
+    "user": "mhampton"
+}
+```
 
 I think now that people have hit this on a variety of platform combinations it should be merged.  Whatever alpha or release candidate it comes out on, I think it should be highlighted as something people should pound on, and we can make the necessary followup tickets.  But to move this forward it should go in.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-01-15 02:19:48
+archive/issue_comments_035489.json:
+```json
+{
+    "body": "Replying to [comment:33 mhampton]:\n> I think now that people have hit this on a variety of platform combinations it should be merged.  Whatever alpha or release candidate it comes out on, I think it should be highlighted as something people should pound on, and we can make the necessary followup tickets.  But to move this forward it should go in.\nI wasn't sure how picky to be.  Yes, and mabshoff's comment about Jason not wanting bitrot is certainly reasonable.\n\nDoes this mean that \n\n>   * testing with IE 6 on Windows\n>   * testing with Opera 9.5 on OSX,  Linux\n>   * review of the patches themselves\n>   * review of mabshoff's changes to the spkgs\n\nis all done?  I only looked at functionality, not the code.  \n\nLet the followup tickets begin!",
+    "created_at": "2009-01-15T02:19:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4705",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35489",
+    "user": "kcrisman"
+}
+```
 
 Replying to [comment:33 mhampton]:
 > I think now that people have hit this on a variety of platform combinations it should be merged.  Whatever alpha or release candidate it comes out on, I think it should be highlighted as something people should pound on, and we can make the necessary followup tickets.  But to move this forward it should go in.
@@ -423,36 +837,93 @@ is all done?  I only looked at functionality, not the code.
 Let the followup tickets begin!
 
 
+
 ---
 
-Comment by jason created at 2009-01-15 02:54:59
+archive/issue_comments_035490.json:
+```json
+{
+    "body": "Most of my entire next week is devoted to Sage at SD12.  FYI, I can certainly make followup tickets to this a priority in the next week.\n\nI most certainly second the comment that Jason will be very happy to see this finally go in!",
+    "created_at": "2009-01-15T02:54:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4705",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35490",
+    "user": "jason"
+}
+```
 
 Most of my entire next week is devoted to Sage at SD12.  FYI, I can certainly make followup tickets to this a priority in the next week.
 
 I most certainly second the comment that Jason will be very happy to see this finally go in!
 
 
+
 ---
+
+archive/issue_comments_035491.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-01-16T17:53:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4705",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35491",
+    "user": "jason"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by jason created at 2009-01-16 17:54:01
+archive/issue_comments_035492.json:
+```json
+{
+    "body": "The ghost-text.patch corrects the ghostly text mentioned above and should be applied on top of the other patches.",
+    "created_at": "2009-01-16T17:54:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4705",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35492",
+    "user": "jason"
+}
+```
 
 The ghost-text.patch corrects the ghostly text mentioned above and should be applied on top of the other patches.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-19 08:11:02
+archive/issue_comments_035493.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-01-19T08:11:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4705",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35493",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-19 08:11:02
+archive/issue_comments_035494.json:
+```json
+{
+    "body": "Merged tinymce-editable.patch,  safari-fix.patch, ghost-text.patch in Sage 3.3.alpha0.",
+    "created_at": "2009-01-19T08:11:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4705",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4705#issuecomment-35494",
+    "user": "mabshoff"
+}
+```
 
 Merged tinymce-editable.patch,  safari-fix.patch, ghost-text.patch in Sage 3.3.alpha0.

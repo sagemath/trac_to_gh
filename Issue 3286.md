@@ -1,11 +1,21 @@
 # Issue 3286: [with patch; needs review] Minor fixes (mostly doc) to partition.py
 
-Issue created by migration from https://trac.sagemath.org/ticket/3286
-
-Original creator: jbandlow
-
-Original creation time: 2008-05-23 17:21:59
-
+archive/issues_003286.json:
+```json
+{
+    "body": "Assignee: mhansen\n\nCC:  jbandlow sage-combinat\n\nSome clean-up as described here: [http://wiki.sagemath.org/combinat/Weirdness](http://wiki.sagemath.org/combinat/Weirdness)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3286\n\n",
+    "created_at": "2008-05-23T17:21:59Z",
+    "labels": [
+        "combinatorics",
+        "minor",
+        "bug"
+    ],
+    "title": "[with patch; needs review] Minor fixes (mostly doc) to partition.py",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3286",
+    "user": "jbandlow"
+}
+```
 Assignee: mhansen
 
 CC:  jbandlow sage-combinat
@@ -13,34 +23,97 @@ CC:  jbandlow sage-combinat
 Some clean-up as described here: [http://wiki.sagemath.org/combinat/Weirdness](http://wiki.sagemath.org/combinat/Weirdness)
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3286
+
+
+
+
 
 ---
+
+archive/issue_comments_022743.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-05-23T17:22:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3286",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3286#issuecomment-22743",
+    "user": "jbandlow"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_022744.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-05-23T22:01:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3286",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3286#issuecomment-22744",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2008-05-23 22:12:59
+archive/issue_comments_022745.json:
+```json
+{
+    "body": "Applies against 3.0.2.alpha0 and passes tests.  Looks good to me.",
+    "created_at": "2008-05-23T22:12:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3286",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3286#issuecomment-22745",
+    "user": "mhansen"
+}
+```
 
 Applies against 3.0.2.alpha0 and passes tests.  Looks good to me.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-25 03:37:53
+archive/issue_comments_022746.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-05-25T03:37:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3286",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3286#issuecomment-22746",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-25 03:37:53
+archive/issue_comments_022747.json:
+```json
+{
+    "body": "Merged 3286.patch in Sage 3.0.3.alpha0. The difference between the two patches seems to be that Mike's patch is a proper mercurial patch while Jason's is a diff. I edited Mike's patch so that Jason gets credit in the log which I assume is the intent here. \n\nCheers,\n\nMichael",
+    "created_at": "2008-05-25T03:37:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3286",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3286#issuecomment-22747",
+    "user": "mabshoff"
+}
+```
 
 Merged 3286.patch in Sage 3.0.3.alpha0. The difference between the two patches seems to be that Mike's patch is a proper mercurial patch while Jason's is a diff. I edited Mike's patch so that Jason gets credit in the log which I assume is the intent here. 
 

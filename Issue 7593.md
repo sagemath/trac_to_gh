@@ -1,74 +1,176 @@
 # Issue 7593: Matching using LP
 
-Issue created by migration from https://trac.sagemath.org/ticket/7593
-
-Original creator: ncohen
-
-Original creation time: 2009-12-03 14:46:04
-
+archive/issues_007593.json:
+```json
+{
+    "body": "Assignee: rlm\n\nAs the title says, this patch implements a function solving the maximum weight matching problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7593\n\n",
+    "created_at": "2009-12-03T14:46:04Z",
+    "labels": [
+        "graph theory",
+        "major",
+        "enhancement"
+    ],
+    "title": "Matching using LP",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7593",
+    "user": "ncohen"
+}
+```
 Assignee: rlm
 
 As the title says, this patch implements a function solving the maximum weight matching problem.
 
+Issue created by migration from https://trac.sagemath.org/ticket/7593
+
+
+
+
 
 ---
 
-Comment by ncohen created at 2009-12-03 15:18:22
+archive/issue_comments_064737.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-12-03T15:18:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7593",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7593#issuecomment-64737",
+    "user": "ncohen"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by wdj created at 2009-12-14 17:52:38
+archive/issue_comments_064738.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2009-12-14T17:52:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7593",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7593#issuecomment-64738",
+    "user": "wdj"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by wdj created at 2009-12-14 17:52:38
+archive/issue_comments_064739.json:
+```json
+{
+    "body": "I could not get this to apply to sage 4.3.rc0 with glpk installed.\n\nDo you need to rebase this?",
+    "created_at": "2009-12-14T17:52:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7593",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7593#issuecomment-64739",
+    "user": "wdj"
+}
+```
 
 I could not get this to apply to sage 4.3.rc0 with glpk installed.
 
 Do you need to rebase this?
 
 
+
 ---
 
-Comment by ncohen created at 2009-12-14 17:55:17
+archive/issue_comments_064740.json:
+```json
+{
+    "body": "Well, I need to rebase it each time there is a new version of Sage, and this until it finally gets reviewed... I'll rebase it just now !\n\nNathann",
+    "created_at": "2009-12-14T17:55:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7593",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7593#issuecomment-64740",
+    "user": "ncohen"
+}
+```
 
 Well, I need to rebase it each time there is a new version of Sage, and this until it finally gets reviewed... I'll rebase it just now !
 
 Nathann
 
 
+
 ---
 
-Comment by ncohen created at 2009-12-14 18:00:17
+archive/issue_comments_064741.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2009-12-14T18:00:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7593",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7593#issuecomment-64741",
+    "user": "ncohen"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by ncohen created at 2009-12-14 18:00:17
+archive/issue_comments_064742.json:
+```json
+{
+    "body": "here it is !!! This may  well be the tenth version of this function which has been written 6 months ago :p\n\nNathann",
+    "created_at": "2009-12-14T18:00:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7593",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7593#issuecomment-64742",
+    "user": "ncohen"
+}
+```
 
 here it is !!! This may  well be the tenth version of this function which has been written 6 months ago :p
 
 Nathann
 
 
+
 ---
 
-Comment by wdj created at 2009-12-15 02:03:17
+archive/issue_comments_064743.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_info.",
+    "created_at": "2009-12-15T02:03:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7593",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7593#issuecomment-64743",
+    "user": "wdj"
+}
+```
 
 Changing status from needs_review to needs_info.
 
 
+
 ---
 
-Comment by wdj created at 2009-12-15 02:03:17
+archive/issue_comments_064744.json:
+```json
+{
+    "body": "Replying to [comment:5 ncohen]:\n> here it is !!! This may  well be the tenth version of this function which has been \n> written 6 months ago :p\n> \n> Nathann\n\nSorry for the long delay in refereeing. \n\nIt applies okay to 4.3.rc0 on ubuntu 9.04 32 bit, and passes \nsage -testall except for the failures that I got without the \npatch installed (in calculus and nf_introduction). The documentation also\nlooks satisfactory to me. The optional test\n\n\n```\nsage -t -optional \"devel/sage/sage/graphs/graph.py\n```\n\ngave rise to (in particular) the following failure\n\n```\nwdj@wdj-virtualbox:~/sagefiles/sage-4.3.rc0$ ./sage -t -optional \"devel/sage/sage/graphs/graph.py\"\nsage -t -optional \"devel/sage/sage/graphs/graph.py\"         \nsh: kpsewhich: not found\nsh: kpsewhich: not found\nsh: kpsewhich: not found\nsh: kpsewhich: not found\n**********************************************************************\nFile \"/home/wdj/sagefiles/sage-4.3.rc0/devel/sage/sage/graphs/graph.py\", line 3293:\n    sage: g.matching(value_only=True) # optional - requires Glpk or COIN-OR/CBC\nException raised:\n    Traceback (most recent call last):\n      File \"/home/wdj/sagefiles/sage-4.3.rc0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/wdj/sagefiles/sage-4.3.rc0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/wdj/sagefiles/sage-4.3.rc0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_59[3]>\", line 1, in <module>\n        g.matching(value_only=True) # optional - requires Glpk or COIN-OR/CBC###line 3293:\n    sage: g.matching(value_only=True) # optional - requires Glpk or COIN-OR/CBC\n      File \"/home/wdj/sagefiles/sage-4.3.rc0/local/lib/python/site-packages/sage/graphs/graph.py\", line 3316, in matching\n        return p.solve(objective_only=True)\n      File \"mip.pyx\", line 945, in sage.numerical.mip.MixedIntegerLinearProgram.solve (sage/numerical/mip.c:7177)\n    ValueError: There does not seem to be any solver installed. Please visit http://www.sagemath.org/doc/tutorial/tour_LP.html for more informations.\n**********************************************************************\n1 items had failures:\n   1 of   4 in __main__.example_59\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/wdj/.sage//tmp/.doctest_graph.py\n\t [74.3 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -optional \"devel/sage/sage/graphs/graph.py\"\n```\n\n\nDoes this seem related to your patch? glpk is installed, to the error message\n(\"solver not installed\") seems wrong, or at least is unexpected by me.",
+    "created_at": "2009-12-15T02:03:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7593",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7593#issuecomment-64744",
+    "user": "wdj"
+}
+```
 
 Replying to [comment:5 ncohen]:
 > here it is !!! This may  well be the tenth version of this function which has been 
@@ -135,9 +237,20 @@ Does this seem related to your patch? glpk is installed, to the error message
 ("solver not installed") seems wrong, or at least is unexpected by me.
 
 
+
 ---
 
-Comment by ncohen created at 2009-12-15 08:36:25
+archive/issue_comments_064745.json:
+```json
+{
+    "body": "This is indeed related to my patch, but I have a question : when you say that glpk is installed, do you mean that you installed it in the same branche where you applied the patch ? If you installed it when you were using a different branch, then switched to another one to test this patch, it will not be detected.. You need to install it in every branch where you need to use it :-)\n\nThis comes from the fact that during the installation of the procedure, the file mipGlpk.pyx is compiled and only accessible by the \"current\" branch. You the probably need to switch to the branch which uses matching, then to sage -f GLPK ( as it needs to be forced ) :-)\n\nHope this will solve it ! :-)\n\nNathann",
+    "created_at": "2009-12-15T08:36:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7593",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7593#issuecomment-64745",
+    "user": "ncohen"
+}
+```
 
 This is indeed related to my patch, but I have a question : when you say that glpk is installed, do you mean that you installed it in the same branche where you applied the patch ? If you installed it when you were using a different branch, then switched to another one to test this patch, it will not be detected.. You need to install it in every branch where you need to use it :-)
 
@@ -148,37 +261,92 @@ Hope this will solve it ! :-)
 Nathann
 
 
+
 ---
 
-Comment by wdj created at 2009-12-15 12:46:16
+archive/issue_comments_064746.json:
+```json
+{
+    "body": "Agreed.  Thanks. Very useful patch.",
+    "created_at": "2009-12-15T12:46:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7593",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7593#issuecomment-64746",
+    "user": "wdj"
+}
+```
 
 Agreed.  Thanks. Very useful patch.
 
 
+
 ---
 
-Comment by wdj created at 2009-12-15 12:46:16
+archive/issue_comments_064747.json:
+```json
+{
+    "body": "Changing status from needs_info to needs_review.",
+    "created_at": "2009-12-15T12:46:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7593",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7593#issuecomment-64747",
+    "user": "wdj"
+}
+```
 
 Changing status from needs_info to needs_review.
 
 
+
 ---
 
-Comment by wdj created at 2009-12-15 12:47:08
+archive/issue_comments_064748.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-12-15T12:47:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7593",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7593#issuecomment-64748",
+    "user": "wdj"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by wdj created at 2009-12-15 12:47:08
+archive/issue_comments_064749.json:
+```json
+{
+    "body": "Applies and tests fine on sage 4.3.rc0 and ubuntu 9.04 32 bit.",
+    "created_at": "2009-12-15T12:47:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7593",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7593#issuecomment-64749",
+    "user": "wdj"
+}
+```
 
 Applies and tests fine on sage 4.3.rc0 and ubuntu 9.04 32 bit.
 
 
+
 ---
 
-Comment by ncohen created at 2009-12-15 13:49:17
+archive/issue_comments_064750.json:
+```json
+{
+    "body": "Yeppeeeeeeeeeee !! :-)\n\nThank you veeeeeeeeeeeeeeeeeeeeeeeeeeryyyyyyyyyyyyyyy much :-)\n\nNathann",
+    "created_at": "2009-12-15T13:49:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7593",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7593#issuecomment-64750",
+    "user": "ncohen"
+}
+```
 
 Yeppeeeeeeeeeee !! :-)
 
@@ -187,24 +355,59 @@ Thank you veeeeeeeeeeeeeeeeeeeeeeeeeeryyyyyyyyyyyyyyy much :-)
 Nathann
 
 
+
 ---
 
-Comment by mhansen created at 2009-12-15 16:07:27
+archive/issue_comments_064751.json:
+```json
+{
+    "body": "The patch needs a little touching up.\n\nIt should be `.. math::` instead of `.. MATH::`.  Also, it would be good to follow PEP 8 rules http://www.python.org/dev/peps/pep-0008/ regarding spacing -- http://www.python.org/dev/peps/pep-0008/ .",
+    "created_at": "2009-12-15T16:07:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7593",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7593#issuecomment-64751",
+    "user": "mhansen"
+}
+```
 
 The patch needs a little touching up.
 
 It should be `.. math::` instead of `.. MATH::`.  Also, it would be good to follow PEP 8 rules http://www.python.org/dev/peps/pep-0008/ regarding spacing -- http://www.python.org/dev/peps/pep-0008/ .
 
 
+
 ---
+
+archive/issue_comments_064752.json:
+```json
+{
+    "body": "Attachment\n\nI just updated the path to replace MATH by math :-)",
+    "created_at": "2009-12-15T16:12:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7593",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7593#issuecomment-64752",
+    "user": "ncohen"
+}
+```
 
 Attachment
 
 I just updated the path to replace MATH by math :-)
 
 
+
 ---
 
-Comment by mhansen created at 2009-12-19 21:06:30
+archive/issue_comments_064753.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-12-19T21:06:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7593",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7593#issuecomment-64753",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

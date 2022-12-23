@@ -1,11 +1,21 @@
 # Issue 2681: [with patch, needs review] improve doctest coverage in libs/pari/gen.pyx
 
-Issue created by migration from https://trac.sagemath.org/ticket/2681
-
-Original creator: AlexGhitza
-
-Original creation time: 2008-03-27 03:39:00
-
+archive/issues_002681.json:
+```json
+{
+    "body": "Assignee: failure\n\nKeywords: doctest pari elliptic\n\nI added a number of doctests to gen.pyx (mostly for the functions dealing with elliptic curves), and did some general cleaning up.  (In the process I ran into a couple of PARI bugs and reported them upstream.)\n\nI intend to continue this at some point, but the patch is getting large so I decided to submit it for review.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2681\n\n",
+    "created_at": "2008-03-27T03:39:00Z",
+    "labels": [
+        "doctest coverage",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch, needs review] improve doctest coverage in libs/pari/gen.pyx",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2681",
+    "user": "AlexGhitza"
+}
+```
 Assignee: failure
 
 Keywords: doctest pari elliptic
@@ -15,36 +25,97 @@ I added a number of doctests to gen.pyx (mostly for the functions dealing with e
 I intend to continue this at some point, but the patch is getting large so I decided to submit it for review.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2681
+
+
+
+
 
 ---
+
+archive/issue_comments_018433.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-03-27T03:39:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2681",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2681#issuecomment-18433",
+    "user": "AlexGhitza"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by cremona created at 2008-03-27 17:40:45
+archive/issue_comments_018434.json:
+```json
+{
+    "body": "Great job!  Sage's docs for some of these functions are now better than pari's own.  Merge this!",
+    "created_at": "2008-03-27T17:40:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2681",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2681#issuecomment-18434",
+    "user": "cremona"
+}
+```
 
 Great job!  Sage's docs for some of these functions are now better than pari's own.  Merge this!
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-28 05:07:25
+archive/issue_comments_018435.json:
+```json
+{
+    "body": "Merged in Sage 2.11.alpha2",
+    "created_at": "2008-03-28T05:07:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2681",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2681#issuecomment-18435",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.11.alpha2
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-28 05:07:25
+archive/issue_comments_018436.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-03-28T05:07:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2681",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2681#issuecomment-18436",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-28 06:35:37
+archive/issue_comments_018437.json:
+```json
+{
+    "body": "Some slight 64 bit problems: \n\n```\nsage -t -long devel/sage-main/sage/libs/pari/gen.pyx        **********************************************************************\nFile \"gen.pyx\", line 4159:\n    sage: e.elleta()\nExpected:\n    [3.605463601432652085915820564, 10.81639080429795625774746169*I]\nGot:\n    [3.6054636014326520859158205642077267748, 10.816390804297956257747461692623180324*I]\n**********************************************************************\nFile \"gen.pyx\", line 4184:\n    sage: e.ellheight([1,0])\nExpected:\n    0.4767116593437395373794860589\nGot:\n    0.47671165934373953737948605888465305946\n**********************************************************************\nFile \"gen.pyx\", line 4186:\n    sage: e.ellheight([1,0], flag=0)\nExpected:\n    0.4767116593437395373794860589\nGot:\n    0.47671165934373953737948605888465305946\n**********************************************************************\nFile \"gen.pyx\", line 4188:\n    sage: e.ellheight([1,0], flag=1)\nExpected:\n    0.4767116593437395373794860589\nGot:\n    0.47671165934373953737948605888465305946\n**********************************************************************\nFile \"gen.pyx\", line 4210:\n    sage: e.ellheightmatrix([[1,0], [-1,1]])\nExpected:\n    [0.4767116593437395373794860589, 0.4181889844988605856298894582; 0.4181889844988605856298894582, 0.6866670833055865857235521030]\nGot:\n    [0.47671165934373953737948605888465305946, 0.41818898449886058562988945821587638238; 0.41818898449886058562988945821587638238, 0.68666708330558658572355210295409678906]\n**********************************************************************\nFile \"gen.pyx\", line 4382:\n    sage: e.elllseries(2.1, A=1.1)\nExpected:\n    0.4028380479566455158\nGot:\n    0.4028380479566455157\n**********************************************************************\nFile \"gen.pyx\", line 4456:\n    sage: e.ellordinate(I)\nExpected:\n    [0.5822035897217411772333894787 - 1.386060824641769718531183421*I, -1.582203589721741177233389479 + 1.386060824641769718531183421*I]\nGot:\n    [0.58220358972174117723338947874993600727 - 1.3860608246417697185311834209833653345*I, -1.5822035897217411772333894787499360073 + 1.3860608246417697185311834209833653345*I]\n**********************************************************************\nFile \"gen.pyx\", line 4480:\n    sage: e.ellpointtoz([0,0])\nExpected:\n    1.854074677301371918433850347\nGot:\n    1.8540746773013719184338503471952600462\n**********************************************************************\nFile \"gen.pyx\", line 4628:\n    sage: e.ellzeta(1)\nExpected:\n    1.064798412958827927449913418 + 3.491753745 E-251*I\nGot:\n    1.0647984129588279274499134181598985072 - 8.016988209895862073 E-694*I\n**********************************************************************\nFile \"gen.pyx\", line 4630:\n    sage: e.ellzeta(I-1)\nExpected:\n    -0.3501226585230491632779704180 - 0.3501226585230491632779704180*I\nGot:\n    -0.35012265852304916327797041802108326818 - 0.35012265852304916327797041802108326818*I\n**********************************************************************\nFile \"gen.pyx\", line 4652:\n    sage: e.ellztopoint(1+I)\nExpected:\n    [0.E-251 - 1.021522867956699099826892460*I, -0.1490728137010962128964506933 - 0.1490728137010962128964506933*I]\nGot:\n    [0.E-694 - 1.0215228679566990998268924596833713669*I, -0.14907281370109621289645069325289375075 - 0.14907281370109621289645069325289375075*I]\n**********************************************************************\n```\n\nPatch coming up.\n\nCheers,\n\nMichael",
+    "created_at": "2008-03-28T06:35:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2681",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2681#issuecomment-18437",
+    "user": "mabshoff"
+}
+```
 
 Some slight 64 bit problems: 
 
@@ -136,7 +207,20 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_018438.json:
+```json
+{
+    "body": "Attachment\n\n\n```\n[07:10] <mabshoff> #2681 now has the 64 bit pari fix.\n[07:10] <mabshoff> Trivial review anyone?\n[07:11] <wstein> [positive review]\n```\n\n\nMerged the doctest fix patch in 2.11.alpha2\n\nCheers,\n\nMichael",
+    "created_at": "2008-03-28T06:42:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2681",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2681#issuecomment-18438",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 

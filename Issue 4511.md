@@ -1,11 +1,21 @@
 # Issue 4511: sage-combinat script won't work with two digit version numbers (for example: 3.2)
 
-Issue created by migration from https://trac.sagemath.org/ticket/4511
-
-Original creator: saliola
-
-Original creation time: 2008-11-13 10:45:09
-
+archive/issues_004511.json:
+```json
+{
+    "body": "Assignee: saliola\n\nCC:  sage-combinat\n\nKeywords: sage-combinat script\n\nChange the version number in $SAGE_ROOT/local/bin/sage-banner to 3.2 and then watch 'sage -combinat config' fail.\n\nI'll fix this right away.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4511\n\n",
+    "created_at": "2008-11-13T10:45:09Z",
+    "labels": [
+        "combinatorics",
+        "major",
+        "bug"
+    ],
+    "title": "sage-combinat script won't work with two digit version numbers (for example: 3.2)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4511",
+    "user": "saliola"
+}
+```
 Assignee: saliola
 
 CC:  sage-combinat
@@ -16,26 +26,65 @@ Change the version number in $SAGE_ROOT/local/bin/sage-banner to 3.2 and then wa
 
 I'll fix this right away.
 
+Issue created by migration from https://trac.sagemath.org/ticket/4511
+
+
+
+
 
 ---
+
+archive/issue_comments_033455.json:
+```json
+{
+    "body": "Attachment\n\npatch against version 3.2.rc0",
+    "created_at": "2008-11-13T10:53:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4511",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4511#issuecomment-33455",
+    "user": "saliola"
+}
+```
 
 Attachment
 
 patch against version 3.2.rc0
 
 
+
 ---
 
-Comment by saliola created at 2008-11-13 11:00:32
+archive/issue_comments_033456.json:
+```json
+{
+    "body": "For the record: my previous patch to the script did not cause this---it would have failed anyway---but it did make me realize that this would be a problem!\n\nTechnical note: the get_sage_version function will now return the version number with any non-numeric stuff stripped off. For example \"3.2.rc0\" will be returned as \"3.2\".",
+    "created_at": "2008-11-13T11:00:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4511",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4511#issuecomment-33456",
+    "user": "saliola"
+}
+```
 
 For the record: my previous patch to the script did not cause this---it would have failed anyway---but it did make me realize that this would be a problem!
 
 Technical note: the get_sage_version function will now return the version number with any non-numeric stuff stripped off. For example "3.2.rc0" will be returned as "3.2".
 
 
+
 ---
 
-Comment by nthiery created at 2008-11-13 13:42:47
+archive/issue_comments_033457.json:
+```json
+{
+    "body": "Thanks!\n\nI am not sure I have the latest sage-combinat script under hand.\nPlease double check that qselect_backward_compatibility_patches also\nsupports 2 digits version numbers, in particular in the version\nguards.\n\nOnce you have done this, I'll give a positive review.\n\nCheers,\n\t\t\t\tNicolas",
+    "created_at": "2008-11-13T13:42:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4511",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4511#issuecomment-33457",
+    "user": "nthiery"
+}
+```
 
 Thanks!
 
@@ -50,9 +99,20 @@ Cheers,
 				Nicolas
 
 
+
 ---
 
-Comment by saliola created at 2008-11-13 13:58:00
+archive/issue_comments_033458.json:
+```json
+{
+    "body": "\n```\n>> sage -version\n>> sage -combinat qselect\nActive guards:\nSkip backward compatibility patches for sage 3.0.2\nSkip backward compatibility patches for sage 3.0.3\nSkip backward compatibility patches for sage 3.0.4\nSkip backward compatibility patches for sage 3.0.6\nSkip backward compatibility patches for sage 3.1.2\nSkip backward compatibility patches for sage 3.1.3\nUpdating guards\n  sage -hg qselect -q -n\n  sage -hg qselect\nno active guards\n```\n\n| Sage Version 3.2.rc0, Release Date: 2008-11-10                     |\nAnd here I've change the version number to 3.1 (by editing sage-banner):\n\n```\n>> sage -version\n>> sage -combinat qselect\nActive guards:\nSkip backward compatibility patches for sage 3.0.2\nSkip backward compatibility patches for sage 3.0.3\nSkip backward compatibility patches for sage 3.0.4\nSkip backward compatibility patches for sage 3.0.6\nKeep backward compatibility patches for sage 3.1.2\nKeep backward compatibility patches for sage 3.1.3\nUpdating guards\n  sage -hg qselect -q -n\n  sage -hg qselect 3_1_2 3_1_3\n```\n",
+    "created_at": "2008-11-13T13:58:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4511",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4511#issuecomment-33458",
+    "user": "saliola"
+}
+```
 
 
 ```
@@ -91,16 +151,40 @@ Updating guards
 
 
 
+
 ---
+
+archive/issue_comments_033459.json:
+```json
+{
+    "body": "Attachment\n\napply only this patch",
+    "created_at": "2008-11-14T19:29:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4511",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4511#issuecomment-33459",
+    "user": "saliola"
+}
+```
 
 Attachment
 
 apply only this patch
 
 
+
 ---
 
-Comment by saliola created at 2008-11-14 19:38:53
+archive/issue_comments_033460.json:
+```json
+{
+    "body": "Whoever reviews this can apply it and test it with the following command (it creates a new branch so it won't mess up your combinat installation):\n\n```\nsage -combinat install --branch=temp_combinat\n```\n\n\nBut, I checked it throughly and it is working correctly (note that in the above the output the 3.1 guard isn't selected, but below it is).\n\nThe docstring of qselect_backward_compatibility_patches:\n\n```\n    r\"\"\"\n    Selects the appropriate guards for this version of sage\n    e.g. if we are running sage 3.0.2, then we want to apply all\n    the patches which are guarded by 3_0_3, 3_0_4, ...\n    \"\"\"\n```\n\n\nThe current available guards are: 3_0_2, 3_0_3, 3_0_4, 3_0_6, 3_1, 3_1_2, 3_1_3. So for the current version 3.2, we should apply no patches, and that is what happens:\n\n```\n>> sage -combinat install\n...\nupdating working directory\n43 files updated, 0 files merged, 0 files removed, 0 files unresolved\nActive guards:\nSkip backward compatibility patches for sage 3.0.2\nSkip backward compatibility patches for sage 3.0.3\nSkip backward compatibility patches for sage 3.0.4\nSkip backward compatibility patches for sage 3.0.6\nSkip backward compatibility patches for sage 3.1\nSkip backward compatibility patches for sage 3.1.2\nSkip backward compatibility patches for sage 3.1.3\nUpdating guards\n  sage -hg qselect -q -n\n  sage -hg qselect\nno active guards\n...\n```\n\n\nFor version 3.1 (I only changed the version number in sage-banner), we want to apply all patches guarded by 3_1_2 and 3_1_3:\n\n```\n>> sage -combinat install\n...\nupdating working directory\n43 files updated, 0 files merged, 0 files removed, 0 files unresolved\nActive guards:\nSkip backward compatibility patches for sage 3.0.2\nSkip backward compatibility patches for sage 3.0.3\nSkip backward compatibility patches for sage 3.0.4\nSkip backward compatibility patches for sage 3.0.6\nSkip backward compatibility patches for sage 3.1\nKeep backward compatibility patches for sage 3.1.2\nKeep backward compatibility patches for sage 3.1.3\nUpdating guards\n  sage -hg qselect -q -n\n  sage -hg qselect 3_1_2 3_1_3\nnumber of unguarded, unapplied patches has changed from 31 to 33\n...\n```\n\n\n\nFor version 3.0.6 (again, I only changed the version number in sage-banner), we want to apply all patches guarded by 3_0_6, 3_1, 3_1_2, 3_1_3.\n\n```\n>> sage -combinat install\n...\nupdating working directory\n43 files updated, 0 files merged, 0 files removed, 0 files unresolved\nActive guards:\nSkip backward compatibility patches for sage 3.0.2\nSkip backward compatibility patches for sage 3.0.3\nSkip backward compatibility patches for sage 3.0.4\nKeep backward compatibility patches for sage 3.0.6\nKeep backward compatibility patches for sage 3.1\nKeep backward compatibility patches for sage 3.1.2\nKeep backward compatibility patches for sage 3.1.3\nUpdating guards\n  sage -hg qselect -q -n\n  sage -hg qselect 3_0_6 3_1 3_1_2 3_1_3\nnumber of unguarded, unapplied patches has changed from 31 to 36\n...\n```\n",
+    "created_at": "2008-11-14T19:38:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4511",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4511#issuecomment-33460",
+    "user": "saliola"
+}
+```
 
 Whoever reviews this can apply it and test it with the following command (it creates a new branch so it won't mess up your combinat installation):
 
@@ -193,9 +277,20 @@ number of unguarded, unapplied patches has changed from 31 to 36
 
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-14 22:04:59
+archive/issue_comments_033461.json:
+```json
+{
+    "body": "\n```\nI'd like to give a positive review, but the wiki won't allow me to\naccess the trac guidelines (surge protection) to check how I am\nsupposed to do that. I'll try again tomorrow morning, unless someone\ndoes this for me in the mean time.\n\nIn case you have 2 minutes, can you update the doc string line 203?\n\nCheers,\n\t\t\t\tNicolas\n```\n",
+    "created_at": "2008-11-14T22:04:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4511",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4511#issuecomment-33461",
+    "user": "mabshoff"
+}
+```
 
 
 ```
@@ -212,15 +307,37 @@ Cheers,
 
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-15 04:48:56
+archive/issue_comments_033462.json:
+```json
+{
+    "body": "Merged sage-combinat-script-4511-patch2.patch in Sage 3.2.rc1",
+    "created_at": "2008-11-15T04:48:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4511",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4511#issuecomment-33462",
+    "user": "mabshoff"
+}
+```
 
 Merged sage-combinat-script-4511-patch2.patch in Sage 3.2.rc1
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-15 04:48:56
+archive/issue_comments_033463.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-11-15T04:48:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4511",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4511#issuecomment-33463",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

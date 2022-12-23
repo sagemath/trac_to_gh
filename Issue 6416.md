@@ -1,11 +1,21 @@
 # Issue 6416: [with spkg and patch, needs review] Frobby for monomial ideals
 
-Issue created by migration from https://trac.sagemath.org/ticket/6416
-
-Original creator: broune
-
-Original creation time: 2009-06-25 21:37:20
-
+archive/issues_006416.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  drkirkby\n\nKeywords: monomial ideal, Hilbert series, Alexander dual\n\nThis spkg and patch updates the Frobby library that is already an optional component of Sage, and gives it a Cython interface to a shared library instead of the pexpect interface in the current Frobby spkg. It also exposes more functionality. Functionality not currently in sage:\n\n- Multigraded Hilbert-Poincare series\n- Alexander dual of monomial ideals (already in the previous Frobby spkg)\n- Maximal standard monomials of monomial ideals\n- Irreducible decomposition of monomial ideals\n- Optimization of any linear function over the maximal standard monomials of a monomial ideal using branch-and-bound.\n\nThe patch applies cleanly to Sage 4.0.1, and the spkg is at\n\n  http://www.daimi.au.dk/~bjarke/frobby-0.8.0.spkg\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6416\n\n",
+    "created_at": "2009-06-25T21:37:20Z",
+    "labels": [
+        "algebra",
+        "major",
+        "enhancement"
+    ],
+    "title": "[with spkg and patch, needs review] Frobby for monomial ideals",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6416",
+    "user": "broune"
+}
+```
 Assignee: tbd
 
 CC:  drkirkby
@@ -14,45 +24,95 @@ Keywords: monomial ideal, Hilbert series, Alexander dual
 
 This spkg and patch updates the Frobby library that is already an optional component of Sage, and gives it a Cython interface to a shared library instead of the pexpect interface in the current Frobby spkg. It also exposes more functionality. Functionality not currently in sage:
 
- - Multigraded Hilbert-Poincare series
- - Alexander dual of monomial ideals (already in the previous Frobby spkg)
- - Maximal standard monomials of monomial ideals
- - Irreducible decomposition of monomial ideals
- - Optimization of any linear function over the maximal standard monomials of a monomial ideal using branch-and-bound.
+- Multigraded Hilbert-Poincare series
+- Alexander dual of monomial ideals (already in the previous Frobby spkg)
+- Maximal standard monomials of monomial ideals
+- Irreducible decomposition of monomial ideals
+- Optimization of any linear function over the maximal standard monomials of a monomial ideal using branch-and-bound.
 
 The patch applies cleanly to Sage 4.0.1, and the spkg is at
 
   http://www.daimi.au.dk/~bjarke/frobby-0.8.0.spkg
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6416
+
+
+
+
 
 ---
+
+archive/issue_comments_051522.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-06-25T21:38:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6416",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6416#issuecomment-51522",
+    "user": "broune"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by malb created at 2009-07-16 12:35:58
+archive/issue_comments_051523.json:
+```json
+{
+    "body": "Am I right to assume that the Cython interface would require Frobby to become a standard SPKG? If so, this needs a vote on [sage-devel]. To ask for a vote write an e-mail to [sage-devel] which answers the following questions:\n* what is Frobby and what is it good for?\n* Is it the best (open-source) package for this job?\n* Is Frobby's license compatible with Sage's?\n* Do we have upstream support (trivial :)?\n* On which platforms was it tested (OSX 32-bit and 64-bit, Linux 32-bit and 64-bit, Solaris)?",
+    "created_at": "2009-07-16T12:35:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6416",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6416#issuecomment-51523",
+    "user": "malb"
+}
+```
 
 Am I right to assume that the Cython interface would require Frobby to become a standard SPKG? If so, this needs a vote on [sage-devel]. To ask for a vote write an e-mail to [sage-devel] which answers the following questions:
- * what is Frobby and what is it good for?
- * Is it the best (open-source) package for this job?
- * Is Frobby's license compatible with Sage's?
- * Do we have upstream support (trivial :)?
- * On which platforms was it tested (OSX 32-bit and 64-bit, Linux 32-bit and 64-bit, Solaris)?
+* what is Frobby and what is it good for?
+* Is it the best (open-source) package for this job?
+* Is Frobby's license compatible with Sage's?
+* Do we have upstream support (trivial :)?
+* On which platforms was it tested (OSX 32-bit and 64-bit, Linux 32-bit and 64-bit, Solaris)?
+
 
 
 ---
 
-Comment by broune created at 2009-07-16 13:25:45
+archive/issue_comments_051524.json:
+```json
+{
+    "body": "The vote is at http://groups.google.com/group/sage-devel/browse_thread/thread/ad427ae37c733c48",
+    "created_at": "2009-07-16T13:25:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6416",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6416#issuecomment-51524",
+    "user": "broune"
+}
+```
 
 The vote is at http://groups.google.com/group/sage-devel/browse_thread/thread/ad427ae37c733c48
 
 
+
 ---
 
-Comment by mhampton created at 2009-07-16 17:23:36
+archive/issue_comments_051525.json:
+```json
+{
+    "body": "Although I know about as much as my dog about Solaris, I gave it a try on t2.  After downloading the 0.8.0 spkg from trac I did:\n\n\n```\nsage -sh\nexport GMPLIB=/home/wstein/sparc/sage-3.4.1.rc4-mark-gcc-4.3.3/local\n$MAKE library MODE=shared ldflags=\"$LDFLAGS\" GMP_INC_DIR=\"$GMPLIB\"\n```\n\n\nand things compiled well for a while until I got:\n\n```\ng++   -Wall -ansi -pedantic -I /home/wstein/sparc/sage-3.4.1.rc4-mark-gcc-4.3.3/local/include -Wno-uninitialized -Wno-unused-parameter -O2 -fPIC -c src/test/TestSuite.cpp -o bin/shared/test/TestSuite.o\nsrc/test/TestSuite.cpp: In member function \u2018void TestSuite::sortTests()\u2019:\nsrc/test/TestSuite.cpp:43: error: \u2018sort\u2019 was not declared in this scope\nmake: *** [bin/shared/test/TestSuite.o] Error 1\n```\n\n\n-Marshall",
+    "created_at": "2009-07-16T17:23:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6416",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6416#issuecomment-51525",
+    "user": "mhampton"
+}
+```
 
 Although I know about as much as my dog about Solaris, I gave it a try on t2.  After downloading the 0.8.0 spkg from trac I did:
 
@@ -77,51 +137,128 @@ make: *** [bin/shared/test/TestSuite.o] Error 1
 -Marshall
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-08-16 03:50:21
+archive/issue_comments_051526.json:
+```json
+{
+    "body": "Changing component from algebra to commutative algebra.",
+    "created_at": "2009-08-16T03:50:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6416",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6416#issuecomment-51526",
+    "user": "AlexGhitza"
+}
+```
 
 Changing component from algebra to commutative algebra.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-08-16 03:50:21
+archive/issue_comments_051527.json:
+```json
+{
+    "body": "Changing assignee from tbd to malb.",
+    "created_at": "2009-08-16T03:50:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6416",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6416#issuecomment-51527",
+    "user": "AlexGhitza"
+}
+```
 
 Changing assignee from tbd to malb.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-08-16 09:39:50
+archive/issue_comments_051528.json:
+```json
+{
+    "body": "I am marking this as \"needs work\" because of the Solaris issue.  (Maybe David Kirkby can figure this one out.)",
+    "created_at": "2009-08-16T09:39:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6416",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6416#issuecomment-51528",
+    "user": "AlexGhitza"
+}
+```
 
 I am marking this as "needs work" because of the Solaris issue.  (Maybe David Kirkby can figure this one out.)
 
 
----
-
-Comment by kcrisman created at 2012-06-05 14:08:55
-
-Given that #13007 updates Frobby to 0.9.0, this ticket probably needs at least a little TLC.  But in principle the vote still stands, assuming Frobby ever gets to _optional_ status (currently experimental).
-
 
 ---
 
-Comment by kcrisman created at 2012-06-05 14:10:38
+archive/issue_comments_051529.json:
+```json
+{
+    "body": "Given that #13007 updates Frobby to 0.9.0, this ticket probably needs at least a little TLC.  But in principle the vote still stands, assuming Frobby ever gets to *optional* status (currently experimental).",
+    "created_at": "2012-06-05T14:08:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6416",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6416#issuecomment-51529",
+    "user": "kcrisman"
+}
+```
+
+Given that #13007 updates Frobby to 0.9.0, this ticket probably needs at least a little TLC.  But in principle the vote still stands, assuming Frobby ever gets to *optional* status (currently experimental).
+
+
+
+---
+
+archive/issue_comments_051530.json:
+```json
+{
+    "body": "Note also that in the vote it was perhaps recommended that Frobby should have a Cython interface that allows it to still be an optional spkg.  It adds perhaps 5 minutes to build time on my medium-age Mac, though it adds less than 1 MB of source.",
+    "created_at": "2012-06-05T14:10:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6416",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6416#issuecomment-51530",
+    "user": "kcrisman"
+}
+```
 
 Note also that in the vote it was perhaps recommended that Frobby should have a Cython interface that allows it to still be an optional spkg.  It adds perhaps 5 minutes to build time on my medium-age Mac, though it adds less than 1 MB of source.
 
 
+
 ---
 
-Comment by SimonKing created at 2018-09-11 16:00:10
+archive/issue_comments_051531.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_info.",
+    "created_at": "2018-09-11T16:00:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6416",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6416#issuecomment-51531",
+    "user": "SimonKing"
+}
+```
 
 Changing status from needs_work to needs_info.
 
 
+
 ---
 
-Comment by SimonKing created at 2018-09-11 16:00:10
+archive/issue_comments_051532.json:
+```json
+{
+    "body": "This ticket is about an old-style spkg for frobby version 0.8.0. We now have frobby 0.9.0 in a new-style sage package. I know that in some examples in which Singular fails with an int overflow, frobby starts to use very much memory and takes a very long time. Moreover, it seems that the computation of multivariate Hilbert series has a bug: Frobby uses the base ring of the polynomial ring as the base ring of the Hilbert series (but Hilbert series are supposed to have integral coefficients). Moreover, if one uses integral coefficients, the monomials that are not standard monomials appear with coefficient TWO, but should of course have coefficient zero, in the expansion of the multivariate Hilbert series.\n\n```\n  sage: R.<x,y,z,w>=QQ[]\n  sage: I = R*[x^3,x^2*y,x*z]\n  sage: D = ~PowerSeriesRing(QQ,'x,y,z,w')((x-1)*(y-1)*(z-1)*(w-1))\n  sage: frobby.hilbert(I)\n  x^3*y*z + x^3*y + x^3*z + x^2*y*z + x^3 + x^2*y + x*z + 1\n  sage: (frobby.hilbert(I)*D)[:4]\n  1 + x + y + z + w + x^2 + x*y + 2*x*z + x*w + y^2 + y*z + y*w + z^2 +\n  z*w + w^2 + 2*x^3 + 2*x^2*y + 2*x^2*z + x^2*w + x*y^2 + 2*x*y*z +\n  x*y*w + 2*x*z^2 + 2*x*z*w + x*w^2 + y^3 + y^2*z + y^2*w + y*z^2 +\n  y*z*w + y*w^2 + z^3 + z^2*w + z*w^2 + w^3 + O(x, y, z, w)^12\n```\n\n\nSo, I think that frobby should not be the default backend for Hilbert series.\n\nHowever, it may still be a good idea to provide a Cython interface. So, question: Should the Cython-interface part of the patch be changed into a branch?",
+    "created_at": "2018-09-11T16:00:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6416",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6416#issuecomment-51532",
+    "user": "SimonKing"
+}
+```
 
 This ticket is about an old-style spkg for frobby version 0.8.0. We now have frobby 0.9.0 in a new-style sage package. I know that in some examples in which Singular fails with an int overflow, frobby starts to use very much memory and takes a very long time. Moreover, it seems that the computation of multivariate Hilbert series has a bug: Frobby uses the base ring of the polynomial ring as the base ring of the Hilbert series (but Hilbert series are supposed to have integral coefficients). Moreover, if one uses integral coefficients, the monomials that are not standard monomials appear with coefficient TWO, but should of course have coefficient zero, in the expansion of the multivariate Hilbert series.
 

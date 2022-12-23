@@ -1,11 +1,21 @@
 # Issue 1953: [with patch] fix problems found by Jason while reviewing #1945
 
-Issue created by migration from https://trac.sagemath.org/ticket/1953
-
-Original creator: cwitty
-
-Original creation time: 2008-01-27 22:05:53
-
+archive/issues_001953.json:
+```json
+{
+    "body": "Assignee: was\n\nJason found a couple of problems with calculus.py while reviewing #1945: a one-character typo and a duplicate method.  The attached patch fixes both problems.\n\nDoctests pass in sage/calculus/.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1953\n\n",
+    "created_at": "2008-01-27T22:05:53Z",
+    "labels": [
+        "calculus",
+        "minor",
+        "bug"
+    ],
+    "title": "[with patch] fix problems found by Jason while reviewing #1945",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1953",
+    "user": "cwitty"
+}
+```
 Assignee: was
 
 Jason found a couple of problems with calculus.py while reviewing #1945: a one-character typo and a duplicate method.  The attached patch fixes both problems.
@@ -13,8 +23,25 @@ Jason found a couple of problems with calculus.py while reviewing #1945: a one-c
 Doctests pass in sage/calculus/.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1953
+
+
+
+
 
 ---
+
+archive/issue_comments_012439.json:
+```json
+{
+    "body": "Attachment\n\nI think this patch is OK.\n\nI want to make one comment though.  With the previous version of this patch, if you made a new class that derives from CallableSymbolicExpressionRing_class and overload args, then arguments would automatically call the overloaded method.  Now it won't -- argument will give you the old method before overloading.  This isn't a problem since that's not done in calculus.py.  \n\nSo I give this a positive review.",
+    "created_at": "2008-01-27T22:17:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1953",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1953#issuecomment-12439",
+    "user": "was"
+}
+```
 
 Attachment
 
@@ -25,15 +52,37 @@ I want to make one comment though.  With the previous version of this patch, if 
 So I give this a positive review.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-27 22:25:45
+archive/issue_comments_012440.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-27T22:25:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1953",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1953#issuecomment-12440",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-27 22:25:45
+archive/issue_comments_012441.json:
+```json
+{
+    "body": "Merged in Sage 2.10.1.rc2",
+    "created_at": "2008-01-27T22:25:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1953",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1953#issuecomment-12441",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.1.rc2

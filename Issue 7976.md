@@ -1,11 +1,21 @@
 # Issue 7976: Extends __classcall__ to control inheritance
 
-Issue created by migration from https://trac.sagemath.org/ticket/7976
-
-Original creator: hivert
-
-Original creation time: 2010-01-18 13:03:46
-
+archive/issues_007976.json:
+```json
+{
+    "body": "Assignee: hivert\n\nCC:  sage-combinat\n\nKeywords: ClassCall inheritance\n\nThis patch extends `ClasscallMetaclass` so that one can control the call of a class trough two different static methods:\n\n- `__classcall__` which behave as usual and is inherited\n- `__classcall__no_inherits` which is not called by derived classes\n\nIf both exists the latter is used.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7976\n\n",
+    "created_at": "2010-01-18T13:03:46Z",
+    "labels": [
+        "categories",
+        "major",
+        "enhancement"
+    ],
+    "title": "Extends __classcall__ to control inheritance",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7976",
+    "user": "hivert"
+}
+```
 Assignee: hivert
 
 CC:  sage-combinat
@@ -14,22 +24,48 @@ Keywords: ClassCall inheritance
 
 This patch extends `ClasscallMetaclass` so that one can control the call of a class trough two different static methods:
 
- - `__classcall__` which behave as usual and is inherited
- - `__classcall__no_inherits` which is not called by derived classes
+- `__classcall__` which behave as usual and is inherited
+- `__classcall__no_inherits` which is not called by derived classes
 
 If both exists the latter is used.
+
+Issue created by migration from https://trac.sagemath.org/ticket/7976
+
+
+
 
 
 ---
 
-Comment by hivert created at 2010-01-18 15:08:42
+archive/issue_comments_069580.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-01-18T15:08:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7976",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7976#issuecomment-69580",
+    "user": "hivert"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by nthiery created at 2010-01-18 22:06:36
+archive/issue_comments_069581.json:
+```json
+{
+    "body": "Thanks Florent, and thanks for using this occasion to cleanup my code!\n\nCan you fix the copyright dates? Mine should be 2009, and yours 2010\n\nI like the idea of using Python's standard convention for private attributes; on the other hand, I am a bit worried about emulating Python's mechanism. In particular, we could eventually get in trouble with the class name hacking we do for pickling:\n\n```\n   sage: Sets.ParentMethods.__name__\n   'Sets.ParentMethods'\n```\n\nI haven't found a way to *use* Python mechanism. So instead, what about using ``__classcall_private__``, and doing the test with '__classcall_private__' in cls.__dict__?\n\n(I also prefer ``private`` to ``no_inherit``).\n\nCheers,",
+    "created_at": "2010-01-18T22:06:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7976",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7976#issuecomment-69581",
+    "user": "nthiery"
+}
+```
 
 Thanks Florent, and thanks for using this occasion to cleanup my code!
 
@@ -49,30 +85,74 @@ I haven't found a way to *use* Python mechanism. So instead, what about using ``
 Cheers,
 
 
+
 ---
 
-Comment by nthiery created at 2010-01-18 22:06:36
+archive/issue_comments_069582.json:
+```json
+{
+    "body": "Changing keywords from \"ClassCall inheritance\" to \"ClassCall, inheritance\".",
+    "created_at": "2010-01-18T22:06:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7976",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7976#issuecomment-69582",
+    "user": "nthiery"
+}
+```
 
 Changing keywords from "ClassCall inheritance" to "ClassCall, inheritance".
 
 
+
 ---
 
-Comment by nthiery created at 2010-01-18 22:06:36
+archive/issue_comments_069583.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-01-18T22:06:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7976",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7976#issuecomment-69583",
+    "user": "nthiery"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by hivert created at 2010-01-19 05:11:40
+archive/issue_comments_069584.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-01-19T05:11:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7976",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7976#issuecomment-69584",
+    "user": "hivert"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by hivert created at 2010-01-19 05:11:40
+archive/issue_comments_069585.json:
+```json
+{
+    "body": "Replying to [comment:2 nthiery]:\n> Thanks Florent, and thanks for using this occasion to cleanup my code!\n> \n> Can you fix the copyright dates? Mine should be 2009, and yours 2010\n> \n> [...]\n> So instead, what about using ``__classcall_private__``, and doing the test with '__classcall_private__' in cls.__dict__?\n> \n> (I also prefer ``private`` to ``no_inherit``).\n\nI just uploaded a new patch which addresses all these remarks... Please re-review.",
+    "created_at": "2010-01-19T05:11:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7976",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7976#issuecomment-69585",
+    "user": "hivert"
+}
+```
 
 Replying to [comment:2 nthiery]:
 > Thanks Florent, and thanks for using this occasion to cleanup my code!
@@ -87,26 +167,74 @@ Replying to [comment:2 nthiery]:
 I just uploaded a new patch which addresses all these remarks... Please re-review.
 
 
+
 ---
+
+archive/issue_comments_069586.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-01-19T09:05:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7976",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7976#issuecomment-69586",
+    "user": "nthiery"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by nthiery created at 2010-01-19 09:07:55
+archive/issue_comments_069587.json:
+```json
+{
+    "body": "Please double check the quick review patch, and add '#7976:' in front of the patch description, and it's good to go!",
+    "created_at": "2010-01-19T09:07:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7976",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7976#issuecomment-69587",
+    "user": "nthiery"
+}
+```
 
 Please double check the quick review patch, and add '#7976:' in front of the patch description, and it's good to go!
 
 
+
 ---
 
-Comment by hivert created at 2010-01-19 11:50:38
+archive/issue_comments_069588.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-01-19T11:50:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7976",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7976#issuecomment-69588",
+    "user": "hivert"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
+
+archive/issue_comments_069589.json:
+```json
+{
+    "body": "Attachment\n\nReplying to [comment:4 nthiery]:\n> Please double check the quick review patch, and add '#7976:' in front of the patch description, and it's good to go!\n\nI added '#7976:' and re-uploaded the patch. Thanks for the improvement of the doc. Your review patch is ok => positive review.",
+    "created_at": "2010-01-19T11:50:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7976",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7976#issuecomment-69589",
+    "user": "hivert"
+}
+```
 
 Attachment
 
@@ -116,18 +244,40 @@ Replying to [comment:4 nthiery]:
 I added '#7976:' and re-uploaded the patch. Thanks for the improvement of the doc. Your review patch is ok => positive review.
 
 
+
 ---
 
-Comment by mvngu created at 2010-01-22 23:27:17
+archive/issue_comments_069590.json:
+```json
+{
+    "body": "Merged in this order:\n\n1. [trac_7976-classcall_no_inherits-fh.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7976/trac_7976-classcall_no_inherits-fh.patch)\n2. [trac_7976-classcall_no_inherits-review-nt.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7976/trac_7976-classcall_no_inherits-review-nt.patch)",
+    "created_at": "2010-01-22T23:27:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7976",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7976#issuecomment-69590",
+    "user": "mvngu"
+}
+```
 
 Merged in this order:
 
- 1. [trac_7976-classcall_no_inherits-fh.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7976/trac_7976-classcall_no_inherits-fh.patch)
- 1. [trac_7976-classcall_no_inherits-review-nt.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7976/trac_7976-classcall_no_inherits-review-nt.patch)
+1. [trac_7976-classcall_no_inherits-fh.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7976/trac_7976-classcall_no_inherits-fh.patch)
+2. [trac_7976-classcall_no_inherits-review-nt.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7976/trac_7976-classcall_no_inherits-review-nt.patch)
+
 
 
 ---
 
-Comment by mvngu created at 2010-01-22 23:27:17
+archive/issue_comments_069591.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-22T23:27:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7976",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7976#issuecomment-69591",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 7850: spherical plot
 
-Issue created by migration from https://trac.sagemath.org/ticket/7850
-
-Original creator: olazo
-
-Original creation time: 2010-01-05 18:06:16
-
+archive/issues_007850.json:
+```json
+{
+    "body": "Assignee: was\n\nKeywords: spherical,plot\n\nI've made a clone of Mathematicas SphericalPlot3d . Only that the 3d seemed redundant to me.\n\nThe code is\n\n```\nvar('phi,theta')\ndef spherical_plot(f,phiran=(phi,0,2*pi),thetaran=(theta,0,pi),**kwds):\n   phi=phiran[0]\n   phi0=phiran[1]\n   phif=phiran[2]\n   theta=thetaran[0]\n   theta0=thetaran[1]\n   thetaf=thetaran[2]\n   Rho=(f*cos(phi)*sin(theta),f*sin(phi)*sin(theta),f*cos(theta))\n   return parametric_plot3d(Rho,(phi,phi0,phif),(theta,theta0,thetaf),**kwds) \n```\n\n\nSeveral examples can be found in [http://www.sagenb.org/pub/1319/](http://www.sagenb.org/pub/1319/)\n\nI've been suggested to eliminate the dependence on the 'phi' and 'theta' variables. I quite agree that that would be good, but I can't figure how to do it.\n\nAlso, I think I might generalize this into any sort of transform plot. But let's first see how this works out. Especially the variable dependency\n\nIssue created by migration from https://trac.sagemath.org/ticket/7850\n\n",
+    "created_at": "2010-01-05T18:06:16Z",
+    "labels": [
+        "graphics",
+        "minor",
+        "enhancement"
+    ],
+    "title": "spherical plot",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7850",
+    "user": "olazo"
+}
+```
 Assignee: was
 
 Keywords: spherical,plot
@@ -34,10 +44,25 @@ I've been suggested to eliminate the dependence on the 'phi' and 'theta' variabl
 
 Also, I think I might generalize this into any sort of transform plot. But let's first see how this works out. Especially the variable dependency
 
+Issue created by migration from https://trac.sagemath.org/ticket/7850
+
+
+
+
 
 ---
 
-Comment by jason created at 2010-01-05 22:44:12
+archive/issue_comments_067995.json:
+```json
+{
+    "body": "Here is a rough cut of a generic function: http://sagenb.org/home/pub/1322/\n\n\n```\n# TODO: figure out a way to determine if f is an expression or callable symbolic function for the if statement.\n\ndef make_coordinate_plot3d(transformation, function_variable,parameter_variables):\n   def new_plot(f, var1_range, var2_range,**kwds):\n       f_is_expression=True\n       \n       if f_is_expression:\n           # if f is an expression, then we can use .subs.  This is faster, because parametric_plot3d\n           # can then use fast_float\n           if len(var1_range)==3:\n               vars=[var1_range[0], var2_range[0]]\n           else:\n               vars=sage.symbolic.ring.var('v1,v2')\n           plot_func=[t.subs({function_variable:f, parameter_variables[0]:vars[0], parameter_variables[1]:vars[1]})\n                       for t in transformation]\n       else:\n           # if f is not a symbolic expression or function, use the following\n           # We could make this faster by using fast_float on the components of transformation\n           # We need to do the function and map instead of just a list comprehension because\n           # of python scoping; see http://lackingrhoticity.blogspot.com/2009/04/python-variable-binding-semantics-part.html\n           def subs_func(t):\n               return lambda x,y: t.subs({function_variable:f(x,y), parameter_variables[0]:x, parameter_variables[1]:y})\n           plot_func=map(subs_func,transformation)\n\n       return parametric_plot3d(plot_func, var1_range, var2_range,**kwds)\n   return new_plot \n\n \t\nvar('r,t,p') \njason_spherical_plot3d=make_coordinate_plot3d([r*cos(t)*sin(p), r*sin(t)*sin(p), r*cos(p)], function_variable=r, parameter_variables=[t,p]) \n\n```\n",
+    "created_at": "2010-01-05T22:44:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7850",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7850#issuecomment-67995",
+    "user": "jason"
+}
+```
 
 Here is a rough cut of a generic function: http://sagenb.org/home/pub/1322/
 
@@ -78,9 +103,20 @@ jason_spherical_plot3d=make_coordinate_plot3d([r*cos(t)*sin(p), r*sin(t)*sin(p),
 
 
 
+
 ---
 
-Comment by jason created at 2010-01-06 07:14:33
+archive/issue_comments_067996.json:
+```json
+{
+    "body": "Here's the relevant sage-devel thread: http://groups.google.com/group/sage-devel/browse_thread/thread/8e38cdd8048eb39c\n\nThanks again for working on this!\n\nHere are some comments about the implementation up at http://www.sagenb.org/home/pub/1323/, just based on reading the code.\n\n1. To be consistent with the plotting functions, it would also need to support something like:\n\n\n```\nspherical_plot3d(lambda x,y: x+y, (0,2*pi), (0,pi))\n```\n\n\nThat's the purpose behind the convoluted second half of the make_coordinate_plot3d function (because symbolic functions can't be multiplied by lambda functions).\n\n2. It's better to use \"zran is None\" rather than \"zran==None\".  It's a much faster test.\n\n3. There is still some dependence on variable names if the variable name is not specified.  This should give an error, or at least a deprecation warning, as it is no longer a supported syntax for plotting:\n\n\n```\nspherical_plot3d(phi*theta, (0,2*pi),(0,pi))\n```\n\n\n(note that the expression has two variables, but I haven't said which variable corresponds to which range.  This is particularly confusing with spherical plots, since there are two opposite conventions.\n\n4. except statements should catch specific exceptions (e.g., \"except ValueError\"), instead of just triggering on any error.\n\n5. I'm not sure there's any difference between the transform_plot3d and just plainly calling parametric_plot3d.  transform_plot3d seems to just basically be a rename of parametric_plot3d.",
+    "created_at": "2010-01-06T07:14:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7850",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7850#issuecomment-67996",
+    "user": "jason"
+}
+```
 
 Here's the relevant sage-devel thread: http://groups.google.com/group/sage-devel/browse_thread/thread/8e38cdd8048eb39c
 
@@ -115,48 +151,127 @@ spherical_plot3d(phi*theta, (0,2*pi),(0,pi))
 5. I'm not sure there's any difference between the transform_plot3d and just plainly calling parametric_plot3d.  transform_plot3d seems to just basically be a rename of parametric_plot3d.
 
 
+
 ---
 
-Comment by olazo created at 2010-01-07 19:01:15
+archive/issue_comments_067997.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-01-07T19:01:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7850",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7850#issuecomment-67997",
+    "user": "olazo"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by olazo created at 2010-01-07 19:08:57
+archive/issue_comments_067998.json:
+```json
+{
+    "body": "Changing assignee from was to olazo.",
+    "created_at": "2010-01-07T19:08:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7850",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7850#issuecomment-67998",
+    "user": "olazo"
+}
+```
 
 Changing assignee from was to olazo.
 
 
+
 ---
 
-Comment by olazo created at 2010-01-07 19:12:41
+archive/issue_comments_067999.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-01-07T19:12:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7850",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7850#issuecomment-67999",
+    "user": "olazo"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by jason created at 2010-01-07 19:18:48
+archive/issue_comments_068000.json:
+```json
+{
+    "body": "See also #7850 for a cylindrical plotting function",
+    "created_at": "2010-01-07T19:18:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7850",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7850#issuecomment-68000",
+    "user": "jason"
+}
+```
 
 See also #7850 for a cylindrical plotting function
 
 
+
 ---
 
-Comment by olazo created at 2010-01-13 01:09:17
+archive/issue_comments_068001.json:
+```json
+{
+    "body": "a proposal for a docstring",
+    "created_at": "2010-01-13T01:09:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7850",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7850#issuecomment-68001",
+    "user": "olazo"
+}
+```
 
 a proposal for a docstring
 
 
+
 ---
 
-Comment by olazo created at 2010-01-24 19:35:42
+archive/issue_comments_068002.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2010-01-24T19:35:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7850",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7850#issuecomment-68002",
+    "user": "olazo"
+}
+```
 
 Resolution: invalid
 
 
+
 ---
+
+archive/issue_comments_068003.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-01-24T19:35:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7850",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7850#issuecomment-68003",
+    "user": "olazo"
+}
+```
 
 Attachment

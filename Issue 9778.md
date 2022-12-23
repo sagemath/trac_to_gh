@@ -1,24 +1,62 @@
 # Issue 9778: Grotzsch graph and Mycielski graphs
 
-Issue created by migration from https://trac.sagemath.org/ticket/9779
-
-Original creator: edward.scheinerman
-
-Original creation time: 2010-08-22 00:48:00
-
+archive/issues_009778.json:
+```json
+{
+    "body": "Assignee: jason, ncohen, rlm\n\nAdded methods to create the Grotzsch graph and the Mycielski graphs. The Mycielski graphs are a sequence of triangle-free graphs with arbitrarily high chromatic number. The Grotzsch graph is (isomorphic to) the fourth graph in this series; it it triangle-free and has chromatic number equal to 4.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9779\n\n",
+    "created_at": "2010-08-22T00:48:00Z",
+    "labels": [
+        "graph theory",
+        "major",
+        "enhancement"
+    ],
+    "title": "Grotzsch graph and Mycielski graphs",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9778",
+    "user": "edward.scheinerman"
+}
+```
 Assignee: jason, ncohen, rlm
 
 Added methods to create the Grotzsch graph and the Mycielski graphs. The Mycielski graphs are a sequence of triangle-free graphs with arbitrarily high chromatic number. The Grotzsch graph is (isomorphic to) the fourth graph in this series; it it triangle-free and has chromatic number equal to 4.
 
+Issue created by migration from https://trac.sagemath.org/ticket/9779
+
+
+
+
 
 ---
 
-Comment by ncohen created at 2010-09-03 20:18:47
+archive/issue_comments_095959.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-09-03T20:18:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9778",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9778#issuecomment-95959",
+    "user": "ncohen"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_095960.json:
+```json
+{
+    "body": "Attachment\n\nHello !!!\n\nNice patch ! Nothing to complain about, and they bring nice additions to Sage `:-)`\n\nI uploaded a (very short) patch with very small modifications. As usual, I give a positive review to your patch, and you can change the status of this ticket if you like mine `:-)`\n\n(btw, don't forget to set your tickets as \"needing review\" when you have uploaded your patch !)\n\nNathann",
+    "created_at": "2010-09-03T20:18:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9778",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9778#issuecomment-95960",
+    "user": "ncohen"
+}
+```
 
 Attachment
 
@@ -33,23 +71,56 @@ I uploaded a (very short) patch with very small modifications. As usual, I give 
 Nathann
 
 
+
 ---
 
-Comment by edward.scheinerman created at 2010-09-03 20:34:55
+archive/issue_comments_095961.json:
+```json
+{
+    "body": "Nathann: The edits you made are fine. Thanks. I set this to \"positive review\". What's next? -Ed",
+    "created_at": "2010-09-03T20:34:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9778",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9778#issuecomment-95961",
+    "user": "edward.scheinerman"
+}
+```
 
 Nathann: The edits you made are fine. Thanks. I set this to "positive review". What's next? -Ed
 
 
+
 ---
 
-Comment by edward.scheinerman created at 2010-09-03 20:34:55
+archive/issue_comments_095962.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-09-03T20:34:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9778",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9778#issuecomment-95962",
+    "user": "edward.scheinerman"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by ncohen created at 2010-09-03 21:05:44
+archive/issue_comments_095963.json:
+```json
+{
+    "body": "> Nathann: The edits you made are fine. Thanks. I set this to \"positive review\". What's next? -Ed\nPeacefully waiting for the release managers to find it ? `:-)`\n\nNathann",
+    "created_at": "2010-09-03T21:05:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9778",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9778#issuecomment-95963",
+    "user": "ncohen"
+}
+```
 
 > Nathann: The edits you made are fine. Thanks. I set this to "positive review". What's next? -Ed
 Peacefully waiting for the release managers to find it ? `:-)`
@@ -57,87 +128,238 @@ Peacefully waiting for the release managers to find it ? `:-)`
 Nathann
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-05 03:47:41
+archive/issue_comments_095964.json:
+```json
+{
+    "body": "Could someone prepend the ticket number to the commit string for [attachment:trac_9779.patch] (and restore the status to \"positive review\")?",
+    "created_at": "2010-09-05T03:47:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9778",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9778#issuecomment-95964",
+    "user": "mpatel"
+}
+```
 
 Could someone prepend the ticket number to the commit string for [attachment:trac_9779.patch] (and restore the status to "positive review")?
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-05 03:47:41
+archive/issue_comments_095965.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_work.",
+    "created_at": "2010-09-05T03:47:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9778",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9778#issuecomment-95965",
+    "user": "mpatel"
+}
+```
 
 Changing status from positive_review to needs_work.
 
 
+
 ---
+
+archive/issue_comments_095966.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-09-06T00:36:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9778",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9778#issuecomment-95966",
+    "user": "edward.scheinerman"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_095967.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-09-06T00:37:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9778",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9778#issuecomment-95967",
+    "user": "edward.scheinerman"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by edward.scheinerman created at 2010-09-06 00:39:17
+archive/issue_comments_095968.json:
+```json
+{
+    "body": "Changing status from needs_work to positive_review.",
+    "created_at": "2010-09-06T00:39:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9778",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9778#issuecomment-95968",
+    "user": "edward.scheinerman"
+}
+```
 
 Changing status from needs_work to positive_review.
 
 
+
 ---
 
-Comment by edward.scheinerman created at 2010-09-06 00:39:17
+archive/issue_comments_095969.json:
+```json
+{
+    "body": "Patch commit string edited as requested. (Please ignore trac_9779.2.patch ... it's identical to trac_9779.patch.)",
+    "created_at": "2010-09-06T00:39:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9778",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9778#issuecomment-95969",
+    "user": "edward.scheinerman"
+}
+```
 
 Patch commit string edited as requested. (Please ignore trac_9779.2.patch ... it's identical to trac_9779.patch.)
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-18 07:42:26
+archive/issue_comments_095970.json:
+```json
+{
+    "body": "Could someone rebase the patch(es) here against 4.6.alpha1 when it's released (soon) and restore the positive review?",
+    "created_at": "2010-09-18T07:42:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9778",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9778#issuecomment-95970",
+    "user": "mpatel"
+}
+```
 
 Could someone rebase the patch(es) here against 4.6.alpha1 when it's released (soon) and restore the positive review?
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-18 07:42:26
+archive/issue_comments_095971.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_work.",
+    "created_at": "2010-09-18T07:42:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9778",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9778#issuecomment-95971",
+    "user": "mpatel"
+}
+```
 
 Changing status from positive_review to needs_work.
 
 
+
 ---
+
+archive/issue_comments_095972.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-09-20T18:43:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9778",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9778#issuecomment-95972",
+    "user": "edward.scheinerman"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by edward.scheinerman created at 2010-09-20 18:45:42
+archive/issue_comments_095973.json:
+```json
+{
+    "body": "Changing status from needs_work to positive_review.",
+    "created_at": "2010-09-20T18:45:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9778",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9778#issuecomment-95973",
+    "user": "edward.scheinerman"
+}
+```
 
 Changing status from needs_work to positive_review.
 
 
+
 ---
 
-Comment by edward.scheinerman created at 2010-09-20 18:45:42
+archive/issue_comments_095974.json:
+```json
+{
+    "body": "I rebased the patch (I hope I did this correctly!).  -Ed",
+    "created_at": "2010-09-20T18:45:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9778",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9778#issuecomment-95974",
+    "user": "edward.scheinerman"
+}
+```
 
 I rebased the patch (I hope I did this correctly!).  -Ed
 
 
+
 ---
+
+archive/issue_comments_095975.json:
+```json
+{
+    "body": "Attachment\n\nRebased for a working 4.6.alpha2.  Apply only this patch.",
+    "created_at": "2010-09-29T09:27:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9778",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9778#issuecomment-95975",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
 Rebased for a working 4.6.alpha2.  Apply only this patch.
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-29 09:33:33
+archive/issue_comments_095976.json:
+```json
+{
+    "body": "I've attached a patch rebased against a working 4.6.alpha2.  This fixes a reject in `sage/graphs/graph_generators.py.rej`:\n\n```diff\n--- graph_generators.py\n+++ graph_generators.py\n@@ -196,6 +199,8 @@\n - Harald Schilly and Yann Laigle-Chapuy (2010-03-24): added Fibonacci Tree\n \n - Jason Grout (2010-06-04): cospectral_graphs\n+\n+- Ed Scheinerman (2010-08-21): added Grotzsch graph and Mycielski graphs \n \"\"\"\n \n ###########################################################################\n```\n",
+    "created_at": "2010-09-29T09:33:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9778",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9778#issuecomment-95976",
+    "user": "mpatel"
+}
+```
 
 I've attached a patch rebased against a working 4.6.alpha2.  This fixes a reject in `sage/graphs/graph_generators.py.rej`:
 
@@ -157,16 +379,38 @@ I've attached a patch rebased against a working 4.6.alpha2.  This fixes a reject
 
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-29 10:48:17
+archive/issue_comments_095977.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-09-29T10:48:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9778",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9778#issuecomment-95977",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by ncohen created at 2010-09-29 11:54:52
+archive/issue_comments_095978.json:
+```json
+{
+    "body": "Thank you !\n\nNathann",
+    "created_at": "2010-09-29T11:54:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9778",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9778#issuecomment-95978",
+    "user": "ncohen"
+}
+```
 
 Thank you !
 

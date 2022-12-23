@@ -1,11 +1,21 @@
 # Issue 5568: [with patch, needs review] a few latex methods
 
-Issue created by migration from https://trac.sagemath.org/ticket/5568
-
-Original creator: jhpalmieri
-
-Original creation time: 2009-03-19 17:59:55
-
+archive/issues_005568.json:
+```json
+{
+    "body": "Assignee: jhpalmieri\n\nTwo issues: QQbar doesn't seem to have a latex method. Also, the latex method for CC is \"\\\\C\", which is not a valid LaTeX command. For example, if I type \"view(CC)\" in the notebook, jsmath gives an error, and if I type \"view(CC)\" from the command line, I get a blank page.\n\nThis patch provides a latex method for QQbar and changes the latex method for CC (note that it uses `\\mathbf`, just as the latex methods for RR, ZZ, and QQ do).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5568\n\n",
+    "created_at": "2009-03-19T17:59:55Z",
+    "labels": [
+        "misc",
+        "trivial",
+        "bug"
+    ],
+    "title": "[with patch, needs review] a few latex methods",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5568",
+    "user": "jhpalmieri"
+}
+```
 Assignee: jhpalmieri
 
 Two issues: QQbar doesn't seem to have a latex method. Also, the latex method for CC is "\\C", which is not a valid LaTeX command. For example, if I type "view(CC)" in the notebook, jsmath gives an error, and if I type "view(CC)" from the command line, I get a blank page.
@@ -13,17 +23,45 @@ Two issues: QQbar doesn't seem to have a latex method. Also, the latex method fo
 This patch provides a latex method for QQbar and changes the latex method for CC (note that it uses `\mathbf`, just as the latex methods for RR, ZZ, and QQ do).
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5568
+
+
+
+
 
 ---
+
+archive/issue_comments_043389.json:
+```json
+{
+    "body": "Attachment\n\nLooks good.  Positive review.",
+    "created_at": "2009-03-25T03:25:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5568",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5568#issuecomment-43389",
+    "user": "rbeezer"
+}
+```
 
 Attachment
 
 Looks good.  Positive review.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-03-25 07:42:08
+archive/issue_comments_043390.json:
+```json
+{
+    "body": "Merged in Sage 3.4.1.alpha0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-03-25T07:42:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5568",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5568#issuecomment-43390",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.4.1.alpha0.
 
@@ -32,8 +70,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-03-25 07:42:08
+archive/issue_comments_043391.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-03-25T07:42:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5568",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5568#issuecomment-43391",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

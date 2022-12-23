@@ -1,11 +1,21 @@
 # Issue 3972: 3.1.2.alpha1: numerical noise in plot.py
 
-Issue created by migration from https://trac.sagemath.org/ticket/3972
-
-Original creator: mabshoff
-
-Original creation time: 2008-08-28 05:24:41
-
+archive/issues_003972.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\n\n```\n    sage: adaptive_refinement(sin, (0,0), (pi,0), adaptive_tolerance=0.01) \nExpected: \n    [(0.125000000000000*pi, 0.38268343236508978), \n(0.187500000000000*pi, 0.55557023301960218), (0.250000000000000*pi, \n0.707106781186547...), (0.312500000000000*pi, 0.83146961230254524), \n(0.375000000000000*pi, 0.92387953251128674), (0.437500000000000*pi, \n0.98078528040323043), (0.500000000000000*pi, 1.0), \n(0.562500000000000*pi, 0.98078528040323043), (0.625000000000000*pi, \n0.92387953251128674), (0.687500000000000*pi, 0.83146961230254546), \n(0.750000000000000*pi, 0.70710678118654757), (0.812500000000000*pi, \n0.55557023301960218), (0.875000000000000*pi, 0.38268343236508989)] \nGot: \n    [(0.125000000000000*pi, 0.38268343236508978), \n(0.187500000000000*pi, 0.55557023301960218), (0.250000000000000*pi, \n0.70710678118654746), (0.312500000000000*pi, 0.83146961230254524), \n(0.375000000000000*pi, 0.92387953251128674), (0.437500000000000*pi, \n0.98078528040323043), (0.500000000000000*pi, 1.0), \n(0.562500000000000*pi, 0.98078528040323043), (0.625000000000000*pi, \n0.92387953251128674), (0.687500000000000*pi, 0.83146961230254535), \n(0.750000000000000*pi, 0.70710678118654757), (0.812500000000000*pi, \n0.55557023301960218), (0.875000000000000*pi, 0.38268343236508989)] \n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3972\n\n",
+    "created_at": "2008-08-28T05:24:41Z",
+    "labels": [
+        "doctest coverage",
+        "blocker",
+        "bug"
+    ],
+    "title": "3.1.2.alpha1: numerical noise in plot.py",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3972",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 
@@ -38,10 +48,25 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/3972
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-08-29 09:06:58
+archive/issue_comments_028540.json:
+```json
+{
+    "body": "The problem is after cutting away all the identical output:\n\n```\nExpected:\n0.92387953251128674), (0.687500000000000*pi, 0.83146961230254546), \nGot:\n0.92387953251128674), (0.687500000000000*pi, 0.83146961230254535), \n```\n",
+    "created_at": "2008-08-29T09:06:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3972",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3972#issuecomment-28540",
+    "user": "mabshoff"
+}
+```
 
 The problem is after cutting away all the identical output:
 
@@ -54,27 +79,73 @@ Got:
 
 
 
+
 ---
+
+archive/issue_comments_028541.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-08-29T09:10:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3972",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3972#issuecomment-28541",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by craigcitro created at 2008-08-29 09:14:23
+archive/issue_comments_028542.json:
+```json
+{
+    "body": "Looks good.",
+    "created_at": "2008-08-29T09:14:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3972",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3972#issuecomment-28542",
+    "user": "craigcitro"
+}
+```
 
 Looks good.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-29 09:15:18
+archive/issue_comments_028543.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-08-29T09:15:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3972",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3972#issuecomment-28543",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-29 09:15:18
+archive/issue_comments_028544.json:
+```json
+{
+    "body": "Merged in Sage 3.1.2.alpha2",
+    "created_at": "2008-08-29T09:15:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3972",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3972#issuecomment-28544",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.1.2.alpha2

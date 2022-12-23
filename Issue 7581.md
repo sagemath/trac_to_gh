@@ -1,11 +1,21 @@
 # Issue 7581: use prCopyR to coerce multivariate polynomials in the simple case
 
-Issue created by migration from https://trac.sagemath.org/ticket/7581
-
-Original creator: malb
-
-Original creation time: 2009-12-02 11:47:01
-
+archive/issues_007581.json:
+```json
+{
+    "body": "Assignee: malb\n\nCC:  simonking\n\nMike Hansen wrote on [sage-devel]:\n\nThe following messages are probably relevant for the fast conversion\nbetween singular polynomial rings:\n\nOn Sat, Oct 18, 2008 at 2:55 AM, Michael Brickenstein\n<brickenstein`@`mfo.de> wrote:\n> In Singular the same thing is essentially done from the > interpreter\n> level by the more general command fetch.\n> I had a look, what it does internally and came to the conclusion,\n> that it just calls\n> poly prCopyR(poly p, ring src_r, ring dest_r)\n> in your simple case (same coefficient domains).\n> So first, you should setup a new ring and\n> then map the polynomial via\n> prCopyR\n>\n> Michael\n\nOn Mon, Oct 20, 2008 at 8:43 PM,  <hannes`@`mathematik.uni-kl.de> wrote:\n> if the monomial ordering is really the same,\n> you may also use\n> poly prCopyR_NoSort(poly p, ring src_r, ring dest_r)\n> which avoids the sorting the polynomial after mapping each monomial.\n> There are also corresponding routines for ideals\n> (ideal idrCopyR(ideal id, ring src_r, ring dest_r),\n> ideal idrCopyR_NoSort(ideal id, ring src_r, ring dest_r)\n> )\n>\n\nIssue created by migration from https://trac.sagemath.org/ticket/7581\n\n",
+    "created_at": "2009-12-02T11:47:01Z",
+    "labels": [
+        "commutative algebra",
+        "major",
+        "enhancement"
+    ],
+    "title": "use prCopyR to coerce multivariate polynomials in the simple case",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7581",
+    "user": "malb"
+}
+```
 Assignee: malb
 
 CC:  simonking
@@ -40,19 +50,47 @@ On Mon, Oct 20, 2008 at 8:43 PM,  <hannes`@`mathematik.uni-kl.de> wrote:
 > )
 >
 
+Issue created by migration from https://trac.sagemath.org/ticket/7581
+
+
+
+
 
 ---
+
+archive/issue_comments_064613.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-12-02T11:54:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7581",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7581#issuecomment-64613",
+    "user": "malb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by malb created at 2009-12-02 11:56:13
+archive/issue_comments_064614.json:
+```json
+{
+    "body": "The attached patch makes things slightly faster.\n\n**Before**\n\n```\nsage: R1 = PolynomialRing(QQ,'x',10001,order='lex')\nsage: R2 = PolynomialRing(QQ,'x',10002,order='deglex')\nsage: x10000 = R1('x10000')\nsage: %time a = R2(x10000)\nCPU times: user 5.77 s, sys: 0.18 s, total: 5.95 s\nWall time: 7.54 s\nsage: %time a = R2(x10000)\nCPU times: user 5.43 s, sys: 0.00 s, total: 5.43 s\nWall time: 5.59 s\n\nsage: x10001 = R2('x10001')\nsage: %time x10000 + x10001\nCPU times: user 16.87 s, sys: 0.00 s, total: 16.87 s\nWall time: 17.05 s\nx10000 + x10001\nsage: %time x10000 + x10001\nCPU times: user 5.43 s, sys: 0.00 s, total: 5.43 s\nWall time: 5.49 s\nx10000 + x10001\n```\n\n\n**After**\n\n```\nsage: R1 = PolynomialRing(QQ,'x',10001,order='lex')\nsage: R2 = PolynomialRing(QQ,'x',10002,order='deglex')\nsage: x10000 = R1('x10000')\nsage: %time a = R2(x10000)\nCPU times: user 1.18 s, sys: 0.16 s, total: 1.34 s\nWall time: 1.36 s\nsage: %time a = R2(x10000)\nCPU times: user 0.87 s, sys: 0.00 s, total: 0.87 s\nWall time: 0.92 s\n\nsage: x10001 = R2('x10001')\nsage: %time x10000 + x10001\nCPU times: user 7.67 s, sys: 0.00 s, total: 7.67 s\nWall time: 7.77 s\nx10000 + x10001\nsage: %time x10000 + x10001\nCPU times: user 0.86 s, sys: 0.00 s, total: 0.87 s\nWall time: 0.91 s\nx10000 + x10001\n```\n\n\nI haven't run doctests yet.",
+    "created_at": "2009-12-02T11:56:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7581",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7581#issuecomment-64614",
+    "user": "malb"
+}
+```
 
 The attached patch makes things slightly faster.
 
-*Before*
+**Before**
 
 ```
 sage: R1 = PolynomialRing(QQ,'x',10001,order='lex')
@@ -77,7 +115,7 @@ x10000 + x10001
 ```
 
 
-*After*
+**After**
 
 ```
 sage: R1 = PolynomialRing(QQ,'x',10001,order='lex')
@@ -105,23 +143,56 @@ x10000 + x10001
 I haven't run doctests yet.
 
 
+
 ---
 
-Comment by malb created at 2009-12-02 11:56:13
+archive/issue_comments_064615.json:
+```json
+{
+    "body": "Changing status from new to needs_work.",
+    "created_at": "2009-12-02T11:56:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7581",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7581#issuecomment-64615",
+    "user": "malb"
+}
+```
 
 Changing status from new to needs_work.
 
 
+
 ---
 
-Comment by malb created at 2009-12-02 11:58:52
+archive/issue_comments_064616.json:
+```json
+{
+    "body": "The patch depends on #7577 (I'll provide an alternative patch soon)",
+    "created_at": "2009-12-02T11:58:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7581",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7581#issuecomment-64616",
+    "user": "malb"
+}
+```
 
 The patch depends on #7577 (I'll provide an alternative patch soon)
 
 
+
 ---
 
-Comment by SimonKing created at 2009-12-02 12:00:10
+archive/issue_comments_064617.json:
+```json
+{
+    "body": "Replying to [comment:1 malb]:\n> The attached patch makes things slightly faster.\n\n\"Slightly\"?? It's amazing! Hopefully I'll find the time for a proper review soon.",
+    "created_at": "2009-12-02T12:00:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7581",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7581#issuecomment-64617",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:1 malb]:
 > The attached patch makes things slightly faster.
@@ -129,9 +200,20 @@ Replying to [comment:1 malb]:
 "Slightly"?? It's amazing! Hopefully I'll find the time for a proper review soon.
 
 
+
 ---
 
-Comment by malb created at 2009-12-02 12:08:36
+archive/issue_comments_064618.json:
+```json
+{
+    "body": "Replying to [comment:3 SimonKing]:\n> \"Slightly\"?? It's amazing! Hopefully I'll find the time for a proper review soon.\n\n:) It still sucks that adding two variables takes close to second. But Singular uses a dense representation for monomials and thus there isn't that much we can do. For your review, try to find corner cases where things go wrong (I'll do the same of course).",
+    "created_at": "2009-12-02T12:08:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7581",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7581#issuecomment-64618",
+    "user": "malb"
+}
+```
 
 Replying to [comment:3 SimonKing]:
 > "Slightly"?? It's amazing! Hopefully I'll find the time for a proper review soon.
@@ -139,16 +221,38 @@ Replying to [comment:3 SimonKing]:
 :) It still sucks that adding two variables takes close to second. But Singular uses a dense representation for monomials and thus there isn't that much we can do. For your review, try to find corner cases where things go wrong (I'll do the same of course).
 
 
+
 ---
 
-Comment by malb created at 2009-12-02 12:19:33
+archive/issue_comments_064619.json:
+```json
+{
+    "body": "Doctests in 4.3.alpha0 pass on sage.math",
+    "created_at": "2009-12-02T12:19:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7581",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7581#issuecomment-64619",
+    "user": "malb"
+}
+```
 
 Doctests in 4.3.alpha0 pass on sage.math
 
 
+
 ---
 
-Comment by SimonKing created at 2009-12-03 09:40:27
+archive/issue_comments_064620.json:
+```json
+{
+    "body": "Sorry, but neither of the patches applies to a fresh build of sage-4.3.alpha0.\n\nBut it could actually be that my sage-4.3.alpha0 has a problem. After building it, I did\n  ./sage -clone infinitepoly\nwaited 8 hours, but it wasn't finished. It seems that it hanged while trying to do the documentation. Eventually, I pressed Ctrl-C (was needed several times). \n\nThe clone seemed to work, though. But:\n\n```\nsage: hg_sage.import_patch('patches/singular_prcopyr_no7577.patch')\ncd \"/home/SimonKing/sandbox/sage-4.3.alpha0/devel/sage\" && hg status\n/home/SimonKing/sandbox/sage-4.3.alpha0/local/lib/python2.6/site-packages/sage/misc/hg.py:240: DeprecationWarning: os.popen3 is deprecated.  Use the subprocess module.\n  x = os.popen3(s)\ncd \"/home/SimonKing/sandbox/sage-4.3.alpha0/devel/sage\" && hg status\ncd \"/home/SimonKing/sandbox/sage-4.3.alpha0/devel/sage\" && hg import   \"/home/SimonKing/sandbox/patches/singular_prcopyr_no7577.patch\"\napplying /home/SimonKing/sandbox/patches/singular_prcopyr_no7577.patch\npatching file sage/libs/singular/singular-cdefs.pxi\nHunk #1 FAILED at 959\n1 out of 1 hunks FAILED -- saving rejects to file sage/libs/singular/singular-cdefs.pxi.rej\nabort: patch failed to apply\n```\n\n\nOK, back, ./sage -br main.\n\n\n```\nsage: hg_sage.import_patch('http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7581/singular_prcopyr.patch')\nAttempting to load remote file: http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7581/singular_prcopyr.patch\nLoading: [.]\ncd \"/home/SimonKing/sandbox/sage-4.3.alpha0/devel/sage\" && hg status\n/home/SimonKing/sandbox/sage-4.3.alpha0/local/lib/python2.6/site-packages/sage/misc/hg.py:240: DeprecationWarning: os.popen3 is deprecated.  Use the subprocess module.\n  x = os.popen3(s)\ncd \"/home/SimonKing/sandbox/sage-4.3.alpha0/devel/sage\" && hg status\ncd \"/home/SimonKing/sandbox/sage-4.3.alpha0/devel/sage\" && hg import   \"/home/SimonKing/.sage/temp/sage.math.washington.edu/13821/tmp_1.patch\"\nabort: outstanding uncommitted changes\n```\n\n\nOK, what are the changes?\n\n```\nsage: hg_sage.diff()\ncd \"/home/SimonKing/sandbox/sage-4.3.alpha0/devel/sage\" && hg diff  | less\n(END)\n```\n\n\nNo changes, then, but there are uncommitted changes. Frustrating.\n\nConclusion: I can not give a positive review, of course, but the problem seems to be deeper, so, it isn't \"needs work\" either. I'll mark it \"needs review\".",
+    "created_at": "2009-12-03T09:40:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7581",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7581#issuecomment-64620",
+    "user": "SimonKing"
+}
+```
 
 Sorry, but neither of the patches applies to a fresh build of sage-4.3.alpha0.
 
@@ -203,23 +307,56 @@ No changes, then, but there are uncommitted changes. Frustrating.
 Conclusion: I can not give a positive review, of course, but the problem seems to be deeper, so, it isn't "needs work" either. I'll mark it "needs review".
 
 
+
 ---
 
-Comment by SimonKing created at 2009-12-03 09:40:27
+archive/issue_comments_064621.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2009-12-03T09:40:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7581",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7581#issuecomment-64621",
+    "user": "SimonKing"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by malb created at 2009-12-03 10:09:09
+archive/issue_comments_064622.json:
+```json
+{
+    "body": "The repository in 4.3.alpha0 is borked, try `hg status`, it will point out two files which are missing. Then create those files (i.e. `touch /path/to/filename`) afterwards, importing should work.",
+    "created_at": "2009-12-03T10:09:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7581",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7581#issuecomment-64622",
+    "user": "malb"
+}
+```
 
 The repository in 4.3.alpha0 is borked, try `hg status`, it will point out two files which are missing. Then create those files (i.e. `touch /path/to/filename`) afterwards, importing should work.
 
 
+
 ---
 
-Comment by SimonKing created at 2009-12-03 13:59:44
+archive/issue_comments_064623.json:
+```json
+{
+    "body": "Hi Martin!\n\nReplying to [comment:7 malb]:\n> The repository in 4.3.alpha0 is borked, try `hg status`, it will point out two files which are missing. Then create those files (i.e. `touch /path/to/filename`) afterwards, importing should work.\n\nI followed the advices that [Minh](http://groups.google.com/group/sage-devel/browse_thread/thread/11f432ca0302189e) gave. However, there were problems applying the \"no7577\" patch. \n\nIt simply does not work.\n\n\n```\nsage: hg_sage.log()\nchangeset:   13375:44f70d431d43\ntag:         tip\nuser:        Mike Hansen <mhansen@gmail.com>\ndate:        Sat Nov 21 03:45:06 2009 -0800\nsummary:     4.3.alpha0\n...\n```\n\n\nSo, it is a fresh 4.3.alpha0\n\n\n```\nsage: hg_sage.status()\nGetting status of modified or unknown files:\ncd \"/home/SimonKing/sandbox/sage-4.3.alpha0FOOBAR/devel/sage\" && hg status\n\n---\n\nBranch: exp\n```\n\n\nSo, there are no uncommitted changes.\n\n\n```\nsage: hg_sage.import_patch('http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7581/singular_prcopyr_no7577.patch')\nAttempting to load remote file: http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7581/singular_prcopyr_no7577.patch\nLoading: [.]\ncd \"/home/SimonKing/sandbox/sage-4.3.alpha0FOOBAR/devel/sage\" && hg status\n/home/SimonKing/sandbox/sage-4.3.alpha0FOOBAR/local/lib/python2.6/site-packages/sage/misc/hg.py:240: DeprecationWarning: os.popen3 is deprecated.  Use the subprocess module.\n  x = os.popen3(s)\ncd \"/home/SimonKing/sandbox/sage-4.3.alpha0FOOBAR/devel/sage\" && hg status\ncd \"/home/SimonKing/sandbox/sage-4.3.alpha0FOOBAR/devel/sage\" && hg import   \"/home/SimonKing/.sage/temp/sage.math.washington.edu/22357/tmp_1.patch\"\napplying /home/SimonKing/.sage/temp/sage.math.washington.edu/22357/tmp_1.patch\npatching file sage/libs/singular/singular-cdefs.pxi\nHunk #1 FAILED at 959\n1 out of 1 hunks FAILED -- saving rejects to file sage/libs/singular/singular-cdefs.pxi.rej\nabort: patch failed to apply\n```\n\n\n:-/\n\nI don't see what I did wrong here. So, I guess it is \"needs work\".\n\nBest regards,\n\nSimon",
+    "created_at": "2009-12-03T13:59:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7581",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7581#issuecomment-64623",
+    "user": "SimonKing"
+}
+```
 
 Hi Martin!
 
@@ -285,20 +422,42 @@ Best regards,
 Simon
 
 
+
 ---
 
-Comment by SimonKing created at 2009-12-03 13:59:44
+archive/issue_comments_064624.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2009-12-03T13:59:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7581",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7581#issuecomment-64624",
+    "user": "SimonKing"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by SimonKing created at 2009-12-03 14:05:31
+archive/issue_comments_064625.json:
+```json
+{
+    "body": "I tried to modify the files manually, and I think I found the problem.\n\nApparently your version of sage/libs/singular/singular-cdefs.pxi that you based your patch on is *not* the version in sage-4.3.alpha0.\n\nNamely, sage/libs/singular/singular-cdefs.pxi only has 930 lines, while your patches start at line 963 and 973, respectively.\n\nSo, can you please provide a new patch?\n\nCheers,\n\nSimon",
+    "created_at": "2009-12-03T14:05:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7581",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7581#issuecomment-64625",
+    "user": "SimonKing"
+}
+```
 
 I tried to modify the files manually, and I think I found the problem.
 
-Apparently your version of sage/libs/singular/singular-cdefs.pxi that you based your patch on is _not_ the version in sage-4.3.alpha0.
+Apparently your version of sage/libs/singular/singular-cdefs.pxi that you based your patch on is *not* the version in sage-4.3.alpha0.
 
 Namely, sage/libs/singular/singular-cdefs.pxi only has 930 lines, while your patches start at line 963 and 973, respectively.
 
@@ -309,23 +468,58 @@ Cheers,
 Simon
 
 
+
 ---
+
+archive/issue_comments_064626.json:
+```json
+{
+    "body": "Attachment\n\nnext attempt",
+    "created_at": "2009-12-03T14:40:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7581",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7581#issuecomment-64626",
+    "user": "malb"
+}
+```
 
 Attachment
 
 next attempt
 
 
+
 ---
 
-Comment by malb created at 2009-12-03 14:41:31
+archive/issue_comments_064627.json:
+```json
+{
+    "body": "I've updated the patch. Hopefully, this one works.",
+    "created_at": "2009-12-03T14:41:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7581",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7581#issuecomment-64627",
+    "user": "malb"
+}
+```
 
 I've updated the patch. Hopefully, this one works.
 
 
+
 ---
 
-Comment by SimonKing created at 2009-12-03 15:34:29
+archive/issue_comments_064628.json:
+```json
+{
+    "body": "Replying to [comment:10 malb]:\n> I've updated the patch. Hopefully, this one works.\n\nIt applies!\n\nAnd I can confirm the improvement. I am now doing `sage -testall`.",
+    "created_at": "2009-12-03T15:34:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7581",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7581#issuecomment-64628",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:10 malb]:
 > I've updated the patch. Hopefully, this one works.
@@ -335,16 +529,38 @@ It applies!
 And I can confirm the improvement. I am now doing `sage -testall`.
 
 
+
 ---
 
-Comment by SimonKing created at 2009-12-03 16:34:25
+archive/issue_comments_064629.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2009-12-03T16:34:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7581",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7581#issuecomment-64629",
+    "user": "SimonKing"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by SimonKing created at 2009-12-03 16:34:25
+archive/issue_comments_064630.json:
+```json
+{
+    "body": "`sage -testall` passes. \n\nYour patch provides a strong improvement. However, genuine Singular is match faster:\n\n```\n> system(\"--ticks-per-sec\",1000);\n> ring r1 = 0, (x(1..10000)),dp;\n> poly p = x(10000);\n> ring r2 = 0, (x(1..10001)), dp;\n> int t = timer;\n> poly q1 = imap(r1,p);\n> timer-t;\n410\n> poly q2 = fetch(r1,p);\n> timer-t;\n430\n```\n\n\nSo, 0.41s for imap and only 0.02s for fetch, in a situation where (even with your patch) Sage needs 5.43s! And I think imap does exactly what one needs in element conversion -- I mean, take a variable from one ring and return the variable with the same name in another ring.\n\nIs it possible to wrap imap in libsingular? This would probably yield a drastic improvement (factor 10?).\n\nBut I guess this should be a different ticket, and since your patch does provide a good improvement, I give it a positive review.\n\nThere is no button for \"positive review\"? Well, I guess I first have to change it into \"needs review\", and then push the button...\n\nCheers,\nSimon",
+    "created_at": "2009-12-03T16:34:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7581",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7581#issuecomment-64630",
+    "user": "SimonKing"
+}
+```
 
 `sage -testall` passes. 
 
@@ -377,16 +593,38 @@ Cheers,
 Simon
 
 
+
 ---
 
-Comment by SimonKing created at 2009-12-03 16:34:39
+archive/issue_comments_064631.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-12-03T16:34:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7581",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7581#issuecomment-64631",
+    "user": "SimonKing"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by SimonKing created at 2009-12-03 16:45:29
+archive/issue_comments_064632.json:
+```json
+{
+    "body": "Replying to [comment:12 SimonKing]:\n...\n> So, 0.41s for imap and only 0.02s for fetch, in a situation where (even with your patch) Sage needs 5.43s! \n\nOops, I was copying the wrong number. With your patch, it is 1.18 s. However, it'd be great if this could be improved to, say, 0.5s.",
+    "created_at": "2009-12-03T16:45:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7581",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7581#issuecomment-64632",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:12 SimonKing]:
 ...
@@ -395,9 +633,20 @@ Replying to [comment:12 SimonKing]:
 Oops, I was copying the wrong number. With your patch, it is 1.18 s. However, it'd be great if this could be improved to, say, 0.5s.
 
 
+
 ---
 
-Comment by SimonKing created at 2009-12-03 16:54:01
+archive/issue_comments_064633.json:
+```json
+{
+    "body": "Replying to [comment:15 SimonKing]:\n> Replying to [comment:12 SimonKing]:\n> ...\n> > So, 0.41s for imap and only 0.02s for fetch, in a situation where (even with your patch) Sage needs 5.43s! \n> \n> Oops, I was copying the wrong number. With your patch, it is 1.18 s. However, it'd be great if this could be improved to, say, 0.5s.\n> \n\nDouble oops. I have my children in the office and am a bit distracted.\n\nOK.\n\nWe have \n\n```\n> system(\"--ticks-per-sec\",1000);\n> ring r1 = 0, (x(1..10000)),dp;\n> poly p = x(10000);\n> ring r2 = 0, (x(1..10001)), dp;\n> int t = timer;\n> imap(r1,p)+x(10001);\nx(10000)+x(10001)\n> timer-t;\n410\n```\n\n\nwhile we have (with your patch)\n\n```\nsage: R1 = PolynomialRing(QQ,'x',10001,order='deglex')\nsage: R2 = PolynomialRing(QQ,'x',10002,order='deglex')\nsage: x10000 = R1('x10000')\nsage: x10001 = R2('x10001')\nsage: %time R2(x10000) + x10001\nCPU times: user 0.74 s, sys: 0.00 s, total: 0.74 s\nWall time: 0.73 s\nx10000 + x10001\n```\n\n\nI think this is equivalent to what I did in Singular. In other words, your patch is not far from native Singular.\n\nThis confirms my positive review.\n\nCheers,\n\nSimon",
+    "created_at": "2009-12-03T16:54:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7581",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7581#issuecomment-64633",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:15 SimonKing]:
 > Replying to [comment:12 SimonKing]:
@@ -449,8 +698,19 @@ Cheers,
 Simon
 
 
+
 ---
 
-Comment by mhansen created at 2009-12-04 05:48:54
+archive/issue_comments_064634.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-12-04T05:48:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7581",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7581#issuecomment-64634",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

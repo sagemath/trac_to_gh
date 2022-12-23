@@ -1,11 +1,21 @@
 # Issue 2119: matlab matrix conversion issue
 
-Issue created by migration from https://trac.sagemath.org/ticket/2119
-
-Original creator: mabshoff
-
-Original creation time: 2008-02-08 19:45:40
-
+archive/issues_002119.json:
+```json
+{
+    "body": "Assignee: cwitty\n\nReported by Kate:\n\n```\na0 = matlab('eye(50)')\nsage: a1 = matrix(ZZ,a0)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/mabshoff/<ipython console> in <module>()\n\n/home/was/s/local/lib/python2.5/site-packages/sage/matrix/constructor.py in matrix(arg0, arg1, arg2, arg3, sparse)\n    287     \n    288     if hasattr(arg1, '_matrix_'):\n--> 289         return arg1._matrix_(arg0)\n    290 \n    291     if arg0 is None:\n\n/home/was/s/local/lib/python2.5/site-packages/sage/interfaces/matlab.py in _matrix_(self, R)\n    283         M = MatrixSpace(R, nrows, ncols)\n    284         v = sum([[x for x in w.split()] for w in v], [])\n--> 285         return M(v)\n    286 \n    287     def set(self, i, j, x):\n\n/home/was/s/local/lib/python2.5/site-packages/sage/matrix/matrix_space.py in __call__(self, entries, coerce, copy, rows)\n    352             return self(entries.matrix(), copy=False)\n    353 \n--> 354         return self.matrix(entries, copy=copy, coerce=coerce, rows=rows)\n    355 \n    356     def change_ring(self, R):\n\n/home/was/s/local/lib/python2.5/site-packages/sage/matrix/matrix_space.py in matrix(self, x, coerce, copy, rows)\n    965                 x = new_x\n    966             \n--> 967         return self.__matrix_class(self, entries=x, copy=copy, coerce=coerce) \n    968      \n    969     def matrix_space(self, nrows=None, ncols=None, sparse=False):\n\n/home/mabshoff/matrix_integer_dense.pyx in sage.matrix.matrix_integer_dense.Matrix_integer_dense.__init__()\n\n<type 'exceptions.TypeError'>: entries has the wrong length\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2119\n\n",
+    "created_at": "2008-02-08T19:45:40Z",
+    "labels": [
+        "misc",
+        "major",
+        "bug"
+    ],
+    "title": "matlab matrix conversion issue",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2119",
+    "user": "mabshoff"
+}
+```
 Assignee: cwitty
 
 Reported by Kate:
@@ -56,10 +66,25 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/2119
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-02-08 20:09:00
+archive/issue_comments_013888.json:
+```json
+{
+    "body": "Moreover there is also the following issue reported in the same thread:\n\n```\na00 = str(mathlab('mat2str(eye(50))'))\na01 = a00.replace(' ',',').replace(';','],[')\na02 = '[' + a01 = ']'\na03 = eval(a02)\na1 = matrix(zz,a03)\na2 = matlab.sage2matlab_matrix_string(a1)\na3 = 'm1 = ' + a2\nmatlab.eval(a3)     # crashes\n# Q: caused by \"maxread=100\" and/or \"eval_using_file_cutoff=100\"\n# in devel/sage-main/build/sage/interfaces/matlab.py ?\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2008-02-08T20:09:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2119",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2119#issuecomment-13888",
+    "user": "mabshoff"
+}
+```
 
 Moreover there is also the following issue reported in the same thread:
 
@@ -82,46 +107,103 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mhansen created at 2008-09-04 00:50:39
+archive/issue_comments_013889.json:
+```json
+{
+    "body": "Changing assignee from cwitty to mhansen.",
+    "created_at": "2008-09-04T00:50:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2119",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2119#issuecomment-13889",
+    "user": "mhansen"
+}
+```
 
 Changing assignee from cwitty to mhansen.
 
 
+
 ---
 
-Comment by mhansen created at 2008-09-04 00:50:39
+archive/issue_comments_013890.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-09-04T00:50:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2119",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2119#issuecomment-13890",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mhansen created at 2008-09-04 00:50:39
+archive/issue_comments_013891.json:
+```json
+{
+    "body": "The original bug is caused by things like 'Columns', '27', 'through', '39' appearing in the entries.",
+    "created_at": "2008-09-04T00:50:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2119",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2119#issuecomment-13891",
+    "user": "mhansen"
+}
+```
 
 The original bug is caused by things like 'Columns', '27', 'through', '39' appearing in the entries.
 
 
+
 ---
 
-Comment by mhansen created at 2010-01-17 05:44:19
+archive/issue_comments_013892.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-01-17T05:44:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2119",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2119#issuecomment-13892",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by rossk created at 2010-02-12 15:29:53
+archive/issue_comments_013893.json:
+```json
+{
+    "body": "Tried this on 2 platforms. First example is fixed by the patch i.e.\n\n```\nb0 = matlab('eye(50)')\nb1 = matrix(ZZ,b0)\n```\n \nbut the second example (note that 3 minor typos have been removed) is still broken but shouldnt be (i.e. the displaying/printing of variable a3 shows that a3 is a valid matlab expression). Is the reference to the \\x07 character mean \"BELL\" (a 'ding' made by PCs)? Note that if the following code uses eye(5) it works but with eye(6) it crashes with that x07 error.\n\n```\nsage: a00 = str(matlab('mat2str(eye(6))'))\nsage: a01 = a00.replace(' ',',').replace(';','],[')\nsage: a02 = '[' + a01 + ']'\nsage: a03 = eval(a02)\nsage: a1 = matrix(ZZ,a03)\nsage: a2 = matlab.sage2matlab_matrix_string(a1)\nsage: a3 = 'm1 = ' + a2\nsage: matlab.eval(a3)    \n'\\x07??? source(\"/home/rossk/.sage//temp/sage.math.washington.edu/31533//interface//tmp31533\");\\n           |\\nError: The input character is not valid in MATLAB statements or expressions.\\n'\nsage: a3\n'm1 = [1, 0, 0, 0, 0, 0; 0, 1, 0, 0, 0, 0; 0, 0, 1, 0, 0, 0; 0, 0, 0, 1, 0, 0; 0, 0, 0, 0, 1, 0; 0, 0, 0, 0, 0, 1]'\n```\n",
+    "created_at": "2010-02-12T15:29:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2119",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2119#issuecomment-13893",
+    "user": "rossk"
+}
+```
 
 Tried this on 2 platforms. First example is fixed by the patch i.e.
 
 ```
 b0 = matlab('eye(50)')
 b1 = matrix(ZZ,b0)
-}}} 
+```
+ 
 but the second example (note that 3 minor typos have been removed) is still broken but shouldnt be (i.e. the displaying/printing of variable a3 shows that a3 is a valid matlab expression). Is the reference to the \x07 character mean "BELL" (a 'ding' made by PCs)? Note that if the following code uses eye(5) it works but with eye(6) it crashes with that x07 error.
-{{{
+
+```
 sage: a00 = str(matlab('mat2str(eye(6))'))
 sage: a01 = a00.replace(' ',',').replace(';','],[')
 sage: a02 = '[' + a01 + ']'
@@ -133,67 +215,169 @@ sage: matlab.eval(a3)
 '\x07??? source("/home/rossk/.sage//temp/sage.math.washington.edu/31533//interface//tmp31533");\n           |\nError: The input character is not valid in MATLAB statements or expressions.\n'
 sage: a3
 'm1 = [1, 0, 0, 0, 0, 0; 0, 1, 0, 0, 0, 0; 0, 0, 1, 0, 0, 0; 0, 0, 0, 1, 0, 0; 0, 0, 0, 0, 1, 0; 0, 0, 0, 0, 0, 1]'
-}}}
+```
+
+
 
 
 ---
 
-Comment by rossk created at 2010-02-12 15:29:53
+archive/issue_comments_013894.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"matlab conversion\".",
+    "created_at": "2010-02-12T15:29:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2119",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2119#issuecomment-13894",
+    "user": "rossk"
+}
+```
 
 Changing keywords from "" to "matlab conversion".
 
 
+
 ---
 
-Comment by rossk created at 2010-02-12 15:29:53
+archive/issue_comments_013895.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-02-12T15:29:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2119",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2119#issuecomment-13895",
+    "user": "rossk"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
+
+archive/issue_comments_013896.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-07-11T00:44:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2119",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2119#issuecomment-13896",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2010-07-11 00:44:58
+archive/issue_comments_013897.json:
+```json
+{
+    "body": "I've posted a new patch which fixes the issue above.",
+    "created_at": "2010-07-11T00:44:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2119",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2119#issuecomment-13897",
+    "user": "mhansen"
+}
+```
 
 I've posted a new patch which fixes the issue above.
 
 
+
 ---
 
-Comment by mhansen created at 2010-07-11 00:44:58
+archive/issue_comments_013898.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-07-11T00:44:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2119",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2119#issuecomment-13898",
+    "user": "mhansen"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by rossk created at 2010-07-13 02:08:38
+archive/issue_comments_013899.json:
+```json
+{
+    "body": "Mike\n\nLooks good. The patch fixes the \\x07 issue and the matrices that crashed because they ran over multiple pages (if anything else is discovered with the matlab interface, it should go into a new ticket). Positive review.",
+    "created_at": "2010-07-13T02:08:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2119",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2119#issuecomment-13899",
+    "user": "rossk"
+}
+```
 
 Mike
 
 Looks good. The patch fixes the \x07 issue and the matrices that crashed because they ran over multiple pages (if anything else is discovered with the matlab interface, it should go into a new ticket). Positive review.
 
 
+
 ---
 
-Comment by rossk created at 2010-07-13 02:08:38
+archive/issue_comments_013900.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-07-13T02:08:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2119",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2119#issuecomment-13900",
+    "user": "rossk"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by ddrake created at 2010-07-22 07:28:53
+archive/issue_comments_013901.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-07-22T07:28:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2119",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2119#issuecomment-13901",
+    "user": "ddrake"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mpatel created at 2010-07-27 07:19:44
+archive/issue_comments_013902.json:
+```json
+{
+    "body": "Please see #9608 for docbuild warnings that may stem from this ticket.",
+    "created_at": "2010-07-27T07:19:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2119",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2119#issuecomment-13902",
+    "user": "mpatel"
+}
+```
 
 Please see #9608 for docbuild warnings that may stem from this ticket.

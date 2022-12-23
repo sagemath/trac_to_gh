@@ -1,11 +1,21 @@
 # Issue 6794: doctest failure in sage/sage/interfaces/rubik.py due to upgrade to Maxima 5.19.1
 
-Issue created by migration from https://trac.sagemath.org/ticket/6794
-
-Original creator: drkirkby
-
-Original creation time: 2009-08-21 07:12:24
-
+archive/issues_006794.json:
+```json
+{
+    "body": "Assignee: tbd\n\nKeywords: maxima\n\nOn Solaris (SPARC), the following tests failed. Both ECL and Maxima were updated - ECL version 9.8.4 (see trac #6564); Maxima version 5.19.1 (see trac #6699). Updated spkgs can be found here. \n\nhttp://sage.math.washington.edu/home/kirkby/Solaris-fixes/ecl-9.8.4/ecl-9.8.4.spkg\n\nhttp://sage.math.washington.edu/home/kirkby/Solaris-fixes/maxima-5.19.1/\n\n\n```\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nThu Aug 20 20:02:37 BST 2009\ndsage-trial tmp directory doesn't exist - creating ...\nThis script will run the unit tests for DSage\n```\n\n| Sage Version 4.1.1, Release Date: 2009-08-14                       |\n| Type notebook() for the GUI, and license() for information.        |\n<SNIP>\n\n```\nsage -t  \"devel/sage/sage/interfaces/rubik.py\"\n**********************************************************************\nFile \"/export/home/drkirkby/sage/sage-4.1.1/devel/sage/sage/interfaces/rubik.py\", line 136:\n    sage: solver.solve(C.facets())\nException raised:\n    Traceback (most recent call last):\n      File \"/export/home/drkirkby/sage/sage-4.1.1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/export/home/drkirkby/sage/sage-4.1.1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/export/home/drkirkby/sage/sage-4.1.1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_3[5]>\", line 1, in <module>\n        solver.solve(C.facets())###line 136:\n    sage: solver.solve(C.facets())\n      File \"/export/home/drkirkby/sage/sage-4.1.1/local/lib/python/site-packages/sage/interfaces/rubik.py\", line 254, in solve\n        child.expect('Initialization done!')\n      File \"/export/home/drkirkby/sage/sage-4.1.1/local/lib/python/site-packages/pexpect.py\", line 912, in expect\n        return self.expect_list(compiled_pattern_list, timeout, searchwindowsize)\n      File \"/export/home/drkirkby/sage/sage-4.1.1/local/lib/python/site-packages/pexpect.py\", line 989, in expect_list\n        raise TIMEOUT (str(e) + '\\n' + str(self))\n    TIMEOUT: Timeout exceeded in read_nonblocking().\n    <pexpect.spawn instance at 0x37b15a8>\n    version: 2.0 ($Revision: 1.151 $)\n    command: /export/home/drkirkby/sage/sage-4.1.1/local/bin/dikcube\n    args: ['/export/home/drkirkby/sage/sage-4.1.1/local/bin/dikcube', '-p']\n    patterns:\n        Initialization done!\n    buffer (last 100 chars):\n    before (last 100 chars): ialized = 24\n            Maxpath = 4\n        Done!\n        Initializing mixed...\n            Maxpath(c+s) = 14\n\n    after: <class 'pexpect.TIMEOUT'>\n    match: None\n    match_index: None\n    exitstatus: None\n    flag_eof: 0\n    pid: 19689\n    child_fd: 4\n    timeout: 30\n    delimiter: <class 'pexpect.EOF'>\n    logfile: None\n    maxread: 2000\n    searchwindowsize: None\n    delaybeforesend: 0.1\n**********************************************************************\nFile \"/export/home/drkirkby/sage/sage-4.1.1/devel/sage/sage/interfaces/rubik.py\", line 139:\n    sage: solver.solve(C.facets())\nException raised:\n    Traceback (most recent call last):\n      File \"/export/home/drkirkby/sage/sage-4.1.1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/export/home/drkirkby/sage/sage-4.1.1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/export/home/drkirkby/sage/sage-4.1.1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_3[7]>\", line 1, in <module>\n        solver.solve(C.facets())###line 139:\n    sage: solver.solve(C.facets())\n      File \"/export/home/drkirkby/sage/sage-4.1.1/local/lib/python/site-packages/sage/interfaces/rubik.py\", line 254, in solve\n        child.expect('Initialization done!')\n      File \"/export/home/drkirkby/sage/sage-4.1.1/local/lib/python/site-packages/pexpect.py\", line 912, in expect\n        return self.expect_list(compiled_pattern_list, timeout, searchwindowsize)\n      File \"/export/home/drkirkby/sage/sage-4.1.1/local/lib/python/site-packages/pexpect.py\", line 989, in expect_list\n        raise TIMEOUT (str(e) + '\\n' + str(self))\n    TIMEOUT: Timeout exceeded in read_nonblocking().\n    <pexpect.spawn instance at 0x37b17b0>\n    version: 2.0 ($Revision: 1.151 $)\n    command: /export/home/drkirkby/sage/sage-4.1.1/local/bin/dikcube\n    args: ['/export/home/drkirkby/sage/sage-4.1.1/local/bin/dikcube', '-p']\n    patterns:\n        Initialization done!\n    buffer (last 100 chars):\n    before (last 100 chars): ialized = 24\n            Maxpath = 4\n        Done!\n        Initializing mixed...\n            Maxpath(c+s) = 14\n\n    after: <class 'pexpect.TIMEOUT'>\n    match: None\n    match_index: None\n    exitstatus: None\n    flag_eof: 0\n    pid: 26746\n    child_fd: 5\n    timeout: 30\n    delimiter: <class 'pexpect.EOF'>\n    logfile: None\n    maxread: 2000\n    searchwindowsize: None\n    delaybeforesend: 0.1\n**********************************************************************\nFile \"/export/home/drkirkby/sage/sage-4.1.1/devel/sage/sage/interfaces/rubik.py\", line 142:\n    sage: solver.solve(C.facets())\nException raised:\n    Traceback (most recent call last):\n      File \"/export/home/drkirkby/sage/sage-4.1.1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/export/home/drkirkby/sage/sage-4.1.1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/export/home/drkirkby/sage/sage-4.1.1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_3[9]>\", line 1, in <module>\n        solver.solve(C.facets())###line 142:\n    sage: solver.solve(C.facets())\n      File \"/export/home/drkirkby/sage/sage-4.1.1/local/lib/python/site-packages/sage/interfaces/rubik.py\", line 254, in solve\n        child.expect('Initialization done!')\n      File \"/export/home/drkirkby/sage/sage-4.1.1/local/lib/python/site-packages/pexpect.py\", line 912, in expect\n        return self.expect_list(compiled_pattern_list, timeout, searchwindowsize)\n      File \"/export/home/drkirkby/sage/sage-4.1.1/local/lib/python/site-packages/pexpect.py\", line 989, in expect_list\n        raise TIMEOUT (str(e) + '\\n' + str(self))\n    TIMEOUT: Timeout exceeded in read_nonblocking().\n    <pexpect.spawn instance at 0x37b1918>\n    version: 2.0 ($Revision: 1.151 $)\n    command: /export/home/drkirkby/sage/sage-4.1.1/local/bin/dikcube\n    args: ['/export/home/drkirkby/sage/sage-4.1.1/local/bin/dikcube', '-p']\n    patterns:\n        Initialization done!\n    buffer (last 100 chars):\n    before (last 100 chars): ialized = 24\n            Maxpath = 4\n        Done!\n        Initializing mixed...\n            Maxpath(c+s) = 14\n\n    after: <class 'pexpect.TIMEOUT'>\n    match: None\n    match_index: None\n    exitstatus: None\n    flag_eof: 0\n    pid: 4188\n    child_fd: 4\n    timeout: 30\n    delimiter: <class 'pexpect.EOF'>\n    logfile: None\n    maxread: 2000\n    searchwindowsize: None\n    delaybeforesend: 0.1\n**********************************************************************\nFile \"/export/home/drkirkby/sage/sage-4.1.1/devel/sage/sage/interfaces/rubik.py\", line 243:\n    sage: DikSolver().solve(C.facets())\nException raised:\n    Traceback (most recent call last):\n      File \"/export/home/drkirkby/sage/sage-4.1.1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/export/home/drkirkby/sage/sage-4.1.1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/export/home/drkirkby/sage/sage-4.1.1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_5[4]>\", line 1, in <module>\n        DikSolver().solve(C.facets())###line 243:\n    sage: DikSolver().solve(C.facets())\n      File \"/export/home/drkirkby/sage/sage-4.1.1/local/lib/python/site-packages/sage/interfaces/rubik.py\", line 254, in solve\n        child.expect('Initialization done!')\n      File \"/export/home/drkirkby/sage/sage-4.1.1/local/lib/python/site-packages/pexpect.py\", line 912, in expect\n        return self.expect_list(compiled_pattern_list, timeout, searchwindowsize)\n      File \"/export/home/drkirkby/sage/sage-4.1.1/local/lib/python/site-packages/pexpect.py\", line 989, in expect_list\n        raise TIMEOUT (str(e) + '\\n' + str(self))\n    TIMEOUT: Timeout exceeded in read_nonblocking().\n    <pexpect.spawn instance at 0x38d2648>\n    version: 2.0 ($Revision: 1.151 $)\n    command: /export/home/drkirkby/sage/sage-4.1.1/local/bin/dikcube\n    args: ['/export/home/drkirkby/sage/sage-4.1.1/local/bin/dikcube', '-p']\n    patterns:\n        Initialization done!\n    buffer (last 100 chars):\n    before (last 100 chars): path = 5\n        Done!\n        Initializing mixed...\n            Maxpath(t+f) = 9\n            Maxpath(t+c) = 9\n\n    after: <class 'pexpect.TIMEOUT'>\n    match: None\n    match_index: None\n    exitstatus: None\n    flag_eof: 0\n    pid: 12287\n    child_fd: 5\n    timeout: 30\n    delimiter: <class 'pexpect.EOF'>\n    logfile: None\n    maxread: 2000\n    searchwindowsize: None\n    delaybeforesend: 0.1\n**********************************************************************\n2 items had failures:\n   3 of  10 in __main__.example_3\n   1 of   9 in __main__.example_5\n***Test Failed*** 4 failures.\nFor whitespace errors, see the file /export/home/drkirkby/sage/sage-4.1.1/tmp/.doctest_rubik.py\n         [243.9 s]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6794\n\n",
+    "created_at": "2009-08-21T07:12:24Z",
+    "labels": [
+        "algebra",
+        "major",
+        "bug"
+    ],
+    "title": "doctest failure in sage/sage/interfaces/rubik.py due to upgrade to Maxima 5.19.1",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6794",
+    "user": "drkirkby"
+}
+```
 Assignee: tbd
 
 Keywords: maxima
@@ -230,23 +240,60 @@ For whitespace errors, see the file /export/home/drkirkby/sage/sage-4.1.1/tmp/.d
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6794
+
+
+
+
 
 ---
 
-Comment by AlexGhitza created at 2009-11-15 13:03:19
+archive/issue_comments_055975.json:
+```json
+{
+    "body": "Changing component from algebra to solaris.",
+    "created_at": "2009-11-15T13:03:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6794#issuecomment-55975",
+    "user": "AlexGhitza"
+}
+```
 
 Changing component from algebra to solaris.
 
 
+
 ---
 
-Comment by drkirkby created at 2011-04-02 12:42:09
+archive/issue_comments_055976.json:
+```json
+{
+    "body": "This can be closed as fixed. I'm not exactly sure what ticket caused this to be fixed, but it has been fixed a very long fixed ago.",
+    "created_at": "2011-04-02T12:42:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6794#issuecomment-55976",
+    "user": "drkirkby"
+}
+```
 
 This can be closed as fixed. I'm not exactly sure what ticket caused this to be fixed, but it has been fixed a very long fixed ago.
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-04-05 15:55:24
+archive/issue_comments_055977.json:
+```json
+{
+    "body": "Resolution: worksforme",
+    "created_at": "2011-04-05T15:55:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6794#issuecomment-55977",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: worksforme

@@ -1,11 +1,21 @@
 # Issue 4700: Move existing javascript packages in extcode to their own spkg packages
 
-Issue created by migration from https://trac.sagemath.org/ticket/4700
-
-Original creator: jason
-
-Original creation time: 2008-12-05 00:23:39
-
+archive/issues_004700.json:
+```json
+{
+    "body": "Assignee: boothby\n\nThis ticket moves the jsmath, jquery, jqueryui, and jsmath-image-fonts packages to their own spkgs that install in local/notebook/javascript.\n\nSorry, mabshoff; it was much easier to group these very related and similar tasks together.\n\nThe spkgs are at:\n\n\n\nhttp://sage.math.washington.edu/home/jason/notebook/jquery-1.2.6.spkg\n\nhttp://sage.math.washington.edu/home/jason/notebook/jqueryui-1.6r807svn.spkg\n\nhttp://sage.math.washington.edu/home/jason/notebook/jsmath-3.6a.spkg\n\nhttp://sage.math.washington.edu/home/jason/notebook/jsmath-image-fonts-1.3p0.spkg\n\nThe (huge) patch that deletes things from the extcode repository is at\n\nhttp://sage.math.washington.edu/home/mabshoff/extcode-remove-javascript-packages.patch (apply to the extcode repository; we might reset the extcode history, as mabshoff suggested on #4267).\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4700\n\n",
+    "created_at": "2008-12-05T00:23:39Z",
+    "labels": [
+        "notebook",
+        "major",
+        "bug"
+    ],
+    "title": "Move existing javascript packages in extcode to their own spkg packages",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4700",
+    "user": "jason"
+}
+```
 Assignee: boothby
 
 This ticket moves the jsmath, jquery, jqueryui, and jsmath-image-fonts packages to their own spkgs that install in local/notebook/javascript.
@@ -30,31 +40,68 @@ http://sage.math.washington.edu/home/mabshoff/extcode-remove-javascript-packages
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4700
+
+
+
+
 
 ---
 
-Comment by jason created at 2008-12-05 00:26:23
+archive/issue_comments_035407.json:
+```json
+{
+    "body": "This ticket also takes the opportunity to update each of the javascript packages to the latest version (as of late October, 2008).  Some of the changes in the patch reflect the updating (primarily, the updating of jqueryui).",
+    "created_at": "2008-12-05T00:26:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4700",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4700#issuecomment-35407",
+    "user": "jason"
+}
+```
 
 This ticket also takes the opportunity to update each of the javascript packages to the latest version (as of late October, 2008).  Some of the changes in the patch reflect the updating (primarily, the updating of jqueryui).
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-05 00:34:54
+archive/issue_comments_035408.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2008-12-05T00:34:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4700",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4700#issuecomment-35408",
+    "user": "mabshoff"
+}
+```
 
 Resolution: invalid
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-05 00:34:54
+archive/issue_comments_035409.json:
+```json
+{
+    "body": "No, \n\nthe whole point was that\n\n1. these tasks are independent\n2. this is again a composite ticket just like #4267\n\nSo: invalid.\n\nCheers,\n\nMichael",
+    "created_at": "2008-12-05T00:34:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4700",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4700#issuecomment-35409",
+    "user": "mabshoff"
+}
+```
 
 No, 
 
 the whole point was that
 
- 1. these tasks are independent
- 1. this is again a composite ticket just like #4267
+1. these tasks are independent
+2. this is again a composite ticket just like #4267
 
 So: invalid.
 
@@ -63,27 +110,62 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by was created at 2008-12-05 00:53:35
+archive/issue_comments_035410.json:
+```json
+{
+    "body": "OK, guys calm down.    It will be _massively_ easier referee wise if you can break this up into independent tasks, especially because there's still a lot of work to integrate this into sage, even after handing it off.    Please please please Jason can you split this into smaller well-defined tasks?  Thanks!!",
+    "created_at": "2008-12-05T00:53:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4700",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4700#issuecomment-35410",
+    "user": "was"
+}
+```
 
 OK, guys calm down.    It will be _massively_ easier referee wise if you can break this up into independent tasks, especially because there's still a lot of work to integrate this into sage, even after handing it off.    Please please please Jason can you split this into smaller well-defined tasks?  Thanks!!
 
 
+
 ---
+
+archive/issue_comments_035411.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-12-05T00:54:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4700",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4700#issuecomment-35411",
+    "user": "jason"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-05 00:56:31
+archive/issue_comments_035412.json:
+```json
+{
+    "body": "To elaborate some more why these tickets need to be split up:\n\n* verifying that the updated jsmath.spkg works is trivial\n* anything touching jquery needs to be reviewed in much more detail, i.e. somebody needs to check that DSage still works, i.e. its GUI\n* jsmath-image-fonts-1.3p0.spkg is an optional spkg, so it should be trivial to review\n\nMixing and matching seemingly related tickets and then ending up piling fixes on top has proven a disaster time after time, so let's please be nice about this and get this resolved.\n\nCheers,\n\nMichael\n\nPS: Sorry if my tone was out of line, I had just woken up :)",
+    "created_at": "2008-12-05T00:56:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4700",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4700#issuecomment-35412",
+    "user": "mabshoff"
+}
+```
 
 To elaborate some more why these tickets need to be split up:
 
- * verifying that the updated jsmath.spkg works is trivial
- * anything touching jquery needs to be reviewed in much more detail, i.e. somebody needs to check that DSage still works, i.e. its GUI
- * jsmath-image-fonts-1.3p0.spkg is an optional spkg, so it should be trivial to review
+* verifying that the updated jsmath.spkg works is trivial
+* anything touching jquery needs to be reviewed in much more detail, i.e. somebody needs to check that DSage still works, i.e. its GUI
+* jsmath-image-fonts-1.3p0.spkg is an optional spkg, so it should be trivial to review
 
 Mixing and matching seemingly related tickets and then ending up piling fixes on top has proven a disaster time after time, so let's please be nice about this and get this resolved.
 
@@ -94,8 +176,19 @@ Michael
 PS: Sorry if my tone was out of line, I had just woken up :)
 
 
+
 ---
 
-Comment by jason created at 2008-12-05 01:17:22
+archive/issue_comments_035413.json:
+```json
+{
+    "body": "Okay; I saw all of these tasks as very similar, hence the same ticket.  It'll be a lot more work to split it up further than this, but I'll get to it eventually.",
+    "created_at": "2008-12-05T01:17:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4700",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4700#issuecomment-35413",
+    "user": "jason"
+}
+```
 
 Okay; I saw all of these tasks as very similar, hence the same ticket.  It'll be a lot more work to split it up further than this, but I'll get to it eventually.

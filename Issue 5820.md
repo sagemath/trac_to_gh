@@ -1,11 +1,21 @@
 # Issue 5820: bug in comparison of ring morphisms
 
-Issue created by migration from https://trac.sagemath.org/ticket/5820
-
-Original creator: AlexGhitza
-
-Original creation time: 2009-04-19 02:54:39
-
+archive/issues_005820.json:
+```json
+{
+    "body": "Assignee: tbd\n\nKeywords: morphism ring comparison loads dumps\n\nAs discussed at http://groups.google.com/group/sage-devel/browse_thread/thread/bc99d36058aff638 , the following is wrong:\n\n\n```\nsage: f = ZZ.hom(QQ)\nsage: g = loads(dumps(f))\nsage: f == g\nFalse\n```\n\n\n(It should return True.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5820\n\n",
+    "created_at": "2009-04-19T02:54:39Z",
+    "labels": [
+        "algebra",
+        "major",
+        "bug"
+    ],
+    "title": "bug in comparison of ring morphisms",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5820",
+    "user": "AlexGhitza"
+}
+```
 Assignee: tbd
 
 Keywords: morphism ring comparison loads dumps
@@ -24,52 +34,135 @@ False
 (It should return True.)
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5820
+
+
+
+
 
 ---
 
-Comment by AlexGhitza created at 2009-04-25 09:46:13
+archive/issue_comments_045738.json:
+```json
+{
+    "body": "Changing assignee from tbd to AlexGhitza.",
+    "created_at": "2009-04-25T09:46:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5820",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5820#issuecomment-45738",
+    "user": "AlexGhitza"
+}
+```
 
 Changing assignee from tbd to AlexGhitza.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-04-25 09:46:13
+archive/issue_comments_045739.json:
+```json
+{
+    "body": "Changing keywords from \"morphism ring comparison loads dumps\" to \"ring coercion morphism comparison loads dumps\".",
+    "created_at": "2009-04-25T09:46:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5820",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5820#issuecomment-45739",
+    "user": "AlexGhitza"
+}
+```
 
 Changing keywords from "morphism ring comparison loads dumps" to "ring coercion morphism comparison loads dumps".
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-04-25 09:46:13
+archive/issue_comments_045740.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-04-25T09:46:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5820",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5820#issuecomment-45740",
+    "user": "AlexGhitza"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-04-25 09:46:13
+archive/issue_comments_045741.json:
+```json
+{
+    "body": "This is actually a problem with ring coercion morphisms, namely that they don't have a comparison method defined.\n\nThe attached patch does this and adds doctests (including `f == loads(dumps(f))`).",
+    "created_at": "2009-04-25T09:46:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5820",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5820#issuecomment-45741",
+    "user": "AlexGhitza"
+}
+```
 
 This is actually a problem with ring coercion morphisms, namely that they don't have a comparison method defined.
 
 The attached patch does this and adds doctests (including `f == loads(dumps(f))`).
 
 
+
 ---
+
+archive/issue_comments_045742.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-04-25T09:46:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5820",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5820#issuecomment-45742",
+    "user": "AlexGhitza"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by roed created at 2009-04-29 18:04:02
+archive/issue_comments_045743.json:
+```json
+{
+    "body": "Looks good to me.",
+    "created_at": "2009-04-29T18:04:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5820",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5820#issuecomment-45743",
+    "user": "roed"
+}
+```
 
 Looks good to me.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-30 01:27:40
+archive/issue_comments_045744.json:
+```json
+{
+    "body": "Merged in Sage 3.4.2.rc0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-30T01:27:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5820",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5820#issuecomment-45744",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.4.2.rc0.
 
@@ -78,8 +171,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-30 01:27:40
+archive/issue_comments_045745.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-04-30T01:27:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5820",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5820#issuecomment-45745",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

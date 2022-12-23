@@ -1,11 +1,21 @@
 # Issue 2974: interfaces/r.py doctest failures on many linux machines
 
-Issue created by migration from https://trac.sagemath.org/ticket/2974
-
-Original creator: was
-
-Original creation time: 2008-04-20 21:04:35
-
+archive/issues_002974.json:
+```json
+{
+    "body": "Assignee: failure\n\n\n```\nsage -t  devel/sage/sage/interfaces/r.py                    **********************************************************************\nFile \"/home/was/build/sage-3.0.rc0/tmp/r.py\", line 329:\n    sage: r.png(file='\"%s\"'%filename)\nExpected:\n    NULL\nGot:\n    [1] 10.4\n**********************************************************************\nFile \"/home/was/build/sage-3.0.rc0/tmp/r.py\", line 333:\n    sage: r.plot(x,y)\nExpected:\n    NULL\nGot:\n    [1] 3\n**********************************************************************\nFile \"/home/was/build/sage-3.0.rc0/tmp/r.py\", line 335:\n    sage: r.dev_off()\nExpected:\n        null device\n                  1\nGot:\n    [1] 2\n**********************************************************************\nFile \"/home/was/build/sage-3.0.rc0/tmp/r.py\", line 338:\n    sage: import os; os.unlink(filename)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/was/build/sage-3.0.rc0/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_3[7]>\", line 1, in <module>\n        import os; os.unlink(filename)###line 338:\n    sage: import os; os.unlink(filename)\n    OSError: [Errno 2] No such file or directory: '/home/was/.sage//temp/arch/17729//tmp_1.png'\n**********************************************************************\nFile \"/home/was/build/sage-3.0.rc0/tmp/r.py\", line 1064:\n    sage: r.png(file='\"%s\"'%filename)\nExpected:\n    NULL\nGot:\n    [1] 1\n**********************************************************************\nFile \"/home/was/build/sage-3.0.rc0/tmp/r.py\", line 1068:\n    sage: r.plot(x,y)\nExpected:\n    NULL\nGot:\n    [1] 1 2 3\n**********************************************************************\nFile \"/home/was/build/sage-3.0.rc0/tmp/r.py\", line 1070:\n    sage: r.dev_off()\nExpected:\n        null device\n                  1\nGot:\n    [1] 3\n**********************************************************************\nFile \"/home/was/build/sage-3.0.rc0/tmp/r.py\", line 1073:\n    sage: import os; os.unlink(filename)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/was/build/sage-3.0.rc0/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_40[7]>\", line 1, in <module>\n        import os; os.unlink(filename)###line 1073:\n    sage: import os; os.unlink(filename)\n    OSError: [Errno 2] No such file or directory: '/home/was/.sage//temp/arch/17729//tmp_2.png'\n**********************************************************************\n2 items had failures:\n   4 of   8 in __main__.example_3\n   4 of   8 in __main__.example_40\n***Test Failed*** 8 failures.\nFor whitespace errors, see the file /home/was/build/sage-3.0.rc0/tmp/.doctest_r.py\n         [10.0 s]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2974\n\n",
+    "created_at": "2008-04-20T21:04:35Z",
+    "labels": [
+        "doctest coverage",
+        "blocker",
+        "bug"
+    ],
+    "title": "interfaces/r.py doctest failures on many linux machines",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2974",
+    "user": "was"
+}
+```
 Assignee: failure
 
 
@@ -86,49 +96,132 @@ For whitespace errors, see the file /home/was/build/sage-3.0.rc0/tmp/.doctest_r.
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2974
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2008-04-21 00:40:03
+archive/issue_comments_020492.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-04-21T00:40:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2974",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2974#issuecomment-20492",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
+
+archive/issue_comments_020493.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-04-21T00:40:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2974",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2974#issuecomment-20493",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2008-04-21 00:40:03
+archive/issue_comments_020494.json:
+```json
+{
+    "body": "Changing assignee from failure to mhansen.",
+    "created_at": "2008-04-21T00:40:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2974",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2974#issuecomment-20494",
+    "user": "mhansen"
+}
+```
 
 Changing assignee from failure to mhansen.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-21 02:46:18
+archive/issue_comments_020495.json:
+```json
+{
+    "body": "Merged in Sage 3.0.rc1",
+    "created_at": "2008-04-21T02:46:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2974",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2974#issuecomment-20495",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.rc1
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-21 02:46:18
+archive/issue_comments_020496.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-04-21T02:46:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2974",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2974#issuecomment-20496",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by jason created at 2009-09-16 16:38:57
+archive/issue_comments_020497.json:
+```json
+{
+    "body": "This will likely be reverted once #2178 is fixed.",
+    "created_at": "2009-09-16T16:38:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2974",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2974#issuecomment-20497",
+    "user": "jason"
+}
+```
 
 This will likely be reverted once #2178 is fixed.
 
 
+
 ---
 
-Comment by jason created at 2009-09-16 16:39:17
+archive/issue_comments_020498.json:
+```json
+{
+    "body": "Oops, I mean once #2978 is fixed.",
+    "created_at": "2009-09-16T16:39:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2974",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2974#issuecomment-20498",
+    "user": "jason"
+}
+```
 
 Oops, I mean once #2978 is fixed.

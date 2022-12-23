@@ -1,16 +1,26 @@
 # Issue 2024: [with patch, needs review] univariate gcd over Z_N (N composite)
 
-Issue created by migration from https://trac.sagemath.org/ticket/2024
-
-Original creator: malb
-
-Original creation time: 2008-02-01 11:51:40
-
+archive/issues_002024.json:
+```json
+{
+    "body": "Assignee: was\n\nThe attached patch implements GCDs for univariate polynomials over Z_N where N is composite by calling PARI.\n\n**EXAMPLE**\n\nA standard attack on textbook RSA due to Franklin and\nReiter: Consider that we are given two ciphertexts c<sub>1</sub>\nand c<sub>2</sub> and the knowledge that the matching plaintexts\nare related by m<sub>2</sub> = m<sub>1</sub> + 2<sup>10</sup>. We also know the public\nkey (N,e) and that e is rather small. Then we can\nrecover the plaintext using a GCD computation for two\nunivariate polynomials.\n\n```\nsage: N = 2157212598407\nsage: e = 3\nsage: c1 = 1429779991932\nsage: c2 =  655688908482\nsage: P.<x> = PolynomialRing(Zmod(N))\nsage: f1 = x^e - c1\nsage: f2 = (x+2^10)^e - c2\nsage: g = gcd(f1,f2); g\nx + 2155978030517\nsage: m = -g[0]; m\n1234567890\n            \nsage: m^e\n1429779991932\n```\n\n\nSurprisingly, MAGMA cannot perform this operation:\n\n\n```\nsage: f1._magma_().GCD(f2._magma_())\nException (click to the left for traceback):\n...\nRuntime error in 'GCD': Algorithm is not available for this kind of coefficient ring\n```\n\n\nThe example is from http://www.isg.rhul.ac.uk/~sdg/mt466/lecture12.pdf which also claims that Mathematica cannot perform this operation.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2024\n\n",
+    "created_at": "2008-02-01T11:51:40Z",
+    "labels": [
+        "number theory",
+        "major",
+        "enhancement"
+    ],
+    "title": "[with patch, needs review] univariate gcd over Z_N (N composite)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2024",
+    "user": "malb"
+}
+```
 Assignee: was
 
 The attached patch implements GCDs for univariate polynomials over Z_N where N is composite by calling PARI.
 
-*EXAMPLE*
+**EXAMPLE**
 
 A standard attack on textbook RSA due to Franklin and
 Reiter: Consider that we are given two ciphertexts c<sub>1</sub>
@@ -51,17 +61,45 @@ Runtime error in 'GCD': Algorithm is not available for this kind of coefficient 
 
 The example is from http://www.isg.rhul.ac.uk/~sdg/mt466/lecture12.pdf which also claims that Mathematica cannot perform this operation.
 
+Issue created by migration from https://trac.sagemath.org/ticket/2024
+
+
+
+
 
 ---
+
+archive/issue_comments_013083.json:
+```json
+{
+    "body": "Attachment\n\nhuh? does gcd even make sense over this ring? `Z_N[x]` doesn't even have unique factorisation if N is composite.",
+    "created_at": "2008-02-01T23:55:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2024",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2024#issuecomment-13083",
+    "user": "dmharvey"
+}
+```
 
 Attachment
 
 huh? does gcd even make sense over this ring? `Z_N[x]` doesn't even have unique factorisation if N is composite.
 
 
+
 ---
 
-Comment by ncalexan created at 2008-02-02 00:15:08
+archive/issue_comments_013084.json:
+```json
+{
+    "body": "Replying to [comment:1 dmharvey]:\n> huh? does gcd even make sense over this ring? `Z_N[x]` doesn't even have unique factorisation if N is composite.\n\nI agree.  What is the gcd of `2 x` and `4 x` over `Z_8[x]`?  Should this return all divisors of largest degree?\n\nAs it stands, I think this patch should not be applied.",
+    "created_at": "2008-02-02T00:15:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2024",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2024#issuecomment-13084",
+    "user": "ncalexan"
+}
+```
 
 Replying to [comment:1 dmharvey]:
 > huh? does gcd even make sense over this ring? `Z_N[x]` doesn't even have unique factorisation if N is composite.
@@ -71,30 +109,76 @@ I agree.  What is the gcd of `2 x` and `4 x` over `Z_8[x]`?  Should this return 
 As it stands, I think this patch should not be applied.
 
 
+
 ---
 
-Comment by was created at 2008-02-02 05:55:18
+archive/issue_comments_013085.json:
+```json
+{
+    "body": "I wrote `gcd(a,b)` for elements a,b in Z/NZ without further comment in an early version of my elementary number theory book, and when Brian Conrad saw that he went ballistic.  So I'm with you guys on now having this function unless its name is changed and the precise meaning of what is being computed is clarified.",
+    "created_at": "2008-02-02T05:55:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2024",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2024#issuecomment-13085",
+    "user": "was"
+}
+```
 
 I wrote `gcd(a,b)` for elements a,b in Z/NZ without further comment in an early version of my elementary number theory book, and when Brian Conrad saw that he went ballistic.  So I'm with you guys on now having this function unless its name is changed and the precise meaning of what is being computed is clarified.
 
 
+
 ---
 
-Comment by malb created at 2008-02-02 14:31:47
+archive/issue_comments_013086.json:
+```json
+{
+    "body": "replacement patch gcd -> common_divisor",
+    "created_at": "2008-02-02T14:31:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2024",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2024#issuecomment-13086",
+    "user": "malb"
+}
+```
 
 replacement patch gcd -> common_divisor
 
 
+
 ---
+
+archive/issue_comments_013087.json:
+```json
+{
+    "body": "Attachment\n\nThe attached patch renames `gcd` to `common_divisor` and adds some documentation. Also, some `_sig_on`/{{{_sig_off}}s were added to avoid zero divisions.",
+    "created_at": "2008-02-02T14:33:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2024",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2024#issuecomment-13087",
+    "user": "malb"
+}
+```
 
 Attachment
 
 The attached patch renames `gcd` to `common_divisor` and adds some documentation. Also, some `_sig_on`/{{{_sig_off}}s were added to avoid zero divisions.
 
 
+
 ---
 
-Comment by dmharvey created at 2008-02-02 22:52:15
+archive/issue_comments_013088.json:
+```json
+{
+    "body": "Sorry, this still doesn't make much sense to me.\n\nFrom the docstring:\n\n```\nPerform Euclid's algorithm and return a common divisor of \n\\code{self} and \\code{other} as a monic polynomial. This is \nsimilar to a GCD computation over a GCD domain.\n```\n\n\nProblems:\n\nFirst, what is Euclid's algorithm here? For Euclid's algorithm you need a division algorithm, but I don't know what the division algorithm would be for `Z_N[x]` (at least when the divisor is not monic).\n\nSecond, sometimes there is *no* monic polynomial dividing both inputs. For example if N = 4, then 2x+1 is not divisible by *any* monic polynomial.\n\nThird, what does the PARI documentation claim will happen when you call the gcd code over such a base ring? I'm too lazy to check. From memory, the NTL documentation specifically says that the modulus needs to be prime for any polynomial gcd routine. (I've had situations with a prime power modulus, where the gcd almost makes sense, but I still couldn't use the vanilla gcd routine, it would sometimes crash; I needed to write a p-adic gcd instead.)\n\nYou either need to specify precisely something that makes sense, or just bite the bullet and write in the docstring \"this will call PARI's gcd routine and if the modulus is not prime then we don't promise anything and good luck to you\". It seems that the reason you want to include this function at all is for the cryptographic application. That's fine (it's a nice application), but if we want this function in SAGE then it has to be something that mathematically make sense.",
+    "created_at": "2008-02-02T22:52:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2024",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2024#issuecomment-13088",
+    "user": "dmharvey"
+}
+```
 
 Sorry, this still doesn't make much sense to me.
 
@@ -118,16 +202,38 @@ Third, what does the PARI documentation claim will happen when you call the gcd 
 You either need to specify precisely something that makes sense, or just bite the bullet and write in the docstring "this will call PARI's gcd routine and if the modulus is not prime then we don't promise anything and good luck to you". It seems that the reason you want to include this function at all is for the cryptographic application. That's fine (it's a nice application), but if we want this function in SAGE then it has to be something that mathematically make sense.
 
 
+
 ---
 
-Comment by malb created at 2008-02-03 00:46:06
+archive/issue_comments_013089.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2008-02-03T00:46:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2024",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2024#issuecomment-13089",
+    "user": "malb"
+}
+```
 
 Resolution: invalid
 
 
+
 ---
 
-Comment by malb created at 2008-02-03 00:46:06
+archive/issue_comments_013090.json:
+```json
+{
+    "body": "> if we want this function in SAGE then it has to be something that mathematically\n> make sense.\n\nI agree. Because I cannot provide anything sensible due to time constraints and lack of background I withdraw the patch.",
+    "created_at": "2008-02-03T00:46:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2024",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2024#issuecomment-13090",
+    "user": "malb"
+}
+```
 
 > if we want this function in SAGE then it has to be something that mathematically
 > make sense.
@@ -135,16 +241,38 @@ Comment by malb created at 2008-02-03 00:46:06
 I agree. Because I cannot provide anything sensible due to time constraints and lack of background I withdraw the patch.
 
 
+
 ---
 
-Comment by was created at 2008-02-03 00:50:23
+archive/issue_comments_013091.json:
+```json
+{
+    "body": "What about the rest of the patch, i.e., the stuff that isn't part of common_divisor?",
+    "created_at": "2008-02-03T00:50:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2024",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2024#issuecomment-13091",
+    "user": "was"
+}
+```
 
 What about the rest of the patch, i.e., the stuff that isn't part of common_divisor?
 
 
+
 ---
 
-Comment by malb created at 2008-02-03 00:54:33
+archive/issue_comments_013092.json:
+```json
+{
+    "body": "Replying to [comment:8 was]:\n> What about the rest of the patch, i.e., the stuff that isn't part of common_divisor?\n\nMhh, I realised that checking for `is_nilpotent` is not sufficient, so I wonder what exactly to check for, maybe: `any(not x.is_unit() for x in f)`? In any case `_sig_on`/`_sig_off`s need to be added somehow.",
+    "created_at": "2008-02-03T00:54:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2024",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2024#issuecomment-13092",
+    "user": "malb"
+}
+```
 
 Replying to [comment:8 was]:
 > What about the rest of the patch, i.e., the stuff that isn't part of common_divisor?
@@ -152,23 +280,56 @@ Replying to [comment:8 was]:
 Mhh, I realised that checking for `is_nilpotent` is not sufficient, so I wonder what exactly to check for, maybe: `any(not x.is_unit() for x in f)`? In any case `_sig_on`/`_sig_off`s need to be added somehow.
 
 
+
 ---
 
-Comment by was created at 2008-02-03 01:16:20
+archive/issue_comments_013093.json:
+```json
+{
+    "body": "Changing status from closed to reopened.",
+    "created_at": "2008-02-03T01:16:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2024",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2024#issuecomment-13093",
+    "user": "was"
+}
+```
 
 Changing status from closed to reopened.
 
 
+
 ---
 
-Comment by was created at 2008-02-03 01:16:20
+archive/issue_comments_013094.json:
+```json
+{
+    "body": "Resolution changed from invalid to ",
+    "created_at": "2008-02-03T01:16:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2024",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2024#issuecomment-13094",
+    "user": "was"
+}
+```
 
 Resolution changed from invalid to 
 
 
+
 ---
 
-Comment by cremona created at 2008-02-16 20:53:16
+archive/issue_comments_013095.json:
+```json
+{
+    "body": "The pari documentation just says that gcd uses the subresultant algorithm in this case.  It certainly does not give a run-time error:\n\n\n```\n? f=x^20-1\n%8 = x^20 - 1\n? g=x^25-1\n%9 = x^25 - 1\n? gcd(f,g)\n%10 = x^5 - 1\n? gcd(f*Mod(1,15),g*Mod(1,15))\n%11 = Mod(1, 15)*x^5 + Mod(14, 15)\n? lift(%)\n%12 = x^5 + 14\n```\n\nBut I agree with earlier contributors that unless we can define what the output is then we should not include this function.",
+    "created_at": "2008-02-16T20:53:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2024",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2024#issuecomment-13095",
+    "user": "cremona"
+}
+```
 
 The pari documentation just says that gcd uses the subresultant algorithm in this case.  It certainly does not give a run-time error:
 
@@ -189,9 +350,20 @@ The pari documentation just says that gcd uses the subresultant algorithm in thi
 But I agree with earlier contributors that unless we can define what the output is then we should not include this function.
 
 
+
 ---
 
-Comment by dmharvey created at 2008-04-05 18:35:04
+archive/issue_comments_013096.json:
+```json
+{
+    "body": "Closing this ticket, per IRC discussion with malb (see also #2497):\n\n\n```\n[2:20pm] dmharvey: ok I'm looking at the 2nd patch file\n[2:20pm] dmharvey: basically consists of:\n[2:20pm] dmharvey: (1) removing commented-out crud\n[2:20pm] dmharvey: (2) adding a _sig_on/_sig_off somewhere\n[2:20pm] dmharvey: (3) adding common_divisor which I don't know if I believe in\n[2:20pm] dmharvey: (4) some right.is_nilpotent() tests\n[2:20pm] malb: (3) is out\n[2:20pm] dmharvey: ok\n[2:21pm] dmharvey: so that's basically the guts of the ticket\n[2:21pm] malb: I think (4) is not sufficient\n[2:21pm] dmharvey: ok just hang on a second\n[2:21pm] dmharvey: so do we agree the ticket is essentially invalid?\n[2:21pm] malb: yes\n[2:21pm] dmharvey: ok\n[2:21pm] malb: I closed it before\n[2:21pm] dmharvey: for (4), I don't understand what you're trying to do there\n[2:22pm] malb: don't crash\n[2:22pm] malb: that's all\n[2:22pm] dmharvey: ah\n[2:22pm] dmharvey: so ZZ_pX_DivRem can crash/.\n[2:22pm] dmharvey: hmmm\n[2:22pm] dmharvey: perhaps that should be a separate ticket anyway.\n[2:22pm] malb: yep\n[2:22pm] dmharvey: do you know how to make it crash?\n[2:23pm] malb: so this one is invalid but we open another one for the crashes\n[2:23pm] dmharvey: given how expensive ZZ_pX_DivRem is compared to setting up the signal handler, I'd be inclined to just call sig_on universally\n[2:24pm] malb: sage: N = 35\n[2:24pm] malb: sage: P.<x> = PolynomialRing(Zmod(N))\n[2:24pm] malb: sage: 7*x//(5*x)\n[2:24pm] malb: InvMod: inverse undefined\n[2:24pm] malb: /usr/local/sage-2.11/local/bin/sage-sage: line 214: 30395 Aborted                sage-ipython \"$@\" -c \"$SAGE_STARTUP_COMMAND;\"\n[2:24pm] malb: okay, I have no idea how expensive it is\n[2:24pm] dmharvey: well, how expensive is _sig_on?\n[2:24pm] malb: it is a system call\n[2:25pm] malb: the siglongjmp\n[2:25pm] dmharvey: and 5*x is not nilpotent :-)\n[2:26pm] dmharvey: the Right Way to deal with this is to make NTL return error codes more nicely\n[2:26pm] dmharvey: instead of aborting\n[2:27pm] malb: yep\n[2:28pm] malb: but that requires changing NTL\n[2:28pm] dmharvey: malb: okay, I think the rest of the patch is probably not worth resurrecting. I will report that crash as a separate ticket (I have a feeling I've seen it before already?), and close #2024, does that sound ok?\n[2:28pm] malb: yes\n[2:28pm] dmharvey: yeah I think it's already #2497\n[2:28pm] malb: ack\n[2:29pm] dmharvey: ok I will do that\n```\n",
+    "created_at": "2008-04-05T18:35:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2024",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2024#issuecomment-13096",
+    "user": "dmharvey"
+}
+```
 
 Closing this ticket, per IRC discussion with malb (see also #2497):
 
@@ -246,8 +418,19 @@ Closing this ticket, per IRC discussion with malb (see also #2497):
 
 
 
+
 ---
 
-Comment by dmharvey created at 2008-04-05 18:35:04
+archive/issue_comments_013097.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2008-04-05T18:35:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2024",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2024#issuecomment-13097",
+    "user": "dmharvey"
+}
+```
 
 Resolution: invalid

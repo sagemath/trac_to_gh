@@ -1,11 +1,21 @@
 # Issue 3647: [with spkg, needs review] remove "- static-libgcc" from lcalc's CFLAGS
 
-Issue created by migration from https://trac.sagemath.org/ticket/3647
-
-Original creator: mabshoff
-
-Original creation time: 2008-07-12 13:44:20
-
+archive/issues_003647.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nAt some point we added \"-static-libgcc\" to lcalc's CFLAGS. I am not so sure why we did it since the reasoning behind it is undocumented and I cannot imagine any reason why we should use it. This is causing trouble on some build platoforms, see\n\nhttps://groups.google.com/group/sage-support/browse_thread/thread/a0e26173803f11d4/92f2602b2c448b59#92f2602b2c448b59\n\nThe spkg at\n\nhttp://sage.math.washington.edu/home/mabshoff/lcalc-20080205.p2.spkg\n\nremoves that option.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3647\n\n",
+    "created_at": "2008-07-12T13:44:20Z",
+    "labels": [
+        "build",
+        "major",
+        "bug"
+    ],
+    "title": "[with spkg, needs review] remove \"- static-libgcc\" from lcalc's CFLAGS",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3647",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 At some point we added "-static-libgcc" to lcalc's CFLAGS. I am not so sure why we did it since the reasoning behind it is undocumented and I cannot imagine any reason why we should use it. This is causing trouble on some build platoforms, see
@@ -22,10 +32,25 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/3647
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-07-12 13:47:39
+archive/issue_comments_025796.json:
+```json
+{
+    "body": "There is some interesting discussion why \"-static-libgcc\" seem to be a can of worms at\n\nhttp://www.trilithium.com/johan/2005/06/static-libstdc/\n\nCheers,\n\nMichael",
+    "created_at": "2008-07-12T13:47:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3647",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3647#issuecomment-25796",
+    "user": "mabshoff"
+}
+```
 
 There is some interesting discussion why "-static-libgcc" seem to be a can of worms at
 
@@ -36,22 +61,55 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mhansen created at 2008-07-16 04:51:56
+archive/issue_comments_025797.json:
+```json
+{
+    "body": "+1",
+    "created_at": "2008-07-16T04:51:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3647",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3647#issuecomment-25797",
+    "user": "mhansen"
+}
+```
 
 +1
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-16 05:12:41
+archive/issue_comments_025798.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-07-16T05:12:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3647",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3647#issuecomment-25798",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-16 05:12:41
+archive/issue_comments_025799.json:
+```json
+{
+    "body": "Merged in Sage 3.0.6.alpha0",
+    "created_at": "2008-07-16T05:12:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3647",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3647#issuecomment-25799",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.6.alpha0

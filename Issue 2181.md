@@ -1,11 +1,21 @@
 # Issue 2181: pari 2.3.3 on osx -- gets build without readline
 
-Issue created by migration from https://trac.sagemath.org/ticket/2181
-
-Original creator: was
-
-Original creation time: 2008-02-16 21:29:24
-
+archive/issues_002181.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\n\n```\n                                                                GP/PARI CALCULATOR Version 2.3.3 (released)\n                                                        i386 running darwin (ix86/GMP-4.2.1 kernel) 32-bit version\n                                                         compiled: Feb 15 2008, gcc-4.0.1 (Apple Inc. build 5465)\n                                                            (readline not compiled in, extended help available)\n```\n\n\nThe above should not say \"readline not compiled in\".  It didn't with older versions of the pari spkg.  So something broke this.   \n\nI once installed Sage on OS X for Ken Ribet specifically because gp's readline does work in OS X with Sage, and he couldn't get a very that worked without Sage no matter what he tried.  Now this is broken, which is bad. \n\nWe should have a doctest that runs gp as a subprocess and verifies that readline is compiled in.  E.g.,\n\n\n```\nsage: import pexpect; p = pexpect.spawn('gp')\nsage: p.expect('\\?')\n0\nsage: assert 'readline not compiled in' not in p.before\n```\n\n\nThen this problem will never happen again. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2181\n\n",
+    "created_at": "2008-02-16T21:29:24Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "pari 2.3.3 on osx -- gets build without readline",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2181",
+    "user": "was"
+}
+```
 Assignee: mabshoff
 
 
@@ -34,10 +44,25 @@ sage: assert 'readline not compiled in' not in p.before
 
 Then this problem will never happen again. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2181
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-02-16 21:34:39
+archive/issue_comments_014329.json:
+```json
+{
+    "body": "Is this OSX 10.4, 10.5 or both? On 10.5 the dynamic readline is currently broken, see 1259, so those issues might be related if it happens on 10.5 only.\n\nCheers,\n\nMichael",
+    "created_at": "2008-02-16T21:34:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2181",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2181#issuecomment-14329",
+    "user": "mabshoff"
+}
+```
 
 Is this OSX 10.4, 10.5 or both? On 10.5 the dynamic readline is currently broken, see 1259, so those issues might be related if it happens on 10.5 only.
 
@@ -46,22 +71,55 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-16 21:34:39
+archive/issue_comments_014330.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-02-16T21:34:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2181",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2181#issuecomment-14330",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by craigcitro created at 2008-02-24 00:03:28
+archive/issue_comments_014331.json:
+```json
+{
+    "body": "This is fixed with #2282.",
+    "created_at": "2008-02-24T00:03:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2181",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2181#issuecomment-14331",
+    "user": "craigcitro"
+}
+```
 
 This is fixed with #2282.
 
 
+
 ---
 
-Comment by craigcitro created at 2008-02-24 00:03:28
+archive/issue_comments_014332.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2008-02-24T00:03:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2181",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2181#issuecomment-14332",
+    "user": "craigcitro"
+}
+```
 
 Resolution: duplicate

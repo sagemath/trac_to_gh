@@ -1,33 +1,80 @@
 # Issue 2269: Many classes abuse has_coerce_map
 
-Issue created by migration from https://trac.sagemath.org/ticket/2269
-
-Original creator: gfurnish
-
-Original creation time: 2008-02-22 22:30:31
-
+archive/issues_002269.json:
+```json
+{
+    "body": "Assignee: robertwb\n\nMany classes pass has_coerce_map_from a self value that is not a Parent (when has_coerce_map_from is a member function of Parent), or pass it a value of self that does not have _has_coerce_map_from initialized (this is used for caching).  The initialization problem is almost certainly related to classes not correctly initializing Parent (as described in the TODO in init).  However the values of self that are not Parents are more mysterious.  The doctest failures caused by this can be easily recreated by adding a \"return false\" to the if statement described in enhancement 2268. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2269\n\n",
+    "created_at": "2008-02-22T22:30:31Z",
+    "labels": [
+        "coercion",
+        "minor",
+        "bug"
+    ],
+    "title": "Many classes abuse has_coerce_map",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2269",
+    "user": "gfurnish"
+}
+```
 Assignee: robertwb
 
 Many classes pass has_coerce_map_from a self value that is not a Parent (when has_coerce_map_from is a member function of Parent), or pass it a value of self that does not have _has_coerce_map_from initialized (this is used for caching).  The initialization problem is almost certainly related to classes not correctly initializing Parent (as described in the TODO in init).  However the values of self that are not Parents are more mysterious.  The doctest failures caused by this can be easily recreated by adding a "return false" to the if statement described in enhancement 2268. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2269
+
+
+
+
 
 ---
 
-Comment by robertwb created at 2008-10-30 08:31:34
+archive/issue_comments_015038.json:
+```json
+{
+    "body": "I believe this can be marked as invalid given the new coercion model.",
+    "created_at": "2008-10-30T08:31:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2269",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2269#issuecomment-15038",
+    "user": "robertwb"
+}
+```
 
 I believe this can be marked as invalid given the new coercion model.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-30 08:37:04
+archive/issue_comments_015039.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2008-10-30T08:37:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2269",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2269#issuecomment-15039",
+    "user": "mabshoff"
+}
+```
 
 Resolution: invalid
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-30 08:37:04
+archive/issue_comments_015040.json:
+```json
+{
+    "body": "Replying to [comment:2 robertwb]:\n> I believe this can be marked as invalid given the new coercion model. \n\nRobertWB's wish is my command. Invalid.\n\nCheers,\n\nMichael",
+    "created_at": "2008-10-30T08:37:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2269",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2269#issuecomment-15040",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:2 robertwb]:
 > I believe this can be marked as invalid given the new coercion model. 

@@ -1,11 +1,21 @@
 # Issue 6179: html -- doctest failure in sage-4.0.1.alpha0
 
-Issue created by migration from https://trac.sagemath.org/ticket/6179
-
-Original creator: was
-
-Original creation time: 2009-06-01 14:37:18
-
+archive/issues_006179.json:
+```json
+{
+    "body": "Assignee: tbd\n\nWe have the following on 32-bit OS X Intel:\n\n\n```\nsage -t -long \"devel/sage/sage/misc/html.py\"\n**********************************************************************\nFile \"/Users/was/build/sage-4.0.1.alpha0/devel/sage/sage/misc/html.py\", line 157:\n    sage: html.table([(i, j, i == j) for i in [0..1] for j in [0..1]])\nExpected:\n    <html>\n    <div class=\"notruncate\">\n    <table class=\"table_form\">\n    <tbody>\n    <tr class =\"row-a\">\n    <td><span class=\"math\">0</span></td>\n    <td><span class=\"math\">0</span></td>\n    <td><span class=\"math\">True</span></td>\n    </tr>\n    <tr class =\"row-b\">\n    <td><span class=\"math\">0</span></td>\n    <td><span class=\"math\">1</span></td>\n    <td><span class=\"math\">False</span></td>\n    </tr>\n    <tr class =\"row-a\">\n    <td><span class=\"math\">1</span></td>\n    <td><span class=\"math\">0</span></td>\n    <td><span class=\"math\">False</span></td>\n    </tr>\n    <tr class =\"row-b\">\n    <td><span class=\"math\">1</span></td>\n    <td><span class=\"math\">1</span></td>\n    <td><span class=\"math\">True</span></td>\n    </tr>  \n    </tbody>\n    </table>\n    </div>\n    </html>\nGot:\n    <html>\n    <div class=\"notruncate\">\n    <table class=\"table_form\">\n    <tbody>\n    <tr class =\"row-a\">\n    <td><span class=\"math\">0</span></td>\n    <td><span class=\"math\">0</span></td>\n    <td><span class=\"math\">\\mbox{\\rm True}</span></td>\n    </tr>\n    <tr class =\"row-b\">\n    <td><span class=\"math\">0</span></td>\n    <td><span class=\"math\">1</span></td>\n    <td><span class=\"math\">\\mbox{\\rm False}</span></td>\n    </tr>\n    <tr class =\"row-a\">\n    <td><span class=\"math\">1</span></td>\n    <td><span class=\"math\">0</span></td>\n    <td><span class=\"math\">\\mbox{\\rm False}</span></td>\n    </tr>\n    <tr class =\"row-b\">\n    <td><span class=\"math\">1</span></td>\n    <td><span class=\"math\">1</span></td>\n    <td><span class=\"math\">\\mbox{\\rm True}</span></td>\n    </tr>\n    </tbody>\n    </table>\n    </div>\n    </html>\n**********************************************************************\n1 items had failures:\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6179\n\n",
+    "created_at": "2009-06-01T14:37:18Z",
+    "labels": [
+        "doctest coverage",
+        "blocker",
+        "bug"
+    ],
+    "title": "html -- doctest failure in sage-4.0.1.alpha0",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6179",
+    "user": "was"
+}
+```
 Assignee: tbd
 
 We have the following on 32-bit OS X Intel:
@@ -80,17 +90,43 @@ Got:
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6179
+
+
+
+
 
 ---
 
-Comment by was created at 2009-06-04 00:08:53
+archive/issue_comments_049333.json:
+```json
+{
+    "body": "NOTE: The expected values are *wrong*.  Math typesetting of bools should use \\mbox{\\rm ...}.",
+    "created_at": "2009-06-04T00:08:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6179",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6179#issuecomment-49333",
+    "user": "was"
+}
+```
 
 NOTE: The expected values are *wrong*.  Math typesetting of bools should use \mbox{\rm ...}.
 
 
+
 ---
 
-Comment by whuss created at 2009-06-04 08:29:39
+archive/issue_comments_049334.json:
+```json
+{
+    "body": "On my 32-bit Debian with sage-4.0.1.alpha0:\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: latex(True)\nTrue\nsage: latex(False)\nFalse\n```\n\n| Sage Version 4.0.1.alpha0, Release Date: 2009-05-31                |\n| Type notebook() for the GUI, and license() for information.        |\nand also:\n\n\n```\n$ ./sage -t devel/sage/sage/misc/html.py\nsage -t  \"devel/sage/sage/misc/html.py\"\n         [1.1 s]\n\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 1.1 seconds\n```\n",
+    "created_at": "2009-06-04T08:29:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6179",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6179#issuecomment-49334",
+    "user": "whuss"
+}
+```
 
 On my 32-bit Debian with sage-4.0.1.alpha0:
 
@@ -121,14 +157,38 @@ Total time for all tests: 1.1 seconds
 
 
 
+
 ---
 
-Comment by mhansen created at 2009-06-05 21:21:49
+archive/issue_comments_049335.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-06-05T21:21:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6179",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6179#issuecomment-49335",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
+
+archive/issue_comments_049336.json:
+```json
+{
+    "body": "Attachment\n\nThis issue is that\n\n\n```\nsage: isinstance(True, int)\nTrue\nsage: isinstance(True, bool)\nTrue\nsage: isinstance(1, bool)\nFalse\n```\n\n\nso the output depended on the order in which items of the latex_table dict were iterated.  This is fixed by changing latex_table to a list so that bool comes first.",
+    "created_at": "2009-06-05T21:21:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6179",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6179#issuecomment-49336",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
@@ -148,16 +208,38 @@ False
 so the output depended on the order in which items of the latex_table dict were iterated.  This is fixed by changing latex_table to a list so that bool comes first.
 
 
+
 ---
 
-Comment by mhansen created at 2009-06-05 21:21:49
+archive/issue_comments_049337.json:
+```json
+{
+    "body": "Changing assignee from tbd to mhansen.",
+    "created_at": "2009-06-05T21:21:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6179",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6179#issuecomment-49337",
+    "user": "mhansen"
+}
+```
 
 Changing assignee from tbd to mhansen.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-06-05 21:57:31
+archive/issue_comments_049338.json:
+```json
+{
+    "body": "Here's another possible fix for the latex_table issue:\n\n``` \n        try:\n            f = latex_table[type(x)]\n            return LatexExpr(f(x))\n        except KeyError:\n            if x is None:\n                return LatexExpr(\"\\\\mbox{\\\\mathrm{None}}\")\n            return LatexExpr(str_function(str(x)))\n```\n\nSince `type(True)` returns `bool`, this looks up the right thing.  Is this approach better or worse than the one in your patch?  \n\nThe try/except approach helps to avoid accidental lookups in the table, but were those being used intentionally for anything?  For example, does `isinstance(blah, int)` return True for other classes that we care about for typesetting?  I tend to think that we should be more explicit rather than implicit (so add more entries `new-type: str` if we want more types to behave the way ints do), so I would favor the dictionary lookup approach.  I could be convinced otherwise, though.",
+    "created_at": "2009-06-05T21:57:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6179",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6179#issuecomment-49338",
+    "user": "jhpalmieri"
+}
+```
 
 Here's another possible fix for the latex_table issue:
 
@@ -176,45 +258,113 @@ Since `type(True)` returns `bool`, this looks up the right thing.  Is this appro
 The try/except approach helps to avoid accidental lookups in the table, but were those being used intentionally for anything?  For example, does `isinstance(blah, int)` return True for other classes that we care about for typesetting?  I tend to think that we should be more explicit rather than implicit (so add more entries `new-type: str` if we want more types to behave the way ints do), so I would favor the dictionary lookup approach.  I could be convinced otherwise, though.
 
 
+
 ---
 
-Comment by mhansen created at 2009-06-05 22:03:18
+archive/issue_comments_049339.json:
+```json
+{
+    "body": "I have no strong feelings on this; your patch is a tad more efficient, but none of this is really time critical. The latex_table should really only be used for builtin types though; anything else would be coupling things too much.",
+    "created_at": "2009-06-05T22:03:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6179",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6179#issuecomment-49339",
+    "user": "mhansen"
+}
+```
 
 I have no strong feelings on this; your patch is a tad more efficient, but none of this is really time critical. The latex_table should really only be used for builtin types though; anything else would be coupling things too much.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-06-05 22:19:45
+archive/issue_comments_049340.json:
+```json
+{
+    "body": "I don't care about the efficiency, but I like that my patch is less ambiguous: with yours, if some unexpected type returns True for `isinstance(blah, int)`, then the latex could get screwed up.  It also depends on the ordering in the table.  My change was already in a patch (\"needs work\") for #6089, and in that patch it also gets used when constructing jsmath expressions.  So if you don't have a strong preference, I'll post my version of the patch here.\n\nThis includes your changes to html.py and your new doctest in latex.py, which I give a positive review to.",
+    "created_at": "2009-06-05T22:19:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6179",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6179#issuecomment-49340",
+    "user": "jhpalmieri"
+}
+```
 
 I don't care about the efficiency, but I like that my patch is less ambiguous: with yours, if some unexpected type returns True for `isinstance(blah, int)`, then the latex could get screwed up.  It also depends on the ordering in the table.  My change was already in a patch ("needs work") for #6089, and in that patch it also gets used when constructing jsmath expressions.  So if you don't have a strong preference, I'll post my version of the patch here.
 
 This includes your changes to html.py and your new doctest in latex.py, which I give a positive review to.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-06-05 22:20:07
+archive/issue_comments_049341.json:
+```json
+{
+    "body": "apply only this patch",
+    "created_at": "2009-06-05T22:20:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6179",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6179#issuecomment-49341",
+    "user": "jhpalmieri"
+}
+```
 
 apply only this patch
 
 
+
 ---
+
+archive/issue_comments_049342.json:
+```json
+{
+    "body": "Attachment\n\nLooks good to me.",
+    "created_at": "2009-06-05T22:23:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6179",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6179#issuecomment-49342",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 Looks good to me.
 
 
+
 ---
 
-Comment by mhansen created at 2009-06-06 00:09:55
+archive/issue_comments_049343.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-06-06T00:09:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6179",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6179#issuecomment-49343",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mhansen created at 2009-06-06 00:09:55
+archive/issue_comments_049344.json:
+```json
+{
+    "body": "Merged in 4.0.1.rc3.",
+    "created_at": "2009-06-06T00:09:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6179",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6179#issuecomment-49344",
+    "user": "mhansen"
+}
+```
 
 Merged in 4.0.1.rc3.

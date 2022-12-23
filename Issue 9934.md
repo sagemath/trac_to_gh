@@ -1,11 +1,21 @@
 # Issue 9934: Make a symbolic mod function
 
-Issue created by migration from https://trac.sagemath.org/ticket/9935
-
-Original creator: jason
-
-Original creation time: 2010-09-17 20:17:56
-
+archive/issues_009934.json:
+```json
+{
+    "body": "Assignee: burcin\n\nCC:  burcin jdemeyer rws\n\nA participant in the PREP program noticed that mod is not a symbolic function:\n\n\n```\nsage: mod(x,4)\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (4562, 0))\n\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (4530, 0))\n\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (842, 0))\n\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/grout/sage-4.5.2/devel/sage-main/sage/functions/<ipython console> in <module>()\n\n/home/grout/sage/local/lib/python2.6/site-packages/sage/rings/finite_rings/integer_mod.so in sage.rings.finite_rings.integer_mod.Mod (sage/rings/finite_rings/integer_mod.c:2633)()\n\n/home/grout/sage/local/lib/python2.6/site-packages/sage/rings/finite_rings/integer_mod.so in sage.rings.finite_rings.integer_mod.IntegerMod (sage/rings/finite_rings/integer_mod.c:2952)()\n\n/home/grout/sage/local/lib/python2.6/site-packages/sage/rings/finite_rings/integer_mod.so in sage.rings.finite_rings.integer_mod.IntegerMod_int.__init__ (sage/rings/finite_rings/integer_mod.c:14249)()\n\n/home/grout/sage/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:6407)()\n\n/home/grout/sage/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.NamedConvertMap._call_ (sage/structure/coerce_maps.c:4053)()\n\n/home/grout/sage/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression._integer_ (sage/symbolic/expression.cpp:4026)()\n\nTypeError: unable to convert x (=x) to an integer\n```\n\n\nHopefully it should be easy to wrap mod in a symbolic function, something like:\n\n\n```\nsage: def eval_mod(self, x):\n....:     if isinstance(x, (int, Integer)):\n....:         return mod(x,5)\n....:     return None\n....:\nsage: f=function('f', eval_func=eval_mod)\nsage: f(x)\nf(x)\nsage: f(13)\n3\nsage: f(x^2+x+1)\nf(x^2 + x + 1)\nsage: f(x^2+x+1).subs(x=2)\n2\nsage: f(x^2+x+1).subs(x=3)\n3\nsage: f(x^2+x^3).subs(x=1)\n2\nsage: f(x^2+x^3).subs(x=2)\n2\nsage: f(x^2+x^3).subs(x=3)\n1 \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9935\n\n",
+    "created_at": "2010-09-17T20:17:56Z",
+    "labels": [
+        "symbolics",
+        "major",
+        "bug"
+    ],
+    "title": "Make a symbolic mod function",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9934",
+    "user": "jason"
+}
+```
 Assignee: burcin
 
 CC:  burcin jdemeyer rws
@@ -77,24 +87,61 @@ sage: f(x^2+x^3).subs(x=3)
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/9935
+
+
+
+
 
 ---
 
-Comment by jason created at 2010-09-17 20:18:53
+archive/issue_comments_098913.json:
+```json
+{
+    "body": "Burcin, is there a nice example somewhere that we can just copy and modify to make a symbolic function?  This sounds like it would be easy for a beginner to do if there was a good example almost like it somewhere.",
+    "created_at": "2010-09-17T20:18:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9934",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9934#issuecomment-98913",
+    "user": "jason"
+}
+```
 
 Burcin, is there a nice example somewhere that we can just copy and modify to make a symbolic function?  This sounds like it would be easy for a beginner to do if there was a good example almost like it somewhere.
 
 
+
 ---
 
-Comment by burcin created at 2010-09-18 22:05:52
+archive/issue_comments_098914.json:
+```json
+{
+    "body": "There are plenty of examples in the directory `sage/functions/`, just look for classes deriving from `BuiltinFunction`. You'll probably want to deprecate the `parent` keyword argument to `mod()`, so `sage.functions.transcendental.Function_exp_integral` might provide a good template.",
+    "created_at": "2010-09-18T22:05:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9934",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9934#issuecomment-98914",
+    "user": "burcin"
+}
+```
 
 There are plenty of examples in the directory `sage/functions/`, just look for classes deriving from `BuiltinFunction`. You'll probably want to deprecate the `parent` keyword argument to `mod()`, so `sage.functions.transcendental.Function_exp_integral` might provide a good template.
 
 
+
 ---
 
-Comment by mkoeppe created at 2016-08-10 20:50:02
+archive/issue_comments_098915.json:
+```json
+{
+    "body": "We still don't have a good \"mod\".\nI would suspect that this has been discussed at length in the past years.\n\nI'm bringing this up because I'm in need of periodic piecewise functions (#21215). Using a suitable symbolic mod would be one way. \nOn Mathematica, using their 3-argument Mod function seems to be the standard way for defining periodic piecewise functions - see for example here: http://community.wolfram.com/groups/-/m/t/156025\nWe could to the same (one possible route).",
+    "created_at": "2016-08-10T20:50:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9934",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9934#issuecomment-98915",
+    "user": "mkoeppe"
+}
+```
 
 We still don't have a good "mod".
 I would suspect that this has been discussed at length in the past years.
@@ -104,9 +151,20 @@ On Mathematica, using their 3-argument Mod function seems to be the standard way
 We could to the same (one possible route).
 
 
+
 ---
 
-Comment by rws created at 2016-08-11 07:50:22
+archive/issue_comments_098916.json:
+```json
+{
+    "body": "Replying to [comment:9 mkoeppe]:\n> I'm bringing this up because I'm in need of periodic piecewise functions (#21215). Using a suitable symbolic mod would be one way. \n\nIt is the more complicated way. You are asking for a feature of `piecewise` which can be had just by the addition of a `period` keyword. A symbolic `mod` is not necessary for it, and I'm arguing it's not necessary at all because there are no use cases that are handled better in the symbolic ring than in a dedicated finite ring, even if Sage does not have it at the moment. As the user of the ask.sagemath question above finally realized as well.",
+    "created_at": "2016-08-11T07:50:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9934",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9934#issuecomment-98916",
+    "user": "rws"
+}
+```
 
 Replying to [comment:9 mkoeppe]:
 > I'm bringing this up because I'm in need of periodic piecewise functions (#21215). Using a suitable symbolic mod would be one way. 
@@ -114,9 +172,20 @@ Replying to [comment:9 mkoeppe]:
 It is the more complicated way. You are asking for a feature of `piecewise` which can be had just by the addition of a `period` keyword. A symbolic `mod` is not necessary for it, and I'm arguing it's not necessary at all because there are no use cases that are handled better in the symbolic ring than in a dedicated finite ring, even if Sage does not have it at the moment. As the user of the ask.sagemath question above finally realized as well.
 
 
+
 ---
 
-Comment by mkoeppe created at 2016-08-12 00:16:31
+archive/issue_comments_098917.json:
+```json
+{
+    "body": "Replying to [comment:12 rws]:\n> Replying to [comment:9 mkoeppe]:\n> > I'm bringing this up because I'm in need of periodic piecewise functions (#21215). Using a suitable symbolic mod would be one way. \n> \n> It is the more complicated way. You are asking for a feature of `piecewise` which can be had just by the addition of a `period` keyword. A symbolic `mod` is not necessary for it, and I'm arguing it's not necessary at all because there are no use cases that are handled better in the symbolic ring than in a dedicated finite ring, even if Sage does not have it at the moment. As the user of the ask.sagemath question above finally realized as well.\n\nThanks!",
+    "created_at": "2016-08-12T00:16:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9934",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9934#issuecomment-98917",
+    "user": "mkoeppe"
+}
+```
 
 Replying to [comment:12 rws]:
 > Replying to [comment:9 mkoeppe]:

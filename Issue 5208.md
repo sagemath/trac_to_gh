@@ -1,11 +1,21 @@
 # Issue 5208: Differing behavior for matrix left_kernel vs. right_kernel
 
-Issue created by migration from https://trac.sagemath.org/ticket/5208
-
-Original creator: rbeezer
-
-Original creation time: 2009-02-08 19:34:30
-
+archive/issues_005208.json:
+```json
+{
+    "body": "Assignee: rbeezer\n\nKeywords: matrix, left_kernel, right_kernel\n\nCalls to left_kernel() don't properly filter down the class hierarchy for matrices, and so do not always use the most efficient algorithm available.  The transcript below illustrates the difference in time for a mathematically equivalent computation on a random 200 x 200 matrix of two-digit integers.\n\n\n```\nsage: a = random_matrix(ZZ, 200, 200, x=100).change_ring(QQ)\n\nsage: time a.transpose().right_kernel()\n\nVector space of degree 200 and dimension 0 over Rational Field\nBasis matrix:\n0 x 200 dense matrix over Rational Field\nTime: CPU 0.18 s, Wall: 0.18 s\n\nsage: time a.left_kernel()\n\nVector space of degree 200 and dimension 0 over Rational Field\nBasis matrix:\n0 x 200 dense matrix over Rational Field\nCPU time: 70.76 s,  Wall time: 71.55 s\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5208\n\n",
+    "created_at": "2009-02-08T19:34:30Z",
+    "labels": [
+        "linear algebra",
+        "minor",
+        "bug"
+    ],
+    "title": "Differing behavior for matrix left_kernel vs. right_kernel",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5208",
+    "user": "rbeezer"
+}
+```
 Assignee: rbeezer
 
 Keywords: matrix, left_kernel, right_kernel
@@ -32,8 +42,25 @@ CPU time: 70.76 s,  Wall time: 71.55 s
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5208
+
+
+
+
 
 ---
+
+archive/issue_comments_039899.json:
+```json
+{
+    "body": "Attachment\n\nHigh-level code has been renamed from left_kernel() to simply kernel() to maintain consistency with derived classes.  So kernel() is no longer an alias for left_kernel().\n\nright_kernel() is mostly unchanged, calls kernel() on transpose.\n\nleft_kernel() now just calls kernel().  This should all ensure the proper versions of kernel() in derived classes are reached.\n\nDoctests for kernel() and left_kernel() are identical except for names used in explanations and the actual calls.  Doctests for right_kernel now have \"right\" in explantions, otherwise unchanged.\n\nEach of the three versions has a doctest with a symmetric 500 x 500 matrix of rational entries, which requires about 3 seconds of overhead and 1 second for the actual kernel call when patched.  Unpatched version 3.2.3 will take 589 seconds for left_kernel() on this example.  Runtimes seem to be O(n-cubed) if a smaller (faster) example is better.\n\nTimings on patched versions suggest that for rational matrices, the overhead in right_kernel() of transposing the matrix twice has the effect of doubling the runtime versus left_kernel.",
+    "created_at": "2009-02-08T22:52:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5208",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5208#issuecomment-39899",
+    "user": "rbeezer"
+}
+```
 
 Attachment
 
@@ -50,9 +77,20 @@ Each of the three versions has a doctest with a symmetric 500 x 500 matrix of ra
 Timings on patched versions suggest that for rational matrices, the overhead in right_kernel() of transposing the matrix twice has the effect of doubling the runtime versus left_kernel.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-08 23:04:41
+archive/issue_comments_039900.json:
+```json
+{
+    "body": "Given the large improvement this ought to be in 3.3.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-08T23:04:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5208",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5208#issuecomment-39900",
+    "user": "mabshoff"
+}
+```
 
 Given the large improvement this ought to be in 3.3.
 
@@ -61,9 +99,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mhansen created at 2009-02-08 23:18:47
+archive/issue_comments_039901.json:
+```json
+{
+    "body": "Looks good to me.\n\nOne little thing which doesn't matter too much:\n\n\n```\nif K is not None:\n```\n\n\nis a bit easier to read than\n\n\n```\nif not K is None:\n```\n",
+    "created_at": "2009-02-08T23:18:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5208",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5208#issuecomment-39901",
+    "user": "mhansen"
+}
+```
 
 Looks good to me.
 
@@ -84,9 +133,20 @@ if not K is None:
 
 
 
+
 ---
 
-Comment by rbeezer created at 2009-02-09 00:49:10
+archive/issue_comments_039902.json:
+```json
+{
+    "body": "Replying to [comment:3 mhansen]:\n\nI agree that the orginal phrasing is awkward to read the first time you see it.  But it's lots of places, in the matrix code it occurs this way whenever the cache is queried.  Across all of the source, grep gives me 627 instances of \"is None\", with 606 of those being \"is not None\"\n\nShould we engage the battle here with these three instances?  ;-)  I'd be happy to add another patch (though I'm not sure how to mark the title).\n\n> Looks good to me.\n> \n> One little thing which doesn't matter too much:\n> \n> {{{\n> if K is not None:\n> }}}\n> \n> is a bit easier to read than\n> \n> {{{\n> if not K is None:\n> }}}",
+    "created_at": "2009-02-09T00:49:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5208",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5208#issuecomment-39902",
+    "user": "rbeezer"
+}
+```
 
 Replying to [comment:3 mhansen]:
 
@@ -109,16 +169,38 @@ Should we engage the battle here with these three instances?  ;-)  I'd be happy 
 > }}}
 
 
+
 ---
 
-Comment by rbeezer created at 2009-02-09 01:55:07
+archive/issue_comments_039903.json:
+```json
+{
+    "body": "Now that I think about it, I'll be adding code to create alternative bases, and will need to mess with caching the varying results, so maybe I'll just pick up these changes as part of that.  Especially since I'll be looking further down the hierarchy.  And maybe I've got my counts confused above, as well.  Anyway, I'll implement this suggestion later.  Thanks.",
+    "created_at": "2009-02-09T01:55:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5208",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5208#issuecomment-39903",
+    "user": "rbeezer"
+}
+```
 
 Now that I think about it, I'll be adding code to create alternative bases, and will need to mess with caching the varying results, so maybe I'll just pick up these changes as part of that.  Especially since I'll be looking further down the hierarchy.  And maybe I've got my counts confused above, as well.  Anyway, I'll implement this suggestion later.  Thanks.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-09 07:39:04
+archive/issue_comments_039904.json:
+```json
+{
+    "body": "This patch needs a rebase:\n\n```\nmabshoff@sage:/scratch/mabshoff/sage-3.3.rc0/devel/sage$ patch -p1 < trac_5208_kernels.patch \npatching file sage/matrix/matrix2.pyx\nHunk #1 succeeded at 1420 with fuzz 2.\nHunk #2 FAILED at 1503.\nHunk #3 succeeded at 1593 (offset 19 lines).\nHunk #4 succeeded at 1621 (offset 19 lines).\nHunk #5 succeeded at 1640 (offset 19 lines).\nHunk #6 succeeded at 1650 (offset 19 lines).\nHunk #7 succeeded at 1669 (offset 19 lines).\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-09T07:39:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5208",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5208#issuecomment-39904",
+    "user": "mabshoff"
+}
+```
 
 This patch needs a rebase:
 
@@ -140,14 +222,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-09 07:43:58
+archive/issue_comments_039905.json:
+```json
+{
+    "body": "This is a rebase version of Rob's patch. The problem was trivial since only doctests had been added to the docstring",
+    "created_at": "2009-02-09T07:43:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5208",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5208#issuecomment-39905",
+    "user": "mabshoff"
+}
+```
 
 This is a rebase version of Rob's patch. The problem was trivial since only doctests had been added to the docstring
 
 
+
 ---
+
+archive/issue_comments_039906.json:
+```json
+{
+    "body": "Attachment\n\ntrac_5208_kernels.2.patch is a rebased version of Rob's patch.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-09T07:44:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5208",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5208#issuecomment-39906",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -158,16 +264,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-09 07:54:40
+archive/issue_comments_039907.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-02-09T07:54:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5208",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5208#issuecomment-39907",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-09 07:54:40
+archive/issue_comments_039908.json:
+```json
+{
+    "body": "Merged trac_5208_kernels.2.patch in Sage 3.3.rc0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-09T07:54:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5208",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5208#issuecomment-39908",
+    "user": "mabshoff"
+}
+```
 
 Merged trac_5208_kernels.2.patch in Sage 3.3.rc0.
 

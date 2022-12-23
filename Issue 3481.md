@@ -1,24 +1,62 @@
 # Issue 3481: remove sage/plot/plot3dsoya.py from sage!!!
 
-Issue created by migration from https://trac.sagemath.org/ticket/3481
-
-Original creator: was
-
-Original creation time: 2008-06-20 05:44:21
-
+archive/issues_003481.json:
+```json
+{
+    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3481\n\n",
+    "created_at": "2008-06-20T05:44:21Z",
+    "labels": [
+        "graphics",
+        "major",
+        "bug"
+    ],
+    "title": "remove sage/plot/plot3dsoya.py from sage!!!",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3481",
+    "user": "was"
+}
+```
 Assignee: was
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3481
+
+
+
+
 
 ---
+
+archive/issue_comments_024529.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-08-31T03:51:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3481",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3481#issuecomment-24529",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-31 03:57:06
+archive/issue_comments_024530.json:
+```json
+{
+    "body": "Patch looks good to me. Getting rid of crufty code is good!\n\nCheers,\n\nMichael",
+    "created_at": "2008-08-31T03:57:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3481",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3481#issuecomment-24530",
+    "user": "mabshoff"
+}
+```
 
 Patch looks good to me. Getting rid of crufty code is good!
 
@@ -27,15 +65,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-31 04:22:40
+archive/issue_comments_024531.json:
+```json
+{
+    "body": "Merged in Sage 3.1.2.alpha3",
+    "created_at": "2008-08-31T04:22:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3481",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3481#issuecomment-24531",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.1.2.alpha3
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-31 04:22:40
+archive/issue_comments_024532.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-08-31T04:22:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3481",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3481#issuecomment-24532",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 2155: [with patch; needs review] greatly speed up matrix inversion for 1x1 and 2x2 matrices over QQ by a factor of 20!
 
-Issue created by migration from https://trac.sagemath.org/ticket/2155
-
-Original creator: was
-
-Original creation time: 2008-02-14 02:10:20
-
+archive/issues_002155.json:
+```json
+{
+    "body": "Assignee: was\n\nBefore:\n\n\n```\nsage: a = matrix(QQ, 2, [1, 5, 17, 3]); a\n[ 1  5]\n[17  3]\nsage: time for _ in xrange(10^4): b = a.invert()\nCPU times: user 5.74 s, sys: 0.13 s, total: 5.87 s\nWall time: 5.94\n```\n\n\nAfter:\n\n\n```\nsage: time for _ in xrange(10^4): b = a.invert()\nCPU times: user 0.22 s, sys: 0.04 s, total: 0.26 s\nWall time: 0.29\n```\n\n\nThis also does not leak memory:\n\n```\nsage: get_memory_usage()\n'122M+'\nsage: time for _ in xrange(10^5): b = a.invert()\nCPU times: user 2.33 s, sys: 0.36 s, total: 2.69 s\nWall time: 2.70\nsage: get_memory_usage()\n'122M+'\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2155\n\n",
+    "created_at": "2008-02-14T02:10:20Z",
+    "labels": [
+        "linear algebra",
+        "major",
+        "enhancement"
+    ],
+    "title": "[with patch; needs review] greatly speed up matrix inversion for 1x1 and 2x2 matrices over QQ by a factor of 20!",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2155",
+    "user": "was"
+}
+```
 Assignee: was
 
 Before:
@@ -45,8 +55,25 @@ sage: get_memory_usage()
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2155
+
+
+
+
 
 ---
+
+archive/issue_comments_014152.json:
+```json
+{
+    "body": "Attachment\n\nWorks great for me. The doctest for invert() has some spurious code at the top of the examples block though. \n\nSince you're going to have to be in there anyway, it might be a bit more readable if \"t0\" was renamed to \"det.\"",
+    "created_at": "2008-02-14T04:20:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2155",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2155#issuecomment-14152",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
@@ -55,7 +82,20 @@ Works great for me. The doctest for invert() has some spurious code at the top o
 Since you're going to have to be in there anyway, it might be a bit more readable if "t0" was renamed to "det."
 
 
+
 ---
+
+archive/issue_comments_014153.json:
+```json
+{
+    "body": "Attachment\n\nI have addressed the referee's (Robert's) two complaints.  I also added an architecture for fast change of base ring and computation of the Hadamard bound.  This second thing is technically unrelated but it was too difficult to separate out safely. \n\nThis is now vastly faster than before\n\n```\nsage: a = random_matrix(ZZ,500)\nsage: time a.change_ring(RDF)\nCPU times: user 0.01 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.02\n```\n",
+    "created_at": "2008-02-16T04:06:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2155",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2155#issuecomment-14153",
+    "user": "was"
+}
+```
 
 Attachment
 
@@ -72,16 +112,38 @@ Wall time: 0.02
 
 
 
+
 ---
 
-Comment by was created at 2008-02-16 04:06:41
+archive/issue_comments_014154.json:
+```json
+{
+    "body": "By the way, apply both patches, in order.",
+    "created_at": "2008-02-16T04:06:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2155",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2155#issuecomment-14154",
+    "user": "was"
+}
+```
 
 By the way, apply both patches, in order.
 
 
+
 ---
 
-Comment by robertwb created at 2008-02-16 18:16:29
+archive/issue_comments_014155.json:
+```json
+{
+    "body": "The code looks good to me, but I just tried to pull these two, in order, on a clean 2.10.1, and it's giving me errors: \n\nrobert$ sage -hg import ~/Desktop/patches/trac-2155-part2.patch \napplying /Users/robert/Desktop/patches/trac-2155-part2.patch\npatching file sage/matrix/matrix_integer_dense.pyx\nHunk #2 FAILED at 1017\nHunk #3 FAILED at 2823\n2 out of 3 hunks FAILED -- saving rejects to file sage/matrix/matrix_integer_dense.pyx.rej\nabort: patch failed to apply\n\nYou have a warning on the `hadamard_bound` function if the entries are too large--does it raise an error or give erroneous results?",
+    "created_at": "2008-02-16T18:16:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2155",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2155#issuecomment-14155",
+    "user": "robertwb"
+}
+```
 
 The code looks good to me, but I just tried to pull these two, in order, on a clean 2.10.1, and it's giving me errors: 
 
@@ -96,15 +158,37 @@ abort: patch failed to apply
 You have a warning on the `hadamard_bound` function if the entries are too large--does it raise an error or give erroneous results?
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-05 00:46:12
+archive/issue_comments_014156.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-03-05T00:46:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2155",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2155#issuecomment-14156",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-05 00:46:12
+archive/issue_comments_014157.json:
+```json
+{
+    "body": "Merged in Sage 2.10.3.rc1 (or earlier via #2053). It would be great if somebody could revisit this ticket.",
+    "created_at": "2008-03-05T00:46:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2155",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2155#issuecomment-14157",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.3.rc1 (or earlier via #2053). It would be great if somebody could revisit this ticket.

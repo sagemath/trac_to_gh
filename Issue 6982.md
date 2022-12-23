@@ -1,39 +1,86 @@
 # Issue 6982: cygwin port: atlas and linbox
 
-Issue created by migration from https://trac.sagemath.org/ticket/6982
-
-Original creator: was
-
-Original creation time: 2009-09-22 05:01:18
-
+archive/issues_006982.json:
+```json
+{
+    "body": "Assignee: tbd\n\n* atlas --  require systemwide lapack installed\n\n  * linbox -- use systemwide lapack\n\nIssue created by migration from https://trac.sagemath.org/ticket/6982\n\n",
+    "created_at": "2009-09-22T05:01:18Z",
+    "labels": [
+        "build",
+        "major",
+        "bug"
+    ],
+    "title": "cygwin port: atlas and linbox",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6982",
+    "user": "was"
+}
+```
 Assignee: tbd
 
 * atlas --  require systemwide lapack installed
 
   * linbox -- use systemwide lapack
 
+Issue created by migration from https://trac.sagemath.org/ticket/6982
+
+
+
+
 
 ---
 
-Comment by was created at 2009-09-22 05:21:37
+archive/issue_comments_057748.json:
+```json
+{
+    "body": "Here are the spkgs:\n\n* http://sage.math.washington.edu/home/wstein/patches/atlas-3.8.3.p8.spkg\n\n* http://sage.math.washington.edu/home/wstein/patches/linbox-1.1.6.p1.spkg",
+    "created_at": "2009-09-22T05:21:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6982",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6982#issuecomment-57748",
+    "user": "was"
+}
+```
 
 Here are the spkgs:
 
-   * http://sage.math.washington.edu/home/wstein/patches/atlas-3.8.3.p8.spkg
+* http://sage.math.washington.edu/home/wstein/patches/atlas-3.8.3.p8.spkg
 
-   * http://sage.math.washington.edu/home/wstein/patches/linbox-1.1.6.p1.spkg
+* http://sage.math.washington.edu/home/wstein/patches/linbox-1.1.6.p1.spkg
+
 
 
 ---
 
-Comment by certik created at 2009-09-22 05:48:24
+archive/issue_comments_057749.json:
+```json
+{
+    "body": "The packages seem ok to me, both provide good error messages if cygwin atlas is not installed.",
+    "created_at": "2009-09-22T05:48:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6982",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6982#issuecomment-57749",
+    "user": "certik"
+}
+```
 
 The packages seem ok to me, both provide good error messages if cygwin atlas is not installed.
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-27 01:08:34
+archive/issue_comments_057750.json:
+```json
+{
+    "body": "New ATLAS package up at\n\nhttp://sage.math.washington.edu/home/mvngu/release/spkg/standard/atlas-3.8.3.p9.spkg\n\nThe changes from .p8 are:\n\n* Remove the junk files `spkg-install~` and `SPKG.txt~`.\n* Add the following line to `.hgignore`\n {{{\npatches\n }}}\n so that everything under the directory `patches/` would be ignored.",
+    "created_at": "2009-09-27T01:08:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6982",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6982#issuecomment-57750",
+    "user": "mvngu"
+}
+```
 
 New ATLAS package up at
 
@@ -41,17 +88,28 @@ http://sage.math.washington.edu/home/mvngu/release/spkg/standard/atlas-3.8.3.p9.
 
 The changes from .p8 are:
 
- * Remove the junk files `spkg-install~` and `SPKG.txt~`.
- * Add the following line to `.hgignore`
+* Remove the junk files `spkg-install~` and `SPKG.txt~`.
+* Add the following line to `.hgignore`
  {{{
 patches
  }}}
  so that everything under the directory `patches/` would be ignored.
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-27 01:12:39
+archive/issue_comments_057751.json:
+```json
+{
+    "body": "New LinBox package up at\n\nhttp://sage.math.washington.edu/home/mvngu/release/spkg/standard/linbox-1.1.6.p2.spkg\n\nThe only change from .p1 is:\n\n* Remove the junk file `spkg-install~`.",
+    "created_at": "2009-09-27T01:12:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6982",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6982#issuecomment-57751",
+    "user": "mvngu"
+}
+```
 
 New LinBox package up at
 
@@ -59,25 +117,58 @@ http://sage.math.washington.edu/home/mvngu/release/spkg/standard/linbox-1.1.6.p2
 
 The only change from .p1 is:
 
- * Remove the junk file `spkg-install~`.
+* Remove the junk file `spkg-install~`.
+
 
 
 ---
 
-Comment by mvngu created at 2009-09-27 03:26:27
+archive/issue_comments_057752.json:
+```json
+{
+    "body": "See my report at #6849.",
+    "created_at": "2009-09-27T03:26:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6982",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6982#issuecomment-57752",
+    "user": "mvngu"
+}
+```
 
 See my report at #6849.
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-27 03:26:27
+archive/issue_comments_057753.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-09-27T03:26:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6982",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6982#issuecomment-57753",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-27 11:02:14
+archive/issue_comments_057754.json:
+```json
+{
+    "body": "There is no 4.1.2.alpha3. Sage 4.1.2.alpha3 was William Stein's release for working on making the notebook a standalone package.",
+    "created_at": "2009-09-27T11:02:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6982",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6982#issuecomment-57754",
+    "user": "mvngu"
+}
+```
 
 There is no 4.1.2.alpha3. Sage 4.1.2.alpha3 was William Stein's release for working on making the notebook a standalone package.

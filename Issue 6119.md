@@ -1,21 +1,46 @@
 # Issue 6119: implement taylor series without maxima
 
-Issue created by migration from https://trac.sagemath.org/ticket/6119
-
-Original creator: robertwb
-
-Original creation time: 2009-05-22 02:38:25
-
+archive/issues_006119.json:
+```json
+{
+    "body": "Assignee: burcin\n\nCC:  kcrisman rws\n\nGinac has series about zero, it should be easy to shift to get the series about any point.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6119\n\n",
+    "created_at": "2009-05-22T02:38:25Z",
+    "labels": [
+        "calculus",
+        "major",
+        "enhancement"
+    ],
+    "title": "implement taylor series without maxima",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6119",
+    "user": "robertwb"
+}
+```
 Assignee: burcin
 
 CC:  kcrisman rws
 
 Ginac has series about zero, it should be easy to shift to get the series about any point.
 
+Issue created by migration from https://trac.sagemath.org/ticket/6119
+
+
+
+
 
 ---
 
-Comment by burcin created at 2011-06-29 13:38:10
+archive/issue_comments_048900.json:
+```json
+{
+    "body": "From comment:6:ticket:9555:\n\n> The taylor() method is cruft left over from pre-pynac symbolics. We should deprecate it in favor of the series() method. It's perfectly acceptable to give Puiseux series as a result of a call to .series(). I expect this to be done in #6119, where we add an algorithm= option to .series(). The default behavior can be to call pynac and fall back to maxima if that returns an error.\n\nIn short, we should change this ticket to cover this transition. Series expansions in Pynac need more work to match what maxima does. That should be tracked on the pynac issue tracker:\n\nhttps://bitbucket.org/burcin/pynac/issues",
+    "created_at": "2011-06-29T13:38:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6119",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6119#issuecomment-48900",
+    "user": "burcin"
+}
+```
 
 From comment:6:ticket:9555:
 
@@ -26,47 +51,113 @@ In short, we should change this ticket to cover this transition. Series expansio
 https://bitbucket.org/burcin/pynac/issues
 
 
+
 ---
 
-Comment by kcrisman created at 2011-06-29 13:40:44
+archive/issue_comments_048901.json:
+```json
+{
+    "body": "As I say in #9555, I think that changing the `.taylor()` method so that it calls a suitably Taylor-only version of the `.series()` method is preferable, especially since the global name `taylor()` should really be kept.",
+    "created_at": "2011-06-29T13:40:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6119",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6119#issuecomment-48901",
+    "user": "kcrisman"
+}
+```
 
 As I say in #9555, I think that changing the `.taylor()` method so that it calls a suitably Taylor-only version of the `.series()` method is preferable, especially since the global name `taylor()` should really be kept.
 
 
+
 ---
 
-Comment by kcrisman created at 2014-12-06 20:27:19
+archive/issue_comments_048902.json:
+```json
+{
+    "body": "See also http://sourceforge.net/p/maxima/bugs/2850/ where this comes up again.",
+    "created_at": "2014-12-06T20:27:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6119",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6119#issuecomment-48902",
+    "user": "kcrisman"
+}
+```
 
 See also http://sourceforge.net/p/maxima/bugs/2850/ where this comes up again.
 
 
+
 ---
 
-Comment by kcrisman created at 2014-12-08 14:15:38
+archive/issue_comments_048903.json:
+```json
+{
+    "body": "> As I say in #9555, I think that changing the `.taylor()` method so that it calls a suitably Taylor-only version of the `.series()` method is preferable, especially since the global name `taylor()` should really be kept.\nAnd I'm quoted at [this SO comment](http://stackoverflow.com/questions/27288164/non-integral-exponent-for-taylor-expansion-using-sage/27297471) though I still have to think more about how we should solve this.",
+    "created_at": "2014-12-08T14:15:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6119",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6119#issuecomment-48903",
+    "user": "kcrisman"
+}
+```
 
 > As I say in #9555, I think that changing the `.taylor()` method so that it calls a suitably Taylor-only version of the `.series()` method is preferable, especially since the global name `taylor()` should really be kept.
 And I'm quoted at [this SO comment](http://stackoverflow.com/questions/27288164/non-integral-exponent-for-taylor-expansion-using-sage/27297471) though I still have to think more about how we should solve this.
 
 
+
 ---
 
-Comment by kcrisman created at 2017-01-18 14:42:44
+archive/issue_comments_048904.json:
+```json
+{
+    "body": "Is this deprecating or simply replacing?  Sorry for being confused.\n----\nNew commits:",
+    "created_at": "2017-01-18T14:42:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6119",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6119#issuecomment-48904",
+    "user": "kcrisman"
+}
+```
 
 Is this deprecating or simply replacing?  Sorry for being confused.
 ----
 New commits:
 
 
+
 ---
 
-Comment by rws created at 2017-01-18 14:46:50
+archive/issue_comments_048905.json:
+```json
+{
+    "body": "Too fast. The deprecation part is upcoming. The Maxima replacement depends on a bugfix in upcoming pynac-0.7.4 for one doctest fail.",
+    "created_at": "2017-01-18T14:46:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6119",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6119#issuecomment-48905",
+    "user": "rws"
+}
+```
 
 Too fast. The deprecation part is upcoming. The Maxima replacement depends on a bugfix in upcoming pynac-0.7.4 for one doctest fail.
 
 
+
 ---
 
-Comment by rws created at 2017-01-18 14:48:56
+archive/issue_comments_048906.json:
+```json
+{
+    "body": "Replying to [comment:3 kcrisman]:\n> As I say in #9555, I think that changing the `.taylor()` method so that it calls a suitably Taylor-only version of the `.series()` method is preferable, especially since the global name `taylor()` should really be kept.\n\nJust rereading. So maybe we already have finished the ticket? If so, please review.",
+    "created_at": "2017-01-18T14:48:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6119",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6119#issuecomment-48906",
+    "user": "rws"
+}
+```
 
 Replying to [comment:3 kcrisman]:
 > As I say in #9555, I think that changing the `.taylor()` method so that it calls a suitably Taylor-only version of the `.series()` method is preferable, especially since the global name `taylor()` should really be kept.
@@ -74,15 +165,37 @@ Replying to [comment:3 kcrisman]:
 Just rereading. So maybe we already have finished the ticket? If so, please review.
 
 
----
-
-Comment by kcrisman created at 2017-01-18 15:36:37
-
-Nah, I think it is better to do _some_ form of deprecation warning rather than a totally silent change, though I think that keeping taylor as giving taylor only would be plausible too.
-
 
 ---
 
-Comment by rws created at 2017-01-18 15:51:23
+archive/issue_comments_048907.json:
+```json
+{
+    "body": "Nah, I think it is better to do *some* form of deprecation warning rather than a totally silent change, though I think that keeping taylor as giving taylor only would be plausible too.",
+    "created_at": "2017-01-18T15:36:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6119",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6119#issuecomment-48907",
+    "user": "kcrisman"
+}
+```
+
+Nah, I think it is better to do *some* form of deprecation warning rather than a totally silent change, though I think that keeping taylor as giving taylor only would be plausible too.
+
+
+
+---
+
+archive/issue_comments_048908.json:
+```json
+{
+    "body": "Maxima is still faster than GiNaC in the cases with irrational coefficients so we will have to use GiNaC/Pynac for both `series` and `taylor` only in the rational case.",
+    "created_at": "2017-01-18T15:51:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6119",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6119#issuecomment-48908",
+    "user": "rws"
+}
+```
 
 Maxima is still faster than GiNaC in the cases with irrational coefficients so we will have to use GiNaC/Pynac for both `series` and `taylor` only in the rational case.

@@ -1,18 +1,28 @@
 # Issue 7166: HP-UX issue. numpy does not understand PA-RISC CPU
 
-Issue created by migration from https://trac.sagemath.org/ticket/7166
-
-Original creator: drkirkby
-
-Original creation time: 2009-10-09 23:22:42
-
+archive/issues_007166.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  mkoeppe\n\nKeywords: HP-UX\n\nI tried to build numpy on a HP C3600 (PA-RISC chip, big endian) running HP-UX 11i. It fails with since the code does not know what CPU I have. **If one of the numpy maintainers wants access to the machine, they can have it.** \n\n\n```\ncustomize UnixCCompiler\ncustomize UnixCCompiler using build_ext\nbuilding 'numpy.core._sort' extension\ncompiling C sources\nC compiler: gcc -fno-strict-aliasing -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC\n\ncompile options: '-Inumpy/core/include -Ibuild/src.hp-ux-B.11.11-9000-785-2.6/numpy/core/include/numpy -Inumpy/core/src -Inumpy/core/include -I/home/drkirkby/sage-4.1.2.rc0/local/include/python2.6 -c'\ngcc: build/src.hp-ux-B.11.11-9000-785-2.6/numpy/core/src/_sortmodule.c\nIn file included from numpy/core/include/numpy/npy_endian.h:22,\n                 from numpy/core/include/numpy/ndarrayobject.h:26,\n                 from numpy/core/include/numpy/noprefix.h:7,\n                 from numpy/core/src/_sortmodule.c.src:29:\nnumpy/core/include/numpy/npy_cpu.h:49:6: error: #error Unknown CPU, please report this to numpy maintainers with information about your platform (OS, CPU and compiler)\nIn file included from numpy/core/include/numpy/ndarrayobject.h:26,\n                 from numpy/core/include/numpy/noprefix.h:7,\n                 from numpy/core/src/_sortmodule.c.src:29:\nnumpy/core/include/numpy/npy_endian.h:33:10: error: #error Unknown CPU: can not set endianness\nIn file included from numpy/core/include/numpy/npy_endian.h:22,\n                 from numpy/core/include/numpy/ndarrayobject.h:26,\n                 from numpy/core/include/numpy/noprefix.h:7,\n                 from numpy/core/src/_sortmodule.c.src:29:\nnumpy/core/include/numpy/npy_cpu.h:49:6: error: #error Unknown CPU, please report this to numpy maintainers with information about your platform (OS, CPU and compiler)\nIn file included from numpy/core/include/numpy/ndarrayobject.h:26,\n                 from numpy/core/include/numpy/noprefix.h:7,\n                 from numpy/core/src/_sortmodule.c.src:29:\nnumpy/core/include/numpy/npy_endian.h:33:10: error: #error Unknown CPU: can not set endianness\nerror: Command \"gcc -fno-strict-aliasing -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -Inumpy/core/include -Ibuild/src.hp-ux-B.11.11-9000-785-2.6/numpy/core/include/numpy -Inumpy/core/src -Inumpy/core/include -I/home/drkirkby/sage-4.1.2.rc0/local/include/python2.6 -c build/src.hp-ux-B.11.11-9000-785-2.6/numpy/core/src/_sortmodule.c -o build/temp.hp-ux-B.11.11-9000-785-2.6/build/src.hp-ux-B.11.11-9000-785-2.6/numpy/core/src/_sortmodule.o\" failed with exit status 1\nError building numpy.\n\nreal    0m40.370s\nuser    0m29.010s\nsys     0m8.280s\nsage: An error occurred while installing numpy-1.3.0.p2\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7166\n\n",
+    "created_at": "2009-10-09T23:22:42Z",
+    "labels": [
+        "porting",
+        "minor",
+        "bug"
+    ],
+    "title": "HP-UX issue. numpy does not understand PA-RISC CPU",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7166",
+    "user": "drkirkby"
+}
+```
 Assignee: tbd
 
 CC:  mkoeppe
 
 Keywords: HP-UX
 
-I tried to build numpy on a HP C3600 (PA-RISC chip, big endian) running HP-UX 11i. It fails with since the code does not know what CPU I have. *If one of the numpy maintainers wants access to the machine, they can have it.* 
+I tried to build numpy on a HP C3600 (PA-RISC chip, big endian) running HP-UX 11i. It fails with since the code does not know what CPU I have. **If one of the numpy maintainers wants access to the machine, they can have it.** 
 
 
 ```
@@ -53,44 +63,114 @@ sage: An error occurred while installing numpy-1.3.0.p2
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7166
+
+
+
+
 
 ---
 
-Comment by drkirkby created at 2009-12-09 17:21:25
+archive/issue_comments_059403.json:
+```json
+{
+    "body": "numpy-discussion`@`scipy.org on 9 December 2009 `@` 17:09 GMT",
+    "created_at": "2009-12-09T17:21:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7166",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7166#issuecomment-59403",
+    "user": "drkirkby"
+}
+```
 
 numpy-discussion`@`scipy.org on 9 December 2009 `@` 17:09 GMT
 
 
+
 ---
 
-Comment by kcrisman created at 2011-02-16 22:32:37
+archive/issue_comments_059404.json:
+```json
+{
+    "body": "Changing component from porting to AIX or HP-UX ports.",
+    "created_at": "2011-02-16T22:32:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7166",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7166#issuecomment-59404",
+    "user": "kcrisman"
+}
+```
 
 Changing component from porting to AIX or HP-UX ports.
 
 
+
 ---
 
-Comment by chapoton created at 2020-06-25 13:35:30
+archive/issue_comments_059405.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2020-06-25T13:35:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7166",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7166#issuecomment-59405",
+    "user": "chapoton"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by chapoton created at 2020-06-25 13:35:30
+archive/issue_comments_059406.json:
+```json
+{
+    "body": "close as obsolete ?",
+    "created_at": "2020-06-25T13:35:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7166",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7166#issuecomment-59406",
+    "user": "chapoton"
+}
+```
 
 close as obsolete ?
 
 
+
 ---
 
-Comment by mkoeppe created at 2020-06-25 17:11:01
+archive/issue_comments_059407.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2020-06-25T17:11:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7166",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7166#issuecomment-59407",
+    "user": "mkoeppe"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by chapoton created at 2020-06-25 17:21:53
+archive/issue_comments_059408.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2020-06-25T17:21:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7166",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7166#issuecomment-59408",
+    "user": "chapoton"
+}
+```
 
 Resolution: invalid

@@ -1,11 +1,21 @@
 # Issue 5173: Sage 3.3.a5: doctest failure in sage/rings/polynomial/polynomial_element.pyx due to print order of roots
 
-Issue created by migration from https://trac.sagemath.org/ticket/5173
-
-Original creator: mabshoff
-
-Original creation time: 2009-02-04 14:12:13
-
+archive/issues_005173.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nObserved on cleo and iras:\n\n```\nsage -t -long \"devel/sage/sage/rings/polynomial/polynomial_element.pyx\"\n**********************************************************************\nFile \"/home/mabshoff/build-3.3.alpha5/sage-3.3.alpha5-cleo/devel/sage/sage/rings/polynomial/polynomial_element.pyx\", line 3418:\n    sage: p.roots(ring=ComplexIntervalField(200))\nExpected:\n    [(1.167303978261418684256045899854842180720560371525489039140082?, 1), \n(-0.76488443360058472602982318770854173032899665194736756700778? - \n0.35247154603172624931794709140258105439420648082424733283770?*I, 1), \n(-0.76488443360058472602982318770854173032899665194736756700778? + \n0.35247154603172624931794709140258105439420648082424733283770?*I, 1), \n(0.18123244446987538390180023778112063996871646618462304743774? - \n1.08395410131771066843034449298076657427364024315511565430114?*I, 1), \n(0.18123244446987538390180023778112063996871646618462304743774? + \n1.08395410131771066843034449298076657427364024315511565430114?*I, 1)]\nGot:\n    [(1.167303978261418684256045899854842180720560371525489039140082?, 1), \n(0.18123244446987538390180023778112063996871646618462304743774? - \n1.08395410131771066843034449298076657427364024315511565430114?*I, 1), \n(-0.76488443360058472602982318770854173032899665194736756700778? - \n0.35247154603172624931794709140258105439420648082424733283770?*I, 1), \n(-0.76488443360058472602982318770854173032899665194736756700778? + \n0.35247154603172624931794709140258105439420648082424733283770?*I, 1), \n(0.18123244446987538390180023778112063996871646618462304743774? + \n1.08395410131771066843034449298076657427364024315511565430114?*I, 1)]\n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5173\n\n",
+    "created_at": "2009-02-04T14:12:13Z",
+    "labels": [
+        "doctest coverage",
+        "blocker",
+        "bug"
+    ],
+    "title": "Sage 3.3.a5: doctest failure in sage/rings/polynomial/polynomial_element.pyx due to print order of roots",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5173",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 Observed on cleo and iras:
@@ -39,17 +49,45 @@ Got:
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5173
+
+
+
+
 
 ---
+
+archive/issue_comments_039630.json:
+```json
+{
+    "body": "Attachment\n\nThe code didn't do the right thing at all with ComplexIntervalField(200), because it was trying to compare incomparable values, so it fell back to comparing the types.  Fixed in the attached patch by adding an explicit conversion to the appropriate type.",
+    "created_at": "2009-02-05T04:17:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5173",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5173#issuecomment-39630",
+    "user": "cwitty"
+}
+```
 
 Attachment
 
 The code didn't do the right thing at all with ComplexIntervalField(200), because it was trying to compare incomparable values, so it fell back to comparing the types.  Fixed in the attached patch by adding an explicit conversion to the appropriate type.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-05 10:39:06
+archive/issue_comments_039631.json:
+```json
+{
+    "body": "Positive review.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-05T10:39:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5173",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5173#issuecomment-39631",
+    "user": "mabshoff"
+}
+```
 
 Positive review.
 
@@ -58,9 +96,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-05 10:49:24
+archive/issue_comments_039632.json:
+```json
+{
+    "body": "Merged in Sage 3.3.alpha6.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-05T10:49:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5173",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5173#issuecomment-39632",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.3.alpha6.
 
@@ -69,8 +118,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-05 10:49:24
+archive/issue_comments_039633.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-02-05T10:49:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5173",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5173#issuecomment-39633",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

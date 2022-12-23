@@ -1,11 +1,21 @@
 # Issue 5379: html conversion problems with live version of tutorial (ReST version)
 
-Issue created by migration from https://trac.sagemath.org/ticket/5379
-
-Original creator: jhpalmieri
-
-Original creation time: 2009-02-26 03:09:20
-
+archive/issues_005379.json:
+```json
+{
+    "body": "Assignee: tba\n\nIn the live version of the tutorial, I'm seeing some problems. The static version seems to be fine.\n\n1.  In tour_assignment.rst, in the lines\n\n```\n    sage: a = 5   # a is an integer\n    sage: type(a)\n    <type 'sage.rings.integer.Integer'>\n    sage: a = 5/3  # now a is a rational number\n    sage: type(a)\n    <type 'sage.rings.rational.Rational'>\n    sage: a = 'hello'  # now a is a string\n    sage: type(a)\n    <type 'str'>\n```\n\nthe `<` and `>` signs turn into literal \"&lt;\" and \"&gt;\"\n\n2. In tour_assignment.rst, in the lines \n\n```\n    sage: n.str(8)   # string representation of n in base 8\n    '11'\n```\n\nthe quotes come out wrong.\n\n3. In introduction.rst, the whitespace in the following lines comes out wrong:\n\n```\n    sage: k = 1/(sqrt(3)*I + 3/4 + sqrt(73)*5/9); print k\n                                           1\n                              ---------------------------\n                                           5 sqrt(73)   3\n                              sqrt(3)  I + ---------- + -\n                                               9        4\n```\n\n\n4. In tour_algebra.rst, the math part of the lines\n\n```\nis modeled by the system of 2nd order differential equations\n\n.. math::\n    m_1 x_1'' + (k_1+k_2) x_1 - k_2 x_2 = 0\n    m_2 x_2''+ k_2 (x_2-x_1) = 0,\n```\n\nis completely missing.  Same thing seems to happen for any text marked as \".. math::\"\n\n5. In tour_algebra.rst, in the lines\n\n```\nREFERENCES: Nagle, Saff, Snider, Fundamentals of Differential\nEquations, 6th ed, Addison-Wesley, 2004. (see \u00a7 5.5).\n```\n\nan extra symbol appears before the section `\u00a7` symbol.\n\n6. in tour_polynomial.rst, in the lines\n\n```\n.. [Si] G.-M. Greuel, G. Pfister, and H. Sch\u00f6nemann. \n        ``Singular`` 3.0. A Computer Algebra System for Polynomial\n        Computations. Center for Computer Algebra, University of\n        Kaiserslautern (2005). http://www.singular.uni-kl.de .\n```\n\nthe o with an umlaut `\u00f6` doesn't come out well.\n\n7. in tour_groups.rst,\n\n```\n    sage: G._gap_init_()\n    'Sp(4, 7)'\n```\n\nthe quotes are mistreated.\n\nI haven't done a careful reading; those are just the things I've spotted.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5379\n\n",
+    "created_at": "2009-02-26T03:09:20Z",
+    "labels": [
+        "documentation",
+        "major",
+        "bug"
+    ],
+    "title": "html conversion problems with live version of tutorial (ReST version)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5379",
+    "user": "jhpalmieri"
+}
+```
 Assignee: tba
 
 In the live version of the tutorial, I'm seeing some problems. The static version seems to be fine.
@@ -92,64 +102,171 @@ I haven't done a careful reading; those are just the things I've spotted.
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5379
+
+
+
+
 
 ---
 
-Comment by jhpalmieri created at 2009-04-07 21:09:25
+archive/issue_comments_041419.json:
+```json
+{
+    "body": "Changing assignee from tba to jhpalmieri.",
+    "created_at": "2009-04-07T21:09:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5379",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5379#issuecomment-41419",
+    "user": "jhpalmieri"
+}
+```
 
 Changing assignee from tba to jhpalmieri.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-04-07 21:09:25
+archive/issue_comments_041420.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-04-07T21:09:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5379",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5379#issuecomment-41420",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-04-07 21:09:25
+archive/issue_comments_041421.json:
+```json
+{
+    "body": "In the most recent version of Sage (3.4.1.rc1), I don't see problems 4, 5, 6 anymore.  The attached patch fixes the others for me.",
+    "created_at": "2009-04-07T21:09:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5379",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5379#issuecomment-41421",
+    "user": "jhpalmieri"
+}
+```
 
 In the most recent version of Sage (3.4.1.rc1), I don't see problems 4, 5, 6 anymore.  The attached patch fixes the others for me.
 
 
+
 ---
+
+archive/issue_comments_041422.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-04-12T05:40:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5379",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5379#issuecomment-41422",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-04-12 19:40:33
+archive/issue_comments_041423.json:
+```json
+{
+    "body": "This causes some doctest failures, some of which are listed at #5764 (where I think they were erroneously attributed to that patch -- they really come from this patch).  I'll get to work on fixing them soon.",
+    "created_at": "2009-04-12T19:40:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5379",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5379#issuecomment-41423",
+    "user": "jhpalmieri"
+}
+```
 
 This causes some doctest failures, some of which are listed at #5764 (where I think they were erroneously attributed to that patch -- they really come from this patch).  I'll get to work on fixing them soon.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-04-12 19:55:22
+archive/issue_comments_041424.json:
+```json
+{
+    "body": "Here's a patch for the failed doctests; apply on top of the other one.  This passes all doctests on sage.math (for me, anyway) and also on my Mac.",
+    "created_at": "2009-04-12T19:55:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5379",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5379#issuecomment-41424",
+    "user": "jhpalmieri"
+}
+```
 
 Here's a patch for the failed doctests; apply on top of the other one.  This passes all doctests on sage.math (for me, anyway) and also on my Mac.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-04-12 19:55:42
+archive/issue_comments_041425.json:
+```json
+{
+    "body": "apply this on top of the other patch",
+    "created_at": "2009-04-12T19:55:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5379",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5379#issuecomment-41425",
+    "user": "jhpalmieri"
+}
+```
 
 apply this on top of the other patch
 
 
+
 ---
+
+archive/issue_comments_041426.json:
+```json
+{
+    "body": "Attachment\n\nIt works now.",
+    "created_at": "2009-04-13T14:11:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5379",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5379#issuecomment-41426",
+    "user": "was"
+}
+```
 
 Attachment
 
 It works now.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-13 23:36:47
+archive/issue_comments_041427.json:
+```json
+{
+    "body": "Merged both patches in Sage 3.4.1.rc3.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-13T23:36:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5379",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5379#issuecomment-41427",
+    "user": "mabshoff"
+}
+```
 
 Merged both patches in Sage 3.4.1.rc3.
 
@@ -158,8 +275,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-13 23:36:47
+archive/issue_comments_041428.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-04-13T23:36:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5379",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5379#issuecomment-41428",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

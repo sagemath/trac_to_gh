@@ -1,11 +1,21 @@
 # Issue 7573: Sage crashes if insufficient data is provided for MIP
 
-Issue created by migration from https://trac.sagemath.org/ticket/7573
-
-Original creator: malb
-
-Original creation time: 2009-12-01 16:00:50
-
+archive/issues_007573.json:
+```json
+{
+    "body": "Assignee: jkantor\n\nCC:  ncohen\n\nThis crashes Sage:\n\n\n```\nsage: g = graphs.PetersenGraph()\nsage: p = MixedIntegerLinearProgram(maximization=True)\nsage: b = p.new_variable()\nsage: p.set_objective(sum([b[v] for v in g]))\nsage: p.set_binary(b)\nsage: p.solve(objective_only=True)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7573\n\n",
+    "created_at": "2009-12-01T16:00:50Z",
+    "labels": [
+        "numerical",
+        "major",
+        "bug"
+    ],
+    "title": "Sage crashes if insufficient data is provided for MIP",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7573",
+    "user": "malb"
+}
+```
 Assignee: jkantor
 
 CC:  ncohen
@@ -23,31 +33,79 @@ sage: p.solve(objective_only=True)
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7573
+
+
+
+
 
 ---
 
-Comment by malb created at 2009-12-01 16:01:38
+archive/issue_comments_064457.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-12-01T16:01:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7573",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7573#issuecomment-64457",
+    "user": "malb"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by malb created at 2009-12-01 16:01:38
+archive/issue_comments_064458.json:
+```json
+{
+    "body": "The attached patch fixes the issue for me.",
+    "created_at": "2009-12-01T16:01:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7573",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7573#issuecomment-64458",
+    "user": "malb"
+}
+```
 
 The attached patch fixes the issue for me.
 
 
+
 ---
 
-Comment by ncohen created at 2009-12-01 16:11:42
+archive/issue_comments_064459.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_info.",
+    "created_at": "2009-12-01T16:11:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7573",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7573#issuecomment-64459",
+    "user": "ncohen"
+}
+```
 
 Changing status from needs_review to needs_info.
 
 
+
 ---
 
-Comment by ncohen created at 2009-12-01 16:11:42
+archive/issue_comments_064460.json:
+```json
+{
+    "body": "Hello !!!\n\nThis problem does not seem to exist on the version I am using, with patch #7270 and the new GLPK spkg installed... Did you test it on the current Sage version of both  ?\n\nNathann",
+    "created_at": "2009-12-01T16:11:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7573",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7573#issuecomment-64460",
+    "user": "ncohen"
+}
+```
 
 Hello !!!
 
@@ -56,23 +114,56 @@ This problem does not seem to exist on the version I am using, with patch #7270 
 Nathann
 
 
+
 ---
 
-Comment by malb created at 2009-12-01 17:15:51
+archive/issue_comments_064461.json:
+```json
+{
+    "body": "The problem is not fixed in #7270 but I updated the patch to work with #7270.",
+    "created_at": "2009-12-01T17:15:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7573",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7573#issuecomment-64461",
+    "user": "malb"
+}
+```
 
 The problem is not fixed in #7270 but I updated the patch to work with #7270.
 
 
+
 ---
 
-Comment by malb created at 2009-12-01 17:15:51
+archive/issue_comments_064462.json:
+```json
+{
+    "body": "Changing status from needs_info to needs_review.",
+    "created_at": "2009-12-01T17:15:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7573",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7573#issuecomment-64462",
+    "user": "malb"
+}
+```
 
 Changing status from needs_info to needs_review.
 
 
+
 ---
 
-Comment by ncohen created at 2009-12-01 17:30:32
+archive/issue_comments_064463.json:
+```json
+{
+    "body": "I just tested your patch and it seems Coin behaves much better than GLPK : the new doctests fails for solver=\"Coin\", as it peacefully returns an exception as it should. Could you add in your test solver=\"GLPK\" to the p.solve() call ?\n\nIt sounds like wrapping solveCoin with _sig_on and sig_off is not needed, though it can not hurt to let it stay ;-)\n\nThank you very much for your help !!!!\n\nNathann",
+    "created_at": "2009-12-01T17:30:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7573",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7573#issuecomment-64463",
+    "user": "ncohen"
+}
+```
 
 I just tested your patch and it seems Coin behaves much better than GLPK : the new doctests fails for solver="Coin", as it peacefully returns an exception as it should. Could you add in your test solver="GLPK" to the p.solve() call ?
 
@@ -83,50 +174,129 @@ Thank you very much for your help !!!!
 Nathann
 
 
+
 ---
 
-Comment by ncohen created at 2009-12-01 17:30:32
+archive/issue_comments_064464.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2009-12-01T17:30:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7573",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7573#issuecomment-64464",
+    "user": "ncohen"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by malb created at 2009-12-01 17:38:27
+archive/issue_comments_064465.json:
+```json
+{
+    "body": "updated to fit #7270",
+    "created_at": "2009-12-01T17:38:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7573",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7573#issuecomment-64465",
+    "user": "malb"
+}
+```
 
 updated to fit #7270
 
 
+
 ---
 
-Comment by malb created at 2009-12-01 17:38:51
+archive/issue_comments_064466.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2009-12-01T17:38:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7573",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7573#issuecomment-64466",
+    "user": "malb"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
+
+archive/issue_comments_064467.json:
+```json
+{
+    "body": "Attachment\n\ndone",
+    "created_at": "2009-12-01T17:38:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7573",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7573#issuecomment-64467",
+    "user": "malb"
+}
+```
 
 Attachment
 
 done
 
 
+
 ---
 
-Comment by ncohen created at 2009-12-01 17:45:04
+archive/issue_comments_064468.json:
+```json
+{
+    "body": "Applies fines, does its job... :-)",
+    "created_at": "2009-12-01T17:45:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7573",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7573#issuecomment-64468",
+    "user": "ncohen"
+}
+```
 
 Applies fines, does its job... :-)
 
 
+
 ---
 
-Comment by ncohen created at 2009-12-01 17:45:04
+archive/issue_comments_064469.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-12-01T17:45:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7573",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7573#issuecomment-64469",
+    "user": "ncohen"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mhansen created at 2009-12-02 08:07:46
+archive/issue_comments_064470.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-12-02T08:07:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7573",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7573#issuecomment-64470",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

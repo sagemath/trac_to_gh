@@ -1,11 +1,21 @@
 # Issue 2656: "sage -hg" does not handle quoting correctly
 
-Issue created by migration from https://trac.sagemath.org/ticket/2656
-
-Original creator: cwitty
-
-Original creation time: 2008-03-23 17:40:40
-
+archive/issues_002656.json:
+```json
+{
+    "body": "Assignee: was\n\nIf you use \"sage -hg\" with arguments containing spaces, like:\n\n```\n  sage -hg commit -m \"This is my great new code.\"\n```\n\nthen the argument gets split up, so Mercurial sees something more like\n\n```\n  hg commit -m This is my great new code.\n```\n\n(and tries to check in files named is,my,great,new,code., with a commit message of \"This\").\n\nIssue created by migration from https://trac.sagemath.org/ticket/2656\n\n",
+    "created_at": "2008-03-23T17:40:40Z",
+    "labels": [
+        "user interface",
+        "major",
+        "bug"
+    ],
+    "title": "\"sage -hg\" does not handle quoting correctly",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2656",
+    "user": "cwitty"
+}
+```
 Assignee: was
 
 If you use "sage -hg" with arguments containing spaces, like:
@@ -22,10 +32,25 @@ then the argument gets split up, so Mercurial sees something more like
 
 (and tries to check in files named is,my,great,new,code., with a commit message of "This").
 
+Issue created by migration from https://trac.sagemath.org/ticket/2656
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-04-13 19:03:49
+archive/issue_comments_018285.json:
+```json
+{
+    "body": "We need to escape the '\"' (and probably some other characters):\n\n```\n[mabshoff@localhost ~]$ ./foo.bash commit -m \"This is my great new code.\"\ncommit -m This is my great new code.\n[mabshoff@localhost ~]$ ./foo.bash commit -m \\\"This is my great new code.\\\"\ncommit -m \"This is my great new code.\"\n```\n\nwhere foo.bash is\n\n```/bin/bash\necho \"$@\"\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2008-04-13T19:03:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2656",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2656#issuecomment-18285",
+    "user": "mabshoff"
+}
+```
 
 We need to escape the '"' (and probably some other characters):
 
@@ -48,22 +73,55 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-10-10 21:09:52
+archive/issue_comments_018286.json:
+```json
+{
+    "body": "Seems to be fixed in sage-4.6.",
+    "created_at": "2010-10-10T21:09:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2656",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2656#issuecomment-18286",
+    "user": "jdemeyer"
+}
+```
 
 Seems to be fixed in sage-4.6.
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-10-10 21:09:52
+archive/issue_comments_018287.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-10-10T21:09:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2656",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2656#issuecomment-18287",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mpatel created at 2010-10-22 09:32:49
+archive/issue_comments_018288.json:
+```json
+{
+    "body": "Resolution: worksforme",
+    "created_at": "2010-10-22T09:32:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2656",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2656#issuecomment-18288",
+    "user": "mpatel"
+}
+```
 
 Resolution: worksforme

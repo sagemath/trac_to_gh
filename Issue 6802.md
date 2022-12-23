@@ -1,11 +1,21 @@
 # Issue 6802: define a real variable with var()
 
-Issue created by migration from https://trac.sagemath.org/ticket/6802
-
-Original creator: mvngu
-
-Original creation time: 2009-08-22 10:49:16
-
+archive/issues_006802.json:
+```json
+{
+    "body": "Keywords: var(), real variable\n\nAt this [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/7bf451cf8202e085) thread, there is a request for `var()` to be able to define a \"real\" variable. Then one can do this\n\n```\nsage: a = var(\"a\")\nsage: conjugate(a)\na\n```\n\nAs of Sage 4.1.1, we have this:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: a = var(\"a\")\nsage: conjugate(a)\nconjugate(a)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6802\n\n",
+    "created_at": "2009-08-22T10:49:16Z",
+    "labels": [
+        "symbolics",
+        "major",
+        "enhancement"
+    ],
+    "title": "define a real variable with var()",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6802",
+    "user": "mvngu"
+}
+```
 Keywords: var(), real variable
 
 At this [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/7bf451cf8202e085) thread, there is a request for `var()` to be able to define a "real" variable. Then one can do this
@@ -27,16 +37,42 @@ conjugate(a)
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6802
+
+
+
+
 
 ---
 
-Comment by mvngu created at 2009-08-22 14:18:34
+archive/issue_comments_056011.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2009-08-22T14:18:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6802",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6802#issuecomment-56011",
+    "user": "mvngu"
+}
+```
 
 Resolution: duplicate
 
 
+
 ---
 
-Comment by mvngu created at 2009-08-22 14:18:34
+archive/issue_comments_056012.json:
+```json
+{
+    "body": "Closing this as a duplicate of #6559.",
+    "created_at": "2009-08-22T14:18:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6802",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6802#issuecomment-56012",
+    "user": "mvngu"
+}
+```
 
 Closing this as a duplicate of #6559.

@@ -1,11 +1,21 @@
 # Issue 4467: clean up or delete the (unused?) hanke extension
 
-Issue created by migration from https://trac.sagemath.org/ticket/4467
-
-Original creator: mabshoff
-
-Original creation time: 2008-11-08 05:51:58
-
+archive/issues_004467.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nsetup.py contains\n\n```\nhanke = Extension(name = \"sage.libs.hanke.hanke\",\n              sources = [\"sage/libs/hanke/hanke.pyx\",\n                         \"sage/libs/hanke/wrap.cc\",\n                         \"sage/libs/hanke/Matrix_mpz/Matrix_mpz.cc\",\n                         \"sage/libs/hanke/Matrix_mpz/CountLocal2.cc\",\n                         \"sage/libs/hanke/Matrix_mpz/CountLocal.cc\",\n                         \"sage/libs/hanke/Matrix_mpz/Local_Constants.cc\",\n                         \"sage/libs/hanke/Matrix_mpz/Local_Density_Front.cc\",\n                         \"sage/libs/hanke/Matrix_mpz/Local_Density_Congruence.cc\",\n                         \"sage/libs/hanke/Matrix_mpz/Local_Normal.cc\",\n                         \"sage/libs/hanke/Matrix_mpz/Local_Invariants.cc\",\n                         \"sage/libs/hanke/Utilities/string_utils.cc\",\n                         \"sage/libs/hanke/GMP_class_extras/mpz_class_extras.cc\",\n                         \"sage/libs/hanke/GMP_class_extras/vectors.cc\" ],\n                   libraries = [\"gmp\", \"gmpxx\", \"stdc++\"])\n```\n\n\nIt looks like dead code to me, so it should be deleted IMHO. In case John wants to use it for something he should be given the chance to rescue it.\n\nCheers,\n\nMcihael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4467\n\n",
+    "created_at": "2008-11-08T05:51:58Z",
+    "labels": [
+        "build",
+        "major",
+        "bug"
+    ],
+    "title": "clean up or delete the (unused?) hanke extension",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4467",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 setup.py contains
@@ -35,10 +45,25 @@ Cheers,
 
 Mcihael
 
+Issue created by migration from https://trac.sagemath.org/ticket/4467
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-11-08 20:37:40
+archive/issue_comments_032981.json:
+```json
+{
+    "body": "I talked to John Hanke and he told me that the code can be deleted since it is no longer used.\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-08T20:37:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4467",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4467#issuecomment-32981",
+    "user": "mabshoff"
+}
+```
 
 I talked to John Hanke and he told me that the code can be deleted since it is no longer used.
 
@@ -47,9 +72,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-10 05:19:43
+archive/issue_comments_032982.json:
+```json
+{
+    "body": "Craig will remove the actual setup.py extension in a separate cleanup patch of setup.py\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-10T05:19:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4467",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4467#issuecomment-32982",
+    "user": "mabshoff"
+}
+```
 
 Craig will remove the actual setup.py extension in a separate cleanup patch of setup.py
 
@@ -58,22 +94,57 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_032983.json:
+```json
+{
+    "body": "Attachment\n\n+1 since the code removes dead code only.",
+    "created_at": "2008-11-10T06:20:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4467",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4467#issuecomment-32983",
+    "user": "jonhanke"
+}
+```
 
 Attachment
 
 +1 since the code removes dead code only.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-10 09:06:47
+archive/issue_comments_032984.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-11-10T09:06:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4467",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4467#issuecomment-32984",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-10 09:06:47
+archive/issue_comments_032985.json:
+```json
+{
+    "body": "Merged in Sage 3.2.rc0",
+    "created_at": "2008-11-10T09:06:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4467",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4467#issuecomment-32985",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.2.rc0

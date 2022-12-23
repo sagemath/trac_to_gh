@@ -1,11 +1,21 @@
 # Issue 8420: [work in progress] new feature : class of perfect matching
 
-Issue created by migration from https://trac.sagemath.org/ticket/8420
-
-Original creator: vferay
-
-Original creation time: 2010-03-02 14:12:00
-
+archive/issues_008420.json:
+```json
+{
+    "body": "Assignee: sage-combinat\n\nKeywords: perfect matching\n\nI am working on implementing the enumerated set of perfect matchings of a ground set (with, in particular, an iterator), a class of matching and simple methods.\n\nI wrote code about this for my own research and thought it could be useful for other people.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8420\n\n",
+    "created_at": "2010-03-02T14:12:00Z",
+    "labels": [
+        "combinatorics",
+        "major",
+        "enhancement"
+    ],
+    "title": "[work in progress] new feature : class of perfect matching",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8420",
+    "user": "vferay"
+}
+```
 Assignee: sage-combinat
 
 Keywords: perfect matching
@@ -14,33 +24,81 @@ I am working on implementing the enumerated set of perfect matchings of a ground
 
 I wrote code about this for my own research and thought it could be useful for other people.
 
+Issue created by migration from https://trac.sagemath.org/ticket/8420
+
+
+
+
 
 ---
 
-Comment by ncohen created at 2010-03-02 15:02:50
+archive/issue_comments_075453.json:
+```json
+{
+    "body": "Exceeeeeeeeellent Idea :-)\n\nNathann",
+    "created_at": "2010-03-02T15:02:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8420#issuecomment-75453",
+    "user": "ncohen"
+}
+```
 
 Exceeeeeeeeellent Idea :-)
 
 Nathann
 
 
+
 ---
 
-Comment by vferay created at 2010-03-05 16:40:37
+archive/issue_comments_075454.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-03-05T16:40:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8420#issuecomment-75454",
+    "user": "vferay"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by hivert created at 2010-03-05 17:04:47
+archive/issue_comments_075455.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-03-05T17:04:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8420#issuecomment-75455",
+    "user": "hivert"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by hivert created at 2010-03-05 17:04:47
+archive/issue_comments_075456.json:
+```json
+{
+    "body": "Replying to [comment:2 vferay]:\nHi Valentin,\n\nI started to review your patch. Here is a comment:\n\nWhen you construct a new class of parent or elements, you should add a call to the standard tests suite. Namely, inside each `__init__` method, you should build a representative object say `Obj` of the class and add\n\n```\nsage: TestSuite(Obj).run()\n```\n\nThe result should be nothing. If you get something then the error message is supposed to explain the problem.\n\nCheers,\n\nFlorent",
+    "created_at": "2010-03-05T17:04:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8420#issuecomment-75456",
+    "user": "hivert"
+}
+```
 
 Replying to [comment:2 vferay]:
 Hi Valentin,
@@ -60,14 +118,38 @@ Cheers,
 Florent
 
 
+
 ---
+
+archive/issue_comments_075457.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-03-08T09:00:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8420#issuecomment-75457",
+    "user": "vferay"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by vferay created at 2010-03-08 09:01:29
+archive/issue_comments_075458.json:
+```json
+{
+    "body": "Hi Florent,\n\nI added the test you suggested inside the __classcall__ method and it passed.\n\nCheers,\nValentin",
+    "created_at": "2010-03-08T09:01:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8420#issuecomment-75458",
+    "user": "vferay"
+}
+```
 
 Hi Florent,
 
@@ -77,16 +159,38 @@ Cheers,
 Valentin
 
 
+
 ---
 
-Comment by vferay created at 2010-03-08 09:01:29
+archive/issue_comments_075459.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-03-08T09:01:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8420#issuecomment-75459",
+    "user": "vferay"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by hivert created at 2010-03-08 10:53:45
+archive/issue_comments_075460.json:
+```json
+{
+    "body": "Hi Valentin,\n\nI've got a some comments about your code ;-). I've already taken care of most of them. For the other I need you. I've uploaded here the patch with all my modifications and put it also in the Sage-Combinat queue. You should formally review this patch, and then either fold it in yours (using in the queue\n\n```\nsage -hg qgoto your_patch\nsage -hg qfold my_patch\nsage -b\n```\n\n) add your new modification or add the new modification in a new patch after mine. Please ask me if you have some trouble with that.\n\n## Problems already taken care of\n\nPlease review the patch to see if you agree with all those.\n\n- (done) You should put a title to the file and insert it in the doc `doc/en/reference/combinat/index.rst`\n- (done) You should put the imports at the beginning of the file, unless you have a good reason not to do so (eg:loop in import).\n- (done) You should avoid too lines in comment, code and documentation. Please break them at 80 columns.\n- (done) Every single function must be tested.\n- (done, must be reread) ``...`` is for math, ```...``` is for code.\n- (done) You can add cross references to other method with `:meth:`name_of_the_method``\n- (done) I don't like the way your wrote three time (or probably copy-paste) the code for computing crossing/number_of_crossing/is_non_crossing. A good way it to write an iterator. An even better way is to write yet a new `EnumeratedSet` for the crossing.\n\n## Work still to be done\n\n- Just after the title, you should define mathematically in one or two lines what is a perfect matching and add some references\n- You should also then add yourself as the author of the file (please see the [coding conventions](http://www.sagemath.org/doc/developer/conventions.html) and in particular the [heading section](http://www.sagemath.org/doc/developer/conventions.html#headings-of-sage-library-code-files) of the developper guide). \n\n- in method `loop_type`, It would probably be useful to expose a method called `loops` since you compute it inside. I can imagine it could be of use for some problems. Then of course you should use it in `loop_type`.\n\n- I don't like the following behavior. Is there any good reason for it:\n\n```\n The class constructor does not check that the perfect matching is correct,\n one has to use the method :meth:`__contains__` for that::\n\n            sage: m=PerfectMatching([(1,2,3),(4,5)])\n            sage: isinstance(m,PerfectMatching)\n            True\n            sage: m in m.parent()\n            False\n```\n\n\n- Could you add some reference about perfect-matching and Weingarten_matrix\n\n- Could you finally add some more tests and in particular corner cases (empty or odd size sets).\n\n## Final Comments\n\nSorry for this frightening review. Despite of the bunch of remarks, the code is good ! I'd just rather it to match perfectly with sage standard ;-)\n\nFlorent",
+    "created_at": "2010-03-08T10:53:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8420#issuecomment-75460",
+    "user": "hivert"
+}
+```
 
 Hi Valentin,
 
@@ -104,22 +208,22 @@ sage -b
 
 Please review the patch to see if you agree with all those.
 
- - (done) You should put a title to the file and insert it in the doc `doc/en/reference/combinat/index.rst`
- - (done) You should put the imports at the beginning of the file, unless you have a good reason not to do so (eg:loop in import).
- - (done) You should avoid too lines in comment, code and documentation. Please break them at 80 columns.
- - (done) Every single function must be tested.
- - (done, must be reread) ``...`` is for math, ```...``` is for code.
- - (done) You can add cross references to other method with `:meth:`name_of_the_method``
- - (done) I don't like the way your wrote three time (or probably copy-paste) the code for computing crossing/number_of_crossing/is_non_crossing. A good way it to write an iterator. An even better way is to write yet a new `EnumeratedSet` for the crossing.
+- (done) You should put a title to the file and insert it in the doc `doc/en/reference/combinat/index.rst`
+- (done) You should put the imports at the beginning of the file, unless you have a good reason not to do so (eg:loop in import).
+- (done) You should avoid too lines in comment, code and documentation. Please break them at 80 columns.
+- (done) Every single function must be tested.
+- (done, must be reread) ``...`` is for math, ```...``` is for code.
+- (done) You can add cross references to other method with `:meth:`name_of_the_method``
+- (done) I don't like the way your wrote three time (or probably copy-paste) the code for computing crossing/number_of_crossing/is_non_crossing. A good way it to write an iterator. An even better way is to write yet a new `EnumeratedSet` for the crossing.
 
 ## Work still to be done
 
- - Just after the title, you should define mathematically in one or two lines what is a perfect matching and add some references
- - You should also then add yourself as the author of the file (please see the [coding conventions](http://www.sagemath.org/doc/developer/conventions.html) and in particular the [heading section](http://www.sagemath.org/doc/developer/conventions.html#headings-of-sage-library-code-files) of the developper guide). 
+- Just after the title, you should define mathematically in one or two lines what is a perfect matching and add some references
+- You should also then add yourself as the author of the file (please see the [coding conventions](http://www.sagemath.org/doc/developer/conventions.html) and in particular the [heading section](http://www.sagemath.org/doc/developer/conventions.html#headings-of-sage-library-code-files) of the developper guide). 
 
- - in method `loop_type`, It would probably be useful to expose a method called `loops` since you compute it inside. I can imagine it could be of use for some problems. Then of course you should use it in `loop_type`.
+- in method `loop_type`, It would probably be useful to expose a method called `loops` since you compute it inside. I can imagine it could be of use for some problems. Then of course you should use it in `loop_type`.
 
- - I don't like the following behavior. Is there any good reason for it:
+- I don't like the following behavior. Is there any good reason for it:
 
 ```
  The class constructor does not check that the perfect matching is correct,
@@ -133,9 +237,9 @@ Please review the patch to see if you agree with all those.
 ```
 
 
- - Could you add some reference about perfect-matching and Weingarten_matrix
+- Could you add some reference about perfect-matching and Weingarten_matrix
 
- - Could you finally add some more tests and in particular corner cases (empty or odd size sets).
+- Could you finally add some more tests and in particular corner cases (empty or odd size sets).
 
 ## Final Comments
 
@@ -144,30 +248,76 @@ Sorry for this frightening review. Despite of the bunch of remarks, the code is 
 Florent
 
 
+
 ---
 
-Comment by hivert created at 2010-03-08 10:53:45
+archive/issue_comments_075461.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-03-08T10:53:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8420#issuecomment-75461",
+    "user": "hivert"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by hivert created at 2010-03-08 10:59:36
+archive/issue_comments_075462.json:
+```json
+{
+    "body": "Review patch.",
+    "created_at": "2010-03-08T10:59:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8420#issuecomment-75462",
+    "user": "hivert"
+}
+```
 
 Review patch.
 
 
+
 ---
+
+archive/issue_comments_075463.json:
+```json
+{
+    "body": "Attachment\n\n2nd version, after Florent's comments",
+    "created_at": "2010-03-10T10:32:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8420#issuecomment-75463",
+    "user": "vferay"
+}
+```
 
 Attachment
 
 2nd version, after Florent's comments
 
 
+
 ---
 
-Comment by vferay created at 2010-03-10 10:51:39
+archive/issue_comments_075464.json:
+```json
+{
+    "body": "Hi Florent,\n\n   thanks a lot for this deep review of my patch and don't apologize for the quantity of remarks, it's a very good thing for me to learn. Moreover, you had done already a big part of the needed corrections, so thanks for that also. I have done the remaining corrections and I think the patch is ready for a new review.\n\nBest,\nValentin\n\nMore specific comments:\n\n- concerning the imports (on the beginning of the file or of the function), Nicolas (Thiery) told me to try to put the high-level imports (so, in my case, I think it would be Partition, Permutation, Matrix) at the beginning of the functions to prevent apparition of loops...\n\n- I did the change you requested:\n* I created a loops_iterator and a function which gives the list of the loops.\n* The correctness of the data given to create a perfect matching is checked when the syntax PerfectMatching(...) is used.\n\n- I also added some new methods:\n* nestings_iterator and related function: the code is very similar to the one of crossings_iterator and I saw in literature that this notion appears often.\n* coset-type for permutations, which was one of the thing I was interested in.",
+    "created_at": "2010-03-10T10:51:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8420#issuecomment-75464",
+    "user": "vferay"
+}
+```
 
 Hi Florent,
 
@@ -189,16 +339,38 @@ More specific comments:
 * coset-type for permutations, which was one of the thing I was interested in.
 
 
+
 ---
 
-Comment by vferay created at 2010-03-10 10:51:39
+archive/issue_comments_075465.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-03-10T10:51:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8420#issuecomment-75465",
+    "user": "vferay"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by hivert created at 2010-03-15 15:36:48
+archive/issue_comments_075466.json:
+```json
+{
+    "body": "Replying to [comment:7 vferay]:\n\n> * coset-type for permutations, which was one of the thing I was interested in.\n\nI don't like the name coset-type ! It applies to too many different things (eg: coset by young subgroups...)\n\nWhat about: `hyperoctahedral_double_coset_type` ?",
+    "created_at": "2010-03-15T15:36:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8420#issuecomment-75466",
+    "user": "hivert"
+}
+```
 
 Replying to [comment:7 vferay]:
 
@@ -209,54 +381,89 @@ I don't like the name coset-type ! It applies to too many different things (eg: 
 What about: `hyperoctahedral_double_coset_type` ?
 
 
+
 ---
 
-Comment by hivert created at 2010-03-15 16:07:18
+archive/issue_comments_075467.json:
+```json
+{
+    "body": "Hi Valentin !\n\nI just uploaded a review patch. It purpose is:\n- fix some doc issues (references, indentation, ...).\n- remove the methods `__init__` in `PerfectMatching` since it was properly inherited;\n- add a few doctests;\n- change the name of `coset_type` to `hyperoctahedral_double_coset_type`. \n \nI need you (or anyone else) to review this patch and tell me if the change of name suits to you. If it does and if my patch is correct, you can set positive review to this ticket. Your patch is fine for me.\n\nSome tip for the doc:\n- inside single back quote ``...`` you put things in LaTeX format. so beware of \"{\" and \"}\" vanishing...\n\n- in a bullet list you should indent the lines after the bullet:\n  {{{\n- plenty of text; plenty of text; plenty of text; \n  plenty of text; plenty of text;\n  plenty of text;\n- More text\n  }}}\n  and not\n  {{{\n- plenty of text; plenty of text; plenty of text;\n plenty of text; plenty of text;\n plenty of text;\n- More text\n  }}}",
+    "created_at": "2010-03-15T16:07:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8420#issuecomment-75467",
+    "user": "hivert"
+}
+```
 
 Hi Valentin !
 
 I just uploaded a review patch. It purpose is:
- - fix some doc issues (references, indentation, ...).
- - remove the methods `__init__` in `PerfectMatching` since it was properly inherited;
- - add a few doctests;
- - change the name of `coset_type` to `hyperoctahedral_double_coset_type`. 
+- fix some doc issues (references, indentation, ...).
+- remove the methods `__init__` in `PerfectMatching` since it was properly inherited;
+- add a few doctests;
+- change the name of `coset_type` to `hyperoctahedral_double_coset_type`. 
  
 I need you (or anyone else) to review this patch and tell me if the change of name suits to you. If it does and if my patch is correct, you can set positive review to this ticket. Your patch is fine for me.
 
 Some tip for the doc:
- - inside single back quote ``...`` you put things in LaTeX format. so beware of "{" and "}" vanishing...
+- inside single back quote ``...`` you put things in LaTeX format. so beware of "{" and "}" vanishing...
 
- - in a bullet list you should indent the lines after the bullet:
-   {{{
- - plenty of text; plenty of text; plenty of text; 
-   plenty of text; plenty of text;
-   plenty of text;
- - More text
-   }}}
-   and not
-   {{{
- - plenty of text; plenty of text; plenty of text;
+- in a bullet list you should indent the lines after the bullet:
+  {{{
+- plenty of text; plenty of text; plenty of text; 
+  plenty of text; plenty of text;
+  plenty of text;
+- More text
+  }}}
+  and not
+  {{{
+- plenty of text; plenty of text; plenty of text;
  plenty of text; plenty of text;
  plenty of text;
- - More text
-   }}}
+- More text
+  }}}
+
 
 
 ---
+
+archive/issue_comments_075468.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-03-15T16:08:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8420#issuecomment-75468",
+    "user": "hivert"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by vferay created at 2010-03-16 17:34:59
+archive/issue_comments_075469.json:
+```json
+{
+    "body": "Hi Florent!\n\nThanks for this new review. The patch seems ready, except for two small things:\n\n- line 144 of the file perfect_matching.py, it is written in the doc\n  `PerfectMatchings(objects)(data)`. \nShould it not be\n ``PerfectMatchings(objects)(data)``.\nas this is sage code?\n\n- second: the function now called\nhyperoctahedral_double_coset_type\n(which name is fine like this by the way)\ndoes not return a PerfectMatching as you suggest in the doc,\nbut a partition.\n\nAs I am learning, I would like to know what is the best way to deal with very small changes like that:\n- to do a new review patch as in the case of big changes?\n- to let you do these changes and switch to positive review?\n- to do the changes myself and switch to positive review? (but I believe this is not a good idea as I am not supposed to write in your patch)\n\nAnother thing that I did not know how to do was the following:\nI remember that you said something about compiling the documentation to check that it is well written. How does it work?\n\nYours,\nValentin",
+    "created_at": "2010-03-16T17:34:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8420#issuecomment-75469",
+    "user": "vferay"
+}
+```
 
 Hi Florent!
 
 Thanks for this new review. The patch seems ready, except for two small things:
 
 - line 144 of the file perfect_matching.py, it is written in the doc
- `PerfectMatchings(objects)(data)`. 
+  `PerfectMatchings(objects)(data)`. 
 Should it not be
  ``PerfectMatchings(objects)(data)``.
 as this is sage code?
@@ -279,9 +486,20 @@ Yours,
 Valentin
 
 
+
 ---
 
-Comment by hivert created at 2010-03-18 23:19:59
+archive/issue_comments_075470.json:
+```json
+{
+    "body": "Hi Valentin,\n\nFirst of all, please have a look at http://trac.sagemath.org/sage_trac/wiki/WikiFormatting\nso that your message appear nicely in trac (sorry yet another stupid syntax to learn)...\n\n> Thanks for this new review. The patch seems ready, except for two small things:\n> \n> - line 144 of the file perfect_matching.py, it is written in the doc\n``PerfectMatchings(objects)(data)`.` \n> Should it not be\n```PerfectMatchings(objects)(data)```\n> as this is sage code?\n\nYou are perfectly right ! Thanks for spotting this little mistake. \n\n> - second: the function now called\n> hyperoctahedral_double_coset_type\n> (which name is fine like this by the way)\n> does not return a PerfectMatching as you suggest in the doc,\n> but a partition.\n\nAgain right... \n\n> As I am learning, I would like to know what is the best way to deal with very small changes like that:\n> - to do a new review patch as in the case of big changes?\n\nUsually when you spot those kind a little mistakes, it takes as long as explaining them in trac than fixing them directly in the file. So the fastest and time saving way (for the sage community in general, maybe not for you) is to write yet another tiny review patch and put in on trac. If the change is bigger or more involved, you can ask the author to do it. That's when you check the need work button. \n\nIn the present case, since I understood it wrong, can you give a little explanation of this coset stuff and correct it as a being a partition. If it's too complicated explaining it, keeping only the ref to Macdonald (as it is now) can be sufficient. Also, since I spend times explaining this to you, It's your turn to make the change (sorry that I found a reason for being lazy ;-). \n\nThen the usual way is to submit yet another review of review patch and ask for a review of the review of the review patch ;-) Looks like a joke but this is not. \n\n> - to let you do these changes and switch to positive review?\n\nIt's forbidden by rule 2 below. If I change my patch, you have to review it again.  \n\n> - to do the changes myself and switch to positive review? (but I believe this is not a good idea as I am not supposed to write in your patch)\n\nAgain forbidden by both rule 1 and 2 below. \n\nTwo strict rules:\n 1 - in the path queue of sage-combinat, it's forbidden to write on someone's else patch, except if explicitely authorized (unless you're fond of editing second derivative of a file)... In some very rare occasion, we broke this rule with Nicolas but you really have to know what you are doing... A much better way is to write a new patch and either to submit it to trac or to ask the owner to fold it.\n \n 2 - No code (or doc or anything) can go into Sage, unless it has been reviewed by someone different from its author. Even a trivial typo correction. As far as I know since a few year, this rule has never been broken.\n  \nAlso it's easier for the different review to keep the consecutive changes in different patches. An the end, for the release manager, you have to indicate which patch has to be applied in which order. If you want to be kind with him. after deciding to put the positive review, you can fold the whole bunch of patch in a single one (useful when the review has been particularily messy). \n\n\n> Another thing that I did not know how to do was the following:\n> I remember that you said something about compiling the documentation to check that it is well written. How does it work?\n\nI must suggest you to read the [Developer's Guide](http://www.sagemath.org/doc/developer/index.html) in particular the section reviewing a patch (the command about applying the patch don't strictly apply to our case since we are using the queue).\nThe answer of you question is found in point 4:\n\n```\n./sage -docbuild reference html\n```\n\ncould take some time. \n\nCheers,\n\nFlorent",
+    "created_at": "2010-03-18T23:19:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8420#issuecomment-75470",
+    "user": "hivert"
+}
+```
 
 Hi Valentin,
 
@@ -348,9 +566,20 @@ Cheers,
 Florent
 
 
+
 ---
 
-Comment by vferay created at 2010-03-19 17:35:36
+archive/issue_comments_075471.json:
+```json
+{
+    "body": "Hi Florent,\n\n\n> Also, since I spend times explaining this to you, It's your turn to make the change\nA new review patch is in the queue right after your review patch.\n\n**Thanks** for taking the time to explain me all these staffs. I should have read more the documentation, but I am a little lost in this jungle (and also a little lazy perhaps).\n\nBest,\n\nValentin",
+    "created_at": "2010-03-19T17:35:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8420#issuecomment-75471",
+    "user": "vferay"
+}
+```
 
 Hi Florent,
 
@@ -358,48 +587,105 @@ Hi Florent,
 > Also, since I spend times explaining this to you, It's your turn to make the change
 A new review patch is in the queue right after your review patch.
 
-*Thanks* for taking the time to explain me all these staffs. I should have read more the documentation, but I am a little lost in this jungle (and also a little lazy perhaps).
+**Thanks** for taking the time to explain me all these staffs. I should have read more the documentation, but I am a little lost in this jungle (and also a little lazy perhaps).
 
 Best,
 
 Valentin
 
 
+
 ---
 
-Comment by hivert created at 2010-03-21 22:07:33
+archive/issue_comments_075472.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-03-21T22:07:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8420#issuecomment-75472",
+    "user": "hivert"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by hivert created at 2010-03-21 22:07:33
+archive/issue_comments_075473.json:
+```json
+{
+    "body": "Hi Valentin,\n\n> **Thanks** for taking the time to explain me all these staffs. I should have read more the documentation, but I am a little lost in this jungle (and also a little lazy perhaps).\n\n:-)\n\nThere is a little mistake which was pointed out by Samuele in #8548. Can you fold his patch in yours, add a test for the error and reupload ?",
+    "created_at": "2010-03-21T22:07:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8420#issuecomment-75473",
+    "user": "hivert"
+}
+```
 
 Hi Valentin,
 
-> *Thanks* for taking the time to explain me all these staffs. I should have read more the documentation, but I am a little lost in this jungle (and also a little lazy perhaps).
+> **Thanks** for taking the time to explain me all these staffs. I should have read more the documentation, but I am a little lost in this jungle (and also a little lazy perhaps).
 
 :-)
 
 There is a little mistake which was pointed out by Samuele in #8548. Can you fold his patch in yours, add a test for the error and reupload ?
 
 
+
 ---
 
-Comment by vferay created at 2010-03-22 09:58:11
+archive/issue_comments_075474.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-03-22T09:58:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8420#issuecomment-75474",
+    "user": "vferay"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
+
+archive/issue_comments_075475.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-03-22T09:58:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8420#issuecomment-75475",
+    "user": "vferay"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by hivert created at 2010-03-22 14:26:31
+archive/issue_comments_075476.json:
+```json
+{
+    "body": "Everything seems ok. Positive review.\n\nFlorent\n\nPS: for the release manager:\nI applied the following patches in the this order:\n\n- [trac_8420_features_perfect_matchings_vf.2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8420/trac_8420_features_perfect_matchings_vf.2.patch) \n- [trac_8420_perfect_matchings_review-fh.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8420/trac_8420_perfect_matchings_review-fh.patch)\n- [trac_8420_features_perfect_matchings_review_review_vf.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8420/trac_8420_features_perfect_matchings_review_review_vf.patch)",
+    "created_at": "2010-03-22T14:26:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8420#issuecomment-75476",
+    "user": "hivert"
+}
+```
 
 Everything seems ok. Positive review.
 
@@ -408,37 +694,81 @@ Florent
 PS: for the release manager:
 I applied the following patches in the this order:
 
- - [trac_8420_features_perfect_matchings_vf.2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8420/trac_8420_features_perfect_matchings_vf.2.patch) 
- - [trac_8420_perfect_matchings_review-fh.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8420/trac_8420_perfect_matchings_review-fh.patch)
- - [trac_8420_features_perfect_matchings_review_review_vf.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8420/trac_8420_features_perfect_matchings_review_review_vf.patch)
+- [trac_8420_features_perfect_matchings_vf.2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8420/trac_8420_features_perfect_matchings_vf.2.patch) 
+- [trac_8420_perfect_matchings_review-fh.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8420/trac_8420_perfect_matchings_review-fh.patch)
+- [trac_8420_features_perfect_matchings_review_review_vf.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8420/trac_8420_features_perfect_matchings_review_review_vf.patch)
+
 
 
 ---
 
-Comment by hivert created at 2010-03-22 14:26:31
+archive/issue_comments_075477.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-03-22T14:26:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8420#issuecomment-75477",
+    "user": "hivert"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-15 23:49:50
+archive/issue_comments_075478.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-04-15T23:49:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8420#issuecomment-75478",
+    "user": "jhpalmieri"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-15 23:49:50
+archive/issue_comments_075479.json:
+```json
+{
+    "body": "Merged into 4.4.alpha0:\n- trac_8420_features_perfect_matchings_vf.2.patch\n- trac_8420_perfect_matchings_review-fh.patch\n- trac_8420_features_perfect_matchings_review_review_vf.patch",
+    "created_at": "2010-04-15T23:49:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8420#issuecomment-75479",
+    "user": "jhpalmieri"
+}
+```
 
 Merged into 4.4.alpha0:
- - trac_8420_features_perfect_matchings_vf.2.patch
- - trac_8420_perfect_matchings_review-fh.patch
- - trac_8420_features_perfect_matchings_review_review_vf.patch
+- trac_8420_features_perfect_matchings_vf.2.patch
+- trac_8420_perfect_matchings_review-fh.patch
+- trac_8420_features_perfect_matchings_review_review_vf.patch
+
 
 
 ---
 
-Comment by chapoton created at 2017-07-19 08:25:40
+archive/issue_comments_075480.json:
+```json
+{
+    "body": "name with accent",
+    "created_at": "2017-07-19T08:25:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8420#issuecomment-75480",
+    "user": "chapoton"
+}
+```
 
 name with accent

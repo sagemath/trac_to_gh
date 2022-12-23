@@ -1,11 +1,21 @@
 # Issue 6294: lisp command in sage is now totally broken (because of ecl switch)
 
-Issue created by migration from https://trac.sagemath.org/ticket/6294
-
-Original creator: was
-
-Original creation time: 2009-06-15 09:21:19
-
+archive/issues_006294.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  awebb\n\n\n```\nwstein@bsd:~/build/sage-4.0.2.alpha3$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: lisp.eval('(+ 2 3)')\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n| Sage Version 4.0.2.alpha3, Release Date: 2009-06-13                |\n| Type notebook() for the GUI, and license() for information.        |\n/Users/was/.sage/temp/bsd.local/80207/_Users_was__sage_init_sage_0.py in <module>()\n\n/Users/was/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/interfaces/lisp.pyc in eval(self, code, strip, **kwds)\n    116         \"\"\"\n    117         with gc_disabled():\n--> 118             self._synchronize()\n    119             code = str(code)\n    120             code = code.strip()\n\n/Users/was/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/interfaces/lisp.pyc in _synchronize(self)\n    192         E = self._expect\n    193         if E is None:\n--> 194             self._start()\n    195             E = self._expect\n    196         r = random.randrange(2147483647)\n\n/Users/was/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/interfaces/lisp.pyc in _start(self, *args, **kwds)\n    186             True\n    187         \"\"\"\n--> 188         Expect._start(self, *args, **kwds)\n    189         self.__in_seq = 1\n    190 \n\n/Users/was/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/interfaces/expect.pyc in _start(self, alt_message, block_during_init)\n    457             failed_to_start.append(self.__name)\n    458             raise RuntimeError, \"Unable to start %s because the command '%s' failed.\\n%s\"%(\n--> 459                 self.__name, cmd, self._install_hints())\n    460 \n    461         os.chdir(current_path)\n\nRuntimeError: Unable to start Lisp because the command 'clisp-noreadline --silent -on-error abort' failed.\n\nsage: \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6294\n\n",
+    "created_at": "2009-06-15T09:21:19Z",
+    "labels": [
+        "interfaces",
+        "major",
+        "bug"
+    ],
+    "title": "lisp command in sage is now totally broken (because of ecl switch)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6294",
+    "user": "was"
+}
+```
 Assignee: was
 
 CC:  awebb
@@ -56,8 +66,25 @@ sage:
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6294
+
+
+
+
 
 ---
+
+archive/issue_comments_050233.json:
+```json
+{
+    "body": "Attachment\n\nAll I did was change the clisp command to ecl and the tests passed. The exception is version and I could not find an equivalent for ecl in the manual. For now I just put a string to refer to the console which does print the version number. I did not attempt to fill in any of the \"NotImplemented\" methods.\n\nAdam",
+    "created_at": "2009-07-12T11:32:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6294",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6294#issuecomment-50233",
+    "user": "awebb"
+}
+```
 
 Attachment
 
@@ -66,15 +93,37 @@ All I did was change the clisp command to ecl and the tests passed. The exceptio
 Adam
 
 
+
 ---
 
-Comment by timdumol created at 2009-08-30 09:40:28
+archive/issue_comments_050234.json:
+```json
+{
+    "body": "I applied the patch on Sage 4.1.1. Lisp interface seems to work properly, code seems clean, and the doctests passed.",
+    "created_at": "2009-08-30T09:40:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6294",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6294#issuecomment-50234",
+    "user": "timdumol"
+}
+```
 
 I applied the patch on Sage 4.1.1. Lisp interface seems to work properly, code seems clean, and the doctests passed.
 
 
+
 ---
 
-Comment by mvngu created at 2009-08-30 12:23:26
+archive/issue_comments_050235.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-08-30T12:23:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6294",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6294#issuecomment-50235",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

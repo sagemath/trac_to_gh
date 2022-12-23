@@ -1,11 +1,21 @@
 # Issue 9642: sage-maketest and sage-test-new should be able to run tests in parallel
 
-Issue created by migration from https://trac.sagemath.org/ticket/9642
-
-Original creator: mpatel
-
-Original creation time: 2010-07-29 22:46:39
-
+archive/issues_009642.json:
+```json
+{
+    "body": "Assignee: mvngu\n\nCC:  kcrisman\n\nReported on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/efae2db905b3ee8f/1a2312f22bc40d9a#1a2312f22bc40d9a) by K.-D. Crisman:\n\n```\nSubject: can sage -testall use threads?\n\nThat is, without setting NUM_THREADS or something.  I tried\n\n./sage -testall -p 8\n\nbut I just get lots of error messages in addition to my test output.\nI guess I have the same question about sage -tnew as well.\n```\n\n\nSomewhat related: #279\n\nIssue created by migration from https://trac.sagemath.org/ticket/9642\n\n",
+    "created_at": "2010-07-29T22:46:39Z",
+    "labels": [
+        "doctest coverage",
+        "minor",
+        "bug"
+    ],
+    "title": "sage-maketest and sage-test-new should be able to run tests in parallel",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9642",
+    "user": "mpatel"
+}
+```
 Assignee: mvngu
 
 CC:  kcrisman
@@ -26,37 +36,96 @@ I guess I have the same question about sage -tnew as well.
 
 Somewhat related: #279
 
+Issue created by migration from https://trac.sagemath.org/ticket/9642
+
+
+
+
 
 ---
 
-Comment by mpatel created at 2010-07-29 22:49:44
+archive/issue_comments_093462.json:
+```json
+{
+    "body": "It seems the `sage -testall` and `sage -tnew` operators invoke `SAGE_LOCAL/bin/sage-maketest` and `sage-test-new`, respectively.  To run the tests, both scripts use `sage -t`, which calls the serial doctest runner `sage-test`.  Moreover, `sage-test-new` does not pass along command-line arguments.",
+    "created_at": "2010-07-29T22:49:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9642",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9642#issuecomment-93462",
+    "user": "mpatel"
+}
+```
 
 It seems the `sage -testall` and `sage -tnew` operators invoke `SAGE_LOCAL/bin/sage-maketest` and `sage-test-new`, respectively.  To run the tests, both scripts use `sage -t`, which calls the serial doctest runner `sage-test`.  Moreover, `sage-test-new` does not pass along command-line arguments.
 
 
+
 ---
 
-Comment by roed created at 2013-03-14 20:39:39
+archive/issue_comments_093463.json:
+```json
+{
+    "body": "This is resolved by #12415.",
+    "created_at": "2013-03-14T20:39:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9642",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9642#issuecomment-93463",
+    "user": "roed"
+}
+```
 
 This is resolved by #12415.
 
 
+
 ---
 
-Comment by roed created at 2013-03-14 20:39:39
+archive/issue_comments_093464.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2013-03-14T20:39:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9642",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9642#issuecomment-93464",
+    "user": "roed"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by roed created at 2013-03-14 20:39:53
+archive/issue_comments_093465.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2013-03-14T20:39:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9642",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9642#issuecomment-93465",
+    "user": "roed"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-03-15 13:00:58
+archive/issue_comments_093466.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2013-03-15T13:00:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9642",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9642#issuecomment-93466",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: duplicate

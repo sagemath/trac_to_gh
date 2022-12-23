@@ -1,11 +1,21 @@
 # Issue 6340: var('x',ns=False)  -- should go boom but silently gives a new symbolic variable
 
-Issue created by migration from https://trac.sagemath.org/ticket/6340
-
-Original creator: was
-
-Original creation time: 2009-06-16 19:22:25
-
+archive/issues_006340.json:
+```json
+{
+    "body": "Assignee: burcin\n\n\n```\nsage: type(var('x',ns=False))\n<type 'sage.symbolic.expression.Expression'>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6340\n\n",
+    "created_at": "2009-06-16T19:22:25Z",
+    "labels": [
+        "calculus",
+        "major",
+        "bug"
+    ],
+    "title": "var('x',ns=False)  -- should go boom but silently gives a new symbolic variable",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6340",
+    "user": "was"
+}
+```
 Assignee: burcin
 
 
@@ -15,32 +25,80 @@ sage: type(var('x',ns=False))
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6340
+
+
+
+
 
 ---
 
-Comment by was created at 2009-06-16 19:25:48
+archive/issue_comments_050604.json:
+```json
+{
+    "body": "The fix should be to raise a DeprecationError... or possibly just a NotImplementedError...",
+    "created_at": "2009-06-16T19:25:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6340",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6340#issuecomment-50604",
+    "user": "was"
+}
+```
 
 The fix should be to raise a DeprecationError... or possibly just a NotImplementedError...
 
 
+
 ---
 
-Comment by kcrisman created at 2009-08-26 16:51:32
+archive/issue_comments_050605.json:
+```json
+{
+    "body": "This raises a NotImplementedError for ns=False, but still creates the variable for ns=1 or ns=True, with a verbose level 0 message.",
+    "created_at": "2009-08-26T16:51:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6340",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6340#issuecomment-50605",
+    "user": "kcrisman"
+}
+```
 
 This raises a NotImplementedError for ns=False, but still creates the variable for ns=1 or ns=True, with a verbose level 0 message.
 
 
+
 ---
 
-Comment by gmhossain created at 2009-09-05 21:55:19
+archive/issue_comments_050606.json:
+```json
+{
+    "body": "Patch at #6559 enhances symbolic variables definition. Unfortunately, the patch there\nwill conflict with the patch here.",
+    "created_at": "2009-09-05T21:55:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6340",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6340#issuecomment-50606",
+    "user": "gmhossain"
+}
+```
 
 Patch at #6559 enhances symbolic variables definition. Unfortunately, the patch there
 will conflict with the patch here.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-09-06 02:26:19
+archive/issue_comments_050607.json:
+```json
+{
+    "body": "It looks like #6559 functionality is better to incorporate first.  What happens after its inclusion with the following?\n\n```\nsage: var('z',ns=False)\n```\n\n\n```\nsage: var('z',ns=True)\n```\n\nThe results of these will help create a new patch, though that may not happen for a bit.  \n\nAlternately, since this one is small, one could review it positively (if it deserves to be) :) and then base the bigger patch at #6559 on it.",
+    "created_at": "2009-09-06T02:26:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6340",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6340#issuecomment-50607",
+    "user": "kcrisman"
+}
+```
 
 It looks like #6559 functionality is better to incorporate first.  What happens after its inclusion with the following?
 
@@ -58,23 +116,58 @@ The results of these will help create a new patch, though that may not happen fo
 Alternately, since this one is small, one could review it positively (if it deserves to be) :) and then base the bigger patch at #6559 on it.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-09-21 15:15:36
+archive/issue_comments_050608.json:
+```json
+{
+    "body": "Based on 4.1.1 and #6559",
+    "created_at": "2009-09-21T15:15:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6340",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6340#issuecomment-50608",
+    "user": "kcrisman"
+}
+```
 
 Based on 4.1.1 and #6559
 
 
+
 ---
+
+archive/issue_comments_050609.json:
+```json
+{
+    "body": "Attachment\n\nDepending on which one is reviewed first, here's a patch on top of #6559.  Should work identically.",
+    "created_at": "2009-09-21T15:16:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6340",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6340#issuecomment-50609",
+    "user": "kcrisman"
+}
+```
 
 Attachment
 
 Depending on which one is reviewed first, here's a patch on top of #6559.  Should work identically.
 
 
+
 ---
 
-Comment by jason created at 2009-09-22 15:56:49
+archive/issue_comments_050610.json:
+```json
+{
+    "body": "This should use the deprecation function instead of the verbose function.\n\nFor example (from matrix_rational_dense.pyx)\n\n\n```\n        from sage.misc.misc import deprecation\n        deprecation(\"'invert' is deprecated; use 'inverse' instead.\")\n```\n",
+    "created_at": "2009-09-22T15:56:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6340",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6340#issuecomment-50610",
+    "user": "jason"
+}
+```
 
 This should use the deprecation function instead of the verbose function.
 
@@ -88,23 +181,56 @@ For example (from matrix_rational_dense.pyx)
 
 
 
+
 ---
 
-Comment by burcin created at 2009-09-22 17:48:33
+archive/issue_comments_050611.json:
+```json
+{
+    "body": "I think `NotImplementedError` is OK for `ns=False`, but we should use a deprecation warning for `ns=1`.",
+    "created_at": "2009-09-22T17:48:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6340",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6340#issuecomment-50611",
+    "user": "burcin"
+}
+```
 
 I think `NotImplementedError` is OK for `ns=False`, but we should use a deprecation warning for `ns=1`.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-09-22 18:31:59
+archive/issue_comments_050612.json:
+```json
+{
+    "body": "This makes sense.  I've updated the first patch as per Burcin's idea, which seems most appropriate.",
+    "created_at": "2009-09-22T18:31:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6340",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6340#issuecomment-50612",
+    "user": "kcrisman"
+}
+```
 
 This makes sense.  I've updated the first patch as per Burcin's idea, which seems most appropriate.
 
 
+
 ---
 
-Comment by burcin created at 2009-09-22 18:57:50
+archive/issue_comments_050613.json:
+```json
+{
+    "body": "Sorry for not pointing this out earlier, but I suggest changing the block:\n\n\n```\n    if ('ns', False) in kwds.items(): \n        raise NotImplementedError, \"The new (Pynac) symbolics are now the only symbolics; please do not use keyword `ns` any longer.\" \n    if ('ns', True) in kwds.items(): \n        from sage.misc.misc import deprecation \n        deprecation(\"The new (Pynac) symbolics are now the only symbolics; please do not use keyword 'ns' any longer.\") \n```\n\n\nwith\n\n\n```\n    if kwds.has_key('ns'):\n        if kwds['ns']:\n            from sage.misc.misc import deprecation \n            deprecation(\"The new (Pynac) symbolics are now the only symbolics; please do not use keyword 'ns' any longer.\") \n        else:\n            raise NotImplementedError, \"The new (Pynac) symbolics are now the only symbolics; please do not use keyword `ns` any longer.\" \n```\n\n\nEven if `kwds` is expected to be empty, it is a waste to call `.items()`.\n\nPutting a check that `*args` is empty would also help. Dropping arguments silently is not very user friendly.",
+    "created_at": "2009-09-22T18:57:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6340",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6340#issuecomment-50613",
+    "user": "burcin"
+}
+```
 
 Sorry for not pointing this out earlier, but I suggest changing the block:
 
@@ -136,69 +262,172 @@ Even if `kwds` is expected to be empty, it is a waste to call `.items()`.
 Putting a check that `*args` is empty would also help. Dropping arguments silently is not very user friendly.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-09-22 19:02:46
+archive/issue_comments_050614.json:
+```json
+{
+    "body": "Yes, I knew there was a more elegant way to do it, but didn't have time to look it up.  As for *args, I think I can safely get rid of that completely, since there are no args, only keywords.  Patch coming up.",
+    "created_at": "2009-09-22T19:02:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6340",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6340#issuecomment-50614",
+    "user": "kcrisman"
+}
+```
 
 Yes, I knew there was a more elegant way to do it, but didn't have time to look it up.  As for *args, I think I can safely get rid of that completely, since there are no args, only keywords.  Patch coming up.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-09-22 19:43:34
+archive/issue_comments_050615.json:
+```json
+{
+    "body": "Based on 4.1.2.alpha2",
+    "created_at": "2009-09-22T19:43:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6340",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6340#issuecomment-50615",
+    "user": "kcrisman"
+}
+```
 
 Based on 4.1.2.alpha2
 
 
+
 ---
+
+archive/issue_comments_050616.json:
+```json
+{
+    "body": "Attachment\n\nThis should take care of it, I hope.",
+    "created_at": "2009-09-22T19:45:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6340",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6340#issuecomment-50616",
+    "user": "kcrisman"
+}
+```
 
 Attachment
 
 This should take care of it, I hope.
 
 
+
 ---
+
+archive/issue_comments_050617.json:
+```json
+{
+    "body": "Attachment\n\nmore doctest fixes",
+    "created_at": "2009-09-22T22:42:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6340",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6340#issuecomment-50617",
+    "user": "burcin"
+}
+```
 
 Attachment
 
 more doctest fixes
 
 
+
 ---
 
-Comment by burcin created at 2009-09-22 22:45:29
+archive/issue_comments_050618.json:
+```json
+{
+    "body": "Looks good to me. AFAICT, there were two more places using the `ns=1` option. attachment:trac_6340-missing_bits.patch should take care of them.\n\nApply only\n\n* attachment:trac_6340-var-ns.patch\n* attachment:trac_6340-missing_bits.patch",
+    "created_at": "2009-09-22T22:45:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6340",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6340#issuecomment-50618",
+    "user": "burcin"
+}
+```
 
 Looks good to me. AFAICT, there were two more places using the `ns=1` option. attachment:trac_6340-missing_bits.patch should take care of them.
 
 Apply only
 
- * attachment:trac_6340-var-ns.patch
- * attachment:trac_6340-missing_bits.patch
+* attachment:trac_6340-var-ns.patch
+* attachment:trac_6340-missing_bits.patch
+
 
 
 ---
 
-Comment by kcrisman created at 2009-09-23 00:56:10
+archive/issue_comments_050619.json:
+```json
+{
+    "body": "To release manager:  the \"missing bits\" may be covered in other patches reviewed related to symbolics, so do not merge if that one won't merge (simple enough!).",
+    "created_at": "2009-09-23T00:56:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6340",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6340#issuecomment-50619",
+    "user": "kcrisman"
+}
+```
 
 To release manager:  the "missing bits" may be covered in other patches reviewed related to symbolics, so do not merge if that one won't merge (simple enough!).
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-24 08:29:46
+archive/issue_comments_050620.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-09-24T08:29:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6340",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6340#issuecomment-50620",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-24 08:29:46
+archive/issue_comments_050621.json:
+```json
+{
+    "body": "Merged `trac_6340-var-ns.patch`.",
+    "created_at": "2009-09-24T08:29:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6340",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6340#issuecomment-50621",
+    "user": "mvngu"
+}
+```
 
 Merged `trac_6340-var-ns.patch`.
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-27 10:17:03
+archive/issue_comments_050622.json:
+```json
+{
+    "body": "There is no 4.1.2.alpha3. Sage 4.1.2.alpha3 was William Stein's release for working on making the notebook a standalone package.",
+    "created_at": "2009-09-27T10:17:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6340",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6340#issuecomment-50622",
+    "user": "mvngu"
+}
+```
 
 There is no 4.1.2.alpha3. Sage 4.1.2.alpha3 was William Stein's release for working on making the notebook a standalone package.

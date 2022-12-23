@@ -1,11 +1,21 @@
 # Issue 8513: Including documentation in the reference manual for some files related to graph theory
 
-Issue created by migration from https://trac.sagemath.org/ticket/8513
-
-Original creator: abmasse
-
-Original creation time: 2010-03-12 23:52:07
-
+archive/issues_008513.json:
+```json
+{
+    "body": "Assignee: rlm\n\nCC:  ncohen rlm\n\nKeywords: documentation, graph theory\n\nI noticed a few weeks ago while reviewing a patch that important files in the graph theory folder were not appearing anywhere in the reference manual. For instance, functions such as `vertex_cut` or `edge_cut` do not appear, as well as all functions defined only for directed graphs.\n\nAt that time, I thought about adding the missing files with the patch, but since there were a lot of warnings displayed by Sphinx while generating the documentation, I changed my mind.\n\nI think it would be a good idea to use this ticket to fix this, but since it touches many files of graph theory, it may be hard to do it in a clean way. Someone has an idea of what would be the best approach ?\n\nIssue created by migration from https://trac.sagemath.org/ticket/8513\n\n",
+    "created_at": "2010-03-12T23:52:07Z",
+    "labels": [
+        "graph theory",
+        "major",
+        "bug"
+    ],
+    "title": "Including documentation in the reference manual for some files related to graph theory",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8513",
+    "user": "abmasse"
+}
+```
 Assignee: rlm
 
 CC:  ncohen rlm
@@ -18,17 +28,43 @@ At that time, I thought about adding the missing files with the patch, but since
 
 I think it would be a good idea to use this ticket to fix this, but since it touches many files of graph theory, it may be hard to do it in a clean way. Someone has an idea of what would be the best approach ?
 
+Issue created by migration from https://trac.sagemath.org/ticket/8513
+
+
+
+
 
 ---
 
-Comment by mvngu created at 2010-03-13 00:33:09
+archive/issue_comments_076872.json:
+```json
+{
+    "body": "Wait until Sage 4.3.4 is released. I expect that release to fix all the warnings relating to building the HTML and PDF versions of the Sage standard documentation. At least, I expect that release to fix such warnings for the reference manual.",
+    "created_at": "2010-03-13T00:33:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8513#issuecomment-76872",
+    "user": "mvngu"
+}
+```
 
 Wait until Sage 4.3.4 is released. I expect that release to fix all the warnings relating to building the HTML and PDF versions of the Sage standard documentation. At least, I expect that release to fix such warnings for the reference manual.
 
 
+
 ---
 
-Comment by abmasse created at 2010-03-22 17:00:52
+archive/issue_comments_076873.json:
+```json
+{
+    "body": "Here are the warnings I get on my computer:\n\n\n```\n[~/Applications/sage/devel/sage-combinat/doc/en/reference]$ sage -docbuild reference html\nsphinx-build -b html -d /Users/alexandre/Applications/sage/devel/sage/doc/output/doctrees/en/reference    /Users/alexandre/Applications/sage/devel/sage/doc/en/reference /Users/alexandre/Applications/sage/devel/sage/doc/output/html/en/reference\nRunning Sphinx v0.6.3\nloading pickled environment... done\nbuilding [html]: targets for 612 source files that are out of date\nupdating environment: 2 added, 612 changed, 0 removed\nreading sources... [100%] sage/symbolic/ring                   curve_morphismtorcfield\n/Users/alexandre/Applications/sage/local/lib/python2.6/site-packages/sage/graphs/generic_graph.py:docstring of sage.graphs.generic_graph:3: (ERROR/3) Unexpected indentation.\n/Users/alexandre/Applications/sage/local/lib/python2.6/site-packages/sage/graphs/generic_graph.py:docstring of sage.graphs.generic_graph.GenericGraph.minimum_outdegree_orientation:7: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\n/Users/alexandre/Applications/sage/local/lib/python2.6/site-packages/sage/graphs/generic_graph.py:docstring of sage.graphs.generic_graph.GenericGraph.spanning_trees_count:18: (WARNING/2) Bullet list ends without a blank line; unexpected unindent.\n/Users/alexandre/Applications/sage/local/lib/python2.6/site-packages/sage/graphs/generic_graph.py:docstring of sage.graphs.generic_graph.GenericGraph.spanning_trees_count:27: (WARNING/2) Bullet list ends without a blank line; unexpected unindent.\n/Users/alexandre/Applications/sage/devel/sage/doc/en/reference/sage/graphs/generic_graph.rst:7926: (WARNING/2) Duplicate explicit target name: \"krg96\".\n/Users/alexandre/Applications/sage/devel/sage/doc/en/reference/sage/graphs/generic_graph.rst:7930: (WARNING/2) Duplicate explicit target name: \"gyll93\".\n/Users/alexandre/Applications/sage/devel/sage/doc/en/reference/sage/graphs/generic_graph.rst:7926: WARNING: duplicate citation KRG96, other instance in /Users/alexandre/Applications/sage/devel/sage/doc/en/reference/sage/graphs/generic_graph.rst\n/Users/alexandre/Applications/sage/devel/sage/doc/en/reference/sage/graphs/generic_graph.rst:7930: WARNING: duplicate citation GYLL93, other instance in /Users/alexandre/Applications/sage/devel/sage/doc/en/reference/sage/graphs/generic_graph.rst\nlooking for now-outdated files... none found\npickling environment... done\nchecking consistency... done\npreparing documents... done\nwriting output... [100%] structure                             urve_morphismtorcfield\nwriting additional files... genindex modindex search\ncopying images... media/homology/rp2.png media/homology/simplices.png media/homology/torus.png media/homology/klein.png media/homology/torus_labelled.png\ncopying static files... done\ndumping search index... done\ndumping object inventory... done\nbuild succeeded, 8 warnings.\nBuild finished.  The built documents can be found in /Users/alexandre/Applications/sage/devel/sage/doc/output/html/en/reference\n```\n\n\nI'll try to fix them and upload a patch soon.",
+    "created_at": "2010-03-22T17:00:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8513#issuecomment-76873",
+    "user": "abmasse"
+}
+```
 
 Here are the warnings I get on my computer:
 
@@ -67,23 +103,58 @@ Build finished.  The built documents can be found in /Users/alexandre/Applicatio
 I'll try to fix them and upload a patch soon.
 
 
+
 ---
 
-Comment by abmasse created at 2010-03-22 17:00:52
+archive/issue_comments_076874.json:
+```json
+{
+    "body": "Changing status from new to needs_work.",
+    "created_at": "2010-03-22T17:00:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8513#issuecomment-76874",
+    "user": "abmasse"
+}
+```
 
 Changing status from new to needs_work.
 
 
+
 ---
+
+archive/issue_comments_076875.json:
+```json
+{
+    "body": "Attachment\n\nAdds digraph.py and generic_graph.py in the doctree",
+    "created_at": "2010-03-22T19:49:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8513#issuecomment-76875",
+    "user": "abmasse"
+}
+```
 
 Attachment
 
 Adds digraph.py and generic_graph.py in the doctree
 
 
+
 ---
 
-Comment by abmasse created at 2010-03-22 19:51:35
+archive/issue_comments_076876.json:
+```json
+{
+    "body": "Finally, since there weren't too many warnings, I think it's worth trying to fix all of them. This is done in the patch I just submitted.\n\nTo summarize, this patch adds the two files digraph.py and generic_graph.py to the reference manual and correct the less than 10 warnings that Sphinx was displaying.\n\nNeeds review!",
+    "created_at": "2010-03-22T19:51:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8513#issuecomment-76876",
+    "user": "abmasse"
+}
+```
 
 Finally, since there weren't too many warnings, I think it's worth trying to fix all of them. This is done in the patch I just submitted.
 
@@ -92,23 +163,56 @@ To summarize, this patch adds the two files digraph.py and generic_graph.py to t
 Needs review!
 
 
+
 ---
 
-Comment by abmasse created at 2010-03-22 19:51:35
+archive/issue_comments_076877.json:
+```json
+{
+    "body": "Changing priority from major to minor.",
+    "created_at": "2010-03-22T19:51:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8513#issuecomment-76877",
+    "user": "abmasse"
+}
+```
 
 Changing priority from major to minor.
 
 
+
 ---
 
-Comment by abmasse created at 2010-03-22 19:51:35
+archive/issue_comments_076878.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-03-22T19:51:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8513#issuecomment-76878",
+    "user": "abmasse"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by ncohen created at 2010-03-23 10:54:58
+archive/issue_comments_076879.json:
+```json
+{
+    "body": "Excellent ! Now we appear in the doc, and there are no warnings anymore.\n\nReviewing your patch, I met a few things that needed fixing in the docs, so if you agree with my modifications, you can set this to positive review.. Thank you !! :-)\n\nNathann",
+    "created_at": "2010-03-23T10:54:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8513#issuecomment-76879",
+    "user": "ncohen"
+}
+```
 
 Excellent ! Now we appear in the doc, and there are no warnings anymore.
 
@@ -117,9 +221,20 @@ Reviewing your patch, I met a few things that needed fixing in the docs, so if y
 Nathann
 
 
+
 ---
 
-Comment by abmasse created at 2010-03-23 13:12:21
+archive/issue_comments_076880.json:
+```json
+{
+    "body": "I agree with your changes ! I just hope it won't overlap with any other ticket.\n\nBy the way, did you test my patch ? When I created it, I used the sage-combinat queue and it worked fine, but here, when I tried to test your patch, I created a clone (with `hg -clone t8513`) to apply your patch on top of mine, but I got the following warning.\n\n\n```\n[~/Applications/sage/devel/sage-t8513]$ sage -docbuild reference html\nsphinx-build -b html -d /Users/alexandre/Applications/sage/devel/sage/doc/output/doctrees/en/reference    /Users/alexandre/Applications/sage/devel/sage/doc/en/reference /Users/alexandre/Applications/sage/devel/sage/doc/output/html/en/reference\nRunning Sphinx v0.6.3\nloading pickled environment... done\nbuilding [html]: targets for 2 source files that are out of date\nupdating environment: 0 added, 2 changed, 0 removed\nreading sources... [100%] sage/graphs/graph                          \n/Users/alexandre/Applications/sage/devel/sage/doc/en/reference/graphs.rst:4: (WARNING/2) toctree references unknown document u'sage/graphs/digraph'\n/Users/alexandre/Applications/sage/devel/sage/doc/en/reference/graphs.rst:4: (WARNING/2) toctree references unknown document u'sage/graphs/generic_graph'\nlooking for now-outdated files... none found\npickling environment... done\nchecking consistency... done\npreparing documents... done\nwriting output... [100%] sage/graphs/graph                           \nwriting additional files... genindex modindex search\ncopying static files... done\ndumping search index... done\ndumping object inventory... done\nbuild succeeded, 2 warnings.\n```\n\n\nIt's strange, it doesn't accept to add the two files to the doctree, as if the path was not correct when creating a clone, but was ok with sage-combinat. Does it work fine for you?",
+    "created_at": "2010-03-23T13:12:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8513#issuecomment-76880",
+    "user": "abmasse"
+}
+```
 
 I agree with your changes ! I just hope it won't overlap with any other ticket.
 
@@ -152,9 +267,20 @@ build succeeded, 2 warnings.
 It's strange, it doesn't accept to add the two files to the doctree, as if the path was not correct when creating a clone, but was ok with sage-combinat. Does it work fine for you?
 
 
+
 ---
 
-Comment by ncohen created at 2010-03-23 13:34:44
+archive/issue_comments_076881.json:
+```json
+{
+    "body": "O_o\n\nOdd.... I applied your patch as usual, and I mean by this not using sage-combinat. It applied fine, and passed all tests. After my modifications, same result O_o\n\nHave you tried cloning the branch using sage -clone instead of doing it manually with hg ?\n\nNathann",
+    "created_at": "2010-03-23T13:34:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8513#issuecomment-76881",
+    "user": "ncohen"
+}
+```
 
 O_o
 
@@ -165,35 +291,92 @@ Have you tried cloning the branch using sage -clone instead of doing it manually
 Nathann
 
 
+
 ---
 
-Comment by abmasse created at 2010-03-23 14:08:03
+archive/issue_comments_076882.json:
+```json
+{
+    "body": "No idea... Anyway, I'll try it with the sage-combinat queue to look at the documentation generated by your patch and it should be fine.",
+    "created_at": "2010-03-23T14:08:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8513#issuecomment-76882",
+    "user": "abmasse"
+}
+```
 
 No idea... Anyway, I'll try it with the sage-combinat queue to look at the documentation generated by your patch and it should be fine.
 
 
+
 ---
+
+archive/issue_comments_076883.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-04-12T19:59:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8513#issuecomment-76883",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mvngu created at 2010-04-12 20:01:58
+archive/issue_comments_076884.json:
+```json
+{
+    "body": "I have replaced ncohen's patch with one that has the ticket number in its commit message.",
+    "created_at": "2010-04-12T20:01:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8513#issuecomment-76884",
+    "user": "mvngu"
+}
+```
 
 I have replaced ncohen's patch with one that has the ticket number in its commit message.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-12 21:50:06
+archive/issue_comments_076885.json:
+```json
+{
+    "body": "I don't know much about graph theory, but is there any sense to the current order in the reference manual?  Wouldn't it make more sense for `graph` to come first, for example, rather than `cliquer`?  I don't think alphabetical is the right approach: someone who wants to know about graphs in Sage may very well start at the first link in the \"Graph Theory\" chapter.  (It might be even better to have an introductory section in the file devel/sage/doc/en/reference/graphs.rst (like matrices.rst, for example).  That probably belongs on another ticket, though.)",
+    "created_at": "2010-04-12T21:50:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8513#issuecomment-76885",
+    "user": "jhpalmieri"
+}
+```
 
 I don't know much about graph theory, but is there any sense to the current order in the reference manual?  Wouldn't it make more sense for `graph` to come first, for example, rather than `cliquer`?  I don't think alphabetical is the right approach: someone who wants to know about graphs in Sage may very well start at the first link in the "Graph Theory" chapter.  (It might be even better to have an introductory section in the file devel/sage/doc/en/reference/graphs.rst (like matrices.rst, for example).  That probably belongs on another ticket, though.)
 
 
+
 ---
 
-Comment by abmasse created at 2010-04-12 22:02:23
+archive/issue_comments_076886.json:
+```json
+{
+    "body": "Replying to [comment:9 jhpalmieri]:\n> I don't know much about graph theory, but is there any sense to the current order in the reference manual?  Wouldn't it make more sense for `graph` to come first, for example, rather than `cliquer`?  I don't think alphabetical is the right approach: someone who wants to know about graphs in Sage may very well start at the first link in the \"Graph Theory\" chapter.  (It might be even better to have an introductory section in the file devel/sage/doc/en/reference/graphs.rst (like matrices.rst, for example).  That probably belongs on another ticket, though.)\n\nI agree with you! There is some cleanup needed in the documentation. But maybe we should wait for it in another ticket. The goal of #8513 is to quickly make the graph documentation available so that one may check if Sphinx builds all right when reviewing related tickets. If it's ok for you, of course.\n\nSorry for being so late, by the way, Nathann, I'll try to finish this ticket today or at most, during the week.",
+    "created_at": "2010-04-12T22:02:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8513#issuecomment-76886",
+    "user": "abmasse"
+}
+```
 
 Replying to [comment:9 jhpalmieri]:
 > I don't know much about graph theory, but is there any sense to the current order in the reference manual?  Wouldn't it make more sense for `graph` to come first, for example, rather than `cliquer`?  I don't think alphabetical is the right approach: someone who wants to know about graphs in Sage may very well start at the first link in the "Graph Theory" chapter.  (It might be even better to have an introductory section in the file devel/sage/doc/en/reference/graphs.rst (like matrices.rst, for example).  That probably belongs on another ticket, though.)
@@ -203,9 +386,20 @@ I agree with you! There is some cleanup needed in the documentation. But maybe w
 Sorry for being so late, by the way, Nathann, I'll try to finish this ticket today or at most, during the week.
 
 
+
 ---
 
-Comment by mvngu created at 2010-04-12 22:18:55
+archive/issue_comments_076887.json:
+```json
+{
+    "body": "Replying to [comment:9 jhpalmieri]:\n> I don't know much about graph theory, but is there any sense to the current order in the reference manual?\n\nNo, I don't think so. The current organization is a mess.\n\n\n\n\n\n> Wouldn't it make more sense for `graph` to come first, for example, rather than `cliquer`?  \n\nYes. The current organization of the graph theory modules, as they appear in the reference manual, is rather unusual. For example, the interface to cliquer appears as the very first link. One would expect something along the following line to be more natural:\n\n   * undirected graph\n   * digraph\n   * generic graph\n   * applications of graph theory\n   * fast compiled graph\n   * etc. \n\nI have uploaded a reviewer patch that does something about this. With my reviewer patch, the organization of the graph theory modules should be more systematic.\n\n\n\n\n\n> I don't think alphabetical is the right approach: someone who wants to know about graphs in Sage may very well start at the first link in the \"Graph Theory\" chapter.  (It might be even better to have an introductory section in the file devel/sage/doc/en/reference/graphs.rst (like matrices.rst, for example).  That probably belongs on another ticket, though.)\n\nNod. This needs to wait for another ticket.\n\n\n\n\nAfter applying [trac_8513_graph_theory_documentation-abm.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8513/trac_8513_graph_theory_documentation-abm.patch) and [trac_8513_graph_theory_documentation-smallfixes.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8513/trac_8513_graph_theory_documentation-smallfixes.patch), I then rebuilt the whole Sage documentation. A long doctest of the whole Sage library resulted in the following failure:\n\n```\nsage -t -long devel/sage-main/sage/misc/sagedoc.py\n**********************************************************************\nFile \"/dev/shm/mvngu/sandbox/sage-4.3.5-8513-graph-doc/devel/sage-main/sage/misc/sagedoc.py\", line 892:\n    sage: len(search_doc('tree', whole_word=True, interact=False).splitlines()) < 100\nExpected:\n    True\nGot:\n    False\n```\n\nThis is due to adding two new files to the reference manual that happen to be about graph theory, hence the above search returns more matches for the word \"tree\". My reviewer patch should fix this doctest failure. It needs reviewing by anyone but me. I'm happy with both abmasse and ncohen's patches. Apply patches in the following order:\n\n1. [trac_8513_graph_theory_documentation-abm.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8513/trac_8513_graph_theory_documentation-abm.patch)\n2. [trac_8513_graph_theory_documentation-smallfixes.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8513/trac_8513_graph_theory_documentation-smallfixes.patch)\n3. [trac_8513-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8513/trac_8513-reviewer.patch)",
+    "created_at": "2010-04-12T22:18:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8513#issuecomment-76887",
+    "user": "mvngu"
+}
+```
 
 Replying to [comment:9 jhpalmieri]:
 > I don't know much about graph theory, but is there any sense to the current order in the reference manual?
@@ -220,12 +414,12 @@ No, I don't think so. The current organization is a mess.
 
 Yes. The current organization of the graph theory modules, as they appear in the reference manual, is rather unusual. For example, the interface to cliquer appears as the very first link. One would expect something along the following line to be more natural:
 
- * undirected graph
- * digraph
- * generic graph
- * applications of graph theory
- * fast compiled graph
- * etc. 
+   * undirected graph
+   * digraph
+   * generic graph
+   * applications of graph theory
+   * fast compiled graph
+   * etc. 
 
 I have uploaded a reviewer patch that does something about this. With my reviewer patch, the organization of the graph theory modules should be more systematic.
 
@@ -255,51 +449,119 @@ Got:
 
 This is due to adding two new files to the reference manual that happen to be about graph theory, hence the above search returns more matches for the word "tree". My reviewer patch should fix this doctest failure. It needs reviewing by anyone but me. I'm happy with both abmasse and ncohen's patches. Apply patches in the following order:
 
- 1. [trac_8513_graph_theory_documentation-abm.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8513/trac_8513_graph_theory_documentation-abm.patch)
- 1. [trac_8513_graph_theory_documentation-smallfixes.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8513/trac_8513_graph_theory_documentation-smallfixes.patch)
- 1. [trac_8513-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8513/trac_8513-reviewer.patch)
+1. [trac_8513_graph_theory_documentation-abm.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8513/trac_8513_graph_theory_documentation-abm.patch)
+2. [trac_8513_graph_theory_documentation-smallfixes.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8513/trac_8513_graph_theory_documentation-smallfixes.patch)
+3. [trac_8513-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8513/trac_8513-reviewer.patch)
+
 
 
 ---
 
-Comment by abmasse created at 2010-04-12 22:51:28
+archive/issue_comments_076888.json:
+```json
+{
+    "body": "I'm running the longtest on all sage right now. Giving some feedback later tonight.",
+    "created_at": "2010-04-12T22:51:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8513#issuecomment-76888",
+    "user": "abmasse"
+}
+```
 
 I'm running the longtest on all sage right now. Giving some feedback later tonight.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-12 23:25:17
+archive/issue_comments_076889.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-04-12T23:25:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8513#issuecomment-76889",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-12 23:25:17
+archive/issue_comments_076890.json:
+```json
+{
+    "body": "> My reviewer patch should fix this doctest failure. It needs reviewing by anyone but me.\n\nYour patch fixes the problem, but it doesn't really fit in sagedoc.py: the doctests there are supposed to contrast what happens if `whole_word=True` is not used (more than 2000 matches) vs. when it is (used to be fewer than 100 matches).  How about changing it to `len(...) < 150` or `len(...) < 200`?",
+    "created_at": "2010-04-12T23:25:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8513#issuecomment-76890",
+    "user": "jhpalmieri"
+}
+```
 
 > My reviewer patch should fix this doctest failure. It needs reviewing by anyone but me.
 
 Your patch fixes the problem, but it doesn't really fit in sagedoc.py: the doctests there are supposed to contrast what happens if `whole_word=True` is not used (more than 2000 matches) vs. when it is (used to be fewer than 100 matches).  How about changing it to `len(...) < 150` or `len(...) < 200`?
 
 
+
 ---
+
+archive/issue_comments_076891.json:
+```json
+{
+    "body": "Attachment\n\nreviewer patch",
+    "created_at": "2010-04-12T23:32:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8513#issuecomment-76891",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
 reviewer patch
 
 
+
 ---
 
-Comment by mvngu created at 2010-04-12 23:35:31
+archive/issue_comments_076892.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-04-12T23:35:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8513#issuecomment-76892",
+    "user": "mvngu"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by mvngu created at 2010-04-12 23:35:31
+archive/issue_comments_076893.json:
+```json
+{
+    "body": "Replying to [comment:13 jhpalmieri]:\n> Your patch fixes the problem, but it doesn't really fit in sagedoc.py: the doctests there are supposed to contrast what happens if `whole_word=True` is not used (more than 2000 matches) vs. when it is (used to be fewer than 100 matches).  How about changing it to `len(...) < 150` or `len(...) < 200`?\n\nI see what you mean. Performing a search with `whole_word=False` results in too many matches. When using `whole_word=True`, we want to provide an upper bound on the number of matches. I have modified the reviewer patch accordingly.",
+    "created_at": "2010-04-12T23:35:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8513#issuecomment-76893",
+    "user": "mvngu"
+}
+```
 
 Replying to [comment:13 jhpalmieri]:
 > Your patch fixes the problem, but it doesn't really fit in sagedoc.py: the doctests there are supposed to contrast what happens if `whole_word=True` is not used (more than 2000 matches) vs. when it is (used to be fewer than 100 matches).  How about changing it to `len(...) < 150` or `len(...) < 200`?
@@ -307,16 +569,38 @@ Replying to [comment:13 jhpalmieri]:
 I see what you mean. Performing a search with `whole_word=False` results in too many matches. When using `whole_word=True`, we want to provide an upper bound on the number of matches. I have modified the reviewer patch accordingly.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-13 02:56:36
+archive/issue_comments_076894.json:
+```json
+{
+    "body": "I'm happy with the reviewer patch now.  After rebuilding the docs, all tests pass on sage.math.  Does that mean the whole ticket gets a positive review?",
+    "created_at": "2010-04-13T02:56:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8513#issuecomment-76894",
+    "user": "jhpalmieri"
+}
+```
 
 I'm happy with the reviewer patch now.  After rebuilding the docs, all tests pass on sage.math.  Does that mean the whole ticket gets a positive review?
 
 
+
 ---
 
-Comment by abmasse created at 2010-04-13 13:55:07
+archive/issue_comments_076895.json:
+```json
+{
+    "body": "Replying to [comment:15 jhpalmieri]:\n> I'm happy with the reviewer patch now.  After rebuilding the docs, all tests pass on sage.math.  Does that mean the whole ticket gets a positive review?\n\nSure, if you're ok with the result. It's even better if the final reviewer isn't Nathann nor me.",
+    "created_at": "2010-04-13T13:55:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8513#issuecomment-76895",
+    "user": "abmasse"
+}
+```
 
 Replying to [comment:15 jhpalmieri]:
 > I'm happy with the reviewer patch now.  After rebuilding the docs, all tests pass on sage.math.  Does that mean the whole ticket gets a positive review?
@@ -324,9 +608,20 @@ Replying to [comment:15 jhpalmieri]:
 Sure, if you're ok with the result. It's even better if the final reviewer isn't Nathann nor me.
 
 
+
 ---
 
-Comment by mvngu created at 2010-04-13 23:33:03
+archive/issue_comments_076896.json:
+```json
+{
+    "body": "Replying to [comment:15 jhpalmieri]:\n> I'm happy with the reviewer patch now.  After rebuilding the docs, all tests pass on sage.math.  Does that mean the whole ticket gets a positive review?\n\nI think so. Cleaning up the modules added by this ticket to the reference manual can be split off to an enhancement ticket.",
+    "created_at": "2010-04-13T23:33:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8513#issuecomment-76896",
+    "user": "mvngu"
+}
+```
 
 Replying to [comment:15 jhpalmieri]:
 > I'm happy with the reviewer patch now.  After rebuilding the docs, all tests pass on sage.math.  Does that mean the whole ticket gets a positive review?
@@ -334,32 +629,76 @@ Replying to [comment:15 jhpalmieri]:
 I think so. Cleaning up the modules added by this ticket to the reference manual can be split off to an enhancement ticket.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-14 05:24:03
+archive/issue_comments_076897.json:
+```json
+{
+    "body": "See #8684 for a follow-up ticket, the purpose of which is to organize the graph theory stuff in the reference manual.  I'm not going to do this myself, since I don't know enough about graph theory in general, or the graph theory in Sage, to know how to organize it.",
+    "created_at": "2010-04-14T05:24:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8513#issuecomment-76897",
+    "user": "jhpalmieri"
+}
+```
 
 See #8684 for a follow-up ticket, the purpose of which is to organize the graph theory stuff in the reference manual.  I'm not going to do this myself, since I don't know enough about graph theory in general, or the graph theory in Sage, to know how to organize it.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-14 05:24:03
+archive/issue_comments_076898.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-04-14T05:24:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8513#issuecomment-76898",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-16 18:46:01
+archive/issue_comments_076899.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-04-16T18:46:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8513#issuecomment-76899",
+    "user": "jhpalmieri"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-16 18:46:01
+archive/issue_comments_076900.json:
+```json
+{
+    "body": "Merged in 4.4.alpha0:\n- trac_8513_graph_theory_documentation-abm.patch\n- trac_8513_graph_theory_documentation-smallfixes.patch\n- trac_8513-reviewer.patch",
+    "created_at": "2010-04-16T18:46:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8513#issuecomment-76900",
+    "user": "jhpalmieri"
+}
+```
 
 Merged in 4.4.alpha0:
- - trac_8513_graph_theory_documentation-abm.patch
- - trac_8513_graph_theory_documentation-smallfixes.patch
- - trac_8513-reviewer.patch
+- trac_8513_graph_theory_documentation-abm.patch
+- trac_8513_graph_theory_documentation-smallfixes.patch
+- trac_8513-reviewer.patch

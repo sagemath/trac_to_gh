@@ -1,26 +1,62 @@
 # Issue 2866: [with patch, needs review] use tempfile.NamedTemporaryFile for unit tests
 
-Issue created by migration from https://trac.sagemath.org/ticket/2866
-
-Original creator: yi
-
-Original creation time: 2008-04-09 23:05:27
-
+archive/issues_002866.json:
+```json
+{
+    "body": "Assignee: yi\n\nSwitch from using hard coded 'test.db' to use the tempfile module's NamedTemporaryFile().\n\nIssue created by migration from https://trac.sagemath.org/ticket/2866\n\n",
+    "created_at": "2008-04-09T23:05:27Z",
+    "labels": [
+        "dsage",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch, needs review] use tempfile.NamedTemporaryFile for unit tests",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2866",
+    "user": "yi"
+}
+```
 Assignee: yi
 
 Switch from using hard coded 'test.db' to use the tempfile module's NamedTemporaryFile().
 
+Issue created by migration from https://trac.sagemath.org/ticket/2866
+
+
+
+
 
 ---
 
-Comment by yi created at 2008-04-09 23:54:36
+archive/issue_comments_019669.json:
+```json
+{
+    "body": "William reviewed it looking over my shoulder =)",
+    "created_at": "2008-04-09T23:54:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2866",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2866#issuecomment-19669",
+    "user": "yi"
+}
+```
 
 William reviewed it looking over my shoulder =)
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-10 00:34:00
+archive/issue_comments_019670.json:
+```json
+{
+    "body": "I like this patch, but it doesn't pass doctests:\n\n```\nsage -t -long devel/sage/sage/dsage/tests/testdoc.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.0.alpha4/tmp/testdoc.py\", line 6:\n    sage: dsage.server(blocking=False, port=port, verbose=False, ssl=False, log_level=3)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.0.alpha4/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[3]>\", line 1, in <module>\n        dsage.server(blocking=False, port=port, verbose=False, ssl=False, log_level=Integer(3))###line 6:\n    sage: dsage.server(blocking=False, port=port, verbose=False, ssl=False, log_level=3)\n      File \"/scratch/mabshoff/release-cycle/sage-3.0.alpha4/local/lib/python2.5/site-packages/sage/dsage/dsage.py\", line 228, in server\n        db_file = test_db.name\n    NameError: global name 'test_db' is not defined\n```\n\nRepeat after me: **No positive review without at least minimal doctesting** ;)\n\nCheers,\n\nMichael",
+    "created_at": "2008-04-10T00:34:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2866",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2866#issuecomment-19670",
+    "user": "mabshoff"
+}
+```
 
 I like this patch, but it doesn't pass doctests:
 
@@ -41,23 +77,47 @@ Exception raised:
     NameError: global name 'test_db' is not defined
 ```
 
-Repeat after me: *No positive review without at least minimal doctesting* ;)
+Repeat after me: **No positive review without at least minimal doctesting** ;)
 
 Cheers,
 
 Michael
 
 
+
 ---
+
+archive/issue_comments_019671.json:
+```json
+{
+    "body": "Attachment\n\nThanks for catching this, I updated the patch, it was a one liner blunder! Could you please reapply, should pass doctests now on sage.math at least :-)",
+    "created_at": "2008-04-10T01:44:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2866",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2866#issuecomment-19671",
+    "user": "yi"
+}
+```
 
 Attachment
 
 Thanks for catching this, I updated the patch, it was a one liner blunder! Could you please reapply, should pass doctests now on sage.math at least :-)
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-10 03:14:03
+archive/issue_comments_019672.json:
+```json
+{
+    "body": "The updated patch fixes the issue and is also a proper Mercurial patch.\n\nCheers,\n\nMichael",
+    "created_at": "2008-04-10T03:14:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2866",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2866#issuecomment-19672",
+    "user": "mabshoff"
+}
+```
 
 The updated patch fixes the issue and is also a proper Mercurial patch.
 
@@ -66,15 +126,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-10 03:14:16
+archive/issue_comments_019673.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-04-10T03:14:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2866",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2866#issuecomment-19673",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-10 03:14:16
+archive/issue_comments_019674.json:
+```json
+{
+    "body": "Merged in Sage 3.0.alpha4",
+    "created_at": "2008-04-10T03:14:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2866",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2866#issuecomment-19674",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.alpha4

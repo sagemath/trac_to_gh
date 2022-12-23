@@ -1,11 +1,21 @@
 # Issue 4741: [with patch, not yet ready for review] Implement S-integral point finding for elliptic curves over Q
 
-Issue created by migration from https://trac.sagemath.org/ticket/4741
-
-Original creator: cremona
-
-Original creation time: 2008-12-08 12:37:24
-
+archive/issues_004741.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  mardaus tnagel\n\nThis follows on from #3674, where integral points for elliptic curves over Q were implemented.\n\nThe work here was done (again) by Tobias Nagel and Michael Mardaus, with some necessary backup functionality for elliptic curve local data by me (John Cremona) which has already been merged.\n\nTwo functions are defined:  (1) `padic_elliptic_logarithm()` for points on curves over number fields, in ell_point.py; (2) `S_integral_points()` for curves over Q only (so far!), in ell_rational field.py.\n\nThe patch s_int_pts.patch applies to 3.2.1 + the patches at #4715.  Should be ready for review soon...\n\nIssue created by migration from https://trac.sagemath.org/ticket/4741\n\n",
+    "created_at": "2008-12-08T12:37:24Z",
+    "labels": [
+        "number theory",
+        "major",
+        "enhancement"
+    ],
+    "title": "[with patch, not yet ready for review] Implement S-integral point finding for elliptic curves over Q",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4741",
+    "user": "cremona"
+}
+```
 Assignee: was
 
 CC:  mardaus tnagel
@@ -18,61 +28,135 @@ Two functions are defined:  (1) `padic_elliptic_logarithm()` for points on curve
 
 The patch s_int_pts.patch applies to 3.2.1 + the patches at #4715.  Should be ready for review soon...
 
+Issue created by migration from https://trac.sagemath.org/ticket/4741
+
+
+
+
 
 ---
+
+archive/issue_comments_035829.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-12-08T15:21:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4741",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35829",
+    "user": "cremona"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by cremona created at 2008-12-08 15:28:05
+archive/issue_comments_035830.json:
+```json
+{
+    "body": "The second patch fixes various issues with the padic_log function:\n\n1. Bug: points of finite order have log 0 and this case should be dealt with at the beginning.  The code breaks on E(0), for example.\n2. I deleted the \"print_mode\" parameter since it was actually changing the output type from p-adic to rational;  callers can lift if they want.\n3. The test \"if xde == p**(xde.valuation(p))\" seems to be wrong.  I changed it to \"if x.valuation(p)>=0\", which is the condition that P is not in the formal group.\n4. It did not multiply P by the Tamagawa exponent.\n5. It did not divide the answer by the factor you multiplied the point by! \n6. The precision was artificially capped at 20, since the prec parameter to log() was not used and defaults to 20.  That is the precision of the power series in t, where we will substitute t=-x/y, so I added \"prec=1+precision//v\"  where v is the valuation of -x/y.  (N.B. in `E^1` one has val(x)=-2*v and val(y)=-3*v for some v>0, so v=val(-x/y).\n7. I added some doctests to show that log(k*P)/log(P)==k in various examples.  That is how I discovered the precision problem.  Now it looks pretty good.",
+    "created_at": "2008-12-08T15:28:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4741",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35830",
+    "user": "cremona"
+}
+```
 
 The second patch fixes various issues with the padic_log function:
 
-    1. Bug: points of finite order have log 0 and this case should be dealt with at the beginning.  The code breaks on E(0), for example.
-    2. I deleted the "print_mode" parameter since it was actually changing the output type from p-adic to rational;  callers can lift if they want.
-    3. The test "if xde == p**(xde.valuation(p))" seems to be wrong.  I changed it to "if x.valuation(p)>=0", which is the condition that P is not in the formal group.
-    4. It did not multiply P by the Tamagawa exponent.
-    5. It did not divide the answer by the factor you multiplied the point by! 
-    6. The precision was artificially capped at 20, since the prec parameter to log() was not used and defaults to 20.  That is the precision of the power series in t, where we will substitute t=-x/y, so I added "prec=1+precision//v"  where v is the valuation of -x/y.  (N.B. in `E^1` one has val(x)=-2*v and val(y)=-3*v for some v>0, so v=val(-x/y).
-    7. I added some doctests to show that log(k*P)/log(P)==k in various examples.  That is how I discovered the precision problem.  Now it looks pretty good.
+1. Bug: points of finite order have log 0 and this case should be dealt with at the beginning.  The code breaks on E(0), for example.
+2. I deleted the "print_mode" parameter since it was actually changing the output type from p-adic to rational;  callers can lift if they want.
+3. The test "if xde == p**(xde.valuation(p))" seems to be wrong.  I changed it to "if x.valuation(p)>=0", which is the condition that P is not in the formal group.
+4. It did not multiply P by the Tamagawa exponent.
+5. It did not divide the answer by the factor you multiplied the point by! 
+6. The precision was artificially capped at 20, since the prec parameter to log() was not used and defaults to 20.  That is the precision of the power series in t, where we will substitute t=-x/y, so I added "prec=1+precision//v"  where v is the valuation of -x/y.  (N.B. in `E^1` one has val(x)=-2*v and val(y)=-3*v for some v>0, so v=val(-x/y).
+7. I added some doctests to show that log(k*P)/log(P)==k in various examples.  That is how I discovered the precision problem.  Now it looks pretty good.
+
 
 
 ---
+
+archive/issue_comments_035831.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-12-11T14:18:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4741",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35831",
+    "user": "cremona"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by cremona created at 2008-12-11 14:18:59
+archive/issue_comments_035832.json:
+```json
+{
+    "body": "The third patch fixes a bug (missed a 2-integral points on 37a1) and makes  `S_integral_x_coords_with_abs_bounded_by()` slightly more efficient, but we are way slower than Magma and I think that the main culprits are that function and  `S_integral_points_with_bounded_mw_coeffs()`.   In the integral points case we made the latter much faster by using real points (since you can tell if a real number is approximately integral) but th analogous thing for S-integral points is more complicated.  Rather than wait, as we are getting the right points (after substantial testing against Magma, for example), I would like this to go in now and we can look into making things faster later.\n\nDetails of what is in the 3rd patch:\n1. p-adic elliptic log: default precision now 20 not 100, which works fine.  Also converts points to p-adic earlier which avoids dealing with large rationals when the multiplier factor is needed.\n2. Calls to p-adic log from S_integral_points() now multiply by the necessary factor after taking logs instead of before: it is a homomorphism, and again this avoinds dealing with larger rationals.\n3. Correct use of proof flag (though it is rather crude that when proof==False we just omit the time-consuming call to  S_integral_x_coords_with_abs_bounded_by(abs_bound)).\n4. Some speed improvements to S_integral_x_coords_with_abs_bounded_by(), and improved comments including some TODOs.\n\n[Note to Tobias and Michael M: this patch includes the changes in the patch you sent me.]\n\nI have a timing comparison table and will include it here once I have worked out how to do wiki tables.",
+    "created_at": "2008-12-11T14:18:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4741",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35832",
+    "user": "cremona"
+}
+```
 
 The third patch fixes a bug (missed a 2-integral points on 37a1) and makes  `S_integral_x_coords_with_abs_bounded_by()` slightly more efficient, but we are way slower than Magma and I think that the main culprits are that function and  `S_integral_points_with_bounded_mw_coeffs()`.   In the integral points case we made the latter much faster by using real points (since you can tell if a real number is approximately integral) but th analogous thing for S-integral points is more complicated.  Rather than wait, as we are getting the right points (after substantial testing against Magma, for example), I would like this to go in now and we can look into making things faster later.
 
 Details of what is in the 3rd patch:
-    1. p-adic elliptic log: default precision now 20 not 100, which works fine.  Also converts points to p-adic earlier which avoids dealing with large rationals when the multiplier factor is needed.
-    2. Calls to p-adic log from S_integral_points() now multiply by the necessary factor after taking logs instead of before: it is a homomorphism, and again this avoinds dealing with larger rationals.
-    3. Correct use of proof flag (though it is rather crude that when proof==False we just omit the time-consuming call to  S_integral_x_coords_with_abs_bounded_by(abs_bound)).
-    4. Some speed improvements to S_integral_x_coords_with_abs_bounded_by(), and improved comments including some TODOs.
+1. p-adic elliptic log: default precision now 20 not 100, which works fine.  Also converts points to p-adic earlier which avoids dealing with large rationals when the multiplier factor is needed.
+2. Calls to p-adic log from S_integral_points() now multiply by the necessary factor after taking logs instead of before: it is a homomorphism, and again this avoinds dealing with larger rationals.
+3. Correct use of proof flag (though it is rather crude that when proof==False we just omit the time-consuming call to  S_integral_x_coords_with_abs_bounded_by(abs_bound)).
+4. Some speed improvements to S_integral_x_coords_with_abs_bounded_by(), and improved comments including some TODOs.
 
 [Note to Tobias and Michael M: this patch includes the changes in the patch you sent me.]
 
 I have a timing comparison table and will include it here once I have worked out how to do wiki tables.
 
 
+
 ---
 
-Comment by cremona created at 2008-12-11 14:53:19
+archive/issue_comments_035833.json:
+```json
+{
+    "body": "I keep on thinking of more things which should be done to speed this up.  I'm putting them here so they do not get lost.\n\np-adic elliptic log:  we call this on several points for each prime, but a lot of the code does not depend on the point (construction of p-adic field, and the formal group, and the series), so this code should be reorganised: this probably means having a new class to store all that stuff.",
+    "created_at": "2008-12-11T14:53:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4741",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35833",
+    "user": "cremona"
+}
+```
 
 I keep on thinking of more things which should be done to speed this up.  I'm putting them here so they do not get lost.
 
 p-adic elliptic log:  we call this on several points for each prime, but a lot of the code does not depend on the point (construction of p-adic field, and the formal group, and the series), so this code should be reorganised: this probably means having a new class to store all that stuff.
 
 
+
 ---
 
-Comment by mardaus created at 2008-12-12 06:48:56
+archive/issue_comments_035834.json:
+```json
+{
+    "body": "Hey John,\n\nI'm having a hard time with the latest patch. It does not apply on a fresh clone from 3.2.1 with the patches from ticket 4715 and the 2 others from this ticket.\n\nIt gives me:\n\n```\npatching file sage/schemes/elliptic_curves/ell_rational_field.py\nHunk #1 FAILED at 4532\nHunk #4 succeeded at 4611 with fuzz 2 (offset 0 lines).\nHunk #5 FAILED at 4633\nHunk #6 FAILED at 4655\nHunk #11 FAILED at 4822\nHunk #12 FAILED at 4845\n5 out of 16 hunks FAILED -- saving rejects to file sage/schemes/elliptic_curves/ell_rational_field.py.rej\nabort: patch failed to apply\n```\n\nwhen I try. Perhaps you changed something else in your file before exporting this one.\nOr am I doing something wrong?",
+    "created_at": "2008-12-12T06:48:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4741",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35834",
+    "user": "mardaus"
+}
+```
 
 Hey John,
 
@@ -96,9 +180,20 @@ when I try. Perhaps you changed something else in your file before exporting thi
 Or am I doing something wrong?
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-12 06:58:15
+archive/issue_comments_035835.json:
+```json
+{
+    "body": "Yep, same thing for me in my current 3.2.2.alpha2 merge tree:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.2.alpha2/devel/sage$ patch -p1 < trac-4741-fix2.patch\\?format\\=raw patching file sage/schemes/elliptic_curves/ell_point.py\npatching file sage/schemes/elliptic_curves/ell_rational_field.py\nHunk #1 FAILED at 4533.\nHunk #2 succeeded at 4547 (offset 1 line).\nHunk #4 succeeded at 4609 with fuzz 2.\nHunk #5 FAILED at 4634.\nHunk #6 FAILED at 4662.\nHunk #7 succeeded at 4669 (offset -10 lines).\nHunk #8 succeeded at 4695 (offset -10 lines).\nHunk #9 succeeded at 4728 (offset -10 lines).\nHunk #10 succeeded at 4744 (offset -10 lines).\nHunk #11 FAILED at 4819.\nHunk #12 FAILED at 4854.\nHunk #13 succeeded at 4936 (offset -19 lines).\nHunk #14 succeeded at 4972 (offset -19 lines).\nHunk #15 succeeded at 5014 (offset -19 lines).\nHunk #16 succeeded at 5094 (offset -19 lines).\n5 out of 16 hunks FAILED -- saving rejects to file sage/schemes/elliptic_curves/ell_rational_field.py.rej\n```\n\nThe only changes post 3.2.1 to that file were:\n\n```\nhangeset:   11145:614177b99fa2\nuser:        John Cremona <john.cremona@gmail.com>\ndate:        Fri Dec 05 13:34:53 2008 +0000\nsummary:     #4715 second patch\n\nchangeset:   11144:84cee787fc0f\nuser:        John Cremona <john.cremona@gmail.com>\ndate:        Fri Dec 05 11:58:48 2008 +0000\nsummary:     #4715: tiny bug fix in KodairaSymbol + doctest\n```\n\nBut even reverting those two patches does not make fix2 apply, so are we missing a patch?\n\nCheers,\n\nMichael",
+    "created_at": "2008-12-12T06:58:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4741",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35835",
+    "user": "mabshoff"
+}
+```
 
 Yep, same thing for me in my current 3.2.2.alpha2 merge tree:
 
@@ -144,30 +239,76 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by cremona created at 2008-12-12 08:49:29
+archive/issue_comments_035836.json:
+```json
+{
+    "body": "Sorry everyone.  I'll make a new patch which works properly, and with 3.2.2.alpha1.  Since our patches essentially just add two separate functions, one each in two files, it should not be too difficult but I'll wait until I get into the office.",
+    "created_at": "2008-12-12T08:49:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4741",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35836",
+    "user": "cremona"
+}
+```
 
 Sorry everyone.  I'll make a new patch which works properly, and with 3.2.2.alpha1.  Since our patches essentially just add two separate functions, one each in two files, it should not be too difficult but I'll wait until I get into the office.
 
 
+
 ---
+
+archive/issue_comments_035837.json:
+```json
+{
+    "body": "Attachment\n\nReplaces all the above; based on 3.2.2.alpha1",
+    "created_at": "2008-12-12T09:47:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4741",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35837",
+    "user": "cremona"
+}
+```
 
 Attachment
 
 Replaces all the above; based on 3.2.2.alpha1
 
 
+
 ---
 
-Comment by cremona created at 2008-12-12 09:49:53
+archive/issue_comments_035838.json:
+```json
+{
+    "body": "OK, I have posted a new patch which replaces all the earlier ones and is based on 3.2.2.alpha1.  I tested it on a fresh clone of that version and all seems well.",
+    "created_at": "2008-12-12T09:49:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4741",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35838",
+    "user": "cremona"
+}
+```
 
 OK, I have posted a new patch which replaces all the earlier ones and is based on 3.2.2.alpha1.  I tested it on a fresh clone of that version and all seems well.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-12 17:04:15
+archive/issue_comments_035839.json:
+```json
+{
+    "body": "trac-4741-rebase.patch applies cleanly to my Sage 3.2.2.alpha2 merge tree. But I am seeing one doctest failure with -long on sage.math:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.2.alpha2$ ./sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\nsage -t -long \"devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\"\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha2/devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\", line 3338, in __main__.example_110\nFailed example:\n    time E.rank(), len(E.S_integral_points([Integer(3),Integer(5),Integer(7)]))  # long time (~15s)###line 4619:_sage_    >>> time E.rank(), len(E.S_integral_points([3,5,7]))  # long time (~15s)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_110[10]>\", line 1\n         time E.rank(), len(E.S_integral_points([Integer(3),Integer(5),Integer(7)]))  # long time (~15s)###line 4619:_sage_    >>> time E.rank(), len(E.S_integral_points([3,5,7]))  # long time (~15s)\n              ^\n     SyntaxError: invalid syntax\n**********************************************************************\n1 items had failures:\n   1 of  11 in __main__.example_110\n***Test Failed*** 1 failures.\n\n         [221.0 s]\nexit code: 1024\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2008-12-12T17:04:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4741",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35839",
+    "user": "mabshoff"
+}
+```
 
 trac-4741-rebase.patch applies cleanly to my Sage 3.2.2.alpha2 merge tree. But I am seeing one doctest failure with -long on sage.math:
 
@@ -205,56 +346,124 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_035840.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-12-12T17:17:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4741",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35840",
+    "user": "cremona"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by cremona created at 2008-12-12 17:18:06
+archive/issue_comments_035841.json:
+```json
+{
+    "body": "Sorry about that, clearly I did not do a -long test.  I just left the \"time\"  command in the doctest by mistake.  Testing this again I find that instead of 15s this example only takes 7.5s (my work yesterday was good, wasn't it!) but I have left in the # long time sdince this files so much in it already.\n\nNew minipatch should so the trick.",
+    "created_at": "2008-12-12T17:18:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4741",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35841",
+    "user": "cremona"
+}
+```
 
 Sorry about that, clearly I did not do a -long test.  I just left the "time"  command in the doctest by mistake.  Testing this again I find that instead of 15s this example only takes 7.5s (my work yesterday was good, wasn't it!) but I have left in the # long time sdince this files so much in it already.
 
 New minipatch should so the trick.
 
 
+
 ---
 
-Comment by mardaus created at 2008-12-13 03:51:47
+archive/issue_comments_035842.json:
+```json
+{
+    "body": "Here we go, now it applies on my 3.2.1 build and all tests, but the long passed.\nHow long should the long test for ell_rational_field take? I ran it 3h and nothing.\nThanks",
+    "created_at": "2008-12-13T03:51:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4741",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35842",
+    "user": "mardaus"
+}
+```
 
 Here we go, now it applies on my 3.2.1 build and all tests, but the long passed.
 How long should the long test for ell_rational_field take? I ran it 3h and nothing.
 Thanks
 
 
+
 ---
 
-Comment by mardaus created at 2008-12-13 08:15:04
+archive/issue_comments_035843.json:
+```json
+{
+    "body": "Ok no idea, what was wrong on my 3.2.1 but with a fresh built 3.2.2 alpha1 and the 2 patches here, doctest worked fine. (normal and long). So I guess we are good to go for 3.2.2.\n\nCheers Michael",
+    "created_at": "2008-12-13T08:15:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4741",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35843",
+    "user": "mardaus"
+}
+```
 
 Ok no idea, what was wrong on my 3.2.1 but with a fresh built 3.2.2 alpha1 and the 2 patches here, doctest worked fine. (normal and long). So I guess we are good to go for 3.2.2.
 
 Cheers Michael
 
 
+
 ---
 
-Comment by cremona created at 2008-12-13 10:13:42
+archive/issue_comments_035844.json:
+```json
+{
+    "body": "Thanks Michael (M).  Michael (A), can we put a positive review on this?  I would have preferred someone other than the three of us reviewing eachothers' code!",
+    "created_at": "2008-12-13T10:13:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4741",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35844",
+    "user": "cremona"
+}
+```
 
 Thanks Michael (M).  Michael (A), can we put a positive review on this?  I would have preferred someone other than the three of us reviewing eachothers' code!
 
 
+
 ---
 
-Comment by was created at 2008-12-13 21:39:21
+archive/issue_comments_035845.json:
+```json
+{
+    "body": "REFEREE REPORT:\n\nTwo trivial typo fixes:\n\n* \"It is not necessary to specify mw_base, then the Mordell-Weil basis must be computed (may take much longer)\" --> \"It is not necessary to specify mw_base; if it is not specified, then the Mordell-Weil basis must be computed, which may take much longer.\"\n\n* \"Computes the p-adic elliptic logarithm of self\" --> \"Computes the p-adic elliptic logarithm of self.\"\n\nA BUG:\n\n```\nsage: E = EllipticCurve('794a1')\nsage: E.S_integral_points([2,3,5])\nTraceback (most recent call last):\n...\nsage.rings.padics.precision_error.PrecisionError: cannot divide by something indistinguishable from zero\n```\n",
+    "created_at": "2008-12-13T21:39:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4741",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35845",
+    "user": "was"
+}
+```
 
 REFEREE REPORT:
 
 Two trivial typo fixes:
 
- * "It is not necessary to specify mw_base, then the Mordell-Weil basis must be computed (may take much longer)" --> "It is not necessary to specify mw_base; if it is not specified, then the Mordell-Weil basis must be computed, which may take much longer."
+* "It is not necessary to specify mw_base, then the Mordell-Weil basis must be computed (may take much longer)" --> "It is not necessary to specify mw_base; if it is not specified, then the Mordell-Weil basis must be computed, which may take much longer."
 
- * "Computes the p-adic elliptic logarithm of self" --> "Computes the p-adic elliptic logarithm of self."
+* "Computes the p-adic elliptic logarithm of self" --> "Computes the p-adic elliptic logarithm of self."
 
 A BUG:
 
@@ -268,26 +477,76 @@ sage.rings.padics.precision_error.PrecisionError: cannot divide by something ind
 
 
 
+
 ---
+
+archive/issue_comments_035846.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-12-13T22:16:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4741",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35846",
+    "user": "cremona"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by cremona created at 2008-12-13 22:17:10
+archive/issue_comments_035847.json:
+```json
+{
+    "body": "The *-prec.patch fixes that for your example but a more itelligent solution would be preferable...",
+    "created_at": "2008-12-13T22:17:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4741",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35847",
+    "user": "cremona"
+}
+```
 
 The *-prec.patch fixes that for your example but a more itelligent solution would be preferable...
 
 
+
 ---
+
+archive/issue_comments_035848.json:
+```json
+{
+    "body": "Attachment\n\nSorry, forgot to fix the typos: see *-typos.patch.  Sorry for the extra hassle.",
+    "created_at": "2008-12-13T22:21:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4741",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35848",
+    "user": "cremona"
+}
+```
 
 Attachment
 
 Sorry, forgot to fix the typos: see *-typos.patch.  Sorry for the extra hassle.
 
 
+
 ---
+
+archive/issue_comments_035849.json:
+```json
+{
+    "body": "Attachment\n\nOK, so I found 2 more trivial bugs in kodaira which only mattered in the tamagawa_exponent() function used (only) in S_integral_points and padic_elliptic_log functions.  Fixed, and tested that tamagawa_exponent() works on all curves in the database to 6000, with all bad primes for each.  (Sorry, I have not checked that this covers all Kodaira types, but I think so.  The code even failed on 1 curve of conductor 15.)\n\nThat revealed a but in pari_curve(), for example 903b3, where the default pari precision was not enough.  I now test for this (with try: ... except PariError) and double the precision on failure, continuing until success.  The crazy thing is that I remember fixing that bug before, but it must have been while working on something which never got submitted (or is bitrotting on trac perhaps;)).\n\nNext I tested again the database curves of rank at least 2 with S=[2,3,5].  No problems until 2175c3, and that just takes a long time.  So I think it is safe to proceed (famous last words, but it's my bedtime).  The *-fix3.patch contains the above-mentioned fixes and also adapts the doctests to agree with the output from the enhanced p-adic precision which I forgot earlier.",
+    "created_at": "2008-12-13T23:16:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4741",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35849",
+    "user": "cremona"
+}
+```
 
 Attachment
 
@@ -298,9 +557,20 @@ That revealed a but in pari_curve(), for example 903b3, where the default pari p
 Next I tested again the database curves of rank at least 2 with S=[2,3,5].  No problems until 2175c3, and that just takes a long time.  So I think it is safe to proceed (famous last words, but it's my bedtime).  The *-fix3.patch contains the above-mentioned fixes and also adapts the doctests to agree with the output from the enhanced p-adic precision which I forgot earlier.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-14 08:27:59
+archive/issue_comments_035850.json:
+```json
+{
+    "body": "\n```\n[12:23am] wstein: I can't apply trac-4741-fix3.patch  from cremona's ticket cleanly...\n[12:24am] wstein: If the patch passes all doctests and you can apply it, then positive review.\n[12:24am] mabshoff: mk\n[12:24am] wstein: He addressed my issues, and did a good test of running the code.\n[12:24am] mabshoff: ok\n```\n",
+    "created_at": "2008-12-14T08:27:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4741",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35850",
+    "user": "mabshoff"
+}
+```
 
 
 ```
@@ -313,16 +583,38 @@ Comment by mabshoff created at 2008-12-14 08:27:59
 
 
 
+
 ---
 
-Comment by was created at 2008-12-14 08:28:18
+archive/issue_comments_035851.json:
+```json
+{
+    "body": "So sort of positive review.  I have read all the latest changes and they *look* good, but I have *not* actually tried the new code or run doctests, since I can't apply the last patch.",
+    "created_at": "2008-12-14T08:28:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4741",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35851",
+    "user": "was"
+}
+```
 
 So sort of positive review.  I have read all the latest changes and they *look* good, but I have *not* actually tried the new code or run doctests, since I can't apply the last patch.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-14 08:35:29
+archive/issue_comments_035852.json:
+```json
+{
+    "body": "Yep, I am seeing the same issue as William:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.2.rc0/devel/sage$ patch -p1 < trac_4741_part_1_rebase.patch \npatching file sage/schemes/elliptic_curves/ell_point.py\npatching file sage/schemes/elliptic_curves/ell_rational_field.py\nHunk #1 succeeded at 4585 (offset 53 lines).\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.2.rc0/devel/sage$ patch -p1 < trac_4741_part_2_doctest.patch \npatching file sage/schemes/elliptic_curves/ell_rational_field.py\nHunk #1 succeeded at 4669 (offset 53 lines).\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.2.rc0/devel/sage$ patch -p1 < trac_4741_part_3_prec.patch \npatching file sage/schemes/elliptic_curves/ell_point.py\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.2.rc0/devel/sage$ patch -p1 < trac_4741_part_4_typos.patch \npatching file sage/schemes/elliptic_curves/ell_point.py\npatching file sage/schemes/elliptic_curves/ell_rational_field.py\nHunk #1 succeeded at 4651 (offset 66 lines).\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.2.rc0/devel/sage$ patch -p1 --dry-run < trac_4741_part_5_fix3.patch \npatching file sage/schemes/elliptic_curves/ell_point.py\npatching file sage/schemes/elliptic_curves/ell_rational_field.py\nHunk #1 FAILED at 485.\nHunk #2 FAILED at 509.\nHunk #3 succeeded at 4644 (offset 66 lines).\n2 out of 3 hunks FAILED -- saving rejects to file sage/schemes/elliptic_curves/ell_rational_field.py.rej\npatching file sage/schemes/elliptic_curves/kodaira_symbol.py\nHunk #1 FAILED at 78.\n1 out of 1 hunk FAILED -- saving rejects to file sage/schemes/elliptic_curves/kodaira_symbol.py.rej\n```\n\nSo either I am doing something wrong, i.e. merging the wrong patches or fix3 needs a rebase.\n\nCheers,\n\nMichael",
+    "created_at": "2008-12-14T08:35:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4741",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35852",
+    "user": "mabshoff"
+}
+```
 
 Yep, I am seeing the same issue as William:
 
@@ -359,16 +651,40 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by cremona created at 2008-12-14 11:04:19
+archive/issue_comments_035853.json:
+```json
+{
+    "body": "I think my problem is that I had just done a -upgrade to 3.2.2.alpha1 which -- as usual with upgrades -- toally and utterly confused me.  Upgrades leave with with a Sage version which does not match the name of the directory that it is in.\n\nSo now I'll try to make it work properly with 3.2.2.alpha2 (not alpha1) and while I am at it, combine those 3 little patches into one.",
+    "created_at": "2008-12-14T11:04:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4741",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35853",
+    "user": "cremona"
+}
+```
 
 I think my problem is that I had just done a -upgrade to 3.2.2.alpha1 which -- as usual with upgrades -- toally and utterly confused me.  Upgrades leave with with a Sage version which does not match the name of the directory that it is in.
 
 So now I'll try to make it work properly with 3.2.2.alpha2 (not alpha1) and while I am at it, combine those 3 little patches into one.
 
 
+
 ---
+
+archive/issue_comments_035854.json:
+```json
+{
+    "body": "Attachment\n\nI was right: last night's 3 patches were all based on the previous release.  This explains two things:  the kodaira bugs I re-fixed last night had already been fixed, as had the pari_curve precision problem.\n\nSo now we have trac-4741-rebased-fixes.patch which (1) replaces the previous 3; (2) is properly based on 3.2.2.alpha2; (3) improves on the earlier fixes by handling the p-adic precision more intelligently (it uses try/except, first trying p-adci precision 20 and doubling if that fails).\n\nI tried the patch on a new clone of 3.2.2.alpha2.  To recap, apply these three patches in this order and ignore the others:\n1. trac-4741-rebase.patch\n2. trac-4741-doctest.patch\n3. trac-4741-rebased-fixes.patch\nand you should find that all doctests in sage/schemes/elliptic_curves pass, and that for all database curves to conductor 2000 of rank>1 E.S_integral_points([2,3,5]) works fine.",
+    "created_at": "2008-12-14T11:59:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4741",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35854",
+    "user": "cremona"
+}
+```
 
 Attachment
 
@@ -377,15 +693,26 @@ I was right: last night's 3 patches were all based on the previous release.  Thi
 So now we have trac-4741-rebased-fixes.patch which (1) replaces the previous 3; (2) is properly based on 3.2.2.alpha2; (3) improves on the earlier fixes by handling the p-adic precision more intelligently (it uses try/except, first trying p-adci precision 20 and doubling if that fails).
 
 I tried the patch on a new clone of 3.2.2.alpha2.  To recap, apply these three patches in this order and ignore the others:
-    1. trac-4741-rebase.patch
-    2. trac-4741-doctest.patch
-    3. trac-4741-rebased-fixes.patch
+1. trac-4741-rebase.patch
+2. trac-4741-doctest.patch
+3. trac-4741-rebased-fixes.patch
 and you should find that all doctests in sage/schemes/elliptic_curves pass, and that for all database curves to conductor 2000 of rank>1 E.S_integral_points([2,3,5]) works fine.
+
 
 
 ---
 
-Comment by mabshoff created at 2008-12-14 16:55:53
+archive/issue_comments_035855.json:
+```json
+{
+    "body": "Replying to [comment:18 was]:\n> \n> \n> So sort of positive review.  I have read all the latest changes and they *look* good, but I have *not* actually tried the new code or run doctests, since I can't apply the last patch. \n\nApplying \n\n1. trac-4741-rebase.patch\n2. trac-4741-doctest.patch\n3. trac-4741-rebased-fixes.patch\n\nleads to a working Sage as well as passing doctests.\n\nWilliam: I assume you want to give this the final positive review once you poke around a little more.\n\nCheers,\n\nMichael",
+    "created_at": "2008-12-14T16:55:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4741",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35855",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:18 was]:
 > 
@@ -394,9 +721,9 @@ Replying to [comment:18 was]:
 
 Applying 
 
- 1. trac-4741-rebase.patch
- 1. trac-4741-doctest.patch
- 1. trac-4741-rebased-fixes.patch
+1. trac-4741-rebase.patch
+2. trac-4741-doctest.patch
+3. trac-4741-rebased-fixes.patch
 
 leads to a working Sage as well as passing doctests.
 
@@ -407,9 +734,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by was created at 2008-12-14 19:27:15
+archive/issue_comments_035856.json:
+```json
+{
+    "body": "REFEREE REPORT:\n\nI broke it again with a simple for loop.\n\n\n```\nsage: EllipticCurve('2534g1').S_integral_points([13,2])\n...\n--> 576             return self[0]/self[2], self[1]/self[2]\n    577 \n    578     def is_divisible_by(self, m):\n\n/home/was/build/sage-3.2.2.alpha2/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__div__ (sage/structure/element.c:9074)()\n\n/home/was/build/sage-3.2.2.alpha2/local/lib/python2.5/site-packages/sage/rings/padics/padic_capped_relative_element.so in sage.rings.padics.padic_capped_relative_element.pAdicCappedRelativeElement._div_ (sage/rings/padics/padic_capped_relative_element.c:11055)()\n\nZeroDivisionError: cannot divide by zero\n```\n\n\nThis is the loop that got it:\n\n```\nsage: for E in cremona_optimal_curves([1000..10000]):\n    if E.rank() == 2:\n        print E.cremona_label(), E.S_integral_points([13]+[E.conductor().factor()[0][0]])\n```\n",
+    "created_at": "2008-12-14T19:27:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4741",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35856",
+    "user": "was"
+}
+```
 
 REFEREE REPORT:
 
@@ -441,9 +779,20 @@ sage: for E in cremona_optimal_curves([1000..10000]):
 
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-14 20:09:31
+archive/issue_comments_035857.json:
+```json
+{
+    "body": "Fix the summary so that this ticket isn't picked up by report 19.\n\nCheers,\n\nMichael",
+    "created_at": "2008-12-14T20:09:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4741",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35857",
+    "user": "mabshoff"
+}
+```
 
 Fix the summary so that this ticket isn't picked up by report 19.
 
@@ -452,14 +801,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by cremona created at 2008-12-14 20:57:16
+archive/issue_comments_035858.json:
+```json
+{
+    "body": "Don't you just love thorough reviewing (seriously).  I was not trapping enough errors in my padic log fix.  Now as well as PariError I trap ZeroDivisionError and TypeError, which can all happen when the precision is too low.  That run fine on was's loop until 2666e1.  This may not get finished tonight...",
+    "created_at": "2008-12-14T20:57:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4741",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35858",
+    "user": "cremona"
+}
+```
 
 Don't you just love thorough reviewing (seriously).  I was not trapping enough errors in my padic log fix.  Now as well as PariError I trap ZeroDivisionError and TypeError, which can all happen when the precision is too low.  That run fine on was's loop until 2666e1.  This may not get finished tonight...
 
 
+
 ---
+
+archive/issue_comments_035859.json:
+```json
+{
+    "body": "Attachment\n\nVarious p-adic precision bandaids applied, so that William's loop now runs up to this one:\n\nsage: EllipticCurve(\"7690e1\").S_integral_points([13,2])\n\nat which point there's an error raised deep in the p-adic code.  I can't deal with that now, so someone will have to make a judgement about whether this is now \"good enough\".\n\nWorking with p-adics is an acquired skill which I'm not sure I have enough of -- perhaps we need reinforcements?  For example, you cannot just do E.change_ring(Qp(p,precision)) for E an elliptic curve over Q, since an error will be raised if the precision is too low (only of p is a prime of bad reduction I think, so one should be able to work out the necessary precision).\n\nTobias and Michael, the try/except I put in around line 5077 of ell_rational_field.py was not fully thought through, perhaps that is something you should look into?\n\n\ntrac-4741-padic.patch",
+    "created_at": "2008-12-14T22:11:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4741",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35859",
+    "user": "cremona"
+}
+```
 
 Attachment
 
@@ -477,18 +850,40 @@ Tobias and Michael, the try/except I put in around line 5077 of ell_rational_fie
 trac-4741-padic.patch
 
 
+
 ---
 
-Comment by tnagel created at 2008-12-15 09:00:20
+archive/issue_comments_035860.json:
+```json
+{
+    "body": "I will have a look at the try/except statement.Unfortunately I have to attend some courses at university this morning, so I will do that this afternoon. Was there a special curve you needed this try/except?\n\nI hope the rest of the code will get a \"good enough\" judgment.",
+    "created_at": "2008-12-15T09:00:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4741",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35860",
+    "user": "tnagel"
+}
+```
 
 I will have a look at the try/except statement.Unfortunately I have to attend some courses at university this morning, so I will do that this afternoon. Was there a special curve you needed this try/except?
 
 I hope the rest of the code will get a "good enough" judgment.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-15 09:02:25
+archive/issue_comments_035861.json:
+```json
+{
+    "body": "I am inclined to merge this code and then open a new ticket for the remaining issues. This code has gotten beaten up quite a bit and it seems certainly to be a lot less buggy than any currently released Magma code :)\n\nCheers,\n\nMichael",
+    "created_at": "2008-12-15T09:02:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4741",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35861",
+    "user": "mabshoff"
+}
+```
 
 I am inclined to merge this code and then open a new ticket for the remaining issues. This code has gotten beaten up quite a bit and it seems certainly to be a lot less buggy than any currently released Magma code :)
 
@@ -497,9 +892,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by cremona created at 2008-12-15 09:41:34
+archive/issue_comments_035862.json:
+```json
+{
+    "body": "Thanks for the encouragement, Michael!\n\nHere's the strategy I propose.  We separate out as an issue the computation of the p-adic elliptic log (of a point on an elliptic curve over Q, and later over number fields).  A lot of this work does not depend on the point, only on the curve and the prime (specifically, construction of the base-change curve over Qp, and the integer f such that `f*E(Qp)\\subseteq E^1(Qp)`, which is the product of the tamagawa exponent (already cached) and the exponent of the group mod p).  This could be stored in the local_data class which we already have.  The p-adic part of this would need some work to compute the suitable precision needed (which may be more than the user asks for).\n\nThe second issue is then the S_integral points code itself, where I had one difficulty.  I'll recover the curve which caused that and send it to tnagel.",
+    "created_at": "2008-12-15T09:41:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4741",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35862",
+    "user": "cremona"
+}
+```
 
 Thanks for the encouragement, Michael!
 
@@ -508,18 +914,40 @@ Here's the strategy I propose.  We separate out as an issue the computation of t
 The second issue is then the S_integral points code itself, where I had one difficulty.  I'll recover the curve which caused that and send it to tnagel.
 
 
+
 ---
 
-Comment by was created at 2008-12-15 15:33:18
+archive/issue_comments_035863.json:
+```json
+{
+    "body": "I am OK with merging the code as is now, as long as a \"NOTE:\" is added to the docstring for S_integral_points (etc.) that it is known to fail on some input, with a pointer to the appropriate trac ticket.  I much prefer that to the Ma* approach of \"there are no bugs here\" approach, where one lets the user discover bugs.\n\nSo \"positive review\" modulo adding such a note.",
+    "created_at": "2008-12-15T15:33:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4741",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35863",
+    "user": "was"
+}
+```
 
 I am OK with merging the code as is now, as long as a "NOTE:" is added to the docstring for S_integral_points (etc.) that it is known to fail on some input, with a pointer to the appropriate trac ticket.  I much prefer that to the Ma* approach of "there are no bugs here" approach, where one lets the user discover bugs.
 
 So "positive review" modulo adding such a note.
 
 
+
 ---
 
-Comment by cremona created at 2008-12-15 15:55:23
+archive/issue_comments_035864.json:
+```json
+{
+    "body": "Replying to [comment:30 was]:\n> I am OK with merging the code as is now, as long as a \"NOTE:\" is added to the docstring for S_integral_points (etc.) that it is known to fail on some input, with a pointer to the appropriate trac ticket.  I much prefer that to the Ma* approach of \"there are no bugs here\" approach, where one lets the user discover bugs.\n> \n> So \"positive review\" modulo adding such a note.\n\nSounds good to me.  I'll try to add such a NOTE today.  JEC",
+    "created_at": "2008-12-15T15:55:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4741",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35864",
+    "user": "cremona"
+}
+```
 
 Replying to [comment:30 was]:
 > I am OK with merging the code as is now, as long as a "NOTE:" is added to the docstring for S_integral_points (etc.) that it is known to fail on some input, with a pointer to the appropriate trac ticket.  I much prefer that to the Ma* approach of "there are no bugs here" approach, where one lets the user discover bugs.
@@ -529,7 +957,20 @@ Replying to [comment:30 was]:
 Sounds good to me.  I'll try to add such a NOTE today.  JEC
 
 
+
 ---
+
+archive/issue_comments_035865.json:
+```json
+{
+    "body": "Attachment\n\nReplying to [comment:31 cremona]:\n> Replying to [comment:30 was]:\n> > I am OK with merging the code as is now, as long as a \"NOTE:\" is added to the docstring for S_integral_points (etc.) that it is known to fail on some input, with a pointer to the appropriate trac ticket.  I much prefer that to the Ma* approach of \"there are no bugs here\" approach, where one lets the user discover bugs.\n> > \n> > So \"positive review\" modulo adding such a note.\n> \n> Sounds good to me.  I'll try to add such a NOTE today.  JEC  -- done",
+    "created_at": "2008-12-15T16:32:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4741",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35865",
+    "user": "cremona"
+}
+```
 
 Attachment
 
@@ -542,9 +983,20 @@ Replying to [comment:31 cremona]:
 > Sounds good to me.  I'll try to add such a NOTE today.  JEC  -- done
 
 
+
 ---
 
-Comment by was created at 2008-12-15 16:41:36
+archive/issue_comments_035866.json:
+```json
+{
+    "body": "Positive review pending deletion of the question mark \"?\" in this line of the last patch:\n\n```\nEllipticCurve?(\"7690e1\").S_integral_points([13,2])\n```\n\n\nWilliam",
+    "created_at": "2008-12-15T16:41:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4741",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35866",
+    "user": "was"
+}
+```
 
 Positive review pending deletion of the question mark "?" in this line of the last patch:
 
@@ -556,9 +1008,20 @@ EllipticCurve?("7690e1").S_integral_points([13,2])
 William
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-15 16:43:07
+archive/issue_comments_035867.json:
+```json
+{
+    "body": "John,\n\nplease also open a new ticket for that known failure and mention that ticket in the NOTE since this ticket will then be closed and finding the info about that curve is much easier at a clean and new ticket.\n\nCheers,\n\nMichael",
+    "created_at": "2008-12-15T16:43:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4741",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35867",
+    "user": "mabshoff"
+}
+```
 
 John,
 
@@ -569,7 +1032,20 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_035868.json:
+```json
+{
+    "body": "Attachment\n\nReplying to [comment:34 mabshoff]:\n> John,\n> \n> please also open a new ticket for that known failure and mention that ticket in the NOTE since this ticket will then be closed and finding the info about that curve is much easier at a clean and new ticket.\n> \n> Cheers,\n> \n> Michael\n\nTypo fixed and reference to new ticket #4805 added in *-note2.patch.",
+    "created_at": "2008-12-15T17:02:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4741",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35868",
+    "user": "cremona"
+}
+```
 
 Attachment
 
@@ -585,9 +1061,20 @@ Replying to [comment:34 mabshoff]:
 Typo fixed and reference to new ticket #4805 added in *-note2.patch.
 
 
+
 ---
 
-Comment by cremona created at 2008-12-15 17:03:52
+archive/issue_comments_035869.json:
+```json
+{
+    "body": "Replying to [comment:33 was]:\n> Positive review pending deletion of the question mark \"?\" in this line of the last patch:\n> {{{\n> EllipticCurve?(\"7690e1\").S_integral_points([13,2])\n> }}}\n> \n> William\n\nPerfectionist!  Of course I notived that after uploading the patch (after which there is no way of deleting it for us ordinary mortals ;)).",
+    "created_at": "2008-12-15T17:03:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4741",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35869",
+    "user": "cremona"
+}
+```
 
 Replying to [comment:33 was]:
 > Positive review pending deletion of the question mark "?" in this line of the last patch:
@@ -600,9 +1087,20 @@ Replying to [comment:33 was]:
 Perfectionist!  Of course I notived that after uploading the patch (after which there is no way of deleting it for us ordinary mortals ;)).
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-15 17:09:35
+archive/issue_comments_035870.json:
+```json
+{
+    "body": "Positive review. Finally ;)\n\nCheers,\n\nMichael",
+    "created_at": "2008-12-15T17:09:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4741",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35870",
+    "user": "mabshoff"
+}
+```
 
 Positive review. Finally ;)
 
@@ -611,22 +1109,44 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-15 17:12:40
+archive/issue_comments_035871.json:
+```json
+{
+    "body": "Merged \n* trac_4741_part_1_rebase.patch\n* trac_4741_part_2_doctest.patch\n* trac_4741_part_3_rebased-fixes.patch\n* trac_4741_part_4_note.patch\n* trac_4741_part_5_note2.patch\n\nin Sage 3.2.2.rc0",
+    "created_at": "2008-12-15T17:12:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4741",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35871",
+    "user": "mabshoff"
+}
+```
 
 Merged 
- * trac_4741_part_1_rebase.patch
- * trac_4741_part_2_doctest.patch
- * trac_4741_part_3_rebased-fixes.patch
- * trac_4741_part_4_note.patch
- * trac_4741_part_5_note2.patch
+* trac_4741_part_1_rebase.patch
+* trac_4741_part_2_doctest.patch
+* trac_4741_part_3_rebased-fixes.patch
+* trac_4741_part_4_note.patch
+* trac_4741_part_5_note2.patch
 
 in Sage 3.2.2.rc0
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-15 17:12:40
+archive/issue_comments_035872.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-12-15T17:12:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4741",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4741#issuecomment-35872",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

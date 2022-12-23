@@ -1,11 +1,21 @@
 # Issue 8780: add the Cephes spkg to Cygwin
 
-Issue created by migration from https://trac.sagemath.org/ticket/8780
-
-Original creator: mhansen
-
-Original creation time: 2010-04-27 06:39:57
-
+archive/issues_008780.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  pjeremy\n\nOn Cygwin, Sage needs c99 complex support which can be provided by the cephes library from netlib.org / www.moshier.net\n\nThere is an spkg at http://sage.math.washington.edu/home/mhansen/cygwin_port/cephes-2.8.spkg\n\n\nWe need to decide the best way to include this since it is only need on Cygwin (and maybe FreeBSD, etc.).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8780\n\n",
+    "created_at": "2010-04-27T06:39:57Z",
+    "labels": [
+        "porting: Cygwin",
+        "major",
+        "bug"
+    ],
+    "title": "add the Cephes spkg to Cygwin",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8780",
+    "user": "mhansen"
+}
+```
 Assignee: tbd
 
 CC:  pjeremy
@@ -17,40 +27,99 @@ There is an spkg at http://sage.math.washington.edu/home/mhansen/cygwin_port/cep
 
 We need to decide the best way to include this since it is only need on Cygwin (and maybe FreeBSD, etc.).
 
+Issue created by migration from https://trac.sagemath.org/ticket/8780
+
+
+
+
 
 ---
 
-Comment by jason created at 2010-04-27 18:37:11
+archive/issue_comments_080369.json:
+```json
+{
+    "body": "How about test the OS name in spkg-install, and if it is cygwin, do something, otherwise return successfully without doing anything?",
+    "created_at": "2010-04-27T18:37:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8780",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8780#issuecomment-80369",
+    "user": "jason"
+}
+```
 
 How about test the OS name in spkg-install, and if it is cygwin, do something, otherwise return successfully without doing anything?
 
 
+
 ---
 
-Comment by dimpase created at 2010-04-28 06:08:30
+archive/issue_comments_080370.json:
+```json
+{
+    "body": "Is it the same Solaris-only cvxopt problem that was solved (for cvxopt) by adding sun_complex.h there?\nIf yes, then it might be good to include Solaris in the list of architectures for which cephes is installed.",
+    "created_at": "2010-04-28T06:08:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8780",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8780#issuecomment-80370",
+    "user": "dimpase"
+}
+```
 
 Is it the same Solaris-only cvxopt problem that was solved (for cvxopt) by adding sun_complex.h there?
 If yes, then it might be good to include Solaris in the list of architectures for which cephes is installed.
 
 
+
 ---
 
-Comment by mhansen created at 2010-04-28 06:33:37
+archive/issue_comments_080371.json:
+```json
+{
+    "body": "Sorry, I spoke too soon -- this doesn't quite fix the problem with cvxopt since it doesn't check $SAGE_LOCAL/include.  There is some other cleanup work that needs to be for the cvxopt-1.1.2 spkg as well.\n\nAlso, this is a little different than the Solaris issue since Cygwin doesn't have a complex.h, which is what the spkg provides.",
+    "created_at": "2010-04-28T06:33:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8780",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8780#issuecomment-80371",
+    "user": "mhansen"
+}
+```
 
 Sorry, I spoke too soon -- this doesn't quite fix the problem with cvxopt since it doesn't check $SAGE_LOCAL/include.  There is some other cleanup work that needs to be for the cvxopt-1.1.2 spkg as well.
 
 Also, this is a little different than the Solaris issue since Cygwin doesn't have a complex.h, which is what the spkg provides.
 
 
+
 ---
 
-Comment by was created at 2010-05-26 01:15:58
+archive/issue_comments_080372.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-05-26T01:15:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8780",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8780#issuecomment-80372",
+    "user": "was"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by was created at 2010-05-26 01:15:58
+archive/issue_comments_080373.json:
+```json
+{
+    "body": "I did what Jason Grout suggests above as a little referee patch, and merged this into 4.4.3.alpha0.",
+    "created_at": "2010-05-26T01:15:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8780",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8780#issuecomment-80373",
+    "user": "was"
+}
+```
 
 I did what Jason Grout suggests above as a little referee patch, and merged this into 4.4.3.alpha0.

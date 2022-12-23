@@ -1,11 +1,21 @@
 # Issue 4677: Plotting lambda functions
 
-Issue created by migration from https://trac.sagemath.org/ticket/4677
-
-Original creator: kcrisman
-
-Original creation time: 2008-12-02 17:51:07
-
+archive/issues_004677.json:
+```json
+{
+    "body": "Assignee: was\n\nThis works:\n\n```\nsage: f=x^2\nsage: plot(lambda x:f(x),(x,-1,1))\n```\n\nBut this doesn't:\n\n```\nsage: f=x^2\nsage: plot(lambda x:f,(x,-1,1))\nverbose 0 (3633: plot.py, _plot) WARNING: When plotting, failed to evaluate function at 400 points.\nverbose 0 (3633: plot.py, _plot) Last error message: 'float() argument must be a string or a number'\n```\n\nThe behavior is the same for f(x)=x^2.\n\nThis is because in the second example \"evaluating\" the lambda function yields a SymbolicCallableExpression, which needs to be called again to actually yield a numerical value.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/4677\n\n",
+    "created_at": "2008-12-02T17:51:07Z",
+    "labels": [
+        "graphics",
+        "minor",
+        "bug"
+    ],
+    "title": "Plotting lambda functions",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4677",
+    "user": "kcrisman"
+}
+```
 Assignee: was
 
 This works:
@@ -28,10 +38,25 @@ The behavior is the same for f(x)=x^2.
 
 This is because in the second example "evaluating" the lambda function yields a SymbolicCallableExpression, which needs to be called again to actually yield a numerical value.  
 
+Issue created by migration from https://trac.sagemath.org/ticket/4677
+
+
+
+
 
 ---
 
-Comment by jason created at 2008-12-02 23:07:04
+archive/issue_comments_035237.json:
+```json
+{
+    "body": "Sure, it probably shouldn't work:\n\n\n```\nsage: f=x^2\nsage: a=lambda x: f\nsage: a(2)\nx^2\n```\n\n\nplot expects that when it feeds \"a\" a number (like a(2)), a number should be returned.  Instead, a function is returned.",
+    "created_at": "2008-12-02T23:07:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4677",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4677#issuecomment-35237",
+    "user": "jason"
+}
+```
 
 Sure, it probably shouldn't work:
 
@@ -47,9 +72,20 @@ x^2
 plot expects that when it feeds "a" a number (like a(2)), a number should be returned.  Instead, a function is returned.
 
 
+
 ---
 
-Comment by kcrisman created at 2008-12-03 00:52:37
+archive/issue_comments_035238.json:
+```json
+{
+    "body": "Replying to [comment:1 jason]:\n> Sure, it probably shouldn't work: \n> plot expects that when it feeds \"a\" a number (like a(2)), a number should be returned.  Instead, a function is returned.\n\nI guess my point was that I think one can catch this and use it.  Unless for some reason this is not desired, like some MS Word \"guesses\" at fixing mistakes, it is the sort of thing that one can do\n\n```\nsage: f=x^2\nsage: a=lambda x: f\nsage: a(2)\nx^2\nsage: a=a(x)\nsage: a(2)\n4\n```\n\nso that in principle upon a TypeError, one could try letting func=func(x) and then do float(func(point)).  \n\nBut I don't have time to try that for a few more days.  And maybe there is some internal reason not to do this... but I don't think so, because the result of plotting these is the empty plot otherwise, and one would reraise the exception if this still caused a TypeError.  Can you think of anything where this would not raise an exception but still lead to bad behavior?  I've seen weirder things...",
+    "created_at": "2008-12-03T00:52:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4677",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4677#issuecomment-35238",
+    "user": "kcrisman"
+}
+```
 
 Replying to [comment:1 jason]:
 > Sure, it probably shouldn't work: 
@@ -72,23 +108,56 @@ so that in principle upon a TypeError, one could try letting func=func(x) and th
 But I don't have time to try that for a few more days.  And maybe there is some internal reason not to do this... but I don't think so, because the result of plotting these is the empty plot otherwise, and one would reraise the exception if this still caused a TypeError.  Can you think of anything where this would not raise an exception but still lead to bad behavior?  I've seen weirder things...
 
 
+
 ---
 
-Comment by jason created at 2008-12-03 01:15:13
+archive/issue_comments_035239.json:
+```json
+{
+    "body": "I think this is enough of a change in design that the issue ought to be raised on sage-devel to get more input.  Would you like to post a message?",
+    "created_at": "2008-12-03T01:15:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4677",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4677#issuecomment-35239",
+    "user": "jason"
+}
+```
 
 I think this is enough of a change in design that the issue ought to be raised on sage-devel to get more input.  Would you like to post a message?
 
 
+
 ---
 
-Comment by kcrisman created at 2009-01-24 19:38:57
+archive/issue_comments_035240.json:
+```json
+{
+    "body": "Changing assignee from was to kcrisman.",
+    "created_at": "2009-01-24T19:38:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4677",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4677#issuecomment-35240",
+    "user": "kcrisman"
+}
+```
 
 Changing assignee from was to kcrisman.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-01-24 19:38:57
+archive/issue_comments_035241.json:
+```json
+{
+    "body": "Replying to [comment:3 jason]:\n> I think this is enough of a change in design that the issue ought to be raised on sage-devel to get more input.  Would you like to post a message?\n\nThis was done, but the issue generated no interest on sage-devel, so I will go ahead and try to implement and document this as detailed above.",
+    "created_at": "2009-01-24T19:38:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4677",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4677#issuecomment-35241",
+    "user": "kcrisman"
+}
+```
 
 Replying to [comment:3 jason]:
 > I think this is enough of a change in design that the issue ought to be raised on sage-devel to get more input.  Would you like to post a message?
@@ -96,15 +165,37 @@ Replying to [comment:3 jason]:
 This was done, but the issue generated no interest on sage-devel, so I will go ahead and try to implement and document this as detailed above.
 
 
+
 ---
 
-Comment by jason created at 2010-03-17 05:25:06
+archive/issue_comments_035242.json:
+```json
+{
+    "body": "Changing type from defect to enhancement.",
+    "created_at": "2010-03-17T05:25:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4677",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4677#issuecomment-35242",
+    "user": "jason"
+}
+```
 
 Changing type from defect to enhancement.
 
 
+
 ---
 
-Comment by kcrisman created at 2012-07-07 03:24:57
+archive/issue_comments_035243.json:
+```json
+{
+    "body": "Remove assignee kcrisman.",
+    "created_at": "2012-07-07T03:24:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4677",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4677#issuecomment-35243",
+    "user": "kcrisman"
+}
+```
 
 Remove assignee kcrisman.

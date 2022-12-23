@@ -1,11 +1,21 @@
 # Issue 4360: [with patch, needs review] fraction field improvements
 
-Issue created by migration from https://trac.sagemath.org/ticket/4360
-
-Original creator: burcin
-
-Original creation time: 2008-10-24 09:23:03
-
+archive/issues_004360.json:
+```json
+{
+    "body": "Assignee: somebody\n\nAttached patches move `sage.rings.fraction_field.FractionField_generic` to the new coercion model, and cythonize the `sage.rings.fraction_field_element.FractionFieldElement` class. They also allow homomorphisms of fraction fields to work, and make the `random_element()` method of fractions fields return sensible results.\n\nI will follow these up with specialized classes for rational functions.\n\nThe patches depend on #4278.\n\nSince one of the patches renames a file (from *.py to *.pyx) it contains a git style patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4360\n\n",
+    "created_at": "2008-10-24T09:23:03Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "enhancement"
+    ],
+    "title": "[with patch, needs review] fraction field improvements",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4360",
+    "user": "burcin"
+}
+```
 Assignee: somebody
 
 Attached patches move `sage.rings.fraction_field.FractionField_generic` to the new coercion model, and cythonize the `sage.rings.fraction_field_element.FractionFieldElement` class. They also allow homomorphisms of fraction fields to work, and make the `random_element()` method of fractions fields return sensible results.
@@ -16,31 +26,79 @@ The patches depend on #4278.
 
 Since one of the patches renames a file (from *.py to *.pyx) it contains a git style patch.
 
+Issue created by migration from https://trac.sagemath.org/ticket/4360
+
+
+
+
 
 ---
 
-Comment by burcin created at 2008-11-17 13:27:59
+archive/issue_comments_032027.json:
+```json
+{
+    "body": "Changing assignee from somebody to burcin.",
+    "created_at": "2008-11-17T13:27:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4360",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4360#issuecomment-32027",
+    "user": "burcin"
+}
+```
 
 Changing assignee from somebody to burcin.
 
 
+
 ---
 
-Comment by burcin created at 2008-11-17 13:27:59
+archive/issue_comments_032028.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-11-17T13:27:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4360",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4360#issuecomment-32028",
+    "user": "burcin"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by burcin created at 2008-11-17 13:27:59
+archive/issue_comments_032029.json:
+```json
+{
+    "body": "I replaced the patches with ones that apply cleanly to 3.2.rc1.",
+    "created_at": "2008-11-17T13:27:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4360",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4360#issuecomment-32029",
+    "user": "burcin"
+}
+```
 
 I replaced the patches with ones that apply cleanly to 3.2.rc1.
 
 
+
 ---
 
-Comment by was created at 2008-11-28 07:00:09
+archive/issue_comments_032030.json:
+```json
+{
+    "body": "REFEREE REPORT:\n\nBurcin, I didn't get far (against 3.2.1.alpha1).  Could you rebase again and let me know ASAP so I can referee?\n\n```\nwas@sage:~/build/sage-3.2.1.alpha1$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/4360/01_fraction_field_element_class.patch')\nAttempting to load remote file: http://trac.sagemath.org/sage_trac/attachment/ticket/4360/01_fraction_field_element_class.patch?format=raw\nLoading: [..]\ncd \"/home/was/build/sage-3.2.1.alpha1/devel/sage\" && hg status\ncd \"/home/was/build/sage-3.2.1.alpha1/devel/sage\" && hg status\ncd \"/home/was/build/sage-3.2.1.alpha1/devel/sage\" && hg import   \"/home/was/.sage/temp/sage/23856/tmp_0.patch\"\napplying /home/was/.sage/temp/sage/23856/tmp_0.patch\npatching file sage/rings/fraction_field.py\nHunk #5 succeeded at 259 with fuzz 1 (offset 0 lines).\nHunk #6 FAILED at 270\n1 out of 12 hunks FAILED -- saving rejects to file sage/rings/fraction_field.py.rej\nabort: patch failed to apply\n```\n",
+    "created_at": "2008-11-28T07:00:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4360",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4360#issuecomment-32030",
+    "user": "was"
+}
+```
 
 REFEREE REPORT:
 
@@ -66,23 +124,58 @@ abort: patch failed to apply
 
 
 
+
 ---
+
+archive/issue_comments_032031.json:
+```json
+{
+    "body": "Attachment\n\nfix fraction field homomorphisms",
+    "created_at": "2008-11-28T12:17:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4360",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4360#issuecomment-32031",
+    "user": "burcin"
+}
+```
 
 Attachment
 
 fix fraction field homomorphisms
 
 
+
 ---
 
-Comment by burcin created at 2008-11-28 12:19:04
+archive/issue_comments_032032.json:
+```json
+{
+    "body": "Rebased against 3.2.1.alpha2. Please ignore the file `02_fraction_field_random_element.2.patch`.",
+    "created_at": "2008-11-28T12:19:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4360",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4360#issuecomment-32032",
+    "user": "burcin"
+}
+```
 
 Rebased against 3.2.1.alpha2. Please ignore the file `02_fraction_field_random_element.2.patch`.
 
 
+
 ---
 
-Comment by was created at 2008-11-29 21:28:47
+archive/issue_comments_032033.json:
+```json
+{
+    "body": "REFEREEING.\n\nI took sage-3.2.1.rc0 and built it on sage.math and it doctested fine:\n\n```\nAll tests passed!\nTotal time for all tests: 4285.2 seconds\n```\n\n\nI applied the above patches (all apply cleanly), rebuilt sage, and two doctests fail:\n\n```\n        sage -t  devel/sage/sage/structure/sage_object.pyx # 1 doctests failed\n        sage -t  devel/sage/sage/calculus/desolvers.py # 1 doctests failed\n```\n\n\nI reran them individually, and both still fail.  Here is what you broke:\n\n```\nsage -t  \"devel/sage/sage/calculus/desolvers.py\"            **********************************************************************\nFile \"/home/was/build/sage-3.2.1.rc0/devel/sage/sage/calculus/desolvers.py\", line 437:\n    sage: eulers_method_2x2(f,g, 0, 1, -1, 1/4, 1)\nExpected:\n        t                    x                h*f(t,x,y)                    y           h*g(t,x,y)\n        0                    1                     -0.25                   -1                 0.50\n      1/4                 0.75                     -0.12                -0.50                 0.29\n      1/2                 0.63                    -0.054                -0.21                 0.19\n      3/4                 0.63                   -0.0078               -0.031                 0.11\n        1                 0.63                     0.020                0.079                0.071\nGot:\n             t                    x                h*f(t,x,y)                    y           h*g(t,x,y)\n             0                    1                     -0.25                   -1                 0.50\n           1/4                 0.75                     -0.12                -0.50                 0.32\n           1/2                 0.63                    -0.046                -0.18                 0.21\n           3/4                 0.63                    0.0040                0.016                 0.16\n             1                 0.69                     0.043                 0.18                 0.15\n**********************************************************************\n1 items had failures:\n   1 of  18 in __main__.example_7\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/was/build/sage-3.2.1.rc0/tmp/.doctest_desolvers.py\n         [9.3 s]\n```\n\n\nand\n\n\n```\nsage -t  \"devel/sage/sage/structure/sage_object.pyx\"\n\n**********************************************************************\nFile \"/home/was/build/sage-3.2.1.rc0/devel/sage/sage/structure/sage_object.pyx\", line 744:\n    sage: sage.structure.sage_object.unpickle_all(std)\nExpected:\n    Successfully unpickled ... objects.\n    Failed to unpickle 0 objects.\nGot:\n    ** failed:  _class__sage_combinat_sf_llt_LLT_cospin__.sobj\n    ** failed:  _class__sage_combinat_sf_macdonald_MacdonaldPolynomials_s__.sobj\n    ** failed:  _class__sage_combinat_sf_jack_JackPolynomials_j__.sobj\n    ** failed:  _class__sage_combinat_sf_jack_JackPolynomials_p__.sobj\n    ** failed:  _class__sage_combinat_sf_macdonald_MacdonaldPolynomials_p__.sobj\n    ** failed:  _class__sage_combinat_sf_hall_littlewood_HallLittlewood_q__.sobj\n    ** failed:  _class__sage_combinat_sf_macdonald_MacdonaldPolynomials_q__.sobj\n    ** failed:  _class__sage_combinat_sf_llt_LLT_spin__.sobj\n    ** failed:  _class__sage_combinat_sf_hall_littlewood_HallLittlewood_p__.sobj\n    ** failed:  _class__sage_combinat_sf_jack_JackPolynomials_q__.sobj\n    ** failed:  _class__sage_combinat_sf_macdonald_MacdonaldPolynomials_h__.sobj\n    ** failed:  _class__sage_combinat_sf_macdonald_MacdonaldPolynomials_ht__.sobj\n    ** failed:  _class__sage_combinat_sf_macdonald_MacdonaldPolynomials_j__.sobj\n    ** failed:  _class__sage_combinat_sf_hall_littlewood_HallLittlewood_qp__.sobj\n    Failed:\n    _class__sage_combinat_sf_llt_LLT_cospin__.sobj\n    _class__sage_combinat_sf_macdonald_MacdonaldPolynomials_s__.sobj\n    _class__sage_combinat_sf_jack_JackPolynomials_j__.sobj\n    _class__sage_combinat_sf_jack_JackPolynomials_p__.sobj\n    _class__sage_combinat_sf_macdonald_MacdonaldPolynomials_p__.sobj\n    _class__sage_combinat_sf_hall_littlewood_HallLittlewood_q__.sobj\n    _class__sage_combinat_sf_macdonald_MacdonaldPolynomials_q__.sobj\n    _class__sage_combinat_sf_llt_LLT_spin__.sobj\n    _class__sage_combinat_sf_hall_littlewood_HallLittlewood_p__.sobj\n    _class__sage_combinat_sf_jack_JackPolynomials_q__.sobj\n    _class__sage_combinat_sf_macdonald_MacdonaldPolynomials_h__.sobj\n    _class__sage_combinat_sf_macdonald_MacdonaldPolynomials_ht__.sobj\n    _class__sage_combinat_sf_macdonald_MacdonaldPolynomials_j__.sobj\n    _class__sage_combinat_sf_hall_littlewood_HallLittlewood_qp__.sobj\n    Successfully unpickled 440 objects.\n    Failed to unpickle 14 objects.\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_18\n```\n",
+    "created_at": "2008-11-29T21:28:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4360",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4360#issuecomment-32033",
+    "user": "was"
+}
+```
 
 REFEREEING.
 
@@ -182,28 +275,76 @@ Got:
 
 
 
+
 ---
 
-Comment by burcin created at 2008-12-04 23:28:57
+archive/issue_comments_032034.json:
+```json
+{
+    "body": "add random_element() method",
+    "created_at": "2008-12-04T23:28:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4360",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4360#issuecomment-32034",
+    "user": "burcin"
+}
+```
 
 add random_element() method
 
 
+
 ---
+
+archive/issue_comments_032035.json:
+```json
+{
+    "body": "Attachment\n\nmove element class to cython",
+    "created_at": "2008-12-04T23:29:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4360",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4360#issuecomment-32035",
+    "user": "burcin"
+}
+```
 
 Attachment
 
 move element class to cython
 
 
+
 ---
 
-Comment by burcin created at 2008-12-05 23:12:34
+archive/issue_comments_032036.json:
+```json
+{
+    "body": "new coercion model, element class a parameter",
+    "created_at": "2008-12-05T23:12:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4360",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4360#issuecomment-32036",
+    "user": "burcin"
+}
+```
 
 new coercion model, element class a parameter
 
 
+
 ---
+
+archive/issue_comments_032037.json:
+```json
+{
+    "body": "Attachment\n\nI posted new patches that fix the doctest errors in comment:6.\n\nThe fix for the pickles depends on #4698.",
+    "created_at": "2008-12-05T23:17:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4360",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4360#issuecomment-32037",
+    "user": "burcin"
+}
+```
 
 Attachment
 
@@ -212,22 +353,55 @@ I posted new patches that fix the doctest errors in comment:6.
 The fix for the pickles depends on #4698.
 
 
+
 ---
 
-Comment by robertwb created at 2008-12-07 05:18:55
+archive/issue_comments_032038.json:
+```json
+{
+    "body": "It looks good. I didn't to a testall, but all the touched files, as well as the failures above and the sage/rings/polynomials directory pass. Also, the code looks good and I haven't been able to break it in the testing I did of it.",
+    "created_at": "2008-12-07T05:18:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4360",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4360#issuecomment-32038",
+    "user": "robertwb"
+}
+```
 
 It looks good. I didn't to a testall, but all the touched files, as well as the failures above and the sage/rings/polynomials directory pass. Also, the code looks good and I haven't been able to break it in the testing I did of it.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-07 08:05:27
+archive/issue_comments_032039.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-12-07T08:05:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4360",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4360#issuecomment-32039",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-07 08:05:27
+archive/issue_comments_032040.json:
+```json
+{
+    "body": "Merged all four patches in Sage 3.2.2.alpha1",
+    "created_at": "2008-12-07T08:05:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4360",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4360#issuecomment-32040",
+    "user": "mabshoff"
+}
+```
 
 Merged all four patches in Sage 3.2.2.alpha1

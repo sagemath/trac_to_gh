@@ -1,11 +1,21 @@
 # Issue 6308: [with spkg, needs review] Fix scipy spkg to play nicely with gfortran and g95
 
-Issue created by migration from https://trac.sagemath.org/ticket/6308
-
-Original creator: craigcitro
-
-Original creation time: 2009-06-16 06:32:32
-
+archive/issues_006308.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nCC:  jason jkantor wstein\n\nKeywords: scipy\n\nThe new `scipy-0.7.spkg` from #3391 is great -- except that it accidentally forgets to include a fix to `scipy.optimize.optimize` if `gfortran` is used instead of `g95`. There's a new spkg up that fixes that here: \n\n  http://sage.math.washington.edu/scratch/craigcitro/patches/scipy-0.7.p1.spkg \n\nIndeed, I spoke with Jason Grout, and he confirmed that the new `optimize.py` should be patched in regardless of what fortran compiler we use.\n\nI'm adding a few potential reviewers to the cc.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6308\n\n",
+    "created_at": "2009-06-16T06:32:32Z",
+    "labels": [
+        "packages: standard",
+        "blocker",
+        "bug"
+    ],
+    "title": "[with spkg, needs review] Fix scipy spkg to play nicely with gfortran and g95",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6308",
+    "user": "craigcitro"
+}
+```
 Assignee: mabshoff
 
 CC:  jason jkantor wstein
@@ -20,16 +30,42 @@ Indeed, I spoke with Jason Grout, and he confirmed that the new `optimize.py` sh
 
 I'm adding a few potential reviewers to the cc.
 
+Issue created by migration from https://trac.sagemath.org/ticket/6308
+
+
+
+
 
 ---
 
-Comment by craigcitro created at 2009-06-16 06:34:52
+archive/issue_comments_050348.json:
+```json
+{
+    "body": "Oh, I should say: I've tested this on both `sage.math` and `cleo` on skynet, which uses `gfortran` -- it worked fine in both cases.",
+    "created_at": "2009-06-16T06:34:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6308",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6308#issuecomment-50348",
+    "user": "craigcitro"
+}
+```
 
 Oh, I should say: I've tested this on both `sage.math` and `cleo` on skynet, which uses `gfortran` -- it worked fine in both cases.
 
 
+
 ---
 
-Comment by craigcitro created at 2009-06-18 02:06:57
+archive/issue_comments_050349.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-06-18T02:06:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6308",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6308#issuecomment-50349",
+    "user": "craigcitro"
+}
+```
 
 Resolution: fixed

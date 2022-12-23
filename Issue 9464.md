@@ -1,11 +1,21 @@
 # Issue 9464: R depends on Fortran, but has no such dependancy in spkg/standard/deps
 
-Issue created by migration from https://trac.sagemath.org/ticket/9464
-
-Original creator: drkirkby
-
-Original creation time: 2010-07-09 12:38:51
-
+archive/issues_009464.json:
+```json
+{
+    "body": "Assignee: GeorgSWeber\n\nCC:  rlm jhpalmieri mpatel\n\nIn the sage-4.5.alpha4 code, the $SAGE_ROOT/spkg/standard/deps file has this entry for R:\n\n\n```\n$(INST)/$(R): $(BASE) $(INST)/$(PYTHON) $(INST)/$(ATLAS) $(INST)/$(ICONV)\n        $(INSTALL) \"$(SAGE_SPKG) $(R) 2>&1\" \"tee -a $(SAGE_LOGS)/$(R).log\"\n```\n\n\nNote, there is no Fortran dependency listed, yet R does have Fortran files:\n\n\n```\ndrkirkby@hawk:~/sage-4.5.alpha4/spkg/standard$ find r-2.10.1.p2 -name '*.f'\nr-2.10.1.p2/src/src/library/stats/src/stxwx.f\nr-2.10.1.p2/src/src/library/stats/src/sgram.f\nr-2.10.1.p2/src/src/library/stats/src/bsplvd.f\nr-2.10.1.p2/src/src/library/stats/src/stl.f\nr-2.10.1.p2/src/src/library/stats/src/hclust.f\nr-2.10.1.p2/src/src/library/stats/src/sslvrg.f\nr-2.10.1.p2/src/src/library/stats/src/qsbart.f\nr-2.10.1.p2/src/src/library/stats/src/bvalue.f\nr-2.10.1.p2/src/src/library/stats/src/loessf.f\nr-2.10.1.p2/src/src/library/stats/src/lminfl.f\nr-2.10.1.p2/src/src/library/stats/src/kmns.f\nr-2.10.1.p2/src/src/library/stats/src/eureka.f\nr-2.10.1.p2/src/src/library/stats/src/sinerp.f\nr-2.10.1.p2/src/src/library/stats/src/bvalus.f\nr-2.10.1.p2/src/src/library/stats/src/ppr.f\nr-2.10.1.p2/src/src/library/stats/src/portsrc.f\nr-2.10.1.p2/src/src/appl/dchdc.f\nr-2.10.1.p2/src/src/appl/chol.f\nr-2.10.1.p2/src/src/appl/dqrsl.f\nr-2.10.1.p2/src/src/appl/dqrdc2.f\nr-2.10.1.p2/src/src/appl/eigen.f\nr-2.10.1.p2/src/src/appl/dpoco.f\nr-2.10.1.p2/src/src/appl/dposl.f\nr-2.10.1.p2/src/src/appl/dpbfa.f\nr-2.10.1.p2/src/src/appl/dtrco.f\nr-2.10.1.p2/src/src/appl/dtrsl.f\nr-2.10.1.p2/src/src/appl/ch2inv.f\nr-2.10.1.p2/src/src/appl/dpofa.f\nr-2.10.1.p2/src/src/appl/dqrutl.f\nr-2.10.1.p2/src/src/appl/dqrdc.f\nr-2.10.1.p2/src/src/appl/dpbsl.f\nr-2.10.1.p2/src/src/appl/dpodi.f\nr-2.10.1.p2/src/src/appl/dqrls.f\nr-2.10.1.p2/src/src/appl/dsvdc.f\nr-2.10.1.p2/src/src/modules/lapack/dlapack4.f\nr-2.10.1.p2/src/src/modules/lapack/vecLibg95f.f\nr-2.10.1.p2/src/src/modules/lapack/dlapack3.f\nr-2.10.1.p2/src/src/modules/lapack/dlapack2.f\netc\n```\n\n\nI'll upload a patch and deps file\n\nDave \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9464\n\n",
+    "created_at": "2010-07-09T12:38:51Z",
+    "labels": [
+        "build",
+        "major",
+        "bug"
+    ],
+    "title": "R depends on Fortran, but has no such dependancy in spkg/standard/deps",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9464",
+    "user": "drkirkby"
+}
+```
 Assignee: GeorgSWeber
 
 CC:  rlm jhpalmieri mpatel
@@ -72,45 +82,117 @@ Dave
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/9464
+
+
+
+
 
 ---
 
-Comment by rlm created at 2010-07-09 13:01:41
+archive/issue_comments_090757.json:
+```json
+{
+    "body": "This looks like the cause of #9435",
+    "created_at": "2010-07-09T13:01:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9464",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9464#issuecomment-90757",
+    "user": "rlm"
+}
+```
 
 This looks like the cause of #9435
 
 
+
 ---
 
-Comment by rlm created at 2010-07-09 13:01:41
+archive/issue_comments_090758.json:
+```json
+{
+    "body": "Changing priority from major to blocker.",
+    "created_at": "2010-07-09T13:01:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9464",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9464#issuecomment-90758",
+    "user": "rlm"
+}
+```
 
 Changing priority from major to blocker.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-07-09 14:46:05
+archive/issue_comments_090759.json:
+```json
+{
+    "body": "$SAGE_ROOT/spkg/standard/deps to force Fortran to build before R",
+    "created_at": "2010-07-09T14:46:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9464",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9464#issuecomment-90759",
+    "user": "drkirkby"
+}
+```
 
 $SAGE_ROOT/spkg/standard/deps to force Fortran to build before R
 
 
+
 ---
+
+archive/issue_comments_090760.json:
+```json
+{
+    "body": "Attachment\n\nDiff between $SAGE_ROOT/spkg/standard/deps and that is sage-4.5.alpha4",
+    "created_at": "2010-07-09T14:46:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9464",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9464#issuecomment-90760",
+    "user": "drkirkby"
+}
+```
 
 Attachment
 
 Diff between $SAGE_ROOT/spkg/standard/deps and that is sage-4.5.alpha4
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-07-09 15:10:09
+archive/issue_comments_090761.json:
+```json
+{
+    "body": "This change to deps seems fine -- making the dependencies explicit seems like a good idea -- but note that fortran is a dependency of lapack, lapack is a dependency of atlas, and atlas is a dependency of R.  So fortran should always get installed before R even without this change.  Have you seen otherwise?",
+    "created_at": "2010-07-09T15:10:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9464",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9464#issuecomment-90761",
+    "user": "jhpalmieri"
+}
+```
 
 This change to deps seems fine -- making the dependencies explicit seems like a good idea -- but note that fortran is a dependency of lapack, lapack is a dependency of atlas, and atlas is a dependency of R.  So fortran should always get installed before R even without this change.  Have you seen otherwise?
 
 
+
 ---
 
-Comment by drkirkby created at 2010-07-09 16:49:47
+archive/issue_comments_090762.json:
+```json
+{
+    "body": "Replying to [comment:2 jhpalmieri]:\n> This change to deps seems fine -- making the dependencies explicit seems like a good idea -- but note that fortran is a dependency of lapack, lapack is a dependency of atlas, and atlas is a dependency of R.  So fortran should always get installed before R even without this change.  Have you seen otherwise?\n\nI've personally not seen a problem. \n\nI must admit I did not look carefully to see the Fortran/LAPACK/ATLAS/R dependency. But Robert thought it was the cause of an OS X problem (see #9435), so upgraded this ticket to blocker. I think you have rather dashed that hope however! \n\nDave",
+    "created_at": "2010-07-09T16:49:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9464",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9464#issuecomment-90762",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:2 jhpalmieri]:
 > This change to deps seems fine -- making the dependencies explicit seems like a good idea -- but note that fortran is a dependency of lapack, lapack is a dependency of atlas, and atlas is a dependency of R.  So fortran should always get installed before R even without this change.  Have you seen otherwise?
@@ -122,45 +204,111 @@ I must admit I did not look carefully to see the Fortran/LAPACK/ATLAS/R dependen
 Dave
 
 
+
 ---
 
-Comment by drkirkby created at 2010-07-09 16:49:47
+archive/issue_comments_090763.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-07-09T16:49:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9464",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9464#issuecomment-90763",
+    "user": "drkirkby"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by rlm created at 2010-07-13 15:41:32
+archive/issue_comments_090764.json:
+```json
+{
+    "body": "Changing priority from blocker to minor.",
+    "created_at": "2010-07-13T15:41:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9464",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9464#issuecomment-90764",
+    "user": "rlm"
+}
+```
 
 Changing priority from blocker to minor.
 
 
+
 ---
 
-Comment by leif created at 2010-08-19 00:03:07
+archive/issue_comments_090765.json:
+```json
+{
+    "body": "This change is now incorporated in #9761, which already has positive review, **so this ticket can be closed as duplicate**.\n\nMitesh, that's your job... ;-)",
+    "created_at": "2010-08-19T00:03:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9464",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9464#issuecomment-90765",
+    "user": "leif"
+}
+```
 
-This change is now incorporated in #9761, which already has positive review, *so this ticket can be closed as duplicate*.
+This change is now incorporated in #9761, which already has positive review, **so this ticket can be closed as duplicate**.
 
 Mitesh, that's your job... ;-)
 
 
+
 ---
 
-Comment by mpatel created at 2010-08-19 01:55:21
+archive/issue_comments_090766.json:
+```json
+{
+    "body": "I'm changing the status to \"positive review,\" so that the release mixer/masher/manager/monster will see it at report {11} or {32} and close this ticket as a \"duplicate\" after merging #9761.",
+    "created_at": "2010-08-19T01:55:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9464",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9464#issuecomment-90766",
+    "user": "mpatel"
+}
+```
 
 I'm changing the status to "positive review," so that the release mixer/masher/manager/monster will see it at report {11} or {32} and close this ticket as a "duplicate" after merging #9761.
 
 
+
 ---
 
-Comment by mpatel created at 2010-08-19 01:55:21
+archive/issue_comments_090767.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-08-19T01:55:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9464",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9464#issuecomment-90767",
+    "user": "mpatel"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mpatel created at 2010-08-24 02:52:06
+archive/issue_comments_090768.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2010-08-24T02:52:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9464",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9464#issuecomment-90768",
+    "user": "mpatel"
+}
+```
 
 Resolution: duplicate

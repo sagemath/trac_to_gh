@@ -1,11 +1,21 @@
 # Issue 7284: create an optional gmp spkg
 
-Issue created by migration from https://trac.sagemath.org/ticket/7284
-
-Original creator: was
-
-Original creation time: 2009-10-25 02:46:36
-
+archive/issues_007284.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nDavid Harvey wants to use GMP instead of MPIR, or want to check that they get the same answers with both libraries.  Let's make that really easy for him. \n\n http://sage.math.washington.edu/home/wstein/patches/mpir-gmp-4.3.1.spkg\n\nI named the package mpir-gmp-4.3.1.spkg, so one can drop it into sage-x.y.z.tar and just build with no other changes needed. \n\nI have tested this and several doctests fail due to different xgcd behavior.  This is expected. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7284\n\n",
+    "created_at": "2009-10-25T02:46:36Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "enhancement"
+    ],
+    "title": "create an optional gmp spkg",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7284",
+    "user": "was"
+}
+```
 Assignee: mabshoff
 
 David Harvey wants to use GMP instead of MPIR, or want to check that they get the same answers with both libraries.  Let's make that really easy for him. 
@@ -16,17 +26,43 @@ I named the package mpir-gmp-4.3.1.spkg, so one can drop it into sage-x.y.z.tar 
 
 I have tested this and several doctests fail due to different xgcd behavior.  This is expected. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7284
+
+
+
+
 
 ---
 
-Comment by was created at 2009-10-25 02:46:45
+archive/issue_comments_060618.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-10-25T02:46:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7284",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7284#issuecomment-60618",
+    "user": "was"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mhampton created at 2009-10-25 03:21:20
+archive/issue_comments_060619.json:
+```json
+{
+    "body": "I tried to install this on sage-4.1.1 (maybe a bad idea) and got the following error:\n\n```\nImportError                               Traceback (most recent call last)\n\n/Users/mh/sagestuff/sage-4.1.1/local/lib/python2.6/site-packages/IPython/ipmaker.pyc in force_import(modname)\n     64         reload(sys.modules[modname])\n     65     else:\n---> 66         __import__(modname)\n     67 \n     68 \n\n/Users/mh/sagestuff/sage-4.1.1/local/bin/ipy_profile_sage.py in <module>()\n      5     preparser(True)\n      6 \n----> 7     import sage.all_cmdline\n      8     sage.all_cmdline._init_cmdline(globals())\n      9 \n\n/Users/mh/sagestuff/sage-4.1.1/local/lib/python2.6/site-packages/sage/all_cmdline.py in <module>()\n     12 try:\n     13 \n---> 14     from sage.all import *\n     15     from sage.calculus.predefined import x\n     16     preparser(on=True)\n\n/Users/mh/sagestuff/sage-4.1.1/local/lib/python2.6/site-packages/sage/all.py in <module>()\n     66 from sage.misc.sh import sh\n     67 \n---> 68 from sage.libs.all       import *\n     69 \n     70 get_sigs()\n\n/Users/mh/sagestuff/sage-4.1.1/local/lib/python2.6/site-packages/sage/libs/all.py in <module>()\n      1 from sage.rings.memory import pmem_malloc\n      2 \n----> 3 import sage.libs.ntl.all  as ntl\n      4 \n      5 #import sage.libs.cf.cf as cf\n\n\n/Users/mh/sagestuff/sage-4.1.1/local/lib/python2.6/site-packages/sage/libs/ntl/all.py in <module>()\n     24 #*****************************************************************************\n\n     25 \n---> 26 from sage.libs.ntl.ntl_ZZ import (\n     27                  ntl_setSeed, \\\n     28                  ntl_ZZ as ZZ,\n\nImportError: dlopen(/Users/mh/sagestuff/sage-4.1.1/local/lib/python2.6/site-packages/sage/libs/ntl/ntl_ZZ.so, 2): Library not loaded: /Users/mh/sagestuff/sage-4.1.1.rc2/local/lib/libgmpxx.3.dylib\n  Referenced from: /Users/mh/sagestuff/sage-4.1.1/local/lib/python2.6/site-packages/sage/libs/ntl/ntl_ZZ.so\n  Reason: image not found\nError importing ipy_profile_sage - perhaps you should run %upgrade?\nWARNING: Loading of ipy_profile_sage failed.\n```\n",
+    "created_at": "2009-10-25T03:21:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7284",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7284#issuecomment-60619",
+    "user": "mhampton"
+}
+```
 
 I tried to install this on sage-4.1.1 (maybe a bad idea) and got the following error:
 
@@ -86,25 +122,58 @@ WARNING: Loading of ipy_profile_sage failed.
 
 
 
+
 ---
 
-Comment by myurko created at 2009-10-30 21:06:16
+archive/issue_comments_060620.json:
+```json
+{
+    "body": "It installed fine for me. I'm running the doctests now.",
+    "created_at": "2009-10-30T21:06:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7284",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7284#issuecomment-60620",
+    "user": "myurko"
+}
+```
 
 It installed fine for me. I'm running the doctests now.
 
 
+
 ---
 
-Comment by was created at 2009-11-13 21:32:05
+archive/issue_comments_060621.json:
+```json
+{
+    "body": "NEW VERSION with proper SAGE_FAT_BINARY support:\n\n   http://sage.math.washington.edu/home/wstein/patches/mpir-gmp-4.3.1.p1.spkg",
+    "created_at": "2009-11-13T21:32:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7284",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7284#issuecomment-60621",
+    "user": "was"
+}
+```
 
 NEW VERSION with proper SAGE_FAT_BINARY support:
 
    http://sage.math.washington.edu/home/wstein/patches/mpir-gmp-4.3.1.p1.spkg
 
 
+
 ---
 
-Comment by myurko created at 2009-11-14 01:23:39
+archive/issue_comments_060622.json:
+```json
+{
+    "body": "Replying to [comment:4 was]:\n> NEW VERSION with proper SAGE_FAT_BINARY support:\n> \n>    http://sage.math.washington.edu/home/wstein/patches/mpir-gmp-4.3.1.p1.spkg\n\nI finished the doctests on sage.math and I got hte following failiures:\n\nsage -t  devel/sage-main/sage/tests/book_stein_modform.py                                                      \n**********************************************************************                                         \nFile \"/home/myurko/sage-c/devel/sage-main/sage/tests/book_stein_modform.py\", line 70:                          \n    sage: M.basis()                                                                                            \nExpected:                                                                                                      \n    ({Infinity, 0}, {-1/8, 0}, {-1/9, 0})                                                                      \nGot:                                                                                                           \n    ({Infinity, 0}, {7/8, 1}, {8/9, 1})                                                                        \n**********************************************************************                                         \nFile \"/home/myurko/sage-c/devel/sage-main/sage/tests/book_stein_modform.py\", line 73:                          \n    sage: S.integral_basis()     # basis over ZZ.                                                              \nExpected:                                                                                                      \n    ({-1/8, 0}, {-1/9, 0})                                                                                     \nGot:                                                                                                           \n    ({7/8, 1}, {8/9, 1})                                                                                       \n**********************************************************************                                         \nFile \"/home/myurko/sage-c/devel/sage-main/sage/tests/book_stein_modform.py\", line 94:                          \n    sage: [x.lift_to_sl2z(2) for x in M.manin_generators()]                                                    \nExpected:                                                                                                      \n    [[1, 0, 0, 1], [0, -1, 1, 0], [0, -1, 1, 1]]                                                               \nGot:                                                                                                           \n    [[1, 0, 0, 1], [0, -1, 1, 0], [1, 0, 1, 1]]                                                                \n**********************************************************************                                         \nFile \"/home/myurko/sage-c/devel/sage-main/sage/tests/book_stein_modform.py\", line 114:                         \n    sage: [x.modular_symbol_rep() for x in M.basis()]                                                          \nExpected:                                                                                                      \n    [{Infinity, 0}, {0, 1/3}, {-1/2, -1/3}]                                                                    \nGot:                                                                                                           \n    [{Infinity, 0}, {-1, -2/3}, {-1/2, -1/3}]                                                                  \n**********************************************************************                                         \n1 items had failures:                                                                                          \n   4 of 241 in __main__.example_1                                                                              \n***Test Failed*** 4 failures.\n\nsage -t  devel/sage-main/sage/tests/book_stein_ent.py                                                          \n**********************************************************************                                         \nFile \"/home/myurko/sage-c/devel/sage-main/sage/tests/book_stein_ent.py\", line 82:                              \n    sage: CRT(2,3, 3, 5)                                                                                       \nExpected:                                                                                                      \n    8                                                                                                          \nGot:                                                                                                           \n    -7                                                                                                         \n**********************************************************************                                         \nFile \"/home/myurko/sage-c/devel/sage-main/sage/tests/book_stein_ent.py\", line 86:                              \n    sage: xgcd(5,7)                                                                                            \nExpected:                                                                                                      \n    (1, 3, -2)                                                                                                 \nGot:                                                                                                           \n    (1, -4, 3)                                                                                                 \n**********************************************************************                                         \n1 items had failures:                                                                                          \n   2 of 263 in __main__.example_1                                                                              \n***Test Failed*** 2 failures.\n\nsage -t  devel/sage-main/sage/rings/integer.pyx                                                                \n**********************************************************************                                         \nFile \"/home/myurko/sage-c/devel/sage-main/sage/rings/integer.pyx\", line 4429:                                  \n    sage: Integer(5)._xgcd(7)                                                                                  \nExpected:                                                                                                      \n    (1, 3, -2)                                                                                                 \nGot:                                                                                                           \n    (1, -4, 3)                                                                                                 \n**********************************************************************                                         \nFile \"/home/myurko/sage-c/devel/sage-main/sage/rings/integer.pyx\", line 4441:                                  \n    sage: Integer(3)._xgcd(21)                                                                                 \nExpected:                                                                                                      \n    (3, 1, 0)                                                                                                  \nGot:                                                                                                           \n    (3, -20, 3)                                                                                                \n**********************************************************************                                         \nFile \"/home/myurko/sage-c/devel/sage-main/sage/rings/integer.pyx\", line 4443:                                  \n    sage: Integer(3)._xgcd(24)                                                                                 \nExpected:                                                                                                      \n    (3, 1, 0)                                                                                                  \nGot:                                                                                                           \n    (3, -15, 2)                                                                                                \n**********************************************************************                                         \nFile \"/home/myurko/sage-c/devel/sage-main/sage/rings/integer.pyx\", line 4445:                                  \n    sage: Integer(3)._xgcd(48)                                                                                 \nExpected:                                                                                                      \n    (3, 1, 0)                                                                                                  \nGot:                                                                                                           \n    (3, -15, 1)                                                                                                \n**********************************************************************                                         \n1 items had failures:                                                                                          \n   4 of  20 in __main__.example_110                                                                            \n***Test Failed*** 4 failures.\n\nsage -t  devel/sage-main/sage/rings/arith.py                                                                   \n**********************************************************************                                         \nFile \"/home/myurko/sage-c/devel/sage-main/sage/rings/arith.py\", line 1450:                                     \n    sage: g, a, b = xgcd(5/1, 7/1); g, a, b                                                                    \nExpected:                                                                                                      \n    (1, 3, -2)                                                                                                 \nGot:                                                                                                           \n    (1, -4, 3)                                                                                                 \n**********************************************************************                                         \nFile \"/home/myurko/sage-c/devel/sage-main/sage/rings/arith.py\", line 2423:                                     \n    sage: crt(2, 1, 3, 5)                                                                                      \nExpected:                                                                                                      \n    -4                                                                                                         \nGot:                                                                                                           \n    11                                                                                                         \n**********************************************************************                                         \nFile \"/home/myurko/sage-c/devel/sage-main/sage/rings/arith.py\", line 2430:                                     \n    sage: c = CRT(2,3, 3, 5); c                                                                                \nExpected:                                                                                                      \n    8                                                                                                          \nGot:                                                                                                           \n    -7                                                                                                         \n**********************************************************************                                         \n2 items had failures:                                                                                          \n   1 of  13 in __main__.example_29                                                                             \n   2 of   7 in __main__.example_53                                                                             \n***Test Failed*** 3 failures.\n\nsage -t  devel/sage-main/sage/rings/polynomial/multi_polynomial_ideal.py                                       \n**********************************************************************                                         \nFile \"/home/myurko/sage-c/devel/sage-main/sage/rings/polynomial/multi_polynomial_ideal.py\", line 170:          \n    sage: I.groebner_basis()                                                                                   \nExpected:                                                                                                      \n    [-x - y - z, -y^2 - 3*y + z^2 + 3, -y*z + 14329*y + 6653454247350,                                         \n     2*y - 1199*z^3 + 74229*z^2 + 31017*z + 106019, -23*z^3 + 953554642851*z + 2034,                           \n     19*z^2 + 5357048579, 2*z - 1339262138, 164878]                                                            \nGot:                                                                                                           \n    [-x - y - z, -y^2 - 3*y + z^2 + 3, -y*z - 53843*y + 241331785122306, 2*y - 10951*z^3 + 8073353678595417*z - 1769770, 23*z^3 + 2623*z^2 + 1109*z + 3717, 19*z^2 - 51715800877, 2*z + 12928950226, 164878]                  \n**********************************************************************                                         \nFile \"/home/myurko/sage-c/devel/sage-main/sage/rings/polynomial/multi_polynomial_ideal.py\", line 2493:         \n    sage: I.groebner_basis()                                                                                   \nExpected:                                                                                                      \n    [-b^3 + 23*b*c^2 - 3*b^2 - 5*b*c,                                                                          \n     2*b*c^2 - 6*c^3 - b^2 - b*c + 2*c^2,                                                                      \n     42*c^3 + 5*b^2 + 4*b*c - 14*c^2,                                                                          \n     2*b^2 + 6*b*c + 6*c^2 - b - 2*c,                                                                          \n     -10*b*c - 12*c^2 + b + 4*c,                                                                               \n     a + 2*b + 2*c - 1]                                                                                        \nGot:                                                                                                           \n    [-b^3 + 251*b*c^2 + 282*c^3 - 21*b*c - 88*c^2 - b - 2*c, -2*b*c^2 - 36*c^3 - b*c + 12*c^2 - b, 42*c^3 + 5*b^2 + 4*b*c - 14*c^2, 2*b^2 + 6*b*c + 6*c^2 - b - 2*c, -10*b*c - 12*c^2 + b + 4*c, a + 2*b + 2*c - 1]           \n**********************************************************************                                         \nFile \"/home/myurko/sage-c/devel/sage-main/sage/rings/polynomial/multi_polynomial_ideal.py\", line 2514:         \n    sage: I.groebner_basis()                                                                                   \nExpected:                                                                                                      \n    [b*c^2 + 992*b*c + 712*c^2 + 332*b + 96*c,                                                                 \n     2*c^3 + 589*b*c + 862*c^2 + 762*b + 268*c,                                                                \n     b^2 + 438*b*c + 281*b,                                                                                    \n     5*b*c + 156*c^2 + 112*b + 948*c,                                                                          \n     50*c^2 + 600*b + 650*c, a + 2*b + 2*c + 999, 125*b]                                                       \nGot:                                                                                                           \n    [b*c^2 + 492*b*c + 312*c^2 + 32*b + 896*c, 2*c^3 + 339*b*c + 762*c^2 + 312*b + 968*c, b^2 + 438*b*c + 281*b, 5*b*c + 306*c^2 + 912*b + 898*c, 50*c^2 + 600*b + 650*c, a + 2*b + 2*c + 999, 125*b]                         \n**********************************************************************                                         \n2 items had failures:                                                                                          \n   1 of  59 in __main__.example_0                                                                              \n   2 of  43 in __main__.example_48                                                                             \n***Test Failed*** 3 failures. \n\nsage -t  devel/sage-main/sage/rings/polynomial/toy_d_basis.py                                                  \n**********************************************************************                                         \nFile \"/home/myurko/sage-c/devel/sage-main/sage/rings/polynomial/toy_d_basis.py\", line 175:                     \n    sage: gpol(f,g)                                                                                            \nExpected:                                                                                                      \n    x^2*y - y                                                                                                  \nGot:                                                                                                           \n    x^2*y - x*z + y                                                                                            \n**********************************************************************                                         \n1 items had failures:                                                                                          \n   1 of   7 in __main__.example_2                                                                              \n***Test Failed*** 1 failures.",
+    "created_at": "2009-11-14T01:23:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7284",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7284#issuecomment-60622",
+    "user": "myurko"
+}
+```
 
 Replying to [comment:4 was]:
 > NEW VERSION with proper SAGE_FAT_BINARY support:
@@ -282,9 +351,20 @@ Got:
 ***Test Failed*** 1 failures.
 
 
+
 ---
 
-Comment by was created at 2009-11-14 03:48:04
+archive/issue_comments_060623.json:
+```json
+{
+    "body": "\n```\nThe doctests finished on sage.math, and there appear to be a number of doctests that fail that aren't immediately related to xgcd. If you don't eant to try and fix those, then perhaps it whould be put in experimental until the errors can be fixed. I posted the specific failures on the trac ticket.\n\n-- \nMichael Yurko\n```\n\n\nBased on this, I'm going to put this spkg in experimental now and close this ticket.",
+    "created_at": "2009-11-14T03:48:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7284",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7284#issuecomment-60623",
+    "user": "was"
+}
+```
 
 
 ```
@@ -298,15 +378,37 @@ Michael Yurko
 Based on this, I'm going to put this spkg in experimental now and close this ticket.
 
 
+
 ---
 
-Comment by was created at 2009-11-14 03:48:04
+archive/issue_comments_060624.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-11-14T03:48:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7284",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7284#issuecomment-60624",
+    "user": "was"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by leif created at 2012-07-28 13:53:02
+archive/issue_comments_060625.json:
+```json
+{
+    "body": "See #12661 for a more recent version (GMP 5.x).",
+    "created_at": "2012-07-28T13:53:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7284",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7284#issuecomment-60625",
+    "user": "leif"
+}
+```
 
 See #12661 for a more recent version (GMP 5.x).

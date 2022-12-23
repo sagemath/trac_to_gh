@@ -1,23 +1,33 @@
 # Issue 9692: Doctest failure of sage/symbolic/expression.pyx on Solaris 10 x86
 
-Issue created by migration from https://trac.sagemath.org/ticket/9692
-
-Original creator: drkirkby
-
-Original creation time: 2010-08-05 23:11:43
-
+archive/issues_009692.json:
+```json
+{
+    "body": "Assignee: mvngu\n\nCC:  jhpalmieri\n\nAn almost complete 32-bit port of Sage 4.5.2 to Solaris 10 on x86 processors had been done on the following hardware:\n\n* Dell OptiPlex 755\n* 2.40 GHz Intel Quad-Core Core2 Q6600 CPU\n* 8 GB RAM, 8 GB swap. \n* Solaris 10 update 5 (5/08) on x86 \n* gcc 4.5.0 configured to use the Sun linker and GNU assembler\n* sage-4.5.2.rc1 with several changes. \n\nThe following doctest failed. \n\n\n```\nsage -t  -long devel/sage/sage/stats/hmm/chmm.pyx\n**********************************************************************\nFile \"/home/palmieri/fulvia/32bit/sage-4.5.2.rc1/devel/sage-main/sage/stats/hmm/chmm.pyx\", line 570:\n    sage: m.viterbi([0,1,10,10,1])\nExpected:\n    ([0, 0, 1, 1, 0], -9.0604285688230899)\nGot:\n    ([0, 0, 1, 1, 0], -9.0604285688230917)\n**********************************************************************\nFile \"/home/palmieri/fulvia/32bit/sage-4.5.2.rc1/devel/sage-main/sage/stats/hmm/chmm.pyx\", line 132:\n    sage: m.baum_welch(obs)\nExpected:\n    (-10.610333495739708, 14)\nGot:\n    (-10.61033349573971, 14)\n**********************************************************************\nFile \"/home/palmieri/fulvia/32bit/sage-4.5.2.rc1/devel/sage-main/sage/stats/hmm/chmm.pyx\", line 134:\n    sage: m.log_likelihood(obs)\nExpected:\n    -10.610333495739708\nGot:\n    -10.61033349573971\n**********************************************************************\n2 items had failures:\n   1 of   7 in __main__.example_15\n   2 of  12 in __main__.example_2\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file /home/palmieri/.sage_fulvia/tmp/.doctest_chmm.py\n```\n\n\nSome of these look like numerical rounding errors:\n\n\n```\nExpected:\n    ([0, 0, 1, 1, 0], -9.0604285688230899)\nGot:\n    ([0, 0, 1, 1, 0], -9.0604285688230917)\n```\n\n\nbut in other cases the number of digits being displayed is less than the expected value. \n\n\n```\nExpected:\n    -10.610333495739708\nGot:\n    -10.61033349573971\n```\n\nThe \"Got:\" value is a correctly rounded version of the \"Expected:\" value, but I'm not sure if printing less digits is acceptable.\n\nI personally like to see these numerical results being computed to high precision by another method if possible. I've got no idea how to compute these values, so have no idea if these are are anywhere near correct. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9692\n\n",
+    "created_at": "2010-08-05T23:11:43Z",
+    "labels": [
+        "doctest coverage",
+        "major",
+        "bug"
+    ],
+    "title": "Doctest failure of sage/symbolic/expression.pyx on Solaris 10 x86",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9692",
+    "user": "drkirkby"
+}
+```
 Assignee: mvngu
 
 CC:  jhpalmieri
 
 An almost complete 32-bit port of Sage 4.5.2 to Solaris 10 on x86 processors had been done on the following hardware:
 
- * Dell OptiPlex 755
- * 2.40 GHz Intel Quad-Core Core2 Q6600 CPU
- * 8 GB RAM, 8 GB swap. 
- * Solaris 10 update 5 (5/08) on x86 
- * gcc 4.5.0 configured to use the Sun linker and GNU assembler
- * sage-4.5.2.rc1 with several changes. 
+* Dell OptiPlex 755
+* 2.40 GHz Intel Quad-Core Core2 Q6600 CPU
+* 8 GB RAM, 8 GB swap. 
+* Solaris 10 update 5 (5/08) on x86 
+* gcc 4.5.0 configured to use the Sun linker and GNU assembler
+* sage-4.5.2.rc1 with several changes. 
 
 The following doctest failed. 
 
@@ -80,26 +90,63 @@ The "Got:" value is a correctly rounded version of the "Expected:" value, but I'
 I personally like to see these numerical results being computed to high precision by another method if possible. I've got no idea how to compute these values, so have no idea if these are are anywhere near correct. 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/9692
+
+
+
+
 
 ---
 
-Comment by jhpalmieri created at 2010-08-16 21:44:55
+archive/issue_comments_094205.json:
+```json
+{
+    "body": "I think this ticket is a duplicate of #9735, #9689, and/or #9693.  Is that right?  Can it be closed?\n\n(The ticket summary talks about symbolic/expression.pyx, which is covered by #9689 and #9693, while the description talks about chmm.pyx, which is covered by #9735.)",
+    "created_at": "2010-08-16T21:44:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9692",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9692#issuecomment-94205",
+    "user": "jhpalmieri"
+}
+```
 
 I think this ticket is a duplicate of #9735, #9689, and/or #9693.  Is that right?  Can it be closed?
 
 (The ticket summary talks about symbolic/expression.pyx, which is covered by #9689 and #9693, while the description talks about chmm.pyx, which is covered by #9735.)
 
 
+
 ---
 
-Comment by drkirkby created at 2010-08-16 22:09:18
+archive/issue_comments_094206.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2010-08-16T22:09:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9692",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9692#issuecomment-94206",
+    "user": "drkirkby"
+}
+```
 
 Resolution: duplicate
 
 
+
 ---
 
-Comment by drkirkby created at 2010-08-16 22:09:18
+archive/issue_comments_094207.json:
+```json
+{
+    "body": "Yes, it can. \n\nI've no idea why the title says one ticket and the description another. But I think we are clear about what the issues are.",
+    "created_at": "2010-08-16T22:09:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9692",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9692#issuecomment-94207",
+    "user": "drkirkby"
+}
+```
 
 Yes, it can. 
 

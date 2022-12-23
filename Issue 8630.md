@@ -1,11 +1,21 @@
 # Issue 8630: Cusp forms constructor ignores the character and returns enormous space
 
-Issue created by migration from https://trac.sagemath.org/ticket/8630
-
-Original creator: davidloeffler
-
-Original creation time: 2010-03-30 11:37:41
-
+archive/issues_008630.json:
+```json
+{
+    "body": "Assignee: craigcitro\n\n\n```\nsage: chi = DirichletGroup(109, CyclotomicField(3)).0\nsage: CuspForms(chi, 2, base_ring = CyclotomicField(9))\nCuspidal subspace of dimension 442 of Modular Forms space of dimension 10, character [zeta3 + 1] and weight 2 over Cyclotomic Field of order 9 and degree6\n```\n\n\n*facepalm*\n\nIssue created by migration from https://trac.sagemath.org/ticket/8630\n\n",
+    "created_at": "2010-03-30T11:37:41Z",
+    "labels": [
+        "modular forms",
+        "major",
+        "bug"
+    ],
+    "title": "Cusp forms constructor ignores the character and returns enormous space",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8630",
+    "user": "davidloeffler"
+}
+```
 Assignee: craigcitro
 
 
@@ -18,57 +28,151 @@ Cuspidal subspace of dimension 442 of Modular Forms space of dimension 10, chara
 
 *facepalm*
 
+Issue created by migration from https://trac.sagemath.org/ticket/8630
+
+
+
+
 
 ---
 
-Comment by davidloeffler created at 2010-03-30 15:32:54
+archive/issue_comments_078245.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-03-30T15:32:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8630",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8630#issuecomment-78245",
+    "user": "davidloeffler"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by davidloeffler created at 2010-03-30 16:23:55
+archive/issue_comments_078246.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-03-30T16:23:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8630",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8630#issuecomment-78246",
+    "user": "davidloeffler"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by davidloeffler created at 2010-03-30 16:23:55
+archive/issue_comments_078247.json:
+```json
+{
+    "body": "*** wait, it's still wrong in certain nastly cases ***",
+    "created_at": "2010-03-30T16:23:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8630",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8630#issuecomment-78247",
+    "user": "davidloeffler"
+}
+```
 
 *** wait, it's still wrong in certain nastly cases ***
 
 
+
 ---
+
+archive/issue_comments_078248.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-03-30T17:37:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8630",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8630#issuecomment-78248",
+    "user": "davidloeffler"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by davidloeffler created at 2010-03-30 17:40:08
+archive/issue_comments_078249.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-03-30T17:40:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8630",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8630#issuecomment-78249",
+    "user": "davidloeffler"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by was created at 2010-03-30 18:06:16
+archive/issue_comments_078250.json:
+```json
+{
+    "body": "Changing priority from major to blocker.",
+    "created_at": "2010-03-30T18:06:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8630",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8630#issuecomment-78250",
+    "user": "was"
+}
+```
 
 Changing priority from major to blocker.
 
 
+
 ---
 
-Comment by was created at 2010-03-31 01:48:38
+archive/issue_comments_078251.json:
+```json
+{
+    "body": "All doctests pass when this is applied against sage-4.3.5.",
+    "created_at": "2010-03-31T01:48:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8630",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8630#issuecomment-78251",
+    "user": "was"
+}
+```
 
 All doctests pass when this is applied against sage-4.3.5.
 
 
+
 ---
 
-Comment by was created at 2010-03-31 05:02:32
+archive/issue_comments_078252.json:
+```json
+{
+    "body": "1. Below \"ring\" should be \"modular symbols space\":\n\n```\n \t117\t    def change_ring(self, R): \n \t118\t        r\"\"\" \n \t119\t        Return this ring with the base ring changed to the ring R. \n```\n\n\n2. Here I think the sentence should end with ::\n\n\n```\n \t419\t    A more complicated example involving both a nontrivial character, and a \n \t420\t    base field that is not minimal for that character: \n```\n\n\n\nIt's really awesome that you sphinxified a bunch of docs, in addition to fixing the bug in this ticket.",
+    "created_at": "2010-03-31T05:02:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8630",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8630#issuecomment-78252",
+    "user": "was"
+}
+```
 
 1. Below "ring" should be "modular symbols space":
 
@@ -92,38 +196,95 @@ Comment by was created at 2010-03-31 05:02:32
 It's really awesome that you sphinxified a bunch of docs, in addition to fixing the bug in this ticket.
 
 
+
 ---
 
-Comment by was created at 2010-03-31 05:02:32
+archive/issue_comments_078253.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-03-31T05:02:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8630",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8630#issuecomment-78253",
+    "user": "was"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
+
+archive/issue_comments_078254.json:
+```json
+{
+    "body": "Attachment\n\napply over previous patch",
+    "created_at": "2010-03-31T11:07:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8630",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8630#issuecomment-78254",
+    "user": "davidloeffler"
+}
+```
 
 Attachment
 
 apply over previous patch
 
 
+
 ---
 
-Comment by davidloeffler created at 2010-03-31 11:08:07
+archive/issue_comments_078255.json:
+```json
+{
+    "body": "Here's a tiny patch that corrects the two things you pointed out in the docstrings.",
+    "created_at": "2010-03-31T11:08:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8630",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8630#issuecomment-78255",
+    "user": "davidloeffler"
+}
+```
 
 Here's a tiny patch that corrects the two things you pointed out in the docstrings.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-16 18:54:00
+archive/issue_comments_078256.json:
+```json
+{
+    "body": "Merged in 4.4.alpha0:\n- trac_8630.patch\n- trac_8630_docfixes.patch",
+    "created_at": "2010-04-16T18:54:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8630",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8630#issuecomment-78256",
+    "user": "jhpalmieri"
+}
+```
 
 Merged in 4.4.alpha0:
- - trac_8630.patch
- - trac_8630_docfixes.patch
+- trac_8630.patch
+- trac_8630_docfixes.patch
+
 
 
 ---
 
-Comment by jhpalmieri created at 2010-04-16 18:54:00
+archive/issue_comments_078257.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-04-16T18:54:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8630",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8630#issuecomment-78257",
+    "user": "jhpalmieri"
+}
+```
 
 Resolution: fixed

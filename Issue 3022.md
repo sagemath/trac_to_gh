@@ -1,17 +1,44 @@
 # Issue 3022: [with patch; needs review] Debian package support for polybori
 
-Issue created by migration from https://trac.sagemath.org/ticket/3022
-
-Original creator: tabbott
-
-Original creation time: 2008-04-25 15:52:58
-
+archive/issues_003022.json:
+```json
+{
+    "body": "Assignee: tabbott\n\nI've attached a patch that adds Debian build support to polybori.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3022\n\n",
+    "created_at": "2008-04-25T15:52:58Z",
+    "labels": [
+        "debian-package",
+        "blocker",
+        "enhancement"
+    ],
+    "title": "[with patch; needs review] Debian package support for polybori",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3022",
+    "user": "tabbott"
+}
+```
 Assignee: tabbott
 
 I've attached a patch that adds Debian build support to polybori.
 
+Issue created by migration from https://trac.sagemath.org/ticket/3022
+
+
+
+
 
 ---
+
+archive/issue_comments_020790.json:
+```json
+{
+    "body": "Attachment\n\nPatch looks good to me.\n\nCheers,\n\nMichael",
+    "created_at": "2008-04-25T18:56:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3022",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3022#issuecomment-20790",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -22,15 +49,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-25 18:56:23
+archive/issue_comments_020791.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-04-25T18:56:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3022",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3022#issuecomment-20791",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-25 18:56:23
+archive/issue_comments_020792.json:
+```json
+{
+    "body": "Merged in Sage 3.0.1.alpha0",
+    "created_at": "2008-04-25T18:56:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3022",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3022#issuecomment-20792",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.1.alpha0

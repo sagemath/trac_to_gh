@@ -1,60 +1,153 @@
 # Issue 8743: change_ring on a rational matrix may return self
 
-Issue created by migration from https://trac.sagemath.org/ticket/8743
-
-Original creator: jason
-
-Original creation time: 2010-04-22 01:17:21
-
+archive/issues_008743.json:
+```json
+{
+    "body": "Assignee: jason, was\n\nCC:  was rbeezer\n\nchange_ring on a rational matrix goes against the documentation for the generic change_ring function, which states that a copy is always returned.  This patch fixes this and adds a TestSuite test for it (the advantage of a testsuite test is that this will be run for *every* matrix class, not just the rational matrix class).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8743\n\n",
+    "created_at": "2010-04-22T01:17:21Z",
+    "labels": [
+        "linear algebra",
+        "major",
+        "bug"
+    ],
+    "title": "change_ring on a rational matrix may return self",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8743",
+    "user": "jason"
+}
+```
 Assignee: jason, was
 
 CC:  was rbeezer
 
 change_ring on a rational matrix goes against the documentation for the generic change_ring function, which states that a copy is always returned.  This patch fixes this and adds a TestSuite test for it (the advantage of a testsuite test is that this will be run for *every* matrix class, not just the rational matrix class).
 
+Issue created by migration from https://trac.sagemath.org/ticket/8743
+
+
+
+
 
 ---
 
-Comment by jason created at 2010-04-22 01:38:36
+archive/issue_comments_079991.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-04-22T01:38:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8743#issuecomment-79991",
+    "user": "jason"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_079992.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-04-22T01:41:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8743#issuecomment-79992",
+    "user": "jason"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by jsyri created at 2010-05-19 14:01:08
+archive/issue_comments_079993.json:
+```json
+{
+    "body": "Fixes bug, code seems to be OK, test is included, all tests pass. Positive review.",
+    "created_at": "2010-05-19T14:01:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8743#issuecomment-79993",
+    "user": "jsyri"
+}
+```
 
 Fixes bug, code seems to be OK, test is included, all tests pass. Positive review.
 
 
+
 ---
 
-Comment by jsyri created at 2010-05-19 14:01:08
+archive/issue_comments_079994.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-05-19T14:01:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8743#issuecomment-79994",
+    "user": "jsyri"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mhansen created at 2010-06-06 01:33:11
+archive/issue_comments_079995.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-06-06T01:33:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8743#issuecomment-79995",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by robertwb created at 2010-06-06 06:44:31
+archive/issue_comments_079996.json:
+```json
+{
+    "body": "I understand the ticket is closed, but is there any rational for the current behavior? Seems very inefficient, and returning self should be totally safe for immutable matrices at least.",
+    "created_at": "2010-06-06T06:44:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8743#issuecomment-79996",
+    "user": "robertwb"
+}
+```
 
 I understand the ticket is closed, but is there any rational for the current behavior? Seems very inefficient, and returning self should be totally safe for immutable matrices at least.
 
 
+
 ---
 
-Comment by mhansen created at 2010-06-06 06:58:26
+archive/issue_comments_079997.json:
+```json
+{
+    "body": "The patch does return self for immutable matrices.",
+    "created_at": "2010-06-06T06:58:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8743#issuecomment-79997",
+    "user": "mhansen"
+}
+```
 
 The patch does return self for immutable matrices.

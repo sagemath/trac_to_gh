@@ -1,46 +1,115 @@
 # Issue 7277: Add permutahedron symmetry groups as standard
 
-Issue created by migration from https://trac.sagemath.org/ticket/7277
-
-Original creator: kcrisman
-
-Original creation time: 2009-10-23 23:45:09
-
+archive/issues_007277.json:
+```json
+{
+    "body": "Assignee: joyner\n\nPermutahedra are very useful in a lot of contexts, and they have the interesting property that their symmetry group is a semidirect product of the cyclic group of order two and the symmetric group. These should be in the permgroup_named file, so they are easy to access and compare.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7277\n\n",
+    "created_at": "2009-10-23T23:45:09Z",
+    "labels": [
+        "group theory",
+        "minor",
+        "enhancement"
+    ],
+    "title": "Add permutahedron symmetry groups as standard",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7277",
+    "user": "kcrisman"
+}
+```
 Assignee: joyner
 
 Permutahedra are very useful in a lot of contexts, and they have the interesting property that their symmetry group is a semidirect product of the cyclic group of order two and the symmetric group. These should be in the permgroup_named file, so they are easy to access and compare.
 
+Issue created by migration from https://trac.sagemath.org/ticket/7277
+
+
+
+
 
 ---
 
-Comment by kcrisman created at 2014-12-22 20:51:15
+archive/issue_comments_060569.json:
+```json
+{
+    "body": "Actually they are just the direct product of these, and we do have #17243 where this could be mentioned.",
+    "created_at": "2014-12-22T20:51:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7277",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7277#issuecomment-60569",
+    "user": "kcrisman"
+}
+```
 
 Actually they are just the direct product of these, and we do have #17243 where this could be mentioned.
 
 
+
 ---
 
-Comment by kcrisman created at 2014-12-22 20:51:15
+archive/issue_comments_060570.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2014-12-22T20:51:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7277",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7277#issuecomment-60570",
+    "user": "kcrisman"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by kcrisman created at 2014-12-22 20:51:54
+archive/issue_comments_060571.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2014-12-22T20:51:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7277",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7277#issuecomment-60571",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by kcrisman created at 2014-12-22 20:51:54
+archive/issue_comments_060572.json:
+```json
+{
+    "body": "Since I opened it as a request, I hope it's okay that I ask for it to be closed \"upon further review\".",
+    "created_at": "2014-12-22T20:51:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7277",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7277#issuecomment-60572",
+    "user": "kcrisman"
+}
+```
 
 Since I opened it as a request, I hope it's okay that I ask for it to be closed "upon further review".
 
 
+
 ---
 
-Comment by vbraun created at 2015-01-13 01:18:24
+archive/issue_comments_060573.json:
+```json
+{
+    "body": "Resolution: wontfix",
+    "created_at": "2015-01-13T01:18:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7277",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7277#issuecomment-60573",
+    "user": "vbraun"
+}
+```
 
 Resolution: wontfix

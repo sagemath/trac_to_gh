@@ -1,11 +1,21 @@
 # Issue 7212: [with patch, needs review] steenrod algebra multiplication bug
 
-Issue created by migration from https://trac.sagemath.org/ticket/7212
-
-Original creator: jhpalmieri
-
-Original creation time: 2009-10-14 19:12:43
-
+archive/issues_007212.json:
+```json
+{
+    "body": "Assignee: tbd\n\nFrom sage-support:\n\n```\nI have Sage 4.1.1 install on a server, and I run the following code, \nwhich outputs the following error: \nsage: A3=SteenrodAlgebra(3) \nsage: A3.P(36,6)*A3.P(27,9,81) \n--------------------------------------------------------------------------- \nKeyError                                  Traceback (most recent call \nlast) \n/home/user_bob/<ipython console> in <module>() \n/usr/local/sage-4.1.1/local/lib/python2.6/site-packages/sage/structure/ \nelement.so in sage.structure.element.RingElement.__mul__ (sage/ \nstructure/element.c:9956)() \n/usr/local/sage-4.1.1/local/lib/python2.6/site-packages/sage/structure/ \nelement.so in sage.structure.element.RingElement._mul_ (sage/structure/ \nelement.c:10021)() \n/usr/local/sage-4.1.1/local/lib/python2.6/site-packages/sage/algebras/ \nsteenrod_algebra_element.pyc in _mul_(self, other) \n    925                         new_dict = milnor_multiplication \n(mono1, mono2) \n    926                     else: \n--> 927                         new_dict = milnor_multiplication_odd \n(mono1, mono2, p=p) \n    928                     for new_mono in new_dict: \n    929                         if result.has_key(new_mono): \n/usr/local/sage-4.1.1/local/lib/python2.6/site-packages/sage/algebras/ \nsteenrod_milnor_multiplication_odd.pyc in milnor_multiplication_odd \n(m1, m2, p) \n    225                     t = tuple(diagonal[:i+1]) \n    226                     if result.has_key((e,t)): \n--> 227                         result[(e,t)] = F(coeff + result[t]) \n    228                     else: \n    229                         result[(e,t)] = F(coeff) \nKeyError: (26, 8, 86) \n```\n\nThis is because of a simple bug: instead of `result[t]`, it should be `result[(e,t)]`.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7212\n\n",
+    "created_at": "2009-10-14T19:12:43Z",
+    "labels": [
+        "algebra",
+        "minor",
+        "bug"
+    ],
+    "title": "[with patch, needs review] steenrod algebra multiplication bug",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7212",
+    "user": "jhpalmieri"
+}
+```
 Assignee: tbd
 
 From sage-support:
@@ -48,28 +58,78 @@ KeyError: (26, 8, 86)
 This is because of a simple bug: instead of `result[t]`, it should be `result[(e,t)]`.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7212
+
+
+
+
 
 ---
 
-Comment by jason created at 2009-10-14 21:20:35
+archive/issue_comments_059844.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-10-14T21:20:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7212",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7212#issuecomment-59844",
+    "user": "jason"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_059845.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-10-14T21:20:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7212",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7212#issuecomment-59845",
+    "user": "jason"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2009-10-14 21:50:04
+archive/issue_comments_059846.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-10-14T21:50:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7212",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7212#issuecomment-59846",
+    "user": "was"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-15 08:52:13
+archive/issue_comments_059847.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-10-15T08:52:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7212",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7212#issuecomment-59847",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

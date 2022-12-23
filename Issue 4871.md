@@ -1,17 +1,44 @@
 # Issue 4871: latex typesetting using dvipng is broken on OS X unless unless one uses the dvipng spkg; also the optional filename argument is broken if the file isn't in the current directory; finally, there area  lot of dangerous tmp files created in the current directory
 
+archive/issues_004871.json:
+```json
+{
+    "body": "Assignee: cwitty\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4871\n\n",
+    "created_at": "2008-12-24T18:11:18Z",
+    "labels": [
+        "misc",
+        "major",
+        "bug"
+    ],
+    "title": "latex typesetting using dvipng is broken on OS X unless unless one uses the dvipng spkg; also the optional filename argument is broken if the file isn't in the current directory; finally, there area  lot of dangerous tmp files created in the current directory",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4871",
+    "user": "was"
+}
+```
+Assignee: cwitty
+
+
+
 Issue created by migration from https://trac.sagemath.org/ticket/4871
 
-Original creator: was
-
-Original creation time: 2008-12-24 18:11:18
-
-Assignee: cwitty
 
 
 
 
 ---
+
+archive/issue_comments_036892.json:
+```json
+{
+    "body": "Attachment\n\nThis is a dupe of #4872.\n\nCheers,\n\nMichael",
+    "created_at": "2008-12-25T19:32:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4871",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4871#issuecomment-36892",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -22,8 +49,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-25 19:32:11
+archive/issue_comments_036893.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2008-12-25T19:32:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4871",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4871#issuecomment-36893",
+    "user": "mabshoff"
+}
+```
 
 Resolution: duplicate

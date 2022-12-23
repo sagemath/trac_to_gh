@@ -1,72 +1,165 @@
 # Issue 4522: [with patch, needs review] polynomial interface improvements
 
-Issue created by migration from https://trac.sagemath.org/ticket/4522
-
-Original creator: burcin
-
-Original creation time: 2008-11-14 09:17:02
-
+archive/issues_004522.json:
+```json
+{
+    "body": "Assignee: burcin\n\nAttached patch makes the following changes to improve the user interface of the polynomial classes:\n\n* Remove .name() method, since .variable_name() already provides same functionality.\n* make the .degree() function of univariate polynomials accept one argument,\n  the generator, to be consistent with the .degree() of multivariate\n  polynomials.\n* Add an .is_monomial() method to univariate polynomials.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4522\n\n",
+    "created_at": "2008-11-14T09:17:02Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch, needs review] polynomial interface improvements",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4522",
+    "user": "burcin"
+}
+```
 Assignee: burcin
 
 Attached patch makes the following changes to improve the user interface of the polynomial classes:
 
- * Remove .name() method, since .variable_name() already provides same functionality.
- * make the .degree() function of univariate polynomials accept one argument,
+* Remove .name() method, since .variable_name() already provides same functionality.
+* make the .degree() function of univariate polynomials accept one argument,
   the generator, to be consistent with the .degree() of multivariate
   polynomials.
- * Add an .is_monomial() method to univariate polynomials.
+* Add an .is_monomial() method to univariate polynomials.
+
+
+Issue created by migration from https://trac.sagemath.org/ticket/4522
+
+
 
 
 
 ---
 
-Comment by burcin created at 2008-11-14 09:24:13
+archive/issue_comments_033563.json:
+```json
+{
+    "body": "One more change I forgot to specify above:\n* make the .polynomial() function of univariate polynomials behave the same way as that of multivariate polynomials. (I.e., return a univariate polynomial with a coefficient ring in the rest of the generators of the same parent, which simply means returning self in this case.)",
+    "created_at": "2008-11-14T09:24:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4522",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4522#issuecomment-33563",
+    "user": "burcin"
+}
+```
 
 One more change I forgot to specify above:
- * make the .polynomial() function of univariate polynomials behave the same way as that of multivariate polynomials. (I.e., return a univariate polynomial with a coefficient ring in the rest of the generators of the same parent, which simply means returning self in this case.)
+* make the .polynomial() function of univariate polynomials behave the same way as that of multivariate polynomials. (I.e., return a univariate polynomial with a coefficient ring in the rest of the generators of the same parent, which simply means returning self in this case.)
+
 
 
 ---
 
-Comment by was created at 2008-11-28 03:57:08
+archive/issue_comments_033564.json:
+```json
+{
+    "body": "REFEREE REPORT:\n\nThis looks very good. Positive review *subject* to you posting an additional patch that puts the name method back in and has a deprecation warning with a doctest of this.  We'll delete that in a few months.",
+    "created_at": "2008-11-28T03:57:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4522",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4522#issuecomment-33564",
+    "user": "was"
+}
+```
 
 REFEREE REPORT:
 
 This looks very good. Positive review *subject* to you posting an additional patch that puts the name method back in and has a deprecation warning with a doctest of this.  We'll delete that in a few months.
 
 
+
 ---
 
-Comment by was created at 2008-11-28 03:59:19
+archive/issue_comments_033565.json:
+```json
+{
+    "body": "Oh yes, by the way, I doctested all of the rings directory after this patch and it works 100%.",
+    "created_at": "2008-11-28T03:59:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4522",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4522#issuecomment-33565",
+    "user": "was"
+}
+```
 
 Oh yes, by the way, I doctested all of the rings directory after this patch and it works 100%.
 
 
+
 ---
+
+archive/issue_comments_033566.json:
+```json
+{
+    "body": "Attachment\n\nmake the interface of polynomials more consistent",
+    "created_at": "2008-11-28T12:41:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4522",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4522#issuecomment-33566",
+    "user": "burcin"
+}
+```
 
 Attachment
 
 make the interface of polynomials more consistent
 
 
+
 ---
 
-Comment by burcin created at 2008-11-28 12:45:54
+archive/issue_comments_033567.json:
+```json
+{
+    "body": "New version of the patch with the deprecation warning, and doctests for it.\n\nI'm marking this positivie review, since William didn't state that he wanted to see the patch again. :)",
+    "created_at": "2008-11-28T12:45:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4522",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4522#issuecomment-33567",
+    "user": "burcin"
+}
+```
 
 New version of the patch with the deprecation warning, and doctests for it.
 
 I'm marking this positivie review, since William didn't state that he wanted to see the patch again. :)
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-28 20:51:15
+archive/issue_comments_033568.json:
+```json
+{
+    "body": "Merged in Sage 3.2.1.rc0",
+    "created_at": "2008-11-28T20:51:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4522",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4522#issuecomment-33568",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.2.1.rc0
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-28 20:51:15
+archive/issue_comments_033569.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-11-28T20:51:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4522",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4522#issuecomment-33569",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

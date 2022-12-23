@@ -1,34 +1,83 @@
 # Issue 3055: creating subgraph does not delete _pos entries
 
-Issue created by migration from https://trac.sagemath.org/ticket/3055
-
-Original creator: jason
-
-Original creation time: 2008-04-29 20:42:56
-
+archive/issues_003055.json:
+```json
+{
+    "body": "Assignee: rlm\n\nThis means that later, a call to relabel fails.  This affects, for example, the graph isomorphism code (which was how the error was originally found).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3055\n\n",
+    "created_at": "2008-04-29T20:42:56Z",
+    "labels": [
+        "graph theory",
+        "major",
+        "bug"
+    ],
+    "title": "creating subgraph does not delete _pos entries",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3055",
+    "user": "jason"
+}
+```
 Assignee: rlm
 
 This means that later, a call to relabel fails.  This affects, for example, the graph isomorphism code (which was how the error was originally found).
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3055
+
+
+
+
 
 ---
+
+archive/issue_comments_021090.json:
+```json
+{
+    "body": "Attachment\n\nWith #3054 and #3055 applied, doctests pass in the graphs/ directory.",
+    "created_at": "2008-04-29T21:09:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3055",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3055#issuecomment-21090",
+    "user": "jason"
+}
+```
 
 Attachment
 
 With #3054 and #3055 applied, doctests pass in the graphs/ directory.
 
 
+
 ---
 
-Comment by rlm created at 2008-04-29 21:43:29
+archive/issue_comments_021091.json:
+```json
+{
+    "body": "Have not run doctests, but I support this fix.",
+    "created_at": "2008-04-29T21:43:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3055",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3055#issuecomment-21091",
+    "user": "rlm"
+}
+```
 
 Have not run doctests, but I support this fix.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-30 02:16:50
+archive/issue_comments_021092.json:
+```json
+{
+    "body": "#3054 and #3055 applied to my current merge tree doctest clean. So I am considering this a positive review.\n\nCheers,\n\nMichael",
+    "created_at": "2008-04-30T02:16:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3055",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3055#issuecomment-21092",
+    "user": "mabshoff"
+}
+```
 
 #3054 and #3055 applied to my current merge tree doctest clean. So I am considering this a positive review.
 
@@ -37,30 +86,74 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-30 02:17:29
+archive/issue_comments_021093.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-04-30T02:17:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3055",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3055#issuecomment-21093",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-30 02:17:29
+archive/issue_comments_021094.json:
+```json
+{
+    "body": "Merged in Sage 3.0.1.alpha1",
+    "created_at": "2008-04-30T02:17:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3055",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3055#issuecomment-21094",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.1.alpha1
 
 
+
 ---
 
-Comment by jason created at 2008-05-02 22:02:02
+archive/issue_comments_021095.json:
+```json
+{
+    "body": "Tracy McKay and Laura DeLoss should also get credit for exposing this bug.",
+    "created_at": "2008-05-02T22:02:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3055",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3055#issuecomment-21095",
+    "user": "jason"
+}
+```
 
 Tracy McKay and Laura DeLoss should also get credit for exposing this bug.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-03 03:17:08
+archive/issue_comments_021096.json:
+```json
+{
+    "body": "Replying to [comment:5 jason]:\n> Tracy McKay and Laura DeLoss should also get credit for exposing this bug.\n\nWell, did they fix the bug? So far we only give credit for doing that. People who find bugs are not credited and while we could add a \"reported by FOO\" byline I am not sure those people will get added to the credit list.\n\nCheers,\n\nMichael",
+    "created_at": "2008-05-03T03:17:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3055",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3055#issuecomment-21096",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:5 jason]:
 > Tracy McKay and Laura DeLoss should also get credit for exposing this bug.

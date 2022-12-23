@@ -1,11 +1,21 @@
 # Issue 2983: Itanium (RHEL 5) -- singular interface problems in matrix_group.py
 
-Issue created by migration from https://trac.sagemath.org/ticket/2983
-
-Original creator: was
-
-Original creation time: 2008-04-21 03:25:38
-
+archive/issues_002983.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nThis may get resolved by fixing #2209.\n\n\n```\nsage -t  devel/sage/sage/groups/matrix_gps/matrix_group.py  **********************************************************************\nFile \"/home/wstein/sage-3.0.rc0/tmp/matrix_group.py\", line 689:\n    sage: G.invariant_generators()\nException raised:\n    Traceback (most recent call last):\n      File \"/home/wstein/sage-3.0.rc0/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_26[4]>\", line 1, in <module>\n        G.invariant_generators()###line 689:\n    sage: G.invariant_generators()\n      File \"/home/wstein/sage-3.0.rc0/local/lib/python2.5/site-packages/sage/groups/matrix_gps/matrix_group.py\", line 762, in invariant_generators\n        singular.eval('matrix %s = invariant_algebra_reynolds(%s[1])'%(IRName,ReyName))\n      File \"/home/wstein/sage-3.0.rc0/local/lib/python2.5/site-packages/sage/interfaces/singular.py\", line 416, in eval\n        s = Expect.eval(self, x)\n      File \"/home/wstein/sage-3.0.rc0/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 722, in eval\n        return '\\n'.join([self._eval_line(L, **kwds) for L in code.split('\\n') if L != ''])\n      File \"/home/wstein/sage-3.0.rc0/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 643, in _eval_line\n        raise RuntimeError, \"%s\\n%s crashed executing %s\"%(msg,self, line)\n    RuntimeError: End Of File (EOF) in read_nonblocking(). Exception style platform.\n    <pexpect.spawn instance at 0x6000000003666998>\n    version: 2.0 ($Revision: 1.151 $)\n    command: /home/wstein/sage-3.0.rc0/local/bin/Singular\n    args: ['/home/wstein/sage-3.0.rc0/local/bin/Singular', '-t', '--ticks-per-sec', '1000']\n    patterns:\n        >\n    buffer (last 100 chars):\n    before (last 100 chars): me/wstein/sage-3.0.rc0/local/bin/Singular: line 2: 30877 Segmentation fault      Singular-3-0-4 $*^M\n\n    after: <class 'pexpect.EOF'>\n    match: None\n    match_index: None\n    exitstatus: 139\n    flag_eof: 1\n    pid: 30874\n    child_fd: 5\n    timeout: None\n    delimiter: <class 'pexpect.EOF'>\n    logfile: None\n    maxread: 1000\n    searchwindowsize: None\n    delaybeforesend: 0\n    Singular crashed executing matrix tsage4 = invariant_algebra_reynolds(tsage3[1]);\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2983\n\n",
+    "created_at": "2008-04-21T03:25:38Z",
+    "labels": [
+        "porting",
+        "major",
+        "bug"
+    ],
+    "title": "Itanium (RHEL 5) -- singular interface problems in matrix_group.py",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2983",
+    "user": "was"
+}
+```
 Assignee: mabshoff
 
 This may get resolved by fixing #2209.
@@ -58,24 +68,61 @@ Exception raised:
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2983
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-04-21 04:36:27
+archive/issue_comments_020535.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-04-21T04:36:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2983",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2983#issuecomment-20535",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-21 04:36:27
+archive/issue_comments_020536.json:
+```json
+{
+    "body": "Changing priority from major to blocker.",
+    "created_at": "2008-04-21T04:36:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2983",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2983#issuecomment-20536",
+    "user": "mabshoff"
+}
+```
 
 Changing priority from major to blocker.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-21 04:36:27
+archive/issue_comments_020537.json:
+```json
+{
+    "body": "This is definitely a problem with Singular segfaulting and not related to GAP AFAIK.\n\nCheers,\n\nMichael",
+    "created_at": "2008-04-21T04:36:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2983",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2983#issuecomment-20537",
+    "user": "mabshoff"
+}
+```
 
 This is definitely a problem with Singular segfaulting and not related to GAP AFAIK.
 
@@ -84,9 +131,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by wdj created at 2008-04-21 10:33:40
+archive/issue_comments_020538.json:
+```json
+{
+    "body": "My two cents:\n(1) I don't see how this can be related to 2209, since it is a Singular crash not a GAP crash. AFAIK, the code for invariant_generators does not call GAP:\nhttp://www.sagemath.org/hg/sage-main/file/cc1e12a492fc/sage/groups/matrix_gps/matrix_group.py\n(2) It passes for me on ubuntu 7.10 amd64:\n\n\n```\nwdj@wooster:~/wdj/sagefiles/sage-3.0.rc0$ ./sage -t devel/sage/sage/groups/matrix_gps/matrix_group.py\nsage -t  0/devel/sage/sage/groups/matrix_gps/matrix_group.py\n         [42.7 s]\n\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 42.7 seconds\n```\n",
+    "created_at": "2008-04-21T10:33:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2983",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2983#issuecomment-20538",
+    "user": "wdj"
+}
+```
 
 My two cents:
 (1) I don't see how this can be related to 2209, since it is a Singular crash not a GAP crash. AFAIK, the code for invariant_generators does not call GAP:
@@ -106,9 +164,20 @@ Total time for all tests: 42.7 seconds
 
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-23 11:48:20
+archive/issue_comments_020539.json:
+```json
+{
+    "body": "Yes, as other people have overserved this is a Singular issue unrelated to GAP. I will hopefully track this down for 3.0.1.\n\nCheers,\n\nMichael",
+    "created_at": "2008-04-23T11:48:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2983",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2983#issuecomment-20539",
+    "user": "mabshoff"
+}
+```
 
 Yes, as other people have overserved this is a Singular issue unrelated to GAP. I will hopefully track this down for 3.0.1.
 
@@ -117,9 +186,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-02 05:17:07
+archive/issue_comments_020540.json:
+```json
+{
+    "body": "Ahh, this is a gcc 4.1.2 specific issue - it does not segfault with a build from source gcc 4.3 on the same platform.\n\nCheers,\n\nMichael",
+    "created_at": "2008-05-02T05:17:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2983",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2983#issuecomment-20540",
+    "user": "mabshoff"
+}
+```
 
 Ahh, this is a gcc 4.1.2 specific issue - it does not segfault with a build from source gcc 4.3 on the same platform.
 
@@ -128,9 +208,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-05 17:19:26
+archive/issue_comments_020541.json:
+```json
+{
+    "body": "Compiling with `-O2` fixes the issue. Patch coming up in a couple hours.\n\nCheers,\n\nMichael",
+    "created_at": "2008-05-05T17:19:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2983",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2983#issuecomment-20541",
+    "user": "mabshoff"
+}
+```
 
 Compiling with `-O2` fixes the issue. Patch coming up in a couple hours.
 
@@ -139,7 +230,20 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_020542.json:
+```json
+{
+    "body": "Attachment\n\nThe spkg at \n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0.2/alpha0/singular-3-0-4-2-20080405.p2.spkg\n\nfixes this and also #3158.\n\nCheers,\n\nMichael",
+    "created_at": "2008-05-11T12:47:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2983",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2983#issuecomment-20542",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -154,9 +258,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by broune created at 2008-05-11 13:07:39
+archive/issue_comments_020543.json:
+```json
+{
+    "body": "Builds for me on mac 10.5, can do \n\n\n```\nsage: R=QQ['x,y,z']\nsage: R(x^5)\nx^5\nsage: R(x^5)^2\nx^10\n```\n\n\nalso sage -t  devel/sage/sage/groups/matrix_gps/matrix_group.py passes with no errors.",
+    "created_at": "2008-05-11T13:07:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2983",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2983#issuecomment-20543",
+    "user": "broune"
+}
+```
 
 Builds for me on mac 10.5, can do 
 
@@ -173,15 +288,37 @@ x^10
 also sage -t  devel/sage/sage/groups/matrix_gps/matrix_group.py passes with no errors.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-11 13:10:50
+archive/issue_comments_020544.json:
+```json
+{
+    "body": "Merged in Sage 3.0.2.alpha0",
+    "created_at": "2008-05-11T13:10:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2983",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2983#issuecomment-20544",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.2.alpha0
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-11 13:10:50
+archive/issue_comments_020545.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-05-11T13:10:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2983",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2983#issuecomment-20545",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

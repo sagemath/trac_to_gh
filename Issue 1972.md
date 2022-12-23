@@ -1,37 +1,97 @@
 # Issue 1972: programming guide -- fix a confusing typo
 
-Issue created by migration from https://trac.sagemath.org/ticket/1972
-
-Original creator: was
-
-Original creation time: 2008-01-29 12:58:36
-
+archive/issues_001972.json:
+```json
+{
+    "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1972\n\n",
+    "created_at": "2008-01-29T12:58:36Z",
+    "labels": [
+        "documentation",
+        "major",
+        "bug"
+    ],
+    "title": "programming guide -- fix a confusing typo",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1972",
+    "user": "was"
+}
+```
 Assignee: tba
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1972
+
+
+
+
 
 ---
+
+archive/issue_comments_012766.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-01-29T12:59:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1972",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1972#issuecomment-12766",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-29 13:15:50
+archive/issue_comments_012767.json:
+```json
+{
+    "body": "Looks good to me.",
+    "created_at": "2008-01-29T13:15:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1972",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1972#issuecomment-12767",
+    "user": "mabshoff"
+}
+```
 
 Looks good to me.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-29 13:17:17
+archive/issue_comments_012768.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-29T13:17:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1972",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1972#issuecomment-12768",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-29 13:17:17
+archive/issue_comments_012769.json:
+```json
+{
+    "body": "Merged in Sage 2.10.1.rc3",
+    "created_at": "2008-01-29T13:17:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1972",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1972#issuecomment-12769",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.1.rc3

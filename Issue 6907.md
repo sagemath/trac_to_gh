@@ -1,11 +1,21 @@
 # Issue 6907: implicit_plot reports deprecation warning
 
-Issue created by migration from https://trac.sagemath.org/ticket/6907
-
-Original creator: john_perry
-
-Original creation time: 2009-09-09 02:42:38
-
+archive/issues_006907.json:
+```json
+{
+    "body": "Assignee: was\n\nKeywords: implicit_plot\n\nIn sage 4.1.1, a call to implicit_plot() draws a perfectly fine graph, but also pops up a warning,\n\n```\n/usr/local/share/sage-4.1.1/local/lib/python2.6/site-packages/sage/plot/\\\nplot.py:2876: DeprecationWarning: Substitution using function-call\nsyntax and unnamed arguments is deprecated and will be removed from a\nfuture release of Sage; you can use named arguments instead, like\nEXPR(x=..., y=...)\n  k, _ = adapt_to_callable([f], 2)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6907\n\n",
+    "created_at": "2009-09-09T02:42:38Z",
+    "labels": [
+        "graphics",
+        "minor",
+        "bug"
+    ],
+    "title": "implicit_plot reports deprecation warning",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6907",
+    "user": "john_perry"
+}
+```
 Assignee: was
 
 Keywords: implicit_plot
@@ -22,24 +32,61 @@ EXPR(x=..., y=...)
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6907
+
+
+
+
 
 ---
 
-Comment by jason created at 2010-01-20 07:16:43
+archive/issue_comments_057059.json:
+```json
+{
+    "body": "Changing status from new to needs_info.",
+    "created_at": "2010-01-20T07:16:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6907",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6907#issuecomment-57059",
+    "user": "jason"
+}
+```
 
 Changing status from new to needs_info.
 
 
+
 ---
 
-Comment by jason created at 2010-01-20 07:16:43
+archive/issue_comments_057060.json:
+```json
+{
+    "body": "Can you give us the command you used?  It's likely that the command you used is deprecated, which means that it still works, but will be removed in a future version of Sage, so you should get used to calling implicit_plot differently.",
+    "created_at": "2010-01-20T07:16:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6907",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6907#issuecomment-57060",
+    "user": "jason"
+}
+```
 
 Can you give us the command you used?  It's likely that the command you used is deprecated, which means that it still works, but will be removed in a future version of Sage, so you should get used to calling implicit_plot differently.
 
 
+
 ---
 
-Comment by john_perry created at 2010-01-20 14:04:40
+archive/issue_comments_057061.json:
+```json
+{
+    "body": "Replying to [comment:1 jason]:\n> Can you give us the command you used?\n\nAt the time, every implicit_plot() command was doing this for me.\n\nTo be honest I had forgotten about this. It looks like it was an internal command that hadn't yet been brought up to the new format, because it works fine now. The ticket should be closed.",
+    "created_at": "2010-01-20T14:04:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6907",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6907#issuecomment-57061",
+    "user": "john_perry"
+}
+```
 
 Replying to [comment:1 jason]:
 > Can you give us the command you used?
@@ -49,9 +96,20 @@ At the time, every implicit_plot() command was doing this for me.
 To be honest I had forgotten about this. It looks like it was an internal command that hadn't yet been brought up to the new format, because it works fine now. The ticket should be closed.
 
 
+
 ---
 
-Comment by john_perry created at 2010-01-20 14:05:50
+archive/issue_comments_057062.json:
+```json
+{
+    "body": "Replying to [comment:2 john_perry]:\n> ...it works fine now. The ticket should be closed.\n\nThat's weird. I'm still using 4.1.1 and not getting the problem. I'm sorry; I can't reproduce it now.",
+    "created_at": "2010-01-20T14:05:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6907",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6907#issuecomment-57062",
+    "user": "john_perry"
+}
+```
 
 Replying to [comment:2 john_perry]:
 > ...it works fine now. The ticket should be closed.
@@ -59,15 +117,37 @@ Replying to [comment:2 john_perry]:
 That's weird. I'm still using 4.1.1 and not getting the problem. I'm sorry; I can't reproduce it now.
 
 
+
 ---
 
-Comment by jason created at 2010-01-20 14:07:36
+archive/issue_comments_057063.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2010-01-20T14:07:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6907",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6907#issuecomment-57063",
+    "user": "jason"
+}
+```
 
 Resolution: invalid
 
 
+
 ---
 
-Comment by jason created at 2010-01-20 14:07:36
+archive/issue_comments_057064.json:
+```json
+{
+    "body": "Closing per request.  If this comes up again, let us know.",
+    "created_at": "2010-01-20T14:07:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6907",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6907#issuecomment-57064",
+    "user": "jason"
+}
+```
 
 Closing per request.  If this comes up again, let us know.

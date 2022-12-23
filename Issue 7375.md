@@ -1,11 +1,21 @@
 # Issue 7375: upgrade M4RI to newest upstream release
 
-Issue created by migration from https://trac.sagemath.org/ticket/7375
-
-Original creator: malb
-
-Original creation time: 2009-11-02 11:17:39
-
+archive/issues_007375.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  david.kirkby@onetel.net drkirkby\n\nKeywords: M4RI, linear algebra\n\nImprovements in the most recent versions:\n* switched to LQUP instead of PLUQ for better performance\n* because of this and other improvements much better handling of sparse-ish matrices\n* overall better performance for elimination\n* better performance for mzd_transpose\n* dropped the check for the numer of CPUs from configure which was unused and not cross platform\n* optional tuning code to calculate cache sizes (not enabled by default)\n  + some refactoring\n  + mzd_row_add_offset() fixed a segfault\n\nIssue created by migration from https://trac.sagemath.org/ticket/7375\n\n",
+    "created_at": "2009-11-02T11:17:39Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "enhancement"
+    ],
+    "title": "upgrade M4RI to newest upstream release",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7375",
+    "user": "malb"
+}
+```
 Assignee: tbd
 
 CC:  david.kirkby@onetel.net drkirkby
@@ -13,26 +23,52 @@ CC:  david.kirkby@onetel.net drkirkby
 Keywords: M4RI, linear algebra
 
 Improvements in the most recent versions:
-  * switched to LQUP instead of PLUQ for better performance
-  * because of this and other improvements much better handling of sparse-ish matrices
-  * overall better performance for elimination
-  * better performance for mzd_transpose
-  * dropped the check for the numer of CPUs from configure which was unused and not cross platform
-  * optional tuning code to calculate cache sizes (not enabled by default)
-   + some refactoring
-   + mzd_row_add_offset() fixed a segfault
+* switched to LQUP instead of PLUQ for better performance
+* because of this and other improvements much better handling of sparse-ish matrices
+* overall better performance for elimination
+* better performance for mzd_transpose
+* dropped the check for the numer of CPUs from configure which was unused and not cross platform
+* optional tuning code to calculate cache sizes (not enabled by default)
+  + some refactoring
+  + mzd_row_add_offset() fixed a segfault
+
+Issue created by migration from https://trac.sagemath.org/ticket/7375
+
+
+
 
 
 ---
 
-Comment by malb created at 2009-11-02 11:18:15
+archive/issue_comments_061781.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-11-02T11:18:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7375",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7375#issuecomment-61781",
+    "user": "malb"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by malb created at 2009-11-02 11:18:15
+archive/issue_comments_061782.json:
+```json
+{
+    "body": "The SPKG is here\n\n  http://sage.math.washington.edu/home/malb/spkgs/libm4ri-20091101.spkg\n\nDave, can you take a look?",
+    "created_at": "2009-11-02T11:18:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7375",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7375#issuecomment-61782",
+    "user": "malb"
+}
+```
 
 The SPKG is here
 
@@ -41,65 +77,131 @@ The SPKG is here
 Dave, can you take a look?
 
 
+
 ---
 
-Comment by malb created at 2009-11-02 16:30:40
+archive/issue_comments_061783.json:
+```json
+{
+    "body": "I replaced the same SPKG with a new version which fixes two `sizeof(word) != sizeof(size_t)` bugs that I found while testing on t2.",
+    "created_at": "2009-11-02T16:30:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7375",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7375#issuecomment-61783",
+    "user": "malb"
+}
+```
 
 I replaced the same SPKG with a new version which fixes two `sizeof(word) != sizeof(size_t)` bugs that I found while testing on t2.
 
 
+
 ---
 
-Comment by malb created at 2009-11-03 12:40:43
+archive/issue_comments_061784.json:
+```json
+{
+    "body": "Again, I replaced the SPKG with an updated one which fixes compiler warnings and errors from Microsoft Visual Studio C++. I should have all platforms accounted for now (I might try the Sun compiler later though)",
+    "created_at": "2009-11-03T12:40:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7375",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7375#issuecomment-61784",
+    "user": "malb"
+}
+```
 
 Again, I replaced the SPKG with an updated one which fixes compiler warnings and errors from Microsoft Visual Studio C++. I should have all platforms accounted for now (I might try the Sun compiler later though)
 
 
+
 ---
 
-Comment by drkirkby created at 2009-11-18 15:49:54
+archive/issue_comments_061785.json:
+```json
+{
+    "body": "For some reason I never got a message about this. I will check over this.",
+    "created_at": "2009-11-18T15:49:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7375",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7375#issuecomment-61785",
+    "user": "drkirkby"
+}
+```
 
 For some reason I never got a message about this. I will check over this.
 
 
+
 ---
 
-Comment by malb created at 2009-11-18 16:53:17
+archive/issue_comments_061786.json:
+```json
+{
+    "body": "A new SPKG which is supposed to fix #7171 is available at\n\n   http://sage.math.washington.edu/home/malb/spkgs/libm4ri-20091118.spkg",
+    "created_at": "2009-11-18T16:53:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7375",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7375#issuecomment-61786",
+    "user": "malb"
+}
+```
 
 A new SPKG which is supposed to fix #7171 is available at
 
    http://sage.math.washington.edu/home/malb/spkgs/libm4ri-20091118.spkg
 
 
+
 ---
 
-Comment by drkirkby created at 2009-11-19 01:55:18
+archive/issue_comments_061787.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2009-11-19T01:55:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7375",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7375#issuecomment-61787",
+    "user": "drkirkby"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by drkirkby created at 2009-11-19 01:55:18
+archive/issue_comments_061788.json:
+```json
+{
+    "body": "Hi, \nI have had a few beers tonight, which are a nice benefit of attending the London Open Solaris User Group (LOSUG), so I hope my comments are coherent! (FWIW, one of tonights talks at LOSUG was very interesting from the point of view of Sage). \n\nAnyway, back to the trac ticket...There are still some problems with this, which means the configure script believes the Sun compiler is broken. I've also made some other points. Some are *nit-picking*, but while you resolve one issue, you might as well resolve the others. \n\nThe main problem is that spkg-install sets CFLAGS to include -fPIC and -Wall, both of which are GNU specific flags. So when called with the Sun compiler, the compiler fails to build an executable, as its given erroneous flags. That can be seen in the config.log attached. It's essential that flags like those are only added on compilers that accept them. \n\nI've attached a small script called *testcc* that I was intending at some point including in a more general place in Sage, but you can use it if you wish. It tests the C compiler and will report one of:\n\n* GNU  (for any GCC compatible compiler)\n* Sun_on_Solaris (for the Sun compiler on Solaris)\n* Intel_improved_GCC \n* Sun_improved_GCC\n* HP_on_Alpha_Linux\n* HP_on_HPUX\n* IBM_on_AIX\n* HP_on_Tru64\n* Unknown\n\nThe script works by checking what the C pre-processor defines, which is more reliable than looking for words like GNU or Sun in the output. You could use that script to decide what flag to add to the compiler - whether it is -fPIC for GNU compilers, or -Kpic for the Sun compiler. I would not worry about the others at the minute. \n\nHere is what the script gives as output on both Sun and GNU compilers on a Sun workstation. It's also been tested on AIX, tru64 and HP-UX too. \n\n\n```\ndrkirkby@swan:[~] $ export CC=/opt/xxxsunstudio12.1/bin/cc\ndrkirkby@swan:[~] $ ./testcc\nSun_on_Solaris\ndrkirkby@swan:[~] $ export CC=gcc\ndrkirkby@swan:[~] $ ./testcc\nGNU\n```\n\n\nOut of completeness, I'll attach another for the C++ compiler (*testcxx*), but I do not think you will want the one for C++. \n\nUsing that script, you could then add in spkg-install something like the following, which I have not tested. \n\n\n```\nif [ x`testcc`  = \"xGNU\" ] ; then \n   CFLAGS=\"$CFLAGS -fPIC -Wall \"\nelif [ x`testcc` = \"xSun_on_Solaris\" ] ; then \n   CLFAGS=\"$CLFAGS -Kpic \"\nelif [ x`testcc` = \"xHP_on_HPUX\" ] ; then\n   CFLAGS=\"$CFLAGS + z \"\nfi \n\n```\n\n\nThe Sun compilers are a lot more fussy than the GNU ones, so enabling extra warnings will probably show too many. \n\nWhilst Sage does not aim to support HP-UX, it would be worth adding that +z flag, as compiling with other compilers tends to show problems in code. The library might build on HP-UX with those changes.) \n\n\nOthers issues I see are: \n\n* -m64 is added only on OS X. I suggest a better alternative would be to have:\n\n\n```\n if [ \"x$SAGE64\" = \"xyes\" ] ; then \n    CFLAGS=\"$CFLAGS -m64 \"\n fi\n```\n\n\nThat's far from perfect, but will work with the Sun and GNU compilers, as both accept -m64. \n\nI do not believe you need to set CPPFLAGS to -m64, as that is not an option for the C pre-processor. But it would be worth double-checking that. \n\n* The standard name for the file that creates the configure script was changed from configure.in to configure.ac. So the autoconf manual says to use that. See http://www.gnu.org/software/autocon/manual/autoconf.html#Writing-Autoconf-Input where it says *\"Previous versions of Autoconf promoted the name configure.in, which is somewhat ambiguous (the tool needed to process this file is not described by its extension), and introduces a slight confusion with config.h.in and so on (for which \u2018.in\u2019 means \u201cto be processed by configure\u201d). Using configure.ac is now preferred.\"*\n\n* The autoconf manual says configure.ac should start with AC_INIT, but your configure.in does not. This might possibly be the reason the configure script thinks the compiler is broken, though I doubt it. \n\n* Adding something like *AC_PREREQ([2.64])* or whatever version of autoconf you use to create the configure script will ensure nobody else can recreate it with an older version. It is recommended practice to do that. See http://www.gnu.org/software/autoconf/manual/autoconf.html#Versioning \n \n* I do not think it is a good idea to test for the Sun compiler in configure.in (or configure.ac), to find what flags the compiler needs for C99 support, for several reasons\n  * First, not all Sun compilers need any flag at all. \n  * Other compilers from HP, IBM, Intel etc might need their own flags. \n\n A better way to add a flag for c99 support (**if it is needed**), is to call the autoconf macro AC_PROG_CC_C99  http://www.gnu.org/software/autoconf/manual/autoconf.html#C-Compiler That macro was designed for exactly this purpose. As such, you can delete all the code that checks for the Sun compiler in configure.in and just use the built-in macro. It would also be wise to exit with an error if the compiler is not C99 compliant, if that is needed. Test if $ac_cv_prog_cc_c99 = no, and if so exit with an error that the code needs to be able to find a C99 compliant compiler. \n\n\nIf you can make those changes, this has a reasonable chance of building on Solaris with the Sun compiler. I'll also try it on HP-UX for you. The machine is not running at the minute, but there is no point in even trying, as I know the GNU flags will break the build.",
+    "created_at": "2009-11-19T01:55:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7375",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7375#issuecomment-61788",
+    "user": "drkirkby"
+}
+```
 
 Hi, 
 I have had a few beers tonight, which are a nice benefit of attending the London Open Solaris User Group (LOSUG), so I hope my comments are coherent! (FWIW, one of tonights talks at LOSUG was very interesting from the point of view of Sage). 
 
-Anyway, back to the trac ticket...There are still some problems with this, which means the configure script believes the Sun compiler is broken. I've also made some other points. Some are _nit-picking_, but while you resolve one issue, you might as well resolve the others. 
+Anyway, back to the trac ticket...There are still some problems with this, which means the configure script believes the Sun compiler is broken. I've also made some other points. Some are *nit-picking*, but while you resolve one issue, you might as well resolve the others. 
 
 The main problem is that spkg-install sets CFLAGS to include -fPIC and -Wall, both of which are GNU specific flags. So when called with the Sun compiler, the compiler fails to build an executable, as its given erroneous flags. That can be seen in the config.log attached. It's essential that flags like those are only added on compilers that accept them. 
 
-I've attached a small script called _testcc_ that I was intending at some point including in a more general place in Sage, but you can use it if you wish. It tests the C compiler and will report one of:
+I've attached a small script called *testcc* that I was intending at some point including in a more general place in Sage, but you can use it if you wish. It tests the C compiler and will report one of:
 
-   * GNU  (for any GCC compatible compiler)
-   * Sun_on_Solaris (for the Sun compiler on Solaris)
-   * Intel_improved_GCC 
-   * Sun_improved_GCC
-   * HP_on_Alpha_Linux
-   * HP_on_HPUX
-   * IBM_on_AIX
-   * HP_on_Tru64
-   * Unknown
+* GNU  (for any GCC compatible compiler)
+* Sun_on_Solaris (for the Sun compiler on Solaris)
+* Intel_improved_GCC 
+* Sun_improved_GCC
+* HP_on_Alpha_Linux
+* HP_on_HPUX
+* IBM_on_AIX
+* HP_on_Tru64
+* Unknown
 
 The script works by checking what the C pre-processor defines, which is more reliable than looking for words like GNU or Sun in the output. You could use that script to decide what flag to add to the compiler - whether it is -fPIC for GNU compilers, or -Kpic for the Sun compiler. I would not worry about the others at the minute. 
 
@@ -116,7 +218,7 @@ GNU
 ```
 
 
-Out of completeness, I'll attach another for the C++ compiler (_testcxx_), but I do not think you will want the one for C++. 
+Out of completeness, I'll attach another for the C++ compiler (*testcxx*), but I do not think you will want the one for C++. 
 
 Using that script, you could then add in spkg-install something like the following, which I have not tested. 
 
@@ -140,7 +242,7 @@ Whilst Sage does not aim to support HP-UX, it would be worth adding that +z flag
 
 Others issues I see are: 
 
- * -m64 is added only on OS X. I suggest a better alternative would be to have:
+* -m64 is added only on OS X. I suggest a better alternative would be to have:
 
 
 ```
@@ -154,46 +256,94 @@ That's far from perfect, but will work with the Sun and GNU compilers, as both a
 
 I do not believe you need to set CPPFLAGS to -m64, as that is not an option for the C pre-processor. But it would be worth double-checking that. 
 
- * The standard name for the file that creates the configure script was changed from configure.in to configure.ac. So the autoconf manual says to use that. See http://www.gnu.org/software/autocon/manual/autoconf.html#Writing-Autoconf-Input where it says _"Previous versions of Autoconf promoted the name configure.in, which is somewhat ambiguous (the tool needed to process this file is not described by its extension), and introduces a slight confusion with config.h.in and so on (for which ‘.in’ means “to be processed by configure”). Using configure.ac is now preferred."_
+* The standard name for the file that creates the configure script was changed from configure.in to configure.ac. So the autoconf manual says to use that. See http://www.gnu.org/software/autocon/manual/autoconf.html#Writing-Autoconf-Input where it says *"Previous versions of Autoconf promoted the name configure.in, which is somewhat ambiguous (the tool needed to process this file is not described by its extension), and introduces a slight confusion with config.h.in and so on (for which ‘.in’ means “to be processed by configure”). Using configure.ac is now preferred."*
 
- * The autoconf manual says configure.ac should start with AC_INIT, but your configure.in does not. This might possibly be the reason the configure script thinks the compiler is broken, though I doubt it. 
+* The autoconf manual says configure.ac should start with AC_INIT, but your configure.in does not. This might possibly be the reason the configure script thinks the compiler is broken, though I doubt it. 
 
- * Adding something like _AC_PREREQ([2.64])_ or whatever version of autoconf you use to create the configure script will ensure nobody else can recreate it with an older version. It is recommended practice to do that. See http://www.gnu.org/software/autoconf/manual/autoconf.html#Versioning 
+* Adding something like *AC_PREREQ([2.64])* or whatever version of autoconf you use to create the configure script will ensure nobody else can recreate it with an older version. It is recommended practice to do that. See http://www.gnu.org/software/autoconf/manual/autoconf.html#Versioning 
  
- * I do not think it is a good idea to test for the Sun compiler in configure.in (or configure.ac), to find what flags the compiler needs for C99 support, for several reasons
-   * First, not all Sun compilers need any flag at all. 
-   * Other compilers from HP, IBM, Intel etc might need their own flags. 
+* I do not think it is a good idea to test for the Sun compiler in configure.in (or configure.ac), to find what flags the compiler needs for C99 support, for several reasons
+  * First, not all Sun compilers need any flag at all. 
+  * Other compilers from HP, IBM, Intel etc might need their own flags. 
 
- A better way to add a flag for c99 support (*if it is needed*), is to call the autoconf macro AC_PROG_CC_C99  http://www.gnu.org/software/autoconf/manual/autoconf.html#C-Compiler That macro was designed for exactly this purpose. As such, you can delete all the code that checks for the Sun compiler in configure.in and just use the built-in macro. It would also be wise to exit with an error if the compiler is not C99 compliant, if that is needed. Test if $ac_cv_prog_cc_c99 = no, and if so exit with an error that the code needs to be able to find a C99 compliant compiler. 
+ A better way to add a flag for c99 support (**if it is needed**), is to call the autoconf macro AC_PROG_CC_C99  http://www.gnu.org/software/autoconf/manual/autoconf.html#C-Compiler That macro was designed for exactly this purpose. As such, you can delete all the code that checks for the Sun compiler in configure.in and just use the built-in macro. It would also be wise to exit with an error if the compiler is not C99 compliant, if that is needed. Test if $ac_cv_prog_cc_c99 = no, and if so exit with an error that the code needs to be able to find a C99 compliant compiler. 
 
 
 If you can make those changes, this has a reasonable chance of building on Solaris with the Sun compiler. I'll also try it on HP-UX for you. The machine is not running at the minute, but there is no point in even trying, as I know the GNU flags will break the build.
 
 
+
 ---
+
+archive/issue_comments_061789.json:
+```json
+{
+    "body": "Attachment\n\nChecks the type of C compiler, much more thorougly than using grep on output",
+    "created_at": "2009-11-19T01:56:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7375",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7375#issuecomment-61789",
+    "user": "drkirkby"
+}
+```
 
 Attachment
 
 Checks the type of C compiler, much more thorougly than using grep on output
 
 
+
 ---
 
-Comment by drkirkby created at 2009-11-19 01:57:21
+archive/issue_comments_061790.json:
+```json
+{
+    "body": "Teses the C++ compiler. Not really needed here, but done for completelness.",
+    "created_at": "2009-11-19T01:57:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7375",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7375#issuecomment-61790",
+    "user": "drkirkby"
+}
+```
 
 Teses the C++ compiler. Not really needed here, but done for completelness.
 
 
+
 ---
+
+archive/issue_comments_061791.json:
+```json
+{
+    "body": "Attachment\n\nconfig.log showing the -Wall and -fPIC flags are causing problems.",
+    "created_at": "2009-11-19T01:58:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7375",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7375#issuecomment-61791",
+    "user": "drkirkby"
+}
+```
 
 Attachment
 
 config.log showing the -Wall and -fPIC flags are causing problems.
 
 
+
 ---
 
-Comment by malb created at 2009-11-19 10:41:23
+archive/issue_comments_061792.json:
+```json
+{
+    "body": "Replying to [comment:6 drkirkby]:\n> I have had a few beers tonight, which are a nice benefit of attending the London Open Solaris \n> User Group (LOSUG), so I hope my comments are coherent! (FWIW, one of tonights talks at LOSUG \n> was very interesting from the point of view of Sage). \n\nI had a few beers in London yesterday too but only in the pub down the road :)\n\n \n> I've attached a small script called *testcc* that I was intending at some point including in \n> a more general place in Sage, but you can use it if you wish. It tests the C compiler and will > report one of:\n\nI am using it in spkg-install now\n \n\n> -m64 is added only on OS X. I suggest a better alternative would be to have:\n\nChanged.\n\n> I do not believe you need to set CPPFLAGS to -m64, as that is not an option for the C pre-\n> processor. But it would be worth double-checking that. \n\nChanged.\n \n> The standard name for the file that creates the configure script was changed from configure.in \n> to configure.ac.\n\nChanged.\n\n>  * The autoconf manual says configure.ac should start with AC_INIT, but your configure.in does > not.\n\nIt's now at the top.\n\n>  * Adding something like *AC_PREREQ([2.64])*\n\nAdded.\n  \n>  A better way to add a flag for c99 support (**if it is needed**), is to call the autoconf macro AC_PROG_CC_C99\n\nGreat, using that now.\n \n> If you can make those changes, this has a reasonable chance of building on Solaris with the Sun compiler. I'll also try it on HP-UX for you. The machine is not running at the minute, but there is no point in even trying, as I know the GNU flags will break the build. \n\nThanks a lot, this is really really helpful!",
+    "created_at": "2009-11-19T10:41:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7375",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7375#issuecomment-61792",
+    "user": "malb"
+}
+```
 
 Replying to [comment:6 drkirkby]:
 > I have had a few beers tonight, which are a nice benefit of attending the London Open Solaris 
@@ -203,7 +353,7 @@ Replying to [comment:6 drkirkby]:
 I had a few beers in London yesterday too but only in the pub down the road :)
 
  
-> I've attached a small script called _testcc_ that I was intending at some point including in 
+> I've attached a small script called *testcc* that I was intending at some point including in 
 > a more general place in Sage, but you can use it if you wish. It tests the C compiler and will > report one of:
 
 I am using it in spkg-install now
@@ -227,11 +377,11 @@ Changed.
 
 It's now at the top.
 
->  * Adding something like _AC_PREREQ([2.64])_
+>  * Adding something like *AC_PREREQ([2.64])*
 
 Added.
   
->  A better way to add a flag for c99 support (*if it is needed*), is to call the autoconf macro AC_PROG_CC_C99
+>  A better way to add a flag for c99 support (**if it is needed**), is to call the autoconf macro AC_PROG_CC_C99
 
 Great, using that now.
  
@@ -240,33 +390,55 @@ Great, using that now.
 Thanks a lot, this is really really helpful!
 
 
+
 ---
 
-Comment by malb created at 2009-11-19 10:44:12
+archive/issue_comments_061793.json:
+```json
+{
+    "body": "The updated SPKG is at\n\n http://sage.math.washington.edu/home/malb/spkgs/libm4ri-20091119.spkg",
+    "created_at": "2009-11-19T10:44:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7375",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7375#issuecomment-61793",
+    "user": "malb"
+}
+```
 
 The updated SPKG is at
 
  http://sage.math.washington.edu/home/malb/spkgs/libm4ri-20091119.spkg
 
 
+
 ---
 
-Comment by drkirkby created at 2009-11-19 17:43:31
+archive/issue_comments_061794.json:
+```json
+{
+    "body": "Hi, \nI checked libm4ri-20091119.spkg on two UNIX workstations. \n\n* Sun Blade 2000, Solaris 10 update 7, 2 x 1200 MHz UltraSPARC IV+ processors, 8 GB RAM, Sun Studio 12.1 compiler. \n* HP C3600, HP-UX 11.11, 1 x 552 MHz PA-RISC processor, 8 GB RAM, gcc 4.4.0. \n\nI hope the results of the tests are useful. Sorry if some of these existed in your earlier spkg-install, and I forgot to mention them, but I did admit I was under the influence of alcohol!\n\n\n == General points ==\n\n* In spkg-install, if the tests fail, there is a message generated to say to report this upstream. It would be useful if that message could say where to - i.e. a web site, email address etc. Things are more likely to be reported upstream if someone can easily find where to report it to. I actually like the idea of suggesting to report this upstream. Other packages should follow your example. \n\n* Since the current environment script enforces SAGE_64 to be \"yes\" or \"no\", then I think for consistency we should do the same for \"SAGE_DEBUG\". So I would change the \n\n\n```\nif [ \"$SAGE_DEBUG\" = \"1\" ]; \n```\n\nto \n\n```\nif [ \"x$SAGE_DEBUG\" = \"xyes\" ]; \n```\n\n\nHowever, there was a consensus some time back that the default should be to build with debug information present (-g flag) and only if SAGE_DEBUG was set to \"no\" should -g not be there. \n\nHowever, adding your --enable-debug flag to the configure script might have a serious impact on performance, in which case  you should not enable that by default. You can best judge how to handle that. \n\n* One bit of code has this:\n\n\n```\nCFLAGS=\"$CFLAGS $INCLUDES -L$SAGE_LOCAL/lib -pedantic -g\"\n```\n\n\nSo -pedantic and -g are CFLAGS. This has two problems. First, -pedantic is a GNU specific flag. Secondly, there is the issue of whether the -g flag should be there or not. The '-g' flag does appear to be a portable flag, so should not be a problem on any compiler I know of. \n\nNow to the results. \n\n == Results on HP-UX 11.11 with gcc 4.4.0 ==\n\nM4RI configured properly, without aborting when trying to find the cache size, as reported in #7171. \n\nThe package went on to compile ok on HP-UX, and passed all tests. That is certainly better than many packages. \n\nThere was however a few things that perhaps can be addressed. One is HP-UX specific, so I would not bother trying to fix that, but the other two I believe will happen on other platforms too.  \n\n* There were repeated messages about redefining CPU_L1_CACHE and CPU_L2_CACHE. \n\n```\nIn file included from src/brilliantrussian.c:22:\nsrc/misc.h:359:1: warning: \"CPU_L2_CACHE\" redefined\nIn file included from src/misc.h:33,\n                 from src/brilliantrussian.c:22:\nsrc/config.h:8:1: warning: this is the location of the previous definition\nIn file included from src/brilliantrussian.c:22:\nsrc/misc.h:367:1: warning: \"CPU_L1_CACHE\" redefined\n```\n\n\nthis happened on numerous files. Since the cache size will not be determined on Solaris, I might assume the same would happen there. Is there a way you can work around that, so the warning is not generated? It does not look very impressive to see warnings, but your package is still a **lot** better than many others in this respect. \n\n* libtool gave a warning, which is probably specific to HP-UX, so I would certainly not worry about this, but for completeness, the warning was:\n\n\n```\n./m4ri/config.h:5:1: warning: this is the location of the previous definition\n\tmv -f .deps/test_kernel.Tpo .deps/test_kernel.Po\n\t/bin/sh ./libtool --tag=CC    --mode=link gcc -std=gnu99    -I/home/drkirkby/sage-4.2/local/include/ -L/home/drkirkby/sage-4.2/local/lib -pedantic -g -fPIC -Wall  -O2  -lm4ri -lm  -o test_kernel test_kernel.o  \nlibtool: link: warning: this platform does not like uninstalled shared libraries\nlibtool: link: warning: `test_kernel' will be relinked during installation\n```\n\n\n* I'm not sure if the following is done by libtool, or whether you have done it, but some bits of code are compiling with gcc with the -Wall option to show all warnings, then sends all warnings to /dev/null. It seems a bit silly. If it in your code, I would suggest you remove it. If it's something done by libtool, and not easily within your control, then leave it. \n\nSo overall, on HP-UX, this is pretty good, though perhaps you can sort out at least the first of these. \n\n == Results on Solaris 10 update 7 (SPARC) with Sun Studio 12.1 compiler ==\n\nHere things were not as successful as on HP-UX with gcc. \n\n4MRI will not build with Sun Studio. \n\n\n```\nlibm4ri-20091119/testcc.sh\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS swan 5.10 Generic_139555-08 sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\n/opt/xxxsunstudio12.1/bin/cc -v\nusage: cc [ options] files.  Use 'cc -flags' for details\n****************************************************\nmake: *** No rule to make target `clean'.  Stop.\nchecking build system type... sparc-sun-solaris2.10\nchecking host system type... sparc-sun-solaris2.10\nchecking for a BSD-compatible install... /usr/local/bin/ginstall -c\nchecking whether build environment is sane... yes\nchecking for a thread-safe mkdir -p... ./install-sh -c -d\nchecking for gawk... no\nchecking for mawk... no\nchecking for nawk... nawk\nchecking whether make sets $(MAKE)... yes\nchecking for style of include used by make... GNU\nchecking for gcc... /opt/xxxsunstudio12.1/bin/cc\nchecking for C compiler default output file name... \nconfigure: error: in `/export/home/drkirkby/sage-4.2/spkg/build/libm4ri-20091119/src':\nconfigure: error: C compiler cannot create executables\nSee `config.log' for more details.\nError configuring libm4ri\n\nreal    0m2.911s\nuser    0m0.712s\nsys     0m1.285s\nsage: An error occurred while installing libm4ri-20091119\n```\n\n\nWhilst the -Wall and -fPIC flags are no longer being sent to the compiler, the -pedantic flag is getting to the compiler from spkg-install. I think that is what is preventing the Sun compiler from building an executable. I'm attaching another config.log generated on Solaris with the Sun compiler. I think the reason for the failure is pretty simple to sort out. \n\nI'm not sure if you need both -Wall and -pedantic (I don't know exactly what they are each supposed to do), but removing the -pedantic flag near the top of spkg-install, and adding in like this:\n\n\n```\nif [ \"x$COMPILER\"  = \"xGNU\" ] ; then \n   CFLAGS=\"$CFLAGS -fPIC -Wall -pedantic\"\nelif [ \"x$COMPILER\" = \"xSun_on_Solaris\" ] ; then \n   CLFAGS=\"$CLFAGS -Kpic \"\nelif [ \"x$COMPILER\" = \"xHP_on_HPUX\" ] ; then\n   CFLAGS=\"$CFLAGS + z \"\nfi\n\n```\n\n\nwill probably do the trick. Then it will only get added on GNU compilers, so should not prevent it building on Solaris 10. \n\nDave \n\n\nDave",
+    "created_at": "2009-11-19T17:43:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7375",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7375#issuecomment-61794",
+    "user": "drkirkby"
+}
+```
 
 Hi, 
 I checked libm4ri-20091119.spkg on two UNIX workstations. 
 
- * Sun Blade 2000, Solaris 10 update 7, 2 x 1200 MHz UltraSPARC IV+ processors, 8 GB RAM, Sun Studio 12.1 compiler. 
- * HP C3600, HP-UX 11.11, 1 x 552 MHz PA-RISC processor, 8 GB RAM, gcc 4.4.0. 
+* Sun Blade 2000, Solaris 10 update 7, 2 x 1200 MHz UltraSPARC IV+ processors, 8 GB RAM, Sun Studio 12.1 compiler. 
+* HP C3600, HP-UX 11.11, 1 x 552 MHz PA-RISC processor, 8 GB RAM, gcc 4.4.0. 
 
 I hope the results of the tests are useful. Sorry if some of these existed in your earlier spkg-install, and I forgot to mention them, but I did admit I was under the influence of alcohol!
 
 
  == General points ==
 
- * In spkg-install, if the tests fail, there is a message generated to say to report this upstream. It would be useful if that message could say where to - i.e. a web site, email address etc. Things are more likely to be reported upstream if someone can easily find where to report it to. I actually like the idea of suggesting to report this upstream. Other packages should follow your example. 
+* In spkg-install, if the tests fail, there is a message generated to say to report this upstream. It would be useful if that message could say where to - i.e. a web site, email address etc. Things are more likely to be reported upstream if someone can easily find where to report it to. I actually like the idea of suggesting to report this upstream. Other packages should follow your example. 
 
- * Since the current environment script enforces SAGE_64 to be "yes" or "no", then I think for consistency we should do the same for "SAGE_DEBUG". So I would change the 
+* Since the current environment script enforces SAGE_64 to be "yes" or "no", then I think for consistency we should do the same for "SAGE_DEBUG". So I would change the 
 
 
 ```
@@ -284,7 +456,7 @@ However, there was a consensus some time back that the default should be to buil
 
 However, adding your --enable-debug flag to the configure script might have a serious impact on performance, in which case  you should not enable that by default. You can best judge how to handle that. 
 
- * One bit of code has this:
+* One bit of code has this:
 
 
 ```
@@ -304,7 +476,7 @@ The package went on to compile ok on HP-UX, and passed all tests. That is certai
 
 There was however a few things that perhaps can be addressed. One is HP-UX specific, so I would not bother trying to fix that, but the other two I believe will happen on other platforms too.  
 
- * There were repeated messages about redefining CPU_L1_CACHE and CPU_L2_CACHE. 
+* There were repeated messages about redefining CPU_L1_CACHE and CPU_L2_CACHE. 
 
 ```
 In file included from src/brilliantrussian.c:22:
@@ -317,9 +489,9 @@ src/misc.h:367:1: warning: "CPU_L1_CACHE" redefined
 ```
 
 
-this happened on numerous files. Since the cache size will not be determined on Solaris, I might assume the same would happen there. Is there a way you can work around that, so the warning is not generated? It does not look very impressive to see warnings, but your package is still a *lot* better than many others in this respect. 
+this happened on numerous files. Since the cache size will not be determined on Solaris, I might assume the same would happen there. Is there a way you can work around that, so the warning is not generated? It does not look very impressive to see warnings, but your package is still a **lot** better than many others in this respect. 
 
- * libtool gave a warning, which is probably specific to HP-UX, so I would certainly not worry about this, but for completeness, the warning was:
+* libtool gave a warning, which is probably specific to HP-UX, so I would certainly not worry about this, but for completeness, the warning was:
 
 
 ```
@@ -331,7 +503,7 @@ libtool: link: warning: `test_kernel' will be relinked during installation
 ```
 
 
- * I'm not sure if the following is done by libtool, or whether you have done it, but some bits of code are compiling with gcc with the -Wall option to show all warnings, then sends all warnings to /dev/null. It seems a bit silly. If it in your code, I would suggest you remove it. If it's something done by libtool, and not easily within your control, then leave it. 
+* I'm not sure if the following is done by libtool, or whether you have done it, but some bits of code are compiling with gcc with the -Wall option to show all warnings, then sends all warnings to /dev/null. It seems a bit silly. If it in your code, I would suggest you remove it. If it's something done by libtool, and not easily within your control, then leave it. 
 
 So overall, on HP-UX, this is pretty good, though perhaps you can sort out at least the first of these. 
 
@@ -405,9 +577,20 @@ Dave
 Dave
 
 
+
 ---
 
-Comment by malb created at 2009-11-20 10:12:31
+archive/issue_comments_061795.json:
+```json
+{
+    "body": "Replying to [comment:10 drkirkby]:\n> I hope the results of the tests are useful. Sorry if some of these existed in your earlier spkg-install, and I forgot to mention them, but I did admit I was under the influence of alcohol!\n\nVery helpful indeed! \n\n> In spkg-install, if the tests fail, there is a message generated to say to report this \n> upstream. It would be useful if that message could say where to\n\nDone.\n\n> Since the current environment script enforces SAGE_64 to be \"yes\" or \"no\", then I think for \n> consistency we should do the same for \"SAGE_DEBUG\". So I would change the \n\nOkay, why not.\n \n> So -pedantic and -g are CFLAGS. This has two problems. First, -pedantic is a GNU specific \n> flag. \n\nMoved to the GNU specific part.\n\n\n> M4RI configured properly, without aborting when trying to find the cache size, as reported in #7171. \n\nIf you like you can run `./configure --enable-cachetune` which should get rid of these warnings/issues. It will be default if the static tests failed soon and eventually default as such.\n \n>  There were repeated messages about redefining CPU_L1_CACHE and CPU_L2_CACHE. \n\nSee above.\n\n>  * libtool gave a warning, which is probably specific to HP-UX, so I would certainly not worry about this, but for completeness, the warning was:\n\nDoesn't ring a bell, so I won't address this for now.\n\n>  I'm not sure if the following is done by libtool, or whether you have done it, but some bits of code are compiling with gcc with the -Wall option to show all warnings, then sends all warnings to /dev/null\n\nI don't do anything with /dev/null, so I gues it must be in the toolchain.\n\n> 4MRI will not build with Sun Studio. \n\nThis should be fixed now.\n\nhttp://sage.math.washington.edu/home/malb/spkgs/libm4ri-20091120.spkg",
+    "created_at": "2009-11-20T10:12:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7375",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7375#issuecomment-61795",
+    "user": "malb"
+}
+```
 
 Replying to [comment:10 drkirkby]:
 > I hope the results of the tests are useful. Sorry if some of these existed in your earlier spkg-install, and I forgot to mention them, but I did admit I was under the influence of alcohol!
@@ -453,9 +636,20 @@ This should be fixed now.
 http://sage.math.washington.edu/home/malb/spkgs/libm4ri-20091120.spkg
 
 
+
 ---
 
-Comment by drkirkby created at 2009-11-20 11:50:49
+archive/issue_comments_061796.json:
+```json
+{
+    "body": "Hi,\nit now builds fine, and passes all tests on Solaris with the Sun compiler. \n\nI did not recheck on HP-UX as I have powered the machine off, and it is the garage, but I suspect it will still be fine there. \n\nBut I notice at the top of spkg-install you have \n\n\n```\nSAGE_DEBUG=0\n```\n\n\nwhich means you override the value of the environment variable, so it makes any tests pointless. That should be very easy to fix.  \n\n == Suspect source code found with Sun's lint ==\n\nAs you can probably see, I can be a bit picky, but I am keen the quality of software in Sage is improved as much as possible. Some, such as *lcalc* leaves a lot to be desired in my opinion. The code in there is pretty awful, which means I'd be suspicious myself of trusting any results that make use of *lcalc*. \n\nAnyway, with that in mind, I decided to have a **quick** look at the M4RI source code. I'm not a mathematician, so I do not understand what is going on, but I did notice a few things, with the aid of 'lint' that I believe need addressing. I'm not an expert using lint, so just did:\n\n\n```\n$ lint *.c\n```\n\n\nin the 'src' directory. Here are a few examples of things I found. I've attached a log of the lint results, so perhaps you can have a look though them, to see if there are things that you should fix. \n\nIn  grayflex.c\n\n```\nint m4ri_opt_k(int a,int b,int c) {\n  int n = MIN(a,b);\n  int res = MIN( MAXKAY, MAX(1, (int)(0.75*log2_floor(n))) );\n  return res;\n}\n```\n\n\ndoes not use the argument 'c' at all. \n\nIn permutation.c, the following function\n\n\n```\nvoid mzp_set_ui(mzp_t *P, unsigned int value) {\n  size_t i;\n  for (i=0; i<P->length; i++) {\n    P->values[i] = i;\n  }\n}\n```\n\ndoes not use the integer 'value' at any point. \n\nLine 1180 of strassen.c \n\n```\n mzd_t* _mzd_addmul_weird_weird (mzd_t* C, mzd_t* A, mzd_t *B, int cutoff){\n```\n\n\ntakes a argument 'cutoff' but you never actually use 'cutoff' in that function. \n\nsqrt() is used in brilliantrussian.c, but the header file math.h is not included.",
+    "created_at": "2009-11-20T11:50:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7375",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7375#issuecomment-61796",
+    "user": "drkirkby"
+}
+```
 
 Hi,
 it now builds fine, and passes all tests on Solaris with the Sun compiler. 
@@ -474,9 +668,9 @@ which means you override the value of the environment variable, so it makes any 
 
  == Suspect source code found with Sun's lint ==
 
-As you can probably see, I can be a bit picky, but I am keen the quality of software in Sage is improved as much as possible. Some, such as _lcalc_ leaves a lot to be desired in my opinion. The code in there is pretty awful, which means I'd be suspicious myself of trusting any results that make use of _lcalc_. 
+As you can probably see, I can be a bit picky, but I am keen the quality of software in Sage is improved as much as possible. Some, such as *lcalc* leaves a lot to be desired in my opinion. The code in there is pretty awful, which means I'd be suspicious myself of trusting any results that make use of *lcalc*. 
 
-Anyway, with that in mind, I decided to have a *quick* look at the M4RI source code. I'm not a mathematician, so I do not understand what is going on, but I did notice a few things, with the aid of 'lint' that I believe need addressing. I'm not an expert using lint, so just did:
+Anyway, with that in mind, I decided to have a **quick** look at the M4RI source code. I'm not a mathematician, so I do not understand what is going on, but I did notice a few things, with the aid of 'lint' that I believe need addressing. I'm not an expert using lint, so just did:
 
 
 ```
@@ -525,16 +719,40 @@ takes a argument 'cutoff' but you never actually use 'cutoff' in that function.
 sqrt() is used in brilliantrussian.c, but the header file math.h is not included.
 
 
+
 ---
+
+archive/issue_comments_061797.json:
+```json
+{
+    "body": "Attachment\n\nResults of running Sun's lint command in the 'src' directory.",
+    "created_at": "2009-11-20T11:52:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7375",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7375#issuecomment-61797",
+    "user": "drkirkby"
+}
+```
 
 Attachment
 
 Results of running Sun's lint command in the 'src' directory.
 
 
+
 ---
 
-Comment by malb created at 2009-11-20 12:04:51
+archive/issue_comments_061798.json:
+```json
+{
+    "body": "I have made your lint suggestions a new ticket at:\n\n   http://bitbucket.org/malb/m4ri/issue/18/cleanup-solaris-lint-warnings\n\nI will address them in due course.\n\nI have replaced the SPKG with a new SPKG which doesn't overwrite SAGE_DEBUG in the spkg-install script.\n\nIs that a positive review then?",
+    "created_at": "2009-11-20T12:04:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7375",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7375#issuecomment-61798",
+    "user": "malb"
+}
+```
 
 I have made your lint suggestions a new ticket at:
 
@@ -547,23 +765,56 @@ I have replaced the SPKG with a new SPKG which doesn't overwrite SAGE_DEBUG in t
 Is that a positive review then?
 
 
+
 ---
 
-Comment by drkirkby created at 2009-11-20 12:14:16
+archive/issue_comments_061799.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2009-11-20T12:14:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7375",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7375#issuecomment-61799",
+    "user": "drkirkby"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by malb created at 2009-11-20 12:20:32
+archive/issue_comments_061800.json:
+```json
+{
+    "body": "What's holding off the positive review?",
+    "created_at": "2009-11-20T12:20:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7375",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7375#issuecomment-61800",
+    "user": "malb"
+}
+```
 
 What's holding off the positive review?
 
 
+
 ---
 
-Comment by was created at 2009-11-20 12:32:49
+archive/issue_comments_061801.json:
+```json
+{
+    "body": "Looks good to me, based on the above and my own snooping around. \nWell I don't like that \n\n\n```\n$ hg status\n? testcc.sh\n```\n\n\nPositive review subject to checking in testcc.sh somewhere.",
+    "created_at": "2009-11-20T12:32:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7375",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7375#issuecomment-61801",
+    "user": "was"
+}
+```
 
 Looks good to me, based on the above and my own snooping around. 
 Well I don't like that 
@@ -578,46 +829,90 @@ $ hg status
 Positive review subject to checking in testcc.sh somewhere.
 
 
+
 ---
 
-Comment by was created at 2009-11-20 12:33:01
+archive/issue_comments_061802.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-11-20T12:33:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7375",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7375#issuecomment-61802",
+    "user": "was"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by drkirkby created at 2009-11-20 12:41:56
+archive/issue_comments_061803.json:
+```json
+{
+    "body": "Hi,\nI was about to give it a positive!  After this is incorporated, the following two tickets can be closed. \n\n* #7171 *HP-UX failure of libm4ri 20090617 as it attempts to find L1 cache size*\n* #7037 *libm4ri thinks the C compiler is broken*\n\nI thought it wise to open a **Sage** ticket for the issues reported by lint to be resolved. (lint should exist on any platform, or if not the source can be found easily). As such, I have opened: \n\n#7503 *M4RI source code needs looking at, as lint finds some issues.*\n\nThank you for resolving the issues. I wish others would take as much care over fixing issues as you did. \n\nDave",
+    "created_at": "2009-11-20T12:41:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7375",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7375#issuecomment-61803",
+    "user": "drkirkby"
+}
+```
 
 Hi,
 I was about to give it a positive!  After this is incorporated, the following two tickets can be closed. 
 
- * #7171 _HP-UX failure of libm4ri 20090617 as it attempts to find L1 cache size_
- * #7037 _libm4ri thinks the C compiler is broken_
+* #7171 *HP-UX failure of libm4ri 20090617 as it attempts to find L1 cache size*
+* #7037 *libm4ri thinks the C compiler is broken*
 
-I thought it wise to open a *Sage* ticket for the issues reported by lint to be resolved. (lint should exist on any platform, or if not the source can be found easily). As such, I have opened: 
+I thought it wise to open a **Sage** ticket for the issues reported by lint to be resolved. (lint should exist on any platform, or if not the source can be found easily). As such, I have opened: 
 
-#7503 _M4RI source code needs looking at, as lint finds some issues._
+#7503 *M4RI source code needs looking at, as lint finds some issues.*
 
 Thank you for resolving the issues. I wish others would take as much care over fixing issues as you did. 
 
 Dave
 
 
+
 ---
 
-Comment by drkirkby created at 2009-11-20 12:45:52
+archive/issue_comments_061804.json:
+```json
+{
+    "body": "BTW, if *testcc.sh* is checked in outside of the .spkg file, then *testcxx* (or if you want to call it testcxx.sh), which is attached to this ticket, should be placed in the same place. \n\nBoth have wider use outside of M4RI. But the testcxx is not needed in M4RI. \n\nDave",
+    "created_at": "2009-11-20T12:45:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7375",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7375#issuecomment-61804",
+    "user": "drkirkby"
+}
+```
 
-BTW, if _testcc.sh_ is checked in outside of the .spkg file, then _testcxx_ (or if you want to call it testcxx.sh), which is attached to this ticket, should be placed in the same place. 
+BTW, if *testcc.sh* is checked in outside of the .spkg file, then *testcxx* (or if you want to call it testcxx.sh), which is attached to this ticket, should be placed in the same place. 
 
 Both have wider use outside of M4RI. But the testcxx is not needed in M4RI. 
 
 Dave
 
 
+
 ---
 
-Comment by malb created at 2009-11-20 12:52:28
+archive/issue_comments_061805.json:
+```json
+{
+    "body": "New SPKG with testcc.sh checked in:\n\n   http://sage.math.washington.edu/home/malb/spkgs/libm4ri-20091120.p0.spkg\n\nI only checked it into the local M4RI SPKG repository. Once it is available globally in Sage, it can be removed again.",
+    "created_at": "2009-11-20T12:52:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7375",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7375#issuecomment-61805",
+    "user": "malb"
+}
+```
 
 New SPKG with testcc.sh checked in:
 
@@ -626,9 +921,20 @@ New SPKG with testcc.sh checked in:
 I only checked it into the local M4RI SPKG repository. Once it is available globally in Sage, it can be removed again.
 
 
+
 ---
 
-Comment by drkirkby created at 2009-11-20 16:29:20
+archive/issue_comments_061806.json:
+```json
+{
+    "body": "Fine. \n\nI'll try to get the testcc and testcxx reviewed at some point in the future and incorporated a bit more widely. \n\nWhen your updated M4RI package is added, the release manager should close these two tickets, as this upgrade fixes both these issues. \n\n* #7171 HP-UX failure of libm4ri 20090617 as it attempts to find L1 cache size\n* #7037 libm4ri thinks the C compiler is broken \n\nDave",
+    "created_at": "2009-11-20T16:29:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7375",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7375#issuecomment-61806",
+    "user": "drkirkby"
+}
+```
 
 Fine. 
 
@@ -636,14 +942,25 @@ I'll try to get the testcc and testcxx reviewed at some point in the future and 
 
 When your updated M4RI package is added, the release manager should close these two tickets, as this upgrade fixes both these issues. 
 
-    * #7171 HP-UX failure of libm4ri 20090617 as it attempts to find L1 cache size
-    * #7037 libm4ri thinks the C compiler is broken 
+* #7171 HP-UX failure of libm4ri 20090617 as it attempts to find L1 cache size
+* #7037 libm4ri thinks the C compiler is broken 
 
 Dave
 
 
+
 ---
 
-Comment by mhansen created at 2009-11-29 05:26:55
+archive/issue_comments_061807.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-11-29T05:26:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7375",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7375#issuecomment-61807",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 5733: bug in 3d plotting of graphs
 
-Issue created by migration from https://trac.sagemath.org/ticket/5733
-
-Original creator: was
-
-Original creation time: 2009-04-10 14:19:31
-
+archive/issues_005733.json:
+```json
+{
+    "body": "Assignee: rlm\n\n\n```\nsage: G=Graph({'a':['a','b','b','b','e'],'b':['c','d','e'],'c':\nsage: ['c','d','d','d'],'d':['e']})\nsage: G.show3d()\nTraceback (most recent call last):\n...\nZeroDivisionError: float division\n```\n\n\nReported by alec`@`mihailovs\n\nIssue created by migration from https://trac.sagemath.org/ticket/5733\n\n",
+    "created_at": "2009-04-10T14:19:31Z",
+    "labels": [
+        "graph theory",
+        "major",
+        "bug"
+    ],
+    "title": "bug in 3d plotting of graphs",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5733",
+    "user": "was"
+}
+```
 Assignee: rlm
 
 
@@ -21,29 +31,79 @@ ZeroDivisionError: float division
 
 Reported by alec`@`mihailovs
 
+Issue created by migration from https://trac.sagemath.org/ticket/5733
+
+
+
+
 
 ---
 
-Comment by jason created at 2009-04-10 14:38:18
+archive/issue_comments_044799.json:
+```json
+{
+    "body": "Apparently show3d() chokes on loops (that's the error: I think it's trying to make a cylinder (edge) with length 0).  Also, show3d doesn't show multiple edges.",
+    "created_at": "2009-04-10T14:38:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5733#issuecomment-44799",
+    "user": "jason"
+}
+```
 
 Apparently show3d() chokes on loops (that's the error: I think it's trying to make a cylinder (edge) with length 0).  Also, show3d doesn't show multiple edges.
 
 
+
 ---
 
-Comment by rlm created at 2009-04-10 15:32:23
+archive/issue_comments_044800.json:
+```json
+{
+    "body": "This needs to be implemented, but until then it needs to fail more gracefully. Thus the proposed patch. If implementing this isn't a ticket yet, it probably should be.",
+    "created_at": "2009-04-10T15:32:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5733#issuecomment-44800",
+    "user": "rlm"
+}
+```
 
 This needs to be implemented, but until then it needs to fail more gracefully. Thus the proposed patch. If implementing this isn't a ticket yet, it probably should be.
 
 
+
 ---
+
+archive/issue_comments_044801.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-04-10T15:32:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5733#issuecomment-44801",
+    "user": "rlm"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-13 06:23:19
+archive/issue_comments_044802.json:
+```json
+{
+    "body": "Merged in Sage 3.4.1.rc3.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-13T06:23:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5733#issuecomment-44802",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.4.1.rc3.
 
@@ -52,8 +112,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-13 06:23:19
+archive/issue_comments_044803.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-04-13T06:23:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5733#issuecomment-44803",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

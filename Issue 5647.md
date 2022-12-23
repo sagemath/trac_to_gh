@@ -1,11 +1,21 @@
 # Issue 5647: Random testing improvement (follow up to #5318)
 
-Issue created by migration from https://trac.sagemath.org/ticket/5647
-
-Original creator: nthiery
-
-Original creation time: 2009-03-31 03:14:10
-
+archive/issues_005647.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nImprove #5318 to allow for the additional syntax:\n\n  random_testing(tester, handle_iteration = True)\n\nIn that case, the wrapper function would handle all the iteration running boiler plate. When the seed is not specified by the caller, the boilerplate  could further set explicitly the seed in randstate.pyx to a random value at each iteration. Then, reproducing the bug would involve running a single iteration.\n\nWith a bit of magic one could allow for the following syntactic sugar\n\n    `@`random_testing(handle_iteration = True)\n    def tester(...):\n        ...\n\nPossible implementation: when random_testing receives only keyword arguments, without a function, it returns a copy of itself with partial specialization of those keyword arguments (using e.g. the upcoming default_keyword patch by Mike Hansen)\n\nIssue created by migration from https://trac.sagemath.org/ticket/5647\n\n",
+    "created_at": "2009-03-31T03:14:10Z",
+    "labels": [
+        "doctest coverage",
+        "major",
+        "enhancement"
+    ],
+    "title": "Random testing improvement (follow up to #5318)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5647",
+    "user": "nthiery"
+}
+```
 Assignee: mabshoff
 
 Improve #5318 to allow for the additional syntax:
@@ -22,9 +32,24 @@ With a bit of magic one could allow for the following syntactic sugar
 
 Possible implementation: when random_testing receives only keyword arguments, without a function, it returns a copy of itself with partial specialization of those keyword arguments (using e.g. the upcoming default_keyword patch by Mike Hansen)
 
+Issue created by migration from https://trac.sagemath.org/ticket/5647
+
+
+
+
 
 ---
 
-Comment by mderickx created at 2017-08-11 12:51:51
+archive/issue_comments_044099.json:
+```json
+{
+    "body": "Changing component from doctest coverage to doctest framework.",
+    "created_at": "2017-08-11T12:51:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5647",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5647#issuecomment-44099",
+    "user": "mderickx"
+}
+```
 
 Changing component from doctest coverage to doctest framework.

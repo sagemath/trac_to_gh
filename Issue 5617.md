@@ -1,44 +1,115 @@
 # Issue 5617: Delete the reference to solve_linear
 
-Issue created by migration from https://trac.sagemath.org/ticket/5617
-
-Original creator: jason
-
-Original creation time: 2009-03-26 14:49:03
-
+archive/issues_005617.json:
+```json
+{
+    "body": "Assignee: tba\n\nDelete the reference to solve_linear in http://sagemath.org/doc/constructions/linear_algebra.html#solving-systems-of-linear-equations since there is no such function.  Instead, as the example points out, it should probably just be a reference to solve.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5617\n\n",
+    "created_at": "2009-03-26T14:49:03Z",
+    "labels": [
+        "documentation",
+        "major",
+        "bug"
+    ],
+    "title": "Delete the reference to solve_linear",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5617",
+    "user": "jason"
+}
+```
 Assignee: tba
 
 Delete the reference to solve_linear in http://sagemath.org/doc/constructions/linear_algebra.html#solving-systems-of-linear-equations since there is no such function.  Instead, as the example points out, it should probably just be a reference to solve.
 
+Issue created by migration from https://trac.sagemath.org/ticket/5617
+
+
+
+
 
 ---
 
-Comment by jhpalmieri created at 2009-07-22 02:39:15
+archive/issue_comments_043860.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-07-22T02:39:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5617",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5617#issuecomment-43860",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-07-22 02:39:15
+archive/issue_comments_043861.json:
+```json
+{
+    "body": "Changing assignee from tba to jhpalmieri.",
+    "created_at": "2009-07-22T02:39:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5617",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5617#issuecomment-43861",
+    "user": "jhpalmieri"
+}
+```
 
 Changing assignee from tba to jhpalmieri.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-07-22 02:39:15
+archive/issue_comments_043862.json:
+```json
+{
+    "body": "Here's a (trivial) patch.",
+    "created_at": "2009-07-22T02:39:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5617",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5617#issuecomment-43862",
+    "user": "jhpalmieri"
+}
+```
 
 Here's a (trivial) patch.
 
 
+
 ---
+
+archive/issue_comments_043863.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-07-22T02:39:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5617",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5617#issuecomment-43863",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mvngu created at 2009-07-23 02:50:12
+archive/issue_comments_043864.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-07-23T02:50:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5617",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5617#issuecomment-43864",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

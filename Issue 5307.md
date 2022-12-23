@@ -1,11 +1,21 @@
 # Issue 5307: Bug in conductor() over number fields
 
-Issue created by migration from https://trac.sagemath.org/ticket/5307
-
-Original creator: cremona
-
-Original creation time: 2009-02-18 17:17:51
-
+archive/issues_005307.json:
+```json
+{
+    "body": "Assignee: was\n\nKeywords: elliptic curve\n\nThere is something wrong in the conductor computation of an elliptic curve over a field of class number >1:\n\n\n```\nsage: K.<w>=NumberField(x^2+x+6)\nsage: E=EllipticCurve([w,-1,0,-w-6,0])\nsage: E.conductor()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/masgaj/.sage/temp/host_56_150/7547/_home_masgaj__sage_init_sage_0.py in <module>()\n\n/local/jec/sage-3.3.rc0/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_number_field.pyc in conductor(self)\n    745         OK = self.base_ring().ring_of_integers()\n    746         self._conductor = prod([d.prime()**(d.conductor_valuation()) \\\n--> 747                                 for d in self.local_data()],\\\n    748                                OK.ideal(1))\n    749         return self._conductor\n\n/local/jec/sage-3.3.rc0/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_number_field.pyc in local_data(self, P, proof)\n    394         if P is None:\n    395             primes = self.base_ring()(self.discriminant()).support()\n--> 396             return [self._get_local_data(pr, proof) for pr in primes]\n    397\n    398         from sage.schemes.elliptic_curves.ell_local_data import check_prime\n\n/local/jec/sage-3.3.rc0/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_number_field.pyc in _get_local_data(self, P, proof)\n    416             pass\n    417         from sage.schemes.elliptic_curves.ell_local_data import EllipticCurveLocalData\n--> 418         self._local_data[P] = EllipticCurveLocalData(self, P, proof)\n    419         return self._local_data[P]\n    420\n\n/local/jec/sage-3.3.rc0/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_local_data.pyc in __init__(self, E, P, proof, algorithm)\n    138                 self._reduction_type = Eint.ap(p) # = 0,-1 or +1\n    139         else:\n--> 140             self._Emin, ch, self._val_disc, self._fp, self._KS, self._cp, self._split = self._tate(proof)\n    141             if self._fp>0:\n    142                 if self._Emin.c4().valuation(p)>0:\n\n/local/jec/sage-3.3.rc0/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_local_data.pyc in _tate(self, proof)\n    748                 a6 /= pi**6\n    749                 verbose(\"Non-minimal equation, dividing out...\\nNew model is %s\"%([a1, a2, a3, a4, a6]), t, 1)\n--> 750         C = C._tidy_model()\n    751         return (C, p, val_disc, fp, KS, cp, split)\n    752\n\n/local/jec/sage-3.3.rc0/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_number_field.pyc in _tidy_model(self)\n    297             (a1, a2, a3, a4, a6) = [ZK(a) for a in self.a_invariants()]\n    298         except TypeError:\n--> 299             raise TypeError, \"_tidy_model() requires an integral model.\"\n    300         # N.B. Must define s, r, t in the right order.\n    301         if ZK.degree() == 1:\n\nTypeError: _tidy_model() requires an integral model.\n```\n\n\nI think I wrote most of the relevant code, so it is my fault and I will fix it!\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5307\n\n",
+    "created_at": "2009-02-18T17:17:51Z",
+    "labels": [
+        "number theory",
+        "major",
+        "bug"
+    ],
+    "title": "Bug in conductor() over number fields",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5307",
+    "user": "cremona"
+}
+```
 Assignee: was
 
 Keywords: elliptic curve
@@ -71,10 +81,25 @@ TypeError: _tidy_model() requires an integral model.
 I think I wrote most of the relevant code, so it is my fault and I will fix it!
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5307
+
+
+
+
 
 ---
 
-Comment by cremona created at 2009-02-18 22:42:21
+archive/issue_comments_040829.json:
+```json
+{
+    "body": "Diagnosis of the problem, while lies in the implementation of Tate's algorithm at a prime ideal P when P is not principal:  we use a uniformiser pi of P, but we use it in two different ways.  First, there are various places where integers (of the field) which are known to have valuation at least i are divided by `pi^i`.  Here, in order to keep everything integral, we use a uniformizer computed via K.uniformizer(P, 'negative'), which has valuation 1 at P (of course) and nagative or zero valuation elsewhere.  But there is a second way in which pi is used:  in computing the appropriate [u,r,s,t]-transforms.  For example, in one place we need an r-transform where r is 0 mod P but something specific mod `P^2`;  so we write r=r0*pi and compute r0 mod P and then multiply by pi.  But now, it matters if pi is not integral!\n\nThe solution I came up with was to compute two uniformisers, one (pi) as above and another (called ipi) integral at all primes.  I use the appropriate one in the appropriate places.\n\nI made a patch to implement this, and the example above works fine (doctest added to conductor() in ell_number_field.py).\n\n__But__ I think this needs to be looked at more carefully;  while it is no worse than before (and no different at all at principal primes) I don't think it is quite right yet.\n\nNB Magma has essentially the same code (I wrote it) but is not fussy about integrality at all since it does not give local minimal models.",
+    "created_at": "2009-02-18T22:42:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5307",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5307#issuecomment-40829",
+    "user": "cremona"
+}
+```
 
 Diagnosis of the problem, while lies in the implementation of Tate's algorithm at a prime ideal P when P is not principal:  we use a uniformiser pi of P, but we use it in two different ways.  First, there are various places where integers (of the field) which are known to have valuation at least i are divided by `pi^i`.  Here, in order to keep everything integral, we use a uniformizer computed via K.uniformizer(P, 'negative'), which has valuation 1 at P (of course) and nagative or zero valuation elsewhere.  But there is a second way in which pi is used:  in computing the appropriate [u,r,s,t]-transforms.  For example, in one place we need an r-transform where r is 0 mod P but something specific mod `P^2`;  so we write r=r0*pi and compute r0 mod P and then multiply by pi.  But now, it matters if pi is not integral!
 
@@ -87,9 +112,20 @@ __But__ I think this needs to be looked at more carefully;  while it is no worse
 NB Magma has essentially the same code (I wrote it) but is not fussy about integrality at all since it does not give local minimal models.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-03-01 02:26:51
+archive/issue_comments_040830.json:
+```json
+{
+    "body": "Better luck in 3.4.1.\n\nCheers,\n\nMichael",
+    "created_at": "2009-03-01T02:26:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5307",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5307#issuecomment-40830",
+    "user": "mabshoff"
+}
+```
 
 Better luck in 3.4.1.
 
@@ -98,27 +134,73 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_040831.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-06-15T19:30:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5307",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5307#issuecomment-40831",
+    "user": "cremona"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by cremona created at 2009-06-15 19:31:54
+archive/issue_comments_040832.json:
+```json
+{
+    "body": "This patch fixes the problem.",
+    "created_at": "2009-06-15T19:31:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5307",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5307#issuecomment-40832",
+    "user": "cremona"
+}
+```
 
 This patch fixes the problem.
 
 
+
 ---
 
-Comment by ncalexan created at 2009-06-15 20:44:28
+archive/issue_comments_040833.json:
+```json
+{
+    "body": "I can't say for sure that the new algorithm is correct, but I have read the code and I believe that the patch produces the behaviour John documented in the ticket and the comments.  It certainly fixes the presenting issue, so apply!",
+    "created_at": "2009-06-15T20:44:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5307",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5307#issuecomment-40833",
+    "user": "ncalexan"
+}
+```
 
 I can't say for sure that the new algorithm is correct, but I have read the code and I believe that the patch produces the behaviour John documented in the ticket and the comments.  It certainly fixes the presenting issue, so apply!
 
 
+
 ---
 
-Comment by rlm created at 2009-06-24 09:50:45
+archive/issue_comments_040834.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-06-24T09:50:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5307",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5307#issuecomment-40834",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed

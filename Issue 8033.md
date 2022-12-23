@@ -1,11 +1,21 @@
 # Issue 8033: add a README.txt for the graph_editor, to encourage development
 
-Issue created by migration from https://trac.sagemath.org/ticket/8033
-
-Original creator: was
-
-Original creation time: 2010-01-21 22:54:04
-
+archive/issues_008033.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  rkirov\n\n\n```\nHi,\n\nThe new graph editor in sage by Rado is AWESOME.  One can try it\neasily at http://sagenb.org by typing:\n\n g = graphs.CompleteGraph(10)\n graph_editor(g)\n\nThe actual source code is at\n\n  local/lib/python/site-packages/sagenb-0.6-py2.6.egg/sagenb/data/graph_editor/\n\nIt would be *GREAT* if there were a README.txt file in that directory\nthat explained what all the js files actually are, something about how\nthe graph editor works, where the code that does spring layout\ndynamically is located, etc.   I looked at the code for five minutes\nand couldn't deduce answers to any of those questions.\n\nSo, could somebody familiar with the graph editor write something and\npost a patch.  Or just respond to this email with what would go in a\nREADME.txt?   I have two undergrads who might want to work on that\ncode, but it would help a lot of there were some docs.\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8033\n\n",
+    "created_at": "2010-01-21T22:54:04Z",
+    "labels": [
+        "notebook",
+        "minor",
+        "enhancement"
+    ],
+    "title": "add a README.txt for the graph_editor, to encourage development",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8033",
+    "user": "was"
+}
+```
 Assignee: was
 
 CC:  rkirov
@@ -38,10 +48,25 @@ code, but it would help a lot of there were some docs.
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8033
+
+
+
+
 
 ---
 
-Comment by was created at 2010-01-21 22:55:21
+archive/issue_comments_070167.json:
+```json
+{
+    "body": "And here is the content (from Mitesh Patel):\n\n```\nThe main files are\n\n       a. sage/graphs/graph_editor.py\n       b. graph_editor.html\n       c. graph_editor.js\n       d. processing.editor.min.js\n\nEvaluating graph_editor(G) (see (a)) in an input cell generates\ncode/markup for an inline frame, which the notebook inserts into the\ncorresponding output cell.  The iframe loads (b) as its content.  In\nturn, (b) draws in jQuery / UI, the layout algorithms in (c), and the\nHTML5 canvas rendering engine in (d).\n\nAccording to\n\n       http://trac.sagemath.org/sage_trac/ticket/1321#comment:31\n\nRado adapted (d) from a project called Processing.js\n\nhttp://processingjs.org/\nhttp://processingjs.org/reference\nhttp://processingjs.org/download\n\nwhose original and minified source files are\n\n       e. processing.js\n       f. processing.min.js\n\nTo make it somewhat easier to understand the differences between (f) and\n(d), I put (d) through a JS \"beautifier\"\n\n       http://jsbeautifier.org/\n\nThe result is\n\n       g. processing.editor.js\n\nBut I decided not to give the same treatment to (e) and attempt to make\na concise diff.\n```\n",
+    "created_at": "2010-01-21T22:55:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8033",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8033#issuecomment-70167",
+    "user": "was"
+}
+```
 
 And here is the content (from Mitesh Patel):
 
@@ -89,71 +114,185 @@ a concise diff.
 
 
 
+
 ---
 
-Comment by rkirov created at 2010-01-22 08:00:11
+archive/issue_comments_070168.json:
+```json
+{
+    "body": "contains README.TXT",
+    "created_at": "2010-01-22T08:00:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8033",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8033#issuecomment-70168",
+    "user": "rkirov"
+}
+```
 
 contains README.TXT
 
 
+
 ---
 
-Comment by rkirov created at 2010-01-22 08:01:05
+archive/issue_comments_070169.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-01-22T08:01:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8033",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8033#issuecomment-70169",
+    "user": "rkirov"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_070170.json:
+```json
+{
+    "body": "Attachment\n\nAdded a small file README.txt that has a summary of how the graph_editor works. Comments are welcome.",
+    "created_at": "2010-01-22T08:01:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8033",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8033#issuecomment-70170",
+    "user": "rkirov"
+}
+```
 
 Attachment
 
 Added a small file README.txt that has a summary of how the graph_editor works. Comments are welcome.
 
 
+
 ---
 
-Comment by mpatel created at 2010-01-24 21:51:51
+archive/issue_comments_070171.json:
+```json
+{
+    "body": "Various changes.  Replaces previous.  sagenb repo.",
+    "created_at": "2010-01-24T21:51:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8033",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8033#issuecomment-70171",
+    "user": "mpatel"
+}
+```
 
 Various changes.  Replaces previous.  sagenb repo.
 
 
+
 ---
+
+archive/issue_comments_070172.json:
+```json
+{
+    "body": "Attachment\n\nI've attached an update with some changes.  Feel free to make further changes!",
+    "created_at": "2010-01-24T21:55:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8033",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8033#issuecomment-70172",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
 I've attached an update with some changes.  Feel free to make further changes!
 
 
+
 ---
 
-Comment by mpatel created at 2010-01-24 22:07:28
+archive/issue_comments_070173.json:
+```json
+{
+    "body": "Just a quick thought: Using `$(window).load(...` instead of `$(document).ready(...` in `graph_editor.js` might resolve the \"mouse_out\" problem mentioned at the bottom of `graph_editor.py`.",
+    "created_at": "2010-01-24T22:07:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8033",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8033#issuecomment-70173",
+    "user": "mpatel"
+}
+```
 
 Just a quick thought: Using `$(window).load(...` instead of `$(document).ready(...` in `graph_editor.js` might resolve the "mouse_out" problem mentioned at the bottom of `graph_editor.py`.
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-05 01:11:37
+archive/issue_comments_070174.json:
+```json
+{
+    "body": "Hi Rado -- If this looks good to you, we can change the status to \"positive review.\"",
+    "created_at": "2010-02-05T01:11:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8033",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8033#issuecomment-70174",
+    "user": "mpatel"
+}
+```
 
 Hi Rado -- If this looks good to you, we can change the status to "positive review."
 
 
+
 ---
 
-Comment by rkirov created at 2010-02-07 04:46:13
+archive/issue_comments_070175.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-02-07T04:46:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8033",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8033#issuecomment-70175",
+    "user": "rkirov"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by rkirov created at 2010-02-07 04:46:13
+archive/issue_comments_070176.json:
+```json
+{
+    "body": "definitively, its ready to be merged.",
+    "created_at": "2010-02-07T04:46:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8033",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8033#issuecomment-70176",
+    "user": "rkirov"
+}
+```
 
 definitively, its ready to be merged.
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-10 18:32:23
+archive/issue_comments_070177.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-02-10T18:32:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8033",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8033#issuecomment-70177",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed

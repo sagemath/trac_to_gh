@@ -1,11 +1,21 @@
 # Issue 6388: Logarithm function log(x) is partially broken for x <= 0
 
-Issue created by migration from https://trac.sagemath.org/ticket/6388
-
-Original creator: gmhossain
-
-Original creation time: 2009-06-23 12:36:04
-
+archive/issues_006388.json:
+```json
+{
+    "body": "Keywords: negative argument, log\n\nAlthough log(x) function in new symbolics is appeared to be defined for entire complex plane, it throws out error sometime \n\n(1) Negative argument\n\n\n```\nsage: log(-1 + 0*I)\nI*pi\nsage: log(-1)\n...\nValueError: self must be positive\n```\n\nIt behaves differently for mathematically equivalent arguments.\n\n\n(2) Value of log(x) at x=0\n\n\n```\nsage: log(0)\n...\nValueError: self must be positive\n```\n\n\nlog(0) should throw out an unevaluated symbolic expression \"log(0)\" instead of raising error. Depending on the way it appears in an expression, one could use it for simplifications.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6388\n\n",
+    "created_at": "2009-06-23T12:36:04Z",
+    "labels": [
+        "symbolics",
+        "major",
+        "bug"
+    ],
+    "title": "Logarithm function log(x) is partially broken for x <= 0",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6388",
+    "user": "gmhossain"
+}
+```
 Keywords: negative argument, log
 
 Although log(x) function in new symbolics is appeared to be defined for entire complex plane, it throws out error sometime 
@@ -37,24 +47,65 @@ ValueError: self must be positive
 log(0) should throw out an unevaluated symbolic expression "log(0)" instead of raising error. Depending on the way it appears in an expression, one could use it for simplifications.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6388
+
+
+
+
 
 ---
+
+archive/issue_comments_051145.json:
+```json
+{
+    "body": "Attachment\n\nBased on 4.1.1",
+    "created_at": "2009-09-02T12:21:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6388",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6388#issuecomment-51145",
+    "user": "kcrisman"
+}
+```
 
 Attachment
 
 Based on 4.1.1
 
 
+
 ---
+
+archive/issue_comments_051146.json:
+```json
+{
+    "body": "Attachment\n\nBased on 4.1.1",
+    "created_at": "2009-09-02T12:55:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6388",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6388#issuecomment-51146",
+    "user": "kcrisman"
+}
+```
 
 Attachment
 
 Based on 4.1.1
 
 
+
 ---
 
-Comment by kcrisman created at 2009-09-02 13:15:16
+archive/issue_comments_051147.json:
+```json
+{
+    "body": "Attach either patch, they are the same - things timed out on me and I wasn't sure if it uploaded the first time.  I can't figure out how to remove the redundant one.\n\nPlease note that there should now be NO log(-1) that return an error (including log(RIF(-1)), log(float(-1)), and log(complex(-1))) and there should be NO log(0) that return a symbol or NaN (including the same types).  This is a change, but presumably will not break anything.  It does change the error message for \n\n```\nsage: plot(log,-1,1)\n```\n\nto something about complexes rather than math domain error, but that is not a big deal since it still plots.  It passed all tests for me.",
+    "created_at": "2009-09-02T13:15:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6388",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6388#issuecomment-51147",
+    "user": "kcrisman"
+}
+```
 
 Attach either patch, they are the same - things timed out on me and I wasn't sure if it uploaded the first time.  I can't figure out how to remove the redundant one.
 
@@ -67,9 +118,20 @@ sage: plot(log,-1,1)
 to something about complexes rather than math domain error, but that is not a big deal since it still plots.  It passed all tests for me.
 
 
+
 ---
 
-Comment by gmhossain created at 2009-09-02 21:58:49
+archive/issue_comments_051148.json:
+```json
+{
+    "body": "I am going through this patch. It applied cleanly and also passed some of the doctests that\nI tried. Few initial comments:\n\nWhile log(SR(0)) typesets nicely but log(CC(0)) or log(RDF(0)) doesn't. Although, I don't think\nthat this patch should fix these typesetting issue but in case there is an one-liner fix.",
+    "created_at": "2009-09-02T21:58:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6388",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6388#issuecomment-51148",
+    "user": "gmhossain"
+}
+```
 
 I am going through this patch. It applied cleanly and also passed some of the doctests that
 I tried. Few initial comments:
@@ -78,23 +140,58 @@ While log(SR(0)) typesets nicely but log(CC(0)) or log(RDF(0)) doesn't. Although
 that this patch should fix these typesetting issue but in case there is an one-liner fix.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-09-03 01:58:36
+archive/issue_comments_051149.json:
+```json
+{
+    "body": "The supplemental patch requires the previous patch, and adds a few cases I missed.  I was able to get typesetting properly for one case, but cannot figure out how to use the same trick for real_mpfr or real_double (it works when you do it in the commmand line, but when running the whole _latex_ method it mysteriously fails).",
+    "created_at": "2009-09-03T01:58:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6388",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6388#issuecomment-51149",
+    "user": "kcrisman"
+}
+```
 
 The supplemental patch requires the previous patch, and adds a few cases I missed.  I was able to get typesetting properly for one case, but cannot figure out how to use the same trick for real_mpfr or real_double (it works when you do it in the commmand line, but when running the whole _latex_ method it mysteriously fails).
 
 
+
 ---
+
+archive/issue_comments_051150.json:
+```json
+{
+    "body": "Attachment\n\nRequires regular patch, based on 4.1.1",
+    "created_at": "2009-09-03T01:59:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6388",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6388#issuecomment-51150",
+    "user": "kcrisman"
+}
+```
 
 Attachment
 
 Requires regular patch, based on 4.1.1
 
 
+
 ---
 
-Comment by gmhossain created at 2009-09-05 15:51:41
+archive/issue_comments_051151.json:
+```json
+{
+    "body": "Hi,\n\nThanks, you have added more features than I had wanted. Here are my last comments before\nI give positive review:\n\n\n```\nsage: log(SR(-1), e)\nI*pi\nsage: log(CDF(-1), e)\n3.14159265359*I\n```\n\n\nworks but it doesn't work or CC, RR, CIF...\n\nI think, it would be better if you could change this two lines in log() \n\n```\nexcept AttributeError:\n    return ln(x) / ln(base)\n```\n\n\nto\n\n\n```\nexcept (AttributeError, TypeError):\n    return log(x) / log(base)\n```\n\n\nWe should call log() recursively so that it can take advantage of\nthe features that you have added. Another supplementary patch should be fine too.",
+    "created_at": "2009-09-05T15:51:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6388",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6388#issuecomment-51151",
+    "user": "gmhossain"
+}
+```
 
 Hi,
 
@@ -133,30 +230,76 @@ We should call log() recursively so that it can take advantage of
 the features that you have added. Another supplementary patch should be fine too.
 
 
+
 ---
 
-Comment by gmhossain created at 2009-09-05 16:13:49
+archive/issue_comments_051152.json:
+```json
+{
+    "body": "Just to clarify: changing above two lines should also fix the issue I mentioned.",
+    "created_at": "2009-09-05T16:13:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6388",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6388#issuecomment-51152",
+    "user": "gmhossain"
+}
+```
 
 Just to clarify: changing above two lines should also fix the issue I mentioned.
 
 
+
 ---
+
+archive/issue_comments_051153.json:
+```json
+{
+    "body": "Attachment\n\nApply after others",
+    "created_at": "2009-09-05T17:36:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6388",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6388#issuecomment-51153",
+    "user": "kcrisman"
+}
+```
 
 Attachment
 
 Apply after others
 
 
+
 ---
 
-Comment by kcrisman created at 2009-09-05 17:39:02
+archive/issue_comments_051154.json:
+```json
+{
+    "body": "Okay, probably several solutions to this, but that is a good one.  Apply all three (distinct) patches.",
+    "created_at": "2009-09-05T17:39:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6388",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6388#issuecomment-51154",
+    "user": "kcrisman"
+}
+```
 
 Okay, probably several solutions to this, but that is a good one.  Apply all three (distinct) patches.
 
 
+
 ---
 
-Comment by gmhossain created at 2009-09-05 17:45:01
+archive/issue_comments_051155.json:
+```json
+{
+    "body": "Overall its a great improvement of log() and here goes positive review from me. Thanks.\n\nCheers,\nGolam",
+    "created_at": "2009-09-05T17:45:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6388",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6388#issuecomment-51155",
+    "user": "gmhossain"
+}
+```
 
 Overall its a great improvement of log() and here goes positive review from me. Thanks.
 
@@ -164,19 +307,41 @@ Cheers,
 Golam
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-07 16:44:24
+archive/issue_comments_051156.json:
+```json
+{
+    "body": "Merged patches in this order:\n\n1. `trac_6388-log-behavior.2.patch`\n2. `trac_6388-log-behavior-supplement.patch`\n3. `trac_6388-log-behavior-supp2.patch`",
+    "created_at": "2009-09-07T16:44:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6388",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6388#issuecomment-51156",
+    "user": "mvngu"
+}
+```
 
 Merged patches in this order:
 
- 1. `trac_6388-log-behavior.2.patch`
- 1. `trac_6388-log-behavior-supplement.patch`
- 1. `trac_6388-log-behavior-supp2.patch`
+1. `trac_6388-log-behavior.2.patch`
+2. `trac_6388-log-behavior-supplement.patch`
+3. `trac_6388-log-behavior-supp2.patch`
+
 
 
 ---
 
-Comment by mvngu created at 2009-09-07 16:44:24
+archive/issue_comments_051157.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-09-07T16:44:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6388",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6388#issuecomment-51157",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

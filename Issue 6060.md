@@ -1,11 +1,21 @@
 # Issue 6060: divmod fails when one argument is Integer and the other is a Python int
 
-Issue created by migration from https://trac.sagemath.org/ticket/6060
-
-Original creator: fredrik.johansson
-
-Original creation time: 2009-05-18 03:18:52
-
+archive/issues_006060.json:
+```json
+{
+    "body": "Assignee: somebody\n\n\n```\nsage: divmod(10r,10)\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/fredrik/sage-3.4.2-linux-Ubuntu_8.10-sse2-i686-Linux/<ipython console> in <module>()\n\n/home/fredrik/sage-3.4.2-linux-Ubuntu_8.10-sse2-i686-Linux/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.EuclideanDomainElement.__divmod__ (sage/structure/element.c:13777)()\n\nAttributeError: 'int' object has no attribute 'quo_rem'\n```\n\n\nAttaching a patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6060\n\n",
+    "created_at": "2009-05-18T03:18:52Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "bug"
+    ],
+    "title": "divmod fails when one argument is Integer and the other is a Python int",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6060",
+    "user": "fredrik.johansson"
+}
+```
 Assignee: somebody
 
 
@@ -24,22 +34,61 @@ AttributeError: 'int' object has no attribute 'quo_rem'
 
 Attaching a patch.
 
+Issue created by migration from https://trac.sagemath.org/ticket/6060
+
+
+
+
 
 ---
+
+archive/issue_comments_048246.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-05-18T03:19:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6060",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6060#issuecomment-48246",
+    "user": "fredrik.johansson"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2009-05-19 04:38:55
+archive/issue_comments_048247.json:
+```json
+{
+    "body": "All tests pass.  Looks good to me.",
+    "created_at": "2009-05-19T04:38:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6060",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6060#issuecomment-48247",
+    "user": "mhansen"
+}
+```
 
 All tests pass.  Looks good to me.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-19 18:24:51
+archive/issue_comments_048248.json:
+```json
+{
+    "body": "Merged in Sage 4.0.rc0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-05-19T18:24:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6060",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6060#issuecomment-48248",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 4.0.rc0.
 
@@ -48,8 +97,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-19 18:24:51
+archive/issue_comments_048249.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-05-19T18:24:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6060",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6060#issuecomment-48249",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

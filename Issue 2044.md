@@ -1,11 +1,21 @@
 # Issue 2044: make sage -upgrade work with caching proxy servers
 
-Issue created by migration from https://trac.sagemath.org/ticket/2044
-
-Original creator: mabshoff
-
-Original creation time: 2008-02-04 04:39:10
-
+archive/issues_002044.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nIn http://groups.google.com/group/sage-devel/t/e88f02da4c345cb7 Phil reports the following problem:\n\n```\nHello,\n\nI had many troubles getting the upgrade through a caching proxy on\nwhich I've no control.\nWhen running sage -upgrade, the proxy didn't let me getting the latest\nversions, which made troubles with the critical files:\nhttp://www.sagemath.org/packages/standard/list\nhttp://www.sagemath.org/packages/standard/deps\nhttp://www.sagemath.org/packages/standard/newest_version\nhttp://www.sagemath.org/packages/standard/README\nhttp://www.sagemath.org/packages/install\n\nI could get around by providing manually the files and skipping the\ndownload in local/bin/sage-update\n\nBut would it be possible to add some anti-caching headers to the\nofficial sage server for those files?\nIt'd help a lot all people like me with a sage install behind caching\nproxy.\nSth like:\n Expires: Mon, 26 Jul 1997 05:00:00 GMT\"\n Cache-Control: no-store, no-cache, must-revalidate\"\n Cache-Control: post-check=0, pre-check=0\", false\n Pragma: no-cache\n\nPhil \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2044\n\n",
+    "created_at": "2008-02-04T04:39:10Z",
+    "labels": [
+        "distribution",
+        "major",
+        "bug"
+    ],
+    "title": "make sage -upgrade work with caching proxy servers",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2044",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 In http://groups.google.com/group/sage-devel/t/e88f02da4c345cb7 Phil reports the following problem:
@@ -40,10 +50,25 @@ Phil
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2044
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-02-08 21:33:52
+archive/issue_comments_013240.json:
+```json
+{
+    "body": "Some more info from Phil:\n\n```\nApparently your server is an Apache so after googling myself I found\nthose pages:\nhttp://www.askapache.com/htaccess/speed-up-sites-with-htaccess-cachin...\nhttp://httpd.apache.org/docs/2.0/mod/mod_expires.html\nhttp://httpd.apache.org/docs/2.0/mod/mod_headers.html#header\nhttp://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.9\n\nSo I guess having a .htaccess in packages/ with sth like that is good\nenough\n(be sure to have modules expire and headers and to allow .htaccess\nfiles)\n<FilesMatch \"(list|deps|newest_version|README)$\">\n<IfModule mod_expires.c>\n  # any Expires Directives go here\n  ExpiresActive On\n  ExpiresDefault access\n</IfModule>\n<IfModule mod_headers.c>\n  # any Header directives go here\n  Header set Cache-Control \"no-store, no-cache, must-revalidate, max-\nage=0\"\n  Header set Pragma \"no-cache\"\n</IfModule>\n</FilesMatch>\n\nAnd same for ../install\n\nTo be tested with sth like:\n wget -O /dev/null -S http://www.sagemath.org/packages/standard/list\nto see the headers returned by the Apache server \n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2008-02-08T21:33:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2044",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2044#issuecomment-13240",
+    "user": "mabshoff"
+}
+```
 
 Some more info from Phil:
 
@@ -86,43 +111,109 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-12-31 11:16:53
+archive/issue_comments_013241.json:
+```json
+{
+    "body": "Changing component from distribution to website/wiki.",
+    "created_at": "2013-12-31T11:16:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2044",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2044#issuecomment-13241",
+    "user": "jdemeyer"
+}
+```
 
 Changing component from distribution to website/wiki.
 
 
+
 ---
 
-Comment by mkoeppe created at 2021-08-26 03:44:58
+archive/issue_comments_013242.json:
+```json
+{
+    "body": "outdated, should close",
+    "created_at": "2021-08-26T03:44:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2044",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2044#issuecomment-13242",
+    "user": "mkoeppe"
+}
+```
 
 outdated, should close
 
 
+
 ---
 
-Comment by mkoeppe created at 2021-08-26 03:44:58
+archive/issue_comments_013243.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2021-08-26T03:44:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2044",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2044#issuecomment-13243",
+    "user": "mkoeppe"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by lorenz created at 2021-08-27 04:52:57
+archive/issue_comments_013244.json:
+```json
+{
+    "body": "Indeed, none of those URLs exist anymore (and we can assume that neither does the proxy).",
+    "created_at": "2021-08-27T04:52:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2044",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2044#issuecomment-13244",
+    "user": "lorenz"
+}
+```
 
 Indeed, none of those URLs exist anymore (and we can assume that neither does the proxy).
 
 
+
 ---
 
-Comment by lorenz created at 2021-08-27 04:52:57
+archive/issue_comments_013245.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2021-08-27T04:52:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2044",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2044#issuecomment-13245",
+    "user": "lorenz"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mkoeppe created at 2021-09-02 18:48:47
+archive/issue_comments_013246.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2021-09-02T18:48:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2044",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2044#issuecomment-13246",
+    "user": "mkoeppe"
+}
+```
 
 Resolution: invalid

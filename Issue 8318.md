@@ -1,11 +1,21 @@
 # Issue 8318: overlap_partion of a word should return an instance disjoint set data structure
 
-Issue created by migration from https://trac.sagemath.org/ticket/8318
-
-Original creator: slabbe
-
-Original creation time: 2010-02-21 02:27:56
-
+archive/issues_008318.json:
+```json
+{
+    "body": "Assignee: sage-combinat\n\nCC:  abmasse\n\nWhen I coded the `overlap_partition` function in 2007, the purpose was to study equations on words. But, when the sage-words code was merged into sage in december 2008, the disjoint set data structure was not ready so that sage-words got merged without it. That is why `overlap_partition` returns a set of sets (and also why I don't use the function ever since then).\n\nThe disjoint set data structure got merged into sage recently : #6775. So this patch changes the behavior of `overlap_partition` to its initial goal.\n\nBEFORE (sage-4.3.2):\n\n\n```\nsage: w = Words(range(10))(range(10))\nsage: w.overlap_partition(w,3)\n{{0, 9, 3, 6}, {1, 4, 7}, {8, 2, 5}}\nsage: \nsage: type(_)\n<class 'sage.sets.set.Set_object_enumerated'>\n```\n\n\nWITH THE PATCH:\n\nThe following example illustrates that a word that overlaps with itself has a period :\n\n\n```\nsage: w = Words(range(10))(range(10))\nsage: p = w.overlap_partition(w, 3)\nsage: type(p)\n<type 'sage.sets.disjoint_set.DisjointSet_of_hashables'>\nsage: d = p.element_to_root_dict()\nsage: m = WordMorphism(d)\nsage: print m\nWordMorphism: 0->3, 1->4, 2->5, 3->3, 4->4, 5->5, 6->3, 7->4, 8->5, 9->3\nsage: m(w)\nword: 3453453453\n```\n\n\nThe following example shows that if the image of a word under an involution f overlaps its square, then it is f-symmetric i.e. the product of two f-palindromes :\n\n\n```\nsage: W = Words([-11,-9,..,11])\nsage: w = W([1,3,..,11])\nsage: w\nword: 1,3,5,7,9,11\nsage: inv = lambda x:-x\nsage: f = WordMorphism(dict( (a, inv(a)) for a in W.alphabet()))\nsage: print f\nWordMorphism: -1->1, -11->11, -3->3, -5->5, -7->7, -9->9, 1->-1, 11->-11, 3->-3, 5->-5, 7->-7, 9->-9\nsage: p = (w*w).overlap_partition(f(w).reversal(), 2, involution=inv)\nsage: m = WordMorphism(p.element_to_root_dict())\nsage: m(w)\nword: 1,-1,5,7,-7,-5\nsage: m(w).is_symmetric(f)\nTrue\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8318\n\n",
+    "created_at": "2010-02-21T02:27:56Z",
+    "labels": [
+        "combinatorics",
+        "major",
+        "enhancement"
+    ],
+    "title": "overlap_partion of a word should return an instance disjoint set data structure",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8318",
+    "user": "slabbe"
+}
+```
 Assignee: sage-combinat
 
 CC:  abmasse
@@ -69,17 +79,43 @@ True
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8318
+
+
+
+
 
 ---
 
-Comment by slabbe created at 2010-02-21 02:36:49
+archive/issue_comments_073779.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-02-21T02:36:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8318",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8318#issuecomment-73779",
+    "user": "slabbe"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by abmasse created at 2010-02-23 22:16:33
+archive/issue_comments_073780.json:
+```json
+{
+    "body": "Hello, S\u00e9bastien !\n\nI tested your patch and generated the documentation. I have some comments on the latter:\n\n1. The first sentence appears kind of complicated.\n\n   Returns the partition of the alphabet induced by the equivalence relation obtained\n   from the symmetric, reflexive and transitive closure of the set of pairs of letters\n   R_{self,other,delay}\\cup p defined below.\n\nI suggest something like:\n\n  Returns the partition over the alphabet induced by overlapping the words self\n  and other with given delay.\n\nThen you give the formal definition and the example.\n\n2. In the example, it is not clear how the words `cheval` and `abcdef` overlap. It could be better to use a constant width character font if possible.\n\n3. You should give more details about what the involution is there for.\n\n4. Same comment about parameter `p`. I prefer more significant name (in that case, maybe `partition` ?) and it would be nice to know what `p` is used for (I guess it's a partition corresponding to already equivalent letters ?)\n\nThat's all for now. The rest seems fine. As soon as you fix the documentation according to my comments, I'll resume the review.",
+    "created_at": "2010-02-23T22:16:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8318",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8318#issuecomment-73780",
+    "user": "abmasse"
+}
+```
 
 Hello, Sébastien !
 
@@ -87,9 +123,9 @@ I tested your patch and generated the documentation. I have some comments on the
 
 1. The first sentence appears kind of complicated.
 
-  Returns the partition of the alphabet induced by the equivalence relation obtained
-  from the symmetric, reflexive and transitive closure of the set of pairs of letters
-  R_{self,other,delay}\cup p defined below.
+   Returns the partition of the alphabet induced by the equivalence relation obtained
+   from the symmetric, reflexive and transitive closure of the set of pairs of letters
+   R_{self,other,delay}\cup p defined below.
 
 I suggest something like:
 
@@ -107,67 +143,170 @@ Then you give the formal definition and the example.
 That's all for now. The rest seems fine. As soon as you fix the documentation according to my comments, I'll resume the review.
 
 
+
 ---
 
-Comment by abmasse created at 2010-02-23 22:16:33
+archive/issue_comments_073781.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-02-23T22:16:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8318",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8318#issuecomment-73781",
+    "user": "abmasse"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by abmasse created at 2010-02-23 22:16:33
+archive/issue_comments_073782.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"equation, words, partition\".",
+    "created_at": "2010-02-23T22:16:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8318",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8318#issuecomment-73782",
+    "user": "abmasse"
+}
+```
 
 Changing keywords from "" to "equation, words, partition".
 
 
+
 ---
 
-Comment by slabbe created at 2010-02-28 18:13:55
+archive/issue_comments_073783.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-02-28T18:13:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8318",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8318#issuecomment-73783",
+    "user": "slabbe"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
+
+archive/issue_comments_073784.json:
+```json
+{
+    "body": "Attachment\n\nI fixed the documentation. Needs review!",
+    "created_at": "2010-02-28T18:13:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8318",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8318#issuecomment-73784",
+    "user": "slabbe"
+}
+```
 
 Attachment
 
 I fixed the documentation. Needs review!
 
 
+
 ---
 
-Comment by abmasse created at 2010-03-01 13:24:18
+archive/issue_comments_073785.json:
+```json
+{
+    "body": "I'm done with the review. All tests passed, I corrected a minor error in the documentation. The code makes sense. Positive review.",
+    "created_at": "2010-03-01T13:24:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8318",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8318#issuecomment-73785",
+    "user": "abmasse"
+}
+```
 
 I'm done with the review. All tests passed, I corrected a minor error in the documentation. The code makes sense. Positive review.
 
 
+
 ---
+
+archive/issue_comments_073786.json:
+```json
+{
+    "body": "Attachment\n\none-character review -- apply on top of the first patch",
+    "created_at": "2010-03-01T13:24:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8318",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8318#issuecomment-73786",
+    "user": "abmasse"
+}
+```
 
 Attachment
 
 one-character review -- apply on top of the first patch
 
 
+
 ---
 
-Comment by abmasse created at 2010-03-01 13:25:17
+archive/issue_comments_073787.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-03-01T13:25:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8318",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8318#issuecomment-73787",
+    "user": "abmasse"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mvngu created at 2010-03-02 21:35:05
+archive/issue_comments_073788.json:
+```json
+{
+    "body": "Merged in this order:\n\n1. [trac_8318_overlap_partition-sl.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8318/trac_8318_overlap_partition-sl.patch)\n2. [trac_8313_review-abm.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8318/trac_8313_review-abm.patch)",
+    "created_at": "2010-03-02T21:35:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8318",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8318#issuecomment-73788",
+    "user": "mvngu"
+}
+```
 
 Merged in this order:
 
- 1. [trac_8318_overlap_partition-sl.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8318/trac_8318_overlap_partition-sl.patch)
- 1. [trac_8313_review-abm.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8318/trac_8313_review-abm.patch)
+1. [trac_8318_overlap_partition-sl.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8318/trac_8318_overlap_partition-sl.patch)
+2. [trac_8313_review-abm.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8318/trac_8313_review-abm.patch)
+
 
 
 ---
 
-Comment by mvngu created at 2010-03-02 21:35:05
+archive/issue_comments_073789.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-03-02T21:35:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8318",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8318#issuecomment-73789",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

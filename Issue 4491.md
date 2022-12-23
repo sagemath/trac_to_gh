@@ -1,11 +1,21 @@
 # Issue 4491: finance.TimeSeries from numpy array doesn't work correctly
 
-Issue created by migration from https://trac.sagemath.org/ticket/4491
-
-Original creator: ghtdak
-
-Original creation time: 2008-11-11 03:31:26
-
+archive/issues_004491.json:
+```json
+{
+    "body": "Assignee: ghtdak\n\nLooks like initializing a TimeSeries from a column of a numpy array doesn't work properly\n\n\n```\ntestp.shape\n```\n\n(373389, 4)\n\n```\nt1=finance.TimeSeries(testp[:,3]); t1             # wrong\n```\n\n\n[962.5000, 1225742099742.0000, 4.0000, 4.0000, 962.5000 ... 999.2500,\n1225850900622.0000, 4.0000, 5.0000, 999.2500]\n\n```\nt1=finance.TimeSeries(testp[:,3].tolist()); t1     # correct\n```\n\n[962.5000, 962.5000, 962.5000, 962.5000, 962.5000 ... 954.5000,\n954.5000, 954.5000, 954.5000, 954.5000]\n\nIssue created by migration from https://trac.sagemath.org/ticket/4491\n\n",
+    "created_at": "2008-11-11T03:31:26Z",
+    "labels": [
+        "finance",
+        "minor",
+        "bug"
+    ],
+    "title": "finance.TimeSeries from numpy array doesn't work correctly",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4491",
+    "user": "ghtdak"
+}
+```
 Assignee: ghtdak
 
 Looks like initializing a TimeSeries from a column of a numpy array doesn't work properly
@@ -32,10 +42,25 @@ t1=finance.TimeSeries(testp[:,3].tolist()); t1     # correct
 [962.5000, 962.5000, 962.5000, 962.5000, 962.5000 ... 954.5000,
 954.5000, 954.5000, 954.5000, 954.5000]
 
+Issue created by migration from https://trac.sagemath.org/ticket/4491
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-11-11 04:32:14
+archive/issue_comments_033169.json:
+```json
+{
+    "body": "Welcome back :)\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-11T04:32:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4491",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4491#issuecomment-33169",
+    "user": "mabshoff"
+}
+```
 
 Welcome back :)
 
@@ -44,46 +69,112 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by jason created at 2008-11-11 09:41:12
+archive/issue_comments_033170.json:
+```json
+{
+    "body": "This might be affected by #4206.",
+    "created_at": "2008-11-11T09:41:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4491",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4491#issuecomment-33170",
+    "user": "jason"
+}
+```
 
 This might be affected by #4206.
 
 
+
 ---
 
-Comment by was created at 2008-11-11 20:04:31
+archive/issue_comments_033171.json:
+```json
+{
+    "body": "> `t1=finance.TimeSeries(testp[:,3]); t1`\n\nI probably never implemented such initialization when the numpy array doesn't have trivial stride.  This is certainly a valid bug; fixing it should be a high priority.",
+    "created_at": "2008-11-11T20:04:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4491",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4491#issuecomment-33171",
+    "user": "was"
+}
+```
 
 > `t1=finance.TimeSeries(testp[:,3]); t1`
 
 I probably never implemented such initialization when the numpy array doesn't have trivial stride.  This is certainly a valid bug; fixing it should be a high priority.
 
 
+
 ---
 
-Comment by jason created at 2008-11-22 17:52:23
+archive/issue_comments_033172.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-11-22T17:52:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4491",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4491#issuecomment-33172",
+    "user": "jason"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by jason created at 2008-11-22 17:52:23
+archive/issue_comments_033173.json:
+```json
+{
+    "body": "Changing assignee from ghtdak to jason.",
+    "created_at": "2008-11-22T17:52:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4491",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4491#issuecomment-33173",
+    "user": "jason"
+}
+```
 
 Changing assignee from ghtdak to jason.
 
 
+
 ---
 
-Comment by jason created at 2008-11-22 17:52:23
+archive/issue_comments_033174.json:
+```json
+{
+    "body": "I'm looking at this as part of the RDF/CDF vector rewrite.",
+    "created_at": "2008-11-22T17:52:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4491",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4491#issuecomment-33174",
+    "user": "jason"
+}
+```
 
 I'm looking at this as part of the RDF/CDF vector rewrite.
 
 
+
 ---
 
-Comment by jason created at 2008-11-22 21:05:35
+archive/issue_comments_033175.json:
+```json
+{
+    "body": "Okay, this will taken care of as part of the vector RDF/CDF rewrite (since that already touched the relevant parts of the timeseries code).  Timing results for the case that worked before (simple double numpy arrays) indicate a 3x slowdown.  The new code should work for any numpy datatype (the current code does not) and any sort of numpy array.\n\nbefore patch:\n\n```\nsage: import numpy as np\nsage: a=np.array(range(1e2), dtype='double')\nsage: %timeit b=finance.TimeSeries(a)\n100000 loops, best of 3: 2.13 \u00b5s per loop\nsage: a=np.array(range(1e3), dtype='double')\nsage: %timeit b=finance.TimeSeries(a)\n100000 loops, best of 3: 3.51 \u00b5s per loop\nsage: a=np.array(range(1e4), dtype='double')\nsage: %timeit b=finance.TimeSeries(a)\n10000 loops, best of 3: 21.6 \u00b5s per loop\nsage: a=np.array(range(1e5), dtype='double')\nsage: %timeit b=finance.TimeSeries(a)\n100 loops, best of 3: 1.85 ms per loop\nsage: a=np.array(range(1e6), dtype='double')\nsage: %timeit b=finance.TimeSeries(a)\n10 loops, best of 3: 18.5 ms per loop\nsage: a=np.array(range(1e7), dtype='double')\nsage: %timeit b=finance.TimeSeries(a)double')\n10 loops, best of 3: 189 ms per loop\n```\n\n\nafter patch:\n\n\n```\nsage: sage: import numpy as np\nsage: sage: a=np.array(range(1e2), dtype='double')\nsage: sage: %timeit b=finance.TimeSeries(a)\n100000 loops, best of 3: 5.77 \u00b5s per loop\nsage: sage: a=np.array(range(1e3), dtype='double')\nsage: sage: %timeit b=finance.TimeSeries(a)\n100000 loops, best of 3: 8.74 \u00b5s per loop\nsage: sage: a=np.array(range(1e4), dtype='double')\nsage: sage: %timeit b=finance.TimeSeries(a)\n10000 loops, best of 3: 52.3 \u00b5s per loop\nsage: sage: a=np.array(range(1e5), dtype='double')\nsage: sage: %timeit b=finance.TimeSeries(a)\n100 loops, best of 3: 3.83 ms per loop\nsage: sage: a=np.array(range(1e6), dtype='double')\nsage: sage: %timeit b=finance.TimeSeries(a)\n10 loops, best of 3: 36.3 ms per loop\nsage: sage: a=np.array(range(1e7), dtype='double')\nsage: sage: %timeit b=finance.TimeSeries(a)\n10 loops, best of 3: 365 ms per loop\n```\n",
+    "created_at": "2008-11-22T21:05:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4491",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4491#issuecomment-33175",
+    "user": "jason"
+}
+```
 
 Okay, this will taken care of as part of the vector RDF/CDF rewrite (since that already touched the relevant parts of the timeseries code).  Timing results for the case that worked before (simple double numpy arrays) indicate a 3x slowdown.  The new code should work for any numpy datatype (the current code does not) and any sort of numpy array.
 
@@ -139,16 +230,38 @@ sage: sage: %timeit b=finance.TimeSeries(a)
 
 
 
+
 ---
 
-Comment by jason created at 2008-11-24 22:03:36
+archive/issue_comments_033176.json:
+```json
+{
+    "body": "This is solved in #4206",
+    "created_at": "2008-11-24T22:03:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4491",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4491#issuecomment-33176",
+    "user": "jason"
+}
+```
 
 This is solved in #4206
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-09 09:09:54
+archive/issue_comments_033177.json:
+```json
+{
+    "body": "Since there is a doctest in #4206\n\n```\n[01:04am] mabshoff: I haven't checked, but I will close that ticket of #4206 has a doctest.\n[01:04am] jason-: yes\n[01:04am] jason-:             sage: finance.TimeSeries(v)\n[01:04am] jason-:             [1.0000, 2.0000, 3.0000, 4.0000]\n[01:04am] jason-:             sage: finance.TimeSeries(v[:,0])\n[01:04am] jason-:             [1.0000, 3.0000]\n```\n\nthis ticket is closed as fixed in Sage 3.2.2.alpha1",
+    "created_at": "2008-12-09T09:09:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4491",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4491#issuecomment-33177",
+    "user": "mabshoff"
+}
+```
 
 Since there is a doctest in #4206
 
@@ -164,8 +277,19 @@ Since there is a doctest in #4206
 this ticket is closed as fixed in Sage 3.2.2.alpha1
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-09 09:09:54
+archive/issue_comments_033178.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-12-09T09:09:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4491",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4491#issuecomment-33178",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

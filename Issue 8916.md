@@ -1,11 +1,21 @@
 # Issue 8916: documentation error in cardinality for Enumerated Sets
 
-Issue created by migration from https://trac.sagemath.org/ticket/8916
-
-Original creator: imarquez
-
-Original creation time: 2010-05-07 16:14:21
-
+archive/issues_008916.json:
+```json
+{
+    "body": "Assignee: mvngu\n\nKeywords: documentation\n\nThe word NotImplementedError is latexed but it shouldn't be:\n\n```\nEnumeratedSets.ParentMethods.cardinality\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8916\n\n",
+    "created_at": "2010-05-07T16:14:21Z",
+    "labels": [
+        "documentation",
+        "trivial",
+        "bug"
+    ],
+    "title": "documentation error in cardinality for Enumerated Sets",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8916",
+    "user": "imarquez"
+}
+```
 Assignee: mvngu
 
 Keywords: documentation
@@ -17,49 +27,132 @@ EnumeratedSets.ParentMethods.cardinality
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8916
+
+
+
+
 
 ---
 
-Comment by sageoscart created at 2010-05-07 22:55:24
+archive/issue_comments_082124.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-05-07T22:55:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8916",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8916#issuecomment-82124",
+    "user": "sageoscart"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mvngu created at 2010-05-07 23:11:27
+archive/issue_comments_082125.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-05-07T23:11:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8916",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8916#issuecomment-82125",
+    "user": "mvngu"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by mvngu created at 2010-05-07 23:11:27
+archive/issue_comments_082126.json:
+```json
+{
+    "body": "I don't see any changes in the patch.",
+    "created_at": "2010-05-07T23:11:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8916",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8916#issuecomment-82126",
+    "user": "mvngu"
+}
+```
 
 I don't see any changes in the patch.
 
 
+
 ---
+
+archive/issue_comments_082127.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-05-07T23:31:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8916",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8916#issuecomment-82127",
+    "user": "sageoscart"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by hivert created at 2010-05-07 23:41:22
+archive/issue_comments_082128.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-05-07T23:41:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8916",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8916#issuecomment-82128",
+    "user": "hivert"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by hivert created at 2010-05-07 23:41:39
+archive/issue_comments_082129.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-05-07T23:41:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8916",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8916#issuecomment-82129",
+    "user": "hivert"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mvngu created at 2010-05-08 21:51:43
+archive/issue_comments_082130.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-05-08T21:51:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8916",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8916#issuecomment-82130",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

@@ -1,21 +1,46 @@
 # Issue 6583: Implement two descent over QQ natively in Sage using ratpoints
 
-Issue created by migration from https://trac.sagemath.org/ticket/6583
-
-Original creator: rlm
-
-Original creation time: 2009-07-21 19:26:23
-
+archive/issues_006583.json:
+```json
+{
+    "body": "Assignee: davidloeffler\n\nCC:  cremona was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6583\n\n",
+    "created_at": "2009-07-21T19:26:23Z",
+    "labels": [
+        "elliptic curves",
+        "major",
+        "bug"
+    ],
+    "title": "Implement two descent over QQ natively in Sage using ratpoints",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6583",
+    "user": "rlm"
+}
+```
 Assignee: davidloeffler
 
 CC:  cremona was
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6583
+
+
+
+
 
 ---
 
-Comment by rlm created at 2009-07-21 19:44:45
+archive/issue_comments_053771.json:
+```json
+{
+    "body": "Although the patch above isn't finished, I do consider it polished for what it does. The next steps are:\n\n1. plug into NTL for factoring over FF_p[X] for large p.\n\n2. incorporate the optimization based on linear algebra in QQ*/(QQ*)^2.\n\n3. do second descents in the case that the exact rank is not found.\n\n4. General two-descent -- I have a rudimentary version of this in a notebook worksheet, which will eventually wind up here.\n\nAlthough not in a completely finished state, comments are still welcome!",
+    "created_at": "2009-07-21T19:44:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6583",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6583#issuecomment-53771",
+    "user": "rlm"
+}
+```
 
 Although the patch above isn't finished, I do consider it polished for what it does. The next steps are:
 
@@ -30,16 +55,38 @@ Although the patch above isn't finished, I do consider it polished for what it d
 Although not in a completely finished state, comments are still welcome!
 
 
+
 ---
 
-Comment by rlm created at 2009-09-17 20:34:15
+archive/issue_comments_053772.json:
+```json
+{
+    "body": "Changing type from defect to enhancement.",
+    "created_at": "2009-09-17T20:34:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6583",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6583#issuecomment-53772",
+    "user": "rlm"
+}
+```
 
 Changing type from defect to enhancement.
 
 
+
 ---
 
-Comment by rlm created at 2009-09-17 23:42:21
+archive/issue_comments_053773.json:
+```json
+{
+    "body": "For my purposes (working within Cremona's big table, N<130000), the dimensions of the subspaces of Q*/(Q*)^2 I am considering are \n\n0: 242 cases\n1: 15019 cases\n2: 93479 cases\n3: 141373 cases\n4: 59005 cases\n5: 7339 cases\n6: 187 cases\n\nBased on this, I do not consider it a priority to do #2. The others are also not necessary for my purposes, so I'm doing some serious triage and getting this into a mergable state now. These other enhancements can come later.",
+    "created_at": "2009-09-17T23:42:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6583",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6583#issuecomment-53773",
+    "user": "rlm"
+}
+```
 
 For my purposes (working within Cremona's big table, N<130000), the dimensions of the subspaces of Q*/(Q*)^2 I am considering are 
 
@@ -54,33 +101,92 @@ For my purposes (working within Cremona's big table, N<130000), the dimensions o
 Based on this, I do not consider it a priority to do #2. The others are also not necessary for my purposes, so I'm doing some serious triage and getting this into a mergable state now. These other enhancements can come later.
 
 
+
 ---
 
-Comment by rlm created at 2009-09-18 01:18:43
+archive/issue_comments_053774.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-09-18T01:18:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6583",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6583#issuecomment-53774",
+    "user": "rlm"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by rlm created at 2009-09-18 01:18:43
+archive/issue_comments_053775.json:
+```json
+{
+    "body": "Changing assignee from davidloeffler to rlm.",
+    "created_at": "2009-09-18T01:18:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6583",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6583#issuecomment-53775",
+    "user": "rlm"
+}
+```
 
 Changing assignee from davidloeffler to rlm.
 
 
+
 ---
+
+archive/issue_comments_053776.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-09-18T01:18:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6583",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6583#issuecomment-53776",
+    "user": "rlm"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_053777.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-09-19T03:09:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6583",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6583#issuecomment-53777",
+    "user": "rlm"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2009-09-22 14:43:20
+archive/issue_comments_053778.json:
+```json
+{
+    "body": "Applying the patch and doing \"sage -t\" yields some failures, probably because you assume the large cremona database is installed, but it isn't:\n\n```\nwstein@sage:~/build/sage-4.1.2.alpha1$ ./sage -t  devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\nsage -t  \"devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\"\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.1.2.alpha1/devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\", line 1093:\n    sage: E = EllipticCurve('59450i')\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.1.2.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1.2.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1.2.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_18[12]>\", line 1, in <module>\n        E = EllipticCurve('59450i')###line 1093:\n    sage: E = EllipticCurve('59450i')\n      File \"/scratch/wstein/build/sage-4.1.2.alpha1/local/lib/python/site-packages/sage/schemes/elliptic_curves/constructor.py\", line 216, in EllipticCurve\n        return ell_rational_field.EllipticCurve_rational_field(x)\n      File \"/scratch/wstein/build/sage-4.1.2.alpha1/local/lib/python/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py\", line 191, in __init__\n        X = sage.databases.cremona.CremonaDatabase()[label]\n      File \"/scratch/wstein/build/sage-4.1.2.alpha1/local/lib/python/site-packages/sage/databases/cremona.py\", line 383, in __getitem__\n        return self.elliptic_curve(N)\n      File \"/scratch/wstein/build/sage-4.1.2.alpha1/local/lib/python/site-packages/sage/databases/cremona.py\", line 570, in elliptic_curve\n        raise RuntimeError, message\n    RuntimeError: There is no elliptic curve with label 59450i in the default database; try installing the optional package database_cremona_ellcurve-20071019 which contains all curves of conductor up to 130000\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.1.2.alpha1/devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\", line 1095:\n    sage: log(n1,2) + log(n1_prime,2) - 2 # the rank\nExpected:\n    3\nGot:\n    2\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.1.2.alpha1/devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\", line 56:\n    sage: from sage.schemes.elliptic_curves.descent import test_valuation as tv\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.1.2.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1.2.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1.2.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_2[2]>\", line 1, in <module>\n        from sage.schemes.elliptic_curves.descent import test_valuation as tv###line 56:\n    sage: from sage.schemes.elliptic_curves.descent import test_valuation as tv\n    ImportError: No module named descent\n**********************************************************************\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.1.2.alpha1/devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\", line 57: \n    sage: for i in [1..20]:\n       print '%10s'%factor(i), tv(i,Integer(2)), tv(i,Integer(3)), tv(i,Integer(5))\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.1.2.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1.2.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.1.2.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_2[3]>\", line 2, in <module>\n        print '%10s'%factor(i), tv(i,Integer(2)), tv(i,Integer(3)), tv(i,Integer(5))\n    NameError: name 'tv' is not defined\n**********************************************************************\n2 items had failures:\n   2 of  24 in __main__.example_18\n   2 of   4 in __main__.example_2\n***Test Failed*** 4 failures.\nFor whitespace errors, see the file /scratch/wstein/build/sage-4.1.2.alpha1/tmp/.doctest_descent_two_isogeny.py\n         [3.4 s]\nexit code: 1024\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\"\nTotal time for all tests: 3.4 seconds\nwstein@sage:~/build/sage-4.1.2.alpha1$ \n```\n",
+    "created_at": "2009-09-22T14:43:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6583",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6583#issuecomment-53778",
+    "user": "was"
+}
+```
 
 Applying the patch and doing "sage -t" yields some failures, probably because you assume the large cremona database is installed, but it isn't:
 
@@ -168,21 +274,56 @@ wstein@sage:~/build/sage-4.1.2.alpha1$
 
 
 
+
 ---
 
-Comment by rlm created at 2009-10-30 03:01:22
+archive/issue_comments_053779.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2009-10-30T03:01:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6583",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6583#issuecomment-53779",
+    "user": "rlm"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
+
+archive/issue_comments_053780.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-10-30T03:01:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6583",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6583#issuecomment-53780",
+    "user": "rlm"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by wuthrich created at 2009-11-04 13:30:19
+archive/issue_comments_053781.json:
+```json
+{
+    "body": "Ok. I tested the patches and they all go through. Also the -coverage gives 6 out of 6 despite the fact that many functions in descent_two_isogeny.pyx lack a good documentation and especially examples are missing often. I guess this is because cdefs are not tested. (I admit I never reviewed a cython file.)\n\nCurrently the main function gives back four integers, like mwrank does. They are useful to compute an upper bound on the rank of the Mordell-Weil group and should (in the future) be called from `rank()` and also from `sha()`.\n\nPersonnally I would like more, namely I would like to have a phi-Selmer group. Ideally we should give back a abelian group associated to the elliptic curve, or even better to the isogeny. But isogenies are not there yet, though 2-isogenies should be. The Selmer groups would contain more information than just these four integers and I believe this extra-information is already computed in this algorithm.\n\nRight now the functions are not callable without an extra import and so they do not pollute the name-space and we are still flexible in how to do this later; like `.selmer_group()` etc. That is very good. Yet it does not really look like a finished patch.\n\nIt is work in progress (and it is very good work in the right direction), but I am incapable of saying whether this sort of work should already be included in sage or not. So before giving a positive review to this patch, I would like to ask the author's and other's opinion on this. Maybe I could also ask for more examples, especially in the header of the file, despite the fact that it is not included in the documentation right now.\n\nChris.",
+    "created_at": "2009-11-04T13:30:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6583",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6583#issuecomment-53781",
+    "user": "wuthrich"
+}
+```
 
 Ok. I tested the patches and they all go through. Also the -coverage gives 6 out of 6 despite the fact that many functions in descent_two_isogeny.pyx lack a good documentation and especially examples are missing often. I guess this is because cdefs are not tested. (I admit I never reviewed a cython file.)
 
@@ -197,18 +338,40 @@ It is work in progress (and it is very good work in the right direction), but I 
 Chris.
 
 
+
 ---
 
-Comment by cremona created at 2009-11-04 13:52:58
+archive/issue_comments_053782.json:
+```json
+{
+    "body": "A couple of follow-up points to Chris, from an independent observer:  first, can we have some motivation, such as examples where this works better than calling mwrank?  There will certainly be curves for which the performance is worse (where mwrank would use a second descent).  I suspect that any enhanced perofrmance comes from the use of the more recent version of ratpoints than mwrank uses.\n\nSecondly, the isogeny patch I am finishing up will allow 2-isogenies (and more) to be easily constructed (which they almost can already).  A very interesting project would be to take any (cyclic) isogeny between elliptic curves, defined over QQ, and return an appropriate Selmer group.",
+    "created_at": "2009-11-04T13:52:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6583",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6583#issuecomment-53782",
+    "user": "cremona"
+}
+```
 
 A couple of follow-up points to Chris, from an independent observer:  first, can we have some motivation, such as examples where this works better than calling mwrank?  There will certainly be curves for which the performance is worse (where mwrank would use a second descent).  I suspect that any enhanced perofrmance comes from the use of the more recent version of ratpoints than mwrank uses.
 
 Secondly, the isogeny patch I am finishing up will allow 2-isogenies (and more) to be easily constructed (which they almost can already).  A very interesting project would be to take any (cyclic) isogeny between elliptic curves, defined over QQ, and return an appropriate Selmer group.
 
 
+
 ---
 
-Comment by rlm created at 2009-12-01 18:56:54
+archive/issue_comments_053783.json:
+```json
+{
+    "body": "Here's an example where mwrank does not do a second descent, where the runtime is approximately 90 times faster:\n\n\n```\nsage: E = EllipticCurve('676a1')\nsage: from sage.schemes.elliptic_curves.descent_two_isogeny import two_descent_by_two_isogeny\nsage: timeit('two_descent_by_two_isogeny(E)')\n125 loops, best of 3: 2.83 ms per loop\nsage: A = E.mwrank_curve()\nsage: timeit('A.two_descent(verbose=False)')\n5 loops, best of 3: 252 ms per loop\n```\n\n\nI ran the following to compare times in general:\n\n\n```\nsage: for E in cremona_optimal_curves(range(200)):\n...    if E.torsion_order()%2 == 0:\n...        t = walltime()\n...        E.mwrank_curve().two_descent(verbose=False, second_descent=False)\n...        t = walltime(t)\n...        s = walltime()\n...        _ = two_descent_by_two_isogeny(E)\n...        s = walltime(s)\n```\n\n\nmwrank is always slower by a factor of at least 5, almost always slower by a factor of at least 20, and frequently slower by factors of up to 150.",
+    "created_at": "2009-12-01T18:56:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6583",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6583#issuecomment-53783",
+    "user": "rlm"
+}
+```
 
 Here's an example where mwrank does not do a second descent, where the runtime is approximately 90 times faster:
 
@@ -242,9 +405,20 @@ sage: for E in cremona_optimal_curves(range(200)):
 mwrank is always slower by a factor of at least 5, almost always slower by a factor of at least 20, and frequently slower by factors of up to 150.
 
 
+
 ---
 
-Comment by rlm created at 2009-12-01 19:00:34
+archive/issue_comments_053784.json:
+```json
+{
+    "body": "Maybe this is a more accurate comparison:\n\n```\nsage: L = []\nsage: for E in cremona_optimal_curves(range(200)):\n    if E.torsion_order()%2 == 0:\n        A = E.mwrank_curve(); t = walltime()\n        A.two_descent(verbose=False, second_descent=False)\n        t = walltime(t)\n        s = walltime()\n        _ = two_descent_by_two_isogeny(E)\n        s = walltime(s)\n        if s > t: print E.label()\n        else:\n            L.append(t/s)\n....:             \nsage: sum(L)/len(L)\n28.023321958157503\n```\n\n\nThus the average speedup is 28x.",
+    "created_at": "2009-12-01T19:00:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6583",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6583#issuecomment-53784",
+    "user": "rlm"
+}
+```
 
 Maybe this is a more accurate comparison:
 
@@ -270,9 +444,20 @@ sage: sum(L)/len(L)
 Thus the average speedup is 28x.
 
 
+
 ---
 
-Comment by rlm created at 2009-12-01 19:02:11
+archive/issue_comments_053785.json:
+```json
+{
+    "body": "For the curious, standard deviation:\n\n```\nsage: sqrt(sum([(l - 28.0233)^2 for l in L])/len(L))\n10.6330410085500\n```\n",
+    "created_at": "2009-12-01T19:02:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6583",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6583#issuecomment-53785",
+    "user": "rlm"
+}
+```
 
 For the curious, standard deviation:
 
@@ -283,16 +468,38 @@ sage: sqrt(sum([(l - 28.0233)^2 for l in L])/len(L))
 
 
 
+
 ---
 
-Comment by cremona created at 2009-12-01 20:08:14
+archive/issue_comments_053786.json:
+```json
+{
+    "body": "Robert -- I am quite prepared to believe that your code is fast, but all these tests on the curves of conductor up to 200 are not exactly typical!  I seem to remember that there is one curve in that range which mwrank used to take longer on than all the others put together, for example.",
+    "created_at": "2009-12-01T20:08:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6583",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6583#issuecomment-53786",
+    "user": "cremona"
+}
+```
 
 Robert -- I am quite prepared to believe that your code is fast, but all these tests on the curves of conductor up to 200 are not exactly typical!  I seem to remember that there is one curve in that range which mwrank used to take longer on than all the others put together, for example.
 
 
+
 ---
 
-Comment by rlm created at 2009-12-01 21:34:59
+archive/issue_comments_053787.json:
+```json
+{
+    "body": "I was just trying to address your question whether there were examples where this was better than mwrank. Your second comment, \"any enhanced performance comes from the use of the more recent version of ratpoints\" is very false: if I remove the use of ratpoints altogether, the speedup factors increase!\n\n```\nsage: L = []\nsage: for E in cremona_optimal_curves(range(200)):\n    if E.torsion_order()%2 == 0:\n        A = E.mwrank_curve()\n        t = walltime()\n        A.two_descent(verbose=False, selmer_only=True, second_descent=False)\n        t = walltime(t)\n        s = walltime()\n        _ = two_descent_by_two_isogeny(E, selmer_only=True)\n        s = walltime(s)\n        if s > t: print E.label()\n        else:\n            L.append(t/s)\n....:             \nsage: sum(L)/len(L)\n147.24136054804828\n```\n\n\nThus I argue that this code is definitely worth including, especially since this exact code was the main motivation for including ratpoints in Sage in the first place. I don't know what \"typical\" means regarding the conductor bound, especially since I'm primarily interested in curves with small conductor. I spent a long time optimizing this code, and I'd rather not see that work getting lost to the four winds.\n\n(John-- Maybe I'm just missing your point?)",
+    "created_at": "2009-12-01T21:34:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6583",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6583#issuecomment-53787",
+    "user": "rlm"
+}
+```
 
 I was just trying to address your question whether there were examples where this was better than mwrank. Your second comment, "any enhanced performance comes from the use of the more recent version of ratpoints" is very false: if I remove the use of ratpoints altogether, the speedup factors increase!
 
@@ -321,18 +528,40 @@ Thus I argue that this code is definitely worth including, especially since this
 (John-- Maybe I'm just missing your point?)
 
 
+
 ---
 
-Comment by cremona created at 2009-12-02 15:43:53
+archive/issue_comments_053788.json:
+```json
+{
+    "body": "Sorry, I did not mean to sound so critical.  Of course this should be included.  I have not had time to look at it in detail (though I feel that people expect me to, and give an expert opinion).  I think it would be good to have native 2-descent code in Sage (another extremely useful project would be to rewrite Simon's gp program over number fields in Sage), not least because the current interface is not very good (hard to use non-standard parameter settings, for example) and uses the ancient ratpoints, all because I have not had the time to improve those things.\n\nExperience tells me that if you put in code which was designed for curves with small conductor then you will very soon find that people try to run the same code on huge examples.  This is precisely what happened to me -- the first version of what later became mwrank was written solely for the purpose of computing the ranks of the curves in my book, i.e. N<1000.  So the new code must be tested on large examples too.",
+    "created_at": "2009-12-02T15:43:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6583",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6583#issuecomment-53788",
+    "user": "cremona"
+}
+```
 
 Sorry, I did not mean to sound so critical.  Of course this should be included.  I have not had time to look at it in detail (though I feel that people expect me to, and give an expert opinion).  I think it would be good to have native 2-descent code in Sage (another extremely useful project would be to rewrite Simon's gp program over number fields in Sage), not least because the current interface is not very good (hard to use non-standard parameter settings, for example) and uses the ancient ratpoints, all because I have not had the time to improve those things.
 
 Experience tells me that if you put in code which was designed for curves with small conductor then you will very soon find that people try to run the same code on huge examples.  This is precisely what happened to me -- the first version of what later became mwrank was written solely for the purpose of computing the ranks of the curves in my book, i.e. N<1000.  So the new code must be tested on large examples too.
 
 
+
 ---
 
-Comment by rlm created at 2009-12-02 20:10:12
+archive/issue_comments_053789.json:
+```json
+{
+    "body": "I've tried the same benchmarks on curves in the conductor range 129800 to 130000. There the average speedup is 117x. Once I have the Stein-Watkins database downloaded, I can try running some examples from there.\n\nI'd like to attempt to summarize the referee comments so far:\n\n- more documentation\n- more examples\n- output the Selmer group explicitly\n- eventually we need to implement second descents",
+    "created_at": "2009-12-02T20:10:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6583",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6583#issuecomment-53789",
+    "user": "rlm"
+}
+```
 
 I've tried the same benchmarks on curves in the conductor range 129800 to 130000. There the average speedup is 117x. Once I have the Stein-Watkins database downloaded, I can try running some examples from there.
 
@@ -344,16 +573,38 @@ I'd like to attempt to summarize the referee comments so far:
 - eventually we need to implement second descents
 
 
+
 ---
 
-Comment by was created at 2009-12-09 00:44:39
+archive/issue_comments_053790.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-12-09T00:44:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6583",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6583#issuecomment-53790",
+    "user": "was"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by was created at 2009-12-09 00:44:39
+archive/issue_comments_053791.json:
+```json
+{
+    "body": "REPORT:\n\n1. I can't apply the patch to 4.3.alpha1:\n\n```\npatching file sage/libs/flint/zmod_poly.pxd\nHunk #2 FAILED at 249\n1 out of 2 hunks FAILED -- saving rejects to file sage/libs/flint/zmod_poly.pxd.rej\nabort: patch failed to apply\n```\n\n\nThe rebase is trivial, and I've posted it.\n\n---\n\n2. The main concern in Chris's report is just that this code doesn't yet do enough.  However, rlm isn't just writing this as some one-off thing for a little project.  He's doing his Ph.D. thesis mostly on descent (and its applications), and this is what he'll be working on fulltime, probably for the next year (for his thesis, then his postdoc).  So I think getting this in now makes *perfect* sense, instead of waiting until we get a big patch bomb later. \n\n3. All those cdef'd methods with no doctests and minimal documentation isn't good, just as Chris says.  You could open another ticket and fix that, since it will make it way easier for others to work on (and use in surprising ways!) this code if those functions are documented and tested.  For each cdef'd method, just make a corresponding def'd method called \"test_...\" that calls the cdef'd method, then put the tests there.   You already do just that in *some* cases, e.g., `def test_els(a,b,c,d,e):`. \n\n4. Docstrings like this would be more readable if they used latex:\n\n```\nGiven an elliptic curve E with a two-isogeny phi : E --> E' and dual isogeny \n \t799\t    phi', runs a two-isogeny descent on E, returning n1, n2, n1' and n2'. Here \n \t800\t    n1 is the number of quartic covers found with a rational point, and n2 is \n \t801\t    the number which are ELS. \n```\n\n\n5. All tests pass with this code applied to sage-4.3.alpha1.\n\nIn summary:\n\nI've applied the patches, skimmed them, and run the test suite.  Positive review.",
+    "created_at": "2009-12-09T00:44:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6583",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6583#issuecomment-53791",
+    "user": "was"
+}
+```
 
 REPORT:
 
@@ -392,35 +643,92 @@ In summary:
 I've applied the patches, skimmed them, and run the test suite.  Positive review.
 
 
+
 ---
+
+archive/issue_comments_053792.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-12-09T00:55:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6583",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6583#issuecomment-53792",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by cremona created at 2009-12-09 16:23:09
+archive/issue_comments_053793.json:
+```json
+{
+    "body": "I am very happy to endorse this decision.  When I looked at this some time ago I think I found some extra functionality with the ratpoints package which should be, but is not yet, exposed, and started to work on that, but got diverted into other things.  Never mind:  we can always build on this and extra things if and when we want to.  Good, job, Robert!",
+    "created_at": "2009-12-09T16:23:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6583",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6583#issuecomment-53793",
+    "user": "cremona"
+}
+```
 
 I am very happy to endorse this decision.  When I looked at this some time ago I think I found some extra functionality with the ratpoints package which should be, but is not yet, exposed, and started to work on that, but got diverted into other things.  Never mind:  we can always build on this and extra things if and when we want to.  Good, job, Robert!
 
 
+
 ---
 
-Comment by mhansen created at 2010-01-04 04:02:54
+archive/issue_comments_053794.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-04T04:02:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6583",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6583#issuecomment-53794",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by drkirkby created at 2010-01-07 07:28:51
+archive/issue_comments_053795.json:
+```json
+{
+    "body": "Could you please take a look at #7867 which is a ticket indicating a problem building Sage on 't2' which could possibly be related to this.",
+    "created_at": "2010-01-07T07:28:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6583",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6583#issuecomment-53795",
+    "user": "drkirkby"
+}
+```
 
 Could you please take a look at #7867 which is a ticket indicating a problem building Sage on 't2' which could possibly be related to this.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-02-22 14:14:51
+archive/issue_comments_053796.json:
+```json
+{
+    "body": "For the record, this is definitely the code which has broken the Solaris build. \n\nMinh has proven this: \n\nhttp://groups.google.com/group/sage-devel/msg/bb1da5365b7f1c90\n\n\nDave",
+    "created_at": "2010-02-22T14:14:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6583",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6583#issuecomment-53796",
+    "user": "drkirkby"
+}
+```
 
 For the record, this is definitely the code which has broken the Solaris build. 
 

@@ -1,11 +1,21 @@
 # Issue 9726: An educational RSA crpytosystem
 
-Issue created by migration from https://trac.sagemath.org/ticket/9726
-
-Original creator: gauravluthra
-
-Original creation time: 2010-08-11 19:09:43
-
+archive/issues_009726.json:
+```json
+{
+    "body": "Assignee: mvngu\n\nCC:  kcrisman\n\nKeywords: RSA, educational\n\nA stand alone function srsa.py to implement an educational version of the RSA cryptosystem.This is the first native version of the RSA in SAGE.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9726\n\n",
+    "created_at": "2010-08-11T19:09:43Z",
+    "labels": [
+        "cryptography",
+        "minor",
+        "enhancement"
+    ],
+    "title": "An educational RSA crpytosystem",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9726",
+    "user": "gauravluthra"
+}
+```
 Assignee: mvngu
 
 CC:  kcrisman
@@ -14,22 +24,61 @@ Keywords: RSA, educational
 
 A stand alone function srsa.py to implement an educational version of the RSA cryptosystem.This is the first native version of the RSA in SAGE.
 
+Issue created by migration from https://trac.sagemath.org/ticket/9726
+
+
+
+
 
 ---
+
+archive/issue_comments_095058.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-08-11T19:10:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9726",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9726#issuecomment-95058",
+    "user": "gauravluthra"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by gauravluthra created at 2010-08-11 19:12:11
+archive/issue_comments_095059.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-08-11T19:12:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9726",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9726#issuecomment-95059",
+    "user": "gauravluthra"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by wdj created at 2010-08-11 19:25:40
+archive/issue_comments_095060.json:
+```json
+{
+    "body": "I am really happy that this is here. Although RSA is almost trivial to implement, it is nice to have a version that anyone (eg, a very lazy or tired student) can just use without having to set up anything. However, I would prefer that Minh eventually comment on this since he knows the crypto class structure of sage better than I do. \n\nNote that examples are completely missing from the docstrings, so this cannot go in \"as is\" and I am marking this as \"needs work\".\n\nHowever, thank you for creating this!",
+    "created_at": "2010-08-11T19:25:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9726",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9726#issuecomment-95060",
+    "user": "wdj"
+}
+```
 
 I am really happy that this is here. Although RSA is almost trivial to implement, it is nice to have a version that anyone (eg, a very lazy or tired student) can just use without having to set up anything. However, I would prefer that Minh eventually comment on this since he knows the crypto class structure of sage better than I do. 
 
@@ -38,16 +87,38 @@ Note that examples are completely missing from the docstrings, so this cannot go
 However, thank you for creating this!
 
 
+
 ---
 
-Comment by wdj created at 2010-08-11 19:25:40
+archive/issue_comments_095061.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-08-11T19:25:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9726",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9726#issuecomment-95061",
+    "user": "wdj"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by mvngu created at 2010-08-12 12:24:52
+archive/issue_comments_095062.json:
+```json
+{
+    "body": "Rather than listing what needs to be done, let me try to write a reviewer patch that would bring gauravluthra's implementation up to the standard that is expected of any code that goes into the Sage library. In case you haven't done so, please refer to the [Developer's Guide](http://www.sagemath.org/doc/developer/index.html) for guidelines on contributing to Sage.\n\n\n\nThe name `RSA` for the class is misleading because the stated purpose of this class is to be an implementation of RSA for educational purposes. We don't want to give the misleading impression that `srsa.py` can be used for industrial purposes. I'll change that name to `ToyRSA` in my reviewer patch. By the way, what does the letter \"s\" in \"srsa.py\" mean?\n\n\n\nPS: There's a simplified version of RSA called Kid RSA that is suitable for teaching cryptography to high school students. See [this book](http://code.google.com/p/high-school-sage/) (which is in progress) for details.",
+    "created_at": "2010-08-12T12:24:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9726",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9726#issuecomment-95062",
+    "user": "mvngu"
+}
+```
 
 Rather than listing what needs to be done, let me try to write a reviewer patch that would bring gauravluthra's implementation up to the standard that is expected of any code that goes into the Sage library. In case you haven't done so, please refer to the [Developer's Guide](http://www.sagemath.org/doc/developer/index.html) for guidelines on contributing to Sage.
 
@@ -60,35 +131,83 @@ The name `RSA` for the class is misleading because the stated purpose of this cl
 PS: There's a simplified version of RSA called Kid RSA that is suitable for teaching cryptography to high school students. See [this book](http://code.google.com/p/high-school-sage/) (which is in progress) for details.
 
 
+
 ---
+
+archive/issue_comments_095063.json:
+```json
+{
+    "body": "Attachment\n\nThe patch [attachment:trac_9726-srsa.patch] is the same as [attachment:srsa.patch], but here are the crucial differences:\n\n* Put the ticket number in the commit message.\n* Get rid of Windows newline convention. Use Unix style end of line characters.",
+    "created_at": "2010-08-12T12:35:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9726",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9726#issuecomment-95063",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
 The patch [attachment:trac_9726-srsa.patch] is the same as [attachment:srsa.patch], but here are the crucial differences:
 
- * Put the ticket number in the commit message.
- * Get rid of Windows newline convention. Use Unix style end of line characters.
+* Put the ticket number in the commit message.
+* Get rid of Windows newline convention. Use Unix style end of line characters.
+
 
 
 ---
+
+archive/issue_comments_095064.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-08-12T13:40:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9726",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9726#issuecomment-95064",
+    "user": "gauravluthra"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by wdj created at 2010-08-12 18:18:07
+archive/issue_comments_095065.json:
+```json
+{
+    "body": "Is this ready for review? If so. what patches should be applied in what order?",
+    "created_at": "2010-08-12T18:18:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9726",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9726#issuecomment-95065",
+    "user": "wdj"
+}
+```
 
 Is this ready for review? If so. what patches should be applied in what order?
 
 
+
 ---
 
-Comment by mvngu created at 2010-08-14 12:04:06
+archive/issue_comments_095066.json:
+```json
+{
+    "body": "Some problems with [attachment:srsa.2.patch]:\n\n* What if I want `n` to be odd? In that case, I get an error:\n {{{#!python\nsage: from sage.crypto.public_key.srsa import RSA\nsage: RSA(11, 2)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/dev/shm/mvngu/sage-4.5.3.alpha0/<ipython console> in <module>()\n\n/dev/shm/mvngu/sage-4.5.3.alpha0/local/lib/python2.6/site-packages/sage/crypto/public_key/srsa.pyc in __init__(self, n, e)\n    152             1234567890\n    153         \"\"\"\n--> 154         p = random_prime(2**((n/2)-1), 2**(n/2))\n    155         q = random_prime(2**((n/2)-1), 2**(n/2))\n    156         while( q == p ):\n\n/dev/shm/mvngu/sage-4.5.3.alpha0/local/lib/python2.6/site-packages/sage/rings/arith.pyc in random_prime(n, proof, lbound)\n   1139     from sage.structure.proof.proof import get_flag\n   1140     proof = get_flag(proof, \"arithmetic\")\n-> 1141     n = ZZ(n)\n   1142     if n < lbound:\n   1143         raise ValueError, \"n must be greater than lbound: %s\"%(lbound)\n\n/dev/shm/mvngu/sage-4.5.3.alpha0/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:6407)()\n\n/dev/shm/mvngu/sage-4.5.3.alpha0/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.NamedConvertMap._call_ (sage/structure/coerce_maps.c:4053)()\n\n/dev/shm/mvngu/sage-4.5.3.alpha0/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression._integer_ (sage/symbolic/expression.cpp:4034)()\n\nTypeError: unable to convert x (=16*sqrt(2)) to an integer\n }}}\n \n* Running doctests over `srsa.py` fails with the following message:\n {{{#!sh\n[mvngu`@`sage sage-4.5.3.alpha0]$ ./sage -t -long devel/sage-main/sage/crypto/public_key/srsa.py \nsage -t -long \"devel/sage-main/sage/crypto/public_key/srsa.py\"\nException raised by doctesting framework. Use -verbose for details.\n\t [1.8 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -long \"devel/sage-main/sage/crypto/public_key/srsa.py\" # Exception from doctest framework\nTotal time for all tests: 1.8 seconds\n }}}\n \nThis patch needs a lot of work and a lot of redesign.",
+    "created_at": "2010-08-14T12:04:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9726",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9726#issuecomment-95066",
+    "user": "mvngu"
+}
+```
 
 Some problems with [attachment:srsa.2.patch]:
 
- * What if I want `n` to be odd? In that case, I get an error:
+* What if I want `n` to be odd? In that case, I get an error:
  {{{#!python
 sage: from sage.crypto.public_key.srsa import RSA
 sage: RSA(11, 2)
@@ -120,7 +239,7 @@ TypeError                                 Traceback (most recent call last)
 TypeError: unable to convert x (=16*sqrt(2)) to an integer
  }}}
  
- * Running doctests over `srsa.py` fails with the following message:
+* Running doctests over `srsa.py` fails with the following message:
  {{{#!sh
 [mvngu`@`sage sage-4.5.3.alpha0]$ ./sage -t -long devel/sage-main/sage/crypto/public_key/srsa.py 
 sage -t -long "devel/sage-main/sage/crypto/public_key/srsa.py"

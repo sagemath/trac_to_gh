@@ -1,11 +1,21 @@
 # Issue 5588: [with patch, needs review] developer's guide: more information about docstrings
 
-Issue created by migration from https://trac.sagemath.org/ticket/5588
-
-Original creator: jhpalmieri
-
-Original creation time: 2009-03-23 04:35:58
-
+archive/issues_005588.json:
+```json
+{
+    "body": "Assignee: jhpalmieri\n\nKeywords: developer\n\nThe attachment does the following things:\n\n1. It says that the Sage style for typesetting the standard rings (ZZ, CC, etc.) is to use mathbf, not mathbb.\n\n2. It discusses trying to achieve a balance between the appearance of the docstring in interactive help vs. in the reference manual.\n\n3. In the paragraph starting \"Finally\", it mentions some nonstandard macros available for use in docstrings.  This part depends on #5555.\n\n4. It mentions that methods which start with an underscore don't appear in the reference manual, and this should be taken into consideration when writing documentation. The example in this part depends on #5529.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5588\n\n",
+    "created_at": "2009-03-23T04:35:58Z",
+    "labels": [
+        "documentation",
+        "minor",
+        "enhancement"
+    ],
+    "title": "[with patch, needs review] developer's guide: more information about docstrings",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5588",
+    "user": "jhpalmieri"
+}
+```
 Assignee: jhpalmieri
 
 Keywords: developer
@@ -21,10 +31,25 @@ The attachment does the following things:
 4. It mentions that methods which start with an underscore don't appear in the reference manual, and this should be taken into consideration when writing documentation. The example in this part depends on #5529.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5588
+
+
+
+
 
 ---
 
-Comment by malb created at 2009-03-23 10:02:39
+archive/issue_comments_043549.json:
+```json
+{
+    "body": "Replying to [ticket:5588 jhpalmieri]:\n> 1. It says that the Sage style for typesetting the standard rings (ZZ, CC, etc.) is to use mathbf, not mathbb.\n\nI wonder if that was a conscious decision or whether it is just as it is (I personally prefer mathbb over mathbf).",
+    "created_at": "2009-03-23T10:02:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5588",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5588#issuecomment-43549",
+    "user": "malb"
+}
+```
 
 Replying to [ticket:5588 jhpalmieri]:
 > 1. It says that the Sage style for typesetting the standard rings (ZZ, CC, etc.) is to use mathbf, not mathbb.
@@ -32,39 +57,96 @@ Replying to [ticket:5588 jhpalmieri]:
 I wonder if that was a conscious decision or whether it is just as it is (I personally prefer mathbb over mathbf).
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-03-24 16:50:20
+archive/issue_comments_043550.json:
+```json
+{
+    "body": "I happen to prefer mathbf, but I was basing this on the latex methods for ZZ, RR, etc., and also on the contents of the file SAGE_ROOT/sage/doc/common/macros.tex, which (in the old version of the documentation) was available for use in the docs.  The consistency among ZZ, RR, etc., led me to believe that it was a conscious decision, but I don't know this for a fact.  Of course, both mathbb and mathbf are used in the code many times...\n\nLet's see what people on sage-devel think.",
+    "created_at": "2009-03-24T16:50:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5588",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5588#issuecomment-43550",
+    "user": "jhpalmieri"
+}
+```
 
 I happen to prefer mathbf, but I was basing this on the latex methods for ZZ, RR, etc., and also on the contents of the file SAGE_ROOT/sage/doc/common/macros.tex, which (in the old version of the documentation) was available for use in the docs.  The consistency among ZZ, RR, etc., led me to believe that it was a conscious decision, but I don't know this for a fact.  Of course, both mathbb and mathbf are used in the code many times...
 
 Let's see what people on sage-devel think.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-03-25 23:36:34
+archive/issue_comments_043551.json:
+```json
+{
+    "body": "Let's delay this one for a while.  If #5610 gets in, then I'll need to revise the stuff about mathbf anyway...",
+    "created_at": "2009-03-25T23:36:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5588",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5588#issuecomment-43551",
+    "user": "jhpalmieri"
+}
+```
 
 Let's delay this one for a while.  If #5610 gets in, then I'll need to revise the stuff about mathbf anyway...
 
 
+
 ---
+
+archive/issue_comments_043552.json:
+```json
+{
+    "body": "Attachment\n\nNow that #5610 is in (as of 3.4.2.alpha0), here's a version of the patch which is ready for review.",
+    "created_at": "2009-04-24T17:11:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5588",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5588#issuecomment-43552",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
 Now that #5610 is in (as of 3.4.2.alpha0), here's a version of the patch which is ready for review.
 
 
+
 ---
 
-Comment by cremona created at 2009-04-29 11:57:57
+archive/issue_comments_043553.json:
+```json
+{
+    "body": "The patch applies fine to 3.4.2.alpha0 and the docs build and read well.",
+    "created_at": "2009-04-29T11:57:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5588",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5588#issuecomment-43553",
+    "user": "cremona"
+}
+```
 
 The patch applies fine to 3.4.2.alpha0 and the docs build and read well.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-30 00:59:35
+archive/issue_comments_043554.json:
+```json
+{
+    "body": "Merged in Sage 3.4.2.rc0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-30T00:59:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5588",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5588#issuecomment-43554",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.4.2.rc0.
 
@@ -73,8 +155,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-30 00:59:35
+archive/issue_comments_043555.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-04-30T00:59:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5588",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5588#issuecomment-43555",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 4463: modular/abvar/homspace.py doctests are long
 
-Issue created by migration from https://trac.sagemath.org/ticket/4463
-
-Original creator: mhampton
-
-Original creation time: 2008-11-07 17:08:32
-
+archive/issues_004463.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nCC:  was\n\nKeywords: abvar, homspace, long\n\nThe doctests in modular/abvar/homspace.py timeout on my PPC mac, so something in there takes long enough that it should get the \"# long time\" comment.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4463\n\n",
+    "created_at": "2008-11-07T17:08:32Z",
+    "labels": [
+        "doctest",
+        "minor",
+        "bug"
+    ],
+    "title": "modular/abvar/homspace.py doctests are long",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4463",
+    "user": "mhampton"
+}
+```
 Assignee: mabshoff
 
 CC:  was
@@ -14,10 +24,25 @@ Keywords: abvar, homspace, long
 
 The doctests in modular/abvar/homspace.py timeout on my PPC mac, so something in there takes long enough that it should get the "# long time" comment.
 
+Issue created by migration from https://trac.sagemath.org/ticket/4463
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-11-16 08:59:34
+archive/issue_comments_032953.json:
+```json
+{
+    "body": "This ought to get fixed in Sage 3.2.\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-16T08:59:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4463",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4463#issuecomment-32953",
+    "user": "mabshoff"
+}
+```
 
 This ought to get fixed in Sage 3.2.
 
@@ -26,59 +51,149 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_032954.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-11-23T11:12:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4463",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4463#issuecomment-32954",
+    "user": "craigcitro"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by craigcitro created at 2008-11-23 11:14:32
+archive/issue_comments_032955.json:
+```json
+{
+    "body": "Changing priority from minor to major.",
+    "created_at": "2008-11-23T11:14:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4463",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4463#issuecomment-32955",
+    "user": "craigcitro"
+}
+```
 
 Changing priority from minor to major.
 
 
+
 ---
 
-Comment by craigcitro created at 2008-11-23 11:14:32
+archive/issue_comments_032956.json:
+```json
+{
+    "body": "Changing assignee from mabshoff to craigcitro.",
+    "created_at": "2008-11-23T11:14:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4463",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4463#issuecomment-32956",
+    "user": "craigcitro"
+}
+```
 
 Changing assignee from mabshoff to craigcitro.
 
 
+
 ---
 
-Comment by craigcitro created at 2008-11-23 11:14:32
+archive/issue_comments_032957.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-11-23T11:14:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4463",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4463#issuecomment-32957",
+    "user": "craigcitro"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by craigcitro created at 2008-11-23 11:14:32
+archive/issue_comments_032958.json:
+```json
+{
+    "body": "Some speedups for computation of endomorphism rings of modular abelian varieties. This patch just makes one or two easy changes; much work remains. However, it gives a noticeable speedup (at least on my machine): testing `sage/modular/abvar/homspace.py` drops from ~150s to ~100s. This should at least stop the timeouts people keep running into.",
+    "created_at": "2008-11-23T11:14:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4463",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4463#issuecomment-32958",
+    "user": "craigcitro"
+}
+```
 
 Some speedups for computation of endomorphism rings of modular abelian varieties. This patch just makes one or two easy changes; much work remains. However, it gives a noticeable speedup (at least on my machine): testing `sage/modular/abvar/homspace.py` drops from ~150s to ~100s. This should at least stop the timeouts people keep running into.
 
 
+
 ---
 
-Comment by craigcitro created at 2008-11-23 11:14:32
+archive/issue_comments_032959.json:
+```json
+{
+    "body": "Changing component from doctest to modular forms.",
+    "created_at": "2008-11-23T11:14:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4463",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4463#issuecomment-32959",
+    "user": "craigcitro"
+}
+```
 
 Changing component from doctest to modular forms.
 
 
+
 ---
 
-Comment by craigcitro created at 2008-11-23 11:17:00
+archive/issue_comments_032960.json:
+```json
+{
+    "body": "For the record, the two optimizations in the above patch:\n\n* for computing endomorphism ring generators for a one dimensional abelian variety, simply return the answer, and \n* if we're intersecting a space of modular symbols with `ZZ^n`, simply take the appropriate submodule instead of doing any linear algebra.",
+    "created_at": "2008-11-23T11:17:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4463",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4463#issuecomment-32960",
+    "user": "craigcitro"
+}
+```
 
 For the record, the two optimizations in the above patch:
 
- * for computing endomorphism ring generators for a one dimensional abelian variety, simply return the answer, and 
- * if we're intersecting a space of modular symbols with `ZZ^n`, simply take the appropriate submodule instead of doing any linear algebra.
+* for computing endomorphism ring generators for a one dimensional abelian variety, simply return the answer, and 
+* if we're intersecting a space of modular symbols with `ZZ^n`, simply take the appropriate submodule instead of doing any linear algebra.
+
 
 
 ---
 
-Comment by mabshoff created at 2008-11-23 11:18:12
+archive/issue_comments_032961.json:
+```json
+{
+    "body": "Well, initially this was all about making some doctests \"#long time\", but speeding things up is obviously better :)\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-23T11:18:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4463",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4463#issuecomment-32961",
+    "user": "mabshoff"
+}
+```
 
 Well, initially this was all about making some doctests "#long time", but speeding things up is obviously better :)
 
@@ -87,16 +202,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by was created at 2008-11-23 21:59:06
+archive/issue_comments_032962.json:
+```json
+{
+    "body": "Works and seems sensible.  Makes the test take half the time on one of my test machines.",
+    "created_at": "2008-11-23T21:59:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4463",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4463#issuecomment-32962",
+    "user": "was"
+}
+```
 
 Works and seems sensible.  Makes the test take half the time on one of my test machines.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-23 23:44:55
+archive/issue_comments_032963.json:
+```json
+{
+    "body": "There is one doctest failure issue here:\n\n```\nsage -t -long devel/sage/sage/modules/free_module.py        \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.1.alpha1/devel/sage/sage/modules/free_module.py\", line 1164:\n    sage: K = S.integral_structure(); K\nExpected:\n    Free module of degree 19 and rank 8 over Integer Ring\n    Echelon basis matrix:\n    [ 0  1  0  0 -1  0  0  0  0  0  0  0  0  0  0  0  0  0  0]\n    ...\nGot:\n    Free module of degree 19 and rank 8 over Integer Ring\n    User basis matrix:\n    [ 0  1  0  0 -1  0  0  0  0  0  0  0  0  0  0  0  0  0  0]\n    [ 0  0  1  0 -1  0  0  0  0  0  0  0  0  0  0  0  0  0  0]\n    [ 0  0  0  0  0  1  0  0  0 -1  0  0  0  0  0  0  0  0  0]\n    [ 0  0  0  0  0  0  1  0  0  0 -1  0  0  0  0  0  0  0  0]\n    [ 0  0  0  0  0  0  0  1  0 -1  0  0  0  0  0  0  0  0  0]\n    [ 0  0  0  0  0  0  0  0  1  0 -1  0  0  0  0  0  0  0  0]\n    [ 0  0  0  0  0  0  0  0  0  0  0  1  0 -1  0  0  0 -1  1]\n    [ 0  0  0  0  0  0  0  0  0  0  0  0  1  0 -1  0  0  1 -1]\n**********************************************************************\n```\n\nChanging this is simple, but I would like to know if the experts think this change is justified.\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-23T23:44:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4463",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4463#issuecomment-32963",
+    "user": "mabshoff"
+}
+```
 
 There is one doctest failure issue here:
 
@@ -131,9 +268,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-23 23:53:14
+archive/issue_comments_032964.json:
+```json
+{
+    "body": "Craig mentioned in IRC that some more work needs to be done here.\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-23T23:53:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4463",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4463#issuecomment-32964",
+    "user": "mabshoff"
+}
+```
 
 Craig mentioned in IRC that some more work needs to be done here.
 
@@ -142,22 +290,57 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_032965.json:
+```json
+{
+    "body": "Attachment\n\nAdded a new patch that fixes the doctest failure. It was just a question of calling the free module constructor appropriately; this version is even ever so slightly faster than before.",
+    "created_at": "2008-11-24T04:31:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4463",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4463#issuecomment-32965",
+    "user": "craigcitro"
+}
+```
 
 Attachment
 
 Added a new patch that fixes the doctest failure. It was just a question of calling the free module constructor appropriately; this version is even ever so slightly faster than before.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-24 19:35:37
+archive/issue_comments_032966.json:
+```json
+{
+    "body": "Merged both patches in Sage 3.2.1.alpha1",
+    "created_at": "2008-11-24T19:35:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4463",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4463#issuecomment-32966",
+    "user": "mabshoff"
+}
+```
 
 Merged both patches in Sage 3.2.1.alpha1
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-24 19:35:37
+archive/issue_comments_032967.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-11-24T19:35:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4463",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4463#issuecomment-32967",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

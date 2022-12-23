@@ -1,11 +1,21 @@
 # Issue 3963: [with patch, needs review] bug in converting Sage's rationals to Sympy rationals
 
-Issue created by migration from https://trac.sagemath.org/ticket/3963
-
-Original creator: mhansen
-
-Original creation time: 2008-08-27 00:52:43
-
+archive/issues_003963.json:
+```json
+{
+    "body": "Assignee: was\n\n\n```\nfrom sympy import Symbol\nQQ(1)+Symbol('x')*QQ(2)\n\nproduces an error:\n\nTypeError                                 Traceback (most recent call\nlast)\n\n/Applications/sage/<ipython console> in <module>()\n\n/Applications/sage/element.pyx in\nsage.structure.element.ModuleElement.__add__ (sage/structure/element.c:\n5606)()\n\n/Applications/sage/coerce.pyx in\nsage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/\ncoerce.c:6288)()\n\nTypeError: unsupported operand parent(s) for '+': 'Rational Field' and\n'<class 'sympy.core.mul.Mul'>'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3963\n\n",
+    "created_at": "2008-08-27T00:52:43Z",
+    "labels": [
+        "interfaces",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch, needs review] bug in converting Sage's rationals to Sympy rationals",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3963",
+    "user": "mhansen"
+}
+```
 Assignee: was
 
 
@@ -33,15 +43,43 @@ TypeError: unsupported operand parent(s) for '+': 'Rational Field' and
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3963
+
+
+
+
 
 ---
+
+archive/issue_comments_028470.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-08-27T00:53:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3963",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3963#issuecomment-28470",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-27 00:54:37
+archive/issue_comments_028471.json:
+```json
+{
+    "body": "Positive review.\n\nCheers,\n\nMichael",
+    "created_at": "2008-08-27T00:54:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3963",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3963#issuecomment-28471",
+    "user": "mabshoff"
+}
+```
 
 Positive review.
 
@@ -50,15 +88,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-27 00:57:21
+archive/issue_comments_028472.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-08-27T00:57:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3963",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3963#issuecomment-28472",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-27 00:57:21
+archive/issue_comments_028473.json:
+```json
+{
+    "body": "Merged in Sage 3.1.2.alpha1",
+    "created_at": "2008-08-27T00:57:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3963",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3963#issuecomment-28473",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.1.2.alpha1

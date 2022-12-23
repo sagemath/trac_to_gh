@@ -1,11 +1,21 @@
 # Issue 2139: set partitions iterator not working
 
-Issue created by migration from https://trac.sagemath.org/ticket/2139
-
-Original creator: mhansen
-
-Original creation time: 2008-02-11 06:39:11
-
+archive/issues_002139.json:
+```json
+{
+    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nHello,\n\nI'm doing some work with complete matchings, and I'm dealing with them\nas set partitions. I just need to iterate over matchings, not make\nlists, so it seems like I shouldn't run out of memory (I have 1.5 gigs\ninstalled), but I am. I'm using Sage 2.10.1 on Linux.\n\nIf I do something like the following, memory usage climbs and climbs:\n\n n = 0\n for m in SetPartitions(range(16), [2, 2, 2, 2, 2, 2, 2, 2]):\n   n += 1\n\nThis seems weird, since there's a set partitions iterator, and it\nshouldn't take a lot of memory.\n\nOn the other hand, here's an iterator for complete matchings that I\nwrote that works just fine:\n\n def matchings(n):\n   for m in matchingsset(range(1, n+1)): yield m\n\n def matchingsset(L):\n   if len(L) == 0:\n     yield []\n   else:\n     for k in range(1,len(L)):\n       for m in matchingsset(L[1:k] + L[k+1:]):\n         yield m + [[L[0], L[k]]]\n   return\n\nNow running the same counting loop works, with no extra memory usage:\n\n n = 0\n for m in matchings(16):\n   n += 1\n\nSage seems to have an iterator for set partitions; it is working? Do I\nneed to use something else to get a memory-efficient iterator?\n\nThanks for the help,\n\nDan\n\nIssue created by migration from https://trac.sagemath.org/ticket/2139\n\n",
+    "created_at": "2008-02-11T06:39:11Z",
+    "labels": [
+        "combinatorics",
+        "major",
+        "bug"
+    ],
+    "title": "set partitions iterator not working",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2139",
+    "user": "mhansen"
+}
+```
 Assignee: mhansen
 
 CC:  sage-combinat
@@ -54,42 +64,114 @@ Thanks for the help,
 
 Dan
 
+Issue created by migration from https://trac.sagemath.org/ticket/2139
+
+
+
+
 
 ---
+
+archive/issue_comments_014024.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-02-11T06:40:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2139",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2139#issuecomment-14024",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2008-02-11 06:57:35
+archive/issue_comments_014025.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-02-11T06:57:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2139",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2139#issuecomment-14025",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by ncalexan created at 2008-02-15 03:45:09
+archive/issue_comments_014026.json:
+```json
+{
+    "body": "Again, I say apply.  Again, there are no doctests!",
+    "created_at": "2008-02-15T03:45:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2139",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2139#issuecomment-14026",
+    "user": "ncalexan"
+}
+```
 
 Again, I say apply.  Again, there are no doctests!
 
 
+
 ---
 
-Comment by mhansen created at 2008-02-15 03:47:51
+archive/issue_comments_014027.json:
+```json
+{
+    "body": "I don't know the best way to doctest memory usage, but this is a \"reimplementation\" of something that already has doctests.  So, it's already being doctested for correctness, just not memory consumption.",
+    "created_at": "2008-02-15T03:47:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2139",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2139#issuecomment-14027",
+    "user": "mhansen"
+}
+```
 
 I don't know the best way to doctest memory usage, but this is a "reimplementation" of something that already has doctests.  So, it's already being doctested for correctness, just not memory consumption.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-15 04:57:19
+archive/issue_comments_014028.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-02-15T04:57:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2139",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2139#issuecomment-14028",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-15 04:57:19
+archive/issue_comments_014029.json:
+```json
+{
+    "body": "Merged in Sage 2.10.2.alpha0",
+    "created_at": "2008-02-15T04:57:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2139",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2139#issuecomment-14029",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.2.alpha0

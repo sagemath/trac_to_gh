@@ -1,11 +1,21 @@
 # Issue 4190: division of number field order elements doesn't check for membership
 
-Issue created by migration from https://trac.sagemath.org/ticket/4190
-
-Original creator: davidloeffler
-
-Original creation time: 2008-09-24 11:21:35
-
+archive/issues_004190.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  robertwb\n\nI think this just about says it all:\n\n```\nsage: OK = NumberField(x^2 - x + 2, 'w').ring_of_integers()\nsage: w = OK.ring_generators()[0]\nsage: 1/w in OK\nTrue\n```\n\nI tested this for cubic fields as well, and the same problem comes up. I can't work out why this happens -- it must be something weird in the coercion framework, as there isn't a specific method for division or inversion of elements of orders: it falls back to NumberFieldElement.__invert__ and then somehow coerces the result back to an OrderElement without doing any checks along the way.\n\nI discovered this when trying to find out whether one element of OK was divisible by another -- \"x.divides(y)\" raises an error, and \"y/x in OK\" always returns True, which isn't very helpful; the best I could find was \"y in x*OK\" which seems to give the right results.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4190\n\n",
+    "created_at": "2008-09-24T11:21:35Z",
+    "labels": [
+        "number theory",
+        "major",
+        "bug"
+    ],
+    "title": "division of number field order elements doesn't check for membership",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4190",
+    "user": "davidloeffler"
+}
+```
 Assignee: was
 
 CC:  robertwb
@@ -23,10 +33,25 @@ I tested this for cubic fields as well, and the same problem comes up. I can't w
 
 I discovered this when trying to find out whether one element of OK was divisible by another -- "x.divides(y)" raises an error, and "y/x in OK" always returns True, which isn't very helpful; the best I could find was "y in x*OK" which seems to give the right results.
 
+Issue created by migration from https://trac.sagemath.org/ticket/4190
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-09-24 11:25:57
+archive/issue_comments_030398.json:
+```json
+{
+    "body": "Hi David,\n\nI would assume Robert knows what this is all about, so I am adding him to the CC. \n\nIn general it would be good to mention the issue on [sage-devel] so that the right people get a change to become aware of the problem since not too many people read [sage-trac].\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-24T11:25:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4190",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4190#issuecomment-30398",
+    "user": "mabshoff"
+}
+```
 
 Hi David,
 
@@ -39,46 +64,112 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by robertwb created at 2008-09-24 16:43:54
+archive/issue_comments_030399.json:
+```json
+{
+    "body": "`_div_` on order elements needs to be written so as to return something that is always in the fraction field, not self. This is an oversight, not by design.",
+    "created_at": "2008-09-24T16:43:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4190",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4190#issuecomment-30399",
+    "user": "robertwb"
+}
+```
 
 `_div_` on order elements needs to be written so as to return something that is always in the fraction field, not self. This is an oversight, not by design.
 
 
+
 ---
 
-Comment by davidloeffler created at 2008-09-24 19:42:33
+archive/issue_comments_030400.json:
+```json
+{
+    "body": "I'll have a go at writing that then.",
+    "created_at": "2008-09-24T19:42:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4190",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4190#issuecomment-30400",
+    "user": "davidloeffler"
+}
+```
 
 I'll have a go at writing that then.
 
 
+
 ---
 
-Comment by davidloeffler created at 2008-09-24 19:42:33
+archive/issue_comments_030401.json:
+```json
+{
+    "body": "Changing assignee from was to davidloeffler.",
+    "created_at": "2008-09-24T19:42:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4190",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4190#issuecomment-30401",
+    "user": "davidloeffler"
+}
+```
 
 Changing assignee from was to davidloeffler.
 
 
+
 ---
 
-Comment by davidloeffler created at 2008-09-25 11:21:24
+archive/issue_comments_030402.json:
+```json
+{
+    "body": "OK, here's a very small patch. Turns out order elements are a cdef class, so I wrote a _div_c_impl.\n\nI wondered whether the return value should be in the order if that makes sense, and in the fraction field otherwise, but this slowed everything down by a factor of 2 according to timeit() so I made it always return fraction field elements.",
+    "created_at": "2008-09-25T11:21:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4190",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4190#issuecomment-30402",
+    "user": "davidloeffler"
+}
+```
 
 OK, here's a very small patch. Turns out order elements are a cdef class, so I wrote a _div_c_impl.
 
 I wondered whether the return value should be in the order if that makes sense, and in the fraction field otherwise, but this slowed everything down by a factor of 2 according to timeit() so I made it always return fraction field elements.
 
 
+
 ---
 
-Comment by davidloeffler created at 2008-09-25 11:21:24
+archive/issue_comments_030403.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-09-25T11:21:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4190",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4190#issuecomment-30403",
+    "user": "davidloeffler"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by robertwb created at 2008-09-25 11:35:34
+archive/issue_comments_030404.json:
+```json
+{
+    "body": "Good work. Note that as of the latest alpha, both cdef and normal classes use _div_. Also, given the way these two are implemented, you could just reset the _parent slot instead of using the `__call__` method which is probably eating up a large chunk of the time. \n\nAs for your question about whether or not it belongs in the fraction field, the convention is to have division return elements of the fraction field, so go ahead and remove that commented code. \n\n\n```\nsage: parent(4/2)\nRational Field\n```\n",
+    "created_at": "2008-09-25T11:35:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4190",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4190#issuecomment-30404",
+    "user": "robertwb"
+}
+```
 
 Good work. Note that as of the latest alpha, both cdef and normal classes use _div_. Also, given the way these two are implemented, you could just reset the _parent slot instead of using the `__call__` method which is probably eating up a large chunk of the time. 
 
@@ -92,18 +183,40 @@ Rational Field
 
 
 
+
 ---
 
-Comment by davidloeffler created at 2008-09-25 15:38:44
+archive/issue_comments_030405.json:
+```json
+{
+    "body": "OK. I'm not keen on downloading and recompiling each new alpha from scratch -- I don't have a fast enough machine for that sort of game -- so perhaps this one will have to wait for 3.1.4; I've changed the status to \"needs work\" to reflect this.\n\n(PS. If there's something analogous to sage -upgrade or hg_sage.pull() that I can use to upgrade my sage to the latest alpha without having to recompile all the libraries that haven't changed since 3.1.2 anyway, then I'd be very interested to hear about it.)",
+    "created_at": "2008-09-25T15:38:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4190",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4190#issuecomment-30405",
+    "user": "davidloeffler"
+}
+```
 
 OK. I'm not keen on downloading and recompiling each new alpha from scratch -- I don't have a fast enough machine for that sort of game -- so perhaps this one will have to wait for 3.1.4; I've changed the status to "needs work" to reflect this.
 
 (PS. If there's something analogous to sage -upgrade or hg_sage.pull() that I can use to upgrade my sage to the latest alpha without having to recompile all the libraries that haven't changed since 3.1.2 anyway, then I'd be very interested to hear about it.)
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-25 16:14:51
+archive/issue_comments_030406.json:
+```json
+{
+    "body": "Replying to [comment:6 davidloeffler]:\n\nHi David,\n\n> OK. I'm not keen on downloading and recompiling each new alpha from scratch -- I don't have a fast enough machine for that sort of game -- so perhaps this one will have to wait for 3.1.4; I've changed the status to \"needs work\" to reflect this.\n\nThere are usually development binaries for sage.math which you just need to unpack on that machine and you are ready to go to do development work in an instant. Ironically there is no 3.1.3.alpha1 binary at the moment since I am valgrinding the release for the next day or so and I cannot bdist since that will impact the running jobs. But there will be an alpha2 binary. If you need a sage.math account just ping me by email.\n\n> (PS. If there's something analogous to sage -upgrade or hg_sage.pull() that I can use to upgrade my sage to the latest alpha without having to recompile all the libraries that haven't changed since 3.1.2 anyway, then I'd be very interested to hear about it.)\n\nThere is no such thing, even as it has been requested a lot. One thing to do is to unpack the new source tarball and to move the new spkgs into $SAGE_ROOT/spkg/standard and then invoke make. That will pretty much do an in place upgrade.\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-25T16:14:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4190",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4190#issuecomment-30406",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:6 davidloeffler]:
 
@@ -122,23 +235,58 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by davidloeffler created at 2008-10-31 15:14:42
+archive/issue_comments_030407.json:
+```json
+{
+    "body": "New patch",
+    "created_at": "2008-10-31T15:14:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4190",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4190#issuecomment-30407",
+    "user": "davidloeffler"
+}
+```
 
 New patch
 
 
+
 ---
+
+archive/issue_comments_030408.json:
+```json
+{
+    "body": "Attachment\n\nI've uploaded a new patch, taking into account the changes to the coercion model, which works under 3.1.4 and 3.2.alpha1.",
+    "created_at": "2008-10-31T22:29:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4190",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4190#issuecomment-30408",
+    "user": "davidloeffler"
+}
+```
 
 Attachment
 
 I've uploaded a new patch, taking into account the changes to the coercion model, which works under 3.1.4 and 3.2.alpha1.
 
 
+
 ---
 
-Comment by cremona created at 2008-11-13 13:58:06
+archive/issue_comments_030409.json:
+```json
+{
+    "body": "Question: is it necessary to have three versions of this?   Would it not be enough to have one and the others would work just by inheritance?\n\nApart from that, I noticed that the doctest has a duplicate line (repeated 3 times!).\n\nI tried to find out what code is run when you say \"a in OK\" but I have absolutely no idea.  I could not find any `__contains__` function which seemed to be relevant.  Does this work via some coercion magic, or by chance, or what have I missed?\n\nThe patch applies fine to 3.2.alpha3.  All tests in number_field/ pass.  You should add this doctest (from the original post):\n\n```\nsage: OK = NumberField(x^2 - x + 2, 'w').ring_of_integers()\nsage: w = OK.ring_generators()[0]\nsage: 1/w in OK\nFalse\n```\n",
+    "created_at": "2008-11-13T13:58:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4190",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4190#issuecomment-30409",
+    "user": "cremona"
+}
+```
 
 Question: is it necessary to have three versions of this?   Would it not be enough to have one and the others would work just by inheritance?
 
@@ -157,9 +305,20 @@ False
 
 
 
+
 ---
 
-Comment by davidloeffler created at 2008-11-13 15:56:25
+archive/issue_comments_030410.json:
+```json
+{
+    "body": "As for the inheritance thing: unfortunately, OrderElement_relative, OrderElement_absolute and OrderElement_quadratic all inherit from the corresponding number field classes, which all have different _ div _ implementations, and multiple inheritance is banned. So there is no one place we can put the method where it will be inherited by everything. Personally I'm not sure I agree on that design decision, but I don't have the skills or the time to reimplement it otherwise. \n\nAs far as I can tell, the \"a in OK\" is calling some very generic code (probably in sage.structure.Parent at a guess) which checks whether or not a.parent() is OK, and if it isn't, attempts to coerce a into OK via OK's __ call __ method, returning False if this fails.\n\nI am in India at the moment and it is late evening local time; I will get to work on improving the doctests tomorrow.",
+    "created_at": "2008-11-13T15:56:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4190",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4190#issuecomment-30410",
+    "user": "davidloeffler"
+}
+```
 
 As for the inheritance thing: unfortunately, OrderElement_relative, OrderElement_absolute and OrderElement_quadratic all inherit from the corresponding number field classes, which all have different _ div _ implementations, and multiple inheritance is banned. So there is no one place we can put the method where it will be inherited by everything. Personally I'm not sure I agree on that design decision, but I don't have the skills or the time to reimplement it otherwise. 
 
@@ -168,9 +327,20 @@ As far as I can tell, the "a in OK" is calling some very generic code (probably 
 I am in India at the moment and it is late evening local time; I will get to work on improving the doctests tomorrow.
 
 
+
 ---
 
-Comment by cremona created at 2008-11-13 16:18:46
+archive/issue_comments_030411.json:
+```json
+{
+    "body": "Replying to [comment:10 davidloeffler]:\n> As for the inheritance thing: unfortunately, OrderElement_relative, OrderElement_absolute and OrderElement_quadratic all inherit from the corresponding number field classes, which all have different _ div _ implementations, and multiple inheritance is banned. So there is no one place we can put the method where it will be inherited by everything. Personally I'm not sure I agree on that design decision, but I don't have the skills or the time to reimplement it otherwise. \n\nOK, too bad.\n\n> \n> As far as I can tell, the \"a in OK\" is calling some very generic code (probably in sage.structure.Parent at a guess) which checks whether or not a.parent() is OK, and if it isn't, attempts to coerce a into OK via OK's __ call __ method, returning False if this fails.\n\nYou are right.  In fact one way to see where this is happening is to try OK(1/a) (where 1/a is not in OK) and see where the TypeError comes from, in this case order.py, in OK's `__call__` function.\n\n> \n> I am in India at the moment and it is late evening local time; I will get to work on improving the doctests tomorrow.\n\nNo hurry.  If you had time to look at #4392, even better!",
+    "created_at": "2008-11-13T16:18:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4190",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4190#issuecomment-30411",
+    "user": "cremona"
+}
+```
 
 Replying to [comment:10 davidloeffler]:
 > As for the inheritance thing: unfortunately, OrderElement_relative, OrderElement_absolute and OrderElement_quadratic all inherit from the corresponding number field classes, which all have different _ div _ implementations, and multiple inheritance is banned. So there is no one place we can put the method where it will be inherited by everything. Personally I'm not sure I agree on that design decision, but I don't have the skills or the time to reimplement it otherwise. 
@@ -188,38 +358,95 @@ You are right.  In fact one way to see where this is happening is to try OK(1/a)
 No hurry.  If you had time to look at #4392, even better!
 
 
+
 ---
 
-Comment by davidloeffler created at 2008-11-14 05:57:32
+archive/issue_comments_030412.json:
+```json
+{
+    "body": "apply after previous patch",
+    "created_at": "2008-11-14T05:57:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4190",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4190#issuecomment-30412",
+    "user": "davidloeffler"
+}
+```
 
 apply after previous patch
 
 
+
 ---
+
+archive/issue_comments_030413.json:
+```json
+{
+    "body": "Attachment\n\nI could only find the duplicate line in one of the doctests, but I've killed it there. I also realised that while my patch fixed the div methods it didn't fix the separate invert methods, so I've added a similar fix to those.",
+    "created_at": "2008-11-14T06:00:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4190",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4190#issuecomment-30413",
+    "user": "davidloeffler"
+}
+```
 
 Attachment
 
 I could only find the duplicate line in one of the doctests, but I've killed it there. I also realised that while my patch fixed the div methods it didn't fix the separate invert methods, so I've added a similar fix to those.
 
 
+
 ---
 
-Comment by cremona created at 2008-11-14 10:15:11
+archive/issue_comments_030414.json:
+```json
+{
+    "body": "OK (!) so there was only one duplicate.  Good to have the `__invert__` functions too.  I successfully applied the second patch on top of the first one, and all tests in number_field pass.\n\nAs far as I can see this is ready to go in.",
+    "created_at": "2008-11-14T10:15:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4190",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4190#issuecomment-30414",
+    "user": "cremona"
+}
+```
 
 OK (!) so there was only one duplicate.  Good to have the `__invert__` functions too.  I successfully applied the second patch on top of the first one, and all tests in number_field pass.
 
 As far as I can see this is ready to go in.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-14 18:48:39
+archive/issue_comments_030415.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-11-14T18:48:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4190",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4190#issuecomment-30415",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-14 18:48:39
+archive/issue_comments_030416.json:
+```json
+{
+    "body": "Megred both patches in Sage 3.2.rc1",
+    "created_at": "2008-11-14T18:48:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4190",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4190#issuecomment-30416",
+    "user": "mabshoff"
+}
+```
 
 Megred both patches in Sage 3.2.rc1

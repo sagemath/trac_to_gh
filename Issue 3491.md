@@ -1,11 +1,21 @@
 # Issue 3491: slightly polish/improve how the cython pyx caching thing works
 
-Issue created by migration from https://trac.sagemath.org/ticket/3491
-
-Original creator: was
-
-Original creation time: 2008-06-22 17:01:28
-
+archive/issues_003491.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nConsider this unpleasant session.\n\n\n```\nsage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/3119/sage-3119-part4.patch')\nAttempting to load remote file: http://trac.sagemath.org/sage_trac/attachment/ticket/3119/sage-3119-part4.patch?format=raw\nLoading: [.]\ncd \"/Users/was/s/devel/sage\" && hg status\ncd \"/Users/was/s/devel/sage\" && hg status\ncd \"/Users/was/s/devel/sage\" && hg import   \"/Users/was/.sage/temp/teragon_2.local/2582/tmp_3.patch\"\napplying /Users/was/.sage/temp/teragon_2.local/2582/tmp_3.patch\nsage: \nExiting SAGE (CPU time 0m0.27s, Wall time 0m44.10s).\nteragon-2:~ was$ sage -br\n\n----------------------------------------------------------\nsage: Building and installing modified SAGE library files.\n\n\nInstalling c_lib\nscons: `install' is up to date.\nrunning install\nrunning build\nrunning build_py\ncopying sage/libs/mwrank/interface.py -> build/lib.macosx-10.3-i386-2.5/sage/libs/mwrank\ncopying sage/schemes/elliptic_curves/ell_rational_field.py -> build/lib.macosx-10.3-i386-2.5/sage/schemes/elliptic_curves\nrunning build_ext\nbuilding 'sage.libs.mwrank.mwrank' extension\nerror: unknown file type '.pyx' (from 'sage/libs/mwrank/mwrank.pyx')\nsage: There was an error installing modified sage library code.\n\nteragon-2:~ was$ touch ~/d/sage/sage/libs/mwrank/mwrank.pyx\nteragon-2:~ was$ sage -br\n\n----------------------------------------------------------\nsage: Building and installing modified SAGE library files.\n\n\nInstalling c_lib\nscons: `install' is up to date.\nUpdating Cython code....\nsage/libs/mwrank/mwrank.pyx --> /Users/was/s/local//lib/python/site-packages//sage/libs/mwrank/mwrank.pyx\n\nBuilding sage/libs/mwrank/mwrank.c because it depends on sage/libs/mwrank/mwrank.pyx.\npython2.5 `which cython` --embed-positions --incref-local-binop -I/Users/was/s/devel/sage-review -o sage/libs/mwrank/mwrank.c sage/libs/mwrank/mwrank.pyx\nFinished updating Cython code (time = 5.777133 seconds)\n\n```\n\n\nSo applying a patch introduced a .pyx file but the cache doesn't notice it because\nit is new.  This is a big problem.   Maybe including the latest something from the\n.hg directory in the cython .pyx hash that is computed in setup.py would very nicely\nfix this. \n\nWilliam\n\nIssue created by migration from https://trac.sagemath.org/ticket/3491\n\n",
+    "created_at": "2008-06-22T17:01:28Z",
+    "labels": [
+        "build",
+        "major",
+        "bug"
+    ],
+    "title": "slightly polish/improve how the cython pyx caching thing works",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3491",
+    "user": "was"
+}
+```
 Assignee: mabshoff
 
 Consider this unpleasant session.
@@ -65,17 +75,43 @@ fix this.
 
 William
 
+Issue created by migration from https://trac.sagemath.org/ticket/3491
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-08-14 22:49:01
+archive/issue_comments_024591.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2008-08-14T22:49:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3491",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3491#issuecomment-24591",
+    "user": "mabshoff"
+}
+```
 
 Resolution: duplicate
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-14 22:49:01
+archive/issue_comments_024592.json:
+```json
+{
+    "body": "This is a dupe of #3310.\n\nCheers,\n\nMichael",
+    "created_at": "2008-08-14T22:49:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3491",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3491#issuecomment-24592",
+    "user": "mabshoff"
+}
+```
 
 This is a dupe of #3310.
 

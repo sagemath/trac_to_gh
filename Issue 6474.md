@@ -1,11 +1,21 @@
 # Issue 6474: PDF version of the reference manual should build successfully
 
-Issue created by migration from https://trac.sagemath.org/ticket/6474
-
-Original creator: mvngu
-
-Original creation time: 2009-07-07 14:34:43
-
+archive/issues_006474.json:
+```json
+{
+    "body": "Assignee: tba\n\nKeywords: reference manual\n\nIt seems that in Sage 4.0.1.rc0, there is an error when I tried building the PDF version of the reference manual. The problem was reported on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/cae6eae2efb898b5). Here's a relevant snippet of the error log:\n\n```\n! Package inputenc Error: Keyboard character used is undefined\n(inputenc)                in inputencoding `utf8'.\n\nSee the inputenc package documentation for explanation.\nType  H <return>  for immediate help.\n ...                                              \n                                                  \nl.64903 ...sto y[]`.  {^^Hf Bold face}.]@PYGaB['])\n                                                  \n? x\n```\n\nIf you're interested, the complete LaTeX log is here:\n\nhttp://sage.math.washington.edu/home/mvngu/doc/reference.log\n\nI think this should be fixed before releasing the final version of Sage 4.1.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6474\n\n",
+    "created_at": "2009-07-07T14:34:43Z",
+    "labels": [
+        "documentation",
+        "blocker",
+        "bug"
+    ],
+    "title": "PDF version of the reference manual should build successfully",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6474",
+    "user": "mvngu"
+}
+```
 Assignee: tba
 
 Keywords: reference manual
@@ -31,47 +41,119 @@ http://sage.math.washington.edu/home/mvngu/doc/reference.log
 
 I think this should be fixed before releasing the final version of Sage 4.1.
 
+Issue created by migration from https://trac.sagemath.org/ticket/6474
+
+
+
+
 
 ---
 
-Comment by jhpalmieri created at 2009-07-07 14:59:01
+archive/issue_comments_052331.json:
+```json
+{
+    "body": "Changing assignee from tba to jhpalmieri.",
+    "created_at": "2009-07-07T14:59:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6474",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6474#issuecomment-52331",
+    "user": "jhpalmieri"
+}
+```
 
 Changing assignee from tba to jhpalmieri.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-07-07 14:59:01
+archive/issue_comments_052332.json:
+```json
+{
+    "body": "I think this patch fixes it.",
+    "created_at": "2009-07-07T14:59:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6474",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6474#issuecomment-52332",
+    "user": "jhpalmieri"
+}
+```
 
 I think this patch fixes it.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-07-07 14:59:01
+archive/issue_comments_052333.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-07-07T14:59:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6474",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6474#issuecomment-52333",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
+
+archive/issue_comments_052334.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-07-07T14:59:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6474",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6474#issuecomment-52334",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mvngu created at 2009-07-07 16:06:06
+archive/issue_comments_052335.json:
+```json
+{
+    "body": "Here's how I went about testing the patch `trac_6474_pdf.patch`:\n1. Take a copy of the compressed sage.math only binary for Sage 4.1.rc0, uncompressed it, started up Sage, quit Sage, and then do `./sage -b main`.\n2. Built the HTML version of the reference manual for the main repository.\n3. Made a fresh clone of the main repository and built the HTML version of the reference manual for that cloned repository.\n4. Applied the patch `trac_6474_pdf.patch` to the cloned repository and rebuilt the HTML version of the reference manual.\n5. Finally, I built the PDF version of the reference manual. And it built successfully.",
+    "created_at": "2009-07-07T16:06:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6474",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6474#issuecomment-52335",
+    "user": "mvngu"
+}
+```
 
 Here's how I went about testing the patch `trac_6474_pdf.patch`:
- 1. Take a copy of the compressed sage.math only binary for Sage 4.1.rc0, uncompressed it, started up Sage, quit Sage, and then do `./sage -b main`.
- 1. Built the HTML version of the reference manual for the main repository.
- 1. Made a fresh clone of the main repository and built the HTML version of the reference manual for that cloned repository.
- 1. Applied the patch `trac_6474_pdf.patch` to the cloned repository and rebuilt the HTML version of the reference manual.
- 1. Finally, I built the PDF version of the reference manual. And it built successfully.
+1. Take a copy of the compressed sage.math only binary for Sage 4.1.rc0, uncompressed it, started up Sage, quit Sage, and then do `./sage -b main`.
+2. Built the HTML version of the reference manual for the main repository.
+3. Made a fresh clone of the main repository and built the HTML version of the reference manual for that cloned repository.
+4. Applied the patch `trac_6474_pdf.patch` to the cloned repository and rebuilt the HTML version of the reference manual.
+5. Finally, I built the PDF version of the reference manual. And it built successfully.
+
 
 
 ---
 
-Comment by rlm created at 2009-07-07 20:01:13
+archive/issue_comments_052336.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-07-07T20:01:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6474",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6474#issuecomment-52336",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed

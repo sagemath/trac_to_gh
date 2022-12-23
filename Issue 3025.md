@@ -1,11 +1,21 @@
 # Issue 3025: Sparse vector spaces don't cast on assignment.
 
-Issue created by migration from https://trac.sagemath.org/ticket/3025
-
-Original creator: boothby
-
-Original creation time: 2008-04-25 20:57:56
-
+archive/issues_003025.json:
+```json
+{
+    "body": "Assignee: was\n\n\n```\nsage: V = VectorSpace(GF(2),10, sparse=True)\nsage: w = V(0)\nsage: w[0] = 2\nsage: print w[0]\n2\nsage: print type(w[0])\n<type 'sage.rings.integer.Integer'>\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3025\n\n",
+    "created_at": "2008-04-25T20:57:56Z",
+    "labels": [
+        "linear algebra",
+        "major",
+        "bug"
+    ],
+    "title": "Sparse vector spaces don't cast on assignment.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3025",
+    "user": "boothby"
+}
+```
 Assignee: was
 
 
@@ -21,30 +31,80 @@ sage: print type(w[0])
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3025
+
+
+
+
 
 ---
+
+archive/issue_comments_020801.json:
+```json
+{
+    "body": "Attachment\n\nthis fixes the bug!",
+    "created_at": "2008-04-25T21:18:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3025",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3025#issuecomment-20801",
+    "user": "was"
+}
+```
 
 Attachment
 
 this fixes the bug!
 
 
+
 ---
 
-Comment by boothby created at 2008-04-25 21:23:56
+archive/issue_comments_020802.json:
+```json
+{
+    "body": "works for me",
+    "created_at": "2008-04-25T21:23:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3025",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3025#issuecomment-20802",
+    "user": "boothby"
+}
+```
 
 works for me
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-25 23:32:07
+archive/issue_comments_020803.json:
+```json
+{
+    "body": "Merged in Sage 3.0.1.alpha0",
+    "created_at": "2008-04-25T23:32:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3025",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3025#issuecomment-20803",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.1.alpha0
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-25 23:32:07
+archive/issue_comments_020804.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-04-25T23:32:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3025",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3025#issuecomment-20804",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

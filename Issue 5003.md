@@ -1,26 +1,64 @@
 # Issue 5003: [with patch, needs review] equality testing in graphs should check "weighted" property
 
-Issue created by migration from https://trac.sagemath.org/ticket/5003
-
-Original creator: rlm
-
-Original creation time: 2009-01-17 19:53:07
-
+archive/issues_005003.json:
+```json
+{
+    "body": "Assignee: rlm\n\nSee:\n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/d01dd8082da28d52?hl=en\n\nIssue created by migration from https://trac.sagemath.org/ticket/5003\n\n",
+    "created_at": "2009-01-17T19:53:07Z",
+    "labels": [
+        "graph theory",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch, needs review] equality testing in graphs should check \"weighted\" property",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5003",
+    "user": "rlm"
+}
+```
 Assignee: rlm
 
 See:
 
 http://groups.google.com/group/sage-support/browse_thread/thread/d01dd8082da28d52?hl=en
 
+Issue created by migration from https://trac.sagemath.org/ticket/5003
+
+
+
+
 
 ---
+
+archive/issue_comments_038162.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-01-17T19:53:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5003",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5003#issuecomment-38162",
+    "user": "rlm"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by shumow created at 2009-01-24 11:25:31
+archive/issue_comments_038163.json:
+```json
+{
+    "body": "Hey, I ran into some doctest failures w/ your new change.\n\nSpecifically, around line 839 (in the docstring for weighted_ajacency_matrix(...)):\n\n\n\n```\n        EXAMPLES:\n            sage: G = Graph(sparse=True)\n            sage: G.add_edges([(0,1,1),(1,2,2),(0,2,3),(0,3,4)])\n            sage: M = G.weighted_adjacency_matrix(); M\n            [0 1 3 4]\n            [1 0 2 0]\n            [3 2 0 0]\n            [4 0 0 0]\n            sage: H = Graph(data=M, format='weighted_adjacency_matrix', sparse=True)\n            sage: H == G\n            True\n```\n\n\nThis fails.  Specifically, G.weighted() returns false (which seems like its own bug.)\n\nAnd Also, the example starting at line 1180 (in the docstring for weighted(...):\n\n\n```\n        EXAMPLE:\n        Here we have two graphs with different labels, but weighted is False\n        for both, so we just check for the presence of edges:\n            sage: G = Graph({0:{1:'a'}}, implementation='networkx')\n            sage: H = Graph({0:{1:'b'}}, implementation='networkx')\n            sage: G == H\n            True\n\n        Now one is weighted and the other is not, so the comparison is done as\n        if neither is weighted:\n            sage: G.weighted(True)\n            sage: H.weighted()\n            False\n            sage: G == H\n            True\n\n```\n\n\nFails.  Because of the change.\n\nThe first of these issues, is a bug and should be fixed IMHO.  The second issue is more subtle and disturbing.  Particularly because it indicates that a valid example used to work, you will be breaking compatibility with code that works this way, and you should think about what the previous assumptions were, and if you can work around them with a fix.",
+    "created_at": "2009-01-24T11:25:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5003",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5003#issuecomment-38163",
+    "user": "shumow"
+}
+```
 
 Hey, I ran into some doctest failures w/ your new change.
 
@@ -73,9 +111,20 @@ Fails.  Because of the change.
 The first of these issues, is a bug and should be fixed IMHO.  The second issue is more subtle and disturbing.  Particularly because it indicates that a valid example used to work, you will be breaking compatibility with code that works this way, and you should think about what the previous assumptions were, and if you can work around them with a fix.
 
 
+
 ---
 
-Comment by rlm created at 2009-01-24 12:57:12
+archive/issue_comments_038164.json:
+```json
+{
+    "body": "Replying to [comment:1 shumow]:\n> This fails.  Specifically, G.weighted() returns false (which seems like its own bug.)\n\nNot so much a bug, as a typo in the doctest. If you don't say G is weighted, then just adding edges with weights shouldn't change that. In fact, that's the point of the other doctest.\n\n> And Also, the example starting at line 1180 (in the docstring for weighted(...):\n> \n...\n> \n> Fails.  Because of the change.\n> \n> The second issue is more subtle and disturbing.  Particularly because it indicates that a valid example used to work, you will be breaking compatibility with code that works this way, and you should think about what the previous assumptions were, and if you can work around them with a fix.\n\nWell, it's more like we're updating things to actually do it correctly. Before, weighted wasn't a property of graphs, and that test was kind of a warning about that. I don't know of any code that would be affected by this, but I think this is the right way to do things.",
+    "created_at": "2009-01-24T12:57:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5003",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5003#issuecomment-38164",
+    "user": "rlm"
+}
+```
 
 Replying to [comment:1 shumow]:
 > This fails.  Specifically, G.weighted() returns false (which seems like its own bug.)
@@ -93,30 +142,76 @@ Not so much a bug, as a typo in the doctest. If you don't say G is weighted, the
 Well, it's more like we're updating things to actually do it correctly. Before, weighted wasn't a property of graphs, and that test was kind of a warning about that. I don't know of any code that would be affected by this, but I think this is the right way to do things.
 
 
+
 ---
 
-Comment by rlm created at 2009-01-24 12:57:30
+archive/issue_comments_038165.json:
+```json
+{
+    "body": "Apply this patch second.",
+    "created_at": "2009-01-24T12:57:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5003",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5003#issuecomment-38165",
+    "user": "rlm"
+}
+```
 
 Apply this patch second.
 
 
+
 ---
+
+archive/issue_comments_038166.json:
+```json
+{
+    "body": "Attachment\n\nLooks good to me.",
+    "created_at": "2009-01-24T15:25:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5003",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5003#issuecomment-38166",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 Looks good to me.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-24 23:00:55
+archive/issue_comments_038167.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-01-24T23:00:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5003",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5003#issuecomment-38167",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-24 23:00:55
+archive/issue_comments_038168.json:
+```json
+{
+    "body": "Merged in Sage 3.3.alpha2.\n\nCheers,\n\nMichael",
+    "created_at": "2009-01-24T23:00:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5003",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5003#issuecomment-38168",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.3.alpha2.
 

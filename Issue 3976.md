@@ -1,49 +1,135 @@
 # Issue 3976: [with patch, needs review] improve doctests to expect.py, maxima.py, and lie.py
 
-Issue created by migration from https://trac.sagemath.org/ticket/3976
-
-Original creator: mhansen
-
-Original creation time: 2008-08-28 19:39:29
-
+archive/issues_003976.json:
+```json
+{
+    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3976\n\n",
+    "created_at": "2008-08-28T19:39:29Z",
+    "labels": [
+        "interfaces",
+        "minor",
+        "bug"
+    ],
+    "title": "[with patch, needs review] improve doctests to expect.py, maxima.py, and lie.py",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3976",
+    "user": "mhansen"
+}
+```
 Assignee: was
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3976
+
+
+
+
 
 ---
+
+archive/issue_comments_028565.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-08-28T19:39:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3976",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3976#issuecomment-28565",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by rlm created at 2008-08-28 22:06:24
+archive/issue_comments_028566.json:
+```json
+{
+    "body": "After discussion with mhansen, we decided it would be better to use `os.popen` instead of `os.system`, in order to remove many `#not tested` bits.",
+    "created_at": "2008-08-28T22:06:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3976",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3976#issuecomment-28566",
+    "user": "rlm"
+}
+```
 
 After discussion with mhansen, we decided it would be better to use `os.popen` instead of `os.system`, in order to remove many `#not tested` bits.
 
 
+
 ---
+
+archive/issue_comments_028567.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-08-28T22:51:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3976",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3976#issuecomment-28567",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_028568.json:
+```json
+{
+    "body": "Attachment\n\nThe patches apply cleanly (with some light fuzz for the first patch), and pass all tests. Apply this.",
+    "created_at": "2008-08-28T22:55:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3976",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3976#issuecomment-28568",
+    "user": "rlm"
+}
+```
 
 Attachment
 
 The patches apply cleanly (with some light fuzz for the first patch), and pass all tests. Apply this.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-28 22:57:14
+archive/issue_comments_028569.json:
+```json
+{
+    "body": "Merged all three patches in Sage 3.1.2.alpha2",
+    "created_at": "2008-08-28T22:57:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3976",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3976#issuecomment-28569",
+    "user": "mabshoff"
+}
+```
 
 Merged all three patches in Sage 3.1.2.alpha2
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-28 22:57:14
+archive/issue_comments_028570.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-08-28T22:57:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3976",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3976#issuecomment-28570",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

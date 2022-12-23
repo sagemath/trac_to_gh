@@ -1,11 +1,21 @@
 # Issue 9416: elliptic curve E.__call__ is not fully equivalent to E.point, specifically for check flag
 
-Issue created by migration from https://trac.sagemath.org/ticket/9416
-
-Original creator: rkirov
-
-Original creation time: 2010-07-03 03:00:44
-
+archive/issues_009416.json:
+```json
+{
+    "body": "Assignee: AlexGhitza\n\nFor example, the flag check=False can only be used with E.point()\n\n\n```\nsage: emb = K2.places()[0]\nsage: E_complex = EllipticCurve(CC,map(emb, E2point.a_invariants()))\nsage: P = L2[-1]\nsage: print 'Exact arithmetic:', P in E2\nExact arithmetic: True\nsage: P_complex = map(emb,P)\nsage: E_complex(P_complex, check=False)\nTypeError: __call__() got an unexpected keyword argument 'check'\n\nsage: E_complex.point(P_complex, check=False)\n(-10.0000000000000 + 5.65685424949238*I : 28.0000000000000 + 25.4558441227157*I : 1.00000000000000)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9416\n\n",
+    "created_at": "2010-07-03T03:00:44Z",
+    "labels": [
+        "algebra",
+        "major",
+        "bug"
+    ],
+    "title": "elliptic curve E.__call__ is not fully equivalent to E.point, specifically for check flag",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9416",
+    "user": "rkirov"
+}
+```
 Assignee: AlexGhitza
 
 For example, the flag check=False can only be used with E.point()
@@ -26,23 +36,60 @@ sage: E_complex.point(P_complex, check=False)
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/9416
+
+
+
+
 
 ---
 
-Comment by rkirov created at 2010-07-03 03:01:05
+archive/issue_comments_089744.json:
+```json
+{
+    "body": "Changing assignee from AlexGhitza to cremona.",
+    "created_at": "2010-07-03T03:01:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9416",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9416#issuecomment-89744",
+    "user": "rkirov"
+}
+```
 
 Changing assignee from AlexGhitza to cremona.
 
 
+
 ---
 
-Comment by rkirov created at 2010-07-03 03:01:05
+archive/issue_comments_089745.json:
+```json
+{
+    "body": "Changing component from algebra to elliptic curves.",
+    "created_at": "2010-07-03T03:01:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9416",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9416#issuecomment-89745",
+    "user": "rkirov"
+}
+```
 
 Changing component from algebra to elliptic curves.
 
 
+
 ---
 
-Comment by rkirov created at 2010-07-03 03:01:32
+archive/issue_comments_089746.json:
+```json
+{
+    "body": "Changing priority from major to minor.",
+    "created_at": "2010-07-03T03:01:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9416",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9416#issuecomment-89746",
+    "user": "rkirov"
+}
+```
 
 Changing priority from major to minor.

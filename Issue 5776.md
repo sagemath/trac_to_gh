@@ -1,16 +1,26 @@
 # Issue 5776: sage-location ought to rewrite loads of files in $SAGE_LOCAL/bin
 
-Issue created by migration from https://trac.sagemath.org/ticket/5776
-
-Original creator: mabshoff
-
-Original creation time: 2009-04-13 07:55:44
-
+archive/issues_005776.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nCC:  leif\n\nThe following is from a 3.4.1.rc3 build that was -bdisted from 3.4.1.rc2. There are **loads** of files that still have 3.4.1.rc2 in various config files:\n\n```\nmabshoff@sage:/scratch/mabshoff/sage-3.4.1.rc3/local/bin$ grep -r \"sage-3.4.1.rc2\" *  | grep --invert-match Binary\nfreetype-config:prefix=/scratch/mabshoff/sage-3.4.1.rc2/local\nfreetype-config:    major=`grep define /scratch/mabshoff/sage-3.4.1.rc2/local/include/freetype2/freetype/freetype.h \\\nfreetype-config:    minor=`grep define /scratch/mabshoff/sage-3.4.1.rc2/local/include/freetype2/freetype/freetype.h \\\nfreetype-config:    patch=`grep define /scratch/mabshoff/sage-3.4.1.rc2/local/include/freetype2/freetype/freetype.h \\\ngdlib-config:prefix=/scratch/mabshoff/sage-3.4.1.rc2/local\ngdlib-config:\techo  -L/scratch/mabshoff/sage-3.4.1.rc2/local/lib -Wl,--rpath -Wl,/scratch/mabshoff/sage-3.4.1.rc2/local/lib  -L/scratch/mabshoff/sage-3.4.1.rc2/local/lib \ngdlib-config:\techo \"ldflags:     -L/scratch/mabshoff/sage-3.4.1.rc2/local/lib -Wl,--rpath -Wl,/scratch/mabshoff/sage-3.4.1.rc2/local/lib  -L/scratch/mabshoff/sage-3.4.1.rc2/local/lib \"\nghmm-config:prefix=/scratch/mabshoff/sage-3.4.1.rc2/local\ngivaro-config:prefix=/scratch/mabshoff/sage-3.4.1.rc2/local\ngivaro-config:       \techo -I${includedir} -I/scratch/mabshoff/sage-3.4.1.rc2/local//include\ngivaro-config:       \techo -L${libdir} -lgivaro -L/scratch/mabshoff/sage-3.4.1.rc2/local//lib -lgmp \ngivaro-makefile:prefix=/scratch/mabshoff/sage-3.4.1.rc2/local\ngivaro-makefile:OPTFLAGS = -I/scratch/mabshoff/sage-3.4.1.rc2/local//include  -fPIC -I\"/scratch/mabshoff/sage-3.4.1.rc2/local/include\"\ngivaro-makefile:GMP_CFLAGS = -I/scratch/mabshoff/sage-3.4.1.rc2/local//include\ngivaro-makefile:GMP_LIBS   = -L/scratch/mabshoff/sage-3.4.1.rc2/local//lib -lgmp\ngpg-error-config:prefix=/scratch/mabshoff/sage-3.4.1.rc2/local\ngphelp:$datadir= \"/scratch/mabshoff/sage-3.4.1.rc2/local/share/pari\";\ngsl-config:prefix=/scratch/mabshoff/sage-3.4.1.rc2/local\nlibgcrypt-config:prefix=\"/scratch/mabshoff/sage-3.4.1.rc2/local\"\nlibgcrypt-config:gpg_error_libs=\"-L/scratch/mabshoff/sage-3.4.1.rc2/local/lib -lgpg-error\"\nlibgcrypt-config:gpg_error_cflags=\"-I/scratch/mabshoff/sage-3.4.1.rc2/local/include\"\nlibgnutls-config:prefix=/scratch/mabshoff/sage-3.4.1.rc2/local\nlibgnutls-config:gnutls_libs=\"-L${exec_prefix}/lib -lgnutls  -L/scratch/mabshoff/sage-3.4.1.rc2/local/lib -lgcrypt -lgpg-error \"\nlibgnutls-config:gnutls_cflags=\"-I/scratch/mabshoff/sage-3.4.1.rc2/local/include  -I${prefix}/include\"\nlibgnutls-extra-config:prefix=/scratch/mabshoff/sage-3.4.1.rc2/local\nlibgnutls-extra-config:gnutls_libs=\"-L${exec_prefix}/lib -lgnutls-extra -L/scratch/mabshoff/sage-3.4.1.rc2/local/lib -lopencdk -L/scratch/mabshoff/sage-3.4.1.rc2/local/lib -lgcrypt -L/scratch/mabshoff/sage-3.4.1.rc2/local/lib -lgpg-error -L/scratch/mabshoff/sage-3.4.1.rc2/local/lib -lz -R/scratch/mabshoff/sage-3.4.1.rc2/local/lib  -L${exec_prefix}/lib -lgnutls  -L/scratch/mabshoff/sage-3.4.1.rc2/local/lib -lgcrypt -lgpg-error \"\nlibgnutls-extra-config:gnutls_cflags=\"-I/scratch/mabshoff/sage-3.4.1.rc2/local/include -I${prefix}/include\"\nlibpng12-config:prefix=\"/scratch/mabshoff/sage-3.4.1.rc2/local\"\nlibpng-config:prefix=\"/scratch/mabshoff/sage-3.4.1.rc2/local\"\nlinbox-config:prefix=/scratch/mabshoff/sage-3.4.1.rc2/local\nlinbox-config:       \techo -I${includedir} -I/scratch/mabshoff/sage-3.4.1.rc2/local/include -I/scratch/mabshoff/sage-3.4.1.rc2/local/include -I/scratch/mabshoff/sage-3.4.1.rc2/local/include   \nlinbox-config:       \techo -L${libdir} -llinbox   -L/scratch/mabshoff/sage-3.4.1.rc2/local/lib -lntl -L/scratch/mabshoff/sage-3.4.1.rc2/local/lib -lgivaro  -L/scratch/mabshoff/sage-3.4.1.rc2/local/lib -lgmpxx -lgmp -lcblas -latlas\nmaxima:  prefix=`unixize \"/scratch/mabshoff/sage-3.4.1.rc2/local\"`\nmaxima:  top_srcdir=`unixize \"/scratch/mabshoff/sage-3.4.1.rc2/spkg/build/maxima-5.16.3/src\"`\nopencdk-config:prefix=/scratch/mabshoff/sage-3.4.1.rc2/local\nopencdk-config:opencdk_libs=\"-L${exec_prefix}/lib -lopencdk -L/scratch/mabshoff/sage-3.4.1.rc2/local/lib -lgcrypt -lgpg-error  -lz\"\nopencdk-config:opencdk_cflags=\"-I/scratch/mabshoff/sage-3.4.1.rc2/local/include -I${prefix}/include\"\nqd-config:prefix=\"/scratch/mabshoff/sage-3.4.1.rc2/local\"\nqd-config:srcdir=\"/scratch/mabshoff/sage-3.4.1.rc2/spkg/build/quaddouble-2.2.p9/src\"\nqd-config:builddir=\"/scratch/mabshoff/sage-3.4.1.rc2/spkg/build/quaddouble-2.2.p9/src\"\nqd-config:configure_args=\" '--prefix=/scratch/mabshoff/sage-3.4.1.rc2/local' '--enable-fortran=no' 'CXX=g++' 'CXXFLAGS=-fPIC -O3 -Dx86' 'LDFLAGS=' 'CC=gcc'\"\nR:R_HOME_DIR=/scratch/mabshoff/sage-3.4.1.rc2/local/lib/R\nR:#R_HOME_DIR=/scratch/mabshoff/sage-3.4.1.rc2/local/lib/R\nR:R_SHARE_DIR=/scratch/mabshoff/sage-3.4.1.rc2/local/lib/R/share\nR:R_INCLUDE_DIR=/scratch/mabshoff/sage-3.4.1.rc2/local/lib/R/include\nR:R_DOC_DIR=/scratch/mabshoff/sage-3.4.1.rc2/local/lib/R/doc\nrmaxima:  MAXIMA_SHAREDIR=/scratch/mabshoff/sage-3.4.1.rc2/local/share/maxima/5.16.3/share\nrmaxima:  MAXIMA_SHAREDIR=/scratch/mabshoff/sage-3.4.1.rc2/spkg/build/maxima-5.16.3/src/share\nxmaxima:set autoconf(prefix) \"/scratch/mabshoff/sage-3.4.1.rc2/local\"\nxmaxima:set autoconf(exec_prefix) \"/scratch/mabshoff/sage-3.4.1.rc2/local\"\nxmaxima:set autoconf(libdir) \"/scratch/mabshoff/sage-3.4.1.rc2/local/lib\"\nxmaxima:set autoconf(libexecdir) \"/scratch/mabshoff/sage-3.4.1.rc2/local/libexec\"\nxmaxima:set autoconf(datadir) \"/scratch/mabshoff/sage-3.4.1.rc2/local/share\"\nxmaxima:set autoconf(infodir) \"/scratch/mabshoff/sage-3.4.1.rc2/local/info\"\n```\n\n\nThis causes loads of odd bugs when installing/upgrading from a bdist build, i.e. the location to R_HOME is hardcoded which might be involved with #5246 and #5634.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5776\n\n",
+    "created_at": "2009-04-13T07:55:44Z",
+    "labels": [
+        "distribution",
+        "blocker",
+        "bug"
+    ],
+    "title": "sage-location ought to rewrite loads of files in $SAGE_LOCAL/bin",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5776",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 CC:  leif
 
-The following is from a 3.4.1.rc3 build that was -bdisted from 3.4.1.rc2. There are *loads* of files that still have 3.4.1.rc2 in various config files:
+The following is from a 3.4.1.rc3 build that was -bdisted from 3.4.1.rc2. There are **loads** of files that still have 3.4.1.rc2 in various config files:
 
 ```
 mabshoff@sage:/scratch/mabshoff/sage-3.4.1.rc3/local/bin$ grep -r "sage-3.4.1.rc2" *  | grep --invert-match Binary
@@ -77,81 +87,206 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/5776
+
+
+
+
 
 ---
 
-Comment by was created at 2009-06-15 23:24:56
+archive/issue_comments_045165.json:
+```json
+{
+    "body": "If we've released for months and months without fixing this, it doesn't make sense to keep it as a blocker.",
+    "created_at": "2009-06-15T23:24:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5776",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5776#issuecomment-45165",
+    "user": "was"
+}
+```
 
 If we've released for months and months without fixing this, it doesn't make sense to keep it as a blocker.
 
 
+
 ---
 
-Comment by was created at 2009-06-15 23:24:56
+archive/issue_comments_045166.json:
+```json
+{
+    "body": "Changing priority from blocker to critical.",
+    "created_at": "2009-06-15T23:24:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5776",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5776#issuecomment-45166",
+    "user": "was"
+}
+```
 
 Changing priority from blocker to critical.
 
 
+
 ---
 
-Comment by jason created at 2010-06-11 06:41:16
+archive/issue_comments_045167.json:
+```json
+{
+    "body": "See #9210 for a rewrite of sage-location that takes care of resetting pkg-config files.",
+    "created_at": "2010-06-11T06:41:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5776",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5776#issuecomment-45167",
+    "user": "jason"
+}
+```
 
 See #9210 for a rewrite of sage-location that takes care of resetting pkg-config files.
 
 
+
 ---
 
-Comment by jason created at 2010-06-11 19:34:21
+archive/issue_comments_045168.json:
+```json
+{
+    "body": "See http://blogs.sun.com/dipol/entry/dynamic_libraries_rpath_and_mac for some suggestions on how to make things relocateable.",
+    "created_at": "2010-06-11T19:34:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5776",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5776#issuecomment-45168",
+    "user": "jason"
+}
+```
 
 See http://blogs.sun.com/dipol/entry/dynamic_libraries_rpath_and_mac for some suggestions on how to make things relocateable.
 
 
+
 ---
 
-Comment by leif created at 2010-10-20 12:44:17
+archive/issue_comments_045169.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"relocation move moving SAGE_ROOT\".",
+    "created_at": "2010-10-20T12:44:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5776",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5776#issuecomment-45169",
+    "user": "leif"
+}
+```
 
 Changing keywords from "" to "relocation move moving SAGE_ROOT".
 
 
+
 ---
 
-Comment by leif created at 2010-10-20 12:44:17
+archive/issue_comments_045170.json:
+```json
+{
+    "body": "Remove assignee mabshoff.",
+    "created_at": "2010-10-20T12:44:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5776",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5776#issuecomment-45170",
+    "user": "leif"
+}
+```
 
 Remove assignee mabshoff.
 
 
+
 ---
 
-Comment by kcrisman created at 2011-06-21 14:51:13
+archive/issue_comments_045171.json:
+```json
+{
+    "body": "Is this ticket still necessary?  It might be helpful to break this into tickets by spkg or something.\n\nR is already probably on the docket - se #8274 and #10967, for instance.",
+    "created_at": "2011-06-21T14:51:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5776",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5776#issuecomment-45171",
+    "user": "kcrisman"
+}
+```
 
 Is this ticket still necessary?  It might be helpful to break this into tickets by spkg or something.
 
 R is already probably on the docket - se #8274 and #10967, for instance.
 
 
+
 ---
 
-Comment by jdemeyer created at 2016-04-11 09:29:34
+archive/issue_comments_045172.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2016-04-11T09:29:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5776",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5776#issuecomment-45172",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2016-04-11 09:29:34
+archive/issue_comments_045173.json:
+```json
+{
+    "body": "`sage-location` is obsolete",
+    "created_at": "2016-04-11T09:29:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5776",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5776#issuecomment-45173",
+    "user": "jdemeyer"
+}
+```
 
 `sage-location` is obsolete
 
 
+
 ---
 
-Comment by jdemeyer created at 2016-04-11 09:29:38
+archive/issue_comments_045174.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2016-04-11T09:29:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5776",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5776#issuecomment-45174",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by vbraun created at 2016-06-12 12:02:30
+archive/issue_comments_045175.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2016-06-12T12:02:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5776",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5776#issuecomment-45175",
+    "user": "vbraun"
+}
+```
 
 Resolution: fixed

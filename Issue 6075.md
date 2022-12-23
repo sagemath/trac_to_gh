@@ -1,11 +1,21 @@
 # Issue 6075: dsage is not yet entirely optional
 
-Issue created by migration from https://trac.sagemath.org/ticket/6075
-
-Original creator: ncalexan
-
-Original creation time: 2009-05-18 21:02:20
-
+archive/issues_006075.json:
+```json
+{
+    "body": "Assignee: yi\n\nCC:  craigcitro\n\nKeywords: dsage optional spkg\n\nFor 4.0, dsage was made an optional spkg.  However, if I rm -rf build/ and sage -ba, the newly built tree has no dsage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6075\n\n",
+    "created_at": "2009-05-18T21:02:20Z",
+    "labels": [
+        "dsage",
+        "blocker",
+        "bug"
+    ],
+    "title": "dsage is not yet entirely optional",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6075",
+    "user": "ncalexan"
+}
+```
 Assignee: yi
 
 CC:  craigcitro
@@ -14,56 +24,150 @@ Keywords: dsage optional spkg
 
 For 4.0, dsage was made an optional spkg.  However, if I rm -rf build/ and sage -ba, the newly built tree has no dsage.
 
+Issue created by migration from https://trac.sagemath.org/ticket/6075
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2009-05-26 20:49:25
+archive/issue_comments_048356.json:
+```json
+{
+    "body": "Changing assignee from yi to mhansen.",
+    "created_at": "2009-05-26T20:49:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6075",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6075#issuecomment-48356",
+    "user": "mhansen"
+}
+```
 
 Changing assignee from yi to mhansen.
 
 
+
 ---
 
-Comment by mhansen created at 2009-05-26 20:49:25
+archive/issue_comments_048357.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-05-26T20:49:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6075",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6075#issuecomment-48357",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mhansen created at 2009-05-26 20:49:25
+archive/issue_comments_048358.json:
+```json
+{
+    "body": "I've added a patch that makes things continue to work if dsage is not there.  However, we really should make it so that dsage does not install into sage.dsage.  This requires quite a few more changes within dsage itself.",
+    "created_at": "2009-05-26T20:49:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6075",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6075#issuecomment-48358",
+    "user": "mhansen"
+}
+```
 
 I've added a patch that makes things continue to work if dsage is not there.  However, we really should make it so that dsage does not install into sage.dsage.  This requires quite a few more changes within dsage itself.
 
 
+
 ---
+
+archive/issue_comments_048359.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-05-28T02:44:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6075",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6075#issuecomment-48359",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2009-05-28 02:47:15
+archive/issue_comments_048360.json:
+```json
+{
+    "body": "I updated the patch and made http://sage.math.washington.edu/home/mhansen/dsage-1.0.1.spkg which moves DSage from sage.dsage to just dsage.",
+    "created_at": "2009-05-28T02:47:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6075",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6075#issuecomment-48360",
+    "user": "mhansen"
+}
+```
 
 I updated the patch and made http://sage.math.washington.edu/home/mhansen/dsage-1.0.1.spkg which moves DSage from sage.dsage to just dsage.
 
 
+
 ---
 
-Comment by craigcitro created at 2009-05-28 04:57:51
+archive/issue_comments_048361.json:
+```json
+{
+    "body": "Yep, this looks good. You have to manually remove `$SAGE_ROOT/devel/sage/build/sage/dsage` to see that this completely works, but then, that's exactly what the patch at #5977 does for you ...",
+    "created_at": "2009-05-28T04:57:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6075",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6075#issuecomment-48361",
+    "user": "craigcitro"
+}
+```
 
 Yep, this looks good. You have to manually remove `$SAGE_ROOT/devel/sage/build/sage/dsage` to see that this completely works, but then, that's exactly what the patch at #5977 does for you ...
 
 
+
 ---
 
-Comment by mhansen created at 2009-05-28 05:07:16
+archive/issue_comments_048362.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-05-28T05:07:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6075",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6075#issuecomment-48362",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mhansen created at 2009-05-28 05:07:16
+archive/issue_comments_048363.json:
+```json
+{
+    "body": "Merged in 4.0.rc1.",
+    "created_at": "2009-05-28T05:07:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6075",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6075#issuecomment-48363",
+    "user": "mhansen"
+}
+```
 
 Merged in 4.0.rc1.

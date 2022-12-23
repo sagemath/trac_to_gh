@@ -1,11 +1,21 @@
 # Issue 6628: [with patch, needs review] Singular functions via libSingular
 
-Issue created by migration from https://trac.sagemath.org/ticket/6628
-
-Original creator: malb
-
-Original creation time: 2009-07-26 13:59:05
-
+archive/issues_006628.json:
+```json
+{
+    "body": "Assignee: malb\n\nCC:  burcin\n\nKeywords: singular, libsingular, commutative algebra\n\nThe attached patch implements the following:\n\n\n```\nsage: P = PolynomialRing(GF(127),10,'x')\nsage: I = Ideal(P.random_element() for _ in range(3000))\nsage: from sage.libs.singular.function import singular_function, lib\nsage: groebner = singular_function('groebner')\nsage: %time groebner(I)\nCPU times: user 0.07 s, sys: 0.00 s, total: 0.08 s\nWall time: 0.08 s\n[1]\n```\n\n\nFor comparison, the Singular pexpect interface needs almost two seconds for the same task (due to string parsing on both ends, IPC, etc.)\n\n\n```\nsage: %time I.groebner_basis()\nCPU times: user 0.96 s, sys: 0.24 s, total: 1.21 s\nWall time: 1.92 s\n[1]\n```\n\n\nThis patch requires an updated Singular SPKG (see below).\n\nIssue created by migration from https://trac.sagemath.org/ticket/6628\n\n",
+    "created_at": "2009-07-26T13:59:05Z",
+    "labels": [
+        "commutative algebra",
+        "major",
+        "enhancement"
+    ],
+    "title": "[with patch, needs review] Singular functions via libSingular",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6628",
+    "user": "malb"
+}
+```
 Assignee: malb
 
 CC:  burcin
@@ -40,25 +50,62 @@ Wall time: 1.92 s
 
 This patch requires an updated Singular SPKG (see below).
 
+Issue created by migration from https://trac.sagemath.org/ticket/6628
+
+
+
+
 
 ---
 
-Comment by malb created at 2009-07-26 14:04:31
+archive/issue_comments_054292.json:
+```json
+{
+    "body": "* This patch depends on #6596\n  * The updated SPKG is available at http://sage.math.washington.edu/home/malb/spkgs/singular-3-1-0-4-20090723.spkg",
+    "created_at": "2009-07-26T14:04:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6628",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6628#issuecomment-54292",
+    "user": "malb"
+}
+```
 
 * This patch depends on #6596
- * The updated SPKG is available at http://sage.math.washington.edu/home/malb/spkgs/singular-3-1-0-4-20090723.spkg
+  * The updated SPKG is available at http://sage.math.washington.edu/home/malb/spkgs/singular-3-1-0-4-20090723.spkg
+
 
 
 ---
 
-Comment by malb created at 2009-07-26 15:17:01
+archive/issue_comments_054293.json:
+```json
+{
+    "body": "Burcin, I just replaced the patch to fix a doctest failure.",
+    "created_at": "2009-07-26T15:17:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6628",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6628#issuecomment-54293",
+    "user": "malb"
+}
+```
 
 Burcin, I just replaced the patch to fix a doctest failure.
 
 
+
 ---
 
-Comment by malb created at 2009-07-26 15:26:35
+archive/issue_comments_054294.json:
+```json
+{
+    "body": "Btw. this also works now:\n\n\n```\nsage: from sage.libs.singular.function import singular_function, lib\nsage: groebner = singular_function('groebner')\nsage: groebner?\nType:           SingularLibraryFunction\nBase Class:     <type 'sage.libs.singular.function.SingularLibraryFunction'>\nString Form:    groebner (singular function)\nNamespace:      Interactive\nFile:           /usr/local/sage-4.1/local/lib/python2.6/site-packages/sage/libs/singular/function.so\nDocstring:\n\n    groebner\n    --------\n\n    Procedure from library `standard.lib' (*note standard_lib::).\n\n    *Syntax:*\n         `groebner (' ideal_expression `)'\n         `groebner (' module_expression `)'\n         `groebner (' ideal_expression`,' int_expression `)'\n         `groebner (' module_expression`,' int_expression `)'\n...\n```\n",
+    "created_at": "2009-07-26T15:26:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6628",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6628#issuecomment-54294",
+    "user": "malb"
+}
+```
 
 Btw. this also works now:
 
@@ -89,9 +136,20 @@ Docstring:
 
 
 
+
 ---
 
-Comment by PolyBoRi created at 2009-07-27 07:48:30
+archive/issue_comments_054295.json:
+```json
+{
+    "body": "Hi!\nIt looks very promosing.\nHowever, I have difficulties to apply the patch.\nUsing sage-4.1.0 and the updated singular spkg:\n\nI tried it with and without the refactoring patch, also using a fresh installation:\n\n```\nsage -hg import ~/Downloads/libsingular_functions.patch \napplying /Users/michael/Downloads/libsingular_functions.patch\npatching file module_list.py\nHunk #1 FAILED at 441\n1 out of 1 hunks FAILED -- saving rejects to file module_list.py.rej\nunable to find 'sage/libs/singular/polynomial.pyx' for patching\n1 out of 1 hunks FAILED -- saving rejects to file sage/libs/singular/polynomial.pyx.rej\npatching file sage/libs/singular/singular-cdefs.pxi\nHunk #3 FAILED at 207\nHunk #4 succeeded at 215 with fuzz 2 (offset -43 lines).\nHunk #7 FAILED at 853\n2 out of 7 hunks FAILED -- saving rejects to file sage/libs/singular/singular-cdefs.pxi.rej\npatching file sage/libs/singular/singular.pxd\nHunk #1 FAILED at 0\nHunk #2 FAILED at 26\n2 out of 2 hunks FAILED -- saving rejects to file sage/libs/singular/singular.pxd.rej\npatching file sage/libs/singular/singular.pyx\nHunk #1 FAILED at 24\nHunk #2 succeeded at 514 with fuzz 2 (offset -15 lines).\nHunk #3 FAILED at 593\n2 out of 3 hunks FAILED -- saving rejects to file sage/libs/singular/singular.pyx.rej\npatching file sage/rings/polynomial/multi_polynomial_libsingular.pyx\nHunk #1 FAILED at 1906\nHunk #2 FAILED at 2019\n2 out of 2 hunks FAILED -- saving rejects to file sage/rings/polynomial/multi_polynomial_libsingular.pyx.rej\n```\n\nMichael",
+    "created_at": "2009-07-27T07:48:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6628",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6628#issuecomment-54295",
+    "user": "PolyBoRi"
+}
+```
 
 Hi!
 It looks very promosing.
@@ -131,32 +189,65 @@ Hunk #2 FAILED at 2019
 Michael
 
 
+
 ---
 
-Comment by malb created at 2009-07-27 15:24:04
+archive/issue_comments_054296.json:
+```json
+{
+    "body": "Hi Michael, this is strange, here is what works for me\n\n* I installed the new Singular SPKG\n* `hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6596/libsingular_refactoring.patch`\n* `hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6628/libsingular_functions.patch`\n* `sage -b`\n\nI have no failed hunks etc. with that.",
+    "created_at": "2009-07-27T15:24:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6628",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6628#issuecomment-54296",
+    "user": "malb"
+}
+```
 
 Hi Michael, this is strange, here is what works for me
 
- * I installed the new Singular SPKG
- * `hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6596/libsingular_refactoring.patch`
- * `hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6628/libsingular_functions.patch`
- * `sage -b`
+* I installed the new Singular SPKG
+* `hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6596/libsingular_refactoring.patch`
+* `hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6628/libsingular_functions.patch`
+* `sage -b`
 
 I have no failed hunks etc. with that.
 
 
+
 ---
 
-Comment by PolyBoRi created at 2009-07-27 15:50:42
+archive/issue_comments_054297.json:
+```json
+{
+    "body": "I am happy with the refactoring of my code :-).\nI played with it and I like it.\nFrom the Singular side, this nontrivial patch looks fine.",
+    "created_at": "2009-07-27T15:50:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6628",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6628#issuecomment-54297",
+    "user": "PolyBoRi"
+}
+```
 
 I am happy with the refactoring of my code :-).
 I played with it and I like it.
 From the Singular side, this nontrivial patch looks fine.
 
 
+
 ---
 
-Comment by PolyBoRi created at 2009-07-29 07:21:15
+archive/issue_comments_054298.json:
+```json
+{
+    "body": "Here some different timings with even better factor: opposite kind of example: very tiny input, output and almost nothing to compute, replaces some\nsingular interpreter call via pexpect with libsingular kernel function call\n\n\n```python\nfrom sage.libs.singular import function as sf\nintersect=sf.SingularKernelFunction(\"intersect\")\nsage: P.<x,y,z>=QQ[]\nsage: j=P.ideal(x,z)\nsage: i=P.ideal(x,y)\nsage: timeit(\"z=i.intersection(j)\")\n125 loops, best of 3: 5.12 ms per loop\nsage: timeit(\"z=intersect(i,j)\")\n625 loops, best of 3: 60.9 \u00b5s per loop\n\n```\n",
+    "created_at": "2009-07-29T07:21:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6628",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6628#issuecomment-54298",
+    "user": "PolyBoRi"
+}
+```
 
 Here some different timings with even better factor: opposite kind of example: very tiny input, output and almost nothing to compute, replaces some
 singular interpreter call via pexpect with libsingular kernel function call
@@ -177,9 +268,20 @@ sage: timeit("z=intersect(i,j)")
 
 
 
+
 ---
 
-Comment by malb created at 2009-08-04 11:14:02
+archive/issue_comments_054299.json:
+```json
+{
+    "body": "It seems this patch makes docbuild choke because\n\n\n```\ngroebner\n--------\n```\n\n\nis contained in one docstring.",
+    "created_at": "2009-08-04T11:14:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6628",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6628#issuecomment-54299",
+    "user": "malb"
+}
+```
 
 It seems this patch makes docbuild choke because
 
@@ -193,16 +295,38 @@ groebner
 is contained in one docstring.
 
 
+
 ---
 
-Comment by malb created at 2009-08-04 11:32:55
+archive/issue_comments_054300.json:
+```json
+{
+    "body": "fixed in updated patch.",
+    "created_at": "2009-08-04T11:32:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6628",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6628#issuecomment-54300",
+    "user": "malb"
+}
+```
 
 fixed in updated patch.
 
 
+
 ---
 
-Comment by malb created at 2009-08-04 12:55:34
+archive/issue_comments_054301.json:
+```json
+{
+    "body": "On IRC:\n\n```\n[13:02] <mvngu> malb: The package singular-3-1-0-4-20090723.spkg compiles OK on t2!\n```\n",
+    "created_at": "2009-08-04T12:55:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6628",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6628#issuecomment-54301",
+    "user": "malb"
+}
+```
 
 On IRC:
 
@@ -212,23 +336,60 @@ On IRC:
 
 
 
+
 ---
+
+archive/issue_comments_054302.json:
+```json
+{
+    "body": "Attachment\n\nfixing docstring issue",
+    "created_at": "2009-08-19T11:56:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6628",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6628#issuecomment-54302",
+    "user": "malb"
+}
+```
 
 Attachment
 
 fixing docstring issue
 
 
+
 ---
+
+archive/issue_comments_054303.json:
+```json
+{
+    "body": "Attachment\n\napply after the previous patch",
+    "created_at": "2009-08-20T11:05:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6628",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6628#issuecomment-54303",
+    "user": "AlexGhitza"
+}
+```
 
 Attachment
 
 apply after the previous patch
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-08-20 11:10:06
+archive/issue_comments_054304.json:
+```json
+{
+    "body": "This stuff is great!  I've attached a small referee patch that fixes some very minor typos.\n\nI will note that line 280 of `singular-cdefs.pxi` is not entirely confidence-inspiring, but I believe the best way to test and refine this stuff is to get it into Sage and start using it a lot.\n\nNote to the release manager: as pointed out above, one must first merge the new Singular spkg, and the patch(es) at #6596.",
+    "created_at": "2009-08-20T11:10:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6628",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6628#issuecomment-54304",
+    "user": "AlexGhitza"
+}
+```
 
 This stuff is great!  I've attached a small referee patch that fixes some very minor typos.
 
@@ -237,16 +398,38 @@ I will note that line 280 of `singular-cdefs.pxi` is not entirely confidence-ins
 Note to the release manager: as pointed out above, one must first merge the new Singular spkg, and the patch(es) at #6596.
 
 
+
 ---
 
-Comment by malb created at 2009-08-20 11:23:30
+archive/issue_comments_054305.json:
+```json
+{
+    "body": "The referee patch looks good. I think the next step would be to port stuff in `multi_polynomial_ideal.py` to use this new stuff and see what happens.",
+    "created_at": "2009-08-20T11:23:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6628",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6628#issuecomment-54305",
+    "user": "malb"
+}
+```
 
 The referee patch looks good. I think the next step would be to port stuff in `multi_polynomial_ideal.py` to use this new stuff and see what happens.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-08-20 11:27:07
+archive/issue_comments_054306.json:
+```json
+{
+    "body": "Replying to [comment:13 malb]:\n> The referee patch looks good. I think the next step would be to port stuff in `multi_polynomial_ideal.py` to use this new stuff and see what happens.\n\nIndeed.  I'm expecting awesomeness (more Singular functionality readily exposed in Sage), speed, and the occasional bug fix.\n\nI'll try to have a look at #6596 soon, but it's a bit bigger, and it will probably take a few days.",
+    "created_at": "2009-08-20T11:27:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6628",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6628#issuecomment-54306",
+    "user": "AlexGhitza"
+}
+```
 
 Replying to [comment:13 malb]:
 > The referee patch looks good. I think the next step would be to port stuff in `multi_polynomial_ideal.py` to use this new stuff and see what happens.
@@ -256,9 +439,20 @@ Indeed.  I'm expecting awesomeness (more Singular functionality readily exposed 
 I'll try to have a look at #6596 soon, but it's a bit bigger, and it will probably take a few days.
 
 
+
 ---
 
-Comment by PolyBoRi created at 2009-08-20 12:34:56
+archive/issue_comments_054307.json:
+```json
+{
+    "body": "regarding 280:\nI was a little bit confused, as I thought it would be the same type in idrec and sleftv.\nBut it's indeed void* in sleftv, so the code is correct, but the comment is wrong.\nNothing dangerous, you can remove the warning.\nMichael",
+    "created_at": "2009-08-20T12:34:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6628",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6628#issuecomment-54307",
+    "user": "PolyBoRi"
+}
+```
 
 regarding 280:
 I was a little bit confused, as I thought it would be the same type in idrec and sleftv.
@@ -267,15 +461,37 @@ Nothing dangerous, you can remove the warning.
 Michael
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-03 06:09:14
+archive/issue_comments_054308.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-09-03T06:09:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6628",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6628#issuecomment-54308",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-03 06:09:14
+archive/issue_comments_054309.json:
+```json
+{
+    "body": "Merged both patches.",
+    "created_at": "2009-09-03T06:09:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6628",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6628#issuecomment-54309",
+    "user": "mvngu"
+}
+```
 
 Merged both patches.

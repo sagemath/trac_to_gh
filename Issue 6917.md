@@ -1,39 +1,99 @@
 # Issue 6917: [with patch] Minkowsky sum sould work with polyhedra and not only with polytopes
 
-Issue created by migration from https://trac.sagemath.org/ticket/6917
-
-Original creator: sbarthelemy
-
-Original creation time: 2009-09-10 12:48:39
-
+archive/issues_006917.json:
+```json
+{
+    "body": "Assignee: mhampton\n\nThe attached patch makes Minkowsky sum handle unbounded polyhedra.\n\nHowever, as a side effect, it makes bug #6915 blatant, thus doctests don't pass anymore.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6917\n\n",
+    "created_at": "2009-09-10T12:48:39Z",
+    "labels": [
+        "geometry",
+        "major",
+        "enhancement"
+    ],
+    "title": "[with patch] Minkowsky sum sould work with polyhedra and not only with polytopes",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6917",
+    "user": "sbarthelemy"
+}
+```
 Assignee: mhampton
 
 The attached patch makes Minkowsky sum handle unbounded polyhedra.
 
 However, as a side effect, it makes bug #6915 blatant, thus doctests don't pass anymore.
 
+Issue created by migration from https://trac.sagemath.org/ticket/6917
+
+
+
+
 
 ---
+
+archive/issue_comments_057114.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-09-10T12:49:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6917",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6917#issuecomment-57114",
+    "user": "sbarthelemy"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-10 18:06:42
+archive/issue_comments_057115.json:
+```json
+{
+    "body": "Is this ready for review? If so, please change the summary to \"[with patch, needs review]\".",
+    "created_at": "2009-09-10T18:06:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6917",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6917#issuecomment-57115",
+    "user": "mvngu"
+}
+```
 
 Is this ready for review? If so, please change the summary to "[with patch, needs review]".
 
 
+
 ---
 
-Comment by mhampton created at 2010-04-03 14:43:09
+archive/issue_comments_057116.json:
+```json
+{
+    "body": "I believe this patch is unnecessary because of #7109, which fixed a lot of related problems.",
+    "created_at": "2010-04-03T14:43:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6917",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6917#issuecomment-57116",
+    "user": "mhampton"
+}
+```
 
 I believe this patch is unnecessary because of #7109, which fixed a lot of related problems.
 
 
+
 ---
 
-Comment by mhampton created at 2010-04-03 14:43:09
+archive/issue_comments_057117.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-04-03T14:43:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6917",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6917#issuecomment-57117",
+    "user": "mhampton"
+}
+```
 
 Resolution: fixed

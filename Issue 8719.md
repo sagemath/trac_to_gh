@@ -1,11 +1,21 @@
 # Issue 8719: convert RDF/CDF matrices to numpy
 
-Issue created by migration from https://trac.sagemath.org/ticket/8719
-
-Original creator: jason
-
-Original creation time: 2010-04-20 00:07:17
-
+archive/issues_008719.json:
+```json
+{
+    "body": "Assignee: jason, was\n\nCC:  rbeezer\n\nThis patch makes the following work:\n\n\n```\n            sage: import numpy\n            sage: m = matrix(RDF, 2, range(6)); m\n            [0.0 1.0 2.0]\n            [3.0 4.0 5.0]\n            sage: numpy.array(m)                  \n            array([[ 0.,  1.,  2.],\n            [ 3.,  4.,  5.]])\n            sage: numpy.array(m).dtype            \n            dtype('float64')\n            sage: m = matrix(CDF, 2, range(6)); m\n            [  0 1.0 2.0]\n            [3.0 4.0 5.0]\n            sage: numpy.array(m)                  \n            array([[ 0.+0.j,  1.+0.j,  2.+0.j],\n            [ 3.+0.j,  4.+0.j,  5.+0.j]])\n            sage: numpy.array(m).dtype            \n            dtype('complex128')\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8719\n\n",
+    "created_at": "2010-04-20T00:07:17Z",
+    "labels": [
+        "linear algebra",
+        "major",
+        "enhancement"
+    ],
+    "title": "convert RDF/CDF matrices to numpy",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8719",
+    "user": "jason"
+}
+```
 Assignee: jason, was
 
 CC:  rbeezer
@@ -34,31 +44,79 @@ This patch makes the following work:
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8719
+
+
+
+
 
 ---
 
-Comment by jason created at 2010-04-20 00:11:50
+archive/issue_comments_079592.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-04-20T00:11:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8719#issuecomment-79592",
+    "user": "jason"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jason created at 2010-05-03 19:01:08
+archive/issue_comments_079593.json:
+```json
+{
+    "body": "Changing assignee from jason, was to jason.",
+    "created_at": "2010-05-03T19:01:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8719#issuecomment-79593",
+    "user": "jason"
+}
+```
 
 Changing assignee from jason, was to jason.
 
 
+
 ---
 
-Comment by jason created at 2010-05-03 19:01:50
+archive/issue_comments_079594.json:
+```json
+{
+    "body": "rbeezer: it seems like you could naturally review this.  It just adds a numpy-specific magic method for conversion.",
+    "created_at": "2010-05-03T19:01:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8719#issuecomment-79594",
+    "user": "jason"
+}
+```
 
 rbeezer: it seems like you could naturally review this.  It just adds a numpy-specific magic method for conversion.
 
 
+
 ---
 
-Comment by rbeezer created at 2010-05-04 04:16:53
+archive/issue_comments_079595.json:
+```json
+{
+    "body": "Hi Jason,\n\nSo you have defined a new method \"`__array__`\" for a Sage matrix object.  When somebody calls numpy.array(a) for a Sage matrix  a  then this `__array__` method gets called (and this is in effect just the numpy() method of a Sage matrix)?  In other words, the numpy.array() method has an expanded reportoire and now \"knows\" how to deal with a Sage matrix object?\n\nIf so, could you say so?  The line  `__array__=numpy` all by itself looks really mysterious with no documentation.  And the new doctests say \"you could use numpy\" - when Sage is really doing the heavy-lifting?  It sounds like numpy is doing the work, when this is not a standard behavior of numpy.\n\nSo I'm suggesting maybe this seemingly circular arrrangement (modify Sage matrices, so numpy can deal with them, using a Sage function to convert to a numpy array) could be better explained so nobody messes it up or gets too confused.  With the added code and the added doctests all together, I think I was able to figure this out - otherwise it would have been a head-scratcher.\n\nRob",
+    "created_at": "2010-05-04T04:16:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8719#issuecomment-79595",
+    "user": "rbeezer"
+}
+```
 
 Hi Jason,
 
@@ -71,21 +129,56 @@ So I'm suggesting maybe this seemingly circular arrrangement (modify Sage matric
 Rob
 
 
+
 ---
+
+archive/issue_comments_079596.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-05-04T05:11:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8719#issuecomment-79596",
+    "user": "jason"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by jason created at 2010-05-04 05:11:47
+archive/issue_comments_079597.json:
+```json
+{
+    "body": "I updated the docs.",
+    "created_at": "2010-05-04T05:11:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8719#issuecomment-79597",
+    "user": "jason"
+}
+```
 
 I updated the docs.
 
 
+
 ---
 
-Comment by rbeezer created at 2010-05-04 06:27:03
+archive/issue_comments_079598.json:
+```json
+{
+    "body": "Replying to [comment:7 jason]:\n> I updated the docs.\n\nLooks good!  I'll finish this tomorrow night.",
+    "created_at": "2010-05-04T06:27:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8719#issuecomment-79598",
+    "user": "rbeezer"
+}
+```
 
 Replying to [comment:7 jason]:
 > I updated the docs.
@@ -93,9 +186,20 @@ Replying to [comment:7 jason]:
 Looks good!  I'll finish this tomorrow night.
 
 
+
 ---
 
-Comment by rbeezer created at 2010-05-05 06:10:27
+archive/issue_comments_079599.json:
+```json
+{
+    "body": "Looks good, builds and passes all tests, documentation builds without warnings.\n\nThe added documentation looks great.\n\nPositive review.",
+    "created_at": "2010-05-05T06:10:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8719#issuecomment-79599",
+    "user": "rbeezer"
+}
+```
 
 Looks good, builds and passes all tests, documentation builds without warnings.
 
@@ -104,15 +208,37 @@ The added documentation looks great.
 Positive review.
 
 
+
 ---
 
-Comment by rbeezer created at 2010-05-05 06:10:27
+archive/issue_comments_079600.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-05-05T06:10:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8719#issuecomment-79600",
+    "user": "rbeezer"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mvngu created at 2010-05-08 22:03:13
+archive/issue_comments_079601.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-05-08T22:03:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8719#issuecomment-79601",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

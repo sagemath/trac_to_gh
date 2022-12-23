@@ -1,11 +1,21 @@
 # Issue 2538: Sage 2.10.4.rc0: server/notebook/interact.py is broken due to #2530
 
-Issue created by migration from https://trac.sagemath.org/ticket/2538
-
-Original creator: mabshoff
-
-Original creation time: 2008-03-16 01:24:51
-
+archive/issues_002538.json:
+```json
+{
+    "body": "Assignee: wstein\n\n\n```\nsage-2.10.4.rc0$ ./sage -t -long devel/sage/sage/server/notebook/interact.py\nsage -t -long devel/sage-main/sage/server/notebook/interact.py\n**********************************************************************\nFile \"interact.py\", line 1641:\n    sage: selector([1,2,7], default=2).default()\nExpected:\n    2\nGot:\n    1\n**********************************************************************\n1 items had failures:\n   1 of   1 in __main__.example_70\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctest_interact.py\n         [2.9 s]\nexit code: 256\n\n----------------------------------------------------------------------\nThe following tests failed:\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2538\n\n",
+    "created_at": "2008-03-16T01:24:51Z",
+    "labels": [
+        "doctest coverage",
+        "blocker",
+        "bug"
+    ],
+    "title": "Sage 2.10.4.rc0: server/notebook/interact.py is broken due to #2530",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2538",
+    "user": "mabshoff"
+}
+```
 Assignee: wstein
 
 
@@ -32,50 +42,133 @@ The following tests failed:
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2538
+
+
+
+
 
 ---
 
-Comment by was created at 2008-03-16 02:57:52
+archive/issue_comments_017311.json:
+```json
+{
+    "body": "The new output, i.e., 1 is definitely now correct.   Feel free to\nmake this change and close this ticket.",
+    "created_at": "2008-03-16T02:57:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2538",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2538#issuecomment-17311",
+    "user": "was"
+}
+```
 
 The new output, i.e., 1 is definitely now correct.   Feel free to
 make this change and close this ticket.
 
 
+
 ---
+
+archive/issue_comments_017312.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-03-16T05:27:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2538",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2538#issuecomment-17312",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-16 05:28:04
+archive/issue_comments_017313.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-03-16T05:28:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2538",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2538#issuecomment-17313",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-16 05:28:04
+archive/issue_comments_017314.json:
+```json
+{
+    "body": "Changing assignee from wstein to mabshoff.",
+    "created_at": "2008-03-16T05:28:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2538",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2538#issuecomment-17314",
+    "user": "mabshoff"
+}
+```
 
 Changing assignee from wstein to mabshoff.
 
 
+
 ---
 
-Comment by mhansen created at 2008-03-16 06:07:17
+archive/issue_comments_017315.json:
+```json
+{
+    "body": "Looks okay to me.",
+    "created_at": "2008-03-16T06:07:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2538",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2538#issuecomment-17315",
+    "user": "mhansen"
+}
+```
 
 Looks okay to me.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-16 06:45:28
+archive/issue_comments_017316.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-03-16T06:45:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2538",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2538#issuecomment-17316",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-16 06:45:28
+archive/issue_comments_017317.json:
+```json
+{
+    "body": "Merged in Sage 2.10.4.rc0",
+    "created_at": "2008-03-16T06:45:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2538",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2538#issuecomment-17317",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.4.rc0

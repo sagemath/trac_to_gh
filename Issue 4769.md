@@ -1,11 +1,21 @@
 # Issue 4769: add 5 people to devmap; update info for 2 people
 
-Issue created by migration from https://trac.sagemath.org/ticket/4769
-
-Original creator: mvngu
-
-Original creation time: 2008-12-12 08:04:27
-
+archive/issues_004769.json:
+```json
+{
+    "body": "Assignee: tba\n\nCC:  mabshoff schilly\n\nKeywords: devmap\n\nAs the subject says. This is a joint project with Michael Abshoff and Harald Schilly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4769\n\n",
+    "created_at": "2008-12-12T08:04:27Z",
+    "labels": [
+        "website/wiki",
+        "major",
+        "bug"
+    ],
+    "title": "add 5 people to devmap; update info for 2 people",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4769",
+    "user": "mvngu"
+}
+```
 Assignee: tba
 
 CC:  mabshoff schilly
@@ -14,19 +24,47 @@ Keywords: devmap
 
 As the subject says. This is a joint project with Michael Abshoff and Harald Schilly.
 
+Issue created by migration from https://trac.sagemath.org/ticket/4769
+
+
+
+
 
 ---
 
-Comment by mvngu created at 2008-12-12 08:06:08
+archive/issue_comments_036129.json:
+```json
+{
+    "body": "add 5 people to devmap and update info for 2 people",
+    "created_at": "2008-12-12T08:06:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4769",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4769#issuecomment-36129",
+    "user": "mvngu"
+}
+```
 
 add 5 people to devmap and update info for 2 people
 
 
+
 ---
+
+archive/issue_comments_036130.json:
+```json
+{
+    "body": "Attachment\n\nThe patch **trac_4769.patch** adds 5 people to the devmap at\n\n\n\nhttp://www.sagemath.org/development-map.html\n\n\n\nand updates info for 2 people. It should be patched against the file:\n\n\n\nhttp://www.sagemath.org/res/contributors.xml\n\n\n\nThe following people are added:\n\n\n1. Wilfried Huss, PhD student, Graz University of Technology, Austria: calculus bug fixes; additions to the Maxima interface\n2. Sebastien Labbe, LaCIM, Universite du Quebec a\u00a0 Montreal, Canada: bug fixes; plotting improvements: http://www.lacim.uqam.ca\n3. Michael Mardaus, Universitat Mainz, Germany: point counting code\n4. Tobias Nagel, Universitat Mainz, Germany: point counting code\n5. Dan Shumow, University of Washington, WA, USA: bug fixes\n\n\nThe following people have their info updated:\n\n1. Chris Swierczewski, University of Washington, WA, USA: doctests; financial data streaming and contributions to the finance module; documentation for the algebra module: http://cswiercz.blogspot.com\n2. Alex Ghitza, The University of Melbourne, Parkville, Melbourne, Australia: pari interface; modular forms, elliptic curves, number fields; miscellaneous algebra; documentation",
+    "created_at": "2008-12-12T08:16:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4769",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4769#issuecomment-36130",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
-The patch *trac_4769.patch* adds 5 people to the devmap at
+The patch **trac_4769.patch** adds 5 people to the devmap at
 
 
 
@@ -45,22 +83,33 @@ http://www.sagemath.org/res/contributors.xml
 The following people are added:
 
 
- 1. Wilfried Huss, PhD student, Graz University of Technology, Austria: calculus bug fixes; additions to the Maxima interface
- 1. Sebastien Labbe, LaCIM, Universite du Quebec a  Montreal, Canada: bug fixes; plotting improvements: http://www.lacim.uqam.ca
- 1. Michael Mardaus, Universitat Mainz, Germany: point counting code
- 1. Tobias Nagel, Universitat Mainz, Germany: point counting code
- 1. Dan Shumow, University of Washington, WA, USA: bug fixes
+1. Wilfried Huss, PhD student, Graz University of Technology, Austria: calculus bug fixes; additions to the Maxima interface
+2. Sebastien Labbe, LaCIM, Universite du Quebec a  Montreal, Canada: bug fixes; plotting improvements: http://www.lacim.uqam.ca
+3. Michael Mardaus, Universitat Mainz, Germany: point counting code
+4. Tobias Nagel, Universitat Mainz, Germany: point counting code
+5. Dan Shumow, University of Washington, WA, USA: bug fixes
 
 
 The following people have their info updated:
 
- 1. Chris Swierczewski, University of Washington, WA, USA: doctests; financial data streaming and contributions to the finance module; documentation for the algebra module: http://cswiercz.blogspot.com
- 1. Alex Ghitza, The University of Melbourne, Parkville, Melbourne, Australia: pari interface; modular forms, elliptic curves, number fields; miscellaneous algebra; documentation
+1. Chris Swierczewski, University of Washington, WA, USA: doctests; financial data streaming and contributions to the finance module; documentation for the algebra module: http://cswiercz.blogspot.com
+2. Alex Ghitza, The University of Melbourne, Parkville, Melbourne, Australia: pari interface; modular forms, elliptic curves, number fields; miscellaneous algebra; documentation
+
 
 
 ---
 
-Comment by schilly created at 2008-12-12 10:25:10
+archive/issue_comments_036131.json:
+```json
+{
+    "body": "Hi, i've applied the patch, it's online now.\n\nThe patch was ok but i had to edit two things. Google maps doesn't know about a university of mainz, i think it's \"johannes gutenberg university\" but i simply just took the postal code number, that's fine and works if you zoom in. (there is also a public transport station called \"universit\u00e4t\")\n\nsecondly, something bad happens with utf8 unicode encoding in url strings [they are used in the query[, therefore no special signs in the location.\n\napart from that thanks and don't mind, those things just pop up when you work with the actual scripts. now it's ok and please base your next patch against the one on the server.\n\nh",
+    "created_at": "2008-12-12T10:25:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4769",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4769#issuecomment-36131",
+    "user": "schilly"
+}
+```
 
 Hi, i've applied the patch, it's online now.
 
@@ -73,23 +122,56 @@ apart from that thanks and don't mind, those things just pop up when you work wi
 h
 
 
+
 ---
 
-Comment by schilly created at 2008-12-12 10:25:10
+archive/issue_comments_036132.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-12-12T10:25:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4769",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4769#issuecomment-36132",
+    "user": "schilly"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by schilly created at 2008-12-12 10:25:10
+archive/issue_comments_036133.json:
+```json
+{
+    "body": "Changing type from defect to enhancement.",
+    "created_at": "2008-12-12T10:25:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4769",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4769#issuecomment-36133",
+    "user": "schilly"
+}
+```
 
 Changing type from defect to enhancement.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-12 11:04:56
+archive/issue_comments_036134.json:
+```json
+{
+    "body": "Harald,\n\nplease remember to change the review status.\n\nCheers,\n\nMichael",
+    "created_at": "2008-12-12T11:04:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4769",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4769#issuecomment-36134",
+    "user": "mabshoff"
+}
+```
 
 Harald,
 

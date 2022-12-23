@@ -1,11 +1,21 @@
 # Issue 8100: running the notebook should not change the working directory
 
-Issue created by migration from https://trac.sagemath.org/ticket/8100
-
-Original creator: jhpalmieri
-
-Original creation time: 2010-01-27 23:45:50
-
+archive/issues_008100.json:
+```json
+{
+    "body": "Assignee: was\n\nIn sage-4.3.2.alpha0 (and all earlier versions I can remember), running the notebook changes my working directory:\n\n```\nsage: pwd\n'/Users/palmieri'\nsage: notebook()\nThe notebook files are stored in: sage_notebook.sagenb\n**************************************************\n*                                                *\n* Open your web browser to http://localhost:8000 *\n*                                                *\n**************************************************\n...\n^C\n...\nsage: pwd\n'/Users/palmieri/.sage'\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8100\n\n",
+    "created_at": "2010-01-27T23:45:50Z",
+    "labels": [
+        "notebook",
+        "major",
+        "bug"
+    ],
+    "title": "running the notebook should not change the working directory",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8100",
+    "user": "jhpalmieri"
+}
+```
 Assignee: was
 
 In sage-4.3.2.alpha0 (and all earlier versions I can remember), running the notebook changes my working directory:
@@ -29,44 +39,116 @@ sage: pwd
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8100
+
+
+
+
 
 ---
 
-Comment by mpatel created at 2010-02-05 13:12:07
+archive/issue_comments_071075.json:
+```json
+{
+    "body": "Restore working directory when `notebook` returns.  sagenb repo.",
+    "created_at": "2010-02-05T13:12:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8100",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8100#issuecomment-71075",
+    "user": "mpatel"
+}
+```
 
 Restore working directory when `notebook` returns.  sagenb repo.
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-05 13:17:25
+archive/issue_comments_071076.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-02-05T13:17:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8100",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8100#issuecomment-71076",
+    "user": "mpatel"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_071077.json:
+```json
+{
+    "body": "Attachment\n\nPatch attached.",
+    "created_at": "2010-02-05T13:17:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8100",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8100#issuecomment-71077",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
 Patch attached.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-02-05 15:55:23
+archive/issue_comments_071078.json:
+```json
+{
+    "body": "Looks good to me; restores my working directory to whatever it was before running `notebook()`.",
+    "created_at": "2010-02-05T15:55:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8100",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8100#issuecomment-71078",
+    "user": "jhpalmieri"
+}
+```
 
 Looks good to me; restores my working directory to whatever it was before running `notebook()`.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-02-05 15:55:23
+archive/issue_comments_071079.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-02-05T15:55:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8100",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8100#issuecomment-71079",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-10 18:33:00
+archive/issue_comments_071080.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-02-10T18:33:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8100",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8100#issuecomment-71080",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed

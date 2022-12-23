@@ -1,11 +1,21 @@
 # Issue 2145: doc -- add shift-enter prominently to both the reference manual and tutorial (easy doc fix)
 
-Issue created by migration from https://trac.sagemath.org/ticket/2145
-
-Original creator: was
-
-Original creation time: 2008-02-12 17:02:26
-
+archive/issues_002145.json:
+```json
+{
+    "body": "Assignee: tba\n\n\n```\nI was looking in the SAGE Tutorial and the SAGE Reference\nManual.  Perhaps something could be put there also?\n\nKate\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2145\n\n",
+    "created_at": "2008-02-12T17:02:26Z",
+    "labels": [
+        "documentation",
+        "major",
+        "bug"
+    ],
+    "title": "doc -- add shift-enter prominently to both the reference manual and tutorial (easy doc fix)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2145",
+    "user": "was"
+}
+```
 Assignee: tba
 
 
@@ -17,39 +27,98 @@ Kate
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2145
+
+
+
+
 
 ---
 
-Comment by was created at 2008-02-12 17:03:04
+archive/issue_comments_014075.json:
+```json
+{
+    "body": "I have considered making it so \"press shift-enter to evaluate\" is prominently\ndisplayed for new users until they've done it a few times, when it disappears.\nThoughts?",
+    "created_at": "2008-02-12T17:03:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2145",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2145#issuecomment-14075",
+    "user": "was"
+}
+```
 
 I have considered making it so "press shift-enter to evaluate" is prominently
 displayed for new users until they've done it a few times, when it disappears.
 Thoughts?
 
 
+
 ---
 
-Comment by timdumol created at 2010-01-17 00:12:38
+archive/issue_comments_014076.json:
+```json
+{
+    "body": "Changing type from defect to enhancement.",
+    "created_at": "2010-01-17T00:12:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2145",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2145#issuecomment-14076",
+    "user": "timdumol"
+}
+```
 
 Changing type from defect to enhancement.
 
 
+
 ---
 
-Comment by timdumol created at 2010-01-17 00:12:38
+archive/issue_comments_014077.json:
+```json
+{
+    "body": "It's prominently featured in the Notebook \"Help\" page. Should this be closed?",
+    "created_at": "2010-01-17T00:12:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2145",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2145#issuecomment-14077",
+    "user": "timdumol"
+}
+```
 
 It's prominently featured in the Notebook "Help" page. Should this be closed?
 
 
+
 ---
 
-Comment by was created at 2010-01-17 05:38:03
+archive/issue_comments_014078.json:
+```json
+{
+    "body": "Yes.  Also this ticket was before the \"evaluate\" link existed.  Closing...",
+    "created_at": "2010-01-17T05:38:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2145",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2145#issuecomment-14078",
+    "user": "was"
+}
+```
 
 Yes.  Also this ticket was before the "evaluate" link existed.  Closing...
 
 
+
 ---
 
-Comment by was created at 2010-01-17 05:38:03
+archive/issue_comments_014079.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-17T05:38:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2145",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2145#issuecomment-14079",
+    "user": "was"
+}
+```
 
 Resolution: fixed

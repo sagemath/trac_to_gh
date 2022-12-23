@@ -1,11 +1,21 @@
 # Issue 4659: remove an extra 'cdef class Integer' line from integer.pyx
 
-Issue created by migration from https://trac.sagemath.org/ticket/4659
-
-Original creator: jhpalmieri
-
-Original creation time: 2008-11-30 00:44:16
-
+archive/issues_004659.json:
+```json
+{
+    "body": "Assignee: somebody\n\nCC:  robertwb\n\nKeywords: integer\n\nIn the file sage/rings/integer.pyx, line 288 says \n\n```\n    cdef class Integer (sage.structure.element.EuclideanDomainElement): \n```\n\nfollowed by documentation and the various methods for this class.  But earlier in the file, line 137 says \n\n```\n    cdef class Integer(sage.structure.element.EuclideanDomainElement) \n```\n\nThe attached patch removes line 137.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4659\n\n",
+    "created_at": "2008-11-30T00:44:16Z",
+    "labels": [
+        "basic arithmetic",
+        "trivial",
+        "bug"
+    ],
+    "title": "remove an extra 'cdef class Integer' line from integer.pyx",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4659",
+    "user": "jhpalmieri"
+}
+```
 Assignee: somebody
 
 CC:  robertwb
@@ -26,8 +36,25 @@ followed by documentation and the various methods for this class.  But earlier i
 
 The attached patch removes line 137.
 
+Issue created by migration from https://trac.sagemath.org/ticket/4659
+
+
+
+
 
 ---
+
+archive/issue_comments_035093.json:
+```json
+{
+    "body": "Attachment\n\nLooks good to me. As RobertWB said in http://groups.google.com/group/sage-devel/t/3d76203eeed29ec5 this can go in.\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-30T03:44:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4659",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4659#issuecomment-35093",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -38,15 +65,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-30 05:39:02
+archive/issue_comments_035094.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-11-30T05:39:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4659",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4659#issuecomment-35094",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-30 05:39:02
+archive/issue_comments_035095.json:
+```json
+{
+    "body": "Merged in Sage 3.2.1.rc1. Reviewer credit goes to RobertWB",
+    "created_at": "2008-11-30T05:39:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4659",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4659#issuecomment-35095",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.2.1.rc1. Reviewer credit goes to RobertWB

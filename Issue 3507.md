@@ -1,37 +1,97 @@
 # Issue 3507: fix major efficiency/performance bug in sparse linear algebra matrix multiply
 
-Issue created by migration from https://trac.sagemath.org/ticket/3507
-
-Original creator: was
-
-Original creation time: 2008-06-25 01:46:19
-
+archive/issues_003507.json:
+```json
+{
+    "body": "Assignee: was\n\na * b for a, b sparse matrices over QQ was VASTLY too slow because of a stupid bug.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3507\n\n",
+    "created_at": "2008-06-25T01:46:19Z",
+    "labels": [
+        "linear algebra",
+        "major",
+        "bug"
+    ],
+    "title": "fix major efficiency/performance bug in sparse linear algebra matrix multiply",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3507",
+    "user": "was"
+}
+```
 Assignee: was
 
 a * b for a, b sparse matrices over QQ was VASTLY too slow because of a stupid bug.
 
+Issue created by migration from https://trac.sagemath.org/ticket/3507
+
+
+
+
 
 ---
+
+archive/issue_comments_024721.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-06-25T01:46:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3507",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3507#issuecomment-24721",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by craigcitro created at 2008-06-25 01:56:46
+archive/issue_comments_024722.json:
+```json
+{
+    "body": "Looks good.",
+    "created_at": "2008-06-25T01:56:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3507",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3507#issuecomment-24722",
+    "user": "craigcitro"
+}
+```
 
 Looks good.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-25 02:47:25
+archive/issue_comments_024723.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-06-25T02:47:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3507",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3507#issuecomment-24723",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-25 02:47:25
+archive/issue_comments_024724.json:
+```json
+{
+    "body": "Merged in Sage 3.0.4.alpha1",
+    "created_at": "2008-06-25T02:47:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3507",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3507#issuecomment-24724",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.4.alpha1

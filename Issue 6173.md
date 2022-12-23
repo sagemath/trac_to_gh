@@ -1,36 +1,83 @@
 # Issue 6173: atlas -- change from SAGE_SIMD_MODE to SAGE_FAT_BINARY
 
-Issue created by migration from https://trac.sagemath.org/ticket/6173
-
-Original creator: was
-
-Original creation time: 2009-05-31 23:56:49
-
+archive/issues_006173.json:
+```json
+{
+    "body": "Assignee: tbd\n\nChange the ATLAS spkg-install so that it recognizes the SAGE_FAT_BINARY option-- which is conceptually accurate -- instead of SAGE_SIMD_MODE.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6173\n\n",
+    "created_at": "2009-05-31T23:56:49Z",
+    "labels": [
+        "distribution",
+        "blocker",
+        "enhancement"
+    ],
+    "title": "atlas -- change from SAGE_SIMD_MODE to SAGE_FAT_BINARY",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6173",
+    "user": "was"
+}
+```
 Assignee: tbd
 
 Change the ATLAS spkg-install so that it recognizes the SAGE_FAT_BINARY option-- which is conceptually accurate -- instead of SAGE_SIMD_MODE.
 
+Issue created by migration from https://trac.sagemath.org/ticket/6173
+
+
+
+
 
 ---
 
-Comment by was created at 2009-06-01 00:38:13
+archive/issue_comments_049232.json:
+```json
+{
+    "body": "Here's the new spkg:\n\nhttp://sage.math.washington.edu/home/wstein/release/4.0.1/alpha0/stuff/atlas-3.8.3.p2.spkg",
+    "created_at": "2009-06-01T00:38:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6173",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6173#issuecomment-49232",
+    "user": "was"
+}
+```
 
 Here's the new spkg:
 
 http://sage.math.washington.edu/home/wstein/release/4.0.1/alpha0/stuff/atlas-3.8.3.p2.spkg
 
 
+
 ---
 
-Comment by mhansen created at 2009-06-01 02:06:31
+archive/issue_comments_049233.json:
+```json
+{
+    "body": "Looks good to me.\n\nMerged in 4.0.1.alpha0.",
+    "created_at": "2009-06-01T02:06:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6173",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6173#issuecomment-49233",
+    "user": "mhansen"
+}
+```
 
 Looks good to me.
 
 Merged in 4.0.1.alpha0.
 
 
+
 ---
 
-Comment by mhansen created at 2009-06-01 02:06:31
+archive/issue_comments_049234.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-06-01T02:06:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6173",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6173#issuecomment-49234",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

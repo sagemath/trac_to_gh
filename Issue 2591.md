@@ -1,11 +1,21 @@
 # Issue 2591: too much printing on sage -br
 
-Issue created by migration from https://trac.sagemath.org/ticket/2591
-
-Original creator: craigcitro
-
-Original creation time: 2008-03-19 06:26:07
-
+archive/issues_002591.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nSo this happened recently -- maybe with the Debian packaging, though maybe I'm wrong -- and it's annoying. When you do a sage -br, you see the following:\n\n\n```\nrunning install_scripts\nchanging mode of /sage/local/bin/changelog to 755\nchanging mode of /sage/local/bin/check-use-debian.pl to 755\nchanging mode of /sage/local/bin/compat to 755\nchanging mode of /sage/local/bin/control to 755\nchanging mode of /sage/local/bin/control.in to 755\nchanging mode of /sage/local/bin/dsage_server.py to 755\nchanging mode of /sage/local/bin/dsage_setup.py to 755\nchanging mode of /sage/local/bin/dsage_worker.py to 755\nchanging mode of /sage/local/bin/rules to 755\nchanging mode of /sage/local/bin/sage to 755\nchanging mode of /sage/local/bin/sagemath.install to 755\nchanging mode of /sage/local/bin/spkg-debian-maybe to 755\nrunning install_data\nrunning install_egg_info\nRemoving /sage/local/lib/python2.5/site-packages/sage-0.0.0-py2.5.egg-info\nWriting /sage/local/lib/python2.5/site-packages/sage-0.0.0-py2.5.egg-info\n```\n\n\nWhat's with all the changing mode stuff? Can we get rid of that? I'm much more concerned with the fact that it *prints* stuff than the fact that it's changing some permissions. \n\n-cc\n\nIssue created by migration from https://trac.sagemath.org/ticket/2591\n\n",
+    "created_at": "2008-03-19T06:26:07Z",
+    "labels": [
+        "misc",
+        "major",
+        "bug"
+    ],
+    "title": "too much printing on sage -br",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2591",
+    "user": "craigcitro"
+}
+```
 Assignee: mabshoff
 
 So this happened recently -- maybe with the Debian packaging, though maybe I'm wrong -- and it's annoying. When you do a sage -br, you see the following:
@@ -36,10 +46,25 @@ What's with all the changing mode stuff? Can we get rid of that? I'm much more c
 
 -cc
 
+Issue created by migration from https://trac.sagemath.org/ticket/2591
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-03-19 07:24:29
+archive/issue_comments_017736.json:
+```json
+{
+    "body": "This is a dupe of #2262 and is indeed cause by the recent addition of Debian packaging.\n\nCheers,\n\nMichael",
+    "created_at": "2008-03-19T07:24:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2591",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2591#issuecomment-17736",
+    "user": "mabshoff"
+}
+```
 
 This is a dupe of #2262 and is indeed cause by the recent addition of Debian packaging.
 
@@ -48,8 +73,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-19 07:24:29
+archive/issue_comments_017737.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2008-03-19T07:24:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2591",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2591#issuecomment-17737",
+    "user": "mabshoff"
+}
+```
 
 Resolution: duplicate

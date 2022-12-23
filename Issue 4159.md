@@ -1,11 +1,21 @@
 # Issue 4159: sage -bdist fails on osx 10.5 ppc with libpng errors
 
-Issue created by migration from https://trac.sagemath.org/ticket/4159
-
-Original creator: was
-
-Original creation time: 2008-09-20 15:47:42
-
+archive/issues_004159.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nWith sage-3.1.2 if you try to do sage -bdist it fails with weird libpng linking errors\nand missing symbols.  This is when it tries to make a dmg. \n\nFor the 3.1.2 binary, I'm just using tar for now until this is fixed.  The fix will\nprobably be to unset some dynamic library paths right before running the commands\nin the sage-bdist script that create the dmg. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4159\n\n",
+    "created_at": "2008-09-20T15:47:42Z",
+    "labels": [
+        "distribution",
+        "major",
+        "bug"
+    ],
+    "title": "sage -bdist fails on osx 10.5 ppc with libpng errors",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4159",
+    "user": "was"
+}
+```
 Assignee: mabshoff
 
 With sage-3.1.2 if you try to do sage -bdist it fails with weird libpng linking errors
@@ -15,10 +25,25 @@ For the 3.1.2 binary, I'm just using tar for now until this is fixed.  The fix w
 probably be to unset some dynamic library paths right before running the commands
 in the sage-bdist script that create the dmg. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4159
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-09-20 20:31:30
+archive/issue_comments_030188.json:
+```json
+{
+    "body": "What are the errors? Is this on varro?\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-20T20:31:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4159",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4159#issuecomment-30188",
+    "user": "mabshoff"
+}
+```
 
 What are the errors? Is this on varro?
 
@@ -27,23 +52,56 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by was created at 2008-09-21 13:52:37
+archive/issue_comments_030189.json:
+```json
+{
+    "body": "It turns out that this happens on *all* OS X machines, both 10.5 and 10.4 on both ppc and intel.  Basically \"sage -bdist\" is completely broken in sage-3.1.2 on OS X.",
+    "created_at": "2008-09-21T13:52:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4159",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4159#issuecomment-30189",
+    "user": "was"
+}
+```
 
 It turns out that this happens on *all* OS X machines, both 10.5 and 10.4 on both ppc and intel.  Basically "sage -bdist" is completely broken in sage-3.1.2 on OS X.
 
 
+
 ---
 
-Comment by was created at 2008-09-21 13:52:37
+archive/issue_comments_030190.json:
+```json
+{
+    "body": "Changing priority from major to blocker.",
+    "created_at": "2008-09-21T13:52:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4159",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4159#issuecomment-30190",
+    "user": "was"
+}
+```
 
 Changing priority from major to blocker.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-21 17:57:41
+archive/issue_comments_030191.json:
+```json
+{
+    "body": "Yeah, I agree that the fix will be to unset DYLD_LIBRARY_PATH right before actually calling hdiutil in sage-bdist. Very odd that a command line utility pulls in libpng symbols. Oh well.\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-21T17:57:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4159",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4159#issuecomment-30191",
+    "user": "mabshoff"
+}
+```
 
 Yeah, I agree that the fix will be to unset DYLD_LIBRARY_PATH right before actually calling hdiutil in sage-bdist. Very odd that a command line utility pulls in libpng symbols. Oh well.
 
@@ -52,16 +110,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-30 17:43:16
+archive/issue_comments_030192.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-09-30T17:43:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4159",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4159#issuecomment-30192",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-30 17:43:16
+archive/issue_comments_030193.json:
+```json
+{
+    "body": "Patch coming up.\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-30T17:43:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4159",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4159#issuecomment-30193",
+    "user": "mabshoff"
+}
+```
 
 Patch coming up.
 
@@ -70,27 +150,73 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_030194.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-10-12T23:30:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4159",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4159#issuecomment-30194",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2008-10-12 23:31:26
+archive/issue_comments_030195.json:
+```json
+{
+    "body": "Looks good to me.",
+    "created_at": "2008-10-12T23:31:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4159",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4159#issuecomment-30195",
+    "user": "mhansen"
+}
+```
 
 Looks good to me.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-12 23:39:40
+archive/issue_comments_030196.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-10-12T23:39:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4159",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4159#issuecomment-30196",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-12 23:39:40
+archive/issue_comments_030197.json:
+```json
+{
+    "body": "Merged in Sage 3.1.3.rc0",
+    "created_at": "2008-10-12T23:39:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4159",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4159#issuecomment-30197",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.1.3.rc0

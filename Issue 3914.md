@@ -1,11 +1,21 @@
 # Issue 3914: error in parsing maxima output
 
-Issue created by migration from https://trac.sagemath.org/ticket/3914
-
-Original creator: jason
-
-Original creation time: 2008-08-20 18:19:22
-
+archive/issues_003914.json:
+```json
+{
+    "body": "Assignee: was\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.1.1, Release Date: 2008-08-17                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: var('s,t')\n(s, t)\nsage: f=function('f', t)\nsage: f.diff(t,2)\ndiff(f(t), t, 2)\nsage: f.diff(t,2).laplace(t,s)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/grout/<ipython console> in <module>()\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/calculus/calculus.py in laplace(self, t, s)\n   2290             sage: (p1+p2).save()\n   2291         \"\"\"\n-> 2292         return self.parent()(self._maxima_().laplace(var(t), var(s)))\n   2293\n   2294     def inverse_laplace(self, t, s):\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/calculus/calculus.py in __call__(self, x)\n    449                 msg, s, pos = err.args\n    450                 raise TypeError, \"%s: %s !!! %s\" % (msg, s[:pos], s[pos:])\n--> 451         return self._coerce_impl(x)\n    452\n    453     def _coerce_impl(self, x):\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/calculus/calculus.py in _coerce_impl(self, x)\n    467             return x\n    468         elif isinstance(x, MaximaElement):\n--> 469             return symbolic_expression_from_maxima_element(x)\n    470         # if \"x\" is a SymPy object, convert it to a SAGE object\n    471         elif is_Polynomial(x) or is_MPolynomial(x):\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/calculus/calculus.py in symbolic_expression_from_maxima_element(x)\n   8314         x^(sqrt(y) + pi) - sin(e)\n   8315     \"\"\"\n-> 8316     return symbolic_expression_from_maxima_string(x.name())\n   8317\n   8318 def evaled_symbolic_expression_from_maxima_string(x):\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/calculus/calculus.py in symbolic_expression_from_maxima_string(x, equals_sub, maxima)\n   8298         # evaluation of maxima code are assumed pre-simplified\n   8299         is_simplified = True\n-> 8300         return symbolic_expression_from_string(s, syms, accept_sequence=True)\n   8301     except SyntaxError:\n   8302         raise TypeError, \"unable to make sense of Maxima expression '%s' in SAGE\"%s\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/calculus/calculus.py in symbolic_expression_from_string(s, syms, accept_sequence)\n   8431             global _augmented_syms\n   8432             _augmented_syms = syms\n-> 8433             return parse_func(s)\n   8434         finally:\n   8435             _augmented_syms = {}\n\n/home/grout/parser.pyx in sage.misc.parser.Parser.parse_sequence (sage/misc/parser.c:3012)()\n\n/home/grout/parser.pyx in sage.misc.parser.Parser.parse_sequence (sage/misc/parser.c:2911)()\n\n/home/grout/parser.pyx in sage.misc.parser.Parser.p_sequence (sage/misc/parser.c:3304)()\n\n/home/grout/parser.pyx in sage.misc.parser.Parser.p_eqn (sage/misc/parser.c:3929)()\n\n/home/grout/parser.pyx in sage.misc.parser.Parser.p_expr (sage/misc/parser.c:4214)()\n\n/home/grout/parser.pyx in sage.misc.parser.Parser.p_term (sage/misc/parser.c:4423)()\n\n/home/grout/parser.pyx in sage.misc.parser.Parser.p_factor (sage/misc/parser.c:4737)()\n\n/home/grout/parser.pyx in sage.misc.parser.Parser.p_factor (sage/misc/parser.c:4763)()\n\n/home/grout/parser.pyx in sage.misc.parser.Parser.p_power (sage/misc/parser.c:4858)()\n\n/home/grout/parser.pyx in sage.misc.parser.Parser.p_atom (sage/misc/parser.c:5234)()\n\nTypeError: __call__() got an unexpected keyword argument 't'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3914\n\n",
+    "created_at": "2008-08-20T18:19:22Z",
+    "labels": [
+        "interfaces",
+        "major",
+        "bug"
+    ],
+    "title": "error in parsing maxima output",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3914",
+    "user": "jason"
+}
+```
 Assignee: was
 
 
@@ -91,10 +101,25 @@ TypeError: __call__() got an unexpected keyword argument 't'
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3914
+
+
+
+
 
 ---
 
-Comment by kcrisman created at 2009-09-28 18:20:42
+archive/issue_comments_027993.json:
+```json
+{
+    "body": "The errors are now slightly different post-Pynac switch, but here is the real issue.\n\n```\nsage: var('t,s')\n(t, s)\nsage: f = function('f',t)\nsage: g = f.diff(t,2)\nsage: h = f.diff(t,1)\nsage: f.laplace(t,s)\nlaplace(f(t), t, s)\nsage: h.laplace(t,s)\ns*laplace(f(t), t, s) - f(0)\nsage: SR(f)._maxima_().laplace(var('t'), var('s'))\n'laplace('f(t),t,s)\nsage: SR(h)._maxima_().laplace(var('t'), var('s'))\ns*'laplace('f(t),t,s)-'f(0)\nsage: SR(g)._maxima_().laplace(var('t'), var('s'))\n-?%at('diff('f(t),t,1),t=0)+s^2*'laplace('f(t),t,s)-'f(0)*s\n```\n\nSage has no chance to parse that!  And here is what it means:\n\n```\nMaxima 5.19.1 http://maxima.sourceforge.net\nUsing Lisp SBCL 1.0.30\nDistributed under the GNU Public License. See the file COPYING.\nDedicated to the memory of William Schelter.\nThe function bug_report() provides bug reporting information.\n(%i1) diff(f(t),t,2);\n                                   2\n                                  d\n(%o1)                             --- (f(t))\n                                    2\n                                  dt\n(%i2) laplace(%,t,s);\n                         !\n                d        !         2\n(%o2)         - -- (f(t))!      + s  laplace(f(t), t, s) - f(0) s\n                dt       !\n                         !t = 0\n```\n\nSo Maxima is trying to evaluate the derivative of f at t=0, which Sage doesn't know how to evaluate.  Do we have syntax for that?  I think that \n\n```\nsage: h.subs(t=0)\nD[0](f)(0)\n```\n\nmight not be what we are looking for.   Anyway, we definitely would have to improve our handling of the output from Maxima in order to get this right.",
+    "created_at": "2009-09-28T18:20:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3914",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3914#issuecomment-27993",
+    "user": "kcrisman"
+}
+```
 
 The errors are now slightly different post-Pynac switch, but here is the real issue.
 
@@ -148,44 +173,110 @@ D[0](f)(0)
 might not be what we are looking for.   Anyway, we definitely would have to improve our handling of the output from Maxima in order to get this right.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-10-05 13:55:21
+archive/issue_comments_027994.json:
+```json
+{
+    "body": "Just to clarify, fixing #385 would solve this.",
+    "created_at": "2009-10-05T13:55:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3914",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3914#issuecomment-27994",
+    "user": "kcrisman"
+}
+```
 
 Just to clarify, fixing #385 would solve this.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-10-20 06:48:26
+archive/issue_comments_027995.json:
+```json
+{
+    "body": "Also to clarify, there is in fact a doctest already in #385 for this, so a reviewer can close two for the price of one...",
+    "created_at": "2009-10-20T06:48:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3914",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3914#issuecomment-27995",
+    "user": "kcrisman"
+}
+```
 
 Also to clarify, there is in fact a doctest already in #385 for this, so a reviewer can close two for the price of one...
 
 
+
 ---
 
-Comment by kcrisman created at 2009-10-20 06:48:26
+archive/issue_comments_027996.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-10-20T06:48:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3914",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3914#issuecomment-27996",
+    "user": "kcrisman"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by robert.marik created at 2009-10-25 20:53:43
+archive/issue_comments_027997.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2009-10-25T20:53:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3914",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3914#issuecomment-27997",
+    "user": "robert.marik"
+}
+```
 
 Resolution: duplicate
 
 
+
 ---
 
-Comment by robert.marik created at 2009-10-25 20:53:43
+archive/issue_comments_027998.json:
+```json
+{
+    "body": "Has been fixed by trac #385",
+    "created_at": "2009-10-25T20:53:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3914",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3914#issuecomment-27998",
+    "user": "robert.marik"
+}
+```
 
 Has been fixed by trac #385
 
 
+
 ---
 
-Comment by mvngu created at 2009-10-28 12:28:21
+archive/issue_comments_027999.json:
+```json
+{
+    "body": "Replying to [comment:4 robert.marik]:\n> Has been fixed by trac #385\nRobert, please don't close tickets. That's the job of the release manager. See [this section](http://www.sagemath.org/doc/developer/trac.html#closing-tickets) of the Developer's Guide for conventions on closing tickets.",
+    "created_at": "2009-10-28T12:28:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3914",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3914#issuecomment-27999",
+    "user": "mvngu"
+}
+```
 
 Replying to [comment:4 robert.marik]:
 > Has been fixed by trac #385

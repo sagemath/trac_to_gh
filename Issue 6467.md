@@ -1,11 +1,21 @@
 # Issue 6467: all primitive roots modulo n
 
-Issue created by migration from https://trac.sagemath.org/ticket/6467
-
-Original creator: mvngu
-
-Original creation time: 2009-07-05 18:11:29
-
+archive/issues_006467.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  kcrisman\n\nKeywords: primitive roots, generators mod n\n\nFor a fixed positive integer n, compute a list of all the primitive roots modulo n. Sage currently can compute one primitive root modulo n, but not all of them.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6467\n\n",
+    "created_at": "2009-07-05T18:11:29Z",
+    "labels": [
+        "number theory",
+        "major",
+        "enhancement"
+    ],
+    "title": "all primitive roots modulo n",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6467",
+    "user": "mvngu"
+}
+```
 Assignee: was
 
 CC:  kcrisman
@@ -14,24 +24,63 @@ Keywords: primitive roots, generators mod n
 
 For a fixed positive integer n, compute a list of all the primitive roots modulo n. Sage currently can compute one primitive root modulo n, but not all of them.
 
+Issue created by migration from https://trac.sagemath.org/ticket/6467
+
+
+
+
 
 ---
 
-Comment by mvngu created at 2009-07-05 18:24:38
+archive/issue_comments_052285.json:
+```json
+{
+    "body": "The patch `trac_6467.patch` adds two functions to `sage/rings/arith.py` for calculating all the primitive roots modulo a fixed integer n:\n1. `primitive_roots()` --- Return all the generators for the multiplicative group of integers modulo a positive integer n. Where n is a positive composite integer, the function uses a naive method that is inefficient, since I do not know of a better method. If n is a positive prime integer, then use the function `primitive_roots_prime()`.\n2. `primitive_roots_prime()` --- Return all the generators for the multiplicative group of integers modulo a positive prime p. Again, this uses an inefficient method since I'm not aware of a better way.",
+    "created_at": "2009-07-05T18:24:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6467",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6467#issuecomment-52285",
+    "user": "mvngu"
+}
+```
 
 The patch `trac_6467.patch` adds two functions to `sage/rings/arith.py` for calculating all the primitive roots modulo a fixed integer n:
- 1. `primitive_roots()` --- Return all the generators for the multiplicative group of integers modulo a positive integer n. Where n is a positive composite integer, the function uses a naive method that is inefficient, since I do not know of a better method. If n is a positive prime integer, then use the function `primitive_roots_prime()`.
- 1. `primitive_roots_prime()` --- Return all the generators for the multiplicative group of integers modulo a positive prime p. Again, this uses an inefficient method since I'm not aware of a better way.
+1. `primitive_roots()` --- Return all the generators for the multiplicative group of integers modulo a positive integer n. Where n is a positive composite integer, the function uses a naive method that is inefficient, since I do not know of a better method. If n is a positive prime integer, then use the function `primitive_roots_prime()`.
+2. `primitive_roots_prime()` --- Return all the generators for the multiplicative group of integers modulo a positive prime p. Again, this uses an inefficient method since I'm not aware of a better way.
+
 
 
 ---
 
-Comment by mvngu created at 2009-07-05 18:36:11
+archive/issue_comments_052286.json:
+```json
+{
+    "body": "based on Sage 4.1.rc0",
+    "created_at": "2009-07-05T18:36:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6467",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6467#issuecomment-52286",
+    "user": "mvngu"
+}
+```
 
 based on Sage 4.1.rc0
 
 
+
 ---
+
+archive/issue_comments_052287.json:
+```json
+{
+    "body": "Attachment\n\nI'm not totally convinced by this. \n\n- The function `primitive_roots_prime` shouldn't be exported to the global namespace. At present *everything* in sage/rings/arith is exported, which (to me) suggests moving the innards of this function to methods of the IntegerModRing class.\n\n- There is already a method `IntegerRing_class.multiplicative_group_is_cyclic()` which you can use to find out if a primitive root exists -- I fixed a bug in it not long back. Asking for a primitive root and then catching the exception if one isn't found is a bit ugly, besides being much slower.\n\n- For a prime modulus p, you take a primitive root g, then compute g<sup>k</sup> for each k in 1...phi(p). It would be more efficient to have a variable that is initialised to 1 and then multiplied by g (mod p) each time, avoiding the separate power_mod call. \n\n- The algorithm in the composite case can be *massively* improved using two simple observations: (1) there are no primitive roots mod n unless n is < 8, an odd prime power, or twice an odd prime power; and (2) if n is an odd prime power then g is a primitive root mod p<sup>k</sup> if and only if it's a primitive root mod p (and g is a primitive root mod 2 * p<sup>k</sup> iff g is a primitive root mod p and g is odd).\n\n(At a rough guess your current algorithm is running in time about N^{3/2} times a power of log; this observation will speed it up to N * power of log.)\n\nDavid",
+    "created_at": "2009-07-14T10:42:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6467",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6467#issuecomment-52287",
+    "user": "davidloeffler"
+}
+```
 
 Attachment
 
@@ -50,8 +99,19 @@ I'm not totally convinced by this.
 David
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-07-14 10:45:36
+archive/issue_comments_052288.json:
+```json
+{
+    "body": "Oops, by `IntegerRing_class.multiplicative_group_is_cyclic()` I meant `IntegerModRing_generic.multiplicative_group_is_cyclic()`, in `sage.rings.integer_mod_ring`. Sorry.",
+    "created_at": "2009-07-14T10:45:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6467",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6467#issuecomment-52288",
+    "user": "davidloeffler"
+}
+```
 
 Oops, by `IntegerRing_class.multiplicative_group_is_cyclic()` I meant `IntegerModRing_generic.multiplicative_group_is_cyclic()`, in `sage.rings.integer_mod_ring`. Sorry.

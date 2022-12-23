@@ -1,11 +1,21 @@
 # Issue 8367: element_class of Subsets is broken
 
-Issue created by migration from https://trac.sagemath.org/ticket/8367
-
-Original creator: giraudo
-
-Original creation time: 2010-02-25 17:39:41
-
+archive/issues_008367.json:
+```json
+{
+    "body": "Assignee: giraudo\n\nKeywords: Subsets element_class\n\nelement_class of Subsets is broken\n\n```\nsage: s = Subsets(Set([1]))\nsage: e = s.first()\nsage: isinstance(e, s.element_class)\nFalse\n```\n\n\nNote: this should be caught by setting good categories \n\n```\nsage: s.category()\nCategory of objects\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8367\n\n",
+    "created_at": "2010-02-25T17:39:41Z",
+    "labels": [
+        "combinatorics",
+        "major",
+        "bug"
+    ],
+    "title": "element_class of Subsets is broken",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8367",
+    "user": "giraudo"
+}
+```
 Assignee: giraudo
 
 Keywords: Subsets element_class
@@ -28,22 +38,61 @@ Category of objects
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8367
+
+
+
+
 
 ---
+
+archive/issue_comments_074792.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-02-25T18:21:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8367",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8367#issuecomment-74792",
+    "user": "giraudo"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by giraudo created at 2010-02-25 18:22:52
+archive/issue_comments_074793.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-02-25T18:22:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8367",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8367#issuecomment-74793",
+    "user": "giraudo"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by hivert created at 2010-03-01 16:39:18
+archive/issue_comments_074794.json:
+```json
+{
+    "body": "Replying to [comment:1 giraudo]:\n\nHi Samuele,\n\nI think you made a mistake in opening new ticket #8396 for this problem. This ticket should be closed as duplicate.",
+    "created_at": "2010-03-01T16:39:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8367",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8367#issuecomment-74794",
+    "user": "hivert"
+}
+```
 
 Replying to [comment:1 giraudo]:
 
@@ -52,8 +101,19 @@ Hi Samuele,
 I think you made a mistake in opening new ticket #8396 for this problem. This ticket should be closed as duplicate.
 
 
+
 ---
 
-Comment by hivert created at 2010-03-01 16:39:18
+archive/issue_comments_074795.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2010-03-01T16:39:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8367",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8367#issuecomment-74795",
+    "user": "hivert"
+}
+```
 
 Resolution: duplicate

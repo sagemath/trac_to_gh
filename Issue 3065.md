@@ -1,11 +1,21 @@
 # Issue 3065: empty matrices: frobenius() throws  RuntimeError
 
-Issue created by migration from https://trac.sagemath.org/ticket/3065
-
-Original creator: dfdeshom
-
-Original creation time: 2008-04-30 15:16:35
-
+archive/issues_003065.json:
+```json
+{
+    "body": "Assignee: was\n\nThis happens for frobenius(0) and frobenius(2) only. \n\n```\nsage: m = matrix([])\nsage: m.frobenius(0)\n<type 'exceptions.OverflowError'>: range() result has too many items\n\nsage: m.frobenius(2)\n<type 'exceptions.RuntimeError'>:\n\nsage: m.frobenius(2,'x')\n<type 'exceptions.RuntimeError'>:\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3065\n\n",
+    "created_at": "2008-04-30T15:16:35Z",
+    "labels": [
+        "linear algebra",
+        "major",
+        "bug"
+    ],
+    "title": "empty matrices: frobenius() throws  RuntimeError",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3065",
+    "user": "dfdeshom"
+}
+```
 Assignee: was
 
 This happens for frobenius(0) and frobenius(2) only. 
@@ -24,17 +34,43 @@ sage: m.frobenius(2,'x')
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3065
+
+
+
+
 
 ---
 
-Comment by dfdeshom created at 2008-04-30 21:33:14
+archive/issue_comments_021155.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"pari\".",
+    "created_at": "2008-04-30T21:33:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3065",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3065#issuecomment-21155",
+    "user": "dfdeshom"
+}
+```
 
 Changing keywords from "" to "pari".
 
 
+
 ---
 
-Comment by dfdeshom created at 2008-04-30 21:33:14
+archive/issue_comments_021156.json:
+```json
+{
+    "body": "PARI might be to blame here. The code below should return 0 everytime: \n\n```\nsage: pari('matrix(0,0)').ncols()\n 0\n\nsage: pari('matrix(0,0)').nrows()\n 47961608997888\n\nsage: pari('matrix(0,0)').nrows()\n 47961608997888\n```\n",
+    "created_at": "2008-04-30T21:33:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3065",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3065#issuecomment-21156",
+    "user": "dfdeshom"
+}
+```
 
 PARI might be to blame here. The code below should return 0 everytime: 
 
@@ -51,16 +87,38 @@ sage: pari('matrix(0,0)').nrows()
 
 
 
+
 ---
 
-Comment by dfdeshom created at 2008-05-01 15:45:13
+archive/issue_comments_021157.json:
+```json
+{
+    "body": "Patch attached. I suspect the problem I pointed above is due to `<GEN>self.g[1]` not being initialized.",
+    "created_at": "2008-05-01T15:45:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3065",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3065#issuecomment-21157",
+    "user": "dfdeshom"
+}
+```
 
 Patch attached. I suspect the problem I pointed above is due to `<GEN>self.g[1]` not being initialized.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-02 17:22:02
+archive/issue_comments_021158.json:
+```json
+{
+    "body": "Opps, in case of `if self.ncols() == 0:` you never call `_sig_off`:\n\n```\n5391\t5391\t        _sig_on \n \t5392\t        # if this matrix has no columns \n \t5393\t        # then it has no rows.  \n \t5394\t        if self.ncols() == 0: \n \t5395\t            return 0 \n```\n\nOther than that the patch looks fine to me.\n\nCheers,\n\nMichael",
+    "created_at": "2008-05-02T17:22:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3065",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3065#issuecomment-21158",
+    "user": "mabshoff"
+}
+```
 
 Opps, in case of `if self.ncols() == 0:` you never call `_sig_off`:
 
@@ -79,9 +137,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by was created at 2008-05-02 17:31:34
+archive/issue_comments_021159.json:
+```json
+{
+    "body": "\n```\n10:23 < dfdeshom-away> mabshoff: re: #3065: self>ncols() itself includes sig_on/sig_off calls, does \n                       that matter?\n10:23 < jason|log> How would it make things worse?\n10:23 < mabshoff> dfdeshom-away: Yes. I think it does.\n10:23 < wstein> I don't know.  I'm just paranaoid about async calls, javascript, and putting in delays \n                that could lock the browser.\n10:24 < mabshoff> wstein knows more about the code, but I think the fix is easy enough.\n10:24 < wstein> Basically \"putting in a delay\" never quite works right robustly when\n10:24 < wstein> doing async programming, in my experience.\n10:24 < mabshoff> And since we are playing with the interrupt handler here I would consider the fix \n                  simple enough to actually do it.\n10:24 < wstein> dfdeshom-away -- that code is very very bad.\n10:24 < wstein> You will break things horribly by doing tat.\n10:25 < mabshoff> :)\n10:25 < wstein> It breaks two rules of _sig_*:\n10:25 < mabshoff> +1 for code review.\n10:25 < dfdeshom-away> feel free. I'll get to it this afternoon, but I don't know what your timeline is\n10:25 < wstein> (1) never put any Python code in there.\n10:25 < wstein> (2) always balance _sig_on with _sig_off.\n10:25 < wstein> The fix is easy.\n10:25 < wstein> Just put _sig_on *after* the if self.ncols() == 0: line\n10:25 < wstein> Very easy fix.\n```\n",
+    "created_at": "2008-05-02T17:31:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3065",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3065#issuecomment-21159",
+    "user": "was"
+}
+```
 
 
 ```
@@ -111,14 +180,38 @@ Comment by was created at 2008-05-02 17:31:34
 
 
 
+
 ---
+
+archive/issue_comments_021160.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-05-02T17:41:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3065",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3065#issuecomment-21160",
+    "user": "dfdeshom"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-05 15:51:34
+archive/issue_comments_021161.json:
+```json
+{
+    "body": "Patch looks good to me. My concerns have been addressed. Positive review.\n\nCheers,\n\nMichael",
+    "created_at": "2008-05-05T15:51:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3065",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3065#issuecomment-21161",
+    "user": "mabshoff"
+}
+```
 
 Patch looks good to me. My concerns have been addressed. Positive review.
 
@@ -127,15 +220,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-05 20:36:23
+archive/issue_comments_021162.json:
+```json
+{
+    "body": "Merged in Sage 3.0.2.alpha0",
+    "created_at": "2008-05-05T20:36:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3065",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3065#issuecomment-21162",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.2.alpha0
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-05 20:36:23
+archive/issue_comments_021163.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-05-05T20:36:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3065",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3065#issuecomment-21163",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 4697: change integration error message
 
-Issue created by migration from https://trac.sagemath.org/ticket/4697
-
-Original creator: was
-
-Original creation time: 2008-12-04 21:55:14
-
+archive/issues_004697.json:
+```json
+{
+    "body": "Assignee: burcin\n\nFix the following instance by a trivial change to raising an exception.  This causes tons of confusion for (new) users, since there isn't any way to easily \"discover\" what to do.\n\n\n```\nOn Dec 4, 3:07 pm, \"William Stein\" <wst...@gmail.com> wrote:\n> Do you think it would be better if instead of\n>\n> sage: print integrate(integrate(f,y,x^3,x^0.5),y,0,1)\n> ... Is  x  positive or negative?\n>\n> one saw:\n> ... Is  x  positive or negative?  (Try using the assume command.)\n\nI think the latter is more intuitive; in fact, I would go as far as to\ndo something like this:\n\n ... Is x positive or negative? (Try the assume(x>0) command before\n integral evaluation)\n\nThanks,\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4697\n\n",
+    "created_at": "2008-12-04T21:55:14Z",
+    "labels": [
+        "calculus",
+        "major",
+        "enhancement"
+    ],
+    "title": "change integration error message",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4697",
+    "user": "was"
+}
+```
 Assignee: burcin
 
 Fix the following instance by a trivial change to raising an exception.  This causes tons of confusion for (new) users, since there isn't any way to easily "discover" what to do.
@@ -32,26 +42,65 @@ Thanks,
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4697
+
+
+
+
 
 ---
+
+archive/issue_comments_035385.json:
+```json
+{
+    "body": "Attachment\n\nBased on 3.3.alpha0",
+    "created_at": "2009-01-29T00:55:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4697",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4697#issuecomment-35385",
+    "user": "kcrisman"
+}
+```
 
 Attachment
 
 Based on 3.3.alpha0
 
 
+
 ---
 
-Comment by kcrisman created at 2009-01-29 01:04:06
+archive/issue_comments_035386.json:
+```json
+{
+    "body": "This patch improves the error message Sage sends along with the Maxima constraint request.  The message is rather longish, but here probably extreme clarity is best, based on the original reporter's point about new users.  Some doctests for the _expect_expr function are also added.\n\nThis passes testing interfaces/maxima.py, and should be okay on calculus.py (which I can't test because it always times out); I couldn't find any other references to this error message but I think I got them all.",
+    "created_at": "2009-01-29T01:04:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4697",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4697#issuecomment-35386",
+    "user": "kcrisman"
+}
+```
 
 This patch improves the error message Sage sends along with the Maxima constraint request.  The message is rather longish, but here probably extreme clarity is best, based on the original reporter's point about new users.  Some doctests for the _expect_expr function are also added.
 
 This passes testing interfaces/maxima.py, and should be okay on calculus.py (which I can't test because it always times out); I couldn't find any other references to this error message but I think I got them all.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-29 01:14:15
+archive/issue_comments_035387.json:
+```json
+{
+    "body": "With that patch applied to my 3.3.alpha3 merge tree all doctests pass.\n\nCheers,\n\nMichael",
+    "created_at": "2009-01-29T01:14:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4697",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4697#issuecomment-35387",
+    "user": "mabshoff"
+}
+```
 
 With that patch applied to my 3.3.alpha3 merge tree all doctests pass.
 
@@ -60,9 +109,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-29 01:16:34
+archive/issue_comments_035388.json:
+```json
+{
+    "body": "This was a positive review by the way :) - I just forgot to add it to the doctest comment. Nice docstring and doctesting by the way, too.\n\nCheers,\n\nMichael",
+    "created_at": "2009-01-29T01:16:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4697",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4697#issuecomment-35388",
+    "user": "mabshoff"
+}
+```
 
 This was a positive review by the way :) - I just forgot to add it to the doctest comment. Nice docstring and doctesting by the way, too.
 
@@ -71,9 +131,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-29 01:17:30
+archive/issue_comments_035389.json:
+```json
+{
+    "body": "Merged in Sage 3.3.alpha3.\n\nCheers,\n\nMichael",
+    "created_at": "2009-01-29T01:17:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4697",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4697#issuecomment-35389",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.3.alpha3.
 
@@ -82,8 +153,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-29 01:17:30
+archive/issue_comments_035390.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-01-29T01:17:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4697",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4697#issuecomment-35390",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

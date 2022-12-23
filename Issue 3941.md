@@ -1,11 +1,21 @@
 # Issue 3941: threading diff over lists to give the jacobian
 
-Issue created by migration from https://trac.sagemath.org/ticket/3941
-
-Original creator: jason
-
-Original creation time: 2008-08-24 05:13:27
-
+archive/issues_003941.json:
+```json
+{
+    "body": "Assignee: gfurnish\n\nIn MMA, you can thread the derivative over lists of variables and functions to compute the Jacobian.  Here's a routine that wraps the sage diff function to do it.  \n\n\n```\ndef diff(f,*args):\n    if isinstance(f, (list, tuple)):\n        return [diff(component,*args) for component in f]\n    else:\n        if isinstance(args[0], (list, tuple)):\n            return [diff(f,variable) for variable in args[0]]\n        else:\n            return sage.all.diff(f,*args)\n```\n\n\nand the results:\n\n\n```\nsage: var('a,b,c,d,x,y')\nsage: diff((a*x+b*y,c*x+d*y),(x,y))\n[[a, b], [c, d]]\n```\n\n\nwell, so the result is not really a matrix, but rather a nested list that could be indexed like a matrix or turned into a matrix in the above case.\n\n\nWe could write the above even more simply if we had an outer product operator: \n\nouter_product(diff,f,vars), where f and vars were lists.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3941\n\n",
+    "created_at": "2008-08-24T05:13:27Z",
+    "labels": [
+        "calculus",
+        "major",
+        "bug"
+    ],
+    "title": "threading diff over lists to give the jacobian",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3941",
+    "user": "jason"
+}
+```
 Assignee: gfurnish
 
 In MMA, you can thread the derivative over lists of variables and functions to compute the Jacobian.  Here's a routine that wraps the sage diff function to do it.  
@@ -40,52 +50,133 @@ We could write the above even more simply if we had an outer product operator:
 
 outer_product(diff,f,vars), where f and vars were lists.
 
+Issue created by migration from https://trac.sagemath.org/ticket/3941
+
+
+
+
 
 ---
 
-Comment by jwmerrill created at 2008-08-31 15:06:45
+archive/issue_comments_028256.json:
+```json
+{
+    "body": "See also #2547, asking for a symbolic gradient and hessian.",
+    "created_at": "2008-08-31T15:06:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3941",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3941#issuecomment-28256",
+    "user": "jwmerrill"
+}
+```
 
 See also #2547, asking for a symbolic gradient and hessian.
 
 
+
 ---
 
-Comment by jason created at 2008-11-14 06:24:25
+archive/issue_comments_028257.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-11-14T06:24:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3941",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3941#issuecomment-28257",
+    "user": "jason"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by jason created at 2008-11-14 06:24:25
+archive/issue_comments_028258.json:
+```json
+{
+    "body": "Changing assignee from gfurnish to jason.",
+    "created_at": "2008-11-14T06:24:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3941",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3941#issuecomment-28258",
+    "user": "jason"
+}
+```
 
 Changing assignee from gfurnish to jason.
 
 
+
 ---
 
-Comment by jason created at 2009-01-14 07:37:47
+archive/issue_comments_028259.json:
+```json
+{
+    "body": "See http://groups.google.com/group/sage-devel/browse_thread/thread/666b18d9ea182f13 for an updated mydiff function and discussion.",
+    "created_at": "2009-01-14T07:37:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3941",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3941#issuecomment-28259",
+    "user": "jason"
+}
+```
 
 See http://groups.google.com/group/sage-devel/browse_thread/thread/666b18d9ea182f13 for an updated mydiff function and discussion.
 
 
+
 ---
 
-Comment by was created at 2009-01-14 16:47:34
+archive/issue_comments_028260.json:
+```json
+{
+    "body": "Why not have a function .jacobian to give the jacobian?",
+    "created_at": "2009-01-14T16:47:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3941",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3941#issuecomment-28260",
+    "user": "was"
+}
+```
 
 Why not have a function .jacobian to give the jacobian?
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-01-22 18:22:05
+archive/issue_comments_028261.json:
+```json
+{
+    "body": "Changing type from defect to enhancement.",
+    "created_at": "2009-01-22T18:22:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3941",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3941#issuecomment-28261",
+    "user": "AlexGhitza"
+}
+```
 
 Changing type from defect to enhancement.
 
 
+
 ---
 
-Comment by jason created at 2009-02-12 22:44:16
+archive/issue_comments_028262.json:
+```json
+{
+    "body": "What about functions with codomain R<sup>n</sup> where n>1?  If these are represented via a list, tuple, or vector, the code works from above (well, let's add handling of vectors with the following:\n\n\n```\ndef diff(f, *args):\n    if isinstance(f, (list, tuple)) or sage.structure.element.is_Vector(f):\n        return [diff(component, *args) for component in f]\n    else:\n        if isinstance(args[0], (list, tuple)) or is_Vector(args[0]):\n            return [diff(f, variable) for variable in args[0]]\n        else:\n            return sage.all.diff(f, *args)\n```\n\n\nThis wouldn't work with a `.jacobian` method---where would we put the method?",
+    "created_at": "2009-02-12T22:44:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3941",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3941#issuecomment-28262",
+    "user": "jason"
+}
+```
 
 What about functions with codomain R<sup>n</sup> where n>1?  If these are represented via a list, tuple, or vector, the code works from above (well, let's add handling of vectors with the following:
 
@@ -105,16 +196,38 @@ def diff(f, *args):
 This wouldn't work with a `.jacobian` method---where would we put the method?
 
 
+
 ---
 
-Comment by jason created at 2009-02-13 05:50:22
+archive/issue_comments_028263.json:
+```json
+{
+    "body": "#5253 makes this less needed, but I still think it would be nice to have good syntax for this sort of thing using the diff function.",
+    "created_at": "2009-02-13T05:50:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3941",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3941#issuecomment-28263",
+    "user": "jason"
+}
+```
 
 #5253 makes this less needed, but I still think it would be nice to have good syntax for this sort of thing using the diff function.
 
 
+
 ---
 
-Comment by kcrisman created at 2010-05-26 20:09:39
+archive/issue_comments_028264.json:
+```json
+{
+    "body": "Does the new functionality that\n\n```\nf(x,y)=3*sin(x)-2*cos(y)-x*y\nf.diff(2)\n```\n\nworks change anything on this ticket?  Just throwing it out there, it may be irrelevant.",
+    "created_at": "2010-05-26T20:09:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3941",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3941#issuecomment-28264",
+    "user": "kcrisman"
+}
+```
 
 Does the new functionality that
 

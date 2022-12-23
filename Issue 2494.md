@@ -1,11 +1,21 @@
 # Issue 2494: bugs in evaluation of spherical bessel function
 
-Issue created by migration from https://trac.sagemath.org/ticket/2494
-
-Original creator: was
-
-Original creation time: 2008-03-12 14:44:25
-
+archive/issues_002494.json:
+```json
+{
+    "body": "Assignee: jkantor\n\n\n```\nBUG 1:\n\nHi,\nI was just trying to calculate some stuff with spherical Bessel\nfunctions and got this error message:\n\nsage: spherical_bessel_J(3,.1)\n\n\n....\n6823         return x\n  6824     except SyntaxError:\n-> 6825         raise TypeError, \"unable to make sense of Maxima\nexpression '%s' in SAGE\"%s\n  6826     finally:\n  6827         is_simplified = False\n\n<type 'exceptions.TypeError'>: unable to make sense of Maxima\nexpression '9.5185197208655641L-6' in SAGE\nsage:\nKeyboardInterrupt\n\nI checked it, it happens for small values of the argument x.\nDoes anyone has a solution or work around?\n\nGreets,\n\nschorsch\n```\n\n\nBUG2\n\n```\nsage: spherical_bessel_J(3,.1, algorithm='scipy')\n---------------------------------------------------------------------------\n<type 'exceptions.NameError'>             Traceback (most recent call last)\n\n/Users/was/Downloads/z/<ipython console> in <module>()\n\n/Users/was/build/sage-2.10.3.rc3/local/lib/python2.5/site-packages/sage/functions/special.py in spherical_bessel_J(n, var, algorithm)\n    782         ans = ans.replace(\")\",\"\")\n    783         ans = ans.replace(\"j\",\"*I\")\n--> 784         return sage_eval(ans)\n    785     elif algorithm == 'maxima':\n    786         _init()\n\n/Users/was/build/sage-2.10.3.rc3/local/lib/python2.5/site-packages/sage/misc/sage_eval.py in sage_eval(source, locals)\n    108     p = preparse(source)\n    109     try:\n--> 110         return eval(p, sage.all.__dict__, locals)\n    111     except SyntaxError, msg:\n    112         raise SyntaxError, \"%s\\nError using SAGE to evaluate '%s'\"%(msg, p)\n\n/Users/was/Downloads/z/<string> in <module>()\n\n<type 'exceptions.NameError'>: name 'array' is not defined\n```\n\n\nProbably many of the special functions in functions/special.py have similar bugs. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2494\n\n",
+    "created_at": "2008-03-12T14:44:25Z",
+    "labels": [
+        "numerical",
+        "major",
+        "bug"
+    ],
+    "title": "bugs in evaluation of spherical bessel function",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2494",
+    "user": "was"
+}
+```
 Assignee: jkantor
 
 
@@ -72,24 +82,61 @@ sage: spherical_bessel_J(3,.1, algorithm='scipy')
 
 Probably many of the special functions in functions/special.py have similar bugs. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2494
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2009-06-04 21:25:09
+archive/issue_comments_016897.json:
+```json
+{
+    "body": "Changing assignee from jkantor to mhansen.",
+    "created_at": "2009-06-04T21:25:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2494",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2494#issuecomment-16897",
+    "user": "mhansen"
+}
+```
 
 Changing assignee from jkantor to mhansen.
 
 
+
 ---
 
-Comment by mhansen created at 2009-06-04 21:25:09
+archive/issue_comments_016898.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-06-04T21:25:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2494",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2494#issuecomment-16898",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-08-24 09:13:21
+archive/issue_comments_016899.json:
+```json
+{
+    "body": "Note that BUG 1 has disappeared in sage-4.1.1:\n\n\n```\nsage: spherical_bessel_J(3,.1)\n9.51851972087e-06\n```\n\n\nBUG 2 is still there.",
+    "created_at": "2009-08-24T09:13:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2494",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2494#issuecomment-16899",
+    "user": "AlexGhitza"
+}
+```
 
 Note that BUG 1 has disappeared in sage-4.1.1:
 
@@ -103,34 +150,91 @@ sage: spherical_bessel_J(3,.1)
 BUG 2 is still there.
 
 
+
 ---
+
+archive/issue_comments_016900.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-01-17T06:08:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2494",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2494#issuecomment-16900",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2010-01-17 06:08:48
+archive/issue_comments_016901.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-01-17T06:08:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2494",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2494#issuecomment-16901",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2010-01-23 02:07:49
+archive/issue_comments_016902.json:
+```json
+{
+    "body": "Looks good and passes tests.",
+    "created_at": "2010-01-23T02:07:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2494",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2494#issuecomment-16902",
+    "user": "AlexGhitza"
+}
+```
 
 Looks good and passes tests.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2010-01-23 02:07:49
+archive/issue_comments_016903.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-01-23T02:07:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2494",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2494#issuecomment-16903",
+    "user": "AlexGhitza"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mvngu created at 2010-01-24 12:01:57
+archive/issue_comments_016904.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-24T12:01:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2494",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2494#issuecomment-16904",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

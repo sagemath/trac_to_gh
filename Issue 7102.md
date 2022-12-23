@@ -1,11 +1,21 @@
 # Issue 7102: R.py doctest fails for non-english locale
 
-Issue created by migration from https://trac.sagemath.org/ticket/7102
-
-Original creator: GeorgSWeber
-
-Original creation time: 2009-10-03 19:14:40
-
+archive/issues_007102.json:
+```json
+{
+    "body": "Assignee: tbd\n\nTesting Sage-4.1.2-alpha4, I saw that the old failure from #6379 somehow was resurrected (probably by using some new version of the R package that has changed its internationalized warning messages). To reproduce the failure, do something (or nothing, see also #6379) like\n\n```\nexport LANG=de_DE.UTF-8\n```\n\nfrom a (sage -sh) shell and then you'll get:\n\n```\nsage -t -long \"devel/sage/sage/interfaces/r.py\"             \n**********************************************************************\nFile \"/Users/Shared/sage/sage-4.1.2.alpha4/devel/sage/sage/interfaces/r.py\", line 549:\n    sage: r.library('foobar')\nExpected:\n    Traceback (most recent call last):\n    ...\n    ImportError: ...\nGot nothing\n**********************************************************************\nFile \"/Users/Shared/sage/sage-4.1.2.alpha4/devel/sage/sage/interfaces/r.py\", line 839:\n    sage: r.completions('tes')\nExpected:\n    ['testInheritedMethods', 'testPlatformEquivalence', 'testVirtual']\nGot:\n    ['testInheritedMethods', 'testInheritedMethods', 'testPlatformEquivalence', 'testPlatformEquivalence', 'testVirtual', 'testVirtual']\n**********************************************************************\n2 items had failures:\n   1 of   5 in __main__.example_17\n   1 of   4 in __main__.example_34\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /Users/georgweber/.sage//tmp/.doctest_r.py\n         [7.3 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long \"devel/sage/sage/interfaces/r.py\"\n```\n\nFortunately, I fiddled around with this file and this bug more than once (see also #6594, #6646), so I knew where to look. Hopefully, this zombie is put down to rest ... \n\nIssue created by migration from https://trac.sagemath.org/ticket/7102\n\n",
+    "created_at": "2009-10-03T19:14:40Z",
+    "labels": [
+        "doctest coverage",
+        "major",
+        "bug"
+    ],
+    "title": "R.py doctest fails for non-english locale",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7102",
+    "user": "GeorgSWeber"
+}
+```
 Assignee: tbd
 
 Testing Sage-4.1.2-alpha4, I saw that the old failure from #6379 somehow was resurrected (probably by using some new version of the R package that has changed its internationalized warning messages). To reproduce the failure, do something (or nothing, see also #6379) like
@@ -51,42 +61,114 @@ The following tests failed:
 
 Fortunately, I fiddled around with this file and this bug more than once (see also #6594, #6646), so I knew where to look. Hopefully, this zombie is put down to rest ... 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7102
+
+
+
+
 
 ---
 
-Comment by GeorgSWeber created at 2009-10-03 19:17:26
+archive/issue_comments_058779.json:
+```json
+{
+    "body": "tested against 4.1.2.alpha4",
+    "created_at": "2009-10-03T19:17:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7102",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7102#issuecomment-58779",
+    "user": "GeorgSWeber"
+}
+```
 
 tested against 4.1.2.alpha4
 
 
+
 ---
 
-Comment by GeorgSWeber created at 2009-10-03 19:19:29
+archive/issue_comments_058780.json:
+```json
+{
+    "body": "Changing assignee from tbd to GeorgSWeber.",
+    "created_at": "2009-10-03T19:19:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7102",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7102#issuecomment-58780",
+    "user": "GeorgSWeber"
+}
+```
 
 Changing assignee from tbd to GeorgSWeber.
 
 
+
 ---
 
-Comment by GeorgSWeber created at 2009-10-03 19:19:29
+archive/issue_comments_058781.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-10-03T19:19:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7102",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7102#issuecomment-58781",
+    "user": "GeorgSWeber"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
+
+archive/issue_comments_058782.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-10-03T19:19:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7102",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7102#issuecomment-58782",
+    "user": "GeorgSWeber"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2009-10-05 03:00:57
+archive/issue_comments_058783.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-10-05T03:00:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7102",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7102#issuecomment-58783",
+    "user": "was"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by was created at 2009-10-05 03:00:57
+archive/issue_comments_058784.json:
+```json
+{
+    "body": "merged in sage-4.1.2.rc1...",
+    "created_at": "2009-10-05T03:00:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7102",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7102#issuecomment-58784",
+    "user": "was"
+}
+```
 
 merged in sage-4.1.2.rc1...

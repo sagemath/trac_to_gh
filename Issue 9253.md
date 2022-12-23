@@ -1,60 +1,153 @@
 # Issue 9253: A collection of little improvements to heegner.py
 
-Issue created by migration from https://trac.sagemath.org/ticket/9253
-
-Original creator: rlm
-
-Original creation time: 2010-06-17 18:23:51
-
+archive/issues_009253.json:
+```json
+{
+    "body": "Assignee: cremona\n\nThese are some of the things I did while working on my thesis.\n\nDepends on #9247 -- since this ticket still needs work, I'm marking the current ticket as needs work too, although it should be ready to go.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9253\n\n",
+    "created_at": "2010-06-17T18:23:51Z",
+    "labels": [
+        "elliptic curves",
+        "major",
+        "bug"
+    ],
+    "title": "A collection of little improvements to heegner.py",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9253",
+    "user": "rlm"
+}
+```
 Assignee: cremona
 
 These are some of the things I did while working on my thesis.
 
 Depends on #9247 -- since this ticket still needs work, I'm marking the current ticket as needs work too, although it should be ready to go.
 
+Issue created by migration from https://trac.sagemath.org/ticket/9253
+
+
+
+
 
 ---
 
-Comment by rlm created at 2010-06-17 18:29:59
+archive/issue_comments_087084.json:
+```json
+{
+    "body": "Changing status from new to needs_work.",
+    "created_at": "2010-06-17T18:29:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9253",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9253#issuecomment-87084",
+    "user": "rlm"
+}
+```
 
 Changing status from new to needs_work.
 
 
+
 ---
+
+archive/issue_comments_087085.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-06-17T19:05:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9253",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9253#issuecomment-87085",
+    "user": "rlm"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by rlm created at 2010-07-17 15:43:51
+archive/issue_comments_087086.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-07-17T15:43:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9253",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9253#issuecomment-87086",
+    "user": "rlm"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by rlm created at 2010-07-18 08:11:26
+archive/issue_comments_087087.json:
+```json
+{
+    "body": "See also #9535",
+    "created_at": "2010-07-18T08:11:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9253",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9253#issuecomment-87087",
+    "user": "rlm"
+}
+```
 
 See also #9535
 
 
+
 ---
 
-Comment by was created at 2010-07-21 14:39:12
+archive/issue_comments_087088.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-07-21T14:39:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9253",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9253#issuecomment-87088",
+    "user": "was"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by was created at 2010-07-21 14:39:12
+archive/issue_comments_087089.json:
+```json
+{
+    "body": "Makes sense. Passes tests.",
+    "created_at": "2010-07-21T14:39:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9253",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9253#issuecomment-87089",
+    "user": "was"
+}
+```
 
 Makes sense. Passes tests.
 
 
+
 ---
 
-Comment by mpatel created at 2010-08-09 09:50:30
+archive/issue_comments_087090.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-08-09T09:50:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9253",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9253#issuecomment-87090",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed

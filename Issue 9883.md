@@ -1,11 +1,21 @@
 # Issue 9883: slow coercion of polynomial to list over integer mod ring
 
-Issue created by migration from https://trac.sagemath.org/ticket/9884
-
-Original creator: dmharvey
-
-Original creation time: 2010-09-09 16:03:04
-
+archive/issues_009883.json:
+```json
+{
+    "body": "Assignee: tbd\n\nSage 4.5.3, 2.6GHz Opteron, Linux\n\n\n```\nsage: R = Integers(3^20)\nsage: S.<x> = PolynomialRing(R)\nsage: f = S([R.random_element() for i in range(100)])\nsage: timeit(\"L = f.list()\")\n125 loops, best of 3: 1.13 ms per loop\n```\n\n\nThat's about 29000 cycles per coefficient conversion. See also #9883.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9884\n\n",
+    "created_at": "2010-09-09T16:03:04Z",
+    "labels": [
+        "performance",
+        "major",
+        "bug"
+    ],
+    "title": "slow coercion of polynomial to list over integer mod ring",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9883",
+    "user": "dmharvey"
+}
+```
 Assignee: tbd
 
 Sage 4.5.3, 2.6GHz Opteron, Linux
@@ -22,17 +32,43 @@ sage: timeit("L = f.list()")
 
 That's about 29000 cycles per coefficient conversion. See also #9883.
 
+Issue created by migration from https://trac.sagemath.org/ticket/9884
+
+
+
+
 
 ---
 
-Comment by roed created at 2010-09-23 11:30:21
+archive/issue_comments_097960.json:
+```json
+{
+    "body": "This is sped up by about a factor of 33 by the patch at #9887.  If that's positively reviewed, I would suggest closing this ticket.",
+    "created_at": "2010-09-23T11:30:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9883",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9883#issuecomment-97960",
+    "user": "roed"
+}
+```
 
 This is sped up by about a factor of 33 by the patch at #9887.  If that's positively reviewed, I would suggest closing this ticket.
 
 
+
 ---
 
-Comment by mmezzarobba created at 2014-02-02 11:51:39
+archive/issue_comments_097961.json:
+```json
+{
+    "body": "6.2.beta4, on an Intel(R) Core(TM) i5-3320M CPU `@` 2.60GHz:\n\n```\nsage: R = Integers(3^20)\nsage: S.<x> = PolynomialRing(R)\nsage: f = S([R.random_element() for i in range(100)])\nsage: timeit(\"L = f.list()\")\n625 loops, best of 3: 166 \u00b5s per loop\n```\n\nSo I only get a factor of ~7 wrt the timings reported by David Harvey.\n\nDavid (Roe), can you please check if you still observe the same speedup or if there has been a regression in the meantime?",
+    "created_at": "2014-02-02T11:51:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9883",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9883#issuecomment-97961",
+    "user": "mmezzarobba"
+}
+```
 
 6.2.beta4, on an Intel(R) Core(TM) i5-3320M CPU `@` 2.60GHz:
 
@@ -49,16 +85,38 @@ So I only get a factor of ~7 wrt the timings reported by David Harvey.
 David (Roe), can you please check if you still observe the same speedup or if there has been a regression in the meantime?
 
 
+
 ---
 
-Comment by mmezzarobba created at 2014-03-14 16:19:15
+archive/issue_comments_097962.json:
+```json
+{
+    "body": "Changing status from new to needs_info.",
+    "created_at": "2014-03-14T16:19:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9883",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9883#issuecomment-97962",
+    "user": "mmezzarobba"
+}
+```
 
 Changing status from new to needs_info.
 
 
+
 ---
 
-Comment by edgarcosta created at 2016-03-22 21:48:40
+archive/issue_comments_097963.json:
+```json
+{
+    "body": "Version 7.1.beta3 - Intel(R) Core(TM) i5-4278U CPU `@` 2.60GHz\n\n```\nsage: R = Integers(3^20)\nsage: S.<x> = PolynomialRing(R)\nsage: f = S([R.random_element() for i in range(100)])\nsage: timeit(\"L = f.list()\")\n625 loops, best of 3: 85.8 \u00b5s per loop\n\n```\n\n\na bit faster on my slightly faster cpu.\n\nFast enough?",
+    "created_at": "2016-03-22T21:48:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9883",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9883#issuecomment-97963",
+    "user": "edgarcosta"
+}
+```
 
 Version 7.1.beta3 - Intel(R) Core(TM) i5-4278U CPU `@` 2.60GHz
 

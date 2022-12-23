@@ -1,11 +1,21 @@
 # Issue 5119: abstract class for unique representation
 
-Issue created by migration from https://trac.sagemath.org/ticket/5119
-
-Original creator: nthiery
-
-Original creation time: 2009-01-28 19:46:56
-
+archive/issues_005119.json:
+```json
+{
+    "body": "Assignee: cwitty\n\nImplement a sage.structure.UniqueRepresentation class. \nSubclasses inherit from it a unique representation behavior for its elements.\n\nPatch under construction, starting from sage.categories.category.uniq\n\nIssue created by migration from https://trac.sagemath.org/ticket/5119\n\n",
+    "created_at": "2009-01-28T19:46:56Z",
+    "labels": [
+        "misc",
+        "major",
+        "bug"
+    ],
+    "title": "abstract class for unique representation",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5119",
+    "user": "nthiery"
+}
+```
 Assignee: cwitty
 
 Implement a sage.structure.UniqueRepresentation class. 
@@ -13,9 +23,24 @@ Subclasses inherit from it a unique representation behavior for its elements.
 
 Patch under construction, starting from sage.categories.category.uniq
 
+Issue created by migration from https://trac.sagemath.org/ticket/5119
+
+
+
+
 
 ---
 
-Comment by nthiery created at 2009-01-28 19:48:28
+archive/issue_comments_039125.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2009-01-28T19:48:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5119",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5119#issuecomment-39125",
+    "user": "nthiery"
+}
+```
 
 Resolution: duplicate

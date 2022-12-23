@@ -1,11 +1,21 @@
 # Issue 7354: use jsmath to render revisions of worksheets
 
-Issue created by migration from https://trac.sagemath.org/ticket/7354
-
-Original creator: jason
-
-Original creation time: 2009-10-30 03:09:29
-
+archive/issues_007354.json:
+```json
+{
+    "body": "Assignee: boothby\n\nCC:  timdumol\n\n\n```\nWhen I click on an \"Undo\" version of a worksheet (click \"Undo\", then click on a revision), jsmath is not invoked, so I see a bunch of latex code instead of typeset math.  It would be nice if jsmath was invoked when looking at a revision of a worksheet.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7354\n\n",
+    "created_at": "2009-10-30T03:09:29Z",
+    "labels": [
+        "notebook",
+        "minor",
+        "enhancement"
+    ],
+    "title": "use jsmath to render revisions of worksheets",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7354",
+    "user": "jason"
+}
+```
 Assignee: boothby
 
 CC:  timdumol
@@ -16,51 +26,134 @@ When I click on an "Undo" version of a worksheet (click "Undo", then click on a 
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7354
+
+
+
+
 
 ---
+
+archive/issue_comments_061596.json:
+```json
+{
+    "body": "Attachment\n\nInvoke jsMath for worksheet \"undo\" revisions.",
+    "created_at": "2009-10-31T09:36:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7354",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7354#issuecomment-61596",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
 Invoke jsMath for worksheet "undo" revisions.
 
 
+
 ---
 
-Comment by mpatel created at 2009-10-31 09:36:45
+archive/issue_comments_061597.json:
+```json
+{
+    "body": "I hope I got this right.",
+    "created_at": "2009-10-31T09:36:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7354",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7354#issuecomment-61597",
+    "user": "mpatel"
+}
+```
 
 I hope I got this right.
 
 
+
 ---
 
-Comment by mpatel created at 2009-10-31 09:36:45
+archive/issue_comments_061598.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-10-31T09:36:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7354",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7354#issuecomment-61598",
+    "user": "mpatel"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by timdumol created at 2009-10-31 14:43:25
+archive/issue_comments_061599.json:
+```json
+{
+    "body": "Works as advertised. Positive review.",
+    "created_at": "2009-10-31T14:43:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7354",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7354#issuecomment-61599",
+    "user": "timdumol"
+}
+```
 
 Works as advertised. Positive review.
 
 
+
 ---
 
-Comment by timdumol created at 2009-10-31 14:43:25
+archive/issue_comments_061600.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-10-31T14:43:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7354",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7354#issuecomment-61600",
+    "user": "timdumol"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by was created at 2009-11-11 20:07:43
+archive/issue_comments_061601.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-11-11T20:07:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7354",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7354#issuecomment-61601",
+    "user": "was"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by was created at 2009-11-11 20:07:43
+archive/issue_comments_061602.json:
+```json
+{
+    "body": "merged into sagenb-0.4.2 (sage-4.2.1)",
+    "created_at": "2009-11-11T20:07:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7354",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7354#issuecomment-61602",
+    "user": "was"
+}
+```
 
 merged into sagenb-0.4.2 (sage-4.2.1)

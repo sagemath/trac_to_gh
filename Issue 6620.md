@@ -1,11 +1,21 @@
 # Issue 6620: add a method to the Gap class to access elements of records
 
-Issue created by migration from https://trac.sagemath.org/ticket/6620
-
-Original creator: saliola
-
-Original creation time: 2009-07-25 17:11:16
-
+archive/issues_006620.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  nborie wdj\n\nAccessing elements of GAP records should be easier.\n\n```\n            sage: rec = gap('rec( a := 1, b := \"2\" )')\n            sage: gap.get_record_element(rec, 'a')\n            1\n            sage: gap.get_record_element(rec, 'b')\n            2\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6620\n\n",
+    "created_at": "2009-07-25T17:11:16Z",
+    "labels": [
+        "interfaces",
+        "major",
+        "enhancement"
+    ],
+    "title": "add a method to the Gap class to access elements of records",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6620",
+    "user": "saliola"
+}
+```
 Assignee: was
 
 CC:  nborie wdj
@@ -21,45 +31,119 @@ Accessing elements of GAP records should be easier.
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6620
+
+
+
+
 
 ---
+
+archive/issue_comments_054248.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-07-25T17:18:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6620",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6620#issuecomment-54248",
+    "user": "saliola"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by wdj created at 2009-07-27 15:45:03
+archive/issue_comments_054249.json:
+```json
+{
+    "body": "Applies fine to 4.1.1.a0, and passes sage -testall. I also played with it a bit and could not find any bugs and the docstrings seem fine.",
+    "created_at": "2009-07-27T15:45:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6620",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6620#issuecomment-54249",
+    "user": "wdj"
+}
+```
 
 Applies fine to 4.1.1.a0, and passes sage -testall. I also played with it a bit and could not find any bugs and the docstrings seem fine.
 
 
+
 ---
 
-Comment by mvngu created at 2009-08-24 13:13:24
+archive/issue_comments_054250.json:
+```json
+{
+    "body": "reviewer patch; fix typos in ReST format",
+    "created_at": "2009-08-24T13:13:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6620",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6620#issuecomment-54250",
+    "user": "mvngu"
+}
+```
 
 reviewer patch; fix typos in ReST format
 
 
+
 ---
+
+archive/issue_comments_054251.json:
+```json
+{
+    "body": "Attachment\n\nThe patch `trac_6620-reviewer.patch` fixes some typos in ReST formatting introduced by `trac_6620.patch`. Such typos would result in warnings when (re)building the reference manual.",
+    "created_at": "2009-08-24T13:15:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6620",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6620#issuecomment-54251",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
 The patch `trac_6620-reviewer.patch` fixes some typos in ReST formatting introduced by `trac_6620.patch`. Such typos would result in warnings when (re)building the reference manual.
 
 
+
 ---
 
-Comment by mvngu created at 2009-08-24 13:42:21
+archive/issue_comments_054252.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-08-24T13:42:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6620",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6620#issuecomment-54252",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mvngu created at 2009-08-24 13:42:21
+archive/issue_comments_054253.json:
+```json
+{
+    "body": "Merged patches in this order:\n\n1. `trac_6620.patch`\n2. `trac_6620-reviewer.patch`",
+    "created_at": "2009-08-24T13:42:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6620",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6620#issuecomment-54253",
+    "user": "mvngu"
+}
+```
 
 Merged patches in this order:
 
- 1. `trac_6620.patch`
- 1. `trac_6620-reviewer.patch`
+1. `trac_6620.patch`
+2. `trac_6620-reviewer.patch`

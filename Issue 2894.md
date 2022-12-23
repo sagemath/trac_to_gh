@@ -1,11 +1,21 @@
 # Issue 2894: notebook -- cache elements to improve the speed of get_cell()
 
-Issue created by migration from https://trac.sagemath.org/ticket/2894
-
-Original creator: boothby
-
-Original creation time: 2008-04-12 07:51:42
-
+archive/issues_002894.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nThe following code takes .004ms/call, which is about 5 times faster than the existing get_cell():\n\n\n```\nvar cell_element_cache = [];\nfunction get_cell2(id) {\n    var v = cell_element[id];\n    if(v == undefined)\n        v = cell_element[id] = get_cell(id)\n    return v;\n}\n```\n\n\nIt follows that we should update get_cell to the 5-times faster version, since get_cell is called  quite frequently in the notebook code.\n\nas tested with\n\n\n```\nvar t0;\nvar e;\nvar n = cell_id_list[cell_id_list.length-1];\nvar N = 100000.;\nt0 = time_now();\nfor(i=0;i<N;i++)\n   e = get_cell(n);\nt1 = time_now();\nalert((t1-t0)/N);\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2894\n\n",
+    "created_at": "2008-04-12T07:51:42Z",
+    "labels": [
+        "Cygwin",
+        "major",
+        "bug"
+    ],
+    "title": "notebook -- cache elements to improve the speed of get_cell()",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2894",
+    "user": "boothby"
+}
+```
 Assignee: mabshoff
 
 The following code takes .004ms/call, which is about 5 times faster than the existing get_cell():
@@ -40,43 +50,115 @@ alert((t1-t0)/N);
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2894
+
+
+
+
 
 ---
 
-Comment by boothby created at 2008-04-12 07:52:06
+archive/issue_comments_019904.json:
+```json
+{
+    "body": "Changing type from defect to enhancement.",
+    "created_at": "2008-04-12T07:52:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2894",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2894#issuecomment-19904",
+    "user": "boothby"
+}
+```
 
 Changing type from defect to enhancement.
 
 
+
 ---
 
-Comment by boothby created at 2008-04-12 07:52:06
+archive/issue_comments_019905.json:
+```json
+{
+    "body": "Changing component from Cygwin to notebook.",
+    "created_at": "2008-04-12T07:52:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2894",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2894#issuecomment-19905",
+    "user": "boothby"
+}
+```
 
 Changing component from Cygwin to notebook.
 
 
+
 ---
 
-Comment by boothby created at 2008-04-12 07:52:06
+archive/issue_comments_019906.json:
+```json
+{
+    "body": "Changing assignee from mabshoff to boothby.",
+    "created_at": "2008-04-12T07:52:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2894",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2894#issuecomment-19906",
+    "user": "boothby"
+}
+```
 
 Changing assignee from mabshoff to boothby.
 
 
+
 ---
 
-Comment by boothby created at 2008-04-12 07:52:06
+archive/issue_comments_019907.json:
+```json
+{
+    "body": "Changing priority from major to minor.",
+    "created_at": "2008-04-12T07:52:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2894",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2894#issuecomment-19907",
+    "user": "boothby"
+}
+```
 
 Changing priority from major to minor.
 
 
+
 ---
+
+archive/issue_comments_019908.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-04-12T07:55:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2894",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2894#issuecomment-19908",
+    "user": "boothby"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-12 12:44:38
+archive/issue_comments_019909.json:
+```json
+{
+    "body": "Hi Tom,\n\nthis patch is identical to #2887 where William posted your code except for the added comment by you. Since #2887 has been credited to you I will merge the extra comment and close this as fixed.\n\nThought?\n\nCheers,\n\nMichael",
+    "created_at": "2008-04-12T12:44:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2894",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2894#issuecomment-19909",
+    "user": "mabshoff"
+}
+```
 
 Hi Tom,
 
@@ -89,21 +171,56 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-12 12:44:38
+archive/issue_comments_019910.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-04-12T12:44:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2894",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2894#issuecomment-19910",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-12 12:50:48
+archive/issue_comments_019911.json:
+```json
+{
+    "body": "Since #2887 was merged only merge the extra comment from the previous patch",
+    "created_at": "2008-04-12T12:50:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2894",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2894#issuecomment-19911",
+    "user": "mabshoff"
+}
+```
 
 Since #2887 was merged only merge the extra comment from the previous patch
 
 
+
 ---
+
+archive/issue_comments_019912.json:
+```json
+{
+    "body": "Attachment\n\nMerged trac_2887-comment-from-2894.patch in Sage 3.0.alpha4",
+    "created_at": "2008-04-12T12:51:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2894",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2894#issuecomment-19912",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 

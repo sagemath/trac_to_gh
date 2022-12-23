@@ -1,11 +1,21 @@
 # Issue 2860: easy-to-fix bug in html.py
 
-Issue created by migration from https://trac.sagemath.org/ticket/2860
-
-Original creator: was
-
-Original creation time: 2008-04-09 05:55:21
-
+archive/issues_002860.json:
+```json
+{
+    "body": "Assignee: cwitty\n\n\n```\nInteresting.  That file where the bug is (html.py) hasn't been touched in nearly\na year.  But indeed there is clearly a bug in that function. \n\nOn Tue, Apr 8, 2008 at 3:54 PM,   wrote:\n> I just saw this traceback in my patched alpha2:\n>  \n>         Traceback (most recent call last):\n>           File\n> \"/home/boothby/sage-3.0.alpha2/local/lib/python2.5/site-packages/twisted/internet/defer.py\",\n> line 185, in addCallbacks\n>  \n>           File\n> \"/home/boothby/sage-3.0.alpha2/local/lib/python2.5/site-packages/twisted/internet/defer.py\",\n> line 323, in _runCallbacks\n>  \n>           File\n> \"/home/boothby/sage-3.0.alpha2/local/lib/python2.5/site-packages/twisted/internet/defer.py\",\n> line 284, in _continue\n>  \n>           File\n> \"/home/boothby/sage-3.0.alpha2/local/lib/python2.5/site-packages/twisted/internet/defer.py\",\n> line 280, in unpause\n>  \n>         --- <exception caught here> ---\n>           File\n> \"/home/boothby/sage-3.0.alpha2/local/lib/python2.5/site-packages/twisted/internet/defer.py\",\n> line 323, in _runCallbacks\n>  \n>           File\n> \"/home/boothby/sage-3.0.alpha2/local/lib/python2.5/site-packages/twisted/web2/server.py\",\n> line 296, in <lambda>\n>  \n>           File\n> \"/home/boothby/sage-3.0.alpha2/local/lib/python2.5/site-packages/twisted/web2/resource.py\",\n> line 85, in renderHTTP\n>  \n>           File\n> \"/home/boothby/sage-3.0.alpha2/local/lib/python2.5/site-packages/twisted/web2/resource.py\",\n> line 202, in http_GET\n>  \n>           File\n> \"/home/boothby/sage-3.0.alpha2/local/lib/python2.5/site-packages/twisted/web2/resource.py\",\n> line 128, in http_GET\n>  \n>           File\n> \"/home/boothby/sage/local/lib/python2.5/site-packages/sage/server/notebook/twist.py\",\n> line 1148, in render\n>             s = notebook.html(worksheet_filename = self.name, \n> username=self.username)\n>           File\n> \"/home/boothby/sage/local/lib/python2.5/site-packages/sage/server/notebook/notebook.py\",\n> line 1936, in html\n>             body = self._html_body(worksheet_filename=worksheet_filename,\n> username=username, show_debug=show_debug)\n>           File\n> \"/home/boothby/sage/local/lib/python2.5/site-packages/sage/server/notebook/notebook.py\",\n> line 1609, in _html_body\n>             worksheet_html = worksheet.html()\n>           File\n> \"/home/boothby/sage/local/lib/python2.5/site-packages/sage/server/notebook/worksheet.py\",\n> line 828, in html\n>             s += self.html_worksheet_body(do_print=do_print)\n>           File\n> \"/home/boothby/sage/local/lib/python2.5/site-packages/sage/server/notebook/worksheet.py\",\n> line 984, in html_worksheet_body\n>             s += cell.html(ncols, do_print=do_print) + '\\n'\n>           File\n> \"/home/boothby/sage/local/lib/python2.5/site-packages/sage/server/notebook/cell.py\",\n> line 72, in html\n>             t = math_parse(t)\n>           File\n> \"/home/boothby/sage/local/lib/python2.5/site-packages/sage/misc/html.py\",\n> line 33, in math_parse\n>             if typ == 'div':\n>         exceptions.UnboundLocalError: local variable 'typ' referenced before\n> assignment\n>  \n>  \n>  \n\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2860\n\n",
+    "created_at": "2008-04-09T05:55:21Z",
+    "labels": [
+        "misc",
+        "major",
+        "bug"
+    ],
+    "title": "easy-to-fix bug in html.py",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2860",
+    "user": "was"
+}
+```
 Assignee: cwitty
 
 
@@ -94,8 +104,25 @@ On Tue, Apr 8, 2008 at 3:54 PM,   wrote:
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2860
+
+
+
+
 
 ---
+
+archive/issue_comments_019626.json:
+```json
+{
+    "body": "Attachment\n\nAttached patch fixes this.  \n\nNobody has a test case to reproduce the claimed problem.  So I read\nthe code, vastly improved its documentation, and did make a change that\nlogically must fix exactly the reported bug.",
+    "created_at": "2008-05-11T07:49:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2860",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2860#issuecomment-19626",
+    "user": "was"
+}
+```
 
 Attachment
 
@@ -106,22 +133,55 @@ the code, vastly improved its documentation, and did make a change that
 logically must fix exactly the reported bug.
 
 
+
 ---
 
-Comment by boothby created at 2008-05-17 19:43:23
+archive/issue_comments_019627.json:
+```json
+{
+    "body": "Like was said, we've never been able to reproduce this.  However, the \"continue\" added to line 59 looks like it should do the trick.",
+    "created_at": "2008-05-17T19:43:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2860",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2860#issuecomment-19627",
+    "user": "boothby"
+}
+```
 
 Like was said, we've never been able to reproduce this.  However, the "continue" added to line 59 looks like it should do the trick.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-17 19:55:08
+archive/issue_comments_019628.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-05-17T19:55:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2860",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2860#issuecomment-19628",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-17 19:55:08
+archive/issue_comments_019629.json:
+```json
+{
+    "body": "Merged in Sage 3.0.2.alpha1",
+    "created_at": "2008-05-17T19:55:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2860",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2860#issuecomment-19629",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.2.alpha1

@@ -1,11 +1,21 @@
 # Issue 4335: Labelling of newforms
 
-Issue created by migration from https://trac.sagemath.org/ticket/4335
-
-Original creator: ljpk
-
-Original creation time: 2008-10-21 19:15:07
-
+archive/issues_004335.json:
+```json
+{
+    "body": "Assignee: craigcitro\n\nGiven a space of CuspForms, there is a newforms method which gives a list of newforms associated to that space, with a name specified by the user. However, this does not seem to work correctly at the moment:\n\n```\nsage: S=CuspForms(23)\nsage: S.newforms('b')\n[q + a0*q^2 + (-2*a0 - 1)*q^3 + (-a0 - 1)*q^4 + 2*a0*q^5 + O(q^6)]\n```\n\n\nI think that the newforms code should be changed to something like:\n\n```\ndef newforms(self, names=None):\n        \"\"\"\n        Return all cusp forms in the cuspidal subspace of self.\n        \n        EXAMPLES:\n        \n        sage: CuspForms(23).newforms('b')\n        [q + b0*q^2 + (-2*b0 - 1)*q^3 + (-b0 - 1)*q^4 + 2*b0*q^5 + O(q^6)]\n        \"\"\"\n        M = self.modular_symbols(sign=1)\n        factors = M.cuspidal_subspace().new_subspace().decomposition()\n        large_dims = [ X.dimension() for X in factors if X.dimension() != 1 ]\n        if len(large_dims) > 0 and names is None:            \n            names = 'a'\n        return [ element.Newform(self, factors[i], names=(names+str(i)) )\n                 for i in range(len(factors)) ]\n```\n\n(removing the ValueError statement) as this should correctly use the user-specified name if one is given or default to 'a' if one is not.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4335\n\n",
+    "created_at": "2008-10-21T19:15:07Z",
+    "labels": [
+        "modular forms",
+        "minor",
+        "bug"
+    ],
+    "title": "Labelling of newforms",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4335",
+    "user": "ljpk"
+}
+```
 Assignee: craigcitro
 
 Given a space of CuspForms, there is a newforms method which gives a list of newforms associated to that space, with a name specified by the user. However, this does not seem to work correctly at the moment:
@@ -40,17 +50,45 @@ def newforms(self, names=None):
 
 (removing the ValueError statement) as this should correctly use the user-specified name if one is given or default to 'a' if one is not.
 
+Issue created by migration from https://trac.sagemath.org/ticket/4335
+
+
+
+
 
 ---
 
-Comment by was created at 2008-10-22 00:40:39
+archive/issue_comments_031786.json:
+```json
+{
+    "body": "Lloyd,\n\nThanks for pointing this out!  I guess we only ever tested with 'a'.  This will be good fodder for bug day on Thursday...",
+    "created_at": "2008-10-22T00:40:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4335",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4335#issuecomment-31786",
+    "user": "was"
+}
+```
 
 Lloyd,
 
 Thanks for pointing this out!  I guess we only ever tested with 'a'.  This will be good fodder for bug day on Thursday...
 
 
+
 ---
+
+archive/issue_comments_031787.json:
+```json
+{
+    "body": "Attachment\n\nSorry, I couldn't wait until Thursday. :) I think William's comment is right -- I probably just never tested this with anything except `a`, since that's the letter I usually use. \n\nHowever, raising an error if no variable name is provided is, in fact, the intended behavior -- basically obeying the rule of \"explicit is better than implicit.\"",
+    "created_at": "2008-10-22T04:13:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4335",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4335#issuecomment-31787",
+    "user": "craigcitro"
+}
+```
 
 Attachment
 
@@ -59,30 +97,74 @@ Sorry, I couldn't wait until Thursday. :) I think William's comment is right -- 
 However, raising an error if no variable name is provided is, in fact, the intended behavior -- basically obeying the rule of "explicit is better than implicit."
 
 
+
 ---
 
-Comment by craigcitro created at 2008-10-22 04:13:57
+archive/issue_comments_031788.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-10-22T04:13:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4335",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4335#issuecomment-31788",
+    "user": "craigcitro"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2008-10-22 06:02:14
+archive/issue_comments_031789.json:
+```json
+{
+    "body": "Looks good to me.",
+    "created_at": "2008-10-22T06:02:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4335",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4335#issuecomment-31789",
+    "user": "AlexGhitza"
+}
+```
 
 Looks good to me.
 
 
+
 ---
 
-Comment by ljpk created at 2008-10-22 13:47:24
+archive/issue_comments_031790.json:
+```json
+{
+    "body": "I personally find the fact that one has to manually assign a variable name really annoying, but if that's the design decision you've taken then fair enough (I can see your reasons; I just disagree).",
+    "created_at": "2008-10-22T13:47:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4335",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4335#issuecomment-31790",
+    "user": "ljpk"
+}
+```
 
 I personally find the fact that one has to manually assign a variable name really annoying, but if that's the design decision you've taken then fair enough (I can see your reasons; I just disagree).
 
 
+
 ---
 
-Comment by was created at 2008-10-22 20:55:45
+archive/issue_comments_031791.json:
+```json
+{
+    "body": "> I personally find the fact that one has to manually assign a variable \n> name really annoying, but if that's the design decision you've taken\n> then fair enough (I can see your reasons; I just disagree).\n\nWe've systematically made that decision throughout all Sage, so we should stick with that here.\n\nThat said, we have also talked about making it so one can specify a uniform default throughout sage, e.g., a function f(n) that takes as input an integer n and outputs a variable name.  You could define it to be anything you want and everywhere in Sage that requires variables would call it -- if specified instead of giving an error, when you forget to give a variable name.",
+    "created_at": "2008-10-22T20:55:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4335",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4335#issuecomment-31791",
+    "user": "was"
+}
+```
 
 > I personally find the fact that one has to manually assign a variable 
 > name really annoying, but if that's the design decision you've taken
@@ -93,16 +175,38 @@ We've systematically made that decision throughout all Sage, so we should stick 
 That said, we have also talked about making it so one can specify a uniform default throughout sage, e.g., a function f(n) that takes as input an integer n and outputs a variable name.  You could define it to be anything you want and everywhere in Sage that requires variables would call it -- if specified instead of giving an error, when you forget to give a variable name.
 
 
+
 ---
 
-Comment by craigcitro created at 2008-10-23 07:07:03
+archive/issue_comments_031792.json:
+```json
+{
+    "body": "Good point. The request for a system-wide variable default is now trac #4345.",
+    "created_at": "2008-10-23T07:07:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4335",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4335#issuecomment-31792",
+    "user": "craigcitro"
+}
+```
 
 Good point. The request for a system-wide variable default is now trac #4345.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-26 02:49:54
+archive/issue_comments_031793.json:
+```json
+{
+    "body": "Unfortunately other patches mandate a rebase of this patch:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha1/devel/sage$ patch -p1 --dry-run < trac_4335.patch \npatching file sage/modular/modform/space.py\nHunk #1 FAILED at 1571.\n1 out of 1 hunk FAILED -- saving rejects to file sage/modular/modform/space.py.rej\n```\n\nPlease try either my current merge tree on sage.math or alternatively wait for 3.2.alpha1 out in the next 12 hours\n\nCheers,\n\nMichael",
+    "created_at": "2008-10-26T02:49:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4335",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4335#issuecomment-31793",
+    "user": "mabshoff"
+}
+```
 
 Unfortunately other patches mandate a rebase of this patch:
 
@@ -120,16 +224,40 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_031794.json:
+```json
+{
+    "body": "Attachment\n\nI rebased the patch, and it *should* work -- I don't have a current alpha, but I was pretty sure it was my patch from another ticket that caused the merge troubles. Let me know if this one doesn't work.",
+    "created_at": "2008-10-26T04:53:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4335",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4335#issuecomment-31794",
+    "user": "craigcitro"
+}
+```
 
 Attachment
 
 I rebased the patch, and it *should* work -- I don't have a current alpha, but I was pretty sure it was my patch from another ticket that caused the merge troubles. Let me know if this one doesn't work.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-26 09:50:52
+archive/issue_comments_031795.json:
+```json
+{
+    "body": "The rebased patch applies fine - now doctesting.\n\nCheers,\n\nMichael",
+    "created_at": "2008-10-26T09:50:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4335",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4335#issuecomment-31795",
+    "user": "mabshoff"
+}
+```
 
 The rebased patch applies fine - now doctesting.
 
@@ -138,15 +266,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-26 12:05:24
+archive/issue_comments_031796.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-10-26T12:05:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4335",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4335#issuecomment-31796",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-26 12:05:24
+archive/issue_comments_031797.json:
+```json
+{
+    "body": "Merged in Sage 3.2.alpha1",
+    "created_at": "2008-10-26T12:05:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4335",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4335#issuecomment-31797",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.2.alpha1

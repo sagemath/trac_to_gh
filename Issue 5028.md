@@ -1,11 +1,21 @@
 # Issue 5028: point2d? says point.options instead of point2d.options
 
-Issue created by migration from https://trac.sagemath.org/ticket/5028
-
-Original creator: slabbe
-
-Original creation time: 2009-01-19 16:53:26
-
+archive/issues_005028.json:
+```json
+{
+    "body": "Assignee: slabbe\n\nKeywords: point2d\n\n\n```\nsage: point2d?\n...\nDocstring:\n    \n        A point of size `pointsize' defined by point = (x,y).\n        Point takes either a single tuple of coordinates or a list of tuples.\n    \n        Type point.options to see all options.\n    \n        EXAMPLES:\n            ...\n\nsage: point.options\nTraceback (most recent call last):\n...\nAttributeError: 'function' object has no attribute 'options'\nsage: point2d.options\n{'alpha': 1, 'faceted': False, 'pointsize': 10, 'rgbcolor': (0, 0, 1)}\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5028\n\n",
+    "created_at": "2009-01-19T16:53:26Z",
+    "labels": [
+        "documentation",
+        "major",
+        "enhancement"
+    ],
+    "title": "point2d? says point.options instead of point2d.options",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5028",
+    "user": "slabbe"
+}
+```
 Assignee: slabbe
 
 Keywords: point2d
@@ -33,22 +43,61 @@ sage: point2d.options
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5028
+
+
+
+
 
 ---
+
+archive/issue_comments_038301.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-01-19T16:57:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5028",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5028#issuecomment-38301",
+    "user": "slabbe"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2009-01-20 21:38:14
+archive/issue_comments_038302.json:
+```json
+{
+    "body": "Looks good to me.",
+    "created_at": "2009-01-20T21:38:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5028",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5028#issuecomment-38302",
+    "user": "mhansen"
+}
+```
 
 Looks good to me.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-23 09:40:16
+archive/issue_comments_038303.json:
+```json
+{
+    "body": "Merged in Sage 3.3.alpha1\n\nCheers,\n\nMichael",
+    "created_at": "2009-01-23T09:40:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5028",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5028#issuecomment-38303",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.3.alpha1
 
@@ -57,8 +106,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-23 09:40:16
+archive/issue_comments_038304.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-01-23T09:40:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5028",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5028#issuecomment-38304",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

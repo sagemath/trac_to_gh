@@ -1,35 +1,82 @@
 # Issue 7763: make nintegrate/nintegral top-level functions
 
-Issue created by migration from https://trac.sagemath.org/ticket/7763
-
-Original creator: jason
-
-Original creation time: 2009-12-24 18:19:08
-
+archive/issues_007763.json:
+```json
+{
+    "body": "Assignee: burcin\n\nCC:  kcrisman jason mhampton\n\nWe just need to add them to sage/devel/sage/misc/functional.py.  Modifying the versions of integrate/integral in that file would probably be easiest.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7763\n\n",
+    "created_at": "2009-12-24T18:19:08Z",
+    "labels": [
+        "calculus",
+        "major",
+        "enhancement"
+    ],
+    "title": "make nintegrate/nintegral top-level functions",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7763",
+    "user": "jason"
+}
+```
 Assignee: burcin
 
 CC:  kcrisman jason mhampton
 
 We just need to add them to sage/devel/sage/misc/functional.py.  Modifying the versions of integrate/integral in that file would probably be easiest.
 
+Issue created by migration from https://trac.sagemath.org/ticket/7763
+
+
+
+
 
 ---
 
-Comment by jason created at 2010-05-26 15:16:59
+archive/issue_comments_066866.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"beginner\".",
+    "created_at": "2010-05-26T15:16:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7763",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7763#issuecomment-66866",
+    "user": "jason"
+}
+```
 
 Changing keywords from "" to "beginner".
 
 
+
 ---
 
-Comment by ryan created at 2010-09-11 23:02:43
+archive/issue_comments_066867.json:
+```json
+{
+    "body": "Is this supposed to be a numerical approximation of the integral function?",
+    "created_at": "2010-09-11T23:02:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7763",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7763#issuecomment-66867",
+    "user": "ryan"
+}
+```
 
 Is this supposed to be a numerical approximation of the integral function?
 
 
+
 ---
 
-Comment by kcrisman created at 2010-09-11 23:58:01
+archive/issue_comments_066868.json:
+```json
+{
+    "body": "Replying to [comment:3 ryan]:\n> Is this supposed to be a numerical approximation of the integral function?\nNo, this is an existing method of symbolic functions, which uses a different algorithm to get a numerical integral.  But you can only call it in \n\n```\nsage: f(x)=some_formula_with_x\nsage: f.nintegrate(...)\n```\n\nnot as a top-level\n\n```\nnintegral(f,...)\n```\n\ntype function.  \n\nWe should also probably make the syntax like that of `numerical_integral` *and* make that syntax consistent (at least as an option) with that of `integral` itself (see ask.sagemath.org for various problems this causes).",
+    "created_at": "2010-09-11T23:58:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7763",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7763#issuecomment-66868",
+    "user": "kcrisman"
+}
+```
 
 Replying to [comment:3 ryan]:
 > Is this supposed to be a numerical approximation of the integral function?
@@ -51,16 +98,38 @@ type function.
 We should also probably make the syntax like that of `numerical_integral` *and* make that syntax consistent (at least as an option) with that of `integral` itself (see ask.sagemath.org for various problems this causes).
 
 
+
 ---
 
-Comment by gagansekhon created at 2011-01-11 01:31:14
+archive/issue_comments_066869.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2011-01-11T01:31:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7763",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7763#issuecomment-66869",
+    "user": "gagansekhon"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by kcrisman created at 2011-01-11 03:58:49
+archive/issue_comments_066870.json:
+```json
+{
+    "body": "There are two issues with this.  First, because of the extreme possibility for confusion with the already top-level `numerical_integral`function, this will need some work in documentation.  See some of the documentation in \n\n```\nsage: sage.calculus.calculus.nintegral??\n```\n\nfor what I mean.   I don't think all of that needs to be there, but there should then be a reference for how to access the rest of it.  Basically, Maxima numerical integration and GSL numerical integration are different.  In particular, one would want to use Maxima for symbolic expressions - in case there is an exact answer known! - and then have a variety of options for numerical integration if that fails.\n\nAnyway, that was a longish digression.  More importantly, this patch doesn't exactly do what is asked.   The point isn't to be able to approximate exact answers to integrals, but rather to expose to the top level the Maxima integration.  \n\n```\nsage: a = e^(-x^4 + x)\nsage: a.nintegral(x,0,1)\n(1.3638178766496709, 1.5141420080518571e-14, 21, 0)\nsage: integral(a,(x,0,1)).n()\n1.3638178766496716\n```\n\nNote the slight difference in output, incidentally - presumably within the error tolerance, of course.  This is because we apparently have a THIRD way to evaluate integrals - Pynac!\n\n```\nsage: R = RealField(53)\nsage: integral(a,(x,0,1))._convert(R)\n1.3638178766496716\n```\n\nIf you check the code for `_convert`, it turns out this goes to Pynac.  See [here](http://www.ginac.de/reference/integral_8cpp_source.html#l00169) for some of how this happens in Ginac... crazy.  We really need to unify this.  But at any rate, we shouldn't use two different algorithms and do two different things for the same name `nintegrate`.   \n\nAnyone have ideas for what the best resolution on this would be?\n\nOh, and just for comparison:\n\n```\nsage: numerical_integral(a,0,1)\n(1.3638178766496716, 1.5141420080518571e-14)\n```\n",
+    "created_at": "2011-01-11T03:58:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7763",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7763#issuecomment-66870",
+    "user": "kcrisman"
+}
+```
 
 There are two issues with this.  First, because of the extreme possibility for confusion with the already top-level `numerical_integral`function, this will need some work in documentation.  See some of the documentation in 
 
@@ -101,32 +170,76 @@ sage: numerical_integral(a,0,1)
 
 
 
+
 ---
 
-Comment by kcrisman created at 2011-01-11 03:58:49
+archive/issue_comments_066871.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2011-01-11T03:58:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7763",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7763#issuecomment-66871",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by kcrisman created at 2011-01-11 03:59:31
+archive/issue_comments_066872.json:
+```json
+{
+    "body": "And of course a more informative commit message :)\n\nDon't worry, this is on the way to being a good contribution; we just have to figure out what the right thing to do is.",
+    "created_at": "2011-01-11T03:59:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7763",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7763#issuecomment-66872",
+    "user": "kcrisman"
+}
+```
 
 And of course a more informative commit message :)
 
 Don't worry, this is on the way to being a good contribution; we just have to figure out what the right thing to do is.
 
 
+
 ---
 
-Comment by gagansekhon created at 2011-01-11 04:42:18
+archive/issue_comments_066873.json:
+```json
+{
+    "body": "Thank you, this actually gives me a better project and finding random tickets. I will try doing what you asked here.",
+    "created_at": "2011-01-11T04:42:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7763",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7763#issuecomment-66873",
+    "user": "gagansekhon"
+}
+```
 
 Thank you, this actually gives me a better project and finding random tickets. I will try doing what you asked here.
 
 
+
 ---
 
-Comment by gagansekhon created at 2011-01-12 06:02:53
+archive/issue_comments_066874.json:
+```json
+{
+    "body": "There are two different inconsistency \n\nnumerical_integral is top level only function and it uses gsl\n\nnintegral is not top level and uses maxima\n\nfor consistency purpose I was thinking of doing the following:\n\n1. to both add algorithm input, (the default would be gsl for top level and maxima for non-top level)\n\n2. make both functions top level and methods\n\nAny thoughts?",
+    "created_at": "2011-01-12T06:02:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7763",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7763#issuecomment-66874",
+    "user": "gagansekhon"
+}
+```
 
 There are two different inconsistency 
 
@@ -143,16 +256,38 @@ for consistency purpose I was thinking of doing the following:
 Any thoughts?
 
 
+
 ---
 
-Comment by gagansekhon created at 2011-01-12 06:33:44
+archive/issue_comments_066875.json:
+```json
+{
+    "body": "As for other *integra* all have either no algorithm option and uses maxima or only uses maxima. Still thinking the least complicated way to clean this up with most flexibility.",
+    "created_at": "2011-01-12T06:33:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7763",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7763#issuecomment-66875",
+    "user": "gagansekhon"
+}
+```
 
 As for other *integra* all have either no algorithm option and uses maxima or only uses maxima. Still thinking the least complicated way to clean this up with most flexibility.
 
 
+
 ---
 
-Comment by kcrisman created at 2011-01-12 15:38:09
+archive/issue_comments_066876.json:
+```json
+{
+    "body": "Maybe the best thing to do would be to have ONE top level function for numerical integration (`numerical_integral`), of which `nintegrate` and `nintegral` would be aliases.   Then one would have to really at this time change the syntax of `numerical_integral` so that it accepts the same syntax as integration in general does; you'll notice that currently it does not accept a variable, only the endpoints:\n\n```\n            if hasattr(func, 'arguments'):\n                vars = func.arguments()\n            else:\n                vars = func.variables()\n```\n\nso that it guesses what the correct variable is.   It also makes it really hard to do numerical integration on the fly with it, because you can't do [this](http://ask.sagemath.org/question/95/numerical-integration-in-a-function) very easily.\n\nIn that case, it would be easy to have several different algorithms. I don't know which would be better; in some sense, it would be best to always first see if we get an exact answer from Maxima, and if not, then do a numerical integral.  Or should it always do a straight-up numerical integral (whether from GSL, Maxima, Gi/Pynac...)?\n\nAs you can see, even trying to solve pretty 'easy' tickets can open a can of worms! Keep up the effort, though, it is much appreciated.",
+    "created_at": "2011-01-12T15:38:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7763",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7763#issuecomment-66876",
+    "user": "kcrisman"
+}
+```
 
 Maybe the best thing to do would be to have ONE top level function for numerical integration (`numerical_integral`), of which `nintegrate` and `nintegral` would be aliases.   Then one would have to really at this time change the syntax of `numerical_integral` so that it accepts the same syntax as integration in general does; you'll notice that currently it does not accept a variable, only the endpoints:
 
@@ -170,16 +305,38 @@ In that case, it would be easy to have several different algorithms. I don't kno
 As you can see, even trying to solve pretty 'easy' tickets can open a can of worms! Keep up the effort, though, it is much appreciated.
 
 
+
 ---
 
-Comment by gagansekhon created at 2011-01-13 18:43:16
+archive/issue_comments_066877.json:
+```json
+{
+    "body": "I am still working on this, but wanted to add a patch to show the progress.",
+    "created_at": "2011-01-13T18:43:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7763",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7763#issuecomment-66877",
+    "user": "gagansekhon"
+}
+```
 
 I am still working on this, but wanted to add a patch to show the progress.
 
 
+
 ---
 
-Comment by gagansekhon created at 2011-01-13 18:44:18
+archive/issue_comments_066878.json:
+```json
+{
+    "body": "Replying to [comment:12 gagansekhon]:\n> I am still working on this, but wanted to add a patch to show the progress. \n\nthe new patch integration.patch has the new and only progress.",
+    "created_at": "2011-01-13T18:44:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7763",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7763#issuecomment-66878",
+    "user": "gagansekhon"
+}
+```
 
 Replying to [comment:12 gagansekhon]:
 > I am still working on this, but wanted to add a patch to show the progress. 
@@ -187,73 +344,187 @@ Replying to [comment:12 gagansekhon]:
 the new patch integration.patch has the new and only progress.
 
 
+
 ---
 
-Comment by kcrisman created at 2011-01-13 19:15:09
+archive/issue_comments_066879.json:
+```json
+{
+    "body": "Thanks, good to see this!  \n\nI would caution that for annoying reasons we like to have the lines in the documentation be fairly short; see some of the other calculus or plotting files for examples of about how many characters (80? 84?) are appropriate.  (Otherwise it looks really bad in command line.)  So any updates should fix that.",
+    "created_at": "2011-01-13T19:15:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7763",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7763#issuecomment-66879",
+    "user": "kcrisman"
+}
+```
 
 Thanks, good to see this!  
 
 I would caution that for annoying reasons we like to have the lines in the documentation be fairly short; see some of the other calculus or plotting files for examples of about how many characters (80? 84?) are appropriate.  (Otherwise it looks really bad in command line.)  So any updates should fix that.
 
 
+
 ---
+
+archive/issue_comments_066880.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2011-01-17T17:15:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7763",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7763#issuecomment-66880",
+    "user": "gagansekhon"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by gagansekhon created at 2011-01-17 17:15:30
+archive/issue_comments_066881.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2011-01-17T17:15:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7763",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7763#issuecomment-66881",
+    "user": "gagansekhon"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by gagansekhon created at 2011-01-17 17:16:12
+archive/issue_comments_066882.json:
+```json
+{
+    "body": "Replying to [comment:15 gagansekhon]:\napply trac_7763.patch only",
+    "created_at": "2011-01-17T17:16:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7763",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7763#issuecomment-66882",
+    "user": "gagansekhon"
+}
+```
 
 Replying to [comment:15 gagansekhon]:
 apply trac_7763.patch only
 
 
+
 ---
+
+archive/issue_comments_066883.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2011-01-17T17:16:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7763",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7763#issuecomment-66883",
+    "user": "gagansekhon"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by kcrisman created at 2011-01-17 17:22:20
+archive/issue_comments_066884.json:
+```json
+{
+    "body": "To buildbot: apply trac_7763.7.patch only.\n\n(I think that the .6 and .7 patches must be identical, but it doesn't matter.)",
+    "created_at": "2011-01-17T17:22:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7763",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7763#issuecomment-66884",
+    "user": "kcrisman"
+}
+```
 
 To buildbot: apply trac_7763.7.patch only.
 
 (I think that the .6 and .7 patches must be identical, but it doesn't matter.)
 
 
+
 ---
 
-Comment by gagansekhon created at 2011-01-18 02:31:48
+archive/issue_comments_066885.json:
+```json
+{
+    "body": "Trac_7763.8.patch is the patch with everything, including commit line.",
+    "created_at": "2011-01-18T02:31:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7763",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7763#issuecomment-66885",
+    "user": "gagansekhon"
+}
+```
 
 Trac_7763.8.patch is the patch with everything, including commit line.
 
 
+
 ---
 
-Comment by kcrisman created at 2011-01-18 16:09:48
+archive/issue_comments_066886.json:
+```json
+{
+    "body": "Changing keywords from \"beginner\" to \"\".",
+    "created_at": "2011-01-18T16:09:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7763",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7763#issuecomment-66886",
+    "user": "kcrisman"
+}
+```
 
 Changing keywords from "beginner" to "".
 
 
+
 ---
 
-Comment by kcrisman created at 2011-01-18 16:09:48
+archive/issue_comments_066887.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2011-01-18T16:09:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7763",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7763#issuecomment-66887",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by kcrisman created at 2011-01-18 16:09:48
+archive/issue_comments_066888.json:
+```json
+{
+    "body": "Again, a good start at this!  \n\nUnfortunately, there are now MANY small issues that need to be cleared up before testing and positive review can occur.  I don't see any of these as insurmountable.  However, I'm definitely removing the 'beginner' tag, given that this has become a more subtle ticket.\n\nFirst, there are still a fair number of typos, English issues like `every floating point evaluation of return` (which was in the original, not introduced by the author of the patch, but should be fixed), etc.   There should be better formatting (`Examples::` should be capitalized, for example), and hopefully links to the functions put in - see the plotting functions, especially plot.py, for examples of how to do that in Sphinx.\n\n> I would caution that for annoying reasons we like to have the lines in the documentation be fairly short; see some of the other calculus or plotting files for examples of about how many characters (80? 84?) are appropriate.  (Otherwise it looks really bad in command line.)  So any updates should fix that.\n\nThis comment still applies.\n\nAnother interesting thing is the use of `*args` and `**kwds`.  Really, we expect only a few cases of args, and only one keyword.  I think the syntax for this should be like for symbolic integrals, e.g. `f.integrate(algorithm=\"mathematica_free\")` - that is to say, maybe it should be `algorithm` instead of `alg`.  Maybe even specifically check the args?  I don't know.\n\nThe private function `_numerical_integral` needs documentation.\n\n\n```\n#This is so the old numerical_integral will still work\n```\n\nis not quite accurate, as it's doing more than that :)\n\nI'm not sure whether the Mma or sympy ones actually will return numerical values.  Also, one should doctest all those options.\n\nWhat is the idea with calling the other numerical integral (from Maxima) `_nintegral_sym`, since it's not symbolic?  Maybe I'm missing something.\n\nI think you now have `Note that in exotic cases` twice in the same docstring - is that correct?\n\nAnyway, all doable things, and the final produce will be quite valuable.  \n\n(As a final comment, it would be worth seeing whether the issues at [this discussion](http://ask.sagemath.org/question/95/numerical-integration-in-a-function) are solved with this ticket.  I don't believe so - since these integrals aren't made symbolic - but it's worth checking.)",
+    "created_at": "2011-01-18T16:09:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7763",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7763#issuecomment-66888",
+    "user": "kcrisman"
+}
+```
 
 Again, a good start at this!  
 
@@ -287,9 +558,20 @@ Anyway, all doable things, and the final produce will be quite valuable.
 (As a final comment, it would be worth seeing whether the issues at [this discussion](http://ask.sagemath.org/question/95/numerical-integration-in-a-function) are solved with this ticket.  I don't believe so - since these integrals aren't made symbolic - but it's worth checking.)
 
 
+
 ---
 
-Comment by gagansekhon created at 2011-01-19 21:57:24
+archive/issue_comments_066889.json:
+```json
+{
+    "body": "Replying to [comment:19 kcrisman]:\n> Again, a good start at this!  \n> \n> Unfortunately, there are now MANY small issues that need to be cleared up before testing and positive review can occur.  I don't see any of these as insurmountable.  However, I'm definitely removing the 'beginner' tag, given that this has become a more subtle ticket.\n> \n> First, there are still a fair number of typos, English issues like `every floating point evaluation of return` . (which was in the original, not introduced by the author of the patch, but should be fixed), etc.\n\nI have read this line several time and can't figure out what it is trying to say, perhaps someone else can tell me what it should be. \n   There should be better formatting (`Examples::` should be capitalized, for example),\n\nFixed\n\n and hopefully links to the functions put in - see the plotting functions, especially plot.py, for examples of how to do that in Sphinx.\n> \nDid you want links each function listed in the file? Like a table of contents.\n\n> > I would caution that for annoying reasons we like to have the lines in the documentation be fairly short; see some of the other calculus or plotting files for examples of about how many characters (80? 84?) are appropriate.  (Otherwise it looks really bad in command line.)  So any updates should fix that.\n> \n> This comment still applies.\n> \nI tried to make the lines shorter, but the html file looked wierd. Html file formats each line and wraps it around. If I make them them shorter the documentation doesn't come out right. \n> Another interesting thing is the use of `*args` and `**kwds`.  Really, we expect only a few cases of args, and only one keyword. \n\nActually, there are several different sets of keywords depending on the algorithm provided. \n\n I think the syntax for this should be like for symbolic integrals, e.g. `f.integrate(algorithm=\"mathematica_free\")` - that is to say, maybe it should be `algorithm` instead of `alg`.  Maybe even specifically check the args?  I don't know.\n\nThe reason I went with alg, was that for alg=\"gsl\", algorithm is one of the keywords already being used. \n> \n> The private function `_numerical_integral` needs documentation.\nadded\n> \n> {{{\n> #This is so the old numerical_integral will still work\n> }}}\n> is not quite accurate, as it's doing more than that :)\n> \n> I'm not sure whether the Mma or sympy ones actually will return numerical values.  Also, one should doctest all those options.\n\nI tested mma and you are right it gives an error, though the actual function it is calling makes it seem like it should work.\n\nSympy, however does return numerical values for symbolic functions with closed form. \n\nAdded doctest for all algorithms\n\n> \n> What is the idea with calling the other numerical integral (from Maxima) `_nintegral_sym`, since it's not symbolic?  Maybe I'm missing something.\n\nThis used to be nintegral and is imported by symbolic.integration for f.nintegral. I kept this because it has different output than numerical_integral (both old and new)\n\n> \n> I think you now have `Note that in exotic cases` twice in the same docstring - is that correct?\n> \nThis was already there, I will read the documentation for that function and see if it is still needed. \n\n> Anyway, all doable things, and the final produce will be quite valuable.  \n> \n> (As a final comment, it would be worth seeing whether the issues at [this discussion](http://ask.sagemath.org/question/95/numerical-integration-in-a-function) are solved with this ticket.  I don't believe so - since these integrals aren't made symbolic - but it's worth checking.)\n\nThis is still open, but if one uses integral instead of numerical_integral it works. Since the result until the numerical values are inputed is not numeric, but a function in x, and y , numerical_integral should perhaps not be used.",
+    "created_at": "2011-01-19T21:57:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7763",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7763#issuecomment-66889",
+    "user": "gagansekhon"
+}
+```
 
 Replying to [comment:19 kcrisman]:
 > Again, a good start at this!  
@@ -353,7 +635,20 @@ This was already there, I will read the documentation for that function and see 
 This is still open, but if one uses integral instead of numerical_integral it works. Since the result until the numerical values are inputed is not numeric, but a function in x, and y , numerical_integral should perhaps not be used.
 
 
+
 ---
+
+archive/issue_comments_066890.json:
+```json
+{
+    "body": "Attachment\n\nThanks for clearing up some of my misunderstandings.  I don't have time to look at this today, but hopefully within a week?  Just a couple clarifications:\n>  and hopefully links to the functions put in - see the plotting functions, especially plot.py, for examples of how to do that in Sphinx.\n> > \n> Did you want links each function listed in the file? Like a table of contents.\n\nI mean like `:func:`~sage.plot.plot.plot`` referring to the function `plot`; one can do the same here, I think.\n> > > I would caution that for annoying reasons we like to have the lines in the documentation be fairly short; see some of the other calculus or plotting files for examples of about how many characters (80? 84?) are appropriate.  (Otherwise it looks really bad in command line.)  So any updates should fix that.\n> > \n> > This comment still applies.\n> > \n> I tried to make the lines shorter, but the html file looked wierd. Html file formats each line and wraps it around. If I make them them shorter the documentation doesn't come out right. \n\nHmm, that's odd.  I'll have to check it out; in most files we do this.  Maybe we've just been living with weird HTML :)",
+    "created_at": "2011-01-19T22:08:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7763",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7763#issuecomment-66890",
+    "user": "kcrisman"
+}
+```
 
 Attachment
 
@@ -372,15 +667,37 @@ I mean like `:func:`~sage.plot.plot.plot`` referring to the function `plot`; one
 Hmm, that's odd.  I'll have to check it out; in most files we do this.  Maybe we've just been living with weird HTML :)
 
 
+
 ---
 
-Comment by kcrisman created at 2011-04-18 15:25:08
+archive/issue_comments_066891.json:
+```json
+{
+    "body": "See also #8321.  We continue to get support requests because of the non-unified nature of our options.",
+    "created_at": "2011-04-18T15:25:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7763",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7763#issuecomment-66891",
+    "user": "kcrisman"
+}
+```
 
 See also #8321.  We continue to get support requests because of the non-unified nature of our options.
 
 
+
 ---
 
-Comment by kcrisman created at 2011-10-12 12:21:21
+archive/issue_comments_066892.json:
+```json
+{
+    "body": "It turns out that the current top-level function, `numerical_integral`, isn't even in the reference manual.  See #11916.  I don't think this is addressed here yet, though if it eventually is then that ticket would be closed as a dup.",
+    "created_at": "2011-10-12T12:21:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7763",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7763#issuecomment-66892",
+    "user": "kcrisman"
+}
+```
 
 It turns out that the current top-level function, `numerical_integral`, isn't even in the reference manual.  See #11916.  I don't think this is addressed here yet, though if it eventually is then that ticket would be closed as a dup.

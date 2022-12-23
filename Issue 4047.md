@@ -1,19 +1,44 @@
 # Issue 4047: [with patch, needs review] automorphism groups/canonical labels for hypergraphs
 
-Issue created by migration from https://trac.sagemath.org/ticket/4047
-
-Original creator: rlm
-
-Original creation time: 2008-09-03 17:40:41
-
+archive/issues_004047.json:
+```json
+{
+    "body": "Assignee: rlm\n\nAlso known as nonlinear binary codes. This patch sets up the framework needed for matrix automorphism groups, and automorphism groups of nonbinary linear codes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4047\n\n",
+    "created_at": "2008-09-03T17:40:41Z",
+    "labels": [
+        "coding theory",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch, needs review] automorphism groups/canonical labels for hypergraphs",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4047",
+    "user": "rlm"
+}
+```
 Assignee: rlm
 
 Also known as nonlinear binary codes. This patch sets up the framework needed for matrix automorphism groups, and automorphism groups of nonbinary linear codes.
 
+Issue created by migration from https://trac.sagemath.org/ticket/4047
+
+
+
+
 
 ---
 
-Comment by wdj created at 2008-09-03 21:38:23
+archive/issue_comments_029184.json:
+```json
+{
+    "body": "This seems like an awesome patch. It applies to 3.1.2.alpha4 fine and passes sage -testall.\nI don't understand the cython code, though it appears to be well-documented. However, I have a few general questions anyway:-)\n\n1. Where is there written a \"big picture\" explanation of what the general idea is and where it is going. I know rlm-blog has some details but it seems a lot of details (even in vague global terms) are missing from that, so it would be great to see how this fits into the grand scheme. \n\n2. It seems (based on my vague understanding) that the automorphism group function could be replaced by a more general equivalence function, which returns the group of equivalences if two \"non-linear codes\" are equivalent (and \"False\" otherwise, or something). Is this true?\n\n3. What exactly is a hypergraph and how does it correspond to a non-linear code? (And by non-linear I assume you mean a subset of GF(2)^n which is not necessarily closed under the usual coordinate-wise addition.)\n\nHope these comments help. If not feel free to ignore them!",
+    "created_at": "2008-09-03T21:38:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4047",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4047#issuecomment-29184",
+    "user": "wdj"
+}
+```
 
 This seems like an awesome patch. It applies to 3.1.2.alpha4 fine and passes sage -testall.
 I don't understand the cython code, though it appears to be well-documented. However, I have a few general questions anyway:-)
@@ -27,9 +52,20 @@ I don't understand the cython code, though it appears to be well-documented. How
 Hope these comments help. If not feel free to ignore them!
 
 
+
 ---
 
-Comment by rlm created at 2008-09-03 23:12:20
+archive/issue_comments_029185.json:
+```json
+{
+    "body": "> 1. Where is there written a \"big picture\" explanation of what the general idea is and where it is going. I know rlm-blog has some details but it seems a lot of details (even in vague global terms) are missing from that, so it would be great to see how this fits into the grand scheme. \n\nCheck the top of the file sage/groups/perm_gps/partn_ref/automorphism_group_canonical_label.pyx\n\n> 2. It seems (based on my vague understanding) that the automorphism group function could be replaced by a more general equivalence function, which returns the group of equivalences if two \"non-linear codes\" are equivalent (and \"False\" otherwise, or something). Is this true?\n\nThis isn't quite true, the set of isomorphisms does not form a subgroup, but a double coset. If you know the automorphism groups `A1 = Aut(G1)` and `A2 = Aut(G2)`, and you have an isomorphism `g : G1 --> G2`, then any other isomorphism is going to be something in the double coset `A2 g A1.` There's no point computing all the isomorphisms...\n\n> 3. What exactly is a hypergraph and how does it correspond to a non-linear code? (And by non-linear I assume you mean a subset of GF(2)^n which is not necessarily closed under the usual coordinate-wise addition.)\n\nExactly. A hypergraph is a \"graph\" whose \"edges\" need only be subsets of the vertex set, not necessarily of size 2.",
+    "created_at": "2008-09-03T23:12:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4047",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4047#issuecomment-29185",
+    "user": "rlm"
+}
+```
 
 > 1. Where is there written a "big picture" explanation of what the general idea is and where it is going. I know rlm-blog has some details but it seems a lot of details (even in vague global terms) are missing from that, so it would be great to see how this fits into the grand scheme. 
 
@@ -44,29 +80,75 @@ This isn't quite true, the set of isomorphisms does not form a subgroup, but a d
 Exactly. A hypergraph is a "graph" whose "edges" need only be subsets of the vertex set, not necessarily of size 2.
 
 
+
 ---
 
-Comment by mhansen created at 2008-09-05 19:24:14
+archive/issue_comments_029186.json:
+```json
+{
+    "body": "Looks good to me.",
+    "created_at": "2008-09-05T19:24:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4047",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4047#issuecomment-29186",
+    "user": "mhansen"
+}
+```
 
 Looks good to me.
 
 
+
 ---
+
+archive/issue_comments_029187.json:
+```json
+{
+    "body": "Attachment\n\nThe updated patch is good too :-)",
+    "created_at": "2008-09-05T19:37:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4047",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4047#issuecomment-29187",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 The updated patch is good too :-)
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-06 00:52:16
+archive/issue_comments_029188.json:
+```json
+{
+    "body": "Merged in Sage 3.1.2.rc0",
+    "created_at": "2008-09-06T00:52:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4047",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4047#issuecomment-29188",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.1.2.rc0
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-06 00:52:16
+archive/issue_comments_029189.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-09-06T00:52:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4047",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4047#issuecomment-29189",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

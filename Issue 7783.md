@@ -1,11 +1,21 @@
 # Issue 7783: 3d graphics (viewed with jmol) do not work from the command line on OS X 10.6 sage-4.3
 
-Issue created by migration from https://trac.sagemath.org/ticket/7783
-
-Original creator: was
-
-Original creation time: 2009-12-29 06:28:44
-
+archive/issues_007783.json:
+```json
+{
+    "body": "Assignee: was\n\n\n```\nsage: sphere()\n```\n\n\ndoesn't work.  The same from the Sage notebook works fine. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7783\n\n",
+    "created_at": "2009-12-29T06:28:44Z",
+    "labels": [
+        "graphics",
+        "critical",
+        "bug"
+    ],
+    "title": "3d graphics (viewed with jmol) do not work from the command line on OS X 10.6 sage-4.3",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7783",
+    "user": "was"
+}
+```
 Assignee: was
 
 
@@ -16,10 +26,25 @@ sage: sphere()
 
 doesn't work.  The same from the Sage notebook works fine. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7783
+
+
+
+
 
 ---
 
-Comment by was created at 2009-12-29 07:30:40
+archive/issue_comments_067113.json:
+```json
+{
+    "body": "Actually, all command line 3d graphics are broken in sage-4.3.   I just tried on one of the linux binaries and found this too:\n\n\n```\nwstein@ubuntu910-64:/tmp/wstein/farm/sage-4.3$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: !sage-native-execute local/bin/jmol\nJmol.jar not found\n```\n\n| Sage Version 4.3, Release Date: 2009-12-24                         |\n| Type notebook() for the GUI, and license() for information.        |\nThis is yet more fallout from changing the sagenb to use setuptools instead of distutils. The problem is that the jmol script says this:\n\n```/bin/sh\nJMOL_HOME=\"$SAGE_LOCAL/lib/python/site-packages/sagenb/data/jmol\"\n...\n```\n\n\nHowever, look at site-packages now:\n\n```\n...\nsagenb-0.4.8-py2.6.egg\n...\n```\n\n\nDoing this makes the problem disappear:\n\n```\n$  cd sage-4.3/local/lib/python/site-packages\n$  ln -s sagenb-0.4.8-py2.6.egg/sagenb .\n```\n",
+    "created_at": "2009-12-29T07:30:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7783",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7783#issuecomment-67113",
+    "user": "was"
+}
+```
 
 Actually, all command line 3d graphics are broken in sage-4.3.   I just tried on one of the linux binaries and found this too:
 
@@ -60,51 +85,132 @@ $  ln -s sagenb-0.4.8-py2.6.egg/sagenb .
 
 
 
+
 ---
 
-Comment by was created at 2009-12-29 07:30:55
+archive/issue_comments_067114.json:
+```json
+{
+    "body": "Changing priority from critical to blocker.",
+    "created_at": "2009-12-29T07:30:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7783",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7783#issuecomment-67114",
+    "user": "was"
+}
+```
 
 Changing priority from critical to blocker.
 
 
+
 ---
 
-Comment by was created at 2009-12-29 07:55:24
+archive/issue_comments_067115.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-12-29T07:55:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7783",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7783#issuecomment-67115",
+    "user": "was"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_067116.json:
+```json
+{
+    "body": "Attachment\n\nApply this patch alone to the sagenb repo. Updates scripts to use pkg_resources to look for sagenb.",
+    "created_at": "2009-12-29T08:40:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7783",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7783#issuecomment-67116",
+    "user": "timdumol"
+}
+```
 
 Attachment
 
 Apply this patch alone to the sagenb repo. Updates scripts to use pkg_resources to look for sagenb.
 
 
+
 ---
+
+archive/issue_comments_067117.json:
+```json
+{
+    "body": "Attachment\n\nApply this patch alone to the sage scripts repo. Adds a script that uses pkg_resources to find the location of a given package.",
+    "created_at": "2009-12-29T08:41:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7783",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7783#issuecomment-67117",
+    "user": "timdumol"
+}
+```
 
 Attachment
 
 Apply this patch alone to the sage scripts repo. Adds a script that uses pkg_resources to find the location of a given package.
 
 
+
 ---
 
-Comment by timdumol created at 2009-12-29 08:43:00
+archive/issue_comments_067118.json:
+```json
+{
+    "body": "Unfortunately the solution in sagenb_7783.patch does not play well with `setup.py develop`. Any changes made to the packages in that mode will not be propagated. These two new patches use `pkg_resources` to find the location of the sagenb package.",
+    "created_at": "2009-12-29T08:43:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7783",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7783#issuecomment-67118",
+    "user": "timdumol"
+}
+```
 
 Unfortunately the solution in sagenb_7783.patch does not play well with `setup.py develop`. Any changes made to the packages in that mode will not be propagated. These two new patches use `pkg_resources` to find the location of the sagenb package.
 
 
+
 ---
 
-Comment by was created at 2009-12-29 09:13:49
+archive/issue_comments_067119.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-12-29T09:13:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7783",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7783#issuecomment-67119",
+    "user": "was"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by was created at 2009-12-29 09:13:49
+archive/issue_comments_067120.json:
+```json
+{
+    "body": "Your solution is better in the long run.  \n\nPositive review. \n\n**IMPORTANT NOTE TO Release MANAGER**\n\nApply trac_7783-sage-scripts.patch then \n\n```\nchmod +x local/bin/sage-pypkg-location \n```\n\n\n!!\n\nI have applied trac_7783-sagenb-scripts.patch to the official sagenb repo and merged it into sagenb-0.4.9.",
+    "created_at": "2009-12-29T09:13:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7783",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7783#issuecomment-67120",
+    "user": "was"
+}
+```
 
 Your solution is better in the long run.  
 
@@ -124,8 +230,19 @@ chmod +x local/bin/sage-pypkg-location
 I have applied trac_7783-sagenb-scripts.patch to the official sagenb repo and merged it into sagenb-0.4.9.
 
 
+
 ---
 
-Comment by mhansen created at 2010-01-03 20:44:33
+archive/issue_comments_067121.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-03T20:44:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7783",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7783#issuecomment-67121",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

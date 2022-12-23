@@ -1,11 +1,21 @@
 # Issue 4325: CC() fails on Mathematica output
 
-Issue created by migration from https://trac.sagemath.org/ticket/4325
-
-Original creator: ddrake
-
-Original creation time: 2008-10-20 02:17:29
-
+archive/issues_004325.json:
+```json
+{
+    "body": "Assignee: was\n\nKeywords: mathematica\n\nUsing 3.1.2 on sage.math:\n\n```\nsage: mathematica.eval('N[BesselK[1+I, 2+ 3*I], 20]')\n         -0.105203133241753451256 + 0.017589014615189905553 I\n```\n\nNow say I want to get a CC element out of that:\n\n```\nsage: CC(mathematica.eval('N[BesselK[1+I, 2+ 3*I], 20]'))\n------------------------------------------------------------\n   File \"<string>\", line 1\n     -RealNumber('0.105203133241753451256')+RealNumber('0.017589014615189905553')I\n                                                                                 ^\nSyntaxError: unexpected EOF while parsing\n\n```\n\nIt's confused because Mathematica uses a space between the number and I; a workaround is to put in an asterisk:\n\n```\nsage: CC(mathematica.eval('N[BesselK[1+I, 2+ 3*I], 20]').replace(' I', '*I'))\n-0.105203133241753 + 0.0175890146151899*I\n```\n\nI understand that this kind of parsing can get difficult and complicated, but it seems like something we should aim for.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4325\n\n",
+    "created_at": "2008-10-20T02:17:29Z",
+    "labels": [
+        "interfaces",
+        "major",
+        "bug"
+    ],
+    "title": "CC() fails on Mathematica output",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4325",
+    "user": "ddrake"
+}
+```
 Assignee: was
 
 Keywords: mathematica
@@ -38,10 +48,25 @@ sage: CC(mathematica.eval('N[BesselK[1+I, 2+ 3*I], 20]').replace(' I', '*I'))
 
 I understand that this kind of parsing can get difficult and complicated, but it seems like something we should aim for.
 
+Issue created by migration from https://trac.sagemath.org/ticket/4325
+
+
+
+
 
 ---
 
-Comment by ddrake created at 2008-10-20 05:42:19
+archive/issue_comments_031684.json:
+```json
+{
+    "body": "Here's another problem:\n\n```\nsage: mathematica.eval('N[BesselK[I-1, I], 30]')\n\n         -0.190193056011529041190471623406 - \n \n>    0.470313413807477232703205350275 I\n```\n\nTrying to `CC()` that fails because of the newlines and the `>` in the middle. This may be another ticket entirely, so let me know if I should open another.",
+    "created_at": "2008-10-20T05:42:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4325",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4325#issuecomment-31684",
+    "user": "ddrake"
+}
+```
 
 Here's another problem:
 
@@ -56,9 +81,20 @@ sage: mathematica.eval('N[BesselK[I-1, I], 30]')
 Trying to `CC()` that fails because of the newlines and the `>` in the middle. This may be another ticket entirely, so let me know if I should open another.
 
 
+
 ---
 
-Comment by jason created at 2008-10-20 10:46:41
+archive/issue_comments_031685.json:
+```json
+{
+    "body": "In Mathematica, we can set the output to automatically be wrapped in a certain function.  We ought to just write a function that first calls InputForm.\n\n\n```\nsage: CC(mathematica.eval('N[BesselK[1+I, 2+ 3*I], 20]//InputForm[#,NumberMarks->False]&'))\n-0.105203133241753 + 0.0175890146151899*I\nsage: CC(mathematica.eval('N[BesselK[I-1, I], 30]//InputForm[#,NumberMarks->False]&'))\n-0.190193056011529 - 0.470313413807477*I\n```\n\n\nI put the NumberMarks->False option since Sage doesn't know how to deal with the precision information returned from Mathematica.  It would be nice if there was a way to use that in constructing Sage objects.  My guess is it would be fairly easy in Mathematica to write a function that generates Sage output, given that you easily have access to the full parse tree of the function in Mathematica.\n\n\nAnother way to get rid of the precision information is to set $NumberMarks = False:\n\n\n```\nsage: mathematica.eval('$NumberMarks=False')\n         False\nsage: CC(mathematica.eval('N[BesselK[I-1, I], 30]//InputForm'))-0.190193056011529 - 0.470313413807477*I\n```\n\n\nWe can automatically apply the InputForm to any printed output by setting the $PrePrint hook:\n\n\n```\nsage: mathematica.eval('$NumberMarks=False')\n         False\nsage: mathematica.eval('$PrePrint = InputForm')\n         InputForm\nsage: CC(mathematica.eval('N[BesselK[I-1, I], 30]'))\n-0.190193056011529 - 0.470313413807477*I\nsage: CC(mathematica.eval('N[BesselK[1+I, 2+ 3*I], 20]'))\n-0.105203133241753 + 0.0175890146151899*I\n```\n",
+    "created_at": "2008-10-20T10:46:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4325",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4325#issuecomment-31685",
+    "user": "jason"
+}
+```
 
 In Mathematica, we can set the output to automatically be wrapped in a certain function.  We ought to just write a function that first calls InputForm.
 
@@ -100,9 +136,20 @@ sage: CC(mathematica.eval('N[BesselK[1+I, 2+ 3*I], 20]'))
 
 
 
+
 ---
 
-Comment by was created at 2008-10-20 15:40:29
+archive/issue_comments_031686.json:
+```json
+{
+    "body": "The output of mathematica.eval (or in general FOO.eval) must be the string that *system* outputs. There is absolutely no reason any coercion, e.g., CC(FOO.eval(...)) should ever work.  This ticket as is is definitely invalid.\n\nHowever, it is fair game to want to make something like CC(FOO(...)) work. Note that there is no eval.  So this is the only thing that should work:\n\n```\nsage: CC(mathematica('N[BesselK[1+I, 2+ 3*I], 20]'))\n```\n\nUnfortunately, due to stuff not being implemented, this doesn't work either.\nAnother thing that should work is \n\n```\nsage: a = mathematica('N[BesselK[1+I, 2+ 3*I], 20]')\nsage: CC((a.Re(), a.Im()))\n```\n\nIt doesn't, because of #4330.",
+    "created_at": "2008-10-20T15:40:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4325",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4325#issuecomment-31686",
+    "user": "was"
+}
+```
 
 The output of mathematica.eval (or in general FOO.eval) must be the string that *system* outputs. There is absolutely no reason any coercion, e.g., CC(FOO.eval(...)) should ever work.  This ticket as is is definitely invalid.
 
@@ -123,9 +170,20 @@ sage: CC((a.Re(), a.Im()))
 It doesn't, because of #4330.
 
 
+
 ---
 
-Comment by ddrake created at 2008-10-21 00:19:34
+archive/issue_comments_031687.json:
+```json
+{
+    "body": "Replying to [comment:2 jason]:\n> In Mathematica, we can set the output to automatically be wrapped in a certain function.  We ought to just write a function that first calls InputForm.\n\nThose are good ideas. I wish I had known that when I was using Mathematica a lot more! I spent a *lot* of time manually editing wonky output from Mathematica's primitive command line interface.\n\nReplying to [comment:3 was]:\n> The output of mathematica.eval (or in general FOO.eval) must be the string that *system* outputs. There is absolutely no reason any coercion, e.g., CC(FOO.eval(...)) should ever work. This ticket as is is definitely invalid. \n\nOkay, it's no problem if this is an invalid ticket. Looks like #4330 will fix the true problem here.",
+    "created_at": "2008-10-21T00:19:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4325",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4325#issuecomment-31687",
+    "user": "ddrake"
+}
+```
 
 Replying to [comment:2 jason]:
 > In Mathematica, we can set the output to automatically be wrapped in a certain function.  We ought to just write a function that first calls InputForm.
@@ -138,9 +196,20 @@ Replying to [comment:3 was]:
 Okay, it's no problem if this is an invalid ticket. Looks like #4330 will fix the true problem here.
 
 
+
 ---
 
-Comment by ddrake created at 2009-04-22 07:24:06
+archive/issue_comments_031688.json:
+```json
+{
+    "body": "With #4330 being fixed I'm closing this ticket as fixed. The suggestion given above ([comment:3 was]) works now with 3.4.1.rc4:\n\n```\nsage: a = mathematica('N[BesselK[1+I, 2+ 3*I], 30]')\nsage: CC((a.Re(), a.Im()))\n-0.105203133241753 + 0.0175890146151899*I\n```\n\nYou lose a bit of precision, there, so you can use RealField and so on:\n\n```\nsage: a.Re()\n-0.10520313324175345125609254499068\nsage: RealField(100)(a.Re())\n-0.10520313324175345125609254499\nsage: RealField(110)(a.Re())\n-0.10520313324175345125609254499070\n```\n\n\nSince this works now, and my original usage of `mathematica.eval` isn't supposed to work, I say this is fixed.",
+    "created_at": "2009-04-22T07:24:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4325",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4325#issuecomment-31688",
+    "user": "ddrake"
+}
+```
 
 With #4330 being fixed I'm closing this ticket as fixed. The suggestion given above ([comment:3 was]) works now with 3.4.1.rc4:
 
@@ -165,30 +234,74 @@ sage: RealField(110)(a.Re())
 Since this works now, and my original usage of `mathematica.eval` isn't supposed to work, I say this is fixed.
 
 
+
 ---
 
-Comment by ddrake created at 2009-04-22 07:24:06
+archive/issue_comments_031689.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-04-22T07:24:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4325",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4325#issuecomment-31689",
+    "user": "ddrake"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-22 07:33:17
+archive/issue_comments_031690.json:
+```json
+{
+    "body": "Changing status from closed to reopened.",
+    "created_at": "2009-04-22T07:33:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4325",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4325#issuecomment-31690",
+    "user": "mabshoff"
+}
+```
 
 Changing status from closed to reopened.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-22 07:33:17
+archive/issue_comments_031691.json:
+```json
+{
+    "body": "Resolution changed from fixed to ",
+    "created_at": "2009-04-22T07:33:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4325",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4325#issuecomment-31691",
+    "user": "mabshoff"
+}
+```
 
 Resolution changed from fixed to 
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-22 07:33:17
+archive/issue_comments_031692.json:
+```json
+{
+    "body": "This ticket should only be closed when a proper doctest has been added. I skimmed #4330 and did not see such a doctest.\n\nThoughts?\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-22T07:33:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4325",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4325#issuecomment-31692",
+    "user": "mabshoff"
+}
+```
 
 This ticket should only be closed when a proper doctest has been added. I skimmed #4330 and did not see such a doctest.
 
@@ -199,16 +312,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-22 07:34:52
+archive/issue_comments_031693.json:
+```json
+{
+    "body": "Resolution: wontfix",
+    "created_at": "2009-04-22T07:34:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4325",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4325#issuecomment-31693",
+    "user": "mabshoff"
+}
+```
 
 Resolution: wontfix
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-22 07:34:52
+archive/issue_comments_031694.json:
+```json
+{
+    "body": "And to close this it should be \"wontfix\" or \"invalid\" depending on taste. I think that since this is bogus/an abuse of eval we don't need a doctest in this case :).\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-22T07:34:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4325",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4325#issuecomment-31694",
+    "user": "mabshoff"
+}
+```
 
 And to close this it should be "wontfix" or "invalid" depending on taste. I think that since this is bogus/an abuse of eval we don't need a doctest in this case :).
 

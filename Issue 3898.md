@@ -1,11 +1,21 @@
 # Issue 3898: Make an optional, self contained gcc 4.3.1.spkg
 
-Issue created by migration from https://trac.sagemath.org/ticket/3898
-
-Original creator: mabshoff
-
-Original creation time: 2008-08-19 17:17:37
-
+archive/issues_003898.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nAs the title says. Make sure to first build static versions of gmp and mpfr to link against those instead of the Sage ones.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3898\n\n",
+    "created_at": "2008-08-19T17:17:37Z",
+    "labels": [
+        "packages: standard",
+        "blocker",
+        "bug"
+    ],
+    "title": "Make an optional, self contained gcc 4.3.1.spkg",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3898",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 As the title says. Make sure to first build static versions of gmp and mpfr to link against those instead of the Sage ones.
@@ -14,17 +24,43 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/3898
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-08-23 01:06:44
+archive/issue_comments_027877.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-08-23T01:06:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3898",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3898#issuecomment-27877",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-23 01:06:44
+archive/issue_comments_027878.json:
+```json
+{
+    "body": "The spkg at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.1.2/alpha0/gcc-4.3.1.spkg\n\nbuilds find on x86-64 Linux with recent enough glibcs. It should also work on x86 and Itanium.\n\nCheers,\n\nMichael",
+    "created_at": "2008-08-23T01:06:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3898",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3898#issuecomment-27878",
+    "user": "mabshoff"
+}
+```
 
 The spkg at
 
@@ -37,9 +73,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-26 09:56:50
+archive/issue_comments_027879.json:
+```json
+{
+    "body": "I have an updated spkg at\n\nhttp://sage.math.washington.edu/home/mabshoff/gcc-4.3.1.p0.spkg\n\nthat is about half the size. It now installs into $SAGE_LOCAL/toolchain and needs a matching patch to set $PATH and $LD_LIBRARY_PATH correctly to work properly.\n\nCheers,\n\nMichael",
+    "created_at": "2008-08-26T09:56:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3898",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3898#issuecomment-27879",
+    "user": "mabshoff"
+}
+```
 
 I have an updated spkg at
 
@@ -52,9 +99,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-26 11:06:08
+archive/issue_comments_027880.json:
+```json
+{
+    "body": "The above spkg will fail in case the Sage build directory is on another mount than the tmp dir since the symbolic link across mounts will fail. That is the reason that it failed on SkyNet with the same error across the board.\n\nI am working on gcc-4.3.1.p1.spkg.\n\nCheers,\n\nMichael",
+    "created_at": "2008-08-26T11:06:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3898",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3898#issuecomment-27880",
+    "user": "mabshoff"
+}
+```
 
 The above spkg will fail in case the Sage build directory is on another mount than the tmp dir since the symbolic link across mounts will fail. That is the reason that it failed on SkyNet with the same error across the board.
 
@@ -65,9 +123,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-26 21:52:14
+archive/issue_comments_027881.json:
+```json
+{
+    "body": "The spkg at\n\nhttp://sage.math.washington.edu/home/mabshoff/gcc-4.3.1.p0.spkg\n\nnow builds on various Skynet machines. I still need to add some magic to make the toolchain automatically integrated into sage-env.\n\nCheers,\n\nMichael",
+    "created_at": "2008-08-26T21:52:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3898",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3898#issuecomment-27881",
+    "user": "mabshoff"
+}
+```
 
 The spkg at
 
@@ -80,9 +149,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-26 21:53:04
+archive/issue_comments_027882.json:
+```json
+{
+    "body": "The spkg is obviously\n\nhttp://sage.math.washington.edu/home/mabshoff/gcc-4.3.1.p1.spkg\n\nSorry :)\n\nCheers,\n\nMichael",
+    "created_at": "2008-08-26T21:53:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3898",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3898#issuecomment-27882",
+    "user": "mabshoff"
+}
+```
 
 The spkg is obviously
 
@@ -95,9 +175,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-27 04:54:23
+archive/issue_comments_027883.json:
+```json
+{
+    "body": "And now there is \n\nhttp://sage.math.washington.edu/home/mabshoff/gcc-4.3.1.p2.spkg\n\nI still need to provide an update with the toolchain env being copied into the right place to make this work automatically.\n\nCheers,\n\nMichael",
+    "created_at": "2008-08-27T04:54:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3898",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3898#issuecomment-27883",
+    "user": "mabshoff"
+}
+```
 
 And now there is 
 
@@ -110,9 +201,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-30 19:33:16
+archive/issue_comments_027884.json:
+```json
+{
+    "body": "Gcc 4.3.2 is out, so update to latest upstream.\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-30T19:33:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3898",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3898#issuecomment-27884",
+    "user": "mabshoff"
+}
+```
 
 Gcc 4.3.2 is out, so update to latest upstream.
 
@@ -121,9 +223,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by was created at 2008-11-27 07:36:30
+archive/issue_comments_027885.json:
+```json
+{
+    "body": "\n```\n23:32 < wstein-682> there's no gcc-4.3.2 spkg, so why did you write \"neeeds review\"?\n23:32 < wstein-682> can I change 3898 to \"needs work\"?\n23:32 < mabshoff> It need to update.\n23:32 < mabshoff> Yes\n23:32 < wstein-682> since it's not done as stated inthe summary?\n23:33 < mabshoff> I need to do two things:\n23:33 < mabshoff> (a) update to gcc 4.3.2 (quick)\n23:33 < mabshoff> (b) create custom toolchain.sh scripts for x86, x86-64 and Itanium.\n23:33 < mabshoff> Next time I build on SkyNet I will do so.\n23:34 < mabshoff> And definitely before SD 12 due to obvious reasons :)\n```\n",
+    "created_at": "2008-11-27T07:36:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3898",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3898#issuecomment-27885",
+    "user": "was"
+}
+```
 
 
 ```
@@ -141,16 +254,38 @@ Comment by was created at 2008-11-27 07:36:30
 
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-15 07:13:57
+archive/issue_comments_027886.json:
+```json
+{
+    "body": "Changing priority from blocker to critical.",
+    "created_at": "2009-02-15T07:13:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3898",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3898#issuecomment-27886",
+    "user": "mabshoff"
+}
+```
 
 Changing priority from blocker to critical.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-15 07:13:57
+archive/issue_comments_027887.json:
+```json
+{
+    "body": "gcc 4.3.3 is out, so this needs to be fixed anyway.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-15T07:13:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3898",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3898#issuecomment-27887",
+    "user": "mabshoff"
+}
+```
 
 gcc 4.3.3 is out, so this needs to be fixed anyway.
 
@@ -159,52 +294,129 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by drkirkby created at 2009-12-16 22:18:24
+archive/issue_comments_027888.json:
+```json
+{
+    "body": "Despite not being the latest release, 4.3.4 is arguably the most stable release to date. \n\nDave",
+    "created_at": "2009-12-16T22:18:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3898",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3898#issuecomment-27888",
+    "user": "drkirkby"
+}
+```
 
 Despite not being the latest release, 4.3.4 is arguably the most stable release to date. 
 
 Dave
 
 
+
 ---
 
-Comment by was created at 2009-12-19 07:48:25
+archive/issue_comments_027889.json:
+```json
+{
+    "body": "Hi David, are you thinking of making an spkg?  I think it would be well worth making one.  I've changed the title to 4.3.4.",
+    "created_at": "2009-12-19T07:48:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3898",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3898#issuecomment-27889",
+    "user": "was"
+}
+```
 
 Hi David, are you thinking of making an spkg?  I think it would be well worth making one.  I've changed the title to 4.3.4.
 
 
+
 ---
 
-Comment by bober created at 2012-03-21 00:02:45
+archive/issue_comments_027890.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2012-03-21T00:02:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3898",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3898#issuecomment-27890",
+    "user": "bober"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by bober created at 2012-03-21 00:02:45
+archive/issue_comments_027891.json:
+```json
+{
+    "body": "This is really old and we are now adding a new gcc spkg, so this ticket should be closed.",
+    "created_at": "2012-03-21T00:02:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3898",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3898#issuecomment-27891",
+    "user": "bober"
+}
+```
 
 This is really old and we are now adding a new gcc spkg, so this ticket should be closed.
 
 
+
 ---
 
-Comment by roed created at 2012-03-21 00:03:45
+archive/issue_comments_027892.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2012-03-21T00:03:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3898",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3898#issuecomment-27892",
+    "user": "roed"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by roed created at 2012-03-21 00:03:45
+archive/issue_comments_027893.json:
+```json
+{
+    "body": "I agree: this should be closed.",
+    "created_at": "2012-03-21T00:03:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3898",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3898#issuecomment-27893",
+    "user": "roed"
+}
+```
 
 I agree: this should be closed.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-03-21 11:33:03
+archive/issue_comments_027894.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2012-03-21T11:33:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3898",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3898#issuecomment-27894",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: duplicate

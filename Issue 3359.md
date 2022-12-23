@@ -1,11 +1,21 @@
 # Issue 3359: bug/inconsistency in multivariate polynomial substitution
 
-Issue created by migration from https://trac.sagemath.org/ticket/3359
-
-Original creator: was
-
-Original creation time: 2008-06-04 15:46:35
-
+archive/issues_003359.json:
+```json
+{
+    "body": "Assignee: malb\n\n\n```\nDear Andrey,\n\nOn Jun 4, 7:21 am, Andrey Novoseltsev <novos...@gmail.com> wrote:\n> What is wrong with the code below and how to fix it?\n\nI don't know what precisely is wrong with that code, but a very\nsimilar code works.\n\nFirst, i can reproduce the trouble:\nsage: Rt.<t> = PolynomialRing(QQ,1)\nsage: p = 1+t\nsage: R.<u,v> = PolynomialRing(QQ, 2)\nsage: p(u/v)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call\nlast)\n...\n\nThe following works:\nsage: Rt2.<t> = PolynomialRing(QQ)\nsage: p2 = 1+t\nsage: p2(u/v)\n(u + v)/v\n\nThe difference is that Rt is a Multivariate Polynomial Ring (with one\nvariable, though), but Rt2 is a genuine Univariate Polynomial Ring.\n\nSo, at least there is a work-around.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3359\n\n",
+    "created_at": "2008-06-04T15:46:35Z",
+    "labels": [
+        "commutative algebra",
+        "minor",
+        "bug"
+    ],
+    "title": "bug/inconsistency in multivariate polynomial substitution",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3359",
+    "user": "was"
+}
+```
 Assignee: malb
 
 
@@ -41,37 +51,100 @@ So, at least there is a work-around.
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3359
+
+
+
+
 
 ---
+
+archive/issue_comments_023387.json:
+```json
+{
+    "body": "Attachment\n\nThe attached patch fixes this issue.",
+    "created_at": "2008-08-18T13:54:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3359",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3359#issuecomment-23387",
+    "user": "malb"
+}
+```
 
 Attachment
 
 The attached patch fixes this issue.
 
 
+
 ---
 
-Comment by malb created at 2008-08-24 12:26:28
+archive/issue_comments_023388.json:
+```json
+{
+    "body": "was, can I ask you to review the patch since you reported the issue?",
+    "created_at": "2008-08-24T12:26:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3359",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3359#issuecomment-23388",
+    "user": "malb"
+}
+```
 
 was, can I ask you to review the patch since you reported the issue?
 
 
+
 ---
+
+archive/issue_comments_023389.json:
+```json
+{
+    "body": "Attachment\n\nLooks good to me.  Apply both patches.",
+    "created_at": "2008-08-26T22:20:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3359",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3359#issuecomment-23389",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 Looks good to me.  Apply both patches.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-26 23:17:47
+archive/issue_comments_023390.json:
+```json
+{
+    "body": "Merged both patches in Sage 3.1.2.alpha1",
+    "created_at": "2008-08-26T23:17:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3359",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3359#issuecomment-23390",
+    "user": "mabshoff"
+}
+```
 
 Merged both patches in Sage 3.1.2.alpha1
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-26 23:17:47
+archive/issue_comments_023391.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-08-26T23:17:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3359",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3359#issuecomment-23391",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 4698: [with patch, needs review] a single make_element function for pickling is hard to maintain
 
-Issue created by migration from https://trac.sagemath.org/ticket/4698
-
-Original creator: burcin
-
-Original creation time: 2008-12-04 23:04:26
-
+archive/issues_004698.json:
+```json
+{
+    "body": "Assignee: burcin\n\nCC:  robertwb was\n\nAll subclasses of `sage.structure.element.Element` end up using `sage.structure.element.make_element` for unpickling. This design is very hard to maintain, especially when trying to keep backward compatibility with older pickles. \n\nPython's pickling protocol via `__getstate__()` and `__setstate__()` moves the implementation of pickling/unpickling to the subclasses. [1] Attached patch changes sage.structure.element.Element to use this protocol.\n\n[1] http://www.python.org/doc/2.5/lib/pickle-inst.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/4698\n\n",
+    "created_at": "2008-12-04T23:04:26Z",
+    "labels": [
+        "algebra",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch, needs review] a single make_element function for pickling is hard to maintain",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4698",
+    "user": "burcin"
+}
+```
 Assignee: burcin
 
 CC:  robertwb was
@@ -16,8 +26,25 @@ Python's pickling protocol via `__getstate__()` and `__setstate__()` moves the i
 
 [1] http://www.python.org/doc/2.5/lib/pickle-inst.html
 
+Issue created by migration from https://trac.sagemath.org/ticket/4698
+
+
+
+
 
 ---
+
+archive/issue_comments_035391.json:
+```json
+{
+    "body": "Attachment\n\nI fully doctested this on sage.math and it worked perfectly. \n\nI read the code and it looks good, and like a nice solution.  Bravo.",
+    "created_at": "2008-12-06T22:28:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4698",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4698#issuecomment-35391",
+    "user": "was"
+}
+```
 
 Attachment
 
@@ -26,15 +53,37 @@ I fully doctested this on sage.math and it worked perfectly.
 I read the code and it looks good, and like a nice solution.  Bravo.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-07 08:07:15
+archive/issue_comments_035392.json:
+```json
+{
+    "body": "Merged in Sage 3.2.2.alpha1",
+    "created_at": "2008-12-07T08:07:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4698",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4698#issuecomment-35392",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.2.2.alpha1
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-07 08:07:15
+archive/issue_comments_035393.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-12-07T08:07:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4698",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4698#issuecomment-35393",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

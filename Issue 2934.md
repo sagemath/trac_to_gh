@@ -1,11 +1,21 @@
 # Issue 2934: doctesting files outside of sage repo is completely broken!!
 
-Issue created by migration from https://trac.sagemath.org/ticket/2934
-
-Original creator: was
-
-Original creation time: 2008-04-15 16:49:11
-
+archive/issues_002934.json:
+```json
+{
+    "body": "Assignee: failure\n\n\n```\n\n\nOn Tue, Apr 15, 2008 at 9:11 AM, Jason Bandlow <jbandlow@gmail.com> wrote:\n> \n>  Hello all,\n>  \n>  Regarding doctesting, I'd like to work with the following setup:\n>  1. Create a file work.sage (or work.py) somewhere in my home directory.\n>  2. Start a notebook session, and attach work.sage.\n>  3. Use the notebook for generating and staring at data, while using a\n>  text editor to modify my code.\n>  4. Periodically run: $ sage -t work.sage      to make sure that I\n>  haven't completely fouled things up.\n>  \n>  Step 4 seems not to work (on Sage 2.11 on Ubuntu).  For example,\n>  I created the following file, foo.py, in my ~/.sage directory:\n>  \n>  def foo(x):\n>     r\"\"\"\n>     Shows how doctests don't work.\n>  \n>     EXAMPLES:\n>         sage: 2+2\n>         5\n>         sage: foo(3)\n>         4\n>     \"\"\"\n>     print(x)\n>  \n>  And then\n>  $ sage -t --verbose ~/.sage/foo.py\n>  \n>  ----------------------------------------------------------------------\n>  All tests passed!\n>  Total time for all tests: 0.0 seconds\n>  \n>  $ sage -coverage ~/.sage/foo.py\n>  ----------------------------------------------------------------------\n>  foo.py\n>  SCORE foo.py: 100% (1 of 1)\n>  ----------------------------------------------------------------------\n>  \n>  \n>  Can someone explain to me what's going on here?\n\nSomebody (I don't want to name names; maybe it is me?) has completely\nbroken doctesting of user files, evidently.   There has\nbeen a lot of changes made to the doctesting system\nrecently, and I don't know which thing caused the\nabove very serious problems.    Even doctesting a pure\n.py file is broken!\n\nteragon:.sage was$ more foo.py \ndef foo(x):\n   r\"\"\"\n   Shows how doctests don't work.\n\n   EXAMPLES:\n       sage: 2+2\n       5\n       sage: foo(3)\n       4\n   \"\"\"\n   print(x)\n\nteragon:.sage was$ sage -t foo.py\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 0.0 seconds\n\n\n -- William\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2934\n\n",
+    "created_at": "2008-04-15T16:49:11Z",
+    "labels": [
+        "doctest coverage",
+        "blocker",
+        "bug"
+    ],
+    "title": "doctesting files outside of sage repo is completely broken!!",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2934",
+    "user": "was"
+}
+```
 Assignee: failure
 
 
@@ -86,29 +96,79 @@ Total time for all tests: 0.0 seconds
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2934
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2008-04-15 17:43:12
+archive/issue_comments_020208.json:
+```json
+{
+    "body": "I can only reproduce this when the .py file is in a directory starting with a \".\"",
+    "created_at": "2008-04-15T17:43:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2934",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2934#issuecomment-20208",
+    "user": "mhansen"
+}
+```
 
 I can only reproduce this when the .py file is in a directory starting with a "."
 
 
+
 ---
 
-Comment by was created at 2008-04-15 19:31:32
+archive/issue_comments_020209.json:
+```json
+{
+    "body": "mhansen -- you're right, this problem only occurs when the filename is in a directory starting with a .dot.  E.g., in my test above I was in $HOME/.sage.",
+    "created_at": "2008-04-15T19:31:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2934",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2934#issuecomment-20209",
+    "user": "was"
+}
+```
 
 mhansen -- you're right, this problem only occurs when the filename is in a directory starting with a .dot.  E.g., in my test above I was in $HOME/.sage.
 
 
+
 ---
 
-Comment by was created at 2008-04-20 17:18:16
+archive/issue_comments_020210.json:
+```json
+{
+    "body": "apply this to the hg_scripts repo.",
+    "created_at": "2008-04-20T17:18:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2934",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2934#issuecomment-20210",
+    "user": "was"
+}
+```
 
 apply this to the hg_scripts repo.
 
 
+
 ---
+
+archive/issue_comments_020211.json:
+```json
+{
+    "body": "Attachment\n\nThe attached patch scripts-2934.patch enables doctesting in hidden directories.  This used to be disabled since we kept lots of temp data in ./doctest -- but now we don't do to some nice changes\nmade by Timothy Abbot.",
+    "created_at": "2008-04-20T17:19:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2934",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2934#issuecomment-20211",
+    "user": "was"
+}
+```
 
 Attachment
 
@@ -116,22 +176,55 @@ The attached patch scripts-2934.patch enables doctesting in hidden directories. 
 made by Timothy Abbot.
 
 
+
 ---
 
-Comment by mhansen created at 2008-04-21 02:33:21
+archive/issue_comments_020212.json:
+```json
+{
+    "body": "Looks good to me and fixes the problem.",
+    "created_at": "2008-04-21T02:33:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2934",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2934#issuecomment-20212",
+    "user": "mhansen"
+}
+```
 
 Looks good to me and fixes the problem.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-21 02:51:15
+archive/issue_comments_020213.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-04-21T02:51:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2934",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2934#issuecomment-20213",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-21 02:51:15
+archive/issue_comments_020214.json:
+```json
+{
+    "body": "Merged in Sage 3.0.rc1",
+    "created_at": "2008-04-21T02:51:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2934",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2934#issuecomment-20214",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.rc1

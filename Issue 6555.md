@@ -1,11 +1,21 @@
 # Issue 6555: Twisted produces deprecation warning about using md5 module in Python 2.6
 
-Issue created by migration from https://trac.sagemath.org/ticket/6555
-
-Original creator: jason
-
-Original creation time: 2009-07-18 19:27:35
-
+archive/issues_006555.json:
+```json
+{
+    "body": "Assignee: boothby\n\nWhen I start up the notebook in 4.1, I get:\n\n\n```\nsage: notebook()\nThe notebook files are stored in: /home/grout/.sage//sage_notebook\n**************************************************\n*                                                *\n* Open your web browser to http://localhost:8000 *\n*                                                *\n**************************************************\n/home/grout/sage/local/lib/python2.6/site-packages/twisted/persisted/sob.py:12: DeprecationWarning: the md5 module is deprecated; use hashlib instead\n  import os, md5, sys\n```\n\n\n\nIt looks like this was fixed a while ago in twisted: http://twistedmatrix.com/trac/ticket/2763\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6555\n\n",
+    "created_at": "2009-07-18T19:27:35Z",
+    "labels": [
+        "notebook",
+        "major",
+        "bug"
+    ],
+    "title": "Twisted produces deprecation warning about using md5 module in Python 2.6",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6555",
+    "user": "jason"
+}
+```
 Assignee: boothby
 
 When I start up the notebook in 4.1, I get:
@@ -29,23 +39,60 @@ It looks like this was fixed a while ago in twisted: http://twistedmatrix.com/tr
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6555
+
+
+
+
 
 ---
 
-Comment by jason created at 2009-07-18 19:30:32
+archive/issue_comments_053457.json:
+```json
+{
+    "body": "It also appears that there is other work for them to be compatible with Python 2.6: http://twistedmatrix.com/trac/query?status=new&status=assigned&status=reopened&milestone=Python-2.6",
+    "created_at": "2009-07-18T19:30:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6555",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6555#issuecomment-53457",
+    "user": "jason"
+}
+```
 
 It also appears that there is other work for them to be compatible with Python 2.6: http://twistedmatrix.com/trac/query?status=new&status=assigned&status=reopened&milestone=Python-2.6
 
 
+
 ---
 
-Comment by mhansen created at 2009-11-14 08:50:01
+archive/issue_comments_053458.json:
+```json
+{
+    "body": "This was fixed by #6676.",
+    "created_at": "2009-11-14T08:50:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6555",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6555#issuecomment-53458",
+    "user": "mhansen"
+}
+```
 
 This was fixed by #6676.
 
 
+
 ---
 
-Comment by mhansen created at 2009-11-14 08:50:01
+archive/issue_comments_053459.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2009-11-14T08:50:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6555",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6555#issuecomment-53459",
+    "user": "mhansen"
+}
+```
 
 Resolution: duplicate

@@ -1,11 +1,21 @@
 # Issue 8565: atan2(-pi,0) throws "divide by zero"
 
-Issue created by migration from https://trac.sagemath.org/ticket/8565
-
-Original creator: burcin
-
-Original creation time: 2010-03-20 10:33:22
-
+archive/issues_008565.json:
+```json
+{
+    "body": "Assignee: burcin\n\nKeywords: pynac\n\nFrom sage-devel:\n\n\n```\nthe summary is:\n-------------------\natan2(3,0)   --> 1/2*pi\natan2(-3,0)  --> -1/2*pi\natan2(pi,0)  --> 1/2*pi\natan2(-pi,0) -->  RuntimeError: power::eval(): division by zero\n--------------------\n```\n\n\nsage-devel thread is here:\n\nhttp://groups.google.com/group/sage-devel/t/317e6bfe11fabb4\n\nalso reported on sage-support:\n\nhttp://groups.google.com/group/sage-support/t/02f3446e68381346\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8565\n\n",
+    "created_at": "2010-03-20T10:33:22Z",
+    "labels": [
+        "symbolics",
+        "major",
+        "bug"
+    ],
+    "title": "atan2(-pi,0) throws \"divide by zero\"",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8565",
+    "user": "burcin"
+}
+```
 Assignee: burcin
 
 Keywords: pynac
@@ -33,15 +43,43 @@ also reported on sage-support:
 http://groups.google.com/group/sage-support/t/02f3446e68381346
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8565
+
+
+
+
 
 ---
 
-Comment by burcin created at 2010-04-02 14:48:19
+archive/issue_comments_077544.json:
+```json
+{
+    "body": "add doctests",
+    "created_at": "2010-04-02T14:48:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8565",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8565#issuecomment-77544",
+    "user": "burcin"
+}
+```
 
 add doctests
 
 
+
 ---
+
+archive/issue_comments_077545.json:
+```json
+{
+    "body": "Attachment\n\nThe pynac package at #8644 includes the patches that were merged in `GiNaC` to fix this problem. attachment:trac_8565-neg_pi.patch adds doctests for the fix.\n\nThis ticket now depends on #8644.",
+    "created_at": "2010-04-02T14:52:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8565",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8565#issuecomment-77545",
+    "user": "burcin"
+}
+```
 
 Attachment
 
@@ -50,29 +88,73 @@ The pynac package at #8644 includes the patches that were merged in `GiNaC` to f
 This ticket now depends on #8644.
 
 
+
 ---
 
-Comment by burcin created at 2010-04-02 14:52:12
+archive/issue_comments_077546.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-04-02T14:52:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8565",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8565#issuecomment-77546",
+    "user": "burcin"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by robert.marik created at 2010-04-09 11:09:42
+archive/issue_comments_077547.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-04-09T11:09:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8565",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8565#issuecomment-77547",
+    "user": "robert.marik"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by robert.marik created at 2010-04-09 11:09:42
+archive/issue_comments_077548.json:
+```json
+{
+    "body": "Installs fine, all tests passed, works ad advertised. Positive review and thanks for fixing.",
+    "created_at": "2010-04-09T11:09:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8565",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8565#issuecomment-77548",
+    "user": "robert.marik"
+}
+```
 
 Installs fine, all tests passed, works ad advertised. Positive review and thanks for fixing.
 
 
+
 ---
 
-Comment by was created at 2010-04-29 04:13:43
+archive/issue_comments_077549.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-04-29T04:13:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8565",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8565#issuecomment-77549",
+    "user": "was"
+}
+```
 
 Resolution: fixed

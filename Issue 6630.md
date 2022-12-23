@@ -1,11 +1,21 @@
 # Issue 6630: The empty species exists !!!
 
-Issue created by migration from https://trac.sagemath.org/ticket/6630
-
-Original creator: hivert
-
-Original creation time: 2009-07-26 20:49:01
-
+archive/issues_006630.json:
+```json
+{
+    "body": "Assignee: hivert\n\nKeywords: species zero\n\nI'm writing a patch which create the empty species. Before the patch I didn't find any way to create it...\nIt is the species which contains no structure at all and as such does not seems very useful. However, it is the zero of the semi-ring of the species and may be needed when you do computation on species, for example to give the default value for the function sum()...\n\nAnd this is yet another patch from me about empty objects :)\n\nFlorent\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6630\n\n",
+    "created_at": "2009-07-26T20:49:01Z",
+    "labels": [
+        "combinatorics",
+        "major",
+        "bug"
+    ],
+    "title": "The empty species exists !!!",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6630",
+    "user": "hivert"
+}
+```
 Assignee: hivert
 
 Keywords: species zero
@@ -18,33 +28,81 @@ And this is yet another patch from me about empty objects :)
 Florent
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6630
+
+
+
+
 
 ---
 
-Comment by hivert created at 2009-07-26 21:54:30
+archive/issue_comments_054330.json:
+```json
+{
+    "body": "The attached patch should solve the problem. I didn't address the question of making the empty species an actual neutral and zero element with respect to the sum and the product of the semi-ring of species. This means that if you add the empty species with another species you get a different species (an instance of the class `SumSpecies_class`), and the same with the product. This should be solved in a patch which actually create the semi-ring of species...\n\nFlorent",
+    "created_at": "2009-07-26T21:54:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6630",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6630#issuecomment-54330",
+    "user": "hivert"
+}
+```
 
 The attached patch should solve the problem. I didn't address the question of making the empty species an actual neutral and zero element with respect to the sum and the product of the semi-ring of species. This means that if you add the empty species with another species you get a different species (an instance of the class `SumSpecies_class`), and the same with the product. This should be solved in a patch which actually create the semi-ring of species...
 
 Florent
 
 
+
 ---
 
-Comment by hivert created at 2009-07-26 21:54:30
+archive/issue_comments_054331.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-07-26T21:54:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6630",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6630#issuecomment-54331",
+    "user": "hivert"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by saliola created at 2009-08-24 21:19:26
+archive/issue_comments_054332.json:
+```json
+{
+    "body": "The patch applies cleanly to sage-4.1.1, passes doctests, and is very nicely written. Positive review.",
+    "created_at": "2009-08-24T21:19:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6630",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6630#issuecomment-54332",
+    "user": "saliola"
+}
+```
 
 The patch applies cleanly to sage-4.1.1, passes doctests, and is very nicely written. Positive review.
 
 
+
 ---
 
-Comment by mvngu created at 2009-08-24 23:20:30
+archive/issue_comments_054333.json:
+```json
+{
+    "body": "The patch `trac_6630-reviewer.patch` fixes a number of typos found in `empty_species-fh-6630.patch`. It also adds the new module `sage/combinat/species/empty_species.py` to the reference manual; the module is too good to be buried among the source files of the Sage library! In adding the module to the reference manual, the patch fixes some ReST formatting typos. The docstring of the function `EmptySpecies()` has been moved to the class `EmptySpecies_class`. This is so that docstrings for empty species show up in the reference manual. \n\n\n\nThe following private methods have doctests, but no docstrings:\n \n1. `__init__()`\n2. `_gs()`\n3. `_structures()`\n\nThis lack of docstring would come back to haunt the documentation writer and user because when #6586 is merged then private methods would show up in the reference manual. So two things remain to be done:\n\n1. Someone needs to review the patch `trac_6630-reviewer.patch`.\n2. Add docstrings to the above private methods. One easy way to do so is to first apply `empty_species-fh-6630.patch`, followed by `trac_6630-reviewer.patch`. Then write docstrings based upon those two patches and upload another patch. I'm marking this ticket as \"needs work\".",
+    "created_at": "2009-08-24T23:20:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6630",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6630#issuecomment-54333",
+    "user": "mvngu"
+}
+```
 
 The patch `trac_6630-reviewer.patch` fixes a number of typos found in `empty_species-fh-6630.patch`. It also adds the new module `sage/combinat/species/empty_species.py` to the reference manual; the module is too good to be buried among the source files of the Sage library! In adding the module to the reference manual, the patch fixes some ReST formatting typos. The docstring of the function `EmptySpecies()` has been moved to the class `EmptySpecies_class`. This is so that docstrings for empty species show up in the reference manual. 
 
@@ -52,19 +110,30 @@ The patch `trac_6630-reviewer.patch` fixes a number of typos found in `empty_spe
 
 The following private methods have doctests, but no docstrings:
  
- 1. `__init__()`
- 1. `_gs()`
- 1. `_structures()`
+1. `__init__()`
+2. `_gs()`
+3. `_structures()`
 
 This lack of docstring would come back to haunt the documentation writer and user because when #6586 is merged then private methods would show up in the reference manual. So two things remain to be done:
 
- 1. Someone needs to review the patch `trac_6630-reviewer.patch`.
- 1. Add docstrings to the above private methods. One easy way to do so is to first apply `empty_species-fh-6630.patch`, followed by `trac_6630-reviewer.patch`. Then write docstrings based upon those two patches and upload another patch. I'm marking this ticket as "needs work".
+1. Someone needs to review the patch `trac_6630-reviewer.patch`.
+2. Add docstrings to the above private methods. One easy way to do so is to first apply `empty_species-fh-6630.patch`, followed by `trac_6630-reviewer.patch`. Then write docstrings based upon those two patches and upload another patch. I'm marking this ticket as "needs work".
+
 
 
 ---
 
-Comment by mvngu created at 2009-08-25 00:19:36
+archive/issue_comments_054334.json:
+```json
+{
+    "body": "And here is another reason why this ticket needs work: the docstring coverage is not 100%:\n\n```\n[mvngu@sage sage-4.1.1]$ ./sage -coverage devel/sage-main/sage/combinat/species/empty_species.py \n----------------------------------------------------------------------\ndevel/sage-main/sage/combinat/species/empty_species.py\nSCORE devel/sage-main/sage/combinat/species/empty_species.py: 83% (5 of 6)\n\nMissing documentation:\n\t * __init__(self, min=None, max=None, weight=None):\n\n\nPossibly wrong (function name doesn't occur in doctests):\n\t * _gs(self, series_ring, base_ring):\n\t * _structures(self, structure_class, labels):\n\n----------------------------------------------------------------------\n```\n\nDocstring coverage must be 100% for any new module.",
+    "created_at": "2009-08-25T00:19:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6630",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6630#issuecomment-54334",
+    "user": "mvngu"
+}
+```
 
 And here is another reason why this ticket needs work: the docstring coverage is not 100%:
 
@@ -88,24 +157,48 @@ Possibly wrong (function name doesn't occur in doctests):
 Docstring coverage must be 100% for any new module.
 
 
+
 ---
+
+archive/issue_comments_054335.json:
+```json
+{
+    "body": "Attachment\n\nNew version of the patch with mgnvu's one folded.",
+    "created_at": "2009-09-11T15:18:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6630",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6630#issuecomment-54335",
+    "user": "hivert"
+}
+```
 
 Attachment
 
 New version of the patch with mgnvu's one folded.
 
 
+
 ---
 
-Comment by hivert created at 2009-09-11 15:25:41
+archive/issue_comments_054336.json:
+```json
+{
+    "body": "Dear Franco and Minh,\n\nI just uploaded the hopefully final version of the patch with full doctests coverage. I reviewed positively mvngu's patch and folded into mine. Please rereview.\n\nNote: There are two slight change in the code:\n- I corrected the output of the species (I never tried to print an empty species).\n- The internal function _structure should never be called. I let it raise an error rather than pass and update the doc accordingly.\n\nNote: for the release manager: use only `empty_species-fh-6630-v2.patch`.\n\nCheers,\n\nFlorent",
+    "created_at": "2009-09-11T15:25:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6630",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6630#issuecomment-54336",
+    "user": "hivert"
+}
+```
 
 Dear Franco and Minh,
 
 I just uploaded the hopefully final version of the patch with full doctests coverage. I reviewed positively mvngu's patch and folded into mine. Please rereview.
 
 Note: There are two slight change in the code:
- - I corrected the output of the species (I never tried to print an empty species).
- - The internal function _structure should never be called. I let it raise an error rather than pass and update the doc accordingly.
+- I corrected the output of the species (I never tried to print an empty species).
+- The internal function _structure should never be called. I let it raise an error rather than pass and update the doc accordingly.
 
 Note: for the release manager: use only `empty_species-fh-6630-v2.patch`.
 
@@ -114,22 +207,55 @@ Cheers,
 Florent
 
 
+
 ---
 
-Comment by mhansen created at 2009-09-26 04:22:03
+archive/issue_comments_054337.json:
+```json
+{
+    "body": "Everything looks good to me.  I will delete the other old patches.",
+    "created_at": "2009-09-26T04:22:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6630",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6630#issuecomment-54337",
+    "user": "mhansen"
+}
+```
 
 Everything looks good to me.  I will delete the other old patches.
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-26 05:10:38
+archive/issue_comments_054338.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-09-26T05:10:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6630",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6630#issuecomment-54338",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-27 10:43:46
+archive/issue_comments_054339.json:
+```json
+{
+    "body": "There is no 4.1.2.alpha3. Sage 4.1.2.alpha3 was William Stein's release for working on making the notebook a standalone package.",
+    "created_at": "2009-09-27T10:43:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6630",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6630#issuecomment-54339",
+    "user": "mvngu"
+}
+```
 
 There is no 4.1.2.alpha3. Sage 4.1.2.alpha3 was William Stein's release for working on making the notebook a standalone package.

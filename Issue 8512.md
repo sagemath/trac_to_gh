@@ -1,11 +1,21 @@
 # Issue 8512: database_stein_watkins_mini uses 'cp -v' which fails on Solaris.
 
-Issue created by migration from https://trac.sagemath.org/ticket/8512
-
-Original creator: drkirkby
-
-Original creation time: 2010-03-12 23:48:03
-
+archive/issues_008512.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  was\n\nThe optional package  \"database_stein_watkins_mini\" fails to install on Solaris 10, as 'cp' uses an illegal option -v, which is not defined by POSIX. \n\nhttp://www.opengroup.org/onlinepubs/9699919799/utilities/cp.html\n\nSince the GNU version of 'cp' only uses the -v option to show what is being done - from the 'cp' man page on Linux:\n\n\n```\n       -v, --verbose\n              explain what is being done\n```\n\n\nThe -v option can simply be removed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8512\n\n",
+    "created_at": "2010-03-12T23:48:03Z",
+    "labels": [
+        "packages: optional",
+        "major",
+        "bug"
+    ],
+    "title": "database_stein_watkins_mini uses 'cp -v' which fails on Solaris.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8512",
+    "user": "drkirkby"
+}
+```
 Assignee: tbd
 
 CC:  was
@@ -25,21 +35,47 @@ Since the GNU version of 'cp' only uses the -v option to show what is being done
 
 The -v option can simply be removed.
 
+Issue created by migration from https://trac.sagemath.org/ticket/8512
+
+
+
+
 
 ---
 
-Comment by drkirkby created at 2010-03-13 00:25:09
+archive/issue_comments_076864.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-03-13T00:25:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8512",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8512#issuecomment-76864",
+    "user": "drkirkby"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-03-13 00:25:09
+archive/issue_comments_076865.json:
+```json
+{
+    "body": "The solution to this GNUism was very easy - just remove the -v option.\n\nI also added a **very incomplete** SPKG.txt file - previously there was no file called SPKG.txt. I leave it up to William or others with more knowledge to fill this in. It does at least document the change I made. \n\nThe database can be found at http://boxen.math.washington.edu/home/kirkby/optional/database_stein_watkins_mini.p0/database_stein_watkins_mini.p0.spkg\n\nAttached are a diff of the spkg-install and the new SPKG.txt\n\n == Note to the release manager. == \n\nThere is no Mercurial repository - I this will have to be integrated manually.",
+    "created_at": "2010-03-13T00:25:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8512",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8512#issuecomment-76865",
+    "user": "drkirkby"
+}
+```
 
 The solution to this GNUism was very easy - just remove the -v option.
 
-I also added a *very incomplete* SPKG.txt file - previously there was no file called SPKG.txt. I leave it up to William or others with more knowledge to fill this in. It does at least document the change I made. 
+I also added a **very incomplete** SPKG.txt file - previously there was no file called SPKG.txt. I leave it up to William or others with more knowledge to fill this in. It does at least document the change I made. 
 
 The database can be found at http://boxen.math.washington.edu/home/kirkby/optional/database_stein_watkins_mini.p0/database_stein_watkins_mini.p0.spkg
 
@@ -50,41 +86,111 @@ Attached are a diff of the spkg-install and the new SPKG.txt
 There is no Mercurial repository - I this will have to be integrated manually.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-03-13 00:25:56
+archive/issue_comments_076866.json:
+```json
+{
+    "body": "Brand new (but mostly incomplete) SPKG.txt",
+    "created_at": "2010-03-13T00:25:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8512",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8512#issuecomment-76866",
+    "user": "drkirkby"
+}
+```
 
 Brand new (but mostly incomplete) SPKG.txt
 
 
+
 ---
+
+archive/issue_comments_076867.json:
+```json
+{
+    "body": "Attachment\n\nModified spkg-install, removing the '-v' option to 'cp'",
+    "created_at": "2010-03-13T00:27:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8512",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8512#issuecomment-76867",
+    "user": "drkirkby"
+}
+```
 
 Attachment
 
 Modified spkg-install, removing the '-v' option to 'cp'
 
 
+
 ---
+
+archive/issue_comments_076868.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-03-13T00:30:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8512",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8512#issuecomment-76868",
+    "user": "drkirkby"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by drkirkby created at 2010-03-13 23:45:03
+archive/issue_comments_076869.json:
+```json
+{
+    "body": "Changing assignee from tbd to drkirkby.",
+    "created_at": "2010-03-13T23:45:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8512",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8512#issuecomment-76869",
+    "user": "drkirkby"
+}
+```
 
 Changing assignee from tbd to drkirkby.
 
 
+
 ---
 
-Comment by was created at 2010-06-02 22:03:01
+archive/issue_comments_076870.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-06-02T22:03:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8512",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8512#issuecomment-76870",
+    "user": "was"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mhansen created at 2010-06-07 05:06:57
+archive/issue_comments_076871.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-06-07T05:06:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8512",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8512#issuecomment-76871",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 8010: f2py broken on some mac systems
 
-Issue created by migration from https://trac.sagemath.org/ticket/8010
-
-Original creator: flawrence
-
-Original creation time: 2010-01-20 06:42:41
-
+archive/issues_008010.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  georgsweber\n\nAny use of f2py, e.g. following the examples at http://www.sagemath.org/doc/numerical_sage/f2py.html lead to a crash:\n\n\n```\nerror: Command \"sage_fortran -Wall -shared /var/folders/LQ/LQFRAKFTGCCurtDiHcxv1k++-5I/-Tmp-\n/tmpisjCMl/var/folders/LQ/LQFRAKFTGCCurtDiHcxv1k++-5I/-Tmp-\n/tmpisjCMl/src.macosx-10.6-i386-2.6/fortran_module_0module.o \n/var/folders/LQ/LQFRAKFTGCCurtDiHcxv1k++-5I/-Tmp-\n/tmpisjCMl/var/folders/LQ/LQFRAKFTGCCurtDiHcxv1k++-5I/-Tmp-\n/tmpisjCMl/src.macosx-10.6-i386-2.6/fortranobject.o \n/var/folders/LQ/LQFRAKFTGCCurtDiHcxv1k++-5I/-Tmp-\n/tmpisjCMl/Users/felix/.sage/temp/<my domain name>/52076/tmp_0.o -L\"Using built-in specs.\n/Applications/sage-4.3.1.rc1/local/bin/../lib/gcc/i686-apple-darwin8/4.2.3/x86_64\" \n-lgfortran -o ./fortran_module_0.so\" failed with exit status 1\n\ni686-apple-darwin8-gfortran-4.2: no input files\ni686-apple-darwin8-gfortran-4.2: no input files\ni686-apple-darwin8-gfortran-4.2: unrecognized option '-shared'\ni686-apple-darwin8-gfortran-4.2: no input files\ni686-apple-darwin8-gfortran-4.2: unrecognized option '-shared'\ni686-apple-darwin8-gfortran-4.2: no input files\ni686-apple-darwin8-gfortran-4.2: no input files\ni686-apple-darwin8-gfortran-4.2: no input files\ni686-apple-darwin8-gfortran-4.2: unrecognized option '-shared'\ni686-apple-darwin8-gfortran-4.2: no input files\ni686-apple-darwin8-gfortran-4.2: unrecognized option '-shared'\ni686-apple-darwin8-gfortran-4.2: no input files\nUsing built-in specs.\nTarget: i686-apple-darwin8\nConfigured with: /Builds/unix/gcc/gcc-4.2/configure --prefix=/usr/local \n--mandir=/share/man --program-transform-name=/^[cg][^.-]*$/s/$/-4.2/ \n--build=i686-apple-darwin8 --host=i686-apple-darwin8 --target=i686-apple-\ndarwin8 --enable-languages=fortran\nThread model: posix\ngcc version 4.2.3\n\n<SNIP>\n```\n\n\nThis is using 4.3.1rc1 on 10.6, 64-bit.\n\nThe problem is that local/lib/python2.6/site-packages/numpy/distutils/fcompiler/gnu.py adds a \"-shared\" flag when linking, even though OS X doesn't support it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8010\n\n",
+    "created_at": "2010-01-20T06:42:41Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "f2py broken on some mac systems",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8010",
+    "user": "flawrence"
+}
+```
 Assignee: tbd
 
 CC:  georgsweber
@@ -54,22 +64,61 @@ This is using 4.3.1rc1 on 10.6, 64-bit.
 
 The problem is that local/lib/python2.6/site-packages/numpy/distutils/fcompiler/gnu.py adds a "-shared" flag when linking, even though OS X doesn't support it.
 
+Issue created by migration from https://trac.sagemath.org/ticket/8010
+
+
+
+
 
 ---
+
+archive/issue_comments_070008.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-01-20T06:43:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8010",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-70008",
+    "user": "flawrence"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by flawrence created at 2010-01-20 06:45:46
+archive/issue_comments_070009.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-01-20T06:45:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8010",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-70009",
+    "user": "flawrence"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mvngu created at 2010-02-15 05:15:43
+archive/issue_comments_070010.json:
+```json
+{
+    "body": "An updated spkg with Felix's patch is available at\n\nhttp://sage.math.washington.edu/home/mvngu/spkg/standard/numpy/version2/numpy-1.3.0.p3.spkg\n\nThis ticket might clash with #7831.",
+    "created_at": "2010-02-15T05:15:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8010",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-70010",
+    "user": "mvngu"
+}
+```
 
 An updated spkg with Felix's patch is available at
 
@@ -78,9 +127,20 @@ http://sage.math.washington.edu/home/mvngu/spkg/standard/numpy/version2/numpy-1.
 This ticket might clash with #7831.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-02-18 13:35:47
+archive/issue_comments_070011.json:
+```json
+{
+    "body": "Has this been checked on Solaris? \n\nThere's general information about building on Solaris at\n\nhttp://wiki.sagemath.org/solaris\n\nInformation specifically for 't2' at \n\nhttp://wiki.sagemath.org/devel/Building-Sage-on-the-T5240-t2\n\nBoth the source (4.3.0.1 is the latest to build on Solaris) and a binary which will run on any SPARC can be found at http://www.sagemath.org/download-source.html \n\nDave",
+    "created_at": "2010-02-18T13:35:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8010",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-70011",
+    "user": "drkirkby"
+}
+```
 
 Has this been checked on Solaris? 
 
@@ -97,9 +157,20 @@ Both the source (4.3.0.1 is the latest to build on Solaris) and a binary which w
 Dave
 
 
+
 ---
 
-Comment by flawrence created at 2010-02-19 05:12:10
+archive/issue_comments_070012.json:
+```json
+{
+    "body": "I haven't checked this on Solaris, but it shouldn't affect behaviour on any platform other than OS X.  All this patch does is substitute the options \"-undefined dynamic_lookup -bundle\" for \"-shared\" under OS X, since on OS X the compiler doesn't support \"-shared\".\n\nThis platform-check and substitution is already being done elsewhere in the file (in the Sage_FCompiler class), but was not being done in Sage_FCompiler_1, so it's a pretty innocuous patch.\n\nCheers,\nFelix",
+    "created_at": "2010-02-19T05:12:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8010",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-70012",
+    "user": "flawrence"
+}
+```
 
 I haven't checked this on Solaris, but it shouldn't affect behaviour on any platform other than OS X.  All this patch does is substitute the options "-undefined dynamic_lookup -bundle" for "-shared" under OS X, since on OS X the compiler doesn't support "-shared".
 
@@ -109,135 +180,333 @@ Cheers,
 Felix
 
 
+
 ---
 
-Comment by drkirkby created at 2010-02-19 09:33:48
+archive/issue_comments_070013.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_info.",
+    "created_at": "2010-02-19T09:33:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8010",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-70013",
+    "user": "drkirkby"
+}
+```
 
 Changing status from needs_review to needs_info.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-02-19 09:33:48
+archive/issue_comments_070014.json:
+```json
+{
+    "body": "The title says this breaks on \"on some mac systems\", but the patch is applied on all Mac systems (well, all running OS X). Is that wise? \n\nIt would be good if it could be tested on Solaris too, as often what are perceived as pretty innocuous patches do break on some systems.",
+    "created_at": "2010-02-19T09:33:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8010",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-70014",
+    "user": "drkirkby"
+}
+```
 
 The title says this breaks on "on some mac systems", but the patch is applied on all Mac systems (well, all running OS X). Is that wise? 
 
 It would be good if it could be tested on Solaris too, as often what are perceived as pretty innocuous patches do break on some systems.
 
 
+
 ---
 
-Comment by flawrence created at 2010-02-19 11:21:32
+archive/issue_comments_070015.json:
+```json
+{
+    "body": "Changing status from needs_info to needs_review.",
+    "created_at": "2010-02-19T11:21:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8010",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-70015",
+    "user": "flawrence"
+}
+```
 
 Changing status from needs_info to needs_review.
 
 
+
 ---
 
-Comment by flawrence created at 2010-02-19 11:21:32
+archive/issue_comments_070016.json:
+```json
+{
+    "body": "Mac OS X (Darwin) compilers do not support the \"-shared\" option.  The class Sage_FCompiler_1 currently calls compilers on all platforms using the \"-shared\" option.  So whenever this class is used on Mac, it fails.  On my computer, this led to f2py failing.  This is a five line patch (plus documentation) that changes the compiler options on Mac to be in line with those already used in Sage_FCompiler, while leaving the compiler options on other platforms such as Solaris unchanged.  If you'd like to check it on Solaris, then go ahead, but the patch was intentionally written to avoid changing behaviour on platforms other than OS X.\n\nThis breaks \"on some mac systems\" - f2py is broken on my 64-bit sage, but seems to be working on 32-bit mac systems without this patch.  My guess is that 32-bit macs use Sage_FCompiler rather than Sage_FCompiler_1.  Anyone who is familiar with the numpy spkg, please confirm or correct me!",
+    "created_at": "2010-02-19T11:21:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8010",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-70016",
+    "user": "flawrence"
+}
+```
 
 Mac OS X (Darwin) compilers do not support the "-shared" option.  The class Sage_FCompiler_1 currently calls compilers on all platforms using the "-shared" option.  So whenever this class is used on Mac, it fails.  On my computer, this led to f2py failing.  This is a five line patch (plus documentation) that changes the compiler options on Mac to be in line with those already used in Sage_FCompiler, while leaving the compiler options on other platforms such as Solaris unchanged.  If you'd like to check it on Solaris, then go ahead, but the patch was intentionally written to avoid changing behaviour on platforms other than OS X.
 
 This breaks "on some mac systems" - f2py is broken on my 64-bit sage, but seems to be working on 32-bit mac systems without this patch.  My guess is that 32-bit macs use Sage_FCompiler rather than Sage_FCompiler_1.  Anyone who is familiar with the numpy spkg, please confirm or correct me!
 
 
+
 ---
 
-Comment by was created at 2010-06-02 05:45:18
+archive/issue_comments_070017.json:
+```json
+{
+    "body": "This looks good for me, and works for people who've tested it.  Hence a positive review.",
+    "created_at": "2010-06-02T05:45:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8010",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-70017",
+    "user": "was"
+}
+```
 
 This looks good for me, and works for people who've tested it.  Hence a positive review.
 
 
+
 ---
 
-Comment by was created at 2010-06-02 05:45:18
+archive/issue_comments_070018.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-06-02T05:45:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8010",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-70018",
+    "user": "was"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by rlm created at 2010-06-25 05:34:28
+archive/issue_comments_070019.json:
+```json
+{
+    "body": "There is another ticket updating numpy as well: #7831. These two conflicting spkg's need to be resolved.",
+    "created_at": "2010-06-25T05:34:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8010",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-70019",
+    "user": "rlm"
+}
+```
 
 There is another ticket updating numpy as well: #7831. These two conflicting spkg's need to be resolved.
 
 
+
 ---
 
-Comment by rlm created at 2010-06-28 17:05:57
+archive/issue_comments_070020.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_work.",
+    "created_at": "2010-06-28T17:05:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8010",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-70020",
+    "user": "rlm"
+}
+```
 
 Changing status from positive_review to needs_work.
 
 
+
 ---
 
-Comment by flawrence created at 2010-06-28 23:33:50
+archive/issue_comments_070021.json:
+```json
+{
+    "body": "How does this conflict with #7831?  What can I do to resolve the problem?",
+    "created_at": "2010-06-28T23:33:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8010",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-70021",
+    "user": "flawrence"
+}
+```
 
 How does this conflict with #7831?  What can I do to resolve the problem?
 
 
+
 ---
 
-Comment by rlm created at 2010-06-28 23:39:22
+archive/issue_comments_070022.json:
+```json
+{
+    "body": "These are both independent patches to the numpy package. take one, and incorporate the changes in the other, and post a new spkg. Then I will merge it and close both as merged, so the release note gives proper credit.",
+    "created_at": "2010-06-28T23:39:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8010",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-70022",
+    "user": "rlm"
+}
+```
 
 These are both independent patches to the numpy package. take one, and incorporate the changes in the other, and post a new spkg. Then I will merge it and close both as merged, so the release note gives proper credit.
 
 
+
 ---
 
-Comment by kcrisman created at 2010-09-09 12:59:30
+archive/issue_comments_070023.json:
+```json
+{
+    "body": "Was this reported upstream?  Did it have to be?",
+    "created_at": "2010-09-09T12:59:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8010",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-70023",
+    "user": "kcrisman"
+}
+```
 
 Was this reported upstream?  Did it have to be?
 
 
+
 ---
 
-Comment by flawrence created at 2010-09-09 13:16:10
+archive/issue_comments_070024.json:
+```json
+{
+    "body": ">Was this reported upstream? Did it have to be?\nI haven't reported this upstream.  The change was made to a class called Sage_FCompiler_1, which sounds like Sage-specific code.  The problem was already fixed in the very similar Sage_FCompiler.",
+    "created_at": "2010-09-09T13:16:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8010",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-70024",
+    "user": "flawrence"
+}
+```
 
 >Was this reported upstream? Did it have to be?
 I haven't reported this upstream.  The change was made to a class called Sage_FCompiler_1, which sounds like Sage-specific code.  The problem was already fixed in the very similar Sage_FCompiler.
 
 
+
 ---
 
-Comment by kcrisman created at 2010-09-09 13:20:49
+archive/issue_comments_070025.json:
+```json
+{
+    "body": "I see, so there were already custom patches made to numpy.",
+    "created_at": "2010-09-09T13:20:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8010",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-70025",
+    "user": "kcrisman"
+}
+```
 
 I see, so there were already custom patches made to numpy.
 
 
+
 ---
 
-Comment by flawrence created at 2010-11-03 05:57:31
+archive/issue_comments_070026.json:
+```json
+{
+    "body": "This is a duplicate of #7465",
+    "created_at": "2010-11-03T05:57:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8010",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-70026",
+    "user": "flawrence"
+}
+```
 
 This is a duplicate of #7465
 
 
+
 ---
 
-Comment by mvngu created at 2010-11-03 06:29:59
+archive/issue_comments_070027.json:
+```json
+{
+    "body": "Closed as a duplicate of #7465.",
+    "created_at": "2010-11-03T06:29:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8010",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-70027",
+    "user": "mvngu"
+}
+```
 
 Closed as a duplicate of #7465.
 
 
+
 ---
 
-Comment by mvngu created at 2010-11-03 06:30:13
+archive/issue_comments_070028.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2010-11-03T06:30:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8010",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-70028",
+    "user": "mvngu"
+}
+```
 
 Resolution: duplicate
 
 
+
 ---
 
-Comment by kcrisman created at 2010-11-03 12:58:32
+archive/issue_comments_070029.json:
+```json
+{
+    "body": "It is frustrating that this detailed ticket, which includes information about possible solutions, is closed, while the nearly totally uninformative #7465 is kept open.   Minh, could you at the very least take relevant information from #8010 and put it on the non-closed ticket? \n\nAlso, it would be worth investigating the status of this issue (as well as #7831) in light of the fact that we have now upgraded to newer versions (see #9808).  I haven't compiled 4.6.1.alpha0 yet, but that should be tested.",
+    "created_at": "2010-11-03T12:58:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8010",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-70029",
+    "user": "kcrisman"
+}
+```
 
 It is frustrating that this detailed ticket, which includes information about possible solutions, is closed, while the nearly totally uninformative #7465 is kept open.   Minh, could you at the very least take relevant information from #8010 and put it on the non-closed ticket? 
 
 Also, it would be worth investigating the status of this issue (as well as #7831) in light of the fact that we have now upgraded to newer versions (see #9808).  I haven't compiled 4.6.1.alpha0 yet, but that should be tested.
 
 
+
 ---
 
-Comment by mvngu created at 2010-11-04 11:56:07
+archive/issue_comments_070030.json:
+```json
+{
+    "body": "Replying to [comment:19 kcrisman]:\n> Minh, could you at the very least take relevant information from #8010 and put it on the non-closed ticket? \n\nDone.",
+    "created_at": "2010-11-04T11:56:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8010",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-70030",
+    "user": "mvngu"
+}
+```
 
 Replying to [comment:19 kcrisman]:
 > Minh, could you at the very least take relevant information from #8010 and put it on the non-closed ticket? 

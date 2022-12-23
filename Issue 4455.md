@@ -1,46 +1,117 @@
 # Issue 4455: [with patch, positive review] bug in Coxeter matrix for type G2
 
-Issue created by migration from https://trac.sagemath.org/ticket/4455
-
-Original creator: mhansen
-
-Original creation time: 2008-11-06 20:49:04
-
+archive/issues_004455.json:
+```json
+{
+    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4455\n\n",
+    "created_at": "2008-11-06T20:49:04Z",
+    "labels": [
+        "combinatorics",
+        "minor",
+        "bug"
+    ],
+    "title": "[with patch, positive review] bug in Coxeter matrix for type G2",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4455",
+    "user": "mhansen"
+}
+```
 Assignee: mhansen
 
 CC:  sage-combinat
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4455
+
+
+
+
 
 ---
+
+archive/issue_comments_032868.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-11-06T20:51:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4455",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4455#issuecomment-32868",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2008-11-06 20:54:24
+archive/issue_comments_032869.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-11-06T20:54:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4455",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4455#issuecomment-32869",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mhansen created at 2008-11-06 20:54:24
+archive/issue_comments_032870.json:
+```json
+{
+    "body": "Nicolas wrote the patch, and I reviewed it.",
+    "created_at": "2008-11-06T20:54:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4455",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4455#issuecomment-32870",
+    "user": "mhansen"
+}
+```
 
 Nicolas wrote the patch, and I reviewed it.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-07 17:03:04
+archive/issue_comments_032871.json:
+```json
+{
+    "body": "Merged in Sage 3.2.rc0",
+    "created_at": "2008-11-07T17:03:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4455",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4455#issuecomment-32871",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.2.rc0
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-07 17:03:04
+archive/issue_comments_032872.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-11-07T17:03:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4455",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4455#issuecomment-32872",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

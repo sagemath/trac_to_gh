@@ -1,11 +1,21 @@
 # Issue 8447: Detect when Sage is old and issue warning
 
-Issue created by migration from https://trac.sagemath.org/ticket/8447
-
-Original creator: drkirkby
-
-Original creation time: 2010-03-05 16:59:00
-
+archive/issues_008447.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  leif mpatel was\n\nVarious threads - e.g\n\nhttp://groups.google.co.uk/group/sage-devel/browse_thread/thread/29ee9e1d4efdeda2\n\nindicate that it is problematic when very old distributions of Sage are used in distributions of Debian, Ubunta etc. \n\nWhilst this is \"shutting the gate afte the horse has bolted\", it would be useful if future versions of Sage indicated when they are very old. \n\nPerhaps one message should be generated if the date on the computer is more than 4 months in advance of the Sage release date, and a stronger message is isssues if it is more than 12 months old. The exact wording and periods would have to be discussed in sage-devel. \n\nWhatever method is used, it should be portable, and non rely on GNU-specific options to the 'date' command, or any other GNUism. \n\nSee \n\nhttp://www.opengroup.org/onlinepubs/9699919799/utilities/date.html\n\n\nfor POSIX options to the *date* command. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8447\n\n",
+    "created_at": "2010-03-05T16:59:00Z",
+    "labels": [
+        "distribution",
+        "major",
+        "bug"
+    ],
+    "title": "Detect when Sage is old and issue warning",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8447",
+    "user": "drkirkby"
+}
+```
 Assignee: tbd
 
 CC:  leif mpatel was
@@ -27,29 +37,66 @@ See
 http://www.opengroup.org/onlinepubs/9699919799/utilities/date.html
 
 
-for POSIX options to the _date_ command. 
+for POSIX options to the *date* command. 
+
+
+Issue created by migration from https://trac.sagemath.org/ticket/8447
+
+
 
 
 
 ---
 
-Comment by drkirkby created at 2010-08-07 07:44:48
+archive/issue_comments_075942.json:
+```json
+{
+    "body": "I'm increasing the priority of this, in the hope someone will notice it. I think it would be quite easy to do for someone familiar with python, and very useful, though personally I don't know how to do it. \n\nDave",
+    "created_at": "2010-08-07T07:44:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8447",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8447#issuecomment-75942",
+    "user": "drkirkby"
+}
+```
 
 I'm increasing the priority of this, in the hope someone will notice it. I think it would be quite easy to do for someone familiar with python, and very useful, though personally I don't know how to do it. 
 
 Dave
 
 
+
 ---
 
-Comment by drkirkby created at 2010-08-07 07:44:48
+archive/issue_comments_075943.json:
+```json
+{
+    "body": "Changing priority from major to critical.",
+    "created_at": "2010-08-07T07:44:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8447",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8447#issuecomment-75943",
+    "user": "drkirkby"
+}
+```
 
 Changing priority from major to critical.
 
 
+
 ---
 
-Comment by leif created at 2010-08-07 08:40:10
+archive/issue_comments_075944.json:
+```json
+{
+    "body": "Well, at least the Sage banner shows the release date... ;-)\n\nPerhaps something for our NagBot writer?\n\nFrom the ticket's title I first guessed you meant detecting \"dead\" Sage 3.x (Debian/Ubuntu) packages installed on the user's system, like this one:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n```\n\nA few times there have been \"bug reports\" and questions (not explicitly) referring to *that* version... :)\n| SAGE Version 3.0.5, Release Date: 2008-07-11                       |\n| Type notebook() for the GUI, and license() for information.        |\nAnother issue is the \"frozen\" `#sage-devel` banner nobody has the power to update:\n\n```\nLogs of this channel are posted online | Sage - free open-source mathematics software |\nAsk questions here and wait, or post to sage-support list | www.sagemath.org |\nstable: 4.3.1 | dev: 4.3.2.alpha1\n```\n\n\nI'm not sure if it is desirable to continually check for recent Sage versions (e.g. at start-up); at least such a feature should be disableable.",
+    "created_at": "2010-08-07T08:40:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8447",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8447#issuecomment-75944",
+    "user": "leif"
+}
+```
 
 Well, at least the Sage banner shows the release date... ;-)
 
@@ -62,7 +109,7 @@ From the ticket's title I first guessed you meant detecting "dead" Sage 3.x (Deb
 ----------------------------------------------------------------------
 ```
 
-A few times there have been "bug reports" and questions (not explicitly) referring to _that_ version... :)
+A few times there have been "bug reports" and questions (not explicitly) referring to *that* version... :)
 | SAGE Version 3.0.5, Release Date: 2008-07-11                       |
 | Type notebook() for the GUI, and license() for information.        |
 Another issue is the "frozen" `#sage-devel` banner nobody has the power to update:
@@ -77,9 +124,20 @@ stable: 4.3.1 | dev: 4.3.2.alpha1
 I'm not sure if it is desirable to continually check for recent Sage versions (e.g. at start-up); at least such a feature should be disableable.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-08-07 09:43:17
+archive/issue_comments_075945.json:
+```json
+{
+    "body": "Replying to [comment:2 leif]:\n> Well, at least the Sage banner shows the release date... ;-)\n\nTrue, but many users will probably assume its the latest version available when they go to the Debian site. If there was a warning like \n\n\n```\n---------------------------------------------------------------------\n----------------------------------------------------------------------\n```\n\n| SAGE Version 3.0.5, Release Date: 2008-07-11                       |\n| Type notebook() for the GUI, and license() for information.        |\n|                                                                    |\n| WARNING You are using a VERY old version of Sage. We suggest you   |\n| to http://www.sagemath.org/ and download the latest version.       |\n| The latest version has a lot more features                         |\n\n> I'm not sure if it is desirable to continually check for recent Sage versions (e.g. at start-up); at least such a feature should be disableable.\n\nI was thinking just on date. That should be very easy to do - just a bit of Python, that issues one warning when Sage is say 3 months old, and a stronger one when its a year old. Assuming the date in Sage is right, and the persons computer has the right date, that should work. \n\nChecking online for version updates is a more tricky issue - some people have privacy concerns over that. If that was implemented, I think the default should be off. It's also a lot more work to do. \n\nMy python skills are next to useless, otherwise I'd tackle this myself. (Not that having poor python skills seems to put some others off writing code for Sage!) \n\nDave",
+    "created_at": "2010-08-07T09:43:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8447",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8447#issuecomment-75945",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:2 leif]:
 > Well, at least the Sage banner shows the release date... ;-)
@@ -110,36 +168,91 @@ My python skills are next to useless, otherwise I'd tackle this myself. (Not tha
 Dave
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-02-08 14:29:01
+archive/issue_comments_075946.json:
+```json
+{
+    "body": "Changing priority from critical to minor.",
+    "created_at": "2013-02-08T14:29:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8447",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8447#issuecomment-75946",
+    "user": "jdemeyer"
+}
+```
 
 Changing priority from critical to minor.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-02-08 14:29:01
+archive/issue_comments_075947.json:
+```json
+{
+    "body": "I wouldn't mind closing this as wontfix... what's the point anyway, people see the release date every time they start Sage.",
+    "created_at": "2013-02-08T14:29:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8447",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8447#issuecomment-75947",
+    "user": "jdemeyer"
+}
+```
 
 I wouldn't mind closing this as wontfix... what's the point anyway, people see the release date every time they start Sage.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-06-21 09:40:16
+archive/issue_comments_075948.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2013-06-21T09:40:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8447",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8447#issuecomment-75948",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-06-21 09:40:27
+archive/issue_comments_075949.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2013-06-21T09:40:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8447",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8447#issuecomment-75949",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-08-13 08:32:28
+archive/issue_comments_075950.json:
+```json
+{
+    "body": "Resolution: wontfix",
+    "created_at": "2013-08-13T08:32:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8447",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8447#issuecomment-75950",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: wontfix

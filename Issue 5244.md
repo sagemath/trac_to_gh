@@ -1,11 +1,21 @@
 # Issue 5244: is_unit is mostly not implemented for symbolic ring.
 
-Issue created by migration from https://trac.sagemath.org/ticket/5244
-
-Original creator: hivert
-
-Original creation time: 2009-02-12 14:06:17
-
+archive/issues_005244.json:
+```json
+{
+    "body": "Assignee: hivert\n\nCC:  sage-combinat\n\nKeywords: is_unit, symbolic ring\n\nHere is the code of is_unit for symbolic rings (it is actually iherited from Ring):\n\n```\n    def is_unit(self):\n        if self == 1 or self == -1:\n            return True\n        raise NotImplementedError\n```\n\nOn can do better !!!\n\nAs a result\n\n```\nsage: m=matrix(SR, 2,2)\nsage: m.is_invertible()\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5244\n\n",
+    "created_at": "2009-02-12T14:06:17Z",
+    "labels": [
+        "algebra",
+        "major",
+        "bug"
+    ],
+    "title": "is_unit is mostly not implemented for symbolic ring.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5244",
+    "user": "hivert"
+}
+```
 Assignee: hivert
 
 CC:  sage-combinat
@@ -34,24 +44,63 @@ NotImplementedError                       Traceback (most recent call last)
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5244
+
+
+
+
 
 ---
+
+archive/issue_comments_040204.json:
+```json
+{
+    "body": "Attachment\n\nPatch proposal for is_unit is SR",
+    "created_at": "2009-02-13T15:59:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5244",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5244#issuecomment-40204",
+    "user": "hivert"
+}
+```
 
 Attachment
 
 Patch proposal for is_unit is SR
 
 
+
 ---
 
-Comment by hivert created at 2009-02-13 16:02:23
+archive/issue_comments_040205.json:
+```json
+{
+    "body": "The attached patch propose a solution.",
+    "created_at": "2009-02-13T16:02:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5244",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5244#issuecomment-40205",
+    "user": "hivert"
+}
+```
 
 The attached patch propose a solution.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-13 17:34:16
+archive/issue_comments_040206.json:
+```json
+{
+    "body": "Sage 3.4 is for ReST patches only at the moment, so I am bumping it to 3.4.1.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-13T17:34:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5244",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5244#issuecomment-40206",
+    "user": "mabshoff"
+}
+```
 
 Sage 3.4 is for ReST patches only at the moment, so I am bumping it to 3.4.1.
 
@@ -60,16 +109,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by hivert created at 2009-02-13 18:53:11
+archive/issue_comments_040207.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-02-13T18:53:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5244",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5244#issuecomment-40207",
+    "user": "hivert"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-14 16:33:46
+archive/issue_comments_040208.json:
+```json
+{
+    "body": "I have doctested this patch on top of #5242 in my current Sage 3.3.rc1 merge tree and:\n\n```\nAll tests passed!\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-14T16:33:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5244",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5244#issuecomment-40208",
+    "user": "mabshoff"
+}
+```
 
 I have doctested this patch on top of #5242 in my current Sage 3.3.rc1 merge tree and:
 
@@ -83,16 +154,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by malb created at 2009-02-14 17:10:39
+archive/issue_comments_040209.json:
+```json
+{
+    "body": "Patch reads good, since in SR really everything != 0 is a unit.",
+    "created_at": "2009-02-14T17:10:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5244",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5244#issuecomment-40209",
+    "user": "malb"
+}
+```
 
 Patch reads good, since in SR really everything != 0 is a unit.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-15 07:17:35
+archive/issue_comments_040210.json:
+```json
+{
+    "body": "Merged in Sage 3.3.rc1.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-15T07:17:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5244",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5244#issuecomment-40210",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.3.rc1.
 
@@ -101,8 +194,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-15 07:17:35
+archive/issue_comments_040211.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-02-15T07:17:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5244",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5244#issuecomment-40211",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

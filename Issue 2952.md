@@ -1,11 +1,21 @@
 # Issue 2952: LaurentPolynomialRing coercion error
 
-Issue created by migration from https://trac.sagemath.org/ticket/2952
-
-Original creator: mhansen
-
-Original creation time: 2008-04-18 21:04:57
-
+archive/issues_002952.json:
+```json
+{
+    "body": "Assignee: roed\n\nCurrently\n\n```\nsage: R.<q>=QQ[]\nsage: L.<x,y,z> = LaurentPolynomialRing(R)\nsage: f=(x+y+z^-1)^2\nsage: f.substitute(z=1)\n```\n\ngives an error because it PolynomialRing isn't imported categories/pushout.py for the Laurent functor.\n\nOnce, that it is fixed, the above commands give a coercion error between the fraction field of QQ['q'] and the Laurent polynomial ring over QQ['q']\n\nIssue created by migration from https://trac.sagemath.org/ticket/2952\n\n",
+    "created_at": "2008-04-18T21:04:57Z",
+    "labels": [
+        "coercion",
+        "critical",
+        "bug"
+    ],
+    "title": "LaurentPolynomialRing coercion error",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2952",
+    "user": "mhansen"
+}
+```
 Assignee: roed
 
 Currently
@@ -21,22 +31,61 @@ gives an error because it PolynomialRing isn't imported categories/pushout.py fo
 
 Once, that it is fixed, the above commands give a coercion error between the fraction field of QQ['q'] and the Laurent polynomial ring over QQ['q']
 
+Issue created by migration from https://trac.sagemath.org/ticket/2952
+
+
+
+
 
 ---
+
+archive/issue_comments_020352.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-04-21T10:27:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2952",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2952#issuecomment-20352",
+    "user": "roed"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2008-04-26 01:51:10
+archive/issue_comments_020353.json:
+```json
+{
+    "body": "The patch doesn't work.  We'll wait on this until the new coercion framework goes in.",
+    "created_at": "2008-04-26T01:51:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2952",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2952#issuecomment-20353",
+    "user": "mhansen"
+}
+```
 
 The patch doesn't work.  We'll wait on this until the new coercion framework goes in.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-14 02:32:46
+archive/issue_comments_020354.json:
+```json
+{
+    "body": "This is still broken and the new coercion framework has been merged:\n\n```\n----------------------------------------------------------------------\n| SAGE Version 3.1.2.rc2, Release Date: 2008-09-12                   |\n| Type notebook() for the GUI, and license() for information.        |\nsage: R.<q>=QQ[]\nsage: L.<x,y,z> = LaurentPolynomialRing(R)\nsage: \nsage: f=(x+y+z^-1)^2\nsage: f.substitute(z=1)\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\n\n/scratch/mabshoff/release-cycle/sage-3.1.2.rc3/<ipython console> in <module>()\n\n/scratch/mabshoff/release-cycle/sage-3.1.2.rc3/element.pyx in sage.structure.element.Element.substitute (sage/structure/element.c:3756)()\n\n/scratch/mabshoff/release-cycle/sage-3.1.2.rc3/laurent_polynomial.pyx in sage.rings.polynomial.laurent_polynomial.LaurentPolynomial_mpair.subs (sage/rings/polynomial/laurent_polynomial.c:6666)()\n\n/scratch/mabshoff/release-cycle/sage-3.1.2.rc3/element.pyx in sage.structure.element.RingElement.__imul__ (sage/structure/element.c:9590)()\n\n/scratch/mabshoff/release-cycle/sage-3.1.2.rc3/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:6008)()\n\n/scratch/mabshoff/release-cycle/sage-3.1.2.rc3/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.get_action (sage/structure/coerce.c:9310)()\n\n/scratch/mabshoff/release-cycle/sage-3.1.2.rc3/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.discover_action (sage/structure/coerce.c:10441)()\n\n/scratch/mabshoff/release-cycle/sage-3.1.2.rc3/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.discover_action (sage/structure/coerce.c:10088)()\n\n/scratch/mabshoff/release-cycle/sage-3.1.2.rc3/parent.pyx in sage.structure.parent.Parent.get_action (sage/structure/parent.c:8569)()\n\n/scratch/mabshoff/release-cycle/sage-3.1.2.rc3/parent_old.pyx in sage.structure.parent_old.Parent._get_action_ (sage/structure/parent_old.c:5963)()\n\n/scratch/mabshoff/release-cycle/sage-3.1.2.rc3/parent_old.pyx in sage.structure.parent_old.Parent.get_action_c (sage/structure/parent_old.c:2264)()\n\n/scratch/mabshoff/release-cycle/sage-3.1.2.rc3/parent_old.pyx in sage.structure.parent_old.Parent.get_action_impl (sage/structure/parent_old.c:2481)()\n\n/scratch/mabshoff/release-cycle/sage-3.1.2.rc3/parent_old.pyx in sage.structure.parent_old.Parent.get_action_c_impl (sage/structure/parent_old.c:3341)()\n\n/scratch/mabshoff/release-cycle/sage-3.1.2.rc3/coerce_actions.pyx in sage.structure.coerce_actions.ModuleAction.__init__ (sage/structure/coerce_actions.c:3706)()\n\n/scratch/mabshoff/release-cycle/sage-3.1.2.rc3/local/lib/python2.5/site-packages/sage/categories/pushout.py in pushout(R, S)\n    437         if len(Sc) == 0:\n    438             c = Rc.pop()\n--> 439             Z = c(Z)\n    440         elif len(Rc) == 0:\n    441             c = Sc.pop()\n\n/scratch/mabshoff/release-cycle/sage-3.1.2.rc3/local/lib/python2.5/site-packages/sage/categories/pushout.py in __call__(self, R)\n    136             return LaurentPolynomialRing(R.base_ring(), (list(R.variable_names()) + [self.var]))\n    137         else:\n--> 138             return PolynomialRing(R, self.var)\n    139     def __cmp__(self, other):\n    140         c = cmp(type(self), type(other))\n\nNameError: global name 'PolynomialRing' is not defined\nsage: \n```\n\nIt seems that David's patch is not the right solution, so can someone come up with a better patch?\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-14T02:32:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2952",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2952#issuecomment-20354",
+    "user": "mabshoff"
+}
+```
 
 This is still broken and the new coercion framework has been merged:
 
@@ -105,16 +154,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by chapoton created at 2014-03-04 12:31:29
+archive/issue_comments_020355.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"laurent polynomials\".",
+    "created_at": "2014-03-04T12:31:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2952",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2952#issuecomment-20355",
+    "user": "chapoton"
+}
+```
 
 Changing keywords from "" to "laurent polynomials".
 
 
+
 ---
 
-Comment by pbruin created at 2014-05-04 23:51:19
+archive/issue_comments_020356.json:
+```json
+{
+    "body": "It seems the underlying problem is that `LaurentPolynomial_mpair.__pow__()` can return Laurent polynomials whose coefficients do not lie in its base ring, but in its fraction field:\n\n```\nsage: R.<q>=QQ[]\nsage: L.<x,y,z> = LaurentPolynomialRing(R)\nsage: g=z^-1\nsage: parent(g)\nMultivariate Laurent Polynomial Ring in x, y, z over Univariate Polynomial Ring in q over Rational Field\nsage: parent(g.coefficients()[0])\nFraction Field of Univariate Polynomial Ring in q over Rational Field\n```\n\nThe last line should simply be `Univariate ...`\n\nA slightly unrelated note: `z^-1` still lies in `L` (ignoring this bug), but `1/z` and `~z` return elements of the fraction field of `L`.",
+    "created_at": "2014-05-04T23:51:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2952",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2952#issuecomment-20356",
+    "user": "pbruin"
+}
+```
 
 It seems the underlying problem is that `LaurentPolynomial_mpair.__pow__()` can return Laurent polynomials whose coefficients do not lie in its base ring, but in its fraction field:
 
@@ -133,52 +204,129 @@ The last line should simply be `Univariate ...`
 A slightly unrelated note: `z^-1` still lies in `L` (ignoring this bug), but `1/z` and `~z` return elements of the fraction field of `L`.
 
 
+
 ---
 
-Comment by pbruin created at 2014-05-05 01:23:17
+archive/issue_comments_020357.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2014-05-05T01:23:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2952",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2952#issuecomment-20357",
+    "user": "pbruin"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by pbruin created at 2014-05-05 01:23:17
+archive/issue_comments_020358.json:
+```json
+{
+    "body": "Changing priority from critical to major.",
+    "created_at": "2014-05-05T01:23:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2952",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2952#issuecomment-20358",
+    "user": "pbruin"
+}
+```
 
 Changing priority from critical to major.
 
 
+
 ---
 
-Comment by pbruin created at 2014-05-05 01:23:17
+archive/issue_comments_020359.json:
+```json
+{
+    "body": "Changing component from coercion to algebra.",
+    "created_at": "2014-05-05T01:23:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2952",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2952#issuecomment-20359",
+    "user": "pbruin"
+}
+```
 
 Changing component from coercion to algebra.
 
 
+
 ---
 
-Comment by pbruin created at 2014-05-05 01:23:17
+archive/issue_comments_020360.json:
+```json
+{
+    "body": "The attached branch implements `LaurentPolynomial_mpair.__invert__()` from scratch and uses this for `__pow__()` with a negative exponent.",
+    "created_at": "2014-05-05T01:23:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2952",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2952#issuecomment-20360",
+    "user": "pbruin"
+}
+```
 
 The attached branch implements `LaurentPolynomial_mpair.__invert__()` from scratch and uses this for `__pow__()` with a negative exponent.
 
 
+
 ---
 
-Comment by chapoton created at 2014-06-04 19:41:04
+archive/issue_comments_020361.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2014-06-04T19:41:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2952",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2952#issuecomment-20361",
+    "user": "chapoton"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by chapoton created at 2014-06-04 19:41:04
+archive/issue_comments_020362.json:
+```json
+{
+    "body": "Looks good to me, and the bot is happy. I have made very minor changes, so I allow myself to put this to positive review.\n----\nNew commits:",
+    "created_at": "2014-06-04T19:41:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2952",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2952#issuecomment-20362",
+    "user": "chapoton"
+}
+```
 
 Looks good to me, and the bot is happy. I have made very minor changes, so I allow myself to put this to positive review.
 ----
 New commits:
 
 
+
 ---
 
-Comment by vbraun created at 2014-06-06 11:00:32
+archive/issue_comments_020363.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2014-06-06T11:00:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2952",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2952#issuecomment-20363",
+    "user": "vbraun"
+}
+```
 
 Resolution: fixed

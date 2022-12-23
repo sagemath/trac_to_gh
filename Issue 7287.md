@@ -1,11 +1,21 @@
 # Issue 7287: [needs review] Update Maxima spkg to build ECL library
 
-Issue created by migration from https://trac.sagemath.org/ticket/7287
-
-Original creator: nbruin
-
-Original creation time: 2009-10-25 07:05:24
-
+archive/issues_007287.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nCC:  alexghitza mhansen\n\nIn order to use Maxima as a library via ECL, we need to have maxima as a lisp library rather than a stand-alone executable.\n\nhttp://sage.math.washington.edu/home/nbruin/maxima-5.19.1.p1.spkg\n\nimplements this change. With this package properly installed, one can have the following session:\n\n```\n$ sage -ecl\nECL (Embeddable Common-Lisp) 9.8.4\nCopyright (C) 1984 Taiichi Yuasa and Masami Hagiya\nCopyright (C) 1993 Giuseppe Attardi\nCopyright (C) 2000 Juan J. Garcia-Ripoll\nECL is free software, and you are welcome to redistribute it\nunder certain conditions; see file 'Copyright' for details.\nType :h for Help.  \nTop level.\n> (require `maxima)\n\n;;; Loading #P\"/usr/local/sage/4.1.2/local/lib/ecl/maxima.fas\"\n(\"MAXIMA\")\n> (in-package :maxima)\n\n#<\"MAXIMA\" package>\nMAXIMA> #$integrate(cos(x),x)$\n\n((%SIN SIMP) $X)\n```\n\nAttached is the patch between maxima-5.19.1.p0.spkg and maxima-5.19.1.p1.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/7287\n\n",
+    "created_at": "2009-10-25T07:05:24Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "enhancement"
+    ],
+    "title": "[needs review] Update Maxima spkg to build ECL library",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7287",
+    "user": "nbruin"
+}
+```
 Assignee: mabshoff
 
 CC:  alexghitza mhansen
@@ -40,36 +50,97 @@ MAXIMA> #$integrate(cos(x),x)$
 
 Attached is the patch between maxima-5.19.1.p0.spkg and maxima-5.19.1.p1.spkg
 
+Issue created by migration from https://trac.sagemath.org/ticket/7287
+
+
+
+
 
 ---
 
-Comment by nbruin created at 2009-10-25 07:06:35
+archive/issue_comments_060636.json:
+```json
+{
+    "body": "Patch for maxima spkg",
+    "created_at": "2009-10-25T07:06:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7287",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7287#issuecomment-60636",
+    "user": "nbruin"
+}
+```
 
 Patch for maxima spkg
 
 
+
 ---
 
-Comment by nbruin created at 2009-10-25 07:09:11
+archive/issue_comments_060637.json:
+```json
+{
+    "body": "Changing assignee from mabshoff to nbruin.",
+    "created_at": "2009-10-25T07:09:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7287",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7287#issuecomment-60637",
+    "user": "nbruin"
+}
+```
 
 Changing assignee from mabshoff to nbruin.
 
 
+
 ---
+
+archive/issue_comments_060638.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-10-25T07:09:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7287",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7287#issuecomment-60638",
+    "user": "nbruin"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by nbruin created at 2009-10-25 07:09:26
+archive/issue_comments_060639.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-10-25T07:09:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7287",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7287#issuecomment-60639",
+    "user": "nbruin"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-11-02 15:54:48
+archive/issue_comments_060640.json:
+```json
+{
+    "body": "After loading up #6781, I try to sage -f this package.    All seems well until the actual build process, which returns a typically enigmatic response \n\n```\nSummary:\nECL enabled. Executable name: \"ecl\"\ndefault lisp: ecl\nwish executable name: \"wish\"\nNow building maxima; this takes a few minutes\nSince we're using OS X and there is a very weird\nbug with buffered output while building maxima,\nyou will not be able to see the output of the build\nas it occurs.  Don't worry, the build process did\nnot hang.\n***********************************************************\nFailed to make Maxima.\n***********************************************************\n\nreal\t1m8.617s\nuser\t0m27.392s\nsys\t0m38.775s\nsage: An error occurred while installing maxima-5.19.1.p1\n```\n\nwhich really, according to spkg-install, just means\n\n```\ncheck_error \"Failed to make Maxima.\" \n```\n\nWhich could be any kind of error.  And oddly, \n\n```\nsage -t  \"devel/sage/sage/calculus/calculus.py\"             \n\t [18.4 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 18.4 seconds\n```\n\nSo apparently nothing \"bad\" happens to the current Maxima executable, and perhaps this is completely unrelated to the spkg.  However, I get the same thing once I try to revert to the previous spkg, and in general even removing ecl.so doesn't fix this; Maxima stays working within Sage, but I cannot get Maxima to rebuild.  Could this have something to do with #6781?\n\nSo needless to say, I don't think the script gets to the library Maxima, and I can't load it:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: from sage.libs.ecl import  *\nsage: ecl_eval(\"(require 'asdf)\")\n;;; Loading #P\"/Users/.../sage-4.2/local/lib/ecl/ASDF.fas\"\n;;; Loading #P\"/Users/.../sage-4.2/local/lib/ecl/CMP.fas\"\n;;; Loading #P\"/Users/.../sage-4.2/local/lib/ecl/sysfun.lsp\"\n<ECL: (\"ASDF\" \"CMP\")>\nsage: ecl_eval(\"(require `maxima)\")\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n| Sage Version 4.2, Release Date: 2009-10-24                         |\n| Type notebook() for the GUI, and license() for information.        |\n/Users/.../sage-4.2/local/lib/python2.6/site-packages/sage/libs/ecl.so in ecl.ecl_eval (sage/libs/ecl/ecl.c:5718)()\n\n/Users/.../sage-4.2/local/lib/python2.6/site-packages/sage/libs/ecl.so in ecl.ecl_eval (sage/libs/ecl/ecl.c:5672)()\n\n/Users/.../sage-4.2/local/lib/python2.6/site-packages/sage/libs/ecl.so in ecl.ecl_safe_eval (sage/libs/ecl/ecl.c:2448)()\n\nRuntimeError: ECL says: Module error: Don't know how to REQUIRE MAXIMA.\nsage: ecl_eval('(load \"%s\")'%(SAGE_ROOT+\"/local/lib/maxima/maxima.fasb\"))\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n/Users/.../sage-4.2/local/lib/python2.6/site-packages/sage/libs/ecl.so in ecl.ecl_eval (sage/libs/ecl/ecl.c:5718)()\n\n/Users/.../sage-4.2/local/lib/python2.6/site-packages/sage/libs/ecl.so in ecl.ecl_eval (sage/libs/ecl/ecl.c:5672)()\n\n/Users/.../sage-4.2/local/lib/python2.6/site-packages/sage/libs/ecl.so in ecl.ecl_safe_eval (sage/libs/ecl/ecl.c:2448)()\n\nRuntimeError: ECL says: Filesystem error with pathname #P\"/Users/.../sage-4.2/local/lib/maxima/maxima.fasb\".\nEither\n 1) the file does not exist, or\n 2) we are not allow to access the file, or\n 3) the pathname points to a broken symbolic link.\n```\n\n\nThis is on OSX 10.5 Intel.",
+    "created_at": "2009-11-02T15:54:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7287",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7287#issuecomment-60640",
+    "user": "kcrisman"
+}
+```
 
 After loading up #6781, I try to sage -f this package.    All seems well until the actual build process, which returns a typically enigmatic response 
 
@@ -157,16 +228,38 @@ Either
 This is on OSX 10.5 Intel.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-11-02 15:54:48
+archive/issue_comments_060641.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2009-11-02T15:54:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7287",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7287#issuecomment-60641",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-11-02 16:07:41
+archive/issue_comments_060642.json:
+```json
+{
+    "body": "Here is the console log, which seems helpful:\n\n```\n/Users/.../sage-4.2/spkg/build/maxima-5.19.1.p1/src/missing: line 52: automake-1.9: command not found\nWARNING: `automake-1.9' is missing on your system.  You should only need it if\n         you modified `Makefile.am', `acinclude.m4' or `configure.in'.\n         You might want to install the `Automake' and `Perl' packages.\n         Grab them from any GNU archive site.\nAn error occurred during initialization:\nFilesystem error with pathname #P\"/Users/.../sage-4.2/spkg/build/maxima-5.19.1.p1/src/src/binary-ecl/maxima-package.fas\".\nEither\n 1) the file does not exist, or\n 2) we are not allow to access the file, or\n 3) the pathname points to a broken symbolic link..\nmake[1]: *** [binary-ecl/maxima] Error 1\nmake: *** [all-recursive] Error 1\n```\n\nNote that my machine has automake-1.10, for what it's worth, so in some sense that is not the problem - but why is it asking for a specific version? Or is it?",
+    "created_at": "2009-11-02T16:07:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7287",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7287#issuecomment-60642",
+    "user": "kcrisman"
+}
+```
 
 Here is the console log, which seems helpful:
 
@@ -189,9 +282,20 @@ make: *** [all-recursive] Error 1
 Note that my machine has automake-1.10, for what it's worth, so in some sense that is not the problem - but why is it asking for a specific version? Or is it?
 
 
+
 ---
 
-Comment by nbruin created at 2009-11-02 17:55:42
+archive/issue_comments_060643.json:
+```json
+{
+    "body": "In the above transcript, the fact that (require 'maxima) fails indeed indicates that the install failed. The other attempts to load maxima fail because the library \"maxima.fas\" now gets installed in a different place.\n\nIf you take a look at the patch that was made to spkg-install,\nyou can see that the four lines added can't possibly lead to\nmaxima failing so badly. One guess I can make is that I packaged the spkg in the wrong way (I actually followed the instructions in spkg-dist!). The resulting spkg is quite a bit smaller than \"p0\" that Ghitza provided, so perhaps maxima automake files got deleted by that script?\n\nTo test this hypothesis:\n- Unpack the original maxima spkg (or install with -s)\n- apply the attached patch, or paste in the relevant lines into spkg-install\n- install again\n\nIf that works, then one should probably just repackage the spkg. Otherwise, I don't know what the problem is.",
+    "created_at": "2009-11-02T17:55:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7287",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7287#issuecomment-60643",
+    "user": "nbruin"
+}
+```
 
 In the above transcript, the fact that (require 'maxima) fails indeed indicates that the install failed. The other attempts to load maxima fail because the library "maxima.fas" now gets installed in a different place.
 
@@ -200,16 +304,27 @@ you can see that the four lines added can't possibly lead to
 maxima failing so badly. One guess I can make is that I packaged the spkg in the wrong way (I actually followed the instructions in spkg-dist!). The resulting spkg is quite a bit smaller than "p0" that Ghitza provided, so perhaps maxima automake files got deleted by that script?
 
 To test this hypothesis:
- - Unpack the original maxima spkg (or install with -s)
- - apply the attached patch, or paste in the relevant lines into spkg-install
- - install again
+- Unpack the original maxima spkg (or install with -s)
+- apply the attached patch, or paste in the relevant lines into spkg-install
+- install again
 
 If that works, then one should probably just repackage the spkg. Otherwise, I don't know what the problem is.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-11-02 19:00:13
+archive/issue_comments_060644.json:
+```json
+{
+    "body": "Replying to [comment:5 nbruin]:\n> In the above transcript, the fact that (require 'maxima) fails indeed indicates that the install failed. The other attempts to load maxima fail because the library \"maxima.fas\" now gets installed in a different place.\n> \n\nI guess what I meant was that Maxima still works as an executable within Sage.\n\n> If you take a look at the patch that was made to spkg-install,\n> you can see that the four lines added can't possibly lead to\n> maxima failing so badly. \n\nYes, I noticed that.  Of course, Maxima itself isn't failing per se...\n> One guess I can make is that I packaged the spkg in the wrong way (I actually followed the instructions in spkg-dist!). The resulting spkg is quite a bit smaller than \"p0\" that Ghitza provided, so perhaps maxima automake files got deleted by that script?\n> \n\nThat seems very likely; the size should be exactly the same, one would think.\n\n> To test this hypothesis:\n>  - Unpack the original maxima spkg (or install with -s)\n>  - apply the attached patch, or paste in the relevant lines into spkg-install\n>  - install again\n> \n> If that works, then one should probably just repackage the spkg. Otherwise, I don't know what the problem is.\n\nUnfortunately, although repackaging it did seem to solve the size issue, I still get the same error as above.  In particular, I get the following in a different log:\n\n```\n;;; Note: Creating tag: \"_eclLn4HfWn8_QUH5U1z\" for #P\"binary-ecl/maxima-package.o\"\n;;; Internal error: Unable to find include directory\n;      - Binary file binary-ecl/maxima-package.fas is old or does not exist. \n;        Compile (and load) source file /Users/.../sage-4.2/spkg/build/maxima-5.19.1.p1/src/src/maxima-package.lisp instead? y\n;      - Should I bother you if this happens again? y\n;      - Compiling source file\n;        \"/Users/.../sage-4.2/spkg/build/maxima-5.19.1.p1/src/src/maxima-package.lisp\"\n;;; Compiling /Users/.../sage-4.2/spkg/build/maxima-5.19.1.p1/src/src/maxima-package.lisp.\n;;; OPTIMIZE levels: Safety=2, Space=0, Speed=3, Debug=2\n;;; End of Pass 1.\n;;; Note: Creating tag: \"_eclLn4HfWn8_1eX5U1z\" for #P\"binary-ecl/maxima-package.o\"\n;;; Internal error: Unable to find include directory\n;      - Loading binary file \"binary-ecl/maxima-package.fas\"  \n```\n\nSo it's not finding that even upon normal building.   Is the .fas file what we typically use, though?  My sense is that it's /local/lib/maxima/5.19.1/binary-ecl/maxima.  I don't know that the automake message is as important, as apparently there is a Maxima executable still there:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: 3+3\n6\nsage: integrate(x^3)\n1/4*x^4\n```\n",
+    "created_at": "2009-11-02T19:00:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7287",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7287#issuecomment-60644",
+    "user": "kcrisman"
+}
+```
 
 Replying to [comment:5 nbruin]:
 > In the above transcript, the fact that (require 'maxima) fails indeed indicates that the install failed. The other attempts to load maxima fail because the library "maxima.fas" now gets installed in a different place.
@@ -265,25 +380,58 @@ sage: integrate(x^3)
 
 
 
+
 ---
 
-Comment by kcrisman created at 2009-11-02 20:04:31
+archive/issue_comments_060645.json:
+```json
+{
+    "body": "Weirdly, just putting the (bigger) spkg in to a clean build of 4.1.2 did as it was supposed to - right down to making the right .fas file, and it works!!!  Note that I did the spkg upgrade first, and only then added the ecl library access from #6781, just in case that makes a difference - I don't know why it would, but at any rate there were no weird complaints about makefiles etc. \n\n[Here](http://sage.math.washington.edu/home/kcrisman/maxima-5.19.1.p1.spkg) is the skpg.  I am going to try the same thing on a PPC machine next.  If someone else can do it on a couple Linux boxes, perhaps with different distros, that would be very helpful to getting this reviewed positively.",
+    "created_at": "2009-11-02T20:04:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7287",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7287#issuecomment-60645",
+    "user": "kcrisman"
+}
+```
 
 Weirdly, just putting the (bigger) spkg in to a clean build of 4.1.2 did as it was supposed to - right down to making the right .fas file, and it works!!!  Note that I did the spkg upgrade first, and only then added the ecl library access from #6781, just in case that makes a difference - I don't know why it would, but at any rate there were no weird complaints about makefiles etc. 
 
 [Here](http://sage.math.washington.edu/home/kcrisman/maxima-5.19.1.p1.spkg) is the skpg.  I am going to try the same thing on a PPC machine next.  If someone else can do it on a couple Linux boxes, perhaps with different distros, that would be very helpful to getting this reviewed positively.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-11-02 20:04:31
+archive/issue_comments_060646.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2009-11-02T20:04:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7287",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7287#issuecomment-60646",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by nbruin created at 2009-11-02 20:39:19
+archive/issue_comments_060647.json:
+```json
+{
+    "body": "Replying to [comment:7 kcrisman]:\n> Weirdly, just putting the (bigger) spkg in to a clean build of 4.1.2 did as it was supposed to - right down to making the right .fas file, and it works!!!  Note that I did the spkg upgrade first, and only then added the ecl library access from #6781, just in case that makes a difference - I don't know why it would, but at any rate there were no weird complaints about makefiles etc. \n\nTicket #6781 does not touch anything that can influence maxima's build.\n\nI think the problem is in spkg-dist, which SPKG.txt instructs you to run prior to packaging the spkg:\n\n\n```\nfor X in ['es', 'es.utf8', 'pt', 'pt.utf8', 'pt_BR', 'pt_BR.utf8']:\n    cmd('rm -rf \"src/doc/info/%s/\"*'%X)\n    open('src/doc/info/%s/Makefile.in'%X,'w').write('all:\\n\\tls\\n\\n')\n```\n\n\nThis must delete some files that were \"automake\" generated. The build process of Maxima detects that, tries to run automake, bails on a wrong version number, and the spkg install fails. This problem had nothing to do with the patch, but everything with the instructions on how to build a new spkg. Anyone with experience with the maxima spkg interested in weighing in?",
+    "created_at": "2009-11-02T20:39:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7287",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7287#issuecomment-60647",
+    "user": "nbruin"
+}
+```
 
 Replying to [comment:7 kcrisman]:
 > Weirdly, just putting the (bigger) spkg in to a clean build of 4.1.2 did as it was supposed to - right down to making the right .fas file, and it works!!!  Note that I did the spkg upgrade first, and only then added the ecl library access from #6781, just in case that makes a difference - I don't know why it would, but at any rate there were no weird complaints about makefiles etc. 
@@ -303,27 +451,60 @@ for X in ['es', 'es.utf8', 'pt', 'pt.utf8', 'pt_BR', 'pt_BR.utf8']:
 This must delete some files that were "automake" generated. The build process of Maxima detects that, tries to run automake, bails on a wrong version number, and the spkg install fails. This problem had nothing to do with the patch, but everything with the instructions on how to build a new spkg. Anyone with experience with the maxima spkg interested in weighing in?
 
 
+
 ---
 
-Comment by kcrisman created at 2009-11-02 21:05:15
+archive/issue_comments_060648.json:
+```json
+{
+    "body": "You are right, the .in files are changed, which calls automake, etc.  Yuck.  So the \"foreign-language\" files add about 4 MB, interesting... maybe there is some way to get rid of these without doing something weird like that?  \n\nThis SPKG.txt is a little dated, anyway - it still has instructions for clisp!  Let's see what Alex has to say, if he's available.",
+    "created_at": "2009-11-02T21:05:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7287",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7287#issuecomment-60648",
+    "user": "kcrisman"
+}
+```
 
 You are right, the .in files are changed, which calls automake, etc.  Yuck.  So the "foreign-language" files add about 4 MB, interesting... maybe there is some way to get rid of these without doing something weird like that?  
 
 This SPKG.txt is a little dated, anyway - it still has instructions for clisp!  Let's see what Alex has to say, if he's available.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-11-04 13:46:15
+archive/issue_comments_060649.json:
+```json
+{
+    "body": "Works fine on PPC as well.\n\nA final reviewer should test (a correct) spkg on a couple varieties of Linux, probably, but it shouldn't make too much difference (?).",
+    "created_at": "2009-11-04T13:46:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7287",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7287#issuecomment-60649",
+    "user": "kcrisman"
+}
+```
 
 Works fine on PPC as well.
 
 A final reviewer should test (a correct) spkg on a couple varieties of Linux, probably, but it shouldn't make too much difference (?).
 
 
+
 ---
 
-Comment by mvngu created at 2009-12-03 01:46:01
+archive/issue_comments_060650.json:
+```json
+{
+    "body": "An updated Maxima spkg is available at\n\nhttp://sage.math.washington.edu/home/mhansen/maxima-5.19.1.p2.spkg\n\nI have built Sage 4.3.alpha0 from scratch with that package. The compilation process went OK on the following platforms:\n\n* sage.math --- Ubuntu 8.04.3 LTS. All doctests pass, except the known failure with the Maxima interface.\n* rosemary.math --- Red Hat Enterprise Linux Server 5.4. All doctests pass, except the known failure with the Maxima interface.\n* bsd.math --- Mac OS X 10.6.2. Numerous doctest failures as expected as this platform is not yet completely supported.\n\nAfter the build and doctests, you could run ECL and using Maxima as a library. Do either \"./sage -ecl\" or from a Sage command line session, do \"!ecl\":\n\n```\n[mvngu@sage sage-4.3.alpha0-maxima]$ ./sage -ecl\nECL (Embeddable Common-Lisp) 9.10.2\nCopyright (C) 1984 Taiichi Yuasa and Masami Hagiya\nCopyright (C) 1993 Giuseppe Attardi\nCopyright (C) 2000 Juan J. Garcia-Ripoll\nECL is free software, and you are welcome to redistribute it\nunder certain conditions; see file 'Copyright' for details.\nType :h for Help.\nTop level.\n> (require 'maxima)\n\n;;; Loading #P\"/scratch/mvngu/sandbox/sage-4.3.alpha0-maxima/local/lib/ecl/maxima.fas\"\n(\"MAXIMA\")\n> #$integrate(cos(x), x)$\n\n((MAXIMA::%SIN MAXIMA::SIMP) MAXIMA::$X)\n> #$ratsimp((2*x + 3*x^3) / 5*x^2)$\n\n((MAXIMA::MTIMES MAXIMA::SIMP) ((MAXIMA::RAT MAXIMA::SIMP) 1 5)\n ((MAXIMA::MPLUS MAXIMA::SIMP)\n  ((MAXIMA::MTIMES MAXIMA::SIMP) 2\n   ((MAXIMA::MEXPT MAXIMA::SIMP MAXIMA::RATSIMP) MAXIMA::$X 3))\n  ((MAXIMA::MTIMES MAXIMA::SIMP) 3\n   ((MAXIMA::MEXPT MAXIMA::SIMP MAXIMA::RATSIMP) MAXIMA::$X 5))))\n> (quit)\n```\n\nSo by this stage, Maxima can be built as a Lisp library. I'm doing more build/tests on other Linux boxes.",
+    "created_at": "2009-12-03T01:46:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7287",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7287#issuecomment-60650",
+    "user": "mvngu"
+}
+```
 
 An updated Maxima spkg is available at
 
@@ -331,9 +512,9 @@ http://sage.math.washington.edu/home/mhansen/maxima-5.19.1.p2.spkg
 
 I have built Sage 4.3.alpha0 from scratch with that package. The compilation process went OK on the following platforms:
 
- * sage.math --- Ubuntu 8.04.3 LTS. All doctests pass, except the known failure with the Maxima interface.
- * rosemary.math --- Red Hat Enterprise Linux Server 5.4. All doctests pass, except the known failure with the Maxima interface.
- * bsd.math --- Mac OS X 10.6.2. Numerous doctest failures as expected as this platform is not yet completely supported.
+* sage.math --- Ubuntu 8.04.3 LTS. All doctests pass, except the known failure with the Maxima interface.
+* rosemary.math --- Red Hat Enterprise Linux Server 5.4. All doctests pass, except the known failure with the Maxima interface.
+* bsd.math --- Mac OS X 10.6.2. Numerous doctest failures as expected as this platform is not yet completely supported.
 
 After the build and doctests, you could run ECL and using Maxima as a library. Do either "./sage -ecl" or from a Sage command line session, do "!ecl":
 
@@ -368,30 +549,74 @@ Top level.
 So by this stage, Maxima can be built as a Lisp library. I'm doing more build/tests on other Linux boxes.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-12-03 02:49:56
+archive/issue_comments_060651.json:
+```json
+{
+    "body": "Can I ask what the differences are with this spkg p2?  Is there a specific ticket this is related to?  In particular, if it is the latest CVS, this should fix a few other random tickets which have been waiting for a new Maxima version.",
+    "created_at": "2009-12-03T02:49:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7287",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7287#issuecomment-60651",
+    "user": "kcrisman"
+}
+```
 
 Can I ask what the differences are with this spkg p2?  Is there a specific ticket this is related to?  In particular, if it is the latest CVS, this should fix a few other random tickets which have been waiting for a new Maxima version.
 
 
+
 ---
 
-Comment by mhansen created at 2009-12-03 03:02:36
+archive/issue_comments_060652.json:
+```json
+{
+    "body": "This .p2 package also has the changes from 7325 in it as well.",
+    "created_at": "2009-12-03T03:02:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7287",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7287#issuecomment-60652",
+    "user": "mhansen"
+}
+```
 
 This .p2 package also has the changes from 7325 in it as well.
 
 
+
 ---
 
-Comment by mvngu created at 2009-12-03 14:47:22
+archive/issue_comments_060653.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-12-03T14:47:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7287",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7287#issuecomment-60653",
+    "user": "mvngu"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mvngu created at 2009-12-03 14:47:22
+archive/issue_comments_060654.json:
+```json
+{
+    "body": "I have only been able to access the 32-bit Mandriva virtual machine on boxen.math. I can't ssh to most Linux virtual machines on boxen.math. On some boxes that I could ssh to (as wstein), the build process hangs for hours and seems to go nowhere. Building Sage 4.3.alpha0 on the 32-bit Mandriva virtual machine went OK. The following doctests failed:\n\n```\nsage -t -long \"devel/sage/sage/interfaces/maxima.py\"\nsage -t -long \"devel/sage/sage/interfaces/ecm.py\"\nsage -t -long \"devel/sage/sage/tests/benchmark.py\"\n```\n\nThe Maxima failure is the following known failure:\n\n```\nsage -t -long \"devel/sage-main/sage/interfaces/maxima.py\"\n**********************************************************************\nFile \"/scratch/wstein/mvngu/sage-4.3.alpha0-maxima/devel/sage-main/sage/interfaces/maxima.py\", line 2172:\n    sage: latex(maxima(derivative(ceil(x*y*d), d,x,x,y)))\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/mvngu/sage-4.3.alpha0-maxima/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/mvngu/sage-4.3.alpha0-maxima/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/mvngu/sage-4.3.alpha0-maxima/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_68[4]>\", line 1, in <module>\n        latex(maxima(derivative(ceil(x*y*d), d,x,x,y)))###line 2172:\n    sage: latex(maxima(derivative(ceil(x*y*d), d,x,x,y)))\n      File \"/scratch/wstein/mvngu/sage-4.3.alpha0-maxima/local/lib/python/site-packages/sage/interfaces/expect.py\", line 1033, in __call__\n        return self._coerce_from_special_method(x)\n      File \"/scratch/wstein/mvngu/sage-4.3.alpha0-maxima/local/lib/python/site-packages/sage/interfaces/expect.py\", line 1057, in _coerce_from_special_method\n        return (x.__getattribute__(s))(self)\n      File \"expression.pyx\", line 429, in sage.symbolic.expression.Expression._maxima_ (sage/symbolic/expression.cpp:3324)\n      File \"sage_object.pyx\", line 364, in sage.structure.sage_object.SageObject._interface_ (sage/structure/sage_object.c:3327)\n      File \"sage_object.pyx\", line 453, in sage.structure.sage_object.SageObject._maxima_init_ (sage/structure/sage_object.c:5036)\n      File \"expression.pyx\", line 452, in sage.symbolic.expression.Expression._interface_init_ (sage/symbolic/expression.cpp:3414)\n      File \"/scratch/wstein/mvngu/sage-4.3.alpha0-maxima/local/lib/python/site-packages/sage/symbolic/expression_conversions.py\", line 214, in __call__\n        return self.arithmetic(ex, operator)\n      File \"/scratch/wstein/mvngu/sage-4.3.alpha0-maxima/local/lib/python/site-packages/sage/symbolic/expression_conversions.py\", line 553, in arithmetic\n        args = [\"(%s)\"%self(op) for op in ex.operands()]\n      File \"/scratch/wstein/mvngu/sage-4.3.alpha0-maxima/local/lib/python/site-packages/sage/symbolic/expression_conversions.py\", line 214, in __call__\n        return self.arithmetic(ex, operator)\n      File \"/scratch/wstein/mvngu/sage-4.3.alpha0-maxima/local/lib/python/site-packages/sage/symbolic/expression_conversions.py\", line 553, in arithmetic\n        args = [\"(%s)\"%self(op) for op in ex.operands()]\n      File \"/scratch/wstein/mvngu/sage-4.3.alpha0-maxima/local/lib/python/site-packages/sage/symbolic/expression_conversions.py\", line 218, in __call__\n        return self.derivative(ex, operator)\n      File \"/scratch/wstein/mvngu/sage-4.3.alpha0-maxima/local/lib/python/site-packages/sage/symbolic/expression_conversions.py\", line 541, in derivative\n        raise NotImplementedError, \"cannot convert expression to Maxima\"\n    NotImplementedError: cannot convert expression to Maxima\n**********************************************************************\n1 items had failures:\n   1 of   6 in __main__.example_68\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/wstein/sage//tmp/.doctest_maxima.py\n         [33.1 s]\nexit code: 1024\n```\n\nAs far as I'm concerned, the updated Maxima spkg looks good to me. One could make a Sage 4.3.alpha1 for testing on more platforms.",
+    "created_at": "2009-12-03T14:47:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7287",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7287#issuecomment-60654",
+    "user": "mvngu"
+}
+```
 
 I have only been able to access the 32-bit Mandriva virtual machine on boxen.math. I can't ssh to most Linux virtual machines on boxen.math. On some boxes that I could ssh to (as wstein), the build process hangs for hours and seems to go nowhere. Building Sage 4.3.alpha0 on the 32-bit Mandriva virtual machine went OK. The following doctests failed:
 
@@ -452,15 +677,37 @@ exit code: 1024
 As far as I'm concerned, the updated Maxima spkg looks good to me. One could make a Sage 4.3.alpha1 for testing on more platforms.
 
 
+
 ---
 
-Comment by mhansen created at 2009-12-04 04:27:21
+archive/issue_comments_060655.json:
+```json
+{
+    "body": "Merge maxima-5.19.1.p2.spkg",
+    "created_at": "2009-12-04T04:27:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7287",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7287#issuecomment-60655",
+    "user": "mhansen"
+}
+```
 
 Merge maxima-5.19.1.p2.spkg
 
 
+
 ---
 
-Comment by mhansen created at 2009-12-04 04:27:21
+archive/issue_comments_060656.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-12-04T04:27:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7287",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7287#issuecomment-60656",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

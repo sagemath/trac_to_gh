@@ -1,11 +1,21 @@
 # Issue 3910: [with patch,  needs review] adjust interval printing: precise integers print as integers
 
-Issue created by migration from https://trac.sagemath.org/ticket/3910
-
-Original creator: cwitty
-
-Original creation time: 2008-08-20 14:22:59
-
+archive/issues_003910.json:
+```json
+{
+    "body": "Assignee: somebody\n\nThis patch adjusts interval printing so that sufficiently small precise integers print as integers.  (It also fixes a loss-of-precision bug when one endpoint is tiny and the other endpoint is zero.)\n\nBefore:\n\n```\nsage: RIF(0)\n0.?e-17\nsage: RIF(1)\n1.0000000000000000?\nsage: RIF(0, 2^-256)\n1.?e-17\n```\n\n\nAfter:\n\n```\nsage: RIF(0)\n0\nsage: RIF(1)\n1\nsage: RIF(0, 2^-256)\n1.?e-77\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3910\n\n",
+    "created_at": "2008-08-20T14:22:59Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch,  needs review] adjust interval printing: precise integers print as integers",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3910",
+    "user": "cwitty"
+}
+```
 Assignee: somebody
 
 This patch adjusts interval printing so that sufficiently small precise integers print as integers.  (It also fixes a loss-of-precision bug when one endpoint is tiny and the other endpoint is zero.)
@@ -35,15 +45,43 @@ sage: RIF(0, 2^-256)
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3910
+
+
+
+
 
 ---
+
+archive/issue_comments_027970.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-08-20T14:23:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3910",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3910#issuecomment-27970",
+    "user": "cwitty"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by cremona created at 2008-08-23 20:47:21
+archive/issue_comments_027971.json:
+```json
+{
+    "body": "The design decision behind this was well aired on sage-devel and I seem to remember the consensus was for this change.\n\nThe patch (a lot of which consists in changing the doctest outputs) looks fine, applies cleanly to 3.1.1 and passes all doctests in sage/rings and sage/calculus.  I did not check the docs.\n\nI recommend that this passes.",
+    "created_at": "2008-08-23T20:47:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3910",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3910#issuecomment-27971",
+    "user": "cremona"
+}
+```
 
 The design decision behind this was well aired on sage-devel and I seem to remember the consensus was for this change.
 
@@ -52,9 +90,20 @@ The patch (a lot of which consists in changing the doctest outputs) looks fine, 
 I recommend that this passes.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-25 01:43:02
+archive/issue_comments_027972.json:
+```json
+{
+    "body": "Merged in Sage 3.1.2.alpha1. All doctests pass with the patch applied.\n\nCheers,\n\nMichael",
+    "created_at": "2008-08-25T01:43:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3910",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3910#issuecomment-27972",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.1.2.alpha1. All doctests pass with the patch applied.
 
@@ -63,8 +112,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-25 01:43:02
+archive/issue_comments_027973.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-08-25T01:43:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3910",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3910#issuecomment-27973",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

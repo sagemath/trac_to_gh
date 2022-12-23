@@ -1,12 +1,22 @@
 # Issue 3035: calculus/equations.py
 segfault with new cython & -ba
 
-Issue created by migration from https://trac.sagemath.org/ticket/3035
-
-Original creator: gfurnish
-
-Original creation time: 2008-04-26 23:48:15
-
+archive/issues_003035.json:
+```json
+{
+    "body": "Assignee: was\n\ncalculus/equations.py segfaults on test with patched cython and -ba.  However it only segfaults most of the time on automated testing, and does not segfault for gdb, valgrind, etc.\n\nThe test in question is \n\n```\n    sage: loads(dumps(eqn)) == eqn \n    True\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3035\n\n",
+    "created_at": "2008-04-26T23:48:15Z",
+    "labels": [
+        "calculus",
+        "blocker",
+        "bug"
+    ],
+    "title": "calculus/equations.py\nsegfault with new cython & -ba",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3035",
+    "user": "gfurnish"
+}
+```
 Assignee: was
 
 calculus/equations.py segfaults on test with patched cython and -ba.  However it only segfaults most of the time on automated testing, and does not segfault for gdb, valgrind, etc.
@@ -19,45 +29,115 @@ The test in question is
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3035
+
+
+
+
 
 ---
 
-Comment by gfurnish created at 2008-04-27 00:30:00
+archive/issue_comments_020886.json:
+```json
+{
+    "body": "This also happens with stefan's cython-dev code.",
+    "created_at": "2008-04-27T00:30:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3035",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3035#issuecomment-20886",
+    "user": "gfurnish"
+}
+```
 
 This also happens with stefan's cython-dev code.
 
 
+
 ---
 
-Comment by gfurnish created at 2008-04-27 00:56:16
+archive/issue_comments_020887.json:
+```json
+{
+    "body": "This does not segfault as of sage-3.0.alpha0",
+    "created_at": "2008-04-27T00:56:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3035",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3035#issuecomment-20887",
+    "user": "gfurnish"
+}
+```
 
 This does not segfault as of sage-3.0.alpha0
 
 
+
 ---
 
-Comment by gfurnish created at 2008-04-27 02:52:37
+archive/issue_comments_020888.json:
+```json
+{
+    "body": "This problem is introduced after sage-3.0.rc0",
+    "created_at": "2008-04-27T02:52:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3035",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3035#issuecomment-20888",
+    "user": "gfurnish"
+}
+```
 
 This problem is introduced after sage-3.0.rc0
 
 
+
 ---
 
-Comment by was created at 2008-04-27 03:16:02
+archive/issue_comments_020889.json:
+```json
+{
+    "body": "This is caused by #2419, according to gfurnish.",
+    "created_at": "2008-04-27T03:16:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3035",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3035#issuecomment-20889",
+    "user": "was"
+}
+```
 
 This is caused by #2419, according to gfurnish.
 
 
+
 ---
 
-Comment by gfurnish created at 2008-04-27 03:28:31
+archive/issue_comments_020890.json:
+```json
+{
+    "body": "Specifically this is caused by sage-2419-refactor.patch",
+    "created_at": "2008-04-27T03:28:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3035",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3035#issuecomment-20890",
+    "user": "gfurnish"
+}
+```
 
 Specifically this is caused by sage-2419-refactor.patch
 
 
+
 ---
 
-Comment by gfurnish created at 2008-04-27 03:40:07
+archive/issue_comments_020891.json:
+```json
+{
+    "body": "Everything in that patch except the functions\n\n```\n    def _crash_msg(self):\n    def _interrupt(self):\n```\n\ncause segfaults.",
+    "created_at": "2008-04-27T03:40:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3035",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3035#issuecomment-20891",
+    "user": "gfurnish"
+}
+```
 
 Everything in that patch except the functions
 
@@ -69,9 +149,20 @@ Everything in that patch except the functions
 cause segfaults.
 
 
+
 ---
 
-Comment by gfurnish created at 2008-04-27 03:43:20
+archive/issue_comments_020892.json:
+```json
+{
+    "body": "Correction:\nEverything in that patch that alters expect.py except the functions\n\n```\n    def _crash_msg(self):\n    def _interrupt(self):\n```\n\ncause segfaults",
+    "created_at": "2008-04-27T03:43:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3035",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3035#issuecomment-20892",
+    "user": "gfurnish"
+}
+```
 
 Correction:
 Everything in that patch that alters expect.py except the functions
@@ -84,22 +175,55 @@ Everything in that patch that alters expect.py except the functions
 cause segfaults
 
 
+
 ---
 
-Comment by gfurnish created at 2008-04-27 21:27:57
+archive/issue_comments_020893.json:
+```json
+{
+    "body": "This does not segfault if you first delete ~/.sage/ or if it does not already exist.  It does segfault after it is run once until the folder is again deleted.",
+    "created_at": "2008-04-27T21:27:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3035",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3035#issuecomment-20893",
+    "user": "gfurnish"
+}
+```
 
 This does not segfault if you first delete ~/.sage/ or if it does not already exist.  It does segfault after it is run once until the folder is again deleted.
 
 
+
 ---
 
-Comment by gfurnish created at 2008-05-01 10:24:26
+archive/issue_comments_020894.json:
+```json
+{
+    "body": "This seems to have \"magically\" fixed itself for me after 3.0.1.alpha1.  After consulting with mabshoff we have decided to close this as something likely caused by my local machine.",
+    "created_at": "2008-05-01T10:24:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3035",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3035#issuecomment-20894",
+    "user": "gfurnish"
+}
+```
 
 This seems to have "magically" fixed itself for me after 3.0.1.alpha1.  After consulting with mabshoff we have decided to close this as something likely caused by my local machine.
 
 
+
 ---
 
-Comment by gfurnish created at 2008-05-01 10:24:26
+archive/issue_comments_020895.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-05-01T10:24:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3035",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3035#issuecomment-20895",
+    "user": "gfurnish"
+}
+```
 
 Resolution: fixed

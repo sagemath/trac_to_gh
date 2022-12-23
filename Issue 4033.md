@@ -1,11 +1,21 @@
 # Issue 4033: [with spkg, needs review] disabled libiconv on Solaris for the r.spkg
 
-Issue created by migration from https://trac.sagemath.org/ticket/4033
-
-Original creator: mabshoff
-
-Original creation time: 2008-09-01 09:29:33
-
+archive/issues_004033.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nThe title says it all. The spkg is at \n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.1.2/alpha4/r-2.6.1.p19.spkg\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4033\n\n",
+    "created_at": "2008-09-01T09:29:33Z",
+    "labels": [
+        "porting: Solaris",
+        "major",
+        "bug"
+    ],
+    "title": "[with spkg, needs review] disabled libiconv on Solaris for the r.spkg",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4033",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 The title says it all. The spkg is at 
@@ -16,30 +26,78 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/4033
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-09-01 09:50:14
+archive/issue_comments_029099.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-09-01T09:50:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4033",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4033#issuecomment-29099",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by malb created at 2008-09-01 10:22:53
+archive/issue_comments_029100.json:
+```json
+{
+    "body": "Installs fine on my 64-bit Debian/GNU Linux Core2Duo. `sage -t interfaces/r.py` works.",
+    "created_at": "2008-09-01T10:22:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4033",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4033#issuecomment-29100",
+    "user": "malb"
+}
+```
 
 Installs fine on my 64-bit Debian/GNU Linux Core2Duo. `sage -t interfaces/r.py` works.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-01 10:30:53
+archive/issue_comments_029101.json:
+```json
+{
+    "body": "Merged in Sage 3.1.2.alpha4",
+    "created_at": "2008-09-01T10:30:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4033",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4033#issuecomment-29101",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.1.2.alpha4
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-01 10:30:53
+archive/issue_comments_029102.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-09-01T10:30:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4033",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4033#issuecomment-29102",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

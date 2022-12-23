@@ -1,11 +1,21 @@
 # Issue 9293: Better expose GAP's character tables from Sage
 
-Issue created by migration from https://trac.sagemath.org/ticket/9293
-
-Original creator: nthiery
-
-Original creation time: 2010-06-21 08:49:18
-
+archive/issues_009293.json:
+```json
+{
+    "body": "Assignee: joyner\n\nGAP's character tables could be better exposed from Sage. One\napproach is to just improve the GAP interface: conversion of objects\nback to Sage (see #7890), introspection, ... Another approach is to\nimplement an abstract class in Sage for character tables, with a\nconcrete subclass whose elements wraps GAP's character tables. The\nlater offers a more integrated user experience, at the price of\nneeding to explicitly wrap all GAP's functions.\n\nHere is a rough draft of an abstract class, written during Sage Days 20:\n\n\n```\nclass AbstractCharacterTable\n\n    def row_indices()\n        \"\"\"\n\tThat's irredinfo in Chevie (a Family of irreducible reps)\n\t\"\"\"\n\n    def column_indices()\n        classparam / classname in Chevie (a Family of conjugacy classes)\n\n    def __getitem__(self, r,c)\n\n    def powermap(self, c, n)\n        \"\"\"\n\tSpecific to group\n\n\tINPUT:\n\n\t - ``c`` - the index of a conjugacy class C\n\n\tReturns the index of the conjugacy class of x^n for x in C\n\n\t\"\"\"\n\n    def irreducibles(self):\n        \"\"\"\n        returns the character table as a matrix\n\t\"\"\"\n\n    def orders(self):\n        \"\"\"\n        orders of the conjugacy classes\n        \"\"\"\n\n    def centralizer(self):\n        \"\"\"\n\tcardinality of the centralizer of the conjugacy classes\n\t\"\"\"\n```\n\n\nFor the record, here is the data structure of a character table of a\nCoxeter group in GAP3:\n\n\n```\nT := CharTable(CoxeterGroup(\"E\",8));\nRecFields(T.operations);\n[ \"name\", \"operations\", \"ScalarProduct\", \"NoMessageScalarProduct\", \"Print\", \n  \"Eigenvalues\", \"IsAbelian\", \"IsCyclic\", \"IsSimple\", \"IsSolvable\", \n  \"SupersolvableResiduum\", \"IsSupersolvable\", \"UpperCentralSeriesFactor\", \n  \"UpperCentralSeries\", \"LowerCentralSeries\", \"IsNilpotentFactor\", \n  \"IsNilpotent\", \"IsNilpotentNormalSubgroup\", \"AbelianInvariants\", \"Agemo\", \n  \"Automorphisms\", \"Centre\", \"CharacterDegrees\", \"DerivedSubgroup\", \n  \"ElementaryAbelianSeries\", \"Exponent\", \"FittingSubgroup\", \"InertiaSubgroup\",\n  \"MaximalNormalSubgroups\", \"NormalClosure\", \"NormalSubgroups\", \"Size\", \n  \"FusionConjugacyClasses\", \"SizesConjugacyClasses\", \"*\", \"/\", \"mod\", \n  \"Restricted\", \"Induced\", \"Lattice\", \"Display\", \"CharNames\", \"StringEntry\" ]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9293\n\n",
+    "created_at": "2010-06-21T08:49:18Z",
+    "labels": [
+        "group theory",
+        "major",
+        "enhancement"
+    ],
+    "title": "Better expose GAP's character tables from Sage",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9293",
+    "user": "nthiery"
+}
+```
 Assignee: joyner
 
 GAP's character tables could be better exposed from Sage. One
@@ -79,4 +89,8 @@ RecFields(T.operations);
   "FusionConjugacyClasses", "SizesConjugacyClasses", "*", "/", "mod", 
   "Restricted", "Induced", "Lattice", "Display", "CharNames", "StringEntry" ]
 ```
+
+
+Issue created by migration from https://trac.sagemath.org/ticket/9293
+
 

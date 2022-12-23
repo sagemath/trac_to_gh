@@ -1,11 +1,21 @@
 # Issue 2548: more flexible syntax for defining callable function ring elements
 
-Issue created by migration from https://trac.sagemath.org/ticket/2548
-
-Original creator: edrex
-
-Original creation time: 2008-03-16 17:01:26
-
+archive/issues_002548.json:
+```json
+{
+    "body": "Assignee: cwitty\n\nI like the object resulting from \n`f(x,y)=x<sup>2+y</sup>2`\nbetter than that from\n`var('x,y');g=x<sup>2+y</sup>2`\nHowever, (as I can attest) it's not at all clear to a new user that these are different objects (since what's to the right of the equals sign is the same, which is usually all you need to check -- except in this case)\n\nAnyhow, I'm not sure if that's fixable. What I would like is a syntax for defining callable functions inline. I'm thinking \n`some_python_function(f(x,y)=blah)`\nExcept that the 'f' is immediately thrown away. Also, it is somewhat confusing since this is meant to be a positional, not keyword argument (how would you pass this as a keyword? key=f(x,y)=x^2 looks a bit strange). Any other ideas? Or is this already possible using some other syntax?\n\nIssue created by migration from https://trac.sagemath.org/ticket/2548\n\n",
+    "created_at": "2008-03-16T17:01:26Z",
+    "labels": [
+        "misc",
+        "major",
+        "enhancement"
+    ],
+    "title": "more flexible syntax for defining callable function ring elements",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2548",
+    "user": "edrex"
+}
+```
 Assignee: cwitty
 
 I like the object resulting from 
@@ -18,10 +28,25 @@ Anyhow, I'm not sure if that's fixable. What I would like is a syntax for defini
 `some_python_function(f(x,y)=blah)`
 Except that the 'f' is immediately thrown away. Also, it is somewhat confusing since this is meant to be a positional, not keyword argument (how would you pass this as a keyword? key=f(x,y)=x^2 looks a bit strange). Any other ideas? Or is this already possible using some other syntax?
 
+Issue created by migration from https://trac.sagemath.org/ticket/2548
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-03-16 18:00:10
+archive/issue_comments_017401.json:
+```json
+{
+    "body": "Replying to [ticket:2548 edrex]:\n> I like the object resulting from \n> `f(x,y)=x<sup>2+y</sup>2`\n> better than that from\n> `var('x,y');g=x<sup>2+y</sup>2`\n> However, (as I can attest) it's not at all clear to a new user that these are different objects (since what's to the right of the equals sign is the same, which is usually all you need to check -- except in this case)\n> \n> Anyhow, I'm not sure if that's fixable. What I would like is a syntax for defining callable functions inline. I'm thinking \n> `some_python_function(f(x,y)=blah)`\n> Except that the 'f' is immediately thrown away. Also, it is somewhat confusing since this is meant to be a positional, not keyword argument (how would you pass this as a keyword? `key=f(x,y)=x^2` looks a bit strange). Any other ideas? Or is this already possible using some other syntax?\n\nPlease do not open tickets like this. It is vague and could certainly benefit from some discussion in GG:sage-devel. Trac is no substitute for a discussion in GG:sage-devel and not meant as a vector for support queries.\n\nCheers,\n\nMichael\n\nMichael",
+    "created_at": "2008-03-16T18:00:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2548",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2548#issuecomment-17401",
+    "user": "mabshoff"
+}
+```
 
 Replying to [ticket:2548 edrex]:
 > I like the object resulting from 
@@ -43,23 +68,56 @@ Michael
 Michael
 
 
+
 ---
 
-Comment by gfurnish created at 2008-03-16 20:08:40
+archive/issue_comments_017402.json:
+```json
+{
+    "body": "Changing assignee from cwitty to gfurnish.",
+    "created_at": "2008-03-16T20:08:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2548",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2548#issuecomment-17402",
+    "user": "gfurnish"
+}
+```
 
 Changing assignee from cwitty to gfurnish.
 
 
+
 ---
 
-Comment by gfurnish created at 2008-03-16 20:08:40
+archive/issue_comments_017403.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-03-16T20:08:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2548",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2548#issuecomment-17403",
+    "user": "gfurnish"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by was created at 2008-03-16 20:47:06
+archive/issue_comments_017404.json:
+```json
+{
+    "body": "I think the answer to the posters's question is -- use the \"function\" function:\n\n```\nsage: var('x,y')\n(x, y)\nsage: f = (x^2 + y^2).function(x,y)\nsage: f\n(x, y) |--> y^2 + x^2\n```\n",
+    "created_at": "2008-03-16T20:47:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2548",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2548#issuecomment-17404",
+    "user": "was"
+}
+```
 
 I think the answer to the posters's question is -- use the "function" function:
 
@@ -73,8 +131,19 @@ sage: f
 
 
 
+
 ---
 
-Comment by was created at 2008-03-16 20:47:06
+archive/issue_comments_017405.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-03-16T20:47:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2548",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2548#issuecomment-17405",
+    "user": "was"
+}
+```
 
 Resolution: fixed

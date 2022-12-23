@@ -1,11 +1,21 @@
 # Issue 8739: Addition of Kolakoski word
 
-Issue created by migration from https://trac.sagemath.org/ticket/8739
-
-Original creator: abmasse
-
-Original creation time: 2010-04-21 17:20:15
-
+archive/issues_008739.json:
+```json
+{
+    "body": "Assignee: sage-combinat\n\nCC:  slabbe tmonteil\n\nKeywords: Kolakoski, words\n\nThe Kolakoski words are important in combinatorics on words and there are many interesting conjectures that one would like to solve using Sage.\n\nThis ticket intends to add a constructor of such words.\n\nBy definition, the Kolakoski word is the infinite word `K = 22112122...` fixed under the `Delta` operator. The `Delta` of a word is simply the word describing its runs. For instance, if `w = 122112 = 1^1 2^2 1^2 2^1`, then `Delta(w) = 1221`. One can see that over the alphabet '{1,2}', the unique words fixed by `Delta` are `K` and `1K`. Moreover, this notion is naturally generalized to any alphabet `{a,b}` where `a` and `b` are two distinct positive integers.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8739\n\n",
+    "created_at": "2010-04-21T17:20:15Z",
+    "labels": [
+        "combinatorics",
+        "minor",
+        "enhancement"
+    ],
+    "title": "Addition of Kolakoski word",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8739",
+    "user": "abmasse"
+}
+```
 Assignee: sage-combinat
 
 CC:  slabbe tmonteil
@@ -20,38 +30,99 @@ By definition, the Kolakoski word is the infinite word `K = 22112122...` fixed u
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8739
+
+
+
+
 
 ---
 
-Comment by abmasse created at 2010-04-21 17:20:51
+archive/issue_comments_079931.json:
+```json
+{
+    "body": "I'll upload a patch very soon.",
+    "created_at": "2010-04-21T17:20:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8739",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8739#issuecomment-79931",
+    "user": "abmasse"
+}
+```
 
 I'll upload a patch very soon.
 
 
+
 ---
+
+archive/issue_comments_079932.json:
+```json
+{
+    "body": "Attachment\n\nAdds a generator of the Kolakoski sequences",
+    "created_at": "2010-04-23T15:03:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8739",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8739#issuecomment-79932",
+    "user": "abmasse"
+}
+```
 
 Attachment
 
 Adds a generator of the Kolakoski sequences
 
 
+
 ---
 
-Comment by abmasse created at 2010-04-23 15:03:31
+archive/issue_comments_079933.json:
+```json
+{
+    "body": "Needs review !",
+    "created_at": "2010-04-23T15:03:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8739",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8739#issuecomment-79933",
+    "user": "abmasse"
+}
+```
 
 Needs review !
 
 
+
 ---
 
-Comment by abmasse created at 2010-04-23 15:03:31
+archive/issue_comments_079934.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-04-23T15:03:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8739",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8739#issuecomment-79934",
+    "user": "abmasse"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by ncohen created at 2010-04-24 10:07:28
+archive/issue_comments_079935.json:
+```json
+{
+    "body": "Looks nice ! :-)\n\nSeveral remarks though, that I do not dare implement myself :\n\n* You specify in the private function `_KolakoskiWord_iterator` that the alphabet must be composed of two positive integers, but not in `KolakoskiWord`. Are the users supposed to know they should not use anything else ? (honest question, Words are not my field at all even if I can understand the construction :-) )\n\n* You write `current_letter = bar(w[-1])`, thus accessing the -1'th element. What about writing `current_letter = bar(current_letter)` at the end of the loop ?\n\n* You maintain a variable named `current_run`, and keep in memory a list of letters you already used (`w[:current_run]`). Wouldn't it be easier to forget about the current run variable, and just use your list as a queue with append() and pop(0) operations ? :-)\n\nAs I did not know the construction, I thought a bit about how I would write the algorithm and could not find any way to do it without keeping a lot of things in memory, what your `w` variable actually contains. Do you know if there exists a way to get rid of it ? I'm just being curious :-)\n\nNathann",
+    "created_at": "2010-04-24T10:07:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8739",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8739#issuecomment-79935",
+    "user": "ncohen"
+}
+```
 
 Looks nice ! :-)
 
@@ -68,16 +139,38 @@ As I did not know the construction, I thought a bit about how I would write the 
 Nathann
 
 
+
 ---
 
-Comment by ncohen created at 2010-04-24 10:07:28
+archive/issue_comments_079936.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_info.",
+    "created_at": "2010-04-24T10:07:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8739",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8739#issuecomment-79936",
+    "user": "ncohen"
+}
+```
 
 Changing status from needs_review to needs_info.
 
 
+
 ---
 
-Comment by abmasse created at 2010-04-24 15:01:50
+archive/issue_comments_079937.json:
+```json
+{
+    "body": "Replying to [comment:3 ncohen]:\n> Looks nice ! :-)\n> \n> Several remarks though, that I do not dare implement myself :\n> \n> * You specify in the private function `_KolakoskiWord_iterator` that the alphabet must be composed of two positive integers, but not in `KolakoskiWord`. Are the users supposed to know they should not use anything else ? (honest question, Words are not my field at all even if I can understand the construction :-) )\n> \nYou're right, I forgot to document it in the main function. \n\n> * You write `current_letter = bar(w[-1])`, thus accessing the -1'th element. What about writing `current_letter = bar(current_letter)` at the end of the loop ?\n> \n\nRight again. I think I did it to avoid initializing `current_letter` in the basis, but this is less readable and we're not sure if `w[-1]` is performed in constant time. Is it ?\n\n> * You maintain a variable named `current_run`, and keep in memory a list of letters you already used (`w[:current_run]`). Wouldn't it be easier to forget about the current run variable, and just use your list as a queue with append() and pop(0) operations ? :-)\n>\n\nOnce again right. When I first wrote the function, I did as you say, but there was a mistake I couldn't solve. Then I simplified by keeping the complete prefix of the word, but now that it is working, it shouldn't be hard to modify.\n \n> As I did not know the construction, I thought a bit about how I would write the algorithm and could not find any way to do it without keeping a lot of things in memory, what your `w` variable actually contains. Do you know if there exists a way to get rid of it ? I'm just being curious :-)\n> \n\nI feel it would be hard, but I don't have any proof. On the other hand, I can get rid of all values of `w` that have already been read by the `current_run` cursor, as you mentionned above.\n\n> Nathann\n\nThank you for your comment. I'll upload a new patch soon.",
+    "created_at": "2010-04-24T15:01:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8739",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8739#issuecomment-79937",
+    "user": "abmasse"
+}
+```
 
 Replying to [comment:3 ncohen]:
 > Looks nice ! :-)
@@ -108,16 +201,38 @@ I feel it would be hard, but I don't have any proof. On the other hand, I can ge
 Thank you for your comment. I'll upload a new patch soon.
 
 
+
 ---
 
-Comment by abmasse created at 2010-04-24 15:01:50
+archive/issue_comments_079938.json:
+```json
+{
+    "body": "Changing status from needs_info to needs_work.",
+    "created_at": "2010-04-24T15:01:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8739",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8739#issuecomment-79938",
+    "user": "abmasse"
+}
+```
 
 Changing status from needs_info to needs_work.
 
 
+
 ---
 
-Comment by ncohen created at 2010-04-24 15:05:27
+archive/issue_comments_079939.json:
+```json
+{
+    "body": "I couldn't tell you whether it is performed in constant time, but even if it is, from the point of view of complexity, I expect bar(your variable) to be faster than using a dictionnary's structure :-)\n\nI'll ask google whether there is anything around about generating this word without needing an increasing amount of memory :-)\n\nNathann",
+    "created_at": "2010-04-24T15:05:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8739",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8739#issuecomment-79939",
+    "user": "ncohen"
+}
+```
 
 I couldn't tell you whether it is performed in constant time, but even if it is, from the point of view of complexity, I expect bar(your variable) to be faster than using a dictionnary's structure :-)
 
@@ -126,37 +241,96 @@ I'll ask google whether there is anything around about generating this word with
 Nathann
 
 
+
 ---
 
-Comment by abmasse created at 2010-11-14 03:08:07
+archive/issue_comments_079940.json:
+```json
+{
+    "body": "Applies on top of the main patch",
+    "created_at": "2010-11-14T03:08:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8739",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8739#issuecomment-79940",
+    "user": "abmasse"
+}
+```
 
 Applies on top of the main patch
 
 
+
 ---
 
-Comment by abmasse created at 2010-11-14 03:09:53
+archive/issue_comments_079941.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-11-14T03:09:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8739",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8739#issuecomment-79941",
+    "user": "abmasse"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
+
+archive/issue_comments_079942.json:
+```json
+{
+    "body": "Attachment\n\nI uploaded a patch that applies on top of the main one. It takes into account the three points mentionned by Nathann above. Needs review again! (Sorry for the seven months delay)",
+    "created_at": "2010-11-14T03:09:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8739",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8739#issuecomment-79942",
+    "user": "abmasse"
+}
+```
 
 Attachment
 
 I uploaded a patch that applies on top of the main one. It takes into account the three points mentionned by Nathann above. Needs review again! (Sorry for the seven months delay)
 
 
+
 ---
+
+archive/issue_comments_079943.json:
+```json
+{
+    "body": "Attachment\n\nApplies over the precedent 2 patches",
+    "created_at": "2010-11-14T06:03:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8739",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8739#issuecomment-79943",
+    "user": "slabbe"
+}
+```
 
 Attachment
 
 Applies over the precedent 2 patches
 
 
+
 ---
 
-Comment by slabbe created at 2010-11-14 06:08:36
+archive/issue_comments_079944.json:
+```json
+{
+    "body": "I just added a new patch which applies on the two precedent. All tests passed. Documentation builds fine. The Kolakoski word satisfies its definition for prefixes up to 100000.\n\nTo me it is a positive review. I let Alexandre change the status of the ticket to positive review if he agrees with my changes.\n\nMaybe Nathann wants to take a look?",
+    "created_at": "2010-11-14T06:08:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8739",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8739#issuecomment-79944",
+    "user": "slabbe"
+}
+```
 
 I just added a new patch which applies on the two precedent. All tests passed. Documentation builds fine. The Kolakoski word satisfies its definition for prefixes up to 100000.
 
@@ -165,25 +339,58 @@ To me it is a positive review. I let Alexandre change the status of the ticket t
 Maybe Nathann wants to take a look?
 
 
+
 ---
 
-Comment by abmasse created at 2010-11-14 16:38:35
+archive/issue_comments_079945.json:
+```json
+{
+    "body": "Hi S\u00e9bastien and Nathann!\n\nThank you for the review. I agree with S\u00e9bastien's changes. I retested all of it on sage-4.6 and all tests still pass. I also took a look at the documentation, which builds fine and is clearer than before. I'll wait for Nathann to see if he agrees with both our modifications and if he's satisfied with my answers to his comments.",
+    "created_at": "2010-11-14T16:38:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8739",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8739#issuecomment-79945",
+    "user": "abmasse"
+}
+```
 
 Hi Sébastien and Nathann!
 
 Thank you for the review. I agree with Sébastien's changes. I retested all of it on sage-4.6 and all tests still pass. I also took a look at the documentation, which builds fine and is clearer than before. I'll wait for Nathann to see if he agrees with both our modifications and if he's satisfied with my answers to his comments.
 
 
+
 ---
 
-Comment by ncohen created at 2010-11-16 06:56:58
+archive/issue_comments_079946.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-11-16T06:56:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8739",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8739#issuecomment-79946",
+    "user": "ncohen"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by ncohen created at 2010-11-16 06:56:58
+archive/issue_comments_079947.json:
+```json
+{
+    "body": "Hello !! \n\nSame result for me : all is nice on the doctest's side, and the documentation has no fault that I could spot `:-)`... Nothing to add for the code either, and so this patch is good to go `:-)`\n\nNathann",
+    "created_at": "2010-11-16T06:56:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8739",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8739#issuecomment-79947",
+    "user": "ncohen"
+}
+```
 
 Hello !! 
 
@@ -192,16 +399,38 @@ Same result for me : all is nice on the doctest's side, and the documentation ha
 Nathann
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-01-12 06:31:50
+archive/issue_comments_079948.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2011-01-12T06:31:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8739",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8739#issuecomment-79948",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by tmonteil created at 2011-01-27 23:22:57
+archive/issue_comments_079949.json:
+```json
+{
+    "body": "Hi,\n\nsince the Kolakoski sequence can also be seen as a sequence of integers, it appears in Sloane : http://oeis.org/A000002\n\nHence, it could be a good idea to integrate this in `sage/combinat/sloane_functions.py` and create the class A000002.",
+    "created_at": "2011-01-27T23:22:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8739",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8739#issuecomment-79949",
+    "user": "tmonteil"
+}
+```
 
 Hi,
 

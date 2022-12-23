@@ -1,11 +1,21 @@
 # Issue 6813: [with patch, needs review] The whole world in a graph
 
-Issue created by migration from https://trac.sagemath.org/ticket/6813
-
-Original creator: ncohen
-
-Original creation time: 2009-08-23 08:43:18
-
+archive/issues_006813.json:
+```json
+{
+    "body": "Assignee: rlm\n\nsee http://groups.google.com/group/sage-devel/browse_thread/thread/25e57b8421c0ae9c/5ed13d13bc41b370#5ed13d13bc41b370\n\nThis patch adds a function WorldMap to graph_generators.py, which lets the user load the graph in which vertices are countries and links denote a shared boundary between two of them. The data I used to build this comes from The Cia Factbook ( mentionned in the docstring )\n\nTo use it, you need to apply the patch, but also to move the file graph_world.sobj to SAGE_ROOT/data/graphs/\n\nThank you for your help ! :-)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6813\n\n",
+    "created_at": "2009-08-23T08:43:18Z",
+    "labels": [
+        "graph theory",
+        "major",
+        "enhancement"
+    ],
+    "title": "[with patch, needs review] The whole world in a graph",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6813",
+    "user": "ncohen"
+}
+```
 Assignee: rlm
 
 see http://groups.google.com/group/sage-devel/browse_thread/thread/25e57b8421c0ae9c/5ed13d13bc41b370#5ed13d13bc41b370
@@ -16,13 +26,43 @@ To use it, you need to apply the patch, but also to move the file graph_world.so
 
 Thank you for your help ! :-)
 
+Issue created by migration from https://trac.sagemath.org/ticket/6813
+
+
+
+
 
 ---
+
+archive/issue_comments_056184.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-08-23T08:44:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6813",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6813#issuecomment-56184",
+    "user": "ncohen"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_056185.json:
+```json
+{
+    "body": "Attachment\n\nI get errors.  At the bottom, I copy the md5 digest to check my download:\n\n\n```\nsage: g=graphs.WorldMap() \n---------------------------------------------------------------------------\nUnpicklingError                           Traceback (most recent call last)\n\n/home/jason/.sage/temp/littleone/13542/_home_jason__sage_init_sage_0.py in <module>()\n\n/home/jason/sage/local/lib/python2.6/site-packages/sage/graphs/graph_generators.pyc in WorldMap(self)\n   2985         from sage.structure.sage_object import load\n   2986         from sage.misc.misc import SAGE_DATA\n-> 2987         return load(SAGE_DATA+\"graphs/graph_world.sobj\")\n   2988 \n   2989 ################################################################################\n\n/home/jason/sage/local/lib/python2.6/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.load (sage/structure/sage_object.c:7173)()\n\n/home/jason/sage/local/lib/python2.6/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.loads (sage/structure/sage_object.c:8769)()\n\nUnpicklingError: invalid load key, '<'.\nsage: load sage.misc.misc.SAGE_DATA + 'graphs/graph_world.sobj'\n---------------------------------------------------------------------------\nUnpicklingError                           Traceback (most recent call last)\n\n/home/jason/.sage/temp/littleone/13542/_home_jason__sage_init_sage_0.py in <module>()\n\n/home/jason/sage/local/lib/python2.6/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.load (sage/structure/sage_object.c:7173)()\n\n/home/jason/sage/local/lib/python2.6/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.loads (sage/structure/sage_object.c:8769)()\n\nUnpicklingError: invalid load key, '<'.\nsage: os.listdir(sage.misc.misc.SAGE_DATA + 'graphs/')\n['graph_world.sobj', 'graphs.db']\nsage: import md5 \nsage: md5.md5(sage.misc.misc.SAGE_DATA + 'graphs/graph_world.sobj').hexdigest()\n'0ae838b9de40596827c6e674b733f489'\n```\n",
+    "created_at": "2009-09-22T16:13:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6813",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6813#issuecomment-56185",
+    "user": "jason"
+}
+```
 
 Attachment
 
@@ -68,16 +108,38 @@ sage: md5.md5(sage.misc.misc.SAGE_DATA + 'graphs/graph_world.sobj').hexdigest()
 
 
 
+
 ---
 
-Comment by jason created at 2009-09-22 16:14:04
+archive/issue_comments_056186.json:
+```json
+{
+    "body": "that was with 4.1.2.alpha2",
+    "created_at": "2009-09-22T16:14:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6813",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6813#issuecomment-56186",
+    "user": "jason"
+}
+```
 
 that was with 4.1.2.alpha2
 
 
+
 ---
 
-Comment by ncohen created at 2009-09-26 15:36:57
+archive/issue_comments_056187.json:
+```json
+{
+    "body": "I get a totally different checksum..... Good job noticing it !!!\n\nI just retried to load the graph with a version of the file graph_world downloaded from the TRAC server and it worked for me. My checksum is the following :\n\n```\nsage: sage: g=graphs.WorldMap() \nsage: g\nGraph on 251 vertices\nsage: import md5 \nsage: sage: md5.md5(sage.misc.misc.SAGE_DATA + 'graphs/graph_world.sobj').hexdigest()\n'805fdf0227e964c41f3892c6979f62dc'\n```\n\n\nAs I suspect it may come from some weird encoding, here is a .rar version of the file : http://www-sop.inria.fr/members/Nathann.Cohen/world.rar\n\nI also copied the file on sagemath in the directory as ~/ncohen/graph_world.sobj\n\nOn my machine \n\n```\n~$ md5sum  /usr/local/sage/data/graphs/graph_world.sobj\n438bc195a9486caebeb47442ff8b8d8c  /usr/local/sage/data/graphs/graph_world.sobj\n```\n\nOn sagemath \n\n```\nncohen@sage:~$ md5sum graph_world.sobj \n438bc195a9486caebeb47442ff8b8d8c  graph_world.sobj\n```\n\n\nCould you check if this version works, and if the checksum is correct ? Thank you !!!\n\nNathann",
+    "created_at": "2009-09-26T15:36:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6813",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6813#issuecomment-56187",
+    "user": "ncohen"
+}
+```
 
 I get a totally different checksum..... Good job noticing it !!!
 
@@ -117,9 +179,20 @@ Could you check if this version works, and if the checksum is correct ? Thank yo
 Nathann
 
 
+
 ---
 
-Comment by awebb created at 2009-10-10 11:47:56
+archive/issue_comments_056188.json:
+```json
+{
+    "body": "I get the same checksum as you do. \n\n\n```\n$ md5sum data/graphs/graph_world.sobj\n438bc195a9486caebeb47442ff8b8d8c  data/graphs/graph_world.sobj\n```\n\nI was unable to apply the patch to sage-4.1.2.rc0. I guess a rebase is needed. Once I had the patch applied there were some warnings when I tried to do sage -docbuild. I made some changes to fix that. Specifically, I changed the reference so that it was similar to other ones on the same page. I hope that it is still fine. Otherwise, if you are happy with my small changes than I would give it a positive review.\n\nAdam",
+    "created_at": "2009-10-10T11:47:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6813",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6813#issuecomment-56188",
+    "user": "awebb"
+}
+```
 
 I get the same checksum as you do. 
 
@@ -134,41 +207,109 @@ I was unable to apply the patch to sage-4.1.2.rc0. I guess a rebase is needed. O
 Adam
 
 
+
 ---
 
-Comment by awebb created at 2009-10-10 11:59:38
+archive/issue_comments_056189.json:
+```json
+{
+    "body": "applies to sage-4.1.2.rc0",
+    "created_at": "2009-10-10T11:59:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6813",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6813#issuecomment-56189",
+    "user": "awebb"
+}
+```
 
 applies to sage-4.1.2.rc0
 
 
+
 ---
+
+archive/issue_comments_056190.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-10-10T12:00:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6813",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6813#issuecomment-56190",
+    "user": "awebb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by ncohen created at 2009-10-10 12:02:11
+archive/issue_comments_056191.json:
+```json
+{
+    "body": "These changes are perfect for me ! Thank for your help :-)",
+    "created_at": "2009-10-10T12:02:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6813",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6813#issuecomment-56191",
+    "user": "ncohen"
+}
+```
 
 These changes are perfect for me ! Thank for your help :-)
 
 
+
 ---
 
-Comment by awebb created at 2009-10-10 13:22:12
+archive/issue_comments_056192.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-10-10T13:22:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6813",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6813#issuecomment-56192",
+    "user": "awebb"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mhansen created at 2009-11-29 04:50:40
+archive/issue_comments_056193.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-11-29T04:50:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6813",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6813#issuecomment-56193",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mhansen created at 2009-12-06 08:57:08
+archive/issue_comments_056194.json:
+```json
+{
+    "body": "I had to add the .sobj file to the graphs-20070722 spkg.",
+    "created_at": "2009-12-06T08:57:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6813",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6813#issuecomment-56194",
+    "user": "mhansen"
+}
+```
 
 I had to add the .sobj file to the graphs-20070722 spkg.

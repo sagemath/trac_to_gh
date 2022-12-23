@@ -1,11 +1,21 @@
 # Issue 9979: Deprecate functionality of `PowerSeriesRing` which conflicts with construction of multivariate power series
 
-Issue created by migration from https://trac.sagemath.org/ticket/9980
-
-Original creator: niles
-
-Original creation time: 2010-09-23 17:44:33
-
+archive/issues_009979.json:
+```json
+{
+    "body": "Assignee: malb\n\nCC:  niles\n\nKeywords: power series, deprecation warning\n\nMultivariate power series are implemented by #1956.  As mentioned on that ticket, the existing code for `PowerSeriesRing` did not allow multivariate power series rings to be constructed using the same arguments as multivariate polynomials accept:\n\n\n```\nsage: T = PowerSeriesRing(QQ,3,'t'); T\nMultivariate Power Series Ring in t0, t1, t2 over Rational Field\n\nsage: T = PowerSeriesRing(QQ,'t',3); T\nPower Series Ring in t over Rational Field\nsage: T.default_prec()\n3\n\nsage: P = PolynomialRing(QQ,'t',3); P\nMultivariate Polynomial Ring in t0, t1, t2 over Rational Field\n```\n\n\nThere is a non-trivial body of code (elliptic curves, and maybe p-adics) which makes use of this syntax.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9980\n\n",
+    "created_at": "2010-09-23T17:44:33Z",
+    "labels": [
+        "commutative algebra",
+        "major",
+        "bug"
+    ],
+    "title": "Deprecate functionality of `PowerSeriesRing` which conflicts with construction of multivariate power series",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9979",
+    "user": "niles"
+}
+```
 Assignee: malb
 
 CC:  niles
@@ -30,5 +40,9 @@ Multivariate Polynomial Ring in t0, t1, t2 over Rational Field
 
 
 There is a non-trivial body of code (elliptic curves, and maybe p-adics) which makes use of this syntax.
+
+
+
+Issue created by migration from https://trac.sagemath.org/ticket/9980
 
 

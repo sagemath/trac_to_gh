@@ -1,11 +1,21 @@
 # Issue 3735: Interact - header Javascript code executes on update
 
-Issue created by migration from https://trac.sagemath.org/ticket/3735
-
-Original creator: itolkov
-
-Original creation time: 2008-07-28 18:53:48
-
+archive/issues_003735.json:
+```json
+{
+    "body": "Assignee: boothby\n\nHere is an illustration (requires #3636):\n\n\n```\n@interact\ndef _(t=text_control(\"n = <span id='n'>0</span>\\\n        <script>n=parseInt($('#n').text()); $('#n').text(1+n);</script>\"),\n    l=[\"Increment\"]\n): pass\n```\n\n\nPressing \"Increment\" increments n, which implies that the line of Javascript code *in the header* is executed. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3735\n\n",
+    "created_at": "2008-07-28T18:53:48Z",
+    "labels": [
+        "notebook",
+        "critical",
+        "bug"
+    ],
+    "title": "Interact - header Javascript code executes on update",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3735",
+    "user": "itolkov"
+}
+```
 Assignee: boothby
 
 Here is an illustration (requires #3636):
@@ -20,17 +30,45 @@ def _(t=text_control("n = <span id='n'>0</span>\
 ```
 
 
-Pressing "Increment" increments n, which implies that the line of Javascript code _in the header_ is executed. 
+Pressing "Increment" increments n, which implies that the line of Javascript code *in the header* is executed. 
+
+Issue created by migration from https://trac.sagemath.org/ticket/3735
+
+
+
 
 
 ---
+
+archive/issue_comments_026514.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-08-05T21:31:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3735",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3735#issuecomment-26514",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2008-08-05 21:32:58
+archive/issue_comments_026515.json:
+```json
+{
+    "body": "And, as an added bonus we also fix another bug!  Namely, if you put e.g., \n\n\n```\nhtml(\"alert('hi')\")\n```\n\n\nin a cell and hit shift-enter, then hi pops up in an alert ONCE, but if you\nthen refresh the page, \"hi\" pops up in an alert twice.   Now it only happens once\nin both cases.\n\nCode written by William Stein and Igor Tolkov",
+    "created_at": "2008-08-05T21:32:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3735",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3735#issuecomment-26515",
+    "user": "was"
+}
+```
 
 And, as an added bonus we also fix another bug!  Namely, if you put e.g., 
 
@@ -47,9 +85,20 @@ in both cases.
 Code written by William Stein and Igor Tolkov
 
 
+
 ---
 
-Comment by itolkov created at 2008-08-07 05:32:45
+archive/issue_comments_026516.json:
+```json
+{
+    "body": "Positive review.\n\nThere is still a bug, namely, if one tries\n\n```\nhtml(\"<script>alert('</script>');</script>\")\n```\n\nand the same for html tags. However, this defect existed before.",
+    "created_at": "2008-08-07T05:32:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3735",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3735#issuecomment-26516",
+    "user": "itolkov"
+}
+```
 
 Positive review.
 
@@ -62,15 +111,37 @@ html("<script>alert('</script>');</script>")
 and the same for html tags. However, this defect existed before.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-09 23:23:20
+archive/issue_comments_026517.json:
+```json
+{
+    "body": "Merged in Sage 3.1.alpha1",
+    "created_at": "2008-08-09T23:23:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3735",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3735#issuecomment-26517",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.1.alpha1
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-09 23:23:20
+archive/issue_comments_026518.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-08-09T23:23:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3735",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3735#issuecomment-26518",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

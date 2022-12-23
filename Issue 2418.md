@@ -1,11 +1,21 @@
 # Issue 2418: pari polroots gives division by zero sometimes
 
-Issue created by migration from https://trac.sagemath.org/ticket/2418
-
-Original creator: cwitty
-
-Original creation time: 2008-03-07 05:01:20
-
+archive/issues_002418.json:
+```json
+{
+    "body": "Assignee: was\n\nI think the problem may be in how Sage calls polroots; in particular, I'm suspicious of the coercion from CC to pari.\n\n```\nsage: x = polygen(QQ)\nsage: p = (x^50/2^100 + x^10 + x + 1).change_ring(ComplexField(106))\nsage: len(p.roots())\n50\nsage: (p/2^100).roots()\n---------------------------------------------------------------------------\n<class 'sage.libs.pari.gen.PariError'>    Traceback (most recent call last)\n\n/home/cwitty/my-sage/<ipython console> in <module>()\n\n/home/cwitty/my-sage/polynomial_element.pyx in sage.rings.polynomial.polynomial_element.Polynomial.roots()\n\n/home/cwitty/my-sage/gen.pyx in sage.libs.pari.gen._pari_trap()\n\n<class 'sage.libs.pari.gen.PariError'>: division by zero (46)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2418\n\n",
+    "created_at": "2008-03-07T05:01:20Z",
+    "labels": [
+        "interfaces",
+        "major",
+        "bug"
+    ],
+    "title": "pari polroots gives division by zero sometimes",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2418",
+    "user": "cwitty"
+}
+```
 Assignee: was
 
 I think the problem may be in how Sage calls polroots; in particular, I'm suspicious of the coercion from CC to pari.
@@ -29,10 +39,25 @@ sage: (p/2^100).roots()
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2418
+
+
+
+
 
 ---
 
-Comment by craigcitro created at 2009-01-23 13:09:02
+archive/issue_comments_016304.json:
+```json
+{
+    "body": "Actually, this is really just pari giving us an error: \n\n\n```\n? fp\n%4 = (6.223015277861140000000000000 E-61 + 0.E-38*I)*x^50 + (0.E-38 + 0.E-38*I)*x^49 + (0.E-38 + 0.E-38*I)*x^48 + (0.E-38 + 0.E-38*I)*x^47 + (0.E-38 + 0.E-38*I)*x^46 + (0.E-38 + 0.E-38*I)*x^45 + (0.E-38 + 0.E-38*I)*x^44 + (0.E-38 + 0.E-38*I)*x^43 + (0.E-38 + 0.E-38*I)*x^42 + (0.E-38 + 0.E-38*I)*x^41 + (0.E-38 + 0.E-38*I)*x^40 + (0.E-38 + 0.E-38*I)*x^39 + (0.E-38 + 0.E-38*I)*x^38 + (0.E-38 + 0.E-38*I)*x^37 + (0.E-38 + 0.E-38*I)*x^36 + (0.E-38 + 0.E-38*I)*x^35 + (0.E-38 + 0.E-38*I)*x^34 + (0.E-38 + 0.E-38*I)*x^33 + (0.E-38 + 0.E-38*I)*x^32 + (0.E-38 + 0.E-38*I)*x^31 + (0.E-38 + 0.E-38*I)*x^30 + (0.E-38 + 0.E-38*I)*x^29 + (0.E-38 + 0.E-38*I)*x^28 + (0.E-38 + 0.E-38*I)*x^27 + (0.E-38 + 0.E-38*I)*x^26 + (0.E-38 + 0.E-38*I)*x^25 + (0.E-38 + 0.E-38*I)*x^24 + (0.E-38 + 0.E-38*I)*x^23 + (0.E-38 + 0.E-38*I)*x^22 + (0.E-38 + 0.E-38*I)*x^21 + (0.E-38 + 0.E-38*I)*x^20 + (0.E-38 + 0.E-38*I)*x^19 + (0.E-38 + 0.E-38*I)*x^18 + (0.E-38 + 0.E-38*I)*x^17 + (0.E-38 + 0.E-38*I)*x^16 + (0.E-38 + 0.E-38*I)*x^15 + (0.E-38 + 0.E-38*I)*x^14 + (0.E-38 + 0.E-38*I)*x^13 + (0.E-38 + 0.E-38*I)*x^12 + (0.E-38 + 0.E-38*I)*x^11 + (7.888609052210120000000000000 E-31 + 0.E-38*I)*x^10 + (0.E-38 + 0.E-38*I)*x^9 + (0.E-38 + 0.E-38*I)*x^8 + (0.E-38 + 0.E-38*I)*x^7 + (0.E-38 + 0.E-38*I)*x^6 + (0.E-38 + 0.E-38*I)*x^5 + (0.E-38 + 0.E-38*I)*x^4 + (0.E-38 + 0.E-38*I)*x^3 + (0.E-38 + 0.E-38*I)*x^2 + (7.888609052210120000000000000 E-31 + 0.E-38*I)*x + (7.888609052210120000000000000 E-31 + 0.E-38*I)\n? polroots(fp)\n  *** polroots: division by zero\n```\n\n\nI think that makes this ticket invalid ... Carl, does that seem reasonable to you? In particular, do you have any code you've written that we might fall back on if Pari fails like this?",
+    "created_at": "2009-01-23T13:09:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2418",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2418#issuecomment-16304",
+    "user": "craigcitro"
+}
+```
 
 Actually, this is really just pari giving us an error: 
 
@@ -48,9 +73,20 @@ Actually, this is really just pari giving us an error:
 I think that makes this ticket invalid ... Carl, does that seem reasonable to you? In particular, do you have any code you've written that we might fall back on if Pari fails like this?
 
 
+
 ---
 
-Comment by cwitty created at 2009-01-23 20:59:10
+archive/issue_comments_016305.json:
+```json
+{
+    "body": "I certainly don't think the ticket is invalid; it's definitely a bug in Sage (via Pari), even if it's not a bug in the Sage library code.\n\nFor this example, it presumably works to divide through by the leading coefficient (to get a monic polynomial) before handing off to Pari.  Maybe that's a reasonable strategy in general?\n\nOr, we could just report it as a bug to Pari upstream, and hope they fix it.",
+    "created_at": "2009-01-23T20:59:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2418",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2418#issuecomment-16305",
+    "user": "cwitty"
+}
+```
 
 I certainly don't think the ticket is invalid; it's definitely a bug in Sage (via Pari), even if it's not a bug in the Sage library code.
 
@@ -59,49 +95,128 @@ For this example, it presumably works to divide through by the leading coefficie
 Or, we could just report it as a bug to Pari upstream, and hope they fix it.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2010-01-03 06:47:52
+archive/issue_comments_016306.json:
+```json
+{
+    "body": "I've followed Carl's suggestion -- see the attached patch.",
+    "created_at": "2010-01-03T06:47:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2418",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2418#issuecomment-16306",
+    "user": "AlexGhitza"
+}
+```
 
 I've followed Carl's suggestion -- see the attached patch.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2010-01-03 06:47:52
+archive/issue_comments_016307.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-01-03T06:47:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2418",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2418#issuecomment-16307",
+    "user": "AlexGhitza"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_016308.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-01-03T06:48:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2418",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2418#issuecomment-16308",
+    "user": "AlexGhitza"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by cremona created at 2010-01-06 16:37:13
+archive/issue_comments_016309.json:
+```json
+{
+    "body": "Positive review.  The patch applies to 4.3 and all tests in rings/polynomial pass.",
+    "created_at": "2010-01-06T16:37:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2418",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2418#issuecomment-16309",
+    "user": "cremona"
+}
+```
 
 Positive review.  The patch applies to 4.3 and all tests in rings/polynomial pass.
 
 
+
 ---
 
-Comment by cremona created at 2010-01-06 16:37:13
+archive/issue_comments_016310.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-01-06T16:37:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2418",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2418#issuecomment-16310",
+    "user": "cremona"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by rlm created at 2010-01-13 10:50:23
+archive/issue_comments_016311.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_work.",
+    "created_at": "2010-01-13T10:50:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2418",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2418#issuecomment-16311",
+    "user": "rlm"
+}
+```
 
 Changing status from positive_review to needs_work.
 
 
+
 ---
 
-Comment by rlm created at 2010-01-13 10:50:23
+archive/issue_comments_016312.json:
+```json
+{
+    "body": "\n```\npatching file sage/rings/polynomial/polynomial_element.pyx\nHunk #1 FAILED at 4281\n1 out of 2 hunks FAILED -- saving rejects to file sage/rings/polynomial/polynomial_element.pyx.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac_2418.patch\n```\n",
+    "created_at": "2010-01-13T10:50:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2418",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2418#issuecomment-16312",
+    "user": "rlm"
+}
+```
 
 
 ```
@@ -115,9 +230,20 @@ errors during apply, please fix and refresh trac_2418.patch
 
 
 
+
 ---
 
-Comment by AlexGhitza created at 2010-01-13 11:23:00
+archive/issue_comments_016313.json:
+```json
+{
+    "body": "Robert,\n\nThe merging failure is due to the fact that this patch touches the same code as #6237, which just got merged (thank you!).  It is a trivial rebase job, and I am attaching the rebased version.  I kept the old version around so you can see that no other changes were made.\n\nI'm not sure what the protocol is here.  I'd normally go from needs_work to needs_review, but this doesn't really need review...",
+    "created_at": "2010-01-13T11:23:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2418",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2418#issuecomment-16313",
+    "user": "AlexGhitza"
+}
+```
 
 Robert,
 
@@ -126,36 +252,93 @@ The merging failure is due to the fact that this patch touches the same code as 
 I'm not sure what the protocol is here.  I'd normally go from needs_work to needs_review, but this doesn't really need review...
 
 
+
 ---
 
-Comment by AlexGhitza created at 2010-01-13 11:23:00
+archive/issue_comments_016314.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-01-13T11:23:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2418",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2418#issuecomment-16314",
+    "user": "AlexGhitza"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2010-01-13 11:23:45
+archive/issue_comments_016315.json:
+```json
+{
+    "body": "rebased on 4.3.1.alpha1 and #6237, apply instead of the previous patch",
+    "created_at": "2010-01-13T11:23:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2418",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2418#issuecomment-16315",
+    "user": "AlexGhitza"
+}
+```
 
 rebased on 4.3.1.alpha1 and #6237, apply instead of the previous patch
 
 
+
 ---
+
+archive/issue_comments_016316.json:
+```json
+{
+    "body": "Attachment\n\nI checked that this applies fine on top of 4.3.1.alpha1 + #6237, and tests pass, so positive review.",
+    "created_at": "2010-01-13T11:47:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2418",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2418#issuecomment-16316",
+    "user": "cremona"
+}
+```
 
 Attachment
 
 I checked that this applies fine on top of 4.3.1.alpha1 + #6237, and tests pass, so positive review.
 
 
+
 ---
 
-Comment by cremona created at 2010-01-13 11:47:31
+archive/issue_comments_016317.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-01-13T11:47:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2418",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2418#issuecomment-16317",
+    "user": "cremona"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by rlm created at 2010-01-14 08:00:30
+archive/issue_comments_016318.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-14T08:00:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2418",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2418#issuecomment-16318",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed

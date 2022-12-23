@@ -1,11 +1,21 @@
 # Issue 8396: element_class of Subsets is broken
 
-Issue created by migration from https://trac.sagemath.org/ticket/8396
-
-Original creator: giraudo
-
-Original creation time: 2010-02-28 15:13:10
-
+archive/issues_008396.json:
+```json
+{
+    "body": "Assignee: sage-combinat\n\nCC:  nborie\n\nelement_class of Subsets is broken\n\n```\nsage: s = Subsets(Set([1]))\nsage: e = s.first()\nsage: isinstance(e, s.element_class)\nFalse\n```\n\n\nNote: this should be caught by setting good categories\n\n```\nsage: s.category()\nCategory of objects\n}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/8396\n\n",
+    "created_at": "2010-02-28T15:13:10Z",
+    "labels": [
+        "combinatorics",
+        "major",
+        "bug"
+    ],
+    "title": "element_class of Subsets is broken",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8396",
+    "user": "giraudo"
+}
+```
 Assignee: sage-combinat
 
 CC:  nborie
@@ -27,24 +37,61 @@ sage: s.category()
 Category of objects
 }}
 
+Issue created by migration from https://trac.sagemath.org/ticket/8396
+
+
+
+
 
 ---
 
-Comment by giraudo created at 2010-02-28 15:14:05
+archive/issue_comments_075223.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"Subsets element_class\".",
+    "created_at": "2010-02-28T15:14:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8396#issuecomment-75223",
+    "user": "giraudo"
+}
+```
 
 Changing keywords from "" to "Subsets element_class".
 
 
+
 ---
 
-Comment by giraudo created at 2010-02-28 15:43:21
+archive/issue_comments_075224.json:
+```json
+{
+    "body": "Changing assignee from sage-combinat to giraudo.",
+    "created_at": "2010-02-28T15:43:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8396#issuecomment-75224",
+    "user": "giraudo"
+}
+```
 
 Changing assignee from sage-combinat to giraudo.
 
 
+
 ---
 
-Comment by nborie created at 2010-02-28 20:28:42
+archive/issue_comments_075225.json:
+```json
+{
+    "body": "There is a little mistake I made a lot with the Trac...\n\nSamuele, you have to export your patch and after upload them to the trac. Clic on your patch on the trac and after, read on the top the information : \n*****************************************************************\n#8367: fix element_class of Subsets\n\ndiff --git a/sage/combinat/subset.py *****************************************************************\n\nIt's to short because you probably just upload the patch from .hg/patches/\n\nuse: sage -hg trac_8396_subsets_element_class_fix-sg.patch > your_favorite_directory/trac_8396_subsets_element_class_fix-sg.patch\n\nand upload to the trac the exported patch, you will see more hg information at the top of the patch.\n\nOnce you do that, I will have a look on your fix!\n\nBye Samuele.",
+    "created_at": "2010-02-28T20:28:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8396#issuecomment-75225",
+    "user": "nborie"
+}
+```
 
 There is a little mistake I made a lot with the Trac...
 
@@ -65,9 +112,20 @@ Once you do that, I will have a look on your fix!
 Bye Samuele.
 
 
+
 ---
 
-Comment by nborie created at 2010-02-28 20:30:14
+archive/issue_comments_075226.json:
+```json
+{
+    "body": "use: sage -hg export trac_8396_subsets_element_class_fix-sg.patch > your_favorite_directory/trac_8396_subsets_element_class_fix-sg.patch \n\nsorry!!! I forget the export in the command. And do this command from\nsage-combinat/ directory.",
+    "created_at": "2010-02-28T20:30:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8396#issuecomment-75226",
+    "user": "nborie"
+}
+```
 
 use: sage -hg export trac_8396_subsets_element_class_fix-sg.patch > your_favorite_directory/trac_8396_subsets_element_class_fix-sg.patch 
 
@@ -75,60 +133,150 @@ sorry!!! I forget the export in the command. And do this command from
 sage-combinat/ directory.
 
 
+
 ---
+
+archive/issue_comments_075227.json:
+```json
+{
+    "body": "Attachment\n\nThanks Nicolas, it is done !",
+    "created_at": "2010-02-28T21:40:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8396#issuecomment-75227",
+    "user": "giraudo"
+}
+```
 
 Attachment
 
 Thanks Nicolas, it is done !
 
 
+
 ---
 
-Comment by nborie created at 2010-02-28 21:57:31
+archive/issue_comments_075228.json:
+```json
+{
+    "body": "Perfect! Now to inform any reviewer that you think your job is over on this problem, you should set your ticket as 'needs review' and thus, some people will download it and test it...\n\nIf you do so, I will review it. If you don't change the status, we will have the impression you are still working on the problem and you don't want the review now.",
+    "created_at": "2010-02-28T21:57:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8396#issuecomment-75228",
+    "user": "nborie"
+}
+```
 
 Perfect! Now to inform any reviewer that you think your job is over on this problem, you should set your ticket as 'needs review' and thus, some people will download it and test it...
 
 If you do so, I will review it. If you don't change the status, we will have the impression you are still working on the problem and you don't want the review now.
 
 
+
 ---
 
-Comment by giraudo created at 2010-02-28 22:44:27
+archive/issue_comments_075229.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-02-28T22:44:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8396#issuecomment-75229",
+    "user": "giraudo"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by nborie created at 2010-02-28 23:35:00
+archive/issue_comments_075230.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-02-28T23:35:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8396#issuecomment-75230",
+    "user": "nborie"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by nborie created at 2010-02-28 23:35:00
+archive/issue_comments_075231.json:
+```json
+{
+    "body": "The patch apply, the tests passed and the patch fix this ticket. Positive review.",
+    "created_at": "2010-02-28T23:35:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8396#issuecomment-75231",
+    "user": "nborie"
+}
+```
 
 The patch apply, the tests passed and the patch fix this ticket. Positive review.
 
 
+
 ---
 
-Comment by giraudo created at 2010-03-01 17:20:11
+archive/issue_comments_075232.json:
+```json
+{
+    "body": "Thanks a lot Nicolas for your revision and advices :-)",
+    "created_at": "2010-03-01T17:20:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8396#issuecomment-75232",
+    "user": "giraudo"
+}
+```
 
 Thanks a lot Nicolas for your revision and advices :-)
 
 
+
 ---
 
-Comment by mvngu created at 2010-03-02 21:40:37
+archive/issue_comments_075233.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-03-02T21:40:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8396#issuecomment-75233",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mvngu created at 2010-03-02 21:40:37
+archive/issue_comments_075234.json:
+```json
+{
+    "body": "Samuele: Mercurial interprets your \"commit message\" as a comment, hence the message itself won't appear as your commit message:\n\n```\n# 8367: fix element_class of Subsets\n```\n\nNotice the white space between \"#\" and \"8367:\". Avoid putting white space between \"#\" and your ticket number. Your commit message should be something like this:\n\n```\n#8367: fix element_class of Subsets\n```\n",
+    "created_at": "2010-03-02T21:40:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8396#issuecomment-75234",
+    "user": "mvngu"
+}
+```
 
 Samuele: Mercurial interprets your "commit message" as a comment, hence the message itself won't appear as your commit message:
 

@@ -1,39 +1,97 @@
 # Issue 9340: update Developer's Guide to require spkg-check for each standard spkg
 
-Issue created by migration from https://trac.sagemath.org/ticket/9340
-
-Original creator: mvngu
-
-Original creation time: 2010-06-25 20:48:41
-
+archive/issues_009340.json:
+```json
+{
+    "body": "Assignee: mvngu\n\nAs the subject says. See [this thread](https://groups.google.com/group/sage-devel/browse_thread/thread/80295483c7bb5348) for a suggested template for spkg-check.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9340\n\n",
+    "created_at": "2010-06-25T20:48:41Z",
+    "labels": [
+        "documentation",
+        "major",
+        "enhancement"
+    ],
+    "title": "update Developer's Guide to require spkg-check for each standard spkg",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9340",
+    "user": "mvngu"
+}
+```
 Assignee: mvngu
 
 As the subject says. See [this thread](https://groups.google.com/group/sage-devel/browse_thread/thread/80295483c7bb5348) for a suggested template for spkg-check.
 
+Issue created by migration from https://trac.sagemath.org/ticket/9340
+
+
+
+
 
 ---
 
-Comment by jdemeyer created at 2015-09-22 11:41:03
+archive/issue_comments_088242.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2015-09-22T11:41:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9340",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9340#issuecomment-88242",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2015-09-22 11:41:03
+archive/issue_comments_088243.json:
+```json
+{
+    "body": "A `spkg-check` file is \"optional, but highly recommended\" according to the current documentation. That's good for me.",
+    "created_at": "2015-09-22T11:41:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9340",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9340#issuecomment-88243",
+    "user": "jdemeyer"
+}
+```
 
 A `spkg-check` file is "optional, but highly recommended" according to the current documentation. That's good for me.
 
 
+
 ---
 
-Comment by jdemeyer created at 2015-09-22 11:41:08
+archive/issue_comments_088244.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2015-09-22T11:41:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9340",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9340#issuecomment-88244",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by vbraun created at 2015-09-25 08:07:39
+archive/issue_comments_088245.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2015-09-25T08:07:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9340",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9340#issuecomment-88245",
+    "user": "vbraun"
+}
+```
 
 Resolution: invalid

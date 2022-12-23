@@ -1,11 +1,21 @@
 # Issue 3953: notebook -- make it so foo?? in the notebook shows the source code syntax highlighted
 
-Issue created by migration from https://trac.sagemath.org/ticket/3953
-
-Original creator: was
-
-Original creation time: 2008-08-26 08:20:30
-
+archive/issues_003953.json:
+```json
+{
+    "body": "Assignee: boothby\n\nHere's some relevant code by Gabriel Gellner -- a diff to server/support.py -- to this problem:\n\n```\nteragon-2:Downloads was$ diff ~/d/sage/sage/server/support.py support.py \n23a24,29\n> from pygments import highlight\n> from pygments.lexers import PythonLexer\n> from pygments.formatters import HtmlFormatter\n> \n> \n> \n218,220c224,228\n<         src = sagedoc.format_src(src)\n<         if not lineno is None:\n<             src = \"File: %s\\nSource Code (starting at line %s):\\n%s\"%(filename, lineno, src)\n---\n>         #Slicing of the first 95 characters is a kluge to get rid of the doctype,\n>         # really we should write our oun HtmlFormatter\n>         src = highlight(src, PythonLexer(), HtmlFormatter(full=True))[94:]\n>         #if not lineno is None:\n>         #    src = \"File: %s\\nSource Code (starting at line %s):\\n%s\"%(filename, lineno, src)\n```\n\n\nThis requires the pygments library to be installed. Also, the notebook will have to be\nchanged to not escape <'s etc. in the output of the source code window.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/3953\n\n",
+    "created_at": "2008-08-26T08:20:30Z",
+    "labels": [
+        "notebook",
+        "major",
+        "enhancement"
+    ],
+    "title": "notebook -- make it so foo?? in the notebook shows the source code syntax highlighted",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3953",
+    "user": "was"
+}
+```
 Assignee: boothby
 
 Here's some relevant code by Gabriel Gellner -- a diff to server/support.py -- to this problem:
@@ -35,16 +45,42 @@ teragon-2:Downloads was$ diff ~/d/sage/sage/server/support.py support.py
 This requires the pygments library to be installed. Also, the notebook will have to be
 changed to not escape <'s etc. in the output of the source code window.  
 
+Issue created by migration from https://trac.sagemath.org/ticket/3953
+
+
+
+
 
 ---
 
-Comment by mvngu created at 2009-08-12 16:35:53
+archive/issue_comments_028379.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2009-08-12T16:35:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3953",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3953#issuecomment-28379",
+    "user": "mvngu"
+}
+```
 
 Resolution: duplicate
 
 
+
 ---
 
-Comment by mvngu created at 2009-08-12 16:35:53
+archive/issue_comments_028380.json:
+```json
+{
+    "body": "This is a duplicate of #5653. Close it as per Mitesh Patel's suggestion.",
+    "created_at": "2009-08-12T16:35:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3953",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3953#issuecomment-28380",
+    "user": "mvngu"
+}
+```
 
 This is a duplicate of #5653. Close it as per Mitesh Patel's suggestion.

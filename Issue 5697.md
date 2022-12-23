@@ -1,11 +1,21 @@
 # Issue 5697: Sage 3.4.1.rc1: Downgrade GAP to 4.4.10
 
-Issue created by migration from https://trac.sagemath.org/ticket/5697
-
-Original creator: mabshoff
-
-Original creation time: 2009-04-06 18:48:49
-
+archive/issues_005697.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nGAP 4.4.12 on Itanium is horribly broken again, i.e. loading packages seems to be completely broken. Downgrade it!\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5697\n\n",
+    "created_at": "2009-04-06T18:48:49Z",
+    "labels": [
+        "packages: standard",
+        "blocker",
+        "bug"
+    ],
+    "title": "Sage 3.4.1.rc1: Downgrade GAP to 4.4.10",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5697",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 GAP 4.4.12 on Itanium is horribly broken again, i.e. loading packages seems to be completely broken. Downgrade it!
@@ -14,39 +24,89 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/5697
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2009-04-06 18:48:54
+archive/issue_comments_044530.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-04-06T18:48:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5697",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5697#issuecomment-44530",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-19 03:47:50
+archive/issue_comments_044531.json:
+```json
+{
+    "body": "To review this there are three components: \n\n* an updated GAP 4.4.10.spkg that reverts to 4.4.10.p10 and on top makes sure to nuke all gap-4.4.* installs, i.e. including 4.4.12.\n* a patch reverting functional changes, i.e. the parts of #3337 where random_seed was used due to uspstream changes and reverting #5455 to not skip loading the workspace on Itaniums\n* a patch fixing all the doctests due to the above patch. Since #3337 was pre-ReST it was a little messy and some of the changes moved to different files, etc.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-19T03:47:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5697",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5697#issuecomment-44531",
+    "user": "mabshoff"
+}
+```
 
 To review this there are three components: 
 
- * an updated GAP 4.4.10.spkg that reverts to 4.4.10.p10 and on top makes sure to nuke all gap-4.4.* installs, i.e. including 4.4.12.
- * a patch reverting functional changes, i.e. the parts of #3337 where random_seed was used due to uspstream changes and reverting #5455 to not skip loading the workspace on Itaniums
- * a patch fixing all the doctests due to the above patch. Since #3337 was pre-ReST it was a little messy and some of the changes moved to different files, etc.
+* an updated GAP 4.4.10.spkg that reverts to 4.4.10.p10 and on top makes sure to nuke all gap-4.4.* installs, i.e. including 4.4.12.
+* a patch reverting functional changes, i.e. the parts of #3337 where random_seed was used due to uspstream changes and reverting #5455 to not skip loading the workspace on Itaniums
+* a patch fixing all the doctests due to the above patch. Since #3337 was pre-ReST it was a little messy and some of the changes moved to different files, etc.
 
 Cheers,
 
 Michael
 
 
+
 ---
+
+archive/issue_comments_044532.json:
+```json
+{
+    "body": "Attachment\n\nApply this patch first",
+    "created_at": "2009-04-19T03:50:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5697",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5697#issuecomment-44532",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 Apply this patch first
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-19 03:51:33
+archive/issue_comments_044533.json:
+```json
+{
+    "body": "The updated SPKG can be found at \n\n   http://sage.math.washington.edu/home/mabshoff/release-cycles-3.4.1/rc4/gap-4.4.10.p11.spkg\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-19T03:51:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5697",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5697#issuecomment-44533",
+    "user": "mabshoff"
+}
+```
 
 The updated SPKG can be found at 
 
@@ -57,9 +117,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by wdj created at 2009-04-19 13:49:19
+archive/issue_comments_044534.json:
+```json
+{
+    "body": "I assume that to test this (on an amd64 ubuntu machine) I should\n\n(1) create a clone of 3.4.1.rc3\n\n(2) install http://sage.math.washington.edu/home/mabshoff/release-cycles-3.4.1/rc4/gap-4.4.10.p11.spkg\n\n(3) apply the patches trac_5697-doctest.patch and then trac_5697-functional.patch \n\nIs this correct?",
+    "created_at": "2009-04-19T13:49:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5697",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5697#issuecomment-44534",
+    "user": "wdj"
+}
+```
 
 I assume that to test this (on an amd64 ubuntu machine) I should
 
@@ -72,9 +143,20 @@ I assume that to test this (on an amd64 ubuntu machine) I should
 Is this correct?
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-19 15:06:43
+archive/issue_comments_044535.json:
+```json
+{
+    "body": "Replying to [comment:4 wdj]:\n> I assume that to test this (on an amd64 ubuntu machine) I should\n> \n> (1) create a clone of 3.4.1.rc3\n> \n> (2) install http://sage.math.washington.edu/home/mabshoff/release-cycles-3.4.1/rc4/gap-4.4.10.p11.spkg\n> \n> (3) apply the patches trac_5697-doctest.patch and then trac_5697-functional.patch \n\nAs mentioned above first functional, then doctests.\n\n> Is this correct?\n\nYes, modulo the patch order.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-19T15:06:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5697",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5697#issuecomment-44535",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:4 wdj]:
 > I assume that to test this (on an amd64 ubuntu machine) I should
@@ -96,9 +178,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by was created at 2009-04-19 19:51:24
+archive/issue_comments_044536.json:
+```json
+{
+    "body": "* 1 the spkg works and with the two patches applied, all tests pass.\n\n\n* Question: why do trac_5697-functional.patch?   It seems like all of that functionality would make sense and be food for any gap version (at least everything but the very last chunk).  Wasn't it just implementing the randgen framework correctly for GAP?   -- I'm ok with this, but we want the functionality back at some point, I think.\n\n* The other changes look fine, in the other patch. \n\nInstall the spkg ends with\n\n```\nmake[1]: Leaving directory `/scratch/wstein/build/sage-3.4.1.rc2/spkg/build/gap-4.4.10.p11/src/pkg/guava3.4/src/leon'\ncp: omitting directory `../../bin'\ncp: cannot stat `cp': No such file or directory\n\nreal    1m17.533s\nuser    0m58.840s\nsys     0m9.180s\nSuccessfully installed gap-4.4.10.p11\n```\n\n\nThat `cp: cannot stat `cp': No such file or directory` worries me. \n\nFix or explain that, and this gets a positive review.",
+    "created_at": "2009-04-19T19:51:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5697",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5697#issuecomment-44536",
+    "user": "was"
+}
+```
 
 * 1 the spkg works and with the two patches applied, all tests pass.
 
@@ -126,9 +219,20 @@ That `cp: cannot stat `cp': No such file or directory` worries me.
 Fix or explain that, and this gets a positive review.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-19 22:52:46
+archive/issue_comments_044537.json:
+```json
+{
+    "body": "re failure for `cp: cannot stat `cp': No such file` - it was also in the old spkg and everything it where it needs to be, i.e. doctests pass. Since rlm is working on code to replace all of guava I am not too worried since it will be gone soon anyway.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-19T22:52:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5697",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5697#issuecomment-44537",
+    "user": "mabshoff"
+}
+```
 
 re failure for `cp: cannot stat `cp': No such file` - it was also in the old spkg and everything it where it needs to be, i.e. doctests pass. Since rlm is working on code to replace all of guava I am not too worried since it will be gone soon anyway.
 
@@ -137,9 +241,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-19 23:36:09
+archive/issue_comments_044538.json:
+```json
+{
+    "body": "Replying to [comment:6 was]:\n\n> * Question: why do trac_5697-functional.patch?   It seems like all of that functionality would make sense and be food for any gap version (at least everything but the very last chunk).  Wasn't it just implementing the randgen framework correctly for GAP?   -- I'm ok with this, but we want the functionality back at some point, I think.\n\nIf we don't need to set the random_seed we should not set the random seed. Once GAP 4.4.12+ works as expected it should be more or less trivial to take the two patches and revert them. \n\nCheers,\n\nMichael",
+    "created_at": "2009-04-19T23:36:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5697",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5697#issuecomment-44538",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:6 was]:
 
@@ -152,16 +267,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by was created at 2009-04-20 00:51:26
+archive/issue_comments_044539.json:
+```json
+{
+    "body": "Given the cp issue was there before... positive review.",
+    "created_at": "2009-04-20T00:51:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5697",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5697#issuecomment-44539",
+    "user": "was"
+}
+```
 
 Given the cp issue was there before... positive review.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-20 03:30:48
+archive/issue_comments_044540.json:
+```json
+{
+    "body": "Merged both patches as well as the gap.spkg in Sage 3.4.1.rc4.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-20T03:30:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5697",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5697#issuecomment-44540",
+    "user": "mabshoff"
+}
+```
 
 Merged both patches as well as the gap.spkg in Sage 3.4.1.rc4.
 
@@ -170,8 +307,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-20 03:30:48
+archive/issue_comments_044541.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-04-20T03:30:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5697",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5697#issuecomment-44541",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

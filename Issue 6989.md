@@ -1,11 +1,21 @@
 # Issue 6989: line3d can modify its argument type
 
-Issue created by migration from https://trac.sagemath.org/ticket/6989
-
-Original creator: mhampton
-
-Original creation time: 2009-09-22 17:49:16
-
+archive/issues_006989.json:
+```json
+{
+    "body": "Assignee: was\n\nThis issue could well arise in other plotting code, I haven't checked yet.  But at least for line3d:\n\n\n```\nsage: mypoints = [vector([1,2,3]), vector([4,5,6])]\nsage: type(mypoints[0])\n<type 'sage.modules.vector_integer_dense.Vector_integer_dense'>\n```\n\nbut then:\n\n```\nsage: L = line3d(mypoints)\nsage: type(mypoints[0])\n<type 'tuple'>\n```\n\n\nso vectors are changed to tuples.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6989\n\n",
+    "created_at": "2009-09-22T17:49:16Z",
+    "labels": [
+        "graphics",
+        "major",
+        "bug"
+    ],
+    "title": "line3d can modify its argument type",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6989",
+    "user": "mhampton"
+}
+```
 Assignee: was
 
 This issue could well arise in other plotting code, I haven't checked yet.  But at least for line3d:
@@ -28,56 +38,150 @@ sage: type(mypoints[0])
 
 so vectors are changed to tuples.
 
+Issue created by migration from https://trac.sagemath.org/ticket/6989
+
+
+
+
 
 ---
 
-Comment by jason created at 2010-01-20 10:37:34
+archive/issue_comments_057806.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-01-20T10:37:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6989",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6989#issuecomment-57806",
+    "user": "jason"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_057807.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-01-20T10:37:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6989",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6989#issuecomment-57807",
+    "user": "jason"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by kcrisman created at 2010-01-27 15:34:58
+archive/issue_comments_057808.json:
+```json
+{
+    "body": "Looks good.  Positive review, assuming it passes relevant doctests (currently checking).",
+    "created_at": "2010-01-27T15:34:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6989",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6989#issuecomment-57808",
+    "user": "kcrisman"
+}
+```
 
 Looks good.  Positive review, assuming it passes relevant doctests (currently checking).
 
 
+
 ---
 
-Comment by kcrisman created at 2010-01-27 15:34:58
+archive/issue_comments_057809.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-01-27T15:34:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6989",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6989#issuecomment-57809",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by kcrisman created at 2010-01-27 15:44:46
+archive/issue_comments_057810.json:
+```json
+{
+    "body": "All is well.  And this does not occur in line2d, as far as I have tested it, because of the grid system.",
+    "created_at": "2010-01-27T15:44:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6989",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6989#issuecomment-57810",
+    "user": "kcrisman"
+}
+```
 
 All is well.  And this does not occur in line2d, as far as I have tested it, because of the grid system.
 
 
+
 ---
 
-Comment by mvngu created at 2010-01-29 22:55:25
+archive/issue_comments_057811.json:
+```json
+{
+    "body": "Jason, please provide a meaningful commit message together with a ticket number. See [this section](http://www.sagemath.org/doc/developer/producing_patches.html#quick-mercurial-tutorial-for-sage) of the Developers' Guide.",
+    "created_at": "2010-01-29T22:55:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6989",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6989#issuecomment-57811",
+    "user": "mvngu"
+}
+```
 
 Jason, please provide a meaningful commit message together with a ticket number. See [this section](http://www.sagemath.org/doc/developer/producing_patches.html#quick-mercurial-tutorial-for-sage) of the Developers' Guide.
 
 
+
 ---
 
-Comment by jason created at 2010-01-30 00:39:37
+archive/issue_comments_057812.json:
+```json
+{
+    "body": "argh!  I'm always forgetting that.  I'll try to do it soon (in the next two weeks).",
+    "created_at": "2010-01-30T00:39:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6989",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6989#issuecomment-57812",
+    "user": "jason"
+}
+```
 
 argh!  I'm always forgetting that.  I'll try to do it soon (in the next two weeks).
 
 
+
 ---
 
-Comment by mvngu created at 2010-01-31 01:00:49
+archive/issue_comments_057813.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-31T01:00:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6989",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6989#issuecomment-57813",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

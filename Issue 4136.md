@@ -1,14 +1,24 @@
 # Issue 4136: [with patch, needs review] enable tail reduction when reducing multivariate polynomials
 
-Issue created by migration from https://trac.sagemath.org/ticket/4136
-
-Original creator: malb
-
-Original creation time: 2008-09-16 17:53:33
-
+archive/issues_004136.json:
+```json
+{
+    "body": "Assignee: malb\n\nThis was reported on **[sage-support]**:\n\n```\nhi there,\n\nthis is going to be even worse than my recent bug report in terms of\nreproducing the error. I guess i'll start with describing what\nhappens, and then if someone tells me that it's a bug and not a\nfeature, then i'll try to get a minimal example.\n\nSo I've got a polynomial ring with a few dozens variables, over a\ncyclotomic field, and i've got an ideal J with hundreds of generators.\nJ contains at least y9 + y12. Then i got something like:\n\nsage: J.reduce(y9 - y12)\n2*y9   #which is fine\n\nsage: J.reduce(y13*y15)\ny13*y15 #why not\n\nsage: J.reduce(y13*y15 + y9 - y12)\ny13*y15 + y9 - y12\n\nNow what's up with that ? shouldn't it be y13*y15 + 2*y9 ? that's what\ni expect from the term 'reduction' anyway. Is this normal or is it a\nbug ? if it's a bug, could it influence the equivalence x in J iff\nJ.reduce(x) == 0 ?\n\nSo if this is a bug i'll give you more details.\n\nthanks!\nPierre\n```\n\n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/138e473f31c2f2b5\n\n```\n\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4136\n\n",
+    "created_at": "2008-09-16T17:53:33Z",
+    "labels": [
+        "commutative algebra",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch, needs review] enable tail reduction when reducing multivariate polynomials",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4136",
+    "user": "malb"
+}
+```
 Assignee: malb
 
-This was reported on *[sage-support]*:
+This was reported on **[sage-support]**:
 
 ```
 hi there,
@@ -51,24 +61,61 @@ http://groups.google.com/group/sage-support/browse_thread/thread/138e473f31c2f2b
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4136
+
+
+
+
 
 ---
 
-Comment by malb created at 2008-09-20 15:49:01
+archive/issue_comments_030028.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-09-20T15:49:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4136",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4136#issuecomment-30028",
+    "user": "malb"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by PolyBoRi created at 2008-10-17 06:24:01
+archive/issue_comments_030029.json:
+```json
+{
+    "body": "it's ok.",
+    "created_at": "2008-10-17T06:24:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4136",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4136#issuecomment-30029",
+    "user": "PolyBoRi"
+}
+```
 
 it's ok.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-20 11:53:20
+archive/issue_comments_030030.json:
+```json
+{
+    "body": "Mhhh, what are the patch dependencies here?\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha0/devel/sage$ patch -p1  < trac_4136_tail_reduce.patch \npatching file sage/rings/polynomial/multi_polynomial_element.py\nHunk #1 FAILED at 1485.\nHunk #2 FAILED at 1511.\n2 out of 2 hunks FAILED -- saving rejects to file sage/rings/polynomial/multi_polynomial_element.py.rej\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2008-10-20T11:53:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4136",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4136#issuecomment-30030",
+    "user": "mabshoff"
+}
+```
 
 Mhhh, what are the patch dependencies here?
 
@@ -86,27 +133,73 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_030031.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-10-20T13:20:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4136",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4136#issuecomment-30031",
+    "user": "malb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by malb created at 2008-10-20 13:21:00
+archive/issue_comments_030032.json:
+```json
+{
+    "body": "I rebased the patch to 3.1.3",
+    "created_at": "2008-10-20T13:21:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4136",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4136#issuecomment-30032",
+    "user": "malb"
+}
+```
 
 I rebased the patch to 3.1.3
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-20 14:32:34
+archive/issue_comments_030033.json:
+```json
+{
+    "body": "Merged in Sage 3.2.alpha0",
+    "created_at": "2008-10-20T14:32:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4136",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4136#issuecomment-30033",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.2.alpha0
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-20 14:32:34
+archive/issue_comments_030034.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-10-20T14:32:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4136",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4136#issuecomment-30034",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

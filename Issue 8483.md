@@ -1,11 +1,21 @@
 # Issue 8483: Multiplication faster than squaring?
 
-Issue created by migration from https://trac.sagemath.org/ticket/8483
-
-Original creator: malb
-
-Original creation time: 2010-03-09 15:37:58
-
+archive/issues_008483.json:
+```json
+{
+    "body": "Assignee: AlexGhitza\n\nThis is odd:\n\n\n```python\nsage: R=GF(2^283,'a')\nsage: x=R.random_element()\nsage: y=R.random_element()\n```\n\n\nFirst, note that squaring is slower than multiplication:\n\n\n```python\nsage: %timeit z=x^2\n625 loops, best of 3: 3.79 \u00b5s per loop\n```\n\n\n\n```python\nsage: %timeit z=x*y\n625 loops, best of 3: 3.17 \u00b5s per loop\n```\n\n\nNow observe that squaring done differently is indeed faster:\n\n\n```python\nsage: %timeit z=x*x\n625 loops, best of 3: 1.91 \u00b5s per loop\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8483\n\n",
+    "created_at": "2010-03-09T15:37:58Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "enhancement"
+    ],
+    "title": "Multiplication faster than squaring?",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8483",
+    "user": "malb"
+}
+```
 Assignee: AlexGhitza
 
 This is odd:
@@ -43,17 +53,43 @@ sage: %timeit z=x*x
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8483
+
+
+
+
 
 ---
 
-Comment by jdemeyer created at 2010-10-10 21:47:37
+archive/issue_comments_076454.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-10-10T21:47:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8483",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8483#issuecomment-76454",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-10-10 21:47:37
+archive/issue_comments_076455.json:
+```json
+{
+    "body": "This is mainly because of the Sage Integer in the exponent:\n\n```\nsage: R=GF(2^283,'a')\nsage: x=R.random_element()\n```\n\n\n\n```\nsage: two=2\nsage: %timeit z=x^two\n625 loops, best of 3: 4.07 \u00b5s per loop\n```\n\n\n\n```\nsage: two=int(2)\nsage: %timeit z=x^two\n625 loops, best of 3: 1.01 \u00b5s per loop\n```\n\n\nThis is still slightly slower than normal multiplication, probably because of overhead in the `^` operator:\n\n```\nsage: %timeit z=x*x\n625 loops, best of 3: 834 ns per loop\n```\n\n\nI suggest to close this ticket as \"invalid\" because this is essentially impossible to fix...",
+    "created_at": "2010-10-10T21:47:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8483",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8483#issuecomment-76455",
+    "user": "jdemeyer"
+}
+```
 
 This is mainly because of the Sage Integer in the exponent:
 
@@ -90,15 +126,37 @@ sage: %timeit z=x*x
 I suggest to close this ticket as "invalid" because this is essentially impossible to fix...
 
 
+
 ---
 
-Comment by malb created at 2010-11-23 17:35:14
+archive/issue_comments_076456.json:
+```json
+{
+    "body": "Resolution: wontfix",
+    "created_at": "2010-11-23T17:35:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8483",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8483#issuecomment-76456",
+    "user": "malb"
+}
+```
 
 Resolution: wontfix
 
 
+
 ---
 
-Comment by malb created at 2010-11-23 17:35:14
+archive/issue_comments_076457.json:
+```json
+{
+    "body": "I think \"needs_review\" as not intended.",
+    "created_at": "2010-11-23T17:35:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8483",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8483#issuecomment-76457",
+    "user": "malb"
+}
+```
 
 I think "needs_review" as not intended.

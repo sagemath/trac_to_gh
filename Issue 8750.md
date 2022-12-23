@@ -1,11 +1,21 @@
 # Issue 8750: numerical noise on solaris
 
-Issue created by migration from https://trac.sagemath.org/ticket/8750
-
-Original creator: jhpalmieri
-
-Original creation time: 2010-04-23 05:18:46
-
+archive/issues_008750.json:
+```json
+{
+    "body": "Assignee: drkirkby\n\nCC:  mvngu\n\nI'm getting noise on doctests on Solaris.  One is straightforward to fix (chmm.pyx).  For the other (time_series.pyx), on Solaris I get\n\n```\nsage -t  -long devel/sage/sage/finance/time_series.pyx\n**********************************************************************\nFile \"/home/palmieri/t2/sage-4.4.alpha2/devel/sage-main/sage/finance/time_series.pyx\", line 691:\n    sage: finance.TimeSeries([1,0,3]).log()\nExpected:\n    [0.0000, -inf, 1.0986]\nGot:\n    [0.0000, -Inf, 1.0986]\n**********************************************************************\n```\n\nSo instead of `-inf`, it's printing `-Inf`.  However, if I do\n\n```\n   sage: finance.TimeSeries([1,0,3]).log()[1]\n```\n\nthen I see `-inf`.  So I've changed the doctest to use this instead.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8750\n\n",
+    "created_at": "2010-04-23T05:18:46Z",
+    "labels": [
+        "porting: Solaris",
+        "blocker",
+        "bug"
+    ],
+    "title": "numerical noise on solaris",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8750",
+    "user": "jhpalmieri"
+}
+```
 Assignee: drkirkby
 
 CC:  mvngu
@@ -32,14 +42,31 @@ So instead of `-inf`, it's printing `-Inf`.  However, if I do
 
 then I see `-inf`.  So I've changed the doctest to use this instead.
 
+Issue created by migration from https://trac.sagemath.org/ticket/8750
+
+
+
+
 
 ---
+
+archive/issue_comments_080051.json:
+```json
+{
+    "body": "Attachment\n\nTwo questions: \n\n* Is sage/finance/time_series.pyx failing on every platform? I'm trying to understand why Solaris would give -inf and other system(s) -Inf. It seems to me that:\n\n\n```\nfinance.TimeSeries([1,0,3]).log()\n```\n\nis a lot nicer than \n\n```\n finance.TimeSeries([1,0,3]).log()[1]\n```\n\n\nSo is it right to change the test to a more complicated one, just to get the answer we want? If this comes from python, I find it hard to understand why there should be the difference. Would a case-insensitive test be a better method? \n\n* Do we know what an exact (or high numerical precision value) to the answer of the problem in sage/stats/hmm/chmm.pyx is? I'm always a bit reluctant seeing numerical results, with no justification of the answer. The approach taken in these doc tests seems to be: \"The answer is X, since I got X on my computer.\" Then someone gets a different answer on their computer, so the precision of the test is reduced. But rarely do I see much justification for the answer. (An exception has been in some problems like exp(1.0), where the exact answer is known, and we can be sure the problems are numerical rounding issues. \n\nWhen one reads things like how SQLite (Open Source) is tested\n\nhttp://sqlite.org/testing.html\n\nor how Wolfram Research claim Mathematica (closed source) is tested\n\nhttp://reference.wolfram.com/mathematica/tutorial/TestingAndVerification.html\n\nI'm personally left with the feeling the testing in Sage leaves a lot to be desired. \n\n\nDave",
+    "created_at": "2010-04-23T14:39:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8750",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8750#issuecomment-80051",
+    "user": "drkirkby"
+}
+```
 
 Attachment
 
 Two questions: 
 
- * Is sage/finance/time_series.pyx failing on every platform? I'm trying to understand why Solaris would give -inf and other system(s) -Inf. It seems to me that:
+* Is sage/finance/time_series.pyx failing on every platform? I'm trying to understand why Solaris would give -inf and other system(s) -Inf. It seems to me that:
 
 
 ```
@@ -55,7 +82,7 @@ is a lot nicer than
 
 So is it right to change the test to a more complicated one, just to get the answer we want? If this comes from python, I find it hard to understand why there should be the difference. Would a case-insensitive test be a better method? 
 
- * Do we know what an exact (or high numerical precision value) to the answer of the problem in sage/stats/hmm/chmm.pyx is? I'm always a bit reluctant seeing numerical results, with no justification of the answer. The approach taken in these doc tests seems to be: "The answer is X, since I got X on my computer." Then someone gets a different answer on their computer, so the precision of the test is reduced. But rarely do I see much justification for the answer. (An exception has been in some problems like exp(1.0), where the exact answer is known, and we can be sure the problems are numerical rounding issues. 
+* Do we know what an exact (or high numerical precision value) to the answer of the problem in sage/stats/hmm/chmm.pyx is? I'm always a bit reluctant seeing numerical results, with no justification of the answer. The approach taken in these doc tests seems to be: "The answer is X, since I got X on my computer." Then someone gets a different answer on their computer, so the precision of the test is reduced. But rarely do I see much justification for the answer. (An exception has been in some problems like exp(1.0), where the exact answer is known, and we can be sure the problems are numerical rounding issues. 
 
 When one reads things like how SQLite (Open Source) is tested
 
@@ -71,16 +98,38 @@ I'm personally left with the feeling the testing in Sage leaves a lot to be desi
 Dave
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-23 14:50:48
+archive/issue_comments_080052.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-04-23T14:50:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8750",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8750#issuecomment-80052",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-23 14:50:48
+archive/issue_comments_080053.json:
+```json
+{
+    "body": "Replying to [comment:1 drkirkby]:\n> Two questions: \n> \n>  * Is sage/finance/time_series.pyx failing on every platform? \n\nThis is the only one, and I don't know why.  I could try compiling time_series.py with \"-std=c99\"; maybe that would help?\n\n> So is it right to change the test to a more complicated one, just to get the answer we want?\n\nIf the difference are for trivial but insurmountable reasons, I don't have an issue with this.\n\n> If this comes from python, I find it hard to understand why there should be the difference. \n\nMaybe it comes from math.h somehow?\n\n>  * Do we know what an exact (or high numerical precision value) to the answer of the problem in sage/stats/hmm/chmm.pyx is? \n\nThis is essentially a new file in the Sage library: in previous versions, it was marked with \"nodoctest\" at the top of the file.  I think that it no longer uses an external library either.  So I view this sort of change as working kinks out, and it doesn't bother me.\n\n\nI'm always a bit reluctant seeing numerical results, with no justification of the answer. The approach taken in these doc tests seems to be: \"The answer is X, since I got X on my computer.\" Then someone gets a different answer on their computer, so the precision of the test is reduced. But rarely do I see much justification for the answer. (An exception has been in some problems like exp(1.0), where the exact answer is known, and we can be sure the problems are numerical rounding issues. \n> \n> When one reads things like how SQLite (Open Source) is tested\n> \n> http://sqlite.org/testing.html\n> \n> or how Wolfram Research claim Mathematica (closed source) is tested\n> \n> http://reference.wolfram.com/mathematica/tutorial/TestingAndVerification.html\n> \n> I'm personally left with the feeling the testing in Sage leaves a lot to be desired. \n> \n> \n> Dave",
+    "created_at": "2010-04-23T14:50:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8750",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8750#issuecomment-80053",
+    "user": "jhpalmieri"
+}
+```
 
 Replying to [comment:1 drkirkby]:
 > Two questions: 
@@ -118,9 +167,20 @@ I'm always a bit reluctant seeing numerical results, with no justification of th
 > Dave
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-23 15:01:17
+archive/issue_comments_080054.json:
+```json
+{
+    "body": "Replying to [comment:2 jhpalmieri]:\n> Replying to [comment:1 drkirkby]:\n> > Two questions: \n> > \n> >  * Is sage/finance/time_series.pyx failing on every platform? \n> \n> This is the only one, and I don't know why.  I could try compiling time_series.py with \"-std=c99\"; maybe that would help?\n\nActually, it didn't help.  I wonder why log is imported from math.h rather than from Python's math module.",
+    "created_at": "2010-04-23T15:01:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8750",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8750#issuecomment-80054",
+    "user": "jhpalmieri"
+}
+```
 
 Replying to [comment:2 jhpalmieri]:
 > Replying to [comment:1 drkirkby]:
@@ -133,18 +193,40 @@ Replying to [comment:2 jhpalmieri]:
 Actually, it didn't help.  I wonder why log is imported from math.h rather than from Python's math module.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-23 15:13:36
+archive/issue_comments_080055.json:
+```json
+{
+    "body": "I accidentally added this to the description of the ticket instead of to my reply about the change to chmm:\n\nOh, and actually reading the docstring, there is an optional argument eps which looks something like an error bound. By default it's set to 1e-12, and it looks to me like I've added the dots in the 12th place, so now I really don't have any problem with this change.",
+    "created_at": "2010-04-23T15:13:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8750",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8750#issuecomment-80055",
+    "user": "jhpalmieri"
+}
+```
 
 I accidentally added this to the description of the ticket instead of to my reply about the change to chmm:
 
 Oh, and actually reading the docstring, there is an optional argument eps which looks something like an error bound. By default it's set to 1e-12, and it looks to me like I've added the dots in the 12th place, so now I really don't have any problem with this change.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-04-23 17:02:50
+archive/issue_comments_080056.json:
+```json
+{
+    "body": "Fair enough, positive review. \n\nThe timeout issues you got are to be expected. On my 900 MHz Blade 2000, the longest 'long' doctest took a little under 1800 s (which is the default for SAGE_LONG_TIMEOUT) and the longest normal doctest took about 450 s (which is longer SAGE_TIMOUT) Hence I would certainly have needed to increase SAGE_TIMEOUT and the long one too to be sure it would work on a more loaded system. Given that machine is quicker than t2, the fact you get timeouts does not surprise me one bit. (My experience was with 4.3.4, not the latest alpha). \n\nDave",
+    "created_at": "2010-04-23T17:02:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8750",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8750#issuecomment-80056",
+    "user": "drkirkby"
+}
+```
 
 Fair enough, positive review. 
 
@@ -153,22 +235,55 @@ The timeout issues you got are to be expected. On my 900 MHz Blade 2000, the lon
 Dave
 
 
+
 ---
 
-Comment by drkirkby created at 2010-04-23 17:02:50
+archive/issue_comments_080057.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-04-23T17:02:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8750",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8750#issuecomment-80057",
+    "user": "drkirkby"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-23 17:07:31
+archive/issue_comments_080058.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-04-23T17:07:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8750",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8750#issuecomment-80058",
+    "user": "jhpalmieri"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-24 16:32:58
+archive/issue_comments_080059.json:
+```json
+{
+    "body": "By the way, several of us have come to the conclusion that the \"inf\" vs. \"Inf\" thing is actually a bug in Python.",
+    "created_at": "2010-04-24T16:32:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8750",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8750#issuecomment-80059",
+    "user": "jhpalmieri"
+}
+```
 
 By the way, several of us have come to the conclusion that the "inf" vs. "Inf" thing is actually a bug in Python.

@@ -1,11 +1,21 @@
 # Issue 4817: make an os x clickable .app launcher thing for sage automatically when one does -bdist on osx
 
-Issue created by migration from https://trac.sagemath.org/ticket/4817
-
-Original creator: was
-
-Original creation time: 2008-12-16 17:32:27
-
+archive/issues_004817.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\n\n```\n\nHi sage-devel,\n\nThanks to some assistance from Dan and my chair/sysadmin, and a lot of\ntime trying to figure out vagaries of the not-for-the-faint-of-heart\ndocumentation of Mac shell and Mac app property lists, I have the\nfollowing steps to make a Sage app clickable from anywhere which can\nbe easily changed to have it do the notebook instead.\n\nI assume this can be turned into a .dmg (I don't know how to do that)\nthat could then be made available for download instead of the usual -\nat least for major releases; the point is not to provide another\nshortcut for the cognoscenti to make, but rather for easy instructions\nfor someone else (mabshoff? William?) to occasionally provide the app\nfor download when convenient for that person.\n\nThe point is that you should only have to do the following ONCE: after\nthat, all that has to happen is to plop a different Sage build where\nit goes every time a new Sage build is made.  At least, I sure hope\nso!\n\n1. Create a folder called Sage.\n\n2. Make a subfolder called Contents.\n\n3. Go in Contents folder and make a subfolder called MacOS.\n\n4. Drop entire sage installation for appropriate architecture/OSX\nversion in the MacOS folder.\n\n5. Make the following script, name it Sage.command, make it executable\n(e.g. \"chmod 755 Sage.command\"), and also place it in the MacOS\nfolder.  Note the grave accents (non-shifted tilde on most American\nkeyboards) in the second echo line.  This script creates a temporary\nscript which starts Sage, and then runs the new script (which deletes\nitself once you log out of Sage, a nice touch).\n\n#!/usr/bin/env sh\n\ncmd=/tmp/SageStart_$$\necho '#!/usr/bin/env sh' > $cmd\necho `dirname $0`/sage/sage >> $cmd\necho \"rm -f $cmd\" >> $cmd\nchmod 755 $cmd\nopen -a /Applications/Utilities/Terminal.app $cmd\n\n6. Go back to the Contents folder and create the document Info.plist\nbelow.  The CFBundleInfoDictionaryVersion may need to be different on\nX.5 (I have X.4), and I made the last string 3.2.1 since that is the\nSage version I dropped in.\n\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://\nwww.apple.com/DTDs/PropertyList-1.0.dtd\">\n<plist version=\"1.0\">\n<dict>\n       <key>CFBundleDevelopmentRegion</key>\n       <string>English</string>\n       <key>CFBundleExecutable</key>\n       <string>Sage.command</string>\n       <key>CFBundleIdentifier</key>\n       <string>com.sage.Sage</string>\n       <key>CFBundleInfoDictionaryVersion</key>\n       <string>6.0</string>\n       <key>CFBundleName</key>\n       <string>Sage</string>\n       <key>CFBundlePackageType</key>\n       <string>APPL</string>\n       <key>CFBundleSignature</key>\n       <string>????</string>\n       <key>CFBundleVersion</key>\n       <string>3.2.1</string>\n</dict>\n</plist>\n\n7. Rename the Sage folder as Sage.app - you now have an application!\nYou may have to move Sage from whatever folder you started to\nsomewhere else, then back - this helps the Mac OS realize you have\nmade/changed the .plist file.\n\nTo make it a little nicer, add an icon:\n\nA. Create a subfolder Resources in the Contents folder.\n\nB. Add\n\n       <key>CFBundleIconFile</key>\n       <string>SageIcon.icns</string>\n\nto the file Info.plist.\n\nC. Assuming you have installed developer tools, open the program\n/Developer/Applications/Utilities/Icon\\ Composer.app/\nand drag your favorite Sage icon into the boxes.  Save this as\nSageIcon.icns in the Resources folder.\n\n\n(If one hasn't installed the tools, probably any image would work if\nyou reference it in the .plist file, but I'm not sure about how Mac\nwould do it, so it might not.  Incidentally, I tried using the usual\nSage.png icosahedron for the .icns file, and found it is a little low\nresolution; they like 128x128 pixels for the biggest, and Sage.png\nseems to be 86x88.  On the other hand, it's a little busy for the icon\nat the smallest levels.  Whatever.)\n\nIncidental notes:\n\nI. The user will still have to manually close the program and Terminal\nwindow at the end of all this.  Terminal is what really launches.\n\nII. To have it do the notebook instead, change the line\n\necho `dirname $0`/sage/sage >> $cmd\n\nto\n\necho `dirname $0`/sage/sage -notebook >> $cmd\n\nOf course, to change the file, you will now have to Ctrl-click on the\napplication and choose \"Show Package Contents\" to get to it again, or\nuse the command line.  Note that the user will have to Ctrl-C at the\nend of this in the Terminal window - no way around that.\n\nIII. It would be great to actually have an interface etc - ideally,\none that just was an easy front end to Sage but also included the Help\nmenu, since one could just put the /doc folder in Resources and then\nhave it there, the canonical Mac way to do it.  Well, that will have\nto wait for the oft-mentioned OSX guru.\n\nI hope this is helpful to at least one other person.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4817\n\n",
+    "created_at": "2008-12-16T17:32:27Z",
+    "labels": [
+        "distribution",
+        "major",
+        "enhancement"
+    ],
+    "title": "make an os x clickable .app launcher thing for sage automatically when one does -bdist on osx",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4817",
+    "user": "was"
+}
+```
 Assignee: mabshoff
 
 
@@ -143,10 +153,25 @@ I hope this is helpful to at least one other person.
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4817
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-12-17 10:00:10
+archive/issue_comments_036523.json:
+```json
+{
+    "body": "This should probably wait until 3.3, but it would be great if we could get this done for the AMS binaries.\n\nCheers,\n\nMichael",
+    "created_at": "2008-12-17T10:00:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4817",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4817#issuecomment-36523",
+    "user": "mabshoff"
+}
+```
 
 This should probably wait until 3.3, but it would be great if we could get this done for the AMS binaries.
 
@@ -155,9 +180,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-12 02:29:20
+archive/issue_comments_036524.json:
+```json
+{
+    "body": "Any volunteers to make this happen?\n\nCheers,\n\nMichael",
+    "created_at": "2009-01-12T02:29:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4817",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4817#issuecomment-36524",
+    "user": "mabshoff"
+}
+```
 
 Any volunteers to make this happen?
 
@@ -166,48 +202,109 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by iandrus created at 2009-02-03 19:51:43
+archive/issue_comments_036525.json:
+```json
+{
+    "body": "The Sage.app skeleton",
+    "created_at": "2009-02-03T19:51:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4817",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4817#issuecomment-36525",
+    "user": "iandrus"
+}
+```
 
 The Sage.app skeleton
 
 
+
 ---
+
+archive/issue_comments_036526.json:
+```json
+{
+    "body": "Attachment\n\nchanges to sage-bdist",
+    "created_at": "2009-02-03T19:52:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4817",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4817#issuecomment-36526",
+    "user": "iandrus"
+}
+```
 
 Attachment
 
 changes to sage-bdist
 
 
+
 ---
+
+archive/issue_comments_036527.json:
+```json
+{
+    "body": "Attachment\n\nchanges to sage-native-execute",
+    "created_at": "2009-02-03T19:53:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4817",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4817#issuecomment-36527",
+    "user": "iandrus"
+}
+```
 
 Attachment
 
 changes to sage-native-execute
 
 
+
 ---
+
+archive/issue_comments_036528.json:
+```json
+{
+    "body": "Attachment\n\nI hope no one was using the incorrect quoting of commandline parameters in sage-native-execute. I originally needed this change since I had sage-bdist call platypus directly, but I have since gotten rid of that so I guess I don't need those changes anymore.  Unfortunately, I didn't realize that until I had uploaded it.  I'm not sure how to delete it (though the patch should go in anyway IMHO).",
+    "created_at": "2009-02-03T19:56:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4817",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4817#issuecomment-36528",
+    "user": "iandrus"
+}
+```
 
 Attachment
 
 I hope no one was using the incorrect quoting of commandline parameters in sage-native-execute. I originally needed this change since I had sage-bdist call platypus directly, but I have since gotten rid of that so I guess I don't need those changes anymore.  Unfortunately, I didn't realize that until I had uploaded it.  I'm not sure how to delete it (though the patch should go in anyway IMHO).
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-03 21:35:44
+archive/issue_comments_036529.json:
+```json
+{
+    "body": "Ok, positive review, but there are a couple caveats:\n\n* the copyright notice should be changed to reflect the year as well as the Sage devs as authors of Sage\n* the second patch has the wrong path to the sage.app tarball, but I will post a patch that corrects that.\n* the sage.app tarball contains a couple extra index files which I will remove and post an updated patch for the extrepo.\n \nA couple suggestions: \n\n* it would be nice if we created sage-x.y.z.app, but renaming the obvious files does not work for me. Somebody ought to take a closer look. \n* README needs to be updated since now one can just drag the app to any location and it will work.\n\nNice work!\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-03T21:35:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4817",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4817#issuecomment-36529",
+    "user": "mabshoff"
+}
+```
 
 Ok, positive review, but there are a couple caveats:
 
- * the copyright notice should be changed to reflect the year as well as the Sage devs as authors of Sage
- * the second patch has the wrong path to the sage.app tarball, but I will post a patch that corrects that.
- * the sage.app tarball contains a couple extra index files which I will remove and post an updated patch for the extrepo.
+* the copyright notice should be changed to reflect the year as well as the Sage devs as authors of Sage
+* the second patch has the wrong path to the sage.app tarball, but I will post a patch that corrects that.
+* the sage.app tarball contains a couple extra index files which I will remove and post an updated patch for the extrepo.
  
 A couple suggestions: 
 
- * it would be nice if we created sage-x.y.z.app, but renaming the obvious files does not work for me. Somebody ought to take a closer look. 
- * README needs to be updated since now one can just drag the app to any location and it will work.
+* it would be nice if we created sage-x.y.z.app, but renaming the obvious files does not work for me. Somebody ought to take a closer look. 
+* README needs to be updated since now one can just drag the app to any location and it will work.
 
 Nice work!
 
@@ -216,29 +313,64 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-03 23:59:16
+archive/issue_comments_036530.json:
+```json
+{
+    "body": "Ivan's patch clean up - apply this patch to the bin repo only",
+    "created_at": "2009-02-03T23:59:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4817",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4817#issuecomment-36530",
+    "user": "mabshoff"
+}
+```
 
 Ivan's patch clean up - apply this patch to the bin repo only
 
 
+
 ---
+
+archive/issue_comments_036531.json:
+```json
+{
+    "body": "Attachment\n\nApply on top of part1.",
+    "created_at": "2009-02-04T00:05:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4817",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4817#issuecomment-36531",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 Apply on top of part1.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-04 00:35:04
+archive/issue_comments_036532.json:
+```json
+{
+    "body": "Merged \n\n* trac_4817_bin-cleaned_up.patch\n* trac_4817-ext-update-copyright.patch\n* trac_4817_part1.patch\n\nin Sage 3.3.alpha5.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-04T00:35:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4817",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4817#issuecomment-36532",
+    "user": "mabshoff"
+}
+```
 
 Merged 
 
- * trac_4817_bin-cleaned_up.patch
- * trac_4817-ext-update-copyright.patch
- * trac_4817_part1.patch
+* trac_4817_bin-cleaned_up.patch
+* trac_4817-ext-update-copyright.patch
+* trac_4817_part1.patch
 
 in Sage 3.3.alpha5.
 
@@ -247,8 +379,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-04 00:35:04
+archive/issue_comments_036533.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-02-04T00:35:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4817",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4817#issuecomment-36533",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

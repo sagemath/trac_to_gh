@@ -1,24 +1,62 @@
 # Issue 5264: [with patch, needs review] optimize small permgroup elements
 
-Issue created by migration from https://trac.sagemath.org/ticket/5264
-
-Original creator: robertwb
-
-Original creation time: 2009-02-14 06:49:24
-
+archive/issues_005264.json:
+```json
+{
+    "body": "Assignee: joyner\n\nAvoid allocation for very small permutation group elements (which can be a significant cost of element creation). \n\nIssue created by migration from https://trac.sagemath.org/ticket/5264\n\n",
+    "created_at": "2009-02-14T06:49:24Z",
+    "labels": [
+        "group theory",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch, needs review] optimize small permgroup elements",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5264",
+    "user": "robertwb"
+}
+```
 Assignee: joyner
 
 Avoid allocation for very small permutation group elements (which can be a significant cost of element creation). 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5264
+
+
+
+
 
 ---
+
+archive/issue_comments_040415.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-02-14T06:50:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5264",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5264#issuecomment-40415",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by robertwb created at 2009-02-14 06:58:02
+archive/issue_comments_040416.json:
+```json
+{
+    "body": "Before: \n\n\n```\nsage: G = SymmetricGroup(3)\nsage: L = [G.random_element() for _ in range(100)] * 17\nsage: timeit(\"prod(L)\")\n625 loops, best of 3: 651 \u00b5s per loop\n\nsage: G = SymmetricGroup(10)\nsage: L = [G.random_element() for _ in range(100)] * 17\nsage: timeit(\"prod(L)\")\n625 loops, best of 3: 766 \u00b5s per loop\n\nsage: G = SymmetricGroup(20)\nsage: L = [G.random_element() for _ in range(100)] * 17\nsage: timeit(\"prod(L)\")\n625 loops, best of 3: 854 \u00b5s per loop\n```\n\n\nAfter: \n\n```\nsage: sage: G = SymmetricGroup(3)\nsage: sage: L = [G.random_element() for _ in range(100)] * 17\nsage: sage: timeit(\"prod(L)\")\n625 loops, best of 3: 485 \u00b5s per loop\n\nsage: sage: G = SymmetricGroup(10)\nsage: sage: L = [G.random_element() for _ in range(100)] * 17\nsage: sage: timeit(\"prod(L)\")\n625 loops, best of 3: 564 \u00b5s per loop\n\nsage: sage: G = SymmetricGroup(20)\nsage: sage: L = [G.random_element() for _ in range(100)] * 17\nsage: sage: timeit(\"prod(L)\")\n625 loops, best of 3: 876 \u00b5s per loop\n```\n",
+    "created_at": "2009-02-14T06:58:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5264",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5264#issuecomment-40416",
+    "user": "robertwb"
+}
+```
 
 Before: 
 
@@ -62,16 +100,38 @@ sage: sage: timeit("prod(L)")
 
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-16 11:35:23
+archive/issue_comments_040417.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-04-16T11:35:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5264",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5264#issuecomment-40417",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-16 11:35:23
+archive/issue_comments_040418.json:
+```json
+{
+    "body": "Merged in Sage 3.4.1.rc3.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-16T11:35:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5264",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5264#issuecomment-40418",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.4.1.rc3.
 

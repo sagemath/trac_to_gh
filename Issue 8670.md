@@ -1,11 +1,21 @@
 # Issue 8670: Provide projections methods for word paths
 
-Issue created by migration from https://trac.sagemath.org/ticket/8670
-
-Original creator: slabbe
-
-Original creation time: 2010-04-11 12:10:06
-
+archive/issues_008670.json:
+```json
+{
+    "body": "Assignee: slabbe\n\nCC:  abmasse vdelecroix robertwb tjolivet tmonteil\n\nNice mathematical objects can be obtained when projecting appropriately a discrete path (Rauzy fractals for instance).\n\nThis patch introduces 3 projection functions for word path. It also adds 1 function to `WordMorphism` and 2 matrix rotation functions to `sage/plot/plot3d/transforms.pyx`.\n\nThe first 1000 points of the Rauzy fractal :\n\n\n```\n    sage: s = WordMorphism('1->12,2->13,3->1')\n    sage: D = s.fixed_point('1')\n    sage: v = s.pisot_vector()\n    sage: P = WordPaths('123',[(1,0,0),(0,1,0),(0,0,1)])\n    sage: w = P(D[:1000])\n    sage: w.projected_plot(v)\n```\n\n\nSee more examples in doctests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8670\n\n",
+    "created_at": "2010-04-11T12:10:06Z",
+    "labels": [
+        "combinatorics",
+        "major",
+        "enhancement"
+    ],
+    "title": "Provide projections methods for word paths",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8670",
+    "user": "slabbe"
+}
+```
 Assignee: slabbe
 
 CC:  abmasse vdelecroix robertwb tjolivet tmonteil
@@ -29,24 +39,61 @@ The first 1000 points of the Rauzy fractal :
 
 See more examples in doctests.
 
+Issue created by migration from https://trac.sagemath.org/ticket/8670
+
+
+
+
 
 ---
 
-Comment by slabbe created at 2010-04-11 13:08:37
+archive/issue_comments_078890.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-04-11T13:08:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8670",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8670#issuecomment-78890",
+    "user": "slabbe"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by slabbe created at 2010-04-13 11:44:16
+archive/issue_comments_078891.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-04-13T11:44:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8670",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8670#issuecomment-78891",
+    "user": "slabbe"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by slabbe created at 2010-04-13 11:44:16
+archive/issue_comments_078892.json:
+```json
+{
+    "body": "There are some limit case problems :\n\n\n```\nsage: from sage.plot.plot3d.transform import *\nsage: rotate_vector_on_axis((1,0,0), 0)\nTraceback (most recent call last):\n...\nZeroDivisionError: Rational division by zero\n```\n\n\nWill post a new patch soon.",
+    "created_at": "2010-04-13T11:44:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8670",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8670#issuecomment-78892",
+    "user": "slabbe"
+}
+```
 
 There are some limit case problems :
 
@@ -63,30 +110,76 @@ ZeroDivisionError: Rational division by zero
 Will post a new patch soon.
 
 
+
 ---
 
-Comment by slabbe created at 2010-04-18 19:39:15
+archive/issue_comments_078893.json:
+```json
+{
+    "body": "I fixed the above problem in the updated patch. Needs review!\n\nSince I am adding two functions to the file `sage/plot/plot3d/transform.pyx`, I am also adding Robert Bradshaw in cc of this ticket. He might have some comments to share.",
+    "created_at": "2010-04-18T19:39:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8670",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8670#issuecomment-78893",
+    "user": "slabbe"
+}
+```
 
 I fixed the above problem in the updated patch. Needs review!
 
 Since I am adding two functions to the file `sage/plot/plot3d/transform.pyx`, I am also adding Robert Bradshaw in cc of this ticket. He might have some comments to share.
 
 
+
 ---
 
-Comment by slabbe created at 2010-04-18 19:39:15
+archive/issue_comments_078894.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-04-18T19:39:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8670",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8670#issuecomment-78894",
+    "user": "slabbe"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by slabbe created at 2010-04-27 15:58:48
+archive/issue_comments_078895.json:
+```json
+{
+    "body": "Does not depend on any known patch. Applies on 4.3.4.",
+    "created_at": "2010-04-27T15:58:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8670",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8670#issuecomment-78895",
+    "user": "slabbe"
+}
+```
 
 Does not depend on any known patch. Applies on 4.3.4.
 
 
+
 ---
+
+archive/issue_comments_078896.json:
+```json
+{
+    "body": "Attachment\n\n1. Your definition of Pisot eigenvector is ambiguous.\n\n```\nReturns the left eigenvector of the incidence matrix associated\nto the largest eigenvalue (in absolute value).\n```\n\nIt is possible that there are multiple eigenvalues with the same absolute value:\n\n```\nsage: mu = WordMorphism('a->c,b->c,c->ab')\nsage: m = matrix(mu); m\n[0 0 1]\n[0 0 1]\n[1 1 0]\nsage: m.eigenvalues()\n[0, -1.414213562373095?, 1.414213562373095?]\n```\n\nIt is not clear which eigenvector gets returned here.\n\nAlso, there may be more than one eigenvector associated to your \"maximal\" eigenvalue, and your method only returns one eigenvector:\n\n```\nsage: mu = WordMorphism('a->a,b->b,c->abc')\nsage: mu.pisot_eigenvector_left()\n(1, -1, 0)\nsage: m = matrix(mu); m\n[1 0 1]\n[0 1 1]\n[0 0 1]\nsage: m.eigenspaces_left()\n[\n(1, Vector space of degree 3 and dimension 2 over Rational Field\nUser basis matrix:\n[ 1 -1  0]\n[ 0  0  1])\n]\n```\n\n\n2. The method `directive_vector` should include a definition of what the directive vector is.\n\n3. In your functions `rotate_ith_to_zero` and `rotate_vector_on_axis`, you first construct the matrix and then coerce it into the ring specified by the user. Why is this preferable to doing the computations directly in the ring? What about making this an option `compute_in_ring=False`? I think all you need to do is add the following line at the beginning:\n\n```\nif compute_in_ring is True:\n    v = vector(ring, v)\n```\n",
+    "created_at": "2010-06-23T16:04:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8670",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8670#issuecomment-78896",
+    "user": "saliola"
+}
+```
 
 Attachment
 
@@ -142,44 +235,112 @@ if compute_in_ring is True:
 
 
 
+
 ---
 
-Comment by saliola created at 2010-06-23 16:04:26
+archive/issue_comments_078897.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-06-23T16:04:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8670",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8670#issuecomment-78897",
+    "user": "saliola"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by slabbe created at 2010-10-15 21:00:21
+archive/issue_comments_078898.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-10-15T21:00:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8670",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8670#issuecomment-78898",
+    "user": "slabbe"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by slabbe created at 2010-10-15 21:00:21
+archive/issue_comments_078899.json:
+```json
+{
+    "body": "Needs review again!",
+    "created_at": "2010-10-15T21:00:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8670",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8670#issuecomment-78899",
+    "user": "slabbe"
+}
+```
 
 Needs review again!
 
 
+
 ---
+
+archive/issue_comments_078900.json:
+```json
+{
+    "body": "Attachment\n\nApplies over the precedent patch",
+    "created_at": "2010-10-15T22:05:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8670",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8670#issuecomment-78900",
+    "user": "slabbe"
+}
+```
 
 Attachment
 
 Applies over the precedent patch
 
 
+
 ---
 
-Comment by tjolivet created at 2011-01-28 17:56:02
+archive/issue_comments_078901.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2011-01-28T17:56:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8670",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8670#issuecomment-78901",
+    "user": "tjolivet"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by tjolivet created at 2011-01-28 17:56:02
+archive/issue_comments_078902.json:
+```json
+{
+    "body": "Hi,\n\nHere are a few remarks:\n\n(1) There is a doctest failure:\n\n  `File \"/home/timo/sage-4.6.1/devel/sage-trac_8670/sage/plot/plot3d/transform.pyx\", line 325:    sage: rotate_vector_on_axis(v, 0, ring=RealField(10)) * vExpected:    (5.5, 0.0020, 0.0020, 0.00)Got:    (5.5, 0.00098, 0.00098, 0.00)`\n\nThis should be fixed by using \"`...`\", and could be done for the other occurrences of printed floats.\n\n(2) I think that the rotations matrices should be in a file in sage/matrix/. I remember having looked for something like `rotate_arbitrary`, but I didn't find it because it was in plot3d/ and not in matrix/.\n\n(3) The documentation for `rotate_vector_on_axis` could be a little bit clearer (the description).\n\nOtherwise this is a nice and useful patch.",
+    "created_at": "2011-01-28T17:56:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8670",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8670#issuecomment-78902",
+    "user": "tjolivet"
+}
+```
 
 Hi,
 
@@ -198,54 +359,135 @@ This should be fixed by using "`...`", and could be done for the other occurrenc
 Otherwise this is a nice and useful patch.
 
 
+
 ---
+
+archive/issue_comments_078903.json:
+```json
+{
+    "body": "Attachment\n\nApplies over the precedent 2 patches",
+    "created_at": "2011-01-29T13:24:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8670",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8670#issuecomment-78903",
+    "user": "slabbe"
+}
+```
 
 Attachment
 
 Applies over the precedent 2 patches
 
 
+
 ---
 
-Comment by slabbe created at 2011-01-29 13:28:21
+archive/issue_comments_078904.json:
+```json
+{
+    "body": "Thanks for the comments. I moved the two rotation matrix constructor to the file `sage/matrix/constructor.py`. I improved the docstrings and fixed the doctest failure (I was having the same).\n\nNeeds review.",
+    "created_at": "2011-01-29T13:28:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8670",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8670#issuecomment-78904",
+    "user": "slabbe"
+}
+```
 
 Thanks for the comments. I moved the two rotation matrix constructor to the file `sage/matrix/constructor.py`. I improved the docstrings and fixed the doctest failure (I was having the same).
 
 Needs review.
 
 
+
 ---
 
-Comment by slabbe created at 2011-01-29 13:28:21
+archive/issue_comments_078905.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2011-01-29T13:28:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8670",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8670#issuecomment-78905",
+    "user": "slabbe"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
+
+archive/issue_comments_078906.json:
+```json
+{
+    "body": "Attachment\n\nApply only this one.",
+    "created_at": "2011-01-30T00:42:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8670",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8670#issuecomment-78906",
+    "user": "slabbe"
+}
+```
 
 Attachment
 
 Apply only this one.
 
 
+
 ---
 
-Comment by slabbe created at 2011-01-30 00:43:23
+archive/issue_comments_078907.json:
+```json
+{
+    "body": "For the patchbot :\n\nApply trac_8670_folded-sl.patch",
+    "created_at": "2011-01-30T00:43:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8670",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8670#issuecomment-78907",
+    "user": "slabbe"
+}
+```
 
 For the patchbot :
 
 Apply trac_8670_folded-sl.patch
 
 
+
 ---
 
-Comment by tjolivet created at 2011-02-07 12:36:27
+archive/issue_comments_078908.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2011-02-07T12:36:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8670",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8670#issuecomment-78908",
+    "user": "tjolivet"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-03-17 19:22:34
+archive/issue_comments_078909.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2011-03-17T19:22:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8670",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8670#issuecomment-78909",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 6657: EllipticCurve(..., j=...) shouldn't ignore field argument if given.
 
-Issue created by migration from https://trac.sagemath.org/ticket/6657
-
-Original creator: was
-
-Original creation time: 2009-07-29 23:06:58
-
+archive/issues_006657.json:
+```json
+{
+    "body": "Assignee: was\n\n\n```\nI found the following to be rather unexpected:\n\nEllipticCurve(GF(144169),j=1728)\nElliptic Curve defined by y^2 = x^3 - x over Rational Field\n\n - Victor Miller\n\n[I understand that 1728 is considered an Integer, yet the first\nargument seems to be ignored]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6657\n\n",
+    "created_at": "2009-07-29T23:06:58Z",
+    "labels": [
+        "number theory",
+        "major",
+        "bug"
+    ],
+    "title": "EllipticCurve(..., j=...) shouldn't ignore field argument if given.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6657",
+    "user": "was"
+}
+```
 Assignee: was
 
 
@@ -22,40 +32,99 @@ argument seems to be ignored]
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6657
+
+
+
+
 
 ---
 
-Comment by cremona created at 2009-08-01 18:17:33
+archive/issue_comments_054646.json:
+```json
+{
+    "body": "Easy to fix:  where EllipticCurve calls `EllipticCurve_from_j(j)` it should in fact coerce j into the parent of x (if x is not none).",
+    "created_at": "2009-08-01T18:17:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6657",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6657#issuecomment-54646",
+    "user": "cremona"
+}
+```
 
 Easy to fix:  where EllipticCurve calls `EllipticCurve_from_j(j)` it should in fact coerce j into the parent of x (if x is not none).
 
 
+
 ---
 
-Comment by wuthrich created at 2009-10-20 22:05:41
+archive/issue_comments_054647.json:
+```json
+{
+    "body": "This issue only appears in the deprecated function `EllipticCurve(..,j=..)`. The right function to call here is `EllipticCurve_from_j(GF(144169)(1728))`.\n\nMy proposal for a change is to finally eliminate the deprecated function.",
+    "created_at": "2009-10-20T22:05:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6657",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6657#issuecomment-54647",
+    "user": "wuthrich"
+}
+```
 
 This issue only appears in the deprecated function `EllipticCurve(..,j=..)`. The right function to call here is `EllipticCurve_from_j(GF(144169)(1728))`.
 
 My proposal for a change is to finally eliminate the deprecated function.
 
 
+
 ---
 
-Comment by wuthrich created at 2010-01-12 14:49:43
+archive/issue_comments_054648.json:
+```json
+{
+    "body": "Changing component from number theory to elliptic curves.",
+    "created_at": "2010-01-12T14:49:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6657",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6657#issuecomment-54648",
+    "user": "wuthrich"
+}
+```
 
 Changing component from number theory to elliptic curves.
 
 
+
 ---
 
-Comment by wuthrich created at 2010-01-12 14:49:43
+archive/issue_comments_054649.json:
+```json
+{
+    "body": "Changing assignee from was to cremona.",
+    "created_at": "2010-01-12T14:49:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6657",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6657#issuecomment-54649",
+    "user": "wuthrich"
+}
+```
 
 Changing assignee from was to cremona.
 
 
+
 ---
 
-Comment by cremona created at 2010-01-12 20:19:34
+archive/issue_comments_054650.json:
+```json
+{
+    "body": "Chris,\n\nYou are not quite right.  What is deprecated is EllipticCurve(j0), not EllipticCurve(j=j0):\n\n```\nsage: EllipticCurve(GF(101)(1728))\n/home/john/sage-4.3.1.alpha1/local/bin/sage-ipython:1: DeprecationWarning: 'EllipticCurve(j)' is deprecated; use 'EllipticCurve_from_j(j)' or 'EllipticCurve(j=j)' instead.\n  #!/usr/bin/env python\nElliptic Curve defined by y^2 = x^3 + x over Finite Field of size 101\nsage: EllipticCurve(j=GF(101)(1728))\nElliptic Curve defined by y^2 = x^3 + x over Finite Field of size 101\n```\n\nNow I cannot remember when that deprecation was put in, hence when it should be removed.\n\nAnyway, Victor's point is a valid one, and I'll put up a patch!",
+    "created_at": "2010-01-12T20:19:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6657",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6657#issuecomment-54650",
+    "user": "cremona"
+}
+```
 
 Chris,
 
@@ -75,45 +144,113 @@ Now I cannot remember when that deprecation was put in, hence when it should be 
 Anyway, Victor's point is a valid one, and I'll put up a patch!
 
 
+
 ---
 
-Comment by cremona created at 2010-01-12 20:52:15
+archive/issue_comments_054651.json:
+```json
+{
+    "body": "Applies to 4.3.1.alpha1",
+    "created_at": "2010-01-12T20:52:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6657",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6657#issuecomment-54651",
+    "user": "cremona"
+}
+```
 
 Applies to 4.3.1.alpha1
 
 
+
 ---
+
+archive/issue_comments_054652.json:
+```json
+{
+    "body": "Attachment\n\nThe attached patch sorts this out, with appropriate tests.",
+    "created_at": "2010-01-12T20:53:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6657",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6657#issuecomment-54652",
+    "user": "cremona"
+}
+```
 
 Attachment
 
 The attached patch sorts this out, with appropriate tests.
 
 
+
 ---
 
-Comment by cremona created at 2010-01-12 20:53:15
+archive/issue_comments_054653.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-01-12T20:53:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6657",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6657#issuecomment-54653",
+    "user": "cremona"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by wuthrich created at 2010-01-15 16:43:48
+archive/issue_comments_054654.json:
+```json
+{
+    "body": "Yes, that is fine. Thanks John.\n\nChris.",
+    "created_at": "2010-01-15T16:43:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6657",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6657#issuecomment-54654",
+    "user": "wuthrich"
+}
+```
 
 Yes, that is fine. Thanks John.
 
 Chris.
 
 
+
 ---
 
-Comment by wuthrich created at 2010-01-15 16:43:48
+archive/issue_comments_054655.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-01-15T16:43:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6657",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6657#issuecomment-54655",
+    "user": "wuthrich"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by rlm created at 2010-01-19 00:08:13
+archive/issue_comments_054656.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-19T00:08:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6657",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6657#issuecomment-54656",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed

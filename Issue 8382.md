@@ -1,12 +1,26 @@
 # Issue 8382: missing previous_probable_prime (companion to next_probable_prime)
 
-Issue created by migration from https://trac.sagemath.org/ticket/8382
-
-Original creator: zimmerma
-
-Original creation time: 2010-02-26 23:03:17
-
+archive/issues_008382.json:
+```json
+{
+    "body": "Assignee: AlexGhitza\n\n`next_probable_prime` exists but `previous_probable_prime`\ndoes not. It would be nice to have both.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8382\n\n",
+    "created_at": "2010-02-26T23:03:17Z",
+    "labels": [
+        "basic arithmetic",
+        "minor",
+        "enhancement"
+    ],
+    "title": "missing previous_probable_prime (companion to next_probable_prime)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8382",
+    "user": "zimmerma"
+}
+```
 Assignee: AlexGhitza
 
 `next_probable_prime` exists but `previous_probable_prime`
 does not. It would be nice to have both.
+
+Issue created by migration from https://trac.sagemath.org/ticket/8382
+
+

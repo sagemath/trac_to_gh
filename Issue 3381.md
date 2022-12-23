@@ -1,11 +1,21 @@
 # Issue 3381: iconv library needs to be added to Sage to allow R to build on Solaris.
 
-Issue created by migration from https://trac.sagemath.org/ticket/3381
-
-Original creator: drkirkby
-
-Original creation time: 2008-06-07 13:19:55
-
+archive/issues_003381.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nI believe it is known that Sage does not build on Solaris due to several problems, one of which is in R. Whilst trying to build R 2.6.1.p17 as part of Sage 3.0.3.alpha1 I get the following from the R configure script:\n\n\n```\nchecking iconv.h usability... yes\nchecking iconv.h presence... yes\nchecking for iconv.h... yes\nchecking for iconv... in libiconv\nchecking whether iconv accepts \"UTF-8\", \"latin1\" and \"UCS-*\"... no\nchecking for iconvlist... yes\nconfigure: error: --with-iconv=yes (default) and a suitable iconv is\nnot available \n```\n\n\nI believe (hope) I have got to the bottom of this, with the help of Brian D. Ripley who is one of the R developers.\n\nR needs a powerful version of iconv - the one supplied by Sun is not sufficiently powerful. This is documented in the 'R Installation and Administration' manual. \n\nhttp://cran.r-project.org/doc/manuals/R-admin.pdf\n\nSection C 4.1 says:\n\n''Modern Solaris systems allow a large selection of Open Source software to be installed via\npkg-get: a Sparc Solaris 10 system came with libreadline and libiconv and a choice of gcc3\nand gcc4 compilers, installed under \u2018/opt/csw\u2019. (You will need GNU libiconv: the Solaris\nversion of iconv is not sufficiently powerful.)''\n\nThe GNU one is ok, for which a Blastwave package is available. But since it is the Sage policy of including all the libraries like this, I suspect you want to add iconv. \n\nAlthough I had iconv from Blastwave, I just downloaded the source code for version 1.12 and found iconv took less than two minutes to build on my Blade 2000 (2 x 1.2 GHz, 8 GB RAM). It's 4.1 MB in size. Get it from\n\nhttp://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.12.tar.gz\n\nA few relavant links are:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/67c8234f07758c06\n(where it was pointed out by an R-developer that my analysis was wrong)\n\nhttp://www.nabble.com/Fail-to-call-AC_CACHE_CHECK-on-R-2.7.0-for-Solaris-td17707789.html\n(My question about this on the R developer mailing list).\n\n\nDr. David Kirkby\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3381\n\n",
+    "created_at": "2008-06-07T13:19:55Z",
+    "labels": [
+        "porting: Solaris",
+        "major",
+        "bug"
+    ],
+    "title": "iconv library needs to be added to Sage to allow R to build on Solaris.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3381",
+    "user": "drkirkby"
+}
+```
 Assignee: mabshoff
 
 I believe it is known that Sage does not build on Solaris due to several problems, one of which is in R. Whilst trying to build R 2.6.1.p17 as part of Sage 3.0.3.alpha1 I get the following from the R configure script:
@@ -54,10 +64,25 @@ http://www.nabble.com/Fail-to-call-AC_CACHE_CHECK-on-R-2.7.0-for-Solaris-td17707
 Dr. David Kirkby
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3381
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-09-06 00:54:49
+archive/issue_comments_023671.json:
+```json
+{
+    "body": "Wontfix since we have disabled libiconv for the R build on Solaris for now. Should iconv become mandatory we will revisit the issue.\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-06T00:54:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3381",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3381#issuecomment-23671",
+    "user": "mabshoff"
+}
+```
 
 Wontfix since we have disabled libiconv for the R build on Solaris for now. Should iconv become mandatory we will revisit the issue.
 
@@ -66,22 +91,44 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-06 00:54:49
+archive/issue_comments_023672.json:
+```json
+{
+    "body": "Resolution: wontfix",
+    "created_at": "2008-09-06T00:54:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3381",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3381#issuecomment-23672",
+    "user": "mabshoff"
+}
+```
 
 Resolution: wontfix
 
 
+
 ---
 
-Comment by drkirkby created at 2010-01-28 11:14:09
+archive/issue_comments_023673.json:
+```json
+{
+    "body": "Since this has come up again, I'll make a few further comments. \n\n* 'pkg-get' is not a Solaris command, but a command from 'Blastwave'. \n* You need root access to use software from Blastwave. \n* Blastwave has had some *issues* with bitter arguments between those involved. It was down for several weeks, but is now online. There is a *fork* of OpenCSW now. \n* The link I gave to the source for iconv is probably well out of date now. \n\nDave",
+    "created_at": "2010-01-28T11:14:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3381",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3381#issuecomment-23673",
+    "user": "drkirkby"
+}
+```
 
 Since this has come up again, I'll make a few further comments. 
 
- * 'pkg-get' is not a Solaris command, but a command from 'Blastwave'. 
- * You need root access to use software from Blastwave. 
- * Blastwave has had some _issues_ with bitter arguments between those involved. It was down for several weeks, but is now online. There is a _fork_ of OpenCSW now. 
- * The link I gave to the source for iconv is probably well out of date now. 
+* 'pkg-get' is not a Solaris command, but a command from 'Blastwave'. 
+* You need root access to use software from Blastwave. 
+* Blastwave has had some *issues* with bitter arguments between those involved. It was down for several weeks, but is now online. There is a *fork* of OpenCSW now. 
+* The link I gave to the source for iconv is probably well out of date now. 
 
 Dave

@@ -1,17 +1,27 @@
 # Issue 5219: Build ATLAS on dist mode with SSE2 only
 
-Issue created by migration from https://trac.sagemath.org/ticket/5219
-
-Original creator: mabshoff
-
-Original creation time: 2009-02-09 13:05:07
-
+archive/issues_005219.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nMany times the binaries cause trouble since we are building ATLAS with SSE3. So add a special flag which given the following settings\n\n* SAGE_DIST_MODE=yes\n* SAGE_DIST_MODE_ISASET=SSE2\n\nproduce an SSE2 only binary. If those flags are set we also need to make sure that sage-flags are set to sse2 only, i.e. no pni, no ssse3 or sse4_*.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5219\n\n",
+    "created_at": "2009-02-09T13:05:07Z",
+    "labels": [
+        "distribution",
+        "critical",
+        "bug"
+    ],
+    "title": "Build ATLAS on dist mode with SSE2 only",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5219",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 Many times the binaries cause trouble since we are building ATLAS with SSE3. So add a special flag which given the following settings
 
- * SAGE_DIST_MODE=yes
- * SAGE_DIST_MODE_ISASET=SSE2
+* SAGE_DIST_MODE=yes
+* SAGE_DIST_MODE_ISASET=SSE2
 
 produce an SSE2 only binary. If those flags are set we also need to make sure that sage-flags are set to sse2 only, i.e. no pni, no ssse3 or sse4_*.
 
@@ -19,22 +29,48 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/5219
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2009-02-09 13:05:28
+archive/issue_comments_039996.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-02-09T13:05:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5219",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5219#issuecomment-39996",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-16 12:13:21
+archive/issue_comments_039997.json:
+```json
+{
+    "body": "This was not as simple than I thought it would be. To do this we need to do two things:\n\n* disable the SSE3 detection by making it return \"FAILURE\" unconditionally\n* select ARCH defaults that allow SSE2 on 32 and 64 bit boxen. ATLAS 3.8.2 only offers that for Hammer, i.e. ARCH=20.\n\nWhen doing both of the above on sage.math we get an libatlas.a without any SSE3 instructions:\n\n\n```\natlas-3.8.2.p2/Hammer/lib$ ~/SSE2-project/sse-2.bash libatlas.a \nfound SSE2 addpd: 2\nfound SSE2 addsd: 2\nfound SSE2 movapd: 208\nfound SSE2 movlpd: 131\nfound SSE2 movsd: 4057\nfound SSE2 movupd: 1\nfound SSE2 mulpd: 2\nfound SSE2 mulsd: 2\nfound SSE2 orpd: 174\nfound SSE2 unpcklpd: 1\nfound SSE2 xorpd: 174\n```\n\n\nContrast this with a PNI enabled ATLAS from the same machine:\n\n```\natlas-3.8.2.p2/Hammer/lib$ ~/SSE2-project/sse-2.bash \n/scratch/mabshoff/sage-3.3.rc1/local/lib/libatlas.a \nfound SSE2 pshufd: 394\nfound SSE2 addpd: 41840\nfound SSE2 addsd: 74197\nfound SSE2 andnpd: 3\nfound SSE2 andpd: 34\nfound SSE2 comisd: 1393\nfound SSE2 cvtsd2ss: 8\nfound SSE2 cvtsi2sd: 4\nfound SSE2 cvtss2sd: 20\nfound SSE2 divsd: 304\nfound SSE2 maxpd: 4\nfound SSE2 maxsd: 4\nfound SSE2 movapd: 108245\nfound SSE2 movhpd: 1092\nfound SSE2 movlpd: 1111\nfound SSE2 movmskpd: 8\nfound SSE2 movsd: 27295\nfound SSE2 movupd: 80\nfound SSE2 mulpd: 41882\nfound SSE2 mulsd: 79686\nfound SSE2 orpd: 1152\nfound SSE2 sqrtsd: 8\nfound SSE2 subsd: 1658\nfound SSE2 ucomisd: 1392\nfound SSE2 unpckhpd: 86\nfound SSE2 unpcklpd: 90\nfound SSE2 xorpd: 1151\nfound SSE3 haddpd: 1224\nfound SSE3 haddps: 530\nfound SSE3 movddup: 4\nfound SSE3 movshdup: 2\nfound SSE3 movsldup: 3\n```\n\nIt is unclear how much of a performance penalty there is when selecting a Hammer ATLAS for a P4 arch, but it could be substantial. Someone needs to collect some numbers. It might be a good idea to tune the P4 kernels by selecting `-A 16`, but this would require adding tuning info for that config in 64 bits.\n\nIn the long term it might be beneficial to build ATLAS libs on various CPUs and then use a runtime selection to put the best version in LD_LIBRARY_PATH. \n\nI will build an spkg with the above changes since the SSE3 issue is really becoming a problem. One should note that for optimum performance one needs to build from sources. \n\nCheers,\n\nMichael",
+    "created_at": "2009-02-16T12:13:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5219",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5219#issuecomment-39997",
+    "user": "mabshoff"
+}
+```
 
 This was not as simple than I thought it would be. To do this we need to do two things:
 
- * disable the SSE3 detection by making it return "FAILURE" unconditionally
- * select ARCH defaults that allow SSE2 on 32 and 64 bit boxen. ATLAS 3.8.2 only offers that for Hammer, i.e. ARCH=20.
+* disable the SSE3 detection by making it return "FAILURE" unconditionally
+* select ARCH defaults that allow SSE2 on 32 and 64 bit boxen. ATLAS 3.8.2 only offers that for Hammer, i.e. ARCH=20.
 
 When doing both of the above on sage.math we get an libatlas.a without any SSE3 instructions:
 
@@ -105,9 +141,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-21 06:47:16
+archive/issue_comments_039998.json:
+```json
+{
+    "body": "Ok, no need to do something stupid with the probes. Clint come to the rescue:\n\n```\n> * The other issue concerns selecting a maximum SSE level. Right now I\n>can pick some Arch, but the SSE level up to SSE3 (==PNI) is determined\n>by the probes. So even if I pick a PIII for example I end up with SSE3\n>>support if the CPU supplies it. So far the trick I am using is to have\n>the SSE probe unconditionally return \"FAILURE\", so that for example I\n>get a SSE2 only ATLAS on a CPU with SSE3 or more. Obviously\n>performance will suck, but in case of Sage it is between \"illegal\n>instructions\" and working binaries, so performance  is something I can\n>sacrifice for that.\n>\n>Is there a plan to make the SSE level selectable as a config option?\n\nNot only is there a plan, but it's been available since 3.8.0!  It's not\nthe easiest thing to grok, because one machine obviously can support many\nvector extensions.  Here is the line from 'configure --help':\n  -V #    # = ((1<<vecISA1) | (1<<vecISA2) | ... | (1<<vecISAN))\n\nNow, since xprint_enums for some reason doens't print these values out,\nI can oh so conveniently scope ATLAS/CONFIG/include/atlconf.h for:\n  enum ISAEXT {ISA_None=0, ISA_AV, ISA_SSE3, ISA_SSE2, ISA_SSE1, ISA_3DNow};\n\nTherefore, if I want no vector code at all, I throw '-V -0'; if I want\nSSE2 & 1 but not 3, I throw (1<<3)+(1<<4) = 8+16=24, so '-V 24', and\nbingo: no SSE3 even on a machine that does SSE3!\n\nCheers,\nClint\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-21T06:47:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5219",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5219#issuecomment-39998",
+    "user": "mabshoff"
+}
+```
 
 Ok, no need to do something stupid with the probes. Clint come to the rescue:
 
@@ -147,9 +194,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-03-01 02:31:17
+archive/issue_comments_039999.json:
+```json
+{
+    "body": "Better luck in 3.4.1.\n\nCheers,\n\nMichael",
+    "created_at": "2009-03-01T02:31:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5219",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5219#issuecomment-39999",
+    "user": "mabshoff"
+}
+```
 
 Better luck in 3.4.1.
 
@@ -158,9 +216,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-06 18:33:03
+archive/issue_comments_040000.json:
+```json
+{
+    "body": "This is a 3.4.1 blocker.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-06T18:33:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5219",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5219#issuecomment-40000",
+    "user": "mabshoff"
+}
+```
 
 This is a 3.4.1 blocker.
 
@@ -169,16 +238,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-06 18:33:03
+archive/issue_comments_040001.json:
+```json
+{
+    "body": "Changing priority from critical to blocker.",
+    "created_at": "2009-04-06T18:33:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5219",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5219#issuecomment-40001",
+    "user": "mabshoff"
+}
+```
 
 Changing priority from critical to blocker.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-18 06:55:36
+archive/issue_comments_040002.json:
+```json
+{
+    "body": "The spkg that fixes three tickets (#5219, #5741, #5742) is at\n\n  http://sage.math.washington.edu/home/mabshoff/release-cycles-3.4.1/rc4/atlas-3.8.3.p1.spkg\n\nTo test SSE2 only builds set SAGE_SIMD_MODE to \"SSE2\".\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-18T06:55:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5219",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5219#issuecomment-40002",
+    "user": "mabshoff"
+}
+```
 
 The spkg that fixes three tickets (#5219, #5741, #5742) is at
 
@@ -191,9 +282,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-18 23:23:47
+archive/issue_comments_040003.json:
+```json
+{
+    "body": "Merged in Sage 3.4.1.rc4.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-18T23:23:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5219",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5219#issuecomment-40003",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.4.1.rc4.
 
@@ -202,8 +304,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-18 23:23:47
+archive/issue_comments_040004.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-04-18T23:23:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5219",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5219#issuecomment-40004",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

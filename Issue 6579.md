@@ -1,11 +1,21 @@
 # Issue 6579: Error building 'modified sage library code' when including paripriv.h
 
-Issue created by migration from https://trac.sagemath.org/ticket/6579
-
-Original creator: drkirkby
-
-Original creation time: 2009-07-21 15:10:58
-
+archive/issues_006579.json:
+```json
+{
+    "body": "Assignee: tbd\n\nKeywords: Solaris hack\n\nAlthough the build of pari goes ok on Solaris, there is an error when building the modified sage library code. It complains about syntax errors - see below. \n\n\n```\nTime to execute 1 commands: 2.75036501884 seconds\nFinished compiling Cython code (time = 4.44064807892 seconds)\nrunning install\nrunning build\nrunning build_py\ncopying sage/symbolic/constants.py -> \nbuild/lib.solaris-2.10-sun4u-2.6/sage/symbolic\nrunning build_ext\nbuilding 'sage.ext.fast_callable' extension\ncreating build/temp.solaris-2.10-sun4u-2.6/sage/ext\ngcc -fno-strict-aliasing -DNDEBUG -g -fwrapv -O3 -Wall \n-Wstrict-prototypes -fPIC \n-I/export/home/drkirkby/sage/sage-4.1.rc0/local//include \n-I/export/home/drkirkby/sage/sage-4.1.rc0/local//include/csage \n-I/export/home/drkirkby/sage/sage-4.1.rc0/devel//sage/sage/ext \n-I/export/home/drkirkby/sage/sage-4.1.rc0/local/include/python2.6 -c \nsage/ext/fast_callable.c -o \nbuild/temp.solaris-2.10-sun4u-2.6/sage/ext/fast_callable.o -w\nIn file included from sage/ext/fast_callable.c:141:\n/export/home/drkirkby/sage/sage-4.1.rc0/local//include/pari/paripriv.h:258: \nerror: expected ';', ',' or ')' before numeric constant\n/export/home/drkirkby/sage/sage-4.1.rc0/local//include/pari/paripriv.h:259: \nerror: expected ';', ',' or ')' before numeric constant\nIn file included from sage/ext/fast_callable.c:141:\n/export/home/drkirkby/sage/sage-4.1.rc0/local//include/pari/paripriv.h:428: \nerror: expected identifier before numeric constant\nerror: command 'gcc' failed with exit status 1\nsage: There was an error installing modified sage library code.\n```\n\n\nI have developed a patch, and will apply it later, including this tick number. \n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/6579\n\n",
+    "created_at": "2009-07-21T15:10:58Z",
+    "labels": [
+        "porting: Solaris",
+        "major",
+        "bug"
+    ],
+    "title": "Error building 'modified sage library code' when including paripriv.h",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6579",
+    "user": "drkirkby"
+}
+```
 Assignee: tbd
 
 Keywords: Solaris hack
@@ -49,17 +59,43 @@ I have developed a patch, and will apply it later, including this tick number.
 
 Dave 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6579
+
+
+
+
 
 ---
 
-Comment by drkirkby created at 2009-07-21 15:34:31
+archive/issue_comments_053707.json:
+```json
+{
+    "body": "Changing assignee from tbd to drkirkby.",
+    "created_at": "2009-07-21T15:34:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6579",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6579#issuecomment-53707",
+    "user": "drkirkby"
+}
+```
 
 Changing assignee from tbd to drkirkby.
 
 
+
 ---
 
-Comment by drkirkby created at 2009-07-23 07:29:28
+archive/issue_comments_053708.json:
+```json
+{
+    "body": "Well, the patch is more of a hack. With manual editing of \n\n\n```\n\n$SAGE_HOME/local/include/pari/paripriv.h\n```\n\n(comment out lines 258, 259 and 428) \n\nthe 'modified sage library code' will build if /opt/SUNWspro/bin/CC is NOT to be found, but will fail if that can be found. See trac #6595",
+    "created_at": "2009-07-23T07:29:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6579",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6579#issuecomment-53708",
+    "user": "drkirkby"
+}
+```
 
 Well, the patch is more of a hack. With manual editing of 
 
@@ -74,39 +110,94 @@ $SAGE_HOME/local/include/pari/paripriv.h
 the 'modified sage library code' will build if /opt/SUNWspro/bin/CC is NOT to be found, but will fail if that can be found. See trac #6595
 
 
+
 ---
 
-Comment by drkirkby created at 2009-10-13 10:57:46
+archive/issue_comments_053709.json:
+```json
+{
+    "body": "Having disucssed my patch idea, it seems they were not optimal, so I'd like someone else to do this. \n\nI've updated it to blocker, as is the only problem that stops Sage building on Solaris simply by typing 'make'.",
+    "created_at": "2009-10-13T10:57:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6579",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6579#issuecomment-53709",
+    "user": "drkirkby"
+}
+```
 
 Having disucssed my patch idea, it seems they were not optimal, so I'd like someone else to do this. 
 
 I've updated it to blocker, as is the only problem that stops Sage building on Solaris simply by typing 'make'.
 
 
+
 ---
 
-Comment by drkirkby created at 2009-10-13 10:57:46
+archive/issue_comments_053710.json:
+```json
+{
+    "body": "Changing keywords from \"Solaris hack\" to \"Solaris\".",
+    "created_at": "2009-10-13T10:57:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6579",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6579#issuecomment-53710",
+    "user": "drkirkby"
+}
+```
 
 Changing keywords from "Solaris hack" to "Solaris".
 
 
+
 ---
 
-Comment by drkirkby created at 2009-10-13 10:57:46
+archive/issue_comments_053711.json:
+```json
+{
+    "body": "Changing priority from major to blocker.",
+    "created_at": "2009-10-13T10:57:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6579",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6579#issuecomment-53711",
+    "user": "drkirkby"
+}
+```
 
 Changing priority from major to blocker.
 
 
+
 ---
 
-Comment by drkirkby created at 2009-10-16 01:25:50
+archive/issue_comments_053712.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-10-16T01:25:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6579",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6579#issuecomment-53712",
+    "user": "drkirkby"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by drkirkby created at 2009-10-16 01:25:50
+archive/issue_comments_053713.json:
+```json
+{
+    "body": "Having looked at this more, and the pari package in particular, it was clear similar (but more severe) issues had arisen on OS X with the inclusion of this pari header file. The solution adopted for OS X was to create a specific header file for OS X, and copy that over. \n\nThe following package does exactly the same thing, but only for Solaris. The changes needed appeared different from those needed for OS X, so I could not use the OS version of the header file for Solaris too. In the case of OS X, libraries had to be manually copied around too - no such changes were needed on Solaris, just a simple copy of a file. The extra code added to spkg-install was:\n\n\n```\n\n    if [ `uname` = \"SunOS\" ]; then\n       set -e\n       echo \"Patching include/pari/paripriv.h so it works on Solaris\"\n       echo \"The changes are much smaller than needed on OS X\"\n       cp  \"$TOP\"/patches/paripriv-Solaris.h $SAGE_LOCAL/include/pari/paripriv.h       \n       set +e\n    fi\n\n```\n\n\nThe files can be found at\n\nhttp://sage.math.washington.edu/home/kirkby/Solaris-fixes/pari-2.3.3.p5/\n\nThis is the last remaining issue that prevent Sage building on Solaris with no manual intervention. It requires that gcc is used, and that SAGE64 is **not** set to 'yes', as this code will only build in 32-bit mode. \n\nDave",
+    "created_at": "2009-10-16T01:25:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6579",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6579#issuecomment-53713",
+    "user": "drkirkby"
+}
+```
 
 Having looked at this more, and the pari package in particular, it was clear similar (but more severe) issues had arisen on OS X with the inclusion of this pari header file. The solution adopted for OS X was to create a specific header file for OS X, and copy that over. 
 
@@ -130,27 +221,60 @@ The files can be found at
 
 http://sage.math.washington.edu/home/kirkby/Solaris-fixes/pari-2.3.3.p5/
 
-This is the last remaining issue that prevent Sage building on Solaris with no manual intervention. It requires that gcc is used, and that SAGE64 is *not* set to 'yes', as this code will only build in 32-bit mode. 
+This is the last remaining issue that prevent Sage building on Solaris with no manual intervention. It requires that gcc is used, and that SAGE64 is **not** set to 'yes', as this code will only build in 32-bit mode. 
 
 Dave
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-21 06:44:56
+archive/issue_comments_053714.json:
+```json
+{
+    "body": "Looks good to me.",
+    "created_at": "2009-10-21T06:44:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6579",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6579#issuecomment-53714",
+    "user": "mhansen"
+}
+```
 
 Looks good to me.
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-21 06:44:56
+archive/issue_comments_053715.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-10-21T06:44:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6579",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6579#issuecomment-53715",
+    "user": "mhansen"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-21 06:45:14
+archive/issue_comments_053716.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-10-21T06:45:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6579",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6579#issuecomment-53716",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

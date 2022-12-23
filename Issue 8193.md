@@ -1,11 +1,21 @@
 # Issue 8193: Enumeration of points on plane curves over finite fields is very inefficient
 
-Issue created by migration from https://trac.sagemath.org/ticket/8193
-
-Original creator: cremona
-
-Original creation time: 2010-02-05 12:29:54
-
+archive/issues_008193.json:
+```json
+{
+    "body": "Assignee: AlexGhitza\n\nThe title says all!  The code in sage/schemes/plane_curves/projective_curve.py for finding all points on a plane curve over a finite field just enumerates all point in `P^2` and tests every one, which is less than optimal.\n\nA patch to improve this is on its way.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8193\n\n",
+    "created_at": "2010-02-05T12:29:54Z",
+    "labels": [
+        "algebraic geometry",
+        "major",
+        "enhancement"
+    ],
+    "title": "Enumeration of points on plane curves over finite fields is very inefficient",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8193",
+    "user": "cremona"
+}
+```
 Assignee: AlexGhitza
 
 The title says all!  The code in sage/schemes/plane_curves/projective_curve.py for finding all points on a plane curve over a finite field just enumerates all point in `P^2` and tests every one, which is less than optimal.
@@ -13,65 +23,170 @@ The title says all!  The code in sage/schemes/plane_curves/projective_curve.py f
 A patch to improve this is on its way.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8193
+
+
+
+
 
 ---
 
-Comment by cremona created at 2010-02-05 14:17:28
+archive/issue_comments_072256.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-02-05T14:17:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8193",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8193#issuecomment-72256",
+    "user": "cremona"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by cremona created at 2010-02-05 14:17:28
+archive/issue_comments_072257.json:
+```json
+{
+    "body": "The patch does the enumeration in a more efficient way.",
+    "created_at": "2010-02-05T14:17:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8193",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8193#issuecomment-72257",
+    "user": "cremona"
+}
+```
 
 The patch does the enumeration in a more efficient way.
 
 
+
 ---
+
+archive/issue_comments_072258.json:
+```json
+{
+    "body": "Attachment\n\napplies to 4.3.2",
+    "created_at": "2010-02-07T15:38:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8193",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8193#issuecomment-72258",
+    "user": "cremona"
+}
+```
 
 Attachment
 
 applies to 4.3.2
 
 
+
 ---
 
-Comment by cremona created at 2010-02-07 15:40:06
+archive/issue_comments_072259.json:
+```json
+{
+    "body": "In view of #8197 I have deleted \"check=False\" twice.  Otherwise unchanged.",
+    "created_at": "2010-02-07T15:40:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8193",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8193#issuecomment-72259",
+    "user": "cremona"
+}
+```
 
 In view of #8197 I have deleted "check=False" twice.  Otherwise unchanged.
 
 
+
 ---
 
-Comment by roed created at 2010-02-09 22:47:24
+archive/issue_comments_072260.json:
+```json
+{
+    "body": "I'm testing now...",
+    "created_at": "2010-02-09T22:47:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8193",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8193#issuecomment-72260",
+    "user": "roed"
+}
+```
 
 I'm testing now...
 
 
+
 ---
 
-Comment by roed created at 2010-02-11 08:49:30
+archive/issue_comments_072261.json:
+```json
+{
+    "body": "Looks good, passes all doctests.",
+    "created_at": "2010-02-11T08:49:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8193",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8193#issuecomment-72261",
+    "user": "roed"
+}
+```
 
 Looks good, passes all doctests.
 
 
+
 ---
 
-Comment by roed created at 2010-02-11 08:49:30
+archive/issue_comments_072262.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-02-11T08:49:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8193",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8193#issuecomment-72262",
+    "user": "roed"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-11 15:05:18
+archive/issue_comments_072263.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-02-11T15:05:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8193",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8193#issuecomment-72263",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by cturner created at 2010-03-03 10:51:52
+archive/issue_comments_072264.json:
+```json
+{
+    "body": "A bug has been found in this patch - a new ticket #8428 has been opened and a patch to fix this is in progress.",
+    "created_at": "2010-03-03T10:51:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8193",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8193#issuecomment-72264",
+    "user": "cturner"
+}
+```
 
 A bug has been found in this patch - a new ticket #8428 has been opened and a patch to fix this is in progress.

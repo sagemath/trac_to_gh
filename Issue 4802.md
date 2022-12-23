@@ -1,39 +1,99 @@
 # Issue 4802: [with patch, positive review] Add an on the fly ranker to Sage
 
-Issue created by migration from https://trac.sagemath.org/ticket/4802
-
-Original creator: mhansen
-
-Original creation time: 2008-12-15 06:19:02
-
+archive/issues_004802.json:
+```json
+{
+    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4802\n\n",
+    "created_at": "2008-12-15T06:19:02Z",
+    "labels": [
+        "combinatorics",
+        "minor",
+        "enhancement"
+    ],
+    "title": "[with patch, positive review] Add an on the fly ranker to Sage",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4802",
+    "user": "mhansen"
+}
+```
 Assignee: mhansen
 
 CC:  sage-combinat
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4802
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2008-12-15 06:20:00
+archive/issue_comments_036400.json:
+```json
+{
+    "body": "Patch by Nicolas Thiery, review by Mike Hansen",
+    "created_at": "2008-12-15T06:20:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4802",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4802#issuecomment-36400",
+    "user": "mhansen"
+}
+```
 
 Patch by Nicolas Thiery, review by Mike Hansen
 
 
+
 ---
+
+archive/issue_comments_036401.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-12-15T06:51:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4802",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4802#issuecomment-36401",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-15 17:57:43
+archive/issue_comments_036402.json:
+```json
+{
+    "body": "Merged in Sage 3.2.2.rc0",
+    "created_at": "2008-12-15T17:57:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4802",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4802#issuecomment-36402",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.2.2.rc0
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-15 17:57:43
+archive/issue_comments_036403.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-12-15T17:57:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4802",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4802#issuecomment-36403",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

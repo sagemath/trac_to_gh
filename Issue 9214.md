@@ -1,86 +1,225 @@
 # Issue 9214: Bring doc coverage of combinat/lyndon_word.py to 100%
 
-Issue created by migration from https://trac.sagemath.org/ticket/9214
-
-Original creator: slabbe
-
-Original creation time: 2010-06-11 10:51:04
-
+archive/issues_009214.json:
+```json
+{
+    "body": "Assignee: slabbe\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9214\n\n",
+    "created_at": "2010-06-11T10:51:04Z",
+    "labels": [
+        "documentation",
+        "major",
+        "enhancement"
+    ],
+    "title": "Bring doc coverage of combinat/lyndon_word.py to 100%",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9214",
+    "user": "slabbe"
+}
+```
 Assignee: slabbe
 
 CC:  sage-combinat
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/9214
+
+
+
+
 
 ---
+
+archive/issue_comments_086341.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-06-11T11:10:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9214",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9214#issuecomment-86341",
+    "user": "slabbe"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by slabbe created at 2010-06-11 11:53:02
+archive/issue_comments_086342.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-06-11T11:53:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9214",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9214#issuecomment-86342",
+    "user": "slabbe"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by saliola created at 2010-06-11 13:02:29
+archive/issue_comments_086343.json:
+```json
+{
+    "body": "Looks good to me (reviewed against sage-4.4.3).",
+    "created_at": "2010-06-11T13:02:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9214",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9214#issuecomment-86343",
+    "user": "saliola"
+}
+```
 
 Looks good to me (reviewed against sage-4.4.3).
 
 
+
 ---
 
-Comment by saliola created at 2010-06-11 13:02:29
+archive/issue_comments_086344.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-06-11T13:02:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9214",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9214#issuecomment-86344",
+    "user": "saliola"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
+
+archive/issue_comments_086345.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-06-11T19:41:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9214",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9214#issuecomment-86345",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mvngu created at 2010-06-11 19:42:07
+archive/issue_comments_086346.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_work.",
+    "created_at": "2010-06-11T19:42:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9214",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9214#issuecomment-86346",
+    "user": "mvngu"
+}
+```
 
 Changing status from positive_review to needs_work.
 
 
+
 ---
 
-Comment by mvngu created at 2010-06-11 19:44:15
+archive/issue_comments_086347.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-06-11T19:44:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9214",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9214#issuecomment-86347",
+    "user": "mvngu"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by mvngu created at 2010-06-11 19:44:15
+archive/issue_comments_086348.json:
+```json
+{
+    "body": "This needs some typo fixes introduced by slabbe's patch. See the reviewer patch for such fixes. So only my reviewer patch needs another pair of eyes to look over it. If it's OK, then the whole ticket is good for a positive review.",
+    "created_at": "2010-06-11T19:44:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9214",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9214#issuecomment-86348",
+    "user": "mvngu"
+}
+```
 
 This needs some typo fixes introduced by slabbe's patch. See the reviewer patch for such fixes. So only my reviewer patch needs another pair of eyes to look over it. If it's OK, then the whole ticket is good for a positive review.
 
 
+
 ---
 
-Comment by mhansen created at 2010-06-11 19:44:51
+archive/issue_comments_086349.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-06-11T19:44:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9214",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9214#issuecomment-86349",
+    "user": "mhansen"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mhansen created at 2010-06-11 19:44:51
+archive/issue_comments_086350.json:
+```json
+{
+    "body": "Looks good.",
+    "created_at": "2010-06-11T19:44:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9214",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9214#issuecomment-86350",
+    "user": "mhansen"
+}
+```
 
 Looks good.
 
 
+
 ---
 
-Comment by mhansen created at 2010-06-11 19:45:00
+archive/issue_comments_086351.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-06-11T19:45:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9214",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9214#issuecomment-86351",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 4736: The doctesting doesn't always report segfaults properly
 
-Issue created by migration from https://trac.sagemath.org/ticket/4736
-
-Original creator: mabshoff
-
-Original creation time: 2008-12-07 05:46:15
-
+archive/issues_004736.json:
+```json
+{
+    "body": "Assignee: gfurnish\n\nWhen reintroducing the bug from #4540 on purposed the doctesting framework after applying #717 and #4719 has trouble detecting segfualts and summarizing them at the end. For example consider this failure:\n\n```\nsage -t  \"devel/sage/sage/combinat/sf/kschur.py\"           \nException exceptions.TypeError: 'cannot convert a (= 1) to OP' in\n'sage.libs.symmetrica.symmetrica._op_schur_general_dict' ignored\nfunction: mult(1)\n       [3.1 s]\n```\n\nWhen running \"-tp 8 -long\" the failure is reported as:\n\n```\n sage -t -long devel/sage/sage/combinat/sf/kschur.py # 0 doctests failed\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4736\n\n",
+    "created_at": "2008-12-07T05:46:15Z",
+    "labels": [
+        "doctest coverage",
+        "major",
+        "bug"
+    ],
+    "title": "The doctesting doesn't always report segfaults properly",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4736",
+    "user": "mabshoff"
+}
+```
 Assignee: gfurnish
 
 When reintroducing the bug from #4540 on purposed the doctesting framework after applying #717 and #4719 has trouble detecting segfualts and summarizing them at the end. For example consider this failure:
@@ -29,22 +39,61 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/4736
+
+
+
+
 
 ---
+
+archive/issue_comments_035757.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-12-07T05:47:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4736",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4736#issuecomment-35757",
+    "user": "gfurnish"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by gfurnish created at 2008-12-07 05:48:17
+archive/issue_comments_035758.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-12-07T05:48:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4736",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4736#issuecomment-35758",
+    "user": "gfurnish"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-07 06:44:31
+archive/issue_comments_035759.json:
+```json
+{
+    "body": "Patch looks nice, but there are two small problems:\n\nFor -t the new line is missing before the time is being printed. I consider this cosmetic, but other people might be annoyed:\n\n```\nsage -t  \"devel/sage/sage/combinat/sf/homogeneous.py\"       \t [3.1 s]\n```\n\nCTRL-C isn't caught properly - at least it shouldn't print \"Error!!!\" with \"-t\":\n\n```\nsage -t  \"devel/sage/sage/combinat/sf/jack.py\"              Error!!!\n\t [8.5 s]\n```\n\nFor -tp CTRL-C now seems to kill all doctests:\n\n```\nsage -t  devel/doc/const/const.tex\nError!!!\n\n\t [1.8 s]\nsage -t  devel/doc/tut/tut.tex\nError!!!\n\n\t [1.7 s]\nsage -t  devel/doc/prog/prog.tex\nError!!!\n\n\t [1.8 s]\n\nThe following tests failed:\n\n\tsage -t  devel/doc/const/const.tex # KeyboardInterrupt\n\tsage -t  devel/doc/tut/tut.tex # KeyboardInterrupt\n\tsage -t  devel/doc/prog/prog.tex # KeyboardInterrupt\n-------------------------------------------------------------------\n```\n\nI think this is the desired behavior since now the timeout kills run away jobs properly.\n\nCheers,\n\nMichael",
+    "created_at": "2008-12-07T06:44:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4736",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4736#issuecomment-35759",
+    "user": "mabshoff"
+}
+```
 
 Patch looks nice, but there are two small problems:
 
@@ -92,16 +141,40 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_035760.json:
+```json
+{
+    "body": "Attachment\n\nApply on top of existing patch.",
+    "created_at": "2008-12-08T22:28:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4736",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4736#issuecomment-35760",
+    "user": "gfurnish"
+}
+```
 
 Attachment
 
 Apply on top of existing patch.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-10 08:55:54
+archive/issue_comments_035761.json:
+```json
+{
+    "body": "Very nice, the second patch fixes all the issues I reported. Great work Gary!\n\nCheers,\n\nMichael",
+    "created_at": "2008-12-10T08:55:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4736",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4736#issuecomment-35761",
+    "user": "mabshoff"
+}
+```
 
 Very nice, the second patch fixes all the issues I reported. Great work Gary!
 
@@ -110,15 +183,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-10 08:56:38
+archive/issue_comments_035762.json:
+```json
+{
+    "body": "Merged in Sage 3.2.2.alpha1",
+    "created_at": "2008-12-10T08:56:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4736",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4736#issuecomment-35762",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.2.2.alpha1
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-10 08:56:38
+archive/issue_comments_035763.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-12-10T08:56:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4736",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4736#issuecomment-35763",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

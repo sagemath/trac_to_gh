@@ -1,11 +1,21 @@
 # Issue 5822: cusps -- implement action of the Galois group on cusps for congruence subgroups as on page 12 of Steven's "Arithmetic on Modular Curves"
 
-Issue created by migration from https://trac.sagemath.org/ticket/5822
-
-Original creator: was
-
-Original creation time: 2009-04-19 03:54:35
-
+archive/issues_005822.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  robertwb craigcitro\n\nIt would be very useful if for a congruence subgroup G and an integer d coprime to the level N of G, one could compute the action on cusps (modulo G) of `tau_d \\in Gal(Q(zeta_N)/Q)`.   This action is described on page 12 of Steven's \"Arithmetic on Modular Curves\". \n\nNote that Sage does not have a data type for \"equivalence classes of cusps\" yet, and the action is only well defined on equivalence classes.  However, one easy thing to implement (hopefully) is a function so that if G is a congruence subgroup, then we have\n\n```\nsage: G.galois_action_on_cusps(d, alpha)\n```\n\nwhich returns a cusp beta that is in the class of tau_d([alpha]).\n\nLater when there is a data structure for equivalence classes of cusps, and also one for these Galois groups (as abstract groups), then that will call the above function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5822\n\n",
+    "created_at": "2009-04-19T03:54:35Z",
+    "labels": [
+        "number theory",
+        "minor",
+        "enhancement"
+    ],
+    "title": "cusps -- implement action of the Galois group on cusps for congruence subgroups as on page 12 of Steven's \"Arithmetic on Modular Curves\"",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5822",
+    "user": "was"
+}
+```
 Assignee: was
 
 CC:  robertwb craigcitro
@@ -22,31 +32,81 @@ which returns a cusp beta that is in the class of tau_d([alpha]).
 
 Later when there is a data structure for equivalence classes of cusps, and also one for these Galois groups (as abstract groups), then that will call the above function.
 
+Issue created by migration from https://trac.sagemath.org/ticket/5822
+
+
+
+
 
 ---
+
+archive/issue_comments_045751.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-04-19T06:01:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5822",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5822#issuecomment-45751",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2009-04-19 06:03:33
+archive/issue_comments_045752.json:
+```json
+{
+    "body": "NOTE: What I ended up implementing doesn't have an API exactly the same as the description in the ticket.  Please read the patch to see how to use it.",
+    "created_at": "2009-04-19T06:03:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5822",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5822#issuecomment-45752",
+    "user": "was"
+}
+```
 
 NOTE: What I ended up implementing doesn't have an API exactly the same as the description in the ticket.  Please read the patch to see how to use it.
 
 
+
 ---
 
-Comment by cremona created at 2009-04-20 08:42:36
+archive/issue_comments_045753.json:
+```json
+{
+    "body": "Just a quick comment: Maite Aranes and I have been implementing number field cusps, and we decided not to have a class for cusp equivalence classes modulo a congruence subgroup, the reason being that there was no such class over Q.  So if the consensus is that such a class should exist, we'll include it over number fields too.\n\nOur NFcusps code has not yet been put out to review, but probably should be soon - -it has had a lot os spinoffs in number field utilities, which have all now been merged.",
+    "created_at": "2009-04-20T08:42:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5822",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5822#issuecomment-45753",
+    "user": "cremona"
+}
+```
 
 Just a quick comment: Maite Aranes and I have been implementing number field cusps, and we decided not to have a class for cusp equivalence classes modulo a congruence subgroup, the reason being that there was no such class over Q.  So if the consensus is that such a class should exist, we'll include it over number fields too.
 
 Our NFcusps code has not yet been put out to review, but probably should be soon - -it has had a lot os spinoffs in number field utilities, which have all now been merged.
 
 
+
 ---
 
-Comment by cremona created at 2009-04-20 10:41:51
+archive/issue_comments_045754.json:
+```json
+{
+    "body": "Positive review:  applies ok to 3.4.1.rc3, does what it says and works.\n\nComment:  OK, so this is how Galois acts, but would it not be a good idea to also mention that this gives the action of the so-called diamond operators?   i.e. the standard operation of `(Z/NZ)^* = Gamma_0(N)/Gamma_1(N)` ?  I looked to see if they were already defined, e.g. on ManinSymbols, but the only reference to \"diamond\" which search_src() revealed was a reference to the book by D & Shurman!\n\nI would know the answer to the above if I had got further through the modular/modsym directory on the last docday, but doing just two files took up all the time I had.  And now term has started.",
+    "created_at": "2009-04-20T10:41:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5822",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5822#issuecomment-45754",
+    "user": "cremona"
+}
+```
 
 Positive review:  applies ok to 3.4.1.rc3, does what it says and works.
 
@@ -55,9 +115,20 @@ Comment:  OK, so this is how Galois acts, but would it not be a good idea to als
 I would know the answer to the above if I had got further through the modular/modsym directory on the last docday, but doing just two files took up all the time I had.  And now term has started.
 
 
+
 ---
 
-Comment by was created at 2009-04-20 15:14:55
+archive/issue_comments_045755.json:
+```json
+{
+    "body": "> Just a quick comment: Maite Aranes and I have been implementing number \n> field cusps, and we decided not to have a class for cusp equivalence \n> classes modulo a congruence subgroup, the reason being that there \n> was no such class over Q. So if the consensus is that such a class \n> should exist, we'll include it over number fields too. \n\nI think it would be very natural to have a class for the set of cusps modulo a congruence subgroup.   The only reason Sage doesn't have that now is that I didn't have time yet to implement it.",
+    "created_at": "2009-04-20T15:14:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5822",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5822#issuecomment-45755",
+    "user": "was"
+}
+```
 
 > Just a quick comment: Maite Aranes and I have been implementing number 
 > field cusps, and we decided not to have a class for cusp equivalence 
@@ -68,9 +139,20 @@ Comment by was created at 2009-04-20 15:14:55
 I think it would be very natural to have a class for the set of cusps modulo a congruence subgroup.   The only reason Sage doesn't have that now is that I didn't have time yet to implement it.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-23 07:19:10
+archive/issue_comments_045756.json:
+```json
+{
+    "body": "Merged in Sage 3.4.2.alpha0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-23T07:19:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5822",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5822#issuecomment-45756",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.4.2.alpha0.
 
@@ -79,8 +161,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-23 07:19:10
+archive/issue_comments_045757.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-04-23T07:19:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5822",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5822#issuecomment-45757",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 7178: HP-UX  lcalc does not build. Also fails on Solaris with Sun compiler
 
-Issue created by migration from https://trac.sagemath.org/ticket/7178
-
-Original creator: drkirkby
-
-Original creation time: 2009-10-10 09:06:02
-
+archive/issues_007178.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  chapoton\n\nKeywords: HP-UX Solaris\n\nI think lcalc needs an overhall. Warnings were purposly ignored until I recently fixed that. It does not build with the Sun compiler - see #7056. It can't even appear to find the 'cp' command on HP-UX. \n\n \n\n\n```\n                 from Lcommandline_values_zeros.cc:25:\n../include/Lgamma.h: In function 'Complex gamma_sum(Complex, int, ttype*, int, Double, Complex, Double, Long, Complex, const char*) [with ttype = std::complex<double>]':\n../include/Lvalue.h:510:   instantiated from 'Complex L_function<ttype>::value_via_gamma_sum(Complex, const char*) [with ttype = std::complex<double>]'\n../include/Lvalue.h:590:   instantiated from 'Complex L_function<ttype>::value(Complex, int, const char*) [with ttype = std::complex<double>]'\n$ ta(Complex, Double) [with ttype = int]':                                   <\nLcommandline_values_zeros.cc:68:   instantiated from here\n../include/Lgamma.h:622: warning: unused variable 'y'\n../include/Lgamma.h:622: warning: unused variable 'y2'\n../include/Lgamma.h:622: warning: unused variable 'y3'\nsh: ../include/Lvalue.h::  not found.\n$ ue_via_gamma_sum(Complex, const char*) [with ttype = int]'                 <\n../include/Lvalue.h:473: warning: control reaches end of non-void function\n\n../include/Lvalue.h: In member function 'Complex L_function<ttype>::value_via_Riemann_sum(Complex, const char*) [with ttype = int]':\n../include/Lvalue.h:473: warning: control reaches end of non-void function\nIn file included from ../include/L.h:520,\nsh: ../include/Lvalue.h:501::  not found.\n                 from ../include/Lcommandline_values_zeros.h:27,\n                 from Lcommandline_values_zer$ ../include/Lvalue.h:590:   instan$ ue(Complex, int, const char*) [with ttype = int]'                          <\nos.cc:25:\n../include/Lfind_zeros.h: In member function 'Double L_function<ttype>::zeros_zoom_brent(Double, Double, Double, Double) sh: ../include/Lvalue.h:590::  not found.\n$ Lcommandline_values_zeros.cc:57:   instantiated from here\n[with ttype = double]':\n../include/Lfind_zeros.h:31: warning: 'd' may be used uninitialized in this function\n.sh: Lcommandline_values_zeros.cc:57::  not found.\n$ ../include/Lvalue.h:37: warning: unused variable 'f2'\nsh: ../include/Lvalue.h:37::  not found.\n$ In file included from ../include/L.h:37,\n./include/Lfind_zeros.h: In member function 'Double L_function<ttype>::zeros_zoom_brent(Double, Double, Double, Double) [with ttype = std::complex<double>]':\n../include/Lfind_zeros.h:31: warning: 'd' may be used uninitialized in this function\n../include/Lfind_zeros.h: In function 'Double L_function<ttype>::zeros_zoom_brent(Double, Double, Double, Double) [with ttype = int]':\n../include/Lfind_zeros.h:31: warning: 'd' may be used uninitialized in this function\n../include/Lfind_zeros.h: In function 'void L_function<ttype>::find_zeros_via_N(Long, bool, Double, int, const char*, const char*) [with ttype = std::complex<double>]':\n../include/Lfind_zeros.h:433: warning: 'tmp2' may be used uninitialized in this function\n../include/Lfind_zeros.h:433: warning: 'tL_function<ttype>::find_zeros_via_N(Long, bool, Double, int, const char*, const char*) [with ttype = double]':\n../include/Lfind_zeros.h:646: warning: 'tmp3' may be used uninitialized in this function\n../include/Lfind_zeros.h:433: warning: 'tmp2' may be used uninitialized in this function\nLgamma.cc: In function 'Complex erfc2(Complex)':\nLgamma.cc:158: warning: unused variable 'n'\n*** Error exit code 1\n\nStop.\nNow copying over lcalc binary\ncp: cannot access lcalc: No such file or directory\n\nreal    1m49.990s\nuser    1m46.620s\nsys     0m1.890s\nsage: An error occurred while installing lcalc-20080205.p3\nsh: In:  not found.\n$                  from ../include/Lcommandline_values_zeros.h:27,\n$                  from Lcommandline_values_zeros.cc:25:\n$ lex, const char*) [with ttype = int]':                                     <\nsh: ../include/Lgamma.h::  not found.\n$ ue_via_gamma_sum(Complex, const char*) [with ttype = int]'                 <\nsh: ../include/Lvalue.h:510::  not found.\n$ ue(Complex, int, const char*) [with ttype = int]'                          <\nsh: ../include/Lvalue.h:590::  not found.\n$ Lcommandline_values_zeros.cc:57:   instantiated from here\nsh: Lcommandline_values_zeros.cc:57::  not found.\n$ ../include/Lgamma.h:622: warning: unused variable 'y'\nsh: ../include/Lgamma.h:622::  not found.\n$ ../include/Lgamma.h:622: warning: unused variable 'y2'\nsh: ../include/Lgamma.h:622::  not found.\n$ ../include/Lgamma.h:622: warning: unused variable 'y3'\nsh: ../include/Lgamma.h:622::  not found.\n$ In file included from ../include/L.h:519,\nsh: In:  not found.\n$                  from ../include/Lcommandline_values_zeros.h:27,\n$                  from Lcommandline_values_zeros.cc:25:\n$ ta(Complex, Double) [with ttype = double]':                                <\nsh: ../include/Lvalue.h::  not found.\n$ ue_via_gamma_sum(Complex, const char*) [with ttype = double]'              <\nsh: ../include/Lvalue.h:501::  not found.\n$ ue(Complex, int, const char*) [with ttype = double]'                       <\nsh: ../include/Lvalue.h:590::  not found.\n$ Lcommandline_values_zeros.cc:64:   instantiated from here\nsh: Lcommandline_values_zeros.cc:64::  not found.\n$ ../include/Lvalue.h:37: warning: unused variable 'f2'\nsh: ../include/Lvalue.h:37::  not found.\n$ In file included from ../include/L.h:37,\nsh: In:  not found.\n$                  from ../include/Lcommandline_values_zeros.h:27,\n$                  from Lcommandline_values_zeros.cc:25:\n$ lex, const char*) [with ttype = double]':                                  <\nsh: ../include/Lgamma.h::  not found.\n$ ue_via_gamma_sum(Complex, const char*) [with ttype = double]'              <\nsh: ../include/Lvalue.h:510::  not found.\n$ ue(Complex, int, const char*) [with ttype = double]'                       <\nsh: ../include/Lvalue.h:590::  not found.\n$ Lcommandline_values_zeros.cc:64:   instantiated from here\nsh: Lcommandline_values_zeros.cc:64::  not found.\n$ ../include/Lgamma.h:622: warning: unused variable 'y'\nsh: ../include/Lgamma.h:622::  not found.\n$ ../include/Lgamma.h:622: warning: unused variable 'y2'\nsh: ../include/Lgamma.h:622::  not found.\n$ ../include/Lgamma.h:622: warning: unused variable 'y3'\nsh: ../include/Lgamma.h:622::  not found.\n$ In file included from ../include/L.h:519,\nsh: In:  not found.\n$                  from ../include/Lcommandline_values_zeros.h:27,\n$                  from Lcommandline_values_zeros.cc:25:\n$ ta(Complex, Double) [with ttype = std::complex<double>]':                  <\nsh: ../include/Lvalue.h::  not found.\n$ ue_via_gamma_sum(Complex, const char*) [with ttype = std::complex<double>]'<\nsh: ../include/Lvalue.h:501::  not found.\n$ ue(Complex, int, const char*) [with ttype = std::complex<double>]'         <\nsh: ../include/Lvalue.h:590::  not found.\n$ Lcommandline_values_zeros.cc:68:   instantiated from here\nsh: Lcommandline_values_zeros.cc:68::  not found.\n$ ../include/Lvalue.h:37: warning: unused variable 'f2'\nsh: ../include/Lvalue.h:37::  not found.\n$ In file included from ../include/L.h:37,\nsh: In:  not found.\n$                  from ../include/Lcommandline_values_zeros.h:27,\n$                  from Lcommandline_values_zeros.cc:25:\n$ lex, const char*) [with ttype = std::complex<double>]':                    <\nsh: ../include/Lgamma.h::  not found.\n$ ue_via_gamma_sum(Complex, const char*) [with ttype = std::complex<double>]'<\nsh: ../include/Lvalue.h:510::  not found.\n$ ue(Complex, int, const char*) [with ttype = std::complex<double>]'         <\nsh: ../include/Lvalue.h:590::  not found.\n$ Lcommandline_values_zeros.cc:68:   instantiated from here\nsh: Lcommandline_values_zeros.cc:68::  not found.\n$ ../include/Lgamma.h:622: warning: unused variable 'y'\nsh: ../include/Lgamma.h:622::  not found.\n$ ../include/Lgamma.h:622: warning: unused variable 'y2'\nsh: ../include/Lgamma.h:622::  not found.\n$ ../include/Lgamma.h:622: warning: unused variable 'y3'\nsh: ../include/Lgamma.h:622::  not found.\n$ a_Riemann_sum(Complex, const char*) [with ttype = double]':                <\nsh: ../include/Lvalue.h::  not found.\n$ ../include/Lvalue.h:473: warning: control reaches end of non-void function\nsh: ../include/Lvalue.h:473::  not found.\n$ a_Riemann_sum(Complex, const char*) [with ttype = std::complex<double>]':  <\nsh: ../include/Lvalue.h::  not found.\n$ ../include/Lvalue.h:473: warning: control reaches end of non-void function\nsh: ../include/Lvalue.h:473::  not found.\n$ a_Riemann_sum(Complex, const char*) [with ttype = int]':                   <\nsh: ../include/Lvalue.h::  not found.\n$ ../include/Lvalue.h:473: warning: control reaches end of non-void function\nsh: ../include/Lvalue.h:473::  not found.\n$ In file included from ../include/L.h:520,\nsh: In:  not found.\n$                  from ../include/Lcommandline_values_zeros.h:27,\n$                  from Lcommandline_values_zeros.cc:25:\n$ s_zoom_brent(Double, Double, Double, Double) [with ttype = double]':       <\nsh: ../include/Lfind_zeros.h::  not found.\n$ 'd' may be used uninitialized in this function                             <\nsh: ../include/Lfind_zeros.h:31::  not found.\n$ ouble) [with ttype = std::complex<double>]':                               <\nsh: ../include/Lfind_zeros.h::  not found.\n$ 'd' may be used uninitialized in this function                             <\nsh: ../include/Lfind_zeros.h:31::  not found.\n$ brent(Double, Double, Double, Double) [with ttype = int]':                 <\nsh: ../include/Lfind_zeros.h::  not found.\n$ 'd' may be used uninitialized in this function                             <\nsh: ../include/Lfind_zeros.h:31::  not found.\n$ r*, const char*) [with ttype = std::complex<double>]':                     <\nsh: ../include/Lfind_zeros.h::  not found.\n$  'tmp2' may be used uninitialized in this function                         <\nsh: ../include/Lfind_zeros.h:433::  not found.\n$  'tmp3' may be used uninitialized in this function                         <\nsh: ../include/Lfind_zeros.h:433::  not found.\n$  'x3' may be used uninitialized in this function                           <\nsh: ../include/Lfind_zeros.h:434::  not found.\n$  'x3_c' may be used uninitialized in this function                         <\nsh: ../include/Lfind_zeros.h:434::  not found.\n$  'u3' may be used uninitialized in this function                           <\nsh: ../include/Lfind_zeros.h:434::  not found.\n$ a_N(Long, bool, Double, int, const char*, const char*) [with ttype = int]':<\nsh: ../include/Lfind_zeros.h::  not found.\n$  'tmp3' may be used uninitialized in this function                         <\nsh: ../include/Lfind_zeros.h:646::  not found.\n$  'tmp2' may be used uninitialized in this function                         <\nsh: ../include/Lfind_zeros.h:433::  not found.\n$ r*, const char*) [with ttype = double]':                                   <\nsh: ../include/Lfind_zeros.h::  not found.\n$  'tmp3' may be used uninitialized in this function                         <\nsh: ../include/Lfind_zeros.h:646::  not found.\n$  'tmp2' may be used uninitialized in this function                         <\nsh: ../include/Lfind_zeros.h:433::  not found.\n$ Lgamma.cc: In function 'Complex erfc2(Complex)':\nsh: Lgamma.cc::  not found.\n$ Lgamma.cc:158: warning: unused variable 'n'\nsh: Lgamma.cc:158::  not found.\n$ *** Error exit code 1\nsh: 2016698240: Execute permission denied.\n$\n$ Stop.\nsh: Stop.:  not found.\n$ Now copying over lcalc binary\nsh: Now:  not found.\n$ cp: cannot access lcalc: No such file or directory\nsh: cp::  not found.\n$\n$ real    1m49.990s\nsh: real:  not found.\n$ user    1m46.620s\nsh: user:  not found.\n$ sys     0m1.890s\nsh: sys:  not found.\n$ sage: An error occurred while installing lcalc-20080205.p3\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7178\n\n",
+    "created_at": "2009-10-10T09:06:02Z",
+    "labels": [
+        "build",
+        "major",
+        "bug"
+    ],
+    "title": "HP-UX  lcalc does not build. Also fails on Solaris with Sun compiler",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7178",
+    "user": "drkirkby"
+}
+```
 Assignee: tbd
 
 CC:  chapoton
@@ -225,37 +235,96 @@ $ sage: An error occurred while installing lcalc-20080205.p3
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7178
+
+
+
+
 
 ---
 
-Comment by jdemeyer created at 2015-09-08 12:45:40
+archive/issue_comments_059461.json:
+```json
+{
+    "body": "Changing component from build to porting: AIX or HP-UX.",
+    "created_at": "2015-09-08T12:45:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7178",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7178#issuecomment-59461",
+    "user": "jdemeyer"
+}
+```
 
 Changing component from build to porting: AIX or HP-UX.
 
 
+
 ---
 
-Comment by embray created at 2019-01-15 18:39:07
+archive/issue_comments_059462.json:
+```json
+{
+    "body": "I don't believe anyone's been maintaining support for AIX or HP-UX for some time.  Putting in sage-wishlist for now in case there is still a desire for it out there, otherwise these tickets should be closed (most of them are probably no longer relevant in any case but I have no obvious way to check this).",
+    "created_at": "2019-01-15T18:39:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7178",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7178#issuecomment-59462",
+    "user": "embray"
+}
+```
 
 I don't believe anyone's been maintaining support for AIX or HP-UX for some time.  Putting in sage-wishlist for now in case there is still a desire for it out there, otherwise these tickets should be closed (most of them are probably no longer relevant in any case but I have no obvious way to check this).
 
 
+
 ---
 
-Comment by mkoeppe created at 2020-06-23 21:26:55
+archive/issue_comments_059463.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2020-06-23T21:26:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7178",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7178#issuecomment-59463",
+    "user": "mkoeppe"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mkoeppe created at 2020-06-23 21:26:55
+archive/issue_comments_059464.json:
+```json
+{
+    "body": "We should close this ticket as outdated.",
+    "created_at": "2020-06-23T21:26:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7178",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7178#issuecomment-59464",
+    "user": "mkoeppe"
+}
+```
 
 We should close this ticket as outdated.
 
 
+
 ---
 
-Comment by chapoton created at 2020-06-24 06:27:55
+archive/issue_comments_059465.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2020-06-24T06:27:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7178",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7178#issuecomment-59465",
+    "user": "chapoton"
+}
+```
 
 Resolution: invalid

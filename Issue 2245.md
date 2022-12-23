@@ -1,11 +1,21 @@
 # Issue 2245: abvar -- increase the doctest coverage to 100%
 
-Issue created by migration from https://trac.sagemath.org/ticket/2245
-
-Original creator: was
-
-Original creation time: 2008-02-21 07:31:34
-
+archive/issues_002245.json:
+```json
+{
+    "body": "Assignee: was\n\nThe doctest coverage for devel/sage/sage/modular/abvar is as follows:\n\n```\nteragon:abvar was$ sage -coverage .\nabvar.py: 62% (20 of 32)\nabvar_ambient_jacobian.py: 28% (2 of 7)\nabvar_modsym_factor.py: 60% (3 of 5)\nabvar_newform.py: 0% (0 of 1)\nconstructor.py: 100% (3 of 3)\ncuspidal_subgroup.py: 16% (1 of 6)\nfinite_subgroup.py: 12% (4 of 33)\nhecke_operator.py: 66% (4 of 6)\nhomology.py: 57% (16 of 28)\nhomspace.py: 0% (0 of 2)\nlseries.py: 0% (0 of 6)\nmorphism.py: 0% (0 of 2)\ntorsion_point.py: 0% (0 of 2)\ntorsion_subgroup.py: 37% (3 of 8)\n\nOverall weighted coverage score:  39.4%\nTotal number of functions:  141\n```\n\n\nThe goal of this ticket is to change that to 100%.\n\nThis is in preparation for substantial work to move\nthe modular abelian varieties package forward in preparation\nfor lots of enhancements to it that are coming up. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2245\n\n",
+    "created_at": "2008-02-21T07:31:34Z",
+    "labels": [
+        "number theory",
+        "major",
+        "enhancement"
+    ],
+    "title": "abvar -- increase the doctest coverage to 100%",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2245",
+    "user": "was"
+}
+```
 Assignee: was
 
 The doctest coverage for devel/sage/sage/modular/abvar is as follows:
@@ -38,10 +48,25 @@ This is in preparation for substantial work to move
 the modular abelian varieties package forward in preparation
 for lots of enhancements to it that are coming up. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2245
+
+
+
+
 
 ---
 
-Comment by was created at 2008-02-25 05:45:14
+archive/issue_comments_014882.json:
+```json
+{
+    "body": "After:\n\n```\nteragon:abvar was$ sage -coverage .\nabvar.py: 100% (38 of 38)\nabvar_ambient_jacobian.py: 100% (8 of 8)\nabvar_modsym_factor.py: 100% (7 of 7)\nabvar_newform.py: 100% (3 of 3)\nconstructor.py: 100% (3 of 3)\ncuspidal_subgroup.py: 100% (6 of 6)\nfinite_subgroup.py: 100% (33 of 33)\nhecke_operator.py: 100% (6 of 6)\nhomology.py: 100% (30 of 30)\nhomspace.py: 100% (2 of 2)\nlseries.py: 100% (11 of 11)\nmorphism.py: 100% (1 of 1)\ntorsion_subgroup.py: 100% (8 of 8)\n\nOverall weighted coverage score:  100.0%\nTotal number of functions:  156\n```\n",
+    "created_at": "2008-02-25T05:45:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2245",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2245#issuecomment-14882",
+    "user": "was"
+}
+```
 
 After:
 
@@ -67,59 +92,153 @@ Total number of functions:  156
 
 
 
+
 ---
+
+archive/issue_comments_014883.json:
+```json
+{
+    "body": "Attachment\n\nthis is the whole thing flattened and rebased against sage-2.10.3.alpha0",
+    "created_at": "2008-02-26T23:11:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2245",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2245#issuecomment-14883",
+    "user": "was"
+}
+```
 
 Attachment
 
 this is the whole thing flattened and rebased against sage-2.10.3.alpha0
 
 
+
 ---
 
-Comment by craigcitro created at 2008-03-03 06:14:49
+archive/issue_comments_014884.json:
+```json
+{
+    "body": "Looks great. I went through and edited a few things here and there, mostly correcting typos and over-long lines. \n\nThere's one thing that still bothers me, though: given a modular abelian variety `A`, one uses `A.lseries()` and `A.padic_lseries(5)` to get the complex and p-adic L-series, which is totally reasonable. However, for an elliptic curve `E`, it's `E.Lseries()` and `E.padic_lseries(5)` -- I don't like that one of the four is uppercase, while the other three are lowercase. I think we should make everything consistent, and I personally prefer lowercase. If someone else (e.g. William) agrees, I'll go ahead and make another patch to correct that.",
+    "created_at": "2008-03-03T06:14:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2245",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2245#issuecomment-14884",
+    "user": "craigcitro"
+}
+```
 
 Looks great. I went through and edited a few things here and there, mostly correcting typos and over-long lines. 
 
 There's one thing that still bothers me, though: given a modular abelian variety `A`, one uses `A.lseries()` and `A.padic_lseries(5)` to get the complex and p-adic L-series, which is totally reasonable. However, for an elliptic curve `E`, it's `E.Lseries()` and `E.padic_lseries(5)` -- I don't like that one of the four is uppercase, while the other three are lowercase. I think we should make everything consistent, and I personally prefer lowercase. If someone else (e.g. William) agrees, I'll go ahead and make another patch to correct that.
 
 
+
 ---
+
+archive/issue_comments_014885.json:
+```json
+{
+    "body": "Attachment\n\nminor typo corrections; apply after william's patch above",
+    "created_at": "2008-03-03T06:15:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2245",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2245#issuecomment-14885",
+    "user": "craigcitro"
+}
+```
 
 Attachment
 
 minor typo corrections; apply after william's patch above
 
 
+
 ---
 
-Comment by was created at 2008-03-03 07:00:34
+archive/issue_comments_014886.json:
+```json
+{
+    "body": "Good job fixing up my patch.  I just looked over your touch ups.  Very nice.",
+    "created_at": "2008-03-03T07:00:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2245",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2245#issuecomment-14886",
+    "user": "was"
+}
+```
 
 Good job fixing up my patch.  I just looked over your touch ups.  Very nice.
 
 
+
 ---
+
+archive/issue_comments_014887.json:
+```json
+{
+    "body": "Attachment\n\napply this third",
+    "created_at": "2008-03-03T07:27:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2245",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2245#issuecomment-14887",
+    "user": "craigcitro"
+}
+```
 
 Attachment
 
 apply this third
 
 
+
 ---
 
-Comment by craigcitro created at 2008-03-03 07:27:58
+archive/issue_comments_014888.json:
+```json
+{
+    "body": "Added a patch to change `Lseries` to `lseries` throughout Sage. Apply after the above patches.",
+    "created_at": "2008-03-03T07:27:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2245",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2245#issuecomment-14888",
+    "user": "craigcitro"
+}
+```
 
 Added a patch to change `Lseries` to `lseries` throughout Sage. Apply after the above patches.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-03 12:56:23
+archive/issue_comments_014889.json:
+```json
+{
+    "body": "Merged all three patches in Sage 2.10.3.rc1",
+    "created_at": "2008-03-03T12:56:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2245",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2245#issuecomment-14889",
+    "user": "mabshoff"
+}
+```
 
 Merged all three patches in Sage 2.10.3.rc1
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-03 12:56:23
+archive/issue_comments_014890.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-03-03T12:56:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2245",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2245#issuecomment-14890",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

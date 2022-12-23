@@ -1,18 +1,43 @@
 # Issue 9072: implement chdir for matlab interface
 
+archive/issues_009072.json:
+```json
+{
+    "body": "Assignee: mhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9072\n\n",
+    "created_at": "2010-05-28T00:42:23Z",
+    "labels": [
+        "interfaces",
+        "critical",
+        "enhancement"
+    ],
+    "title": "implement chdir for matlab interface",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9072",
+    "user": "was"
+}
+```
+Assignee: mhansen
+
+
+
 Issue created by migration from https://trac.sagemath.org/ticket/9072
 
-Original creator: was
-
-Original creation time: 2010-05-28 00:42:23
-
-Assignee: mhansen
 
 
 
 
 ---
 
-Comment by mhansen created at 2010-05-28 00:52:53
+archive/issue_comments_084175.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2010-05-28T00:52:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9072",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9072#issuecomment-84175",
+    "user": "mhansen"
+}
+```
 
 Resolution: duplicate

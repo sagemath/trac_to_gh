@@ -1,11 +1,21 @@
 # Issue 3306: [with patch; needs review] shared library for symmetrica
 
-Issue created by migration from https://trac.sagemath.org/ticket/3306
-
-Original creator: tabbott
-
-Original creation time: 2008-05-26 03:46:45
-
+archive/issues_003306.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nCC:  fbissey\n\nI've attached a patch that completely replaces the minimal symmetrica makefile with a much more standard version.  It includes a shared library with a soname (the symmetrica version number must be maintained in the package; currently its a variable in the makefile) and adds normal targets like clean, install, etc.\n\nThis probably needs to be fixed to do shared libraries correctly for non-linux; I'm not sure exactly how that is supposed to work.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3306\n\n",
+    "created_at": "2008-05-26T03:46:45Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch; needs review] shared library for symmetrica",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3306",
+    "user": "tabbott"
+}
+```
 Assignee: mabshoff
 
 CC:  fbissey
@@ -14,8 +24,25 @@ I've attached a patch that completely replaces the minimal symmetrica makefile w
 
 This probably needs to be fixed to do shared libraries correctly for non-linux; I'm not sure exactly how that is supposed to work.
 
+Issue created by migration from https://trac.sagemath.org/ticket/3306
+
+
+
+
 
 ---
+
+archive/issue_comments_022865.json:
+```json
+{
+    "body": "Attachment\n\nThe only problem I see here is that \"install\" is generally not guaranteed to be available, i.e. on Solaris it is commonly called ginstall. I will fix this, but other than that positive review. I am also not quite sure if the Solaris ld can handle this as is, but as I am porting Sage to use the Sun Forte compiler suite I will fix those issues anyway.\n\nCheers,\n\nMichael",
+    "created_at": "2008-05-26T03:54:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3306",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3306#issuecomment-22865",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -26,9 +53,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by fbissey created at 2008-05-26 04:29:43
+archive/issue_comments_022866.json:
+```json
+{
+    "body": "Actually on linux (and probably other unix variants) it seems we\nshould use the \"-Dunix\" flag as well. Mind you after a quick grep\nthrough the source only the file de.c make use of that directive.\nIt also has a MSDOS option there may have been a windows variant\nat some point but I cannot find traces of it on the symmetrica\nweb site.",
+    "created_at": "2008-05-26T04:29:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3306",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3306#issuecomment-22866",
+    "user": "fbissey"
+}
+```
 
 Actually on linux (and probably other unix variants) it seems we
 should use the "-Dunix" flag as well. Mind you after a quick grep
@@ -38,9 +76,20 @@ at some point but I cannot find traces of it on the symmetrica
 web site.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-29 14:54:17
+archive/issue_comments_022867.json:
+```json
+{
+    "body": "I am still sitting here pondering whether to apply this patch or not. One issue is that on non-Linux I would need also need to add support for dynamic libraries. But that could be done later, so I will give this another spin and see if it works at least on OSX.\n\nCheers,\n\nMichael",
+    "created_at": "2008-05-29T14:54:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3306",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3306#issuecomment-22867",
+    "user": "mabshoff"
+}
+```
 
 I am still sitting here pondering whether to apply this patch or not. One issue is that on non-Linux I would need also need to add support for dynamic libraries. But that could be done later, so I will give this another spin and see if it works at least on OSX.
 
@@ -49,9 +98,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-29 15:05:36
+archive/issue_comments_022868.json:
+```json
+{
+    "body": "Ok, after looking at this some more I decided that this needs fixing for OSX, Solaris and Cygwin, so I am not applying it as is.\n\nSorry Tim, but I do not have time right now to fix this properly. Hopefully in the next couple days.\n\nCheers,\n\nMichael",
+    "created_at": "2008-05-29T15:05:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3306",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3306#issuecomment-22868",
+    "user": "mabshoff"
+}
+```
 
 Ok, after looking at this some more I decided that this needs fixing for OSX, Solaris and Cygwin, so I am not applying it as is.
 
@@ -62,9 +122,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-29 15:11:37
+archive/issue_comments_022869.json:
+```json
+{
+    "body": "Sorry for the noise: It would obviously be good for the Debianization project of Sage if this patch were applied. So I would propose that you post a patch that does not touch spkg-install and also does not change the makefile in patches/makefile, i.e. leaves the Sage build as is and moves those changes to the Debian makefile patch. Later on when things are sorted out on other platforms we can then unify the two approaches.\n\nAny such patch would be applied more or less immediately. \n\nCheers,\n\nMichael",
+    "created_at": "2008-05-29T15:11:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3306",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3306#issuecomment-22869",
+    "user": "mabshoff"
+}
+```
 
 Sorry for the noise: It would obviously be good for the Debianization project of Sage if this patch were applied. So I would propose that you post a patch that does not touch spkg-install and also does not change the makefile in patches/makefile, i.e. leaves the Sage build as is and moves those changes to the Debian makefile patch. Later on when things are sorted out on other platforms we can then unify the two approaches.
 
@@ -75,53 +146,130 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by craigcitro created at 2008-06-20 04:57:35
+archive/issue_comments_022870.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"editor_mabshoff\".",
+    "created_at": "2008-06-20T04:57:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3306",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3306#issuecomment-22870",
+    "user": "craigcitro"
+}
+```
 
 Changing keywords from "" to "editor_mabshoff".
 
 
+
 ---
 
-Comment by drkirkby created at 2009-12-16 22:22:43
+archive/issue_comments_022871.json:
+```json
+{
+    "body": "Note HP-UX uses .sl for shared libaries, not .so, so I would not hard-code .so anywhere. \n\nDave",
+    "created_at": "2009-12-16T22:22:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3306",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3306#issuecomment-22871",
+    "user": "drkirkby"
+}
+```
 
 Note HP-UX uses .sl for shared libaries, not .so, so I would not hard-code .so anywhere. 
 
 Dave
 
 
+
 ---
 
-Comment by fbissey created at 2011-05-01 23:58:43
+archive/issue_comments_022872.json:
+```json
+{
+    "body": "I think we should close bugs that are related to debianization of sage. The content of\nthis bug as been obsoloted by later work in any case. I suspect it may have been merged too without being closed.",
+    "created_at": "2011-05-01T23:58:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3306",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3306#issuecomment-22872",
+    "user": "fbissey"
+}
+```
 
 I think we should close bugs that are related to debianization of sage. The content of
 this bug as been obsoloted by later work in any case. I suspect it may have been merged too without being closed.
 
 
+
 ---
 
-Comment by fbissey created at 2012-03-10 19:13:14
+archive/issue_comments_022873.json:
+```json
+{
+    "body": "As mentioned in a previous this is obsolete. Let's close it.",
+    "created_at": "2012-03-10T19:13:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3306",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3306#issuecomment-22873",
+    "user": "fbissey"
+}
+```
 
 As mentioned in a previous this is obsolete. Let's close it.
 
 
+
 ---
 
-Comment by fbissey created at 2012-03-10 19:13:14
+archive/issue_comments_022874.json:
+```json
+{
+    "body": "Changing status from needs_work to positive_review.",
+    "created_at": "2012-03-10T19:13:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3306",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3306#issuecomment-22874",
+    "user": "fbissey"
+}
+```
 
 Changing status from needs_work to positive_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-03-11 15:39:17
+archive/issue_comments_022875.json:
+```json
+{
+    "body": "Changing keywords from \"editor_mabshoff\" to \"\".",
+    "created_at": "2012-03-11T15:39:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3306",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3306#issuecomment-22875",
+    "user": "jdemeyer"
+}
+```
 
 Changing keywords from "editor_mabshoff" to "".
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-03-16 10:53:32
+archive/issue_comments_022876.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2012-03-16T10:53:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3306",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3306#issuecomment-22876",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: invalid

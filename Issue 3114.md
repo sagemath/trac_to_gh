@@ -1,11 +1,21 @@
 # Issue 3114: blacklist  gcc version 4.0.0 on OSX
 
-Issue created by migration from https://trac.sagemath.org/ticket/3114
-
-Original creator: mabshoff
-
-Original creation time: 2008-05-06 22:06:10
-
+archive/issues_003114.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nAny gcc 4.0.0 provided by Apple is buggier than a Florida swamp. Refuse to build Sage with it at start up!\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3114\n\n",
+    "created_at": "2008-05-06T22:06:10Z",
+    "labels": [
+        "build",
+        "blocker",
+        "bug"
+    ],
+    "title": "blacklist  gcc version 4.0.0 on OSX",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3114",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 Any gcc 4.0.0 provided by Apple is buggier than a Florida swamp. Refuse to build Sage with it at start up!
@@ -14,23 +24,60 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/3114
+
+
+
+
 
 ---
 
-Comment by was created at 2009-06-15 23:19:02
+archive/issue_comments_021563.json:
+```json
+{
+    "body": "Changing priority from blocker to major.",
+    "created_at": "2009-06-15T23:19:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3114",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3114#issuecomment-21563",
+    "user": "was"
+}
+```
 
 Changing priority from blocker to major.
 
 
+
 ---
 
-Comment by wjp created at 2010-01-17 06:32:54
+archive/issue_comments_021564.json:
+```json
+{
+    "body": "`prereq` currently checks for gcc >= 4.0.1, so this has already been taken care of.",
+    "created_at": "2010-01-17T06:32:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3114",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3114#issuecomment-21564",
+    "user": "wjp"
+}
+```
 
 `prereq` currently checks for gcc >= 4.0.1, so this has already been taken care of.
 
 
+
 ---
 
-Comment by wjp created at 2010-01-17 06:32:54
+archive/issue_comments_021565.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-17T06:32:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3114",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3114#issuecomment-21565",
+    "user": "wjp"
+}
+```
 
 Resolution: fixed

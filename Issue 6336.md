@@ -1,11 +1,21 @@
 # Issue 6336: optional doctest failure -- constructions calculus tests hang forever
 
-Issue created by migration from https://trac.sagemath.org/ticket/6336
-
-Original creator: was
-
-Original creation time: 2009-06-16 15:20:05
-
+archive/issues_006336.json:
+```json
+{
+    "body": "Assignee: tbd\n\n\n```\n\t [32.9 s]\nsage -t -long --optional devel/sage/doc/en/constructions/calculus.rst\n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\nxprop:  unable to open display ''\nError: no \"view\" rule for type \"application/x-dvi\" passed its test case\n       (for more information, add \"--debug=1\" on the command line)\nxprop:  unable to open display ''\nError: no \"view\" rule for type \"application/x-dvi\" passed its test case\n       (for more information, add \"--debug=1\" on the command line)\n*** *** Error: TIMED OUT! *** ***\n\t [1800.1 s]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6336\n\n",
+    "created_at": "2009-06-16T15:20:05Z",
+    "labels": [
+        "packages: optional",
+        "major",
+        "bug"
+    ],
+    "title": "optional doctest failure -- constructions calculus tests hang forever",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6336",
+    "user": "was"
+}
+```
 Assignee: tbd
 
 
@@ -25,15 +35,43 @@ Error: no "view" rule for type "application/x-dvi" passed its test case
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6336
+
+
+
+
 
 ---
+
+archive/issue_comments_050570.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-06-16T18:47:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6336",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6336#issuecomment-50570",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-06-16 19:11:05
+archive/issue_comments_050571.json:
+```json
+{
+    "body": "Here's a patch.  This seems to fix this bug, but exposes another optional doctest failure (related to octave, I think): on sage.math, before the patch, I see the error message printed above.  After the patch, I don't, although I see this:\n\n```\nsage -t -optional \"devel/sage/doc/en/constructions/calculus.rst\"\n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\n*** *** Error: TIMED OUT! *** ***\n\t [360.1 s]\n```\n\nSo this patch is a partial fix.  Any takers for the octave timeout?",
+    "created_at": "2009-06-16T19:11:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6336",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6336#issuecomment-50571",
+    "user": "jhpalmieri"
+}
+```
 
 Here's a patch.  This seems to fix this bug, but exposes another optional doctest failure (related to octave, I think): on sage.math, before the patch, I see the error message printed above.  After the patch, I don't, although I see this:
 
@@ -48,15 +86,37 @@ sage -t -optional "devel/sage/doc/en/constructions/calculus.rst"
 So this patch is a partial fix.  Any takers for the octave timeout?
 
 
+
 ---
 
-Comment by wdj created at 2009-06-16 22:59:55
+archive/issue_comments_050572.json:
+```json
+{
+    "body": "Patch applies fine to 4.0.2.rc1 and passes sage -tp 1 SAGE_ROOT/devel/sage/doc/en/constructions/. Also the builds sage -docbuild constructions html (resp., pdf) went fine.",
+    "created_at": "2009-06-16T22:59:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6336",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6336#issuecomment-50572",
+    "user": "wdj"
+}
+```
 
 Patch applies fine to 4.0.2.rc1 and passes sage -tp 1 SAGE_ROOT/devel/sage/doc/en/constructions/. Also the builds sage -docbuild constructions html (resp., pdf) went fine.
 
 
+
 ---
 
-Comment by rlm created at 2009-06-24 10:01:54
+archive/issue_comments_050573.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-06-24T10:01:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6336",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6336#issuecomment-50573",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed

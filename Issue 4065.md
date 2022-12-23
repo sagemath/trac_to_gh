@@ -1,11 +1,21 @@
 # Issue 4065: plot3d takes "forever" to plot x^2*y
 
-Issue created by migration from https://trac.sagemath.org/ticket/4065
-
-Original creator: jwmerrill
-
-Original creation time: 2008-09-05 01:20:27
-
+archive/issues_004065.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  jason\n\n\n```\nsage: var('y')\nsage: plot3d(x^2*y,(-1,1),(-1,1))\n```\n\n\nThis takes for ever, even when run as the first command after restarting a notebook.  On the other hand, it takes about 1 second to do\n\n\n```\nsage: var('y')\nsage: plot3d(sin(sin(x) + y^2),(-1,1),(-1,1))\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4065\n\n",
+    "created_at": "2008-09-05T01:20:27Z",
+    "labels": [
+        "graphics",
+        "major",
+        "bug"
+    ],
+    "title": "plot3d takes \"forever\" to plot x^2*y",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4065",
+    "user": "jwmerrill"
+}
+```
 Assignee: was
 
 CC:  jason
@@ -26,24 +36,61 @@ sage: plot3d(sin(sin(x) + y^2),(-1,1),(-1,1))
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4065
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2008-09-05 16:42:43
+archive/issue_comments_029331.json:
+```json
+{
+    "body": "What version of Sage are you running?",
+    "created_at": "2008-09-05T16:42:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4065",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4065#issuecomment-29331",
+    "user": "mhansen"
+}
+```
 
 What version of Sage are you running?
 
 
+
 ---
 
-Comment by jwmerrill created at 2008-09-05 17:03:23
+archive/issue_comments_029332.json:
+```json
+{
+    "body": "3.1.2.alpha2",
+    "created_at": "2008-09-05T17:03:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4065",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4065#issuecomment-29332",
+    "user": "jwmerrill"
+}
+```
 
 3.1.2.alpha2
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-09 04:56:18
+archive/issue_comments_029333.json:
+```json
+{
+    "body": "Yep, this computation still calls Maxima. Any idea why _fast_float is not used?\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-09T04:56:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4065",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4065#issuecomment-29333",
+    "user": "mabshoff"
+}
+```
 
 Yep, this computation still calls Maxima. Any idea why _fast_float is not used?
 
@@ -52,16 +99,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mhansen created at 2008-09-09 05:07:30
+archive/issue_comments_029334.json:
+```json
+{
+    "body": "I can't duplicate this on 3.1.2.rc0.",
+    "created_at": "2008-09-09T05:07:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4065",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4065#issuecomment-29334",
+    "user": "mhansen"
+}
+```
 
 I can't duplicate this on 3.1.2.rc0.
 
 
+
 ---
 
-Comment by mhansen created at 2008-09-09 05:08:10
+archive/issue_comments_029335.json:
+```json
+{
+    "body": "On bsd\n\n\n```\nsage: var('y')\ny\nsage: %time p = plot3d(x^2*y,(-1,1),(-1,1))\nCPU times: user 0.16 s, sys: 0.08 s, total: 0.24 s\nWall time: 0.78 s\nsage: %time p = plot3d(x^2*y,(-1,1),(-1,1))\nCPU times: user 0.14 s, sys: 0.06 s, total: 0.21 s\nWall time: 0.44 s\nsage: %time p = plot3d(x^2*y,(-1,1),(-1,1))\nCPU times: user 0.15 s, sys: 0.07 s, total: 0.22 s\nWall time: 0.48 s\n```\n",
+    "created_at": "2008-09-09T05:08:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4065",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4065#issuecomment-29335",
+    "user": "mhansen"
+}
+```
 
 On bsd
 
@@ -82,9 +151,20 @@ Wall time: 0.48 s
 
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-09 05:21:14
+archive/issue_comments_029336.json:
+```json
+{
+    "body": "This is very strange to say the least:\n\n```\nsage: time p=plot3d(sin(sin(x) + y^2),(-1,1),(-1,1))\nCPU times: user 0.34 s, sys: 0.08 s, total: 0.42 s\nWall time: 3.07 s\nsage: %time p = plot3d(x^2*y,(-1,1),(-1,1))\nCPU times: user 0.16 s, sys: 0.06 s, total: 0.22 s\nWall time: 1.61 s\n```\n\nI must have started an old Sage. If someone can reproduce this with Sage 3.1.2.rc0 or later please give detailed information how to reproduce this. Fixed.\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-09T05:21:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4065",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4065#issuecomment-29336",
+    "user": "mabshoff"
+}
+```
 
 This is very strange to say the least:
 
@@ -104,23 +184,56 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-09 05:21:14
+archive/issue_comments_029337.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-09-09T05:21:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4065",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4065#issuecomment-29337",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by jwmerrill created at 2008-09-09 20:04:37
+archive/issue_comments_029338.json:
+```json
+{
+    "body": "Resolution changed from fixed to ",
+    "created_at": "2008-09-09T20:04:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4065",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4065#issuecomment-29338",
+    "user": "jwmerrill"
+}
+```
 
 Resolution changed from fixed to 
 
 
+
 ---
 
-Comment by jwmerrill created at 2008-09-09 20:04:37
+archive/issue_comments_029339.json:
+```json
+{
+    "body": "I just reproduced this problem on a freshly built 3.1.2.rc1, on OS X 10.5.4 intel macbook.  All I did was start sage in the terminal:\n\n\n```\nsage: version()\n'SAGE Version 3.1.2.rc1, Release Date: 2008-09-08'\nsage: var('y')\ny\nsage: plot3d(x^2*y,(-1,1),(-1,1))\n```\n\n\nThis is still going 5 minutes later.  There is a process called lisp.run eating up about 90% of my processor power, with memory usage steady around 17 MB.  The same thing happens in the notebook.  Pressinc ctrl-c gives\n\n\n```\nControl-C pressed.  Interrupting Maxima. Please wait a few seconds...\n```\n\n\nWhich also seems to persist indefinitely.  I eventually killed things by closing the terminal window.\n\nHere's something else that takes virtually no time to run:\n\n\n```\nsage: plot3d(x^2*y,(x,-1,1),(y,-1,1))\n```\n\n\nBut these commands also run indefinitely\n\n\n```\nsage: plot3d(x + y,(-1,1),(-1,1))\nsage: plot3d(y*x,(-1,1),(-1,1))\n```\n",
+    "created_at": "2008-09-09T20:04:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4065",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4065#issuecomment-29339",
+    "user": "jwmerrill"
+}
+```
 
 I just reproduced this problem on a freshly built 3.1.2.rc1, on OS X 10.5.4 intel macbook.  All I did was start sage in the terminal:
 
@@ -162,37 +275,92 @@ sage: plot3d(y*x,(-1,1),(-1,1))
 
 
 
+
 ---
 
-Comment by jwmerrill created at 2008-09-09 20:04:37
+archive/issue_comments_029340.json:
+```json
+{
+    "body": "Changing status from closed to reopened.",
+    "created_at": "2008-09-09T20:04:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4065",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4065#issuecomment-29340",
+    "user": "jwmerrill"
+}
+```
 
 Changing status from closed to reopened.
 
 
+
 ---
 
-Comment by jwmerrill created at 2008-09-09 20:58:54
+archive/issue_comments_029341.json:
+```json
+{
+    "body": "Changing assignee from was to jwmerrill.",
+    "created_at": "2008-09-09T20:58:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4065",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4065#issuecomment-29341",
+    "user": "jwmerrill"
+}
+```
 
 Changing assignee from was to jwmerrill.
 
 
+
 ---
 
-Comment by jwmerrill created at 2008-09-09 20:58:54
+archive/issue_comments_029342.json:
+```json
+{
+    "body": "Changing status from reopened to new.",
+    "created_at": "2008-09-09T20:58:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4065",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4065#issuecomment-29342",
+    "user": "jwmerrill"
+}
+```
 
 Changing status from reopened to new.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-31 19:30:10
+archive/issue_comments_029343.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2008-10-31T19:30:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4065",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4065#issuecomment-29343",
+    "user": "mabshoff"
+}
+```
 
 Resolution: invalid
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-31 19:30:10
+archive/issue_comments_029344.json:
+```json
+{
+    "body": "The problem here is likely a clisp linked against either the system or a MacPorts/Fink libpng.dylib. Various people have attempted to reproduce this problem and have failed. So I am closing it as invalid since one can no longer build with MacPorts/Fink in $PATH.\n\nCheers,\n\nMichael",
+    "created_at": "2008-10-31T19:30:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4065",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4065#issuecomment-29344",
+    "user": "mabshoff"
+}
+```
 
 The problem here is likely a clisp linked against either the system or a MacPorts/Fink libpng.dylib. Various people have attempted to reproduce this problem and have failed. So I am closing it as invalid since one can no longer build with MacPorts/Fink in $PATH.
 

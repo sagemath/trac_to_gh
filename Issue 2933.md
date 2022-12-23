@@ -1,11 +1,21 @@
 # Issue 2933: calculus -- substitution of a dict for SymbolicFunctionEvaluation is broken (but **kwds works)
 
-Issue created by migration from https://trac.sagemath.org/ticket/2933
-
-Original creator: was
-
-Original creation time: 2008-04-15 15:02:46
-
+archive/issues_002933.json:
+```json
+{
+    "body": "Assignee: was\n\nSubstitution with a dictionary as input is broken.  Notice below in the\nthird input that the dictionary is ignored?!\n\n\n```\nsage: function('f',x)\nf(x)\nsage: (f(x)).substitute(f=log)\nlog(x)\nsage: (f(x)).substitute({f:log})\nf(x)\nsage: type(f(x))\n<class 'sage.calculus.calculus.SymbolicFunctionEvaluation'>\nsage: (x^3 + 1).substitute(x=5)\n126\nsage: (x^3 + 1).substitute({x:5})\n126\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2933\n\n",
+    "created_at": "2008-04-15T15:02:46Z",
+    "labels": [
+        "calculus",
+        "major",
+        "bug"
+    ],
+    "title": "calculus -- substitution of a dict for SymbolicFunctionEvaluation is broken (but **kwds works)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2933",
+    "user": "was"
+}
+```
 Assignee: was
 
 Substitution with a dictionary as input is broken.  Notice below in the
@@ -28,42 +38,114 @@ sage: (x^3 + 1).substitute({x:5})
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2933
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2008-04-15 17:40:47
+archive/issue_comments_020202.json:
+```json
+{
+    "body": "Changing assignee from was to mhansen.",
+    "created_at": "2008-04-15T17:40:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2933",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2933#issuecomment-20202",
+    "user": "mhansen"
+}
+```
 
 Changing assignee from was to mhansen.
 
 
+
 ---
 
-Comment by mhansen created at 2008-04-15 17:40:47
+archive/issue_comments_020203.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-04-15T17:40:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2933",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2933#issuecomment-20203",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
+
+archive/issue_comments_020204.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-04-15T17:40:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2933",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2933#issuecomment-20204",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by ncalexan created at 2008-04-17 05:17:39
+archive/issue_comments_020205.json:
+```json
+{
+    "body": "I find the business with isinstance(str) strange, but it looks right and the doctests assert the correct behaviour.",
+    "created_at": "2008-04-17T05:17:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2933",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2933#issuecomment-20205",
+    "user": "ncalexan"
+}
+```
 
 I find the business with isinstance(str) strange, but it looks right and the doctests assert the correct behaviour.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-17 06:11:01
+archive/issue_comments_020206.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-04-17T06:11:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2933",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2933#issuecomment-20206",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-17 06:11:01
+archive/issue_comments_020207.json:
+```json
+{
+    "body": "Merged in Sage 3.0.alpha6",
+    "created_at": "2008-04-17T06:11:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2933",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2933#issuecomment-20207",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.alpha6

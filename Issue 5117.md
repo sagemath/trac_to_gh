@@ -1,11 +1,21 @@
 # Issue 5117: remove (or enhance an rename) the Polyhedron.union()) method
 
-Issue created by migration from https://trac.sagemath.org/ticket/5117
-
-Original creator: sbarthelemy
-
-Original creation time: 2009-01-28 13:00:55
-
+archive/issues_005117.json:
+```json
+{
+    "body": "Assignee: mhampton\n\nCC:  mhampton vbraun\n\nThe Polyhedron class (in the polyhedra module) has a union method\n\n```\ndef union(self, other):\n    \"\"\"\n    Returns a polyhedron whose vertices are the union of the vertices\n    of the two polyhedra.\n    ....\n```\n\nThe name is misleading as the method does not return the union of `self` and `other` (which would not be a convex polyhedron).\n\nThe method should then be removed or renamed. As the method itself consists in one single line of code (and as I have no idea of a proper name), I would tend to remove it.\n\nThe attached patch removes it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5117\n\n",
+    "created_at": "2009-01-28T13:00:55Z",
+    "labels": [
+        "geometry",
+        "major",
+        "bug"
+    ],
+    "title": "remove (or enhance an rename) the Polyhedron.union()) method",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5117",
+    "user": "sbarthelemy"
+}
+```
 Assignee: mhampton
 
 CC:  mhampton vbraun
@@ -26,15 +36,43 @@ The method should then be removed or renamed. As the method itself consists in o
 
 The attached patch removes it.
 
+Issue created by migration from https://trac.sagemath.org/ticket/5117
+
+
+
+
 
 ---
 
-Comment by sbarthelemy created at 2009-01-28 13:03:06
+archive/issue_comments_039107.json:
+```json
+{
+    "body": "patch that removes the union method",
+    "created_at": "2009-01-28T13:03:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5117",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5117#issuecomment-39107",
+    "user": "sbarthelemy"
+}
+```
 
 patch that removes the union method
 
 
+
 ---
+
+archive/issue_comments_039108.json:
+```json
+{
+    "body": "Attachment\n\nI disagree that this should be removed.  I created it because I use it!\n\nI think the docstring makes it pretty clear what it does, but I do not object to renaming it.  Perhaps union_of_vertices? Or union_by_vertices?\n\nMarshall",
+    "created_at": "2009-01-28T16:01:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5117",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5117#issuecomment-39108",
+    "user": "mhampton"
+}
+```
 
 Attachment
 
@@ -45,9 +83,20 @@ I think the docstring makes it pretty clear what it does, but I do not object to
 Marshall
 
 
+
 ---
 
-Comment by sbarthelemy created at 2009-01-28 16:18:41
+archive/issue_comments_039109.json:
+```json
+{
+    "body": "Replying to [comment:1 mhampton]:\n> I disagree that this should be removed.  I created it because I use it!\n\nusing \n\n```\np = Polyhedron(p1.vertices() + p2.vertices())\n```\n\ninstead of\n\n```\np = p1.union(p2)\n```\n\ndoes not make a big difference ;)\n\n> I think the docstring makes it pretty clear what it does,\nagreed\n\n> but I do not object to renaming it.  Perhaps union_of_vertices? Or union_by_vertices?\n\nwhat about extending ot to handle unbounded polyhedra as well in this way:\n\n```\np = Polyhedron(p1.vertices() + p2.vertices(), p1.rays() + p2.rays())\n```\n\nWe could then name it convex_hull() or something like that?\n\n-- \nSebastien",
+    "created_at": "2009-01-28T16:18:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5117",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5117#issuecomment-39109",
+    "user": "sbarthelemy"
+}
+```
 
 Replying to [comment:1 mhampton]:
 > I disagree that this should be removed.  I created it because I use it!
@@ -83,16 +132,38 @@ We could then name it convex_hull() or something like that?
 Sebastien
 
 
+
 ---
 
-Comment by mhampton created at 2009-01-28 16:36:49
+archive/issue_comments_039110.json:
+```json
+{
+    "body": "Renaming in convex_hull is fine with me.  The extension to rays is a good idea.",
+    "created_at": "2009-01-28T16:36:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5117",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5117#issuecomment-39110",
+    "user": "mhampton"
+}
+```
 
 Renaming in convex_hull is fine with me.  The extension to rays is a good idea.
 
 
+
 ---
 
-Comment by novoselt created at 2010-04-03 15:14:06
+archive/issue_comments_039111.json:
+```json
+{
+    "body": "Current version is doing this:\n\n```\nnew_vertices = self.vertices() + other.vertices()\nnew_rays = self.rays() + other.rays()\nnew_lines = self.lines() + other.lines()\nreturn Polyhedron(vertices=new_vertices,\n                      rays=new_rays, lines=new_lines, field=self.field())\n\n```\n\nwhich is great, but I STRONGLY support the idea of renaming the method to something else.\n\nI was once working with an algorithm where the *union* of polytopes was used, but I interpreted it exactly as the convex hull and of course got wrong results. I was not using this function, that was my own mistake, but since it is so easy to do, I don't think there should be an extra opportunity for confusion. I agree, that the result is described in the documentation, but I don't always read it for \"obvious\" functions and perhaps there are other users like me.\n\nHow about \"extend\"? \"convex_hull\" is also great, although it seems more natural to me to have a global function with such a name called like\n\n```\nconvex_hull(polyhedron1, polyhedron2, polyhedron3, ...)\n```\n\n(There is a function with this name in lattice_polytope which works with points and thinking about it now I suspect that I have chosen not the best name for it either... At least it is not imported into global namespace...)",
+    "created_at": "2010-04-03T15:14:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5117",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5117#issuecomment-39111",
+    "user": "novoselt"
+}
+```
 
 Current version is doing this:
 
@@ -118,30 +189,74 @@ convex_hull(polyhedron1, polyhedron2, polyhedron3, ...)
 (There is a function with this name in lattice_polytope which works with points and thinking about it now I suspect that I have chosen not the best name for it either... At least it is not imported into global namespace...)
 
 
+
 ---
 
-Comment by novoselt created at 2010-04-03 15:14:06
+archive/issue_comments_039112.json:
+```json
+{
+    "body": "Changing status from new to needs_info.",
+    "created_at": "2010-04-03T15:14:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5117",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5117#issuecomment-39112",
+    "user": "novoselt"
+}
+```
 
 Changing status from new to needs_info.
 
 
+
 ---
 
-Comment by mhampton created at 2010-04-03 19:05:48
+archive/issue_comments_039113.json:
+```json
+{
+    "body": "So we could make a convex_hull method and deprecate the union function.  To make a union function in the sense that you and sbarthelemy want, I think we need to make some sort of PolyhedralUnion class to do computations on such objects.",
+    "created_at": "2010-04-03T19:05:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5117",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5117#issuecomment-39113",
+    "user": "mhampton"
+}
+```
 
 So we could make a convex_hull method and deprecate the union function.  To make a union function in the sense that you and sbarthelemy want, I think we need to make some sort of PolyhedralUnion class to do computations on such objects.
 
 
+
 ---
 
-Comment by vbraun created at 2010-05-09 14:12:29
+archive/issue_comments_039114.json:
+```json
+{
+    "body": "Changing status from needs_info to needs_review.",
+    "created_at": "2010-05-09T14:12:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5117",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5117#issuecomment-39114",
+    "user": "vbraun"
+}
+```
 
 Changing status from needs_info to needs_review.
 
 
+
 ---
 
-Comment by vbraun created at 2010-05-09 14:12:29
+archive/issue_comments_039115.json:
+```json
+{
+    "body": "Patch renames `self.union()` to `self.convex_hull()` and improves the handling of the underlying field for various operations, for example\n\n\n```\nsage: triangle = Polyhedron(vertices=[[1,0],[0,1],[-1,-1]])\nsage: (1 * triangle).field()\nRational Field\nsage: (1.0 * triangle).field()\nReal Double Field\n```\n",
+    "created_at": "2010-05-09T14:12:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5117",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5117#issuecomment-39115",
+    "user": "vbraun"
+}
+```
 
 Patch renames `self.union()` to `self.convex_hull()` and improves the handling of the underlying field for various operations, for example
 
@@ -156,26 +271,76 @@ Real Double Field
 
 
 
+
 ---
+
+archive/issue_comments_039116.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-05-09T14:13:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5117",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5117#issuecomment-39116",
+    "user": "vbraun"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by novoselt created at 2010-05-09 15:39:41
+archive/issue_comments_039117.json:
+```json
+{
+    "body": "Apply this patch first",
+    "created_at": "2010-05-09T15:39:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5117",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5117#issuecomment-39117",
+    "user": "novoselt"
+}
+```
 
 Apply this patch first
 
 
+
 ---
+
+archive/issue_comments_039118.json:
+```json
+{
+    "body": "Attachment\n\nApply this patch second (and last)",
+    "created_at": "2010-05-09T15:40:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5117",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5117#issuecomment-39118",
+    "user": "novoselt"
+}
+```
 
 Attachment
 
 Apply this patch second (and last)
 
 
+
 ---
+
+archive/issue_comments_039119.json:
+```json
+{
+    "body": "Attachment\n\nLooks good to me. I have renamed the original patch file to include the ticket number and its description. On top of that I have made the documentation look nicer and added a message to the TyperError exception. Passes all doctests, so I am giving this a positive review.\n\nMy only concern is whether or not we need to use some framework for deprecating functions or what is done for \"union\" is enough.",
+    "created_at": "2010-05-09T15:45:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5117",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5117#issuecomment-39119",
+    "user": "novoselt"
+}
+```
 
 Attachment
 
@@ -184,15 +349,37 @@ Looks good to me. I have renamed the original patch file to include the ticket n
 My only concern is whether or not we need to use some framework for deprecating functions or what is done for "union" is enough.
 
 
+
 ---
 
-Comment by novoselt created at 2010-05-09 15:45:03
+archive/issue_comments_039120.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-05-09T15:45:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5117",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5117#issuecomment-39120",
+    "user": "novoselt"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mhansen created at 2010-06-09 02:19:36
+archive/issue_comments_039121.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-06-09T02:19:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5117",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5117#issuecomment-39121",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

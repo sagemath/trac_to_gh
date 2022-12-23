@@ -1,11 +1,21 @@
 # Issue 8473: Make .sws files clickable
 
-Issue created by migration from https://trac.sagemath.org/ticket/8473
-
-Original creator: olazo
-
-Original creation time: 2010-03-07 04:15:40
-
+archive/issues_008473.json:
+```json
+{
+    "body": "Assignee: was\n\nIt would be great for those of us who have installed Sage to be able\nto double click on these files and have sage open them in the\nnotebook.\n\nSupoorting a command on the likes of\n\n\n```\nsage -notebook /path/to/worksheet.sws\n```\n\n\nwould be a very good step in this direction\n\nIssue created by migration from https://trac.sagemath.org/ticket/8473\n\n",
+    "created_at": "2010-03-07T04:15:40Z",
+    "labels": [
+        "notebook",
+        "minor",
+        "enhancement"
+    ],
+    "title": "Make .sws files clickable",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8473",
+    "user": "olazo"
+}
+```
 Assignee: was
 
 It would be great for those of us who have installed Sage to be able
@@ -22,38 +32,97 @@ sage -notebook /path/to/worksheet.sws
 
 would be a very good step in this direction
 
+Issue created by migration from https://trac.sagemath.org/ticket/8473
+
+
+
+
 
 ---
 
-Comment by mpatel created at 2010-03-08 00:41:44
+archive/issue_comments_076312.json:
+```json
+{
+    "body": "Ticket #693 is related.",
+    "created_at": "2010-03-08T00:41:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#issuecomment-76312",
+    "user": "mpatel"
+}
+```
 
 Ticket #693 is related.
 
 
+
 ---
 
-Comment by kcrisman created at 2010-09-08 15:08:43
+archive/issue_comments_076313.json:
+```json
+{
+    "body": "What would be needed for this?  #693 shows that it's possible to know whether the notebook is running and then open the browser or not based on this.  And `http://foo.sagenb.org/home/me/upload_worksheet` shows that there is a script to take a .sws file and send it straight to the browser.    So I say this is definitely doable by someone who knows these scripts.  Is this right?",
+    "created_at": "2010-09-08T15:08:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#issuecomment-76313",
+    "user": "kcrisman"
+}
+```
 
 What would be needed for this?  #693 shows that it's possible to know whether the notebook is running and then open the browser or not based on this.  And `http://foo.sagenb.org/home/me/upload_worksheet` shows that there is a script to take a .sws file and send it straight to the browser.    So I say this is definitely doable by someone who knows these scripts.  Is this right?
 
 
+
 ---
 
-Comment by kcrisman created at 2010-09-08 15:12:43
+archive/issue_comments_076314.json:
+```json
+{
+    "body": "This also led to the following - #9875.",
+    "created_at": "2010-09-08T15:12:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#issuecomment-76314",
+    "user": "kcrisman"
+}
+```
 
 This also led to the following - #9875.
 
 
+
 ---
 
-Comment by iandrus created at 2010-12-29 12:16:24
+archive/issue_comments_076315.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-12-29T12:16:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#issuecomment-76315",
+    "user": "iandrus"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by iandrus created at 2010-12-29 12:16:24
+archive/issue_comments_076316.json:
+```json
+{
+    "body": "Depends on #693\n\nI have added support for uploading from a file:// url in order to support `sage --notebook upload=FILE.sws`.  The sagenb patch allows this, and the extcode patch adds support to the Mac application.  I had to support file urls so that the upload url could be given as a GET rather than a POST request, and hence be passed to any browser.\n\nThe Mac app has a new option to automatically start the server when a sws file is opened.  I'm not sure anyone would ever want to turn this off, so I can remove it if it's not useful.",
+    "created_at": "2010-12-29T12:16:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#issuecomment-76316",
+    "user": "iandrus"
+}
+```
 
 Depends on #693
 
@@ -62,32 +131,76 @@ I have added support for uploading from a file:// url in order to support `sage 
 The Mac app has a new option to automatically start the server when a sws file is opened.  I'm not sure anyone would ever want to turn this off, so I can remove it if it's not useful.
 
 
+
 ---
 
-Comment by iandrus created at 2010-12-29 12:30:54
+archive/issue_comments_076317.json:
+```json
+{
+    "body": "I should note I only allow file urls when running on localhost because otherwise it doesn't make much sense and could be a security hole.",
+    "created_at": "2010-12-29T12:30:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#issuecomment-76317",
+    "user": "iandrus"
+}
+```
 
 I should note I only allow file urls when running on localhost because otherwise it doesn't make much sense and could be a security hole.
 
 
+
 ---
 
-Comment by iandrus created at 2010-12-29 12:30:54
+archive/issue_comments_076318.json:
+```json
+{
+    "body": "Changing assignee from was to iandrus.",
+    "created_at": "2010-12-29T12:30:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#issuecomment-76318",
+    "user": "iandrus"
+}
+```
 
 Changing assignee from was to iandrus.
 
 
+
 ---
 
-Comment by kcrisman created at 2010-12-29 17:37:04
+archive/issue_comments_076319.json:
+```json
+{
+    "body": "Replying to [comment:6 iandrus]:\n> I should note I only allow file urls when running on localhost because otherwise it doesn't make much sense and could be a security hole.\nBut I can imagine people definitely wanting to upload an sws file to a Sage instance running only in their browser, i.e. from xyz.sagenb.org.  And we already allow arbitrary code in a Sage notebook instance!  So I don't know whether this would be any less secure than the current situation...",
+    "created_at": "2010-12-29T17:37:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#issuecomment-76319",
+    "user": "kcrisman"
+}
+```
 
 Replying to [comment:6 iandrus]:
 > I should note I only allow file urls when running on localhost because otherwise it doesn't make much sense and could be a security hole.
 But I can imagine people definitely wanting to upload an sws file to a Sage instance running only in their browser, i.e. from xyz.sagenb.org.  And we already allow arbitrary code in a Sage notebook instance!  So I don't know whether this would be any less secure than the current situation...
 
 
+
 ---
 
-Comment by iandrus created at 2010-12-29 17:55:59
+archive/issue_comments_076320.json:
+```json
+{
+    "body": "Replying to [comment:7 kcrisman]:\n> Replying to [comment:6 iandrus]:\n> > I should note I only allow file urls when running on localhost because otherwise it doesn't make much sense and could be a security hole.\n> But I can imagine people definitely wanting to upload an sws file to a Sage instance running only in their browser, i.e. from xyz.sagenb.org.  And we already allow arbitrary code in a Sage notebook instance!  So I don't know whether this would be any less secure than the current situation...\n\nI was probably unclear.  With a file url, it would grab the file from the server rather than the local machine, so it's probably not what people want or expect at all.  e.g. if you try to upload file:///home/iandrus/sage/sws1.sws, this will only work if the machine the server is running on also has a file at /home/iandrus/sage/sws1.sws, and then only if the file is the same.  \n\nIt might be nice to add some way to upload a file to a remote server programmatically, but I think that entails logging in and then sending off a POST request from a script, so it has a different feel.  I tried writing a simple script using curl a while ago, but I couldn't get it to work for some reason.  Perhaps someone knows of a better/different way to accomplish it.\n\nYou are right about the security hole though, it's probably the least of our worries :-)",
+    "created_at": "2010-12-29T17:55:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#issuecomment-76320",
+    "user": "iandrus"
+}
+```
 
 Replying to [comment:7 kcrisman]:
 > Replying to [comment:6 iandrus]:
@@ -101,58 +214,128 @@ It might be nice to add some way to upload a file to a remote server programmati
 You are right about the security hole though, it's probably the least of our worries :-)
 
 
+
 ---
+
+archive/issue_comments_076321.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2011-01-04T14:36:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#issuecomment-76321",
+    "user": "iandrus"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by iandrus created at 2011-01-04 14:37:25
+archive/issue_comments_076322.json:
+```json
+{
+    "body": "Added urlencoding so that files with special characters will work okay.",
+    "created_at": "2011-01-04T14:37:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#issuecomment-76322",
+    "user": "iandrus"
+}
+```
 
 Added urlencoding so that files with special characters will work okay.
 
 
+
 ---
 
-Comment by kcrisman created at 2011-01-11 04:13:22
+archive/issue_comments_076323.json:
+```json
+{
+    "body": "I'd like to test this, but I'm reluctant to do so until someone who knows something about the notebook takes a look at # 693.  Bug days folks?",
+    "created_at": "2011-01-11T04:13:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#issuecomment-76323",
+    "user": "kcrisman"
+}
+```
 
 I'd like to test this, but I'm reluctant to do so until someone who knows something about the notebook takes a look at # 693.  Bug days folks?
 
 
+
 ---
+
+archive/issue_comments_076324.json:
+```json
+{
+    "body": "Attachment\n\nI added zip and txt files to the Mac App as well as support (icons etc.) for Cython files.",
+    "created_at": "2011-03-12T16:28:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#issuecomment-76324",
+    "user": "iandrus"
+}
+```
 
 Attachment
 
 I added zip and txt files to the Mac App as well as support (icons etc.) for Cython files.
 
 
+
 ---
 
-Comment by kcrisman created at 2011-03-25 03:04:53
+archive/issue_comments_076325.json:
+```json
+{
+    "body": "I can taste it now that you reviewed #693.    This is great stuff, good work.\n\nOkay, needs work because this option isn't documented.  Ordinarily I wouldn't be as strict with NB stuff because so little of it is documented anyway, but I think it is key that `notebook?` tells us what happens.  \n\nI also have a couple questions, but they just indicate my lack of knowledge. \n* I don't understand this change.  More precisely, we now have the default `startpath = ''`, but that isn't the same as `\\`.  Will that matter somewhere for non-uploading situations?\n\n```\n                        browse_to(old_interface, old_port, old_secure, '/') \n                        browse_to(old_interface, old_port, old_secure, startpath)\n```\n\n* You said you added something to fix special character issues, but I don't know where that is, other than the place where you import urllib - but you only do that in the case that someone needs to log in.  Is that the only place it's needed?  This could just be my ignorance speaking.\n* Looks like file names with spaces have to be escaped with the syntax `./sage -n /path/to/work\\ sheet.sws'\n* I also discovered what might be a bug, or maybe it's a feature... trying to upload a file via `./sage -n /path/to/sws.sws` asks for a new password for admin.  That is really annoying, esp. if this is only supposed to work on a local machine anyway!\n\nI'd be inclined to separate the new notebook functionality from adding clickable sws files to the Sage App, for review purposes but also because this would have to be part of a new SageNB package, and it would be nice to separate those things out.  The logistics are already complicated enough for things.",
+    "created_at": "2011-03-25T03:04:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#issuecomment-76325",
+    "user": "kcrisman"
+}
+```
 
 I can taste it now that you reviewed #693.    This is great stuff, good work.
 
 Okay, needs work because this option isn't documented.  Ordinarily I wouldn't be as strict with NB stuff because so little of it is documented anyway, but I think it is key that `notebook?` tells us what happens.  
 
 I also have a couple questions, but they just indicate my lack of knowledge. 
- * I don't understand this change.  More precisely, we now have the default `startpath = ''`, but that isn't the same as `\`.  Will that matter somewhere for non-uploading situations?
+* I don't understand this change.  More precisely, we now have the default `startpath = ''`, but that isn't the same as `\`.  Will that matter somewhere for non-uploading situations?
 
 ```
                         browse_to(old_interface, old_port, old_secure, '/') 
                         browse_to(old_interface, old_port, old_secure, startpath)
 ```
 
- * You said you added something to fix special character issues, but I don't know where that is, other than the place where you import urllib - but you only do that in the case that someone needs to log in.  Is that the only place it's needed?  This could just be my ignorance speaking.
- * Looks like file names with spaces have to be escaped with the syntax `./sage -n /path/to/work\ sheet.sws'
- * I also discovered what might be a bug, or maybe it's a feature... trying to upload a file via `./sage -n /path/to/sws.sws` asks for a new password for admin.  That is really annoying, esp. if this is only supposed to work on a local machine anyway!
+* You said you added something to fix special character issues, but I don't know where that is, other than the place where you import urllib - but you only do that in the case that someone needs to log in.  Is that the only place it's needed?  This could just be my ignorance speaking.
+* Looks like file names with spaces have to be escaped with the syntax `./sage -n /path/to/work\ sheet.sws'
+* I also discovered what might be a bug, or maybe it's a feature... trying to upload a file via `./sage -n /path/to/sws.sws` asks for a new password for admin.  That is really annoying, esp. if this is only supposed to work on a local machine anyway!
 
 I'd be inclined to separate the new notebook functionality from adding clickable sws files to the Sage App, for review purposes but also because this would have to be part of a new SageNB package, and it would be nice to separate those things out.  The logistics are already complicated enough for things.
 
 
+
 ---
 
-Comment by kcrisman created at 2011-03-25 03:09:58
+archive/issue_comments_076326.json:
+```json
+{
+    "body": "This doesn't even work - it asks for a password:\n\n```\nnotebook(r'''/Users/.../MAT338Day1-2011.sws''',require_login=False)\n```\n\nwhile `notebook()` continues to work fine.  I would view this as a bug in the case of this syntax.",
+    "created_at": "2011-03-25T03:09:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#issuecomment-76326",
+    "user": "kcrisman"
+}
+```
 
 This doesn't even work - it asks for a password:
 
@@ -163,16 +346,38 @@ notebook(r'''/Users/.../MAT338Day1-2011.sws''',require_login=False)
 while `notebook()` continues to work fine.  I would view this as a bug in the case of this syntax.
 
 
+
 ---
 
-Comment by kcrisman created at 2011-03-25 03:09:58
+archive/issue_comments_076327.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2011-03-25T03:09:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#issuecomment-76327",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by iandrus created at 2011-03-25 05:59:27
+archive/issue_comments_076328.json:
+```json
+{
+    "body": "Replying to [comment:13 kcrisman]:\n> I can taste it now that you reviewed #693.    This is great stuff, good work.\n\n:-)\n\n> Okay, needs work because this option isn't documented.  Ordinarily I wouldn't be as strict with NB stuff because so little of it is documented anyway, but I think it is key that `notebook?` tells us what happens.  \n\nGood point.  I have added documentation for `notebook?`.  Does it need documentation in `sage --advanced` as well?\n\n> I also have a couple questions, but they just indicate my lack of knowledge. \n>  * I don't understand this change.  More precisely, we now have the default `startpath = ''`, but that isn't the same as `\\`.  Will that matter somewhere for non-uploading situations?\n> {{{\n>                         browse_to(old_interface, old_port, old_secure, '/') \n>                         browse_to(old_interface, old_port, old_secure, startpath)\n> }}}\n\nI don't think that should matter, but I changed it to `'/'` since it makes more sense.  In an earlier version of the patch I think I appended to `startpath` and that's why it was empty.\n\n>  * You said you added something to fix special character issues, but I don't know where that is, other than the place where you import urllib - but you only do that in the case that someone needs to log in.  Is that the only place it's needed?  This could just be my ignorance speaking.\n\nYou are right, there was a bug there.  I need it both places.  Thanks.\n\n>  * Looks like file names with spaces have to be escaped with the syntax `./sage -n /path/to/work\\ sheet.sws'\n\nYes.  They have to be escaped for the shell so that they appear as one argument.  That's the same as any argument to `sage -n`.  However, I should point out that the syntax is `sage -n upload=\"/path/to work sheet.sws\"`.  I guess that's why we need documentation, eh? :-)\n\n>  * I also discovered what might be a bug, or maybe it's a feature... trying to upload a file via `./sage -n /path/to/sws.sws` asks for a new password for admin.  That is really annoying, esp. if this is only supposed to work on a local machine anyway!\n\nI think what's happening here is it's starting a new notebook server with /path/to/sws.sws as it's directory or something.  I think that's why it's asking for a password.\n\n> I'd be inclined to separate the new notebook functionality from adding clickable sws files to the Sage App, for review purposes but also because this would have to be part of a new SageNB package, and it would be nice to separate those things out.  The logistics are already complicated enough for things.\n\nThat's probably a good idea.  I'll split the extcode off into another ticket.",
+    "created_at": "2011-03-25T05:59:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#issuecomment-76328",
+    "user": "iandrus"
+}
+```
 
 Replying to [comment:13 kcrisman]:
 > I can taste it now that you reviewed #693.    This is great stuff, good work.
@@ -209,16 +414,38 @@ I think what's happening here is it's starting a new notebook server with /path/
 That's probably a good idea.  I'll split the extcode off into another ticket.
 
 
+
 ---
 
-Comment by iandrus created at 2011-03-25 06:07:58
+archive/issue_comments_076329.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2011-03-25T06:07:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#issuecomment-76329",
+    "user": "iandrus"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by kcrisman created at 2011-03-25 15:16:33
+archive/issue_comments_076330.json:
+```json
+{
+    "body": "> > Okay, needs work because this option isn't documented.  Ordinarily I wouldn't be as strict with NB stuff because so little of it is documented anyway, but I think it is key that `notebook?` tells us what happens.  \n> \n> Good point.  I have added documentation for `notebook?`.  Does it need documentation in `sage --advanced` as well?\nNo, because that says the options are as in `notebook()` in the command line, which covers it.\n> >  * You said you added something to fix special character issues, but I don't know where that is, other than the place where you import urllib - but you only do that in the case that someone needs to log in.  Is that the only place it's needed?  This could just be my ignorance speaking.\n> \n> You are right, there was a bug there.  I need it both places.  Thanks.\nGood.\n> >  * Looks like file names with spaces have to be escaped with the syntax `./sage -n /path/to/work\\ sheet.sws'\n> \n> Yes.  They have to be escaped for the shell so that they appear as one argument.  That's the same as any argument to `sage -n`.  However, I should point out that the syntax is `sage -n upload=\"/path/to work sheet.sws\"`.  I guess that's why we need documentation, eh? :-)\nHah!  But it's nice that this also works.\n> >  * I also discovered what might be a bug, or maybe it's a feature... trying to upload a file via `./sage -n /path/to/sws.sws` asks for a new password for admin.  That is really annoying, esp. if this is only supposed to work on a local machine anyway!\n> \n> I think what's happening here is it's starting a new notebook server with /path/to/sws.sws as it's directory or something.  I think that's why it's asking for a password.\nHmm.  So if I use the upload= syntax I should be okay?",
+    "created_at": "2011-03-25T15:16:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#issuecomment-76330",
+    "user": "kcrisman"
+}
+```
 
 > > Okay, needs work because this option isn't documented.  Ordinarily I wouldn't be as strict with NB stuff because so little of it is documented anyway, but I think it is key that `notebook?` tells us what happens.  
 > 
@@ -238,9 +465,20 @@ Hah!  But it's nice that this also works.
 Hmm.  So if I use the upload= syntax I should be okay?
 
 
+
 ---
 
-Comment by kcrisman created at 2011-03-25 15:44:20
+archive/issue_comments_076331.json:
+```json
+{
+    "body": "> > >  * I also discovered what might be a bug, or maybe it's a feature... trying to upload a file via `./sage -n /path/to/sws.sws` asks for a new password for admin.  That is really annoying, esp. if this is only supposed to work on a local machine anyway!\n> > \n> > I think what's happening here is it's starting a new notebook server with /path/to/sws.sws as it's directory or something.  I think that's why it's asking for a password.\n\nYeah, you're right - I found a random new sagenb folder there! \n\nOne thing that happens is that your thing checks whether ANY other Sage server is running with the same folder of worksheets.  But I had a different Sage version already running through my usual !sage_notebook.sagenb, and that caused an error since it didn't have the syntax, I guess.  I don't know that that's a bug.\n\nI think that the extra `/` is causing problems, though.  Here are two things.  The second one works.\n\n```\nDownloads/sage-4.7.alpha1/sage -n upload=\"/Users/.../MAT338Day1-2011.sws\"\nDownloads/sage-4.7.alpha1/sage -n upload=\"Users/.../MAT338Day1-2011.sws\"\n```\n\nI think that one too many `/`s is messing things up.  But the first one IS the full path to the file, so this could be very confusing.  After all,\n\n```\nDownloads/sage-4.7.alpha1/sage -n upload=\"~/Downloads/MAT338Day1-2011.sws\"\n```\n\ngives \n\n```\nexceptions.IOError: [Errno 2] No such file or directory: '/~/Downloads/MAT338Day1-2011.sws'\n```\n\nSo we can't use that syntax for the local directory either.  Clearly the extra `/` isn't helping.",
+    "created_at": "2011-03-25T15:44:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#issuecomment-76331",
+    "user": "kcrisman"
+}
+```
 
 > > >  * I also discovered what might be a bug, or maybe it's a feature... trying to upload a file via `./sage -n /path/to/sws.sws` asks for a new password for admin.  That is really annoying, esp. if this is only supposed to work on a local machine anyway!
 > > 
@@ -272,16 +510,38 @@ exceptions.IOError: [Errno 2] No such file or directory: '/~/Downloads/MAT338Day
 So we can't use that syntax for the local directory either.  Clearly the extra `/` isn't helping.
 
 
+
 ---
 
-Comment by kcrisman created at 2011-03-25 15:44:20
+archive/issue_comments_076332.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2011-03-25T15:44:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#issuecomment-76332",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by iandrus created at 2011-03-25 17:26:54
+archive/issue_comments_076333.json:
+```json
+{
+    "body": "Replying to [comment:18 kcrisman]:\n> I think that the extra `/` is causing problems, though.  Here are two things.  The second one works.\n> {{{\n> Downloads/sage-4.7.alpha1/sage -n upload=\"/Users/.../MAT338Day1-2011.sws\"\n> Downloads/sage-4.7.alpha1/sage -n upload=\"Users/.../MAT338Day1-2011.sws\"\n> }}}\n> I think that one too many `/`s is messing things up.  But the first one IS the full path to the file, so this could be very confusing.  After all,\n> {{{\n> Downloads/sage-4.7.alpha1/sage -n upload=\"~/Downloads/MAT338Day1-2011.sws\"\n> }}}\n> gives \n> {{{\n> exceptions.IOError: [Errno 2] No such file or directory: '/~/Downloads/MAT338Day1-2011.sws'\n> }}}\n> So we can't use that syntax for the local directory either.  Clearly the extra `/` isn't helping.\n\nHmm.  The extra `/` doesn't cause a problem on my machine, but I have noticed differences in URL handling on earlier version of OS X, so I'll go ahead a remove it.",
+    "created_at": "2011-03-25T17:26:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#issuecomment-76333",
+    "user": "iandrus"
+}
+```
 
 Replying to [comment:18 kcrisman]:
 > I think that the extra `/` is causing problems, though.  Here are two things.  The second one works.
@@ -302,21 +562,56 @@ Replying to [comment:18 kcrisman]:
 Hmm.  The extra `/` doesn't cause a problem on my machine, but I have noticed differences in URL handling on earlier version of OS X, so I'll go ahead a remove it.
 
 
+
 ---
+
+archive/issue_comments_076334.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2011-03-30T15:33:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#issuecomment-76334",
+    "user": "kcrisman"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by kcrisman created at 2011-03-30 15:33:06
+archive/issue_comments_076335.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2011-03-30T15:33:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#issuecomment-76335",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by kcrisman created at 2011-04-02 02:12:12
+archive/issue_comments_076336.json:
+```json
+{
+    "body": "Ivan, is it very hard to catch a certain kind of error?  I get \n\n```\nexceptions.IOError: [Errno 2] No such file or directory: 'Users/.../MAT338Day1-2011.sws'\n```\n\nif I try to upload it with \n\n```\nsage -n upload=\"Users/.../MAT338Day1-2011.sws\"\n```\n\nIf I try to upload with \n\n```\nsage -n upload=\"/Users/.../MAT338Day1-2011.sws\"\n```\n\nI get \n\n```\nThe resource /upload_worksheet?url=file:///Users/.../MAT338Day1-2011.sws cannot be found.\n```\n\nThe same if I do \n\n```\nsage: notebook(upload=\"...\")\n```\n\nSo here is what works for me.\n* old patch, not including first slash.\nHere is what doesn't work.\n* old patch with a slash.\n* new patch with or without slash.\nI'm confused.  I really wanted to get this all reviewed but have no idea what is going on, of course.",
+    "created_at": "2011-04-02T02:12:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#issuecomment-76336",
+    "user": "kcrisman"
+}
+```
 
 Ivan, is it very hard to catch a certain kind of error?  I get 
 
@@ -349,16 +644,27 @@ sage: notebook(upload="...")
 ```
 
 So here is what works for me.
- * old patch, not including first slash.
+* old patch, not including first slash.
 Here is what doesn't work.
- * old patch with a slash.
- * new patch with or without slash.
+* old patch with a slash.
+* new patch with or without slash.
 I'm confused.  I really wanted to get this all reviewed but have no idea what is going on, of course.
+
 
 
 ---
 
-Comment by iandrus created at 2011-04-09 20:11:01
+archive/issue_comments_076337.json:
+```json
+{
+    "body": "Replying to [comment:22 kcrisman]:\n> Ivan, is it very hard to catch a certain kind of error?  I get \n\n```\nexceptions.IOError: [Errno 2] No such file or directory: 'Users/.../MAT338Day1-2011.sws'\n```\n\n> if I try to upload it with \n\n```\nsage -n upload=\"Users/.../MAT338Day1-2011.sws\"\n```\n\n\nThat's what I would expect.  Such a thing shouldn't work--that it did before is a mistake :-)\n\n> If I try to upload with \n\n```\nsage -n upload=\"/Users/.../MAT338Day1-2011.sws\"\n```\n\n> I get \n\n```\nThe resource /upload_worksheet?url=file:///Users/.../MAT338Day1-2011.sws cannot be found.\n```\n\n\nI was finally able to reproduce this.  I'm seeing this problem when Sage.app is set to be my browser (so it is logged in) and I run `sage --notebook upload=...` from the command line.  In this case SAGE_BROWSER isn't set correctly so it tries to open the upload page in Safari which isn't logged in.  If I then login in Safari and upload again it works.  Is this the same problem you are seeing?\n\n> So here is what works for me.\n>  * old patch, not including first slash.\n> Here is what doesn't work.\n>  * old patch with a slash.\n>  * new patch with or without slash.\n> I'm confused.  I really wanted to get this all reviewed but have no idea what is going on, of course.\n\nI don't understand why the old patch would work but not the new one.  If it's not the same problem as above then maybe you could try `sage --notebook upload=`localhost/Users/...`  That also works for me and it may work better on older versions of OS X.",
+    "created_at": "2011-04-09T20:11:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#issuecomment-76337",
+    "user": "iandrus"
+}
+```
 
 Replying to [comment:22 kcrisman]:
 > Ivan, is it very hard to catch a certain kind of error?  I get 
@@ -401,9 +707,20 @@ I was finally able to reproduce this.  I'm seeing this problem when Sage.app is 
 I don't understand why the old patch would work but not the new one.  If it's not the same problem as above then maybe you could try `sage --notebook upload=`localhost/Users/...`  That also works for me and it may work better on older versions of OS X.
 
 
+
 ---
 
-Comment by kcrisman created at 2011-04-15 16:58:41
+archive/issue_comments_076338.json:
+```json
+{
+    "body": "> That's what I would expect.  Such a thing shouldn't work--that it did before is a mistake :-)\nOkay!\n> The resource /upload_worksheet?url=file:///Users/.../MAT338Day1-2011.sws cannot be found.\n> I was finally able to reproduce this.  I'm seeing this problem when Sage.app is set to be my browser (so it is logged in) and I run `sage --notebook upload=...` from the command line.  In this case SAGE_BROWSER isn't set correctly so it tries to open the upload page in Safari which isn't logged in.  If I then login in Safari and upload again it works.  Is this the same problem you are seeing?\n\nAha.  Well, I don't have Sage.app even on one of the computers any more (though the icons remain for sws files! what's up with that?), but what did the trick was starting the notebook, getting the error message, leaving the notebook running, and then uploading with the correct syntax a second time.  \n\nHow do I even check if !SAGE_BROWSER is set?  I can't use the command line of that terminal while the server is running, and a new terminal won't have it defined, presumably.\n\nAnyway, this makes me more hopeful this is doable; however, there should not be any connection between having once downloaded the app bundle (perhaps immediately trashed, even) and this syntax working.",
+    "created_at": "2011-04-15T16:58:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#issuecomment-76338",
+    "user": "kcrisman"
+}
+```
 
 > That's what I would expect.  Such a thing shouldn't work--that it did before is a mistake :-)
 Okay!
@@ -417,16 +734,38 @@ How do I even check if !SAGE_BROWSER is set?  I can't use the command line of th
 Anyway, this makes me more hopeful this is doable; however, there should not be any connection between having once downloaded the app bundle (perhaps immediately trashed, even) and this syntax working.
 
 
+
 ---
 
-Comment by kcrisman created at 2011-04-15 16:58:41
+archive/issue_comments_076339.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2011-04-15T16:58:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#issuecomment-76339",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by kcrisman created at 2011-08-01 21:11:49
+archive/issue_comments_076340.json:
+```json
+{
+    "body": "This needs to be (slightly) rebased for #10652.  I can't tell immediately whether the extra filetypes allowed there need any other changes to this patch - my sense is probably not?  Anyway, that shouldn't be too hard.\n\nYeah, the problem on the computer where this doesn't work quite right is probably the same as yours - because I also have a nonstandard browser (well, Firefox) as default there.  Switching the default browser to Safari removes the problem.\n\nI really want to give this positive review so that I can review #11026, #10556, and #10555, but it seems like it's not great that one would have to use Safari on Mac for this to work properly (and who knows on other systems where I haven't tested this?).\n\nWhat's particularly odd is that `sage-open` (in the scripts directory) is getting the correct browser for me, as far as I can tell, in either case (Safari or FF).  But the way sage/misc/viewer.py operates is a little mysterious - `sage-native-execute` shouldn't have to run `sage-open` on OS X. \n\nAny thoughts?  I'm sorry for the delay in reviewing this, I was busy with Cygwin and running the workshop in my Sage time this summer.",
+    "created_at": "2011-08-01T21:11:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#issuecomment-76340",
+    "user": "kcrisman"
+}
+```
 
 This needs to be (slightly) rebased for #10652.  I can't tell immediately whether the extra filetypes allowed there need any other changes to this patch - my sense is probably not?  Anyway, that shouldn't be too hard.
 
@@ -439,16 +778,38 @@ What's particularly odd is that `sage-open` (in the scripts directory) is gettin
 Any thoughts?  I'm sorry for the delay in reviewing this, I was busy with Cygwin and running the workshop in my Sage time this summer.
 
 
+
 ---
 
-Comment by kcrisman created at 2011-08-02 02:48:08
+archive/issue_comments_076341.json:
+```json
+{
+    "body": "See #11026 for another weird type of error with uploading that only seems to manifest itself with the app part.",
+    "created_at": "2011-08-02T02:48:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#issuecomment-76341",
+    "user": "kcrisman"
+}
+```
 
 See #11026 for another weird type of error with uploading that only seems to manifest itself with the app part.
 
 
+
 ---
 
-Comment by kcrisman created at 2011-08-02 12:30:50
+archive/issue_comments_076342.json:
+```json
+{
+    "body": "I'm getting some other weird behavior, which I think is the same as the previous comment, but I can't be sure because it occurred in a different situation and a different computer.  I get \"The resource /upload_worksheet?url=file:///Users/karl-dietercrisman/Desktop/Test.sws cannot be found.\" when going to\n\n```\nhttp://localhost:8000/upload_worksheet?url=file:///Users/karl-dietercrisman/Desktop/Test.sws\n```\n\nThis is after a message about FF not opening because there is already one running.    It seems to happen when a separate Mac app is open (not necessarily with server running).",
+    "created_at": "2011-08-02T12:30:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#issuecomment-76342",
+    "user": "kcrisman"
+}
+```
 
 I'm getting some other weird behavior, which I think is the same as the previous comment, but I can't be sure because it occurred in a different situation and a different computer.  I get "The resource /upload_worksheet?url=file:///Users/karl-dietercrisman/Desktop/Test.sws cannot be found." when going to
 
@@ -459,30 +820,63 @@ http://localhost:8000/upload_worksheet?url=file:///Users/karl-dietercrisman/Desk
 This is after a message about FF not opening because there is already one running.    It seems to happen when a separate Mac app is open (not necessarily with server running).
 
 
+
 ---
 
-Comment by kcrisman created at 2011-08-02 12:34:04
+archive/issue_comments_076343.json:
+```json
+{
+    "body": "Summary:\n* Still 'needs work'.\n* Needs some kind of respecting of different browsers, though not necessarily universal.\n* Should still work if using a Mac app with #11026?\n\nBut I'm excited about this.",
+    "created_at": "2011-08-02T12:34:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#issuecomment-76343",
+    "user": "kcrisman"
+}
+```
 
 Summary:
- * Still 'needs work'.
- * Needs some kind of respecting of different browsers, though not necessarily universal.
- * Should still work if using a Mac app with #11026?
+* Still 'needs work'.
+* Needs some kind of respecting of different browsers, though not necessarily universal.
+* Should still work if using a Mac app with #11026?
 
 But I'm excited about this.
 
 
+
 ---
 
-Comment by kcrisman created at 2012-01-24 02:42:47
+archive/issue_comments_076344.json:
+```json
+{
+    "body": "This is a [pull request at the sagenb github site](https://github.com/sagemath/sagenb/pull/31).\n\nI figure this goes back to 'needs review' once (if) it's clarified what patches would still be needed here.",
+    "created_at": "2012-01-24T02:42:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#issuecomment-76344",
+    "user": "kcrisman"
+}
+```
 
 This is a [pull request at the sagenb github site](https://github.com/sagemath/sagenb/pull/31).
 
 I figure this goes back to 'needs review' once (if) it's clarified what patches would still be needed here.
 
 
+
 ---
 
-Comment by kcrisman created at 2012-01-24 02:45:23
+archive/issue_comments_076345.json:
+```json
+{
+    "body": "Also, those patches should probably be merged into one?  Anyway, I found at least one error there - \n\n```\n``http://localhost:8000/upload`` or to fetching\n```\n\nbut in the new notebook apparently (?) it's port 8080.",
+    "created_at": "2012-01-24T02:45:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#issuecomment-76345",
+    "user": "kcrisman"
+}
+```
 
 Also, those patches should probably be merged into one?  Anyway, I found at least one error there - 
 
@@ -493,9 +887,20 @@ Also, those patches should probably be merged into one?  Anyway, I found at leas
 but in the new notebook apparently (?) it's port 8080.
 
 
+
 ---
 
-Comment by iandrus created at 2012-01-24 07:46:37
+archive/issue_comments_076346.json:
+```json
+{
+    "body": "Replying to [comment:31 kcrisman]:\n> Also, those patches should probably be merged into one?  \n\nYes.  I'm not sure if I can do that now that I have pushed to github though.\n\n> Anyway, I found at least one error there - \n> {{{\n> ``http://localhost:8000/upload`` or to fetching\n> }}}\n> but in the new notebook apparently (?) it's port 8080.\n\nFixed, thanks.",
+    "created_at": "2012-01-24T07:46:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#issuecomment-76346",
+    "user": "iandrus"
+}
+```
 
 Replying to [comment:31 kcrisman]:
 > Also, those patches should probably be merged into one?  
@@ -511,9 +916,20 @@ Yes.  I'm not sure if I can do that now that I have pushed to github though.
 Fixed, thanks.
 
 
+
 ---
 
-Comment by iandrus created at 2012-01-24 07:57:16
+archive/issue_comments_076347.json:
+```json
+{
+    "body": "Replying to [comment:30 kcrisman]:\n> This is a [pull request at the sagenb github site](https://github.com/sagemath/sagenb/pull/31).\n> \n> I figure this goes back to 'needs review' once (if) it's clarified what patches would still be needed here.\n\nWe shouldn't need any of these patches here since the extcode patch was moved to #11026.",
+    "created_at": "2012-01-24T07:57:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#issuecomment-76347",
+    "user": "iandrus"
+}
+```
 
 Replying to [comment:30 kcrisman]:
 > This is a [pull request at the sagenb github site](https://github.com/sagemath/sagenb/pull/31).
@@ -523,124 +939,311 @@ Replying to [comment:30 kcrisman]:
 We shouldn't need any of these patches here since the extcode patch was moved to #11026.
 
 
+
 ---
 
-Comment by kcrisman created at 2012-06-01 18:02:23
+archive/issue_comments_076348.json:
+```json
+{
+    "body": "I've put this on a more accurate upstream report, given the pull request that has to be reviewed.",
+    "created_at": "2012-06-01T18:02:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#issuecomment-76348",
+    "user": "kcrisman"
+}
+```
 
 I've put this on a more accurate upstream report, given the pull request that has to be reviewed.
 
 
+
 ---
 
-Comment by kcrisman created at 2012-06-11 21:03:21
+archive/issue_comments_076349.json:
+```json
+{
+    "body": "The version on the pull request works, at any rate, though it doesn't seem to check correctly for when a server is already running.",
+    "created_at": "2012-06-11T21:03:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#issuecomment-76349",
+    "user": "kcrisman"
+}
+```
 
 The version on the pull request works, at any rate, though it doesn't seem to check correctly for when a server is already running.
 
 
+
 ---
 
-Comment by kcrisman created at 2012-06-14 17:43:47
+archive/issue_comments_076350.json:
+```json
+{
+    "body": "See [the pull request](https://github.com/sagemath/sagenb/pull/31) for more discussion.  It seems to be working great!  Just need to check out the new code.",
+    "created_at": "2012-06-14T17:43:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#issuecomment-76350",
+    "user": "kcrisman"
+}
+```
 
 See [the pull request](https://github.com/sagemath/sagenb/pull/31) for more discussion.  It seems to be working great!  Just need to check out the new code.
 
 
+
 ---
 
-Comment by kcrisman created at 2012-06-14 19:12:56
+archive/issue_comments_076351.json:
+```json
+{
+    "body": "Okay, the upstream looks good with the one exception of [this issue](https://github.com/sagemath/sagenb/pull/31#issuecomment-6336374) when `automatic_login=False` but there is still an `upload` to be done.  \n\nLeaving as \"needs work\" and moving milestone to 5.2 since it depends on #11080 in some sense, though only on the upstream end so not putting it in dependencies.",
+    "created_at": "2012-06-14T19:12:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#issuecomment-76351",
+    "user": "kcrisman"
+}
+```
 
 Okay, the upstream looks good with the one exception of [this issue](https://github.com/sagemath/sagenb/pull/31#issuecomment-6336374) when `automatic_login=False` but there is still an `upload` to be done.  
 
 Leaving as "needs work" and moving milestone to 5.2 since it depends on #11080 in some sense, though only on the upstream end so not putting it in dependencies.
 
 
+
 ---
 
-Comment by kcrisman created at 2012-06-14 19:12:56
+archive/issue_comments_076352.json:
+```json
+{
+    "body": "Changing priority from minor to major.",
+    "created_at": "2012-06-14T19:12:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#issuecomment-76352",
+    "user": "kcrisman"
+}
+```
 
 Changing priority from minor to major.
 
 
+
 ---
 
-Comment by kcrisman created at 2012-06-14 19:48:56
+archive/issue_comments_076353.json:
+```json
+{
+    "body": "Okay, this was resolved within a half hour!  Unfortunately, then it took over five minutes to even get back on Trac for me.\n\nI don't know exactly how this works; we don't make an spkg in this case.  I'm putting positive review, but it depends on exactly when this gets from upstream to sage - Jeroen, if you feel comfortable doing so, put it on sage-pending.  I just don't want it to get lost.",
+    "created_at": "2012-06-14T19:48:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#issuecomment-76353",
+    "user": "kcrisman"
+}
+```
 
 Okay, this was resolved within a half hour!  Unfortunately, then it took over five minutes to even get back on Trac for me.
 
 I don't know exactly how this works; we don't make an spkg in this case.  I'm putting positive review, but it depends on exactly when this gets from upstream to sage - Jeroen, if you feel comfortable doing so, put it on sage-pending.  I just don't want it to get lost.
 
 
+
 ---
 
-Comment by kcrisman created at 2012-06-14 19:48:56
+archive/issue_comments_076354.json:
+```json
+{
+    "body": "Changing status from needs_work to positive_review.",
+    "created_at": "2012-06-14T19:48:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#issuecomment-76354",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_work to positive_review.
 
 
+
 ---
 
-Comment by kini created at 2012-06-15 00:17:06
+archive/issue_comments_076355.json:
+```json
+{
+    "body": "I've merged the pull request :)",
+    "created_at": "2012-06-15T00:17:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#issuecomment-76355",
+    "user": "kini"
+}
+```
 
 I've merged the pull request :)
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-06-15 21:09:02
+archive/issue_comments_076356.json:
+```json
+{
+    "body": "Not really sure what to do either, where is the spkg containing this fix going to end up?",
+    "created_at": "2012-06-15T21:09:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#issuecomment-76356",
+    "user": "jdemeyer"
+}
+```
 
 Not really sure what to do either, where is the spkg containing this fix going to end up?
 
 
+
 ---
 
-Comment by kini created at 2012-06-15 21:30:17
+archive/issue_comments_076357.json:
+```json
+{
+    "body": "It will end up at #13121.",
+    "created_at": "2012-06-15T21:30:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#issuecomment-76357",
+    "user": "kini"
+}
+```
 
 It will end up at #13121.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2012-06-23 15:46:18
+archive/issue_comments_076358.json:
+```json
+{
+    "body": "I'm having problems with this. I've posted comments at the [pull request](https://github.com/sagemath/sagenb/pull/31).",
+    "created_at": "2012-06-23T15:46:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#issuecomment-76358",
+    "user": "jhpalmieri"
+}
+```
 
 I'm having problems with this. I've posted comments at the [pull request](https://github.com/sagemath/sagenb/pull/31).
 
 
+
 ---
 
-Comment by kcrisman created at 2012-06-26 13:36:19
+archive/issue_comments_076359.json:
+```json
+{
+    "body": "The main issue there was resolved at [this pull request](https://github.com/sagemath/sagenb/issues/76), so this is fine.",
+    "created_at": "2012-06-26T13:36:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#issuecomment-76359",
+    "user": "kcrisman"
+}
+```
 
 The main issue there was resolved at [this pull request](https://github.com/sagemath/sagenb/issues/76), so this is fine.
 
 
+
 ---
 
-Comment by kcrisman created at 2012-06-27 15:11:00
+archive/issue_comments_076360.json:
+```json
+{
+    "body": "Actually, that was only an issue, not a pull request - it's actually solved at [this pull request](https://github.com/sagemath/sagenb/pull/78), with discussion at [this issue](https://github.com/sagemath/sagenb/issues/76).  See [here](https://github.com/sagemath/sagenb/pull/31#issuecomment-6525903) for the original problem encountered.",
+    "created_at": "2012-06-27T15:11:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#issuecomment-76360",
+    "user": "kcrisman"
+}
+```
 
 Actually, that was only an issue, not a pull request - it's actually solved at [this pull request](https://github.com/sagemath/sagenb/pull/78), with discussion at [this issue](https://github.com/sagemath/sagenb/issues/76).  See [here](https://github.com/sagemath/sagenb/pull/31#issuecomment-6525903) for the original problem encountered.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-07-09 20:04:17
+archive/issue_comments_076361.json:
+```json
+{
+    "body": "I'm assuming nothing here needs to be merged?",
+    "created_at": "2012-07-09T20:04:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#issuecomment-76361",
+    "user": "jdemeyer"
+}
+```
 
 I'm assuming nothing here needs to be merged?
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-07-09 20:04:17
+archive/issue_comments_076362.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_info.",
+    "created_at": "2012-07-09T20:04:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#issuecomment-76362",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from positive_review to needs_info.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-07-09 20:11:18
+archive/issue_comments_076363.json:
+```json
+{
+    "body": "Sorry, I got confused because #13121 \"depends\" on this.",
+    "created_at": "2012-07-09T20:11:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#issuecomment-76363",
+    "user": "jdemeyer"
+}
+```
 
 Sorry, I got confused because #13121 "depends" on this.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-07-09 20:12:10
+archive/issue_comments_076364.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2012-07-09T20:12:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8473#issuecomment-76364",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: duplicate

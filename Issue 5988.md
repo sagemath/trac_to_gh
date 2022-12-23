@@ -1,11 +1,21 @@
 # Issue 5988: notebook feature request -- make it so non-logged in users are redirected to login page
 
-Issue created by migration from https://trac.sagemath.org/ticket/5988
-
-Original creator: was
-
-Original creation time: 2009-05-05 14:22:58
-
+archive/issues_005988.json:
+```json
+{
+    "body": "Assignee: boothby\n\nCC:  timdumol\n\nI strongly agree with the following feature request.  I have wanted the same feature myself.\n\n\n```\nIf the sage notebook server is restarted while a logged in user is\nviewing a notebook page, a user attempt to refresh the page results in\na completely blank page titled \"Error | Sage Notebook\".  The user must\nmanually edit the URL to go back to the main server page and login\nagain, presumably because the login credentials have been lost with\nthe server reboot.\n\nBut, it may not be obvious to all users what they need to do to\nrecover from this situation.  Is there some twisted option I can set\nto either redirect the browser back to the login page, or to add\nexplanatory text to the blank page with a link to the login page?  If\nneither of these options is currently possible, I'd like to make a\nfeature request to enhance the server response to an attempt to access\na page when a user is apparently not logged in, to provide the user\nwith a useful page, rather than a completely blank page.\n\nI'm running sage 3.4.2.\n\nThanks,\n--\nKevin Horton\nOttawa, Canada\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5988\n\n",
+    "created_at": "2009-05-05T14:22:58Z",
+    "labels": [
+        "notebook",
+        "major",
+        "enhancement"
+    ],
+    "title": "notebook feature request -- make it so non-logged in users are redirected to login page",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5988",
+    "user": "was"
+}
+```
 Assignee: boothby
 
 CC:  timdumol
@@ -40,10 +50,25 @@ Ottawa, Canada
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5988
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2009-05-18 13:19:23
+archive/issue_comments_047587.json:
+```json
+{
+    "body": "See also #6069.\n\nCheers,\n\nMichael",
+    "created_at": "2009-05-18T13:19:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5988",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5988#issuecomment-47587",
+    "user": "mabshoff"
+}
+```
 
 See also #6069.
 
@@ -52,9 +77,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mpatel created at 2010-01-25 15:06:36
+archive/issue_comments_047588.json:
+```json
+{
+    "body": "I think this is no longer a problem, at least with SageNB 0.7 (#8051) and maybe even with SageNB 0.6.  If I try to reload the home page or an opened worksheet, I get redirected to the login page or to a page with a message, e.g.,\n\n  You are not logged in or do not have access to the worksheet 'XXX'. Continue\n\nClicking \"Continue\" takes me to the login page.  But clicking on \"Log,\" \"Settings,\" or \"Help\" returns `404 Not Found`, instead of redirecting to the login page.",
+    "created_at": "2010-01-25T15:06:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5988",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5988#issuecomment-47588",
+    "user": "mpatel"
+}
+```
 
 I think this is no longer a problem, at least with SageNB 0.7 (#8051) and maybe even with SageNB 0.6.  If I try to reload the home page or an opened worksheet, I get redirected to the login page or to a page with a message, e.g.,
 
@@ -63,36 +99,91 @@ I think this is no longer a problem, at least with SageNB 0.7 (#8051) and maybe 
 Clicking "Continue" takes me to the login page.  But clicking on "Log," "Settings," or "Help" returns `404 Not Found`, instead of redirecting to the login page.
 
 
+
 ---
 
-Comment by mpatel created at 2010-01-25 16:38:28
+archive/issue_comments_047589.json:
+```json
+{
+    "body": "Actually, this may still be a problem in WebKit browsers.",
+    "created_at": "2010-01-25T16:38:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5988",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5988#issuecomment-47589",
+    "user": "mpatel"
+}
+```
 
 Actually, this may still be a problem in WebKit browsers.
 
 
+
 ---
 
-Comment by kcrisman created at 2014-12-10 18:57:25
+archive/issue_comments_047590.json:
+```json
+{
+    "body": "I cannot replicate this in Safari, Chrome, or FF on Mac.  The \"searching for Sage server\" takes care of most instances, and I don't see the page mentioned above.  Presumably the flask transition?",
+    "created_at": "2014-12-10T18:57:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5988",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5988#issuecomment-47590",
+    "user": "kcrisman"
+}
+```
 
 I cannot replicate this in Safari, Chrome, or FF on Mac.  The "searching for Sage server" takes care of most instances, and I don't see the page mentioned above.  Presumably the flask transition?
 
 
+
 ---
 
-Comment by kcrisman created at 2014-12-10 18:57:25
+archive/issue_comments_047591.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2014-12-10T18:57:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5988",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5988#issuecomment-47591",
+    "user": "kcrisman"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by kcrisman created at 2014-12-10 18:57:31
+archive/issue_comments_047592.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2014-12-10T18:57:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5988",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5988#issuecomment-47592",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by vbraun created at 2014-12-11 18:37:04
+archive/issue_comments_047593.json:
+```json
+{
+    "body": "Resolution: worksforme",
+    "created_at": "2014-12-11T18:37:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5988",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5988#issuecomment-47593",
+    "user": "vbraun"
+}
+```
 
 Resolution: worksforme

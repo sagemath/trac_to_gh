@@ -1,11 +1,21 @@
 # Issue 3719: bug in group cohomology
 
-Issue created by migration from https://trac.sagemath.org/ticket/3719
-
-Original creator: wdj
-
-Original creation time: 2008-07-24 11:16:49
-
+archive/issues_003719.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  alexghitza\n\nAs reported by Ursula Whitcher\n\n\n```\nsage: G = SymmetricGroup(4)\nsage: G.cohomology(1,2)\n```\n\nyields an error. The problem is a bug in the current version of the GAP package HAP, version 1.8.5. The latest version 1.8.7 but there the bug still exists\n\n\n```\ngap> G := SymmetricGroup(4);\nSym( [ 1 .. 4 ] )\ngap> GroupCohomology(G,1); ## an improvement over 1.8.5\n[  ]\ngap> GroupCohomology(G,1,2);\nList Element: <position> must be a positive integer (not a integer) at\nif IsInt( C!.fpIntHom[n] )  then\n...\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3719\n\n",
+    "created_at": "2008-07-24T11:16:49Z",
+    "labels": [
+        "algebra",
+        "major",
+        "bug"
+    ],
+    "title": "bug in group cohomology",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3719",
+    "user": "wdj"
+}
+```
 Assignee: tbd
 
 CC:  alexghitza
@@ -34,18 +44,44 @@ if IsInt( C!.fpIntHom[n] )  then
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3719
+
+
+
+
 
 ---
 
-Comment by wdj created at 2008-08-03 02:35:14
+archive/issue_comments_026386.json:
+```json
+{
+    "body": "I posted a new gap_packages archive to\nhttp://sage.math.washington.edu/home/wdj/patches/gap_packages-4.4.10_6.spkg",
+    "created_at": "2008-08-03T02:35:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3719#issuecomment-26386",
+    "user": "wdj"
+}
+```
 
 I posted a new gap_packages archive to
 http://sage.math.washington.edu/home/wdj/patches/gap_packages-4.4.10_6.spkg
 
 
+
 ---
 
-Comment by wdj created at 2008-08-03 02:38:32
+archive/issue_comments_026387.json:
+```json
+{
+    "body": "Sorry, meant to add that this passes sage -testall on amd64 hardy heron and includes hap1.8.8 which fixes the problem reported above.\n\n\n```\nsage: gap.eval('LoadPackage(\"hap\")')\n'true'\nsage: G = SymmetricGroup(4)\nsage: G.cohomology(1,2)\nMultiplicative Abelian Group isomorphic to C2\n```\n",
+    "created_at": "2008-08-03T02:38:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3719#issuecomment-26387",
+    "user": "wdj"
+}
+```
 
 Sorry, meant to add that this passes sage -testall on amd64 hardy heron and includes hap1.8.8 which fixes the problem reported above.
 
@@ -60,9 +96,20 @@ Multiplicative Abelian Group isomorphic to C2
 
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-03 08:13:34
+archive/issue_comments_026388.json:
+```json
+{
+    "body": "David,\n\nplease also add an optional doctest that verifies that the issue has been fixed.\n\nCheers,\n\nMichael",
+    "created_at": "2008-08-03T08:13:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3719#issuecomment-26388",
+    "user": "mabshoff"
+}
+```
 
 David,
 
@@ -73,17 +120,39 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by wdj created at 2008-08-03 12:13:28
+archive/issue_comments_026389.json:
+```json
+{
+    "body": "Michael:\nYou mean, supply a patch to permgroup.py with this addition to the docstring to the group_cohomology method for a new trac ticket?",
+    "created_at": "2008-08-03T12:13:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3719#issuecomment-26389",
+    "user": "wdj"
+}
+```
 
 Michael:
 You mean, supply a patch to permgroup.py with this addition to the docstring to the group_cohomology method for a new trac ticket?
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-03 13:51:02
+archive/issue_comments_026390.json:
+```json
+{
+    "body": "Replying to [comment:5 wdj]:\n> Michael:\n> You mean, supply a patch to permgroup.py with this addition to the docstring to the group_cohomology method for a new trac ticket?\n\nYes, it should be an optional doctest. I am somewhat concerned that the author of the GAP package just rereleased the package with the bug fix instead of incrementing the release number. Since various packaging efforts are under way I could imagine something like this not getting fixed upstream in other distributions, so the doctest when run with optional flags would show that the problem remains unfixed. \n\nIt is still my plan to used optional testing in the future at least for the build on sage.math per default.\n\nCheers,\n\nMichael",
+    "created_at": "2008-08-03T13:51:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3719#issuecomment-26390",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:5 wdj]:
 > Michael:
@@ -98,14 +167,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by wdj created at 2008-08-03 14:48:09
+archive/issue_comments_026391.json:
+```json
+{
+    "body": "docstring addition patch based on 3.1.alpha0",
+    "created_at": "2008-08-03T14:48:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3719#issuecomment-26391",
+    "user": "wdj"
+}
+```
 
 docstring addition patch based on 3.1.alpha0
 
 
+
 ---
+
+archive/issue_comments_026392.json:
+```json
+{
+    "body": "Attachment\n\nOkay, I just attached the patch you requested to this ticket. (I wasn't sure if it needed a new ticket or not.) It passes sage -t but it dawned on me afterwards that sage -t would not test for optional docstring additions. Anyway, hope this is what you were looking for.\n\nBTW, I am one of the webmasters for GAP (hence involved wityh package updates) and you can be sure that hap 1.8.8 will definitely get applied upstream, probably in the next week or so.",
+    "created_at": "2008-08-03T14:54:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3719#issuecomment-26392",
+    "user": "wdj"
+}
+```
 
 Attachment
 
@@ -114,9 +207,20 @@ Okay, I just attached the patch you requested to this ticket. (I wasn't sure if 
 BTW, I am one of the webmasters for GAP (hence involved wityh package updates) and you can be sure that hap 1.8.8 will definitely get applied upstream, probably in the next week or so.
 
 
+
 ---
 
-Comment by was created at 2008-08-03 17:48:28
+archive/issue_comments_026393.json:
+```json
+{
+    "body": "> Okay, I just attached the patch you requested to this ticket. (I wasn't sure\n>  if it needed a new ticket or not.) It passes sage -t but it dawned on \n> me afterwards that sage -t would not test for optional docstring additions. \n\nUse\n\n```\n\n  sage -t --optional \n\n```\n",
+    "created_at": "2008-08-03T17:48:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3719#issuecomment-26393",
+    "user": "was"
+}
+```
 
 > Okay, I just attached the patch you requested to this ticket. (I wasn't sure
 >  if it needed a new ticket or not.) It passes sage -t but it dawned on 
@@ -132,39 +236,96 @@ Use
 
 
 
+
 ---
+
+archive/issue_comments_026394.json:
+```json
+{
+    "body": "Attachment\n\nbased on 3.1.alpha0 and probably the previous patch",
+    "created_at": "2008-08-04T04:02:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3719#issuecomment-26394",
+    "user": "wdj"
+}
+```
 
 Attachment
 
 based on 3.1.alpha0 and probably the previous patch
 
 
+
 ---
 
-Comment by wdj created at 2008-08-04 04:08:31
+archive/issue_comments_026395.json:
+```json
+{
+    "body": "Okay, the attached passes sage -t --optional\nI had to make some changes to the code. For some reason, it seems gap packages were not loading for me properly (eg, gap.eval('LoadPackage(\"hap\")') gave a traceback the first time but loaded it the second time...). That was fixed with some try/except trickery which seems harmless even if packages do load as they should. Also, GAP's RequirePackage is actually being deprecated, so I replaced them with the preferred LoadPackage. Finally, Molien series do not require an optional package, so I removed some comments in the docstring for that method.\nHope this is okay now.",
+    "created_at": "2008-08-04T04:08:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3719#issuecomment-26395",
+    "user": "wdj"
+}
+```
 
 Okay, the attached passes sage -t --optional
 I had to make some changes to the code. For some reason, it seems gap packages were not loading for me properly (eg, gap.eval('LoadPackage("hap")') gave a traceback the first time but loaded it the second time...). That was fixed with some try/except trickery which seems harmless even if packages do load as they should. Also, GAP's RequirePackage is actually being deprecated, so I replaced them with the preferred LoadPackage. Finally, Molien series do not require an optional package, so I removed some comments in the docstring for that method.
 Hope this is okay now.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2008-08-27 06:44:47
+archive/issue_comments_026396.json:
+```json
+{
+    "body": "Looks good.  The new spkg fixes the problem that was reported, and the few things that broke in the upgrade are fixed by the two patches.",
+    "created_at": "2008-08-27T06:44:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3719#issuecomment-26396",
+    "user": "AlexGhitza"
+}
+```
 
 Looks good.  The new spkg fixes the problem that was reported, and the few things that broke in the upgrade are fixed by the two patches.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-27 08:08:18
+archive/issue_comments_026397.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-08-27T08:08:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3719#issuecomment-26397",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-27 08:08:18
+archive/issue_comments_026398.json:
+```json
+{
+    "body": "Merged both patches in Sage 3.1.2.alpha1.\n\nDavid,\n\nI added an hg repo to the spkg (but kept the p6 patchlevel). Please base future spkgs on the spkg\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.1.2/alpha1/gap_packages-4.4.10_6.spkg\n\nCheers,\n\nMichael",
+    "created_at": "2008-08-27T08:08:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3719#issuecomment-26398",
+    "user": "mabshoff"
+}
+```
 
 Merged both patches in Sage 3.1.2.alpha1.
 

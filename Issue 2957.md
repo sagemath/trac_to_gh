@@ -1,11 +1,21 @@
 # Issue 2957: Singular multivariate polynomials are buggy on exponent overflow
 
-Issue created by migration from https://trac.sagemath.org/ticket/2957
-
-Original creator: cwitty
-
-Original creation time: 2008-04-19 15:33:21
-
+archive/issues_002957.json:
+```json
+{
+    "body": "Assignee: somebody\n\nOn 64-bit x86, exponents truncate to 32 bits:\n\n```\nsage: K.<x,y> = QQ[]\nsage: ((x^12345)^54321)^12345\nx^2065457633\nsage: 12345*54321*12345\n8278467437025\nsage: (12345*54321*12345) % 2^32\n2065457633\n```\n\n\nOn 32-bit x86, exponents truncate to 16 bits, and overflow from one variable to another (!!!):\n\n```\nsage: K.<x,y> = QQ[]\nsage: (x^12345)^54321\nx^28393*y^10232\nsage: (12345*54321) // 2^16\n10232\nsage: (12345*54321) % 2^16\n28393\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2957\n\n",
+    "created_at": "2008-04-19T15:33:21Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "bug"
+    ],
+    "title": "Singular multivariate polynomials are buggy on exponent overflow",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2957",
+    "user": "cwitty"
+}
+```
 Assignee: somebody
 
 On 64-bit x86, exponents truncate to 32 bits:
@@ -35,10 +45,25 @@ sage: (12345*54321) % 2^16
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2957
+
+
+
+
 
 ---
 
-Comment by malb created at 2009-01-23 08:55:29
+archive/issue_comments_020399.json:
+```json
+{
+    "body": "I'm going to upload a fix in a sec, but it comes at a cost:\n\n## Before\n\n```\nsage: P.<x,y> = PolynomialRing(QQ)\nsage: %timeit x*y\n1000000 loops, best of 3: 288 ns per loop\n\nsage: f = x + 1\nsage: g = y + 1\nsage: %timeit f*g\n1000000 loops, best of 3: 462 ns per loop\n```\n\n\n## After\n\n```\nsage: P.<x,y> = PolynomialRing(QQ)\nsage: %timeit x*y\n1000000 loops, best of 3: 314 ns per loop\n\nsage: f = x + 1\nsage: g = y + 1\nsage: %timeit f*g\n1000000 loops, best of 3: 501 ns per loop\n```\n",
+    "created_at": "2009-01-23T08:55:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2957",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2957#issuecomment-20399",
+    "user": "malb"
+}
+```
 
 I'm going to upload a fix in a sec, but it comes at a cost:
 
@@ -71,49 +96,117 @@ sage: %timeit f*g
 
 
 
+
 ---
 
-Comment by malb created at 2009-01-24 10:56:09
+archive/issue_comments_020400.json:
+```json
+{
+    "body": "I just replaced the existing patch with a new one which improves performance. Burcin spotted earlier, that I forgot to assign a type to `max_exponent_size`. With that, the timing difference is in the range of the normal noise.",
+    "created_at": "2009-01-24T10:56:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2957",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2957#issuecomment-20400",
+    "user": "malb"
+}
+```
 
 I just replaced the existing patch with a new one which improves performance. Burcin spotted earlier, that I forgot to assign a type to `max_exponent_size`. With that, the timing difference is in the range of the normal noise.
 
 
+
 ---
 
-Comment by burcin created at 2009-01-24 18:39:13
+archive/issue_comments_020401.json:
+```json
+{
+    "body": "We already discussed this with malb, boothby and was extensively. Here are the points here for reference:\n* the return value of the function `p_GetMaxExp` is an unsigned long, fixing this should let one remove the esum < 0 check\n* `max_exponent_size` in `multi_polynomial_libsingular.pyx` should be declared an `unsigned long`\n* adding an `unlikely` hint for `esum > max_exponent_size` might reduce the speed regression even further\n\nBoothby also remarked that checking for total degree before the degree of each variable might help. Looking at the code again, I think we only check the total degree.",
+    "created_at": "2009-01-24T18:39:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2957",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2957#issuecomment-20401",
+    "user": "burcin"
+}
+```
 
 We already discussed this with malb, boothby and was extensively. Here are the points here for reference:
- * the return value of the function `p_GetMaxExp` is an unsigned long, fixing this should let one remove the esum < 0 check
- * `max_exponent_size` in `multi_polynomial_libsingular.pyx` should be declared an `unsigned long`
- * adding an `unlikely` hint for `esum > max_exponent_size` might reduce the speed regression even further
+* the return value of the function `p_GetMaxExp` is an unsigned long, fixing this should let one remove the esum < 0 check
+* `max_exponent_size` in `multi_polynomial_libsingular.pyx` should be declared an `unsigned long`
+* adding an `unlikely` hint for `esum > max_exponent_size` might reduce the speed regression even further
 
 Boothby also remarked that checking for total degree before the degree of each variable might help. Looking at the code again, I think we only check the total degree.
 
 
+
 ---
 
-Comment by burcin created at 2009-01-24 23:22:54
+archive/issue_comments_020402.json:
+```json
+{
+    "body": "The `_imul_` method also needs the check.",
+    "created_at": "2009-01-24T23:22:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2957",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2957#issuecomment-20402",
+    "user": "burcin"
+}
+```
 
 The `_imul_` method also needs the check.
 
 
+
 ---
 
-Comment by malb created at 2009-01-25 09:02:10
+archive/issue_comments_020403.json:
+```json
+{
+    "body": "newest version",
+    "created_at": "2009-01-25T09:02:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2957",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2957#issuecomment-20403",
+    "user": "malb"
+}
+```
 
 newest version
 
 
+
 ---
+
+archive/issue_comments_020404.json:
+```json
+{
+    "body": "Attachment\n\nBurcin agrees that this is a positive review now.",
+    "created_at": "2009-01-25T09:03:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2957",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2957#issuecomment-20404",
+    "user": "malb"
+}
+```
 
 Attachment
 
 Burcin agrees that this is a positive review now.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-28 14:11:59
+archive/issue_comments_020405.json:
+```json
+{
+    "body": "Merged in Sage 3.3.alpha3.\n\nCheers,\n\nMichael",
+    "created_at": "2009-01-28T14:11:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2957",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2957#issuecomment-20405",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.3.alpha3.
 
@@ -122,8 +215,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-28 14:11:59
+archive/issue_comments_020406.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-01-28T14:11:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2957",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2957#issuecomment-20406",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

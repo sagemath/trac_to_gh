@@ -1,11 +1,21 @@
 # Issue 4445: is_isomorphic throws an error when the graph is compared to itself
 
-Issue created by migration from https://trac.sagemath.org/ticket/4445
-
-Original creator: jason
-
-Original creation time: 2008-11-05 15:04:17
-
+archive/issues_004445.json:
+```json
+{
+    "body": "Assignee: rlm\n\nConsider:\n\n\n```\nsage: g=graphs.HeawoodGraph()\nsage: g.is_isomorphic(g)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/jason/<ipython console> in <module>()\n\n/home/jason/sage/local/lib/python2.5/site-packages/sage/graphs/graph.pyc in is_isomorphic(self, other, certify, verbosity, edge_labels)\n   6540             G2 = other; partition2 = [other.vertices()]\n   6541         from sage.misc.flatten import flatten\n-> 6542         isom = isomorphic(G, G2, partition, flatten(partition2, max_level=1), (self._directed or self.loops()), 1)\n   6543         if not isom and certify:\n   6544             return False, None\n\n/home/jason/sage/local/lib/python2.5/site-packages/sage/groups/perm_gps/partn_ref/refinement_graphs.so in sage.groups.perm_gps.partn_ref.refinement_graphs.isomorphic (sage/groups/perm_gps/partn_ref/refinement_graphs.c:9946)()\n\nTypeError: 'NoneType' object is unsubscriptable\n```\n\n\nHowever, \n\n```\nsage: g.is_isomorphic(graphs.HeawoodGraph())\nTrue\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4445\n\n",
+    "created_at": "2008-11-05T15:04:17Z",
+    "labels": [
+        "graph theory",
+        "major",
+        "bug"
+    ],
+    "title": "is_isomorphic throws an error when the graph is compared to itself",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4445",
+    "user": "jason"
+}
+```
 Assignee: rlm
 
 Consider:
@@ -41,8 +51,25 @@ True
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4445
+
+
+
+
 
 ---
+
+archive/issue_comments_032702.json:
+```json
+{
+    "body": "Attachment\n\nThis does indeed seem to fix the problem.  Thanks for the speedy work!  doctests in graph.py pass.\n\nPositive review.",
+    "created_at": "2008-11-05T20:31:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4445",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4445#issuecomment-32702",
+    "user": "jason"
+}
+```
 
 Attachment
 
@@ -51,15 +78,37 @@ This does indeed seem to fix the problem.  Thanks for the speedy work!  doctests
 Positive review.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-05 21:25:37
+archive/issue_comments_032703.json:
+```json
+{
+    "body": "Merged in Sage 3.2.alpha3",
+    "created_at": "2008-11-05T21:25:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4445",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4445#issuecomment-32703",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.2.alpha3
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-05 21:25:37
+archive/issue_comments_032704.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-11-05T21:25:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4445",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4445#issuecomment-32704",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

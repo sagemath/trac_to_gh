@@ -1,22 +1,32 @@
 # Issue 9735: Numerical noise on sage/stats/hmm/chmm.pyx on both Solaris x86 and OpenSolaris x86
 
-Issue created by migration from https://trac.sagemath.org/ticket/9735
-
-Original creator: drkirkby
-
-Original creation time: 2010-08-12 16:55:29
-
+archive/issues_009735.json:
+```json
+{
+    "body": "Assignee: mvngu\n\nThe following test failure seen on both a Sun Ultra 27 running OpenSolaris 06/2009 and a Dell Optiplex 755 running Solaris 10 on the x86 processor. \n\n## On a Sun Ultra 27 running OpenSolaris\n* Sun Ultra 27 \n* 3.33 GHz Intel W3580 Xeon. Quad core. 8 threads. \n* 12 GB RAM\n* OpenSolaris 2009.06 snv_134b X86\n* Sage 4.5.3.alpha0\n* gcc 4.5.0\n\n```\nsage -t  -long devel/sage/sage/stats/hmm/chmm.pyx\n**********************************************************************\nFile \"/export/home/drkirkby/32/sage-4.5.3.alpha0/devel/sage-main/sage/stats/hmm/chmm.pyx\", line 570:\n    sage: m.viterbi([0,1,10,10,1])\nExpected:\n    ([0, 0, 1, 1, 0], -9.0604285688230899)\nGot:\n    ([0, 0, 1, 1, 0], -9.0604285688230917)\n**********************************************************************\nFile \"/export/home/drkirkby/32/sage-4.5.3.alpha0/devel/sage-main/sage/stats/hmm/chmm.pyx\", line 132:\n    sage: m.baum_welch(obs)\nExpected:\n    (-10.610333495739708, 14)\nGot:\n    (-10.61033349573971, 14)\n**********************************************************************\nFile \"/export/home/drkirkby/32/sage-4.5.3.alpha0/devel/sage-main/sage/stats/hmm/chmm.pyx\", line 134:\n    sage: m.log_likelihood(obs)\nExpected:\n    -10.610333495739708\nGot:\n    -10.61033349573971\n**********************************************************************\n2 items had failures:\n   1 of   7 in __main__.example_15\n   2 of  12 in __main__.example_2\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file /export/home/drkirkby/.sage//tmp/.doctest_chmm.py\n\t [2.9 s]\n```\n\n\n## On a Dell Optiplex 755 running Solaris 10 x86\n* Dell Optiplex 755\n* 2.4 GHz Quad-Core Intel Core Q6600 \n* 8 GB RAM\n* Solaris 10 x86 (update 5, 5/08)\n* gcc 4.5.1 configured to use the Sun linker and GNU assembler from binutils-2.20.1. \n* 32-bit build. \n* Using sage-4.5.2.rc1\n\n```\nsage -t  -long devel/sage/sage/stats/hmm/chmm.pyx\n**********************************************************************\nFile \"/home/palmieri/fulvia/32bit/sage-4.5.2.rc1/devel/sage-main/sage/stats/hmm/chmm.pyx\", line 570:\n    sage: m.viterbi([0,1,10,10,1])\nExpected:\n    ([0, 0, 1, 1, 0], -9.0604285688230899)\nGot:\n    ([0, 0, 1, 1, 0], -9.0604285688230917)\n**********************************************************************\nFile \"/home/palmieri/fulvia/32bit/sage-4.5.2.rc1/devel/sage-main/sage/stats/hmm/chmm.pyx\", line 132:\n    sage: m.baum_welch(obs)\nExpected:\n    (-10.610333495739708, 14)\nGot:\n    (-10.61033349573971, 14)\n**********************************************************************\nFile \"/home/palmieri/fulvia/32bit/sage-4.5.2.rc1/devel/sage-main/sage/stats/hmm/chmm.pyx\", line 134:\n    sage: m.log_likelihood(obs)\nExpected:\n    -10.610333495739708\nGot:\n    -10.61033349573971\n**********************************************************************\n2 items had failures:\n   1 of   7 in __main__.example_15\n   2 of  12 in __main__.example_2\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file /home/palmieri/.sage_fulvia/tmp/.doctest_chmm.py\n\t [11.4 s]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9735\n\n",
+    "created_at": "2010-08-12T16:55:29Z",
+    "labels": [
+        "doctest coverage",
+        "major",
+        "bug"
+    ],
+    "title": "Numerical noise on sage/stats/hmm/chmm.pyx on both Solaris x86 and OpenSolaris x86",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9735",
+    "user": "drkirkby"
+}
+```
 Assignee: mvngu
 
 The following test failure seen on both a Sun Ultra 27 running OpenSolaris 06/2009 and a Dell Optiplex 755 running Solaris 10 on the x86 processor. 
 
 ## On a Sun Ultra 27 running OpenSolaris
- * Sun Ultra 27 
- * 3.33 GHz Intel W3580 Xeon. Quad core. 8 threads. 
- * 12 GB RAM
- * OpenSolaris 2009.06 snv_134b X86
- * Sage 4.5.3.alpha0
- * gcc 4.5.0
+* Sun Ultra 27 
+* 3.33 GHz Intel W3580 Xeon. Quad core. 8 threads. 
+* 12 GB RAM
+* OpenSolaris 2009.06 snv_134b X86
+* Sage 4.5.3.alpha0
+* gcc 4.5.0
 
 ```
 sage -t  -long devel/sage/sage/stats/hmm/chmm.pyx
@@ -52,13 +62,13 @@ For whitespace errors, see the file /export/home/drkirkby/.sage//tmp/.doctest_ch
 
 
 ## On a Dell Optiplex 755 running Solaris 10 x86
- * Dell Optiplex 755
- * 2.4 GHz Quad-Core Intel Core Q6600 
- * 8 GB RAM
- * Solaris 10 x86 (update 5, 5/08)
- * gcc 4.5.1 configured to use the Sun linker and GNU assembler from binutils-2.20.1. 
- * 32-bit build. 
- * Using sage-4.5.2.rc1
+* Dell Optiplex 755
+* 2.4 GHz Quad-Core Intel Core Q6600 
+* 8 GB RAM
+* Solaris 10 x86 (update 5, 5/08)
+* gcc 4.5.1 configured to use the Sun linker and GNU assembler from binutils-2.20.1. 
+* 32-bit build. 
+* Using sage-4.5.2.rc1
 
 ```
 sage -t  -long devel/sage/sage/stats/hmm/chmm.pyx
@@ -93,24 +103,63 @@ For whitespace errors, see the file /home/palmieri/.sage_fulvia/tmp/.doctest_chm
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/9735
+
+
+
+
 
 ---
 
-Comment by jhpalmieri created at 2010-08-12 22:04:05
+archive/issue_comments_095191.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-08-12T22:04:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9735",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9735#issuecomment-95191",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_095192.json:
+```json
+{
+    "body": "Attachment\n\nHere's a patch.  This fixes the problem for me on fulvia, and test still pass on sage.math (for example).",
+    "created_at": "2010-08-12T22:04:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9735",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9735#issuecomment-95192",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
 Here's a patch.  This fixes the problem for me on fulvia, and test still pass on sage.math (for example).
 
 
+
 ---
 
-Comment by drkirkby created at 2010-08-13 04:46:04
+archive/issue_comments_095193.json:
+```json
+{
+    "body": "Thanks for writing the doctest John. \n\nHere's a couple of things worth noting\n\n == Comments by others about this issue ==\n\n\n\n```\nFWIW, here is the exact expected result in (obtained from my own\nimplementation, no proof but seems to be the same):\n([0, 0, 1, 1, 0], -5/2*log(pi) - 15/2*log(2) - 1)\n\nand in high precision:\n([0, 0, 1, 1, 0],\n-9.0604285688230902559878092893189710396844880399901933346892)\n\n       Yann\n```\n\n\nand another from William Stein that:\n\n\n```\nI'm the upstream author of 100% of this code, and know precisely what\nit does, which is a sequence of floating point ops and calls to the\nmath library, which *of course* can be machine dependent.\n\nPut in dots.\n\n -- William\n```\n\n\n == Test results on my Sun Ultra 27 ==\n\nPrior to adding your patch I got a failure recorded in ptestlong.log, as noted in the ticket's description. After adding your patch, this passes. \n\n\n```\ndrkirkby@hawk:~/32/sage-4.5.3.alpha0$ ./sage -t  -long devel/sage/sage/stats/hmm/chmm.pyx\nsage -t -long \"devel/sage/sage/stats/hmm/chmm.pyx\"          \n\t [11.1 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 11.2 seconds\n```\n\n\nSo positive review. \n\nDave",
+    "created_at": "2010-08-13T04:46:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9735",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9735#issuecomment-95193",
+    "user": "drkirkby"
+}
+```
 
 Thanks for writing the doctest John. 
 
@@ -168,29 +217,73 @@ So positive review.
 Dave
 
 
+
 ---
 
-Comment by drkirkby created at 2010-08-13 04:46:04
+archive/issue_comments_095194.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-08-13T04:46:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9735",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9735#issuecomment-95194",
+    "user": "drkirkby"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mpatel created at 2010-08-16 21:50:10
+archive/issue_comments_095195.json:
+```json
+{
+    "body": "Changing priority from major to blocker.",
+    "created_at": "2010-08-16T21:50:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9735",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9735#issuecomment-95195",
+    "user": "mpatel"
+}
+```
 
 Changing priority from major to blocker.
 
 
+
 ---
 
-Comment by leif created at 2010-08-23 14:55:26
+archive/issue_comments_095196.json:
+```json
+{
+    "body": "Sage 4.6.prealpha3, which includes this ticket, passed all tests (`ptestlong`) on 64-bit Fedora 13 (Core2, gcc 4.4.4), see also http://trac.sagemath.org/sage_trac/ticket/9343#comment:308 .",
+    "created_at": "2010-08-23T14:55:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9735",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9735#issuecomment-95196",
+    "user": "leif"
+}
+```
 
 Sage 4.6.prealpha3, which includes this ticket, passed all tests (`ptestlong`) on 64-bit Fedora 13 (Core2, gcc 4.4.4), see also http://trac.sagemath.org/sage_trac/ticket/9343#comment:308 .
 
 
+
 ---
 
-Comment by mpatel created at 2010-08-24 02:49:37
+archive/issue_comments_095197.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-08-24T02:49:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9735",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9735#issuecomment-95197",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 8154: Enhencement for crystals
 
-Issue created by migration from https://trac.sagemath.org/ticket/8154
-
-Original creator: aschilling
-
-Original creation time: 2010-02-02 16:31:40
-
+archive/issues_008154.json:
+```json
+{
+    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat\n\nKeywords: combinatorics, crystals, KR crystals\n\nNew features for crystals:\n\n- Started framework for general highest weight crystals in /combinat/crystals/highest_weight.py\n  - Implementation of finite dimensional highest weight crystals for type E6 and E7\n- Added new class for direct sums of crystals in /combinat/crystals/direct_sum.py\n- Added a new crystal morphism function for acyclic crystals\n- Added the Demazure operators on crystals\n- Added Demazure characters for finite crystals in the ambient weight lattice\n- Added _test_fast_iter method to compare two different ways of creating list of classical crystals\n\nNew features for Kirillov-Reshetikhin crystals:\n\n- Implementation of Kirillov-Reshetikhin crystals B^{r,s} of type E_6^{(1)} for r=1,2,6\n- Pointer to KirillovReshetikhin crystals given in /combinat/crystals/affine.py (as requested by Dan Bump)\n- Added R-matrix for tensor product of two KR crystals\n\nBug fix:\n\n- Fixed whitespace problems in\n/combinat/crystals/crystals.py\n/combinat/crystals/kirillov_reshetikhin.py\n/combinat/crystals/affine.py\n/combinat/crystals/spins.py\n/combinat/crystals/tensor_products.py\n/combinat/crystals/fast_crystals.py\n/combinat/crystals/letters.py\n\nDepends on trac ticket #7978 (trac_7978_crystal_cleanup-as.patch)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8154\n\n",
+    "created_at": "2010-02-02T16:31:40Z",
+    "labels": [
+        "combinatorics",
+        "major",
+        "enhancement"
+    ],
+    "title": "Enhencement for crystals",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8154",
+    "user": "aschilling"
+}
+```
 Assignee: sage-combinat
 
 CC:  sage-combinat
@@ -41,29 +51,79 @@ Bug fix:
 
 Depends on trac ticket #7978 (trac_7978_crystal_cleanup-as.patch)
 
+Issue created by migration from https://trac.sagemath.org/ticket/8154
+
+
+
+
 
 ---
 
-Comment by aschilling created at 2010-02-02 16:58:44
+archive/issue_comments_071692.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-02-02T16:58:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8154",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8154#issuecomment-71692",
+    "user": "aschilling"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_071693.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-02-02T22:51:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8154",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8154#issuecomment-71693",
+    "user": "aschilling"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by bump created at 2010-02-12 13:05:51
+archive/issue_comments_071694.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-02-12T13:05:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8154",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8154#issuecomment-71694",
+    "user": "bump"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by bump created at 2010-02-12 13:05:51
+archive/issue_comments_071695.json:
+```json
+{
+    "body": "The patch (which goes on top of #7978) applies cleanly to Sage 4.3.2. It passes sage -testall.\nI also tested various things to my satisfaction.\n\nThe Demazure operators can be described at two different levels: either as difference\noperators on the weight space or (following Littelmann) as operators on the crystal.\nHere they are implemented as operators on the crystal. They seem to work correctly.\nLater it might be useful to implement them independently in \nsage.combinat.root_systems.weyl_characters in the WeightRing.\n\nThe direct sums of crystals are implemented.This is essentially just the disjoint\nunion. One point is that if two component crystals are equal, a \"keepkey\" can be\nused to paint them different colors. Then the disjoint union produces a multiset.\nThis scheme is inherited from the parent class DisjointUnionEnumeratedSets where\nit is noted that it is subject to future change. I suppose this could be improved\nbut that changes must first come in sage.sets.disjoint_union_enumerated_set.py.\n\nThe framework for general highest weight crystals is important. Currently one can\nproduce all finite highest weight crystals for types A,B,C,D and G2, but one must know how to do it.\nFor types A and C, the CrystalOfTableaux is sufficient but for types B and D one has half integral\nweights and crystals with half-integral highest weight must be created by tensoring a spin crystal\nwith a CrystalOfTableaux. The framework in highest_weight.py is a step towards making this easier.\nIt should not be hard to implement this for the finite classical Cartan types.\n\nVarious other enhancements and fixes.\n\nI tested the patch to my satisfaction and recommend merging it.",
+    "created_at": "2010-02-12T13:05:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8154",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8154#issuecomment-71695",
+    "user": "bump"
+}
+```
 
 The patch (which goes on top of #7978) applies cleanly to Sage 4.3.2. It passes sage -testall.
 I also tested various things to my satisfaction.
@@ -93,8 +153,19 @@ Various other enhancements and fixes.
 I tested the patch to my satisfaction and recommend merging it.
 
 
+
 ---
 
-Comment by mvngu created at 2010-02-14 14:34:40
+archive/issue_comments_071696.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-02-14T14:34:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8154",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8154#issuecomment-71696",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

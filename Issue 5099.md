@@ -1,11 +1,21 @@
 # Issue 5099: rank for mod n sparse matrices is broken
 
-Issue created by migration from https://trac.sagemath.org/ticket/5099
-
-Original creator: jhpalmieri
-
-Original creation time: 2009-01-25 16:46:23
-
+archive/issues_005099.json:
+```json
+{
+    "body": "Assignee: was\n\nKeywords: sparse, rank\n\nOn both sage.math (sage 3.2.3) and on my iMac (sage 3.3.alpha1), running\n\n```\nmatrix(GF(3), 0, 0, {}).rank()\n```\n\nis broken: sometimes I get 0, sometimes I get 1, sometimes I get `RuntimeError`. Same goes for \n\n```\nmatrix(GF(3), 0, 0, sparse=True).rank()\n```\n\nand \n\n```\nmatrix(GF(3), 0, 10, sparse=True).rank()\n```\n\nFor what it's worth, `matrix(GF(3), 10, 0, sparse=True).rank()` seems okay.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5099\n\n",
+    "created_at": "2009-01-25T16:46:23Z",
+    "labels": [
+        "linear algebra",
+        "critical",
+        "bug"
+    ],
+    "title": "rank for mod n sparse matrices is broken",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5099",
+    "user": "jhpalmieri"
+}
+```
 Assignee: was
 
 Keywords: sparse, rank
@@ -32,10 +42,25 @@ For what it's worth, `matrix(GF(3), 10, 0, sparse=True).rank()` seems okay.
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5099
+
+
+
+
 
 ---
 
-Comment by hivert created at 2009-02-26 20:05:27
+archive/issue_comments_038920.json:
+```json
+{
+    "body": "I Just discovered this problem, otherwise I would had taken care of it in #5256. This problem is very likely to occur for other kind of matrices. I suggest to expand `test_trivial_matrices_inverse` (from `sage.matrix.matrix_space`) which already tests `det`,`is_invertible` and `inverse` to also test the `rank` method. \n\nIf you need it, I can also investigate further...\n\nCheers,\n\nFlorent",
+    "created_at": "2009-02-26T20:05:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5099",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5099#issuecomment-38920",
+    "user": "hivert"
+}
+```
 
 I Just discovered this problem, otherwise I would had taken care of it in #5256. This problem is very likely to occur for other kind of matrices. I suggest to expand `test_trivial_matrices_inverse` (from `sage.matrix.matrix_space`) which already tests `det`,`is_invertible` and `inverse` to also test the `rank` method. 
 
@@ -46,46 +71,114 @@ Cheers,
 Florent
 
 
+
 ---
 
-Comment by hivert created at 2009-02-26 21:33:57
+archive/issue_comments_038921.json:
+```json
+{
+    "body": "Changing assignee from was to hivert.",
+    "created_at": "2009-02-26T21:33:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5099",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5099#issuecomment-38921",
+    "user": "hivert"
+}
+```
 
 Changing assignee from was to hivert.
 
 
+
 ---
 
-Comment by hivert created at 2009-02-26 21:33:57
+archive/issue_comments_038922.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-02-26T21:33:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5099",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5099#issuecomment-38922",
+    "user": "hivert"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
+
+archive/issue_comments_038923.json:
+```json
+{
+    "body": "Attachment\n\nPatch proposal",
+    "created_at": "2009-03-01T22:09:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5099",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5099#issuecomment-38923",
+    "user": "hivert"
+}
+```
 
 Attachment
 
 Patch proposal
 
 
+
 ---
 
-Comment by hivert created at 2009-03-01 22:14:35
+archive/issue_comments_038924.json:
+```json
+{
+    "body": "The patch should solve the problem and check the rank methods for trivial matrices of other type. For Q[x,y] the rank is not implemented and can't be tested. I tested it as non implemented to ensure that it will be correctly tested if someone implement it. \n\nAuthor of the patch: Florent Hivert",
+    "created_at": "2009-03-01T22:14:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5099",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5099#issuecomment-38924",
+    "user": "hivert"
+}
+```
 
 The patch should solve the problem and check the rank methods for trivial matrices of other type. For Q[x,y] the rank is not implemented and can't be tested. I tested it as non implemented to ensure that it will be correctly tested if someone implement it. 
 
 Author of the patch: Florent Hivert
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-03-03 19:39:33
+archive/issue_comments_038925.json:
+```json
+{
+    "body": "This fixes my problem.  Positive review.",
+    "created_at": "2009-03-03T19:39:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5099",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5099#issuecomment-38925",
+    "user": "jhpalmieri"
+}
+```
 
 This fixes my problem.  Positive review.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-03-05 00:45:39
+archive/issue_comments_038926.json:
+```json
+{
+    "body": "Merged in Sage 3.4.rc1.\n\nCheers,\n\nMichael",
+    "created_at": "2009-03-05T00:45:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5099",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5099#issuecomment-38926",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.4.rc1.
 
@@ -94,8 +187,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-03-05 00:45:39
+archive/issue_comments_038927.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-03-05T00:45:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5099",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5099#issuecomment-38927",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

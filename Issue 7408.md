@@ -1,28 +1,64 @@
 # Issue 7408: Improve the speed of RSK
 
-Issue created by migration from https://trac.sagemath.org/ticket/7408
-
-Original creator: mhansen
-
-Original creation time: 2009-11-07 19:43:20
-
+archive/issues_007408.json:
+```json
+{
+    "body": "Assignee: mhansen\n\nCC:  hivert\n\nThe implementation of RSK in Sage has a number of inefficiencies which add up when dealing with large permutations.  The main improvement comes from using a binary search to figure out where to insert the number.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7408\n\n",
+    "created_at": "2009-11-07T19:43:20Z",
+    "labels": [
+        "combinatorics",
+        "major",
+        "bug"
+    ],
+    "title": "Improve the speed of RSK",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7408",
+    "user": "mhansen"
+}
+```
 Assignee: mhansen
 
 CC:  hivert
 
 The implementation of RSK in Sage has a number of inefficiencies which add up when dealing with large permutations.  The main improvement comes from using a binary search to figure out where to insert the number.
 
+Issue created by migration from https://trac.sagemath.org/ticket/7408
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2009-11-07 19:44:26
+archive/issue_comments_062341.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-11-07T19:44:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7408",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7408#issuecomment-62341",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by hivert created at 2009-11-07 20:14:06
+archive/issue_comments_062342.json:
+```json
+{
+    "body": "I like this commentary of yours:\n\n```\n                #Swtich x and y\n```\n\nYou should have called you variables `t` and `i` :-)\n\n\nFlorent",
+    "created_at": "2009-11-07T20:14:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7408",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7408#issuecomment-62342",
+    "user": "hivert"
+}
+```
 
 I like this commentary of yours:
 
@@ -36,9 +72,20 @@ You should have called you variables `t` and `i` :-)
 Florent
 
 
+
 ---
 
-Comment by ylchapuy created at 2009-11-07 23:12:26
+archive/issue_comments_062343.json:
+```json
+{
+    "body": "A last slight improvement would be to avoid the burden of keeping maxes and lenths.\n\nA row version would then be:\n\n\n```\n    def robinson_schensted(self):\n        from bisect import bisect\n        p = []       #the \"left\" tableau\n        q = []       #the \"recording\" tableau\n\n        #For each x in self, insert x into the tableau p.\n        for i,x in enumerate(self):\n            row_counter = 0\n            for r in p:\n                if r[-1] > x:\n                    y_pos = bisect(r, x)\n                    x, r[y_pos] = r[y_pos], x\n                    row_counter += 1\n                else:\n                    break\n            if row_counter == len(p):\n                p.append([x])\n                q.append([i+1])\n            else:\n                r.append(x)\n                q[row_counter].append(i+1)\n\n        return [tableau.Tableau(p),tableau.Tableau(q)]\n```\n\n\nThis gives me something like a 15% speedup.",
+    "created_at": "2009-11-07T23:12:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7408",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7408#issuecomment-62343",
+    "user": "ylchapuy"
+}
+```
 
 A last slight improvement would be to avoid the burden of keeping maxes and lenths.
 
@@ -75,28 +122,74 @@ A row version would then be:
 This gives me something like a 15% speedup.
 
 
+
 ---
 
-Comment by mhansen created at 2009-11-08 07:09:22
+archive/issue_comments_062344.json:
+```json
+{
+    "body": "I've put up a new patch which incorporates Yann's ideas as well as gets rid of the row_counter bookkeeping.",
+    "created_at": "2009-11-08T07:09:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7408",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7408#issuecomment-62344",
+    "user": "mhansen"
+}
+```
 
 I've put up a new patch which incorporates Yann's ideas as well as gets rid of the row_counter bookkeeping.
 
 
+
 ---
+
+archive/issue_comments_062345.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-11-08T07:13:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7408",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7408#issuecomment-62345",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by hivert created at 2009-11-08 11:18:11
+archive/issue_comments_062346.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"Robinson-Schensted\".",
+    "created_at": "2009-11-08T11:18:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7408",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7408#issuecomment-62346",
+    "user": "hivert"
+}
+```
 
 Changing keywords from "" to "Robinson-Schensted".
 
 
+
 ---
 
-Comment by hivert created at 2009-11-08 11:18:11
+archive/issue_comments_062347.json:
+```json
+{
+    "body": "This patch greatly improve the speed of RSK even for small permutations:\n\n```\nsage: p4 = Permutations(4).list()\nsage: timeit(\"map(attrcall('robinson_schensted'), p4)\")\n625 loops, best of 3: 1.22 ms per loop\nsage: p = Permutations(1000).random_element()\nsage: timeit(\"p.robinson_schensted()\")\n25 loops, best of 3: 19.5 ms per loop\n```\n\nwhereas we had:\n\n```\nsage: timeit(\"map(attrcall('robinson_schensted'), p4)\")\n625 loops, best of 3: 1.34 ms per loop\nsage: p = Permutations(1000).random_element()\nsage: timeit(\"p.robinson_schensted()\")\n5 loops, best of 3: 265 ms per loop\n```\n\nHowever, I was not sure that bisect cut the thing correctly in case of repeated letters so I had to write another test. I'd rather see it integrated into sage.\nPlease review this minor change. \n\nOtherwise you can put a postive review. \n\nCheers,\n\nFlorent",
+    "created_at": "2009-11-08T11:18:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7408",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7408#issuecomment-62347",
+    "user": "hivert"
+}
+```
 
 This patch greatly improve the speed of RSK even for small permutations:
 
@@ -129,22 +222,57 @@ Cheers,
 Florent
 
 
+
 ---
+
+archive/issue_comments_062348.json:
+```json
+{
+    "body": "Attachment\n\nI give it a positive review.",
+    "created_at": "2009-11-08T14:06:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7408",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7408#issuecomment-62348",
+    "user": "ylchapuy"
+}
+```
 
 Attachment
 
 I give it a positive review.
 
 
+
 ---
 
-Comment by ylchapuy created at 2009-11-08 14:06:10
+archive/issue_comments_062349.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-11-08T14:06:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7408",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7408#issuecomment-62349",
+    "user": "ylchapuy"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mhansen created at 2009-11-12 06:28:33
+archive/issue_comments_062350.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-11-12T06:28:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7408",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7408#issuecomment-62350",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

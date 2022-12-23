@@ -1,11 +1,21 @@
 # Issue 2672: Fix OSX 10.5 detection code - it fails for the currect OSX 10.5.2
 
-Issue created by migration from https://trac.sagemath.org/ticket/2672
-
-Original creator: mabshoff
-
-Original creation time: 2008-03-26 07:31:30
-
+archive/issues_002672.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nThe latest OSX 10.5.2 identifies itself as \n\n```\n$ uname -a\nDarwin zippo 9.2.2 Darwin Kernel Version 9.2.2: Tue Mar  4 21:17:34\nPST 2008; root:xnu-1228.4.31~1/RELEASE_I386 i386\n```\n\nThis makes the following detection code fail:\n\n```\n$ uname -r | sed s/9\\.[0-9]\\.0/9\\.0\\.0/\n9.2.2\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2672\n\n",
+    "created_at": "2008-03-26T07:31:30Z",
+    "labels": [
+        "build",
+        "blocker",
+        "bug"
+    ],
+    "title": "Fix OSX 10.5 detection code - it fails for the currect OSX 10.5.2",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2672",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 The latest OSX 10.5.2 identifies itself as 
@@ -28,17 +38,43 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/2672
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-03-26 07:34:39
+archive/issue_comments_018389.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-03-26T07:34:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2672",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2672#issuecomment-18389",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-26 11:38:28
+archive/issue_comments_018390.json:
+```json
+{
+    "body": "We currently use the following code:\n\n```\nif [ `uname` = \"Darwin\" -a `uname -r | sed s/9\\.[0-9]\\.0/9\\.0\\.0/` = \"9.0.0\" ]; then\n    echo \"OSX 10.5.\"\nfi\n```\n\nIt needs to be\n\n```\nif [ `uname` = \"Darwin\" -a `uname -r | sed s/9\\.[0-9]\\.[0-9]/9\\.0\\.0/` = \"9.0.0\" ]; then\n    echo \"OSX 10.5.\"\nfi\n```\n\nThis will break once OSX 10.5.10 rolls around, so we might want to do something more clever.\n\nCheers,\n\nMichael",
+    "created_at": "2008-03-26T11:38:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2672",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2672#issuecomment-18390",
+    "user": "mabshoff"
+}
+```
 
 We currently use the following code:
 
@@ -63,15 +99,26 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-28 19:29:33
+archive/issue_comments_018391.json:
+```json
+{
+    "body": "The above construct is used in three spkgs:\n\n* clisp-2.41.p12\n* gmp-4.2.1.p12\n* python-2.5.1.p13\n\nFixed spkgs coming up.\n\nCheers,\n\nMichael",
+    "created_at": "2008-03-28T19:29:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2672",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2672#issuecomment-18391",
+    "user": "mabshoff"
+}
+```
 
 The above construct is used in three spkgs:
 
- * clisp-2.41.p12
- * gmp-4.2.1.p12
- * python-2.5.1.p13
+* clisp-2.41.p12
+* gmp-4.2.1.p12
+* python-2.5.1.p13
 
 Fixed spkgs coming up.
 
@@ -80,9 +127,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-28 20:19:31
+archive/issue_comments_018392.json:
+```json
+{
+    "body": "Update spkgs:\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-2.11/alpha2/clisp-2.41.p13.spkg\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-2.11/alpha2/gmp-4.2.1.p13.spkg\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-2.11/alpha2/python-2.5.1.p14.spkg\n\nBuild tested on Linux, test on OSX coming up.\n\nCheers,\n\nMichael",
+    "created_at": "2008-03-28T20:19:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2672",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2672#issuecomment-18392",
+    "user": "mabshoff"
+}
+```
 
 Update spkgs:
 
@@ -97,9 +155,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-28 20:43:03
+archive/issue_comments_018393.json:
+```json
+{
+    "body": "The above three spkgs also build fine on OSX 10.5.1. I don't have access to a 10.5.2 test box, but they should now work since I manually tested the changed to the sed script.\n\nCheers,\n\nMichael",
+    "created_at": "2008-03-28T20:43:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2672",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2672#issuecomment-18393",
+    "user": "mabshoff"
+}
+```
 
 The above three spkgs also build fine on OSX 10.5.1. I don't have access to a 10.5.2 test box, but they should now work since I manually tested the changed to the sed script.
 
@@ -108,22 +177,55 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by gfurnish created at 2008-03-28 21:45:00
+archive/issue_comments_018394.json:
+```json
+{
+    "body": "These build correctly.",
+    "created_at": "2008-03-28T21:45:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2672",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2672#issuecomment-18394",
+    "user": "gfurnish"
+}
+```
 
 These build correctly.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-28 21:54:24
+archive/issue_comments_018395.json:
+```json
+{
+    "body": "Merged in Sage 2.11.alpha2",
+    "created_at": "2008-03-28T21:54:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2672",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2672#issuecomment-18395",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.11.alpha2
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-28 21:54:24
+archive/issue_comments_018396.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-03-28T21:54:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2672",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2672#issuecomment-18396",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

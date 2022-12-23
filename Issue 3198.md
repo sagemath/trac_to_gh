@@ -1,11 +1,21 @@
 # Issue 3198: ix 64 bit OSX build support for ecm
 
-Issue created by migration from https://trac.sagemath.org/ticket/3198
-
-Original creator: mabshoff
-
-Original creation time: 2008-05-13 16:32:52
-
+archive/issues_003198.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nspkg coming up\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3198\n\n",
+    "created_at": "2008-05-13T16:32:52Z",
+    "labels": [
+        "build",
+        "major",
+        "bug"
+    ],
+    "title": "ix 64 bit OSX build support for ecm",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3198",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 spkg coming up
@@ -14,22 +24,61 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/3198
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-05-13 16:32:58
+archive/issue_comments_022102.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-05-13T16:32:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3198",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3198#issuecomment-22102",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
+
+archive/issue_comments_022103.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-05-19T05:28:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3198",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3198#issuecomment-22103",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-19 05:32:50
+archive/issue_comments_022104.json:
+```json
+{
+    "body": "The updated spkg is at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0.2/alpha1/ecm-6.1.3.p0.spkg\n\nCheers,\n\nMichael",
+    "created_at": "2008-05-19T05:32:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3198",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3198#issuecomment-22104",
+    "user": "mabshoff"
+}
+```
 
 The updated spkg is at
 
@@ -40,15 +89,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-19 05:34:44
+archive/issue_comments_022105.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-05-19T05:34:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3198",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3198#issuecomment-22105",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-19 05:34:44
+archive/issue_comments_022106.json:
+```json
+{
+    "body": "Merged in Sage 3.0.2.alpha1",
+    "created_at": "2008-05-19T05:34:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3198",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3198#issuecomment-22106",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.2.alpha1

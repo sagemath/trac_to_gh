@@ -1,11 +1,21 @@
 # Issue 5501: pickling high-precision intervals is broken
 
-Issue created by migration from https://trac.sagemath.org/ticket/5501
-
-Original creator: boothby
-
-Original creation time: 2009-03-12 15:35:45
-
+archive/issues_005501.json:
+```json
+{
+    "body": "Assignee: jkantor\n\nCC:  cwitty\n\nThe following explodes in sage 3.4:\n\n\n```\nsage: R = RealIntervalField(4000)\nsage: s = 1/R(3)\nsage: t = loads(dumps(s))Traceback (most recent call last):\n  File \"pikltest.py\", line 6, in <module>\n    t = loads(dumps(s))\n  File \"sage_object.pyx\", line 623, in \nsage.structure.sage_object.loads (sage/structure/sage_object.c:6159)\nRuntimeError: ('Unable to convert number to real interval.',\n <built-in function __create__RealIntervalFieldElement_version0>, \n(Real Interval Field with 4000 bits of precision, \n'[a.lalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalal0@-1 .. \na.lalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala\nlalalalalalalalalalalalalalalalalalalalalalalalalalalg@-1]', 32))\ninvalid data stream\ninvalid load key, 'x'.\nUnable to load pickled data.\n```\n\n\nFurthermore, it dumps the contents of dumps(s) to the console, which I'm told is a no-no because when one uses ~20kbits of precision with 24 processes via `@`parallel, the error messages are ridiculously huge.\n\nOn a personal note, I'd prefer if my CAS didn't stick its fingers in its ears and chant \"lalalala...\" whenever it doesn't like what I'm doing.  This is *not* how a mature system should behave.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5501\n\n",
+    "created_at": "2009-03-12T15:35:45Z",
+    "labels": [
+        "numerical",
+        "critical",
+        "bug"
+    ],
+    "title": "pickling high-precision intervals is broken",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5501",
+    "user": "boothby"
+}
+```
 Assignee: jkantor
 
 CC:  cwitty
@@ -58,10 +68,25 @@ Furthermore, it dumps the contents of dumps(s) to the console, which I'm told is
 
 On a personal note, I'd prefer if my CAS didn't stick its fingers in its ears and chant "lalalala..." whenever it doesn't like what I'm doing.  This is *not* how a mature system should behave.
 
+Issue created by migration from https://trac.sagemath.org/ticket/5501
+
+
+
+
 
 ---
 
-Comment by cwitty created at 2009-03-13 01:12:16
+archive/issue_comments_042729.json:
+```json
+{
+    "body": "This is presumably due to these lines from mpfi_set_str, in mpfi_io.c (in the MPFI library):\n\n```\n  char tmp[1000];\n\n  /* bzero(tmp,1000); */\n  memset(tmp,0,1000);\n\n  slen= (int)strlen(s);\n  if(slen >=1000) return -1;\n```\n\n\nAs a workaround, instead of passing the `RealIntervalFieldElement` x, you could pass (x.parent(), x.lower(), x.upper()); then on the other side, given (parent, lower, upper), reconstruct the original element with parent(lower,upper).",
+    "created_at": "2009-03-13T01:12:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5501",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5501#issuecomment-42729",
+    "user": "cwitty"
+}
+```
 
 This is presumably due to these lines from mpfi_set_str, in mpfi_io.c (in the MPFI library):
 
@@ -79,48 +104,127 @@ This is presumably due to these lines from mpfi_set_str, in mpfi_io.c (in the MP
 As a workaround, instead of passing the `RealIntervalFieldElement` x, you could pass (x.parent(), x.lower(), x.upper()); then on the other side, given (parent, lower, upper), reconstruct the original element with parent(lower,upper).
 
 
+
 ---
 
-Comment by boothby created at 2009-03-13 02:14:39
+archive/issue_comments_042730.json:
+```json
+{
+    "body": "Wow.  I'll report this upstream.  Your proposed solution looks good to me.",
+    "created_at": "2009-03-13T02:14:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5501",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5501#issuecomment-42730",
+    "user": "boothby"
+}
+```
 
 Wow.  I'll report this upstream.  Your proposed solution looks good to me.
 
 
+
 ---
+
+archive/issue_comments_042731.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-01-17T10:21:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5501",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5501#issuecomment-42731",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by robertwb created at 2010-01-17 10:22:34
+archive/issue_comments_042732.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-01-17T10:22:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5501",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5501#issuecomment-42732",
+    "user": "robertwb"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by robertwb created at 2010-01-17 10:22:34
+archive/issue_comments_042733.json:
+```json
+{
+    "body": "Yep, pickling the endpoints was the first thought I had as well.",
+    "created_at": "2010-01-17T10:22:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5501",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5501#issuecomment-42733",
+    "user": "robertwb"
+}
+```
 
 Yep, pickling the endpoints was the first thought I had as well.
 
 
+
 ---
 
-Comment by timdumol created at 2010-01-20 10:42:17
+archive/issue_comments_042734.json:
+```json
+{
+    "body": "LGTM. By the way, what's the upstream report status on this?",
+    "created_at": "2010-01-20T10:42:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5501",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5501#issuecomment-42734",
+    "user": "timdumol"
+}
+```
 
 LGTM. By the way, what's the upstream report status on this?
 
 
+
 ---
 
-Comment by timdumol created at 2010-01-20 10:42:17
+archive/issue_comments_042735.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-01-20T10:42:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5501",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5501#issuecomment-42735",
+    "user": "timdumol"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mvngu created at 2010-01-24 10:58:47
+archive/issue_comments_042736.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-24T10:58:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5501",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5501#issuecomment-42736",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

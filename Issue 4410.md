@@ -1,11 +1,21 @@
 # Issue 4410: [with patch, needs review] Map.__pow__ should return identity for power 0
 
-Issue created by migration from https://trac.sagemath.org/ticket/4410
-
-Original creator: burcin
-
-Original creation time: 2008-10-31 09:05:10
-
+archive/issues_004410.json:
+```json
+{
+    "body": "Assignee: burcin\n\nCC:  robertwb\n\n`sage.categories.map.Map.__pow__` calls `generic_power`, which messes up power 0. There is this todo note there:\n\n\n```\n        # todo -- what about the case n=0 -- need to specify the identity map somehow.\n```\n\n\nAttached patch returns the identity map for power 0.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4410\n\n",
+    "created_at": "2008-10-31T09:05:10Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch, needs review] Map.__pow__ should return identity for power 0",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4410",
+    "user": "burcin"
+}
+```
 Assignee: burcin
 
 CC:  robertwb
@@ -20,15 +30,43 @@ CC:  robertwb
 
 Attached patch returns the identity map for power 0.
 
+Issue created by migration from https://trac.sagemath.org/ticket/4410
+
+
+
+
 
 ---
 
-Comment by burcin created at 2008-10-31 09:06:10
+archive/issue_comments_032421.json:
+```json
+{
+    "body": "make Map.__pow__ return identity for power 0",
+    "created_at": "2008-10-31T09:06:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4410",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4410#issuecomment-32421",
+    "user": "burcin"
+}
+```
 
 make Map.__pow__ return identity for power 0
 
 
+
 ---
+
+archive/issue_comments_032422.json:
+```json
+{
+    "body": "Attachment\n\nThis is the suggested fix discussed by RobertWB and Burcin in IRC last night. The code looks correct and passes doctests, positive review.\n\nCheers,\n\nMichael",
+    "created_at": "2008-10-31T15:35:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4410",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4410#issuecomment-32422",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -39,15 +77,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-31 15:36:46
+archive/issue_comments_032423.json:
+```json
+{
+    "body": "Merged in Sage 3.2.alpha2",
+    "created_at": "2008-10-31T15:36:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4410",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4410#issuecomment-32423",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.2.alpha2
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-31 15:36:46
+archive/issue_comments_032424.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-10-31T15:36:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4410",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4410#issuecomment-32424",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

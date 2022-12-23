@@ -1,34 +1,81 @@
 # Issue 6975: flint package fixed to work in cygwin
 
-Issue created by migration from https://trac.sagemath.org/ticket/6975
-
-Original creator: certik
-
-Original creation time: 2009-09-21 05:19:03
-
+archive/issues_006975.json:
+```json
+{
+    "body": "Assignee: tbd\n\nfixed package is here:\n\nhttp://wstein.org/home/ondrej/patches/flint-1.3.0.p3.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/6975\n\n",
+    "created_at": "2009-09-21T05:19:03Z",
+    "labels": [
+        "algebra",
+        "major",
+        "bug"
+    ],
+    "title": "flint package fixed to work in cygwin",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6975",
+    "user": "certik"
+}
+```
 Assignee: tbd
 
 fixed package is here:
 
 http://wstein.org/home/ondrej/patches/flint-1.3.0.p3.spkg
 
+Issue created by migration from https://trac.sagemath.org/ticket/6975
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2009-09-25 05:17:47
+archive/issue_comments_057693.json:
+```json
+{
+    "body": "See #6919 for a FLINT 1.5.0 spkg which is based off the spkg here.",
+    "created_at": "2009-09-25T05:17:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6975",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6975#issuecomment-57693",
+    "user": "mhansen"
+}
+```
 
 See #6919 for a FLINT 1.5.0 spkg which is based off the spkg here.
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-28 04:39:50
+archive/issue_comments_057694.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2009-09-28T04:39:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6975",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6975#issuecomment-57694",
+    "user": "mvngu"
+}
+```
 
 Resolution: duplicate
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-28 04:39:50
+archive/issue_comments_057695.json:
+```json
+{
+    "body": "Closing this ticket as a duplicate of #6919.",
+    "created_at": "2009-09-28T04:39:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6975",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6975#issuecomment-57695",
+    "user": "mvngu"
+}
+```
 
 Closing this ticket as a duplicate of #6919.

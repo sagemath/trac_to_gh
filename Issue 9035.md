@@ -1,38 +1,98 @@
 # Issue 9035: add degree argument to univariate polynomial reverse() method
 
-Issue created by migration from https://trac.sagemath.org/ticket/9035
-
-Original creator: burcin
-
-Original creation time: 2010-05-24 13:06:18
-
+archive/issues_009035.json:
+```json
+{
+    "body": "Assignee: AlexGhitza\n\nAttached patch adds a `degree` argument to the `reverse()` method of univariate polynomials and wraps the methods provided by FLINT in `polynomial_zmod_flint` and `polynomial_integer_dense_flint` classes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9035\n\n",
+    "created_at": "2010-05-24T13:06:18Z",
+    "labels": [
+        "basic arithmetic",
+        "minor",
+        "enhancement"
+    ],
+    "title": "add degree argument to univariate polynomial reverse() method",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9035",
+    "user": "burcin"
+}
+```
 Assignee: AlexGhitza
 
 Attached patch adds a `degree` argument to the `reverse()` method of univariate polynomials and wraps the methods provided by FLINT in `polynomial_zmod_flint` and `polynomial_integer_dense_flint` classes.
 
+Issue created by migration from https://trac.sagemath.org/ticket/9035
+
+
+
+
 
 ---
+
+archive/issue_comments_083646.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-05-24T13:10:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9035",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9035#issuecomment-83646",
+    "user": "burcin"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by burcin created at 2010-05-24 13:10:39
+archive/issue_comments_083647.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-05-24T13:10:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9035",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9035#issuecomment-83647",
+    "user": "burcin"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by cremona created at 2010-05-27 11:58:10
+archive/issue_comments_083648.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-05-27T11:58:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9035",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9035#issuecomment-83648",
+    "user": "cremona"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by cremona created at 2010-05-27 11:58:10
+archive/issue_comments_083649.json:
+```json
+{
+    "body": "Patch applies fine to 4.4.3.alpha0, and looks good to me.\n\nTests pass (I tested all files in sage/rings/polynomial plus some other random tests).\n\nI am giving this a positive review, but wonder whether the following reverse functions should also be changed to be consistent:\n\n```\nlibs/ntl/ntl_GF2X.pyx:645:    def reverse(self, int hi = -2):\nlibs/ntl/ntl_ZZX.pyx:768:    def reverse(self, hi=None):\nlibs/ntl/ntl_ZZ_pEX.pyx:850:    def reverse(self, hi=None):\nlibs/ntl/ntl_ZZ_pX.pyx:947:    def reverse(self, hi=None):\n...\nrings/polynomial/polynomial_modn_dense_ntl.pyx:1005:    def reverse(self):\nrings/polynomial/polynomial_modn_dense_ntl.pyx:1548:    def reverse(self):\nrings/polynomial/polynomial_real_mpfr_dense.pyx:484:    def reverse(self):\n...\nrings/polynomial/padics/polynomial_padic_capped_relative_dense.py:840:    def reverse(self, n = None):\n```\n",
+    "created_at": "2010-05-27T11:58:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9035",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9035#issuecomment-83649",
+    "user": "cremona"
+}
+```
 
 Patch applies fine to 4.4.3.alpha0, and looks good to me.
 
@@ -55,8 +115,19 @@ rings/polynomial/padics/polynomial_padic_capped_relative_dense.py:840:    def re
 
 
 
+
 ---
 
-Comment by mhansen created at 2010-06-06 01:24:27
+archive/issue_comments_083650.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-06-06T01:24:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9035",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9035#issuecomment-83650",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

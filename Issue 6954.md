@@ -1,11 +1,21 @@
 # Issue 6954: [with patch, needs review] latex output for dictionaries
 
-Issue created by migration from https://trac.sagemath.org/ticket/6954
-
-Original creator: whuss
-
-Original creation time: 2009-09-18 08:41:21
-
+archive/issues_006954.json:
+```json
+{
+    "body": "Assignee: was\n\nKeywords: latex\n\nThe attached patch implements latex output for dictionaries:\n\n\n```\nsage: var('x,y')\nsage: latex({x: y^2, y: 1/2})\n\\left\\{y\\rightarrow \\frac{1}{2}, x\\rightarrow y^{2}\\right\\}\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6954\n\n",
+    "created_at": "2009-09-18T08:41:21Z",
+    "labels": [
+        "user interface",
+        "major",
+        "enhancement"
+    ],
+    "title": "[with patch, needs review] latex output for dictionaries",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6954",
+    "user": "whuss"
+}
+```
 Assignee: was
 
 Keywords: latex
@@ -20,10 +30,25 @@ sage: latex({x: y^2, y: 1/2})
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6954
+
+
+
+
 
 ---
 
-Comment by jhpalmieri created at 2009-09-18 17:03:33
+archive/issue_comments_057503.json:
+```json
+{
+    "body": "Two comments: first, this doesn't pass doctests, due to ordering issues in dictionaries:\n\n```\n**********************************************************************\nFile \"/Applications/sage/devel/sage/sage/misc/latex.py\", line 257:\n    sage: latex(d)\nExpected:\n    \\left\\{2\\rightarrow x + \\sin\\left(y^{2}\\right), z\\rightarrow \\left[1, 2, x^{2}\\right], y\\rightarrow 2, x\\rightarrow \\frac{1}{2} \\, y\\right\\}\nGot:\n    \\left\\{2\\rightarrow x + \\sin\\left(y^{2}\\right), x\\rightarrow \\frac{1}{2} \\, y, y\\rightarrow 2, z\\rightarrow \\left[1, 2, x^{2}\\right]\\right\\}\n```\n\nThis is on a Mac, OS X 10.5, 32-bit.  Doctests pass on 64-bit OS X.  Maybe there should be different doctests depending on 32-bit vs. 64-bit, as in the `__hash__` method in `sage/rings/padics/padic_capped_relative_element.pyx`.  (Or maybe it's not a 32/64-bit issue; maybe the doctest should just be modified so order doesn't matter.)\n\nSecond, I think I would prefer a colon rather than an arrow: I think the typeset version should mimic the string representation, just as we do for lists and tuples.  (I don't feel that strongly about this.)",
+    "created_at": "2009-09-18T17:03:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6954",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6954#issuecomment-57503",
+    "user": "jhpalmieri"
+}
+```
 
 Two comments: first, this doesn't pass doctests, due to ordering issues in dictionaries:
 
@@ -42,9 +67,20 @@ This is on a Mac, OS X 10.5, 32-bit.  Doctests pass on 64-bit OS X.  Maybe there
 Second, I think I would prefer a colon rather than an arrow: I think the typeset version should mimic the string representation, just as we do for lists and tuples.  (I don't feel that strongly about this.)
 
 
+
 ---
 
-Comment by jason created at 2009-09-19 03:07:23
+archive/issue_comments_057504.json:
+```json
+{
+    "body": "Replying to [comment:1 jhpalmieri]:\n\n> Second, I think I would prefer a colon rather than an arrow: I think the typeset version should mimic the string representation, just as we do for lists and tuples.  (I don't feel that strongly about this.)\n\nI agree; we should have a colon, since there isn't a completely standard latex notation for dictionaries, and a colon will be less likely to confuse the user who is used to seeing it as text.",
+    "created_at": "2009-09-19T03:07:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6954",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6954#issuecomment-57504",
+    "user": "jason"
+}
+```
 
 Replying to [comment:1 jhpalmieri]:
 
@@ -53,30 +89,76 @@ Replying to [comment:1 jhpalmieri]:
 I agree; we should have a colon, since there isn't a completely standard latex notation for dictionaries, and a colon will be less likely to confuse the user who is used to seeing it as text.
 
 
+
 ---
 
-Comment by jason created at 2009-09-19 03:07:58
+archive/issue_comments_057505.json:
+```json
+{
+    "body": "If we insist on having an arrow, it seems to make more sense to do a \\mapsto arrow, or a knuth-style \\leftarrow.",
+    "created_at": "2009-09-19T03:07:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6954",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6954#issuecomment-57505",
+    "user": "jason"
+}
+```
 
 If we insist on having an arrow, it seems to make more sense to do a \mapsto arrow, or a knuth-style \leftarrow.
 
 
+
 ---
+
+archive/issue_comments_057506.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-09-23T07:57:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6954",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6954#issuecomment-57506",
+    "user": "whuss"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by whuss created at 2009-09-23 08:00:54
+archive/issue_comments_057507.json:
+```json
+{
+    "body": "I changed the patch to use a colon, and added a seperate doctest for 64bit.\nUnfortunately I don't have access to a machine with OS X, so I cannot test\nthis myself.",
+    "created_at": "2009-09-23T08:00:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6954",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6954#issuecomment-57507",
+    "user": "whuss"
+}
+```
 
 I changed the patch to use a colon, and added a seperate doctest for 64bit.
 Unfortunately I don't have access to a machine with OS X, so I cannot test
 this myself.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-09-23 17:26:01
+archive/issue_comments_057508.json:
+```json
+{
+    "body": "I like the colon better; thanks.  I'm having problems with the same doctest, though, and I don't think it's a 32/64-bit issue; I get one answer with a 32-bit build on a mac, a different answer with a 64-bit build on a mac, and still a different answer on sage.math.  So maybe the doctest should be modified so order doesn't matter, say a dictionary with a single entry like\n\n```\nsage: d = {(1,2,3): [y/2, sin(z^2)]}\nsage: latex(d)\n...\n```\n\nI'm attaching a patch which makes this change.  I'll give the main patch (trac_6954-latex_dict.patch) a positive review, and if my change is okay, the whole ticket should get a positive review.",
+    "created_at": "2009-09-23T17:26:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6954",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6954#issuecomment-57508",
+    "user": "jhpalmieri"
+}
+```
 
 I like the colon better; thanks.  I'm having problems with the same doctest, though, and I don't think it's a 32/64-bit issue; I get one answer with a 32-bit build on a mac, a different answer with a 64-bit build on a mac, and still a different answer on sage.math.  So maybe the doctest should be modified so order doesn't matter, say a dictionary with a single entry like
 
@@ -89,36 +171,93 @@ sage: latex(d)
 I'm attaching a patch which makes this change.  I'll give the main patch (trac_6954-latex_dict.patch) a positive review, and if my change is okay, the whole ticket should get a positive review.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-09-23 17:26:32
+archive/issue_comments_057509.json:
+```json
+{
+    "body": "apply on top of the other patch",
+    "created_at": "2009-09-23T17:26:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6954",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6954#issuecomment-57509",
+    "user": "jhpalmieri"
+}
+```
 
 apply on top of the other patch
 
 
+
 ---
+
+archive/issue_comments_057510.json:
+```json
+{
+    "body": "Attachment\n\nLooks good to me.  Apply both patches.",
+    "created_at": "2009-09-26T04:43:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6954",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6954#issuecomment-57510",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 Looks good to me.  Apply both patches.
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-26 08:15:18
+archive/issue_comments_057511.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-09-26T08:15:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6954",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6954#issuecomment-57511",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-26 08:15:18
+archive/issue_comments_057512.json:
+```json
+{
+    "body": "Merged both patches.",
+    "created_at": "2009-09-26T08:15:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6954",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6954#issuecomment-57512",
+    "user": "mvngu"
+}
+```
 
 Merged both patches.
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-27 10:53:26
+archive/issue_comments_057513.json:
+```json
+{
+    "body": "There is no 4.1.2.alpha3. Sage 4.1.2.alpha3 was William Stein's release for working on making the notebook a standalone package.",
+    "created_at": "2009-09-27T10:53:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6954",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6954#issuecomment-57513",
+    "user": "mvngu"
+}
+```
 
 There is no 4.1.2.alpha3. Sage 4.1.2.alpha3 was William Stein's release for working on making the notebook a standalone package.

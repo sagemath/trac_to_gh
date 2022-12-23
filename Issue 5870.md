@@ -1,24 +1,62 @@
 # Issue 5870: Detect blas and atlas libraries for linbox on FreeBSD
 
-Issue created by migration from https://trac.sagemath.org/ticket/5870
-
-Original creator: pjeremy
-
-Original creation time: 2009-04-23 07:12:05
-
+archive/issues_005870.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nspkg-install for linbox uses OS-specific code to detect and use the BLAS and Atlas libraries.  Add code to support FreeBSD.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5870\n\n",
+    "created_at": "2009-04-23T07:12:05Z",
+    "labels": [
+        "porting: BSD",
+        "major",
+        "enhancement"
+    ],
+    "title": "Detect blas and atlas libraries for linbox on FreeBSD",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5870",
+    "user": "pjeremy"
+}
+```
 Assignee: mabshoff
 
 spkg-install for linbox uses OS-specific code to detect and use the BLAS and Atlas libraries.  Add code to support FreeBSD.
 
+Issue created by migration from https://trac.sagemath.org/ticket/5870
+
+
+
+
 
 ---
+
+archive/issue_comments_046364.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-04-23T07:12:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5870",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5870#issuecomment-46364",
+    "user": "pjeremy"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-23 07:32:08
+archive/issue_comments_046365.json:
+```json
+{
+    "body": "I will work on integrating this tomorrow.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-23T07:32:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5870",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5870#issuecomment-46365",
+    "user": "mabshoff"
+}
+```
 
 I will work on integrating this tomorrow.
 
@@ -27,31 +65,75 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mhansen created at 2009-06-20 07:29:21
+archive/issue_comments_046366.json:
+```json
+{
+    "body": "Looks good to me.\n\nAn spkg with this patch incorporated can be found at http://sage.math.washington.edu/home/mhansen/linbox-1.1.6.p0.spkg",
+    "created_at": "2009-06-20T07:29:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5870",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5870#issuecomment-46366",
+    "user": "mhansen"
+}
+```
 
 Looks good to me.
 
 An spkg with this patch incorporated can be found at http://sage.math.washington.edu/home/mhansen/linbox-1.1.6.p0.spkg
 
 
+
 ---
 
-Comment by mhansen created at 2009-06-20 07:29:21
+archive/issue_comments_046367.json:
+```json
+{
+    "body": "Changing assignee from mabshoff to mhansen.",
+    "created_at": "2009-06-20T07:29:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5870",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5870#issuecomment-46367",
+    "user": "mhansen"
+}
+```
 
 Changing assignee from mabshoff to mhansen.
 
 
+
 ---
 
-Comment by mhansen created at 2009-06-20 07:29:21
+archive/issue_comments_046368.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-06-20T07:29:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5870",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5870#issuecomment-46368",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by rlm created at 2009-07-02 22:47:41
+archive/issue_comments_046369.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-07-02T22:47:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5870",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5870#issuecomment-46369",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 5881: __cmp__ is random-ish in root_system/type_dual.py also (analog to #5811)
 
-Issue created by migration from https://trac.sagemath.org/ticket/5881
-
-Original creator: mabshoff
-
-Original creation time: 2009-04-23 21:10:28
-
+archive/issues_005881.json:
+```json
+{
+    "body": "Assignee: mhansen\n\nThis is happening with gcc 4.3.3:\n\n```\nsage -t  \"devel/sage/sage/combinat/root_system/type_dual.py\"\n**********************************************************************\nFile \"/home/mariah/sage/sage-3.4.1-x86_64-Linux-fc/devel/sage/sage/combinat/root\n_system/type_dual.py\", line 43:\n   sage: [[x.__cmp__(y) for x in ct] for y in ct]\nExpected:\n   [[0, 1, -1], [-1, 0, -1], [1, 1, 0]]\nGot:\n   [[0, 1, 1], [-1, 0, 1], [1, 1, 0]]\n**********************************************************************\nFile \"/home/mariah/sage/sage-3.4.1-x86_64-Linux-fc/devel/sage/sage/combinat/root\n_system/type_dual.py\", line 45:\n   sage: sorted(ct)\nExpected:\n   [['A', 4], A1xB2, B2xA1]\nGot:\n   [A1xB2, B2xA1, ['A', 4]]\n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5881\n\n",
+    "created_at": "2009-04-23T21:10:28Z",
+    "labels": [
+        "doctest coverage",
+        "blocker",
+        "bug"
+    ],
+    "title": "__cmp__ is random-ish in root_system/type_dual.py also (analog to #5811)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5881",
+    "user": "mabshoff"
+}
+```
 Assignee: mhansen
 
 This is happening with gcc 4.3.3:
@@ -32,22 +42,61 @@ Got:
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5881
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2009-04-30 07:52:32
+archive/issue_comments_046471.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-04-30T07:52:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5881",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5881#issuecomment-46471",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
+
+archive/issue_comments_046472.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-04-30T07:52:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5881",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5881#issuecomment-46472",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-30 09:43:14
+archive/issue_comments_046473.json:
+```json
+{
+    "body": "Positive review.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-30T09:43:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5881",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5881#issuecomment-46473",
+    "user": "mabshoff"
+}
+```
 
 Positive review.
 
@@ -56,16 +105,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-30 09:43:28
+archive/issue_comments_046474.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-04-30T09:43:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5881",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5881#issuecomment-46474",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-30 09:43:28
+archive/issue_comments_046475.json:
+```json
+{
+    "body": "Mrged in Sage 3.4.2.rc0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-30T09:43:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5881",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5881#issuecomment-46475",
+    "user": "mabshoff"
+}
+```
 
 Mrged in Sage 3.4.2.rc0.
 

@@ -1,11 +1,21 @@
 # Issue 9287: improving doctest coverage for elliptic curves
 
-Issue created by migration from https://trac.sagemath.org/ticket/9287
-
-Original creator: wuthrich
-
-Original creation time: 2010-06-20 23:40:48
-
+archive/issues_009287.json:
+```json
+{
+    "body": "Assignee: cremona\n\nCC:  wstein\n\nKeywords: doctest coverage\n\nThe bad files are\n\n* BSD.py 85% (6 of 7)\n* ell_egros.py 85% (6 of 7)\n* ell_modular_symbols.py 86% (13 of 15)\n* gp_cremona.py 85% (6 of 7)\n* gp_simon.py 50% (1 of 2)\n* mod5family.py 0% (0 of 1)\n* monsky_washnitzer.py 26% (28 of 107)\n* padic_height.py 0% (0 of 6) #deprecated\n* padic_lseries.py 59% (19 of 32)\n* padics.py 83% (10 of 12)\n* sea.py 0% (0 of 1)\n* sha_tate.py 80% (8 of 10)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9287\n\n",
+    "created_at": "2010-06-20T23:40:48Z",
+    "labels": [
+        "elliptic curves",
+        "minor",
+        "bug"
+    ],
+    "title": "improving doctest coverage for elliptic curves",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9287",
+    "user": "wuthrich"
+}
+```
 Assignee: cremona
 
 CC:  wstein
@@ -27,72 +37,168 @@ The bad files are
 * sea.py 0% (0 of 1)
 * sha_tate.py 80% (8 of 10)
 
+Issue created by migration from https://trac.sagemath.org/ticket/9287
+
+
+
+
 
 ---
 
-Comment by wuthrich created at 2010-06-20 23:43:17
+archive/issue_comments_087472.json:
+```json
+{
+    "body": "So far I have dealt with \n\n* padic_lseries.py\n* modular_parametrization.py\n* padics.py\n\n... more to come",
+    "created_at": "2010-06-20T23:43:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9287",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9287#issuecomment-87472",
+    "user": "wuthrich"
+}
+```
 
 So far I have dealt with 
 
- * padic_lseries.py
- * modular_parametrization.py
- * padics.py
+* padic_lseries.py
+* modular_parametrization.py
+* padics.py
 
 ... more to come
 
 
+
 ---
+
+archive/issue_comments_087473.json:
+```json
+{
+    "body": "Attachment\n\nexported against 4.4.4.alpha0",
+    "created_at": "2010-06-20T23:45:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9287",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9287#issuecomment-87473",
+    "user": "wuthrich"
+}
+```
 
 Attachment
 
 exported against 4.4.4.alpha0
 
 
+
 ---
 
-Comment by wuthrich created at 2010-06-22 17:46:12
+archive/issue_comments_087474.json:
+```json
+{
+    "body": "also exported against 4.4.4.alpha0",
+    "created_at": "2010-06-22T17:46:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9287",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9287#issuecomment-87474",
+    "user": "wuthrich"
+}
+```
 
 also exported against 4.4.4.alpha0
 
 
+
 ---
 
-Comment by wuthrich created at 2010-06-22 17:52:15
+archive/issue_comments_087475.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-06-22T17:52:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9287",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9287#issuecomment-87475",
+    "user": "wuthrich"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_087476.json:
+```json
+{
+    "body": "Attachment\n\nThe second patch (indep of the first) takes care of\n\n* ell_modular_symbol\n* sha_tate\n* ell_torsion\n\nSee trac ticket #9313 of how to take care of padic_height.py\n\nThat is how far I will do improve the documentation so far. If someone else would like to improve it further either put it back to needs_work and continue the work here or (prefered by me) open a new ticket.",
+    "created_at": "2010-06-22T17:52:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9287",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9287#issuecomment-87476",
+    "user": "wuthrich"
+}
+```
 
 Attachment
 
 The second patch (indep of the first) takes care of
 
- * ell_modular_symbol
- * sha_tate
- * ell_torsion
+* ell_modular_symbol
+* sha_tate
+* ell_torsion
 
 See trac ticket #9313 of how to take care of padic_height.py
 
 That is how far I will do improve the documentation so far. If someone else would like to improve it further either put it back to needs_work and continue the work here or (prefered by me) open a new ticket.
 
 
+
 ---
 
-Comment by cremona created at 2010-06-23 00:29:54
+archive/issue_comments_087477.json:
+```json
+{
+    "body": "Patches apply fine to 4.4.4.alpha0, and test pass, and docs build and look fine!",
+    "created_at": "2010-06-23T00:29:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9287",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9287#issuecomment-87477",
+    "user": "cremona"
+}
+```
 
 Patches apply fine to 4.4.4.alpha0, and test pass, and docs build and look fine!
 
 
+
 ---
 
-Comment by cremona created at 2010-06-23 00:29:54
+archive/issue_comments_087478.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-06-23T00:29:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9287",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9287#issuecomment-87478",
+    "user": "cremona"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mpatel created at 2010-07-20 07:08:35
+archive/issue_comments_087479.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-07-20T07:08:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9287",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9287#issuecomment-87479",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed

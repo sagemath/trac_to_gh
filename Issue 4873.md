@@ -1,11 +1,21 @@
 # Issue 4873: sage -optional should not require write access to sage repo; e.g., people may want to check on what packages are installed system-wide
 
-Issue created by migration from https://trac.sagemath.org/ticket/4873
-
-Original creator: was
-
-Original creation time: 2008-12-24 18:36:36
-
+archive/issues_004873.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\n\n```\nwstein@sage:~$ /usr/local/bin/sage -optional\nUsing SAGE Server http://www.sagemath.org//packages\nhttp://www.sagemath.org//packages/optional/list --> /usr/local/sage/tmp/list\n[Errno 13] Permission denied: '/usr/local/sage/tmp/list'\n\n\n\n********************************************************************************\n\n\n\nError contacting http://www.sagemath.org//packages/optional/list. Try using an alternative server.\nFor example, from the bash prompt try typing\n\n   export SAGE_SERVER=http://sage.scipy.org/sage/\n\nthen try again.\n\n\n\n********************************************************************************\n\n\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4873\n\n",
+    "created_at": "2008-12-24T18:36:36Z",
+    "labels": [
+        "packages: standard",
+        "minor",
+        "bug"
+    ],
+    "title": "sage -optional should not require write access to sage repo; e.g., people may want to check on what packages are installed system-wide",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4873",
+    "user": "was"
+}
+```
 Assignee: mabshoff
 
 
@@ -37,17 +47,43 @@ then try again.
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4873
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-12-24 21:36:45
+archive/issue_comments_036898.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2008-12-24T21:36:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4873",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4873#issuecomment-36898",
+    "user": "mabshoff"
+}
+```
 
 Resolution: duplicate
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-24 21:36:45
+archive/issue_comments_036899.json:
+```json
+{
+    "body": "This is a dupe of #961\n\nCheers,\n\nMichael",
+    "created_at": "2008-12-24T21:36:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4873",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4873#issuecomment-36899",
+    "user": "mabshoff"
+}
+```
 
 This is a dupe of #961
 

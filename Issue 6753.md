@@ -1,11 +1,21 @@
 # Issue 6753: sage-4.1.1 -- bug in integral_elements_in_box
 
-Issue created by migration from https://trac.sagemath.org/ticket/6753
-
-Original creator: was
-
-Original creation time: 2009-08-15 16:35:53
-
+archive/issues_006753.json:
+```json
+{
+    "body": "Assignee: was\n\n\n```\n\nThere are actually three real test failures on OS X 10.5 PPC.  They both probably involve rounding issues.  The second is harmless.  The first looks serious. \n\nsage -t -long \"devel/sage/sage/rings/number_field/totallyreal_rel.py\"\n**********************************************************************\nFile \"/Users/wstein/build/sage-4.1.1/devel/sage/sage/rings/number_field/totallyreal_rel.py\", line 47:\n    sage: sage.rings.number_field.totallyreal_rel.integral_elements_in_box(K, [[0,5],[0,5]])\nExpected:\n    [0, 5, -alpha + 2, -alpha + 3, 1, 2, 3, 4, alpha + 2, alpha + 3]\nGot:\n    [0, -alpha + 3, -alpha + 2, 4, 3, 2, 1, alpha + 3, alpha + 2]\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_1\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /Users/wstein/build/sage-4.1.1/tmp/.doctest_totallyreal_rel.py\n         [9.9 s]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6753\n\n",
+    "created_at": "2009-08-15T16:35:53Z",
+    "labels": [
+        "number theory",
+        "blocker",
+        "bug"
+    ],
+    "title": "sage-4.1.1 -- bug in integral_elements_in_box",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6753",
+    "user": "was"
+}
+```
 Assignee: was
 
 
@@ -30,9 +40,24 @@ For whitespace errors, see the file /Users/wstein/build/sage-4.1.1/tmp/.doctest_
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6753
+
+
+
+
 
 ---
 
-Comment by was created at 2009-10-02 16:18:51
+archive/issue_comments_055599.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-10-02T16:18:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6753",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6753#issuecomment-55599",
+    "user": "was"
+}
+```
 
 Resolution: fixed

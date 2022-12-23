@@ -1,11 +1,21 @@
 # Issue 3404: graph.automorphism_group returns permutations with the wrong number of elements.
 
-Issue created by migration from https://trac.sagemath.org/ticket/3404
-
-Original creator: jason
-
-Original creation time: 2008-06-12 18:09:14
-
+archive/issues_003404.json:
+```json
+{
+    "body": "Assignee: rlm\n\nBoth of the graphs below are the path graph on 3 vertices.  The problem is that the first labeling returns a permutation group of degree 2, when it should be of degree 3.\n\n\n```\nsage: g=Graph('Bo')\nsage: print g.automorphism_group().degree()\n2\nsage: h=Graph('Bg')\nsage: print h.automorphism_group().degree()\n3\nsage: g.is_isomorphic(h)\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3404\n\n",
+    "created_at": "2008-06-12T18:09:14Z",
+    "labels": [
+        "graph theory",
+        "major",
+        "bug"
+    ],
+    "title": "graph.automorphism_group returns permutations with the wrong number of elements.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3404",
+    "user": "jason"
+}
+```
 Assignee: rlm
 
 Both of the graphs below are the path graph on 3 vertices.  The problem is that the first labeling returns a permutation group of degree 2, when it should be of degree 3.
@@ -23,10 +33,25 @@ True
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3404
+
+
+
+
 
 ---
 
-Comment by rlm created at 2008-06-12 19:02:54
+archive/issue_comments_023879.json:
+```json
+{
+    "body": "Unfortunately, since permutation groups are (currently) simply wrappers for GAP permutation groups, the object itself carries no notion of what it acts on, only a cycle representation of its generators.\n\n\n```\nsage: g=Graph('Bo')\nsage: G=g.automorphism_group()\nsage: G.degree?\nType:\t\tinstancemethod\nBase Class:\t<type 'instancemethod'>\nString Form:\t<bound method PermutationGroup_generic.degree of Permutation Group with generators [(1,2)]>\nNamespace:\tInteractive\nFile:\t\t/Users/rlmill/sage-3.0.2/local/lib/python2.5/site-packages/sage/groups/perm_gps/permgroup.py\nDefinition:\tG.degree(self)\nDocstring:\n    \n            Synonym for largest_moved_point().\n    \n            EXAMPLES:\n                sage: G = PermutationGroup([[(1,2,3),(4,5)],[(3,4)]])\n                sage: G.degree()\n                5\n```\n \n\nHowever, you can do:\n\n```\nsage: g.automorphism_group(translation=True, orbits=True)\n(Permutation Group with generators [(1,2)], {0: 3, 1: 1, 2: 2}, [[0], [1, 2]])\n```\n\n\nThe second is telling you which vertex of the graph is thought of as which integer by the group (here GAP thinks of this as 3 fixed, 4 fixed, 5 fixed, ...) and the third are the actual orbits of all the vertices.\n\nThis is a problem in permutation groups, not graphs.",
+    "created_at": "2008-06-12T19:02:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3404",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3404#issuecomment-23879",
+    "user": "rlm"
+}
+```
 
 Unfortunately, since permutation groups are (currently) simply wrappers for GAP permutation groups, the object itself carries no notion of what it acts on, only a cycle representation of its generators.
 
@@ -49,43 +74,90 @@ Docstring:
                 sage: G = PermutationGroup([[(1,2,3),(4,5)],[(3,4)]])
                 sage: G.degree()
                 5
-}}} 
+```
+ 
 
 However, you can do:
-{{{
+
+```
 sage: g.automorphism_group(translation=True, orbits=True)
 (Permutation Group with generators [(1,2)], {0: 3, 1: 1, 2: 2}, [[0], [1, 2]])
-}}}
+```
+
 
 The second is telling you which vertex of the graph is thought of as which integer by the group (here GAP thinks of this as 3 fixed, 4 fixed, 5 fixed, ...) and the third are the actual orbits of all the vertices.
 
 This is a problem in permutation groups, not graphs.
 
 
+
 ---
 
-Comment by rlm created at 2008-06-12 19:24:25
+archive/issue_comments_023880.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-06-12T19:24:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3404",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3404#issuecomment-23880",
+    "user": "rlm"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by rlm created at 2008-06-12 19:24:25
+archive/issue_comments_023881.json:
+```json
+{
+    "body": "Changing component from graph theory to basic arithmetic.",
+    "created_at": "2008-06-12T19:24:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3404",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3404#issuecomment-23881",
+    "user": "rlm"
+}
+```
 
 Changing component from graph theory to basic arithmetic.
 
 
+
 ---
 
-Comment by mhansen created at 2009-06-04 22:53:53
+archive/issue_comments_023882.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2009-06-04T22:53:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3404",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3404#issuecomment-23882",
+    "user": "mhansen"
+}
+```
 
 Resolution: invalid
 
 
+
 ---
 
-Comment by mhansen created at 2009-06-04 22:53:53
+archive/issue_comments_023883.json:
+```json
+{
+    "body": "This has been fixed.\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: sage: g=Graph('Bo')\nsage: sage: print g.automorphism_group().degree()\n3\nsage: g.automorphism_group()\nPermutation Group with generators [(1,2)]\n```\n",
+    "created_at": "2009-06-04T22:53:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3404",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3404#issuecomment-23883",
+    "user": "mhansen"
+}
+```
 
 This has been fixed.
 

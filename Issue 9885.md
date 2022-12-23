@@ -1,11 +1,21 @@
 # Issue 9885: slow coercion from integer mod ring to integer ring, part 2
 
-Issue created by migration from https://trac.sagemath.org/ticket/9886
-
-Original creator: dmharvey
-
-Original creation time: 2010-09-09 16:07:25
-
+archive/issues_009885.json:
+```json
+{
+    "body": "Assignee: tbd\n\nSage 4.5.3, 2.6GHz Opteron, Linux\n\nThis is ok:\n\n\n```\nsage: R = Integers(3^20)\nsage: u = R(2)\nsage: timeit(\"z = u.lift()\")\n625 loops, best of 3: 351 ns per loop\n```\n\n\nThis is not:\n\n```\nsage: timeit(\"z = ZZ(u)\")\n625 loops, best of 3: 37.9 \u00b5s per loop\n```\n\n\nWow. See also #9885 for a not-quite-as-insane version of this.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9886\n\n",
+    "created_at": "2010-09-09T16:07:25Z",
+    "labels": [
+        "performance",
+        "major",
+        "bug"
+    ],
+    "title": "slow coercion from integer mod ring to integer ring, part 2",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9885",
+    "user": "dmharvey"
+}
+```
 Assignee: tbd
 
 Sage 4.5.3, 2.6GHz Opteron, Linux
@@ -32,31 +42,79 @@ sage: timeit("z = ZZ(u)")
 Wow. See also #9885 for a not-quite-as-insane version of this.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/9886
+
+
+
+
 
 ---
 
-Comment by roed created at 2010-09-23 11:27:56
+archive/issue_comments_097983.json:
+```json
+{
+    "body": "The patch at #9887 should fix this, but it doesn't.  I'm not sure why.",
+    "created_at": "2010-09-23T11:27:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9885",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9885#issuecomment-97983",
+    "user": "roed"
+}
+```
 
 The patch at #9887 should fix this, but it doesn't.  I'm not sure why.
 
 
+
 ---
 
-Comment by roed created at 2010-10-15 07:43:59
+archive/issue_comments_097984.json:
+```json
+{
+    "body": "I figured out why.  Hashing for R is slow, and ZZ._convert_map_hash needs to compute hash(R) to get the appropriate morphism.  See #10130 for a patch fixing this.",
+    "created_at": "2010-10-15T07:43:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9885",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9885#issuecomment-97984",
+    "user": "roed"
+}
+```
 
 I figured out why.  Hashing for R is slow, and ZZ._convert_map_hash needs to compute hash(R) to get the appropriate morphism.  See #10130 for a patch fixing this.
 
 
+
 ---
 
-Comment by mmezzarobba created at 2014-03-14 17:19:14
+archive/issue_comments_097985.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2014-03-14T17:19:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9885",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9885#issuecomment-97985",
+    "user": "mmezzarobba"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mmezzarobba created at 2014-03-14 17:19:14
+archive/issue_comments_097986.json:
+```json
+{
+    "body": "sage-6.2.beta4:\n\n```\nsage: sage: timeit(\"z = u.lift()\")\n625 loops, best of 3: 142 ns per loop\nsage: sage: timeit(\"z = ZZ(u)\")\n625 loops, best of 3: 280 ns per loop\n```\n",
+    "created_at": "2014-03-14T17:19:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9885",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9885#issuecomment-97986",
+    "user": "mmezzarobba"
+}
+```
 
 sage-6.2.beta4:
 
@@ -69,22 +127,55 @@ sage: sage: timeit("z = ZZ(u)")
 
 
 
+
 ---
 
-Comment by rws created at 2014-03-24 16:55:21
+archive/issue_comments_097987.json:
+```json
+{
+    "body": "Similar relative result here. (However, my times are 3x slower with 3GHz AMD Phenom, fascinating).",
+    "created_at": "2014-03-24T16:55:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9885",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9885#issuecomment-97987",
+    "user": "rws"
+}
+```
 
 Similar relative result here. (However, my times are 3x slower with 3GHz AMD Phenom, fascinating).
 
 
+
 ---
 
-Comment by rws created at 2014-03-24 16:55:21
+archive/issue_comments_097988.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2014-03-24T16:55:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9885",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9885#issuecomment-97988",
+    "user": "rws"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by vbraun created at 2014-03-31 15:04:49
+archive/issue_comments_097989.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2014-03-31T15:04:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9885",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9885#issuecomment-97989",
+    "user": "vbraun"
+}
+```
 
 Resolution: duplicate

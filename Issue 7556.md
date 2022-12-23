@@ -1,11 +1,21 @@
 # Issue 7556: change default rounding behavior for QQ to
 
-Issue created by migration from https://trac.sagemath.org/ticket/7556
-
-Original creator: was
-
-Original creation time: 2009-11-29 23:34:16
-
+archive/issues_007556.json:
+```json
+{
+    "body": "Assignee: AlexGhitza\n\nThis is inconsistent:\n\n```\nsage: (9/2).round()\n4\nsage: RDF('4.5').round()\n5\nsage: import __builtin__\nsage: __builtin__.round(float('4.5'))\n5.0\nsage: RR('4.5').round()\n5\n```\n\n\nIt's also inconsistent for negatives.  The simple fix is to make the default rounding direction 'away' in rational.pyx. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7556\n\n",
+    "created_at": "2009-11-29T23:34:16Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "enhancement"
+    ],
+    "title": "change default rounding behavior for QQ to",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7556",
+    "user": "was"
+}
+```
 Assignee: AlexGhitza
 
 This is inconsistent:
@@ -25,35 +35,96 @@ sage: RR('4.5').round()
 
 It's also inconsistent for negatives.  The simple fix is to make the default rounding direction 'away' in rational.pyx. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7556
+
+
+
+
 
 ---
 
-Comment by was created at 2009-11-29 23:40:47
+archive/issue_comments_064262.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-11-29T23:40:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7556",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7556#issuecomment-64262",
+    "user": "was"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_064263.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-11-29T23:41:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7556",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7556#issuecomment-64263",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2009-11-30 04:01:39
+archive/issue_comments_064264.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-11-30T04:01:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7556",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7556#issuecomment-64264",
+    "user": "mhansen"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mhansen created at 2009-11-30 04:01:39
+archive/issue_comments_064265.json:
+```json
+{
+    "body": "Looks good to me.",
+    "created_at": "2009-11-30T04:01:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7556",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7556#issuecomment-64265",
+    "user": "mhansen"
+}
+```
 
 Looks good to me.
 
 
+
 ---
 
-Comment by mhansen created at 2009-12-01 05:09:52
+archive/issue_comments_064266.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-12-01T05:09:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7556",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7556#issuecomment-64266",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

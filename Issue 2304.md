@@ -1,11 +1,21 @@
 # Issue 2304: sparse_poly should probably be removed
 
-Issue created by migration from https://trac.sagemath.org/ticket/2304
-
-Original creator: dmharvey
-
-Original creation time: 2008-02-25 21:31:04
-
+archive/issues_002304.json:
+```json
+{
+    "body": "Assignee: somebody\n\nIt looks like the module `sage.rings.sparse_poly` is deprecated and should be removed. I can't find any other references to it in the Sage library. Awaiting confirmation from wstein.\n\nfrom IRC:\n\n```\ncwitty: according to  search_src('sparse_poly') it's never referred to (never imported, etc.)...\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2304\n\n",
+    "created_at": "2008-02-25T21:31:04Z",
+    "labels": [
+        "basic arithmetic",
+        "minor",
+        "bug"
+    ],
+    "title": "sparse_poly should probably be removed",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2304",
+    "user": "dmharvey"
+}
+```
 Assignee: somebody
 
 It looks like the module `sage.rings.sparse_poly` is deprecated and should be removed. I can't find any other references to it in the Sage library. Awaiting confirmation from wstein.
@@ -18,10 +28,25 @@ cwitty: according to  search_src('sparse_poly') it's never referred to (never im
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2304
+
+
+
+
 
 ---
 
-Comment by was created at 2008-02-25 21:44:13
+archive/issue_comments_015329.json:
+```json
+{
+    "body": "But David, my code's so fast.  Could YOU square sum(n*x^n for n in range(1000))\nin less than 1.24 seconds!?  :-)\n\n\nSeriously though, I wrote that code before version 0.1 of Sage as an experiment.  It can safely be removed.  If one really did want sparse polys that are fast, the best thing for now would probably to use libsingular  with one variable, e.g., \n\n\n```\nsage: R.<x,y> = MPolynomialRing(QQ,2)\nsage: type(x)\n<type 'sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular'>\nsage: f = sum(n*x^(n^2) for n in primes(100))\nsage: time g = f*f\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\nsage: timeit('z=f*f')\n625 loops, best of 3: 35.5 \u00b5s per loop\n\n```\n\n\nThat said Singular polys only allow degrees up to 65K:\n\n\n```\nsage: x^66000\n<type 'exceptions.TypeError'>: exponent is too large, max. is 65535\n```\n\n\nSo I say delete sparse_poly.* from Sage.  If we someday want sparse polys that code could be revisited, or maybe flint will already have something much better.",
+    "created_at": "2008-02-25T21:44:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2304#issuecomment-15329",
+    "user": "was"
+}
+```
 
 But David, my code's so fast.  Could YOU square sum(n*x^n for n in range(1000))
 in less than 1.24 seconds!?  :-)
@@ -56,9 +81,20 @@ sage: x^66000
 So I say delete sparse_poly.* from Sage.  If we someday want sparse polys that code could be revisited, or maybe flint will already have something much better.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-22 23:08:23
+archive/issue_comments_015330.json:
+```json
+{
+    "body": "Still there in 3.2.1, but trivial to fix.\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-22T23:08:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2304#issuecomment-15330",
+    "user": "mabshoff"
+}
+```
 
 Still there in 3.2.1, but trivial to fix.
 
@@ -67,41 +103,109 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-22 23:08:23
+archive/issue_comments_015331.json:
+```json
+{
+    "body": "Changing assignee from somebody to mabshoff.",
+    "created_at": "2008-11-22T23:08:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2304#issuecomment-15331",
+    "user": "mabshoff"
+}
+```
 
 Changing assignee from somebody to mabshoff.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-22 23:08:23
+archive/issue_comments_015332.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-11-22T23:08:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2304#issuecomment-15332",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
+
+archive/issue_comments_015333.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-11-22T23:52:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2304#issuecomment-15333",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by ncalexan created at 2008-11-22 23:53:20
+archive/issue_comments_015334.json:
+```json
+{
+    "body": "Fine by me.",
+    "created_at": "2008-11-22T23:53:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2304#issuecomment-15334",
+    "user": "ncalexan"
+}
+```
 
 Fine by me.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-23 00:04:58
+archive/issue_comments_015335.json:
+```json
+{
+    "body": "Merged in Sage 3.2.1.alpha0",
+    "created_at": "2008-11-23T00:04:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2304#issuecomment-15335",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.2.1.alpha0
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-23 00:04:58
+archive/issue_comments_015336.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-11-23T00:04:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2304",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2304#issuecomment-15336",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

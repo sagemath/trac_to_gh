@@ -1,11 +1,21 @@
 # Issue 2254: Upgrade linbox and givaro spkg to upstream
 
-Issue created by migration from https://trac.sagemath.org/ticket/2254
-
-Original creator: cpernet
-
-Original creation time: 2008-02-22 03:35:34
-
+archive/issues_002254.json:
+```json
+{
+    "body": "Assignee: was\n\nLinBox 1.1.5, is about to be released and  requires Givaro 3.2.10, itself about to be relased.\nRelease candidates can be found at \n\n[http://sage.math.washington.edu/home/pernet/linbox-1.1.5rc0.tar.gz](http://sage.math.washington.edu/home/pernet/linbox-1.1.5rc0.tar.gz)\n\nand\n\n[http://sage.math.washington.edu/home/pernet/givaro-3.2.10rc0.tar.gz](http://sage.math.washington.edu/home/pernet/givaro-3.2.10rc0.tar.gz)\n\nUpdate sage packages with these new releases.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2254\n\n",
+    "created_at": "2008-02-22T03:35:34Z",
+    "labels": [
+        "algebraic geometry",
+        "major",
+        "enhancement"
+    ],
+    "title": "Upgrade linbox and givaro spkg to upstream",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2254",
+    "user": "cpernet"
+}
+```
 Assignee: was
 
 LinBox 1.1.5, is about to be released and  requires Givaro 3.2.10, itself about to be relased.
@@ -19,17 +29,43 @@ and
 
 Update sage packages with these new releases.
 
+Issue created by migration from https://trac.sagemath.org/ticket/2254
+
+
+
+
 
 ---
 
-Comment by cpernet created at 2008-02-22 03:35:56
+archive/issue_comments_014927.json:
+```json
+{
+    "body": "Changing component from algebraic geometry to linear algebra.",
+    "created_at": "2008-02-22T03:35:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2254",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2254#issuecomment-14927",
+    "user": "cpernet"
+}
+```
 
 Changing component from algebraic geometry to linear algebra.
 
 
+
 ---
 
-Comment by cpernet created at 2008-02-22 03:54:06
+archive/issue_comments_014928.json:
+```json
+{
+    "body": "So far, I have created the 2 spkgs\n\n[http://sage.math.washington.edu/home/pernet/linbox-1.1.5.spkg](http://sage.math.washington.edu/home/pernet/linbox-1.1.5.spkg)\n\nand\n\n[http://sage.math.washington.edu/home/pernet/givaro-3.2.10.spkg](http://sage.math.washington.edu/home/pernet/givaro-3.2.10.spkg)\n\nThe Givaro one seems to work correctly and doc test passes on my box.\nWhen I apply the linbox spkg, it makes sage crash very badly on exiting due to a segfault.\n\n\n\n```\n\n[pernet@john] :~/Logiciels/sage-2.10.2.alpha2 > ./sage -gdb\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n/home/pernet/Logiciels/sage-2.10.2.alpha2/local/bin/sage-gdb-pythonstartup\nGNU gdb 6.6-debian\nCopyright (C) 2006 Free Software Foundation, Inc.\nGDB is free software, covered by the GNU General Public License, and you are\nwelcome to change it and/or distribute copies of it under certain conditions.\nType \"show copying\" to see the conditions.\nThere is absolutely no warranty for GDB.  Type \"show warranty\" for details.\nThis GDB was configured as \"i486-linux-gnu\"...\nUsing host libthread_db library \"/lib/tls/i686/cmov/libthread_db.so.1\".\n[Thread debugging using libthread_db enabled]\n[New Thread -1210005312 (LWP 23097)]\nPython 2.5.1 (r251:54863, Feb 21 2008, 15:06:07) \n[GCC 4.1.3 20070929 (prerelease) (Ubuntu 4.1.2-16ubuntu2)] on linux2\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n| SAGE Version 2.10.2.alpha2, Release Date: 2008-02-20               |\n| Type notebook() for the GUI, and license() for information.        |\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: exit\nExiting SAGE (CPU time 0m0.05s, Wall time 0m2.16s).\n| SAGE Version 2.10.2.alpha2, Release Date: 2008-02-20               |\n| Type notebook() for the GUI, and license() for information.        |\nProgram received signal SIGSEGV, Segmentation fault.\n[Switching to Thread -1210005312 (LWP 23097)]\n0xb7e750a3 in ?? () from /lib/tls/i686/cmov/libc.so.6\n(gdb) where\n#0  0xb7e750a3 in ?? () from /lib/tls/i686/cmov/libc.so.6\n#1  0xbfee81a8 in ?? ()\n#2  0xb7e7a800 in free () from /lib/tls/i686/cmov/libc.so.6\n#3  0xb7e76b6e in ?? () from /lib/tls/i686/cmov/libc.so.6\n#4  0xb7f54150 in ?? () from /lib/tls/i686/cmov/libc.so.6\n#5  0xb7e7a800 in free () from /lib/tls/i686/cmov/libc.so.6\n#6  0xb7e7a800 in free () from /lib/tls/i686/cmov/libc.so.6\n#7  0xb7c70d81 in operator delete () from /usr/lib/libstdc++.so.6\n#8  0xb7c70ddd in operator delete[] () from /usr/lib/libstdc++.so.6\n#9  0xb5f79f33 in ~primeclass (this=0xb605d2ac) at arith.cc:96\n#10 0xb5f79f60 in __tcf_1 () at arith.cc:31\n#11 0xb7e3a594 in exit () from /lib/tls/i686/cmov/libc.so.6\n#12 0x080e80f2 in handle_system_exit () at Python/pythonrun.c:1618\n#13 0x080e82e5 in PyErr_PrintEx (set_sys_last_vars=1)\n    at Python/pythonrun.c:1062\n#14 0x080e8b03 in PyRun_SimpleFileExFlags (fp=0x0, \n    filename=0xbfee9b21 \"/home/pernet/Logiciels/sage-2.10.2.alpha2/local/bin/sag\ne-gdb-pythonstartup\", closeit=0, flags=0xbfee8478) at Python/pythonrun.c:976\n#15 0x08059526 in Py_Main (argc=0, argv=0xbfee8544) at Modules/main.c:134\n#16 0x080587b2 in main (argc=0, argv=0x1bd1) at ./Modules/python.c:23\n(gdb) \n```\n\n\nAfter several attempts with -valgrind and -gdb, I can not identify the link of these crashes the linbox spkg.\nCan someone have a look?",
+    "created_at": "2008-02-22T03:54:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2254",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2254#issuecomment-14928",
+    "user": "cpernet"
+}
+```
 
 So far, I have created the 2 spkgs
 
@@ -103,9 +139,20 @@ After several attempts with -valgrind and -gdb, I can not identify the link of t
 Can someone have a look?
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-22 04:16:33
+archive/issue_comments_014929.json:
+```json
+{
+    "body": "We have a double free problem (#1337) that gets triggered more or less randomly by applying patches, i.e. if you apply certain patches all the sudden the free makes Sage segfault at exit every time. What is the exact output from an empty Sage session not under gdb? Could you post the output of that?\n\nCheers,\n\nMichael",
+    "created_at": "2008-02-22T04:16:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2254",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2254#issuecomment-14929",
+    "user": "mabshoff"
+}
+```
 
 We have a double free problem (#1337) that gets triggered more or less randomly by applying patches, i.e. if you apply certain patches all the sudden the free makes Sage segfault at exit every time. What is the exact output from an empty Sage session not under gdb? Could you post the output of that?
 
@@ -114,23 +161,56 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by cpernet created at 2008-02-22 18:50:08
+archive/issue_comments_014930.json:
+```json
+{
+    "body": "Changing assignee from was to mabshoff.",
+    "created_at": "2008-02-22T18:50:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2254",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2254#issuecomment-14930",
+    "user": "cpernet"
+}
+```
 
 Changing assignee from was to mabshoff.
 
 
+
 ---
 
-Comment by cpernet created at 2008-02-22 18:50:08
+archive/issue_comments_014931.json:
+```json
+{
+    "body": "Changing component from linear algebra to packages.",
+    "created_at": "2008-02-22T18:50:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2254",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2254#issuecomment-14931",
+    "user": "cpernet"
+}
+```
 
 Changing component from linear algebra to packages.
 
 
+
 ---
 
-Comment by cpernet created at 2008-02-22 18:50:08
+archive/issue_comments_014932.json:
+```json
+{
+    "body": "The output of a standard session (without gdb) is\n\n\n```\n[pernet@john] :~/Logiciels/sage-2.10.2.alpha2 > ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.10.2.alpha2, Release Date: 2008-02-20               |\n| Type notebook() for the GUI, and license() for information.        |\nsage: exit\nExiting SAGE (CPU time 0m0.01s, Wall time 0m1.39s).\n/home/pernet/Logiciels/sage-2.10.2.alpha2/local/bin/sage-sage: line 212: 27121 Erreur de segmentation  (core dumped) sage-ipython -c \"$SAGE_STARTUP_COMMAND;\" \"$@\"\n\n```\n\n\nLet me know if there is a work around, to do in the spkg.",
+    "created_at": "2008-02-22T18:50:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2254",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2254#issuecomment-14932",
+    "user": "cpernet"
+}
+```
 
 The output of a standard session (without gdb) is
 
@@ -151,9 +231,20 @@ Exiting SAGE (CPU time 0m0.01s, Wall time 0m1.39s).
 Let me know if there is a work around, to do in the spkg.
 
 
+
 ---
 
-Comment by cpernet created at 2008-03-01 22:32:23
+archive/issue_comments_014933.json:
+```json
+{
+    "body": "The double free problem is no longer showing up.\nI have put updated version of linbox and givaro:\n[http://sage.math.washington.edu/home/pernet/linbox-1.1.5rc1.spkg](http://sage.math.washington.edu/home/pernet/linbox-1.1.5rc1.spkg)\nand\n[http://sage.math.washington.edu/home/pernet/givaro-3.2.10.spkg](http://sage.math.washington.edu/home/pernet/givaro-3.2.10.spkg)\n\nThey are ready to be tested for integration.",
+    "created_at": "2008-03-01T22:32:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2254",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2254#issuecomment-14933",
+    "user": "cpernet"
+}
+```
 
 The double free problem is no longer showing up.
 I have put updated version of linbox and givaro:
@@ -164,15 +255,37 @@ and
 They are ready to be tested for integration.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-03 04:42:39
+archive/issue_comments_014934.json:
+```json
+{
+    "body": "Merged both spkgs in Sage 2.10.3.rc1",
+    "created_at": "2008-03-03T04:42:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2254",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2254#issuecomment-14934",
+    "user": "mabshoff"
+}
+```
 
 Merged both spkgs in Sage 2.10.3.rc1
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-03 04:42:39
+archive/issue_comments_014935.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-03-03T04:42:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2254",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2254#issuecomment-14935",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

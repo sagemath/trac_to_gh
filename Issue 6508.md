@@ -1,11 +1,21 @@
 # Issue 6508: make installing extcode depend on mercurial
 
-Issue created by migration from https://trac.sagemath.org/ticket/6508
-
-Original creator: was
-
-Original creation time: 2009-07-10 17:44:39
-
+archive/issues_006508.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\n\n```\n\n\nOn Fri, Jul 10, 2009 at 8:08 AM, Jan Groenewald<jan@aims.ac.za> wrote:\n>\n> Hi\n>\n> sage -upgrade 4.0 to 4.1:\n>\n>\n> Finished extraction\n> ****************************************************\n> Host system\n> uname -a:\n> Linux hamerkop 2.6.28-13-generic #45-Ubuntu SMP Tue Jun 30 22:12:12 UTC 2009 x86_64 GNU/Linux\n> ****************************************************\n> ****************************************************\n> GCC Version\n> gcc -v\n> Using built-in specs.\n> Target: x86_64-linux-gnu\n> Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.3.3-5ubuntu4' --with-bugurl=file:///usr/share/doc/gcc-4.3/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.3 --program-suffix=-4.3 --enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --enable-mpfr --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu\n> Thread model: posix\n> gcc version 4.3.3 (Ubuntu 4.3.3-5ubuntu4)\n> ****************************************************\n> Traceback (most recent call last):\n>  File \"/usr/local/src/sage-4.0/local/bin/hg\", line 11, in <module>\n>    from mercurial import demandimport; demandimport.enable()\n> ImportError: No module named mercurial\n> Traceback (most recent call last):\n>  File \"/usr/local/src/sage-4.0/local/bin/hg\", line 11, in <module>\n>    from mercurial import demandimport; demandimport.enable()\n> ImportError: No module named mercurial\n> Traceback (most recent call last):\n>  File \"/usr/local/src/sage-4.0/local/bin/hg\", line 11, in <module>\n>    from mercurial import demandimport; demandimport.enable()\n> ImportError: No module named mercurial\n> Traceback (most recent call last):\n>  File \"/usr/local/src/sage-4.0/local/bin/hg\", line 11, in <module>\n>    from mercurial import demandimport; demandimport.enable()\n> ImportError: No module named mercurial\n> Traceback (most recent call last):\n>  File \"/usr/local/src/sage-4.0/local/bin/hg\", line 11, in <module>\n>    from mercurial import demandimport; demandimport.enable()\n> ImportError: No module named mercurial\n>\n> real    0m0.049s\n> user    0m0.020s\n> sys     0m0.028s\n> sage: An error occurred while installing extcode-4.1\n> Please email sage-devel http://groups.google.com/group/sage-devel\n> explaining the problem and send the relevant part of\n> of /usr/local/src/sage-4.0/install.log.  Describe your computer, operating system, etc.\n> If you want to try to fix the problem, yourself *don't* just cd to\n> /usr/local/src/sage-4.0/spkg/build/extcode-4.1 and type 'make'.\n> Instead type \"/usr/local/src/sage-4.0/sage -sh\"\n> in order to set all environment variables correctly, then cd to\n> /usr/local/src/sage-4.0/spkg/build/extcode-4.1\n> (When you are done debugging, you can type \"exit\" to leave the\n> subshell.)\n> make: *** [installed/extcode-4.1] Error 1\n>\n> real    0m2.154s\n> user    0m1.992s\n> sys     0m0.112s\n> Error building Sage.\n> Error installing Sage!\n> 1 root@hamerkop:/usr/local/src/sage-4.0#\n>\n>\n> I guess this means only half my installation is upgraded and it is a bit b0rked now?\n\nJust manually force mercurial to install via \n\n   sage -f mercurial-1.1.2.p0\n\nthen type \"make\" (or \"sage -upgrade\") after that finishes to continue the upgrade.\n\nI think this caused by a mistake in the spkg/standard/deps file.  These lines are wrong:\n\n$(INST)/$(EXTCODE): $(BASE)\n        $(SAGE_SPKG) $(EXTCODE) 2>&1\n\nsince clealry installing the EXTCODE package depends on mercurial.  It should be:\n\n$(INST)/$(EXTCODE): $(BASE)  $(INST)/$(MERCURIAL)\n        $(SAGE_SPKG) $(EXTCODE) 2>&1\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6508\n\n",
+    "created_at": "2009-07-10T17:44:39Z",
+    "labels": [
+        "packages: standard",
+        "blocker",
+        "bug"
+    ],
+    "title": "make installing extcode depend on mercurial",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6508",
+    "user": "was"
+}
+```
 Assignee: mabshoff
 
 
@@ -100,10 +110,25 @@ $(INST)/$(EXTCODE): $(BASE)  $(INST)/$(MERCURIAL)
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6508
+
+
+
+
 
 ---
 
-Comment by mvngu created at 2009-08-03 07:06:05
+archive/issue_comments_053028.json:
+```json
+{
+    "body": "The file `SAGE_ROOT/spkg/standard/deps` has been changed so that now the lines for extcode are:\n\n```\n# Mercurial must be built before building extcode. See trac ticket #6508.\n$(INST)/$(EXTCODE): $(BASE) $(INST)/$(MERCURIAL)\n        $(SAGE_SPKG) $(EXTCODE) 2>&1\n```\n\nI'm building Sage 4.0 from source on sage.math so that I can test upgrading from that version to the latest rc release of Sage 4.1.1. This should take a while to test.",
+    "created_at": "2009-08-03T07:06:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6508",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6508#issuecomment-53028",
+    "user": "mvngu"
+}
+```
 
 The file `SAGE_ROOT/spkg/standard/deps` has been changed so that now the lines for extcode are:
 
@@ -116,22 +141,55 @@ $(INST)/$(EXTCODE): $(BASE) $(INST)/$(MERCURIAL)
 I'm building Sage 4.0 from source on sage.math so that I can test upgrading from that version to the latest rc release of Sage 4.1.1. This should take a while to test.
 
 
+
 ---
 
-Comment by mvngu created at 2009-08-05 00:07:53
+archive/issue_comments_053029.json:
+```json
+{
+    "body": "The above changes seem to be working fine for me. I'm releasing these changes with Sage 4.1.1.rc1 so others can test upgrading from Sage 4.0 to 4.1.1.rc1. If all goes well, this ticket would be closed as being merged in Sage 4.1.1.rc1.",
+    "created_at": "2009-08-05T00:07:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6508",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6508#issuecomment-53029",
+    "user": "mvngu"
+}
+```
 
 The above changes seem to be working fine for me. I'm releasing these changes with Sage 4.1.1.rc1 so others can test upgrading from Sage 4.0 to 4.1.1.rc1. If all goes well, this ticket would be closed as being merged in Sage 4.1.1.rc1.
 
 
+
 ---
 
-Comment by mvngu created at 2009-08-07 09:33:28
+archive/issue_comments_053030.json:
+```json
+{
+    "body": "This has been fixed in Sage 4.1.1.rc2. So I'm closing this ticket as fixed.",
+    "created_at": "2009-08-07T09:33:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6508",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6508#issuecomment-53030",
+    "user": "mvngu"
+}
+```
 
 This has been fixed in Sage 4.1.1.rc2. So I'm closing this ticket as fixed.
 
 
+
 ---
 
-Comment by mvngu created at 2009-08-07 09:33:28
+archive/issue_comments_053031.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-08-07T09:33:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6508",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6508#issuecomment-53031",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

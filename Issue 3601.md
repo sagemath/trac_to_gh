@@ -1,11 +1,21 @@
 # Issue 3601: Reimplementation of tensor products
 
-Issue created by migration from https://trac.sagemath.org/ticket/3601
-
-Original creator: aschilling
-
-Original creation time: 2008-07-08 03:30:36
-
+archive/issues_003601.json:
+```json
+{
+    "body": "Assignee: Mike Hansen\n\nCC:  sage-combinat-commits@googlegroups.com\n\nKeywords: tensor products of crystals\n\nI split TensorProductOfCrystals into TensorProductOfCrystalsWithGenerators and\nFullTensorProductOfCrystals (with or without the option of being a classical crystal).\nThis makes it possible to have a more efficient way to access list, count, etc for \ntensor products that do not have module generators.\n\nAlso, the distinction between the specifications of module_generators and \nhighest_weight_vectors is made more precise (which made it necessary to slightly \nchange the implementation of Daniel Bump on characters).\n\nThis change is necessary for the upcoming implementation of affine crystals.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3601\n\n",
+    "created_at": "2008-07-08T03:30:36Z",
+    "labels": [
+        "combinatorics",
+        "minor",
+        "enhancement"
+    ],
+    "title": "Reimplementation of tensor products",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3601",
+    "user": "aschilling"
+}
+```
 Assignee: Mike Hansen
 
 CC:  sage-combinat-commits@googlegroups.com
@@ -23,13 +33,43 @@ change the implementation of Daniel Bump on characters).
 
 This change is necessary for the upcoming implementation of affine crystals.
 
+Issue created by migration from https://trac.sagemath.org/ticket/3601
+
+
+
+
 
 ---
+
+archive/issue_comments_025453.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-07-08T03:39:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3601#issuecomment-25453",
+    "user": "aschilling"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_025454.json:
+```json
+{
+    "body": "Attachment\n\nHi Anne,\n\nI added a few doctests and fixed some whitespace issues (there were tabs instead of spaces).  If you're fine with these changes, I'll go ahead and give it a positive review so it can get merged.\n\n--Mike",
+    "created_at": "2008-07-09T20:46:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3601#issuecomment-25454",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
@@ -40,9 +80,20 @@ I added a few doctests and fixed some whitespace issues (there were tabs instead
 --Mike
 
 
+
 ---
 
-Comment by aschilling created at 2008-07-09 21:18:17
+archive/issue_comments_025455.json:
+```json
+{
+    "body": "Hi Mike,\n\nYes, your changes look fine to me (I wonder how the tabs instead of \nspaces happened to be wrong?).\n\nAnne",
+    "created_at": "2008-07-09T21:18:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3601#issuecomment-25455",
+    "user": "aschilling"
+}
+```
 
 Hi Mike,
 
@@ -52,16 +103,38 @@ spaces happened to be wrong?).
 Anne
 
 
+
 ---
 
-Comment by mhansen created at 2008-07-09 21:20:18
+archive/issue_comments_025456.json:
+```json
+{
+    "body": "I'm not sure.  Usually the editor picks that up just fine.",
+    "created_at": "2008-07-09T21:20:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3601#issuecomment-25456",
+    "user": "mhansen"
+}
+```
 
 I'm not sure.  Usually the editor picks that up just fine.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-10 01:41:01
+archive/issue_comments_025457.json:
+```json
+{
+    "body": "Anne, Mike,\n\nto be 100% clear: both patches should be applied in this case?\n\nCheers,\n\nMichael",
+    "created_at": "2008-07-10T01:41:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3601#issuecomment-25457",
+    "user": "mabshoff"
+}
+```
 
 Anne, Mike,
 
@@ -72,22 +145,55 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mhansen created at 2008-07-10 01:54:10
+archive/issue_comments_025458.json:
+```json
+{
+    "body": "Yes, both patches.",
+    "created_at": "2008-07-10T01:54:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3601#issuecomment-25458",
+    "user": "mhansen"
+}
+```
 
 Yes, both patches.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-16 03:51:27
+archive/issue_comments_025459.json:
+```json
+{
+    "body": "Merged in Sage 3.0.6.alpha0",
+    "created_at": "2008-07-16T03:51:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3601#issuecomment-25459",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.6.alpha0
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-16 03:51:27
+archive/issue_comments_025460.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-07-16T03:51:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3601#issuecomment-25460",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

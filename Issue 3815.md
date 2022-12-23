@@ -1,11 +1,21 @@
 # Issue 3815: plot3d segfaults
 
-Issue created by migration from https://trac.sagemath.org/ticket/3815
-
-Original creator: wdj
-
-Original creation time: 2008-08-12 12:38:45
-
+archive/issues_003815.json:
+```json
+{
+    "body": "Assignee: was\n\nThis was reported by Adrian:\n\nI tried the following, and it did not work\n\n\n```\nx,y=var('x y')\ndef myarctan(x,y):\n    if x>=0 and y>=0:\n        return arctan(abs(y/x))\n    if x<0 and y>=0:\n        return pi-arctan(abs(y/x))\n    if x<0 and y<0:\n        return pi+arctan(abs(y/x))\n    if x>=0 and y<0:\n        return 2*pi-arctan(abs(y/x))\nplot3d(myarctan(x,y),(x,-3,3),(y,-3,3))\n```\n\n\nHowever, the following does work:\n\n\n```\nplot3d(myarctan,(-3,3),(-3,3))\n```\n\n\nI guess both should work, so I guess this is a bug.\n\n+++++++++++++++++++++++++++++++++++++++++++++++++\n\nReply by wdj:\n\nDidn't work for me. I got a segfault:\n\n\n\n```\nsage: plot3d(myarctan(x,y),(-3,3),(-3,3))\n\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\n\nThis is not a division by zero problem either:\n\n\n```\nsage: plot3d(myarctan(x,y),(0.1,0.3),(0.1,0.3))\n\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\n\nStrange. If you use\n\n\n```\nx,y=var('x, y')\ndef myarctan(u,v):\n  if u>=0.0 and v>=0.0:\n      return RR(arctan(abs(v/u)))\n  if u<0.0 and v>=0.0:\n      return RR(pi-arctan(abs(v/u)))\n  if u<0.0 and v<0.0:\n      return RR(pi+arctan(abs(v/u)))\n  if u>=0.0 and v<0.0:\n      return RR(2*pi-arctan(abs(v/u)))\n  #return 0.0\n```\n\nyou get a segfault (I'm using the command line, amd64 hardy heron machine).\nHowever, if you uncomment the last line you don't get a segfault but\nthe 0 function is plotted.\n\nI'm marking it as a blocker since it is a segfault. Hope that is not the wrong thing to do.\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3815\n\n",
+    "created_at": "2008-08-12T12:38:45Z",
+    "labels": [
+        "graphics",
+        "blocker",
+        "bug"
+    ],
+    "title": "plot3d segfaults",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3815",
+    "user": "wdj"
+}
+```
 Assignee: was
 
 This was reported by Adrian:
@@ -105,10 +115,25 @@ I'm marking it as a blocker since it is a segfault. Hope that is not the wrong t
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3815
+
+
+
+
 
 ---
 
-Comment by was created at 2008-08-12 13:32:11
+archive/issue_comments_027141.json:
+```json
+{
+    "body": "The traceback\n\n```\n\nsage: plot3d(myarctan(x,y),(-3,3),(-3,3))\n\nProgram received signal SIGSEGV, Segmentation fault.\n[Switching to Thread 47023105785696 (LWP 31014)]\n0x00002ac46b67af74 in memcpy () from /lib/libc.so.6\n(gdb) bt\n#0  0x00002ac46b67af74 in memcpy () from /lib/libc.so.6\n#1  0x00002ac46e7429a2 in __pyx_f_4sage_3ext_9fast_eval_binop (\n   __pyx_v__left=<value optimized out>, __pyx_v__right=0x621b20,\n__pyx_v_type=5 '\\005')\n   at sage/ext/fast_eval.c:6669\n#2  0x00002ac46e745e1e in\n__pyx_pf_4sage_3ext_9fast_eval_14FastDoubleFunc___add__ (\n   __pyx_v_left=0x2ac482a1a380, __pyx_v_right=0x517000) at\nsage/ext/fast_eval.c:4505\n#3  0x0000000000415aed in binary_op1 (v=0x411556, w=0x517000, op_slot=0)\n   at Objects/abstract.c:398\n#4  0x0000000000415fb0 in PyNumber_Add (v=0x2ac482a1a380, w=0x517000)\n   at Objects/abstract.c:638\n#5  0x0000000000479c73 in builtin_sum (self=<value optimized out>,\n   args=<value optimized out>) at Python/bltinmodule.c:2051\n#6  0x0000000000484217 in PyEval_EvalFrameEx (f=0x1de47d0,\n   throwflag=<value optimized out>) at Python/ceval.c:3573\n#7  0x0000000000486182 in PyEval_EvalCodeEx (co=0x2ac47f4ce8a0,\n   globals=<value optimized out>, locals=<value optimized out>,\nargs=0x1bdf378,\n   argcount=2, kws=0x1bdf388, kwcount=0, defs=0x2ac47f4c9ca8,\ndefcount=1, closure=0x0)\n   at Python/ceval.c:2836\n#8  0x0000000000484347 in PyEval_EvalFrameEx (f=0x1bdf190,\n   throwflag=<value optimized out>) at Python/ceval.c:3669\n#9  0x0000000000486182 in PyEval_EvalCodeEx (co=0x2ac47f4ce738,\n   globals=<value optimized out>, locals=<value optimized out>,\nargs=0x2ac46b0ca6f0,\n\n```\n",
+    "created_at": "2008-08-12T13:32:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3815",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3815#issuecomment-27141",
+    "user": "was"
+}
+```
 
 The traceback
 
@@ -153,9 +178,20 @@ args=0x2ac46b0ca6f0,
 
 
 
+
 ---
 
-Comment by cwitty created at 2008-08-12 13:50:29
+archive/issue_comments_027142.json:
+```json
+{
+    "body": "Here's a simpler test case:\n\n```\nsage: from sage.ext.fast_eval import fast_float_arg, fast_float\nsage: fast_float_arg(0)+None\n```\n\n\nThis is because of one of these bugs in fast_float:\n\"When you declare a parameter or C variable as being of an extension\ntype, Pyrex will allow it to take on the value None as well as values\nof its declared type. This is analogous to the way a C pointer can\ntake on the value NULL, and you need to exercise the same caution\nbecause of it.\"\n(The above is from the Pyrex manual.)",
+    "created_at": "2008-08-12T13:50:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3815",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3815#issuecomment-27142",
+    "user": "cwitty"
+}
+```
 
 Here's a simpler test case:
 
@@ -174,14 +210,38 @@ because of it."
 (The above is from the Pyrex manual.)
 
 
+
 ---
+
+archive/issue_comments_027143.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-08-13T03:45:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3815",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3815#issuecomment-27143",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by wdj created at 2008-08-13 12:39:11
+archive/issue_comments_027144.json:
+```json
+{
+    "body": "This applied cleanly to sage-3.1.alpha1. I tried the code Adrian gave which caused a segfault for me. This nasty segfault does not occur with this patch, instead triggering a traceback with a message about fastfloat. Also, this patch passed sage -testall except for one (unrelated?) failure:\n\n\n```\nsage -t  devel/sage/sage/modular/modsym/tests.py            **********************************************************************\nFile \"/home/wdj/sagefiles/sage-3.1.alpha1/tmp/tests.py\", line 223:\n    sage: sage.modular.modsym.tests.Test().test('csnew_dimension',seconds=1)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/wdj/sagefiles/sage-3.1.alpha1/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_11[2]>\", line 1, in <module>\n        sage.modular.modsym.tests.Test().test('csnew_dimension',seconds=Integer(1))###line 223:\n    sage: sage.modular.modsym.tests.Test().test('csnew_dimension',seconds=1)\n      File \"/home/wdj/sagefiles/sage-3.1.alpha1/local/lib/python2.5/site-packages/sage/modular/modsym/tests.py\", line 235, in test\n        self._do(name)\n      File \"/home/wdj/sagefiles/sage-3.1.alpha1/local/lib/python2.5/site-packages/sage/modular/modsym/tests.py\", line 196, in _do\n        Test.__dict__[\"test_%s\"%name](self)\n      File \"/home/wdj/sagefiles/sage-3.1.alpha1/local/lib/python2.5/site-packages/sage/modular/modsym/tests.py\", line 264, in test_csnew_dimension\n        V = M.cuspidal_submodule().new_submodule()\n      File \"/home/wdj/sagefiles/sage-3.1.alpha1/local/lib/python2.5/site-packages/sage/modular/modsym/ambient.py\", line 896, in cuspidal_submodule\n        assert d == S.dimension(), \"According to dimension formulas the cuspidal subspace of \\\"%s\\\" has dimension %s; however, computing it using modular symbols we obtained %s, so there is a bug (please report!).\"%(self, d, S.dimension())\n    AssertionError: According to dimension formulas the cuspidal subspace of \"Modular Symbols space of dimension 6 and level 12, weight 4, character [-1, -1], sign 1, over Rational Field\" has dimension 4; however, computing it using modular symbols we obtained 2, so there is a bug (please report!).\n```\n\n\nThis is hard to reproduce. Out of 10 tries, I only caught this failure 2 times.\n\nIn any case, I think Robert Bradshaw may be working on another patch for this, so maybe this report isn't needed. I just wanted to report that the segfault definitely is fixed with this patch on my machine (amd64, hardy heron).",
+    "created_at": "2008-08-13T12:39:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3815",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3815#issuecomment-27144",
+    "user": "wdj"
+}
+```
 
 This applied cleanly to sage-3.1.alpha1. I tried the code Adrian gave which caused a segfault for me. This nasty segfault does not occur with this patch, instead triggering a traceback with a message about fastfloat. Also, this patch passed sage -testall except for one (unrelated?) failure:
 
@@ -214,9 +274,20 @@ This is hard to reproduce. Out of 10 tries, I only caught this failure 2 times.
 In any case, I think Robert Bradshaw may be working on another patch for this, so maybe this report isn't needed. I just wanted to report that the segfault definitely is fixed with this patch on my machine (amd64, hardy heron).
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-15 10:05:13
+archive/issue_comments_027145.json:
+```json
+{
+    "body": "Positive review from me. If anybody wants to do a cleaner long term solution feel free to open another ticket.\n\nCheers,\n\nMichael",
+    "created_at": "2008-08-15T10:05:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3815",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3815#issuecomment-27145",
+    "user": "mabshoff"
+}
+```
 
 Positive review from me. If anybody wants to do a cleaner long term solution feel free to open another ticket.
 
@@ -225,15 +296,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-15 10:11:36
+archive/issue_comments_027146.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-08-15T10:11:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3815",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3815#issuecomment-27146",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-15 10:11:36
+archive/issue_comments_027147.json:
+```json
+{
+    "body": "Merged in Sage 3.1.rc0",
+    "created_at": "2008-08-15T10:11:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3815",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3815#issuecomment-27147",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.1.rc0

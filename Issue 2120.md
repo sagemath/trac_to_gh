@@ -1,11 +1,21 @@
 # Issue 2120: maple -- the interface is completely broken in Sage-2.10.1 with Maple 11.
 
-Issue created by migration from https://trac.sagemath.org/ticket/2120
-
-Original creator: was
-
-Original creation time: 2008-02-09 00:01:19
-
+archive/issues_002120.json:
+```json
+{
+    "body": "Assignee: was\n\nThis is what we get for not running the optional doctests.  Maple 10 still works fine.  With Maple 11 the Sage interfaces is completely totally broken (!). \n\n\n```\ndhcp46-76:interfaces was$ sage -t --optional maple.py \nsage -t --optional maple.py                                 **********************************************************************\nFile \"maple.py\", line 22:\n    sage: maple('3 * 5')\nExpected:\n    15\nGot:\n    <BLANKLINE>\n**********************************************************************\nFile \"maple.py\", line 24:\n    sage: maple.eval('ifactor(2005)')\nExpected:\n    '``(5)*``(401)'\nGot:\n    'read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\";\\nread \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\";\\nsage0'\n**********************************************************************\nFile \"maple.py\", line 26:\n    sage: maple.ifactor(2005)\nExpected:\n    ``(5)*``(401)\nGot:\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\";\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\";\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\";\n    ``(5)*``(401)\n**********************************************************************\nFile \"maple.py\", line 28:\n    sage: maple.fsolve('x^2=cos(x)+4', 'x=0..5')\nExpected:\n    1.914020619\nGot:\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\n**********************************************************************\nFile \"maple.py\", line 30:\n    sage: maple.factor('x^5 - y^5')\nExpected:\n    (x-y)*(x^4+x^3*y+x^2*y^2+x*y^3+y^4)\nGot:\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\n**********************************************************************\nFile \"maple.py\", line 55:\n    sage: maple('factor(x^5-1)')\nExpected:\n    (x-1)*(x^4+x^3+x^2+x+1)\nGot:\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\";\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\";\n**********************************************************************\nFile \"maple.py\", line 65:\n    sage: maple('(x^5-1)').factor()\nExpected:\n    (x-1)*(x^4+x^3+x^2+x+1)\nGot:\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\";\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\";\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\";\n**********************************************************************\nFile \"maple.py\", line 72:\n    sage: maple('(x^12-1)/(x-1)').simplify()\nExpected:\n    x^11+x^10+x^9+x^8+x^7+x^6+x^5+x^4+x^3+x^2+x+1\nGot:\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\";\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\";\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\";\n**********************************************************************\nFile \"maple.py\", line 82:\n    sage: maple('(x^12-1)').factor( )\nExpected:\n    (x-1)*(x+1)*(x^2+x+1)*(x^2-x+1)*(x^2+1)*(x^4-x^2+1)\nGot:\n    x^5-1\n**********************************************************************\nFile \"maple.py\", line 85:\n    sage: maple('(x^28-1)').factor( )\nExpected:\n    (x-1)*(x^6+x^5+x^4+x^3+x^2+x+1)*(x+1)*(1-x+x^2-x^3+x^4-x^5+x^6)*(x^2+1)*(x^12-x^10+x^8-x^6+x^4-x^2+1)\nGot:\n    x^5-1\n**********************************************************************\nFile \"maple.py\", line 115:\n    sage: maple.fibonacci(10)\nExpected:\n    fibonacci(10)\nGot:\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\";\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\";\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\";\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\";\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\";\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\";\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\";\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\";\n    (x^12-1)/(x-1)\n**********************************************************************\nFile \"maple.py\", line 121:\n    sage: maple('combinat[fibonacci]')(10)\nExpected:\n    55\nGot:\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\n**********************************************************************\nFile \"maple.py\", line 137:\n    sage: maple.fibonacci(10)\nExpected:\n    55\nGot:\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\";\n    [Chi, bell, binomial, cartprod, character, choose, composition, conjpart, \n    decodepart, encodepart, fibonacci, firstpart, graycode, inttovec, lastpart, \n    multinomial, nextpart, numbcomb, numbcomp, numbpart, numbperm, partition, \n    permute, powerset, prevpart, randcomb, randpart, randperm, setpartition, \n    stirling1, stirling2, subsets, vectoint]\n**********************************************************************\nFile \"maple.py\", line 144:\n    sage: maple('seq(fibonacci(i),i=1..19)')\nExpected:\n    1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584,\n    4181\nGot:\n    <BLANKLINE>\n**********************************************************************\nFile \"maple.py\", line 150:\n    sage: maple.isprime(maple.fibonacci(27))\nExpected:\n    false\nGot:\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\";\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\";\n**********************************************************************\nFile \"maple.py\", line 152:\n    sage: maple.ifactor(maple.fibonacci(27))\nExpected:\n    ``(2)*``(17)*``(53)*``(109)\nGot:\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\n**********************************************************************\nFile \"maple.py\", line 161:\n    sage: f19  = alpha^19 - beta^19/maple('sqrt(5)')\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/was/s/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[20]>\", line 1, in <module>\n        f19  = alpha**Integer(19) - beta**Integer(19)/maple('sqrt(5)')###line 161:\n    sage: f19  = alpha^19 - beta^19/maple('sqrt(5)')\n      File \"element.pyx\", line 1480, in sage.structure.element.RingElement.__div__\n      File \"coerce.pxi\", line 136, in sage.structure.element._div_c\n      File \"/Users/was/s/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 1210, in _div_\n        raise TypeError, msg\n    TypeError: An error occured running a Maple command:\n    INPUT:\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\";\n    OUTPUT:\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\";\n    Error, \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\"\n    is an empty file\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\";\n**********************************************************************\nFile \"maple.py\", line 162:\n    sage: f19\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/was/s/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[21]>\", line 1, in <module>\n        f19###line 162:\n    sage: f19\n    NameError: name 'f19' is not defined\n**********************************************************************\nFile \"maple.py\", line 164:\n    sage: _= f19.simplify()                # somewhat randomly ordered output...\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/was/s/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[22]>\", line 1, in <module>\n        _= f19.simplify()                # somewhat randomly ordered output...###line 164:\n    sage: _= f19.simplify()                # somewhat randomly ordered output...\n    NameError: name 'f19' is not defined\n**********************************************************************\nFile \"maple.py\", line 181:\n    age: mysqcu(5)\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/was/s/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[24]>\", line 1, in <module>\n        mysqcu(Integer(5))###line 181:\n    age: mysqcu(5)\n      File \"/Users/was/s/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 1015, in __call__\n        return getattr(P, self.name())(*args)\n      File \"/Users/was/s/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 939, in __call__\n        return self._parent.function_call(self._name, list(args))\n      File \"/Users/was/s/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 901, in function_call\n        return self.new(\"%s(%s)\"%(function, \",\".join([s.name() for s in args])))\n      File \"/Users/was/s/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 803, in new\n        return self(code)\n      File \"/Users/was/s/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 738, in __call__\n        return cls(self, x)\n      File \"/Users/was/s/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 989, in __init__\n        raise TypeError, x\n    TypeError: An error occured running a Maple command:\n    INPUT:\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\";\n    OUTPUT:\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\";\n    Error, \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\"\n    is an empty file\n**********************************************************************\nFile \"maple.py\", line 183:\n    age: mysqcu(-5)\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/was/s/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[25]>\", line 1, in <module>\n        mysqcu(-Integer(5))###line 183:\n    age: mysqcu(-5)\n      File \"/Users/was/s/local/lib/python2.5/site-packages/sage/interfaces/maple.py\", line 732, in __repr__\n        return self.parent().get(self._name)\n      File \"/Users/was/s/local/lib/python2.5/site-packages/sage/interfaces/maple.py\", line 421, in get\n        s = self.eval('printf(\"%%q\",%s)'%var)\n      File \"/Users/was/s/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 707, in eval\n        return '\\n'.join([self._eval_line(L, **kwds) for L in code.split('\\n') if L != ''])\n      File \"/Users/was/s/local/lib/python2.5/site-packages/sage/interfaces/maple.py\", line 385, in _eval_line\n        wait_for_prompt=wait_for_prompt).replace('\\\\\\n','').strip()\n      File \"/Users/was/s/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 609, in _eval_line\n        return self._eval_line_using_file(line)\n      File \"/Users/was/s/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 594, in _eval_line_using_file\n        s = self._eval_line(self._read_in_file_command(tmp_to_use), allow_use_file=False)\n      File \"/Users/was/s/local/lib/python2.5/site-packages/sage/interfaces/maple.py\", line 399, in _eval_line\n        raise RuntimeError, \"An error occured running a Maple command:\\nINPUT:\\n%s\\nOUTPUT:\\n%s\"%(line, z)\n    RuntimeError: An error occured running a Maple command:\n    INPUT:\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\";\n    OUTPUT:\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\";\n    Error, \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\"\n    is an empty file\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\";\n**********************************************************************\nFile \"maple.py\", line 514:\n    sage: maple('partition(10)')              # optional\nExpected:\n    partition(10)\nGot:\n    <BLANKLINE>\n**********************************************************************\nFile \"maple.py\", line 516:\n    sage: maple('bell(10)')                   # optional\nExpected:\n    bell(10)\nGot:\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\n**********************************************************************\nFile \"maple.py\", line 519:\n    sage: maple('partition(10)')               # optional\nExpected:\n    [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 2], [1, 1, 1, 1, 1, 1, 2, 2], [1, 1, 1, 1, 2, 2, 2], [1, 1, 2, 2, 2, 2], [2, 2, 2, 2, 2], [1, 1, 1, 1, 1, 1, 1, 3], [1, 1, 1, 1, 1, 2, 3], [1, 1, 1, 2, 2, 3], [1, 2, 2, 2, 3], [1, 1, 1, 1, 3, 3], [1, 1, 2, 3, 3], [2, 2, 3, 3], [1, 3, 3, 3], [1, 1, 1, 1, 1, 1, 4], [1, 1, 1, 1, 2, 4], [1, 1, 2, 2, 4], [2, 2, 2, 4], [1, 1, 1, 3, 4], [1, 2, 3, 4], [3, 3, 4], [1, 1, 4, 4], [2, 4, 4], [1, 1, 1, 1, 1, 5], [1, 1, 1, 2, 5], [1, 2, 2, 5], [1, 1, 3, 5], [2, 3, 5], [1, 4, 5], [5, 5], [1, 1, 1, 1, 6], [1, 1, 2, 6], [2, 2, 6], [1, 3, 6], [4, 6], [1, 1, 1, 7], [1, 2, 7], [3, 7], [1, 1, 8], [2, 8], [1, 9], [10]]\nGot:\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\n**********************************************************************\nFile \"maple.py\", line 521:\n    sage: maple('bell(10)')                   # optional\nExpected:\n    115975\nGot:\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\";\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\";\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\";\n    sage2\n**********************************************************************\nFile \"maple.py\", line 523:\n    sage: maple('fibonacci(10)')              # optional\nExpected:\n    55\nGot:\n    <BLANKLINE>\n**********************************************************************\nFile \"maple.py\", line 569:\n    sage: g = maple('gcd')                   #optional requires maple\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/was/s/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_17[0]>\", line 1, in <module>\n        g = maple('gcd')                   #optional requires maple###line 569:\n    sage: g = maple('gcd')                   #optional requires maple\n      File \"/Users/was/s/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 738, in __call__\n        return cls(self, x)\n      File \"/Users/was/s/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 989, in __init__\n        raise TypeError, x\n    TypeError: An error occured running a Maple command:\n    INPUT:\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\";\n    OUTPUT:\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\";Error, \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\"\n    is an empty file\n\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\";\n**********************************************************************\nFile \"maple.py\", line 570:\n    sage: print g.curry._sage_src_().strip() #optional requires maple\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/was/s/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_17[1]>\", line 1, in <module>\n        print g.curry._sage_src_().strip() #optional requires maple###line 570:\n    sage: print g.curry._sage_src_().strip() #optional requires maple\n    NameError: name 'g' is not defined\n**********************************************************************\nFile \"maple.py\", line 601:\n    sage: m.__hash__()\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/was/s/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_18[1]>\", line 1, in <module>\n        m.__hash__()###line 601:\n    sage: m.__hash__()\n      File \"/Users/was/s/local/lib/python2.5/site-packages/sage/interfaces/maple.py\", line 611, in __hash__\n        return int(maple.eval('StringTools:-Hash(convert(%s, string));'%self.name())[1:-1],16)\n    ValueError: invalid literal for int() with base 16: ''\n**********************************************************************\nFile \"maple.py\", line 603:\n    sage: hash(m)\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/was/s/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_18[2]>\", line 1, in <module>\n        hash(m)###line 603:\n    sage: hash(m)\n      File \"/Users/was/s/local/lib/python2.5/site-packages/sage/interfaces/maple.py\", line 611, in __hash__\n        return int(maple.eval('StringTools:-Hash(convert(%s, string));'%self.name())[1:-1],16)\n    ValueError: invalid literal for int() with base 16: 'ead \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tm'\n**********************************************************************\nFile \"maple.py\", line 606:\n    sage: m.__hash__()\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/was/s/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_18[4]>\", line 1, in <module>\n        m.__hash__()###line 606:\n    sage: m.__hash__()\n      File \"/Users/was/s/local/lib/python2.5/site-packages/sage/interfaces/maple.py\", line 611, in __hash__\n        return int(maple.eval('StringTools:-Hash(convert(%s, string));'%self.name())[1:-1],16)\n    ValueError: invalid literal for int() with base 16: 'ead \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\";\\nread \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\";\\n\"ce5b65cba4048e3ef10b852df09e25f4'\n**********************************************************************\nFile \"maple.py\", line 608:\n    sage: hash(m)\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/was/s/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_18[5]>\", line 1, in <module>\n        hash(m)###line 608:\n    sage: hash(m)\n      File \"/Users/was/s/local/lib/python2.5/site-packages/sage/interfaces/maple.py\", line 611, in __hash__\n        return int(maple.eval('StringTools:-Hash(convert(%s, string));'%self.name())[1:-1],16)\n    ValueError: invalid literal for int() with base 16: 'ead \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tm'\n**********************************************************************\nFile \"maple.py\", line 622:\n    sage: a == b\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/was/s/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_19[2]>\", line 1, in <module>\n        a == b###line 622:\n    sage: a == b\n      File \"element.pyx\", line 623, in sage.structure.element.Element.__richcmp__\n      File \"element.pyx\", line 595, in sage.structure.element.Element._richcmp\n      File \"/Users/was/s/local/lib/python2.5/site-packages/sage/interfaces/maple.py\", line 680, in __cmp__\n        if (hash(self) < hash(other)):\n      File \"/Users/was/s/local/lib/python2.5/site-packages/sage/interfaces/maple.py\", line 611, in __hash__\n        return int(maple.eval('StringTools:-Hash(convert(%s, string));'%self.name())[1:-1],16)\n    ValueError: invalid literal for int() with base 16: 'ead \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tm'\n**********************************************************************\nFile \"maple.py\", line 624:\n    sage: a == 5\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/was/s/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_19[3]>\", line 1, in <module>\n        a == Integer(5)###line 624:\n    sage: a == 5\n      File \"element.pyx\", line 623, in sage.structure.element.Element.__richcmp__\n      File \"element.pyx\", line 568, in sage.structure.element.Element._richcmp\n      File \"element.pyx\", line 554, in sage.structure.element.Element._richcmp_\n      File \"element.pyx\", line 595, in sage.structure.element.Element._richcmp\n      File \"/Users/was/s/local/lib/python2.5/site-packages/sage/interfaces/maple.py\", line 680, in __cmp__\n        if (hash(self) < hash(other)):\n      File \"/Users/was/s/local/lib/python2.5/site-packages/sage/interfaces/maple.py\", line 611, in __hash__\n        return int(maple.eval('StringTools:-Hash(convert(%s, string));'%self.name())[1:-1],16)\n    ValueError: invalid literal for int() with base 16: 'ead \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tm'\n**********************************************************************\nFile \"maple.py\", line 628:\n    sage: a == c\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/was/s/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_19[5]>\", line 1, in <module>\n        a == c###line 628:\n    sage: a == c\n      File \"element.pyx\", line 623, in sage.structure.element.Element.__richcmp__\n      File \"element.pyx\", line 595, in sage.structure.element.Element._richcmp\n      File \"/Users/was/s/local/lib/python2.5/site-packages/sage/interfaces/maple.py\", line 680, in __cmp__\n        if (hash(self) < hash(other)):\n      File \"/Users/was/s/local/lib/python2.5/site-packages/sage/interfaces/maple.py\", line 611, in __hash__\n        return int(maple.eval('StringTools:-Hash(convert(%s, string));'%self.name())[1:-1],16)\n    ValueError: invalid literal for int() with base 16: 'ead \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\";\\nread \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\";\\nread \"/Users/was/.sage//temp/dhcp46_76.ipam.ucl'\n**********************************************************************\nFile \"maple.py\", line 630:\n    sage: a < c\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/was/s/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_19[6]>\", line 1, in <module>\n        a < c###line 630:\n    sage: a < c\n      File \"element.pyx\", line 623, in sage.structure.element.Element.__richcmp__\n      File \"element.pyx\", line 595, in sage.structure.element.Element._richcmp\n      File \"/Users/was/s/local/lib/python2.5/site-packages/sage/interfaces/maple.py\", line 680, in __cmp__\n        if (hash(self) < hash(other)):\n      File \"/Users/was/s/local/lib/python2.5/site-packages/sage/interfaces/maple.py\", line 611, in __hash__\n        return int(maple.eval('StringTools:-Hash(convert(%s, string));'%self.name())[1:-1],16)\n    ValueError: invalid literal for int() with base 16: 'ead \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tm'\n**********************************************************************\nFile \"maple.py\", line 632:\n    sage: a < 6\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/was/s/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_19[7]>\", line 1, in <module>\n        a < Integer(6)###line 632:\n    sage: a < 6\n      File \"element.pyx\", line 623, in sage.structure.element.Element.__richcmp__\n      File \"element.pyx\", line 568, in sage.structure.element.Element._richcmp\n      File \"element.pyx\", line 554, in sage.structure.element.Element._richcmp_\n      File \"element.pyx\", line 595, in sage.structure.element.Element._richcmp\n      File \"/Users/was/s/local/lib/python2.5/site-packages/sage/interfaces/maple.py\", line 680, in __cmp__\n        if (hash(self) < hash(other)):\n      File \"/Users/was/s/local/lib/python2.5/site-packages/sage/interfaces/maple.py\", line 611, in __hash__\n        return int(maple.eval('StringTools:-Hash(convert(%s, string));'%self.name())[1:-1],16)\n    ValueError: invalid literal for int() with base 16: 'ead \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tm'\n**********************************************************************\nFile \"maple.py\", line 634:\n    sage: c <= a\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/was/s/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_19[8]>\", line 1, in <module>\n        c <= a###line 634:\n    sage: c <= a\n      File \"element.pyx\", line 623, in sage.structure.element.Element.__richcmp__\n      File \"element.pyx\", line 595, in sage.structure.element.Element._richcmp\n      File \"/Users/was/s/local/lib/python2.5/site-packages/sage/interfaces/maple.py\", line 680, in __cmp__\n        if (hash(self) < hash(other)):\n      File \"/Users/was/s/local/lib/python2.5/site-packages/sage/interfaces/maple.py\", line 611, in __hash__\n        return int(maple.eval('StringTools:-Hash(convert(%s, string));'%self.name())[1:-1],16)\n    ValueError: invalid literal for int() with base 16: ''\n**********************************************************************\nFile \"maple.py\", line 639:\n    sage: Mm == Mm\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/was/s/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_19[11]>\", line 1, in <module>\n        Mm == Mm###line 639:\n    sage: Mm == Mm\n      File \"element.pyx\", line 623, in sage.structure.element.Element.__richcmp__\n      File \"element.pyx\", line 595, in sage.structure.element.Element._richcmp\n      File \"/Users/was/s/local/lib/python2.5/site-packages/sage/interfaces/maple.py\", line 680, in __cmp__\n        if (hash(self) < hash(other)):\n      File \"/Users/was/s/local/lib/python2.5/site-packages/sage/interfaces/maple.py\", line 611, in __hash__\n        return int(maple.eval('StringTools:-Hash(convert(%s, string));'%self.name())[1:-1],16)\n    ValueError: invalid literal for int() with base 16: 'ead \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tm'\n**********************************************************************\nFile \"maple.py\", line 641:\n    sage: Mm < 5\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/was/s/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_19[12]>\", line 1, in <module>\n        Mm < Integer(5)###line 641:\n    sage: Mm < 5\n      File \"element.pyx\", line 623, in sage.structure.element.Element.__richcmp__\n      File \"element.pyx\", line 568, in sage.structure.element.Element._richcmp\n      File \"element.pyx\", line 554, in sage.structure.element.Element._richcmp_\n      File \"element.pyx\", line 595, in sage.structure.element.Element._richcmp\n      File \"/Users/was/s/local/lib/python2.5/site-packages/sage/interfaces/maple.py\", line 680, in __cmp__\n        if (hash(self) < hash(other)):\n      File \"/Users/was/s/local/lib/python2.5/site-packages/sage/interfaces/maple.py\", line 611, in __hash__\n        return int(maple.eval('StringTools:-Hash(convert(%s, string));'%self.name())[1:-1],16)\n    ValueError: invalid literal for int() with base 16: 'ead \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tm'\n**********************************************************************\nFile \"maple.py\", line 643:\n    sage: (Mm < 5) == (M < 5)\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/was/s/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_19[13]>\", line 1, in <module>\n        (Mm < Integer(5)) == (M < Integer(5))###line 643:\n    sage: (Mm < 5) == (M < 5)\n      File \"element.pyx\", line 623, in sage.structure.element.Element.__richcmp__\n      File \"element.pyx\", line 568, in sage.structure.element.Element._richcmp\n      File \"element.pyx\", line 554, in sage.structure.element.Element._richcmp_\n      File \"element.pyx\", line 595, in sage.structure.element.Element._richcmp\n      File \"/Users/was/s/local/lib/python2.5/site-packages/sage/interfaces/maple.py\", line 680, in __cmp__\n        if (hash(self) < hash(other)):\n      File \"/Users/was/s/local/lib/python2.5/site-packages/sage/interfaces/maple.py\", line 611, in __hash__\n        return int(maple.eval('StringTools:-Hash(convert(%s, string));'%self.name())[1:-1],16)\n      File \"/Users/was/s/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 707, in eval\n        return '\\n'.join([self._eval_line(L, **kwds) for L in code.split('\\n') if L != ''])\n      File \"/Users/was/s/local/lib/python2.5/site-packages/sage/interfaces/maple.py\", line 385, in _eval_line\n        wait_for_prompt=wait_for_prompt).replace('\\\\\\n','').strip()\n      File \"/Users/was/s/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 609, in _eval_line\n        return self._eval_line_using_file(line)\n      File \"/Users/was/s/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 594, in _eval_line_using_file\n        s = self._eval_line(self._read_in_file_command(tmp_to_use), allow_use_file=False)\n      File \"/Users/was/s/local/lib/python2.5/site-packages/sage/interfaces/maple.py\", line 399, in _eval_line\n        raise RuntimeError, \"An error occured running a Maple command:\\nINPUT:\\n%s\\nOUTPUT:\\n%s\"%(line, z)\n    RuntimeError: An error occured running a Maple command:\n    INPUT:\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\";\n    OUTPUT:\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\";\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\";\n    Error, a Matrix is not valid rhs to < or <=\n**********************************************************************\nFile \"maple.py\", line 645:\n    sage: 5 < Mm\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/was/s/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_19[14]>\", line 1, in <module>\n        Integer(5) < Mm###line 645:\n    sage: 5 < Mm\n      File \"integer.pyx\", line 446, in sage.rings.integer.Integer.__richcmp__\n      File \"element.pyx\", line 568, in sage.structure.element.Element._richcmp\n      File \"element.pyx\", line 554, in sage.structure.element.Element._richcmp_\n      File \"element.pyx\", line 595, in sage.structure.element.Element._richcmp\n      File \"/Users/was/s/local/lib/python2.5/site-packages/sage/interfaces/maple.py\", line 675, in __cmp__\n        raise RuntimeError, e\n    RuntimeError: An error occured running a Maple command:\n    INPUT:\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\";\n    OUTPUT:\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\";\n    Error, \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\"\n    is an empty file\n**********************************************************************\nFile \"maple.py\", line 654:\n    sage: maple.eval('testeq(%s = %s)'%(t.name(),u.name()))\nExpected:\n    'true'\nGot:\n    ''\n**********************************************************************\nFile \"maple.py\", line 691:\n    sage: t*u\nExpected:\n    15\nGot:\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\n**********************************************************************\nFile \"maple.py\", line 695:\n    sage: Mm*Mm\nExpected:\n    Matrix(2, 2, [[2,3],[6,11]])\nGot:\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\n**********************************************************************\nFile \"maple.py\", line 700:\n    sage: vm*Mm\nExpected:\n    Vector[row](2, [6,11])\nGot:\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\n**********************************************************************\nFile \"maple.py\", line 703:\n    sage: t*Mm\nExpected:\n    Matrix(2, 2, [[0,5],[10,15]])\nGot:\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\";\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\";\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\";\n    9\n**********************************************************************\nFile \"maple.py\", line 723:\n    sage: maple(x)\nExpected:\n    x\nGot:\n    <BLANKLINE>\n**********************************************************************\nFile \"maple.py\", line 725:\n    sage: maple(5)\nExpected:\n    5\nGot:\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\n**********************************************************************\nFile \"maple.py\", line 728:\n    sage: maple(M)\nExpected:\n    Matrix(2, 2, [[0,1],[2,3]])\nGot:\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\";\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\";\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\";\n    sage15\n**********************************************************************\nFile \"maple.py\", line 739:\n    sage: print latex(maple('(x^4 - y)/(y^2-3*x)'))      # optional\nExpected:\n    {\\frac {{x}^{4}-y}{{y}^{2}-3\\,x}}\nGot:\n    <BLANKLINE>\n**********************************************************************\nFile \"maple.py\", line 741:\n    sage: print latex(maple(pi - e^3))                   # optional\nExpected:\n    \\pi - \\left( {e^{1}} \\right) ^{3}\nGot:\n    read \"/Users/was/.sage//temp/dhcp46_76.ipam.ucla.edu/43017//interface//tmp\n**********************************************************************\n8 items had failures:\n  21 of  26 in __main__.example_0\n   5 of   7 in __main__.example_14\n   2 of   4 in __main__.example_17\n   4 of   6 in __main__.example_18\n  11 of  19 in __main__.example_19\n   4 of   9 in __main__.example_20\n   3 of   5 in __main__.example_21\n   2 of   2 in __main__.example_22\n***Test Failed*** 52 failures.\nFor whitespace errors, see the file .doctest_maple.py\n\t [14.3 s]\nexit code: 256\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t --optional maple.py\nTotal time for all tests: 14.3 seconds\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2120\n\n",
+    "created_at": "2008-02-09T00:01:19Z",
+    "labels": [
+        "interfaces",
+        "major",
+        "bug"
+    ],
+    "title": "maple -- the interface is completely broken in Sage-2.10.1 with Maple 11.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2120",
+    "user": "was"
+}
+```
 Assignee: was
 
 This is what we get for not running the optional doctests.  Maple 10 still works fine.  With Maple 11 the Sage interfaces is completely totally broken (!). 
@@ -676,15 +686,43 @@ Total time for all tests: 14.3 seconds
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2120
+
+
+
+
 
 ---
 
-Comment by was created at 2008-02-09 00:02:21
+archive/issue_comments_013903.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-02-09T00:02:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2120#issuecomment-13903",
+    "user": "was"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
+
+archive/issue_comments_013904.json:
+```json
+{
+    "body": "Attachment\n\nThe attached patch trac-2120-maple_interface.patch completely fixes all these problems on Maple with OS X.   It may partly break things on Linux, maybe. (?)  I don't have a good net connection with access to Linux Maple right now for testing, but will someday and then post a followup patch that fixes any issues.\n\nNOTE: This patch *vastly* improves the robustness of the Maple interface, to put it mildly.",
+    "created_at": "2008-02-09T02:06:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2120#issuecomment-13904",
+    "user": "was"
+}
+```
 
 Attachment
 
@@ -693,23 +731,56 @@ The attached patch trac-2120-maple_interface.patch completely fixes all these pr
 NOTE: This patch *vastly* improves the robustness of the Maple interface, to put it mildly.
 
 
+
 ---
 
-Comment by craigcitro created at 2008-06-15 21:38:02
+archive/issue_comments_013905.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"editor_craigcitro\".",
+    "created_at": "2008-06-15T21:38:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2120#issuecomment-13905",
+    "user": "craigcitro"
+}
+```
 
 Changing keywords from "" to "editor_craigcitro".
 
 
+
 ---
 
-Comment by mhansen created at 2008-06-15 21:38:33
+archive/issue_comments_013906.json:
+```json
+{
+    "body": "I'll take care of this.",
+    "created_at": "2008-06-15T21:38:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2120#issuecomment-13906",
+    "user": "mhansen"
+}
+```
 
 I'll take care of this.
 
 
+
 ---
 
-Comment by was created at 2009-01-21 11:55:12
+archive/issue_comments_013907.json:
+```json
+{
+    "body": "With stock Maple 12 and stock sage-3.3.alpha0 on OS X, here's what happens (total disaster):\n\n```\nteragon-2:graphics wstein$ ~/build/sage-3.3.alpha0/sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: maple('2+2')\n| Sage Version 3.3.alpha0, Release Date: 2009-01-19                  |\n| Type notebook() for the GUI, and license() for information.        |\nsage: maple('2+2')\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/wstein/.sage/temp/teragon_2.local/96783/_Users_wstein__sage_init_sage_0.py in <module>()\n----> 1 \n      2 \n      3 \n      4 \n      5 \n\n/Users/wstein/build/sage-3.3.alpha0/local/lib/python2.5/site-packages/sage/interfaces/expect.pyc in __call__(self, x, name)\n    963             return x\n    964         if isinstance(x, basestring):\n--> 965             return cls(self, x, name=name)\n    966         try:\n    967             return self._coerce_from_special_method(x)\n\n/Users/wstein/build/sage-3.3.alpha0/local/lib/python2.5/site-packages/sage/interfaces/expect.pyc in __init__(self, parent, value, is_name, name)\n   1333             except (TypeError, KeyboardInterrupt, RuntimeError, ValueError), x:\n   1334                 self._session_number = -1\n-> 1335                 raise TypeError, x\n   1336         self._session_number = parent._session_number\n   1337 \n\nTypeError: An error occured running a Maple command:\nINPUT:\nread \"/Users/wstein/.sage//temp/teragon_2.local/96783//interface//tmp96783\";\nOUTPUT:\nread \"/Users/wstein/.sage//temp/teragon_2.local/96783//interface//tmp96783\";\non line 2, syntax error, `)` unexpected:\nage0);\n    ^\nError, while reading\n`/Users/wstein/.sage//temp/teragon_2.local/96783//interface//tmp96783`\n\n```\n",
+    "created_at": "2009-01-21T11:55:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2120#issuecomment-13907",
+    "user": "was"
+}
+```
 
 With stock Maple 12 and stock sage-3.3.alpha0 on OS X, here's what happens (total disaster):
 
@@ -760,13 +831,24 @@ Error, while reading
 
 
 
+
 ---
 
-Comment by was created at 2009-01-24 01:00:45
+archive/issue_comments_013908.json:
+```json
+{
+    "body": "I tried today, and \n* maple 12 works fine on OS X (for me).  Perfect in fact.\n* maple 12 on linux, fails totally:\n\n```\nwstein@sage:~$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: maple('2+3')\n| Sage Version 3.2.3, Release Date: 2009-01-05                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: maple('2+3')\nread \"/scratch/wstein/sage//temp/sage.math.washington.edu/1285//interface/\n```\n",
+    "created_at": "2009-01-24T01:00:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2120#issuecomment-13908",
+    "user": "was"
+}
+```
 
 I tried today, and 
-   * maple 12 works fine on OS X (for me).  Perfect in fact.
-   * maple 12 on linux, fails totally:
+* maple 12 works fine on OS X (for me).  Perfect in fact.
+* maple 12 on linux, fails totally:
 
 ```
 wstein@sage:~$ sage
@@ -781,9 +863,20 @@ read "/scratch/wstein/sage//temp/sage.math.washington.edu/1285//interface/
 
 
 
+
 ---
 
-Comment by was created at 2009-01-24 01:04:13
+archive/issue_comments_013909.json:
+```json
+{
+    "body": "the poor attached patch:\n\n```\nHunk #1 FAILED at 859\nHunk #2 succeeded at 1496 with fuzz 2 (offset 382 lines).\n1 out of 2 hunks FAILED -- saving rejects to file sage/interfaces/expect.py.rej\npatching file sage/interfaces/maple.py\nHunk #3 FAILED at 245\nHunk #4 FAILED at 390\nHunk #5 FAILED at 442\nHunk #6 FAILED at 606\n4 out of 7 hunks FAILED -- saving rejects to file sage/interfaces/maple.py.rej\n```\n",
+    "created_at": "2009-01-24T01:04:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2120#issuecomment-13909",
+    "user": "was"
+}
+```
 
 the poor attached patch:
 
@@ -801,16 +894,40 @@ Hunk #6 FAILED at 606
 
 
 
+
 ---
+
+archive/issue_comments_013910.json:
+```json
+{
+    "body": "Attachment\n\nThe second patch rebases the *much* earlier patch.  It makes doctests and the command line work for me on sage.math, but not having maple I need testers on consumer linux distros and especially Mac OS X.",
+    "created_at": "2009-04-01T01:48:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2120#issuecomment-13910",
+    "user": "ncalexan"
+}
+```
 
 Attachment
 
 The second patch rebases the *much* earlier patch.  It makes doctests and the command line work for me on sage.math, but not having maple I need testers on consumer linux distros and especially Mac OS X.
 
 
+
 ---
 
-Comment by was created at 2009-04-01 13:01:15
+archive/issue_comments_013911.json:
+```json
+{
+    "body": "It hangs forever on using it with Maple 12 on my Mac laptop:\n\n```\nsage: maple('2+3')\n[hang forever]\n```\n\nI'll install Maple 12 on my beefy office desktop OS X box (bsd.math.washington.edu), and give you an account.",
+    "created_at": "2009-04-01T13:01:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2120#issuecomment-13911",
+    "user": "was"
+}
+```
 
 It hangs forever on using it with Maple 12 on my Mac laptop:
 
@@ -822,16 +939,38 @@ sage: maple('2+3')
 I'll install Maple 12 on my beefy office desktop OS X box (bsd.math.washington.edu), and give you an account.
 
 
+
 ---
 
-Comment by was created at 2009-04-01 13:32:18
+archive/issue_comments_013912.json:
+```json
+{
+    "body": "By the way, the code *currently* in sage-3.4 works fine with Maple 12 on OS X on my laptop.  So the patch breaks things for OS X.",
+    "created_at": "2009-04-01T13:32:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2120#issuecomment-13912",
+    "user": "was"
+}
+```
 
 By the way, the code *currently* in sage-3.4 works fine with Maple 12 on OS X on my laptop.  So the patch breaks things for OS X.
 
 
+
 ---
 
-Comment by malb created at 2009-08-25 22:55:37
+archive/issue_comments_013913.json:
+```json
+{
+    "body": "Here is what I currently get with Maple 11:\n\n\n```\nsage -t --optional \"devel/sage-main/sage/interfaces/maple.py\"            \n**********************************************************************   \nFile \"/usr/local/sage-4.1/devel/sage-main/sage/interfaces/maple.py\", line 29:\n    sage: maple.eval('ifactor(2005)')                    # optional - maple  \nExpected:                                                                    \n    '\"(5)*\"(401)'                                                            \nGot:                                                                         \n    '``(5)*``(401)'                                                          \n**********************************************************************       \nFile \"/usr/local/sage-4.1/devel/sage-main/sage/interfaces/maple.py\", line 31:\n    sage: maple.ifactor(2005)                            # optional - maple  \nExpected:                                                                    \n    \"(5)*\"(401)                                                              \nGot:                                                                         \n    ``(5)*``(401)                                                            \n**********************************************************************       \nFile \"/usr/local/sage-4.1/devel/sage-main/sage/interfaces/maple.py\", line 188:\n    sage: maple.ifactor(maple.fibonacci(27))     # optional - maple\nExpected:\n    \"(2)*\"(17)*\"(53)*\"(109)\nGot:\n    ``(2)*``(17)*``(53)*``(109)\n**********************************************************************\nFile \"/usr/local/sage-4.1/devel/sage-main/sage/interfaces/maple.py\", line 1068:\n    sage: print latex(maple(pi - e^3))                   # optional -- requires maple\nExpected:\n    \\pi - \\left( {e^{1}} \\right) ^{3}\nGot:\n    \\pi-{e^{3}}\n**********************************************************************\n2 items had failures:\n   3 of  28 in __main__.example_0\n   1 of   4 in __main__.example_40\n***Test Failed*** 4 failures.\nFor whitespace errors, see the file /usr/local/sage-4.1/tmp/.doctest_maple.py\n         [21.0 s]\n```\n",
+    "created_at": "2009-08-25T22:55:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2120#issuecomment-13913",
+    "user": "malb"
+}
+```
 
 Here is what I currently get with Maple 11:
 
@@ -877,9 +1016,20 @@ For whitespace errors, see the file /usr/local/sage-4.1/tmp/.doctest_maple.py
 
 
 
+
 ---
 
-Comment by abbot created at 2011-06-04 19:34:41
+archive/issue_comments_013914.json:
+```json
+{
+    "body": "I have tested this patch on Linux/x86_64 (Fedora 14) with sage-4.4.1 and Maple 13, and also Maple 11. It does fix the problem. Test output with Maple 13:\n\n\n```\nsage -t --optional \"devel/sage-main/sage/interfaces/maple.py\"\n**********************************************************************\nFile \"/opt/sage-4.4.1/devel/sage-main/sage/interfaces/maple.py\", line 1013:\n    sage: u == t                                   # optional -- requires maple\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/opt/sage-4.4.1/devel/sage-main/sage/interfaces/maple.py\", line 1118:\n    sage: print latex(maple(pi - e^3))                   # optional -- requires maple\nExpected:\n    \\pi - \\left( {e^{1}} \\right) ^{3}\nGot:\n    \\pi-{{\\rm e}^{3}}\n**********************************************************************\n2 items had failures:\n   1 of  22 in __main__.example_36\n   1 of   4 in __main__.example_40\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /home/shamardin/.sage//tmp/.doctest_maple.py\n\t [39.6 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t --optional \"devel/sage-main/sage/interfaces/maple.py\"\nTotal time for all tests: 39.6 seconds\n```\n",
+    "created_at": "2011-06-04T19:34:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2120#issuecomment-13914",
+    "user": "abbot"
+}
+```
 
 I have tested this patch on Linux/x86_64 (Fedora 14) with sage-4.4.1 and Maple 13, and also Maple 11. It does fix the problem. Test output with Maple 13:
 
@@ -918,9 +1068,20 @@ Total time for all tests: 39.6 seconds
 
 
 
+
 ---
 
-Comment by robertwb created at 2012-12-30 00:26:31
+archive/issue_comments_013915.json:
+```json
+{
+    "body": "As of sage 5.5\n\n\n```\n\tsage -t --only-optional=maple devel/sage/sage/symbolic/expression.pyx # 2 doctests failed\n\tsage -t --only-optional=maple devel/sage/sage/symbolic/integration/integral.py # 2 doctests failed\n\tsage -t --only-optional=maple devel/sage/sage/calculus/calculus.py # 1 doctests failed\n\tsage -t --only-optional=maple devel/sage/sage/misc/functional.py # 1 doctests failed\n\tsage -t --only-optional=maple devel/sage/sage/tests/benchmark.py # 5 doctests failed\n\tsage -t --only-optional=maple devel/sage/sage/interfaces/maple.py # 123 doctests failed\n```\n\n\nRelated: #13540",
+    "created_at": "2012-12-30T00:26:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2120#issuecomment-13915",
+    "user": "robertwb"
+}
+```
 
 As of sage 5.5
 
@@ -938,50 +1099,127 @@ As of sage 5.5
 Related: #13540
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-01-01 13:35:26
+archive/issue_comments_013916.json:
+```json
+{
+    "body": "Changing keywords from \"editor_craigcitro\" to \"\".",
+    "created_at": "2013-01-01T13:35:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2120#issuecomment-13916",
+    "user": "jdemeyer"
+}
+```
 
 Changing keywords from "editor_craigcitro" to "".
 
 
+
 ---
 
-Comment by migeruhito created at 2013-02-16 17:30:52
+archive/issue_comments_013917.json:
+```json
+{
+    "body": "See Ticket #12295",
+    "created_at": "2013-02-16T17:30:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2120#issuecomment-13917",
+    "user": "migeruhito"
+}
+```
 
 See Ticket #12295
 
 
+
 ---
 
-Comment by mmezzarobba created at 2014-03-15 18:38:00
+archive/issue_comments_013918.json:
+```json
+{
+    "body": "close in favor of #12295, which is more up to date?",
+    "created_at": "2014-03-15T18:38:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2120#issuecomment-13918",
+    "user": "mmezzarobba"
+}
+```
 
 close in favor of #12295, which is more up to date?
 
 
+
 ---
 
-Comment by mmezzarobba created at 2014-03-15 18:38:00
+archive/issue_comments_013919.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2014-03-15T18:38:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2120#issuecomment-13919",
+    "user": "mmezzarobba"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by rws created at 2014-03-24 15:41:16
+archive/issue_comments_013920.json:
+```json
+{
+    "body": "Yes, since there is apparently a fix attached for sage-5.9, while the last comment here concerns 5.5.",
+    "created_at": "2014-03-24T15:41:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2120#issuecomment-13920",
+    "user": "rws"
+}
+```
 
 Yes, since there is apparently a fix attached for sage-5.9, while the last comment here concerns 5.5.
 
 
+
 ---
 
-Comment by rws created at 2014-03-24 15:41:16
+archive/issue_comments_013921.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2014-03-24T15:41:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2120#issuecomment-13921",
+    "user": "rws"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by vbraun created at 2014-03-31 12:27:12
+archive/issue_comments_013922.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2014-03-31T12:27:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2120#issuecomment-13922",
+    "user": "vbraun"
+}
+```
 
 Resolution: duplicate

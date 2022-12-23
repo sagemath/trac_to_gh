@@ -1,11 +1,21 @@
 # Issue 4597: setup.py dependency checker does not invalidate cache correctly
 
-Issue created by migration from https://trac.sagemath.org/ticket/4597
-
-Original creator: cwitty
-
-Original creation time: 2008-11-23 16:30:54
-
+archive/issues_004597.json:
+```json
+{
+    "body": "Assignee: craigcitro\n\nAfter applying the following patches: #846, #4564, #4579, and #4592, applying #4580 gives the following error:\n\n```\nUpdating Cython code....\nTraceback (most recent call last):\n  File \"setup.py\", line 463, in <module>\n    queue = compile_command_list(ext_modules, deps)\n  File \"setup.py\", line 424, in compile_command_list\n    dep_file, dep_time = deps.newest_dep(f)\n  File \"setup.py\", line 355, in newest_dep\n    for f in self.all_deps(filename):\n  File \"setup.py\", line 338, in all_deps\n    deps.update(self.all_deps(f, path))\n  File \"setup.py\", line 336, in all_deps\n    for f in self.immediate_deps(filename):\n  File \"setup.py\", line 318, in immediate_deps\n    self._deps[filename] = self.parse_deps(filename)\n  File \"setup.py\", line 274, in parse_deps\n    f = open(filename)\nIOError: [Errno 2] No such file or directory: 'sage/rings/mpfr.pxi'\nsage: There was an error installing modified sage library code.\n```\n\n\nI have an unconfirmed theory as to the cause of the problem.  My theory is that there's a chain like this: A.pyx depends on B.pxd; B.pxd depends on C.pxi.  So setup.py records a transitive dependency of A.pyx on C.pxi.  Then a patch removes C.pxi and modifies B.pxd to not depend on C.pxi any more, but does not touch A.pyx.  Then setup.py checks all the dependencies of A.pyx to see whether to recompile it, but fails when it tries to check the no-longer-existing C.pxi.\n\nRemoving .cython_deps allows compilation to proceed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4597\n\n",
+    "created_at": "2008-11-23T16:30:54Z",
+    "labels": [
+        "build",
+        "major",
+        "bug"
+    ],
+    "title": "setup.py dependency checker does not invalidate cache correctly",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4597",
+    "user": "cwitty"
+}
+```
 Assignee: craigcitro
 
 After applying the following patches: #846, #4564, #4579, and #4592, applying #4580 gives the following error:
@@ -36,46 +46,118 @@ I have an unconfirmed theory as to the cause of the problem.  My theory is that 
 
 Removing .cython_deps allows compilation to proceed.
 
+Issue created by migration from https://trac.sagemath.org/ticket/4597
+
+
+
+
 
 ---
+
+archive/issue_comments_034469.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-11-23T22:58:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4597",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4597#issuecomment-34469",
+    "user": "craigcitro"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by craigcitro created at 2008-11-23 23:00:37
+archive/issue_comments_034470.json:
+```json
+{
+    "body": "I **think** the attached patch will fix the problem. The issue is this: when a file doesn't exist, we want to have different behaviors at different parts of the compilation process. So, I made the `timestamp` function take an extra argument, which is what to return if the file doesn't exist, and set it accordingly. The default behavior is that if the file doesn't exist, it returns the current time -- so that a nonexistent file is considered new (i.e. things depending on it need updated).\n\nLet me know if this doesn't fix the problem.",
+    "created_at": "2008-11-23T23:00:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4597",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4597#issuecomment-34470",
+    "user": "craigcitro"
+}
+```
 
-I *think* the attached patch will fix the problem. The issue is this: when a file doesn't exist, we want to have different behaviors at different parts of the compilation process. So, I made the `timestamp` function take an extra argument, which is what to return if the file doesn't exist, and set it accordingly. The default behavior is that if the file doesn't exist, it returns the current time -- so that a nonexistent file is considered new (i.e. things depending on it need updated).
+I **think** the attached patch will fix the problem. The issue is this: when a file doesn't exist, we want to have different behaviors at different parts of the compilation process. So, I made the `timestamp` function take an extra argument, which is what to return if the file doesn't exist, and set it accordingly. The default behavior is that if the file doesn't exist, it returns the current time -- so that a nonexistent file is considered new (i.e. things depending on it need updated).
 
 Let me know if this doesn't fix the problem.
 
 
+
 ---
 
-Comment by craigcitro created at 2008-11-23 23:00:37
+archive/issue_comments_034471.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-11-23T23:00:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4597",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4597#issuecomment-34471",
+    "user": "craigcitro"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by cwitty created at 2008-11-25 01:40:20
+archive/issue_comments_034472.json:
+```json
+{
+    "body": "Looks reasonable, and does fix my problem.\n\nPositive review.",
+    "created_at": "2008-11-25T01:40:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4597",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4597#issuecomment-34472",
+    "user": "cwitty"
+}
+```
 
 Looks reasonable, and does fix my problem.
 
 Positive review.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-25 02:12:25
+archive/issue_comments_034473.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-11-25T02:12:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4597",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4597#issuecomment-34473",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-25 02:12:25
+archive/issue_comments_034474.json:
+```json
+{
+    "body": "Merged in Sage 3.2.1.alpha1",
+    "created_at": "2008-11-25T02:12:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4597",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4597#issuecomment-34474",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.2.1.alpha1

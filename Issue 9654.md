@@ -1,11 +1,21 @@
 # Issue 9654: implicit_plot does not accept color or rgbcolor as keywords
 
-Issue created by migration from https://trac.sagemath.org/ticket/9654
-
-Original creator: olazo
-
-Original creation time: 2010-08-01 01:35:14
-
+archive/issues_009654.json:
+```json
+{
+    "body": "Assignee: olazo\n\nCC:  kcrisman\n\nBoth\n\n`implicit_plot(x^2 +  y^2-1,(x,-1,1),(y,-1,1),aspect_ratio=1,color='red')`\n\nand\n\n`implicit_plot(x^2 +  y^2-1,(x,-1,1),(y,-1,1),aspect_ratio=1,color='red')`\n\ndo not produce a red circle as would be expected. matplotlib's cmap options don't get it quite good.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9654\n\n",
+    "created_at": "2010-08-01T01:35:14Z",
+    "labels": [
+        "graphics",
+        "minor",
+        "enhancement"
+    ],
+    "title": "implicit_plot does not accept color or rgbcolor as keywords",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9654",
+    "user": "olazo"
+}
+```
 Assignee: olazo
 
 CC:  kcrisman
@@ -20,24 +30,61 @@ and
 
 do not produce a red circle as would be expected. matplotlib's cmap options don't get it quite good.
 
+Issue created by migration from https://trac.sagemath.org/ticket/9654
+
+
+
+
 
 ---
 
-Comment by olazo created at 2010-08-01 01:36:48
+archive/issue_comments_093680.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"implicit_plot\".",
+    "created_at": "2010-08-01T01:36:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9654",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9654#issuecomment-93680",
+    "user": "olazo"
+}
+```
 
 Changing keywords from "" to "implicit_plot".
 
 
+
 ---
 
-Comment by jason created at 2010-08-14 08:41:06
+archive/issue_comments_093681.json:
+```json
+{
+    "body": "Solved by #8529.",
+    "created_at": "2010-08-14T08:41:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9654",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9654#issuecomment-93681",
+    "user": "jason"
+}
+```
 
 Solved by #8529.
 
 
+
 ---
 
-Comment by kcrisman created at 2011-04-20 03:01:25
+archive/issue_comments_093682.json:
+```json
+{
+    "body": "Not quite.  `color` is ok, apparently not `rgbcolor`.\n\n```\nimplicit_plot(x^2+y^2 == 2, (x,-3,3), (y,-3,3), rgbcolor=(0,1,0))\nverbose 0 (138: primitive.py, options) WARNING: Ignoring option\n'rgbcolor'=(0, 1, 0)\nverbose 0 (138: primitive.py, options) \nThe allowed options for ContourPlot defined by a 150 x 150 data grid\nare:\n    cmap           the name of a predefined colormap, \n                        a list of colors, or an instance of a \n                        matplotlib Colormap. Type: import matplotlib.cm;\nmatplotlib.cm.datad.keys()\n                        for available colormap names.\n    colorbar       Include a colorbar indicating the levels             \n\n    colorbar_optionsa dictionary of options for colorbars               \n\n    contours       Either an integer specifying the number of \n                        contour levels, or a sequence of numbers giving\n                        the actual contours to use.\n    fill           Fill contours or not                                 \n\n    label_options  a dictionary of options for the labels               \n\n    labels         show line labels or not                              \n\n    legend_label   The label for this item in the legend.               \n\n    linestyles     the style of the lines to be plotted                 \n\n    linewidths     the width of the lines to be plotted                 \n\n    plot_points    How many points to use for plotting precision        \n\n    zorder         The layer level in which to draw   \n```\n",
+    "created_at": "2011-04-20T03:01:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9654",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9654#issuecomment-93682",
+    "user": "kcrisman"
+}
+```
 
 Not quite.  `color` is ok, apparently not `rgbcolor`.
 
@@ -79,32 +126,76 @@ matplotlib.cm.datad.keys()
 
 
 
+
 ---
 
-Comment by kcrisman created at 2011-06-14 05:21:56
+archive/issue_comments_093683.json:
+```json
+{
+    "body": "The right way to do this is to use `get_cmap`, but it's tricky to avoid some kind of weird circularity.",
+    "created_at": "2011-06-14T05:21:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9654",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9654#issuecomment-93683",
+    "user": "kcrisman"
+}
+```
 
 The right way to do this is to use `get_cmap`, but it's tricky to avoid some kind of weird circularity.
 
 
+
 ---
 
-Comment by paulmasson created at 2016-07-04 20:47:04
+archive/issue_comments_093684.json:
+```json
+{
+    "body": "This appears to be a simple fix for this issue. Do I need to add anything more than the doctest?\n----\nNew commits:",
+    "created_at": "2016-07-04T20:47:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9654",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9654#issuecomment-93684",
+    "user": "paulmasson"
+}
+```
 
 This appears to be a simple fix for this issue. Do I need to add anything more than the doctest?
 ----
 New commits:
 
 
+
 ---
 
-Comment by paulmasson created at 2016-07-04 20:47:04
+archive/issue_comments_093685.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2016-07-04T20:47:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9654",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9654#issuecomment-93685",
+    "user": "paulmasson"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by tscrim created at 2016-07-05 06:42:51
+archive/issue_comments_093686.json:
+```json
+{
+    "body": "You should raise an error if both `color` and `rgbcolor` are given akin to\n\n```\nsage: x,y = var('x,y')\nsage: plot(x^2 - 2, rgbcolor=(0,1,0), color='red')\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n...\nRuntimeError: Error in line(): option 'color' not valid.\n```\n\nAlthough I think `RuntimeError` is not the correct error, nor should `plot` go through so much to error out either. However that is a separate issue. The correct error is a `ValueError` in this situation.",
+    "created_at": "2016-07-05T06:42:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9654",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9654#issuecomment-93686",
+    "user": "tscrim"
+}
+```
 
 You should raise an error if both `color` and `rgbcolor` are given akin to
 
@@ -120,9 +211,20 @@ RuntimeError: Error in line(): option 'color' not valid.
 Although I think `RuntimeError` is not the correct error, nor should `plot` go through so much to error out either. However that is a separate issue. The correct error is a `ValueError` in this situation.
 
 
+
 ---
 
-Comment by paulmasson created at 2016-07-05 23:09:08
+archive/issue_comments_093687.json:
+```json
+{
+    "body": "I've updated the branch to raise a `ValueError` for conflicting input, as well as added a doctest.\n\nThe error in `plot.py` appears to arise from this line:\n\n\n```\n@rename_keyword(color='rgbcolor')\n```\n\n\nOnce we agree on how to handle the two arguments here, I can remove that line and update the code accordingly.",
+    "created_at": "2016-07-05T23:09:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9654",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9654#issuecomment-93687",
+    "user": "paulmasson"
+}
+```
 
 I've updated the branch to raise a `ValueError` for conflicting input, as well as added a doctest.
 
@@ -137,9 +239,20 @@ The error in `plot.py` appears to arise from this line:
 Once we agree on how to handle the two arguments here, I can remove that line and update the code accordingly.
 
 
+
 ---
 
-Comment by tscrim created at 2016-07-06 21:19:13
+archive/issue_comments_093688.json:
+```json
+{
+    "body": "Replying to [comment:13 paulmasson]:\n> I've updated the branch to raise a `ValueError` for conflicting input, as well as added a doctest.\n\nThanks. Looks good.\n\n> The error in `plot.py` appears to arise from this line:\n> \n> {{{\n> `@`rename_keyword(color='rgbcolor')\n> }}}\n> \n> Once we agree on how to handle the two arguments here, I can remove that line and update the code accordingly.\n\nWhich error where? I don't see any doctest failures.\n----\nNew commits:",
+    "created_at": "2016-07-06T21:19:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9654",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9654#issuecomment-93688",
+    "user": "tscrim"
+}
+```
 
 Replying to [comment:13 paulmasson]:
 > I've updated the branch to raise a `ValueError` for conflicting input, as well as added a doctest.
@@ -159,18 +272,40 @@ Which error where? I don't see any doctest failures.
 New commits:
 
 
+
 ---
 
-Comment by paulmasson created at 2016-07-06 21:30:32
+archive/issue_comments_093689.json:
+```json
+{
+    "body": "Replying to [comment:14 tscrim]:\n> Which error where? I don't see any doctest failures.\nI was unclear: I meant the `RunTime` error arising from specifying both `color` and `rgbcolor`. Presumably it arises from trying to rename a keyword argument with a name that already exists.",
+    "created_at": "2016-07-06T21:30:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9654",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9654#issuecomment-93689",
+    "user": "paulmasson"
+}
+```
 
 Replying to [comment:14 tscrim]:
 > Which error where? I don't see any doctest failures.
 I was unclear: I meant the `RunTime` error arising from specifying both `color` and `rgbcolor`. Presumably it arises from trying to rename a keyword argument with a name that already exists.
 
 
+
 ---
 
-Comment by tscrim created at 2016-07-07 06:45:43
+archive/issue_comments_093690.json:
+```json
+{
+    "body": "Replying to [comment:15 paulmasson]:\n> Replying to [comment:14 tscrim]:\n> > Which error where? I don't see any doctest failures.\n> I was unclear: I meant the `RunTime` error arising from specifying both `color` and `rgbcolor`. Presumably it arises from trying to rename a keyword argument with a name that already exists.\n\nAh, the one coming from using `plot`. Yes, the failure is probably due to that. However, that is something for a separate ticket. If you could add a doctest checking that both inputs is invalid, then I will be happy to set a positive review.",
+    "created_at": "2016-07-07T06:45:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9654",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9654#issuecomment-93690",
+    "user": "tscrim"
+}
+```
 
 Replying to [comment:15 paulmasson]:
 > Replying to [comment:14 tscrim]:
@@ -180,94 +315,237 @@ Replying to [comment:15 paulmasson]:
 Ah, the one coming from using `plot`. Yes, the failure is probably due to that. However, that is something for a separate ticket. If you could add a doctest checking that both inputs is invalid, then I will be happy to set a positive review.
 
 
+
 ---
 
-Comment by git created at 2016-07-07 21:31:13
+archive/issue_comments_093691.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2016-07-07T21:31:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9654",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9654#issuecomment-93691",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by paulmasson created at 2016-07-07 21:34:10
+archive/issue_comments_093692.json:
+```json
+{
+    "body": "Done.",
+    "created_at": "2016-07-07T21:34:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9654",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9654#issuecomment-93692",
+    "user": "paulmasson"
+}
+```
 
 Done.
 
 
+
 ---
 
-Comment by tscrim created at 2016-07-08 04:30:19
+archive/issue_comments_093693.json:
+```json
+{
+    "body": "Thanks.",
+    "created_at": "2016-07-08T04:30:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9654",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9654#issuecomment-93693",
+    "user": "tscrim"
+}
+```
 
 Thanks.
 
 
+
 ---
 
-Comment by tscrim created at 2016-07-08 04:30:19
+archive/issue_comments_093694.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2016-07-08T04:30:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9654",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9654#issuecomment-93694",
+    "user": "tscrim"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by vbraun created at 2016-07-08 12:37:24
+archive/issue_comments_093695.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_work.",
+    "created_at": "2016-07-08T12:37:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9654",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9654#issuecomment-93695",
+    "user": "vbraun"
+}
+```
 
 Changing status from positive_review to needs_work.
 
 
+
 ---
 
-Comment by vbraun created at 2016-07-08 12:37:24
+archive/issue_comments_093696.json:
+```json
+{
+    "body": "Merge conflict",
+    "created_at": "2016-07-08T12:37:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9654",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9654#issuecomment-93696",
+    "user": "vbraun"
+}
+```
 
 Merge conflict
 
 
+
 ---
 
-Comment by git created at 2016-07-08 19:49:27
+archive/issue_comments_093697.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2016-07-08T19:49:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9654",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9654#issuecomment-93697",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by git created at 2016-07-08 20:49:05
+archive/issue_comments_093698.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2016-07-08T20:49:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9654",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9654#issuecomment-93698",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by paulmasson created at 2016-07-08 20:51:20
+archive/issue_comments_093699.json:
+```json
+{
+    "body": "Fixed merge conflict. Doctests all pass.\n\nWhat is the protocol for this situation? Do I reset the positive review or wait for someone else? Thanks.",
+    "created_at": "2016-07-08T20:51:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9654",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9654#issuecomment-93699",
+    "user": "paulmasson"
+}
+```
 
 Fixed merge conflict. Doctests all pass.
 
 What is the protocol for this situation? Do I reset the positive review or wait for someone else? Thanks.
 
 
+
 ---
 
-Comment by paulmasson created at 2016-07-08 20:51:20
+archive/issue_comments_093700.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2016-07-08T20:51:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9654",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9654#issuecomment-93700",
+    "user": "paulmasson"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by vbraun created at 2016-07-08 21:17:30
+archive/issue_comments_093701.json:
+```json
+{
+    "body": "Just set it back to positive review if its just a straightforward merge fix",
+    "created_at": "2016-07-08T21:17:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9654",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9654#issuecomment-93701",
+    "user": "vbraun"
+}
+```
 
 Just set it back to positive review if its just a straightforward merge fix
 
 
+
 ---
 
-Comment by vbraun created at 2016-07-08 21:17:30
+archive/issue_comments_093702.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2016-07-08T21:17:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9654",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9654#issuecomment-93702",
+    "user": "vbraun"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by vbraun created at 2016-07-09 16:29:15
+archive/issue_comments_093703.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2016-07-09T16:29:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9654",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9654#issuecomment-93703",
+    "user": "vbraun"
+}
+```
 
 Resolution: fixed

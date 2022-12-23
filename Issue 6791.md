@@ -1,11 +1,21 @@
 # Issue 6791: 2 doctest failures in devel/sage/sage/symbolic/expression.pyx
 
-Issue created by migration from https://trac.sagemath.org/ticket/6791
-
-Original creator: drkirkby
-
-Original creation time: 2009-08-20 22:45:07
-
+archive/issues_006791.json:
+```json
+{
+    "body": "Assignee: tbd\n\nOn Solaris 10 update 7 (SPARC), the following tests failed. Both ECL and Maxima were updated - ECL version 9.8.4, Maxima version 5.19.1. Sage was built with gcc 4.4.1\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nThu Aug 20 20:02:37 BST 2009\ndsage-trial tmp directory doesn't exist - creating ...\nThis script will run the unit tests for DSage\n```\n\n<SNIP>\n\n```\n**********************************************************************\nFile \"/export/home/drkirkby/sage/sage-4.1.1/devel/sage/sage/symbolic/expression.pyx\", line 5541:\n    sage: solve(Q*sqrt(Q^2 + 2) - 1,Q)\nExpected:\n    [Q == 1/sqrt(-sqrt(2) + 1), Q == 1/sqrt(sqrt(2) + 1)]\nGot:\n    [Q == 1/sqrt(sqrt(2) + 1)]\n**********************************************************************\nFile \"/export/home/drkirkby/sage/sage-4.1.1/devel/sage/sage/symbolic/expression.pyx\", line 2467:\n    sage: sin(x/2).expand_trig(half_angles=True)\nExpected:\n    1/2*sqrt(-cos(x) + 1)*sqrt(2)\nGot:\n    1/2*sqrt(-cos(x) + 1)*sqrt(2)*(-1)^floor(1/2*x/pi)\n**********************************************************************\n2 items had failures:\n   1 of   6 in __main__.example_138\n   1 of  13 in __main__.example_61\n***Test Failed*** 2 failures.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6791\n\n",
+    "created_at": "2009-08-20T22:45:07Z",
+    "labels": [
+        "algebra",
+        "major",
+        "bug"
+    ],
+    "title": "2 doctest failures in devel/sage/sage/symbolic/expression.pyx",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6791",
+    "user": "drkirkby"
+}
+```
 Assignee: tbd
 
 On Solaris 10 update 7 (SPARC), the following tests failed. Both ECL and Maxima were updated - ECL version 9.8.4, Maxima version 5.19.1. Sage was built with gcc 4.4.1
@@ -43,23 +53,60 @@ Got:
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6791
+
+
+
+
 
 ---
 
-Comment by AlexGhitza created at 2009-08-20 23:59:24
+archive/issue_comments_055958.json:
+```json
+{
+    "body": "Duplicate of #6789.",
+    "created_at": "2009-08-20T23:59:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6791",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6791#issuecomment-55958",
+    "user": "AlexGhitza"
+}
+```
 
 Duplicate of #6789.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-09-15 13:11:05
+archive/issue_comments_055959.json:
+```json
+{
+    "body": "To release manager: Sounds like this should be closed, then.",
+    "created_at": "2009-09-15T13:11:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6791",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6791#issuecomment-55959",
+    "user": "kcrisman"
+}
+```
 
 To release manager: Sounds like this should be closed, then.
 
 
+
 ---
 
-Comment by was created at 2009-10-05 14:17:50
+archive/issue_comments_055960.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2009-10-05T14:17:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6791",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6791#issuecomment-55960",
+    "user": "was"
+}
+```
 
 Resolution: duplicate

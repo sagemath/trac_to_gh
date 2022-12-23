@@ -1,24 +1,62 @@
 # Issue 4420: [with patch, needs review] sort Gröbner bases
 
-Issue created by migration from https://trac.sagemath.org/ticket/4420
-
-Original creator: malb
-
-Original creation time: 2008-11-02 01:41:57
-
+archive/issues_004420.json:
+```json
+{
+    "body": "Assignee: malb\n\nTo make the answer returned by `Ideal.groebner_basis` truely canonical, sort it. The attach patch also fixes some doctest failures in `rings/polynomial` and replaces #4035.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4420\n\n",
+    "created_at": "2008-11-02T01:41:57Z",
+    "labels": [
+        "commutative algebra",
+        "major",
+        "enhancement"
+    ],
+    "title": "[with patch, needs review] sort Gr\u00f6bner bases",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4420",
+    "user": "malb"
+}
+```
 Assignee: malb
 
 To make the answer returned by `Ideal.groebner_basis` truely canonical, sort it. The attach patch also fixes some doctest failures in `rings/polynomial` and replaces #4035.
 
+Issue created by migration from https://trac.sagemath.org/ticket/4420
+
+
+
+
 
 ---
+
+archive/issue_comments_032503.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-11-02T01:42:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4420#issuecomment-32503",
+    "user": "malb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-02 01:45:24
+archive/issue_comments_032504.json:
+```json
+{
+    "body": "The hunk from sage/rings/polynomial/multi_polynomial.pyx will conflict since it was already patched in #4385.\n\nI am reviewing the remainder of the patch now.\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-02T01:45:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4420#issuecomment-32504",
+    "user": "mabshoff"
+}
+```
 
 The hunk from sage/rings/polynomial/multi_polynomial.pyx will conflict since it was already patched in #4385.
 
@@ -29,9 +67,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-02 02:12:53
+archive/issue_comments_032505.json:
+```json
+{
+    "body": "The patch needs fixes for doc.text, const.tex and tut.tex:\n\n```\nsage -t -long devel/doc/tut/tut.tex\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.alpha3/tmp/tut.py\", line 2240:\n    : V.irreducible_components()\nExpected:\n        [\n        Closed subscheme of Affine Space of dimension 2 over Rational Field defined by:\n          y\n          x - 1,\n        Closed subscheme of Affine Space of dimension 2 over Rational Field defined by:\n          y - 1\n          x,\n        Closed subscheme of Affine Space of dimension 2 over Rational Field defined by:\n          x + y + 2\n          2*y^2 + 4*y + 3\n        ]\nGot:\n    [\n    Closed subscheme of Affine Space of dimension 2 over Rational Field defined by:\n      y - 1\n      x,\n    Closed subscheme of Affine Space of dimension 2 over Rational Field defined by:\n      y\n      x - 1,\n    Closed subscheme of Affine Space of dimension 2 over Rational Field defined by:\n      x + y + 2\n      2*y^2 + 4*y + 3\n    ]\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.alpha3/tmp/tut.py\", line 1654:\n    : B = I.groebner_basis(); B\nExpected:\n    [x^2*y^2, x^6]\nGot:\n    [x^6, x^2*y^2]\n**********************************************************************\n2 items had failures:\n   1 of  10 in __main__.example_100\n   1 of  12 in __main__.example_78\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.2.alpha3/tmp/.doctest_tut.py\n\n\t [23.2 s]\nsage -t -long devel/doc/const/const.tex\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.alpha3/tmp/const.py\", line 2847:\n    : B = I.groebner_basis(); B\nExpected:\n    [b^2 - 1, a - 2*b]\nGot:\n    [a - 2*b, b^2 - 1]\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.alpha3/tmp/const.py\", line 2864:\n    : B = I.groebner_basis(); B\nExpected:\n    [c^2*d^6 - c^2*d^2 - d^4 + 1,\n     c^3*d^2 + c^2*d^3 - c - d,\n     b*d^4 - b + d^5 - d,\n     b*c - b*d + c^2*d^4 + c*d - 2*d^2,\n     b^2 + 2*b*d + d^2,\n     a + b + c + d]\nGot:\n    [a + b + c + d, b^2 + 2*b*d + d^2, b*c - b*d + c^2*d^4 + c*d - 2*d^2, b*d^4 - b + d^5 - d, c^3*d^2 + c^2*d^3 - c - d, c^2*d^6 - c^2*d^2 - d^4 + 1]\n**********************************************************************\n2 items had failures:\n   1 of   6 in __main__.example_95\n   1 of   6 in __main__.example_96\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.2.alpha3/tmp/.doctest_const.py\n\n\t [30.0 s]\n```\n\nTrivial patch coming up unless malb beats me to it :)\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-02T02:12:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4420#issuecomment-32505",
+    "user": "mabshoff"
+}
+```
 
 The patch needs fixes for doc.text, const.tex and tut.tex:
 
@@ -116,9 +165,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-02 02:18:33
+archive/issue_comments_032506.json:
+```json
+{
+    "body": "Another odd thing: With -t -long the tests pass after applying this patch, but with -t -long -optional I reproducibly get the following failure:\n\n```\nsage -t -optional -long devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.final/tmp/multi_polynomial_ideal.py\", line 144:\n    sage: I.groebner_basis()\nExpected:\n    [x + y + z, y^2 + y + 23234, y*z + y + 26532, 2*y + 158864, z^2 + 17223, 2*z + 41856, 164878]\nGot:\n    [x + y + z, y^2 + y + 23234, y*z + y + 26532, 2*y - 6014, z^2 + 17223, 2*z + 41856, 164878]\n```\n\nAlso: the surf doctests fail since surf was removed from the singular.spkg. We might want to package the surf jars into an optinonal spkg.\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-02T02:18:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4420#issuecomment-32506",
+    "user": "mabshoff"
+}
+```
 
 Another odd thing: With -t -long the tests pass after applying this patch, but with -t -long -optional I reproducibly get the following failure:
 
@@ -140,9 +200,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by malb created at 2008-11-02 02:31:58
+archive/issue_comments_032507.json:
+```json
+{
+    "body": "Replying to [comment:3 mabshoff]:\n> Expected:\n>     [x + y + z, y^2 + y + 23234, y*z + y + 26532, 2*y + 158864, z^2 + 17223, 2*z + 41856, 164878]\n> Got:\n>     [x + y + z, y^2 + y + 23234, y*z + y + 26532, 2*y - 6014, z^2 + 17223, 2*z + 41856, 164878]\n\nThat's the difference between M2 and the native/naive GB implementation of ZZ. IIRC the patch does not improve or worsen the situation (i.e. the same doctest failed before). Both answers are correct and that mess should be dealt with eventually.",
+    "created_at": "2008-11-02T02:31:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4420#issuecomment-32507",
+    "user": "malb"
+}
+```
 
 Replying to [comment:3 mabshoff]:
 > Expected:
@@ -153,9 +224,20 @@ Replying to [comment:3 mabshoff]:
 That's the difference between M2 and the native/naive GB implementation of ZZ. IIRC the patch does not improve or worsen the situation (i.e. the same doctest failed before). Both answers are correct and that mess should be dealt with eventually.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-02 02:36:32
+archive/issue_comments_032508.json:
+```json
+{
+    "body": "The ticket for the new optional surf.spkg is now #4421. I am also not working on fixing the documentation doctests since I am getting distracted by something else :(\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-02T02:36:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4420#issuecomment-32508",
+    "user": "mabshoff"
+}
+```
 
 The ticket for the new optional surf.spkg is now #4421. I am also not working on fixing the documentation doctests since I am getting distracted by something else :(
 
@@ -164,9 +246,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-02 02:38:34
+archive/issue_comments_032509.json:
+```json
+{
+    "body": "Replying to [comment:4 malb]:\n\n> That's the difference between M2 and the native/naive GB implementation of ZZ. IIRC the patch does not improve or worsen the situation (i.e. the same doctest failed before). Both answers are correct and that mess should be dealt with eventually.\n\nDoes the GB computation over ZZ default to M2 if it is available? I guess in that case we should use some optional parameter to select the default one and make the one selecting the M2 engine optional. Once the documentation is fixed I will give this patch a positive review despite the M2 issue since as is due to the missing surf bits for Singular we have optional doctest failures. As you pointed out we can deal with that later.\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-02T02:38:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4420#issuecomment-32509",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:4 malb]:
 
@@ -179,16 +272,40 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_032510.json:
+```json
+{
+    "body": "Attachment\n\nThe attached patch fixes the doctest failures in `tut.tex` and `const.tex`",
+    "created_at": "2008-11-02T14:37:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4420#issuecomment-32510",
+    "user": "malb"
+}
+```
 
 Attachment
 
 The attached patch fixes the doctest failures in `tut.tex` and `const.tex`
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-02 16:14:36
+archive/issue_comments_032511.json:
+```json
+{
+    "body": "Positive review.\n\nMike: Note that sort_gb_doc.patch fixes doctests in the documentation.\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-02T16:14:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4420#issuecomment-32511",
+    "user": "mabshoff"
+}
+```
 
 Positive review.
 
@@ -199,15 +316,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-02 16:15:05
+archive/issue_comments_032512.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-11-02T16:15:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4420#issuecomment-32512",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-02 16:15:05
+archive/issue_comments_032513.json:
+```json
+{
+    "body": "Merged in Sage 3.2.alpha3",
+    "created_at": "2008-11-02T16:15:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4420#issuecomment-32513",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.2.alpha3

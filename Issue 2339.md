@@ -1,11 +1,21 @@
 # Issue 2339: xmin/xmax now broken in plot()
 
-Issue created by migration from https://trac.sagemath.org/ticket/2339
-
-Original creator: bober
-
-Original creation time: 2008-02-28 02:36:46
-
+archive/issues_002339.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  bober mhampton kcrisman\n\n\n```\nr(t) = 1000 * t * e^(-.5 * t)\nplot(r, xmin=0, xmax=20).show()\n```\n\n\ndoesn't work. But\n\n```\nplot(r, (0,20)).show()\n```\n\ndoes. The documentation still says\n\n```\n    PLOT OPTIONS:\n    The plot options are\n    [...]\n        xmin -- starting x value\n        xmax -- ending x value\n    [...]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2339\n\n",
+    "created_at": "2008-02-28T02:36:46Z",
+    "labels": [
+        "graphics",
+        "major",
+        "bug"
+    ],
+    "title": "xmin/xmax now broken in plot()",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2339",
+    "user": "bober"
+}
+```
 Assignee: was
 
 CC:  bober mhampton kcrisman
@@ -35,10 +45,25 @@ does. The documentation still says
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2339
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-04-05 00:17:19
+archive/issue_comments_015636.json:
+```json
+{
+    "body": "This is still broken in Sage 3.0.alpha1.\n\nCheers,\n\nMichael",
+    "created_at": "2008-04-05T00:17:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2339",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2339#issuecomment-15636",
+    "user": "mabshoff"
+}
+```
 
 This is still broken in Sage 3.0.alpha1.
 
@@ -47,42 +72,110 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mhampton created at 2008-05-17 18:49:06
+archive/issue_comments_015637.json:
+```json
+{
+    "body": "Changing assignee from was to mhampton.",
+    "created_at": "2008-05-17T18:49:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2339",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2339#issuecomment-15637",
+    "user": "mhampton"
+}
+```
 
 Changing assignee from was to mhampton.
 
 
+
 ---
 
-Comment by mhampton created at 2008-05-17 20:33:06
+archive/issue_comments_015638.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"plot, xmin, xmax\".",
+    "created_at": "2008-05-17T20:33:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2339",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2339#issuecomment-15638",
+    "user": "mhampton"
+}
+```
 
 Changing keywords from "" to "plot, xmin, xmax".
 
 
+
 ---
 
-Comment by mhampton created at 2008-05-17 20:33:06
+archive/issue_comments_015639.json:
+```json
+{
+    "body": "Changing assignee from mhampton to somebody.",
+    "created_at": "2008-05-17T20:33:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2339",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2339#issuecomment-15639",
+    "user": "mhampton"
+}
+```
 
 Changing assignee from mhampton to somebody.
 
 
+
 ---
 
-Comment by mhampton created at 2008-05-17 20:33:06
+archive/issue_comments_015640.json:
+```json
+{
+    "body": "In addition to fixing this problem, I also enforced the xmin, xmax that are given if they are inside [-1,1].",
+    "created_at": "2008-05-17T20:33:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2339",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2339#issuecomment-15640",
+    "user": "mhampton"
+}
+```
 
 In addition to fixing this problem, I also enforced the xmin, xmax that are given if they are inside [-1,1].
 
 
+
 ---
 
-Comment by mhampton created at 2008-05-17 20:33:36
+archive/issue_comments_015641.json:
+```json
+{
+    "body": "should fix the problem",
+    "created_at": "2008-05-17T20:33:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2339",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2339#issuecomment-15641",
+    "user": "mhampton"
+}
+```
 
 should fix the problem
 
 
+
 ---
+
+archive/issue_comments_015642.json:
+```json
+{
+    "body": "Attachment\n\nLooks okay to me, although I don't understand the purpose of the change from\n\n\n```\nG = Graphics() \nfor i in range(0, len(funcs)): \n```\n\n\nto\n\n\n```\nG = plot(funcs[0], (xmin, xmax), polar=polar, **kwds) \nfor i in range(1, len(funcs)): \n```\n",
+    "created_at": "2008-06-11T23:58:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2339",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2339#issuecomment-15642",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
@@ -105,18 +198,40 @@ for i in range(1, len(funcs)):
 
 
 
+
 ---
 
-Comment by mhampton created at 2008-06-12 11:59:40
+archive/issue_comments_015643.json:
+```json
+{
+    "body": "The purpose of that change was: I was trying to avoid the xmin of the output being set to -1 if the argument xmin was greater than that.  If you initialize something as Graphics(), xmin is set to -1. \n\nThere is probably a better systematic way of solving that problem but I don't have it in hand.",
+    "created_at": "2008-06-12T11:59:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2339",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2339#issuecomment-15643",
+    "user": "mhampton"
+}
+```
 
 The purpose of that change was: I was trying to avoid the xmin of the output being set to -1 if the argument xmin was greater than that.  If you initialize something as Graphics(), xmin is set to -1. 
 
 There is probably a better systematic way of solving that problem but I don't have it in hand.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2008-06-12 15:03:23
+archive/issue_comments_015644.json:
+```json
+{
+    "body": "Hm. If I do:\n\n```\nsage: r(t) = 1000 * t * e^(-0.5*t)\nsage: plot(r, xmin=10, xmax=20).show()\n```\n\nor (to make sure I didn't misunderstand \"greater than\" -1):\n\n```\nsage: r(t) = 1000 * t * e^(-0.5*t)\nsage: plot(r, xmin=-2, xmax=20).show()\n```\n\nthen I seem to get the same behavior with or without this particular change in the code.\n\nI have two more questions: what should the following do?\n\n```\nplot (r, xmin=10, xmax=-2).show()\n```\n\nIt should probably print an error (since xmin > xmax), but right now I get a graph which is a bad approximation to \n\n```\nplot (r, xmin=-2, xmax=10).show()\n```\n\nIt's actually pretty strange looking...\n\nAlso, do you have any idea why, if I do\n\n```\nplot (r, xmin=5, xmax=20).show()\n```\n\nthen the vertical axis is the line x=5, not x=0?  When xmin is positive, I seem to get x=xmin as the vertical axis, which looks strange to me.  I guess the same happens if both xmin and xmax are negative: then x=xmax is drawn as the vertical axis.  (This is probably a completely separate issue, but I thought I'd ask.)",
+    "created_at": "2008-06-12T15:03:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2339",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2339#issuecomment-15644",
+    "user": "jhpalmieri"
+}
+```
 
 Hm. If I do:
 
@@ -157,23 +272,56 @@ plot (r, xmin=5, xmax=20).show()
 then the vertical axis is the line x=5, not x=0?  When xmin is positive, I seem to get x=xmin as the vertical axis, which looks strange to me.  I guess the same happens if both xmin and xmax are negative: then x=xmax is drawn as the vertical axis.  (This is probably a completely separate issue, but I thought I'd ask.)
 
 
+
 ---
 
-Comment by craigcitro created at 2008-06-20 04:43:35
+archive/issue_comments_015645.json:
+```json
+{
+    "body": "Changing keywords from \"plot, xmin, xmax\" to \"plot, xmin, xmax, editor_gfurnish\".",
+    "created_at": "2008-06-20T04:43:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2339",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2339#issuecomment-15645",
+    "user": "craigcitro"
+}
+```
 
 Changing keywords from "plot, xmin, xmax" to "plot, xmin, xmax, editor_gfurnish".
 
 
+
 ---
 
-Comment by gfurnish created at 2008-06-20 06:26:08
+archive/issue_comments_015646.json:
+```json
+{
+    "body": "This seems correct except for an error check, can we get a patch?",
+    "created_at": "2008-06-20T06:26:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2339",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2339#issuecomment-15646",
+    "user": "gfurnish"
+}
+```
 
 This seems correct except for an error check, can we get a patch?
 
 
+
 ---
 
-Comment by jhpalmieri created at 2008-07-08 19:12:34
+archive/issue_comments_015647.json:
+```json
+{
+    "body": "Here's a new version of the patch.  This (I hope) takes the arguments called xmin and xmax, and sets xmin to be the smaller of the two, xmax to be the larger.  This should fix the strange plots that commands like\n\n```\nplot (r, xmin=10, xmax=-2).show()\n```\n\nwere giving, as I mentioned above.",
+    "created_at": "2008-07-08T19:12:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2339",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2339#issuecomment-15647",
+    "user": "jhpalmieri"
+}
+```
 
 Here's a new version of the patch.  This (I hope) takes the arguments called xmin and xmax, and sets xmin to be the smaller of the two, xmax to be the larger.  This should fix the strange plots that commands like
 
@@ -184,14 +332,38 @@ plot (r, xmin=10, xmax=-2).show()
 were giving, as I mentioned above.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2008-07-08 19:13:33
+archive/issue_comments_015648.json:
+```json
+{
+    "body": "new version of 2399 patch, fixing problem when xmin > xmax",
+    "created_at": "2008-07-08T19:13:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2339",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2339#issuecomment-15648",
+    "user": "jhpalmieri"
+}
+```
 
 new version of 2399 patch, fixing problem when xmin > xmax
 
 
+
 ---
+
+archive/issue_comments_015649.json:
+```json
+{
+    "body": "Attachment\n\nBy the way, my patch supersedes Marshall's, but he should get credit for most of the work.  (Is it better to have one patch, for easier installation, or two, to make sure the right people get credit for their work?)\n\nOne question: in my patch, as I described, if you call plot with arguments xmin=10 and xmax=0, then the plot gets drawn between x=0 and x=10, with no error message.  Is this the best behavior, or should an exception be raised instead?",
+    "created_at": "2008-07-08T19:17:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2339",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2339#issuecomment-15649",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
@@ -200,23 +372,56 @@ By the way, my patch supersedes Marshall's, but he should get credit for most of
 One question: in my patch, as I described, if you call plot with arguments xmin=10 and xmax=0, then the plot gets drawn between x=0 and x=10, with no error message.  Is this the best behavior, or should an exception be raised instead?
 
 
+
 ---
 
-Comment by mhampton created at 2008-07-08 23:07:42
+archive/issue_comments_015650.json:
+```json
+{
+    "body": "I thought about that issue a bit (xmin > xmax), and I think the lack of an error message is OK. Thanks for working on this more, I am really swamped with other stuff at the moment.",
+    "created_at": "2008-07-08T23:07:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2339",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2339#issuecomment-15650",
+    "user": "mhampton"
+}
+```
 
 I thought about that issue a bit (xmin > xmax), and I think the lack of an error message is OK. Thanks for working on this more, I am really swamped with other stuff at the moment.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2008-07-16 01:18:21
+archive/issue_comments_015651.json:
+```json
+{
+    "body": "Can I give a positive review to mhampton's contribution, and vice versa?",
+    "created_at": "2008-07-16T01:18:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2339",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2339#issuecomment-15651",
+    "user": "jhpalmieri"
+}
+```
 
 Can I give a positive review to mhampton's contribution, and vice versa?
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-16 01:21:00
+archive/issue_comments_015652.json:
+```json
+{
+    "body": "Replying to [comment:13 jhpalmieri]:\n> Can I give a positive review to mhampton's contribution, and vice versa?\n> \n\nYes, that is perfectly fine.\n\nCheers,\n\nMichael",
+    "created_at": "2008-07-16T01:21:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2339",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2339#issuecomment-15652",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:13 jhpalmieri]:
 > Can I give a positive review to mhampton's contribution, and vice versa?
@@ -229,16 +434,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mhampton created at 2008-08-24 15:53:49
+archive/issue_comments_015653.json:
+```json
+{
+    "body": "My apologies, I should have positively reviewed this before.  Now I think the patch has to be rebased.  I will try to do that.",
+    "created_at": "2008-08-24T15:53:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2339",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2339#issuecomment-15653",
+    "user": "mhampton"
+}
+```
 
 My apologies, I should have positively reviewed this before.  Now I think the patch has to be rebased.  I will try to do that.
 
 
+
 ---
 
-Comment by kcrisman created at 2008-10-21 18:19:35
+archive/issue_comments_015654.json:
+```json
+{
+    "body": "File 2339-3.2.alpha0.patch is rebased patch against 3.2.alpha0.   As JHP says, please give credit to Marshall.\n\nInterestingly, all the plot improvements as of late have already fixed both the Graphics initialization problem of [-1,1] and the problem if you get the range in backwards, i.e. all of the following work with this patch:\n\n```\nplot(r, xmin=10, xmax=-2).show()\nplot(r, 10,-2).show()\nplot(r, (10,-2)).show()\n```\n",
+    "created_at": "2008-10-21T18:19:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2339",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2339#issuecomment-15654",
+    "user": "kcrisman"
+}
+```
 
 File 2339-3.2.alpha0.patch is rebased patch against 3.2.alpha0.   As JHP says, please give credit to Marshall.
 
@@ -252,43 +479,111 @@ plot(r, (10,-2)).show()
 
 
 
+
 ---
 
-Comment by kcrisman created at 2008-10-21 18:20:17
+archive/issue_comments_015655.json:
+```json
+{
+    "body": "Rebased to 3.2.alpha0",
+    "created_at": "2008-10-21T18:20:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2339",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2339#issuecomment-15655",
+    "user": "kcrisman"
+}
+```
 
 Rebased to 3.2.alpha0
 
 
+
 ---
+
+archive/issue_comments_015656.json:
+```json
+{
+    "body": "Attachment\n\nThis is a simple change that seems to solve the problem, positive review.",
+    "created_at": "2008-10-22T19:23:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2339",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2339#issuecomment-15656",
+    "user": "mhampton"
+}
+```
 
 Attachment
 
 This is a simple change that seems to solve the problem, positive review.
 
 
+
 ---
 
-Comment by mhampton created at 2008-10-22 19:27:26
+archive/issue_comments_015657.json:
+```json
+{
+    "body": "By the way, thanks Karl, this had fallen off my radar.",
+    "created_at": "2008-10-22T19:27:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2339",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2339#issuecomment-15657",
+    "user": "mhampton"
+}
+```
 
 By the way, thanks Karl, this had fallen off my radar.
 
 
+
 ---
 
-Comment by kcrisman created at 2008-10-23 00:10:37
+archive/issue_comments_015658.json:
+```json
+{
+    "body": "No problem; during the school year I don't have much time for new stuff, but I figure I can help out in this way at least!",
+    "created_at": "2008-10-23T00:10:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2339",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2339#issuecomment-15658",
+    "user": "kcrisman"
+}
+```
 
 No problem; during the school year I don't have much time for new stuff, but I figure I can help out in this way at least!
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-26 03:18:18
+archive/issue_comments_015659.json:
+```json
+{
+    "body": "Merged 2339-3.2.alpha0.patch only in Sage 3.2.alpha1",
+    "created_at": "2008-10-26T03:18:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2339",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2339#issuecomment-15659",
+    "user": "mabshoff"
+}
+```
 
 Merged 2339-3.2.alpha0.patch only in Sage 3.2.alpha1
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-26 03:18:18
+archive/issue_comments_015660.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-10-26T03:18:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2339",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2339#issuecomment-15660",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

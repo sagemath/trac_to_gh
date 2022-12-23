@@ -1,11 +1,21 @@
 # Issue 6206: move algebraic_closure method from RLF to LazyField
 
-Issue created by migration from https://trac.sagemath.org/ticket/6206
-
-Original creator: ncalexan
-
-Original creation time: 2009-06-04 03:45:24
-
+archive/issues_006206.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  craigcitro fwclarke robertwb\n\nKeywords: number field lazy field algebraic_closure\n\nTiny patch moves algebraic_closure method up the tree; I claim this is \"obviously\" the correct place for it to be, but you only hit this bug (missing method) when you are using strange embeddings of number fields and I don't have a good example at hand.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6206\n\n",
+    "created_at": "2009-06-04T03:45:24Z",
+    "labels": [
+        "number theory",
+        "major",
+        "bug"
+    ],
+    "title": "move algebraic_closure method from RLF to LazyField",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6206",
+    "user": "ncalexan"
+}
+```
 Assignee: was
 
 CC:  craigcitro fwclarke robertwb
@@ -14,35 +24,96 @@ Keywords: number field lazy field algebraic_closure
 
 Tiny patch moves algebraic_closure method up the tree; I claim this is "obviously" the correct place for it to be, but you only hit this bug (missing method) when you are using strange embeddings of number fields and I don't have a good example at hand.
 
+Issue created by migration from https://trac.sagemath.org/ticket/6206
+
+
+
+
 
 ---
+
+archive/issue_comments_049578.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-06-04T03:45:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6206",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6206#issuecomment-49578",
+    "user": "ncalexan"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by robertwb created at 2009-06-04 06:47:17
+archive/issue_comments_049579.json:
+```json
+{
+    "body": "Yes, that makes sense.",
+    "created_at": "2009-06-04T06:47:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6206",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6206#issuecomment-49579",
+    "user": "robertwb"
+}
+```
 
 Yes, that makes sense.
 
 
+
 ---
 
-Comment by robertwb created at 2009-06-04 06:49:07
+archive/issue_comments_049580.json:
+```json
+{
+    "body": "Just a sec, while we're at it, I just noticed the docstring is wrong. It speaks of the \"Complex Double Field\" rather than \"Complex Lazy Field.\" This was probably originally my fault, but might as well fix it now.",
+    "created_at": "2009-06-04T06:49:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6206",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6206#issuecomment-49580",
+    "user": "robertwb"
+}
+```
 
 Just a sec, while we're at it, I just noticed the docstring is wrong. It speaks of the "Complex Double Field" rather than "Complex Lazy Field." This was probably originally my fault, but might as well fix it now.
 
 
+
 ---
 
-Comment by mhansen created at 2009-06-04 18:25:44
+archive/issue_comments_049581.json:
+```json
+{
+    "body": "Merged in 4.0.1.rc1 (and took care of the double -> lazy change.",
+    "created_at": "2009-06-04T18:25:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6206",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6206#issuecomment-49581",
+    "user": "mhansen"
+}
+```
 
 Merged in 4.0.1.rc1 (and took care of the double -> lazy change.
 
 
+
 ---
 
-Comment by mhansen created at 2009-06-04 18:25:44
+archive/issue_comments_049582.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-06-04T18:25:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6206",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6206#issuecomment-49582",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

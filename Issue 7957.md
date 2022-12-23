@@ -1,11 +1,21 @@
 # Issue 7957: problems with real_part function
 
-Issue created by migration from https://trac.sagemath.org/ticket/7957
-
-Original creator: burcin
-
-Original creation time: 2010-01-16 18:49:00
-
+archive/issues_007957.json:
+```json
+{
+    "body": "Assignee: burcin\n\nCC:  rossk\n\nFrom the sage-devel thread:\n\nhttp://groups.google.com/group/sage-devel/t/56519182d53e9cf8\n\n\n```\nOn Tue, 5 Jan 2010 04:35:27 -0800 (PST)\nH\u00e5kan Granath <hakan.granath@googlemail.com> wrote:\n\n> Hi,\n> \n> It seems computations in QQbar is sometimes much slower in Sage\n> 4.3 than in the previous version. Here is an example (I am sorry\n> if it is too convoluted):\n> \n> v1 = sqrt(QQbar(3))\n> v2 = QQbar(999/1000*I)\n> v3 = (1 + v1)/2 + v2*(-3 - v1)/2\n> v4 = (3 - v1)/2 + v2*(1 - v1)/2\n> v5 = v3*(1/2) + v4*QQbar(500/999*I)\n> v6 = v3*(1/2) + v4*QQbar(-500/999*I)\n> v7 = -(v5/v6).conjugate() - QQbar(abs(v5))/v5/v6.conjugate()*QQbar(I)\n> v8 = -(v5/v6).conjugate() + QQbar(abs(v5))/v5/v6.conjugate()*QQbar(I)\n> v9 = abs(v8)\n> v10 = abs(v7)\n> v11 = (v7 - v8 + QQbar(v9*v9)*v7 - QQbar(v10*v10)*v8)/\\\n>       (v8.conjugate()*v7 - v7.conjugate()*v8)\n> v12 = (v11*QQbar(I) - QQbar(-I)*v11.conjugate())/2/QQbar(I)\n> v13 = abs(v12)\n> v14 = QQbar(1 - sqrt(1 - 1/(v13*v13)))*v12\n> time real(v14)\n> \n> In Sage 4.3 I get the output:\n> \n> Exception TypeError: TypeError('Unable to convert number to real\n> interval.',) in 'sage.symbolic.pynac.py_is_real' ignored\n> CPU times: user 67.94 s, sys: 0.30 s, total: 68.23 s\n> Wall time: 68.68 s\n> -0.5773508481209188?\n> \n> In Sage 4.2.1 on the same computer I get the output:\n> \n> CPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\n> Wall time: 0.00 s\n> -0.5773508481209188?\n```\n\n\nThis is fallout from #7490. See also #7916 for problems with `conjugate()`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7957\n\n",
+    "created_at": "2010-01-16T18:49:00Z",
+    "labels": [
+        "symbolics",
+        "major",
+        "bug"
+    ],
+    "title": "problems with real_part function",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7957",
+    "user": "burcin"
+}
+```
 Assignee: burcin
 
 CC:  rossk
@@ -60,17 +70,45 @@ Håkan Granath <hakan.granath@googlemail.com> wrote:
 
 This is fallout from #7490. See also #7916 for problems with `conjugate()`.
 
+Issue created by migration from https://trac.sagemath.org/ticket/7957
+
+
+
+
 
 ---
+
+archive/issue_comments_069431.json:
+```json
+{
+    "body": "Attachment\n\nadd exception handling to sage/symbolic/pynac.pyx",
+    "created_at": "2010-01-17T09:49:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7957",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7957#issuecomment-69431",
+    "user": "burcin"
+}
+```
 
 Attachment
 
 add exception handling to sage/symbolic/pynac.pyx
 
 
+
 ---
 
-Comment by burcin created at 2010-01-17 09:54:16
+archive/issue_comments_069432.json:
+```json
+{
+    "body": "attachment:trac_7957-pynac_exceptions.patch adds exception handling to sage/symbolic/pynac.pyx to eliminate the \"error ignored\" message.\n\nWith a simple change in the pynac `numeric::real()` code, new timings are:\n\nBefore:\n\n\n```\nsage: %time real(v14)\nCPU times: user 30.19 s, sys: 0.42 s, total: 30.61 s\nWall time: 30.96 s\n-0.5773508481209188?\n```\n\n\nAfter:\n\n\n```\nsage: %time real(v14)\nCPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.01 s\n-0.5773508481209188?\n```\n\n\nI'll make a new pynac package including this change available soon.",
+    "created_at": "2010-01-17T09:54:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7957",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7957#issuecomment-69432",
+    "user": "burcin"
+}
+```
 
 attachment:trac_7957-pynac_exceptions.patch adds exception handling to sage/symbolic/pynac.pyx to eliminate the "error ignored" message.
 
@@ -101,16 +139,38 @@ Wall time: 0.01 s
 I'll make a new pynac package including this change available soon.
 
 
+
 ---
 
-Comment by burcin created at 2010-01-17 09:54:16
+archive/issue_comments_069433.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-01-17T09:54:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7957",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7957#issuecomment-69433",
+    "user": "burcin"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mvngu created at 2010-01-18 02:14:15
+archive/issue_comments_069434.json:
+```json
+{
+    "body": "Does [trac_7957-pynac_exceptions.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7957/trac_7957-pynac_exceptions.patch) depend on anything? I'm getting 3 hunk failures when applying this to Sage 4.3.1.rc0:\n\n```\n[mvngu@mod sage-main]$ pwd\n/dev/shm/mvngu/sage-4.3.1.rc0-7957/devel/sage-main\n[mvngu@mod sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7957/trac_7957-pynac_exceptions.patch\nadding trac_7957-pynac_exceptions.patch to series file\n[mvngu@mod sage-main]$ hg qpush\napplying trac_7957-pynac_exceptions.patch\npatching file sage/symbolic/pynac.pyx\nHunk #31 succeeded at 1538 with fuzz 2 (offset -33 lines).\nHunk #32 FAILED at 1603\nHunk #33 FAILED at 1637\nHunk #34 FAILED at 1668\n3 out of 38 hunks FAILED -- saving rejects to file sage/symbolic/pynac.pyx.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac_7957-pynac_exceptions.patch\n[mvngu@mod sage-main]$ cat sage/symbolic/pynac.pyx.rej\n--- pynac.pyx\n+++ pynac.pyx\n@@ -1603,7 +1604,7 @@\n     \"\"\"\n     return py_li(x, n, parent)\n \n-cdef public object py_psi(object x):\n+cdef public object py_psi(object x) except +:\n     \"\"\"\n     EXAMPLES::\n \n@@ -1637,7 +1638,7 @@\n     \"\"\"\n     return py_psi(x)\n \n-cdef public object py_psi2(object n, object x):\n+cdef public object py_psi2(object n, object x) except +:\n     \"\"\"\n     EXAMPLES::\n \n@@ -1668,14 +1669,14 @@\n ##################################################################\n # Not yet implemented\n ##################################################################\n-cdef public object py_li2(object x):\n+cdef public object py_li2(object x) except +:\n     raise NotImplementedError\n \n ##################################################################\n # Constants\n ##################################################################\n \n-cdef public GConstant py_get_constant(char* name):\n+cdef public GConstant py_get_constant(char* name) except +:\n     \"\"\"\n     Returns a constant given its name. This is called by\n     constant::unarchive in constant.cpp in Pynac and is used for\n```\n",
+    "created_at": "2010-01-18T02:14:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7957",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7957#issuecomment-69434",
+    "user": "mvngu"
+}
+```
 
 Does [trac_7957-pynac_exceptions.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7957/trac_7957-pynac_exceptions.patch) depend on anything? I'm getting 3 hunk failures when applying this to Sage 4.3.1.rc0:
 
@@ -172,31 +232,75 @@ errors during apply, please fix and refresh trac_7957-pynac_exceptions.patch
 
 
 
+
 ---
 
-Comment by burcin created at 2010-01-18 04:20:22
+archive/issue_comments_069435.json:
+```json
+{
+    "body": "Sorry for the inconvenience. My patch queue contains all the fixes from yesterday. I forgot to check dependencies.\n\nThis depends on #6961. You can apply the patch there without waiting for the new pynac spkg. Only the `loads(dumps())` test with `psi2`, should fail.",
+    "created_at": "2010-01-18T04:20:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7957",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7957#issuecomment-69435",
+    "user": "burcin"
+}
+```
 
 Sorry for the inconvenience. My patch queue contains all the fixes from yesterday. I forgot to check dependencies.
 
 This depends on #6961. You can apply the patch there without waiting for the new pynac spkg. Only the `loads(dumps())` test with `psi2`, should fail.
 
 
+
 ---
 
-Comment by kcrisman created at 2010-01-28 21:20:06
+archive/issue_comments_069436.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-01-28T21:20:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7957",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7957#issuecomment-69436",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by kcrisman created at 2010-01-28 21:20:06
+archive/issue_comments_069437.json:
+```json
+{
+    "body": "Fixes the error, and makes the same change throughout.  Positive review.",
+    "created_at": "2010-01-28T21:20:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7957",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7957#issuecomment-69437",
+    "user": "kcrisman"
+}
+```
 
 Fixes the error, and makes the same change throughout.  Positive review.
 
 
+
 ---
 
-Comment by mvngu created at 2010-02-18 21:44:50
+archive/issue_comments_069438.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-02-18T21:44:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7957",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7957#issuecomment-69438",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

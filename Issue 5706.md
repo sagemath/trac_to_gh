@@ -1,11 +1,21 @@
 # Issue 5706: implicit_plot totally sucks when input an equation
 
-Issue created by migration from https://trac.sagemath.org/ticket/5706
-
-Original creator: was
-
-Original creation time: 2009-04-07 17:36:29
-
+archive/issues_005706.json:
+```json
+{
+    "body": "Assignee: was\n\nMake Sage hurt:\n\n```\nvar('x,y')\nimplicit_plot(x^2+y^2 == 1, (x,-2,2), (y,-2,2))\n```\n\n\nThe problem is that implicit_plot takes a function, not a symbolic equation, so it views \"x<sup>2+y</sup>2 == 1\" as a function --- and that is very painful.  \n\nSOLUTION: Check if the input is an equation, and if so, make RHS zero, and plot corresponding function equal to 0.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5706\n\n",
+    "created_at": "2009-04-07T17:36:29Z",
+    "labels": [
+        "graphics",
+        "major",
+        "bug"
+    ],
+    "title": "implicit_plot totally sucks when input an equation",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5706",
+    "user": "was"
+}
+```
 Assignee: was
 
 Make Sage hurt:
@@ -21,15 +31,43 @@ The problem is that implicit_plot takes a function, not a symbolic equation, so 
 SOLUTION: Check if the input is an equation, and if so, make RHS zero, and plot corresponding function equal to 0.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5706
+
+
+
+
 
 ---
+
+archive/issue_comments_044589.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-04-09T06:11:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5706",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5706#issuecomment-44589",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-09 06:23:29
+archive/issue_comments_044590.json:
+```json
+{
+    "body": "There is one doctest failure in here:\n\n```\nsage -t -long \"devel/sage/sage/plot/contour_plot.py\"\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.rc2/devel/sage/sage/plot/contour_plot.py\", line 195:\n    sage: implicit_plot(x^2+y^2 == 2, (-3,3), (-3,3)).show(aspect_ratio=1)\nExpected nothing\nGot:\n    doctest:2846: DeprecationWarning: Substitution using function-call syntax and \nunnamed arguments is deprecated and will be removed from a future release of Sage; you \ncan use named arguments instead, like EXPR(x=..., y=...)\n**********************************************************************\n1 items had failures:\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-09T06:23:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5706",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5706#issuecomment-44590",
+    "user": "mabshoff"
+}
+```
 
 There is one doctest failure in here:
 
@@ -53,23 +91,58 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_044591.json:
+```json
+{
+    "body": "Attachment\n\nSlightly fixed up version of William's patch due to deprecation of substitution (see #5413)",
+    "created_at": "2009-04-09T06:40:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5706",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5706#issuecomment-44591",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 Slightly fixed up version of William's patch due to deprecation of substitution (see #5413)
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-09 06:40:59
+archive/issue_comments_044592.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-04-09T06:40:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5706",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5706#issuecomment-44592",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-09 06:40:59
+archive/issue_comments_044593.json:
+```json
+{
+    "body": "Merged trac_5706.2.patch in Sage 3.4.1.rc2.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-09T06:40:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5706",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5706#issuecomment-44593",
+    "user": "mabshoff"
+}
+```
 
 Merged trac_5706.2.patch in Sage 3.4.1.rc2.
 
@@ -78,9 +151,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-09 06:49:45
+archive/issue_comments_044594.json:
+```json
+{
+    "body": "Ooops, didn't change the review status.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-09T06:49:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5706",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5706#issuecomment-44594",
+    "user": "mabshoff"
+}
+```
 
 Ooops, didn't change the review status.
 

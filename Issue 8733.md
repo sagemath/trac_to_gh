@@ -1,52 +1,123 @@
 # Issue 8733: clean up documentation of c_graph.pyx
 
-Issue created by migration from https://trac.sagemath.org/ticket/8733
-
-Original creator: mvngu
-
-Original creation time: 2010-04-21 04:57:50
-
+archive/issues_008733.json:
+```json
+{
+    "body": "Assignee: jason, ncohen, rlm\n\nAs the subject says. The goal here is to make the documentation of the module `c_graph.pyx` consistent and also to better document the module itself.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8733\n\n",
+    "created_at": "2010-04-21T04:57:50Z",
+    "labels": [
+        "graph theory",
+        "major",
+        "enhancement"
+    ],
+    "title": "clean up documentation of c_graph.pyx",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8733",
+    "user": "mvngu"
+}
+```
 Assignee: jason, ncohen, rlm
 
 As the subject says. The goal here is to make the documentation of the module `c_graph.pyx` consistent and also to better document the module itself.
 
+Issue created by migration from https://trac.sagemath.org/ticket/8733
+
+
+
+
 
 ---
 
-Comment by mvngu created at 2010-04-23 02:41:17
+archive/issue_comments_079821.json:
+```json
+{
+    "body": "The method `degree()` in the class `CGraphBackend` of the module `c_graph.pyx` has a bug in its implementation. This issue is tracked at #8395.",
+    "created_at": "2010-04-23T02:41:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8733#issuecomment-79821",
+    "user": "mvngu"
+}
+```
 
 The method `degree()` in the class `CGraphBackend` of the module `c_graph.pyx` has a bug in its implementation. This issue is tracked at #8395.
 
 
+
 ---
 
-Comment by mvngu created at 2010-04-23 02:41:17
+archive/issue_comments_079822.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-04-23T02:41:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8733#issuecomment-79822",
+    "user": "mvngu"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_079823.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-04-23T02:57:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8733#issuecomment-79823",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mvngu created at 2010-04-23 02:59:38
+archive/issue_comments_079824.json:
+```json
+{
+    "body": "Changes proposed by the patch include:\n\n* Remove trailing white spaces.\n* Don't go over 79 characters wherever possible.\n* Cross link methods and classes.\n* Add more documentation to methods.\n* Stylistic clean-ups in accordance with [PEP 8](http://www.python.org/dev/peps/pep-0008/).\n* Use \"in\" instead of \"has_key()\" for dictionaries.",
+    "created_at": "2010-04-23T02:59:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8733#issuecomment-79824",
+    "user": "mvngu"
+}
+```
 
 Changes proposed by the patch include:
 
- * Remove trailing white spaces.
- * Don't go over 79 characters wherever possible.
- * Cross link methods and classes.
- * Add more documentation to methods.
- * Stylistic clean-ups in accordance with [PEP 8](http://www.python.org/dev/peps/pep-0008/).
- * Use "in" instead of "has_key()" for dictionaries.
+* Remove trailing white spaces.
+* Don't go over 79 characters wherever possible.
+* Cross link methods and classes.
+* Add more documentation to methods.
+* Stylistic clean-ups in accordance with [PEP 8](http://www.python.org/dev/peps/pep-0008/).
+* Use "in" instead of "has_key()" for dictionaries.
+
 
 
 ---
 
-Comment by ncohen created at 2010-04-24 15:02:13
+archive/issue_comments_079825.json:
+```json
+{
+    "body": "Well.. What can I say besides \"good work\" ? :-)\n\nDefinitely cleaner, still passes all tests, the documentation is clearly improved, and I was responsible for some of the mistakes you corrected (the dictionaries, for examples) :-)\n\nPositive review, and thank you very muuuuuuuuch !\n\nNathann",
+    "created_at": "2010-04-24T15:02:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8733#issuecomment-79825",
+    "user": "ncohen"
+}
+```
 
 Well.. What can I say besides "good work" ? :-)
 
@@ -57,15 +128,37 @@ Positive review, and thank you very muuuuuuuuch !
 Nathann
 
 
+
 ---
 
-Comment by ncohen created at 2010-04-24 15:02:13
+archive/issue_comments_079826.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-04-24T15:02:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8733#issuecomment-79826",
+    "user": "ncohen"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by was created at 2010-04-29 05:40:02
+archive/issue_comments_079827.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-04-29T05:40:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8733#issuecomment-79827",
+    "user": "was"
+}
+```
 
 Resolution: fixed

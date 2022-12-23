@@ -1,24 +1,62 @@
 # Issue 2961: [with patch; needs review] add doctest for alarm function
 
-Issue created by migration from https://trac.sagemath.org/ticket/2961
-
-Original creator: was
-
-Original creation time: 2008-04-19 22:16:35
-
+archive/issues_002961.json:
+```json
+{
+    "body": "Assignee: cwitty\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2961\n\n",
+    "created_at": "2008-04-19T22:16:35Z",
+    "labels": [
+        "misc",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch; needs review] add doctest for alarm function",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2961",
+    "user": "was"
+}
+```
 Assignee: cwitty
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2961
+
+
+
+
 
 ---
+
+archive/issue_comments_020423.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-04-19T22:17:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2961",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2961#issuecomment-20423",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-19 22:23:43
+archive/issue_comments_020424.json:
+```json
+{
+    "body": "Patch looks good to me. \n\nCheers,\n\nMichael",
+    "created_at": "2008-04-19T22:23:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2961",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2961#issuecomment-20424",
+    "user": "mabshoff"
+}
+```
 
 Patch looks good to me. 
 
@@ -27,15 +65,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-19 22:23:57
+archive/issue_comments_020425.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-04-19T22:23:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2961",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2961#issuecomment-20425",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-19 22:23:57
+archive/issue_comments_020426.json:
+```json
+{
+    "body": "Merged in Sage 3.0.rc0",
+    "created_at": "2008-04-19T22:23:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2961",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2961#issuecomment-20426",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.rc0

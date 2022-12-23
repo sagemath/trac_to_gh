@@ -1,11 +1,21 @@
 # Issue 3192: fix 64 bit OSX build support for python_gnutls
 
-Issue created by migration from https://trac.sagemath.org/ticket/3192
-
-Original creator: mabshoff
-
-Original creation time: 2008-05-13 14:40:08
-
+archive/issues_003192.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nspkg coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3192\n\n",
+    "created_at": "2008-05-13T14:40:08Z",
+    "labels": [
+        "build",
+        "major",
+        "bug"
+    ],
+    "title": "fix 64 bit OSX build support for python_gnutls",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3192",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 spkg coming up.
@@ -14,22 +24,61 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/3192
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-05-13 14:40:14
+archive/issue_comments_022073.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-05-13T14:40:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3192",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3192#issuecomment-22073",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
+
+archive/issue_comments_022074.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-05-19T05:00:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3192",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3192#issuecomment-22074",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-19 05:03:25
+archive/issue_comments_022075.json:
+```json
+{
+    "body": "Updated spkg is at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0.2/alpha1/python_gnutls-1.1.4.p3.spkg\n\nCheers,\n\nMichael",
+    "created_at": "2008-05-19T05:03:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3192",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3192#issuecomment-22075",
+    "user": "mabshoff"
+}
+```
 
 Updated spkg is at
 
@@ -40,15 +89,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-19 05:24:30
+archive/issue_comments_022076.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-05-19T05:24:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3192",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3192#issuecomment-22076",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-19 05:24:30
+archive/issue_comments_022077.json:
+```json
+{
+    "body": "Merged in Sage 3.0.2.alpha1",
+    "created_at": "2008-05-19T05:24:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3192",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3192#issuecomment-22077",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.2.alpha1

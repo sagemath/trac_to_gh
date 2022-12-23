@@ -1,11 +1,21 @@
 # Issue 6300: doctest fix related to singular upgrad; needed on 32-bit OS X intel, at least (maybe all 32-bit)
 
-Issue created by migration from https://trac.sagemath.org/ticket/6300
-
-Original creator: was
-
-Original creation time: 2009-06-15 15:45:30
-
+archive/issues_006300.json:
+```json
+{
+    "body": "Assignee: tbd\n\n> >> File\n> >> \"/Users/was/build/sage-4.0.2.rc0/devel/sage/sage/libs/singular/singular.\n> >>pyx \", line 501:\n> >>     sage: P(2^32-1)\n> >> Expected:\n> >>     -1\n> >> Got:\n> >>     4294967295\n> >\n> > Is that with my the fix at\n> >\n> >  http://trac.sagemath.org/sage_trac/attachment/ticket/6051/singular_exp_o\n> >verflow.patch\n> >\n> > or without? It seems (since you are using a 32-bit system) all that needs\n> > to be done is to fix the doctest.\n>\n> No, I had not applied your patch.  However, I just did, and the above\n> issue remains.\n\nYes, the issue remains. One should change the doctest, i.e. the behaviour we\nexpect now is the wrong behaviour.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6300\n\n",
+    "created_at": "2009-06-15T15:45:30Z",
+    "labels": [
+        "doctest coverage",
+        "blocker",
+        "bug"
+    ],
+    "title": "doctest fix related to singular upgrad; needed on 32-bit OS X intel, at least (maybe all 32-bit)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6300",
+    "user": "was"
+}
+```
 Assignee: tbd
 
 > >> File
@@ -31,30 +41,80 @@ Assignee: tbd
 Yes, the issue remains. One should change the doctest, i.e. the behaviour we
 expect now is the wrong behaviour.
 
+Issue created by migration from https://trac.sagemath.org/ticket/6300
+
+
+
+
 
 ---
+
+archive/issue_comments_050261.json:
+```json
+{
+    "body": "Attachment\n\nPatch depends on hotfix at #6051.",
+    "created_at": "2009-06-15T15:58:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6300",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6300#issuecomment-50261",
+    "user": "malb"
+}
+```
 
 Attachment
 
 Patch depends on hotfix at #6051.
 
 
+
 ---
 
-Comment by malb created at 2009-06-15 16:23:35
+archive/issue_comments_050262.json:
+```json
+{
+    "body": "With this patch and the hotfix from #6051 all doctests pass on sage.math FWIW.",
+    "created_at": "2009-06-15T16:23:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6300",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6300#issuecomment-50262",
+    "user": "malb"
+}
+```
 
 With this patch and the hotfix from #6051 all doctests pass on sage.math FWIW.
 
 
+
 ---
 
-Comment by was created at 2009-06-15 23:57:11
+archive/issue_comments_050263.json:
+```json
+{
+    "body": "merged into 4.0.2.rc1",
+    "created_at": "2009-06-15T23:57:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6300",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6300#issuecomment-50263",
+    "user": "was"
+}
+```
 
 merged into 4.0.2.rc1
 
 
+
 ---
 
-Comment by was created at 2009-06-15 23:57:11
+archive/issue_comments_050264.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-06-15T23:57:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6300",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6300#issuecomment-50264",
+    "user": "was"
+}
+```
 
 Resolution: fixed

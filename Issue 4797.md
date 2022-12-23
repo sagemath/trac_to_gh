@@ -1,11 +1,21 @@
 # Issue 4797: upgrade -- if upgrading Cython run -ba instead of -b
 
-Issue created by migration from https://trac.sagemath.org/ticket/4797
-
-Original creator: mabshoff
-
-Original creation time: 2008-12-14 14:44:14
-
+archive/issues_004797.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nCC:  robertwb\n\nWhen upgrading Cython like at #4639 we should really run a -ba on upgrade and not just a -b since the new Cython version in this case does fix some fundamental issues the way exceptions are handled. In general I would be sleep much better if we do this in general since many potentially odd Heisenbugs that disappear after either a partial -b or a -ba would be avoided that way.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4797\n\n",
+    "created_at": "2008-12-14T14:44:14Z",
+    "labels": [
+        "packages",
+        "blocker",
+        "bug"
+    ],
+    "title": "upgrade -- if upgrading Cython run -ba instead of -b",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4797",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 CC:  robertwb
@@ -16,10 +26,25 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/4797
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-12-26 22:53:30
+archive/issue_comments_036361.json:
+```json
+{
+    "body": "I can live with this issue being fixed in 3.3 since we will not upgrade Cython in 3.2.2->3.2.3.\n\nCheers,\n\nMichael",
+    "created_at": "2008-12-26T22:53:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4797",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36361",
+    "user": "mabshoff"
+}
+```
 
 I can live with this issue being fixed in 3.3 since we will not upgrade Cython in 3.2.2->3.2.3.
 
@@ -28,9 +53,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-26 22:54:10
+archive/issue_comments_036362.json:
+```json
+{
+    "body": "Ooops. Reassigned this time :)\n\nCheers,\n\nMichael",
+    "created_at": "2008-12-26T22:54:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4797",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36362",
+    "user": "mabshoff"
+}
+```
 
 Ooops. Reassigned this time :)
 
@@ -39,25 +75,58 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by was created at 2008-12-29 06:03:58
+archive/issue_comments_036363.json:
+```json
+{
+    "body": "Does anybody have any idea how to implement this?   Here is one idea.  We make it so there is a command like \"sage -ba\" that doesn't actually rebuild the sage library, then we make the cython spkg-install call that command.  It could be called \"sage -ba_nobuild\" or something.  This is way better, I think, than \"sage -ba\" trying to detect if cython was upgraded.  \n\nThe disadvantage is that it might make testing installing the cython SPKG inconvenient.",
+    "created_at": "2008-12-29T06:03:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4797",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36363",
+    "user": "was"
+}
+```
 
 Does anybody have any idea how to implement this?   Here is one idea.  We make it so there is a command like "sage -ba" that doesn't actually rebuild the sage library, then we make the cython spkg-install call that command.  It could be called "sage -ba_nobuild" or something.  This is way better, I think, than "sage -ba" trying to detect if cython was upgraded.  
 
 The disadvantage is that it might make testing installing the cython SPKG inconvenient.
 
 
+
 ---
 
-Comment by robertwb created at 2008-12-29 19:38:01
+archive/issue_comments_036364.json:
+```json
+{
+    "body": "Yes, this would make testing Cython spkgs a major pain. I think this probably best belongs in the upgrade script--it could touch all .pyx files after upgrading the Cython script.",
+    "created_at": "2008-12-29T19:38:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4797",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36364",
+    "user": "robertwb"
+}
+```
 
 Yes, this would make testing Cython spkgs a major pain. I think this probably best belongs in the upgrade script--it could touch all .pyx files after upgrading the Cython script.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-29 19:42:26
+archive/issue_comments_036365.json:
+```json
+{
+    "body": "Yes and no. When I test Cython releases I delete the build tree and then do a -ba anyway since that is the only reliable way to test. Obviously if someone is testing \"just\" the spkg this ought to be not enforced, so RobertWB's idea seems the way to go.\n\nCheers,\n\nMichael",
+    "created_at": "2008-12-29T19:42:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4797",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36365",
+    "user": "mabshoff"
+}
+```
 
 Yes and no. When I test Cython releases I delete the build tree and then do a -ba anyway since that is the only reliable way to test. Obviously if someone is testing "just" the spkg this ought to be not enforced, so RobertWB's idea seems the way to go.
 
@@ -66,74 +135,184 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by robertwb created at 2008-12-29 20:14:07
+archive/issue_comments_036366.json:
+```json
+{
+    "body": "Yep, when you test a Cython release (assuming I've done my job) it should just work. That's different when I'm hunting down a bug and want to keep re-compiling a certain file (e.g. that last memory leak).",
+    "created_at": "2008-12-29T20:14:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4797",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36366",
+    "user": "robertwb"
+}
+```
 
 Yep, when you test a Cython release (assuming I've done my job) it should just work. That's different when I'm hunting down a bug and want to keep re-compiling a certain file (e.g. that last memory leak).
 
 
+
 ---
 
-Comment by was created at 2009-06-15 23:23:15
+archive/issue_comments_036367.json:
+```json
+{
+    "body": "Changing priority from blocker to critical.",
+    "created_at": "2009-06-15T23:23:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4797",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36367",
+    "user": "was"
+}
+```
 
 Changing priority from blocker to critical.
 
 
+
 ---
 
-Comment by was created at 2009-06-15 23:23:15
+archive/issue_comments_036368.json:
+```json
+{
+    "body": "If we've released for months and months without fixing this, it doesn't make sense to keep it as a blocker.",
+    "created_at": "2009-06-15T23:23:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4797",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36368",
+    "user": "was"
+}
+```
 
 If we've released for months and months without fixing this, it doesn't make sense to keep it as a blocker.
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-11-02 22:30:35
+archive/issue_comments_036369.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"upgrade cython\".",
+    "created_at": "2010-11-02T22:30:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4797",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36369",
+    "user": "jdemeyer"
+}
+```
 
 Changing keywords from "" to "upgrade cython".
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-11-02 22:30:35
+archive/issue_comments_036370.json:
+```json
+{
+    "body": "Changing priority from critical to blocker.",
+    "created_at": "2010-11-02T22:30:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4797",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36370",
+    "user": "jdemeyer"
+}
+```
 
 Changing priority from critical to blocker.
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-11-02 22:30:35
+archive/issue_comments_036371.json:
+```json
+{
+    "body": "Changing component from packages to build.",
+    "created_at": "2010-11-02T22:30:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4797",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36371",
+    "user": "jdemeyer"
+}
+```
 
 Changing component from packages to build.
 
 
+
 ---
 
-Comment by leif created at 2010-11-03 20:11:44
+archive/issue_comments_036372.json:
+```json
+{
+    "body": "This is just due to missing dependencies in `module_list.py`, so if everybody updating spkgs carefully checked them and added missing ones, this would be a non-issue. (And I consider it as such. Perhaps worth a work-around hint in the Developer's and / or Installation Guide.)\n\nAt least for upgrades to final versions, this should IMHO **never** be necessary.",
+    "created_at": "2010-11-03T20:11:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4797",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36372",
+    "user": "leif"
+}
+```
 
 This is just due to missing dependencies in `module_list.py`, so if everybody updating spkgs carefully checked them and added missing ones, this would be a non-issue. (And I consider it as such. Perhaps worth a work-around hint in the Developer's and / or Installation Guide.)
 
-At least for upgrades to final versions, this should IMHO *never* be necessary.
+At least for upgrades to final versions, this should IMHO **never** be necessary.
 
-
----
-
-Comment by leif created at 2010-11-03 20:20:31
-
-P.S.: Explicitly touching some files in `spkg-install` that _are_ contained in the extension modules' `include_dirs` can also avoid `sage -ba`, though of course a hack.
 
 
 ---
 
-Comment by jdemeyer created at 2010-11-04 20:38:37
+archive/issue_comments_036373.json:
+```json
+{
+    "body": "P.S.: Explicitly touching some files in `spkg-install` that *are* contained in the extension modules' `include_dirs` can also avoid `sage -ba`, though of course a hack.",
+    "created_at": "2010-11-03T20:20:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4797",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36373",
+    "user": "leif"
+}
+```
+
+P.S.: Explicitly touching some files in `spkg-install` that *are* contained in the extension modules' `include_dirs` can also avoid `sage -ba`, though of course a hack.
+
+
+
+---
+
+archive/issue_comments_036374.json:
+```json
+{
+    "body": "Changing priority from blocker to major.",
+    "created_at": "2010-11-04T20:38:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4797",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36374",
+    "user": "jdemeyer"
+}
+```
 
 Changing priority from blocker to major.
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-11-04 20:38:37
+archive/issue_comments_036375.json:
+```json
+{
+    "body": "Replying to [comment:11 leif]:\n> This is just due to missing dependencies in `module_list.py`, so if everybody updating spkgs carefully checked them and added missing ones, this would be a non-issue. (And I consider it as such. Perhaps worth a work-around hint in the Developer's and / or Installation Guide.)\n\nI created ticket #10124 to implement this.",
+    "created_at": "2010-11-04T20:38:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4797",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36375",
+    "user": "jdemeyer"
+}
+```
 
 Replying to [comment:11 leif]:
 > This is just due to missing dependencies in `module_list.py`, so if everybody updating spkgs carefully checked them and added missing ones, this would be a non-issue. (And I consider it as such. Perhaps worth a work-around hint in the Developer's and / or Installation Guide.)
@@ -141,9 +320,20 @@ Replying to [comment:11 leif]:
 I created ticket #10124 to implement this.
 
 
+
 ---
 
-Comment by leif created at 2010-11-04 21:53:46
+archive/issue_comments_036376.json:
+```json
+{
+    "body": "Replying to [comment:13 jdemeyer]:\n> I created ticket #10124 to implement this.\n\n#10214",
+    "created_at": "2010-11-04T21:53:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4797",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36376",
+    "user": "leif"
+}
+```
 
 Replying to [comment:13 jdemeyer]:
 > I created ticket #10124 to implement this.
@@ -151,28 +341,61 @@ Replying to [comment:13 jdemeyer]:
 #10214
 
 
+
 ---
 
-Comment by leif created at 2010-11-04 22:11:44
+archive/issue_comments_036377.json:
+```json
+{
+    "body": "Running `sage -ba` *explicitly* is not even necessary upon (true) Cython upgrades, though we could implement this in `spkg/install`.\n\nWe just have to make any Cython file / extension module depend on a single, distinct file of the Cython distribution (e.g. header) and preferably make sure this is *only* touched when really necessary.\n\nTherefore it would make sense to use a Sage-specific file for such, which is created and managed by our `spkg-install` for Cython.\n\nPeople upgrading the Cython package will best know if a complete rebuild will be necessary, depending on the Cython version found in the current installation subject to upgrade.",
+    "created_at": "2010-11-04T22:11:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4797",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36377",
+    "user": "leif"
+}
+```
 
-Running `sage -ba` _explicitly_ is not even necessary upon (true) Cython upgrades, though we could implement this in `spkg/install`.
+Running `sage -ba` *explicitly* is not even necessary upon (true) Cython upgrades, though we could implement this in `spkg/install`.
 
-We just have to make any Cython file / extension module depend on a single, distinct file of the Cython distribution (e.g. header) and preferably make sure this is _only_ touched when really necessary.
+We just have to make any Cython file / extension module depend on a single, distinct file of the Cython distribution (e.g. header) and preferably make sure this is *only* touched when really necessary.
 
 Therefore it would make sense to use a Sage-specific file for such, which is created and managed by our `spkg-install` for Cython.
 
 People upgrading the Cython package will best know if a complete rebuild will be necessary, depending on the Cython version found in the current installation subject to upgrade.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-10-05 08:56:48
+archive/issue_comments_036378.json:
+```json
+{
+    "body": "Resolution: worksforme",
+    "created_at": "2012-10-05T08:56:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4797",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36378",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: worksforme
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-10-05 08:56:48
+archive/issue_comments_036379.json:
+```json
+{
+    "body": "Closing this since I haven't seen this problem at all recently.",
+    "created_at": "2012-10-05T08:56:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4797",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36379",
+    "user": "jdemeyer"
+}
+```
 
 Closing this since I haven't seen this problem at all recently.

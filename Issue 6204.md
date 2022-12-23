@@ -1,11 +1,21 @@
 # Issue 6204: make norms for degree 1 relative number fields work; add doctests
 
-Issue created by migration from https://trac.sagemath.org/ticket/6204
-
-Original creator: ncalexan
-
-Original creation time: 2009-06-04 03:36:11
-
+archive/issues_006204.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  craigcitro fwclarke\n\nKeywords: degree 1 relative number field norm\n\nThis small patch makes norms for degree 1 relative number fields avoid pari, which fails (in our old version) in this case.  I also added a doctest or two.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6204\n\n",
+    "created_at": "2009-06-04T03:36:11Z",
+    "labels": [
+        "number theory",
+        "major",
+        "enhancement"
+    ],
+    "title": "make norms for degree 1 relative number fields work; add doctests",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6204",
+    "user": "ncalexan"
+}
+```
 Assignee: was
 
 CC:  craigcitro fwclarke
@@ -14,31 +24,81 @@ Keywords: degree 1 relative number field norm
 
 This small patch makes norms for degree 1 relative number fields avoid pari, which fails (in our old version) in this case.  I also added a doctest or two.
 
+Issue created by migration from https://trac.sagemath.org/ticket/6204
+
+
+
+
 
 ---
+
+archive/issue_comments_049567.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-06-04T03:38:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6204",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6204#issuecomment-49567",
+    "user": "ncalexan"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by craigcitro created at 2009-06-04 23:17:48
+archive/issue_comments_049568.json:
+```json
+{
+    "body": "This looks good. Points for adding doctests to a bunch of functions, not just the ones you happened to add code to.\n\nOn a related note, should we start a wiki page or something with all the workarounds we can remove once we update to a modern Pari?",
+    "created_at": "2009-06-04T23:17:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6204",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6204#issuecomment-49568",
+    "user": "craigcitro"
+}
+```
 
 This looks good. Points for adding doctests to a bunch of functions, not just the ones you happened to add code to.
 
 On a related note, should we start a wiki page or something with all the workarounds we can remove once we update to a modern Pari?
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-06-08 10:50:48
+archive/issue_comments_049569.json:
+```json
+{
+    "body": "This conflicts with my patch at #6188 (but only in a fairly harmless way). I have prepared a rebased patch, which also corrects a few minor indentation errors in the new docstrings, which I will upload once I've checked that the reference manual builds OK.",
+    "created_at": "2009-06-08T10:50:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6204",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6204#issuecomment-49569",
+    "user": "davidloeffler"
+}
+```
 
 This conflicts with my patch at #6188 (but only in a fairly harmless way). I have prepared a rebased patch, which also corrects a few minor indentation errors in the new docstrings, which I will upload once I've checked that the reference manual builds OK.
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-06-08 11:08:44
+archive/issue_comments_049570.json:
+```json
+{
+    "body": "Hold it, this fails doctests under 4.0.1:\n\n\n```\ndavid@groke:~/sage-4.0.1.rc2/devel/sage-nfstuff/sage/rings/number_field> sage -t number_field_ideal_rel.py\nsage -t  \"devel/sage-nfstuff/sage/rings/number_field/number_field_ideal_rel.py\"                           \n**********************************************************************                                    \nFile \"/home/david/sage-4.0.1.rc2/devel/sage-nfstuff/sage/rings/number_field/number_field_ideal_rel.py\", line 361:\n    sage: L.ideal(b).relative_norm()                                                                             \nException raised:                                                                                                \n    Traceback (most recent call last):                                                                           \n      File \"/home/david/sage-4.0/local/bin/ncadoctest.py\", line 1231, in run_one_test                            \n        self.run_one_example(test, example, filename, compileflags)                                              \n      File \"/home/david/sage-4.0/local/bin/sagedoctest.py\", line 38, in run_one_example                          \n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)                           \n      File \"/home/david/sage-4.0/local/bin/ncadoctest.py\", line 1172, in run_one_example                         \n        compileflags, 1) in test.globs                                                                           \n      File \"<doctest __main__.example_11[19]>\", line 1, in <module>                                              \n        L.ideal(b).relative_norm()###line 361:                                                                   \n    sage: L.ideal(b).relative_norm()                                                                             \n      File \"/home/david/sage-4.0.1.rc2/local/lib/python2.5/site-packages/sage/rings/number_field/number_field_ideal_rel.py\", line 370, in relative_norm                                                                                   \n        return K.ideal(map(K, self.gens()))                                                                          \n      File \"parent.pyx\", line 323, in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:4130)           \n      File \"coerce_maps.pyx\", line 82, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3058)                                                                                                  \n      File \"coerce_maps.pyx\", line 77, in sage.structure.coerce_maps._call_ (sage/structure/coerce_maps.c:2949)      \n      File \"/home/david/sage-4.0.1.rc2/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.py\", line 941, in _element_constructor_                                                                                     \n        return self._coerce_from_other_number_field(x)                                                               \n      File \"/home/david/sage-4.0.1.rc2/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.py\", line 4317, in _coerce_from_other_number_field                                                                          \n        raise TypeError, \"Cannot coerce element into this number field\"                                              \n    TypeError: Cannot coerce element into this number field                                                          \n**********************************************************************                                               \nFile \"/home/david/sage-4.0.1.rc2/devel/sage-nfstuff/sage/rings/number_field/number_field_ideal_rel.py\", line 480:    \n    sage: L.ideal(b).ideal_below()                                                                                   \nException raised:                                                                                                    \n    Traceback (most recent call last):                                                                               \n      File \"/home/david/sage-4.0/local/bin/ncadoctest.py\", line 1231, in run_one_test                                \n        self.run_one_example(test, example, filename, compileflags)                                                  \n      File \"/home/david/sage-4.0/local/bin/sagedoctest.py\", line 38, in run_one_example                              \n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)                               \n      File \"/home/david/sage-4.0/local/bin/ncadoctest.py\", line 1172, in run_one_example                             \n        compileflags, 1) in test.globs                                                                               \n      File \"<doctest __main__.example_13[50]>\", line 1, in <module>                                                  \n        L.ideal(b).ideal_below()###line 480:                                                                         \n    sage: L.ideal(b).ideal_below()                                                                                   \n      File \"/home/david/sage-4.0.1.rc2/local/lib/python2.5/site-packages/sage/rings/number_field/number_field_ideal_rel.py\", line 489, in ideal_below                                                                                     \n        return K.ideal(map(K, self.gens()))                                                                          \n      File \"parent.pyx\", line 323, in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:4130)           \n      File \"coerce_maps.pyx\", line 82, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3058)                                                                                                  \n      File \"coerce_maps.pyx\", line 77, in sage.structure.coerce_maps._call_ (sage/structure/coerce_maps.c:2949)      \n      File \"/home/david/sage-4.0.1.rc2/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.py\", line 941, in _element_constructor_                                                                                     \n        return self._coerce_from_other_number_field(x)                                                               \n      File \"/home/david/sage-4.0.1.rc2/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.py\", line 4317, in _coerce_from_other_number_field                                                                          \n        raise TypeError, \"Cannot coerce element into this number field\"                                              \n    TypeError: Cannot coerce element into this number field                                                          \n**********************************************************************                                               \nFile \"/home/david/sage-4.0.1.rc2/devel/sage-nfstuff/sage/rings/number_field/number_field_ideal_rel.py\", line 482:    \n    sage: L.ideal(b^2 + 2).ideal_below()                                                                             \nException raised:                                                                                                    \n    Traceback (most recent call last):                                                                               \n      File \"/home/david/sage-4.0/local/bin/ncadoctest.py\", line 1231, in run_one_test                                \n        self.run_one_example(test, example, filename, compileflags)                                                  \n      File \"/home/david/sage-4.0/local/bin/sagedoctest.py\", line 38, in run_one_example                              \n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)                               \n      File \"/home/david/sage-4.0/local/bin/ncadoctest.py\", line 1172, in run_one_example                             \n        compileflags, 1) in test.globs                                                                               \n      File \"<doctest __main__.example_13[51]>\", line 1, in <module>                                                  \n        L.ideal(b**Integer(2) + Integer(2)).ideal_below()###line 482:                                                \n    sage: L.ideal(b^2 + 2).ideal_below()                                                                             \n      File \"/home/david/sage-4.0.1.rc2/local/lib/python2.5/site-packages/sage/rings/number_field/number_field_ideal_rel.py\", line 489, in ideal_below                                                                                     \n        return K.ideal(map(K, self.gens()))                                                                          \n      File \"parent.pyx\", line 323, in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:4130)           \n      File \"coerce_maps.pyx\", line 82, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3058)                                                                                                  \n      File \"coerce_maps.pyx\", line 77, in sage.structure.coerce_maps._call_ (sage/structure/coerce_maps.c:2949)      \n      File \"/home/david/sage-4.0.1.rc2/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.py\", line 941, in _element_constructor_                                                                                     \n        return self._coerce_from_other_number_field(x)                                                               \n      File \"/home/david/sage-4.0.1.rc2/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.py\", line 4317, in _coerce_from_other_number_field                                                                          \n        raise TypeError, \"Cannot coerce element into this number field\"                                              \n    TypeError: Cannot coerce element into this number field                                                          \n**********************************************************************                                               \n2 items had failures:                                                                                                \n   1 of  21 in __main__.example_11                                                                                   \n   2 of  52 in __main__.example_13                                                                                   \n***Test Failed*** 3 failures.                                                                                        \nFor whitespace errors, see the file /home/david/sage-4.0.1.rc2/tmp/.doctest_number_field_ideal_rel.py                \n         [6.2 s]                                                                                                     \nexit code: 1024                                                                                                      \n                                                                                                                     \n----------------------------------------------------------------------                                               \nThe following tests failed:                                                                                          \n\n\n        sage -t  \"devel/sage-nfstuff/sage/rings/number_field/number_field_ideal_rel.py\"\nTotal time for all tests: 6.2 seconds                                                  \n```\n\n\nI'm changing this back to \"needs work\". The problem seems to be that we need to work around a pari bug in \"gens_reduced\" as well as in \"relative_norm\".",
+    "created_at": "2009-06-08T11:08:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6204",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6204#issuecomment-49570",
+    "user": "davidloeffler"
+}
+```
 
 Hold it, this fails doctests under 4.0.1:
 
@@ -139,9 +199,20 @@ Total time for all tests: 6.2 seconds
 I'm changing this back to "needs work". The problem seems to be that we need to work around a pari bug in "gens_reduced" as well as in "relative_norm".
 
 
+
 ---
 
-Comment by fwclarke created at 2009-06-11 07:28:03
+archive/issue_comments_049571.json:
+```json
+{
+    "body": "Replying to [comment:3 davidloeffler]:\n> Hold it, this fails doctests under 4.0.1:\n> ... The problem seems to be that we need to work around a pari bug in \"gens_reduced\" as well as in \"relative_norm\".\n\nI don't think there's anything wrong with `gens_reduced`.  \n\nIt seems to be a coercion/conversion problem, caused, or at least not helped, by the behaviour of `relativize`:\n\n```\nsage: K.<a> = NumberField(x^4 + 2*x^2 + 7)\nsage: L.<b, c> = K.relativize(a + 1); L \nNumber Field in b with defining polynomial x - c + 1 over its base field\nsage: L_base = L.base_field()\nsage: L_base(b)\nTraceback (most recent call last)\n...\nTypeError: Cannot coerce element into this number field\nsage: L_base(c)\nTraceback (most recent call last)\n...\nTypeError: Cannot coerce element into this number field\nsage: parent(b) == L\nTrue\nsage: parent(c) == L\nTrue\nsage: parent(c) == L_base\nFalse\n```\n",
+    "created_at": "2009-06-11T07:28:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6204",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6204#issuecomment-49571",
+    "user": "fwclarke"
+}
+```
 
 Replying to [comment:3 davidloeffler]:
 > Hold it, this fails doctests under 4.0.1:
@@ -174,9 +245,20 @@ False
 
 
 
+
 ---
 
-Comment by fwclarke created at 2009-06-11 07:29:57
+archive/issue_comments_049572.json:
+```json
+{
+    "body": "Replying to [ticket:6204 ncalexan]:\n> ...  I also added a doctest or two.\n\nThe doctest for `is_principal` conflicts somewhat with changes in #5842.",
+    "created_at": "2009-06-11T07:29:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6204",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6204#issuecomment-49572",
+    "user": "fwclarke"
+}
+```
 
 Replying to [ticket:6204 ncalexan]:
 > ...  I also added a doctest or two.
@@ -184,15 +266,37 @@ Replying to [ticket:6204 ncalexan]:
 The doctest for `is_principal` conflicts somewhat with changes in #5842.
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-07-21 08:20:40
+archive/issue_comments_049573.json:
+```json
+{
+    "body": "Changing assignee from was to davidloeffler.",
+    "created_at": "2009-07-21T08:20:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6204",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6204#issuecomment-49573",
+    "user": "davidloeffler"
+}
+```
 
 Changing assignee from was to davidloeffler.
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-07-21 08:20:40
+archive/issue_comments_049574.json:
+```json
+{
+    "body": "Changing component from number theory to number fields.",
+    "created_at": "2009-07-21T08:20:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6204",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6204#issuecomment-49574",
+    "user": "davidloeffler"
+}
+```
 
 Changing component from number theory to number fields.

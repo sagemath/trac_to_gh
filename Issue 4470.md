@@ -1,11 +1,21 @@
 # Issue 4470: Merge Jon Hanke's qudratic forms code into Sage
 
-Issue created by migration from https://trac.sagemath.org/ticket/4470
-
-Original creator: mabshoff
-
-Original creation time: 2008-11-08 21:29:34
-
+archive/issues_004470.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  justin cremona tornaria\n\nJon Hanke wrote some substantial amount of code that is still based on Sage 2.8.14. Get the code ready for review and merge it \n\n#4120 is relevant here since Justin works on binary quadratic forms.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4470\n\n",
+    "created_at": "2008-11-08T21:29:34Z",
+    "labels": [
+        "algebra",
+        "major",
+        "bug"
+    ],
+    "title": "Merge Jon Hanke's qudratic forms code into Sage",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4470",
+    "user": "mabshoff"
+}
+```
 Assignee: tbd
 
 CC:  justin cremona tornaria
@@ -18,24 +28,61 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/4470
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-11-08 21:30:09
+archive/issue_comments_033005.json:
+```json
+{
+    "body": "Changing assignee from tbd to justin.",
+    "created_at": "2008-11-08T21:30:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4470",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4470#issuecomment-33005",
+    "user": "mabshoff"
+}
+```
 
 Changing assignee from tbd to justin.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-08 21:30:09
+archive/issue_comments_033006.json:
+```json
+{
+    "body": "Changing component from algebra to quadratic forms.",
+    "created_at": "2008-11-08T21:30:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4470",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4470#issuecomment-33006",
+    "user": "mabshoff"
+}
+```
 
 Changing component from algebra to quadratic forms.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-08 21:43:33
+archive/issue_comments_033007.json:
+```json
+{
+    "body": "There are large tables in Jon's commit:\n\n```\nsage [quadratic_forms]> wc -l tables/*\n   39745 tables/brandt-intrau_even_ternaries.html\n   30967 tables/brandt-intrau_even_ternaries.py\n    1526 tables/brandt-intrau_even_ternaries.sobj\n    8366 tables/brandt-intrau_odd_ternaries.html\n    5474 tables/brandt-intrau_odd_ternaries.py\n     277 tables/brandt-intrau_odd_ternaries.sobj\n    4471 tables/Nipp_quaternary_forms__d1080.html\n    4519 tables/Nipp_quaternary_forms__d1161.html\n    4535 tables/Nipp_quaternary_forms__d1236.html\n    4561 tables/Nipp_quaternary_forms__d1308.html\n    4446 tables/Nipp_quaternary_forms__d1373.html\n    4475 tables/Nipp_quaternary_forms__d1433.html\n    4530 tables/Nipp_quaternary_forms__d1492.html\n    4533 tables/Nipp_quaternary_forms__d1549.html\n    4520 tables/Nipp_quaternary_forms__d1604.html\n    4544 tables/Nipp_quaternary_forms__d1656.html\n    4518 tables/Nipp_quaternary_forms__d1705.html\n    2636 tables/Nipp_quaternary_forms__d1732.html\n    4519 tables/Nipp_quaternary_forms__d4to457.html\n    4528 tables/Nipp_quaternary_forms__d641.html\n    4483 tables/Nipp_quaternary_forms__d777.html\n    4490 tables/Nipp_quaternary_forms__d893.html\n    4515 tables/Nipp_quaternary_forms__d992.html\n   74095 tables/Nipp_quaternary_forms_table.py\n    4572 tables/Nipp_quaternary_forms_table.sobj\n   45295 tables/Nipp_quaternary_table_as_Hanke_table.sobj\n  285140 total\n```\n\nThese should be moved into its own database spkg.\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-08T21:43:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4470",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4470#issuecomment-33007",
+    "user": "mabshoff"
+}
+```
 
 There are large tables in Jon's commit:
 
@@ -77,23 +124,45 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-08 21:49:10
+archive/issue_comments_033008.json:
+```json
+{
+    "body": "Some more remaks:\n\n* commit 10629 is mostly the AUTO code by Bernd Souvignier - the code has been made available under a GPL V2+ compatible license, but that needs to be formalized. It is called via pexpect, but probably can be called via Cython directly. It is only one file. If we keep using the pexpect interface it should be moved into its own spkg.\n* commit 10630 are the tables, which should not go into the history. As mentioned above these should be moved into its own database spkg and probably already be pickled\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-08T21:49:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4470",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4470#issuecomment-33008",
+    "user": "mabshoff"
+}
+```
 
 Some more remaks:
 
- * commit 10629 is mostly the AUTO code by Bernd Souvignier - the code has been made available under a GPL V2+ compatible license, but that needs to be formalized. It is called via pexpect, but probably can be called via Cython directly. It is only one file. If we keep using the pexpect interface it should be moved into its own spkg.
- * commit 10630 are the tables, which should not go into the history. As mentioned above these should be moved into its own database spkg and probably already be pickled
+* commit 10629 is mostly the AUTO code by Bernd Souvignier - the code has been made available under a GPL V2+ compatible license, but that needs to be formalized. It is called via pexpect, but probably can be called via Cython directly. It is only one file. If we keep using the pexpect interface it should be moved into its own spkg.
+* commit 10630 are the tables, which should not go into the history. As mentioned above these should be moved into its own database spkg and probably already be pickled
 
 Cheers,
 
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-09 00:05:35
+archive/issue_comments_033009.json:
+```json
+{
+    "body": "For the four extracted patches from Jon's code see\n\nhttp://sage.math.washington.edu/home/mabshoff/hanke-qf-merge/\n\nThere is also some comments in the thread at\n\nhttp://groups.google.com/group/sage-devel/t/17612419fefaf4d9\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-09T00:05:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4470",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4470#issuecomment-33009",
+    "user": "mabshoff"
+}
+```
 
 For the four extracted patches from Jon's code see
 
@@ -108,27 +177,62 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_033010.json:
+```json
+{
+    "body": "Attachment\n\nChanges to existing files in Jon's 2.8.14 quadratic forms patch",
+    "created_at": "2008-11-09T03:44:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4470",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4470#issuecomment-33010",
+    "user": "tornaria"
+}
+```
 
 Attachment
 
 Changes to existing files in Jon's 2.8.14 quadratic forms patch
 
 
+
 ---
 
-Comment by tornaria created at 2008-11-09 04:00:11
+archive/issue_comments_033011.json:
+```json
+{
+    "body": "I've attached a diff with the changed files between stock 2.8.14 and Jon's quadratic forms branch. Note there are several new files in `sage/quadratic_forms/` directory which are not included in this patch. The plan was to pick the relevant changes from this patch, but most of it is already included in 3.1.4 with the following exceptions:\n- `setup.py`: adds extension modules for new files\n- `sage/quadratic_forms/all.py`: adds imports for new files\n- `sage/quadratic_forms/binary_qf.py`: adds comment/todo in docstring for the file\n- `integer_mod.{pxd,pyx`}: implement classes `IntegerMod_gmp_power_of_2`, `IntegerMod_int_power_of_2` and `IntegerMod_int64_power_of_2`, but this are *not* used in quadratic forms code, so it's irrelevant and can be ignored.",
+    "created_at": "2008-11-09T04:00:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4470",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4470#issuecomment-33011",
+    "user": "tornaria"
+}
+```
 
 I've attached a diff with the changed files between stock 2.8.14 and Jon's quadratic forms branch. Note there are several new files in `sage/quadratic_forms/` directory which are not included in this patch. The plan was to pick the relevant changes from this patch, but most of it is already included in 3.1.4 with the following exceptions:
- - `setup.py`: adds extension modules for new files
- - `sage/quadratic_forms/all.py`: adds imports for new files
- - `sage/quadratic_forms/binary_qf.py`: adds comment/todo in docstring for the file
- - `integer_mod.{pxd,pyx`}: implement classes `IntegerMod_gmp_power_of_2`, `IntegerMod_int_power_of_2` and `IntegerMod_int64_power_of_2`, but this are _not_ used in quadratic forms code, so it's irrelevant and can be ignored.
+- `setup.py`: adds extension modules for new files
+- `sage/quadratic_forms/all.py`: adds imports for new files
+- `sage/quadratic_forms/binary_qf.py`: adds comment/todo in docstring for the file
+- `integer_mod.{pxd,pyx`}: implement classes `IntegerMod_gmp_power_of_2`, `IntegerMod_int_power_of_2` and `IntegerMod_int64_power_of_2`, but this are *not* used in quadratic forms code, so it's irrelevant and can be ignored.
+
 
 
 ---
 
-Comment by mabshoff created at 2008-11-09 07:11:20
+archive/issue_comments_033012.json:
+```json
+{
+    "body": "Coverage definitely needs to be improved:\n\n```\nsage [sage-3.1.2]>  ./sage -coverageall devel//sage/sage/quadratic_forms/\nbinary_qf.py: 100% (16 of 16)\ncount_local_2.pyx: 0% (0 of 1)\ncython_testing.pyx: 0% (0 of 4)\nextras.py: 25% (2 of 8)\ngenera/genus.py: 0% (0 of 34)\nmass_testing.py: 0% (0 of 3)\nquadratic_form__automorphisms2.py: 60% (3 of 5)\nquadratic_form__automorphisms.py: 75% (6 of 8)\nquadratic_form__count_local_2.py: 0% (0 of 9)\nquadratic_form__equivalence_testing.py: 25% (1 of 4)\nquadratic_form__evaluate.pyx: 0% (0 of 2)\nquadratic_form__genus.py: 0% (0 of 3)\nquadratic_form__local_density_congruence.py: 9% (1 of 11)\nquadratic_form__local_density_interfaces.py: 14% (1 of 7)\nquadratic_form__local_field_invariants.py: 57% (8 of 14)\nquadratic_form__local_normal_form.py: 75% (3 of 4)\nquadratic_form__local_representation_conditions.py: 12% (2 of 16)\nquadratic_form__mass__Conway_Sloane_masses.py: 26% (4 of 15)\nquadratic_form__mass.py: 0% (0 of 3)\nquadratic_form__mass__Siegel_densities.py: 20% (1 of 5)\nquadratic_form__neighbors.py: 75% (3 of 4)\nquadratic_form.py: 43% (14 of 32)\nquadratic_form__reduction_theory.py: 40% (2 of 5)\nquadratic_form__siegel_product.py: 100% (1 of 1)\nquadratic_form__split_local_covering.py: 100% (3 of 3)\nquadratic_form__ternary_Tornaria.py: 0% (0 of 17)\nquadratic_form__theta.py: 50% (2 of 4)\nquadratic_form__variable_substitutions.py: 71% (5 of 7)\nrandom_quadraticform.py: 100% (2 of 2)\nspecial_values.py: 60% (3 of 5)\ntable_conversion.py: 100% (4 of 4)\ntable_creation.py: 0% (0 of 2)\ntable_hanke.py: 12% (4 of 32)\ntable_hanke.pyx: 12% (4 of 32)\ntables.py: 15% (5 of 33)\nternary_table_creation.py: 0% (0 of 7)\nternary_table.pyx: 0% (0 of 15)\n\nOverall weighted coverage score:  26.3%\nTotal number of functions:  377\n```\n\nThere are a bunch of doctest failures, but a lot of those will be sorted out hopefully by Sunday night:\n\n```\nThe following tests failed:\n\n\n\tsage -t  devel/sage/sage/quadratic_forms/quadratic_form__local_field_invariants.py\n\tsage -t  devel/sage/sage/quadratic_forms/quadratic_form__local_normal_form.py\n\tsage -t  devel/sage/sage/quadratic_forms/table_hanke.py\n\tsage -t  devel/sage/sage/quadratic_forms/special_values.py\n\tsage -t  devel/sage/sage/quadratic_forms/quadratic_form__neighbors.py\n\tsage -t  devel/sage/sage/quadratic_forms/quadratic_form__reduction_theory.py\n\tsage -t  devel/sage/sage/quadratic_forms/quadratic_form__automorphisms.py\n\tsage -t  devel/sage/sage/quadratic_forms/quadratic_form__local_representation_conditions.py\n\tsage -t  devel/sage/sage/quadratic_forms/quadratic_form.py\n\tsage -t  devel/sage/sage/quadratic_forms/table_hanke.pyx\n\tsage -t  devel/sage/sage/quadratic_forms/quadratic_form__split_local_covering.py\n\tsage -t  devel/sage/sage/quadratic_forms/quadratic_form__mass__Conway_Sloane_masses.py\n\tsage -t  devel/sage/sage/quadratic_forms/quadratic_form__local_density_congruence.py\n\tsage -t  devel/sage/sage/quadratic_forms/quadratic_form__equivalence_testing.py\n\tsage -t  devel/sage/sage/quadratic_forms/random_quadraticform.py\n\tsage -t  devel/sage/sage/quadratic_forms/table_conversion.py\n\tsage -t  devel/sage/sage/quadratic_forms/quadratic_form__siegel_product.py\n\tsage -t  devel/sage/sage/quadratic_forms/tables.py\n\tsage -t  devel/sage/sage/quadratic_forms/quadratic_form__local_density_interfaces.py\n\tsage -t  devel/sage/sage/quadratic_forms/quadratic_form__automorphisms2.py\nTotal time for all tests: 129.5 seconds\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-09T07:11:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4470",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4470#issuecomment-33012",
+    "user": "mabshoff"
+}
+```
 
 Coverage definitely needs to be improved:
 
@@ -211,9 +315,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-11 14:28:11
+archive/issue_comments_033013.json:
+```json
+{
+    "body": "Justin,\n\na preliminary diff can be found at\n \nhttp://sage.math.washington.edu/home/mabshoff/john-hanke-qf.diff\n\nThere still are renames to be done, but I should have something in the next 24 hours. Feel free to start the review despite the comment in the summary.\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-11T14:28:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4470",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4470#issuecomment-33013",
+    "user": "mabshoff"
+}
+```
 
 Justin,
 
@@ -228,49 +343,119 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by tornaria created at 2009-02-23 03:35:15
+archive/issue_comments_033014.json:
+```json
+{
+    "body": "Changing assignee from justin to tornaria.",
+    "created_at": "2009-02-23T03:35:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4470",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4470#issuecomment-33014",
+    "user": "tornaria"
+}
+```
 
 Changing assignee from justin to tornaria.
 
 
+
 ---
 
-Comment by tornaria created at 2009-02-23 03:35:15
+archive/issue_comments_033015.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-02-23T03:35:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4470",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4470#issuecomment-33015",
+    "user": "tornaria"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by tornaria created at 2009-02-23 03:36:23
+archive/issue_comments_033016.json:
+```json
+{
+    "body": "Initial commit of Jon Hanke's quadratic forms code",
+    "created_at": "2009-02-23T03:36:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4470",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4470#issuecomment-33016",
+    "user": "tornaria"
+}
+```
 
 Initial commit of Jon Hanke's quadratic forms code
 
 
+
 ---
+
+archive/issue_comments_033017.json:
+```json
+{
+    "body": "Attachment\n\nmany fixes and doctests for quadratic forms code",
+    "created_at": "2009-02-23T03:36:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4470",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4470#issuecomment-33017",
+    "user": "tornaria"
+}
+```
 
 Attachment
 
 many fixes and doctests for quadratic forms code
 
 
+
 ---
+
+archive/issue_comments_033018.json:
+```json
+{
+    "body": "Attachment\n\nAttached patches:\n\n- attachment:patch.4470.01-inital_hanke_code: applies Jon Hanke's quadratic forms code into sage. The merge is based in mabshoff work during SD Austin, with some minor updates.\n- attachment:patch.4470.02-fixes_and_doctest: fixes and lots of doctests and documentation to be applied on top of the initial patch. This patch raises the doctest coverage from 33% to over 60%.\n\nThe patches apply cleanly on a 3.3 tree, all tests pass in sage.math and my core2 debian/64 laptop.",
+    "created_at": "2009-02-23T03:45:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4470",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4470#issuecomment-33018",
+    "user": "tornaria"
+}
+```
 
 Attachment
 
 Attached patches:
 
- - attachment:patch.4470.01-inital_hanke_code: applies Jon Hanke's quadratic forms code into sage. The merge is based in mabshoff work during SD Austin, with some minor updates.
- - attachment:patch.4470.02-fixes_and_doctest: fixes and lots of doctests and documentation to be applied on top of the initial patch. This patch raises the doctest coverage from 33% to over 60%.
+- attachment:patch.4470.01-inital_hanke_code: applies Jon Hanke's quadratic forms code into sage. The merge is based in mabshoff work during SD Austin, with some minor updates.
+- attachment:patch.4470.02-fixes_and_doctest: fixes and lots of doctests and documentation to be applied on top of the initial patch. This patch raises the doctest coverage from 33% to over 60%.
 
 The patches apply cleanly on a 3.3 tree, all tests pass in sage.math and my core2 debian/64 laptop.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-23 09:47:48
+archive/issue_comments_033019.json:
+```json
+{
+    "body": "Hi Gonzalo, Jon,\n\nthis patch needs a formal review, so either one of you can give a positive review to the other person's work. We will give an exception to the coverage requirements in this case, but I will open a followup ticket to get coverage up to 100%.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-23T09:47:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4470",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4470#issuecomment-33019",
+    "user": "mabshoff"
+}
+```
 
 Hi Gonzalo, Jon,
 
@@ -281,18 +466,40 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by tornaria created at 2009-02-23 16:20:29
+archive/issue_comments_033020.json:
+```json
+{
+    "body": "Jon Hanke and I have been working on reviewing the initial patch last week, improving and doctesting the code. Although the coverage is not 100%, and there's most certainly still bugs in the code, it is completely orthogonal to the rest of sage so it won't affect anything else. Given SD13 and AWS soon, we expect to improve it in the next couple of weeks.\n\nI strongly recommend inclusion of this patch into sage.",
+    "created_at": "2009-02-23T16:20:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4470",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4470#issuecomment-33020",
+    "user": "tornaria"
+}
+```
 
 Jon Hanke and I have been working on reviewing the initial patch last week, improving and doctesting the code. Although the coverage is not 100%, and there's most certainly still bugs in the code, it is completely orthogonal to the rest of sage so it won't affect anything else. Given SD13 and AWS soon, we expect to improve it in the next couple of weeks.
 
 I strongly recommend inclusion of this patch into sage.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-24 20:54:33
+archive/issue_comments_033021.json:
+```json
+{
+    "body": "Ok, everything works, but some doctests need to be marked optional since they depend on ISOM:\n\n```\n        sage -t  devel/sage/sage/quadratic_forms/quadratic_form__equivalence_testing.py # 8 doctests failed\n        sage -t  devel/sage/sage/quadratic_forms/quadratic_form__automorphisms.py # 6 doctests failed\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-24T20:54:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4470",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4470#issuecomment-33021",
+    "user": "mabshoff"
+}
+```
 
 Ok, everything works, but some doctests need to be marked optional since they depend on ISOM:
 
@@ -307,15 +514,28 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_033022.json:
+```json
+{
+    "body": "Attachment\n\nMerged \n\n* patch.4470.01-inital_hanke_code\n* patch.4470.02-fixes_and_doctest \n* trac_4770-reviewer.patch\n\nin Sage 3.4.alpha0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-24T21:42:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4470",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4470#issuecomment-33022",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 Merged 
 
- * patch.4470.01-inital_hanke_code
- * patch.4470.02-fixes_and_doctest 
- * trac_4770-reviewer.patch
+* patch.4470.01-inital_hanke_code
+* patch.4470.02-fixes_and_doctest 
+* trac_4770-reviewer.patch
 
 in Sage 3.4.alpha0.
 
@@ -324,9 +544,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-26 14:41:13
+archive/issue_comments_033023.json:
+```json
+{
+    "body": "As mentioned above this code was merged in Sage 3.4.alpha0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-26T14:41:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4470",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4470#issuecomment-33023",
+    "user": "mabshoff"
+}
+```
 
 As mentioned above this code was merged in Sage 3.4.alpha0.
 
@@ -335,9 +566,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-26 14:41:27
+archive/issue_comments_033024.json:
+```json
+{
+    "body": "As mentioned above this code was merged in Sage 3.4.alpha0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-26T14:41:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4470",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4470#issuecomment-33024",
+    "user": "mabshoff"
+}
+```
 
 As mentioned above this code was merged in Sage 3.4.alpha0.
 
@@ -346,8 +588,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-26 14:41:27
+archive/issue_comments_033025.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-02-26T14:41:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4470",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4470#issuecomment-33025",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

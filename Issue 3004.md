@@ -1,11 +1,21 @@
 # Issue 3004: bug in coercion edge case -- probably easy to fix
 
-Issue created by migration from https://trac.sagemath.org/ticket/3004
-
-Original creator: was
-
-Original creation time: 2008-04-22 21:56:35
-
+archive/issues_003004.json:
+```json
+{
+    "body": "Assignee: somebody\n\nbug from Kari Christianson:\n\n\n```\nsage: PolynomialRing(ZZ, 'x').gen()*Mod(1,15)\nx\n```\n\n\n\n\n```\nsage: PolynomialRing(ZZ, 1, 'x').gen()*Mod(1,15)\nTraceback (most recent call last):\n...\nTypeError: unsupported operand parent(s) for '*': 'Multivariate Polynomial Ring in x over Integer Ring' and 'Ring of integers modulo 15'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3004\n\n",
+    "created_at": "2008-04-22T21:56:35Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "bug"
+    ],
+    "title": "bug in coercion edge case -- probably easy to fix",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3004",
+    "user": "was"
+}
+```
 Assignee: somebody
 
 bug from Kari Christianson:
@@ -27,10 +37,25 @@ TypeError: unsupported operand parent(s) for '*': 'Multivariate Polynomial Ring 
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3004
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-10-28 16:34:10
+archive/issue_comments_020665.json:
+```json
+{
+    "body": "This has been fixed by the new coercion system:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha2$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| Sage Version 3.2.alpha1, Release Date: 2008-10-26                  |\n| Type notebook() for the GUI, and license() for information.        |\nsage: PolynomialRing(ZZ, 'x').gen()*Mod(1,15)\nx\nsage: PolynomialRing(ZZ, 1, 'x').gen()*Mod(1,15)\nx\nsage: \n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2008-10-28T16:34:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3004",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3004#issuecomment-20665",
+    "user": "mabshoff"
+}
+```
 
 This has been fixed by the new coercion system:
 
@@ -53,8 +78,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-28 16:34:10
+archive/issue_comments_020666.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-10-28T16:34:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3004",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3004#issuecomment-20666",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

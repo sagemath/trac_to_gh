@@ -1,11 +1,21 @@
 # Issue 2945: [with spkg, needs review] gcc 4.3: libfplll needs small fix to compile
 
-Issue created by migration from https://trac.sagemath.org/ticket/2945
-
-Original creator: mabshoff
-
-Original creation time: 2008-04-17 08:10:17
-
+archive/issues_002945.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nThe spkg at \n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0/alpha6/libfplll-2.1.6-20071129.p3.spkg\n\nfixes the issue.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2945\n\n",
+    "created_at": "2008-04-17T08:10:17Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "[with spkg, needs review] gcc 4.3: libfplll needs small fix to compile",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2945",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 The spkg at 
@@ -18,30 +28,78 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/2945
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-04-17 08:10:24
+archive/issue_comments_020308.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-04-17T08:10:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2945",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2945#issuecomment-20308",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by gfurnish created at 2008-04-17 09:49:47
+archive/issue_comments_020309.json:
+```json
+{
+    "body": "Works for me.",
+    "created_at": "2008-04-17T09:49:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2945",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2945#issuecomment-20309",
+    "user": "gfurnish"
+}
+```
 
 Works for me.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-17 09:50:29
+archive/issue_comments_020310.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-04-17T09:50:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2945",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2945#issuecomment-20310",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-17 09:50:29
+archive/issue_comments_020311.json:
+```json
+{
+    "body": "Merged in Sage 3.0.alpha6",
+    "created_at": "2008-04-17T09:50:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2945",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2945#issuecomment-20311",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.alpha6

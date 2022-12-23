@@ -1,51 +1,135 @@
 # Issue 7237: sagenb: when printing output shown twice
 
-Issue created by migration from https://trac.sagemath.org/ticket/7237
-
-Original creator: was
-
-Original creation time: 2009-10-18 04:01:45
-
+archive/issues_007237.json:
+```json
+{
+    "body": "Assignee: boothby\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7237\n\n",
+    "created_at": "2009-10-18T04:01:45Z",
+    "labels": [
+        "notebook",
+        "major",
+        "bug"
+    ],
+    "title": "sagenb: when printing output shown twice",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7237",
+    "user": "was"
+}
+```
 Assignee: boothby
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7237
+
+
+
+
 
 ---
 
-Comment by was created at 2009-10-18 04:02:30
+archive/issue_comments_060035.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-10-18T04:02:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7237",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7237#issuecomment-60035",
+    "user": "was"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_060036.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-10-18T04:02:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7237",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7237#issuecomment-60036",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_060037.json:
+```json
+{
+    "body": "Attachment\n\nPatch works. Printing no longer prints wrapped an unwrapped text. Positive review.",
+    "created_at": "2009-10-18T04:15:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7237",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7237#issuecomment-60037",
+    "user": "timdumol"
+}
+```
 
 Attachment
 
 Patch works. Printing no longer prints wrapped an unwrapped text. Positive review.
 
 
+
 ---
 
-Comment by timdumol created at 2009-10-18 04:15:32
+archive/issue_comments_060038.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-10-18T04:15:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7237",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7237#issuecomment-60038",
+    "user": "timdumol"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by was created at 2009-10-25 06:47:50
+archive/issue_comments_060039.json:
+```json
+{
+    "body": "merge into sage-4.2.",
+    "created_at": "2009-10-25T06:47:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7237",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7237#issuecomment-60039",
+    "user": "was"
+}
+```
 
 merge into sage-4.2.
 
 
+
 ---
 
-Comment by was created at 2009-10-25 06:47:50
+archive/issue_comments_060040.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-10-25T06:47:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7237",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7237#issuecomment-60040",
+    "user": "was"
+}
+```
 
 Resolution: fixed

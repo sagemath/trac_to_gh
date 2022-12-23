@@ -1,21 +1,46 @@
 # Issue 6041: update NetworkX to version 0.99
 
-Issue created by migration from https://trac.sagemath.org/ticket/6041
-
-Original creator: mvngu
-
-Original creation time: 2009-05-15 06:14:08
-
+archive/issues_006041.json:
+```json
+{
+    "body": "Assignee: rlm\n\nCC:  rlm jason\n\nAs the subject says. This is a follow-up to #5934.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6041\n\n",
+    "created_at": "2009-05-15T06:14:08Z",
+    "labels": [
+        "graph theory",
+        "major",
+        "enhancement"
+    ],
+    "title": "update NetworkX to version 0.99",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6041",
+    "user": "mvngu"
+}
+```
 Assignee: rlm
 
 CC:  rlm jason
 
 As the subject says. This is a follow-up to #5934.
 
+Issue created by migration from https://trac.sagemath.org/ticket/6041
+
+
+
+
 
 ---
 
-Comment by mvngu created at 2009-05-19 11:16:48
+archive/issue_comments_048103.json:
+```json
+{
+    "body": "A new spkg is up at\n\n\n\nhttp://sage.math.washington.edu/home/mvngu/patch/networkx-0.99.p1.spkg\n\n\n\nUnfortunately, as I suspected version 0.99 of NetworkX breaks a lot of doctests:\n\n```\nThe following tests failed:\n\n\n        sage -t -long \"devel/sage-main/sage/graphs/graph_bundle.py\"\n        sage -t -long \"devel/sage-main/sage/graphs/graph_generators.py\"\n        sage -t -long \"devel/sage-main/sage/graphs/planarity.pyx\"\n        sage -t -long \"devel/sage-main/sage/graphs/graph_fast.pyx\"\n        sage -t -long \"devel/sage-main/sage/graphs/graph_isom.pyx\"\n        sage -t -long \"devel/sage-main/sage/graphs/schnyder.py\"\n        sage -t -long \"devel/sage-main/sage/graphs/graph_coloring.py\"\n        sage -t -long \"devel/sage-main/sage/graphs/graph.py\"\n        sage -t -long \"devel/sage-main/sage/graphs/chrompoly.pyx\"\n        sage -t -long \"devel/sage-main/sage/graphs/print_graphs.py\"\n        sage -t -long \"devel/sage-main/sage/graphs/graph_plot.py\"\n        sage -t -long \"devel/sage-main/sage/graphs/graph_list.py\"\n        sage -t -long \"devel/sage-main/sage/graphs/graph_database.py\"\n        sage -t -long \"devel/sage-main/sage/graphs/base/graph_backends.py\"\n        sage -t -long \"devel/sage-main/sage/graphs/base/dense_graph.pyx\"\n        sage -t -long \"devel/sage-main/sage/graphs/base/sparse_graph.pyx\"\n        sage -t -long \"devel/sage-main/sage/graphs/base/c_graph.pyx\"\n        sage -t -long \"devel/sage-main/sage/graphs/bipartite_graph.py\"\n        sage -t -long \"devel/sage-main/sage/graphs/linearextensions.py\"\nTotal time for all tests: 63.8 seconds\n```\n\nI'll upload patches against the relevant modules shortly, unless someone who is awake beats me to it (I'm going to sleep now :-).",
+    "created_at": "2009-05-19T11:16:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6041",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6041#issuecomment-48103",
+    "user": "mvngu"
+}
+```
 
 A new spkg is up at
 
@@ -56,9 +81,20 @@ Total time for all tests: 63.8 seconds
 I'll upload patches against the relevant modules shortly, unless someone who is awake beats me to it (I'm going to sleep now :-).
 
 
+
 ---
 
-Comment by rlm created at 2009-05-19 14:21:21
+archive/issue_comments_048104.json:
+```json
+{
+    "body": "You should definitely get a good night's sleep before you tackle that!\n\nI would suggest you start by seeing what needs to be fixed to get the doctests in\n\n```\ndevel/sage-main/sage/graphs/base/graph_backends.py\n```\n\nto work properly. This is where Sage and NetworkX mainly plug in to each other. Once those are fixed, I expect much of the rest will be already done.",
+    "created_at": "2009-05-19T14:21:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6041",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6041#issuecomment-48104",
+    "user": "rlm"
+}
+```
 
 You should definitely get a good night's sleep before you tackle that!
 
@@ -71,13 +107,24 @@ devel/sage-main/sage/graphs/base/graph_backends.py
 to work properly. This is where Sage and NetworkX mainly plug in to each other. Once those are fixed, I expect much of the rest will be already done.
 
 
+
 ---
 
-Comment by mvngu created at 2009-05-20 06:26:28
+archive/issue_comments_048105.json:
+```json
+{
+    "body": "I managed to get all doctests in `sage/graphs/base/graph_backends.py` to pass, but at the expense of deleting the following methods from the class `NetworkXGraphBackend`. Here I assume that `NetworkXGraphBackend` is an undirected graph without multiple edges.\n1. `loops` -- This is irrelevant with the API changes in NetworkX 0.99, since the class `Graph` from NetworkX 0.99 allows for self-loops without having to explicitly set it with a boolean.\n2. `multiple_edges` -- Again irrelevant since the class `Graph` doesn't allow multiple edges. Graphs with multiple edges should now be constructed via the class `MultiGraph` (not directed), or `MultiDiGraph` which allows for directed arcs.\nHere's a diff of the changes to `sage/graphs/base/graph_backends.py`:\n\n```\ndiff -r 21c6c829ea32 sage/graphs/base/graph_backends.py\n--- a/sage/graphs/base/graph_backends.py\tSat May 16 09:46:59 2009 -0700\n+++ b/sage/graphs/base/graph_backends.py\tTue May 19 23:47:29 2009 -0700\n@@ -499,13 +499,12 @@\n         \"\"\"\n         if N is None:\n             import networkx\n-            N = networkx.XGraph()\n+            N = networkx.Graph()\n         self._nxg = N\n \n-    def add_edge(self, u, v, l, directed):\n+    def add_edge(self, u, v, l):\n         \"\"\"\n-        Add an edge (u,v) to self, with label l.  If directed is True, this is\n-        interpreted as an arc from u to v.\n+        Add an edge (u,v) to self, with label l.\n         \n         INPUT:\n             u,v:      vertices\n@@ -514,11 +513,11 @@\n         \n         DOCTEST:\n             sage: G = sage.graphs.base.graph_backends.NetworkXGraphBackend()\n-            sage: G.add_edge(1,2,'a',True)\n+            sage: G.add_edge(1, 2, \"a\")\n          \"\"\"\n         self._nxg.add_edge(u, v, l)\n \n-    def add_edges(self, edges, directed):\n+    def add_edges(self, edges):\n         \"\"\"\n         Add a sequence of edges to self.  If directed is True, these are\n         interpreted as arcs.\n@@ -529,7 +528,7 @@\n         \n         DOCTEST:\n             sage: G = sage.graphs.base.graph_backends.NetworkXGraphBackend()\n-            sage: G.add_edges([],True)\n+            sage: G.add_edges([])\n         \"\"\"\n         for e in edges:\n             try:\n@@ -537,7 +536,7 @@\n             except:\n                 u,v = e\n                 l = None\n-            self.add_edge(u,v,l,directed)\n+            self.add_edge(u, v, l)\n \n     def add_vertex(self, name):\n         \"\"\"\n@@ -589,7 +588,7 @@\n         \"\"\"\n         return self._nxg.degree(v)\n \n-    def del_edge(self, u, v, l, directed):\n+    def del_edge(self, u, v, l):\n         \"\"\"\n         Deletes the edge (u,v) with label l.\n \n@@ -600,9 +599,10 @@\n         \n         DOCTEST:\n             sage: G = sage.graphs.base.graph_backends.NetworkXGraphBackend()\n-            sage: G.del_edge(1,2,'a',True)\n+            sage: G.add_edge(1, 2, \"a\")\n+            sage: G.del_edge(1, 2, \"a\")\n         \"\"\"\n-        self._nxg.delete_edge(u, v, l)\n+        self._nxg.delete_edge(u, v)\n \n     def del_vertex(self, v):\n         \"\"\"\n@@ -649,16 +649,16 @@\n         \n         DOCTEST:\n             sage: G = sage.graphs.base.graph_backends.NetworkXGraphBackend()\n-            sage: G.get_edge_label(1,2)\n+            sage: G.get_edge_label(1, 2)\n             Traceback (most recent call last):\n             ...\n-            NetworkXError: Edge (1,2) requested via get_edge does not exist.\n+            NetworkXError: edge (1,2) not in graph\n         \"\"\"\n         return self._nxg.get_edge(u, v)\n \n-    def has_edge(self, u, v, l):\n+    def has_edge(self, u, v):\n         \"\"\"\n-        True if self has an edge (u,v) with label l.\n+        True if self has an edge (u,v).\n \n         INPUT:\n             u,v: vertex labels\n@@ -669,10 +669,19 @@\n         \n         DOCTEST:\n             sage: G = sage.graphs.base.graph_backends.NetworkXGraphBackend()\n-            sage: G.has_edge(1,2,'a')\n+            sage: G.has_edge(1, 2)\n             False\n         \"\"\"\n-        return self._nxg.has_edge(u, v, l)\n+        return self._nxg.has_edge(u, v)\n+\n+    def has_selfloops(self):\n+        \"\"\"\n+        Returns ``True`` if this graph has self-loops; ``False`` otherwise.\n+        \"\"\"\n+        if self._nxg.number_of_selfloops() > 0:\n+            return True\n+        else:\n+            return False\n \n     def has_vertex(self, v):\n         \"\"\"\n@@ -781,8 +790,9 @@\n             \n         DOCTEST:\n             sage: G = sage.graphs.base.graph_backends.NetworkXGraphBackend()\n+            sage: G.add_edges([(0,1), (0,2), (1,2)])\n             sage: G.iterator_nbrs(0)\n-            <generator object at ...>\n+            <dictionary-keyiterator object at ...>\n         \"\"\"\n         return self._nxg.neighbors_iter(v)\n \n@@ -802,7 +812,7 @@\n             sage: G.iterator_in_nbrs(0)\n             Traceback (most recent call last):\n             ...\n-            AttributeError: 'XGraph' object has no attribute 'predecessors_iter'\n+            AttributeError: 'Graph' object has no attribute 'predecessors_iter'\n         \"\"\"\n         return self._nxg.predecessors_iter(v)\n \n@@ -822,7 +832,7 @@\n             sage: G.iterator_out_nbrs(0)\n             Traceback (most recent call last):\n             ...\n-            AttributeError: 'XGraph' object has no attribute 'successors_iter'\n+            AttributeError: 'Graph' object has no attribute 'successors_iter'\n         \"\"\"\n         return self._nxg.successors_iter(v)\n \n@@ -839,49 +849,9 @@\n         DOCTEST:\n             sage: G = sage.graphs.base.graph_backends.NetworkXGraphBackend()\n             sage: G.iterator_verts(0)\n-            <listiterator object at ...>\n+            <generator object at ...>\n         \"\"\"\n-        return iter(self._nxg.prepare_nbunch(verts))\n-\n-    def loops(self, new):\n-        \"\"\"\n-        Get/set whether or not self allows loops.        \n-        \n-        INPUT:\n-            new: boolean or None\n-        \n-        DOCTEST:\n-            sage: G = sage.graphs.base.graph_backends.NetworkXGraphBackend()\n-            sage: G.loops(True)\n-            sage: G.loops(None)\n-            True\n-        \"\"\"\n-        if new is None:\n-            return self._nxg.selfloops\n-        if new:\n-            self._nxg.allow_selfloops()\n-        else:\n-            self._nxg.ban_selfloops()\n-\n-    def multiple_edges(self, new):\n-        \"\"\"\n-        Get/set whether or not self allows multiple edges.\n-        \n-        INPUT:\n-            new: boolean or None\n-        \n-        DOCTEST:\n-            sage: G = sage.graphs.base.graph_backends.NetworkXGraphBackend()\n-            sage: G.multiple_edges(True)\n-            sage: G.multiple_edges(None)\n-            True\n-        \"\"\"\n-        if new is None:\n-            return self._nxg.multiedges\n-        if new:\n-            self._nxg.allow_multiedges()\n-        else:\n-            self._nxg.ban_multiedges()\n+        return iter(self._nxg.nbunch_iter(verts))\n \n     def name(self, new):\n         \"\"\"\n@@ -969,39 +939,24 @@\n                 newd[perm[v]] = newtempd\n             self._nxg.adj = newd\n \n-    def set_edge_label(self, u, v, l, directed):\n+    def set_edge_label(self, u, v, l):\n         \"\"\"\n         Label the edge (u,v) by l.\n         \n         INPUT:\n             u,v:      vertices\n             l:        edge label\n-            directed: boolean\n         \n         DOCTEST:\n             sage: G = sage.graphs.base.graph_backends.NetworkXGraphBackend()\n-            sage: G.set_edge_label(1,2,'a',True)\n+            sage: # G is empty graph, so it doesn't have the edge (1,2)\n+            sage: G.set_edge_label(1, 2, \"a\")\n+            sage: # add some edges to G\n+            sage: G.add_edges([(1,2), (1,3), (2,3)])\n+            sage: G.set_edge_label(1, 2, \"b\")\n         \"\"\"        \n-        if not self.has_edge(u, v, None):\n+        if not self.has_edge(u, v):\n             return\n-        if self.multiple_edges(None):\n-            if directed:\n-                self._nxg.succ[u][v] = [l]\n-                self._nxg.pred[v][u] = [l]\n-            else:\n-                self._nxg.adj[u][v] = [l]\n-                self._nxg.adj[v][u] = [l]\n         else:\n-            if directed:\n-                self._nxg.succ[u][v] = l\n-                self._nxg.pred[v][u] = l\n-            else:\n-                self._nxg.adj[u][v] = l\n-                self._nxg.adj[v][u] = l\n-\n-\n-\n-\n-\n-\n-\n+            self._nxg.adj[u][v] = l\n+            self._nxg.adj[v][u] = l\n\n```\n\nBut the following doctests failed:\n\n```\nsage -t -long \"devel/sage-6041/sage/graphs/graph_bundle.py\"\nsage -t -long \"devel/sage-6041/sage/graphs/graph_generators.py\"\nsage -t -long \"devel/sage-6041/sage/graphs/planarity.pyx\"\nsage -t -long \"devel/sage-6041/sage/graphs/graph_fast.pyx\"\nsage -t -long \"devel/sage-6041/sage/graphs/graph_isom.pyx\"\nsage -t -long \"devel/sage-6041/sage/graphs/schnyder.py\"\nsage -t -long \"devel/sage-6041/sage/graphs/graph_coloring.py\"\nsage -t -long \"devel/sage-6041/sage/graphs/graph.py\"\nsage -t -long \"devel/sage-6041/sage/graphs/chrompoly.pyx\"\nsage -t -long \"devel/sage-6041/sage/graphs/print_graphs.py\"\nsage -t -long \"devel/sage-6041/sage/graphs/graph_plot.py\"\nsage -t -long \"devel/sage-6041/sage/graphs/graph_list.py\"\nsage -t -long \"devel/sage-6041/sage/graphs/graph_database.py\"\nsage -t -long \"devel/sage-6041/sage/graphs/base/dense_graph.pyx\"\nsage -t -long \"devel/sage-6041/sage/graphs/base/sparse_graph.pyx\"\nsage -t -long \"devel/sage-6041/sage/graphs/base/c_graph.pyx\"\nsage -t -long \"devel/sage-6041/sage/graphs/bipartite_graph.py\"\nsage -t -long \"devel/sage-6041/sage/graphs/linearextensions.py\"\nsage -t -long \"devel/sage-6041/sage/graphs/base/dense_graph.pyx\"\nsage -t -long \"devel/sage-6041/sage/graphs/base/sparse_graph.pyx\"\nsage -t -long \"devel/sage-6041/sage/graphs/base/c_graph.pyx\"\n```\n\nIt looks like anything under `sage/graphs/` that uses `sage/graphs/base/graph_backends.py` should be changed accordingly.",
+    "created_at": "2009-05-20T06:26:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6041",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6041#issuecomment-48105",
+    "user": "mvngu"
+}
+```
 
 I managed to get all doctests in `sage/graphs/base/graph_backends.py` to pass, but at the expense of deleting the following methods from the class `NetworkXGraphBackend`. Here I assume that `NetworkXGraphBackend` is an undirected graph without multiple edges.
- 1. `loops` -- This is irrelevant with the API changes in NetworkX 0.99, since the class `Graph` from NetworkX 0.99 allows for self-loops without having to explicitly set it with a boolean.
- 1. `multiple_edges` -- Again irrelevant since the class `Graph` doesn't allow multiple edges. Graphs with multiple edges should now be constructed via the class `MultiGraph` (not directed), or `MultiDiGraph` which allows for directed arcs.
+1. `loops` -- This is irrelevant with the API changes in NetworkX 0.99, since the class `Graph` from NetworkX 0.99 allows for self-loops without having to explicitly set it with a boolean.
+2. `multiple_edges` -- Again irrelevant since the class `Graph` doesn't allow multiple edges. Graphs with multiple edges should now be constructed via the class `MultiGraph` (not directed), or `MultiDiGraph` which allows for directed arcs.
 Here's a diff of the changes to `sage/graphs/base/graph_backends.py`:
 
 ```
@@ -360,9 +407,20 @@ sage -t -long "devel/sage-6041/sage/graphs/base/c_graph.pyx"
 It looks like anything under `sage/graphs/` that uses `sage/graphs/base/graph_backends.py` should be changed accordingly.
 
 
+
 ---
 
-Comment by rlm created at 2009-05-20 13:57:16
+archive/issue_comments_048106.json:
+```json
+{
+    "body": "Replying to [comment:3 mvngu]:\n> I managed to get all doctests in `sage/graphs/base/graph_backends.py` to pass, but at the expense of deleting the following methods from the class `NetworkXGraphBackend`. Here I assume that `NetworkXGraphBackend` is an undirected graph without multiple edges.\n\nIncorrect. NetworkXGraphBackend is simply a wrapper for a NetworkX graph, which can be directed, or have multiple edges.\n\n>  1. `loops` -- This is irrelevant with the API changes in NetworkX 0.99, since the class `Graph` from NetworkX 0.99 allows for self-loops without having to explicitly set it with a boolean.\n>  1. `multiple_edges` -- Again irrelevant since the class `Graph` doesn't allow multiple edges. Graphs with multiple edges should now be constructed via the class `MultiGraph` (not directed), or `MultiDiGraph` which allows for directed arcs.\n\nThis isn't irrelevant, as *Sage* graphs can have loops or multiedges set. What needs to happen is for loops and multiedges to become properties of the backend, and for the appropriate work to go on there. We still need to support these options. You should be working on top of the `part-1` patch at #6085, since it implements part of this in `graph.py` (and so that we're less likely to be stepping on each other's toes).\n\n> Here's a diff of the changes to `sage/graphs/base/graph_backends.py`: \n\nNext time you could probably attach the diff to the ticket... :)\n\n> It looks like anything under `sage/graphs/` that uses `sage/graphs/base/graph_backends.py` should be changed accordingly.\n\nDon't forget all of the rest of Sage! I think you'll find it much easier to adapt the backend to behave exactly as before. Then, all the other doctests should pass - that's what they're there for!",
+    "created_at": "2009-05-20T13:57:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6041",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6041#issuecomment-48106",
+    "user": "rlm"
+}
+```
 
 Replying to [comment:3 mvngu]:
 > I managed to get all doctests in `sage/graphs/base/graph_backends.py` to pass, but at the expense of deleting the following methods from the class `NetworkXGraphBackend`. Here I assume that `NetworkXGraphBackend` is an undirected graph without multiple edges.
@@ -383,9 +441,20 @@ Next time you could probably attach the diff to the ticket... :)
 Don't forget all of the rest of Sage! I think you'll find it much easier to adapt the backend to behave exactly as before. Then, all the other doctests should pass - that's what they're there for!
 
 
+
 ---
 
-Comment by mvngu created at 2009-05-21 05:56:28
+archive/issue_comments_048107.json:
+```json
+{
+    "body": "Replying to [comment:4 rlm]:\n> Replying to [comment:3 mvngu]:\n> > I managed to get all doctests in `sage/graphs/base/graph_backends.py` to pass, but at the expense of deleting the following methods from the class `NetworkXGraphBackend`. Here I assume that `NetworkXGraphBackend` is an undirected graph without multiple edges.\n> \n> Incorrect. NetworkXGraphBackend is simply a wrapper for a NetworkX graph, which can be directed, or have multiple edges.\nAgreed. Version 0.99 now has:\n   * `Graph` --- An undirected graph class without multiple (parallel) edges.\n   * `DiGraph` --- A directed graph that allows self-loops, but not multiple (parallel) edges.\n   * `MultiGraph` --- An undirected graph that allows multiple (parallel) edges with arbitrary data on the edges.\n   * `MultiDiGraph` --- A directed graph that allows multiple (parallel) edges with arbitrary data on the edges.\nThese have been lifted off from the NetworkX 0.99 documentation. `MultiGraph` is the successor to `XGraph` where we allow `XGraph` to have multiple edges. And `MultiDiGraph` is the successor to `XDiGraph` with multiple edges. According to the API change log at\n\n\n\nhttp://networkx.lanl.gov/reference/api_changes.html\n\n\n\nPreviously `XGraph` handle undirected graphs with or without multiple edges, and `XDiGraph` handle directed graphs with or without multiple edges. Now there are four graph classes instead of two, for handling the different types of graphs.\n\n\n\n\n> >  1. `loops` -- This is irrelevant with the API changes in NetworkX 0.99, since the class `Graph` from NetworkX 0.99 allows for self-loops without having to explicitly set it with a boolean.\n> >  1. `multiple_edges` -- Again irrelevant since the class `Graph` doesn't allow multiple edges. Graphs with multiple edges should now be constructed via the class `MultiGraph` (not directed), or `MultiDiGraph` which allows for directed arcs.\n> \n> This isn't irrelevant, as *Sage* graphs can have loops or multiedges set. What needs to happen is for loops and multiedges to become properties of the backend, and for the appropriate work to go on there. We still need to support these options. You should be working on top of the `part-1` patch at #6085, since it implements part of this in `graph.py` (and so that we're less likely to be stepping on each other's toes).\nThanks you for the pointer.\n\n\n\n\n> > Here's a diff of the changes to `sage/graphs/base/graph_backends.py`: \n> \n> Next time you could probably attach the diff to the ticket... :)\nNo, the diff isn't meant to be committed in the future. It's there for discussion and to explore ways to maintain compatibility with the existing API in `graph_backends.py`. But as you can see, the diff clearly breaks compatibility :-)\n\n\n\n\n> > It looks like anything under `sage/graphs/` that uses `sage/graphs/base/graph_backends.py` should be changed accordingly.\n> \n> Don't forget all of the rest of Sage! I think you'll find it much easier to adapt the backend to behave exactly as before. Then, all the other doctests should pass - that's what they're there for!\nOK, let me see what I can do.",
+    "created_at": "2009-05-21T05:56:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6041",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6041#issuecomment-48107",
+    "user": "mvngu"
+}
+```
 
 Replying to [comment:4 rlm]:
 > Replying to [comment:3 mvngu]:
@@ -393,10 +462,10 @@ Replying to [comment:4 rlm]:
 > 
 > Incorrect. NetworkXGraphBackend is simply a wrapper for a NetworkX graph, which can be directed, or have multiple edges.
 Agreed. Version 0.99 now has:
- * `Graph` --- An undirected graph class without multiple (parallel) edges.
- * `DiGraph` --- A directed graph that allows self-loops, but not multiple (parallel) edges.
- * `MultiGraph` --- An undirected graph that allows multiple (parallel) edges with arbitrary data on the edges.
- * `MultiDiGraph` --- A directed graph that allows multiple (parallel) edges with arbitrary data on the edges.
+   * `Graph` --- An undirected graph class without multiple (parallel) edges.
+   * `DiGraph` --- A directed graph that allows self-loops, but not multiple (parallel) edges.
+   * `MultiGraph` --- An undirected graph that allows multiple (parallel) edges with arbitrary data on the edges.
+   * `MultiDiGraph` --- A directed graph that allows multiple (parallel) edges with arbitrary data on the edges.
 These have been lifted off from the NetworkX 0.99 documentation. `MultiGraph` is the successor to `XGraph` where we allow `XGraph` to have multiple edges. And `MultiDiGraph` is the successor to `XDiGraph` with multiple edges. According to the API change log at
 
 
@@ -433,9 +502,20 @@ No, the diff isn't meant to be committed in the future. It's there for discussio
 OK, let me see what I can do.
 
 
+
 ---
 
-Comment by rlm created at 2009-05-21 14:32:13
+archive/issue_comments_048108.json:
+```json
+{
+    "body": "Replying to [comment:5 mvngu]:\n> Replying to [comment:4 rlm]:\n> > Replying to [comment:3 mvngu]:\n> Previously `XGraph` handle undirected graphs with or without multiple edges, and `XDiGraph` handle directed graphs with or without multiple edges. Now there are four graph classes instead of two, for handling the different types of graphs.\n\nActually, there were also `Graph` and `DiGraph`, which did not have labels...\n\n> > > Here's a diff of the changes to `sage/graphs/base/graph_backends.py`: \n> > \n> > Next time you could probably attach the diff to the ticket... :)\n> No, the diff isn't meant to be committed in the future. It's there for discussion and to explore ways to maintain compatibility with the existing API in `graph_backends.py`.\n\nYou can still post diffs as attachments. It makes the discussion much easier to follow when you're reading the ticket, and it keeps clutter down. Just add the note \"not to be applied\" if you're worried...\n\n> > > It looks like anything under `sage/graphs/` that uses `sage/graphs/base/graph_backends.py` should be changed accordingly.\n> > \n> > Don't forget all of the rest of Sage! I think you'll find it much easier to adapt the backend to behave exactly as before. Then, all the other doctests should pass - that's what they're there for!\n> OK, let me see what I can do.\n\nIt should be possible to get all of the doctests in Sage working by changing only things which call `networkx` directly (i.e. things involving `import networkx`), and the `NetworkXGraphBackend` class in `graph_backends.py`. Keep in mind that there are several interchangeable backends. In your diff, you were actually changing the signature of some of the backend functions-- this is bad.",
+    "created_at": "2009-05-21T14:32:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6041",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6041#issuecomment-48108",
+    "user": "rlm"
+}
+```
 
 Replying to [comment:5 mvngu]:
 > Replying to [comment:4 rlm]:
@@ -459,22 +539,55 @@ You can still post diffs as attachments. It makes the discussion much easier to 
 It should be possible to get all of the doctests in Sage working by changing only things which call `networkx` directly (i.e. things involving `import networkx`), and the `NetworkXGraphBackend` class in `graph_backends.py`. Keep in mind that there are several interchangeable backends. In your diff, you were actually changing the signature of some of the backend functions-- this is bad.
 
 
+
 ---
 
-Comment by rlm created at 2009-05-21 14:50:40
+archive/issue_comments_048109.json:
+```json
+{
+    "body": "There is another patch at #6085 now: You should be working on top of `part-1` and `part-2`.",
+    "created_at": "2009-05-21T14:50:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6041",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6041#issuecomment-48109",
+    "user": "rlm"
+}
+```
 
 There is another patch at #6085 now: You should be working on top of `part-1` and `part-2`.
 
 
+
 ---
 
-Comment by mvngu created at 2009-12-05 23:29:54
+archive/issue_comments_048110.json:
+```json
+{
+    "body": "This ticket is now a duplicate of #7608. The latter has a patch and an updated NetworkX 1.0rc1 package.",
+    "created_at": "2009-12-05T23:29:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6041",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6041#issuecomment-48110",
+    "user": "mvngu"
+}
+```
 
 This ticket is now a duplicate of #7608. The latter has a patch and an updated NetworkX 1.0rc1 package.
 
 
+
 ---
 
-Comment by mvngu created at 2009-12-05 23:29:54
+archive/issue_comments_048111.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2009-12-05T23:29:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6041",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6041#issuecomment-48111",
+    "user": "mvngu"
+}
+```
 
 Resolution: duplicate

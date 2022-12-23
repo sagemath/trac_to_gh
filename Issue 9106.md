@@ -1,33 +1,80 @@
 # Issue 9106: Wrong sphinx markup in UniqueRepresentation
 
-Issue created by migration from https://trac.sagemath.org/ticket/9106
-
-Original creator: hivert
-
-Original creation time: 2010-05-31 19:06:21
-
+archive/issues_009106.json:
+```json
+{
+    "body": "Assignee: hivert\n\nThere are some missing \"::\"\n\nIssue created by migration from https://trac.sagemath.org/ticket/9106\n\n",
+    "created_at": "2010-05-31T19:06:21Z",
+    "labels": [
+        "documentation",
+        "trivial",
+        "bug"
+    ],
+    "title": "Wrong sphinx markup in UniqueRepresentation",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9106",
+    "user": "hivert"
+}
+```
 Assignee: hivert
 
 There are some missing "::"
 
+Issue created by migration from https://trac.sagemath.org/ticket/9106
+
+
+
+
 
 ---
 
-Comment by hivert created at 2010-05-31 19:18:06
+archive/issue_comments_084611.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-05-31T19:18:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9106",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9106#issuecomment-84611",
+    "user": "hivert"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by hivert created at 2010-06-02 09:16:51
+archive/issue_comments_084612.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"UniqueRepresentation\".",
+    "created_at": "2010-06-02T09:16:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9106",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9106#issuecomment-84612",
+    "user": "hivert"
+}
+```
 
 Changing keywords from "" to "UniqueRepresentation".
 
 
+
 ---
 
-Comment by hivert created at 2010-06-02 09:16:51
+archive/issue_comments_084613.json:
+```json
+{
+    "body": "Review went on sage-combinat queue. E-mail from Nicolas\n\n```\nR\u00e9ciproquement, j'ai pouss\u00e9 un patch de revue pour #9106. S'il est ok\npour toi, tu peux fusionner et exporter sur trac, et zou.\n```\n\nReview patch merged an positively reviewed.",
+    "created_at": "2010-06-02T09:16:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9106",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9106#issuecomment-84613",
+    "user": "hivert"
+}
+```
 
 Review went on sage-combinat queue. E-mail from Nicolas
 
@@ -39,34 +86,93 @@ pour toi, tu peux fusionner et exporter sur trac, et zou.
 Review patch merged an positively reviewed.
 
 
+
 ---
+
+archive/issue_comments_084614.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-06-02T09:17:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9106",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9106#issuecomment-84614",
+    "user": "hivert"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_084615.json:
+```json
+{
+    "body": "Attachment\n\nSorry for uploading the wrong patch, I clic too fast...",
+    "created_at": "2010-06-02T09:21:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9106",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9106#issuecomment-84615",
+    "user": "hivert"
+}
+```
 
 Attachment
 
 Sorry for uploading the wrong patch, I clic too fast...
 
 
+
 ---
 
-Comment by hivert created at 2010-06-02 09:21:22
+archive/issue_comments_084616.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-06-02T09:21:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9106",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9106#issuecomment-84616",
+    "user": "hivert"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mhansen created at 2010-06-05 22:49:44
+archive/issue_comments_084617.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-06-05T22:49:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9106",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9106#issuecomment-84617",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mvngu created at 2010-06-24 18:02:54
+archive/issue_comments_084618.json:
+```json
+{
+    "body": "The patch `trac_9106-UniqueRep_sphinx_fix-fh.patch` results in a failure to build the PDF version of the reference manual. See #9331 for a follow-up to this issue.",
+    "created_at": "2010-06-24T18:02:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9106",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9106#issuecomment-84618",
+    "user": "mvngu"
+}
+```
 
 The patch `trac_9106-UniqueRep_sphinx_fix-fh.patch` results in a failure to build the PDF version of the reference manual. See #9331 for a follow-up to this issue.

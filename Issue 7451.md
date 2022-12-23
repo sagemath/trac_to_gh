@@ -1,11 +1,21 @@
 # Issue 7451: Setting SAGE_FAT_BINARY causes internal compiler error building pari
 
-Issue created by migration from https://trac.sagemath.org/ticket/7451
-
-Original creator: was
-
-Original creation time: 2009-11-13 15:38:24
-
+archive/issues_007451.json:
+```json
+{
+    "body": "Assignee: tbd\n\nOn all 32-bit linux systems, if I set SAGE_FAT_BINARY in sage-4.2.1.rc0, I get an internal compiler error when building PARI.  Since PARI hasn't been upgraded in a while, I think this is the fault of MPIR:\n\n\n\n```\ngcc  -c -O1 -Wall -fno-strict-aliasing -fomit-frame-pointer    -I. -I../src/headers -I../src/graph -o\n plotport.o ../src/graph/plotport.c\n../src/graph/plotport.c: In function 'rectticks':\n../src/graph/plotport.c:469: internal compiler error: Segmentation fault\nPlease submit a full bug report,\nwith preprocessed source if appropriate.\nSee <file:///usr/share/doc/gcc-4.3/README.Bugs> for instructions.\nmake[3]: *** [plotport.o] Error 1\nmake[3]: Leaving directory `/tmp/wstein/farm/sage-4.2.1.rc0/spkg/build/pari-2.3.3.p5/src/Olinux-i686'\nmake[2]: *** [gp] Error 2\nmake[2]: Leaving directory `/tmp/wstein/farm/sage-4.2.1.rc0/spkg/build/pari-2.3.3.p5/src'\nError building GP\n\nreal    0m9.951s\n```\n\n\nRecommendation: we revert to\n\n  http://wstein.org/home/wstein/patches/mpir-1.2.p8.spkg\n\nso we can release sage-4.2.1.    This is a subtle error and should be reported to the MPIR dev's. \n\nNote though that I can *build* sage with SAGE_FAT_BINARY=\"no\", then rebuild MPIR with SAGE_FAT_BINARY=\"yes\", and that seems to get around the compiler error.  But I haven't tried running the full test suite, and the fact that upgrading or rebuilding PARI would then result in an internal compiler error is *not* encouraging. \n\nAnother alternative would be to use GMP instead of MPIR for our general distribution version.   It might work better in this regard....\n\nIssue created by migration from https://trac.sagemath.org/ticket/7451\n\n",
+    "created_at": "2009-11-13T15:38:24Z",
+    "labels": [
+        "build",
+        "blocker",
+        "bug"
+    ],
+    "title": "Setting SAGE_FAT_BINARY causes internal compiler error building pari",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7451",
+    "user": "was"
+}
+```
 Assignee: tbd
 
 On all 32-bit linux systems, if I set SAGE_FAT_BINARY in sage-4.2.1.rc0, I get an internal compiler error when building PARI.  Since PARI hasn't been upgraded in a while, I think this is the fault of MPIR:
@@ -40,16 +50,42 @@ Note though that I can *build* sage with SAGE_FAT_BINARY="no", then rebuild MPIR
 
 Another alternative would be to use GMP instead of MPIR for our general distribution version.   It might work better in this regard....
 
+Issue created by migration from https://trac.sagemath.org/ticket/7451
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2009-12-14 02:32:38
+archive/issue_comments_062758.json:
+```json
+{
+    "body": "This should have been fixed by #7471",
+    "created_at": "2009-12-14T02:32:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7451",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7451#issuecomment-62758",
+    "user": "mhansen"
+}
+```
 
 This should have been fixed by #7471
 
 
+
 ---
 
-Comment by mhansen created at 2009-12-14 02:32:38
+archive/issue_comments_062759.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-12-14T02:32:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7451",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7451#issuecomment-62759",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

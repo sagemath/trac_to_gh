@@ -1,11 +1,21 @@
 # Issue 7085: fix this laurent series coercion bug
 
-Issue created by migration from https://trac.sagemath.org/ticket/7085
-
-Original creator: was
-
-Original creation time: 2009-09-30 23:10:18
-
+archive/issues_007085.json:
+```json
+{
+    "body": "Assignee: somebody\n\nCC:  mhampton\n\n\n```\n> Ok, I am completely baffled by the following situation:\n>\n> sage: A.<z>=LaurentSeriesRing(QQ)\n> sage: B.<w>=LaurentSeriesRing(A)\n> sage: z/w\n>  1\n> Maybe you will agree this is a bug?\n\nThat's definitely a coercion bug.   You can workaround it like this:\n\n\nsage: sage: A.<z>=LaurentSeriesRing(QQ)\nsage: sage: B.<w>=LaurentSeriesRing(A)\nsage: z/w\n1\nsage: (1/w) * z\nz*w^-1\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7085\n\n",
+    "created_at": "2009-09-30T23:10:18Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "bug"
+    ],
+    "title": "fix this laurent series coercion bug",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7085",
+    "user": "was"
+}
+```
 Assignee: somebody
 
 CC:  mhampton
@@ -32,10 +42,25 @@ z*w^-1
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7085
+
+
+
+
 
 ---
 
-Comment by mhampton created at 2011-01-11 01:56:31
+archive/issue_comments_058559.json:
+```json
+{
+    "body": "Before any division takes place, z is getting incorrectly coerced to w.  I think this is because in laurent_series_ring_element.pyx, in the LaurentSeries class __init__ method the represention (variable)^n*f is shifted by the code:\n\n```\n        else:\n            val = f.valuation()\n            if val == 0:\n                self.__n = n    # power of the variable\n                self.__u = f    # unit part\n            else:\n                self.__n = n + val\n                self.__u = f >> val\n```\n\n\nand I think that shifting is missing that different variables are involved.",
+    "created_at": "2011-01-11T01:56:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7085",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7085#issuecomment-58559",
+    "user": "mhampton"
+}
+```
 
 Before any division takes place, z is getting incorrectly coerced to w.  I think this is because in laurent_series_ring_element.pyx, in the LaurentSeries class __init__ method the represention (variable)^n*f is shifted by the code:
 
@@ -54,9 +79,20 @@ Before any division takes place, z is getting incorrectly coerced to w.  I think
 and I think that shifting is missing that different variables are involved.
 
 
+
 ---
 
-Comment by mhampton created at 2011-01-11 02:14:14
+archive/issue_comments_058560.json:
+```json
+{
+    "body": "Now I'm not sure the above code is the critical place, but this shows that its a coercion rather than a division issue:\n\n```\nsage: A.<z>=LaurentSeriesRing(QQ)\nsage: B.<w>=LaurentSeriesRing(A)\nsage: B(z)\nw\n```\n",
+    "created_at": "2011-01-11T02:14:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7085",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7085#issuecomment-58560",
+    "user": "mhampton"
+}
+```
 
 Now I'm not sure the above code is the critical place, but this shows that its a coercion rather than a division issue:
 
@@ -69,105 +105,261 @@ w
 
 
 
+
 ---
+
+archive/issue_comments_058561.json:
+```json
+{
+    "body": "Attachment\n\nSolves problem, but in a very hackish way.",
+    "created_at": "2011-01-11T06:06:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7085",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7085#issuecomment-58561",
+    "user": "mhampton"
+}
+```
 
 Attachment
 
 Solves problem, but in a very hackish way.
 
 
+
 ---
 
-Comment by mhampton created at 2011-01-11 06:09:10
+archive/issue_comments_058562.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2011-01-11T06:09:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7085",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7085#issuecomment-58562",
+    "user": "mhampton"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mhampton created at 2011-01-11 06:09:10
+archive/issue_comments_058563.json:
+```json
+{
+    "body": "The attach patch solves the problem, but not in a very robust way.  I suspect that Simon King's efforts at #8972 are related and might fix the problem in a more fundamental way.  I also hope that my patch rekindles interest in this module and that someone with a deeper understanding of the code can provide a better solution.\n\nOn the positive side, I think this doesn't break anything and solves the immediate problem.  Perhaps when #8972 is ready my workaround can be deleted.",
+    "created_at": "2011-01-11T06:09:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7085",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7085#issuecomment-58563",
+    "user": "mhampton"
+}
+```
 
 The attach patch solves the problem, but not in a very robust way.  I suspect that Simon King's efforts at #8972 are related and might fix the problem in a more fundamental way.  I also hope that my patch rekindles interest in this module and that someone with a deeper understanding of the code can provide a better solution.
 
 On the positive side, I think this doesn't break anything and solves the immediate problem.  Perhaps when #8972 is ready my workaround can be deleted.
 
 
+
 ---
 
-Comment by wjp created at 2011-01-11 19:03:19
+archive/issue_comments_058564.json:
+```json
+{
+    "body": "I suspect the prolem is that `laurent_series_ring_element.LaurentSeries.__init__` doesn't realize that the base ring may be a LaurentSeriesRing itself. (But I haven't thought about it too much yet.)",
+    "created_at": "2011-01-11T19:03:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7085",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7085#issuecomment-58564",
+    "user": "wjp"
+}
+```
 
 I suspect the prolem is that `laurent_series_ring_element.LaurentSeries.__init__` doesn't realize that the base ring may be a LaurentSeriesRing itself. (But I haven't thought about it too much yet.)
 
 
+
 ---
 
-Comment by wjp created at 2011-01-11 19:12:28
+archive/issue_comments_058565.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2011-01-11T19:12:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7085",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7085#issuecomment-58565",
+    "user": "wjp"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by wjp created at 2011-01-11 19:12:28
+archive/issue_comments_058566.json:
+```json
+{
+    "body": "This seems to fix it, but I haven't looked at the code closely enough to be sure it's correct:\n\nhttp://www.math.leidenuniv.nl/~wpalenst/sage/7085_attempt.patch",
+    "created_at": "2011-01-11T19:12:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7085",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7085#issuecomment-58566",
+    "user": "wjp"
+}
+```
 
 This seems to fix it, but I haven't looked at the code closely enough to be sure it's correct:
 
 http://www.math.leidenuniv.nl/~wpalenst/sage/7085_attempt.patch
 
 
+
 ---
 
-Comment by wjp created at 2011-01-11 19:39:39
+archive/issue_comments_058567.json:
+```json
+{
+    "body": "...but it unfortunately also breaks coercions between different `LaurentSeriesRings`.",
+    "created_at": "2011-01-11T19:39:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7085",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7085#issuecomment-58567",
+    "user": "wjp"
+}
+```
 
 ...but it unfortunately also breaks coercions between different `LaurentSeriesRings`.
 
 
+
 ---
 
-Comment by chapoton created at 2014-03-04 12:30:22
+archive/issue_comments_058568.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"laurent series\".",
+    "created_at": "2014-03-04T12:30:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7085",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7085#issuecomment-58568",
+    "user": "chapoton"
+}
+```
 
 Changing keywords from "" to "laurent series".
 
 
----
-
-Comment by pbruin created at 2014-05-04 22:40:30
-
-The attached branch fixes the bug by converting `LaurentSeriesRing` to the new coercion framework.  In the situation where _A_ -> _B_ are two rings with a coercion map between them, this allows us to define a coercion map from _A_ to _B_((_u_)) as the composition of the obvious maps _A_ -> _B_ -> _B_((_u_)).  The `_element_constructor_(x)` for _B_((_u_)) then only has to consider one new special case, namely where _x_ is in _B_.  It turns out that the easiest way to treat this case is to convert _x_ into a (constant) power series, which has to be done anyway due to the internal representation of Laurent series.
-
 
 ---
 
-Comment by pbruin created at 2014-05-04 22:40:30
+archive/issue_comments_058569.json:
+```json
+{
+    "body": "The attached branch fixes the bug by converting `LaurentSeriesRing` to the new coercion framework.  In the situation where *A* -> *B* are two rings with a coercion map between them, this allows us to define a coercion map from *A* to *B*((*u*)) as the composition of the obvious maps *A* -> *B* -> *B*((*u*)).  The `_element_constructor_(x)` for *B*((*u*)) then only has to consider one new special case, namely where *x* is in *B*.  It turns out that the easiest way to treat this case is to convert *x* into a (constant) power series, which has to be done anyway due to the internal representation of Laurent series.",
+    "created_at": "2014-05-04T22:40:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7085",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7085#issuecomment-58569",
+    "user": "pbruin"
+}
+```
+
+The attached branch fixes the bug by converting `LaurentSeriesRing` to the new coercion framework.  In the situation where *A* -> *B* are two rings with a coercion map between them, this allows us to define a coercion map from *A* to *B*((*u*)) as the composition of the obvious maps *A* -> *B* -> *B*((*u*)).  The `_element_constructor_(x)` for *B*((*u*)) then only has to consider one new special case, namely where *x* is in *B*.  It turns out that the easiest way to treat this case is to convert *x* into a (constant) power series, which has to be done anyway due to the internal representation of Laurent series.
+
+
+
+---
+
+archive/issue_comments_058570.json:
+```json
+{
+    "body": "Changing component from basic arithmetic to coercion.",
+    "created_at": "2014-05-04T22:40:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7085",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7085#issuecomment-58570",
+    "user": "pbruin"
+}
+```
 
 Changing component from basic arithmetic to coercion.
 
 
+
 ---
 
-Comment by pbruin created at 2014-05-04 22:40:30
+archive/issue_comments_058571.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2014-05-04T22:40:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7085",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7085#issuecomment-58571",
+    "user": "pbruin"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by tscrim created at 2014-05-05 20:48:55
+archive/issue_comments_058572.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2014-05-05T20:48:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7085",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7085#issuecomment-58572",
+    "user": "tscrim"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by tscrim created at 2014-05-05 20:48:55
+archive/issue_comments_058573.json:
+```json
+{
+    "body": "Very trivial change of removing a double colon `::`. LGTM otherwise.\n----\nNew commits:",
+    "created_at": "2014-05-05T20:48:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7085",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7085#issuecomment-58573",
+    "user": "tscrim"
+}
+```
 
 Very trivial change of removing a double colon `::`. LGTM otherwise.
 ----
 New commits:
 
 
+
 ---
 
-Comment by vbraun created at 2014-05-06 22:02:51
+archive/issue_comments_058574.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2014-05-06T22:02:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7085",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7085#issuecomment-58574",
+    "user": "vbraun"
+}
+```
 
 Resolution: fixed

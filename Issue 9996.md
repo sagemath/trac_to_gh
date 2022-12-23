@@ -1,22 +1,32 @@
 # Issue 9996: Tachyon does not even try to build on AIX
 
-Issue created by migration from https://trac.sagemath.org/ticket/9997
-
-Original creator: drkirkby
-
-Original creation time: 2010-09-24 02:18:12
-
+archive/issues_009996.json:
+```json
+{
+    "body": "Assignee: drkirkby\n\n## Hardware and software\n* IBM [RS/6000 7025 F50](http://publib.boulder.ibm.com/infocenter/pseries/v5r3/index.jsp?topic=/com.ibm.pseries.doc/hardware_docs/rs6000_7025f50series.htm)\n* 4 x 332 MHz 32-bit PowerPC CPUs\n* 3 GB RAM\n* A fairly wide mixture of disks sizes (3 x 9 GB, 1 x 18 GB, 2 x 36 GB and 1 x 73 GB)\n* DDS-4 tape drive \n* AIX 5.3 (A POSIX certified operating system)\n* gcc 4.2.4 downloaded from [pware](http://pware.hvcc.edu/)\n* sage-4.6.alpha1 (which has tachyon-0.98beta.p11)\n\n## The problem\n\n```\nWarning: Attempted to overwrite SAGE_ROOT environment variable\ntachyon-0.98beta.p11\nMachine:\nAIX aixbox 3 5 000245984C00\nDeleting directories from past builds of previous/current versions of tachyon-0.98beta.p11\nExtracting package /home/users/drkirkby/sage-4.6.alpha1/spkg/standard/tachyon-0.98beta.p11.spkg ...\n-rw-r--r--   1 drkirkby staff        509381 25 Jul 22:53 /home/users/drkirkby/sage-4.6.alpha1/spkg/standard/tachyon-0.98beta.p11.spkg\ntachyon-0.98beta.p11/\ntachyon-0.98beta.p11/dist/\n<SNIP>\ntachyon-0.98beta.p11/spkg-install\nFinished extraction\n****************************************************\nHost system\nuname -a:\nAIX aixbox 3 5 000245984C00\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: powerpc-ibm-aix5.3.0.0\nConfigured with: ../stage/gcc-4.2.4/configure --disable-shared --enable-threads=posix --prefix=/opt/pware --with-long-double-128 --with-\nmpfr=/opt/pware --with-gmp=/opt/pware\nThread model: aix\ngcc version 4.2.4\n****************************************************\nTachyon build for AIX not implemented (for SAGE) - please complain on sage-devel\n\nreal    0m0.218s\nuser    0m0.049s\nsys     0m0.045s\nsage: An error occurred while installing tachyon-0.98beta.p11\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9997\n\n",
+    "created_at": "2010-09-24T02:18:12Z",
+    "labels": [
+        "porting: AIX or HP-UX",
+        "minor",
+        "bug"
+    ],
+    "title": "Tachyon does not even try to build on AIX",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9996",
+    "user": "drkirkby"
+}
+```
 Assignee: drkirkby
 
 ## Hardware and software
- * IBM [RS/6000 7025 F50](http://publib.boulder.ibm.com/infocenter/pseries/v5r3/index.jsp?topic=/com.ibm.pseries.doc/hardware_docs/rs6000_7025f50series.htm)
- * 4 x 332 MHz 32-bit PowerPC CPUs
- * 3 GB RAM
- * A fairly wide mixture of disks sizes (3 x 9 GB, 1 x 18 GB, 2 x 36 GB and 1 x 73 GB)
- * DDS-4 tape drive 
- * AIX 5.3 (A POSIX certified operating system)
- * gcc 4.2.4 downloaded from [pware](http://pware.hvcc.edu/)
- * sage-4.6.alpha1 (which has tachyon-0.98beta.p11)
+* IBM [RS/6000 7025 F50](http://publib.boulder.ibm.com/infocenter/pseries/v5r3/index.jsp?topic=/com.ibm.pseries.doc/hardware_docs/rs6000_7025f50series.htm)
+* 4 x 332 MHz 32-bit PowerPC CPUs
+* 3 GB RAM
+* A fairly wide mixture of disks sizes (3 x 9 GB, 1 x 18 GB, 2 x 36 GB and 1 x 73 GB)
+* DDS-4 tape drive 
+* AIX 5.3 (A POSIX certified operating system)
+* gcc 4.2.4 downloaded from [pware](http://pware.hvcc.edu/)
+* sage-4.6.alpha1 (which has tachyon-0.98beta.p11)
 
 ## The problem
 
@@ -57,56 +67,126 @@ sage: An error occurred while installing tachyon-0.98beta.p11
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/9997
+
+
+
+
 
 ---
 
-Comment by mhampton created at 2010-09-24 11:55:17
+archive/issue_comments_100439.json:
+```json
+{
+    "body": "Could you please try this with the updated tachyon package from 5281?",
+    "created_at": "2010-09-24T11:55:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9996",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9996#issuecomment-100439",
+    "user": "mhampton"
+}
+```
 
 Could you please try this with the updated tachyon package from 5281?
 
 
+
 ---
 
-Comment by drkirkby created at 2010-09-24 12:36:59
+archive/issue_comments_100440.json:
+```json
+{
+    "body": "Replying to [comment:1 mhampton]:\n> Could you please try this with the updated tachyon package from 5281?\nSure. I'm at a Starbucks cafe now, so will try later. The RS/6000 is switched off now, so I can't remotely access it.",
+    "created_at": "2010-09-24T12:36:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9996",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9996#issuecomment-100440",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:1 mhampton]:
 > Could you please try this with the updated tachyon package from 5281?
 Sure. I'm at a Starbucks cafe now, so will try later. The RS/6000 is switched off now, so I can't remotely access it.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-09-25 10:13:00
+archive/issue_comments_100441.json:
+```json
+{
+    "body": "There are two reasons this is not working. \n* There's nothing in `SPKG.txt` to handle the case of AIX\n* There's no target in the file `Make-arch` that will work with a generic compiler on AIX. The targets all assume the use of IBM's compiler. \n\nTwo targets will be added for AIX, and since HP-UX will suffer the same problem, another two targets will be added for HP-UX. These 4 targets are:\n* `aix-generic`\n* `aix-generic-thr`\n* `hpux-generic`\n* `hpux-generic-thr`\n\nWe might as well try building with the threaded versions (aix-generic-thr and hpux-generic-thr) on both AIX and HP-UX.",
+    "created_at": "2010-09-25T10:13:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9996",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9996#issuecomment-100441",
+    "user": "drkirkby"
+}
+```
 
 There are two reasons this is not working. 
- * There's nothing in `SPKG.txt` to handle the case of AIX
- * There's no target in the file `Make-arch` that will work with a generic compiler on AIX. The targets all assume the use of IBM's compiler. 
+* There's nothing in `SPKG.txt` to handle the case of AIX
+* There's no target in the file `Make-arch` that will work with a generic compiler on AIX. The targets all assume the use of IBM's compiler. 
 
 Two targets will be added for AIX, and since HP-UX will suffer the same problem, another two targets will be added for HP-UX. These 4 targets are:
- * `aix-generic`
- * `aix-generic-thr`
- * `hpux-generic`
- * `hpux-generic-thr`
+* `aix-generic`
+* `aix-generic-thr`
+* `hpux-generic`
+* `hpux-generic-thr`
 
 We might as well try building with the threaded versions (aix-generic-thr and hpux-generic-thr) on both AIX and HP-UX.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-09-25 10:17:48
+archive/issue_comments_100442.json:
+```json
+{
+    "body": "I forgot to say, these 4 targets can be added to the Tachyon upgrade ticket #5281, so I am not intending to add a patch here, but rather this ticket can be closed when #5281 is closed. This assumes #5281 does not drag on for ages, as the ticket has been open for 20 months! If that ticket drags on and on, then I'll add patches to this ticket.",
+    "created_at": "2010-09-25T10:17:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9996",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9996#issuecomment-100442",
+    "user": "drkirkby"
+}
+```
 
 I forgot to say, these 4 targets can be added to the Tachyon upgrade ticket #5281, so I am not intending to add a patch here, but rather this ticket can be closed when #5281 is closed. This assumes #5281 does not drag on for ages, as the ticket has been open for 20 months! If that ticket drags on and on, then I'll add patches to this ticket.
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-02-06 09:55:27
+archive/issue_comments_100443.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2011-02-06T09:55:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9996",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9996#issuecomment-100443",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: duplicate
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-02-06 09:55:27
+archive/issue_comments_100444.json:
+```json
+{
+    "body": "Fixed by #5281.",
+    "created_at": "2011-02-06T09:55:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9996",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9996#issuecomment-100444",
+    "user": "jdemeyer"
+}
+```
 
 Fixed by #5281.

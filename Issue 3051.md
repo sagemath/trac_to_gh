@@ -1,11 +1,21 @@
 # Issue 3051: Weyl Characters
 
-Issue created by migration from https://trac.sagemath.org/ticket/3051
-
-Original creator: bump
-
-Original creation time: 2008-04-28 22:52:26
-
+archive/issues_003051.json:
+```json
+{
+    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nKeywords: Weyl characters, branching rules\n\nThis was announced here:\n\nhttp://groups.google.com/group/sage-combinat-devel/browse_thread/thread/74ed91d5153e6022?hl=en\n\nSee also:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/f713ed4bf3df8c22?hl=en\n\nAt Mike Hansen and Nicolas Thiery's suggestions the default separator is now \",\" and the separator is configurable. \n\nI believe all branching rules to maximal subgroups of compact Lie groups are implemented with two (large) exceptions: reducible subgroups like A1 x A1, and branching rules involving the exceptional groups. Mike requested that the branching be made a method, and the new syntax is something like\nchi.branch(B3,rule=\"symmetric\"). However I left Branch as a standalone program and the\nmain docstring is Branch? This of course can be changed. \n\nAn issue is that the caching is a substantial speedup but at a potentially large cost in memory. I hesitated to make it the default so cache=False is the default. But the user will be happier with cache=True.\n\nIt is possible to cache more aggressively. I have not implemented but know how to implement caching the results of multiplications instead of just the characters themselves.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3051\n\n",
+    "created_at": "2008-04-28T22:52:26Z",
+    "labels": [
+        "combinatorics",
+        "major",
+        "enhancement"
+    ],
+    "title": "Weyl Characters",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3051",
+    "user": "bump"
+}
+```
 Assignee: mhansen
 
 CC:  sage-combinat
@@ -32,15 +42,43 @@ It is possible to cache more aggressively. I have not implemented but know how t
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3051
+
+
+
+
 
 ---
+
+archive/issue_comments_021023.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-04-28T22:52:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21023",
+    "user": "bump"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by wdj created at 2008-04-29 00:03:19
+archive/issue_comments_021024.json:
+```json
+{
+    "body": "Is this based on 3.0? I got:\n\n\n```\n\napplying /Users/wdj/sagefiles/9607.patch\nabort: unable to find sage/combinat/crystals/crystals.py or sage/combinat/crystals/crystals.py for patching\n```\n",
+    "created_at": "2008-04-29T00:03:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21024",
+    "user": "wdj"
+}
+```
 
 Is this based on 3.0? I got:
 
@@ -53,9 +91,20 @@ abort: unable to find sage/combinat/crystals/crystals.py or sage/combinat/crysta
 
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-29 00:27:50
+archive/issue_comments_021025.json:
+```json
+{
+    "body": "Things work perfectly to me:\n\n```\nsage$ patch -p1 --dry-run < 9607.patch\\?format\\=raw\npatching file sage/combinat/crystals/crystals.py\npatching file sage/combinat/root_system/all.py\npatching file sage/combinat/root_system/cartan_type.py\npatching file sage/combinat/root_system/weyl_characters.py\n```\n\nThis is against 3.0.1.alpha1.\n\nCheers,\n\nMichael",
+    "created_at": "2008-04-29T00:27:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21025",
+    "user": "mabshoff"
+}
+```
 
 Things work perfectly to me:
 
@@ -74,25 +123,58 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by bump created at 2008-04-29 02:57:37
+archive/issue_comments_021026.json:
+```json
+{
+    "body": "It's a patch against 3.0.\n\nDan",
+    "created_at": "2008-04-29T02:57:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21026",
+    "user": "bump"
+}
+```
 
 It's a patch against 3.0.
 
 Dan
 
 
+
 ---
 
-Comment by wdj created at 2008-04-29 03:18:49
+archive/issue_comments_021027.json:
+```json
+{
+    "body": "Thanks. It's working now. I'm running sage -testall now but want to point out that the standard format for Python functions is all_lower_underscore. The function \"Branch\" is definitely non-standard naming.",
+    "created_at": "2008-04-29T03:18:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21027",
+    "user": "wdj"
+}
+```
 
 Thanks. It's working now. I'm running sage -testall now but want to point out that the standard format for Python functions is all_lower_underscore. The function "Branch" is definitely non-standard naming.
 
 
+
 ---
 
-Comment by wdj created at 2008-04-29 11:23:49
+archive/issue_comments_021028.json:
+```json
+{
+    "body": "Applies cleanly to a 3.0 base and passes sage -testall on an ubuntu 7.10amd64 machine. (It did not apply cleanly on a macbook but possibly I made a mistake somewhere.) \n\n(1) This character theory stuff is a *great* contribution and I think that SAGE is lucky to have someone of Dan's abilities contributing code like this. However, I have some unfavorable comments.\n\n(2) There is this capitalization issue. I think capitalizing the functions IrreducibleCharacterFreudenthal and Branch is confusing. (There may be other examples I am missing as well.) Classes are capitalized, not functions. Possibly you could drop \n\n```\nirreducible_character_freudenthal = IrreducibleCharacterFreudenthal\nbranch = Branch\n```\n\nat the bottom of the file but even that I think is not enough. \n\n(3) Actually, I think branch is too generic to use and would prefer something like branch_character or something. (Who knows, maybe someone will write a Tableau class for characters of the symmetric group and friends and wants to use it in their module too. Who wins?)\n\n(4) I think the documentation is great on one hand and lacking references on the other. I really hope the author will consider adding somewhere a REFERENCES: section to his docstrings (possibly to books or papers of his own) and specific (I mean page or Theorem or Definition numbers) citations thoughout his code. That way people will learn from it and be able to maintain it better, since with proper citations everyone will be one the same page.\n \nI realize these are a little excessive and am happy to be over-ruled. But I don't yet give this a positive review.",
+    "created_at": "2008-04-29T11:23:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21028",
+    "user": "wdj"
+}
+```
 
 Applies cleanly to a 3.0 base and passes sage -testall on an ubuntu 7.10amd64 machine. (It did not apply cleanly on a macbook but possibly I made a mistake somewhere.) 
 
@@ -114,9 +196,20 @@ at the bottom of the file but even that I think is not enough.
 I realize these are a little excessive and am happy to be over-ruled. But I don't yet give this a positive review.
 
 
+
 ---
 
-Comment by bump created at 2008-04-29 12:18:37
+archive/issue_comments_021029.json:
+```json
+{
+    "body": "I definitely agree that Branch -> branch_character should be done and the capitalization of the other function can be changed too. BTW Branch is globally exposed by IrreducibleCharacterFreudenthal is not (cf. all.py).\n\nThere is a question of whether Branch should be left globally exposed. Maybe this is not needed. The code in it could be moved to the branch method of Weyl character but since it's long and its docstring is long I left it alone.\n\nAbout (4), I'm less eager to start expanding the docstring further.\n\nI won't put up another patch yet since Mike Hansen may comment or revise it, and there could be further comments from others.\n\nIn view of Michael Abshoff's comments the caching should be left off by default and before considering turning it on by default it should be reimplemented  using weak references.",
+    "created_at": "2008-04-29T12:18:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21029",
+    "user": "bump"
+}
+```
 
 I definitely agree that Branch -> branch_character should be done and the capitalization of the other function can be changed too. BTW Branch is globally exposed by IrreducibleCharacterFreudenthal is not (cf. all.py).
 
@@ -129,35 +222,94 @@ I won't put up another patch yet since Mike Hansen may comment or revise it, and
 In view of Michael Abshoff's comments the caching should be left off by default and before considering turning it on by default it should be reimplemented  using weak references.
 
 
+
 ---
+
+archive/issue_comments_021030.json:
+```json
+{
+    "body": "Attachment\n\nname change: Branch -> branch_weyl_character",
+    "created_at": "2008-04-29T16:09:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21030",
+    "user": "bump"
+}
+```
 
 Attachment
 
 name change: Branch -> branch_weyl_character
 
 
+
 ---
 
-Comment by bump created at 2008-04-29 16:11:31
+archive/issue_comments_021031.json:
+```json
+{
+    "body": "I added a second small patch that makes the name changes Branch -> branch_weyl_character and IrreducibleCharacterFreudenthal -> irreducible_character_freudenthal, addressing points (2) and (3) of David's review.",
+    "created_at": "2008-04-29T16:11:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21031",
+    "user": "bump"
+}
+```
 
 I added a second small patch that makes the name changes Branch -> branch_weyl_character and IrreducibleCharacterFreudenthal -> irreducible_character_freudenthal, addressing points (2) and (3) of David's review.
 
 
+
 ---
 
-Comment by mhansen created at 2008-04-29 19:39:13
+archive/issue_comments_021032.json:
+```json
+{
+    "body": "I'll go through and get it 100% doctested so it can go in.",
+    "created_at": "2008-04-29T19:39:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21032",
+    "user": "mhansen"
+}
+```
 
 I'll go through and get it 100% doctested so it can go in.
 
 
+
 ---
+
+archive/issue_comments_021033.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-05-02T14:53:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21033",
+    "user": "bump"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by bump created at 2008-05-02 14:57:27
+archive/issue_comments_021034.json:
+```json
+{
+    "body": "I added 9609.patch.\n\nThis gives doctests for most methods.\n\nRemoves an unimplemented method that was accidentally left.\n\nCorrects a minor bug (`__repr__` misspelled somewhere).",
+    "created_at": "2008-05-02T14:57:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21034",
+    "user": "bump"
+}
+```
 
 I added 9609.patch.
 
@@ -168,7 +320,20 @@ Removes an unimplemented method that was accidentally left.
 Corrects a minor bug (`__repr__` misspelled somewhere).
 
 
+
 ---
+
+archive/issue_comments_021035.json:
+```json
+{
+    "body": "Attachment\n\nThe patch 9610.patch completes the doctesting to 100%.\n\nI found 2 bugs which are fixed. In _add_ some code had the wrong\nindent level and this has been fixed. and `_neg_` was misspelled\nsomewhere.\n\nDan",
+    "created_at": "2008-05-02T21:53:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21035",
+    "user": "bump"
+}
+```
 
 Attachment
 
@@ -181,7 +346,20 @@ somewhere.
 Dan
 
 
+
 ---
+
+archive/issue_comments_021036.json:
+```json
+{
+    "body": "Attachment\n\nAdded 9611.patch.\n\nMinor bugfixes and improvements.\n\nThe bugfixes are in WeylCharacterRing's `__call__` method, which worked reasonably well over ZZ but not over a polynomial ring. After the patch, we first intercept integers, then try to coerce elements into the base ring, but we check the parent first since it is possible to coerce a list of integers into a polynomial ring.  In other words, we don't want to break calls like `R([2,1,0])`.\n\nI found that changing the way `repr_lincomb` is called resulted in nicer output.\n\nA parent method is added to elements.\n\nMore doctests are added in response to the problems I found in __call__ and there are revisions to old doctests in response to the revised lincomb call.",
+    "created_at": "2008-05-04T17:17:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21036",
+    "user": "bump"
+}
+```
 
 Attachment
 
@@ -198,14 +376,38 @@ A parent method is added to elements.
 More doctests are added in response to the problems I found in __call__ and there are revisions to old doctests in response to the revised lincomb call.
 
 
+
 ---
+
+archive/issue_comments_021037.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-05-06T18:56:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21037",
+    "user": "bump"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by bump created at 2008-05-06 19:01:15
+archive/issue_comments_021038.json:
+```json
+{
+    "body": "I added a patch called 9673.patch.\n\nThis reimplements the Freudenthal multiplicity formula. \n\nFormerly, weight multiplicities are calculated in a region containing the positive Weyl chamber, then copied around using the action of the Weyl group. In the reimplementation, all weights are calculated using the recursion relations, without using the Weyl group action. This turns out to be much faster, as well as simpler.\n\nOne test result was changed because the weights of B3(spin) are calculated in a different order.",
+    "created_at": "2008-05-06T19:01:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21038",
+    "user": "bump"
+}
+```
 
 I added a patch called 9673.patch.
 
@@ -216,19 +418,56 @@ Formerly, weight multiplicities are calculated in a region containing the positi
 One test result was changed because the weights of B3(spin) are calculated in a different order.
 
 
+
 ---
+
+archive/issue_comments_021039.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-05-07T21:54:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21039",
+    "user": "bump"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_021040.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-05-07T21:55:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21040",
+    "user": "bump"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by bump created at 2008-05-07 22:03:42
+archive/issue_comments_021041.json:
+```json
+{
+    "body": "The last patch, 9674.patch is explained here:\n\nhttp://groups.google.com/group/sage-combinat-devel/msg/82dd8255caa108cf\n\nThere are a lot of patches so I posted a single patch 3051-unified.patch\nthat is the union of the other patches.\n\nI have changed the patch summary from [with patch, positive review pending changes]\nto [with patch, needs review (again)] and hope that David Joyner and Mike Hansen\ncan look at it again.",
+    "created_at": "2008-05-07T22:03:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21041",
+    "user": "bump"
+}
+```
 
 The last patch, 9674.patch is explained here:
 
@@ -242,28 +481,74 @@ to [with patch, needs review (again)] and hope that David Joyner and Mike Hansen
 can look at it again.
 
 
+
 ---
 
-Comment by wdj created at 2008-05-08 11:16:02
+archive/issue_comments_021042.json:
+```json
+{
+    "body": "This passes sage -testall and applies cleanly. I'll look at it some more later this morning but wanted to post that info since it might save some time for anyone else looking at it.",
+    "created_at": "2008-05-08T11:16:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21042",
+    "user": "wdj"
+}
+```
 
 This passes sage -testall and applies cleanly. I'll look at it some more later this morning but wanted to post that info since it might save some time for anyone else looking at it.
 
 
+
 ---
 
-Comment by bump created at 2008-05-08 12:13:33
+archive/issue_comments_021043.json:
+```json
+{
+    "body": "I see I inadvertently omitted the changes to crystals.py from 9607.patch when I made the unified patch. I think it best if I leave those out for now since David has already run testall. If this patch can be reviewed as it is I can make another ticket later for the changes to crystals.py.",
+    "created_at": "2008-05-08T12:13:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21043",
+    "user": "bump"
+}
+```
 
 I see I inadvertently omitted the changes to crystals.py from 9607.patch when I made the unified patch. I think it best if I leave those out for now since David has already run testall. If this patch can be reviewed as it is I can make another ticket later for the changes to crystals.py.
 
 
+
 ---
 
-Comment by wdj created at 2008-05-08 13:13:34
+archive/issue_comments_021044.json:
+```json
+{
+    "body": "Don't worry about that. If you want to make a new unified patch, do so and let me know. I'll re-run sage -testall.",
+    "created_at": "2008-05-08T13:13:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21044",
+    "user": "wdj"
+}
+```
 
 Don't worry about that. If you want to make a new unified patch, do so and let me know. I'll re-run sage -testall.
 
 
+
 ---
+
+archive/issue_comments_021045.json:
+```json
+{
+    "body": "Attachment\n\n> Don't worry about that. If you want to make a new unified patch, do so and let me know. I'll re-run sage -testall.\n\nThanks.\n\nI made a separate patch called 3051-1.patch containing just the changes to\ncrystals.py. This goes on top of 3051-1.unified.",
+    "created_at": "2008-05-08T14:41:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21045",
+    "user": "bump"
+}
+```
 
 Attachment
 
@@ -275,9 +560,20 @@ I made a separate patch called 3051-1.patch containing just the changes to
 crystals.py. This goes on top of 3051-1.unified.
 
 
+
 ---
 
-Comment by wdj created at 2008-05-08 17:38:07
+archive/issue_comments_021046.json:
+```json
+{
+    "body": "This patch 3051-1, applied on top of the 3051-unified patch, applies cleanly to 3.0.1. sage -testall \nfailed on one module but then testing that module separately passes. \n\n\n```\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  devel/sage/sage/rings/polynomial/multi_polynomial_ring_generic.pyx\nTotal time for all tests: 5283.6 seconds\nPlease see /home/wdj/wdj/sagefiles/sage-3.0.1/tmp/test.log for the complete log from this test.\nwdj@wooster:~/wdj/sagefiles/sage-3.0.1$ ./sage -t  devel/sage/sage/rings/polynomial/multi_polynomial_ring_generic.pyx\nsage -t  devel/sage/sage/rings/polynomial/multi_polynomial_ring_generic.pyx\n         [4.8 s]\n\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 4.8 seconds\n```\n\nI'm guessing that this failure is spurious. (It was done on an older machine, which has had\nlots of such failures before.) I'll keep looking at this patch, but wanted to report this issue ASAP.",
+    "created_at": "2008-05-08T17:38:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21046",
+    "user": "wdj"
+}
+```
 
 This patch 3051-1, applied on top of the 3051-unified patch, applies cleanly to 3.0.1. sage -testall 
 failed on one module but then testing that module separately passes. 
@@ -304,9 +600,20 @@ I'm guessing that this failure is spurious. (It was done on an older machine, wh
 lots of such failures before.) I'll keep looking at this patch, but wanted to report this issue ASAP.
 
 
+
 ---
 
-Comment by wdj created at 2008-05-08 18:09:48
+archive/issue_comments_021047.json:
+```json
+{
+    "body": "More comments.\n\n1. The class name Weight is IMHO too generic and is not consistent with SAGE's naming \"standard\". Better would be WeightRingElement (or WeightAlgebraElement?).\n\n2. Perhaps this is a very minor point since this appears common with lots of other modules, but I think that legally when you simply license code under the GPL, the default is the latest version (which of course is GPLv3). Better is to specify \"GPLv2 or later (at your preference)\".\n\n3. IMHO, this is a fantastic contribution by a leader in the field. Not to look a gift horse in the mouth, but I repeat that references to the literature would add value. I don't want to make a big deal of it though. If no one else does, I will add them myself later when I can get near my repn theory books (due to some home construction, those books are behind mounds of furniture at the moment).\n\nSo, modulo (1) above, I give this a positive review, but would like to hear what Mike Hansen has to say as well before renaming the Summary.",
+    "created_at": "2008-05-08T18:09:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21047",
+    "user": "wdj"
+}
+```
 
 More comments.
 
@@ -319,9 +626,20 @@ More comments.
 So, modulo (1) above, I give this a positive review, but would like to hear what Mike Hansen has to say as well before renaming the Summary.
 
 
+
 ---
 
-Comment by bump created at 2008-05-08 20:33:52
+archive/issue_comments_021048.json:
+```json
+{
+    "body": "> 1. The class name Weight is IMHO too generic and is not consistent with SAGE's naming \"standard\". Better would be WeightRingElement? (or WeightAlgebraElement??).\n\nI agree and will change it to WeightRingElement.\n\n> 2. Perhaps this is a very minor point since this appears common with lots of other modules, but I think that legally when you simply license code under the GPL, the default is the latest version (which of course is GPLv3). Better is to specify \"GPLv2 or later (at your preference)\".\n\nThe copyright header is the same as the other files in the combinat directory.\n\n> 3. IMHO, this is a fantastic contribution by a leader in the field. Not to look a gift horse in the mouth, but I repeat that references to the literature would add value. I don't want to make a big deal of it though. If no one else does, I will add them myself later when I can get near my repn theory books (due to some home construction, those books are behind mounds of furniture at the moment).\n\nDynkin's paper is already cited, where maximal subgroups of Lie groups are classified. Also Humpfrey's book on Lie algebras is already cited. However I will add some references. I can add references to books of Goodman and Wallach and Bump and a further citation of Humpfrey's book(for highest weight theory) and (for branching rules) papers of Howe, Chye and Willenbring and of R.C. King.\n\nCan you (or anyone) think of anything else that would be good to cite?\n\nI'll put up another patch (I hope by 5PM PDT) addressing (1) and (3) but not (2) since the comment applies systematically in combinat/.",
+    "created_at": "2008-05-08T20:33:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21048",
+    "user": "bump"
+}
+```
 
 > 1. The class name Weight is IMHO too generic and is not consistent with SAGE's naming "standard". Better would be WeightRingElement? (or WeightAlgebraElement??).
 
@@ -340,19 +658,56 @@ Can you (or anyone) think of anything else that would be good to cite?
 I'll put up another patch (I hope by 5PM PDT) addressing (1) and (3) but not (2) since the comment applies systematically in combinat/.
 
 
+
 ---
+
+archive/issue_comments_021049.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-05-09T00:10:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21049",
+    "user": "bump"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_021050.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-05-09T00:11:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21050",
+    "user": "bump"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by bump created at 2008-05-09 00:19:28
+archive/issue_comments_021051.json:
+```json
+{
+    "body": "The patch 3051-2.patch is in response to items (1) and (2) of David's report.  I changed Weight -> WeightRingElement, and added some more references. \n\nThe patch 3051-2.patch goes on top of 3051-unifed.patch and 3041-1.patch.\n\nThe patch 3051-unified-1.patch is a single unified patch containing all changes. It thus supercedes 3051-unified.patch.",
+    "created_at": "2008-05-09T00:19:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21051",
+    "user": "bump"
+}
+```
 
 The patch 3051-2.patch is in response to items (1) and (2) of David's report.  I changed Weight -> WeightRingElement, and added some more references. 
 
@@ -361,46 +716,116 @@ The patch 3051-2.patch goes on top of 3051-unifed.patch and 3041-1.patch.
 The patch 3051-unified-1.patch is a single unified patch containing all changes. It thus supercedes 3051-unified.patch.
 
 
+
 ---
 
-Comment by wdj created at 2008-05-09 10:36:25
+archive/issue_comments_021052.json:
+```json
+{
+    "body": "This patch 3051-unified-1.patch applied cleanly to 3.0.1 and passes sage -testall. I give this a very positive review. Very nice work. I think Mike Hansen should look at it since it is based on some work he has done or at least knows better than I. However, since it is around the end of the semester, I 'm not sure if he will have time to do that before 3.0.2 is released. So, I changed the summary to \"one positive review\".",
+    "created_at": "2008-05-09T10:36:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21052",
+    "user": "wdj"
+}
+```
 
 This patch 3051-unified-1.patch applied cleanly to 3.0.1 and passes sage -testall. I give this a very positive review. Very nice work. I think Mike Hansen should look at it since it is based on some work he has done or at least knows better than I. However, since it is around the end of the semester, I 'm not sure if he will have time to do that before 3.0.2 is released. So, I changed the summary to "one positive review".
 
 
+
 ---
+
+archive/issue_comments_021053.json:
+```json
+{
+    "body": "Attachment\n\nGoes on top of 3051-unified-1.patch. Revises the __repr to avoid string notation and adds _coerce_impl methods",
+    "created_at": "2008-05-17T04:56:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21053",
+    "user": "bump"
+}
+```
 
 Attachment
 
 Goes on top of 3051-unified-1.patch. Revises the __repr to avoid string notation and adds _coerce_impl methods
 
 
+
 ---
 
-Comment by bump created at 2008-05-17 05:01:36
+archive/issue_comments_021054.json:
+```json
+{
+    "body": "Both David Joyner and Mike Hansen disliked the string notation followed in earlier versions of the patch. This has been removed and replaced by Mike's suggestion, `A2(1,1,0)` for example.\n\nAlso, _coerce_impl methods were added to WeylCharacterRing and WeightRing, so that now the two rings can *always* parse their own output.",
+    "created_at": "2008-05-17T05:01:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21054",
+    "user": "bump"
+}
+```
 
 Both David Joyner and Mike Hansen disliked the string notation followed in earlier versions of the patch. This has been removed and replaced by Mike's suggestion, `A2(1,1,0)` for example.
 
 Also, _coerce_impl methods were added to WeylCharacterRing and WeightRing, so that now the two rings can *always* parse their own output.
 
 
+
 ---
+
+archive/issue_comments_021055.json:
+```json
+{
+    "body": "Attachment\n\nUnified patch equivalent to 3051-unified-1.patch plus 3051-3.patch plus 3051-4.patch",
+    "created_at": "2008-05-17T14:26:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21055",
+    "user": "bump"
+}
+```
 
 Attachment
 
 Unified patch equivalent to 3051-unified-1.patch plus 3051-3.patch plus 3051-4.patch
 
 
+
 ---
 
-Comment by bump created at 2008-05-17 14:28:00
+archive/issue_comments_021056.json:
+```json
+{
+    "body": "I realized that I'd forgotten to revise the doctest in crystals.py after the notational change. The patch 3051-4.patch fixes the doctest. I revised and reposted 3051-unified-2.patch accordingly.",
+    "created_at": "2008-05-17T14:28:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21056",
+    "user": "bump"
+}
+```
 
 I realized that I'd forgotten to revise the doctest in crystals.py after the notational change. The patch 3051-4.patch fixes the doctest. I revised and reposted 3051-unified-2.patch accordingly.
 
 
+
 ---
 
-Comment by wdj created at 2008-05-17 14:51:44
+archive/issue_comments_021057.json:
+```json
+{
+    "body": "Really, or someone should look at this instead of me but to help out a little, I thought I'd at least do some testing. Oddly enough, I had trouble applying it to a newly made clone:\n\n\n```\nwdj@wooster:/mnt/drive_hda1/sagefiles/sage-3.0.2.alpha0$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.0.2.alpha1, Release Date: 2008-05-11                |\n| Type notebook() for the GUI, and license() for information.        |\nLoading SAGE library. Current Mercurial branch is: weyl2\nsage: hg_sage.apply(\"/home/wdj/wdj/sagefiles/3051-unified-2.patch\")\ncd \"/mnt/drive_hda1/sagefiles/sage-3.0.2.alpha0/devel/sage\" && hg status\ncd \"/mnt/drive_hda1/sagefiles/sage-3.0.2.alpha0/devel/sage\" && hg status\ncd \"/mnt/drive_hda1/sagefiles/sage-3.0.2.alpha0/devel/sage\" && hg import   \"/home/wdj/wdj/sagefiles/3051-unified-2.patch\"\napplying /home/wdj/wdj/sagefiles/3051-unified-2.patch\npatching file sage/combinat/crystals/crystals.py\nHunk #1 FAILED at 103\nHunk #2 succeeded at 231 with fuzz 2 (offset 1 line).\n1 out of 2 hunks FAILED -- saving rejects to file sage/combinat/crystals/crystals.py.rej\nfile sage/combinat/root_system/weyl_characters.py already exists\n1 out of 1 hunk FAILED -- saving rejects to file sage/combinat/root_system/weyl_characters.py.rej\nabort: patch failed to apply\nsage:                               \n```\n\n\nThe previous version of this patch applied and  passed sage -testall except for crystal, as you already pointed out.",
+    "created_at": "2008-05-17T14:51:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21057",
+    "user": "wdj"
+}
+```
 
 Really, or someone should look at this instead of me but to help out a little, I thought I'd at least do some testing. Oddly enough, I had trouble applying it to a newly made clone:
 
@@ -431,9 +856,20 @@ sage:
 The previous version of this patch applied and  passed sage -testall except for crystal, as you already pointed out.
 
 
+
 ---
 
-Comment by bump created at 2008-05-17 18:20:29
+archive/issue_comments_021058.json:
+```json
+{
+    "body": "You must have had a leftover weyl_characters.py in your directory since I don't think this file is in\nthe repository. At least it's not in sage-3.0.2.alpha0. The patch creates this file.\n\n\n```\n1 out of 2 hunks FAILED -- saving rejects to file sage/combinat/crystals/crystals.py.rej\nfile sage/combinat/root_system/weyl_characters.py already exists\n```\n",
+    "created_at": "2008-05-17T18:20:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21058",
+    "user": "bump"
+}
+```
 
 You must have had a leftover weyl_characters.py in your directory since I don't think this file is in
 the repository. At least it's not in sage-3.0.2.alpha0. The patch creates this file.
@@ -446,29 +882,75 @@ file sage/combinat/root_system/weyl_characters.py already exists
 
 
 
+
 ---
+
+archive/issue_comments_021059.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-05-18T00:05:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21059",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2008-05-18 00:07:15
+archive/issue_comments_021060.json:
+```json
+{
+    "body": "Sorry it's taken so long -- I've been awfully busy this week. I've attached a patch which makes a few minor changes to docstrings / doctests.\n\nApply only the last two patches.",
+    "created_at": "2008-05-18T00:07:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21060",
+    "user": "mhansen"
+}
+```
 
 Sorry it's taken so long -- I've been awfully busy this week. I've attached a patch which makes a few minor changes to docstrings / doctests.
 
 Apply only the last two patches.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-18 00:13:47
+archive/issue_comments_021061.json:
+```json
+{
+    "body": "Merged 3051-unified-2.patch and 3051-doctest.patch in Sage 3.0.2.alpha1",
+    "created_at": "2008-05-18T00:13:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21061",
+    "user": "mabshoff"
+}
+```
 
 Merged 3051-unified-2.patch and 3051-doctest.patch in Sage 3.0.2.alpha1
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-18 00:13:47
+archive/issue_comments_021062.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-05-18T00:13:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3051",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3051#issuecomment-21062",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

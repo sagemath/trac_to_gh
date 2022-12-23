@@ -1,11 +1,21 @@
 # Issue 6404: Typeseting for conjugate() of symbolic function is inadequate
 
-Issue created by migration from https://trac.sagemath.org/ticket/6404
-
-Original creator: gmhossain
-
-Original creation time: 2009-06-25 14:22:31
-
+archive/issues_006404.json:
+```json
+{
+    "body": "In current Sage (4.0.2), while typesetting conjugate() of\nan symbolic expression, latex symbol \"\\bar\" is used\n\n```\nsage: latex(x.conjugate())\n\\bar{x}\n```\n\n\nThe problem with \"\\bar\" is that it is of fixed width and not scalable. For example, this is inadequate for symbolic functions\n\n\n```\nsage: x,y=var('x,y')\nsage: f = function('psi',x,y)\nsage: latex(f.conjugate())\n\\bar{\\psi\\left(x, y\\right)\n```\n\n\nA better solution is to use \"\\overline\" instead of \"\\bar\".\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6404\n\n",
+    "created_at": "2009-06-25T14:22:31Z",
+    "labels": [
+        "symbolics",
+        "major",
+        "bug"
+    ],
+    "title": "Typeseting for conjugate() of symbolic function is inadequate",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6404",
+    "user": "gmhossain"
+}
+```
 In current Sage (4.0.2), while typesetting conjugate() of
 an symbolic expression, latex symbol "\bar" is used
 
@@ -29,38 +39,99 @@ sage: latex(f.conjugate())
 A better solution is to use "\overline" instead of "\bar".
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6404
+
+
+
+
 
 ---
+
+archive/issue_comments_051431.json:
+```json
+{
+    "body": "Attachment\n\ndoctest fixes for conjugate typesetting change",
+    "created_at": "2009-07-28T12:10:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6404",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6404#issuecomment-51431",
+    "user": "burcin"
+}
+```
 
 Attachment
 
 doctest fixes for conjugate typesetting change
 
 
+
 ---
 
-Comment by burcin created at 2009-07-28 12:14:14
+archive/issue_comments_051432.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-07-28T12:14:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6404",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6404#issuecomment-51432",
+    "user": "burcin"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by burcin created at 2009-07-28 12:14:14
+archive/issue_comments_051433.json:
+```json
+{
+    "body": "I have a fix for this in my local pynac tree. I'll make a new pynac package available soon, with some other bug fixes.",
+    "created_at": "2009-07-28T12:14:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6404",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6404#issuecomment-51433",
+    "user": "burcin"
+}
+```
 
 I have a fix for this in my local pynac tree. I'll make a new pynac package available soon, with some other bug fixes.
 
 
+
 ---
 
-Comment by burcin created at 2009-07-28 12:14:14
+archive/issue_comments_051434.json:
+```json
+{
+    "body": "Set assignee to burcin.",
+    "created_at": "2009-07-28T12:14:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6404",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6404#issuecomment-51434",
+    "user": "burcin"
+}
+```
 
 Set assignee to burcin.
 
 
+
 ---
 
-Comment by burcin created at 2009-08-01 02:27:52
+archive/issue_comments_051435.json:
+```json
+{
+    "body": "New pynac package is available here:\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.8.p2.spkg\n\nBesides this issue, it includes fixes for #6401, #6243 and #6377. Please apply the patches from those issues too before doctesting.",
+    "created_at": "2009-08-01T02:27:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6404",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6404#issuecomment-51435",
+    "user": "burcin"
+}
+```
 
 New pynac package is available here:
 
@@ -69,30 +140,63 @@ http://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.8.p2.spkg
 Besides this issue, it includes fixes for #6401, #6243 and #6377. Please apply the patches from those issues too before doctesting.
 
 
+
 ---
 
-Comment by gmhossain created at 2009-08-02 19:18:42
+archive/issue_comments_051436.json:
+```json
+{
+    "body": "Looks OK to me.\n\nNote: I am giving partial positive review because I tested this patch against my stable sage-4.1. So if it applies cleanly on Sage-4.1.1.rc1 then that would be full positive from me.",
+    "created_at": "2009-08-02T19:18:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6404",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6404#issuecomment-51436",
+    "user": "gmhossain"
+}
+```
 
 Looks OK to me.
 
 Note: I am giving partial positive review because I tested this patch against my stable sage-4.1. So if it applies cleanly on Sage-4.1.1.rc1 then that would be full positive from me.
 
 
+
 ---
 
-Comment by mvngu created at 2009-08-03 00:28:00
+archive/issue_comments_051437.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-08-03T00:28:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6404",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6404#issuecomment-51437",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mvngu created at 2009-08-03 00:28:00
+archive/issue_comments_051438.json:
+```json
+{
+    "body": "I applied patches in the following order:\n1. the spkg `pynac-0.1.8.p2.spkg`\n2. `trac_6404-conjugate_typesetting.patch`\n3. `trac_6401-real_imag_typesetting.patch`\n4. `trac_6377-exp_infinity.patch`\n5. `trac_6243-fderivative_hash.patch`\nAll doctests pass in my merge tree. So I'm changing #6404, #6401, #6377 and #6243 to positive review as per Golam's request.",
+    "created_at": "2009-08-03T00:28:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6404",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6404#issuecomment-51438",
+    "user": "mvngu"
+}
+```
 
 I applied patches in the following order:
- 1. the spkg `pynac-0.1.8.p2.spkg`
- 1. `trac_6404-conjugate_typesetting.patch`
- 1. `trac_6401-real_imag_typesetting.patch`
- 1. `trac_6377-exp_infinity.patch`
- 1. `trac_6243-fderivative_hash.patch`
+1. the spkg `pynac-0.1.8.p2.spkg`
+2. `trac_6404-conjugate_typesetting.patch`
+3. `trac_6401-real_imag_typesetting.patch`
+4. `trac_6377-exp_infinity.patch`
+5. `trac_6243-fderivative_hash.patch`
 All doctests pass in my merge tree. So I'm changing #6404, #6401, #6377 and #6243 to positive review as per Golam's request.

@@ -1,11 +1,21 @@
 # Issue 6421: make a symbolic arctan2 function
 
-Issue created by migration from https://trac.sagemath.org/ticket/6421
-
-Original creator: burcin
-
-Original creation time: 2009-06-26 12:22:36
-
+archive/issues_006421.json:
+```json
+{
+    "body": "From sage-devel:\n\n\n```\n> On Thu, Jun 25, 2009 at 11:31 PM, Nick\n> Alexander<ncalexander@gmail.com> wrote:\n> >\n> > Can someone verify that this is a bug? \u00a0Any hope a fix? \u00a0(This is\n> > with sage-4.0.2 on sage.math.)\n> >\n> > {{{\n> > sage: complex_plot((x^2 + I).sqrt().real_part(), (-2, 2), (-2, 2))\n> > ---------------------------------------------------------------------------\n> ...\n> > RuntimeError: cannot find SFunction in table\n> > }}}\n> \n> It seems, its not just complex_plot issue. It is happening for other\n> plots. For example,  the following works fine in 3.4 but fails with\n> the same error in 4.0.2\n> -----\n> sage: x,y=var('x,y'); plot3d( log(x+I*y).imag(), (x,-2,2), (y,-2,2))\n> ...\n> RuntimeError: cannot find SFunction in table\n> -----\n\nsage: %debug\n> /home/burcin/sage/sage-4.0.2.rc0/expression.pyx(3115)sage.symbolic.expression.Expression.operator\n> (sage/symbolic/expression.cpp:15268)()\n\nipdb> u\n> /home/burcin/sage/sage-4.0.2.rc0/local/lib/python2.5/site-packages/sage/symbolic/expression_conversions.py(206)__call__()\n    205 \n--> 206         operator = ex.operator()\n    207         if operator is None:\n\nipdb> print ex\narctan2(real_part(y) + imag_part(x), real_part(x) - imag_part(y))\n\n\nBoth of these fail because Sage doesn't define a symbolic arctan2\nfunction. There is instead a simple wrapper around arctan in\nsage/functions/trig.py:\n\nsage: arctan2(x,y)\narctan(x/y)\n\n```\n\n\nIt's possible that this worked on 4.0, and I broke it with #6244.\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6421\n\n",
+    "created_at": "2009-06-26T12:22:36Z",
+    "labels": [
+        "symbolics",
+        "major",
+        "bug"
+    ],
+    "title": "make a symbolic arctan2 function",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6421",
+    "user": "burcin"
+}
+```
 From sage-devel:
 
 
@@ -61,29 +71,79 @@ It's possible that this worked on 4.0, and I broke it with #6244.
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6421
+
+
+
+
 
 ---
+
+archive/issue_comments_051553.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-06-26T17:16:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6421",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6421#issuecomment-51553",
+    "user": "kcrisman"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by kcrisman created at 2009-06-26 17:38:35
+archive/issue_comments_051554.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-06-26T17:38:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6421",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6421#issuecomment-51554",
+    "user": "kcrisman"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-06-26 17:38:35
+archive/issue_comments_051555.json:
+```json
+{
+    "body": "Set assignee to kcrisman.",
+    "created_at": "2009-06-26T17:38:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6421",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6421#issuecomment-51555",
+    "user": "kcrisman"
+}
+```
 
 Set assignee to kcrisman.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-06-26 17:38:35
+archive/issue_comments_051556.json:
+```json
+{
+    "body": "Okay, this seems to fix everything and passes tests on trig.py and symbolic/expression.py and /function.py.    I made the function consistent with Maxima, Pynac, and Python math.  Only issue, which I would really appreciate some insight on but should not prevent it from going in, is the following:\n\n```\nsage: latex(arctan2)\n\\arctan\nsage: var('y')\ny\nsage: latex(arctan2(y,x))\n\\mbox{atan2}\\left(y,x\\right)\n```\n\nOf course, this doesn't fix the question about plotting, but now the failure on that will be clearer.",
+    "created_at": "2009-06-26T17:38:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6421",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6421#issuecomment-51556",
+    "user": "kcrisman"
+}
+```
 
 Okay, this seems to fix everything and passes tests on trig.py and symbolic/expression.py and /function.py.    I made the function consistent with Maxima, Pynac, and Python math.  Only issue, which I would really appreciate some insight on but should not prevent it from going in, is the following:
 
@@ -99,31 +159,77 @@ sage: latex(arctan2(y,x))
 Of course, this doesn't fix the question about plotting, but now the failure on that will be clearer.
 
 
+
 ---
+
+archive/issue_comments_051557.json:
+```json
+{
+    "body": "Attachment\n\nminor doctest fixes in `sage.symbolic.random_tests`",
+    "created_at": "2009-06-27T16:03:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6421",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6421#issuecomment-51557",
+    "user": "burcin"
+}
+```
 
 Attachment
 
 minor doctest fixes in `sage.symbolic.random_tests`
 
 
+
 ---
 
-Comment by burcin created at 2009-06-27 16:10:22
+archive/issue_comments_051558.json:
+```json
+{
+    "body": "Looks good, thanks for this.\n\nI added a small patch with doctest fixes in `sage/symbolic/random_tests.py`.",
+    "created_at": "2009-06-27T16:10:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6421",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6421#issuecomment-51558",
+    "user": "burcin"
+}
+```
 
 Looks good, thanks for this.
 
 I added a small patch with doctest fixes in `sage/symbolic/random_tests.py`.
 
 
+
 ---
 
-Comment by rlm created at 2009-07-04 01:07:11
+archive/issue_comments_051559.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-07-04T01:07:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6421",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6421#issuecomment-51559",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by bascorp2 created at 2010-05-26 08:42:46
+archive/issue_comments_051560.json:
+```json
+{
+    "body": "[mickey mouse pictures](http://like-search.info/)",
+    "created_at": "2010-05-26T08:42:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6421",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6421#issuecomment-51560",
+    "user": "bascorp2"
+}
+```
 
 [mickey mouse pictures](http://like-search.info/)

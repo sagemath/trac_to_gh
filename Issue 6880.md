@@ -1,11 +1,21 @@
 # Issue 6880: docstrings and @cached_method -- if you used cached_method then docstring displays wrong file, etc.
 
-Issue created by migration from https://trac.sagemath.org/ticket/6880
-
-Original creator: was
-
-Original creation time: 2009-09-03 17:22:16
-
+archive/issues_006880.json:
+```json
+{
+    "body": "Assignee: tba\n\nIf you used the ``@`cached_method` decorator when defining a function in the Sage library, then get help about it (either in the notebook or command line), the File: field lis as follows:\n\n\n```\nFile:           /.../local/lib/python2.6/site-packages/sage/misc/cachefunc.py\n```\n\n\nThat's of course technically right, but very wrong/misleading for the user, who maybe wants to know more.  We should add specialized code to IPython and the notebook to correct for this. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6880\n\n",
+    "created_at": "2009-09-03T17:22:16Z",
+    "labels": [
+        "documentation",
+        "minor",
+        "bug"
+    ],
+    "title": "docstrings and @cached_method -- if you used cached_method then docstring displays wrong file, etc.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6880",
+    "user": "was"
+}
+```
 Assignee: tba
 
 If you used the ``@`cached_method` decorator when defining a function in the Sage library, then get help about it (either in the notebook or command line), the File: field lis as follows:
@@ -18,10 +28,25 @@ File:           /.../local/lib/python2.6/site-packages/sage/misc/cachefunc.py
 
 That's of course technically right, but very wrong/misleading for the user, who maybe wants to know more.  We should add specialized code to IPython and the notebook to correct for this. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6880
+
+
+
+
 
 ---
 
-Comment by SimonKing created at 2012-06-25 09:09:34
+archive/issue_comments_056790.json:
+```json
+{
+    "body": "This problem has already been fixed (by some work in sage.misc.sageinspect - sorry, I am too lazy to look up the ticket number). For example:\n\n```\nsage: P.<x,y> = QQ[]\nsage: I = P*[x,y]\nsage: I.groebner_basis?\nType:           CachedMethodCaller\nBase Class:     <type 'sage.misc.cachefunc.CachedMethodCaller'>\nString Form:    Cached version of <function groebner_basis at 0x1507b18>\nNamespace:      Interactive\nLoaded File:    /home/simon/SAGE/sage-5.0/local/lib/python2.7/site-packages/sage/misc/cachefunc.so\nSource File:    /home/simon/SAGE/sage-5.0/devel/sage/sage/misc/cachefunc.so\nDefinition:     I.groebner_basis(self, algorithm='', deg_bound=None, mult_bound=None, prot=False, *args, **kwds)\nDocstring:\n    File: sage/rings/polynomial/multi_polynomial_ideal.py (starting at line 3476)\n...\n```\n\n\nHence, we can close this.",
+    "created_at": "2012-06-25T09:09:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6880",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6880#issuecomment-56790",
+    "user": "SimonKing"
+}
+```
 
 This problem has already been fixed (by some work in sage.misc.sageinspect - sorry, I am too lazy to look up the ticket number). For example:
 
@@ -45,22 +70,55 @@ Docstring:
 Hence, we can close this.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-06-25 09:09:34
+archive/issue_comments_056791.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2012-06-25T09:09:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6880",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6880#issuecomment-56791",
+    "user": "SimonKing"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by SimonKing created at 2012-06-25 09:09:58
+archive/issue_comments_056792.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2012-06-25T09:09:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6880",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6880#issuecomment-56792",
+    "user": "SimonKing"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-07-04 07:17:21
+archive/issue_comments_056793.json:
+```json
+{
+    "body": "Resolution: worksforme",
+    "created_at": "2012-07-04T07:17:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6880",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6880#issuecomment-56793",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: worksforme

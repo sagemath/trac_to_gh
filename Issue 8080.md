@@ -1,51 +1,133 @@
 # Issue 8080: installation guide: require Fortran as a pre-requisite for compiling Sage on Linux
 
-Issue created by migration from https://trac.sagemath.org/ticket/8080
-
-Original creator: mvngu
-
-Original creation time: 2010-01-26 16:32:25
-
+archive/issues_008080.json:
+```json
+{
+    "body": "Assignee: mvngu\n\nTicket #7485 removes Linux Fortran binaries, so as of Sage 4.3.1 only Fortran binaries for Mac OS X are shipped with Sage. Ticket #7484 updates the README.txt to require Fortran as a pre-requisite for compiling Sage on Linux. Another likely candidate for documentation update is the [Installation Guide](http://www.sagemath.org/doc/installation). Let's update that guide.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8080\n\n",
+    "created_at": "2010-01-26T16:32:25Z",
+    "labels": [
+        "documentation",
+        "major",
+        "bug"
+    ],
+    "title": "installation guide: require Fortran as a pre-requisite for compiling Sage on Linux",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8080",
+    "user": "mvngu"
+}
+```
 Assignee: mvngu
 
 Ticket #7485 removes Linux Fortran binaries, so as of Sage 4.3.1 only Fortran binaries for Mac OS X are shipped with Sage. Ticket #7484 updates the README.txt to require Fortran as a pre-requisite for compiling Sage on Linux. Another likely candidate for documentation update is the [Installation Guide](http://www.sagemath.org/doc/installation). Let's update that guide.
 
+Issue created by migration from https://trac.sagemath.org/ticket/8080
+
+
+
+
 
 ---
 
-Comment by mvngu created at 2010-02-15 04:24:45
+archive/issue_comments_070813.json:
+```json
+{
+    "body": "based on Sage 4.3.3.alpha0",
+    "created_at": "2010-02-15T04:24:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8080",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8080#issuecomment-70813",
+    "user": "mvngu"
+}
+```
 
 based on Sage 4.3.3.alpha0
 
 
+
 ---
 
-Comment by mvngu created at 2010-02-15 04:25:25
+archive/issue_comments_070814.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-02-15T04:25:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8080",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8080#issuecomment-70814",
+    "user": "mvngu"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_070815.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-02-15T04:25:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8080",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8080#issuecomment-70815",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2010-02-17 13:17:26
+archive/issue_comments_070816.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-02-17T13:17:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8080",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8080#issuecomment-70816",
+    "user": "mhansen"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mhansen created at 2010-02-17 13:17:26
+archive/issue_comments_070817.json:
+```json
+{
+    "body": "Looks good to me.",
+    "created_at": "2010-02-17T13:17:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8080",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8080#issuecomment-70817",
+    "user": "mhansen"
+}
+```
 
 Looks good to me.
 
 
+
 ---
 
-Comment by mvngu created at 2010-02-18 21:58:59
+archive/issue_comments_070818.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-02-18T21:58:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8080",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8080#issuecomment-70818",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

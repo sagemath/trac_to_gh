@@ -1,11 +1,21 @@
 # Issue 9766: Cliquer has no spkg-check file, but there is a small test suite with the program
 
-Issue created by migration from https://trac.sagemath.org/ticket/9767
-
-Original creator: drkirkby
-
-Original creation time: 2010-08-19 15:05:00
-
+archive/issues_009766.json:
+```json
+{
+    "body": "Assignee: drkirkby\n\nCC:  ncohen leif\n\nThere's a test suite which can be run easily - see below. \n\n\n```\ndrkirkby@hawk:~/cliquer-1.2.p6/src$ make testcases\ngcc -Wall -O3 -fomit-frame-pointer -funroll-loops   -c -o testcases.o testcases.c\ngcc  -o testcases testcases.o cliquer.o graph.o reorder.o\ndrkirkby@hawk:~/cliquer-1.2.p6/src$ ./testcases\n\nRunning testcases:  ELEMENTSIZE=32, sizeof(setelement)=4  (OK)\n\nTesting small: graph_test...OK\nTesting large: graph_test...OK\nTesting wlarge: graph_test...OK\n\nTesting small: single maximum clique...OK\nTesting large: single maximum clique...OK\nTesting small: single 3-sized clique...OK\nTesting large: single 8-sized clique...OK\n\nTesting small: all maximum cliques...OK\nTesting large: all maximum cliques...OK\nTesting small: all min 3-sized cliques...OK\nTesting large: all min 8-sized cliques...OK\nTesting large: all exactly 8-sized cliques...OK\n\nTesting large: max clique size...OK\nTesting weighted large: max clique weight...OK\n\nTesting large: user_function w/ abort for 8-sized cliques...OK\nTesting large: too small array for all maximum cliques...OK\n\nTesting weighted large: single max weighted clique...OK (w=66)\nTesting weighted large: single min 60 weighted clique...OK (w=63)\nTesting weighted large: single exactly 62 weighted clique...OK (w=62)\nTesting weighted large: all max weighted cliques...OK\nTesting weighted large: all min 60 weighted cliques...OK\nTesting weighted large: all 60...64 weighted maximal cliques...OK\n\nTesting re-entrance...OK\ndrkirkby@hawk:~/cliquer-1.2.p6/src$ \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9767\n\n",
+    "created_at": "2010-08-19T15:05:00Z",
+    "labels": [
+        "spkg-check",
+        "major",
+        "bug"
+    ],
+    "title": "Cliquer has no spkg-check file, but there is a small test suite with the program",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9766",
+    "user": "drkirkby"
+}
+```
 Assignee: drkirkby
 
 CC:  ncohen leif
@@ -54,30 +64,78 @@ drkirkby@hawk:~/cliquer-1.2.p6/src$
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/9767
+
+
+
+
 
 ---
 
-Comment by leif created at 2010-09-04 04:29:13
+archive/issue_comments_095706.json:
+```json
+{
+    "body": "Dave, be warned: You'll hate me if I should review this (`spkg-install`, `patches/Makefile`).",
+    "created_at": "2010-09-04T04:29:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9766",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9766#issuecomment-95706",
+    "user": "leif"
+}
+```
 
 Dave, be warned: You'll hate me if I should review this (`spkg-install`, `patches/Makefile`).
 
 
----
-
-Comment by leif created at 2010-09-04 05:23:55
-
-Also note that the upstream directory (`src/`) is *not vanilla*.
-
 
 ---
 
-Comment by drkirkby created at 2010-09-04 07:51:18
+archive/issue_comments_095707.json:
+```json
+{
+    "body": "Also note that the upstream directory (`src/`) is **not vanilla**.",
+    "created_at": "2010-09-04T05:23:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9766",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9766#issuecomment-95707",
+    "user": "leif"
+}
+```
+
+Also note that the upstream directory (`src/`) is **not vanilla**.
+
+
+
+---
+
+archive/issue_comments_095708.json:
+```json
+{
+    "body": "I realise this is a duplicate of #9521",
+    "created_at": "2010-09-04T07:51:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9766",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9766#issuecomment-95708",
+    "user": "drkirkby"
+}
+```
 
 I realise this is a duplicate of #9521
 
 
+
 ---
 
-Comment by drkirkby created at 2010-09-04 07:51:18
+archive/issue_comments_095709.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2010-09-04T07:51:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9766",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9766#issuecomment-95709",
+    "user": "drkirkby"
+}
+```
 
 Resolution: duplicate

@@ -1,11 +1,21 @@
 # Issue 5057: Add fortran-OSX64-20090120.spkg: to the experimental spkg repo
 
-Issue created by migration from https://trac.sagemath.org/ticket/5057
-
-Original creator: mabshoff
-
-Original creation time: 2009-01-22 19:19:36
-
+archive/issues_005057.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nThe above spkg has a custom gfortran 4.2.3 set to build a default 64 bit on OSX. This will come in useful until we have revamp Fortran build support properly.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5057\n\n",
+    "created_at": "2009-01-22T19:19:36Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "Add fortran-OSX64-20090120.spkg: to the experimental spkg repo",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5057",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 The above spkg has a custom gfortran 4.2.3 set to build a default 64 bit on OSX. This will come in useful until we have revamp Fortran build support properly.
@@ -14,10 +24,25 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/5057
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2009-01-22 19:20:05
+archive/issue_comments_038524.json:
+```json
+{
+    "body": "The spkg is at\n\nhttp://sage.math.washington.edu/home/mabshoff/spkgs/fortran-OSX64-20090120.spkg\n\nCheers,\n\nMichael",
+    "created_at": "2009-01-22T19:20:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5057",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5057#issuecomment-38524",
+    "user": "mabshoff"
+}
+```
 
 The spkg is at
 
@@ -28,29 +53,73 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-22 19:20:11
+archive/issue_comments_038525.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-01-22T19:20:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5057",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5057#issuecomment-38525",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by rlm created at 2009-01-22 20:34:28
+archive/issue_comments_038526.json:
+```json
+{
+    "body": "+1",
+    "created_at": "2009-01-22T20:34:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5057",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5057#issuecomment-38526",
+    "user": "rlm"
+}
+```
 
 +1
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-22 23:40:33
+archive/issue_comments_038527.json:
+```json
+{
+    "body": "Merged in the experimental repo in Sage 3.3.alpha1",
+    "created_at": "2009-01-22T23:40:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5057",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5057#issuecomment-38527",
+    "user": "mabshoff"
+}
+```
 
 Merged in the experimental repo in Sage 3.3.alpha1
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-22 23:40:33
+archive/issue_comments_038528.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-01-22T23:40:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5057",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5057#issuecomment-38528",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

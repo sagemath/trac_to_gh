@@ -1,11 +1,21 @@
 # Issue 8718: Polynomial.apply_map()
 
-Issue created by migration from https://trac.sagemath.org/ticket/8718
-
-Original creator: mmezzarobba
-
-Original creation time: 2010-04-19 20:15:46
-
+archive/issues_008718.json:
+```json
+{
+    "body": "Assignee: AlexGhitza\n\nCC:  dkrenn\n\nKeywords: polynomial, map\n\nComputing, for instance, the complex conjugate of a polynomial currently requires going through its list or dictionary representation. Polynomials could provide a method similar to Matrix.apply_map() to make this kind of computations easier.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8718\n\n",
+    "created_at": "2010-04-19T20:15:46Z",
+    "labels": [
+        "algebra",
+        "minor",
+        "enhancement"
+    ],
+    "title": "Polynomial.apply_map()",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8718",
+    "user": "mmezzarobba"
+}
+```
 Assignee: AlexGhitza
 
 CC:  dkrenn
@@ -14,31 +24,81 @@ Keywords: polynomial, map
 
 Computing, for instance, the complex conjugate of a polynomial currently requires going through its list or dictionary representation. Polynomials could provide a method similar to Matrix.apply_map() to make this kind of computations easier.
 
+Issue created by migration from https://trac.sagemath.org/ticket/8718
+
+
+
+
 
 ---
+
+archive/issue_comments_079566.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-05-17T19:50:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8718",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8718#issuecomment-79566",
+    "user": "mmezzarobba"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mmezzarobba created at 2010-05-17 19:57:05
+archive/issue_comments_079567.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-05-17T19:57:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8718",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8718#issuecomment-79567",
+    "user": "mmezzarobba"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mmezzarobba created at 2010-05-17 19:57:05
+archive/issue_comments_079568.json:
+```json
+{
+    "body": "The attached patch adds naive implementations of apply_map() and of a second similar method, map_coefficients(), modeled after that of multivariate polynomials.\n\nNote that I have as good as no experience with Python or Sage development\u2014so sorry for any newbie errors... and please review carefully! :-)",
+    "created_at": "2010-05-17T19:57:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8718",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8718#issuecomment-79568",
+    "user": "mmezzarobba"
+}
+```
 
 The attached patch adds naive implementations of apply_map() and of a second similar method, map_coefficients(), modeled after that of multivariate polynomials.
 
 Note that I have as good as no experience with Python or Sage development—so sorry for any newbie errors... and please review carefully! :-)
 
 
+
 ---
 
-Comment by jason created at 2010-05-18 02:07:39
+archive/issue_comments_079569.json:
+```json
+{
+    "body": "One suggestion---the names of the new functions do not seem to indicate to me that they only operate on the nonzero coefficients, so it would be hard for me to remember what the difference between map_coefficients and apply_map is.\n\nHow about just adding an argument to apply_map:\n\np.apply_map(nonzero_only=True)\n\nor something like that?",
+    "created_at": "2010-05-18T02:07:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8718",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8718#issuecomment-79569",
+    "user": "jason"
+}
+```
 
 One suggestion---the names of the new functions do not seem to indicate to me that they only operate on the nonzero coefficients, so it would be hard for me to remember what the difference between map_coefficients and apply_map is.
 
@@ -49,55 +109,132 @@ p.apply_map(nonzero_only=True)
 or something like that?
 
 
+
 ---
 
-Comment by mmezzarobba created at 2010-05-18 07:05:57
+archive/issue_comments_079570.json:
+```json
+{
+    "body": "The idea was to stay compatible with ``MPolynomial.map_coefficients()``, which operates on nonzero coefficients.  Perhaps we could remove ``apply_map()`` rather that ``map_coefficients()``, and add an option to make ``map_coefficients()`` map over zero coefficients too. (Ignoring them by default seems sensible, since (i) there is really no mathematical difference between zeros below and above the leading coefficient, and (ii) the functions one will typically pass to ``map_coefficients()`` are ring homomorphisms.)\n\nWhat do you think?",
+    "created_at": "2010-05-18T07:05:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8718",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8718#issuecomment-79570",
+    "user": "mmezzarobba"
+}
+```
 
 The idea was to stay compatible with ``MPolynomial.map_coefficients()``, which operates on nonzero coefficients.  Perhaps we could remove ``apply_map()`` rather that ``map_coefficients()``, and add an option to make ``map_coefficients()`` map over zero coefficients too. (Ignoring them by default seems sensible, since (i) there is really no mathematical difference between zeros below and above the leading coefficient, and (ii) the functions one will typically pass to ``map_coefficients()`` are ring homomorphisms.)
 
 What do you think?
 
 
+
 ---
 
-Comment by jason created at 2010-05-18 15:28:57
+archive/issue_comments_079571.json:
+```json
+{
+    "body": "That sounds cleaner to me.  I'm likely not to use this function very much, so I shouldn't be the last authority on it, though.",
+    "created_at": "2010-05-18T15:28:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8718",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8718#issuecomment-79571",
+    "user": "jason"
+}
+```
 
 That sounds cleaner to me.  I'm likely not to use this function very much, so I shouldn't be the last authority on it, though.
 
 
+
 ---
 
-Comment by davidloeffler created at 2010-09-27 17:58:33
+archive/issue_comments_079572.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-09-27T17:58:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8718",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8718#issuecomment-79572",
+    "user": "davidloeffler"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by davidloeffler created at 2010-09-27 17:58:33
+archive/issue_comments_079573.json:
+```json
+{
+    "body": "Any progress here? I agree with Jason's contention that having both `apply_map` and `map_coefficients` is less than ideal, so I suggest that we put this back to \"needs work\" pending a patch that implements this.",
+    "created_at": "2010-09-27T17:58:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8718",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8718#issuecomment-79573",
+    "user": "davidloeffler"
+}
+```
 
 Any progress here? I agree with Jason's contention that having both `apply_map` and `map_coefficients` is less than ideal, so I suggest that we put this back to "needs work" pending a patch that implements this.
 
 
+
 ---
 
-Comment by dkrenn created at 2011-11-02 16:38:16
+archive/issue_comments_079574.json:
+```json
+{
+    "body": "I would suggest to map only non-zero coefficients because of the following reason: When mapping all (really all) zeros to a non-zero, the result is not a polynomial any more, so one would have to restrict that. But how should this restriction look like? A good restriction strategy (strategy which coefficients to choose and apply the map on) should be generalizable to the multivariate case. E.g. restriction by degree (i.e. only change the coefficients with indizes 0 to degree) could work in the univariate case, but does not work for multivariate polynomials.\n\nIf one really wants to map 0 to a non-zero, then this should be done somewhere else, i.e., not in `map_coefficients`",
+    "created_at": "2011-11-02T16:38:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8718",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8718#issuecomment-79574",
+    "user": "dkrenn"
+}
+```
 
 I would suggest to map only non-zero coefficients because of the following reason: When mapping all (really all) zeros to a non-zero, the result is not a polynomial any more, so one would have to restrict that. But how should this restriction look like? A good restriction strategy (strategy which coefficients to choose and apply the map on) should be generalizable to the multivariate case. E.g. restriction by degree (i.e. only change the coefficients with indizes 0 to degree) could work in the univariate case, but does not work for multivariate polynomials.
 
 If one really wants to map 0 to a non-zero, then this should be done somewhere else, i.e., not in `map_coefficients`
 
 
+
 ---
 
-Comment by saraedum created at 2012-02-06 20:51:03
+archive/issue_comments_079575.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2012-02-06T20:51:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8718",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8718#issuecomment-79575",
+    "user": "saraedum"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by saraedum created at 2012-02-06 20:51:03
+archive/issue_comments_079576.json:
+```json
+{
+    "body": "I agree that mapping 0 to non-zero should not be a part of map_coefficients().\n\nI rewrote the patch to only contain map_coefficients() for polynomial elements.\n\nWas there any reason for distinguishing between polynomial_element and polynomial_element_generic? I removed the distinction and it turned out that this implementation is even faster for the example polynomials.",
+    "created_at": "2012-02-06T20:51:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8718",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8718#issuecomment-79576",
+    "user": "saraedum"
+}
+```
 
 I agree that mapping 0 to non-zero should not be a part of map_coefficients().
 
@@ -106,23 +243,58 @@ I rewrote the patch to only contain map_coefficients() for polynomial elements.
 Was there any reason for distinguishing between polynomial_element and polynomial_element_generic? I removed the distinction and it turned out that this implementation is even faster for the example polynomials.
 
 
+
 ---
 
-Comment by saraedum created at 2012-02-06 20:51:30
+archive/issue_comments_079577.json:
+```json
+{
+    "body": "adds map_coefficients()",
+    "created_at": "2012-02-06T20:51:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8718",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8718#issuecomment-79577",
+    "user": "saraedum"
+}
+```
 
 adds map_coefficients()
 
 
+
 ---
+
+archive/issue_comments_079578.json:
+```json
+{
+    "body": "Attachment\n\napply trac_8718.patch",
+    "created_at": "2012-02-06T20:52:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8718",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8718#issuecomment-79578",
+    "user": "saraedum"
+}
+```
 
 Attachment
 
 apply trac_8718.patch
 
 
+
 ---
 
-Comment by mmezzarobba created at 2012-02-07 08:04:03
+archive/issue_comments_079579.json:
+```json
+{
+    "body": "Thanks for taking care of that! (And shame on me that I didn't!)\n\nAs for the distinction  between polynomial_element and polynomial_element_generic, it may indeed have been a speed issue, but I can't remember the details. Anyway, if the current version does the job, I'm fine with it.\n\n[I'm not sure what the rules are here: am I allowed to review the new version of the patch though being its initial author?]",
+    "created_at": "2012-02-07T08:04:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8718",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8718#issuecomment-79579",
+    "user": "mmezzarobba"
+}
+```
 
 Thanks for taking care of that! (And shame on me that I didn't!)
 
@@ -131,48 +303,114 @@ As for the distinction  between polynomial_element and polynomial_element_generi
 [I'm not sure what the rules are here: am I allowed to review the new version of the patch though being its initial author?]
 
 
+
 ---
 
-Comment by saraedum created at 2012-02-08 18:16:49
+archive/issue_comments_079580.json:
+```json
+{
+    "body": "> [I'm not sure what the rules are here: am I allowed to review the new version of the patch though being its initial author?]\n\nYes, in my experience this is ok and actually happens frequently.",
+    "created_at": "2012-02-08T18:16:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8718",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8718#issuecomment-79580",
+    "user": "saraedum"
+}
+```
 
 > [I'm not sure what the rules are here: am I allowed to review the new version of the patch though being its initial author?]
 
 Yes, in my experience this is ok and actually happens frequently.
 
 
+
 ---
 
-Comment by dkrenn created at 2012-02-09 11:05:18
+archive/issue_comments_079581.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2012-02-09T11:05:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8718",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8718#issuecomment-79581",
+    "user": "dkrenn"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by dkrenn created at 2012-02-09 11:05:18
+archive/issue_comments_079582.json:
+```json
+{
+    "body": "In #11981 the map_coefficients of a multivariate polynomial was adapted to change the base ring of the coefficients. I think we should also do this here for this function, since the two should have the same behavior.",
+    "created_at": "2012-02-09T11:05:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8718",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8718#issuecomment-79582",
+    "user": "dkrenn"
+}
+```
 
 In #11981 the map_coefficients of a multivariate polynomial was adapted to change the base ring of the coefficients. I think we should also do this here for this function, since the two should have the same behavior.
 
 
+
 ---
 
-Comment by saraedum created at 2012-02-09 11:12:33
+archive/issue_comments_079583.json:
+```json
+{
+    "body": "True. I wanted to push this to a later ticket but we can also talk about this here.\n\nI wonder if this \"new base ring\" should default to the codomain of f (if the function is actually a sage 'Map'). For me this has always been what I wanted. Any opinions on that?",
+    "created_at": "2012-02-09T11:12:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8718",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8718#issuecomment-79583",
+    "user": "saraedum"
+}
+```
 
 True. I wanted to push this to a later ticket but we can also talk about this here.
 
 I wonder if this "new base ring" should default to the codomain of f (if the function is actually a sage 'Map'). For me this has always been what I wanted. Any opinions on that?
 
 
+
 ---
 
-Comment by saraedum created at 2012-02-09 11:12:33
+archive/issue_comments_079584.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_info.",
+    "created_at": "2012-02-09T11:12:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8718",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8718#issuecomment-79584",
+    "user": "saraedum"
+}
+```
 
 Changing status from needs_work to needs_info.
 
 
+
 ---
 
-Comment by dkrenn created at 2012-02-10 12:49:49
+archive/issue_comments_079585.json:
+```json
+{
+    "body": "Replying to [comment:12 saraedum]:\n> I wonder if this \"new base ring\" should default to the codomain of f (if the function is actually a sage 'Map'). For me this has always been what I wanted. Any opinions on that?\n\nThat is a good idea, we should implement that. So the strategy would be the following: If a new base ring is given, then we use it, otherwise, we check if the function knowns its codomain and if yes use it, otherwise we do not change the base ring.",
+    "created_at": "2012-02-10T12:49:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8718",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8718#issuecomment-79585",
+    "user": "dkrenn"
+}
+```
 
 Replying to [comment:12 saraedum]:
 > I wonder if this "new base ring" should default to the codomain of f (if the function is actually a sage 'Map'). For me this has always been what I wanted. Any opinions on that?
@@ -180,43 +418,111 @@ Replying to [comment:12 saraedum]:
 That is a good idea, we should implement that. So the strategy would be the following: If a new base ring is given, then we use it, otherwise, we check if the function knowns its codomain and if yes use it, otherwise we do not change the base ring.
 
 
+
 ---
 
-Comment by saraedum created at 2012-02-10 14:27:48
+archive/issue_comments_079586.json:
+```json
+{
+    "body": "Ok. I already have that implemented. Just need to add some more doctests and upload it.",
+    "created_at": "2012-02-10T14:27:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8718",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8718#issuecomment-79586",
+    "user": "saraedum"
+}
+```
 
 Ok. I already have that implemented. Just need to add some more doctests and upload it.
 
 
+
 ---
 
-Comment by saraedum created at 2012-02-19 17:43:36
+archive/issue_comments_079587.json:
+```json
+{
+    "body": "consider the codomain in map_coefficients for univariate polynomials",
+    "created_at": "2012-02-19T17:43:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8718",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8718#issuecomment-79587",
+    "user": "saraedum"
+}
+```
 
 consider the codomain in map_coefficients for univariate polynomials
 
 
+
 ---
+
+archive/issue_comments_079588.json:
+```json
+{
+    "body": "Attachment\n\nconsider the codomain in map_coefficients for multivariate polynomials",
+    "created_at": "2012-02-19T17:43:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8718",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8718#issuecomment-79588",
+    "user": "saraedum"
+}
+```
 
 Attachment
 
 consider the codomain in map_coefficients for multivariate polynomials
 
 
+
 ---
 
-Comment by saraedum created at 2012-02-19 17:45:43
+archive/issue_comments_079589.json:
+```json
+{
+    "body": "Changing status from needs_info to needs_review.",
+    "created_at": "2012-02-19T17:45:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8718",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8718#issuecomment-79589",
+    "user": "saraedum"
+}
+```
 
 Changing status from needs_info to needs_review.
 
 
+
 ---
 
-Comment by dkrenn created at 2012-02-20 18:51:09
+archive/issue_comments_079590.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2012-02-20T18:51:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8718",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8718#issuecomment-79590",
+    "user": "dkrenn"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-02-27 11:19:40
+archive/issue_comments_079591.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2012-02-27T11:19:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8718",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8718#issuecomment-79591",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: fixed

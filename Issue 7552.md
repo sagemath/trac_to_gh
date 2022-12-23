@@ -1,63 +1,154 @@
 # Issue 7552: Update the Twisted package to 9.0
 
-Issue created by migration from https://trac.sagemath.org/ticket/7552
-
-Original creator: timdumol
-
-Original creation time: 2009-11-29 08:12:32
-
+archive/issues_007552.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  mhansen jsp\n\n[Twisted http://twistedmatrix.com] has just recently released a new version, 9.0. This update includes several major changes, the most significant to Sage development being support for WSGI in the Twisted.web framework (rather than the Twisted.web2 framework).\n\nIssue created by migration from https://trac.sagemath.org/ticket/7552\n\n",
+    "created_at": "2009-11-29T08:12:32Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "enhancement"
+    ],
+    "title": "Update the Twisted package to 9.0",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7552",
+    "user": "timdumol"
+}
+```
 Assignee: tbd
 
 CC:  mhansen jsp
 
 [Twisted http://twistedmatrix.com] has just recently released a new version, 9.0. This update includes several major changes, the most significant to Sage development being support for WSGI in the Twisted.web framework (rather than the Twisted.web2 framework).
 
+Issue created by migration from https://trac.sagemath.org/ticket/7552
+
+
+
+
 
 ---
 
-Comment by timdumol created at 2009-11-29 08:13:56
+archive/issue_comments_064174.json:
+```json
+{
+    "body": "Markup change.",
+    "created_at": "2009-11-29T08:13:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7552",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7552#issuecomment-64174",
+    "user": "timdumol"
+}
+```
 
 Markup change.
 
 
+
 ---
 
-Comment by timdumol created at 2009-11-29 08:16:15
+archive/issue_comments_064175.json:
+```json
+{
+    "body": "New package up at http://sage.math.washington.edu/home/timdumol/twisted-9.0.p0.spkg. I've tried it on a few worksheets, and things seem to be working well. The notebook tests pass as well.",
+    "created_at": "2009-11-29T08:16:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7552",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7552#issuecomment-64175",
+    "user": "timdumol"
+}
+```
 
 New package up at http://sage.math.washington.edu/home/timdumol/twisted-9.0.p0.spkg. I've tried it on a few worksheets, and things seem to be working well. The notebook tests pass as well.
 
 
+
 ---
 
-Comment by timdumol created at 2009-11-29 08:16:15
+archive/issue_comments_064176.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-11-29T08:16:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7552",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7552#issuecomment-64176",
+    "user": "timdumol"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by timdumol created at 2009-11-29 08:16:50
+archive/issue_comments_064177.json:
+```json
+{
+    "body": "Added package link to description.",
+    "created_at": "2009-11-29T08:16:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7552",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7552#issuecomment-64177",
+    "user": "timdumol"
+}
+```
 
 Added package link to description.
 
 
+
 ---
 
-Comment by timdumol created at 2009-11-29 08:21:06
+archive/issue_comments_064178.json:
+```json
+{
+    "body": "Added release notes.",
+    "created_at": "2009-11-29T08:21:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7552",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7552#issuecomment-64178",
+    "user": "timdumol"
+}
+```
 
 Added release notes.
 
 
+
 ---
 
-Comment by was created at 2009-12-21 22:16:29
+archive/issue_comments_064179.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2009-12-21T22:16:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7552",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7552#issuecomment-64179",
+    "user": "was"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by was created at 2009-12-21 22:16:29
+archive/issue_comments_064180.json:
+```json
+{
+    "body": "1. Typing \"hg status\" gives:\n\n```\nwstein@sage:~/build/referee/sage-4.3.rc0/twisted-9.0.p0$ hg status\n! patches/keys.py\n! patches/sob.py\n```\n\nThis is because you just deleted those files instead of doing \"hg rm\".  To fix, put them back, then do \"hg rm\". \n\n2. You forgot to remove patches/filepath.py, but aren't using it anymore:\n\n```\n-cp patches/filepath.py src/twisted/python/\n```\n",
+    "created_at": "2009-12-21T22:16:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7552",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7552#issuecomment-64180",
+    "user": "was"
+}
+```
 
 1. Typing "hg status" gives:
 
@@ -77,23 +168,56 @@ This is because you just deleted those files instead of doing "hg rm".  To fix, 
 
 
 
+
 ---
 
-Comment by timdumol created at 2009-12-22 04:49:27
+archive/issue_comments_064181.json:
+```json
+{
+    "body": "New version with the fixes at http://sage.math.washington.edu/home/timdumol/twisted-9.0.p0.spkg. I neglected changing the version number.",
+    "created_at": "2009-12-22T04:49:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7552",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7552#issuecomment-64181",
+    "user": "timdumol"
+}
+```
 
 New version with the fixes at http://sage.math.washington.edu/home/timdumol/twisted-9.0.p0.spkg. I neglected changing the version number.
 
 
+
 ---
 
-Comment by timdumol created at 2009-12-22 04:49:27
+archive/issue_comments_064182.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2009-12-22T04:49:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7552",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7552#issuecomment-64182",
+    "user": "timdumol"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by mpatel created at 2010-01-15 20:49:41
+archive/issue_comments_064183.json:
+```json
+{
+    "body": "Should we add\n\n```sh\nrm -rf \"$SAGE_LOCAL\"/lib/python/site-packages/twisted\n```\n\nto\n\n```sh\n# Deleting the old version is *very* important with this package.\nrm -rf \"$SAGE_LOCAL\"/lib/python/site-packages/Twisted*\n```\n\nin `spkg-install`?",
+    "created_at": "2010-01-15T20:49:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7552",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7552#issuecomment-64183",
+    "user": "mpatel"
+}
+```
 
 Should we add
 
@@ -111,16 +235,38 @@ rm -rf "$SAGE_LOCAL"/lib/python/site-packages/Twisted*
 in `spkg-install`?
 
 
+
 ---
 
-Comment by mpatel created at 2010-01-15 20:54:37
+archive/issue_comments_064184.json:
+```json
+{
+    "body": "Also, `hg ci`.",
+    "created_at": "2010-01-15T20:54:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7552",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7552#issuecomment-64184",
+    "user": "mpatel"
+}
+```
 
 Also, `hg ci`.
 
 
+
 ---
 
-Comment by mpatel created at 2010-01-15 20:56:38
+archive/issue_comments_064185.json:
+```json
+{
+    "body": "Replying to [comment:8 mpatel]:\n> Also, `hg ci`.\nOops.  I mean that `hg stat` gives\n\n```\n! patches/filepath.py\n! patches/filepath.py.patch\n! patches/keys.py\n! patches/keys.py.patch\n! patches/sob.py\n! patches/sob.py.patch\n```\n",
+    "created_at": "2010-01-15T20:56:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7552",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7552#issuecomment-64185",
+    "user": "mpatel"
+}
+```
 
 Replying to [comment:8 mpatel]:
 > Also, `hg ci`.
@@ -137,38 +283,82 @@ Oops.  I mean that `hg stat` gives
 
 
 
+
 ---
 
-Comment by mpatel created at 2010-01-15 21:38:47
+archive/issue_comments_064186.json:
+```json
+{
+    "body": "I've put these changes and added a description to `SPKG.txt` in\n\n* http://sage.math.washington.edu/home/mpatel/trac/7552/twisted-9.0.p1.spkg\n\nI didn't upgrade `zope.interface` to 3.5.3, since `sagenb-*.spkg` includes it.\n\nThe Se and doc tests pass for me.  Positive review, but someone should review my changes.",
+    "created_at": "2010-01-15T21:38:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7552",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7552#issuecomment-64186",
+    "user": "mpatel"
+}
+```
 
 I've put these changes and added a description to `SPKG.txt` in
 
- * http://sage.math.washington.edu/home/mpatel/trac/7552/twisted-9.0.p1.spkg
+* http://sage.math.washington.edu/home/mpatel/trac/7552/twisted-9.0.p1.spkg
 
 I didn't upgrade `zope.interface` to 3.5.3, since `sagenb-*.spkg` includes it.
 
 The Se and doc tests pass for me.  Positive review, but someone should review my changes.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-02-22 00:31:23
+archive/issue_comments_064187.json:
+```json
+{
+    "body": "I've not checked it for functionality, but this does at least build on Solaris. \n\nDave",
+    "created_at": "2010-02-22T00:31:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7552",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7552#issuecomment-64187",
+    "user": "drkirkby"
+}
+```
 
 I've not checked it for functionality, but this does at least build on Solaris. 
 
 Dave
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-22 21:08:56
+archive/issue_comments_064188.json:
+```json
+{
+    "body": "Requesting an assist, whenever it's convenient.",
+    "created_at": "2010-02-22T21:08:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7552",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7552#issuecomment-64188",
+    "user": "mpatel"
+}
+```
 
 Requesting an assist, whenever it's convenient.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-02-24 21:30:30
+archive/issue_comments_064189.json:
+```json
+{
+    "body": "Also see #8352, which makes a very small change to twisted's spkg-install file, so the previous version of twisted builds on any platform as 64-bit, not just OS X. \n\nBasically changing \n\n\n```\nif [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then\n   echo \"64 bit MacIntel\"\n   CFLAGS=\"-O2 -g -m64 \"; export CFLAGS\n   LDFLAGS=\"-m64 \"; export LDFLAGS\nfi\n\n```\n\n\nto\n\n\n```\nif [\"x$SAGE64\" = xyes ]; then\n   echo \"64 bit build\"\n   CFLAGS=\"-O2 -g -m64 \"; export CFLAGS\n   LDFLAGS=\"-m64 \"; export LDFLAGS\nfi\n```\n\n\nI'm happy to give the other ticket positive review, but are not going to just now, until I find the best way of handling this. \n\n\nDave",
+    "created_at": "2010-02-24T21:30:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7552",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7552#issuecomment-64189",
+    "user": "drkirkby"
+}
+```
 
 Also see #8352, which makes a very small change to twisted's spkg-install file, so the previous version of twisted builds on any platform as 64-bit, not just OS X. 
 
@@ -203,53 +393,119 @@ I'm happy to give the other ticket positive review, but are not going to just no
 Dave
 
 
+
 ---
 
-Comment by drkirkby created at 2010-02-25 03:52:30
+archive/issue_comments_064190.json:
+```json
+{
+    "body": "I got no feedback from sage-devel on the best way to handle this, so I've give #8352 positive review. \n\nI'm not marking it as 'needs work', as that might not be the right thing to do, it might be best if you incorporate the changes from that ticket too.",
+    "created_at": "2010-02-25T03:52:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7552",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7552#issuecomment-64190",
+    "user": "drkirkby"
+}
+```
 
 I got no feedback from sage-devel on the best way to handle this, so I've give #8352 positive review. 
 
 I'm not marking it as 'needs work', as that might not be the right thing to do, it might be best if you incorporate the changes from that ticket too.
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-25 08:00:05
+archive/issue_comments_064191.json:
+```json
+{
+    "body": "I've added #8352's patch to\n\n* http://sage.math.washington.edu/home/mpatel/trac/7552/twisted-9.0.p2.spkg\n\nLet me know if there are any problems.",
+    "created_at": "2010-02-25T08:00:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7552",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7552#issuecomment-64191",
+    "user": "mpatel"
+}
+```
 
 I've added #8352's patch to
 
-  * http://sage.math.washington.edu/home/mpatel/trac/7552/twisted-9.0.p2.spkg
+* http://sage.math.washington.edu/home/mpatel/trac/7552/twisted-9.0.p2.spkg
 
 Let me know if there are any problems.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-02-25 13:15:06
+archive/issue_comments_064192.json:
+```json
+{
+    "body": "I think the first release of this in SPKG.txt should have been simply twisted-9.0 and not twisted-9.0.p0. The p's are only added after patches are applied at a later date. But it is pretty clear from the message that this was the first time version 9.0 was used, so I'm going to overlook that. \n\nI've added Jaap Spies as an author, as his changes are incorporated too. \n\n**Note to the release manager. When this ticket is merged, #8352 can be closed.**",
+    "created_at": "2010-02-25T13:15:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7552",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7552#issuecomment-64192",
+    "user": "drkirkby"
+}
+```
 
 I think the first release of this in SPKG.txt should have been simply twisted-9.0 and not twisted-9.0.p0. The p's are only added after patches are applied at a later date. But it is pretty clear from the message that this was the first time version 9.0 was used, so I'm going to overlook that. 
 
 I've added Jaap Spies as an author, as his changes are incorporated too. 
 
-*Note to the release manager. When this ticket is merged, #8352 can be closed.*
+**Note to the release manager. When this ticket is merged, #8352 can be closed.**
+
 
 
 ---
 
-Comment by drkirkby created at 2010-02-25 13:15:06
+archive/issue_comments_064193.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-02-25T13:15:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7552",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7552#issuecomment-64193",
+    "user": "drkirkby"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mvngu created at 2010-03-02 22:45:29
+archive/issue_comments_064194.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-03-02T22:45:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7552",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7552#issuecomment-64194",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mvngu created at 2010-03-02 22:45:29
+archive/issue_comments_064195.json:
+```json
+{
+    "body": "Merged [twisted-9.0.p2.spkg](http://sage.math.washington.edu/home/mpatel/trac/7552/twisted-9.0.p2.spkg) in the standard spkg repository.",
+    "created_at": "2010-03-02T22:45:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7552",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7552#issuecomment-64195",
+    "user": "mvngu"
+}
+```
 
 Merged [twisted-9.0.p2.spkg](http://sage.math.washington.edu/home/mpatel/trac/7552/twisted-9.0.p2.spkg) in the standard spkg repository.

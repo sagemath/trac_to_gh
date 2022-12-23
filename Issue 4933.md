@@ -1,53 +1,89 @@
 # Issue 4933: lots of files in sage.schemes.elliptic_curves are not included in the reference manual
 
-Issue created by migration from https://trac.sagemath.org/ticket/4933
-
-Original creator: cremona
-
-Original creation time: 2009-01-03 17:59:06
-
+archive/issues_004933.json:
+```json
+{
+    "body": "Assignee: tba\n\nKeywords: documentation\n\nThe following files have useful docstrings but are not included in the ref manual (judging from 3.2.3), all in sage.schemes.elliptic_curves.\n* cm.py\n* ec_database.py\n* ell_field.py\n* ell_local_data.py\n* ell_modular_symbols\n* ell_number_field\n* ell_padic_field\n* ell_point.py\n* ell_tate_curve.py\n* ell_torsion.py\n* kodaira_symbol.py\n* lseries_ell.py\n* padic_lseries.py\n* period_lattice.py\n* sha_tate.py\n* weierstrass_morphism.py\n\nIssue created by migration from https://trac.sagemath.org/ticket/4933\n\n",
+    "created_at": "2009-01-03T17:59:06Z",
+    "labels": [
+        "documentation",
+        "major",
+        "bug"
+    ],
+    "title": "lots of files in sage.schemes.elliptic_curves are not included in the reference manual",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4933",
+    "user": "cremona"
+}
+```
 Assignee: tba
 
 Keywords: documentation
 
 The following files have useful docstrings but are not included in the ref manual (judging from 3.2.3), all in sage.schemes.elliptic_curves.
-   * cm.py
-   * ec_database.py
-   * ell_field.py
-   * ell_local_data.py
-   * ell_modular_symbols
-   * ell_number_field
-   * ell_padic_field
-   * ell_point.py
-   * ell_tate_curve.py
-   * ell_torsion.py
-   * kodaira_symbol.py
-   * lseries_ell.py
-   * padic_lseries.py
-   * period_lattice.py
-   * sha_tate.py
-   * weierstrass_morphism.py
+* cm.py
+* ec_database.py
+* ell_field.py
+* ell_local_data.py
+* ell_modular_symbols
+* ell_number_field
+* ell_padic_field
+* ell_point.py
+* ell_tate_curve.py
+* ell_torsion.py
+* kodaira_symbol.py
+* lseries_ell.py
+* padic_lseries.py
+* period_lattice.py
+* sha_tate.py
+* weierstrass_morphism.py
+
+Issue created by migration from https://trac.sagemath.org/ticket/4933
+
+
+
 
 
 ---
 
-Comment by GeorgSWeber created at 2009-02-25 21:30:48
+archive/issue_comments_037435.json:
+```json
+{
+    "body": "Hi,\n\nthe files\n\n* ell_modular_symbols.py\n* ell_tate_curve.py\n* padic_lseries.py\n* sha_tate.py\n\nare not only enhanced in a vital way but also considerably cleaned up docstring- and comment-wise by #4667. The patch there is currently based against 3.3 and needs a rebase concerning two files (ell_rational_field.py, padocs.py) against 3.4 series, and there is still one doctest failure, but nevertheless I do consider #4667 worth of applying before working on this very ticket here!",
+    "created_at": "2009-02-25T21:30:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4933",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4933#issuecomment-37435",
+    "user": "GeorgSWeber"
+}
+```
 
 Hi,
 
 the files
 
- * ell_modular_symbols.py
- * ell_tate_curve.py
- * padic_lseries.py
- * sha_tate.py
+* ell_modular_symbols.py
+* ell_tate_curve.py
+* padic_lseries.py
+* sha_tate.py
 
 are not only enhanced in a vital way but also considerably cleaned up docstring- and comment-wise by #4667. The patch there is currently based against 3.3 and needs a rebase concerning two files (ell_rational_field.py, padocs.py) against 3.4 series, and there is still one doctest failure, but nevertheless I do consider #4667 worth of applying before working on this very ticket here!
 
 
+
 ---
 
-Comment by mabshoff created at 2009-03-01 02:23:13
+archive/issue_comments_037436.json:
+```json
+{
+    "body": "Better luck in 3.4.1.\n\nCheers,\n\nMichael",
+    "created_at": "2009-03-01T02:23:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4933",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4933#issuecomment-37436",
+    "user": "mabshoff"
+}
+```
 
 Better luck in 3.4.1.
 
@@ -56,19 +92,43 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_037437.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-04-15T16:26:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4933",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4933#issuecomment-37437",
+    "user": "cremona"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by cremona created at 2009-04-15 16:29:29
+archive/issue_comments_037438.json:
+```json
+{
+    "body": "I have attached a patch trac_4933-1.patch which does this for three files:\n* ell_number_field.py\n* ell_torsion.py\n* ell_point.py\nwhich is a start.\n\nThe patch rewrites all the docstrings in those files and also adds them to the list of files which are processed by \"sage -docbuild reference\" so that they show up in the reference manual.\n\nTo review/test the patch (which was based on 3.4.1.rc2), you need to apply it and rebuild, and then (1) do  \"sage -t\" is usual on the files affected, and (2) do \"sage -docbuild reference pdf/html/whatever\" to check that the documentation looks good.",
+    "created_at": "2009-04-15T16:29:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4933",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4933#issuecomment-37438",
+    "user": "cremona"
+}
+```
 
 I have attached a patch trac_4933-1.patch which does this for three files:
-    * ell_number_field.py
-    * ell_torsion.py
-    * ell_point.py
+* ell_number_field.py
+* ell_torsion.py
+* ell_point.py
 which is a start.
 
 The patch rewrites all the docstrings in those files and also adds them to the list of files which are processed by "sage -docbuild reference" so that they show up in the reference manual.
@@ -76,45 +136,104 @@ The patch rewrites all the docstrings in those files and also adds them to the l
 To review/test the patch (which was based on 3.4.1.rc2), you need to apply it and rebuild, and then (1) do  "sage -t" is usual on the files affected, and (2) do "sage -docbuild reference pdf/html/whatever" to check that the documentation looks good.
 
 
+
 ---
+
+archive/issue_comments_037439.json:
+```json
+{
+    "body": "Attachment\n\nTwo more;  apply after previous.",
+    "created_at": "2009-04-16T16:35:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4933",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4933#issuecomment-37439",
+    "user": "cremona"
+}
+```
 
 Attachment
 
 Two more;  apply after previous.
 
 
+
 ---
 
-Comment by cremona created at 2009-04-16 16:36:00
+archive/issue_comments_037440.json:
+```json
+{
+    "body": "The second patch adds a couple more files (weierstrass_morphism and period_lattice).",
+    "created_at": "2009-04-16T16:36:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4933",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4933#issuecomment-37440",
+    "user": "cremona"
+}
+```
 
 The second patch adds a couple more files (weierstrass_morphism and period_lattice).
 
 
+
 ---
+
+archive/issue_comments_037441.json:
+```json
+{
+    "body": "Attachment\n\nIGNORE all previous patches.  This is based on 3.4.1.rc3",
+    "created_at": "2009-04-17T14:02:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4933",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4933#issuecomment-37441",
+    "user": "cremona"
+}
+```
 
 Attachment
 
 IGNORE all previous patches.  This is based on 3.4.1.rc3
 
 
+
 ---
 
-Comment by cremona created at 2009-04-17 14:06:15
+archive/issue_comments_037442.json:
+```json
+{
+    "body": "Changing keywords from \"documentation\" to \"documentation, elliptic curves\".",
+    "created_at": "2009-04-17T14:06:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4933",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4933#issuecomment-37442",
+    "user": "cremona"
+}
+```
 
 Changing keywords from "documentation" to "documentation, elliptic curves".
 
 
+
 ---
 
-Comment by cremona created at 2009-04-17 14:06:15
+archive/issue_comments_037443.json:
+```json
+{
+    "body": "The patch trac_4933-3.patch converts the following to rest/sphinx and adds them to the reference manual:\n* ell_number_field\n* ell_local_data\n* ell_torsion\n* ell_point\n* period_lattice\n* weierstrass_morphism\nas well as fixing some glitches in other files (notable ell_rational_field) and adding a few doctests.\n\nAlmost all the changes are in docstrings.  To review this you'll have to build the docs (reference manual) and eyeball the output.\n\nNB I combined more than one earlier patch into one, but failed to get \"sage -hg qfold\" to work, so i nthe patch there are liable to be more than one chunk for each file.",
+    "created_at": "2009-04-17T14:06:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4933",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4933#issuecomment-37443",
+    "user": "cremona"
+}
+```
 
 The patch trac_4933-3.patch converts the following to rest/sphinx and adds them to the reference manual:
-    * ell_number_field
-    * ell_local_data
-    * ell_torsion
-    * ell_point
-    * period_lattice
-    * weierstrass_morphism
+* ell_number_field
+* ell_local_data
+* ell_torsion
+* ell_point
+* period_lattice
+* weierstrass_morphism
 as well as fixing some glitches in other files (notable ell_rational_field) and adding a few doctests.
 
 Almost all the changes are in docstrings.  To review this you'll have to build the docs (reference manual) and eyeball the output.
@@ -122,16 +241,38 @@ Almost all the changes are in docstrings.  To review this you'll have to build t
 NB I combined more than one earlier patch into one, but failed to get "sage -hg qfold" to work, so i nthe patch there are liable to be more than one chunk for each file.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-04-17 14:24:14
+archive/issue_comments_037444.json:
+```json
+{
+    "body": "If you're patching ell_rational_field, can you fix the doc string for mwrank?  It looks pretty garbled to me, and I don't know what it's supposed to say...",
+    "created_at": "2009-04-17T14:24:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4933",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4933#issuecomment-37444",
+    "user": "jhpalmieri"
+}
+```
 
 If you're patching ell_rational_field, can you fix the doc string for mwrank?  It looks pretty garbled to me, and I don't know what it's supposed to say...
 
 
+
 ---
 
-Comment by cremona created at 2009-04-17 14:29:43
+archive/issue_comments_037445.json:
+```json
+{
+    "body": "Replying to [comment:7 jhpalmieri]:\n> If you're patching ell_rational_field, can you fix the doc string for mwrank?  It looks pretty garbled to me, and I don't know what it's supposed to say...\n\nIt looks pretty clear to me, except perhaps where it explains the format of the options string.  Perhaps we should just include the output of \"sage -mwrank -h\":\n\n```\nmwrank command line options (can be in any order):\n\n-h      help            prints this info and quits\n-q      quiet           turns OFF banner display\n-v n    verbosity       sets verbosity to n (default=1)\n-o      PARI/GP output  turns ON extra PARI/GP short output (default is OFF)\n-p n    precision       sets precision to n decimals (default=15)\n                        (irrelevant unless compiled with multiprecision option)\n-b n    quartic bound   bound on quartic point search (default=10)\n-x n    n aux           number of aux primes used for sieving (default=6)\n-l      list            turns ON listing of points (default ON unless v=0)\n-t      trace           turns ON trace of quartic equivalence testing (debugging only)\n-s      selmer_only     if set, computes Selmer rank only (default: not set)\n-d      skip_2nd_descent        if set, skips the second descent for curves with 2-torsion (default: not set)\n-S n    sat_bd          upper bound on saturation primes (default=100, -1 for automatic)\n```\n",
+    "created_at": "2009-04-17T14:29:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4933",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4933#issuecomment-37445",
+    "user": "cremona"
+}
+```
 
 Replying to [comment:7 jhpalmieri]:
 > If you're patching ell_rational_field, can you fix the doc string for mwrank?  It looks pretty garbled to me, and I don't know what it's supposed to say...
@@ -158,9 +299,20 @@ mwrank command line options (can be in any order):
 
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-04-17 15:13:55
+archive/issue_comments_037446.json:
+```json
+{
+    "body": ">It looks pretty clear to me, except perhaps where it explains the format of the options string. \n\nDo you mean this part?\n\n``` \n        -  ``options`` - string; passed when starting mwrank.\n           The format is q pprecision vverbosity bhlim_q xnaux chlim_c l t o\n           s d]\n```\n",
+    "created_at": "2009-04-17T15:13:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4933",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4933#issuecomment-37446",
+    "user": "jhpalmieri"
+}
+```
 
 >It looks pretty clear to me, except perhaps where it explains the format of the options string. 
 
@@ -174,9 +326,20 @@ Do you mean this part?
 
 
 
+
 ---
 
-Comment by cremona created at 2009-04-17 15:14:48
+archive/issue_comments_037447.json:
+```json
+{
+    "body": "Replying to [comment:9 jhpalmieri]:\n> >It looks pretty clear to me, except perhaps where it explains the format of the options string. \n> \n> Do you mean this part?\n> {{{ \n>         -  ``options`` - string; passed when starting mwrank.\n>            The format is q pprecision vverbosity bhlim_q xnaux chlim_c l t o\n>            s d]\n> }}}\nYes!",
+    "created_at": "2009-04-17T15:14:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4933",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4933#issuecomment-37447",
+    "user": "cremona"
+}
+```
 
 Replying to [comment:9 jhpalmieri]:
 > >It looks pretty clear to me, except perhaps where it explains the format of the options string. 
@@ -190,37 +353,96 @@ Replying to [comment:9 jhpalmieri]:
 Yes!
 
 
+
 ---
+
+archive/issue_comments_037448.json:
+```json
+{
+    "body": "Attachment\n\nReplaces previous;  based on 3.4.1.rc3 + #5808 patch",
+    "created_at": "2009-04-17T15:52:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4933",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4933#issuecomment-37448",
+    "user": "cremona"
+}
+```
 
 Attachment
 
 Replaces previous;  based on 3.4.1.rc3 + #5808 patch
 
 
+
 ---
 
-Comment by cremona created at 2009-04-17 15:56:26
+archive/issue_comments_037449.json:
+```json
+{
+    "body": "The new patch (trac_4933-3-rebase.patch) replaces the earlier one as it applies cleanly to 3.4.1.rc3 + ref-warnings.patch from #5808.  It also answers John Palmieri's request to make the docstring for mwrank() less confusing.\n\nI think the reason that this one is smaller is that the previous one applied several patches in succession to the same files, while this one does not.  At least, I hope that is the reason.",
+    "created_at": "2009-04-17T15:56:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4933",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4933#issuecomment-37449",
+    "user": "cremona"
+}
+```
 
 The new patch (trac_4933-3-rebase.patch) replaces the earlier one as it applies cleanly to 3.4.1.rc3 + ref-warnings.patch from #5808.  It also answers John Palmieri's request to make the docstring for mwrank() less confusing.
 
 I think the reason that this one is smaller is that the previous one applied several patches in succession to the same files, while this one does not.  At least, I hope that is the reason.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-04-17 21:09:59
+archive/issue_comments_037450.json:
+```json
+{
+    "body": "Code looks good, all tests pass, the reference manual looks nice. I'm attaching a referee's patch with two very small changes.",
+    "created_at": "2009-04-17T21:09:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4933",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4933#issuecomment-37450",
+    "user": "jhpalmieri"
+}
+```
 
 Code looks good, all tests pass, the reference manual looks nice. I'm attaching a referee's patch with two very small changes.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-04-17 21:10:30
+archive/issue_comments_037451.json:
+```json
+{
+    "body": "apply on top of the other patch",
+    "created_at": "2009-04-17T21:10:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4933",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4933#issuecomment-37451",
+    "user": "jhpalmieri"
+}
+```
 
 apply on top of the other patch
 
 
+
 ---
+
+archive/issue_comments_037452.json:
+```json
+{
+    "body": "Attachment\n\nReplying to [comment:12 jhpalmieri]:\n> Code looks good, all tests pass, the reference manual looks nice. I'm attaching a referee's patch with two very small changes.\n\nThanks John -- I am quite happy with your adjustments.",
+    "created_at": "2009-04-17T22:17:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4933",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4933#issuecomment-37452",
+    "user": "cremona"
+}
+```
 
 Attachment
 
@@ -230,16 +452,38 @@ Replying to [comment:12 jhpalmieri]:
 Thanks John -- I am quite happy with your adjustments.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-18 01:52:45
+archive/issue_comments_037453.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-04-18T01:52:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4933",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4933#issuecomment-37453",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-18 01:52:45
+archive/issue_comments_037454.json:
+```json
+{
+    "body": "Merged  trac_4933-3-rebase.patch and 4933-ref.patch in Sage 3.4.1.rc4.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-18T01:52:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4933",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4933#issuecomment-37454",
+    "user": "mabshoff"
+}
+```
 
 Merged  trac_4933-3-rebase.patch and 4933-ref.patch in Sage 3.4.1.rc4.
 
@@ -248,8 +492,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by cremona created at 2009-04-22 10:42:10
+archive/issue_comments_037455.json:
+```json
+{
+    "body": "This is continued in #5851.",
+    "created_at": "2009-04-22T10:42:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4933",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4933#issuecomment-37455",
+    "user": "cremona"
+}
+```
 
 This is continued in #5851.

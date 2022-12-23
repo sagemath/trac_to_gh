@@ -1,19 +1,44 @@
 # Issue 2393: the version of mercurial shipped with sage does not include the queue extension
 
-Issue created by migration from https://trac.sagemath.org/ticket/2393
-
-Original creator: mhansen
-
-Original creation time: 2008-03-05 06:20:44
-
+archive/issues_002393.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nIt is very annoying when trying to run hg under a Sage shell.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2393\n\n",
+    "created_at": "2008-03-05T06:20:44Z",
+    "labels": [
+        "packages: standard",
+        "minor",
+        "bug"
+    ],
+    "title": "the version of mercurial shipped with sage does not include the queue extension",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2393",
+    "user": "mhansen"
+}
+```
 Assignee: mabshoff
 
 It is very annoying when trying to run hg under a Sage shell.
 
+Issue created by migration from https://trac.sagemath.org/ticket/2393
+
+
+
+
 
 ---
 
-Comment by cwitty created at 2008-03-05 16:55:02
+archive/issue_comments_016139.json:
+```json
+{
+    "body": "Actually, Sage's mercurial does include the queue extension; it's just not enabled by default.\n\nYou can enable it by adding these lines to $HOME/.hgrc:\n\n```\n[extensions]\n# patch queues for mercurial\n# add the 'q*' commands\nhgext.mq=\n```\n\n\nDebian enables the queue extension (along with many others) for its version of mercurial, using configuration files in /etc/mercurial.  I patched Sage's mercurial spkg to not look in /etc/mercurial, because Debian's configuration enabled extensions that were not included in Sage's mercurial, leading to annoying (although harmless) warning messages on every mercurial command.\n\nSo this bug could be resolved by:\n\n1) tell everybody who cares to add the above lines to their .hgrc\n\n2) patch Sage's mercurial to look in $SAGE_LOCAL/etc/mercurial, and install a default configuration there that enables queues",
+    "created_at": "2008-03-05T16:55:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2393",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2393#issuecomment-16139",
+    "user": "cwitty"
+}
+```
 
 Actually, Sage's mercurial does include the queue extension; it's just not enabled by default.
 
@@ -36,16 +61,38 @@ So this bug could be resolved by:
 2) patch Sage's mercurial to look in $SAGE_LOCAL/etc/mercurial, and install a default configuration there that enables queues
 
 
+
 ---
 
-Comment by mhansen created at 2008-03-05 22:48:05
+archive/issue_comments_016140.json:
+```json
+{
+    "body": "Aha, I had I thought I enabled it in .hgrc, but it turns out it was just in /etc/mercurial.  Thanks!",
+    "created_at": "2008-03-05T22:48:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2393",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2393#issuecomment-16140",
+    "user": "mhansen"
+}
+```
 
 Aha, I had I thought I enabled it in .hgrc, but it turns out it was just in /etc/mercurial.  Thanks!
 
 
+
 ---
 
-Comment by was created at 2008-03-05 22:59:07
+archive/issue_comments_016141.json:
+```json
+{
+    "body": "> 2) patch Sage's mercurial to look in \n> $SAGE_LOCAL/etc/mercurial, and install a default \n> configuration there that enables queues\n\nI like this suggestion, since \"1) tell everybody ...\" is always doomed to failure and frustration.",
+    "created_at": "2008-03-05T22:59:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2393",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2393#issuecomment-16141",
+    "user": "was"
+}
+```
 
 > 2) patch Sage's mercurial to look in 
 > $SAGE_LOCAL/etc/mercurial, and install a default 
@@ -54,9 +101,20 @@ Comment by was created at 2008-03-05 22:59:07
 I like this suggestion, since "1) tell everybody ..." is always doomed to failure and frustration.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-30 08:45:39
+archive/issue_comments_016142.json:
+```json
+{
+    "body": "\n```\n[01:39am] mabshoff: mhansen: isn't the que extension now part of hg 1.0.x?\n[01:40am] mabshoff: I.e. we can close #2393 as fixed.\n[01:40am] ddrake: mabshoff: queue is now standard in hg\n[01:40am] mabshoff: excellent\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2008-10-30T08:45:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2393",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2393#issuecomment-16142",
+    "user": "mabshoff"
+}
+```
 
 
 ```
@@ -72,8 +130,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-30 08:45:39
+archive/issue_comments_016143.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-10-30T08:45:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2393",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2393#issuecomment-16143",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

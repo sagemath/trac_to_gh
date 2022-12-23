@@ -1,11 +1,21 @@
 # Issue 5670: documentation for isogeny_class in EllipticCurve
 
-Issue created by migration from https://trac.sagemath.org/ticket/5670
-
-Original creator: victor
-
-Original creation time: 2009-04-02 20:16:58
-
+archive/issues_005670.json:
+```json
+{
+    "body": "Assignee: tba\n\nThe docstring says at the end:\n\n See http://modular.ucsd.edu/Tables/nature/ for more interesting\n        examples of isogeny structures.\n\nThe URL should be changed to\n\nhttp://math.harvard.edu/~elkies/nature.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/5670\n\n",
+    "created_at": "2009-04-02T20:16:58Z",
+    "labels": [
+        "documentation",
+        "minor",
+        "bug"
+    ],
+    "title": "documentation for isogeny_class in EllipticCurve",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5670",
+    "user": "victor"
+}
+```
 Assignee: tba
 
 The docstring says at the end:
@@ -17,15 +27,43 @@ The URL should be changed to
 
 http://math.harvard.edu/~elkies/nature.html
 
+Issue created by migration from https://trac.sagemath.org/ticket/5670
+
+
+
+
 
 ---
+
+archive/issue_comments_044355.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-04-02T20:30:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5670",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5670#issuecomment-44355",
+    "user": "victor"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-02 20:45:01
+archive/issue_comments_044356.json:
+```json
+{
+    "body": "Merged in Sage 3.4.1.rc0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-02T20:45:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5670",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5670#issuecomment-44356",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.4.1.rc0.
 
@@ -34,8 +72,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-02 20:45:01
+archive/issue_comments_044357.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-04-02T20:45:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5670",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5670#issuecomment-44357",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

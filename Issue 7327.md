@@ -1,11 +1,21 @@
 # Issue 7327: Make integrate accept a variable range as a tuple
 
-Issue created by migration from https://trac.sagemath.org/ticket/7327
-
-Original creator: jason
-
-Original creation time: 2009-10-28 00:24:05
-
+archive/issues_007327.json:
+```json
+{
+    "body": "Assignee: burcin\n\nCC:  kcrisman\n\nIt is inconsistent with plot and other functions that this just hangs:\n\n\n```\nintegrate(sin(x), (x,0,1))\n```\n\n\nThis patch takes care of this.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7327\n\n",
+    "created_at": "2009-10-28T00:24:05Z",
+    "labels": [
+        "calculus",
+        "major",
+        "bug"
+    ],
+    "title": "Make integrate accept a variable range as a tuple",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7327",
+    "user": "jason"
+}
+```
 Assignee: burcin
 
 CC:  kcrisman
@@ -21,70 +31,188 @@ integrate(sin(x), (x,0,1))
 This patch takes care of this.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7327
+
+
+
+
 
 ---
+
+archive/issue_comments_061278.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-10-28T00:38:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7327",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7327#issuecomment-61278",
+    "user": "jason"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by kcrisman created at 2009-10-28 01:14:33
+archive/issue_comments_061279.json:
+```json
+{
+    "body": "This is a duplicate of #6816.  The tests for one of these should be incorporated in the other - probably in this one, since it has some doc upgrades - and probably also the check for too many arguments in the tuple.",
+    "created_at": "2009-10-28T01:14:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7327",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7327#issuecomment-61279",
+    "user": "kcrisman"
+}
+```
 
 This is a duplicate of #6816.  The tests for one of these should be incorporated in the other - probably in this one, since it has some doc upgrades - and probably also the check for too many arguments in the tuple.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-10-28 01:14:33
+archive/issue_comments_061280.json:
+```json
+{
+    "body": "Changing status from new to needs_work.",
+    "created_at": "2009-10-28T01:14:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7327",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7327#issuecomment-61280",
+    "user": "kcrisman"
+}
+```
 
 Changing status from new to needs_work.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-11-05 17:43:31
+archive/issue_comments_061281.json:
+```json
+{
+    "body": "Based on Sage 4.2",
+    "created_at": "2009-11-05T17:43:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7327",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7327#issuecomment-61281",
+    "user": "kcrisman"
+}
+```
 
 Based on Sage 4.2
 
 
+
 ---
+
+archive/issue_comments_061282.json:
+```json
+{
+    "body": "Attachment\n\nUpdated patch includes the issues mentioned in previous comment, is ready for review.  Positive review to the parts I didn't write.",
+    "created_at": "2009-11-05T17:45:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7327",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7327#issuecomment-61282",
+    "user": "kcrisman"
+}
+```
 
 Attachment
 
 Updated patch includes the issues mentioned in previous comment, is ready for review.  Positive review to the parts I didn't write.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-11-05 17:45:16
+archive/issue_comments_061283.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2009-11-05T17:45:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7327",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7327#issuecomment-61283",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by mhansen created at 2009-11-06 05:10:19
+archive/issue_comments_061284.json:
+```json
+{
+    "body": "Looks good to me.",
+    "created_at": "2009-11-06T05:10:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7327",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7327#issuecomment-61284",
+    "user": "mhansen"
+}
+```
 
 Looks good to me.
 
 
+
 ---
 
-Comment by mhansen created at 2009-11-06 05:10:19
+archive/issue_comments_061285.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-11-06T05:10:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7327",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7327#issuecomment-61285",
+    "user": "mhansen"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mhansen created at 2009-11-06 05:10:58
+archive/issue_comments_061286.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-11-06T05:10:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7327",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7327#issuecomment-61286",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by kcrisman created at 2009-12-22 16:29:15
+archive/issue_comments_061287.json:
+```json
+{
+    "body": "Just an update - it turns out the original integral reported in #6816 is not, in fact, convergent.  Fixing this doctest so something mathematically correct happens will be done in #7745, since Maxima 5.20.1 simply returns that integral now, as opposed to giving 0.",
+    "created_at": "2009-12-22T16:29:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7327",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7327#issuecomment-61287",
+    "user": "kcrisman"
+}
+```
 
 Just an update - it turns out the original integral reported in #6816 is not, in fact, convergent.  Fixing this doctest so something mathematically correct happens will be done in #7745, since Maxima 5.20.1 simply returns that integral now, as opposed to giving 0.

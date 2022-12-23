@@ -1,11 +1,21 @@
 # Issue 5648: Multiplication for modular forms
 
-Issue created by migration from https://trac.sagemath.org/ticket/5648
-
-Original creator: davidloeffler
-
-Original creation time: 2009-03-31 12:25:20
-
+archive/issues_005648.json:
+```json
+{
+    "body": "Assignee: davidloeffler\n\nThe attached patch implements !__mul!__ for ModularFormElement objects, so one can say\n\n```\nsage: M = ModularForms(DirichletGroup(3).0, 5)\nsage: f = M.0\nsage: f * f\n```\n\n\nand get back a modular form (in this case a weight 5 modular form of level 3 and trivial character).\n\nIn order to get this to work, I've made a few small adjustments elsewhere: \n\n* DirichletGroup objects now have a base_extend method\n\n* a bug when multiplying two characters of the same modulus but different zeta orders is fixed\n\n* Dirichlet characters now always compare as unequal unless they have the same modulus (in particular, == for Dirichlet characters is now transitive, which it previously wasn't)\n\n* ambient spaces of modular forms with character now have a decent base_extend method (previously base_extend would forget the character and return an ambient space of modular forms for Gamma1(N)).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5648\n\n",
+    "created_at": "2009-03-31T12:25:20Z",
+    "labels": [
+        "modular forms",
+        "minor",
+        "enhancement"
+    ],
+    "title": "Multiplication for modular forms",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5648",
+    "user": "davidloeffler"
+}
+```
 Assignee: davidloeffler
 
 The attached patch implements !__mul!__ for ModularFormElement objects, so one can say
@@ -30,24 +40,63 @@ In order to get this to work, I've made a few small adjustments elsewhere:
 * ambient spaces of modular forms with character now have a decent base_extend method (previously base_extend would forget the character and return an ambient space of modular forms for Gamma1(N)).
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5648
+
+
+
+
 
 ---
+
+archive/issue_comments_044100.json:
+```json
+{
+    "body": "Attachment\n\npatch against 3.4.1.alpha0",
+    "created_at": "2009-03-31T12:25:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5648",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5648#issuecomment-44100",
+    "user": "davidloeffler"
+}
+```
 
 Attachment
 
 patch against 3.4.1.alpha0
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-03-31 12:27:42
+archive/issue_comments_044101.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-03-31T12:27:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5648",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5648#issuecomment-44101",
+    "user": "davidloeffler"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by was created at 2009-03-31 14:10:58
+archive/issue_comments_044102.json:
+```json
+{
+    "body": "Quick comment: I'm concerned the Sturm bound isn't enough when they are Eisenstein series (it's definitely enough for cusp forms):\n\n```\n\t889\t        m = newparent.sturm_bound() \n \t890\t        newqexp = self.qexp(m) * other.qexp(m) \n \t891\t         \n \t892\t        return newparent.base_extend(newqexp.base_ring())(newqexp) \n```\n\nMaybe I'm just being dense at the moment.\n\nYou could remedy this by increasing m if a given value doesn't work.   There might (should) be a method on newparent that returns the actual precision needed to determine a q-expansion. \n\nI am happy with all the API changes you list in the ticket summary, including changing the meaning of equals for Dirichlet characters.",
+    "created_at": "2009-03-31T14:10:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5648",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5648#issuecomment-44102",
+    "user": "was"
+}
+```
 
 Quick comment: I'm concerned the Sturm bound isn't enough when they are Eisenstein series (it's definitely enough for cusp forms):
 
@@ -65,9 +114,20 @@ You could remedy this by increasing m if a given value doesn't work.   There mig
 I am happy with all the API changes you list in the ticket summary, including changing the meaning of equals for Dirichlet characters.
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-03-31 14:37:51
+archive/issue_comments_044103.json:
+```json
+{
+    "body": "The function sturm_bound in sage.modular.dims is returning ceil( weight * index / 12), which is the Sturm bound for M_k(Gamma) according to theorem 9.18 in your book; so it should be fine for Eisenstein series.\n\n(In fact, sage.modular.dims.sturm_bound for GammaH and Gamma1 is actually doing something a bit strange -- it calculates the Sturm bound for the corresponding Gamma0 and multiplies it by the index of the given group in Gamma0, so it is giving a wastefully high bound due to premature rounding. I noticed this, and fixed it, as part of #5180.) \n\nIdeally ModularForms(N, k).sturm_bound() and CuspForms(N, k).sturm_bound() should return different answers corresponding to the two statements in your theorem 9.18, in order to be really painfully efficient with not computing more terms than we need. Furthermore ModularForms(character, k).sturm_bound() should return the Buzzard-Sturm bound for forms of known character. (I think I might have already put the latter in #5180). But all this is optimisation; it should work fine as-is.",
+    "created_at": "2009-03-31T14:37:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5648",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5648#issuecomment-44103",
+    "user": "davidloeffler"
+}
+```
 
 The function sturm_bound in sage.modular.dims is returning ceil( weight * index / 12), which is the Sturm bound for M_k(Gamma) according to theorem 9.18 in your book; so it should be fine for Eisenstein series.
 
@@ -76,9 +136,20 @@ The function sturm_bound in sage.modular.dims is returning ceil( weight * index 
 Ideally ModularForms(N, k).sturm_bound() and CuspForms(N, k).sturm_bound() should return different answers corresponding to the two statements in your theorem 9.18, in order to be really painfully efficient with not computing more terms than we need. Furthermore ModularForms(character, k).sturm_bound() should return the Buzzard-Sturm bound for forms of known character. (I think I might have already put the latter in #5180). But all this is optimisation; it should work fine as-is.
 
 
+
 ---
 
-Comment by GeorgSWeber created at 2009-03-31 19:04:01
+archive/issue_comments_044104.json:
+```json
+{
+    "body": "Looks good to me.\n\nKeep pushing!\n\nCheers,\ngsw",
+    "created_at": "2009-03-31T19:04:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5648",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5648#issuecomment-44104",
+    "user": "GeorgSWeber"
+}
+```
 
 Looks good to me.
 
@@ -88,16 +159,38 @@ Cheers,
 gsw
 
 
+
 ---
 
-Comment by mabshoff created at 2009-03-31 20:17:30
+archive/issue_comments_044105.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-03-31T20:17:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5648",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5648#issuecomment-44105",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-03-31 20:17:30
+archive/issue_comments_044106.json:
+```json
+{
+    "body": "Merged in Sage 3.4.1.rc0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-03-31T20:17:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5648",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5648#issuecomment-44106",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.4.1.rc0.
 

@@ -1,55 +1,139 @@
 # Issue 7118: remove quaddouble from sage
 
-Issue created by migration from https://trac.sagemath.org/ticket/7118
-
-Original creator: was
-
-Original creation time: 2009-10-04 22:56:48
-
+archive/issues_007118.json:
+```json
+{
+    "body": "Assignee: tbd\n\nSince quaddouble was deprecated a year ago, and voted out, we should finally actually remove it.  This is motivated also by us getting numerous build failure reports that involve quaddouble lately.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7118\n\n",
+    "created_at": "2009-10-04T22:56:48Z",
+    "labels": [
+        "build",
+        "major",
+        "enhancement"
+    ],
+    "title": "remove quaddouble from sage",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7118",
+    "user": "was"
+}
+```
 Assignee: tbd
 
 Since quaddouble was deprecated a year ago, and voted out, we should finally actually remove it.  This is motivated also by us getting numerous build failure reports that involve quaddouble lately.
 
+Issue created by migration from https://trac.sagemath.org/ticket/7118
+
+
+
+
 
 ---
+
+archive/issue_comments_058987.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-10-04T23:12:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7118",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7118#issuecomment-58987",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_058988.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-10-05T02:54:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7118",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7118#issuecomment-58988",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2009-10-05 02:54:53
+archive/issue_comments_058989.json:
+```json
+{
+    "body": "I also removed the rqdf objects from the pickle jar test, since they obviously no longer unpickle.  People using RQDF have been warned not to for a year now.",
+    "created_at": "2009-10-05T02:54:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7118",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7118#issuecomment-58989",
+    "user": "was"
+}
+```
 
 I also removed the rqdf objects from the pickle jar test, since they obviously no longer unpickle.  People using RQDF have been warned not to for a year now.
 
 
+
 ---
 
-Comment by was created at 2009-10-05 02:55:27
+archive/issue_comments_058990.json:
+```json
+{
+    "body": "I did a clean build test of sage with these patches, plus the appropriate changes to spkg/standard/deps and spkg/install (which can't be expressed as patches right now), and it all works perfectly.",
+    "created_at": "2009-10-05T02:55:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7118",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7118#issuecomment-58990",
+    "user": "was"
+}
+```
 
 I did a clean build test of sage with these patches, plus the appropriate changes to spkg/standard/deps and spkg/install (which can't be expressed as patches right now), and it all works perfectly.
 
 
+
 ---
 
-Comment by was created at 2009-10-05 02:56:38
+archive/issue_comments_058991.json:
+```json
+{
+    "body": "Changing priority from major to blocker.",
+    "created_at": "2009-10-05T02:56:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7118",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7118#issuecomment-58991",
+    "user": "was"
+}
+```
 
 Changing priority from major to blocker.
 
 
+
 ---
 
-Comment by mvngu created at 2009-10-10 21:05:27
+archive/issue_comments_058992.json:
+```json
+{
+    "body": "Applied patches in this order to Sage 4.1.2.rc0:\n\n1. `trac_7118.patch`\n2. `trac_7118-part2.patch`\n \nDoctesting resulted in the following failure:\n\n```\nsage -t -long \"devel/sage-main/sage/structure/sage_object.pyx\"\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.2.rc0/devel/sage-main/sage/structure/sage_object.pyx\", line 931:\n    sage: sage.structure.sage_object.unpickle_all(std)\nExpected:\n    doctest...\n    Successfully unpickled 571 objects.\n    Failed to unpickle 0 objects.\nGot:\n    doctest:1: DeprecationWarning: Your word object is saved in an old file format since FiniteWord_over_OrderedAlphabet is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing \"word.save(filename)\" to ensure that it will load in future versions of Sage.\n    doctest:1: DeprecationWarning: Your word object is saved in an old file format since AbstractWord is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing \"word.save(filename)\" to ensure that it will load in future versions of Sage.\n    doctest:1: DeprecationWarning: Your word object is saved in an old file format since Word_over_Alphabet is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing \"word.save(filename)\" to ensure that it will load in future versions of Sage.\n    doctest:1: DeprecationWarning: Your word object is saved in an old file format since Word_over_OrderedAlphabet is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing \"word.save(filename)\" to ensure that it will load in future versions of Sage.\n    doctest:1: DeprecationWarning: ChristoffelWord_Lower is deprecated, use LowerChristoffelWord instead\n    doctest:1172: DeprecationWarning: RQDF is deprecated; use RealField(212) instead.\n    Successfully unpickled 572 objects.\n    Failed to unpickle 0 objects.\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_21\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/mvngu/.sage//tmp/.doctest_sage_object.py\n\t [6.0 s]\n```\n",
+    "created_at": "2009-10-10T21:05:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7118",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7118#issuecomment-58992",
+    "user": "mvngu"
+}
+```
 
 Applied patches in this order to Sage 4.1.2.rc0:
 
- 1. `trac_7118.patch`
- 1. `trac_7118-part2.patch`
+1. `trac_7118.patch`
+2. `trac_7118-part2.patch`
  
 Doctesting resulted in the following failure:
 
@@ -81,9 +165,20 @@ For whitespace errors, see the file /home/mvngu/.sage//tmp/.doctest_sage_object.
 
 
 
+
 ---
 
-Comment by was created at 2009-10-10 21:07:53
+archive/issue_comments_058993.json:
+```json
+{
+    "body": "\n```\noh, your own failure is in the pickle jar.\n[2:06pm] williamstein:\nThat requires manually removing a pickle from the pickle jar.\n[2:07pm] williamstein:\nThere is a quaddouble pickle in there.\n[2:07pm] williamstein:\nNotice that the doctest failure is in the message about how many pickles there are.\n[2:07pm] williamstein:\nso that's fine.\n[2:07pm] williamstein:\nIn my tree i've removed that.\n[2:07pm] williamstein:\nthat = 1 pickle\n```\n",
+    "created_at": "2009-10-10T21:07:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7118",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7118#issuecomment-58993",
+    "user": "was"
+}
+```
 
 
 ```
@@ -104,9 +199,20 @@ that = 1 pickle
 
 
 
+
 ---
 
-Comment by mvngu created at 2009-10-10 21:14:13
+archive/issue_comments_058994.json:
+```json
+{
+    "body": "\n```\n14:08 < mvngu> williamstein: Which file(s) exactly must be removed?\n14:08 < mvngu> williamstein: Can you give me the path to those files to remove?\n14:09 < williamstein> you have to remove a file from the tarball in\n                      data/extcode/pickle_jar\n14:09 < williamstein> it's the one with \"rqdf\" in its name, I think.\n14:09 < williamstein> then you remake the tarball.\n14:10 < mvngu> williamstein: OK. Thank you.\n```\n",
+    "created_at": "2009-10-10T21:14:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7118",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7118#issuecomment-58994",
+    "user": "mvngu"
+}
+```
 
 
 ```
@@ -121,26 +227,50 @@ Comment by mvngu created at 2009-10-10 21:14:13
 
 
 
+
 ---
 
-Comment by mvngu created at 2009-10-11 02:05:02
+archive/issue_comments_058995.json:
+```json
+{
+    "body": "install log on sage.math",
+    "created_at": "2009-10-11T02:05:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7118",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7118#issuecomment-58995",
+    "user": "mvngu"
+}
+```
 
 install log on sage.math
 
 
+
 ---
+
+archive/issue_comments_058996.json:
+```json
+{
+    "body": "Attachment\n\nApplied patches in this order to Sage 4.1.2.rc0:\n\n1. `trac_7118.patch`\n2. `trac_7118-part2.patch`\n \nThen uncompressed the file `SAGE_ROOT/data/extcode/pickle_jar/pickle_jar.tar.bz2` and removed the following files from the directory `SAGE_ROOT/data/extcode/pickle_jar/pickle_jar`:\n\n1. `_type__sage_rings_real_rqdf_QuadDoubleElement__.sobj`\n2. `_type__sage_rings_real_rqdf_QuadDoubleElement__.txt`\n \nWith these files removed, the directory `SAGE_ROOT/data/extcode/pickle_jar/pickle_jar` is compressed into a tarball again and replaced the previous version of the same tarball. From Mercurial's point of view, this would result in a change to a file it tracks, i.e. the pickle_jar.tar.bz2 has changed and all changes should be checked in. Now edit the file `SAGE_ROOT/spkg/install` to comment out the line related to quaddouble. The commented lines should be:\n\n```\n# See ticket #7118: remove quaddouble from sage                                 \n# QUADDOUBLE=`$newest quaddouble`                                               \n# export QUADDOUBLE\n```\n\nThe file `SAGE_ROOT/spkg/install` is not tracked by Mercurial, so no need to check in changes. Also, edit the file `SAGE_ROOT/spkg/standard/deps` to comment out all lines related to quaddouble. The commented lines should be:\n\n```\n# See ticket #7118: remove quaddouble from sage\n# $(INST)/$(QUADDOUBLE): $(BASE) $(INST)/$(MPIR) $(INST)/$(MPFR)\n#       $(SAGE_SPKG) $(QUADDOUBLE) 2>&1\n\n<SNIP>\n\n                  # See ticket #7118: remove quaddouble from sage\n                  # $(INST)/$(QUADDOUBLE) \\\n```\n\nThis file is also not tracked by Mercurial, so no need to check in changes. Finally, remove the package quaddouble-2.2.p9.spkg from the directory `SAGE_ROOT/spkg/standard` of standard Sage packages. With these changes, I made a new source tarball called \"sage-4.1.2.rc1-7118-quaddouble\". After unpacking that tarball and compiling from scratch, I got the following error. The full install log is attached.\n\n```\ng++ -o libcsage.so -shared src/convert.os src/interrupt.os src/mpn_pylong.os src/mpz_pylong.os src/mpz_longlong.os src/stdsage.os src/gmp_globals.os src/ZZ_pylong.os src/ntl_wrap.os -L/scratch/mvngu/release/sandbox/sage-4.1.2.rc1-7118-quaddouble/local/lib -lntl -lgmp -lpari\n*** TOUCHING ALL CYTHON (.pyx) FILES ***\nscons: `install' is up to date.\n\n----------------------------------------------------------\nsage: Building and installing modified Sage library files.\n\n\nInstalling c_lib\nscons: `install' is up to date.\nTraceback (most recent call last):\n  File \"setup.py\", line 16, in <module>\n    from module_list import ext_modules\n  File \"/scratch/mvngu/release/sandbox/sage-4.1.2.rc1-7118-quaddouble/devel/sage-main/module_list.py\", line 84, in <module>\n    for line in open(SAGE_LOCAL + \"/share/polybori/flags.conf\"):\nIOError: [Errno 2] No such file or directory: '/scratch/mvngu/release/sandbox/sage-4.1.2.rc1-7118-quaddouble/local//share/polybori/flags.conf'\nsage: There was an error installing modified sage library code.\n\nERROR installing SAGE\n\nreal    0m4.375s\nuser    0m3.050s\nsys     0m1.290s\nsage: An error occurred while installing sage-4.1.2.rc1-7118-quaddouble\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /scratch/mvngu/release/sandbox/sage-4.1.2.rc1-7118-quaddouble/install.log.  Describe your computer, operating system, etc.\nIf you want to try to fix the problem yourself, *don't* just cd to\n/scratch/mvngu/release/sandbox/sage-4.1.2.rc1-7118-quaddouble/spkg/build/sage-4.1.2.rc1-7118-quaddouble and type 'make'.\nInstead type \"/scratch/mvngu/release/sandbox/sage-4.1.2.rc1-7118-quaddouble/sage -sh\"\nin order to set all environment variables correctly, then cd to\n/scratch/mvngu/release/sandbox/sage-4.1.2.rc1-7118-quaddouble/spkg/build/sage-4.1.2.rc1-7118-quaddouble\n(When you are done debugging, you can type \"exit\" to leave the\nsubshell.)\nmake[1]: *** [installed/sage-4.1.2.rc1-7118-quaddouble] Error 1\nmake[1]: Leaving directory `/scratch/mvngu/release/sandbox/sage-4.1.2.rc1-7118-quaddouble/spkg'\n\nreal    50m13.360s\nuser    42m20.520s\nsys     7m27.370s\nError building Sage.\n```\n",
+    "created_at": "2009-10-11T02:05:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7118",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7118#issuecomment-58996",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
 Applied patches in this order to Sage 4.1.2.rc0:
 
- 1. `trac_7118.patch`
- 1. `trac_7118-part2.patch`
+1. `trac_7118.patch`
+2. `trac_7118-part2.patch`
  
 Then uncompressed the file `SAGE_ROOT/data/extcode/pickle_jar/pickle_jar.tar.bz2` and removed the following files from the directory `SAGE_ROOT/data/extcode/pickle_jar/pickle_jar`:
 
- 1. `_type__sage_rings_real_rqdf_QuadDoubleElement__.sobj`
- 1. `_type__sage_rings_real_rqdf_QuadDoubleElement__.txt`
+1. `_type__sage_rings_real_rqdf_QuadDoubleElement__.sobj`
+2. `_type__sage_rings_real_rqdf_QuadDoubleElement__.txt`
  
 With these files removed, the directory `SAGE_ROOT/data/extcode/pickle_jar/pickle_jar` is compressed into a tarball again and replaced the previous version of the same tarball. From Mercurial's point of view, this would result in a change to a file it tracks, i.e. the pickle_jar.tar.bz2 has changed and all changes should be checked in. Now edit the file `SAGE_ROOT/spkg/install` to comment out the line related to quaddouble. The commented lines should be:
 
@@ -211,18 +341,40 @@ Error building Sage.
 
 
 
+
 ---
 
-Comment by was created at 2009-10-11 06:44:31
+archive/issue_comments_058997.json:
+```json
+{
+    "body": "The error you get suggests a messed up deps file.  Here's mine, which worked (I think):\n\nhttp://sage.math.washington.edu/home/wstein/patches/7118/deps",
+    "created_at": "2009-10-11T06:44:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7118",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7118#issuecomment-58997",
+    "user": "was"
+}
+```
 
 The error you get suggests a messed up deps file.  Here's mine, which worked (I think):
 
 http://sage.math.washington.edu/home/wstein/patches/7118/deps
 
 
+
 ---
 
-Comment by mvngu created at 2009-10-11 10:14:52
+archive/issue_comments_058998.json:
+```json
+{
+    "body": "\n```\n23:35 < mvngu> williamstein: Any ideas about the error I reported at #7118 (remove quaddouble)?\n23:40 < williamstein> wow, I can't belive the pickle jar is under revision control -- that's stupid.\n23:41 < williamstein> but that is orthogonal.\n23:41 < williamstein> maybe you made a typo when editing module_list.py?\n23:42 < williamstein> wait, that was my patch.\n23:42 < mvngu> williamstein: I didn't touch module_list.py\n23:42 < williamstein> hmm.\n23:42 < williamstein> i'll post my deps file.\n23:42 < williamstein> maybe there is a typo ther.e\n23:43 < williamstein> the error you get suggests a messed up deps file.\n23:44 < williamstein> http://sage.math.washington.edu/home/wstein/patches/7118/deps\n23:45 < williamstein> my wife just decided to stay overnight at her friends house, since they are having so much fun... so\n23:45 < williamstein> sounds like a good night for a Sage all nighter for me!\n23:46 < williamstein> 3 new sagenb users in the last few minutes...\n23:47 < williamstein> mvngu -- thanks again for looking at the #7118!\n23:49 < mvngu> williamstein: A diff of the original deps vs. your changed deps... this suggests that I should really delete lines relating to quaddouble, instead of commenting them out.\n23:49 < williamstein> You should try that.\n23:50 < mvngu> trying now...\n```\n",
+    "created_at": "2009-10-11T10:14:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7118",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7118#issuecomment-58998",
+    "user": "mvngu"
+}
+```
 
 
 ```
@@ -248,56 +400,154 @@ Comment by mvngu created at 2009-10-11 10:14:52
 
 
 
+
 ---
 
-Comment by mvngu created at 2009-10-12 03:19:32
+archive/issue_comments_058999.json:
+```json
+{
+    "body": "doctest on bsd.math",
+    "created_at": "2009-10-12T03:19:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7118",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7118#issuecomment-58999",
+    "user": "mvngu"
+}
+```
 
 doctest on bsd.math
 
 
+
 ---
+
+archive/issue_comments_059000.json:
+```json
+{
+    "body": "Attachment\n\ndoctest on cicero on SkyNet",
+    "created_at": "2009-10-12T03:24:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7118",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7118#issuecomment-59000",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
 doctest on cicero on SkyNet
 
 
+
 ---
 
-Comment by mvngu created at 2009-10-12 03:28:03
+archive/issue_comments_059001.json:
+```json
+{
+    "body": "doctest on eno on SkyNet",
+    "created_at": "2009-10-12T03:28:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7118",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7118#issuecomment-59001",
+    "user": "mvngu"
+}
+```
 
 doctest on eno on SkyNet
 
 
+
 ---
+
+archive/issue_comments_059002.json:
+```json
+{
+    "body": "Attachment\n\ndoctest on mandriva2009-64 on boxen.math",
+    "created_at": "2009-10-12T03:41:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7118",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7118#issuecomment-59002",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
 doctest on mandriva2009-64 on boxen.math
 
 
+
 ---
+
+archive/issue_comments_059003.json:
+```json
+{
+    "body": "Attachment\n\ndoctest on cento53-64 on boxen.math",
+    "created_at": "2009-10-12T03:46:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7118",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7118#issuecomment-59003",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
 doctest on cento53-64 on boxen.math
 
 
+
 ---
+
+archive/issue_comments_059004.json:
+```json
+{
+    "body": "Attachment\n\ndoctest on opensuse32 on boxen.math",
+    "created_at": "2009-10-12T03:51:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7118",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7118#issuecomment-59004",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
 doctest on opensuse32 on boxen.math
 
 
+
 ---
 
-Comment by mvngu created at 2009-10-12 03:56:19
+archive/issue_comments_059005.json:
+```json
+{
+    "body": "doctest on opensuse64 on boxen.math",
+    "created_at": "2009-10-12T03:56:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7118",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7118#issuecomment-59005",
+    "user": "mvngu"
+}
+```
 
 doctest on opensuse64 on boxen.math
 
 
+
 ---
+
+archive/issue_comments_059006.json:
+```json
+{
+    "body": "Attachment\n\nThis time, I really deleted the following lines from the file `SAGE_ROOT/spkg/standard/deps`:\n\n```\n$(INST)/$(QUADDOUBLE): $(BASE) $(INST)/$(MPIR) $(INST)/$(MPFR)\n      $(SAGE_SPKG) $(QUADDOUBLE) 2>&1\n\n<SNIP>\n\n                  See ticket #7118: remove quaddouble from sage\n                  $(INST)/$(QUADDOUBLE) \\\n```\n\nI made a new source tarball called \"sage-4.1.2.rc1-7118-quaddouble\" that incorporates the cliquer spkg at #6681. The new source tarball was tested on the following platforms:\n\n* sage.math: 64-bit Ubuntu 8.04.3 LTS, GCC 4.2.4 --- compile OK; all doctests pass.\n* rosemary.math: 64-bit Red Hat Enterprise Linux Server 5.4, GCC 4.1.2 --- compile OK; all doctests pass.\n* bsd.math: Mac OS X 10.6.1, GCC 4.2.1 --- compile OK; some doctest failures:\n {{{\nsage -t -long \"rc1-7118-6681/devel/sage/sage/calculus/calculus.py\"\nsage -t -long \"rc1-7118-6681/devel/sage/sage/calculus/tests.py\"\nsage -t -long \"rc1-7118-6681/devel/sage/sage/calculus/wester.py\"\nsage -t -long \"rc1-7118-6681/devel/sage/sage/ext/fast_eval.pyx\"\nsage -t -long \"rc1-7118-6681/devel/sage/sage/functions/hyperbolic.py\"\nsage -t -long \"rc1-7118-6681/devel/sage/sage/functions/other.py\"\nsage -t -long \"rc1-7118-6681/devel/sage/sage/functions/trig.py\"\nsage -t -long \"rc1-7118-6681/devel/sage/sage/gsl/interpolation.pyx\"\nsage -t -long \"rc1-7118-6681/devel/sage/sage/matrix/matrix_symbolic_dense.pyx\"\nsage -t -long \"rc1-7118-6681/devel/sage/sage/rings/polynomial/pbori.pyx\"\nsage -t -long \"rc1-7118-6681/devel/sage/sage/symbolic/constants.py\"\nsage -t -long \"rc1-7118-6681/devel/sage/sage/symbolic/expression.pyx\"\nsage -t -long \"rc1-7118-6681/devel/sage/sage/symbolic/function.pyx\"\n }}}\n Full doctest log is attached; see the attachment `doctest-bsd.math.log`.\n* cicero on SkyNet: 32-bit Fedora 9, GCC 4.4.1 --- compile OK; some doctest failures:\n {{{\nsage -t -long \"devel/sage/sage/misc/randstate.pyx\"\nsage -t -long \"devel/sage/sage/interfaces/expect.py\"\nsage -t -long \"devel/sage/sage/interfaces/sage0.py\"\nsage -t -long \"devel/sage/sage/server/simple/twist.py\"\n }}}\n Full doctest log is attached; see the attachment `doctest-cicero.log`.\n* eno on SkyNet: 64-bit Fedora 9, GCC 4.4.1 --- compile OK; some doctest failures:\n {{{\nsage -t -long \"devel/sage/sage/rings/fast_arith.pyx\"\nsage -t -long \"devel/sage/sage/rings/tests.py\"\n }}}\n Full doctest log is attached; see the attachment `doctest-eno.log`.\n* lena on SkyNet: 64-bit Red Hat Enterprise Linux Server 5.3, GCC 4.4.1 --- compile OK; all doctests pass.\n* menas on SkyNet: 64-bit openSUSE 11.1, GCC 4.4.1 --- compile OK; all doctests pass.\n* cento53-64 on boxen.math: 64-bit CentOS 5.3, GCC 4.1.2 --- compile OK; one doctest failure:\n {{{\nsage -t -long \"devel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx\"\n }}}\n Full doctest log is attached; see the attachment `doctest-cento53-64-boxen.log`.\n* debian5-32 on boxen.math: 32-bit Debian 5.0, GCC 4.3.2 --- compile OK; all doctests pass.\n* debian5-64 on boxen.math: 64-bit Debian 5.0, GCC 4.3.2 --- compile OK; all doctests pass.\n* mandriva2009.1-32 on boxen.math: 32-bit Mandriva Linux 2009.1, GCC 4.3.2 --- compile OK; all doctests pass.\n* mandriva2009.1-64 on boxen.math: 64-bit Mandriva Linux 2009.1, GCC 4.3.2 --- compile OK; one doctest failure:\n {{{\nsage -t -long \"devel/sage/sage/server/simple/twist.py\"\n }}}\n Full doctest log is attached; see the attachment `doctest-mandriva2009-64.boxen.log`.\n* opensuse-11.1-32 on boxen.math: 32-bit openSUSE 11.1, GCC 4.3.2 --- compile OK; one doctest failure:\n {{{\nsage -t -long \"devel/sage/sage/server/simple/twist.py\"\n }}}\n Full doctest log is attached; see the attachment `doctest-opensuse32-boxen.log`.\n* opensuse-11.1-64 on boxen.math: 64-bit openSUSE 11.1, GCC 4.3.2 --- compile OK; one doctest failure:\n {{{\nsage -t -long \"devel/sage/sage/graphs/graph_plot.py\"\n }}}\n Full doctest log is attached; see the attachment `doctest-opensuse64-boxen.log`.\n* ubuntu9.04-32: 32-bit Ubuntu 9.04, GCC 4.3.3 --- compile OK; all doctests pass.\n* ubuntu9.04-64: 64-bit Ubuntu 9.04, GCC 4.3.3 --- compile OK; all doctests pass.",
+    "created_at": "2009-10-12T05:17:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7118",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7118#issuecomment-59006",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
@@ -315,9 +565,9 @@ $(INST)/$(QUADDOUBLE): $(BASE) $(INST)/$(MPIR) $(INST)/$(MPFR)
 
 I made a new source tarball called "sage-4.1.2.rc1-7118-quaddouble" that incorporates the cliquer spkg at #6681. The new source tarball was tested on the following platforms:
 
- * sage.math: 64-bit Ubuntu 8.04.3 LTS, GCC 4.2.4 --- compile OK; all doctests pass.
- * rosemary.math: 64-bit Red Hat Enterprise Linux Server 5.4, GCC 4.1.2 --- compile OK; all doctests pass.
- * bsd.math: Mac OS X 10.6.1, GCC 4.2.1 --- compile OK; some doctest failures:
+* sage.math: 64-bit Ubuntu 8.04.3 LTS, GCC 4.2.4 --- compile OK; all doctests pass.
+* rosemary.math: 64-bit Red Hat Enterprise Linux Server 5.4, GCC 4.1.2 --- compile OK; all doctests pass.
+* bsd.math: Mac OS X 10.6.1, GCC 4.2.1 --- compile OK; some doctest failures:
  {{{
 sage -t -long "rc1-7118-6681/devel/sage/sage/calculus/calculus.py"
 sage -t -long "rc1-7118-6681/devel/sage/sage/calculus/tests.py"
@@ -334,7 +584,7 @@ sage -t -long "rc1-7118-6681/devel/sage/sage/symbolic/expression.pyx"
 sage -t -long "rc1-7118-6681/devel/sage/sage/symbolic/function.pyx"
  }}}
  Full doctest log is attached; see the attachment `doctest-bsd.math.log`.
- * cicero on SkyNet: 32-bit Fedora 9, GCC 4.4.1 --- compile OK; some doctest failures:
+* cicero on SkyNet: 32-bit Fedora 9, GCC 4.4.1 --- compile OK; some doctest failures:
  {{{
 sage -t -long "devel/sage/sage/misc/randstate.pyx"
 sage -t -long "devel/sage/sage/interfaces/expect.py"
@@ -342,51 +592,73 @@ sage -t -long "devel/sage/sage/interfaces/sage0.py"
 sage -t -long "devel/sage/sage/server/simple/twist.py"
  }}}
  Full doctest log is attached; see the attachment `doctest-cicero.log`.
- * eno on SkyNet: 64-bit Fedora 9, GCC 4.4.1 --- compile OK; some doctest failures:
+* eno on SkyNet: 64-bit Fedora 9, GCC 4.4.1 --- compile OK; some doctest failures:
  {{{
 sage -t -long "devel/sage/sage/rings/fast_arith.pyx"
 sage -t -long "devel/sage/sage/rings/tests.py"
  }}}
  Full doctest log is attached; see the attachment `doctest-eno.log`.
- * lena on SkyNet: 64-bit Red Hat Enterprise Linux Server 5.3, GCC 4.4.1 --- compile OK; all doctests pass.
- * menas on SkyNet: 64-bit openSUSE 11.1, GCC 4.4.1 --- compile OK; all doctests pass.
- * cento53-64 on boxen.math: 64-bit CentOS 5.3, GCC 4.1.2 --- compile OK; one doctest failure:
+* lena on SkyNet: 64-bit Red Hat Enterprise Linux Server 5.3, GCC 4.4.1 --- compile OK; all doctests pass.
+* menas on SkyNet: 64-bit openSUSE 11.1, GCC 4.4.1 --- compile OK; all doctests pass.
+* cento53-64 on boxen.math: 64-bit CentOS 5.3, GCC 4.1.2 --- compile OK; one doctest failure:
  {{{
 sage -t -long "devel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx"
  }}}
  Full doctest log is attached; see the attachment `doctest-cento53-64-boxen.log`.
- * debian5-32 on boxen.math: 32-bit Debian 5.0, GCC 4.3.2 --- compile OK; all doctests pass.
- * debian5-64 on boxen.math: 64-bit Debian 5.0, GCC 4.3.2 --- compile OK; all doctests pass.
- * mandriva2009.1-32 on boxen.math: 32-bit Mandriva Linux 2009.1, GCC 4.3.2 --- compile OK; all doctests pass.
- * mandriva2009.1-64 on boxen.math: 64-bit Mandriva Linux 2009.1, GCC 4.3.2 --- compile OK; one doctest failure:
+* debian5-32 on boxen.math: 32-bit Debian 5.0, GCC 4.3.2 --- compile OK; all doctests pass.
+* debian5-64 on boxen.math: 64-bit Debian 5.0, GCC 4.3.2 --- compile OK; all doctests pass.
+* mandriva2009.1-32 on boxen.math: 32-bit Mandriva Linux 2009.1, GCC 4.3.2 --- compile OK; all doctests pass.
+* mandriva2009.1-64 on boxen.math: 64-bit Mandriva Linux 2009.1, GCC 4.3.2 --- compile OK; one doctest failure:
  {{{
 sage -t -long "devel/sage/sage/server/simple/twist.py"
  }}}
  Full doctest log is attached; see the attachment `doctest-mandriva2009-64.boxen.log`.
- * opensuse-11.1-32 on boxen.math: 32-bit openSUSE 11.1, GCC 4.3.2 --- compile OK; one doctest failure:
+* opensuse-11.1-32 on boxen.math: 32-bit openSUSE 11.1, GCC 4.3.2 --- compile OK; one doctest failure:
  {{{
 sage -t -long "devel/sage/sage/server/simple/twist.py"
  }}}
  Full doctest log is attached; see the attachment `doctest-opensuse32-boxen.log`.
- * opensuse-11.1-64 on boxen.math: 64-bit openSUSE 11.1, GCC 4.3.2 --- compile OK; one doctest failure:
+* opensuse-11.1-64 on boxen.math: 64-bit openSUSE 11.1, GCC 4.3.2 --- compile OK; one doctest failure:
  {{{
 sage -t -long "devel/sage/sage/graphs/graph_plot.py"
  }}}
  Full doctest log is attached; see the attachment `doctest-opensuse64-boxen.log`.
- * ubuntu9.04-32: 32-bit Ubuntu 9.04, GCC 4.3.3 --- compile OK; all doctests pass.
- * ubuntu9.04-64: 64-bit Ubuntu 9.04, GCC 4.3.3 --- compile OK; all doctests pass.
+* ubuntu9.04-32: 32-bit Ubuntu 9.04, GCC 4.3.3 --- compile OK; all doctests pass.
+* ubuntu9.04-64: 64-bit Ubuntu 9.04, GCC 4.3.3 --- compile OK; all doctests pass.
+
 
 
 ---
 
-Comment by ddrake created at 2009-10-30 00:06:07
+archive/issue_comments_059007.json:
+```json
+{
+    "body": "This is \"needs review\", but it looks like these patches have been merged -- changesets 13089:ab082b3c94fe and 13090:06b7dd9afde9. Perhaps having released 4.1.2 and 4.2, with plenty of people reporting all doctests passing, counts as a sort of positive review?",
+    "created_at": "2009-10-30T00:06:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7118",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7118#issuecomment-59007",
+    "user": "ddrake"
+}
+```
 
 This is "needs review", but it looks like these patches have been merged -- changesets 13089:ab082b3c94fe and 13090:06b7dd9afde9. Perhaps having released 4.1.2 and 4.2, with plenty of people reporting all doctests passing, counts as a sort of positive review?
 
 
+
 ---
 
-Comment by mvngu created at 2009-10-30 05:09:42
+archive/issue_comments_059008.json:
+```json
+{
+    "body": "Replying to [comment:12 ddrake]:\n> This is \"needs review\", but it looks like these patches have been merged -- changesets 13089:ab082b3c94fe and 13090:06b7dd9afde9. Perhaps having released 4.1.2 and 4.2, with plenty of people reporting all doctests passing, counts as a sort of positive review?\n\nI wanted to give the ticket a positive after writing up my test results on various platforms. But my mind at the time was more focused on my thesis, so I didn't actually change the status to \"positive review\". I apologize for the confusion. Now the status is positive review, and the ticket can be closed as fixed.",
+    "created_at": "2009-10-30T05:09:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7118",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7118#issuecomment-59008",
+    "user": "mvngu"
+}
+```
 
 Replying to [comment:12 ddrake]:
 > This is "needs review", but it looks like these patches have been merged -- changesets 13089:ab082b3c94fe and 13090:06b7dd9afde9. Perhaps having released 4.1.2 and 4.2, with plenty of people reporting all doctests passing, counts as a sort of positive review?
@@ -394,15 +666,37 @@ Replying to [comment:12 ddrake]:
 I wanted to give the ticket a positive after writing up my test results on various platforms. But my mind at the time was more focused on my thesis, so I didn't actually change the status to "positive review". I apologize for the confusion. Now the status is positive review, and the ticket can be closed as fixed.
 
 
+
 ---
 
-Comment by mvngu created at 2009-10-30 05:09:42
+archive/issue_comments_059009.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-10-30T05:09:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7118",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7118#issuecomment-59009",
+    "user": "mvngu"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-31 16:39:12
+archive/issue_comments_059010.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-10-31T16:39:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7118",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7118#issuecomment-59010",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

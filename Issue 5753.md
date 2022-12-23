@@ -1,11 +1,21 @@
 # Issue 5753: [with patch and package, needs review] update to pynac 0.1.4
 
-Issue created by migration from https://trac.sagemath.org/ticket/5753
-
-Original creator: burcin
-
-Original creation time: 2009-04-11 15:50:38
-
+archive/issues_005753.json:
+```json
+{
+    "body": "Assignee: burcin\n\nCC:  wstein mhansen ncalexan\n\nPynac 0.1.4 is out! :)\n\nChanges from 0.1.3 are:\n* Add support for arithmetic with infinity.\n* Use python repr function for printing numeric objects.\n* Print paranthesis in latex mode with \\left and \\right.\n* Call python for latex names of symbols.\n* Support calling user specified python functions to print function instances.\n* Call python for printing function and fderivative.\n\n\nAttached patches corresponding to the above changes should be applied to the Sage library. Patches below depend on #5546 and #5737, in particular trac_5546-2-pynac_derivative.patch and trac_5737-02-real_imag.patch.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5753\n\n",
+    "created_at": "2009-04-11T15:50:38Z",
+    "labels": [
+        "symbolics",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch and package, needs review] update to pynac 0.1.4",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5753",
+    "user": "burcin"
+}
+```
 Assignee: burcin
 
 CC:  wstein mhansen ncalexan
@@ -13,63 +23,152 @@ CC:  wstein mhansen ncalexan
 Pynac 0.1.4 is out! :)
 
 Changes from 0.1.3 are:
- * Add support for arithmetic with infinity.
- * Use python repr function for printing numeric objects.
- * Print paranthesis in latex mode with \left and \right.
- * Call python for latex names of symbols.
- * Support calling user specified python functions to print function instances.
- * Call python for printing function and fderivative.
+* Add support for arithmetic with infinity.
+* Use python repr function for printing numeric objects.
+* Print paranthesis in latex mode with \left and \right.
+* Call python for latex names of symbols.
+* Support calling user specified python functions to print function instances.
+* Call python for printing function and fderivative.
 
 
 Attached patches corresponding to the above changes should be applied to the Sage library. Patches below depend on #5546 and #5737, in particular trac_5546-2-pynac_derivative.patch and trac_5737-02-real_imag.patch.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5753
+
+
+
+
 
 ---
+
+archive/issue_comments_044968.json:
+```json
+{
+    "body": "Attachment\n\narithmetic with infinity",
+    "created_at": "2009-04-11T15:51:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5753",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5753#issuecomment-44968",
+    "user": "burcin"
+}
+```
 
 Attachment
 
 arithmetic with infinity
 
 
+
 ---
+
+archive/issue_comments_044969.json:
+```json
+{
+    "body": "Attachment\n\nfix coercion of complex i",
+    "created_at": "2009-04-11T15:52:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5753",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5753#issuecomment-44969",
+    "user": "burcin"
+}
+```
 
 Attachment
 
 fix coercion of complex i
 
 
+
 ---
 
-Comment by burcin created at 2009-04-11 15:52:59
+archive/issue_comments_044970.json:
+```json
+{
+    "body": "fix doctests for printing changes",
+    "created_at": "2009-04-11T15:52:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5753",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5753#issuecomment-44970",
+    "user": "burcin"
+}
+```
 
 fix doctests for printing changes
 
 
+
 ---
+
+archive/issue_comments_044971.json:
+```json
+{
+    "body": "Attachment\n\nfix printing of latex parenthesis",
+    "created_at": "2009-04-11T15:53:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5753",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5753#issuecomment-44971",
+    "user": "burcin"
+}
+```
 
 Attachment
 
 fix printing of latex parenthesis
 
 
+
 ---
 
-Comment by burcin created at 2009-04-11 15:54:16
+archive/issue_comments_044972.json:
+```json
+{
+    "body": "call python for latex representation of symbols",
+    "created_at": "2009-04-11T15:54:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5753",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5753#issuecomment-44972",
+    "user": "burcin"
+}
+```
 
 call python for latex representation of symbols
 
 
+
 ---
+
+archive/issue_comments_044973.json:
+```json
+{
+    "body": "Attachment\n\nallow custom printing methods in symbolic functions, move printing of function and fderivative to python",
+    "created_at": "2009-04-11T15:54:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5753",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5753#issuecomment-44973",
+    "user": "burcin"
+}
+```
 
 Attachment
 
 allow custom printing methods in symbolic functions, move printing of function and fderivative to python
 
 
+
 ---
 
-Comment by burcin created at 2009-04-11 15:56:35
+archive/issue_comments_044974.json:
+```json
+{
+    "body": "The package is here:\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.4.spkg\n\nSorry for the spam.",
+    "created_at": "2009-04-11T15:56:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5753",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5753#issuecomment-44974",
+    "user": "burcin"
+}
+```
 
 The package is here:
 
@@ -78,9 +177,20 @@ http://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.4.spkg
 Sorry for the spam.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-20 23:45:57
+archive/issue_comments_044975.json:
+```json
+{
+    "body": "The positive review is due to Mike Hansen's review at #5777.\n\nCheers,\n\nMichael",
+    "created_at": "2009-05-20T23:45:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5753",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5753#issuecomment-44975",
+    "user": "mabshoff"
+}
+```
 
 The positive review is due to Mike Hansen's review at #5777.
 
@@ -89,16 +199,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-20 23:46:09
+archive/issue_comments_044976.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-05-20T23:46:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5753",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5753#issuecomment-44976",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-20 23:46:09
+archive/issue_comments_044977.json:
+```json
+{
+    "body": "Merged in Sage 4.0.rc0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-05-20T23:46:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5753",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5753#issuecomment-44977",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 4.0.rc0.
 

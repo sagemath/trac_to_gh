@@ -1,11 +1,21 @@
 # Issue 4356: modular forms -- echelon_form broken
 
-Issue created by migration from https://trac.sagemath.org/ticket/4356
-
-Original creator: was
-
-Original creation time: 2008-10-24 02:03:06
-
+archive/issues_004356.json:
+```json
+{
+    "body": "Assignee: craigcitro\n\nThis used to work (e.g., it is in my modular forms book), but now it doesn't.  No clue why it is broken:\n\n```\nsage: M = ModularForms(1,36, prec=10).echelon_form()\nTraceback (most recent call last):\n...\nValueError: The given basis vectors must be linearly independent.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4356\n\n",
+    "created_at": "2008-10-24T02:03:06Z",
+    "labels": [
+        "modular forms",
+        "major",
+        "bug"
+    ],
+    "title": "modular forms -- echelon_form broken",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4356",
+    "user": "was"
+}
+```
 Assignee: craigcitro
 
 This used to work (e.g., it is in my modular forms book), but now it doesn't.  No clue why it is broken:
@@ -18,10 +28,25 @@ ValueError: The given basis vectors must be linearly independent.
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4356
+
+
+
+
 
 ---
 
-Comment by craigcitro created at 2008-10-24 08:54:18
+archive/issue_comments_031997.json:
+```json
+{
+    "body": "So I can't find any examples that don't work ... in my copy of 3.1.4, I get:\n\n\n```\nsage: M = ModularForms(1, 36, prec=6).echelon_form()\nsage: M.basis()\n[\n1 + 6218175600*q^4 + 15281788354560*q^5 + O(q^6),\nq + 57093088*q^4 + 37927345230*q^5 + O(q^6),\nq^2 + 194184*q^4 + 7442432*q^5 + O(q^6),\nq^3 - 72*q^4 + 2484*q^5 + O(q^6)\n]\n```\n\n\nWhat machine were you running into this on?",
+    "created_at": "2008-10-24T08:54:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4356",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4356#issuecomment-31997",
+    "user": "craigcitro"
+}
+```
 
 So I can't find any examples that don't work ... in my copy of 3.1.4, I get:
 
@@ -41,15 +66,37 @@ q^3 - 72*q^4 + 2484*q^5 + O(q^6)
 What machine were you running into this on?
 
 
+
 ---
 
-Comment by was created at 2008-10-30 16:52:08
+archive/issue_comments_031998.json:
+```json
+{
+    "body": "This is invalid.  I was thrown off by a my messed up #4347!",
+    "created_at": "2008-10-30T16:52:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4356",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4356#issuecomment-31998",
+    "user": "was"
+}
+```
 
 This is invalid.  I was thrown off by a my messed up #4347!
 
 
+
 ---
 
-Comment by was created at 2008-10-30 16:52:08
+archive/issue_comments_031999.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2008-10-30T16:52:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4356",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4356#issuecomment-31999",
+    "user": "was"
+}
+```
 
 Resolution: invalid

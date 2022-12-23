@@ -1,11 +1,21 @@
 # Issue 3327: missing .divides() implementation for FieldElement
 
-Issue created by migration from https://trac.sagemath.org/ticket/3327
-
-Original creator: cwitty
-
-Original creation time: 2008-05-29 03:18:28
-
+archive/issues_003327.json:
+```json
+{
+    "body": "Assignee: somebody\n\nThe generic .divides() implementation doesn't work for FieldElement; this causes the following problem:\n\n```\n  R.<a,b> = NumberField(x^2-3,'g')[]\n  S.<y> = R.fraction_field()[]\n  xgcd(y^2, a*y+b) \n```\n\ngoes BOOM (as reported by Ga\u00ebtan Bisson here: http://groups.google.com/group/sage-support/browse_thread/thread/5338608bd7508b00/76dd56341dc29b1b#76dd56341dc29b1b)\n\nThe attached patch adds the missing method and some doctests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3327\n\n",
+    "created_at": "2008-05-29T03:18:28Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "bug"
+    ],
+    "title": "missing .divides() implementation for FieldElement",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3327",
+    "user": "cwitty"
+}
+```
 Assignee: somebody
 
 The generic .divides() implementation doesn't work for FieldElement; this causes the following problem:
@@ -20,35 +30,96 @@ goes BOOM (as reported by Gaëtan Bisson here: http://groups.google.com/group/sa
 
 The attached patch adds the missing method and some doctests.
 
+Issue created by migration from https://trac.sagemath.org/ticket/3327
+
+
+
+
 
 ---
+
+archive/issue_comments_023074.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-05-29T03:20:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3327",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3327#issuecomment-23074",
+    "user": "cwitty"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2008-05-29 03:29:36
+archive/issue_comments_023075.json:
+```json
+{
+    "body": "I tried it out and it works.  I read the code and it looks great!",
+    "created_at": "2008-05-29T03:29:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3327",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3327#issuecomment-23075",
+    "user": "was"
+}
+```
 
 I tried it out and it works.  I read the code and it looks great!
 
 
+
 ---
 
-Comment by cremona created at 2008-05-29 08:04:05
+archive/issue_comments_023076.json:
+```json
+{
+    "body": "Agreed.  ++",
+    "created_at": "2008-05-29T08:04:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3327",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3327#issuecomment-23076",
+    "user": "cremona"
+}
+```
 
 Agreed.  ++
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-29 13:44:53
+archive/issue_comments_023077.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-05-29T13:44:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3327",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3327#issuecomment-23077",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-29 13:44:53
+archive/issue_comments_023078.json:
+```json
+{
+    "body": "Merged in Sage 3.0.3.alpha1",
+    "created_at": "2008-05-29T13:44:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3327",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3327#issuecomment-23078",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.3.alpha1

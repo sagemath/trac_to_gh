@@ -1,11 +1,21 @@
 # Issue 2017: crap -- singular includes surfex as a precompiled binary.  Remove it.
 
-Issue created by migration from https://trac.sagemath.org/ticket/2017
-
-Original creator: was
-
-Original creation time: 2008-01-31 23:28:50
-
+archive/issues_002017.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nRemove it, and make very sure it stays removed in future versions of the singular spkg, e.g., by modifying spkg-install so that if it sees surfex class files, it will bomb out with an error. \n\n\n```\nsage-2.10.1.rc3/spkg/standard/singular-3-0-4-1-20071209.p3/src/Singular/LIB/surfex/SaveMovieDialog$5.class\nsage-2.10.1.rc3/spkg/standard/singular-3-0-4-1-20071209.p3/src/Singular/LIB/surfex/SolitaryPoint$1.class\nsage-2.10.1.rc3/spkg/standard/singular-3-0-4-1-20071209.p3/src/Singular/LIB/surfex/jv4surfex.class\nsage-2.10.1.rc3/spkg/standard/singular-3-0-4-1-20071209.p3/src/Singular/LIB/surfex/Project$9.class\nsage-2.10.1.rc3/spkg/standard/singular-3-0-4-1-20071209.p3/src/Singular/LIB/surfex/Project$11.class\nsage-2.10.1.rc3/spkg/standard/singular-3-0-4-1-20071209.p3/src/Singular/LIB/surfex/algebra/Polynomial$Term.class\nsage-2.10.1.rc3/spkg/standard/singular-3-0-4-1-20071209.p3/src/Singular/LIB/surfex/algebra/Polynomial$Factor.class\nsage-2.10.1.rc3/spkg/standard/singular-3-0-4-1-20071209.p3/src/Singular/LIB/surfex/algebra/Polynomial.class\nsage-2.10.1.rc3/spkg/standard/singular-3-0-4-1-20071209.p3/src/Singular/LIB/surfex/Defns.class\nsage-2.10.1.rc3/spkg/standard/singular-3-0-4-1-20071209.p3/src/Singular/LIB/surfex/SaveMovieDialog$2.class\nsage-2.10.1.rc3/spkg/standard/singular-3-0-4-1-20071209.p3/src/Singular/LIB/surfex/SaveMovieDialog$removeListener.class\nsage-2.10.1.rc3/spkg/standard/singular-3-0-4-1-20071209.p3/src/Singular/LIB/surfex/SavePic.class\nsage-2.10.1.rc3/spkg/standard/singular-3-0-4-1-20071209.p3/src/Singular/LIB/surfex/SaveMovieDialog$6.class\nsage-2.10.1.rc3/spkg/standard/singular-3-0-4-1-20071209.p3/src/Singular/LIB/surfex/pcalc.class\nsage-2.10.1.rc3/spkg/standard/singular-3-0-4-1-20071209.p3/src/Singular/LIB/surfex/ConfigFrame$3.class\nsage-2.10.1.rc3/spkg/standard/singular-3-0-4-1-20071209.p3/src/Singular/LIB/surfex/Equation.class\nsage-2.10.1.rc3/spkg/standard/singular-3-0-4-1-20071209.p3/src/Singular/LIB/surfex/surfex$1.class\nsage-2.10.1.rc3/spkg/standard/singular-3-0-4-1-20071209.p3/src/Singular/LIB/surfex/LampAdmin$2.class\nsage-2.10.1.rc3/spkg/standard/singular-3-0-4-1-20071209.p3/src/Singular/LIB/surfex/SavePicDialog.class\nsage-2.10.1.rc3/spkg/standard/singular-3-0-4-1-20071209.p3/src/Singular/LIB/surfex/Project$10.class\nsage-2.10.1.rc3/spkg/standard/singular-3-0-4-1-20071209.p3/src/Singular/LIB/surfex/SolitaryPointsAdmin.class\nsage-2.10.1.rc3/spkg/standard/singular-3-0-4-1-20071209.p3/src/Singular/LIB/surfex/SwingWorker.class\nsage-2.10.1.rc3/spkg/standard/singular-3-0-4-1-20071209.p3/src/Singular/LIB/surfex/OneParameter.class\nsage-2.10.1.rc3/spkg/standard/singular-3-0-4-1-20071209.p3/src/Singular/LIB/surfex/ConfigFrame$5.class\nsage-2.10.1.rc3/spkg/standard/singular-3-0-4-1-20071209.p3/src/Singular/LIB/surfex/SaveMovie.class\nsage-2.10.1.rc3/spkg/standard/singular-3-0-4-1-20071209.p3/src/Singular/LIB/surfex/ProgressFrame.class\nsage-2.10.1.rc3/spkg/standard/singular-3-0-4-1-20071209.p3/src/Singular/LIB/surfex/surfex$3.class\nsage-2.10.1.rc3/spkg/standard/singular-3-0-4-1-20071209.p3/src/Singular/LIB/surfex/SavePicDialog$3.class\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2017\n\n",
+    "created_at": "2008-01-31T23:28:50Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "crap -- singular includes surfex as a precompiled binary.  Remove it.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2017",
+    "user": "was"
+}
+```
 Assignee: mabshoff
 
 Remove it, and make very sure it stays removed in future versions of the singular spkg, e.g., by modifying spkg-install so that if it sees surfex class files, it will bomb out with an error. 
@@ -44,31 +54,79 @@ sage-2.10.1.rc3/spkg/standard/singular-3-0-4-1-20071209.p3/src/Singular/LIB/surf
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2017
+
+
+
+
 
 ---
 
-Comment by was created at 2008-03-12 05:00:17
+archive/issue_comments_013021.json:
+```json
+{
+    "body": "Changing priority from major to blocker.",
+    "created_at": "2008-03-12T05:00:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2017",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2017#issuecomment-13021",
+    "user": "was"
+}
+```
 
 Changing priority from major to blocker.
 
 
+
 ---
 
-Comment by was created at 2008-03-12 05:00:17
+archive/issue_comments_013022.json:
+```json
+{
+    "body": "This must be FIXED.",
+    "created_at": "2008-03-12T05:00:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2017",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2017#issuecomment-13022",
+    "user": "was"
+}
+```
 
 This must be FIXED.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-19 13:17:58
+archive/issue_comments_013023.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-07-19T13:17:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2017",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2017#issuecomment-13023",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-19 13:17:58
+archive/issue_comments_013024.json:
+```json
+{
+    "body": "William did remove the offending Java files in Sage 3.0.5.\n\nCheers,\n\nMichael",
+    "created_at": "2008-07-19T13:17:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2017",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2017#issuecomment-13024",
+    "user": "mabshoff"
+}
+```
 
 William did remove the offending Java files in Sage 3.0.5.
 

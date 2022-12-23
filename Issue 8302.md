@@ -1,45 +1,94 @@
 # Issue 8302: cubical complexes, delta complexes, and more
 
-Issue created by migration from https://trac.sagemath.org/ticket/8302
-
-Original creator: jhpalmieri
-
-Original creation time: 2010-02-19 02:28:51
-
+archive/issues_008302.json:
+```json
+{
+    "body": "Assignee: jhpalmieri\n\nCC:  sault bantieau mhampton\n\nThe attached patch adds lots of functionality to Sage's algebraic topology capabilities:\n\n- it implements cubical complexes: complexes constructed from cubes of various dimensions, glued together in prescribed ways.\n\n- it implements Delta complexes: this is a variant on a simplicial complex which allows for more efficient construction of many spaces.  For example, the minimal triangulation of the torus as a simplicial complex uses 14 triangles, while there is a Delta complex version with only two triangles.  Allen Hatcher uses these in his popular algebraic topology book.\n\n- it \"implements\" generic cell complexes, as a parent class to the previous two, and also to simplicial complexes.  This is not intended for use by casual Sage users, but instead for developers who want to add another kind of complex (CW complexes?  Prodsimplicial complexes?)  Many methods in this class are not implemented, but instead provide a template of what should be implemented in any derived class.\n\n- it modifies simplicial complexes a bit, allowing them to be defined without specifying a vertex set: just list the maximal simplices and it will deduce what the vertex set is.  It also defines `connected_sum` for arbitrary simplicial complexes, not just simplicial surfaces, with a warning that it's not well-defined if you don't call it on manifolds.  It renames `ProjectivePlane` to `RealProjectivePlane` (keeping the old name as an alias for backward compatibility).\n\n- it provides an interface to CHomP, which is now an experimental spkg for Sage.  CHomP provides programs to compute homology which are faster than anything Sage can do.  See [http://chomp.rutgers.edu/](http://chomp.rutgers.edu/) for more information.\n\n- it changes how the `homology` and `chain_complex` methods work: these now pass keywords to each other, so it's easy to implement new keywords: just implement it for `ChainComplex.homology`, for instance, and when you compute the homology of any simplicial complex, you can give it the keyword and it will get passed on to this method.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8302\n\n",
+    "created_at": "2010-02-19T02:28:51Z",
+    "labels": [
+        "algebraic topology",
+        "major",
+        "enhancement"
+    ],
+    "title": "cubical complexes, delta complexes, and more",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8302",
+    "user": "jhpalmieri"
+}
+```
 Assignee: jhpalmieri
 
 CC:  sault bantieau mhampton
 
 The attached patch adds lots of functionality to Sage's algebraic topology capabilities:
 
- - it implements cubical complexes: complexes constructed from cubes of various dimensions, glued together in prescribed ways.
+- it implements cubical complexes: complexes constructed from cubes of various dimensions, glued together in prescribed ways.
 
- - it implements Delta complexes: this is a variant on a simplicial complex which allows for more efficient construction of many spaces.  For example, the minimal triangulation of the torus as a simplicial complex uses 14 triangles, while there is a Delta complex version with only two triangles.  Allen Hatcher uses these in his popular algebraic topology book.
+- it implements Delta complexes: this is a variant on a simplicial complex which allows for more efficient construction of many spaces.  For example, the minimal triangulation of the torus as a simplicial complex uses 14 triangles, while there is a Delta complex version with only two triangles.  Allen Hatcher uses these in his popular algebraic topology book.
 
- - it "implements" generic cell complexes, as a parent class to the previous two, and also to simplicial complexes.  This is not intended for use by casual Sage users, but instead for developers who want to add another kind of complex (CW complexes?  Prodsimplicial complexes?)  Many methods in this class are not implemented, but instead provide a template of what should be implemented in any derived class.
+- it "implements" generic cell complexes, as a parent class to the previous two, and also to simplicial complexes.  This is not intended for use by casual Sage users, but instead for developers who want to add another kind of complex (CW complexes?  Prodsimplicial complexes?)  Many methods in this class are not implemented, but instead provide a template of what should be implemented in any derived class.
 
- - it modifies simplicial complexes a bit, allowing them to be defined without specifying a vertex set: just list the maximal simplices and it will deduce what the vertex set is.  It also defines `connected_sum` for arbitrary simplicial complexes, not just simplicial surfaces, with a warning that it's not well-defined if you don't call it on manifolds.  It renames `ProjectivePlane` to `RealProjectivePlane` (keeping the old name as an alias for backward compatibility).
+- it modifies simplicial complexes a bit, allowing them to be defined without specifying a vertex set: just list the maximal simplices and it will deduce what the vertex set is.  It also defines `connected_sum` for arbitrary simplicial complexes, not just simplicial surfaces, with a warning that it's not well-defined if you don't call it on manifolds.  It renames `ProjectivePlane` to `RealProjectivePlane` (keeping the old name as an alias for backward compatibility).
 
- - it provides an interface to CHomP, which is now an experimental spkg for Sage.  CHomP provides programs to compute homology which are faster than anything Sage can do.  See [http://chomp.rutgers.edu/](http://chomp.rutgers.edu/) for more information.
+- it provides an interface to CHomP, which is now an experimental spkg for Sage.  CHomP provides programs to compute homology which are faster than anything Sage can do.  See [http://chomp.rutgers.edu/](http://chomp.rutgers.edu/) for more information.
 
- - it changes how the `homology` and `chain_complex` methods work: these now pass keywords to each other, so it's easy to implement new keywords: just implement it for `ChainComplex.homology`, for instance, and when you compute the homology of any simplicial complex, you can give it the keyword and it will get passed on to this method.
+- it changes how the `homology` and `chain_complex` methods work: these now pass keywords to each other, so it's easy to implement new keywords: just implement it for `ChainComplex.homology`, for instance, and when you compute the homology of any simplicial complex, you can give it the keyword and it will get passed on to this method.
+
+Issue created by migration from https://trac.sagemath.org/ticket/8302
+
+
+
 
 
 ---
 
-Comment by jhpalmieri created at 2010-02-19 02:29:29
+archive/issue_comments_073545.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-02-19T02:29:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8302#issuecomment-73545",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_073546.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-02-22T18:02:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8302#issuecomment-73546",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhampton created at 2010-02-25 23:24:17
+archive/issue_comments_073547.json:
+```json
+{
+    "body": "Documentation looks fantastic.\n\nAll tests pass, 100% coverage.  Only coverage issue is that a few files bring up a\n\n```\nERROR: Please add a `TestSuite(s).run()` doctest.\n```\n\nerror from sage -coverage.  Its unclear to me how important that is.\n\nI will test this out a little more before giving a positive review.",
+    "created_at": "2010-02-25T23:24:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8302#issuecomment-73547",
+    "user": "mhampton"
+}
+```
 
 Documentation looks fantastic.
 
@@ -54,30 +103,74 @@ error from sage -coverage.  Its unclear to me how important that is.
 I will test this out a little more before giving a positive review.
 
 
+
 ---
 
-Comment by mhampton created at 2010-02-26 01:46:12
+archive/issue_comments_073548.json:
+```json
+{
+    "body": "Changing assignee from jhpalmieri to mhampton.",
+    "created_at": "2010-02-26T01:46:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8302#issuecomment-73548",
+    "user": "mhampton"
+}
+```
 
 Changing assignee from jhpalmieri to mhampton.
 
 
+
 ---
 
-Comment by mhampton created at 2010-02-26 01:46:12
+archive/issue_comments_073549.json:
+```json
+{
+    "body": "In several modules, instead of INPUT and OUTPUT blocks, \"parameter\" or \"param\" is used, or \"results\".  It would be better if these conformed more to the official conventions.  I don't think this is reason enough to block the inclusion of all this functionality though - the functions are very well described otherwise.",
+    "created_at": "2010-02-26T01:46:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8302#issuecomment-73549",
+    "user": "mhampton"
+}
+```
 
 In several modules, instead of INPUT and OUTPUT blocks, "parameter" or "param" is used, or "results".  It would be better if these conformed more to the official conventions.  I don't think this is reason enough to block the inclusion of all this functionality though - the functions are very well described otherwise.
 
 
+
 ---
 
-Comment by mhampton created at 2010-02-26 01:46:56
+archive/issue_comments_073550.json:
+```json
+{
+    "body": "Changing assignee from mhampton to jhpalmieri.",
+    "created_at": "2010-02-26T01:46:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8302#issuecomment-73550",
+    "user": "mhampton"
+}
+```
 
 Changing assignee from mhampton to jhpalmieri.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-02-26 02:31:11
+archive/issue_comments_073551.json:
+```json
+{
+    "body": "Replying to [comment:5 mhampton]:\n> In several modules, instead of INPUT and OUTPUT blocks, \"parameter\" or \"param\" is used, or \"results\".  It would be better if these conformed more to the official conventions.\n\nJust so you know, the :param: form is the official Sphinx/reST format.  It's mentioned (briefly) in the Sage developer's guide: see the third bullet point [here](http://www.sagemath.org/doc/developer/conventions.html#documentation-strings).",
+    "created_at": "2010-02-26T02:31:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8302#issuecomment-73551",
+    "user": "jhpalmieri"
+}
+```
 
 Replying to [comment:5 mhampton]:
 > In several modules, instead of INPUT and OUTPUT blocks, "parameter" or "param" is used, or "results".  It would be better if these conformed more to the official conventions.
@@ -85,16 +178,38 @@ Replying to [comment:5 mhampton]:
 Just so you know, the :param: form is the official Sphinx/reST format.  It's mentioned (briefly) in the Sage developer's guide: see the third bullet point [here](http://www.sagemath.org/doc/developer/conventions.html#documentation-strings).
 
 
+
 ---
 
-Comment by mhampton created at 2010-02-26 03:17:39
+archive/issue_comments_073552.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-02-26T03:17:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8302#issuecomment-73552",
+    "user": "mhampton"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mhampton created at 2010-02-26 03:17:39
+archive/issue_comments_073553.json:
+```json
+{
+    "body": "Ah, sorry, I had missed that in the developer's guide.  My apologies.  It seems like we should choose one or the other, but that's a debate for another time and place.\n\nI installed CHomP on several machines and encountered no problems.  Didn't try yet on Solaris but if that works OK then maybe it can be moved into optional soon.\n\nI see no reason not to give this a positive review.",
+    "created_at": "2010-02-26T03:17:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8302#issuecomment-73553",
+    "user": "mhampton"
+}
+```
 
 Ah, sorry, I had missed that in the developer's guide.  My apologies.  It seems like we should choose one or the other, but that's a debate for another time and place.
 
@@ -103,16 +218,38 @@ I installed CHomP on several machines and encountered no problems.  Didn't try y
 I see no reason not to give this a positive review.
 
 
+
 ---
 
-Comment by mvngu created at 2010-03-02 11:29:29
+archive/issue_comments_073554.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_work.",
+    "created_at": "2010-03-02T11:29:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8302#issuecomment-73554",
+    "user": "mvngu"
+}
+```
 
 Changing status from positive_review to needs_work.
 
 
+
 ---
 
-Comment by mvngu created at 2010-03-02 11:29:29
+archive/issue_comments_073555.json:
+```json
+{
+    "body": "I got the following doctest failures after applying [Cell_complexes.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8302/Cell_complexes.patch) to Sage 4.3.3:\n\n```sh\n[mvngu@sage sage-4.3.3]$ ./sage -t -long devel/sage-main/sage/structure/sage_object.pyx\nsage -t -long \"devel/sage-main/sage/structure/sage_object.pyx\"\n**********************************************************************\nFile \"/dev/shm/mvngu/release/sage-4.3.3/devel/sage-main/sage/structure/sage_object.pyx\", line 1001:\n    sage: print \"x\"; sage.structure.sage_object.unpickle_all(std)\nExpected:\n    x...\n    Successfully unpickled ... objects.\n    Failed to unpickle 0 objects.\nGot:\n    x\n    doctest:1: DeprecationWarning: Your word object is saved in an old file format since FiniteWord_over_OrderedAlphabet is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing \"word.save(filename)\" to ensure that it will load in future versions of Sage.\n    doctest:1: DeprecationWarning: Your word object is saved in an old file format since AbstractWord is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing \"word.save(filename)\" to ensure that it will load in future versions of Sage.\n    doctest:1: DeprecationWarning: Your word object is saved in an old file format since Word_over_Alphabet is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing \"word.save(filename)\" to ensure that it will load in future versions of Sage.\n    doctest:1: DeprecationWarning: Your word object is saved in an old file format since Word_over_OrderedAlphabet is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing \"word.save(filename)\" to ensure that it will load in future versions of Sage.\n    doctest:1: DeprecationWarning: ChristoffelWord_Lower is deprecated, use LowerChristoffelWord instead\n    ** failed:  _class__sage_homology_examples_SimplicialSurface__.sobj\n    Failed:\n    _class__sage_homology_examples_SimplicialSurface__.sobj\n    Successfully unpickled 570 objects.\n    Failed to unpickle 1 objects.\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_23\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /dev/shm/mvngu/dot_sage/tmp/.doctest_sage_object.py\n\t [5.3 s]\n```\n\nI don't know how to explain the above failure. Also note the following failure directly resulting from [Cell_complexes.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8302/Cell_complexes.patch):\n\n```sh\n[mvngu@sage sage-4.3.3]$ ./sage -t -long devel/sage-main/sage/interfaces/chomp.py\nsage -t -long \"devel/sage-main/sage/interfaces/chomp.py\"    \n**********************************************************************\nFile \"/dev/shm/mvngu/release/sage-4.3.3/devel/sage-main/sage/interfaces/chomp.py\", line 564:\n    sage: homchain(C2, generators=True, base_ring=GF(2))[2]\nException raised:\n    Traceback (most recent call last):\n      File \"/dev/shm/mvngu/release/sage-4.3.3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/dev/shm/mvngu/release/sage-4.3.3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/dev/shm/mvngu/release/sage-4.3.3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_8[5]>\", line 1, in <module>\n        homchain(C2, generators=True, base_ring=GF(Integer(2)))[Integer(2)]###line 564:\n    sage: homchain(C2, generators=True, base_ring=GF(2))[2]\n      File \"/dev/shm/mvngu/release/sage-4.3.3/local/lib/python/site-packages/sage/interfaces/chomp.py\", line 584, in homchain\n        return CHomP()('homchain', complex, **kwds)\n      File \"/dev/shm/mvngu/release/sage-4.3.3/local/lib/python/site-packages/sage/interfaces/chomp.py\", line 145, in __call__\n        raise OSError, \"Program %s not found\" % program\n    OSError: Program homchain not found\n**********************************************************************\n1 items had failures:\n   1 of   8 in __main__.example_8\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /dev/shm/mvngu/dot_sage/tmp/.doctest_chomp.py\n\t [1.8 s]\n```\n\nI think the failure results from a missing \"# optional\" comment on line 564 of the module `sage/interfaces/chomp.py`. Something like the following change would fix the above failure:\n\n```diff\ndiff -r 0fa662e0a843 sage/interfaces/chomp.py\n--- a/sage/interfaces/chomp.py\n+++ b/sage/interfaces/chomp.py\n@@ -561,7 +561,7 @@\n         sage: C2 = delta_complexes.Sphere(2).chain_complex()\n         sage: homchain(C2, generators=True)[2]  # optional: need CHomP\n         (Z, [(1, -1)])\n-        sage: homchain(C2, generators=True, base_ring=GF(2))[2]\n+        sage: homchain(C2, generators=True, base_ring=GF(2))[2]  # optional: need CHomP\n         (Vector space of dimension 1 over Finite Field of size 2, [(1, 1)])\n \n     TESTS:\n```\n",
+    "created_at": "2010-03-02T11:29:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8302#issuecomment-73555",
+    "user": "mvngu"
+}
+```
 
 I got the following doctest failures after applying [Cell_complexes.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8302/Cell_complexes.patch) to Sage 4.3.3:
 
@@ -197,23 +334,58 @@ diff -r 0fa662e0a843 sage/interfaces/chomp.py
 
 
 
+
 ---
+
+archive/issue_comments_073556.json:
+```json
+{
+    "body": "Attachment\n\napply on top of previous patch",
+    "created_at": "2010-03-02T13:00:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8302#issuecomment-73556",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
 apply on top of previous patch
 
 
+
 ---
 
-Comment by mvngu created at 2010-03-02 13:04:00
+archive/issue_comments_073557.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-03-02T13:04:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8302#issuecomment-73557",
+    "user": "mvngu"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by mvngu created at 2010-03-02 13:04:00
+archive/issue_comments_073558.json:
+```json
+{
+    "body": "I have attached a reviewer patch fixing the reported failure where the CHomP spkg is not installed. Only this reviewer patch needs reviewing by anyone but me. \n\nJohn: When this ticket is closed, do you also want the CHomP spkg at\n\nhttp://sage.math.washington.edu/home/palmieri/SPKG/chomp-20100213.p1.spkg\n\nto be uploaded to the experimental spkg repository?",
+    "created_at": "2010-03-02T13:04:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8302#issuecomment-73558",
+    "user": "mvngu"
+}
+```
 
 I have attached a reviewer patch fixing the reported failure where the CHomP spkg is not installed. Only this reviewer patch needs reviewing by anyone but me. 
 
@@ -224,16 +396,38 @@ http://sage.math.washington.edu/home/palmieri/SPKG/chomp-20100213.p1.spkg
 to be uploaded to the experimental spkg repository?
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-03-02 17:58:09
+archive/issue_comments_073559.json:
+```json
+{
+    "body": "Marshall's patch gets a positive review.  I've attached another small patch to deal with the pickling problem.  I had deleted the class `SimplicialSurface` since with the patch it doesn't provide anything extra compared to `SimplicialComplex`.  The new patch just makes `SimplicialSurface` a synonym for `SimplicialComplex`.  This fixes the pickling problem for me.",
+    "created_at": "2010-03-02T17:58:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8302#issuecomment-73559",
+    "user": "jhpalmieri"
+}
+```
 
 Marshall's patch gets a positive review.  I've attached another small patch to deal with the pickling problem.  I had deleted the class `SimplicialSurface` since with the patch it doesn't provide anything extra compared to `SimplicialComplex`.  The new patch just makes `SimplicialSurface` a synonym for `SimplicialComplex`.  This fixes the pickling problem for me.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-03-02 18:01:24
+archive/issue_comments_073560.json:
+```json
+{
+    "body": "Replying to [comment:10 mvngu]:\n\n> John: When this ticket is closed, do you also want the CHomP spkg at\n> \n> http://sage.math.washington.edu/home/palmieri/SPKG/chomp-20100213.p1.spkg\n> \n> to be uploaded to the experimental spkg repository?\n\nYes, that would be good.  William already uploaded an earlier version, so I don't even think it has to wait for this ticket to be closed...",
+    "created_at": "2010-03-02T18:01:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8302#issuecomment-73560",
+    "user": "jhpalmieri"
+}
+```
 
 Replying to [comment:10 mvngu]:
 
@@ -246,30 +440,76 @@ Replying to [comment:10 mvngu]:
 Yes, that would be good.  William already uploaded an earlier version, so I don't even think it has to wait for this ticket to be closed...
 
 
+
 ---
 
-Comment by mvngu created at 2010-03-02 19:12:13
+archive/issue_comments_073561.json:
+```json
+{
+    "body": "With [trac_8302-pickle.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8302/trac_8302-pickle.patch), the pickling issue reported above is fixed.",
+    "created_at": "2010-03-02T19:12:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8302#issuecomment-73561",
+    "user": "mvngu"
+}
+```
 
 With [trac_8302-pickle.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8302/trac_8302-pickle.patch), the pickling issue reported above is fixed.
 
 
+
 ---
 
-Comment by mvngu created at 2010-03-02 19:12:13
+archive/issue_comments_073562.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-03-02T19:12:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8302#issuecomment-73562",
+    "user": "mvngu"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
+
+archive/issue_comments_073563.json:
+```json
+{
+    "body": "Attachment\n\napply on top of other patches",
+    "created_at": "2010-03-02T19:36:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8302#issuecomment-73563",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
 apply on top of other patches
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-03-02 19:37:38
+archive/issue_comments_073564.json:
+```json
+{
+    "body": "I just changed the pickle patch: I just added a comment.  The old version had\n\n```\nSimplicialSurface = SimplicialComplex \n```\n\nand the new version has\n\n```\n# for backwards compatibility:  \nSimplicialSurface = SimplicialComplex \n```\n\nI don't think this needs to be reviewed again...",
+    "created_at": "2010-03-02T19:37:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8302#issuecomment-73564",
+    "user": "jhpalmieri"
+}
+```
 
 I just changed the pickle patch: I just added a comment.  The old version had
 
@@ -287,27 +527,60 @@ SimplicialSurface = SimplicialComplex
 I don't think this needs to be reviewed again...
 
 
+
 ---
 
-Comment by mvngu created at 2010-03-03 02:19:25
+archive/issue_comments_073565.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-03-03T02:19:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8302#issuecomment-73565",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mvngu created at 2010-03-03 02:19:25
+archive/issue_comments_073566.json:
+```json
+{
+    "body": "Merged in this order:\n\n1. [Cell_complexes.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8302/Cell_complexes.patch)\n2. [trac_8302-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8302/trac_8302-reviewer.patch)\n3. [trac_8302-pickle.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8302/trac_8302-pickle.patch)\n4. Merged [chomp-20100213.p1.spkg](http://sage.math.washington.edu/home/palmieri/SPKG/chomp-20100213.p1.spkg) in the experimental spkg repository at http://www.sagemath.org/packages/experimental.",
+    "created_at": "2010-03-03T02:19:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8302#issuecomment-73566",
+    "user": "mvngu"
+}
+```
 
 Merged in this order:
 
- 1. [Cell_complexes.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8302/Cell_complexes.patch)
- 1. [trac_8302-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8302/trac_8302-reviewer.patch)
- 1. [trac_8302-pickle.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8302/trac_8302-pickle.patch)
- 1. Merged [chomp-20100213.p1.spkg](http://sage.math.washington.edu/home/palmieri/SPKG/chomp-20100213.p1.spkg) in the experimental spkg repository at http://www.sagemath.org/packages/experimental.
+1. [Cell_complexes.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8302/Cell_complexes.patch)
+2. [trac_8302-reviewer.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8302/trac_8302-reviewer.patch)
+3. [trac_8302-pickle.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8302/trac_8302-pickle.patch)
+4. Merged [chomp-20100213.p1.spkg](http://sage.math.washington.edu/home/palmieri/SPKG/chomp-20100213.p1.spkg) in the experimental spkg repository at http://www.sagemath.org/packages/experimental.
+
 
 
 ---
 
-Comment by jhpalmieri created at 2010-03-03 02:31:37
+archive/issue_comments_073567.json:
+```json
+{
+    "body": "By the way, Marshall, thanks for reviewing this!",
+    "created_at": "2010-03-03T02:31:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8302#issuecomment-73567",
+    "user": "jhpalmieri"
+}
+```
 
 By the way, Marshall, thanks for reviewing this!

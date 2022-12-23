@@ -1,11 +1,21 @@
 # Issue 5906: "libpng error: Image width or height is zero in IHDR" when plotting CompleteGraph(2)
 
-Issue created by migration from https://trac.sagemath.org/ticket/5906
-
-Original creator: mabshoff
-
-Original creation time: 2009-04-26 21:47:04
-
+archive/issues_005906.json:
+```json
+{
+    "body": "Assignee: rlm\n\nThis came up in https://groups.google.com/group/sage-devel/t/d9b64b5ddc24bb6b\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: g = graphs.CompleteGraph(2)\nsage: g.show()\nlibpng error: Image width or height is zero in IHDR\n<SNIP>\n```\n\n| Sage Version 3.4.1, Release Date: 2009-04-21                       |\n| Type notebook() for the GUI, and license() for information.        |\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5906\n\n",
+    "created_at": "2009-04-26T21:47:04Z",
+    "labels": [
+        "graph theory",
+        "major",
+        "bug"
+    ],
+    "title": "\"libpng error: Image width or height is zero in IHDR\" when plotting CompleteGraph(2)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5906",
+    "user": "mabshoff"
+}
+```
 Assignee: rlm
 
 This came up in https://groups.google.com/group/sage-devel/t/d9b64b5ddc24bb6b
@@ -25,15 +35,43 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/5906
+
+
+
+
 
 ---
+
+archive/issue_comments_046685.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-04-27T16:10:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5906",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5906#issuecomment-46685",
+    "user": "rlm"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-04 18:40:43
+archive/issue_comments_046686.json:
+```json
+{
+    "body": "Ooops, I forgot to review this for 3.4.2, but positive review.\n\nCheers,\n\nMichael",
+    "created_at": "2009-05-04T18:40:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5906",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5906#issuecomment-46686",
+    "user": "mabshoff"
+}
+```
 
 Ooops, I forgot to review this for 3.4.2, but positive review.
 
@@ -42,16 +80,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-04 18:41:04
+archive/issue_comments_046687.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-05-04T18:41:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5906",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5906#issuecomment-46687",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-04 18:41:04
+archive/issue_comments_046688.json:
+```json
+{
+    "body": "Merged in Sage 4.0.alpha0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-05-04T18:41:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5906",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5906#issuecomment-46688",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 4.0.alpha0.
 

@@ -1,11 +1,21 @@
 # Issue 7473: Sphinx hangs when making a clone
 
-Issue created by migration from https://trac.sagemath.org/ticket/7473
-
-Original creator: mpatel
-
-Original creation time: 2009-11-16 10:20:23
-
+archive/issues_007473.json:
+```json
+{
+    "body": "Assignee: mvngu\n\nCC:  jhpalmieri nthiery ncohen\n\nThis is a follow-up to #6187.\n\nSee [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/433ec95cba086551/f4286b67d64a19dd?#f4286b67d64a19dd), [sage-release](http://groups.google.com/group/sage-release/msg/76c956312e4de13d), [#sage-devel log](http://sage.math.washington.edu/home/mpatel/projects/irclogs/logs/sage-devel-2009-10-26.log.html#t21:56).\n\nIssue created by migration from https://trac.sagemath.org/ticket/7473\n\n",
+    "created_at": "2009-11-16T10:20:23Z",
+    "labels": [
+        "documentation",
+        "major",
+        "bug"
+    ],
+    "title": "Sphinx hangs when making a clone",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7473",
+    "user": "mpatel"
+}
+```
 Assignee: mvngu
 
 CC:  jhpalmieri nthiery ncohen
@@ -14,17 +24,43 @@ This is a follow-up to #6187.
 
 See [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/433ec95cba086551/f4286b67d64a19dd?#f4286b67d64a19dd), [sage-release](http://groups.google.com/group/sage-release/msg/76c956312e4de13d), [#sage-devel log](http://sage.math.washington.edu/home/mpatel/projects/irclogs/logs/sage-devel-2009-10-26.log.html#t21:56).
 
+Issue created by migration from https://trac.sagemath.org/ticket/7473
+
+
+
+
 
 ---
 
-Comment by mpatel created at 2009-11-18 21:37:28
+archive/issue_comments_062960.json:
+```json
+{
+    "body": "What if we run `hg clone`, then `cp -pr` just the files Sphinx checks?",
+    "created_at": "2009-11-18T21:37:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62960",
+    "user": "mpatel"
+}
+```
 
 What if we run `hg clone`, then `cp -pr` just the files Sphinx checks?
 
 
+
 ---
 
-Comment by mpatel created at 2009-11-18 22:47:55
+archive/issue_comments_062961.json:
+```json
+{
+    "body": "What if we capture `stderr` and `stdin`, too, in\n\n```python\n    proc = subprocess.Popen([cmd], stdout=subprocess.PIPE, shell=True)\n```\n\n?  Or do the opposite?  For example, `builder.py` issues `subprocess.call(build_command, shell=True)`, which is shorthand for `subprocess.Popen(build_command, shell=True).wait()`.   But this may not be relevant.\n\nI'll try to take a closer look soon.",
+    "created_at": "2009-11-18T22:47:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62961",
+    "user": "mpatel"
+}
+```
 
 What if we capture `stderr` and `stdin`, too, in
 
@@ -37,16 +73,38 @@ What if we capture `stderr` and `stdin`, too, in
 I'll try to take a closer look soon.
 
 
----
-
-Comment by mpatel created at 2009-11-19 23:21:04
-
-I've noticed that switching among _existing branches_ via `sage -b`, even if I've changed no files, can touch or byte-compile files in `SAGE_LOCAL/lib/python/site-packages/sage`.  Sphinx notices the changed dependencies and rebuilds the manual.
-
 
 ---
 
-Comment by mpatel created at 2009-11-20 00:02:19
+archive/issue_comments_062962.json:
+```json
+{
+    "body": "I've noticed that switching among *existing branches* via `sage -b`, even if I've changed no files, can touch or byte-compile files in `SAGE_LOCAL/lib/python/site-packages/sage`.  Sphinx notices the changed dependencies and rebuilds the manual.",
+    "created_at": "2009-11-19T23:21:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62962",
+    "user": "mpatel"
+}
+```
+
+I've noticed that switching among *existing branches* via `sage -b`, even if I've changed no files, can touch or byte-compile files in `SAGE_LOCAL/lib/python/site-packages/sage`.  Sphinx notices the changed dependencies and rebuilds the manual.
+
+
+
+---
+
+archive/issue_comments_062963.json:
+```json
+{
+    "body": "It strange that\n\n```sh\ncd SAGE_ROOT/devel\nls -lsFi `find -name environment.pickle`|grep ref\n```\n\nshows the clones to have different Sphinx pickles --- their inodes (the first column on sage.math) are distinct.  Compare with\n\n```sh\nls -lsFi `find -name steenrod_algebra.html`\nls -lsFi `find -name steenrod_algebra.py`|grep -v build\n```\n\nBut aren't the pickles hard linked?",
+    "created_at": "2009-11-20T00:02:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62963",
+    "user": "mpatel"
+}
+```
 
 It strange that
 
@@ -65,46 +123,118 @@ ls -lsFi `find -name steenrod_algebra.py`|grep -v build
 But aren't the pickles hard linked?
 
 
+
 ---
 
-Comment by mpatel created at 2009-11-20 00:16:18
+archive/issue_comments_062964.json:
+```json
+{
+    "body": "I think this happens because `sphinx.environment.BuildEnvironment.topickle` first dumps the environment to a temporary file, then moves it `environment.pickle`.",
+    "created_at": "2009-11-20T00:16:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62964",
+    "user": "mpatel"
+}
+```
 
 I think this happens because `sphinx.environment.BuildEnvironment.topickle` first dumps the environment to a temporary file, then moves it `environment.pickle`.
 
 
+
 ---
+
+archive/issue_comments_062965.json:
+```json
+{
+    "body": "Attachment\n\nMake pickle saving preserve the hard link.  Apply to sage repo.",
+    "created_at": "2009-11-20T14:17:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62965",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
 Make pickle saving preserve the hard link.  Apply to sage repo.
 
 
----
-
-Comment by mpatel created at 2009-11-20 14:21:04
-
-Don't capture Sphinx clone output.  This _may_ prevent the hang.  Apply to scripts repo.
-
 
 ---
+
+archive/issue_comments_062966.json:
+```json
+{
+    "body": "Don't capture Sphinx clone output.  This *may* prevent the hang.  Apply to scripts repo.",
+    "created_at": "2009-11-20T14:21:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62966",
+    "user": "mpatel"
+}
+```
+
+Don't capture Sphinx clone output.  This *may* prevent the hang.  Apply to scripts repo.
+
+
+
+---
+
+archive/issue_comments_062967.json:
+```json
+{
+    "body": "Attachment\n\nI *think* the [attachment:trac_7473-scripts_clone.patch attached patch] for the scripts repository prevents the hang when cloning.  The [attachment:trac_7473-sage_builder.patch sage repository patch] should ensure that we usually keep just one copy of the reference manual's `environment.pickle`.\n\nBut I'm still not sure about how to avoid rebuilding nearly all of the manual when cloning or after trivially switching branches.  The latter may be a separate problem.",
+    "created_at": "2009-11-20T14:29:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62967",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
-I _think_ the [attachment:trac_7473-scripts_clone.patch attached patch] for the scripts repository prevents the hang when cloning.  The [attachment:trac_7473-sage_builder.patch sage repository patch] should ensure that we usually keep just one copy of the reference manual's `environment.pickle`.
+I *think* the [attachment:trac_7473-scripts_clone.patch attached patch] for the scripts repository prevents the hang when cloning.  The [attachment:trac_7473-sage_builder.patch sage repository patch] should ensure that we usually keep just one copy of the reference manual's `environment.pickle`.
 
 But I'm still not sure about how to avoid rebuilding nearly all of the manual when cloning or after trivially switching branches.  The latter may be a separate problem.
 
 
+
 ---
+
+archive/issue_comments_062968.json:
+```json
+{
+    "body": "Attachment\n\nUse `cp -pr` to preserve .rst file times.  This may work.  Apply only this patch to scripts repo.",
+    "created_at": "2009-11-22T18:57:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62968",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
 Use `cp -pr` to preserve .rst file times.  This may work.  Apply only this patch to scripts repo.
 
 
+
 ---
 
-Comment by mpatel created at 2009-11-22 19:09:13
+archive/issue_comments_062969.json:
+```json
+{
+    "body": "Version 2 of the scripts repo (i.e., `sage-clone`) patch uses `cp -pr` instead of [shutil.copytree](http://docs.python.org/library/shutil.html#shutil.copytree) to copy the auto-generated .rst files.  Could someone please test this and the sage repo patch?  It appears to prevent the hang and unnecessary rebuilds of the reference manual on sage.math.\n\nAccording to its documentation, `shutil.copytree` is very similar to `cp -pr`.  But their results aren't identical, it seems.\n\nI don't know if `cp -pr` is cross-platform.",
+    "created_at": "2009-11-22T19:09:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62969",
+    "user": "mpatel"
+}
+```
 
 Version 2 of the scripts repo (i.e., `sage-clone`) patch uses `cp -pr` instead of [shutil.copytree](http://docs.python.org/library/shutil.html#shutil.copytree) to copy the auto-generated .rst files.  Could someone please test this and the sage repo patch?  It appears to prevent the hang and unnecessary rebuilds of the reference manual on sage.math.
 
@@ -113,16 +243,38 @@ According to its documentation, `shutil.copytree` is very similar to `cp -pr`.  
 I don't know if `cp -pr` is cross-platform.
 
 
+
 ---
 
-Comment by mpatel created at 2009-11-22 19:09:13
+archive/issue_comments_062970.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-11-22T19:09:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62970",
+    "user": "mpatel"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-11-22 20:48:29
+archive/issue_comments_062971.json:
+```json
+{
+    "body": "#7407 provides the following link, saying that it describes the only options to \"cp\" which should be used:\n\n[http://www.opengroup.org/onlinepubs/009695399/utilities/cp.html](http://www.opengroup.org/onlinepubs/009695399/utilities/cp.html)\n\nReading this, I wonder if we should use \"cp -pR\" instead of \"cp -pr\".\n\nI made a new clone, applied the patch, built the documentation, and then made another clone.  The new cloning process took 2-3 minutes on my iMac running OS X 10.6, and when done the documentation did not need to be rebuilt again.  On sage.math, the same thing happened, with the cloning process taking about the same amount of time.  In both cases, updating the modification times was quick.  Also in both cases, using \"cp -pR\" worked just as well as \"cp -pr\".\n\nShall we take the cited web page as enough evidence that this is cross-platform?  And should we change \"r\" to \"R\"?",
+    "created_at": "2009-11-22T20:48:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62971",
+    "user": "jhpalmieri"
+}
+```
 
 #7407 provides the following link, saying that it describes the only options to "cp" which should be used:
 
@@ -135,44 +287,101 @@ I made a new clone, applied the patch, built the documentation, and then made an
 Shall we take the cited web page as enough evidence that this is cross-platform?  And should we change "r" to "R"?
 
 
+
 ---
+
+archive/issue_comments_062972.json:
+```json
+{
+    "body": "Attachment\n\nUse cp -pR for auto-generated .rst files.  Apply only this patch to the scripts repo.",
+    "created_at": "2009-11-23T21:36:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62972",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
 Use cp -pR for auto-generated .rst files.  Apply only this patch to the scripts repo.
 
 
+
 ---
 
-Comment by mpatel created at 2009-11-23 21:47:25
+archive/issue_comments_062973.json:
+```json
+{
+    "body": "Version 3 uses `cp -pR` instead of `cp -pr`.  Does the Windows build environment support `cp -pR`?",
+    "created_at": "2009-11-23T21:47:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62973",
+    "user": "mpatel"
+}
+```
 
 Version 3 uses `cp -pR` instead of `cp -pr`.  Does the Windows build environment support `cp -pR`?
 
 
+
 ---
 
-Comment by mpatel created at 2009-11-23 21:55:06
+archive/issue_comments_062974.json:
+```json
+{
+    "body": "nthiery, ncohen:  If you have a chance, could you let us know if the patches above work?  In particular,\n\n* Apply [attachment:trac_7473-sage_builder.patch] to the sage repository.\n* Apply [attachment:trac_7473-scripts_clone_v3.patch] to the scripts repository.\n\nIf this is yet another false positive, I apologize.",
+    "created_at": "2009-11-23T21:55:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62974",
+    "user": "mpatel"
+}
+```
 
 nthiery, ncohen:  If you have a chance, could you let us know if the patches above work?  In particular,
 
- * Apply [attachment:trac_7473-sage_builder.patch] to the sage repository.
- * Apply [attachment:trac_7473-scripts_clone_v3.patch] to the scripts repository.
+* Apply [attachment:trac_7473-sage_builder.patch] to the sage repository.
+* Apply [attachment:trac_7473-scripts_clone_v3.patch] to the scripts repository.
 
 If this is yet another false positive, I apologize.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-11-23 23:46:47
+archive/issue_comments_062975.json:
+```json
+{
+    "body": "I'm happy with it (Mac OS X 10.6 and sage.math).\n\nOn what other platforms does it need to be tested?",
+    "created_at": "2009-11-23T23:46:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62975",
+    "user": "jhpalmieri"
+}
+```
 
 I'm happy with it (Mac OS X 10.6 and sage.math).
 
 On what other platforms does it need to be tested?
 
 
+
 ---
 
-Comment by ncohen created at 2009-11-24 07:32:40
+archive/issue_comments_062976.json:
+```json
+{
+    "body": "I tried it on my Fedora ( built from sources ) and it applies fine and does its job ( I'm not stuck anymore when cloning ) !\n\n( Even though I can not control your script as I have no idea of how Sage works at this level... ) :-)\n\nThank you for your patch !!!\n\nNathann",
+    "created_at": "2009-11-24T07:32:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62976",
+    "user": "ncohen"
+}
+```
 
 I tried it on my Fedora ( built from sources ) and it applies fine and does its job ( I'm not stuck anymore when cloning ) !
 
@@ -183,9 +392,20 @@ Thank you for your patch !!!
 Nathann
 
 
+
 ---
 
-Comment by nthiery created at 2009-11-24 12:51:54
+archive/issue_comments_062977.json:
+```json
+{
+    "body": "Replying to [comment:11 mpatel]:\n> nthiery, ncohen:  If you have a chance, could you let us know if the patches above work?  In particular,\n> \n>  * Apply [attachment:trac_7473-sage_builder.patch] to the sage repository.\n>  * Apply [attachment:trac_7473-scripts_clone_v3.patch] to the scripts repository.\n> \n> If this is yet another false positive, I apologize.\n\nI tried sage -combinat install (which calls clone), and it worked smoothly (ubuntu 9.4, sage 4.2.1, macbook pro)!\n\nThanks!",
+    "created_at": "2009-11-24T12:51:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62977",
+    "user": "nthiery"
+}
+```
 
 Replying to [comment:11 mpatel]:
 > nthiery, ncohen:  If you have a chance, could you let us know if the patches above work?  In particular,
@@ -200,85 +420,217 @@ I tried sage -combinat install (which calls clone), and it worked smoothly (ubun
 Thanks!
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-11-26 06:43:59
+archive/issue_comments_062978.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-11-26T06:43:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62978",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-11-26 06:43:59
+archive/issue_comments_062979.json:
+```json
+{
+    "body": "On the grounds that this is an improvement on some systems and I hope isn't any worse on any systems, I'm giving this a positive review.  I really would like this to be merged, because cloning is so painful right now.",
+    "created_at": "2009-11-26T06:43:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62979",
+    "user": "jhpalmieri"
+}
+```
 
 On the grounds that this is an improvement on some systems and I hope isn't any worse on any systems, I'm giving this a positive review.  I really would like this to be merged, because cloning is so painful right now.
 
 
+
 ---
 
-Comment by mhansen created at 2009-11-29 05:41:47
+archive/issue_comments_062980.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-11-29T05:41:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62980",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mpatel created at 2009-12-04 07:59:19
+archive/issue_comments_062981.json:
+```json
+{
+    "body": "It seems that the [attachment:trac_7473-sage_builder.patch sage repo patch] didn't make it into 4.3.alpha1.  This patch will prevent some unnecessary doc rebuilds when changing branches.",
+    "created_at": "2009-12-04T07:59:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62981",
+    "user": "mpatel"
+}
+```
 
 It seems that the [attachment:trac_7473-sage_builder.patch sage repo patch] didn't make it into 4.3.alpha1.  This patch will prevent some unnecessary doc rebuilds when changing branches.
 
 
+
 ---
 
-Comment by mhansen created at 2009-12-04 08:06:31
+archive/issue_comments_062982.json:
+```json
+{
+    "body": "Oops, I must only seen the last patch.  I'll add it first thing to the next release.",
+    "created_at": "2009-12-04T08:06:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62982",
+    "user": "mhansen"
+}
+```
 
 Oops, I must only seen the last patch.  I'll add it first thing to the next release.
 
 
+
 ---
 
-Comment by mhansen created at 2009-12-04 08:06:31
+archive/issue_comments_062983.json:
+```json
+{
+    "body": "Resolution changed from fixed to ",
+    "created_at": "2009-12-04T08:06:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62983",
+    "user": "mhansen"
+}
+```
 
 Resolution changed from fixed to 
 
 
+
 ---
 
-Comment by mhansen created at 2009-12-04 08:06:31
+archive/issue_comments_062984.json:
+```json
+{
+    "body": "Changing status from closed to new.",
+    "created_at": "2009-12-04T08:06:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62984",
+    "user": "mhansen"
+}
+```
 
 Changing status from closed to new.
 
 
+
 ---
 
-Comment by mhansen created at 2009-12-04 08:06:45
+archive/issue_comments_062985.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-12-04T08:06:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62985",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mhansen created at 2009-12-04 08:06:53
+archive/issue_comments_062986.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-12-04T08:06:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62986",
+    "user": "mhansen"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mpatel created at 2009-12-04 08:28:31
+archive/issue_comments_062987.json:
+```json
+{
+    "body": "Thanks!",
+    "created_at": "2009-12-04T08:28:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62987",
+    "user": "mpatel"
+}
+```
 
 Thanks!
 
 
+
 ---
 
-Comment by mhansen created at 2009-12-06 08:24:12
+archive/issue_comments_062988.json:
+```json
+{
+    "body": "Merged trac_7473-sage_builder.patch in 4.3.rc0.",
+    "created_at": "2009-12-06T08:24:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62988",
+    "user": "mhansen"
+}
+```
 
 Merged trac_7473-sage_builder.patch in 4.3.rc0.
 
 
+
 ---
 
-Comment by mhansen created at 2009-12-06 08:24:12
+archive/issue_comments_062989.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-12-06T08:24:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7473#issuecomment-62989",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

@@ -1,27 +1,65 @@
 # Issue 2540: dsage doctest fails in 2.10.4.alpha0
 
-Issue created by migration from https://trac.sagemath.org/ticket/2540
-
-Original creator: yi
-
-Original creation time: 2008-03-16 02:17:22
-
+archive/issues_002540.json:
+```json
+{
+    "body": "Assignee: yi\n\nPeople have been reporting dsage doctest failures which have been caused because the necessary \"long time\" flags were not set. \nAttached is a patch which fixes this. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2540\n\n",
+    "created_at": "2008-03-16T02:17:22Z",
+    "labels": [
+        "dsage",
+        "major",
+        "bug"
+    ],
+    "title": "dsage doctest fails in 2.10.4.alpha0",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2540",
+    "user": "yi"
+}
+```
 Assignee: yi
 
 People have been reporting dsage doctest failures which have been caused because the necessary "long time" flags were not set. 
 Attached is a patch which fixes this. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2540
+
+
+
+
 
 ---
+
+archive/issue_comments_017323.json:
+```json
+{
+    "body": "Attachment\n\ndsage doctest fix",
+    "created_at": "2008-03-16T02:17:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2540",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2540#issuecomment-17323",
+    "user": "yi"
+}
+```
 
 Attachment
 
 dsage doctest fix
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-16 02:30:36
+archive/issue_comments_017324.json:
+```json
+{
+    "body": "Patch looks good to me an fixes the issue.\n\nCheers,\n\nMichael",
+    "created_at": "2008-03-16T02:30:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2540",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2540#issuecomment-17324",
+    "user": "mabshoff"
+}
+```
 
 Patch looks good to me an fixes the issue.
 
@@ -30,15 +68,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-16 02:31:49
+archive/issue_comments_017325.json:
+```json
+{
+    "body": "Merged in Sage 2.10.4.rc0",
+    "created_at": "2008-03-16T02:31:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2540",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2540#issuecomment-17325",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.4.rc0
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-16 02:31:49
+archive/issue_comments_017326.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-03-16T02:31:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2540",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2540#issuecomment-17326",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

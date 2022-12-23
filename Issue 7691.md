@@ -1,11 +1,21 @@
 # Issue 7691: Expect interfaces should not timeout
 
-Issue created by migration from https://trac.sagemath.org/ticket/7691
-
-Original creator: was
-
-Original creation time: 2009-12-15 19:46:14
-
+archive/issues_007691.json:
+```json
+{
+    "body": "Assignee: was\n\nLong, long ago I randomly decided that the pexpect interfaces (to maxima, gp, etc.) should timeout if the subprocess takes more than 30 seconds to startup.  This is completely arbitrary, and really makes no sense, especially since randomly loaded systems (especially heavy NFS load) can easily and reasonably increase the startup time to > 30 seconds.  \n\nLet's change it so that there is *no* timeout.  If you type\n\n```\n sage: gp('2+2')\n```\n\nthen Sage should simply wait until gp starts, no matter how long that takes.   That's just like typing \n\n```\n bash$ gp\n```\n\non the command line and the command line not killing gp because it takes > 30 seconds to start.\n\nThis will also sort out many doctest issues on highly loaded machines. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7691\n\n",
+    "created_at": "2009-12-15T19:46:14Z",
+    "labels": [
+        "interfaces",
+        "major",
+        "bug"
+    ],
+    "title": "Expect interfaces should not timeout",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7691",
+    "user": "was"
+}
+```
 Assignee: was
 
 Long, long ago I randomly decided that the pexpect interfaces (to maxima, gp, etc.) should timeout if the subprocess takes more than 30 seconds to startup.  This is completely arbitrary, and really makes no sense, especially since randomly loaded systems (especially heavy NFS load) can easily and reasonably increase the startup time to > 30 seconds.  
@@ -26,30 +36,80 @@ on the command line and the command line not killing gp because it takes > 30 se
 
 This will also sort out many doctest issues on highly loaded machines. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7691
+
+
+
+
 
 ---
 
-Comment by was created at 2009-12-15 21:41:05
+archive/issue_comments_065986.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-12-15T21:41:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7691",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7691#issuecomment-65986",
+    "user": "was"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by was created at 2009-12-15 21:41:05
+archive/issue_comments_065987.json:
+```json
+{
+    "body": "Here is the patch:\n\n    http://sage.math.washington.edu/home/wstein/patches/trac_7691.patch",
+    "created_at": "2009-12-15T21:41:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7691",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7691#issuecomment-65987",
+    "user": "was"
+}
+```
 
 Here is the patch:
 
     http://sage.math.washington.edu/home/wstein/patches/trac_7691.patch
 
 
+
 ---
 
-Comment by mhansen created at 2009-12-16 02:28:54
+archive/issue_comments_065988.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-12-16T02:28:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7691",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7691#issuecomment-65988",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
+
+archive/issue_comments_065989.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-12-16T02:28:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7691",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7691#issuecomment-65989",
+    "user": "mhansen"
+}
+```
 
 Attachment

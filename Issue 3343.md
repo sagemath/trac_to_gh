@@ -1,11 +1,21 @@
 # Issue 3343: arguments, documentation to ln function
 
-Issue created by migration from https://trac.sagemath.org/ticket/3343
-
-Original creator: jhpalmieri
-
-Original creation time: 2008-05-31 21:46:29
-
+archive/issues_003343.json:
+```json
+{
+    "body": "Assignee: somebody\n\nKeywords: ln, calculus\n\nFirst, ln should only take 1 argument.  As it is, it accepts more than one, and just ignores all of the extra ones:\n\n\n```\nsage: ln(6,2)\nlog(6)\nsage: ln(12,-2,0,0,3,4,5)\nlog(12)\n```\n\n\nSecond, the documentation for ln (hitting 'ln?') gives the documentation for the class Function_log, and hence includes things like this:\n\n```\nsage: log(1024, 2) # the following is ugly (for now)\nlog(1024)/log(2)\nsage: log(10, 4)\nlog(10)/log(4)\n```\n\n\nThe attached patch defines ln as a function accepting only one argument, and with its own documentation.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3343\n\n",
+    "created_at": "2008-05-31T21:46:29Z",
+    "labels": [
+        "calculus",
+        "major",
+        "bug"
+    ],
+    "title": "arguments, documentation to ln function",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3343",
+    "user": "jhpalmieri"
+}
+```
 Assignee: somebody
 
 Keywords: ln, calculus
@@ -34,28 +44,78 @@ log(10)/log(4)
 The attached patch defines ln as a function accepting only one argument, and with its own documentation.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3343
+
+
+
+
 
 ---
+
+archive/issue_comments_023220.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-05-31T21:49:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3343",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3343#issuecomment-23220",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by gfurnish created at 2008-06-10 05:31:12
+archive/issue_comments_023221.json:
+```json
+{
+    "body": "This is a good idea.",
+    "created_at": "2008-06-10T05:31:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3343",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3343#issuecomment-23221",
+    "user": "gfurnish"
+}
+```
 
 This is a good idea.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-10 05:51:51
+archive/issue_comments_023222.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-06-10T05:51:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3343",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3343#issuecomment-23222",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-10 05:51:51
+archive/issue_comments_023223.json:
+```json
+{
+    "body": "Merged in Sage 3.0.3.alpha2",
+    "created_at": "2008-06-10T05:51:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3343",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3343#issuecomment-23223",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.3.alpha2

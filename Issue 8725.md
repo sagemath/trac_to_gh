@@ -1,11 +1,21 @@
 # Issue 8725: New SageNB release 0.8
 
-Issue created by migration from https://trac.sagemath.org/ticket/8725
-
-Original creator: timdumol
-
-Original creation time: 2010-04-20 14:33:02
-
+archive/issues_008725.json:
+```json
+{
+    "body": "Assignee: jason, was\n\nThis package includes the ff. patches:\n\n#8724 (blocker), #5712, #7501, #6069, #3154, #8249, #8436, #8092, #8038, #693, #7997, #7633, #8369, #8637, #7665\n\nFind it at http://sage.math.washington.edu/home/timdumol/sagenb-0.8.spkg.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8725\n\n",
+    "created_at": "2010-04-20T14:33:02Z",
+    "labels": [
+        "notebook",
+        "major",
+        "enhancement"
+    ],
+    "title": "New SageNB release 0.8",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8725",
+    "user": "timdumol"
+}
+```
 Assignee: jason, was
 
 This package includes the ff. patches:
@@ -14,30 +24,78 @@ This package includes the ff. patches:
 
 Find it at http://sage.math.washington.edu/home/timdumol/sagenb-0.8.spkg.
 
+Issue created by migration from https://trac.sagemath.org/ticket/8725
+
+
+
+
 
 ---
 
-Comment by timdumol created at 2010-04-20 16:31:21
+archive/issue_comments_079699.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-04-20T16:31:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8725",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8725#issuecomment-79699",
+    "user": "timdumol"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by was created at 2010-04-24 22:20:36
+archive/issue_comments_079700.json:
+```json
+{
+    "body": "I've reviewed this and everything is good (assuming #8222 is *not* in sagenb-0.8).    There is this issue #8755, but that can wait.",
+    "created_at": "2010-04-24T22:20:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8725",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8725#issuecomment-79700",
+    "user": "was"
+}
+```
 
 I've reviewed this and everything is good (assuming #8222 is *not* in sagenb-0.8).    There is this issue #8755, but that can wait.
 
 
+
 ---
 
-Comment by was created at 2010-04-24 22:20:36
+archive/issue_comments_079701.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-04-24T22:20:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8725",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8725#issuecomment-79701",
+    "user": "was"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by was created at 2010-04-29 05:40:48
+archive/issue_comments_079702.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-04-29T05:40:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8725",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8725#issuecomment-79702",
+    "user": "was"
+}
+```
 
 Resolution: fixed

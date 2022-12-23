@@ -1,11 +1,21 @@
 # Issue 5129: numerical noise in roots calculus/calculus.py
 
-Issue created by migration from https://trac.sagemath.org/ticket/5129
-
-Original creator: jsp
-
-Original creation time: 2009-01-29 19:55:22
-
+archive/issues_005129.json:
+```json
+{
+    "body": "Assignee: burcin\n\n\n```\n[jaap@peace sage-3.3.alpha0]$ ./sage -t \"devel/sage/sage/calculus/calculus.py\"\nsage -t  \"devel/sage/sage/calculus/calculus.py\"\n**********************************************************************\nFile \"/home/jaap/Download/sage-3.3.alpha0/devel/sage/sage/calculus/calculus.py\",\nline 3206:\n    sage: f.roots(ring=CC)\nExpected:\n    [(-0.0588115223184495, 1), (1.36050567903502 + 1.51880872209965*I,\n1), (-1.33109991787579 + 1.52241655183732*I, 1), (1.36050567903502 -\n1.51880872209965*I, 1), (-1.33109991787580 - 1.52241655183732*I, 1)]\nGot:\n    [(-0.0588115223184495, 1), (1.36050567903502 + 1.51880872209965*I,\n1), (-1.33109991787580 + 1.52241655183732*I, 1), (1.36050567903502 -\n1.51880872209965*I, 1), (-1.33109991787580 - 1.52241655183732*I, 1)]\n**********************************************************************\nFile \"/home/jaap/Download/sage-3.3.alpha0/devel/sage/sage/calculus/calculus.py\",\nline 3208:\n    sage: (2.5*f).roots(ring=RR)\nExpected:\n    [(-0.0588115223184494, 1)]\nGot:\n    [(-0.0588115223184495, 1)]\n**********************************************************************\nFile \"/home/jaap/Download/sage-3.3.alpha0/devel/sage/sage/calculus/calculus.py\",\nline 3210:\n    sage: f.roots(ring=CC, multiplicities=False)\nExpected:\n    [-0.0588115223184495, 1.36050567903502 + 1.51880872209965*I,\n-1.33109991787579 + 1.52241655183732*I, 1.36050567903502 -\n1.51880872209965*I, -1.33109991787580 - 1.52241655183732*I]\nGot:\n    [-0.0588115223184495, 1.36050567903502 + 1.51880872209965*I,\n-1.33109991787580 + 1.52241655183732*I, 1.36050567903502 -\n1.51880872209965*I, -1.33109991787580 - 1.52241655183732*I]\n**********************************************************************\n1 items had failures:\n   3 of  29 in __main__.example_81\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file\n/home/jaap/Download/sage-3.3.alpha0/tmp/.doctest_calculus.py\n\t [243.9 s]\nexit code: 1024\n\n------------------------------\n\n```\n\n\nThis is on Fedora 10, 32 bits.\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/5129\n\n",
+    "created_at": "2009-01-29T19:55:22Z",
+    "labels": [
+        "calculus",
+        "major",
+        "bug"
+    ],
+    "title": "numerical noise in roots calculus/calculus.py",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5129",
+    "user": "jsp"
+}
+```
 Assignee: burcin
 
 
@@ -62,10 +72,25 @@ This is on Fedora 10, 32 bits.
 
 Jaap
 
+Issue created by migration from https://trac.sagemath.org/ticket/5129
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2009-02-03 17:37:06
+archive/issue_comments_039201.json:
+```json
+{
+    "body": "This is a blocker!\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-03T17:37:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5129#issuecomment-39201",
+    "user": "mabshoff"
+}
+```
 
 This is a blocker!
 
@@ -74,35 +99,92 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-03 17:37:06
+archive/issue_comments_039202.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-02-03T17:37:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5129#issuecomment-39202",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-03 17:37:06
+archive/issue_comments_039203.json:
+```json
+{
+    "body": "Changing priority from major to blocker.",
+    "created_at": "2009-02-03T17:37:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5129#issuecomment-39203",
+    "user": "mabshoff"
+}
+```
 
 Changing priority from major to blocker.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-03 17:37:06
+archive/issue_comments_039204.json:
+```json
+{
+    "body": "Changing assignee from burcin to mabshoff.",
+    "created_at": "2009-02-03T17:37:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5129#issuecomment-39204",
+    "user": "mabshoff"
+}
+```
 
 Changing assignee from burcin to mabshoff.
 
 
+
 ---
+
+archive/issue_comments_039205.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-02-03T18:24:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5129#issuecomment-39205",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-03 18:25:30
+archive/issue_comments_039206.json:
+```json
+{
+    "body": "Patch is up.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-03T18:25:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5129#issuecomment-39206",
+    "user": "mabshoff"
+}
+```
 
 Patch is up.
 
@@ -111,9 +193,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by jsp created at 2009-02-03 18:36:30
+archive/issue_comments_039207.json:
+```json
+{
+    "body": "On Fedora 9, 32 bits:\n\n\n```\n[jaap@paix sage-3.3.alpha3]$ ./sage -t \"devel/sage/sage/calculus/calculus.py\"\nsage -t  \"devel/sage/sage/calculus/calculus.py\"             \n\t [171.4 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 171.4 seconds\n\n```\n\n\nLooks good to me!\n\nJaap",
+    "created_at": "2009-02-03T18:36:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5129#issuecomment-39207",
+    "user": "jsp"
+}
+```
 
 On Fedora 9, 32 bits:
 
@@ -135,9 +228,20 @@ Looks good to me!
 Jaap
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-03 18:51:10
+archive/issue_comments_039208.json:
+```json
+{
+    "body": "Merged in Sage 3.3.alpha5.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-03T18:51:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5129#issuecomment-39208",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.3.alpha5.
 
@@ -146,8 +250,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-03 18:51:10
+archive/issue_comments_039209.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-02-03T18:51:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5129#issuecomment-39209",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

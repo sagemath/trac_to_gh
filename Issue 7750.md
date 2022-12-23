@@ -1,11 +1,21 @@
 # Issue 7750: search_doc: print warning if some Sage docs are missing
 
-Issue created by migration from https://trac.sagemath.org/ticket/7750
-
-Original creator: jhpalmieri
-
-Original creation time: 2009-12-22 21:14:50
-
+archive/issues_007750.json:
+```json
+{
+    "body": "Assignee: mvngu\n\nIf you call search_doc and one piece of the Sage docs are missing, this patch prints the following warning (and then proceeds with the search):\n\n```\nsage: search_doc('factorial')\nWarning, the following Sage documentation hasn't been built,\nso documentation search results may be incomplete:\n\n/Applications/sage/devel/sage/doc/output/html/fr/tutorial\n\nYou can build this with 'sage -docbuild fr/tutorial html'.\n```\n\nIf more than one piece is missing, it prints this warning:\n\n```\nsage: search_doc('factorial')\nWarning, the following Sage documentation hasn't been built,\nso documentation search results may be incomplete:\n\n/Applications/sage/devel/sage/doc/output/html/en/developer\n/Applications/sage/devel/sage/doc/output/html/en/installation\n/Applications/sage/devel/sage/doc/output/html/fr/tutorial\n\nYou can build these with 'sage -docbuild DOCUMENT html',\nwhere DOCUMENT is one of 'developer', 'installation', 'fr/tutorial', \nor you can use 'sage -docbuild all html' to build all of the missing documentation.\n```\n\nYou can test this by installing the patch and selectively deleting and building pieces of the documentation.  You don't need to restart Sage between deletions or builds -- do that in another window, and each call to search_doc will check for existence of the docs each time.\n\nThere are no doctests for this, because I think that doctests should assume that the Sage build is complete: all documentation should be assumed to be built.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7750\n\n",
+    "created_at": "2009-12-22T21:14:50Z",
+    "labels": [
+        "documentation",
+        "minor",
+        "enhancement"
+    ],
+    "title": "search_doc: print warning if some Sage docs are missing",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7750",
+    "user": "jhpalmieri"
+}
+```
 Assignee: mvngu
 
 If you call search_doc and one piece of the Sage docs are missing, this patch prints the following warning (and then proceeds with the search):
@@ -41,35 +51,96 @@ You can test this by installing the patch and selectively deleting and building 
 There are no doctests for this, because I think that doctests should assume that the Sage build is complete: all documentation should be assumed to be built.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7750
+
+
+
+
 
 ---
 
-Comment by jhpalmieri created at 2009-12-22 21:15:35
+archive/issue_comments_066738.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-12-22T21:15:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7750",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7750#issuecomment-66738",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_066739.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-12-22T21:18:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7750",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7750#issuecomment-66739",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2009-12-22 21:31:10
+archive/issue_comments_066740.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-12-22T21:31:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7750",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7750#issuecomment-66740",
+    "user": "was"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by was created at 2009-12-22 21:31:10
+archive/issue_comments_066741.json:
+```json
+{
+    "body": "This is *awesome*.  Positive review.",
+    "created_at": "2009-12-22T21:31:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7750",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7750#issuecomment-66741",
+    "user": "was"
+}
+```
 
 This is *awesome*.  Positive review.
 
 
+
 ---
 
-Comment by mhansen created at 2010-01-04 02:12:14
+archive/issue_comments_066742.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-04T02:12:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7750",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7750#issuecomment-66742",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

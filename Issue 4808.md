@@ -1,65 +1,171 @@
 # Issue 4808: [with patch, needs work] Move HTML for Worksheets to template
 
-Issue created by migration from https://trac.sagemath.org/ticket/4808
-
-Original creator: TimothyClemans
-
-Original creation time: 2008-12-16 05:20:45
-
+archive/issues_004808.json:
+```json
+{
+    "body": "Assignee: boothby\n\nCC:  mhansen mvngu\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4808\n\n",
+    "created_at": "2008-12-16T05:20:45Z",
+    "labels": [
+        "notebook",
+        "major",
+        "enhancement"
+    ],
+    "title": "[with patch, needs work] Move HTML for Worksheets to template",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4808",
+    "user": "TimothyClemans"
+}
+```
 Assignee: boothby
 
 CC:  mhansen mvngu
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4808
+
+
+
+
 
 ---
+
+archive/issue_comments_036448.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-12-16T05:22:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4808",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4808#issuecomment-36448",
+    "user": "TimothyClemans"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_036449.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-12-16T05:23:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4808",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4808#issuecomment-36449",
+    "user": "TimothyClemans"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by TimothyClemans created at 2008-12-16 05:24:13
+archive/issue_comments_036450.json:
+```json
+{
+    "body": "Depends on  #4718",
+    "created_at": "2008-12-16T05:24:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4808",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4808#issuecomment-36450",
+    "user": "TimothyClemans"
+}
+```
 
 Depends on  #4718
 
 
+
 ---
 
-Comment by TimothyClemans created at 2008-12-20 21:27:25
+archive/issue_comments_036451.json:
+```json
+{
+    "body": "Conflicts with #4705",
+    "created_at": "2008-12-20T21:27:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4808",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4808#issuecomment-36451",
+    "user": "TimothyClemans"
+}
+```
 
 Conflicts with #4705
 
 
+
 ---
 
-Comment by mpatel created at 2009-08-10 09:24:19
+archive/issue_comments_036452.json:
+```json
+{
+    "body": "#6568 is a \"duplicate.\"  Should this one be closed?",
+    "created_at": "2009-08-10T09:24:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4808",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4808#issuecomment-36452",
+    "user": "mpatel"
+}
+```
 
 #6568 is a "duplicate."  Should this one be closed?
 
 
+
 ---
 
-Comment by timdumol created at 2009-09-05 14:08:07
+archive/issue_comments_036453.json:
+```json
+{
+    "body": "Changes suggested by this item have been implemented at #6568 and merged in. Please close this.",
+    "created_at": "2009-09-05T14:08:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4808",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4808#issuecomment-36453",
+    "user": "timdumol"
+}
+```
 
 Changes suggested by this item have been implemented at #6568 and merged in. Please close this.
 
 
+
 ---
 
-Comment by jason created at 2009-10-06 19:27:21
+archive/issue_comments_036454.json:
+```json
+{
+    "body": "Please note the request to close this...",
+    "created_at": "2009-10-06T19:27:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4808",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4808#issuecomment-36454",
+    "user": "jason"
+}
+```
 
 Please note the request to close this...
 
 
+
 ---
 
-Comment by boothby created at 2009-10-06 20:04:16
+archive/issue_comments_036455.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2009-10-06T20:04:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4808",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4808#issuecomment-36455",
+    "user": "boothby"
+}
+```
 
 Resolution: duplicate

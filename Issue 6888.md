@@ -1,11 +1,21 @@
 # Issue 6888: sage-env complain about bad SAGE_ROOT environment variable with no reason
 
-Issue created by migration from https://trac.sagemath.org/ticket/6888
-
-Original creator: sbarthelemy
-
-Original creation time: 2009-09-04 12:59:01
-
+archive/issues_006888.json:
+```json
+{
+    "body": "Assignee: tbd\n\nthe $SAGE_ROOT/local/bin/sage-env has 2 small flaws.\n\n1) the script prints the following message: \n\n```\n    You must set the SAGE_ROOT environment variable or\n    run this script from the SAGE_ROOT or\n    SAGE_ROOT/local/bin/ directory.\n```\n\neven if SAGE_ROOT is set correctly.\n\n2) if SAGE_ROOT is set to a wrong path, it doesn't stop,\n\nThe attached patch fixes them. \n\nI am not a shell expert, so please test it.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6888\n\n",
+    "created_at": "2009-09-04T12:59:01Z",
+    "labels": [
+        "build",
+        "major",
+        "bug"
+    ],
+    "title": "sage-env complain about bad SAGE_ROOT environment variable with no reason",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6888",
+    "user": "sbarthelemy"
+}
+```
 Assignee: tbd
 
 the $SAGE_ROOT/local/bin/sage-env has 2 small flaws.
@@ -28,28 +38,78 @@ I am not a shell expert, so please test it.
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6888
+
+
+
+
 
 ---
+
+archive/issue_comments_056928.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-09-07T23:03:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6888",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6888#issuecomment-56928",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by timdumol created at 2009-09-22 13:30:06
+archive/issue_comments_056929.json:
+```json
+{
+    "body": "Looks good. Good job.",
+    "created_at": "2009-09-22T13:30:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6888",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6888#issuecomment-56929",
+    "user": "timdumol"
+}
+```
 
 Looks good. Good job.
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-15 09:40:32
+archive/issue_comments_056930.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-10-15T09:40:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6888",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6888#issuecomment-56930",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by chapoton created at 2017-07-19 09:06:12
+archive/issue_comments_056931.json:
+```json
+{
+    "body": "full author name",
+    "created_at": "2017-07-19T09:06:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6888",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6888#issuecomment-56931",
+    "user": "chapoton"
+}
+```
 
 full author name

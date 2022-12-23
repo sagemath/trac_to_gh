@@ -1,11 +1,21 @@
 # Issue 8994: Improve convolution support
 
-Issue created by migration from https://trac.sagemath.org/ticket/8994
-
-Original creator: kcrisman
-
-Original creation time: 2010-05-19 17:21:31
-
+archive/issues_008994.json:
+```json
+{
+    "body": "Assignee: burcin\n\nKeywords: convolution, convolve, discrete, continuous\n\nWe have convolution scattered in several places, including\n\n```\nsage.rings.polynomial.convolution\nsage.functions.piecewise.PiecewisePolynomial.convolution\nsage.gsl.dft.IndexedSequence.convolution\n```\n\nThis should be extended to make it easier to use/find and to support more arbitrary inputs, both discrete and continuous.\n\nSee [http://groups.google.com/group/sage-support/browse_thread/thread/7f90c228df9530dd](http://groups.google.com/group/sage-support/browse_thread/thread/7f90c228df9530dd) for background.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8994\n\n",
+    "created_at": "2010-05-19T17:21:31Z",
+    "labels": [
+        "symbolics",
+        "major",
+        "enhancement"
+    ],
+    "title": "Improve convolution support",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8994",
+    "user": "kcrisman"
+}
+```
 Assignee: burcin
 
 Keywords: convolution, convolve, discrete, continuous
@@ -22,10 +32,25 @@ This should be extended to make it easier to use/find and to support more arbitr
 
 See [http://groups.google.com/group/sage-support/browse_thread/thread/7f90c228df9530dd](http://groups.google.com/group/sage-support/browse_thread/thread/7f90c228df9530dd) for background.
 
+Issue created by migration from https://trac.sagemath.org/ticket/8994
+
+
+
+
 
 ---
 
-Comment by mkoeppe created at 2016-06-25 17:38:36
+archive/issue_comments_083176.json:
+```json
+{
+    "body": "Updated description to reflect changes in new `piecewise` implementation (#14801).\nChanging to \"wishlist\" because nobody seems to have worked on it in 6 years",
+    "created_at": "2016-06-25T17:38:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8994",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8994#issuecomment-83176",
+    "user": "mkoeppe"
+}
+```
 
 Updated description to reflect changes in new `piecewise` implementation (#14801).
 Changing to "wishlist" because nobody seems to have worked on it in 6 years

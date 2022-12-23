@@ -1,11 +1,21 @@
 # Issue 2495: Updated experimental Mayavi2 spkg (mayavi_2.1.1) linux only
 
-Issue created by migration from https://trac.sagemath.org/ticket/2495
-
-Original creator: jsp
-
-Original creation time: 2008-03-12 15:14:59
-
+archive/issues_002495.json:
+```json
+{
+    "body": "Assignee: was\n\nUpdated to the latest release of Mayavi2.\n\nNow uses vtk-5.0.4 with GL2EPS enabled, so picures can be saved as eps, ps and pdf files!\n\nSee:\nhttp://sage.math.washington.edu/home/jsp/SPKGS/mayavi_2.1.1/\n\nhttp://sage.math.washington.edu/home/jsp/SPKGS/mayavi_2.1.1/mayavi_2.1.1-20080307.spkg\n\nwith dependencies:\n\nhttp://sage.math.washington.edu/home/jsp/SPKGS/mayavi_2.1.1/vtk-5.0.4.spkg \n\nnew version of setuptools (will be in sage-2.10.4 standard): http://sage.math.washington.edu/home/jsp/SPKGS/mayavi_2.1.1/setuptools-0.6c8.spkg\n\nhttp://sage.math.washington.edu/home/jsp/SPKGS/mayavi_2.1.1/wxPython-2.8.7.1.spkg (already in experimental)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2495\n\n",
+    "created_at": "2008-03-12T15:14:59Z",
+    "labels": [
+        "graphics",
+        "minor",
+        "enhancement"
+    ],
+    "title": "Updated experimental Mayavi2 spkg (mayavi_2.1.1) linux only",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2495",
+    "user": "jsp"
+}
+```
 Assignee: was
 
 Updated to the latest release of Mayavi2.
@@ -25,19 +35,45 @@ new version of setuptools (will be in sage-2.10.4 standard): http://sage.math.wa
 
 http://sage.math.washington.edu/home/jsp/SPKGS/mayavi_2.1.1/wxPython-2.8.7.1.spkg (already in experimental)
 
+Issue created by migration from https://trac.sagemath.org/ticket/2495
+
+
+
+
 
 ---
 
-Comment by cwitty created at 2008-03-13 04:53:26
+archive/issue_comments_016905.json:
+```json
+{
+    "body": "I used these packages to upgrade from earlier versions of Jaap's packages; the installations went perfectly, and my code (which uses wxPython, vtk, and tvtk (from mayavi)) worked fine after the upgrade.\n\nDebian testing 32-bit x86.",
+    "created_at": "2008-03-13T04:53:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2495",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2495#issuecomment-16905",
+    "user": "cwitty"
+}
+```
 
 I used these packages to upgrade from earlier versions of Jaap's packages; the installations went perfectly, and my code (which uses wxPython, vtk, and tvtk (from mayavi)) worked fine after the upgrade.
 
 Debian testing 32-bit x86.
 
 
+
 ---
 
-Comment by wdj created at 2008-03-13 11:04:50
+archive/issue_comments_016906.json:
+```json
+{
+    "body": "There is a small typo in\nhttp://sage.math.washington.edu/home/jsp/SPKGS/mayavi_2.1.1/README.txt\nThe line\nype ./sage -i mayavi_2.1.1.20080307\nshould read\nype ./sage -i mayavi_2.1.1-20080307",
+    "created_at": "2008-03-13T11:04:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2495",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2495#issuecomment-16906",
+    "user": "wdj"
+}
+```
 
 There is a small typo in
 http://sage.math.washington.edu/home/jsp/SPKGS/mayavi_2.1.1/README.txt
@@ -47,9 +83,20 @@ should read
 ype ./sage -i mayavi_2.1.1-20080307
 
 
+
 ---
 
-Comment by wdj created at 2008-03-13 13:23:54
+archive/issue_comments_016907.json:
+```json
+{
+    "body": "I tried this and got the following install error:\n\n\n```\n...\nInstalling mayavi2 script to /home/wdj/wdj/sagefiles/sage-2.10.3/local/bin\n\nInstalled /mnt/drive_hda1/sagefiles/sage-2.10.3/local/lib/python2.5/site-packages/enthought.mayavi-2.1.1.dev_r18151-py2.5.egg\nProcessing dependencies for enthought.mayavi==2.1.1.dev-r18151\nSearching for enthought.util>=2.0.3.dev,<3.0a\nBest match: enthought.util 2.0.3\nProcessing enthought.util-2.0.3-py2.5.egg\ncreating /mnt/drive_hda1/sagefiles/sage-2.10.3/local/lib/python2.5/site-packages/enthought.util-2.0.3-py2.5.egg\nExtracting enthought.util-2.0.3-py2.5.egg to /mnt/drive_hda1/sagefiles/sage-2.10.3/local/lib/python2.5/site-packages\nAdding enthought.util 2.0.3 to easy-install.pth file\n\nInstalled /mnt/drive_hda1/sagefiles/sage-2.10.3/local/lib/python2.5/site-packages/enthought.util-2.0.3-py2.5.egg\nSearching for enthought.tvtk[plugin,wx]>=2.0.2.dev,<3.0a\n\nLink to http://code.enthought.com/enstaller/eggs/source ***BLOCKED*** by --allow-hosts\n\n\nLink to http://pypi.python.org/simple/enthought.tvtk/ ***BLOCKED*** by --allow-hosts\n\nCouldn't find index page for 'enthought.tvtk' (maybe misspelled?)\nScanning index of all packages (this may take a while)\n\nLink to http://pypi.python.org/simple/ ***BLOCKED*** by --allow-hosts\n\nNo local packages or download links found for enthought.tvtk[plugin,wx]>=2.0.2.dev,<3.0a\nerror: Could not find suitable distribution for Requirement.parse('enthought.tvtk[plugin,wx]>=2.0.2.dev,<3.0a')\n\nreal    34m27.361s\nuser    24m49.633s\nsys     3m27.337s\nsage: An error occurred while installing mayavi_2.1.1-20080307\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /home/wdj/wdj/sagefiles/sage-2.10.3/install.log.  Describe your computer, operating system, etc.\nIf you want to try to fix the problem, yourself *don't* just cd to\n/home/wdj/wdj/sagefiles/sage-2.10.3/spkg/build/mayavi_2.1.1-20080307 and type 'make'.\nInstead type \"/home/wdj/wdj/sagefiles/sage-2.10.3/sage -sh\"\nin order to set all environment variables correctly, then cd to\n/home/wdj/wdj/sagefiles/sage-2.10.3/spkg/build/mayavi_2.1.1-20080307\n(When you are done debugging, you can type \"exit\" to leave the\nsubshell.)\n```\n",
+    "created_at": "2008-03-13T13:23:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2495",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2495#issuecomment-16907",
+    "user": "wdj"
+}
+```
 
 I tried this and got the following install error:
 
@@ -101,9 +148,20 @@ subshell.)
 
 
 
+
 ---
 
-Comment by jsp created at 2008-03-14 18:01:18
+archive/issue_comments_016908.json:
+```json
+{
+    "body": "mayvi2 should be built locally, so no need to get external sources!\n\nDependencies for now:\n\ninstall vtk-5.0.4.spkg (see http://trac.sagemath.org/sage_trac/ticket/2493 )\n\nBe sure you have installed wxPython-2.8.7.1.spkg (in experimental already!)\n and setuptools-0.6c8.spkg\n\nOr put everything temporarily in spkg/standard, etcetera see the README.txt",
+    "created_at": "2008-03-14T18:01:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2495",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2495#issuecomment-16908",
+    "user": "jsp"
+}
+```
 
 mayvi2 should be built locally, so no need to get external sources!
 
@@ -117,9 +175,20 @@ Be sure you have installed wxPython-2.8.7.1.spkg (in experimental already!)
 Or put everything temporarily in spkg/standard, etcetera see the README.txt
 
 
+
 ---
 
-Comment by jsp created at 2008-03-16 19:30:17
+archive/issue_comments_016909.json:
+```json
+{
+    "body": "Replying to [comment:4 wdj]:\n> I tried this and got the following install error:\n> \n>\n\nCould you try once again following the instructions?\n\nAnd by doing so also comment on trac ticket #2493",
+    "created_at": "2008-03-16T19:30:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2495",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2495#issuecomment-16909",
+    "user": "jsp"
+}
+```
 
 Replying to [comment:4 wdj]:
 > I tried this and got the following install error:
@@ -131,15 +200,26 @@ Could you try once again following the instructions?
 And by doing so also comment on trac ticket #2493
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-22 05:10:49
+archive/issue_comments_016910.json:
+```json
+{
+    "body": "A couple remarks:\n\n* the build directory should be called src\n* please remove the `.svn` directories, that cuts the size of the spkg in half.\n* check in the file to the repo. I did the initial checkin, so in the future you need to check in only the changes\n\nThe updated spkg is at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-2.11/experimental/mayavi_2.1.1-20080307.p0.spkg\n\nCheers,\n\nMichael",
+    "created_at": "2008-03-22T05:10:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2495",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2495#issuecomment-16910",
+    "user": "mabshoff"
+}
+```
 
 A couple remarks:
 
- * the build directory should be called src
- * please remove the `.svn` directories, that cuts the size of the spkg in half.
- * check in the file to the repo. I did the initial checkin, so in the future you need to check in only the changes
+* the build directory should be called src
+* please remove the `.svn` directories, that cuts the size of the spkg in half.
+* check in the file to the repo. I did the initial checkin, so in the future you need to check in only the changes
 
 The updated spkg is at
 
@@ -150,16 +230,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-22 05:14:06
+archive/issue_comments_016911.json:
+```json
+{
+    "body": "Changing component from graphics to experimental package.",
+    "created_at": "2008-03-22T05:14:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2495",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2495#issuecomment-16911",
+    "user": "mabshoff"
+}
+```
 
 Changing component from graphics to experimental package.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-22 05:14:06
+archive/issue_comments_016912.json:
+```json
+{
+    "body": "One thing I forgot: I very much dislike the fact that it forced automated downloads of things like wxPython in case it isn't installed. It is clear from the readme that those ought to be already installed, but we need to find a more elegant way how to solve the \"dependency of non-standard spkg\" problem.\n\nCheers,\n\nMichael",
+    "created_at": "2008-03-22T05:14:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2495",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2495#issuecomment-16912",
+    "user": "mabshoff"
+}
+```
 
 One thing I forgot: I very much dislike the fact that it forced automated downloads of things like wxPython in case it isn't installed. It is clear from the readme that those ought to be already installed, but we need to find a more elegant way how to solve the "dependency of non-standard spkg" problem.
 
@@ -168,30 +270,74 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-22 05:14:06
+archive/issue_comments_016913.json:
+```json
+{
+    "body": "Changing assignee from was to mabshoff.",
+    "created_at": "2008-03-22T05:14:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2495",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2495#issuecomment-16913",
+    "user": "mabshoff"
+}
+```
 
 Changing assignee from was to mabshoff.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-22 05:19:47
+archive/issue_comments_016914.json:
+```json
+{
+    "body": "Merged in the experimental spkg repo.",
+    "created_at": "2008-03-22T05:19:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2495",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2495#issuecomment-16914",
+    "user": "mabshoff"
+}
+```
 
 Merged in the experimental spkg repo.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-22 05:19:47
+archive/issue_comments_016915.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-03-22T05:19:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2495",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2495#issuecomment-16915",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by jsp created at 2008-03-22 17:58:01
+archive/issue_comments_016916.json:
+```json
+{
+    "body": "Replying to [comment:8 mabshoff]:\n> One thing I forgot: I very much dislike the fact that it forced automated downloads of things like wxPython in case it isn't installed. It is clear from the readme that those ought to be already installed, but we need to find a more elegant way how to solve the \"dependency of non-standard spkg\" problem.\n> \n\nBefore we have this elegant solution the spkg-install should be consistent with reality!\nSo reflect that mayavi2 depends on vtk-5.0.4.p0 as you name the package.\n\nThe same holds for the vtk spkg, because it depends on cmake.\n\nJaap\n\n\n\n\n```/bin/sh\n\nsage -i wxPython-2.8.7.1\nsage -i vtk-5.0.4.p0\n\n\ncd src\n\npython egg_builder.py -r -v\n\neasy_install -f dist -H dist enthought.mayavi*",
+    "created_at": "2008-03-22T17:58:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2495",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2495#issuecomment-16916",
+    "user": "jsp"
+}
+```
 
 Replying to [comment:8 mabshoff]:
 > One thing I forgot: I very much dislike the fact that it forced automated downloads of things like wxPython in case it isn't installed. It is clear from the readme that those ought to be already installed, but we need to find a more elegant way how to solve the "dependency of non-standard spkg" problem.
@@ -220,9 +366,20 @@ python egg_builder.py -r -v
 easy_install -f dist -H dist enthought.mayavi*
 
 
+
 ---
 
-Comment by jsp created at 2008-03-27 15:14:27
+archive/issue_comments_016917.json:
+```json
+{
+    "body": "The mayavi_2.1.1-20080307.p1.spkg does not work for me.\n\n\n\n```\nMayaVi2 seems to build, but fails to run mlab!\n\nWhat the difference between mayavi_2.1.1-20080307.p1.spkg\nand my original mayavi_2.1.1-20080307.spkg?\n\n1) mv mayavi_build src\n2) rm all .svn stuff\n3) add .hg and friends\n\n```\n\n\nMy hypothesis for now is that the .svn directories contain\nessential information for the build system. I might be wrong, ...\n\nI did a diff -r on both directories, only .svn files missing! See:\n\nhttp://sage.math.washington.edu/home/jsp/diff_file\n\nI did a fresh install on fresh installed sage-2.10.4,\nsage-2.11.alpha0, sage-2.11.alpha1 on two machines. The results are consistent.",
+    "created_at": "2008-03-27T15:14:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2495",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2495#issuecomment-16917",
+    "user": "jsp"
+}
+```
 
 The mayavi_2.1.1-20080307.p1.spkg does not work for me.
 
@@ -252,23 +409,56 @@ I did a fresh install on fresh installed sage-2.10.4,
 sage-2.11.alpha0, sage-2.11.alpha1 on two machines. The results are consistent.
 
 
+
 ---
 
-Comment by jsp created at 2008-03-27 15:14:27
+archive/issue_comments_016918.json:
+```json
+{
+    "body": "Changing status from closed to reopened.",
+    "created_at": "2008-03-27T15:14:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2495",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2495#issuecomment-16918",
+    "user": "jsp"
+}
+```
 
 Changing status from closed to reopened.
 
 
+
 ---
 
-Comment by jsp created at 2008-03-27 15:14:27
+archive/issue_comments_016919.json:
+```json
+{
+    "body": "Resolution changed from fixed to ",
+    "created_at": "2008-03-27T15:14:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2495",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2495#issuecomment-16919",
+    "user": "jsp"
+}
+```
 
 Resolution changed from fixed to 
 
 
+
 ---
 
-Comment by jsp created at 2008-03-31 11:11:59
+archive/issue_comments_016920.json:
+```json
+{
+    "body": "About time to close this ticket again! A working modified version can be found here:\n\nhttp://sage.math.washington.edu/home/jsp/mayavi_2.1.1-20080307.p1.spkg\n\nNow the package is announced to be in sage-2.11 I don't think it is wise to have a wrong spkg in the experimental repo.\n\nJaap",
+    "created_at": "2008-03-31T11:11:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2495",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2495#issuecomment-16920",
+    "user": "jsp"
+}
+```
 
 About time to close this ticket again! A working modified version can be found here:
 
@@ -279,9 +469,20 @@ Now the package is announced to be in sage-2.11 I don't think it is wise to have
 Jaap
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-31 11:27:25
+archive/issue_comments_016921.json:
+```json
+{
+    "body": "Updated the spkg with Jaap's latest. So I am closing this again since I just mirrored the repo out again.\n\nCheers,\n\nMichael",
+    "created_at": "2008-03-31T11:27:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2495",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2495#issuecomment-16921",
+    "user": "mabshoff"
+}
+```
 
 Updated the spkg with Jaap's latest. So I am closing this again since I just mirrored the repo out again.
 
@@ -290,8 +491,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-31 11:27:25
+archive/issue_comments_016922.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-03-31T11:27:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2495",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2495#issuecomment-16922",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

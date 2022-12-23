@@ -1,11 +1,21 @@
 # Issue 5396: Wrapping lcalc library
 
-Issue created by migration from https://trac.sagemath.org/ticket/5396
-
-Original creator: rishi
-
-Original creation time: 2009-02-27 20:29:50
-
+archive/issues_005396.json:
+```json
+{
+    "body": "Assignee: Rishi\n\nCC:  craigcitro cremona bober mrubinst@math.uwaterloo.ca mvngu\n\nKeywords: lcalc\n\nI am wrapping lcalc library. It is working but still needs some work.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5396\n\n",
+    "created_at": "2009-02-27T20:29:50Z",
+    "labels": [
+        "algebra",
+        "major",
+        "enhancement"
+    ],
+    "title": "Wrapping lcalc library",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5396",
+    "user": "rishi"
+}
+```
 Assignee: Rishi
 
 CC:  craigcitro cremona bober mrubinst@math.uwaterloo.ca mvngu
@@ -14,17 +24,43 @@ Keywords: lcalc
 
 I am wrapping lcalc library. It is working but still needs some work.
 
+Issue created by migration from https://trac.sagemath.org/ticket/5396
+
+
+
+
 
 ---
 
-Comment by rishi created at 2009-02-27 20:30:28
+archive/issue_comments_041552.json:
+```json
+{
+    "body": "Changing component from algebra to number theory.",
+    "created_at": "2009-02-27T20:30:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41552",
+    "user": "rishi"
+}
+```
 
 Changing component from algebra to number theory.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-27 23:11:23
+archive/issue_comments_041553.json:
+```json
+{
+    "body": "Hi Rishi,\n\nNo patch, not relevant for 3.4 ;)\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-27T23:11:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41553",
+    "user": "mabshoff"
+}
+```
 
 Hi Rishi,
 
@@ -35,14 +71,38 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_041554.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-08-12T15:42:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41554",
+    "user": "rishi"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by rishi created at 2009-08-12 15:44:26
+archive/issue_comments_041555.json:
+```json
+{
+    "body": "I am attaching a lcalc library wrapper and a sage worksheet showing how to use it. It needs the latest lcalc release. Please see http://www.math.uwaterloo.ca/~mrubinst \n\nCopy all the include files from lcalc/include to $SAGE_ROOT/local/include . Copy the libLfunction.so from lcalc/src to $SAGE_ROOT/local/lib \nThen you can compile the wrapper. \n\nThe attached worksheet gives examples",
+    "created_at": "2009-08-12T15:44:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41555",
+    "user": "rishi"
+}
+```
 
 I am attaching a lcalc library wrapper and a sage worksheet showing how to use it. It needs the latest lcalc release. Please see http://www.math.uwaterloo.ca/~mrubinst 
 
@@ -52,16 +112,38 @@ Then you can compile the wrapper.
 The attached worksheet gives examples
 
 
+
 ---
 
-Comment by rishi created at 2009-08-12 15:52:34
+archive/issue_comments_041556.json:
+```json
+{
+    "body": "I am writing some functions which will generate lcalc objects for Dirichlet L functions, Elliptic Curve L functions, Cuspform L functions, which I am putting in sage/lfunctions/lcalc.py. Please let me know if you want something specific. To see what is needed by lcalc please look at page 18 of the following paper.",
+    "created_at": "2009-08-12T15:52:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41556",
+    "user": "rishi"
+}
+```
 
 I am writing some functions which will generate lcalc objects for Dirichlet L functions, Elliptic Curve L functions, Cuspform L functions, which I am putting in sage/lfunctions/lcalc.py. Please let me know if you want something specific. To see what is needed by lcalc please look at page 18 of the following paper.
 
 
+
 ---
 
-Comment by rishi created at 2009-08-12 15:53:09
+archive/issue_comments_041557.json:
+```json
+{
+    "body": "Replying to [comment:4 rishi]:\nI forgot the link to paper.\n\nhttp://arxiv.org/abs/math/0412181\n\nSee p.18",
+    "created_at": "2009-08-12T15:53:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41557",
+    "user": "rishi"
+}
+```
 
 Replying to [comment:4 rishi]:
 I forgot the link to paper.
@@ -71,9 +153,20 @@ http://arxiv.org/abs/math/0412181
 See p.18
 
 
+
 ---
 
-Comment by cremona created at 2009-08-23 16:47:44
+archive/issue_comments_041558.json:
+```json
+{
+    "body": "I was asked to review this so took a look, but I have no idea what is going on here.  Isn't lcalc already in Sage?  Or are only some of the functions already in Sage?\n\nWhat on earth does the instruction \"Copy all the include files from lcalc/include to $SAGE_ROOT/local/include . Copy the libLfunction.so from lcalc/src to $SAGE_ROOT/local/lib Then you can compile the wrapper.\" mean?  Should that not be done when Sage is built, so is not the right thing to do to change the existing lcalc spkg in Sage (lcalc-20080205.p2) to a new spkg?  Then the reviewer should install this new experimental spkg, apply a patch, and proceed as normal.\n\nI also do not find it helpful to attach a worksheet with examples, because I do not use the notebook and so it's just one more complication.\n\nBecause of the above I changed the tag from \"needs review\" to \"needs work\", since I do not think this is ready for review.",
+    "created_at": "2009-08-23T16:47:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41558",
+    "user": "cremona"
+}
+```
 
 I was asked to review this so took a look, but I have no idea what is going on here.  Isn't lcalc already in Sage?  Or are only some of the functions already in Sage?
 
@@ -84,14 +177,38 @@ I also do not find it helpful to attach a worksheet with examples, because I do 
 Because of the above I changed the tag from "needs review" to "needs work", since I do not think this is ready for review.
 
 
+
 ---
+
+archive/issue_comments_041559.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-08-23T17:51:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41559",
+    "user": "rishi"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by rishi created at 2009-08-23 18:04:22
+archive/issue_comments_041560.json:
+```json
+{
+    "body": "I have attached the spkg file. \n\n\nThe lcalc in sage uses the command line version of lcalc. The lcalc library lot richer than what the command line exposes. For example, you cannot find the zeros of a Dirichlet L function or Modular form L function without writing a lcalc file in appropriate format and calling the command line version. Using this patch, it is possible to forgo the lcalc file. In fact, in one of the example, I have written a function which given a primitive Dirichlet character, generates a Lcalc object, say L\n\n\n\n```\n#This code is only for example, It will not execute\nchi=DirichletGroup(5)[1]\nL =dirLFuncGenerator(chi)\nL.value(2+3*I) #gives value\nL.find_zeros_via_N(10) # finds the first 10 zeros of this L function. (ordered by distance from real axis)\n```\n\n\n\nI will repost the code in the sage notebook again",
+    "created_at": "2009-08-23T18:04:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41560",
+    "user": "rishi"
+}
+```
 
 I have attached the spkg file. 
 
@@ -113,9 +230,20 @@ L.find_zeros_via_N(10) # finds the first 10 zeros of this L function. (ordered b
 I will repost the code in the sage notebook again
 
 
+
 ---
 
-Comment by rishi created at 2009-08-23 18:23:36
+archive/issue_comments_041561.json:
+```json
+{
+    "body": "Here I am reproducing what the sage worksheet does.\n\n\n```\nsage: import sage.libs.lcalc.for_testing\nsage: from sage.libs.lcalc.for_testing import *\nsage: D=DirichletGroup(5)\nsage: chi=D[1]\nsage: chi.values()\n[0, 1, zeta4, -zeta4, -1]\nsage: L=dirLFuncGenerator(chi)\nsage: L.find_zeros_via_N(5)\n\n[-4.13290370521285,\n 6.18357819545085,\n 8.45722917442324,\n -9.44293112972852,\n -11.2828964415816]\n\n\n#Following Code produces the lowest zeros of Dirichlet L functions of Cubic Characters with modulus up to 10\nsage: for k in srange(3,10):\n    for chi in DirichletGroup(k,CyclotomicField(3)):\n        if chi.is_primitive() and chi.order()==3:\n            L=dirLFuncGenerator(chi)\n            print k, L.find_zeros_via_N(1)[0]\n....:             \n7 4.35640162473628\n7 -4.35640162473628\n9 -3.44409315514895\n9 3.44409315514895\n\n#Here we create a L function corresponding to Elliptic Curve and find its zeros\nsage: E=EllipticCurve('11a')\nsage: L=elLFuncGenerator(E)\nsage: L.find_zeros_via_N(5)\n\n[6.36261389471309,\n 8.60353961929075,\n 10.0355090971811,\n 11.4512586103452,\n 13.5686390571300]\n\n\n#Another example related to Elliptic Curves\n\nsage: E=EllipticCurve('37')\nsage: L2=elLFuncGenerator(E)\nsage: print L2.value(.5), L2.value(.5,derivative=1)\n0 0.305999824716000 elliptic curve\n\n```\n",
+    "created_at": "2009-08-23T18:23:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41561",
+    "user": "rishi"
+}
+```
 
 Here I am reproducing what the sage worksheet does.
 
@@ -172,9 +300,20 @@ sage: print L2.value(.5), L2.value(.5,derivative=1)
 
 
 
+
 ---
 
-Comment by cremona created at 2009-08-23 19:26:30
+archive/issue_comments_041562.json:
+```json
+{
+    "body": "Thanks for the explanation.\n\nI successfully installed the new lcalc spkg;  then I successfully applied the patch and rebuilt sage.\n\nNow testing sage/libs/lcalc gives this:\n\n```\nsage -t  \"devel/sage-tests/sage/libs/lcalc/lcalc_Lfunction.pyx\"\n**********************************************************************\nFile \"/home/john/sage-4.1.1/devel/sage-tests/sage/libs/lcalc/lcalc_Lfunction.pyx\", line 411:\n    sage: L.value(.6)\nExpected:\n    0.274633355856348 - 6.59869267328213e-18*I\nGot:\n    0.274633355856341 - 6.59869267328188e-18*I\n**********************************************************************\nFile \"/home/john/sage-4.1.1/devel/sage-tests/sage/libs/lcalc/lcalc_Lfunction.pyx\", line 413:\n    sage: L.value(.6+1*I)\nExpected:\n    0.362258705721100 + 0.433888250620852*I\nGot:\n    0.362258705721102 + 0.433888250620855*I\n**********************************************************************\nFile \"/home/john/sage-4.1.1/devel/sage-tests/sage/libs/lcalc/lcalc_Lfunction.pyx\", line 450:\n    sage: L.find_zeros(1,15,.1)\nExpected:\n    [6.64845334472771, 9.83144443288668, 11.9588456260835]\nGot:\n    [6.64845334472771, 9.83144443288667, 11.9588456260835]\n**********************************************************************\nFile \"/home/john/sage-4.1.1/devel/sage-tests/sage/libs/lcalc/lcalc_Lfunction.pyx\", line 491:\n    sage: L.find_zeros_via_N(3)\nExpected:\n    [6.64845334472771, 9.83144443288668, 11.9588456260835]\nGot:\n    [6.64845334472772, 9.83144443288667, 11.9588456260835]\n**********************************************************************\nFile \"/home/john/sage-4.1.1/devel/sage-tests/sage/libs/lcalc/lcalc_Lfunction.pyx\", line 642:\n    sage: L.value(.5)\nExpected:\n    0.763747880117299 + 0.216964767518864*I\nGot:\n    0.763747880117295 + 0.216964767518863*I\n**********************************************************************\nFile \"/home/john/sage-4.1.1/devel/sage-tests/sage/libs/lcalc/lcalc_Lfunction.pyx\", line 644:\n    sage: L.value(.6+5*I)\nExpected:\n    0.702723260619684 - 1.10178575243940*I\nGot:\n    0.702723260619682 - 1.10178575243940*I\n**********************************************************************\nFile \"/home/john/sage-4.1.1/devel/sage-tests/sage/libs/lcalc/lcalc_Lfunction.pyx\", line 789:\n    sage: lcalc_zeta.value(CC(.4,.5))\nExpected:\n    -0.450728958517113 - 0.780511403019070*I\nGot:\n    -0.450728958517121 - 0.780511403019071*I\n**********************************************************************\nFile \"/home/john/sage-4.1.1/devel/sage-tests/sage/libs/lcalc/lcalc_Lfunction.pyx\", line 852:\n    sage: lcalc_zeta.find_zeros_via_N(3)\nExpected:\n    [14.1347251417347, 21.0220396387715, 25.0108575801457]\nGot:\n    [14.1347251417347, 21.0220396387716, 25.0108575801457]\n**********************************************************************\nFile \"/home/john/sage-4.1.1/devel/sage-tests/sage/libs/lcalc/lcalc_Lfunction.pyx\", line 174:\n    sage: L.value(.5)\nExpected:\n    0.231750947504015 + 5.75329642226134e-18*I\nGot:\n    0.231750947504012 + 5.75329642226126e-18*I\n**********************************************************************\nFile \"/home/john/sage-4.1.1/devel/sage-tests/sage/libs/lcalc/lcalc_Lfunction.pyx\", line 176:\n    sage: L.value(CC(.2,.4))\nExpected:\n    0.102558603193338 + 0.190840777924700*I\nGot:\n    0.102558603193336 + 0.190840777924703*I\n**********************************************************************\n7 items had failures:\n```\n\n\n-- that is all just numerical noise probably because I'm testing on a 32-bit system and you made the tests on a 64-bit system (is that right?)  That is not serious (though will need to be fixed).\n\nIn the \"testing\" file, are the functions intended for inclusion in Sage?  If so, they need doctesting (and the names are a little strange) and they should perhaps be made into member functions of the appropriate classes (e.g. ell_rational_field).\n\nIn the docstrings explaining all the parameters, I don't think it is enough to just refer to the lcacl documentation.  These are Sage functions and the inputs need to be documented withing Sage (however tedious that might be!)\n\nThere are quite a few typos in the documentation.\n\nWould it be possible to have a base class and have the various L-series classes derive from it?  That might reduce the code a little and make the structure clearer.\n\nYou have some input parameters which I think would more natually be True/False instead of 1/0 as now.\n\nThis has clearly been a huge amount of work and will be very useful.  The things I mentioned above are all minor, but still they should be considered, so I have left the tag as \"needs work\", but I think this is quite close to being includable.",
+    "created_at": "2009-08-23T19:26:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41562",
+    "user": "cremona"
+}
+```
 
 Thanks for the explanation.
 
@@ -274,9 +413,20 @@ You have some input parameters which I think would more natually be True/False i
 This has clearly been a huge amount of work and will be very useful.  The things I mentioned above are all minor, but still they should be considered, so I have left the tag as "needs work", but I think this is quite close to being includable.
 
 
+
 ---
 
-Comment by rishi created at 2009-08-23 20:00:11
+archive/issue_comments_041563.json:
+```json
+{
+    "body": "Replying to [comment:13 cremona]:\n> Thanks for the explanation.\n> \n> I successfully installed the new lcalc spkg;  then I successfully applied the patch and rebuilt sage.\n> \n> Now testing sage/libs/lcalc gives this:\n> {{{\n> sage -t  \"devel/sage-tests/sage/libs/lcalc/lcalc_Lfunction.pyx\"\n> **********************************************************************\n> File \"/home/john/sage-4.1.1/devel/sage-tests/sage/libs/lcalc/lcalc_Lfunction.pyx\", line 411:\n>     sage: L.value(.6)\n> Expected:\n>     0.274633355856348 - 6.59869267328213e-18*I\n> Got:\n>     0.274633355856341 - 6.59869267328188e-18*I\n> **********************************************************************\n> File \"/home/john/sage-4.1.1/devel/sage-tests/sage/libs/lcalc/lcalc_Lfunction.pyx\", line 413:\n>     sage: L.value(.6+1*I)\n> Expected:\n>     0.362258705721100 + 0.433888250620852*I\n> Got:\n>     0.362258705721102 + 0.433888250620855*I\n> **********************************************************************\n> File \"/home/john/sage-4.1.1/devel/sage-tests/sage/libs/lcalc/lcalc_Lfunction.pyx\", line 450:\n>     sage: L.find_zeros(1,15,.1)\n> Expected:\n>     [6.64845334472771, 9.83144443288668, 11.9588456260835]\n> Got:\n>     [6.64845334472771, 9.83144443288667, 11.9588456260835]\n> **********************************************************************\n> File \"/home/john/sage-4.1.1/devel/sage-tests/sage/libs/lcalc/lcalc_Lfunction.pyx\", line 491:\n>     sage: L.find_zeros_via_N(3)\n> Expected:\n>     [6.64845334472771, 9.83144443288668, 11.9588456260835]\n> Got:\n>     [6.64845334472772, 9.83144443288667, 11.9588456260835]\n> **********************************************************************\n> File \"/home/john/sage-4.1.1/devel/sage-tests/sage/libs/lcalc/lcalc_Lfunction.pyx\", line 642:\n>     sage: L.value(.5)\n> Expected:\n>     0.763747880117299 + 0.216964767518864*I\n> Got:\n>     0.763747880117295 + 0.216964767518863*I\n> **********************************************************************\n> File \"/home/john/sage-4.1.1/devel/sage-tests/sage/libs/lcalc/lcalc_Lfunction.pyx\", line 644:\n>     sage: L.value(.6+5*I)\n> Expected:\n>     0.702723260619684 - 1.10178575243940*I\n> Got:\n>     0.702723260619682 - 1.10178575243940*I\n> **********************************************************************\n> File \"/home/john/sage-4.1.1/devel/sage-tests/sage/libs/lcalc/lcalc_Lfunction.pyx\", line 789:\n>     sage: lcalc_zeta.value(CC(.4,.5))\n> Expected:\n>     -0.450728958517113 - 0.780511403019070*I\n> Got:\n>     -0.450728958517121 - 0.780511403019071*I\n> **********************************************************************\n> File \"/home/john/sage-4.1.1/devel/sage-tests/sage/libs/lcalc/lcalc_Lfunction.pyx\", line 852:\n>     sage: lcalc_zeta.find_zeros_via_N(3)\n> Expected:\n>     [14.1347251417347, 21.0220396387715, 25.0108575801457]\n> Got:\n>     [14.1347251417347, 21.0220396387716, 25.0108575801457]\n> **********************************************************************\n> File \"/home/john/sage-4.1.1/devel/sage-tests/sage/libs/lcalc/lcalc_Lfunction.pyx\", line 174:\n>     sage: L.value(.5)\n> Expected:\n>     0.231750947504015 + 5.75329642226134e-18*I\n> Got:\n>     0.231750947504012 + 5.75329642226126e-18*I\n> **********************************************************************\n> File \"/home/john/sage-4.1.1/devel/sage-tests/sage/libs/lcalc/lcalc_Lfunction.pyx\", line 176:\n>     sage: L.value(CC(.2,.4))\n> Expected:\n>     0.102558603193338 + 0.190840777924700*I\n> Got:\n>     0.102558603193336 + 0.190840777924703*I\n> **********************************************************************\n> 7 items had failures:\n> }}}\n> \n> -- that is all just numerical noise probably because I'm testing on a 32-bit system and you made the tests on a 64-bit system (is that right?)  That is not serious (though will need to be fixed).\n> \n> In the \"testing\" file, are the functions intended for inclusion in Sage?  If so, they need doctesting (and the names are a little strange) and they should perhaps be made into member functions of the appropriate classes (e.g. ell_rational_field).\n> \n> In the docstrings explaining all the parameters, I don't think it is enough to just refer to the lcacl documentation.  These are Sage functions and the inputs need to be documented withing Sage (however tedious that might be!)\n> \n> There are quite a few typos in the documentation.\n> \n> Would it be possible to have a base class and have the various L-series classes derive from it?  That might reduce the code a little and make the structure clearer.\n> \n> You have some input parameters which I think would more natually be True/False instead of 1/0 as now.\n> \n> This has clearly been a huge amount of work and will be very useful.  The things I mentioned above are all minor, but still they should be considered, so I have left the tag as \"needs work\", but I think this is quite close to being includable.",
+    "created_at": "2009-08-23T20:00:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41563",
+    "user": "rishi"
+}
+```
 
 Replying to [comment:13 cremona]:
 > Thanks for the explanation.
@@ -375,9 +525,20 @@ Replying to [comment:13 cremona]:
 > This has clearly been a huge amount of work and will be very useful.  The things I mentioned above are all minor, but still they should be considered, so I have left the tag as "needs work", but I think this is quite close to being includable.
 
 
+
 ---
 
-Comment by rishi created at 2009-08-23 20:07:32
+archive/issue_comments_041564.json:
+```json
+{
+    "body": "Replying to [comment:14 rishi]:\n\n\nThanks John for your feedback.  I was looking at the patch again, I am indeed seeing the typos, and places where documentation is far from clear. \n\nWhile I was writing, I did think of having a base class and have various L series derive from it, but it had taken me several weeks of manipulation just to get a compilable code out of cython, so I balked. I will go back and see how to reduce the clutter.\n\nRishi\n> Replying to [comment:13 cremona]:\n> > Thanks for the explanation.\n> > \n> > I successfully installed the new lcalc spkg;  then I successfully applied the patch and rebuilt sage.\n> > \n> > Now testing sage/libs/lcalc gives this:\n> > {{{\n> > sage -t  \"devel/sage-tests/sage/libs/lcalc/lcalc_Lfunction.pyx\"\n> > **********************************************************************\n> > File \"/home/john/sage-4.1.1/devel/sage-tests/sage/libs/lcalc/lcalc_Lfunction.pyx\", line 411:\n> >     sage: L.value(.6)\n> > Expected:\n> >     0.274633355856348 - 6.59869267328213e-18*I\n> > Got:\n> >     0.274633355856341 - 6.59869267328188e-18*I\n> > **********************************************************************\n> > File \"/home/john/sage-4.1.1/devel/sage-tests/sage/libs/lcalc/lcalc_Lfunction.pyx\", line 413:\n> >     sage: L.value(.6+1*I)\n> > Expected:\n> >     0.362258705721100 + 0.433888250620852*I\n> > Got:\n> >     0.362258705721102 + 0.433888250620855*I\n> > **********************************************************************\n> > File \"/home/john/sage-4.1.1/devel/sage-tests/sage/libs/lcalc/lcalc_Lfunction.pyx\", line 450:\n> >     sage: L.find_zeros(1,15,.1)\n> > Expected:\n> >     [6.64845334472771, 9.83144443288668, 11.9588456260835]\n> > Got:\n> >     [6.64845334472771, 9.83144443288667, 11.9588456260835]\n> > **********************************************************************\n> > File \"/home/john/sage-4.1.1/devel/sage-tests/sage/libs/lcalc/lcalc_Lfunction.pyx\", line 491:\n> >     sage: L.find_zeros_via_N(3)\n> > Expected:\n> >     [6.64845334472771, 9.83144443288668, 11.9588456260835]\n> > Got:\n> >     [6.64845334472772, 9.83144443288667, 11.9588456260835]\n> > **********************************************************************\n> > File \"/home/john/sage-4.1.1/devel/sage-tests/sage/libs/lcalc/lcalc_Lfunction.pyx\", line 642:\n> >     sage: L.value(.5)\n> > Expected:\n> >     0.763747880117299 + 0.216964767518864*I\n> > Got:\n> >     0.763747880117295 + 0.216964767518863*I\n> > **********************************************************************\n> > File \"/home/john/sage-4.1.1/devel/sage-tests/sage/libs/lcalc/lcalc_Lfunction.pyx\", line 644:\n> >     sage: L.value(.6+5*I)\n> > Expected:\n> >     0.702723260619684 - 1.10178575243940*I\n> > Got:\n> >     0.702723260619682 - 1.10178575243940*I\n> > **********************************************************************\n> > File \"/home/john/sage-4.1.1/devel/sage-tests/sage/libs/lcalc/lcalc_Lfunction.pyx\", line 789:\n> >     sage: lcalc_zeta.value(CC(.4,.5))\n> > Expected:\n> >     -0.450728958517113 - 0.780511403019070*I\n> > Got:\n> >     -0.450728958517121 - 0.780511403019071*I\n> > **********************************************************************\n> > File \"/home/john/sage-4.1.1/devel/sage-tests/sage/libs/lcalc/lcalc_Lfunction.pyx\", line 852:\n> >     sage: lcalc_zeta.find_zeros_via_N(3)\n> > Expected:\n> >     [14.1347251417347, 21.0220396387715, 25.0108575801457]\n> > Got:\n> >     [14.1347251417347, 21.0220396387716, 25.0108575801457]\n> > **********************************************************************\n> > File \"/home/john/sage-4.1.1/devel/sage-tests/sage/libs/lcalc/lcalc_Lfunction.pyx\", line 174:\n> >     sage: L.value(.5)\n> > Expected:\n> >     0.231750947504015 + 5.75329642226134e-18*I\n> > Got:\n> >     0.231750947504012 + 5.75329642226126e-18*I\n> > **********************************************************************\n> > File \"/home/john/sage-4.1.1/devel/sage-tests/sage/libs/lcalc/lcalc_Lfunction.pyx\", line 176:\n> >     sage: L.value(CC(.2,.4))\n> > Expected:\n> >     0.102558603193338 + 0.190840777924700*I\n> > Got:\n> >     0.102558603193336 + 0.190840777924703*I\n> > **********************************************************************\n> > 7 items had failures:\n> > }}}\n> > \n> > -- that is all just numerical noise probably because I'm testing on a 32-bit system and you made the tests on a 64-bit system (is that right?)  That is not serious (though will need to be fixed).\n> > \n> > In the \"testing\" file, are the functions intended for inclusion in Sage?  If so, they need doctesting (and the names are a little strange) and they should perhaps be made into member functions of the appropriate classes (e.g. ell_rational_field).\n> > \n> > In the docstrings explaining all the parameters, I don't think it is enough to just refer to the lcacl documentation.  These are Sage functions and the inputs need to be documented withing Sage (however tedious that might be!)\n> > \n> > There are quite a few typos in the documentation.\n> > \n> > Would it be possible to have a base class and have the various L-series classes derive from it?  That might reduce the code a little and make the structure clearer.\n> > \n> > You have some input parameters which I think would more natually be True/False instead of 1/0 as now.\n> > \n> > This has clearly been a huge amount of work and will be very useful.  The things I mentioned above are all minor, but still they should be considered, so I have left the tag as \"needs work\", but I think this is quite close to being includable.",
+    "created_at": "2009-08-23T20:07:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41564",
+    "user": "rishi"
+}
+```
 
 Replying to [comment:14 rishi]:
 
@@ -484,23 +645,58 @@ Rishi
 > > This has clearly been a huge amount of work and will be very useful.  The things I mentioned above are all minor, but still they should be considered, so I have left the tag as "needs work", but I think this is quite close to being includable.
 
 
+
 ---
 
-Comment by rishi created at 2009-10-01 00:42:34
+archive/issue_comments_041565.json:
+```json
+{
+    "body": "basic lcalc wrapper",
+    "created_at": "2009-10-01T00:42:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41565",
+    "user": "rishi"
+}
+```
 
 basic lcalc wrapper
 
 
+
 ---
+
+archive/issue_comments_041566.json:
+```json
+{
+    "body": "Attachment\n\nThe new patch adds lot of documentation, and clean few typos. There are three functions where True or False is more natural as parameter, and I am going to change it. That is pretty much the only change left. Any program written using this patch will continue to work when I make those changes, so this patch can still be included. I will probably post the patch by tomorrow. Today I received an email that someone wants to use this program so I am uploading this patch.",
+    "created_at": "2009-10-01T00:54:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41566",
+    "user": "rishi"
+}
+```
 
 Attachment
 
 The new patch adds lot of documentation, and clean few typos. There are three functions where True or False is more natural as parameter, and I am going to change it. That is pretty much the only change left. Any program written using this patch will continue to work when I make those changes, so this patch can still be included. I will probably post the patch by tomorrow. Today I received an email that someone wants to use this program so I am uploading this patch.
 
 
+
 ---
 
-Comment by mvngu created at 2009-10-01 04:19:41
+archive/issue_comments_041567.json:
+```json
+{
+    "body": "Replying to [comment:16 rishi]:\n> The new patch adds lot of documentation, and clean few typos.\nWith the patch `lcalc_wrapper.patch`, you create a new empty file called `sage/libs/lcalc/__init__.py`. It's dangerous to create empty files in the Sage library. Such files are known to result in missing files (hence corrupt the \"main\" repository) when creating a new source distribution of Sage. A solution is to put a comment in `sage/libs/lcalc/__init__.py`. The comment can just be something like:\n\n```\n# A comment here so this file is picked up when creating a new source distribution.\n```\n",
+    "created_at": "2009-10-01T04:19:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41567",
+    "user": "mvngu"
+}
+```
 
 Replying to [comment:16 rishi]:
 > The new patch adds lot of documentation, and clean few typos.
@@ -512,26 +708,76 @@ With the patch `lcalc_wrapper.patch`, you create a new empty file called `sage/l
 
 
 
+
 ---
 
-Comment by mvngu created at 2009-10-01 06:18:04
+archive/issue_comments_041568.json:
+```json
+{
+    "body": "I assume `L-1.23.spkg` is version 1.23 of lcalc. Then the package must use the name `lcalc-1.23.spkg`; the current version in Sage 4.1.1 is `lcalc-20080205.p3.spkg`. A name for the lcalc package like `L-1.23.spkg` can result in errors building or upgrading Sage. If this ticket is closed, then ticket #4793 should be closed as \"wontfix\".",
+    "created_at": "2009-10-01T06:18:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41568",
+    "user": "mvngu"
+}
+```
 
 I assume `L-1.23.spkg` is version 1.23 of lcalc. Then the package must use the name `lcalc-1.23.spkg`; the current version in Sage 4.1.1 is `lcalc-20080205.p3.spkg`. A name for the lcalc package like `L-1.23.spkg` can result in errors building or upgrading Sage. If this ticket is closed, then ticket #4793 should be closed as "wontfix".
 
 
+
 ---
+
+archive/issue_comments_041569.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-10-01T15:09:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41569",
+    "user": "rishi"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_041570.json:
+```json
+{
+    "body": "Attachment\n\nstandalone patch, based on 4.3.alpha0",
+    "created_at": "2009-11-26T01:36:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41570",
+    "user": "ylchapuy"
+}
+```
 
 Attachment
 
 standalone patch, based on 4.3.alpha0
 
 
+
 ---
+
+archive/issue_comments_041571.json:
+```json
+{
+    "body": "Attachment\n\nI hope you won't mind, but I refactored a little bit your code to address reviewers comments.\n\nIn the provided patch:\n\n* the different L-functions derive from a base class\n* all doctests are protected against numerical noise\n* I removed the file for_testing.py and incorporated the (renamed) functions in the main file\n  ( they could be moved to better places though )\n* added a __repr__ method (which is minimalistic)\n\nAfter spkg install, only my patch needs to be applied.\n\nPlease let me know your opinion about all these.",
+    "created_at": "2009-11-26T01:45:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41571",
+    "user": "ylchapuy"
+}
+```
 
 Attachment
 
@@ -539,20 +785,31 @@ I hope you won't mind, but I refactored a little bit your code to address review
 
 In the provided patch:
 
- * the different L-functions derive from a base class
- * all doctests are protected against numerical noise
- * I removed the file for_testing.py and incorporated the (renamed) functions in the main file
-   ( they could be moved to better places though )
- * added a __repr__ method (which is minimalistic)
+* the different L-functions derive from a base class
+* all doctests are protected against numerical noise
+* I removed the file for_testing.py and incorporated the (renamed) functions in the main file
+  ( they could be moved to better places though )
+* added a __repr__ method (which is minimalistic)
 
 After spkg install, only my patch needs to be applied.
 
 Please let me know your opinion about all these.
 
 
+
 ---
 
-Comment by rishi created at 2009-11-27 12:23:14
+archive/issue_comments_041572.json:
+```json
+{
+    "body": "Replying to [comment:19 ylchapuy]:\n\nWonderfull!! I am looking at the code which has changed a lot, and it is impressive. I had written this as the lowest layer of a three layered interface to lcalc library. It was dirty, but it has taken me so long to add the necessary patches to lcalc itself, and then getting this thing to work with sage, that I balked when my attempts to derive the L-functions from a base class failed. \n\nI am still absorbing the changes. I will write more later.\n\nRishi",
+    "created_at": "2009-11-27T12:23:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41572",
+    "user": "rishi"
+}
+```
 
 Replying to [comment:19 ylchapuy]:
 
@@ -563,23 +820,56 @@ I am still absorbing the changes. I will write more later.
 Rishi
 
 
+
 ---
 
-Comment by ylchapuy created at 2009-12-15 11:20:57
+archive/issue_comments_041573.json:
+```json
+{
+    "body": "Any move on this?",
+    "created_at": "2009-12-15T11:20:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41573",
+    "user": "ylchapuy"
+}
+```
 
 Any move on this?
 
 
+
 ---
 
-Comment by rishi created at 2009-12-15 21:38:51
+archive/issue_comments_041574.json:
+```json
+{
+    "body": "I apologise. I was busy with a gap which had popped up in my thesis. I will write by Sunday.",
+    "created_at": "2009-12-15T21:38:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41574",
+    "user": "rishi"
+}
+```
 
 I apologise. I was busy with a gap which had popped up in my thesis. I will write by Sunday.
 
 
+
 ---
 
-Comment by rishi created at 2009-12-21 14:20:46
+archive/issue_comments_041575.json:
+```json
+{
+    "body": "Replying to [comment:21 ylchapuy]:\n> Any move on this?\n\nI had a closer look, and I like what I see. The code is beautiful. I would like it to be included as it is. It does address everything which John Cremona had raised.\n\nThe last 2 functions which generate L functions for Dirichlet characters and Elliptic Curves were supposed to be there for testing and as example.  For the time being I feel we can leave it like this till an improved version comes. \n\n\nCraig: Can I give it a positive review? I am not sure how the reviewing process works in this case.\n\n\nRishi",
+    "created_at": "2009-12-21T14:20:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41575",
+    "user": "rishi"
+}
+```
 
 Replying to [comment:21 ylchapuy]:
 > Any move on this?
@@ -595,16 +885,38 @@ Craig: Can I give it a positive review? I am not sure how the reviewing process 
 Rishi
 
 
+
 ---
 
-Comment by cremona created at 2009-12-21 14:46:07
+archive/issue_comments_041576.json:
+```json
+{
+    "body": "Now there is code here from both rishi and ylchapuy it would be possible for each to review the other's code (since they both now know more about it than anyone else!) but it would be even better to have a third party do the job.  I volunteer to do that, in the next day or so.",
+    "created_at": "2009-12-21T14:46:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41576",
+    "user": "cremona"
+}
+```
 
 Now there is code here from both rishi and ylchapuy it would be possible for each to review the other's code (since they both now know more about it than anyone else!) but it would be even better to have a third party do the job.  I volunteer to do that, in the next day or so.
 
 
+
 ---
 
-Comment by rishi created at 2009-12-21 16:20:36
+archive/issue_comments_041577.json:
+```json
+{
+    "body": "Thanks John.\n\n\nReplying to [comment:24 cremona]:\n> Now there is code here from both rishi and ylchapuy it would be possible for each to review the other's code (since they both now know more about it than anyone else!) but it would be even better to have a third party do the job.  I volunteer to do that, in the next day or so.",
+    "created_at": "2009-12-21T16:20:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41577",
+    "user": "rishi"
+}
+```
 
 Thanks John.
 
@@ -613,9 +925,20 @@ Replying to [comment:24 cremona]:
 > Now there is code here from both rishi and ylchapuy it would be possible for each to review the other's code (since they both now know more about it than anyone else!) but it would be even better to have a third party do the job.  I volunteer to do that, in the next day or so.
 
 
+
 ---
 
-Comment by cremona created at 2009-12-23 20:14:43
+archive/issue_comments_041578.json:
+```json
+{
+    "body": "Here's what I did:  made a fresh clone of 4.3.rc0, installed the spkg (sage -i lcalc-1.23.spkg), applied the latch, rebuilt.  Then sage -t gives this:\n\n```\njohn@ubuntu%sage -t sage-4.3.rc0/devel/sage-lcalc/sage/libs/lcalc/ \nsage -t  \"devel/sage-lcalc/sage/libs/lcalc/__init__.py\"     \n\t [0.1 s]\nsage -t  \"devel/sage-lcalc/sage/libs/lcalc/lcalc_Lfunction.pyx\"\nException NotImplementedError in 'sage.libs.lcalc.lcalc_Lfunction.Lfunction.__init_fun' ignored\n-----------------------------------------------\n\nName of L_function: \nnumber of dirichlet coefficients = 5\ncoefficients are periodic\nb[1] = 1\nb[2] = -1\nb[3] = -1\nb[4] = 1\nb[5] = 0\n\nQ = 1.26156626101\nOMEGA = (1,4.96506830649e-17)\na = 1 (the quasi degree)\ngamma[1] =0.5    lambda[1] =(0,0)\n\n\nnumber of poles (of the completed L function) = 0\n-----------------------------------------------\n\n-----------------------------------------------\n\nName of L_function: \nnumber of dirichlet coefficients = 5\ncoefficients are periodic\nb[1] = (1,0)\nb[2] = (6.12323399574e-17,1)\nb[3] = (-6.12323399574e-17,-1)\nb[4] = (-1,0)\nb[5] = (0,0)\n\nQ = 1.26156626101\nOMEGA = (0.850650808352,0.525731112119)\na = 1 (the quasi degree)\ngamma[1] =0.5    lambda[1] =(0.5,0)\n\n\nnumber of poles (of the completed L function) = 0\n-----------------------------------------------\n\n**********************************************************************\nFile \"/home/john/sage-4.3.rc0/devel/sage-lcalc/sage/libs/lcalc/lcalc_Lfunction.pyx\", line 780:\n    sage: L.value(0.5, derivative=1)\nExpected:\n    0.305999824716...\nGot:\n    0.305999723948232\n-----------------------------------------------\n\nName of L_function: \nnumber of dirichlet coefficients = 5\ncoefficients are periodic\nb[1] = 1\nb[2] = -1\nb[3] = -1\nb[4] = 1\nb[5] = 0\n\nQ = 1.26156626101\nOMEGA = (1,4.96506830649e-17)\na = 1 (the quasi degree)\ngamma[1] =0.5    lambda[1] =(0,0)\n\n\nnumber of poles (of the completed L function) = 0\n-----------------------------------------------\n\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_24\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/john/.sage//tmp/.doctest_lcalc_Lfunction.py\n\t [2.2 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  \"devel/sage-lcalc/sage/libs/lcalc/lcalc_Lfunction.pyx\"\nTotal time for all tests: 2.2 seconds\n```\n\nI cannot really tell what is going on here, sorry.",
+    "created_at": "2009-12-23T20:14:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41578",
+    "user": "cremona"
+}
+```
 
 Here's what I did:  made a fresh clone of 4.3.rc0, installed the spkg (sage -i lcalc-1.23.spkg), applied the latch, rebuilt.  Then sage -t gives this:
 
@@ -710,16 +1033,38 @@ Total time for all tests: 2.2 seconds
 I cannot really tell what is going on here, sorry.
 
 
+
 ---
 
-Comment by cremona created at 2009-12-23 20:14:43
+archive/issue_comments_041579.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2009-12-23T20:14:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41579",
+    "user": "cremona"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by ylchapuy created at 2009-12-23 20:55:20
+archive/issue_comments_041580.json:
+```json
+{
+    "body": "The only lines really corresponding to the failure are:\n\n```\nFile \"/home/john/sage-4.3.rc0/devel/sage-lcalc/sage/libs/lcalc/lcalc_Lfunction.pyx\", line 780:\n    sage: L.value(0.5, derivative=1)\nExpected:\n    0.305999824716...\nGot:\n    0.305999723948232\n```\n\n\nThe other ones comes from the doctesting of the `_print_data_to_standard_output` functions. I don't know how to deal with standard output easily in this case.\n\nThe problem is thus a numerical one. I don't know if it's normal to get such a difference in the result though. Should we just test for `0.305999...` ?",
+    "created_at": "2009-12-23T20:55:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41580",
+    "user": "ylchapuy"
+}
+```
 
 The only lines really corresponding to the failure are:
 
@@ -738,45 +1083,113 @@ The other ones comes from the doctesting of the `_print_data_to_standard_output`
 The problem is thus a numerical one. I don't know if it's normal to get such a difference in the result though. Should we just test for `0.305999...` ?
 
 
+
 ---
 
-Comment by ylchapuy created at 2009-12-23 20:56:20
+archive/issue_comments_041581.json:
+```json
+{
+    "body": "Oh, I just noticed the Exception at the beginning. I don't know where it comes from.",
+    "created_at": "2009-12-23T20:56:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41581",
+    "user": "ylchapuy"
+}
+```
 
 Oh, I just noticed the Exception at the beginning. I don't know where it comes from.
 
 
+
 ---
 
-Comment by ylchapuy created at 2009-12-23 21:11:58
+archive/issue_comments_041582.json:
+```json
+{
+    "body": "Ok, the (ignored) Exception comes from the very first doctest where I try to create an instance of the `Lfunction` class which is intended to be virtual.\n\nThe attached patch correct this, reals with the numerical noise (should we?) as stated above, and also correct a small typo.",
+    "created_at": "2009-12-23T21:11:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41582",
+    "user": "ylchapuy"
+}
+```
 
 Ok, the (ignored) Exception comes from the very first doctest where I try to create an instance of the `Lfunction` class which is intended to be virtual.
 
 The attached patch correct this, reals with the numerical noise (should we?) as stated above, and also correct a small typo.
 
 
+
 ---
+
+archive/issue_comments_041583.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-12-23T21:12:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41583",
+    "user": "ylchapuy"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by ylchapuy created at 2009-12-23 21:12:53
+archive/issue_comments_041584.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2009-12-23T21:12:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41584",
+    "user": "ylchapuy"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by cremona created at 2009-12-23 22:52:51
+archive/issue_comments_041585.json:
+```json
+{
+    "body": "Replying to [comment:30 ylchapuy]:\nNot sure when I'll get back to this -- family calls, and it might be a few days.  It's a pity if the numerical accuracy depends so much on platform though.",
+    "created_at": "2009-12-23T22:52:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41585",
+    "user": "cremona"
+}
+```
 
 Replying to [comment:30 ylchapuy]:
 Not sure when I'll get back to this -- family calls, and it might be a few days.  It's a pity if the numerical accuracy depends so much on platform though.
 
 
+
 ---
 
-Comment by ylchapuy created at 2009-12-23 22:59:20
+archive/issue_comments_041586.json:
+```json
+{
+    "body": "Replying to [comment:31 cremona]:\n> Not sure when I'll get back to this -- family calls, and it might be a few days.\n\nNo problem of course; Happy Christmas!",
+    "created_at": "2009-12-23T22:59:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41586",
+    "user": "ylchapuy"
+}
+```
 
 Replying to [comment:31 cremona]:
 > Not sure when I'll get back to this -- family calls, and it might be a few days.
@@ -784,25 +1197,58 @@ Replying to [comment:31 cremona]:
 No problem of course; Happy Christmas!
 
 
+
 ---
 
-Comment by cremona created at 2009-12-24 15:50:40
+archive/issue_comments_041587.json:
+```json
+{
+    "body": "OK, so I found a few minutes.  New extra patch looks fine to me.  Successfully applied and tested on 32 and 64 bit machines.\n\nI guess that we'll next want to change, or add to, the interface to command-line lcalc in sage/lfunctions/lcalc.py -- but that's for another ticket.",
+    "created_at": "2009-12-24T15:50:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41587",
+    "user": "cremona"
+}
+```
 
 OK, so I found a few minutes.  New extra patch looks fine to me.  Successfully applied and tested on 32 and 64 bit machines.
 
 I guess that we'll next want to change, or add to, the interface to command-line lcalc in sage/lfunctions/lcalc.py -- but that's for another ticket.
 
 
+
 ---
 
-Comment by cremona created at 2009-12-24 15:50:40
+archive/issue_comments_041588.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-12-24T15:50:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41588",
+    "user": "cremona"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by rishi created at 2009-12-24 19:23:21
+archive/issue_comments_041589.json:
+```json
+{
+    "body": "I did not check my email in the last 24 hours. Yes the derivatives will not be accurate. In fact it gets progressively wrong with higher derivatives. I will add a patch later to add to documentation to this fact. The derivative is calculated by calculating L function at two points very close and using the definition of derivative. It is not accurate at all.\n\nThe following error message is from lcalc library. It is debugging info which Mike uses when things go wrong.\n\n\n```\n----------------------------------------------\n\nName of L_function: \nnumber of dirichlet coefficients = 5\ncoefficients are periodic\nb[1] = 1\nb[2] = -1\nb[3] = -1\nb[4] = 1\nb[5] = 0\n\nQ = 1.26156626101\nOMEGA = (1,4.96506830649e-17)\na = 1 (the quasi degree)\ngamma[1] =0.5    lambda[1] =(0,0)\n\n\nnumber of poles (of the completed L function) = 0\n-----------------------------------------------\n\n\n```\n",
+    "created_at": "2009-12-24T19:23:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41589",
+    "user": "rishi"
+}
+```
 
 I did not check my email in the last 24 hours. Yes the derivatives will not be accurate. In fact it gets progressively wrong with higher derivatives. I will add a patch later to add to documentation to this fact. The derivative is calculated by calculating L function at two points very close and using the definition of derivative. It is not accurate at all.
 
@@ -835,23 +1281,56 @@ number of poles (of the completed L function) = 0
 
 
 
+
 ---
 
-Comment by rishi created at 2009-12-24 19:34:20
+archive/issue_comments_041590.json:
+```json
+{
+    "body": "I was wrong in the previous message. The print_data_to_standard_output is used for debugging in developing lcalc, and I used it to debug the wrapper initially when things were going totally awry. Although I rewrote few functions in lcalc to return values instead of printing in standard output, this function still prints everything out in standard output.",
+    "created_at": "2009-12-24T19:34:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41590",
+    "user": "rishi"
+}
+```
 
 I was wrong in the previous message. The print_data_to_standard_output is used for debugging in developing lcalc, and I used it to debug the wrapper initially when things were going totally awry. Although I rewrote few functions in lcalc to return values instead of printing in standard output, this function still prints everything out in standard output.
 
 
+
 ---
 
-Comment by cremona created at 2009-12-30 16:17:43
+archive/issue_comments_041591.json:
+```json
+{
+    "body": "NB See also #7788 for some minor docstring changes which should be merged when this is.",
+    "created_at": "2009-12-30T16:17:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41591",
+    "user": "cremona"
+}
+```
 
 NB See also #7788 for some minor docstring changes which should be merged when this is.
 
 
+
 ---
 
-Comment by mhansen created at 2010-01-04 01:59:32
+archive/issue_comments_041592.json:
+```json
+{
+    "body": "What all do I need apply for this?  I get the following failure:\n\n\n```\ncd \"/virtual/scratch/mhansen/release/4.3.1/alpha0/sage-4.3.1.alpha0/devel/sage\" && hg qser\ncd \"/virtual/scratch/mhansen/release/4.3.1/alpha0/sage-4.3.1.alpha0/devel/sage\" && hg qimport /home/mhansen/.sage/temp/boxen/29343/release_0/trac_5396-refactor.patch\ncd \"/virtual/scratch/mhansen/release/4.3.1/alpha0/sage-4.3.1.alpha0/devel/sage\" && hg qpush\ncd \"/virtual/scratch/mhansen/release/4.3.1/alpha0/sage-4.3.1.alpha0/devel/sage\" && hg qimport /home/mhansen/.sage/temp/boxen/29343/release_0/trac_5396-review.patch\ncd \"/virtual/scratch/mhansen/release/4.3.1/alpha0/sage-4.3.1.alpha0/devel/sage\" && hg qpush\n\n=========================\n >>> Rebuilding Sage <<< \n=========================\n\ncc1plus: warning: command line option \"-Wstrict-prototypes\" is valid for Ada/C/ObjC but not for C++\nIn file included from sage/libs/lcalc/lcalc_Lfunction.cpp:149:\nsage/libs/lcalc/lcalc_sage.h:1:15: error: L.h: No such file or directory\nIn file included from sage/libs/lcalc/lcalc_Lfunction.cpp:149:\nsage/libs/lcalc/lcalc_sage.h:27: error: expected constructor, destructor, or type conversion before \u2018*\u2019 token\nsage/libs/lcalc/lcalc_sage.h:33: error: variable or field \u2018del_Complexes\u2019 declared void\nsage/libs/lcalc/lcalc_sage.h:33: error: \u2018Complex\u2019 was not declared in this scope\nsage/libs/lcalc/lcalc_sage.h:33: error: \u2018A\u2019 was not declared in this scope\nsage/libs/lcalc/lcalc_sage.h:38: error: \u2018Complex\u2019 does not name a type\nsage/libs/lcalc/lcalc_sage.h:44: error: variable or field \u2018testL\u2019 declared void\nsage/libs/lcalc/lcalc_sage.h:44: error: \u2018L_function\u2019 was not declared in this scope\nsage/libs/lcalc/lcalc_sage.h:44: error: \u2018Complex\u2019 was not declared in this scope\nsage/libs/lcalc/lcalc_sage.h:44: error: \u2018L\u2019 was not declared in this scope\nIn file included from /usr/include/c++/4.2/ios:44,\n                 from /usr/include/c++/4.2/ostream:45,\n                 from /usr/include/c++/4.2/iostream:45,\n                 from /virtual/scratch/mhansen/release/4.3.1/alpha0/sage-4.3.1.alpha0/local//include/NTL/tools.h:14,\n                 from /virtual/scratch/mhansen/release/4.3.1/alpha0/sage-4.3.1.alpha0/local//include/NTL/ZZ.h:19,\n                 from /virtual/scratch/mhansen/release/4.3.1/alpha0/sage-4.3.1.alpha0/local//include/csage/ntl_wrap.h:2,\n                 from sage/libs/lcalc/lcalc_Lfunction.cpp:151:\n/usr/include/c++/4.2/exception:40: error: expected declaration before end of line\n```\n",
+    "created_at": "2010-01-04T01:59:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41592",
+    "user": "mhansen"
+}
+```
 
 What all do I need apply for this?  I get the following failure:
 
@@ -892,9 +1371,20 @@ In file included from /usr/include/c++/4.2/ios:44,
 
 
 
+
 ---
 
-Comment by rishi created at 2010-01-04 03:23:08
+archive/issue_comments_041593.json:
+```json
+{
+    "body": "Replying to [comment:37 mhansen]:\n> What all do I need apply for this?  I get the following failure:\n\nAre you using the spkg in this ticket?",
+    "created_at": "2010-01-04T03:23:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41593",
+    "user": "rishi"
+}
+```
 
 Replying to [comment:37 mhansen]:
 > What all do I need apply for this?  I get the following failure:
@@ -902,16 +1392,38 @@ Replying to [comment:37 mhansen]:
 Are you using the spkg in this ticket?
 
 
+
 ---
 
-Comment by rlm created at 2010-01-13 07:01:17
+archive/issue_comments_041594.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_work.",
+    "created_at": "2010-01-13T07:01:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41594",
+    "user": "rlm"
+}
+```
 
 Changing status from positive_review to needs_work.
 
 
+
 ---
 
-Comment by rlm created at 2010-01-13 07:01:17
+archive/issue_comments_041595.json:
+```json
+{
+    "body": "After building `lcalc-1.23.spkg` and applying `trac_5396-refactor.patch` and `trac_5396-review.patch`, I get the following failures:\n\n```\n        sage -t -long devel/sage-main/sage/plot/line.py # 1 doctests failed\n        sage -t -long devel/sage-main/sage/schemes/elliptic_curves/lseries_ell.py # 6 doctests failed\n        sage -t -long devel/sage-main/sage/schemes/elliptic_curves/ell_rational_field.py # 3 doctests failed\n        sage -t -long devel/sage-main/sage/lfunctions/lcalc.py # 3 doctests failed\n```\n\n\nFor example:\n\n```\nsage -t -long sage/plot/line.py\n**********************************************************************\nFile \"/virtual/scratch/rlm/sage-4.3.1.alpha2/devel/sage-main/sage/plot/line.py\", line 375:\n    sage: vals = E.lseries().values_along_line(1-I, 1+10*I, 100) # critical line\nExpected nothing\nGot:\n    lcalc:  You need to uncomment the line: PARI_DEFINE = -DINCLUDE_PARI\n    lcalc:  in the Makefile and do: 'make clean', then 'make' if you wish to use\n    lcalc:  elliptic curve L-functions. Requires that you already have pari installed\n    lcalc:  on your machine.\n**********************************************************************\n```\n",
+    "created_at": "2010-01-13T07:01:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41595",
+    "user": "rlm"
+}
+```
 
 After building `lcalc-1.23.spkg` and applying `trac_5396-refactor.patch` and `trac_5396-review.patch`, I get the following failures:
 
@@ -941,42 +1453,110 @@ Got:
 
 
 
+
 ---
 
-Comment by cremona created at 2010-01-13 09:35:59
+archive/issue_comments_041596.json:
+```json
+{
+    "body": "This suggests to me that the build script in the spkg needs attention.",
+    "created_at": "2010-01-13T09:35:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41596",
+    "user": "cremona"
+}
+```
 
 This suggests to me that the build script in the spkg needs attention.
 
 
+
 ---
+
+archive/issue_comments_041597.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-01-13T15:34:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41597",
+    "user": "rishi"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by rishi created at 2010-01-13 15:54:56
+archive/issue_comments_041598.json:
+```json
+{
+    "body": "I have uncommented the appropriate line in the Makefile. lcalc uses pari to generate the dirichlet coefficients. If we use the wrapper, we can use sage to generate the dirichlet coefficients and feed it to lcalc.",
+    "created_at": "2010-01-13T15:54:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41598",
+    "user": "rishi"
+}
+```
 
 I have uncommented the appropriate line in the Makefile. lcalc uses pari to generate the dirichlet coefficients. If we use the wrapper, we can use sage to generate the dirichlet coefficients and feed it to lcalc.
 
 
+
 ---
 
-Comment by rishi created at 2010-01-13 15:54:56
+archive/issue_comments_041599.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-01-13T15:54:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41599",
+    "user": "rishi"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by cremona created at 2010-01-13 17:13:37
+archive/issue_comments_041600.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-01-13T17:13:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41600",
+    "user": "cremona"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by cremona created at 2010-01-13 17:13:37
+archive/issue_comments_041601.json:
+```json
+{
+    "body": "rishi, I could not install this version of lcalc.  I'll paste in below the error message I got.  Before that, two comments:  (1) the spkg should contain more than it does (an install script and the src directory).  See http://www.sagemath.org/doc/developer/producing_spkgs.html: there should be a file SPKG.txt, and there should be mercurial files, and an check script.... (2) When you make new versions of the spkg it's helpful for the name to change sp people can tell them apart:  here you could have called the first version lcalc-1.23.spkg, then lcalc-1.23.p1.spkg, etc.  The changes in each version should be docuemtned in SPKG.txt.\n\nHere's the error I got installing it:\n\n```\n...\ng++ -Wa,-W -O3  -Wno-deprecated  -ffast-math -fPIC  -I../include -I/usr/local/include/pari  -DINCLUDE_PARI -c Lcommandline_elliptic.cc\nLcommandline_elliptic.cc: In function \u2018void data_E(char*, char*, char*, char*, char*, int, Double*)\u2019:\nLcommandline_elliptic.cc:124: error: \u2018lgeti\u2019 was not declared in this scope\nmake[1]: *** [Lcommandline_elliptic.o] Error 1\nmake[1]: Leaving directory `/home/john/sage-4.3.1.alpha1/spkg/build/lcalc-1.23/src/src'\nmake: *** [all] Error 2\nError building lcalc\ncp: cannot stat `lcalc': No such file or directory\n\nreal\t0m17.528s\nuser\t0m16.449s\nsys\t0m0.564s\nsage: An error occurred while installing lcalc-1.23\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /home/john/sage-4.3.1.alpha1/install.log.  Describe your computer, operating system, etc.\nIf you want to try to fix the problem yourself, *don't* just cd to\n/home/john/sage-4.3.1.alpha1/spkg/build/lcalc-1.23 and type 'make check' or whatever is appropriate.\nInstead, the following commands setup all environment variables\ncorrectly and load a subshell for you to debug the error:\n(cd '/home/john/sage-4.3.1.alpha1/spkg/build/lcalc-1.23' && '/home/john/sage-4.3.1.alpha1/sage' -sh)\nWhen you are done debugging, you can type \"exit\" to leave the\nsubshell.\n```\n",
+    "created_at": "2010-01-13T17:13:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41601",
+    "user": "cremona"
+}
+```
 
 rishi, I could not install this version of lcalc.  I'll paste in below the error message I got.  Before that, two comments:  (1) the spkg should contain more than it does (an install script and the src directory).  See http://www.sagemath.org/doc/developer/producing_spkgs.html: there should be a file SPKG.txt, and there should be mercurial files, and an check script.... (2) When you make new versions of the spkg it's helpful for the name to change sp people can tell them apart:  here you could have called the first version lcalc-1.23.spkg, then lcalc-1.23.p1.spkg, etc.  The changes in each version should be docuemtned in SPKG.txt.
 
@@ -1011,9 +1591,20 @@ subshell.
 
 
 
+
 ---
 
-Comment by bober created at 2010-01-13 21:56:22
+archive/issue_comments_041602.json:
+```json
+{
+    "body": "This problem has to do with the makefile for lcalc, which needs work. Note that it includes the following, which explains why it didn't compile after that INCLUDE_PARI line was uncommented.\n\n\n```\nifeq ($(PARI_DEFINE),-DINCLUDE_PARI)\n    #location of pari.h.\n    LOCATION_PARI_H = /usr/local/include/pari #usual location\n\n    #location of libpari.a or of libpari.so\n    #depending on whether static or dynamic libraries are being used.\n    #On mac os x it's the former, on linux I think usually the latter.\n    LOCATION_PARI_LIBRARY = /usr/local/lib #usual location\nelse\n    #supplied as a dummy so as to avoid more ifeq's below\n    LOCATION_PARI_H = .\n    LOCATION_PARI_LIBRARY = .\nendif\n```\n",
+    "created_at": "2010-01-13T21:56:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41602",
+    "user": "bober"
+}
+```
 
 This problem has to do with the makefile for lcalc, which needs work. Note that it includes the following, which explains why it didn't compile after that INCLUDE_PARI line was uncommented.
 
@@ -1036,9 +1627,20 @@ endif
 
 
 
+
 ---
 
-Comment by bober created at 2010-01-13 22:11:38
+archive/issue_comments_041603.json:
+```json
+{
+    "body": "Suggestion: in the function Lfunction_from_character, instead of calling chi.gauss_sum(), call chi.gauss_sum_numerical(). It is much faster, and in the end we are only interested in the numerical approximation anyway.\n\n\n```\nsage: G = DirichletGroup(101)            \nsage: chi = G[1]\nsage: time A = chi.gauss_sum()\nCPU times: user 19.05 s, sys: 0.02 s, total: 19.07 s\nWall time: 19.07 s\nsage: time B = chi.gauss_sum_numerical()\nCPU times: user 0.06 s, sys: 0.00 s, total: 0.06 s\nWall time: 0.06 s\n```\n",
+    "created_at": "2010-01-13T22:11:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41603",
+    "user": "bober"
+}
+```
 
 Suggestion: in the function Lfunction_from_character, instead of calling chi.gauss_sum(), call chi.gauss_sum_numerical(). It is much faster, and in the end we are only interested in the numerical approximation anyway.
 
@@ -1056,9 +1658,20 @@ Wall time: 0.06 s
 
 
 
+
 ---
 
-Comment by rishi created at 2010-01-14 00:48:55
+archive/issue_comments_041604.json:
+```json
+{
+    "body": "Thanks Bober for the comment about compiling lcalc.\n\n I wrote the two functions to generate L functions of Dirichlet characters and Elliptic Curves exclusively for testing of wrapper. It was not supposed to be for end users at all. I wrote very simple function whose sole purpose was to not introduce any bugs. In fact they were in a file called for_testing.py till the refactor of code.\n\nCan we do optimization outside the wrapper itself. \n\nMaybe we can write new functions in the lfunctions directory to generate elliptic curve, modular forms and dirichlet lfunctions.\n\nReplying to [comment:44 bober]:\n> Suggestion: in the function Lfunction_from_character, instead of calling chi.gauss_sum(), call chi.gauss_sum_numerical(). It is much faster, and in the end we are only interested in the numerical approximation anyway.\n> \n> {{{\n> sage: G = DirichletGroup(101)            \n> sage: chi = G[1]\n> sage: time A = chi.gauss_sum()\n> CPU times: user 19.05 s, sys: 0.02 s, total: 19.07 s\n> Wall time: 19.07 s\n> sage: time B = chi.gauss_sum_numerical()\n> CPU times: user 0.06 s, sys: 0.00 s, total: 0.06 s\n> Wall time: 0.06 s\n> }}}",
+    "created_at": "2010-01-14T00:48:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41604",
+    "user": "rishi"
+}
+```
 
 Thanks Bober for the comment about compiling lcalc.
 
@@ -1083,44 +1696,114 @@ Replying to [comment:44 bober]:
 > }}}
 
 
+
 ---
+
+archive/issue_comments_041605.json:
+```json
+{
+    "body": "Attachment\n\nFor lcalc wrapper. This should work with the old code based on command line version of lcalc",
+    "created_at": "2010-01-14T03:43:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41605",
+    "user": "rishi"
+}
+```
 
 Attachment
 
 For lcalc wrapper. This should work with the old code based on command line version of lcalc
 
 
+
 ---
 
-Comment by rishi created at 2010-01-14 03:55:39
+archive/issue_comments_041606.json:
+```json
+{
+    "body": "I am attaching another spkg. This is based on the earlier lcalc spkg. This should work. This also follows the instructions of http://www.sagemath.org/doc/developer/producing_spkgs.html\n\nSpecial thanks to John from whom I have learnt a lot during this review process.",
+    "created_at": "2010-01-14T03:55:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41606",
+    "user": "rishi"
+}
+```
 
 I am attaching another spkg. This is based on the earlier lcalc spkg. This should work. This also follows the instructions of http://www.sagemath.org/doc/developer/producing_spkgs.html
 
 Special thanks to John from whom I have learnt a lot during this review process.
 
 
+
 ---
 
-Comment by rishi created at 2010-01-14 03:55:39
+archive/issue_comments_041607.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-01-14T03:55:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41607",
+    "user": "rishi"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by rishi created at 2010-01-14 17:18:52
+archive/issue_comments_041608.json:
+```json
+{
+    "body": "I realized that instead of having Makefile.sage, having just a patch file will make it more robust to changes in Makefile by Mike later.",
+    "created_at": "2010-01-14T17:18:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41608",
+    "user": "rishi"
+}
+```
 
 I realized that instead of having Makefile.sage, having just a patch file will make it more robust to changes in Makefile by Mike later.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-01-31 05:59:14
+archive/issue_comments_041609.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-01-31T05:59:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41609",
+    "user": "drkirkby"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
+
+archive/issue_comments_041610.json:
+```json
+{
+    "body": "Attachment\n\nWilliam said the other day he does not want to see patches used. One reason cited was the fact that not all systems have a patch command, though I pointed out 'patch' was a requirement for POSIX. \n\nAs such, I think you should rename this to a makefile.patch, and go back to your original solution of a patched makefile in the patches directory.",
+    "created_at": "2010-01-31T05:59:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41610",
+    "user": "drkirkby"
+}
+```
 
 Attachment
 
@@ -1129,37 +1812,94 @@ William said the other day he does not want to see patches used. One reason cite
 As such, I think you should rename this to a makefile.patch, and go back to your original solution of a patched makefile in the patches directory.
 
 
+
 ---
 
-Comment by rishi created at 2010-02-02 14:26:58
+archive/issue_comments_041611.json:
+```json
+{
+    "body": "Following David Kirby's comment, I have removed the changes from p2. This is exactly the same as lcalc-1.23.p1",
+    "created_at": "2010-02-02T14:26:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41611",
+    "user": "rishi"
+}
+```
 
 Following David Kirby's comment, I have removed the changes from p2. This is exactly the same as lcalc-1.23.p1
 
 
+
 ---
 
-Comment by rishi created at 2010-02-02 14:28:40
+archive/issue_comments_041612.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-02-02T14:28:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41612",
+    "user": "rishi"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
+
+archive/issue_comments_041613.json:
+```json
+{
+    "body": "Attachment\n\nI have removed the patch file, and gone back to the version 1.23.p1. This works on boxen. All the tests passed.",
+    "created_at": "2010-02-02T14:28:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41613",
+    "user": "rishi"
+}
+```
 
 Attachment
 
 I have removed the patch file, and gone back to the version 1.23.p1. This works on boxen. All the tests passed.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-02-02 17:53:30
+archive/issue_comments_041614.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_info.",
+    "created_at": "2010-02-02T17:53:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41614",
+    "user": "drkirkby"
+}
+```
 
 Changing status from needs_review to needs_info.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-02-02 17:53:30
+archive/issue_comments_041615.json:
+```json
+{
+    "body": "I'm a bit concerned about the need to change the doctest to check for a result which is very different from the original, so the doctest chances from \n\n\n```\n0.305999824716... \n\nto \n\n0.305999..\n```\n\n\nI know numerical noise does occur in calculations, but this seems a lot of it. Is there independant verification the new result is correct (in which case let's use it, and not all the dots), or is there independant verification the old result is correct, in which case it is doubtful this should be put in. \n\nI've expressed concern before about the way lcalc hides compiler warnings, which happened to be in a way that it stopped the Solaris build  #6609. It basically added a compiler flag, which was supposed to be sent to the gnu assembler, to suppress warnings. \n\nThere are also #7178 and #7065 which I've raised. \n\nThe fact this is so such a different result to the previous one, deserves some explanation I feel. I'd like to see an independent check with Mathematica. \n\nI'm marking it as 'needs info', as I think we should not just ignore the different result, but understand why it is so different. \n\nDave",
+    "created_at": "2010-02-02T17:53:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41615",
+    "user": "drkirkby"
+}
+```
 
 I'm a bit concerned about the need to change the doctest to check for a result which is very different from the original, so the doctest chances from 
 
@@ -1186,9 +1926,20 @@ I'm marking it as 'needs info', as I think we should not just ignore the differe
 Dave
 
 
+
 ---
 
-Comment by drkirkby created at 2010-02-02 19:11:13
+archive/issue_comments_041616.json:
+```json
+{
+    "body": "I'm not a mathematician, but do have access to Mathematica. Can anyone tell me what this means, so I can compute this value in Mathematica? If I increase the precision, I should be able to get an accurate result. \n\nI have a comment regarding the remark by John Cremona about a different numerical value, and whether this could be due to his use of a 32-bit computer. This looks all like floating point maths to me, so the result would depend only on the IEEE floating point standard, which should give identical results on any Intel or AMD CPU,. as they both use 64-bits for the result, but work at 80 bits internally. This makes me even more concerned, and believe this needs addressing. \n\nDave",
+    "created_at": "2010-02-02T19:11:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41616",
+    "user": "drkirkby"
+}
+```
 
 I'm not a mathematician, but do have access to Mathematica. Can anyone tell me what this means, so I can compute this value in Mathematica? If I increase the precision, I should be able to get an accurate result. 
 
@@ -1197,9 +1948,20 @@ I have a comment regarding the remark by John Cremona about a different numerica
 Dave
 
 
+
 ---
 
-Comment by cremona created at 2010-02-02 20:30:52
+archive/issue_comments_041617.json:
+```json
+{
+    "body": "I don't think Mathematica will be much help here:  evaluating derivatives of L-series of elliptic curves. \n\nI tried Magma, but as far as I can see they don't do derivatives.  They can evaluate the L-series, and I did a \"poor man's derivative\" evaluating (L(0.5+e)-L(0.5))/e for small e and the result seemed to converge to  0.017188297766 and not anything like 0.305.\n\nSo Dave's question about what's going on here does need to be answered.",
+    "created_at": "2010-02-02T20:30:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41617",
+    "user": "cremona"
+}
+```
 
 I don't think Mathematica will be much help here:  evaluating derivatives of L-series of elliptic curves. 
 
@@ -1208,16 +1970,38 @@ I tried Magma, but as far as I can see they don't do derivatives.  They can eval
 So Dave's question about what's going on here does need to be answered.
 
 
+
 ---
 
-Comment by mhansen created at 2010-02-02 20:33:19
+archive/issue_comments_041618.json:
+```json
+{
+    "body": "0.305... looks more like the value of L.derivative(1).",
+    "created_at": "2010-02-02T20:33:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41618",
+    "user": "mhansen"
+}
+```
 
 0.305... looks more like the value of L.derivative(1).
 
 
+
 ---
 
-Comment by cremona created at 2010-02-02 20:41:50
+archive/issue_comments_041619.json:
+```json
+{
+    "body": "Replying to [comment:52 mhansen]:\n> 0.305... looks more like the value of L.derivative(1).\n\nYou're right!  That's the value I have in my database, anyway.  It is possible that lcalc normalises the functions so that the centre of the critical strip is 0.5 and not 1.\n\nSo I can verify with my own program that the value to around 50 decimals is\n\n0.305999773834052301820483683321676474452637774590",
+    "created_at": "2010-02-02T20:41:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41619",
+    "user": "cremona"
+}
+```
 
 Replying to [comment:52 mhansen]:
 > 0.305... looks more like the value of L.derivative(1).
@@ -1229,9 +2013,20 @@ So I can verify with my own program that the value to around 50 decimals is
 0.305999773834052301820483683321676474452637774590
 
 
+
 ---
 
-Comment by cremona created at 2010-02-02 20:51:53
+archive/issue_comments_041620.json:
+```json
+{
+    "body": "And in Magma (once I read the manual):\n\n```\n> E := EllipticCurve([0,0,1,-1,0]);\n> CremonaReference(E);             \n37a1\n> L := LSeries(E);                 \n> Evaluate(L,1 : Derivative:=1);\n0.305999773834052301820483683322\n```\n",
+    "created_at": "2010-02-02T20:51:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41620",
+    "user": "cremona"
+}
+```
 
 And in Magma (once I read the manual):
 
@@ -1246,38 +2041,82 @@ And in Magma (once I read the manual):
 
 
 
+
 ---
 
-Comment by drkirkby created at 2010-02-02 22:42:52
+archive/issue_comments_041621.json:
+```json
+{
+    "body": "As you can tell, this is outside my Mathematical knowledge, but just a few comments. \n\n* If this behaves differently to what someone might expect, then it should be documented how it works. I believe John is an expert in this area and he was surprised by the behavior, then clearly it could cause confusion. \n* Since John's computed an computed a result with high precision, I would put that as a comment in the test code. \n* I recall William once saying lcalc was very fast, but to me at least, this is not computing a very accurate result. I would suggest that should also be documented too. along with slower, but more accurate alternatives. \n\n\n\nDave",
+    "created_at": "2010-02-02T22:42:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41621",
+    "user": "drkirkby"
+}
+```
 
 As you can tell, this is outside my Mathematical knowledge, but just a few comments. 
 
- * If this behaves differently to what someone might expect, then it should be documented how it works. I believe John is an expert in this area and he was surprised by the behavior, then clearly it could cause confusion. 
- * Since John's computed an computed a result with high precision, I would put that as a comment in the test code. 
- * I recall William once saying lcalc was very fast, but to me at least, this is not computing a very accurate result. I would suggest that should also be documented too. along with slower, but more accurate alternatives. 
+* If this behaves differently to what someone might expect, then it should be documented how it works. I believe John is an expert in this area and he was surprised by the behavior, then clearly it could cause confusion. 
+* Since John's computed an computed a result with high precision, I would put that as a comment in the test code. 
+* I recall William once saying lcalc was very fast, but to me at least, this is not computing a very accurate result. I would suggest that should also be documented too. along with slower, but more accurate alternatives. 
 
 
 
 Dave
 
 
+
 ---
 
-Comment by rishi created at 2010-02-03 02:04:44
+archive/issue_comments_041622.json:
+```json
+{
+    "body": "Yes it does normalize so that the center is at 0.5. The derivatives are not precise. I have added Mike to the discussion list so that he can give more details.",
+    "created_at": "2010-02-03T02:04:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41622",
+    "user": "rishi"
+}
+```
 
 Yes it does normalize so that the center is at 0.5. The derivatives are not precise. I have added Mike to the discussion list so that he can give more details.
 
 
+
 ---
 
-Comment by rishi created at 2010-02-03 02:17:10
+archive/issue_comments_041623.json:
+```json
+{
+    "body": "I should have mentioned it in the last posting. I was planning to create another layer of python lfuntion class which will have the standard center (for general newforms).",
+    "created_at": "2010-02-03T02:17:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41623",
+    "user": "rishi"
+}
+```
 
 I should have mentioned it in the last posting. I was planning to create another layer of python lfuntion class which will have the standard center (for general newforms).
 
 
+
 ---
 
-Comment by rishi created at 2010-02-03 02:47:46
+archive/issue_comments_041624.json:
+```json
+{
+    "body": "Replying to [comment:55 drkirkby]:\n> As you can tell, this is outside my Mathematical knowledge, but just a few comments. \n> \n>  * If this behaves differently to what someone might expect, then it should be documented how it works. I believe John is an expert in this area and he was surprised by the behavior, then clearly it could cause confusion. \n\nThe center being at half is documented. The key line is\n \\Lambda(s) = \\omega Q^s \\overline{\\Lambda(1-\\bar s)} \n\n>  * Since John's computed an computed a result with high precision, I would put that as a comment in the test code. \n\nlcalc uses double to compute. The high precision is not possible. There is another ticket which contains documentation about loss of precision when calculating derivatives.\n\n\n>  * I recall William once saying lcalc was very fast, but to me at least, this is not computing a very accurate result. I would suggest that should also be documented too. along with slower, but more accurate alternatives. \n\nUsing double makes things fast, but they will not be as accurate as using a multiprecision library.\n\n> \n> Dave",
+    "created_at": "2010-02-03T02:47:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41624",
+    "user": "rishi"
+}
+```
 
 Replying to [comment:55 drkirkby]:
 > As you can tell, this is outside my Mathematical knowledge, but just a few comments. 
@@ -1300,23 +2139,56 @@ Using double makes things fast, but they will not be as accurate as using a mult
 > Dave
 
 
+
 ---
 
-Comment by cremona created at 2010-02-03 09:24:15
+archive/issue_comments_041625.json:
+```json
+{
+    "body": "I think it is important to note here that lcalc can handle a vastly larger assortment of L-functions than the opposition.  For example, the one value I recomputed independently is of the only kind I can handle with my code (and I can only compute the value at the centre, not anywhere else!).  So we should not leave the impression that lcalc is inferior just because it only uses double precision and not multi.",
+    "created_at": "2010-02-03T09:24:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41625",
+    "user": "cremona"
+}
+```
 
 I think it is important to note here that lcalc can handle a vastly larger assortment of L-functions than the opposition.  For example, the one value I recomputed independently is of the only kind I can handle with my code (and I can only compute the value at the centre, not anywhere else!).  So we should not leave the impression that lcalc is inferior just because it only uses double precision and not multi.
 
 
+
 ---
 
-Comment by cremona created at 2010-02-03 09:24:15
+archive/issue_comments_041626.json:
+```json
+{
+    "body": "Changing status from needs_info to needs_review.",
+    "created_at": "2010-02-03T09:24:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41626",
+    "user": "cremona"
+}
+```
 
 Changing status from needs_info to needs_review.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-02-03 11:44:36
+archive/issue_comments_041627.json:
+```json
+{
+    "body": "Replying to [comment:59 cremona]:\n> I think it is important to note here that lcalc can handle a vastly larger assortment of L-functions than the opposition.  For example, the one value I recomputed independently is of the only kind I can handle with my code (and I can only compute the value at the centre, not anywhere else!).  So we should not leave the impression that lcalc is inferior just because it only uses double precision and not multi.\n\nI agree, but there is significant precision loss - perhaps more than some might expect, so personally I would have thought that worth documenting. Of course, anyone should know hardware floating point will be less accurate (but faster) than extended precision in software.  \n\nGiven for simple computations, 16 digits of precision are possible, but here only 9, I would have thought that work documenting. \n\nThe fact lcalc can handle a vastly larger assortment of L-functions than anything else should also be noted! \n\nDave",
+    "created_at": "2010-02-03T11:44:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41627",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:59 cremona]:
 > I think it is important to note here that lcalc can handle a vastly larger assortment of L-functions than the opposition.  For example, the one value I recomputed independently is of the only kind I can handle with my code (and I can only compute the value at the centre, not anywhere else!).  So we should not leave the impression that lcalc is inferior just because it only uses double precision and not multi.
@@ -1330,9 +2202,20 @@ The fact lcalc can handle a vastly larger assortment of L-functions than anythin
 Dave
 
 
+
 ---
 
-Comment by mrubinst created at 2010-02-03 15:26:04
+archive/issue_comments_041628.json:
+```json
+{
+    "body": "Replying to [comment:60 drkirkby]:\n> Replying to [comment:59 cremona]:\n> > I think it is important to note here that lcalc can handle a vastly larger assortment of L-functions than the opposition.  For example, the one value I recomputed independently is of the only kind I can handle with my code (and I can only compute the value at the centre, not anywhere else!).  So we should not leave the impression that lcalc is inferior just because it only uses double precision and not multi.\n> \n> I agree, but there is significant precision loss - perhaps more than some might expect, so personally I would have thought that worth documenting. Of course, anyone should know hardware floating point will be less accurate (but faster) than extended precision in software.  \n> \n> Given for simple computations, 16 digits of precision are possible, but here only 9, I would have thought that work documenting. \n> \n> The fact lcalc can handle a vastly larger assortment of L-functions than anything else should also be noted! \n> \n> Dave",
+    "created_at": "2010-02-03T15:26:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41628",
+    "user": "mrubinst"
+}
+```
 
 Replying to [comment:60 drkirkby]:
 > Replying to [comment:59 cremona]:
@@ -1347,9 +2230,20 @@ Replying to [comment:60 drkirkby]:
 > Dave
 
 
+
 ---
 
-Comment by mrubinst created at 2010-02-03 15:33:31
+archive/issue_comments_041629.json:
+```json
+{
+    "body": "I plan to release version L-1.3 in a couple of weeks, and also to\nhave Rishi update his cython wrapper during our march workshop (I made\na handful of changes that will need him to update).\n\nThere are a number of key improvements.\n\nPrecision-\n\nI've spent quite a bit of effort getting a multiprecision version\nof lcalc to work. I now have it working with Bailey's double double\nand quad double (about 30 and 60 digits respectively) and also MPFR,\nthough the latter seems quite slow, perhaps because of the c++ wrapper that I am using... haven't dug too deep with the latter since\nBailey's dd and qd works quite nicely, and 60 digits is quite reasonable. Nonetheless,\nit does work to higher precision with mpfr.\n\nI am also developing a test suite to be run at compile time to check on accuracy of many of the routines and do various timing tests.\n\nOutput precision-\n\nRishi needs to handle this carefully since I have a parameter\nwhich describes how many digits of the working digits are accurate.\nI use this parameter when outputting my results. Not sure how\nor if Rishi makes use of this extra info, or just passes the double results\nof my routines.\n\nAt the same time I am wiring in better control of output precision\nbased on the explicit formula and also on using the smooth approximate\nfunctional equation with a couple of different test functions.\n\nDerivatives-\n\nthe version in L-1.23 is very crummy and I fixed that up too\nin version L-1.3. I initially just wanted to get that functionality in there, and I now use (version L-1.3 to be released) higher central differences for the derivatives that gives an accuracy of about Digits*4/(n+4) for the nth derivative. So for the 1st derivative,\nmy new version is accurate to about 4/5 the working precision, so roughly 12-13 digits with double precision and 24-25 digits with Bailey's dd.\n\n\nZeros-\n\nI fixed a subtle bug that would on rare occasion cause some zeros to be omitted\nand other zeros to be duplicated in their place.\n\nI'm also finishing to wire in a test of the explicit formula (based on a prototype that Kevin McGown helped me with in our kickoff frg coding sprint) that will prevent\nsuch bugs from going unnoticed!\n\nTrivial zeros-\n\nI built in knowledge of the trivial zeros so that correct output is displayed there.\nThis allowed me to apply the functional equation correctly, so that the new version\nworks throughout the complex plane (previously it gave nonsense results left of 0).\n\nBand limited interpolation-\n\nI'm wiring in some code of ghaith Hiary for computing zeta using band limited\ninterpolation. This will give a significant speedup in, for example, computing zeros of zeta.\n\nStart at Nth zero-\n\nAbility to start searching for zeros from the Nth zero onward (rather than\nalways starting from the real axis). This one was long overdue!\n\n\nMany small improvements that have a big impact-\n\nFor example I coded up my own trig functions that are about 4 times faster than\nthe machines (for double precision) and also faster than Bailey's and MPFR's.\n\nAnyhow, my package definitely needs a companion paper and much better\ndocumentation. Something to work on...\n\nOther planned improvements for version L-1.4:\n\n1) broader use of openmp in some of the key routines\n2) fft algorithms- will lead to orders of magnitude improvement\nespecially for higher degree L-funcitons\n3) L-functions of number fields and symmetric powers",
+    "created_at": "2010-02-03T15:33:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41629",
+    "user": "mrubinst"
+}
+```
 
 I plan to release version L-1.3 in a couple of weeks, and also to
 have Rishi update his cython wrapper during our march workshop (I made
@@ -1428,21 +2322,43 @@ especially for higher degree L-funcitons
 3) L-functions of number fields and symmetric powers
 
 
+
 ---
 
-Comment by mrubinst created at 2010-02-03 15:44:45
+archive/issue_comments_041630.json:
+```json
+{
+    "body": "One more thing- I've also cleaned up my makefile a bit, and, in the source, got rid of depreciated headers and unused variables.",
+    "created_at": "2010-02-03T15:44:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41630",
+    "user": "mrubinst"
+}
+```
 
 One more thing- I've also cleaned up my makefile a bit, and, in the source, got rid of depreciated headers and unused variables.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-02-03 16:00:48
+archive/issue_comments_041631.json:
+```json
+{
+    "body": "Replying to [comment:63 mrubinst]:\n> One more thing- I've also cleaned up my makefile a bit, and, in the source, got rid of depreciated headers and unused variables.\n\nThat is really **excellent** news. Is there any chance either you or I could check this with the Sun compiler on Solaris, before you make an official release? The Sun compilers more fussy than gcc, but would give us a performance boost on Solaris. \n\nThe fact the compiler is more fussy, also tends to weed out some sort of bugs. On 't2' the Sun C compiler is \n\n`/opt/sunstudio12.1/bin/cc`\n\nand the C++ compiler is \n\n`/opt/sunstudio12.1/bin/CC`\n\nOn the C++ compiler, you will probably need the option \n\n\n```\n -library=stlport4 \n```\n\n\nas that will then implement the latest C++ standard. (The older C++ standard is not compatible with the latest standard. For backwards compatibility Sun's C++ compiler defaults to the old C++ standard.}}} \n\nPreviously I tried building lcalc with the Sun compiler but got lots of warnings and error messages. But if the code has been cleaned up, things have more chance of working. \n\nThe point I made above about storing the exact (or least high precision) result in the test file, would be that is some record of what and should be, even though it is not going to be achieved. \n\nThen if you bring out a later version of lcalc, which deviates more from the exact result, people will at least know. It would only add 70 or so bytes to a file. \n\nDave",
+    "created_at": "2010-02-03T16:00:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41631",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:63 mrubinst]:
 > One more thing- I've also cleaned up my makefile a bit, and, in the source, got rid of depreciated headers and unused variables.
 
-That is really *excellent* news. Is there any chance either you or I could check this with the Sun compiler on Solaris, before you make an official release? The Sun compilers more fussy than gcc, but would give us a performance boost on Solaris. 
+That is really **excellent** news. Is there any chance either you or I could check this with the Sun compiler on Solaris, before you make an official release? The Sun compilers more fussy than gcc, but would give us a performance boost on Solaris. 
 
 The fact the compiler is more fussy, also tends to weed out some sort of bugs. On 't2' the Sun C compiler is 
 
@@ -1471,9 +2387,20 @@ Then if you bring out a later version of lcalc, which deviates more from the exa
 Dave
 
 
+
 ---
 
-Comment by drkirkby created at 2010-02-22 00:01:52
+archive/issue_comments_041632.json:
+```json
+{
+    "body": "Has this been checked on Solaris 10 with gcc? The different floating point processor may well give a different answer and need revisions to the doc test. \n\nThere's general information about building on Solaris at\n\n http://wiki.sagemath.org/solaris\n\nInformation specifically for 't2' at\n\n http://wiki.sagemath.org/devel/Building-Sage-on-the-T5240-t2\n\nBoth the source (4.3.0.1 is the latest to build on Solaris) and a binary which will run on any SPARC can be found at http://www.sagemath.org/download-source.html\n\nDave",
+    "created_at": "2010-02-22T00:01:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41632",
+    "user": "drkirkby"
+}
+```
 
 Has this been checked on Solaris 10 with gcc? The different floating point processor may well give a different answer and need revisions to the doc test. 
 
@@ -1490,16 +2417,38 @@ Both the source (4.3.0.1 is the latest to build on Solaris) and a binary which w
 Dave
 
 
+
 ---
 
-Comment by drkirkby created at 2010-02-22 00:01:52
+archive/issue_comments_041633.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_info.",
+    "created_at": "2010-02-22T00:01:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41633",
+    "user": "drkirkby"
+}
+```
 
 Changing status from needs_review to needs_info.
 
 
+
 ---
 
-Comment by rishi created at 2010-02-23 00:45:30
+archive/issue_comments_041634.json:
+```json
+{
+    "body": "I am unable to decipher the following error message when I try to compile on t2.\n\n```\ng++ -Wa,-W -O3  -Wno-deprecated  -ffast-math -fPIC  -I../include Lglobals.o Lgamma.o Lriemannsiegel.o Lriemannsiegel_blfi.o Ldokchitser.o Lcommandline_globals.o Lcommandline_misc.o Lcommandline_numbertheory.o Lcommandline_values_zeros.o Lcommandline_elliptic.o Lcommandline_twist.o Lcommandline.o cmdline.o -Xlinker -export-dynamic  -Xlinker -rpath -Xlinker /scratch/rishi/sage-4.3.0.1-Solaris-10-SPARC-sun4u-or-sun4v/local/lib  -L/scratch/rishi/sage-4.3.0.1-Solaris-10-SPARC-sun4u-or-sun4v/local/lib  -lpari -o lcalc\nld: fatal: option -dn and -P are incompatible\nld: fatal: Flags processing errors\ncollect2: ld returned 1 exit status\nmake[1]: *** [lcalc] Error 1\nmake[1]: Leaving directory `/scratch/rishi/sage-4.3.0.1-Solaris-10-SPARC-sun4u-or-sun4v/spkg/build/lcalc-1.23.p3/src/src'\nmake: *** [all] Error 2\n```\n\n\nI have not seen -dn or -P options  in anything.",
+    "created_at": "2010-02-23T00:45:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41634",
+    "user": "rishi"
+}
+```
 
 I am unable to decipher the following error message when I try to compile on t2.
 
@@ -1517,43 +2466,100 @@ make: *** [all] Error 2
 I have not seen -dn or -P options  in anything.
 
 
+
 ---
+
+archive/issue_comments_041635.json:
+```json
+{
+    "body": "Attachment\n\nChanged makefile to compile on solaris",
+    "created_at": "2010-02-23T13:20:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41635",
+    "user": "rishi"
+}
+```
 
 Attachment
 
 Changed makefile to compile on solaris
 
 
+
 ---
 
-Comment by rishi created at 2010-02-23 13:21:03
+archive/issue_comments_041636.json:
+```json
+{
+    "body": "Changing status from needs_info to needs_review.",
+    "created_at": "2010-02-23T13:21:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41636",
+    "user": "rishi"
+}
+```
 
 Changing status from needs_info to needs_review.
 
 
+
 ---
 
-Comment by rishi created at 2010-02-23 13:21:03
+archive/issue_comments_041637.json:
+```json
+{
+    "body": "I have attached new spkg. This compiles on solaris and the tests passed on t2.",
+    "created_at": "2010-02-23T13:21:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41637",
+    "user": "rishi"
+}
+```
 
 I have attached new spkg. This compiles on solaris and the tests passed on t2.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-02-24 22:13:21
+archive/issue_comments_041638.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-02-24T22:13:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41638",
+    "user": "drkirkby"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-02-24 22:13:21
+archive/issue_comments_041639.json:
+```json
+{
+    "body": "Replying to [comment:64 drkirkby]:\n> Replying to [comment:63 mrubinst]:\n> > One more thing- I've also cleaned up my makefile a bit, and, in the source, got rid of depreciated headers and unused variables.\n> \n> That is really **excellent** news. Is there any chance either you or I could check this with the Sun compiler on Solaris, before you make an official release? The Sun compilers more fussy than gcc, but would give us a performance boost on Solaris. \n\nHaving looked at this more closely, you have suppressed warnings, after I'd gone out of the way to enable them. \n\nYou have the options -W and  -Wno-deprecated, which are documented at \n\nhttp://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#Warning-Options\n\nas \n\n```\n-w\n    Inhibit all warning messages. \n\n-Wno-deprecated\n    Do not warn about usage of deprecated features. See Deprecated Features. \n```\n\n\nIf we follow that link about Deprecated Features, it says \"Using the old features might cause a warning in some cases that the feature will be dropped in the future. In other cases, the feature might be gone already.\"\n\nSo this appears to be storing up trouble for the future to me. \n\nGiven I'd noticed some problems before on Solaris, I made an effort to highlight the warnings. Now they have gone, as you have suppressed them. \n\nAs more minor points: \n\n* This package is .p4, but the changes for .p3 are not documented in SPKG.txt. If .p3 was never merged into Sage (which I believe is probably the case), then this should be called .p3 and not .p4. You can overwrite your old .p3 version. \n* It would be useful if the ticket number #5396 was put in SPKG.txt too. \n\nDave \n\nDave",
+    "created_at": "2010-02-24T22:13:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41639",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:64 drkirkby]:
 > Replying to [comment:63 mrubinst]:
 > > One more thing- I've also cleaned up my makefile a bit, and, in the source, got rid of depreciated headers and unused variables.
 > 
-> That is really *excellent* news. Is there any chance either you or I could check this with the Sun compiler on Solaris, before you make an official release? The Sun compilers more fussy than gcc, but would give us a performance boost on Solaris. 
+> That is really **excellent** news. Is there any chance either you or I could check this with the Sun compiler on Solaris, before you make an official release? The Sun compilers more fussy than gcc, but would give us a performance boost on Solaris. 
 
 Having looked at this more closely, you have suppressed warnings, after I'd gone out of the way to enable them. 
 
@@ -1580,33 +2586,66 @@ Given I'd noticed some problems before on Solaris, I made an effort to highlight
 
 As more minor points: 
 
- * This package is .p4, but the changes for .p3 are not documented in SPKG.txt. If .p3 was never merged into Sage (which I believe is probably the case), then this should be called .p3 and not .p4. You can overwrite your old .p3 version. 
- * It would be useful if the ticket number #5396 was put in SPKG.txt too. 
+* This package is .p4, but the changes for .p3 are not documented in SPKG.txt. If .p3 was never merged into Sage (which I believe is probably the case), then this should be called .p3 and not .p4. You can overwrite your old .p3 version. 
+* It would be useful if the ticket number #5396 was put in SPKG.txt too. 
 
 Dave 
 
 Dave
 
 
+
 ---
 
-Comment by drkirkby created at 2010-02-24 22:15:26
+archive/issue_comments_041640.json:
+```json
+{
+    "body": "It would be good if you could at least add -Wall and get rid of the warnings, and optionally -pedantic too. The the code will hopefully not break any time soon. This could easily break with a compiler upgrade. \n\nDave",
+    "created_at": "2010-02-24T22:15:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41640",
+    "user": "drkirkby"
+}
+```
 
 It would be good if you could at least add -Wall and get rid of the warnings, and optionally -pedantic too. The the code will hopefully not break any time soon. This could easily break with a compiler upgrade. 
 
 Dave
 
 
+
 ---
 
-Comment by rishi created at 2010-02-24 23:55:31
+archive/issue_comments_041641.json:
+```json
+{
+    "body": "Changing assignee from Rishi to rishi.",
+    "created_at": "2010-02-24T23:55:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41641",
+    "user": "rishi"
+}
+```
 
 Changing assignee from Rishi to rishi.
 
 
+
 ---
 
-Comment by rishi created at 2010-02-24 23:55:31
+archive/issue_comments_041642.json:
+```json
+{
+    "body": "This version is not what Mike was writing about in his posting. He was giving a preview of a future release of lcalc. This version is not as polished. But then it is better than what is shipping with sage right now.\n\nRegarding overwriting older packages, John Cremona asked that I do exactly the opposite of what you are suggesting. Please see his posting from couple of months ago in this very ticket. I will include a one line description of p3. p3 was just reverting from p2 to p1.\n\nI just made the minimal changes to Mike's makefile so that it compiles on solaris and uses pari library in SAGE_LOCAL. I did not want to make too many changes to the lcalc makefile.\n\nIn any case I will make changes you suggested to Makefile.sage in patches directory and post it.",
+    "created_at": "2010-02-24T23:55:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41642",
+    "user": "rishi"
+}
+```
 
 This version is not what Mike was writing about in his posting. He was giving a preview of a future release of lcalc. This version is not as polished. But then it is better than what is shipping with sage right now.
 
@@ -1617,9 +2656,20 @@ I just made the minimal changes to Mike's makefile so that it compiles on solari
 In any case I will make changes you suggested to Makefile.sage in patches directory and post it.
 
 
+
 ---
 
-Comment by rishi created at 2010-02-25 00:08:32
+archive/issue_comments_041643.json:
+```json
+{
+    "body": "Replying to [comment:70 rishi]:\n> This version is not what Mike was writing about in his posting. He was giving a preview of a future release of lcalc. This version is not as polished. But then it is better than what is shipping with sage right now.\n> \n\nI should clarify that I am talking about lcalc the program, and not the build scripts.",
+    "created_at": "2010-02-25T00:08:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41643",
+    "user": "rishi"
+}
+```
 
 Replying to [comment:70 rishi]:
 > This version is not what Mike was writing about in his posting. He was giving a preview of a future release of lcalc. This version is not as polished. But then it is better than what is shipping with sage right now.
@@ -1628,9 +2678,20 @@ Replying to [comment:70 rishi]:
 I should clarify that I am talking about lcalc the program, and not the build scripts.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-03-06 14:07:12
+archive/issue_comments_041644.json:
+```json
+{
+    "body": "Replying to [comment:70 rishi]:\n\n> Regarding overwriting older packages, John Cremona asked that I do exactly the opposite of what you are suggesting. Please see his posting from couple of months ago in this very ticket. I will include a one line description of p3. p3 was just reverting from p2 to p1.\n\nI'm really confused here. I'm going to cc Minh onto this, as he knows more about version numbers than me, but I believe the version being proposed is incorrect. \n\n* 6 months ago you added 'L-1.23.spkg' to this ticket. So was that supposed to be brand new package? Currently there is no package in Sage called 'L'. In any case it should **not** have been attacked to the trac server, but instead a link provided to a place where it could be found. \n\n* There are numerous other attachments. Assuming all these changes are based on top of version 1.23 of lcalc, and not a version with a date code of'20080205', then I believe all these changes should be put into lcalc-1.23. There is no need for p0, p1, p2, p3 or p4. Patch levels should be incremented as a result of newer versions committed to Sage - not as a result of reviewer comments. \n\n* If all these changes are based on the version of lcalc in Sage, lcalc-20080205.p4.spkg, then the updated version should be called lcalc-20080205.p5.spkg. \n\nPerhaps you could briefly summerise what this is, and why it should be called a particular version. Why was it orriginally going to be called L? With a highly technical package and 70 comments spanning 6-months, it is hard to decipher it all. But I believe something is wrong here, but would welcome some comments from Minh. \n\nDave",
+    "created_at": "2010-03-06T14:07:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41644",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:70 rishi]:
 
@@ -1638,26 +2699,37 @@ Replying to [comment:70 rishi]:
 
 I'm really confused here. I'm going to cc Minh onto this, as he knows more about version numbers than me, but I believe the version being proposed is incorrect. 
 
- * 6 months ago you added 'L-1.23.spkg' to this ticket. So was that supposed to be brand new package? Currently there is no package in Sage called 'L'. In any case it should *not* have been attacked to the trac server, but instead a link provided to a place where it could be found. 
+* 6 months ago you added 'L-1.23.spkg' to this ticket. So was that supposed to be brand new package? Currently there is no package in Sage called 'L'. In any case it should **not** have been attacked to the trac server, but instead a link provided to a place where it could be found. 
 
- * There are numerous other attachments. Assuming all these changes are based on top of version 1.23 of lcalc, and not a version with a date code of'20080205', then I believe all these changes should be put into lcalc-1.23. There is no need for p0, p1, p2, p3 or p4. Patch levels should be incremented as a result of newer versions committed to Sage - not as a result of reviewer comments. 
+* There are numerous other attachments. Assuming all these changes are based on top of version 1.23 of lcalc, and not a version with a date code of'20080205', then I believe all these changes should be put into lcalc-1.23. There is no need for p0, p1, p2, p3 or p4. Patch levels should be incremented as a result of newer versions committed to Sage - not as a result of reviewer comments. 
 
- * If all these changes are based on the version of lcalc in Sage, lcalc-20080205.p4.spkg, then the updated version should be called lcalc-20080205.p5.spkg. 
+* If all these changes are based on the version of lcalc in Sage, lcalc-20080205.p4.spkg, then the updated version should be called lcalc-20080205.p5.spkg. 
 
 Perhaps you could briefly summerise what this is, and why it should be called a particular version. Why was it orriginally going to be called L? With a highly technical package and 70 comments spanning 6-months, it is hard to decipher it all. But I believe something is wrong here, but would welcome some comments from Minh. 
 
 Dave
 
 
+
 ---
 
-Comment by rishi created at 2010-03-09 19:22:09
+archive/issue_comments_041645.json:
+```json
+{
+    "body": "Replying to [comment:72 drkirkby]:\n\n> Replying to [comment:70 rishi]:\n> > Regarding overwriting older packages, John Cremona asked that I do exactly the opposite of what you are suggesting. Please see his posting from couple of months ago in this very ticket. I will include a one line description of p3. p3 was just reverting from p2 to p1.\n> I'm really confused here. I'm going to cc Minh onto this, as he knows more about version numbers than me, but I believe the version being proposed is incorrect.  * 6 months ago you added 'L-1.23.spkg' to this ticket. So was that supposed to be brand new package? Currently there is no package in Sage called 'L'. In any case it should **not** have been attacked to the trac server, but instead a link provided to a place where it could be found. \n\nPlease read the comments in this ticket. http://trac.sagemath.org/sage_trac/ticket/5396#comment:39\n\n> * There are numerous other attachments. Assuming all these changes are based on top of version 1.23 of lcalc, and not a version with a date code of'20080205', then I believe all these changes should be put into lcalc-1.23. There is no need for p0, p1, p2, p3 or p4. Patch levels should be incremented as a result of newer versions committed to Sage - not as a result of reviewer comments.\n\n> * If all these changes are based on the version of lcalc in Sage, lcalc-20080205.p4.spkg, then the updated version should be called lcalc-20080205.p5.spkg.\n\nIt is not based on lcalc-20080205.\n\n> Perhaps you could briefly summerise what this is, and why it should be called a particular version. Why was it orriginally going to be called L? With a highly technical package and 70 comments spanning 6-months, it is hard to decipher it all. But I believe something is wrong here, but would welcome some comments from Minh.\n\n  http://trac.sagemath.org/sage_trac/ticket/5396#comment:39\n\n> Dave",
+    "created_at": "2010-03-09T19:22:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41645",
+    "user": "rishi"
+}
+```
 
 Replying to [comment:72 drkirkby]:
 
 > Replying to [comment:70 rishi]:
 > > Regarding overwriting older packages, John Cremona asked that I do exactly the opposite of what you are suggesting. Please see his posting from couple of months ago in this very ticket. I will include a one line description of p3. p3 was just reverting from p2 to p1.
-> I'm really confused here. I'm going to cc Minh onto this, as he knows more about version numbers than me, but I believe the version being proposed is incorrect.  * 6 months ago you added 'L-1.23.spkg' to this ticket. So was that supposed to be brand new package? Currently there is no package in Sage called 'L'. In any case it should *not* have been attacked to the trac server, but instead a link provided to a place where it could be found. 
+> I'm really confused here. I'm going to cc Minh onto this, as he knows more about version numbers than me, but I believe the version being proposed is incorrect.  * 6 months ago you added 'L-1.23.spkg' to this ticket. So was that supposed to be brand new package? Currently there is no package in Sage called 'L'. In any case it should **not** have been attacked to the trac server, but instead a link provided to a place where it could be found. 
 
 Please read the comments in this ticket. http://trac.sagemath.org/sage_trac/ticket/5396#comment:39
 
@@ -1674,18 +2746,40 @@ It is not based on lcalc-20080205.
 > Dave
 
 
+
 ---
 
-Comment by rishi created at 2010-03-09 19:24:01
+archive/issue_comments_041646.json:
+```json
+{
+    "body": "The links were wrong.\n\nhttp://trac.sagemath.org/sage_trac/ticket/5396#comment:18",
+    "created_at": "2010-03-09T19:24:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41646",
+    "user": "rishi"
+}
+```
 
 The links were wrong.
 
 http://trac.sagemath.org/sage_trac/ticket/5396#comment:18
 
 
+
 ---
 
-Comment by rishi created at 2010-03-09 19:27:01
+archive/issue_comments_041647.json:
+```json
+{
+    "body": "HOWTO\n\n1. Apply trac_5396-refactor.patch\n2. Apply trac_5396-review.patch\n3. Use lcalc-1.23.p4 spkg\n\nThis patch no longer compiles with the latest version of sage.",
+    "created_at": "2010-03-09T19:27:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41647",
+    "user": "rishi"
+}
+```
 
 HOWTO
 
@@ -1696,118 +2790,300 @@ HOWTO
 This patch no longer compiles with the latest version of sage.
 
 
+
 ---
 
-Comment by ylchapuy created at 2010-03-09 20:58:26
+archive/issue_comments_041648.json:
+```json
+{
+    "body": "(minor) rebase for sage4.3.3",
+    "created_at": "2010-03-09T20:58:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41648",
+    "user": "ylchapuy"
+}
+```
 
 (minor) rebase for sage4.3.3
 
 
+
 ---
+
+archive/issue_comments_041649.json:
+```json
+{
+    "body": "Attachment\n\nYou just have to apply the one character patch trac_5396-rebase_sage4.3.3.patch on top of others.",
+    "created_at": "2010-03-09T20:59:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41649",
+    "user": "ylchapuy"
+}
+```
 
 Attachment
 
 You just have to apply the one character patch trac_5396-rebase_sage4.3.3.patch on top of others.
 
 
+
 ---
 
-Comment by rishi created at 2010-03-09 21:24:06
+archive/issue_comments_041650.json:
+```json
+{
+    "body": "combined patch rebased to 4.3.3",
+    "created_at": "2010-03-09T21:24:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41650",
+    "user": "rishi"
+}
+```
 
 combined patch rebased to 4.3.3
 
 
+
 ---
+
+archive/issue_comments_041651.json:
+```json
+{
+    "body": "Attachment\n\nOops! I did not see Yann had already posted a patch.",
+    "created_at": "2010-03-09T21:26:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41651",
+    "user": "rishi"
+}
+```
 
 Attachment
 
 Oops! I did not see Yann had already posted a patch.
 
 
+
 ---
 
-Comment by rishi created at 2010-03-09 22:05:03
+archive/issue_comments_041652.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-03-09T22:05:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41652",
+    "user": "rishi"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by rishi created at 2010-03-09 22:05:03
+archive/issue_comments_041653.json:
+```json
+{
+    "body": "Another spkg. \n\nhttp://sage.math.washington.edu/home/rishikesh/lcalc/lcalc-1.23.spkg",
+    "created_at": "2010-03-09T22:05:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41653",
+    "user": "rishi"
+}
+```
 
 Another spkg. 
 
 http://sage.math.washington.edu/home/rishikesh/lcalc/lcalc-1.23.spkg
 
 
+
 ---
 
-Comment by rishi created at 2010-03-17 19:35:35
+archive/issue_comments_041654.json:
+```json
+{
+    "body": "This ticket has become too long. I am splitting the lcalc spkg to  a ticket originally by mabshoff  #4793",
+    "created_at": "2010-03-17T19:35:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41654",
+    "user": "rishi"
+}
+```
 
 This ticket has become too long. I am splitting the lcalc spkg to  a ticket originally by mabshoff  #4793
 
 
+
 ---
 
-Comment by rishi created at 2010-03-17 19:42:57
+archive/issue_comments_041655.json:
+```json
+{
+    "body": "Only the last patch  trac_5396_combined_rebasedto_4.3.3.patch is needed. It combines all the work prior to it. This patch depends spkg upgrade in #4793",
+    "created_at": "2010-03-17T19:42:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41655",
+    "user": "rishi"
+}
+```
 
 Only the last patch  trac_5396_combined_rebasedto_4.3.3.patch is needed. It combines all the work prior to it. This patch depends spkg upgrade in #4793
 
 
+
 ---
+
+archive/issue_comments_041656.json:
+```json
+{
+    "body": "Attachment\n\nThe location of header files have changed in the lcalc spkg. This incorporates neccessary changes to compile.",
+    "created_at": "2010-03-25T12:00:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41656",
+    "user": "rishi"
+}
+```
 
 Attachment
 
 The location of header files have changed in the lcalc spkg. This incorporates neccessary changes to compile.
 
 
+
 ---
 
-Comment by rishi created at 2010-03-29 14:28:43
+archive/issue_comments_041657.json:
+```json
+{
+    "body": "Since the spkg upgrade this patch depended on has received positive review, can someone reinstate the positive review here.",
+    "created_at": "2010-03-29T14:28:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41657",
+    "user": "rishi"
+}
+```
 
 Since the spkg upgrade this patch depended on has received positive review, can someone reinstate the positive review here.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2010-06-04 23:59:31
+archive/issue_comments_041658.json:
+```json
+{
+    "body": "Applied and tested on sage-4.4.2.",
+    "created_at": "2010-06-04T23:59:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41658",
+    "user": "AlexGhitza"
+}
+```
 
 Applied and tested on sage-4.4.2.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2010-06-04 23:59:31
+archive/issue_comments_041659.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-06-04T23:59:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41659",
+    "user": "AlexGhitza"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by ddrake created at 2010-07-22 07:33:11
+archive/issue_comments_041660.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_work.",
+    "created_at": "2010-07-22T07:33:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41660",
+    "user": "ddrake"
+}
+```
 
 Changing status from positive_review to needs_work.
 
 
+
 ---
 
-Comment by ddrake created at 2010-07-22 07:33:11
+archive/issue_comments_041661.json:
+```json
+{
+    "body": "Am I correct that only attachment:trac_5396_combined_rebased_4.3.4.patch should be merged?\n\nIf so, please add the ticket number to that patch's commit message and switch this back to positive review!",
+    "created_at": "2010-07-22T07:33:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41661",
+    "user": "ddrake"
+}
+```
 
 Am I correct that only attachment:trac_5396_combined_rebased_4.3.4.patch should be merged?
 
 If so, please add the ticket number to that patch's commit message and switch this back to positive review!
 
 
+
 ---
 
-Comment by rishi created at 2010-07-22 17:32:26
+archive/issue_comments_041662.json:
+```json
+{
+    "body": "Changing status from needs_work to positive_review.",
+    "created_at": "2010-07-22T17:32:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41662",
+    "user": "rishi"
+}
+```
 
 Changing status from needs_work to positive_review.
 
 
+
 ---
 
-Comment by rishi created at 2010-07-22 17:32:26
+archive/issue_comments_041663.json:
+```json
+{
+    "body": "Replying to [comment:83 ddrake]:\n> Am I correct that only attachment:trac_5396_combined_rebased_4.3.4.patch should be merged?\n> \n> If so, please add the ticket number to that patch's commit message and switch this back to positive review!\n\n\nYes only the last attachment is to be merged.",
+    "created_at": "2010-07-22T17:32:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41663",
+    "user": "rishi"
+}
+```
 
 Replying to [comment:83 ddrake]:
 > Am I correct that only attachment:trac_5396_combined_rebased_4.3.4.patch should be merged?
@@ -1818,9 +3094,20 @@ Replying to [comment:83 ddrake]:
 Yes only the last attachment is to be merged.
 
 
+
 ---
 
-Comment by ddrake created at 2010-07-22 23:49:13
+archive/issue_comments_041664.json:
+```json
+{
+    "body": "Replying to [comment:84 rishi]:\n> Replying to [comment:83 ddrake]:\n> > Am I correct that only attachment:trac_5396_combined_rebased_4.3.4.patch should be merged?\n> > \n> > If so, please add the ticket number to that patch's commit message and switch this back to positive review!\n> \n> \n> Yes only the last attachment is to be merged.\n\nMerged on 4.5.2.alpha1.",
+    "created_at": "2010-07-22T23:49:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41664",
+    "user": "ddrake"
+}
+```
 
 Replying to [comment:84 rishi]:
 > Replying to [comment:83 ddrake]:
@@ -1834,16 +3121,38 @@ Replying to [comment:84 rishi]:
 Merged on 4.5.2.alpha1.
 
 
+
 ---
 
-Comment by ddrake created at 2010-07-22 23:49:13
+archive/issue_comments_041665.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-07-22T23:49:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41665",
+    "user": "ddrake"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by ddrake created at 2010-07-26 06:16:56
+archive/issue_comments_041666.json:
+```json
+{
+    "body": "Is there a spkg that goes along with the patch? I'm trying to compile from scratch after applying the above patch, and it's failing:\n\n```\nIn file included from sage/libs/lcalc/lcalc_Lfunction.cpp:163:\nsage/libs/lcalc/lcalc_sage.h:27: error: expected constructor, destructor, or type conversion before \ufffd*\ufffd token\nsage/libs/lcalc/lcalc_sage.h:33: error: variable or field \ufffddel_Complexes\ufffd declared void\nsage/libs/lcalc/lcalc_sage.h:33: error: \ufffdComplex\ufffd was not declared in this scope\nsage/libs/lcalc/lcalc_sage.h:33: error: \ufffdA\ufffd was not declared in this scope\nsage/libs/lcalc/lcalc_sage.h:38: error: \ufffdComplex\ufffd does not name a type\nsage/libs/lcalc/lcalc_sage.h:44: error: variable or field \ufffdtestL\ufffd declared void\nsage/libs/lcalc/lcalc_sage.h:44: error: \ufffdL_function\ufffd was not declared in this scope\nsage/libs/lcalc/lcalc_sage.h:44: error: \ufffdComplex\ufffd was not declared in this scope\nsage/libs/lcalc/lcalc_sage.h:44: error: \ufffdL\ufffd was not declared in this scope\n```\n\nI have the above patch, and lcalc-20100428-1.23.p0.spkg. If I'm missing a spkg, which one is missing? I see a bunch of spkgs posted here, along with links to others. Which to merge?",
+    "created_at": "2010-07-26T06:16:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41666",
+    "user": "ddrake"
+}
+```
 
 Is there a spkg that goes along with the patch? I'm trying to compile from scratch after applying the above patch, and it's failing:
 
@@ -1863,9 +3172,20 @@ sage/libs/lcalc/lcalc_sage.h:44: error: �L� was not declared in this scope
 I have the above patch, and lcalc-20100428-1.23.p0.spkg. If I'm missing a spkg, which one is missing? I see a bunch of spkgs posted here, along with links to others. Which to merge?
 
 
+
 ---
 
-Comment by ddrake created at 2010-07-26 07:20:01
+archive/issue_comments_041667.json:
+```json
+{
+    "body": "Replying to [comment:86 ddrake]:\n> Is there a spkg that goes along with the patch? I'm trying to compile from scratch after applying the above patch, and it's failing:\n\nHrm, it seems that the problem was that the lcalc spkg wasn't installed. I see in the spkg/standard/deps file that lcalc isn't a prequisite for the Sage library; should it be? The above problem went away after I installed the spkg with \"sage -i\".",
+    "created_at": "2010-07-26T07:20:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41667",
+    "user": "ddrake"
+}
+```
 
 Replying to [comment:86 ddrake]:
 > Is there a spkg that goes along with the patch? I'm trying to compile from scratch after applying the above patch, and it's failing:
@@ -1873,9 +3193,20 @@ Replying to [comment:86 ddrake]:
 Hrm, it seems that the problem was that the lcalc spkg wasn't installed. I see in the spkg/standard/deps file that lcalc isn't a prequisite for the Sage library; should it be? The above problem went away after I installed the spkg with "sage -i".
 
 
+
 ---
 
-Comment by rishi created at 2010-07-26 11:33:22
+archive/issue_comments_041668.json:
+```json
+{
+    "body": "Replying to [comment:87 ddrake]:\n> Replying to [comment:86 ddrake]:\n> > Is there a spkg that goes along with the patch? I'm trying to compile from scratch after applying the above patch, and it's failing:\n> \n> Hrm, it seems that the problem was that the lcalc spkg wasn't installed. I see in the spkg/standard/deps file that lcalc isn't a prequisite for the Sage library; should it be? The above problem went away after I installed the spkg with \"sage -i\". \n> \n\nTill this patch, lcalc was not require to build sage library. The code William wrote used pexpect  and the command line version of lcalc. Now libLfunction.so is required to compile. I did not know that one has to change spkg/standard/deps also. Can you change it so that the spkg becomes a prerequisite for the sage library",
+    "created_at": "2010-07-26T11:33:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41668",
+    "user": "rishi"
+}
+```
 
 Replying to [comment:87 ddrake]:
 > Replying to [comment:86 ddrake]:
@@ -1887,37 +3218,96 @@ Replying to [comment:87 ddrake]:
 Till this patch, lcalc was not require to build sage library. The code William wrote used pexpect  and the command line version of lcalc. Now libLfunction.so is required to compile. I did not know that one has to change spkg/standard/deps also. Can you change it so that the spkg becomes a prerequisite for the sage library
 
 
+
 ---
+
+archive/issue_comments_041669.json:
+```json
+{
+    "body": "Attachment\n\nUpdated `spkg/standard/deps` merged into 4.5.2.alpha1.",
+    "created_at": "2010-07-27T07:44:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41669",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
 Updated `spkg/standard/deps` merged into 4.5.2.alpha1.
 
 
+
 ---
 
-Comment by mpatel created at 2010-07-27 07:46:26
+archive/issue_comments_041670.json:
+```json
+{
+    "body": "Diff of `spkg/standard/deps` from 4.5.2.alpha0 to 4.5.2.alpha1, minus #9456's  \"hunk\"",
+    "created_at": "2010-07-27T07:46:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41670",
+    "user": "mpatel"
+}
+```
 
 Diff of `spkg/standard/deps` from 4.5.2.alpha0 to 4.5.2.alpha1, minus #9456's  "hunk"
 
 
+
 ---
+
+archive/issue_comments_041671.json:
+```json
+{
+    "body": "Attachment\n\nI've attached the updated `deps` file included in Sage 4.5.2.alpha1.  Please see [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/9455213e89f94692/db2c5f0aa386eebb#db2c5f0aa386eebb) for an explanation.",
+    "created_at": "2010-07-27T07:49:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41671",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
 I've attached the updated `deps` file included in Sage 4.5.2.alpha1.  Please see [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/9455213e89f94692/db2c5f0aa386eebb#db2c5f0aa386eebb) for an explanation.
 
 
+
 ---
 
-Comment by ddrake created at 2010-07-28 02:43:58
+archive/issue_comments_041672.json:
+```json
+{
+    "body": "This ticket introduced some doctest failures in 4.5.2.alpha1; see #9615.",
+    "created_at": "2010-07-28T02:43:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41672",
+    "user": "ddrake"
+}
+```
 
 This ticket introduced some doctest failures in 4.5.2.alpha1; see #9615.
 
 
+
 ---
 
-Comment by mpatel created at 2010-07-29 06:40:03
+archive/issue_comments_041673.json:
+```json
+{
+    "body": "Replying to [comment:88 rishi]:\n> Replying to [comment:87 ddrake]:\n> > Replying to [comment:86 ddrake]:\n> > > Is there a spkg that goes along with the patch? I'm trying to compile from scratch after applying the above patch, and it's failing:\n> > \n> > Hrm, it seems that the problem was that the lcalc spkg wasn't installed. I see in the spkg/standard/deps file that lcalc isn't a prequisite for the Sage library; should it be? The above problem went away after I installed the spkg with \"sage -i\". \n> > \n> \n> Till this patch, lcalc was not require to build sage library. The code William wrote used pexpect  and the command line version of lcalc. Now libLfunction.so is required to compile. I did not know that one has to change spkg/standard/deps also. Can you change it so that the spkg becomes a prerequisite for the sage library\n\nFor the record: This confirms the decision to merge an updated [attachment:deps spkg/standard/deps] file in Sage 4.5.2.alpha1.",
+    "created_at": "2010-07-29T06:40:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41673",
+    "user": "mpatel"
+}
+```
 
 Replying to [comment:88 rishi]:
 > Replying to [comment:87 ddrake]:
@@ -1932,16 +3322,38 @@ Replying to [comment:88 rishi]:
 For the record: This confirms the decision to merge an updated [attachment:deps spkg/standard/deps] file in Sage 4.5.2.alpha1.
 
 
+
 ---
 
-Comment by mpatel created at 2010-08-06 02:02:47
+archive/issue_comments_041674.json:
+```json
+{
+    "body": "I'm updating the Author(s) field using the [account name-real name map](http://trac.sagemath.org/sage_trac/wiki/WikiStart#AccountNamesmappedtoRealNames).",
+    "created_at": "2010-08-06T02:02:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41674",
+    "user": "mpatel"
+}
+```
 
 I'm updating the Author(s) field using the [account name-real name map](http://trac.sagemath.org/sage_trac/wiki/WikiStart#AccountNamesmappedtoRealNames).
 
 
+
 ---
 
-Comment by fbissey created at 2010-08-06 09:32:44
+archive/issue_comments_041675.json:
+```json
+{
+    "body": "I noticed that you have mpfr in the dep for lcalc and that you include \nmpfr in the library list in module_list.py for the lcalc extension as well.\nlcalc doesn't currently depend on mpfr or link against it.\nI checked the current spkg and the latest version included in this bug\nand neither does. In spkg-install you have\n\n```\nif [ \"$UNAME\" = \"SunOS\" ]; then\n    LCALC_LIBS=\"-lpari -lmpfr -lgmpxx -lgmp -liberty\"\nelse\n    LCALC_LIBS=\"-lpari -lmpfr -lgmpxx -lgmp\"\nfi \nexport LCALC_LIBS\necho \"Using LCALC_LIBS=$LCALC_LIBS\"\n```\n\nBut LCALC_LIBS is not used anywhere in either the original Makefile\nor the Makefile provided by sage.\nI think it is a remnant from a time where Dave (Kirby) had an extremely\nsimplified Makefile for lcalc and even then it was a case of overlinking.\nIf you want to use mpfr in lcalc you need to export\n\n```\nPREPROCESSOR_DEFINE=-DUSE_MPFR\n```\n\nand on my machine at least lcalc refuse to compile with this.\n\nFrancois",
+    "created_at": "2010-08-06T09:32:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41675",
+    "user": "fbissey"
+}
+```
 
 I noticed that you have mpfr in the dep for lcalc and that you include 
 mpfr in the library list in module_list.py for the lcalc extension as well.
@@ -1974,9 +3386,20 @@ and on my machine at least lcalc refuse to compile with this.
 Francois
 
 
+
 ---
 
-Comment by drkirkby created at 2010-08-06 15:07:20
+archive/issue_comments_041676.json:
+```json
+{
+    "body": "Replying to [comment:93 fbissey]:\n\n> I think it is a remnant from a time where Dave (Kirby) had an extremely\n> simplified Makefile for lcalc and even then it was a case of overlinking.\n> Francois\n\nMy logic for changing the Makefile fell into 3 reasons I think. \n* The original Makefile had a non-portable gcc option -Wa,-W in an attempt to suppress warnings from the assembler. That works with the GNU assembler, but failed with the Sun assembler, as the Sun assembler does not recognise the -W option.   \n* I added -Wall to show the warnings from the code - I think it's good we see what warnings are generated by the compiler, as it is something to look at when getting problems. \n* The original Makefile defined the compiler to be \"gcc\" but if we used $CC, we could use any compiler. \n\nI doubt I would have changed any linking - if I did, it was probably not intentionally. \n\nI have not checked this code when CC is defined to be a compiler other than gcc, but I did fix it to work with any compiler at one point - I hope a regression has not been introduced. \n\nDave",
+    "created_at": "2010-08-06T15:07:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41676",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:93 fbissey]:
 
@@ -1985,9 +3408,9 @@ Replying to [comment:93 fbissey]:
 > Francois
 
 My logic for changing the Makefile fell into 3 reasons I think. 
- * The original Makefile had a non-portable gcc option -Wa,-W in an attempt to suppress warnings from the assembler. That works with the GNU assembler, but failed with the Sun assembler, as the Sun assembler does not recognise the -W option.   
- * I added -Wall to show the warnings from the code - I think it's good we see what warnings are generated by the compiler, as it is something to look at when getting problems. 
- * The original Makefile defined the compiler to be "gcc" but if we used $CC, we could use any compiler. 
+* The original Makefile had a non-portable gcc option -Wa,-W in an attempt to suppress warnings from the assembler. That works with the GNU assembler, but failed with the Sun assembler, as the Sun assembler does not recognise the -W option.   
+* I added -Wall to show the warnings from the code - I think it's good we see what warnings are generated by the compiler, as it is something to look at when getting problems. 
+* The original Makefile defined the compiler to be "gcc" but if we used $CC, we could use any compiler. 
 
 I doubt I would have changed any linking - if I did, it was probably not intentionally. 
 
@@ -1996,9 +3419,20 @@ I have not checked this code when CC is defined to be a compiler other than gcc,
 Dave
 
 
+
 ---
 
-Comment by fbissey created at 2010-08-06 19:06:25
+archive/issue_comments_041677.json:
+```json
+{
+    "body": "Replying to [comment:94 drkirkby]:\n> Replying to [comment:93 fbissey]:\n> \n> > I think it is a remnant from a time where Dave (Kirby) had an extremely\n> > simplified Makefile for lcalc and even then it was a case of overlinking.\n> > Francois\n> \n> My logic for changing the Makefile fell into 3 reasons I think. \n>  * The original Makefile had a non-portable gcc option -Wa,-W in an attempt to suppress warnings from the assembler. That works with the GNU assembler, but failed with the Sun assembler, as the Sun assembler does not recognise the -W option.   \n>  * I added -Wall to show the warnings from the code - I think it's good we see what warnings are generated by the compiler, as it is something to look at when getting problems. \n>  * The original Makefile defined the compiler to be \"gcc\" but if we used $CC, we could use any compiler. \n> \n> I doubt I would have changed any linking - if I did, it was probably not intentionally. \n> \n> I have not checked this code when CC is defined to be a compiler other than gcc, but I did fix it to work with any compiler at one point - I hope a regression has not been introduced. \n> \nHi Dave,\n\nthe makefile needed some sanity put back into it, especially linker wise.\nso that was a job that was needed. I guess my main concern here is:\n\n\n*lcalc depends on mpfr when it shouldn't.\n\n\nThe rest is just my ramblings about there being an unused variable in\nspkg-install - which may lead people to think it is.\n\n\nFrancois",
+    "created_at": "2010-08-06T19:06:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41677",
+    "user": "fbissey"
+}
+```
 
 Replying to [comment:94 drkirkby]:
 > Replying to [comment:93 fbissey]:
@@ -2032,9 +3466,20 @@ spkg-install - which may lead people to think it is.
 Francois
 
 
+
 ---
 
-Comment by rishi created at 2010-08-06 19:42:16
+archive/issue_comments_041678.json:
+```json
+{
+    "body": "This ticket is not about lcalc spkg. Please do not add junk to this ticket. I am replying to the latest closed ticket about the spkg  #9665\n\nReplying to [comment:95 fbissey]:\n> Replying to [comment:94 drkirkby]:\n> > Replying to [comment:93 fbissey]:\n> > \n> > > I think it is a remnant from a time where Dave (Kirby) had an extremely\n> > > simplified Makefile for lcalc and even then it was a case of overlinking.\n> > > Francois\n> > \n> > My logic for changing the Makefile fell into 3 reasons I think. \n> >  * The original Makefile had a non-portable gcc option -Wa,-W in an attempt to suppress warnings from the assembler. That works with the GNU assembler, but failed with the Sun assembler, as the Sun assembler does not recognise the -W option.   \n> >  * I added -Wall to show the warnings from the code - I think it's good we see what warnings are generated by the compiler, as it is something to look at when getting problems. \n> >  * The original Makefile defined the compiler to be \"gcc\" but if we used $CC, we could use any compiler. \n> > \n> > I doubt I would have changed any linking - if I did, it was probably not intentionally. \n> > \n> > I have not checked this code when CC is defined to be a compiler other than gcc, but I did fix it to work with any compiler at one point - I hope a regression has not been introduced. \n> > \n> Hi Dave,\n> \n> the makefile needed some sanity put back into it, especially linker wise.\n> so that was a job that was needed. I guess my main concern here is:\n\n> \n> *lcalc depends on mpfr when it shouldn't.\n\n> \n> The rest is just my ramblings about there being an unused variable in\n> spkg-install - which may lead people to think it is.\n\n> \n> Francois",
+    "created_at": "2010-08-06T19:42:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5396#issuecomment-41678",
+    "user": "rishi"
+}
+```
 
 This ticket is not about lcalc spkg. Please do not add junk to this ticket. I am replying to the latest closed ticket about the spkg  #9665
 

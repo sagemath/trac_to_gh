@@ -1,11 +1,21 @@
 # Issue 8574: Length of a finite word defined by an iterator is broken
 
-Issue created by migration from https://trac.sagemath.org/ticket/8574
-
-Original creator: slabbe
-
-Original creation time: 2010-03-22 09:21:10
-
+archive/issues_008574.json:
+```json
+{
+    "body": "Assignee: slabbe\n\nCC:  abmasse\n\n\n```\n\n\n---------- Forwarded message ----------  \nFrom: Timo Jolivet\nDate: 2010/3/20\nSubject: bug WordMorphism ?\n\n\nUn bug bizarre :\n\nsage: s = WordMorphism('0->0,1->%s'%('1'*100))\nsage: s(\nKeyboardInterrupt\nsage: s = WordMorphism('0->000,1->%s'%('1'*100))\nsage: s('0')\nword: 000\nsage: s('1')\nword: 1111111111111111111111111111111111111111...\nsage: len(s('0'))\n3\nsage: len(s('1'))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n/slabbe_hacked_macbook/<ipython console> in <module>()\nTypeError: an integer is required\n\n\n\nC'est d'autant plus bizarre que le code suivant marche :\n\nsage: len(Word('1'*100))\n100\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8574\n\n",
+    "created_at": "2010-03-22T09:21:10Z",
+    "labels": [
+        "combinatorics",
+        "major",
+        "bug"
+    ],
+    "title": "Length of a finite word defined by an iterator is broken",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8574",
+    "user": "slabbe"
+}
+```
 Assignee: slabbe
 
 CC:  abmasse
@@ -48,10 +58,25 @@ sage: len(Word('1'*100))
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8574
+
+
+
+
 
 ---
 
-Comment by slabbe created at 2010-03-22 09:24:12
+archive/issue_comments_077659.json:
+```json
+{
+    "body": "I copy here my answer to Timo :\n\n\n```\n\n---------- Message transf\u00e9r\u00e9 ----------\nDe : S\u00e9bastien Labb\u00e9\nDate : 22 mars 2010 10:16\nObjet : Re: bug WordMorphism ?\n\u00c0 : Timo Jolivet\n\n\nEn fait, la fonction __len__ teste que la valeur retourn\u00e9e est un\nentier de python plus grand ou \u00e9gal \u00e0 z\u00e9ro. Par exemple, ce n'est pas\nappropri\u00e9 pour les mots infinis. Alors, c'est pourquoi on a cr\u00e9\u00e9 la\nfonction length qui ne fait pas ce test :\n\nsage: w = Word('1')^oo\nsage: len(w)\nTraceback (most recent call last):\n...\nTypeError: an integer is required\nsage: w.length()\n+Infinity\n\n> sage: s = WordMorphism('0->000,1->%s'%('1'*100))\n> sage: s('0')\n> word: 000\n> sage: s('1')\n> word: 1111111111111111111111111111111111111111...\n> sage: len(s('0'))\n> 3\n> sage: len(s('1'))\n> ---------------------------------------------------------------------------\n> TypeError                                 Traceback (most recent call last)\n> /slabbe_hacked_macbook/<ipython console> in <module>()\n> TypeError: an integer is required\n\nDans ton cas, c'est plus bizarre, car le mot s('1') est fini ! En\nfait, le probl\u00e8me c'est que pour les mots d\u00e9finis par it\u00e9rateurs, on\nretourne un entier sage plut\u00f4t qu'un entier python....chose qu'il\nfaudrait possiblement changer.\n\n> C'est d'autant plus bizarre que le code suivant marche :\n>\n> sage: len(Word('1'*100))\n> 100\n\nEn effet, pour les mots d\u00e9finis par un str, on d\u00e9l\u00e8gue la question de\nla longueur \u00e0 python qui retourne un entier python:\n\nsage: s = WordMorphism('0->1,1->%s'%('1'*100))\nsage: type(s('1').length())\n<type 'sage.rings.integer.Integer'>\n\nsage: w = Word('1'*100)\nsage: type(w.length())\n<type 'int'>\n\n\nEn y r\u00e9fl\u00e9chissant, je crois qu'il y aurait une meilleure solution que\nde retourner toujours un entier python pour les mots finis. Il\nfaudrait simplement remplacer la fonction __len__ par une fonction\n_len_ qui effacerait le comportement de la fonction __len__. En Sage,\nce principe est utilis\u00e9 pour d'autres fonctions comme _repr_  par\nexemple.\n\nMerci pour ce rapport de bug,\n\nS\u00e9bastien\n```\n",
+    "created_at": "2010-03-22T09:24:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8574",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8574#issuecomment-77659",
+    "user": "slabbe"
+}
+```
 
 I copy here my answer to Timo :
 
@@ -127,30 +152,76 @@ Sébastien
 
 
 
+
 ---
+
+archive/issue_comments_077660.json:
+```json
+{
+    "body": "Attachment\n\nDepends on #8429.",
+    "created_at": "2010-03-31T21:40:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8574",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8574#issuecomment-77660",
+    "user": "slabbe"
+}
+```
 
 Attachment
 
 Depends on #8429.
 
 
+
 ---
 
-Comment by slabbe created at 2010-03-31 21:42:35
+archive/issue_comments_077661.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-03-31T21:42:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8574",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8574#issuecomment-77661",
+    "user": "slabbe"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by abmasse created at 2010-04-15 20:44:08
+archive/issue_comments_077662.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_info.",
+    "created_at": "2010-04-15T20:44:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8574",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8574#issuecomment-77662",
+    "user": "abmasse"
+}
+```
 
 Changing status from needs_review to needs_info.
 
 
+
 ---
 
-Comment by abmasse created at 2010-04-15 20:44:08
+archive/issue_comments_077663.json:
+```json
+{
+    "body": "Hello, S\u00e9bastien!\n\nStarting reviewing your patch, I noticed another file prefixed with `trac_8574`. Does it mean that you're working on this patch and I should wait before reviewing it?\n\nThank you for the information.",
+    "created_at": "2010-04-15T20:44:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8574",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8574#issuecomment-77663",
+    "user": "abmasse"
+}
+```
 
 Hello, Sébastien!
 
@@ -159,32 +230,78 @@ Starting reviewing your patch, I noticed another file prefixed with `trac_8574`.
 Thank you for the information.
 
 
+
 ---
 
-Comment by slabbe created at 2010-04-16 12:13:14
+archive/issue_comments_077664.json:
+```json
+{
+    "body": "Changing status from needs_info to needs_review.",
+    "created_at": "2010-04-16T12:13:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8574",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8574#issuecomment-77664",
+    "user": "slabbe"
+}
+```
 
 Changing status from needs_info to needs_review.
 
 
+
 ---
 
-Comment by slabbe created at 2010-04-16 12:13:14
+archive/issue_comments_077665.json:
+```json
+{
+    "body": "I was thinking to merge that patch into here. But finally I changed my mind and didn't change the prefix of the patch name in the sage-combinat tree.\n\nHence, only the patch attached here should be considered for the review.",
+    "created_at": "2010-04-16T12:13:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8574",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8574#issuecomment-77665",
+    "user": "slabbe"
+}
+```
 
 I was thinking to merge that patch into here. But finally I changed my mind and didn't change the prefix of the patch name in the sage-combinat tree.
 
 Hence, only the patch attached here should be considered for the review.
 
 
+
 ---
+
+archive/issue_comments_077666.json:
+```json
+{
+    "body": "Attachment\n\nReview -- correct few typos only, apply on top of S\u00e9bastien's patch",
+    "created_at": "2010-04-17T02:34:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8574",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8574#issuecomment-77666",
+    "user": "abmasse"
+}
+```
 
 Attachment
 
 Review -- correct few typos only, apply on top of Sébastien's patch
 
 
+
 ---
 
-Comment by abmasse created at 2010-04-17 02:37:23
+archive/issue_comments_077667.json:
+```json
+{
+    "body": "I just uploaded a small review patch that correct two or three typos from S\u00e9bastien's patch.\n\nI tested it on sage-4.3.5 and all tests passed. The bug reported by T. Jolivet is indeed fixed with a very reasonable solution. I also checked the documentation generated by Sphinx, which looked fine too.\n\nPositive review.",
+    "created_at": "2010-04-17T02:37:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8574",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8574#issuecomment-77667",
+    "user": "abmasse"
+}
+```
 
 I just uploaded a small review patch that correct two or three typos from Sébastien's patch.
 
@@ -193,24 +310,57 @@ I tested it on sage-4.3.5 and all tests passed. The bug reported by T. Jolivet i
 Positive review.
 
 
+
 ---
 
-Comment by abmasse created at 2010-04-17 02:37:23
+archive/issue_comments_077668.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-04-17T02:37:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8574",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8574#issuecomment-77668",
+    "user": "abmasse"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-19 05:15:15
+archive/issue_comments_077669.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-04-19T05:15:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8574",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8574#issuecomment-77669",
+    "user": "jhpalmieri"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-19 05:15:15
+archive/issue_comments_077670.json:
+```json
+{
+    "body": "Merged into 4.4.alpha1:\n- trac_8574-length-sl.patch\n- trac_8574_review-abm.patch",
+    "created_at": "2010-04-19T05:15:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8574",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8574#issuecomment-77670",
+    "user": "jhpalmieri"
+}
+```
 
 Merged into 4.4.alpha1:
- - trac_8574-length-sl.patch
- - trac_8574_review-abm.patch
+- trac_8574-length-sl.patch
+- trac_8574_review-abm.patch

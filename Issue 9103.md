@@ -1,11 +1,21 @@
 # Issue 9103: ATLAS  has modifications to upstream source
 
-Issue created by migration from https://trac.sagemath.org/ticket/9103
-
-Original creator: drkirkby
-
-Original creation time: 2010-05-31 11:22:31
-
+archive/issues_009103.json:
+```json
+{
+    "body": "Assignee: AlexGhitza\n\nI believe the ATLAS package has modifications to the upstream source code, as some files in the 'patches' subdirectory are identical to those in the original source code directory. \n\nFurthermore, ATLAS was apparently updated to the latest upstream source code on February 20th, 2009 (that's what SPKG.txt says), but some of the files in the 'src' directory have modification dates of June 22nd 2009 - some 4 months later. \n\nI don't know for sure who is guilty here, but I've suspicion it might be me, as 'hg log' shows:\n\n\n```\nchangeset:   53:41de1efe8559\nuser:        Robert Miller <rlm@rlmiller.org>\ndate:        Thu Jul 02 14:13:54 2009 -0700\nsummary:     Checked in drkirkby's changes\n\nchangeset:   52:3acaaff52099\nuser:        William Stein <wstein@gmail.com>\ndate:        Tue Jun 02 14:30:03 2009 -0700\nsummary:     fix FAT binary building so only impacts x86 boxes (e.g. not itanium!)\n```\n\n\nSo it looks like I probably screwed up, and Robert did not notice and checked in my changes.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/9103\n\n",
+    "created_at": "2010-05-31T11:22:31Z",
+    "labels": [
+        "algebra",
+        "major",
+        "bug"
+    ],
+    "title": "ATLAS  has modifications to upstream source",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9103",
+    "user": "drkirkby"
+}
+```
 Assignee: AlexGhitza
 
 I believe the ATLAS package has modifications to the upstream source code, as some files in the 'patches' subdirectory are identical to those in the original source code directory. 
@@ -30,30 +40,78 @@ summary:     fix FAT binary building so only impacts x86 boxes (e.g. not itanium
 
 So it looks like I probably screwed up, and Robert did not notice and checked in my changes.  
 
+Issue created by migration from https://trac.sagemath.org/ticket/9103
+
+
+
+
 
 ---
 
-Comment by AlexGhitza created at 2010-09-02 11:00:34
+archive/issue_comments_084595.json:
+```json
+{
+    "body": "Changing assignee from AlexGhitza to tbd.",
+    "created_at": "2010-09-02T11:00:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9103",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9103#issuecomment-84595",
+    "user": "AlexGhitza"
+}
+```
 
 Changing assignee from AlexGhitza to tbd.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2010-09-02 11:00:34
+archive/issue_comments_084596.json:
+```json
+{
+    "body": "Changing component from algebra to packages.",
+    "created_at": "2010-09-02T11:00:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9103",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9103#issuecomment-84596",
+    "user": "AlexGhitza"
+}
+```
 
 Changing component from algebra to packages.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-05-24 12:20:38
+archive/issue_comments_084597.json:
+```json
+{
+    "body": "Should be fixed by #10508.",
+    "created_at": "2013-05-24T12:20:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9103",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9103#issuecomment-84597",
+    "user": "jdemeyer"
+}
+```
 
 Should be fixed by #10508.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-05-24 12:20:38
+archive/issue_comments_084598.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2013-05-24T12:20:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9103",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9103#issuecomment-84598",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: invalid

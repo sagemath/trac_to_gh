@@ -1,11 +1,21 @@
 # Issue 9060: break symmetries in subgraph search
 
-Issue created by migration from https://trac.sagemath.org/ticket/9060
-
-Original creator: ncohen
-
-Original creation time: 2010-05-26 22:37:24
-
+archive/issues_009060.json:
+```json
+{
+    "body": "Assignee: jason, ncohen, rlm\n\nUseless, when looking for a triangle, to test both abc, bca, and cab. The same is true when looking for Cycles, for complete graphs, etc...\n\nThere may be a way to generally deal with those symmetries to improve the speed of subgraph search.\n\nIf not, it is still possible to manually improve it for cycles, complete graphs, and other \"common\" graphs.\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/9060\n\n",
+    "created_at": "2010-05-26T22:37:24Z",
+    "labels": [
+        "graph theory",
+        "major",
+        "enhancement"
+    ],
+    "title": "break symmetries in subgraph search",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9060",
+    "user": "ncohen"
+}
+```
 Assignee: jason, ncohen, rlm
 
 Useless, when looking for a triangle, to test both abc, bca, and cab. The same is true when looking for Cycles, for complete graphs, etc...
@@ -16,9 +26,24 @@ If not, it is still possible to manually improve it for cycles, complete graphs,
 
 Nathann
 
+Issue created by migration from https://trac.sagemath.org/ticket/9060
+
+
+
+
 
 ---
 
-Comment by ncohen created at 2010-06-06 11:01:16
+archive/issue_comments_084060.json:
+```json
+{
+    "body": "Changing status from new to needs_work.",
+    "created_at": "2010-06-06T11:01:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9060",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9060#issuecomment-84060",
+    "user": "ncohen"
+}
+```
 
 Changing status from new to needs_work.

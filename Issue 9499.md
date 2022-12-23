@@ -1,11 +1,21 @@
 # Issue 9499: recovery gracefully from libsingular errors
 
-Issue created by migration from https://trac.sagemath.org/ticket/9499
-
-Original creator: malb
-
-Original creation time: 2010-07-14 16:53:17
-
+archive/issues_009499.json:
+```json
+{
+    "body": "Assignee: was\n\nKeywords: libsingular\n\n\n```\nsage: from sage.libs.singular.function import singular_function\nsage: from sage.libs.singular.function import lib as singular_libary\nsage: singular_lib('triang.lib'\nsage: triangL = singular_function(\"triangL\"\nsage: P.<e,d,c,b,a> = PolynomialRing(QQ,5,order='lex'\nsage: I = sage.rings.ideal.Cyclic(P\nsage: triangL(I\nTraceback (most recent call last)\n..\nRuntimeError: There has been an error in a Singular function.\n\nsage: G = I.groebner_basis(\nsage: triangL(G,attributes={G:{\"isSB\":1}}\n[[e + d + c + b + a, ...]\n\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9499\n\n",
+    "created_at": "2010-07-14T16:53:17Z",
+    "labels": [
+        "interfaces",
+        "major",
+        "bug"
+    ],
+    "title": "recovery gracefully from libsingular errors",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9499",
+    "user": "malb"
+}
+```
 Assignee: was
 
 Keywords: libsingular
@@ -31,17 +41,43 @@ sage: triangL(G,attributes={G:{"isSB":1}}
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/9499
+
+
+
+
 
 ---
 
-Comment by was created at 2010-07-14 20:20:56
+archive/issue_comments_091219.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-07-14T20:20:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9499",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9499#issuecomment-91219",
+    "user": "was"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by was created at 2010-07-14 20:28:29
+archive/issue_comments_091220.json:
+```json
+{
+    "body": "This is an improvement, in that if an error occurs, then after trying *two* more calls to libsingular, the second one seems to partly work, instead of the library being totally broken.  To replicate, apply trac #9500, then do:\n\n\n```\nflat:rings wstein$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: R.<x,y> = QQ[]; S.<a,b> = R.quo(x^2 + y^2); type(a)\n<class 'sage.rings.quotient_ring_element.QuotientRingElement'>\nsage: 1/a\n   ? 2nd module does not lie in the first\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (189, 0))\n| Sage Version 4.4.4, Release Date: 2010-06-23                       |\n| Type notebook() for the GUI, and license() for information.        |\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n\n/Users/wstein/sage/build/sage-4.4.4/devel/sage-main/sage/rings/<ipython console> in <module>()\n\n/Users/wstein/sage/build/sage-4.4.4/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__div__ (sage/structure/element.c:11992)()\n\n/Users/wstein/sage/build/sage-4.4.4/local/lib/python2.6/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:6126)()\n\n/Users/wstein/sage/build/sage-4.4.4/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__div__ (sage/structure/element.c:11973)()\n\n/Users/wstein/sage/build/sage-4.4.4/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.RingElement._div_ (sage/structure/element.c:12046)()\n\n/Users/wstein/sage/build/sage-4.4.4/local/lib/python2.6/site-packages/sage/rings/quotient_ring_element.pyc in _div_(self, right)\n    361         XY = L.lift([R] + B)\n    362         if XY == [0]*len(XY):\n--> 363             raise NotImplementedError\n    364         return P(XY[0])\n    365 \n\nNotImplementedError: \nsage: R.<x,y> = QQ[]; S.<a,b> = R.quo(x^2 + y^2); type(a)\n   ? error occurred in standard.lib::groebner line 850: `parameter def i_par; parameter  list #;  `\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n/Users/wstein/sage/build/sage-4.4.4/devel/sage-main/sage/rings/<ipython console> in <module>()\n\n/Users/wstein/sage/build/sage-4.4.4/local/lib/python2.6/site-packages/sage/structure/category_object.so in sage.structure.category_object.CategoryObject._first_ngens (sage/structure/category_object.c:2992)()\n\n/Users/wstein/sage/build/sage-4.4.4/local/lib/python2.6/site-packages/sage/structure/parent_gens.so in sage.structure.parent_gens.ParentWithGens.gens (sage/structure/parent_gens.c:2707)()\n\n/Users/wstein/sage/build/sage-4.4.4/local/lib/python2.6/site-packages/sage/rings/quotient_ring.pyc in gen(self, i)\n    693             d\n    694         \"\"\"\n--> 695         return self(self.__R.gen(i))\n    696 \n    697 \n\n/Users/wstein/sage/build/sage-4.4.4/local/lib/python2.6/site-packages/sage/rings/quotient_ring.pyc in __call__(self, x, coerce)\n    575             R = self.cover_ring()\n    576             x = R(x)\n--> 577         return quotient_ring_element.QuotientRingElement(self, x)\n    578 \n    579     def _coerce_impl(self, x):\n\n/Users/wstein/sage/build/sage-4.4.4/local/lib/python2.6/site-packages/sage/rings/quotient_ring_element.pyc in __init__(self, parent, rep, reduce)\n    102         self.__rep = rep\n    103         if reduce:\n--> 104             self._reduce_()\n    105 \n    106     def _reduce_(self):\n\n/Users/wstein/sage/build/sage-4.4.4/local/lib/python2.6/site-packages/sage/rings/quotient_ring_element.pyc in _reduce_(self)\n    121         \"\"\"\n    122         I = self.parent().defining_ideal()\n--> 123         self.__rep = I.reduce(self.__rep)\n    124 \n    125     def lift(self):\n\n/Users/wstein/sage/build/sage-4.4.4/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_ideal.pyc in reduce(self, f)\n   2769         \"\"\"\n   2770         try:\n-> 2771             strat = self._groebner_strategy()\n   2772             return strat.normal_form(f)\n   2773         except (TypeError, NotImplementedError, ValueError):\n\n/Users/wstein/sage/build/sage-4.4.4/local/lib/python2.6/site-packages/sage/misc/cachefunc.pyc in __call__(self, *args, **kwds)\n    320             2\n    321          \"\"\"\n--> 322         return self._cachedmethod._instance_call(self._instance, *args, **kwds)\n    323 \n    324     def get_cache(self, *args, **kwds):\n\n/Users/wstein/sage/build/sage-4.4.4/local/lib/python2.6/site-packages/sage/misc/cachefunc.pyc in _instance_call(self, inst, *args, **kwds)\n    464             return cache[key]\n    465         else:\n--> 466             cache[key] = self._cachedfunc.f(inst, *args, **kwds)\n    467             return cache[key]\n    468 \n\n/Users/wstein/sage/build/sage-4.4.4/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_ideal.pyc in _groebner_strategy(self)\n    557         from sage.libs.singular.groebner_strategy import GroebnerStrategy\n    558 \n--> 559         return GroebnerStrategy(MPolynomialIdeal(self.ring(), self.groebner_basis()))\n    560 \n    561     def plot(self, singular=singular_default):\n\n/Users/wstein/sage/build/sage-4.4.4/local/lib/python2.6/site-packages/sage/misc/cachefunc.pyc in __call__(self, *args, **kwds)\n    320             2\n    321          \"\"\"\n--> 322         return self._cachedmethod._instance_call(self._instance, *args, **kwds)\n    323 \n    324     def get_cache(self, *args, **kwds):\n\n/Users/wstein/sage/build/sage-4.4.4/local/lib/python2.6/site-packages/sage/misc/cachefunc.pyc in _instance_call(self, inst, *args, **kwds)\n    464             return cache[key]\n    465         else:\n--> 466             cache[key] = self._cachedfunc.f(inst, *args, **kwds)\n    467             return cache[key]\n    468 \n\n/Users/wstein/sage/build/sage-4.4.4/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_ideal.pyc in groebner_basis(self, algorithm, *args, **kwds)\n   2641         if algorithm is '':\n   2642             try:\n-> 2643                 gb = self._groebner_basis_libsingular(\"groebner\", *args, **kwds)\n   2644             except (TypeError,NameError), msg: # conversion to Singular not supported\n   2645                 try:\n\n/Users/wstein/sage/build/sage-4.4.4/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_ideal.pyc in wrapper(*args, **kwds)\n    367         \"\"\"\n    368         with RedSBContext():\n--> 369             return func(*args, **kwds)\n    370 \n    371     from sage.misc.sageinspect import sage_getsource \n\n/Users/wstein/sage/build/sage-4.4.4/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_ideal.pyc in _groebner_basis_libsingular(self, algorithm, redsb, red_tail)\n   1248             S = slimgb_libsingular(self)\n   1249         elif algorithm == \"groebner\":\n-> 1250             S = groebner(self)\n   1251         else:\n   1252             try:\n\n/Users/wstein/sage/build/sage-4.4.4/local/lib/python2.6/site-packages/sage/libs/singular/function.so in sage.libs.singular.function.SingularFunction.__call__ (sage/libs/singular/function.cpp:9648)()\n\n/Users/wstein/sage/build/sage-4.4.4/local/lib/python2.6/site-packages/sage/libs/singular/function.so in sage.libs.singular.function.call_function (sage/libs/singular/function.cpp:10937)()\n\nRuntimeError: A Singular function call failed.\nsage: R.<x,y> = QQ[]; S.<a,b> = R.quo(x^2 + y^2); type(a)\n   skipping text from `parameter`\n<class 'sage.rings.quotient_ring_element.QuotientRingElement'>\nsage: R.<x,y> = QQ[]; S.<a,b> = R.quo(x^2 + y^2); type(a)\n<class 'sage.rings.quotient_ring_element.QuotientRingElement'>\n```\n",
+    "created_at": "2010-07-14T20:28:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9499",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9499#issuecomment-91220",
+    "user": "was"
+}
+```
 
 This is an improvement, in that if an error occurs, then after trying *two* more calls to libsingular, the second one seems to partly work, instead of the library being totally broken.  To replicate, apply trac #9500, then do:
 
@@ -196,43 +232,111 @@ sage: R.<x,y> = QQ[]; S.<a,b> = R.quo(x^2 + y^2); type(a)
 
 
 
+
 ---
 
-Comment by was created at 2010-07-14 20:28:29
+archive/issue_comments_091221.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-07-14T20:28:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9499",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9499#issuecomment-91221",
+    "user": "was"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by malb created at 2010-07-14 21:08:35
+archive/issue_comments_091222.json:
+```json
+{
+    "body": "The updated patch fixed the problem.",
+    "created_at": "2010-07-14T21:08:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9499",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9499#issuecomment-91222",
+    "user": "malb"
+}
+```
 
 The updated patch fixed the problem.
 
 
+
 ---
 
-Comment by malb created at 2010-07-14 21:08:35
+archive/issue_comments_091223.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-07-14T21:08:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9499",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9499#issuecomment-91223",
+    "user": "malb"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
+
+archive/issue_comments_091224.json:
+```json
+{
+    "body": "Attachment\n\nnext attempt",
+    "created_at": "2010-07-14T22:10:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9499",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9499#issuecomment-91224",
+    "user": "malb"
+}
+```
 
 Attachment
 
 next attempt
 
 
+
 ---
 
-Comment by was created at 2010-07-14 23:06:45
+archive/issue_comments_091225.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-07-14T23:06:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9499",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9499#issuecomment-91225",
+    "user": "was"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mpatel created at 2010-07-20 09:31:35
+archive/issue_comments_091226.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-07-20T09:31:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9499",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9499#issuecomment-91226",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed

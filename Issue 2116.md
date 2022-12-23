@@ -1,44 +1,115 @@
 # Issue 2116: is package installed function
 
-Issue created by migration from https://trac.sagemath.org/ticket/2116
-
-Original creator: jason
-
-Original creation time: 2008-02-08 18:04:57
-
+archive/issues_002116.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nThis implements a an is_package_installed function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2116\n\n",
+    "created_at": "2008-02-08T18:04:57Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "enhancement"
+    ],
+    "title": "is package installed function",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2116",
+    "user": "jason"
+}
+```
 Assignee: mabshoff
 
 This implements a an is_package_installed function.
 
+Issue created by migration from https://trac.sagemath.org/ticket/2116
+
+
+
+
 
 ---
+
+archive/issue_comments_013874.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-02-09T04:37:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2116",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2116#issuecomment-13874",
+    "user": "jason"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by jason created at 2008-02-09 04:37:47
+archive/issue_comments_013875.json:
+```json
+{
+    "body": "I updated the patch to add the function to the appropriate all.py.",
+    "created_at": "2008-02-09T04:37:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2116",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2116#issuecomment-13875",
+    "user": "jason"
+}
+```
 
 I updated the patch to add the function to the appropriate all.py.
 
 
+
 ---
 
-Comment by robertwb created at 2008-02-14 06:32:41
+archive/issue_comments_013876.json:
+```json
+{
+    "body": "Works great for me, even with version numbers.",
+    "created_at": "2008-02-14T06:32:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2116",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2116#issuecomment-13876",
+    "user": "robertwb"
+}
+```
 
 Works great for me, even with version numbers.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-14 09:42:03
+archive/issue_comments_013877.json:
+```json
+{
+    "body": "Merged in Sage 2.10.2.alpha0",
+    "created_at": "2008-02-14T09:42:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2116",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2116#issuecomment-13877",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.2.alpha0
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-14 09:42:03
+archive/issue_comments_013878.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-02-14T09:42:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2116",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2116#issuecomment-13878",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

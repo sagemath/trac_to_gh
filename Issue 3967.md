@@ -1,26 +1,64 @@
 # Issue 3967: Totallyreal "just print" feature added
 
-Issue created by migration from https://trac.sagemath.org/ticket/3967
-
-Original creator: jvoight
-
-Original creation time: 2008-08-27 17:21:54
-
+archive/issues_003967.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  craigcitro\n\nI added a small feature to \"just print\" long lists of fields in totallyreal rather than storing them to memory.  Patch attached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3967\n\n",
+    "created_at": "2008-08-27T17:21:54Z",
+    "labels": [
+        "number theory",
+        "minor",
+        "bug"
+    ],
+    "title": "Totallyreal \"just print\" feature added",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3967",
+    "user": "jvoight"
+}
+```
 Assignee: was
 
 CC:  craigcitro
 
 I added a small feature to "just print" long lists of fields in totallyreal rather than storing them to memory.  Patch attached.
 
+Issue created by migration from https://trac.sagemath.org/ticket/3967
+
+
+
+
 
 ---
+
+archive/issue_comments_028495.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-08-27T17:22:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3967",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3967#issuecomment-28495",
+    "user": "jvoight"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-27 19:10:38
+archive/issue_comments_028496.json:
+```json
+{
+    "body": "Craig,\n\nyou are the canonical person to review this small patch :)\n\nCheers,\n\nMichael",
+    "created_at": "2008-08-27T19:10:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3967",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3967#issuecomment-28496",
+    "user": "mabshoff"
+}
+```
 
 Craig,
 
@@ -31,67 +69,166 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by craigcitro created at 2008-09-20 08:44:20
+archive/issue_comments_028497.json:
+```json
+{
+    "body": "This looks good. I went ahead and re-based this on 3.1.2 with my patch from #4155 applied, since it makes sense to apply that first. \n\nJohn, you should at least glance to make sure I didn't mess anything up rewriting the patch, just for the sake of having a second set of eyes look at it.",
+    "created_at": "2008-09-20T08:44:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3967",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3967#issuecomment-28497",
+    "user": "craigcitro"
+}
+```
 
 This looks good. I went ahead and re-based this on 3.1.2 with my patch from #4155 applied, since it makes sense to apply that first. 
 
 John, you should at least glance to make sure I didn't mess anything up rewriting the patch, just for the sake of having a second set of eyes look at it.
 
 
+
 ---
 
-Comment by jvoight created at 2008-09-20 17:04:30
+archive/issue_comments_028498.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-09-20T17:04:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3967",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3967#issuecomment-28498",
+    "user": "jvoight"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by jvoight created at 2008-09-20 17:04:30
+archive/issue_comments_028499.json:
+```json
+{
+    "body": "Changing assignee from was to jvoight.",
+    "created_at": "2008-09-20T17:04:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3967",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3967#issuecomment-28499",
+    "user": "jvoight"
+}
+```
 
 Changing assignee from was to jvoight.
 
 
+
 ---
 
-Comment by jvoight created at 2008-09-20 17:04:30
+archive/issue_comments_028500.json:
+```json
+{
+    "body": "Yes, all looks well.  I'm reviewing #4155 now.  JV",
+    "created_at": "2008-09-20T17:04:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3967",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3967#issuecomment-28500",
+    "user": "jvoight"
+}
+```
 
 Yes, all looks well.  I'm reviewing #4155 now.  JV
 
 
+
 ---
 
-Comment by jvoight created at 2008-09-20 17:05:22
+archive/issue_comments_028501.json:
+```json
+{
+    "body": "Resolution: worksforme",
+    "created_at": "2008-09-20T17:05:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3967",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3967#issuecomment-28501",
+    "user": "jvoight"
+}
+```
 
 Resolution: worksforme
 
 
+
 ---
 
-Comment by jvoight created at 2008-09-20 17:05:35
+archive/issue_comments_028502.json:
+```json
+{
+    "body": "Changing status from closed to reopened.",
+    "created_at": "2008-09-20T17:05:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3967",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3967#issuecomment-28502",
+    "user": "jvoight"
+}
+```
 
 Changing status from closed to reopened.
 
 
+
 ---
 
-Comment by jvoight created at 2008-09-20 17:05:35
+archive/issue_comments_028503.json:
+```json
+{
+    "body": "Resolution changed from worksforme to ",
+    "created_at": "2008-09-20T17:05:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3967",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3967#issuecomment-28503",
+    "user": "jvoight"
+}
+```
 
 Resolution changed from worksforme to 
 
 
+
 ---
 
-Comment by jvoight created at 2008-09-20 17:06:56
+archive/issue_comments_028504.json:
+```json
+{
+    "body": "Sorry to be such a tool about changing the status of this ticket.  I wasn't sure what to set it to so as to indicate that it is ready for inclusion, once #4155 gets resolved.  JV",
+    "created_at": "2008-09-20T17:06:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3967",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3967#issuecomment-28504",
+    "user": "jvoight"
+}
+```
 
 Sorry to be such a tool about changing the status of this ticket.  I wasn't sure what to set it to so as to indicate that it is ready for inclusion, once #4155 gets resolved.  JV
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-20 20:45:30
+archive/issue_comments_028505.json:
+```json
+{
+    "body": "Hi John,\n\nFYI: the release manager closes a ticket once it is merged/determined to be invalied/etc.\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-20T20:45:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3967",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3967#issuecomment-28505",
+    "user": "mabshoff"
+}
+```
 
 Hi John,
 
@@ -102,9 +239,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-21 18:08:41
+archive/issue_comments_028506.json:
+```json
+{
+    "body": "Craig,\n\nthe rebased patch is broken: Toward the end you do not rename jp to jp_file and hence things do not compile. I will fix this in my tree and do some valgrinding.\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-21T18:08:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3967",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3967#issuecomment-28506",
+    "user": "mabshoff"
+}
+```
 
 Craig,
 
@@ -115,29 +263,75 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by craigcitro created at 2008-09-21 20:20:21
+archive/issue_comments_028507.json:
+```json
+{
+    "body": "Oops ... you were absolutely right, mabshoff. I've fixed it up, and tested it out.",
+    "created_at": "2008-09-21T20:20:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3967",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3967#issuecomment-28507",
+    "user": "craigcitro"
+}
+```
 
 Oops ... you were absolutely right, mabshoff. I've fixed it up, and tested it out.
 
 
+
 ---
 
-Comment by craigcitro created at 2008-09-22 05:28:44
+archive/issue_comments_028508.json:
+```json
+{
+    "body": "Rebased John's patch for 3.1.2, depends on trac #4155 (both patches)",
+    "created_at": "2008-09-22T05:28:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3967",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3967#issuecomment-28508",
+    "user": "craigcitro"
+}
+```
 
 Rebased John's patch for 3.1.2, depends on trac #4155 (both patches)
 
 
+
 ---
+
+archive/issue_comments_028509.json:
+```json
+{
+    "body": "Attachment\n\nMerged trac-3967-rebase.patch in Sage 3.1.3.alpha1",
+    "created_at": "2008-09-23T00:09:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3967",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3967#issuecomment-28509",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 Merged trac-3967-rebase.patch in Sage 3.1.3.alpha1
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-23 00:09:36
+archive/issue_comments_028510.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-09-23T00:09:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3967",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3967#issuecomment-28510",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

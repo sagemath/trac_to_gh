@@ -1,11 +1,21 @@
 # Issue 9316: Spurious (?) "# File not found" error at end of doctests
 
-Issue created by migration from https://trac.sagemath.org/ticket/9316
-
-Original creator: was
-
-Original creation time: 2010-06-23 04:19:18
-
+archive/issues_009316.json:
+```json
+{
+    "body": "Assignee: wjp\n\nCC:  leif\n\nMany people have reported a \"File not found\" error that is reported at the end of \"make test\" when *in fact* a timeout occurred. \n\nThis is caused by some weird code introduced in #7993 (see sage-test):\n\n```\n...\n    s = os.path.join(SAGE_ROOT, 'local', 'bin', 'sage-%s' % cmd) + ' \"%s\"' % F\n    err = os.system(s)\n    # On unix systems, the return value of os.system has the process return\n    # value in the second byte.\n    err = err // 256\n\n    # Check the process exit code that sage-doctest returns\n\n    if err == 1: # process exit code 1: File not found\n        failed.append(sage_test_command(F)+\" # File not found\")\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9316\n\n",
+    "created_at": "2010-06-23T04:19:18Z",
+    "labels": [
+        "doctest coverage",
+        "major",
+        "bug"
+    ],
+    "title": "Spurious (?) \"# File not found\" error at end of doctests",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9316",
+    "user": "was"
+}
+```
 Assignee: wjp
 
 CC:  leif
@@ -29,10 +39,25 @@ This is caused by some weird code introduced in #7993 (see sage-test):
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/9316
+
+
+
+
 
 ---
 
-Comment by cremona created at 2010-06-23 04:23:04
+archive/issue_comments_087783.json:
+```json
+{
+    "body": "Example:\n\n```\n\nsage -t  \"devel/sage/sage/rings/number_field/number_field_rel.py\"\n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\nTraceback (most recent call last):\n  File \"/home/john/sage-4.4.4.alpha1/local/bin/sage-doctest\", line 798, in <module>\n    test_file(argv[1], library_code = library_code)\n  File \"/home/john/sage-4.4.4.alpha1/local/bin/sage-doctest\", line 695, in test_file\n    print \"The doctested process was killed by signal %s\" % (-e)\nTypeError: bad operand type for unary -: 'NoneType'\n         [8319.2 s]\n```\n\nThe reason for the timeout was simply that I suspended my laptop for a couple of hours and then woke it up.  But at the end of the test (I was doing \"make test\" on 4.4.4.alpha1) the error message said\n\n```\n\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/sage/rings/number_field/number_field_rel.py\" # File not found\n```\n",
+    "created_at": "2010-06-23T04:23:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9316",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9316#issuecomment-87783",
+    "user": "cremona"
+}
+```
 
 Example:
 
@@ -62,9 +87,20 @@ The following tests failed:
 
 
 
+
 ---
 
-Comment by drkirkby created at 2010-06-23 05:07:41
+archive/issue_comments_087784.json:
+```json
+{
+    "body": "I agree a timeout can cause this. I tried the patch which is supposed to fix the Mathematica interface, but that timed out after 10,000 seconds with a \"File not found\" message. \n\nHowever, BSD.py is completing well within the time I've set as SAGE_TIMEOUT and SAGE_TIMEOUT_LONG, so I doubt the BSD.py issue was a simple timeout \n\n\n```\ndrkirkby@redstart:~$ echo $SAGE_TIMEOUT_LONG\n10000\ndrkirkby@redstart:~$ echo $SAGE_TIMEOUT     \n1000\n```\n\n\nBut BSD.py is taking 205 seconds\n\n\n```\ndrkirkby@redstart:~/sage-4.4.4.alpha1$ ./sage -t  -long devel/sage/sage/schemes/elliptic_curves/BSD.py\nsage -t -long \"devel/sage/sage/schemes/elliptic_curves/BSD.py\"\n         [205.5 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 205.5 seconds\n```\n\n\nSure BSD.py will take longer if the machine is more heavily loaded, but it would need a **huge** load to make the test take over 10000 seconds. The load would have to go up by a factor of 48! Given it's my own machine, and nobody else uses it, I have a pretty good idea the load would not have risen that much. \n\nMy Blade 1000 does not have a lot of RAM (only 2 GB), so potentially it could swap if it run out of RAM, but I don't believe that was the problem. It certainly does not have any power saving features - that's why I keep it in the garage and use it as a heater in the Winter! That machine does not hybernate! \n\nDave",
+    "created_at": "2010-06-23T05:07:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9316",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9316#issuecomment-87784",
+    "user": "drkirkby"
+}
+```
 
 I agree a timeout can cause this. I tried the patch which is supposed to fix the Mathematica interface, but that timed out after 10,000 seconds with a "File not found" message. 
 
@@ -93,16 +129,27 @@ Total time for all tests: 205.5 seconds
 ```
 
 
-Sure BSD.py will take longer if the machine is more heavily loaded, but it would need a *huge* load to make the test take over 10000 seconds. The load would have to go up by a factor of 48! Given it's my own machine, and nobody else uses it, I have a pretty good idea the load would not have risen that much. 
+Sure BSD.py will take longer if the machine is more heavily loaded, but it would need a **huge** load to make the test take over 10000 seconds. The load would have to go up by a factor of 48! Given it's my own machine, and nobody else uses it, I have a pretty good idea the load would not have risen that much. 
 
 My Blade 1000 does not have a lot of RAM (only 2 GB), so potentially it could swap if it run out of RAM, but I don't believe that was the problem. It certainly does not have any power saving features - that's why I keep it in the garage and use it as a heater in the Winter! That machine does not hybernate! 
 
 Dave
 
 
+
 ---
 
-Comment by wjp created at 2010-06-23 08:32:09
+archive/issue_comments_087785.json:
+```json
+{
+    "body": "This appears to be caused by timeouts not being properly handled by `sage-doctest`. It prints the error message, but then doesn't actually do anything with it. It looks like I completely missed that case when doing #7993. This also explains the strange exception John is seeing. It's reaching code that shouldn't be reached in this case.\n\nIn the patch I'm attaching, I'm making `sage-doctest` return exit code 5 for a time out, and `sage-test` and `sage-ptest` will also interpret that that way.\n\n(Note that this will conflict with #8641, but the conflict is easy to resolve.)",
+    "created_at": "2010-06-23T08:32:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9316",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9316#issuecomment-87785",
+    "user": "wjp"
+}
+```
 
 This appears to be caused by timeouts not being properly handled by `sage-doctest`. It prints the error message, but then doesn't actually do anything with it. It looks like I completely missed that case when doing #7993. This also explains the strange exception John is seeing. It's reaching code that shouldn't be reached in this case.
 
@@ -111,16 +158,38 @@ In the patch I'm attaching, I'm making `sage-doctest` return exit code 5 for a t
 (Note that this will conflict with #8641, but the conflict is easy to resolve.)
 
 
+
 ---
 
-Comment by wjp created at 2010-06-23 08:32:09
+archive/issue_comments_087786.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-06-23T08:32:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9316",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9316#issuecomment-87786",
+    "user": "wjp"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by kcrisman created at 2010-06-23 14:28:21
+archive/issue_comments_087787.json:
+```json
+{
+    "body": "I won't say positive review 100% because someone who knows all the ins and outs should have a quick look at it.    But it works as advertised.  I do wonder if there need to be two separate tests for \n\n```\n\nsage -t  \"devel/sage/sage/calculus/calculus.py\"             \n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\n\t [556.2 s]\n```\n\nor if one could immediately sys.exit(5) instead of having two separate timeout messages?  Or this may be a feature - one for the process, one for the file.",
+    "created_at": "2010-06-23T14:28:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9316",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9316#issuecomment-87787",
+    "user": "kcrisman"
+}
+```
 
 I won't say positive review 100% because someone who knows all the ins and outs should have a quick look at it.    But it works as advertised.  I do wonder if there need to be two separate tests for 
 
@@ -135,51 +204,132 @@ sage -t  "devel/sage/sage/calculus/calculus.py"
 or if one could immediately sys.exit(5) instead of having two separate timeout messages?  Or this may be a feature - one for the process, one for the file.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-06-25 06:38:00
+archive/issue_comments_087788.json:
+```json
+{
+    "body": "I'm still suspicious that the \"File not found\" error I got with BSD.py (#9273)is anything to do with a timeout problem. Why should a test take 205 seconds on one occasion and over 10000 seconds on another?",
+    "created_at": "2010-06-25T06:38:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9316",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9316#issuecomment-87788",
+    "user": "drkirkby"
+}
+```
 
 I'm still suspicious that the "File not found" error I got with BSD.py (#9273)is anything to do with a timeout problem. Why should a test take 205 seconds on one occasion and over 10000 seconds on another?
 
 
+
 ---
 
-Comment by wjp created at 2010-06-25 08:35:16
+archive/issue_comments_087789.json:
+```json
+{
+    "body": "I'd be ok with directly doing a `sys.exit(5)`, I think. Or maybe removing the `print` statements from after the `kill` calls, and only leave the `print` with the `sys.exit(5)` at the end in place.\n\nAnother thing in there that doesn't seem to make much sense is the '`err`' string, which never seems to be set, but still is used in one of the `KeyboardInterrupt` checks.",
+    "created_at": "2010-06-25T08:35:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9316",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9316#issuecomment-87789",
+    "user": "wjp"
+}
+```
 
 I'd be ok with directly doing a `sys.exit(5)`, I think. Or maybe removing the `print` statements from after the `kill` calls, and only leave the `print` with the `sys.exit(5)` at the end in place.
 
 Another thing in there that doesn't seem to make much sense is the '`err`' string, which never seems to be set, but still is used in one of the `KeyboardInterrupt` checks.
 
 
+
 ---
 
-Comment by wjp created at 2010-06-27 11:01:43
+archive/issue_comments_087790.json:
+```json
+{
+    "body": "I submitted a new patch that uses exit code 6 instead of 5, since it turns out 5 is used internally by `sage-ptest`.",
+    "created_at": "2010-06-27T11:01:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9316",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9316#issuecomment-87790",
+    "user": "wjp"
+}
+```
 
 I submitted a new patch that uses exit code 6 instead of 5, since it turns out 5 is used internally by `sage-ptest`.
 
 
+
 ---
+
+archive/issue_comments_087791.json:
+```json
+{
+    "body": "Attachment\n\nrebased after #8641 and #9243",
+    "created_at": "2010-07-06T20:59:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9316",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9316#issuecomment-87791",
+    "user": "wjp"
+}
+```
 
 Attachment
 
 rebased after #8641 and #9243
 
 
+
 ---
+
+archive/issue_comments_087792.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-07-06T21:03:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9316",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9316#issuecomment-87792",
+    "user": "wjp"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by wjp created at 2010-07-06 21:04:00
+archive/issue_comments_087793.json:
+```json
+{
+    "body": "I removed the second print statement so there is no longer a double TIMED OUT message, and rebased the patch to apply after #8641 and #9243.",
+    "created_at": "2010-07-06T21:04:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9316",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9316#issuecomment-87793",
+    "user": "wjp"
+}
+```
 
 I removed the second print statement so there is no longer a double TIMED OUT message, and rebased the patch to apply after #8641 and #9243.
 
 
+
 ---
 
-Comment by mpatel created at 2010-07-07 03:32:52
+archive/issue_comments_087794.json:
+```json
+{
+    "body": "I get\n\n```sh\n$ env SAGE_TIMEOUT=10 ./sage -t devel/sage/sage/rings/number_field/number_field_rel.py \nsage -t  \"devel/sage/sage/rings/number_field/number_field_rel.py\"\n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n\n         [10.2 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/sage/rings/number_field/number_field_rel.py\" # Time out\nTotal time for all tests: 10.2 seconds\n$ echo $?\n64\n```\n  \n\nMaybe we should print a brief message about increasing `SAGE_TIMEOUT` and `SAGE_TIMEOUT_LONG`, if at least one test times out?\n\nTo release manager: Apply only [attachment:scripts9316_timeout_rebased.patch] to 4.5.alpha4 + #8641 + #9243.",
+    "created_at": "2010-07-07T03:32:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9316",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9316#issuecomment-87794",
+    "user": "mpatel"
+}
+```
 
 I get
 
@@ -198,30 +348,64 @@ The following tests failed:
 Total time for all tests: 10.2 seconds
 $ echo $?
 64
-}}}  
+```
+  
 
 Maybe we should print a brief message about increasing `SAGE_TIMEOUT` and `SAGE_TIMEOUT_LONG`, if at least one test times out?
 
 To release manager: Apply only [attachment:scripts9316_timeout_rebased.patch] to 4.5.alpha4 + #8641 + #9243.
 
 
+
 ---
 
-Comment by mpatel created at 2010-07-07 03:32:52
+archive/issue_comments_087795.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-07-07T03:32:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9316",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9316#issuecomment-87795",
+    "user": "mpatel"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mpatel created at 2010-07-07 03:40:25
+archive/issue_comments_087796.json:
+```json
+{
+    "body": "Related tickets: #9224, #9225.  Suggestions are welcome!",
+    "created_at": "2010-07-07T03:40:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9316",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9316#issuecomment-87796",
+    "user": "mpatel"
+}
+```
 
 Related tickets: #9224, #9225.  Suggestions are welcome!
 
 
+
 ---
 
-Comment by drkirkby created at 2010-07-08 11:25:53
+archive/issue_comments_087797.json:
+```json
+{
+    "body": "Replying to [comment:9 mpatel]:\n \n> Maybe we should print a brief message about increasing `SAGE_TIMEOUT` and `SAGE_TIMEOUT_LONG`, if at least one test times out?\n\nThat does seem very sensible, since these options are not well known. They are now documented in #8263, which adds them to the Installation Guide, but I would agree it would be useful to print this. \n\nAlso see #9449 for yet more issues with doctesting, where the results are confusing. I don't know if tests have passed or failed in some cases.",
+    "created_at": "2010-07-08T11:25:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9316",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9316#issuecomment-87797",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:9 mpatel]:
  
@@ -232,15 +416,37 @@ That does seem very sensible, since these options are not well known. They are n
 Also see #9449 for yet more issues with doctesting, where the results are confusing. I don't know if tests have passed or failed in some cases.
 
 
+
 ---
 
-Comment by ddrake created at 2010-07-22 07:59:57
+archive/issue_comments_087798.json:
+```json
+{
+    "body": "Merged attachment:scripts9316_timeout_rebased.patch in 4.5.2.alpha1.",
+    "created_at": "2010-07-22T07:59:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9316",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9316#issuecomment-87798",
+    "user": "ddrake"
+}
+```
 
 Merged attachment:scripts9316_timeout_rebased.patch in 4.5.2.alpha1.
 
 
+
 ---
 
-Comment by ddrake created at 2010-07-22 07:59:57
+archive/issue_comments_087799.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-07-22T07:59:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9316",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9316#issuecomment-87799",
+    "user": "ddrake"
+}
+```
 
 Resolution: fixed

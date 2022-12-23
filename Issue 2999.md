@@ -1,11 +1,21 @@
 # Issue 2999: Some packages don't respect the CC environment variable
 
-Issue created by migration from https://trac.sagemath.org/ticket/2999
-
-Original creator: dfdeshom
-
-Original creation time: 2008-04-22 16:42:08
-
+archive/issues_002999.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nCC:  mjo\n\nPackages which seem to not honor CC environment variable (they use \"gcc\"):\n\n\n```\nflint-1.06.p2\natlas-3.8.1.p1\nf2c-20070816.p0\nsymmetrica-2.0.p2\npolybori-0.3.1.p1\nrubiks-20070912.p5\nzn_poly-0.8.p0\nsage-3.0.rc1\ngap-4.4.10.p7 // guava3.4\ntachyon-0.98beta.p5\npalp-1.1.p1\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2999\n\n",
+    "created_at": "2008-04-22T16:42:08Z",
+    "labels": [
+        "build",
+        "critical",
+        "bug"
+    ],
+    "title": "Some packages don't respect the CC environment variable",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2999",
+    "user": "dfdeshom"
+}
+```
 Assignee: mabshoff
 
 CC:  mjo
@@ -28,10 +38,25 @@ palp-1.1.p1
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2999
+
+
+
+
 
 ---
 
-Comment by PolyBoRi created at 2008-04-22 21:07:20
+archive/issue_comments_020615.json:
+```json
+{
+    "body": "For PolyBoRi see the patch for the custom.py file. Feel free to add additional Variables there\n\nGood Night,\n  Alexander",
+    "created_at": "2008-04-22T21:07:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2999",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2999#issuecomment-20615",
+    "user": "PolyBoRi"
+}
+```
 
 For PolyBoRi see the patch for the custom.py file. Feel free to add additional Variables there
 
@@ -39,35 +64,92 @@ Good Night,
   Alexander
 
 
+
 ---
 
-Comment by PolyBoRi created at 2008-04-22 21:18:19
+archive/issue_comments_020616.json:
+```json
+{
+    "body": "CC/CXX patch",
+    "created_at": "2008-04-22T21:18:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2999",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2999#issuecomment-20616",
+    "user": "PolyBoRi"
+}
+```
 
 CC/CXX patch
 
 
+
 ---
+
+archive/issue_comments_020617.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-04-26T10:45:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2999",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2999#issuecomment-20617",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-26 10:45:37
+archive/issue_comments_020618.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-04-26T10:45:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2999",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2999#issuecomment-20618",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mvngu created at 2009-07-14 07:58:54
+archive/issue_comments_020619.json:
+```json
+{
+    "body": "Ticket #6437 has an updated spkg so that polybori can be built under Solaris.",
+    "created_at": "2009-07-14T07:58:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2999",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2999#issuecomment-20619",
+    "user": "mvngu"
+}
+```
 
 Ticket #6437 has an updated spkg so that polybori can be built under Solaris.
 
 
+
 ---
 
-Comment by ddrake created at 2009-09-16 23:11:27
+archive/issue_comments_020620.json:
+```json
+{
+    "body": "There are other spkgs which also fail to respect CC: from [http://groups.google.com/group/sage-devel/msg/a9192a6b51a74d22 this thread](http://groups.google.com/group/sage-devel/msg/a9192a6b51a74d22 this thread), I see the following spkgs which are not listed above:\n\n> * cliquer-1.2\n>\n> * symmetrica-2.0.p4\n>\n> * ratpoints-2.1.2.p2",
+    "created_at": "2009-09-16T23:11:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2999",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2999#issuecomment-20620",
+    "user": "ddrake"
+}
+```
 
 There are other spkgs which also fail to respect CC: from [http://groups.google.com/group/sage-devel/msg/a9192a6b51a74d22 this thread](http://groups.google.com/group/sage-devel/msg/a9192a6b51a74d22 this thread), I see the following spkgs which are not listed above:
 
@@ -78,130 +160,328 @@ There are other spkgs which also fail to respect CC: from [http://groups.google.
 > * ratpoints-2.1.2.p2
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-16 23:13:25
+archive/issue_comments_020621.json:
+```json
+{
+    "body": "Cliquer should respect the CC environment variable now. See ticket #6681.",
+    "created_at": "2009-09-16T23:13:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2999",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2999#issuecomment-20621",
+    "user": "mvngu"
+}
+```
 
 Cliquer should respect the CC environment variable now. See ticket #6681.
 
 
+
 ---
 
-Comment by mjo created at 2012-02-25 21:05:29
+archive/issue_comments_020622.json:
+```json
+{
+    "body": "The f2c package is fixed at #7027, so I've removed it from the list.",
+    "created_at": "2012-02-25T21:05:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2999",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2999#issuecomment-20622",
+    "user": "mjo"
+}
+```
 
 The f2c package is fixed at #7027, so I've removed it from the list.
 
 
+
 ---
 
-Comment by mjo created at 2012-02-25 21:17:13
+archive/issue_comments_020623.json:
+```json
+{
+    "body": "symmetrica fixed at #10719, so removing that too.",
+    "created_at": "2012-02-25T21:17:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2999",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2999#issuecomment-20623",
+    "user": "mjo"
+}
+```
 
 symmetrica fixed at #10719, so removing that too.
 
 
+
 ---
 
-Comment by mjo created at 2012-02-25 21:19:04
+archive/issue_comments_020624.json:
+```json
+{
+    "body": "flint and zn_poly have their own tickets at #7024 and #12433 respectively, so there's no need to duplicate them here.",
+    "created_at": "2012-02-25T21:19:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2999",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2999#issuecomment-20624",
+    "user": "mjo"
+}
+```
 
 flint and zn_poly have their own tickets at #7024 and #12433 respectively, so there's no need to duplicate them here.
 
 
+
 ---
 
-Comment by mjo created at 2012-02-25 22:33:59
+archive/issue_comments_020625.json:
+```json
+{
+    "body": "Polybori also respects `$CC` now, although I can't pin down the ticket where it went from doesn't-work-at-all to something else.",
+    "created_at": "2012-02-25T22:33:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2999",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2999#issuecomment-20625",
+    "user": "mjo"
+}
+```
 
 Polybori also respects `$CC` now, although I can't pin down the ticket where it went from doesn't-work-at-all to something else.
 
 
+
 ---
 
-Comment by mjo created at 2012-02-25 22:45:41
+archive/issue_comments_020626.json:
+```json
+{
+    "body": "Tachyon should have been fixed by #9379 and #10681. Waiting on #7069 to confirm on Solaris.",
+    "created_at": "2012-02-25T22:45:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2999",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2999#issuecomment-20626",
+    "user": "mjo"
+}
+```
 
 Tachyon should have been fixed by #9379 and #10681. Waiting on #7069 to confirm on Solaris.
 
 
+
 ---
 
-Comment by mjo created at 2012-02-25 22:52:25
+archive/issue_comments_020627.json:
+```json
+{
+    "body": "And gap was fixed at #2575 and #4161...",
+    "created_at": "2012-02-25T22:52:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2999",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2999#issuecomment-20627",
+    "user": "mjo"
+}
+```
 
 And gap was fixed at #2575 and #4161...
 
 
+
 ---
 
-Comment by mjo created at 2012-02-25 22:55:56
+archive/issue_comments_020628.json:
+```json
+{
+    "body": "Rubiks fixed at #7036.",
+    "created_at": "2012-02-25T22:55:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2999",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2999#issuecomment-20628",
+    "user": "mjo"
+}
+```
 
 Rubiks fixed at #7036.
 
 
+
 ---
 
-Comment by mjo created at 2012-02-25 23:16:22
+archive/issue_comments_020629.json:
+```json
+{
+    "body": "Working on palp at #7071.",
+    "created_at": "2012-02-25T23:16:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2999",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2999#issuecomment-20629",
+    "user": "mjo"
+}
+```
 
 Working on palp at #7071.
 
 
+
 ---
 
-Comment by vbraun created at 2012-02-26 19:39:01
+archive/issue_comments_020630.json:
+```json
+{
+    "body": "ATLAS supports CC since atlas-3.8.3.p18.",
+    "created_at": "2012-02-26T19:39:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2999",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2999#issuecomment-20630",
+    "user": "vbraun"
+}
+```
 
 ATLAS supports CC since atlas-3.8.3.p18.
 
 
+
 ---
 
-Comment by mjo created at 2012-02-27 14:07:33
+archive/issue_comments_020631.json:
+```json
+{
+    "body": "Ok, atlas was fixed in #10226 and we have a ticket for the sage library at #12443. I replaced the initial list for review.",
+    "created_at": "2012-02-27T14:07:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2999",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2999#issuecomment-20631",
+    "user": "mjo"
+}
+```
 
 Ok, atlas was fixed in #10226 and we have a ticket for the sage library at #12443. I replaced the initial list for review.
 
 
+
 ---
 
-Comment by mjo created at 2012-02-27 14:07:33
+archive/issue_comments_020632.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2012-02-27T14:07:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2999",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2999#issuecomment-20632",
+    "user": "mjo"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by ohanar created at 2012-02-27 17:55:46
+archive/issue_comments_020633.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2012-02-27T17:55:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2999",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2999#issuecomment-20633",
+    "user": "ohanar"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by ohanar created at 2012-02-27 17:55:46
+archive/issue_comments_020634.json:
+```json
+{
+    "body": "Yup, there are plenty of tickets regarding all of these packages -- some from me with the clang port, some from David Kirby with the Sun CC port.",
+    "created_at": "2012-02-27T17:55:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2999",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2999#issuecomment-20634",
+    "user": "ohanar"
+}
+```
 
 Yup, there are plenty of tickets regarding all of these packages -- some from me with the clang port, some from David Kirby with the Sun CC port.
 
 
+
 ---
 
-Comment by mjo created at 2012-02-27 18:02:42
+archive/issue_comments_020635.json:
+```json
+{
+    "body": "Thanks, I did the same thing with the `$CXX` ticket at #3000.",
+    "created_at": "2012-02-27T18:02:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2999",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2999#issuecomment-20635",
+    "user": "mjo"
+}
+```
 
 Thanks, I did the same thing with the `$CXX` ticket at #3000.
 
 
+
 ---
 
-Comment by AlexanderDreyer created at 2012-02-28 09:06:50
+archive/issue_comments_020636.json:
+```json
+{
+    "body": "Replying to [comment:9 mjo]:\n> Polybori also respects `$CC` now, although I can't pin down the ticket where it went from doesn't-work-at-all to something else.\nThat was #6437 as mentioned above.",
+    "created_at": "2012-02-28T09:06:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2999",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2999#issuecomment-20636",
+    "user": "AlexanderDreyer"
+}
+```
 
 Replying to [comment:9 mjo]:
 > Polybori also respects `$CC` now, although I can't pin down the ticket where it went from doesn't-work-at-all to something else.
 That was #6437 as mentioned above.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-03-04 21:25:51
+archive/issue_comments_020637.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2012-03-04T21:25:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2999",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2999#issuecomment-20637",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: duplicate
 
 
+
 ---
 
-Comment by leif created at 2012-03-17 02:25:11
+archive/issue_comments_020638.json:
+```json
+{
+    "body": "Replying to [comment:16 ohanar]:\n> Yup, there are plenty of tickets regarding all of these packages -- some from me with the clang port, some from David Kirby with the Sun CC port.\n\nAFAIK at least ratpoints doesn't [yet] have its own ticket; I would have left this ticket open as a meta-ticket until all issues (or spkgs) have really been fixed.",
+    "created_at": "2012-03-17T02:25:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2999",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2999#issuecomment-20638",
+    "user": "leif"
+}
+```
 
 Replying to [comment:16 ohanar]:
 > Yup, there are plenty of tickets regarding all of these packages -- some from me with the clang port, some from David Kirby with the Sun CC port.
@@ -209,14 +489,25 @@ Replying to [comment:16 ohanar]:
 AFAIK at least ratpoints doesn't [yet] have its own ticket; I would have left this ticket open as a meta-ticket until all issues (or spkgs) have really been fixed.
 
 
+
 ---
 
-Comment by leif created at 2012-03-17 10:41:21
+archive/issue_comments_020639.json:
+```json
+{
+    "body": "Replying to [comment:11 mjo]:\n> And gap was fixed at #2575 and #4161...\n\nAha.  I knew `CC` was \"intentionally\" unset in GAP's `spkg-install` for a long time (which was annoying anyway), but **now** I still get:\n\n```\ngcc version 4.6.3 (GCC) \n****************************************************\n*WARNING*: Unsetting CC since that tends to break GAP building\n*WARNING*: Unsetting CXX since that tends to break GAP building\nchecking build system type... x86_64-unknown-linux-gnu\nchecking host system type... x86_64-unknown-linux-gnu\nchecking target system type... x86_64-unknown-linux-gnu\nchecking for gcc... gcc\nchecking for C compiler default output file name... \nconfigure: error: C compiler cannot create executables\nSee `config.log' for more details.\nConfiguration of GAP failed.\n\nreal\t0m0.793s\nuser\t0m0.160s\nsys\t0m0.050s\n************************************************************************\nError installing package gap-4.4.12.p6\n************************************************************************\n```\n\n\nSo if there's been an issue with `CC` and `CXX` set, it might have been **fixed upstream** (I believe so), but it **isn't fixed in Sage**.\n\n[The problem here simply is that the \"default\" `gcc`, which is 4.4.3, doesn't understand some of the options I pass in `CFLAGS`.  GCC 4.6.3, specified in `CC`, of course *does* understand them.]",
+    "created_at": "2012-03-17T10:41:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2999",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2999#issuecomment-20639",
+    "user": "leif"
+}
+```
 
 Replying to [comment:11 mjo]:
 > And gap was fixed at #2575 and #4161...
 
-Aha.  I knew `CC` was "intentionally" unset in GAP's `spkg-install` for a long time (which was annoying anyway), but *now* I still get:
+Aha.  I knew `CC` was "intentionally" unset in GAP's `spkg-install` for a long time (which was annoying anyway), but **now** I still get:
 
 ```
 gcc version 4.6.3 (GCC) 
@@ -241,14 +532,25 @@ Error installing package gap-4.4.12.p6
 ```
 
 
-So if there's been an issue with `CC` and `CXX` set, it might have been *fixed upstream* (I believe so), but it *isn't fixed in Sage*.
+So if there's been an issue with `CC` and `CXX` set, it might have been **fixed upstream** (I believe so), but it **isn't fixed in Sage**.
 
-[The problem here simply is that the "default" `gcc`, which is 4.4.3, doesn't understand some of the options I pass in `CFLAGS`.  GCC 4.6.3, specified in `CC`, of course _does_ understand them.]
+[The problem here simply is that the "default" `gcc`, which is 4.4.3, doesn't understand some of the options I pass in `CFLAGS`.  GCC 4.6.3, specified in `CC`, of course *does* understand them.]
+
 
 
 ---
 
-Comment by leif created at 2012-03-17 15:02:52
+archive/issue_comments_020640.json:
+```json
+{
+    "body": "Replying to [comment:20 leif]:\n> Replying to [comment:16 ohanar]:\n> > Yup, there are plenty of tickets regarding all of these packages -- some from me with the clang port, some from David Kirby with the Sun CC port.\n> \n> AFAIK at least ratpoints doesn't [yet] have its own ticket [...]\n\nThis (ratpoints) is now #12682 (**needing review**).",
+    "created_at": "2012-03-17T15:02:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2999",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2999#issuecomment-20640",
+    "user": "leif"
+}
+```
 
 Replying to [comment:20 leif]:
 > Replying to [comment:16 ohanar]:
@@ -256,4 +558,4 @@ Replying to [comment:20 leif]:
 > 
 > AFAIK at least ratpoints doesn't [yet] have its own ticket [...]
 
-This (ratpoints) is now #12682 (*needing review*).
+This (ratpoints) is now #12682 (**needing review**).

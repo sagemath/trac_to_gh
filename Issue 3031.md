@@ -1,11 +1,21 @@
 # Issue 3031: [with patch] Add zeta_function method for schemes
 
-Issue created by migration from https://trac.sagemath.org/ticket/3031
-
-Original creator: kedlaya
-
-Original creation time: 2008-04-26 15:42:49
-
+archive/issues_003031.json:
+```json
+{
+    "body": "Assignee: wstein\n\nCC:  kedlaya\n\nKeywords: zeta function, schemes, finite fields\n\nThe attached patch (built against 3.0) adds a zeta_function method to the class of schemes over finite fields. It is meant to be a default procedure, to be overridden by something more sensible for particular classes of schemes (e.g., elliptic and hyperelliptic curves).\n\nZeta functions are currently only enabled over prime fields, but it will be trivial to fix that once coercion between nonprime finite fields is supported.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3031\n\n",
+    "created_at": "2008-04-26T15:42:49Z",
+    "labels": [
+        "algebraic geometry",
+        "major",
+        "enhancement"
+    ],
+    "title": "[with patch] Add zeta_function method for schemes",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3031",
+    "user": "kedlaya"
+}
+```
 Assignee: wstein
 
 CC:  kedlaya
@@ -16,41 +26,115 @@ The attached patch (built against 3.0) adds a zeta_function method to the class 
 
 Zeta functions are currently only enabled over prime fields, but it will be trivial to fix that once coercion between nonprime finite fields is supported.
 
+Issue created by migration from https://trac.sagemath.org/ticket/3031
+
+
+
+
 
 ---
+
+archive/issue_comments_020860.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-04-26T15:43:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3031",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3031#issuecomment-20860",
+    "user": "kedlaya"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_020861.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-04-27T00:52:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3031",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3031#issuecomment-20861",
+    "user": "craigcitro"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by craigcitro created at 2008-04-27 00:53:30
+archive/issue_comments_020862.json:
+```json
+{
+    "body": "Looks good. Added a patch with a few additional doctests, killed some long lines, and fixed one tiny tiny bug: the code was `return`ing exceptions, instead of `raise`ing them. Merge both patches.",
+    "created_at": "2008-04-27T00:53:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3031",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3031#issuecomment-20862",
+    "user": "craigcitro"
+}
+```
 
 Looks good. Added a patch with a few additional doctests, killed some long lines, and fixed one tiny tiny bug: the code was `return`ing exceptions, instead of `raise`ing them. Merge both patches.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-27 01:25:59
+archive/issue_comments_020863.json:
+```json
+{
+    "body": "Merged both patches in Sage 3.0.1.alpha1",
+    "created_at": "2008-04-27T01:25:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3031",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3031#issuecomment-20863",
+    "user": "mabshoff"
+}
+```
 
 Merged both patches in Sage 3.0.1.alpha1
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-27 01:25:59
+archive/issue_comments_020864.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-04-27T01:25:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3031",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3031#issuecomment-20864",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by cremona created at 2008-04-27 20:25:34
+archive/issue_comments_020865.json:
+```json
+{
+    "body": "I have taken a look at the code.  Some tweaking will be needed to make\nit sensibly compatible with the existing code for point counting of\nelliptic curves.  There, the function cardinality() takes a parameter\nextension_degree with default 1, while you do a base change to get the\ncardinality over extensions.  Secondly, I think having a cardinality()\nmethod is better than calling a rational_points() functioI have taken\na look at the code.  Some tweaking will be needed to make it sensibly\ncompatible with the existing code for point counting of elliptic\ncurves.  There, the function cardinality() takes a n and then taking\nthe len() of the result, since there is little point in creating a\nlist of all the rational points at all if what one needs is their\nnumber.",
+    "created_at": "2008-04-27T20:25:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3031",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3031#issuecomment-20865",
+    "user": "cremona"
+}
+```
 
 I have taken a look at the code.  Some tweaking will be needed to make
 it sensibly compatible with the existing code for point counting of
@@ -66,9 +150,20 @@ list of all the rational points at all if what one needs is their
 number.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-28 02:32:31
+archive/issue_comments_020866.json:
+```json
+{
+    "body": "As various people have pointed out there are various problems here. Hence it will be reopened and I will revert the two applied patches.\n\nCheers,\n\nMichael",
+    "created_at": "2008-04-28T02:32:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3031",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3031#issuecomment-20866",
+    "user": "mabshoff"
+}
+```
 
 As various people have pointed out there are various problems here. Hence it will be reopened and I will revert the two applied patches.
 
@@ -77,50 +172,129 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-28 02:32:31
+archive/issue_comments_020867.json:
+```json
+{
+    "body": "Resolution changed from fixed to ",
+    "created_at": "2008-04-28T02:32:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3031",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3031#issuecomment-20867",
+    "user": "mabshoff"
+}
+```
 
 Resolution changed from fixed to 
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-28 02:32:31
+archive/issue_comments_020868.json:
+```json
+{
+    "body": "Changing status from closed to reopened.",
+    "created_at": "2008-04-28T02:32:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3031",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3031#issuecomment-20868",
+    "user": "mabshoff"
+}
+```
 
 Changing status from closed to reopened.
 
 
+
 ---
+
+archive/issue_comments_020869.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-04-28T03:35:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3031",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3031#issuecomment-20869",
+    "user": "craigcitro"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by craigcitro created at 2008-04-28 03:36:13
+archive/issue_comments_020870.json:
+```json
+{
+    "body": "ncalexan brought up the good point that maybe some users will expect a rational function from zeta_function. After some discussion, it's been renamed to zeta_series. \n\nI also fixed about 10 occurrences of \"the the\" in sage.",
+    "created_at": "2008-04-28T03:36:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3031",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3031#issuecomment-20870",
+    "user": "craigcitro"
+}
+```
 
 ncalexan brought up the good point that maybe some users will expect a rational function from zeta_function. After some discussion, it's been renamed to zeta_series. 
 
 I also fixed about 10 occurrences of "the the" in sage.
 
 
+
 ---
 
-Comment by ncalexan created at 2008-04-28 05:09:48
+archive/issue_comments_020871.json:
+```json
+{
+    "body": "I prefer the name zeta_series and hope that zeta_function (Returning a rational function!) will be implemented in the near future.",
+    "created_at": "2008-04-28T05:09:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3031",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3031#issuecomment-20871",
+    "user": "ncalexan"
+}
+```
 
 I prefer the name zeta_series and hope that zeta_function (Returning a rational function!) will be implemented in the near future.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-29 00:04:45
+archive/issue_comments_020872.json:
+```json
+{
+    "body": "Remerged the previously reverted patches and merged trac-3031-pt3.patch in Sage 3.0.1.alpha1",
+    "created_at": "2008-04-29T00:04:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3031",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3031#issuecomment-20872",
+    "user": "mabshoff"
+}
+```
 
 Remerged the previously reverted patches and merged trac-3031-pt3.patch in Sage 3.0.1.alpha1
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-29 00:04:45
+archive/issue_comments_020873.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-04-29T00:04:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3031",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3031#issuecomment-20873",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

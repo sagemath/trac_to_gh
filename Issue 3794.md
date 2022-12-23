@@ -1,61 +1,134 @@
 # Issue 3794: [with preliminary patch, needs documentation] Create eigen functions for matrices
 
-Issue created by migration from https://trac.sagemath.org/ticket/3794
-
-Original creator: jason
-
-Original creation time: 2008-08-09 14:40:16
-
+archive/issues_003794.json:
+```json
+{
+    "body": "Assignee: was\n\nMake the following functions:\n\n* eigenvalues\n* eigenvectors_left, eigenvectors_right\n* eigenmatrix_left, eigenmatrix_right\n* eigenspaces_left, eigenspaces_right\n\n(with the appropriate left_* and right_* aliases)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3794\n\n",
+    "created_at": "2008-08-09T14:40:16Z",
+    "labels": [
+        "linear algebra",
+        "major",
+        "enhancement"
+    ],
+    "title": "[with preliminary patch, needs documentation] Create eigen functions for matrices",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3794",
+    "user": "jason"
+}
+```
 Assignee: was
 
 Make the following functions:
 
-  * eigenvalues
-  * eigenvectors_left, eigenvectors_right
-  * eigenmatrix_left, eigenmatrix_right
-  * eigenspaces_left, eigenspaces_right
+* eigenvalues
+* eigenvectors_left, eigenvectors_right
+* eigenmatrix_left, eigenmatrix_right
+* eigenspaces_left, eigenspaces_right
 
 (with the appropriate left_* and right_* aliases)
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3794
+
+
+
+
 
 ---
 
-Comment by jason created at 2008-08-09 14:44:00
+archive/issue_comments_026975.json:
+```json
+{
+    "body": "The patch up now adds the functions.  I'm finishing the doctests and doing any last minute polishing of the functions.",
+    "created_at": "2008-08-09T14:44:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3794#issuecomment-26975",
+    "user": "jason"
+}
+```
 
 The patch up now adds the functions.  I'm finishing the doctests and doing any last minute polishing of the functions.
 
 
+
 ---
+
+archive/issue_comments_026976.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-08-10T03:57:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3794#issuecomment-26976",
+    "user": "jason"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by jason created at 2008-08-10 04:02:14
+archive/issue_comments_026977.json:
+```json
+{
+    "body": "This depends on #3654 and #3757",
+    "created_at": "2008-08-10T04:02:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3794#issuecomment-26977",
+    "user": "jason"
+}
+```
 
 This depends on #3654 and #3757
 
 
+
 ---
 
-Comment by cremona created at 2008-08-10 11:30:33
+archive/issue_comments_026978.json:
+```json
+{
+    "body": "The patch applies cleanly to 3.1.alpha0.  After also applying the patches at #3757, all doctests in sage.matrix pass.\n\nI'm happy with the code but have some queries about the documentation mainly:\n\n1. In the docstrings for `eigenspaces_left()` and `eigenspaces_right()`, the sentence \"If the eigenvalue is a root of a polynomial, then the algebraic multiplicity is for each root separately.\" is rather incomprehensible.  Do you mean something more like: \"If the eigenvalues are given symbolically, as roots of an irreducible factor of the characteristic polynomial, then the algebraic multiplicity returned is the multiplicity of each conjugate eigenvalue.\"\n\n2. In the docstring for eigenvalues(self), the sentence \"If the eigenvalues are roots of polynomials in CC, then QQbar elements are returned that represent each separate root.\" perhaps the \"CC\" should be \"QQ\"?\n\n3. I think it is brilliant that for matrices over QQ the eigenvalues are returned exactly in QQbar.  But I think this will confuse a lot of users who are not pure mathematicians.  Is there not an easier way of forcing eigenvalue/vector computations to be done over RR or CC?  (Apart from coercing the original matrix to be defined over one of thoswe fields.)  In any case, a docstring example showing how to see the eigenvalues as \"ordinary\" real or complex numbers might be welcome.\n\n4. The eigenmatrix examples left me wondering what would happen for non-diagonalizable matrices.  This should be explained, with examples.",
+    "created_at": "2008-08-10T11:30:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3794#issuecomment-26978",
+    "user": "cremona"
+}
+```
 
 The patch applies cleanly to 3.1.alpha0.  After also applying the patches at #3757, all doctests in sage.matrix pass.
 
 I'm happy with the code but have some queries about the documentation mainly:
 
-    1. In the docstrings for `eigenspaces_left()` and `eigenspaces_right()`, the sentence "If the eigenvalue is a root of a polynomial, then the algebraic multiplicity is for each root separately." is rather incomprehensible.  Do you mean something more like: "If the eigenvalues are given symbolically, as roots of an irreducible factor of the characteristic polynomial, then the algebraic multiplicity returned is the multiplicity of each conjugate eigenvalue."
+1. In the docstrings for `eigenspaces_left()` and `eigenspaces_right()`, the sentence "If the eigenvalue is a root of a polynomial, then the algebraic multiplicity is for each root separately." is rather incomprehensible.  Do you mean something more like: "If the eigenvalues are given symbolically, as roots of an irreducible factor of the characteristic polynomial, then the algebraic multiplicity returned is the multiplicity of each conjugate eigenvalue."
 
-    2. In the docstring for eigenvalues(self), the sentence "If the eigenvalues are roots of polynomials in CC, then QQbar elements are returned that represent each separate root." perhaps the "CC" should be "QQ"?
+2. In the docstring for eigenvalues(self), the sentence "If the eigenvalues are roots of polynomials in CC, then QQbar elements are returned that represent each separate root." perhaps the "CC" should be "QQ"?
 
-    3. I think it is brilliant that for matrices over QQ the eigenvalues are returned exactly in QQbar.  But I think this will confuse a lot of users who are not pure mathematicians.  Is there not an easier way of forcing eigenvalue/vector computations to be done over RR or CC?  (Apart from coercing the original matrix to be defined over one of thoswe fields.)  In any case, a docstring example showing how to see the eigenvalues as "ordinary" real or complex numbers might be welcome.
+3. I think it is brilliant that for matrices over QQ the eigenvalues are returned exactly in QQbar.  But I think this will confuse a lot of users who are not pure mathematicians.  Is there not an easier way of forcing eigenvalue/vector computations to be done over RR or CC?  (Apart from coercing the original matrix to be defined over one of thoswe fields.)  In any case, a docstring example showing how to see the eigenvalues as "ordinary" real or complex numbers might be welcome.
 
-    4. The eigenmatrix examples left me wondering what would happen for non-diagonalizable matrices.  This should be explained, with examples.
+4. The eigenmatrix examples left me wondering what would happen for non-diagonalizable matrices.  This should be explained, with examples.
+
 
 
 ---
+
+archive/issue_comments_026979.json:
+```json
+{
+    "body": "Attachment\n\nI've uploaded an eigenfunctions-2.patch, to be applied on top of the eigenfunctions.patch, which addresses cremona's comments.\n\nResponse to cremona's comments:\n\n1. Change made.  Thanks.\n\n2. Change made.  Thanks.\n\n3. The computations could be done over RR and CC matrices, but a warning is raised since numerical error will most likely mean that the results will be junk.  The best way to approach something like this, I think, is to convert your matrix to RDF or CDF and use the numerical functions (these are also due to be overhauled and switched to a numpy backend).  The other way of doing this would be to convert from QQbar to CC, but that conversion is only enabled in 3.1 or later.  We could put in a one-line example: `[RR(eig) for eig in a.eigenvalues()]`, but not having 3.1, I can't test that very well.  If this is still an issue, I will put that one-line patch in after 3.1 comes out.\n\n4. Doctest and explanation added.\n\nThanks for your comments and review!",
+    "created_at": "2008-08-12T02:40:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3794#issuecomment-26979",
+    "user": "jason"
+}
+```
 
 Attachment
 
@@ -74,16 +147,38 @@ Response to cremona's comments:
 Thanks for your comments and review!
 
 
+
 ---
 
-Comment by cremona created at 2008-08-12 10:06:38
+archive/issue_comments_026980.json:
+```json
+{
+    "body": "I'm happy with these responses.  I applied both patches to a fresh clone of 3.1.alpha1 with no trouble, and the doctests all pass.  This can go ahead in my opinion.",
+    "created_at": "2008-08-12T10:06:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3794#issuecomment-26980",
+    "user": "cremona"
+}
+```
 
 I'm happy with these responses.  I applied both patches to a fresh clone of 3.1.alpha1 with no trouble, and the doctests all pass.  This can go ahead in my opinion.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-13 00:59:30
+archive/issue_comments_026981.json:
+```json
+{
+    "body": "Oops:\n\n```\nsage -t -long devel/doc/tut/tut.tex\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.alpha2/tmp/tut.py\", line 1853:\n    : g.eigenspaces()\nExpected:\n    [\n    (4, Vector space of degree 2 and dimension 1 over Finite Field of size 7\n    User basis matrix:\n    [1 5]),\n    (2, Vector space of degree 2 and dimension 1 over Finite Field of size 7\n    User basis matrix:\n    [1 1])\n    ]\nGot:\n    [(4, Vector space of degree 2 and dimension 1 over Finite Field of size 7\n    User basis matrix:\n    [1 5]), (2, Vector space of degree 2 and dimension 1 over Finite Field of size 7\n    User basis matrix:\n    [1 1])]\n**********************************************************************\n1 items had failures:\n   1 of   5 in __main__.example_85\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.1.alpha2/tmp/.doctest_tut.py\n\n         [21.1 s]\nsage -t -long devel/doc/const/const.tex\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.alpha2/tmp/const.py\", line 1543:\n    : A.eigenspaces(even_if_inexact=True) # random output\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.alpha2/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_47[6]>\", line 1, in <module>\n        print \"ignore this\";  A.eigenspaces(even_if_inexact=True) # random output###line 1543:\n    : A.eigenspaces(even_if_inexact=True) # random output\n      File \"matrix2.pyx\", line 2433, in sage.matrix.matrix2.Matrix.eigenspaces (sage/matrix/matrix2.c:14504)\n    AttributeError: 'module' object has no attribute 'deprecated'\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_47\n***Test Failed*** 1 failures.\n```\n",
+    "created_at": "2008-08-13T00:59:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3794#issuecomment-26981",
+    "user": "mabshoff"
+}
+```
 
 Oops:
 
@@ -135,45 +230,113 @@ Exception raised:
 
 
 
+
 ---
 
-Comment by jason created at 2008-08-13 13:28:26
+archive/issue_comments_026982.json:
+```json
+{
+    "body": "Thanks.  I kept testing the matrix/* directory.  I'll fix these momentarily and post a patch.\n\nHow do I doctest just the tutorial?  Right now, I'm running `make test`, and thankfully the documentation tests are near the beginning.",
+    "created_at": "2008-08-13T13:28:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3794#issuecomment-26982",
+    "user": "jason"
+}
+```
 
 Thanks.  I kept testing the matrix/* directory.  I'll fix these momentarily and post a patch.
 
 How do I doctest just the tutorial?  Right now, I'm running `make test`, and thankfully the documentation tests are near the beginning.
 
 
+
 ---
 
-Comment by jason created at 2008-08-13 14:58:58
+archive/issue_comments_026983.json:
+```json
+{
+    "body": "Both bugs were small errors in the functions, so yeah for doctests.\n\nAttached are two patches.  eigenfunctions-3.patch is to be applied on top of the eigenfunctions-2.patch.  The eigenfunctions-doc.patch changes some of the documentation to talk about the new functions and should be applied to the doc repository.",
+    "created_at": "2008-08-13T14:58:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3794#issuecomment-26983",
+    "user": "jason"
+}
+```
 
 Both bugs were small errors in the functions, so yeah for doctests.
 
 Attached are two patches.  eigenfunctions-3.patch is to be applied on top of the eigenfunctions-2.patch.  The eigenfunctions-doc.patch changes some of the documentation to talk about the new functions and should be applied to the doc repository.
 
 
+
 ---
+
+archive/issue_comments_026984.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-08-13T14:59:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3794#issuecomment-26984",
+    "user": "jason"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by cremona created at 2008-08-23 17:08:09
+archive/issue_comments_026985.json:
+```json
+{
+    "body": "This looks fine to me.",
+    "created_at": "2008-08-23T17:08:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3794#issuecomment-26985",
+    "user": "cremona"
+}
+```
 
 This looks fine to me.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-25 22:07:32
+archive/issue_comments_026986.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-08-25T22:07:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3794#issuecomment-26986",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-25 22:07:32
+archive/issue_comments_026987.json:
+```json
+{
+    "body": "Merged all four patches in Sage 3.1.2.alpha1",
+    "created_at": "2008-08-25T22:07:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3794",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3794#issuecomment-26987",
+    "user": "mabshoff"
+}
+```
 
 Merged all four patches in Sage 3.1.2.alpha1

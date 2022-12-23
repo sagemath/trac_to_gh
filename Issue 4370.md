@@ -1,11 +1,21 @@
 # Issue 4370: Add ability to clone the doc repository
 
-Issue created by migration from https://trac.sagemath.org/ticket/4370
-
-Original creator: cremona
-
-Original creation time: 2008-10-26 13:25:22
-
+archive/issues_004370.json:
+```json
+{
+    "body": "Assignee: tba\n\nIt would be very useful to be able to clone the documentation repository as well as the source repo.  As Minh Van Nguyen said:\n\n```\nIs there a corresponding command or process that I can use to clone the\ndoc-main repo as well?\n\nWhenever I review the official documentation that's shipped with each\nSage release, I would go into\n\n<sage-home>/devel/doc-main\n\nand then review the documentation from there. If I'm reviewing someone's\npatch to any file in the latter directory, I would not clone doc-main\n(since I don't yet know how to do that). Instead, I would go ahead with\napplying the patch and then do more review of the patch. At this point,\nat least one of two things can happen:\n\n[1] If the patch gets a positive review, then all is fine and good.\n\n[2] However, in case there's something wrong with the patched file and I\nwant to un-apply the patch, I would do this:\n\nsage: hg_doc.revert()\n\nThis command reverts back to the stage at which the file in question is\nunpatched.\n\nAnother possibility is for me to copy a source distro to more than one\ndirectory, and then build (and test) the distro from those different\ndirectories. That way, I would have a copy of Sage that I can use and\nwith which I won't apply any documentation patches. And I would also\nhave another copy of Sage for applying documentation patches. Building\none copy of a source distro usually takes a _very_ long time on each\nmachine that I have access to --- and running all standard tests further\nadd to my waiting time. As you can imagine, repeating the build and test\nprocesses on the same machine for another copy of the same source distro\nwould further add to the waiting time. (Man, I can't wait to work on\nSage ;-)\n```\n\nand as mabshoff replied:\n\n```\nit is fairly simple to add a clone command for the doc repo. If you\nwant it just open a ticket and someone will take care of it. You can\neven try yourself - just look at local/bin/sage-clone and ignore\nnearly everything toward the end since that deals with build file\nissues.\n```\n\n\nI think this will encourage people to add / improce the existing docs and to review enhancements of the docs.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4370\n\n",
+    "created_at": "2008-10-26T13:25:22Z",
+    "labels": [
+        "documentation",
+        "major",
+        "enhancement"
+    ],
+    "title": "Add ability to clone the doc repository",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4370",
+    "user": "cremona"
+}
+```
 Assignee: tba
 
 It would be very useful to be able to clone the documentation repository as well as the source repo.  As Minh Van Nguyen said:
@@ -62,10 +72,25 @@ issues.
 I think this will encourage people to add / improce the existing docs and to review enhancements of the docs.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4370
+
+
+
+
 
 ---
 
-Comment by mvngu created at 2008-10-26 23:57:49
+archive/issue_comments_032109.json:
+```json
+{
+    "body": "Replying to [ticket:4370 cremona]:\n> It would be very useful to be able to clone the documentation repository as well as the source repo.\n\n\nIndeed.\n\n\n+1 for your comment\n\n\n\n\n> and as mabshoff replied:\n\n```\nit is fairly simple to add a clone command for the doc repo. If you\nwant it just open a ticket and someone will take care of it. You can\neven try yourself - just look at local/bin/sage-clone and ignore\nnearly everything toward the end since that deals with build file\nissues.\n```\n\n> \n> I think this will encourage people to add / improce the existing docs and to review enhancements of the docs.\n\n\nI'll try to figure out how to implement the suggested clone command. Since I often work with the doc-main directory tree, this is more for my personal benefit. Of course, suggestions are always welcome.",
+    "created_at": "2008-10-26T23:57:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4370",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4370#issuecomment-32109",
+    "user": "mvngu"
+}
+```
 
 Replying to [ticket:4370 cremona]:
 > It would be very useful to be able to clone the documentation repository as well as the source repo.
@@ -96,67 +121,168 @@ issues.
 I'll try to figure out how to implement the suggested clone command. Since I often work with the doc-main directory tree, this is more for my personal benefit. Of course, suggestions are always welcome.
 
 
+
 ---
 
-Comment by mvngu created at 2008-10-26 23:57:49
+archive/issue_comments_032110.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-10-26T23:57:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4370",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4370#issuecomment-32110",
+    "user": "mvngu"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mvngu created at 2008-10-26 23:57:49
+archive/issue_comments_032111.json:
+```json
+{
+    "body": "Changing assignee from tba to mvngu.",
+    "created_at": "2008-10-26T23:57:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4370",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4370#issuecomment-32111",
+    "user": "mvngu"
+}
+```
 
 Changing assignee from tba to mvngu.
 
 
+
 ---
 
-Comment by mvngu created at 2008-10-29 08:13:49
+archive/issue_comments_032112.json:
+```json
+{
+    "body": "Changing status from assigned to new.",
+    "created_at": "2008-10-29T08:13:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4370",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4370#issuecomment-32112",
+    "user": "mvngu"
+}
+```
 
 Changing status from assigned to new.
 
 
+
 ---
 
-Comment by mvngu created at 2008-10-29 08:13:49
+archive/issue_comments_032113.json:
+```json
+{
+    "body": "Changing assignee from mvngu to tba.",
+    "created_at": "2008-10-29T08:13:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4370",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4370#issuecomment-32113",
+    "user": "mvngu"
+}
+```
 
 Changing assignee from mvngu to tba.
 
 
+
 ---
 
-Comment by GeorgSWeber created at 2008-11-02 14:31:58
+archive/issue_comments_032114.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-11-02T14:31:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4370",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4370#issuecomment-32114",
+    "user": "GeorgSWeber"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by GeorgSWeber created at 2008-11-02 14:31:58
+archive/issue_comments_032115.json:
+```json
+{
+    "body": "Hmph,\n\nthat is a bit more work than I expected. I got \"sage -clonedoc\", \"sage -bdoc\" and \"sage -branchdoc\" already to work fine. However, obviously there are some fixes needed to get the documentation for 3.2.alpha2 texing (unescaped # in at least two different new patches). I'll see to that in another ticket. Next comes the update to hg.py so that hg_doc works (again). There would be documentation fixes needed, too (in the programming guide), but that is probably best yet another ticket.",
+    "created_at": "2008-11-02T14:31:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4370",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4370#issuecomment-32115",
+    "user": "GeorgSWeber"
+}
+```
 
 Hmph,
 
 that is a bit more work than I expected. I got "sage -clonedoc", "sage -bdoc" and "sage -branchdoc" already to work fine. However, obviously there are some fixes needed to get the documentation for 3.2.alpha2 texing (unescaped # in at least two different new patches). I'll see to that in another ticket. Next comes the update to hg.py so that hg_doc works (again). There would be documentation fixes needed, too (in the programming guide), but that is probably best yet another ticket.
 
 
+
 ---
 
-Comment by GeorgSWeber created at 2008-11-02 14:31:58
+archive/issue_comments_032116.json:
+```json
+{
+    "body": "Changing assignee from tba to GeorgSWeber.",
+    "created_at": "2008-11-02T14:31:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4370",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4370#issuecomment-32116",
+    "user": "GeorgSWeber"
+}
+```
 
 Changing assignee from tba to GeorgSWeber.
 
 
+
 ---
+
+archive/issue_comments_032117.json:
+```json
+{
+    "body": "Attachment\n\napplies independently, but the other two are highly recommended first",
+    "created_at": "2008-11-04T00:19:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4370",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4370#issuecomment-32117",
+    "user": "GeorgSWeber"
+}
+```
 
 Attachment
 
 applies independently, but the other two are highly recommended first
 
 
+
 ---
 
-Comment by GeorgSWeber created at 2008-11-04 00:26:34
+archive/issue_comments_032118.json:
+```json
+{
+    "body": "Well,\nthe hg.py patch is not ready yet, but the three patches attached already fulfil all the requirements of this ticket. So you can give it a review already now.\n\nThe three patches are for three different repos: devel/sage, devel/doc, and finally local/bin.\n\nAfter applying the patch to devel/doc, you have to do there once:\n\nchmod a+x needed_additions_Sage-3.2.alpha2_doc-repository\n\n./needed_additions_Sage-3.2.alpha2_doc-repository\n\n(Writing that script was faster than trying to explain what to do with words.)",
+    "created_at": "2008-11-04T00:26:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4370",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4370#issuecomment-32118",
+    "user": "GeorgSWeber"
+}
+```
 
 Well,
 the hg.py patch is not ready yet, but the three patches attached already fulfil all the requirements of this ticket. So you can give it a review already now.
@@ -172,18 +298,40 @@ chmod a+x needed_additions_Sage-3.2.alpha2_doc-repository
 (Writing that script was faster than trying to explain what to do with words.)
 
 
+
 ---
 
-Comment by GeorgSWeber created at 2008-11-04 00:30:23
+archive/issue_comments_032119.json:
+```json
+{
+    "body": "Forgot to add:\n\nIf someones really needs the possibility to clone the doc repo not on shell level, but inside sage using hg.py, please open another ticket for it, because it will take me quite some while before I will be able to sacrifice the time needed to finally adapt hg.py, thanks!",
+    "created_at": "2008-11-04T00:30:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4370",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4370#issuecomment-32119",
+    "user": "GeorgSWeber"
+}
+```
 
 Forgot to add:
 
 If someones really needs the possibility to clone the doc repo not on shell level, but inside sage using hg.py, please open another ticket for it, because it will take me quite some while before I will be able to sacrifice the time needed to finally adapt hg.py, thanks!
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-04 00:39:35
+archive/issue_comments_032120.json:
+```json
+{
+    "body": "Hi Georg,\n\n4370-sage_library.patch should go to its own ticker since it is independent. \n\nI would also not per default build the Sage documentation on clone - we do not do this for the sage library repo itself.\n\nI can't see seem to fine the alleged possibility to clone the sage-scripts repo. Either way, I would not recommend that we allow this since there are numerous binaries in the bin directory and switching back and forth between various bin directories can cause subtle bugs at runtime.\n\nAnother thing I would like to wait for is the switch to the ReST documentation before we allow cloing the doc repo.\n\nIn the end I don't think this should be merged into 3.2 :(.\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-04T00:39:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4370",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4370#issuecomment-32120",
+    "user": "mabshoff"
+}
+```
 
 Hi Georg,
 
@@ -202,21 +350,58 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_032121.json:
+```json
+{
+    "body": "Attachment\n\nobsoleted, don't use (moved to #4441 upon request of the reviewer)",
+    "created_at": "2008-11-04T21:20:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4370",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4370#issuecomment-32121",
+    "user": "GeorgSWeber"
+}
+```
 
 Attachment
 
 obsoleted, don't use (moved to #4441 upon request of the reviewer)
 
 
+
 ---
 
-Comment by GeorgSWeber created at 2008-11-04 21:27:33
+archive/issue_comments_032122.json:
+```json
+{
+    "body": "obsoleted, don't use (moved to #4442)",
+    "created_at": "2008-11-04T21:27:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4370",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4370#issuecomment-32122",
+    "user": "GeorgSWeber"
+}
+```
 
 obsoleted, don't use (moved to #4442)
 
 
+
 ---
+
+archive/issue_comments_032123.json:
+```json
+{
+    "body": "Attachment\n\nHi Michael,\nthanks for the review!\n\n> 4370-sage_library.patch should go to its own ticker since it is independent. \nDone, it is now #4441. I also moved the congroup.py patch away to #4442.\n\n>I would also not per default build the Sage documentation on clone\nOK. I will address that in an update.\n\n> - we do not do this for the sage library repo itself. \nYou're wrong here. See lines 68-91 of the \"sage-clone\" script, where explicitly \"sage -b branch\" is called. But let's clone the doc dir without (re-)build, OK.\n\n> I can't see seem to fine the alleged possibility to clone the sage-scripts repo. Either way, I would not recommend that we allow this since there are numerous binaries in the bin directory and switching back and forth between various bin directories can cause subtle bugs at runtime. \nAh, misunderstanding! I meant that the patch-files attached are to applied themselves to these three different repos, not more. I totally agree that cloning \"$SAGE_ROOT/local/bin\" would be a bad idea. But the content of the patch(es) did not and will not allow for that.\n\n>Another thing I would like to wait for is the switch to the ReST documentation before we allow cloing the doc repo. \nWell. It might be helpful for the ReST documentation deployment.\n\n>In the end I don't think this should be merged into 3.2 :(. \nFine, at least for me.",
+    "created_at": "2008-11-04T22:00:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4370",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4370#issuecomment-32123",
+    "user": "GeorgSWeber"
+}
+```
 
 Attachment
 
@@ -242,9 +427,20 @@ Well. It might be helpful for the ReST documentation deployment.
 Fine, at least for me.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-04 22:12:59
+archive/issue_comments_032124.json:
+```json
+{
+    "body": "Replying to [comment:7 GeorgSWeber]:\n> > - we do not do this for the sage library repo itself. \n> You're wrong here. See lines 68-91 of the \"sage-clone\" script, where explicitly \"sage -b branch\" is called. But let's clone the doc dir without (re-)build, OK.\n\nYou are right, but \"sage -b\" on an uptodate repo only rebuilds libcsage.so, so the build is more or less instant. Building the documentation takes *forever* with the current toolchain, but ReST will fix that.\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-04T22:12:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4370",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4370#issuecomment-32124",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:7 GeorgSWeber]:
 > > - we do not do this for the sage library repo itself. 
@@ -257,23 +453,56 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by GeorgSWeber created at 2008-11-05 07:05:59
+archive/issue_comments_032125.json:
+```json
+{
+    "body": "Work on this ticket will be resumed after the move to ReST is completed.",
+    "created_at": "2008-11-05T07:05:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4370",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4370#issuecomment-32125",
+    "user": "GeorgSWeber"
+}
+```
 
 Work on this ticket will be resumed after the move to ReST is completed.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-21 09:40:48
+archive/issue_comments_032126.json:
+```json
+{
+    "body": "Resolution: wontfix",
+    "created_at": "2008-11-21T09:40:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4370",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4370#issuecomment-32126",
+    "user": "mabshoff"
+}
+```
 
 Resolution: wontfix
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-21 09:40:48
+archive/issue_comments_032127.json:
+```json
+{
+    "body": "The new documentation will reside in the main Sage repo, so this is a wontfix.\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-21T09:40:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4370",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4370#issuecomment-32127",
+    "user": "mabshoff"
+}
+```
 
 The new documentation will reside in the main Sage repo, so this is a wontfix.
 

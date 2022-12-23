@@ -1,26 +1,64 @@
 # Issue 8921: Extend cross product to 7d
 
-Issue created by migration from https://trac.sagemath.org/ticket/8921
-
-Original creator: bwonderly
-
-Original creation time: 2010-05-07 18:39:09
-
+archive/issues_008921.json:
+```json
+{
+    "body": "Assignee: jason, was\n\nCC:  jason rbeezer\n\nThe cross product is defined for 7D, this patch allows for that functionality.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8921\n\n",
+    "created_at": "2010-05-07T18:39:09Z",
+    "labels": [
+        "linear algebra",
+        "minor",
+        "enhancement"
+    ],
+    "title": "Extend cross product to 7d",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8921",
+    "user": "bwonderly"
+}
+```
 Assignee: jason, was
 
 CC:  jason rbeezer
 
 The cross product is defined for 7D, this patch allows for that functionality.
 
+Issue created by migration from https://trac.sagemath.org/ticket/8921
+
+
+
+
 
 ---
+
+archive/issue_comments_082181.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-05-07T18:45:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8921",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8921#issuecomment-82181",
+    "user": "bwonderly"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by rbeezer created at 2010-05-07 18:48:22
+archive/issue_comments_082182.json:
+```json
+{
+    "body": "Jason,\n\nI need to double-check the tests this afternoon, Billy is getting some known failures.\n\nI'll post here when full tests pass.\n\nRob",
+    "created_at": "2010-05-07T18:48:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8921",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8921#issuecomment-82182",
+    "user": "rbeezer"
+}
+```
 
 Jason,
 
@@ -31,9 +69,20 @@ I'll post here when full tests pass.
 Rob
 
 
+
 ---
 
-Comment by rbeezer created at 2010-05-08 03:08:08
+archive/issue_comments_082183.json:
+```json
+{
+    "body": "Replying to [comment:1 rbeezer]:\n> I'll post here when full tests pass.\n\nThis passed all tests on my machine, so I think it is ready for a review.\n\nRob",
+    "created_at": "2010-05-08T03:08:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8921",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8921#issuecomment-82183",
+    "user": "rbeezer"
+}
+```
 
 Replying to [comment:1 rbeezer]:
 > I'll post here when full tests pass.
@@ -43,31 +92,75 @@ This passed all tests on my machine, so I think it is ready for a review.
 Rob
 
 
+
 ---
 
-Comment by rbeezer created at 2010-05-08 03:08:08
+archive/issue_comments_082184.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-05-08T03:08:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8921",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8921#issuecomment-82184",
+    "user": "rbeezer"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jason created at 2010-05-11 05:02:57
+archive/issue_comments_082185.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-05-11T05:02:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8921",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8921#issuecomment-82185",
+    "user": "jason"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jason created at 2010-05-11 05:02:57
+archive/issue_comments_082186.json:
+```json
+{
+    "body": "tests pass on affected file, the formula checks out with wikipedia, and the properties are illustrated with the doctests.\n\nPositive review!  Very nice!  Thanks for your work, Billy!",
+    "created_at": "2010-05-11T05:02:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8921",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8921#issuecomment-82186",
+    "user": "jason"
+}
+```
 
 tests pass on affected file, the formula checks out with wikipedia, and the properties are illustrated with the doctests.
 
 Positive review!  Very nice!  Thanks for your work, Billy!
 
 
+
 ---
 
-Comment by mhansen created at 2010-06-07 07:10:27
+archive/issue_comments_082187.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-06-07T07:10:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8921",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8921#issuecomment-82187",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

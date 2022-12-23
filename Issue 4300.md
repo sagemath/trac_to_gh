@@ -1,11 +1,21 @@
 # Issue 4300: [with patch, needs review] Update HISTORY.txt with Sage 3.1.2 and 3.1.1
 
-Issue created by migration from https://trac.sagemath.org/ticket/4300
-
-Original creator: mabshoff
-
-Original creation time: 2008-10-15 16:08:51
-
+archive/issues_004300.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nPatch attached as the title says.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4300\n\n",
+    "created_at": "2008-10-15T16:08:51Z",
+    "labels": [
+        "misc",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch, needs review] Update HISTORY.txt with Sage 3.1.2 and 3.1.1",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4300",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 Patch attached as the title says.
@@ -14,29 +24,79 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/4300
+
+
+
+
 
 ---
+
+archive/issue_comments_031444.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-10-15T16:09:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4300",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4300#issuecomment-31444",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-15 16:09:35
+archive/issue_comments_031445.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-10-15T16:09:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4300",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4300#issuecomment-31445",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by rlm created at 2008-10-15 16:10:15
+archive/issue_comments_031446.json:
+```json
+{
+    "body": "sure.",
+    "created_at": "2008-10-15T16:10:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4300",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4300#issuecomment-31446",
+    "user": "rlm"
+}
+```
 
 sure.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-15 16:14:01
+archive/issue_comments_031447.json:
+```json
+{
+    "body": "Merged in Sage 3.1.4.\n\nCheers,\n\nMichael",
+    "created_at": "2008-10-15T16:14:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4300",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4300#issuecomment-31447",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.1.4.
 
@@ -45,8 +105,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-15 16:14:01
+archive/issue_comments_031448.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-10-15T16:14:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4300",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4300#issuecomment-31448",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

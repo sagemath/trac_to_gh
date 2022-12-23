@@ -1,11 +1,21 @@
 # Issue 4894: [with patch; needs review] save_session -- bug when saving %cython functions, etc.
 
-Issue created by migration from https://trac.sagemath.org/ticket/4894
-
-Original creator: was
-
-Original creation time: 2008-12-30 22:51:08
-
+archive/issues_004894.json:
+```json
+{
+    "body": "Assignee: boothby\n\nI was easily able to replicate the following:\n\n```\nM. Yurko\n to sage-support\n\t\nshow details 1:32 PM (1 hour ago)\n\t\n\t\nReply\n\t\n\t\n\nI have recently been using save_session a bit, and I uncovered what I\nbelieve is a bug. If the worksheet of the session that I'm trying to\nsave contains a cython function, then load_session chokes. For\nexample:\n\nvar1 = 1\nvar2 = 2\nvar3 = srange(1,10000)\nvar4 = range(1,3000)\nvar5 = 1234.123456\n\n%cython\ndef test(double x):\n   return x\n\nsave_session('test_session')\n\nand then I save and exit, and re-enter the worksheet\n\nload_session('test_session')\n\nand I get\n\nTraceback (most recent call last):\n File \"<stdin>\", line 1, in <module>\n File \"/home/myurko/.sage/sage_notebook/worksheets/admin/28/code/\n1.py\", line 6, in <module>\n   load_session(\\u0027test_session\\u0027)\n File \"/home/myurko/sage-3.2.1/local/lib/python2.5/site-packages/\nSQLAlchemy-0.4.6-py2.5.egg/\", line 1, in <module>\n\n File \"session.pyx\", line 300, in sage.misc.session.load_session\n(sage/misc/session.c:1403)\n File \"sage_object.pyx\", line 477, in sage.structure.sage_object.load\n(sage/structure/sage_object.c:4865)\n File \"sage_object.pyx\", line 598, in\nsage.structure.sage_object.loads (sage/structure/sage_object.c:6121)\nRuntimeError: No module named\n_home_myurko__sage_sage_notebook_worksheets_admin_28_code_sage8_spyx_0\ninvalid data stream\ninvalid load key, 'x'.\nUnable to load pickled data.\n\nWhen I ran save_session with verbose = true, I noticed that it saved\ntest, which according to the docstring shouldn't have happened. Does\nanyone have any workarounds for this issue?\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4894\n\n",
+    "created_at": "2008-12-30T22:51:08Z",
+    "labels": [
+        "notebook",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch; needs review] save_session -- bug when saving %cython functions, etc.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4894",
+    "user": "was"
+}
+```
 Assignee: boothby
 
 I was easily able to replicate the following:
@@ -70,10 +80,25 @@ anyone have any workarounds for this issue?
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4894
+
+
+
+
 
 ---
 
-Comment by was created at 2008-12-30 23:08:21
+archive/issue_comments_037110.json:
+```json
+{
+    "body": "The attached patch fixes the problem by explicitly not saving builtin (or not)) functions or classes, since in fact defining classes also breaks load_session and save_session.\n\nIt just occurred to me that one can still make sessions that can't be reloaded.  E.g.,\n\n```\nclass Foo:\n    pass\n\nf = Foo()\n```\n\n\nThen save_session followed by quit and load_session fails.  However, I doubt there is any good way to deal with this.  Fortunately, in the above case, unlike in the case that this bug is about, one can simply re-evaluate the code to define Foo, and suddenly load_session works fine. \nI've put a comment abou this in the patch.",
+    "created_at": "2008-12-30T23:08:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4894",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4894#issuecomment-37110",
+    "user": "was"
+}
+```
 
 The attached patch fixes the problem by explicitly not saving builtin (or not)) functions or classes, since in fact defining classes also breaks load_session and save_session.
 
@@ -91,14 +116,38 @@ Then save_session followed by quit and load_session fails.  However, I doubt the
 I've put a comment abou this in the patch.
 
 
+
 ---
+
+archive/issue_comments_037111.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-01-02T21:57:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4894",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4894#issuecomment-37111",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-03 06:01:39
+archive/issue_comments_037112.json:
+```json
+{
+    "body": "Positive review.\n\nCheers,\n\nMichael",
+    "created_at": "2009-01-03T06:01:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4894",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4894#issuecomment-37112",
+    "user": "mabshoff"
+}
+```
 
 Positive review.
 
@@ -107,15 +156,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-03 06:01:51
+archive/issue_comments_037113.json:
+```json
+{
+    "body": "Merged in Sage 3.2.3.final",
+    "created_at": "2009-01-03T06:01:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4894",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4894#issuecomment-37113",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.2.3.final
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-03 06:01:51
+archive/issue_comments_037114.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-01-03T06:01:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4894",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4894#issuecomment-37114",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

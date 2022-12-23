@@ -1,11 +1,21 @@
 # Issue 7090: R test suite fails when building with SAGE_CHECK
 
-Issue created by migration from https://trac.sagemath.org/ticket/7090
-
-Original creator: davidloeffler
-
-Original creation time: 2009-10-01 15:58:21
-
+archive/issues_007090.json:
+```json
+{
+    "body": "Assignee: tbd\n\nKeywords: R\n\nBuilding 4.1.2.rc0 with SAGE_CHECK set to \"yes\", I got the following failure in the R test suite:\n\n\n```\nSuccessfully installed r-2.9.2\nRunning the test suite.\nmake[2]: Entering directory `/home/david/sage-4.1.2.rc0/spkg/build/r-2.9.2/src'\nmake[3]: Entering directory `/home/david/sage-4.1.2.rc0/spkg/build/r-2.9.2/src/test\ns'\nmake[4]: Entering directory `/home/david/sage-4.1.2.rc0/spkg/build/r-2.9.2/src/test\ns'\nmake[4]: warning: -jN forced in submake: disabling jobserver mode.\nmake[5]: Entering directory `/home/david/sage-4.1.2.rc0/spkg/build/r-2.9.2/src/test\ns/Examples'\nmake[5]: warning: -jN forced in submake: disabling jobserver mode.\n\nCollecting examples for package \u2018base\u2019\nRunning examples in package \u2018base\u2019\n\nCollecting examples for package \u2018tools\u2019\nRunning examples in package \u2018tools\u2019\n\nCollecting examples for package \u2018utils\u2019\nRunning examples in package \u2018utils\u2019\nError: testing 'utils' failed\nExecution halted\nmake[5]: *** [test-Examples-Base] Error 1\nmake[5]: Leaving directory `/home/david/sage-4.1.2.rc0/spkg/build/r-2.9.2/src/tests\n/Examples'\nmake[4]: *** [test-Examples] Error 2\nmake[4]: Leaving directory `/home/david/sage-4.1.2.rc0/spkg/build/r-2.9.2/src/tests\n'\nmake[3]: *** [test-all-basics] Error 1\nmake[3]: Leaving directory `/home/david/sage-4.1.2.rc0/spkg/build/r-2.9.2/src/tests\n'\nmake[2]: *** [check] Error 2\nmake[2]: Leaving directory `/home/david/sage-4.1.2.rc0/spkg/build/r-2.9.2/src'\nError while running the R testsuite ... exiting\n*************************************\nError testing package ** r-2.9.2 **\n*************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7090\n\n",
+    "created_at": "2009-10-01T15:58:21Z",
+    "labels": [
+        "build",
+        "major",
+        "bug"
+    ],
+    "title": "R test suite fails when building with SAGE_CHECK",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7090",
+    "user": "davidloeffler"
+}
+```
 Assignee: tbd
 
 Keywords: R
@@ -54,24 +64,61 @@ Error testing package ** r-2.9.2 **
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7090
+
+
+
+
 
 ---
 
-Comment by davidloeffler created at 2009-10-16 09:25:57
+archive/issue_comments_058595.json:
+```json
+{
+    "body": "(Same happens in 4.1.2 final.)",
+    "created_at": "2009-10-16T09:25:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7090",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7090#issuecomment-58595",
+    "user": "davidloeffler"
+}
+```
 
 (Same happens in 4.1.2 final.)
 
 
+
 ---
 
-Comment by mvngu created at 2010-02-03 06:59:25
+archive/issue_comments_058596.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-02-03T06:59:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7090",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7090#issuecomment-58596",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mvngu created at 2010-02-03 06:59:25
+archive/issue_comments_058597.json:
+```json
+{
+    "body": "As of Sage 4.3.2.alpha1, ticket #6532 upgrades R to version 2.10.1. This fixes the issue regarding running the R test suite:\n\n```\nSuccessfully installed r-2.10.1\nRunning the test suite.\nmake[1]: Entering directory `/dev/shm/mvngu/sage-4.3.2.alpha1/spkg/build/r-2.10.1/src/tests'\nmake[2]: Entering directory `/dev/shm/mvngu/sage-4.3.2.alpha1/spkg/build/r-2.10.1/src/tests'\nmake[3]: Entering directory `/dev/shm/mvngu/sage-4.3.2.alpha1/spkg/build/r-2.10.1/src/tests/Examples'\n\nCollecting examples for package \u2018base\u2019\n  Extracting from parsed Rd's .......................................\nRunning examples in package \u2018base\u2019\n\nCollecting examples for package \u2018tools\u2019\n  Extracting from parsed Rd's ....\nRunning examples in package \u2018tools\u2019\n\nCollecting examples for package \u2018utils\u2019\n  Extracting from parsed Rd's ...........\nRunning examples in package \u2018utils\u2019\n\nCollecting examples for package \u2018grDevices\u2019\n  Extracting from parsed Rd's .....\nRunning examples in package \u2018grDevices\u2019\n\nCollecting examples for package \u2018graphics\u2019\n  Extracting from parsed Rd's ......\nRunning examples in package \u2018graphics\u2019\n\nCollecting examples for package \u2018stats\u2019\n  Extracting from parsed Rd's ..............................\nRunning examples in package \u2018stats\u2019\n\nCollecting examples for package \u2018datasets\u2019\n  Extracting from parsed Rd's ........\nRunning examples in package \u2018datasets\u2019\n\nCollecting examples for package \u2018methods\u2019\n  Extracting from parsed Rd's .......\nRunning examples in package \u2018methods\u2019\n\nCollecting examples for package \u2018grid\u2019\n  Extracting from parsed Rd's .......\nRunning examples in package \u2018grid\u2019\n\nCollecting examples for package \u2018splines\u2019\n  Extracting from parsed Rd's .\nRunning examples in package \u2018splines\u2019\n\nCollecting examples for package \u2018stats4\u2019\n  Extracting from parsed Rd's .\nRunning examples in package \u2018stats4\u2019\n\nCollecting examples for package \u2018tcltk\u2019\n  Extracting from parsed Rd's .\nRunning examples in package \u2018tcltk\u2019\nmake[3]: Leaving directory `/dev/shm/mvngu/sage-4.3.2.alpha1/spkg/build/r-2.10.1/src/tests/Examples'\nmake[2]: Leaving directory `/dev/shm/mvngu/sage-4.3.2.alpha1/spkg/build/r-2.10.1/src/tests'\nmake[2]: Entering directory `/dev/shm/mvngu/sage-4.3.2.alpha1/spkg/build/r-2.10.1/src/tests'\nrunning strict specific tests\nmake[3]: Entering directory `/dev/shm/mvngu/sage-4.3.2.alpha1/spkg/build/r-2.10.1/src/tests'\nrunning code in 'eval-etc.R' ... OK\ncomparing 'eval-etc.Rout' to './eval-etc.Rout.save' ... OK\nrunning code in 'simple-true.R' ... OK\ncomparing 'simple-true.Rout' to './simple-true.Rout.save' ... OK\nrunning code in 'arith-true.R' ... OK\ncomparing 'arith-true.Rout' to './arith-true.Rout.save' ... OK\nrunning code in 'arith.R' ... OK\ncomparing 'arith.Rout' to './arith.Rout.save' ... OK\nrunning code in 'lm-tests.R' ... OK\ncomparing 'lm-tests.Rout' to './lm-tests.Rout.save' ... OK\nrunning code in 'ok-errors.R' ... OK\ncomparing 'ok-errors.Rout' to './ok-errors.Rout.save' ... OK\nrunning code in 'method-dispatch.R' ... OK\ncomparing 'method-dispatch.Rout' to './method-dispatch.Rout.save' ... OK\nrunning code in 'd-p-q-r-tests.R' ... OK\ncomparing 'd-p-q-r-tests.Rout' to './d-p-q-r-tests.Rout.save' ... OK\nmake[3]: Leaving directory `/dev/shm/mvngu/sage-4.3.2.alpha1/spkg/build/r-2.10.1/src/tests'\nrunning sloppy specific tests\nmake[3]: Entering directory `/dev/shm/mvngu/sage-4.3.2.alpha1/spkg/build/r-2.10.1/src/tests'\nrunning code in 'complex.R' ... OK\ncomparing 'complex.Rout' to './complex.Rout.save' ... OK\nrunning code in 'print-tests.R' ... OK\ncomparing 'print-tests.Rout' to './print-tests.Rout.save' ... OK\nrunning code in 'lapack.R' ... OK\ncomparing 'lapack.Rout' to './lapack.Rout.save' ... OK\nrunning code in 'datasets.R' ... OK\ncomparing 'datasets.Rout' to './datasets.Rout.save' ... OK\nmake[3]: Leaving directory `/dev/shm/mvngu/sage-4.3.2.alpha1/spkg/build/r-2.10.1/src/tests'\nmake[2]: Leaving directory `/dev/shm/mvngu/sage-4.3.2.alpha1/spkg/build/r-2.10.1/src/tests'\nmake[2]: Entering directory `/dev/shm/mvngu/sage-4.3.2.alpha1/spkg/build/r-2.10.1/src/tests'\nrunning regression tests ...\nmake[3]: Entering directory `/dev/shm/mvngu/sage-4.3.2.alpha1/spkg/build/r-2.10.1/src/tests'\nrunning code in 'reg-tests-1.R' ... OK\nrunning code in 'reg-tests-2.R' ... OK\ncomparing 'reg-tests-2.Rout' to './reg-tests-2.Rout.save' ... OK\nrunning code in 'reg-IO.R' ... OK\ncomparing 'reg-IO.Rout' to './reg-IO.Rout.save' ... OK\nrunning code in 'reg-IO2.R' ... OK\ncomparing 'reg-IO2.Rout' to './reg-IO2.Rout.save' ... OK\nrunning code in 'reg-plot.R' ... OK\ncomparing 'reg-plot.ps' to './reg-plot.ps.save' ... OK\nrunning code in 'reg-S4.R' ... OK\ncomparing 'reg-S4.Rout' to './reg-S4.Rout.save' ... OK\nmake[3]: Leaving directory `/dev/shm/mvngu/sage-4.3.2.alpha1/spkg/build/r-2.10.1/src/tests'\nmake[3]: Entering directory `/dev/shm/mvngu/sage-4.3.2.alpha1/spkg/build/r-2.10.1/src/tests'\nrunning code in 'reg-tests-3.R' ... OK\ncomparing 'reg-tests-3.Rout' to './reg-tests-3.Rout.save' ... OK\nrunning tests of plotting Latin-1\n  expect failure or some differences if not in a Latin or UTF-8 locale\nrunning code in 'reg-plot-latin1.R' ... OK\ncomparing 'reg-plot-latin1.ps' to './reg-plot-latin1.ps.save' ... OK\nmake[3]: Leaving directory `/dev/shm/mvngu/sage-4.3.2.alpha1/spkg/build/r-2.10.1/src/tests'\nmake[2]: Leaving directory `/dev/shm/mvngu/sage-4.3.2.alpha1/spkg/build/r-2.10.1/src/tests'\nmake[2]: Entering directory `/dev/shm/mvngu/sage-4.3.2.alpha1/spkg/build/r-2.10.1/src/tests'\nrunning tests of Internet and socket functions\n  expect some differences\nmake[3]: Entering directory `/dev/shm/mvngu/sage-4.3.2.alpha1/spkg/build/r-2.10.1/src/tests'\nrunning code in 'internet.R' ... OK\ncomparing 'internet.Rout' to './internet.Rout.save' ...17c17\n< [1] 2163\n---\n> [1] 2088\n OK\nmake[3]: Leaving directory `/dev/shm/mvngu/sage-4.3.2.alpha1/spkg/build/r-2.10.1/src/tests'\nmake[2]: Leaving directory `/dev/shm/mvngu/sage-4.3.2.alpha1/spkg/build/r-2.10.1/src/tests'\nmake[1]: Leaving directory `/dev/shm/mvngu/sage-4.3.2.alpha1/spkg/build/r-2.10.1/src/tests'\nNow cleaning up tmp files.\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing r-2.10.1.spkg\n```\n\nClosing this ticket as fixed by #6532.",
+    "created_at": "2010-02-03T06:59:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7090",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7090#issuecomment-58597",
+    "user": "mvngu"
+}
+```
 
 As of Sage 4.3.2.alpha1, ticket #6532 upgrades R to version 2.10.1. This fixes the issue regarding running the R test suite:
 

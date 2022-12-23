@@ -1,11 +1,21 @@
 # Issue 8831: fail to build PDF version of reference manual in Sage 4.4.1.alpha2
 
-Issue created by migration from https://trac.sagemath.org/ticket/8831
-
-Original creator: mvngu
-
-Original creation time: 2010-04-30 19:28:09
-
+archive/issues_008831.json:
+```json
+{
+    "body": "Assignee: mvngu\n\nAs the subject says. Even after fixing warnings in building the HTML version of the reference manual as per #8819, building the PDF version hangs while processing a reference to graphviz:\n\n```\nUnderfull \\hbox (badness 6380) in paragraph at lines 410101--410105\n[]\\T1/ptm/m/n/10 Aric Hag-berg, Dan Schult and Pieter Swart. Net-workX doc-u-me\nn-ta-tion. [On-line] Avail-able:\n! Missing $ inserted.\n<inserted text> \n                $\nl.410122 \\bibitem[dot_spec]{dot_spec}\n                                     {\\hypertarget{dot_spec}{}\n```\n\nThis is traced to the function `graphviz_string()` in `sage/graphs/generic_graph.py`\n\nIssue created by migration from https://trac.sagemath.org/ticket/8831\n\n",
+    "created_at": "2010-04-30T19:28:09Z",
+    "labels": [
+        "documentation",
+        "blocker",
+        "bug"
+    ],
+    "title": "fail to build PDF version of reference manual in Sage 4.4.1.alpha2",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8831",
+    "user": "mvngu"
+}
+```
 Assignee: mvngu
 
 As the subject says. Even after fixing warnings in building the HTML version of the reference manual as per #8819, building the PDF version hangs while processing a reference to graphviz:
@@ -23,23 +33,62 @@ l.410122 \bibitem[dot_spec]{dot_spec}
 
 This is traced to the function `graphviz_string()` in `sage/graphs/generic_graph.py`
 
+Issue created by migration from https://trac.sagemath.org/ticket/8831
+
+
+
+
 
 ---
+
+archive/issue_comments_081214.json:
+```json
+{
+    "body": "Attachment\n\nbased on Sage 4.4.1.alpha2",
+    "created_at": "2010-04-30T19:47:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8831",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8831#issuecomment-81214",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
 based on Sage 4.4.1.alpha2
 
 
+
 ---
 
-Comment by mvngu created at 2010-04-30 19:48:53
+archive/issue_comments_081215.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-04-30T19:48:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8831",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8831#issuecomment-81215",
+    "user": "mvngu"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by was created at 2010-05-02 16:44:03
+archive/issue_comments_081216.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-05-02T16:44:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8831",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8831#issuecomment-81216",
+    "user": "was"
+}
+```
 
 Resolution: fixed

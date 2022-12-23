@@ -1,23 +1,33 @@
 # Issue 9693: Maxima is printing asinh(1.0) without a leading zero (.8813735870195429) on Solaris 10 x86
 
-Issue created by migration from https://trac.sagemath.org/ticket/9693
-
-Original creator: drkirkby
-
-Original creation time: 2010-08-05 23:44:01
-
+archive/issues_009693.json:
+```json
+{
+    "body": "Assignee: jason, jkantor\n\nCC:  jhpalmieri cremona mhansen\n\nAn almost complete 32-bit port of Sage 4.5.2 to Solaris 10 on x86 processors had been done on the following hardware:\n\n* Dell OptiPlex 755\n* 2.40 GHz Intel Quad-Core Core2 Q6600 CPU\n* 8 GB RAM, 8 GB swap. \n* Solaris 10 update 5 (5/08) on x86 \n* gcc 4.5.0 configured to use the Sun linker and GNU assembler\n* sage-4.5.2.rc1 with several changes. \n\nthe result printed during a doctest lacks a leading zero. \n\n\n```\n**********************************************************************\nFile \"/home/palmieri/fulvia/sage-4.5.2.rc0/devel/sage-main/sage/symbolic/expression.pyx\", line 508\\\n8:\n    sage: maxima('asinh(1.0)')\nExpected:\n    0.881373587019543\nGot:\n    .8813735870195429\n**********************************************************************\n```\n\n\nFollowing a suggestion of Carl Witty \n\nhttp://groups.google.com/group/sage-devel/msg/aa318e11e84afe8d?hl=en\n\nI run \n\n\n```\n2 drkirkby@fulvia:[/home/palmieri/fulvia/32bit/sage-4.5.2.rc1] $ ./sage -maxima\n;;; Loading #P\"/home/palmieri/fulvia/32bit/sage-4.5.2.rc1/local/lib/ecl/defsystem.fas\"\n;;; Loading #P\"/home/palmieri/fulvia/32bit/sage-4.5.2.rc1/local/lib/ecl/cmp.fas\"\n;;; Loading #P\"/home/palmieri/fulvia/32bit/sage-4.5.2.rc1/local/lib/ecl/sysfun.lsp\"\nMaxima 5.20.1 http://maxima.sourceforge.net\nusing Lisp ECL 10.2.1\nDistributed under the GNU Public License. See the file COPYING.\nDedicated to the memory of William Schelter.\nThe function bug_report() provides bug reporting information.\n(%i1) asinh(1.0); \n(%o1)                          .8813735870195429\n(%i2) \n```\n\n\nclearly showing the missing leading zero on this Solaris 10 x86 machine. \n\nTrying this on the same version of Sage, but this time on a SPARC processor with Solaris 10, the result is different:\n\n\n```\n32 drkirkby@redstart:[~/redstart/32/sage-4.5.2.rc1] $ ./sage -maxima\n;;; Loading #P\"/export/home/drkirkby/redstart/32/sage-4.5.2.rc1/local/lib/ecl/defsystem.fas\"\n;;; Loading #P\"/export/home/drkirkby/redstart/32/sage-4.5.2.rc1/local/lib/ecl/cmp.fas\"\n;;; Loading #P\"/export/home/drkirkby/redstart/32/sage-4.5.2.rc1/local/lib/ecl/sysfun.lsp\"\nMaxima 5.20.1 http://maxima.sourceforge.net\nusing Lisp ECL 10.2.1\nDistributed under the GNU Public License. See the file COPYING.\nDedicated to the memory of William Schelter.\nThe function bug_report() provides bug reporting information.\n(%i1)  asinh(1.0); \n(%o1)                          0.881373587019543\n(%i2) \n```\n\n\nClearly this demonstrates a difference in the behaviour of the Maxima and ECL combination on Solaris 10 systems, where one has a SPARC processor and the other has an Intel Xeon processor. \n\nThe version of ECL in this version of Sage is 10.2.1\n\n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/9693\n\n",
+    "created_at": "2010-08-05T23:44:01Z",
+    "labels": [
+        "numerical",
+        "major",
+        "bug"
+    ],
+    "title": "Maxima is printing asinh(1.0) without a leading zero (.8813735870195429) on Solaris 10 x86",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9693",
+    "user": "drkirkby"
+}
+```
 Assignee: jason, jkantor
 
 CC:  jhpalmieri cremona mhansen
 
 An almost complete 32-bit port of Sage 4.5.2 to Solaris 10 on x86 processors had been done on the following hardware:
 
- * Dell OptiPlex 755
- * 2.40 GHz Intel Quad-Core Core2 Q6600 CPU
- * 8 GB RAM, 8 GB swap. 
- * Solaris 10 update 5 (5/08) on x86 
- * gcc 4.5.0 configured to use the Sun linker and GNU assembler
- * sage-4.5.2.rc1 with several changes. 
+* Dell OptiPlex 755
+* 2.40 GHz Intel Quad-Core Core2 Q6600 CPU
+* 8 GB RAM, 8 GB swap. 
+* Solaris 10 update 5 (5/08) on x86 
+* gcc 4.5.0 configured to use the Sun linker and GNU assembler
+* sage-4.5.2.rc1 with several changes. 
 
 the result printed during a doctest lacks a leading zero. 
 
@@ -86,17 +96,43 @@ The version of ECL in this version of Sage is 10.2.1
 
 Dave 
 
+Issue created by migration from https://trac.sagemath.org/ticket/9693
+
+
+
+
 
 ---
 
-Comment by drkirkby created at 2010-08-06 00:00:56
+archive/issue_comments_094208.json:
+```json
+{
+    "body": "Changing assignee from jason, jkantor to drkirkby.",
+    "created_at": "2010-08-06T00:00:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9693",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9693#issuecomment-94208",
+    "user": "drkirkby"
+}
+```
 
 Changing assignee from jason, jkantor to drkirkby.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-08-06 00:00:56
+archive/issue_comments_094209.json:
+```json
+{
+    "body": "I've reported this under the title\n\n\"Maxima/ECL combination not printing a leading zero\" to both\n\nmaxima`@`math.utexas.edu and ecls-list`@`lists.sourceforge.net\n\nDave",
+    "created_at": "2010-08-06T00:00:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9693",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9693#issuecomment-94209",
+    "user": "drkirkby"
+}
+```
 
 I've reported this under the title
 
@@ -107,23 +143,45 @@ maxima`@`math.utexas.edu and ecls-list`@`lists.sourceforge.net
 Dave
 
 
+
 ---
 
-Comment by drkirkby created at 2010-08-09 03:13:24
+archive/issue_comments_094210.json:
+```json
+{
+    "body": "Here's a couple of links to where this is discussed. \n\n* [Maxima mailing list](http://www.math.utexas.edu/pipermail/maxima/2010/022230.html)\n* [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/43159b440ae83200)\n\nIt's not clear if the maxima developers consider this a bug or not - if they do, its certainly not considered a high priority for them to fix, so it looks like a fix in Sage is necessary. \n\nNote, other Maxima developers can redproduce this on some Linux systems, so it is not a specific to Solaris x86.",
+    "created_at": "2010-08-09T03:13:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9693",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9693#issuecomment-94210",
+    "user": "drkirkby"
+}
+```
 
 Here's a couple of links to where this is discussed. 
 
- * [Maxima mailing list](http://www.math.utexas.edu/pipermail/maxima/2010/022230.html)
- * [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/43159b440ae83200)
+* [Maxima mailing list](http://www.math.utexas.edu/pipermail/maxima/2010/022230.html)
+* [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/43159b440ae83200)
 
 It's not clear if the maxima developers consider this a bug or not - if they do, its certainly not considered a high priority for them to fix, so it looks like a fix in Sage is necessary. 
 
 Note, other Maxima developers can redproduce this on some Linux systems, so it is not a specific to Solaris x86.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-08-19 04:09:56
+archive/issue_comments_094211.json:
+```json
+{
+    "body": "As discussed here\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/351c46eb4cb91598/995e04912042c4be?lnk=gst&q=asinh#995e04912042c4be\n\nI've changed the doctest to compute asinh(2.0) rather than asinh(1.0). Since asinh(2.0) is greater than one:\n\n\n```\nsage: maxima('asinh(2.0)')\n1.44363547517881\n```\n\n\nthere needs to be no leading zero, so the printing problem does not show. \n\nWhilst I can't guarantee every system will show 1.44363547517881, everyone who has tested this on their systems get **exactly** the same answer, so numerical rounding problems do not appear to exist here. Tests have been run on \n\n* Sun SPARC processors \n* Intel processors\n* AMD processors\n\nusing the following systems. \n\n* sage.math (Linux)\n* bsd.math (OS X)\n* t2.math (Solaris 10 on SPARC)\n* fulvia `@` skynet (Solaris 10 on x86)\n* My Sun Blade 1000 (Solaris 10). \n* My Sun Ultra 27 (OpenSolaris on x86) \n* 32-bit Linux system of John Cremona using an Intel processor\n* 64-bit Linux system of John Cremona using an AMD Opteron processor. \n\nA more accurate result, computed using arbitrary precision arithmetic in Mathematica is:\n\n\n```\nIn[4]:= N[ArcSinh[2],30]\n\nOut[4]= 1.44363547517881034249327674027 \n```\n\n\nSo every digit printed by Sage is correct. \n\nDave",
+    "created_at": "2010-08-19T04:09:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9693",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9693#issuecomment-94211",
+    "user": "drkirkby"
+}
+```
 
 As discussed here
 
@@ -140,22 +198,22 @@ sage: maxima('asinh(2.0)')
 
 there needs to be no leading zero, so the printing problem does not show. 
 
-Whilst I can't guarantee every system will show 1.44363547517881, everyone who has tested this on their systems get *exactly* the same answer, so numerical rounding problems do not appear to exist here. Tests have been run on 
+Whilst I can't guarantee every system will show 1.44363547517881, everyone who has tested this on their systems get **exactly** the same answer, so numerical rounding problems do not appear to exist here. Tests have been run on 
 
- * Sun SPARC processors 
- * Intel processors
- * AMD processors
+* Sun SPARC processors 
+* Intel processors
+* AMD processors
 
 using the following systems. 
 
- * sage.math (Linux)
- * bsd.math (OS X)
- * t2.math (Solaris 10 on SPARC)
- * fulvia `@` skynet (Solaris 10 on x86)
- * My Sun Blade 1000 (Solaris 10). 
- * My Sun Ultra 27 (OpenSolaris on x86) 
- * 32-bit Linux system of John Cremona using an Intel processor
- * 64-bit Linux system of John Cremona using an AMD Opteron processor. 
+* sage.math (Linux)
+* bsd.math (OS X)
+* t2.math (Solaris 10 on SPARC)
+* fulvia `@` skynet (Solaris 10 on x86)
+* My Sun Blade 1000 (Solaris 10). 
+* My Sun Ultra 27 (OpenSolaris on x86) 
+* 32-bit Linux system of John Cremona using an Intel processor
+* 64-bit Linux system of John Cremona using an AMD Opteron processor. 
 
 A more accurate result, computed using arbitrary precision arithmetic in Mathematica is:
 
@@ -172,43 +230,111 @@ So every digit printed by Sage is correct.
 Dave
 
 
+
 ---
+
+archive/issue_comments_094212.json:
+```json
+{
+    "body": "Attachment\n\nMercurial patch which changes computing asinh(1.0) to asinh(2.0)",
+    "created_at": "2010-08-19T04:11:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9693",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9693#issuecomment-94212",
+    "user": "drkirkby"
+}
+```
 
 Attachment
 
 Mercurial patch which changes computing asinh(1.0) to asinh(2.0)
 
 
+
 ---
 
-Comment by drkirkby created at 2010-08-19 04:14:40
+archive/issue_comments_094213.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-08-19T04:14:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9693",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9693#issuecomment-94213",
+    "user": "drkirkby"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by cremona created at 2010-08-19 19:15:51
+archive/issue_comments_094214.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-08-19T19:15:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9693",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9693#issuecomment-94214",
+    "user": "cremona"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by cremona created at 2010-08-19 19:15:51
+archive/issue_comments_094215.json:
+```json
+{
+    "body": "Works fine for me on both 32- and 64-bit linux machines.",
+    "created_at": "2010-08-19T19:15:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9693",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9693#issuecomment-94215",
+    "user": "cremona"
+}
+```
 
 Works fine for me on both 32- and 64-bit linux machines.
 
 
+
 ---
 
-Comment by mpatel created at 2010-08-23 22:14:19
+archive/issue_comments_094216.json:
+```json
+{
+    "body": "Changing priority from major to blocker.",
+    "created_at": "2010-08-23T22:14:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9693",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9693#issuecomment-94216",
+    "user": "mpatel"
+}
+```
 
 Changing priority from major to blocker.
 
 
+
 ---
 
-Comment by mpatel created at 2010-08-24 02:51:07
+archive/issue_comments_094217.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-08-24T02:51:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9693",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9693#issuecomment-94217",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed

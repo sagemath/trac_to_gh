@@ -1,11 +1,21 @@
 # Issue 6357: make sage -t worksheet.sws work
 
-Issue created by migration from https://trac.sagemath.org/ticket/6357
-
-Original creator: ncalexan
-
-Original creation time: 2009-06-18 17:05:01
-
+archive/issues_006357.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  kini novoselt\n\nKeywords: sage test worksheet doctest\n\nThis came up on the mailing list: it would be nice if sage -t worksheet.sws worked.\n\nSeparate, but also nice, would be \"worksheet-ify\" command that took a series of doctests and made a nice worksheet out of it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6357\n\n",
+    "created_at": "2009-06-18T17:05:01Z",
+    "labels": [
+        "doctest",
+        "major",
+        "bug"
+    ],
+    "title": "make sage -t worksheet.sws work",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6357",
+    "user": "ncalexan"
+}
+```
 Assignee: tbd
 
 CC:  kini novoselt
@@ -16,17 +26,43 @@ This came up on the mailing list: it would be nice if sage -t worksheet.sws work
 
 Separate, but also nice, would be "worksheet-ify" command that took a series of doctests and made a nice worksheet out of it.
 
+Issue created by migration from https://trac.sagemath.org/ticket/6357
+
+
+
+
 
 ---
 
-Comment by ncalexan created at 2009-06-18 17:05:08
+archive/issue_comments_050834.json:
+```json
+{
+    "body": "Changing type from defect to enhancement.",
+    "created_at": "2009-06-18T17:05:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6357",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6357#issuecomment-50834",
+    "user": "ncalexan"
+}
+```
 
 Changing type from defect to enhancement.
 
 
+
 ---
 
-Comment by was created at 2009-06-18 19:04:14
+archive/issue_comments_050835.json:
+```json
+{
+    "body": "(NOTE -- I rethought this in the last paragraph below, but didn't delete the stuff above, in case it is useful still.)\n\nHow I would implement this:\n\n```\n sage -t foo.sws\n```\n\nwould\n\n1. extract foo.sws into a temporary directory.  Try to use builtin library calls instead of calling tar on the command line, if possible.  Note that foo.sws is a .tar.bz2\n\n2. Ignore everything not in {{}}'s.  I'm using {{ instead of triple {'s to avoid trac's wiki preformat mode.\n\n3. Create a file foo.py.  For each chunk of code \n\n```\n{{\ninput lines\n///\noutput lines\n```\n\ninsert into the file foo.py lines:\n\n```\nsage: sage.server.notebook.cell.eval_for_testing(r\"\"\"input lines\ninput lines...\"\"\")\noutput lines\n```\n\nsince I think how the notebook works is best simulated by using the sage0 pexpect interface (that's what the notebook really uses).  \n\n4. Doctest foo.py using `sage -t foo.py` and let normal doctest report the results.  Possibly postprocess the `print sage0.eval(r\"\"\"` wrapper crap out of the result.\n\n\nThe above plan has the advantage that it reduces things to the existing python doctest framework instead of trying to write another doctest system.   One disadvantage is that using sage0 means that two Python processes are spawned instead of 1.\n\nThe function `sage.server.notebook.cell.eval_for_testing` has not been written.  It would make a blank directory, call sage0.eval -- just like the notebook does -- then apply all transformations the notebook does on output.  \n\nActually, writing the above makes me think that this problem is harder than I thought when I started writing this comment!  The problem is the output is potentially very complicated, since it can be a bunch of sagexxx.png files, html, etc.   Maybe a better approach is to completely use the notebook codebase -- as is done in all the notebook doctesting -- to run a *copy* of the whole worksheet (a sort of evaluate all) -- then simply compare the original's output to the copy's.",
+    "created_at": "2009-06-18T19:04:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6357",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6357#issuecomment-50835",
+    "user": "was"
+}
+```
 
 (NOTE -- I rethought this in the last paragraph below, but didn't delete the stuff above, in case it is useful still.)
 
@@ -71,57 +107,145 @@ The function `sage.server.notebook.cell.eval_for_testing` has not been written. 
 Actually, writing the above makes me think that this problem is harder than I thought when I started writing this comment!  The problem is the output is potentially very complicated, since it can be a bunch of sagexxx.png files, html, etc.   Maybe a better approach is to completely use the notebook codebase -- as is done in all the notebook doctesting -- to run a *copy* of the whole worksheet (a sort of evaluate all) -- then simply compare the original's output to the copy's.
 
 
+
 ---
 
-Comment by kini created at 2011-11-03 00:06:57
+archive/issue_comments_050836.json:
+```json
+{
+    "body": "Changing keywords from \"sage test worksheet doctest\" to \"doctest sws notebook worksheet test\".",
+    "created_at": "2011-11-03T00:06:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6357",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6357#issuecomment-50836",
+    "user": "kini"
+}
+```
 
 Changing keywords from "sage test worksheet doctest" to "doctest sws notebook worksheet test".
 
 
+
 ---
 
-Comment by roed created at 2013-03-14 21:51:30
+archive/issue_comments_050837.json:
+```json
+{
+    "body": "After #12415, this just needs to add a parser for .sws files in `sage.doctest.sources` analogous to `PythonSource`, `RestSource` and `TexSource`.",
+    "created_at": "2013-03-14T21:51:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6357",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6357#issuecomment-50837",
+    "user": "roed"
+}
+```
 
 After #12415, this just needs to add a parser for .sws files in `sage.doctest.sources` analogous to `PythonSource`, `RestSource` and `TexSource`.
 
 
+
 ---
 
-Comment by roed created at 2013-03-28 22:41:49
+archive/issue_comments_050838.json:
+```json
+{
+    "body": "Changing component from doctest to doctest framework.",
+    "created_at": "2013-03-28T22:41:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6357",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6357#issuecomment-50838",
+    "user": "roed"
+}
+```
 
 Changing component from doctest to doctest framework.
 
 
+
 ---
 
-Comment by novoselt created at 2017-01-02 22:48:07
+archive/issue_comments_050839.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2017-01-02T22:48:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6357",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6357#issuecomment-50839",
+    "user": "novoselt"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by novoselt created at 2017-01-02 22:48:07
+archive/issue_comments_050840.json:
+```json
+{
+    "body": "With no progress on it and with sws planned for retirement together with SageNB, I think we should close it.",
+    "created_at": "2017-01-02T22:48:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6357",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6357#issuecomment-50840",
+    "user": "novoselt"
+}
+```
 
 With no progress on it and with sws planned for retirement together with SageNB, I think we should close it.
 
 
+
 ---
 
-Comment by chapoton created at 2017-01-05 16:50:42
+archive/issue_comments_050841.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2017-01-05T16:50:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6357",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6357#issuecomment-50841",
+    "user": "chapoton"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by chapoton created at 2017-01-05 16:50:42
+archive/issue_comments_050842.json:
+```json
+{
+    "body": "yes, let us close that",
+    "created_at": "2017-01-05T16:50:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6357",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6357#issuecomment-50842",
+    "user": "chapoton"
+}
+```
 
 yes, let us close that
 
 
+
 ---
 
-Comment by vbraun created at 2017-01-21 18:03:11
+archive/issue_comments_050843.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2017-01-21T18:03:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6357",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6357#issuecomment-50843",
+    "user": "vbraun"
+}
+```
 
 Resolution: invalid

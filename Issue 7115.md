@@ -1,11 +1,21 @@
 # Issue 7115: building cliquer Cython extension fails on OS X 10.4 PPC (with cliquer-1.2.p0.spkg)
 
-Issue created by migration from https://trac.sagemath.org/ticket/7115
-
-Original creator: was
-
-Original creation time: 2009-10-04 17:34:39
-
+archive/issues_007115.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  georgsweber kcrisman\n\n\n```\nbuilding 'sage.graphs.cliquer' extension\ngcc -fno-strict-aliasing -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -I/home/wstein/screen/varro/build/sage-4.1.2.rc\n1.alpha1/local//include -I/home/wstein/screen/varro/build/sage-4.1.2.rc1.alpha1/local//include/csage -I/home/wstein/screen\n/varro/build/sage-4.1.2.rc1.alpha1/devel//sage/sage/ext -I/home/wstein/screen/varro/build/sage-4.1.2.rc1.alpha1/local/incl\nude/python2.6 -c sage/graphs/cliquer.c -o build/temp.macosx-10.3-ppc-2.6/sage/graphs/cliquer.o -w\ngcc -L/home/wstein/screen/varro/build/sage-4.1.2.rc1.alpha1/local/lib -bundle -undefined dynamic_lookup build/temp.macosx-\n10.3-ppc-2.6/sage/graphs/cliquer.o -L/home/wstein/screen/varro/build/sage-4.1.2.rc1.alpha1/local//lib -lcsage -lcliquer -l\nstdc++ -lntl -o build/lib.macosx-10.3-ppc-2.6/sage/graphs/cliquer.so\n/usr/libexec/gcc/powerpc-apple-darwin8/4.0.1/ld: can't locate file for: -lcliquer\ncollect2: ld returned 1 exit status\nerror: command 'gcc' failed with exit status 1\nsage: There was an error installing modified sage library code.\n\nERROR installing SAGE\n\nreal    32m56.224s\nuser    27m12.748s\nsys     2m58.301s\nsage: An error occurred while installing sage-4.1.2.rc1.alpha1\n\n\nvarro:~/screen/varro/build/sage-4.1.2.rc1.alpha1 wstein$ ls spkg/installed/*cliq*\nspkg/installed/cliquer-1.2.p0\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7115\n\n",
+    "created_at": "2009-10-04T17:34:39Z",
+    "labels": [
+        "build",
+        "blocker",
+        "bug"
+    ],
+    "title": "building cliquer Cython extension fails on OS X 10.4 PPC (with cliquer-1.2.p0.spkg)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7115",
+    "user": "was"
+}
+```
 Assignee: tbd
 
 CC:  georgsweber kcrisman
@@ -40,25 +50,62 @@ spkg/installed/cliquer-1.2.p0
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7115
+
+
+
+
 
 ---
 
-Comment by GeorgSWeber created at 2009-10-05 10:54:12
+archive/issue_comments_058961.json:
+```json
+{
+    "body": "That will most likely fail on MacIntel OS X 10.4, too (what about OS X 10.5, 10.6 ?!?).",
+    "created_at": "2009-10-05T10:54:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7115",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7115#issuecomment-58961",
+    "user": "GeorgSWeber"
+}
+```
 
 That will most likely fail on MacIntel OS X 10.4, too (what about OS X 10.5, 10.6 ?!?).
 
 
+
 ---
 
-Comment by GeorgSWeber created at 2009-10-05 21:13:39
+archive/issue_comments_058962.json:
+```json
+{
+    "body": "On my MacIntel with OS X 10.4, some \"libcliquer.so\" is built by the \"cliquer-1.2.p0.spkg\" introduced by #6681, instead of a \"libcliquer.dylib\". \nDuh.",
+    "created_at": "2009-10-05T21:13:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7115",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7115#issuecomment-58962",
+    "user": "GeorgSWeber"
+}
+```
 
 On my MacIntel with OS X 10.4, some "libcliquer.so" is built by the "cliquer-1.2.p0.spkg" introduced by #6681, instead of a "libcliquer.dylib". 
 Duh.
 
 
+
 ---
 
-Comment by GeorgSWeber created at 2009-10-05 21:43:52
+archive/issue_comments_058963.json:
+```json
+{
+    "body": "I'm pretty stunned. In the Makefile we explicitly have:\n\n```\ncl: cl.o cliquer.o graph.o reorder.o\n\t$(CC) $(LDFLAGS) $(SAGESOFLAGS) -o libcliquer.so cl.o cliquer.o graph.o reorder.o\n```\n\nso, no .dylib is to built (nor a .dll on Cygwin, if that would matter), but explicitly some file with the .so ending; and the SAGESOFLAGS are set to:\n\n```\nelif [ `uname` = \"Darwin\" ]; then\n    SAGESOFLAGS=\"-shared -dynamiclib\"\n    export SAGESOFLAGS\n```\n\nwith which on at least my MacIntel with OS X 10.4 and the newest Xcode to be had for this platform (v2.5), the compiler barfs:\n\n```\ngcc  -L/Users/Shared/sage/sage-4.1.2.alpha4/local/lib  -shared -dynamiclib -o libcliquer.so cl.o cliquer.o graph.o reorder.o\ni686-apple-darwin8-gcc-4.0.1: unrecognized option '-shared'\n```\n\nalthough it does produce some \"libcliquer.so\" file, and the makefile seems to exit with 0, pretending everything would be OK.\n\nHow could that possibly have worked on Mac OS X 10.6? Probably due to the GCC 4.0.1 --> 4.2.x change, but the latter is not available under Mac OS X 10.4.\n\nCan we back out cliquer-1.2.p0.spkg and revert to cliquer-1.2.spkg (re-opening #6681 as \"needs work\")?",
+    "created_at": "2009-10-05T21:43:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7115",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7115#issuecomment-58963",
+    "user": "GeorgSWeber"
+}
+```
 
 I'm pretty stunned. In the Makefile we explicitly have:
 
@@ -89,9 +136,20 @@ How could that possibly have worked on Mac OS X 10.6? Probably due to the GCC 4.
 Can we back out cliquer-1.2.p0.spkg and revert to cliquer-1.2.spkg (re-opening #6681 as "needs work")?
 
 
+
 ---
 
-Comment by GeorgSWeber created at 2009-10-05 22:02:11
+archive/issue_comments_058964.json:
+```json
+{
+    "body": "Strange, even the copy command:\n\n```\ncp -f *.h \"$SAGE_LOCAL/include/cliquer/\"\ncp -f libcliquer.so \"$SAGE_LOCAL/lib/\"\n```\n\nexplicitly references the .so file, and not some .dylib. At least on my Mac, this results in many errors on startup like:\n\n```\nImportError: dlopen(/Users/Shared/sage/sage-4.1.2.alpha4/local/lib/python2.6/site-packages/sage/graphs/cliquer.so, 2): Library not loaded: libcliquer.dylib\n  Referenced from: /Users/Shared/sage/sage-4.1.2.alpha4/local/lib/python2.6/site-packages/sage/graphs/cliquer.so\n  Reason: image not found\n```\n\nAgain, if that ever worked on Mac OS X 10.6 --- then Snow Leopard now accepts .so libraries, not only .dylib libraries (even for dynamic linking at run-time). Beautiful.\n\nI think I now know how to make up a cliquer-1.2.p1.spkg which works on \"non-Snow Leopard\" Macs, but it's midnight again, and I stop here.",
+    "created_at": "2009-10-05T22:02:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7115",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7115#issuecomment-58964",
+    "user": "GeorgSWeber"
+}
+```
 
 Strange, even the copy command:
 
@@ -113,23 +171,58 @@ Again, if that ever worked on Mac OS X 10.6 --- then Snow Leopard now accepts .s
 I think I now know how to make up a cliquer-1.2.p1.spkg which works on "non-Snow Leopard" Macs, but it's midnight again, and I stop here.
 
 
+
 ---
+
+archive/issue_comments_058965.json:
+```json
+{
+    "body": "Attachment\n\npatch against cliquer-1.2.p0.spkg (root hg repo)",
+    "created_at": "2009-10-06T22:20:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7115",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7115#issuecomment-58965",
+    "user": "GeorgSWeber"
+}
+```
 
 Attachment
 
 patch against cliquer-1.2.p0.spkg (root hg repo)
 
 
+
 ---
 
-Comment by GeorgSWeber created at 2009-10-06 22:24:30
+archive/issue_comments_058966.json:
+```json
+{
+    "body": "With a bit luck, the attached patch to \"spkg-install\" already might do the job. But it's totally untested yet, and I can't test it myself on e.g. Mac OS X 10.5 or 10.6 anyway. Could somebody take over?",
+    "created_at": "2009-10-06T22:24:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7115",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7115#issuecomment-58966",
+    "user": "GeorgSWeber"
+}
+```
 
 With a bit luck, the attached patch to "spkg-install" already might do the job. But it's totally untested yet, and I can't test it myself on e.g. Mac OS X 10.5 or 10.6 anyway. Could somebody take over?
 
 
+
 ---
 
-Comment by kcrisman created at 2009-10-07 14:34:00
+archive/issue_comments_058967.json:
+```json
+{
+    "body": "Okay, here's the results.\n\n```\nFinished extraction\n****************************************************\nHost system\nuname -a:\nDarwin <snip>-powerbook-g4-110.local 8.11.0 Darwin Kernel Version 8.11.0: Wed Oct 10 18:26:00 PDT 2007; root:xnu-792.24.17~1/RELEASE_PPC Power Macintosh powerpc\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: powerpc-apple-darwin8\nConfigured with: /var/tmp/gcc/gcc-5370~2/src/configure --disable-checking -enable-werror --prefix=/usr --mandir=/share/man --enable-languages=c,objc,c++,obj-c++ --program-transform-name=/^[cg][^.-]*$/s/$/-4.0/ --with-gxx-include-dir=/include/c++/4.0.0 --with-slibdir=/usr/lib --build=powerpc-apple-darwin8 --host=powerpc-apple-darwin8 --target=powerpc-apple-darwin8\nThread model: posix\ngcc version 4.0.1 (Apple Computer, Inc. build 5370)\n****************************************************\nCode will be built with debugging information present. Set 'SAGE_DEBUG' to 'no' if you don't want that.\nNo Fortran compiler has been defined. This is not normally a problem.\nUsing CC=gcc\nUsing CXX=g++\nUsing FC=\nUsing F77=\nUsing SAGE_FORTRAN=\nUsing SAGE_FORTRAN_LIB=\nThe following environment variables will be exported\nUsing CFLAGS= -O2  -g  -Wall -fomit-frame-pointer -funroll-loops -c -fPIC \nUsing CXXFLAGS= -O2  -g  -Wall \nUsing FCFLAGS= -O2  -g  -Wall \nUsing F77FLAGS= -O2  -g  -Wall \nUsing CPPFLAGS= -I/Users/<snip>/Desktop/sage-4.1.2.rc1.alpha3/local/include \nUsing LDFLAGS= -L/Users/<snip>/Desktop/sage-4.1.2.rc1.alpha3/local/lib \nUsing ABI=\nconfigure scripts and/or makefiles might override these later\n \ngcc  -O2  -g  -Wall -fomit-frame-pointer -funroll-loops -c -fPIC  -DENABLE_LONG_OPTIONS -o cl.o -c cl.c\ngcc  -O2  -g  -Wall -fomit-frame-pointer -funroll-loops -c -fPIC   -I/Users/<snip>/Desktop/sage-4.1.2.rc1.alpha3/local/include   -c -o cliquer.o cliquer.c\ngcc  -O2  -g  -Wall -fomit-frame-pointer -funroll-loops -c -fPIC   -I/Users/<snip>/Desktop/sage-4.1.2.rc1.alpha3/local/include   -c -o graph.o graph.c\ngcc  -O2  -g  -Wall -fomit-frame-pointer -funroll-loops -c -fPIC   -I/Users/<snip>/Desktop/sage-4.1.2.rc1.alpha3/local/include   -c -o reorder.o reorder.c\ngcc  -L/Users/<snip>/Desktop/sage-4.1.2.rc1.alpha3/local/lib  -dynamiclib -single_module -flat_namespace -undefined dynamic_lookup -o libcliquer.so cl.o cliquer.o graph.o reorder.o\nld: flag: -undefined dynamic_lookup can't be used with MACOSX_DEPLOYMENT_TARGET environment variable set to: 10.1\n/usr/libexec/gcc/powerpc-apple-darwin8/4.0.1/libtool: internal link edit command failed\nmake[2]: *** [cl] Error 1\nFailed to compile cliquer... exiting\n\nreal    0m4.676s\nuser    0m3.687s\nsys     0m0.439s\nsage: An error occurred while installing cliquer-1.2.p0\n```\n\n\nMore specifically:\n\n```\n-undefined dynamic_lookup can't be used with MACOSX_DEPLOYMENT_TARGET environment variable set to: 10.1\n```\n\n\nAny ideas?  I think maybe reverting the spkg might be the way to go if the mpfr problem can be resolved.",
+    "created_at": "2009-10-07T14:34:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7115",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7115#issuecomment-58967",
+    "user": "kcrisman"
+}
+```
 
 Okay, here's the results.
 
@@ -194,23 +287,56 @@ More specifically:
 Any ideas?  I think maybe reverting the spkg might be the way to go if the mpfr problem can be resolved.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-10-07 14:43:46
+archive/issue_comments_058968.json:
+```json
+{
+    "body": "Turns out this is something one can fix, since the default is \"not to create weak links\" or something like that.  See e.g. [http://web.mit.edu/darwin/src/modules/cctools/RelNotes/CompilerTools.html](http://web.mit.edu/darwin/src/modules/cctools/RelNotes/CompilerTools.html).   I'm going to try something with that, though I understand very little about build variables.",
+    "created_at": "2009-10-07T14:43:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7115",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7115#issuecomment-58968",
+    "user": "kcrisman"
+}
+```
 
 Turns out this is something one can fix, since the default is "not to create weak links" or something like that.  See e.g. [http://web.mit.edu/darwin/src/modules/cctools/RelNotes/CompilerTools.html](http://web.mit.edu/darwin/src/modules/cctools/RelNotes/CompilerTools.html).   I'm going to try something with that, though I understand very little about build variables.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-10-07 15:02:18
+archive/issue_comments_058969.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-10-07T15:02:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7115",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7115#issuecomment-58969",
+    "user": "kcrisman"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-10-07 15:02:18
+archive/issue_comments_058970.json:
+```json
+{
+    "body": "This change to spkg-install works.  I don't know how to make a patch on something outside the main Sage tree, I'm sorry.\n\n```\n# Flags for building a dynamically linked shared object.\nSAGESOFLAGS=\" \"\nif [ `uname` = \"Linux\" ]; then\n    SAGESOFLAGS=\"-shared -Wl,-soname,libcliquer.so\"\n    export SAGESOFLAGS\nelif [ `uname` = \"Darwin\" ]; then\n    MACOSX_DEPLOYMENT_TARGET=\"10.3\"\n    export MACOSX_DEPLOYMENT_TARGET\n    SAGESOFLAGS=\"-dynamiclib -single_module -flat_namespace -undefined dynamic_lookup\"\n    export SAGESOFLAGS\nelif [ `uname` = \"SunOS\" ]; then\n    SAGESOFLAGS=\"-G -Bdynamic\"\n    export SAGESOFLAGS\nelse\n    # We exit here, since we are possibly on an unsupported platform.\n    echo \"Cannot determine your platform or it is not supported... exiting\"\n    exit 1\nfi\n```\n\nThe reason this never came up before is because only Python, of all the spkgs, does anything like this (do a grep to see).  And I guess it didn't come up on cliquer before because of the use of Scons, whatever that is?",
+    "created_at": "2009-10-07T15:02:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7115",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7115#issuecomment-58970",
+    "user": "kcrisman"
+}
+```
 
 This change to spkg-install works.  I don't know how to make a patch on something outside the main Sage tree, I'm sorry.
 
@@ -238,16 +364,40 @@ fi
 The reason this never came up before is because only Python, of all the spkgs, does anything like this (do a grep to see).  And I guess it didn't come up on cliquer before because of the use of Scons, whatever that is?
 
 
+
 ---
+
+archive/issue_comments_058971.json:
+```json
+{
+    "body": "Attachment\n\nAnd it goes without saying that the change to the end of the file by gsw was still necessary as well.\\",
+    "created_at": "2009-10-07T15:08:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7115",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7115#issuecomment-58971",
+    "user": "kcrisman"
+}
+```
 
 Attachment
 
 And it goes without saying that the change to the end of the file by gsw was still necessary as well.\
 
 
+
 ---
 
-Comment by GeorgSWeber created at 2009-10-07 21:18:27
+archive/issue_comments_058972.json:
+```json
+{
+    "body": "It does feel good to be part of a team!\n\nI created a new spkg (with the adapted \"spkg-install\" as above, and updated \"SPKG.txt\" and hg repo), here it is:\nhttp://sage.math.washington.edu/home/weberg/spkg/cliquer-1.2.p1.spkg\nTested successfully on both MacIntel OS X 10.4 and MacPPC OS X 10.4, and also:\n\n```\nsage -t -long \"devel/sage/sage/graphs/cliquer.pyx\"          \n         [8.3 s]\n \n----------------------------------------------------------------------\nAll tests passed!\n```\n\n\nTwo final remarks. I work often from the command line (more precisely: bash shell), started with \"./sage -sh\" in the root directory of the Sage version I want to work with. Issuing \"hg\" then fires up exactly the hg of the respective Sage install. I don't even have a system-wide hg installation. Mercurial repositories are also used in spkg's. Just use \"sage -f -s foobar.spkg\" to leave the spkg resp. its contents undeleted in spkg/build/foobar/. \"cd\" there and do \"hg export default\" to see the latest commit checked in. After doing some changes (and checking with \"hg diff\" what I would check in ...), I do firstly\n\n```\nhg commit -m \"fix for trac ticket #12345\"\n```\n\nand if then, I want to create a patch (and not the spkg as a whole), I do what I do usually for Sage library patches, too:\n\n```\nhg export default >> ../../../../patches/trac_12345.patch\n```\n\nSecondly, regarding the MACOSX_DEPLOYMENT_TARGET=\"10.3\" thing: I knew that essentially. However, I was not working on my clean-room OS partition, but from my work installation. There I have MACOSX_DEPLOYMENT_TARGET=\"10.4\" in my .bashrc file, because it was so annoying to add it every now and again. So I simply forgot about that, sorry! If you take any \"install.log\" from a recent Sage install on Mac OS X, and search for \"-undefined dynamic_lookup\", you'll find tons of occurences. There seems to by another method to tell the compiler that it is OK to use this, by adding this option to the other linker options:\n\n```\n -mmacosx-version-min=10.4\n```\n\nProbably that way is the better way in light of cross-compiling Sage (if we ever will get to this anytime soon).",
+    "created_at": "2009-10-07T21:18:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7115",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7115#issuecomment-58972",
+    "user": "GeorgSWeber"
+}
+```
 
 It does feel good to be part of a team!
 
@@ -285,9 +435,20 @@ Secondly, regarding the MACOSX_DEPLOYMENT_TARGET="10.3" thing: I knew that essen
 Probably that way is the better way in light of cross-compiling Sage (if we ever will get to this anytime soon).
 
 
+
 ---
 
-Comment by kcrisman created at 2009-10-08 00:31:25
+archive/issue_comments_058973.json:
+```json
+{
+    "body": "Ironically, I encountered one problem.  At startup when Sage tried to import * from sage.graphs.cliquer, it couldn't find graphs/cliquer.so.  I had to change the end to the following:\n\n```\nif [ `uname` = \"Darwin\" ]; then\n    cp -f libcliquer.so \"$SAGE_LOCAL/lib/libcliquer.dylib\"\nfi\n\ncp -f libcliquer.so \"$SAGE_LOCAL/lib/\"\n```\n\nThat is, I copied both the dylib and the so files.  And then after sage -f the spkg again, all was well.  But then I rethought it, and tried what I already posted again, and it didn't seem to affect things.  The problem is that I don't understand enough about such things to know whether this is worrisome.\n\nOn the 10.3 etc. thing, I agree that the other option is probably better.  I'm just amazed that I found anything useful at all on the Internet about this!\n\nI can try to compile this again with your spkg, I suppose, but I want to point out that it will take the better part of 8 hours.  You might want to email William or someone else who is doing a lot of tests to see if they can check to make sure this compiles fine on e.g. Solaris, Snow Leopard.  Who knows what havoc it might cause?  Though I hope it won't be too bad.\n\nAlso, if you know a little about shell script, can you take a look at #7107?  I think it solves the problem, but needs someone who knows something to put it together.",
+    "created_at": "2009-10-08T00:31:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7115",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7115#issuecomment-58973",
+    "user": "kcrisman"
+}
+```
 
 Ironically, I encountered one problem.  At startup when Sage tried to import * from sage.graphs.cliquer, it couldn't find graphs/cliquer.so.  I had to change the end to the following:
 
@@ -308,8 +469,19 @@ I can try to compile this again with your spkg, I suppose, but I want to point o
 Also, if you know a little about shell script, can you take a look at #7107?  I think it solves the problem, but needs someone who knows something to put it together.
 
 
+
 ---
 
-Comment by was created at 2009-10-12 04:51:25
+archive/issue_comments_058974.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-10-12T04:51:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7115",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7115#issuecomment-58974",
+    "user": "was"
+}
+```
 
 Resolution: fixed

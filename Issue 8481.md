@@ -1,11 +1,21 @@
 # Issue 8481: lift doesn't work for vector space homomorphisms
 
-Issue created by migration from https://trac.sagemath.org/ticket/8481
-
-Original creator: jhpalmieri
-
-Original creation time: 2010-03-07 22:49:07
-
+archive/issues_008481.json:
+```json
+{
+    "body": "Assignee: was\n\n\n```\nsage: V = QQ**2\nsage: W = QQ**2\nsage: f = V.hom([W.1, W.1])\nsage: f.lift(W.1)\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/Users/palmieri/<ipython console> in <module>()\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/modules/free_module_morphism.pyc in lift(self, x)\n    337         x = self.codomain()(x)\n    338         A = self.matrix()\n--> 339         H, U = A.hermite_form(transformation=True,include_zero_rows=False)\n    340         Y = H.solve_left(vector(self.codomain().coordinates(x)))\n    341         C = Y*U\n\n...\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8481\n\n",
+    "created_at": "2010-03-07T22:49:07Z",
+    "labels": [
+        "linear algebra",
+        "minor",
+        "bug"
+    ],
+    "title": "lift doesn't work for vector space homomorphisms",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8481",
+    "user": "jhpalmieri"
+}
+```
 Assignee: was
 
 
@@ -30,29 +40,79 @@ AttributeError                            Traceback (most recent call last)
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8481
+
+
+
+
 
 ---
 
-Comment by jhpalmieri created at 2010-03-08 23:47:28
+archive/issue_comments_076435.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-03-08T23:47:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8481",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8481#issuecomment-76435",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_076436.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-03-08T23:55:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8481",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8481#issuecomment-76436",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2010-04-05 02:55:23
+archive/issue_comments_076437.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-04-05T02:55:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8481",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8481#issuecomment-76437",
+    "user": "was"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by was created at 2010-04-05 02:55:23
+archive/issue_comments_076438.json:
+```json
+{
+    "body": "1. Can you change this to only do check=True when the base ring is *not* a field:\n\n```\n        5408\t \t                    check=False, copy=False, coerce=False) \n \t5408\t                    check=True, copy=False, coerce=False) \n```\n\nOr, better yet, always do check=False unless the components of v are not all in the base ring.   The problem is that check=True could be *massively* expensive -- you could add hours to the runtimes of real-world computations with this one little change.  \n\n2. I'm happy with all the other code.  \n\nI'm running tests and will report in a moment.",
+    "created_at": "2010-04-05T02:55:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8481",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8481#issuecomment-76438",
+    "user": "was"
+}
+```
 
 1. Can you change this to only do check=True when the base ring is *not* a field:
 
@@ -68,50 +128,129 @@ Or, better yet, always do check=False unless the components of v are not all in 
 I'm running tests and will report in a moment.
 
 
+
 ---
 
-Comment by was created at 2010-04-05 03:02:57
+archive/issue_comments_076439.json:
+```json
+{
+    "body": "All doctests pass fine.",
+    "created_at": "2010-04-05T03:02:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8481",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8481#issuecomment-76439",
+    "user": "was"
+}
+```
 
 All doctests pass fine.
 
 
+
 ---
+
+archive/issue_comments_076440.json:
+```json
+{
+    "body": "Attachment\n\nHere's a new patch.  I hope the speed hit isn't too bad with this one.",
+    "created_at": "2010-04-06T00:00:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8481",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8481#issuecomment-76440",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
 Here's a new patch.  I hope the speed hit isn't too bad with this one.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-06 00:00:00
+archive/issue_comments_076441.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-04-06T00:00:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8481",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8481#issuecomment-76441",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by was created at 2010-04-06 05:46:21
+archive/issue_comments_076442.json:
+```json
+{
+    "body": "OK, looks good!",
+    "created_at": "2010-04-06T05:46:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8481",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8481#issuecomment-76442",
+    "user": "was"
+}
+```
 
 OK, looks good!
 
 
+
 ---
 
-Comment by was created at 2010-04-06 05:46:21
+archive/issue_comments_076443.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-04-06T05:46:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8481",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8481#issuecomment-76443",
+    "user": "was"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-15 23:54:05
+archive/issue_comments_076444.json:
+```json
+{
+    "body": "Merged \"trac_8481-lift.v2.patch\" into 4.4.alpha0.",
+    "created_at": "2010-04-15T23:54:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8481",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8481#issuecomment-76444",
+    "user": "jhpalmieri"
+}
+```
 
 Merged "trac_8481-lift.v2.patch" into 4.4.alpha0.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-15 23:54:05
+archive/issue_comments_076445.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-04-15T23:54:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8481",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8481#issuecomment-76445",
+    "user": "jhpalmieri"
+}
+```
 
 Resolution: fixed

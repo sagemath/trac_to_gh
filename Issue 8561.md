@@ -1,11 +1,21 @@
 # Issue 8561: Implement PicklableFunction(interactive_function)
 
-Issue created by migration from https://trac.sagemath.org/ticket/8561
-
-Original creator: nthiery
-
-Original creation time: 2010-03-19 15:52:59
-
+archive/issues_008561.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  sage-combinat\n\nKeywords: Pickling, lambda, interactively defined functions\n\nExtend sage.misc.fpickle.pyx with a PicklableFunction class wrapping\ninteractively defined (simple) functions to make them picklable:\n\n\n```\n    sage: f = lambda x: x^2\n    sage: loads(dumps(f))\n    ------------------------------------------------------------\n    Traceback (most recent call last):\n      File \"<ipython console>\", line 1, in <module>\n      File \"sage_object.pyx\", line 792, in sage.structure.sage_object.dumps (sage/structure/sage_object.c:8357)\n    PicklingError: Can't pickle <type 'function'>: attribute lookup __builtin__.function failed\n\n    sage: f = PicklableFunction(f)\n    sage: f(3)\n    9\n    sage: f == loads(dumps(f))\n    True\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8561\n\n",
+    "created_at": "2010-03-19T15:52:59Z",
+    "labels": [
+        "pickling",
+        "major",
+        "enhancement"
+    ],
+    "title": "Implement PicklableFunction(interactive_function)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8561",
+    "user": "nthiery"
+}
+```
 Assignee: was
 
 CC:  sage-combinat
@@ -34,16 +44,42 @@ interactively defined (simple) functions to make them picklable:
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8561
+
+
+
+
 
 ---
 
-Comment by nthiery created at 2010-03-19 15:53:16
+archive/issue_comments_077512.json:
+```json
+{
+    "body": "Changing assignee from was to nthiery.",
+    "created_at": "2010-03-19T15:53:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8561",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8561#issuecomment-77512",
+    "user": "nthiery"
+}
+```
 
 Changing assignee from was to nthiery.
 
 
+
 ---
 
-Comment by nbruin created at 2013-01-09 23:45:48
+archive/issue_comments_077513.json:
+```json
+{
+    "body": "See #11845 for some code in this direction and for warnings why this should never be allowed in \"standard\" pickles.",
+    "created_at": "2013-01-09T23:45:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8561",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8561#issuecomment-77513",
+    "user": "nbruin"
+}
+```
 
 See #11845 for some code in this direction and for warnings why this should never be allowed in "standard" pickles.

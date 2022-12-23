@@ -1,11 +1,21 @@
 # Issue 7033: libfplll can't find _gmpz_init in -lgmp
 
-Issue created by migration from https://trac.sagemath.org/ticket/7033
-
-Original creator: drkirkby
-
-Original creation time: 2009-09-27 14:51:48
-
+archive/issues_007033.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  dimpase\n\nKeywords: solaris gmp\n\nUsing\n\n* Solaris 10 update 7 on SPARC\n* sage-4.1.2.alpha2\n* Sun Studio 12.1\n* An updated configure script to allow the Sun compiler to be used http://sagetrac.org/sage_trac/ticket/7021\n\nCC was set to the Sun C compiler, and CXX to the Sun C++ compiler, \n\n\n```\nchecking whether we are using the GNU C++ compiler... (cached) no\nchecking whether /opt/xxxsunstudio12.1/bin/CC accepts -g... (cached) yes\nchecking dependency style of /opt/xxxsunstudio12.1/bin/CC... (cached) none\nchecking for gcc... (cached) /opt/xxxsunstudio12.1/bin/cc\nchecking whether we are using the GNU C compiler... (cached) no\nchecking whether /opt/xxxsunstudio12.1/bin/cc accepts -g... (cached) yes\nchecking for /opt/xxxsunstudio12.1/bin/cc option to accept ISO C89... (cached) none needed\nchecking dependency style of /opt/xxxsunstudio12.1/bin/cc... (cached) none\nchecking whether make sets $(MAKE)... (cached) yes\nchecking for __gmpz_init in -lgmp... no\nconfigure: error: GNU MP not found, see http://gmplib.org\nError configuring libfplll\n\nreal    0m45.568s\nuser    0m10.239s\nsys     0m25.294s\n```\n\n\nmpir is insalled ok - all the gmp headers and libraries have been built. I suspect some programs not to accept mpir as being the same as gmp when the compiler is not gcc.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7033\n\n",
+    "created_at": "2009-09-27T14:51:48Z",
+    "labels": [
+        "build",
+        "major",
+        "bug"
+    ],
+    "title": "libfplll can't find _gmpz_init in -lgmp",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7033",
+    "user": "drkirkby"
+}
+```
 Assignee: tbd
 
 CC:  dimpase
@@ -14,10 +24,10 @@ Keywords: solaris gmp
 
 Using
 
-    * Solaris 10 update 7 on SPARC
-    * sage-4.1.2.alpha2
-    * Sun Studio 12.1
-    * An updated configure script to allow the Sun compiler to be used http://sagetrac.org/sage_trac/ticket/7021
+* Solaris 10 update 7 on SPARC
+* sage-4.1.2.alpha2
+* Sun Studio 12.1
+* An updated configure script to allow the Sun compiler to be used http://sagetrac.org/sage_trac/ticket/7021
 
 CC was set to the Sun C compiler, and CXX to the Sun C++ compiler, 
 
@@ -44,30 +54,78 @@ sys     0m25.294s
 
 mpir is insalled ok - all the gmp headers and libraries have been built. I suspect some programs not to accept mpir as being the same as gmp when the compiler is not gcc.
 
+Issue created by migration from https://trac.sagemath.org/ticket/7033
+
+
+
+
 
 ---
 
-Comment by jdemeyer created at 2015-09-08 12:48:16
+archive/issue_comments_058241.json:
+```json
+{
+    "body": "Changing component from build to packages: standard.",
+    "created_at": "2015-09-08T12:48:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7033",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7033#issuecomment-58241",
+    "user": "jdemeyer"
+}
+```
 
 Changing component from build to packages: standard.
 
 
+
 ---
 
-Comment by mkoeppe created at 2020-08-17 16:38:58
+archive/issue_comments_058242.json:
+```json
+{
+    "body": "Outdated spkg or build system ticket, should be closed",
+    "created_at": "2020-08-17T16:38:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7033",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7033#issuecomment-58242",
+    "user": "mkoeppe"
+}
+```
 
 Outdated spkg or build system ticket, should be closed
 
 
+
 ---
 
-Comment by mkoeppe created at 2020-08-17 16:38:58
+archive/issue_comments_058243.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2020-08-17T16:38:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7033",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7033#issuecomment-58243",
+    "user": "mkoeppe"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by slelievre created at 2020-08-22 07:15:47
+archive/issue_comments_058244.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2020-08-22T07:15:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7033",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7033#issuecomment-58244",
+    "user": "slelievre"
+}
+```
 
 Resolution: invalid

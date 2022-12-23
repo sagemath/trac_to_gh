@@ -1,11 +1,21 @@
 # Issue 5131: regression in free modules -- who broke my __mul__
 
-Issue created by migration from https://trac.sagemath.org/ticket/5131
-
-Original creator: was
-
-Original creation time: 2009-01-29 23:05:17
-
+archive/issues_005131.json:
+```json
+{
+    "body": "Assignee: was\n\nIf A is a free module and r a ring element then r*A and A*r used to work fine. But somebody broke them.\n\nIn the good ol days:\n\n```\nwstein@sage:/disk/scratch/mabshoff-sage-releases/sage-0.10.0$ ./sage\n[...]\nsage: A = ZZ^3\nsage: A\n _5 = Ambient free module of rank 3 over the principal ideal domain Integer Ring\nsage: 2*A\n _6 = \nFree module of degree 3 and rank 3 over Integer Ring\nEchelon basis matrix:\n[2 0 0]\n[0 2 0]\n[0 0 2]\n```\n\n\nNow:\n\n```\nsage: A = ZZ^3\nsage: 2*A\nTraceback (most recent call last):\n...\nTypeError: unsupported operand parent(s) for '*': 'Integer Ring' and '<class 'sage.modules.free_module.FreeModule_ambient_pid'>'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5131\n\n",
+    "created_at": "2009-01-29T23:05:17Z",
+    "labels": [
+        "linear algebra",
+        "major",
+        "bug"
+    ],
+    "title": "regression in free modules -- who broke my __mul__",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5131",
+    "user": "was"
+}
+```
 Assignee: was
 
 If A is a free module and r a ring element then r*A and A*r used to work fine. But somebody broke them.
@@ -39,10 +49,25 @@ TypeError: unsupported operand parent(s) for '*': 'Integer Ring' and '<class 'sa
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5131
+
+
+
+
 
 ---
 
-Comment by tscrim created at 2014-07-18 02:17:16
+archive/issue_comments_039234.json:
+```json
+{
+    "body": "Now also works for matrices:\n\n```\nsage: A = ZZ^3\nsage: m = matrix(3, range(9))\nsage: A * m\nFree module of degree 3 and rank 2 over Integer Ring\nEchelon basis matrix:\n[1 1 1]\n[0 3 6]\nsage: m * A\nFree module of degree 3 and rank 2 over Integer Ring\nEchelon basis matrix:\n[ 3  0 -3]\n[ 0  1  2]\n```\n\n----\nNew commits:",
+    "created_at": "2014-07-18T02:17:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5131",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5131#issuecomment-39234",
+    "user": "tscrim"
+}
+```
 
 Now also works for matrices:
 
@@ -65,36 +90,91 @@ Echelon basis matrix:
 New commits:
 
 
+
 ---
 
-Comment by tscrim created at 2014-07-18 02:17:16
+archive/issue_comments_039235.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2014-07-18T02:17:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5131",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5131#issuecomment-39235",
+    "user": "tscrim"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by git created at 2014-07-20 17:00:56
+archive/issue_comments_039236.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2014-07-20T17:00:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5131",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5131#issuecomment-39236",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by jkeitel created at 2014-07-20 17:49:24
+archive/issue_comments_039237.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2014-07-20T17:49:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5131",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5131#issuecomment-39237",
+    "user": "jkeitel"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jkeitel created at 2014-07-20 17:49:24
+archive/issue_comments_039238.json:
+```json
+{
+    "body": "Hi Travis, the patch looks good to me.",
+    "created_at": "2014-07-20T17:49:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5131",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5131#issuecomment-39238",
+    "user": "jkeitel"
+}
+```
 
 Hi Travis, the patch looks good to me.
 
 
+
 ---
 
-Comment by vbraun created at 2014-07-21 17:38:08
+archive/issue_comments_039239.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2014-07-21T17:38:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5131",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5131#issuecomment-39239",
+    "user": "vbraun"
+}
+```
 
 Resolution: fixed

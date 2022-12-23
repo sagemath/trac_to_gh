@@ -1,11 +1,21 @@
 # Issue 7838: Remove script using ctypes from ATLAS
 
-Issue created by migration from https://trac.sagemath.org/ticket/7838
-
-Original creator: drkirkby
-
-Original creation time: 2010-01-04 03:07:50
-
+archive/issues_007838.json:
+```json
+{
+    "body": "Assignee: GeorgSWeber\n\nCC:  jsp vengoroso@gmail.com\n\n#1497 added a few lines of code \n\n\n```/usr/bin/env\nimport ctypes\nprint str(8*ctypes.sizeof(ctypes.c_long))\n```\n\ninto the ATLAS build process, which reports the number of bits Sage was compiled as. It makes use of the module 'ctypes' in Python, but \n\nhttp://docs.activestate.com/activepython/2.5/whatsincluded.html\n\nshows that ctypes is seriouly on many platforms, including\n\n* Older linux-x86 - build failures\n* aix-powerpc\tbuild failures\n* linux-ia64\tbuild failures\n* solaris-sparc build failures\n* solaris-x86\tbuild failures\n* hpux-parisc\tlibffi not ported to PA-RISC arch\n* hpux-ia64\tbuild failures\n* win64\t\n\nHence the code needs replacing with something less broken\n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/7838\n\n",
+    "created_at": "2010-01-04T03:07:50Z",
+    "labels": [
+        "build",
+        "major",
+        "bug"
+    ],
+    "title": "Remove script using ctypes from ATLAS",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7838",
+    "user": "drkirkby"
+}
+```
 Assignee: GeorgSWeber
 
 CC:  jsp vengoroso@gmail.com
@@ -24,37 +34,74 @@ http://docs.activestate.com/activepython/2.5/whatsincluded.html
 
 shows that ctypes is seriouly on many platforms, including
 
- * Older linux-x86 - build failures
- * aix-powerpc	build failures
- * linux-ia64	build failures
- * solaris-sparc build failures
- * solaris-x86	build failures
- * hpux-parisc	libffi not ported to PA-RISC arch
- * hpux-ia64	build failures
- * win64	
+* Older linux-x86 - build failures
+* aix-powerpc	build failures
+* linux-ia64	build failures
+* solaris-sparc build failures
+* solaris-x86	build failures
+* hpux-parisc	libffi not ported to PA-RISC arch
+* hpux-ia64	build failures
+* win64	
 
 Hence the code needs replacing with something less broken
 
 Dave
 
+Issue created by migration from https://trac.sagemath.org/ticket/7838
+
+
+
+
 
 ---
 
-Comment by drkirkby created at 2010-01-04 03:37:40
+archive/issue_comments_067899.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"ctypes atlas\".",
+    "created_at": "2010-01-04T03:37:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7838",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7838#issuecomment-67899",
+    "user": "drkirkby"
+}
+```
 
 Changing keywords from "" to "ctypes atlas".
 
 
+
 ---
 
-Comment by drkirkby created at 2010-01-05 00:53:53
+archive/issue_comments_067900.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-01-05T00:53:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7838",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7838#issuecomment-67900",
+    "user": "drkirkby"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-01-05 00:53:53
+archive/issue_comments_067901.json:
+```json
+{
+    "body": "See: \n\nhttp://boxen.math.washington.edu/home/kirkby/portability/atlas-3.8.3.p10/\n\nfor an updated version of ATLAS which fixes this issue. bitwidth.py has been changed. \n\nThe 4/5 lines of code I used were posted on sage-devel by  vengoroso`@`gmail.com but I don't know his fully name, so can't give full credit. Please let us know your full name! \n\nNote however, for me at least, ATLAS does not build fully, but at least it gets further than it did on Open Solaris. \n\nDave",
+    "created_at": "2010-01-05T00:53:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7838",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7838#issuecomment-67901",
+    "user": "drkirkby"
+}
+```
 
 See: 
 
@@ -69,9 +116,20 @@ Note however, for me at least, ATLAS does not build fully, but at least it gets 
 Dave
 
 
+
 ---
 
-Comment by jsp created at 2010-01-05 14:09:57
+archive/issue_comments_067902.json:
+```json
+{
+    "body": "The fix looks good.\n\nMy setup is clearly not ok. The build failed at the end:\n\n\n```\nATLAS install complete.  Examine \nATLAS/bin/<arch>/INSTALL_LOG/SUMMARY.LOG for details.\nmake[1]: Leaving directory `/export/home/jaap/Downloads/sage-4.3.1.alpha0/spkg/build/atlas-3.8.3.p10/ATLAS-build'\nmake clean\nmake[1]: Entering directory `/export/home/jaap/Downloads/sage-4.3.1.alpha0/spkg/build/atlas-3.8.3.p10/ATLAS-build'\nrm -f *.o x* config?.out *core*\nmake[1]: Leaving directory `/export/home/jaap/Downloads/sage-4.3.1.alpha0/spkg/build/atlas-3.8.3.p10/ATLAS-build'\nFinished building ATLAS core\nThe Makefile generated in ATLAS for building shared libraries\nassumes the linker is the GNU linker, which it not true in\nyour setup. (It is generally considered better to use the\nSun linker in /usr/ccs/bin rather than the GNU linker from binutils)\nThe linker flags in /export/home/jaap/Downloads/sage-4.3.1.alpha0/spkg/build/atlas-3.8.3.p10/ATLAS-build/lib/Makefile will be changed. \n'-shared' will be changed to '-G'\n'-soname' will be changed to '-h'\n'--whole-archive' will be changed to '-zallextract'\n'--no-whole-archive' will be changed to '-zdefaultextract'\nA copy of the original Makefile will be copied to Makefile.orig\nrm -f libatlas.so liblapack.so\nmake libatlas.so liblapack.so libf77blas.so libcblas.so liblapack.so\nmake[1]: Entering directory `/export/home/jaap/Downloads/sage-4.3.1.alpha0/spkg/build/atlas-3.8.3.p10/ATLAS-build/lib'\nld -melf_x86_64 -G -h libatlas.so -o libatlas.so \\\n        -z allextract libatlas.a -z defaultextract -lc -lm\nld: warning: file libatlas.a(ATL_flushcache.o): wrong ELF class: ELFCLASS64\nld: fatal: entry point symbol `lf_x86_64' is undefined\nmake[1]: *** [libatlas.so] Error 1\nmake[1]: Leaving directory `/export/home/jaap/Downloads/sage-4.3.1.alpha0/spkg/build/atlas-3.8.3.p10/ATLAS-build/lib'\nmake: *** [shared] Error 2\nBuilding shared ATLAS libraries failed\nFailed to build ATLAS.\n\nreal\t155m22.653s\nuser\t147m22.502s\nsys\t6m4.162s\nsage: An error occurred while installing atlas-3.8.3.p10\n\n```\n\n\nMaybe I should use gcc gcc-4.4.2 with the gnu loader?\n\nJaap",
+    "created_at": "2010-01-05T14:09:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7838",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7838#issuecomment-67902",
+    "user": "jsp"
+}
+```
 
 The fix looks good.
 
@@ -123,9 +181,20 @@ Maybe I should use gcc gcc-4.4.2 with the gnu loader?
 Jaap
 
 
+
 ---
 
-Comment by was created at 2010-01-05 14:19:47
+archive/issue_comments_067903.json:
+```json
+{
+    "body": "\n```\nJavier Lopez\n to wstein\n\t\nshow details 4:39 AM (1 hour ago)\n\t\nHi William,\n\nreply here since I've got no trac account. My full name is Javier\nL\u00f3pez Pe\u00f1a, but no credit is needed for such a small contribution.\n\nCheers\nJ\n```\n",
+    "created_at": "2010-01-05T14:19:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7838",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7838#issuecomment-67903",
+    "user": "was"
+}
+```
 
 
 ```
@@ -145,9 +214,20 @@ J
 
 
 
+
 ---
 
-Comment by jsp created at 2010-01-12 14:45:34
+archive/issue_comments_067904.json:
+```json
+{
+    "body": "The patch works ok. Positive review.\n\nRemoved cwitty from the cc list.\n\nAnd Javier from the authors list (see comment above).\n\nJaap",
+    "created_at": "2010-01-12T14:45:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7838",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7838#issuecomment-67904",
+    "user": "jsp"
+}
+```
 
 The patch works ok. Positive review.
 
@@ -158,15 +238,37 @@ And Javier from the authors list (see comment above).
 Jaap
 
 
+
 ---
 
-Comment by jsp created at 2010-01-12 14:45:34
+archive/issue_comments_067905.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-01-12T14:45:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7838",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7838#issuecomment-67905",
+    "user": "jsp"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by rlm created at 2010-01-14 02:35:54
+archive/issue_comments_067906.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-14T02:35:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7838",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7838#issuecomment-67906",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed

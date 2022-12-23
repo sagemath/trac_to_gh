@@ -1,11 +1,21 @@
 # Issue 5024: [with spkg, needs review] Solaris 10: Do not create dynamic liblpack on non-Linux
 
-Issue created by migration from https://trac.sagemath.org/ticket/5024
-
-Original creator: mabshoff
-
-Original creation time: 2009-01-19 11:07:40
-
+archive/issues_005024.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nWhen we create a dynamic liblapack.so on non-Linux it often creates broken imports for numpy and scipy, so don't do it for now.\n\nThe atlas.spkg at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.3/alpha0/atlas-3.8.2.p1.spkg\n\nfixes the problem.\n\nCheers,\n\nMichael\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5024\n\n",
+    "created_at": "2009-01-19T11:07:40Z",
+    "labels": [
+        "packages: standard",
+        "critical",
+        "bug"
+    ],
+    "title": "[with spkg, needs review] Solaris 10: Do not create dynamic liblpack on non-Linux",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5024",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 When we create a dynamic liblapack.so on non-Linux it often creates broken imports for numpy and scipy, so don't do it for now.
@@ -21,30 +31,78 @@ Cheers,
 Michael
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5024
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2009-01-19 11:07:47
+archive/issue_comments_038261.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-01-19T11:07:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5024",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5024#issuecomment-38261",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mhansen created at 2009-01-19 11:33:10
+archive/issue_comments_038262.json:
+```json
+{
+    "body": "Works for me.",
+    "created_at": "2009-01-19T11:33:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5024",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5024#issuecomment-38262",
+    "user": "mhansen"
+}
+```
 
 Works for me.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-19 11:55:59
+archive/issue_comments_038263.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-01-19T11:55:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5024",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5024#issuecomment-38263",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-19 11:55:59
+archive/issue_comments_038264.json:
+```json
+{
+    "body": "Merged in Sage 3.3.alpha0",
+    "created_at": "2009-01-19T11:55:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5024",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5024#issuecomment-38264",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.3.alpha0

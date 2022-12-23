@@ -1,11 +1,21 @@
 # Issue 6325: optional doctest failure -- linear algebra constructions.rst
 
-Issue created by migration from https://trac.sagemath.org/ticket/6325
-
-Original creator: was
-
-Original creation time: 2009-06-16 14:56:17
-
+archive/issues_006325.json:
+```json
+{
+    "body": "Assignee: tbd\n\n\n```\nsage -t -long --optional devel/sage/doc/en/constructions/linear_algebra.rst\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/doc/en/constructions/linear_algebra.rst\", line 461:\n    sage: octave.solve_linear_system(A,b)    # requires optional octave\nExpected:\n    [-0.33333299999999999, 0.66666700000000001, -3.5236600000000002e-18]\nGot:\n    [-0.33333299999999999, 0.66666700000000001, 0]\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_21\n***Test Failed*** 1 failures.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6325\n\n",
+    "created_at": "2009-06-16T14:56:17Z",
+    "labels": [
+        "packages: optional",
+        "major",
+        "bug"
+    ],
+    "title": "optional doctest failure -- linear algebra constructions.rst",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6325",
+    "user": "was"
+}
+```
 Assignee: tbd
 
 
@@ -25,17 +35,43 @@ Got:
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6325
+
+
+
+
 
 ---
 
-Comment by wdj created at 2009-06-16 23:29:52
+archive/issue_comments_050478.json:
+```json
+{
+    "body": "I'm not sure how to fix this. Should I add \"# random numerical noise\" in addition to \"# requires optional octave\"? By the way, octave is not strictly speaking an optional package is it?",
+    "created_at": "2009-06-16T23:29:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6325",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6325#issuecomment-50478",
+    "user": "wdj"
+}
+```
 
 I'm not sure how to fix this. Should I add "# random numerical noise" in addition to "# requires optional octave"? By the way, octave is not strictly speaking an optional package is it?
 
 
+
 ---
 
-Comment by wdj created at 2009-06-17 12:56:10
+archive/issue_comments_050479.json:
+```json
+{
+    "body": "Reply by email:\n\n> I'm ok for now with just changing the output to 0 since I'm only\n> running optional doctests on sage.math, with the output is 0.\n> William\n\nThe attached patch does this.\n\nPatch applies fine to 4.0.2.rc1 and passes sage -tp 1 SAGE_ROOT/devel/sage/doc/en/constructions/. Also the builds sage -docbuild constructions html (resp., pdf) went fine.",
+    "created_at": "2009-06-17T12:56:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6325",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6325#issuecomment-50479",
+    "user": "wdj"
+}
+```
 
 Reply by email:
 
@@ -48,22 +84,57 @@ The attached patch does this.
 Patch applies fine to 4.0.2.rc1 and passes sage -tp 1 SAGE_ROOT/devel/sage/doc/en/constructions/. Also the builds sage -docbuild constructions html (resp., pdf) went fine.
 
 
+
 ---
+
+archive/issue_comments_050480.json:
+```json
+{
+    "body": "Attachment\n\napplies to 4.0.2.rc1",
+    "created_at": "2009-06-17T12:56:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6325",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6325#issuecomment-50480",
+    "user": "wdj"
+}
+```
 
 Attachment
 
 applies to 4.0.2.rc1
 
 
+
 ---
 
-Comment by mhansen created at 2009-09-08 23:04:11
+archive/issue_comments_050481.json:
+```json
+{
+    "body": "Looks good to me.",
+    "created_at": "2009-09-08T23:04:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6325",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6325#issuecomment-50481",
+    "user": "mhansen"
+}
+```
 
 Looks good to me.
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-09 11:13:53
+archive/issue_comments_050482.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-09-09T11:13:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6325",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6325#issuecomment-50482",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

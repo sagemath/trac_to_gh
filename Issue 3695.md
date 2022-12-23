@@ -1,17 +1,44 @@
 # Issue 3695: factor?? improved
 
-Issue created by migration from https://trac.sagemath.org/ticket/3695
-
-Original creator: certik
-
-Original creation time: 2008-07-21 18:37:49
-
+archive/issues_003695.json:
+```json
+{
+    "body": "Assignee: gfurnish\n\nSee the patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3695\n\n",
+    "created_at": "2008-07-21T18:37:49Z",
+    "labels": [
+        "symbolics",
+        "major",
+        "enhancement"
+    ],
+    "title": "factor?? improved",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3695",
+    "user": "certik"
+}
+```
 Assignee: gfurnish
 
 See the patch.
 
+Issue created by migration from https://trac.sagemath.org/ticket/3695
+
+
+
+
 
 ---
+
+archive/issue_comments_026216.json:
+```json
+{
+    "body": "Attachment\n\nREFEREE:\n\nLooks good. It is also safe to apply to sage-3.0.6 even since it contains no new doctests and no new source code.",
+    "created_at": "2008-07-21T18:55:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3695",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3695#issuecomment-26216",
+    "user": "was"
+}
+```
 
 Attachment
 
@@ -20,23 +47,56 @@ REFEREE:
 Looks good. It is also safe to apply to sage-3.0.6 even since it contains no new doctests and no new source code.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-21 18:59:01
+archive/issue_comments_026217.json:
+```json
+{
+    "body": "Merged in Sage 3.0.6.rc0",
+    "created_at": "2008-07-21T18:59:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3695",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3695#issuecomment-26217",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.6.rc0
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-21 18:59:01
+archive/issue_comments_026218.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-07-21T18:59:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3695",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3695#issuecomment-26218",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by cremona created at 2008-07-21 19:44:30
+archive/issue_comments_026219.json:
+```json
+{
+    "body": "I was not quick enough to catch this before it got merged.  I think that for integers it is a little misleading to describe the output as a sorted list of pairs (p,e): it is a more sophisticated structure:\n\n```\nsage: n=-100          \nsage: f=factor(n)     \nsage: type(f)\n<class 'sage.structure.factorization.Factorization'>\n```\n\nwhich has a number of associated methods:\n\n```\nsage: f.\nf.base_ring       f.dumps           f.prod            f.simplify        f.value\nf.category        f.expand          f.rename          f.sort            f.version\nf.db              f.is_commutative  f.reset_name      f.unit            \nf.dump            f.plot            f.save            f.unit_part     \n```\n\nIt is true that you can get a list of pairs (p,e):\n\n```\nsage: list(f)\n[(2, 2), (5, 2)]\n```\n\nbut that misses the unit part:\n\n```\nsage: f.unit()\n-1\n```\n\nas well as three different ways of recovering the factored integer (prod, expand, value).",
+    "created_at": "2008-07-21T19:44:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3695",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3695#issuecomment-26219",
+    "user": "cremona"
+}
+```
 
 I was not quick enough to catch this before it got merged.  I think that for integers it is a little misleading to describe the output as a sorted list of pairs (p,e): it is a more sophisticated structure:
 
@@ -74,16 +134,38 @@ sage: f.unit()
 as well as three different ways of recovering the factored integer (prod, expand, value).
 
 
+
 ---
 
-Comment by certik created at 2008-07-21 19:49:52
+archive/issue_comments_026220.json:
+```json
+{
+    "body": "Thanks John for noticing. I just copied the old docstring for integers, assuming it was correct. So I think this patch is not a regression.",
+    "created_at": "2008-07-21T19:49:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3695",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3695#issuecomment-26220",
+    "user": "certik"
+}
+```
 
 Thanks John for noticing. I just copied the old docstring for integers, assuming it was correct. So I think this patch is not a regression.
 
 
+
 ---
 
-Comment by cremona created at 2008-07-21 19:54:05
+archive/issue_comments_026221.json:
+```json
+{
+    "body": "Replying to [comment:4 certik]:\n> Thanks John for noticing. I just copied the old docstring for integers, assuming it was correct. So I think this patch is not a regression.\n\nNo, I was not accusing you of breaking anything!\n\nAs factorization of integers is something which new users (e.g. in elementary number theory classes) will want to do -- and something which Sage does very well -- I think it is worth improving the docstring for integers. \n\nI'll add a new patch (to be applied after yours) in a few minutes.",
+    "created_at": "2008-07-21T19:54:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3695",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3695#issuecomment-26221",
+    "user": "cremona"
+}
+```
 
 Replying to [comment:4 certik]:
 > Thanks John for noticing. I just copied the old docstring for integers, assuming it was correct. So I think this patch is not a regression.
@@ -95,18 +177,40 @@ As factorization of integers is something which new users (e.g. in elementary nu
 I'll add a new patch (to be applied after yours) in a few minutes.
 
 
+
 ---
 
-Comment by cremona created at 2008-07-21 20:13:28
+archive/issue_comments_026222.json:
+```json
+{
+    "body": "Extra documentation added as promised.\n\nI know this is not the first time I have edited this docstring;  sorry not to have done it well enough last time!",
+    "created_at": "2008-07-21T20:13:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3695",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3695#issuecomment-26222",
+    "user": "cremona"
+}
+```
 
 Extra documentation added as promised.
 
 I know this is not the first time I have edited this docstring;  sorry not to have done it well enough last time!
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-21 20:26:08
+archive/issue_comments_026223.json:
+```json
+{
+    "body": "There is a slight typo in John's patch:\n\n```\nA Factorization contains bothe the \n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2008-07-21T20:26:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3695",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3695#issuecomment-26223",
+    "user": "mabshoff"
+}
+```
 
 There is a slight typo in John's patch:
 
@@ -120,7 +224,20 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_026224.json:
+```json
+{
+    "body": "Attachment\n\nReplying to [comment:7 mabshoff]:\n> There is a slight typo in John's patch:\n> {{{\n> A Factorization contains bothe the \n> }}}\n> \n> Cheers,\n> \n> Michael\n\n\nI fixed that by text-editing the patch file and re-uploading it in place of the original (of mine).  I hope that works....",
+    "created_at": "2008-07-21T20:32:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3695",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3695#issuecomment-26224",
+    "user": "cremona"
+}
+```
 
 Attachment
 
@@ -138,16 +255,38 @@ Replying to [comment:7 mabshoff]:
 I fixed that by text-editing the patch file and re-uploading it in place of the original (of mine).  I hope that works....
 
 
+
 ---
 
-Comment by malb created at 2008-07-21 20:42:17
+archive/issue_comments_026225.json:
+```json
+{
+    "body": "I only looked ad John's patch and it looks good.",
+    "created_at": "2008-07-21T20:42:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3695",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3695#issuecomment-26225",
+    "user": "malb"
+}
+```
 
 I only looked ad John's patch and it looks good.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-21 20:48:54
+archive/issue_comments_026226.json:
+```json
+{
+    "body": "Replying to [comment:8 cremona]:\n> \n> I fixed that by text-editing the patch file and re-uploading it in place of the original (of mine).  I hope that works....\n\nHi John,\n\nthat is perfectly fine and the patch did apply as expected.\n\nCheers,\n\nMichael",
+    "created_at": "2008-07-21T20:48:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3695",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3695#issuecomment-26226",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:8 cremona]:
 > 
@@ -162,8 +301,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-21 20:50:54
+archive/issue_comments_026227.json:
+```json
+{
+    "body": "Merged factor_docstring_extra.patch in Sage 3.0.6.rc0",
+    "created_at": "2008-07-21T20:50:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3695",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3695#issuecomment-26227",
+    "user": "mabshoff"
+}
+```
 
 Merged factor_docstring_extra.patch in Sage 3.0.6.rc0

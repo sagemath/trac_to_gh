@@ -1,11 +1,21 @@
 # Issue 5270: [with patch, needs review] implement plotting of affine and projective algebraic curves
 
-Issue created by migration from https://trac.sagemath.org/ticket/5270
-
-Original creator: AlexGhitza
-
-Original creation time: 2009-02-14 13:49:49
-
+archive/issues_005270.json:
+```json
+{
+    "body": "Assignee: AlexGhitza\n\nThe patch implements plot() methods for affine and projective algebraic curves.  In the affine case it simply calls the plot() method of the defining ideal of the curve.  In the projective case it calls the plot() method of an affine patch of the curve.\n\nThis is mostly a usability enhancement.  I ran into a few bugs while working on this, so the patch should be applied only after #5267 and #5269 get merged.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5270\n\n",
+    "created_at": "2009-02-14T13:49:49Z",
+    "labels": [
+        "algebraic geometry",
+        "minor",
+        "enhancement"
+    ],
+    "title": "[with patch, needs review] implement plotting of affine and projective algebraic curves",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5270",
+    "user": "AlexGhitza"
+}
+```
 Assignee: AlexGhitza
 
 The patch implements plot() methods for affine and projective algebraic curves.  In the affine case it simply calls the plot() method of the defining ideal of the curve.  In the projective case it calls the plot() method of an affine patch of the curve.
@@ -13,17 +23,43 @@ The patch implements plot() methods for affine and projective algebraic curves. 
 This is mostly a usability enhancement.  I ran into a few bugs while working on this, so the patch should be applied only after #5267 and #5269 get merged.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5270
+
+
+
+
 
 ---
 
-Comment by AlexGhitza created at 2009-02-14 13:54:02
+archive/issue_comments_040454.json:
+```json
+{
+    "body": "I forgot to mention this: I also modified plot() for an ideal so that ideals over any subring of RR can be plotted (not just over QQ).",
+    "created_at": "2009-02-14T13:54:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5270",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5270#issuecomment-40454",
+    "user": "AlexGhitza"
+}
+```
 
 I forgot to mention this: I also modified plot() for an ideal so that ideals over any subring of RR can be plotted (not just over QQ).
 
 
+
 ---
 
-Comment by cremona created at 2009-02-15 12:44:05
+archive/issue_comments_040455.json:
+```json
+{
+    "body": "Looks great -- I think this ability to plot the idfferent affine patches of a projective curve is a very nice feature.\n\nPatch applies fine to 3.3.rc0.  I had doctest problems in projective_curve.py:\n\n```\nsage -t  \"devel/sage-5270/sage/schemes/plane_curves/projective_curve.py\"\n**********************************************************************\nFile \"/home/john/sage-3.3.rc0/devel/sage-5270/sage/schemes/plane_curves/projective_curve.py\", line 208:\n    sage: C.plot(patch=0)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/john/sage-3.3.rc0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/john/sage-3.3.rc0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/john/sage-3.3.rc0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_4[5]>\", line 1, in <module>\n        C.plot(patch=Integer(0))###line 208:\n    sage: C.plot(patch=0)\n      File \"/home/john/sage-3.3.rc0/local/lib/python2.5/site-packages/sage/schemes/plane_curves/projective_curve.py\", line 232, in plot\n        return C.plot(*args, **kwds)\n      File \"/home/john/sage-3.3.rc0/local/lib/python2.5/site-packages/sage/schemes/plane_curves/affine_curve.py\", line 206, in plot\n        return I.plot(*args, **kwds)\n      File \"/home/john/sage-3.3.rc0/local/lib/python2.5/site-packages/sage/rings/polynomial/multi_polynomial_ideal.py\", line 2389, in plot\n        roots = f.subs({v:i}).univariate_polynomial().change_ring(RR).roots()\n      File \"multi_polynomial_libsingular.pyx\", line 3161, in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular.univariate_polynomial (sage/rings/polynomial/multi_polynomial_libsingular.cpp:21299)\n    IndexError: list index out of range\n**********************************************************************\nFile \"/home/john/sage-3.3.rc0/devel/sage-5270/sage/schemes/plane_curves/projective_curve.py\", line 222:\n    sage: C.plot()\nException raised:\n    Traceback (most recent call last):\n      File \"/home/john/sage-3.3.rc0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/john/sage-3.3.rc0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/john/sage-3.3.rc0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_4[15]>\", line 1, in <module>\n        C.plot()###line 222:\n    sage: C.plot()\n      File \"/home/john/sage-3.3.rc0/local/lib/python2.5/site-packages/sage/schemes/plane_curves/projective_curve.py\", line 231, in plot\n        C = Curve(self.affine_patch(patch))\n      File \"/home/john/sage-3.3.rc0/local/lib/python2.5/site-packages/sage/schemes/plane_curves/constructor.py\", line 135, in Curve\n        return Curve(F.defining_polynomials())\n      File \"/home/john/sage-3.3.rc0/local/lib/python2.5/site-packages/sage/schemes/plane_curves/constructor.py\", line 139, in Curve\n        return Curve(F[0])\n      File \"/home/john/sage-3.3.rc0/local/lib/python2.5/site-packages/sage/schemes/plane_curves/constructor.py\", line 185, in Curve\n        return ProjectiveCurve_generic(P2, F)\n      File \"/home/john/sage-3.3.rc0/local/lib/python2.5/site-packages/sage/schemes/plane_curves/projective_curve.py\", line 44, in __init__\n        Curve_generic_projective.__init__(self, A, [f])\n      File \"/home/john/sage-3.3.rc0/local/lib/python2.5/site-packages/sage/schemes/generic/algebraic_scheme.py\", line 208, in __init__\n        G = self._validate(G)\n      File \"/home/john/sage-3.3.rc0/local/lib/python2.5/site-packages/sage/schemes/generic/algebraic_scheme.py\", line 572, in _validate\n        \"defining polynomials (= %s) must be homogeneous\"%G\n    TypeError: defining polynomials (= -4*x0^5 + 30*x0^3 + x1^2 - 45*x0 + 22) must be homogeneous\n**********************************************************************\nFile \"/home/john/sage-3.3.rc0/devel/sage-5270/sage/schemes/plane_curves/projective_curve.py\", line 223:\n    sage: C.plot(patch=0)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/john/sage-3.3.rc0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/john/sage-3.3.rc0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/john/sage-3.3.rc0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_4[16]>\", line 1, in <module>\n        C.plot(patch=Integer(0))###line 223:\n    sage: C.plot(patch=0)\n      File \"/home/john/sage-3.3.rc0/local/lib/python2.5/site-packages/sage/schemes/plane_curves/projective_curve.py\", line 231, in plot\n        C = Curve(self.affine_patch(patch))\n      File \"/home/john/sage-3.3.rc0/local/lib/python2.5/site-packages/sage/schemes/plane_curves/constructor.py\", line 135, in Curve\n        return Curve(F.defining_polynomials())\n      File \"/home/john/sage-3.3.rc0/local/lib/python2.5/site-packages/sage/schemes/plane_curves/constructor.py\", line 139, in Curve\n        return Curve(F[0])\n      File \"/home/john/sage-3.3.rc0/local/lib/python2.5/site-packages/sage/schemes/plane_curves/constructor.py\", line 185, in Curve\n        return ProjectiveCurve_generic(P2, F)\n      File \"/home/john/sage-3.3.rc0/local/lib/python2.5/site-packages/sage/schemes/plane_curves/projective_curve.py\", line 44, in __init__\n        Curve_generic_projective.__init__(self, A, [f])\n      File \"/home/john/sage-3.3.rc0/local/lib/python2.5/site-packages/sage/schemes/generic/algebraic_scheme.py\", line 208, in __init__\n        G = self._validate(G)\n      File \"/home/john/sage-3.3.rc0/local/lib/python2.5/site-packages/sage/schemes/generic/algebraic_scheme.py\", line 572, in _validate\n        \"defining polynomials (= %s) must be homogeneous\"%G\n    TypeError: defining polynomials (= x0^2*x1^3 + 22*x1^5 - 45*x1^4 + 30*x1^2 - 4) must be homogeneous\n**********************************************************************\nFile \"/home/john/sage-3.3.rc0/devel/sage-5270/sage/schemes/plane_curves/projective_curve.py\", line 224:\n    sage: C.plot(patch=1)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/john/sage-3.3.rc0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/john/sage-3.3.rc0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/john/sage-3.3.rc0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_4[17]>\", line 1, in <module>\n        C.plot(patch=Integer(1))###line 224:\n    sage: C.plot(patch=1)\n      File \"/home/john/sage-3.3.rc0/local/lib/python2.5/site-packages/sage/schemes/plane_curves/projective_curve.py\", line 231, in plot\n        C = Curve(self.affine_patch(patch))\n      File \"/home/john/sage-3.3.rc0/local/lib/python2.5/site-packages/sage/schemes/plane_curves/constructor.py\", line 135, in Curve\n        return Curve(F.defining_polynomials())\n      File \"/home/john/sage-3.3.rc0/local/lib/python2.5/site-packages/sage/schemes/plane_curves/constructor.py\", line 139, in Curve\n        return Curve(F[0])\n      File \"/home/john/sage-3.3.rc0/local/lib/python2.5/site-packages/sage/schemes/plane_curves/constructor.py\", line 185, in Curve\n        return ProjectiveCurve_generic(P2, F)\n      File \"/home/john/sage-3.3.rc0/local/lib/python2.5/site-packages/sage/schemes/plane_curves/projective_curve.py\", line 44, in __init__\n        Curve_generic_projective.__init__(self, A, [f])\n      File \"/home/john/sage-3.3.rc0/local/lib/python2.5/site-packages/sage/schemes/generic/algebraic_scheme.py\", line 208, in __init__\n        G = self._validate(G)\n      File \"/home/john/sage-3.3.rc0/local/lib/python2.5/site-packages/sage/schemes/generic/algebraic_scheme.py\", line 572, in _validate\n        \"defining polynomials (= %s) must be homogeneous\"%G\n    TypeError: defining polynomials (= -4*x0^5 + 30*x0^3*x1^2 - 45*x0*x1^4 + 22*x1^5 + x1^3) must be homogeneous\n**********************************************************************\n1 items had failures:\n   4 of  18 in __main__.example_4\n***Test Failed*** 4 failures.\nFor whitespace errors, see the file /home/john/sage-3.3.rc0/tmp/.doctest_projective_curve.py\n\t [5.2 s]\nexit code: 1024\n }}}\n\nI think these are all in the hyperelliptic example.\n\nPS I wonder how the doctests run without all the graphs popping up!",
+    "created_at": "2009-02-15T12:44:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5270",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5270#issuecomment-40455",
+    "user": "cremona"
+}
+```
 
 Looks great -- I think this ability to plot the idfferent affine patches of a projective curve is a very nice feature.
 
@@ -154,18 +190,40 @@ I think these are all in the hyperelliptic example.
 PS I wonder how the doctests run without all the graphs popping up!
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-02-15 22:20:01
+archive/issue_comments_040456.json:
+```json
+{
+    "body": "Hi John,\n\nDid you first apply the patches at #5267 and #5269?  This patch builds on those fixes.",
+    "created_at": "2009-02-15T22:20:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5270",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5270#issuecomment-40456",
+    "user": "AlexGhitza"
+}
+```
 
 Hi John,
 
 Did you first apply the patches at #5267 and #5269?  This patch builds on those fixes.
 
 
+
 ---
 
-Comment by cremona created at 2009-02-15 22:27:15
+archive/issue_comments_040457.json:
+```json
+{
+    "body": "Replying to [comment:3 AlexGhitza]:\n> Hi John,\n> \n> Did you first apply the patches at #5267 and #5269?  This patch builds on those fixes.\n\nNo -- my mistake!  I saw those tickets were closed, but that's because they were merged in rc1 ans I was using rc0.  Sorry -- not time to do it again now.",
+    "created_at": "2009-02-15T22:27:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5270",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5270#issuecomment-40457",
+    "user": "cremona"
+}
+```
 
 Replying to [comment:3 AlexGhitza]:
 > Hi John,
@@ -175,23 +233,56 @@ Replying to [comment:3 AlexGhitza]:
 No -- my mistake!  I saw those tickets were closed, but that's because they were merged in rc1 ans I was using rc0.  Sorry -- not time to do it again now.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-02-15 22:29:49
+archive/issue_comments_040458.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-02-15T22:29:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5270",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5270#issuecomment-40458",
+    "user": "AlexGhitza"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-02-15 22:29:49
+archive/issue_comments_040459.json:
+```json
+{
+    "body": "No problem.  I should have been more precise about that -- I just didn't expect someone would review it before rc1 was out :)",
+    "created_at": "2009-02-15T22:29:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5270",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5270#issuecomment-40459",
+    "user": "AlexGhitza"
+}
+```
 
 No problem.  I should have been more precise about that -- I just didn't expect someone would review it before rc1 was out :)
 
 
+
 ---
 
-Comment by was created at 2009-03-15 22:21:18
+archive/issue_comments_040460.json:
+```json
+{
+    "body": "Alex, this needs to be rebased for sage-3.4:\n\n```\nsage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/5270/trac_5270.patch')\nAttempting to load remote file: http://trac.sagemath.org/sage_trac/raw-attachment/ticket/5270/trac_5270.patch\nLoading: [..]\ncd \"/home/wstein/build/sage-3.4/devel/sage\" && hg status\ncd \"/home/wstein/build/sage-3.4/devel/sage\" && hg status\ncd \"/home/wstein/build/sage-3.4/devel/sage\" && hg import   \"/scratch/wstein/sage/temp/sage.math.washington.edu/12908/tmp_1.patch\"\napplying /scratch/wstein/sage/temp/sage.math.washington.edu/12908/tmp_1.patch\npatching file sage/rings/polynomial/multi_polynomial_ideal.py\nHunk #1 FAILED at 2315\nHunk #2 succeeded at 2761 with fuzz 2 (offset 409 lines).\n1 out of 3 hunks FAILED -- saving rejects to file sage/rings/polynomial/multi_polynomial_ideal.py.rej\npatching file sage/schemes/elliptic_curves/ell_generic.py\nHunk #1 FAILED at 2517\n1 out of 1 hunks FAILED -- saving rejects to file sage/schemes/elliptic_curves/ell_generic.py.rej\npatching file sage/schemes/hyperelliptic_curves/hyperelliptic_generic.py\nHunk #1 FAILED at 1\nHunk #2 FAILED at 77\n2 out of 2 hunks FAILED -- saving rejects to file sage/schemes/hyperelliptic_curves/hyperelliptic_generic.py.rej\nabort: patch failed to apply\n```\n",
+    "created_at": "2009-03-15T22:21:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5270",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5270#issuecomment-40460",
+    "user": "was"
+}
+```
 
 Alex, this needs to be rebased for sage-3.4:
 
@@ -219,28 +310,74 @@ abort: patch failed to apply
 
 
 
+
 ---
+
+archive/issue_comments_040461.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-03-16T02:52:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5270",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5270#issuecomment-40461",
+    "user": "AlexGhitza"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-03-16 02:54:19
+archive/issue_comments_040462.json:
+```json
+{
+    "body": "Alright, I've rebased it against 3.4.  It took a bit longer than I thought because I'm still getting used to writing ReST docs.",
+    "created_at": "2009-03-16T02:54:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5270",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5270#issuecomment-40462",
+    "user": "AlexGhitza"
+}
+```
 
 Alright, I've rebased it against 3.4.  It took a bit longer than I thought because I'm still getting used to writing ReST docs.
 
 
+
 ---
 
-Comment by cremona created at 2009-04-12 09:50:52
+archive/issue_comments_040463.json:
+```json
+{
+    "body": "Positive review -- works on 3.4.1.rc2.  Sorry I forgot about this.",
+    "created_at": "2009-04-12T09:50:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5270",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5270#issuecomment-40463",
+    "user": "cremona"
+}
+```
 
 Positive review -- works on 3.4.1.rc2.  Sorry I forgot about this.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-13 06:50:10
+archive/issue_comments_040464.json:
+```json
+{
+    "body": "Merged in Sage 3.4.1.rc3.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-13T06:50:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5270",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5270#issuecomment-40464",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.4.1.rc3.
 
@@ -249,8 +386,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-13 06:50:10
+archive/issue_comments_040465.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-04-13T06:50:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5270",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5270#issuecomment-40465",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

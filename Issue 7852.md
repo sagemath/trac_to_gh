@@ -1,11 +1,21 @@
 # Issue 7852: solve_left for RDF matrices is WRONG
 
-Issue created by migration from https://trac.sagemath.org/ticket/7852
-
-Original creator: was
-
-Original creation time: 2010-01-05 21:40:18
-
+archive/issues_007852.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  jason\n\nObserve the docstring for solve_left for an RDF matrix:\n\n```\nsage: A = random_matrix(RDF,3)\nsage: A.solve_left?\nSolve the equation A*x = b, where\n        \n        EXAMPLES:\n            sage: A = matrix(RDF, 3,3, [1,2,5,7.6,2.3,1,1,2,-1]); A\n            [ 1.0  2.0  5.0]\n            [ 7.6  2.3  1.0]\n            [ 1.0  2.0 -1.0]\n            sage: b = vector(RDF,[1,2,3])\n            sage: x = A.solve_left(b); x\n            (-0.113695090439, 1.39018087855, -0.333333333333)\n            sage: A*x\n            (1.0, 2.0, 3.0)\n```\n\n\nBut that is solve_right. \n\nThis was evidently introduced by maybe Grout's \"Switch the RDF and CDF matrices to a numpy 1.2 backend; factor out common functionality to matrix_double_dense.pyx.\".\n\nReported by Stephanie Dietzel\n\nIssue created by migration from https://trac.sagemath.org/ticket/7852\n\n",
+    "created_at": "2010-01-05T21:40:18Z",
+    "labels": [
+        "linear algebra",
+        "major",
+        "bug"
+    ],
+    "title": "solve_left for RDF matrices is WRONG",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7852",
+    "user": "was"
+}
+```
 Assignee: was
 
 CC:  jason
@@ -36,47 +46,119 @@ This was evidently introduced by maybe Grout's "Switch the RDF and CDF matrices 
 
 Reported by Stephanie Dietzel
 
+Issue created by migration from https://trac.sagemath.org/ticket/7852
+
+
+
+
 
 ---
 
-Comment by jason created at 2010-01-05 22:16:07
+archive/issue_comments_068015.json:
+```json
+{
+    "body": "This might be related to #4932.  I'll put this on my list for the bug day coming up.",
+    "created_at": "2010-01-05T22:16:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7852",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7852#issuecomment-68015",
+    "user": "jason"
+}
+```
 
 This might be related to #4932.  I'll put this on my list for the bug day coming up.
 
 
+
 ---
+
+archive/issue_comments_068016.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2011-02-24T22:33:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7852",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7852#issuecomment-68016",
+    "user": "rbeezer"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by rbeezer created at 2011-02-24 22:36:39
+archive/issue_comments_068017.json:
+```json
+{
+    "body": "Patch corrects the naming problem, and creates upgraded ``solve_left`` and ``solve_right``.\n\nThis required just a few touch-ups where the name had been wrong, or the improved accuracy changed results.",
+    "created_at": "2011-02-24T22:36:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7852",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7852#issuecomment-68017",
+    "user": "rbeezer"
+}
+```
 
 Patch corrects the naming problem, and creates upgraded ``solve_left`` and ``solve_right``.
 
 This required just a few touch-ups where the name had been wrong, or the improved accuracy changed results.
 
 
+
 ---
 
-Comment by rbeezer created at 2011-02-24 22:36:39
+archive/issue_comments_068018.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2011-02-24T22:36:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7852",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7852#issuecomment-68018",
+    "user": "rbeezer"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2011-03-21 19:16:14
+archive/issue_comments_068019.json:
+```json
+{
+    "body": "Without the patch, \"solve_right\" seems to work for nonsquare matrices over RDF, I guess because it's using the generic \"solve_right\" method from matrix2.pyx.  With the patch, it looks like this won't work any more; is that right?  Is there a good reason for not allowing square matrices?  We could instead add a method `_solve_right_nonsingular_square` to matrix_double_dense.pyx, and then I think this should be called by the generic solve_right method.\n\nFor \"solve_left\", could we just remove the version from matrix_double_dense.pyx altogether, and just use the generic version?",
+    "created_at": "2011-03-21T19:16:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7852",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7852#issuecomment-68019",
+    "user": "jhpalmieri"
+}
+```
 
 Without the patch, "solve_right" seems to work for nonsquare matrices over RDF, I guess because it's using the generic "solve_right" method from matrix2.pyx.  With the patch, it looks like this won't work any more; is that right?  Is there a good reason for not allowing square matrices?  We could instead add a method `_solve_right_nonsingular_square` to matrix_double_dense.pyx, and then I think this should be called by the generic solve_right method.
 
 For "solve_left", could we just remove the version from matrix_double_dense.pyx altogether, and just use the generic version?
 
 
+
 ---
 
-Comment by rbeezer created at 2011-03-21 21:04:30
+archive/issue_comments_068020.json:
+```json
+{
+    "body": "Replying to [comment:4 jhpalmieri]:\n\nYes, there is some tension in handling inexact matrices with routines designed for exact matrices (which is the root issue here, I believe).  `NumPy/SciPy` just does not do certain things, such as computing a rank.\n\nI'm hoping to get some guidance from the `NumPy` folks here at Sage Days 29 right now and we can chat some more.",
+    "created_at": "2011-03-21T21:04:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7852",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7852#issuecomment-68020",
+    "user": "rbeezer"
+}
+```
 
 Replying to [comment:4 jhpalmieri]:
 
@@ -85,38 +167,93 @@ Yes, there is some tension in handling inexact matrices with routines designed f
 I'm hoping to get some guidance from the `NumPy` folks here at Sage Days 29 right now and we can chat some more.
 
 
+
 ---
 
-Comment by mraum created at 2011-03-25 03:47:19
+archive/issue_comments_068021.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2011-03-25T03:47:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7852",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7852#issuecomment-68021",
+    "user": "mraum"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by mraum created at 2011-03-25 03:47:19
+archive/issue_comments_068022.json:
+```json
+{
+    "body": "1) You can use svd to first get a square matrix that you can use to solve the system of linear equations.\n2) Why do you copy the code for left and right solve. There is a generic fallback in matrix2.pyx. If you want to replace the docstring for this class, can't you do just that?",
+    "created_at": "2011-03-25T03:47:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7852",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7852#issuecomment-68022",
+    "user": "mraum"
+}
+```
 
 1) You can use svd to first get a square matrix that you can use to solve the system of linear equations.
 2) Why do you copy the code for left and right solve. There is a generic fallback in matrix2.pyx. If you want to replace the docstring for this class, can't you do just that?
 
 
+
 ---
 
-Comment by rbeezer created at 2011-03-25 17:50:52
+archive/issue_comments_068023.json:
+```json
+{
+    "body": "We could use a direct call to `SciPy` solve for square nonsingular and analyze/exploit the SVD for nonsingular/rectangular.",
+    "created_at": "2011-03-25T17:50:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7852",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7852#issuecomment-68023",
+    "user": "rbeezer"
+}
+```
 
 We could use a direct call to `SciPy` solve for square nonsingular and analyze/exploit the SVD for nonsingular/rectangular.
 
 
+
 ---
 
-Comment by rbeezer created at 2011-07-18 04:48:09
+archive/issue_comments_068024.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2011-07-18T04:48:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7852",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7852#issuecomment-68024",
+    "user": "rbeezer"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by rbeezer created at 2011-07-18 04:48:09
+archive/issue_comments_068025.json:
+```json
+{
+    "body": "Finally getting back to this one.\n\n1.  solve_left and solve_right are confused at the moment - I think this is important to fix.\n\n2.  The code is different, in part because the error messages are explicit, naming rows and columns when sizes do not match.\n\n3.  The longer I think about it, the more I think we should *never* be feeding floating-point matrices into exact routines.  We should expose the ScyPy/NumPy/LAPACK routines as much as possible and not pretend the exact routines are going to give reasonable answers as a \"fallback.\"\n\n4.  I'm happy to try to get solutions to systems with non-square coefficient matrices with floating-point entries, but despite a lot of thought and reading, I'm not convinced of the right approach.  In any event, I'd like to fix the problem at hand, and do the non-square somewhere else.\n\n5.  I am going to set this to \"needs review\" but I'm happy to entertain more discussion - I'll just need convincing.\n\nRob",
+    "created_at": "2011-07-18T04:48:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7852",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7852#issuecomment-68025",
+    "user": "rbeezer"
+}
+```
 
 Finally getting back to this one.
 
@@ -124,7 +261,7 @@ Finally getting back to this one.
 
 2.  The code is different, in part because the error messages are explicit, naming rows and columns when sizes do not match.
 
-3.  The longer I think about it, the more I think we should _never_ be feeding floating-point matrices into exact routines.  We should expose the ScyPy/NumPy/LAPACK routines as much as possible and not pretend the exact routines are going to give reasonable answers as a "fallback."
+3.  The longer I think about it, the more I think we should *never* be feeding floating-point matrices into exact routines.  We should expose the ScyPy/NumPy/LAPACK routines as much as possible and not pretend the exact routines are going to give reasonable answers as a "fallback."
 
 4.  I'm happy to try to get solutions to systems with non-square coefficient matrices with floating-point entries, but despite a lot of thought and reading, I'm not convinced of the right approach.  In any event, I'd like to fix the problem at hand, and do the non-square somewhere else.
 
@@ -133,60 +270,152 @@ Finally getting back to this one.
 Rob
 
 
+
 ---
 
-Comment by mraum created at 2011-08-04 10:28:25
+archive/issue_comments_068026.json:
+```json
+{
+    "body": "What I was talking about when I mentioned the fallback is a piece of generic code for solve_left that calls solve_right. Thus you only need to implement one version. And you should, because code duplication makes mistakes more likely and maintenance harder. I will change this when reviewing this, and then will wait for your approval.",
+    "created_at": "2011-08-04T10:28:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7852",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7852#issuecomment-68026",
+    "user": "mraum"
+}
+```
 
 What I was talking about when I mentioned the fallback is a piece of generic code for solve_left that calls solve_right. Thus you only need to implement one version. And you should, because code duplication makes mistakes more likely and maintenance harder. I will change this when reviewing this, and then will wait for your approval.
 
 
+
 ---
 
-Comment by mraum created at 2011-08-05 16:53:37
+archive/issue_comments_068027.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2011-08-05T16:53:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7852",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7852#issuecomment-68027",
+    "user": "mraum"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mraum created at 2011-08-05 16:53:37
+archive/issue_comments_068028.json:
+```json
+{
+    "body": "I didn't touch the implementation of solve_right.  I changed my mind for the following simple reason. While the code is quite short and easy to check the documentation is very different (left replaced by right). So it seems quite impractical to duplicate it.\n\nWe should think about modifying the documentation so that it gets included in the reference manual. Also there is a pseudoregression in the code. Sage doesn't pretend it could solve equations with double dense matrices as right hand side. Scipy covers also this case, so we should open a new ticket for this.",
+    "created_at": "2011-08-05T16:53:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7852",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7852#issuecomment-68028",
+    "user": "mraum"
+}
+```
 
 I didn't touch the implementation of solve_right.  I changed my mind for the following simple reason. While the code is quite short and easy to check the documentation is very different (left replaced by right). So it seems quite impractical to duplicate it.
 
 We should think about modifying the documentation so that it gets included in the reference manual. Also there is a pseudoregression in the code. Sage doesn't pretend it could solve equations with double dense matrices as right hand side. Scipy covers also this case, so we should open a new ticket for this.
 
 
+
 ---
 
-Comment by leif created at 2011-09-08 16:32:44
+archive/issue_comments_068029.json:
+```json
+{
+    "body": "Changing priority from major to blocker.",
+    "created_at": "2011-09-08T16:32:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7852",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7852#issuecomment-68029",
+    "user": "leif"
+}
+```
 
 Changing priority from major to blocker.
 
 
+
 ---
 
-Comment by leif created at 2011-09-13 12:15:21
+archive/issue_comments_068030.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2011-09-13T12:15:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7852",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7852#issuecomment-68030",
+    "user": "leif"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
+
+archive/issue_comments_068031.json:
+```json
+{
+    "body": "Attachment\n\nReviewer patch. Apply on top of main patch, which causes a signed zero on Itanium 2.",
+    "created_at": "2011-09-26T01:22:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7852",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7852#issuecomment-68031",
+    "user": "leif"
+}
+```
 
 Attachment
 
 Reviewer patch. Apply on top of main patch, which causes a signed zero on Itanium 2.
 
 
+
 ---
+
+archive/issue_comments_068032.json:
+```json
+{
+    "body": "Attachment\n\nReviewer patch. Apply on top of main patch, which causes doctests to fail on a couple of systems due to noisy zero terms.",
+    "created_at": "2011-09-26T01:24:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7852",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7852#issuecomment-68032",
+    "user": "leif"
+}
+```
 
 Attachment
 
 Reviewer patch. Apply on top of main patch, which causes doctests to fail on a couple of systems due to noisy zero terms.
 
 
+
 ---
 
-Comment by leif created at 2011-09-26 01:32:45
+archive/issue_comments_068033.json:
+```json
+{
+    "body": "Attached two reviewer patches fixing doctest errors on some systems.\n\nThird patch to fix doctest errors in `sage/matrix/matrix_double_dense.pyx` coming soon.\n\nThe patch to the preparser examples requires #11848.",
+    "created_at": "2011-09-26T01:32:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7852",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7852#issuecomment-68033",
+    "user": "leif"
+}
+```
 
 Attached two reviewer patches fixing doctest errors on some systems.
 
@@ -195,23 +424,58 @@ Third patch to fix doctest errors in `sage/matrix/matrix_double_dense.pyx` comin
 The patch to the preparser examples requires #11848.
 
 
+
 ---
 
-Comment by leif created at 2011-09-26 02:41:31
+archive/issue_comments_068034.json:
+```json
+{
+    "body": "Reviewer patch. Apply on top of main patch, which causes another doctest to fail on a couple of systems due to a noisy zero in a vector result.",
+    "created_at": "2011-09-26T02:41:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7852",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7852#issuecomment-68034",
+    "user": "leif"
+}
+```
 
 Reviewer patch. Apply on top of main patch, which causes another doctest to fail on a couple of systems due to a noisy zero in a vector result.
 
 
+
 ---
+
+archive/issue_comments_068035.json:
+```json
+{
+    "body": "Attachment\n\nThird reviewer patch (fixing a doctest error in `matrix_double_dense.pyx`) is up.",
+    "created_at": "2011-09-26T02:46:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7852",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7852#issuecomment-68035",
+    "user": "leif"
+}
+```
 
 Attachment
 
 Third reviewer patch (fixing a doctest error in `matrix_double_dense.pyx`) is up.
 
 
+
 ---
 
-Comment by rbeezer created at 2011-09-26 03:59:04
+archive/issue_comments_068036.json:
+```json
+{
+    "body": "The three reviewer patches apply, build and pass their tests once #11848 is applied to a recent alpha3 prerelease that already has the main patch.  Currently passes all tests in `sage/matrix` but will run full tests overnight.\n\nThis has a positive review from me based on the reviewer contributions, but is marked as closed right now anyway.  I'll only retreat if something unexpected happens overnight.\n\nLeif - thank-you very much for getting these noisy tests cleaned up.\n\nRob",
+    "created_at": "2011-09-26T03:59:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7852",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7852#issuecomment-68036",
+    "user": "rbeezer"
+}
+```
 
 The three reviewer patches apply, build and pass their tests once #11848 is applied to a recent alpha3 prerelease that already has the main patch.  Currently passes all tests in `sage/matrix` but will run full tests overnight.
 
@@ -222,31 +486,77 @@ Leif - thank-you very much for getting these noisy tests cleaned up.
 Rob
 
 
+
 ---
 
-Comment by leif created at 2011-09-27 21:46:38
+archive/issue_comments_068037.json:
+```json
+{
+    "body": "Reviewer patch. Slightly adjust threshold for noisy zero terms in polynomials, needed on MacOS X 10.6 x86_64 with GCC 4.2.1. Apply on top of other patches (i.e., the other reviewer patch to `polynomial_element.pyx`).",
+    "created_at": "2011-09-27T21:46:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7852",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7852#issuecomment-68037",
+    "user": "leif"
+}
+```
 
 Reviewer patch. Slightly adjust threshold for noisy zero terms in polynomials, needed on MacOS X 10.6 x86_64 with GCC 4.2.1. Apply on top of other patches (i.e., the other reviewer patch to `polynomial_element.pyx`).
 
 
+
 ---
+
+archive/issue_comments_068038.json:
+```json
+{
+    "body": "Attachment\n\nI've attached yet another patch slightly increasing one epsilon, since one doctest still failed on MacOS X 10.6 (due to almost zero terms in a polynomial).",
+    "created_at": "2011-09-27T21:52:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7852",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7852#issuecomment-68038",
+    "user": "leif"
+}
+```
 
 Attachment
 
 I've attached yet another patch slightly increasing one epsilon, since one doctest still failed on MacOS X 10.6 (due to almost zero terms in a polynomial).
 
 
+
 ---
 
-Comment by rbeezer created at 2011-09-28 14:44:59
+archive/issue_comments_068039.json:
+```json
+{
+    "body": "Yes, I meant to bring this up in the flurry of noisy doctest fixes.  I have taken to not cutting it too fine on the zeros.  For example, if I get a \"zero\" on the order of `10^-16`, then I have taken to clipping zeros at `10^-14`.  There seems to be too much variability across systems, so if you cut it too close, then some system is eventually going to complain, it seems.\n\nThe latest patch looks good and applies and builds find, passing all tests in `sage/ring/polynomial` on the alpha3-prerelease I picked up about 10 days ago.  So ready to go, again.",
+    "created_at": "2011-09-28T14:44:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7852",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7852#issuecomment-68039",
+    "user": "rbeezer"
+}
+```
 
 Yes, I meant to bring this up in the flurry of noisy doctest fixes.  I have taken to not cutting it too fine on the zeros.  For example, if I get a "zero" on the order of `10^-16`, then I have taken to clipping zeros at `10^-14`.  There seems to be too much variability across systems, so if you cut it too close, then some system is eventually going to complain, it seems.
 
 The latest patch looks good and applies and builds find, passing all tests in `sage/ring/polynomial` on the alpha3-prerelease I picked up about 10 days ago.  So ready to go, again.
 
 
+
 ---
 
-Comment by leif created at 2011-10-07 17:16:28
+archive/issue_comments_068040.json:
+```json
+{
+    "body": "Follow-up ticket further increasing the threshold for noisy zero terms in polynomials (from 2.5e-15, needed for `bsd.math`, to 2.7e-15) for MacOS X 10.4 PPC once more: #11901",
+    "created_at": "2011-10-07T17:16:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7852",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7852#issuecomment-68040",
+    "user": "leif"
+}
+```
 
 Follow-up ticket further increasing the threshold for noisy zero terms in polynomials (from 2.5e-15, needed for `bsd.math`, to 2.7e-15) for MacOS X 10.4 PPC once more: #11901

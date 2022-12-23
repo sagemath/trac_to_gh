@@ -1,11 +1,21 @@
 # Issue 7993: whitespace error in doctest causes A Mysterious Error.
 
-Issue created by migration from https://trac.sagemath.org/ticket/7993
-
-Original creator: wjp
-
-Original creation time: 2010-01-19 06:06:55
-
+archive/issues_007993.json:
+```json
+{
+    "body": "Assignee: tbd\n\nWhen doctesting a file `a.sage` containing\n\n\n```\ndef foo():\n    \"\"\"\n    sage: 1+1\n   2\n    \"\"\"\n    pass\n```\n\n\n(note the missing space before the 2), you get:\n\n\n```\n[wjp@issa sage-4.3.1.rc0]$ ./sage -t a.sage\nsage -t  \"a.sage\"                                           \nA mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.\n         [2.4 s]\nexit code: 768\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"a.sage\"\nTotal time for all tests: 2.4 seconds\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7993\n\n",
+    "created_at": "2010-01-19T06:06:55Z",
+    "labels": [
+        "doctest coverage",
+        "major",
+        "bug"
+    ],
+    "title": "whitespace error in doctest causes A Mysterious Error.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7993",
+    "user": "wjp"
+}
+```
 Assignee: tbd
 
 When doctesting a file `a.sage` containing
@@ -40,17 +50,43 @@ Total time for all tests: 2.4 seconds
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7993
+
+
+
+
 
 ---
 
-Comment by wjp created at 2010-01-20 05:21:20
+archive/issue_comments_069809.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-01-20T05:21:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7993",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7993#issuecomment-69809",
+    "user": "wjp"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by wjp created at 2010-01-20 05:21:20
+archive/issue_comments_069810.json:
+```json
+{
+    "body": "I changed the `sage-doctest` script to make the actual doctesting process catch exceptions and communicate this to `sage-doctest` via the process exit code.\n\nIt now differentiates between a crash and an exception raised by the doctesting code.\n\n\nThis patch depends on the patch at #7995.",
+    "created_at": "2010-01-20T05:21:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7993",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7993#issuecomment-69810",
+    "user": "wjp"
+}
+```
 
 I changed the `sage-doctest` script to make the actual doctesting process catch exceptions and communicate this to `sage-doctest` via the process exit code.
 
@@ -60,9 +96,20 @@ It now differentiates between a crash and an exception raised by the doctesting 
 This patch depends on the patch at #7995.
 
 
+
 ---
 
-Comment by nthiery created at 2010-01-20 09:04:42
+archive/issue_comments_069811.json:
+```json
+{
+    "body": "As for #7995: thanks much for handling this. I'd love to see this in Sage very shortly.\n\nPlease include the new output in the ticket description!\n\nI can try to review this, but I'd rather have a testing framework expert to it.",
+    "created_at": "2010-01-20T09:04:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7993",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7993#issuecomment-69811",
+    "user": "nthiery"
+}
+```
 
 As for #7995: thanks much for handling this. I'd love to see this in Sage very shortly.
 
@@ -71,7 +118,20 @@ Please include the new output in the ticket description!
 I can try to review this, but I'd rather have a testing framework expert to it.
 
 
+
 ---
+
+archive/issue_comments_069812.json:
+```json
+{
+    "body": "Attachment\n\nI noticed an existing, unrelated problem.  Let `foo.py` contain\n\n\n```python\ndef g():\n    \"\"\"\n    sage: 1 + 1\n    11\n    \"\"\"\n    return\n```\n\nThen `sage -tp 1 foo.py` ends with\n\n\n```python\n1 items had failures:\n   1 of   3 in __main__.example_0\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/.sage//tmp/.doctest_foo.py\n         [2.0 s]\n \n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/apps/sage/local/bin/sage-ptest\", line 361, in <module>\n    failed_files[F.split('#')[0].split()[2]] = None\nIndexError: list index out of range\n```\n",
+    "created_at": "2010-01-31T05:05:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7993",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7993#issuecomment-69812",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
@@ -106,32 +166,76 @@ IndexError: list index out of range
 
 
 
+
 ---
 
-Comment by mpatel created at 2010-01-31 07:18:51
+archive/issue_comments_069813.json:
+```json
+{
+    "body": "Anyway, we can make a separate ticket to unify, simplify, and *doctest* the doctesting framework.\n\nI'm not an expert, but the changes look OK.  Can we report at least partial results for interrupted tests?",
+    "created_at": "2010-01-31T07:18:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7993",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7993#issuecomment-69813",
+    "user": "mpatel"
+}
+```
 
-Anyway, we can make a separate ticket to unify, simplify, and _doctest_ the doctesting framework.
+Anyway, we can make a separate ticket to unify, simplify, and *doctest* the doctesting framework.
 
 I'm not an expert, but the changes look OK.  Can we report at least partial results for interrupted tests?
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-19 09:38:31
+archive/issue_comments_069814.json:
+```json
+{
+    "body": "Minor update:  The patch works for me in daily (i.e., not heavy) use.  Any other experiences?",
+    "created_at": "2010-02-19T09:38:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7993",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7993#issuecomment-69814",
+    "user": "mpatel"
+}
+```
 
 Minor update:  The patch works for me in daily (i.e., not heavy) use.  Any other experiences?
 
 
+
 ---
 
-Comment by zimmerma created at 2010-03-01 17:18:30
+archive/issue_comments_069815.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-03-01T17:18:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7993",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7993#issuecomment-69815",
+    "user": "zimmerma"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by zimmerma created at 2010-03-01 17:18:30
+archive/issue_comments_069816.json:
+```json
+{
+    "body": "I wanted to try this patch to see if it would by chance solve #7773, but apparently it needs a rebase\nfor 4.3.3:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: 7993\nsage: hg_sage.import_patch(\"/tmp/scripts_7993_doctest_error_handling.patch\")\ncd \"/usr/local/sage-4.3.3/sage/devel/sage\" && hg status\ncd \"/usr/local/sage-4.3.3/sage/devel/sage\" && hg status\ncd \"/usr/local/sage-4.3.3/sage/devel/sage\" && hg import   \"/tmp/scripts_7993_doctest_error_handling.patch\"\napplying /tmp/scripts_7993_doctest_error_handling.patch\nunable to find 'sage-doctest' for patching\n4 out of 4 hunks FAILED -- saving rejects to file sage-doctest.rej\nunable to find 'sage-ptest' for patching\n1 out of 1 hunks FAILED -- saving rejects to file sage-ptest.rej\nunable to find 'sage-test' for patching\n2 out of 2 hunks FAILED -- saving rejects to file sage-test.rej\nabort: patch failed to apply\n```\n\n| Sage Version 4.3.3, Release Date: 2010-02-21                       |\n| Type notebook() for the GUI, and license() for information.        |\nPaul",
+    "created_at": "2010-03-01T17:18:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7993",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7993#issuecomment-69816",
+    "user": "zimmerma"
+}
+```
 
 I wanted to try this patch to see if it would by chance solve #7773, but apparently it needs a rebase
 for 4.3.3:
@@ -159,23 +263,56 @@ abort: patch failed to apply
 Paul
 
 
+
 ---
 
-Comment by mpatel created at 2010-03-01 17:32:25
+archive/issue_comments_069817.json:
+```json
+{
+    "body": "The patch is for the scripts repository, whose root is `SAGE_ROOT/local/bin`.  Try using `hg_scripts`, instead.  I think the patch will still apply cleanly to 4.3.3.",
+    "created_at": "2010-03-01T17:32:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7993",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7993#issuecomment-69817",
+    "user": "mpatel"
+}
+```
 
 The patch is for the scripts repository, whose root is `SAGE_ROOT/local/bin`.  Try using `hg_scripts`, instead.  I think the patch will still apply cleanly to 4.3.3.
 
 
+
 ---
 
-Comment by zimmerma created at 2010-03-05 20:34:10
+archive/issue_comments_069818.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_info.",
+    "created_at": "2010-03-05T20:34:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7993",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7993#issuecomment-69818",
+    "user": "zimmerma"
+}
+```
 
 Changing status from needs_work to needs_info.
 
 
+
 ---
 
-Comment by zimmerma created at 2010-03-05 20:34:10
+archive/issue_comments_069819.json:
+```json
+{
+    "body": "sorry, I still cannot apply this patch on 4.3.3, even with `hg_scripts`:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: 7993\nsage: hg_scripts.import_patch(\"/tmp/scripts_7993_doctest_error_handling.patch\")\ncd \"/usr/local/sage-4.3.3/sage/local/bin\" && hg status\ncd \"/usr/local/sage-4.3.3/sage/local/bin\" && hg status\ncd \"/usr/local/sage-4.3.3/sage/local/bin\" && hg import   \"/tmp/scripts_7993_doctest_error_handling.patch\"\napplying /tmp/scripts_7993_doctest_error_handling.patch\npatching file sage-doctest\nHunk #1 FAILED at 4\nHunk #2 FAILED at 151\nHunk #3 FAILED at 170\nHunk #4 FAILED at 655\n4 out of 4 hunks FAILED -- saving rejects to file sage-doctest.rej\npatching file sage-ptest\nHunk #1 FAILED at 163\n1 out of 1 hunks FAILED -- saving rejects to file sage-ptest.rej\npatching file sage-test\nHunk #1 FAILED at 84\nHunk #2 FAILED at 109\n2 out of 2 hunks FAILED -- saving rejects to file sage-test.rej\nabort: patch failed to apply\n```\n\nDid I something wrong?",
+    "created_at": "2010-03-05T20:34:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7993",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7993#issuecomment-69819",
+    "user": "zimmerma"
+}
+```
 
 sorry, I still cannot apply this patch on 4.3.3, even with `hg_scripts`:
 
@@ -207,9 +344,20 @@ abort: patch failed to apply
 Did I something wrong?
 
 
+
 ---
 
-Comment by wjp created at 2010-03-05 20:59:07
+archive/issue_comments_069820.json:
+```json
+{
+    "body": "That's strange; the same command works for me in a clean 4.3.3.\nDo you have any other patches applied to the scripts repo? (I don't think branching will affect that repo.) You can check with hg_scripts.status() and hg_scripts.log().\n\nAlso, since all hunks are failing, could it be a line ending problem? (mac vs. unix vs. dos?)",
+    "created_at": "2010-03-05T20:59:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7993",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7993#issuecomment-69820",
+    "user": "wjp"
+}
+```
 
 That's strange; the same command works for me in a clean 4.3.3.
 Do you have any other patches applied to the scripts repo? (I don't think branching will affect that repo.) You can check with hg_scripts.status() and hg_scripts.log().
@@ -217,9 +365,20 @@ Do you have any other patches applied to the scripts repo? (I don't think branch
 Also, since all hunks are failing, could it be a line ending problem? (mac vs. unix vs. dos?)
 
 
+
 ---
 
-Comment by zimmerma created at 2010-03-05 21:35:23
+archive/issue_comments_069821.json:
+```json
+{
+    "body": "I get:\n\n```\nsage: hg_scripts.status()\nGetting status of modified or unknown files:\ncd \"/usr/local/sage-4.3.3/sage/local/bin\" && hg status\n? cbc\n? clp\n\n---\n\n```\n\nand:\n\n```\nsage: hg_scripts.log()\ncd \"/usr/local/sage-4.3.3/sage/local/bin\" && hg log  | less\nchangeset:   1449:0893591acc56\ntag:         tip\nuser:        Willem Jan Palenstijn <wjp@usecode.org>\ndate:        Wed Jan 20 10:52:15 2010 -0800\nsummary:     #7993: clean up error handling in sage-doctest\n\nchangeset:   1448:77ae8a697bba\nuser:        Minh Van Nguyen <nguyenminh2@gmail.com>\ndate:        Sun Feb 21 17:22:49 2010 -0800\nsummary:     4.3.3\n...\n```\n\nI thought that `sage -clone 7993` would create a fresh clone of 4.3.3, where I could apply\nand test your patch. Do you mean that I've already applied your patch?",
+    "created_at": "2010-03-05T21:35:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7993",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7993#issuecomment-69821",
+    "user": "zimmerma"
+}
+```
 
 I get:
 
@@ -256,16 +415,38 @@ I thought that `sage -clone 7993` would create a fresh clone of 4.3.3, where I c
 and test your patch. Do you mean that I've already applied your patch?
 
 
+
 ---
 
-Comment by wjp created at 2010-03-05 22:19:52
+archive/issue_comments_069822.json:
+```json
+{
+    "body": "Yes, it does look like it. I don't think `sage -clone` touches the scripts repository, but only the main sage library.",
+    "created_at": "2010-03-05T22:19:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7993",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7993#issuecomment-69822",
+    "user": "wjp"
+}
+```
 
 Yes, it does look like it. I don't think `sage -clone` touches the scripts repository, but only the main sage library.
 
 
+
 ---
 
-Comment by zimmerma created at 2010-03-08 15:17:06
+archive/issue_comments_069823.json:
+```json
+{
+    "body": "with the patch, we now get with the initial example:\n\n```\ntarte% sage -t a.sage\nsage -t  \"a.sage\"                                           \nException raised by doctesting framework. Use -verbose for details.\n         [1.4 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"a.sage\" # Exception from doctest framework\nTotal time for all tests: 1.4 seconds\n```\n\nand the whole doctest still produces 22 Segfaults (see #7773). However, instead of say:\n\n```\nsage -t  tests/benchmark.py\nA mysterious error (perhaps a memory error?) occurred, which may have crashed d\\\noctest.\n         [62.3 s]\n```\n\nwe now get:\n\n```\nsage -t  tests/benchmark.py\nThe doctested process was killed by signal 14\n         [62.5 s]\n```\n\nwhich is more informative. I thus give a positive review.",
+    "created_at": "2010-03-08T15:17:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7993",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7993#issuecomment-69823",
+    "user": "zimmerma"
+}
+```
 
 with the patch, we now get with the initial example:
 
@@ -303,22 +484,55 @@ The doctested process was killed by signal 14
 which is more informative. I thus give a positive review.
 
 
+
 ---
 
-Comment by zimmerma created at 2010-03-08 15:17:06
+archive/issue_comments_069824.json:
+```json
+{
+    "body": "Changing status from needs_info to needs_review.",
+    "created_at": "2010-03-08T15:17:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7993",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7993#issuecomment-69824",
+    "user": "zimmerma"
+}
+```
 
 Changing status from needs_info to needs_review.
 
 
+
 ---
 
-Comment by zimmerma created at 2010-03-08 15:17:42
+archive/issue_comments_069825.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-03-08T15:17:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7993",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7993#issuecomment-69825",
+    "user": "zimmerma"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mhansen created at 2010-03-08 20:54:04
+archive/issue_comments_069826.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-03-08T20:54:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7993",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7993#issuecomment-69826",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

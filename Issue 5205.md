@@ -1,11 +1,21 @@
 # Issue 5205: [with patch, needs review] Set "# -*- coding: utf-8 -*-" encoding for sage/server/notebook/template.py
 
-Issue created by migration from https://trac.sagemath.org/ticket/5205
-
-Original creator: mabshoff
-
-Original creation time: 2009-02-08 06:14:26
-
+archive/issues_005205.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nCC:  jason malb\n\nWhen building Sage 3.3.alpha6 every doctest passes. Move the tree, start Sage once so that all the pyc files are rewritten and then doctest and failures galore:\n\n```\n\tsage -t -long devel/sage/sage/server/notebook/cell.py # 136 doctests failed\n\tsage -t -long devel/sage/sage/server/notebook/worksheet.py # 379 doctests failed\n\tsage -t -long devel/sage/sage/server/notebook/twist.py # 39 doctests failed\n\tsage -t -long devel/sage/sage/server/notebook/notebook.py # 127 doctests failed\n\tsage -t -long devel/sage/sage/server/notebook/avatars.py # 13 doctests failed\n\tsage -t -long devel/sage/sage/server/notebook/template.py # 10 doctests failed\n```\n\nThis all boils down to\n\n```\nFile \"/scratch/mabshoff/sage-3.3.rc0/devel/sage-main/sage/server/notebook/worksheet.py\", line 347:\n    sage: nb = sage.server.notebook.notebook.Notebook(tmp_dir())\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/sage-3.3.alpha6/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-3.3.alpha6/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-3.3.alpha6/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_10[2]>\", line 1, in <module>\n        nb = sage.server.notebook.notebook.Notebook(tmp_dir())###line 347:\n    sage: nb = sage.server.notebook.notebook.Notebook(tmp_dir())\n      File \"/scratch/mabshoff/sage-3.3.rc0/local/lib/python2.5/site-packages/sage/server/notebook/notebook.py\", line 94, in __init__\n        import sage.server.notebook.twist\n      File \"/scratch/mabshoff/sage-3.3.rc0/local/lib/python2.5/site-packages/sage/server/notebook/twist.py\", line 44, in <module>\n        from sage.server.notebook.template import template\n      File \"/scratch/mabshoff/sage-3.3.rc0/local/lib/python2.5/site-packages/sage/server/notebook/template.py\", line 64\n     SyntaxError: Non-ASCII character '\\xc3' in file /scratch/mabshoff/sage-3.3.rc0/local/lib/python2.5/site-packages/sage/server/notebook/template.py on line 65, but no encoding declared; see http://www.python.org/peps/pep-0263.html for details (template.py, line 64)\n```\n\nAs I pointed out in #5176 we must declare the encoding, but then I tested the cloning of the repo and could not get it to fail. I am clueless why, but the patch fixes the issue for me. \n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5205\n\n",
+    "created_at": "2009-02-08T06:14:26Z",
+    "labels": [
+        "doctest coverage",
+        "blocker",
+        "bug"
+    ],
+    "title": "[with patch, needs review] Set \"# -*- coding: utf-8 -*-\" encoding for sage/server/notebook/template.py",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5205",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 CC:  jason malb
@@ -51,17 +61,43 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/5205
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2009-02-08 06:19:17
+archive/issue_comments_039885.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-02-08T06:19:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5205",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5205#issuecomment-39885",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-08 06:19:17
+archive/issue_comments_039886.json:
+```json
+{
+    "body": "Well, I am clueless when testing for this failure I could not get it to go boom. The fix itself is obvious.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-08T06:19:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5205",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5205#issuecomment-39886",
+    "user": "mabshoff"
+}
+```
 
 Well, I am clueless when testing for this failure I could not get it to go boom. The fix itself is obvious.
 
@@ -70,21 +106,56 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_039887.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-02-08T06:32:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5205",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5205#issuecomment-39887",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2009-02-08 06:48:10
+archive/issue_comments_039888.json:
+```json
+{
+    "body": "Looks good.",
+    "created_at": "2009-02-08T06:48:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5205",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5205#issuecomment-39888",
+    "user": "mhansen"
+}
+```
 
 Looks good.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-08 07:42:03
+archive/issue_comments_039889.json:
+```json
+{
+    "body": "Merged in Sage 3.3.rc0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-08T07:42:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5205",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5205#issuecomment-39889",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.3.rc0.
 
@@ -93,8 +164,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-08 07:42:03
+archive/issue_comments_039890.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-02-08T07:42:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5205",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5205#issuecomment-39890",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

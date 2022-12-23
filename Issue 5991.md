@@ -1,11 +1,21 @@
 # Issue 5991: Add as tandard constructor for dynamic classes
 
-Issue created by migration from https://trac.sagemath.org/ticket/5991
-
-Original creator: nthiery
-
-Original creation time: 2009-05-05 22:04:01
-
+archive/issues_005991.json:
+```json
+{
+    "body": "Assignee: nthiery\n\nCC:  sage-combinat saliola roed\n\nKeywords: dynamic classes, pickling, unique representation\n\nThis patch implements sage.structure.dynamic_class.dynamic_class, for constructing dynamically new python classes. The constructed classes can be pickled, and have unique representation.\n\nDepends on #5985 for the pickling and #5120\n\nUsed by the upcoming category framework #5891, (and sage-words?)\n\nIssue created by migration from https://trac.sagemath.org/ticket/5991\n\n",
+    "created_at": "2009-05-05T22:04:01Z",
+    "labels": [
+        "misc",
+        "major",
+        "enhancement"
+    ],
+    "title": "Add as tandard constructor for dynamic classes",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5991",
+    "user": "nthiery"
+}
+```
 Assignee: nthiery
 
 CC:  sage-combinat saliola roed
@@ -18,44 +28,116 @@ Depends on #5985 for the pickling and #5120
 
 Used by the upcoming category framework #5891, (and sage-words?)
 
+Issue created by migration from https://trac.sagemath.org/ticket/5991
+
+
+
+
 
 ---
 
-Comment by nthiery created at 2009-05-08 23:19:15
+archive/issue_comments_047606.json:
+```json
+{
+    "body": "Patch updated for new version of #5120\nPlease ignore  dynamic_class-5991-submitted.2.patch",
+    "created_at": "2009-05-08T23:19:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5991",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5991#issuecomment-47606",
+    "user": "nthiery"
+}
+```
 
 Patch updated for new version of #5120
 Please ignore  dynamic_class-5991-submitted.2.patch
 
 
+
 ---
 
-Comment by nthiery created at 2009-05-19 06:26:23
+archive/issue_comments_047607.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-05-19T06:26:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5991",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5991#issuecomment-47607",
+    "user": "nthiery"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
+
+archive/issue_comments_047608.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-05-21T08:15:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5991",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5991#issuecomment-47608",
+    "user": "nthiery"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by roed created at 2009-05-21 09:04:44
+archive/issue_comments_047609.json:
+```json
+{
+    "body": "Looks good.  Doctests pass.",
+    "created_at": "2009-05-21T09:04:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5991",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5991#issuecomment-47609",
+    "user": "roed"
+}
+```
 
 Looks good.  Doctests pass.
 
 
+
 ---
 
-Comment by ncalexan created at 2009-06-13 22:00:57
+archive/issue_comments_047610.json:
+```json
+{
+    "body": "Since this depends on #5985 which does not have a positive review it will have to wait.",
+    "created_at": "2009-06-13T22:00:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5991",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5991#issuecomment-47610",
+    "user": "ncalexan"
+}
+```
 
 Since this depends on #5985 which does not have a positive review it will have to wait.
 
 
+
 ---
 
-Comment by boothby created at 2009-06-24 18:34:40
+archive/issue_comments_047611.json:
+```json
+{
+    "body": "Doctest failures:\n\n\n```\nsage -t -long devel/sage/sage/structure/dynamic_class.py\n**********************************************************************\nFile \"/space/boothby/sage-4.0.3/devel/sage-main/sage/structure/dynamic_class.py\", line 210:\n    sage: loads(dumps(BarFoo))\nException raised:\n    Traceback (most recent call last):\n      File \"/space/boothby/sage-4.0.3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/space/boothby/sage-4.0.3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/space/boothby/sage-4.0.3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_1[23]>\", line 1, in <module>\n        loads(dumps(BarFoo))###line 210:\n    sage: loads(dumps(BarFoo))\n      File \"sage_object.pyx\", line 604, in sage.structure.sage_object.dumps (sage/structure/sage_ob$\n        return comp.compress(cPickle.dumps(obj, protocol=2))\n    PicklingError: Can't pickle <class '__main__.BarFoo'>: attribute lookup __main__.BarFoo failed\n**********************************************************************\nFile \"/space/boothby/sage-4.0.3/devel/sage-main/sage/structure/dynamic_class.py\", line 224:\n    sage: import sage.misc.cPickle as cPickle\nException raised:\n    Traceback (most recent call last):\n      File \"/space/boothby/sage-4.0.3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/space/boothby/sage-4.0.3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/space/boothby/sage-4.0.3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_1[30]>\", line 1, in <module>\n        import sage.misc.cPickle as cPickle###line 224:\n    sage: import sage.misc.cPickle as cPickle\n    ImportError: No module named cPickle\n**********************************************************************\nFile \"/space/boothby/sage-4.0.3/devel/sage-main/sage/structure/dynamic_class.py\", line 225:\n    sage: cPickle.loads(cPickle.dumps(FooBar)) == FooBar\nException raised:\n    Traceback (most recent call last):\n      File \"/space/boothby/sage-4.0.3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/space/boothby/sage-4.0.3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/space/boothby/sage-4.0.3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_1[31]>\", line 1, in <module>\n        cPickle.loads(cPickle.dumps(FooBar)) == FooBar###line 225:\n    sage: cPickle.loads(cPickle.dumps(FooBar)) == FooBar\n    NameError: name 'cPickle' is not defined\n**********************************************************************\nFile \"/space/boothby/sage-4.0.3/devel/sage-main/sage/structure/dynamic_class.py\", line 238:\n    sage: loads(dumps(FooUnique)) is FooUnique\nException raised:\n    Traceback (most recent call last):\n      File \"/space/boothby/sage-4.0.3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/space/boothby/sage-4.0.3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/space/boothby/sage-4.0.3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_1[35]>\", line 1, in <module>\n        loads(dumps(FooUnique)) is FooUnique###line 238:\n    sage: loads(dumps(FooUnique)) is FooUnique\n      File \"sage_object.pyx\", line 604, in sage.structure.sage_object.dumps (sage/structure/sage_ob$\n        return comp.compress(cPickle.dumps(obj, protocol=2))\n    PicklingError: Can't pickle <class '__main__.Foo'>: it's not the same object as __main__.Foo\n**********************************************************************\n1 items had failures:\n   4 of  36 in __main__.example_1\n***Test Failed*** 4 failures.\n```\n",
+    "created_at": "2009-06-24T18:34:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5991",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5991#issuecomment-47611",
+    "user": "boothby"
+}
+```
 
 Doctest failures:
 
@@ -134,16 +216,40 @@ Exception raised:
 
 
 
+
 ---
 
-Comment by nthiery created at 2009-06-24 20:38:26
+archive/issue_comments_047612.json:
+```json
+{
+    "body": "Yeah: it depends on #5985, but otherwise is ready.\n\nShould there be a new field in the trac server for listing systematically the other tickets the ticket depends on?",
+    "created_at": "2009-06-24T20:38:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5991",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5991#issuecomment-47612",
+    "user": "nthiery"
+}
+```
 
 Yeah: it depends on #5985, but otherwise is ready.
 
 Should there be a new field in the trac server for listing systematically the other tickets the ticket depends on?
 
 
+
 ---
+
+archive/issue_comments_047613.json:
+```json
+{
+    "body": "Attachment\n\nThe two added patches, by David and myself improve introspection.\nI give a positive review on David's. David, can you double check mine?",
+    "created_at": "2009-07-10T23:24:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5991",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5991#issuecomment-47613",
+    "user": "nthiery"
+}
+```
 
 Attachment
 
@@ -151,7 +257,20 @@ The two added patches, by David and myself improve introspection.
 I give a positive review on David's. David, can you double check mine?
 
 
+
 ---
+
+archive/issue_comments_047614.json:
+```json
+{
+    "body": "Attachment\n\nReplying to [comment:11 nthiery]:\n> The two added patches, by David and myself improve introspection.\n> I give a positive review on David's. David, can you double check mine?\n\nThe updated referee patch by myself adds a copyright header, and fixes a warning in sage -docbuild.\n\nDavid: please double check!",
+    "created_at": "2009-07-13T06:54:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5991",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5991#issuecomment-47614",
+    "user": "nthiery"
+}
+```
 
 Attachment
 
@@ -164,37 +283,96 @@ The updated referee patch by myself adds a copyright header, and fixes a warning
 David: please double check!
 
 
+
 ---
+
+archive/issue_comments_047615.json:
+```json
+{
+    "body": "Attachment\n\nFix reduction after David's referee patch",
+    "created_at": "2009-07-17T22:30:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5991",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5991#issuecomment-47615",
+    "user": "nthiery"
+}
+```
 
 Attachment
 
 Fix reduction after David's referee patch
 
 
+
 ---
 
-Comment by nthiery created at 2009-07-17 22:40:36
+archive/issue_comments_047616.json:
+```json
+{
+    "body": "Fold of all the patches above. Apply only this one",
+    "created_at": "2009-07-17T22:40:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5991",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5991#issuecomment-47616",
+    "user": "nthiery"
+}
+```
 
 Fold of all the patches above. Apply only this one
 
 
+
 ---
+
+archive/issue_comments_047617.json:
+```json
+{
+    "body": "Attachment\n\nDavid: can you have a quick look at my latest addition, and set a positive review (pending #5985)",
+    "created_at": "2009-07-17T22:41:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5991",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5991#issuecomment-47617",
+    "user": "nthiery"
+}
+```
 
 Attachment
 
 David: can you have a quick look at my latest addition, and set a positive review (pending #5985)
 
 
+
 ---
 
-Comment by roed created at 2009-07-18 07:12:32
+archive/issue_comments_047618.json:
+```json
+{
+    "body": "So, I approve the changes.  I don't have time right now to run doctests though: the release manager (or someone) should make sure to do so.",
+    "created_at": "2009-07-18T07:12:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5991",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5991#issuecomment-47618",
+    "user": "roed"
+}
+```
 
 So, I approve the changes.  I don't have time right now to run doctests though: the release manager (or someone) should make sure to do so.
 
 
+
 ---
 
-Comment by nthiery created at 2009-07-18 09:02:03
+archive/issue_comments_047619.json:
+```json
+{
+    "body": "Replying to [comment:14 roed]:\n> So, I approve the changes.  I don't have time right now to run doctests though: the release manager (or someone) should make sure to do so.\n\nThanks! All the doctest pass on my machine, but yes, a triple check would be good.",
+    "created_at": "2009-07-18T09:02:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5991",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5991#issuecomment-47619",
+    "user": "nthiery"
+}
+```
 
 Replying to [comment:14 roed]:
 > So, I approve the changes.  I don't have time right now to run doctests though: the release manager (or someone) should make sure to do so.
@@ -202,34 +380,91 @@ Replying to [comment:14 roed]:
 Thanks! All the doctest pass on my machine, but yes, a triple check would be good.
 
 
+
 ---
 
-Comment by nthiery created at 2009-10-11 08:52:16
+archive/issue_comments_047620.json:
+```json
+{
+    "body": "If #5985 is ready on time to get integrated in 4.1.2, it would be great to have this on go in too.",
+    "created_at": "2009-10-11T08:52:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5991",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5991#issuecomment-47620",
+    "user": "nthiery"
+}
+```
 
 If #5985 is ready on time to get integrated in 4.1.2, it would be great to have this on go in too.
 
 
+
 ---
 
-Comment by was created at 2009-10-14 03:45:48
+archive/issue_comments_047621.json:
+```json
+{
+    "body": "NOTE to self -- the change to sageinspect needs to be ported into the separated notebook when this is merged.",
+    "created_at": "2009-10-14T03:45:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5991",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5991#issuecomment-47621",
+    "user": "was"
+}
+```
 
 NOTE to self -- the change to sageinspect needs to be ported into the separated notebook when this is merged.
 
 
+
 ---
+
+archive/issue_comments_047622.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-10-15T07:02:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5991",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5991#issuecomment-47622",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-15 07:15:24
+archive/issue_comments_047623.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-10-15T07:15:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5991",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5991#issuecomment-47623",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-15 07:15:24
+archive/issue_comments_047624.json:
+```json
+{
+    "body": "I had to make the change to the way cPickle is imported as in #5985.  I'll make a new ticket for sageinspect in the separated notebook.",
+    "created_at": "2009-10-15T07:15:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5991",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5991#issuecomment-47624",
+    "user": "mhansen"
+}
+```
 
 I had to make the change to the way cPickle is imported as in #5985.  I'll make a new ticket for sageinspect in the separated notebook.

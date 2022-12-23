@@ -1,11 +1,21 @@
 # Issue 9339: Notebook fails to print result of last expression if there is a line break
 
-Issue created by migration from https://trac.sagemath.org/ticket/9339
-
-Original creator: nbruin
-
-Original creation time: 2010-06-25 20:04:50
-
+archive/issues_009339.json:
+```json
+{
+    "body": "Assignee: jason, was\n\nConsider the following two notebook cells. Semantically, the input is the same in both examples. The only difference is that the second one has a line break inside a bracket.\n\nFirst one prints the result of the last expression (line) in the cell:\n\n```\n(x+1)\n///\nx + 1\n```\n\n\nBut the second one doesn't:\n\n```\n(x+\n1)\n///\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9339\n\n",
+    "created_at": "2010-06-25T20:04:50Z",
+    "labels": [
+        "notebook",
+        "major",
+        "bug"
+    ],
+    "title": "Notebook fails to print result of last expression if there is a line break",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9339",
+    "user": "nbruin"
+}
+```
 Assignee: jason, was
 
 Consider the following two notebook cells. Semantically, the input is the same in both examples. The only difference is that the second one has a line break inside a bracket.
@@ -29,37 +39,96 @@ But the second one doesn't:
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/9339
+
+
+
+
 
 ---
 
-Comment by acleone created at 2010-06-25 20:50:14
+archive/issue_comments_088237.json:
+```json
+{
+    "body": "Should be fixed by #7997",
+    "created_at": "2010-06-25T20:50:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9339",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9339#issuecomment-88237",
+    "user": "acleone"
+}
+```
 
 Should be fixed by #7997
 
 
+
 ---
 
-Comment by kcrisman created at 2014-12-19 04:53:58
+archive/issue_comments_088238.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2014-12-19T04:53:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9339",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9339#issuecomment-88238",
+    "user": "kcrisman"
+}
+```
 
 Changing status from new to needs_review.
 
 
----
-
-Comment by kcrisman created at 2014-12-19 04:53:58
-
-This is really the same as http://trac.sagemath.org/ticket/8503 and https://github.com/sagemath/sagenb/issues/301 - note that some examples _do_ work.
-
 
 ---
 
-Comment by kcrisman created at 2014-12-19 04:54:12
+archive/issue_comments_088239.json:
+```json
+{
+    "body": "This is really the same as http://trac.sagemath.org/ticket/8503 and https://github.com/sagemath/sagenb/issues/301 - note that some examples *do* work.",
+    "created_at": "2014-12-19T04:53:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9339",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9339#issuecomment-88239",
+    "user": "kcrisman"
+}
+```
+
+This is really the same as http://trac.sagemath.org/ticket/8503 and https://github.com/sagemath/sagenb/issues/301 - note that some examples *do* work.
+
+
+
+---
+
+archive/issue_comments_088240.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2014-12-19T04:54:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9339",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9339#issuecomment-88240",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by vbraun created at 2015-01-13 01:17:18
+archive/issue_comments_088241.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2015-01-13T01:17:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9339",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9339#issuecomment-88241",
+    "user": "vbraun"
+}
+```
 
 Resolution: duplicate

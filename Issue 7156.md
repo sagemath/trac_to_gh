@@ -1,11 +1,21 @@
 # Issue 7156: prereq-0.4 has a minor portability issue.
 
-Issue created by migration from https://trac.sagemath.org/ticket/7156
-
-Original creator: drkirkby
-
-Original creation time: 2009-10-08 14:28:05
-
+archive/issues_007156.json:
+```json
+{
+    "body": "Assignee: tbd\n\nMy recently updated prereq-0.4 #7021 has a minor portability issue, which existed in version 0.3 too. If run on HP-UX, which the 'uname' command does not support the -p option needed to get the processor, so generates the following message:\n\n```\nStarting prerequisite check.\nMachine: HP-UX hpbox B.11.11 U 9000/785 2016698240 unlimited-user license\nuname: illegal option -- p\nusage: uname [-amnrsvil] [-S nodename]\n```\n\n\nThe reason is quite simple. The code which checks for an operating system which is not Solaris SPARC uses this: \n\n```\n\n    elif [ `uname` = \"SunOS\" -a \"`uname -p`\" != \"sparc\" ]; then\n        echo \"Building or using Sage on non-Sparc Solaris is tricky and not supported\"\n        echo \"at the moment. It is possible, but you should be well aware that\"\n        echo \"some things do not work. Support for Solaris\"\n        echo \"on non-SPARC hardware is actively being worked on.\"\n        echo \"To get past this message, export the variable SAGE_PORT to\"\n        echo \"something non-empty.\"\n        exit 1\n    elif [ `uname` = \"HP-UX\" ]; then\n\n```\n\n\nIt would better be changed to \n\n\n```\n    elif [ `uname` = \"SunOS\" ]; then\n       # The -p option to 'uname' is not portable (HP-UX does not support it for example)\n       # So it is safer to test for Solaris first, then test for the processor with the\n       # -p option if necessary.\n       if [ \"`uname -p`\" != \"sparc\" ]; then\n          echo \"Building or using Sage on non-Sparc Solaris is tricky and not supported\"\n          echo \"at the moment. It is possible, but you should be well aware that\"\n          echo \"some things do not work. Support for Solaris\"\n          echo \"on non-SPARC hardware is actively being worked on.\"\n          echo \"To get past this message, export the variable SAGE_PORT to\"\n          echo \"something non-empty.\"\n          exit 1\n       fi\n    elif [ `uname` = \"HP-UX\" ]; then\n\n```\n\n\nwhich would then only use the -p option on Solaris. \n\nI'll update this at one point in the future. I expect I'll get some feedback from the prereq-0.4, so I'll created a 0.5 at some time in the future. \n\nThis does not actually terminate the build process on HP-UX, so even for a port, it is not a big issue. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7156\n\n",
+    "created_at": "2009-10-08T14:28:05Z",
+    "labels": [
+        "porting",
+        "trivial",
+        "bug"
+    ],
+    "title": "prereq-0.4 has a minor portability issue.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7156",
+    "user": "drkirkby"
+}
+```
 Assignee: tbd
 
 My recently updated prereq-0.4 #7021 has a minor portability issue, which existed in version 0.3 too. If run on HP-UX, which the 'uname' command does not support the -p option needed to get the processor, so generates the following message:
@@ -65,16 +75,42 @@ This does not actually terminate the build process on HP-UX, so even for a port,
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7156
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2009-11-20 06:20:56
+archive/issue_comments_059291.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-11-20T06:20:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7156",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7156#issuecomment-59291",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mhansen created at 2009-11-20 06:20:56
+archive/issue_comments_059292.json:
+```json
+{
+    "body": "Fixed by #7352",
+    "created_at": "2009-11-20T06:20:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7156",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7156#issuecomment-59292",
+    "user": "mhansen"
+}
+```
 
 Fixed by #7352

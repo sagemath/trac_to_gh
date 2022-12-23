@@ -1,19 +1,44 @@
 # Issue 3515: Finance builds incorrectly with pbuild
 
-Issue created by migration from https://trac.sagemath.org/ticket/3515
-
-Original creator: ghtdak
-
-Original creation time: 2008-06-26 15:48:43
-
+archive/issues_003515.json:
+```json
+{
+    "body": "Assignee: gfurnish\n\nFinance needs to be set up or pbuild configured to properly compile.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3515\n\n",
+    "created_at": "2008-06-26T15:48:43Z",
+    "labels": [
+        "pbuild",
+        "major",
+        "bug"
+    ],
+    "title": "Finance builds incorrectly with pbuild",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3515",
+    "user": "ghtdak"
+}
+```
 Assignee: gfurnish
 
 Finance needs to be set up or pbuild configured to properly compile.
 
+Issue created by migration from https://trac.sagemath.org/ticket/3515
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-06-26 19:01:45
+archive/issue_comments_024774.json:
+```json
+{
+    "body": "Glenn,\n\ncould you post some actual output from the failure?\n\nCheers,\n\nMichael",
+    "created_at": "2008-06-26T19:01:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3515",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3515#issuecomment-24774",
+    "user": "mabshoff"
+}
+```
 
 Glenn,
 
@@ -24,32 +49,76 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by ghtdak created at 2008-06-27 02:37:54
+archive/issue_comments_024775.json:
+```json
+{
+    "body": "We don't have output per se.  It just didn't work and william suggested trying it without pbuild and it was fine.  I've discussed with Gary and we didn't implement at the time as he was refactoring the pbuild code but is aware of the problem.\n\nMy understanding is that its a straightforward entry somewhere but I don't have any information as to how to configure pbuild.",
+    "created_at": "2008-06-27T02:37:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3515",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3515#issuecomment-24775",
+    "user": "ghtdak"
+}
+```
 
 We don't have output per se.  It just didn't work and william suggested trying it without pbuild and it was fine.  I've discussed with Gary and we didn't implement at the time as he was refactoring the pbuild code but is aware of the problem.
 
 My understanding is that its a straightforward entry somewhere but I don't have any information as to how to configure pbuild.
 
 
+
 ---
 
-Comment by gfurnish created at 2008-07-01 17:15:07
+archive/issue_comments_024776.json:
+```json
+{
+    "body": "This should be easy to fix after #3399 is applied.  I included some documentation on how to correctly modify pbuild.",
+    "created_at": "2008-07-01T17:15:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3515",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3515#issuecomment-24776",
+    "user": "gfurnish"
+}
+```
 
 This should be easy to fix after #3399 is applied.  I included some documentation on how to correctly modify pbuild.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-12 14:05:06
+archive/issue_comments_024777.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2008-07-12T14:05:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3515",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3515#issuecomment-24777",
+    "user": "mabshoff"
+}
+```
 
 Resolution: invalid
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-12 14:05:06
+archive/issue_comments_024778.json:
+```json
+{
+    "body": "This is a duplicate of #3614.\n\nGary, please check for existing tickets before opening new ones. This is a pbuild ticket owned by you, so you should know about this.\n\nCheers,\n\nMichael",
+    "created_at": "2008-07-12T14:05:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3515",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3515#issuecomment-24778",
+    "user": "mabshoff"
+}
+```
 
 This is a duplicate of #3614.
 

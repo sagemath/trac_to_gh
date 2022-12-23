@@ -1,30 +1,68 @@
 # Issue 5541: more formatting fixes for quaternion algebra docstring
 
-Issue created by migration from https://trac.sagemath.org/ticket/5541
-
-Original creator: mvngu
-
-Original creation time: 2009-03-17 03:43:08
-
+archive/issues_005541.json:
+```json
+{
+    "body": "Assignee: tba\n\nKeywords: quaternion_algebra.py, sphinx, docstring\n\nWhile reviewing ticket #5531 I noticed some further formatting issues in the docstring of `quaternion_algebra.py`. The objective is to make the docstring of that module look even prettier.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5541\n\n",
+    "created_at": "2009-03-17T03:43:08Z",
+    "labels": [
+        "documentation",
+        "minor",
+        "bug"
+    ],
+    "title": "more formatting fixes for quaternion algebra docstring",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5541",
+    "user": "mvngu"
+}
+```
 Assignee: tba
 
 Keywords: quaternion_algebra.py, sphinx, docstring
 
 While reviewing ticket #5531 I noticed some further formatting issues in the docstring of `quaternion_algebra.py`. The objective is to make the docstring of that module look even prettier.
 
+Issue created by migration from https://trac.sagemath.org/ticket/5541
+
+
+
+
 
 ---
 
-Comment by mvngu created at 2009-03-17 04:41:43
+archive/issue_comments_043104.json:
+```json
+{
+    "body": "Make quaternion_algebra.py more prettier",
+    "created_at": "2009-03-17T04:41:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5541",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5541#issuecomment-43104",
+    "user": "mvngu"
+}
+```
 
 Make quaternion_algebra.py more prettier
 
 
+
 ---
+
+archive/issue_comments_043105.json:
+```json
+{
+    "body": "Attachment\n\nThe patch **trac_5541-docstring-fixes.patch** fixes some more docstring formatting problems in `sage/algebras/quaternion_algebra.py`. It also resolves this indentation warning:\n\n```\nWARNING: <autodoc>:0: (ERROR/3) Unexpected indentation.\n```\n\nwhich I received after applying the patch for ticket #5531 and building the reference manual.",
+    "created_at": "2009-03-17T04:46:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5541",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5541#issuecomment-43105",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
-The patch *trac_5541-docstring-fixes.patch* fixes some more docstring formatting problems in `sage/algebras/quaternion_algebra.py`. It also resolves this indentation warning:
+The patch **trac_5541-docstring-fixes.patch** fixes some more docstring formatting problems in `sage/algebras/quaternion_algebra.py`. It also resolves this indentation warning:
 
 ```
 WARNING: <autodoc>:0: (ERROR/3) Unexpected indentation.
@@ -33,30 +71,76 @@ WARNING: <autodoc>:0: (ERROR/3) Unexpected indentation.
 which I received after applying the patch for ticket #5531 and building the reference manual.
 
 
+
 ---
 
-Comment by mvngu created at 2009-03-17 04:57:03
+archive/issue_comments_043106.json:
+```json
+{
+    "body": "I should mention that this ticket depends on #5531.",
+    "created_at": "2009-03-17T04:57:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5541",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5541#issuecomment-43106",
+    "user": "mvngu"
+}
+```
 
 I should mention that this ticket depends on #5531.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-03-29 16:27:05
+archive/issue_comments_043107.json:
+```json
+{
+    "body": "Looks good to me except for two very minor issues, which are taken care of in the referee's patch.\n\n(By the way, see #5632 for a somewhat related ticket.)",
+    "created_at": "2009-03-29T16:27:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5541",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5541#issuecomment-43107",
+    "user": "jhpalmieri"
+}
+```
 
 Looks good to me except for two very minor issues, which are taken care of in the referee's patch.
 
 (By the way, see #5632 for a somewhat related ticket.)
 
 
+
 ---
+
+archive/issue_comments_043108.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-03-29T16:27:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5541",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5541#issuecomment-43108",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mvngu created at 2009-03-30 06:34:22
+archive/issue_comments_043109.json:
+```json
+{
+    "body": "Replying to [comment:3 jhpalmieri]:\n> Looks good to me except for two very minor issues, which are taken care of in the referee's patch.\n\n\nYep, looks good to me. Thanks for pointing that out.",
+    "created_at": "2009-03-30T06:34:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5541",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5541#issuecomment-43109",
+    "user": "mvngu"
+}
+```
 
 Replying to [comment:3 jhpalmieri]:
 > Looks good to me except for two very minor issues, which are taken care of in the referee's patch.
@@ -65,9 +149,20 @@ Replying to [comment:3 jhpalmieri]:
 Yep, looks good to me. Thanks for pointing that out.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-03-31 07:41:03
+archive/issue_comments_043110.json:
+```json
+{
+    "body": "This patch needs to be rebased due to #5520:\n\n```\nsage-3.4.1.rc0/devel/sage$ patch -p1 --dry-run < trac_5541-docstring-fixes.patch \npatching file sage/algebras/quatalg/quaternion_algebra.py\nHunk #1 FAILED at 58.\nHunk #2 succeeded at 101 (offset 6 lines).\nHunk #3 FAILED at 125.\nHunk #4 succeeded at 152 (offset 6 lines).\nHunk #5 succeeded at 183 (offset 6 lines).\nHunk #6 succeeded at 195 (offset 6 lines).\nHunk #7 FAILED at 203.\nHunk #8 succeeded at 228 (offset 6 lines).\nHunk #9 succeeded at 242 (offset 6 lines).\nHunk #10 succeeded at 255 (offset 6 lines).\nHunk #11 succeeded at 268 (offset 6 lines).\nHunk #12 succeeded at 296 (offset 6 lines).\nHunk #13 succeeded at 305 (offset 6 lines).\nHunk #14 succeeded at 326 (offset 6 lines).\nHunk #15 succeeded at 348 (offset 6 lines).\nHunk #16 succeeded at 366 (offset 6 lines).\nHunk #17 succeeded at 379 (offset 6 lines).\nHunk #18 succeeded at 397 (offset 6 lines).\nHunk #19 succeeded at 424 (offset 6 lines).\nHunk #20 succeeded at 436 (offset 6 lines).\nHunk #21 succeeded at 454 (offset 6 lines).\nHunk #22 succeeded at 463 (offset 6 lines).\nHunk #23 succeeded at 476 (offset 6 lines).\nHunk #24 succeeded at 486 (offset 5 lines).\nHunk #25 succeeded at 518 (offset 5 lines).\nHunk #26 succeeded at 569 (offset 25 lines).\nHunk #27 succeeded at 606 (offset 43 lines).\nHunk #28 succeeded at 623 (offset 43 lines).\nHunk #29 succeeded at 640 with fuzz 1 (offset 43 lines).\nHunk #30 succeeded at 657 (offset 43 lines).\nHunk #31 succeeded at 683 (offset 43 lines).\nHunk #32 succeeded at 694 (offset 43 lines).\nHunk #33 FAILED at 742.\n4 out of 33 hunks FAILED -- saving rejects to file sage/algebras/quatalg/quaternion_algebra.py.rej\n```\n\nNote that the file has moved from sage/algebras to sage/algebras/quatalg\n\nCheers,\n\nMichael",
+    "created_at": "2009-03-31T07:41:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5541",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5541#issuecomment-43110",
+    "user": "mabshoff"
+}
+```
 
 This patch needs to be rebased due to #5520:
 
@@ -117,37 +212,94 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-03-31 15:40:17
+archive/issue_comments_043111.json:
+```json
+{
+    "body": "Please see [my most recent comment on #5632](http://trac.sagemath.org/sage_trac/ticket/5632#comment:6) for a reference manual issue which is also relevant here.",
+    "created_at": "2009-03-31T15:40:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5541",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5541#issuecomment-43111",
+    "user": "jhpalmieri"
+}
+```
 
 Please see [my most recent comment on #5632](http://trac.sagemath.org/sage_trac/ticket/5632#comment:6) for a reference manual issue which is also relevant here.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-04-01 02:54:52
+archive/issue_comments_043112.json:
+```json
+{
+    "body": "Here's a rebased version, plus more.  This includes all of mvngu's work, so he should obviously get a lot of credit for this; this covers the file up to line 700 or so. #5520 added a lot of code to this file with many of the same issues, so starting at line 741, there are new fixes.",
+    "created_at": "2009-04-01T02:54:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5541",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5541#issuecomment-43112",
+    "user": "jhpalmieri"
+}
+```
 
 Here's a rebased version, plus more.  This includes all of mvngu's work, so he should obviously get a lot of credit for this; this covers the file up to line 700 or so. #5520 added a lot of code to this file with many of the same issues, so starting at line 741, there are new fixes.
 
 
+
 ---
+
+archive/issue_comments_043113.json:
+```json
+{
+    "body": "Attachment\n\n(this replaces both of the earlier patches)",
+    "created_at": "2009-04-01T02:55:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5541",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5541#issuecomment-43113",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
 (this replaces both of the earlier patches)
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-04-05 22:48:56
+archive/issue_comments_043114.json:
+```json
+{
+    "body": "mvngu: the first half of my patch is just a rebased version of yours, and it already has a positive review.  If you are willing to review the second half, then that should do it for this ticket.",
+    "created_at": "2009-04-05T22:48:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5541",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5541#issuecomment-43114",
+    "user": "jhpalmieri"
+}
+```
 
 mvngu: the first half of my patch is just a rebased version of yours, and it already has a positive review.  If you are willing to review the second half, then that should do it for this ticket.
 
 
+
 ---
 
-Comment by mvngu created at 2009-04-05 23:38:53
+archive/issue_comments_043115.json:
+```json
+{
+    "body": "Replying to [comment:8 jhpalmieri]:\n> mvngu: the first half of my patch is just a rebased version of yours, and it already has a positive review.  If you are willing to review the second half, then that should do it for this ticket.\n\n\njhpalmieri: I've read through the rebased patch. But I also want to (re)build at least the HTML version of the reference to make sure that the rebased patch fixes the problems it claims to fix. I'll give this patch a formal review sometime today.",
+    "created_at": "2009-04-05T23:38:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5541",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5541#issuecomment-43115",
+    "user": "mvngu"
+}
+```
 
 Replying to [comment:8 jhpalmieri]:
 > mvngu: the first half of my patch is just a rebased version of yours, and it already has a positive review.  If you are willing to review the second half, then that should do it for this ticket.
@@ -156,9 +308,20 @@ Replying to [comment:8 jhpalmieri]:
 jhpalmieri: I've read through the rebased patch. But I also want to (re)build at least the HTML version of the reference to make sure that the rebased patch fixes the problems it claims to fix. I'll give this patch a formal review sometime today.
 
 
+
 ---
 
-Comment by mvngu created at 2009-04-17 02:18:59
+archive/issue_comments_043116.json:
+```json
+{
+    "body": "REFEREE REPORT:\n\n\n\nThe following lines result in something weird when viewing the HTML version of the reference manual:\n\n```\n486\tclass QuaternionAlgebra_ab(QuaternionAlgebra_abstract): \n487\t    \"\"\" \n488\t    The quaternion algebra of the form `(a, b/K)`, where `i^2=a`, `j^2 = b`, \n489\t    and `j*i = -i*j`.  ``K`` is a field not of characteristic 2 and ``a``, \n490\t    ``b`` are nonzero elements of ``K``. \n491\t \n492\t    EXAMPLES:: \n493\t \n494\t    \"\"\" \n495\t    def __init__(self, base_ring, a, b, names='i,j,k'):\n```\n\nSee the [HTML version](http://sage.math.washington.edu/home/mvngu/reference/sage/algebras/quatalg/quaternion_algebra.html#sage.algebras.quatalg.quaternion_algebra.QuaternionAlgebra_ab) I've generated after applying the rebased patch. I think the problem is that there's a \"EXAMPLES::\" tag, which is not followed by any examples at all. Now by alphabetic order, the method `sage.algebras.quatalg.quaternion_algebra.QuaternionAlgebra_ab.QuaternionAlgebra_ab.discriminant()` is thus formatted in a weird way as\n\n```\n.. method:: QuaternionAlgebra_ab.discriminant()\n```\n\nin the HTML version.\n\n\n\nHow about some documentation for \n\n```\n627\t    def gen(self, i=0):\n```\n\nto explain what it does. At the moment, there are examples, but no explanation of what this method is supposed to do.\n\n\n\nI think the maths expression in the following lines are typeset in a weird way:\n\n```\n1069\t    def discriminant(self): \n1070\t        r\"\"\" \n1071\t        Return the discriminant of this order, which we define as \n1046\t \t        $\\sqrt( det ( Tr(e_i \\bar(e_j) ) ) )$, where $\\{e_i\\}$ is the \n1072\t        `\\sqrt( det ( Tr(e_i \\bar(e_j) ) ) )`, where `\\{e_i\\}` is the \n1073\n```\n\nSee the [HTML version](http://sage.math.washington.edu/home/mvngu/reference/sage/algebras/quatalg/quaternion_algebra.html#sage.algebras.quatalg.quaternion_algebra.QuaternionOrder.discriminant) of the reference manual for a visual.\n\n\n\nThe maths expression in these lines\n\n```\n1481\t        The normalized theta series is by definition \n1442\t1482\t \n1443\t1483\t        .. math: \n1444\t1484\t \n1445\t \t        \\theta_I(q)=\\sum_{x \\in I} q^{\\frac{N(x)}{N(I)}} \n1446\t \t         \n \t1485\t            \\theta_I(q)=\\sum_{x \\in I} q^{\\frac{N(x)}{N(I)}}\n```\n\ndoesn't show up in the [HTML version](http://sage.math.washington.edu/home/mvngu/reference/sage/algebras/quatalg/quaternion_algebra.html#sage.algebras.quatalg.quaternion_algebra.QuaternionFractionalIdeal_rational.theta_series).",
+    "created_at": "2009-04-17T02:18:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5541",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5541#issuecomment-43116",
+    "user": "mvngu"
+}
+```
 
 REFEREE REPORT:
 
@@ -229,23 +392,58 @@ The maths expression in these lines
 doesn't show up in the [HTML version](http://sage.math.washington.edu/home/mvngu/reference/sage/algebras/quatalg/quaternion_algebra.html#sage.algebras.quatalg.quaternion_algebra.QuaternionFractionalIdeal_rational.theta_series).
 
 
+
 ---
+
+archive/issue_comments_043117.json:
+```json
+{
+    "body": "Attachment\n\napply on top of 5541-rebased.patch",
+    "created_at": "2009-04-17T03:23:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5541",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5541#issuecomment-43117",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
 apply on top of 5541-rebased.patch
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-04-17 03:25:00
+archive/issue_comments_043118.json:
+```json
+{
+    "body": "Oh, and mabshoff: this should fix the warnings for this file when building the reference manual.",
+    "created_at": "2009-04-17T03:25:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5541",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5541#issuecomment-43118",
+    "user": "jhpalmieri"
+}
+```
 
 Oh, and mabshoff: this should fix the warnings for this file when building the reference manual.
 
 
+
 ---
 
-Comment by mvngu created at 2009-04-17 05:53:20
+archive/issue_comments_043119.json:
+```json
+{
+    "body": "REFEREE REPORT\n\n\n\nI applied patches against sage-3.4.1.rc3 in this order:\n\n1. First, `5541-rebased.patch`\n2. Followed by `5541-second.patch`\n\nAll doctests passed with options `-t -long`. I rebuilt the HTML version of the reference manual and noticed that `5541-second.patch` has addressed all of my concerns above. Positive review.",
+    "created_at": "2009-04-17T05:53:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5541",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5541#issuecomment-43119",
+    "user": "mvngu"
+}
+```
 
 REFEREE REPORT
 
@@ -253,15 +451,26 @@ REFEREE REPORT
 
 I applied patches against sage-3.4.1.rc3 in this order:
 
- 1. First, `5541-rebased.patch`
- 1. Followed by `5541-second.patch`
+1. First, `5541-rebased.patch`
+2. Followed by `5541-second.patch`
 
 All doctests passed with options `-t -long`. I rebuilt the HTML version of the reference manual and noticed that `5541-second.patch` has addressed all of my concerns above. Positive review.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-17 06:14:24
+archive/issue_comments_043120.json:
+```json
+{
+    "body": "Ok, this should go into 3.4.1.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-17T06:14:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5541",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5541#issuecomment-43120",
+    "user": "mabshoff"
+}
+```
 
 Ok, this should go into 3.4.1.
 
@@ -270,16 +479,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-18 01:07:43
+archive/issue_comments_043121.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-04-18T01:07:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5541",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5541#issuecomment-43121",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-18 01:07:43
+archive/issue_comments_043122.json:
+```json
+{
+    "body": "Merged  5541-rebased.patch and 5541-second.patch in Sage 3.4.1.rc4.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-18T01:07:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5541",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5541#issuecomment-43122",
+    "user": "mabshoff"
+}
+```
 
 Merged  5541-rebased.patch and 5541-second.patch in Sage 3.4.1.rc4.
 

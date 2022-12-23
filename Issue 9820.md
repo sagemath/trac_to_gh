@@ -1,11 +1,21 @@
 # Issue 9820: problems with infinite polynomial rings
 
-Issue created by migration from https://trac.sagemath.org/ticket/9821
-
-Original creator: fwclarke
-
-Original creation time: 2010-08-27 11:53:35
-
+archive/issues_009820.json:
+```json
+{
+    "body": "Assignee: malb\n\nKeywords: infinite polynomial ring\n\nThe functions `is_field` and `is_integral_domain` for infinite polynomial rings lack the keyword `proof`.  This can give rise to errors.  For example,\n\n```\nsage: R.<x> = InfinitePolynomialRing(ZZ)\nsage: A.<t> = R[[]]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9821\n\n",
+    "created_at": "2010-08-27T11:53:35Z",
+    "labels": [
+        "commutative algebra",
+        "minor",
+        "bug"
+    ],
+    "title": "problems with infinite polynomial rings",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9820",
+    "user": "fwclarke"
+}
+```
 Assignee: malb
 
 Keywords: infinite polynomial ring
@@ -18,38 +28,99 @@ sage: A.<t> = R[[]]
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/9821
+
+
+
+
 
 ---
+
+archive/issue_comments_096830.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-08-27T11:59:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9820",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9820#issuecomment-96830",
+    "user": "fwclarke"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by fwclarke created at 2010-08-27 12:02:47
+archive/issue_comments_096831.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-08-27T12:02:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9820",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9820#issuecomment-96831",
+    "user": "fwclarke"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by fwclarke created at 2010-08-27 12:02:47
+archive/issue_comments_096832.json:
+```json
+{
+    "body": "The patch fixes the problem.  There were actually two definitions of `is_field` in the file.  One has been deleted and the other modified.",
+    "created_at": "2010-08-27T12:02:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9820",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9820#issuecomment-96832",
+    "user": "fwclarke"
+}
+```
 
 The patch fixes the problem.  There were actually two definitions of `is_field` in the file.  One has been deleted and the other modified.
 
 
+
 ---
 
-Comment by mhansen created at 2010-08-27 17:05:05
+archive/issue_comments_096833.json:
+```json
+{
+    "body": "Could you add a doctest testing the proof parameter.\n\n(Note that this is a duplicate of #9589, but I think this one can get resolved quicker.)",
+    "created_at": "2010-08-27T17:05:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9820",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9820#issuecomment-96833",
+    "user": "mhansen"
+}
+```
 
 Could you add a doctest testing the proof parameter.
 
 (Note that this is a duplicate of #9589, but I think this one can get resolved quicker.)
 
 
+
 ---
 
-Comment by fwclarke created at 2010-08-31 20:40:31
+archive/issue_comments_096834.json:
+```json
+{
+    "body": "Replying to [comment:2 mhansen]:\n\n> Could you add a doctest testing the proof parameter.\n\nThis has turned out to be more difficult than expected, but I do now have a replacement patch.  In order to create a reasonable doctest I had to correct a bug in `sage.rings.quotient_rings.QuotientRing_generic.is_integral_domain`\n\nAt the same time I have eliminated the `Integer(8)` example from that function's doctests, since that ring uses code from `sage/rings/finite_rings/integer_mod_ring.pyx` rather than from `quotient_rings`.\n\nI didn't think it worth including an example of the use of `proof` in `is_field` because the parameter is ignored.\n\n> (Note that this is a duplicate of #9589, but I think this one can get resolved quicker.)\n\n(You must have meant #9549)",
+    "created_at": "2010-08-31T20:40:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9820",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9820#issuecomment-96834",
+    "user": "fwclarke"
+}
+```
 
 Replying to [comment:2 mhansen]:
 
@@ -66,14 +137,38 @@ I didn't think it worth including an example of the use of `proof` in `is_field`
 (You must have meant #9549)
 
 
+
 ---
 
-Comment by fwclarke created at 2010-08-31 20:41:00
+archive/issue_comments_096835.json:
+```json
+{
+    "body": "replaces previous patch",
+    "created_at": "2010-08-31T20:41:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9820",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9820#issuecomment-96835",
+    "user": "fwclarke"
+}
+```
 
 replaces previous patch
 
 
+
 ---
+
+archive/issue_comments_096836.json:
+```json
+{
+    "body": "Attachment\n\nThis has been fixed by #9443.  This ticket was actually a triplicate!\n\nThe bug in `is_integral_domain` for generic quotient rings is now the subject of #10219.",
+    "created_at": "2010-11-05T12:22:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9820",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9820#issuecomment-96836",
+    "user": "fwclarke"
+}
+```
 
 Attachment
 
@@ -82,8 +177,19 @@ This has been fixed by #9443.  This ticket was actually a triplicate!
 The bug in `is_integral_domain` for generic quotient rings is now the subject of #10219.
 
 
+
 ---
 
-Comment by fwclarke created at 2010-11-05 12:22:45
+archive/issue_comments_096837.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2010-11-05T12:22:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9820",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9820#issuecomment-96837",
+    "user": "fwclarke"
+}
+```
 
 Resolution: duplicate

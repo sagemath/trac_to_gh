@@ -1,11 +1,21 @@
 # Issue 5276: bug in creating polynomial ring over some rings of integers
 
-Issue created by migration from https://trac.sagemath.org/ticket/5276
-
-Original creator: AlexGhitza
-
-Original creation time: 2009-02-15 10:57:05
-
+archive/issues_005276.json:
+```json
+{
+    "body": "Assignee: was\n\nKeywords: ring of integers, polynomial ring\n\nThis happened to me in 3.3.rc0:\n\n\n```\nsage: K.<a, b> = NumberField([x^2 + 2, x^2 + 1000*x + 1])\nsage: OK = K.ring_of_integers()\nsage: S.<y> = OK[]\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/ghitza/.sage/temp/artin/12662/_home_ghitza__sage_init_sage_0.py in <module>()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/ring.so in sage.rings.ring.Ring.__getitem__ (sage/rings/ring.c:2402)()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring_constructor.pyc in PolynomialRing(base_ring, arg1, arg2, sparse, order, names, name, implementation)\n    281                 raise TypeError, \"if second arguments is a string with no commas, then there must be no other non-optional arguments\"\n    282             name = arg1\n--> 283             R = _single_variate(base_ring, name, sparse, implementation)\n    284         else:\n    285             # 2-4. PolynomialRing(base_ring, names, order='degrevlex'):\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring_constructor.pyc in _single_variate(base_ring, name, sparse, implementation)\n    372 \n    373         elif base_ring.is_integral_domain():\n--> 374             R = m.PolynomialRing_integral_domain(base_ring, name, sparse, implementation)\n    375         else:\n    376             R = m.PolynomialRing_commutative(base_ring, name, sparse)\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring.pyc in __init__(self, base_ring, name, sparse, implementation, element_class)\n   1041                     raise ValueError, \"Unknown implementation %s for ZZ[x]\"\n   1042         PolynomialRing_commutative.__init__(self, base_ring, name=name,\n-> 1043                 sparse=sparse, element_class=element_class)\n   1044     \n   1045     def _repr_(self):\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring.pyc in __init__(self, base_ring, name, sparse, element_class)\n    994             raise TypeError, \"Base ring must be a commutative ring.\"\n    995         PolynomialRing_general.__init__(self, base_ring, name=name,\n--> 996                 sparse=sparse, element_class=element_class)\n    997 \n    998     def quotient_by_principal_ideal(self, f, names=None):\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring.pyc in __init__(self, base_ring, name, sparse, element_class)\n    177                 from sage.rings.polynomial import polynomial_element\n    178                 self._polynomial_class = polynomial_element.Polynomial_generic_dense\n--> 179         self.__generator = self._polynomial_class(self, [0,1], is_gen=True)\n    180         self.__cyclopoly_cache = {}\n    181         self._has_singular = False\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_element.so in sage.rings.polynomial.polynomial_element.Polynomial_generic_dense.__init__ (sage/rings/polynomial/polynomial_element.c:29516)()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/number_field/order.pyc in __call__(self, x)\n   1190         Coerce an element into this relative order.\n   1191         \"\"\"\n-> 1192         if x.parent() is not self._K:\n   1193             x = self._K(x)\n   1194         x = self._absolute_order(x) # will test membership\n\nAttributeError: 'int' object has no attribute 'parent'\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5276\n\n",
+    "created_at": "2009-02-15T10:57:05Z",
+    "labels": [
+        "number theory",
+        "major",
+        "bug"
+    ],
+    "title": "bug in creating polynomial ring over some rings of integers",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5276",
+    "user": "AlexGhitza"
+}
+```
 Assignee: was
 
 Keywords: ring of integers, polynomial ring
@@ -73,17 +83,43 @@ AttributeError: 'int' object has no attribute 'parent'
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5276
+
+
+
+
 
 ---
 
-Comment by fwclarke created at 2009-03-13 19:05:23
+archive/issue_comments_040489.json:
+```json
+{
+    "body": "The problem is solved by changes to `__call__` for the class `RelativeOrder` in `sage/rings/number_theory/order.py` to be found in #5508.",
+    "created_at": "2009-03-13T19:05:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5276",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5276#issuecomment-40489",
+    "user": "fwclarke"
+}
+```
 
 The problem is solved by changes to `__call__` for the class `RelativeOrder` in `sage/rings/number_theory/order.py` to be found in #5508.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-03-25 08:55:22
+archive/issue_comments_040490.json:
+```json
+{
+    "body": "To close this we would need a doctest.\n\nCheers,\n\nMichael",
+    "created_at": "2009-03-25T08:55:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5276",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5276#issuecomment-40490",
+    "user": "mabshoff"
+}
+```
 
 To close this we would need a doctest.
 
@@ -92,9 +128,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by fwclarke created at 2009-03-26 08:49:47
+archive/issue_comments_040491.json:
+```json
+{
+    "body": "Replying to [comment:2 mabshoff]:\n> To close this we would need a doctest.\n\nSee lines 1194 to 1204 of sage/rings/number_field/order.py as patched by \n#5508:\n\n```\n            sage: K.<a, b> = NumberField([x^2 + 2, x^2 + 1000*x + 1]) \n            sage: OK = K.ring_of_integers()\n            ...\n\n        The following used to fail; see trac #5276::\n\n            sage: S.<y> = OK[]; S\n            Univariate Polynomial Ring in y over Relative Order in Number Field in a with defining polynomial x^2 + 2 over its base field\n```\n",
+    "created_at": "2009-03-26T08:49:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5276",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5276#issuecomment-40491",
+    "user": "fwclarke"
+}
+```
 
 Replying to [comment:2 mabshoff]:
 > To close this we would need a doctest.
@@ -115,9 +162,20 @@ See lines 1194 to 1204 of sage/rings/number_field/order.py as patched by
 
 
 
+
 ---
 
-Comment by mabshoff created at 2009-03-26 20:36:14
+archive/issue_comments_040492.json:
+```json
+{
+    "body": "Fixed in Sage 3.4.1.alpha0 via #5508. Thanks Francis :)\n\nCheers,\n\nMichael",
+    "created_at": "2009-03-26T20:36:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5276",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5276#issuecomment-40492",
+    "user": "mabshoff"
+}
+```
 
 Fixed in Sage 3.4.1.alpha0 via #5508. Thanks Francis :)
 
@@ -126,8 +184,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-03-26 20:36:14
+archive/issue_comments_040493.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-03-26T20:36:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5276",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5276#issuecomment-40493",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

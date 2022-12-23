@@ -1,11 +1,21 @@
 # Issue 2849: Bug in elliptic curve cardinality for j=0 in char. 3
 
-Issue created by migration from https://trac.sagemath.org/ticket/2849
-
-Original creator: cremona
-
-Original creation time: 2008-04-07 20:35:32
-
+archive/issues_002849.json:
+```json
+{
+    "body": "Assignee: cremona\n\nDustin Moody reported\n\n```\n    While working on some things, I found a bug in SAGE:\n\n sage:k.<a>=GF(3^5)\n\n sage:E=EllipticCurve(k,[-1,-1])\n\n sage:E.trace_of_frobenius()\n 0\n\n This isn't correct.  It should be -27.  I also discovered you can get\naround it.\n\n sage:E.cardinality_exhaustive()\n 271\n\n sage:E.trace_of_frobenius()\n -27\n\n Somehow, doing .cardinality_exhaustive() fixes the bug.\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2849\n\n",
+    "created_at": "2008-04-07T20:35:32Z",
+    "labels": [
+        "number theory",
+        "major",
+        "bug"
+    ],
+    "title": "Bug in elliptic curve cardinality for j=0 in char. 3",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2849",
+    "user": "cremona"
+}
+```
 Assignee: cremona
 
 Dustin Moody reported
@@ -34,29 +44,81 @@ around it.
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2849
+
+
+
+
 
 ---
+
+archive/issue_comments_019550.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-04-07T20:49:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2849",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2849#issuecomment-19550",
+    "user": "cremona"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by cremona created at 2008-04-07 20:52:37
+archive/issue_comments_019551.json:
+```json
+{
+    "body": "Here's the patch:   A case where q=3 (mod 4) only worked for p>3 and was being used for p=3, odd degree.  Should be a trivial review.\n\nNote that I am in the middle of implementing vastly better support for the cases j=0 and j=1728, which are not so straightforward in characterisitcs 2 and 3 but I am getting there!",
+    "created_at": "2008-04-07T20:52:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2849",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2849#issuecomment-19551",
+    "user": "cremona"
+}
+```
 
 Here's the patch:   A case where q=3 (mod 4) only worked for p>3 and was being used for p=3, odd degree.  Should be a trivial review.
 
 Note that I am in the middle of implementing vastly better support for the cases j=0 and j=1728, which are not so straightforward in characterisitcs 2 and 3 but I am getting there!
 
 
+
 ---
 
-Comment by AlexGhitza created at 2008-04-07 21:59:03
+archive/issue_comments_019552.json:
+```json
+{
+    "body": "apply after trac2849.patch",
+    "created_at": "2008-04-07T21:59:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2849",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2849#issuecomment-19552",
+    "user": "AlexGhitza"
+}
+```
 
 apply after trac2849.patch
 
 
+
 ---
+
+archive/issue_comments_019553.json:
+```json
+{
+    "body": "Attachment\n\nLooks fine and it fixes the issue.  I've added a mini-patch that puts in a doctest demonstrating the fixed status.\n\nApply both patches.",
+    "created_at": "2008-04-07T22:00:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2849",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2849#issuecomment-19553",
+    "user": "AlexGhitza"
+}
+```
 
 Attachment
 
@@ -65,23 +127,56 @@ Looks fine and it fixes the issue.  I've added a mini-patch that puts in a docte
 Apply both patches.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-07 22:20:12
+archive/issue_comments_019554.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-04-07T22:20:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2849",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2849#issuecomment-19554",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-07 22:20:12
+archive/issue_comments_019555.json:
+```json
+{
+    "body": "Merged trac2849.patch and trac2849_doctest.patch in Sage 3.0.alpha3",
+    "created_at": "2008-04-07T22:20:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2849",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2849#issuecomment-19555",
+    "user": "mabshoff"
+}
+```
 
 Merged trac2849.patch and trac2849_doctest.patch in Sage 3.0.alpha3
 
 
+
 ---
 
-Comment by cremona created at 2008-04-08 07:58:55
+archive/issue_comments_019556.json:
+```json
+{
+    "body": "Replying to [comment:2 AlexGhitza]:\n> Looks fine and it fixes the issue.  I've added a mini-patch that puts in a doctest demonstrating the fixed status.\n> \n\nThanks, Alex -- I should have done that but only remembered after uploading the patch.\n\n> Apply both patches.",
+    "created_at": "2008-04-08T07:58:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2849",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2849#issuecomment-19556",
+    "user": "cremona"
+}
+```
 
 Replying to [comment:2 AlexGhitza]:
 > Looks fine and it fixes the issue.  I've added a mini-patch that puts in a doctest demonstrating the fixed status.

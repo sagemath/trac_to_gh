@@ -1,11 +1,21 @@
 # Issue 5943: Sage 3.4.2.a0: prime_pi(2^50) segfaults
 
-Issue created by migration from https://trac.sagemath.org/ticket/5943
-
-Original creator: mabshoff
-
-Original creation time: 2009-04-29 22:45:19
-
+archive/issues_005943.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  boothby mjo\n\nThis is *bad*.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5943\n\n",
+    "created_at": "2009-04-29T22:45:19Z",
+    "labels": [
+        "number theory",
+        "blocker",
+        "bug"
+    ],
+    "title": "Sage 3.4.2.a0: prime_pi(2^50) segfaults",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5943",
+    "user": "mabshoff"
+}
+```
 Assignee: was
 
 CC:  boothby mjo
@@ -16,10 +26,25 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/5943
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2009-04-29 22:48:16
+archive/issue_comments_046970.json:
+```json
+{
+    "body": "Hmm, the back trace looks pretty bad:\n\n```\nmabshoff@sage:~$ sage -gdb\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n/usr/local/sage/local/bin/sage-ipython\nGNU gdb 6.8-debian\nCopyright (C) 2008 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.  Type \"show copying\"\nand \"show warranty\" for details.\nThis GDB was configured as \"x86_64-linux-gnu\"...\n[Thread debugging using libthread_db enabled]\nPython 2.5.2 (r252:60911, Mar 11 2009, 22:18:38) \n[GCC 4.2.4 (Ubuntu 4.2.4-1ubuntu3)] on linux2\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n[New Thread 0x7fe3285456e0 (LWP 11010)]\nsage: prime_pi(2^50)\n| Sage Version 3.4.1, Release Date: 2009-04-21                       |\n| Type notebook() for the GUI, and license() for information.        |\nProgram received signal SIGSEGV, Segmentation fault.\n[Switching to Thread 0x7fe3285456e0 (LWP 11010)]\n0x00007fe32776bf4e in ?? () from /lib/libc.so.6\n(gdb) bt\n#0  0x00007fe32776bf4e in ?? () from /lib/libc.so.6\n#1  0x00fc73d0eb623c9b in ?? ()\nCannot access memory at address 0xff0ff3d0eb624364\n(gdb) \n```\n",
+    "created_at": "2009-04-29T22:48:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5943",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5943#issuecomment-46970",
+    "user": "mabshoff"
+}
+```
 
 Hmm, the back trace looks pretty bad:
 
@@ -55,9 +80,20 @@ Cannot access memory at address 0xff0ff3d0eb624364
 
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-05-02 11:15:04
+archive/issue_comments_046971.json:
+```json
+{
+    "body": "I can't get this to segfault.  I tried on sage.math and on my laptop (macbook running 32-bit archlinux).  The problem is that the two machines get different answers after a while (I hope the table is clear -- the last column is a function that's \"known\" to be a good approximation to prime_pi):\n\n\n```\nx     prime_pi(x) on sage.math     prime_pi(x) on my laptop     Li(x)-Li(sqrt(x))/2\n2^46   2280998753949                2280998753949               2.28099863535e+12\n2^47   4461632979717                4454203917918               4.46163280359e+12\n2^48   8731188863470                8612800813048               8.73118897751e+12\n2^49  17094432576778               15793194017311               1.70944327138e+13\n2^50  33483379603407               21969300962685               3.34833795774e+13\n```\n\n\nSo it seems that the problem starts somewhere between `2^46` and `2^47`, and that the sage.math output is most likely correct.",
+    "created_at": "2009-05-02T11:15:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5943",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5943#issuecomment-46971",
+    "user": "AlexGhitza"
+}
+```
 
 I can't get this to segfault.  I tried on sage.math and on my laptop (macbook running 32-bit archlinux).  The problem is that the two machines get different answers after a while (I hope the table is clear -- the last column is a function that's "known" to be a good approximation to prime_pi):
 
@@ -75,9 +111,20 @@ x     prime_pi(x) on sage.math     prime_pi(x) on my laptop     Li(x)-Li(sqrt(x)
 So it seems that the problem starts somewhere between `2^46` and `2^47`, and that the sage.math output is most likely correct.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-03 00:29:40
+archive/issue_comments_046972.json:
+```json
+{
+    "body": "We might want to either implement this ourselves or just put reasonable limit on this:\n\n```\nsage\" len(prime_range(2^35))\n/home/mabshoff/.sage/temp/sage.math.washington.edu/10069/_home_mabshoff__sage_init_sage_0.py in <module>()\n\n/scratch/mabshoff/sage-3.4.2.final/local/lib/python2.5/site-packages/IPython/iplib.pyc in ipmagic(self, arg_s)\n    951         else:\n    952             magic_args = self.var_expand(magic_args,1)\n--> 953             return fn(magic_args)\n    954 \n    955     def ipalias(self,arg_s):\n\n/scratch/mabshoff/sage-3.4.2.final/local/lib/python2.5/site-packages/IPython/Magic.pyc in magic_time(self, parameter_s)\n   1905         if mode=='eval':\n   1906             st = clk()\n-> 1907             out = eval(code,glob)\n   1908             end = clk()\n   1909         else:\n\n/home/mabshoff/.sage/temp/sage.math.washington.edu/10069/_home_mabshoff__sage_init_sage_0.py in <module>()\n\n/scratch/mabshoff/sage-3.4.2.final/local/lib/python2.5/site-packages/sage/rings/fast_arith.so in sage.rings.fast_arith.prime_range (sage/rings/fast_arith.c:3772)()\n\n/scratch/mabshoff/sage-3.4.2.final/local/lib/python2.5/site-packages/sage/rings/fast_arith.so in sage.rings.fast_arith.prime_range (sage/rings/fast_arith.c:3458)()\n\n/scratch/mabshoff/sage-3.4.2.final/local/lib/python2.5/site-packages/sage/libs/pari/gen.so in sage.libs.pari.gen.PariInstance.primes_up_to_n (sage/libs/pari/gen.c:40660)()\n\n/scratch/mabshoff/sage-3.4.2.final/local/lib/python2.5/site-packages/sage/libs/pari/gen.so in sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:44402)()\n\n/scratch/mabshoff/sage-3.4.2.final/local/lib/python2.5/site-packages/sage/libs/pari/gen.so in sage.libs.pari.gen.PariInstance.allocatemem (sage/libs/pari/gen.c:40001)()\n\n/scratch/mabshoff/sage-3.4.2.final/local/lib/python2.5/site-packages/sage/libs/pari/gen.so in sage.libs.pari.gen.init_stack (sage/libs/pari/gen.c:43371)()\n\nMemoryError: Unable to allocate 131072000000 bytes memory for PARI.\n```\n",
+    "created_at": "2009-05-03T00:29:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5943",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5943#issuecomment-46972",
+    "user": "mabshoff"
+}
+```
 
 We might want to either implement this ourselves or just put reasonable limit on this:
 
@@ -118,16 +165,38 @@ MemoryError: Unable to allocate 131072000000 bytes memory for PARI.
 
 
 
+
 ---
 
-Comment by was created at 2009-06-15 23:28:37
+archive/issue_comments_046973.json:
+```json
+{
+    "body": "Changing priority from blocker to critical.",
+    "created_at": "2009-06-15T23:28:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5943",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5943#issuecomment-46973",
+    "user": "was"
+}
+```
 
 Changing priority from blocker to critical.
 
 
+
 ---
 
-Comment by wuthrich created at 2009-12-03 14:49:34
+archive/issue_comments_046974.json:
+```json
+{
+    "body": "I get now (in sage 4.2.1)\n\n\n```\nlen(prime_range(2^50))\n\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"_sage_input_4.py\", line 5, in <module>\n    len(prime_range(_sage_const_2 **_sage_const_50 ))\n  File \"\", line 1, in <module>\n    \n  File \"fast_arith.pyx\", line 56, in sage.rings.fast_arith.prime_range (sage/rings/fast_arith.c:3822)\n  File \"fast_arith.pyx\", line 100, in sage.rings.fast_arith.prime_range (sage/rings/fast_arith.c:3508)\n  File \"gen.pyx\", line 8663, in sage.libs.pari.gen.PariInstance.primes_up_to_n (sage/libs/pari/gen.c:41327)\nOverflowError: long int too large to convert to int\n```\n\n\nwhich is the same problem as #7017.",
+    "created_at": "2009-12-03T14:49:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5943",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5943#issuecomment-46974",
+    "user": "wuthrich"
+}
+```
 
 I get now (in sage 4.2.1)
 
@@ -151,9 +220,20 @@ OverflowError: long int too large to convert to int
 which is the same problem as #7017.
 
 
+
 ---
 
-Comment by kini created at 2011-10-15 09:07:45
+archive/issue_comments_046975.json:
+```json
+{
+    "body": "In Sage 4.7.2.alpha3, I get the following:\n\n\n```\nsage: len(prime_range(2^50))\n---------------------------------------------------------------------------\nPariError                                 Traceback (most recent call last)\n\n/home/keshav/<ipython console> in <module>()\n\n/home/keshav/sage/local/lib/python2.6/site-packages/sage/rings/fast_arith.so in sage.rings.fast_arith.prime_range (sage/rings/fast_arith.c:4082)()\n\n/home/keshav/sage/local/lib/python2.6/site-packages/sage/rings/fast_arith.so in sage.rings.fast_arith.prime_range (sage/rings/fast_arith.c:3717)()\n\n/home/keshav/sage/local/lib/python2.6/site-packages/sage/libs/pari/gen.so in sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:47679)()\n\nPariError: not enough memory (28)\n```\n\n\nIs there something wrong with this, or should this ticket be closed?",
+    "created_at": "2011-10-15T09:07:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5943",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5943#issuecomment-46975",
+    "user": "kini"
+}
+```
 
 In Sage 4.7.2.alpha3, I get the following:
 
@@ -178,14 +258,38 @@ PariError: not enough memory (28)
 Is there something wrong with this, or should this ticket be closed?
 
 
+
 ---
 
-Comment by mjo created at 2011-12-12 02:14:55
+archive/issue_comments_046976.json:
+```json
+{
+    "body": "Patch doctesting the correct behaviour",
+    "created_at": "2011-12-12T02:14:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5943",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5943#issuecomment-46976",
+    "user": "mjo"
+}
+```
 
 Patch doctesting the correct behaviour
 
 
+
 ---
+
+archive/issue_comments_046977.json:
+```json
+{
+    "body": "Attachment\n\nI think the current behavior is desirable given the alternatives.\nThe slower algorithm falls on its face just as hard if you choose an upper bound that will cause out-of-memory, so there's no sense in falling back to that after we catch the exception.",
+    "created_at": "2011-12-12T02:18:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5943",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5943#issuecomment-46977",
+    "user": "mjo"
+}
+```
 
 Attachment
 
@@ -193,44 +297,110 @@ I think the current behavior is desirable given the alternatives.
 The slower algorithm falls on its face just as hard if you choose an upper bound that will cause out-of-memory, so there's no sense in falling back to that after we catch the exception.
 
 
+
 ---
 
-Comment by mjo created at 2011-12-12 02:18:51
+archive/issue_comments_046978.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2011-12-12T02:18:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5943",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5943#issuecomment-46978",
+    "user": "mjo"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by kini created at 2011-12-12 02:29:33
+archive/issue_comments_046979.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2011-12-12T02:29:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5943",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5943#issuecomment-46979",
+    "user": "kini"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by kini created at 2011-12-12 02:29:33
+archive/issue_comments_046980.json:
+```json
+{
+    "body": "Sounds good to me.",
+    "created_at": "2011-12-12T02:29:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5943",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5943#issuecomment-46980",
+    "user": "kini"
+}
+```
 
 Sounds good to me.
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-12-17 09:12:40
+archive/issue_comments_046981.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2011-12-17T09:12:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5943",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5943#issuecomment-46981",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-12-21 09:18:30
+archive/issue_comments_046982.json:
+```json
+{
+    "body": "Changing status from closed to new.",
+    "created_at": "2011-12-21T09:18:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5943",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5943#issuecomment-46982",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from closed to new.
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-12-21 09:18:30
+archive/issue_comments_046983.json:
+```json
+{
+    "body": "On hawk (OpenSolaris 06.2009-32):\n\n```\nsage -t -long  -force_lib devel/sage/sage/rings/fast_arith.pyx\n**********************************************************************\nFile \"/export/home/buildbot/build/sage/hawk-1/hawk_full/build/sage-4.8.alpha5/devel/sage-main/sage/rings/fast_arith.pyx\", line 122:\n    sage: prime_range(sys.maxint)\nExpected:\n    Traceback (most recent call last):\n    ...\n    PariError: not enough memory (28)\nGot:\n    Traceback (most recent call last):\n      File \"/export/home/buildbot/build/sage/hawk-1/hawk_full/build/sage-4.8.alpha5/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/export/home/buildbot/build/sage/hawk-1/hawk_full/build/sage-4.8.alpha5/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/export/home/buildbot/build/sage/hawk-1/hawk_full/build/sage-4.8.alpha5/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_1[16]>\", line 1, in <module>\n        prime_range(sys.maxint)###line 122:\n    sage: prime_range(sys.maxint)\n      File \"fast_arith.pyx\", line 56, in sage.rings.fast_arith.prime_range (sage/rings/fast_arith.c:4149)\n        cpdef prime_range(start, stop=None, algorithm=\"pari_primes\", bint py_ints=False):\n      File \"fast_arith.pyx\", line 161, in sage.rings.fast_arith.prime_range (sage/rings/fast_arith.c:3929)\n        res.append(z)\n    MemoryError\n**********************************************************************\n```\n",
+    "created_at": "2011-12-21T09:18:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5943",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5943#issuecomment-46983",
+    "user": "jdemeyer"
+}
+```
 
 On hawk (OpenSolaris 06.2009-32):
 
@@ -264,16 +434,38 @@ Got:
 
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-12-21 09:18:30
+archive/issue_comments_046984.json:
+```json
+{
+    "body": "Resolution changed from fixed to ",
+    "created_at": "2011-12-21T09:18:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5943",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5943#issuecomment-46984",
+    "user": "jdemeyer"
+}
+```
 
 Resolution changed from fixed to 
 
 
+
 ---
 
-Comment by kini created at 2011-12-21 09:30:23
+archive/issue_comments_046985.json:
+```json
+{
+    "body": "Hmm. For comparison, on x86_64, within a doctest:\n\n\n```\nExpected:\n    Traceback (most recent call last):\n    ...\n    PariError: not enough memory (28)\n    xyzzy\nGot:\n    Traceback (most recent call last):\n      File \"/opt/sage-4.8.alpha4/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/opt/sage-4.8.alpha4/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/opt/sage-4.8.alpha4/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_1[16]>\", line 1, in <module>\n        prime_range(sys.maxint)###line 122:_sage_    >>> prime_range(sys.maxint)\n      File \"fast_arith.pyx\", line 56, in sage.rings.fast_arith.prime_range (sage/rings/fast_arith.c:4149)\n      File \"fast_arith.pyx\", line 150, in sage.rings.fast_arith.prime_range (sage/rings/fast_arith.c:3795)\n      File \"gen.pyx\", line 10262, in sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:49373)\n    PariError: not enough memory (28)\n```\n\n\nWhat's `sys.maxint` on hawk? I don't have an account there. On my machine:\n\n\n```\nsage: sys.maxint\n9223372036854775807\n```\n\n\nMaybe the doctest should test a specific number to avoid vagaries of various platforms? Or maybe we should dig around in the code to find out why there are two different code paths that run out of memory in this operation with two different error messages.",
+    "created_at": "2011-12-21T09:30:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5943",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5943#issuecomment-46985",
+    "user": "kini"
+}
+```
 
 Hmm. For comparison, on x86_64, within a doctest:
 
@@ -313,18 +505,40 @@ sage: sys.maxint
 Maybe the doctest should test a specific number to avoid vagaries of various platforms? Or maybe we should dig around in the code to find out why there are two different code paths that run out of memory in this operation with two different error messages.
 
 
+
 ---
 
-Comment by mjo created at 2011-12-21 16:35:55
+archive/issue_comments_046986.json:
+```json
+{
+    "body": "Sorry, the sys.maxint was (apparently not so) carefully chosen to prevent an overflow error on 32-bit systems (see #11741 and #7017). My reasoning was that it should also be large enough to cause the not-enough-memory error on any 32-bit system, but I've been outsmarted.\n\nIt looks like Pari actually created a list of `(2^32 - 1)` primes? I think I still have an OpenSolaris VM somewhere I can test on.",
+    "created_at": "2011-12-21T16:35:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5943",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5943#issuecomment-46986",
+    "user": "mjo"
+}
+```
 
 Sorry, the sys.maxint was (apparently not so) carefully chosen to prevent an overflow error on 32-bit systems (see #11741 and #7017). My reasoning was that it should also be large enough to cause the not-enough-memory error on any 32-bit system, but I've been outsmarted.
 
 It looks like Pari actually created a list of `(2^32 - 1)` primes? I think I still have an OpenSolaris VM somewhere I can test on.
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-12-22 12:40:33
+archive/issue_comments_046987.json:
+```json
+{
+    "body": "Replying to [comment:12 kini]:\n> What's `sys.maxint` on hawk? I don't have an account there.\n\n```\nsage: sys.maxint\n2147483647\nsage: 2**31 -1\n2147483647\n```\n",
+    "created_at": "2011-12-22T12:40:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5943",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5943#issuecomment-46987",
+    "user": "jdemeyer"
+}
+```
 
 Replying to [comment:12 kini]:
 > What's `sys.maxint` on hawk? I don't have an account there.
@@ -338,9 +552,20 @@ sage: 2**31 -1
 
 
 
+
 ---
 
-Comment by mjo created at 2011-12-22 15:36:10
+archive/issue_comments_046988.json:
+```json
+{
+    "body": "On 32-bit machines with PAE and a lot of memory, `sys.maxint` is smaller than the number of primes that Pari can compute (and `sys.maxint` is the biggest one we can ask for without triggering the OverflowError). Trying to append those primes to a python list requires more memory than Pari does, so it's possible to get a MemoryError there.\n\nI think that trying to test for the not-enough-memory condition here on x32 is probably doomed. The patch for #11741 has the right idea: on 64-bit machines, we know that we can't compute close to `sys.maxint` primes regardless of how much memory is in the machine. On 32-bit machines, just sidestep the issue and cause a predictable failure.\n\nThe actual bug is still fixed: you get python errors instead of segfaults now. That leaves only the question of whether #11741 is a sufficient doctest.",
+    "created_at": "2011-12-22T15:36:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5943",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5943#issuecomment-46988",
+    "user": "mjo"
+}
+```
 
 On 32-bit machines with PAE and a lot of memory, `sys.maxint` is smaller than the number of primes that Pari can compute (and `sys.maxint` is the biggest one we can ask for without triggering the OverflowError). Trying to append those primes to a python list requires more memory than Pari does, so it's possible to get a MemoryError there.
 
@@ -349,43 +574,109 @@ I think that trying to test for the not-enough-memory condition here on x32 is p
 The actual bug is still fixed: you get python errors instead of segfaults now. That leaves only the question of whether #11741 is a sufficient doctest.
 
 
+
 ---
 
-Comment by vbraun created at 2012-04-19 16:39:55
+archive/issue_comments_046989.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2012-04-19T16:39:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5943",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5943#issuecomment-46989",
+    "user": "vbraun"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by vbraun created at 2012-04-19 16:39:55
+archive/issue_comments_046990.json:
+```json
+{
+    "body": "Michael wrote on sage-devel: So if someone else agrees that the doctest in #11741 is sufficient, we can close #5943. (I don't have access to my trac account right now)",
+    "created_at": "2012-04-19T16:39:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5943",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5943#issuecomment-46990",
+    "user": "vbraun"
+}
+```
 
 Michael wrote on sage-devel: So if someone else agrees that the doctest in #11741 is sufficient, we can close #5943. (I don't have access to my trac account right now)
 
 
+
 ---
 
-Comment by vbraun created at 2012-04-19 16:41:37
+archive/issue_comments_046991.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2012-04-19T16:41:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5943",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5943#issuecomment-46991",
+    "user": "vbraun"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
----
-
-Comment by leif created at 2012-04-19 16:56:35
-
-Or did you mean the doctest from #11741 is _not_ sufficient?
-
 
 ---
 
-Comment by vbraun created at 2012-04-19 17:00:47
+archive/issue_comments_046992.json:
+```json
+{
+    "body": "Or did you mean the doctest from #11741 is *not* sufficient?",
+    "created_at": "2012-04-19T16:56:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5943",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5943#issuecomment-46992",
+    "user": "leif"
+}
+```
+
+Or did you mean the doctest from #11741 is *not* sufficient?
+
+
+
+---
+
+archive/issue_comments_046993.json:
+```json
+{
+    "body": "#11741 is sufficient, as I wrote in the ticket description.",
+    "created_at": "2012-04-19T17:00:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5943",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5943#issuecomment-46993",
+    "user": "vbraun"
+}
+```
 
 #11741 is sufficient, as I wrote in the ticket description.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-04-22 19:53:54
+archive/issue_comments_046994.json:
+```json
+{
+    "body": "Resolution: worksforme",
+    "created_at": "2012-04-22T19:53:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5943",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5943#issuecomment-46994",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: worksforme

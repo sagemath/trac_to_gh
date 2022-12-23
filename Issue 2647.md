@@ -1,21 +1,46 @@
 # Issue 2647: [with spkg; needs review] Fixed Debian support for linbox
 
-Issue created by migration from https://trac.sagemath.org/ticket/2647
-
-Original creator: tabbott
-
-Original creation time: 2008-03-22 16:55:32
-
+archive/issues_002647.json:
+```json
+{
+    "body": "Assignee: tabbott\n\nApparently the debian support for linbox didn't make it into the 1.1.5 spkg whenever that was created.  Since the linbox spkg had a bunch of uncommitted changes, I've put the relevant files (with some fixes I needed to do anyway) in a new spkg; the only things changed from the old 1.1.5rc2.p4 spkg should be dist/ and spkg-debian:\n\nhttp://sage.math.washington.edu/home/tabbott/linbox-1.1.5rc2.p5.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/2647\n\n",
+    "created_at": "2008-03-22T16:55:32Z",
+    "labels": [
+        "debian-package",
+        "major",
+        "enhancement"
+    ],
+    "title": "[with spkg; needs review] Fixed Debian support for linbox",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2647",
+    "user": "tabbott"
+}
+```
 Assignee: tabbott
 
 Apparently the debian support for linbox didn't make it into the 1.1.5 spkg whenever that was created.  Since the linbox spkg had a bunch of uncommitted changes, I've put the relevant files (with some fixes I needed to do anyway) in a new spkg; the only things changed from the old 1.1.5rc2.p4 spkg should be dist/ and spkg-debian:
 
 http://sage.math.washington.edu/home/tabbott/linbox-1.1.5rc2.p5.spkg
 
+Issue created by migration from https://trac.sagemath.org/ticket/2647
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-03-22 21:01:30
+archive/issue_comments_018202.json:
+```json
+{
+    "body": "Hi Tim,\n\nthe updated SPKG at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-2.11/alpha1/linbox-1.1.5rc2.p6.spkg\n\nincludes the Debian code, cleans up SPKG.txt and commits all changes to the repo.\n\nPositive review.\n\nCheers,\n\nMichael",
+    "created_at": "2008-03-22T21:01:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2647",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2647#issuecomment-18202",
+    "user": "mabshoff"
+}
+```
 
 Hi Tim,
 
@@ -32,15 +57,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-22 21:01:49
+archive/issue_comments_018203.json:
+```json
+{
+    "body": "Merged in Sage 2.11.alpha1",
+    "created_at": "2008-03-22T21:01:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2647",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2647#issuecomment-18203",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.11.alpha1
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-22 21:01:49
+archive/issue_comments_018204.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-03-22T21:01:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2647",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2647#issuecomment-18204",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

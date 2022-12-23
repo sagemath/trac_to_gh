@@ -1,11 +1,21 @@
 # Issue 6861: allow users to test Sage script using system-wide Sage installation
 
-Issue created by migration from https://trac.sagemath.org/ticket/6861
-
-Original creator: mvngu
-
-Original creation time: 2009-09-02 04:47:07
-
+archive/issues_006861.json:
+```json
+{
+    "body": "Assignee: tbd\n\nAt least in Sage 4.1.1, a regular user cannot run tests on their own Sage scripts using a system-wide installation of Sage. Doing so would result in a permission error:\n\n```\n[mvngu@mod mvngu]$ cat demo.sage \nprint 2\n[mvngu@mod mvngu]$ sage -t demo.sage \nTraceback (most recent call last):\n  File \"/usr/local/sage/local/bin/sage-test\", line 49, in <module>\n    os.makedirs(TMP)\n  File \"/usr/local/sage/local/lib/python/os.py\", line 157, in makedirs\n    mkdir(name, mode)\nOSError: [Errno 13] Permission denied: '/usr/local/sage/tmp/tmp'\n```\n\nThat is due to the testing script writing temporary data to a temporary directory under the system-wide Sage installation. A work around is to have one's own local installation of Sage under one's home directory. But it would be nice if the test script would write temporary data to the user's `DOT_SAGE` directory, i.e. `$HOME/.sage`. This problem was reported at this [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/af6d95445f76cbe9) thread.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6861\n\n",
+    "created_at": "2009-09-02T04:47:07Z",
+    "labels": [
+        "doctest coverage",
+        "major",
+        "enhancement"
+    ],
+    "title": "allow users to test Sage script using system-wide Sage installation",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6861",
+    "user": "mvngu"
+}
+```
 Assignee: tbd
 
 At least in Sage 4.1.1, a regular user cannot run tests on their own Sage scripts using a system-wide installation of Sage. Doing so would result in a permission error:
@@ -24,31 +34,83 @@ OSError: [Errno 13] Permission denied: '/usr/local/sage/tmp/tmp'
 
 That is due to the testing script writing temporary data to a temporary directory under the system-wide Sage installation. A work around is to have one's own local installation of Sage under one's home directory. But it would be nice if the test script would write temporary data to the user's `DOT_SAGE` directory, i.e. `$HOME/.sage`. This problem was reported at this [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/af6d95445f76cbe9) thread.
 
+Issue created by migration from https://trac.sagemath.org/ticket/6861
+
+
+
+
 
 ---
+
+archive/issue_comments_056589.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-09-02T21:16:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6861",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6861#issuecomment-56589",
+    "user": "jason"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_056590.json:
+```json
+{
+    "body": "Attachment\n\nThe two files above are identical.  One can be deleted.",
+    "created_at": "2009-09-02T21:17:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6861",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6861#issuecomment-56590",
+    "user": "jason"
+}
+```
 
 Attachment
 
 The two files above are identical.  One can be deleted.
 
 
+
 ---
 
-Comment by fwclarke created at 2009-09-03 07:27:29
+archive/issue_comments_056591.json:
+```json
+{
+    "body": "Replying to [comment:1 jason]:\n\nIn addition to the change made by the patch, some corresponding changes need making in `sage-test` and `sage-doctest`.  Moreover, testing of one's own Sage scripts won't work until the changes in #6668 are also implemented (most particularly the change to line 408 of `sage-doctest`).",
+    "created_at": "2009-09-03T07:27:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6861",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6861#issuecomment-56591",
+    "user": "fwclarke"
+}
+```
 
 Replying to [comment:1 jason]:
 
 In addition to the change made by the patch, some corresponding changes need making in `sage-test` and `sage-doctest`.  Moreover, testing of one's own Sage scripts won't work until the changes in #6668 are also implemented (most particularly the change to line 408 of `sage-doctest`).
 
 
+
 ---
 
-Comment by jason created at 2009-09-03 07:50:24
+archive/issue_comments_056592.json:
+```json
+{
+    "body": "Replying to [comment:2 fwclarke]:\n> Replying to [comment:1 jason]:\n> \n> In addition to the change made by the patch, some corresponding changes need making in `sage-test` and `sage-doctest`.  Moreover, testing of one's own Sage scripts won't work until the changes in #6668 are also implemented (most particularly the change to line 408 of `sage-doctest`). \n\n\nYou sound like you know what needs to be done.  Please, please post a patch.",
+    "created_at": "2009-09-03T07:50:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6861",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6861#issuecomment-56592",
+    "user": "jason"
+}
+```
 
 Replying to [comment:2 fwclarke]:
 > Replying to [comment:1 jason]:
@@ -59,9 +121,20 @@ Replying to [comment:2 fwclarke]:
 You sound like you know what needs to be done.  Please, please post a patch.
 
 
+
 ---
 
-Comment by fwclarke created at 2009-09-03 07:58:58
+archive/issue_comments_056593.json:
+```json
+{
+    "body": "Replying to [comment:3 jason]:\n> You sound like you know what needs to be done.  Please, please post a patch.\n\nWill do, but not immediately; there are a few things I don't quite understand, and I'm off to the day-job now.",
+    "created_at": "2009-09-03T07:58:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6861",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6861#issuecomment-56593",
+    "user": "fwclarke"
+}
+```
 
 Replying to [comment:3 jason]:
 > You sound like you know what needs to be done.  Please, please post a patch.
@@ -69,9 +142,20 @@ Replying to [comment:3 jason]:
 Will do, but not immediately; there are a few things I don't quite understand, and I'm off to the day-job now.
 
 
+
 ---
 
-Comment by fwclarke created at 2009-09-05 18:41:01
+archive/issue_comments_056594.json:
+```json
+{
+    "body": "Replying to [comment:4 fwclarke]:\n \n> There are a few things I don't quite understand ...\n\nIt seems to me that if (because of the changed definition of `SAGE_TESTDIR`) the directory `~/.sage/tmp` is to be used for testing system files, then logically it should also be used for testing users' own files.  This requires a few more changes.    \n\nIt also seems worthwhile to active the function `delete_tmpfiles` in `sage-doctest`; at present this function does nothing.  The obvious things is for it to get called if the doctest succeeds without any failures, but at present the method of counting the number of failures is defective.\n\nI have implemented these ideas and am testing the code.  A patch will follow soon.",
+    "created_at": "2009-09-05T18:41:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6861",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6861#issuecomment-56594",
+    "user": "fwclarke"
+}
+```
 
 Replying to [comment:4 fwclarke]:
  
@@ -84,64 +168,167 @@ It also seems worthwhile to active the function `delete_tmpfiles` in `sage-docte
 I have implemented these ideas and am testing the code.  A patch will follow soon.
 
 
+
 ---
 
-Comment by fwclarke created at 2009-09-05 22:43:31
+archive/issue_comments_056595.json:
+```json
+{
+    "body": "The new patch, which incorporates the change in the earlier patch, also includes the changes made in the patch at #6668.",
+    "created_at": "2009-09-05T22:43:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6861",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6861#issuecomment-56595",
+    "user": "fwclarke"
+}
+```
 
 The new patch, which incorporates the change in the earlier patch, also includes the changes made in the patch at #6668.
 
 
+
 ---
 
-Comment by fwclarke created at 2009-09-05 22:44:43
+archive/issue_comments_056596.json:
+```json
+{
+    "body": "replaces earlier patches",
+    "created_at": "2009-09-05T22:44:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6861",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6861#issuecomment-56596",
+    "user": "fwclarke"
+}
+```
 
 replaces earlier patches
 
 
+
 ---
+
+archive/issue_comments_056597.json:
+```json
+{
+    "body": "Attachment\n\nI have added an extra patch (to be applied after trac_6861_new.patch) which deals with a problem in testing files specified by their full path name, as [discussed](http://groups.google.com/group/sage-devel/browse_thread/thread/6295a62c30f5edca) in sage-devel.",
+    "created_at": "2009-09-10T19:11:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6861",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6861#issuecomment-56597",
+    "user": "fwclarke"
+}
+```
 
 Attachment
 
 I have added an extra patch (to be applied after trac_6861_new.patch) which deals with a problem in testing files specified by their full path name, as [discussed](http://groups.google.com/group/sage-devel/browse_thread/thread/6295a62c30f5edca) in sage-devel.
 
 
+
 ---
+
+archive/issue_comments_056598.json:
+```json
+{
+    "body": "Attachment\n\napply after trac_6861_new.patch",
+    "created_at": "2009-09-10T19:12:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6861",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6861#issuecomment-56598",
+    "user": "fwclarke"
+}
+```
 
 Attachment
 
 apply after trac_6861_new.patch
 
 
+
 ---
 
-Comment by timdumol created at 2009-09-23 12:52:32
+archive/issue_comments_056599.json:
+```json
+{
+    "body": "Patches work perfectly, and I've run several dozen doctests without any problems. Temporary files are deleted as promised. Nice job guys. Positive review.",
+    "created_at": "2009-09-23T12:52:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6861",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6861#issuecomment-56599",
+    "user": "timdumol"
+}
+```
 
 Patches work perfectly, and I've run several dozen doctests without any problems. Temporary files are deleted as promised. Nice job guys. Positive review.
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-24 11:02:02
+archive/issue_comments_056600.json:
+```json
+{
+    "body": "Merged in the script repository.",
+    "created_at": "2009-09-24T11:02:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6861",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6861#issuecomment-56600",
+    "user": "mvngu"
+}
+```
 
 Merged in the script repository.
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-24 11:02:02
+archive/issue_comments_056601.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-09-24T11:02:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6861",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6861#issuecomment-56601",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-27 10:20:51
+archive/issue_comments_056602.json:
+```json
+{
+    "body": "There is no 4.1.2.alpha3. Sage 4.1.2.alpha3 was William Stein's release for working on making the notebook a standalone package.",
+    "created_at": "2009-09-27T10:20:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6861",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6861#issuecomment-56602",
+    "user": "mvngu"
+}
+```
 
 There is no 4.1.2.alpha3. Sage 4.1.2.alpha3 was William Stein's release for working on making the notebook a standalone package.
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-30 07:17:50
+archive/issue_comments_056603.json:
+```json
+{
+    "body": "See #7079 for a case where the current ticket breaks parallel doctesting.",
+    "created_at": "2009-09-30T07:17:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6861",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6861#issuecomment-56603",
+    "user": "mvngu"
+}
+```
 
 See #7079 for a case where the current ticket breaks parallel doctesting.

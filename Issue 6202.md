@@ -1,11 +1,21 @@
 # Issue 6202: bitset "noise" on solaris sparc (mark)
 
-Issue created by migration from https://trac.sagemath.org/ticket/6202
-
-Original creator: was
-
-Original creation time: 2009-06-03 23:09:18
-
+archive/issues_006202.json:
+```json
+{
+    "body": "Assignee: tbd\n\n\n```\nsage -t  devel/sage/sage/misc/misc_c.pyx\n**********************************************************************\nFile \"/home/wstein/build-4.4.0/mark/sage-4.0.1.alpha0/devel/sage-main/sage/misc/misc_c.pyx\", line 359:\n    sage: test_bitset('00'*32, '01'*32, 64)\nExpected:\n    a 0000000000000000000000000000000000000000000000000000000000000000\n    a.size 64\n    len(a) 0\n    a.limbs ...\n    b 0101010101010101010101010101010101010101010101010101010101010101\n    a.in(n)   False\n    a.not_in(n)   True\n    a.add(n)     0000000000000000000000000000000000000000000000000000000000000000\n    a.discard(n)   0000000000000000000000000000000000000000000000000000000000000000\n    a.set_to(n)  0000000000000000000000000000000000000000000000000000000000000000\n    a.flip(n)    0000000000000000000000000000000000000000000000000000000000000000\n    a.isempty()  True\n    a.eq(b)      False\n    a.cmp(b)     -1\n    a.issubset(b) True\n    a.issuperset(b) False\n    a.copy()     0000000000000000000000000000000000000000000000000000000000000000\n    r.clear()     0000000000000000000000000000000000000000000000000000000000000000\n    complement a        1111111111111111111111111111111111111111111111111111111111111111\n    a intersect b      0000000000000000000000000000000000000000000000000000000000000000\n    a union b       0101010101010101010101010101010101010101010101010101010101010101\n    a minus b      0000000000000000000000000000000000000000000000000000000000000000\n    a symmetric_difference b      0101010101010101010101010101010101010101010101010101010101010101\n    a.rshift(n)  0000000000000000000000000000000000000000000000000000000000000000\n    a.lshift(n)  0000000000000000000000000000000000000000000000000000000000000000\n    a.first()           -1\n    a.next(n)           -1\n    a.first_diff(b)     1\n    a.next_diff(b, n)   -1\n    a.hamming_weight()  0\n    a.hamming_weight_sparse()  0\nGot:\n    a 0000000000000000000000000000000000000000000000000000000000000000\n    a.size 64\n    len(a) 0\n    a.limbs 2\n    b 0101010101010101010101010101010101010101010101010101010101010101\n    a.in(n)   True\n    a.not_in(n)   False\n    a.add(n)     0000000000000000000000000000000000000000000000000000000000000000\n    a.discard(n)   0000000000000000000000000000000000000000000000000000000000000000\n    a.set_to(n)  0000000000000000000000000000000000000000000000000000000000000000\n    a.flip(n)    0000000000000000000000000000000000000000000000000000000000000000\n    a.isempty()  True\n    a.eq(b)      False\n    a.cmp(b)     -1\n    a.issubset(b) True\n    a.issuperset(b) False\n    a.copy()     0000000000000000000000000000000000000000000000000000000000000000\n    r.clear()     0000000000000000000000000000000000000000000000000000000000000000\n    complement a        1111111111111111111111111111111111111111111111111111111111111111\n    a intersect b      0000000000000000000000000000000000000000000000000000000000000000\n    a union b       0101010101010101010101010101010101010101010101010101010101010101\n    a minus b      0000000000000000000000000000000000000000000000000000000000000000\n    a symmetric_difference b      0101010101010101010101010101010101010101010101010101010101010101\n    a.rshift(n)  0000000000000000000000000000000000000000000000000000000000000000\n    a.lshift(n)  0000000000000000000000000000000000000000000000000000000000000000\n    a.first()           -1\n    a.next(n)           -1\n    a.first_diff(b)     1\n    a.next_diff(b, n)   -1\n    a.hamming_weight()  0\n    a.hamming_weight_sparse()  0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6202\n\n",
+    "created_at": "2009-06-03T23:09:18Z",
+    "labels": [
+        "algebra",
+        "blocker",
+        "bug"
+    ],
+    "title": "bitset \"noise\" on solaris sparc (mark)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6202",
+    "user": "was"
+}
+```
 Assignee: tbd
 
 
@@ -81,17 +91,43 @@ Got:
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6202
+
+
+
+
 
 ---
 
-Comment by was created at 2009-06-03 23:11:33
+archive/issue_comments_049545.json:
+```json
+{
+    "body": "Changing component from algebra to solaris.",
+    "created_at": "2009-06-03T23:11:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6202",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6202#issuecomment-49545",
+    "user": "was"
+}
+```
 
 Changing component from algebra to solaris.
 
 
+
 ---
 
-Comment by was created at 2009-06-03 23:25:49
+archive/issue_comments_049546.json:
+```json
+{
+    "body": "This is the part that is wrong\n\n```\n    a.in(n)   True\n    a.not_in(n)   False\n```\n",
+    "created_at": "2009-06-03T23:25:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6202",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6202#issuecomment-49546",
+    "user": "was"
+}
+```
 
 This is the part that is wrong
 
@@ -102,16 +138,38 @@ This is the part that is wrong
 
 
 
+
 ---
 
-Comment by jason created at 2009-06-04 19:51:43
+archive/issue_comments_049547.json:
+```json
+{
+    "body": "Did someone find the bug?  What is the status of this?",
+    "created_at": "2009-06-04T19:51:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6202",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6202#issuecomment-49547",
+    "user": "jason"
+}
+```
 
 Did someone find the bug?  What is the status of this?
 
 
+
 ---
 
-Comment by was created at 2009-06-06 16:32:31
+archive/issue_comments_049548.json:
+```json
+{
+    "body": "Somewhat bizarrely I got this exact doctest failure once on OSX 32-bit PPC, but I can't reproduce it.  It's there in the log on my OSX10.5 ppc box\n\n```\npdlc424:sage-4.0.1.rc3 wstein$ pwd\n/Users/wstein/build/sage-4.0.1.rc3\n```\n",
+    "created_at": "2009-06-06T16:32:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6202",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6202#issuecomment-49548",
+    "user": "was"
+}
+```
 
 Somewhat bizarrely I got this exact doctest failure once on OSX 32-bit PPC, but I can't reproduce it.  It's there in the log on my OSX10.5 ppc box
 
@@ -122,37 +180,94 @@ pdlc424:sage-4.0.1.rc3 wstein$ pwd
 
 
 
+
 ---
 
-Comment by robertwb created at 2009-06-06 23:38:04
+archive/issue_comments_049549.json:
+```json
+{
+    "body": "I looked at this earlier, but didn't make any progress. I'm looking at it again now.",
+    "created_at": "2009-06-06T23:38:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6202",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6202#issuecomment-49549",
+    "user": "robertwb"
+}
+```
 
 I looked at this earlier, but didn't make any progress. I'm looking at it again now.
 
 
+
 ---
 
-Comment by robertwb created at 2009-06-06 23:51:30
+archive/issue_comments_049550.json:
+```json
+{
+    "body": "OK, taking a fresh look, it's not obvious this test is indexing off the end of the bitset. Bitsets are zero-indexed, and the third parameter is supposed to be an index into this set (used for setting, clearing, etc.)\n\nIt looks like it wasn't added that long ago, but I'm actually surprised it has been so consistent (and not caused random segfaults anywhere else).",
+    "created_at": "2009-06-06T23:51:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6202",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6202#issuecomment-49550",
+    "user": "robertwb"
+}
+```
 
 OK, taking a fresh look, it's not obvious this test is indexing off the end of the bitset. Bitsets are zero-indexed, and the third parameter is supposed to be an index into this set (used for setting, clearing, etc.)
 
 It looks like it wasn't added that long ago, but I'm actually surprised it has been so consistent (and not caused random segfaults anywhere else).
 
 
+
 ---
+
+archive/issue_comments_049551.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-06-07T00:08:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6202",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6202#issuecomment-49551",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by robertwb created at 2009-06-07 00:09:01
+archive/issue_comments_049552.json:
+```json
+{
+    "body": "Jason, does this still test what was intended to be tested?",
+    "created_at": "2009-06-07T00:09:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6202",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6202#issuecomment-49552",
+    "user": "robertwb"
+}
+```
 
 Jason, does this still test what was intended to be tested?
 
 
+
 ---
 
-Comment by jason created at 2009-06-07 05:38:25
+archive/issue_comments_049553.json:
+```json
+{
+    "body": "No.  You're right; there was an error in the original doctest; it should have been testing for 31, not 32.  The problem this was testing was a case where complementing the bit would actually zero out the last word if the number of bits was an integral multiple of the wordsize (not an \"even\" multiple).\n\nSo, if you changed the test so that the third parameter was 127 instead of 64, it would be testing the correct thing.\n\nThis is good to know that the code wasn't at fault here, just the doctest!",
+    "created_at": "2009-06-07T05:38:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6202",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6202#issuecomment-49553",
+    "user": "jason"
+}
+```
 
 No.  You're right; there was an error in the original doctest; it should have been testing for 31, not 32.  The problem this was testing was a case where complementing the bit would actually zero out the last word if the number of bits was an integral multiple of the wordsize (not an "even" multiple).
 
@@ -161,28 +276,61 @@ So, if you changed the test so that the third parameter was 127 instead of 64, i
 This is good to know that the code wasn't at fault here, just the doctest!
 
 
+
 ---
 
-Comment by jason created at 2009-06-07 05:49:12
+archive/issue_comments_049554.json:
+```json
+{
+    "body": "To clarify, your patch looks good if you:\n\n* Change the third parameter to 127\n* Change \"even multiple\" to \"integral multiple\" or just \"multiple\"\n\nI haven't applied or run it yet, though.  I'll do that next week and probably give it a positive review (with the above changes).",
+    "created_at": "2009-06-07T05:49:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6202",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6202#issuecomment-49554",
+    "user": "jason"
+}
+```
 
 To clarify, your patch looks good if you:
 
- * Change the third parameter to 127
- * Change "even multiple" to "integral multiple" or just "multiple"
+* Change the third parameter to 127
+* Change "even multiple" to "integral multiple" or just "multiple"
 
 I haven't applied or run it yet, though.  I'll do that next week and probably give it a positive review (with the above changes).
 
 
+
 ---
 
-Comment by jason created at 2009-06-07 05:50:36
+archive/issue_comments_049555.json:
+```json
+{
+    "body": "(and thanks for figuring out my mistake in making this doctest!)",
+    "created_at": "2009-06-07T05:50:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6202",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6202#issuecomment-49555",
+    "user": "jason"
+}
+```
 
 (and thanks for figuring out my mistake in making this doctest!)
 
 
+
 ---
 
-Comment by was created at 2009-06-08 12:25:52
+archive/issue_comments_049556.json:
+```json
+{
+    "body": "Woops.  It's no surprise but though you fixed the test on mark (the solaris box), it is now completely broke on sage.math:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: \nExiting SAGE (CPU time 0m0.04s, Wall time 0m1.13s).\nwstein@sage:~/build/sage-4.0.1$ ./sage -t devel/sage/sage/misc/misc_c.pyx \nsage -t  \"devel/sage/sage/misc/misc_c.pyx\"                  \n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.1/devel/sage/sage/misc/misc_c.pyx\", line 359:\n    sage: test_bitset('00'*64, '01'*64, 64)\nExpected:\n    a 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\n    a.size 128\n    len(a) 0\n    a.limbs 4\n    b 01010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101\n    a.in(n)   False\n    a.not_in(n)   True\n    a.add(n)     00000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000\n    a.discard(n)   00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\n    a.set_to(n)  00000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000\n    a.flip(n)    00000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000\n    a.isempty()  True\n    a.eq(b)      False\n    a.cmp(b)     -1\n    a.issubset(b) True\n    a.issuperset(b) False\n    a.copy()     00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\n    r.clear()     00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\n    complement a        11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111\n    a intersect b      00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\n    a union b       01010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101\n    a minus b      00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\n    a symmetric_difference b      01010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101\n    a.rshift(n)  00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\n    a.lshift(n)  00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\n    a.first()           -1\n    a.next(n)           -1\n    a.first_diff(b)     1\n    a.next_diff(b, n)   65\n    a.hamming_weight()  0\n    a.hamming_weight_sparse()  0\n    rshifts add  True\n    lshifts add  True\n    intersection commutes True\n    union commutes  True\n    not not = id True\n    flipped bit  64\n    add bit      64\n    discard bit    64\n    lshift add unset ok True\n    rshift set unset ok True\nGot:\n    a 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\n    a.size 128\n    len(a) 0\n    a.limbs 2\n    b 01010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101\n    a.in(n)   False\n    a.not_in(n)   True\n    a.add(n)     00000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000\n    a.discard(n)   00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\n    a.set_to(n)  00000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000\n    a.flip(n)    00000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000\n    a.isempty()  True\n    a.eq(b)      False\n    a.cmp(b)     -1\n    a.issubset(b) True\n    a.issuperset(b) False\n    a.copy()     00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\n    r.clear()     00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\n    complement a        11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111\n    a intersect b      00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\n    a union b       01010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101\n    a minus b      00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\n    a symmetric_difference b      01010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101\n    a.rshift(n)  00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\n    a.lshift(n)  00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\n    a.first()           -1\n    a.next(n)           -1\n    a.first_diff(b)     1\n    a.next_diff(b, n)   65\n    a.hamming_weight()  0\n    a.hamming_weight_sparse()  0\n    rshifts add  True\n    lshifts add  True\n    intersection commutes True\n    union commutes  True\n    not not = id True\n    flipped bit  64\n    add bit      64\n    discard bit    64\n    lshift add unset ok True\n    rshift set unset ok True\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_8\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/wstein/build/sage-4.0.1/tmp/.doctest_misc_c.py\n         [1.2 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n| Sage Version 4.0.1, Release Date: 2009-06-06                       |\n| Type notebook() for the GUI, and license() for information.        |\n\n        sage -t  \"devel/sage/sage/misc/misc_c.pyx\"\nTotal time for all tests: 1.2 seconds\nwstein@sage:~/build/sage-4.0.1$ \n\n```\n",
+    "created_at": "2009-06-08T12:25:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6202",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6202#issuecomment-49556",
+    "user": "was"
+}
+```
 
 Woops.  It's no surprise but though you fixed the test on mark (the solaris box), it is now completely broke on sage.math:
 
@@ -301,36 +449,93 @@ wstein@sage:~/build/sage-4.0.1$
 
 
 
+
 ---
 
-Comment by jason created at 2009-06-08 15:33:39
+archive/issue_comments_049557.json:
+```json
+{
+    "body": "The number of limbs is different; that indicates that this is a 64-bit computer.  There should be a \"...\" for the number of limbs, as it will be 4 on a 32-bit computer, but 2 on a 64-bit computer.\n\nI still think the changes I mentioned above need to be fixed, so I'm also leaving it a \"needs work\" for that.",
+    "created_at": "2009-06-08T15:33:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6202",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6202#issuecomment-49557",
+    "user": "jason"
+}
+```
 
 The number of limbs is different; that indicates that this is a 64-bit computer.  There should be a "..." for the number of limbs, as it will be 4 on a 32-bit computer, but 2 on a 64-bit computer.
 
 I still think the changes I mentioned above need to be fixed, so I'm also leaving it a "needs work" for that.
 
 
+
 ---
 
-Comment by robertwb created at 2009-06-10 08:39:41
+archive/issue_comments_049558.json:
+```json
+{
+    "body": "apply only this patch",
+    "created_at": "2009-06-10T08:39:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6202",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6202#issuecomment-49558",
+    "user": "robertwb"
+}
+```
 
 apply only this patch
 
 
+
 ---
+
+archive/issue_comments_049559.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-06-10T08:39:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6202",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6202#issuecomment-49559",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2009-06-15 23:35:53
+archive/issue_comments_049560.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-06-15T23:35:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6202",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6202#issuecomment-49560",
+    "user": "was"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by was created at 2009-06-15 23:35:53
+archive/issue_comments_049561.json:
+```json
+{
+    "body": "merged into 4.0.2.rc1",
+    "created_at": "2009-06-15T23:35:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6202",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6202#issuecomment-49561",
+    "user": "was"
+}
+```
 
 merged into 4.0.2.rc1

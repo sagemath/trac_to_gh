@@ -1,11 +1,21 @@
 # Issue 6479: desolve for 2nd order ODE with initial condition gives wrong answer
 
-Issue created by migration from https://trac.sagemath.org/ticket/6479
-
-Original creator: gmhossain
-
-Original creation time: 2009-07-08 11:08:56
-
+archive/issues_006479.json:
+```json
+{
+    "body": "Assignee: burcin\n\nCC:  hamptonio@gmail.com\n\n\n```\nsage: y(x) = function('y',x)\nsage: desolve( y(x).diff(x,2) == 0, y(x))\nk2*x + k1\nsage: desolve( y(x).diff(x,2) == 0, y(x), [0,0,1])\nx + y(0)\nsage: desolve( y(x).diff(x,2) == 0, y(x), [0,1,1])\nx + y(0)\n```\n\n\nIt seems desolve instead of using the given initial\nvalue of y at x=0,  it literally passes \"y(0)\" to maxima.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6479\n\n",
+    "created_at": "2009-07-08T11:08:56Z",
+    "labels": [
+        "calculus",
+        "major",
+        "bug"
+    ],
+    "title": "desolve for 2nd order ODE with initial condition gives wrong answer",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6479",
+    "user": "gmhossain"
+}
+```
 Assignee: burcin
 
 CC:  hamptonio@gmail.com
@@ -26,10 +36,25 @@ It seems desolve instead of using the given initial
 value of y at x=0,  it literally passes "y(0)" to maxima.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6479
+
+
+
+
 
 ---
 
-Comment by wdj created at 2009-07-08 13:07:39
+archive/issue_comments_052367.json:
+```json
+{
+    "body": "I'm not sure if this is a duplicate or not but Robert Bradshaw definitely knows about this bug. (I wrote a crappy version of the original solver, Robert wrote the new and improved one. However, Marshall Hampton and I spend several hours at SD15 trying to figure out how to patch this bug and couldn't.) BTW, it is actually documented to behave this way if you read the docstrings carefully.\n\nHere is, at Robert Bradshaw's request, a *maxima* session solving a 2nd order ODE with 2 initial conditions and a 2nd order ODE with 2 boundary conditions:\n\n\n```\nsage: maxima.eval(\"de:'diff(y,x,2) + y*'diff(y,x)^3 = 0\")\n\"'diff(y,x,2)+y*('diff(y,x,1))^3=0\"\nsage: maxima.eval(\"ode2(de,y,x)\")\n'(y^3+6*%k1*y)/6=x+%k2'\nsage: maxima.eval(\"soln:ode2(de,y,x)\")\n'(y^3+6*%k1*y)/6=x+%k2'\nsage: maxima.eval(\"bc2(soln,x=0,y=1,x=1,y=3)\")\n'(y^3-10*y)/6=x-3/2'\nsage: maxima.eval(\"de:'diff(y,x,2) + 4*y = 0\")\n\"'diff(y,x,2)+4*y=0\"\nsage: maxima.eval(\"soln:ode2(de,y,x)\")\n'y=%k1*sin(2*x)+%k2*cos(2*x)'\nsage: maxima.eval(\"bc2(soln,x=0,y=1,x=1,y=3)\")\n'y=cos(2*x)-(cos(2)-3)*sin(2*x)/sin(2)'\nsage: maxima.eval(\"ic2(soln,x=0,y=1,'diff(y,x)=3)\")\n'y=3*sin(2*x)/2+cos(2*x)'\n```\n\nHope this helps.\n\nAn additional problem is that the syntax for desolve and desolve_laplace are different. Perhaps this could be fixed at the same time?",
+    "created_at": "2009-07-08T13:07:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6479",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6479#issuecomment-52367",
+    "user": "wdj"
+}
+```
 
 I'm not sure if this is a duplicate or not but Robert Bradshaw definitely knows about this bug. (I wrote a crappy version of the original solver, Robert wrote the new and improved one. However, Marshall Hampton and I spend several hours at SD15 trying to figure out how to patch this bug and couldn't.) BTW, it is actually documented to behave this way if you read the docstrings carefully.
 
@@ -60,14 +85,38 @@ Hope this helps.
 An additional problem is that the syntax for desolve and desolve_laplace are different. Perhaps this could be fixed at the same time?
 
 
+
 ---
+
+archive/issue_comments_052368.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-10-06T16:43:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6479",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6479#issuecomment-52368",
+    "user": "robert.marik"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by robert.marik created at 2009-10-06 16:51:00
+archive/issue_comments_052369.json:
+```json
+{
+    "body": "The patch which fixes ic2 and bc2 commands is attached. With this patch, the ode2 runs two times - the first pass is kept to ensure that Maxima is able to solve the system.\n\nTest for bc2 has been added.\nThe problem related to desolve_laplace has not been solved - perhaps need more work. As I understand, the corresponding command in Maxima allows to solve systems of equations and the function in Maxima is designed for one equation only.",
+    "created_at": "2009-10-06T16:51:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6479",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6479#issuecomment-52369",
+    "user": "robert.marik"
+}
+```
 
 The patch which fixes ic2 and bc2 commands is attached. With this patch, the ode2 runs two times - the first pass is kept to ensure that Maxima is able to solve the system.
 
@@ -75,49 +124,130 @@ Test for bc2 has been added.
 The problem related to desolve_laplace has not been solved - perhaps need more work. As I understand, the corresponding command in Maxima allows to solve systems of equations and the function in Maxima is designed for one equation only.
 
 
+
 ---
 
-Comment by robert.marik created at 2009-10-07 04:56:19
+archive/issue_comments_052370.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2009-10-07T04:56:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6479",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6479#issuecomment-52370",
+    "user": "robert.marik"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by robert.marik created at 2009-10-07 04:56:19
+archive/issue_comments_052371.json:
+```json
+{
+    "body": "Patch hass been posted, but it assumes that the solution of second order ODE is found in the explicit form, i.e. y=f(x) which is not allways true. From this reason the patch does not solve all related issues and needs more work. I hope to post new patch within a week.",
+    "created_at": "2009-10-07T04:56:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6479",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6479#issuecomment-52371",
+    "user": "robert.marik"
+}
+```
 
 Patch hass been posted, but it assumes that the solution of second order ODE is found in the explicit form, i.e. y=f(x) which is not allways true. From this reason the patch does not solve all related issues and needs more work. I hope to post new patch within a week.
 
 
+
 ---
 
-Comment by robert.marik created at 2009-10-07 13:22:58
+archive/issue_comments_052372.json:
+```json
+{
+    "body": "Apply only this patch",
+    "created_at": "2009-10-07T13:22:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6479",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6479#issuecomment-52372",
+    "user": "robert.marik"
+}
+```
 
 Apply only this patch
 
 
+
 ---
+
+archive/issue_comments_052373.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-10-07T13:24:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6479",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6479#issuecomment-52373",
+    "user": "robert.marik"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by robert.marik created at 2009-10-07 13:24:57
+archive/issue_comments_052374.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2009-10-07T13:24:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6479",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6479#issuecomment-52374",
+    "user": "robert.marik"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
+
+archive/issue_comments_052375.json:
+```json
+{
+    "body": "Attachment\n\nApply on the top of the patch trac_6479_marik_revised.patch  and on the top pf the patch for Ticket #385 http://trac.sagemath.org/sage_trac/ticket/385",
+    "created_at": "2009-10-13T13:48:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6479",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6479#issuecomment-52375",
+    "user": "robert.marik"
+}
+```
 
 Attachment
 
 Apply on the top of the patch trac_6479_marik_revised.patch  and on the top pf the patch for Ticket #385 http://trac.sagemath.org/sage_trac/ticket/385
 
 
+
 ---
 
-Comment by robert.marik created at 2009-10-13 13:55:00
+archive/issue_comments_052376.json:
+```json
+{
+    "body": "I attached second patch which should be applied after the previous trac_6479_marik_revised.patch and after a patch for Ticket #385.\n\nWith this new patch\n\n* we can solve more differential equations (clairot, lagrange, ...)\n\n* desolve Laplace does not return string and the initial conditions do not persist in the system\n\n* added a simple interface to runge kutta methods from maxima",
+    "created_at": "2009-10-13T13:55:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6479",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6479#issuecomment-52376",
+    "user": "robert.marik"
+}
+```
 
 I attached second patch which should be applied after the previous trac_6479_marik_revised.patch and after a patch for Ticket #385.
 
@@ -130,9 +260,20 @@ With this new patch
 * added a simple interface to runge kutta methods from maxima
 
 
+
 ---
 
-Comment by wdj created at 2009-10-17 20:11:11
+archive/issue_comments_052377.json:
+```json
+{
+    "body": "The improvements are *fantastic*!\n\nHowever, some of the docstrings do not follow proper format.\nFor example, in your desolve_rk4 function, you do not indent\nthe Sage code in the EXAMPLES section correctly. Also, if a\nfunction can produce different types of output (eg, a plot or\na list of points, depending on the optional parameters), both\nshould be illustrated in the examples. I don't know if this\nimproper formatting screws up the sage -test script or not.\nThere is also some improper indentation in other sections, \nsuch as OUTPUT, for functions such as desolve_rk4, for example.\n\nI hope you can please fix these. \n\nA request: in your new functions desolve_rk4 and desolve_system_rk4\nthere is an option called endpoint, with default value 10. I would \nprefer an option called endpoints with a default value of [0,10]\n(or something), so that a range can be plotted other than from\nics[0] to endpoint. If it is too much hassle, fine (you can just add \nplots together to get that anyway...).",
+    "created_at": "2009-10-17T20:11:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6479",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6479#issuecomment-52377",
+    "user": "wdj"
+}
+```
 
 The improvements are *fantastic*!
 
@@ -156,16 +297,38 @@ ics[0] to endpoint. If it is too much hassle, fine (you can just add
 plots together to get that anyway...).
 
 
+
 ---
 
-Comment by wdj created at 2009-10-17 20:11:11
+archive/issue_comments_052378.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2009-10-17T20:11:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6479",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6479#issuecomment-52378",
+    "user": "wdj"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by robert.marik created at 2009-10-25 19:22:16
+archive/issue_comments_052379.json:
+```json
+{
+    "body": "Replying to [comment:10 wdj]:\n> The improvements are *fantastic*!\n> \n> However, some of the docstrings do not follow proper format.\n> For example, in your desolve_rk4 function, you do not indent\n> the Sage code in the EXAMPLES section correctly. Also, if a\n> function can produce different types of output (eg, a plot or\n> a list of points, depending on the optional parameters), both\n> should be illustrated in the examples. I don't know if this\n> improper formatting screws up the sage -test script or not.\n> There is also some improper indentation in other sections, \n> such as OUTPUT, for functions such as desolve_rk4, for example.\n> \n> I hope you can please fix these. \n\nThanks. I will try to fix it. Sorry, I am newbie in Python.\n\n> \n> A request: in your new functions desolve_rk4 and desolve_system_rk4\n> there is an option called endpoint, with default value 10. I would \n> prefer an option called endpoints with a default value of [0,10]\n> (or something), so that a range can be plotted other than from\n> ics[0] to endpoint. If it is too much hassle, fine (you can just add \n> plots together to get that anyway...).\n\nwhat about this:\n\nendpoints=a   .... integrate from ics[0] to a\n\nendpoints=[a]   .... integrate from ics[0] to a\n\nendpoints=[a,b]   .... integrate from ics[0] to b, then integrate back from ics[0] to a, reverse the second list and join both lists together /without repeating the point (ics[0],ics[1])/. If ics[0] is bigger than b or smaller than a, raise error.\n\nI think that this is possible and I can try within a week.",
+    "created_at": "2009-10-25T19:22:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6479",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6479#issuecomment-52379",
+    "user": "robert.marik"
+}
+```
 
 Replying to [comment:10 wdj]:
 > The improvements are *fantastic*!
@@ -203,9 +366,20 @@ endpoints=[a,b]   .... integrate from ics[0] to b, then integrate back from ics[
 I think that this is possible and I can try within a week.
 
 
+
 ---
 
-Comment by wdj created at 2009-10-25 20:15:47
+archive/issue_comments_052380.json:
+```json
+{
+    "body": "Replying to [comment:11 robert.marik]:\n> Replying to [comment:10 wdj]:\n\n...\n\n> > A request: in your new functions desolve_rk4 and desolve_system_rk4\n> > there is an option called endpoint, with default value 10. I would \n> > prefer an option called endpoints with a default value of [0,10]\n> > (or something), so that a range can be plotted other than from\n> > ics[0] to endpoint. If it is too much hassle, fine (you can just add \n> > plots together to get that anyway...).\n> \n> what about this:\n> \n> endpoints=a   .... integrate from ics[0] to a\n> \n> endpoints=[a]   .... integrate from ics[0] to a\n> \n> endpoints=[a,b]   .... integrate from ics[0] to b, then integrate back from ics[0] to a, reverse the second list and join both lists together /without repeating the point (ics[0],ics[1])/. If ics[0] is bigger than b or smaller than a, raise error.\n> \n> I think that this is possible and I can try within a week.\n\n\nThis sounds excellent - thanks!",
+    "created_at": "2009-10-25T20:15:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6479",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6479#issuecomment-52380",
+    "user": "wdj"
+}
+```
 
 Replying to [comment:11 robert.marik]:
 > Replying to [comment:10 wdj]:
@@ -233,51 +407,130 @@ Replying to [comment:11 robert.marik]:
 This sounds excellent - thanks!
 
 
+
 ---
 
-Comment by robert.marik created at 2009-10-27 20:22:59
+archive/issue_comments_052381.json:
+```json
+{
+    "body": "this replaces previous patches and installs on the top of patch for trac #385",
+    "created_at": "2009-10-27T20:22:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6479",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6479#issuecomment-52381",
+    "user": "robert.marik"
+}
+```
 
 this replaces previous patches and installs on the top of patch for trac #385
 
 
+
 ---
+
+archive/issue_comments_052382.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-10-27T20:23:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6479",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6479#issuecomment-52382",
+    "user": "robert.marik"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by robert.marik created at 2009-10-27 20:23:47
+archive/issue_comments_052383.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2009-10-27T20:23:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6479",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6479#issuecomment-52383",
+    "user": "robert.marik"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by wdj created at 2009-10-31 15:50:10
+archive/issue_comments_052384.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-10-31T15:50:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6479",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6479#issuecomment-52384",
+    "user": "wdj"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by wdj created at 2009-10-31 15:50:10
+archive/issue_comments_052385.json:
+```json
+{
+    "body": "Great patch. Passes sage -testall and is very well-documented.\n\nThanks Robert!!",
+    "created_at": "2009-10-31T15:50:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6479",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6479#issuecomment-52385",
+    "user": "wdj"
+}
+```
 
 Great patch. Passes sage -testall and is very well-documented.
 
 Thanks Robert!!
 
 
+
 ---
 
-Comment by mhansen created at 2009-11-29 10:10:24
+archive/issue_comments_052386.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-11-29T10:10:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6479",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6479#issuecomment-52386",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by robert.marik created at 2010-04-07 11:10:57
+archive/issue_comments_052387.json:
+```json
+{
+    "body": "Thanks for including the patch to Sage. \nThe work on this patch has been supported by the grant GA201/07/0145 of the Czech Grant Agency.",
+    "created_at": "2010-04-07T11:10:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6479",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6479#issuecomment-52387",
+    "user": "robert.marik"
+}
+```
 
 Thanks for including the patch to Sage. 
 The work on this patch has been supported by the grant GA201/07/0145 of the Czech Grant Agency.

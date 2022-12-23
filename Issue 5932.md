@@ -1,11 +1,21 @@
 # Issue 5932: graphs.RandomRegular(3,10) often returns a graph on 0 vertices
 
-Issue created by migration from https://trac.sagemath.org/ticket/5932
-
-Original creator: was
-
-Original creation time: 2009-04-29 05:21:23
-
+archive/issues_005932.json:
+```json
+{
+    "body": "Assignee: rlm\n\nThe docstring for graphs.RandomRegular says\n\n```\nReturns a random d-regular graph on n vertices, or returns False on\nfailure.\n```\n\n\nHowever, try calling it a few times with input 3,10 and with probability about 25% you'll get back an empty graph!:\n\n```\nsage: graphs.RandomRegular(3,10)\nGraph on 0 vertices\n\nsage: [len(graphs.RandomRegular(3,10)) for _ in range(1000)].count(0)\n232\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5932\n\n",
+    "created_at": "2009-04-29T05:21:23Z",
+    "labels": [
+        "graph theory",
+        "major",
+        "bug"
+    ],
+    "title": "graphs.RandomRegular(3,10) often returns a graph on 0 vertices",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5932",
+    "user": "was"
+}
+```
 Assignee: rlm
 
 The docstring for graphs.RandomRegular says
@@ -28,10 +38,25 @@ sage: [len(graphs.RandomRegular(3,10)) for _ in range(1000)].count(0)
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5932
+
+
+
+
 
 ---
 
-Comment by rlm created at 2009-04-29 16:09:31
+archive/issue_comments_046913.json:
+```json
+{
+    "body": "This is a bug in NetworkX. Their docstring says:\n\n\n```\nDefinition:     networkx.random_regular_graph(d, n, seed=None)\nSource:\ndef random_regular_graph(d, n, seed=None):\n    \"\"\"Return a random regular graph of n nodes each with degree d, G_{n,d}.\n    Return False if unsuccessful.\n```\n",
+    "created_at": "2009-04-29T16:09:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5932",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5932#issuecomment-46913",
+    "user": "rlm"
+}
+```
 
 This is a bug in NetworkX. Their docstring says:
 
@@ -46,20 +71,55 @@ def random_regular_graph(d, n, seed=None):
 
 
 
+
 ---
+
+archive/issue_comments_046914.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-07-16T22:05:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5932",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5932#issuecomment-46914",
+    "user": "rlm"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by jason created at 2009-07-18 23:35:14
+archive/issue_comments_046915.json:
+```json
+{
+    "body": "The fix looks correct, the file passes doctests, and everything looks great!",
+    "created_at": "2009-07-18T23:35:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5932",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5932#issuecomment-46915",
+    "user": "jason"
+}
+```
 
 The fix looks correct, the file passes doctests, and everything looks great!
 
 
+
 ---
 
-Comment by mvngu created at 2009-07-19 12:02:06
+archive/issue_comments_046916.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-07-19T12:02:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5932",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5932#issuecomment-46916",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 4937: bug in _p_primary_torsion_basis() for elliptic curves
 
-Issue created by migration from https://trac.sagemath.org/ticket/4937
-
-Original creator: cremona
-
-Original creation time: 2009-01-04 19:21:48
-
+archive/issues_004937.json:
+```json
+{
+    "body": "Assignee: was\n\nKeywords: elliptic curve torsion\n\nTesting for #4901 has revealed a bug (an embarrassing one in code of mine) in _p_primary_torsion_basis() as exemplified here:\n\n```\n sage: p=10^60+3201\nsage: K=GF(p)\nsage: a=804515977734860566494239770982282063895480484302363715494873\nsage: b=584772221603632866665682322899297141793188252000674256662071\nsage: E=EllipticCurve(K,[0,a,0,b,0])\nsage: E.cardinality().factor()\n2^17 * 13115567671 * 581705246972988608203110387504181554514650287\nsage: E._p_primary_torsion_basis(2)\n\n[[(656068448840236768725810484116830935925716002501543862440466 : 324360550482744921974063628110267202720852104214117741680354 : 1),\n  2],\n [(21059802536298599082171845328893691100757301985761775129713 : 0 : 1), 1]]\n```\n\nHere the 2-sylow subgroup has structure `2^16 * 2` but E._p_primary_torsion_basis(2) only gives `2<sup>2*2</sup>1`.  I know what the problem is and am working out how to fix it.\n\nNB This function is called in ell_torsion.py in computing torsion groups over number fields, which is rather likely to give wrong answers (though not over Q where pari is used ;)) until this is fixed.  Hence I made this a separate ticket marked \"major defect\"!\n\nMichael: I set the milestone for this as 3.3 since it's a potentially serious bug in this corner of Sage, but feel free to bump it up.  I hope I might be able to fix it tonight but if not then it will take a few days as teaching starts again tomorrow...\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4937\n\n",
+    "created_at": "2009-01-04T19:21:48Z",
+    "labels": [
+        "number theory",
+        "major",
+        "bug"
+    ],
+    "title": "bug in _p_primary_torsion_basis() for elliptic curves",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4937",
+    "user": "cremona"
+}
+```
 Assignee: was
 
 Keywords: elliptic curve torsion
@@ -34,10 +44,25 @@ NB This function is called in ell_torsion.py in computing torsion groups over nu
 Michael: I set the milestone for this as 3.3 since it's a potentially serious bug in this corner of Sage, but feel free to bump it up.  I hope I might be able to fix it tonight but if not then it will take a few days as teaching starts again tomorrow...
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4937
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2009-01-04 19:25:29
+archive/issue_comments_037477.json:
+```json
+{
+    "body": "John,\n\nthis is fine as long as it applies after the ReST conversion. There are already a bunch of tickets lined up, so 3.3 will contain a bunch of fixes besides the ReST conversion.\n\nCheers,\n\nMichael",
+    "created_at": "2009-01-04T19:25:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4937",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4937#issuecomment-37477",
+    "user": "mabshoff"
+}
+```
 
 John,
 
@@ -48,23 +73,56 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by cremona created at 2009-01-06 21:49:59
+archive/issue_comments_037478.json:
+```json
+{
+    "body": "The patch which fixes this bug is actually at #4900 (sorry), based on 3.2.3 + #4926 (sphinxification).  So this one should not be applied until after those two.  All this one does is to add a doctest which shows that the bug reported here separately has been fixed.",
+    "created_at": "2009-01-06T21:49:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4937",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4937#issuecomment-37478",
+    "user": "cremona"
+}
+```
 
 The patch which fixes this bug is actually at #4900 (sorry), based on 3.2.3 + #4926 (sphinxification).  So this one should not be applied until after those two.  All this one does is to add a doctest which shows that the bug reported here separately has been fixed.
 
 
+
 ---
 
-Comment by roed created at 2009-01-24 14:34:35
+archive/issue_comments_037479.json:
+```json
+{
+    "body": "Works for me.",
+    "created_at": "2009-01-24T14:34:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4937",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4937#issuecomment-37479",
+    "user": "roed"
+}
+```
 
 Works for me.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-24 15:51:32
+archive/issue_comments_037480.json:
+```json
+{
+    "body": "There are other doctests that have been added in that docstring in 3.3.alphaX, so I will rebase this once 3.3.alpha2 is out.\n\nCheers,\n\nMichael",
+    "created_at": "2009-01-24T15:51:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4937",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4937#issuecomment-37480",
+    "user": "mabshoff"
+}
+```
 
 There are other doctests that have been added in that docstring in 3.3.alphaX, so I will rebase this once 3.3.alpha2 is out.
 
@@ -73,23 +131,58 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_037481.json:
+```json
+{
+    "body": "Attachment\n\nThis patch is the rebased version of John's patch.",
+    "created_at": "2009-01-28T17:41:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4937",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4937#issuecomment-37481",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 This patch is the rebased version of John's patch.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-28 17:42:01
+archive/issue_comments_037482.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-01-28T17:42:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4937",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4937#issuecomment-37482",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-28 17:42:01
+archive/issue_comments_037483.json:
+```json
+{
+    "body": "Merged the rebased trac_4937.patch in Sage 3.3.alpha3.\n\nCheers,\n\nMichael",
+    "created_at": "2009-01-28T17:42:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4937",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4937#issuecomment-37483",
+    "user": "mabshoff"
+}
+```
 
 Merged the rebased trac_4937.patch in Sage 3.3.alpha3.
 

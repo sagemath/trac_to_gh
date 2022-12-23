@@ -1,11 +1,21 @@
 # Issue 7045: [with spkg; needs review] update libgcrypt to the latest version 1.4.4
 
-Issue created by migration from https://trac.sagemath.org/ticket/7045
-
-Original creator: drkirkby
-
-Original creation time: 2009-09-28 01:11:08
-
+archive/issues_007045.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  mvngu\n\nThe current libgcrypt in Sage will not build with Sun Studio. I managed to mess up an update #6758, but Minh's correction ignores my fixes to the C source code, so that will not build on Sun Studio. \n\nHere is an spkg with the latest upstream version. \n\nhttp://sage.math.washington.edu/home/kirkby/Solaris-fixes/libgcrypt-1.4.4/\n\nIt's been tested on\n\n* Sun Studio 12.1 on my own SPARC running Solaris 10 update 7 in 32-bit mode\n* sage.math (64-bit)\n* bsd.math in 32-bit mode only \n\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7045\n\n",
+    "created_at": "2009-09-28T01:11:08Z",
+    "labels": [
+        "build",
+        "major",
+        "bug"
+    ],
+    "title": "[with spkg; needs review] update libgcrypt to the latest version 1.4.4",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7045",
+    "user": "drkirkby"
+}
+```
 Assignee: tbd
 
 CC:  mvngu
@@ -18,11 +28,16 @@ http://sage.math.washington.edu/home/kirkby/Solaris-fixes/libgcrypt-1.4.4/
 
 It's been tested on
 
- * Sun Studio 12.1 on my own SPARC running Solaris 10 update 7 in 32-bit mode
- * sage.math (64-bit)
- * bsd.math in 32-bit mode only 
+* Sun Studio 12.1 on my own SPARC running Solaris 10 update 7 in 32-bit mode
+* sage.math (64-bit)
+* bsd.math in 32-bit mode only 
 
 
+
+
+
+
+Issue created by migration from https://trac.sagemath.org/ticket/7045
 
 
 
@@ -30,28 +45,60 @@ It's been tested on
 
 ---
 
-Comment by mvngu created at 2009-09-28 06:39:00
+archive/issue_comments_058321.json:
+```json
+{
+    "body": "I have checked in all existing changes in David's name. Based on David's spkg, I did some general clean up:\n\n* spell check the files `SPKG.txt` and `spkg-install`\n* format spkg-check and spkg-install in a consistent way\n \nA new spkg based on David's and with the above changes is up at\n\nhttp://sage.math.washington.edu/home/mvngu/release/spkg/standard/libgcrypt-1.4.4.p0.spkg",
+    "created_at": "2009-09-28T06:39:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7045",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7045#issuecomment-58321",
+    "user": "mvngu"
+}
+```
 
 I have checked in all existing changes in David's name. Based on David's spkg, I did some general clean up:
 
- * spell check the files `SPKG.txt` and `spkg-install`
- * format spkg-check and spkg-install in a consistent way
+* spell check the files `SPKG.txt` and `spkg-install`
+* format spkg-check and spkg-install in a consistent way
  
 A new spkg based on David's and with the above changes is up at
 
 http://sage.math.washington.edu/home/mvngu/release/spkg/standard/libgcrypt-1.4.4.p0.spkg
 
 
+
 ---
 
-Comment by mvngu created at 2009-10-01 06:27:07
+archive/issue_comments_058322.json:
+```json
+{
+    "body": "See #5833 for a duplicate of the current ticket.",
+    "created_at": "2009-10-01T06:27:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7045",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7045#issuecomment-58322",
+    "user": "mvngu"
+}
+```
 
 See #5833 for a duplicate of the current ticket.
 
 
+
 ---
 
-Comment by was created at 2009-10-01 15:52:09
+archive/issue_comments_058323.json:
+```json
+{
+    "body": "\n```\n> > Building on 64-bit SuSE with SAGE_CHECK=\"yes\" failed at libgcrypt,\n> > with a bunch of errors in the gcrypt test script:\n>\n> Can you try using the updated libgcrypt spkg at ticket #7045 [1]?\n>\n> [1]http://trac.sagemath.org/sage_trac/ticket/7045\n>\n> --\n> Regards\n> Minh Van Nguyen\n\nThe new spkg 1.4.4.p0 seems to fix the problem.\n\nDavid\n```\n",
+    "created_at": "2009-10-01T15:52:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7045",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7045#issuecomment-58323",
+    "user": "was"
+}
+```
 
 
 ```
@@ -73,48 +120,103 @@ David
 
 
 
+
 ---
 
-Comment by awebb created at 2009-10-04 09:55:34
+archive/issue_comments_058324.json:
+```json
+{
+    "body": "Built with SAGE_CHECK=\"yes\" on Ubuntu 9.10 beta (AMD64) and everything worked. Also worked in the context of a 'make testlong'. \n\nAdam",
+    "created_at": "2009-10-04T09:55:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7045",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7045#issuecomment-58324",
+    "user": "awebb"
+}
+```
 
 Built with SAGE_CHECK="yes" on Ubuntu 9.10 beta (AMD64) and everything worked. Also worked in the context of a 'make testlong'. 
 
 Adam
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-16 08:56:48
+archive/issue_comments_058325.json:
+```json
+{
+    "body": "Adam,\n\nDo you have a copy of this spkg?  The link above is now broken.",
+    "created_at": "2009-10-16T08:56:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7045",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7045#issuecomment-58325",
+    "user": "mhansen"
+}
+```
 
 Adam,
 
 Do you have a copy of this spkg?  The link above is now broken.
 
 
+
 ---
 
-Comment by mvngu created at 2009-10-16 09:16:59
+archive/issue_comments_058326.json:
+```json
+{
+    "body": "Replying to [comment:6 mhansen]:\n> Do you have a copy of this spkg?  The link above is now broken.\n\nThe spkg is now restored. Here are the changes I added in addition to drkirkby's changes:\n\n* committed drkirkby's changes in his name\n* spell check the files `SPKG.txt` and `spkg-install`\n* format `spkg-check` and `spkg-install` in a consistent way\n* add executable bits to `spkg-install`",
+    "created_at": "2009-10-16T09:16:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7045",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7045#issuecomment-58326",
+    "user": "mvngu"
+}
+```
 
 Replying to [comment:6 mhansen]:
 > Do you have a copy of this spkg?  The link above is now broken.
 
 The spkg is now restored. Here are the changes I added in addition to drkirkby's changes:
 
- * committed drkirkby's changes in his name
- * spell check the files `SPKG.txt` and `spkg-install`
- * format `spkg-check` and `spkg-install` in a consistent way
- * add executable bits to `spkg-install`
+* committed drkirkby's changes in his name
+* spell check the files `SPKG.txt` and `spkg-install`
+* format `spkg-check` and `spkg-install` in a consistent way
+* add executable bits to `spkg-install`
+
 
 
 ---
 
-Comment by mhansen created at 2009-10-16 09:20:57
+archive/issue_comments_058327.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-10-16T09:20:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7045",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7045#issuecomment-58327",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-16 09:20:57
+archive/issue_comments_058328.json:
+```json
+{
+    "body": "Looks good.",
+    "created_at": "2009-10-16T09:20:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7045",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7045#issuecomment-58328",
+    "user": "mhansen"
+}
+```
 
 Looks good.

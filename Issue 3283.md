@@ -1,11 +1,21 @@
 # Issue 3283: [with patch, needs review] fix some memholes in PolyBoRi interface
 
-Issue created by migration from https://trac.sagemath.org/ticket/3283
-
-Original creator: malb
-
-Original creation time: 2008-05-23 17:10:11
-
+archive/issues_003283.json:
+```json
+{
+    "body": "Assignee: malb\n\nCC:  burcin polybori\n\nKeywords: PolyBoRi, memleak\n\nAll PolyBoRi iterators only destruct the iterator objects but never the object they act on. However, since we assign objects and not pointers/references a copy is triggered during creation and thus the destructor of the object ought to be called on self destruction of the iterator. So far the theory. In practice, while I didn't see any problems, I'd appreciate if somebody with more intime knowledge of the interface would take a careful look.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3283\n\n",
+    "created_at": "2008-05-23T17:10:11Z",
+    "labels": [
+        "commutative algebra",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch, needs review] fix some memholes in PolyBoRi interface",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3283",
+    "user": "malb"
+}
+```
 Assignee: malb
 
 CC:  burcin polybori
@@ -14,15 +24,43 @@ Keywords: PolyBoRi, memleak
 
 All PolyBoRi iterators only destruct the iterator objects but never the object they act on. However, since we assign objects and not pointers/references a copy is triggered during creation and thus the destructor of the object ought to be called on self destruction of the iterator. So far the theory. In practice, while I didn't see any problems, I'd appreciate if somebody with more intime knowledge of the interface would take a careful look.
 
+Issue created by migration from https://trac.sagemath.org/ticket/3283
+
+
+
+
 
 ---
+
+archive/issue_comments_022701.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-05-23T18:15:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3283",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3283#issuecomment-22701",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by PolyBoRi created at 2008-05-23 21:09:30
+archive/issue_comments_022702.json:
+```json
+{
+    "body": "Ok, if one cannot force to use references here (I'm sorry, I've no experience, what can be done within pyx-files.), one has to clean up after oneself. The internal PolyBoRi data structures use reference counting, so the missing destructor resulted in the fact, that the reference count was never decreased -> memleak. (On C++ all of this is done automatically.) So from my point of view this patch is ok.\n\nBut we should wait for Burcin's opinion, as he knows best.\n\nAlso, one should check somewhen, whether the object is still necessary in the interface for recent PolyBoRi.\n\nBest regards,\n  Alexander",
+    "created_at": "2008-05-23T21:09:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3283",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3283#issuecomment-22702",
+    "user": "PolyBoRi"
+}
+```
 
 Ok, if one cannot force to use references here (I'm sorry, I've no experience, what can be done within pyx-files.), one has to clean up after oneself. The internal PolyBoRi data structures use reference counting, so the missing destructor resulted in the fact, that the reference count was never decreased -> memleak. (On C++ all of this is done automatically.) So from my point of view this patch is ok.
 
@@ -34,9 +72,20 @@ Best regards,
   Alexander
 
 
+
 ---
 
-Comment by burcin created at 2008-05-24 09:13:30
+archive/issue_comments_022703.json:
+```json
+{
+    "body": "The iterator wrappers keep a reference to the objects only to be able to check if the iterator reaches the end. As in the following (from `BooleanMonomialVariableIterator.__next__`):\n\n\n```\nif self.iter.equal(self.obj.variableEnd()):\n    raise StopIteration\n```\n\n\nThe objects that iterators act on are wrapped by python objects, e.g. there is a corresponding `BooleanMonomial` object associated to the `PBMonom` the iterator is acting on. Python should keep track of the memory of `BooleanMonomial`, so python will deallocate that `PBMonom` by calling the `__dealloc__` method of `BooleanMonomial`. Calling the destructor of `PBMonom` from any other place would lead to segfaults.\n\nActually, it might be a good idea to add a reference to the `BooleanMonomial` object in the iterator as well. We wouldn't want python to garbage collect that while the iterator is still around. \n\nAnother problem you might want to ponder: We don't explicitly call the constructor of any iterator other than that of `BooleSet`, yet we still call their destructors. If we need to call the constructor, how do we get away without it most of the time? If we don't, why is `BooleSet` special?\n\nComments?",
+    "created_at": "2008-05-24T09:13:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3283",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3283#issuecomment-22703",
+    "user": "burcin"
+}
+```
 
 The iterator wrappers keep a reference to the objects only to be able to check if the iterator reaches the end. As in the following (from `BooleanMonomialVariableIterator.__next__`):
 
@@ -56,9 +105,20 @@ Another problem you might want to ponder: We don't explicitly call the construct
 Comments?
 
 
+
 ---
 
-Comment by PolyBoRi created at 2008-05-24 22:39:01
+archive/issue_comments_022704.json:
+```json
+{
+    "body": "> The iterator wrappers keep a reference to the objects only to be able to check if the iterator reaches the end. As in the following (from `BooleanMonomialVariableIterator.__next__`):\n> \n> {{{\n> if self.iter.equal(self.obj.variableEnd()):\n>     raise StopIteration\n> }}}\nIf that's the only reason for the object, we could add some kind of isEnd() and skip the reference. If fact, the PolyBoRi-Iterators have the member function isZero(), which is equivalent to this. \n\n> The objects that iterators act on are wrapped by python objects, e.g. there is a corresponding `BooleanMonomial` object associated to the `PBMonom` the iterator is acting on. Python should keep track of the memory of `BooleanMonomial`, so python will deallocate that `PBMonom` by calling the `__dealloc__` method of `BooleanMonomial`. Calling the destructor of `PBMonom` from any other place would lead to segfaults.\nDo I understand you right: the patch is not correct, because the destructor of the PolyBoRi monomial must not be called at that place? But, since there is a memleak, the destructor not called correctly. So why, does the destruction of the \n\n> Actually, it might be a good idea to add a reference to the `BooleanMonomial` object in the iterator as well. We wouldn't want python to garbage collect that while the iterator is still around. \nThe iterators (upstream at C++) carry all references, which are need by them. For iterators in lexicographical rings, this is very much like - for instance -  std::vector-iterators, which do not have knowledge of the vector they belong to. (The degree-lexicographical have internal references to the polynomial structure.)\nBut using \"isZero()\" avoid the problem anyway.\n\n> Another problem you might want to ponder: We don't explicitly call the constructor of any iterator other than that of `BooleSet`, yet we still call their destructors. If we need to call the constructor, how do we get away without it most of the time? If we don't, why is `BooleSet` special?\nGood question, the iterators, which obey the ring ordering, like the iterators of polynomials, are wrapped by a shread-pointer construction, which is not the case for BooleSet iterators. Does that make any difference? \nWhat actually happens, if you use code like the one from new_BPI_from_PBPolyIter for\nnew_BSI_from_PBSetIter (including the function arguments)?\n\nI still have few experience in pyx code, but any kind of differences between the iterator types should not make any problems, because in both cases constructors, copy-constructors and destructors care for the memory management on c++-side. \n\nBest regards,\n  Alexander",
+    "created_at": "2008-05-24T22:39:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3283",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3283#issuecomment-22704",
+    "user": "PolyBoRi"
+}
+```
 
 > The iterator wrappers keep a reference to the objects only to be able to check if the iterator reaches the end. As in the following (from `BooleanMonomialVariableIterator.__next__`):
 > 
@@ -86,9 +146,20 @@ Best regards,
   Alexander
 
 
+
 ---
 
-Comment by PolyBoRi created at 2008-05-24 22:44:30
+archive/issue_comments_022705.json:
+```json
+{
+    "body": "Sorry, to late:\n\n\n>  So why, does the destruction of the \n-> So why, is the destruction of the not called by the object itself?\n\n\n>  shread-pointer\n-> shared pointer \n \nBest regards,\n  Alexander",
+    "created_at": "2008-05-24T22:44:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3283",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3283#issuecomment-22705",
+    "user": "PolyBoRi"
+}
+```
 
 Sorry, to late:
 
@@ -104,47 +175,117 @@ Best regards,
   Alexander
 
 
+
 ---
 
-Comment by malb created at 2008-05-25 13:06:02
+archive/issue_comments_022706.json:
+```json
+{
+    "body": "So the strategy is either of the following?\n* get rid of the reference to the C++ object alltogether since the iterators have a method to check for the end anyway\n* add a reference to the Python Object rather than the C++ object and let Python do the refcounting?\n* apply this patch since either assignment causes a copy and we need to destruct or it adds a reference and increases the refcount, right?",
+    "created_at": "2008-05-25T13:06:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3283",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3283#issuecomment-22706",
+    "user": "malb"
+}
+```
 
 So the strategy is either of the following?
- * get rid of the reference to the C++ object alltogether since the iterators have a method to check for the end anyway
- * add a reference to the Python Object rather than the C++ object and let Python do the refcounting?
- * apply this patch since either assignment causes a copy and we need to destruct or it adds a reference and increases the refcount, right?
+* get rid of the reference to the C++ object alltogether since the iterators have a method to check for the end anyway
+* add a reference to the Python Object rather than the C++ object and let Python do the refcounting?
+* apply this patch since either assignment causes a copy and we need to destruct or it adds a reference and increases the refcount, right?
+
 
 
 ---
+
+archive/issue_comments_022707.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-05-25T13:52:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3283",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3283#issuecomment-22707",
+    "user": "malb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by malb created at 2008-05-25 13:53:19
+archive/issue_comments_022708.json:
+```json
+{
+    "body": "The attached patch removes all `.obj` members from the iterators and replaces them with `._end` members. Happy reviewing.",
+    "created_at": "2008-05-25T13:53:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3283",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3283#issuecomment-22708",
+    "user": "malb"
+}
+```
 
 The attached patch removes all `.obj` members from the iterators and replaces them with `._end` members. Happy reviewing.
 
 
+
 ---
+
+archive/issue_comments_022709.json:
+```json
+{
+    "body": "Attachment\n\nremove object references from BooleanPolynomialIterator",
+    "created_at": "2008-05-25T19:36:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3283",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3283#issuecomment-22709",
+    "user": "burcin"
+}
+```
 
 Attachment
 
 remove object references from BooleanPolynomialIterator
 
 
+
 ---
 
-Comment by burcin created at 2008-05-25 19:40:18
+archive/issue_comments_022710.json:
+```json
+{
+    "body": "attachment:trac3283_bpi_object_reference.patch removes the object reference from `BooleanPolynomialIterator` as well. It should be applied after attachment:pbori_memleak_nex_attempt.patch.\n\nI give a positive review to Martin's patch, now someone needs to review mine. :)",
+    "created_at": "2008-05-25T19:40:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3283",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3283#issuecomment-22710",
+    "user": "burcin"
+}
+```
 
 attachment:trac3283_bpi_object_reference.patch removes the object reference from `BooleanPolynomialIterator` as well. It should be applied after attachment:pbori_memleak_nex_attempt.patch.
 
 I give a positive review to Martin's patch, now someone needs to review mine. :)
 
 
+
 ---
 
-Comment by PolyBoRi created at 2008-05-25 20:19:50
+archive/issue_comments_022711.json:
+```json
+{
+    "body": "Hm, I wouldn't have added this _end member, because one could check for equality using that iZero() member from the original PolyBoRi-Iterator. If access to this member function is too complicated, the results of end() could be generated on the fly, as they are the same as result from the default constructors. (But indeed, this could change somewhen...)\n\nOff-Trac Michael B. mentioned, that removing the object completely might cause problems. The object may be deleted meanwhile, and hence, the (C++-) iterator may become invalid.\n\nBest regards,\n  Alexander",
+    "created_at": "2008-05-25T20:19:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3283",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3283#issuecomment-22711",
+    "user": "PolyBoRi"
+}
+```
 
 Hm, I wouldn't have added this _end member, because one could check for equality using that iZero() member from the original PolyBoRi-Iterator. If access to this member function is too complicated, the results of end() could be generated on the fly, as they are the same as result from the default constructors. (But indeed, this could change somewhen...)
 
@@ -154,16 +295,38 @@ Best regards,
   Alexander
 
 
+
 ---
 
-Comment by malb created at 2008-05-25 20:27:25
+archive/issue_comments_022712.json:
+```json
+{
+    "body": "So we remove the `_end` members and add a Python level reference to the original object (polynomial, monomial, set). This should prevent the GC from killing the original object.",
+    "created_at": "2008-05-25T20:27:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3283",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3283#issuecomment-22712",
+    "user": "malb"
+}
+```
 
 So we remove the `_end` members and add a Python level reference to the original object (polynomial, monomial, set). This should prevent the GC from killing the original object.
 
 
+
 ---
 
-Comment by burcin created at 2008-05-25 20:49:06
+archive/issue_comments_022713.json:
+```json
+{
+    "body": "Replying to [comment:9 PolyBoRi]:\n> Hm, I wouldn't have added this _end member, because one could check for equality using that iZero() member from the original PolyBoRi-Iterator. If access to this member function is too complicated, the results of end() could be generated on the fly, as they are the same as result from the default constructors. (But indeed, this could change somewhen...)\n\nWhich iterators have an `isZero()` function? I tried using that for `BooleanMonomialIterator` and `BooleanMonomialVariableIterator` while I was reviewing Martin's patch. (The `PolyBoRi` equivalent of) `BooleanMonomialIterator` had an isEmpty() method, because of it's base class CCuddNavigator. However, the variable iterator didn't. I didn't test to see if `BooleanMonomialIterator` worked as intended with the `isEmpty()` method.",
+    "created_at": "2008-05-25T20:49:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3283",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3283#issuecomment-22713",
+    "user": "burcin"
+}
+```
 
 Replying to [comment:9 PolyBoRi]:
 > Hm, I wouldn't have added this _end member, because one could check for equality using that iZero() member from the original PolyBoRi-Iterator. If access to this member function is too complicated, the results of end() could be generated on the fly, as they are the same as result from the default constructors. (But indeed, this could change somewhen...)
@@ -171,9 +334,20 @@ Replying to [comment:9 PolyBoRi]:
 Which iterators have an `isZero()` function? I tried using that for `BooleanMonomialIterator` and `BooleanMonomialVariableIterator` while I was reviewing Martin's patch. (The `PolyBoRi` equivalent of) `BooleanMonomialIterator` had an isEmpty() method, because of it's base class CCuddNavigator. However, the variable iterator didn't. I didn't test to see if `BooleanMonomialIterator` worked as intended with the `isEmpty()` method.
 
 
+
 ---
 
-Comment by PolyBoRi created at 2008-05-25 21:46:36
+archive/issue_comments_022714.json:
+```json
+{
+    "body": "You are right, my postings were isleading. \nIn my last comment, I wanted to say that\n`BoolePolynomial::const_iterator`  (`BooleanPolynomialIterator`) has the `isZero()` functionality, which could already be used in attachment:trac3283_bpi_object_reference.patch.\n(For `BooleanMonomialIterator` `isValid()` does the job, but \n`BooleanMonomialVariableIterator`, does not own it.)\n\nIn comment 3, I had meant, that I could add such some kind of `isEnd()` function upstream, for instance using `isZero()` for `BoolePolynomial::const_iterator`. \n\nBut now - after all these confusions - I must admit, that I first have to add this functionality to have a consistent interface for this test on all PolyBoRi iterators.\n\nI apologize for the trouble caused,\n  Alexander",
+    "created_at": "2008-05-25T21:46:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3283",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3283#issuecomment-22714",
+    "user": "PolyBoRi"
+}
+```
 
 You are right, my postings were isleading. 
 In my last comment, I wanted to say that
@@ -189,68 +363,158 @@ I apologize for the trouble caused,
   Alexander
 
 
+
 ---
 
-Comment by craigcitro created at 2008-06-20 04:57:08
+archive/issue_comments_022715.json:
+```json
+{
+    "body": "Changing keywords from \"PolyBoRi, memleak\" to \"PolyBoRi, memleak, editor_malb\".",
+    "created_at": "2008-06-20T04:57:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3283",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3283#issuecomment-22715",
+    "user": "craigcitro"
+}
+```
 
 Changing keywords from "PolyBoRi, memleak" to "PolyBoRi, memleak, editor_malb".
 
 
+
 ---
 
-Comment by malb created at 2008-06-25 11:17:39
+archive/issue_comments_022716.json:
+```json
+{
+    "body": "**state of affairs for editoral meeting 26/06/08**\n\nI need to fix the code, possibly by next week.",
+    "created_at": "2008-06-25T11:17:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3283",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3283#issuecomment-22716",
+    "user": "malb"
+}
+```
 
-*state of affairs for editoral meeting 26/06/08*
+**state of affairs for editoral meeting 26/06/08**
 
 I need to fix the code, possibly by next week.
 
 
+
 ---
 
-Comment by malb created at 2008-06-28 15:55:27
+archive/issue_comments_022717.json:
+```json
+{
+    "body": "Next attempt attached:\n* Python references to parent object\n* some docstrings added\n* I checked for memleaks with this patch and didn't find any in my short tests\n\nBurcin, can you review my patch?",
+    "created_at": "2008-06-28T15:55:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3283",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3283#issuecomment-22717",
+    "user": "malb"
+}
+```
 
 Next attempt attached:
- * Python references to parent object
- * some docstrings added
- * I checked for memleaks with this patch and didn't find any in my short tests
+* Python references to parent object
+* some docstrings added
+* I checked for memleaks with this patch and didn't find any in my short tests
 
 Burcin, can you review my patch?
 
 
+
 ---
 
-Comment by burcin created at 2008-07-04 17:53:21
+archive/issue_comments_022718.json:
+```json
+{
+    "body": "Two small problems:\n* adding `equal` to `ctypedef struct PBPolyVectorIter` seems to be redundant.\n* `BooleanPolynomialVectorIterator` does not deallocate `self._end`\n\nOther than these a very positive review. Thanks for sorting out the iterators in the polybori wrapper malb. :)",
+    "created_at": "2008-07-04T17:53:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3283",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3283#issuecomment-22718",
+    "user": "burcin"
+}
+```
 
 Two small problems:
- * adding `equal` to `ctypedef struct PBPolyVectorIter` seems to be redundant.
- * `BooleanPolynomialVectorIterator` does not deallocate `self._end`
+* adding `equal` to `ctypedef struct PBPolyVectorIter` seems to be redundant.
+* `BooleanPolynomialVectorIterator` does not deallocate `self._end`
 
 Other than these a very positive review. Thanks for sorting out the iterators in the polybori wrapper malb. :)
 
 
+
 ---
 
-Comment by malb created at 2008-07-06 12:17:55
+archive/issue_comments_022719.json:
+```json
+{
+    "body": "new version addresses burcin's review",
+    "created_at": "2008-07-06T12:17:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3283",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3283#issuecomment-22719",
+    "user": "malb"
+}
+```
 
 new version addresses burcin's review
 
 
+
 ---
+
+archive/issue_comments_022720.json:
+```json
+{
+    "body": "Attachment\n\nSince the pending changes are in the updated patch, I give the patch a positive review.",
+    "created_at": "2008-07-06T12:18:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3283",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3283#issuecomment-22720",
+    "user": "malb"
+}
+```
 
 Attachment
 
 Since the pending changes are in the updated patch, I give the patch a positive review.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-06 19:11:48
+archive/issue_comments_022721.json:
+```json
+{
+    "body": "Merged pbori_iterators.patch in Sage 3.0.4.alpha2",
+    "created_at": "2008-07-06T19:11:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3283",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3283#issuecomment-22721",
+    "user": "mabshoff"
+}
+```
 
 Merged pbori_iterators.patch in Sage 3.0.4.alpha2
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-06 19:11:48
+archive/issue_comments_022722.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-07-06T19:11:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3283",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3283#issuecomment-22722",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

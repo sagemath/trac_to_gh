@@ -1,11 +1,21 @@
 # Issue 2173: [with patch; needs review] SAGE setup.py should run cython as "python2.5 cython"
 
-Issue created by migration from https://trac.sagemath.org/ticket/2173
-
-Original creator: tabbott
-
-Original creation time: 2008-02-16 01:06:23
-
+archive/issues_002173.json:
+```json
+{
+    "body": "Assignee: tabbott\n\nthe cython in debian runs as #!/usr/bin/python, and /usr/bin/python is python2.4 by default in Debian.  Thus, the SAGE setup.py should explicitly run \"python2.5 cython\" to get python2.5.\n\nI'm submitting in non-mercurial format since I get the following error when I try to:\n\n[tabbott`@`mega-man sage$] hg diff\nabort: index 00changelog.i invalid format 2!\n[tabbott`@`mega-man sage$] cat .hg/00changelog.i ; echo\n\ufffd dummy changelog to prevent using the old repo layout\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2173\n\n",
+    "created_at": "2008-02-16T01:06:23Z",
+    "labels": [
+        "debian-package",
+        "major",
+        "enhancement"
+    ],
+    "title": "[with patch; needs review] SAGE setup.py should run cython as \"python2.5 cython\"",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2173",
+    "user": "tabbott"
+}
+```
 Assignee: tabbott
 
 the cython in debian runs as #!/usr/bin/python, and /usr/bin/python is python2.4 by default in Debian.  Thus, the SAGE setup.py should explicitly run "python2.5 cython" to get python2.5.
@@ -18,8 +28,25 @@ abort: index 00changelog.i invalid format 2!
 � dummy changelog to prevent using the old repo layout
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2173
+
+
+
+
 
 ---
+
+archive/issue_comments_014271.json:
+```json
+{
+    "body": "Attachment\n\nThe patch doesn't work as is for the non-Debianized build:\n\n```\nBuilding sage/matrix/matrix_dense.c because it depends on sage/matrix/matrix_dense.pyx.\npython2.5 cython --embed-positions --incref-local-binop -I/scratch/mabshoff/release-cycle/sage-2.10.2.alpha1/devel/sage-main -o sage/matrix/matrix_dense.c sage/matrix/matrix_dense.pyx\npython2.5: can't open file 'cython': [Errno 2] No such file or directory\nsage: Error running cython.\nsage: There was an error installing modified sage library code.\n```\n\nCheers,\n\nMichael",
+    "created_at": "2008-02-16T01:27:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2173",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2173#issuecomment-14271",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -38,9 +65,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-16 01:30:39
+archive/issue_comments_014272.json:
+```json
+{
+    "body": "I guess it is a patch issue: `python2.5 `which cython`` works. We could just do something analog like the other places in setup.py and introduce a special case for the Debianized build.\n\nCheers,\n\nMichael",
+    "created_at": "2008-02-16T01:30:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2173",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2173#issuecomment-14272",
+    "user": "mabshoff"
+}
+```
 
 I guess it is a patch issue: `python2.5 `which cython`` works. We could just do something analog like the other places in setup.py and introduce a special case for the Debianized build.
 
@@ -49,23 +87,58 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by tabbott created at 2008-02-16 01:38:21
+archive/issue_comments_014273.json:
+```json
+{
+    "body": "Yeah, python2.5 `which cython` is what I'd intended; for non-debian builds, SAGE_LOCAL/bin should be in PATH, and for Debian builds, /usr/bin/cython will be in PATH, so I think that's best.",
+    "created_at": "2008-02-16T01:38:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2173",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2173#issuecomment-14273",
+    "user": "tabbott"
+}
+```
 
 Yeah, python2.5 `which cython` is what I'd intended; for non-debian builds, SAGE_LOCAL/bin should be in PATH, and for Debian builds, /usr/bin/cython will be in PATH, so I think that's best.
 
 
+
 ---
 
-Comment by tabbott created at 2008-03-29 22:01:52
+archive/issue_comments_014274.json:
+```json
+{
+    "body": "I'm attaching a new patch that includes the python2.5 `which cython` change and also the other things that were needed to get SAGE 2.10.4 to build on Debian.\n\nI think the changeset can be cleaned up to just create a symlink 'python' in SAGE_LOCAL/bin that goes to the working python2.5 and then one would not have to do as many changes that replace 'python' with 'python2.5' in the build process.",
+    "created_at": "2008-03-29T22:01:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2173",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2173#issuecomment-14274",
+    "user": "tabbott"
+}
+```
 
 I'm attaching a new patch that includes the python2.5 `which cython` change and also the other things that were needed to get SAGE 2.10.4 to build on Debian.
 
 I think the changeset can be cleaned up to just create a symlink 'python' in SAGE_LOCAL/bin that goes to the working python2.5 and then one would not have to do as many changes that replace 'python' with 'python2.5' in the build process.
 
 
+
 ---
+
+archive/issue_comments_014275.json:
+```json
+{
+    "body": "Attachment\n\nsage-spkg-debian.patch looks good to me. Positive review.\n\nCheers,\n\nMichael",
+    "created_at": "2008-03-29T23:04:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2173",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2173#issuecomment-14275",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -76,15 +149,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-29 23:05:03
+archive/issue_comments_014276.json:
+```json
+{
+    "body": "Merged in Sage 2.11.rc0",
+    "created_at": "2008-03-29T23:05:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2173",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2173#issuecomment-14276",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.11.rc0
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-29 23:05:03
+archive/issue_comments_014277.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-03-29T23:05:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2173",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2173#issuecomment-14277",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

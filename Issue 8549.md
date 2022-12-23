@@ -1,11 +1,21 @@
 # Issue 8549: Add a cycle enumerator for Permutation Group
 
-Issue created by migration from https://trac.sagemath.org/ticket/8549
-
-Original creator: nborie
-
-Original creation time: 2010-03-16 20:07:53
-
+archive/issues_008549.json:
+```json
+{
+    "body": "Assignee: nborie\n\nCC:  sage-combinat\n\nKeywords: permutation, cycle, enumeration\n\nLet G a permutation group. Each permutation of G has a cycle type. The goal of this ticket is to add a method for permutation group which return a dictionary associating for each cycle pattern, the number of permutation in G having this pattern.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8549\n\n",
+    "created_at": "2010-03-16T20:07:53Z",
+    "labels": [
+        "combinatorics",
+        "major",
+        "enhancement"
+    ],
+    "title": "Add a cycle enumerator for Permutation Group",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8549",
+    "user": "nborie"
+}
+```
 Assignee: nborie
 
 CC:  sage-combinat
@@ -14,49 +24,119 @@ Keywords: permutation, cycle, enumeration
 
 Let G a permutation group. Each permutation of G has a cycle type. The goal of this ticket is to add a method for permutation group which return a dictionary associating for each cycle pattern, the number of permutation in G having this pattern.
 
+Issue created by migration from https://trac.sagemath.org/ticket/8549
+
+
+
+
 
 ---
 
-Comment by nborie created at 2010-03-16 23:07:04
+archive/issue_comments_077302.json:
+```json
+{
+    "body": "This should allow to do some plethysm very easily.\n\nSuggestion welcome to improve the latex math line and make it more nice and understandable.",
+    "created_at": "2010-03-16T23:07:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8549",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8549#issuecomment-77302",
+    "user": "nborie"
+}
+```
 
 This should allow to do some plethysm very easily.
 
 Suggestion welcome to improve the latex math line and make it more nice and understandable.
 
 
+
 ---
 
-Comment by nborie created at 2010-03-16 23:07:04
+archive/issue_comments_077303.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-03-16T23:07:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8549",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8549#issuecomment-77303",
+    "user": "nborie"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by nborie created at 2010-04-21 13:34:05
+archive/issue_comments_077304.json:
+```json
+{
+    "body": "After face to face discussion, this patch is ready for review!",
+    "created_at": "2010-04-21T13:34:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8549",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8549#issuecomment-77304",
+    "user": "nborie"
+}
+```
 
 After face to face discussion, this patch is ready for review!
 
 
+
 ---
 
-Comment by nthiery created at 2010-04-21 13:35:34
+archive/issue_comments_077305.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-04-21T13:35:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8549",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8549#issuecomment-77305",
+    "user": "nthiery"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by nthiery created at 2010-04-21 13:35:34
+archive/issue_comments_077306.json:
+```json
+{
+    "body": "Changing keywords from \"permutation, cycle, enumeration\" to \"permutation groups, cycle index, Polya enumeration\".",
+    "created_at": "2010-04-21T13:35:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8549",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8549#issuecomment-77306",
+    "user": "nthiery"
+}
+```
 
 Changing keywords from "permutation, cycle, enumeration" to "permutation groups, cycle index, Polya enumeration".
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-22 02:07:14
+archive/issue_comments_077307.json:
+```json
+{
+    "body": "If I apply \"trac_8549_cycle_enumerator-nb.patch\" on top of 4.4.alpha1, all tests pass.  If I instead apply the patch from #8500, all tests pass.  If I apply *both* patches, though, then I get a doctest failure:\n\n```\nsage -t -long \"devel/sage/sage/schemes/hyperelliptic_curves/hyperelliptic_finite_field.py\"\n**********************************************************************\nFile \"/Applications/sage_builds/sage-4.4.alpha1/devel/sage/sage/schemes/hyperelliptic_curves/hyperelliptic_finite_field.py\", line 315:\n    sage: len(C.points())\nException raised:\n    Traceback (most recent call last):\n      File \"/Applications/sage_builds/sage-4.4.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Applications/sage_builds/sage-4.4.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Applications/sage_builds/sage-4.4.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_6[7]>\", line 1, in <module>\n        len(C.points())###line 315:\n    sage: len(C.points())\n      File \"/Applications/sage_builds/sage-4.4.alpha1/local/lib/python/site-packages/sage/schemes/hyperelliptic_curves/hyperelliptic_finite_field.py\", line 327, in points\n        self.__points = self._points_fast_sqrt() # this is fast using Zech logarithms\n      File \"/Applications/sage_builds/sage-4.4.alpha1/local/lib/python/site-packages/sage/schemes/hyperelliptic_curves/hyperelliptic_finite_field.py\", line 239, in _points_fast_sqrt\n        points.append(self.point([x, v+sqrtD, one], check=True))\n      File \"/Applications/sage_builds/sage-4.4.alpha1/local/lib/python/site-packages/sage/schemes/generic/scheme.py\", line 256, in point\n        return self._point_class(self, v, check=check)\n      File \"/Applications/sage_builds/sage-4.4.alpha1/local/lib/python/site-packages/sage/schemes/generic/algebraic_scheme.py\", line 196, in _point_class\n        return self.__A._point_class(*args, **kwds)\n      File \"/Applications/sage_builds/sage-4.4.alpha1/local/lib/python/site-packages/sage/schemes/generic/projective_space.py\", line 535, in _point_class\n        return morphism.SchemeMorphism_projective_coordinates_field(*args, **kwds)\n      File \"/Applications/sage_builds/sage-4.4.alpha1/local/lib/python/site-packages/sage/schemes/generic/morphism.py\", line 608, in __init__\n        X.codomain()._check_satisfies_equations(v)\n      File \"/Applications/sage_builds/sage-4.4.alpha1/local/lib/python/site-packages/sage/schemes/generic/algebraic_scheme.py\", line 465, in _check_satisfies_equations\n        raise TypeError, \"Coordinates %s do not define a point on %s\"%(list(v),self)\n    TypeError: Coordinates [7*a + 9, 2*a + 2, 1] do not define a point on Hyperelliptic Curve over Finite Field in a of size 11^2 defined by y^2 + (x^2 + 2)*y = x^5 + x + 10\n**********************************************************************\n1 items had failures:\n   1 of   8 in __main__.example_6\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /Users/palmieri/.sage//tmp/.doctest_hyperelliptic_finite_field.py\n\t [8.2 s]\n```\n",
+    "created_at": "2010-04-22T02:07:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8549",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8549#issuecomment-77307",
+    "user": "jhpalmieri"
+}
+```
 
-If I apply "trac_8549_cycle_enumerator-nb.patch" on top of 4.4.alpha1, all tests pass.  If I instead apply the patch from #8500, all tests pass.  If I apply _both_ patches, though, then I get a doctest failure:
+If I apply "trac_8549_cycle_enumerator-nb.patch" on top of 4.4.alpha1, all tests pass.  If I instead apply the patch from #8500, all tests pass.  If I apply *both* patches, though, then I get a doctest failure:
 
 ```
 sage -t -long "devel/sage/sage/schemes/hyperelliptic_curves/hyperelliptic_finite_field.py"
@@ -99,23 +179,56 @@ For whitespace errors, see the file /Users/palmieri/.sage//tmp/.doctest_hyperell
 
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-22 02:07:14
+archive/issue_comments_077308.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_work.",
+    "created_at": "2010-04-22T02:07:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8549",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8549#issuecomment-77308",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from positive_review to needs_work.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-22 02:08:47
+archive/issue_comments_077309.json:
+```json
+{
+    "body": "I'm sorry, I forgot to say that I've only seen this on a Mac (OS X 10.6.3).  On sage.math, all tests pass.",
+    "created_at": "2010-04-22T02:08:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8549",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8549#issuecomment-77309",
+    "user": "jhpalmieri"
+}
+```
 
 I'm sorry, I forgot to say that I've only seen this on a Mac (OS X 10.6.3).  On sage.math, all tests pass.
 
 
+
 ---
 
-Comment by rbeezer created at 2010-05-28 15:04:42
+archive/issue_comments_077310.json:
+```json
+{
+    "body": "Replying to [comment:7 jhpalmieri]:\n> I'm sorry, I forgot to say that I've only seen this on a Mac (OS X 10.6.3).  On sage.math, all tests pass.\n\n#8500 and #8549 together pass all long tests on 64-bit Ubuntu 9.04.  I also saw Mike Hansen at Sage Days 21 test just the file `sage/schemes/hyperelliptic_curves/hyperelliptic_finite_field.py` with both patches and it passed all tests as well.  I'll be working on a review at some point today.",
+    "created_at": "2010-05-28T15:04:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8549",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8549#issuecomment-77310",
+    "user": "rbeezer"
+}
+```
 
 Replying to [comment:7 jhpalmieri]:
 > I'm sorry, I forgot to say that I've only seen this on a Mac (OS X 10.6.3).  On sage.math, all tests pass.
@@ -123,9 +236,20 @@ Replying to [comment:7 jhpalmieri]:
 #8500 and #8549 together pass all long tests on 64-bit Ubuntu 9.04.  I also saw Mike Hansen at Sage Days 21 test just the file `sage/schemes/hyperelliptic_curves/hyperelliptic_finite_field.py` with both patches and it passed all tests as well.  I'll be working on a review at some point today.
 
 
+
 ---
 
-Comment by rbeezer created at 2010-05-29 04:14:42
+archive/issue_comments_077311.json:
+```json
+{
+    "body": "Nicolas(s),\n\nThis is a nice addition, and I can already think of a use for it in a classroom example.\n\nSome small comments/suggestions:\n\n1.  One small bit of language, in\n\n\n```\nHere are the cycle index of some permutation groups\n```\n\n\nI would write the plural as \"cycle indices.\"  Nicely written otherwise.\n\n\n2.  Would there be some way to qualify a value for the parent keyword as being legitimate?  For example, with `D=DihedralGroup(7)`, `14*D.cycle_index(parent=QQ)` goes boom.  It doesn't seem that there is a simple type to test on (but maybe I'm wrong on this), but it does look like parent need only implement  term() and sum().  Would it work to put something like  `parent.term(Partition([1]), 1)` in a try/except block?\n\n\n3.  Documentation.\n\n(a)  Do you want to add this into the reference manual?\n\n(b)  Last doctest block needs a preceding \"::\" to make it render as verbatim.\n\n(c)  Two instances of \"cycle_type\" near the top print weird due to the underscore.\n\n\nImportant stuff:  builds and passes long tests, works as advertised.  So I'm ready to give this a positive review subject to the above minor items.\n\nRob",
+    "created_at": "2010-05-29T04:14:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8549",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8549#issuecomment-77311",
+    "user": "rbeezer"
+}
+```
 
 Nicolas(s),
 
@@ -161,23 +285,58 @@ Important stuff:  builds and passes long tests, works as advertised.  So I'm rea
 Rob
 
 
+
 ---
 
-Comment by rbeezer created at 2010-05-29 04:58:29
+archive/issue_comments_077312.json:
+```json
+{
+    "body": "See #8500 for the results of further OSX testing on this combination.",
+    "created_at": "2010-05-29T04:58:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8549",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8549#issuecomment-77312",
+    "user": "rbeezer"
+}
+```
 
 See #8500 for the results of further OSX testing on this combination.
 
 
+
 ---
 
-Comment by nthiery created at 2010-06-01 09:16:23
+archive/issue_comments_077313.json:
+```json
+{
+    "body": "Hi,\n\nI just wrote a quick patch in the queue implementing the requested changes, and adding FinitePermutationGroups to the ref manual where it was missing. Nicolas, please double check, fold, and reupload.",
+    "created_at": "2010-06-01T09:16:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8549",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8549#issuecomment-77313",
+    "user": "nthiery"
+}
+```
 
 Hi,
 
 I just wrote a quick patch in the queue implementing the requested changes, and adding FinitePermutationGroups to the ref manual where it was missing. Nicolas, please double check, fold, and reupload.
 
 
+
 ---
+
+archive/issue_comments_077314.json:
+```json
+{
+    "body": "Attachment\n\nThanks very much for these fix.\n\nAll tests pass for sage, all tests long and optionnal pass for the finite_permutation_groups, the doc is well built... New comments for parent argument make also more clear the doc.\n\nPositive Review from me. Thanks you Rob for pointing improvements and fix.",
+    "created_at": "2010-06-01T11:30:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8549",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8549#issuecomment-77314",
+    "user": "nborie"
+}
+```
 
 Attachment
 
@@ -188,23 +347,56 @@ All tests pass for sage, all tests long and optionnal pass for the finite_permut
 Positive Review from me. Thanks you Rob for pointing improvements and fix.
 
 
+
 ---
 
-Comment by nborie created at 2010-06-01 11:30:39
+archive/issue_comments_077315.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-06-01T11:30:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8549",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8549#issuecomment-77315",
+    "user": "nborie"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by nborie created at 2010-06-01 11:31:17
+archive/issue_comments_077316.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-06-01T11:31:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8549",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8549#issuecomment-77316",
+    "user": "nborie"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by nborie created at 2010-06-01 11:38:46
+archive/issue_comments_077317.json:
+```json
+{
+    "body": "I change two times the status of this patch but I precise the last change come from Nicolas Thi\u00e9ry.\n\nThis positive review is also modulo the comment \n\n> If I apply \"trac_8549_cycle_enumerator-nb.patch\" on top of 4.4.alpha1, all tests pass. If I instead apply the patch from #8500, all tests pass. If I apply both patches, though, then I get a doctest failure\n\nI currently have no possible access to any OS X machine. All my tests was computing from Ubuntu machines.",
+    "created_at": "2010-06-01T11:38:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8549",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8549#issuecomment-77317",
+    "user": "nborie"
+}
+```
 
 I change two times the status of this patch but I precise the last change come from Nicolas Thiéry.
 
@@ -215,8 +407,19 @@ This positive review is also modulo the comment
 I currently have no possible access to any OS X machine. All my tests was computing from Ubuntu machines.
 
 
+
 ---
 
-Comment by mhansen created at 2010-06-05 22:29:25
+archive/issue_comments_077318.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-06-05T22:29:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8549",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8549#issuecomment-77318",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

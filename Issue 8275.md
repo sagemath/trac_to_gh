@@ -1,48 +1,117 @@
 # Issue 8275: upgrade to ecl 10.2.1
 
-Issue created by migration from https://trac.sagemath.org/ticket/8275
-
-Original creator: was
-
-Original creation time: 2010-02-15 18:45:00
-
+archive/issues_008275.json:
+```json
+{
+    "body": "Assignee: tbd\n\nWe should upgrade to the latest released ecl version:\n\n          http://wstein.org/home/wstein/ports/cygwin/ecl-10.2.1.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/8275\n\n",
+    "created_at": "2010-02-15T18:45:00Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "enhancement"
+    ],
+    "title": "upgrade to ecl 10.2.1",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8275",
+    "user": "was"
+}
+```
 Assignee: tbd
 
 We should upgrade to the latest released ecl version:
 
           http://wstein.org/home/wstein/ports/cygwin/ecl-10.2.1.spkg
 
+Issue created by migration from https://trac.sagemath.org/ticket/8275
+
+
+
+
 
 ---
 
-Comment by was created at 2010-02-15 18:45:08
+archive/issue_comments_073262.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-02-15T18:45:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8275",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8275#issuecomment-73262",
+    "user": "was"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-02-22 01:03:22
+archive/issue_comments_073263.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-02-22T01:03:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8275",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8275#issuecomment-73263",
+    "user": "drkirkby"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-02-22 01:03:22
+archive/issue_comments_073264.json:
+```json
+{
+    "body": "Looks good to me.",
+    "created_at": "2010-02-22T01:03:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8275",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8275#issuecomment-73264",
+    "user": "drkirkby"
+}
+```
 
 Looks good to me.
 
 
+
 ---
 
-Comment by mvngu created at 2010-03-02 23:01:35
+archive/issue_comments_073265.json:
+```json
+{
+    "body": "Merged [ecl-10.2.1.spkg](http://wstein.org/home/wstein/ports/cygwin/ecl-10.2.1.spkg) in the standard spkg repository.",
+    "created_at": "2010-03-02T23:01:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8275",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8275#issuecomment-73265",
+    "user": "mvngu"
+}
+```
 
 Merged [ecl-10.2.1.spkg](http://wstein.org/home/wstein/ports/cygwin/ecl-10.2.1.spkg) in the standard spkg repository.
 
 
+
 ---
 
-Comment by mvngu created at 2010-03-02 23:01:35
+archive/issue_comments_073266.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-03-02T23:01:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8275",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8275#issuecomment-73266",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

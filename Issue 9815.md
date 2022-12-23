@@ -1,11 +1,21 @@
 # Issue 9815: Elliptic Curves over RR or CC have wrong type
 
-Issue created by migration from https://trac.sagemath.org/ticket/9816
-
-Original creator: cremona
-
-Original creation time: 2010-08-27 08:49:04
-
+archive/issues_009815.json:
+```json
+{
+    "body": "Assignee: cremona\n\nAs of 4.5.3.alpha2, elliptic curves defined over RR or CC without giving the base explicitly are given type `EllipticCurve_generic` instead of `EllipticCurve_field`, which means that some functions which should be available for them are not:\n\nFor example, over RR:\n\n```\nsage: E = EllipticCurve([1.2,3.4])\nsage: type(E)\n<class 'sage.schemes.elliptic_curves.ell_generic.EllipticCurve_generic'>\nsage: E.weierstrass_p()\n...\nAttributeError: 'EllipticCurve_generic' object has no attribute 'weierstrass_p'\nsage: E = EllipticCurve(RR,[1.2,3.4])\nsage: type(E)\n<class 'sage.schemes.elliptic_curves.ell_field.EllipticCurve_field'>\nsage: E.weierstrass_p()\n1.00000000000000*z^-2 + 0.000000000000000*z^-1 + 0.000000000000000 + 0.000000000000000*z - 0.240000000000000*z^2 + 0.000000000000000*z^3 - 0.485714285714286*z^4 + 0.000000000000000*z^5 + 0.0192000000000000*z^6 + 0.000000000000000*z^7 + 0.0317922077922077*z^8 + 0.000000000000000*z^9 + 0.0174386436420723*z^10 + 0.000000000000000*z^11 - 0.00169558441558439*z^12 + 0.000000000000000*z^13 - 0.00137243886869437*z^14 + 0.000000000000000*z^15 - 0.000392255141636108*z^16 + 0.000000000000000*z^17 + 0.0000813530244020272*z^18 + O(z^20)\n```\n\nand similarly over CC.\n\nThis is easy to fix, and I'll post a patch shortly.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9816\n\n",
+    "created_at": "2010-08-27T08:49:04Z",
+    "labels": [
+        "elliptic curves",
+        "minor",
+        "bug"
+    ],
+    "title": "Elliptic Curves over RR or CC have wrong type",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9815",
+    "user": "cremona"
+}
+```
 Assignee: cremona
 
 As of 4.5.3.alpha2, elliptic curves defined over RR or CC without giving the base explicitly are given type `EllipticCurve_generic` instead of `EllipticCurve_field`, which means that some functions which should be available for them are not:
@@ -31,46 +41,118 @@ and similarly over CC.
 This is easy to fix, and I'll post a patch shortly.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/9816
+
+
+
+
 
 ---
+
+archive/issue_comments_096798.json:
+```json
+{
+    "body": "Attachment\n\napplies to 4.5.3.alpha2",
+    "created_at": "2010-08-27T09:06:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9815",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9815#issuecomment-96798",
+    "user": "cremona"
+}
+```
 
 Attachment
 
 applies to 4.5.3.alpha2
 
 
+
 ---
 
-Comment by cremona created at 2010-08-27 09:08:21
+archive/issue_comments_096799.json:
+```json
+{
+    "body": "The patch fixes this.  It catches all bases which pass the is_field() test, after testing for the special types (rational, number fields, finite fields, etc).  So it gives better functionality for elliptic curves over RR, CC, QQbar, functions fields, ...",
+    "created_at": "2010-08-27T09:08:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9815",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9815#issuecomment-96799",
+    "user": "cremona"
+}
+```
 
 The patch fixes this.  It catches all bases which pass the is_field() test, after testing for the special types (rational, number fields, finite fields, etc).  So it gives better functionality for elliptic curves over RR, CC, QQbar, functions fields, ...
 
 
+
 ---
 
-Comment by cremona created at 2010-08-27 09:08:21
+archive/issue_comments_096800.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-08-27T09:08:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9815",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9815#issuecomment-96800",
+    "user": "cremona"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by wuthrich created at 2010-08-31 19:01:48
+archive/issue_comments_096801.json:
+```json
+{
+    "body": "That is fine. All test pass on my 4.5.2. Thanks John.\n\nChris.",
+    "created_at": "2010-08-31T19:01:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9815",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9815#issuecomment-96801",
+    "user": "wuthrich"
+}
+```
 
 That is fine. All test pass on my 4.5.2. Thanks John.
 
 Chris.
 
 
+
 ---
 
-Comment by wuthrich created at 2010-08-31 19:01:48
+archive/issue_comments_096802.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-08-31T19:01:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9815",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9815#issuecomment-96802",
+    "user": "wuthrich"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-15 11:37:54
+archive/issue_comments_096803.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-09-15T11:37:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9815",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9815#issuecomment-96803",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed

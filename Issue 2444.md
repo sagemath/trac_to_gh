@@ -1,37 +1,97 @@
 # Issue 2444: [with patch, needs review] add UTF-8 support to sage -t
 
-Issue created by migration from https://trac.sagemath.org/ticket/2444
-
-Original creator: malb
-
-Original creation time: 2008-03-09 20:49:59
-
+archive/issues_002444.json:
+```json
+{
+    "body": "Assignee: tba\n\nsage -t should be able to handle UTF-8 encoded python files.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2444\n\n",
+    "created_at": "2008-03-09T20:49:59Z",
+    "labels": [
+        "documentation",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch, needs review] add UTF-8 support to sage -t",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2444",
+    "user": "malb"
+}
+```
 Assignee: tba
 
 sage -t should be able to handle UTF-8 encoded python files.
 
+Issue created by migration from https://trac.sagemath.org/ticket/2444
+
+
+
+
 
 ---
+
+archive/issue_comments_016527.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-03-12T05:18:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2444",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2444#issuecomment-16527",
+    "user": "rlm"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2008-03-15 21:34:29
+archive/issue_comments_016528.json:
+```json
+{
+    "body": "This applies for me against hg_scripts and works as intended.",
+    "created_at": "2008-03-15T21:34:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2444",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2444#issuecomment-16528",
+    "user": "mhansen"
+}
+```
 
 This applies for me against hg_scripts and works as intended.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-15 22:57:03
+archive/issue_comments_016529.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-03-15T22:57:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2444",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2444#issuecomment-16529",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-15 22:57:03
+archive/issue_comments_016530.json:
+```json
+{
+    "body": "Merged in Sage 2.10.4.rc0 - Umlaute \u00fcber alles!",
+    "created_at": "2008-03-15T22:57:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2444",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2444#issuecomment-16530",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.4.rc0 - Umlaute über alles!

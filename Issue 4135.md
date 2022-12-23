@@ -1,11 +1,21 @@
 # Issue 4135: [with patch, needs review] notebook -- user management features
 
-Issue created by migration from https://trac.sagemath.org/ticket/4135
-
-Original creator: TimothyClemans
-
-Original creation time: 2008-09-16 16:38:32
-
+archive/issues_004135.json:
+```json
+{
+    "body": "Assignee: boothby\n\nNew features:\n- Reset a user's password\n- Add a new user\n- Suspend/unsuspend a user\n- Temporary password shown for each user if one is set (Created by password reset and add user)\n\nIssue created by migration from https://trac.sagemath.org/ticket/4135\n\n",
+    "created_at": "2008-09-16T16:38:32Z",
+    "labels": [
+        "notebook",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch, needs review] notebook -- user management features",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4135",
+    "user": "TimothyClemans"
+}
+```
 Assignee: boothby
 
 New features:
@@ -14,45 +24,115 @@ New features:
 - Suspend/unsuspend a user
 - Temporary password shown for each user if one is set (Created by password reset and add user)
 
+Issue created by migration from https://trac.sagemath.org/ticket/4135
+
+
+
+
 
 ---
 
-Comment by TimothyClemans created at 2008-09-16 16:45:46
+archive/issue_comments_029989.json:
+```json
+{
+    "body": "Depends on #4134 and #2407",
+    "created_at": "2008-09-16T16:45:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-29989",
+    "user": "TimothyClemans"
+}
+```
 
 Depends on #4134 and #2407
 
 
+
 ---
 
-Comment by ddrake created at 2008-09-26 05:32:00
+archive/issue_comments_029990.json:
+```json
+{
+    "body": "I'm trying to review this, but I can't get the patches to apply. I'm starting from a clean 3.1.2 tree. Which patches should I apply, and in what order? Should I use a different version to apply patches against?",
+    "created_at": "2008-09-26T05:32:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-29990",
+    "user": "ddrake"
+}
+```
 
 I'm trying to review this, but I can't get the patches to apply. I'm starting from a clean 3.1.2 tree. Which patches should I apply, and in what order? Should I use a different version to apply patches against?
 
 
+
 ---
 
-Comment by TimothyClemans created at 2008-09-29 18:57:24
+archive/issue_comments_029991.json:
+```json
+{
+    "body": "This ticket has been rebased.",
+    "created_at": "2008-09-29T18:57:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-29991",
+    "user": "TimothyClemans"
+}
+```
 
 This ticket has been rebased.
 
 
+
 ---
 
-Comment by jason created at 2008-09-29 21:11:19
+archive/issue_comments_029992.json:
+```json
+{
+    "body": "It seems that the /user page isn't found with an existing notebook.  I created a new notebook and the /users page came up.",
+    "created_at": "2008-09-29T21:11:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-29992",
+    "user": "jason"
+}
+```
 
 It seems that the /user page isn't found with an existing notebook.  I created a new notebook and the /users page came up.
 
 
+
 ---
 
-Comment by TimothyClemans created at 2008-09-29 21:15:13
+archive/issue_comments_029993.json:
+```json
+{
+    "body": "I've had trouble in the pass with getting administrative users recognized by the Notebook.",
+    "created_at": "2008-09-29T21:15:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-29993",
+    "user": "TimothyClemans"
+}
+```
 
 I've had trouble in the pass with getting administrative users recognized by the Notebook.
 
 
+
 ---
 
-Comment by ddrake created at 2008-09-30 01:40:34
+archive/issue_comments_029994.json:
+```json
+{
+    "body": "I've applied all the necessary patches to a 3.1.3alpha1 tree, but when I try to start Sage, I get:\n\n```\n/var/tmp/sage-3.1.3.alpha1/local/lib/python2.5/site-packages/sage/server/notebook/twist.py in <module>()\n   1935     return False\n   1936 \n-> 1937 from sage.server.notebook.template import registration_page_template\n   1938 from sage.server.notebook.template import login_page_template\n   1939 \n\n/var/tmp/sage-3.1.3.alpha1/local/lib/python2.5/site-packages/sage/server/notebook/template.py in <module>()\n     38 templates = ['login', 'yes_no', 'failed_login', 'register', 'admin_add_user']\n     39 for name in templates:\n---> 40     G[name + '_template'] =  PageTemplate(pjoin(path, '%s.template'%name))\n     41 \n     42 def login_page_template(accounts, default_user, is_username_error=False, is_password_error=False, welcome=None, recover=False):\n\n/var/tmp/sage-3.1.3.alpha1/local/lib/python2.5/site-packages/sage/server/notebook/template.py in __init__(self, filename)\n     27 class PageTemplate:\n     28     def __init__(self, filename):\n---> 29         file = open(filename, 'r')\n     30         self.__template = Template(file.read())\n     31         file.close()\n\nIOError: [Errno 2] No such file or directory: '/var/tmp/sage-3.1.3.alpha1/data/extcode/notebook/templates/admin_add_user.template'\n```\n\nThat's just the last part of the traceback; the rest doesn't seem so interesting...but let me know if you want to see it.\n\nI've looked through the patches from 4134, 2407, and this ticket, and I don't see where the file `admin_add_user.template` is created. I have all those patches applied (except 4134, which has already been merged); how do I get that file?",
+    "created_at": "2008-09-30T01:40:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-29994",
+    "user": "ddrake"
+}
+```
 
 I've applied all the necessary patches to a 3.1.3alpha1 tree, but when I try to start Sage, I get:
 
@@ -86,9 +166,20 @@ That's just the last part of the traceback; the rest doesn't seem so interesting
 I've looked through the patches from 4134, 2407, and this ticket, and I don't see where the file `admin_add_user.template` is created. I have all those patches applied (except 4134, which has already been merged); how do I get that file?
 
 
+
 ---
 
-Comment by TimothyClemans created at 2008-09-30 02:03:25
+archive/issue_comments_029995.json:
+```json
+{
+    "body": "Replying to [comment:7 ddrake]:\n> I've looked through the patches from 4134, 2407, and this ticket, and I don't see where the file `admin_add_user.template` is created. I have all those patches applied (except 4134, which has already been merged); how do I get that file?\n\nDid you do ` hg_extcode.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/4135/extcode-4135_1.patch') `",
+    "created_at": "2008-09-30T02:03:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-29995",
+    "user": "TimothyClemans"
+}
+```
 
 Replying to [comment:7 ddrake]:
 > I've looked through the patches from 4134, 2407, and this ticket, and I don't see where the file `admin_add_user.template` is created. I have all those patches applied (except 4134, which has already been merged); how do I get that file?
@@ -96,9 +187,20 @@ Replying to [comment:7 ddrake]:
 Did you do ` hg_extcode.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/4135/extcode-4135_1.patch') `
 
 
+
 ---
 
-Comment by jason created at 2008-09-30 02:57:43
+archive/issue_comments_029996.json:
+```json
+{
+    "body": "Or if you're using queues and don't want to mess up your tree, go to $SAGE_ROOT/data/extcode and do:\n\n\n```\nhg qinit\nhg qimport /path/to/extcode-patch\nhg qpush\n```\n",
+    "created_at": "2008-09-30T02:57:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-29996",
+    "user": "jason"
+}
+```
 
 Or if you're using queues and don't want to mess up your tree, go to $SAGE_ROOT/data/extcode and do:
 
@@ -111,70 +213,182 @@ hg qpush
 
 
 
+
 ---
 
-Comment by mhansen created at 2008-10-24 00:02:48
+archive/issue_comments_029997.json:
+```json
+{
+    "body": "Timothy, what is the relationship between this patch and #3923, #3937, and #3949.",
+    "created_at": "2008-10-24T00:02:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-29997",
+    "user": "mhansen"
+}
+```
 
 Timothy, what is the relationship between this patch and #3923, #3937, and #3949.
 
 
+
 ---
 
-Comment by TimothyClemans created at 2008-11-11 01:23:52
+archive/issue_comments_029998.json:
+```json
+{
+    "body": "Apply just extcode-4135_1.patch and sage-4145_3.patch",
+    "created_at": "2008-11-11T01:23:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-29998",
+    "user": "TimothyClemans"
+}
+```
 
 Apply just extcode-4135_1.patch and sage-4145_3.patch
 
 
+
 ---
 
-Comment by TimothyClemans created at 2008-11-11 01:24:09
+archive/issue_comments_029999.json:
+```json
+{
+    "body": "Changing assignee from boothby to TimothyClemans.",
+    "created_at": "2008-11-11T01:24:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-29999",
+    "user": "TimothyClemans"
+}
+```
 
 Changing assignee from boothby to TimothyClemans.
 
 
+
 ---
 
-Comment by TimothyClemans created at 2008-11-11 01:24:09
+archive/issue_comments_030000.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-11-11T01:24:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-30000",
+    "user": "TimothyClemans"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by TimothyClemans created at 2008-11-11 01:24:09
+archive/issue_comments_030001.json:
+```json
+{
+    "body": "Changing type from defect to enhancement.",
+    "created_at": "2008-11-11T01:24:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-30001",
+    "user": "TimothyClemans"
+}
+```
 
 Changing type from defect to enhancement.
 
 
+
 ---
 
-Comment by TimothyClemans created at 2008-11-11 05:20:28
+archive/issue_comments_030002.json:
+```json
+{
+    "body": "Depends on #3950",
+    "created_at": "2008-11-11T05:20:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-30002",
+    "user": "TimothyClemans"
+}
+```
 
 Depends on #3950
 
 
+
 ---
 
-Comment by TimothyClemans created at 2008-11-11 05:33:00
+archive/issue_comments_030003.json:
+```json
+{
+    "body": "Don't apply extcode-4135_1.patch afterall",
+    "created_at": "2008-11-11T05:33:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-30003",
+    "user": "TimothyClemans"
+}
+```
 
 Don't apply extcode-4135_1.patch afterall
 
 
+
 ---
 
-Comment by TimothyClemans created at 2008-12-20 20:07:05
+archive/issue_comments_030004.json:
+```json
+{
+    "body": "Apply sage-4135_3.patch and sage-4135_4.patch",
+    "created_at": "2008-12-20T20:07:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-30004",
+    "user": "TimothyClemans"
+}
+```
 
 Apply sage-4135_3.patch and sage-4135_4.patch
 
 
+
 ---
+
+archive/issue_comments_030005.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-01-19T07:19:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-30005",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-02 05:13:03
+archive/issue_comments_030006.json:
+```json
+{
+    "body": "Can we get a review for this since this patch is holding up several other patches?\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-02T05:13:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-30006",
+    "user": "mabshoff"
+}
+```
 
 Can we get a review for this since this patch is holding up several other patches?
 
@@ -183,9 +397,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by ddrake created at 2009-02-03 00:24:17
+archive/issue_comments_030007.json:
+```json
+{
+    "body": "I applied mhansen's patch to a clean 3.3.alpha3 tree, deleted my .sage/sage_notebook directory to start fresh, but I still get problems: I log in, click \"Manage Users\", click \"Add user\", then put in a name and hit \"Create account\". The resulting page is blank and has the title \"Error | Sage Notebook\".\n\nIf I hit the back button to get back to the \"add a user\" page, then click cancel, I get to the user management page, which lists the user I tried to add.\n\nIf I click on the user's name, I go to the usual \"home page\", and it lists the user's name as if I am logged in as that user...but I thought I was logged in as admin? If I then click on Settings, I can go to the user management page and...well, manage users.\n\nRight now, this patch seems to need work. Am I doing something wrong?",
+    "created_at": "2009-02-03T00:24:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-30007",
+    "user": "ddrake"
+}
+```
 
 I applied mhansen's patch to a clean 3.3.alpha3 tree, deleted my .sage/sage_notebook directory to start fresh, but I still get problems: I log in, click "Manage Users", click "Add user", then put in a name and hit "Create account". The resulting page is blank and has the title "Error | Sage Notebook".
 
@@ -196,42 +421,112 @@ If I click on the user's name, I go to the usual "home page", and it lists the u
 Right now, this patch seems to need work. Am I doing something wrong?
 
 
+
 ---
+
+archive/issue_comments_030008.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-03-16T19:41:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-30008",
+    "user": "TimothyClemans"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by TimothyClemans created at 2009-03-16 19:42:11
+archive/issue_comments_030009.json:
+```json
+{
+    "body": "There was a bug in the error_message.html template.",
+    "created_at": "2009-03-16T19:42:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-30009",
+    "user": "TimothyClemans"
+}
+```
 
 There was a bug in the error_message.html template.
 
 
+
 ---
 
-Comment by ddrake created at 2009-03-16 23:26:32
+archive/issue_comments_030010.json:
+```json
+{
+    "body": "I've applied the patch to a 3.4 tree and all the bits seem to work.",
+    "created_at": "2009-03-16T23:26:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-30010",
+    "user": "ddrake"
+}
+```
 
 I've applied the patch to a 3.4 tree and all the bits seem to work.
 
 
+
 ---
+
+archive/issue_comments_030011.json:
+```json
+{
+    "body": "Attachment\n\ntrac_4135.2.patch rebased for 3.4.1.rc2",
+    "created_at": "2009-04-14T01:03:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-30011",
+    "user": "ddrake"
+}
+```
 
 Attachment
 
 trac_4135.2.patch rebased for 3.4.1.rc2
 
 
+
 ---
 
-Comment by ddrake created at 2009-04-14 01:05:44
+archive/issue_comments_030012.json:
+```json
+{
+    "body": "I've rebased this patch for 3.4.1.rc2 and give it a slightly weak positive review -- I still don't know Twisted or the notebook code terribly well, and would appreciate it if someone who knows it better would also take a look at this patch.",
+    "created_at": "2009-04-14T01:05:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-30012",
+    "user": "ddrake"
+}
+```
 
 I've rebased this patch for 3.4.1.rc2 and give it a slightly weak positive review -- I still don't know Twisted or the notebook code terribly well, and would appreciate it if someone who knows it better would also take a look at this patch.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-24 02:39:59
+archive/issue_comments_030013.json:
+```json
+{
+    "body": "Hmm, given this is rather crucial and hard to test code I would be happy if someone else did take another look, so \"needs review\" to attract someone else.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-24T02:39:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-30013",
+    "user": "mabshoff"
+}
+```
 
 Hmm, given this is rather crucial and hard to test code I would be happy if someone else did take another look, so "needs review" to attract someone else.
 
@@ -240,18 +535,40 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by timdumol created at 2009-07-27 13:37:21
+archive/issue_comments_030014.json:
+```json
+{
+    "body": "Applied patch to r12658.\n\nEverything works perfectly except for the cancel link in the Account Settings page. It links to /home, leading to a 404 Error. I believe /home/<username>/ is the proper way to link it.",
+    "created_at": "2009-07-27T13:37:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-30014",
+    "user": "timdumol"
+}
+```
 
 Applied patch to r12658.
 
 Everything works perfectly except for the cancel link in the Account Settings page. It links to /home, leading to a 404 Error. I believe /home/<username>/ is the proper way to link it.
 
 
+
 ---
 
-Comment by ddrake created at 2009-07-27 22:38:00
+archive/issue_comments_030015.json:
+```json
+{
+    "body": "Replying to [comment:24 timdumol]:\n> Applied patch to r12658.\n> \n> Everything works perfectly except for the cancel link in the Account Settings page. It links to /home, leading to a 404 Error. I believe /home/<username>/ is the proper way to link it.\n\nI see the same error. I put in a `<pre>{{ debug()|e }}</pre>` bit (see http://jinja.pocoo.org/1/documentation/designerdoc) into `account_settings.html` and it looks like the template engine is not getting a username.",
+    "created_at": "2009-07-27T22:38:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-30015",
+    "user": "ddrake"
+}
+```
 
 Replying to [comment:24 timdumol]:
 > Applied patch to r12658.
@@ -261,23 +578,56 @@ Replying to [comment:24 timdumol]:
 I see the same error. I put in a `<pre>{{ debug()|e }}</pre>` bit (see http://jinja.pocoo.org/1/documentation/designerdoc) into `account_settings.html` and it looks like the template engine is not getting a username.
 
 
+
 ---
 
-Comment by wjp created at 2009-09-01 17:32:16
+archive/issue_comments_030016.json:
+```json
+{
+    "body": "For the cancel button not working, see the patch at #6856. (I created that ticket before seeing the issue was already mentioned here.)",
+    "created_at": "2009-09-01T17:32:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-30016",
+    "user": "wjp"
+}
+```
 
 For the cancel button not working, see the patch at #6856. (I created that ticket before seeing the issue was already mentioned here.)
 
 
+
 ---
 
-Comment by wjp created at 2009-09-01 18:30:55
+archive/issue_comments_030017.json:
+```json
+{
+    "body": "I don't understand how (or if?) this patch implements the mentioned temporary password functionality. There is a new '__temporary_password' variable, but that doesn't seem to be used.",
+    "created_at": "2009-09-01T18:30:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-30017",
+    "user": "wjp"
+}
+```
 
 I don't understand how (or if?) this patch implements the mentioned temporary password functionality. There is a new '__temporary_password' variable, but that doesn't seem to be used.
 
 
+
 ---
 
-Comment by ddrake created at 2009-09-01 23:49:14
+archive/issue_comments_030018.json:
+```json
+{
+    "body": "Replying to [comment:27 wjp]:\n> I don't understand how (or if?) this patch implements the mentioned temporary password functionality. There is a new '__temporary_password' variable, but that doesn't seem to be used.\n\nWhen one adds a new user, you get a page saying \"The temporary password for the new user foo is 52oN5g2a\". Unfortunately, that password does not seem to be temporary; the new user can log in and out, and back in again with that password. When I read \"temporary password\", I think that the user will be able to log in once, and then be forced to change the password right away.\n\nAnother problem with the temporary password page is that the title of the page is \"Error\", even though there's no error.\n\nThat said: this patch, along with #6856 (which I just positively reviewed) does give us the basic functionality for adding users and resetting passwords from inside the notebook, which is something I'd really like. The last patch applies cleanly to 4.1.1. What do people think of merging this and opening a new ticket to fix the temporary password bits? (Or changing this patch so that it doesn't claim that the new password is temporary?)",
+    "created_at": "2009-09-01T23:49:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-30018",
+    "user": "ddrake"
+}
+```
 
 Replying to [comment:27 wjp]:
 > I don't understand how (or if?) this patch implements the mentioned temporary password functionality. There is a new '__temporary_password' variable, but that doesn't seem to be used.
@@ -289,23 +639,58 @@ Another problem with the temporary password page is that the title of the page i
 That said: this patch, along with #6856 (which I just positively reviewed) does give us the basic functionality for adding users and resetting passwords from inside the notebook, which is something I'd really like. The last patch applies cleanly to 4.1.1. What do people think of merging this and opening a new ticket to fix the temporary password bits? (Or changing this patch so that it doesn't claim that the new password is temporary?)
 
 
+
 ---
 
-Comment by wjp created at 2009-09-02 09:00:42
+archive/issue_comments_030019.json:
+```json
+{
+    "body": "I'd agree with not holding up this patch because of this, because it is already a very useful feature to have.\n\nThis patch does probably have to be rebased against #6568, though.",
+    "created_at": "2009-09-02T09:00:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-30019",
+    "user": "wjp"
+}
+```
 
 I'd agree with not holding up this patch because of this, because it is already a very useful feature to have.
 
 This patch does probably have to be rebased against #6568, though.
 
 
+
 ---
 
-Comment by ddrake created at 2009-09-03 03:07:13
+archive/issue_comments_030020.json:
+```json
+{
+    "body": "rebased against 4.1.1 + #6568",
+    "created_at": "2009-09-03T03:07:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-30020",
+    "user": "ddrake"
+}
+```
 
 rebased against 4.1.1 + #6568
 
 
+
 ---
+
+archive/issue_comments_030021.json:
+```json
+{
+    "body": "Attachment\n\nRebased patch up. This should apply cleanly to the release manager's 4.1.2.alpha tree. I am going to change this to a positive review and open a new ticket for the temporary password business.\n\nRelease manager: apply only attachment:trac_4135.4.patch.",
+    "created_at": "2009-09-03T03:15:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-30021",
+    "user": "ddrake"
+}
+```
 
 Attachment
 
@@ -314,16 +699,38 @@ Rebased patch up. This should apply cleanly to the release manager's 4.1.2.alpha
 Release manager: apply only attachment:trac_4135.4.patch.
 
 
+
 ---
 
-Comment by ddrake created at 2009-09-03 03:19:49
+archive/issue_comments_030022.json:
+```json
+{
+    "body": "The temporary password ticket is #6871.",
+    "created_at": "2009-09-03T03:19:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-30022",
+    "user": "ddrake"
+}
+```
 
 The temporary password ticket is #6871.
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-03 06:34:01
+archive/issue_comments_030023.json:
+```json
+{
+    "body": "I got two hunk failures when merging `trac_4135.4.patch`:\n\n```\n[mvngu@mod sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/4135/trac_4135.4.patch && hg qpush\nadding trac_4135.4.patch to series file\napplying trac_4135.4.patch\npatching file sage/server/notebook/twist.py\nHunk #6 FAILED at 217\nHunk #69 FAILED at 1747\n2 out of 102 hunks FAILED -- saving rejects to file sage/server/notebook/twist.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nErrors during apply, please fix and refresh trac_4135.4.patch\n```\n\nThis might depend on #6742, #6840, and #6568.",
+    "created_at": "2009-09-03T06:34:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-30023",
+    "user": "mvngu"
+}
+```
 
 I got two hunk failures when merging `trac_4135.4.patch`:
 
@@ -343,9 +750,20 @@ Errors during apply, please fix and refresh trac_4135.4.patch
 This might depend on #6742, #6840, and #6568.
 
 
+
 ---
 
-Comment by ddrake created at 2009-09-03 08:11:48
+archive/issue_comments_030024.json:
+```json
+{
+    "body": "Replying to [comment:32 mvngu]:\n> I got two hunk failures when merging `trac_4135.4.patch`:\n\n(snip)\n\n> This might depend on #6742, #6840, and #6568.\n\nI tried applying the patch here on top of a 4.1.1 tree that already had the patches from those three tickets applied, and I get a different hunk that won't apply. Perhaps I'll wait for the alpha0 tarball to be released and rebase the patch here based on that...or, you could `hg serve` your merge tree and let me pull from that.",
+    "created_at": "2009-09-03T08:11:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-30024",
+    "user": "ddrake"
+}
+```
 
 Replying to [comment:32 mvngu]:
 > I got two hunk failures when merging `trac_4135.4.patch`:
@@ -357,22 +775,57 @@ Replying to [comment:32 mvngu]:
 I tried applying the patch here on top of a 4.1.1 tree that already had the patches from those three tickets applied, and I get a different hunk that won't apply. Perhaps I'll wait for the alpha0 tarball to be released and rebase the patch here based on that...or, you could `hg serve` your merge tree and let me pull from that.
 
 
+
 ---
+
+archive/issue_comments_030025.json:
+```json
+{
+    "body": "Attachment\n\nrebased against mvngu's 4.1.2.alpha0 merge tree",
+    "created_at": "2009-09-03T08:42:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-30025",
+    "user": "ddrake"
+}
+```
 
 Attachment
 
 rebased against mvngu's 4.1.2.alpha0 merge tree
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-03 10:40:01
+archive/issue_comments_030026.json:
+```json
+{
+    "body": "Merged `trac_4135.5.patch`. See #6874 for a follow-up to this ticket.",
+    "created_at": "2009-09-03T10:40:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-30026",
+    "user": "mvngu"
+}
+```
 
 Merged `trac_4135.5.patch`. See #6874 for a follow-up to this ticket.
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-03 10:40:01
+archive/issue_comments_030027.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-09-03T10:40:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4135#issuecomment-30027",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

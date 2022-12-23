@@ -1,11 +1,21 @@
 # Issue 7342: installing kash3-2008-07-31 spkg fails on OS X
 
-Issue created by migration from https://trac.sagemath.org/ticket/7342
-
-Original creator: was
-
-Original creation time: 2009-10-29 00:39:42
-
+archive/issues_007342.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  dimpase\n\nThe kash3 optional spkg doesn't work at all on OS X:\n\n\n```\nx kash3-2008-07-31/src/KASH3-Linux-2008-07-31.tar.bz2\nx kash3-2008-07-31/src/KASH3-Darwin-2008-07-31.tar.bz2\nFinished extraction\n****************************************************\nHost system\nuname -a:\nDarwin d-69-91-159-10.dhcp4.washington.edu 10.0.0 Darwin Kernel Version 10.0.0: Fri Jul 31 22:47:34 PDT 2009; root:xnu-1456.1.25~1/RELEASE_I386 i386\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: i686-apple-darwin10\nConfigured with: /var/tmp/gcc/gcc-5646~6/src/configure --disable-checking --enable-werror --prefix=/usr --mandir=/share/man --enable-languages=c,objc,c++,obj-c++ --program-transform-name=/^[cg][^.-]*$/s/$/-4.2/ --with-slibdir=/usr/lib --build=i686-apple-darwin10 --with-gxx-include-dir=/include/c++/4.2.1 --program-prefix=i686-apple-darwin10- --host=x86_64-apple-darwin10 --target=i686-apple-darwin10\nThread model: posix\ngcc version 4.2.1 (Apple Inc. build 5646)\n****************************************************\nUsage:\n  List:    tar -tf <archive-filename>\n  Extract: tar -xf <archive-filename>\n  Create:  tar -cf <archive-filename> [filenames...]\n  Help:    tar --help\nError extracting kash.\n\nreal\t0m0.050s\nuser\t0m0.037s\nsys\t0m0.011s\nsage: An error occurred while installing kash3-2008-07-31\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /Users/wstein/s/install.log.  Describe your computer, operating system, etc.\nIf you want to try to fix the problem yourself, *don't* just cd to\n/Users/wstein/s/spkg/build/kash3-2008-07-31 and type 'make'.\nInstead type \"/Users/wstein/s/sage -sh\"\nin order to set all environment variables correctly, then cd to\n/Users/wstein/s/spkg/build/kash3-2008-07-31\n(When you are done debugging, you can type \"exit\" to leave the\nsubshell.)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7342\n\n",
+    "created_at": "2009-10-29T00:39:42Z",
+    "labels": [
+        "packages: optional",
+        "major",
+        "bug"
+    ],
+    "title": "installing kash3-2008-07-31 spkg fails on OS X",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7342",
+    "user": "was"
+}
+```
 Assignee: tbd
 
 CC:  dimpase
@@ -55,23 +65,60 @@ subshell.)
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7342
+
+
+
+
 
 ---
 
-Comment by mkoeppe created at 2020-08-17 16:38:58
+archive/issue_comments_061443.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2020-08-17T16:38:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7342",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7342#issuecomment-61443",
+    "user": "mkoeppe"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mkoeppe created at 2020-08-17 16:38:58
+archive/issue_comments_061444.json:
+```json
+{
+    "body": "Outdated spkg or build system ticket, should be closed",
+    "created_at": "2020-08-17T16:38:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7342",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7342#issuecomment-61444",
+    "user": "mkoeppe"
+}
+```
 
 Outdated spkg or build system ticket, should be closed
 
 
+
 ---
 
-Comment by slelievre created at 2020-08-22 07:17:20
+archive/issue_comments_061445.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2020-08-22T07:17:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7342",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7342#issuecomment-61445",
+    "user": "slelievre"
+}
+```
 
 Resolution: invalid

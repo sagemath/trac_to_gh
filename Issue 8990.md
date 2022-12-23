@@ -1,11 +1,21 @@
 # Issue 8990: update MPIR 1.2.2 license information as requested by upstream
 
-Issue created by migration from https://trac.sagemath.org/ticket/8990
-
-Original creator: GeorgSWeber
-
-Original creation time: 2010-05-18 21:46:52
-
+archive/issues_008990.json:
+```json
+{
+    "body": "Assignee: tbd\n\nAs description, let me just post the diff of the new SPKG.txt of the new mpir-1.2.2.p1.spkg (with respect to the SPKG.txt of mpir-1.2.2.p0.spkg) that I'll upload in a minute:\n\n```\n--- a/SPKG.txt  Tue Jan 05 20:49:53 2010 +0000\n+++ b/SPKG.txt  Tue May 18 23:35:30 2010 +0200\n@@ -4,13 +4,14 @@\n \n MPIR is an open source multiprecision integer library derived from\n version 4.2.1 of the GMP (GNU Multi Precision) project (which was\n-licensed LGPL v2+).\n+licensed LGPL v2+). Note MPIR 1.2.2 is overall LGPL v3+ due to the\n+inclusion of an LGPL v3 file (mpf/set_str.c).\n \n See http://www.mpir.org\n \n == License ==\n \n- * LGPL V2+\n+ * LGPL V3+\n \n == SPKG Maintainers ==\n \n@@ -26,6 +27,20 @@\n \n == Changelog == \n \n+=== mpir-1.2.2.p1 (Georg S. Weber, May 18th 2010) ===\n+ * Update the License information (e.g. above), as kindly requested\n+   on the MPIR project homepage (see \"http://www.mpir.org/past.html\"):\n+   \"... Note MPIR 1.2.2 is overall LGPL v3+ due to us accidentally including\n+    an LGPL v3 file (mpf/set_str.c). Please distribute this version of the\n+    library under the terms of this license! ...\"\n+   (According to \"http://trac.mpir.org/mpir_trac/ticket/71\", this LGPL v3 file\n+   stems from (patches for) GMP 4.2.4 in the year 2008.)\n+   Also copied two new files \"gpl-3.0.txt\" and \"lgpl-3.0.txt\" under src/, taken\n+   from the updated mpir-1.2.2 \"vanilla\" tarball downloaded under the link:\n+       http://www.mpir.org/mpir-1.2.2.tar.gz\n+   According to private communication with Bill Hart (MPIR upstream), this\n+   addition of two files was the only change done to the tarball itself.\n+\n === mpir-1.2.2.p0 (David Kirkby, January 5th 2010) ===\n  * 7849. Included two header files so MPIR builds with Sun\n   studio if configured with  --enable-cxx and the newer\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8990\n\n",
+    "created_at": "2010-05-18T21:46:52Z",
+    "labels": [
+        "packages: standard",
+        "blocker",
+        "bug"
+    ],
+    "title": "update MPIR 1.2.2 license information as requested by upstream",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8990",
+    "user": "GeorgSWeber"
+}
+```
 Assignee: tbd
 
 As description, let me just post the diff of the new SPKG.txt of the new mpir-1.2.2.p1.spkg (with respect to the SPKG.txt of mpir-1.2.2.p0.spkg) that I'll upload in a minute:
@@ -54,57 +64,138 @@ As description, let me just post the diff of the new SPKG.txt of the new mpir-1.
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8990
+
+
+
+
 
 ---
 
-Comment by GeorgSWeber created at 2010-05-18 21:59:21
+archive/issue_comments_083110.json:
+```json
+{
+    "body": "The link to the new spkg is:\n\nhttp://sage.math.washington.edu/home/weberg/spkg/mpir-1.2.2.p1.spkg",
+    "created_at": "2010-05-18T21:59:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8990",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8990#issuecomment-83110",
+    "user": "GeorgSWeber"
+}
+```
 
 The link to the new spkg is:
 
 http://sage.math.washington.edu/home/weberg/spkg/mpir-1.2.2.p1.spkg
 
 
+
 ---
 
-Comment by GeorgSWeber created at 2010-05-18 21:59:21
+archive/issue_comments_083111.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-05-18T21:59:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8990",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8990#issuecomment-83111",
+    "user": "GeorgSWeber"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mvngu created at 2010-05-19 05:47:51
+archive/issue_comments_083112.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-05-19T05:47:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8990",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8990#issuecomment-83112",
+    "user": "mvngu"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mvngu created at 2010-05-19 05:47:51
+archive/issue_comments_083113.json:
+```json
+{
+    "body": "The changes are OK by me. The update spkg contains the following changes:\n\n* State in the file SPKG.txt that MPIR 1.2.2 is overall LGPLv3+ licensed.\n* Place a copy of the GPLv3 and LGPLv3 licenses under `src/`.",
+    "created_at": "2010-05-19T05:47:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8990",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8990#issuecomment-83113",
+    "user": "mvngu"
+}
+```
 
 The changes are OK by me. The update spkg contains the following changes:
 
- * State in the file SPKG.txt that MPIR 1.2.2 is overall LGPLv3+ licensed.
- * Place a copy of the GPLv3 and LGPLv3 licenses under `src/`.
+* State in the file SPKG.txt that MPIR 1.2.2 is overall LGPLv3+ licensed.
+* Place a copy of the GPLv3 and LGPLv3 licenses under `src/`.
+
 
 
 ---
 
-Comment by mhansen created at 2010-05-19 05:57:11
+archive/issue_comments_083114.json:
+```json
+{
+    "body": "We should also really just upgrade to 2.0: #8664",
+    "created_at": "2010-05-19T05:57:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8990",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8990#issuecomment-83114",
+    "user": "mhansen"
+}
+```
 
 We should also really just upgrade to 2.0: #8664
 
 
+
 ---
 
-Comment by mvngu created at 2010-05-19 07:52:07
+archive/issue_comments_083115.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-05-19T07:52:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8990",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8990#issuecomment-83115",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by GeorgSWeber created at 2010-05-19 09:46:41
+archive/issue_comments_083116.json:
+```json
+{
+    "body": "Replying to [comment:3 mhansen]:\n> We should also really just upgrade to 2.0: #8664\n\nSee my comment(s) there.",
+    "created_at": "2010-05-19T09:46:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8990",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8990#issuecomment-83116",
+    "user": "GeorgSWeber"
+}
+```
 
 Replying to [comment:3 mhansen]:
 > We should also really just upgrade to 2.0: #8664

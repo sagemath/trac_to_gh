@@ -1,11 +1,21 @@
 # Issue 5631: improve doctest coverage for schemes/generic/affine_space.py
 
-Issue created by migration from https://trac.sagemath.org/ticket/5631
-
-Original creator: AlexGhitza
-
-Original creation time: 2009-03-29 07:59:52
-
+archive/issues_005631.json:
+```json
+{
+    "body": "Assignee: was\n\nKeywords: doctest affine space\n\nThe attached patch improves the doctest coverage of `affine_space.py` from 45% (9 of 20) to 80% (16 of 20) and fixes a few tiny bugs along the way.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5631\n\n",
+    "created_at": "2009-03-29T07:59:52Z",
+    "labels": [
+        "algebraic geometry",
+        "minor",
+        "enhancement"
+    ],
+    "title": "improve doctest coverage for schemes/generic/affine_space.py",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5631",
+    "user": "AlexGhitza"
+}
+```
 Assignee: was
 
 Keywords: doctest affine space
@@ -13,24 +23,61 @@ Keywords: doctest affine space
 The attached patch improves the doctest coverage of `affine_space.py` from 45% (9 of 20) to 80% (16 of 20) and fixes a few tiny bugs along the way.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5631
+
+
+
+
 
 ---
 
-Comment by AlexGhitza created at 2009-03-29 08:17:35
+archive/issue_comments_043972.json:
+```json
+{
+    "body": "Changing assignee from was to AlexGhitza.",
+    "created_at": "2009-03-29T08:17:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5631",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5631#issuecomment-43972",
+    "user": "AlexGhitza"
+}
+```
 
 Changing assignee from was to AlexGhitza.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-03-29 08:17:44
+archive/issue_comments_043973.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-03-29T08:17:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5631",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5631#issuecomment-43973",
+    "user": "AlexGhitza"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by was created at 2009-03-29 17:15:28
+archive/issue_comments_043974.json:
+```json
+{
+    "body": "I don't understand why you deleted lines 415, 416 below:\n\n```\n414\t505\t    def subscheme_complement(self, X, Y): \n415\t \t        X = self.subscheme(X) \n416\t \t        Y = self.subscheme(Y) \n```\n\n\nThe way you have the code now, it subscheme_complement has nothing at all to do with self.  Why is it even a method of self as is now.  \n\nOtherwise this patch looks very good.",
+    "created_at": "2009-03-29T17:15:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5631",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5631#issuecomment-43974",
+    "user": "was"
+}
+```
 
 I don't understand why you deleted lines 415, 416 below:
 
@@ -46,9 +93,20 @@ The way you have the code now, it subscheme_complement has nothing at all to do 
 Otherwise this patch looks very good.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-03-29 21:15:10
+archive/issue_comments_043975.json:
+```json
+{
+    "body": "I had two problems with lines 415 and 416: (1) the doctest that I wrote wasn't working and (2) they aren't there in the corresponding method in `projective_space.py`.  If you look at the docstring that I wrote for `subscheme_complement` (and the doctest), you will notice that X and Y are already subschemes of self (so self is involved in a slightly hidden way).\n\nI guess that one could relax the syntax so that polynomial lists can be passed to `subscheme_complement`; in the example of the doctest this would be\n\n\n```\nsage: A.<x, y, z> = AffineSpace(3, ZZ)\nsage: A.subscheme_complement([x+y-z], [x-y+z])\n```\n\n\nIs this what you have in mind?",
+    "created_at": "2009-03-29T21:15:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5631",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5631#issuecomment-43975",
+    "user": "AlexGhitza"
+}
+```
 
 I had two problems with lines 415 and 416: (1) the doctest that I wrote wasn't working and (2) they aren't there in the corresponding method in `projective_space.py`.  If you look at the docstring that I wrote for `subscheme_complement` (and the doctest), you will notice that X and Y are already subschemes of self (so self is involved in a slightly hidden way).
 
@@ -64,9 +122,20 @@ sage: A.subscheme_complement([x+y-z], [x-y+z])
 Is this what you have in mind?
 
 
+
 ---
 
-Comment by was created at 2009-03-30 00:06:46
+archive/issue_comments_043976.json:
+```json
+{
+    "body": "> If you look at the docstring that I wrote for subscheme_complement \n> (and the doctest), you will notice that X and Y are already subschemes \n> of self (so self is involved in a slightly hidden way). \n\nCouldn't I do this:\n\n```\nsage: A.<x, y, z> = AffineSpace(3, ZZ)\nsage: [[make an X and a Y over GF(7) say that haven't nothing to do with A]]\nsage: A.subscheme_complement(X, Y)\n```\n\n\nEither subscheme_complement needs to check that X and Y are really subschemes of A, or it should just be a method of X, i.e.,\n\n```\nsage: X.complement(Y)\n```\n\nsay, which requires that X and Y live in a common ambient space.\n\n -- William",
+    "created_at": "2009-03-30T00:06:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5631",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5631#issuecomment-43976",
+    "user": "was"
+}
+```
 
 > If you look at the docstring that I wrote for subscheme_complement 
 > (and the doctest), you will notice that X and Y are already subschemes 
@@ -92,21 +161,56 @@ say, which requires that X and Y live in a common ambient space.
  -- William
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-03-30 21:43:31
+archive/issue_comments_043977.json:
+```json
+{
+    "body": "So I looked at algebraic_scheme.py and noticed that there is a method `X.exclude(Y)` which seems to want to do what you're suggesting.  It's actually broken as it is, and I doubt that it ever worked (no doctests, not used anywhere in the Sage library, and the simplest tests that I thought of didn't work).  So I'm renaming it to `X.complement(Y)` and removing `subscheme_complement()` from both `affine_space.py` and `projective_space.py`.  They are also not used anywhere.",
+    "created_at": "2009-03-30T21:43:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5631",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5631#issuecomment-43977",
+    "user": "AlexGhitza"
+}
+```
 
 So I looked at algebraic_scheme.py and noticed that there is a method `X.exclude(Y)` which seems to want to do what you're suggesting.  It's actually broken as it is, and I doubt that it ever worked (no doctests, not used anywhere in the Sage library, and the simplest tests that I thought of didn't work).  So I'm renaming it to `X.complement(Y)` and removing `subscheme_complement()` from both `affine_space.py` and `projective_space.py`.  They are also not used anywhere.
 
 
+
 ---
+
+archive/issue_comments_043978.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-04-03T10:09:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5631",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5631#issuecomment-43978",
+    "user": "AlexGhitza"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2009-04-10 05:28:19
+archive/issue_comments_043979.json:
+```json
+{
+    "body": "Can you rebase it?  Or does it depends on something?  I can't apply it:\n\n```\nteragon:build wstein$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nhg_sage.apply('http://trac.sagemath.org/sage_trac/raw-attachment/ticket/5631/trac_5631.patch')\nsage: hg_sage.apply('http://trac.sagemath.org/sage_trac/raw-attachment/ticket/5631/trac_5631.patch')\nAttempting to load remote file: http://trac.sagemath.org/sage_trac/raw-attachment/ticket/5631/trac_5631.patch\nLoading: [..]\ncd \"/Users/wstein/build/sage-3.4.1.rc1/devel/sage\" && hg status\ncd \"/Users/wstein/build/sage-3.4.1.rc1/devel/sage\" && hg status\ncd \"/Users/wstein/build/sage-3.4.1.rc1/devel/sage\" && hg import   \"/Users/wstein/.sage/temp/teragon.local/86960/tmp_1.patch\"\napplying /Users/wstein/.sage/temp/teragon.local/86960/tmp_1.patch\npatching file sage/schemes/generic/affine_space.py\nHunk #4 FAILED at 208\nHunk #5 succeeded at 243 with fuzz 2 (offset 0 lines).\nHunk #6 FAILED at 264\n2 out of 8 hunks FAILED -- saving rejects to file sage/schemes/generic/affine_space.py.rej\nabort: patch failed to apply\nsage: \n| Sage Version 3.4.1.rc1, Release Date: 2009-04-05                   |\n| Type notebook() for the GUI, and license() for information.        |\n```\n",
+    "created_at": "2009-04-10T05:28:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5631",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5631#issuecomment-43979",
+    "user": "was"
+}
+```
 
 Can you rebase it?  Or does it depends on something?  I can't apply it:
 
@@ -135,25 +239,60 @@ sage:
 
 
 
+
 ---
+
+archive/issue_comments_043980.json:
+```json
+{
+    "body": "Attachment\n\napply instead of the previous patch",
+    "created_at": "2009-04-10T08:23:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5631",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5631#issuecomment-43980",
+    "user": "AlexGhitza"
+}
+```
 
 Attachment
 
 apply instead of the previous patch
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-04-10 08:24:47
+archive/issue_comments_043981.json:
+```json
+{
+    "body": "Yes, there was some interaction with the ticket that fixed dimension issues.\n\nThe new patch applies to 3.4.1.rc1.",
+    "created_at": "2009-04-10T08:24:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5631",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5631#issuecomment-43981",
+    "user": "AlexGhitza"
+}
+```
 
 Yes, there was some interaction with the ticket that fixed dimension issues.
 
 The new patch applies to 3.4.1.rc1.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-12 21:33:05
+archive/issue_comments_043982.json:
+```json
+{
+    "body": "Merged trac_5631_rebased.patch in Sage 3.4.1.rc3.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-12T21:33:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5631",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5631#issuecomment-43982",
+    "user": "mabshoff"
+}
+```
 
 Merged trac_5631_rebased.patch in Sage 3.4.1.rc3.
 
@@ -162,8 +301,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-12 21:33:05
+archive/issue_comments_043983.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-04-12T21:33:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5631",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5631#issuecomment-43983",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

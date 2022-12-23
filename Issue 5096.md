@@ -1,102 +1,258 @@
 # Issue 5096: implement beautiful printing support for pynac
 
-Issue created by migration from https://trac.sagemath.org/ticket/5096
-
-Original creator: was
-
-Original creation time: 2009-01-25 08:14:36
-
+archive/issues_005096.json:
+```json
+{
+    "body": "Assignee: burcin\n\nCC:  mhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5096\n\n",
+    "created_at": "2009-01-25T08:14:36Z",
+    "labels": [
+        "calculus",
+        "major",
+        "enhancement"
+    ],
+    "title": "implement beautiful printing support for pynac",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5096",
+    "user": "was"
+}
+```
 Assignee: burcin
 
 CC:  mhansen
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5096
+
+
+
+
 
 ---
 
-Comment by was created at 2009-01-25 08:15:26
+archive/issue_comments_038860.json:
+```json
+{
+    "body": "See http://sage.math.washington.edu/home/burcin/pynac for the new spkg and patches to the core sage library.",
+    "created_at": "2009-01-25T08:15:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5096",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5096#issuecomment-38860",
+    "user": "was"
+}
+```
 
 See http://sage.math.washington.edu/home/burcin/pynac for the new spkg and patches to the core sage library.
 
 
+
 ---
 
-Comment by was created at 2009-01-25 08:29:59
+archive/issue_comments_038861.json:
+```json
+{
+    "body": "REFEREE REPORT:\n\n* Add a short description at the top docstring for `x.operator?`.\n\n* Make sure the latex docstring actually passes.",
+    "created_at": "2009-01-25T08:29:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5096",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5096#issuecomment-38861",
+    "user": "was"
+}
+```
 
 REFEREE REPORT:
 
- * Add a short description at the top docstring for `x.operator?`.
+* Add a short description at the top docstring for `x.operator?`.
 
- * Make sure the latex docstring actually passes.
+* Make sure the latex docstring actually passes.
+
 
 
 ---
+
+archive/issue_comments_038862.json:
+```json
+{
+    "body": "Attachment\n\nadd .operator() method",
+    "created_at": "2009-01-30T13:54:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5096",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5096#issuecomment-38862",
+    "user": "burcin"
+}
+```
 
 Attachment
 
 add .operator() method
 
 
+
 ---
 
-Comment by burcin created at 2009-01-30 13:55:31
+archive/issue_comments_038863.json:
+```json
+{
+    "body": "allow pynac expressions as arguments to binomial and factorial",
+    "created_at": "2009-01-30T13:55:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5096",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5096#issuecomment-38863",
+    "user": "burcin"
+}
+```
 
 allow pynac expressions as arguments to binomial and factorial
 
 
+
 ---
+
+archive/issue_comments_038864.json:
+```json
+{
+    "body": "Attachment\n\nadd iterator and __getitem__ support to expressions",
+    "created_at": "2009-01-30T13:56:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5096",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5096#issuecomment-38864",
+    "user": "burcin"
+}
+```
 
 Attachment
 
 add iterator and __getitem__ support to expressions
 
 
+
 ---
 
-Comment by burcin created at 2009-01-30 13:56:40
+archive/issue_comments_038865.json:
+```json
+{
+    "body": ".subs() now works with multiple arguments",
+    "created_at": "2009-01-30T13:56:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5096",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5096#issuecomment-38865",
+    "user": "burcin"
+}
+```
 
 .subs() now works with multiple arguments
 
 
+
 ---
+
+archive/issue_comments_038866.json:
+```json
+{
+    "body": "Attachment\n\nfix doctests for printing changes",
+    "created_at": "2009-01-30T13:57:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5096",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5096#issuecomment-38866",
+    "user": "burcin"
+}
+```
 
 Attachment
 
 fix doctests for printing changes
 
 
+
 ---
 
-Comment by burcin created at 2009-01-30 13:57:44
+archive/issue_comments_038867.json:
+```json
+{
+    "body": "add .collect_common_factors() method",
+    "created_at": "2009-01-30T13:57:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5096",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5096#issuecomment-38867",
+    "user": "burcin"
+}
+```
 
 add .collect_common_factors() method
 
 
+
 ---
+
+archive/issue_comments_038868.json:
+```json
+{
+    "body": "Attachment\n\nadd latex printing support, fix is_integer method",
+    "created_at": "2009-01-30T13:58:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5096",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5096#issuecomment-38868",
+    "user": "burcin"
+}
+```
 
 Attachment
 
 add latex printing support, fix is_integer method
 
 
+
 ---
+
+archive/issue_comments_038869.json:
+```json
+{
+    "body": "Attachment\n\ncorrect coercion of symbolic constants",
+    "created_at": "2009-01-30T13:59:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5096",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5096#issuecomment-38869",
+    "user": "burcin"
+}
+```
 
 Attachment
 
 correct coercion of symbolic constants
 
 
+
 ---
 
-Comment by burcin created at 2009-01-30 14:04:48
+archive/issue_comments_038870.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-01-30T14:04:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5096",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5096#issuecomment-38870",
+    "user": "burcin"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by burcin created at 2009-01-30 14:04:48
+archive/issue_comments_038871.json:
+```json
+{
+    "body": "A new version of pynac is available here:\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.2.spkg\n\n\nThe attached patches implement various enhancements to the pynac interface.\n\nThis issue now depends on #5132.",
+    "created_at": "2009-01-30T14:04:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5096",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5096#issuecomment-38871",
+    "user": "burcin"
+}
+```
 
 A new version of pynac is available here:
 
@@ -108,9 +264,20 @@ The attached patches implement various enhancements to the pynac interface.
 This issue now depends on #5132.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-02 06:52:40
+archive/issue_comments_038872.json:
+```json
+{
+    "body": "The spkg looks good, but someone needs to review Burcin's nine patches to the Sage library :)\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-02T06:52:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5096",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5096#issuecomment-38872",
+    "user": "mabshoff"
+}
+```
 
 The spkg looks good, but someone needs to review Burcin's nine patches to the Sage library :)
 
@@ -119,16 +286,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mhansen created at 2009-02-02 07:18:59
+archive/issue_comments_038873.json:
+```json
+{
+    "body": "Assuming the patches apply and pass tests, I think these can go in.  All of the changes are pretty straightforward.",
+    "created_at": "2009-02-02T07:18:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5096",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5096#issuecomment-38873",
+    "user": "mhansen"
+}
+```
 
 Assuming the patches apply and pass tests, I think these can go in.  All of the changes are pretty straightforward.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-02 07:42:25
+archive/issue_comments_038874.json:
+```json
+{
+    "body": "With the new spkg and all nine patches applied I am seeing two doctest failures:\n\n```\n\tsage -t -long devel/sage/sage/calculus/calculus.py # 6 doctests failed\n\tsage -t -long devel/sage/sage/modules/free_module_element.pyx # 1 doctests failed\n```\n\nThey all seem to be of the kind\n\n```\nsage -t -long \"devel/sage/sage/modules/free_module_element.pyx\"\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.3.alpha4/devel/sage/sage/modules/free_module_element.pyx\", line 1637:\n    sage: g(x=3, y=2)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/sage-3.3.alpha4/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-3.3.alpha4/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-3.3.alpha4/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_52[11]>\", line 1, in <module>\n        g(x=Integer(3), y=Integer(2))###line 1637:\n    sage: g(x=3, y=2)\n      File \"free_module_element.pyx\", line 1640, in sage.modules.free_module_element.FreeModuleElement_generic_dense.__call__ (sage/modules/free_module_element.c:13259)\n      File \"/scratch/mabshoff/sage-3.3.alpha4/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 6044, in __call__\n        raise ValueError, \"Expected %s arguments, got %s\"%(len(myvars),len(args))\n    ValueError: Expected 2 arguments, got 0\n**********************************************************************\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-02T07:42:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5096",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5096#issuecomment-38874",
+    "user": "mabshoff"
+}
+```
 
 With the new spkg and all nine patches applied I am seeing two doctest failures:
 
@@ -168,21 +357,56 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by burcin created at 2009-02-02 14:25:09
+archive/issue_comments_038875.json:
+```json
+{
+    "body": "I uploaded a new version of trac_5096-09_callable_expression.patch which reverts the check for the number of arguments of `CallableSymbolicExpression`s. The doctests pass now.",
+    "created_at": "2009-02-02T14:25:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5096",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5096#issuecomment-38875",
+    "user": "burcin"
+}
+```
 
 I uploaded a new version of trac_5096-09_callable_expression.patch which reverts the check for the number of arguments of `CallableSymbolicExpression`s. The doctests pass now.
 
 
+
 ---
 
-Comment by burcin created at 2009-02-02 16:43:09
+archive/issue_comments_038876.json:
+```json
+{
+    "body": "add .function() method to create `CallableSymbolicExpressions`",
+    "created_at": "2009-02-02T16:43:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5096",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5096#issuecomment-38876",
+    "user": "burcin"
+}
+```
 
 add .function() method to create `CallableSymbolicExpressions`
 
 
+
 ---
+
+archive/issue_comments_038877.json:
+```json
+{
+    "body": "Attachment\n\nMerged all nine patches as well as the spkg into Sage 3.3.alpha4.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-02T17:20:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5096",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5096#issuecomment-38877",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -193,8 +417,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-02 17:20:02
+archive/issue_comments_038878.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-02-02T17:20:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5096",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5096#issuecomment-38878",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

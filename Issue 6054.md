@@ -1,11 +1,21 @@
 # Issue 6054: [with patch, needs review] fix display2d with ecl on OSX
 
-Issue created by migration from https://trac.sagemath.org/ticket/6054
-
-Original creator: mhansen
-
-Original creation time: 2009-05-17 06:05:05
-
+archive/issues_006054.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\n\n```\n * ecl causes about two bugs and a half on OSX and probably some other\nsystems. __repr__ seems to cause sync issues, there is some problem\nwith numerical noise and the list of Maxima commands seems to have\ndifferent orderings on different platforms. All this can be fixed with\ntoo many problems. The doctests affected:\n\n32 bit OSX 10.5/Intel:\n\n       sage -t -long \"devel/sage/doc/en/constructions/calculus.rst\"\n       sage -t -long \"devel/sage/doc/en/constructions/\npolynomials.rst\"\n       sage -t -long \"devel/sage/doc/en/tutorial/introduction.rst\"\n       sage -t -long \"devel/sage/doc/en/tutorial/tour_algebra.rst\"\n       sage -t -long \"devel/sage/doc/fr/tutorial/introduction.rst\"\n       sage -t -long \"devel/sage/doc/fr/tutorial/tour_algebra.rst\"\n       sage -t -long \"devel/sage/sage/calculus/calculus.py\"\n       sage -t -long \"devel/sage/sage/calculus/equations.py\"\n       sage -t -long \"devel/sage/sage/calculus/functional.py\"\n       sage -t -long \"devel/sage/sage/calculus/test_sympy.py\"\n       sage -t -long \"devel/sage/sage/calculus/tests.py\"\n       sage -t -long \"devel/sage/sage/calculus/wester.py\"\n       sage -t -long \"devel/sage/sage/interfaces/maxima.py\"\n       sage -t -long \"devel/sage/sage/schemes/elliptic_curves/\nell_generic.py\"\n       sage -t -long \"devel/sage/sage/symbolic/expression.pyx\"\n\nnoise/blankline of \"print $FOO\" type\n\n64 bit OSX 10.5/Intel\n\n       sage -t -long \"devel/sage/doc/en/constructions/calculus.rst\"\n       sage -t -long \"devel/sage/doc/en/constructions/\npolynomials.rst\"\n       sage -t -long \"devel/sage/doc/en/tutorial/introduction.rst\"\n       sage -t -long \"devel/sage/doc/en/tutorial/tour_algebra.rst\"\n       sage -t -long \"devel/sage/doc/fr/tutorial/introduction.rst\"\n       sage -t -long \"devel/sage/doc/fr/tutorial/tour_algebra.rst\"\n       sage -t -long \"devel/sage/sage/calculus/calculus.py\"\n       sage -t -long \"devel/sage/sage/calculus/equations.py\"\n       sage -t -long \"devel/sage/sage/calculus/functional.py\"\n       sage -t -long \"devel/sage/sage/calculus/test_sympy.py\"\n       sage -t -long \"devel/sage/sage/calculus/tests.py\"\n       sage -t -long \"devel/sage/sage/calculus/wester.py\"\n       sage -t -long \"devel/sage/sage/interfaces/maxima.py\"\n       sage -t -long \"devel/sage/sage/schemes/elliptic_curves/\nell_generic.py\"\n       sage -t -long \"devel/sage/sage/symbolic/expression.pyx\"\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6054\n\n",
+    "created_at": "2009-05-17T06:05:05Z",
+    "labels": [
+        "doctest coverage",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch, needs review] fix display2d with ecl on OSX",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6054",
+    "user": "mhansen"
+}
+```
 Assignee: mabshoff
 
 
@@ -60,8 +70,25 @@ ell_generic.py"
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6054
+
+
+
+
 
 ---
+
+archive/issue_comments_048219.json:
+```json
+{
+    "body": "Attachment\n\nThanks. Great patch. But the semicolon removal in the patch\n\n```\n--- a/sage/interfaces/maxima.py Fri May 15 18:39:25 2009 -0700\n+++ b/sage/interfaces/maxima.py Sat May 16 23:30:51 2009 -0700\n@@ -755,7 +755,7 @@\n         if self._expect is None: return\n         r = randrange(2147483647)\n         s = marker + str(r+1)\n-        cmd = ''';sconcat(\"%s\",(%s+1));\\n'''%(marker,r)\n+        cmd = '''sconcat(\"%s\",(%s+1));\\n'''%(marker,r)\n         self._sendstr(cmd)\n         try:\n             self._expect_expr(timeout=0.5)\n```\n\ncauses sync issues on sage.math, so I am taking it out.\n\nCheers,\n\nMichael",
+    "created_at": "2009-05-18T12:44:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6054",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6054#issuecomment-48219",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -88,7 +115,20 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_048220.json:
+```json
+{
+    "body": "Attachment\n\nThe patch I just posted replaces Mike's patch and also fixes the failure in \n\n```\ndevel/sage/doc/en/constructions/calculus.rst\n```\n\nthat Mike did point out he forgot to change when he cut the patch. I committed in Mike's name obviously ;)\n\nCheers,\n\nMichael",
+    "created_at": "2009-05-18T13:16:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6054",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6054#issuecomment-48220",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -105,16 +145,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-18 13:17:08
+archive/issue_comments_048221.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-05-18T13:17:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6054",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6054#issuecomment-48221",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-18 13:17:08
+archive/issue_comments_048222.json:
+```json
+{
+    "body": "Merged in Sage 4.0.rc0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-05-18T13:17:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6054",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6054#issuecomment-48222",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 4.0.rc0.
 

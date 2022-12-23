@@ -1,42 +1,100 @@
 # Issue 9513: Sage 4.4.4 build fails due to mixing prefix/home
 
-Issue created by migration from https://trac.sagemath.org/ticket/9513
-
-Original creator: PolyBoRi
-
-Original creation time: 2010-07-15 21:06:03
-
+archive/issues_009513.json:
+```json
+{
+    "body": "Assignee: AlexGhitza\n\nOn my System (SuSE 11.1 x86_64). The build fails and complains about mixing --prefix and --home when doing `python install` on various packages: \nnetworkx, mercurial (perhaps more to come))\nIn addition in the spkg of scons --prefix is missing completely.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9513\n\n",
+    "created_at": "2010-07-15T21:06:03Z",
+    "labels": [
+        "algebra",
+        "major",
+        "bug"
+    ],
+    "title": "Sage 4.4.4 build fails due to mixing prefix/home",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9513",
+    "user": "PolyBoRi"
+}
+```
 Assignee: AlexGhitza
 
 On my System (SuSE 11.1 x86_64). The build fails and complains about mixing --prefix and --home when doing `python install` on various packages: 
 networkx, mercurial (perhaps more to come))
 In addition in the spkg of scons --prefix is missing completely.
 
+Issue created by migration from https://trac.sagemath.org/ticket/9513
+
+
+
+
 
 ---
 
-Comment by davidloeffler created at 2010-07-29 13:09:35
+archive/issue_comments_091469.json:
+```json
+{
+    "body": "Changing component from algebra to build.",
+    "created_at": "2010-07-29T13:09:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9513#issuecomment-91469",
+    "user": "davidloeffler"
+}
+```
 
 Changing component from algebra to build.
 
 
+
 ---
 
-Comment by davidloeffler created at 2010-07-29 13:09:35
+archive/issue_comments_091470.json:
+```json
+{
+    "body": "This has very little to do with algebra -- please use appropriate values for \"component\" when creating tickets.",
+    "created_at": "2010-07-29T13:09:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9513#issuecomment-91470",
+    "user": "davidloeffler"
+}
+```
 
 This has very little to do with algebra -- please use appropriate values for "component" when creating tickets.
 
 
+
 ---
 
-Comment by davidloeffler created at 2010-07-29 13:09:35
+archive/issue_comments_091471.json:
+```json
+{
+    "body": "Changing assignee from AlexGhitza to GeorgSWeber.",
+    "created_at": "2010-07-29T13:09:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9513#issuecomment-91471",
+    "user": "davidloeffler"
+}
+```
 
 Changing assignee from AlexGhitza to GeorgSWeber.
 
 
+
 ---
 
-Comment by AlexanderDreyer created at 2010-07-29 14:02:40
+archive/issue_comments_091472.json:
+```json
+{
+    "body": "Hello,\nI think this is just the same as #9536. Its Fix also cures this problem.\n\nRegards,\n  Alexander",
+    "created_at": "2010-07-29T14:02:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9513#issuecomment-91472",
+    "user": "AlexanderDreyer"
+}
+```
 
 Hello,
 I think this is just the same as #9536. Its Fix also cures this problem.
@@ -45,15 +103,37 @@ Regards,
   Alexander
 
 
+
 ---
 
-Comment by AlexanderDreyer created at 2010-08-19 06:47:51
+archive/issue_comments_091473.json:
+```json
+{
+    "body": "See #9536.",
+    "created_at": "2010-08-19T06:47:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9513#issuecomment-91473",
+    "user": "AlexanderDreyer"
+}
+```
 
 See #9536.
 
 
+
 ---
 
-Comment by AlexanderDreyer created at 2010-08-19 06:47:51
+archive/issue_comments_091474.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2010-08-19T06:47:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9513#issuecomment-91474",
+    "user": "AlexanderDreyer"
+}
+```
 
 Resolution: duplicate

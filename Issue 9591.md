@@ -1,37 +1,84 @@
 # Issue 9591: Upgrade genus2reduction to pari 2.4.3
 
-Issue created by migration from https://trac.sagemath.org/ticket/9591
-
-Original creator: jdemeyer
-
-Original creation time: 2010-07-24 11:56:21
-
+archive/issues_009591.json:
+```json
+{
+    "body": "Assignee: tbd\n\nAfter upgrading PARI/GP to version 2.4.3 (#9343), genus2reduction no longer compiles properly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9591\n\n",
+    "created_at": "2010-07-24T11:56:21Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "Upgrade genus2reduction to pari 2.4.3",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9591",
+    "user": "jdemeyer"
+}
+```
 Assignee: tbd
 
 After upgrading PARI/GP to version 2.4.3 (#9343), genus2reduction no longer compiles properly.
 
+Issue created by migration from https://trac.sagemath.org/ticket/9591
+
+
+
+
 
 ---
 
-Comment by jdemeyer created at 2010-07-24 12:18:18
+archive/issue_comments_092747.json:
+```json
+{
+    "body": "New version which works with PARI 2.4.3: [http://cage.ugent.be/~jdemeyer/sage/genus2reduction-0.3.p7.spkg](http://cage.ugent.be/~jdemeyer/sage/genus2reduction-0.3.p7.spkg)\n\nAll I had to do was to rename some functions (digging in earlier versions of PARI to see what the undefined functions meant).",
+    "created_at": "2010-07-24T12:18:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9591",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92747",
+    "user": "jdemeyer"
+}
+```
 
 New version which works with PARI 2.4.3: [http://cage.ugent.be/~jdemeyer/sage/genus2reduction-0.3.p7.spkg](http://cage.ugent.be/~jdemeyer/sage/genus2reduction-0.3.p7.spkg)
 
 All I had to do was to rename some functions (digging in earlier versions of PARI to see what the undefined functions meant).
 
 
+
 ---
 
-Comment by fbissey created at 2010-07-24 18:41:19
+archive/issue_comments_092748.json:
+```json
+{
+    "body": "out of curiosity what did you replace \"gi\" with? \n\nI had a hard figuring that one out when I tried to fix this myself.",
+    "created_at": "2010-07-24T18:41:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9591",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92748",
+    "user": "fbissey"
+}
+```
 
 out of curiosity what did you replace "gi" with? 
 
 I had a hard figuring that one out when I tried to fix this myself.
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-07-24 22:28:05
+archive/issue_comments_092749.json:
+```json
+{
+    "body": "Replying to [comment:2 fbissey]:\n> out of curiosity what did you replace \"gi\" with? \n\n> I had a hard figuring that one out when I tried to fix this myself. \n\ngi should be replaced by gen_I().",
+    "created_at": "2010-07-24T22:28:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9591",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92749",
+    "user": "jdemeyer"
+}
+```
 
 Replying to [comment:2 fbissey]:
 > out of curiosity what did you replace "gi" with? 
@@ -41,23 +88,56 @@ Replying to [comment:2 fbissey]:
 gi should be replaced by gen_I().
 
 
+
 ---
 
-Comment by mpatel created at 2010-08-13 01:45:52
+archive/issue_comments_092750.json:
+```json
+{
+    "body": "We may need to coordinate this ticket with #9738, which is about a segfault caused by `SAGE_LOCAL/bin/genus2reduction`.",
+    "created_at": "2010-08-13T01:45:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9591",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92750",
+    "user": "mpatel"
+}
+```
 
 We may need to coordinate this ticket with #9738, which is about a segfault caused by `SAGE_LOCAL/bin/genus2reduction`.
 
 
+
 ---
 
-Comment by mpatel created at 2010-08-13 10:31:24
+archive/issue_comments_092751.json:
+```json
+{
+    "body": "By the way, would it be worth it to rewrite `genus2reduction.c` in Cython and include it in the Sage library?",
+    "created_at": "2010-08-13T10:31:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9591",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92751",
+    "user": "mpatel"
+}
+```
 
 By the way, would it be worth it to rewrite `genus2reduction.c` in Cython and include it in the Sage library?
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-08-13 22:41:04
+archive/issue_comments_092752.json:
+```json
+{
+    "body": "Replying to [comment:7 mpatel]:\n> By the way, would it be worth it to rewrite `genus2reduction.c` in Cython and include it in the Sage library?\n\nI guess it makes sense to include it in the sage library since it's just 1 file.  But I don't think it is very important.",
+    "created_at": "2010-08-13T22:41:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9591",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92752",
+    "user": "jdemeyer"
+}
+```
 
 Replying to [comment:7 mpatel]:
 > By the way, would it be worth it to rewrite `genus2reduction.c` in Cython and include it in the Sage library?
@@ -65,23 +145,56 @@ Replying to [comment:7 mpatel]:
 I guess it makes sense to include it in the sage library since it's just 1 file.  But I don't think it is very important.
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-08-14 20:40:29
+archive/issue_comments_092753.json:
+```json
+{
+    "body": "I merged my patch from #9738. New spkg at [http://cage.ugent.be/~jdemeyer/sage/genus2reduction-0.3.p8.spkg](http://cage.ugent.be/~jdemeyer/sage/genus2reduction-0.3.p8.spkg)",
+    "created_at": "2010-08-14T20:40:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9591",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92753",
+    "user": "jdemeyer"
+}
+```
 
 I merged my patch from #9738. New spkg at [http://cage.ugent.be/~jdemeyer/sage/genus2reduction-0.3.p8.spkg](http://cage.ugent.be/~jdemeyer/sage/genus2reduction-0.3.p8.spkg)
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-08-14 20:40:29
+archive/issue_comments_092754.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-08-14T20:40:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9591",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92754",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-08-14 22:38:51
+archive/issue_comments_092755.json:
+```json
+{
+    "body": "If I'm not mistaken, it should be .p7, .p8, as the one version in sage-4.5.3.alpha0 is a .p6. \n\nBut this fails to build on OpenSolaris 32-bit, despite the previous version working fine. \n\n\n```\ndrkirkby@hawk:~/32/sage-4.5.3.alpha0$ ./sage -i http://cage.ugent.be/~jdemeyer/sage/genus2reduction-0.3.p8.spkg\nInstalling http://cage.ugent.be/~jdemeyer/sage/genus2reduction-0.3.p8.spkg\nCalling sage-spkg on http://cage.ugent.be/~jdemeyer/sage/genus2reduction-0.3.p8.spkg\nWarning: Attempted to overwrite SAGE_ROOT environment variable\ngenus2reduction-0.3.p8\nMachine:\nSunOS hawk 5.11 snv_134 i86pc i386 i86pc\nDeleting directories from past builds of previous/current versions of genus2reduction-0.3.p8\nExtracting package /export/home/drkirkby/32/sage-4.5.3.alpha0/spkg/optional/genus2reduction-0.3.p8.spkg ...\n-rw-r--r--   1 drkirkby staff      53471 Aug 14 23:35 /export/home/drkirkby/32/sage-4.5.3.alpha0/spkg/optional/genus2reduction-0.3.p8.spkg\ngenus2reduction-0.3.p8/\ngenus2reduction-0.3.p8/.hg/\ngenus2reduction-0.3.p8/.hg/requires\ngenus2reduction-0.3.p8/.hg/store/\ngenus2reduction-0.3.p8/.hg/store/data/\ngenus2reduction-0.3.p8/.hg/store/data/src/\ngenus2reduction-0.3.p8/.hg/store/data/src/genus2reduction.c.i\ngenus2reduction-0.3.p8/.hg/store/data/.hgignore.i\ngenus2reduction-0.3.p8/.hg/store/data/dist/\ngenus2reduction-0.3.p8/.hg/store/data/dist/debian/\ngenus2reduction-0.3.p8/.hg/store/data/dist/debian/rules.i\ngenus2reduction-0.3.p8/.hg/store/data/dist/debian/control.i\ngenus2reduction-0.3.p8/.hg/store/data/dist/debian/compat.i\ngenus2reduction-0.3.p8/.hg/store/data/dist/debian/copyright.i\ngenus2reduction-0.3.p8/.hg/store/data/dist/debian/patches/\ngenus2reduction-0.3.p8/.hg/store/data/dist/debian/patches/series.i\ngenus2reduction-0.3.p8/.hg/store/data/dist/debian/patches/makefile.patch.i\ngenus2reduction-0.3.p8/.hg/store/data/dist/debian/control.in.i\ngenus2reduction-0.3.p8/.hg/store/data/dist/debian/changelog.i\ngenus2reduction-0.3.p8/.hg/store/data/spkg-install.i\ngenus2reduction-0.3.p8/.hg/store/data/_s_p_k_g.txt.i\ngenus2reduction-0.3.p8/.hg/store/undo\ngenus2reduction-0.3.p8/.hg/store/00manifest.i\ngenus2reduction-0.3.p8/.hg/store/00changelog.i\ngenus2reduction-0.3.p8/.hg/undo.dirstate\ngenus2reduction-0.3.p8/.hg/dirstate\ngenus2reduction-0.3.p8/.hg/00changelog.i\ngenus2reduction-0.3.p8/.hg/branch\ngenus2reduction-0.3.p8/.hg/undo.branch\ngenus2reduction-0.3.p8/src/\ngenus2reduction-0.3.p8/src/.pc/\ngenus2reduction-0.3.p8/src/.pc/.version\ngenus2reduction-0.3.p8/src/TODO\ngenus2reduction-0.3.p8/src/README\ngenus2reduction-0.3.p8/src/THANKS\ngenus2reduction-0.3.p8/src/genus2reduction.c\ngenus2reduction-0.3.p8/src/gpl-email.txt\ngenus2reduction-0.3.p8/src/SAGE.txt\ngenus2reduction-0.3.p8/src/RELEASE.NOTES\ngenus2reduction-0.3.p8/src/WARNING\ngenus2reduction-0.3.p8/src/INSTALL\ngenus2reduction-0.3.p8/src/CHANGES\ngenus2reduction-0.3.p8/src/COPYING\ngenus2reduction-0.3.p8/dist/\ngenus2reduction-0.3.p8/dist/debian/\ngenus2reduction-0.3.p8/dist/debian/control\ngenus2reduction-0.3.p8/dist/debian/rules\ngenus2reduction-0.3.p8/dist/debian/changelog\ngenus2reduction-0.3.p8/dist/debian/compat\ngenus2reduction-0.3.p8/dist/debian/control.in\ngenus2reduction-0.3.p8/dist/debian/patches/\ngenus2reduction-0.3.p8/dist/debian/patches/makefile.patch\ngenus2reduction-0.3.p8/dist/debian/patches/series\ngenus2reduction-0.3.p8/dist/debian/copyright\ngenus2reduction-0.3.p8/.hgignore\ngenus2reduction-0.3.p8/SPKG.txt\ngenus2reduction-0.3.p8/spkg-install\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS hawk 5.11 snv_134 i86pc i386 i86pc\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nCOLLECT_GCC=gcc\nCOLLECT_LTO_WRAPPER=/usr/local/gcc-4.5.0/libexec/gcc/i386-pc-solaris2.10/4.5.0/lto-wrapper\nTarget: i386-pc-solaris2.10\nConfigured with: ../gcc-4.5.0/configure --prefix=/usr/local/gcc-4.5.0 --build=i386-pc-solaris2.10 --enable-languages=c,c++,fortran --with-gmp=/usr/local/gcc-4.5.0 --with-mpfr=/usr/local/gcc-4.5.0 --disable-nls --enable-checking=release --enable-werror=no --enable-multilib -with-system-zlib --enable-bootstrap --with-gnu-as --with-as=/usr/local/binutils-2.20/bin/as --without-gnu-ld --with-ld=/usr/ccs/bin/ld\nThread model: posix\ngcc version 4.5.0 (GCC) \n****************************************************\nCompiling genus2reduction.c\ngenus2reduction.c:32:1: error: expected identifier or '(' before 'long'\ngenus2reduction.c:32:1: error: expected ')' before '>' token\ngenus2reduction.c:39:1: error: expected identifier or '(' before 'long'\ngenus2reduction.c:39:1: error: expected ')' before '>' token\ngenus2reduction.c: In function 'main':\ngenus2reduction.c:494:27: error: called object 'pol_1' is not a function\ngenus2reduction.c:545:24: error: called object 'pol_1' is not a function\ngenus2reduction.c:618:37: error: called object 'pol_x' is not a function\ngenus2reduction.c:618:55: error: called object 'pol_x' is not a function\ngenus2reduction.c:676:46: error: called object 'pol_x' is not a function\ngenus2reduction.c:692:46: error: called object 'pol_x' is not a function\ngenus2reduction.c:741:44: error: called object 'pol_x' is not a function\ngenus2reduction.c:770:42: error: called object 'pol_x' is not a function\ngenus2reduction.c: In function 'factorpadicnonun':\ngenus2reduction.c:1685:37: error: subscripted value is neither array nor pointer\ngenus2reduction.c:1694:58: error: called object 'pol_x' is not a function\ngenus2reduction.c:1695:54: error: called object 'pol_x' is not a function\ngenus2reduction.c:1695:7: warning: passing argument 1 of 'gsubst' makes pointer from integer without a cast\n/export/home/drkirkby/32/sage-4.5.3.alpha0/local/include/pari/paridecl.h:1138:9: note: expected 'GEN' but argument is of type 'int'\ngenus2reduction.c: In function 'polymini':\ngenus2reduction.c:1719:28: error: called object 'pol_x' is not a function\ngenus2reduction.c:1719:59: error: called object 'pol_x' is not a function\ngenus2reduction.c:1734:46: error: called object 'pol_x' is not a function\ngenus2reduction.c:1753:33: error: called object 'pol_x' is not a function\ngenus2reduction.c:1762:34: error: called object 'pol_x' is not a function\ngenus2reduction.c:1774:42: error: called object 'pol_x' is not a function\ngenus2reduction.c:1783:31: error: called object 'pol_x' is not a function\ngenus2reduction.c:1789:47: error: called object 'pol_x' is not a function\ngenus2reduction.c: In function 'discpart':\ngenus2reduction.c:1836:13: error: called object 'pol_1' is not a function\ngenus2reduction.c: In function 'polyminizi':\ngenus2reduction.c:1874:3: warning: passing argument 2 of 'gadd' makes pointer from integer without a cast\n/export/home/drkirkby/32/sage-4.5.3.alpha0/local/include/pari/paridecl.h:1014:9: note: expected 'GEN' but argument is of type 'int'\ngenus2reduction.c:1877:32: error: called object 'pol_x' is not a function\ngenus2reduction.c:1882:46: error: called object 'pol_x' is not a function\ngenus2reduction.c:1900:38: error: called object 'pol_x' is not a function\ngenus2reduction.c: In function 'polyminizi2':\ngenus2reduction.c:1956:39: error: called object 'pol_x' is not a function\ngenus2reduction.c:1959:68: warning: assignment makes pointer from integer without a cast\ngenus2reduction.c:1969:32: error: called object 'pol_x' is not a function\ngenus2reduction.c:1974:46: error: called object 'pol_x' is not a function\ngenus2reduction.c: In function 'zi2mod':\ngenus2reduction.c:2018:3: warning: passing argument 2 of 'gmul' makes pointer from integer without a cast\n/export/home/drkirkby/32/sage-4.5.3.alpha0/local/include/pari/paridecl.h:1018:9: note: expected 'GEN' but argument is of type 'int'\nError building genus2reduction\n\nreal\t0m0.069s\nuser\t0m0.052s\nsys\t0m0.014s\nsage: An error occurred while installing genus2reduction-0.3.p8\n```\n",
+    "created_at": "2010-08-14T22:38:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9591",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92755",
+    "user": "drkirkby"
+}
+```
 
 If I'm not mistaken, it should be .p7, .p8, as the one version in sage-4.5.3.alpha0 is a .p6. 
 
@@ -228,31 +341,75 @@ sage: An error occurred while installing genus2reduction-0.3.p8
 
 
 
+
 ---
 
-Comment by drkirkby created at 2010-08-14 22:38:51
+archive/issue_comments_092756.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-08-14T22:38:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9591",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92756",
+    "user": "drkirkby"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by fbissey created at 2010-08-15 00:24:26
+archive/issue_comments_092757.json:
+```json
+{
+    "body": "I had that when making the ebuild for gentoo earlier. You are not compiling it\nagainst pari-2.4.xx - that's what the problem is.",
+    "created_at": "2010-08-15T00:24:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9591",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92757",
+    "user": "fbissey"
+}
+```
 
 I had that when making the ebuild for gentoo earlier. You are not compiling it
 against pari-2.4.xx - that's what the problem is.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-08-15 02:22:02
+archive/issue_comments_092758.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-08-15T02:22:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9591",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92758",
+    "user": "drkirkby"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-08-15 02:22:02
+archive/issue_comments_092759.json:
+```json
+{
+    "body": "Replying to [comment:12 fbissey]:\n> I had that when making the ebuild for gentoo earlier. You are not compiling it\n> against pari-2.4.xx - that's what the problem is.\n\nYes, sorry, my mistake. \n\nI've stuck it back to \"needs review\". I dn't feel able to review it, but after installing the pari package, this installs cleanly. \n\n**I've only tested on OpenSolaris x64 as a 32-bit binary** - so I have not tested on Solaris SPARC (e.g. t2)\n\nDave",
+    "created_at": "2010-08-15T02:22:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9591",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92759",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:12 fbissey]:
 > I had that when making the ebuild for gentoo earlier. You are not compiling it
@@ -262,14 +419,25 @@ Yes, sorry, my mistake.
 
 I've stuck it back to "needs review". I dn't feel able to review it, but after installing the pari package, this installs cleanly. 
 
-*I've only tested on OpenSolaris x64 as a 32-bit binary* - so I have not tested on Solaris SPARC (e.g. t2)
+**I've only tested on OpenSolaris x64 as a 32-bit binary** - so I have not tested on Solaris SPARC (e.g. t2)
 
 Dave
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-08-15 06:47:11
+archive/issue_comments_092760.json:
+```json
+{
+    "body": "Replying to [comment:11 drkirkby]:\n> If I'm not mistaken, it should be .p7, .p8, as the one version in sage-4.5.3.alpha0 is a .p6. \n\nWell, there has been a .p7 on this ticket for a while, even if it was never actually distributed by Sage.  In my opinion it makes sense to call this .p8 then.",
+    "created_at": "2010-08-15T06:47:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9591",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92760",
+    "user": "jdemeyer"
+}
+```
 
 Replying to [comment:11 drkirkby]:
 > If I'm not mistaken, it should be .p7, .p8, as the one version in sage-4.5.3.alpha0 is a .p6. 
@@ -277,9 +445,20 @@ Replying to [comment:11 drkirkby]:
 Well, there has been a .p7 on this ticket for a while, even if it was never actually distributed by Sage.  In my opinion it makes sense to call this .p8 then.
 
 
+
 ---
 
-Comment by fbissey created at 2010-08-15 07:20:19
+archive/issue_comments_092761.json:
+```json
+{
+    "body": "Replying to [comment:14 jdemeyer]:\n> Replying to [comment:11 drkirkby]:\n> > If I'm not mistaken, it should be .p7, .p8, as the one version in sage-4.5.3.alpha0 is a .p6. \n> \n> Well, there has been a .p7 on this ticket for a while, even if it was never actually distributed by Sage.  In my opinion it makes sense to call this .p8 then.\n\nI think Dave is right strictly speaking, but having .p8 means an easier time for people working on the pari issue to upgrade it. And now that I have updated my own package (after I had created a .p7 less than 12 hours beforehand) for Gentoo I'd like it to stay at that number - if possible.",
+    "created_at": "2010-08-15T07:20:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9591",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92761",
+    "user": "fbissey"
+}
+```
 
 Replying to [comment:14 jdemeyer]:
 > Replying to [comment:11 drkirkby]:
@@ -290,32 +469,78 @@ Replying to [comment:14 jdemeyer]:
 I think Dave is right strictly speaking, but having .p8 means an easier time for people working on the pari issue to upgrade it. And now that I have updated my own package (after I had created a .p7 less than 12 hours beforehand) for Gentoo I'd like it to stay at that number - if possible.
 
 
+
 ---
 
-Comment by mpatel created at 2010-08-19 11:13:49
+archive/issue_comments_092762.json:
+```json
+{
+    "body": "Changing priority from major to blocker.",
+    "created_at": "2010-08-19T11:13:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9591",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92762",
+    "user": "mpatel"
+}
+```
 
 Changing priority from major to blocker.
 
 
+
 ---
+
+archive/issue_comments_092763.json:
+```json
+{
+    "body": "Attachment\n\nComplete spkg patch (for reference)",
+    "created_at": "2010-08-21T12:44:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9591",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92763",
+    "user": "jdemeyer"
+}
+```
 
 Attachment
 
 Complete spkg patch (for reference)
 
 
+
 ---
 
-Comment by mpatel created at 2010-08-31 00:39:49
+archive/issue_comments_092764.json:
+```json
+{
+    "body": "I can give a positive review to the \"EOF\" part of [attachment:ticket:9738:9738_genus2reduction_init_opts.patch Jeroen's patch] from #9738.  With the prerequisites given at [NewPARI](http://wiki.sagemath.org/NewPARI), I get no dumped cores on bsd, redhawk, sage, and t2.math.\n\nUnfortunately, I'm not qualified to review the rest of the patch, since I'm not familiar with the mathematics or PARI's API.",
+    "created_at": "2010-08-31T00:39:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9591",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92764",
+    "user": "mpatel"
+}
+```
 
 I can give a positive review to the "EOF" part of [attachment:ticket:9738:9738_genus2reduction_init_opts.patch Jeroen's patch] from #9738.  With the prerequisites given at [NewPARI](http://wiki.sagemath.org/NewPARI), I get no dumped cores on bsd, redhawk, sage, and t2.math.
 
 Unfortunately, I'm not qualified to review the rest of the patch, since I'm not familiar with the mathematics or PARI's API.
 
 
+
 ---
 
-Comment by mpatel created at 2010-08-31 00:50:01
+archive/issue_comments_092765.json:
+```json
+{
+    "body": "Replying to [comment:18 mpatel]:\n> I can give a positive review to the \"EOF\" part of [attachment:ticket:9738:9738_genus2reduction_init_opts.patch Jeroen's patch] from #9738.  With the prerequisites given at [NewPARI](http://wiki.sagemath.org/NewPARI), I get no dumped cores on bsd, redhawk, sage, and t2.math.\n\nSpecifically, I get no dumped cores from running `genus2reduction` and testing `sage/interfaces/genus2reduction.py`.  There are still unrelated cores stemming probably from the doctesting system (cf. [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/0239f712a39fce4a/ba4e7b77e4de1b10?#ba4e7b77e4de1b10), #9739).",
+    "created_at": "2010-08-31T00:50:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9591",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92765",
+    "user": "mpatel"
+}
+```
 
 Replying to [comment:18 mpatel]:
 > I can give a positive review to the "EOF" part of [attachment:ticket:9738:9738_genus2reduction_init_opts.patch Jeroen's patch] from #9738.  With the prerequisites given at [NewPARI](http://wiki.sagemath.org/NewPARI), I get no dumped cores on bsd, redhawk, sage, and t2.math.
@@ -323,82 +548,194 @@ Replying to [comment:18 mpatel]:
 Specifically, I get no dumped cores from running `genus2reduction` and testing `sage/interfaces/genus2reduction.py`.  There are still unrelated cores stemming probably from the doctesting system (cf. [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/0239f712a39fce4a/ba4e7b77e4de1b10?#ba4e7b77e4de1b10), #9739).
 
 
+
 ---
 
-Comment by fbissey created at 2010-08-31 02:27:47
+archive/issue_comments_092766.json:
+```json
+{
+    "body": "While I wouldn't claim to be a pari specialist, I had a look at updating genus2reduction myself. I didn't fell confident about giving a positive review because I don't understand the \"EOF\" part but I am willing to give a positive review to the rest.",
+    "created_at": "2010-08-31T02:27:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9591",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92766",
+    "user": "fbissey"
+}
+```
 
 While I wouldn't claim to be a pari specialist, I had a look at updating genus2reduction myself. I didn't fell confident about giving a positive review because I don't understand the "EOF" part but I am willing to give a positive review to the rest.
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-02 10:22:26
+archive/issue_comments_092767.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-09-02T10:22:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9591",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92767",
+    "user": "mpatel"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by leif created at 2010-09-03 23:15:39
+archive/issue_comments_092768.json:
+```json
+{
+    "body": "The `dist/` directory should be removed (see #5903).\n\nThen I can revert it to \"positive review\"... :)",
+    "created_at": "2010-09-03T23:15:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9591",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92768",
+    "user": "leif"
+}
+```
 
 The `dist/` directory should be removed (see #5903).
 
 Then I can revert it to "positive review"... :)
 
 
+
 ---
 
-Comment by leif created at 2010-09-03 23:15:39
+archive/issue_comments_092769.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_work.",
+    "created_at": "2010-09-03T23:15:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9591",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92769",
+    "user": "leif"
+}
+```
 
 Changing status from positive_review to needs_work.
 
 
+
 ---
+
+archive/issue_comments_092770.json:
+```json
+{
+    "body": "Attachment\n\nRemove `dist/`.  spkg patch.  Apply on top of \"complete\" patch.",
+    "created_at": "2010-09-04T07:22:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9591",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92770",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
 Remove `dist/`.  spkg patch.  Apply on top of "complete" patch.
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-04 07:24:42
+archive/issue_comments_092771.json:
+```json
+{
+    "body": "I've a put an updated package at\n\n http://sage.math.washington.edu/home/mpatel/trac/9591/genus2reduction-0.3.p8.spkg",
+    "created_at": "2010-09-04T07:24:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9591",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92771",
+    "user": "mpatel"
+}
+```
 
 I've a put an updated package at
 
  http://sage.math.washington.edu/home/mpatel/trac/9591/genus2reduction-0.3.p8.spkg
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-04 07:24:42
+archive/issue_comments_092772.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-09-04T07:24:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9591",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92772",
+    "user": "mpatel"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by leif created at 2010-09-04 09:17:25
+archive/issue_comments_092773.json:
+```json
+{
+    "body": "Ok, I've really looked at the new spkg. ;-)\n\nThe changelog in `SPKG.txt` cites #9738 for the removal, but never mind. (The commit message is correct.)\n\nReverting to **\"positive review\"**.\n\nMitesh, could you update the link on the NewPARI wiki page?",
+    "created_at": "2010-09-04T09:17:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9591",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92773",
+    "user": "leif"
+}
+```
 
 Ok, I've really looked at the new spkg. ;-)
 
 The changelog in `SPKG.txt` cites #9738 for the removal, but never mind. (The commit message is correct.)
 
-Reverting to *"positive review"*.
+Reverting to **"positive review"**.
 
 Mitesh, could you update the link on the NewPARI wiki page?
 
 
+
 ---
 
-Comment by leif created at 2010-09-04 09:17:25
+archive/issue_comments_092774.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-09-04T09:17:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9591",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92774",
+    "user": "leif"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-04 09:22:45
+archive/issue_comments_092775.json:
+```json
+{
+    "body": "Replying to [comment:24 leif]:\n> Mitesh, could you update the link on the NewPARI wiki page?\n\nDone.",
+    "created_at": "2010-09-04T09:22:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9591",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92775",
+    "user": "mpatel"
+}
+```
 
 Replying to [comment:24 leif]:
 > Mitesh, could you update the link on the NewPARI wiki page?
@@ -406,15 +743,39 @@ Replying to [comment:24 leif]:
 Done.
 
 
+
 ---
+
+archive/issue_comments_092776.json:
+```json
+{
+    "body": "Attachment\n\nNew complete patch including trac_9591-g2red_remove_dist.patch",
+    "created_at": "2010-09-05T13:36:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9591",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92776",
+    "user": "jdemeyer"
+}
+```
 
 Attachment
 
 New complete patch including trac_9591-g2red_remove_dist.patch
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-10 10:39:31
+archive/issue_comments_092777.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-09-10T10:39:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9591",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9591#issuecomment-92777",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed

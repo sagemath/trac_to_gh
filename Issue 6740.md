@@ -1,42 +1,102 @@
 # Issue 6740: upgrade mpmath to 0.13
 
-Issue created by migration from https://trac.sagemath.org/ticket/6740
-
-Original creator: mvngu
-
-Original creation time: 2009-08-13 19:24:19
-
+archive/issues_006740.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nCC:  fredrik.johansson\n\nThe latest version of mpmath is now 0.13. Upgrade Sage to use that latest version.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6740\n\n",
+    "created_at": "2009-08-13T19:24:19Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "enhancement"
+    ],
+    "title": "upgrade mpmath to 0.13",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6740",
+    "user": "mvngu"
+}
+```
 Assignee: mabshoff
 
 CC:  fredrik.johansson
 
 The latest version of mpmath is now 0.13. Upgrade Sage to use that latest version.
 
+Issue created by migration from https://trac.sagemath.org/ticket/6740
+
+
+
+
 
 ---
+
+archive/issue_comments_055225.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-08-14T00:35:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6740",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6740#issuecomment-55225",
+    "user": "fredrik.johansson"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by fredrik.johansson created at 2009-08-14 00:36:45
+archive/issue_comments_055226.json:
+```json
+{
+    "body": "I took the 0.12 spkg and updated the files in it. Let's see if this works!",
+    "created_at": "2009-08-14T00:36:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6740",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6740#issuecomment-55226",
+    "user": "fredrik.johansson"
+}
+```
 
 I took the 0.12 spkg and updated the files in it. Let's see if this works!
 
 
+
 ---
 
-Comment by mhansen created at 2009-09-01 23:11:11
+archive/issue_comments_055227.json:
+```json
+{
+    "body": "I just removed a temporary file from the spkg and checked in Fredrik's update to SPKG.txt into the hg repo.  Other than that, looks good.\n\nUse the spkg at http://sage.math.washington.edu/home/mhansen/mpmath-0.13.spkg",
+    "created_at": "2009-09-01T23:11:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6740",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6740#issuecomment-55227",
+    "user": "mhansen"
+}
+```
 
 I just removed a temporary file from the spkg and checked in Fredrik's update to SPKG.txt into the hg repo.  Other than that, looks good.
 
 Use the spkg at http://sage.math.washington.edu/home/mhansen/mpmath-0.13.spkg
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-02 09:44:53
+archive/issue_comments_055228.json:
+```json
+{
+    "body": "Merged `mpmath-0.13.spkg` in the standard packages repository. Running the test suite results in the following failures:\n\n```\nsage -t -long devel/sage-main/sage/server/simple/twist.py\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1/devel/sage-main/sage/server/simple/twist.py\", line 51:\n    sage: print get_url('http://localhost:%s/simple/compute?session=%s&code=2*2' % (port, session))\nExpected:\n    {\n    \"status\": \"done\",\n    \"files\": [],\n    \"cell_id\": 1\n    }\n    ___S_A_G_E___\n    4\nGot:\n    {\n    \"status\": \"computing\",\n    \"files\": [],\n    \"cell_id\": 1\n    }\n    ___S_A_G_E___\n    <BLANKLINE>\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1/devel/sage-main/sage/server/simple/twist.py\", line 95:\n    sage: print get_url('http://localhost:%s/simple/compute?session=%s&code=%s' % (port, session, urllib.quote(code)))\nExpected:\n    {\n    \"status\": \"done\",\n    \"files\": [\"a.txt\"],\n    \"cell_id\": 3\n    }\n    ___S_A_G_E___\nGot:\n    {\n    \"status\": \"done\",\n    \"files\": [],\n    \"cell_id\": 3\n    }\n    ___S_A_G_E___\n    <BLANKLINE>\n    Traceback (most recent call last):    h = open('a.txt', 'w'); h.write('test'); h.close()\n    NameError: name 'os' is not defined\n    THERE WAS AN ERROR LOADING THE SAGE LIBRARIES.  Try starting Sage from the command line to see what the error is.\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1/devel/sage-main/sage/server/simple/twist.py\", line 103:\n    sage: print get_url('http://localhost:%s/simple/file?session=%s&cell=3&file=a.txt' % (port, session))\nExpected:\n    test\nGot:\n    No such file a.txt in cell 3.\n**********************************************************************\n1 items had failures:\n   3 of  24 in __main__.example_0\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1/tmp/.doctest_twist.py\n\t [23.3 s]\n```\n\nThese have nothing to do to with the updated mpmath spkg. They are known failures and have been reported in Sage 4.1.1.",
+    "created_at": "2009-09-02T09:44:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6740",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6740#issuecomment-55228",
+    "user": "mvngu"
+}
+```
 
 Merged `mpmath-0.13.spkg` in the standard packages repository. Running the test suite results in the following failures:
 
@@ -100,8 +160,19 @@ For whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1/tmp/.docte
 These have nothing to do to with the updated mpmath spkg. They are known failures and have been reported in Sage 4.1.1.
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-02 09:44:53
+archive/issue_comments_055229.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-09-02T09:44:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6740",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6740#issuecomment-55229",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

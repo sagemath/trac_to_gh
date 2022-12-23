@@ -1,11 +1,21 @@
 # Issue 8931: desolve
 
-Issue created by migration from https://trac.sagemath.org/ticket/8931
-
-Original creator: descopau
-
-Original creation time: 2010-05-08 07:41:36
-
+archive/issues_008931.json:
+```json
+{
+    "body": "Assignee: burcin\n\nCC:  robert.marik kcrisman\n\nKeywords: desolve\n\nI want to solve f''/f=k with k in R\n\n\n\n```\nsage:  x=var('x')\nsage: f=function('f',x)\nsage: k=var('k')\nsage: assume(k>0)\nsage:  desolve(diff(f(x),x,2)/f(x)==k,[f,x]) \n```\n\n\nand sage keeps answering :\n\n\n\n```\nTypeError                                 Traceback (most recent call last)\n\n/home/moi/<ipython console> in <module>()\n\n/home/moi/sage-4.4.1-linux-32bit-ubuntu_9.10-i686-Linux/local/lib/python2.6/site-packages/sage/calculus/desolvers.pyc in desolve(de, dvar, ics, ivar, show_method, contrib_ode)\n    338     # we produce string like this\n    339     # ode2('diff(y,x,2)+2*'diff(y,x,1)+y-cos(x),y(x),x)\n--> 340     soln = maxima(cmd)\n    341 \n    342     if str(soln).strip() == 'false':\n\n/home/moi/sage-4.4.1-linux-32bit-ubuntu_9.10-i686-Linux/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __call__(self, x, name)\n   1030             \n   1031         if isinstance(x, basestring):\n-> 1032             return cls(self, x, name=name)\n   1033         try:\n   1034             return self._coerce_from_special_method(x)\n\n/home/moi/sage-4.4.1-linux-32bit-ubuntu_9.10-i686-Linux/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __init__(self, parent, value, is_name, name)\n   1449             except (TypeError, KeyboardInterrupt, RuntimeError, ValueError), x:\n   1450                 self._session_number = -1\n-> 1451                 raise TypeError, x\n   1452         self._session_number = parent._session_number\n   1453 \n\nTypeError: Computation failed since Maxima requested additional constraints (try the command 'assume(k>0)' before integral or limit evaluation, for example):\nIs  k  positive, negative, or zero?\n```\n\n\nso I tried :\n\n\n\n\n\n```\nsage:  desolve(diff(f(x),x,2)/f(x)==k^2+1,[f,x])\n```\n\n\nand I got :\n\n\n```\nk1*e^(I*sqrt(-k^2 - 1)*x) + k2*e^(-I*sqrt(-k^2 - 1)*x)\n```\n\n\n!!\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8931\n\n",
+    "created_at": "2010-05-08T07:41:36Z",
+    "labels": [
+        "symbolics",
+        "major",
+        "bug"
+    ],
+    "title": "desolve",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8931",
+    "user": "descopau"
+}
+```
 Assignee: burcin
 
 CC:  robert.marik kcrisman
@@ -83,10 +93,25 @@ k1*e^(I*sqrt(-k^2 - 1)*x) + k2*e^(-I*sqrt(-k^2 - 1)*x)
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8931
+
+
+
+
 
 ---
 
-Comment by monkey created at 2010-08-14 00:46:30
+archive/issue_comments_082257.json:
+```json
+{
+    "body": "I have the same problem solving a different equation:\n\n```\nvar('L1 L2 C1 C2 L3 C3 t')\nforget()\nassume(L2 > 0)\nassume(L3 > 0)\nassume(C2 > 0)\nassume(C3 > 0)\nj = function('j',t)\neqn = diff(v_i,t) - L2*diff(j,t,2) - j/C2 == L3*diff(j,t,2) + j/C3\ndesolve(eqn,[j,t],[0,1])\n```\n\n\nreturns\n\n\n```\nTraceback (click to the left of this block for traceback)\n...\nIs  C2*C3*(C3+C2)*(L3+L2)  positive, negative, or zero?\n```\n\n\nThe only quick workaround I have found is to specify the values of the constants, but I really need them to be symbolic.  The best I can do is use primes for values of constants and after several such sets you can get a picture of how the constants are related to the numbers in the solution terms, but it's an ass-ache.\n\nI think the best solution would be to have an optional argument to desolve which answers the question posed if there are not sufficient assumptions/conditions to already determine the correct answer.\n\nReally appreciate the great work so far guys! :D",
+    "created_at": "2010-08-14T00:46:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8931",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8931#issuecomment-82257",
+    "user": "monkey"
+}
+```
 
 I have the same problem solving a different equation:
 
@@ -120,9 +145,20 @@ I think the best solution would be to have an optional argument to desolve which
 Really appreciate the great work so far guys! :D
 
 
+
 ---
 
-Comment by robert.marik created at 2010-09-21 20:15:38
+archive/issue_comments_082258.json:
+```json
+{
+    "body": "with #9835\n\n```\nmarik@um-bc107:/opt/sage$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: x=var('x'); f=function('f',x); k=var('k'); assume(k>0)\nsage: desolve(diff(f,x,2)/f==k,f,ivar=x)\nk1*e^(sqrt(k)*x) + k2*e^(-sqrt(k)*x)\n```\n",
+    "created_at": "2010-09-21T20:15:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8931",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8931#issuecomment-82258",
+    "user": "robert.marik"
+}
+```
 
 with #9835
 
@@ -137,43 +173,111 @@ k1*e^(sqrt(k)*x) + k2*e^(-sqrt(k)*x)
 
 
 
+
 ---
+
+archive/issue_comments_082259.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-12-09T02:15:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8931",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8931#issuecomment-82259",
+    "user": "fstan"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by fstan created at 2010-12-09 02:17:10
+archive/issue_comments_082260.json:
+```json
+{
+    "body": "The patch adds a doc test for this issue.",
+    "created_at": "2010-12-09T02:17:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8931",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8931#issuecomment-82260",
+    "user": "fstan"
+}
+```
 
 The patch adds a doc test for this issue.
 
 
+
 ---
 
-Comment by fstan created at 2010-12-09 02:17:10
+archive/issue_comments_082261.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-12-09T02:17:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8931",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8931#issuecomment-82261",
+    "user": "fstan"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by kcrisman created at 2011-03-12 05:33:45
+archive/issue_comments_082262.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2011-03-12T05:33:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8931",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8931#issuecomment-82262",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by kcrisman created at 2011-03-12 05:33:45
+archive/issue_comments_082263.json:
+```json
+{
+    "body": "Applies cleanly to 4.7.alpha1, passes tests, clearly fixes the issue, looks good in the documentation.  Positive review.\n\nNot sure what to do on the author; fstan is the person I have put, as the person who posted the patch, but before it had G. Cannon.  Unless fstan comments on this, let's leave her as the author.",
+    "created_at": "2011-03-12T05:33:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8931",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8931#issuecomment-82263",
+    "user": "kcrisman"
+}
+```
 
 Applies cleanly to 4.7.alpha1, passes tests, clearly fixes the issue, looks good in the documentation.  Positive review.
 
 Not sure what to do on the author; fstan is the person I have put, as the person who posted the patch, but before it had G. Cannon.  Unless fstan comments on this, let's leave her as the author.
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-04-05 15:56:38
+archive/issue_comments_082264.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2011-04-05T15:56:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8931",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8931#issuecomment-82264",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: fixed

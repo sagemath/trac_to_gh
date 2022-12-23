@@ -1,11 +1,21 @@
 # Issue 8253: search_src (etc.) bug
 
-Issue created by migration from https://trac.sagemath.org/ticket/8253
-
-Original creator: jhpalmieri
-
-Original creation time: 2010-02-12 22:22:10
-
+archive/issues_008253.json:
+```json
+{
+    "body": "Assignee: tbd\n\nIn Sage 4.3.2:\n\n```\nsearch_src('is', 'prime', 'field', ignore_case=True)\nTraceback (most recent call last):\n...\nTypeError: search() takes at most 3 arguments (4 given)\n```\n\nThis is because of a bug in sage.misc.sagedoc: when calling re.search, flags like re.MULTILINE and re.IGNORECASE should be combined using bit-wise or, not by passing them as separate entries in a list.  The attached patch fixes this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8253\n\n",
+    "created_at": "2010-02-12T22:22:10Z",
+    "labels": [
+        "misc",
+        "major",
+        "bug"
+    ],
+    "title": "search_src (etc.) bug",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8253",
+    "user": "jhpalmieri"
+}
+```
 Assignee: tbd
 
 In Sage 4.3.2:
@@ -19,54 +29,150 @@ TypeError: search() takes at most 3 arguments (4 given)
 
 This is because of a bug in sage.misc.sagedoc: when calling re.search, flags like re.MULTILINE and re.IGNORECASE should be combined using bit-wise or, not by passing them as separate entries in a list.  The attached patch fixes this.
 
+Issue created by migration from https://trac.sagemath.org/ticket/8253
+
+
+
+
 
 ---
+
+archive/issue_comments_073012.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-02-12T22:22:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8253",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8253#issuecomment-73012",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-16 21:38:16
+archive/issue_comments_073013.json:
+```json
+{
+    "body": "I noticed another `*flags` nearby.  Should we make it `flags`?",
+    "created_at": "2010-02-16T21:38:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8253",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8253#issuecomment-73013",
+    "user": "mpatel"
+}
+```
 
 I noticed another `*flags` nearby.  Should we make it `flags`?
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-02-17 20:57:35
+archive/issue_comments_073014.json:
+```json
+{
+    "body": "Yes.  Here's a new patch, rebased against 4.3.3.alpha0.",
+    "created_at": "2010-02-17T20:57:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8253",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8253#issuecomment-73014",
+    "user": "jhpalmieri"
+}
+```
 
 Yes.  Here's a new patch, rebased against 4.3.3.alpha0.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-02-17 20:57:35
+archive/issue_comments_073015.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-02-17T20:57:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8253",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8253#issuecomment-73015",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_073016.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-02-17T20:58:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8253",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8253#issuecomment-73016",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-18 02:00:36
+archive/issue_comments_073017.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-02-18T02:00:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8253",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8253#issuecomment-73017",
+    "user": "mpatel"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mvngu created at 2010-02-18 22:05:09
+archive/issue_comments_073018.json:
+```json
+{
+    "body": "Merged [trac_8253-search.v2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8253/trac_8253-search.v2.patch).",
+    "created_at": "2010-02-18T22:05:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8253",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8253#issuecomment-73018",
+    "user": "mvngu"
+}
+```
 
 Merged [trac_8253-search.v2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8253/trac_8253-search.v2.patch).
 
 
+
 ---
 
-Comment by mvngu created at 2010-02-18 22:05:09
+archive/issue_comments_073019.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-02-18T22:05:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8253",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8253#issuecomment-73019",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

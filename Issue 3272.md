@@ -1,11 +1,21 @@
 # Issue 3272: [with patch, needs review] Bug in sparse polynomials over finite fields
 
-Issue created by migration from https://trac.sagemath.org/ticket/3272
-
-Original creator: craigcitro
-
-Original creation time: 2008-05-22 21:49:12
-
+archive/issues_003272.json:
+```json
+{
+    "body": "Assignee: craigcitro\n\nSomeone reported the following bug on `sage-support`:\n\n\n```\nsage: A.<T> = PolynomialRing(Integers(5),sparse=True)\nsage: f = T^2+1\nsage: B = A.quo(f)\nsage: C.<s> = PolynomialRing(B)\nUnivariate Quotient Polynomial Ring in Tbar over Ring of integers\nmodulo 5 with modulus T^2 + 1\nTraceback (most recent call last):\n...\nTypeError: gen must be of PARI type t_INT\n```\n\n\nThe problem was two-fold: `polynomial_element_generic.__init__` had two `elif` clauses in the wrong order (so that the code for pari `gen`s was never run), and further the code for pari `gen`s was wrong. This patch fixes both, and adds a doctest.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3272\n\n",
+    "created_at": "2008-05-22T21:49:12Z",
+    "labels": [
+        "algebra",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch, needs review] Bug in sparse polynomials over finite fields",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3272",
+    "user": "craigcitro"
+}
+```
 Assignee: craigcitro
 
 Someone reported the following bug on `sage-support`:
@@ -28,23 +38,62 @@ The problem was two-fold: `polynomial_element_generic.__init__` had two `elif` c
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3272
+
+
+
+
 
 ---
+
+archive/issue_comments_022642.json:
+```json
+{
+    "body": "Attachment\n\nLooks good to me.",
+    "created_at": "2008-05-23T06:55:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3272",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3272#issuecomment-22642",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 Looks good to me.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-23 07:05:08
+archive/issue_comments_022643.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-05-23T07:05:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3272",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3272#issuecomment-22643",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-23 07:05:08
+archive/issue_comments_022644.json:
+```json
+{
+    "body": "Merged in Sage 3.0.2.rc0",
+    "created_at": "2008-05-23T07:05:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3272",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3272#issuecomment-22644",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.2.rc0

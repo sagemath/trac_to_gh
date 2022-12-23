@@ -1,25 +1,61 @@
 # Issue 6220: create symbolic arg
 
-Issue created by migration from https://trac.sagemath.org/ticket/6220
-
-Original creator: robertwb
-
-Original creation time: 2009-06-05 03:58:51
-
+archive/issues_006220.json:
+```json
+{
+    "body": "Assignee: burcin\n\nWe have a symbolic absolute value, we should have a symbolic argument as well. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6220\n\n",
+    "created_at": "2009-06-05T03:58:51Z",
+    "labels": [
+        "calculus",
+        "major",
+        "bug"
+    ],
+    "title": "create symbolic arg",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6220",
+    "user": "robertwb"
+}
+```
 Assignee: burcin
 
 We have a symbolic absolute value, we should have a symbolic argument as well. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6220
+
+
+
+
 
 ---
 
-Comment by burcin created at 2010-05-27 10:26:29
+archive/issue_comments_049673.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2010-05-27T10:26:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6220",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6220#issuecomment-49673",
+    "user": "burcin"
+}
+```
 
 Resolution: duplicate
 
 
+
 ---
 
-Comment by burcin created at 2010-05-27 10:26:29
+archive/issue_comments_049674.json:
+```json
+{
+    "body": "This is a duplicate of #4498.",
+    "created_at": "2010-05-27T10:26:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6220",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6220#issuecomment-49674",
+    "user": "burcin"
+}
+```
 
 This is a duplicate of #4498.

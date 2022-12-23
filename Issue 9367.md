@@ -1,11 +1,21 @@
 # Issue 9367: S_unit return type is incorrect,
 
-Issue created by migration from https://trac.sagemath.org/ticket/9367
-
-Original creator: syazdani
-
-Original creation time: 2010-06-28 21:54:48
-
+archive/issues_009367.json:
+```json
+{
+    "body": "Assignee: davidloeffler\n\nCC:  mjo\n\nKeywords: S_units\n\nHere is a sample error:\n\n```\nsage: _.<x>=QQ[]\nsage: L.<alpha>=NumberField(x^3+x+1)\nsage: p=L.S_units([ L.ideal(7) ] )\nsage: p[0].parent()\nRational Field\n```\n\nThe correct output should be\n\n```\nNumber Field in alpha with defining polynomial x^3 + x + 1\n```\n\n\nThe attached patch solves this problem.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9367\n\n",
+    "created_at": "2010-06-28T21:54:48Z",
+    "labels": [
+        "number fields",
+        "major",
+        "bug"
+    ],
+    "title": "S_unit return type is incorrect,",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9367",
+    "user": "syazdani"
+}
+```
 Assignee: davidloeffler
 
 CC:  mjo
@@ -31,60 +41,156 @@ Number Field in alpha with defining polynomial x^3 + x + 1
 
 The attached patch solves this problem.
 
+Issue created by migration from https://trac.sagemath.org/ticket/9367
+
+
+
+
 
 ---
+
+archive/issue_comments_088972.json:
+```json
+{
+    "body": "Attachment\n\nFixes the return type.",
+    "created_at": "2010-06-28T22:08:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9367",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9367#issuecomment-88972",
+    "user": "syazdani"
+}
+```
 
 Attachment
 
 Fixes the return type.
 
 
+
 ---
 
-Comment by mjo created at 2012-01-16 04:20:50
+archive/issue_comments_088973.json:
+```json
+{
+    "body": "Add a doctest for the correct behavior.",
+    "created_at": "2012-01-16T04:20:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9367",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9367#issuecomment-88973",
+    "user": "mjo"
+}
+```
 
 Add a doctest for the correct behavior.
 
 
+
 ---
+
+archive/issue_comments_088974.json:
+```json
+{
+    "body": "Attachment\n\nIt looks like someone beat you to it! I get the correct answer with 4.8.alpha6, so I've added a doctest for it.",
+    "created_at": "2012-01-16T04:22:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9367",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9367#issuecomment-88974",
+    "user": "mjo"
+}
+```
 
 Attachment
 
 It looks like someone beat you to it! I get the correct answer with 4.8.alpha6, so I've added a doctest for it.
 
 
+
 ---
 
-Comment by mjo created at 2012-01-16 04:22:20
+archive/issue_comments_088975.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2012-01-16T04:22:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9367",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9367#issuecomment-88975",
+    "user": "mjo"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by davidloeffler created at 2012-03-12 20:10:42
+archive/issue_comments_088976.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2012-03-12T20:10:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9367",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9367#issuecomment-88976",
+    "user": "davidloeffler"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by davidloeffler created at 2012-03-12 20:10:42
+archive/issue_comments_088977.json:
+```json
+{
+    "body": "Apply sage-trac_9367.patch\n\n(for patchbot).",
+    "created_at": "2012-03-12T20:10:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9367",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9367#issuecomment-88977",
+    "user": "davidloeffler"
+}
+```
 
 Apply sage-trac_9367.patch
 
 (for patchbot).
 
 
+
 ---
 
-Comment by davidloeffler created at 2012-03-12 20:10:42
+archive/issue_comments_088978.json:
+```json
+{
+    "body": "Changing priority from major to minor.",
+    "created_at": "2012-03-12T20:10:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9367",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9367#issuecomment-88978",
+    "user": "davidloeffler"
+}
+```
 
 Changing priority from major to minor.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-03-21 22:03:49
+archive/issue_comments_088979.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2012-03-21T22:03:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9367",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9367#issuecomment-88979",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: fixed

@@ -1,35 +1,82 @@
 # Issue 3357: [with patch, needs review] Refactor pool code in integer.pyx
 
-Issue created by migration from https://trac.sagemath.org/ticket/3357
-
-Original creator: gfurnish
-
-Original creation time: 2008-06-03 07:15:22
-
+archive/issues_003357.json:
+```json
+{
+    "body": "Assignee: somebody\n\nCC:  robertwb\n\nThis patch moves some of the setup code from integer.pyx into misc.memory and creates a ext/python_rich_object.pxi file.  This patch makes it easy to generalize pools to other classes, and is needed for symbolics. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3357\n\n",
+    "created_at": "2008-06-03T07:15:22Z",
+    "labels": [
+        "basic arithmetic",
+        "critical",
+        "enhancement"
+    ],
+    "title": "[with patch, needs review] Refactor pool code in integer.pyx",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3357",
+    "user": "gfurnish"
+}
+```
 Assignee: somebody
 
 CC:  robertwb
 
 This patch moves some of the setup code from integer.pyx into misc.memory and creates a ext/python_rich_object.pxi file.  This patch makes it easy to generalize pools to other classes, and is needed for symbolics. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3357
+
+
+
+
 
 ---
 
-Comment by gfurnish created at 2008-06-03 07:22:08
+archive/issue_comments_023351.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-06-03T07:22:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3357",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3357#issuecomment-23351",
+    "user": "gfurnish"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by gfurnish created at 2008-06-03 07:22:08
+archive/issue_comments_023352.json:
+```json
+{
+    "body": "Changing assignee from somebody to gfurnish.",
+    "created_at": "2008-06-03T07:22:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3357",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3357#issuecomment-23352",
+    "user": "gfurnish"
+}
+```
 
 Changing assignee from somebody to gfurnish.
 
 
+
 ---
 
-Comment by robertwb created at 2008-06-04 05:12:29
+archive/issue_comments_023353.json:
+```json
+{
+    "body": "- You appear to have multiple change-sets in this one patch, which may be problematic for importing (though it worked fine for me). \n\n- The name \"memory.pyx\" I would probably call it something like \"allocate.pyx\" which gives a better impression of what it does. \n\n- Why are pool_stats, etc. added to sage/misc/memory.pyx, but then commented out? \n\n- Sage doesn't start up anymore. It's an import error, so it looks like an easy fix, but I'm wary of code that you haven't even tested.",
+    "created_at": "2008-06-04T05:12:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3357",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3357#issuecomment-23353",
+    "user": "robertwb"
+}
+```
 
 - You appear to have multiple change-sets in this one patch, which may be problematic for importing (though it worked fine for me). 
 
@@ -40,9 +87,20 @@ Comment by robertwb created at 2008-06-04 05:12:29
 - Sage doesn't start up anymore. It's an import error, so it looks like an easy fix, but I'm wary of code that you haven't even tested.
 
 
+
 ---
 
-Comment by gfurnish created at 2008-06-04 09:26:23
+archive/issue_comments_023354.json:
+```json
+{
+    "body": "-The changeset issue should work correctly (I just exported two patches directly in a row)\n-Namechange sounds decent enough\n-The code to make them work is commented out in all pool allocators, so they are there, but they arn't actually used (in current code or in this one)\n-Sage starts up for me, and in fact it works better then usual.. What did you apply the patch against?",
+    "created_at": "2008-06-04T09:26:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3357",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3357#issuecomment-23354",
+    "user": "gfurnish"
+}
+```
 
 -The changeset issue should work correctly (I just exported two patches directly in a row)
 -Namechange sounds decent enough
@@ -50,9 +108,20 @@ Comment by gfurnish created at 2008-06-04 09:26:23
 -Sage starts up for me, and in fact it works better then usual.. What did you apply the patch against?
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-04 21:44:27
+archive/issue_comments_023355.json:
+```json
+{
+    "body": "The problem here is that the old build system does not know about memory.[pyx|lxd] because then I get:\n\n```\nsage -t -long devel/sage/sage/structure/wrapper_parent.pyx\nTraceback (most recent call last):\n  File \"/scratch/mabshoff/release-cycle/sage-3.0.2-vg/tmp/.doctest_wrapper_parent.py\", line 2, in <module>\n    from sage.all_cmdline import *;\n  File \"/scratch/mabshoff/release-cycle/sage-3.0.2-vg/local/lib/python2.5/site-packages/sage/all_cmdline.py\", line 14, in <module>\n    from sage.all import *\n  File \"/scratch/mabshoff/release-cycle/sage-3.0.2-vg/local/lib/python2.5/site-packages/sage/all.py\", line 58, in <module>\n    from sage.misc.all       import *         # takes a while\n  File \"/scratch/mabshoff/release-cycle/sage-3.0.2-vg/local/lib/python2.5/site-packages/sage/misc/all.py\", line 76, in <module>\n    from functional import (additive_order,\n  File \"/scratch/mabshoff/release-cycle/sage-3.0.2-vg/local/lib/python2.5/site-packages/sage/misc/functional.py\", line 34, in <module>\n    from sage.rings.complex_double import CDF\n  File \"integer.pxd\", line 9, in sage.rings.complex_double (sage/rings/complex_double.c:9324)\n  File \"integer.pyx\", line 1, in sage.rings.integer (sage/rings/integer.c:22427)\nImportError: No module named memory\n```\n\n\nAs Robert suggested it might also be a good idea to renames memory.$FOO to allocator.$FOO.\n\nCheers,\n\nMichael",
+    "created_at": "2008-06-04T21:44:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3357",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3357#issuecomment-23355",
+    "user": "mabshoff"
+}
+```
 
 The problem here is that the old build system does not know about memory.[pyx|lxd] because then I get:
 
@@ -82,9 +151,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-04 21:47:23
+archive/issue_comments_023356.json:
+```json
+{
+    "body": "This fixes at least the build issue:\n\n```\n--- a/setup.py  Sat May 24 16:03:19 2008 -0700\n+++ b/setup.py  Wed Jun 04 14:46:10 2008 -0700\n@@ -720,6 +720,9 @@ ext_modules = [ \\\n     Extension('sage.rings.integer',\n               sources = ['sage/ext/arith.pyx', 'sage/rings/integer.pyx'],\n               libraries=['ntl', 'gmp']), \\\n+\n+    Extension('sage.misc.memory',\n+                  sources = ['sage/misc/memory.pyx']), \\\n\n     Extension('sage.rings.integer_ring',\n               sources = ['sage/rings/integer_ring.pyx'],\n```\n\n\nNow doctesting & valgrinding ....\n\nCheers,\n\nMichael",
+    "created_at": "2008-06-04T21:47:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3357",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3357#issuecomment-23356",
+    "user": "mabshoff"
+}
+```
 
 This fixes at least the build issue:
 
@@ -111,36 +191,71 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-05 18:33:36
+archive/issue_comments_023357.json:
+```json
+{
+    "body": "Ok, the whole doctest suite valgrinds clean on sage.math. I will merge this patch provided:\n\n* it doctests clean on OSX\n* Robert signs off on it\n* memory.[pyx|pxd] gets renamed to allocator.[pyx|pxd]\n* the setup.py issue gets fixed\n\nCheers,\n\nMichael",
+    "created_at": "2008-06-05T18:33:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3357",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3357#issuecomment-23357",
+    "user": "mabshoff"
+}
+```
 
 Ok, the whole doctest suite valgrinds clean on sage.math. I will merge this patch provided:
 
- * it doctests clean on OSX
- * Robert signs off on it
- * memory.[pyx|pxd] gets renamed to allocator.[pyx|pxd]
- * the setup.py issue gets fixed
+* it doctests clean on OSX
+* Robert signs off on it
+* memory.[pyx|pxd] gets renamed to allocator.[pyx|pxd]
+* the setup.py issue gets fixed
 
 Cheers,
 
 Michael
 
 
+
 ---
+
+archive/issue_comments_023358.json:
+```json
+{
+    "body": "Attachment\n\nnew patch",
+    "created_at": "2008-06-05T19:40:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3357",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3357#issuecomment-23358",
+    "user": "gfurnish"
+}
+```
 
 Attachment
 
 new patch
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-06 03:39:46
+archive/issue_comments_023359.json:
+```json
+{
+    "body": "Arrg, on OSX this patch causes some doctests to use 100% of the CPU without them making any progress. I have not attempted to debug this, but affected doctests inlcude\n\n* devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\n\nbut there are others.\n\nCheers,\n\nMichael",
+    "created_at": "2008-06-06T03:39:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3357",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3357#issuecomment-23359",
+    "user": "mabshoff"
+}
+```
 
 Arrg, on OSX this patch causes some doctests to use 100% of the CPU without them making any progress. I have not attempted to debug this, but affected doctests inlcude
 
- * devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py
+* devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py
 
 but there are others.
 
@@ -149,9 +264,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-06 04:48:14
+archive/issue_comments_023360.json:
+```json
+{
+    "body": "Ok, as it turns out that tree did not doctest correctly without the patch anyway, so I am building a fresh 3.0.3.a1 tree to test. Apologies for the trouble, looks like I will have to ride on the short bus and wear my helmet ;)\n\nCheers,\n\nMichael",
+    "created_at": "2008-06-06T04:48:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3357",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3357#issuecomment-23360",
+    "user": "mabshoff"
+}
+```
 
 Ok, as it turns out that tree did not doctest correctly without the patch anyway, so I am building a fresh 3.0.3.a1 tree to test. Apologies for the trouble, looks like I will have to ride on the short bus and wear my helmet ;)
 
@@ -160,22 +286,55 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by robertwb created at 2008-06-09 20:20:39
+archive/issue_comments_023361.json:
+```json
+{
+    "body": "Pending all doctests passing I give this a positive review. There is still too much \"manual magic\" in the integer.pyx file that I'd like to factor out, but that will be for another patch. Perhaps we could work something out at dev days coming up?",
+    "created_at": "2008-06-09T20:20:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3357",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3357#issuecomment-23361",
+    "user": "robertwb"
+}
+```
 
 Pending all doctests passing I give this a positive review. There is still too much "manual magic" in the integer.pyx file that I'd like to factor out, but that will be for another patch. Perhaps we could work something out at dev days coming up?
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-11 03:44:39
+archive/issue_comments_023362.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-06-11T03:44:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3357",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3357#issuecomment-23362",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-11 03:44:39
+archive/issue_comments_023363.json:
+```json
+{
+    "body": "Merged in Sage 3.0.3.alpha2 since doctests pass for me",
+    "created_at": "2008-06-11T03:44:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3357",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3357#issuecomment-23363",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.3.alpha2 since doctests pass for me

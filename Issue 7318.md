@@ -1,11 +1,21 @@
 # Issue 7318: SageNB: Sphinxify erases doc/en/introspect
 
-Issue created by migration from https://trac.sagemath.org/ticket/7318
-
-Original creator: mpatel
-
-Original creation time: 2009-10-27 03:17:20
-
+archive/issues_007318.json:
+```json
+{
+    "body": "Assignee: boothby\n\nCC:  timdumol was\n\nIn Sage, `sagenb.misc.sphinxify.sphinxify` does\n\n```python\n    shutil.rmtree(confdir, ignore_errors=True)\n```\n\nafter running Sphinx, but this should happen only if `confdir` is a temporary directory.  Otherwise,\n\n```sh\nprompt$> cd $SAGE_ROOT/devel/sage/\nprompt$> hg stat\n! doc/en/introspect/__init__.py\n! doc/en/introspect/conf.py\n! doc/en/introspect/static/empty\n! doc/en/introspect/templates/layout.html\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7318\n\n",
+    "created_at": "2009-10-27T03:17:20Z",
+    "labels": [
+        "notebook",
+        "minor",
+        "bug"
+    ],
+    "title": "SageNB: Sphinxify erases doc/en/introspect",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7318",
+    "user": "mpatel"
+}
+```
 Assignee: boothby
 
 CC:  timdumol was
@@ -29,44 +39,116 @@ prompt$> hg stat
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7318
+
+
+
+
 
 ---
+
+archive/issue_comments_061143.json:
+```json
+{
+    "body": "Attachment\n\nPreserve doc/en/introspect in sphinxify.  Apply to sagenb repository.",
+    "created_at": "2009-10-27T03:22:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7318",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7318#issuecomment-61143",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
 Preserve doc/en/introspect in sphinxify.  Apply to sagenb repository.
 
 
+
 ---
 
-Comment by mpatel created at 2009-10-27 03:22:32
+archive/issue_comments_061144.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-10-27T03:22:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7318",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7318#issuecomment-61144",
+    "user": "mpatel"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-10-27 03:34:35
+archive/issue_comments_061145.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-10-27T03:34:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7318",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7318#issuecomment-61145",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-10-27 03:34:35
+archive/issue_comments_061146.json:
+```json
+{
+    "body": "I can confirm that before patching, doc/en/introspect is deleted, and afterwards it isn't.  The patch obviously does the right thing.",
+    "created_at": "2009-10-27T03:34:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7318",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7318#issuecomment-61146",
+    "user": "jhpalmieri"
+}
+```
 
 I can confirm that before patching, doc/en/introspect is deleted, and afterwards it isn't.  The patch obviously does the right thing.
 
 
+
 ---
 
-Comment by was created at 2009-11-11 19:57:07
+archive/issue_comments_061147.json:
+```json
+{
+    "body": "merged into sagenb-0.4.2 (sage-4.2.1)",
+    "created_at": "2009-11-11T19:57:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7318",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7318#issuecomment-61147",
+    "user": "was"
+}
+```
 
 merged into sagenb-0.4.2 (sage-4.2.1)
 
 
+
 ---
 
-Comment by was created at 2009-11-11 19:57:07
+archive/issue_comments_061148.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-11-11T19:57:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7318",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7318#issuecomment-61148",
+    "user": "was"
+}
+```
 
 Resolution: fixed

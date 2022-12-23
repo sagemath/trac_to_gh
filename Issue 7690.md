@@ -1,11 +1,21 @@
 # Issue 7690: maxima stats too many files on startup, which is a performance issue
 
-Issue created by migration from https://trac.sagemath.org/ticket/7690
-
-Original creator: was
-
-Original creation time: 2009-12-15 19:43:27
-
+archive/issues_007690.json:
+```json
+{
+    "body": "Assignee: tbd\n\n\n```\nHi,\n\nThis email is a followup about  \"1. maxima opens the root directory /\nand stats each file found there. Then it does the same thing for the\n/u (home) directory...\"\n\nThanks to everybody that responded to my query below.  The\n\"MAXIMA-SHAREDIR\" variable looks fine according to the output of\n\"maxima --directories\".\nOff list, Andrej Vodopivec remarked \"It could be share-subdirs-list in\ninit-cl.lisp. If that is true, then it should be easy to remove the\ncall to share-subdirs-list.\".    I tried doing what Andrej suggested,\nand it worked perfectly.  Before doing that, Maxima would state about\n4000 files (including all users' home directories) on startup, and\nafterwards it stat'd only about 70 files.   The difference in\nperformance on some NSF filesystems is huge -- a second versus\npotentially *minutes*.    Even the difference on\nsage.math.washington.edu is quite noticeable (a very fast machine with\na fast network).  Looking at the output of makes this very clear:\n\n   strace maxima --directories  > out 2>&1; grep stat out|wc -l\n\n\nFor now we'll be patching the Maxima in Sage so that\nshare-subdirs-list (in init-cl.lisp) falls back to the old \"default\nbehavior\" instead of the new behavior that was introduced in the\nrecent rewrite of init-cl.lisp.    I really hope whoever rewrote\ninit-cl.lisp can think about the significant performance regression\nthat was caused, and find a better solution.\n\nThanks again for all the incredibly helpful feedback!\n\n -- William\n```\n\n\nBy the way, what I did to init-cl.lisp was stupid.  I changed\n\n```\n#+ecl\n(defun share-subdirs-list ()\n  ;; This doesn't work yet on windows.  Give up in that case and use\n  ;; the default list.\n  (if (string= *autoconf-win32* \"true\")\n```\n\nto\n\n```\n#+ecl\n(defun share-subdirs-list ()\n  ;; This doesn't work yet on windows.  Give up in that case and use\n  ;; the default list.\n  (if (string= *autoconf-win32* \"false\")\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7690\n\n",
+    "created_at": "2009-12-15T19:43:27Z",
+    "labels": [
+        "packages: standard",
+        "blocker",
+        "bug"
+    ],
+    "title": "maxima stats too many files on startup, which is a performance issue",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7690",
+    "user": "was"
+}
+```
 Assignee: tbd
 
 
@@ -68,10 +78,25 @@ to
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7690
+
+
+
+
 
 ---
 
-Comment by was created at 2009-12-18 06:04:37
+archive/issue_comments_065981.json:
+```json
+{
+    "body": "\n```\nOn Wed, Dec 16, 2009 at 6:14 AM, Robert Dodier <robert.dodier@gmail.com> wrote:\n\n    Hello,\n\n    We got a report about Maxima calling stat on a lot\n    of files when the program is launched.\n    Aside from all the files in the Maxima share directory,\n    which we expect Maxima to look at, stat was called\n    on a lot of other files as well (stuff outside the Maxima\n    directory structure).\n\n\nAn unfortunate mistake: DIRECTORY used stat() on all entries in a directory, not only those that matched the mask. It was just a matter of switching lines. Now things are better. Thanks a lot for reporting. \n\n$ echo '(directory \"/Users/jjgarcia/tmp/\")(quit)' > foo.lsp; sudo dtrace -n 'pid$target::safe_stat:entry  { printf(\"%s\\n\", copyinstr((uintptr_t)arg0)); }' -c \"ecl -norc -load foo\"\ndtrace: description 'pid$target::safe_stat:entry  ' matched 1 probe\n;;; Loading #P\"/Users/jjgarcia/foo.lsp\"\ndtrace: pid 39532 has exited\nCPU     ID                    FUNCTION:NAME\n  0  19180                  safe_stat:entry jjgarcia\n\n  0  19180                  safe_stat:entry tmp\n```\n",
+    "created_at": "2009-12-18T06:04:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7690",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7690#issuecomment-65981",
+    "user": "was"
+}
+```
 
 
 ```
@@ -101,29 +126,73 @@ CPU     ID                    FUNCTION:NAME
 
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-23 04:42:19
+archive/issue_comments_065982.json:
+```json
+{
+    "body": "No patch available, so I'm deferring this to Sage 5.0.",
+    "created_at": "2010-04-23T04:42:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7690",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7690#issuecomment-65982",
+    "user": "jhpalmieri"
+}
+```
 
 No patch available, so I'm deferring this to Sage 5.0.
 
 
+
 ---
 
-Comment by jason created at 2010-05-13 04:22:19
+archive/issue_comments_065983.json:
+```json
+{
+    "body": "This might be fixed by #8808",
+    "created_at": "2010-05-13T04:22:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7690",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7690#issuecomment-65983",
+    "user": "jason"
+}
+```
 
 This might be fixed by #8808
 
 
+
 ---
 
-Comment by was created at 2010-06-03 04:10:31
+archive/issue_comments_065984.json:
+```json
+{
+    "body": "No patch, so deferring...",
+    "created_at": "2010-06-03T04:10:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7690",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7690#issuecomment-65984",
+    "user": "was"
+}
+```
 
 No patch, so deferring...
 
 
+
 ---
 
-Comment by rlm created at 2010-07-08 18:33:46
+archive/issue_comments_065985.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-07-08T18:33:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7690",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7690#issuecomment-65985",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed

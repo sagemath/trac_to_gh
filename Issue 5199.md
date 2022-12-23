@@ -1,11 +1,21 @@
 # Issue 5199: [with patch, needs review] new symbolics can treat floats as integers inappropriately
 
-Issue created by migration from https://trac.sagemath.org/ticket/5199
-
-Original creator: cwitty
-
-Original creation time: 2009-02-07 05:15:40
-
+archive/issues_005199.json:
+```json
+{
+    "body": "Assignee: burcin\n\nCC:  burcin\n\nConsider the following, in 3.3.alpha5:\n\n```\nsage: from sage.symbolic.ring import NSR\nsage: NSR(10.0).gamma()\n362880\n```\n\nWe have produced an exact integral result of .gamma() on a floating-point number.\n\nAfter #2898, this behavior makes doctests fail; but the above happens even before #2898.\n\nI don't know if this is the \"right\" patch, but it does make all doctests pass after #2898.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5199\n\n",
+    "created_at": "2009-02-07T05:15:40Z",
+    "labels": [
+        "calculus",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch, needs review] new symbolics can treat floats as integers inappropriately",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5199",
+    "user": "cwitty"
+}
+```
 Assignee: burcin
 
 CC:  burcin
@@ -24,8 +34,25 @@ After #2898, this behavior makes doctests fail; but the above happens even befor
 
 I don't know if this is the "right" patch, but it does make all doctests pass after #2898.
 
+Issue created by migration from https://trac.sagemath.org/ticket/5199
+
+
+
+
 
 ---
+
+archive/issue_comments_039840.json:
+```json
+{
+    "body": "Attachment\n\nThe patch looks good. \n\nWe might think about optimizing this function for speed later. Specialcasing Integer and Rational, and using the _parent attribute should help here.",
+    "created_at": "2009-02-08T13:24:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5199",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5199#issuecomment-39840",
+    "user": "burcin"
+}
+```
 
 Attachment
 
@@ -34,9 +61,20 @@ The patch looks good.
 We might think about optimizing this function for speed later. Specialcasing Integer and Rational, and using the _parent attribute should help here.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-09 07:53:59
+archive/issue_comments_039841.json:
+```json
+{
+    "body": "Merged in Sage 3.3.rc0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-09T07:53:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5199",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5199#issuecomment-39841",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.3.rc0.
 
@@ -45,8 +83,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-09 07:53:59
+archive/issue_comments_039842.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-02-09T07:53:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5199",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5199#issuecomment-39842",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

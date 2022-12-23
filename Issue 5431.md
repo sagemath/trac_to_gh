@@ -1,11 +1,21 @@
 # Issue 5431: Command line parser fails on hex values with 'e'
 
-Issue created by migration from https://trac.sagemath.org/ticket/5431
-
-Original creator: rhinton
-
-Original creation time: 2009-03-03 19:18:40
-
+archive/issues_005431.json:
+```json
+{
+    "body": "Assignee: somebody\n\nCC:  robertwb\n\n\n```\nsage: 0xe\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/ryan/.sage/temp/fileserv/1535/_home_ryan__sage_init_sage_0.py in <module>()\n\n/home/ryan/sage-well/local/lib/python2.5/site-packages/sage/rings/real_mpfr.so in sage.rings.real_mpfr.create_RealNumber (sage/rings/real_mpfr.c:21774)()\n\n/home/ryan/sage-well/local/lib/python2.5/site-packages/sage/rings/real_mpfr.so in sage.rings.real_mpfr.RealLiteral.__init__ (sage/rings/real_mpfr.c:20990)()\n\n/home/ryan/sage-well/local/lib/python2.5/site-packages/sage/rings/real_mpfr.so in sage.rings.real_mpfr.RealNumber.__init__ (sage/rings/real_mpfr.c:7454)()\n\n/home/ryan/sage-well/local/lib/python2.5/site-packages/sage/rings/real_mpfr.so in sage.rings.real_mpfr.RealNumber._set (sage/rings/real_mpfr.c:7957)()\n\nTypeError: Unable to convert x (='0xe') to real number.\n```\n\nThe same thing happens with \"0xE\".  It appears the parser sees the E/e and assumes it is a floating-point number instead of using the leading \"0x\".  \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5431\n\n",
+    "created_at": "2009-03-03T19:18:40Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "bug"
+    ],
+    "title": "Command line parser fails on hex values with 'e'",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5431",
+    "user": "rhinton"
+}
+```
 Assignee: somebody
 
 CC:  robertwb
@@ -32,23 +42,62 @@ TypeError: Unable to convert x (='0xe') to real number.
 The same thing happens with "0xE".  It appears the parser sees the E/e and assumes it is a floating-point number instead of using the leading "0x".  
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5431
+
+
+
+
 
 ---
+
+archive/issue_comments_042025.json:
+```json
+{
+    "body": "Attachment\n\nThis was fixed by the preparser rewrite work by robertwb.",
+    "created_at": "2009-06-05T01:32:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5431",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5431#issuecomment-42025",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 This was fixed by the preparser rewrite work by robertwb.
 
 
+
 ---
 
-Comment by robertwb created at 2009-06-05 03:41:25
+archive/issue_comments_042026.json:
+```json
+{
+    "body": "Patch adds doctest.",
+    "created_at": "2009-06-05T03:41:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5431",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5431#issuecomment-42026",
+    "user": "robertwb"
+}
+```
 
 Patch adds doctest.
 
 
+
 ---
 
-Comment by ncalexan created at 2009-06-13 21:50:12
+archive/issue_comments_042027.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-06-13T21:50:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5431",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5431#issuecomment-42027",
+    "user": "ncalexan"
+}
+```
 
 Resolution: fixed

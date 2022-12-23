@@ -1,56 +1,138 @@
 # Issue 9774: lcalc should make a .dll file on Cygwin instead of .so file
 
-Issue created by migration from https://trac.sagemath.org/ticket/9775
-
-Original creator: mhansen
-
-Original creation time: 2010-08-21 17:57:45
-
+archive/issues_009774.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  rishi\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9775\n\n",
+    "created_at": "2010-08-21T17:57:45Z",
+    "labels": [
+        "porting: Cygwin",
+        "major",
+        "bug"
+    ],
+    "title": "lcalc should make a .dll file on Cygwin instead of .so file",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9774",
+    "user": "mhansen"
+}
+```
 Assignee: tbd
 
 CC:  rishi
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/9775
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2010-08-21 18:41:42
+archive/issue_comments_095920.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-08-21T18:41:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9774",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9774#issuecomment-95920",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mhansen created at 2010-08-21 18:41:42
+archive/issue_comments_095921.json:
+```json
+{
+    "body": "There is an spkg at http://boxen.math.washington.edu/home/mhansen/lcalc-20100428-1.23.p3.spkg base on the one at #9592.",
+    "created_at": "2010-08-21T18:41:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9774",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9774#issuecomment-95921",
+    "user": "mhansen"
+}
+```
 
 There is an spkg at http://boxen.math.washington.edu/home/mhansen/lcalc-20100428-1.23.p3.spkg base on the one at #9592.
 
 
+
 ---
 
-Comment by mhansen created at 2010-08-21 18:44:26
+archive/issue_comments_095922.json:
+```json
+{
+    "body": "Note that #9592 should be closed or have a positive review before this one does.",
+    "created_at": "2010-08-21T18:44:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9774",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9774#issuecomment-95922",
+    "user": "mhansen"
+}
+```
 
 Note that #9592 should be closed or have a positive review before this one does.
 
 
+
 ---
 
-Comment by mpatel created at 2010-08-21 20:20:44
+archive/issue_comments_095923.json:
+```json
+{
+    "body": "SPKG patch of Mike's changes.",
+    "created_at": "2010-08-21T20:20:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9774",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9774#issuecomment-95923",
+    "user": "mpatel"
+}
+```
 
 SPKG patch of Mike's changes.
 
 
+
 ---
+
+archive/issue_comments_095924.json:
+```json
+{
+    "body": "Attachment\n\nThere is a small type in SPKG.txt: on line 29, you should replace \"lcalc-1.23.p2\" by \"lcalc-1.23.p3\"",
+    "created_at": "2010-08-21T20:50:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9774",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9774#issuecomment-95924",
+    "user": "jdemeyer"
+}
+```
 
 Attachment
 
 There is a small type in SPKG.txt: on line 29, you should replace "lcalc-1.23.p2" by "lcalc-1.23.p3"
 
 
+
 ---
 
-Comment by leif created at 2010-08-29 15:35:35
+archive/issue_comments_095925.json:
+```json
+{
+    "body": "Replying to [comment:3 jdemeyer]:\n> There is a small type in SPKG.txt: on line 29, you should replace \"lcalc-1.23.p2\" by \"lcalc-1.23.p3\"\n\nAlso in the top comment of `spkg-install`.",
+    "created_at": "2010-08-29T15:35:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9774",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9774#issuecomment-95925",
+    "user": "leif"
+}
+```
 
 Replying to [comment:3 jdemeyer]:
 > There is a small type in SPKG.txt: on line 29, you should replace "lcalc-1.23.p2" by "lcalc-1.23.p3"
@@ -58,25 +140,36 @@ Replying to [comment:3 jdemeyer]:
 Also in the top comment of `spkg-install`.
 
 
+
 ---
 
-Comment by leif created at 2010-08-29 17:36:27
+archive/issue_comments_095926.json:
+```json
+{
+    "body": "Some comments (on the spkg in general, not the Cygwin changes, with the exception of quoting `$SAGE_LOCAL`):\n\n* `$CFLAG64` and `$CXXFLAG64` should be quoted.\n\n* `CXXFLAG64` is exported (?) twice. (It is in fact currently used in the Makefile.)\n\n* In general, e.g. `-m64` should be added to `CPPFLAGS` as well.\n\n* In other packages, we disable optimization if `SAGE_DEBUG=yes`, and build **with** debugging symbols (`-g`) unconditionally, i.e. independent of the setting of `SAGE_DEBUG`.\n\n* `$MAKE` should be used instead of `make`. (Though `make` is called(!) inside the Makefile itself for the default target, `all`, which we build. See below, too.) \n\n* `$SAGE_LOCAL` should be quoted, too (for future support of spaces).\n\n* The following case distinction is superfluous (and the branches are redundant as well):\n\n```sh\nif `test -d $SAGE_LOCAL/include/lcalc`; then\n    rm -fr $SAGE_LOCAL/include/lcalc\n    mkdir $SAGE_LOCAL/include/lcalc\n    cp ../include/* $SAGE_LOCAL/include/lcalc\nelse\n    mkdir $SAGE_LOCAL/include/lcalc\n    cp ../include/* $SAGE_LOCAL/include/lcalc\nfi\n```\n\n   It should simply be:\n\n```sh\n    rm -fr \"$SAGE_LOCAL\"/include/lcalc\n    mkdir -p \"$SAGE_LOCAL\"/include/lcalc\n    cp ../include/* \"$SAGE_LOCAL\"/include/lcalc\n```\n\n\n* I'm not sure if I should like the `success()` function (the messages are quite strange); same for the use of `set -e`.\n\n* There's no `spkg-check`, but unfortunately the test program has been removed from the sources anyway. Should be addressed in later versions (e.g. add a comment to *\"Special Update/Build Instructions\"*).\n\n* These files have been removed without telling Mercurial:\n\n```sh\n$ hg status\n! patches/lcalc-1.11-constification+solaris.patch\n! patches/lcalc-1.11-gcc-4.3-build.patch\n! patches/lcalc-1.11-memleak-fixes.patch\n```\n\n\n* The *patched* Makefile (`patches/Makefile.sage`, lacking the corresponding diff) isn't much better than the original.\n  It also should **not** make Lcalc link against `libmpir.so` (or its static version), but - if at all - `libgmp.so` instead, since we configure MPIR with `--enable-gmpcompat` anyway. As is, it's the **only** package that breaks building with GNU MP, unless one creates a symbolic link from `libmpir.so` to `libgmp.so`.\n\n\nIt would be nice to address at least some (especially the last) of these points *here*, too, since it IMHO doesn't make much sense to frequently open new tickets and create new spkgs just for minor/clean-up changes.",
+    "created_at": "2010-08-29T17:36:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9774",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9774#issuecomment-95926",
+    "user": "leif"
+}
+```
 
 Some comments (on the spkg in general, not the Cygwin changes, with the exception of quoting `$SAGE_LOCAL`):
 
- * `$CFLAG64` and `$CXXFLAG64` should be quoted.
+* `$CFLAG64` and `$CXXFLAG64` should be quoted.
 
- * `CXXFLAG64` is exported (?) twice. (It is in fact currently used in the Makefile.)
+* `CXXFLAG64` is exported (?) twice. (It is in fact currently used in the Makefile.)
 
- * In general, e.g. `-m64` should be added to `CPPFLAGS` as well.
+* In general, e.g. `-m64` should be added to `CPPFLAGS` as well.
 
- * In other packages, we disable optimization if `SAGE_DEBUG=yes`, and build *with* debugging symbols (`-g`) unconditionally, i.e. independent of the setting of `SAGE_DEBUG`.
+* In other packages, we disable optimization if `SAGE_DEBUG=yes`, and build **with** debugging symbols (`-g`) unconditionally, i.e. independent of the setting of `SAGE_DEBUG`.
 
- * `$MAKE` should be used instead of `make`. (Though `make` is called(!) inside the Makefile itself for the default target, `all`, which we build. See below, too.) 
+* `$MAKE` should be used instead of `make`. (Though `make` is called(!) inside the Makefile itself for the default target, `all`, which we build. See below, too.) 
 
- * `$SAGE_LOCAL` should be quoted, too (for future support of spaces).
+* `$SAGE_LOCAL` should be quoted, too (for future support of spaces).
 
- * The following case distinction is superfluous (and the branches are redundant as well):
+* The following case distinction is superfluous (and the branches are redundant as well):
 
 ```sh
 if `test -d $SAGE_LOCAL/include/lcalc`; then
@@ -98,11 +191,11 @@ fi
 ```
 
 
- * I'm not sure if I should like the `success()` function (the messages are quite strange); same for the use of `set -e`.
+* I'm not sure if I should like the `success()` function (the messages are quite strange); same for the use of `set -e`.
 
- * There's no `spkg-check`, but unfortunately the test program has been removed from the sources anyway. Should be addressed in later versions (e.g. add a comment to _"Special Update/Build Instructions"_).
+* There's no `spkg-check`, but unfortunately the test program has been removed from the sources anyway. Should be addressed in later versions (e.g. add a comment to *"Special Update/Build Instructions"*).
 
- * These files have been removed without telling Mercurial:
+* These files have been removed without telling Mercurial:
 
 ```sh
 $ hg status
@@ -112,29 +205,62 @@ $ hg status
 ```
 
 
- * The _patched_ Makefile (`patches/Makefile.sage`, lacking the corresponding diff) isn't much better than the original.
-   It also should *not* make Lcalc link against `libmpir.so` (or its static version), but - if at all - `libgmp.so` instead, since we configure MPIR with `--enable-gmpcompat` anyway. As is, it's the *only* package that breaks building with GNU MP, unless one creates a symbolic link from `libmpir.so` to `libgmp.so`.
+* The *patched* Makefile (`patches/Makefile.sage`, lacking the corresponding diff) isn't much better than the original.
+  It also should **not** make Lcalc link against `libmpir.so` (or its static version), but - if at all - `libgmp.so` instead, since we configure MPIR with `--enable-gmpcompat` anyway. As is, it's the **only** package that breaks building with GNU MP, unless one creates a symbolic link from `libmpir.so` to `libgmp.so`.
 
 
-It would be nice to address at least some (especially the last) of these points _here_, too, since it IMHO doesn't make much sense to frequently open new tickets and create new spkgs just for minor/clean-up changes.
+It would be nice to address at least some (especially the last) of these points *here*, too, since it IMHO doesn't make much sense to frequently open new tickets and create new spkgs just for minor/clean-up changes.
+
 
 
 ---
 
-Comment by mhansen created at 2010-09-01 22:37:43
+archive/issue_comments_095927.json:
+```json
+{
+    "body": "I'm going to close this as a duplicate of #9845.  I'll post an spkg there which contains some changes from leif's review.",
+    "created_at": "2010-09-01T22:37:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9774",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9774#issuecomment-95927",
+    "user": "mhansen"
+}
+```
 
 I'm going to close this as a duplicate of #9845.  I'll post an spkg there which contains some changes from leif's review.
 
 
+
 ---
 
-Comment by mhansen created at 2010-09-01 22:37:43
+archive/issue_comments_095928.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2010-09-01T22:37:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9774",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9774#issuecomment-95928",
+    "user": "mhansen"
+}
+```
 
 Resolution: duplicate
 
 
+
 ---
 
-Comment by leif created at 2010-09-03 22:54:26
+archive/issue_comments_095929.json:
+```json
+{
+    "body": "Also, the `dist/` (Debian) directory should be removed, cf. #5903.",
+    "created_at": "2010-09-03T22:54:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9774",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9774#issuecomment-95929",
+    "user": "leif"
+}
+```
 
 Also, the `dist/` (Debian) directory should be removed, cf. #5903.

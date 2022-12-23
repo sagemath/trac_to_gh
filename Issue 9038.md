@@ -1,11 +1,21 @@
 # Issue 9038: Typeset: Wrong charset for Greek characters
 
-Issue created by migration from https://trac.sagemath.org/ticket/9038
-
-Original creator: jan
-
-Original creation time: 2010-05-24 19:42:07
-
+archive/issues_009038.json:
+```json
+{
+    "body": "Assignee: jason, was\n\nClient: Ubuntu Karmic 9.10 with jsmath 3.5.9, jsmath-fonts 1.3-2, ttf-jsmath, and Firefox 3.5.9.\n\nServer: Either http://www.sagebn.org or Debian Lenny with Sage 4.4.2 compiled from source\n\nWhen displaying a formula containing \"pi\" with \"Typeset\" checked, the character \u00da (capital U with accent) is displayed instead of the pi character.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9038\n\n",
+    "created_at": "2010-05-24T19:42:07Z",
+    "labels": [
+        "notebook",
+        "major",
+        "bug"
+    ],
+    "title": "Typeset: Wrong charset for Greek characters",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9038",
+    "user": "jan"
+}
+```
 Assignee: jason, was
 
 Client: Ubuntu Karmic 9.10 with jsmath 3.5.9, jsmath-fonts 1.3-2, ttf-jsmath, and Firefox 3.5.9.
@@ -14,10 +24,25 @@ Server: Either http://www.sagebn.org or Debian Lenny with Sage 4.4.2 compiled fr
 
 When displaying a formula containing "pi" with "Typeset" checked, the character Ú (capital U with accent) is displayed instead of the pi character.
 
+Issue created by migration from https://trac.sagemath.org/ticket/9038
+
+
+
+
 
 ---
 
-Comment by jason created at 2010-05-25 19:51:10
+archive/issue_comments_083669.json:
+```json
+{
+    "body": "This is most likely a problem with the ttf-jsmath package.  See http://www.math.union.edu/~dpvc/jsMath/download/jsMath-fonts.html\n\n\"Linux users with Firefox 3.5 should use the last archive in the list, as the Linux version of Firefoex 3.5 can not process the non-standard encoding used in the other archives.\"\n\nCan you install the linux firefox 3.5 fonts listed in the website above and see if that fixes the problem?",
+    "created_at": "2010-05-25T19:51:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9038",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9038#issuecomment-83669",
+    "user": "jason"
+}
+```
 
 This is most likely a problem with the ttf-jsmath package.  See http://www.math.union.edu/~dpvc/jsMath/download/jsMath-fonts.html
 
@@ -26,23 +51,56 @@ This is most likely a problem with the ttf-jsmath package.  See http://www.math.
 Can you install the linux firefox 3.5 fonts listed in the website above and see if that fixes the problem?
 
 
+
 ---
 
-Comment by jason created at 2010-05-25 19:51:10
+archive/issue_comments_083670.json:
+```json
+{
+    "body": "Changing status from new to needs_info.",
+    "created_at": "2010-05-25T19:51:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9038",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9038#issuecomment-83670",
+    "user": "jason"
+}
+```
 
 Changing status from new to needs_info.
 
 
+
 ---
 
-Comment by jan created at 2010-05-28 22:47:24
+archive/issue_comments_083671.json:
+```json
+{
+    "body": "Resolution: wontfix",
+    "created_at": "2010-05-28T22:47:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9038",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9038#issuecomment-83671",
+    "user": "jan"
+}
+```
 
 Resolution: wontfix
 
 
+
 ---
 
-Comment by jan created at 2010-05-28 22:47:24
+archive/issue_comments_083672.json:
+```json
+{
+    "body": "Replying to [comment:2 jason]:\n> This is most likely a problem with the ttf-jsmath package.  See http://www.math.union.edu/~dpvc/jsMath/download/jsMath-fonts.html\n> Can you install the linux firefox 3.5 fonts listed in the website above and see if that fixes the problem?\n\nYou were right. After removing ttf-jsmath and installing the downloaded fonts it works. Thank you.",
+    "created_at": "2010-05-28T22:47:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9038",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9038#issuecomment-83672",
+    "user": "jan"
+}
+```
 
 Replying to [comment:2 jason]:
 > This is most likely a problem with the ttf-jsmath package.  See http://www.math.union.edu/~dpvc/jsMath/download/jsMath-fonts.html

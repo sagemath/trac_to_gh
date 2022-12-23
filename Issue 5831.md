@@ -1,11 +1,21 @@
 # Issue 5831: [with patch, not ready for review] reducible root system fixes
 
-Issue created by migration from https://trac.sagemath.org/ticket/5831
-
-Original creator: bump
-
-Original creation time: 2009-04-20 05:10:13
-
+archive/issues_005831.json:
+```json
+{
+    "body": "Assignee: bump\n\nCC:  sage-combinat\n\nThe methods simple_roots(), fundamental_weights() and simple_coroots() for the ambient space of a root system are supposed to return a family. This was never correctly implemented for the reducible types, and the patch corrects this.\n\nThere are also some changes in weyl_characters.py, where it was assumed that the root system was irreducible in a few places. The patch corrects this.\n\nThe patch is probably correct but I haven't confirmed that it applies cleanly to sage-3.4.1.rc3 or that it passes `sage --testall` so wait to review.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5831\n\n",
+    "created_at": "2009-04-20T05:10:13Z",
+    "labels": [
+        "combinatorics",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch, not ready for review] reducible root system fixes",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5831",
+    "user": "bump"
+}
+```
 Assignee: bump
 
 CC:  sage-combinat
@@ -16,38 +26,99 @@ There are also some changes in weyl_characters.py, where it was assumed that the
 
 The patch is probably correct but I haven't confirmed that it applies cleanly to sage-3.4.1.rc3 or that it passes `sage --testall` so wait to review.
 
+Issue created by migration from https://trac.sagemath.org/ticket/5831
+
+
+
+
 
 ---
 
-Comment by bump created at 2009-04-20 05:15:14
+archive/issue_comments_045831.json:
+```json
+{
+    "body": "fixes for reducible root systems",
+    "created_at": "2009-04-20T05:15:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5831",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5831#issuecomment-45831",
+    "user": "bump"
+}
+```
 
 fixes for reducible root systems
 
 
+
 ---
 
-Comment by bump created at 2009-04-20 05:18:01
+archive/issue_comments_045832.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-04-20T05:18:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5831",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5831#issuecomment-45832",
+    "user": "bump"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
+
+archive/issue_comments_045833.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-04-20T05:18:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5831",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5831#issuecomment-45833",
+    "user": "bump"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by nthiery created at 2009-04-20 21:50:40
+archive/issue_comments_045834.json:
+```json
+{
+    "body": "Sounds good to me.\nIs it needed to implement simple_roots? I would have expected the default implementation\nfor ambient spaces (as coroots associated to the simple roots) to work.",
+    "created_at": "2009-04-20T21:50:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5831",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5831#issuecomment-45834",
+    "user": "nthiery"
+}
+```
 
 Sounds good to me.
 Is it needed to implement simple_roots? I would have expected the default implementation
 for ambient spaces (as coroots associated to the simple roots) to work.
 
 
+
 ---
 
-Comment by bump created at 2009-04-21 00:12:08
+archive/issue_comments_045835.json:
+```json
+{
+    "body": "Replying to the last message, I think it is necessary to implement simple_roots (and also simple_coroots and fundamental_weights).\n\nNicolas requested a doctest. See:\n\nhttp://groups.google.com/group/sage-combinat-devel/msg/4004c4a8471f3cfa?hl=en&pli=1\n\nI did this. I put the new doctest in type_reducible.py.",
+    "created_at": "2009-04-21T00:12:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5831",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5831#issuecomment-45835",
+    "user": "bump"
+}
+```
 
 Replying to the last message, I think it is necessary to implement simple_roots (and also simple_coroots and fundamental_weights).
 
@@ -58,9 +129,20 @@ http://groups.google.com/group/sage-combinat-devel/msg/4004c4a8471f3cfa?hl=en&pl
 I did this. I put the new doctest in type_reducible.py.
 
 
+
 ---
 
-Comment by nthiery created at 2009-04-21 05:24:38
+archive/issue_comments_045836.json:
+```json
+{
+    "body": "> Replying to the last message, I think it is necessary to implement simple_roots (and also simple_coroots and fundamental_weights).\n\nOops, sorry for the confusion. I was wondering wether it was necessary to implement the simple *coroots*.\nFor the roots, definitely yes.\n\n> Nicolas requested a doctest. See:\n> http://groups.google.com/group/sage-combinat-devel/msg/4004c4a8471f3cfa?hl=en&pli=1\n> I did this. I put the new doctest in type_reducible.py.\n\nThanks!",
+    "created_at": "2009-04-21T05:24:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5831",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5831#issuecomment-45836",
+    "user": "nthiery"
+}
+```
 
 > Replying to the last message, I think it is necessary to implement simple_roots (and also simple_coroots and fundamental_weights).
 
@@ -74,34 +156,91 @@ For the roots, definitely yes.
 Thanks!
 
 
+
 ---
+
+archive/issue_comments_045837.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-04-23T01:24:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5831",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5831#issuecomment-45837",
+    "user": "bump"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by bump created at 2009-04-23 01:27:08
+archive/issue_comments_045838.json:
+```json
+{
+    "body": "Revised: WeylCharacterRing derives the name of its Cartan Type from its Cartan Type's `__repr__` method.",
+    "created_at": "2009-04-23T01:27:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5831",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5831#issuecomment-45838",
+    "user": "bump"
+}
+```
 
 Revised: WeylCharacterRing derives the name of its Cartan Type from its Cartan Type's `__repr__` method.
 
 
+
 ---
 
-Comment by bump created at 2009-05-01 16:29:32
+archive/issue_comments_045839.json:
+```json
+{
+    "body": "This ticket may be closed if trac_5794-revised.patch is merged. See #5794.",
+    "created_at": "2009-05-01T16:29:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5831",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5831#issuecomment-45839",
+    "user": "bump"
+}
+```
 
 This ticket may be closed if trac_5794-revised.patch is merged. See #5794.
 
 
+
 ---
 
-Comment by mvngu created at 2009-08-26 21:18:29
+archive/issue_comments_045840.json:
+```json
+{
+    "body": "Closing this ticket as a duplicate of #5794.",
+    "created_at": "2009-08-26T21:18:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5831",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5831#issuecomment-45840",
+    "user": "mvngu"
+}
+```
 
 Closing this ticket as a duplicate of #5794.
 
 
+
 ---
 
-Comment by mvngu created at 2009-08-26 21:18:29
+archive/issue_comments_045841.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2009-08-26T21:18:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5831",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5831#issuecomment-45841",
+    "user": "mvngu"
+}
+```
 
 Resolution: duplicate

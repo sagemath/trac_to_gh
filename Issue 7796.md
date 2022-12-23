@@ -1,11 +1,21 @@
 # Issue 7796: prevent Sphinx from rebuilding full document
 
-Issue created by migration from https://trac.sagemath.org/ticket/7796
-
-Original creator: mvngu
-
-Original creation time: 2009-12-30 15:26:07
-
+archive/issues_007796.json:
+```json
+{
+    "body": "Assignee: mvngu\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/64bcac2d0705570f):\n\n```\nI built the html documentation in a fresh 4.3 build using \"sage\n-docbuild reference html\" as usual.  I made a clone, and it appeared\nthat all the docs were rebuilt (another 5 mins).  I made a change to a\ndocstring in one file (see #7780) and did \"sage -b\" and then \"sage\n-docbuild reference html\" again, and again it appeared that all the\ndocs were built -- another 5 mins. \n```\n\nMitesh Patel suggests the following fix:\n\n```\nA possible workaround:  In\n\nSAGE_LOCAL/lib/python2.6/site-packages/Sphinx-0.6.3-py2.6.egg/sphinx/environment.py\n\nimport inspect and insert, e.g.,\n\n                if inspect.isfunction(config[key]):\n                    continue\n\naround line 474. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7796\n\n",
+    "created_at": "2009-12-30T15:26:07Z",
+    "labels": [
+        "documentation",
+        "major",
+        "bug"
+    ],
+    "title": "prevent Sphinx from rebuilding full document",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7796",
+    "user": "mvngu"
+}
+```
 Assignee: mvngu
 
 From [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/64bcac2d0705570f):
@@ -35,58 +45,128 @@ around line 474.
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7796
+
+
+
+
 
 ---
 
-Comment by mvngu created at 2009-12-30 15:37:54
+archive/issue_comments_067326.json:
+```json
+{
+    "body": "An updated spkg is up at\n\nhttp://boxen.math.washington.edu/home/mvngu/spkg/standard/sphinx/sphinx-0.6.3.p4.spkg",
+    "created_at": "2009-12-30T15:37:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7796",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7796#issuecomment-67326",
+    "user": "mvngu"
+}
+```
 
 An updated spkg is up at
 
 http://boxen.math.washington.edu/home/mvngu/spkg/standard/sphinx/sphinx-0.6.3.p4.spkg
 
 
+
 ---
 
-Comment by mvngu created at 2009-12-30 15:37:54
+archive/issue_comments_067327.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-12-30T15:37:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7796",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7796#issuecomment-67327",
+    "user": "mvngu"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by cremona created at 2009-12-30 17:10:12
+archive/issue_comments_067328.json:
+```json
+{
+    "body": "I installed the revised spkg (though I'm not qualified to judge the valifity of what was changed in its source code).  Then made a clone -- ok, no rebuilding of docs happened automatically.  In the clone, doing \"sage -docbuild reference html\" caused the docs to build: ok.   I then made a trivial change to a source file and re-did the docbuild:  ok, just that file was rebuilt.  I then switched back to the main brancha nd again did a docbuild, expecting nothing to happen -- but a complete docbuild started.\n\nIt would be good if someone else would try this too.  It looks as if we have made progress but not solved it yet.",
+    "created_at": "2009-12-30T17:10:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7796",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7796#issuecomment-67328",
+    "user": "cremona"
+}
+```
 
 I installed the revised spkg (though I'm not qualified to judge the valifity of what was changed in its source code).  Then made a clone -- ok, no rebuilding of docs happened automatically.  In the clone, doing "sage -docbuild reference html" caused the docs to build: ok.   I then made a trivial change to a source file and re-did the docbuild:  ok, just that file was rebuilt.  I then switched back to the main brancha nd again did a docbuild, expecting nothing to happen -- but a complete docbuild started.
 
 It would be good if someone else would try this too.  It looks as if we have made progress but not solved it yet.
 
 
+
 ---
 
-Comment by mvngu created at 2009-12-30 20:21:33
+archive/issue_comments_067329.json:
+```json
+{
+    "body": "I took the source tarball of Sage 4.3 and replaced the package  sphinx-0.6.3.p3.spkg` with `sphinx-0.6.3.p4.spkg`. I then built Sage 4.3 with the updated Sphinx package. On a newly compiled Sage 4.3 with the updated Sphinx spkg, I tested the updated Sphinx spkg as follows:\n\n1. The command \"./sage -docbuild all html\" didn't rebuild any of the documents in the standard documentation.\n2. I made a clone of the main branch and executed \"./sage -docbuild all html\", which build the doc. \n3. I made a trivial change to a file in the cloned branch. Again, I ran \"./sage -docbuild all html\", which only rebuilt the portion of the document that has changed.\n4. Switching back to the main branch didn't rebuild any of the documents.\n\nSo the problem here is that the updated Sphinx spkg needs to also be built and installed during the build process of Sage. That is, you need to replace the previous version of the Sphinx package with the updated spkg before compiling Sage 4.3 from source. You would still experience the same problem of documents rebuilding if you force an installation of the updated Sphinx spkg on an already compiled Sage.",
+    "created_at": "2009-12-30T20:21:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7796",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7796#issuecomment-67329",
+    "user": "mvngu"
+}
+```
 
 I took the source tarball of Sage 4.3 and replaced the package  sphinx-0.6.3.p3.spkg` with `sphinx-0.6.3.p4.spkg`. I then built Sage 4.3 with the updated Sphinx package. On a newly compiled Sage 4.3 with the updated Sphinx spkg, I tested the updated Sphinx spkg as follows:
 
- 1. The command "./sage -docbuild all html" didn't rebuild any of the documents in the standard documentation.
- 1. I made a clone of the main branch and executed "./sage -docbuild all html", which build the doc. 
- 1. I made a trivial change to a file in the cloned branch. Again, I ran "./sage -docbuild all html", which only rebuilt the portion of the document that has changed.
- 1. Switching back to the main branch didn't rebuild any of the documents.
+1. The command "./sage -docbuild all html" didn't rebuild any of the documents in the standard documentation.
+2. I made a clone of the main branch and executed "./sage -docbuild all html", which build the doc. 
+3. I made a trivial change to a file in the cloned branch. Again, I ran "./sage -docbuild all html", which only rebuilt the portion of the document that has changed.
+4. Switching back to the main branch didn't rebuild any of the documents.
 
 So the problem here is that the updated Sphinx spkg needs to also be built and installed during the build process of Sage. That is, you need to replace the previous version of the Sphinx package with the updated spkg before compiling Sage 4.3 from source. You would still experience the same problem of documents rebuilding if you force an installation of the updated Sphinx spkg on an already compiled Sage.
 
 
+
 ---
 
-Comment by cremona created at 2009-12-30 20:29:53
+archive/issue_comments_067330.json:
+```json
+{
+    "body": "I would be happy to trust you on this without going through all that myself!  But perhaps we need a third opinion before giving this a positive review?\n\nI would think that making this spkg replacement part of the first alpha release of 4.3.1 would be the best way of testing it more thoroughly.",
+    "created_at": "2009-12-30T20:29:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7796",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7796#issuecomment-67330",
+    "user": "cremona"
+}
+```
 
 I would be happy to trust you on this without going through all that myself!  But perhaps we need a third opinion before giving this a positive review?
 
 I would think that making this spkg replacement part of the first alpha release of 4.3.1 would be the best way of testing it more thoroughly.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-12-30 23:26:33
+archive/issue_comments_067331.json:
+```json
+{
+    "body": "Replying to [comment:2 cremona]:\n> I then switched back to the main branch and again did a docbuild, expecting nothing to happen -- but a complete docbuild started.\n\nThe new spkg-install file deletes all of the documentation output (from all of the branches, not just the active one), so the docs for sage-main were deleted -- that's why they had to be rebuilt.\n\nAnyway, the whole thing works as advertised for me.  Can we give it a positive review now?\n\nAlso, do we need to report anything upstream (in conjunction with the changes in #7683)?",
+    "created_at": "2009-12-30T23:26:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7796",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7796#issuecomment-67331",
+    "user": "jhpalmieri"
+}
+```
 
 Replying to [comment:2 cremona]:
 > I then switched back to the main branch and again did a docbuild, expecting nothing to happen -- but a complete docbuild started.
@@ -98,15 +178,37 @@ Anyway, the whole thing works as advertised for me.  Can we give it a positive r
 Also, do we need to report anything upstream (in conjunction with the changes in #7683)?
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-12-30 23:26:33
+archive/issue_comments_067332.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-12-30T23:26:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7796",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7796#issuecomment-67332",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mhansen created at 2010-01-03 22:25:33
+archive/issue_comments_067333.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-03T22:25:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7796",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7796#issuecomment-67333",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

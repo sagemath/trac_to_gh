@@ -1,17 +1,44 @@
 # Issue 4156: [with patch, needs review] memleak in graph_isom
 
-Issue created by migration from https://trac.sagemath.org/ticket/4156
-
-Original creator: rlm
-
-Original creation time: 2008-09-20 08:35:40
-
+archive/issues_004156.json:
+```json
+{
+    "body": "Assignee: rlm\n\nIt's a small one, which is only part of the doctesting part of the code, and the code will soon be removed entirely, but no point letting it leak...\n\nIssue created by migration from https://trac.sagemath.org/ticket/4156\n\n",
+    "created_at": "2008-09-20T08:35:40Z",
+    "labels": [
+        "memleak",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch, needs review] memleak in graph_isom",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4156",
+    "user": "rlm"
+}
+```
 Assignee: rlm
 
 It's a small one, which is only part of the doctesting part of the code, and the code will soon be removed entirely, but no point letting it leak...
 
+Issue created by migration from https://trac.sagemath.org/ticket/4156
+
+
+
+
 
 ---
+
+archive/issue_comments_030179.json:
+```json
+{
+    "body": "Attachment\n\nD'oh. Positive review.\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-20T10:20:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4156",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4156#issuecomment-30179",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -22,15 +49,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-20 22:01:46
+archive/issue_comments_030180.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-09-20T22:01:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4156",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4156#issuecomment-30180",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-20 22:01:46
+archive/issue_comments_030181.json:
+```json
+{
+    "body": "Merged in Sage 3.1.3.alpha1",
+    "created_at": "2008-09-20T22:01:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4156",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4156#issuecomment-30181",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.1.3.alpha1

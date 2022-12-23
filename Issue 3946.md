@@ -1,11 +1,21 @@
 # Issue 3946: Tidier BinaryQF reductions
 
-Issue created by migration from https://trac.sagemath.org/ticket/3946
-
-Original creator: choldsworth
-
-Original creation time: 2008-08-25 02:35:02
-
+archive/issues_003946.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  cremona\n\nCremona writes:\n>However, there are some things I really do not like about this implementation:\n\n>   1. self.reduce() computes (if necessary) caches and returns the reduced form equivalent to        \n>self. I would expect it to change self into the reduced form, and have a different function   \n>self.reduced_form() to do what this function does. \n\n>  2. The function is_reduced() actually reduces self and tests if the result is the same as \n>self. This is potentially very expensive! To test is_reduced() you should just test that the \n>usual inequalities are satisfied. \n\nI have attached a patch which I believe fixes these issues. I have also altered the reduction methods to throw more enlightening exceptions when given negative definite forms and indefinite forms.\n\nIt would be nice to implement the the handling of indefinite and negative definite forms at some point in the future, however I don't think Pari can deal with negative definite forms currently.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3946\n\n",
+    "created_at": "2008-08-25T02:35:02Z",
+    "labels": [
+        "number theory",
+        "minor",
+        "enhancement"
+    ],
+    "title": "Tidier BinaryQF reductions",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3946",
+    "user": "choldsworth"
+}
+```
 Assignee: was
 
 CC:  cremona
@@ -25,30 +35,80 @@ I have attached a patch which I believe fixes these issues. I have also altered 
 
 It would be nice to implement the the handling of indefinite and negative definite forms at some point in the future, however I don't think Pari can deal with negative definite forms currently.
 
+Issue created by migration from https://trac.sagemath.org/ticket/3946
+
+
+
+
 
 ---
+
+archive/issue_comments_028329.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-08-25T02:36:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3946",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3946#issuecomment-28329",
+    "user": "choldsworth"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by cremona created at 2008-08-25 10:51:10
+archive/issue_comments_028330.json:
+```json
+{
+    "body": "I am happy that this patch deals with the criticisms I had regarding #3857 (which did in fact have nothing to do with the bug which #3857 fixed, but rather were criticisms of some of the design of this class).\n\nThe patch applies fine after the patches for #3857 (and probably independently of those too), and all doctests in sage/quadratic_forms pass.",
+    "created_at": "2008-08-25T10:51:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3946",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3946#issuecomment-28330",
+    "user": "cremona"
+}
+```
 
 I am happy that this patch deals with the criticisms I had regarding #3857 (which did in fact have nothing to do with the bug which #3857 fixed, but rather were criticisms of some of the design of this class).
 
 The patch applies fine after the patches for #3857 (and probably independently of those too), and all doctests in sage/quadratic_forms pass.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-25 20:17:28
+archive/issue_comments_028331.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-08-25T20:17:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3946",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3946#issuecomment-28331",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-25 20:17:28
+archive/issue_comments_028332.json:
+```json
+{
+    "body": "Merged in Sage 3.1.2.alpha1",
+    "created_at": "2008-08-25T20:17:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3946",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3946#issuecomment-28332",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.1.2.alpha1

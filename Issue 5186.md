@@ -1,11 +1,21 @@
 # Issue 5186: mpir build-time CPU detection fails in kvm/qemu amd64 virtual machine
 
-Issue created by migration from https://trac.sagemath.org/ticket/5186
-
-Original creator: wjp
-
-Original creation time: 2009-02-05 08:39:01
-
+archive/issues_005186.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nWhen building the mpir shipped with sage 3.3.alpha5 on a kvm/qemu amd64 virtual machine I get a 32-bit libgmp.so.\n\n\n```\n[root@localhost src]# bash config.guess\nathlon-unknown-linux-gnu\n[root@localhost src]# bash configfsf.guess\nx86_64-unknown-linux-gnu\n```\n\n\nconfig.log and cpuinfo available at:\n\n```\nhttp://www.math.leidenuniv.nl/~wpalenst/sage/kvm_amd64_config.log\nhttp://www.math.leidenuniv.nl/~wpalenst/sage/kvm_amd64_cpuinfo\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5186\n\n",
+    "created_at": "2009-02-05T08:39:01Z",
+    "labels": [
+        "build",
+        "major",
+        "bug"
+    ],
+    "title": "mpir build-time CPU detection fails in kvm/qemu amd64 virtual machine",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5186",
+    "user": "wjp"
+}
+```
 Assignee: mabshoff
 
 When building the mpir shipped with sage 3.3.alpha5 on a kvm/qemu amd64 virtual machine I get a 32-bit libgmp.so.
@@ -27,10 +37,25 @@ http://www.math.leidenuniv.nl/~wpalenst/sage/kvm_amd64_cpuinfo
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5186
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2009-02-05 08:42:43
+archive/issue_comments_039780.json:
+```json
+{
+    "body": "For the record from the above urls:\n\n```\nprocessor\t: 0\nvendor_id\t: AuthenticAMD\ncpu family\t: 6\nmodel\t\t: 2\nmodel name\t: QEMU Virtual CPU version 0.9.1\nstepping\t: 3\ncpu MHz\t\t: 2411.119\ncache size\t: 512 KB\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 2\nwp\t\t: yes\nflags\t\t: fpu de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 syscall nx lm up pni\nbogomips\t: 4828.63\nTLB size\t: 1024 4K pages\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 40 bits physical, 48 bits virtual\npower management:\n```\n\nand\n\n```\n[root@localhost src]# bash config.guess\nathlon-unknown-linux-gnu\n[root@localhost src]# bash configfsf.guess\nx86_64-unknown-linux-gnu\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-05T08:42:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5186",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5186#issuecomment-39780",
+    "user": "mabshoff"
+}
+```
 
 For the record from the above urls:
 
@@ -71,15 +96,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by wjp created at 2010-01-17 02:10:21
+archive/issue_comments_039781.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-17T02:10:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5186",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5186#issuecomment-39781",
+    "user": "wjp"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by wjp created at 2010-01-17 02:10:21
+archive/issue_comments_039782.json:
+```json
+{
+    "body": "This has been fixed in the meantime.",
+    "created_at": "2010-01-17T02:10:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5186",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5186#issuecomment-39782",
+    "user": "wjp"
+}
+```
 
 This has been fixed in the meantime.

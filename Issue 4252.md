@@ -1,11 +1,21 @@
 # Issue 4252: Arrangements / PermutationsNK iterator is broken
 
-Issue created by migration from https://trac.sagemath.org/ticket/4252
-
-Original creator: saliola
-
-Original creation time: 2008-10-07 19:40:10
-
+archive/issues_004252.json:
+```json
+{
+    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\n\n```\nsage: Arrangements(range(5),4).count()\n116\nsage: len(list(sage.combinat.permutation.PermutationsNK(5,4).iterator()))\n116\nsage: factorial(5)/factorial(5-4)\n120\n```\n\n\nThey should all be 120. This also doesn't work for the pairs: (4,4), (5, 4), (5, 5), (6, 4), (6, 5), (6, 6), ....\n\nIssue created by migration from https://trac.sagemath.org/ticket/4252\n\n",
+    "created_at": "2008-10-07T19:40:10Z",
+    "labels": [
+        "combinatorics",
+        "major",
+        "bug"
+    ],
+    "title": "Arrangements / PermutationsNK iterator is broken",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4252",
+    "user": "saliola"
+}
+```
 Assignee: mhansen
 
 CC:  sage-combinat
@@ -23,16 +33,42 @@ sage: factorial(5)/factorial(5-4)
 
 They should all be 120. This also doesn't work for the pairs: (4,4), (5, 4), (5, 5), (6, 4), (6, 5), (6, 6), ....
 
+Issue created by migration from https://trac.sagemath.org/ticket/4252
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2008-10-07 19:55:12
+archive/issue_comments_030935.json:
+```json
+{
+    "body": "This is a duplicate of #4213 which has been fixed in 3.1.3.",
+    "created_at": "2008-10-07T19:55:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4252",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4252#issuecomment-30935",
+    "user": "mhansen"
+}
+```
 
 This is a duplicate of #4213 which has been fixed in 3.1.3.
 
 
+
 ---
 
-Comment by mhansen created at 2008-10-07 19:55:12
+archive/issue_comments_030936.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2008-10-07T19:55:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4252",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4252#issuecomment-30936",
+    "user": "mhansen"
+}
+```
 
 Resolution: duplicate

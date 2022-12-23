@@ -1,11 +1,21 @@
 # Issue 3903: fix mv factorization problem in singular
 
-Issue created by migration from https://trac.sagemath.org/ticket/3903
-
-Original creator: mabshoff
-
-Original creation time: 2008-08-19 23:12:09
-
+archive/issues_003903.json:
+```json
+{
+    "body": "Assignee: tbd\n\nTom Boothby reported the following problem:\n\n```\nring r = 0, (y,z), lp;\npoly f = 3409/20077273328181816976094527488*y3*z6 + \n51233/40154546656363633952189054976*y3*z5 - 7055/20077273328181816976094527488*y2*z6 + \n42833/13384848885454544650729684992*y3*z4 - 28255/10038636664090908488047263744*y2*z5 \n+ 1625/6692424442727272325364842496*y*z6 + 23905/8923232590303029767153123328*y3*z3 - \n637225/80309093312727267904378109952*y2*z4 + 82925/40154546656363633952189054976*y*z5 \n- 125/2230808147575757441788280832*z6 - 710155/80309093312727267904378109952*y2*z3 + \n172625/26769697770909089301459369984*y*z4 - 125/247867571952861937976475648*z5 - \n148175/53539395541818178602918739968*y2*z2 + \n1419725/160618186625454535808756219904*y*z3 - 34625/20077273328181816976094527488*z4 + \n265525/53539395541818178602918739968*y*z2 - 111625/40154546656363633952189054976*z3 + \n306625/321236373250909071617512439808*y*z - 77125/35692930361212119068612493312*z2 - \n254125/321236373250909071617512439808*z - 70625/642472746501818143235024879616;\nfactorize(f,2);\n```\n\nwould roughly fail one out of four times.\n\nThe singular.spkg at #3194 has a fix for that issue by the Singular team, but we need to add a doctest to verify that the issue is truly fixed.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3903\n\n",
+    "created_at": "2008-08-19T23:12:09Z",
+    "labels": [
+        "factorization",
+        "major",
+        "bug"
+    ],
+    "title": "fix mv factorization problem in singular",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3903",
+    "user": "mabshoff"
+}
+```
 Assignee: tbd
 
 Tom Boothby reported the following problem:
@@ -35,17 +45,43 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/3903
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-10-10 19:00:06
+archive/issue_comments_027923.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-10-10T19:00:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3903",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3903#issuecomment-27923",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-10 19:00:06
+archive/issue_comments_027924.json:
+```json
+{
+    "body": "This issue has been fixed in Sage 3.1.2 via #3194.\n\nCheers,\n\nMichael",
+    "created_at": "2008-10-10T19:00:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3903",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3903#issuecomment-27924",
+    "user": "mabshoff"
+}
+```
 
 This issue has been fixed in Sage 3.1.2 via #3194.
 

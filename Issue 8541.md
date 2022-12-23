@@ -1,11 +1,21 @@
 # Issue 8541: modular forms / linear algebra issue -- subspace not invariant
 
-Issue created by migration from https://trac.sagemath.org/ticket/8541
-
-Original creator: was
-
-Original creation time: 2010-03-15 05:20:37
-
+archive/issues_008541.json:
+```json
+{
+    "body": "Assignee: craigcitro\n\n\n```\nsage: CuspForms(DirichletGroup(5).0,5).0\nsage: f[15]\nBoom!\n```\n \n\nThis was reported by Paul Nelson, a grad student at Caltech.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8541\n\n",
+    "created_at": "2010-03-15T05:20:37Z",
+    "labels": [
+        "modular forms",
+        "major",
+        "bug"
+    ],
+    "title": "modular forms / linear algebra issue -- subspace not invariant",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8541",
+    "user": "was"
+}
+```
 Assignee: craigcitro
 
 
@@ -13,21 +23,48 @@ Assignee: craigcitro
 sage: CuspForms(DirichletGroup(5).0,5).0
 sage: f[15]
 Boom!
-}}} 
+```
+ 
 
 This was reported by Paul Nelson, a grad student at Caltech.
+
+Issue created by migration from https://trac.sagemath.org/ticket/8541
+
+
+
 
 
 ---
 
-Comment by davidloeffler created at 2010-04-08 18:24:41
+archive/issue_comments_077209.json:
+```json
+{
+    "body": "Changing assignee from craigcitro to jason, was.",
+    "created_at": "2010-04-08T18:24:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8541",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8541#issuecomment-77209",
+    "user": "davidloeffler"
+}
+```
 
 Changing assignee from craigcitro to jason, was.
 
 
+
 ---
 
-Comment by davidloeffler created at 2010-04-08 18:24:41
+archive/issue_comments_077210.json:
+```json
+{
+    "body": "The problem is in the multimodular algorithm that's used for computing matrix multiplication over cyclotomic fields:\n\n\n```\nsage: K.<zeta4> = CyclotomicField(4)\nsage: m = matrix(K, 1, 1, [186])\nsage: n = matrix(K, 1, 2, [1, -6/125*zeta4 - 117/125])\nsage: m * n\n[                 -23087/125 -1116/125*zeta4 - 21762/125]\n```\n\n\nAccording to the output of verbose, it works modulo a single prime (split in K), in this case 46337; and the result is indeed correct modulo this prime. But that's not enough, clearly. I'm very suspicious about the method `sage.matrix.matrix_cyclo_dense.Matrix_cyclo_dense.height()`. It returns the maximum absolute value of any entry (in any complex embedding), so n has height 1. Shouldn't it return the maximum absolute value of the numerator or denominator of any element, as with the corresponding method for dense rational matrices? (What does this even mean when K doesn't have class number 1?)",
+    "created_at": "2010-04-08T18:24:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8541",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8541#issuecomment-77210",
+    "user": "davidloeffler"
+}
+```
 
 The problem is in the multimodular algorithm that's used for computing matrix multiplication over cyclotomic fields:
 
@@ -44,16 +81,38 @@ sage: m * n
 According to the output of verbose, it works modulo a single prime (split in K), in this case 46337; and the result is indeed correct modulo this prime. But that's not enough, clearly. I'm very suspicious about the method `sage.matrix.matrix_cyclo_dense.Matrix_cyclo_dense.height()`. It returns the maximum absolute value of any entry (in any complex embedding), so n has height 1. Shouldn't it return the maximum absolute value of the numerator or denominator of any element, as with the corresponding method for dense rational matrices? (What does this even mean when K doesn't have class number 1?)
 
 
+
 ---
 
-Comment by davidloeffler created at 2010-04-08 18:24:41
+archive/issue_comments_077211.json:
+```json
+{
+    "body": "Changing component from modular forms to linear algebra.",
+    "created_at": "2010-04-08T18:24:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8541",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8541#issuecomment-77211",
+    "user": "davidloeffler"
+}
+```
 
 Changing component from modular forms to linear algebra.
 
 
+
 ---
 
-Comment by davidloeffler created at 2010-04-08 18:57:14
+archive/issue_comments_077212.json:
+```json
+{
+    "body": "Hold it, my suspicion was wrong: the height method only gets called after clearing denominators, and the problem is still there if we use the integral matrix `n = matrix(K, [125, -6*zeta4 - 117])`. So maybe the problem is here:\n\n```\n        # conservative but correct estimate\n        bound = A.height() * B.height() * self._ncols\n```\n\nPerhaps this estimate is wrong in this degenerate case?",
+    "created_at": "2010-04-08T18:57:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8541",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8541#issuecomment-77212",
+    "user": "davidloeffler"
+}
+```
 
 Hold it, my suspicion was wrong: the height method only gets called after clearing denominators, and the problem is still there if we use the integral matrix `n = matrix(K, [125, -6*zeta4 - 117])`. So maybe the problem is here:
 
@@ -65,80 +124,203 @@ Hold it, my suspicion was wrong: the height method only gets called after cleari
 Perhaps this estimate is wrong in this degenerate case?
 
 
+
 ---
 
-Comment by davidloeffler created at 2010-04-09 11:25:45
+archive/issue_comments_077213.json:
+```json
+{
+    "body": "Changing priority from major to critical.",
+    "created_at": "2010-04-09T11:25:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8541",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8541#issuecomment-77213",
+    "user": "davidloeffler"
+}
+```
 
 Changing priority from major to critical.
 
 
+
 ---
 
-Comment by davidloeffler created at 2010-04-09 21:18:08
+archive/issue_comments_077214.json:
+```json
+{
+    "body": "Changing priority from critical to blocker.",
+    "created_at": "2010-04-09T21:18:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8541",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8541#issuecomment-77214",
+    "user": "davidloeffler"
+}
+```
 
 Changing priority from critical to blocker.
 
 
+
 ---
 
-Comment by burcin created at 2010-04-11 12:46:51
+archive/issue_comments_077215.json:
+```json
+{
+    "body": "This seems to be a duplicate of #8666, which already has a positive review.",
+    "created_at": "2010-04-11T12:46:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8541",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8541#issuecomment-77215",
+    "user": "burcin"
+}
+```
 
 This seems to be a duplicate of #8666, which already has a positive review.
 
 
+
 ---
 
-Comment by davidloeffler created at 2010-04-11 20:22:49
+archive/issue_comments_077216.json:
+```json
+{
+    "body": "Changing priority from blocker to minor.",
+    "created_at": "2010-04-11T20:22:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8541",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8541#issuecomment-77216",
+    "user": "davidloeffler"
+}
+```
 
 Changing priority from blocker to minor.
 
 
+
 ---
 
-Comment by davidloeffler created at 2010-04-11 20:22:49
+archive/issue_comments_077217.json:
+```json
+{
+    "body": "Arguably, the correct statement is that #8666 is a duplicate of this :-).\n\nJust to be safe, it might be worth adding a doctest to the modular forms code to show that the computation that triggered the problem in the original bug report does now work -- I will write a mini-patch tomorrow morning. When that is reviewed and merged then we can close this ticket, but in any case the ticket \"priority\" flag can safely be reduced.",
+    "created_at": "2010-04-11T20:22:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8541",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8541#issuecomment-77217",
+    "user": "davidloeffler"
+}
+```
 
 Arguably, the correct statement is that #8666 is a duplicate of this :-).
 
 Just to be safe, it might be worth adding a doctest to the modular forms code to show that the computation that triggered the problem in the original bug report does now work -- I will write a mini-patch tomorrow morning. When that is reviewed and merged then we can close this ticket, but in any case the ticket "priority" flag can safely be reduced.
 
 
+
 ---
 
-Comment by davidloeffler created at 2010-04-12 13:56:47
+archive/issue_comments_077218.json:
+```json
+{
+    "body": "apply after #8666",
+    "created_at": "2010-04-12T13:56:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8541",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8541#issuecomment-77218",
+    "user": "davidloeffler"
+}
+```
 
 apply after #8666
 
 
+
 ---
+
+archive/issue_comments_077219.json:
+```json
+{
+    "body": "Attachment\n\nAs promised, here's a doctest.",
+    "created_at": "2010-04-12T13:57:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8541",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8541#issuecomment-77219",
+    "user": "davidloeffler"
+}
+```
 
 Attachment
 
 As promised, here's a doctest.
 
 
+
 ---
 
-Comment by davidloeffler created at 2010-04-12 13:57:32
+archive/issue_comments_077220.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-04-12T13:57:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8541",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8541#issuecomment-77220",
+    "user": "davidloeffler"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by was created at 2010-04-14 23:51:37
+archive/issue_comments_077221.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-04-14T23:51:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8541",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8541#issuecomment-77221",
+    "user": "was"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-16 18:42:12
+archive/issue_comments_077222.json:
+```json
+{
+    "body": "Merged \"trac_8541.patch\" in 4.4.alpha0.",
+    "created_at": "2010-04-16T18:42:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8541",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8541#issuecomment-77222",
+    "user": "jhpalmieri"
+}
+```
 
 Merged "trac_8541.patch" in 4.4.alpha0.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-16 18:42:12
+archive/issue_comments_077223.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-04-16T18:42:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8541",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8541#issuecomment-77223",
+    "user": "jhpalmieri"
+}
+```
 
 Resolution: fixed

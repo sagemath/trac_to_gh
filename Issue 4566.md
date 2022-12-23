@@ -1,11 +1,21 @@
 # Issue 4566: speed up assume command (easy change)
 
-Issue created by migration from https://trac.sagemath.org/ticket/4566
-
-Original creator: was
-
-Original creation time: 2008-11-20 17:50:48
-
+archive/issues_004566.json:
+```json
+{
+    "body": "Assignee: burcin\n\n\n```\nThis could be greatly sped up by changing\n  maxima.assume('...')\nto\n maxima.eval(\"assume(..)\")\nin the calculus code...\n\nsage: timeit(\"maxima.eval('assume(x>0)')\")\n5 loops, best of 3: 53.2 ms per loop\nsage: timeit(\"maxima.assume(x>0)\")\n5 loops, best of 3: 122 ms per loop\n\nI don't have time to do this...\n- Hide quoted text -\n\nOn Tue, Oct 14, 2008 at 7:32 AM, Stan Schymanski <schymans@gmail.com> wrote:\n>\n> Dear all,\n>\n> Is there a reason why the assume(...) command takes so much longer\n> than var(...)?\n> Example:\n> %time\n> var('av jbiom lwat p rwat veloc mort epot esv etv esb etb wv wb qbv\n> bv')\n> gives:\n> CPU time: 0.00 s,  Wall time: 0.00 s\n> On the other hand,\n> %time\n> assume(p>0, veloc>0,\n> mort>0,lwat>0,jbiom>0,rwat>0,av>0,av<1,wv>0,wb>0,bv>0)\n> gives:\n> CPU time: 2.91 s,  Wall time: 8.78 s\n>\n> This is with sage 3.1.2. on an Intel Mac with OS X 10.4.11.\n>\n> Thanks for your help!\n>\n> Stan\n>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4566\n\n",
+    "created_at": "2008-11-20T17:50:48Z",
+    "labels": [
+        "calculus",
+        "minor",
+        "bug"
+    ],
+    "title": "speed up assume command (easy change)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4566",
+    "user": "was"
+}
+```
 Assignee: burcin
 
 
@@ -52,17 +62,43 @@ On Tue, Oct 14, 2008 at 7:32 AM, Stan Schymanski <schymans@gmail.com> wrote:
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4566
+
+
+
+
 
 ---
 
-Comment by AlexGhitza created at 2009-01-22 18:22:25
+archive/issue_comments_034196.json:
+```json
+{
+    "body": "Changing type from defect to enhancement.",
+    "created_at": "2009-01-22T18:22:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4566",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4566#issuecomment-34196",
+    "user": "AlexGhitza"
+}
+```
 
 Changing type from defect to enhancement.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-09-04 17:57:38
+archive/issue_comments_034197.json:
+```json
+{
+    "body": "To release manager: This should probably be marked Invalid or Wontfix.\n\nThe Pynac switch has massively sped up assumptions, so that the timing above that was 2.91 s is now about 0.02 s, presumably on a fairly similar machine.  In addition, the fix indicated by was is no longer correct (if it ever was), because although maxima.eval is indeed faster, it needs to have a string passed in, not a string evaluated at a SymbolicExpression...\n\nAnyway, the proof is in the pudding: with 4.1.1, both with and without the appropriate version of the proposed change, assume(x>0) requires 33 microseconds.  Since that is already 1000 times faster than the fastest time above, we probably don't need to worry about this any more.",
+    "created_at": "2009-09-04T17:57:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4566",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4566#issuecomment-34197",
+    "user": "kcrisman"
+}
+```
 
 To release manager: This should probably be marked Invalid or Wontfix.
 
@@ -71,9 +107,20 @@ The Pynac switch has massively sped up assumptions, so that the timing above tha
 Anyway, the proof is in the pudding: with 4.1.1, both with and without the appropriate version of the proposed change, assume(x>0) requires 33 microseconds.  Since that is already 1000 times faster than the fastest time above, we probably don't need to worry about this any more.
 
 
+
 ---
 
-Comment by was created at 2009-09-05 15:31:10
+archive/issue_comments_034198.json:
+```json
+{
+    "body": "It indeed works now:\n\n```\nsage: timeit(\"maxima.eval('assume(x>0)')\")\n\n5 loops, best of 3: 1.29 ms per loop\nsage: \nsage: timeit(\"assume(x>0)\")\n5 loops, best of 3: 40.2 \u00b5s per loop\n```\n",
+    "created_at": "2009-09-05T15:31:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4566",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4566#issuecomment-34198",
+    "user": "was"
+}
+```
 
 It indeed works now:
 
@@ -88,16 +135,38 @@ sage: timeit("assume(x>0)")
 
 
 
+
 ---
 
-Comment by was created at 2009-09-05 15:31:10
+archive/issue_comments_034199.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-09-05T15:31:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4566",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4566#issuecomment-34199",
+    "user": "was"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by kcrisman created at 2009-09-05 15:56:52
+archive/issue_comments_034200.json:
+```json
+{
+    "body": "More to the point, the maxima.eval didn't do what you think it did, because of the preparser (Maxima doesn't understand assume(x>Integer(0))), and fixing things so it did actually assume x>0 and then yielded\n\n```\nsage: bool(x>0)\nTrue\n```\n\nended up making things the same speed as the regular assume. That was what I intended to convey above.",
+    "created_at": "2009-09-05T15:56:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4566",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4566#issuecomment-34200",
+    "user": "kcrisman"
+}
+```
 
 More to the point, the maxima.eval didn't do what you think it did, because of the preparser (Maxima doesn't understand assume(x>Integer(0))), and fixing things so it did actually assume x>0 and then yielded
 

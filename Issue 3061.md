@@ -1,11 +1,21 @@
 # Issue 3061: use readlink and realpatch so that symlinking sage works
 
-Issue created by migration from https://trac.sagemath.org/ticket/3061
-
-Original creator: mabshoff
-
-Original creation time: 2008-04-30 01:35:11
-
+archive/issues_003061.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nMax Murphy suggests:\n\n```\nDear All,\n\nI just tried making a symlink to sage and it broke because it defaults\nto using $0 to work out where SAGE_DIR is.  I'd like to propose a\nsmall change that allows symlinks to be used:\n\n---------------------------\nTHE FILE: is the shell script called sage in the root of the install\ntree and which starts:\n\n#!/bin/sh\n\n# Set SAGE_ROOT to the location of the sage install.\nSAGE_ROOT=\".....\"\n\nCUR=\"`pwd`\"   # save the current directory, so can change back after\nstartup\n\nif [ \"$SAGE_ROOT\" = \".....\" ];  then\n    SAGE_ROOT=`echo \"$0\" | sed -e 's/....$//g'`\n-----------------------------\nBEFORE:  The line I'd like to change is:\n\n    SAGE_ROOT=`echo \"$0\" | sed -e 's/....$//g'`\n\n----------------------------\nAFTER:\n\n    SAGE_ROOT=`readlink -f \"$0\"` 2>/dev/null || \\\n    SAGE_ROOT=`realpath    \"$0\"` 2>/dev/null || \\\n    SAGE_ROOT=\"$0\"\n\n    SAGE_ROOT=\"${SAGE_ROOT%/*}/\"\n\n--------------------------\nDISCUSSION:\nreadlink -f  and  realpath do the same thing - they get a clean path\nfree of relative components and symlinks.\n\nThe reason for trying both is that some systems have only the one or\nthe other.  Trying raw $0 is there as a last resort just in case.\nDon't want to break any existing installs!\n\nThe final line does -almost- the same as the sed.  The sed removes\nfour characters (sage), the new code removes the file part of the\npath.  Debatable but it's a bit quicker than spawning a sed process\nand allows for name changes.  You never know.. it might become\nfennel.  All right, this part of the argument is pretty weak!\n\nBut the upside is that I can now make symlinks to sage and everything\nworks dandy, which it didn't before.\n\nHave fun!\n\nAnd sorry about not using [code] tags .. I couldn't find the button!\n(wimp)\n\nRegards, Max  (new to this forum) \n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3061\n\n",
+    "created_at": "2008-04-30T01:35:11Z",
+    "labels": [
+        "distribution",
+        "major",
+        "bug"
+    ],
+    "title": "use readlink and realpatch so that symlinking sage works",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3061",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 Max Murphy suggests:
@@ -76,15 +86,43 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/3061
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-04-30 05:43:54
+archive/issue_comments_021133.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-04-30T05:43:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3061",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3061#issuecomment-21133",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
+
+archive/issue_comments_021134.json:
+```json
+{
+    "body": "Attachment\n\nTested on OSX & Linux. It works:\n\n```\nmabshoff@sage:~$ ln -s /scratch/mabshoff/release-cycle/sage-3.0.1.alpha1/sage foo\nmabshoff@sage:~$ ls -al foo\nlrwxrwxrwx 1 mabshoff 1090 54 2008-04-29 22:37 foo -> /scratch/mabshoff/release-cycle/sage-3.0.1.alpha1/sage\nmabshoff@sage:~$ ./foo\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.0.1.alpha0, Release Date: 2008-04-26                |\n| Type notebook() for the GUI, and license() for information.        |\nsage:\nExiting SAGE (CPU time 0m0.01s, Wall time 0m1.41s).\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2008-04-30T05:43:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3061",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3061#issuecomment-21134",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -109,22 +147,55 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by gfurnish created at 2008-04-30 06:03:06
+archive/issue_comments_021135.json:
+```json
+{
+    "body": "works for me",
+    "created_at": "2008-04-30T06:03:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3061",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3061#issuecomment-21135",
+    "user": "gfurnish"
+}
+```
 
 works for me
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-30 06:11:15
+archive/issue_comments_021136.json:
+```json
+{
+    "body": "Merged in Sage 3.0.1.alpha1",
+    "created_at": "2008-04-30T06:11:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3061",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3061#issuecomment-21136",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.1.alpha1
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-30 06:11:15
+archive/issue_comments_021137.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-04-30T06:11:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3061",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3061#issuecomment-21137",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

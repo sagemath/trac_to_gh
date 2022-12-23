@@ -1,11 +1,21 @@
 # Issue 9396: statistical package r fails to run, missing libicuuc
 
-Issue created by migration from https://trac.sagemath.org/ticket/9396
-
-Original creator: mariah
-
-Original creation time: 2010-06-30 15:34:57
-
+archive/issues_009396.json:
+```json
+{
+    "body": "Assignee: Mariah Lenox\n\nCC:  david.kirkby@onetel.net\n\nThe statistical package r fails to run if the \nlibicuuc library (frequently in /usr/lib) is not\npresent.\n\nlibicuuc is from the International Components for Unicode\nproject (http://site.icu-project.org/).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9396\n\n",
+    "created_at": "2010-06-30T15:34:57Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "statistical package r fails to run, missing libicuuc",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9396",
+    "user": "mariah"
+}
+```
 Assignee: Mariah Lenox
 
 CC:  david.kirkby@onetel.net
@@ -17,15 +27,43 @@ present.
 libicuuc is from the International Components for Unicode
 project (http://site.icu-project.org/).
 
+Issue created by migration from https://trac.sagemath.org/ticket/9396
+
+
+
+
 
 ---
+
+archive/issue_comments_089472.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-06-30T17:53:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9396#issuecomment-89472",
+    "user": "mariah"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mariah created at 2010-06-30 17:58:21
+archive/issue_comments_089473.json:
+```json
+{
+    "body": "Further investigation revealed that the problem only\noccurs when SAGE_FAT_BINARY is used, libicuuc exists\non the build computer, but not on the computer where\nsage executes.\n\nA solution is to add \"--with-ICU=no\" to the configure\nline in spkg-INSTALL.  A mercurial patch is attached\nwhich does this.\n\nThe same solution _may_ work for Solaris (I have not\ntested) which currently uses \"--without-ICU\".",
+    "created_at": "2010-06-30T17:58:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9396#issuecomment-89473",
+    "user": "mariah"
+}
+```
 
 Further investigation revealed that the problem only
 occurs when SAGE_FAT_BINARY is used, libicuuc exists
@@ -40,16 +78,38 @@ The same solution _may_ work for Solaris (I have not
 tested) which currently uses "--without-ICU".
 
 
+
 ---
 
-Comment by mariah created at 2010-06-30 17:58:40
+archive/issue_comments_089474.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-06-30T17:58:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9396#issuecomment-89474",
+    "user": "mariah"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-07-02 20:50:18
+archive/issue_comments_089475.json:
+```json
+{
+    "body": "In addition to providing a patch as you have done, it's normal Sage practice to put on the trac tickets a link to complete .spkg file. That allows a reviewer to quickly test the revised .spkg file without making it. It also allows the reviewer to check that the repository in the package is correct (i.e. 'hg status' shows no output). However, do not attach the .spkg file - only provide a link. \n\nAccording to the GNU autoconf manual:\n\nhttp://www.gnu.org/software/autoconf/manual/autoconf.html#External-Software\n\n\"--without-package is equivalent to --with-package=no\" \n\nI don't know anything about the SAGE_FAT_BINARY, but when I asked William if it was important, he said very so. \n\n\nI don't know whether just disabling this library is best or not. Your patch could disable it for some people that might make use of it. With Solaris, it was clear R would never build without this library, but either the library is supplied with almost all Linux distributions, or R builds without it on some systems. \n\nI'll raise this on sage-devel. \n\nDave",
+    "created_at": "2010-07-02T20:50:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9396#issuecomment-89475",
+    "user": "drkirkby"
+}
+```
 
 In addition to providing a patch as you have done, it's normal Sage practice to put on the trac tickets a link to complete .spkg file. That allows a reviewer to quickly test the revised .spkg file without making it. It also allows the reviewer to check that the repository in the package is correct (i.e. 'hg status' shows no output). However, do not attach the .spkg file - only provide a link. 
 
@@ -69,16 +129,38 @@ I'll raise this on sage-devel.
 Dave
 
 
+
 ---
 
-Comment by drkirkby created at 2010-07-02 20:50:18
+archive/issue_comments_089476.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_info.",
+    "created_at": "2010-07-02T20:50:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9396#issuecomment-89476",
+    "user": "drkirkby"
+}
+```
 
 Changing status from needs_review to needs_info.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-07-03 14:56:51
+archive/issue_comments_089477.json:
+```json
+{
+    "body": "Replying to [comment:1 mariah]:\n> Further investigation revealed that the problem only\n> occurs when SAGE_FAT_BINARY is used, libicuuc exists\n> on the build computer, but not on the computer where\n> sage executes.\n\nGiven $SAGE_ROOT/README.txt says\n\n\n```\n3. Fat Binaries: To make a binary that will run on the widest range of\n   target machines, set the SAGE_FAT_BINARY environment variable to\n   \"yes\" before building Sage:\n\n       export SAGE_FAT_BINARY=\"yes\"\n       make\n       ./sage -bdist x.y.z-fat\n```\n\n\nthen it seems perfectly reasonable that if one wants Sage to run on the widest range of platforms, that this library is disabled. \n\nIf you can provide a link to a .spkg which has all the changes, then I will no doubt give this positive review. \n\nDave",
+    "created_at": "2010-07-03T14:56:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9396#issuecomment-89477",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:1 mariah]:
 > Further investigation revealed that the problem only
@@ -107,9 +189,20 @@ If you can provide a link to a .spkg which has all the changes, then I will no d
 Dave
 
 
+
 ---
 
-Comment by rlm created at 2010-07-09 09:43:34
+archive/issue_comments_089478.json:
+```json
+{
+    "body": "Replying to [comment:5 drkirkby]:\n> If you can provide a link to a .spkg which has all the changes, then I will no doubt give this positive review. \n\nhttp://sage.math.washington.edu/home/rlmill/r-2.10.1.p3.spkg",
+    "created_at": "2010-07-09T09:43:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9396#issuecomment-89478",
+    "user": "rlm"
+}
+```
 
 Replying to [comment:5 drkirkby]:
 > If you can provide a link to a .spkg which has all the changes, then I will no doubt give this positive review. 
@@ -117,16 +210,38 @@ Replying to [comment:5 drkirkby]:
 http://sage.math.washington.edu/home/rlmill/r-2.10.1.p3.spkg
 
 
+
 ---
 
-Comment by rlm created at 2010-07-09 09:43:34
+archive/issue_comments_089479.json:
+```json
+{
+    "body": "Changing status from needs_info to needs_review.",
+    "created_at": "2010-07-09T09:43:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9396#issuecomment-89479",
+    "user": "rlm"
+}
+```
 
 Changing status from needs_info to needs_review.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-07-09 11:40:02
+archive/issue_comments_089480.json:
+```json
+{
+    "body": "SPKG.txt is wrong, due undoubtably due to the fact #9186 was recently merged, and took the patch level 2 number. \n\n\n```\n### r-2.10.1.p2 (Mitesh Patel, June 8th 2010)\n * #9186: Set an empty MAKEFLAGS variable before \"make install\".  On\n   OS X, at least, this fixes building multiple spkgs in parallel (cf.\n   #8306).\n\n### r-2.10.1.p2 (Mariah Lenox, 30 Jun 2010)\n * added \"--with-ICU=no\" to configure line of spkg-install (#9396)\n\n### r-2.10.1.p1 (Karl-Dieter Crisman, April 12th 2010)\n * Re-enable Aqua support on OSX\n```\n\n\nThe entry for Mariah's code should now be r-2.10.1.p3, not r-2.10.1.p2. \n\nI've just started a build on sage.math with this package and SAGE_FAT_BINARY=yes and will look over it. I can't see any reason this should fail, but I am going to check it. I should be back in an hour or two with a definitive decision. \n\nBTW, I know William has offered Mariah an account, which she has accepted, so soon she should have an account and be able to put packages on sage.math herself. \n\nDave",
+    "created_at": "2010-07-09T11:40:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9396#issuecomment-89480",
+    "user": "drkirkby"
+}
+```
 
 SPKG.txt is wrong, due undoubtably due to the fact #9186 was recently merged, and took the patch level 2 number. 
 
@@ -154,37 +269,94 @@ BTW, I know William has offered Mariah an account, which she has accepted, so so
 Dave
 
 
+
 ---
 
-Comment by drkirkby created at 2010-07-09 11:40:02
+archive/issue_comments_089481.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-07-09T11:40:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9396#issuecomment-89481",
+    "user": "drkirkby"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by rlm created at 2010-07-09 12:10:05
+archive/issue_comments_089482.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-07-09T12:10:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9396#issuecomment-89482",
+    "user": "rlm"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
+
+archive/issue_comments_089483.json:
+```json
+{
+    "body": "Attachment\n\nspkg updated",
+    "created_at": "2010-07-09T12:10:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9396#issuecomment-89483",
+    "user": "rlm"
+}
+```
 
 Attachment
 
 spkg updated
 
 
+
 ---
 
-Comment by drkirkby created at 2010-07-09 12:43:11
+archive/issue_comments_089484.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-07-09T12:43:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9396#issuecomment-89484",
+    "user": "drkirkby"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-07-09 12:43:11
+archive/issue_comments_089485.json:
+```json
+{
+    "body": "Em, I thought this one was a formality, but glad I checked, since R fails to build on sage.math with SAGE_FAT_BINARY=yes (I've not tried with that unset). \n\n\n```\nr-2.10.1.p3/.hg/branch.cache\nr-2.10.1.p3/SPKG.txt\nFinished extraction\n****************************************************\nHost system\nuname -a:\nLinux sage.math.washington.edu 2.6.24-26-server #1 SMP Tue Dec 1 18:26:43 UTC 2009 x86_64 GNU/Linux\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: x86_64-linux-gnu\nConfigured with: ../src/configure -v --enable-languages=c,c++,fortran,objc,obj-c++,treelang --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.2 --program-suffix=-4.2 --enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --enable-mpfr --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu\nThread model: posix\ngcc version 4.2.4 (Ubuntu 4.2.4-1ubuntu4)\n****************************************************\n./spkg-install: line 114: syntax error near unexpected token `else'\n./spkg-install: line 114: `     else'\n\nreal\t0m0.028s\nuser\t0m0.000s\nsys\t0m0.000s\nsage: An error occurred while installing r-2.10.1.p3\n```\n\n\n\nDave",
+    "created_at": "2010-07-09T12:43:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9396#issuecomment-89485",
+    "user": "drkirkby"
+}
+```
 
 Em, I thought this one was a formality, but glad I checked, since R fails to build on sage.math with SAGE_FAT_BINARY=yes (I've not tried with that unset). 
 
@@ -221,9 +393,20 @@ sage: An error occurred while installing r-2.10.1.p3
 Dave
 
 
+
 ---
 
-Comment by drkirkby created at 2010-07-09 12:54:02
+archive/issue_comments_089486.json:
+```json
+{
+    "body": "I think the problem is:\n\n\n```\n     if [ \"$SAGE_FAT_BINARY\" = \"yes\" ];\n```\n\n\nshould be:\n\n\n```\n     if [ \"$SAGE_FAT_BINARY\" = \"yes\" ]; then\n```\n\n\nI've just made that change, and it at least starts to compile now. However, I don't have time to do any more on this for a few hours, since I have a chess game scheduled in a few minutes. \n\nThere is another ticket I've just created for R (#9464), since R has Fortran code, but a Fortran dependency is not listed. I'll test these later today. \n\nDave",
+    "created_at": "2010-07-09T12:54:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9396#issuecomment-89486",
+    "user": "drkirkby"
+}
+```
 
 I think the problem is:
 
@@ -248,9 +431,20 @@ There is another ticket I've just created for R (#9464), since R has Fortran cod
 Dave
 
 
+
 ---
 
-Comment by drkirkby created at 2010-07-09 15:14:17
+archive/issue_comments_089487.json:
+```json
+{
+    "body": "OK, here's a patch which corrects the syntax error. With this addition, R builds without the library. config.log shows R building with the option --with-icu=no. \n\n\n```\nThis file contains any messages produced by compilers while\nrunning configure, to aid debugging if configure makes a mistake.\n\nIt was created by R configure 2.10.1, which was\ngenerated by GNU Autoconf 2.61.  Invocation command line was\n\n  $ ./configure --prefix=/home/kirkby/sage-4.5.alpha4/local --enable-R-shlib --with-x=yes --with-readline=/home/kirkby/sage-4.5.alpha4/local --with-blas=-L/home/kirkby/sage-4.5.alpha4/local/lib -lf77blas -latlas --with-lapack=-L/home/kirkby/sage-4.5.alpha4/local/lib -llapack -lcblas --with-ICU=no\n\n## --------- ##\n## Platform. ##\n## --------- ##\n\nhostname = sage.math.washington.edu\n```\n\n\nA revised .spkg may be found at \n\nhttp://boxen.math.washington.edu/home/kirkby/patches/r-2.10.1.p3.spkg\n\nDave",
+    "created_at": "2010-07-09T15:14:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9396#issuecomment-89487",
+    "user": "drkirkby"
+}
+```
 
 OK, here's a patch which corrects the syntax error. With this addition, R builds without the library. config.log shows R building with the option --with-icu=no. 
 
@@ -279,28 +473,74 @@ http://boxen.math.washington.edu/home/kirkby/patches/r-2.10.1.p3.spkg
 Dave
 
 
+
 ---
 
-Comment by drkirkby created at 2010-07-09 15:14:17
+archive/issue_comments_089488.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-07-09T15:14:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9396#issuecomment-89488",
+    "user": "drkirkby"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-07-09 15:15:07
+archive/issue_comments_089489.json:
+```json
+{
+    "body": "Corrects syntax error in spkg-install",
+    "created_at": "2010-07-09T15:15:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9396#issuecomment-89489",
+    "user": "drkirkby"
+}
+```
 
 Corrects syntax error in spkg-install
 
 
+
 ---
 
-Comment by rlm created at 2010-07-18 10:37:50
+archive/issue_comments_089490.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-07-18T10:37:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9396#issuecomment-89490",
+    "user": "rlm"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
+
+archive/issue_comments_089491.json:
+```json
+{
+    "body": "Attachment\n\nI'm setting this to positive review, since it builds on Solaris and off.\n\nI'm also removing myself from the author block, since I did virtually nothing.",
+    "created_at": "2010-07-18T10:37:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9396#issuecomment-89491",
+    "user": "rlm"
+}
+```
 
 Attachment
 
@@ -309,9 +549,20 @@ I'm setting this to positive review, since it builds on Solaris and off.
 I'm also removing myself from the author block, since I did virtually nothing.
 
 
+
 ---
 
-Comment by rlm created at 2010-07-18 20:02:44
+archive/issue_comments_089492.json:
+```json
+{
+    "body": "With a fresh sage build, sage can't even start:\n\n```\nTraceback (most recent call last):\n File \"/mnt/usb1/scratch/wstein/build/sage-4.5.1/local/bin/sage-eval\",\nline 4, in <module>\n   from sage.all import *\n File \"/mnt/usb1/scratch/wstein/build/sage-4.5.1/local/lib/python2.6/site-packages/sage/all.py\",\nline 73, in <module>\n   from sage.matrix.all     import *\n File \"/mnt/usb1/scratch/wstein/build/sage-4.5.1/local/lib/python2.6/site-packages/sage/matrix/all.py\",\nline 1, in <module>\n   from matrix_space import MatrixSpace, is_MatrixSpace\n File \"/mnt/usb1/scratch/wstein/build/sage-4.5.1/local/lib/python2.6/site-packages/sage/matrix/matrix_space.py\",\nline 40, in <module>\n   import matrix_mod2_dense\nImportError: /mnt/usb1/scratch/wstein/build/sage-4.5.1/local/lib/python2.6/site-packages/sage/matrix/matrix_mod2_dense.so:\nundefined symbol: mzd_lqup\nSage failed to startup.\n```\n",
+    "created_at": "2010-07-18T20:02:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9396#issuecomment-89492",
+    "user": "rlm"
+}
+```
 
 With a fresh sage build, sage can't even start:
 
@@ -336,30 +587,74 @@ Sage failed to startup.
 
 
 
+
 ---
 
-Comment by rlm created at 2010-07-18 20:02:44
+archive/issue_comments_089493.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_work.",
+    "created_at": "2010-07-18T20:02:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9396#issuecomment-89493",
+    "user": "rlm"
+}
+```
 
 Changing status from positive_review to needs_work.
 
 
+
 ---
 
-Comment by rlm created at 2010-07-18 20:05:28
+archive/issue_comments_089494.json:
+```json
+{
+    "body": "Changing status from needs_work to positive_review.",
+    "created_at": "2010-07-18T20:05:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9396#issuecomment-89494",
+    "user": "rlm"
+}
+```
 
 Changing status from needs_work to positive_review.
 
 
+
 ---
 
-Comment by rlm created at 2010-07-18 20:05:28
+archive/issue_comments_089495.json:
+```json
+{
+    "body": "Sorry, totally wrong ticket.",
+    "created_at": "2010-07-18T20:05:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9396#issuecomment-89495",
+    "user": "rlm"
+}
+```
 
 Sorry, totally wrong ticket.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-07-18 20:16:52
+archive/issue_comments_089496.json:
+```json
+{
+    "body": "Replying to [comment:14 rlm]:\n> Sorry, totally wrong ticket.\n\nI was just about to ask what the connection was! When I Gooogled the error you showed, it looked more like an M4RI issue. Anyway, I'm glad it's not this ticket. \n\nDave",
+    "created_at": "2010-07-18T20:16:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9396#issuecomment-89496",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:14 rlm]:
 > Sorry, totally wrong ticket.
@@ -369,17 +664,39 @@ I was just about to ask what the connection was! When I Gooogled the error you s
 Dave
 
 
+
 ---
 
-Comment by kcrisman created at 2010-08-05 15:36:46
+archive/issue_comments_089497.json:
+```json
+{
+    "body": "Hopefully this gets in the next release - it could be related to some other support requests we've had.    As expected, works fine on Mac.\n\nOne question: is it okay that SUN_FLAGS is not determined for non-Sun systems?  Is it possible that the shell would still have SUN_FLAGS set to something else (bad) from earlier in the Sage build process that could cause problems?  I assume not, since I'm a shell ignoramus, but just wanted to make sure this is the case.",
+    "created_at": "2010-08-05T15:36:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9396#issuecomment-89497",
+    "user": "kcrisman"
+}
+```
 
 Hopefully this gets in the next release - it could be related to some other support requests we've had.    As expected, works fine on Mac.
 
 One question: is it okay that SUN_FLAGS is not determined for non-Sun systems?  Is it possible that the shell would still have SUN_FLAGS set to something else (bad) from earlier in the Sage build process that could cause problems?  I assume not, since I'm a shell ignoramus, but just wanted to make sure this is the case.
 
 
+
 ---
 
-Comment by mpatel created at 2010-08-09 09:38:26
+archive/issue_comments_089498.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-08-09T09:38:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9396",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9396#issuecomment-89498",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed

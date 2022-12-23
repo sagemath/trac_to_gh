@@ -1,21 +1,46 @@
 # Issue 7710: documentation of rational_reconstruction incoherent with code
 
-Issue created by migration from https://trac.sagemath.org/ticket/7710
-
-Original creator: zimmerma
-
-Original creation time: 2009-12-16 11:59:05
-
+archive/issues_007710.json:
+```json
+{
+    "body": "Assignee: AlexGhitza\n\nThe documentation of rational_reconstruction says that an error\n*ZeroDivisionError* is raised when no solution exists with the given\nbounds, but the code returns an error *ValueError*.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7710\n\n",
+    "created_at": "2009-12-16T11:59:05Z",
+    "labels": [
+        "basic arithmetic",
+        "minor",
+        "bug"
+    ],
+    "title": "documentation of rational_reconstruction incoherent with code",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7710",
+    "user": "zimmerma"
+}
+```
 Assignee: AlexGhitza
 
 The documentation of rational_reconstruction says that an error
 *ZeroDivisionError* is raised when no solution exists with the given
 bounds, but the code returns an error *ValueError*.
 
+Issue created by migration from https://trac.sagemath.org/ticket/7710
+
+
+
+
 
 ---
 
-Comment by zimmerma created at 2010-02-05 20:42:35
+archive/issue_comments_066182.json:
+```json
+{
+    "body": "Still there in 4.3.1:\n\n```\nsage: rational_reconstruction?\n...\n\n        exists, that pair is unique and this function returns it. If no\n        such pair exists, this function raises ZeroDivisionError.\n```\n\nand:\n\n```\nsage: rational_reconstruction(29,105)\n...\nValueError: Rational reconstruction of 29 (mod 105) does not exist.\n```\n\n\nNote also that in 4.3.1 a.rational_reconstruction? gives a different documentation, which does\nnot mention what happens in case of error. Why are the documentations different?",
+    "created_at": "2010-02-05T20:42:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7710",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7710#issuecomment-66182",
+    "user": "zimmerma"
+}
+```
 
 Still there in 4.3.1:
 
@@ -40,29 +65,73 @@ Note also that in 4.3.1 a.rational_reconstruction? gives a different documentati
 not mention what happens in case of error. Why are the documentations different?
 
 
+
 ---
 
-Comment by jdemeyer created at 2014-10-20 19:00:45
+archive/issue_comments_066183.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2014-10-20T19:00:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7710",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7710#issuecomment-66183",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2014-10-20 19:00:45
+archive/issue_comments_066184.json:
+```json
+{
+    "body": "Fixed by #17180.",
+    "created_at": "2014-10-20T19:00:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7710",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7710#issuecomment-66184",
+    "user": "jdemeyer"
+}
+```
 
 Fixed by #17180.
 
 
+
 ---
 
-Comment by jdemeyer created at 2014-10-20 19:00:51
+archive/issue_comments_066185.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2014-10-20T19:00:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7710",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7710#issuecomment-66185",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by vbraun created at 2014-10-27 16:27:09
+archive/issue_comments_066186.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2014-10-27T16:27:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7710",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7710#issuecomment-66186",
+    "user": "vbraun"
+}
+```
 
 Resolution: duplicate

@@ -1,11 +1,21 @@
 # Issue 5235: Detect when Sage is build on AFS and issue a warning
 
-Issue created by migration from https://trac.sagemath.org/ticket/5235
-
-Original creator: mabshoff
-
-Original creation time: 2009-02-11 21:20:04
-
+archive/issues_005235.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nFrom http://groups.google.com/group/sage-devel/t/894d29e0bde4550c\n\n```\n> Yes, afs is a strange filessystem and might be the root cause of your \n> trouble, but that is far from certain at this point. \n\n\nNo longer far from certain. The build completed without ANY problems, \nincluding getting past gnutls without error. This is not unprecedented \nbut somewhat surprising nevertheless. Running make test now. \n\nGedaliah \n```\n\n\nAFS seems to be commonly used with RHEL 4 in some instituations. It has come up twice now.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5235\n\n",
+    "created_at": "2009-02-11T21:20:04Z",
+    "labels": [
+        "build",
+        "major",
+        "bug"
+    ],
+    "title": "Detect when Sage is build on AFS and issue a warning",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5235",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 From http://groups.google.com/group/sage-devel/t/894d29e0bde4550c
@@ -29,17 +39,43 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/5235
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2009-02-11 21:20:12
+archive/issue_comments_040113.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-02-11T21:20:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5235",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5235#issuecomment-40113",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-11 22:52:58
+archive/issue_comments_040114.json:
+```json
+{
+    "body": "Gedaliah responded to my question:\n\n```\n> In case you have a shell code snipped that identifies that the current \n> working directory is on an AFS mount I would be happy to integrate it. \n\n\nThis will work unless somebody very foolishly changed the afs mount \npoint to something other that /afs. \n[[ $(pwd | cut -d'/' -f2) = 'afs' ]] && echo \"we are in afs\" \n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-11T22:52:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5235",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5235#issuecomment-40114",
+    "user": "mabshoff"
+}
+```
 
 Gedaliah responded to my question:
 
@@ -59,36 +95,91 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by wjp created at 2010-01-16 23:21:52
+archive/issue_comments_040115.json:
+```json
+{
+    "body": "Should anyone want to do this, Sun's `struct stat` has a `st_fstype` field which gives the filesystem type of a file, so from C this might be easy to check.",
+    "created_at": "2010-01-16T23:21:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5235",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5235#issuecomment-40115",
+    "user": "wjp"
+}
+```
 
 Should anyone want to do this, Sun's `struct stat` has a `st_fstype` field which gives the filesystem type of a file, so from C this might be easy to check.
 
 
+
 ---
 
-Comment by jdemeyer created at 2014-09-02 09:03:08
+archive/issue_comments_040116.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2014-09-02T09:03:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5235",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5235#issuecomment-40116",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2014-09-02 09:03:08
+archive/issue_comments_040117.json:
+```json
+{
+    "body": "I don't think this issue is relevant anymore, haven't heard any such problems recently...",
+    "created_at": "2014-09-02T09:03:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5235",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5235#issuecomment-40117",
+    "user": "jdemeyer"
+}
+```
 
 I don't think this issue is relevant anymore, haven't heard any such problems recently...
 
 
+
 ---
 
-Comment by jdemeyer created at 2014-09-02 09:03:13
+archive/issue_comments_040118.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2014-09-02T09:03:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5235",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5235#issuecomment-40118",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by vbraun created at 2014-09-09 14:52:41
+archive/issue_comments_040119.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2014-09-09T14:52:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5235",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5235#issuecomment-40119",
+    "user": "vbraun"
+}
+```
 
 Resolution: fixed

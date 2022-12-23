@@ -1,11 +1,21 @@
 # Issue 3047: version option returning clone branch name
 
-Issue created by migration from https://trac.sagemath.org/ticket/3047
-
-Original creator: wdj
-
-Original creation time: 2008-04-27 20:20:33
-
+archive/issues_003047.json:
+```json
+{
+    "body": "Assignee: was\n\nThe attached patch adds to version an option which returns the version and the branch clone name.\nNew behavior:\nsage: version()\nreturns exactly the same thing it did before no change.\nsage: version(True) # or replace \"True\" by anything except \"0\" or \"False\"\nreturns \n(Version, Branch name)\nFor example,\n\n```\nsage: version(1)\n\n('SAGE Version 3.0, Release Date: 2008-04-22',\n 'Mercurial clone branch: version')\n```\n\nin a Mercurial clone branch created using \"sage -clone version\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/3047\n\n",
+    "created_at": "2008-04-27T20:20:33Z",
+    "labels": [
+        "user interface",
+        "minor",
+        "bug"
+    ],
+    "title": "version option returning clone branch name",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3047",
+    "user": "wdj"
+}
+```
 Assignee: was
 
 The attached patch adds to version an option which returns the version and the branch clone name.
@@ -26,16 +36,42 @@ sage: version(1)
 
 in a Mercurial clone branch created using "sage -clone version".
 
+Issue created by migration from https://trac.sagemath.org/ticket/3047
+
+
+
+
 
 ---
 
-Comment by wdj created at 2008-04-27 20:21:49
+archive/issue_comments_020983.json:
+```json
+{
+    "body": "This ticket should be deleted. I meant only to create trac 3046.",
+    "created_at": "2008-04-27T20:21:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3047",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3047#issuecomment-20983",
+    "user": "wdj"
+}
+```
 
 This ticket should be deleted. I meant only to create trac 3046.
 
 
+
 ---
 
-Comment by mhansen created at 2008-04-27 21:52:40
+archive/issue_comments_020984.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2008-04-27T21:52:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3047",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3047#issuecomment-20984",
+    "user": "mhansen"
+}
+```
 
 Resolution: duplicate

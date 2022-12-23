@@ -1,83 +1,209 @@
 # Issue 7881: Make polynomials respect the _gcd framework so that they can use coercion in gcds
 
-Issue created by migration from https://trac.sagemath.org/ticket/7881
-
-Original creator: robertwb
-
-Original creation time: 2010-01-09 19:56:16
-
+archive/issues_007881.json:
+```json
+{
+    "body": "Assignee: AlexGhitza\n\nCC:  roed\n\nIn support of #7585\n\nIssue created by migration from https://trac.sagemath.org/ticket/7881\n\n",
+    "created_at": "2010-01-09T19:56:16Z",
+    "labels": [
+        "algebra",
+        "major",
+        "bug"
+    ],
+    "title": "Make polynomials respect the _gcd framework so that they can use coercion in gcds",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7881",
+    "user": "robertwb"
+}
+```
 Assignee: AlexGhitza
 
 CC:  roed
 
 In support of #7585
 
+Issue created by migration from https://trac.sagemath.org/ticket/7881
+
+
+
+
 
 ---
+
+archive/issue_comments_068499.json:
+```json
+{
+    "body": "Attachment\n\nI'm all for using the coercion model more, but I don't like the fact that this hides the important docstrings about ZZ[x] and RR[x] in the underscore methods.",
+    "created_at": "2010-01-09T19:58:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7881",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7881#issuecomment-68499",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 I'm all for using the coercion model more, but I don't like the fact that this hides the important docstrings about ZZ[x] and RR[x] in the underscore methods.
 
 
+
 ---
 
-Comment by robertwb created at 2010-01-09 19:58:56
+archive/issue_comments_068500.json:
+```json
+{
+    "body": "Changing status from new to needs_work.",
+    "created_at": "2010-01-09T19:58:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7881",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7881#issuecomment-68500",
+    "user": "robertwb"
+}
+```
 
 Changing status from new to needs_work.
 
 
+
 ---
 
-Comment by robertwb created at 2010-05-25 06:48:21
+archive/issue_comments_068501.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_info.",
+    "created_at": "2010-05-25T06:48:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7881",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7881#issuecomment-68501",
+    "user": "robertwb"
+}
+```
 
 Changing status from needs_work to needs_info.
 
 
+
 ---
 
-Comment by robertwb created at 2010-05-25 06:48:21
+archive/issue_comments_068502.json:
+```json
+{
+    "body": "I think this is taken care of with #383.",
+    "created_at": "2010-05-25T06:48:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7881",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7881#issuecomment-68502",
+    "user": "robertwb"
+}
+```
 
 I think this is taken care of with #383.
 
 
+
 ---
 
-Comment by davidloeffler created at 2010-10-03 15:46:30
+archive/issue_comments_068503.json:
+```json
+{
+    "body": "Changing status from needs_info to needs_review.",
+    "created_at": "2010-10-03T15:46:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7881",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7881#issuecomment-68503",
+    "user": "davidloeffler"
+}
+```
 
 Changing status from needs_info to needs_review.
 
 
+
 ---
 
-Comment by davidloeffler created at 2010-10-03 15:46:30
+archive/issue_comments_068504.json:
+```json
+{
+    "body": "I propose closing this as \"duplicate\".",
+    "created_at": "2010-10-03T15:46:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7881",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7881#issuecomment-68504",
+    "user": "davidloeffler"
+}
+```
 
 I propose closing this as "duplicate".
 
 
+
 ---
 
-Comment by robertwb created at 2010-10-04 16:19:31
+archive/issue_comments_068505.json:
+```json
+{
+    "body": "I concur.",
+    "created_at": "2010-10-04T16:19:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7881",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7881#issuecomment-68505",
+    "user": "robertwb"
+}
+```
 
 I concur.
 
 
+
 ---
 
-Comment by davidloeffler created at 2010-10-04 16:41:53
+archive/issue_comments_068506.json:
+```json
+{
+    "body": "Release manager: please close this as duplicate (and don't merge the patch).",
+    "created_at": "2010-10-04T16:41:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7881",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7881#issuecomment-68506",
+    "user": "davidloeffler"
+}
+```
 
 Release manager: please close this as duplicate (and don't merge the patch).
 
 
+
 ---
 
-Comment by davidloeffler created at 2010-10-04 16:41:53
+archive/issue_comments_068507.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-10-04T16:41:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7881",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7881#issuecomment-68507",
+    "user": "davidloeffler"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mpatel created at 2010-10-04 22:01:19
+archive/issue_comments_068508.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2010-10-04T22:01:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7881",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7881#issuecomment-68508",
+    "user": "mpatel"
+}
+```
 
 Resolution: duplicate

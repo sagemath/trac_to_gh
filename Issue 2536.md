@@ -1,11 +1,21 @@
 # Issue 2536: get rid of SageObject.db and SageObject.version everywhere -- these turned out to "not catch on"
 
-Issue created by migration from https://trac.sagemath.org/ticket/2536
-
-Original creator: was
-
-Original creation time: 2008-03-16 00:57:20
-
+archive/issues_002536.json:
+```json
+{
+    "body": "Assignee: cwitty\n\nCC:  mkoeppe\n\nHi,\n\nI wrote db and version methods that all SageObjects have.  It seemed like a good idea at the time.  They didn't catch on -- nobody finds this interesting, etc.  I vote for completely removing them from Sage. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2536\n\n",
+    "created_at": "2008-03-16T00:57:20Z",
+    "labels": [
+        "misc",
+        "major",
+        "bug"
+    ],
+    "title": "get rid of SageObject.db and SageObject.version everywhere -- these turned out to \"not catch on\"",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2536",
+    "user": "was"
+}
+```
 Assignee: cwitty
 
 CC:  mkoeppe
@@ -14,61 +24,153 @@ Hi,
 
 I wrote db and version methods that all SageObjects have.  It seemed like a good idea at the time.  They didn't catch on -- nobody finds this interesting, etc.  I vote for completely removing them from Sage. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2536
+
+
+
+
 
 ---
 
-Comment by AlexGhitza created at 2009-01-23 02:46:12
+archive/issue_comments_017294.json:
+```json
+{
+    "body": "Changing type from defect to enhancement.",
+    "created_at": "2009-01-23T02:46:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2536",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2536#issuecomment-17294",
+    "user": "AlexGhitza"
+}
+```
 
 Changing type from defect to enhancement.
 
 
+
 ---
 
-Comment by aapitzsch created at 2015-01-11 22:09:55
+archive/issue_comments_017295.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2015-01-11T22:09:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2536",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2536#issuecomment-17295",
+    "user": "aapitzsch"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by kcrisman created at 2015-02-03 01:47:22
+archive/issue_comments_017296.json:
+```json
+{
+    "body": "I realize this seems silly for something no one uses, but perhaps we should doctest these deprecations?",
+    "created_at": "2015-02-03T01:47:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2536",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2536#issuecomment-17296",
+    "user": "kcrisman"
+}
+```
 
 I realize this seems silly for something no one uses, but perhaps we should doctest these deprecations?
 
 
+
 ---
 
-Comment by git created at 2015-02-07 23:42:13
+archive/issue_comments_017297.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2015-02-07T23:42:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2536",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2536#issuecomment-17297",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by aapitzsch created at 2015-02-07 23:44:57
+archive/issue_comments_017298.json:
+```json
+{
+    "body": "Replying to [comment:7 kcrisman]:\n> I realize this seems silly for something no one uses, but perhaps we should doctest these deprecations?\nAdded doctests.",
+    "created_at": "2015-02-07T23:44:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2536",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2536#issuecomment-17298",
+    "user": "aapitzsch"
+}
+```
 
 Replying to [comment:7 kcrisman]:
 > I realize this seems silly for something no one uses, but perhaps we should doctest these deprecations?
 Added doctests.
 
 
+
 ---
 
-Comment by kcrisman created at 2015-02-12 03:44:51
+archive/issue_comments_017299.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2015-02-12T03:44:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2536",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2536#issuecomment-17299",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by kcrisman created at 2015-02-12 03:44:51
+archive/issue_comments_017300.json:
+```json
+{
+    "body": "I'm a little surprised that doctest works since it does return a value, but I guess the `:...` covers that instead of the usual `:...:`.    Running doctests again but hopefully all is well.",
+    "created_at": "2015-02-12T03:44:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2536",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2536#issuecomment-17300",
+    "user": "kcrisman"
+}
+```
 
 I'm a little surprised that doctest works since it does return a value, but I guess the `:...` covers that instead of the usual `:...:`.    Running doctests again but hopefully all is well.
 
 
+
 ---
 
-Comment by kcrisman created at 2015-02-12 04:16:23
+archive/issue_comments_017301.json:
+```json
+{
+    "body": "\n```\nExpected:\n    Help on FiniteWordPath_2d_str in module sage.combinat.words.paths object:\n    ...\n    Methods inherited from FiniteWordPath_2d:\n    ...\n    Methods inherited from FiniteWordPath_all:\n    ...\n    This only works on Python classes that derive from SageObject.\nGot:\n<stuff ending with>\n     |      This only works on Python classes that derive from SageObject.\n     |      \n     |      TESTS::\n     |      \n     |          sage: v = DiGraph().version()\n     |          doctest:... DeprecationWarning: version() is deprecated.\n     |          See http://trac.sagemath.org/2536 for details.\n\n----------------------------------------------------------------------\nsage -t src/sage/combinat/words/paths.py  # 1 doctest failed\n```\n\nOtherwise all is well.  I guess this is my fault for asking for the deprecation warning after you did your long doctests, my apologies.",
+    "created_at": "2015-02-12T04:16:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2536",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2536#issuecomment-17301",
+    "user": "kcrisman"
+}
+```
 
 
 ```
@@ -97,43 +199,109 @@ sage -t src/sage/combinat/words/paths.py  # 1 doctest failed
 Otherwise all is well.  I guess this is my fault for asking for the deprecation warning after you did your long doctests, my apologies.
 
 
+
 ---
 
-Comment by kcrisman created at 2015-02-12 04:16:23
+archive/issue_comments_017302.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_work.",
+    "created_at": "2015-02-12T04:16:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2536",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2536#issuecomment-17302",
+    "user": "kcrisman"
+}
+```
 
 Changing status from positive_review to needs_work.
 
 
+
 ---
 
-Comment by git created at 2015-02-13 15:16:52
+archive/issue_comments_017303.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2015-02-13T15:16:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2536",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2536#issuecomment-17303",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by aapitzsch created at 2015-02-13 15:17:18
+archive/issue_comments_017304.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2015-02-13T15:17:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2536",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2536#issuecomment-17304",
+    "user": "aapitzsch"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by kcrisman created at 2015-02-13 18:28:17
+archive/issue_comments_017305.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2015-02-13T18:28:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2536",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2536#issuecomment-17305",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by vbraun created at 2015-02-17 19:28:31
+archive/issue_comments_017306.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2015-02-17T19:28:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2536",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2536#issuecomment-17306",
+    "user": "vbraun"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by dimpase created at 2016-05-03 19:43:14
+archive/issue_comments_017307.json:
+```json
+{
+    "body": "#20376 uses `db()` for purposes of logging/debugging...",
+    "created_at": "2016-05-03T19:43:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2536",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2536#issuecomment-17307",
+    "user": "dimpase"
+}
+```
 
 #20376 uses `db()` for purposes of logging/debugging...

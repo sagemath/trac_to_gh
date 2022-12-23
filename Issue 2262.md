@@ -1,11 +1,21 @@
 # Issue 2262: Move the debian directory from the sage to the ext repo
 
-Issue created by migration from https://trac.sagemath.org/ticket/2262
-
-Original creator: mabshoff
-
-Original creation time: 2008-02-22 18:35:55
-
+archive/issues_002262.json:
+```json
+{
+    "body": "Assignee: tabbott\n\nIn retro perspective it was a bad choice to put the dist specific Debian stuff into the Sage repo. It would be much better to create a dist directory in the ext repo and move it all over there. Too late for 2.10.2, but doable in 2.10.3.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2262\n\n",
+    "created_at": "2008-02-22T18:35:55Z",
+    "labels": [
+        "debian-package",
+        "major",
+        "bug"
+    ],
+    "title": "Move the debian directory from the sage to the ext repo",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2262",
+    "user": "mabshoff"
+}
+```
 Assignee: tabbott
 
 In retro perspective it was a bad choice to put the dist specific Debian stuff into the Sage repo. It would be much better to create a dist directory in the ext repo and move it all over there. Too late for 2.10.2, but doable in 2.10.3.
@@ -14,10 +24,25 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/2262
+
+
+
+
 
 ---
 
-Comment by tabbott created at 2008-02-22 19:04:53
+archive/issue_comments_014972.json:
+```json
+{
+    "body": "How does the ext repo work?  I'm not familiar with this piece of the\nSAGE setup (where it unpacks, etc.).\n\nWhat are the problems with the current setup?  I can imagine various\npossible problems, but am curious which we're actually running into.\n\nI find the proximity of directory trees that the current setup has to\nbe useful for modifying the debian/rules file if the spkg-install\nscript is nearby, but this is obviously not particularly important.",
+    "created_at": "2008-02-22T19:04:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2262",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2262#issuecomment-14972",
+    "user": "tabbott"
+}
+```
 
 How does the ext repo work?  I'm not familiar with this piece of the
 SAGE setup (where it unpacks, etc.).
@@ -30,16 +55,38 @@ be useful for modifying the debian/rules file if the spkg-install
 script is nearby, but this is obviously not particularly important.
 
 
+
 ---
 
-Comment by cwitty created at 2008-02-23 04:03:37
+archive/issue_comments_014973.json:
+```json
+{
+    "body": "tabbott, the extcode repo unpacks into $SAGE_ROOT/data/extcode.",
+    "created_at": "2008-02-23T04:03:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2262",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2262#issuecomment-14973",
+    "user": "cwitty"
+}
+```
 
 tabbott, the extcode repo unpacks into $SAGE_ROOT/data/extcode.
 
 
+
 ---
 
-Comment by tabbott created at 2008-02-24 19:32:18
+archive/issue_comments_014974.json:
+```json
+{
+    "body": "Okay.  Thinking about this more, my main concern is that this would interfere with my plan of building Debian packages for SAGE and all its dependencies by simply running\n\nDEBIAN_RELEASE=lenny-i386 DEBIAN_REPO=<some path> make\n\nfrom a freshly unpacked SAGE copy, which will build SAGE and upload it to a new Debian apt repository at that path (this would not be our production repository, obviously), since the extcode repository isn't unpacked until late in the SAGE build process.",
+    "created_at": "2008-02-24T19:32:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2262",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2262#issuecomment-14974",
+    "user": "tabbott"
+}
+```
 
 Okay.  Thinking about this more, my main concern is that this would interfere with my plan of building Debian packages for SAGE and all its dependencies by simply running
 
@@ -48,18 +95,40 @@ DEBIAN_RELEASE=lenny-i386 DEBIAN_REPO=<some path> make
 from a freshly unpacked SAGE copy, which will build SAGE and upload it to a new Debian apt repository at that path (this would not be our production repository, obviously), since the extcode repository isn't unpacked until late in the SAGE build process.
 
 
+
 ---
 
-Comment by was created at 2008-02-24 20:37:39
+archive/issue_comments_014975.json:
+```json
+{
+    "body": "> since the extcode repository isn't unpacked until late in the SAGE build process.\n\nThat is by accident.  It could be unpacked at any time.   It's all pure source code with no dependencies for unpacking.  If you would like it to be unpacked much earlier, you should feel free to make that change, in my opinion.  I hope mabshoff can also chime in on this.",
+    "created_at": "2008-02-24T20:37:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2262",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2262#issuecomment-14975",
+    "user": "was"
+}
+```
 
 > since the extcode repository isn't unpacked until late in the SAGE build process.
 
 That is by accident.  It could be unpacked at any time.   It's all pure source code with no dependencies for unpacking.  If you would like it to be unpacked much earlier, you should feel free to make that change, in my opinion.  I hope mabshoff can also chime in on this.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-24 20:55:51
+archive/issue_comments_014976.json:
+```json
+{
+    "body": "Replying to [comment:4 was]:\n> > since the extcode repository isn't unpacked until late in the SAGE build process.\n> \n> That is by accident.  It could be unpacked at any time.   It's all pure source code with no dependencies for unpacking.  If you would like it to be unpacked much earlier, you should feel free to make that change, in my opinion.  I hope mabshoff can also chime in on this. \n\nChanging the dependencies would be easy, so I think that it will lead to a workable compromise. sage-lib (or whatever we call the deb) would depend on sage-ext, so we would have the needed files present at build time. The current solution (by adding it to setup.py certainly isn't elegant) and as we pick up other distributions it certainly will become very, very ugly. The dist directory in ext with debian as a subdirectory sounds like the perfect solution to me.\n\nCheers,\n\nMichael",
+    "created_at": "2008-02-24T20:55:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2262",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2262#issuecomment-14976",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:4 was]:
 > > since the extcode repository isn't unpacked until late in the SAGE build process.
@@ -73,16 +142,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by tabbott created at 2008-02-24 21:15:57
+archive/issue_comments_014977.json:
+```json
+{
+    "body": "Oh, is this only for the SAGE spkg?",
+    "created_at": "2008-02-24T21:15:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2262",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2262#issuecomment-14977",
+    "user": "tabbott"
+}
+```
 
 Oh, is this only for the SAGE spkg?
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-24 21:30:51
+archive/issue_comments_014978.json:
+```json
+{
+    "body": "Replying to [comment:6 tabbott]:\n> Oh, is this only for the SAGE spkg?\n\nYes. All the Debian bits needed for all the other spkgs will stay where they are. Since I am doing work on the spkg audit I plan to merge the patches from #2199 as I do the audit.\n\nCheers,\n\nMichael",
+    "created_at": "2008-02-24T21:30:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2262",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2262#issuecomment-14978",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:6 tabbott]:
 > Oh, is this only for the SAGE spkg?
@@ -94,9 +185,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by tabbott created at 2008-02-24 21:47:03
+archive/issue_comments_014979.json:
+```json
+{
+    "body": "OK.  This makes much more sense now.\n\nThe main thing I guess that needs to be decided then is what to replace the Debian-specific changes to setup.py with.  They include:\n\n1) adding things to library_dirs and include_dirs.  This should be made into a generic environment variable that can be used for any distribution build system.\n\n2) adding /usr/lib/python2.5 to the hardcoded python libraries search path.  I guess we also want to have an environment variable that can extend the set of places that looks for python libraries?",
+    "created_at": "2008-02-24T21:47:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2262",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2262#issuecomment-14979",
+    "user": "tabbott"
+}
+```
 
 OK.  This makes much more sense now.
 
@@ -107,9 +209,20 @@ The main thing I guess that needs to be decided then is what to replace the Debi
 2) adding /usr/lib/python2.5 to the hardcoded python libraries search path.  I guess we also want to have an environment variable that can extend the set of places that looks for python libraries?
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-24 21:53:15
+archive/issue_comments_014980.json:
+```json
+{
+    "body": "Replying to [comment:8 tabbott]:\n> OK.  This makes much more sense now.\n> \n> The main thing I guess that needs to be decided then is what to replace the Debian-specific changes to setup.py with.  They include:\n> \n> 1) adding things to library_dirs and include_dirs.  This should be made into a generic environment variable that can be used for any distribution build system.\n\nYes, I agree.\n\n> \n> 2) adding /usr/lib/python2.5 to the hardcoded python libraries search path.  I guess we also want to have an environment variable that can extend the set of places that looks for python libraries?\n\nSure, but I plan to merge the slightly fixed version of #2173 tonight. Once we have additional distributions on board (or earlier at your convenience, i.e. you want to do the work) we should generalize the infrastructure. Right now there isn't really anybody but Debian (and indirectly Ubuntu) working on packaging within the Sage project, so I am willing to cross that bridge once we get to it.\n\nCheers,\n\nMichael\n\nCheers,\n\nMichael",
+    "created_at": "2008-02-24T21:53:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2262",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2262#issuecomment-14980",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:8 tabbott]:
 > OK.  This makes much more sense now.
@@ -134,56 +247,150 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_014981.json:
+```json
+{
+    "body": "Attachment\n\napply to the extcode repo",
+    "created_at": "2008-03-19T09:13:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2262",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2262#issuecomment-14981",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 apply to the extcode repo
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-19 09:13:48
+archive/issue_comments_014982.json:
+```json
+{
+    "body": "apply to the sage repo - removes debian files",
+    "created_at": "2008-03-19T09:13:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2262",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2262#issuecomment-14982",
+    "user": "mabshoff"
+}
+```
 
 apply to the sage repo - removes debian files
 
 
+
 ---
+
+archive/issue_comments_014983.json:
+```json
+{
+    "body": "Attachment\n\napply to the sage repo - removes debian files from setup.py",
+    "created_at": "2008-03-19T09:14:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2262",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2262#issuecomment-14983",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 apply to the sage repo - removes debian files from setup.py
 
 
+
 ---
+
+archive/issue_comments_014984.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-03-19T09:14:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2262",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2262#issuecomment-14984",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-19 09:14:46
+archive/issue_comments_014985.json:
+```json
+{
+    "body": "Changing assignee from tabbott to mabshoff.",
+    "created_at": "2008-03-19T09:14:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2262",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2262#issuecomment-14985",
+    "user": "mabshoff"
+}
+```
 
 Changing assignee from tabbott to mabshoff.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-19 09:14:46
+archive/issue_comments_014986.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-03-19T09:14:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2262",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2262#issuecomment-14986",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by gfurnish created at 2008-03-19 09:21:09
+archive/issue_comments_014987.json:
+```json
+{
+    "body": "This looks good to me.",
+    "created_at": "2008-03-19T09:21:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2262",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2262#issuecomment-14987",
+    "user": "gfurnish"
+}
+```
 
 This looks good to me.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-19 09:27:35
+archive/issue_comments_014988.json:
+```json
+{
+    "body": "Ok, this is good.\n\nTim: let me know if you have any trouble getting this to work or finding things let me know.\n\nCheers,\n\nMichael",
+    "created_at": "2008-03-19T09:27:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2262",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2262#issuecomment-14988",
+    "user": "mabshoff"
+}
+```
 
 Ok, this is good.
 
@@ -194,15 +401,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-19 09:27:50
+archive/issue_comments_014989.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-03-19T09:27:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2262",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2262#issuecomment-14989",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-19 09:27:50
+archive/issue_comments_014990.json:
+```json
+{
+    "body": "Merged in Sage 2.11.alpha0",
+    "created_at": "2008-03-19T09:27:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2262",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2262#issuecomment-14990",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.11.alpha0

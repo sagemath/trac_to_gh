@@ -1,11 +1,21 @@
 # Issue 9955: latex(-1/2 * polynom) broken
 
-Issue created by migration from https://trac.sagemath.org/ticket/9956
-
-Original creator: schilly
-
-Original creation time: 2010-09-20 18:26:19
-
+archive/issues_009955.json:
+```json
+{
+    "body": "Assignee: burcin\n\nNotice that in the latex expression the negative coefficient applies only to the 4*m^2 term in the numerator thus giving a completely different value.\n\n\n```\nsage: var('t k m')\nsage: latex(-1/2*(4*m^2 - 9*m - t + 8)/m)\n\\frac{-4 \\, m^{2} - 9 \\, m - t + 8}{2 \\, m}\n```\n\n\nNote: This was reported via the \"report a problem\" form for 4.5.2 for the \"typset\" option in the notebook, and I confirmed this on 4.5.3 for this simpler example.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9956\n\n",
+    "created_at": "2010-09-20T18:26:19Z",
+    "labels": [
+        "symbolics",
+        "critical",
+        "bug"
+    ],
+    "title": "latex(-1/2 * polynom) broken",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9955",
+    "user": "schilly"
+}
+```
 Assignee: burcin
 
 Notice that in the latex expression the negative coefficient applies only to the 4*m^2 term in the numerator thus giving a completely different value.
@@ -20,10 +30,25 @@ sage: latex(-1/2*(4*m^2 - 9*m - t + 8)/m)
 
 Note: This was reported via the "report a problem" form for 4.5.2 for the "typset" option in the notebook, and I confirmed this on 4.5.3 for this simpler example.
 
+Issue created by migration from https://trac.sagemath.org/ticket/9956
+
+
+
+
 
 ---
 
-Comment by burcin created at 2010-09-21 06:22:06
+archive/issue_comments_099306.json:
+```json
+{
+    "body": "After installing the pynac package at #9901, this works for me:\n\n\n```\nsage: var('t k m')\n(t, k, m)\nsage: latex(-1/2*(4*m^2 - 9*m - t + 8)/m)\n-\\frac{4 \\, m^{2} - 9 \\, m - t + 8}{2 \\, m}\n```\n\n\nAlthough the problem was never reported in this form, which is much more severe, #9834 and #9394 already cover this. I'm closing this as a duplicate.\n\nFeel free to mark one/all of the tickets mentioned above as blockers.",
+    "created_at": "2010-09-21T06:22:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9955",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9955#issuecomment-99306",
+    "user": "burcin"
+}
+```
 
 After installing the pynac package at #9901, this works for me:
 
@@ -41,8 +66,19 @@ Although the problem was never reported in this form, which is much more severe,
 Feel free to mark one/all of the tickets mentioned above as blockers.
 
 
+
 ---
 
-Comment by burcin created at 2010-09-21 06:22:06
+archive/issue_comments_099307.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2010-09-21T06:22:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9955",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9955#issuecomment-99307",
+    "user": "burcin"
+}
+```
 
 Resolution: duplicate

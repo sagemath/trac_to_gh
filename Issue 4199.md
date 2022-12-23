@@ -1,11 +1,21 @@
 # Issue 4199: Followup to #4111: pari related real_mpfr.pyx doctest failure
 
-Issue created by migration from https://trac.sagemath.org/ticket/4199
-
-Original creator: mabshoff
-
-Original creation time: 2008-09-26 02:45:11
-
+archive/issues_004199.json:
+```json
+{
+    "body": "Assignee: robertwb\n\nCC:  alexghitza\n\nAfter merging the patches from #4111 the following happens in Sage 3.1.3.alpha2:\n\n```\nsage -t -long devel/sage/sage/rings/real_mpfr.pyx           \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/real_mpfr.py\", line 1900:\n    sage: RR(-1.234567)._pari_()\nExpected:\n    -1.2345670000000000000\nGot:\n    -1.2345670000000000001\n**********************************************************************\n1 items had failures:\n   1 of  11 in __main__.example_58\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/.doctest_real_mpfr.py\n         [11.2 s]\nexit code: 1024\n```\n\nRobertWB says:\nActually, after those patches I get\n\n```\nsage: 1.2.parent() is RR\nTrue\n```\n\nSit looks like a pari issue for sure. For example, I get\n\n```\nsage: (-1.23456)._pari_()\n-1.2345600000000000001\n```\n\nwhich isn't using RR.__call__ at all.\n\nAlex Ghitza claims that #4096 (which is also wanted for 3.1.3) will fix the issue. \n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4199\n\n",
+    "created_at": "2008-09-26T02:45:11Z",
+    "labels": [
+        "coercion",
+        "blocker",
+        "bug"
+    ],
+    "title": "Followup to #4111: pari related real_mpfr.pyx doctest failure",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4199",
+    "user": "mabshoff"
+}
+```
 Assignee: robertwb
 
 CC:  alexghitza
@@ -53,10 +63,25 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/4199
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-09-26 04:08:11
+archive/issue_comments_030475.json:
+```json
+{
+    "body": "Fixed by merging #4096.\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-26T04:08:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4199",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4199#issuecomment-30475",
+    "user": "mabshoff"
+}
+```
 
 Fixed by merging #4096.
 
@@ -65,8 +90,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-26 04:08:11
+archive/issue_comments_030476.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-09-26T04:08:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4199",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4199#issuecomment-30476",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 6212: make sage -upgrade check that there are no applied hg queue patches
 
-Issue created by migration from https://trac.sagemath.org/ticket/6212
-
-Original creator: ncalexan
-
-Original creation time: 2009-06-04 20:40:01
-
+archive/issues_006212.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  jason jthurber\n\nKeywords: sage upgrade applied hg queue\n\nIt would be nice if sage -upgrade aborted if are applied hg queue patches, in the same way it aborts if there are local changes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6212\n\n",
+    "created_at": "2009-06-04T20:40:01Z",
+    "labels": [
+        "distribution",
+        "major",
+        "bug"
+    ],
+    "title": "make sage -upgrade check that there are no applied hg queue patches",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6212",
+    "user": "ncalexan"
+}
+```
 Assignee: tbd
 
 CC:  jason jthurber
@@ -14,10 +24,25 @@ Keywords: sage upgrade applied hg queue
 
 It would be nice if sage -upgrade aborted if are applied hg queue patches, in the same way it aborts if there are local changes.
 
+Issue created by migration from https://trac.sagemath.org/ticket/6212
+
+
+
+
 
 ---
 
-Comment by ncalexan created at 2009-06-04 20:40:29
+archive/issue_comments_049629.json:
+```json
+{
+    "body": "Even better:\n\n\n```\n[1:38pm] jason-: you have patches that are applied using mercurial queues.  Do you want to pop all of the patches? [y/n]\n[1:38pm] jason-: yes would pop and continue the upgrae\n[1:39pm] jason-: no would quit the upgrade\n```\n",
+    "created_at": "2009-06-04T20:40:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6212",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6212#issuecomment-49629",
+    "user": "ncalexan"
+}
+```
 
 Even better:
 
@@ -30,29 +55,73 @@ Even better:
 
 
 
+
 ---
 
-Comment by chapoton created at 2014-03-14 16:44:26
+archive/issue_comments_049630.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2014-03-14T16:44:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6212",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6212#issuecomment-49630",
+    "user": "chapoton"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by chapoton created at 2014-03-14 16:44:26
+archive/issue_comments_049631.json:
+```json
+{
+    "body": "we have switched to git, this is obsolete",
+    "created_at": "2014-03-14T16:44:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6212",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6212#issuecomment-49631",
+    "user": "chapoton"
+}
+```
 
 we have switched to git, this is obsolete
 
 
+
 ---
 
-Comment by mmezzarobba created at 2014-03-15 13:33:35
+archive/issue_comments_049632.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2014-03-15T13:33:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6212",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6212#issuecomment-49632",
+    "user": "mmezzarobba"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by vbraun created at 2014-03-19 04:35:53
+archive/issue_comments_049633.json:
+```json
+{
+    "body": "Resolution: wontfix",
+    "created_at": "2014-03-19T04:35:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6212",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6212#issuecomment-49633",
+    "user": "vbraun"
+}
+```
 
 Resolution: wontfix

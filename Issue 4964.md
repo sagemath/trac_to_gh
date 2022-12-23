@@ -1,11 +1,21 @@
 # Issue 4964: Add Weil pairing to Sage
 
-Issue created by migration from https://trac.sagemath.org/ticket/4964
-
-Original creator: dmhansen
-
-Original creation time: 2009-01-11 17:54:28
-
+archive/issues_004964.json:
+```json
+{
+    "body": "Assignee: mollerhansen\n\nKeywords: pairing, elliptic curve\n\nAdd at first (mollerhansen's) Weil pairing implementation on EC points and in this way laying out a framework for pairings in general. \n\nIn future: \n* this Weil pairing implementation should be replaced by a more effective implementation.\n* other pairings could be implemented/wrapped using same framework.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4964\n\n",
+    "created_at": "2009-01-11T17:54:28Z",
+    "labels": [
+        "algebraic geometry",
+        "minor",
+        "enhancement"
+    ],
+    "title": "Add Weil pairing to Sage",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4964",
+    "user": "dmhansen"
+}
+```
 Assignee: mollerhansen
 
 Keywords: pairing, elliptic curve
@@ -16,53 +26,134 @@ In future:
 * this Weil pairing implementation should be replaced by a more effective implementation.
 * other pairings could be implemented/wrapped using same framework.
 
+Issue created by migration from https://trac.sagemath.org/ticket/4964
+
+
+
+
 
 ---
 
-Comment by dmhansen created at 2009-01-25 16:50:06
+archive/issue_comments_037723.json:
+```json
+{
+    "body": "Have checked in patch for elliptic_points.py.\nDon't know how much of a framework there is yet.",
+    "created_at": "2009-01-25T16:50:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4964",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4964#issuecomment-37723",
+    "user": "dmhansen"
+}
+```
 
 Have checked in patch for elliptic_points.py.
 Don't know how much of a framework there is yet.
 
 
+
 ---
 
-Comment by dmhansen created at 2009-01-25 16:50:06
+archive/issue_comments_037724.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-01-25T16:50:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4964",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4964#issuecomment-37724",
+    "user": "dmhansen"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by cremona created at 2009-01-25 17:35:12
+archive/issue_comments_037725.json:
+```json
+{
+    "body": "How can this ticket be closed when there is no patch here?  Is there a patch somewhere else?  If so, where?!",
+    "created_at": "2009-01-25T17:35:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4964",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4964#issuecomment-37725",
+    "user": "cremona"
+}
+```
 
 How can this ticket be closed when there is no patch here?  Is there a patch somewhere else?  If so, where?!
 
 
+
 ---
 
-Comment by cremona created at 2009-01-25 18:25:09
+archive/issue_comments_037726.json:
+```json
+{
+    "body": "I am reopening this since David wrongly thought that committing his changes was all that was needed.  He will upload a patch sometime soon.",
+    "created_at": "2009-01-25T18:25:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4964",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4964#issuecomment-37726",
+    "user": "cremona"
+}
+```
 
 I am reopening this since David wrongly thought that committing his changes was all that was needed.  He will upload a patch sometime soon.
 
 
+
 ---
 
-Comment by cremona created at 2009-01-25 18:25:09
+archive/issue_comments_037727.json:
+```json
+{
+    "body": "Resolution changed from fixed to ",
+    "created_at": "2009-01-25T18:25:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4964",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4964#issuecomment-37727",
+    "user": "cremona"
+}
+```
 
 Resolution changed from fixed to 
 
 
+
 ---
 
-Comment by cremona created at 2009-01-25 18:25:09
+archive/issue_comments_037728.json:
+```json
+{
+    "body": "Changing status from closed to reopened.",
+    "created_at": "2009-01-25T18:25:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4964",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4964#issuecomment-37728",
+    "user": "cremona"
+}
+```
 
 Changing status from closed to reopened.
 
 
+
 ---
 
-Comment by cremona created at 2009-01-25 22:26:33
+archive/issue_comments_037729.json:
+```json
+{
+    "body": "This looks pretty good to me though I have not done any detailed testing, I only looked at the code.\n\nI have one suggestion which should speed this up whenever the actual orders of P or Q are strictly less than n:  find the orders of P and Q, say m1 and m2.  (The generic function order_from_multiple might be useful here.)   Let d=gcd(m1,m2).  Then it is clear that the result is a d'th root of unity, and it can be computed by taking the pairing of (m1/d)*P and (m2/d)*Q.  [Proof: exercise.]  This would save a lot when d is much less than n.\n\nI also have a question: rather than wait for a division by zero error to catch dependent input, why not do a discrete log calculation to test this?  Maybe that's much slower for large n;  it would be nice to have this decision justified.\n\nSorry, that's all I have time for just now.",
+    "created_at": "2009-01-25T22:26:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4964",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4964#issuecomment-37729",
+    "user": "cremona"
+}
+```
 
 This looks pretty good to me though I have not done any detailed testing, I only looked at the code.
 
@@ -73,9 +164,20 @@ I also have a question: rather than wait for a division by zero error to catch d
 Sorry, that's all I have time for just now.
 
 
+
 ---
 
-Comment by dmhansen created at 2009-01-25 22:47:28
+archive/issue_comments_037730.json:
+```json
+{
+    "body": "> I have one suggestion which should speed this up whenever the actual orders of P or Q are strictly less than n:  find the orders of P and Q, say m1 and m2.  (The generic function order_from_multiple might be useful here.)   Let d=gcd(m1,m2).  Then it is clear that the result is a d'th root of unity, and it can be computed by taking the pairing of (m1/d)*P and (m2/d)*Q.  [Proof: exercise.]  This would save a lot when d is much less than n.\n\nYes, I agree - for now the only thing implemented is for points of order n, I check that they both are of order n, which actually will take some time for large n. There is definitely room for improvement here! \n\n> I also have a question: rather than wait for a division by zero error to catch dependent input, why not do a discrete log calculation to test this?  Maybe that's much slower for large n;  it would be nice to have this decision justified.\n\nWell, it is much slower for large n to do discrete log computations. Wrt. to time complexity then I do not think we can do better since the miller algorithm runs in linear time in the number of bits in the input n.\n\nYou're right the above argument should be noted in the code.\n\nReplying to [comment:6 cremona]:\n> This looks pretty good to me though I have not done any detailed testing, I only looked at the code.\n> \n> I have one suggestion which should speed this up whenever the actual orders of P or Q are strictly less than n:  find the orders of P and Q, say m1 and m2.  (The generic function order_from_multiple might be useful here.)   Let d=gcd(m1,m2).  Then it is clear that the result is a d'th root of unity, and it can be computed by taking the pairing of (m1/d)*P and (m2/d)*Q.  [Proof: exercise.]  This would save a lot when d is much less than n.\n> \n> I also have a question: rather than wait for a division by zero error to catch dependent input, why not do a discrete log calculation to test this?  Maybe that's much slower for large n;  it would be nice to have this decision justified.\n> \n> Sorry, that's all I have time for just now.",
+    "created_at": "2009-01-25T22:47:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4964",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4964#issuecomment-37730",
+    "user": "dmhansen"
+}
+```
 
 > I have one suggestion which should speed this up whenever the actual orders of P or Q are strictly less than n:  find the orders of P and Q, say m1 and m2.  (The generic function order_from_multiple might be useful here.)   Let d=gcd(m1,m2).  Then it is clear that the result is a d'th root of unity, and it can be computed by taking the pairing of (m1/d)*P and (m2/d)*Q.  [Proof: exercise.]  This would save a lot when d is much less than n.
 
@@ -97,9 +199,20 @@ Replying to [comment:6 cremona]:
 > Sorry, that's all I have time for just now.
 
 
+
 ---
 
-Comment by cremona created at 2009-02-01 18:25:04
+archive/issue_comments_037731.json:
+```json
+{
+    "body": "I succesfully applied the patch to 3.3.alpha3 and the doctests pass.  But the first example I tried crashed:\n\n```\nsage: F.<a>=GF(19^4)\nsage: E=EllipticCurve(F,[-1,0])\nsage: P,Q=E.gens()\nsage: P.order(), Q.order()\n(360, 360)\n# Check that P and Q really are independent:\nsage: linear_relation(P,Q,'+')\n(0, 360)\nsage: P.weil_pairing(Q,360)\n---------------------------------------------------------------------------\nPariError                                 Traceback (most recent call last)\n...\nPariError: impossible inverse modulo:  (36)\n```\n\nSo pari (which does the underlying field arithmetic) has tried to divide by zero.\n\nThe comments in the code suggest that (1) run-time errors only happen when the points are independent, and (2) these are caught.  So here is a counterexample to both.\n\nIs there a typo in the code perhaps?",
+    "created_at": "2009-02-01T18:25:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4964",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4964#issuecomment-37731",
+    "user": "cremona"
+}
+```
 
 I succesfully applied the patch to 3.3.alpha3 and the doctests pass.  But the first example I tried crashed:
 
@@ -126,9 +239,20 @@ The comments in the code suggest that (1) run-time errors only happen when the p
 Is there a typo in the code perhaps?
 
 
+
 ---
 
-Comment by dmhansen created at 2009-02-01 19:21:48
+archive/issue_comments_037732.json:
+```json
+{
+    "body": "> Is there a typo in the code perhaps?\n\nWell, I kinda hope that there is, since otherwise it would be a larger problem. \nDebugging time! I'll try to figure it out, then i'll put up a new patch and notify you. Thanks for your review.",
+    "created_at": "2009-02-01T19:21:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4964",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4964#issuecomment-37732",
+    "user": "dmhansen"
+}
+```
 
 > Is there a typo in the code perhaps?
 
@@ -136,9 +260,20 @@ Well, I kinda hope that there is, since otherwise it would be a larger problem.
 Debugging time! I'll try to figure it out, then i'll put up a new patch and notify you. Thanks for your review.
 
 
+
 ---
 
-Comment by cremona created at 2009-02-01 20:31:15
+archive/issue_comments_037733.json:
+```json
+{
+    "body": "Replying to [comment:9 dmhansen]:\n> > Is there a typo in the code perhaps?\n> \n> Well, I kinda hope that there is, since otherwise it would be a larger problem. \n> Debugging time! I'll try to figure it out, then i'll put up a new patch and notify you. Thanks for your review.\n\nI cannot see the problem myself.  The _line_() code looks fine.  _miller_() looks good, and when the points are independent I don't see how you would ever get 0 from one of the _line() calls.  [One piece of debugging would be to make sure that _line_() never returns zero, perhaps).\n\nTwo more comments:  in _miller_(), you should perhaps initialize t to self.base_ring()(1) and not just 1.  Secondly, this code would apply just as well to points of finite order over any field, so you should move the whole block of code so that the functions are members of EllipticCurvePoint_field and not of the sub-class EllipticCurvePoint_finite_field.",
+    "created_at": "2009-02-01T20:31:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4964",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4964#issuecomment-37733",
+    "user": "cremona"
+}
+```
 
 Replying to [comment:9 dmhansen]:
 > > Is there a typo in the code perhaps?
@@ -151,9 +286,20 @@ I cannot see the problem myself.  The _line_() code looks fine.  _miller_() look
 Two more comments:  in _miller_(), you should perhaps initialize t to self.base_ring()(1) and not just 1.  Secondly, this code would apply just as well to points of finite order over any field, so you should move the whole block of code so that the functions are members of EllipticCurvePoint_field and not of the sub-class EllipticCurvePoint_finite_field.
 
 
+
 ---
 
-Comment by dmhansen created at 2009-02-06 10:19:04
+archive/issue_comments_037734.json:
+```json
+{
+    "body": "> I cannot see the problem myself.  The _line_() code looks fine.  _miller_() looks good, and when the points are independent I don't see how you would ever get 0 from one of the _line() calls.  [One piece of debugging would be to make sure that _line_() never returns zero, perhaps).\n\nThere was definetly a zero division when computing the slope in case P=Q\\neqO in the _line_ function. Problem was that after refactoring my own code and putting it nicely into sage I forgot the subcase P=Q\\neqO x1=x2. So the zero came from the vertical slope not being handled seperatly.\n\nI then tried your test and I wondered why \n\n```\nsage: P.weil_pairing(Q,360).multiplicative_order()\n181\nsage: P.order()\n360\nsage: 180*P\n(0 : 0 : 1)\n```\n\nI will make a bug report on it. \n\n> Two more comments:  in _miller_(), you should perhaps initialize t to self.base_ring()(1) and not just 1.  Secondly, this code would apply just as well to points of finite order over any field, so you should move the whole block of code so that the functions are members of EllipticCurvePoint_field and not of the sub-class EllipticCurvePoint_finite_field.\n\nI think I will do this in the next iteration together with your suggestion on saving time by precomputing the d=gcd(m1,m2) and doing the pairing of (m1/d)*P and (m2/d)*Q. I'm a bit pressured on time this month and I think that the next iteration will require some more extensive tests.",
+    "created_at": "2009-02-06T10:19:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4964",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4964#issuecomment-37734",
+    "user": "dmhansen"
+}
+```
 
 > I cannot see the problem myself.  The _line_() code looks fine.  _miller_() looks good, and when the points are independent I don't see how you would ever get 0 from one of the _line() calls.  [One piece of debugging would be to make sure that _line_() never returns zero, perhaps).
 
@@ -177,9 +323,20 @@ I will make a bug report on it.
 I think I will do this in the next iteration together with your suggestion on saving time by precomputing the d=gcd(m1,m2) and doing the pairing of (m1/d)*P and (m2/d)*Q. I'm a bit pressured on time this month and I think that the next iteration will require some more extensive tests.
 
 
+
 ---
 
-Comment by dmhansen created at 2009-02-06 10:28:54
+archive/issue_comments_037735.json:
+```json
+{
+    "body": "> I will make a bug report on it. \n\nNo I won't. The sage output is ok. \nSorry it's a bit early in the morning. weil pairing result must then be wrong.. Think it's a bit to early in the morning to be doing this.",
+    "created_at": "2009-02-06T10:28:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4964",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4964#issuecomment-37735",
+    "user": "dmhansen"
+}
+```
 
 > I will make a bug report on it. 
 
@@ -187,9 +344,20 @@ No I won't. The sage output is ok.
 Sorry it's a bit early in the morning. weil pairing result must then be wrong.. Think it's a bit to early in the morning to be doing this.
 
 
+
 ---
 
-Comment by cremona created at 2009-02-06 10:31:23
+archive/issue_comments_037736.json:
+```json
+{
+    "body": "Replying to [comment:12 dmhansen]:\n> > I will make a bug report on it. \n> \n> No I won't. The sage output is ok. \n> Sorry it's a bit early in the morning. weil pairing result must then be wrong.. Think it's a bit to early in the morning to be doing this.\n\nAgreed: (0:0:1) has order 2, so that's consistent!  john",
+    "created_at": "2009-02-06T10:31:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4964",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4964#issuecomment-37736",
+    "user": "cremona"
+}
+```
 
 Replying to [comment:12 dmhansen]:
 > > I will make a bug report on it. 
@@ -200,37 +368,85 @@ Replying to [comment:12 dmhansen]:
 Agreed: (0:0:1) has order 2, so that's consistent!  john
 
 
+
 ---
+
+archive/issue_comments_037737.json:
+```json
+{
+    "body": "Attachment\n\nSage Version 3.2.3, Release Date: 2009-01-05",
+    "created_at": "2009-02-06T14:16:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4964",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4964#issuecomment-37737",
+    "user": "dmhansen"
+}
+```
 
 Attachment
 
 Sage Version 3.2.3, Release Date: 2009-01-05
 
 
+
 ---
 
-Comment by dmhansen created at 2009-02-06 14:21:53
+archive/issue_comments_037738.json:
+```json
+{
+    "body": "New patch is up. I kept the pairing down in the ElliptiCurvePoint_finite_field class. In future this should be moved up into more general class with possible improvements noted in the above comments. Also the Modified Tate pairing, should be fairly straight forward to implement now.",
+    "created_at": "2009-02-06T14:21:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4964",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4964#issuecomment-37738",
+    "user": "dmhansen"
+}
+```
 
 New patch is up. I kept the pairing down in the ElliptiCurvePoint_finite_field class. In future this should be moved up into more general class with possible improvements noted in the above comments. Also the Modified Tate pairing, should be fairly straight forward to implement now.
 
 
+
 ---
+
+archive/issue_comments_037739.json:
+```json
+{
+    "body": "Attachment\n\nThe revised patch fixes the bug.  I have taken the liberty of adding my patch trac_4964a.patch (to be applied after trac_4964.patch) which does the following:\n\n1. Adds a doctest to show that the bug I reported is fixed.\n2.  Moves the functions to the class EllipticCurvePoint_field, as I originally suggested, since this works perfectly well!\n3. Illustrate my point in 2 by adding a docest computing a 5th order Weil pairing over the 5th cyclotomic field.\n4. Edited the documentation about the implementation only applying when both points have the same order n, since in fact the only condition is that n*P=n*Q=0, i.e. that they are both in E[n], so the function could be applied to any two torsion points provided that n is a common multiple of their orders.\n\nIf dmhansen is happy with these adjustments then I am happy with the (combined) patch, so I am optimistically giving it a positive review.  Ideally, a 3rd party would take a look too.",
+    "created_at": "2009-02-07T15:42:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4964",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4964#issuecomment-37739",
+    "user": "cremona"
+}
+```
 
 Attachment
 
 The revised patch fixes the bug.  I have taken the liberty of adding my patch trac_4964a.patch (to be applied after trac_4964.patch) which does the following:
 
-   1. Adds a doctest to show that the bug I reported is fixed.
-   2.  Moves the functions to the class EllipticCurvePoint_field, as I originally suggested, since this works perfectly well!
-   3. Illustrate my point in 2 by adding a docest computing a 5th order Weil pairing over the 5th cyclotomic field.
-   4. Edited the documentation about the implementation only applying when both points have the same order n, since in fact the only condition is that n*P=n*Q=0, i.e. that they are both in E[n], so the function could be applied to any two torsion points provided that n is a common multiple of their orders.
+1. Adds a doctest to show that the bug I reported is fixed.
+2.  Moves the functions to the class EllipticCurvePoint_field, as I originally suggested, since this works perfectly well!
+3. Illustrate my point in 2 by adding a docest computing a 5th order Weil pairing over the 5th cyclotomic field.
+4. Edited the documentation about the implementation only applying when both points have the same order n, since in fact the only condition is that n*P=n*Q=0, i.e. that they are both in E[n], so the function could be applied to any two torsion points provided that n is a common multiple of their orders.
 
 If dmhansen is happy with these adjustments then I am happy with the (combined) patch, so I am optimistically giving it a positive review.  Ideally, a 3rd party would take a look too.
 
 
+
 ---
 
-Comment by dmhansen created at 2009-02-07 16:02:13
+archive/issue_comments_037740.json:
+```json
+{
+    "body": ">    1. Adds a doctest to show that the bug I reported is fixed.\n\n- Great! I also made a similar doc test using your example to test the _miller_ unction implementation, so now we should be covered.\n\n>    2.  Moves the functions to the class EllipticCurvePoint_field, as I originally suggested, since this works perfectly well!\n>    3. Illustrate my point in 2 by adding a docest computing a 5th order Weil pairing over the 5th cyclotomic field.\n\n- This is really good. Thank you a lot, really cool that it just generalizes without any problems. \n\n>    4. Edited the documentation about the implementation only applying when both points have the same order n, since in fact the only condition is that n*P=n*Q=0, i.e. that they are both in E[n], so the function could be applied to any two torsion points provided that n is a common multiple of their orders.\n\n- I agree. That's an important point to include. \n\n> If dmhansen is happy with these adjustments then I am happy with the (combined) patch, so I am optimistically giving it a positive review.  Ideally, a 3rd party would take a look too.\n\nI am very happy with the changes and yes it would be nice to get a 3rd party review.",
+    "created_at": "2009-02-07T16:02:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4964",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4964#issuecomment-37740",
+    "user": "dmhansen"
+}
+```
 
 >    1. Adds a doctest to show that the bug I reported is fixed.
 
@@ -250,25 +466,60 @@ Comment by dmhansen created at 2009-02-07 16:02:13
 I am very happy with the changes and yes it would be nice to get a 3rd party review.
 
 
+
 ---
+
+archive/issue_comments_037741.json:
+```json
+{
+    "body": "Attachment\n\nApply after previous two.",
+    "created_at": "2009-02-07T17:17:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4964",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4964#issuecomment-37741",
+    "user": "cremona"
+}
+```
 
 Attachment
 
 Apply after previous two.
 
 
+
 ---
 
-Comment by cremona created at 2009-02-07 17:17:49
+archive/issue_comments_037742.json:
+```json
+{
+    "body": "Thanks.  Encouraged, I added the other thing which I suggested earlier, which ensures that the hard computation (of the Miller functions) is only done to order gcd(|P|,|Q|).  In case the orders of P and Q are not known, it computes the order using the information that it divides n (otherwise it would use the group order, but that might be a lot larger than n).  Some testing showed that this did speed up the function.\n\nI'm asking for a new reviewer on sage-nt now.",
+    "created_at": "2009-02-07T17:17:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4964",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4964#issuecomment-37742",
+    "user": "cremona"
+}
+```
 
 Thanks.  Encouraged, I added the other thing which I suggested earlier, which ensures that the hard computation (of the Miller functions) is only done to order gcd(|P|,|Q|).  In case the orders of P and Q are not known, it computes the order using the information that it divides n (otherwise it would use the group order, but that might be a lot larger than n).  Some testing showed that this did speed up the function.
 
 I'm asking for a new reviewer on sage-nt now.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-08 02:00:54
+archive/issue_comments_037743.json:
+```json
+{
+    "body": "Merged all three patches in Sage 3.3.alpha6. Doctests do pass, but if another reviewer looks at this again it would be good.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-08T02:00:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4964",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4964#issuecomment-37743",
+    "user": "mabshoff"
+}
+```
 
 Merged all three patches in Sage 3.3.alpha6. Doctests do pass, but if another reviewer looks at this again it would be good.
 
@@ -277,16 +528,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-08 02:00:54
+archive/issue_comments_037744.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-02-08T02:00:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4964",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4964#issuecomment-37744",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by cremona created at 2009-02-08 10:16:41
+archive/issue_comments_037745.json:
+```json
+{
+    "body": "Replying to [comment:20 mabshoff]:\n> Merged all three patches in Sage 3.3.alpha6. Doctests do pass, but if another reviewer looks at this again it would be good.\n> \n> Cheers,\n> \n> Michael\n\nThanks, Michael!  John",
+    "created_at": "2009-02-08T10:16:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4964",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4964#issuecomment-37745",
+    "user": "cremona"
+}
+```
 
 Replying to [comment:20 mabshoff]:
 > Merged all three patches in Sage 3.3.alpha6. Doctests do pass, but if another reviewer looks at this again it would be good.

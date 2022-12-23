@@ -1,11 +1,21 @@
 # Issue 8148: looking at the dual of a poset: IndexError
 
-Issue created by migration from https://trac.sagemath.org/ticket/8148
-
-Original creator: jhpalmieri
-
-Original creation time: 2010-02-02 04:52:34
-
+archive/issues_008148.json:
+```json
+{
+    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat brunellus mjo\n\nIn Sage 4.3.2.alpha0:\n\n```\nsage: Q = Poset({1: [], 3: [], 2: [1, 3]})\nsage: Q.show()  # works fine\nsage: Q.dual().show()\n...\nIndexError: list index out of range\n```\n\nNote that the following works, and is what I'm using in my code right now:\n\n```\nsage: Poset(Q.hasse_diagram().reverse()).show()\n```\n\nActually, though, this fails if Q is defined instead to be\n\n```\nsage: Q = Poset({1: [], 2: [1]})\nsage: Q.show()  # works fine, although the picture looks a little funny\nsage: Poset(Q.hasse_diagram().reverse()).show()\n...\nRuntimeError: Error building image\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8148\n\n",
+    "created_at": "2010-02-02T04:52:34Z",
+    "labels": [
+        "combinatorics",
+        "major",
+        "bug"
+    ],
+    "title": "looking at the dual of a poset: IndexError",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8148",
+    "user": "jhpalmieri"
+}
+```
 Assignee: sage-combinat
 
 CC:  sage-combinat brunellus mjo
@@ -37,10 +47,25 @@ RuntimeError: Error building image
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8148
+
+
+
+
 
 ---
 
-Comment by brunellus created at 2011-12-13 23:54:25
+archive/issue_comments_071624.json:
+```json
+{
+    "body": "\n```\nsage:Poset({1: [], 3: [], 2: [1, 3]}).dual().relations()\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n/root/<ipython console> in <module>()\n\n/root/Sage/sage/local/lib/python2.6/site-packages/sage/combinat/posets/posets.pyc in relations(self)\n    717         - Rob Beezer (2011-05-04)\n    718         \"\"\"\n--> 719         return list(self.relations_iterator())\n    720 \n    721     def relations_iterator(self):\n\n/root/Sage/sage/local/lib/python2.6/site-packages/sage/combinat/posets/posets.pyc in relations_iterator(self)\n    745         # Relies on vertices the fact that _elements correspond to the rows and\n    746         # columns of the lequal matrix\n--> 747         leq_mat = self.lequal_matrix()\n    748         n = leq_mat.nrows()\n    749         elements = self._elements\n\n/root/Sage/sage/local/lib/python2.6/site-packages/sage/combinat/posets/posets.pyc in lequal_matrix(self, **kwds)\n   1282             False\n   1283         \"\"\"\n-> 1284         return self._hasse_diagram.lequal_matrix(**kwds)\n   1285 \n   1286     def meet_matrix(self):\n\n/root/Sage/sage/local/lib/python2.6/site-packages/sage/combinat/posets/hasse_diagram.pyc in lequal_matrix(self, ring, sparse)\n    867         D = {}\n    868         for i in range(n):\n--> 869             for v in self.breadth_first_search(i):\n    870                 D[(i,v)] = 1\n    871         self._leq_matrix = matrix(ring, n, n, D, sparse=sparse)\n\n/root/Sage/sage/local/lib/python2.6/site-packages/sage/graphs/generic_graph.pyc in breadth_first_search(self, start, ignore_direction, distance, neighbors)\n  11565         # Preferably use the Cython implementation \n  11566         if neighbors is None and not isinstance(start,list) and distance is None and hasattr(self._backend,\"breadth_first_search\"): \n> 11567             for v in self._backend.breadth_first_search(start, ignore_direction = ignore_direction): \n  11568                 yield v \n  11569         else: \n\n/root/Sage/sage/local/lib/python2.6/site-packages/sage/graphs/base/c_graph.so in sage.graphs.base.c_graph.Search_iterator.__next__ (sage/graphs/base/c_graph.c:19732)()\n\n/root/Sage/sage/local/lib/python2.6/site-packages/sage/graphs/base/sparse_graph.so in sage.graphs.base.sparse_graph.SparseGraph.out_neighbors (sage/graphs/base/sparse_graph.c:8007)()\n\n/root/Sage/sage/local/lib/python2.6/site-packages/sage/graphs/base/sparse_graph.so in sage.graphs.base.sparse_graph.SparseGraph.out_neighbors (sage/graphs/base/sparse_graph.c:7841)()\n\n/root/Sage/sage/local/lib/python2.6/site-packages/sage/graphs/base/c_graph.so in sage.graphs.base.c_graph.CGraph.check_vertex (sage/graphs/base/c_graph.c:5697)()\n\nRuntimeError: Vertex (0) is not a vertex of the graph.\n```\n",
+    "created_at": "2011-12-13T23:54:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8148",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8148#issuecomment-71624",
+    "user": "brunellus"
+}
+```
 
 
 ```
@@ -98,28 +123,74 @@ RuntimeError: Vertex (0) is not a vertex of the graph.
 
 
 
+
 ---
+
+archive/issue_comments_071625.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2011-12-14T00:45:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8148",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8148#issuecomment-71625",
+    "user": "brunellus"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by brunellus created at 2011-12-14 00:51:53
+archive/issue_comments_071626.json:
+```json
+{
+    "body": "I guess this fix should help -- dual() created new Poset using FinitePoset constructor that requires a DiGraph in its argument to be rather refined one. Especially that the range(n) should be a linear extension of poset defined by a DiGraph. That wasn't true, because dual() reversed the orientation of edges. Poset constructor is much more liberal.",
+    "created_at": "2011-12-14T00:51:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8148",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8148#issuecomment-71626",
+    "user": "brunellus"
+}
+```
 
 I guess this fix should help -- dual() created new Poset using FinitePoset constructor that requires a DiGraph in its argument to be rather refined one. Especially that the range(n) should be a linear extension of poset defined by a DiGraph. That wasn't true, because dual() reversed the orientation of edges. Poset constructor is much more liberal.
 
 
+
 ---
 
-Comment by brunellus created at 2011-12-14 00:51:53
+archive/issue_comments_071627.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2011-12-14T00:51:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8148",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8148#issuecomment-71627",
+    "user": "brunellus"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mjo created at 2012-01-07 22:45:57
+archive/issue_comments_071628.json:
+```json
+{
+    "body": "This is probably the best fix at the moment (although it would be nice if FinitePoset() could be used by itself).\n\nFor the patch, can you add the ticket number to the doctest somewhere?\n\nI would also create a \"TESTS:\" section under examples, since this isn't really a useful example independent of the fact that it demonstrates this bug.\n\nYou can give the doctest a little introduction, too. For example,\n\n\n```\nTESTS:\n\nWe should get a valid FinitePoset back if we call dual() on a finite poset (trac #8148)::\n\n    sage: ...\n```\n\n\nIt's the double-colon that says \"here comes a doctest.\"",
+    "created_at": "2012-01-07T22:45:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8148",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8148#issuecomment-71628",
+    "user": "mjo"
+}
+```
 
 This is probably the best fix at the moment (although it would be nice if FinitePoset() could be used by itself).
 
@@ -142,16 +213,40 @@ We should get a valid FinitePoset back if we call dual() on a finite poset (trac
 It's the double-colon that says "here comes a doctest."
 
 
+
 ---
+
+archive/issue_comments_071629.json:
+```json
+{
+    "body": "Attachment\n\nThanks! I tried to rewrite this to use FinitePoset immediately. Does it make sense? I tried to run it to few examples, but maybe there is something I overlooked.",
+    "created_at": "2012-01-08T20:06:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8148",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8148#issuecomment-71629",
+    "user": "brunellus"
+}
+```
 
 Attachment
 
 Thanks! I tried to rewrite this to use FinitePoset immediately. Does it make sense? I tried to run it to few examples, but maybe there is something I overlooked.
 
 
+
 ---
 
-Comment by nthiery created at 2012-01-08 20:09:39
+archive/issue_comments_071630.json:
+```json
+{
+    "body": "Hi!\n\nSorry, I should have been more reactive to spare you this patch. In principle, this is fixed by #10998 which is almost finished, and I hope to get in soon. Could you double check this?\n\nCheers,\n                   Nicolas",
+    "created_at": "2012-01-08T20:09:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8148",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8148#issuecomment-71630",
+    "user": "nthiery"
+}
+```
 
 Hi!
 
@@ -161,29 +256,73 @@ Cheers,
                    Nicolas
 
 
+
 ---
 
-Comment by brunellus created at 2012-01-08 20:25:33
+archive/issue_comments_071631.json:
+```json
+{
+    "body": "Hi, I guess such situations are inevitable in distributed projects. :-) Your patch really solves this issue.",
+    "created_at": "2012-01-08T20:25:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8148",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8148#issuecomment-71631",
+    "user": "brunellus"
+}
+```
 
 Hi, I guess such situations are inevitable in distributed projects. :-) Your patch really solves this issue.
 
 
+
 ---
 
-Comment by ncohen created at 2012-01-29 15:48:54
+archive/issue_comments_071632.json:
+```json
+{
+    "body": "(the procedure for closing tickets... positive review + milestone to wontfix)",
+    "created_at": "2012-01-29T15:48:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8148",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8148#issuecomment-71632",
+    "user": "ncohen"
+}
+```
 
 (the procedure for closing tickets... positive review + milestone to wontfix)
 
 
+
 ---
 
-Comment by ncohen created at 2012-01-29 15:48:54
+archive/issue_comments_071633.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2012-01-29T15:48:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8148",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8148#issuecomment-71633",
+    "user": "ncohen"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-01-31 09:38:20
+archive/issue_comments_071634.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2012-01-31T09:38:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8148",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8148#issuecomment-71634",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: duplicate

@@ -1,11 +1,21 @@
 # Issue 7650: Fix sagenb doctesting
 
-Issue created by migration from https://trac.sagemath.org/ticket/7650
-
-Original creator: mpatel
-
-Original creation time: 2009-12-10 03:12:15
-
+archive/issues_007650.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  was timdumol mhansen jason\n\n`sage -t sagenb/` yields several\n\n```\nA mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7650\n\n",
+    "created_at": "2009-12-10T03:12:15Z",
+    "labels": [
+        "notebook",
+        "major",
+        "bug"
+    ],
+    "title": "Fix sagenb doctesting",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7650",
+    "user": "mpatel"
+}
+```
 Assignee: was
 
 CC:  was timdumol mhansen jason
@@ -17,19 +27,45 @@ A mysterious error (perhaps a memory error?) occurred, which may have crashed do
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7650
+
+
+
+
 
 ---
 
-Comment by mpatel created at 2009-12-10 03:13:58
+archive/issue_comments_065390.json:
+```json
+{
+    "body": "Part of the problem is that notebook directories now need to end in `.sagenb`.\n\nI'm working on a patch for this and whatever other problems I can fix.",
+    "created_at": "2009-12-10T03:13:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65390",
+    "user": "mpatel"
+}
+```
 
 Part of the problem is that notebook directories now need to end in `.sagenb`.
 
 I'm working on a patch for this and whatever other problems I can fix.
 
 
+
 ---
 
-Comment by mpatel created at 2009-12-10 03:27:21
+archive/issue_comments_065391.json:
+```json
+{
+    "body": "\n```python\nsage -t -verbose \"notebook.py\"                              \nTraceback (most recent call last):\n  File \"/home/.sage//tmp/.doctest_notebook.py\", line 18, in <module>\n    from notebook import *\n  File \"/home/.sage/tmp/notebook.py\", line 38, in <module>\n    import css          # style\nImportError: No module named css\n         [2.5 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -verbose \"notebook.py\"\nTotal time for all tests: 2.5 seconds\n```\n\n\nAdding\n\n```python\nimport sys\nsys.path.append('/home/sage/notebook/sagenb/sagenb')\nsys.path.append('/home/sage/notebook/sagenb/sagenb/notebook')\n```\n\nto the top of `notebook.py` allows testing to proceed.  I'm not sure about a real solution.",
+    "created_at": "2009-12-10T03:27:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65391",
+    "user": "mpatel"
+}
+```
 
 
 ```python
@@ -63,32 +99,80 @@ sys.path.append('/home/sage/notebook/sagenb/sagenb/notebook')
 to the top of `notebook.py` allows testing to proceed.  I'm not sure about a real solution.
 
 
+
 ---
+
+archive/issue_comments_065392.json:
+```json
+{
+    "body": "Attachment\n\nAdd `--force_lib` option to `sage-doctest`.  Use `os.path.join`.  **scripts** repo.",
+    "created_at": "2009-12-10T11:39:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65392",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
-Add `--force_lib` option to `sage-doctest`.  Use `os.path.join`.  *scripts* repo.
+Add `--force_lib` option to `sage-doctest`.  Use `os.path.join`.  **scripts** repo.
 
-
----
-
-Comment by mpatel created at 2009-12-10 11:40:51
-
-Fix sagenb doctests.  *sagenb* repo.
 
 
 ---
 
-Comment by mpatel created at 2009-12-10 11:57:53
+archive/issue_comments_065393.json:
+```json
+{
+    "body": "Fix sagenb doctests.  **sagenb** repo.",
+    "created_at": "2009-12-10T11:40:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65393",
+    "user": "mpatel"
+}
+```
+
+Fix sagenb doctests.  **sagenb** repo.
+
+
+
+---
+
+archive/issue_comments_065394.json:
+```json
+{
+    "body": "Changing priority from major to blocker.",
+    "created_at": "2009-12-10T11:57:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65394",
+    "user": "mpatel"
+}
+```
 
 Changing priority from major to blocker.
 
 
+
 ---
+
+archive/issue_comments_065395.json:
+```json
+{
+    "body": "Attachment\n\n**Please note: The attachments (or their descriptions) are switched.**  I apologize for this.\n\nAnyway, with the scripts repository patch, we can do, e.g.,\n\n```sh\n$ sage -t --force_lib sagenb/\n```\n\nWith the sagenb repository patch applied to #7625 + #7483 + #7482 + #7514 + #7648, all tests but 3 pass.  The failures are in `sagenb/misc/sageinspect.py` (cf. #7514).  The Selenium tests still pass.\n\nRemarks:\n\n* I hope I did not create false-negatives.\n* [This sage-notebook thread](http://groups.google.com/group/sage-notebook/browse_thread/thread/9dd524690bb1588b/38855ecc2819205a?#38855ecc2819205a) *might* be relevant to some tests that evaluate cells.\n* I \"untabified\" `cell.py`, `worksheet.py`, `notebook.py`, and `twist.py`.\n* I added `'nodoctest'` to `simple/twist.py`, since at least one test appears to hang indefinitely.  I don't know why.\n* Feel free to lower the priority.",
+    "created_at": "2009-12-10T11:57:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65395",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
-*Please note: The attachments (or their descriptions) are switched.*  I apologize for this.
+**Please note: The attachments (or their descriptions) are switched.**  I apologize for this.
 
 Anyway, with the scripts repository patch, we can do, e.g.,
 
@@ -100,23 +184,45 @@ With the sagenb repository patch applied to #7625 + #7483 + #7482 + #7514 + #764
 
 Remarks:
 
- * I hope I did not create false-negatives.
- * [This sage-notebook thread](http://groups.google.com/group/sage-notebook/browse_thread/thread/9dd524690bb1588b/38855ecc2819205a?#38855ecc2819205a) _might_ be relevant to some tests that evaluate cells.
- * I "untabified" `cell.py`, `worksheet.py`, `notebook.py`, and `twist.py`.
- * I added `'nodoctest'` to `simple/twist.py`, since at least one test appears to hang indefinitely.  I don't know why.
- * Feel free to lower the priority.
+* I hope I did not create false-negatives.
+* [This sage-notebook thread](http://groups.google.com/group/sage-notebook/browse_thread/thread/9dd524690bb1588b/38855ecc2819205a?#38855ecc2819205a) *might* be relevant to some tests that evaluate cells.
+* I "untabified" `cell.py`, `worksheet.py`, `notebook.py`, and `twist.py`.
+* I added `'nodoctest'` to `simple/twist.py`, since at least one test appears to hang indefinitely.  I don't know why.
+* Feel free to lower the priority.
+
 
 
 ---
 
-Comment by mpatel created at 2009-12-10 11:57:53
+archive/issue_comments_065396.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-12-10T11:57:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65396",
+    "user": "mpatel"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mpatel created at 2009-12-10 12:23:50
+archive/issue_comments_065397.json:
+```json
+{
+    "body": "Should we add, e.g., \n\n```sh\nsage -t --force_lib $SAGE_ROOT/local/lib/python/site-packages/sagenb\n```\n\nto `$SAGE_ROOT/makefile`?  Or `sage-test`?",
+    "created_at": "2009-12-10T12:23:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65397",
+    "user": "mpatel"
+}
+```
 
 Should we add, e.g., 
 
@@ -127,16 +233,38 @@ sage -t --force_lib $SAGE_ROOT/local/lib/python/site-packages/sagenb
 to `$SAGE_ROOT/makefile`?  Or `sage-test`?
 
 
+
 ---
 
-Comment by was created at 2009-12-10 18:18:48
+archive/issue_comments_065398.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2009-12-10T18:18:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65398",
+    "user": "was"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by was created at 2009-12-10 18:18:48
+archive/issue_comments_065399.json:
+```json
+{
+    "body": "I like this patch a lot.  However, a nitpick: get rid of the / before tmp here:\n\n```\nSAGE_TESTDIR = os.path.join(DOT_SAGE, \"/tmp\") \n```\n\nLikewise, elsewhere in the patch there are a bunch of os.path.joins combined with explicit* slashes.  \n\nRegarding adding sage -t sagenb, etc., to sage-test or whatever: \"yes!\"",
+    "created_at": "2009-12-10T18:18:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65399",
+    "user": "was"
+}
+```
 
 I like this patch a lot.  However, a nitpick: get rid of the / before tmp here:
 
@@ -149,157 +277,417 @@ Likewise, elsewhere in the patch there are a bunch of os.path.joins combined wit
 Regarding adding sage -t sagenb, etc., to sage-test or whatever: "yes!"
 
 
+
 ---
 
-Comment by mpatel created at 2009-12-11 14:29:05
+archive/issue_comments_065400.json:
+```json
+{
+    "body": "Updated scripts repo patch.  Replaces previous.",
+    "created_at": "2009-12-11T14:29:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65400",
+    "user": "mpatel"
+}
+```
 
 Updated scripts repo patch.  Replaces previous.
 
 
+
 ---
+
+archive/issue_comments_065401.json:
+```json
+{
+    "body": "Attachment\n\nQuit spawned worksheet processes.  Replaces previous sagenb repo patch.",
+    "created_at": "2009-12-13T14:18:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65401",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
 Quit spawned worksheet processes.  Replaces previous sagenb repo patch.
 
 
+
 ---
 
-Comment by mpatel created at 2009-12-14 03:17:19
+archive/issue_comments_065402.json:
+```json
+{
+    "body": "Auto-detect `site-packages`.  scripts repo.  Replaces previous.",
+    "created_at": "2009-12-14T03:17:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65402",
+    "user": "mpatel"
+}
+```
 
 Auto-detect `site-packages`.  scripts repo.  Replaces previous.
 
 
+
 ---
+
+archive/issue_comments_065403.json:
+```json
+{
+    "body": "Attachment\n\nAdds `-sagenb` option.  scripts repo.  Replaces previous.",
+    "created_at": "2009-12-14T06:06:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65403",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
 Adds `-sagenb` option.  scripts repo.  Replaces previous.
 
 
+
 ---
+
+archive/issue_comments_065404.json:
+```json
+{
+    "body": "Attachment\n\nUpdated `SAGE_ROOT/makefile`.",
+    "created_at": "2009-12-14T06:09:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65404",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
 Updated `SAGE_ROOT/makefile`.
 
 
+
 ---
 
-Comment by mpatel created at 2009-12-14 06:18:29
+archive/issue_comments_065405.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2009-12-14T06:18:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65405",
+    "user": "mpatel"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
+
+archive/issue_comments_065406.json:
+```json
+{
+    "body": "Attachment\n\nWith [attachment:trac_7650-scripts_doctest_force_lib_v4.patch] and an updated top-level [attachment: makefile], we can do\n\n* `make test`\n* `make ptest`\n* `sage -t -sagenb`\n* `sage -tp -sagenb`\n\netc.  Maybe we should unify the test scripts and use [optparse](http://docs.python.org/library/optparse.html)?",
+    "created_at": "2009-12-14T06:18:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65406",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
 With [attachment:trac_7650-scripts_doctest_force_lib_v4.patch] and an updated top-level [attachment: makefile], we can do
 
- * `make test`
- * `make ptest`
- * `sage -t -sagenb`
- * `sage -tp -sagenb`
+* `make test`
+* `make ptest`
+* `sage -t -sagenb`
+* `sage -tp -sagenb`
 
 etc.  Maybe we should unify the test scripts and use [optparse](http://docs.python.org/library/optparse.html)?
 
 
+
 ---
 
-Comment by timdumol created at 2009-12-21 03:48:53
+archive/issue_comments_065407.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2009-12-21T03:48:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65407",
+    "user": "timdumol"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by timdumol created at 2009-12-21 03:48:53
+archive/issue_comments_065408.json:
+```json
+{
+    "body": "The new options to `sage -t` (-force_lib and -sagenb) are not documented in the help message. Please do so.",
+    "created_at": "2009-12-21T03:48:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65408",
+    "user": "timdumol"
+}
+```
 
 The new options to `sage -t` (-force_lib and -sagenb) are not documented in the help message. Please do so.
 
 
+
 ---
 
-Comment by was created at 2009-12-24 07:06:27
+archive/issue_comments_065409.json:
+```json
+{
+    "body": "I'm declaring a total feature freeze on sage-4.3.",
+    "created_at": "2009-12-24T07:06:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65409",
+    "user": "was"
+}
+```
 
 I'm declaring a total feature freeze on sage-4.3.
 
 
+
 ---
 
-Comment by mpatel created at 2009-12-24 18:19:27
+archive/issue_comments_065410.json:
+```json
+{
+    "body": "Also: Be more agressive with `os.path.join`-ery.",
+    "created_at": "2009-12-24T18:19:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65410",
+    "user": "mpatel"
+}
+```
 
 Also: Be more agressive with `os.path.join`-ery.
 
 
+
 ---
+
+archive/issue_comments_065411.json:
+```json
+{
+    "body": "Attachment\n\nDocument new options.  More `os.path.join`-ery.  Replaces previous.",
+    "created_at": "2009-12-28T23:10:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65411",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
 Document new options.  More `os.path.join`-ery.  Replaces previous.
 
 
+
 ---
 
-Comment by mpatel created at 2009-12-28 23:20:59
+archive/issue_comments_065412.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2009-12-28T23:20:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65412",
+    "user": "mpatel"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
----
-
-Comment by mpatel created at 2010-01-01 10:56:04
-
-Rebased vs. #7482's v4.  Replaces previous *sagenb* patch.
-
 
 ---
+
+archive/issue_comments_065413.json:
+```json
+{
+    "body": "Rebased vs. #7482's v4.  Replaces previous **sagenb** patch.",
+    "created_at": "2010-01-01T10:56:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65413",
+    "user": "mpatel"
+}
+```
+
+Rebased vs. #7482's v4.  Replaces previous **sagenb** patch.
+
+
+
+---
+
+archive/issue_comments_065414.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-01-01T10:57:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65414",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mpatel created at 2010-01-05 00:48:34
+archive/issue_comments_065415.json:
+```json
+{
+    "body": "Rebased vs. 4.3.1.alpha0 + #7269.  Replaces previous sagenb patch.",
+    "created_at": "2010-01-05T00:48:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65415",
+    "user": "mpatel"
+}
+```
 
 Rebased vs. 4.3.1.alpha0 + #7269.  Replaces previous sagenb patch.
 
 
+
 ---
+
+archive/issue_comments_065416.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-01-05T00:49:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65416",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mpatel created at 2010-01-05 00:57:02
+archive/issue_comments_065417.json:
+```json
+{
+    "body": "I've attached a rebased sagenb patch.  I added `\"\"\"nodoctests\"\"\"` to the top of `sagenb.misc.ipaddr`.  It's also easy to make its doctest pass, but I haven't done this.  Please let me know, if I should.",
+    "created_at": "2010-01-05T00:57:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65417",
+    "user": "mpatel"
+}
+```
 
 I've attached a rebased sagenb patch.  I added `"""nodoctests"""` to the top of `sagenb.misc.ipaddr`.  It's also easy to make its doctest pass, but I haven't done this.  Please let me know, if I should.
 
 
+
 ---
+
+archive/issue_comments_065418.json:
+```json
+{
+    "body": "Attachment\n\nFix tags / user_view asymmetry.  Replaces previous sagenb patch.",
+    "created_at": "2010-01-14T21:58:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65418",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
 Fix tags / user_view asymmetry.  Replaces previous sagenb patch.
 
 
+
 ---
 
-Comment by mpatel created at 2010-01-14 22:04:54
+archive/issue_comments_065419.json:
+```json
+{
+    "body": "V5 makes it so a worksheet `reconstruct`ed from the `basic` representation of another has the same `tags` and `user_view` as the original.",
+    "created_at": "2010-01-14T22:04:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65419",
+    "user": "mpatel"
+}
+```
 
 V5 makes it so a worksheet `reconstruct`ed from the `basic` representation of another has the same `tags` and `user_view` as the original.
 
 
+
 ---
 
-Comment by mpatel created at 2010-01-15 21:32:58
+archive/issue_comments_065420.json:
+```json
+{
+    "body": "Fix interact doctests for 4.3.1.alpha2 (colors.py).  Replaces previous sagenb patch.",
+    "created_at": "2010-01-15T21:32:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65420",
+    "user": "mpatel"
+}
+```
 
 Fix interact doctests for 4.3.1.alpha2 (colors.py).  Replaces previous sagenb patch.
 
 
+
 ---
+
+archive/issue_comments_065421.json:
+```json
+{
+    "body": "Attachment\n\nReplying to [comment:17 mpatel]:\n> V5 makes it so a worksheet `reconstruct`ed from the `basic` representation of another has the same `tags` and `user_view` as the original.\n\nShouldn't this be put in a new ticket?",
+    "created_at": "2010-01-16T21:22:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65421",
+    "user": "timdumol"
+}
+```
 
 Attachment
 
@@ -309,22 +697,33 @@ Replying to [comment:17 mpatel]:
 Shouldn't this be put in a new ticket?
 
 
+
 ---
 
-Comment by mpatel created at 2010-01-17 14:31:13
+archive/issue_comments_065422.json:
+```json
+{
+    "body": "Yes, but it's already here.  :)  In the course of fixing many failed doctests, I noticed it and a few other small problems:\n\n* In `run_notebook.notebook_twisted`: Replaced `nb.directory()` (not defined) with `nb._dir`.\n* In `worksheet`: Replaced `self.__collaborators` (`AttributeError`) with `self.collaborators()` in a few places.\n* In `worksheet.set_filename`:\n\n```diff\n-        self.__dir = os.path.join(self.notebook().worksheet_directory(), filename)\n+        self.__dir = os.path.join(self.notebook()._dir, filename)\n```\n\n* In `worksheet.tags`:\n\n```diff\n             d = dict(self.__user_view)\n         except AttributeError:\n             self.user_view(self.owner())\n-            d = self.__user_view\n+            d = copy.copy(self.__user_view)\n         for user, val in d.iteritems():\n-            d[user] = [val]\n+            if not isinstance(val, list):\n+                d[user] = [val]\n         return d\n```\n\n This ensures the tests in `Worksheet.reconstruct_from_basic` pass and that calling `tags` does not alter the current user view, e.g., turning `1` into `[1]`.\n\nAlso:\n\n* Removed argument `verbose` (obsolete) from `Cell.set_introspect_html`.",
+    "created_at": "2010-01-17T14:31:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65422",
+    "user": "mpatel"
+}
+```
 
 Yes, but it's already here.  :)  In the course of fixing many failed doctests, I noticed it and a few other small problems:
 
- * In `run_notebook.notebook_twisted`: Replaced `nb.directory()` (not defined) with `nb._dir`.
- * In `worksheet`: Replaced `self.__collaborators` (`AttributeError`) with `self.collaborators()` in a few places.
- * In `worksheet.set_filename`:
+* In `run_notebook.notebook_twisted`: Replaced `nb.directory()` (not defined) with `nb._dir`.
+* In `worksheet`: Replaced `self.__collaborators` (`AttributeError`) with `self.collaborators()` in a few places.
+* In `worksheet.set_filename`:
 
 ```diff
 -        self.__dir = os.path.join(self.notebook().worksheet_directory(), filename)
 +        self.__dir = os.path.join(self.notebook()._dir, filename)
 ```
 
- * In `worksheet.tags`:
+* In `worksheet.tags`:
 
 ```diff
              d = dict(self.__user_view)
@@ -343,64 +742,156 @@ Yes, but it's already here.  :)  In the course of fixing many failed doctests, I
 
 Also:
 
- * Removed argument `verbose` (obsolete) from `Cell.set_introspect_html`.
+* Removed argument `verbose` (obsolete) from `Cell.set_introspect_html`.
+
 
 
 ---
 
-Comment by timdumol created at 2010-01-17 18:19:35
+archive/issue_comments_065423.json:
+```json
+{
+    "body": "This bags a positive review from me, except for the few changes I've made in the reviewer patch. Can someone sign them off?",
+    "created_at": "2010-01-17T18:19:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65423",
+    "user": "timdumol"
+}
+```
 
 This bags a positive review from me, except for the few changes I've made in the reviewer patch. Can someone sign them off?
 
 
+
 ---
 
-Comment by timdumol created at 2010-01-17 19:24:18
+archive/issue_comments_065424.json:
+```json
+{
+    "body": "A few documentation fixes (precision errors and style), and a couple of changes to try-except blocks to make it easier to transition to Python 3",
+    "created_at": "2010-01-17T19:24:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65424",
+    "user": "timdumol"
+}
+```
 
 A few documentation fixes (precision errors and style), and a couple of changes to try-except blocks to make it easier to transition to Python 3
 
 
+
 ---
+
+archive/issue_comments_065425.json:
+```json
+{
+    "body": "Attachment\n\nFix two doctest failures.  Replaces reviewer patch.  sagenb repo.",
+    "created_at": "2010-01-18T04:10:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65425",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
 Fix two doctest failures.  Replaces reviewer patch.  sagenb repo.
 
 
+
 ---
 
-Comment by mpatel created at 2010-01-18 04:17:30
+archive/issue_comments_065426.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-01-18T04:17:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65426",
+    "user": "mpatel"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
+
+archive/issue_comments_065427.json:
+```json
+{
+    "body": "Attachment\n\nV2 of the reviewer patch:\n\n* Adds a missing dot (`.`) in `interact.py`.\n* Moves `# output depends on timezone` to the input statement in `worksheet.py`.\n* [Pre-existing] `most be defined` --> `must be defined`.",
+    "created_at": "2010-01-18T04:17:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65427",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
 V2 of the reviewer patch:
 
- * Adds a missing dot (`.`) in `interact.py`.
- * Moves `# output depends on timezone` to the input statement in `worksheet.py`.
- * [Pre-existing] `most be defined` --> `must be defined`.
+* Adds a missing dot (`.`) in `interact.py`.
+* Moves `# output depends on timezone` to the input statement in `worksheet.py`.
+* [Pre-existing] `most be defined` --> `must be defined`.
+
 
 
 ---
 
-Comment by rlm created at 2010-01-19 01:44:36
+archive/issue_comments_065428.json:
+```json
+{
+    "body": "I applied the scripts patch and replaced makefile in SAGE_ROOT. Please post a `sagenb-0.5.1.spkg`.",
+    "created_at": "2010-01-19T01:44:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65428",
+    "user": "rlm"
+}
+```
 
 I applied the scripts patch and replaced makefile in SAGE_ROOT. Please post a `sagenb-0.5.1.spkg`.
 
 
+
 ---
 
-Comment by rlm created at 2010-01-19 02:55:28
+archive/issue_comments_065429.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-19T02:55:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65429",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by rlm created at 2010-01-19 02:55:28
+archive/issue_comments_065430.json:
+```json
+{
+    "body": "Merged http://boxen.math.washington.edu/home/timdumol/sagenb-0.6.spkg into spkg/standard.",
+    "created_at": "2010-01-19T02:55:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7650",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7650#issuecomment-65430",
+    "user": "rlm"
+}
+```
 
 Merged http://boxen.math.washington.edu/home/timdumol/sagenb-0.6.spkg into spkg/standard.

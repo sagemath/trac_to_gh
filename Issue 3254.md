@@ -1,32 +1,81 @@
 # Issue 3254: [with patch, needs review] improvements and doctests for CachedFunction
 
-Issue created by migration from https://trac.sagemath.org/ticket/3254
-
-Original creator: mhansen
-
-Original creation time: 2008-05-19 00:49:38
-
+archive/issues_003254.json:
+```json
+{
+    "body": "Assignee: cwitty\n\nCachedFunction now works with class methods.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3254\n\n",
+    "created_at": "2008-05-19T00:49:38Z",
+    "labels": [
+        "misc",
+        "minor",
+        "enhancement"
+    ],
+    "title": "[with patch, needs review] improvements and doctests for CachedFunction",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3254",
+    "user": "mhansen"
+}
+```
 Assignee: cwitty
 
 CachedFunction now works with class methods.
 
+Issue created by migration from https://trac.sagemath.org/ticket/3254
+
+
+
+
 
 ---
+
+archive/issue_comments_022514.json:
+```json
+{
+    "body": "Attachment\n\nVery cool, I want this. Is `CachedFunction` the right name though? Shouldn't it be `cached_function`? I think there is a different style convention for the persistent and the cached functions which is a bummer. This is not a blocker for merging this code though, since it wasn't introduced by this patch.",
+    "created_at": "2008-06-03T14:33:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3254",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3254#issuecomment-22514",
+    "user": "malb"
+}
+```
 
 Attachment
 
 Very cool, I want this. Is `CachedFunction` the right name though? Shouldn't it be `cached_function`? I think there is a different style convention for the persistent and the cached functions which is a bummer. This is not a blocker for merging this code though, since it wasn't introduced by this patch.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-04 20:54:04
+archive/issue_comments_022515.json:
+```json
+{
+    "body": "Merged in Sage 3.0.3.alpha1",
+    "created_at": "2008-06-04T20:54:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3254",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3254#issuecomment-22515",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.3.alpha1
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-04 20:54:04
+archive/issue_comments_022516.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-06-04T20:54:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3254",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3254#issuecomment-22516",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

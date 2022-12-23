@@ -1,11 +1,21 @@
 # Issue 5367: bug in composition of power series
 
-Issue created by migration from https://trac.sagemath.org/ticket/5367
-
-Original creator: AlexGhitza
-
-Original creation time: 2009-02-25 01:26:30
-
+archive/issues_005367.json:
+```json
+{
+    "body": "Assignee: tbd\n\nKeywords: power series composition\n\nThe following returns an incorrect answer:\n\n\n```\nsage: S.<z> = QQ[[]]\nsage: p = 1 + O(z)\nsage: q = 1 + z\nsage: p(q)          # should return O(z^0)\n1\n```\n\n\nThis was reported via \"report a problem\" from the notebook.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5367\n\n",
+    "created_at": "2009-02-25T01:26:30Z",
+    "labels": [
+        "algebra",
+        "major",
+        "bug"
+    ],
+    "title": "bug in composition of power series",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5367",
+    "user": "AlexGhitza"
+}
+```
 Assignee: tbd
 
 Keywords: power series composition
@@ -25,17 +35,43 @@ sage: p(q)          # should return O(z^0)
 This was reported via "report a problem" from the notebook.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5367
+
+
+
+
 
 ---
 
-Comment by AlexGhitza created at 2009-02-25 22:45:52
+archive/issue_comments_041340.json:
+```json
+{
+    "body": "As pointed out by Ralf Hemmecke on sage-devel, the correct behaviour is not to return 1, but rather to raise an error if q has a constant term.",
+    "created_at": "2009-02-25T22:45:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5367",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5367#issuecomment-41340",
+    "user": "AlexGhitza"
+}
+```
 
 As pointed out by Ralf Hemmecke on sage-devel, the correct behaviour is not to return 1, but rather to raise an error if q has a constant term.
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-04-30 11:24:26
+archive/issue_comments_041341.json:
+```json
+{
+    "body": "I just came across this, which is presumably related:\n\n\n```\nsage: R.<x> = QQ[[]]\nsage: f = 1 + 24*x^11 + 24*x^22 + O(x^33)\nsage: f(x^2)\n1 + 24*x^22 + 24*x^44 + O(x^86)\n```\n\n\nThe answer should clearly be 1 + 24*x^22 + 24*x^44 + O(x^66). (This is causing some headaches in trying to sort out degeneracy maps for modular forms.)",
+    "created_at": "2009-04-30T11:24:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5367",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5367#issuecomment-41341",
+    "user": "davidloeffler"
+}
+```
 
 I just came across this, which is presumably related:
 
@@ -51,23 +87,56 @@ sage: f(x^2)
 The answer should clearly be 1 + 24*x^22 + 24*x^44 + O(x^66). (This is causing some headaches in trying to sort out degeneracy maps for modular forms.)
 
 
+
 ---
 
-Comment by robertwb created at 2010-01-14 05:20:10
+archive/issue_comments_041342.json:
+```json
+{
+    "body": "See also #3979.",
+    "created_at": "2010-01-14T05:20:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5367",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5367#issuecomment-41342",
+    "user": "robertwb"
+}
+```
 
 See also #3979.
 
 
+
 ---
 
-Comment by cremona created at 2010-05-19 08:18:51
+archive/issue_comments_041343.json:
+```json
+{
+    "body": "Since this is a duplicate of #3979, I think this ticket should be closed.",
+    "created_at": "2010-05-19T08:18:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5367",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5367#issuecomment-41343",
+    "user": "cremona"
+}
+```
 
 Since this is a duplicate of #3979, I think this ticket should be closed.
 
 
+
 ---
 
-Comment by fwclarke created at 2011-07-18 12:14:37
+archive/issue_comments_041344.json:
+```json
+{
+    "body": "Replying to [comment:3 robertwb]:\n> See also #3979.\n\nWhich now has a patch.",
+    "created_at": "2011-07-18T12:14:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5367",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5367#issuecomment-41344",
+    "user": "fwclarke"
+}
+```
 
 Replying to [comment:3 robertwb]:
 > See also #3979.
@@ -75,29 +144,73 @@ Replying to [comment:3 robertwb]:
 Which now has a patch.
 
 
+
 ---
 
-Comment by davidloeffler created at 2011-07-18 12:17:28
+archive/issue_comments_041345.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2011-07-18T12:17:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5367",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5367#issuecomment-41345",
+    "user": "davidloeffler"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by davidloeffler created at 2011-07-18 12:17:28
+archive/issue_comments_041346.json:
+```json
+{
+    "body": "I concur that this should be closed as duplicate. I'll set it to \"positive review\" to bring this to the attention of the release manager.",
+    "created_at": "2011-07-18T12:17:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5367",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5367#issuecomment-41346",
+    "user": "davidloeffler"
+}
+```
 
 I concur that this should be closed as duplicate. I'll set it to "positive review" to bring this to the attention of the release manager.
 
 
+
 ---
 
-Comment by davidloeffler created at 2011-07-18 12:17:40
+archive/issue_comments_041347.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2011-07-18T12:17:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5367",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5367#issuecomment-41347",
+    "user": "davidloeffler"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-07-19 17:37:31
+archive/issue_comments_041348.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2011-07-19T17:37:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5367",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5367#issuecomment-41348",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: duplicate

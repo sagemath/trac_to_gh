@@ -1,11 +1,21 @@
 # Issue 4092: libm4ri-20080904 fails to build on OSX 10.4
 
-Issue created by migration from https://trac.sagemath.org/ticket/4092
-
-Original creator: mabshoff
-
-Original creation time: 2008-09-09 18:52:10
-
+archive/issues_004092.json:
+```json
+{
+    "body": "Assignee: malb\n\nCC:  anakha\n\nI thought we fixed that:\n\n```\nchecking for a BSD-compatible install... /usr/bin/install -c \nchecking mm_malloc.h usability... no \nchecking mm_malloc.h presence... no \nchecking for mm_malloc.h... no \nchecking for a sed that does not truncate output... /usr/bin/sed \nchecking the number of available CPUs... 1 \nchecking the number of available CPUs... 1 \nchecking for x86 cpuid 0x0 output... unknown \nchecking for the processor vendor... Unknown \n262144 \n32768 \nsecond level name l1cachesize in hw.l1cachesize is invalid \nsecond level name l1cachesize in hw.l1cachesize is invalid \n./configure: line 21633: / 1024: syntax error: operand expected (error \ntoken is \"/ 1024\") \nError configuring libm4ri \n```\n\n\nMalb: any chance we missed a patch that did not make it in?\n\nIssue created by migration from https://trac.sagemath.org/ticket/4092\n\n",
+    "created_at": "2008-09-09T18:52:10Z",
+    "labels": [
+        "packages: standard",
+        "blocker",
+        "bug"
+    ],
+    "title": "libm4ri-20080904 fails to build on OSX 10.4",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4092",
+    "user": "mabshoff"
+}
+```
 Assignee: malb
 
 CC:  anakha
@@ -34,42 +44,101 @@ Error configuring libm4ri
 
 Malb: any chance we missed a patch that did not make it in?
 
+Issue created by migration from https://trac.sagemath.org/ticket/4092
+
+
+
+
 
 ---
 
-Comment by malb created at 2008-09-09 18:59:40
+archive/issue_comments_029521.json:
+```json
+{
+    "body": "I thought so too and it was confirmed over at #4059. Adding anakha (the author of the fixes of #4059) as CC.",
+    "created_at": "2008-09-09T18:59:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4092",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4092#issuecomment-29521",
+    "user": "malb"
+}
+```
 
 I thought so too and it was confirmed over at #4059. Adding anakha (the author of the fixes of #4059) as CC.
 
 
+
 ---
 
-Comment by malb created at 2008-09-09 19:02:35
+archive/issue_comments_029522.json:
+```json
+{
+    "body": "a autoconf call was missing",
+    "created_at": "2008-09-09T19:02:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4092",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4092#issuecomment-29522",
+    "user": "malb"
+}
+```
 
 a autoconf call was missing
 
 
+
 ---
 
-Comment by malb created at 2008-09-09 19:06:44
+archive/issue_comments_029523.json:
+```json
+{
+    "body": "New spkg at\n\n  http://sage.math.washington.edu/home/malb/spkgs/libm4ri-20080909.spkg",
+    "created_at": "2008-09-09T19:06:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4092",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4092#issuecomment-29523",
+    "user": "malb"
+}
+```
 
 New spkg at
 
   http://sage.math.washington.edu/home/malb/spkgs/libm4ri-20080909.spkg
 
 
+
 ---
 
-Comment by anakha created at 2008-09-09 19:29:55
+archive/issue_comments_029524.json:
+```json
+{
+    "body": "You did miss the v4 patch over at #4059 if this shows up now.  The posted package does integrate it so everything should be alright.  \n\nI can't test it myself, since I don't have any machines with 10.4 though.",
+    "created_at": "2008-09-09T19:29:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4092",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4092#issuecomment-29524",
+    "user": "anakha"
+}
+```
 
 You did miss the v4 patch over at #4059 if this shows up now.  The posted package does integrate it so everything should be alright.  
 
 I can't test it myself, since I don't have any machines with 10.4 though.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-09 19:32:24
+archive/issue_comments_029525.json:
+```json
+{
+    "body": "It works for me now on a Dual G5 OSX 10.4 box:\n\n```\nchecking for a sed that does not truncate output... /usr/bin/sed\nchecking the number of available CPUs... 2 \nchecking the number of available CPUs... 2 \nchecking for x86 cpuid 0x0 output... unknown\nchecking for the processor vendor... Unknown\nchecking the L1 cache size... 32768 Bytes\nchecking the L2 cache size... 524288 Bytes\nchecking whether make sets $(MAKE)... (cached) yes\nconfigure: creating ./config.status\n```\n\n\nI will do some build testing on other machines before giving this a positive review :)\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-09T19:32:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4092",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4092#issuecomment-29525",
+    "user": "mabshoff"
+}
+```
 
 It works for me now on a Dual G5 OSX 10.4 box:
 
@@ -93,15 +162,26 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-10 02:43:26
+archive/issue_comments_029526.json:
+```json
+{
+    "body": "Builds fine on \n\n* Linux x86, x86-64, Itanium\n* Solaris \n* OSX 10.5 Intel and OSX 10.4 PPC\n\nSo: positive review.\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-10T02:43:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4092",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4092#issuecomment-29526",
+    "user": "mabshoff"
+}
+```
 
 Builds fine on 
 
- * Linux x86, x86-64, Itanium
- * Solaris 
- * OSX 10.5 Intel and OSX 10.4 PPC
+* Linux x86, x86-64, Itanium
+* Solaris 
+* OSX 10.5 Intel and OSX 10.4 PPC
 
 So: positive review.
 
@@ -110,15 +190,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-10 02:47:28
+archive/issue_comments_029527.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-09-10T02:47:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4092",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4092#issuecomment-29527",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-10 02:47:28
+archive/issue_comments_029528.json:
+```json
+{
+    "body": "Merged in Sage 3.1.2.rc2",
+    "created_at": "2008-09-10T02:47:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4092",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4092#issuecomment-29528",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.1.2.rc2

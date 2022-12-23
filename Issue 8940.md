@@ -1,11 +1,21 @@
 # Issue 8940: doctest failures in sagedoc.py
 
-Issue created by migration from https://trac.sagemath.org/ticket/8940
-
-Original creator: mvngu
-
-Original creation time: 2010-05-10 01:09:57
-
+archive/issues_008940.json:
+```json
+{
+    "body": "Assignee: tbd\n\nHere's the failure on sage.math, when building Sage 4.4.2.alpha0 from source:\n\n```\nsage -t  -long devel/sage/sage/misc/sagedoc.py # 3 doctests failed\n```\n\nThe failure with sagedoc.py is due ticket #8468, whose patch was merged without also merging the relevant Sphinx configuration files.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8940\n\n",
+    "created_at": "2010-05-10T01:09:57Z",
+    "labels": [
+        "doctest coverage",
+        "blocker",
+        "bug"
+    ],
+    "title": "doctest failures in sagedoc.py",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8940",
+    "user": "mvngu"
+}
+```
 Assignee: tbd
 
 Here's the failure on sage.math, when building Sage 4.4.2.alpha0 from source:
@@ -16,16 +26,42 @@ sage -t  -long devel/sage/sage/misc/sagedoc.py # 3 doctests failed
 
 The failure with sagedoc.py is due ticket #8468, whose patch was merged without also merging the relevant Sphinx configuration files.
 
+Issue created by migration from https://trac.sagemath.org/ticket/8940
+
+
+
+
 
 ---
 
-Comment by mvngu created at 2010-05-10 10:38:15
+archive/issue_comments_082324.json:
+```json
+{
+    "body": "This is invalid due to the report at this [sage-devel](http://groups.google.com/group/sage-devel/msg/13ea54c19e7fcb20) thread.",
+    "created_at": "2010-05-10T10:38:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8940",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8940#issuecomment-82324",
+    "user": "mvngu"
+}
+```
 
 This is invalid due to the report at this [sage-devel](http://groups.google.com/group/sage-devel/msg/13ea54c19e7fcb20) thread.
 
 
+
 ---
 
-Comment by mvngu created at 2010-05-10 10:38:15
+archive/issue_comments_082325.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2010-05-10T10:38:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8940",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8940#issuecomment-82325",
+    "user": "mvngu"
+}
+```
 
 Resolution: invalid

@@ -1,38 +1,89 @@
 # Issue 6616: [with patch] higher heegner points
 
-Issue created by migration from https://trac.sagemath.org/ticket/6616
-
-Original creator: robertwb
-
-Original creation time: 2009-07-25 10:23:56
-
+archive/issues_006616.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  was cremona\n\nExtend the heegner point code to compute y_lambda for lambda > 1.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6616\n\n",
+    "created_at": "2009-07-25T10:23:56Z",
+    "labels": [
+        "number theory",
+        "major",
+        "enhancement"
+    ],
+    "title": "[with patch] higher heegner points",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6616",
+    "user": "robertwb"
+}
+```
 Assignee: was
 
 CC:  was cremona
 
 Extend the heegner point code to compute y_lambda for lambda > 1.
 
+Issue created by migration from https://trac.sagemath.org/ticket/6616
+
+
+
+
 
 ---
+
+archive/issue_comments_054175.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-07-25T10:27:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6616",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54175",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_054176.json:
+```json
+{
+    "body": "Attachment\n\nNext (?):\n* computing y_c by computing all the conjugates of y_c numerically\n* computing the (huge) Kolyvagin point P_c\n* choosing y-coordinate of y_c correctly.\n* computing degree of ring class field K[c] in all cases (not just Kolyvagin c)\n* optimization",
+    "created_at": "2009-08-01T01:41:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6616",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54176",
+    "user": "was"
+}
+```
 
 Attachment
 
 Next (?):
-   * computing y_c by computing all the conjugates of y_c numerically
-   * computing the (huge) Kolyvagin point P_c
-   * choosing y-coordinate of y_c correctly.
-   * computing degree of ring class field K[c] in all cases (not just Kolyvagin c)
-   * optimization
+* computing y_c by computing all the conjugates of y_c numerically
+* computing the (huge) Kolyvagin point P_c
+* choosing y-coordinate of y_c correctly.
+* computing degree of ring class field K[c] in all cases (not just Kolyvagin c)
+* optimization
+
 
 
 ---
 
-Comment by was created at 2009-08-01 22:56:51
+archive/issue_comments_054177.json:
+```json
+{
+    "body": "This calculation uses massive RAM:\n\n```\nsage: E = EllipticCurve([877,0])\nsage: P = E.heegner_point(-7)\nsage: P\nHeegner point of discriminant -7 on curve of conductor 49224256\nsage: N(P)\n[approx 5GB RAM (?) -- didn't wait for it to crash my laptop]\n```\n\n\nThis should get dealt with.  No clue what causes this.",
+    "created_at": "2009-08-01T22:56:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6616",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54177",
+    "user": "was"
+}
+```
 
 This calculation uses massive RAM:
 
@@ -49,100 +100,328 @@ sage: N(P)
 This should get dealt with.  No clue what causes this.
 
 
+
 ---
+
+archive/issue_comments_054178.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-08-05T05:27:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6616",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54178",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_054179.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-08-06T00:55:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6616",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54179",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2009-08-30 22:09:52
+archive/issue_comments_054180.json:
+```json
+{
+    "body": "rebased against 4.1.1",
+    "created_at": "2009-08-30T22:09:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6616",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54180",
+    "user": "was"
+}
+```
 
 rebased against 4.1.1
 
 
+
 ---
+
+archive/issue_comments_054181.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-08-30T22:12:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6616",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54181",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2009-08-30 22:13:39
+archive/issue_comments_054182.json:
+```json
+{
+    "body": "rebased against 4.1.1",
+    "created_at": "2009-08-30T22:13:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6616",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54182",
+    "user": "was"
+}
+```
 
 rebased against 4.1.1
 
 
+
 ---
+
+archive/issue_comments_054183.json:
+```json
+{
+    "body": "Attachment\n\nrebased against 4.1.1",
+    "created_at": "2009-08-30T22:16:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6616",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54183",
+    "user": "was"
+}
+```
 
 Attachment
 
 rebased against 4.1.1
 
 
+
 ---
+
+archive/issue_comments_054184.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-08-30T22:17:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6616",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54184",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_054185.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-08-31T00:51:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6616",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54185",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_054186.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-09-03T07:44:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6616",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54186",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_054187.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-09-05T22:24:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6616",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54187",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_054188.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-09-07T08:10:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6616",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54188",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_054189.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-09-08T07:55:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6616",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54189",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_054190.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-09-13T21:24:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6616",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54190",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_054191.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-09-19T08:18:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6616",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54191",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_054192.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-09-19T08:36:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6616",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54192",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_054193.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-09-19T08:52:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6616",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54193",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2009-09-19 09:14:46
+archive/issue_comments_054194.json:
+```json
+{
+    "body": "clean bundle with 1-16 against sage-4.1.1",
+    "created_at": "2009-09-19T09:14:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6616",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54194",
+    "user": "was"
+}
+```
 
 clean bundle with 1-16 against sage-4.1.1
 
 
+
 ---
+
+archive/issue_comments_054195.json:
+```json
+{
+    "body": "Attachment\n\nThis is a clean bundle against sage-4.2.alpha0:\n\n   http://sage.math.washington.edu/home/wstein/patches/heegner-20091021-rebased_against_4.2.alpha0.hg",
+    "created_at": "2009-10-22T04:40:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6616",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54195",
+    "user": "was"
+}
+```
 
 Attachment
 
@@ -151,58 +430,152 @@ This is a clean bundle against sage-4.2.alpha0:
    http://sage.math.washington.edu/home/wstein/patches/heegner-20091021-rebased_against_4.2.alpha0.hg
 
 
+
 ---
+
+archive/issue_comments_054196.json:
+```json
+{
+    "body": "Attachment\n\nrebased against 4.2.1",
+    "created_at": "2009-12-02T05:03:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6616",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54196",
+    "user": "was"
+}
+```
 
 Attachment
 
 rebased against 4.2.1
 
 
+
 ---
 
-Comment by was created at 2009-12-04 03:35:54
+archive/issue_comments_054197.json:
+```json
+{
+    "body": "this is based against 4.2.1 after applying the hg bundle right above this patch.",
+    "created_at": "2009-12-04T03:35:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6616",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54197",
+    "user": "was"
+}
+```
 
 this is based against 4.2.1 after applying the hg bundle right above this patch.
 
 
+
 ---
+
+archive/issue_comments_054198.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-12-04T09:40:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6616",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54198",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_054199.json:
+```json
+{
+    "body": "Attachment\n\napply just this one patch against a clean sage-4.3",
+    "created_at": "2010-01-01T02:15:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6616",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54199",
+    "user": "was"
+}
+```
 
 Attachment
 
 apply just this one patch against a clean sage-4.3
 
 
+
 ---
 
-Comment by was created at 2010-01-01 02:21:23
+archive/issue_comments_054200.json:
+```json
+{
+    "body": "This is *finally* ready for review.  Apply just this patch against a clean sage-4.3 build:\n\n    trac-6616-everything_rebased_against_4.3.patch",
+    "created_at": "2010-01-01T02:21:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6616",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54200",
+    "user": "was"
+}
+```
 
 This is *finally* ready for review.  Apply just this patch against a clean sage-4.3 build:
 
     trac-6616-everything_rebased_against_4.3.patch
 
 
+
 ---
 
-Comment by was created at 2010-01-01 02:21:23
+archive/issue_comments_054201.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-01-01T02:21:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6616",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54201",
+    "user": "was"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by cremona created at 2010-01-03 16:51:48
+archive/issue_comments_054202.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-01-03T16:51:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6616",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54202",
+    "user": "cremona"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by cremona created at 2010-01-03 16:51:48
+archive/issue_comments_054203.json:
+```json
+{
+    "body": "Review:  I am immensely impressed by the huge amount of work which has gone into this ten thousand-line patch!  It goes far beyond the refactoring of the title.\n\nI read through the patch itself, and liked what I saw.  (There are a few minor typos in the docstrings, which I did not note as I went through -- sorry).  Some docstrings which did not format properly:  numerical_approx, rational_kolyvagin_divisor, KolyvaginPoint.\n\nThere are a lot if interesting mathematical and algorithmic issues which are highlighted very well in comments and TODO blocks, which is good.\n\nTesting all files in the elliptic_curves directory I found these problems.\n\n```\n\tsage -t  \"devel/sage-tests/sage/schemes/elliptic_curves/lseries_ell.py\"\n\tsage -t  \"devel/sage-tests/sage/schemes/elliptic_curves/heegner.py\"\n\tsage -t  \"devel/sage-tests/sage/schemes/elliptic_curves/period_lattice.py\"\n\tsage -t  \"devel/sage-tests/sage/schemes/elliptic_curves/ell_rational_field.py\"\n```\n\nIn heegner.py it's mainly a mixture of numerical noise and hash differences (this is on a 32-bit machine), but not all.  Details:\n\n```\nsage -t  \"devel/sage-tests/sage/schemes/elliptic_curves/heegner.py\"\n**********************************************************************\nFile \"/home/john/sage-4.3/devel/sage-tests/sage/schemes/elliptic_curves/heegner.py\", line 2582:\n    sage: hash(y)\nExpected:\n    -5236815264926108755\nGot:\n    733770669\n**********************************************************************\nFile \"/home/john/sage-4.3/devel/sage-tests/sage/schemes/elliptic_curves/heegner.py\", line 2886:\n    sage: hash(EllipticCurve('389a').heegner_point(-7,5))\nExpected:\n    ???                              \nGot:\n    733770669\n**********************************************************************\nFile \"/home/john/sage-4.3/devel/sage-tests/sage/schemes/elliptic_curves/heegner.py\", line 3010:\n    sage: P.numerical_approx()\nExpected:\n    (-3.41893279409096e-16 - 2.00036208715867e-16*I : 3.42282625853674e-16 + 2.00035300823576e-16*I : 1.00000000000000)\nGot:\n    (-3.41901661684534e-16 - 2.00073402416951e-16*I : 3.42011575310552e-16 + 2.00035300823576e-16*I : 1.00000000000000)\n**********************************************************************\nFile \"/home/john/sage-4.3/devel/sage-tests/sage/schemes/elliptic_curves/heegner.py\", line 3032:\n    sage: P = E.heegner_point(-19); y = P._trace_numerical_conductor_1(); y\nExpected:\n    (-9.52657106432722e-17 - 1.11102282864639e-16*I : -1.00000000000000 + 2.21773554381910e-16*I : 1.00000000000000)\nGot:\n    (-9.53960112385537e-17 - 1.11192361105451e-16*I : -1.00000000000000 + 2.21827764490534e-16*I : 1.00000000000000)\n**********************************************************************\nFile \"/home/john/sage-4.3/devel/sage-tests/sage/schemes/elliptic_curves/heegner.py\", line 3039:\n    sage: P = E.heegner_point(-68); P._trace_numerical_conductor_1()\nExpected:\n    (9.20680004622768e28 - 1.55670186905154e28*I : -2.76369626392776e43 + 7.09357788995373e42*I : 1.00000000000000)\nGot:\n    (9.22516515637394e28 - 1.48330779290131e28*I : -2.77483419563894e43 + 6.76511130239484e42*I : 1.00000000000000)\n**********************************************************************\nFile \"/home/john/sage-4.3/devel/sage-tests/sage/schemes/elliptic_curves/heegner.py\", line 3106:\n    sage: P.numerical_approx()\nExpected:\n    (-3.41893279409096e-16 - 2.00036208715867e-16*I : 3.42282625853674e-16 + 2.00035300823576e-16*I : 1.00000000000000)\nGot:\n    (-3.41901661684534e-16 - 2.00073402416951e-16*I : 3.42011575310552e-16 + 2.00035300823576e-16*I : 1.00000000000000)\n**********************************************************************\nFile \"/home/john/sage-4.3/devel/sage-tests/sage/schemes/elliptic_curves/heegner.py\", line 3110:\n    sage: P.numerical_approx(100)[0]\nExpected:\n    8.4419827889841225189186778139e-31 + 6.0876476174448148263632780203e-31*I\nGot:\n    8.4419827889841225189186778139e-31 + 6.0876476185623182015101748774e-31*I\n**********************************************************************\nFile \"/home/john/sage-4.3/devel/sage-tests/sage/schemes/elliptic_curves/heegner.py\", line 3114:\n    sage: P.numerical_approx()\nExpected:\n    (-6.68094502209485e-16 + 1.41421356237310*I : 1.00000000000000 - 1.41421356237309*I : 1.00000000000000)\nGot:\n    (-6.68276051475152e-16 + 1.41421356237310*I : 1.00000000000000 - 1.41421356237309*I : 1.00000000000000)\n**********************************************************************\nFile \"/home/john/sage-4.3/devel/sage-tests/sage/schemes/elliptic_curves/heegner.py\", line 3123:\n    sage: P.numerical_approx()\nExpected:\n    (4.08580183114324e28 + 1.50348132882460e28*I : -7.84283601876376e42 - 4.58366020722762e42*I : 1.00000000000000)\nGot:\n    (0 : 1.00000000000000 : 0)\n**********************************************************************\nFile \"/home/john/sage-4.3/devel/sage-tests/sage/schemes/elliptic_curves/heegner.py\", line 3558:\n    sage: P._trace_numerical_conductor_1()\nExpected:\n    (1.00000000000000 + 4.49510220712490e-16*I : 1.77646525961750e-16 - 4.49510220712490e-16*I : 1.00000000000000)\nGot:\n    (1.00000000000000 + 4.49618640929739e-16*I : 1.77809156287623e-16 - 4.49672851038363e-16*I : 1.00000000000000)\n**********************************************************************\nFile \"/home/john/sage-4.3/devel/sage-tests/sage/schemes/elliptic_curves/heegner.py\", line 3939:\n    sage: P.numerical_approx()\nExpected:\n    (-3.41893279409096e-16 - 2.00036208715867e-16*I : 3.42282625853674e-16 + 2.00035300823576e-16*I : 1.00000000000000)\nGot:\n    (-3.41901661684534e-16 - 2.00073402416951e-16*I : 3.42011575310552e-16 + 2.00035300823576e-16*I : 1.00000000000000)\n**********************************************************************\nFile \"/home/john/sage-4.3/devel/sage-tests/sage/schemes/elliptic_curves/heegner.py\", line 3943:\n    sage: P.numerical_approx(100)[0]\nExpected:\n    8.4419827889841225189186778139e-31 + 6.0876476174448148263632780203e-31*I\nGot:\n    8.4419827889841225189186778139e-31 + 6.0876476185623182015101748774e-31*I\n**********************************************************************\nFile \"/home/john/sage-4.3/devel/sage-tests/sage/schemes/elliptic_curves/heegner.py\", line 3989:\n    sage: P.point_exact()\nExpected:\n    Traceback (most recent call last):\n    ...\n    RuntimeError: insufficient precision to find exact point\nGot:\n    (0 : 1 : 0)\n**********************************************************************\nFile \"/home/john/sage-4.3/devel/sage-tests/sage/schemes/elliptic_curves/heegner.py\", line 4082:\n    sage: P.numerical_approx()\nExpected:\n    (6.00000000000000 + 8.04701070793563e-16*I : -15.0000000000000 - 2.96897922913431e-15*I : 1.00000000000000)\nGot:\n    (6.00000000000000 + 8.05181817160869e-16*I : -15.0000000000000 - 2.96897922913431e-15*I : 1.00000000000000)\n**********************************************************************\nFile \"/home/john/sage-4.3/devel/sage-tests/sage/schemes/elliptic_curves/heegner.py\", line 605:\n    sage: hash(G)\nExpected:\n    -6198252699510613726\nGot:\n    1905285410\n**********************************************************************\nFile \"/home/john/sage-4.3/devel/sage-tests/sage/schemes/elliptic_curves/heegner.py\", line 607:\n    sage: hash((G.field(), G.base_field()))\nExpected:\n    -6198252699510613726\nGot:\n    1905285410\n**********************************************************************\nFile \"/home/john/sage-4.3/devel/sage-tests/sage/schemes/elliptic_curves/heegner.py\", line 6189:\n    sage: P.numerical_approx()\nExpected:\n    (6.00000000000000 + 8.04701070793563e-16*I : -15.0000000000000 - 2.96897922913431e-15*I : 1.00000000000000)\nGot:\n    (6.00000000000000 + 8.05181817160869e-16*I : -15.0000000000000 - 2.96897922913431e-15*I : 1.00000000000000)\n**********************************************************************\nFile \"/home/john/sage-4.3/devel/sage-tests/sage/schemes/elliptic_curves/heegner.py\", line 1253:\n    sage: conj = G.complex_conjugation(); hash(conj)\nExpected:\n    1347197483068745902\nGot:\n    480045230\n**********************************************************************\nFile \"/home/john/sage-4.3/devel/sage-tests/sage/schemes/elliptic_curves/heegner.py\", line 1447:\n    sage: hash(s)\nExpected:\n    ??                      \nGot:\n    -1994029223\n**********************************************************************\nFile \"/home/john/sage-4.3/devel/sage-tests/sage/schemes/elliptic_curves/heegner.py\", line 274:\n    sage: hash(K5)\nExpected:\n    -3713088127102618519\nGot:\n    1817441385\n**********************************************************************\nFile \"/home/john/sage-4.3/devel/sage-tests/sage/schemes/elliptic_curves/heegner.py\", line 276:\n    sage: hash((-7,5))\nExpected:\n    -3713088127102618519\nGot:\n    1817441385\n**********************************************************************\nFile \"/home/john/sage-4.3/devel/sage-tests/sage/schemes/elliptic_curves/heegner.py\", line 1688:\n    sage: hash(H)\nExpected:\n    6187687223143458874\nGot:\n    -458201030\n**********************************************************************\n15 items had failures:\n```\n\nIncidentally that test takes 90s which is rather long (I have not tested it with \"-long\" yet!)\n\nSome of this might be caused by the fact that I have a new version of lcalc (from reviewing another ticket) although this is a fresh clone?\n\n```\nsage -t  \"devel/sage-tests/sage/schemes/elliptic_curves/lseries_ell.py\"\n**********************************************************************\nFile \"/home/john/sage-4.3/devel/sage-tests/sage/schemes/elliptic_curves/lseries_ell.py\", line 258:\n    sage: E.lseries().zeros_in_interval(6, 10, 0.1)      # long\nException raised:\n    Traceback (most recent call last):\n      File \"/home/john/sage-4.3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/john/sage-4.3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/john/sage-4.3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_10[3]>\", line 1, in <module>\n        E.lseries().zeros_in_interval(Integer(6), Integer(10), RealNumber('0.1'))      # long###line 258:\n    sage: E.lseries().zeros_in_interval(6, 10, 0.1)      # long\n      File \"/home/john/sage-4.3/local/lib/python/site-packages/sage/schemes/elliptic_curves/lseries_ell.py\", line 262, in zeros_in_interval\n        return lcalc.zeros_in_interval(x, y, stepsize, L=self.__E)\n      File \"/home/john/sage-4.3/local/lib/python/site-packages/sage/lfunctions/lcalc.py\", line 162, in zeros_in_interval\n        return [tuple([RR(z) for z in t.split()]) for t in X.split('\\n')]\n      File \"parent.pyx\", line 538, in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:4956)\n      File \"coerce_maps.pyx\", line 82, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3142)\n      File \"coerce_maps.pyx\", line 77, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3040)\n      File \"real_mpfr.pyx\", line 384, in sage.rings.real_mpfr.RealField._element_constructor_ (sage/rings/real_mpfr.c:5053)\n      File \"real_mpfr.pyx\", line 1009, in sage.rings.real_mpfr.RealNumber._set (sage/rings/real_mpfr.c:8794)\n    TypeError: Unable to convert x (='You') to real number.\n**********************************************************************\nFile \"/home/john/sage-4.3/devel/sage-tests/sage/schemes/elliptic_curves/lseries_ell.py\", line 311:\n    sage: print \"ignore this\";  E.lseries().twist_values(1, -12, -4)    # slightly random output depending on architecture\nException raised:\n    Traceback (most recent call last):\n      File \"/home/john/sage-4.3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/john/sage-4.3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/john/sage-4.3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_12[3]>\", line 1, in <module>\n        print \"ignore this\";  E.lseries().twist_values(Integer(1), -Integer(12), -Integer(4))    # slightly random output depending on architecture###line 311:\n    sage: print \"ignore this\";  E.lseries().twist_values(1, -12, -4)    # slightly random output depending on architecture\n      File \"/home/john/sage-4.3/local/lib/python/site-packages/sage/schemes/elliptic_curves/lseries_ell.py\", line 321, in twist_values\n        return lcalc.twist_values(s - RationalField()('1/2'), dmin, dmax, L=self.__E)\n      File \"/home/john/sage-4.3/local/lib/python/site-packages/sage/lfunctions/lcalc.py\", line 296, in twist_values\n        d,x,y = a.split()\n    ValueError: too many values to unpack\n**********************************************************************\nFile \"/home/john/sage-4.3/devel/sage-tests/sage/schemes/elliptic_curves/lseries_ell.py\", line 343:\n    sage: E.lseries().twist_zeros(3, -4, -3)         # long\nException raised:\n    Traceback (most recent call last):\n      File \"/home/john/sage-4.3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/john/sage-4.3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/john/sage-4.3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_13[3]>\", line 1, in <module>\n        E.lseries().twist_zeros(Integer(3), -Integer(4), -Integer(3))         # long###line 343:\n    sage: E.lseries().twist_zeros(3, -4, -3)         # long\n      File \"/home/john/sage-4.3/local/lib/python/site-packages/sage/schemes/elliptic_curves/lseries_ell.py\", line 347, in twist_zeros\n        return lcalc.twist_zeros(n, dmin, dmax, L=self.__E)\n      File \"/home/john/sage-4.3/local/lib/python/site-packages/sage/lfunctions/lcalc.py\", line 342, in twist_zeros\n        d, x = a.split()\n    ValueError: too many values to unpack\n**********************************************************************\nFile \"/home/john/sage-4.3/devel/sage-tests/sage/schemes/elliptic_curves/lseries_ell.py\", line 226:\n    sage: E.lseries().zeros(2)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/john/sage-4.3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/john/sage-4.3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/john/sage-4.3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_9[3]>\", line 1, in <module>\n        E.lseries().zeros(Integer(2))###line 226:\n    sage: E.lseries().zeros(2)\n      File \"/home/john/sage-4.3/local/lib/python/site-packages/sage/schemes/elliptic_curves/lseries_ell.py\", line 236, in zeros\n        return lcalc.zeros(n, L=self.__E)\n      File \"/home/john/sage-4.3/local/lib/python/site-packages/sage/lfunctions/lcalc.py\", line 126, in zeros\n        return [RR(z) for z in X.split()]\n      File \"parent.pyx\", line 538, in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:4956)\n      File \"coerce_maps.pyx\", line 82, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3142)\n      File \"coerce_maps.pyx\", line 77, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3040)\n      File \"real_mpfr.pyx\", line 384, in sage.rings.real_mpfr.RealField._element_constructor_ (sage/rings/real_mpfr.c:5053)\n      File \"real_mpfr.pyx\", line 1009, in sage.rings.real_mpfr.RealNumber._set (sage/rings/real_mpfr.c:8794)\n    TypeError: Unable to convert x (='You') to real number.\n**********************************************************************\n4 items had failures:\n```\n\n\nThe perennial noise issues in period_lattice.py:\n\n```\nsage -t  \"devel/sage-tests/sage/schemes/elliptic_curves/period_lattice.py\"\n**********************************************************************\nFile \"/home/john/sage-4.3/devel/sage-tests/sage/schemes/elliptic_curves/period_lattice.py\", line 1111:\n    sage: L.elliptic_exponential(z)\nExpected:\n    (1.06844510091205e-15 : 2.00000000000000 : 1.00000000000000)\nGot:\n    (1.06663809729124e-15 : 2.00000000000000 : 1.00000000000000)\n**********************************************************************\nFile \"/home/john/sage-4.3/devel/sage-tests/sage/schemes/elliptic_curves/period_lattice.py\", line 1119:\n    sage: L.elliptic_exponential(z)\nExpected:\n    (-1.0773137765183430387827930528831385613292568270511670949401e-60 : 2.0000000000000000000000000000000000000000000000000000000000 : 1.0000000000000000000000000000000000000000000000000000000000)\nGot:\n    (-1.0773140994173990301711557437150639986876632707626675784012e-60 : 2.0000000000000000000000000000000000000000000000000000000000 : 1.0000000000000000000000000000000000000000000000000000000000)\n```\n\n\nLastly, in ell_rational_field.py, we have some more of the same plus a very weird issue with \"rubenstein\":\n\n```\nsage -t  \"devel/sage-tests/sage/schemes/elliptic_curves/ell_rational_field.py\"\n**********************************************************************\nFile \"/home/john/sage-4.3/devel/sage-tests/sage/schemes/elliptic_curves/ell_rational_field.py\", line 1334:\n    sage: E.analytic_rank(algorithm='rubinstein')\nException raised:\n    Traceback (most recent call last):\n      File \"/home/john/sage-4.3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/john/sage-4.3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/john/sage-4.3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_28[4]>\", line 1, in <module>\n        E.analytic_rank(algorithm='rubinstein')###line 1334:\n    sage: E.analytic_rank(algorithm='rubinstein')\n      File \"/home/john/sage-4.3/local/lib/python/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py\", line 1363, in analytic_rank\n        raise RuntimeError, \"unable to compute analytic rank using rubinstein algorithm ('%s')\"%msg\n    RuntimeError: unable to compute analytic rank using rubinstein algorithm ('unable to convert x (=eed to uncomment the line: PARI_DEFINE = -DINCLUDE_PARI\n    in the Makefile and do: 'make clean', then 'make' if you wish to use\n    elliptic curve L-functions. Requires that you already have pari installed\n    on your machine.) to an integer')\n**********************************************************************\nFile \"/home/john/sage-4.3/devel/sage-tests/sage/schemes/elliptic_curves/ell_rational_field.py\", line 1340:\n    sage: E.analytic_rank(algorithm='all')\nException raised:\n    Traceback (most recent call last):\n      File \"/home/john/sage-4.3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/john/sage-4.3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/john/sage-4.3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_28[6]>\", line 1, in <module>\n        E.analytic_rank(algorithm='all')###line 1340:\n    sage: E.analytic_rank(algorithm='all')\n      File \"/home/john/sage-4.3/local/lib/python/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py\", line 1372, in analytic_rank\n        self.analytic_rank('rubinstein'), self.analytic_rank('sympow')]))\n      File \"/home/john/sage-4.3/local/lib/python/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py\", line 1363, in analytic_rank\n        raise RuntimeError, \"unable to compute analytic rank using rubinstein algorithm ('%s')\"%msg\n    RuntimeError: unable to compute analytic rank using rubinstein algorithm ('unable to convert x (=eed to uncomment the line: PARI_DEFINE = -DINCLUDE_PARI\n    in the Makefile and do: 'make clean', then 'make' if you wish to use\n    elliptic curve L-functions. Requires that you already have pari installed\n    on your machine.) to an integer')\n**********************************************************************\nFile \"/home/john/sage-4.3/devel/sage-tests/sage/schemes/elliptic_curves/ell_rational_field.py\", line 1347:\n    sage: EllipticCurve([1234567,89101112]).analytic_rank(algorithm='rubinstein')\nExpected:\n    Traceback (most recent call last):\n    ...\n    RuntimeError: unable to compute analytic rank using rubinstein algorithm ('unable to convert x (= 6.19283e+19 and is too large) to an integer')\nGot:\n    Traceback (most recent call last):\n      File \"/home/john/sage-4.3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/john/sage-4.3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/john/sage-4.3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_28[7]>\", line 1, in <module>\n        EllipticCurve([Integer(1234567),Integer(89101112)]).analytic_rank(algorithm='rubinstein')###line 1347:\n    sage: EllipticCurve([1234567,89101112]).analytic_rank(algorithm='rubinstein')\n      File \"/home/john/sage-4.3/local/lib/python/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py\", line 1363, in analytic_rank\n        raise RuntimeError, \"unable to compute analytic rank using rubinstein algorithm ('%s')\"%msg\n    RuntimeError: unable to compute analytic rank using rubinstein algorithm ('unable to convert x (=eed to uncomment the line: PARI_DEFINE = -DINCLUDE_PARI\n    in the Makefile and do: 'make clean', then 'make' if you wish to use\n    elliptic curve L-functions. Requires that you already have pari installed\n    on your machine.) to an integer')\n**********************************************************************\nFile \"/home/john/sage-4.3/devel/sage-tests/sage/schemes/elliptic_curves/ell_rational_field.py\", line 2901:\n    sage: E.elliptic_exponential(z)\nExpected:\n    (-7.4445166218537606141680653627e-30 : 2.0000000000000000000000000000 : 1.0000000000000000000000000000)\nGot:\n    (-7.4445166228333392396252290308e-30 : 2.0000000000000000000000000000 : 1.0000000000000000000000000000)\n**********************************************************************\nFile \"/home/john/sage-4.3/devel/sage-tests/sage/schemes/elliptic_curves/ell_rational_field.py\", line 2904:\n    sage: E.elliptic_exponential(z)\nExpected:\n    (-1.0773137765183430387827930528831385613292568270511670949401e-60 : 2.0000000000000000000000000000000000000000000000000000000000 : 1.0000000000000000000000000000000000000000000000000000000000)\nGot:\n    (-1.0773140994173990301711557437150639986876632707626675784012e-60 : 2.0000000000000000000000000000000000000000000000000000000000 : 1.0000000000000000000000000000000000000000000000000000000000)\n**********************************************************************\nFile \"/home/john/sage-4.3/devel/sage-tests/sage/schemes/elliptic_curves/ell_rational_field.py\", line 2916:\n    sage: E.elliptic_exponential(P.elliptic_logarithm())\nExpected:\n    (-1.0000000000000000000000000000 + 4.3761255281366123414673626379e-31*I : 1.0000000000000000000000000000 - 1.4587084969798853407242847702e-31*I : 1.0000000000000000000000000000)\nGot:\n    (-1.0000000000000000000000000000 + 4.3761255295105644085291631657e-31*I : 1.0000000000000000000000000000 - 1.4587084969798853407242847702e-31*I : 1.0000000000000000000000000000)\n**********************************************************************\n2 items had failures:\n   3 of   9 in __main__.example_28\n   3 of  22 in __main__.example_61\n***Test Failed*** 6 failures.\nFor whitespace errors, see the file /home/john/.sage//tmp/.doctest_ell_rational_field.py\n\t [69.0 s]\n```\n\n\nSo the conclusion is, regretfully,  \"needs work\", though the work that needs doing is trivial compared with what has been done already (which is probably worth a PhD thesis for someone!).",
+    "created_at": "2010-01-03T16:51:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6616",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54203",
+    "user": "cremona"
+}
+```
 
 Review:  I am immensely impressed by the huge amount of work which has gone into this ten thousand-line patch!  It goes far beyond the refactoring of the title.
 
@@ -605,39 +978,98 @@ For whitespace errors, see the file /home/john/.sage//tmp/.doctest_ell_rational_
 So the conclusion is, regretfully,  "needs work", though the work that needs doing is trivial compared with what has been done already (which is probably worth a PhD thesis for someone!).
 
 
+
 ---
+
+archive/issue_comments_054204.json:
+```json
+{
+    "body": "Attachment\n\napply this and the previous patch; then this should past all tests on 32-bit as well as 64-bit.",
+    "created_at": "2010-01-13T15:12:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6616",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54204",
+    "user": "was"
+}
+```
 
 Attachment
 
 apply this and the previous patch; then this should past all tests on 32-bit as well as 64-bit.
 
 
+
 ---
 
-Comment by was created at 2010-01-13 15:12:18
+archive/issue_comments_054205.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-01-13T15:12:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6616",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54205",
+    "user": "was"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by was created at 2010-01-13 15:14:27
+archive/issue_comments_054206.json:
+```json
+{
+    "body": "I posted a new patch fixing all the issues above, except possibly the \"very weird\" ell_rational_field issue.  I couldn't replicate that on any test machine yet. \n\nI also didn't carefully reformat the docstrings.  Which ones aren't formatted correctly?  I thought I had got them right.",
+    "created_at": "2010-01-13T15:14:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6616",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54206",
+    "user": "was"
+}
+```
 
 I posted a new patch fixing all the issues above, except possibly the "very weird" ell_rational_field issue.  I couldn't replicate that on any test machine yet. 
 
 I also didn't carefully reformat the docstrings.  Which ones aren't formatted correctly?  I thought I had got them right.
 
 
+
 ---
+
+archive/issue_comments_054207.json:
+```json
+{
+    "body": "Attachment\n\napply instead of previous one",
+    "created_at": "2010-01-13T16:22:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6616",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54207",
+    "user": "cremona"
+}
+```
 
 Attachment
 
 apply instead of previous one
 
 
+
 ---
 
-Comment by cremona created at 2010-01-13 16:23:55
+archive/issue_comments_054208.json:
+```json
+{
+    "body": "cremona>> The patches say they are based on 4.3 rather than 4.3.1.  the first\n>> one produced one failed hunk when I applied it to 4.3.1 (see attached\n>> -- looks minor).\n>\nwas> That's in a doctest for something probably unrelated, so can be safely\n> ignored for refereeing.\n\nIgnoring that, there was just one small thing (testing on 64-bit), namely\n\n```\nFile \"/home/jec/sage-4.3.1.alpha1/devel/sage-tests/sage/schemes/elliptic_curves/heegner.py\", line 277:\n    sage: hash((-7,5))\nExpected:\n    -3713088127102618519     \n    1817441385\nGot:\n    -3713088127102618519\n```\n\nwhich is just because someone forgot to add the tag # 32-bit.  I added that by editing the patch, and the corrected version is now attached here.\n\nSo: positive review on 64-bit.  I'll test on 32-bit when I get home (leaving now, hope I do not get buried in the snow...)",
+    "created_at": "2010-01-13T16:23:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6616",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54208",
+    "user": "cremona"
+}
+```
 
 cremona>> The patches say they are based on 4.3 rather than 4.3.1.  the first
 >> one produced one failed hunk when I applied it to 4.3.1 (see attached
@@ -663,21 +1095,56 @@ which is just because someone forgot to add the tag # 32-bit.  I added that by e
 So: positive review on 64-bit.  I'll test on 32-bit when I get home (leaving now, hope I do not get buried in the snow...)
 
 
+
 ---
 
-Comment by cremona created at 2010-01-13 18:20:58
+archive/issue_comments_054209.json:
+```json
+{
+    "body": "Apply after previous (reviewer's patch fixing some docstring issues)",
+    "created_at": "2010-01-13T18:20:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6616",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54209",
+    "user": "cremona"
+}
+```
 
 Apply after previous (reviewer's patch fixing some docstring issues)
 
 
+
 ---
 
-Comment by cremona created at 2010-01-13 18:23:04
+archive/issue_comments_054210.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-01-13T18:23:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6616",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54210",
+    "user": "cremona"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
+
+archive/issue_comments_054211.json:
+```json
+{
+    "body": "Attachment\n\nPositive review after testing on 32-bit, and also fixing lots of documentation glitches (in the reviewer's patch).  These were mainly found by actually running \"sage -docbuild all html\" and reading the error messages (hint hint).  Most common error was double :: where they shouldn't be.\n\nGreat work!",
+    "created_at": "2010-01-13T18:23:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6616",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54211",
+    "user": "cremona"
+}
+```
 
 Attachment
 
@@ -686,9 +1153,20 @@ Positive review after testing on 32-bit, and also fixing lots of documentation g
 Great work!
 
 
+
 ---
 
-Comment by rlm created at 2010-01-14 01:21:13
+archive/issue_comments_054212.json:
+```json
+{
+    "body": "Applied:\n\n```\ntrac-6616-everything_rebased_against_4.3.patch\ntrac-6616-everything_rebased_against_4.3-part2.2.patch\ntrac-6616-review.patch\n```\n",
+    "created_at": "2010-01-14T01:21:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6616",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54212",
+    "user": "rlm"
+}
+```
 
 Applied:
 
@@ -700,8 +1178,19 @@ trac-6616-review.patch
 
 
 
+
 ---
 
-Comment by rlm created at 2010-01-14 01:21:13
+archive/issue_comments_054213.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-14T01:21:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6616",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6616#issuecomment-54213",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed

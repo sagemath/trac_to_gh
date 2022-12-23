@@ -1,11 +1,21 @@
 # Issue 9960: Allow assumptions on the dependent variable in desolve
 
-Issue created by migration from https://trac.sagemath.org/ticket/9961
-
-Original creator: robert.marik
-
-Original creation time: 2010-09-21 19:29:55
-
+archive/issues_009960.json:
+```json
+{
+    "body": "Assignee: burcin\n\nSage should be able to solve ODE\n\n```\nx*diff(y,x)-x*sqrt(y^2+x^2)-y == 0\n```\n\nunder assumptions \n\n```\nx>0,y>0\n```\n\n\nNow \n\n```\ny=function('y',x)\nassume(y>0)\n```\n\npasses\n\n```\nassume(y(x)>0)\n```\n\nto Maxima. As a consequence, Maxima asks on sign of y. This should be fixed,\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9961\n\n",
+    "created_at": "2010-09-21T19:29:55Z",
+    "labels": [
+        "symbolics",
+        "major",
+        "bug"
+    ],
+    "title": "Allow assumptions on the dependent variable in desolve",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9960",
+    "user": "robert.marik"
+}
+```
 Assignee: burcin
 
 Sage should be able to solve ODE
@@ -37,75 +47,195 @@ assume(y(x)>0)
 to Maxima. As a consequence, Maxima asks on sign of y. This should be fixed,
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/9961
+
+
+
+
 
 ---
 
-Comment by robert.marik created at 2010-09-21 19:35:21
+archive/issue_comments_099745.json:
+```json
+{
+    "body": "The patch fixes the problem, but we use strings in new optional argument of desolve. Some better suggestions are wellcomed.",
+    "created_at": "2010-09-21T19:35:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9960",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9960#issuecomment-99745",
+    "user": "robert.marik"
+}
+```
 
 The patch fixes the problem, but we use strings in new optional argument of desolve. Some better suggestions are wellcomed.
 
 
+
 ---
+
+archive/issue_comments_099746.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-09-21T19:48:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9960",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9960#issuecomment-99746",
+    "user": "robert.marik"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by robert.marik created at 2010-09-21 19:52:25
+archive/issue_comments_099747.json:
+```json
+{
+    "body": "The patch depends on #9961 which runs all commands in one Maxima session.",
+    "created_at": "2010-09-21T19:52:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9960",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9960#issuecomment-99747",
+    "user": "robert.marik"
+}
+```
 
 The patch depends on #9961 which runs all commands in one Maxima session.
 
 
+
 ---
 
-Comment by robert.marik created at 2010-09-21 20:05:03
+archive/issue_comments_099748.json:
+```json
+{
+    "body": "Oops, I mean #9835 :)\nReplying to [comment:2 robert.marik]:\n> The patch depends on #9961 which runs all commands in one Maxima session.",
+    "created_at": "2010-09-21T20:05:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9960",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9960#issuecomment-99748",
+    "user": "robert.marik"
+}
+```
 
 Oops, I mean #9835 :)
 Replying to [comment:2 robert.marik]:
 > The patch depends on #9961 which runs all commands in one Maxima session.
 
 
+
 ---
 
-Comment by robert.marik created at 2010-09-21 20:05:03
+archive/issue_comments_099749.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-09-21T20:05:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9960",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9960#issuecomment-99749",
+    "user": "robert.marik"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by kcrisman created at 2010-09-21 20:17:17
+archive/issue_comments_099750.json:
+```json
+{
+    "body": "I appreciate the sentiment and idea, but adding a keyword exposes us to backwards incompatibility if someone (me?) ever gets to making the assumption system better - at least, that's my gut reaction.  What do you think?",
+    "created_at": "2010-09-21T20:17:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9960",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9960#issuecomment-99750",
+    "user": "kcrisman"
+}
+```
 
 I appreciate the sentiment and idea, but adding a keyword exposes us to backwards incompatibility if someone (me?) ever gets to making the assumption system better - at least, that's my gut reaction.  What do you think?
 
 
+
 ---
+
+archive/issue_comments_099751.json:
+```json
+{
+    "body": "Attachment\n\napply only this patch",
+    "created_at": "2010-09-21T21:03:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9960",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9960#issuecomment-99751",
+    "user": "burcin"
+}
+```
 
 Attachment
 
 apply only this patch
 
 
+
 ---
 
-Comment by burcin created at 2010-09-21 21:06:46
+archive/issue_comments_099752.json:
+```json
+{
+    "body": "I was just thinking the same thing about the extra option. If we go with that option, the documentation should state clearly that this is a temporary solution.\n\nOn the other hand, attachment:trac_9961-assume_function.patch might provide an alternative option. I don't have much time so I didn't run tests or anything. Feel free to finish it up if you think it makes sense.",
+    "created_at": "2010-09-21T21:06:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9960",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9960#issuecomment-99752",
+    "user": "burcin"
+}
+```
 
 I was just thinking the same thing about the extra option. If we go with that option, the documentation should state clearly that this is a temporary solution.
 
 On the other hand, attachment:trac_9961-assume_function.patch might provide an alternative option. I don't have much time so I didn't run tests or anything. Feel free to finish it up if you think it makes sense.
 
 
+
 ---
+
+archive/issue_comments_099753.json:
+```json
+{
+    "body": "Attachment\n\napply only this patch",
+    "created_at": "2010-09-22T16:04:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9960",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9960#issuecomment-99753",
+    "user": "burcin"
+}
+```
 
 Attachment
 
 apply only this patch
 
 
+
 ---
 
-Comment by burcin created at 2010-09-22 16:07:58
+archive/issue_comments_099754.json:
+```json
+{
+    "body": "I uploaded a new patch attachment:trac_9961-assume_function.take2.patch. The previous version caused doctest failures like:\n\n\n```\nFile \"/home/burcin/sage/sage-4.5.2.rc0/devel/sage-s/sage/calculus/wester.py\", line 386:\n    sage: assume(real(x) > 0, real(y) > 0)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/burcin/sage/sage-4.5.2.rc0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/burcin/sage/sage-4.5.2.rc0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/burcin/sage/sage-4.5.2.rc0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[131]>\", line 1, in <module>\n        assume(real(x) > Integer(0), real(y) > Integer(0))###line 386:\n    sage: assume(real(x) > 0, real(y) > 0)\n      File \"/home/burcin/sage/sage-4.5.2.rc0/local/lib/python/site-packages/sage/symbolic/assumptions.py\", line 357, in assume\n        x.assume()\n      File \"expression.pyx\", line 1214, in sage.symbolic.expression.Expression.assume (sage/symbolic/expression.cpp:6320)\n    ValueError: Assumption is redundant\n```\n\n\nor \n\n\n```\nFile \"/home/burcin/sage/sage-4.5.2.rc0/devel/sage-s/sage/symbolic/expression.pyx\", line 7691:\n    sage: (a*q^k).sum(k, 0, oo)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/burcin/sage/sage-4.5.2.rc0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/burcin/sage/sage-4.5.2.rc0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/burcin/sage/sage-4.5.2.rc0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_170[21]>\", line 1, in <module>\n        (a*q**k).sum(k, Integer(0), oo)###line 7691:\n    sage: (a*q^k).sum(k, 0, oo)\n      File \"expression.pyx\", line 7717, in sage.symbolic.expression.Expression.sum (sage/symbolic/expression.cpp:30994)\n        Mathematica, so even if the chosen backend can perform the summation the\n      File \"/home/burcin/sage/sage-4.5.2.rc0/local/lib/python/site-packages/sage/calculus/calculus.py\", line 503, in symbolic_sum\n        result = maxima.simplify_sum(sum)\n      File \"/home/burcin/sage/sage-4.5.2.rc0/local/lib/python/site-packages/sage/interfaces/expect.py\", line 1387, in __call__\n        return self._parent.function_call(self._name, list(args), kwds)\n      File \"/home/burcin/sage/sage-4.5.2.rc0/local/lib/python/site-packages/sage/interfaces/expect.py\", line 1322, in function_call\n        return self.new(s)\n      File \"/home/burcin/sage/sage-4.5.2.rc0/local/lib/python/site-packages/sage/interfaces/expect.py\", line 1097, in new\n        return self(code)\n      File \"/home/burcin/sage/sage-4.5.2.rc0/local/lib/python/site-packages/sage/interfaces/expect.py\", line 1032, in __call__\n        return cls(self, x, name=name)\n      File \"/home/burcin/sage/sage-4.5.2.rc0/local/lib/python/site-packages/sage/interfaces/expect.py\", line 1457, in __init__\n        raise TypeError, x\n    TypeError: Computation failed since Maxima requested additional constraints (try the command 'assume(abs(q)-1>0)' before integral or limit evaluation, for example):\n    Is  abs(q)-1  positive, negative, or zero?\n```\n\n\nThis patch restricts the special treatment to user defined functions.\n\nThis passes all the symbolics related doctests, I think it's ready for review.",
+    "created_at": "2010-09-22T16:07:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9960",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9960#issuecomment-99754",
+    "user": "burcin"
+}
+```
 
 I uploaded a new patch attachment:trac_9961-assume_function.take2.patch. The previous version caused doctest failures like:
 
@@ -172,9 +302,20 @@ This patch restricts the special treatment to user defined functions.
 This passes all the symbolics related doctests, I think it's ready for review.
 
 
+
 ---
 
-Comment by robert.marik created at 2010-09-23 15:52:30
+archive/issue_comments_099755.json:
+```json
+{
+    "body": "Looks good for me, all tests passes.\n\nApply only attachment:trac_9961-assume_function.take2.patch and apply it on the top of #9835 \n\nI would give positive review, but probably kcrisman should also look on the patch.",
+    "created_at": "2010-09-23T15:52:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9960",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9960#issuecomment-99755",
+    "user": "robert.marik"
+}
+```
 
 Looks good for me, all tests passes.
 
@@ -183,37 +324,94 @@ Apply only attachment:trac_9961-assume_function.take2.patch and apply it on the 
 I would give positive review, but probably kcrisman should also look on the patch.
 
 
+
 ---
 
-Comment by kcrisman created at 2010-09-23 17:31:59
+archive/issue_comments_099756.json:
+```json
+{
+    "body": "I don't have time to give testing this the TLC it deserves, so I think the two of you should decide if you approve of each other's contributions.    However, it probably would be nice if we checked in the patch whether #9961 was actually fixed, like it does in Robert's patch!  If you can think of any other way to doctest this it would be nice.  Does it slow anything up very much?",
+    "created_at": "2010-09-23T17:31:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9960",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9960#issuecomment-99756",
+    "user": "kcrisman"
+}
+```
 
 I don't have time to give testing this the TLC it deserves, so I think the two of you should decide if you approve of each other's contributions.    However, it probably would be nice if we checked in the patch whether #9961 was actually fixed, like it does in Robert's patch!  If you can think of any other way to doctest this it would be nice.  Does it slow anything up very much?
 
 
+
 ---
 
-Comment by kcrisman created at 2010-09-23 17:31:59
+archive/issue_comments_099757.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-09-23T17:31:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9960",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9960#issuecomment-99757",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
+
+archive/issue_comments_099758.json:
+```json
+{
+    "body": "Attachment\n\nBurcin's patch with doctest. Apply only this patch.",
+    "created_at": "2010-09-23T17:40:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9960",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9960#issuecomment-99758",
+    "user": "robert.marik"
+}
+```
 
 Attachment
 
 Burcin's patch with doctest. Apply only this patch.
 
 
+
 ---
 
-Comment by robert.marik created at 2010-09-23 17:45:41
+archive/issue_comments_099759.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-09-23T17:45:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9960",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9960#issuecomment-99759",
+    "user": "robert.marik"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by robert.marik created at 2010-09-23 17:45:41
+archive/issue_comments_099760.json:
+```json
+{
+    "body": "Oops, I actually tested Burcin's patch with one doctest added. This new patch is \nattachment:trac_9961-assume_function.take3.patch\n\nAgree that each closed ticket must be doctested. Hope, everything is O.K. now. Burcin, can you review my changes in your patch?",
+    "created_at": "2010-09-23T17:45:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9960",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9960#issuecomment-99760",
+    "user": "robert.marik"
+}
+```
 
 Oops, I actually tested Burcin's patch with one doctest added. This new patch is 
 attachment:trac_9961-assume_function.take3.patch
@@ -221,9 +419,20 @@ attachment:trac_9961-assume_function.take3.patch
 Agree that each closed ticket must be doctested. Hope, everything is O.K. now. Burcin, can you review my changes in your patch?
 
 
+
 ---
 
-Comment by burcin created at 2010-09-23 21:32:45
+archive/issue_comments_099761.json:
+```json
+{
+    "body": "Of course there should be a doctest for the issue reported. Thanks for catching that Karl-Dieter.\n\nRobert, thank you for fixing my patch and adding the doctest.\n\nI'm changing this to a positive review, in light of comment:7 from Robert Marik and comment:8 from Karl-Dieter Crisman.",
+    "created_at": "2010-09-23T21:32:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9960",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9960#issuecomment-99761",
+    "user": "burcin"
+}
+```
 
 Of course there should be a doctest for the issue reported. Thanks for catching that Karl-Dieter.
 
@@ -232,15 +441,37 @@ Robert, thank you for fixing my patch and adding the doctest.
 I'm changing this to a positive review, in light of comment:7 from Robert Marik and comment:8 from Karl-Dieter Crisman.
 
 
+
 ---
 
-Comment by burcin created at 2010-09-23 21:32:45
+archive/issue_comments_099762.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-09-23T21:32:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9960",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9960#issuecomment-99762",
+    "user": "burcin"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-28 09:11:50
+archive/issue_comments_099763.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-09-28T09:11:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9960",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9960#issuecomment-99763",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed

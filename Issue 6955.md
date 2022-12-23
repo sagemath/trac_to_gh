@@ -1,104 +1,256 @@
 # Issue 6955: update simon denis pari-scripts
 
-Issue created by migration from https://trac.sagemath.org/ticket/6955
-
-Original creator: wuthrich
-
-Original creation time: 2009-09-18 11:03:40
-
+archive/issues_006955.json:
+```json
+{
+    "body": "Assignee: davidloeffler\n\nKeywords: two descent,\n\nI found out that sage comes with old versions of the files ell.gp,  ellQ.gp,  qfsolve.gp. This should be updated. The newest version can be found at http://www.math.unicaen.fr/~simon/ .\n\nIssue created by migration from https://trac.sagemath.org/ticket/6955\n\n",
+    "created_at": "2009-09-18T11:03:40Z",
+    "labels": [
+        "elliptic curves",
+        "major",
+        "bug"
+    ],
+    "title": "update simon denis pari-scripts",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6955",
+    "user": "wuthrich"
+}
+```
 Assignee: davidloeffler
 
 Keywords: two descent,
 
 I found out that sage comes with old versions of the files ell.gp,  ellQ.gp,  qfsolve.gp. This should be updated. The newest version can be found at http://www.math.unicaen.fr/~simon/ .
 
+Issue created by migration from https://trac.sagemath.org/ticket/6955
+
+
+
+
 
 ---
 
-Comment by wuthrich created at 2009-09-18 11:04:41
+archive/issue_comments_057514.json:
+```json
+{
+    "body": "This should be very easy to do, but I don't know how to submit a patch for this. Sorry.",
+    "created_at": "2009-09-18T11:04:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6955",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6955#issuecomment-57514",
+    "user": "wuthrich"
+}
+```
 
 This should be very easy to do, but I don't know how to submit a patch for this. Sorry.
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-10-09 09:10:03
+archive/issue_comments_057515.json:
+```json
+{
+    "body": "Remove assignee davidloeffler.",
+    "created_at": "2009-10-09T09:10:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6955",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6955#issuecomment-57515",
+    "user": "davidloeffler"
+}
+```
 
 Remove assignee davidloeffler.
 
 
+
 ---
 
-Comment by cremona created at 2009-12-14 17:14:35
+archive/issue_comments_057516.json:
+```json
+{
+    "body": "See also #5153.  We'll need to check that the version on Denis's home page is at least as up-to-date as the one he sent me which apparently fixed the bug I sent him.  I'll also try to find that email correspondence and add it to one of these tickets.",
+    "created_at": "2009-12-14T17:14:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6955",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6955#issuecomment-57516",
+    "user": "cremona"
+}
+```
 
 See also #5153.  We'll need to check that the version on Denis's home page is at least as up-to-date as the one he sent me which apparently fixed the bug I sent him.  I'll also try to find that email correspondence and add it to one of these tickets.
 
 
+
 ---
 
-Comment by cremona created at 2010-04-03 16:36:40
+archive/issue_comments_057517.json:
+```json
+{
+    "body": "I have updated the scripts (attached to the ticket) to the ones on DS's home page on 3 April 2010, which are dated as follows:\n- ell.gp (v. 2009-03-25)\n- ellQ.gp (v. 2008-04-29)\n- qfsolve.gp (v. 2008-02-26)\nThe patch (to appear) applies to 4.3.5 and fixes some small things:  Simon's variable DEBUGLEVEL has been renamed DEBUGLEVEL_ell, and some of the verbose output changes a little.  ALso, some \"generators\" appear in a different order or are otherwise (mathematically) trivially different.\n\nThis does not fix other issues with these scripts, as in #5153.",
+    "created_at": "2010-04-03T16:36:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6955",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6955#issuecomment-57517",
+    "user": "cremona"
+}
+```
 
 I have updated the scripts (attached to the ticket) to the ones on DS's home page on 3 April 2010, which are dated as follows:
-    - ell.gp (v. 2009-03-25)
-    - ellQ.gp (v. 2008-04-29)
-    - qfsolve.gp (v. 2008-02-26)
+- ell.gp (v. 2009-03-25)
+- ellQ.gp (v. 2008-04-29)
+- qfsolve.gp (v. 2008-02-26)
 The patch (to appear) applies to 4.3.5 and fixes some small things:  Simon's variable DEBUGLEVEL has been renamed DEBUGLEVEL_ell, and some of the verbose output changes a little.  ALso, some "generators" appear in a different order or are otherwise (mathematically) trivially different.
 
 This does not fix other issues with these scripts, as in #5153.
 
 
+
 ---
+
+archive/issue_comments_057518.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-04-03T16:37:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6955",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6955#issuecomment-57518",
+    "user": "cremona"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_057519.json:
+```json
+{
+    "body": "Attachment\n\nApplies to 4.3.5",
+    "created_at": "2010-04-03T16:42:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6955",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6955#issuecomment-57519",
+    "user": "cremona"
+}
+```
 
 Attachment
 
 Applies to 4.3.5
 
 
+
 ---
 
-Comment by cremona created at 2010-04-03 16:43:44
+archive/issue_comments_057520.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-04-03T16:43:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6955",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6955#issuecomment-57520",
+    "user": "cremona"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by cremona created at 2010-04-03 16:43:44
+archive/issue_comments_057521.json:
+```json
+{
+    "body": "The three scripts should replace those in SAGE_ROOT/data/extcode/pari/simon/",
+    "created_at": "2010-04-03T16:43:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6955",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6955#issuecomment-57521",
+    "user": "cremona"
+}
+```
 
 The three scripts should replace those in SAGE_ROOT/data/extcode/pari/simon/
 
 
+
 ---
 
-Comment by cremona created at 2010-04-03 18:33:24
+archive/issue_comments_057522.json:
+```json
+{
+    "body": "Apply in SAGE_ROOT/data/extcode before other patch",
+    "created_at": "2010-04-03T18:33:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6955",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6955#issuecomment-57522",
+    "user": "cremona"
+}
+```
 
 Apply in SAGE_ROOT/data/extcode before other patch
 
 
+
 ---
+
+archive/issue_comments_057523.json:
+```json
+{
+    "body": "Attachment\n\nThe patch trac_6955-simon-update-extcode.patch should be applied in the directory SAGE_ROOT/data/extcode in addition to the usual patch for sage-main.  The gp files on the ticket are just for reference.",
+    "created_at": "2010-04-03T18:35:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6955",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6955#issuecomment-57523",
+    "user": "cremona"
+}
+```
 
 Attachment
 
 The patch trac_6955-simon-update-extcode.patch should be applied in the directory SAGE_ROOT/data/extcode in addition to the usual patch for sage-main.  The gp files on the ticket are just for reference.
 
 
+
 ---
 
-Comment by wuthrich created at 2010-04-08 13:53:20
+archive/issue_comments_057524.json:
+```json
+{
+    "body": "Sorry, John, I am a newbie to anything that is outside the devel-tree. Can you tell me exactly what I have to do (if you want me to review it) ?\n\nChris.",
+    "created_at": "2010-04-08T13:53:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6955",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6955#issuecomment-57524",
+    "user": "wuthrich"
+}
+```
 
 Sorry, John, I am a newbie to anything that is outside the devel-tree. Can you tell me exactly what I have to do (if you want me to review it) ?
 
 Chris.
 
 
+
 ---
 
-Comment by cremona created at 2010-04-08 15:39:10
+archive/issue_comments_057525.json:
+```json
+{
+    "body": "Replying to [comment:7 wuthrich]:\n> Sorry, John, I am a newbie to anything that is outside the devel-tree.\n\nSo was I before I did this!\n\n> Can you tell me exactly what I have to do (if you want me to review it) ?\n>\n\nOK.  You need to be careful, since you will be changing files outside $SAGE_ROOT/devel, which are therefore not covered by the cloning system, so you have to work a bit harder both to apply the patches and to unapply them.  I will assume that you will use mercurial queues (but it would be possible without).\n\nFirst make a clone in the usual way, say called simon, so you have created $SAGE_ROOT/devel/sage-simon as a copy of $SAGE_ROOT/devel/sage-main.\n\nNow apply the patch to the extcode:\n\n```\ncd SAGE_ROOT/data/extcode  \nhg qseries      # test that queues have been initialised here;  if not, do hg qinit first\nhg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6955/trac_6955-simon-update-extcode.patch\nhg qpush\n```\n\nNow apply the ordinary patch:\n\n```\ncd ../../devel/sage-simon\nhg qinit  # if not already done\nhg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6955/trac_6955-simon-update.patch\nhg qpush\nsage -b\n```\n\n\nThat's it applied.  Run, test, as much as you like.  To reverse the changes:\n\n```\n# in devel/sage-simon\nhg qpop\ncd ../../data/extcode\nhg qpop\nsage -b\n```\n\n\n \n> Chris.",
+    "created_at": "2010-04-08T15:39:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6955",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6955#issuecomment-57525",
+    "user": "cremona"
+}
+```
 
 Replying to [comment:7 wuthrich]:
 > Sorry, John, I am a newbie to anything that is outside the devel-tree.
@@ -147,9 +299,20 @@ sage -b
 > Chris.
 
 
+
 ---
 
-Comment by wuthrich created at 2010-04-09 17:14:47
+archive/issue_comments_057526.json:
+```json
+{
+    "body": "Thanks a lot for the very helpful comments. I assume the next time I would be able to make a patch myself for this.\n\nAll tests passed after having deleted the first change in the patch (it added a space at the start of the file.)\n\nThe modified patch corrects this.",
+    "created_at": "2010-04-09T17:14:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6955",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6955#issuecomment-57526",
+    "user": "wuthrich"
+}
+```
 
 Thanks a lot for the very helpful comments. I assume the next time I would be able to make a patch myself for this.
 
@@ -158,51 +321,130 @@ All tests passed after having deleted the first change in the patch (it added a 
 The modified patch corrects this.
 
 
+
 ---
+
+archive/issue_comments_057527.json:
+```json
+{
+    "body": "Attachment\n\nreplaces the previous patch of this name",
+    "created_at": "2010-04-09T17:17:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6955",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6955#issuecomment-57527",
+    "user": "wuthrich"
+}
+```
 
 Attachment
 
 replaces the previous patch of this name
 
 
+
 ---
 
-Comment by wuthrich created at 2010-04-09 17:18:46
+archive/issue_comments_057528.json:
+```json
+{
+    "body": "So I give a positive review. The two patches trac_6955-simon-update_reviewer.patch and trac_6955-simon-update-extcode.patch have to be applied as described by John.",
+    "created_at": "2010-04-09T17:18:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6955",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6955#issuecomment-57528",
+    "user": "wuthrich"
+}
+```
 
 So I give a positive review. The two patches trac_6955-simon-update_reviewer.patch and trac_6955-simon-update-extcode.patch have to be applied as described by John.
 
 
+
 ---
 
-Comment by wuthrich created at 2010-04-09 17:18:46
+archive/issue_comments_057529.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-04-09T17:18:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6955",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6955#issuecomment-57529",
+    "user": "wuthrich"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by cremona created at 2010-04-09 18:05:54
+archive/issue_comments_057530.json:
+```json
+{
+    "body": "Thanks -- sorry about that space, which I thought I had put in before making the patch and not after!  It has been bugging me ever since.",
+    "created_at": "2010-04-09T18:05:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6955",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6955#issuecomment-57530",
+    "user": "cremona"
+}
+```
 
 Thanks -- sorry about that space, which I thought I had put in before making the patch and not after!  It has been bugging me ever since.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-15 22:45:12
+archive/issue_comments_057531.json:
+```json
+{
+    "body": "The reviewer patch doesn't apply cleanly.  Is it okay to just delete the portion of the patch for the file sage/schemes/elliptic_curves/gp_simon.py?",
+    "created_at": "2010-04-15T22:45:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6955",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6955#issuecomment-57531",
+    "user": "jhpalmieri"
+}
+```
 
 The reviewer patch doesn't apply cleanly.  Is it okay to just delete the portion of the patch for the file sage/schemes/elliptic_curves/gp_simon.py?
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-15 22:45:12
+archive/issue_comments_057532.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_work.",
+    "created_at": "2010-04-15T22:45:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6955",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6955#issuecomment-57532",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from positive_review to needs_work.
 
 
+
 ---
 
-Comment by cremona created at 2010-04-16 08:42:27
+archive/issue_comments_057533.json:
+```json
+{
+    "body": "Replying to [comment:12 jhpalmieri]:\n> The reviewer patch doesn't apply cleanly.  Is it okay to just delete the portion of the patch for the file sage/schemes/elliptic_curves/gp_simon.py? \n\nNo, that part is crucial.  Did you see that the review patch is instead of my patch called trac_6955-simon-update.patch, and not a second one to b applied after it?  The only difference between them is that my patch wrongly inserts a space in the first line of the file ell_number_field.py, and Chris's patch removes that bit of my patch,",
+    "created_at": "2010-04-16T08:42:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6955",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6955#issuecomment-57533",
+    "user": "cremona"
+}
+```
 
 Replying to [comment:12 jhpalmieri]:
 > The reviewer patch doesn't apply cleanly.  Is it okay to just delete the portion of the patch for the file sage/schemes/elliptic_curves/gp_simon.py? 
@@ -210,9 +452,20 @@ Replying to [comment:12 jhpalmieri]:
 No, that part is crucial.  Did you see that the review patch is instead of my patch called trac_6955-simon-update.patch, and not a second one to b applied after it?  The only difference between them is that my patch wrongly inserts a space in the first line of the file ell_number_field.py, and Chris's patch removes that bit of my patch,
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-16 17:14:14
+archive/issue_comments_057534.json:
+```json
+{
+    "body": "Replying to [comment:13 cremona]:\n> Did you see that the review patch is instead of my patch called trac_6955-simon-update.patch, and not a second one to b applied after it?  \n\nAh, no, I'd missed that.  Sorry.",
+    "created_at": "2010-04-16T17:14:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6955",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6955#issuecomment-57534",
+    "user": "jhpalmieri"
+}
+```
 
 Replying to [comment:13 cremona]:
 > Did you see that the review patch is instead of my patch called trac_6955-simon-update.patch, and not a second one to b applied after it?  
@@ -220,38 +473,93 @@ Replying to [comment:13 cremona]:
 Ah, no, I'd missed that.  Sorry.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-16 17:14:21
+archive/issue_comments_057535.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-04-16T17:14:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6955",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6955#issuecomment-57535",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-16 17:14:26
+archive/issue_comments_057536.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-04-16T17:14:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6955",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6955#issuecomment-57536",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-16 18:58:22
+archive/issue_comments_057537.json:
+```json
+{
+    "body": "Merged in 4.4.alpha0:\n- trac_6955-simon-update-extcode.patch\n- trac_6955-simon-update_reviewer.patch",
+    "created_at": "2010-04-16T18:58:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6955",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6955#issuecomment-57537",
+    "user": "jhpalmieri"
+}
+```
 
 Merged in 4.4.alpha0:
- - trac_6955-simon-update-extcode.patch
- - trac_6955-simon-update_reviewer.patch
+- trac_6955-simon-update-extcode.patch
+- trac_6955-simon-update_reviewer.patch
+
 
 
 ---
 
-Comment by jhpalmieri created at 2010-04-16 18:58:22
+archive/issue_comments_057538.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-04-16T18:58:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6955",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6955#issuecomment-57538",
+    "user": "jhpalmieri"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by cremona created at 2010-04-16 19:22:10
+archive/issue_comments_057539.json:
+```json
+{
+    "body": "Many thanks, jhp -- seems that you are release manager, and busy!",
+    "created_at": "2010-04-16T19:22:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6955",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6955#issuecomment-57539",
+    "user": "cremona"
+}
+```
 
 Many thanks, jhp -- seems that you are release manager, and busy!

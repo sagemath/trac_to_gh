@@ -1,11 +1,21 @@
 # Issue 8070: New  pycrypto-2.0.1.p5.spkg works with Open Solaris 64 bit
 
-Issue created by migration from https://trac.sagemath.org/ticket/8070
-
-Original creator: jsp
-
-Original creation time: 2010-01-26 00:27:10
-
+archive/issues_008070.json:
+```json
+{
+    "body": "Assignee: drkirkby\n\nLet SAGE64=\"yes\" work with Open Solaris 64 bit too.\n\nThe spkg is here:\n[http://boxen.math.washington.edu/home/jsp/ports/pycrypto-2.0.1.p5.spkg](http://boxen.math.washington.edu/home/jsp/ports/pycrypto-2.0.1.p5.spkg)\n\n\n\n```\nbyte-compiling /export/home/jaap/Downloads/sage-4.3.1/local/lib/python2.6/site-packages/Crypto/Cipher/__init__.py to __init__.pyc\nrunning install_egg_info\nWriting /export/home/jaap/Downloads/sage-4.3.1/local/lib/python2.6/site-packages/pycrypto-2.0.1-py2.6.egg-info\n\nreal\t0m5.851s\nuser\t0m4.285s\nsys\t0m0.920s\nSuccessfully installed pycrypto-2.0.1.p5\nYou can safely delete the temporary build directory\n/export/home/jaap/Downloads/sage-4.3.1/spkg/build/pycrypto-2.0.1.p5\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing pycrypto-2.0.1.p5.spkg\njaap@opensolaris:~/Downloads/sage-4.3.1$ \n\n```\n\n\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8070\n\n",
+    "created_at": "2010-01-26T00:27:10Z",
+    "labels": [
+        "porting",
+        "major",
+        "enhancement"
+    ],
+    "title": "New  pycrypto-2.0.1.p5.spkg works with Open Solaris 64 bit",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8070",
+    "user": "jsp"
+}
+```
 Assignee: drkirkby
 
 Let SAGE64="yes" work with Open Solaris 64 bit too.
@@ -39,41 +49,115 @@ Jaap
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8070
+
+
+
+
 
 ---
 
-Comment by jsp created at 2010-01-26 00:27:22
+archive/issue_comments_070721.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-01-26T00:27:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8070",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8070#issuecomment-70721",
+    "user": "jsp"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_070722.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-01-26T19:00:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8070",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8070#issuecomment-70722",
+    "user": "jsp"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by drkirkby created at 2010-01-27 12:25:26
+archive/issue_comments_070723.json:
+```json
+{
+    "body": "It has 'echo \"64 bit MacIntel\" which is not correct.",
+    "created_at": "2010-01-27T12:25:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8070",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8070#issuecomment-70723",
+    "user": "drkirkby"
+}
+```
 
 It has 'echo "64 bit MacIntel" which is not correct.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-01-27 12:25:26
+archive/issue_comments_070724.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-01-27T12:25:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8070",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8070#issuecomment-70724",
+    "user": "drkirkby"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by jsp created at 2010-01-27 14:07:55
+archive/issue_comments_070725.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-01-27T14:07:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8070",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8070#issuecomment-70725",
+    "user": "jsp"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
+
+archive/issue_comments_070726.json:
+```json
+{
+    "body": "Attachment\n\nDone.\n\nJaap",
+    "created_at": "2010-01-27T14:07:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8070",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8070#issuecomment-70726",
+    "user": "jsp"
+}
+```
 
 Attachment
 
@@ -82,16 +166,38 @@ Done.
 Jaap
 
 
+
 ---
 
-Comment by drkirkby created at 2010-01-27 16:39:24
+archive/issue_comments_070727.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-01-27T16:39:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8070",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8070#issuecomment-70727",
+    "user": "drkirkby"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-01-27 16:39:24
+archive/issue_comments_070728.json:
+```json
+{
+    "body": "That's fine. In future, it would be helpful if you could show evidence that the package is building ok, as \n\n\n```\nSuccessfully installed pycrypto-2.0.1.p5\n```\n\n\ndoes not prove very much. Plenty of packages claim to 'sucessfully' install in Open Solaris, yet in practice they do not. In this case, we can see:\n\n\n```\ncopying build/lib.solaris-2.11-i86pc-2.6/Crypto/Cipher/AES.so -> /export/home/drkirkby/sage-4.3.1/local/lib/python2.6/site-packages/Crypto/Cipher\ncopying build/lib.solaris-2.11-i86pc-2.6/Crypto/Cipher/DES3.so -> /export/home/drkirkby/sage-4.3.1/local/lib/python2.6/site-packages/Crypto/Cipher\ncopying build/lib.solaris-2.11-i86pc-2.6/Crypto/Cipher/DES.so -> /export/home/drkirkby/sage-4.3.1/local/lib/python2.6/site-packages/Crypto/Cipher\n```\n\n\nand using 'file' in the directory, I can indeed see the binaries are now 64-bit. \n\n\n```\ndrkirkby@hawk:~/sage-4.3.1$ file /export/home/drkirkby/sage-4.3.1/local/lib/python2.6/site-packages/Crypto/Cipher/*\n/export/home/drkirkby/sage-4.3.1/local/lib/python2.6/site-packages/Crypto/Cipher/AES.so:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\n/export/home/drkirkby/sage-4.3.1/local/lib/python2.6/site-packages/Crypto/Cipher/ARC2.so:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\n/export/home/drkirkby/sage-4.3.1/local/lib/python2.6/site-packages/Crypto/Cipher/ARC4.so:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\n/export/home/drkirkby/sage-4.3.1/local/lib/python2.6/site-packages/Crypto/Cipher/Blowfish.so:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\n/export/home/drkirkby/sage-4.3.1/local/lib/python2.6/site-packages/Crypto/Cipher/CAST.so:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\n/export/home/drkirkby/sage-4.3.1/local/lib/python2.6/site-packages/Crypto/Cipher/DES3.so:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\n/export/home/drkirkby/sage-4.3.1/local/lib/python2.6/site-packages/Crypto/Cipher/DES.so:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\n/export/home/drkirkby/sage-4.3.1/local/lib/python2.6/site-packages/Crypto/Cipher/IDEA.so:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\n/export/home/drkirkby/sage-4.3.1/local/lib/python2.6/site-packages/Crypto/Cipher/__init__.py:\tEnglish text\n/export/home/drkirkby/sage-4.3.1/local/lib/python2.6/site-packages/Crypto/Cipher/__init__.pyc:\tdata\n/export/home/drkirkby/sage-4.3.1/local/lib/python2.6/site-packages/Crypto/Cipher/RC5.so:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\n/export/home/drkirkby/sage-4.3.1/local/lib/python2.6/site-packages/Crypto/Cipher/XOR.so:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\ndrkirkby@hawk:~/sage-4.3.1$ \n```\n\n\nSo a positive review from me. \n\nSorry to sometimes ask for extra things, but it is easier for the reviewer if he can see evidence this fixes the bug. As I've done many of these Solaris fixes, and see some from  you, I can see ways of improving some things. \n\nDave",
+    "created_at": "2010-01-27T16:39:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8070",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8070#issuecomment-70728",
+    "user": "drkirkby"
+}
+```
 
 That's fine. In future, it would be helpful if you could show evidence that the package is building ok, as 
 
@@ -139,8 +245,19 @@ Sorry to sometimes ask for extra things, but it is easier for the reviewer if he
 Dave
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-11 15:17:47
+archive/issue_comments_070729.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-02-11T15:17:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8070",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8070#issuecomment-70729",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed

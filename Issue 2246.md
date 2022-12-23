@@ -1,11 +1,21 @@
 # Issue 2246: [with patch; needs quick review] sage-2.10.2.alpha2: special.py -- fix it -- several bugs etc
 
-Issue created by migration from https://trac.sagemath.org/ticket/2246
-
-Original creator: was
-
-Original creation time: 2008-02-21 16:17:48
-
+archive/issues_002246.json:
+```json
+{
+    "body": "Assignee: was\n\nThe attached patches fix const.tex and fix numerous small issues with special.py that would lead to subtle and not so subtle bugs and mistakes. \n\nI also fixed a problem with const.tex caused by Cremona's #1946.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2246\n\n",
+    "created_at": "2008-02-21T16:17:48Z",
+    "labels": [
+        "calculus",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch; needs quick review] sage-2.10.2.alpha2: special.py -- fix it -- several bugs etc",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2246",
+    "user": "was"
+}
+```
 Assignee: was
 
 The attached patches fix const.tex and fix numerous small issues with special.py that would lead to subtle and not so subtle bugs and mistakes. 
@@ -14,13 +24,43 @@ I also fixed a problem with const.tex caused by Cremona's #1946.
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2246
+
+
+
+
 
 ---
+
+archive/issue_comments_014891.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-02-21T16:22:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2246",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2246#issuecomment-14891",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_014892.json:
+```json
+{
+    "body": "Attachment\n\nBoth patches look good, the doctest failures are fixed. Positive review.\n\nCheers,\n\nMichael",
+    "created_at": "2008-02-21T17:01:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2246",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2246#issuecomment-14892",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -31,23 +71,56 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-21 17:02:18
+archive/issue_comments_014893.json:
+```json
+{
+    "body": "Merged in Sage 2.10.2.rc0",
+    "created_at": "2008-02-21T17:02:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2246",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2246#issuecomment-14893",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.2.rc0
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-21 17:02:18
+archive/issue_comments_014894.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-02-21T17:02:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2246",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2246#issuecomment-14894",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-21 17:21:50
+archive/issue_comments_014895.json:
+```json
+{
+    "body": "I forgot the change the summary, so I am doing now.\n\nCheers,\n\nMichael",
+    "created_at": "2008-02-21T17:21:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2246",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2246#issuecomment-14895",
+    "user": "mabshoff"
+}
+```
 
 I forgot the change the summary, so I am doing now.
 

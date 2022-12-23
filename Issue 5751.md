@@ -1,11 +1,21 @@
 # Issue 5751: cartan_type now a method rather than attribute in weyl_characters.py
 
-Issue created by migration from https://trac.sagemath.org/ticket/5751
-
-Original creator: bump
-
-Original creation time: 2009-04-11 15:47:37
-
+archive/issues_005751.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  sage-combinat\n\nIn connection with #5729 this makes cartan_type a method rather than attribute in weyl_characters.py.\n\nSee cartan_type now a method rather than attribute in weyl_characters.py\n\nBut this patch has a minor conflict with #5721 which is the more important of the two\npatches. So let us get #5721 merged first.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5751\n\n",
+    "created_at": "2009-04-11T15:47:37Z",
+    "labels": [
+        "algebra",
+        "minor",
+        "bug"
+    ],
+    "title": "cartan_type now a method rather than attribute in weyl_characters.py",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5751",
+    "user": "bump"
+}
+```
 Assignee: tbd
 
 CC:  sage-combinat
@@ -17,31 +27,79 @@ See cartan_type now a method rather than attribute in weyl_characters.py
 But this patch has a minor conflict with #5721 which is the more important of the two
 patches. So let us get #5721 merged first.
 
+Issue created by migration from https://trac.sagemath.org/ticket/5751
+
+
+
+
 
 ---
 
-Comment by bump created at 2009-04-15 15:32:32
+archive/issue_comments_044948.json:
+```json
+{
+    "body": "patch revised to apply after the 5721 patches",
+    "created_at": "2009-04-15T15:32:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5751",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5751#issuecomment-44948",
+    "user": "bump"
+}
+```
 
 patch revised to apply after the 5721 patches
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-15 19:25:43
+archive/issue_comments_044949.json:
+```json
+{
+    "body": "Changing assignee from tbd to mhansen.",
+    "created_at": "2009-04-15T19:25:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5751",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5751#issuecomment-44949",
+    "user": "mabshoff"
+}
+```
 
 Changing assignee from tbd to mhansen.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-15 19:25:43
+archive/issue_comments_044950.json:
+```json
+{
+    "body": "Changing component from algebra to combinatorics.",
+    "created_at": "2009-04-15T19:25:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5751",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5751#issuecomment-44950",
+    "user": "mabshoff"
+}
+```
 
 Changing component from algebra to combinatorics.
 
 
+
 ---
 
-Comment by aschilling created at 2009-04-17 07:28:05
+archive/issue_comments_044951.json:
+```json
+{
+    "body": "line 316 in sage/combinat/crystal/crystals.py needs to be updated so that\nthe tests in this file will pass.\n\nAnne",
+    "created_at": "2009-04-17T07:28:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5751",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5751#issuecomment-44951",
+    "user": "aschilling"
+}
+```
 
 line 316 in sage/combinat/crystal/crystals.py needs to be updated so that
 the tests in this file will pass.
@@ -49,16 +107,38 @@ the tests in this file will pass.
 Anne
 
 
+
 ---
 
-Comment by aschilling created at 2009-04-17 07:36:37
+archive/issue_comments_044952.json:
+```json
+{
+    "body": "Except for my previous comment on the tests in crystals.py I give this patch a positive review.",
+    "created_at": "2009-04-17T07:36:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5751",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5751#issuecomment-44952",
+    "user": "aschilling"
+}
+```
 
 Except for my previous comment on the tests in crystals.py I give this patch a positive review.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-17 07:38:40
+archive/issue_comments_044953.json:
+```json
+{
+    "body": "Well, it is does not pass doctests please do not give a patch positive review. You should write that pending the doctest fix this is a positive review.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-17T07:38:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5751",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5751#issuecomment-44953",
+    "user": "mabshoff"
+}
+```
 
 Well, it is does not pass doctests please do not give a patch positive review. You should write that pending the doctest fix this is a positive review.
 
@@ -67,9 +147,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by bump created at 2009-04-17 12:34:25
+archive/issue_comments_044954.json:
+```json
+{
+    "body": "I uploaded an additional tiny patch that addresses the problem Anne found. It\ngoes on top of the original patch.\n\nThis time I checked that passes `sage --testall`.",
+    "created_at": "2009-04-17T12:34:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5751",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5751#issuecomment-44954",
+    "user": "bump"
+}
+```
 
 I uploaded an additional tiny patch that addresses the problem Anne found. It
 goes on top of the original patch.
@@ -77,9 +168,20 @@ goes on top of the original patch.
 This time I checked that passes `sage --testall`.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-17 12:44:32
+archive/issue_comments_044955.json:
+```json
+{
+    "body": "Positive review for Dan's fix that Anne suggested. This makes it a positive review in total.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-17T12:44:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5751",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5751#issuecomment-44955",
+    "user": "mabshoff"
+}
+```
 
 Positive review for Dan's fix that Anne suggested. This makes it a positive review in total.
 
@@ -88,37 +190,94 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_044956.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-04-20T14:01:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5751",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5751#issuecomment-44956",
+    "user": "bump"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by bump created at 2009-04-20 14:04:28
+archive/issue_comments_044957.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-04-20T14:04:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5751",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5751#issuecomment-44957",
+    "user": "bump"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by bump created at 2009-04-20 14:04:28
+archive/issue_comments_044958.json:
+```json
+{
+    "body": "Changing assignee from mhansen to bump.",
+    "created_at": "2009-04-20T14:04:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5751",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5751#issuecomment-44958",
+    "user": "bump"
+}
+```
 
 Changing assignee from mhansen to bump.
 
 
+
 ---
 
-Comment by bump created at 2009-04-20 14:04:28
+archive/issue_comments_044959.json:
+```json
+{
+    "body": "I found that the patches didn't apply cleanly to sage-3.4.1.rc4, so I\nrebased. The patch trac_5751-rebased-3.4.1.patch  supercedes the\nprevious two patches.",
+    "created_at": "2009-04-20T14:04:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5751",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5751#issuecomment-44959",
+    "user": "bump"
+}
+```
 
 I found that the patches didn't apply cleanly to sage-3.4.1.rc4, so I
 rebased. The patch trac_5751-rebased-3.4.1.patch  supercedes the
 previous two patches.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-23 05:42:01
+archive/issue_comments_044960.json:
+```json
+{
+    "body": "Merged in Sage 3.4.2.alpha0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-23T05:42:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5751",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5751#issuecomment-44960",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.4.2.alpha0.
 
@@ -127,8 +286,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-23 05:42:01
+archive/issue_comments_044961.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-04-23T05:42:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5751",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5751#issuecomment-44961",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

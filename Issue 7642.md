@@ -1,11 +1,21 @@
 # Issue 7642: Add an implementation of LCA to sage.combinat.words.suffix_trees
 
-Issue created by migration from https://trac.sagemath.org/ticket/7642
-
-Original creator: abergeron
-
-Original creation time: 2009-12-09 18:43:15
-
+archive/issues_007642.json:
+```json
+{
+    "body": "Assignee: sage-combinat\n\nKeywords: lca suffix_tree\n\nI have implemented the linear time preprocessing, constant-time queries algorithm for the lowest common ancestor (LCA) in the context of the suffix trees for words.\n\nThe only thing I'm not very sure about is where to place the bit manipulation functions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7642\n\n",
+    "created_at": "2009-12-09T18:43:15Z",
+    "labels": [
+        "combinatorics",
+        "major",
+        "enhancement"
+    ],
+    "title": "Add an implementation of LCA to sage.combinat.words.suffix_trees",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7642",
+    "user": "abergeron"
+}
+```
 Assignee: sage-combinat
 
 Keywords: lca suffix_tree
@@ -14,44 +24,94 @@ I have implemented the linear time preprocessing, constant-time queries algorith
 
 The only thing I'm not very sure about is where to place the bit manipulation functions.
 
+Issue created by migration from https://trac.sagemath.org/ticket/7642
+
+
+
+
 
 ---
+
+archive/issue_comments_065315.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-12-09T18:45:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7642",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7642#issuecomment-65315",
+    "user": "abergeron"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by abergeron created at 2009-12-09 18:46:21
+archive/issue_comments_065316.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-12-09T18:46:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7642",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7642#issuecomment-65316",
+    "user": "abergeron"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by ncohen created at 2010-02-07 08:57:37
+archive/issue_comments_065317.json:
+```json
+{
+    "body": "Several comments about this patch :\n\n* leftmost_one naturally fails on 0, as it computes a logarithm... Shouldn't this be documented, or the exception handled inside the function, to return something like -1 ?\n\n* bits_left_of seems to me a bit vague for what the function does... What would you think of leftmost_bits ? The docstring could be more explicit, like : substracts from x the leftmost i bits in its \"base-2 expression\" (I do not know how this is said in english) :-)\n  Same remark for bits_right_of\n\n* I have no idea of what a MSB is, and could find its definition nowhere. Could you at least write its full name ? ( samek remark for lca, which appears very often in the docstrings )\n\n* I think you should define _ldata inside of the __init__ function\n\n* I am not a big fan of your algorithm = best argument in LCA. The user is bound to know if the tree has been preprocessed, as he has to call it himself. I think it is just a sourc e of silent failures to use the \"fast\" algorithm.\n\nWhat you are doing in this patch is out of my field, so my remarks could just come from this. I thought it would just be an algorithm on trees, but many details not being explicit in the docstrings, it is difficult for me to fill the holes... :-)\n\nNathann",
+    "created_at": "2010-02-07T08:57:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7642",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7642#issuecomment-65317",
+    "user": "ncohen"
+}
+```
 
 Several comments about this patch :
 
- * leftmost_one naturally fails on 0, as it computes a logarithm... Shouldn't this be documented, or the exception handled inside the function, to return something like -1 ?
+* leftmost_one naturally fails on 0, as it computes a logarithm... Shouldn't this be documented, or the exception handled inside the function, to return something like -1 ?
 
- * bits_left_of seems to me a bit vague for what the function does... What would you think of leftmost_bits ? The docstring could be more explicit, like : substracts from x the leftmost i bits in its "base-2 expression" (I do not know how this is said in english) :-)
-   Same remark for bits_right_of
+* bits_left_of seems to me a bit vague for what the function does... What would you think of leftmost_bits ? The docstring could be more explicit, like : substracts from x the leftmost i bits in its "base-2 expression" (I do not know how this is said in english) :-)
+  Same remark for bits_right_of
 
- * I have no idea of what a MSB is, and could find its definition nowhere. Could you at least write its full name ? ( samek remark for lca, which appears very often in the docstrings )
+* I have no idea of what a MSB is, and could find its definition nowhere. Could you at least write its full name ? ( samek remark for lca, which appears very often in the docstrings )
 
- * I think you should define _ldata inside of the __init__ function
+* I think you should define _ldata inside of the __init__ function
 
- * I am not a big fan of your algorithm = best argument in LCA. The user is bound to know if the tree has been preprocessed, as he has to call it himself. I think it is just a sourc e of silent failures to use the "fast" algorithm.
+* I am not a big fan of your algorithm = best argument in LCA. The user is bound to know if the tree has been preprocessed, as he has to call it himself. I think it is just a sourc e of silent failures to use the "fast" algorithm.
 
 What you are doing in this patch is out of my field, so my remarks could just come from this. I thought it would just be an algorithm on trees, but many details not being explicit in the docstrings, it is difficult for me to fill the holes... :-)
 
 Nathann
 
 
+
 ---
 
-Comment by drkirkby created at 2010-02-21 23:42:42
+archive/issue_comments_065318.json:
+```json
+{
+    "body": "Has this been checked on Solaris?\n\nThere's general information about building on Solaris at\n\n http://wiki.sagemath.org/solaris\n\nInformation specifically for 't2' at\n\n http://wiki.sagemath.org/devel/Building-Sage-on-the-T5240-t2\n\nBoth the source (4.3.0.1 is the latest to build on Solaris) and a binary which will run on any SPARC can be found at http://www.sagemath.org/download-source.html\n\nDave",
+    "created_at": "2010-02-21T23:42:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7642",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7642#issuecomment-65318",
+    "user": "drkirkby"
+}
+```
 
 Has this been checked on Solaris?
 
@@ -68,15 +128,37 @@ Both the source (4.3.0.1 is the latest to build on Solaris) and a binary which w
 Dave
 
 
+
 ---
 
-Comment by drkirkby created at 2010-02-21 23:42:42
+archive/issue_comments_065319.json:
+```json
+{
+    "body": "Remove assignee sage-combinat.",
+    "created_at": "2010-02-21T23:42:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7642",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7642#issuecomment-65319",
+    "user": "drkirkby"
+}
+```
 
 Remove assignee sage-combinat.
 
 
+
 ---
 
-Comment by ncohen created at 2010-05-09 16:48:40
+archive/issue_comments_065320.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-05-09T16:48:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7642",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7642#issuecomment-65320",
+    "user": "ncohen"
+}
+```
 
 Changing status from needs_review to needs_work.

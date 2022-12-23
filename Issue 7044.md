@@ -1,21 +1,31 @@
 # Issue 7044: eclib 20080310.p7 has code Sun's C++ compiler does not understand.
 
-Issue created by migration from https://trac.sagemath.org/ticket/7044
-
-Original creator: drkirkby
-
-Original creation time: 2009-09-28 00:48:03
-
+archive/issues_007044.json:
+```json
+{
+    "body": "Assignee: burcin\n\nCC:  cremona dimpase\n\nI'm using\n\n* Solaris 10 update 7 on SPARC\n* sage-4.1.2.alpha4\n* Sun Studio 12.1\n* An updated configure script to allow the Sun compiler to be used http://sagetrac.org/sage_trac/ticket/7021\n\n\n```\neclib-20080310.p7/.hg/branch\neclib-20080310.p7/.hg/undo.branch\neclib-20080310.p7/spkg-install\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS swan 5.10 Generic_139555-08 sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\n/opt/xxxsunstudio12.1/bin/cc -v\nusage: cc [ options] files.  Use 'cc -flags' for details\n****************************************************\nDisabling parallel make for now\nDeleting old versions of cremona libraries, which\nwould interfere with new builds.\nlibcurvesntl.*: No such file or directory\nlibg0nntl.*: No such file or directory\nlibjcntl.*: No such file or directory\nlibrankntl.*: No such file or directory\nlibmwrank.*: No such file or directory\nDeleting old include directory\nmake[2]: Entering directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/eclib-20080310.p7/src'\nmkdir -p include\nmkdir -p lib\ncd procs && make lib install\nmake[3]: Entering directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/eclib-20080310.p7/src/procs'\nMakefile:93: warning: overriding commands for target `clean'\n../Makefile:76: warning: ignoring old commands for target `clean'\nMakefile:96: warning: overriding commands for target `veryclean'\n../Makefile:84: warning: ignoring old commands for target `veryclean'\nMakefile:109: warning: overriding commands for target `check'\n../Makefile:95: warning: ignoring old commands for target `check'\n/opt/xxxsunstudio12.1/bin/CC -c -fPIC -g -O2 -DNEW_OP_ORDER -DUSE_PARI_FACTORING -DNTL_ALL -I/export/home/drkirkby/sage/sage-4.1.2.alpha4/local/include -I/export/home/drkirkby/sage/sage-4.1.2.alpha4/local/include interface.cc -o interface_n.o\nCC: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise\n\"interface.h\", line 54: Error: Could not open include file<ext/numeric>.\n\"interface.h\", line 122: Error: Could not open include file<NTL/ZZ.h>.\n\"interface.h\", line 123: Error: Could not open include file<NTL/ZZXFactoring.h>.\n\"interface.h\", line 124: Error: NTL is not defined.\n\"interface.h\", line 130: Error: ZZ is not defined.\n\"interface.h\", line 130: Error: The function \"to_ZZ\" must have a prototype.\n\"interface.h\", line 137: Error: \")\" expected instead of \"&\".\n\"interface.h\", line 137: Error: x is not defined.\n\"interface.h\", line 138: Error: \")\" expected instead of \"&\".\n\"interface.h\", line 138: Error: x is not defined.\n\"interface.h\", line 139: Error: \")\" expected instead of \"&\".\n\"interface.h\", line 139: Error: x is not defined.\n\"interface.h\", line 140: Error: \")\" expected instead of \"&\".\n\"interface.h\", line 140: Error: x is not defined.\n\"interface.h\", line 141: Error: \")\" expected instead of \"&\".\n\"interface.h\", line 141: Error: a is not defined.\n\"interface.h\", line 142: Error: \")\" expected instead of \"&\".\n\"interface.h\", line 142: Error: a is not defined.\n\"interface.h\", line 143: Error: \")\" expected instead of \"&\".\n\"interface.h\", line 143: Error: c is not defined.\n\"interface.h\", line 143: Error: a is not defined.\n\"interface.h\", line 143: Error: i is not defined.\n\"interface.h\", line 144: Error: \")\" expected instead of \"&\".\n\"interface.h\", line 144: Error: c is not defined.\n\"interface.h\", line 144: Error: a is not defined.\nCompilation aborted, too many Error messages.\nmake[3]: *** [interface_n.o] Error 1\nmake[3]: Leaving directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/eclib-20080310.p7/src/procs'\nmake[2]: *** [all] Error 2\nmake[2]: Leaving directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/eclib-20080310.p7/src'\nError building cremona\n\nreal    0m1.043s\nuser    0m0.779s\nsys     0m0.156s\nsage: An error occurred while installing eclib-20080310.p7\nPlease email sage-devel http://groups.google.com/group/sage-devel\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7044\n\n",
+    "created_at": "2009-09-28T00:48:03Z",
+    "labels": [
+        "calculus",
+        "major",
+        "bug"
+    ],
+    "title": "eclib 20080310.p7 has code Sun's C++ compiler does not understand.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7044",
+    "user": "drkirkby"
+}
+```
 Assignee: burcin
 
 CC:  cremona dimpase
 
 I'm using
 
-    * Solaris 10 update 7 on SPARC
-    * sage-4.1.2.alpha4
-    * Sun Studio 12.1
-    * An updated configure script to allow the Sun compiler to be used http://sagetrac.org/sage_trac/ticket/7021
+* Solaris 10 update 7 on SPARC
+* sage-4.1.2.alpha4
+* Sun Studio 12.1
+* An updated configure script to allow the Sun compiler to be used http://sagetrac.org/sage_trac/ticket/7021
 
 
 ```
@@ -96,33 +106,81 @@ Please email sage-devel http://groups.google.com/group/sage-devel
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7044
+
+
+
+
 
 ---
 
-Comment by burcin created at 2009-11-30 15:07:31
+archive/issue_comments_058309.json:
+```json
+{
+    "body": "The `eclib` package is used for elliptic curve computations, it has nothing to do with `calculus`.\n\nI added John Cremona, the developer of eclib, to the CC list.",
+    "created_at": "2009-11-30T15:07:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7044",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7044#issuecomment-58309",
+    "user": "burcin"
+}
+```
 
 The `eclib` package is used for elliptic curve computations, it has nothing to do with `calculus`.
 
 I added John Cremona, the developer of eclib, to the CC list.
 
 
+
 ---
 
-Comment by burcin created at 2009-11-30 15:07:31
+archive/issue_comments_058310.json:
+```json
+{
+    "body": "Changing component from calculus to solaris.",
+    "created_at": "2009-11-30T15:07:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7044",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7044#issuecomment-58310",
+    "user": "burcin"
+}
+```
 
 Changing component from calculus to solaris.
 
 
+
 ---
 
-Comment by burcin created at 2009-11-30 15:07:31
+archive/issue_comments_058311.json:
+```json
+{
+    "body": "Changing assignee from burcin to drkirkby.",
+    "created_at": "2009-11-30T15:07:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7044",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7044#issuecomment-58311",
+    "user": "burcin"
+}
+```
 
 Changing assignee from burcin to drkirkby.
 
 
+
 ---
 
-Comment by cremona created at 2009-11-30 15:13:34
+archive/issue_comments_058312.json:
+```json
+{
+    "body": "burcin is right, this is my code.  It seems that the compiler is not finding the NTL library (I mean the NTL include files) which is bound to cause the compilation to fail.\n\nIs NTL building and installing itself properly before this point in the build?\n\nJohn",
+    "created_at": "2009-11-30T15:13:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7044",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7044#issuecomment-58312",
+    "user": "cremona"
+}
+```
 
 burcin is right, this is my code.  It seems that the compiler is not finding the NTL library (I mean the NTL include files) which is bound to cause the compilation to fail.
 
@@ -131,44 +189,110 @@ Is NTL building and installing itself properly before this point in the build?
 John
 
 
+
 ---
 
-Comment by leif created at 2010-09-03 22:27:16
+archive/issue_comments_058313.json:
+```json
+{
+    "body": "Is this ticket still valid?",
+    "created_at": "2010-09-03T22:27:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7044",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7044#issuecomment-58313",
+    "user": "leif"
+}
+```
 
 Is this ticket still valid?
 
 
+
 ---
 
-Comment by cremona created at 2011-05-24 21:19:56
+archive/issue_comments_058314.json:
+```json
+{
+    "body": "Please see #10993 to see if there is still a problem (not that I have fixed anything relevant on purpose).  I do not propose to make changes to this old version of eclib, but could change the newer version if that would help.",
+    "created_at": "2011-05-24T21:19:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7044",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7044#issuecomment-58314",
+    "user": "cremona"
+}
+```
 
 Please see #10993 to see if there is still a problem (not that I have fixed anything relevant on purpose).  I do not propose to make changes to this old version of eclib, but could change the newer version if that would help.
 
 
+
 ---
 
-Comment by mkoeppe created at 2020-07-08 16:51:35
+archive/issue_comments_058315.json:
+```json
+{
+    "body": "Outdated, should be closed",
+    "created_at": "2020-07-08T16:51:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7044",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7044#issuecomment-58315",
+    "user": "mkoeppe"
+}
+```
 
 Outdated, should be closed
 
 
+
 ---
 
-Comment by mkoeppe created at 2020-07-08 16:51:35
+archive/issue_comments_058316.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2020-07-08T16:51:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7044",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7044#issuecomment-58316",
+    "user": "mkoeppe"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mjo created at 2020-07-12 20:01:50
+archive/issue_comments_058317.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2020-07-12T20:01:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7044",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7044#issuecomment-58317",
+    "user": "mjo"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mjo created at 2020-07-12 20:01:50
+archive/issue_comments_058318.json:
+```json
+{
+    "body": "The goal of these tickets is laudable, but:\n\n* We need at least one user who is able to test.\n* The package/OS information on this ticket is outdated beyond usefulness.\n* Upstream is a better place to report portability issues these days.",
+    "created_at": "2020-07-12T20:01:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7044",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7044#issuecomment-58318",
+    "user": "mjo"
+}
+```
 
 The goal of these tickets is laudable, but:
 
@@ -177,15 +301,37 @@ The goal of these tickets is laudable, but:
 * Upstream is a better place to report portability issues these days.
 
 
+
 ---
 
-Comment by chapoton created at 2020-07-15 07:18:41
+archive/issue_comments_058319.json:
+```json
+{
+    "body": "Closing very old sun/solaris tickets. Any tentative for this OS should start afresh.",
+    "created_at": "2020-07-15T07:18:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7044",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7044#issuecomment-58319",
+    "user": "chapoton"
+}
+```
 
 Closing very old sun/solaris tickets. Any tentative for this OS should start afresh.
 
 
+
 ---
 
-Comment by chapoton created at 2020-07-15 07:18:41
+archive/issue_comments_058320.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2020-07-15T07:18:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7044",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7044#issuecomment-58320",
+    "user": "chapoton"
+}
+```
 
 Resolution: invalid

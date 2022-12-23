@@ -1,51 +1,133 @@
 # Issue 2186: [with patch, needs easy review] verbosity for graph_isom - visualize the tree that is traversed during search
 
-Issue created by migration from https://trac.sagemath.org/ticket/2186
-
-Original creator: rlm
-
-Original creation time: 2008-02-17 00:00:30
-
+archive/issues_002186.json:
+```json
+{
+    "body": "Assignee: rlm\n\nThis allows one to see what the tree that is traversed actually looks like.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2186\n\n",
+    "created_at": "2008-02-17T00:00:30Z",
+    "labels": [
+        "graph theory",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch, needs easy review] verbosity for graph_isom - visualize the tree that is traversed during search",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2186",
+    "user": "rlm"
+}
+```
 Assignee: rlm
 
 This allows one to see what the tree that is traversed actually looks like.
 
+Issue created by migration from https://trac.sagemath.org/ticket/2186
+
+
+
+
 
 ---
+
+archive/issue_comments_014354.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-02-17T00:00:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2186",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2186#issuecomment-14354",
+    "user": "rlm"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by rlm created at 2008-02-17 00:00:54
+archive/issue_comments_014355.json:
+```json
+{
+    "body": "Changing type from defect to enhancement.",
+    "created_at": "2008-02-17T00:00:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2186",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2186#issuecomment-14355",
+    "user": "rlm"
+}
+```
 
 Changing type from defect to enhancement.
 
 
+
 ---
 
-Comment by rlm created at 2008-02-17 00:02:11
+archive/issue_comments_014356.json:
+```json
+{
+    "body": "Depends on all the things in #2185",
+    "created_at": "2008-02-17T00:02:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2186",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2186#issuecomment-14356",
+    "user": "rlm"
+}
+```
 
 Depends on all the things in #2185
 
 
+
 ---
 
-Comment by jason created at 2008-02-19 20:52:15
+archive/issue_comments_014357.json:
+```json
+{
+    "body": "looks good to me.  (I mean, it's *awesome*!)",
+    "created_at": "2008-02-19T20:52:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2186",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2186#issuecomment-14357",
+    "user": "jason"
+}
+```
 
 looks good to me.  (I mean, it's *awesome*!)
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-19 22:14:56
+archive/issue_comments_014358.json:
+```json
+{
+    "body": "Merged in Sage 2.10.2.alpha2",
+    "created_at": "2008-02-19T22:14:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2186",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2186#issuecomment-14358",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.2.alpha2
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-19 22:14:56
+archive/issue_comments_014359.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-02-19T22:14:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2186",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2186#issuecomment-14359",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

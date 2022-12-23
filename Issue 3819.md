@@ -1,11 +1,21 @@
 # Issue 3819: Sage 3.1.alpha1> time_series.pyx numerical noise doctest failures
 
-Issue created by migration from https://trac.sagemath.org/ticket/3819
-
-Original creator: mabshoff
-
-Original creation time: 2008-08-12 15:33:51
-
+archive/issues_003819.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nCC:  cremona\n\nReported by John Cremona:\n\n```\n*******************\nFile \"/home/john/sage-3.1.alpha1/tmp/time_series.py\", line 1507:\n    sage: finance.TimeSeries([z.hurst_exponent() for z in y]).mean()\nExpected:\n    0.57984822577934747\nGot:\n    0.57984822577934769\n**********************************************************************\nFile \"/home/john/sage-3.1.alpha1/tmp/time_series.py\", line 1515:\n    sage: finance.TimeSeries([z.hurst_exponent() for z in y]).mean()\nExpected:\n    0.2861023256237053\nGot:\n    0.28610232562370524\n**********************************************************************\n1 items had failures:\n   2 of  16 in __main__.example_46\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file\n/home/john/sage-3.1.alpha1/tmp/.doctest_time_series.py\n         [9.8 s]\nexit code: 1024\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3819\n\n",
+    "created_at": "2008-08-12T15:33:51Z",
+    "labels": [
+        "doctest coverage",
+        "major",
+        "bug"
+    ],
+    "title": "Sage 3.1.alpha1> time_series.pyx numerical noise doctest failures",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3819",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 CC:  cremona
@@ -38,10 +48,25 @@ exit code: 1024
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3819
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-08-12 17:13:54
+archive/issue_comments_027160.json:
+```json
+{
+    "body": "John,\n\ncan you review this?\n\nCheers,\n\nMichael",
+    "created_at": "2008-08-12T17:13:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3819",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3819#issuecomment-27160",
+    "user": "mabshoff"
+}
+```
 
 John,
 
@@ -52,14 +77,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-12 17:13:54
+archive/issue_comments_027161.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-08-12T17:13:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3819",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3819#issuecomment-27161",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
+
+archive/issue_comments_027162.json:
+```json
+{
+    "body": "Attachment\n\nOops, adding John to the CC would help a lot when asking for his review :)\n\nCheers,\n\nMichael",
+    "created_at": "2008-08-12T17:23:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3819",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3819#issuecomment-27162",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -70,22 +119,55 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by was created at 2008-08-13 00:18:48
+archive/issue_comments_027163.json:
+```json
+{
+    "body": "I agree with this patch.",
+    "created_at": "2008-08-13T00:18:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3819",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3819#issuecomment-27163",
+    "user": "was"
+}
+```
 
 I agree with this patch.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-13 00:20:25
+archive/issue_comments_027164.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-08-13T00:20:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3819",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3819#issuecomment-27164",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-13 00:20:25
+archive/issue_comments_027165.json:
+```json
+{
+    "body": "Merged in Sage 3.1.alpha2",
+    "created_at": "2008-08-13T00:20:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3819",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3819#issuecomment-27165",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.1.alpha2

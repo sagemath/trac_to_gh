@@ -1,11 +1,21 @@
 # Issue 2296: setup.py -- another issue with cython dependency checking
 
-Issue created by migration from https://trac.sagemath.org/ticket/2296
-
-Original creator: was
-
-Original creation time: 2008-02-24 20:11:43
-
+archive/issues_002296.json:
+```json
+{
+    "body": "Assignee: cwitty\n\nI've attached a patch that might fix the following problem:\n\n```\n>\n> > Installing c_lib\n> > scons: `install' is up to date.\n> > Traceback (most recent call last):\n> >   File \"setup.py\", line 1217, in <module>\n> >     deps = create_deps(ext_modules)\n> >   File \"setup.py\", line 1208, in create_deps\n> >     deps_graph(deps, f, visited)\n> >   File \"setup.py\", line 1175, in deps_graph\n> >     this_deps = search_all_includes(f)\n> >   File \"setup.py\", line 1099, in search_all_includes\n> >     S = open(filename).readlines()\n> > IOError: [Errno 2] No such file or directory: 'sage-main/sage/modules/\n> > free_module_element.pyx'\n> > sage: There was an error installing modified sage library code.\n>\n> > ERROR installing SAGE\n>\n> Hi,\n>\n> that is cause by #2180. There is a patch for it, but the short\n> solution is to touch the pyrex file in question. Then everything is\n> back to normal.\n>\n> Cheers,\n>\n> Michael\n\nBurcin did pop up in IRC a little while ago and reported the same\nerror. Neither touching the file, not a \"sage -ba\" nor applying the\npatch from #2180 fixes the problem, so I am fresh out of ideas. It\nonly seems to happen on updates, i.e. in the other cases I saw the\nissue a touching of a single file was sufficient. So there is maybe\nmore than one bug lurking in that code. Since I have been unable to\nreproduce the harder problem yet any input (or even better solution)\nis welcome :)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2296\n\n",
+    "created_at": "2008-02-24T20:11:43Z",
+    "labels": [
+        "misc",
+        "major",
+        "bug"
+    ],
+    "title": "setup.py -- another issue with cython dependency checking",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2296",
+    "user": "was"
+}
+```
 Assignee: cwitty
 
 I've attached a patch that might fix the following problem:
@@ -51,8 +61,25 @@ is welcome :)
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2296
+
+
+
+
 
 ---
+
+archive/issue_comments_015227.json:
+```json
+{
+    "body": "Attachment\n\nPlease check out #2295 by burcin, which seems to nail the real culprit, i.e. the symlink problem.\n\nCheers,\n\nMichael",
+    "created_at": "2008-02-24T20:16:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2296",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2296#issuecomment-15227",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -63,15 +90,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by was created at 2008-02-24 20:19:34
+archive/issue_comments_015228.json:
+```json
+{
+    "body": "#2295 is better.  This is invalid.",
+    "created_at": "2008-02-24T20:19:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2296",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2296#issuecomment-15228",
+    "user": "was"
+}
+```
 
 #2295 is better.  This is invalid.
 
 
+
 ---
 
-Comment by was created at 2008-02-24 20:19:34
+archive/issue_comments_015229.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2008-02-24T20:19:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2296",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2296#issuecomment-15229",
+    "user": "was"
+}
+```
 
 Resolution: invalid

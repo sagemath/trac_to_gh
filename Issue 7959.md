@@ -1,11 +1,21 @@
 # Issue 7959: the docstring for the associated_primes method on multivariate polynomial ideals is wrong
 
-Issue created by migration from https://trac.sagemath.org/ticket/7959
-
-Original creator: was
-
-Original creation time: 2010-01-17 00:13:29
-
+archive/issues_007959.json:
+```json
+{
+    "body": "Assignee: malb\n\nThe docstring for associated_primes claims it returns a list of pairs (I,P), but in fact it *just* returns the P.  So this is wrong. \n\n\n```\n    @require_field\n    @redSB\n    def associated_primes(self, algorithm='sy'):\n        r\"\"\"\n        Return a list of primary ideals (and their associated primes) such\n        that their intersection is `I` = ``self``.\n        \n        An ideal `Q` is called primary if it is a proper ideal of\n        the ring `R` and if whenever `ab \\in Q` and\n        `a \\not\\in Q` then `b^n \\in Q` for some\n        `n \\in \\ZZ`.\n        \n        If `Q` is a primary ideal of the ring `R`, then the\n        radical ideal `P` of `Q`, i.e.\n        `P = \\{a \\in R, a^n \\in Q\\}` for some\n        `n \\in \\ZZ`, is called the\n        *associated prime* of `Q`.\n        \n        If `I` is a proper ideal of the ring `R` then there\n        exists a decomposition in primary ideals `Q_i` such that\n        \n        \n        -  their intersection is `I`\n        \n        -  none of the `Q_i` contains the intersection of the\n           rest, and\n        \n        -  the associated prime ideals of `Q_i` are pairwise\n           different.\n        \n        \n        This method returns the associated primes of the `Q_i`.\n        \n        INPUT:\n        \n        \n        -  ``algorithm`` - string:\n        \n        -  ``'sy'`` - (default) use the shimoyama-yokoyama algorithm\n        \n        -  ``'gtz'`` - use the gianni-trager-zacharias algorithm\n        \n        \n        OUTPUT:\n        \n        -  ``list`` - a list of primary ideals and their\n           associated primes [(primary ideal, associated prime), ...]\n        \n        EXAMPLES::\n        \n            sage: R.<x,y,z> = PolynomialRing(QQ, 3, order='lex')\n            sage: p = z^2 + 1; q = z^3 + 2\n            sage: I = (p*q^2, y-z^2)*R\n            sage: pd = I.associated_primes(); pd\n            [Ideal (z^3 + 2, y - z^2) of Multivariate Polynomial Ring in x, y, z over Rational Field,\n             Ideal (z^2 + 1, y + 1) of Multivariate Polynomial Ring in x, y, z over Rational Field]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7959\n\n",
+    "created_at": "2010-01-17T00:13:29Z",
+    "labels": [
+        "commutative algebra",
+        "major",
+        "bug"
+    ],
+    "title": "the docstring for the associated_primes method on multivariate polynomial ideals is wrong",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7959",
+    "user": "was"
+}
+```
 Assignee: malb
 
 The docstring for associated_primes claims it returns a list of pairs (I,P), but in fact it *just* returns the P.  So this is wrong. 
@@ -71,35 +81,98 @@ The docstring for associated_primes claims it returns a list of pairs (I,P), but
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7959
+
+
+
+
 
 ---
+
+archive/issue_comments_069456.json:
+```json
+{
+    "body": "Attachment\n\nYour patch seems to leave the wrong objects in the docstring. I'm attaching a new patch that inverts that, and also changes a second occurence of the description of the output.",
+    "created_at": "2010-01-17T22:10:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7959",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7959#issuecomment-69456",
+    "user": "wjp"
+}
+```
 
 Attachment
 
 Your patch seems to leave the wrong objects in the docstring. I'm attaching a new patch that inverts that, and also changes a second occurence of the description of the output.
 
 
+
 ---
 
-Comment by wjp created at 2010-01-17 22:12:01
+archive/issue_comments_069457.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-01-17T22:12:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7959",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7959#issuecomment-69457",
+    "user": "wjp"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_069458.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-01-17T22:12:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7959",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7959#issuecomment-69458",
+    "user": "wjp"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2010-01-18 10:16:26
+archive/issue_comments_069459.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-01-18T10:16:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7959",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7959#issuecomment-69459",
+    "user": "was"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by rlm created at 2010-01-18 23:52:50
+archive/issue_comments_069460.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-18T23:52:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7959",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7959#issuecomment-69460",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 6799: Speed up symbolic comparison
 
-Issue created by migration from https://trac.sagemath.org/ticket/6799
-
-Original creator: gmhossain
-
-Original creation time: 2009-08-21 23:20:16
-
+archive/issues_006799.json:
+```json
+{
+    "body": "It takes too long to check whether x is in a list in new symbolics\n\n\n```\nsage: var('x,x1,x2,x3,x4')\n(x, x1, x2, x3, x4)\nsage: f = function('f')\nsage: mylist = [x1,x2,x3,x4,f(x1),f(x2),f(x3),f(x4)]\n\nsage: timeit('x in mylist')\n5 loops, best of 3: 461 ms per loop\n```\n\n\nIf we need to check it couple of more times\nthen it becomes worse\n\n```\nsage: timeit('x in mylist')\n5 loops, best of 3: 1.26 s per loop\nsage: timeit('x in mylist')\n5 loops, best of 3: 3.4 s per loop\n```\n\n\nFor a comparison\n\n```\nsage: timeit('x1 in mylist')\n625 loops, best of 3: 473 ns per loop\n```\n\n\nReason for this huge discrepancy stems from the fact that\nexcept for last example, in all previous cases maxima is called\nto check the equality. \n\nSee this thread for more:\n\n http://groups.google.com/group/sage-devel/browse_thread/thread/d2275cb5b3d63317\n\nIssue created by migration from https://trac.sagemath.org/ticket/6799\n\n",
+    "created_at": "2009-08-21T23:20:16Z",
+    "labels": [
+        "symbolics",
+        "major",
+        "enhancement"
+    ],
+    "title": "Speed up symbolic comparison",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6799",
+    "user": "gmhossain"
+}
+```
 It takes too long to check whether x is in a list in new symbolics
 
 
@@ -47,16 +57,42 @@ See this thread for more:
 
  http://groups.google.com/group/sage-devel/browse_thread/thread/d2275cb5b3d63317
 
+Issue created by migration from https://trac.sagemath.org/ticket/6799
+
+
+
+
 
 ---
 
-Comment by jdemeyer created at 2013-12-05 08:24:13
+archive/issue_comments_055991.json:
+```json
+{
+    "body": "The issue of ever-slowing comparisons doesn't occur anymore.",
+    "created_at": "2013-12-05T08:24:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6799",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6799#issuecomment-55991",
+    "user": "jdemeyer"
+}
+```
 
 The issue of ever-slowing comparisons doesn't occur anymore.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-12-05 08:24:13
+archive/issue_comments_055992.json:
+```json
+{
+    "body": "Resolution: worksforme",
+    "created_at": "2013-12-05T08:24:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6799",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6799#issuecomment-55992",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: worksforme

@@ -1,11 +1,21 @@
 # Issue 5312: command line -- bug in preparser and "time"
 
-Issue created by migration from https://trac.sagemath.org/ticket/5312
-
-Original creator: was
-
-Original creation time: 2009-02-19 08:31:41
-
+archive/issues_005312.json:
+```json
+{
+    "body": "Assignee: cwitty\n\nCC:  mjo\n\nThere is a weird interaction between time and preparser, almost as if input to time is being preparsed *twice*:\n\n\n```\nwstein@sage:~/build/sage-3.3.rc1$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: k = 3r\nsage: type(k)\n<type 'int'>\nsage: time k = 3r\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\nsage: type(k)\n<type 'sage.rings.integer.Integer'>\nsage: preparse('k = 3r')\n'k = 3'\nsage: preparse('time k = 3r')\n'time k = 3'\n```\n\n| Sage Version 3.3.rc1, Release Date: 2009-02-16                     |\n| Type notebook() for the GUI, and license() for information.        |\nIn the above, type(k) should have been int in all cases.  Why isn't it the second time.  WEIRD.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5312\n\n",
+    "created_at": "2009-02-19T08:31:41Z",
+    "labels": [
+        "misc",
+        "major",
+        "bug"
+    ],
+    "title": "command line -- bug in preparser and \"time\"",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5312",
+    "user": "was"
+}
+```
 Assignee: cwitty
 
 CC:  mjo
@@ -35,10 +45,25 @@ sage: preparse('time k = 3r')
 | Type notebook() for the GUI, and license() for information.        |
 In the above, type(k) should have been int in all cases.  Why isn't it the second time.  WEIRD.
 
+Issue created by migration from https://trac.sagemath.org/ticket/5312
+
+
+
+
 
 ---
 
-Comment by mjo created at 2012-01-09 02:17:26
+archive/issue_comments_040915.json:
+```json
+{
+    "body": "This works now:\n\n\n```\nsage: k = 3r\nsage: type(k)\n<type 'int'>\nsage: time k = 3r\nTime: CPU 0.00 s, Wall: 0.00 s\nsage: type(k)\n<type 'int'>\n```\n\n\nWhere's the best place to add a doctest?",
+    "created_at": "2012-01-09T02:17:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5312",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5312#issuecomment-40915",
+    "user": "mjo"
+}
+```
 
 This works now:
 
@@ -57,15 +82,37 @@ sage: type(k)
 Where's the best place to add a doctest?
 
 
+
 ---
 
-Comment by mhansen created at 2013-07-23 12:21:53
+archive/issue_comments_040916.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2013-07-23T12:21:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5312",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5312#issuecomment-40916",
+    "user": "mhansen"
+}
+```
 
 Resolution: invalid
 
 
+
 ---
 
-Comment by mhansen created at 2013-07-23 12:21:53
+archive/issue_comments_040917.json:
+```json
+{
+    "body": "I think we can just mark it as invalid since \"%time\" is now handled by IPython.",
+    "created_at": "2013-07-23T12:21:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5312",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5312#issuecomment-40917",
+    "user": "mhansen"
+}
+```
 
 I think we can just mark it as invalid since "%time" is now handled by IPython.

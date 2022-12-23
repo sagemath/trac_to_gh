@@ -1,11 +1,21 @@
 # Issue 8613: __dir__() / tab completion returns nonexistent attributes
 
-Issue created by migration from https://trac.sagemath.org/ticket/8613
-
-Original creator: mmezzarobba
-
-Original creation time: 2010-03-26 21:46:19
-
+archive/issues_008613.json:
+```json
+{
+    "body": "Assignee: somebody\n\nOn the following example, tab completion suggests ``sum``, which is not an attribute of ``R``.\n\n\n```\nsage: R = QQ['t']\nsage: R.su       \nR.sum                               R.summation\nR.summation_from_element_class_add             \nsage: R.sum                                    \n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/marc/co/sage-4.3.4/<ipython console> in <module>()\n\n/home/marc/co/sage-4.3.4/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__getattr__ (sage/structure/parent.c:5120)()\n\n/home/marc/co/sage-4.3.4/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.raise_attribute_error (sage/structure/parent.c:2638)()                                                                             \n\nAttributeError: 'PolynomialRing_field' object has no attribute 'sum'\nsage: 'sum' in R.__dir__()\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8613\n\n",
+    "created_at": "2010-03-26T21:46:19Z",
+    "labels": [
+        "categories",
+        "major",
+        "bug"
+    ],
+    "title": "__dir__() / tab completion returns nonexistent attributes",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8613",
+    "user": "mmezzarobba"
+}
+```
 Assignee: somebody
 
 On the following example, tab completion suggests ``sum``, which is not an attribute of ``R``.
@@ -32,10 +42,25 @@ True
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8613
+
+
+
+
 
 ---
 
-Comment by was created at 2010-03-29 04:56:49
+archive/issue_comments_078045.json:
+```json
+{
+    "body": "Notice also that other longer summation_from_element_class_add:\n\n```\nsage: search_src('summation_from_element_class_add')\ncategories/commutative_additive_semigroups.py:121:        summation_from_element_class_add = summation\ncategories/commutative_additive_semigroups.py:136:            if (self.summation != self.summation_from_element_class_add) and hasattr(self, \"element_class\") and hasattr(self.element_class, \"_add_parent\"):\n\n```\n\n\nSo, this suggests that this bug has something to do with Nicolas's category theory rewrite?  I'll post to sage-combinat.",
+    "created_at": "2010-03-29T04:56:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8613",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8613#issuecomment-78045",
+    "user": "was"
+}
+```
 
 Notice also that other longer summation_from_element_class_add:
 
@@ -50,37 +75,92 @@ categories/commutative_additive_semigroups.py:136:            if (self.summation
 So, this suggests that this bug has something to do with Nicolas's category theory rewrite?  I'll post to sage-combinat.
 
 
+
 ---
 
-Comment by was created at 2010-03-29 04:57:38
+archive/issue_comments_078046.json:
+```json
+{
+    "body": "This issue happens in both the notebook and command line.",
+    "created_at": "2010-03-29T04:57:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8613",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8613#issuecomment-78046",
+    "user": "was"
+}
+```
 
 This issue happens in both the notebook and command line.
 
 
+
 ---
 
-Comment by nthiery created at 2010-06-07 07:26:51
+archive/issue_comments_078047.json:
+```json
+{
+    "body": "This should be fixed once #9138 will be implemented.",
+    "created_at": "2010-06-07T07:26:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8613",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8613#issuecomment-78047",
+    "user": "nthiery"
+}
+```
 
 This should be fixed once #9138 will be implemented.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-04-10 15:06:32
+archive/issue_comments_078048.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2011-04-10T15:06:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8613",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8613#issuecomment-78048",
+    "user": "SimonKing"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-04-10 15:09:04
+archive/issue_comments_078049.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2011-04-10T15:09:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8613",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8613#issuecomment-78049",
+    "user": "SimonKing"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-04-10 15:09:04
+archive/issue_comments_078050.json:
+```json
+{
+    "body": "Indeed, it is a duplicate.\n\nWith the patches from #9944 and #9138, one obtains:\n\n```\nsage: R = QQ['t']\nsage: R.sum\n<bound method PolynomialRing_field_with_category.sum of Univariate Polynomial Ring in t over Rational Field>\nsage: R.summ\nR.summation                         R.summation_from_element_class_add\nsage: R.summation_from_element_class_add\n<bound method PolynomialRing_field_with_category.summation of Univariate Polynomial Ring in t over Rational Field>\n```\n\n\n\nI learnt: In that case, one should give a ticket a positive review and choose the milestone \"duplicate\", so that the release manager may close it.",
+    "created_at": "2011-04-10T15:09:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8613",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8613#issuecomment-78050",
+    "user": "SimonKing"
+}
+```
 
 Indeed, it is a duplicate.
 
@@ -101,15 +181,37 @@ sage: R.summation_from_element_class_add
 I learnt: In that case, one should give a ticket a positive review and choose the milestone "duplicate", so that the release manager may close it.
 
 
+
 ---
 
-Comment by SimonKing created at 2011-04-10 15:10:09
+archive/issue_comments_078051.json:
+```json
+{
+    "body": "PS: #9138 needs review (hint...)",
+    "created_at": "2011-04-10T15:10:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8613",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8613#issuecomment-78051",
+    "user": "SimonKing"
+}
+```
 
 PS: #9138 needs review (hint...)
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-04-11 14:59:48
+archive/issue_comments_078052.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2011-04-11T14:59:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8613",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8613#issuecomment-78052",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: duplicate

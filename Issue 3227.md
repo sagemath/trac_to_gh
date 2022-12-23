@@ -1,11 +1,21 @@
 # Issue 3227: add 64 bit OSX build support for tachyon
 
-Issue created by migration from https://trac.sagemath.org/ticket/3227
-
-Original creator: mabshoff
-
-Original creation time: 2008-05-16 19:58:43
-
+archive/issues_003227.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nspkg coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3227\n\n",
+    "created_at": "2008-05-16T19:58:43Z",
+    "labels": [
+        "build",
+        "major",
+        "bug"
+    ],
+    "title": "add 64 bit OSX build support for tachyon",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3227",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 spkg coming up.
@@ -14,17 +24,43 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/3227
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-05-16 19:58:48
+archive/issue_comments_022329.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-05-16T19:58:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3227",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3227#issuecomment-22329",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-22 19:16:27
+archive/issue_comments_022330.json:
+```json
+{
+    "body": "The spkg is at\n\nhttp://sage.math.washington.edu/home/mabshoff/spkgs/tachyon-0.98beta.p7.spkg\n\nCheers,\n\nMichael",
+    "created_at": "2009-01-22T19:16:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3227",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3227#issuecomment-22330",
+    "user": "mabshoff"
+}
+```
 
 The spkg is at
 
@@ -35,15 +71,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-23 00:11:50
+archive/issue_comments_022331.json:
+```json
+{
+    "body": "Merged in Sage 3.3.alpha1",
+    "created_at": "2009-01-23T00:11:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3227",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3227#issuecomment-22331",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.3.alpha1
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-23 00:11:50
+archive/issue_comments_022332.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-01-23T00:11:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3227",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3227#issuecomment-22332",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

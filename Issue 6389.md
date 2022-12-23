@@ -1,11 +1,21 @@
 # Issue 6389: expose building documentation for user modules not in the Sage library
 
-Issue created by migration from https://trac.sagemath.org/ticket/6389
-
-Original creator: malb
-
-Original creation time: 2009-06-23 14:34:27
-
+archive/issues_006389.json:
+```json
+{
+    "body": "Assignee: tba\n\nCC:  mkoeppe jdemeyer vbraun chapoton was dimpase nthiery fhivert embray\n\nKeywords: documentation, sphinx\n\nIt would be neat to be able to do:\n\n`sage -docbuild foo.py`\n\nfor a single file not in the library\n\nIssue created by migration from https://trac.sagemath.org/ticket/6389\n\n",
+    "created_at": "2009-06-23T14:34:27Z",
+    "labels": [
+        "documentation",
+        "minor",
+        "enhancement"
+    ],
+    "title": "expose building documentation for user modules not in the Sage library",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6389",
+    "user": "malb"
+}
+```
 Assignee: tba
 
 CC:  mkoeppe jdemeyer vbraun chapoton was dimpase nthiery fhivert embray
@@ -18,10 +28,25 @@ It would be neat to be able to do:
 
 for a single file not in the library
 
+Issue created by migration from https://trac.sagemath.org/ticket/6389
+
+
+
+
 
 ---
 
-Comment by chapoton created at 2016-07-15 11:14:01
+archive/issue_comments_051158.json:
+```json
+{
+    "body": "This used to work, but no longer\n\n```\nsage -docbuild file=my_own_code.py html\n```\n",
+    "created_at": "2016-07-15T11:14:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6389#issuecomment-51158",
+    "user": "chapoton"
+}
+```
 
 This used to work, but no longer
 
@@ -31,9 +56,20 @@ sage -docbuild file=my_own_code.py html
 
 
 
+
 ---
 
-Comment by jhpalmieri created at 2016-08-01 02:16:59
+archive/issue_comments_051159.json:
+```json
+{
+    "body": "The line\n\n```\n    assert app.outdir.startswith(SAGE_DOC)\n```\n\nin `src/sage_setup/docbuild/ext/multidocs.py` raises an error. I think we should disable this assertion when using the `file=...` argument to `sage --docbuild`.",
+    "created_at": "2016-08-01T02:16:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6389#issuecomment-51159",
+    "user": "jhpalmieri"
+}
+```
 
 The line
 
@@ -44,9 +80,20 @@ The line
 in `src/sage_setup/docbuild/ext/multidocs.py` raises an error. I think we should disable this assertion when using the `file=...` argument to `sage --docbuild`.
 
 
+
 ---
 
-Comment by mkoeppe created at 2016-08-03 19:35:00
+archive/issue_comments_051160.json:
+```json
+{
+    "body": "Replying to [comment:3 jhpalmieri]:\n> The line\n> {{{\n>     assert app.outdir.startswith(SAGE_DOC)\n> }}}\n> in `src/sage_setup/docbuild/ext/multidocs.py` raises an error. I think we should disable this assertion when using the `file=...` argument to `sage --docbuild`.\n\nThis assert is in `citation_dir`. \nHow should single-file docbuilds handle citations?",
+    "created_at": "2016-08-03T19:35:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6389#issuecomment-51160",
+    "user": "mkoeppe"
+}
+```
 
 Replying to [comment:3 jhpalmieri]:
 > The line
@@ -59,9 +106,20 @@ This assert is in `citation_dir`.
 How should single-file docbuilds handle citations?
 
 
+
 ---
 
-Comment by jhpalmieri created at 2016-08-03 20:00:55
+archive/issue_comments_051161.json:
+```json
+{
+    "body": "Replying to [comment:5 mkoeppe]:\n> Replying to [comment:3 jhpalmieri]:\n> > The line\n> > {{{\n> >     assert app.outdir.startswith(SAGE_DOC)\n> > }}}\n> > in `src/sage_setup/docbuild/ext/multidocs.py` raises an error. I think we should disable this assertion when using the `file=...` argument to `sage --docbuild`.\n> \n> This assert is in `citation_dir`. \n> How should single-file docbuilds handle citations?\n\nIgnore them? Or at least ignore references to citations in the Sage library: I think it should treat the single file as being unconnected to the Sage library.",
+    "created_at": "2016-08-03T20:00:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6389#issuecomment-51161",
+    "user": "jhpalmieri"
+}
+```
 
 Replying to [comment:5 mkoeppe]:
 > Replying to [comment:3 jhpalmieri]:
@@ -77,22 +135,55 @@ Replying to [comment:5 mkoeppe]:
 Ignore them? Or at least ignore references to citations in the Sage library: I think it should treat the single file as being unconnected to the Sage library.
 
 
+
 ---
 
-Comment by mkoeppe created at 2016-08-03 20:26:59
+archive/issue_comments_051162.json:
+```json
+{
+    "body": "Cc'ing people who are currently working on the documentation infrastructure (#20080, #20893, #20577).",
+    "created_at": "2016-08-03T20:26:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6389#issuecomment-51162",
+    "user": "mkoeppe"
+}
+```
 
 Cc'ing people who are currently working on the documentation infrastructure (#20080, #20893, #20577).
 
 
+
 ---
 
-Comment by embray created at 2016-11-10 11:54:54
+archive/issue_comments_051163.json:
+```json
+{
+    "body": "See also #21841 -- per that ticket, I think that if Sage's docbuild facilities are made available to third-party code (as I think it should be) then either it should be moved into the sage library itself (i.e. `sage.docbuild`) or its own package (`sage_docbuild`)--`sage_setup` is not otherwise a good place for it.",
+    "created_at": "2016-11-10T11:54:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6389#issuecomment-51163",
+    "user": "embray"
+}
+```
 
 See also #21841 -- per that ticket, I think that if Sage's docbuild facilities are made available to third-party code (as I think it should be) then either it should be moved into the sage library itself (i.e. `sage.docbuild`) or its own package (`sage_docbuild`)--`sage_setup` is not otherwise a good place for it.
 
 
+
 ---
 
-Comment by embray created at 2016-11-10 11:56:38
+archive/issue_comments_051164.json:
+```json
+{
+    "body": "I don't fully understand how citations are handled, but would it not be desirable for third-party docs to either have their own citation list, or to be able to point to citations in Sage's docs (if available)?",
+    "created_at": "2016-11-10T11:56:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6389#issuecomment-51164",
+    "user": "embray"
+}
+```
 
 I don't fully understand how citations are handled, but would it not be desirable for third-party docs to either have their own citation list, or to be able to point to citations in Sage's docs (if available)?

@@ -1,11 +1,21 @@
 # Issue 4106: error coercing symbolic variable into polynomial ring modulo 4 (but not mod 3)
 
-Issue created by migration from https://trac.sagemath.org/ticket/4106
-
-Original creator: was
-
-Original creation time: 2008-09-12 15:52:42
-
+archive/issues_004106.json:
+```json
+{
+    "body": "Assignee: tbd\n\nPaul Zimmerman reports that one coercion works, and another natural similar coercion doesn't, as illustrated below:\n\n\n\n```\nx = var('x')\nR = IntegerModRing(3)\nS = PolynomialRing(R, x)\nS(x)\n///\n\nx\n```\n\n\n\n```\nx = var('x')\nR = IntegerModRing(4)\nS = PolynomialRing(R, x)\nS(x)\n///\n\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/home/wstein/.sage/sage_notebook/worksheets/admin/1/code/22.py\", line 9, in <module>\n    exec compile(ur'S(x)' + '\\n', '', 'single')\n  File \"/home/wstein/sage/local/lib/python2.5/site-packages/SQLAlchemy-0.4.6-py2.5.egg/\", line 1, in <module>\n    \n  File \"/home/wstein/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring.py\", line 1097, in __call__\n    return polynomial_modn_dense_ntl.Polynomial_dense_modn_ntl_zz(self, x, check, is_gen, construct=construct)\n  File \"polynomial_modn_dense_ntl.pyx\", line 574, in sage.rings.polynomial.polynomial_modn_dense_ntl.Polynomial_dense_modn_ntl_zz.__init__ (sage/rings/polynomial/polynomial_modn_dense_ntl.cpp:7017)\n  File \"polynomial_modn_dense_ntl.pyx\", line 130, in sage.rings.polynomial.polynomial_modn_dense_ntl.Polynomial_dense_mod_n.__init__ (sage/rings/polynomial/polynomial_modn_dense_ntl.cpp:3188)\n  File \"/home/wstein/sage/local/lib/python2.5/site-packages/sage/rings/integer_mod_ring.py\", line 617, in __call__\n    return integer_mod.IntegerMod(self, x)\n  File \"integer_mod.pyx\", line 132, in sage.rings.integer_mod.IntegerMod (sage/rings/integer_mod.c:2187)\n  File \"integer_mod.pyx\", line 1430, in sage.rings.integer_mod.IntegerMod_int.__init__ (sage/rings/integer_mod.c:10773)\n  File \"integer_ring.pyx\", line 282, in sage.rings.integer_ring.IntegerRing_class.__call__ (sage/rings/integer_ring.c:4998)\nTypeError: unable to convert x (=x) to an integer\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4106\n\n",
+    "created_at": "2008-09-12T15:52:42Z",
+    "labels": [
+        "algebra",
+        "minor",
+        "bug"
+    ],
+    "title": "error coercing symbolic variable into polynomial ring modulo 4 (but not mod 3)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4106",
+    "user": "was"
+}
+```
 Assignee: tbd
 
 Paul Zimmerman reports that one coercion works, and another natural similar coercion doesn't, as illustrated below:
@@ -50,17 +60,45 @@ TypeError: unable to convert x (=x) to an integer
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4106
+
+
+
+
 
 ---
+
+archive/issue_comments_029736.json:
+```json
+{
+    "body": "Attachment\n\nSee the fairly trivial patch attached.",
+    "created_at": "2008-10-04T09:48:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4106",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4106#issuecomment-29736",
+    "user": "AlexGhitza"
+}
+```
 
 Attachment
 
 See the fairly trivial patch attached.
 
 
+
 ---
 
-Comment by was created at 2008-10-05 16:05:50
+archive/issue_comments_029737.json:
+```json
+{
+    "body": "Positive review.\n\nI did notice this unfortunate property of the _polynomial_ function that is used\nto implement this patch, namely it does something dumb when given x+y as input:\n\n\n```\nsage: var('x')\nx\nsage: var('y')\ny\nsage: S = PolynomialRing(Integers(4),1,'x')\nsage: S(x+y)\n2*x\nsage: (x+y)._polynomial_(S)\n2*x\n```\n\n\nI think in this case it should raise a TypeError. \n\nThis is my fault, since I implemented _polynomial_... of course.",
+    "created_at": "2008-10-05T16:05:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4106",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4106#issuecomment-29737",
+    "user": "was"
+}
+```
 
 Positive review.
 
@@ -86,22 +124,55 @@ I think in this case it should raise a TypeError.
 This is my fault, since I implemented _polynomial_... of course.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2008-10-05 21:50:38
+archive/issue_comments_029738.json:
+```json
+{
+    "body": "I've opened a new ticket #4246 addressing the issue reported by William (and put a patch there -- it is independent of this ticket).",
+    "created_at": "2008-10-05T21:50:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4106",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4106#issuecomment-29738",
+    "user": "AlexGhitza"
+}
+```
 
 I've opened a new ticket #4246 addressing the issue reported by William (and put a patch there -- it is independent of this ticket).
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-07 22:12:57
+archive/issue_comments_029739.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-10-07T22:12:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4106",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4106#issuecomment-29739",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-07 22:12:57
+archive/issue_comments_029740.json:
+```json
+{
+    "body": "Merged in Sage 3.1.3.alpha3",
+    "created_at": "2008-10-07T22:12:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4106",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4106#issuecomment-29740",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.1.3.alpha3

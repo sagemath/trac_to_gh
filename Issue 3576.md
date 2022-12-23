@@ -1,11 +1,21 @@
 # Issue 3576: stupid bug in RDF
 
-Issue created by migration from https://trac.sagemath.org/ticket/3576
-
-Original creator: was
-
-Original creation time: 2008-07-06 22:22:32
-
+archive/issues_003576.json:
+```json
+{
+    "body": "Assignee: somebody\n\nThis is sad:\n\n\n```\nsage: RDF(-1).nth_root(2)\n```\n\n\nLook at the dumb code in real_double.pyx:\n\n```\n    def nth_root(self, int n):\n        \"\"\"\n        Returns the $n^{th}$ root of self.\n        EXAMPLES:\n            sage: r = RDF(-125.0); r.nth_root(3)\n            -5.0\n            sage: r.nth_root(5)\n            -2.6265278044\n        \"\"\"\n        if n == 0:\n            return RealDoubleElement(float('nan'))\n        if self._value < 0 and GSL_IS_EVEN(n):\n            pass #return self._complex_double_().pow(1.0/n)\n        else:\n            return RealDoubleElement(self.__nth_root(n))\n```\n\n\nAmazingly this was introduced in the very first patch by Tom Boothby in 2006 and nobody ever noticed!!\n\nIssue created by migration from https://trac.sagemath.org/ticket/3576\n\n",
+    "created_at": "2008-07-06T22:22:32Z",
+    "labels": [
+        "basic arithmetic",
+        "blocker",
+        "bug"
+    ],
+    "title": "stupid bug in RDF",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3576",
+    "user": "was"
+}
+```
 Assignee: somebody
 
 This is sad:
@@ -39,10 +49,25 @@ Look at the dumb code in real_double.pyx:
 
 Amazingly this was introduced in the very first patch by Tom Boothby in 2006 and nobody ever noticed!!
 
+Issue created by migration from https://trac.sagemath.org/ticket/3576
+
+
+
+
 
 ---
 
-Comment by was created at 2008-07-06 23:07:19
+archive/issue_comments_025255.json:
+```json
+{
+    "body": "This is also bad, bad, bad:\n\n```\nsage: RDF(-1).nth_root(5)^(5)\n-1.35861063971\n```\n",
+    "created_at": "2008-07-06T23:07:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3576",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3576#issuecomment-25255",
+    "user": "was"
+}
+```
 
 This is also bad, bad, bad:
 
@@ -53,36 +78,93 @@ sage: RDF(-1).nth_root(5)^(5)
 
 
 
+
 ---
+
+archive/issue_comments_025256.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-07-06T23:13:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3576",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3576#issuecomment-25256",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2008-07-06 23:20:32
+archive/issue_comments_025257.json:
+```json
+{
+    "body": "The code is definitely much better style and correctness-wise after the patch.\n\n+1",
+    "created_at": "2008-07-06T23:20:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3576",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3576#issuecomment-25257",
+    "user": "mhansen"
+}
+```
 
 The code is definitely much better style and correctness-wise after the patch.
 
 +1
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-07 02:03:45
+archive/issue_comments_025258.json:
+```json
+{
+    "body": "Merged in Sage 3.0.4.alpha2",
+    "created_at": "2008-07-07T02:03:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3576",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3576#issuecomment-25258",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.4.alpha2
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-07 02:03:45
+archive/issue_comments_025259.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-07-07T02:03:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3576",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3576#issuecomment-25259",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by boothby created at 2008-07-07 03:21:17
+archive/issue_comments_025260.json:
+```json
+{
+    "body": "wow I'm dumb!",
+    "created_at": "2008-07-07T03:21:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3576",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3576#issuecomment-25260",
+    "user": "boothby"
+}
+```
 
 wow I'm dumb!

@@ -1,11 +1,21 @@
 # Issue 8950: new function for sage.calculus.desolve module
 
-Issue created by migration from https://trac.sagemath.org/ticket/8950
-
-Original creator: uri
-
-Original creation time: 2010-05-11 15:51:19
-
+archive/issues_008950.json:
+```json
+{
+    "body": "Assignee: burcin\n\nKeywords: desolve\n\nI've done a new function, named desolve_numerical, that solves a system of first order differential equations numerically. It seems to be quite more efficient than the function desolve_system_rk4, included in the same module. It can be seen in the following example (Lotka-Volterra Equations):\n\nsage: x,y,t=var('x,y,t')\u00a0\nsage: des=[x*(1-y),-y*(1-x)]\nsage: ics=[1,0.5] \nsage: times=srange(0,10.1,0.1)\n\nWith the new function we get:\u00a0\n\nsage: timeit('desolve_numerical(des,ics,times,(x,y))') \n125 loops, best of 3: **5.81 ms per loop**\n\nwhile with desolve_system_rk4 the result is:\n\nsage: timeit('desolve_system_rk4(des,[x,y],ics=[0,1,0.5],ivar=t)')\u00a0\n5 loops, best of 3: **558 ms per loop**\n\nIssue created by migration from https://trac.sagemath.org/ticket/8950\n\n",
+    "created_at": "2010-05-11T15:51:19Z",
+    "labels": [
+        "calculus",
+        "minor",
+        "enhancement"
+    ],
+    "title": "new function for sage.calculus.desolve module",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8950",
+    "user": "uri"
+}
+```
 Assignee: burcin
 
 Keywords: desolve
@@ -20,24 +30,52 @@ sage: times=srange(0,10.1,0.1)
 With the new function we get: 
 
 sage: timeit('desolve_numerical(des,ics,times,(x,y))') 
-125 loops, best of 3: *5.81 ms per loop*
+125 loops, best of 3: **5.81 ms per loop**
 
 while with desolve_system_rk4 the result is:
 
 sage: timeit('desolve_system_rk4(des,[x,y],ics=[0,1,0.5],ivar=t)') 
-5 loops, best of 3: *558 ms per loop*
+5 loops, best of 3: **558 ms per loop**
+
+Issue created by migration from https://trac.sagemath.org/ticket/8950
+
+
+
 
 
 ---
+
+archive/issue_comments_082400.json:
+```json
+{
+    "body": "Attachment\n\nIs this ready for review?",
+    "created_at": "2010-05-11T22:30:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8950",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8950#issuecomment-82400",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
 Is this ready for review?
 
 
+
 ---
 
-Comment by uri created at 2010-05-12 08:56:43
+archive/issue_comments_082401.json:
+```json
+{
+    "body": "Yes, I think so. I've been using it for a while and I didn't find any problem. Automatic testing works also.\n\nReplying to [comment:1 mvngu]:\n\n> Is this ready for review?",
+    "created_at": "2010-05-12T08:56:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8950",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8950#issuecomment-82401",
+    "user": "uri"
+}
+```
 
 Yes, I think so. I've been using it for a while and I didn't find any problem. Automatic testing works also.
 
@@ -46,35 +84,92 @@ Replying to [comment:1 mvngu]:
 > Is this ready for review?
 
 
+
 ---
 
-Comment by mvngu created at 2010-05-12 10:53:06
+archive/issue_comments_082402.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-05-12T10:53:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8950",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8950#issuecomment-82402",
+    "user": "mvngu"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by wdj created at 2010-05-12 21:20:50
+archive/issue_comments_082403.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_info.",
+    "created_at": "2010-05-12T21:20:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8950",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8950#issuecomment-82403",
+    "user": "wdj"
+}
+```
 
 Changing status from needs_review to needs_info.
 
 
+
 ---
 
-Comment by wdj created at 2010-05-12 21:20:50
+archive/issue_comments_082404.json:
+```json
+{
+    "body": "Just as a point of convention, typically new sage methods should have docstrings which illustrate all the options avaialble. So if there are optional arguments x, y, z, then there should be docstring examples illustrating these with non-default arguments. This method is great in the sense that it has a huge number of optional arguments. However, only a few of them are used in the examples. Could you please expand the examples to illustrate more of the optional variables?",
+    "created_at": "2010-05-12T21:20:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8950",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8950#issuecomment-82404",
+    "user": "wdj"
+}
+```
 
 Just as a point of convention, typically new sage methods should have docstrings which illustrate all the options avaialble. So if there are optional arguments x, y, z, then there should be docstring examples illustrating these with non-default arguments. This method is great in the sense that it has a huge number of optional arguments. However, only a few of them are used in the examples. Could you please expand the examples to illustrate more of the optional variables?
 
 
+
 ---
 
-Comment by uri created at 2010-05-16 19:33:11
+archive/issue_comments_082405.json:
+```json
+{
+    "body": "Changing status from needs_info to needs_review.",
+    "created_at": "2010-05-16T19:33:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8950",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8950#issuecomment-82405",
+    "user": "uri"
+}
+```
 
 Changing status from needs_info to needs_review.
 
 
+
 ---
+
+archive/issue_comments_082406.json:
+```json
+{
+    "body": "Attachment\n\nOk, I added information of the optional parameters and an example using non default ones.\n\nReplying to [comment:4 wdj]:\n\n> Just as a point of convention, typically new sage methods should have docstrings which illustrate all the options avaialble. So if there are optional arguments x, y, z, then there should be docstring examples illustrating these with non-default arguments. This method is great in the sense that it has a huge number of optional arguments. However, only a few of them are used in the examples. Could you please expand the examples to illustrate more of the optional variables?",
+    "created_at": "2010-05-16T19:33:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8950",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8950#issuecomment-82406",
+    "user": "uri"
+}
+```
 
 Attachment
 
@@ -85,82 +180,172 @@ Replying to [comment:4 wdj]:
 > Just as a point of convention, typically new sage methods should have docstrings which illustrate all the options avaialble. So if there are optional arguments x, y, z, then there should be docstring examples illustrating these with non-default arguments. This method is great in the sense that it has a huge number of optional arguments. However, only a few of them are used in the examples. Could you please expand the examples to illustrate more of the optional variables?
 
 
+
 ---
 
-Comment by burcin created at 2010-05-24 11:42:15
+archive/issue_comments_082407.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-05-24T11:42:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8950",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8950#issuecomment-82407",
+    "user": "burcin"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by burcin created at 2010-05-24 11:42:15
+archive/issue_comments_082408.json:
+```json
+{
+    "body": "Thanks for the patch, it looks like a good start.\n\nHere are a few comments (not a formal review):\n\n* You should change your code to conform to the Python coding conventions: http://sagemath.org/doc/developer/conventions.html#python-coding-conventions\n  In particular,\n  * use 4 spaces for indentation\n  * try not to have lines exceeding 80 characters (some of us use old fashioned command line editors)\n  * change the ComputeJacobian argument.\n* Your function doesn't seem to do anything, comparing with the previous attachment:desolve_numerical.py a whole chunk of code starting with the `else` clause corresponding to the second `if` statement seems to be missing\n* You should use y[:] to copy a list\n* Other functions in the same file also solve differential equations numerically. Choosing a more specific name for your function might be more appropriate.\n\nSomeone who uses this functionality more often should comment on the content and the name of the function.",
+    "created_at": "2010-05-24T11:42:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8950",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8950#issuecomment-82408",
+    "user": "burcin"
+}
+```
 
 Thanks for the patch, it looks like a good start.
 
 Here are a few comments (not a formal review):
 
- * You should change your code to conform to the Python coding conventions: http://sagemath.org/doc/developer/conventions.html#python-coding-conventions
+* You should change your code to conform to the Python coding conventions: http://sagemath.org/doc/developer/conventions.html#python-coding-conventions
   In particular,
   * use 4 spaces for indentation
   * try not to have lines exceeding 80 characters (some of us use old fashioned command line editors)
   * change the ComputeJacobian argument.
- * Your function doesn't seem to do anything, comparing with the previous attachment:desolve_numerical.py a whole chunk of code starting with the `else` clause corresponding to the second `if` statement seems to be missing
- * You should use y[:] to copy a list
- * Other functions in the same file also solve differential equations numerically. Choosing a more specific name for your function might be more appropriate.
+* Your function doesn't seem to do anything, comparing with the previous attachment:desolve_numerical.py a whole chunk of code starting with the `else` clause corresponding to the second `if` statement seems to be missing
+* You should use y[:] to copy a list
+* Other functions in the same file also solve differential equations numerically. Choosing a more specific name for your function might be more appropriate.
 
 Someone who uses this functionality more often should comment on the content and the name of the function.
 
 
+
 ---
+
+archive/issue_comments_082409.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-06-30T08:49:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8950",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8950#issuecomment-82409",
+    "user": "uri"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by uri created at 2010-06-30 08:59:40
+archive/issue_comments_082410.json:
+```json
+{
+    "body": "After a while, I've been able to make the changes proposed by burcin (by the way, thanks for your suggestions):\n\n* use 4 spaces for indentation -> Done\n* try not to have lines exceeding 80 characters (some of us use old fashioned command line editors) -> Done, except for a line in the examples. I couldn't break that line, because then the automatic testing wouldn't work. I guess it's not a big deal, since it is not part of the code, though.\n* change the\u00a0ComputeJacobian\u00a0argument -> Done\n* Your function doesn't seem to do anything, comparing with the previous[attachment:desolve_numerical.py attachment:desolve_numerical.py]\u00a0a whole chunk of code starting with the\u00a0`else`\u00a0clause corresponding to the second\u00a0`if`\u00a0statement seems to be missing -> I don't get your point here... I think there's no problem with the second if statement. Could you be more precise?\n* You should use y[:] to copy a list -> Done\n* Other functions in the same file also solve differential equations numerically. Choosing a more specific name for your function might be more appropriate. -> You're right. I changed the name to **desolve_odeint**, since the it uses the integrate function from odeint module (from scipy).\n\n\n\nI will be grateful for any other comments!",
+    "created_at": "2010-06-30T08:59:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8950",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8950#issuecomment-82410",
+    "user": "uri"
+}
+```
 
 After a while, I've been able to make the changes proposed by burcin (by the way, thanks for your suggestions):
 
- * use 4 spaces for indentation -> Done
- * try not to have lines exceeding 80 characters (some of us use old fashioned command line editors) -> Done, except for a line in the examples. I couldn't break that line, because then the automatic testing wouldn't work. I guess it's not a big deal, since it is not part of the code, though.
- * change the ComputeJacobian argument -> Done
- * Your function doesn't seem to do anything, comparing with the previous[attachment:desolve_numerical.py attachment:desolve_numerical.py] a whole chunk of code starting with the `else` clause corresponding to the second `if` statement seems to be missing -> I don't get your point here... I think there's no problem with the second if statement. Could you be more precise?
- * You should use y[:] to copy a list -> Done
- * Other functions in the same file also solve differential equations numerically. Choosing a more specific name for your function might be more appropriate. -> You're right. I changed the name to *desolve_odeint*, since the it uses the integrate function from odeint module (from scipy).
+* use 4 spaces for indentation -> Done
+* try not to have lines exceeding 80 characters (some of us use old fashioned command line editors) -> Done, except for a line in the examples. I couldn't break that line, because then the automatic testing wouldn't work. I guess it's not a big deal, since it is not part of the code, though.
+* change the ComputeJacobian argument -> Done
+* Your function doesn't seem to do anything, comparing with the previous[attachment:desolve_numerical.py attachment:desolve_numerical.py] a whole chunk of code starting with the `else` clause corresponding to the second `if` statement seems to be missing -> I don't get your point here... I think there's no problem with the second if statement. Could you be more precise?
+* You should use y[:] to copy a list -> Done
+* Other functions in the same file also solve differential equations numerically. Choosing a more specific name for your function might be more appropriate. -> You're right. I changed the name to **desolve_odeint**, since the it uses the integrate function from odeint module (from scipy).
 
 
 
 I will be grateful for any other comments!
 
 
+
 ---
 
-Comment by uri created at 2010-06-30 08:59:40
+archive/issue_comments_082411.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-06-30T08:59:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8950",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8950#issuecomment-82411",
+    "user": "uri"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by pang created at 2010-07-20 06:46:28
+archive/issue_comments_082412.json:
+```json
+{
+    "body": "Oriol, it seems that your trac_8950_desolve_numerical.2.patch is exactly the same as trac_8950_desolve_numerical.patch.",
+    "created_at": "2010-07-20T06:46:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8950",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8950#issuecomment-82412",
+    "user": "pang"
+}
+```
 
 Oriol, it seems that your trac_8950_desolve_numerical.2.patch is exactly the same as trac_8950_desolve_numerical.patch.
 
 
+
 ---
 
-Comment by uri created at 2010-07-22 14:57:43
+archive/issue_comments_082413.json:
+```json
+{
+    "body": "Thanks, I hadn't realised I just uploaded the old patch...\u00a0\n\nI'll upload the correct one now, I hope I do it right this time :)",
+    "created_at": "2010-07-22T14:57:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8950",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8950#issuecomment-82413",
+    "user": "uri"
+}
+```
 
 Thanks, I hadn't realised I just uploaded the old patch... 
 
 I'll upload the correct one now, I hope I do it right this time :)
 
 
+
 ---
 
-Comment by pang created at 2010-07-22 21:04:08
+archive/issue_comments_082414.json:
+```json
+{
+    "body": "I got an error when applying your patch:\n\n\n```\napplying trac_8950_desolve_odeint.patch abort: malformed patch\n```\n\n\nThe patch says: \n\n\n```\ndiff -r eb27a39a6df4 -r 15f9c1da9cc9 sage/calculus/desolvers.py\n--- a/sage/calculus/desolvers.py\tWed Jan 20 15:09:32 2010 -0800\n+++ b/sage/calculus/desolvers.py\tWed Jun 30 10:47:17 2010 +0200\n@@ -1053,3 +1053,270 @@\n     sol.extend(sol_2)\n \n     return sol\n+\n+def desolve_odeint(des, ics, times, dvars, ivar=None, compute_jac=False, args=()\n```\n\n\n\nbut the file desolvers.py has now more lines, and sol.extend is now on line 1220, not on line 1053. I'm not an expert on version control, but this makes me think that the patch was not applied because I'm using a more recent version of Sage than the one you used when you exported the patch. Maybe if you upgrade before exporting the patch I'll be able to apply it. I've tried to modify the patch manually but failed.",
+    "created_at": "2010-07-22T21:04:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8950",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8950#issuecomment-82414",
+    "user": "pang"
+}
+```
 
 I got an error when applying your patch:
 
@@ -190,7 +375,20 @@ diff -r eb27a39a6df4 -r 15f9c1da9cc9 sage/calculus/desolvers.py
 but the file desolvers.py has now more lines, and sol.extend is now on line 1220, not on line 1053. I'm not an expert on version control, but this makes me think that the patch was not applied because I'm using a more recent version of Sage than the one you used when you exported the patch. Maybe if you upgrade before exporting the patch I'll be able to apply it. I've tried to modify the patch manually but failed.
 
 
+
 ---
+
+archive/issue_comments_082415.json:
+```json
+{
+    "body": "Attachment\n\nYou were right, I had an old version of Sage. Now I've created the patch in the last version (4.5), so I think it should work. Please, let me know if everything is allright this time.\n\nThanks for your time!",
+    "created_at": "2010-07-26T11:55:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8950",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8950#issuecomment-82415",
+    "user": "uri"
+}
+```
 
 Attachment
 
@@ -199,9 +397,20 @@ You were right, I had an old version of Sage. Now I've created the patch in the 
 Thanks for your time!
 
 
+
 ---
 
-Comment by pang created at 2010-07-28 19:48:14
+archive/issue_comments_082416.json:
+```json
+{
+    "body": "The patch is a little weird now: it contains first the old one and then the same code, but with instructions to include it in a different place. I couldn't use it, and I think trac has trouble with it, too, because it doesn't render the patch if you click on it, like it does usually. I can produce a patch from a fresh install if you want, but let's talk about the content first:\n\nIt pretty much works, but:\n\n1. I'm concerned about using the variable 't' if the argument ivar is not set explicitely. Is it safe to assume that nobody would use the name 't' for a dependent variable? Is it safe to assume that everybody would use the name 't' for the independent variable? I would prefer either of these two approaches:\n\n   * Always require the parameter ivar\n   * Use some code like in `desolve_system_rk4` to try to guess the independent var:\n\n   1. compute all variables used in the functions passed as arguments:\n\n\n```\nall_vars = set([])\n\nfor de in des:\n    all_vars.update(set(de.variables()))\n```\n\n2. if there is exactly one variable in all_vars not in dvars, assume it is the independent var:\n2. if all_vars is contained in dvars, create an adhoc independent variable that is not used elsewhere. I've thought of a safe way to pick up a new var, which maybe overkill. It seems like this is not necessary thanks to the particular way in which fast_float works, but IMHO it's better to be on the safe side:\n2. otherwise raise an error\n\n\n```\n...\nivars = all_vars - set(dvars)\nif len(ivars) == 1:\n    ivar = ivars.pop()\nelif not ivars:\n    safe_name = 't_' + str(dvars)\n    ivar = var(safe_name)\nelse:\n    raise ...\n\n```\n\nOriol: what's your opinion on this issue? \n\n2. I'd use:\n\n\n```\nJ=diff(des,dvars)\n```\n\n\ninstead of\n\n\n```\nJ=jacobian(des,dvars)\nJ=J[0][0]\n```\n\n\n3. In my opinion, the parameters to ``odeint`` mu and ml should not be used. Those parameters do not make sense if you don't pass Dfun as an argument. But please correct me if I'm wrong.\n\n4. I've introduced a few ``is_SymbolicVariable(dvars)`` tests. I think the test ``len(dvars)==0`` is a lousy test for a Symbolic Variable.\n\n5. The documentation wasn't building correctly. Sphinx is a bit rigid, and we need to follow the indentation rules, etc. I've fixed that already.\n\nI'm attaching a patch file with the changes above included. It probably won't merge cleanly into your Sage install, so I'm attaching the plain file desolvers.py directly. Please tell me what you think, and then we will ask for another reviewer.",
+    "created_at": "2010-07-28T19:48:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8950",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8950#issuecomment-82416",
+    "user": "pang"
+}
+```
 
 The patch is a little weird now: it contains first the old one and then the same code, but with instructions to include it in a different place. I couldn't use it, and I think trac has trouble with it, too, because it doesn't render the patch if you click on it, like it does usually. I can produce a patch from a fresh install if you want, but let's talk about the content first:
 
@@ -209,10 +418,10 @@ It pretty much works, but:
 
 1. I'm concerned about using the variable 't' if the argument ivar is not set explicitely. Is it safe to assume that nobody would use the name 't' for a dependent variable? Is it safe to assume that everybody would use the name 't' for the independent variable? I would prefer either of these two approaches:
 
- * Always require the parameter ivar
- * Use some code like in `desolve_system_rk4` to try to guess the independent var:
+   * Always require the parameter ivar
+   * Use some code like in `desolve_system_rk4` to try to guess the independent var:
 
- 1. compute all variables used in the functions passed as arguments:
+   1. compute all variables used in the functions passed as arguments:
 
 
 ```
@@ -222,9 +431,9 @@ for de in des:
     all_vars.update(set(de.variables()))
 ```
 
- 2. if there is exactly one variable in all_vars not in dvars, assume it is the independent var:
- 2. if all_vars is contained in dvars, create an adhoc independent variable that is not used elsewhere. I've thought of a safe way to pick up a new var, which maybe overkill. It seems like this is not necessary thanks to the particular way in which fast_float works, but IMHO it's better to be on the safe side:
- 2. otherwise raise an error
+2. if there is exactly one variable in all_vars not in dvars, assume it is the independent var:
+2. if all_vars is contained in dvars, create an adhoc independent variable that is not used elsewhere. I've thought of a safe way to pick up a new var, which maybe overkill. It seems like this is not necessary thanks to the particular way in which fast_float works, but IMHO it's better to be on the safe side:
+2. otherwise raise an error
 
 
 ```
@@ -268,24 +477,74 @@ J=J[0][0]
 I'm attaching a patch file with the changes above included. It probably won't merge cleanly into your Sage install, so I'm attaching the plain file desolvers.py directly. Please tell me what you think, and then we will ask for another reviewer.
 
 
+
 ---
 
-Comment by pang created at 2010-07-28 19:48:14
+archive/issue_comments_082417.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-07-28T19:48:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8950",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8950#issuecomment-82417",
+    "user": "pang"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
+
+archive/issue_comments_082418.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-07-28T19:48:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8950",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8950#issuecomment-82418",
+    "user": "pang"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_082419.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-07-28T19:50:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8950",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8950#issuecomment-82419",
+    "user": "pang"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_082420.json:
+```json
+{
+    "body": "Attachment\n\nI just made a mistake you might find funny: I exported the patch to a file without deleting the file first, and then the changes were appended to the existing file. The resulting patch: ``trac_8950_desolve_odeint_2.patch`` contains duplicated information.\n\nThe patch ``trac_8950_desolve_odeint_3.patch`` is correct.",
+    "created_at": "2010-07-28T19:54:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8950",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8950#issuecomment-82420",
+    "user": "pang"
+}
+```
 
 Attachment
 
@@ -294,9 +553,20 @@ I just made a mistake you might find funny: I exported the patch to a file witho
 The patch ``trac_8950_desolve_odeint_3.patch`` is correct.
 
 
+
 ---
 
-Comment by uri created at 2010-08-02 11:49:33
+archive/issue_comments_082421.json:
+```json
+{
+    "body": "Thanks pang, I think the changes you've done are great! Here's my opinion:\n\nReplying to [comment:12 pang]:\n\n> 1. I'm concerned about using the variable 't' if the argument ivar is not set explicitely. Is it safe to assume that nobody would use the name 't' for a dependent variable? Is it safe to assume that everybody would use the name 't' for the independent variable? \n\nYes, I think you're right, it's not safe to use the name 't' as default for the independent variable.\n\n\n> I would prefer either of these two approaches:\n> \n>  * Always require the parameter ivar\n>  * Use some code like in `desolve_system_rk4` to try to guess the independent var:\n\nI prefer the second approach, because in a lot of cases the independent variable is in fact (almost) meaningless. Besides, the code you've written is great, and I think it should work perfectly (well I've made a small correction, I'll explain later).\n\n\n> 2. I'd use:\n> \n> {{{\n> J=diff(des,dvars)\n> }}}\n> \n> instead of\n> \n> {{{\n> J=jacobian(des,dvars)\n> J=J[0][0]\n> }}}\n\nI agree, I just didn't think about that.\n\n\n> 3. In my opinion, the parameters to ``odeint`` mu and ml should not be used. Those parameters do not make sense if you don't pass Dfun as an argument. But please correct me if I'm wrong.\n\nAgain, totally agree.\n\n\n> 4. I've introduced a few ``is_SymbolicVariable(dvars)`` tests. I think the test ``len(dvars)==0`` is a lousy test for a Symbolic Variable.\n\nI still don't really understand why you don't like the test ``len(dvars)==0``, but it's true that the ``is_SymbolicVariable(dvars)`` test is more elegant. By the way, the first ``len(dvars)==0`` test is still there; is there any reason why the other one cannot be used?\n\n\n> 5. The documentation wasn't building correctly. Sphinx is a bit rigid, and we need to follow the indentation rules, etc. I've fixed that already.\n\nThanks, I didn't know that.\n\n\nI attach a new patch (trac_8950_odeint_4.patch), because I made some small changes:\n\n1. In the documentation, the description of 'ivar' said ' default is t', which is not anymore, so I changed it to just 'optional'.\n\n2. In one of the examples there was a mistake, because it used the time vector 'times' which was defined in a previous example and not the one that was defined in it, which was called 't'.\n\n3. At the beggining there was:\n\n\n```\nif ivar==None:\n    if len(dvars)==0 or len(dvars)==1:\n        all_vars = set(des.variables())\n    else:\n        ...\n```\n\n\nHowever, in the case that ``len(dvars)==1`` is true, 'des.variables()' will give an error. So instead I wrote:\n\n```\nif ivar==None:\n    if len(dvars)==0 or len(dvars)==1:\n        if len(dvars)==1:\n            des=des[0]\n            dvars=dvars[0]\n        all_vars = set(des.variables())\n    else:\n        ...\n```\n\n\nAs the redefinition 'dvars=dvars[0]' was already done afterwards, I moved it to here for simplicity.\n\nPlease, let me know your opinion. And thanks again for your work!",
+    "created_at": "2010-08-02T11:49:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8950",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8950#issuecomment-82421",
+    "user": "uri"
+}
+```
 
 Thanks pang, I think the changes you've done are great! Here's my opinion:
 
@@ -383,30 +653,76 @@ As the redefinition 'dvars=dvars[0]' was already done afterwards, I moved it to 
 Please, let me know your opinion. And thanks again for your work!
 
 
+
 ---
+
+archive/issue_comments_082422.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-08-03T16:23:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8950",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8950#issuecomment-82422",
+    "user": "uri"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by uri created at 2010-08-03 16:23:26
+archive/issue_comments_082423.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-08-03T16:23:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8950",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8950#issuecomment-82423",
+    "user": "uri"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by kcrisman created at 2010-08-06 19:28:36
+archive/issue_comments_082424.json:
+```json
+{
+    "body": "Is it possible to have a unified patch?  It is very difficult to follow exactly what is happening for someone who just discovered this ticket :)  \n\nAlso, this is the Scipy one, correct?  Is there also a GSL desolver which could be wrapped and put here (I think the current ones are all from Maxima)?  That would be very natural, or perhaps as an `algorithm=` argument.",
+    "created_at": "2010-08-06T19:28:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8950",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8950#issuecomment-82424",
+    "user": "kcrisman"
+}
+```
 
 Is it possible to have a unified patch?  It is very difficult to follow exactly what is happening for someone who just discovered this ticket :)  
 
 Also, this is the Scipy one, correct?  Is there also a GSL desolver which could be wrapped and put here (I think the current ones are all from Maxima)?  That would be very natural, or perhaps as an `algorithm=` argument.
 
 
+
 ---
 
-Comment by uri created at 2010-08-09 14:40:55
+archive/issue_comments_082425.json:
+```json
+{
+    "body": "Replying to [comment:16 kcrisman]:\n> Is it possible to have a unified patch?  It is very difficult to follow exactly what is happening for someone who just discovered this ticket :)  \n\nI attached the file trac_8950_desolve_odeint_unified_4.patch, it contains all the changes contained in the previous patches. I'll be glad to hear your opinion!\n\n> Also, this is the Scipy one, correct?  Is there also a GSL desolver which could be wrapped and put here (I think the current ones are all from Maxima)?  That would be very natural, or perhaps as an `algorithm=` argument.\n\nYes, this is the Scipy one. I think the class ode_solver uses the GSL desolver. I'm not sure if it's necessary to put it here too... however, I did a routine to initialize this class (from my point of view the initialization is a little bit tedious, particularly if you want to use symbolic functions but still want it to be fast). It needs some improvement though, when I finish it I'll tell you :)",
+    "created_at": "2010-08-09T14:40:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8950",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8950#issuecomment-82425",
+    "user": "uri"
+}
+```
 
 Replying to [comment:16 kcrisman]:
 > Is it possible to have a unified patch?  It is very difficult to follow exactly what is happening for someone who just discovered this ticket :)  
@@ -418,25 +734,58 @@ I attached the file trac_8950_desolve_odeint_unified_4.patch, it contains all th
 Yes, this is the Scipy one. I think the class ode_solver uses the GSL desolver. I'm not sure if it's necessary to put it here too... however, I did a routine to initialize this class (from my point of view the initialization is a little bit tedious, particularly if you want to use symbolic functions but still want it to be fast). It needs some improvement though, when I finish it I'll tell you :)
 
 
+
 ---
 
-Comment by mhampton created at 2010-08-30 20:51:58
+archive/issue_comments_082426.json:
+```json
+{
+    "body": "This looks good to me - applied cleanly on sage-4.5.3.alpha1, seems to work well, documentation for the reference manual looks fine.\n\nI am going to give this a positive review, but if you previously reviewed this you might want to take a final look and make sure I'm not missing anything.",
+    "created_at": "2010-08-30T20:51:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8950",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8950#issuecomment-82426",
+    "user": "mhampton"
+}
+```
 
 This looks good to me - applied cleanly on sage-4.5.3.alpha1, seems to work well, documentation for the reference manual looks fine.
 
 I am going to give this a positive review, but if you previously reviewed this you might want to take a final look and make sure I'm not missing anything.
 
 
+
 ---
 
-Comment by mhampton created at 2010-08-30 20:51:58
+archive/issue_comments_082427.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-08-30T20:51:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8950",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8950#issuecomment-82427",
+    "user": "mhampton"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by uri created at 2010-08-31 11:34:01
+archive/issue_comments_082428.json:
+```json
+{
+    "body": "Replying to [comment:18 mhampton]:\n> This looks good to me - applied cleanly on sage-4.5.3.alpha1, seems to work well, documentation for the reference manual looks fine.\n> \n> I am going to give this a positive review, but if you previously reviewed this you might want to take a final look and make sure I'm not missing anything.\n\nGreat, thanks. Maybe pang or kcrisman have some comments still.",
+    "created_at": "2010-08-31T11:34:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8950",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8950#issuecomment-82428",
+    "user": "uri"
+}
+```
 
 Replying to [comment:18 mhampton]:
 > This looks good to me - applied cleanly on sage-4.5.3.alpha1, seems to work well, documentation for the reference manual looks fine.
@@ -446,32 +795,76 @@ Replying to [comment:18 mhampton]:
 Great, thanks. Maybe pang or kcrisman have some comments still.
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-05 03:40:35
+archive/issue_comments_082429.json:
+```json
+{
+    "body": "Which patch(es) should the release manager merge?  The attachment [attachment:trac_8950_desolve_odeint_unified_4.patch] is missing a Mercurial header.  In case it helps: [This wiki page](http://wiki.sagemath.org/MercurialQueues) shows how to fold together multiple patches.\n\nAlso, can someone fill in the \"Reviewer(s)\" field?",
+    "created_at": "2010-09-05T03:40:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8950",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8950#issuecomment-82429",
+    "user": "mpatel"
+}
+```
 
 Which patch(es) should the release manager merge?  The attachment [attachment:trac_8950_desolve_odeint_unified_4.patch] is missing a Mercurial header.  In case it helps: [This wiki page](http://wiki.sagemath.org/MercurialQueues) shows how to fold together multiple patches.
 
 Also, can someone fill in the "Reviewer(s)" field?
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-05 03:40:35
+archive/issue_comments_082430.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_work.",
+    "created_at": "2010-09-05T03:40:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8950",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8950#issuecomment-82430",
+    "user": "mpatel"
+}
+```
 
 Changing status from positive_review to needs_work.
 
 
+
 ---
 
-Comment by uri created at 2010-09-07 14:24:58
+archive/issue_comments_082431.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-09-07T14:24:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8950",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8950#issuecomment-82431",
+    "user": "uri"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by uri created at 2010-09-07 14:24:58
+archive/issue_comments_082432.json:
+```json
+{
+    "body": "Replying to [comment:20 mpatel]:\n> Which patch(es) should the release manager merge?  The attachment [attachment:trac_8950_desolve_odeint_unified_4.patch] is missing a Mercurial header.  In case it helps: [This wiki page](http://wiki.sagemath.org/MercurialQueues) shows how to fold together multiple patches.\n\nThanks for the help. Now [attachment:trac_8950_desolve_odeint_unified_4.patch] contains the Mercurial header. This is the patch that the release manager should merge.",
+    "created_at": "2010-09-07T14:24:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8950",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8950#issuecomment-82432",
+    "user": "uri"
+}
+```
 
 Replying to [comment:20 mpatel]:
 > Which patch(es) should the release manager merge?  The attachment [attachment:trac_8950_desolve_odeint_unified_4.patch] is missing a Mercurial header.  In case it helps: [This wiki page](http://wiki.sagemath.org/MercurialQueues) shows how to fold together multiple patches.
@@ -479,9 +872,20 @@ Replying to [comment:20 mpatel]:
 Thanks for the help. Now [attachment:trac_8950_desolve_odeint_unified_4.patch] contains the Mercurial header. This is the patch that the release manager should merge.
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-07 14:44:03
+archive/issue_comments_082433.json:
+```json
+{
+    "body": "Replying to [comment:21 uri]:\n> Thanks for the help. Now [attachment:trac_8950_desolve_odeint_unified_4.patch] contains the Mercurial header. This is the patch that the release manager should merge.\n\nCould you check this?  I still see a header-less patch.",
+    "created_at": "2010-09-07T14:44:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8950",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8950#issuecomment-82433",
+    "user": "mpatel"
+}
+```
 
 Replying to [comment:21 uri]:
 > Thanks for the help. Now [attachment:trac_8950_desolve_odeint_unified_4.patch] contains the Mercurial header. This is the patch that the release manager should merge.
@@ -489,9 +893,20 @@ Replying to [comment:21 uri]:
 Could you check this?  I still see a header-less patch.
 
 
+
 ---
 
-Comment by uri created at 2010-09-07 15:12:32
+archive/issue_comments_082434.json:
+```json
+{
+    "body": "Replying to [comment:22 mpatel]:\n> Replying to [comment:21 uri]:\n> > Thanks for the help. Now [attachment:trac_8950_desolve_odeint_unified_4.patch] contains the Mercurial header. This is the patch that the release manager should merge.\n> \n> Could you check this?  I still see a header-less patch.\n\nYou're right, I must have re-uploaded the old patch, sorry. Now it's the correct one.",
+    "created_at": "2010-09-07T15:12:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8950",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8950#issuecomment-82434",
+    "user": "uri"
+}
+```
 
 Replying to [comment:22 mpatel]:
 > Replying to [comment:21 uri]:
@@ -502,14 +917,38 @@ Replying to [comment:22 mpatel]:
 You're right, I must have re-uploaded the old patch, sorry. Now it's the correct one.
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-07 15:16:47
+archive/issue_comments_082435.json:
+```json
+{
+    "body": "Great!  Could you fix the commit string so that the first line contains the ticket number and a brief (< 80 characters) summary of the changes?  We need to do this to keep `hg log` output informative.  Of course, additional explanatory lines are definitely allowed in the commit string; they'll be displayed by `hg log -p`.",
+    "created_at": "2010-09-07T15:16:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8950",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8950#issuecomment-82435",
+    "user": "mpatel"
+}
+```
 
 Great!  Could you fix the commit string so that the first line contains the ticket number and a brief (< 80 characters) summary of the changes?  We need to do this to keep `hg log` output informative.  Of course, additional explanatory lines are definitely allowed in the commit string; they'll be displayed by `hg log -p`.
 
 
+
 ---
+
+archive/issue_comments_082436.json:
+```json
+{
+    "body": "Attachment\n\nReplying to [comment:24 mpatel]:\n> Great!  Could you fix the commit string so that the first line contains the ticket number and a brief (< 80 characters) summary of the changes?  We need to do this to keep `hg log` output informative.  Of course, additional explanatory lines are definitely allowed in the commit string; they'll be displayed by `hg log -p`.\n\nI'm not sure I did what you asked for: I created the patch again but edited the commit string using the \"-e\" command. Is that correct?",
+    "created_at": "2010-09-07T15:43:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8950",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8950#issuecomment-82436",
+    "user": "uri"
+}
+```
 
 Attachment
 
@@ -519,16 +958,38 @@ Replying to [comment:24 mpatel]:
 I'm not sure I did what you asked for: I created the patch again but edited the commit string using the "-e" command. Is that correct?
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-07 15:46:14
+archive/issue_comments_082437.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-09-07T15:46:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8950",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8950#issuecomment-82437",
+    "user": "mpatel"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-07 15:46:14
+archive/issue_comments_082438.json:
+```json
+{
+    "body": "Replying to [comment:25 uri]:\n> Replying to [comment:24 mpatel]:\n> > Great!  Could you fix the commit string so that the first line contains the ticket number and a brief (< 80 characters) summary of the changes?  We need to do this to keep `hg log` output informative.  Of course, additional explanatory lines are definitely allowed in the commit string; they'll be displayed by `hg log -p`.\n> \n> I'm not sure I did what you asked for: I created the patch again but edited the commit string using the \"-e\" command. Is that correct?\n\nYes, that works.  Thanks!",
+    "created_at": "2010-09-07T15:46:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8950",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8950#issuecomment-82438",
+    "user": "mpatel"
+}
+```
 
 Replying to [comment:25 uri]:
 > Replying to [comment:24 mpatel]:
@@ -539,8 +1000,19 @@ Replying to [comment:25 uri]:
 Yes, that works.  Thanks!
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-15 11:13:32
+archive/issue_comments_082439.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-09-15T11:13:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8950",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8950#issuecomment-82439",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 6645: make sure bdist of sage-4.1.1 works before release
 
-Issue created by migration from https://trac.sagemath.org/ticket/6645
-
-Original creator: was
-
-Original creation time: 2009-07-28 03:01:36
-
+archive/issues_006645.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  mhansen\n\n\n```\nHi,\n\nI took the sage-4.1.1.alpha1 release build I had, then did \"./sage -bdist\", took the result, extracted it, and did \"make test\". \n\n 1) It sits there and builds the documentation again, which takes a *long* time.  It shouldn't do this for a binary.\n\n 2) Worse, every single test failed, with errors like this:\n\nsage -t  \"/home/wstein/build/sage-4.1.1.alpha1/dist/sage-4.1.1.alpha1-x86_64-Linux/devel/sage/doc/common/buil\nder.py\"\n  File \"./builder.py\", line 18\n    from /home/wstein/build/sage-4.1.1.alpha1/dist/sage-4.1.1.alpha1-x86_64-Linux/devel/sage/doc/common/build\ner import *\n         ^\n\n  3) I tried do \"./sage\" to run Sage, then typed \"make test\" again about 10 minutes ago.  For some reason, the docs are building again... and I expect the same behavior as above after that finally finishes.\n\nBuiding Sage, doing \"./sage -bdist\", then extracting the result and having \"make test\" 100% is a blocker for making the sage-4.1.1 release.\n\nWilliam\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6645\n\n",
+    "created_at": "2009-07-28T03:01:36Z",
+    "labels": [
+        "build",
+        "blocker",
+        "bug"
+    ],
+    "title": "make sure bdist of sage-4.1.1 works before release",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6645",
+    "user": "was"
+}
+```
 Assignee: tbd
 
 CC:  mhansen
@@ -35,10 +45,25 @@ William
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6645
+
+
+
+
 
 ---
 
-Comment by mpatel created at 2009-07-28 10:40:22
+archive/issue_comments_054490.json:
+```json
+{
+    "body": "It appears that the doc rebuild is a consequence of\n\n```\n#Build the documentation\nrm -rf \"$SAGE_ROOT\"/devel/sage-main/doc/output/doctrees\nrm -rf \"$SAGE_ROOT\"/devel/sage-main/doc/en/reference/sage/*\n\"$SAGE_ROOT\"/sage -docbuild --jsmath all html\n```\n\nat the end of `spkg/install`.  Perhaps we should recast this as a `make` target?  I think this is a problem in a source distribution, too.\n\nBut if I comment out these lines, then run `make test` in the binary distribution's root directory, the tests **still** fail...",
+    "created_at": "2009-07-28T10:40:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6645",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6645#issuecomment-54490",
+    "user": "mpatel"
+}
+```
 
 It appears that the doc rebuild is a consequence of
 
@@ -51,30 +76,65 @@ rm -rf "$SAGE_ROOT"/devel/sage-main/doc/en/reference/sage/*
 
 at the end of `spkg/install`.  Perhaps we should recast this as a `make` target?  I think this is a problem in a source distribution, too.
 
-But if I comment out these lines, then run `make test` in the binary distribution's root directory, the tests *still* fail...
+But if I comment out these lines, then run `make test` in the binary distribution's root directory, the tests **still** fail...
+
 
 
 ---
 
-Comment by mpatel created at 2009-07-28 13:07:53
+archive/issue_comments_054491.json:
+```json
+{
+    "body": "Apply to scripts repository.",
+    "created_at": "2009-07-28T13:07:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6645",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6645#issuecomment-54491",
+    "user": "mpatel"
+}
+```
 
 Apply to scripts repository.
 
 
+
 ---
+
+archive/issue_comments_054492.json:
+```json
+{
+    "body": "Attachment\n\nOn the failed tests:  The attached patch may help.  [os.path.realpath()](http://docs.python.org/library/os.path.html#os.path.realpath) expands all symbolic links.\n\nShould `sage-bdist` set `SAGE_ROOT=\".....\"` in `SAGE_ROOT/sage`?  **Lots** of tests fail, if `SAGE_ROOT` points to the original source distribution, at least for me.\n\nOn rebuilding the docs:  Is it enough to remove just the `rm -rf` lines?",
+    "created_at": "2009-07-28T14:07:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6645",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6645#issuecomment-54492",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
 On the failed tests:  The attached patch may help.  [os.path.realpath()](http://docs.python.org/library/os.path.html#os.path.realpath) expands all symbolic links.
 
-Should `sage-bdist` set `SAGE_ROOT="....."` in `SAGE_ROOT/sage`?  *Lots* of tests fail, if `SAGE_ROOT` points to the original source distribution, at least for me.
+Should `sage-bdist` set `SAGE_ROOT="....."` in `SAGE_ROOT/sage`?  **Lots** of tests fail, if `SAGE_ROOT` points to the original source distribution, at least for me.
 
 On rebuilding the docs:  Is it enough to remove just the `rm -rf` lines?
 
 
+
 ---
 
-Comment by mvngu created at 2009-08-05 15:18:40
+archive/issue_comments_054493.json:
+```json
+{
+    "body": "The idea is that a binary version shouldn't rebuild the documentation when you issue the command\n\n```\nmake test\n```\n\nin the Sage root directory. But with the patch, this still happens. I may be wrong, but here are the steps I followed:\n1. Take a binary version of Sage 4.1.1.rc1.\n2. Apply the patch `trac_6645-scripts_doctest.patch` and commit all changes.\n3. Create another binary version from that binary version.\n4. Extract the new binary version.\n5. Navigate to `SAGE_ROOT` of the new binary version. Do `./sage`, exit Sage, and then do `./sage -br main` and exit Sage again.\n6. Run the command `make test`\nAnd the documentation is rebuilt regardless of whether or not I first build the HTML version of the documentation.",
+    "created_at": "2009-08-05T15:18:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6645",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6645#issuecomment-54493",
+    "user": "mvngu"
+}
+```
 
 The idea is that a binary version shouldn't rebuild the documentation when you issue the command
 
@@ -83,18 +143,29 @@ make test
 ```
 
 in the Sage root directory. But with the patch, this still happens. I may be wrong, but here are the steps I followed:
- 1. Take a binary version of Sage 4.1.1.rc1.
- 1. Apply the patch `trac_6645-scripts_doctest.patch` and commit all changes.
- 1. Create another binary version from that binary version.
- 1. Extract the new binary version.
- 1. Navigate to `SAGE_ROOT` of the new binary version. Do `./sage`, exit Sage, and then do `./sage -br main` and exit Sage again.
- 1. Run the command `make test`
+1. Take a binary version of Sage 4.1.1.rc1.
+2. Apply the patch `trac_6645-scripts_doctest.patch` and commit all changes.
+3. Create another binary version from that binary version.
+4. Extract the new binary version.
+5. Navigate to `SAGE_ROOT` of the new binary version. Do `./sage`, exit Sage, and then do `./sage -br main` and exit Sage again.
+6. Run the command `make test`
 And the documentation is rebuilt regardless of whether or not I first build the HTML version of the documentation.
+
 
 
 ---
 
-Comment by mpatel created at 2009-08-05 15:36:03
+archive/issue_comments_054494.json:
+```json
+{
+    "body": "I'm not even sure that the patch still works for the failed tests.\n\nIt should not work for the doc-rebuild problem.  As far as I can tell, `SAGE_ROOT/spkg/install` is not under version control, but this is what I have in mind:\n\n```\n--- install.orig        2009-08-05 08:28:30.099076846 -0700\n+++ install     2009-08-05 07:35:39.097918589 -0700\n@@ -373,8 +373,8 @@ if [ $? -ne 0 ]; then\n fi\n \n #Build the documentation\n-rm -rf \"$SAGE_ROOT\"/devel/sage-main/doc/output/doctrees\n-rm -rf \"$SAGE_ROOT\"/devel/sage-main/doc/en/reference/sage/*\n+#rm -rf \"$SAGE_ROOT\"/devel/sage-main/doc/output/doctrees\n+#rm -rf \"$SAGE_ROOT\"/devel/sage-main/doc/en/reference/sage/*\n \"$SAGE_ROOT\"/sage -docbuild --jsmath all html\n \n if [ \"$1\" = \"all\" -a $? = 0 ]; then\n```\n",
+    "created_at": "2009-08-05T15:36:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6645",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6645#issuecomment-54494",
+    "user": "mpatel"
+}
+```
 
 I'm not even sure that the patch still works for the failed tests.
 
@@ -118,27 +189,62 @@ It should not work for the doc-rebuild problem.  As far as I can tell, `SAGE_ROO
 
 
 
+
 ---
 
-Comment by mpatel created at 2009-08-07 22:57:15
+archive/issue_comments_054495.json:
+```json
+{
+    "body": "Non-Mercurial patch for SAGE_ROOT/spkg/install",
+    "created_at": "2009-08-07T22:57:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6645",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6645#issuecomment-54495",
+    "user": "mpatel"
+}
+```
 
 Non-Mercurial patch for SAGE_ROOT/spkg/install
 
 
+
 ---
+
+archive/issue_comments_054496.json:
+```json
+{
+    "body": "Attachment\n\nTo apply the new **non-Mercurial** patch, save it to `SAGE_ROOT/spkg`.  In that directory, run `patch < trac_6645-spkg_install.patch`.\n\nBoth patches together appear to solve the problems described in this ticket's description, at least for me.  But let me know, if they're not enough.\n\nWhy were the `rm -rf` lines first added to `spkg/install`?",
+    "created_at": "2009-08-07T23:09:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6645",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6645#issuecomment-54496",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
-To apply the new *non-Mercurial* patch, save it to `SAGE_ROOT/spkg`.  In that directory, run `patch < trac_6645-spkg_install.patch`.
+To apply the new **non-Mercurial** patch, save it to `SAGE_ROOT/spkg`.  In that directory, run `patch < trac_6645-spkg_install.patch`.
 
 Both patches together appear to solve the problems described in this ticket's description, at least for me.  But let me know, if they're not enough.
 
 Why were the `rm -rf` lines first added to `spkg/install`?
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-08-07 23:32:59
+archive/issue_comments_054497.json:
+```json
+{
+    "body": "Replying to [comment:5 mpatel]:\n\n> Why were the `rm -rf` lines first added to `spkg/install`?\n\nI think Mike Hansen had a reason for it, but I don't remember what it was.  I'll cc him on the ticket, on the off-chance he can look at it.",
+    "created_at": "2009-08-07T23:32:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6645",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6645#issuecomment-54497",
+    "user": "jhpalmieri"
+}
+```
 
 Replying to [comment:5 mpatel]:
 
@@ -147,31 +253,42 @@ Replying to [comment:5 mpatel]:
 I think Mike Hansen had a reason for it, but I don't remember what it was.  I'll cc him on the ticket, on the off-chance he can look at it.
 
 
+
 ---
 
-Comment by mvngu created at 2009-08-08 13:32:47
+archive/issue_comments_054498.json:
+```json
+{
+    "body": "Here are the steps I went through to test the proposed solution:\n1. Take the source tarball of Sage 4.1.1.rc2 and compile that version.\n2. Once the compilation has finished, build the HTML version of the documentation with\n {{{\n./sage -docbuild all html\n }}}\n1. Apply the patch `trac_6645-scripts_doctest.patch` to the script repository in `SAGE_ROOT/local/bin`.\n2. Manually patch the file `SAGE_ROOT/spkg/install` with the patch `trac_6645-spkg_install.patch`.\n3. Make an experimental source distribution and call it, say, sage-4.1.1-exp using the command\n {{{\n./sage -sdist 4.1.1-exp\n }}}\n The new experimental source distribution can be found in `SAGE_ROOT/dist`.\n1. Uncompress the tarball of that source distribution and compile it.\n2. Once the compilation has finished, build the HTML version of the documentation using `./sage -docbuild all html`.\n3. Make a binary distribution of the newly compiled experimental source distribution, with the command\n {{{\n./sage -bdist 4.1.1-exp\n }}}\n The binary version can be found in `SAGE_ROOT/dist`.\n1. Uncompress the binary tarball and run the binary version. Then exit Sage and run Sage again with\n {{{\n./sage -br main\n }}}\n Quit Sage again, and now do\n {{{\nmake test\n }}}\n Notice that the documentation wouldn't rebuild when running the test suite with the latter command.\n1. Here comes a show-stopper: Wait for the test suite to finish or just preempt it with control-C. Manually rebuild the documentation with `./sage -docbuild all html`. Once the HTML version of the documentation has finished building, now run the test suite again with `make test`. This time, running the test suite would also rebuild the documentation.\n2. Wait for the documentation to finish rebuilding so that the test suite would proceed. When the test suite starts running, you can let it finish or again you can preempt it with control-C. If you run the test suite a third time with `make test`, the documentation won't rebuild this time; the rebuild of the documentation would be skipped over and the test suite would proceed. \n3. But if you manually rebuild the documentation again with `./sage -docbuild all html`, then the HTML version of the documentation would be rebuilt as requested. This is interesting because we have already manually rebuilt the HTML version of the documentation.\n\n\nThe upshot is that manually rebuilding the HTML version of the documentation would also cause the documentation to be rebuilt when running the test suite with `make test`. But if you run the test suite with the latter command, then requesting a manual build of the documentation would be done as requested, regardless of whether or not the documentation has been built.",
+    "created_at": "2009-08-08T13:32:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6645",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6645#issuecomment-54498",
+    "user": "mvngu"
+}
+```
 
 Here are the steps I went through to test the proposed solution:
- 1. Take the source tarball of Sage 4.1.1.rc2 and compile that version.
- 1. Once the compilation has finished, build the HTML version of the documentation with
+1. Take the source tarball of Sage 4.1.1.rc2 and compile that version.
+2. Once the compilation has finished, build the HTML version of the documentation with
  {{{
 ./sage -docbuild all html
  }}}
- 1. Apply the patch `trac_6645-scripts_doctest.patch` to the script repository in `SAGE_ROOT/local/bin`.
- 1. Manually patch the file `SAGE_ROOT/spkg/install` with the patch `trac_6645-spkg_install.patch`.
- 1. Make an experimental source distribution and call it, say, sage-4.1.1-exp using the command
+1. Apply the patch `trac_6645-scripts_doctest.patch` to the script repository in `SAGE_ROOT/local/bin`.
+2. Manually patch the file `SAGE_ROOT/spkg/install` with the patch `trac_6645-spkg_install.patch`.
+3. Make an experimental source distribution and call it, say, sage-4.1.1-exp using the command
  {{{
 ./sage -sdist 4.1.1-exp
  }}}
  The new experimental source distribution can be found in `SAGE_ROOT/dist`.
- 1. Uncompress the tarball of that source distribution and compile it.
- 1. Once the compilation has finished, build the HTML version of the documentation using `./sage -docbuild all html`.
- 1. Make a binary distribution of the newly compiled experimental source distribution, with the command
+1. Uncompress the tarball of that source distribution and compile it.
+2. Once the compilation has finished, build the HTML version of the documentation using `./sage -docbuild all html`.
+3. Make a binary distribution of the newly compiled experimental source distribution, with the command
  {{{
 ./sage -bdist 4.1.1-exp
  }}}
  The binary version can be found in `SAGE_ROOT/dist`.
- 1. Uncompress the binary tarball and run the binary version. Then exit Sage and run Sage again with
+1. Uncompress the binary tarball and run the binary version. Then exit Sage and run Sage again with
  {{{
 ./sage -br main
  }}}
@@ -180,59 +297,103 @@ Here are the steps I went through to test the proposed solution:
 make test
  }}}
  Notice that the documentation wouldn't rebuild when running the test suite with the latter command.
- 1. Here comes a show-stopper: Wait for the test suite to finish or just preempt it with control-C. Manually rebuild the documentation with `./sage -docbuild all html`. Once the HTML version of the documentation has finished building, now run the test suite again with `make test`. This time, running the test suite would also rebuild the documentation.
- 1. Wait for the documentation to finish rebuilding so that the test suite would proceed. When the test suite starts running, you can let it finish or again you can preempt it with control-C. If you run the test suite a third time with `make test`, the documentation won't rebuild this time; the rebuild of the documentation would be skipped over and the test suite would proceed. 
- 1. But if you manually rebuild the documentation again with `./sage -docbuild all html`, then the HTML version of the documentation would be rebuilt as requested. This is interesting because we have already manually rebuilt the HTML version of the documentation.
+1. Here comes a show-stopper: Wait for the test suite to finish or just preempt it with control-C. Manually rebuild the documentation with `./sage -docbuild all html`. Once the HTML version of the documentation has finished building, now run the test suite again with `make test`. This time, running the test suite would also rebuild the documentation.
+2. Wait for the documentation to finish rebuilding so that the test suite would proceed. When the test suite starts running, you can let it finish or again you can preempt it with control-C. If you run the test suite a third time with `make test`, the documentation won't rebuild this time; the rebuild of the documentation would be skipped over and the test suite would proceed. 
+3. But if you manually rebuild the documentation again with `./sage -docbuild all html`, then the HTML version of the documentation would be rebuilt as requested. This is interesting because we have already manually rebuilt the HTML version of the documentation.
 
 
 The upshot is that manually rebuilding the HTML version of the documentation would also cause the documentation to be rebuilt when running the test suite with `make test`. But if you run the test suite with the latter command, then requesting a manual build of the documentation would be done as requested, regardless of whether or not the documentation has been built.
 
 
+
 ---
 
-Comment by mpatel created at 2009-08-08 21:27:16
+archive/issue_comments_054499.json:
+```json
+{
+    "body": "Could [some of] this have happened because `spkg/install` builds the documentation with `--jsmath`?  I don't know if Sphinx 0.5.2 reliably determines whether to rebuild, based on command-line options, template differences, source changes, etc.",
+    "created_at": "2009-08-08T21:27:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6645",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6645#issuecomment-54499",
+    "user": "mpatel"
+}
+```
 
 Could [some of] this have happened because `spkg/install` builds the documentation with `--jsmath`?  I don't know if Sphinx 0.5.2 reliably determines whether to rebuild, based on command-line options, template differences, source changes, etc.
 
 
+
 ---
 
-Comment by mpatel created at 2009-08-08 21:43:38
+archive/issue_comments_054500.json:
+```json
+{
+    "body": "Or Sphinx 0.5.1.  What if the *all* build commands, explicit or implicit, include (or exclude) `--jsmath`?\n\nDo the binary distributions generally include documentation built with `pngmath`, only because the `jsmath` builds do not properly render some pages?  If so, #6673 may help (in the future).",
+    "created_at": "2009-08-08T21:43:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6645",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6645#issuecomment-54500",
+    "user": "mpatel"
+}
+```
 
-Or Sphinx 0.5.1.  What if the _all_ build commands, explicit or implicit, include (or exclude) `--jsmath`?
+Or Sphinx 0.5.1.  What if the *all* build commands, explicit or implicit, include (or exclude) `--jsmath`?
 
 Do the binary distributions generally include documentation built with `pngmath`, only because the `jsmath` builds do not properly render some pages?  If so, #6673 may help (in the future).
 
 
+
 ---
 
-Comment by mpatel created at 2009-08-08 23:07:58
+archive/issue_comments_054501.json:
+```json
+{
+    "body": "I did some testing with [this binary](http://sage.math.washington.edu/home/mvngu/release/sage-4.1.1.rc2-sage.math.washington.edu-x86_64-Linux.tar.gz). I\n\n* Applied the patches above.\n* Applied #6187's \"testreference\" patch.\n* Edited `spkg/install` to build just the HTML version of the `testreference` target, *without* `--jsmath`.\n* `make`, `make test`, `./sage -docbuild testreference html`, in various permutations.\n* `./sage -bdist 101`\n* `cd dist/; mkdir foo; cd foo; tar zxvf ../sage-101.tar.gz; cd sage-101` (or equivalent)\n* `make`, `make test`, `./sage -docbuild testreference html`, in various permutations.\n\nIn this scenario, the docbuild operator, whether it's invoked explicitly or implicitly, appears to be idempotent.  I noticed the same behavior with consistent use of `--jsmath`.",
+    "created_at": "2009-08-08T23:07:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6645",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6645#issuecomment-54501",
+    "user": "mpatel"
+}
+```
 
 I did some testing with [this binary](http://sage.math.washington.edu/home/mvngu/release/sage-4.1.1.rc2-sage.math.washington.edu-x86_64-Linux.tar.gz). I
 
- * Applied the patches above.
- * Applied #6187's "testreference" patch.
- * Edited `spkg/install` to build just the HTML version of the `testreference` target, _without_ `--jsmath`.
- * `make`, `make test`, `./sage -docbuild testreference html`, in various permutations.
- * `./sage -bdist 101`
- * `cd dist/; mkdir foo; cd foo; tar zxvf ../sage-101.tar.gz; cd sage-101` (or equivalent)
- * `make`, `make test`, `./sage -docbuild testreference html`, in various permutations.
+* Applied the patches above.
+* Applied #6187's "testreference" patch.
+* Edited `spkg/install` to build just the HTML version of the `testreference` target, *without* `--jsmath`.
+* `make`, `make test`, `./sage -docbuild testreference html`, in various permutations.
+* `./sage -bdist 101`
+* `cd dist/; mkdir foo; cd foo; tar zxvf ../sage-101.tar.gz; cd sage-101` (or equivalent)
+* `make`, `make test`, `./sage -docbuild testreference html`, in various permutations.
 
 In this scenario, the docbuild operator, whether it's invoked explicitly or implicitly, appears to be idempotent.  I noticed the same behavior with consistent use of `--jsmath`.
 
 
+
 ---
 
-Comment by mvngu created at 2009-08-09 16:57:04
+archive/issue_comments_054502.json:
+```json
+{
+    "body": "Here's another test which offers some hope: \n\n1. I took the source tarball of [sage-4.1.1.rc2](http://sage.math.washington.edu/home/mvngu/release/sage-4.1.1.rc2.tar), compiled it and built the documentation both in HTML and PDF formats with:\n {{{\n./sage -docbuild all html\n./sage -docbuild all pdf\n }}}\n1. Applied the patch `trac_6645-scripts_doctest.patch` to the scripts repository in `SAGE_ROOT/local/bin`. Manually edited the file `SAGE_ROOT/spkg/install` so it now reads\n {{{\n#Build the documentation\n#rm -rf \"$SAGE_ROOT\"/devel/sage-main/doc/output/doctrees\n#rm -rf \"$SAGE_ROOT\"/devel/sage-main/doc/en/reference/sage/*\n#\"$SAGE_ROOT\"/sage -docbuild --jsmath all html\n\"$SAGE_ROOT\"/sage -docbuild all html\n }}}\n1. Made an experimental source distribution of the patched `sage-4.1.1.rc2`, calling it say `sage-4.1.1.rc2-6645`.\n2. Unpacked the experimental source distribution `sage-4.1.1.rc2-6645` and compiled it.\n3. Made a binary version from the compiled source.\n4. Unpacked the binary tarball. Issued `make`, `make test`, and `./sage -docbuild all html` in various permutations. In this case, the documentation didn't rebuild.\n5. Ran the command `./sage -docbuild --jsmath all html` and the documentation was rebuilt. It also rebuilt with the command `./sage -docbuild all html`. But then `make test` skipped over rebuilding the documentation.\n6. Ran the command `./sage -docbuild --jsmath all html` again and the documentation was rebuilt another time. Executed the command `make test` and the documentation was rebuilt again. But `./sage -docbuild all html` skipped over rebuilding the documentation.\nSo the culprit here is the option `--jsmath` to the docbuild script. I'm prepared to give the patches a positive review, provided that William is happy with them.",
+    "created_at": "2009-08-09T16:57:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6645",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6645#issuecomment-54502",
+    "user": "mvngu"
+}
+```
 
 Here's another test which offers some hope: 
 
- 1. I took the source tarball of [sage-4.1.1.rc2](http://sage.math.washington.edu/home/mvngu/release/sage-4.1.1.rc2.tar), compiled it and built the documentation both in HTML and PDF formats with:
+1. I took the source tarball of [sage-4.1.1.rc2](http://sage.math.washington.edu/home/mvngu/release/sage-4.1.1.rc2.tar), compiled it and built the documentation both in HTML and PDF formats with:
  {{{
 ./sage -docbuild all html
 ./sage -docbuild all pdf
  }}}
- 1. Applied the patch `trac_6645-scripts_doctest.patch` to the scripts repository in `SAGE_ROOT/local/bin`. Manually edited the file `SAGE_ROOT/spkg/install` so it now reads
+1. Applied the patch `trac_6645-scripts_doctest.patch` to the scripts repository in `SAGE_ROOT/local/bin`. Manually edited the file `SAGE_ROOT/spkg/install` so it now reads
  {{{
 #Build the documentation
 #rm -rf "$SAGE_ROOT"/devel/sage-main/doc/output/doctrees
@@ -240,48 +401,103 @@ Here's another test which offers some hope:
 #"$SAGE_ROOT"/sage -docbuild --jsmath all html
 "$SAGE_ROOT"/sage -docbuild all html
  }}}
- 1. Made an experimental source distribution of the patched `sage-4.1.1.rc2`, calling it say `sage-4.1.1.rc2-6645`.
- 1. Unpacked the experimental source distribution `sage-4.1.1.rc2-6645` and compiled it.
- 1. Made a binary version from the compiled source.
- 1. Unpacked the binary tarball. Issued `make`, `make test`, and `./sage -docbuild all html` in various permutations. In this case, the documentation didn't rebuild.
- 1. Ran the command `./sage -docbuild --jsmath all html` and the documentation was rebuilt. It also rebuilt with the command `./sage -docbuild all html`. But then `make test` skipped over rebuilding the documentation.
- 1. Ran the command `./sage -docbuild --jsmath all html` again and the documentation was rebuilt another time. Executed the command `make test` and the documentation was rebuilt again. But `./sage -docbuild all html` skipped over rebuilding the documentation.
+1. Made an experimental source distribution of the patched `sage-4.1.1.rc2`, calling it say `sage-4.1.1.rc2-6645`.
+2. Unpacked the experimental source distribution `sage-4.1.1.rc2-6645` and compiled it.
+3. Made a binary version from the compiled source.
+4. Unpacked the binary tarball. Issued `make`, `make test`, and `./sage -docbuild all html` in various permutations. In this case, the documentation didn't rebuild.
+5. Ran the command `./sage -docbuild --jsmath all html` and the documentation was rebuilt. It also rebuilt with the command `./sage -docbuild all html`. But then `make test` skipped over rebuilding the documentation.
+6. Ran the command `./sage -docbuild --jsmath all html` again and the documentation was rebuilt another time. Executed the command `make test` and the documentation was rebuilt again. But `./sage -docbuild all html` skipped over rebuilding the documentation.
 So the culprit here is the option `--jsmath` to the docbuild script. I'm prepared to give the patches a positive review, provided that William is happy with them.
+
 
 
 ---
 
-Comment by mpatel created at 2009-08-10 01:04:17
+archive/issue_comments_054503.json:
+```json
+{
+    "body": "Replying to [comment:10 mpatel]:\n> In this scenario, the docbuild operator, whether it's invoked explicitly or implicitly, appears to be idempotent.  I noticed the same behavior with consistent use of `--jsmath`.\nAt least, it's not nilpotent, though that would be quite interesting.",
+    "created_at": "2009-08-10T01:04:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6645",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6645#issuecomment-54503",
+    "user": "mpatel"
+}
+```
 
 Replying to [comment:10 mpatel]:
 > In this scenario, the docbuild operator, whether it's invoked explicitly or implicitly, appears to be idempotent.  I noticed the same behavior with consistent use of `--jsmath`.
 At least, it's not nilpotent, though that would be quite interesting.
 
 
+
 ---
 
-Comment by mvngu created at 2009-08-13 18:58:39
+archive/issue_comments_054504.json:
+```json
+{
+    "body": "I'm pretty happy with the changes proposed in the ticket. But another/different opinion would be be very helpful as it affects the\nbuilding of the documentation when running \"make test\" with a binary version of Sage.",
+    "created_at": "2009-08-13T18:58:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6645",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6645#issuecomment-54504",
+    "user": "mvngu"
+}
+```
 
 I'm pretty happy with the changes proposed in the ticket. But another/different opinion would be be very helpful as it affects the
 building of the documentation when running "make test" with a binary version of Sage.
 
 
+
 ---
 
-Comment by mvngu created at 2009-08-14 11:13:38
+archive/issue_comments_054505.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-08-14T11:13:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6645",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6645#issuecomment-54505",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mvngu created at 2009-08-14 11:13:38
+archive/issue_comments_054506.json:
+```json
+{
+    "body": "The proposed changes are fine by me.",
+    "created_at": "2009-08-14T11:13:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6645",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6645#issuecomment-54506",
+    "user": "mvngu"
+}
+```
 
 The proposed changes are fine by me.
 
 
+
 ---
 
-Comment by mpatel created at 2009-08-15 00:33:51
+archive/issue_comments_054507.json:
+```json
+{
+    "body": "For the record: The \"scripts_doctest\" patch was merged, along with a modified \"spkg_install\" patch.  In effect, the change drops `--jsmath` from the docbuild command.",
+    "created_at": "2009-08-15T00:33:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6645",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6645#issuecomment-54507",
+    "user": "mpatel"
+}
+```
 
 For the record: The "scripts_doctest" patch was merged, along with a modified "spkg_install" patch.  In effect, the change drops `--jsmath` from the docbuild command.

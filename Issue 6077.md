@@ -1,11 +1,21 @@
 # Issue 6077: simplicial complex method for polytopes
 
-Issue created by migration from https://trac.sagemath.org/ticket/6077
-
-Original creator: mhampton
-
-Original creation time: 2009-05-18 22:06:08
-
+archive/issues_006077.json:
+```json
+{
+    "body": "Assignee: mhampton\n\nCC:  jhpalmieri\n\nKeywords: polytopes, simplicial\n\nThis just adds a simplicial complex method for the polytope class, which requires lrs to compute a triangulation.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6077\n\n",
+    "created_at": "2009-05-18T22:06:08Z",
+    "labels": [
+        "geometry",
+        "minor",
+        "enhancement"
+    ],
+    "title": "simplicial complex method for polytopes",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6077",
+    "user": "mhampton"
+}
+```
 Assignee: mhampton
 
 CC:  jhpalmieri
@@ -14,42 +24,107 @@ Keywords: polytopes, simplicial
 
 This just adds a simplicial complex method for the polytope class, which requires lrs to compute a triangulation.
 
+Issue created by migration from https://trac.sagemath.org/ticket/6077
+
+
+
+
 
 ---
+
+archive/issue_comments_048367.json:
+```json
+{
+    "body": "Attachment\n\nadds a simplicial_complex method to polytopes",
+    "created_at": "2009-05-18T22:07:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6077",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6077#issuecomment-48367",
+    "user": "mhampton"
+}
+```
 
 Attachment
 
 adds a simplicial_complex method to polytopes
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-05-19 03:21:53
+archive/issue_comments_048368.json:
+```json
+{
+    "body": "Mostly good, but needs a few fixes.  I'm attaching a referee's patch which does the following:\n\n- removes the 'verbose' argument, since it's not used\n\n- inserts a warning about this possibly failing if the dimension is larger than 3\n\n- inserts '# optional' flags on the doctests so that they don't fail on machines without lrs installed\n\nmhampton's patch gets a positive review from me; only my patch needs to be reviewed.  With my patch, all tests pass on sage.math (without lrs installed).  With lrs installed, sage -t -optional passes on this file.  (But someone else should probably double-check this.)",
+    "created_at": "2009-05-19T03:21:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6077",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6077#issuecomment-48368",
+    "user": "jhpalmieri"
+}
+```
 
 Mostly good, but needs a few fixes.  I'm attaching a referee's patch which does the following:
 
- - removes the 'verbose' argument, since it's not used
+- removes the 'verbose' argument, since it's not used
 
- - inserts a warning about this possibly failing if the dimension is larger than 3
+- inserts a warning about this possibly failing if the dimension is larger than 3
 
- - inserts '# optional' flags on the doctests so that they don't fail on machines without lrs installed
+- inserts '# optional' flags on the doctests so that they don't fail on machines without lrs installed
 
 mhampton's patch gets a positive review from me; only my patch needs to be reviewed.  With my patch, all tests pass on sage.math (without lrs installed).  With lrs installed, sage -t -optional passes on this file.  (But someone else should probably double-check this.)
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-05-19 03:22:24
+archive/issue_comments_048369.json:
+```json
+{
+    "body": "apply on top of other patch",
+    "created_at": "2009-05-19T03:22:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6077",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6077#issuecomment-48369",
+    "user": "jhpalmieri"
+}
+```
 
 apply on top of other patch
 
 
+
 ---
+
+archive/issue_comments_048370.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-05-19T18:50:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6077",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6077#issuecomment-48370",
+    "user": "mhampton"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_048371.json:
+```json
+{
+    "body": "Attachment\n\nThanks for looking at this.  Let me apologize for being somewhat confused about it - I have code in development for doing triangulations with lrs, but currently Sage doesn't use this.  So the warning about possibly not working in high dimensions is good, but I can also delete the check for lrs until I merge that code in.\n\nAnyway, I have added a new patch \"6077_v2.patch\" which does not depend on the others and should account for the above comments and corrections.",
+    "created_at": "2009-05-19T19:04:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6077",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6077#issuecomment-48371",
+    "user": "mhampton"
+}
+```
 
 Attachment
 
@@ -58,23 +133,56 @@ Thanks for looking at this.  Let me apologize for being somewhat confused about 
 Anyway, I have added a new patch "6077_v2.patch" which does not depend on the others and should account for the above comments and corrections.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-05-19 21:46:07
+archive/issue_comments_048372.json:
+```json
+{
+    "body": "Looks good to me. Passes all tests (without lrs installed, which shouldn't be relevant anymore).",
+    "created_at": "2009-05-19T21:46:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6077",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6077#issuecomment-48372",
+    "user": "jhpalmieri"
+}
+```
 
 Looks good to me. Passes all tests (without lrs installed, which shouldn't be relevant anymore).
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-21 01:41:00
+archive/issue_comments_048373.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-05-21T01:41:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6077",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6077#issuecomment-48373",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-21 01:41:00
+archive/issue_comments_048374.json:
+```json
+{
+    "body": "Merged 6077_v2.patch only in Sage 4.0.rc0. In case that was not intended please let me know.\n\nCheers,\n\nMichael",
+    "created_at": "2009-05-21T01:41:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6077",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6077#issuecomment-48374",
+    "user": "mabshoff"
+}
+```
 
 Merged 6077_v2.patch only in Sage 4.0.rc0. In case that was not intended please let me know.
 

@@ -1,11 +1,21 @@
 # Issue 8319: elliptic curve canonical height bug for non-minimal models
 
-Issue created by migration from https://trac.sagemath.org/ticket/8319
-
-Original creator: cremona
-
-Original creation time: 2010-02-21 17:27:58
-
+archive/issues_008319.json:
+```json
+{
+    "body": "Assignee: cremona\n\nKeywords: canonical height\n\nFor canonical heights of points on elliptic curves defined over QQ, we call the pari function ellheight(), BUT that function only gives the correct value for global minimal models!  (At primes where the model is not minimal the local component is wrong).\n\nHere is an example to show this:\n\n```\nsage: E = EllipticCurve([-5580472329446114952805505804593498080000,\n....:           -157339733785368110382973689903536054787700497223306368000000])\nsage: P3=E([204885147732879546487576840131729064308289385547094673627174585676211859152978311600/23625501907057948132262217188983681204856907657753178415430361,92736254270288706000052529616433462503893110244786566575440613880920567197984949809570153263207165494624214991751142500000000/114834283590033957142081201488956527887145361353994063932282392800295014255070987824900081891])\nsage: P3.height()\n157.086024926474\nsage: 4*(P3.height())-(2*P3).height() # should == 0\n-1.38629436111989\n```\n\nwhile on the minimal model:\n\n```\nsage: Emin = E.minimal_model()\nsage: urst = E.isomorphism_to(Emin)\nsage: 4*urst(P3).height()-urst(2*P3).height()\n0.000000000000000\n```\n\n\nThe cure is to compute the minimal model and transfer the point there before computing the height, as illustrated above.  (Of course, pari could do that too, but this behaviour has been tolerated by pari users for many years!)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8319\n\n",
+    "created_at": "2010-02-21T17:27:58Z",
+    "labels": [
+        "elliptic curves",
+        "major",
+        "bug"
+    ],
+    "title": "elliptic curve canonical height bug for non-minimal models",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8319",
+    "user": "cremona"
+}
+```
 Assignee: cremona
 
 Keywords: canonical height
@@ -36,44 +46,116 @@ sage: 4*urst(P3).height()-urst(2*P3).height()
 
 The cure is to compute the minimal model and transfer the point there before computing the height, as illustrated above.  (Of course, pari could do that too, but this behaviour has been tolerated by pari users for many years!)
 
+Issue created by migration from https://trac.sagemath.org/ticket/8319
+
+
+
+
 
 ---
 
-Comment by cremona created at 2010-02-24 21:00:14
+archive/issue_comments_073790.json:
+```json
+{
+    "body": "Applies to 4.3.3",
+    "created_at": "2010-02-24T21:00:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8319",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8319#issuecomment-73790",
+    "user": "cremona"
+}
+```
 
 Applies to 4.3.3
 
 
+
 ---
+
+archive/issue_comments_073791.json:
+```json
+{
+    "body": "Attachment\n\nThe patch implements the cure.  I did not bother putting in a test for minimality of the original model, since all that does is to compute the minimal model anyway and compare!  Also, the minimal model is cached, so that would only be done once.  We do not cache the isomorphism to the minimal model, but that is cheap to compute.",
+    "created_at": "2010-02-24T21:02:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8319",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8319#issuecomment-73791",
+    "user": "cremona"
+}
+```
 
 Attachment
 
 The patch implements the cure.  I did not bother putting in a test for minimality of the original model, since all that does is to compute the minimal model anyway and compare!  Also, the minimal model is cached, so that would only be done once.  We do not cache the isomorphism to the minimal model, but that is cheap to compute.
 
 
+
 ---
 
-Comment by cremona created at 2010-02-24 21:02:54
+archive/issue_comments_073792.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-02-24T21:02:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8319",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8319#issuecomment-73792",
+    "user": "cremona"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by wuthrich created at 2010-02-25 04:05:10
+archive/issue_comments_073793.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-02-25T04:05:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8319",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8319#issuecomment-73793",
+    "user": "wuthrich"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by wuthrich created at 2010-02-25 04:05:10
+archive/issue_comments_073794.json:
+```json
+{
+    "body": "Looks fine to me. All tests pass.",
+    "created_at": "2010-02-25T04:05:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8319",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8319#issuecomment-73794",
+    "user": "wuthrich"
+}
+```
 
 Looks fine to me. All tests pass.
 
 
+
 ---
 
-Comment by mvngu created at 2010-03-03 14:03:21
+archive/issue_comments_073795.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-03-03T14:03:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8319",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8319#issuecomment-73795",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

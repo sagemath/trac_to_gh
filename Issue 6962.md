@@ -1,11 +1,21 @@
 # Issue 6962: [with patch, needs review] Feedback vertex set, Feedback arc set
 
-Issue created by migration from https://trac.sagemath.org/ticket/6962
-
-Original creator: ncohen
-
-Original creation time: 2009-09-19 18:45:45
-
+archive/issues_006962.json:
+```json
+{
+    "body": "Assignee: rlm\n\nAdds the functions :\n* DiGraph.feedback_arc_set\n* DiGraph.feedback_vertex_set\n\nYou will find a full description of the problem in the docstrings, or there :\n* http://en.wikipedia.org/wiki/Feedback_vertex_set\n* http://en.wikipedia.org/wiki/Feedback_arc_set\n\nThe functions use Linear Programming, which needs one of the two optional packages GLPK \n\n``` \nsage: install_package('cbc')\n```\n\nor CBC \n\n```\nsage: install_package('glpk') \n```\n\ninstalled. You will find a helpful documentation about the construction of the Linear Program in the docstring.\n\nOne of the docstrings uses the function min_vertex_cover from #6680.\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/6962\n\n",
+    "created_at": "2009-09-19T18:45:45Z",
+    "labels": [
+        "graph theory",
+        "major",
+        "enhancement"
+    ],
+    "title": "[with patch, needs review] Feedback vertex set, Feedback arc set",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6962",
+    "user": "ncohen"
+}
+```
 Assignee: rlm
 
 Adds the functions :
@@ -34,17 +44,43 @@ One of the docstrings uses the function min_vertex_cover from #6680.
 
 Nathann
 
+Issue created by migration from https://trac.sagemath.org/ticket/6962
+
+
+
+
 
 ---
 
-Comment by jason created at 2009-09-20 06:05:01
+archive/issue_comments_057598.json:
+```json
+{
+    "body": "We've used the terminology \"edge\" with a DiGraph, with the understanding that direction matters when you have a DiGraph.  Is it a possibility to change \"feedback_arc_set\" to \"feedback_edge_set\"?",
+    "created_at": "2009-09-20T06:05:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6962",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6962#issuecomment-57598",
+    "user": "jason"
+}
+```
 
 We've used the terminology "edge" with a DiGraph, with the understanding that direction matters when you have a DiGraph.  Is it a possibility to change "feedback_arc_set" to "feedback_edge_set"?
 
 
+
 ---
 
-Comment by ncohen created at 2009-09-20 07:32:06
+archive/issue_comments_057599.json:
+```json
+{
+    "body": "I mix them up myself sometimes, this distinction can almost always be deduced from the context, even outside of Sage... And anyway the word \"feedback\" is enough for anybody interested in the function to read its documentation, so I think it is OK. We can write \"feedback arc set\" in the documentation in case someones looks for this special string, besides !\n\nThe thing is that I will be going for one week in something like 10 minutes and will not have any access to any computer during this time. Could a reviewer fix this while reviewing the whole patch ? If this patch is not reviewed when I get back, I will do it myself, though... And I will remember that you already settled this question :-)\n\nNathann",
+    "created_at": "2009-09-20T07:32:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6962",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6962#issuecomment-57599",
+    "user": "ncohen"
+}
+```
 
 I mix them up myself sometimes, this distinction can almost always be deduced from the context, even outside of Sage... And anyway the word "feedback" is enough for anybody interested in the function to read its documentation, so I think it is OK. We can write "feedback arc set" in the documentation in case someones looks for this special string, besides !
 
@@ -53,25 +89,58 @@ The thing is that I will be going for one week in something like 10 minutes and 
 Nathann
 
 
+
 ---
 
-Comment by ncohen created at 2009-09-29 11:55:52
+archive/issue_comments_057600.json:
+```json
+{
+    "body": "Done ! :-)\n\n( the patch now is written according to the changes brought to class MIP in #7012 )",
+    "created_at": "2009-09-29T11:55:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6962",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6962#issuecomment-57600",
+    "user": "ncohen"
+}
+```
 
 Done ! :-)
 
 ( the patch now is written according to the changes brought to class MIP in #7012 )
 
 
+
 ---
 
-Comment by rlm created at 2009-12-15 16:49:02
+archive/issue_comments_057601.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2009-12-15T16:49:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6962",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6962#issuecomment-57601",
+    "user": "rlm"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by rlm created at 2009-12-15 16:49:02
+archive/issue_comments_057602.json:
+```json
+{
+    "body": "This patch still applies ok, but none of the doctests work:\n\n```\nsage: cycle=graphs.CycleGraph(5)\nsage: dcycle=DiGraph(cycle)\nsage: cycle.size()\n5\nsage: dcycle.feedback_edge_set(value_only=True)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/rlmill/.sage/temp/rlm_book.local/96266/_Users_rlmill__sage_init_sage_0.py in <module>()\n\n/Users/rlmill/sage-4.3.rc0/local/lib/python2.6/site-packages/sage/graphs/graph.pyc in feedback_edge_set(self, value_only)\n  12540         from sage.numerical.mip import MixedIntegerLinearProgram\n  12541         \n> 12542         p=MixedIntegerLinearProgram(sense=-1)\n  12543         \n  12544         b=p.new_variable()\n\n/Users/rlmill/sage-4.3.rc0/local/lib/python2.6/site-packages/sage/numerical/mip.so in sage.numerical.mip.MixedIntegerLinearProgram.__init__ (sage/numerical/mip.c:866)()\n\nTypeError: __init__() got an unexpected keyword argument 'sense'\nsage: cycle.min_vertex_cover()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/Users/rlmill/.sage/temp/rlm_book.local/96266/_Users_rlmill__sage_init_sage_0.py in <module>()\n\nAttributeError: 'Graph' object has no attribute 'min_vertex_cover'\nsage: dcycle.feedback_vertex_set(value_only=True)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/rlmill/.sage/temp/rlm_book.local/96266/_Users_rlmill__sage_init_sage_0.py in <module>()\n\n/Users/rlmill/sage-4.3.rc0/local/lib/python2.6/site-packages/sage/graphs/graph.pyc in feedback_vertex_set(self, value_only)\n  12632         from sage.numerical.mip import MixedIntegerLinearProgram\n  12633         \n> 12634         p=MixedIntegerLinearProgram(sense=-1)\n  12635         \n  12636         b=p.new_variable()\n\n/Users/rlmill/sage-4.3.rc0/local/lib/python2.6/site-packages/sage/numerical/mip.so in sage.numerical.mip.MixedIntegerLinearProgram.__init__ (sage/numerical/mip.c:866)()\n\nTypeError: __init__() got an unexpected keyword argument 'sense'\n```\n\n\nThere are two issues:\n\n1. `__init__() got an unexpected keyword argument 'sense'`\n\n2. `'Graph' object has no attribute 'min_vertex_cover'`",
+    "created_at": "2009-12-15T16:49:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6962",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6962#issuecomment-57602",
+    "user": "rlm"
+}
+```
 
 This patch still applies ok, but none of the doctests work:
 
@@ -129,48 +198,127 @@ There are two issues:
 2. `'Graph' object has no attribute 'min_vertex_cover'`
 
 
+
 ---
 
-Comment by ncohen created at 2009-12-16 11:36:54
+archive/issue_comments_057603.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2009-12-16T11:36:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6962",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6962#issuecomment-57603",
+    "user": "ncohen"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by ncohen created at 2009-12-16 11:37:22
+archive/issue_comments_057604.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2009-12-16T11:37:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6962",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6962#issuecomment-57604",
+    "user": "ncohen"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by ncohen created at 2009-12-17 13:06:40
+archive/issue_comments_057605.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2009-12-17T13:06:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6962",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6962#issuecomment-57605",
+    "user": "ncohen"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by ncohen created at 2009-12-17 13:06:40
+archive/issue_comments_057606.json:
+```json
+{
+    "body": "Updated !",
+    "created_at": "2009-12-17T13:06:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6962",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6962#issuecomment-57606",
+    "user": "ncohen"
+}
+```
 
 Updated !
 
 
+
 ---
+
+archive/issue_comments_057607.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-12-17T21:51:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6962",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6962#issuecomment-57607",
+    "user": "rlm"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by rlm created at 2009-12-17 21:51:33
+archive/issue_comments_057608.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-12-17T21:51:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6962",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6962#issuecomment-57608",
+    "user": "rlm"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mhansen created at 2009-12-19 20:06:08
+archive/issue_comments_057609.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-12-19T20:06:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6962",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6962#issuecomment-57609",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

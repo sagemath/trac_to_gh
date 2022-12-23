@@ -1,11 +1,21 @@
 # Issue 6551: fix ugliness in printing of multivariate polynomials
 
-Issue created by migration from https://trac.sagemath.org/ticket/6551
-
-Original creator: AlexGhitza
-
-Original creation time: 2009-07-18 00:25:01
-
+archive/issues_006551.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  malb\n\nKeywords: print latex multivariate polynomial\n\nThe printing (and latex-ing) of multivariate polynomials is sometimes quite ugly, and inconsistent with the much prettier printing of univariate polynomials.  One gets things like the following (taken from doctests in the Sage library):\n\n\n```\n(-6/5)*x^2*y^2 + (-3)*x*y^3 + 6/5*x^2*y + 11/12*x*y^2 + (-18)*y^2 + (-3/4)*y\n```\n\n\nor even\n\n\n```\nsage: xgcd((b+g)*y^2, (a+g)*y+b)\n((b^3 + (g)*b^2)/(a^2 + (2*g)*a + 3), 1, ((-b + (-g))/(a + (g)))*y + (b^2 + (g)*b)/(a^2 + (2*g)*a + 3))\n```\n\n\nThe attached patch fixes this, factors out common code for printing and latex-ing, and makes printing consistent across various representations of multivariate polynomials.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6551\n\n",
+    "created_at": "2009-07-18T00:25:01Z",
+    "labels": [
+        "algebra",
+        "major",
+        "enhancement"
+    ],
+    "title": "fix ugliness in printing of multivariate polynomials",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6551",
+    "user": "AlexGhitza"
+}
+```
 Assignee: tbd
 
 CC:  malb
@@ -32,50 +42,135 @@ sage: xgcd((b+g)*y^2, (a+g)*y+b)
 The attached patch fixes this, factors out common code for printing and latex-ing, and makes printing consistent across various representations of multivariate polynomials.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6551
+
+
+
+
 
 ---
+
+archive/issue_comments_053415.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-07-18T00:26:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6551",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6551#issuecomment-53415",
+    "user": "AlexGhitza"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-07-18 00:26:40
+archive/issue_comments_053416.json:
+```json
+{
+    "body": "Changing assignee from tbd to AlexGhitza.",
+    "created_at": "2009-07-18T00:26:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6551",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6551#issuecomment-53416",
+    "user": "AlexGhitza"
+}
+```
 
 Changing assignee from tbd to AlexGhitza.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-07-18 00:26:40
+archive/issue_comments_053417.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-07-18T00:26:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6551",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6551#issuecomment-53417",
+    "user": "AlexGhitza"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-07-20 08:43:03
+archive/issue_comments_053418.json:
+```json
+{
+    "body": "Bad news: this conflicts quite severely with my patches at #6500. I feel a bit guilty about this, because it was my referee comments on #6183 that pushed you into working on this, so I will handle preparing a rebased version.",
+    "created_at": "2009-07-20T08:43:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6551",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6551#issuecomment-53418",
+    "user": "davidloeffler"
+}
+```
 
 Bad news: this conflicts quite severely with my patches at #6500. I feel a bit guilty about this, because it was my referee comments on #6183 that pushed you into working on this, so I will handle preparing a rebased version.
 
 
+
 ---
+
+archive/issue_comments_053419.json:
+```json
+{
+    "body": "Attachment\n\napply after the three patches at #6500",
+    "created_at": "2009-07-20T09:05:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6551",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6551#issuecomment-53419",
+    "user": "davidloeffler"
+}
+```
 
 Attachment
 
 apply after the three patches at #6500
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-07-20 09:15:30
+archive/issue_comments_053420.json:
+```json
+{
+    "body": "Here's a patch that applies cleanly on top of the #6500 patches. For what it's worth, the patch looks fine to me, but I'm not an expert on multivariate commutative algebra so probably it'd be better to get someone else to review it.",
+    "created_at": "2009-07-20T09:15:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6551",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6551#issuecomment-53420",
+    "user": "davidloeffler"
+}
+```
 
 Here's a patch that applies cleanly on top of the #6500 patches. For what it's worth, the patch looks fine to me, but I'm not an expert on multivariate commutative algebra so probably it'd be better to get someone else to review it.
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-07-20 10:59:01
+archive/issue_comments_053421.json:
+```json
+{
+    "body": "Hi Alex,\n\nI decided to run all doctests just to check that I had rebased the patch correctly, but there seems to be some funny business in quaternion algebras. This is with the #6500 patches and the rebased patch here, applied to 4.1:\n\n\n```\nsage -t  \"devel/sage/sage/algebras/quaternion_algebra_element.py\"                                      \n**********************************************************************                                 \nFile \"/home/david/sage-4.1/devel/sage/sage/algebras/quaternion_algebra_element.py\", line 17:           \n    sage: sage.algebras.quaternion_algebra_element.unpickle_QuaternionAlgebraElement_generic_v0(*t)    \nExpected:                                                                                              \n    2/3 + X*i - X^2*j + X^3*k                                                                          \nGot:                                                                                                   \n    2/3 + X*i + (-X^2)*j + X^3*k                                                                       \n**********************************************************************                                 \n```\n\nand\n\n```\n**********************************************************************                                 \nFile \"/home/david/sage-4.1/devel/sage/sage/algebras/quatalg/quaternion_algebra.py\", line 455:          \n    sage: QuaternionAlgebra(GF(17)(2),3).random_element()                                              \nExpected:                                                                                              \n    11 + 16*i + 4*j + 13*k                                                                             \nGot:                                                                                                   \n    11 - i + 4*j + 13*k                                                                                \n**********************************************************************                                 \n```\n\n\nThis has nothing to do with the rebasing, because I ran these two tests again using your original patch and without the #6500 patches and they failed in exactly the same way. Any idea what is going on here?\n\nDavid",
+    "created_at": "2009-07-20T10:59:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6551",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6551#issuecomment-53421",
+    "user": "davidloeffler"
+}
+```
 
 Hi Alex,
 
@@ -113,9 +208,20 @@ This has nothing to do with the rebasing, because I ran these two tests again us
 David
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-07-20 14:04:29
+archive/issue_comments_053422.json:
+```json
+{
+    "body": "Hi David,\n\nI just checked and I'm getting the same failures as you both on my laptop and sage.math (which is weird because I could swear I tested this about a million times).\n\nI have an inkling of what might be going on but it's going to have to wait until tomorrow because I'm falling asleep in my chair.\n\nThanks for reviewing, and for the work you put in rebasing the patch.",
+    "created_at": "2009-07-20T14:04:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6551",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6551#issuecomment-53422",
+    "user": "AlexGhitza"
+}
+```
 
 Hi David,
 
@@ -126,23 +232,58 @@ I have an inkling of what might be going on but it's going to have to wait until
 Thanks for reviewing, and for the work you put in rebasing the patch.
 
 
+
 ---
+
+archive/issue_comments_053423.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-07-21T00:54:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6551",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6551#issuecomment-53423",
+    "user": "AlexGhitza"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-07-21 00:56:35
+archive/issue_comments_053424.json:
+```json
+{
+    "body": "Yes, the problem was indeed that I was mixing up some stuff with #6183.\n\nI've added a small patch that takes care of this, and all tests (should) now pass.",
+    "created_at": "2009-07-21T00:56:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6551",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6551#issuecomment-53424",
+    "user": "AlexGhitza"
+}
+```
 
 Yes, the problem was indeed that I was mixing up some stuff with #6183.
 
 I've added a small patch that takes care of this, and all tests (should) now pass.
 
 
+
 ---
 
-Comment by malb created at 2009-08-18 09:55:18
+archive/issue_comments_053425.json:
+```json
+{
+    "body": "Unfortunately, the patch has bit-rotted:\n\n\n```\napplying trac_6551-rebased_for_6500.patch\npatching file sage/matrix/matrix_mpolynomial_dense.pyx\nHunk #1 FAILED at 0\n1 out of 6 hunks FAILED -- saving rejects to file sage/matrix/matrix_mpolynomial_dense.pyx.rej\npatching file sage/rings/polynomial/polydict.pyx\nHunk #5 succeeded at 887 with fuzz 1 (offset 0 lines).\npatching file sage/rings/polynomial/toy_buchberger.py\nHunk #1 FAILED at 53\n1 out of 1 hunks FAILED -- saving rejects to file sage/rings/polynomial/toy_buchberger.py.rej\npatching file sage/schemes/elliptic_curves/ell_curve_isogeny.py\nHunk #7 FAILED at 1864\n1 out of 21 hunks FAILED -- saving rejects to file sage/schemes/elliptic_curves/ell_curve_isogeny.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nErrors during apply, please fix and refresh trac_6551-rebased_for_6500.patch\n```\n\n\nI read the patch and it looks fine so far. It is mainly a question of taste anyway IMHO. However, it might be worth checking for performance loses due to this patch (conversion to strings is used to communicate with Singular for instance)",
+    "created_at": "2009-08-18T09:55:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6551",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6551#issuecomment-53425",
+    "user": "malb"
+}
+```
 
 Unfortunately, the patch has bit-rotted:
 
@@ -169,25 +310,58 @@ Errors during apply, please fix and refresh trac_6551-rebased_for_6500.patch
 I read the patch and it looks fine so far. It is mainly a question of taste anyway IMHO. However, it might be worth checking for performance loses due to this patch (conversion to strings is used to communicate with Singular for instance)
 
 
+
 ---
 
-Comment by malb created at 2009-08-26 17:16:38
+archive/issue_comments_053426.json:
+```json
+{
+    "body": "After thinking about this some more time: I think the proposed implementation for libSingular polynomials is way too slow. I suggest someone (e.g. me) re-implements the PolyDict printing for those to make it reasonably efficient.",
+    "created_at": "2009-08-26T17:16:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6551",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6551#issuecomment-53426",
+    "user": "malb"
+}
+```
 
 After thinking about this some more time: I think the proposed implementation for libSingular polynomials is way too slow. I suggest someone (e.g. me) re-implements the PolyDict printing for those to make it reasonably efficient.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-08-26 23:19:45
+archive/issue_comments_053427.json:
+```json
+{
+    "body": "Martin,\n\nThanks for looking at this carefully, and sorry for having left things somewhat half-baked.  In my defense, I had already spent a long time getting the formatting to be consistent, and I'm not sure I'd be very good at speed issues.  But I completely agree with you that this is ubiquitous code that should be fast.  Count on me to referee your implementation when you're done with it.",
+    "created_at": "2009-08-26T23:19:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6551",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6551#issuecomment-53427",
+    "user": "AlexGhitza"
+}
+```
 
 Martin,
 
 Thanks for looking at this carefully, and sorry for having left things somewhat half-baked.  In my defense, I had already spent a long time getting the formatting to be consistent, and I'm not sure I'd be very good at speed issues.  But I completely agree with you that this is ubiquitous code that should be fast.  Count on me to referee your implementation when you're done with it.
 
 
+
 ---
 
-Comment by bruno created at 2016-04-13 14:28:52
+archive/issue_comments_053428.json:
+```json
+{
+    "body": "This ticket seems invalid. For the first example:\n\n\n```python\nsage: R.<x,y> = QQ[]\nsage: p = (-6/5)*x^2*y^2 + (-3)*x*y^3 + 6/5*x^2*y + 11/12*x*y^2 + (-18)*y^2 + (-3/4)*y\nsage: p\n-6/5*x^2*y^2 - 3*x*y^3 + 6/5*x^2*y + 11/12*x*y^2 - 18*y^2 - 3/4*y\n```\n\n\nI cannot make the second example work (and this does not appear in the doctests).",
+    "created_at": "2016-04-13T14:28:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6551",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6551#issuecomment-53428",
+    "user": "bruno"
+}
+```
 
 This ticket seems invalid. For the first example:
 
@@ -203,15 +377,37 @@ sage: p
 I cannot make the second example work (and this does not appear in the doctests).
 
 
+
 ---
 
-Comment by bruno created at 2016-04-18 08:46:25
+archive/issue_comments_053429.json:
+```json
+{
+    "body": "Changing status from needs_work to positive_review.",
+    "created_at": "2016-04-18T08:46:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6551",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6551#issuecomment-53429",
+    "user": "bruno"
+}
+```
 
 Changing status from needs_work to positive_review.
 
 
+
 ---
 
-Comment by vbraun created at 2016-06-12 12:02:30
+archive/issue_comments_053430.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2016-06-12T12:02:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6551",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6551#issuecomment-53430",
+    "user": "vbraun"
+}
+```
 
 Resolution: fixed

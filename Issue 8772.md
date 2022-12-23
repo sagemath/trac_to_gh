@@ -1,11 +1,21 @@
 # Issue 8772: Maxima interface chokes randomly
 
-Issue created by migration from https://trac.sagemath.org/ticket/8772
-
-Original creator: dunfield
-
-Original creation time: 2010-04-26 21:00:59
-
+archive/issues_008772.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  leif mpatel dimpase pbruin @spaghettisalat\n\nKeywords: Maxima\n\nSufficiently many calls to Maxima eventually causes that interface to throw an exception, some samples of which are given below.    A minimal piece of code exhibiting this problem is\n\n\n```\ndef prob(): \n    for i in xrange(1000000): \n        a = var('a') \n        eqn = (a - 1)/(a) \n        eqn.numerator() \n```\n\nThis error has been observed in Sage 4.3.* on OS X.5.* (8-core Xeon Mac Pro and 2-core Intel Core 2 Mac Book), and Ubuntu Linux 9.10 (quad-core Intel Core 2).  See the sage-devel thread [http://groups.google.com/group/sage-devel/browse_thread/thread/3b43147e44324c25](http://groups.google.com/group/sage-devel/browse_thread/thread/3b43147e44324c25) for some discussion.  In particular, it may be related to #5662 where the synchronization with Maxima was getting lost on  certain multi-core CPUs because of something related to switching between cores.   It takes some time, e.g. 5-15 minutes for the problem to manifest itself.  \n\nTypical errors:\n\n\n```\nTypeError: unable to make sense of Maxima expression \n'\"__SAGE_SYNCHRO_MARKER_202188656\"' in Sage \n\nTypeError: Error executing code in Maxima \nCODE: \n        _tmp_ : -(a0-1)*a1^2*a3$ \nMaxima ERROR: \n_tmp_ : -(a0-1)*a1^2*a3$ \nstdin:57338284:Incorrect syntax: Illegal use of delimiter ) \n(%i832002) \nstdin:57338357:Incorrect syntax: Premature termination of input at ;. \n(%i832003) \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8772\n\n",
+    "created_at": "2010-04-26T21:00:59Z",
+    "labels": [
+        "interfaces",
+        "critical",
+        "bug"
+    ],
+    "title": "Maxima interface chokes randomly",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8772",
+    "user": "dunfield"
+}
+```
 Assignee: was
 
 CC:  leif mpatel dimpase pbruin @spaghettisalat
@@ -44,20 +54,35 @@ stdin:57338357:Incorrect syntax: Premature termination of input at ;.
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8772
+
+
+
+
 
 ---
 
-Comment by drkirkby created at 2010-08-31 16:46:25
+archive/issue_comments_080279.json:
+```json
+{
+    "body": "On the following system, with Sage 4.5.3.alpha2. \n\n* Sun Ultra 27\n* 3.33 GHz Intel Xeon W3580 CPU. 4 cores. 8 threads. (Hyperthreaded)\n* 12 GB of ECC DDR3 RAM\n* 2 x 500 GB disks (both mirrored)\n* 2 x 2 TB disks (both mirrored)\n* ZFS 128-bit file system, which should detect and correct errors\n* OpenSolaris 06/2009.\n\nwhich is not a cheap PC, but a decent workstation, I see this error 4 times when \n\n\n```\nmake ptestlong\n```\n\n\nwas run 100 times. So it's causing  `make ptestlong ` to fail in 4% of cases for me. Since this machine is hyperthreaded and has 4 cores, 8 threads would be run when the doctests were run. I've checked the system logs and there are now reported hardware problems.\n\nThe following tests failed one or more times\n\n\n```\ndevel/sage-main/sage/modular/overconvergent/weightspace.py (twice)\ndevel/sage/sage/tests/benchmark.py (once)\ndevel/sage/sage/calculus/desolvers.py (once)\n```\n\n\nIn each case, although the exact error message is different, I always see:\n\n\n```\nPremature termination of input\n```\n\n\nDave",
+    "created_at": "2010-08-31T16:46:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8772",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8772#issuecomment-80279",
+    "user": "drkirkby"
+}
+```
 
 On the following system, with Sage 4.5.3.alpha2. 
 
- * Sun Ultra 27
- * 3.33 GHz Intel Xeon W3580 CPU. 4 cores. 8 threads. (Hyperthreaded)
- * 12 GB of ECC DDR3 RAM
- * 2 x 500 GB disks (both mirrored)
- * 2 x 2 TB disks (both mirrored)
- * ZFS 128-bit file system, which should detect and correct errors
- * OpenSolaris 06/2009.
+* Sun Ultra 27
+* 3.33 GHz Intel Xeon W3580 CPU. 4 cores. 8 threads. (Hyperthreaded)
+* 12 GB of ECC DDR3 RAM
+* 2 x 500 GB disks (both mirrored)
+* 2 x 2 TB disks (both mirrored)
+* ZFS 128-bit file system, which should detect and correct errors
+* OpenSolaris 06/2009.
 
 which is not a cheap PC, but a decent workstation, I see this error 4 times when 
 
@@ -90,35 +115,79 @@ Premature termination of input
 Dave
 
 
+
 ---
 
-Comment by drkirkby created at 2010-08-31 16:58:36
+archive/issue_comments_080280.json:
+```json
+{
+    "body": "Replying to [comment:1 drkirkby]:\n>  I've checked the system logs and there are now reported hardware problems.\n\nI mean there were **no** reported hardware problems.",
+    "created_at": "2010-08-31T16:58:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8772",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8772#issuecomment-80280",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:1 drkirkby]:
 >  I've checked the system logs and there are now reported hardware problems.
 
-I mean there were *no* reported hardware problems.
+I mean there were **no** reported hardware problems.
+
 
 
 ---
 
-Comment by drkirkby created at 2010-08-31 17:17:38
+archive/issue_comments_080281.json:
+```json
+{
+    "body": "I'm removing the 'Author' field, as nobody has actually written anything to solve it yet - or at least if they did, there's nothing on the ticket to indicate they did. \n\nDave",
+    "created_at": "2010-08-31T17:17:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8772",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8772#issuecomment-80281",
+    "user": "drkirkby"
+}
+```
 
 I'm removing the 'Author' field, as nobody has actually written anything to solve it yet - or at least if they did, there's nothing on the ticket to indicate they did. 
 
 Dave
 
 
+
 ---
 
-Comment by mpatel created at 2010-08-31 22:01:51
+archive/issue_comments_080282.json:
+```json
+{
+    "body": "Could you give the exact messages for each of the failed files?",
+    "created_at": "2010-08-31T22:01:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8772",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8772#issuecomment-80282",
+    "user": "mpatel"
+}
+```
 
 Could you give the exact messages for each of the failed files?
 
 
+
 ---
 
-Comment by drkirkby created at 2010-08-31 22:48:34
+archive/issue_comments_080283.json:
+```json
+{
+    "body": "Replying to [comment:4 mpatel]:\n> Could you give the exact messages for each of the failed files?\n\nSure. I will attach four files\n\n\n```\nrun-21-weightspace.py.txt\nrun-34-benchmark.py.txt\nrun-60-weightspace.py.txt\nrun-90-desolvers.py.txt\n```\n\n\nwhich show the errors on my 21st, 34th, 60th and 90th runs. They correspond to a failure of \n\n\n```\ndevel/sage-main/sage/modular/overconvergent/weightspace.py (21st and 60th run)\ndevel/sage/sage/tests/benchmark.py (34th run)\ndevel/sage/sage/calculus/desolvers.py (90th run)\n```\n\n\nDave",
+    "created_at": "2010-08-31T22:48:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8772",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8772#issuecomment-80283",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:4 mpatel]:
 > Could you give the exact messages for each of the failed files?
@@ -147,35 +216,98 @@ devel/sage/sage/calculus/desolvers.py (90th run)
 Dave
 
 
+
 ---
+
+archive/issue_comments_080284.json:
+```json
+{
+    "body": "Attachment\n\nFailed devel/sage-main/sage/modular/overconvergent/weightspace.py (first of two failures of this test)",
+    "created_at": "2010-08-31T23:19:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8772",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8772#issuecomment-80284",
+    "user": "drkirkby"
+}
+```
 
 Attachment
 
 Failed devel/sage-main/sage/modular/overconvergent/weightspace.py (first of two failures of this test)
 
 
+
 ---
 
-Comment by drkirkby created at 2010-08-31 23:21:21
+archive/issue_comments_080285.json:
+```json
+{
+    "body": "Failed devel/sage/sage/tests/benchmark.py",
+    "created_at": "2010-08-31T23:21:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8772",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8772#issuecomment-80285",
+    "user": "drkirkby"
+}
+```
 
 Failed devel/sage/sage/tests/benchmark.py
 
 
+
 ---
+
+archive/issue_comments_080286.json:
+```json
+{
+    "body": "Attachment\n\nFailed devel/sage-main/sage/modular/overconvergent/weightspace.py (second failure)",
+    "created_at": "2010-08-31T23:22:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8772",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8772#issuecomment-80286",
+    "user": "drkirkby"
+}
+```
 
 Attachment
 
 Failed devel/sage-main/sage/modular/overconvergent/weightspace.py (second failure)
 
 
+
 ---
+
+archive/issue_comments_080287.json:
+```json
+{
+    "body": "Attachment\n\nFailed devel/sage/sage/calculus/desolvers.py",
+    "created_at": "2010-08-31T23:23:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8772",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8772#issuecomment-80287",
+    "user": "drkirkby"
+}
+```
 
 Attachment
 
 Failed devel/sage/sage/calculus/desolvers.py
 
 
+
 ---
+
+archive/issue_comments_080288.json:
+```json
+{
+    "body": "Attachment\n\nI was unable to attach the files earlier, as trac was not working correctly (/var was full). \n\nNote Alex Ghitza said on sage-devel that `modular/overconvergent/weightspace.py` has no reason to use Maxima, so he created a patch to fix that #9843. Of course, that does not help solve the underlying problem here. \n\nDave.",
+    "created_at": "2010-08-31T23:31:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8772",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8772#issuecomment-80288",
+    "user": "drkirkby"
+}
+```
 
 Attachment
 
@@ -186,9 +318,20 @@ Note Alex Ghitza said on sage-devel that `modular/overconvergent/weightspace.py`
 Dave.
 
 
+
 ---
 
-Comment by leif created at 2010-09-02 01:23:16
+archive/issue_comments_080289.json:
+```json
+{
+    "body": "I could reproduce Nathan's error with Sage 4.5.3.rc0 on Ubuntu 10.04 x86_64 (Core2), but only in conjunction with heavy system load:\n\n```\n13943 a - 1\n13944 a - 1\n13945---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/leif/Sage/sage-4.5.3.rc0/<ipython console> in <module>()\n\n/home/leif/Sage/sage-4.5.3.rc0/<ipython console> in prob()\n\n/home/leif/Sage/sage-4.5.3.rc0/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.numerator (sage/symbolic/expression.cpp:21226)()\n\n/home/leif/Sage/sage-4.5.3.rc0/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression._maxima_ (sage/symbolic/expression.cpp:3382)()\n\n/home/leif/Sage/sage-4.5.3.rc0/local/lib/python2.6/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.SageObject._interface_ (sage/structure/sage_object.c:3501)()\n\n/home/leif/Sage/sage-4.5.3.rc0/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __call__(self, x, name)\n   1030             \n   1031         if isinstance(x, basestring):\n-> 1032             return cls(self, x, name=name)\n   1033         try:\n   1034             return self._coerce_from_special_method(x)\n\n/home/leif/Sage/sage-4.5.3.rc0/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in __init__(self, parent, value, is_name, name)\n   1449             except (TypeError, KeyboardInterrupt, RuntimeError, ValueError), x:\n   1450                 self._session_number = -1\n-> 1451                 raise TypeError, x\n   1452         self._session_number = parent._session_number\n   1453 \n\nTypeError: Error executing code in Maxima\nCODE:\n\tsage75684 : ((a)+(-1))*((a)^(-1))$\nMaxima ERROR:\n\t Incorrect syntax: Illegal use of delimiter )\n(%i529800) Incorrect syntax: Premature termination of input at $.\n(%i529801) \n sage: \n```\n\n(I've added `print i, ` to the last line of his example.)\n\nDoctesting in parallel with 32 threads (`ptestlong`) btw. gave no errors. I'll have to inspect the log of the run with 64 threads, but IIRC there was only one \"intentional\" timeout due to SIGALARM set to 1 second... (128 threads exceeded my physical memory, i.e. caused massive swapping.)\n\nI couldn't post this earlier either because of trac errors... ;-)",
+    "created_at": "2010-09-02T01:23:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8772",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8772#issuecomment-80289",
+    "user": "leif"
+}
+```
 
 I could reproduce Nathan's error with Sage 4.5.3.rc0 on Ubuntu 10.04 x86_64 (Core2), but only in conjunction with heavy system load:
 
@@ -239,9 +382,20 @@ Doctesting in parallel with 32 threads (`ptestlong`) btw. gave no errors. I'll h
 I couldn't post this earlier either because of trac errors... ;-)
 
 
+
 ---
 
-Comment by leif created at 2010-09-02 02:04:22
+archive/issue_comments_080290.json:
+```json
+{
+    "body": "Replying to [comment:7 leif]:\n> Doctesting in parallel with 32 threads (`ptestlong`) btw. gave no errors. I'll have to inspect the log of the run with 64 threads, but IIRC there was only one \"intentional\" timeout due to SIGALARM set to 1 second...\n\nNot really (the run with 64 threads):\n\n```\n...\n \n----------------------------------------------------------------------\n\nThe following tests failed:\n\n\tsage -t  -long devel/sage/sage/interfaces/expect.py # 1 doctests failed\n\tsage -t  -long devel/sage/sage/symbolic/expression.pyx # 1 doctests failed\n\tsage -t  -long devel/sage/sage/schemes/elliptic_curves/heegner.py # 1 doctests failed\n----------------------------------------------------------------------\nTotal time for all tests: 1799.8 seconds\n```\n\nThe failing tests:\n\n```\nsage -t  -long devel/sage/sage/interfaces/expect.py\n**********************************************************************\nFile \"/home/leif/Sage/sage-4.5.3.rc0/devel/sage-main/sage/interfaces/expect.py\", line 808:\n    sage: print sage0.eval(\"alarm(1); singular._expect_expr('1')\")\nExpected:\n    Control-C pressed.  Interrupting Singular. Please wait a few seconds...\n    ...\n    KeyboardInterrupt: computation timed out because alarm was set for 1 seconds\nGot:\n    ---------------------------------------------------------------------------\n    KeyboardInterrupt                         Traceback (most recent call last)\n    <BLANKLINE>\n    /home/leif/Sage/sage-4.5.3.rc0/data/extcode/sage/<ipython console> in <module>()\n    <BLANKLINE>\n    /home/leif/Sage/sage-4.5.3.rc0/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in _expect_expr(self, expr, timeout)\n        815             expr = self._prompt_wait\n        816         if self._expect is None:\n    --> 817             self._start()\n        818         try:\n        819             if timeout:\n    <BLANKLINE>\n    /home/leif/Sage/sage-4.5.3.rc0/local/lib/python2.6/site-packages/sage/interfaces/singular.pyc in _start(self, alt_message)\n        373         \"\"\"\n        374         self.__libs = []\n    --> 375         Expect._start(self, alt_message)\n        376         # Load some standard libraries.\n        377         self.lib('general')   # assumed loaded by misc/constants.py\n    <BLANKLINE>\n    /home/leif/Sage/sage-4.5.3.rc0/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc in _start(self, alt_message, block_during_init)\n        449             self._expect = pexpect.spawn(cmd, logfile=self.__logfile)\n        450             if self._do_cleaner():\n    --> 451                 cleaner.cleaner(self._expect.pid, cmd)\n        452             \n        453         except (ExceptionPexpect, pexpect.EOF, IndexError):\n    <BLANKLINE>\n    /home/leif/Sage/sage-4.5.3.rc0/local/lib/python2.6/site-packages/sage/interfaces/cleaner.pyc in cleaner(pid, cmd)\n         30     o.write('%s %s\\n'%(pid, cmd))\n         31     o.close()\n    ---> 32     start_cleaner_if_not_running()\n         33 \n         34 ################\n    <BLANKLINE>\n    /home/leif/Sage/sage-4.5.3.rc0/local/lib/python2.6/site-packages/sage/interfaces/cleaner.pyc in start_cleaner_if_not_running()\n         41         return\n         42     except (IOError, OSError, ValueError):\n    ---> 43         os.system('sage-cleaner &')   # it has died\n         44         \n         45 \n    <BLANKLINE>\n    /home/leif/Sage/sage-4.5.3.rc0/local/lib/python2.6/site-packages/sage/misc/misc.pyc in __mysig(a, b)\n       1695 __alarm_time=0\n       1696 def __mysig(a,b):\n    -> 1697     raise KeyboardInterrupt, \"computation timed out because alarm was set for %s seconds\"%__alarm_time\n       1698 \n       1699 def alarm(seconds):\n    <BLANKLINE>\n    KeyboardInterrupt: computation timed out because alarm was set for 1 seconds\n**********************************************************************\n1 items had failures:\n   1 of  10 in __main__.example_15\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/leif/.sage//tmp/.doctest_expect.py\n\t [101.9 s]\n```\n\n(I think this is ok, as mentioned.)\n\n\n```\nsage -t  -long devel/sage/sage/symbolic/expression.pyx\n**********************************************************************\nFile \"/home/leif/Sage/sage-4.5.3.rc0/devel/sage-main/sage/symbolic/expression.pyx\", line 1146:\n    sage: (x > 2).assume()\nExpected nothing\nGot:\n    Maxima crashed -- automatically restarting.\n**********************************************************************\n1 items had failures:\n   1 of  15 in __main__.example_36\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/leif/.sage//tmp/.doctest_expression.py\n\t [564.5 s]\n```\n\nThis might also simply be a timeout.\n\n\n```\nsage -t  -long devel/sage/sage/schemes/elliptic_curves/heegner.py\n**********************************************************************\nFile \"/home/leif/Sage/sage-4.5.3.rc0/devel/sage-main/sage/schemes/elliptic_curves/heegner.py\", line 6946:\n    sage: QQ[sqrt(-195)].class_number()\nException raised:\n    Traceback (most recent call last):\n      File \"/home/leif/Sage/sage-4.5.3.rc0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/leif/Sage/sage-4.5.3.rc0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/leif/Sage/sage-4.5.3.rc0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_235[7]>\", line 1, in <module>\n        QQ[sqrt(-Integer(195))].class_number()###line 6946:\n    sage: QQ[sqrt(-195)].class_number()\n      File \"ring.pyx\", line 205, in sage.rings.ring.Ring.__getitem__ (sage/rings/ring.c:2556)\n      File \"/home/leif/Sage/sage-4.5.3.rc0/local/lib/python/site-packages/sage/rings/polynomial/polynomial_ring_constructor.py\", line 343, in PolynomialRing\n        R = _single_variate(base_ring, name, sparse, implementation)\n      File \"/home/leif/Sage/sage-4.5.3.rc0/local/lib/python/site-packages/sage/rings/polynomial/polynomial_ring_constructor.py\", line 395, in _single_variate\n        name = normalize_names(1, name)\n      File \"parent_gens.pyx\", line 204, in sage.structure.parent_gens.normalize_names (sage/structure/parent_gens.c:2093)\n      File \"parent_gens.pyx\", line 145, in sage.structure.parent_gens._certify_names (sage/structure/parent_gens.c:1650)\n    ValueError: variable names must be alphanumeric, but one is 'sqrt(-195)' which is not.\n**********************************************************************\n1 items had failures:\n   1 of  11 in __main__.example_235\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/leif/.sage//tmp/.doctest_heegner.py\n\t [1178.8 s]\n```\n\nNo idea. I get the same error if I just type that line in Sage. Doctesting the file succeeds...\n\nOh wait, that was the Sage session that gave the Maxima error! After restarting Sage, I get the expected result:\n\n```\n...\nTypeError: Error executing code in Maxima\nCODE:\n\tsage75684 : ((a)+(-1))*((a)^(-1))$\nMaxima ERROR:\n\t Incorrect syntax: Illegal use of delimiter )\n(%i529800) Incorrect syntax: Premature termination of input at $.\n(%i529801) \n sage: \n\nsage: \nsage: QQ[sqrt(-195)].class_number()\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/leif/Sage/sage-4.5.3.rc0/<ipython console> in <module>()\n\n/home/leif/Sage/sage-4.5.3.rc0/local/lib/python2.6/site-packages/sage/rings/ring.so in sage.rings.ring.Ring.__getitem__ (sage/rings/ring.c:2556)()\n\n/home/leif/Sage/sage-4.5.3.rc0/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_ring_constructor.pyc in PolynomialRing(base_ring, arg1, arg2, sparse, order, names, name, implementation)\n    341                 raise TypeError, \"if second arguments is a string with no commas, then there must be no other non-optional arguments\"\n    342             name = arg1\n--> 343             R = _single_variate(base_ring, name, sparse, implementation)\n    344         else:\n    345             # 2-4. PolynomialRing(base_ring, names, order='degrevlex'):\n\n/home/leif/Sage/sage-4.5.3.rc0/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_ring_constructor.pyc in _single_variate(base_ring, name, sparse, implementation)\n    393 def _single_variate(base_ring, name, sparse, implementation):\n    394     import sage.rings.polynomial.polynomial_ring as m\n--> 395     name = normalize_names(1, name)\n    396     key = (base_ring, name, sparse, implementation)\n    397     R = _get_from_cache(key)\n\n/home/leif/Sage/sage-4.5.3.rc0/local/lib/python2.6/site-packages/sage/structure/parent_gens.so in sage.structure.parent_gens.normalize_names (sage/structure/parent_gens.c:2093)()\n\n/home/leif/Sage/sage-4.5.3.rc0/local/lib/python2.6/site-packages/sage/structure/parent_gens.so in sage.structure.parent_gens._certify_names (sage/structure/parent_gens.c:1650)()\n\nValueError: variable names must be alphanumeric, but one is 'sqrt(-195)' which is not.\nsage: \nExiting Sage (CPU time 1m33.85s, Wall time 1921m38.11s).\nExiting spawned Maxima process.\nleif@quadriga:~/Sage/sage-4.5.3.rc0$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsage: QQ[sqrt(-195)].class_number()\n4\nsage: \n```\n\n(I exited Sage as usual - with Control-D; just in case you wonder.)",
+    "created_at": "2010-09-02T02:04:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8772",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8772#issuecomment-80290",
+    "user": "leif"
+}
+```
 
 Replying to [comment:7 leif]:
 > Doctesting in parallel with 32 threads (`ptestlong`) btw. gave no errors. I'll have to inspect the log of the run with 64 threads, but IIRC there was only one "intentional" timeout due to SIGALARM set to 1 second...
@@ -446,36 +600,91 @@ sage:
 (I exited Sage as usual - with Control-D; just in case you wonder.)
 
 
+
 ---
 
-Comment by rws created at 2018-03-10 07:22:33
+archive/issue_comments_080291.json:
+```json
+{
+    "body": "FWIW, the original code in the description no longer calls Maxima in `numer()`, so a better example is needed.",
+    "created_at": "2018-03-10T07:22:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8772",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8772#issuecomment-80291",
+    "user": "rws"
+}
+```
 
 FWIW, the original code in the description no longer calls Maxima in `numer()`, so a better example is needed.
 
 
+
 ---
 
-Comment by mkoeppe created at 2020-07-04 18:22:41
+archive/issue_comments_080292.json:
+```json
+{
+    "body": "Again seeing similar failures in #22191 (update ECL to 20.4.24) on Cygwin",
+    "created_at": "2020-07-04T18:22:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8772",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8772#issuecomment-80292",
+    "user": "mkoeppe"
+}
+```
 
 Again seeing similar failures in #22191 (update ECL to 20.4.24) on Cygwin
 
 
+
 ---
 
-Comment by kcrisman created at 2020-10-08 12:48:18
+archive/issue_comments_080293.json:
+```json
+{
+    "body": "See https://groups.google.com/forum/#!topic/sage-devel/U1dsVFP-2PA",
+    "created_at": "2020-10-08T12:48:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8772",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8772#issuecomment-80293",
+    "user": "kcrisman"
+}
+```
 
 See https://groups.google.com/forum/#!topic/sage-devel/U1dsVFP-2PA
 
 
+
 ---
 
-Comment by kcrisman created at 2020-10-08 12:48:18
+archive/issue_comments_080294.json:
+```json
+{
+    "body": "Changing priority from critical to major.",
+    "created_at": "2020-10-08T12:48:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8772",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8772#issuecomment-80294",
+    "user": "kcrisman"
+}
+```
 
 Changing priority from critical to major.
 
 
+
 ---
 
-Comment by mkoeppe created at 2021-04-07 19:29:15
+archive/issue_comments_080295.json:
+```json
+{
+    "body": "Sage development has entered the release candidate phase for 9.3. Setting a new milestone for this ticket based on a cursory review.",
+    "created_at": "2021-04-07T19:29:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8772",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8772#issuecomment-80295",
+    "user": "mkoeppe"
+}
+```
 
 Sage development has entered the release candidate phase for 9.3. Setting a new milestone for this ticket based on a cursory review.

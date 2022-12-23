@@ -1,11 +1,21 @@
 # Issue 2425: [with patch; needs review] In multipolynomials, the function jacob() should be called gradient()
 
-Issue created by migration from https://trac.sagemath.org/ticket/2425
-
-Original creator: jbandlow
-
-Original creation time: 2008-03-07 23:08:54
-
+archive/issues_002425.json:
+```json
+{
+    "body": "Assignee: jbandlow@gmail.com\n\nKeywords: jacob, gradient\n\nOn Fri, Feb 29, 2008 at 1:58 PM, Jason Bandlow <jbandlow`@`gmail.com> wrote:\n\nHi,\n\nCurrently, if f is a multi-polynomial, the call f.jacob() returns the\nlist of partial derivatives of f with respect to the ring generators:\n\n```\n  sage: R.<x,y,z> = PolynomialRing(QQ)\n  sage: f = x^4 + y^3 + z^2 + x*y*z\n  sage: f.jacob()\n  [4*x^3 + y*z, 3*y^2 + x*z, x*y + 2*z]\n```\n\n\n\n\nI'd like to change the name to gradient. Another possibility is changing\nthe name to 'jacobian', but I think it's likely that more people (eg\ncalculus students) will recognize the term 'gradient' and not 'jacobian'\nthan vice-versa.  And who talks about the Jacobian of a single function\nanyway? :)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2425\n\n",
+    "created_at": "2008-03-07T23:08:54Z",
+    "labels": [
+        "Cygwin",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch; needs review] In multipolynomials, the function jacob() should be called gradient()",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2425",
+    "user": "jbandlow"
+}
+```
 Assignee: jbandlow@gmail.com
 
 Keywords: jacob, gradient
@@ -34,29 +44,79 @@ than vice-versa.  And who talks about the Jacobian of a single function
 anyway? :)
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2425
+
+
+
+
 
 ---
+
+archive/issue_comments_016416.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-03-07T23:09:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2425",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2425#issuecomment-16416",
+    "user": "jbandlow"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-08 00:12:59
+archive/issue_comments_016417.json:
+```json
+{
+    "body": "Changing component from Cygwin to commutative algebra.",
+    "created_at": "2008-03-08T00:12:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2425",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2425#issuecomment-16417",
+    "user": "mabshoff"
+}
+```
 
 Changing component from Cygwin to commutative algebra.
 
 
+
 ---
 
-Comment by malb created at 2008-03-08 12:21:09
+archive/issue_comments_016418.json:
+```json
+{
+    "body": "Review: If the submitter reports that `make test` passes with the patch applied, I'm happy to give it a positive review.",
+    "created_at": "2008-03-08T12:21:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2425",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2425#issuecomment-16418",
+    "user": "malb"
+}
+```
 
 Review: If the submitter reports that `make test` passes with the patch applied, I'm happy to give it a positive review.
 
 
+
 ---
 
-Comment by cremona created at 2008-03-08 16:41:04
+archive/issue_comments_016419.json:
+```json
+{
+    "body": "I applied the patch successfully to 2.10.3.rc0 and the test passed ok.\n\nI did a search_source to see if there were any other mentions of \"jacob(\" and found just one, in interfaces/singular.py.  Here I found the example\n\n```\n    sage: R = singular.ring(0, '(x,y,z)', 'dp')\n    sage: f = singular('x3+y3+(x-y)*x2y2+z2')\n    sage: f\n    x^3*y^2-x^2*y^3+x^3+y^3+z^2\n    sage: R1 = singular.ring(0, '(x,y,z)', 'ds')\n    sage: f = R.fetch(f)\n    sage: f\n    z^2+x^3+y^3+x^3*y^2-x^2*y^3\n\nWe can calculate the Milnor number of $f$:\n    sage: _=singular.LIB('sing.lib')     # assign to _ to suppress printing\n    sage: f.milnor()\n    4\n\nThe Jacobian applied twice yields the Hessian matrix of $f$,\nwith which we can compute.\n    sage: H = f.jacob().jacob()\n    sage: H\n    6*x+6*x*y^2-2*y^3,6*x^2*y-6*x*y^2,  0,\n    6*x^2*y-6*x*y^2,  6*y+2*x^3-6*x^2*y,0,\n    0,                0,                2\n```\n\n\nwhich suggests that the name jacob() is standard in singular.  Should there be any sort of cross-reference between the new gradient() and the new jacob() ?",
+    "created_at": "2008-03-08T16:41:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2425",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2425#issuecomment-16419",
+    "user": "cremona"
+}
+```
 
 I applied the patch successfully to 2.10.3.rc0 and the test passed ok.
 
@@ -90,38 +150,93 @@ with which we can compute.
 which suggests that the name jacob() is standard in singular.  Should there be any sort of cross-reference between the new gradient() and the new jacob() ?
 
 
+
 ---
 
-Comment by jbandlow created at 2008-03-08 18:56:35
+archive/issue_comments_016420.json:
+```json
+{
+    "body": "So, if the current patch is applied, all tests seem to pass, and we'll have the following situation: If singular is called explicitly, jacob() will work and gradient() won't.  If singular is not called explicitly, gradient() will work and jacob() won't. \n\nAdding gradient() obviously doesn't hurt anybody, but for people used to singular, we are would be removing 'jacob()' which they may be used to.  Of course, it's trivial to put jacob() back in, and have it point to gradient(), but the cost is clutter when the user does `sage: f.<tab>`.  Is this clutter worth it to keep people who are used to singular happy?  I have no idea how to answer this question.",
+    "created_at": "2008-03-08T18:56:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2425",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2425#issuecomment-16420",
+    "user": "jbandlow"
+}
+```
 
 So, if the current patch is applied, all tests seem to pass, and we'll have the following situation: If singular is called explicitly, jacob() will work and gradient() won't.  If singular is not called explicitly, gradient() will work and jacob() won't. 
 
 Adding gradient() obviously doesn't hurt anybody, but for people used to singular, we are would be removing 'jacob()' which they may be used to.  Of course, it's trivial to put jacob() back in, and have it point to gradient(), but the cost is clutter when the user does `sage: f.<tab>`.  Is this clutter worth it to keep people who are used to singular happy?  I have no idea how to answer this question.
 
 
+
 ---
 
-Comment by malb created at 2008-03-09 15:27:10
+archive/issue_comments_016421.json:
+```json
+{
+    "body": "Generally speaking 'we' don't aim for this kind of compatibility with Singular, i.e. same names for methods etc.. Sage is object oriented, Singular is not, in Singular an ideal is equivalent with its list of generators, in Sage it is not, etc. So renaming `jacob()` to `gradient()` is fine in my books.",
+    "created_at": "2008-03-09T15:27:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2425",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2425#issuecomment-16421",
+    "user": "malb"
+}
+```
 
 Generally speaking 'we' don't aim for this kind of compatibility with Singular, i.e. same names for methods etc.. Sage is object oriented, Singular is not, in Singular an ideal is equivalent with its list of generators, in Sage it is not, etc. So renaming `jacob()` to `gradient()` is fine in my books.
 
 
+
 ---
 
-Comment by cremona created at 2008-03-09 17:12:17
+archive/issue_comments_016422.json:
+```json
+{
+    "body": "I think the above counts as \"positive review\" so I am relabelling the ticket.",
+    "created_at": "2008-03-09T17:12:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2425",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2425#issuecomment-16422",
+    "user": "cremona"
+}
+```
 
 I think the above counts as "positive review" so I am relabelling the ticket.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-09 19:11:46
+archive/issue_comments_016423.json:
+```json
+{
+    "body": "I agree. Merged in Sage 2.10.3.rc4",
+    "created_at": "2008-03-09T19:11:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2425",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2425#issuecomment-16423",
+    "user": "mabshoff"
+}
+```
 
 I agree. Merged in Sage 2.10.3.rc4
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-09 19:11:46
+archive/issue_comments_016424.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-03-09T19:11:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2425",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2425#issuecomment-16424",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

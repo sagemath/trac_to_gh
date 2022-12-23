@@ -1,43 +1,101 @@
 # Issue 7791: upgrade numpy to 1.4
 
-Issue created by migration from https://trac.sagemath.org/ticket/7791
-
-Original creator: jason
-
-Original creation time: 2009-12-29 19:19:41
-
+archive/issues_007791.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  jkantor mpatel\n\nNumpy 1.4 has been released.  As a matter of procedure, we probably ought to upgrade our numpy spkg.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7791\n\n",
+    "created_at": "2009-12-29T19:19:41Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "enhancement"
+    ],
+    "title": "upgrade numpy to 1.4",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7791",
+    "user": "jason"
+}
+```
 Assignee: tbd
 
 CC:  jkantor mpatel
 
 Numpy 1.4 has been released.  As a matter of procedure, we probably ought to upgrade our numpy spkg.
 
+Issue created by migration from https://trac.sagemath.org/ticket/7791
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2009-12-30 07:25:54
+archive/issue_comments_067246.json:
+```json
+{
+    "body": "Plus, we get npycore which should help with Cygwin / FreeBSD / other systems without C99 stuff.",
+    "created_at": "2009-12-30T07:25:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7791",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7791#issuecomment-67246",
+    "user": "mhansen"
+}
+```
 
 Plus, we get npycore which should help with Cygwin / FreeBSD / other systems without C99 stuff.
 
 
+
 ---
 
-Comment by dagss created at 2010-02-14 09:06:28
+archive/issue_comments_067247.json:
+```json
+{
+    "body": "NumPy 1.4. is retracted and unsupported; likely better wait until 2.0 is released in some weeks.\n\n(However, strictly speaking, the only problem with NumPy 1.4 was that of binary compatability with older versions; something Sage doesn't care about.)",
+    "created_at": "2010-02-14T09:06:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7791",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7791#issuecomment-67247",
+    "user": "dagss"
+}
+```
 
 NumPy 1.4. is retracted and unsupported; likely better wait until 2.0 is released in some weeks.
 
 (However, strictly speaking, the only problem with NumPy 1.4 was that of binary compatability with older versions; something Sage doesn't care about.)
 
 
+
 ---
 
-Comment by kcrisman created at 2010-09-21 18:15:20
+archive/issue_comments_067248.json:
+```json
+{
+    "body": "This should be closed as a duplicate of #9808.",
+    "created_at": "2010-09-21T18:15:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7791",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7791#issuecomment-67248",
+    "user": "kcrisman"
+}
+```
 
 This should be closed as a duplicate of #9808.
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-21 20:23:58
+archive/issue_comments_067249.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2010-09-21T20:23:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7791",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7791#issuecomment-67249",
+    "user": "mpatel"
+}
+```
 
 Resolution: duplicate

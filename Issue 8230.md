@@ -1,11 +1,21 @@
 # Issue 8230: strange behaviour
 
-Issue created by migration from https://trac.sagemath.org/ticket/8230
-
-Original creator: zimmerma
-
-Original creation time: 2010-02-10 15:17:22
-
+archive/issues_008230.json:
+```json
+{
+    "body": "Assignee: robertwb\n\nHi, I found the following strange behaviour of the addition\n<int> + 1/2. I have a file `MurphyE.sage` which contains:\n\n```\nload E.sage\n\nfoo(2)\n```\n\nwhere `E.sage` contains:\n\n```\ndef foo(K):\n    for i in range(K):\n       print i, i+1/2, type(i), type(i+1/2)\n```\n\nThen I get:\n\n```\nsage: load MurphyE.sage\n0 0 <type 'int'> <type 'int'>\n1 1 <type 'int'> <type 'int'>\n```\n\nNow if instead I replace `load E.sage` in my file by the\ncontent of the procedure `foo`, i.e.:\n\n```\ndef foo(K):\n    for i in range(K):\n       print i, i+1/2, type(i), type(i+1/2)\n\nfoo(2)\n```\n\nthen I get:\n\n```\nsage: load MurphyE.sage\n0 1/2 <type 'int'> <type 'sage.rings.rational.Rational'>\n1 3/2 <type 'int'> <type 'sage.rings.rational.Rational'>\n```\n\nwhich is the expected behaviour. Please can someone explain to me\nthe first result? I forgot to say it is with Sage 4.3.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8230\n\n",
+    "created_at": "2010-02-10T15:17:22Z",
+    "labels": [
+        "coercion",
+        "major",
+        "bug"
+    ],
+    "title": "strange behaviour",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8230",
+    "user": "zimmerma"
+}
+```
 Assignee: robertwb
 
 Hi, I found the following strange behaviour of the addition
@@ -55,37 +65,96 @@ sage: load MurphyE.sage
 which is the expected behaviour. Please can someone explain to me
 the first result? I forgot to say it is with Sage 4.3.
 
+Issue created by migration from https://trac.sagemath.org/ticket/8230
+
+
+
+
 
 ---
 
-Comment by robertwb created at 2010-02-10 19:55:46
+archive/issue_comments_072703.json:
+```json
+{
+    "body": "Dupe of #6345",
+    "created_at": "2010-02-10T19:55:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8230",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8230#issuecomment-72703",
+    "user": "robertwb"
+}
+```
 
 Dupe of #6345
 
 
+
 ---
 
-Comment by ylchapuy created at 2010-08-15 18:01:15
+archive/issue_comments_072704.json:
+```json
+{
+    "body": "it seems to be fixed now.",
+    "created_at": "2010-08-15T18:01:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8230",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8230#issuecomment-72704",
+    "user": "ylchapuy"
+}
+```
 
 it seems to be fixed now.
 
 
+
 ---
 
-Comment by ylchapuy created at 2010-08-15 18:01:15
+archive/issue_comments_072705.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-08-15T18:01:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8230",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8230#issuecomment-72705",
+    "user": "ylchapuy"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mpatel created at 2010-08-15 21:32:49
+archive/issue_comments_072706.json:
+```json
+{
+    "body": "I'm closing this as a \"duplicate\" of #6345.",
+    "created_at": "2010-08-15T21:32:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8230",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8230#issuecomment-72706",
+    "user": "mpatel"
+}
+```
 
 I'm closing this as a "duplicate" of #6345.
 
 
+
 ---
 
-Comment by mpatel created at 2010-08-15 21:32:49
+archive/issue_comments_072707.json:
+```json
+{
+    "body": "Resolution changed from fixed to duplicate",
+    "created_at": "2010-08-15T21:32:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8230",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8230#issuecomment-72707",
+    "user": "mpatel"
+}
+```
 
 Resolution changed from fixed to duplicate

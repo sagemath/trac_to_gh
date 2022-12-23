@@ -1,11 +1,21 @@
 # Issue 8224: help(w) is broken for infinite word w defined by a callable
 
-Issue created by migration from https://trac.sagemath.org/ticket/8224
-
-Original creator: slabbe
-
-Original creation time: 2010-02-09 22:51:52
-
+archive/issues_008224.json:
+```json
+{
+    "body": "Assignee: slabbe\n\nCC:  jhpalmieri mpatel\n\nKeywords: help\n\nThe following works :\n\n\n```\nsage: w = Word(range(10))\nsage: help(w)\n```\n\n\nbut this one :\n\n\n```\nsage: w = Word(lambda n:n)\nsage: w\nword: 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,...\nsage: help(w)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/slabbe/Applications/sage-4.3.2/devel/sage-combinat/sage/combinat/words/<ipython console> in <module>()\n\n/Users/slabbe/Applications/sage-4.3.2/local/lib/python2.6/site-packages/sage/misc/sagedoc.pyc in help(module)\n   1202         Welcome to Sage ...\n   1203     \"\"\"    \n-> 1204     if module:\n   1205         python_help(module)\n   1206     else:\n\nTypeError: an integer is required\n```\n\n\nneither the following :\n\n\n```\nsage: from itertools import repeat\nsage: w = Word(repeat(4))\nsage: w\nword: 4444444444444444444444444444444444444444...\nsage: help(w)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/slabbe/Applications/sage-4.3.2/devel/sage-combinat/sage/combinat/words/<ipython console> in <module>()\n\n/Users/slabbe/Applications/sage-4.3.2/local/lib/python2.6/site-packages/sage/misc/sagedoc.pyc in help(module)\n   1202         Welcome to Sage ...\n   1203     \"\"\"    \n-> 1204     if module:\n   1205         python_help(module)\n   1206     else:\n\nTypeError: an integer is required\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8224\n\n",
+    "created_at": "2010-02-09T22:51:52Z",
+    "labels": [
+        "documentation",
+        "major",
+        "bug"
+    ],
+    "title": "help(w) is broken for infinite word w defined by a callable",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8224",
+    "user": "slabbe"
+}
+```
 Assignee: slabbe
 
 CC:  jhpalmieri mpatel
@@ -70,22 +80,61 @@ TypeError: an integer is required
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8224
+
+
+
+
 
 ---
+
+archive/issue_comments_072621.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-02-09T23:59:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8224",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8224#issuecomment-72621",
+    "user": "slabbe"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by slabbe created at 2010-02-10 00:00:32
+archive/issue_comments_072622.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-02-10T00:00:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8224",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8224#issuecomment-72622",
+    "user": "slabbe"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by slabbe created at 2010-02-14 22:55:56
+archive/issue_comments_072623.json:
+```json
+{
+    "body": "Dear Mitesh Patel,\n\nI am adding you in cc to this ticket since you were involved in #6820, you might want to review this ticket.\n\nThank you,\n\nS\u00e9bastien",
+    "created_at": "2010-02-14T22:55:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8224",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8224#issuecomment-72623",
+    "user": "slabbe"
+}
+```
 
 Dear Mitesh Patel,
 
@@ -96,29 +145,73 @@ Thank you,
 Sébastien
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-15 05:54:34
+archive/issue_comments_072624.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-02-15T05:54:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8224",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8224#issuecomment-72624",
+    "user": "mpatel"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-15 05:54:34
+archive/issue_comments_072625.json:
+```json
+{
+    "body": "The patch looks good, and it works for me.  I've added Dr. Palmieri to the CC: list, in case I've missed something.",
+    "created_at": "2010-02-15T05:54:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8224",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8224#issuecomment-72625",
+    "user": "mpatel"
+}
+```
 
 The patch looks good, and it works for me.  I've added Dr. Palmieri to the CC: list, in case I've missed something.
 
 
+
 ---
 
-Comment by mvngu created at 2010-02-17 00:11:08
+archive/issue_comments_072626.json:
+```json
+{
+    "body": "I have merged [trac_8224_help_fix-sl.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8224/trac_8224_help_fix-sl.patch) with a sensible commit message containing the ticket number.",
+    "created_at": "2010-02-17T00:11:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8224",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8224#issuecomment-72626",
+    "user": "mvngu"
+}
+```
 
 I have merged [trac_8224_help_fix-sl.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8224/trac_8224_help_fix-sl.patch) with a sensible commit message containing the ticket number.
 
 
+
 ---
 
-Comment by mvngu created at 2010-02-17 00:11:08
+archive/issue_comments_072627.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-02-17T00:11:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8224",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8224#issuecomment-72627",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

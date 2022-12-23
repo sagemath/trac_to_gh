@@ -1,232 +1,589 @@
 # Issue 9892: Make PARI *not* catch signals
 
-Issue created by migration from https://trac.sagemath.org/ticket/9893
-
-Original creator: jdemeyer
-
-Original creation time: 2010-09-10 21:59:30
-
+archive/issues_009892.json:
+```json
+{
+    "body": "Assignee: tba\n\nCC:  leif robertwb\n\nIn Sage, there is no reason for the PARI library to catch signals (by default, it catches SIGBUS, SIGFPE, SIGINT, SIGBREAK, SIGPIPE, SIGSEGV).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9893\n\n",
+    "created_at": "2010-09-10T21:59:30Z",
+    "labels": [
+        "c_lib",
+        "minor",
+        "enhancement"
+    ],
+    "title": "Make PARI *not* catch signals",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9892",
+    "user": "jdemeyer"
+}
+```
 Assignee: tba
 
 CC:  leif robertwb
 
 In Sage, there is no reason for the PARI library to catch signals (by default, it catches SIGBUS, SIGFPE, SIGINT, SIGBREAK, SIGPIPE, SIGSEGV).
 
+Issue created by migration from https://trac.sagemath.org/ticket/9893
+
+
+
+
 
 ---
 
-Comment by jdemeyer created at 2010-09-12 08:35:45
+archive/issue_comments_098050.json:
+```json
+{
+    "body": "Changing component from c_lib to interfaces.",
+    "created_at": "2010-09-12T08:35:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9892",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9892#issuecomment-98050",
+    "user": "jdemeyer"
+}
+```
 
 Changing component from c_lib to interfaces.
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-09-12 08:35:45
+archive/issue_comments_098051.json:
+```json
+{
+    "body": "Changing assignee from tba to was.",
+    "created_at": "2010-09-12T08:35:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9892",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9892#issuecomment-98051",
+    "user": "jdemeyer"
+}
+```
 
 Changing assignee from tba to was.
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-09-12 09:37:18
+archive/issue_comments_098052.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-09-12T09:37:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9892",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9892#issuecomment-98052",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-09-26 17:26:03
+archive/issue_comments_098053.json:
+```json
+{
+    "body": "This seems to influence #10018, so both #9893 and #10018 should probably be handled together.",
+    "created_at": "2010-09-26T17:26:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9892",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9892#issuecomment-98053",
+    "user": "jdemeyer"
+}
+```
 
 This seems to influence #10018, so both #9893 and #10018 should probably be handled together.
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-09-26 17:26:03
+archive/issue_comments_098054.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-09-26T17:26:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9892",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9892#issuecomment-98054",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-09-27 09:00:19
+archive/issue_comments_098055.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-09-27T09:00:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9892",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9892#issuecomment-98055",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by davidloeffler created at 2010-09-29 07:26:21
+archive/issue_comments_098056.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-09-29T07:26:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9892",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9892#issuecomment-98056",
+    "user": "davidloeffler"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by davidloeffler created at 2010-09-29 07:26:21
+archive/issue_comments_098057.json:
+```json
+{
+    "body": "Positive review of the proposal to close as duplicate.",
+    "created_at": "2010-09-29T07:26:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9892",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9892#issuecomment-98057",
+    "user": "davidloeffler"
+}
+```
 
 Positive review of the proposal to close as duplicate.
 
 
+
 ---
 
-Comment by mpatel created at 2010-10-03 09:37:51
+archive/issue_comments_098058.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2010-10-03T09:37:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9892",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9892#issuecomment-98058",
+    "user": "mpatel"
+}
+```
 
 Resolution: duplicate
 
 
+
 ---
 
-Comment by mpatel created at 2010-10-03 09:37:51
+archive/issue_comments_098059.json:
+```json
+{
+    "body": "I'm closing this now.  Feel free to reopen it, if #10018 ultimately does not subsume this.",
+    "created_at": "2010-10-03T09:37:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9892",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9892#issuecomment-98059",
+    "user": "mpatel"
+}
+```
 
 I'm closing this now.  Feel free to reopen it, if #10018 ultimately does not subsume this.
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-10-17 08:39:22
+archive/issue_comments_098060.json:
+```json
+{
+    "body": "Changing status from closed to needs_work.",
+    "created_at": "2010-10-17T08:39:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9892",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9892#issuecomment-98060",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from closed to needs_work.
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-10-17 08:39:22
+archive/issue_comments_098061.json:
+```json
+{
+    "body": "Reopening this to collect the minimal changes required in PARI to make #9678 work.  This patch here will then become a prerequisite for #9678.",
+    "created_at": "2010-10-17T08:39:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9892",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9892#issuecomment-98061",
+    "user": "jdemeyer"
+}
+```
 
 Reopening this to collect the minimal changes required in PARI to make #9678 work.  This patch here will then become a prerequisite for #9678.
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-10-17 08:39:22
+archive/issue_comments_098062.json:
+```json
+{
+    "body": "Changing priority from minor to major.",
+    "created_at": "2010-10-17T08:39:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9892",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9892#issuecomment-98062",
+    "user": "jdemeyer"
+}
+```
 
 Changing priority from minor to major.
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-10-17 08:39:22
+archive/issue_comments_098063.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"pari signals\".",
+    "created_at": "2010-10-17T08:39:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9892",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9892#issuecomment-98063",
+    "user": "jdemeyer"
+}
+```
 
 Changing keywords from "" to "pari signals".
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-10-19 20:46:32
+archive/issue_comments_098064.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-10-19T20:46:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9892",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9892#issuecomment-98064",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-10-19 20:46:32
+archive/issue_comments_098065.json:
+```json
+{
+    "body": "All long doctests pass on a 32-bit PPC OS X 10.4 and on a 64-bit Intel Linux.  This patch was first included in #10018, then in #9678 and now I have separated it again in order to make #9678 not too much of a patch bomb.  The current version of the patch is pretty much the same as the old version of 5 weeks ago.  The patch makes sense by itself, but of course it is partially motivated by #9678.  Remark also that currently all tests in `sage/libs/pari` pass with #9678, #10061 and #10030 applied.",
+    "created_at": "2010-10-19T20:46:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9892",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9892#issuecomment-98065",
+    "user": "jdemeyer"
+}
+```
 
 All long doctests pass on a 32-bit PPC OS X 10.4 and on a 64-bit Intel Linux.  This patch was first included in #10018, then in #9678 and now I have separated it again in order to make #9678 not too much of a patch bomb.  The current version of the patch is pretty much the same as the old version of 5 weeks ago.  The patch makes sense by itself, but of course it is partially motivated by #9678.  Remark also that currently all tests in `sage/libs/pari` pass with #9678, #10061 and #10030 applied.
 
 
+
 ---
 
-Comment by robertwb created at 2010-10-22 05:16:20
+archive/issue_comments_098066.json:
+```json
+{
+    "body": "In general I'm a fan of using try...finally to handle sig_on/sig_off where there are many exits to a function, especially if exceptions are involved. (It can also alleviate the use of temporary variables to return something, but that's a matter of taste.)\n\nSpeed is important for new_gen_from_mpz_t, which is why we don't set up signals for \"small\" values. This behavior should be preserved.",
+    "created_at": "2010-10-22T05:16:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9892",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9892#issuecomment-98066",
+    "user": "robertwb"
+}
+```
 
 In general I'm a fan of using try...finally to handle sig_on/sig_off where there are many exits to a function, especially if exceptions are involved. (It can also alleviate the use of temporary variables to return something, but that's a matter of taste.)
 
 Speed is important for new_gen_from_mpz_t, which is why we don't set up signals for "small" values. This behavior should be preserved.
 
 
+
 ---
 
-Comment by robertwb created at 2010-10-22 05:16:20
+archive/issue_comments_098067.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-10-22T05:16:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9892",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9892#issuecomment-98067",
+    "user": "robertwb"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
+
+archive/issue_comments_098068.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-10-22T11:59:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9892",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9892#issuecomment-98068",
+    "user": "jdemeyer"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-10-22 13:20:38
+archive/issue_comments_098069.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-10-22T13:20:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9892",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9892#issuecomment-98069",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-10-26 12:03:02
+archive/issue_comments_098070.json:
+```json
+{
+    "body": "New patch still needs review....",
+    "created_at": "2010-10-26T12:03:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9892",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9892#issuecomment-98070",
+    "user": "jdemeyer"
+}
+```
 
 New patch still needs review....
 
 
+
 ---
 
-Comment by robertwb created at 2010-11-05 03:51:17
+archive/issue_comments_098071.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-11-05T03:51:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9892",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9892#issuecomment-98071",
+    "user": "robertwb"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by robertwb created at 2010-11-05 03:51:17
+archive/issue_comments_098072.json:
+```json
+{
+    "body": "Looks good to me, though I haven't had time to run all tests yet.",
+    "created_at": "2010-11-05T03:51:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9892",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9892#issuecomment-98072",
+    "user": "robertwb"
+}
+```
 
 Looks good to me, though I haven't had time to run all tests yet.
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-11-05 08:28:23
+archive/issue_comments_098073.json:
+```json
+{
+    "body": "Replying to [comment:15 robertwb]:\n> Looks good to me\nThanks!",
+    "created_at": "2010-11-05T08:28:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9892",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9892#issuecomment-98073",
+    "user": "jdemeyer"
+}
+```
 
 Replying to [comment:15 robertwb]:
 > Looks good to me
 Thanks!
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-11-10 22:20:30
+archive/issue_comments_098074.json:
+```json
+{
+    "body": "Resolution changed from duplicate to fixed",
+    "created_at": "2010-11-10T22:20:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9892",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9892#issuecomment-98074",
+    "user": "jdemeyer"
+}
+```
 
 Resolution changed from duplicate to fixed
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-11-12 13:24:49
+archive/issue_comments_098075.json:
+```json
+{
+    "body": "Resolution changed from fixed to ",
+    "created_at": "2010-11-12T13:24:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9892",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9892#issuecomment-98075",
+    "user": "jdemeyer"
+}
+```
 
 Resolution changed from fixed to 
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-11-12 13:24:49
+archive/issue_comments_098076.json:
+```json
+{
+    "body": "Changing status from closed to new.",
+    "created_at": "2010-11-12T13:24:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9892",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9892#issuecomment-98076",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from closed to new.
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-11-12 13:24:56
+archive/issue_comments_098077.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-11-12T13:24:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9892",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9892#issuecomment-98077",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-11-12 13:25:03
+archive/issue_comments_098078.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-11-12T13:25:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9892",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9892#issuecomment-98078",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-11-13 10:51:30
+archive/issue_comments_098079.json:
+```json
+{
+    "body": "I decided not to merge this in sage-4.6.1.alpha1 because I thought it might be the cause for #9163 (it turns out that's not the case).",
+    "created_at": "2010-11-13T10:51:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9892",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9892#issuecomment-98079",
+    "user": "jdemeyer"
+}
+```
 
 I decided not to merge this in sage-4.6.1.alpha1 because I thought it might be the cause for #9163 (it turns out that's not the case).
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-11-15 23:26:38
+archive/issue_comments_098080.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-11-15T23:26:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9892",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9892#issuecomment-98080",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: fixed

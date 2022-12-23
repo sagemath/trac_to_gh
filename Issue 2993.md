@@ -1,11 +1,21 @@
 # Issue 2993: [with spkg, needs review] OSX/gcc 4.2: disable padlock support per default
 
-Issue created by migration from https://trac.sagemath.org/ticket/2993
-
-Original creator: mabshoff
-
-Original creation time: 2008-04-21 21:57:20
-
+archive/issues_002993.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nRob Goedman reported:\n\n```\nRobs-Intel:sage-3.0.rc0 rob$ gcc -v\nUsing built-in specs.\nTarget: i686-apple-darwin9\nConfigured with: /var/tmp/gcc_42/gcc_42-5531~1/src/configure --disable-\nchecking -enable-werror --prefix=/usr --mandir=/usr/share/man --enable-\nlanguages=c,objc,c++,obj-c++ --program-transform-name=/^[cg][^.-]*$/s/\n$/-4.2/ --with-gxx-include-dir=/usr/include/c++/4.0.0 --with-slibdir=/\nusr/lib --build=i686-apple-darwin9 --host=i686-apple-darwin9 --\ntarget=i686-apple-darwin9\nThread model: posix\ngcc version 4.2.1 (Apple Inc. build 5531)\n\nmake gives below (summarized) error on 2.11, alpha6, rc0 and rc1.  \nBelow attachment contains the complete rc1 install.log .\n\nIf, as a quick test, the Mac specific '-fasm-blocks' flag is added in  \nthe subdir cipher, make complains about the assembler code in the asm  \nblock in poll_padlock.\n\nDo I have to disable ENABLE_PADLOCK_SUPPORT? If so, can I force the  \nsage make to use './configure -disable_padlock_support'?\n\nAs this is not related to the upcoming Sage 3.0 release, I'm fine to  \nwait for a binary release, although ultimately I would like to be able  \nto build sage myself. \n```\n\n\nThe spkg at\n\nhttp://sage.math.washington.edu/home/mabshoff/SPKG/libgcrypt-1.4.0.p2.spkg\n\nwill hopefully fix the issue.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2993\n\n",
+    "created_at": "2008-04-21T21:57:20Z",
+    "labels": [
+        "packages: standard",
+        "critical",
+        "bug"
+    ],
+    "title": "[with spkg, needs review] OSX/gcc 4.2: disable padlock support per default",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2993",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 Rob Goedman reported:
@@ -49,17 +59,43 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/2993
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-04-21 21:57:26
+archive/issue_comments_020593.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-04-21T21:57:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2993",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2993#issuecomment-20593",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-23 11:44:35
+archive/issue_comments_020594.json:
+```json
+{
+    "body": "Reviewed in https://groups.google.com/group/sage-devel/t/dbf2716e5c97e64b by Rob Goedman:\n\n```\nMichael, Thanks a lot. The new libgcrypt-1.4.0.p2.spkg indeed does fix the   problem, at least during the make!\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2008-04-23T11:44:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2993",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2993#issuecomment-20594",
+    "user": "mabshoff"
+}
+```
 
 Reviewed in https://groups.google.com/group/sage-devel/t/dbf2716e5c97e64b by Rob Goedman:
 
@@ -73,15 +109,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-23 11:45:20
+archive/issue_comments_020595.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-04-23T11:45:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2993",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2993#issuecomment-20595",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-23 11:45:20
+archive/issue_comments_020596.json:
+```json
+{
+    "body": "Merged in Sage 3.0.1.alpha0",
+    "created_at": "2008-04-23T11:45:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2993",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2993#issuecomment-20596",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.1.alpha0

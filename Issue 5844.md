@@ -1,11 +1,21 @@
 # Issue 5844: [with patch, needs review] Improvement of {{{PermutationGroup_generic.has_element()}}} and {{{is_subgroup}}}
 
-Issue created by migration from https://trac.sagemath.org/ticket/5844
-
-Original creator: SimonKing
-
-Original creation time: 2009-04-21 09:29:03
-
+archive/issues_005844.json:
+```json
+{
+    "body": "Assignee: SimonKing\n\nKeywords: PermutationGroup has_element is_subgroup\n\nThe old version of `PermutationGroup_generic.has_element(self,item)` is\n\n```\n        item = PermutationGroupElement(item, self, check=False)\n        return item in self.list()\n```\n\n\nHence, the whole list of elements must be created! Instead, I suggest to invoke `PermutationGroup_generic.__contains__()`, hence:\n\n```\n        item = PermutationGroupElement(item, self, check=False)\n        return item in self\n```\n\nThe only difference between `has_element` and `__contains__` then is that the former may raise an error if one can not make a `PermutationGroupElement` out of the item.\n\nThe performance considerably improves. Here are indirect. The method `is_subgroup()` calls `has_element`.\nWith the patch, one has:\n\n```\nsage: G=SymmetricGroup(7)\nsage: H=SymmetricGroup(6)\nsage: H.is_subgroup(G)\nTrue\nsage: timeit('H.is_subgroup(G)')\n625 loops, best of 3: 50.5 \u00c2\u00b5s per loop\n```\n\n\nTo my surprise, Gap is slower:\n\n```\nsage: timeit('gap(H).IsSubgroup(gap(G))')\n5 loops, best of 3: 1.55 ms per loop\n```\n\n\nWithout the patch, the computation is *very* slow:\n\n```\nsage: time H.is_subgroup(G)\nCPU times: user 3.94 s, sys: 0.51 s, total: 4.45 s\nWall time: 4.80 s\nTrue\n```\n\n\nLast, I'd like to demonstrate the difference between `has_element()` and `__contains__()`:\n\n```\nsage: 1 in G\nTrue  # since G(1) is the trivial permutation\nsage: G.has_element(1) \nERROR: An unexpected error occurred while tokenizing input\n...\nTypeError: 'sage.rings.integer.Integer' object is not iterable\n```\n\nThe latter is what happens when trying conversion of 1 into a `PermutationGroupElement`.\n\n__Conclusion__:\n\nThe change that I made is very small but yields a huge improvement. However, what was the original reason to write `has_element` in that way? Does `g in G` sometimes return an answer different from `g in G.list()`, if g is a `PermutationGroupElement`?\n\nIssue created by migration from https://trac.sagemath.org/ticket/5844\n\n",
+    "created_at": "2009-04-21T09:29:03Z",
+    "labels": [
+        "group theory",
+        "minor",
+        "bug"
+    ],
+    "title": "[with patch, needs review] Improvement of {{{PermutationGroup_generic.has_element()}}} and {{{is_subgroup}}}",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5844",
+    "user": "SimonKing"
+}
+```
 Assignee: SimonKing
 
 Keywords: PermutationGroup has_element is_subgroup
@@ -48,7 +58,7 @@ sage: timeit('gap(H).IsSubgroup(gap(G))')
 ```
 
 
-Without the patch, the computation is _very_ slow:
+Without the patch, the computation is *very* slow:
 
 ```
 sage: time H.is_subgroup(G)
@@ -75,29 +85,79 @@ __Conclusion__:
 
 The change that I made is very small but yields a huge improvement. However, what was the original reason to write `has_element` in that way? Does `g in G` sometimes return an answer different from `g in G.list()`, if g is a `PermutationGroupElement`?
 
+Issue created by migration from https://trac.sagemath.org/ticket/5844
+
+
+
+
 
 ---
 
-Comment by SimonKing created at 2009-04-21 09:29:35
+archive/issue_comments_045959.json:
+```json
+{
+    "body": "Improved performance of has_element and thus of is_subgroup",
+    "created_at": "2009-04-21T09:29:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5844",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5844#issuecomment-45959",
+    "user": "SimonKing"
+}
+```
 
 Improved performance of has_element and thus of is_subgroup
 
 
+
 ---
+
+archive/issue_comments_045960.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-04-21T09:45:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5844",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5844#issuecomment-45960",
+    "user": "SimonKing"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by SimonKing created at 2009-04-21 09:45:14
+archive/issue_comments_045961.json:
+```json
+{
+    "body": "Changing type from defect to enhancement.",
+    "created_at": "2009-04-21T09:45:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5844",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5844#issuecomment-45961",
+    "user": "SimonKing"
+}
+```
 
 Changing type from defect to enhancement.
 
 
+
 ---
 
-Comment by wdj created at 2009-04-21 19:59:48
+archive/issue_comments_045962.json:
+```json
+{
+    "body": "I got doc-test failures in these modules:\n\n\n```\n        sage -t  \"devel/sage/sage/groups/perm_gps/permgroup.py\"\n        sage -t  \"devel/sage/sage/groups/abelian_gps/abelian_group.py\"\n        sage -t  \"devel/sage/sage/groups/abelian_gps/abelian_group_element.py\"\n        sage -t  \"devel/sage/sage/groups/class_function.py\"\n```\n\n\nI'm using gap4.4.10 but the error in permgroup.py seems to\nbe a result of this patch.",
+    "created_at": "2009-04-21T19:59:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5844",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5844#issuecomment-45962",
+    "user": "wdj"
+}
+```
 
 I got doc-test failures in these modules:
 
@@ -114,9 +174,20 @@ I'm using gap4.4.10 but the error in permgroup.py seems to
 be a result of this patch.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-21 22:15:48
+archive/issue_comments_045963.json:
+```json
+{
+    "body": "Wiki text has no effect in the summary, so change it.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-21T22:15:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5844",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5844#issuecomment-45963",
+    "user": "mabshoff"
+}
+```
 
 Wiki text has no effect in the summary, so change it.
 
@@ -125,9 +196,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by SimonKing created at 2009-04-22 07:43:06
+archive/issue_comments_045964.json:
+```json
+{
+    "body": "Replying to [comment:3 wdj]:\n> I got doc-test failures in these modules:\n> ...\n\nHere is the reason:\n\n`G.has_element()` first turns the input `item` into a `PermutationGroupElement` with parent `G`, using `check=False`. So, from now on, the parent of `item` is `G`.\n\nThe old version then tests if it is contained in the list of elements. The new version tests whether `item in G`. The problem is that `item in G` just tries `PermutationGroupElement(item,G,check=True)` -- if there is an error then False is returned. \n\nBut at that point, the parent of `item` is `G`, hence, `PermutationGroupElement(item,G,check=True)` does not raise an error, and True is returned!\n\nAnyway. What was the reason to implement `has_element`? What is the purpose of it, in contrast to `__contains__`? \n\nIf both are just tests for containment then `has_element` should be removed, respectively should be an alias for `__contains__`.",
+    "created_at": "2009-04-22T07:43:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5844",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5844#issuecomment-45964",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:3 wdj]:
 > I got doc-test failures in these modules:
@@ -146,16 +228,40 @@ Anyway. What was the reason to implement `has_element`? What is the purpose of i
 If both are just tests for containment then `has_element` should be removed, respectively should be an alias for `__contains__`.
 
 
+
 ---
+
+archive/issue_comments_045965.json:
+```json
+{
+    "body": "Attachment\n\nReplace has_element by __contains__",
+    "created_at": "2009-04-22T07:50:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5844",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5844#issuecomment-45965",
+    "user": "SimonKing"
+}
+```
 
 Attachment
 
 Replace has_element by __contains__
 
 
+
 ---
 
-Comment by SimonKing created at 2009-04-22 07:55:54
+archive/issue_comments_045966.json:
+```json
+{
+    "body": "OK, here is a second patch, to be applied after the first. With it, all above-mentioned doc tests pass. Now, `G.has_element(x)` just returns `x in G`\n\nNote that above I pointed out one difference between the old version of `has_element()` and `__contains__()`: In the old version, `G.has_element(1)` raised an error. Now, it does not, since `G.__contains__(1)` interpretes 1 as the trivial group element.\n\nBut, as much as I understand, this is the only mathematical difference between the old and the new version.",
+    "created_at": "2009-04-22T07:55:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5844",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5844#issuecomment-45966",
+    "user": "SimonKing"
+}
+```
 
 OK, here is a second patch, to be applied after the first. With it, all above-mentioned doc tests pass. Now, `G.has_element(x)` just returns `x in G`
 
@@ -164,18 +270,40 @@ Note that above I pointed out one difference between the old version of `has_ele
 But, as much as I understand, this is the only mathematical difference between the old and the new version.
 
 
+
 ---
 
-Comment by wdj created at 2009-04-25 00:28:52
+archive/issue_comments_045967.json:
+```json
+{
+    "body": "Applies to 3.4.1.rc3 and seems to pass all tests (my copy has massive failures both due to the gap interface and the maxima interface, but these seem unrelated to these patches).\n\nPostive. Review. Thanks Simon and sorry for the delay - it's the end of the semester here...",
+    "created_at": "2009-04-25T00:28:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5844",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5844#issuecomment-45967",
+    "user": "wdj"
+}
+```
 
 Applies to 3.4.1.rc3 and seems to pass all tests (my copy has massive failures both due to the gap interface and the maxima interface, but these seem unrelated to these patches).
 
 Postive. Review. Thanks Simon and sorry for the delay - it's the end of the semester here...
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-25 01:09:51
+archive/issue_comments_045968.json:
+```json
+{
+    "body": "Replying to [comment:8 wdj]:\n\nHi David,\n\n> Applies to 3.4.1.rc3 and seems to pass all tests (my copy has massive failures both due to the gap interface and the maxima interface, but these seem unrelated to these patches).\n\nWhy don't you doctest on sage.math? You can do it in parallel, there is *always* a binary and it works unless otherwise noted in the release notes.\n\n> Postive. Review. Thanks Simon and sorry for the delay - it's the end of the semester here...\n\nDo not give positive reviews to any ticket that does not pass doctests, even if you assume it is unrelated to failures you see. The whole point of doctesting is to also verify that no side effects cause any trouble and given that you see GAP failures I cannot honestly see how this patch could not potentially cause trouble here. \n\nI am doctesting this patch against my current merge tree to see if there are any issues.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-25T01:09:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5844",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5844#issuecomment-45968",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:8 wdj]:
 
@@ -196,9 +324,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-25 02:03:20
+archive/issue_comments_045969.json:
+```json
+{
+    "body": "For the record: The two patches merge in 3.4.2.a0 and pass all doctests on sage.math.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-25T02:03:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5844",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5844#issuecomment-45969",
+    "user": "mabshoff"
+}
+```
 
 For the record: The two patches merge in 3.4.2.a0 and pass all doctests on sage.math.
 
@@ -207,9 +346,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by SimonKing created at 2009-04-26 10:37:38
+archive/issue_comments_045970.json:
+```json
+{
+    "body": "Replying to [comment:10 mabshoff]:\n> For the record: The two patches merge in 3.4.2.a0 and pass all doctests on sage.math.\n\nShouldn't the ticket be closed, then? \n\nCheers,\n Simon",
+    "created_at": "2009-04-26T10:37:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5844",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5844#issuecomment-45970",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:10 mabshoff]:
 > For the record: The two patches merge in 3.4.2.a0 and pass all doctests on sage.math.
@@ -220,9 +370,20 @@ Cheers,
  Simon
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-26 10:43:28
+archive/issue_comments_045971.json:
+```json
+{
+    "body": "> Shouldn't the ticket be closed, then? \n\nWell, I did not merge the patches yet, so no.\n \n> Cheers,\n>  Simon\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-26T10:43:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5844",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5844#issuecomment-45971",
+    "user": "mabshoff"
+}
+```
 
 > Shouldn't the ticket be closed, then? 
 
@@ -236,16 +397,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-13 19:05:31
+archive/issue_comments_045972.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-05-13T19:05:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5844",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5844#issuecomment-45972",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-13 19:05:31
+archive/issue_comments_045973.json:
+```json
+{
+    "body": "Merged both patches in Sage 4.0.alpha0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-05-13T19:05:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5844",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5844#issuecomment-45973",
+    "user": "mabshoff"
+}
+```
 
 Merged both patches in Sage 4.0.alpha0.
 

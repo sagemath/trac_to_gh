@@ -1,11 +1,21 @@
 # Issue 8113: gd-2.0.35.p3 fails to build on Open Solaris x64 as 64 bit without setting CFLAGS=-64 globally
 
-Issue created by migration from https://trac.sagemath.org/ticket/8113
-
-Original creator: jsp
-
-Original creation time: 2010-01-28 17:24:13
-
+archive/issues_008113.json:
+```json
+{
+    "body": "Assignee: AlexGhitza\n\nCC:  drkirkby\n\nBuild will be 32 bit, even when SAGE64=\"yes\".\n\nThere is a simple patch coming up.\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8113\n\n",
+    "created_at": "2010-01-28T17:24:13Z",
+    "labels": [
+        "algebra",
+        "major",
+        "bug"
+    ],
+    "title": "gd-2.0.35.p3 fails to build on Open Solaris x64 as 64 bit without setting CFLAGS=-64 globally",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8113",
+    "user": "jsp"
+}
+```
 Assignee: AlexGhitza
 
 CC:  drkirkby
@@ -18,22 +28,61 @@ Jaap
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8113
+
+
+
+
 
 ---
+
+archive/issue_comments_071230.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-01-28T17:36:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8113",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8113#issuecomment-71230",
+    "user": "jsp"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by jsp created at 2010-01-28 17:43:46
+archive/issue_comments_071231.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-01-28T17:43:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8113",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8113#issuecomment-71231",
+    "user": "jsp"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jsp created at 2010-01-28 17:43:46
+archive/issue_comments_071232.json:
+```json
+{
+    "body": "I would say the usual act in spkg-install. See the patch.\n\n\nThe spkg is here:\n[http://boxen.math.washington.edu/home/jsp/ports/gd-2.0.35.p4.spkg](http://boxen.math.washington.edu/home/jsp/ports/gd-2.0.35.p4.spkg)\n\n\n\n```\njaap@opensolaris:~/Downloads/sage-4.3.2.alpha0/local$ file lib/libgd.so\nlib/libgd.so:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\n\n```\n\n\nJaap",
+    "created_at": "2010-01-28T17:43:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8113",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8113#issuecomment-71232",
+    "user": "jsp"
+}
+```
 
 I would say the usual act in spkg-install. See the patch.
 
@@ -53,23 +102,56 @@ lib/libgd.so:	ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, no
 Jaap
 
 
+
 ---
 
-Comment by jsp created at 2010-01-29 16:23:42
+archive/issue_comments_071233.json:
+```json
+{
+    "body": "Changing component from algebra to porting.",
+    "created_at": "2010-01-29T16:23:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8113",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8113#issuecomment-71233",
+    "user": "jsp"
+}
+```
 
 Changing component from algebra to porting.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-01-29 18:29:09
+archive/issue_comments_071234.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-01-29T18:29:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8113",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8113#issuecomment-71234",
+    "user": "drkirkby"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-01-29 18:29:09
+archive/issue_comments_071235.json:
+```json
+{
+    "body": "The files are indeed 64-bit now \n\n\n```\ndrkirkby@hawk:~/sage-4.3.1$ file local/bin/annotate\nlocal/bin/annotate:\tELF 64-bit LSB executable AMD64 Version 1, dynamically linked, not stripped\ndrkirkby@hawk:~/sage-4.3.1$ file local/lib/libgd.so.2.0.0\nlocal/lib/libgd.so.2.0.0:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\n```\n",
+    "created_at": "2010-01-29T18:29:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8113",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8113#issuecomment-71235",
+    "user": "drkirkby"
+}
+```
 
 The files are indeed 64-bit now 
 
@@ -83,8 +165,19 @@ local/lib/libgd.so.2.0.0:	ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamicall
 
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-11 15:16:29
+archive/issue_comments_071236.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-02-11T15:16:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8113",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8113#issuecomment-71236",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed

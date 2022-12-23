@@ -1,11 +1,21 @@
 # Issue 9871: PolyBoRi incorrectly reports a GNU linker is used with gcc and produces libraries with text relocations.
 
-Issue created by migration from https://trac.sagemath.org/ticket/9872
-
-Original creator: drkirkby
-
-Original creation time: 2010-09-08 03:52:49
-
+archive/issues_009871.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  polybori jhpalmieri alexanderdreyer\n\nWhen I try to build PolyBoRi on a Sun Ultra 27 running OpenSolaris, I notice the message:\n\n\n```\nGNU linker detected!\n```\n\n\nThis message is in the SConstruct file and comes from some discussions on #6437.\n\nIt would appear the test is not useful on OpenSolaris, as the linker now takes the GNU options too. however, I don't feel this is a the cause of the main problem. \n\nA problem exists in that the link-editor thinks the library contains code which is not position independant - i.e. it is not PIC. This can be seen with the `elfdump` command. \n\n\n```\ndrkirkby@hawk:~/sage-4.5.3/local/lib$ elfdump -d libpolybori-0.6.4.so | grep TEXTREL\n      [25]  TEXTREL           0                   \n      [34]  FLAGS             0x4                 [ TEXTREL ]\n```\n\n\nand, what I assume is part of PolyBoRi as the version number is identical. \n\n\n```\ndrkirkby@hawk:~/sage-4.5.3/local/lib$ elfdump -d libgroebner-0.6.4.so  | grep TEXTREL\n      [25]  TEXTREL           0                   \n      [34]  FLAGS             0x4                 [ TEXTREL ]\n```\n\n\nThis is a bad sign - see for example \n\nhttp://blogs.sun.com/rie/entry/my_relocations_don_t_fit\n\nThere should be no output from the above command, which is the case with most libraries. (Only ECL, PolyBoRi and Cliquer have this problem, but I've solved the Cliquer issue - see #9871)\n\nAs far as I can tell, -fPIC is used when building all the files, so there must be another reason for this problem. \n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/9872\n\n",
+    "created_at": "2010-09-08T03:52:49Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "PolyBoRi incorrectly reports a GNU linker is used with gcc and produces libraries with text relocations.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9871",
+    "user": "drkirkby"
+}
+```
 Assignee: tbd
 
 CC:  polybori jhpalmieri alexanderdreyer
@@ -52,10 +62,25 @@ As far as I can tell, -fPIC is used when building all the files, so there must b
 
 Dave 
 
+Issue created by migration from https://trac.sagemath.org/ticket/9872
+
+
+
+
 
 ---
 
-Comment by AlexanderDreyer created at 2010-09-08 07:23:42
+archive/issue_comments_097555.json:
+```json
+{
+    "body": "Is the OpenSolaris environment somewhere available on sage.math? \n\nMy best,\n  Alexander",
+    "created_at": "2010-09-08T07:23:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9871",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9871#issuecomment-97555",
+    "user": "AlexanderDreyer"
+}
+```
 
 Is the OpenSolaris environment somewhere available on sage.math? 
 
@@ -63,9 +88,20 @@ My best,
   Alexander
 
 
+
 ---
 
-Comment by drkirkby created at 2010-09-08 08:40:12
+archive/issue_comments_097556.json:
+```json
+{
+    "body": "Replying to [comment:1 AlexanderDreyer]:\n> Is the OpenSolaris environment somewhere available on sage.math? \n> \n> My best,\n>   Alexander\n\nNo, there are no virtual machines on sage.math with OpenSolaris. \n\nHowever, whilst not OpenSolaris on x86, the issue with text relocations is seen on Solaris 10 on SPARC too - i.e. t2.math\n\n\n```\nkirkby@t2:64 ~/t2/32$ elfdump -d ./sage-4.5.3.alpha0/local/lib/libpolybori-0.6.4.so | grep TEXTREL\n      [19]  TEXTREL           0                   \n      [27]  FLAGS             0x4                 [ TEXTREL ]\nkirkby@t2:64 ~/t2/32$ \n```\n\n\nOn OpenSolaris, the Sun linker does actually take all the GNU options, so getting the linker wrong is not a problem, so I would not waste too much time over that.\n\nThe method chosen to get the linker is not ideal. It is based on something I wrote, but I think my method is flawed. It assumes the first linker in the path is the one used by gcc, but there is no reason for that to be so, as gcc has the linker path hard-coded. I really no not know how best to find the linker used by gcc. As a long term solution, it would probably be worth looking at how autoconf does this. \n\nIf you set up your environment on t2.math as detailed in /etc/motd, then PolyBoRi will chose the right linker, but the text relocation problem will be seen. This does not cause a problem with 32-bit builds, but it does with 64-bit builds. \n\nSince Sage is stable on 32-bit versions of Solaris 10 and OpenSolaris, we are looking to get it working 64-bit. The text relocation problem then comes more serious. There's a discussion of this issue on this blog \n\nhttp://blogs.sun.com/rie/entry/my_relocations_don_t_fit\n\nWhat I found with ECL is that the Sun compiler will in fact produce a binary that does not have the issue, but that does not help us with Sage, as we must use gcc to compile a lot of Sage. \n\nDave",
+    "created_at": "2010-09-08T08:40:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9871",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9871#issuecomment-97556",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:1 AlexanderDreyer]:
 > Is the OpenSolaris environment somewhere available on sage.math? 
@@ -101,9 +137,20 @@ What I found with ECL is that the Sun compiler will in fact produce a binary tha
 Dave
 
 
+
 ---
 
-Comment by drkirkby created at 2010-09-08 08:46:33
+archive/issue_comments_097557.json:
+```json
+{
+    "body": "Replying to [comment:2 drkirkby]:\n> What I found with ECL is that the Sun compiler will in fact produce a binary that does not have the issue, but that does not help us with Sage, as we must use gcc to compile a lot of Sage. \n> \n> Dave \n\nOne could argue this is a gcc bug, as the Sun compiler is more clever and can work around the problem, but it's a gcc issue we need to work around. With Cliquer, it was just a matter of choosing the right options for the linker (see #9871), but in some cases it may need changes to the code, as discussed on that Sun blog. \n\nDave",
+    "created_at": "2010-09-08T08:46:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9871",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9871#issuecomment-97557",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:2 drkirkby]:
 > What I found with ECL is that the Sun compiler will in fact produce a binary that does not have the issue, but that does not help us with Sage, as we must use gcc to compile a lot of Sage. 
@@ -115,16 +162,38 @@ One could argue this is a gcc bug, as the Sun compiler is more clever and can wo
 Dave
 
 
+
 ---
 
-Comment by AlexanderDreyer created at 2010-09-08 08:50:23
+archive/issue_comments_097558.json:
+```json
+{
+    "body": "Ok, may I copy your sage-4.5.3-alpha build from /scratch?",
+    "created_at": "2010-09-08T08:50:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9871",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9871#issuecomment-97558",
+    "user": "AlexanderDreyer"
+}
+```
 
 Ok, may I copy your sage-4.5.3-alpha build from /scratch?
 
 
+
 ---
 
-Comment by drkirkby created at 2010-09-08 09:38:18
+archive/issue_comments_097559.json:
+```json
+{
+    "body": "Replying to [comment:4 AlexanderDreyer]:\n> Ok, may I copy your sage-4.5.3-alpha build from /scratch?\n\nI suggest you use my build at: \n\n\n```\n/rootpool2/local/kirkby/t2/32/sage-4.5.3.rc0\n```\n\n\nas that's the latest version I have that's fully working. It passed all doc tests except one, but that then passed when I run it manually. \n\nAs you will see, it has the issue. \n\n```\nkirkby@t2:32 ~/t2/32/sage-4.5.3.rc0$ elfdump -d /rootpool2/local/kirkby/t2/32/sage-4.5.3.rc0/local/lib/libpolybori-0.6.4.so | grep TEXTREL\n      [19]  TEXTREL           0                   \n      [27]  FLAGS             0x4                 [ TEXTREL ]\n```\n\n\nDave",
+    "created_at": "2010-09-08T09:38:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9871",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9871#issuecomment-97559",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:4 AlexanderDreyer]:
 > Ok, may I copy your sage-4.5.3-alpha build from /scratch?
@@ -151,16 +220,38 @@ kirkby@t2:32 ~/t2/32/sage-4.5.3.rc0$ elfdump -d /rootpool2/local/kirkby/t2/32/sa
 Dave
 
 
+
 ---
 
-Comment by AlexanderDreyer created at 2010-09-08 19:47:02
+archive/issue_comments_097560.json:
+```json
+{
+    "body": "Does PolyBoRi really cause problems here? In Sage 4.5.3 the most recent patch #9768, which reintroduce PolyBori's dynamic libraries, is not included yet. it is a bug, that hte libraries lib*0.6.4.so are not removed after building, but Sage should link to the static libraries libpolybori.a etc.",
+    "created_at": "2010-09-08T19:47:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9871",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9871#issuecomment-97560",
+    "user": "AlexanderDreyer"
+}
+```
 
 Does PolyBoRi really cause problems here? In Sage 4.5.3 the most recent patch #9768, which reintroduce PolyBori's dynamic libraries, is not included yet. it is a bug, that hte libraries lib*0.6.4.so are not removed after building, but Sage should link to the static libraries libpolybori.a etc.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-09-08 20:02:02
+archive/issue_comments_097561.json:
+```json
+{
+    "body": "Replying to [comment:6 AlexanderDreyer]:\n> Does PolyBoRi really cause problems here? In Sage 4.5.3 the most recent patch #9768, which reintroduce PolyBori's dynamic libraries, is not included yet. it is a bug, that hte libraries lib*0.6.4.so are not removed after building, but Sage should link to the static libraries libpolybori.a etc.\n\nTo be fair I am not aware of a problem caused by PolyBoRi.\n\nBut I know the other two packages which have the text relocations issues (Cliquer and R) have both caused serious problems. Since the problems are serious enough to stop Sage building fully, I can't say what will happen with PolyBoRi. \n\nIf the shared libraries can be deleted, then that would solve the problem. But one would need to delete `libgroebner* libpboriCudd*` and `libpolybori*` Is that an acceptable solution? \n\nBTW, I found a better test for the linker - see below. I will try to get a script added to the $SAGE_LOCAL/bin to test the linker that gcc uses. \n\n\n```/bin/sh \n# Assume the -v option when passed directly to the linker \n# will output \"GNU\" or \"Binutils\" if using the GNU linker. \n# Even if some other linker accepts -v (which is quite a common option\n# for software to support), we would not expect a non-GNU linker to \n# output the text \"GNU\" or \"Binutils\"\n\n# If that does not work, assume a native linker. \n\nif [ \"x`gcc -Wl,-v 2>&1 | egrep \\\"Binutils|GNU\\\"`\" != x ] ; then \n   # It must be a GNU linker, as it has output the word \"GNU\" or \"Binutils\"\n   echo \"GNU\" \nelif [ \"x`uname`\" = xSunOS ] ; then\n  # It must be Sun's linker, as it's not GNU and there are no other linkers\n  # used on Solaris. \n  echo \"Sun\"  \nelif [ \"x`uname`\" = xHP-UX ] ; then\n  # It must be HP's linker, as it's not GNU and there are no other linkers\n  # used on HP-UX \n  echo \"HP\"  \nelif [ \"x`uname`\" = xAIX ]; then\n  # It must be IBM's linker as it's not GNU and there are no other linkers\n  # used on AIX\n  echo \"IBM\"     \nelse\n  # A rare linker like Sun's on Linux, or Intel's on Linux might \n  # get here.  \n  echo \"Unknown\" \nfi\n```\n",
+    "created_at": "2010-09-08T20:02:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9871",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9871#issuecomment-97561",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:6 AlexanderDreyer]:
 > Does PolyBoRi really cause problems here? In Sage 4.5.3 the most recent patch #9768, which reintroduce PolyBori's dynamic libraries, is not included yet. it is a bug, that hte libraries lib*0.6.4.so are not removed after building, but Sage should link to the static libraries libpolybori.a etc.
@@ -207,9 +298,20 @@ fi
 
 
 
+
 ---
 
-Comment by AlexanderDreyer created at 2010-09-08 20:13:01
+archive/issue_comments_097562.json:
+```json
+{
+    "body": "It would be `libgroebner*.so` `libpboriCudd*.so` and `libpolybori*.so`, which needs to be removed (still need the static ones!). But since I plan to reintroduce the dynamic libraries, this needs further investigation.\nBTW: how did you debig the textref issue on cliquer?\n\nI'll integrate your linke test in the next stable release.",
+    "created_at": "2010-09-08T20:13:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9871",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9871#issuecomment-97562",
+    "user": "AlexanderDreyer"
+}
+```
 
 It would be `libgroebner*.so` `libpboriCudd*.so` and `libpolybori*.so`, which needs to be removed (still need the static ones!). But since I plan to reintroduce the dynamic libraries, this needs further investigation.
 BTW: how did you debig the textref issue on cliquer?
@@ -217,9 +319,20 @@ BTW: how did you debig the textref issue on cliquer?
 I'll integrate your linke test in the next stable release.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-09-08 20:22:29
+archive/issue_comments_097563.json:
+```json
+{
+    "body": "Replying to [comment:8 AlexanderDreyer]:\n> It would be `libgroebner*.so` `libpboriCudd*.so` and `libpolybori*.so`, which needs to be removed (still need the static ones!). But since I plan to reintroduce the dynamic libraries, this needs further investigation.\n> BTW: how did you debig the textref issue on cliquer?\n\nI got there pretty quickly by changing the linker options to be the same as used on other platforms. I think R is going to be more of a challenge though - the R manual says R can't be built with gcc on 64-bit Solaris due to these problems. \n\nHowever, Leif makes an interesting remark at #9833, that a shared library should not have a main(). Do you by chance have a main in the shared library? He believes that is why Cliquer caused problems, though as I say, with different linker options the problem goes away. \n\n> I'll integrate your linker test in the next stable release.\n\nThank you. I would however use $CC rather than 'gcc'. The `-Wl,` option to pass something directly to the linker appears to work with all compilers I've tried. \n\nDave",
+    "created_at": "2010-09-08T20:22:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9871",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9871#issuecomment-97563",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:8 AlexanderDreyer]:
 > It would be `libgroebner*.so` `libpboriCudd*.so` and `libpolybori*.so`, which needs to be removed (still need the static ones!). But since I plan to reintroduce the dynamic libraries, this needs further investigation.
@@ -236,9 +349,20 @@ Thank you. I would however use $CC rather than 'gcc'. The `-Wl,` option to pass 
 Dave
 
 
+
 ---
 
-Comment by AlexanderDreyer created at 2010-09-09 10:49:36
+archive/issue_comments_097564.json:
+```json
+{
+    "body": "Ok, it seems, that this issue could be fixed in likewise manner like you fixed it for cliquer.\n\nSo, I can easily fix this upstream. Is is necessary to backport it to the spkg of #9768? (It only makes sense for that spkg, sinc the dynamic libraries were ignored before.)\n\n> > I'll integrate your linker test in the next stable release.\n> \n> Thank you. I would however use $CC rather than 'gcc'. The `-Wl,` option to pass something directly to the linker appears to work with all compilers I've tried. \n\nDo you mean the environment variable $CC? The polybori spkg already uses its value.\n\nMy best,\n   Alexander",
+    "created_at": "2010-09-09T10:49:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9871",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9871#issuecomment-97564",
+    "user": "AlexanderDreyer"
+}
+```
 
 Ok, it seems, that this issue could be fixed in likewise manner like you fixed it for cliquer.
 
@@ -254,9 +378,20 @@ My best,
    Alexander
 
 
+
 ---
 
-Comment by drkirkby created at 2010-09-09 11:13:33
+archive/issue_comments_097565.json:
+```json
+{
+    "body": "Replying to [comment:10 AlexanderDreyer]:\n> Ok, it seems, that this issue could be fixed in likewise manner like you fixed it for cliquer.\n\nNo, changing a compiler flag will not necessarily work - I just got lucky with Cliquer. \n\nIf it was a matter of just changing a compiler flag, I would have done it. There does not appear to be anything obviously wrong with the flags in PolyBoRi, though perhaps there's some subtle error I have not spotted.\n\nThere appears however to be several ways to write shared libraries which exhibit this problem - one way Leif said is to have a main(), though I've not confirmed that myself. Another is given on that Sun blog, by having data declared as constant. Another it to omit -fPIC when compiling, but I know you have not made that mistake. There are probably other ways. \n\n> So, I can easily fix this upstream. Is is necessary to backport it to the spkg of #9768? (It only makes sense for that spkg, sinc the dynamic libraries were ignored before.)\n\nIt would be good if you could remove the shared libraries, since if any code links to them, it will cause problems. I don't know enough about your code, but if there is a main() getting into the shared library code, then it might be sensible to do as Leif says, and conditionally include the main() only when building a standard-alone executable, but not when building a shared library. In essence, something like:\n\n\n```\nfoobar1() {\n} \nfoobar2(){\n}\n\n#ifdef BUILDING_EXECUTABLE\n  main() {\n  foobar1();\n  foobar2();\n} \n#endif\n```\n\nand only include the compiler flag `-DBUILDING_EXECUTABLE` when building the code for the executable and not the libraries. \n\nI've no idea if that would work with your code or not. I really don't know where the problem is, and as you can see from that Sun blog, it is not the easiest thing to track down.  \n\n> > > I'll integrate your linker test in the next stable release.\n> > \n> > Thank you. I would however use $CC rather than 'gcc'. The `-Wl,` option to pass something directly to the linker appears to work with all compilers I've tried. \n> \n> Do you mean the environment variable $CC? The polybori spkg already uses its value.\n\nYes. My test code used 'gcc' as I quickly put it together yesterday to test an idea out. I've not tested it fully, but I would certainly replace my use of gcc in that script with $CC and check it works ok. \n \n> My best,\n>    Alexander\n\nDave",
+    "created_at": "2010-09-09T11:13:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9871",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9871#issuecomment-97565",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:10 AlexanderDreyer]:
 > Ok, it seems, that this issue could be fixed in likewise manner like you fixed it for cliquer.
@@ -304,9 +439,20 @@ Yes. My test code used 'gcc' as I quickly put it together yesterday to test an i
 Dave
 
 
+
 ---
 
-Comment by AlexanderDreyer created at 2010-09-09 11:33:33
+archive/issue_comments_097566.json:
+```json
+{
+    "body": "> No, changing a compiler flag will not necessarily work - I just got lucky with Cliquer. \n> \n> If it was a matter of just changing a compiler flag, I would have done it. There does not appear to be anything obviously wrong with the flags in PolyBoRi, though perhaps there's some subtle error I have not spotted.\nMaybe, because you didn't test it with the most recent spkg, or mabe something went wrong the the flags propagation. When I changed the flags, the problem disappeared, i. e. elfdump didn't show any TEXTREL sections.\n(But of course, I could only test this on t2.) I'll try to find some time to provide an updated spkg. Then you can test it on the other systems.\n\n\n> Yes. My test code used 'gcc' as I quickly put it together yesterday to test an idea out. I've not tested it fully, but I would certainly replace my use of gcc in that script with $CC and check it works ok. \nAh, sorry, I didn't get that this was about the script.\n\nMy best,\n   Alexander",
+    "created_at": "2010-09-09T11:33:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9871",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9871#issuecomment-97566",
+    "user": "AlexanderDreyer"
+}
+```
 
 > No, changing a compiler flag will not necessarily work - I just got lucky with Cliquer. 
 > 
@@ -322,9 +468,20 @@ My best,
    Alexander
 
 
+
 ---
 
-Comment by drkirkby created at 2010-09-09 12:11:58
+archive/issue_comments_097567.json:
+```json
+{
+    "body": "Replying to [comment:12 AlexanderDreyer]:\n> > No, changing a compiler flag will not necessarily work - I just got lucky with Cliquer. \n> > \n> > If it was a matter of just changing a compiler flag, I would have done it. There does not appear to be anything obviously wrong with the flags in PolyBoRi, though perhaps there's some subtle error I have not spotted.\n> Maybe, because you didn't test it with the most recent spkg, or mabe something went wrong the the flags propagation. When I changed the flags, the problem disappeared, i. e. elfdump didn't show any TEXTREL sections.\n\nI did not test the most recent package you are correct. \n\n> (But of course, I could only test this on t2.) I'll try to find some time to provide an updated spkg. Then you can test it on the other systems.\n\n\nI think if it works on t2.math, with no text relocations, it will work on OpenSolaris and Solaris 10 on x86 too. Generally speaking, if a problem occurs on one of these systems it occurs on them all. \n\nCan you just confirm the link to download the latest version and I will do so. I need to go out now, so will be unable to report for several hours\n\nDave",
+    "created_at": "2010-09-09T12:11:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9871",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9871#issuecomment-97567",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:12 AlexanderDreyer]:
 > > No, changing a compiler flag will not necessarily work - I just got lucky with Cliquer. 
@@ -344,9 +501,20 @@ Can you just confirm the link to download the latest version and I will do so. I
 Dave
 
 
+
 ---
 
-Comment by AlexanderDreyer created at 2010-09-09 14:17:57
+archive/issue_comments_097568.json:
+```json
+{
+    "body": "Try out this one:\nhttp://sage.math.washington.edu/home/dreyer/spkg/polybori-0.6.4.p6.spkg\n\nMy best,\n  Alexander",
+    "created_at": "2010-09-09T14:17:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9871",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9871#issuecomment-97568",
+    "user": "AlexanderDreyer"
+}
+```
 
 Try out this one:
 http://sage.math.washington.edu/home/dreyer/spkg/polybori-0.6.4.p6.spkg
@@ -355,14 +523,38 @@ My best,
   Alexander
 
 
+
 ---
 
-Comment by AlexanderDreyer created at 2010-09-09 14:17:57
+archive/issue_comments_097569.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-09-09T14:17:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9871",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9871#issuecomment-97569",
+    "user": "AlexanderDreyer"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_097570.json:
+```json
+{
+    "body": "Attachment\n\nHi Alexander, \n\nI'm not going to suggest you change this, as polybori-0.6.4.p5.spkg has positive review and I don't want to hold that up, as it fixes the main issue here, which is not the linker. \n\nPersonally I would not have returned 'platform' though in the case of a non-GNU linker, as it is a bit inconsistent to return GNU when the GNU linker is used, and sunos, hp-ux or whatever when the GNU linker is not used. \n\nI think using Sun, HP, IBM etc would have been more consistent, or perhaps return the word \"native\" in the case of non-GNU linker. \n\nBut it's a minor point. The main thing is your changes get this working. There are no longer any text relocations to deal with, which only leaves Cliquer, ECL and R which have this problem. Cliquer can be solved easily - R and ECL are less easy, though both are ok if built with the Sun compiler. \n\nDave",
+    "created_at": "2010-09-13T15:17:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9871",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9871#issuecomment-97570",
+    "user": "drkirkby"
+}
+```
 
 Attachment
 
@@ -379,23 +571,56 @@ But it's a minor point. The main thing is your changes get this working. There a
 Dave
 
 
+
 ---
 
-Comment by drkirkby created at 2010-09-13 15:17:01
+archive/issue_comments_097571.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-09-13T15:17:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9871",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9871#issuecomment-97571",
+    "user": "drkirkby"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-15 11:45:45
+archive/issue_comments_097572.json:
+```json
+{
+    "body": "Just to check: Does this ticket subsume #9768 completely?",
+    "created_at": "2010-09-15T11:45:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9871",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9871#issuecomment-97572",
+    "user": "mpatel"
+}
+```
 
 Just to check: Does this ticket subsume #9768 completely?
 
 
+
 ---
 
-Comment by drkirkby created at 2010-09-15 12:11:58
+archive/issue_comments_097573.json:
+```json
+{
+    "body": "The patch at http://sage.math.washington.edu/home/dreyer/spkg/polybori-0.6.4.p6.spkg\n\nfixes both the issues here and on #9768. An earlier version on the other ticket did not address this problem. So only http://sage.math.washington.edu/home/dreyer/spkg/polybori-0.6.4.p6.spkg needs to be merged. \n\nDave",
+    "created_at": "2010-09-15T12:11:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9871",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9871#issuecomment-97573",
+    "user": "drkirkby"
+}
+```
 
 The patch at http://sage.math.washington.edu/home/dreyer/spkg/polybori-0.6.4.p6.spkg
 
@@ -404,8 +629,19 @@ fixes both the issues here and on #9768. An earlier version on the other ticket 
 Dave
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-16 00:48:36
+archive/issue_comments_097574.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-09-16T00:48:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9871",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9871#issuecomment-97574",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed

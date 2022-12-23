@@ -1,17 +1,27 @@
 # Issue 4990: [with code, needs work] Add code to compute Hilber class polynomials
 
-Issue created by migration from https://trac.sagemath.org/ticket/4990
-
-Original creator: mabshoff
-
-Original creation time: 2009-01-17 08:47:24
-
+archive/issues_004990.json:
+```json
+{
+    "body": "Assignee: was\n\nThe attached Sage code has been written by\n\n* Eduardo Ocampo Alvarez\n* Andrey Timofeev\n\nfrom the University of Essen in Germany. It needs some integration, but other than that it should be ready to be merged.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4990\n\n",
+    "created_at": "2009-01-17T08:47:24Z",
+    "labels": [
+        "number theory",
+        "major",
+        "bug"
+    ],
+    "title": "[with code, needs work] Add code to compute Hilber class polynomials",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4990",
+    "user": "mabshoff"
+}
+```
 Assignee: was
 
 The attached Sage code has been written by
 
- * Eduardo Ocampo Alvarez
- * Andrey Timofeev
+* Eduardo Ocampo Alvarez
+* Andrey Timofeev
 
 from the University of Essen in Germany. It needs some integration, but other than that it should be ready to be merged.
 
@@ -19,50 +29,135 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/4990
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2009-01-17 08:47:51
+archive/issue_comments_038077.json:
+```json
+{
+    "body": "This is the third verion of the code",
+    "created_at": "2009-01-17T08:47:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4990",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4990#issuecomment-38077",
+    "user": "mabshoff"
+}
+```
 
 This is the third verion of the code
 
 
+
 ---
+
+archive/issue_comments_038078.json:
+```json
+{
+    "body": "Attachment\n\nOne thing that needs to be done is to convert everything to four spaces.",
+    "created_at": "2009-01-17T22:04:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4990",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4990#issuecomment-38078",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 One thing that needs to be done is to convert everything to four spaces.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-01-23 07:07:31
+archive/issue_comments_038079.json:
+```json
+{
+    "body": "Changing type from defect to enhancement.",
+    "created_at": "2009-01-23T07:07:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4990",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4990#issuecomment-38079",
+    "user": "AlexGhitza"
+}
+```
 
 Changing type from defect to enhancement.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-04-03 10:13:16
+archive/issue_comments_038080.json:
+```json
+{
+    "body": "Changing assignee from was to AlexGhitza.",
+    "created_at": "2009-04-03T10:13:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4990",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4990#issuecomment-38080",
+    "user": "AlexGhitza"
+}
+```
 
 Changing assignee from was to AlexGhitza.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-04-03 10:13:16
+archive/issue_comments_038081.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"hilbert class polynomial\".",
+    "created_at": "2009-04-03T10:13:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4990",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4990#issuecomment-38081",
+    "user": "AlexGhitza"
+}
+```
 
 Changing keywords from "" to "hilbert class polynomial".
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-04-03 10:13:16
+archive/issue_comments_038082.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-04-03T10:13:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4990",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4990#issuecomment-38082",
+    "user": "AlexGhitza"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
+
+archive/issue_comments_038083.json:
+```json
+{
+    "body": "Attachment\n\nThe attached patch adds the method `hilbert_class_polynomial()` to `NumberField_quadratic` and cleans the code up a little bit.\n\nI cannot perform comparative timings since I don't have access to Magma at the moment.  Doing `%prun` with large discriminants indicates that the large majority of the time is spent in the Pari library computing the j-invariants of the representative tau's.  So I don't think rewriting the method in Cython will have a significant effect.\n\nSee also the discussion at\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/6c9aedf63106cc2d",
+    "created_at": "2009-04-04T07:18:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4990",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4990#issuecomment-38083",
+    "user": "AlexGhitza"
+}
+```
 
 Attachment
 
@@ -75,25 +170,58 @@ See also the discussion at
 http://groups.google.com/group/sage-devel/browse_thread/thread/6c9aedf63106cc2d
 
 
+
 ---
 
-Comment by cremona created at 2009-04-04 15:18:29
+archive/issue_comments_038084.json:
+```json
+{
+    "body": "Alex, is your patch to be applied by itself, ignoring  the .txt file which it seems to be based on?  I assume so.  Is this intended to work on 3.4.1(.alpha0, say)?\n\nJohn",
+    "created_at": "2009-04-04T15:18:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4990",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4990#issuecomment-38084",
+    "user": "cremona"
+}
+```
 
 Alex, is your patch to be applied by itself, ignoring  the .txt file which it seems to be based on?  I assume so.  Is this intended to work on 3.4.1(.alpha0, say)?
 
 John
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-04-04 21:56:56
+archive/issue_comments_038085.json:
+```json
+{
+    "body": "Yes: apply only the patch, to 3.4.1.alpha0.",
+    "created_at": "2009-04-04T21:56:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4990",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4990#issuecomment-38085",
+    "user": "AlexGhitza"
+}
+```
 
 Yes: apply only the patch, to 3.4.1.alpha0.
 
 
+
 ---
 
-Comment by ncalexan created at 2009-04-05 03:50:32
+archive/issue_comments_038086.json:
+```json
+{
+    "body": "Looks good to me.  I tested it with the following script, and found a lot of curves with the correct endomorphism rings :)\n\n\n```\nK.<a> = QuadraticField(-34)\nf = K.hilbert_class_polynomial()\nassert K.class_number() == f.degree()\n\nfor P in K.primes_of_degree_one_list(20):\n    p = P.norm()\n    k = GF(p)\n    rts = f.roots(k, multiplicities=False)\n    for jj in rts:\n        assert P.is_principal()\n        E = EllipticCurve(jj)\n        print E\n        assert E.frobenius_order().number_field().is_isomorphic(K)\n    if not rts:\n        print \"XXX\", p\n        assert not P.is_principal()\n```\n",
+    "created_at": "2009-04-05T03:50:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4990",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4990#issuecomment-38086",
+    "user": "ncalexan"
+}
+```
 
 Looks good to me.  I tested it with the following script, and found a lot of curves with the correct endomorphism rings :)
 
@@ -119,16 +247,38 @@ for P in K.primes_of_degree_one_list(20):
 
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-05 23:16:17
+archive/issue_comments_038087.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-04-05T23:16:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4990",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4990#issuecomment-38087",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-05 23:16:17
+archive/issue_comments_038088.json:
+```json
+{
+    "body": "Merged in Sage 3.4.1.rc1.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-05T23:16:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4990",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4990#issuecomment-38088",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.4.1.rc1.
 
@@ -137,9 +287,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by cremona created at 2009-04-20 12:44:33
+archive/issue_comments_038089.json:
+```json
+{
+    "body": "Posted to sage-nt 2009-04-20:\n\nTicket #4990 implemented a hilbert_class_polynomial() method for\nimaginary quadratic fields.  It is actually a function of the field's\ndiscriminant, i.e. of a fundamental (negative) discriminant.  It was\nwritten by      Eduardo Ocampo Alvarez and  Andrey Timofeev  from\nEssen and is in sage/rings/number_field/number_field.py.\n\nWe also have a function in sage/schemes/elliptic_curves/cm.py called\nhilbert_class_polynomial(D), which uses Magma to find more general\nH.C.polys (D is any negative integer congruent to 0,1 mod 4).\n\nFor fundamental discriminants D, these give the same answer, i.e.\nQuadraticField(D,'a').hilbert_class_polynomial() ==\nhilbert_class_polynomial(D).\n\nQuestion 1: does the code at #4990 (now merged actually work for\nnon-fundamental discriminants?  Someone might know;  testing it would\nneed a bit of coding, and I haven't done so.\n\nAssuming that the answer is \"yes\",\n\nQuestion 2: should we re-write the stand-alone function which takes as\nits argument any negative discriminant (not necessarily fundamental)\nand returns the appropriate H.C.poly, using the code now in\nnumber_field.py instead of calling Magma;  and then change the current\nmethod in number_field.py to just call that?  If so, where should the\nstand-alone function go:  (a) where it now is, in\nsage/schemes/elliptic_curves/cm.py, (b) in\nsage/rings/number_field/somewhere, (c) somewhere else ?  We could then\nalso make the H.C.poly a function of (possibly non-maximal) orders in\n(imaginary quadratic) number fields.\n\nJohn\n\nPS I found this out while converting cm.py to ReST for inclusion in\nthe manual.  Isn't it amazing what you find!",
+    "created_at": "2009-04-20T12:44:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4990",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4990#issuecomment-38089",
+    "user": "cremona"
+}
+```
 
 Posted to sage-nt 2009-04-20:
 

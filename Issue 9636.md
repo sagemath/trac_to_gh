@@ -1,11 +1,21 @@
 # Issue 9636: Catch output from PARI in Sage
 
-Issue created by migration from https://trac.sagemath.org/ticket/9636
-
-Original creator: jdemeyer
-
-Original creation time: 2010-07-29 07:56:00
-
+archive/issues_009636.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  leif robertwb\n\nThe output from print() functions in libpari is directly written to stdout and is not caught by Sage.  For example, the following doctest fails:\n\n```\ndef printhello():\n    \"\"\"\n    sage: printhello()\n    hello\n    \"\"\"\n    pari('print(\"hello\")')\n```\n\nIt gives\n\n```\nFile \"/home/jdemeyer/paritest.sage\", line 3:\n    sage: printhello()\nExpected:\n    hello\nGot nothing\n```\n\n\nLuckily, libpari provides ways to redirect the output.  There should a small Cython wrapper to direct the PARI output to sys.stdout.write().\n\nI will try to implement this (using #9343 as starting point). -- Jeroen Demeyer\n\nIssue created by migration from https://trac.sagemath.org/ticket/9636\n\n",
+    "created_at": "2010-07-29T07:56:00Z",
+    "labels": [
+        "interfaces",
+        "major",
+        "bug"
+    ],
+    "title": "Catch output from PARI in Sage",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9636",
+    "user": "jdemeyer"
+}
+```
 Assignee: was
 
 CC:  leif robertwb
@@ -36,15 +46,43 @@ Luckily, libpari provides ways to redirect the output.  There should a small Cyt
 
 I will try to implement this (using #9343 as starting point). -- Jeroen Demeyer
 
+Issue created by migration from https://trac.sagemath.org/ticket/9636
+
+
+
+
 
 ---
 
-Comment by jdemeyer created at 2010-08-14 20:25:53
+archive/issue_comments_093412.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-08-14T20:25:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9636",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9636#issuecomment-93412",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_093413.json:
+```json
+{
+    "body": "Attachment\n\n\n```\ncdef extern: \n    PariOUT defaultOut \n    PariOUT defaultErr \n\n```\n\nshould perhaps migrate to `sage/libs/pari/decl.pxi`, too.\n\n**Positive review** from me though. Robert, anything to complain about?\n\n----\n\nI wonder when Cython will support `const`...",
+    "created_at": "2010-09-07T11:18:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9636",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9636#issuecomment-93413",
+    "user": "leif"
+}
+```
 
 Attachment
 
@@ -58,22 +96,44 @@ cdef extern:
 
 should perhaps migrate to `sage/libs/pari/decl.pxi`, too.
 
-*Positive review* from me though. Robert, anything to complain about?
+**Positive review** from me though. Robert, anything to complain about?
 
 ----
 
 I wonder when Cython will support `const`...
 
 
+
 ---
 
-Comment by leif created at 2010-09-07 11:18:23
+archive/issue_comments_093414.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-09-07T11:18:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9636",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9636#issuecomment-93414",
+    "user": "leif"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-10 10:44:51
+archive/issue_comments_093415.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-09-10T10:44:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9636",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9636#issuecomment-93415",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed

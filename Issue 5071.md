@@ -1,38 +1,98 @@
 # Issue 5071: [with patch, needs review] unit of least precision for RR and RDF
 
-Issue created by migration from https://trac.sagemath.org/ticket/5071
-
-Original creator: robertwb
-
-Original creation time: 2009-01-23 12:23:50
-
+archive/issues_005071.json:
+```json
+{
+    "body": "Assignee: somebody\n\nI wrote this while attacking #4746. Didn't turn out to be relevant to that, but it's useful to have on its own anyways. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5071\n\n",
+    "created_at": "2009-01-23T12:23:50Z",
+    "labels": [
+        "basic arithmetic",
+        "minor",
+        "bug"
+    ],
+    "title": "[with patch, needs review] unit of least precision for RR and RDF",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5071",
+    "user": "robertwb"
+}
+```
 Assignee: somebody
 
 I wrote this while attacking #4746. Didn't turn out to be relevant to that, but it's useful to have on its own anyways. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5071
+
+
+
+
 
 ---
 
-Comment by roed created at 2009-01-24 09:49:48
+archive/issue_comments_038617.json:
+```json
+{
+    "body": "Looks good.  The only change I would suggest is that the docstring should include the behavior on inf and NaN.",
+    "created_at": "2009-01-24T09:49:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5071",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5071#issuecomment-38617",
+    "user": "roed"
+}
+```
 
 Looks good.  The only change I would suggest is that the docstring should include the behavior on inf and NaN.
 
 
+
 ---
+
+archive/issue_comments_038618.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-01-28T00:06:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5071",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5071#issuecomment-38618",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by robertwb created at 2009-01-28 00:07:11
+archive/issue_comments_038619.json:
+```json
+{
+    "body": "OK, doctests updated.",
+    "created_at": "2009-01-28T00:07:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5071",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5071#issuecomment-38619",
+    "user": "robertwb"
+}
+```
 
 OK, doctests updated.
 
 
+
 ---
 
-Comment by cwitty created at 2009-02-05 06:55:51
+archive/issue_comments_038620.json:
+```json
+{
+    "body": "Code looks good, doctests pass.\n\nExcellent idea!\n\nPositive review.",
+    "created_at": "2009-02-05T06:55:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5071",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5071#issuecomment-38620",
+    "user": "cwitty"
+}
+```
 
 Code looks good, doctests pass.
 
@@ -41,16 +101,38 @@ Excellent idea!
 Positive review.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-07 01:38:34
+archive/issue_comments_038621.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-02-07T01:38:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5071",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5071#issuecomment-38621",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-07 01:38:34
+archive/issue_comments_038622.json:
+```json
+{
+    "body": "Merged in Sage 3.3.alpha6.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-07T01:38:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5071",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5071#issuecomment-38622",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.3.alpha6.
 

@@ -1,11 +1,21 @@
 # Issue 3752: gap.eval -- oddity in parsing multiline input and comments
 
-Issue created by migration from https://trac.sagemath.org/ticket/3752
-
-Original creator: was
-
-Original creation time: 2008-08-01 01:13:39
-
+archive/issues_003752.json:
+```json
+{
+    "body": "Assignee: was\n\n\n```\nOn Thu, Jul 31, 2008 at 11:20 AM, Peter <> wrote:\n>\n> Hi,\n>\n> I'm trying to use some GAP code in the Sage notebook, and the code has\n> many one-line comments in it (starting with #). I switched the\n> notebook to gap mode (using the dropdown menu) and then noticed that\n> in each cell only commands that appear before the first comment are\n> processed by GAP. The same happens in cells that start with %gap.\n>\n> Can someone perhaps verify this behaviour and/or suggest a fix? (I'm\n> using Sage 3.0.5, and the same behaviour seems to occur on\n> Sagenb.org.)\n\nYes, here's an example of this in the sage notebook text form (I made the triple {'s into double for this ticket): \n\n{{{\nUntitled\nsystem:gap\n\n\n{{id=112|\nPrint(2 + 2); # add numbers\nPrint(3 + 3); # add more numbers\n///\n\n4\n}}\n}}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/3752\n\n",
+    "created_at": "2008-08-01T01:13:39Z",
+    "labels": [
+        "interfaces",
+        "major",
+        "bug"
+    ],
+    "title": "gap.eval -- oddity in parsing multiline input and comments",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3752",
+    "user": "was"
+}
+```
 Assignee: was
 
 
@@ -40,10 +50,25 @@ Print(3 + 3); # add more numbers
 }}
 }}}
 
+Issue created by migration from https://trac.sagemath.org/ticket/3752
+
+
+
+
 
 ---
 
-Comment by jipsen created at 2008-08-07 23:32:08
+archive/issue_comments_026660.json:
+```json
+{
+    "body": "This problem can be fixed by adding the following lines at the start of the \neval method in the file interfaces/gap.py:\n\n\n```\n        # remove comments, replace newlines by space\n        x = \"\".join([(r[:r.find('#')] if r.find('#')!=-1 else r)+' ' \\\n                     for r in x.split('\\n')])\n```\n\n\n(This still needs to be tested on a variety of GAP input lines.)\n\nI also noticed that if the length of the string processed by GAP is more than ~103 characters, then no output is produced (although the GAP code seems to be evaluated correctly and any functions defined in the code works in subsequent notebook cells).\n\nHere is an example:\n\n\n```\n{{id=112|\n%gap\ntest := function()\nreturn \"make a long input string  (delete 1 char to see the output)\";\nend;\ntest();\n///\n}}\n```\n",
+    "created_at": "2008-08-07T23:32:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3752",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3752#issuecomment-26660",
+    "user": "jipsen"
+}
+```
 
 This problem can be fixed by adding the following lines at the start of the 
 eval method in the file interfaces/gap.py:
@@ -76,35 +101,92 @@ test();
 
 
 
+
 ---
+
+archive/issue_comments_026661.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-01-23T10:31:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3752",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3752#issuecomment-26661",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2009-01-23 10:31:52
+archive/issue_comments_026662.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-01-23T10:31:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3752",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3752#issuecomment-26662",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mhansen created at 2009-01-23 10:31:52
+archive/issue_comments_026663.json:
+```json
+{
+    "body": "Changing assignee from was to mhansen.",
+    "created_at": "2009-01-23T10:31:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3752",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3752#issuecomment-26663",
+    "user": "mhansen"
+}
+```
 
 Changing assignee from was to mhansen.
 
 
+
 ---
 
-Comment by malb created at 2009-01-24 07:10:14
+archive/issue_comments_026664.json:
+```json
+{
+    "body": "I have a performance concern, but this is #5086 now.",
+    "created_at": "2009-01-24T07:10:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3752",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3752#issuecomment-26664",
+    "user": "malb"
+}
+```
 
 I have a performance concern, but this is #5086 now.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-24 19:31:33
+archive/issue_comments_026665.json:
+```json
+{
+    "body": "Merged in Sage 3.3.alpha2\n\nCheers,\n\nMichael",
+    "created_at": "2009-01-24T19:31:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3752",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3752#issuecomment-26665",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.3.alpha2
 
@@ -113,8 +195,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-24 19:31:33
+archive/issue_comments_026666.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-01-24T19:31:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3752",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3752#issuecomment-26666",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

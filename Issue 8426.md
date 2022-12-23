@@ -1,11 +1,21 @@
 # Issue 8426: polynomial * constant does not work if constant is a numpy type
 
-Issue created by migration from https://trac.sagemath.org/ticket/8426
-
-Original creator: jason
-
-Original creation time: 2010-03-03 05:17:18
-
+archive/issues_008426.json:
+```json
+{
+    "body": "Assignee: AlexGhitza\n\nCC:  was robertwb\n\nThis should work:\n\n\n```\nimport numpy\nR.<x>=RR[]\nx*numpy.float32('23.0')\n```\n\n\nInstead, I get:\n\n```\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/jason/tmp/<ipython console> in <module>()\n\n/home/jason/sage/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__mul__ (sage/structure/element.c:11337)()\n\n/home/jason/sage/local/lib/python2.6/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:6994)()\n\nTypeError: unsupported operand parent(s) for '*': 'Univariate Polynomial Ring in x over Real Field with 53 bits of precision' and '<type 'numpy.float32'>'\n```\n\n\nNote that this does work:\n\n\n```\nsage: numpy.float32('23.0')*x\n23.0000000000000*x\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8426\n\n",
+    "created_at": "2010-03-03T05:17:18Z",
+    "labels": [
+        "algebra",
+        "major",
+        "bug"
+    ],
+    "title": "polynomial * constant does not work if constant is a numpy type",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8426",
+    "user": "jason"
+}
+```
 Assignee: AlexGhitza
 
 CC:  was robertwb
@@ -46,17 +56,43 @@ sage: numpy.float32('23.0')*x
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8426
+
+
+
+
 
 ---
 
-Comment by mmezzarobba created at 2014-03-15 18:55:24
+archive/issue_comments_075543.json:
+```json
+{
+    "body": "Now works, but see #15695.",
+    "created_at": "2014-03-15T18:55:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8426",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8426#issuecomment-75543",
+    "user": "mmezzarobba"
+}
+```
 
 Now works, but see #15695.
 
 
+
 ---
 
-Comment by vdelecroix created at 2015-03-28 11:57:50
+archive/issue_comments_075544.json:
+```json
+{
+    "body": "Hello,\n\nI propose to close this as duplicates because of #18076 that fixes it. With the branch applied I got\n\n```\nsage: import numpy\nsage: R.<x> = RR[]\nsage: x * numpy.float32('23.0')\n23.0000000000000*x\n```\n\nand even the pushout works\n\n```\nsage: R.<x> = ZZ[]\nsage: x * numpy.float32('23.0')\n23.0*x\nsage: parent(_)\nUnivariate Polynomial Ring in x over Real Double Field\n```\n\n\nVincent",
+    "created_at": "2015-03-28T11:57:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8426",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8426#issuecomment-75544",
+    "user": "vdelecroix"
+}
+```
 
 Hello,
 
@@ -83,22 +119,55 @@ Univariate Polynomial Ring in x over Real Double Field
 Vincent
 
 
+
 ---
 
-Comment by vdelecroix created at 2015-03-28 11:57:50
+archive/issue_comments_075545.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2015-03-28T11:57:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8426",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8426#issuecomment-75545",
+    "user": "vdelecroix"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2015-04-23 09:40:14
+archive/issue_comments_075546.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2015-04-23T09:40:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8426",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8426#issuecomment-75546",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by vbraun created at 2015-04-23 14:52:09
+archive/issue_comments_075547.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2015-04-23T14:52:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8426",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8426#issuecomment-75547",
+    "user": "vbraun"
+}
+```
 
 Resolution: duplicate

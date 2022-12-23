@@ -1,11 +1,21 @@
 # Issue 8646: Windows 7 Virtual Box Install Fails
 
-Issue created by migration from https://trac.sagemath.org/ticket/8646
-
-Original creator: SevenThunders
-
-Original creation time: 2010-04-03 01:54:07
-
+archive/issues_008646.json:
+```json
+{
+    "body": "Assignee: GeorgSWeber\n\nI am running windows 7 64 bit, and have installed \nvirtualbox 3.1.6.  Sage 4.3 does not import into virtualbox   right near the end of the import process it fails with the following error\n\nRuntime error: -35 (Unresolved (unknown) host platform error.).\n\nThe error occurs on line 3325 of the source file VirtualBoxImpl.cpp .\n\nThis may be a virtualbox issue,  but it does mean that perhaps a lot of windows users can't get the default sage virtual environment to run.  I have not seen this issue reported elsewhere.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8646\n\n",
+    "created_at": "2010-04-03T01:54:07Z",
+    "labels": [
+        "build",
+        "major",
+        "bug"
+    ],
+    "title": "Windows 7 Virtual Box Install Fails",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8646",
+    "user": "SevenThunders"
+}
+```
 Assignee: GeorgSWeber
 
 I am running windows 7 64 bit, and have installed 
@@ -17,44 +27,114 @@ The error occurs on line 3325 of the source file VirtualBoxImpl.cpp .
 
 This may be a virtualbox issue,  but it does mean that perhaps a lot of windows users can't get the default sage virtual environment to run.  I have not seen this issue reported elsewhere.
 
+Issue created by migration from https://trac.sagemath.org/ticket/8646
+
+
+
+
 
 ---
 
-Comment by was created at 2010-04-05 03:01:24
+archive/issue_comments_078450.json:
+```json
+{
+    "body": "The VirtualBox machine will be replaced by a VMware machine for the next release.  When that happens this ticket can be closed.",
+    "created_at": "2010-04-05T03:01:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8646",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8646#issuecomment-78450",
+    "user": "was"
+}
+```
 
 The VirtualBox machine will be replaced by a VMware machine for the next release.  When that happens this ticket can be closed.
 
 
+
 ---
 
-Comment by aapitzsch created at 2014-03-08 21:54:44
+archive/issue_comments_078451.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2014-03-08T21:54:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8646",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8646#issuecomment-78451",
+    "user": "aapitzsch"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by aapitzsch created at 2014-03-08 21:54:44
+archive/issue_comments_078452.json:
+```json
+{
+    "body": "Running Windows 7 (64bit), too. Using the recent version of Virtualbox (4.3.8) importing and starting Sage 5.13 work without errors.",
+    "created_at": "2014-03-08T21:54:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8646",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8646#issuecomment-78452",
+    "user": "aapitzsch"
+}
+```
 
 Running Windows 7 (64bit), too. Using the recent version of Virtualbox (4.3.8) importing and starting Sage 5.13 work without errors.
 
 
+
 ---
 
-Comment by rws created at 2014-05-12 15:15:05
+archive/issue_comments_078453.json:
+```json
+{
+    "body": "Appears to no longer be an issue.",
+    "created_at": "2014-05-12T15:15:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8646",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8646#issuecomment-78453",
+    "user": "rws"
+}
+```
 
 Appears to no longer be an issue.
 
 
+
 ---
 
-Comment by rws created at 2014-05-12 15:15:05
+archive/issue_comments_078454.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2014-05-12T15:15:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8646",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8646#issuecomment-78454",
+    "user": "rws"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by vbraun created at 2014-05-12 20:18:09
+archive/issue_comments_078455.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2014-05-12T20:18:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8646",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8646#issuecomment-78455",
+    "user": "vbraun"
+}
+```
 
 Resolution: fixed

@@ -1,21 +1,31 @@
 # Issue 7048: ATLAS ignores CC variable, then dumps core when trying to build with Sun Studio on  Solaris
 
-Issue created by migration from https://trac.sagemath.org/ticket/7048
-
-Original creator: drkirkby
-
-Original creation time: 2009-09-28 09:18:16
-
+archive/issues_007048.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  dimpase\n\nUsing\n\n* Solaris 10 update 7 on SPARC\n* sage-4.1.2.alpha4\n* Sun Studio 12.1\n* An updated configure script to allow the Sun compiler to be used http://sagetrac.org/sage_trac/ticket/7021 \n\nI tried to build Sage with Sun Studio and see: \n\n```\natlas-3.8.3.p9/src/src/auxil/ATL_hescal.c\natlas-3.8.3.p9/src/src/auxil/ATL_axpy.c\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS swan 5.10 Generic_139555-08 sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\n/opt/xxxsunstudio12.1/bin/cc -v\nusage: cc [ options] files.  Use 'cc -flags' for details\n****************************************************\nPlatform detected to be 32 bits\nsystem_atlas.py:6: DeprecationWarning: os.popen2 is deprecated.  Use the subprocess module.\n  fortran = os.popen2(os.environ['SAGE_LOCAL']+'/bin/'+'which_fortran')[1].read()\nf95: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise\nf95: Warning: Option --version passed to ld, if ld is invoked, ignored otherwise\nUsage: f95 [ options ] files.  Use 'f95 -flags' for details\n/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/atlas-3.8.3.p9\nDeal with PPC4 7447 model and Itanium 2\nUpdating archinfo_x86.c\nUpdating probe_comp.c\nUpdating Make.top\nmake[2]: Entering directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/atlas-3.8.3.p9/ATLAS-build'\ngcc -I/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/atlas-3.8.3.p9/ATLAS-build/../src//CONFIG/include  -g -w -c /export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/atlas-3.8.3.p9/ATLAS-build/../src//CONFIG/src/atlconf_misc.c\ngcc -I/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/atlas-3.8.3.p9/ATLAS-build/../src//CONFIG/include  -g -w -o xconfig /export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/atlas-3.8.3.p9/ATLAS-build/../src//CONFIG/src/config.c atlconf_misc.o\nmake[2]: Leaving directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/atlas-3.8.3.p9/ATLAS-build'\n./xconfig -d s /export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/atlas-3.8.3.p9/ATLAS-build/../src/ -d b /export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/atlas-3.8.3.p9/ATLAS-build  -Ss flapack /export/home/drkirkby/sage/sage-4.1.2.alpha4/local/lib/liblapack.a -Si cputhrchk 0 -Fa alg -fPIC -t 0 -C if /export/home/drkirkby/sage/sage-4.1.2.alpha4/local/bin/sage_fortran -b 32\nmake[2]: Entering directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/atlas-3.8.3.p9/ATLAS-build'\ngcc -I/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/atlas-3.8.3.p9/ATLAS-build/../src//CONFIG/include  -g -w -c /export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/atlas-3.8.3.p9/ATLAS-build/../src//CONFIG/src/probe_comp.c\ngcc -I/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/atlas-3.8.3.p9/ATLAS-build/../src//CONFIG/include  -g -w -o xprobe_comp probe_comp.o atlconf_misc.o\nrm -f config1.out\nmake atlas_run atldir=/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/atlas-3.8.3.p9/ATLAS-build exe=xprobe_comp args=\"-v 0 -o atlconf.txt -O 2 -A 28 -Si nof77 0  -Fa ic '-fPIC' -Fa sm '-fPIC' -Fa dm '-fPIC' -Fa sk '-fPIC' -Fa dk '-fPIC' -Fa xc '-fPIC' -C if '/export/home/drkirkby/sage/sage-4.1.2.alpha4/local/bin/sage_fortran' -Fa if '-fPIC'  -b 32\" \\\n                redir=config1.out\nmake[3]: Entering directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/atlas-3.8.3.p9/ATLAS-build'\ncd /export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/atlas-3.8.3.p9/ATLAS-build ; ./xprobe_comp -v 0 -o atlconf.txt -O 2 -A 28 -Si nof77 0  -Fa ic '-fPIC' -Fa sm '-fPIC' -Fa dm '-fPIC' -Fa sk '-fPIC' -Fa dk '-fPIC' -Fa xc '-fPIC' -C if '/export/home/drkirkby/sage/sage-4.1.2.alpha4/local/bin/sage_fortran' -Fa if '-fPIC'  -b 32 > config1.out\nUNKNOWN COMPILER '/export/home/drkirkby/sage/sage-4.1.2.alpha4/local/bin/sage_fortran' for F77: you must also supply flags!\nmake[3]: *** [atlas_run] Error 7\nmake[3]: Leaving directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/atlas-3.8.3.p9/ATLAS-build'\nmake[2]: *** [IRun_comp] Error 2\nmake[2]: Leaving directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/atlas-3.8.3.p9/ATLAS-build'\nAssertion failed: !system(ln), file /export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/atlas-3.8.3.p9/ATLAS-build/../src//CONFIG/src/config.c, line 125\n\nOS configured as SunOS (2)\n\nAssembly configured as GAS_SPARC (3)\n\nBad VECFLAG value=0, ierr=0, ln2='VECFLAG=0\n'\n\nVector ISA Extension configured as   (0,0)\n\nArchitecture configured as  USIII (28)\n\nClock rate configured as 1200Mhz\nCannot detect CPU throttling.\nAbort - core dumped\nxconfig exited with 134\nmake[2]: Entering directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/atlas-3.8.3.p9/ATLAS-build'\nmake -f Make.top build\nmake[3]: Entering directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/atlas-3.8.3.p9/ATLAS-build'\nmake[3]: Make.top: No such file or directory\nmake[3]: *** No rule to make target `Make.top'.  Stop.\nmake[3]: Leaving directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/atlas-3.8.3.p9/ATLAS-build'\nmake[2]: *** [build] Error 2\nmake[2]: Leaving directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/atlas-3.8.3.p9/ATLAS-build'\nFailed to build ATLAS.\nFailed to build ATLAS.\n\nreal    0m11.364s\nuser    0m5.163s\nsys     0m4.042s\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7048\n\n",
+    "created_at": "2009-09-28T09:18:16Z",
+    "labels": [
+        "build",
+        "major",
+        "bug"
+    ],
+    "title": "ATLAS ignores CC variable, then dumps core when trying to build with Sun Studio on  Solaris",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7048",
+    "user": "drkirkby"
+}
+```
 Assignee: tbd
 
 CC:  dimpase
 
 Using
 
-    * Solaris 10 update 7 on SPARC
-    * sage-4.1.2.alpha4
-    * Sun Studio 12.1
-    * An updated configure script to allow the Sun compiler to be used http://sagetrac.org/sage_trac/ticket/7021 
+* Solaris 10 update 7 on SPARC
+* sage-4.1.2.alpha4
+* Sun Studio 12.1
+* An updated configure script to allow the Sun compiler to be used http://sagetrac.org/sage_trac/ticket/7021 
 
 I tried to build Sage with Sun Studio and see: 
 
@@ -96,30 +106,78 @@ sys     0m4.042s
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7048
+
+
+
+
 
 ---
 
-Comment by jdemeyer created at 2015-09-08 12:48:16
+archive/issue_comments_058350.json:
+```json
+{
+    "body": "Changing component from build to packages: standard.",
+    "created_at": "2015-09-08T12:48:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7048",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7048#issuecomment-58350",
+    "user": "jdemeyer"
+}
+```
 
 Changing component from build to packages: standard.
 
 
+
 ---
 
-Comment by mkoeppe created at 2020-08-17 16:38:58
+archive/issue_comments_058351.json:
+```json
+{
+    "body": "Outdated spkg or build system ticket, should be closed",
+    "created_at": "2020-08-17T16:38:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7048",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7048#issuecomment-58351",
+    "user": "mkoeppe"
+}
+```
 
 Outdated spkg or build system ticket, should be closed
 
 
+
 ---
 
-Comment by mkoeppe created at 2020-08-17 16:38:58
+archive/issue_comments_058352.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2020-08-17T16:38:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7048",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7048#issuecomment-58352",
+    "user": "mkoeppe"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by slelievre created at 2020-08-22 07:16:35
+archive/issue_comments_058353.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2020-08-22T07:16:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7048",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7048#issuecomment-58353",
+    "user": "slelievre"
+}
+```
 
 Resolution: invalid

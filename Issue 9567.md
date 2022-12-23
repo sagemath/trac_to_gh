@@ -1,11 +1,21 @@
 # Issue 9567: Networkx-1.1 spkg
 
-Issue created by migration from https://trac.sagemath.org/ticket/9567
-
-Original creator: bedwards
-
-Original creation time: 2010-07-21 21:07:33
-
+archive/issues_009567.json:
+```json
+{
+    "body": "Assignee: jason, ncohen, rlm\n\nCC:  ncohen\n\nKeywords: networkx spkg graph theory\n\nThis is the updated networkx package. It includes new features, bug fixes, and a couple of API changes. More information can be found here:\n\nhttp://networkx.lanl.gov/reference/news.html\n\nPackage:\n\nhttp://spkg-upload.googlecode.com/files/networkx-1.1.spkg\n\nMD5 Sum\n\nhttp://spkg-upload.googlecode.com/files/networkx-1.1.spkg.md5\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9567\n\n",
+    "created_at": "2010-07-21T21:07:33Z",
+    "labels": [
+        "graph theory",
+        "minor",
+        "enhancement"
+    ],
+    "title": "Networkx-1.1 spkg",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9567",
+    "user": "bedwards"
+}
+```
 Assignee: jason, ncohen, rlm
 
 CC:  ncohen
@@ -25,17 +35,43 @@ MD5 Sum
 http://spkg-upload.googlecode.com/files/networkx-1.1.spkg.md5
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/9567
+
+
+
+
 
 ---
 
-Comment by mvngu created at 2010-07-21 21:27:48
+archive/issue_comments_092360.json:
+```json
+{
+    "body": "Is this ready for review?",
+    "created_at": "2010-07-21T21:27:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9567",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9567#issuecomment-92360",
+    "user": "mvngu"
+}
+```
 
 Is this ready for review?
 
 
+
 ---
 
-Comment by rlm created at 2010-07-21 21:35:31
+archive/issue_comments_092361.json:
+```json
+{
+    "body": "Three files with doctest failures, most look pretty harmless, different number of arguments, etc.:\n\nThe failures were\n\n```\n----------------------------------------------------------------------\n\nThe following tests failed:\n\n\tsage -t --long devel/sage-main/sage/graphs/graph_generators.py # 1 doctests failed\n\tsage -t --long devel/sage-main/sage/graphs/generic_graph.py # 8 doctests failed\n\tsage -t --long devel/sage-main/sage/graphs/graph.py # 19 doctests failed\n----------------------------------------------------------------------\n```\n\n\n\nhttp://sage.pastebin.com/bTMLkp1H",
+    "created_at": "2010-07-21T21:35:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9567",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9567#issuecomment-92361",
+    "user": "rlm"
+}
+```
 
 Three files with doctest failures, most look pretty harmless, different number of arguments, etc.:
 
@@ -57,9 +93,20 @@ The following tests failed:
 http://sage.pastebin.com/bTMLkp1H
 
 
+
 ---
 
-Comment by rlm created at 2010-07-21 23:22:46
+archive/issue_comments_092362.json:
+```json
+{
+    "body": "The `graph_generators.py` failure looks like a new NX bug:\n\n```\nsage: networkx.random_powerlaw_tree(10, 2)\n---------------------------------------------------------------------------\nImportError                               Traceback (most recent call last)\n\n/scratch/rlmill/sage-4.5-linux-64bit-ubuntu_8.04.4_lts-x86_64-Linux/<ipython console> in <module>()\n\n/scratch/rlmill/sage-4.5-linux-64bit-ubuntu_8.04.4_lts-x86_64-Linux/local/lib/python/networkx/generators/random_graphs.pyc in random_powerlaw_tree(n, gamma, create_using, seed, tries)\n    930 \n    931     \"\"\"\n--> 932     from nx.generators.degree_seq import degree_sequence_tree\n    933     try:\n    934         s=random_powerlaw_tree_sequence(n,\n\nImportError: No module named nx.generators.degree_seq\n```\n",
+    "created_at": "2010-07-21T23:22:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9567",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9567#issuecomment-92362",
+    "user": "rlm"
+}
+```
 
 The `graph_generators.py` failure looks like a new NX bug:
 
@@ -82,9 +129,20 @@ ImportError: No module named nx.generators.degree_seq
 
 
 
+
 ---
 
-Comment by rlm created at 2010-07-21 23:26:49
+archive/issue_comments_092363.json:
+```json
+{
+    "body": "Several API changes:\n\n```\nsage: networkx.triangles?\nType:\t\tfunction\nBase Class:\t<type 'function'>\nString Form:\t<function triangles at 0x4899b18>\nNamespace:\tInteractive\nFile:\t\t/scratch/rlmill/sage-4.5-linux-64bit-ubuntu_8.04.4_lts-x86_64-Linux/local/lib/python/networkx/algorithms/cluster.py\nDefinition:\tnetworkx.triangles(G, nbunch=None)\nDocstring:\n    <no docstring>\n```\n\n(triangles used to take another argument) -- `cluster_triangles()` in Sage will need to be updated to reflect this.\n\n\n```\nsage: networkx.clustering?\nType:\t\tfunction\nBase Class:\t<type 'function'>\nString Form:\t<function clustering at 0x4899c80>\nNamespace:\tInteractive\nFile:\t\t/scratch/rlmill/sage-4.5-linux-64bit-ubuntu_8.04.4_lts-x86_64-Linux/local/lib/python/networkx/algorithms/cluster.py\nDefinition:\tnetworkx.clustering(G, nbunch=None, weights=False)\nDocstring:\n    <no docstring>\n```\n\nthis is Sage's `clustering_coeff()`\n\nThese are both coming from the argument `with_weights` disappearing in NX.",
+    "created_at": "2010-07-21T23:26:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9567",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9567#issuecomment-92363",
+    "user": "rlm"
+}
+```
 
 Several API changes:
 
@@ -120,9 +178,20 @@ this is Sage's `clustering_coeff()`
 These are both coming from the argument `with_weights` disappearing in NX.
 
 
+
 ---
 
-Comment by rlm created at 2010-07-21 23:27:27
+archive/issue_comments_092364.json:
+```json
+{
+    "body": "No idea here:\n\n```\n**********************************************************************\nFile \"/scratch/rlmill/sage-4.5-linux-64bit-ubuntu_8.04.4_lts-x86_64-Linux/devel/sage-main/sage/graphs/graph.py\", line 2411:\n    sage: (graphs.ChvatalGraph()).centrality_betweenness(normalized=False)\nExpected:\n    {0: 7.6666666666666661, 1: 7.6666666666666661, 2: 6.6666666666666661, 3: 6.6666666666666661, 4: 7.6666666666666661, 5: 7.6666666666666661, 6: 6.6666666666666661, 7: 6.6666666666666661, 8: 6.6666666666666661, 9: 6.6666666666666661, 10: 6.6666666666666661, 11: 6.6666666666666661}\nGot:\n    {0: 3.833333333333333, 1: 3.833333333333333, 2: 3.333333333333333, 3: 3.333333333333333, 4: 3.833333333333333, 5: 3.833333333333333, 6: 3.333333333333333, 7: 3.333333333333333, 8: 3.333333333333333, 9: 3.333333333333333, 10: 3.333333333333333, 11: 3.333333333333333}\n**********************************************************************\n```\n",
+    "created_at": "2010-07-21T23:27:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9567",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9567#issuecomment-92364",
+    "user": "rlm"
+}
+```
 
 No idea here:
 
@@ -139,9 +208,20 @@ Got:
 
 
 
+
 ---
 
-Comment by rlm created at 2010-07-21 23:28:09
+archive/issue_comments_092365.json:
+```json
+{
+    "body": "This function no longer takes a vertex as input:\n\n```\n\nsage: networkx.degree_centrality?\nType:\t\tfunction\nBase Class:\t<type 'function'>\nString Form:\t<function degree_centrality at 0x87e9b0>\nNamespace:\tInteractive\nFile:\t\t/scratch/rlmill/sage-4.5-linux-64bit-ubuntu_8.04.4_lts-x86_64-Linux/local/lib/python/networkx/algorithms/centrality/degree.py\nDefinition:\tnetworkx.degree_centrality(G)\nDocstring:\n    <no docstring>\n```\n",
+    "created_at": "2010-07-21T23:28:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9567",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9567#issuecomment-92365",
+    "user": "rlm"
+}
+```
 
 This function no longer takes a vertex as input:
 
@@ -160,16 +240,38 @@ Docstring:
 
 
 
+
 ---
 
-Comment by rlm created at 2010-07-21 23:30:13
+archive/issue_comments_092366.json:
+```json
+{
+    "body": "Changing status from new to needs_work.",
+    "created_at": "2010-07-21T23:30:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9567",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9567#issuecomment-92366",
+    "user": "rlm"
+}
+```
 
 Changing status from new to needs_work.
 
 
+
 ---
 
-Comment by rlm created at 2010-07-21 23:30:13
+archive/issue_comments_092367.json:
+```json
+{
+    "body": "There are also some failures related to changes in the API of cliques functionality, but since we ship cliquer standard, which is an optimized C library for just this purpose, it seems we should be using that instead anyway.\n\nAll in all, these don't look bad at all. Not nearly as bad as upgrading to 1.0.\n\nBen -- If you want to submit a patch, I'd be glad to review it.",
+    "created_at": "2010-07-21T23:30:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9567",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9567#issuecomment-92367",
+    "user": "rlm"
+}
+```
 
 There are also some failures related to changes in the API of cliques functionality, but since we ship cliquer standard, which is an optimized C library for just this purpose, it seems we should be using that instead anyway.
 
@@ -178,34 +280,78 @@ All in all, these don't look bad at all. Not nearly as bad as upgrading to 1.0.
 Ben -- If you want to submit a patch, I'd be glad to review it.
 
 
+
 ---
 
-Comment by bedwards created at 2010-07-21 23:41:12
+archive/issue_comments_092368.json:
+```json
+{
+    "body": "The betweenness centrality test is a little concerning, and at a glance I am unsure about the bug in the random_powerlaw_tree, it seems that should work just fine... I'll start working on a patch. The API changes are improvements in the package, imho, returning dictionaries instead of lists, do we change the tests or is that a whole other process? Sorry, I'm new at this.",
+    "created_at": "2010-07-21T23:41:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9567",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9567#issuecomment-92368",
+    "user": "bedwards"
+}
+```
 
 The betweenness centrality test is a little concerning, and at a glance I am unsure about the bug in the random_powerlaw_tree, it seems that should work just fine... I'll start working on a patch. The API changes are improvements in the package, imho, returning dictionaries instead of lists, do we change the tests or is that a whole other process? Sorry, I'm new at this.
 
 
+
 ---
 
-Comment by ncohen created at 2010-07-22 01:28:17
+archive/issue_comments_092369.json:
+```json
+{
+    "body": "I just creaed #9569 to deal with new methods defined in NetworkX 1-1. I will also touch the \"triangles\" version as it looks like #9420 should make it faster to count them using our tools.\n\nNathann",
+    "created_at": "2010-07-22T01:28:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9567",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9567#issuecomment-92369",
+    "user": "ncohen"
+}
+```
 
 I just creaed #9569 to deal with new methods defined in NetworkX 1-1. I will also touch the "triangles" version as it looks like #9420 should make it faster to count them using our tools.
 
 Nathann
 
 
+
 ---
 
-Comment by ncohen created at 2010-07-22 01:35:18
+archive/issue_comments_092370.json:
+```json
+{
+    "body": "Ok, what I just did sounds stupid. It will be way easier to solve all the bugs and expose methods in the same patch. Let's talk discuss it through emails :-)\n\nNathann",
+    "created_at": "2010-07-22T01:35:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9567",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9567#issuecomment-92370",
+    "user": "ncohen"
+}
+```
 
 Ok, what I just did sounds stupid. It will be way easier to solve all the bugs and expose methods in the same patch. Let's talk discuss it through emails :-)
 
 Nathann
 
 
+
 ---
 
-Comment by rlm created at 2010-07-22 08:25:01
+archive/issue_comments_092371.json:
+```json
+{
+    "body": "Replying to [comment:8 bedwards]:\n> The API changes are improvements in the package, imho, returning dictionaries instead of lists, do we change the tests or is that a whole other process? Sorry, I'm new at this.\n\nWe should change everything to support the new syntax, especially since it is so easy. If the pickle jar were having problems, it might mean we would have more work to do, but it seems that 1.0->1.1 involves very minimal changes.",
+    "created_at": "2010-07-22T08:25:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9567",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9567#issuecomment-92371",
+    "user": "rlm"
+}
+```
 
 Replying to [comment:8 bedwards]:
 > The API changes are improvements in the package, imho, returning dictionaries instead of lists, do we change the tests or is that a whole other process? Sorry, I'm new at this.
@@ -213,16 +359,38 @@ Replying to [comment:8 bedwards]:
 We should change everything to support the new syntax, especially since it is so easy. If the pickle jar were having problems, it might mean we would have more work to do, but it seems that 1.0->1.1 involves very minimal changes.
 
 
+
 ---
 
-Comment by bedwards created at 2010-07-23 17:23:01
+archive/issue_comments_092372.json:
+```json
+{
+    "body": "Started working on this a bit. I think the bug is in the test for the betweenness centrality, I tested it using igraph in R, and it returns the same betweenness centrality as networkx-1.1. Also this was noted as a bug fix in the networkx change log.",
+    "created_at": "2010-07-23T17:23:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9567",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9567#issuecomment-92372",
+    "user": "bedwards"
+}
+```
 
 Started working on this a bit. I think the bug is in the test for the betweenness centrality, I tested it using igraph in R, and it returns the same betweenness centrality as networkx-1.1. Also this was noted as a bug fix in the networkx change log.
 
 
+
 ---
 
-Comment by bedwards created at 2010-07-26 16:23:05
+archive/issue_comments_092373.json:
+```json
+{
+    "body": "I've completed the patch, and the new version of the package. I've installed this on sage 4.5.1. Adding the spkg, and applying the patch should result in passing tests!\n\nhttp://groups.google.com/group/sage-devel/attach/8cb10fd6e32e6380/networkx-1.1.p1.spkg?part=4\n\nhttp://groups.google.com/group/sage-devel/attach/8cb10fd6e32e6380/networkx-1.1.p1.spkg.md5?part=5\n\nhttp://groups.google.com/group/sage-devel/attach/8cb10fd6e32e6380/14602.patch?part=6\n\nhttp://groups.google.com/group/sage-devel/attach/15cfd72f79082382/14602.patch.md5?part=4",
+    "created_at": "2010-07-26T16:23:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9567",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9567#issuecomment-92373",
+    "user": "bedwards"
+}
+```
 
 I've completed the patch, and the new version of the package. I've installed this on sage 4.5.1. Adding the spkg, and applying the patch should result in passing tests!
 
@@ -235,37 +403,94 @@ http://groups.google.com/group/sage-devel/attach/8cb10fd6e32e6380/14602.patch?pa
 http://groups.google.com/group/sage-devel/attach/15cfd72f79082382/14602.patch.md5?part=4
 
 
+
 ---
 
-Comment by rlm created at 2010-07-26 16:26:45
+archive/issue_comments_092374.json:
+```json
+{
+    "body": "Ben,\n\nCan you simply attach the patch to the ticket? Hit the attach button towards the top of the page :)",
+    "created_at": "2010-07-26T16:26:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9567",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9567#issuecomment-92374",
+    "user": "rlm"
+}
+```
 
 Ben,
 
 Can you simply attach the patch to the ticket? Hit the attach button towards the top of the page :)
 
 
+
 ---
 
-Comment by bedwards created at 2010-07-26 16:39:04
+archive/issue_comments_092375.json:
+```json
+{
+    "body": "No, problem, wasn't quite sure of the protocol, here you go.",
+    "created_at": "2010-07-26T16:39:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9567",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9567#issuecomment-92375",
+    "user": "bedwards"
+}
+```
 
 No, problem, wasn't quite sure of the protocol, here you go.
 
 
+
 ---
+
+archive/issue_comments_092376.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-07-26T16:39:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9567",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9567#issuecomment-92376",
+    "user": "bedwards"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by bedwards created at 2010-07-26 20:37:19
+archive/issue_comments_092377.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-07-26T20:37:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9567",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9567#issuecomment-92377",
+    "user": "bedwards"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by bedwards created at 2010-08-02 20:19:11
+archive/issue_comments_092378.json:
+```json
+{
+    "body": "networkx develops fast. Here is a new package for version 1.2. With the patch already attached above this should pass all the graphs/ tests with sage 4.5.1.\n\nhttp://groups.google.com/group/sage-devel/attach/9521dbae9b6b22db/networkx-1.2.spkg?part=5\n\nhttp://groups.google.com/group/sage-devel/attach/9521dbae9b6b22db/networkx-1.2.spkg.md5?part=4",
+    "created_at": "2010-08-02T20:19:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9567",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9567#issuecomment-92378",
+    "user": "bedwards"
+}
+```
 
 networkx develops fast. Here is a new package for version 1.2. With the patch already attached above this should pass all the graphs/ tests with sage 4.5.1.
 
@@ -274,9 +499,20 @@ http://groups.google.com/group/sage-devel/attach/9521dbae9b6b22db/networkx-1.2.s
 http://groups.google.com/group/sage-devel/attach/9521dbae9b6b22db/networkx-1.2.spkg.md5?part=4
 
 
+
 ---
 
-Comment by ncohen created at 2010-08-03 02:11:45
+archive/issue_comments_092379.json:
+```json
+{
+    "body": "Hello Ben !!!\n\nI added a small patch containing the method cycle_basis (with a long doctest), that just calls NetworkX's. I haven't been able to properly write a cycle_space method (see http://groups.google.com/group/sage-support/browse_thread/thread/f99b59eaabf679a5/8bf34d54c183ab6b?lnk=gst&q=labelled#8bf34d54c183ab6b), so I tried to give a satisfying example in this docstring.\n\nI give a positive review to your own patch for your patch/spkg, short of these two details :\n\n* I fixed some occurences of \"dictionary\" in my own patch\n* Your NetworkX SPKG has \"uncommitted changes\". Could you do a \"hg commit\", then upload the new version ? ( You can notice this when using the \"sage -pkg\" command to build spkg).\n\nNathann",
+    "created_at": "2010-08-03T02:11:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9567",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9567#issuecomment-92379",
+    "user": "ncohen"
+}
+```
 
 Hello Ben !!!
 
@@ -284,22 +520,44 @@ I added a small patch containing the method cycle_basis (with a long doctest), t
 
 I give a positive review to your own patch for your patch/spkg, short of these two details :
 
- * I fixed some occurences of "dictionary" in my own patch
- * Your NetworkX SPKG has "uncommitted changes". Could you do a "hg commit", then upload the new version ? ( You can notice this when using the "sage -pkg" command to build spkg).
+* I fixed some occurences of "dictionary" in my own patch
+* Your NetworkX SPKG has "uncommitted changes". Could you do a "hg commit", then upload the new version ? ( You can notice this when using the "sage -pkg" command to build spkg).
 
 Nathann
 
 
+
 ---
 
-Comment by bedwards created at 2010-08-03 15:02:51
+archive/issue_comments_092380.json:
+```json
+{
+    "body": "Sorry forgot to commit, last time I built the package. Here is the newest one. Sorry about my bad spelling...",
+    "created_at": "2010-08-03T15:02:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9567",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9567#issuecomment-92380",
+    "user": "bedwards"
+}
+```
 
 Sorry forgot to commit, last time I built the package. Here is the newest one. Sorry about my bad spelling...
 
 
+
 ---
 
-Comment by bedwards created at 2010-08-03 15:05:52
+archive/issue_comments_092381.json:
+```json
+{
+    "body": "Here is the updated package.\n\nhttp://groups.google.com/group/sage-devel/attach/6f6fb1d613bf3332/networkx-1.2.spkg?part=4\n\nand the md5sum\n\nhttp://groups.google.com/group/sage-devel/attach/6f6fb1d613bf3332/networkx-1.2.spkg.md5?part=5",
+    "created_at": "2010-08-03T15:05:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9567",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9567#issuecomment-92381",
+    "user": "bedwards"
+}
+```
 
 Here is the updated package.
 
@@ -310,18 +568,40 @@ and the md5sum
 http://groups.google.com/group/sage-devel/attach/6f6fb1d613bf3332/networkx-1.2.spkg.md5?part=5
 
 
+
 ---
 
-Comment by ncohen created at 2010-08-03 15:31:28
+archive/issue_comments_092382.json:
+```json
+{
+    "body": "Well, then if you can review my patch and find everything to your taste, you can set this whole ticket as having received a positive review :-)\n\nNathann",
+    "created_at": "2010-08-03T15:31:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9567",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9567#issuecomment-92382",
+    "user": "ncohen"
+}
+```
 
 Well, then if you can review my patch and find everything to your taste, you can set this whole ticket as having received a positive review :-)
 
 Nathann
 
 
+
 ---
 
-Comment by bedwards created at 2010-08-03 15:41:21
+archive/issue_comments_092383.json:
+```json
+{
+    "body": "On google code, in case they disappear\n\nhttp://spkg-upload.googlecode.com/files/networkx-1.2.spkg.md5\n\nhttp://spkg-upload.googlecode.com/files/networkx-1.2.spkg",
+    "created_at": "2010-08-03T15:41:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9567",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9567#issuecomment-92383",
+    "user": "bedwards"
+}
+```
 
 On google code, in case they disappear
 
@@ -330,29 +610,62 @@ http://spkg-upload.googlecode.com/files/networkx-1.2.spkg.md5
 http://spkg-upload.googlecode.com/files/networkx-1.2.spkg
 
 
+
 ---
 
-Comment by bedwards created at 2010-08-03 16:14:23
+archive/issue_comments_092384.json:
+```json
+{
+    "body": "Nathan, you're patch looks great, and I learned a little about cycle basis! Thanks again for correcting my spelling. This one is ready.",
+    "created_at": "2010-08-03T16:14:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9567",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9567#issuecomment-92384",
+    "user": "bedwards"
+}
+```
 
 Nathan, you're patch looks great, and I learned a little about cycle basis! Thanks again for correcting my spelling. This one is ready.
 
 
+
 ---
 
-Comment by bedwards created at 2010-08-03 16:14:23
+archive/issue_comments_092385.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-08-03T16:14:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9567",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9567#issuecomment-92385",
+    "user": "bedwards"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mpatel created at 2010-08-07 05:31:39
+archive/issue_comments_092386.json:
+```json
+{
+    "body": "Should I apply exactly\n\n* http://spkg-upload.googlecode.com/files/networkx-1.2.spkg\n* [attachment:14602.patch]\n* [attachment:trac_9567-cycle_basis.patch]\n\nto merge this ticket?\n\nI'm changing the status to 'needs_work' for this: The first patch is missing the ticket number in the first line of its commit string.  The first line itself should also be short (< 80 characters) but stand on its own, in order to keep `hg log` listings succinct and informative.  Of course, there's no problem with extra lines that describe the changes in detail.\n\nThe second patch's commit string should perhaps be a bit more descriptive.\n\nAlso, please update the Author(s) and Reviewer(s) fields.",
+    "created_at": "2010-08-07T05:31:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9567",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9567#issuecomment-92386",
+    "user": "mpatel"
+}
+```
 
 Should I apply exactly
 
- * http://spkg-upload.googlecode.com/files/networkx-1.2.spkg
- * [attachment:14602.patch]
- * [attachment:trac_9567-cycle_basis.patch]
+* http://spkg-upload.googlecode.com/files/networkx-1.2.spkg
+* [attachment:14602.patch]
+* [attachment:trac_9567-cycle_basis.patch]
 
 to merge this ticket?
 
@@ -363,16 +676,38 @@ The second patch's commit string should perhaps be a bit more descriptive.
 Also, please update the Author(s) and Reviewer(s) fields.
 
 
+
 ---
 
-Comment by mpatel created at 2010-08-07 05:31:39
+archive/issue_comments_092387.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_work.",
+    "created_at": "2010-08-07T05:31:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9567",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9567#issuecomment-92387",
+    "user": "mpatel"
+}
+```
 
 Changing status from positive_review to needs_work.
 
 
+
 ---
 
-Comment by ncohen created at 2010-08-08 11:11:23
+archive/issue_comments_092388.json:
+```json
+{
+    "body": "The ordering is correct...\n\nBen : could you update your patch ? I can not overwrite it, and that's the only thing left to do.\n\nNathann",
+    "created_at": "2010-08-08T11:11:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9567",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9567#issuecomment-92388",
+    "user": "ncohen"
+}
+```
 
 The ordering is correct...
 
@@ -381,9 +716,20 @@ Ben : could you update your patch ? I can not overwrite it, and that's the only 
 Nathann
 
 
+
 ---
 
-Comment by bedwards created at 2010-08-09 16:47:41
+archive/issue_comments_092389.json:
+```json
+{
+    "body": "Sorry, I was out of town for the weekend. Saw that sage-4.5.2 came out over the weekend, rebuilt the patch for that version, fixing my spelling as well. The appropriate order would be to merge:\n\nhttp://spkg-upload.googlecode.com/files/networkx-1.2.spkg\ntrac_9567-network-1.2.patch \ntrac_9567-cycle_basis.patch\n\nNathann, maybe update yours for sage 4.5.2?",
+    "created_at": "2010-08-09T16:47:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9567",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9567#issuecomment-92389",
+    "user": "bedwards"
+}
+```
 
 Sorry, I was out of town for the weekend. Saw that sage-4.5.2 came out over the weekend, rebuilt the patch for that version, fixing my spelling as well. The appropriate order would be to merge:
 
@@ -394,14 +740,38 @@ trac_9567-cycle_basis.patch
 Nathann, maybe update yours for sage 4.5.2?
 
 
+
 ---
+
+archive/issue_comments_092390.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-08-09T16:48:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9567",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9567#issuecomment-92390",
+    "user": "bedwards"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by bedwards created at 2010-08-10 23:19:10
+archive/issue_comments_092391.json:
+```json
+{
+    "body": "Here is a new patched networkx-1.2 spkg that patches networkx to make it compatible with matplotlib.pyparsing.\n\nhttp://spkg-upload.googlecode.com/files/networkx-1.2.p1.spkg\n\nhttp://spkg-upload.googlecode.com/files/networkx-1.2.p1.spkg.md5",
+    "created_at": "2010-08-10T23:19:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9567",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9567#issuecomment-92391",
+    "user": "bedwards"
+}
+```
 
 Here is a new patched networkx-1.2 spkg that patches networkx to make it compatible with matplotlib.pyparsing.
 
@@ -410,38 +780,95 @@ http://spkg-upload.googlecode.com/files/networkx-1.2.p1.spkg
 http://spkg-upload.googlecode.com/files/networkx-1.2.p1.spkg.md5
 
 
+
 ---
 
-Comment by ncohen created at 2010-08-12 03:32:45
+archive/issue_comments_092392.json:
+```json
+{
+    "body": "Updated !\n\nNathann",
+    "created_at": "2010-08-12T03:32:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9567",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9567#issuecomment-92392",
+    "user": "ncohen"
+}
+```
 
 Updated !
 
 Nathann
 
 
+
 ---
+
+archive/issue_comments_092393.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-08-12T03:33:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9567",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9567#issuecomment-92393",
+    "user": "ncohen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by ncohen created at 2010-08-12 03:38:47
+archive/issue_comments_092394.json:
+```json
+{
+    "body": "Changing status from needs_work to positive_review.",
+    "created_at": "2010-08-12T03:38:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9567",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9567#issuecomment-92394",
+    "user": "ncohen"
+}
+```
 
 Changing status from needs_work to positive_review.
 
 
+
 ---
 
-Comment by ncohen created at 2010-08-12 03:38:47
+archive/issue_comments_092395.json:
+```json
+{
+    "body": "And back to positive review, as the fiels/descriptions have been filled `:-)`\n\nNathann",
+    "created_at": "2010-08-12T03:38:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9567",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9567#issuecomment-92395",
+    "user": "ncohen"
+}
+```
 
 And back to positive review, as the fiels/descriptions have been filled `:-)`
 
 Nathann
 
 
+
 ---
 
-Comment by mpatel created at 2010-08-15 08:02:08
+archive/issue_comments_092396.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-08-15T08:02:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9567",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9567#issuecomment-92396",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 9306: round incoherent with ceil/floor on rational numbers
 
-Issue created by migration from https://trac.sagemath.org/ticket/9306
-
-Original creator: zimmerma
-
-Original creation time: 2010-06-22 09:20:05
-
+archive/issues_009306.json:
+```json
+{
+    "body": "Assignee: AlexGhitza\n\nConsider the following:\n\n```\nsage: q=2^200/3^50\nsage: q.floor()\n2238393297946874000179418290327143433\nsage: q.ceil()\n2238393297946874000179418290327143434\nsage: q.round()\n2238393297946874000179418290327143433\n```\n\nThis is fine so far. However:\n\n```\nsage: floor(q)\n2238393297946874000179418290327143433\nsage: ceil(q)\n2238393297946874000179418290327143434\nsage: round(q)\n2.23839329795e+36\n```\n\nWe would expect `round(q)` to behave like `q.round()`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9306\n\n",
+    "created_at": "2010-06-22T09:20:05Z",
+    "labels": [
+        "basic arithmetic",
+        "minor",
+        "enhancement"
+    ],
+    "title": "round incoherent with ceil/floor on rational numbers",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9306",
+    "user": "zimmerma"
+}
+```
 Assignee: AlexGhitza
 
 Consider the following:
@@ -33,51 +43,134 @@ sage: round(q)
 
 We would expect `round(q)` to behave like `q.round()`.
 
+Issue created by migration from https://trac.sagemath.org/ticket/9306
+
+
+
+
 
 ---
+
+archive/issue_comments_087645.json:
+```json
+{
+    "body": "Attachment\n\nChanges the round() command to defer to an element's .round() method if no precision is specified.",
+    "created_at": "2011-03-22T21:14:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9306",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9306#issuecomment-87645",
+    "user": "spice"
+}
+```
 
 Attachment
 
 Changes the round() command to defer to an element's .round() method if no precision is specified.
 
 
+
 ---
 
-Comment by spice created at 2011-03-22 21:20:21
+archive/issue_comments_087646.json:
+```json
+{
+    "body": "The above change alters the behaviour of sage's round() command. Before it *always* returned a real double field element; now it defers to an element's .round() method if no precision is specified, i.e. a sage Integer is returned in these cases. This makes round(x) and x.round() agree whenever x has a .round() method.",
+    "created_at": "2011-03-22T21:20:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9306",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9306#issuecomment-87646",
+    "user": "spice"
+}
+```
 
 The above change alters the behaviour of sage's round() command. Before it *always* returned a real double field element; now it defers to an element's .round() method if no precision is specified, i.e. a sage Integer is returned in these cases. This makes round(x) and x.round() agree whenever x has a .round() method.
 
 
+
 ---
 
-Comment by spice created at 2011-03-22 21:20:21
+archive/issue_comments_087647.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2011-03-22T21:20:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9306",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9306#issuecomment-87647",
+    "user": "spice"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by spice created at 2011-03-22 21:20:21
+archive/issue_comments_087648.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"round\".",
+    "created_at": "2011-03-22T21:20:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9306",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9306#issuecomment-87648",
+    "user": "spice"
+}
+```
 
 Changing keywords from "" to "round".
 
 
+
 ---
 
-Comment by kini created at 2011-03-23 01:30:47
+archive/issue_comments_087649.json:
+```json
+{
+    "body": "Five doctests failed, then failed to fail when I retested them, including devel/sage/sage/tests/startup.py . Code is easy to read and clearly does what it is intended to do, which intent I agree with. Everything looks good!",
+    "created_at": "2011-03-23T01:30:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9306",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9306#issuecomment-87649",
+    "user": "kini"
+}
+```
 
 Five doctests failed, then failed to fail when I retested them, including devel/sage/sage/tests/startup.py . Code is easy to read and clearly does what it is intended to do, which intent I agree with. Everything looks good!
 
 
+
 ---
 
-Comment by kini created at 2011-03-23 01:30:47
+archive/issue_comments_087650.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2011-03-23T01:30:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9306",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9306#issuecomment-87650",
+    "user": "kini"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-04-07 13:48:34
+archive/issue_comments_087651.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2011-04-07T13:48:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9306",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9306#issuecomment-87651",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: fixed

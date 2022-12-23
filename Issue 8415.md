@@ -1,11 +1,21 @@
 # Issue 8415: bug in complex period lattice
 
-Issue created by migration from https://trac.sagemath.org/ticket/8415
-
-Original creator: robertwb
-
-Original creation time: 2010-03-02 08:59:06
-
+archive/issues_008415.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  cremona\n\n\n```\nE = EllipticCurve('37a')\nK.<a> = QuadraticField(-7)\nEK = E.change_ring(K)\nL = EK.period_lattice(K.complex_embeddings()[0])\n[hang, can't control-c]\n```\n\n\nGDB Backtrace: \n\n\n```\n#0  0x00007f87d128506a in Flx_to_ZX ()\n   from /usr/local/sage/local/lib/libpari-gmp.so.2\n#1  0x00007f87d13a378f in FpX_split_Berlekamp ()\n   from /usr/local/sage/local/lib/libpari-gmp.so.2\n#2  0x00007f87d146fbda in nfsqff ()\n   from /usr/local/sage/local/lib/libpari-gmp.so.2\n#3  0x00007f87d1470383 in nffactor ()\n   from /usr/local/sage/local/lib/libpari-gmp.so.2\n#4  0x00007f87cc206364 in __pyx_pf_4sage_4libs_4pari_3gen_3gen_nffactor (\n    __pyx_v_self=0x4a0bc58, __pyx_v_x=<value optimized out>)\n    at sage/libs/pari/gen.c:27077\n#5  0x00000000004978b1 in PyEval_EvalFrameEx (f=0x485aea0, \n    throwflag=<value optimized out>) at Python/ceval.c:3694\n#6  0x0000000000498e61 in PyEval_EvalCodeEx (co=0x20635d0, \n    globals=<value optimized out>, locals=<value optimized out>, args=0x20, \n    argcount=2, kws=0x48b1c38, kwcount=0, defs=0x0, defcount=0, closure=0x0)\n    at Python/ceval.c:2968\n#7  0x0000000000496c7e in PyEval_EvalFrameEx (f=0x48b1a60, \n    throwflag=<value optimized out>) at Python/ceval.c:3802\n#8  0x0000000000497540 in PyEval_EvalFrameEx (f=0x48b1890, \n    throwflag=<value optimized out>) at Python/ceval.c:3792\n#9  0x0000000000497540 in PyEval_EvalFrameEx (f=0x48b1660, \n    throwflag=<value optimized out>) at Python/ceval.c:3792\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8415\n\n",
+    "created_at": "2010-03-02T08:59:06Z",
+    "labels": [
+        "number theory",
+        "major",
+        "bug"
+    ],
+    "title": "bug in complex period lattice",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8415",
+    "user": "robertwb"
+}
+```
 Assignee: was
 
 CC:  cremona
@@ -50,10 +60,25 @@ GDB Backtrace:
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8415
+
+
+
+
 
 ---
 
-Comment by cremona created at 2010-03-02 09:37:17
+archive/issue_comments_075409.json:
+```json
+{
+    "body": "The fault is when refine_embedding is called;  and in that function (in sage.rings.number_field.number_field) the line which hangs is\n\n```\nelist = K.embeddings(sage.rings.qqbar.QQbar)\n```\n\n\nSo a minimal hang-causing session is simply\n\n```\nsage: K.<a> = QuadraticField(-7)\nsage: K.embeddings(QQbar)\n```\n",
+    "created_at": "2010-03-02T09:37:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8415",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8415#issuecomment-75409",
+    "user": "cremona"
+}
+```
 
 The fault is when refine_embedding is called;  and in that function (in sage.rings.number_field.number_field) the line which hangs is
 
@@ -71,9 +96,20 @@ sage: K.embeddings(QQbar)
 
 
 
+
 ---
 
-Comment by cremona created at 2010-03-02 09:50:47
+archive/issue_comments_075410.json:
+```json
+{
+    "body": "\n```\nsage: x=polygen(QQbar)\nsage: f=x^2+7\nsage: r=f.roots()\nsage: r\n[(-2.645751311064591?*I, 1), (2.645751311064591?*I, 1)]\nsage: r.sort()\n```\n\nhangs.  So it's the sorting -- in fact the comparison! -- of two elements of QQbar which is the problem.",
+    "created_at": "2010-03-02T09:50:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8415",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8415#issuecomment-75410",
+    "user": "cremona"
+}
+```
 
 
 ```
@@ -88,16 +124,38 @@ sage: r.sort()
 hangs.  So it's the sorting -- in fact the comparison! -- of two elements of QQbar which is the problem.
 
 
+
 ---
 
-Comment by robertwb created at 2010-03-02 09:54:27
+archive/issue_comments_075411.json:
+```json
+{
+    "body": "Ah, I bet it's trying to compare them lexicographically! Wonder why this doesn't happen with other quadratic number fields...",
+    "created_at": "2010-03-02T09:54:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8415",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8415#issuecomment-75411",
+    "user": "robertwb"
+}
+```
 
 Ah, I bet it's trying to compare them lexicographically! Wonder why this doesn't happen with other quadratic number fields...
 
 
+
 ---
 
-Comment by cremona created at 2010-03-02 16:48:38
+archive/issue_comments_075412.json:
+```json
+{
+    "body": "\n```\nsage: r = QQbar(-7).sqrt()\nsage: s = r.conjugate()   \nsage: (r-s).exactify()    # hangs\n```\n\n\nIt's  in the QQbqr code...    The actual hanging is happening in a call to pari's nffactor on line 1632 of qqbar.py.  So I think it's yet another manifestation of pari's nnffactor bugs:\n\n```\njec@selmer%sage -gp\n...\n                  GP/PARI CALCULATOR Version 2.3.3 (released)\n         amd64 running linux (x86-64/GMP-4.2.1 kernel) 64-bit version\n           compiled: Feb 22 2010, gcc-4.3.3 (Ubuntu 4.3.3-5ubuntu4) \n               (readline v6.0 enabled, extended help available)\n...\n? nf = nfinit(y^2-y+2);                                                       \n? nffactor(nf,x^2-x+2)                                                        \n  *** nffactor: the PARI stack overflows !\n  current stack size: 8000000 (7.629 Mbytes)\n  [hint] you can increase GP stack with allocatemem()\n```\n\n( from inside sage, this just hangs).\n\nAccording to http://old.nabble.com/New-PARI-stable-release-2.3.5-td27467266.html there are 3 bug-fixes to nffactor in 2.3.5 which is a bug-fix release.  Current development version is 2.4.3, in which the above example works fine.  I have not tried 2.3.5.",
+    "created_at": "2010-03-02T16:48:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8415",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8415#issuecomment-75412",
+    "user": "cremona"
+}
+```
 
 
 ```
@@ -129,45 +187,111 @@ jec@selmer%sage -gp
 According to http://old.nabble.com/New-PARI-stable-release-2.3.5-td27467266.html there are 3 bug-fixes to nffactor in 2.3.5 which is a bug-fix release.  Current development version is 2.4.3, in which the above example works fine.  I have not tried 2.3.5.
 
 
+
 ---
 
-Comment by cremona created at 2010-03-11 21:10:08
+archive/issue_comments_075413.json:
+```json
+{
+    "body": "All the problems listed here are solved after the new spkg and patches at #8453.\n\nThis ticket can be closed after that one is merged.",
+    "created_at": "2010-03-11T21:10:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8415",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8415#issuecomment-75413",
+    "user": "cremona"
+}
+```
 
 All the problems listed here are solved after the new spkg and patches at #8453.
 
 This ticket can be closed after that one is merged.
 
 
+
 ---
 
-Comment by davidloeffler created at 2010-03-11 22:55:54
+archive/issue_comments_075414.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-03-11T22:55:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8415",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8415#issuecomment-75414",
+    "user": "davidloeffler"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by davidloeffler created at 2010-03-11 22:57:13
+archive/issue_comments_075415.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-03-11T22:57:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8415",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8415#issuecomment-75415",
+    "user": "davidloeffler"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by davidloeffler created at 2010-03-11 22:57:13
+archive/issue_comments_075416.json:
+```json
+{
+    "body": "I'm marking this as \"positive review\", to bring it to the attention of the release maintainer who can close it.",
+    "created_at": "2010-03-11T22:57:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8415",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8415#issuecomment-75416",
+    "user": "davidloeffler"
+}
+```
 
 I'm marking this as "positive review", to bring it to the attention of the release maintainer who can close it.
 
 
+
 ---
 
-Comment by was created at 2010-04-29 05:14:25
+archive/issue_comments_075417.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-04-29T05:14:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8415",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8415#issuecomment-75417",
+    "user": "was"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mvngu created at 2010-04-29 15:37:12
+archive/issue_comments_075418.json:
+```json
+{
+    "body": "Close as fixed by #8453.",
+    "created_at": "2010-04-29T15:37:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8415",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8415#issuecomment-75418",
+    "user": "mvngu"
+}
+```
 
 Close as fixed by #8453.

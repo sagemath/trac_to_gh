@@ -1,11 +1,21 @@
 # Issue 2200: copyright documentation for various spkgs
 
-Issue created by migration from https://trac.sagemath.org/ticket/2200
-
-Original creator: tabbott
-
-Original creation time: 2008-02-17 21:53:31
-
+archive/issues_002200.json:
+```json
+{
+    "body": "Assignee: tabbott\n\nAs part of adding Debian copyright files to all the Debian packages, I tried to verify the copyright status of all the SAGE dependencies I'm packaging for Debian.  The following are the list of packages for which I have questions about:\n\n- givaro: I can only verify this is GPL2; is it supposed to be GPL3 compatible?\n\n- genus2reduction: The genus2reduction package itself doesn't mention copyright; though the SAGE COPYING.txt file claims GPL...\n\n- libm4ri: I can't find an upstream URL for this.  Is there one?\n\n- tachyon: still has 4-clause BSD in the sources (It apparently hasn't been released since the author agreed to relicense to 3-clause over email; since the email is 6 months old, it might be useful to email John Stone again?).\n\n- sympow: the copyright statement in the SAGE COPYING.txt differs from that in the sympow sources (the latter seems to not be a standard BSD license).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2200\n\n",
+    "created_at": "2008-02-17T21:53:31Z",
+    "labels": [
+        "debian-package",
+        "major",
+        "enhancement"
+    ],
+    "title": "copyright documentation for various spkgs",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2200",
+    "user": "tabbott"
+}
+```
 Assignee: tabbott
 
 As part of adding Debian copyright files to all the Debian packages, I tried to verify the copyright status of all the SAGE dependencies I'm packaging for Debian.  The following are the list of packages for which I have questions about:
@@ -21,29 +31,55 @@ As part of adding Debian copyright files to all the Debian packages, I tried to 
 - sympow: the copyright statement in the SAGE COPYING.txt differs from that in the sympow sources (the latter seems to not be a standard BSD license).
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2200
+
+
+
+
 
 ---
 
-Comment by malb created at 2008-02-17 22:09:54
+archive/issue_comments_014475.json:
+```json
+{
+    "body": "> - libm4ri: I can't find an upstream URL for this.  Is there one?\n\nThere is none. I basically maintain the code because Gregory Bard is too busy to do it. It definitely is GPLv2 or later, I got that from Gregory via e-mail.",
+    "created_at": "2008-02-17T22:09:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2200",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2200#issuecomment-14475",
+    "user": "malb"
+}
+```
 
 > - libm4ri: I can't find an upstream URL for this.  Is there one?
 
 There is none. I basically maintain the code because Gregory Bard is too busy to do it. It definitely is GPLv2 or later, I got that from Gregory via e-mail.
 
 
+
 ---
 
-Comment by was created at 2008-02-17 22:13:37
+archive/issue_comments_014476.json:
+```json
+{
+    "body": "- givaro: this is GPL3 compatible because it's only copyright statement is that they include the GPL v2 COPYING file, which is itself GPL V3 compatible.  It says right in it \"If the Program does not specify a version number of this License, you may choose any version ever published by the Free Software Foundation.\"\n\n  - genus2reduction -- I'm the maintainer of that package\n\n  - tachyon -- pinging the author again is a good idea.  could you do that?\n\n  - libm4ri -- see the comment from malb\n\n  - sympow -- you're right, he puts an additional restriction above standard bsd.\nThe additional restriction is 'If redistribution is done as a part of a compilation that has a more\n restrictive license (such as the GPL), then the fact that SYMPOW has\n a less restrictive license must be made clear to the recipient.\n For example, a line like (include bracketed text if SYMPOW is modified):\n  \"This compilation includes [a modification of] SYMPOW whose [original]\n   code has a less-restrictive license than the entire compilation.\"\n should appear in a suitable place in the COPYING and/or LICENSE file.'; I don't\nview that as GPL-incompatible -- it doesn't restrict usage at all.  It just says that the copyright on sympow can't be hidden. \n\nSo, the sympow section in Sage's COPYING.txt should be changed. \n\nwiliam",
+    "created_at": "2008-02-17T22:13:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2200",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2200#issuecomment-14476",
+    "user": "was"
+}
+```
 
 - givaro: this is GPL3 compatible because it's only copyright statement is that they include the GPL v2 COPYING file, which is itself GPL V3 compatible.  It says right in it "If the Program does not specify a version number of this License, you may choose any version ever published by the Free Software Foundation."
 
- - genus2reduction -- I'm the maintainer of that package
+  - genus2reduction -- I'm the maintainer of that package
 
- - tachyon -- pinging the author again is a good idea.  could you do that?
+  - tachyon -- pinging the author again is a good idea.  could you do that?
 
- - libm4ri -- see the comment from malb
+  - libm4ri -- see the comment from malb
 
- - sympow -- you're right, he puts an additional restriction above standard bsd.
+  - sympow -- you're right, he puts an additional restriction above standard bsd.
 The additional restriction is 'If redistribution is done as a part of a compilation that has a more
  restrictive license (such as the GPL), then the fact that SYMPOW has
  a less restrictive license must be made clear to the recipient.
@@ -58,9 +94,20 @@ So, the sympow section in Sage's COPYING.txt should be changed.
 wiliam
 
 
+
 ---
 
-Comment by was created at 2008-02-17 22:15:29
+archive/issue_comments_014477.json:
+```json
+{
+    "body": "Regarding genus2reduction, i should probably get a clear copyright license statement from Qing Liu, who said to me only\n\n```\nFrom Qing.Liu@math.u-bordeaux1.fr Sat Jul 16 23:33:18 2005\nReturn-path: <Qing.Liu@math.u-bordeaux1.fr>\n\nHi William,\n\nIt will be a pleasure for me that you include genus2reduction in SAGE.\nNote however that the program is not maintained anymore.  Please\nfeel free to make any technical modifications to make it compile\nin recent systems.\n\nBest regards,\n\nLiu\n\n```\n",
+    "created_at": "2008-02-17T22:15:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2200",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2200#issuecomment-14477",
+    "user": "was"
+}
+```
 
 Regarding genus2reduction, i should probably get a clear copyright license statement from Qing Liu, who said to me only
 
@@ -83,9 +130,20 @@ Liu
 
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-17 22:20:36
+archive/issue_comments_014478.json:
+```json
+{
+    "body": "Replying to [comment:2 was]:\n> So, the sympow section in Sage's COPYING.txt should be changed. \n\nThat is #1172 and an easy credit.\n \n> wiliam\n\nCheers,\n\nMichael",
+    "created_at": "2008-02-17T22:20:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2200",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2200#issuecomment-14478",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:2 was]:
 > So, the sympow section in Sage's COPYING.txt should be changed. 
@@ -99,9 +157,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by tabbott created at 2008-02-17 22:39:23
+archive/issue_comments_014479.json:
+```json
+{
+    "body": "libm4ri: I'll list sagemath.org as the URL then.  I've attached a patch to #2199.\n\ngivaro: Hmm, I hadn't realized that property of the GPL.  I've attached a patch to #2199.\n\ngenus2reduction: Okay, once you get something more clear from Qing Liu, it would probably be helpful for eventually getting into Debian if we were to include a COPYING file in the src/ directory. \n\nsympow: Okay, I've attached a patch to #2199 with the Sympow Debian copyright file.\n\ntachyon: I've pinged the author.",
+    "created_at": "2008-02-17T22:39:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2200",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2200#issuecomment-14479",
+    "user": "tabbott"
+}
+```
 
 libm4ri: I'll list sagemath.org as the URL then.  I've attached a patch to #2199.
 
@@ -114,18 +183,40 @@ sympow: Okay, I've attached a patch to #2199 with the Sympow Debian copyright fi
 tachyon: I've pinged the author.
 
 
+
 ---
 
-Comment by was created at 2008-02-17 23:08:59
+archive/issue_comments_014480.json:
+```json
+{
+    "body": "I've pinged the genus2reduction author.\n\nWilliam",
+    "created_at": "2008-02-17T23:08:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2200",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2200#issuecomment-14480",
+    "user": "was"
+}
+```
 
 I've pinged the genus2reduction author.
 
 William
 
 
+
 ---
 
-Comment by was created at 2008-02-18 00:06:29
+archive/issue_comments_014481.json:
+```json
+{
+    "body": "I've received written permission from Liu to GPL genus2reduction, and have done so.  The new package is here:\n\nhttp://sage.math.washington.edu/home/was/patches/genus2reduction-0.3.p2.spkg\n\nPlease switch to this.",
+    "created_at": "2008-02-18T00:06:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2200",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2200#issuecomment-14481",
+    "user": "was"
+}
+```
 
 I've received written permission from Liu to GPL genus2reduction, and have done so.  The new package is here:
 
@@ -134,16 +225,38 @@ http://sage.math.washington.edu/home/was/patches/genus2reduction-0.3.p2.spkg
 Please switch to this.
 
 
+
 ---
 
-Comment by tabbott created at 2008-02-18 00:27:52
+archive/issue_comments_014482.json:
+```json
+{
+    "body": "Okay, I've attached a Debian copyright file for genus2reduction to #2199.",
+    "created_at": "2008-02-18T00:27:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2200",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2200#issuecomment-14482",
+    "user": "tabbott"
+}
+```
 
 Okay, I've attached a Debian copyright file for genus2reduction to #2199.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-01 20:38:43
+archive/issue_comments_014483.json:
+```json
+{
+    "body": "The genus2reduction.spkg has been merged a while ago. The issue about tachyon's BSD status should be on a new ticket.\n\nCheers,\n\nMichael",
+    "created_at": "2008-04-01T20:38:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2200",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2200#issuecomment-14483",
+    "user": "mabshoff"
+}
+```
 
 The genus2reduction.spkg has been merged a while ago. The issue about tachyon's BSD status should be on a new ticket.
 
@@ -152,8 +265,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-01 20:38:43
+archive/issue_comments_014484.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-04-01T20:38:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2200",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2200#issuecomment-14484",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

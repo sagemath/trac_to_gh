@@ -1,11 +1,21 @@
 # Issue 4378: 3.2.alpha1: -sdist does not copy html from template directory
 
-Issue created by migration from https://trac.sagemath.org/ticket/4378
-
-Original creator: mabshoff
-
-Original creation time: 2008-10-28 18:31:17
-
+archive/issues_004378.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\n-sdist needs to copy the new html files in the template directory. Otherwise Sage does not start up and all the tests fail on \"make check\"\n\nThese html files need to be added to MANIFEST.in\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4378\n\n",
+    "created_at": "2008-10-28T18:31:17Z",
+    "labels": [
+        "distribution",
+        "blocker",
+        "bug"
+    ],
+    "title": "3.2.alpha1: -sdist does not copy html from template directory",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4378",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 -sdist needs to copy the new html files in the template directory. Otherwise Sage does not start up and all the tests fail on "make check"
@@ -16,17 +26,43 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/4378
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-10-28 18:31:25
+archive/issue_comments_032212.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-10-28T18:31:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4378",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4378#issuecomment-32212",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-31 23:36:57
+archive/issue_comments_032213.json:
+```json
+{
+    "body": "With the html files added to MANIFEST.in the repo does not lack any files:\n\n```\ndist/sage-3.2.alpha2/spkg/standard/sage-3.2.alpha2$ hg stat\ndist/sage-3.2.alpha2/spkg/standard/sage-3.2.alpha2$ \n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2008-10-31T23:36:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4378",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4378#issuecomment-32213",
+    "user": "mabshoff"
+}
+```
 
 With the html files added to MANIFEST.in the repo does not lack any files:
 
@@ -41,22 +77,57 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_032214.json:
+```json
+{
+    "body": "Attachment\n\nLooks good.",
+    "created_at": "2008-10-31T23:41:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4378",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4378#issuecomment-32214",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 Looks good.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-31 23:47:46
+archive/issue_comments_032215.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-10-31T23:47:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4378",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4378#issuecomment-32215",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-31 23:47:46
+archive/issue_comments_032216.json:
+```json
+{
+    "body": "Merged in Sage 3.2.alpha2",
+    "created_at": "2008-10-31T23:47:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4378",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4378#issuecomment-32216",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.2.alpha2

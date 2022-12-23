@@ -1,11 +1,21 @@
 # Issue 9205: Discrete logs to composite bases
 
-Issue created by migration from https://trac.sagemath.org/ticket/9205
-
-Original creator: davidloeffler
-
-Original creation time: 2010-06-10 14:11:02
-
+archive/issues_009205.json:
+```json
+{
+    "body": "Assignee: was\n\nAt present, we have a discrete log function which claims to work for Z/NZ when this group is cyclic, but it can be wrong when N is not prime, as in this example:\n\n```\nsage: Mod(5,9).log(Mod(2, 9))\n6\nsage: sage: discrete_log(Mod(5, 9), Mod(2, 9))\n5\n```\n\n\nThe first answer is totally wrong, because Pari's znlog function is intended to be used with a prime modulus and silently returns junk in the non-prime case.\n\nI need to be able to express elements of Z/NZ* in terms of generators in the non-cyclic case anway, so I will fix this in the process.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9205\n\n",
+    "created_at": "2010-06-10T14:11:02Z",
+    "labels": [
+        "number theory",
+        "major",
+        "bug"
+    ],
+    "title": "Discrete logs to composite bases",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9205",
+    "user": "davidloeffler"
+}
+```
 Assignee: was
 
 At present, we have a discrete log function which claims to work for Z/NZ when this group is cyclic, but it can be wrong when N is not prime, as in this example:
@@ -22,50 +32,135 @@ The first answer is totally wrong, because Pari's znlog function is intended to 
 
 I need to be able to express elements of Z/NZ* in terms of generators in the non-cyclic case anway, so I will fix this in the process.
 
+Issue created by migration from https://trac.sagemath.org/ticket/9205
+
+
+
+
 
 ---
 
-Comment by davidloeffler created at 2010-06-10 14:41:53
+archive/issue_comments_086158.json:
+```json
+{
+    "body": "patch against 4.4.4.alpha0",
+    "created_at": "2010-06-10T14:41:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9205",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9205#issuecomment-86158",
+    "user": "davidloeffler"
+}
+```
 
 patch against 4.4.4.alpha0
 
 
+
 ---
 
-Comment by davidloeffler created at 2010-06-10 14:43:26
+archive/issue_comments_086159.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-06-10T14:43:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9205",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9205#issuecomment-86159",
+    "user": "davidloeffler"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_086160.json:
+```json
+{
+    "body": "Attachment\n\nHere's a patch. It fixes the \"log\" method so it returns the right answer when the multiplicative group is cyclic, and adds a new method (I called this \"generalised log\" -- I didn't know what else to call it) which returns a vector of exponents with respect to the generators of the unit group.",
+    "created_at": "2010-06-10T14:43:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9205",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9205#issuecomment-86160",
+    "user": "davidloeffler"
+}
+```
 
 Attachment
 
 Here's a patch. It fixes the "log" method so it returns the right answer when the multiplicative group is cyclic, and adds a new method (I called this "generalised log" -- I didn't know what else to call it) which returns a vector of exponents with respect to the generators of the unit group.
 
 
+
 ---
 
-Comment by cremona created at 2010-06-23 16:14:56
+archive/issue_comments_086161.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-06-23T16:14:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9205",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9205#issuecomment-86161",
+    "user": "cremona"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by cremona created at 2010-06-23 16:14:56
+archive/issue_comments_086162.json:
+```json
+{
+    "body": "Looks fine, applies to 4.4.4.alpha1 also and tests in rings/finite_rings pass.",
+    "created_at": "2010-06-23T16:14:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9205",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9205#issuecomment-86162",
+    "user": "cremona"
+}
+```
 
 Looks fine, applies to 4.4.4.alpha1 also and tests in rings/finite_rings pass.
 
 
+
 ---
 
-Comment by davidloeffler created at 2010-06-30 19:03:21
+archive/issue_comments_086163.json:
+```json
+{
+    "body": "apply over previous patch",
+    "created_at": "2010-06-30T19:03:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9205",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9205#issuecomment-86163",
+    "user": "davidloeffler"
+}
+```
 
 apply over previous patch
 
 
+
 ---
+
+archive/issue_comments_086164.json:
+```json
+{
+    "body": "Attachment\n\nReplying to [comment:2 cremona]:\n> Looks fine, applies to 4.4.4.alpha1 also and tests in rings/finite_rings pass.\n\n... but one of the doctest in sage/functions/log doesn't. Here's a tiny patch that fixes that.",
+    "created_at": "2010-06-30T19:04:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9205",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9205#issuecomment-86164",
+    "user": "davidloeffler"
+}
+```
 
 Attachment
 
@@ -75,8 +170,19 @@ Replying to [comment:2 cremona]:
 ... but one of the doctest in sage/functions/log doesn't. Here's a tiny patch that fixes that.
 
 
+
 ---
 
-Comment by mpatel created at 2010-07-20 07:18:59
+archive/issue_comments_086165.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-07-20T07:18:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9205",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9205#issuecomment-86165",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed

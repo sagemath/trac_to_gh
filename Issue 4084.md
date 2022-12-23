@@ -1,11 +1,21 @@
 # Issue 4084: plot(1/cos,-1,1) fails
 
-Issue created by migration from https://trac.sagemath.org/ticket/4084
-
-Original creator: jwmerrill
-
-Original creation time: 2008-09-09 03:44:08
-
+archive/issues_004084.json:
+```json
+{
+    "body": "Assignee: jwmerrill\n\nPlot works with symbolic functions, but not compositions or arithmetic involving them.\n\n\n```\nsage: plot(cos,-1,1) #works\n\nsage: plot(1/cos,-1,1)\nTraceback (most recent call last):\n...\nTypeError: float() argument must be a string or a number\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4084\n\n",
+    "created_at": "2008-09-09T03:44:08Z",
+    "labels": [
+        "graphics",
+        "major",
+        "bug"
+    ],
+    "title": "plot(1/cos,-1,1) fails",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4084",
+    "user": "jwmerrill"
+}
+```
 Assignee: jwmerrill
 
 Plot works with symbolic functions, but not compositions or arithmetic involving them.
@@ -21,8 +31,25 @@ TypeError: float() argument must be a string or a number
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4084
+
+
+
+
 
 ---
+
+archive/issue_comments_029466.json:
+```json
+{
+    "body": "Attachment\n\nHi,\n\nthis is fixed in 3.1.2.rc1-ish:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.2.rc1$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.1.2.rc0, Release Date: 2008-09-06                   |\n| Type notebook() for the GUI, and license() for information.        |\nsage: plot(1/cos,-1,1)\n\nsage: \nExiting SAGE (CPU time 0m0.63s, Wall time 0m4.01s).\nExiting spawned Maxima process.\n```\n\nPlease post a patch that adds only the doctest. There are unrelated changes in the patch.\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-09T03:50:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4084",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4084#issuecomment-29466",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -50,7 +77,20 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_029467.json:
+```json
+{
+    "body": "Attachment\n\n4804_doctest_only.patch adds only doctests.  If accepted, only that patch should be applied.  This should not be accepted until the new doctests actually pass.\n\nThanks for the quick catch mhansen.  \"Unrelated\" might be a little strong, though I was bold in modifying implementation to make this work.  In any case, sounds like problem solved.\n\nCheers,\n\nJM",
+    "created_at": "2008-09-09T04:05:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4084",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4084#issuecomment-29467",
+    "user": "jwmerrill"
+}
+```
 
 Attachment
 
@@ -63,9 +103,20 @@ Cheers,
 JM
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-09 04:21:14
+archive/issue_comments_029468.json:
+```json
+{
+    "body": "Replying to [comment:2 jwmerrill]:\n> 4804_doctest_only.patch adds only doctests.  If accepted, only that patch should be applied.  This should not be accepted until the new doctests actually pass.\n\nI rebased the patch against my current merge tree. \n\n> Thanks for the quick catch mhansen.  \"Unrelated\" might be a little strong, though I was bold in modifying implementation to make this work.  In any case, sounds like problem solved.\n\nIt wasn't mhansen ;). The changes in plot.py had *zero* to do with the ticket and the \"fix\" is canonically wrong since we just don't just wipe out low order bits preventatively.\n\n> Cheers,\n> \n> JM\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-09T04:21:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4084",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4084#issuecomment-29468",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:2 jwmerrill]:
 > 4804_doctest_only.patch adds only doctests.  If accepted, only that patch should be applied.  This should not be accepted until the new doctests actually pass.
@@ -85,9 +136,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by jwmerrill created at 2008-09-09 04:23:42
+archive/issue_comments_029469.json:
+```json
+{
+    "body": "Both points well taken.\n\nCheers,\n\nJM",
+    "created_at": "2008-09-09T04:23:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4084",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4084#issuecomment-29469",
+    "user": "jwmerrill"
+}
+```
 
 Both points well taken.
 
@@ -96,9 +158,20 @@ Cheers,
 JM
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-09 04:41:57
+archive/issue_comments_029470.json:
+```json
+{
+    "body": "With the patch applied doctests do pass. Positive review.\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-09T04:41:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4084",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4084#issuecomment-29470",
+    "user": "mabshoff"
+}
+```
 
 With the patch applied doctests do pass. Positive review.
 
@@ -107,15 +180,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-09 04:45:42
+archive/issue_comments_029471.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-09-09T04:45:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4084",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4084#issuecomment-29471",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-09 04:45:42
+archive/issue_comments_029472.json:
+```json
+{
+    "body": "Merged rebased 4804_doctest_only.patch in Sage 3.1.2.rc1",
+    "created_at": "2008-09-09T04:45:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4084",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4084#issuecomment-29472",
+    "user": "mabshoff"
+}
+```
 
 Merged rebased 4804_doctest_only.patch in Sage 3.1.2.rc1

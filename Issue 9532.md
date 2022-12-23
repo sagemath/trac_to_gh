@@ -1,11 +1,21 @@
 # Issue 9532: fix uncontrolled randomness in sage/graphs
 
-Issue created by migration from https://trac.sagemath.org/ticket/9532
-
-Original creator: cwitty
-
-Original creation time: 2010-07-17 20:12:40
-
+archive/issues_009532.json:
+```json
+{
+    "body": "Assignee: cwitty\n\nCC:  rlm\n\nThere are several places in sage/graphs that use random numbers that aren't under the control of randstate.pyx.  I'm going to fix them now.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9532\n\n",
+    "created_at": "2010-07-17T20:12:40Z",
+    "labels": [
+        "graph theory",
+        "major",
+        "bug"
+    ],
+    "title": "fix uncontrolled randomness in sage/graphs",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9532",
+    "user": "cwitty"
+}
+```
 Assignee: cwitty
 
 CC:  rlm
@@ -13,42 +23,114 @@ CC:  rlm
 There are several places in sage/graphs that use random numbers that aren't under the control of randstate.pyx.  I'm going to fix them now.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/9532
+
+
+
+
 
 ---
+
+archive/issue_comments_091762.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-07-17T22:47:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9532",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9532#issuecomment-91762",
+    "user": "cwitty"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by cwitty created at 2010-07-17 22:49:21
+archive/issue_comments_091763.json:
+```json
+{
+    "body": "OK, the patch is up.  I fixed all the randomness I found (except for two calls in two versions of random_stress, which I left alone except for a comment).",
+    "created_at": "2010-07-17T22:49:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9532",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9532#issuecomment-91763",
+    "user": "cwitty"
+}
+```
 
 OK, the patch is up.  I fixed all the randomness I found (except for two calls in two versions of random_stress, which I left alone except for a comment).
 
 
+
 ---
 
-Comment by cwitty created at 2010-07-17 22:49:21
+archive/issue_comments_091764.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-07-17T22:49:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9532",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9532#issuecomment-91764",
+    "user": "cwitty"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by rlm created at 2010-07-19 11:40:42
+archive/issue_comments_091765.json:
+```json
+{
+    "body": "Looks good to me.",
+    "created_at": "2010-07-19T11:40:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9532",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9532#issuecomment-91765",
+    "user": "rlm"
+}
+```
 
 Looks good to me.
 
 
+
 ---
 
-Comment by rlm created at 2010-07-19 11:40:42
+archive/issue_comments_091766.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-07-19T11:40:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9532",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9532#issuecomment-91766",
+    "user": "rlm"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mpatel created at 2010-07-21 02:49:34
+archive/issue_comments_091767.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-07-21T02:49:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9532",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9532#issuecomment-91767",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed

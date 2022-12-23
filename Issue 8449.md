@@ -1,75 +1,192 @@
 # Issue 8449: real_part? has an unescaped \r
 
-Issue created by migration from https://trac.sagemath.org/ticket/8449
-
-Original creator: jason
-
-Original creation time: 2010-03-05 21:53:57
-
+archive/issues_008449.json:
+```json
+{
+    "body": "Assignee: mvngu\n\nThis docstring should be a raw string (i.e., r\"\"\" ... \"\"\")\n\nIssue created by migration from https://trac.sagemath.org/ticket/8449\n\n",
+    "created_at": "2010-03-05T21:53:57Z",
+    "labels": [
+        "documentation",
+        "minor",
+        "bug"
+    ],
+    "title": "real_part? has an unescaped \\r",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8449",
+    "user": "jason"
+}
+```
 Assignee: mvngu
 
 This docstring should be a raw string (i.e., r""" ... """)
 
+Issue created by migration from https://trac.sagemath.org/ticket/8449
+
+
+
+
 
 ---
+
+archive/issue_comments_075955.json:
+```json
+{
+    "body": "Attachment\n\nbased on Sage 4.4.2.alpha0",
+    "created_at": "2010-05-09T23:36:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8449",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8449#issuecomment-75955",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
 based on Sage 4.4.2.alpha0
 
 
+
 ---
 
-Comment by mvngu created at 2010-05-09 23:36:21
+archive/issue_comments_075956.json:
+```json
+{
+    "body": "Changing priority from minor to trivial.",
+    "created_at": "2010-05-09T23:36:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8449",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8449#issuecomment-75956",
+    "user": "mvngu"
+}
+```
 
 Changing priority from minor to trivial.
 
 
+
 ---
 
-Comment by mvngu created at 2010-05-09 23:36:21
+archive/issue_comments_075957.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-05-09T23:36:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8449",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8449#issuecomment-75957",
+    "user": "mvngu"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_075958.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-05-10T03:23:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8449",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8449#issuecomment-75958",
+    "user": "burcin"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by burcin created at 2010-05-10 03:24:48
+archive/issue_comments_075959.json:
+```json
+{
+    "body": "There were a few more docstrings in that file with the same problem. Positive review to Minh's patch. Someone needs to review mine now. :)",
+    "created_at": "2010-05-10T03:24:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8449",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8449#issuecomment-75959",
+    "user": "burcin"
+}
+```
 
 There were a few more docstrings in that file with the same problem. Positive review to Minh's patch. Someone needs to review mine now. :)
 
 
+
 ---
 
-Comment by mvngu created at 2010-05-10 04:28:09
+archive/issue_comments_075960.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-05-10T04:28:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8449",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8449#issuecomment-75960",
+    "user": "mvngu"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mvngu created at 2010-05-10 04:28:09
+archive/issue_comments_075961.json:
+```json
+{
+    "body": "Looks good. Burcin's patch clearly takes care of the others I missed.",
+    "created_at": "2010-05-10T04:28:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8449",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8449#issuecomment-75961",
+    "user": "mvngu"
+}
+```
 
 Looks good. Burcin's patch clearly takes care of the others I missed.
 
 
+
 ---
 
-Comment by mvngu created at 2010-05-11 05:16:16
+archive/issue_comments_075962.json:
+```json
+{
+    "body": "Merged in this order:\n\n1. [trac_8449.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8449/trac_8449.patch)\n2. [trac_8449.more_rs.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8449/trac_8449.more_rs.patch)",
+    "created_at": "2010-05-11T05:16:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8449",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8449#issuecomment-75962",
+    "user": "mvngu"
+}
+```
 
 Merged in this order:
 
- 1. [trac_8449.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8449/trac_8449.patch)
- 1. [trac_8449.more_rs.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8449/trac_8449.more_rs.patch)
+1. [trac_8449.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8449/trac_8449.patch)
+2. [trac_8449.more_rs.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8449/trac_8449.more_rs.patch)
+
 
 
 ---
 
-Comment by mvngu created at 2010-05-11 05:16:16
+archive/issue_comments_075963.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-05-11T05:16:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8449",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8449#issuecomment-75963",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

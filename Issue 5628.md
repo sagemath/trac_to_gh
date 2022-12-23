@@ -1,11 +1,21 @@
 # Issue 5628: a little sage-flags.txt issue
 
-Issue created by migration from https://trac.sagemath.org/ticket/5628
-
-Original creator: was
-
-Original creation time: 2009-03-29 03:29:59
-
+archive/issues_005628.json:
+```json
+{
+    "body": "Assignee: was\n\n\n```\nOn Sat, Mar 28, 2009 at 9:05 PM, Gonzalo Tornaria:\n>\n> I did an upgrade from 3.4 as follows:\n>\n> 1. sage -br main  ---> switch to main, which is CLEAN\n> 2. sage -upgrade\n> http://sage.math.washington.edu/home/mabshoff/release-cycles-3.4.1/sage-3.4.1.alpha0\n> 3. once that was finished, I pulled  the new changes into my sage-brandt branch\n> 4. applied the rebased 5520 + my tiny patch\n> 5. sage -br brandt\n>\n> But now, \"sage -br main\" (which is now clean 3.4.1.alpha0) causes the\n> same issue.\n>\n> Gonzalo\n\nJust delete \n   local/lib/sage-flags.txt\n\nAlso, I've opened a blocker ticket about this, since everybody who upgrades will run into exactly the same problem.  \n\nThe problem is that the new version of the script that checks the flags doesn't see sse4_1 anymore (nothing in Sage specifically uses that), but it's still in your old sage-flags.txt file.  Two possible solutions:\n   (1) delete sage-flags.txt as part of \"sage -upgrade\"\n   (2) make it so sse4_1 is specifically ignored.\n\nI like (1). \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5628\n\n",
+    "created_at": "2009-03-29T03:29:59Z",
+    "labels": [
+        "distribution",
+        "blocker",
+        "bug"
+    ],
+    "title": "a little sage-flags.txt issue",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5628",
+    "user": "was"
+}
+```
 Assignee: was
 
 
@@ -39,15 +49,43 @@ I like (1).
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5628
+
+
+
+
 
 ---
+
+archive/issue_comments_043948.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-03-29T03:32:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5628",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5628#issuecomment-43948",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by tornaria created at 2009-03-29 04:51:42
+archive/issue_comments_043949.json:
+```json
+{
+    "body": "The issue with this patch is that the `sage-flags.txt` file will not be regenerated unless sage install directory changes (because `write_flags_file()` is only called from within `install_moved()`.\n\nMaybe the flags file should also be created from the `check_processor_flags()` function. But then, this only works if sage is run at least once after an upgrade.\n\nOtherwise, doing `sage -upgrade` followed by `sage -bdist` ends up with a sage binary with no `sage-flags.txt`, defeating the purpose of the flags file.",
+    "created_at": "2009-03-29T04:51:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5628",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5628#issuecomment-43949",
+    "user": "tornaria"
+}
+```
 
 The issue with this patch is that the `sage-flags.txt` file will not be regenerated unless sage install directory changes (because `write_flags_file()` is only called from within `install_moved()`.
 
@@ -56,9 +94,20 @@ Maybe the flags file should also be created from the `check_processor_flags()` f
 Otherwise, doing `sage -upgrade` followed by `sage -bdist` ends up with a sage binary with no `sage-flags.txt`, defeating the purpose of the flags file.
 
 
+
 ---
 
-Comment by tornaria created at 2009-03-29 04:54:40
+archive/issue_comments_043950.json:
+```json
+{
+    "body": "I have an alternative fix:\n\n```\ndiff -r 804879ae0134 sage-location\n--- a/sage-location     Thu Mar 26 16:43:48 2009 -0700\n+++ b/sage-location     Sat Mar 28 22:32:50 2009 -0700\n@@ -77,7 +77,7 @@\n     if not os.path.exists(flags_file): return\n     # We check that the processor flags of the original build are a\n     # subset of the new machine.  If not, we print a massive warning.\n-    X = set(open(flags_file).read().split())\n+    X = set(open(flags_file).read().split()).intersection(FLAGS)\n     Y = set(get_flags_info().split())\n     if not X.issubset(Y):\n         print \"\"\n```\n\n\nThis makes it so that only the flags listed in FLAGS are relevant for `check_processor_flags()`. Thus, after an upgrade, the flag `sse4_1` will still be in the flags file, but it won't be required at runtime.",
+    "created_at": "2009-03-29T04:54:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5628",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5628#issuecomment-43950",
+    "user": "tornaria"
+}
+```
 
 I have an alternative fix:
 
@@ -81,9 +130,20 @@ diff -r 804879ae0134 sage-location
 This makes it so that only the flags listed in FLAGS are relevant for `check_processor_flags()`. Thus, after an upgrade, the flag `sse4_1` will still be in the flags file, but it won't be required at runtime.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-06 00:54:15
+archive/issue_comments_043951.json:
+```json
+{
+    "body": "I actually like Gonzalo's fix better than William's - not sure what to do about this yet.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-06T00:54:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5628",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5628#issuecomment-43951",
+    "user": "mabshoff"
+}
+```
 
 I actually like Gonzalo's fix better than William's - not sure what to do about this yet.
 
@@ -92,16 +152,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by was created at 2009-04-06 17:24:54
+archive/issue_comments_043952.json:
+```json
+{
+    "body": "I'm fine with either version.",
+    "created_at": "2009-04-06T17:24:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5628",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5628#issuecomment-43952",
+    "user": "was"
+}
+```
 
 I'm fine with either version.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-06 18:33:33
+archive/issue_comments_043953.json:
+```json
+{
+    "body": "This is a 3.4.1 blocker.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-06T18:33:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5628",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5628#issuecomment-43953",
+    "user": "mabshoff"
+}
+```
 
 This is a 3.4.1 blocker.
 
@@ -110,7 +192,20 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_043954.json:
+```json
+{
+    "body": "Attachment\n\nPositive review for trac_5628.patch. \n\nCheers,\n\nMichael",
+    "created_at": "2009-04-11T01:48:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5628",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5628#issuecomment-43954",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -121,16 +216,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-11 01:49:58
+archive/issue_comments_043955.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-04-11T01:49:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5628",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5628#issuecomment-43955",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-11 01:49:58
+archive/issue_comments_043956.json:
+```json
+{
+    "body": "Merged in Sage 3.4.1.rc2.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-11T01:49:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5628",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5628#issuecomment-43956",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.4.1.rc2.
 

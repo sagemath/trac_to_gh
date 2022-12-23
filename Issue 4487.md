@@ -1,11 +1,21 @@
 # Issue 4487: add method to evaluate characters of permutation and matrix groups
 
-Issue created by migration from https://trac.sagemath.org/ticket/4487
-
-Original creator: wdj
-
-Original creation time: 2008-11-10 00:12:42
-
+archive/issues_004487.json:
+```json
+{
+    "body": "Assignee: joyner\n\nCurrently to evaluate a character, you have to use\nsomething indirect like \n\n\n```\nsage: G = GL(2,7)\nsage: z = G.center().an_element()\nsage: reps = [x.Representative() for x in gap(G).ConjugacyClasses()]\nsage: reps.index(gap(z))\n8\nsage: table = gap(G).CharacterTable().Irr()\nsage: chi = table[2]\nsage: chi[8]\n1\n```\n\n\nMartin Mereb asked\n\n\n```\nis it possible to imlpement something like\nchi(z) or chi.eval(z) or something like that?\n```\n\n\nThis should be implemented.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4487\n\n",
+    "created_at": "2008-11-10T00:12:42Z",
+    "labels": [
+        "group theory",
+        "major",
+        "enhancement"
+    ],
+    "title": "add method to evaluate characters of permutation and matrix groups",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4487",
+    "user": "wdj"
+}
+```
 Assignee: joyner
 
 Currently to evaluate a character, you have to use
@@ -36,17 +46,45 @@ chi(z) or chi.eval(z) or something like that?
 
 This should be implemented.
 
+Issue created by migration from https://trac.sagemath.org/ticket/4487
+
+
+
+
 
 ---
+
+archive/issue_comments_033133.json:
+```json
+{
+    "body": "Attachment\n\npatch against version 3.2.rc0",
+    "created_at": "2008-11-13T17:01:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4487",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4487#issuecomment-33133",
+    "user": "saliola"
+}
+```
 
 Attachment
 
 patch against version 3.2.rc0
 
 
+
 ---
 
-Comment by saliola created at 2008-11-13 17:06:58
+archive/issue_comments_033134.json:
+```json
+{
+    "body": "I'm attaching a patch that adds a GroupCharacter class that wraps GAP's Character function. The above can now be achieved by doing the following:\n\n\n```\nsage: G = GL(2,7)\nsage: z = G.center().an_element()\nsage: chi = G.irreducible_characters()[1]\nsage: chi(z)\n1\n```\n\n\n\nOne problem: I don't know how to coerce the values of the characters into Sage. Is there a standard datatype for this?",
+    "created_at": "2008-11-13T17:06:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4487",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4487#issuecomment-33134",
+    "user": "saliola"
+}
+```
 
 I'm attaching a patch that adds a GroupCharacter class that wraps GAP's Character function. The above can now be achieved by doing the following:
 
@@ -64,9 +102,20 @@ sage: chi(z)
 One problem: I don't know how to coerce the values of the characters into Sage. Is there a standard datatype for this?
 
 
+
 ---
 
-Comment by wdj created at 2008-11-13 20:41:02
+archive/issue_comments_033135.json:
+```json
+{
+    "body": "Thank you so much for adding this patch. It is wonderful!\n\nI probably will not have time in the next day or so to referee it but can this weekend  definitely and possibly tomorrow night. However, I see a few problems. First, you are returning GAP values, but this is easy to fix:\n\n\n```\n\nsage: from sage.interfaces.gap import gfq_gap_to_sage\nsage: gfq_gap_to_sage(\"E(7)\",GF(7))\n3\nsage: gfq_gap_to_sage(\"E(8)\",GF(8,\"a\"))\na\n```\n\n\nSecond, and this is a matter of taste, I would name your Python class ClassFunction instead of GroupCharacter. Of course, they are the same vector space, but you can define orbital integrals and other invariants without regard to the characters, so it is just a more general name.\n\nThird, I wonder if it would be any more work to allow any Sage ring and the value-ring of an instance of this class? (For example, polynomial-valued class functions?)\n\nFinally, I wonder if you could also create a much more general class of ring-valued functions on a group? I don't know what use this would be off-hand but maybe one could use it in case one if not sure if the function is a class function or not?\n\nAnyway, just a few ideas to think about if you want, but thanks again for the very useful addition.",
+    "created_at": "2008-11-13T20:41:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4487",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4487#issuecomment-33135",
+    "user": "wdj"
+}
+```
 
 Thank you so much for adding this patch. It is wonderful!
 
@@ -92,18 +141,40 @@ Finally, I wonder if you could also create a much more general class of ring-val
 Anyway, just a few ideas to think about if you want, but thanks again for the very useful addition.
 
 
+
 ---
 
-Comment by saliola created at 2008-11-14 00:31:38
+archive/issue_comments_033136.json:
+```json
+{
+    "body": "Right now the code just wraps GAPs commands, but it can be made to do a lot of things natively and resort to GAP for some of the more complicated stuff. I was uncertain about how to implement a few things, but I thought that this would be a good way to start the discussion. I look forward to your review.\n\nI've been reading more about GAP's implementation, and it heavily relies on character tables. So we are probably going to want to implement those as well. In fact, every character stores the whole character table of the group (as UnderlyingCharacterTable). Should we stick closely to the GAP implementation and do the same? Arguably, this is what we should do if we want to use GAP for the heavy lifting, but I am open to suggestions.",
+    "created_at": "2008-11-14T00:31:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4487",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4487#issuecomment-33136",
+    "user": "saliola"
+}
+```
 
 Right now the code just wraps GAPs commands, but it can be made to do a lot of things natively and resort to GAP for some of the more complicated stuff. I was uncertain about how to implement a few things, but I thought that this would be a good way to start the discussion. I look forward to your review.
 
 I've been reading more about GAP's implementation, and it heavily relies on character tables. So we are probably going to want to implement those as well. In fact, every character stores the whole character table of the group (as UnderlyingCharacterTable). Should we stick closely to the GAP implementation and do the same? Arguably, this is what we should do if we want to use GAP for the heavy lifting, but I am open to suggestions.
 
 
+
 ---
 
-Comment by wdj created at 2008-11-15 00:53:03
+archive/issue_comments_033137.json:
+```json
+{
+    "body": "First, I am running sage on ubuntu 8.10 where doctesting seems to be broken, so I have not tested this.\n\nI like this addition so much, I am going to give it a positive review once one important change is made.\n\nThis output:\n\n\n```\nsage: G = GL(2,3)\nsage: irrs = G.irreducible_characters()\nsage: chi1 = irrs[3]; chi1\nCharacter of General Linear Group of degree 2 over Finite Field of size 3\nsage: g = G.conjugacy_class_representatives()[6]\nsage: chi1(g)\nE(8)+E(8)^3\n```\n\nis unacceptable, IMHO, because it is easy to fix and (as the author himself noted) should be a Sage value.\n\nIn addition to the things I noted above which might be changed but don't have to be (yet or ever), is the following somewhat odd behaviour:\n\n\n```\nsage: len(G.conjugacy_class_representatives())\n8\nsage: chi2 = GroupCharacter(G, [-1, -1, -1, -1, -1, 1, -1, -1])\nsage: chi2.irreducible_constituents()\n[]\nsage: chi2 = GroupCharacter(G, [1, 1, 1, 1, 1,1, 1, 1])\nsage: chi2.irreducible_constituents()\n[Character of General Linear Group of degree 2 over Finite Field of size 3]\nsage: chi2 = GroupCharacter(G, [2, 2, 2, 2, 2, 2, 2, 2])\nsage: chi2.irreducible_constituents()\n[Character of General Linear Group of degree 2 over Finite Field of size 3]\n```\n\nIt seems to be a coefficient is missing somewhere here. (I agree that this simply interfaces with GAP, but still!) Anyway, this can be fixed later and I want to minimize the required work so this can be included in Sage ASAP.",
+    "created_at": "2008-11-15T00:53:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4487",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4487#issuecomment-33137",
+    "user": "wdj"
+}
+```
 
 First, I am running sage on ubuntu 8.10 where doctesting seems to be broken, so I have not tested this.
 
@@ -144,9 +215,20 @@ sage: chi2.irreducible_constituents()
 It seems to be a coefficient is missing somewhere here. (I agree that this simply interfaces with GAP, but still!) Anyway, this can be fixed later and I want to minimize the required work so this can be included in Sage ASAP.
 
 
+
 ---
 
-Comment by saliola created at 2008-11-17 10:38:41
+archive/issue_comments_033138.json:
+```json
+{
+    "body": "* As suggested, I switched from GroupCharacter to ClassFunction. Note that this also changes the function being wrapped: GAP's ClassFunction instead of Character. Besides being more general, it also eliminates the odd behaviour you noticed above:\n\n```\nsage: G = GL(2,3)\nsage: sage: len(G.conjugacy_class_representatives())\n8\nsage: chi2 = ClassFunction(G, [-1, -1, -1, -1, -1, 1, -1, -1])\nsage: chi2.irreducible_constituents()\n[Character of General Linear Group of degree 2 over Finite Field of size 3,\n Character of General Linear Group of degree 2 over Finite Field of size 3,\n Character of General Linear Group of degree 2 over Finite Field of size 3,\n Character of General Linear Group of degree 2 over Finite Field of size 3,\n Character of General Linear Group of degree 2 over Finite Field of size 3,\n Character of General Linear Group of degree 2 over Finite Field of size 3]\nsage: chi2 = ClassFunction(G, [1, 1, 1, 1, 1,1, 1, 1])\nsage: chi2.irreducible_constituents()\n[Character of General Linear Group of degree 2 over Finite Field of size 3]\nsage: chi2 = ClassFunction(G, [2, 2, 2, 2, 2, 2, 2, 2])\nsage: chi2.irreducible_constituents()\n[Character of General Linear Group of degree 2 over Finite Field of size 3]\n```\n\n\n* I also fixed it so that Sage values are output instead of GAP elements. Thanks for pointing out gfq_gap_to_sage. I fixed this by adding a _base_ring data attribute that is set to the appropriate Cyclotomic Field (like is done in the character_table method). This should also make it possible to extend the code to work with values in arbitrary sage rings.\n\n```\nsage: G = GL(2,3)\nsage: chi = G.irreducible_characters()[3]\nsage: g = G.conjugacy_class_representatives()[6]\nsage: chi(g)\nzeta8^3 + zeta8\n```\n\n\n* Unfortunately, though, it seems that Cyclotomic field elements aren't converted to GAP elements correctly, so using them as values won't work.\n\n```\nsage: G = GL(2,3)\nsage: z = CyclotomicField(8).an_element; z\nzeta8\nsage: values = [2, 1, -2, -1, 0, -z^3 - z, z^3 + z, 0]\nsage: xi = gap.ClassFunction(G, values); xi\nClassFunction( CharacterTable( GL(2,3) ),\n[ 2, 1, -2, -1, 0, (-1*zeta8-1*zeta8^3), (zeta8+zeta8^3), 0 ] )\nsage: ClassFunction(G, values)\nTraceback: ...\n```\n\nI think this might be a bug:\n\n```\nsage: K = CyclotomicField(8)\nsage: z = K.an_element; z\nzeta8\nsage: K(gap.E(8))\nzeta8\nsage: K(gap.E(8)) == z\nTrue\nsage: gap(z)\n(zeta8)\nsage: gap.E(8) == gap(z)\nFalse\nsage: gap(z)**4\n!-1\n```\n\nI'm not sure what !-1 means. Any ideas?",
+    "created_at": "2008-11-17T10:38:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4487",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4487#issuecomment-33138",
+    "user": "saliola"
+}
+```
 
 * As suggested, I switched from GroupCharacter to ClassFunction. Note that this also changes the function being wrapped: GAP's ClassFunction instead of Character. Besides being more general, it also eliminates the odd behaviour you noticed above:
 
@@ -171,7 +253,7 @@ sage: chi2.irreducible_constituents()
 ```
 
 
- * I also fixed it so that Sage values are output instead of GAP elements. Thanks for pointing out gfq_gap_to_sage. I fixed this by adding a _base_ring data attribute that is set to the appropriate Cyclotomic Field (like is done in the character_table method). This should also make it possible to extend the code to work with values in arbitrary sage rings.
+* I also fixed it so that Sage values are output instead of GAP elements. Thanks for pointing out gfq_gap_to_sage. I fixed this by adding a _base_ring data attribute that is set to the appropriate Cyclotomic Field (like is done in the character_table method). This should also make it possible to extend the code to work with values in arbitrary sage rings.
 
 ```
 sage: G = GL(2,3)
@@ -182,7 +264,7 @@ zeta8^3 + zeta8
 ```
 
 
- * Unfortunately, though, it seems that Cyclotomic field elements aren't converted to GAP elements correctly, so using them as values won't work.
+* Unfortunately, though, it seems that Cyclotomic field elements aren't converted to GAP elements correctly, so using them as values won't work.
 
 ```
 sage: G = GL(2,3)
@@ -217,30 +299,76 @@ sage: gap(z)**4
 I'm not sure what !-1 means. Any ideas?
 
 
+
 ---
+
+archive/issue_comments_033139.json:
+```json
+{
+    "body": "Attachment\n\ndo NOT apply group_characters_4487.patch",
+    "created_at": "2008-11-17T10:39:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4487",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4487#issuecomment-33139",
+    "user": "saliola"
+}
+```
 
 Attachment
 
 do NOT apply group_characters_4487.patch
 
 
+
 ---
 
-Comment by saliola created at 2008-11-17 10:40:52
+archive/issue_comments_033140.json:
+```json
+{
+    "body": "Only apply the latest patch (class_functions_4487.patch).",
+    "created_at": "2008-11-17T10:40:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4487",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4487#issuecomment-33140",
+    "user": "saliola"
+}
+```
 
 Only apply the latest patch (class_functions_4487.patch).
 
 
+
 ---
 
-Comment by wdj created at 2008-11-18 19:37:52
+archive/issue_comments_033141.json:
+```json
+{
+    "body": "Applies cleanly to 3.2.rc1, passes sage -testall. Code looks good. Thanks Franco!",
+    "created_at": "2008-11-18T19:37:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4487",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4487#issuecomment-33141",
+    "user": "wdj"
+}
+```
 
 Applies cleanly to 3.2.rc1, passes sage -testall. Code looks good. Thanks Franco!
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-21 09:36:09
+archive/issue_comments_033142.json:
+```json
+{
+    "body": "This patch does not pass doctests with 3.2:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0$ ./sage -t -long devel/sage/sage/groups/class_function.py \nsage -t -long devel/sage/sage/groups/class_function.py      \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/devel/sage/sage/groups/class_function.py\", line 335:\n    sage: chi.restrict(H)\nExpected:\n    Character of Subgroup of SymmetricGroup(5) generated by [(1,2,3), (1,2), (4,5)]\nGot:\n    Character of Subgroup of SymmetricGroup(5) generated by [(4,5), (1,2), (1,2,3)]\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/devel/sage/sage/groups/class_function.py\", line 348:\n    sage: xi = H.trivial_character(); xi\nExpected:\n    Character of Subgroup of SymmetricGroup(5) generated by [(1,2,3), (1,2), (4,5)]\nGot:\n    Character of Subgroup of SymmetricGroup(5) generated by [(4,5), (1,2), (1,2,3)]\n**********************************************************************\n2 items had failures:\n   1 of   7 in __main__.example_21\n   1 of   7 in __main__.example_22\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/tmp/.doctest_class_function.py\n         [6.8 s]\nexit code: 1024\n```\n\n\nI am not quite sure what is going on here, but I guess we need to sort the generators at some point.\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-21T09:36:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4487",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4487#issuecomment-33142",
+    "user": "mabshoff"
+}
+```
 
 This patch does not pass doctests with 3.2:
 
@@ -279,14 +407,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by saliola created at 2008-11-21 13:55:51
+archive/issue_comments_033143.json:
+```json
+{
+    "body": "fixes the broken doctests; apply on top of class_functions_4487.patch",
+    "created_at": "2008-11-21T13:55:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4487",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4487#issuecomment-33143",
+    "user": "saliola"
+}
+```
 
 fixes the broken doctests; apply on top of class_functions_4487.patch
 
 
+
 ---
+
+archive/issue_comments_033144.json:
+```json
+{
+    "body": "Attachment\n\nHello Michael,\n\nThe __repr__ for this class just returns \"Character of\" plus the string representation of the group. So perhaps something changed in subgroup between 3.2.rc1 and 3.2?\n\nAnyhow, I posted a patch to correct the docstring. Apply on top of class_functions_4487.patch.\n\nFranco",
+    "created_at": "2008-11-21T14:03:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4487",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4487#issuecomment-33144",
+    "user": "saliola"
+}
+```
 
 Attachment
 
@@ -299,24 +451,57 @@ Anyhow, I posted a patch to correct the docstring. Apply on top of class_functio
 Franco
 
 
+
 ---
 
-Comment by mhansen created at 2008-11-21 15:46:18
+archive/issue_comments_033145.json:
+```json
+{
+    "body": "Yep, William added a patch late in the 3.2 game which adds some canonicalization of the generators of a permutation group (by default).  So, just changing the doctests is all that's needed.\n\n+1",
+    "created_at": "2008-11-21T15:46:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4487",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4487#issuecomment-33145",
+    "user": "mhansen"
+}
+```
 
 Yep, William added a patch late in the 3.2 game which adds some canonicalization of the generators of a permutation group (by default).  So, just changing the doctests is all that's needed.
 
 +1
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-21 19:15:22
+archive/issue_comments_033146.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-11-21T19:15:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4487",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4487#issuecomment-33146",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-21 19:15:22
+archive/issue_comments_033147.json:
+```json
+{
+    "body": "Merged class_functions_4487.patch and class_functions_4487-part2.patch in Sage 3.2.1.alpha0",
+    "created_at": "2008-11-21T19:15:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4487",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4487#issuecomment-33147",
+    "user": "mabshoff"
+}
+```
 
 Merged class_functions_4487.patch and class_functions_4487-part2.patch in Sage 3.2.1.alpha0

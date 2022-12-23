@@ -1,11 +1,21 @@
 # Issue 6247: sage -optional tries to write to SAGE_ROOT
 
-Issue created by migration from https://trac.sagemath.org/ticket/6247
-
-Original creator: burcin
-
-Original creation time: 2009-06-08 14:37:40
-
+archive/issues_006247.json:
+```json
+{
+    "body": "Assignee: cwitty\n\nReported by `somos` on `#sage-devel` on IRC\n\n\n```\n<somos> when I do 'sage -optional' it tried to make a temp file in SAGE_ROOT\n...\n<somos> This is ok if you are running as root user.\n...\n<mvngu> From the help:\n<mvngu> -optional     -- list all optional packages that can be downloaded\n<somos> Anyway, the problem is the temp file in SAGE_ROOT.\n<somos> It should be in /tmp instead.\n<mvngu> Can you explain why it should be in /tmp ?\n<somos> Becuase SAGE_ROOT requires root permissions.\n...\n<somos> So, my suggestion is to avoid the temp file. #1\n<somos> If a temp file is needed, I suggest TMP or TMPDIR instead.\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6247\n\n",
+    "created_at": "2009-06-08T14:37:40Z",
+    "labels": [
+        "misc",
+        "major",
+        "bug"
+    ],
+    "title": "sage -optional tries to write to SAGE_ROOT",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6247",
+    "user": "burcin"
+}
+```
 Assignee: cwitty
 
 Reported by `somos` on `#sage-devel` on IRC
@@ -29,37 +39,96 @@ Reported by `somos` on `#sage-devel` on IRC
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6247
+
+
+
+
 
 ---
 
-Comment by jdemeyer created at 2013-08-13 15:51:02
+archive/issue_comments_049899.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2013-08-13T15:51:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6247",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6247#issuecomment-49899",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-08-13 15:51:02
+archive/issue_comments_049900.json:
+```json
+{
+    "body": "Duplicate of #12018.",
+    "created_at": "2013-08-13T15:51:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6247",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6247#issuecomment-49900",
+    "user": "jdemeyer"
+}
+```
 
 Duplicate of #12018.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-08-13 15:59:08
+archive/issue_comments_049901.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2013-08-13T15:59:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6247",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6247#issuecomment-49901",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-08-16 11:10:59
+archive/issue_comments_049902.json:
+```json
+{
+    "body": "Resolution: worksforme",
+    "created_at": "2013-08-16T11:10:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6247",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6247#issuecomment-49902",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: worksforme
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-08-16 11:11:14
+archive/issue_comments_049903.json:
+```json
+{
+    "body": "Resolution changed from worksforme to duplicate",
+    "created_at": "2013-08-16T11:11:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6247",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6247#issuecomment-49903",
+    "user": "jdemeyer"
+}
+```
 
 Resolution changed from worksforme to duplicate

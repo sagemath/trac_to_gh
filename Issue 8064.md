@@ -1,11 +1,21 @@
 # Issue 8064: New iml-1.0.1.p12.spkg works with Open Solaris 64 bit
 
-Issue created by migration from https://trac.sagemath.org/ticket/8064
-
-Original creator: jsp
-
-Original creation time: 2010-01-25 22:19:26
-
+archive/issues_008064.json:
+```json
+{
+    "body": "Assignee: drkirkby\n\nCC:  drkirby was malb\n\nMake iml-1.0.1.p12.spkg install on Open Solaris 64 bit\n\nThe spkg is here:\n[http://boxen.math.washington.edu/home/jsp/ports/iml-1.0.1.p12.spkg](http://boxen.math.washington.edu/home/jsp/ports/iml-1.0.1.p12.spkg)\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8064\n\n",
+    "created_at": "2010-01-25T22:19:26Z",
+    "labels": [
+        "porting",
+        "major",
+        "bug"
+    ],
+    "title": "New iml-1.0.1.p12.spkg works with Open Solaris 64 bit",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8064",
+    "user": "jsp"
+}
+```
 Assignee: drkirkby
 
 CC:  drkirby was malb
@@ -19,15 +29,43 @@ Jaap
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8064
+
+
+
+
 
 ---
 
-Comment by jsp created at 2010-01-25 22:20:21
+archive/issue_comments_070677.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-01-25T22:20:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8064",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8064#issuecomment-70677",
+    "user": "jsp"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_070678.json:
+```json
+{
+    "body": "Attachment\n\nThere's not a lot of point writing in 'SPKG.txt' that 'updating SPKG.txt'! \n\nBut I can see you have removed  Michael Abshoff as as maintainer, which is the correct thing to do. Ideally you would have wrote 'Removing Michael Abshoff as a maintainer as agree on ticket #7738\n\nIt would also be desirable if you created a ticket for the defect before fixing it. Then in SPKG.txt you can put the ticket number you are fixing. \n\nBut these are very minor points, to bear in mind for the future",
+    "created_at": "2010-01-27T13:26:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8064",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8064#issuecomment-70678",
+    "user": "drkirkby"
+}
+```
 
 Attachment
 
@@ -40,15 +78,37 @@ It would also be desirable if you created a ticket for the defect before fixing 
 But these are very minor points, to bear in mind for the future
 
 
+
 ---
 
-Comment by drkirkby created at 2010-01-27 13:26:18
+archive/issue_comments_070679.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-01-27T13:26:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8064",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8064#issuecomment-70679",
+    "user": "drkirkby"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-11 15:17:11
+archive/issue_comments_070680.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-02-11T15:17:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8064",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8064#issuecomment-70680",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed

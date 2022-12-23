@@ -1,11 +1,21 @@
 # Issue 2900: matplotlib bug in imshow (probably fixed in new version)
 
-Issue created by migration from https://trac.sagemath.org/ticket/2900
-
-Original creator: cwitty
-
-Original creation time: 2008-04-12 16:22:28
-
+archive/issues_002900.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nCC:  jhpalmieri jason\n\nSage's current version of matplotlib has a bug, as reported by Fabio Tonti (http://groups.google.com/group/sage-support/browse_thread/thread/a41e9ab2b158c41e#):\n\n```\nsage: from pylab import *\nsage: imshow([[(0,0,0)]])\nsage: savefig('foo.png')\nTraceback (most recent call last):\n...\nNameError: global name 'npy' is not defined \n```\n\nIt looks like this bug has been fixed in 0.91.2 (although I haven't actually tried it); we should upgrade.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2900\n\n",
+    "created_at": "2008-04-12T16:22:28Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "matplotlib bug in imshow (probably fixed in new version)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2900",
+    "user": "cwitty"
+}
+```
 Assignee: mabshoff
 
 CC:  jhpalmieri jason
@@ -23,10 +33,25 @@ NameError: global name 'npy' is not defined
 
 It looks like this bug has been fixed in 0.91.2 (although I haven't actually tried it); we should upgrade.
 
+Issue created by migration from https://trac.sagemath.org/ticket/2900
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-12-02 02:32:23
+archive/issue_comments_019986.json:
+```json
+{
+    "body": "This still fails with Sage 3.2.1.rc1 (which ships with matplotlib 0.98.3):\n\n```\nsage: savefig('foo.png')\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/scratch/mabshoff/release-cycle/sage-3.2.1.final/<ipython console> in <module>()\n\n/scratch/mabshoff/release-cycle/sage-3.2.1.final/local/lib/python2.5/site-packages/matplotlib/pyplot.pyc in savefig(*args, **kwargs)\n    340 def savefig(*args, **kwargs):\n    341     fig = gcf()\n--> 342     return fig.savefig(*args, **kwargs)\n    343 if Figure.savefig.__doc__ is not None:\n    344     savefig.__doc__ = dedent(Figure.savefig.__doc__)\n\n/scratch/mabshoff/release-cycle/sage-3.2.1.final/local/lib/python2.5/site-packages/matplotlib/figure.pyc in savefig(self, *args, **kwargs)\n    962                 patch.set_alpha(0.0)\n    963 \n--> 964         self.canvas.print_figure(*args, **kwargs)\n    965 \n    966         if transparent:\n\n/scratch/mabshoff/release-cycle/sage-3.2.1.final/local/lib/python2.5/site-packages/matplotlib/backend_bases.pyc in print_figure(self, filename, dpi, facecolor, edgecolor, orientation, format, **kwargs)\n   1308                 edgecolor=edgecolor,\n   1309                 orientation=orientation,\n-> 1310                 **kwargs)\n   1311         finally:\n   1312             self.figure.dpi = origDPI\n\n/scratch/mabshoff/release-cycle/sage-3.2.1.final/local/lib/python2.5/site-packages/matplotlib/backends/backend_agg.pyc in print_png(self, filename_or_obj, *args, **kwargs)\n    303 \n    304     def print_png(self, filename_or_obj, *args, **kwargs):\n--> 305         FigureCanvasAgg.draw(self)\n    306         renderer = self.get_renderer()\n    307         original_dpi = renderer.dpi\n\n/scratch/mabshoff/release-cycle/sage-3.2.1.final/local/lib/python2.5/site-packages/matplotlib/backends/backend_agg.pyc in draw(self)\n    259 \n    260         self.renderer = self.get_renderer()\n--> 261         self.figure.draw(self.renderer)\n    262 \n    263     def get_renderer(self):\n\n/scratch/mabshoff/release-cycle/sage-3.2.1.final/local/lib/python2.5/site-packages/matplotlib/figure.pyc in draw(self, renderer)\n    757 \n    758         # render the axes\n--> 759         for a in self.axes: a.draw(renderer)\n    760 \n    761         # render the figure text\n\n/scratch/mabshoff/release-cycle/sage-3.2.1.final/local/lib/python2.5/site-packages/matplotlib/axes.pyc in draw(self, renderer, inframe)\n   1463         if len(self.images)<=1 or renderer.option_image_nocomposite():\n   1464             for im in self.images:\n-> 1465                 im.draw(renderer)\n   1466         else:\n   1467             # make a composite image blending alpha\n\n/scratch/mabshoff/release-cycle/sage-3.2.1.final/local/lib/python2.5/site-packages/matplotlib/image.pyc in draw(self, renderer, *args, **kwargs)\n    234             self.axes.get_yscale() != 'linear'):\n    235             warnings.warn(\"Images are not supported on non-linear axes.\")\n--> 236         im = self.make_image(renderer.get_image_magnification())\n    237         l, b, widthDisplay, heightDisplay = self.axes.bbox.bounds\n    238         renderer.draw_image(round(l), round(b), im, self.axes.bbox.frozen(),\n\n/scratch/mabshoff/release-cycle/sage-3.2.1.final/local/lib/python2.5/site-packages/matplotlib/image.pyc in make_image(self, magnification)\n    185                 else:\n    186                     x = self._rgbacache\n--> 187                 im = _image.fromarray(x[yslice,xslice], 0)\n    188                 if len(self._A.shape) == 2:\n    189                     im.is_grayscale = self.cmap.is_gray()\n\nValueError: Array must be rank 2 or 3 of doubles\nsage: \nExiting SAGE (CPU time 0m1.32s, Wall time 0m43.85s).\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2008-12-02T02:32:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2900",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2900#issuecomment-19986",
+    "user": "mabshoff"
+}
+```
 
 This still fails with Sage 3.2.1.rc1 (which ships with matplotlib 0.98.3):
 
@@ -111,9 +136,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by kcrisman created at 2009-09-15 17:30:53
+archive/issue_comments_019987.json:
+```json
+{
+    "body": "To release manager:\nThis is now fixed, given #5448 (and perhaps long before that):\n\n```\nsage: from pylab import *\nsage: imshow([[(0,0,0)]])\n<matplotlib.image.AxesImage object at 0xa50f190>\nsage: savefig('foo.png')\n```\n\nfoo.png is attached.",
+    "created_at": "2009-09-15T17:30:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2900",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2900#issuecomment-19987",
+    "user": "kcrisman"
+}
+```
 
 To release manager:
 This is now fixed, given #5448 (and perhaps long before that):
@@ -128,34 +164,93 @@ sage: savefig('foo.png')
 foo.png is attached.
 
 
+
 ---
+
+archive/issue_comments_019988.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-09-15T17:31:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2900",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2900#issuecomment-19988",
+    "user": "kcrisman"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by kcrisman created at 2009-09-29 14:40:39
+archive/issue_comments_019989.json:
+```json
+{
+    "body": "Depends on #7059",
+    "created_at": "2009-09-29T14:40:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2900",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2900#issuecomment-19989",
+    "user": "kcrisman"
+}
+```
 
 Depends on #7059
 
 
+
 ---
+
+archive/issue_comments_019990.json:
+```json
+{
+    "body": "Attachment\n\nThe patch verifies this is fixed, and uses the new (better) syntax from #7059.",
+    "created_at": "2009-09-29T14:41:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2900",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2900#issuecomment-19990",
+    "user": "kcrisman"
+}
+```
 
 Attachment
 
 The patch verifies this is fixed, and uses the new (better) syntax from #7059.
 
 
+
 ---
 
-Comment by jason created at 2009-09-29 20:31:29
+archive/issue_comments_019991.json:
+```json
+{
+    "body": "Thanks for making a doctest patch.",
+    "created_at": "2009-09-29T20:31:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2900",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2900#issuecomment-19991",
+    "user": "jason"
+}
+```
 
 Thanks for making a doctest patch.
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-15 05:23:42
+archive/issue_comments_019992.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-10-15T05:23:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2900",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2900#issuecomment-19992",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

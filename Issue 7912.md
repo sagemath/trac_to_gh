@@ -1,11 +1,21 @@
 # Issue 7912: upgrade Python to 2.6.4
 
-Issue created by migration from https://trac.sagemath.org/ticket/7912
-
-Original creator: jhpalmieri
-
-Original creation time: 2010-01-12 19:47:15
-
+archive/issues_007912.json:
+```json
+{
+    "body": "Assignee: tbd\n\nI'm posting an spkg to update Python from 2.6.2 to 2.6.4.  The changes from the previous spkg: in spkg-install, I have removed the lines\n\n```\n# This tells Bash to exit the script if any statement returns a non-true\n# value.\nset -e\n```\n\nReason: in this part of the script, we want to test the return values and print a helpful message if they're not true, rather than just exit silently.\n\nI've also removed the patch for the file `src/Lib/ctypes/__init__.py`, because I think it only deals with Mac OS X, 10.3 or earlier, and we don't support that.  Does Sage even build on pre-10.4 systems?\n\nI looked at the other patches, and I think we still need them, but I'm not an expert.  (I tried removing the pickle patches, for instance, and got lots of doctest failures.)\n\nI've added a patch file for socket.py: what we're patching hasn't changed, but in the previous spkg, there wasn't a patch file recording it.\n\nThe spkg is here: [http://sage.math.washington.edu/home/palmieri/SPKG/python-2.6.4.p0.spkg](http://sage.math.washington.edu/home/palmieri/SPKG/python-2.6.4.p0.spkg).\n\nWith this spkg, I see one new doctest failure, but I don't know if it's significant.  If it's not significant, it's easy enough to fix the doctest.  It's for `sage/misc/explain_pickle.py` -- see the last line (\"(cPickle raised an exception!)\"):\n\n```\nFile \"/Applications/sage_builds/sage-4.3.1.alpha1-new-python/devel/sage/sage/misc/explain_pickle.py\", line 2279:\n    sage: test_pickle(pickle.dumps(v))\nExpected:\n        0: (    MARK\n        1: (        MARK\n        2: l            LIST       (MARK at 1)\n        3: p        PUT        0\n        6: (        MARK\n        7: g            GET        0\n       10: t            TUPLE      (MARK at 6)\n       11: p        PUT        1\n       14: a        APPEND\n       15: 0        POP\n       16: 0        POP        (MARK at 0)\n       17: g    GET        1\n       20: .    STOP\n    highest protocol among opcodes = 0\n    explain_pickle in_current_sage=True/False:\n    si1 = []\n    si2 = (si1,)\n    list.append(si1, si2)\n    si2\n    result: ([(...)],) (cPickle raised an exception!)\nGot:\n        0: (    MARK\n        1: (        MARK\n        2: l            LIST       (MARK at 1)\n        3: p        PUT        0\n        6: (        MARK\n        7: g            GET        0\n       10: t            TUPLE      (MARK at 6)\n       11: p        PUT        1\n       14: a        APPEND\n       15: 0        POP\n       16: 0        POP        (MARK at 0)\n       17: g    GET        1\n       20: .    STOP\n    highest protocol among opcodes = 0\n    explain_pickle in_current_sage=True/False:\n    si1 = []\n    si2 = (si1,)\n    list.append(si1, si2)\n    si2\n    result: ([(...)],)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7912\n\n",
+    "created_at": "2010-01-12T19:47:15Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "enhancement"
+    ],
+    "title": "upgrade Python to 2.6.4",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7912",
+    "user": "jhpalmieri"
+}
+```
 Assignee: tbd
 
 I'm posting an spkg to update Python from 2.6.2 to 2.6.4.  The changes from the previous spkg: in spkg-install, I have removed the lines
@@ -76,37 +86,96 @@ Got:
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7912
+
+
+
+
 
 ---
 
-Comment by jhpalmieri created at 2010-01-12 19:47:21
+archive/issue_comments_068837.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-01-12T19:47:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7912",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7912#issuecomment-68837",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by craigcitro created at 2010-01-14 20:15:17
+archive/issue_comments_068838.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-01-14T20:15:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7912",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7912#issuecomment-68838",
+    "user": "craigcitro"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by craigcitro created at 2010-01-14 20:15:17
+archive/issue_comments_068839.json:
+```json
+{
+    "body": "I'm listing this as positive review -- I used this spkg as the base when I made a newer one for #7095. There were one or two tiny issues (removing the `wininst-*.exe` files, for instance), but I fixed those up. I think we should close this ticket, since this is now going to get merged as part of #7095. (John, if you agree, go ahead and close it.)",
+    "created_at": "2010-01-14T20:15:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7912",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7912#issuecomment-68839",
+    "user": "craigcitro"
+}
+```
 
 I'm listing this as positive review -- I used this spkg as the base when I made a newer one for #7095. There were one or two tiny issues (removing the `wininst-*.exe` files, for instance), but I fixed those up. I think we should close this ticket, since this is now going to get merged as part of #7095. (John, if you agree, go ahead and close it.)
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-01-14 21:08:13
+archive/issue_comments_068840.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2010-01-14T21:08:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7912",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7912#issuecomment-68840",
+    "user": "jhpalmieri"
+}
+```
 
 Resolution: duplicate
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-01-14 21:08:13
+archive/issue_comments_068841.json:
+```json
+{
+    "body": "I'm closing this as \"duplicate\", since Craig has a revised version of the spkg at #7095, and we should use that one instead.",
+    "created_at": "2010-01-14T21:08:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7912",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7912#issuecomment-68841",
+    "user": "jhpalmieri"
+}
+```
 
 I'm closing this as "duplicate", since Craig has a revised version of the spkg at #7095, and we should use that one instead.

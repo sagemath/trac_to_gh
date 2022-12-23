@@ -1,19 +1,29 @@
 # Issue 7072: scipy 0.7.p2 has a GNUism, sending GNU flags to the Sun compiler.
 
-Issue created by migration from https://trac.sagemath.org/ticket/7072
-
-Original creator: drkirkby
-
-Original creation time: 2009-09-29 13:40:09
-
+archive/issues_007072.json:
+```json
+{
+    "body": "Assignee: tbd\n\nUsing\n\n* Solaris 10 update 7 on SPARC\n* sage-4.1.2.alpha2\n* Sun Studio 12.1\n* An updated configure script to allow the Sun compiler to be used #7021 \n\n\n```\nscipy-0.7.p2/patches/setup.py.integrate\nscipy-0.7.p2/patches/optimize.py\nscipy-0.7.p2/spkg-check\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS swan 5.10 Generic_139555-08 sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\n/opt/xxxsunstudio12.1/bin/cc -v\nusage: cc [ options] files.  Use 'cc -flags' for details\n****************************************************\nf95: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise\nf95: Warning: Option --version passed to ld, if ld is invoked, ignored otherwise\nUsage: f95 [ options ] files.  Use 'f95 -flags' for details\nf95: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise\nf95: Warning: Option --version passed to ld, if ld is invoked, ignored otherwise\nUsage: f95 [ options ] files.  Use 'f95 -flags' for details\n\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7072\n\n",
+    "created_at": "2009-09-29T13:40:09Z",
+    "labels": [
+        "algebra",
+        "major",
+        "bug"
+    ],
+    "title": "scipy 0.7.p2 has a GNUism, sending GNU flags to the Sun compiler.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7072",
+    "user": "drkirkby"
+}
+```
 Assignee: tbd
 
 Using
 
-    * Solaris 10 update 7 on SPARC
-    * sage-4.1.2.alpha2
-    * Sun Studio 12.1
-    * An updated configure script to allow the Sun compiler to be used #7021 
+* Solaris 10 update 7 on SPARC
+* sage-4.1.2.alpha2
+* Sun Studio 12.1
+* An updated configure script to allow the Sun compiler to be used #7021 
 
 
 ```
@@ -42,23 +52,60 @@ Usage: f95 [ options ] files.  Use 'f95 -flags' for details
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7072
+
+
+
+
 
 ---
 
-Comment by drkirkby created at 2009-11-09 14:03:27
+archive/issue_comments_058498.json:
+```json
+{
+    "body": "Changing component from algebra to solaris.",
+    "created_at": "2009-11-09T14:03:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7072",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7072#issuecomment-58498",
+    "user": "drkirkby"
+}
+```
 
 Changing component from algebra to solaris.
 
 
+
 ---
 
-Comment by mkoeppe created at 2019-11-23 16:30:05
+archive/issue_comments_058499.json:
+```json
+{
+    "body": "This is outdated and should be closed.",
+    "created_at": "2019-11-23T16:30:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7072",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7072#issuecomment-58499",
+    "user": "mkoeppe"
+}
+```
 
 This is outdated and should be closed.
 
 
+
 ---
 
-Comment by chapoton created at 2019-11-23 19:37:11
+archive/issue_comments_058500.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2019-11-23T19:37:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7072",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7072#issuecomment-58500",
+    "user": "chapoton"
+}
+```
 
 Resolution: invalid

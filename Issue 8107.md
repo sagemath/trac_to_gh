@@ -1,11 +1,21 @@
 # Issue 8107: Fewer unnecessary imports from `sage.server.*`
 
-Issue created by migration from https://trac.sagemath.org/ticket/8107
-
-Original creator: mpatel
-
-Original creation time: 2010-01-28 05:33:30
-
+archive/issues_008107.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  robertwb timdumol\n\nThis should reduce startup time, according to `sage -startuptime`.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8107\n\n",
+    "created_at": "2010-01-28T05:33:30Z",
+    "labels": [
+        "notebook",
+        "minor",
+        "enhancement"
+    ],
+    "title": "Fewer unnecessary imports from `sage.server.*`",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8107",
+    "user": "mpatel"
+}
+```
 Assignee: was
 
 CC:  robertwb timdumol
@@ -14,52 +24,135 @@ This should reduce startup time, according to `sage -startuptime`.
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8107
+
+
+
+
 
 ---
+
+archive/issue_comments_071150.json:
+```json
+{
+    "body": "Attachment\n\n*sage* repo.",
+    "created_at": "2010-01-28T05:35:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8107",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8107#issuecomment-71150",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
-_sage_ repo.
+*sage* repo.
 
-
----
-
-Comment by mpatel created at 2010-01-28 05:55:54
-
-The _sage_-repository patch and #8102 together reduce the overall time for me from ~1.9 s to ~1.7 s.
 
 
 ---
 
-Comment by mpatel created at 2010-01-28 05:55:54
+archive/issue_comments_071151.json:
+```json
+{
+    "body": "The *sage*-repository patch and #8102 together reduce the overall time for me from ~1.9 s to ~1.7 s.",
+    "created_at": "2010-01-28T05:55:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8107",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8107#issuecomment-71151",
+    "user": "mpatel"
+}
+```
+
+The *sage*-repository patch and #8102 together reduce the overall time for me from ~1.9 s to ~1.7 s.
+
+
+
+---
+
+archive/issue_comments_071152.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-01-28T05:55:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8107",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8107#issuecomment-71152",
+    "user": "mpatel"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mpatel created at 2010-01-28 05:57:07
+archive/issue_comments_071153.json:
+```json
+{
+    "body": "I'm sure we can do better with #7502...",
+    "created_at": "2010-01-28T05:57:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8107",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8107#issuecomment-71153",
+    "user": "mpatel"
+}
+```
 
 I'm sure we can do better with #7502...
 
 
+
 ---
 
-Comment by was created at 2010-01-28 06:00:45
+archive/issue_comments_071154.json:
+```json
+{
+    "body": "Awesome -- I was just being annoyed by precisely these imports last night.",
+    "created_at": "2010-01-28T06:00:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8107",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8107#issuecomment-71154",
+    "user": "was"
+}
+```
 
 Awesome -- I was just being annoyed by precisely these imports last night.
 
 
+
 ---
 
-Comment by was created at 2010-01-28 06:00:45
+archive/issue_comments_071155.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-01-28T06:00:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8107",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8107#issuecomment-71155",
+    "user": "was"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by robertwb created at 2010-01-28 09:43:21
+archive/issue_comments_071156.json:
+```json
+{
+    "body": "A big +1 from me too. I'm curious about the comment \n\n\n```\n# We import the following two only for doctesting purposes\n```\n\n\nthough.",
+    "created_at": "2010-01-28T09:43:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8107",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8107#issuecomment-71156",
+    "user": "robertwb"
+}
+```
 
 A big +1 from me too. I'm curious about the comment 
 
@@ -72,9 +165,20 @@ A big +1 from me too. I'm curious about the comment
 though.
 
 
+
 ---
 
-Comment by mpatel created at 2010-01-30 05:18:33
+archive/issue_comments_071157.json:
+```json
+{
+    "body": "Replying to [comment:4 robertwb]:\n> A big +1 from me too. I'm curious about the comment \n\n```\n# We import the following two only for doctesting purposes\n```\n\nI'm not sure, but post-#7650, these imports should be unnecessary.  The patch above does not affect the results of `make ptestlong` on sage.math.",
+    "created_at": "2010-01-30T05:18:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8107",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8107#issuecomment-71157",
+    "user": "mpatel"
+}
+```
 
 Replying to [comment:4 robertwb]:
 > A big +1 from me too. I'm curious about the comment 
@@ -86,8 +190,19 @@ Replying to [comment:4 robertwb]:
 I'm not sure, but post-#7650, these imports should be unnecessary.  The patch above does not affect the results of `make ptestlong` on sage.math.
 
 
+
 ---
 
-Comment by mvngu created at 2010-01-30 23:52:17
+archive/issue_comments_071158.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-30T23:52:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8107",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8107#issuecomment-71158",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

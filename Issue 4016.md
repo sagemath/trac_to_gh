@@ -1,28 +1,64 @@
 # Issue 4016: [with patch, needs review] improve doctests to schemes/generic/scheme.py
 
-Issue created by migration from https://trac.sagemath.org/ticket/4016
-
-Original creator: AlexGhitza
-
-Original creation time: 2008-08-31 07:52:18
-
+archive/issues_004016.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nBrings coverage up to 96% (sorry, I have no idea what's going on with the one remaining function).\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4016\n\n",
+    "created_at": "2008-08-31T07:52:18Z",
+    "labels": [
+        "doctest coverage",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch, needs review] improve doctests to schemes/generic/scheme.py",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4016",
+    "user": "AlexGhitza"
+}
+```
 Assignee: mabshoff
 
 Brings coverage up to 96% (sorry, I have no idea what's going on with the one remaining function).
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4016
+
+
+
+
 
 ---
 
-Comment by robertwb created at 2008-08-31 08:11:40
+archive/issue_comments_028968.json:
+```json
+{
+    "body": "All the doctests look sane to me, and mabshoff is verifying that they all pass.",
+    "created_at": "2008-08-31T08:11:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4016",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4016#issuecomment-28968",
+    "user": "robertwb"
+}
+```
 
 All the doctests look sane to me, and mabshoff is verifying that they all pass.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-31 08:29:54
+archive/issue_comments_028969.json:
+```json
+{
+    "body": "One slight problem in tut.tex:\n\n```\nsage -t -long devel/doc/tut/tut.tex\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha3/tmp/tut.py\", line 2178:\n    : D\nExpected:\n    Affine Curve over Rational Field defined by\n       x^5 + x^3*y^2 + x^2*y^3 + y^5 - x^3 - y^3 - x^2 - y^2 + 1\nGot:\n    Closed subscheme of Affine Space of dimension 2 over Rational Field defined by:\n      x^5 + x^3*y^2 + x^2*y^3 + y^5 - x^3 - y^3 - x^2 - y^2 + 1\n**********************************************************************\n```\n",
+    "created_at": "2008-08-31T08:29:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4016",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4016#issuecomment-28969",
+    "user": "mabshoff"
+}
+```
 
 One slight problem in tut.tex:
 
@@ -42,21 +78,56 @@ Got:
 
 
 
+
 ---
+
+archive/issue_comments_028970.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-08-31T12:08:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4016",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4016#issuecomment-28970",
+    "user": "AlexGhitza"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by AlexGhitza created at 2008-08-31 12:08:35
+archive/issue_comments_028971.json:
+```json
+{
+    "body": "Sorry Michael, I should have tested the docs as well...  anyway, it just required a small fix in plane_curves/curve.py.  I have replaced the patch with one that adds that small fix.",
+    "created_at": "2008-08-31T12:08:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4016",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4016#issuecomment-28971",
+    "user": "AlexGhitza"
+}
+```
 
 Sorry Michael, I should have tested the docs as well...  anyway, it just required a small fix in plane_curves/curve.py.  I have replaced the patch with one that adds that small fix.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-01 02:18:03
+archive/issue_comments_028972.json:
+```json
+{
+    "body": "Thanks Alex, I see it is the same fix as in sage/schemes/generic/algebraic_scheme.py. I know that Robert won't be online today, but hopefully he can take a quick look on Monday. Assuming it passes doctests I plan to merge this patch in the near future.\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-01T02:18:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4016",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4016#issuecomment-28972",
+    "user": "mabshoff"
+}
+```
 
 Thanks Alex, I see it is the same fix as in sage/schemes/generic/algebraic_scheme.py. I know that Robert won't be online today, but hopefully he can take a quick look on Monday. Assuming it passes doctests I plan to merge this patch in the near future.
 
@@ -65,15 +136,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-01 02:56:07
+archive/issue_comments_028973.json:
+```json
+{
+    "body": "Merged in Sage 3.1.2.alpha4",
+    "created_at": "2008-09-01T02:56:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4016",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4016#issuecomment-28973",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.1.2.alpha4
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-01 02:56:07
+archive/issue_comments_028974.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-09-01T02:56:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4016",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4016#issuecomment-28974",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

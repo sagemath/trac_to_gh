@@ -1,11 +1,21 @@
 # Issue 7052: Chromatic polynomial calculated incorrectly
 
-Issue created by migration from https://trac.sagemath.org/ticket/7052
-
-Original creator: AJonsson
-
-Original creation time: 2009-09-28 15:43:21
-
+archive/issues_007052.json:
+```json
+{
+    "body": "Assignee: rlm\n\nCC:  jason\n\nPlaying around with some graphs I noticed that even though the graph below (the McGee graph) not is bipartite, it is claimed to have chromatic number 2 (This should be 3).\n\nThe error seems to be in the calculation of the chromatic polynomial, as there is no chromatic root (x-2) in the factorization of the chromatic polynomial, which is then used to say that there exists 2-colorings of the graph.\n\n\nCode to reproduce:\n\n```\nG = Graph({0:[1,12,23], 1:[0,2,8], 2:[1,3,19], 3:[2,4,15], 4:[3,5,11],\\\n            5:[4,6,22], 6:[5,7,18], 7:[6,8,14], 8:[1,7,9], 9:[8,10,21], 10:[9,11,17],\\\n            11:[4,10,12], 12:[0,11,13], 13:[12,14,20], 14:[7,13,15],\\\n            15:[3,14,16], 16:[15,17,23], 17:[10,16,18], 18:[6,17,19], 19:[2,18,20], 20:[13,19,21],\\\n            21:[9,20,22], 22:[5,21,23], 23:[0,16,22]})\nprint G.is_bipartite()\nprint G.chromatic_number()\nprint G.chromatic_polynomial().factor()\n```\n\nOutput from code above:\n\n```\nFalse\n2\n(x - 1) * x * (x^22 - 35*x^21 + 595*x^20 - 6545*x^19 + 52360*x^18 -\n324632*x^17 + 1623128*x^16 - 6723558*x^15 + 23521860*x^14 -\n70477280*x^13 + 182703380*x^12 - 412698250*x^11 + 815778984*x^10 +\n2881630536*x^9 + 2143156981*x^8 + 1464159543*x^7 + 3227470630*x^6 +\n1165679734*x^5 + 2520767421*x^4 + 2668980011*x^3 + 789733264*x^2 -\n257225680*x + 42167160)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7052\n\n",
+    "created_at": "2009-09-28T15:43:21Z",
+    "labels": [
+        "graph theory",
+        "minor",
+        "bug"
+    ],
+    "title": "Chromatic polynomial calculated incorrectly",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7052",
+    "user": "AJonsson"
+}
+```
 Assignee: rlm
 
 CC:  jason
@@ -42,15 +52,43 @@ False
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7052
+
+
+
+
 
 ---
 
-Comment by AJonsson created at 2009-10-05 07:40:47
+archive/issue_comments_058371.json:
+```json
+{
+    "body": "Allow for larger coeffecients in chromatic polynomial. Add McGee graph generator.",
+    "created_at": "2009-10-05T07:40:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7052",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7052#issuecomment-58371",
+    "user": "AJonsson"
+}
+```
 
 Allow for larger coeffecients in chromatic polynomial. Add McGee graph generator.
 
 
+
 ---
+
+archive/issue_comments_058372.json:
+```json
+{
+    "body": "Attachment\n\nFigured out the cause of the miscalculations. Coefficients of the chromatic polynomial are saved as 32-bit integers in Sage, so numbers larger than 2,147,483,647 will come out wrong.\n\nComparison of the computed chromatic polynomial for the McGee graph using Sage and using a program made by Pearce and Haggard[1]:\n\nChromatic polynomial using Pearce:\n\n```\nx^24 - 36*x^23 + 630*x^22 - 7140*x^21 + 58905*x^20 - 376992*x^19 +\n1947760*x^18 - 8346686*x^17 + 30245418*x^16 - 93999140*x^15 +\n253180660*x^14 - 595401630*x^13 + 1228477234*x^12 - 2229115744*x^11 +\n3556493741*x^10 - 4973964734*x^9 + 6058278383*x^8 - 6356758192*x^7 +\n5650054983*x^6 - 4146754706*x^5 + 2415720549*x^4 - 1046958944*x^3 +\n299392840*x^2 - 42167160*x\n```\n\n\nUsing Sage:\n\n```\nx^24 - 36*x^23 + 630*x^22 - 7140*x^21 + 58905*x^20 - 376992*x^19 +\n1947760*x^18 - 8346686*x^17 + 30245418*x^16 - 93999140*x^15 +\n253180660*x^14 - 595401630*x^13 + 1228477234*x^12 + 2065851552*x^11 -\n738473555*x^10 - 678997438*x^9 + 1763311087*x^8 - 2061790896*x^7 +\n1355087687*x^6 + 148212590*x^5 - 1879246747*x^4 - 1046958944*x^3 +\n299392840*x^2 - 42167160*x\n```\n\n\nIf we now look at the coefficients for x^11 we see that the difference between them is \n\n```\n2065851552 - (-2229115744) = 4294967296 = 2^32\n```\n\ni.e  32-bit integer.\n\nsolution: replace int with long long in suitable places in /sage/graphs/chrompoly.pyx so that 64 bits are used to describe each coefficient value (long won't suffice, as it is only 32-bit)\n\nAttaching a patch that changes relevant variables to long long, as well as adding the McGee graph to named graphs as a doctest to show that the changes give a correct answer (the chromatic number should be 3).\n\n\n[1]: http://homepages.mcs.vuw.ac.nz/~djp/tutte/",
+    "created_at": "2009-10-05T07:42:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7052",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7052#issuecomment-58372",
+    "user": "AJonsson"
+}
+```
 
 Attachment
 
@@ -98,21 +136,56 @@ Attaching a patch that changes relevant variables to long long, as well as addin
 [1]: http://homepages.mcs.vuw.ac.nz/~djp/tutte/
 
 
+
 ---
 
-Comment by AJonsson created at 2009-10-12 18:50:02
+archive/issue_comments_058373.json:
+```json
+{
+    "body": "Smaller, nicer patch",
+    "created_at": "2009-10-12T18:50:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7052",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7052#issuecomment-58373",
+    "user": "AJonsson"
+}
+```
 
 Smaller, nicer patch
 
 
+
 ---
 
-Comment by AJonsson created at 2009-10-12 18:57:51
+archive/issue_comments_058374.json:
+```json
+{
+    "body": "Changing priority from minor to major.",
+    "created_at": "2009-10-12T18:57:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7052",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7052#issuecomment-58374",
+    "user": "AJonsson"
+}
+```
 
 Changing priority from minor to major.
 
 
+
 ---
+
+archive/issue_comments_058375.json:
+```json
+{
+    "body": "Attachment\n\nFound the wonderful graphs.LCFGraph() function, so it became clear to me that a constructor for the McGee graph was redundant, when a simple graphs.LCFGraph(24, [12,7,-7], 8) worked just as fine.\n\nNew version of the patch just changes int to long long at the necessary places, and adds a test of the value of the chromatic polynomial at x=2, to see that it is 0 now.\n\nChanging priority to major, as this clearly will happen to any graph that is sufficiently large.",
+    "created_at": "2009-10-12T18:57:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7052",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7052#issuecomment-58375",
+    "user": "AJonsson"
+}
+```
 
 Attachment
 
@@ -123,63 +196,164 @@ New version of the patch just changes int to long long at the necessary places, 
 Changing priority to major, as this clearly will happen to any graph that is sufficiently large.
 
 
+
 ---
 
-Comment by rlm created at 2009-10-12 19:01:22
+archive/issue_comments_058376.json:
+```json
+{
+    "body": "Changing `int` to `long long` isn't really fixing the issue, it's just putting it off until someone uses a much larger graph. Why not use gmp integers instead? This seems like the natural solution to this problem.",
+    "created_at": "2009-10-12T19:01:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7052",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7052#issuecomment-58376",
+    "user": "rlm"
+}
+```
 
 Changing `int` to `long long` isn't really fixing the issue, it's just putting it off until someone uses a much larger graph. Why not use gmp integers instead? This seems like the natural solution to this problem.
 
 
+
 ---
 
-Comment by AJonsson created at 2009-10-14 06:14:34
+archive/issue_comments_058377.json:
+```json
+{
+    "body": "Made some tries with gmp integers yesterday, but was unable to make it work. Will probably look further into it at a later date, but would certainly not grieve if anyone beats me to it and fixes the ticket before that.",
+    "created_at": "2009-10-14T06:14:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7052",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7052#issuecomment-58377",
+    "user": "AJonsson"
+}
+```
 
 Made some tries with gmp integers yesterday, but was unable to make it work. Will probably look further into it at a later date, but would certainly not grieve if anyone beats me to it and fixes the ticket before that.
 
 
+
 ---
 
-Comment by AJonsson created at 2009-10-14 06:14:34
+archive/issue_comments_058378.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2009-10-14T06:14:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7052",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7052#issuecomment-58378",
+    "user": "AJonsson"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by timmcmillen created at 2009-10-26 17:04:53
+archive/issue_comments_058379.json:
+```json
+{
+    "body": "Indeed I had mean to report this bug, but I'm glad someone did. Instead of trying to patch the current code, why not just integrate the tuttee polynomial code from Pearce and Haggard linked above? Not only is their code about 100 times faster than the code currently in Sage (for the graphs I've been working with) but it has the added advantage of being able to efficiently compute both the tutte polynomial and the chromatic polynomial. The tutte polynomial of course has a variety of different applications. The authors had expressed an interest in getting the code integrated into Sage, but they weren't sure how to do it, and may not have the time themselves. The code is under a very permissive license, so integrating it should be feasible from that aspect.",
+    "created_at": "2009-10-26T17:04:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7052",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7052#issuecomment-58379",
+    "user": "timmcmillen"
+}
+```
 
 Indeed I had mean to report this bug, but I'm glad someone did. Instead of trying to patch the current code, why not just integrate the tuttee polynomial code from Pearce and Haggard linked above? Not only is their code about 100 times faster than the code currently in Sage (for the graphs I've been working with) but it has the added advantage of being able to efficiently compute both the tutte polynomial and the chromatic polynomial. The tutte polynomial of course has a variety of different applications. The authors had expressed an interest in getting the code integrated into Sage, but they weren't sure how to do it, and may not have the time themselves. The code is under a very permissive license, so integrating it should be feasible from that aspect.
 
 
+
 ---
 
-Comment by jason created at 2009-10-26 17:30:51
+archive/issue_comments_058380.json:
+```json
+{
+    "body": "At first glance, the package looks nice.  However, it relies on nauty, which doesn't have a license that allows incorporation in the standard Sage distribution.  We could make the tutte polynomial package an optional spkg, though, and have the Sage functions use the package if it is installed.  Or we could replace the functionality needing nauty with calls the equivalent code in the sage library.",
+    "created_at": "2009-10-26T17:30:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7052",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7052#issuecomment-58380",
+    "user": "jason"
+}
+```
 
 At first glance, the package looks nice.  However, it relies on nauty, which doesn't have a license that allows incorporation in the standard Sage distribution.  We could make the tutte polynomial package an optional spkg, though, and have the Sage functions use the package if it is installed.  Or we could replace the functionality needing nauty with calls the equivalent code in the sage library.
 
 
+
 ---
 
-Comment by timmcmillen created at 2009-10-27 01:20:55
+archive/issue_comments_058381.json:
+```json
+{
+    "body": "Hm, yes, I hadn't thought about the license on nauty. Part of the reason that the tutte code runs so fast is that nauty is rather optimized. Perhaps we could combine the methods you propose and replace the functionality needing nauty with sage code, but use nauty if it is installed as an optional spkg. That could provide a bridge until the Sage library code could be equally optimized or a better optimization could be found. If I recall, the only thing the tutte code calls nauty for is checking isomorphism, but it does it an awful lot. Unfortunately I don't have the coding skills to contribute, but I can help with testing or documentation.",
+    "created_at": "2009-10-27T01:20:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7052",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7052#issuecomment-58381",
+    "user": "timmcmillen"
+}
+```
 
 Hm, yes, I hadn't thought about the license on nauty. Part of the reason that the tutte code runs so fast is that nauty is rather optimized. Perhaps we could combine the methods you propose and replace the functionality needing nauty with sage code, but use nauty if it is installed as an optional spkg. That could provide a bridge until the Sage library code could be equally optimized or a better optimization could be found. If I recall, the only thing the tutte code calls nauty for is checking isomorphism, but it does it an awful lot. Unfortunately I don't have the coding skills to contribute, but I can help with testing or documentation.
 
 
+
 ---
 
-Comment by jason created at 2009-10-27 02:36:31
+archive/issue_comments_058382.json:
+```json
+{
+    "body": "At any rate, if the patch above fixes the issue (can you test that?), then this patch maybe ought to go in and another ticket opened for integrating the package you mention into Sage.",
+    "created_at": "2009-10-27T02:36:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7052",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7052#issuecomment-58382",
+    "user": "jason"
+}
+```
 
 At any rate, if the patch above fixes the issue (can you test that?), then this patch maybe ought to go in and another ticket opened for integrating the package you mention into Sage.
 
 
+
 ---
 
-Comment by rlm created at 2009-10-30 03:52:17
+archive/issue_comments_058383.json:
+```json
+{
+    "body": "Uses mpz_t instead of long long",
+    "created_at": "2009-10-30T03:52:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7052",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7052#issuecomment-58383",
+    "user": "rlm"
+}
+```
 
 Uses mpz_t instead of long long
 
 
+
 ---
+
+archive/issue_comments_058384.json:
+```json
+{
+    "body": "Attachment\n\nThis new patch should fix the original problem in a more rigorous manner.\n\nAs far as the Tutte polynomial, this is definitely a topic for another ticket.",
+    "created_at": "2009-10-30T03:53:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7052",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7052#issuecomment-58384",
+    "user": "rlm"
+}
+```
 
 Attachment
 
@@ -188,38 +362,93 @@ This new patch should fix the original problem in a more rigorous manner.
 As far as the Tutte polynomial, this is definitely a topic for another ticket.
 
 
+
 ---
 
-Comment by rlm created at 2009-10-30 03:53:06
+archive/issue_comments_058385.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2009-10-30T03:53:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7052",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7052#issuecomment-58385",
+    "user": "rlm"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by timmcmillen created at 2009-10-30 13:03:47
+archive/issue_comments_058386.json:
+```json
+{
+    "body": "As soon as I figure out how to reverse the trac_7052_minimal.patch, I'll test yours. hg_sage.rollback() seemed logical, but didn't actually reverse the changes to the file. I'm trying to learn mercurial as we speak.\n\nIn case anyone is curious, trac_7052_minimal.patch still led to some issues where the resulting polynomial was off by a 32 bit integer.",
+    "created_at": "2009-10-30T13:03:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7052",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7052#issuecomment-58386",
+    "user": "timmcmillen"
+}
+```
 
 As soon as I figure out how to reverse the trac_7052_minimal.patch, I'll test yours. hg_sage.rollback() seemed logical, but didn't actually reverse the changes to the file. I'm trying to learn mercurial as we speak.
 
 In case anyone is curious, trac_7052_minimal.patch still led to some issues where the resulting polynomial was off by a 32 bit integer.
 
 
+
 ---
 
-Comment by timmcmillen created at 2009-10-30 18:40:19
+archive/issue_comments_058387.json:
+```json
+{
+    "body": "Ok, everything I've tested so far with the gmp patch checks out. I'll keep testing, but it looks good so far.",
+    "created_at": "2009-10-30T18:40:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7052",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7052#issuecomment-58387",
+    "user": "timmcmillen"
+}
+```
 
 Ok, everything I've tested so far with the gmp patch checks out. I'll keep testing, but it looks good so far.
 
 
+
 ---
 
-Comment by mhansen created at 2009-11-05 02:17:13
+archive/issue_comments_058388.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-11-05T02:17:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7052",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7052#issuecomment-58388",
+    "user": "mhansen"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mhansen created at 2009-11-05 02:17:23
+archive/issue_comments_058389.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-11-05T02:17:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7052",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7052#issuecomment-58389",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

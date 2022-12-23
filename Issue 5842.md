@@ -1,11 +1,21 @@
 # Issue 5842: [with patch, needs review] Various number field improvements
 
-Issue created by migration from https://trac.sagemath.org/ticket/5842
-
-Original creator: fwclarke
-
-Original creation time: 2009-04-21 08:34:09
-
+archive/issues_005842.json:
+```json
+{
+    "body": "Assignee: was\n\nThe attached patch (relative to 3.4.1.rc4) implements a number of changes to the number field\ncode.  All have corresponding doctests verifying the new behaviour.\n\nIn particular:\n\n* The following now works:    \n  {{{\n  sage: K.<a> = NumberField(x^2 + 5)\n  sage: L.<b> = K.extension(x^2 + 1)\n  sage: L.ideal(K.ideal(2, a + 1))\n  Fractional ideal (-b - 1)\n  }}}\n\n* `K.prime_factors` is defined for a number field `K`.  Thus\n  {{{\n  sage: CyclotomicField(3).prime_factors(7)\n  [Fractional ideal (-2 *zeta3 + 1), Fractional ideal (2 *zeta3 + 3)]\n  }}}\n\n* `K.pari_polynomial('a')` is now valid when `K` is a relative number field.\n  Previously one could only specify the variable name for an absolute\n  number field.\n\n* `list` has been rewritten for the class `CyclotomicFieldHomset` in `morphism.py`.\n  Previously this failed for homomorphisms from `CyclotomicField(n)` to a \n  non-cyclotomic number_field if there were no `n`-th roots of unity in the \n  codomain.  The new code uses `zeta_order` to check whether there are any \n  homomorphisms.  This should be faster.\n\n* In `number_field_ideal.py`, `element_1_mod` has been rewritten to use the \n  pari function `idealaddtoone0`.  This is considerably faster.\n\n* `maximal_order` has been rewritten for relative number fields.  The\n  previous version was repetitive and grossly wasteful of memory.  This \n  solves one aspect of #4738 (\"finding maximal_orders of relative number \n  fields is very slow\").  \n\n* `is_principal` and `gens_reduced` have been changed in\n  `number_field_ideal_rel.py` so that if the ideal is principal, there is\n  only one reduced generator (as already happens for ideals in absolute number\n  fields).  The previous code did not work in all cases.  As a result, \n  the output of several doctests have needed changing, and (mostly) simplifying.\n\n* Minor change have been made to `reduced_basis` so that it works for cyclotomic \n  fields:\n  {{{\n  sage: CyclotomicField(12).reduced_basis()\n  [1, zeta12^2, zeta12, zeta12^3]\n  }}}\n\n* `zeta_function` now works for relative number fields.\n\n* In several places the code has been tidied up using the `map` function.\n\n* A version of `uniformizer` has been introduced for relative number fields.\n\n* The valuation at a prime ideal for elements of relative number fields has \n  been defined.\n\n* A minor change to the `conjugate` function settles #4725.\n\n* `relative_discriminant` in `number_field_rel.py` has been rewritten so that it\n  uses PARI's `nf` rather than `bnf`, and is able to handle relative fields whose \n  base field is a relative field.\n\n* Made minor change to error messages for `zeta` in `number_field.py` and\n  `order.py` to make them compatible.\n\n* A `subfields` function for relative number fields has been introduced. \n  Doctests have been added, and a minor change made, to the absolute version.\n\n* The relative version of `automorphisms` has been rewritten so that it handles \n  correctly fields where the base field is relative.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5842\n\n",
+    "created_at": "2009-04-21T08:34:09Z",
+    "labels": [
+        "number theory",
+        "major",
+        "enhancement"
+    ],
+    "title": "[with patch, needs review] Various number field improvements",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5842",
+    "user": "fwclarke"
+}
+```
 Assignee: was
 
 The attached patch (relative to 3.4.1.rc4) implements a number of changes to the number field
@@ -13,79 +23,96 @@ code.  All have corresponding doctests verifying the new behaviour.
 
 In particular:
 
- * The following now works:    
-   {{{
-   sage: K.<a> = NumberField(x^2 + 5)
-   sage: L.<b> = K.extension(x^2 + 1)
-   sage: L.ideal(K.ideal(2, a + 1))
-   Fractional ideal (-b - 1)
-   }}}
+* The following now works:    
+  {{{
+  sage: K.<a> = NumberField(x^2 + 5)
+  sage: L.<b> = K.extension(x^2 + 1)
+  sage: L.ideal(K.ideal(2, a + 1))
+  Fractional ideal (-b - 1)
+  }}}
 
- * `K.prime_factors` is defined for a number field `K`.  Thus
-   {{{
-   sage: CyclotomicField(3).prime_factors(7)
-   [Fractional ideal (-2 *zeta3 + 1), Fractional ideal (2 *zeta3 + 3)]
-   }}}
+* `K.prime_factors` is defined for a number field `K`.  Thus
+  {{{
+  sage: CyclotomicField(3).prime_factors(7)
+  [Fractional ideal (-2 *zeta3 + 1), Fractional ideal (2 *zeta3 + 3)]
+  }}}
 
- * `K.pari_polynomial('a')` is now valid when `K` is a relative number field.
-   Previously one could only specify the variable name for an absolute
-   number field.
+* `K.pari_polynomial('a')` is now valid when `K` is a relative number field.
+  Previously one could only specify the variable name for an absolute
+  number field.
 
- * `list` has been rewritten for the class `CyclotomicFieldHomset` in `morphism.py`.
-   Previously this failed for homomorphisms from `CyclotomicField(n)` to a 
-   non-cyclotomic number_field if there were no `n`-th roots of unity in the 
-   codomain.  The new code uses `zeta_order` to check whether there are any 
-   homomorphisms.  This should be faster.
+* `list` has been rewritten for the class `CyclotomicFieldHomset` in `morphism.py`.
+  Previously this failed for homomorphisms from `CyclotomicField(n)` to a 
+  non-cyclotomic number_field if there were no `n`-th roots of unity in the 
+  codomain.  The new code uses `zeta_order` to check whether there are any 
+  homomorphisms.  This should be faster.
 
- * In `number_field_ideal.py`, `element_1_mod` has been rewritten to use the 
-   pari function `idealaddtoone0`.  This is considerably faster.
+* In `number_field_ideal.py`, `element_1_mod` has been rewritten to use the 
+  pari function `idealaddtoone0`.  This is considerably faster.
 
- * `maximal_order` has been rewritten for relative number fields.  The
-   previous version was repetitive and grossly wasteful of memory.  This 
-   solves one aspect of #4738 ("finding maximal_orders of relative number 
-   fields is very slow").  
+* `maximal_order` has been rewritten for relative number fields.  The
+  previous version was repetitive and grossly wasteful of memory.  This 
+  solves one aspect of #4738 ("finding maximal_orders of relative number 
+  fields is very slow").  
 
- * `is_principal` and `gens_reduced` have been changed in
-   `number_field_ideal_rel.py` so that if the ideal is principal, there is
-   only one reduced generator (as already happens for ideals in absolute number
-   fields).  The previous code did not work in all cases.  As a result, 
-   the output of several doctests have needed changing, and (mostly) simplifying.
+* `is_principal` and `gens_reduced` have been changed in
+  `number_field_ideal_rel.py` so that if the ideal is principal, there is
+  only one reduced generator (as already happens for ideals in absolute number
+  fields).  The previous code did not work in all cases.  As a result, 
+  the output of several doctests have needed changing, and (mostly) simplifying.
 
- * Minor change have been made to `reduced_basis` so that it works for cyclotomic 
-   fields:
-   {{{
-   sage: CyclotomicField(12).reduced_basis()
-   [1, zeta12^2, zeta12, zeta12^3]
-   }}}
+* Minor change have been made to `reduced_basis` so that it works for cyclotomic 
+  fields:
+  {{{
+  sage: CyclotomicField(12).reduced_basis()
+  [1, zeta12^2, zeta12, zeta12^3]
+  }}}
 
- * `zeta_function` now works for relative number fields.
+* `zeta_function` now works for relative number fields.
 
- * In several places the code has been tidied up using the `map` function.
+* In several places the code has been tidied up using the `map` function.
 
- * A version of `uniformizer` has been introduced for relative number fields.
+* A version of `uniformizer` has been introduced for relative number fields.
 
- * The valuation at a prime ideal for elements of relative number fields has 
-   been defined.
+* The valuation at a prime ideal for elements of relative number fields has 
+  been defined.
 
- * A minor change to the `conjugate` function settles #4725.
+* A minor change to the `conjugate` function settles #4725.
 
- * `relative_discriminant` in `number_field_rel.py` has been rewritten so that it
-   uses PARI's `nf` rather than `bnf`, and is able to handle relative fields whose 
-   base field is a relative field.
+* `relative_discriminant` in `number_field_rel.py` has been rewritten so that it
+  uses PARI's `nf` rather than `bnf`, and is able to handle relative fields whose 
+  base field is a relative field.
 
- * Made minor change to error messages for `zeta` in `number_field.py` and
-   `order.py` to make them compatible.
+* Made minor change to error messages for `zeta` in `number_field.py` and
+  `order.py` to make them compatible.
 
- * A `subfields` function for relative number fields has been introduced. 
-   Doctests have been added, and a minor change made, to the absolute version.
+* A `subfields` function for relative number fields has been introduced. 
+  Doctests have been added, and a minor change made, to the absolute version.
 
- * The relative version of `automorphisms` has been rewritten so that it handles 
-   correctly fields where the base field is relative.
+* The relative version of `automorphisms` has been rewritten so that it handles 
+  correctly fields where the base field is relative.
+
+
+
+Issue created by migration from https://trac.sagemath.org/ticket/5842
+
 
 
 
 
 ---
+
+archive/issue_comments_045933.json:
+```json
+{
+    "body": "Attachment\n\nPartial review:  this all looks fantastically useful.  I have only skimmed the patch so far, and checked that it applies cleanly to 3.4.1.rc4.  But there are some test failures in sage/rings/number_fields (on a 64-bit machine):\n\n```\njec@host-57-44%sage -t devel/sage-5842/sage/rings/number_field/\nsage -t  \"devel/sage-5842/sage/rings/number_field/totallyreal_phc.py\"\n         [1.0 s]\nsage -t  \"devel/sage-5842/sage/rings/number_field/number_field.py\"\n**********************************************************************\nFile \"/home/jec/sage-3.4.1.rc4/devel/sage-5842/sage/rings/number_field/number_field.py\", line 1788:\n    sage: M.ideal(K.ideal(2, a))\nExpected:\n    Fractional ideal (-1/2*a*c - 1/2*a*b)\nGot:\n    Fractional ideal (1/2*a*c + 1/2*a*b)\n**********************************************************************\nFile \"/home/jec/sage-3.4.1.rc4/devel/sage-5842/sage/rings/number_field/number_field.py\", line 2952:\n    sage: L.factor(a + 1)\nExpected:\n    (Fractional ideal (1/2*b + 1/2*a + 1)) * (Fractional ideal (-1/2*b + 1/2*a - 1))\nGot:\n    (Fractional ideal (1/2*a*b - a - 1/2)) * (Fractional ideal (-1/2*b + 1/2*a - 1))\n\n  ***   Warning: large Minkowski bound: certification will be VERY long.\n  ***   Warning: large Minkowski bound: certification will be VERY long.\n  ***   Warning: large Minkowski bound: certification will be VERY long.\n  ***   Warning: large Minkowski bound: certification will be VERY long.\n**********************************************************************\n2 items had failures:\n   1 of  10 in __main__.example_40\n   1 of  13 in __main__.example_64\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /home/jec/sage-3.4.1.rc4/tmp/.doctest_number_field.py\n         [18.7 s]\nsage -t  \"devel/sage-5842/sage/rings/number_field/number_field_morphisms.pyx\"\n         [2.2 s]\nsage -t  \"devel/sage-5842/sage/rings/number_field/totallyreal_data.pyx\"\n         [1.1 s]\nsage -t  \"devel/sage-5842/sage/rings/number_field/galois_group.py\"\n         [6.5 s]\nsage -t  \"devel/sage-5842/sage/rings/number_field/number_field_element_quadratic.pyx\"\n         [1.9 s]\nsage -t  \"devel/sage-5842/sage/rings/number_field/number_field_rel.py\"\n**********************************************************************\nFile \"/home/jec/sage-3.4.1.rc4/devel/sage-5842/sage/rings/number_field/number_field_rel.py\", line 2035:\n    sage: list(K.ideal(u).factor())\nExpected:\n    [(Fractional ideal (2, -1/2*a + b + 3/2), 1),\n     (Fractional ideal (2, -1/2*a + b + 1/2), 1),\n     (Fractional ideal (5, (-1/2*b + 5/2)*a - 5/2*b - 11/2), 1),\n     (Fractional ideal (7, (-1/2*b + 7/2)*a - 7/2*b - 15/2), 1)]\nGot:\n    [(Fractional ideal (2, -1/2*a + b + 1/2), 1), (Fractional ideal (2, -1/2*a + b + 3/2), 1), (Fractional ideal (5, (-1/2*b + 5/2)*a - 5/2*b - 11/2), 1), (Fractional ideal (7, (-1/2*b + 7/2)*a - 7/2*b - 15/2), 1)]\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_66\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/jec/sage-3.4.1.rc4/tmp/.doctest_number_field_rel.py\n         [11.1 s]\nsage -t  \"devel/sage-5842/sage/rings/number_field/number_field_element.pyx\"\n**********************************************************************\nFile \"/home/jec/sage-3.4.1.rc4/devel/sage-5842/sage/rings/number_field/number_field_element.pyx\", line 2719:\n    sage: P = K.prime_factors(5)[0]; P\nExpected:\n    Fractional ideal (((1/4*c + 1/4)*b - 1/4*c - 1/4)*a + (1/2*c + 1/2)*b - 1/2*c - 3/2)\nGot:\n    Fractional ideal ((-1/2*b - 1/2)*a + b + 1/2*c + 1/2)\n**********************************************************************\n1 items had failures:\n   1 of   5 in __main__.example_75\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/jec/sage-3.4.1.rc4/tmp/.doctest_number_field_element.py\n         [7.8 s]\nsage -t  \"devel/sage-5842/sage/rings/number_field/number_field_ideal_rel.py\"\n**********************************************************************\nFile \"/home/jec/sage-3.4.1.rc4/devel/sage-5842/sage/rings/number_field/number_field_ideal_rel.py\", line 436:\n    sage: K.ideal(c).factor()\nExpected:\n    (Fractional ideal ((1/2*b*a - 1/2*b - 1/2)*c + (1/2*b - 1/2)*a))^2 * (Fractional ideal ((1/2*a - 1/2*b - 1/2)*c))\nGot:\n    (Fractional ideal ((-1/2*b*a + 1/2*b + 1/2)*c - a + 1))^2 * (Fractional ideal ((-1/2*b*a + 1/2*b + 1/2)*c))\n**********************************************************************\nFile \"/home/jec/sage-3.4.1.rc4/devel/sage-5842/sage/rings/number_field/number_field_ideal_rel.py\", line 617:\n    sage: z = I.element_1_mod(J); z\nExpected:\n    -8*b*a + 24\nGot:\n    -b*a + 1\n**********************************************************************\nFile \"/home/jec/sage-3.4.1.rc4/devel/sage-5842/sage/rings/number_field/number_field_ideal_rel.py\", line 250:\n    sage: I\nExpected:\n    Fractional ideal ((1/2*b + 1/2)*a - 3/2*b - 3/2)\nGot:\n    Fractional ideal ((-1/2*b + 1/2)*a + 3/2*b - 3/2)\n**********************************************************************\n3 items had failures:\n   1 of  11 in __main__.example_13\n   1 of   8 in __main__.example_22\n   1 of   6 in __main__.example_8\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file /home/jec/sage-3.4.1.rc4/tmp/.doctest_number_field_ideal_rel.py\n         [3.1 s]\nsage -t  \"devel/sage-5842/sage/rings/number_field/order.py\"\n         [4.1 s]\nsage -t  \"devel/sage-5842/sage/rings/number_field/unit_group.py\"\n         [2.1 s]\nsage -t  \"devel/sage-5842/sage/rings/number_field/maps.py\"\n         [1.7 s]\nsage -t  \"devel/sage-5842/sage/rings/number_field/small_primes_of_degree_one.py\"\n         [2.3 s]\nsage -t  \"devel/sage-5842/sage/rings/number_field/totallyreal_rel.py\"\n         [2.0 s]\nsage -t  \"devel/sage-5842/sage/rings/number_field/all.py\"\n         [0.0 s]\nsage -t  \"devel/sage-5842/sage/rings/number_field/totallyreal.pyx\"\n         [3.8 s]\nsage -t  \"devel/sage-5842/sage/rings/number_field/class_group.py\"\n         [2.5 s]\nsage -t  \"devel/sage-5842/sage/rings/number_field/morphism.py\"\n         [2.0 s]\nsage -t  \"devel/sage-5842/sage/rings/number_field/number_field_base.pyx\"\n         [2.7 s]\nsage -t  \"devel/sage-5842/sage/rings/number_field/number_field_ideal.py\"\n**********************************************************************\nFile \"/home/jec/sage-3.4.1.rc4/devel/sage-5842/sage/rings/number_field/number_field_ideal.py\", line 719:\n    sage: I\nExpected:\n    Fractional ideal (-1/2*a + 3/2)\nGot:\n    Fractional ideal (1/2*a + 3/2)\n**********************************************************************\n1 items had failures:\n   1 of  11 in __main__.example_23\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/jec/sage-3.4.1.rc4/tmp/.doctest_number_field_ideal.py\n         [5.8 s]\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"devel/sage-5842/sage/rings/number_field/number_field.py\"\n        sage -t  \"devel/sage-5842/sage/rings/number_field/number_field_rel.py\"\n        sage -t  \"devel/sage-5842/sage/rings/number_field/number_field_element.pyx\"\n        sage -t  \"devel/sage-5842/sage/rings/number_field/number_field_ideal_rel.py\"\n        sage -t  \"devel/sage-5842/sage/rings/number_field/number_field_ideal.py\"\nTotal time for all tests: 82.1 seconds\n```\n\nThat was on a 64-bit machine; no problems on 32-bit.  This is typical behaviour with pari number field functions.  When I made unit_group.py I could not come up with any way of getting around this variability, and ended up adding # random to the offending tests, which is hardly a good solution.",
+    "created_at": "2009-04-21T11:30:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5842",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5842#issuecomment-45933",
+    "user": "cremona"
+}
+```
 
 Attachment
 
@@ -241,9 +268,20 @@ Total time for all tests: 82.1 seconds
 That was on a 64-bit machine; no problems on 32-bit.  This is typical behaviour with pari number field functions.  When I made unit_group.py I could not come up with any way of getting around this variability, and ended up adding # random to the offending tests, which is hardly a good solution.
 
 
+
 ---
 
-Comment by fwclarke created at 2009-04-21 11:53:21
+archive/issue_comments_045934.json:
+```json
+{
+    "body": "I found a few like this (on a 32-bit machine).  \n\nUnless the output is what is being tested, I think the best way \nround the problem is (taking, for example, the first failure \nlisted above) rather than use tests like:\n\n```\nsage: M.ideal(K.ideal(2, a))\nFractional ideal (-1/2*a*c - 1/2*a*b)\n```\n\nto say:\n\n```\nsage: M.ideal(K.ideal(2, a)) == M.ideal(a*(b - c)/2)\nTrue\n```\n\n\nI'll try to make a new patch on these lines.",
+    "created_at": "2009-04-21T11:53:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5842",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5842#issuecomment-45934",
+    "user": "fwclarke"
+}
+```
 
 I found a few like this (on a 32-bit machine).  
 
@@ -267,9 +305,20 @@ True
 I'll try to make a new patch on these lines.
 
 
+
 ---
 
-Comment by fwclarke created at 2009-04-21 20:53:17
+archive/issue_comments_045935.json:
+```json
+{
+    "body": "In a new patch (to apply on top of the first one), I've amended the offending doctests, mostly in the way I described above,\nothers using # random.  On a my 32-bit machine this meant that a couple of other doctests had to be altered a little.\n\nI hope the 64-bit behaviour is OK.",
+    "created_at": "2009-04-21T20:53:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5842",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5842#issuecomment-45935",
+    "user": "fwclarke"
+}
+```
 
 In a new patch (to apply on top of the first one), I've amended the offending doctests, mostly in the way I described above,
 others using # random.  On a my 32-bit machine this meant that a couple of other doctests had to be altered a little.
@@ -277,23 +326,58 @@ others using # random.  On a my 32-bit machine this meant that a couple of other
 I hope the 64-bit behaviour is OK.
 
 
+
 ---
 
-Comment by fwclarke created at 2009-04-21 20:54:28
+archive/issue_comments_045936.json:
+```json
+{
+    "body": "to apply after trac_5842.patch",
+    "created_at": "2009-04-21T20:54:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5842",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5842#issuecomment-45936",
+    "user": "fwclarke"
+}
+```
 
 to apply after trac_5842.patch
 
 
+
 ---
+
+archive/issue_comments_045937.json:
+```json
+{
+    "body": "Attachment\n\nSorry Francis,  I never noticed that you had put up a second patch.  I'll take another look, though I rather fear this will need some work to rebase onto 4.0.1.  John",
+    "created_at": "2009-06-07T11:59:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5842",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5842#issuecomment-45937",
+    "user": "cremona"
+}
+```
 
 Attachment
 
 Sorry Francis,  I never noticed that you had put up a second patch.  I'll take another look, though I rather fear this will need some work to rebase onto 4.0.1.  John
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-06-08 08:38:21
+archive/issue_comments_045938.json:
+```json
+{
+    "body": "I'm changing the status so this shows up in the \"needs review\" list.\n\nEven once we get this rebased to 4.0.1, it is highly likely it will conflict with #6188 (and possibly also #6204) -- I will see if I can rebase it to 4.0.1 + these.\n\nDavid",
+    "created_at": "2009-06-08T08:38:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5842",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5842#issuecomment-45938",
+    "user": "davidloeffler"
+}
+```
 
 I'm changing the status so this shows up in the "needs review" list.
 
@@ -302,22 +386,57 @@ Even once we get this rebased to 4.0.1, it is highly likely it will conflict wit
 David
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-06-08 15:30:10
+archive/issue_comments_045939.json:
+```json
+{
+    "body": "rebased, apply over 4.0.1 + the two patches at #6188",
+    "created_at": "2009-06-08T15:30:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5842",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5842#issuecomment-45939",
+    "user": "davidloeffler"
+}
+```
 
 rebased, apply over 4.0.1 + the two patches at #6188
 
 
+
 ---
+
+archive/issue_comments_045940.json:
+```json
+{
+    "body": "Attachment\n\nI've done a rebased patch, to be applied to 4.0.1 plus the #6188 patches, which is equivalent to the two patches above. I've also fixed some minor docstring formatting errors. It passes doctests both on my laptop (32-bit) and sage.math (64-bit). As John says above, this is all fantastically useful, and should make relative number field arithmetic much more usable -- which I welcome a great deal, since I need it rather heavily for my research right now :-) Positive review.",
+    "created_at": "2009-06-08T15:35:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5842",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5842#issuecomment-45940",
+    "user": "davidloeffler"
+}
+```
 
 Attachment
 
 I've done a rebased patch, to be applied to 4.0.1 plus the #6188 patches, which is equivalent to the two patches above. I've also fixed some minor docstring formatting errors. It passes doctests both on my laptop (32-bit) and sage.math (64-bit). As John says above, this is all fantastically useful, and should make relative number field arithmetic much more usable -- which I welcome a great deal, since I need it rather heavily for my research right now :-) Positive review.
 
 
+
 ---
 
-Comment by ncalexan created at 2009-06-13 20:26:26
+archive/issue_comments_045941.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-06-13T20:26:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5842",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5842#issuecomment-45941",
+    "user": "ncalexan"
+}
+```
 
 Resolution: fixed

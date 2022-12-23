@@ -1,11 +1,21 @@
 # Issue 7981: animate ignores options to show that are passed up from the plot command
 
-Issue created by migration from https://trac.sagemath.org/ticket/7981
-
-Original creator: jason
-
-Original creation time: 2010-01-18 18:39:50
-
+archive/issues_007981.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  wcauchois\n\nThis animate command shouldn't ignore the options to show() that are passed through by the plot command (here the options are ymin and ymax):\n\n\n```\nsage: var('t')\nsage: damped_oscillator = 41/311*sqrt(311)*e^(-3/8*t)*sin(1/8*sqrt(311)*t) + 3*e^(-3/8*t)*cos(1/8*sqrt(311)*t)\nsage: animate([plot( lambda x: damped_oscillator( t = x + k ), -1/2, 3*pi, ymin=-2, ymax=3.5 ) for k in srange( 0, pi, 0.3 ) ]).show()\n```\n\n\nThanks to   \t\nJohann Myrkraverk Oskarsson for reporting this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7981\n\n",
+    "created_at": "2010-01-18T18:39:50Z",
+    "labels": [
+        "graphics",
+        "major",
+        "bug"
+    ],
+    "title": "animate ignores options to show that are passed up from the plot command",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7981",
+    "user": "jason"
+}
+```
 Assignee: was
 
 CC:  wcauchois
@@ -23,45 +33,117 @@ sage: animate([plot( lambda x: damped_oscillator( t = x + k ), -1/2, 3*pi, ymin=
 Thanks to   	
 Johann Myrkraverk Oskarsson for reporting this.
 
+Issue created by migration from https://trac.sagemath.org/ticket/7981
+
+
+
+
 
 ---
+
+archive/issue_comments_069639.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-01-19T00:15:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69639",
+    "user": "jason"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by jason created at 2010-01-19 00:15:40
+archive/issue_comments_069640.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-01-19T00:15:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69640",
+    "user": "jason"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jason created at 2010-01-19 00:16:54
+archive/issue_comments_069641.json:
+```json
+{
+    "body": "Bill and Karl-Dieter,\n\nYou two might be interested in this.  Karl-Dieter, you wrote the original code that passed show options around, I believe.  I just made the consolidation happen in .save() instead of .show().",
+    "created_at": "2010-01-19T00:16:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69641",
+    "user": "jason"
+}
+```
 
 Bill and Karl-Dieter,
 
 You two might be interested in this.  Karl-Dieter, you wrote the original code that passed show options around, I believe.  I just made the consolidation happen in .save() instead of .show().
 
 
+
 ---
 
-Comment by jason created at 2010-01-19 05:27:34
+archive/issue_comments_069642.json:
+```json
+{
+    "body": "This fixes #7524.",
+    "created_at": "2010-01-19T05:27:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69642",
+    "user": "jason"
+}
+```
 
 This fixes #7524.
 
 
+
 ---
 
-Comment by kcrisman created at 2010-01-19 18:53:20
+archive/issue_comments_069643.json:
+```json
+{
+    "body": "Umm... I find that unlikely, though I may have broken something inadvertently.",
+    "created_at": "2010-01-19T18:53:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69643",
+    "user": "kcrisman"
+}
+```
 
 Umm... I find that unlikely, though I may have broken something inadvertently.
 
 
+
 ---
 
-Comment by timdumol created at 2010-01-20 13:51:42
+archive/issue_comments_069644.json:
+```json
+{
+    "body": "Doctesting on plot.py results in 2 errors:\n\n{{[\nsage -t  \"devel/sage-ref/sage/plot/plot.py\"                 \n --leak-resolution=high --log-socket=127.0.0.1 --leak-check=full --num-callers=25 --suppressions=/opt/sage-4.3.rc0.O0/local/lib/valgrind/sage.supp \n**********************************************************************                                                                             \nFile \"/home/timdumol/sage-4.3.1.alpha0/devel/sage-ref/sage/plot/plot.py\", line 1925:                                                               \n    sage: c.show(figsize=[5,5], xmin=-1, xmax=3, ymin=-1, ymax=3)                   sage: point((-1,1),pointsize=30, color='red')                  \nException raised:                                                                                                                                  \n    Traceback (most recent call last):                                                                                                             \n      File \"/home/timdumol/sage-4.3.1.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test                                                  \n        self.run_one_example(test, example, filename, compileflags)                                                                                \n      File \"/home/timdumol/sage-4.3.1.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example                                                \n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)                                                             \n      File \"/home/timdumol/sage-4.3.1.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example                                               \n        compileflags, 1) in test.globs                                                                                                             \n      File \"<doctest __main__.example_37[5]>\", line 1                                                                                              \n         c.show(figsize=[Integer(5),Integer(5)], xmin=-Integer(1), xmax=Integer(3), ymin=-Integer(1), ymax=Integer(3))                   sage: point((-Integer(1),Integer(1)),pointsize=Integer(30), color='red')###line 1925:                                                                                                                  \n    sage: c.show(figsize=[5,5], xmin=-1, xmax=3, ymin=-1, ymax=3)                   sage: point((-1,1),pointsize=30, color='red')                                       \n                                                                                                                                           ^                            \n     SyntaxError: invalid syntax                                                                                                                                        \n**********************************************************************\nFile \"/home/timdumol/sage-4.3.1.alpha0/devel/sage-ref/sage/plot/plot.py\", line 1930:\n    sage: c.save(DOCTEST_MODE_FILE)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/timdumol/sage-4.3.1.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/timdumol/sage-4.3.1.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/timdumol/sage-4.3.1.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_37[7]>\", line 1, in <module>\n        c.save(DOCTEST_MODE_FILE)###line 1930:\n    sage: c.save(DOCTEST_MODE_FILE)\n    NameError: name 'DOCTEST_MODE_FILE' is not defined\n**********************************************************************\n1 items had failures:\n   2 of   8 in __main__.example_37\n}}}",
+    "created_at": "2010-01-20T13:51:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69644",
+    "user": "timdumol"
+}
+```
 
 Doctesting on plot.py results in 2 errors:
 
@@ -105,16 +187,38 @@ Exception raised:
 }}}
 
 
+
 ---
 
-Comment by timdumol created at 2010-01-20 13:51:42
+archive/issue_comments_069645.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-01-20T13:51:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69645",
+    "user": "timdumol"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by jason created at 2010-11-10 16:16:56
+archive/issue_comments_069646.json:
+```json
+{
+    "body": "Here is another effect of this, I think:\n\n\n```\nplot(x,(x,0,1),aspect_ratio=1).save('test.png')\n```\n\ndoes not save a graph with aspect ratio 1.",
+    "created_at": "2010-11-10T16:16:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69646",
+    "user": "jason"
+}
+```
 
 Here is another effect of this, I think:
 
@@ -126,55 +230,132 @@ plot(x,(x,0,1),aspect_ratio=1).save('test.png')
 does not save a graph with aspect ratio 1.
 
 
+
 ---
 
-Comment by novoselt created at 2010-11-19 03:54:18
+archive/issue_comments_069647.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-11-19T03:54:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69647",
+    "user": "novoselt"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by novoselt created at 2010-11-19 03:54:18
+archive/issue_comments_069648.json:
+```json
+{
+    "body": "I have just wrote a patch fixing the issue for `save` (which is quite annoying in conjunction with SageTeX) and then found this ticket. Since the original patch does not apply cleanly on sage-4.6.alpha1, I posted my patch, but I have incorporated Jason's changes to `show` to eliminate double processing of options.\n\nI have changed call parameters to `save` since it is not documented why one would ever need `savenow=False`. If I want to save later, shouldn't I call `save` later?-) Also it does not make sense in my opinion to use any extra positional arguments in this function except for the file name. I realize that this is a backward-incompatible change, but all long tests pass with this patch.",
+    "created_at": "2010-11-19T03:54:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69648",
+    "user": "novoselt"
+}
+```
 
 I have just wrote a patch fixing the issue for `save` (which is quite annoying in conjunction with SageTeX) and then found this ticket. Since the original patch does not apply cleanly on sage-4.6.alpha1, I posted my patch, but I have incorporated Jason's changes to `show` to eliminate double processing of options.
 
 I have changed call parameters to `save` since it is not documented why one would ever need `savenow=False`. If I want to save later, shouldn't I call `save` later?-) Also it does not make sense in my opinion to use any extra positional arguments in this function except for the file name. I realize that this is a backward-incompatible change, but all long tests pass with this patch.
 
 
+
 ---
 
-Comment by novoselt created at 2010-11-26 16:43:02
+archive/issue_comments_069649.json:
+```json
+{
+    "body": "Made it possible to apply the new patch after #10291 (which is now positively reviewed).",
+    "created_at": "2010-11-26T16:43:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69649",
+    "user": "novoselt"
+}
+```
 
 Made it possible to apply the new patch after #10291 (which is now positively reviewed).
 
 
+
 ---
 
-Comment by novoselt created at 2010-12-05 18:37:10
+archive/issue_comments_069650.json:
+```json
+{
+    "body": "For the buildbot\n\nApply trac-7981-save_ignores_preset_plotting_options.patch",
+    "created_at": "2010-12-05T18:37:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69650",
+    "user": "novoselt"
+}
+```
 
 For the buildbot
 
 Apply trac-7981-save_ignores_preset_plotting_options.patch
 
 
+
 ---
 
-Comment by novoselt created at 2010-12-05 18:37:10
+archive/issue_comments_069651.json:
+```json
+{
+    "body": "Changing assignee from was to novoselt.",
+    "created_at": "2010-12-05T18:37:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69651",
+    "user": "novoselt"
+}
+```
 
 Changing assignee from was to novoselt.
 
 
+
 ---
 
-Comment by mhampton created at 2011-01-12 01:09:54
+archive/issue_comments_069652.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2011-01-12T01:09:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69652",
+    "user": "mhampton"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mhampton created at 2011-01-12 01:09:54
+archive/issue_comments_069653.json:
+```json
+{
+    "body": "This seems to work, and all doctests in the module plot (not just the file) pass.\n\nSadly it didn't also fix #10244, so I will try to figure that out if I can.\n\nPositive review.",
+    "created_at": "2011-01-12T01:09:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69653",
+    "user": "mhampton"
+}
+```
 
 This seems to work, and all doctests in the module plot (not just the file) pass.
 
@@ -183,9 +364,20 @@ Sadly it didn't also fix #10244, so I will try to figure that out if I can.
 Positive review.
 
 
+
 ---
 
-Comment by kcrisman created at 2011-01-12 20:43:33
+archive/issue_comments_069654.json:
+```json
+{
+    "body": "Just out of curiosity, what is the 'backward-incompatible' change you mention?   Which extra positional arguments - like dpi?  (Though Jason also got rid of that - I wonder why?)  \n\nI guess I mean to ask whether this is a good such change; usually there is a deprecation period.  After all, doctests catch very few of our use cases :)  What is wrong with the usual `*args,**kwds` syntax? \n\nAs for `savenow`, it looks like with it being `False` we could still create a Sage object.  You are right that it seems a little redundant, though!\n\nAlso, this needs a doctest (it's in the original patch) to show that animate options actually work, at least in theory (if one looked at it and ran the optional tests).  So... needs work.  Sorry :(",
+    "created_at": "2011-01-12T20:43:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69654",
+    "user": "kcrisman"
+}
+```
 
 Just out of curiosity, what is the 'backward-incompatible' change you mention?   Which extra positional arguments - like dpi?  (Though Jason also got rid of that - I wonder why?)  
 
@@ -196,16 +388,38 @@ As for `savenow`, it looks like with it being `False` we could still create a Sa
 Also, this needs a doctest (it's in the original patch) to show that animate options actually work, at least in theory (if one looked at it and ran the optional tests).  So... needs work.  Sorry :(
 
 
+
 ---
 
-Comment by kcrisman created at 2011-01-12 20:43:33
+archive/issue_comments_069655.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_work.",
+    "created_at": "2011-01-12T20:43:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69655",
+    "user": "kcrisman"
+}
+```
 
 Changing status from positive_review to needs_work.
 
 
+
 ---
 
-Comment by novoselt created at 2011-01-13 03:17:30
+archive/issue_comments_069656.json:
+```json
+{
+    "body": "Replying to [comment:13 kcrisman]:\n> Just out of curiosity, what is the 'backward-incompatible' change you mention?   Which extra positional arguments - like dpi?  (Though Jason also got rid of that - I wonder why?)  \n\nI don't remember exactly what I meant, but probably it was changing parameters of `save`.\n\n> I guess I mean to ask whether this is a good such change; usually there is a deprecation period.  After all, doctests catch very few of our use cases :)  What is wrong with the usual `*args,**kwds` syntax? \n\nI think that it makes the syntax of save cleaner and easier to understand (and document for that matter). As was recently mentioned on sage-devel, one should use common sense when deciding whether to deprecate something or change immediately, I think that these changes fall into the latter category ;-) As for `*args` I just think that it is a bad practice to call functions with 20 or so possible parameters listing them without names.\n\n> As for `savenow`, it looks like with it being `False` we could still create a Sage object.  You are right that it seems a little redundant, though!\n\nIsn't it a bug that `save` saves something in some cases when `savenow=False`?..\n\n> Also, this needs a doctest (it's in the original patch) to show that animate options actually work, at least in theory (if one looked at it and ran the optional tests).  So... needs work.  Sorry :(\n\nI added the doctest. Was it the only reason for \"needs work\" or you would like to have `save` parameters changed as well?",
+    "created_at": "2011-01-13T03:17:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69656",
+    "user": "novoselt"
+}
+```
 
 Replying to [comment:13 kcrisman]:
 > Just out of curiosity, what is the 'backward-incompatible' change you mention?   Which extra positional arguments - like dpi?  (Though Jason also got rid of that - I wonder why?)  
@@ -225,32 +439,78 @@ Isn't it a bug that `save` saves something in some cases when `savenow=False`?..
 I added the doctest. Was it the only reason for "needs work" or you would like to have `save` parameters changed as well?
 
 
+
 ---
 
-Comment by novoselt created at 2011-01-13 03:17:30
+archive/issue_comments_069657.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2011-01-13T03:17:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69657",
+    "user": "novoselt"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
+
+archive/issue_comments_069658.json:
+```json
+{
+    "body": "Attachment\n\nAlternative patch",
+    "created_at": "2011-01-13T03:18:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69658",
+    "user": "novoselt"
+}
+```
 
 Attachment
 
 Alternative patch
 
 
+
 ---
 
-Comment by novoselt created at 2011-01-13 03:19:33
+archive/issue_comments_069659.json:
+```json
+{
+    "body": "For the confused buildbot:\n\nApply trac-7981-save_ignores_preset_plotting_options.patch",
+    "created_at": "2011-01-13T03:19:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69659",
+    "user": "novoselt"
+}
+```
 
 For the confused buildbot:
 
 Apply trac-7981-save_ignores_preset_plotting_options.patch
 
 
+
 ---
 
-Comment by kcrisman created at 2011-01-13 03:30:23
+archive/issue_comments_069660.json:
+```json
+{
+    "body": "Replying to [comment:14 novoselt]:\n> Replying to [comment:13 kcrisman]:\n> I think that it makes the syntax of save cleaner and easier to understand (and document for that matter). As was recently mentioned on sage-devel, one should use common sense when deciding whether to deprecate something or change immediately, I think that these changes fall into the latter category ;-) \nYeah, these two make sense.  It looks like dpi will still work, given `SHOW_OPTIONS`.  \n\n>As for `*args` I just think that it is a bad practice to call functions with 20 or so possible parameters listing them without names.\nOkay, I see what's going on here now.  Especially since the order would be open to suspicion!\n\n> > As for `savenow`, it looks like with it being `False` we could still create a Sage object.  You are right that it seems a little redundant, though!\n> \n> Isn't it a bug that `save` saves something in some cases when `savenow=False`?..\n\nNo, just an undocumented feature!  Since it doesn't save a *graphic*.  I agree this seems odd, though, so not complaining.\n\n> > Also, this needs a doctest (it's in the original patch) to show that animate options actually work, at least in theory (if one looked at it and ran the optional tests).  So... needs work.  Sorry :(\n> \n> I added the doctest. Was it the only reason for \"needs work\" or you would like to have `save` parameters changed as well?\n\nNo, assuming this still applies by the buildbot, and since you've explained the parameter issue fine, that's okay.  The only reason I felt justified in overruling the original positive review was because it didn't actually include the doctest, though I had the other questions as well.",
+    "created_at": "2011-01-13T03:30:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69660",
+    "user": "kcrisman"
+}
+```
 
 Replying to [comment:14 novoselt]:
 > Replying to [comment:13 kcrisman]:
@@ -264,7 +524,7 @@ Okay, I see what's going on here now.  Especially since the order would be open 
 > 
 > Isn't it a bug that `save` saves something in some cases when `savenow=False`?..
 
-No, just an undocumented feature!  Since it doesn't save a _graphic_.  I agree this seems odd, though, so not complaining.
+No, just an undocumented feature!  Since it doesn't save a *graphic*.  I agree this seems odd, though, so not complaining.
 
 > > Also, this needs a doctest (it's in the original patch) to show that animate options actually work, at least in theory (if one looked at it and ran the optional tests).  So... needs work.  Sorry :(
 > 
@@ -273,16 +533,38 @@ No, just an undocumented feature!  Since it doesn't save a _graphic_.  I agree t
 No, assuming this still applies by the buildbot, and since you've explained the parameter issue fine, that's okay.  The only reason I felt justified in overruling the original positive review was because it didn't actually include the doctest, though I had the other questions as well.
 
 
+
 ---
 
-Comment by kcrisman created at 2011-01-13 03:30:23
+archive/issue_comments_069661.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2011-01-13T03:30:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69661",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by kcrisman created at 2011-01-14 02:18:49
+archive/issue_comments_069662.json:
+```json
+{
+    "body": "There is a trivial error in this patch that however causes it to fail doctests.\n\n```\nWe check that Trac #7981 is fixed:: \n\n    sage: animate([plot(sin(x + float(k), (0, 2*pi), ymin=-5, ymax=5)) \n    ...            for k in srange(0,2*pi,0.3)]).show() # optional\n```\n\nNotice that there is a parenthesis missing after `float(k)` which instead comes after `ymax=5`.  Patch coming up.",
+    "created_at": "2011-01-14T02:18:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69662",
+    "user": "kcrisman"
+}
+```
 
 There is a trivial error in this patch that however causes it to fail doctests.
 
@@ -296,30 +578,76 @@ We check that Trac #7981 is fixed::
 Notice that there is a parenthesis missing after `float(k)` which instead comes after `ymax=5`.  Patch coming up.
 
 
+
 ---
 
-Comment by kcrisman created at 2011-01-14 02:28:02
+archive/issue_comments_069663.json:
+```json
+{
+    "body": "Okay, now for sure positive review.  \n\nTo buildbot - apply trac-7981-save_ignores_preset_plotting_options.patch and trac_7981-reviewer.patch.",
+    "created_at": "2011-01-14T02:28:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69663",
+    "user": "kcrisman"
+}
+```
 
 Okay, now for sure positive review.  
 
 To buildbot - apply trac-7981-save_ignores_preset_plotting_options.patch and trac_7981-reviewer.patch.
 
 
+
 ---
 
-Comment by kcrisman created at 2011-01-15 03:21:00
+archive/issue_comments_069664.json:
+```json
+{
+    "body": "Just FYI - still applies fine on 4.6.2.alpha0.",
+    "created_at": "2011-01-15T03:21:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69664",
+    "user": "kcrisman"
+}
+```
 
 Just FYI - still applies fine on 4.6.2.alpha0.
 
 
+
 ---
 
-Comment by kcrisman created at 2011-01-17 18:40:07
+archive/issue_comments_069665.json:
+```json
+{
+    "body": "reviewer patch",
+    "created_at": "2011-01-17T18:40:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69665",
+    "user": "kcrisman"
+}
+```
 
 reviewer patch
 
 
+
 ---
+
+archive/issue_comments_069666.json:
+```json
+{
+    "body": "Attachment\n\nJust an update - apparently \n\n```\nsage: animate([plot(sin(x + float(k)), (0, 2*pi), ymin=-5, ymax=5)\n...            for k in srange(0,2*pi,0.3)]).show() # optional\n```\n\ndoes not obey the optional test, for it created a new file (I must have ImageMagick!).  We don't create non-temp new files in doctests, though, so this had to be changed.  New reviewer patch fixes this as well, maintains positive review.  Should not affect the plot patches which depend on this.",
+    "created_at": "2011-01-17T18:42:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69666",
+    "user": "kcrisman"
+}
+```
 
 Attachment
 
@@ -333,25 +661,58 @@ sage: animate([plot(sin(x + float(k)), (0, 2*pi), ymin=-5, ymax=5)
 does not obey the optional test, for it created a new file (I must have ImageMagick!).  We don't create non-temp new files in doctests, though, so this had to be changed.  New reviewer patch fixes this as well, maintains positive review.  Should not affect the plot patches which depend on this.
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-01-17 20:44:21
+archive/issue_comments_069667.json:
+```json
+{
+    "body": "Maybe you should document in the file what you just said in your comment.  Also make it clear why the test is tagged optional.",
+    "created_at": "2011-01-17T20:44:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69667",
+    "user": "jdemeyer"
+}
+```
 
 Maybe you should document in the file what you just said in your comment.  Also make it clear why the test is tagged optional.
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-01-17 20:44:21
+archive/issue_comments_069668.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_work.",
+    "created_at": "2011-01-17T20:44:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69668",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from positive_review to needs_work.
 
 
+
 ---
 
-Comment by kcrisman created at 2011-01-17 20:58:53
+archive/issue_comments_069669.json:
+```json
+{
+    "body": "Hmm, but in many places in this file it says why such things are optional.   In fact, *earlier in the same docstring* the first occurrence of `.show()` explains this:\n\n```\n        sage: a.show()          # optional -- requires convert command\n```\n\nas well as several lines later\n\n```\n        sage: a.show() # optional -- requires convert command\n```\n\nso hopefully one wouldn't need to do it a third time in three paragraphs.  Especially since it's a `TEST`.\n\nAlso, the actual issue with creating a file I have posted to sage-devel about; it's not 100% clear to me that this is a bug.  It just happened to have a bad effect here, which I changed from Andrey's patch.  But it's orthogonal to the ticket.\n\nSo putting back to 'needs review'.  I hope you will agree with me that this is in fact still worthy of positive review.\n\nNow, of course there is in the doctesting framework the issue that one can do optional tests with only certain keywords, so if one has `convert` one could run them with that keyword.  But in that case, the entire file `animate.py` is replete with violations of this, and I feel that should be a separate ticket.",
+    "created_at": "2011-01-17T20:58:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69669",
+    "user": "kcrisman"
+}
+```
 
-Hmm, but in many places in this file it says why such things are optional.   In fact, _earlier in the same docstring_ the first occurrence of `.show()` explains this:
+Hmm, but in many places in this file it says why such things are optional.   In fact, *earlier in the same docstring* the first occurrence of `.show()` explains this:
 
 ```
         sage: a.show()          # optional -- requires convert command
@@ -372,19 +733,41 @@ So putting back to 'needs review'.  I hope you will agree with me that this is i
 Now, of course there is in the doctesting framework the issue that one can do optional tests with only certain keywords, so if one has `convert` one could run them with that keyword.  But in that case, the entire file `animate.py` is replete with violations of this, and I feel that should be a separate ticket.
 
 
+
 ---
 
-Comment by kcrisman created at 2011-01-17 20:58:53
+archive/issue_comments_069670.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2011-01-17T20:58:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69670",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-01-18 13:03:26
+archive/issue_comments_069671.json:
+```json
+{
+    "body": "Replying to [comment:23 kcrisman]:\n> Hmm, but in many places in this file it says why such things are optional.   In fact, *earlier in the same docstring* the first occurrence of `.show()` explains this:\n> {{{\n>         sage: a.show()          # optional -- requires convert command\n> }}}\n> as well as several lines later\n> {{{\n>         sage: a.show() # optional -- requires convert command\n> }}}\n> so hopefully one wouldn't need to do it a third time in three paragraphs.  Especially since it's a `TEST`.\n\nPersonally, I would write it a third time.  On the other hand, I don't care too much.  So if you feel like you're happy with the patch as-is, then that's fine for me.",
+    "created_at": "2011-01-18T13:03:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69671",
+    "user": "jdemeyer"
+}
+```
 
 Replying to [comment:23 kcrisman]:
-> Hmm, but in many places in this file it says why such things are optional.   In fact, _earlier in the same docstring_ the first occurrence of `.show()` explains this:
+> Hmm, but in many places in this file it says why such things are optional.   In fact, *earlier in the same docstring* the first occurrence of `.show()` explains this:
 > {{{
 >         sage: a.show()          # optional -- requires convert command
 > }}}
@@ -397,9 +780,20 @@ Replying to [comment:23 kcrisman]:
 Personally, I would write it a third time.  On the other hand, I don't care too much.  So if you feel like you're happy with the patch as-is, then that's fine for me.
 
 
+
 ---
 
-Comment by kcrisman created at 2011-01-18 14:19:26
+archive/issue_comments_069672.json:
+```json
+{
+    "body": "> > so hopefully one wouldn't need to do it a third time in three paragraphs.  Especially since it's a `TEST`.\n> \n> Personally, I would write it a third time.  On the other hand, I don't care too much.  So if you feel like you're happy with the patch as-is, then that's fine for me.\n\nYes, I am.  This issue is pretty important, and the other issue is somewhat orthogonal.  I've opened another ticket for the issue about the optional keyword - this is now #10655.",
+    "created_at": "2011-01-18T14:19:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69672",
+    "user": "kcrisman"
+}
+```
 
 > > so hopefully one wouldn't need to do it a third time in three paragraphs.  Especially since it's a `TEST`.
 > 
@@ -408,66 +802,165 @@ Comment by kcrisman created at 2011-01-18 14:19:26
 Yes, I am.  This issue is pretty important, and the other issue is somewhat orthogonal.  I've opened another ticket for the issue about the optional keyword - this is now #10655.
 
 
+
 ---
 
-Comment by kcrisman created at 2011-01-18 14:19:26
+archive/issue_comments_069673.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2011-01-18T14:19:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69673",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by kcrisman created at 2011-01-18 14:20:00
+archive/issue_comments_069674.json:
+```json
+{
+    "body": "'This issue' meaning this ticket itself, of course :-)",
+    "created_at": "2011-01-18T14:20:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69674",
+    "user": "kcrisman"
+}
+```
 
 'This issue' meaning this ticket itself, of course :-)
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-01-19 01:35:49
+archive/issue_comments_069675.json:
+```json
+{
+    "body": "Please specify which patches have to be applied.",
+    "created_at": "2011-01-19T01:35:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69675",
+    "user": "jdemeyer"
+}
+```
 
 Please specify which patches have to be applied.
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-01-19 01:35:49
+archive/issue_comments_069676.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_info.",
+    "created_at": "2011-01-19T01:35:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69676",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from positive_review to needs_info.
 
 
+
 ---
 
-Comment by novoselt created at 2011-01-19 01:45:51
+archive/issue_comments_069677.json:
+```json
+{
+    "body": "Please apply trac-7981-save_ignores_preset_plotting_options.patch and trac_7981-reviewer.patch",
+    "created_at": "2011-01-19T01:45:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69677",
+    "user": "novoselt"
+}
+```
 
 Please apply trac-7981-save_ignores_preset_plotting_options.patch and trac_7981-reviewer.patch
 
 
+
 ---
 
-Comment by novoselt created at 2011-01-19 01:45:51
+archive/issue_comments_069678.json:
+```json
+{
+    "body": "Changing status from needs_info to needs_review.",
+    "created_at": "2011-01-19T01:45:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69678",
+    "user": "novoselt"
+}
+```
 
 Changing status from needs_info to needs_review.
 
 
+
 ---
 
-Comment by novoselt created at 2011-01-19 01:46:05
+archive/issue_comments_069679.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2011-01-19T01:46:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69679",
+    "user": "novoselt"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by kcrisman created at 2011-01-19 02:10:56
+archive/issue_comments_069680.json:
+```json
+{
+    "body": "Replying to [comment:27 jdemeyer]:\n> Please specify which patches have to be applied.\nJust FYI, this was already noted in [comment:19 comment 19].",
+    "created_at": "2011-01-19T02:10:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69680",
+    "user": "kcrisman"
+}
+```
 
 Replying to [comment:27 jdemeyer]:
 > Please specify which patches have to be applied.
 Just FYI, this was already noted in [comment:19 comment 19].
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-01-25 08:13:57
+archive/issue_comments_069681.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2011-01-25T08:13:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7981#issuecomment-69681",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: fixed

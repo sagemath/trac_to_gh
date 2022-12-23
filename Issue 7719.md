@@ -1,11 +1,21 @@
 # Issue 7719: Improvements to complex AGM
 
-Issue created by migration from https://trac.sagemath.org/ticket/7719
-
-Original creator: cremona
-
-Original creation time: 2009-12-17 10:29:09
-
+archive/issues_007719.json:
+```json
+{
+    "body": "Assignee: AlexGhitza\n\nCC:  robertwb\n\nKeywords: complex agm\n\nThis is related to #6021 but also of independent interest.\n\nAs of 4.3 we use pari to compute the complex agm (i.e. a.agm(b) where a, b are complex).  Now the complex agm is multi-valued, and for the application to periods of elliptic curves it does matter which value is used (see upcoming paper by John Cremona and Thotsaphon Thongjunthug).  The pari-computed value is not this \"optimal\" value.  So I have implemented a native Sage version, replacing the existing code in sage/rings/complex_number.pyx.\n\nMuch to my surprise, the new code is in some cases 50 times faster than calling the pari library -- despite the fact that I have not yet cython-optimised the code!\n\n```\nsage: CC = ComplexField(200)\nsage: a = CC(-0.95,-0.65)                \nsage: b = CC(0.683,0.747)                \nsage: %timeit t = a.agm(b, algorithm=\"pari\")\n100 loops, best of 3: 7.04 ms per loop\nsage:  %timeit t = a.agm(b, algorithm=\"principal\")\n10000 loops, best of 3: 136 mus per loop\nsage:  %timeit t = a.agm(b, algorithm=\"optimal\")  \n10000 loops, best of 3: 146 mus per loop\n```\n\nHere \"mus\" means microseconds (this was run on a computer for which displaying greek \"mu\" causes an error).  \"pari\" is the old way calling the pari library function;  \"principal\" is a native implementation of essentially the same; \"optimal\" is the native implementation returning the so-called optimal value.\n\nSome details:  AGM(a,b) is the common limit of two sequences `a_n,b_n` under the iteration `(a,b) -> ((a+b)/2, sqrt(a*b))` and the issue is which square root to take.  The complete story is a wonderful but quite long one (which started with Gauss).  Essentially, the \"principal\" algorithm always takes the principal branch of the square root (with positive real part);  pari does the same after an initial step where AGM(a,b) is replaced by a*AGM(1/b/a);  the optimal sequence (which gives the largest limit) is the one for which the sign is always chosen so that sqrt(a*b) is closest to (a+b)/2.  Note that the optimal sequence is preserved under scaling, so gives AGM(z*a,z*b)=z*AGM(a,b), but this is not true of the principal sequence.\n\nI have a patch, but before posting it I'll ask for some help optimising it cythonically.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7719\n\n",
+    "created_at": "2009-12-17T10:29:09Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "enhancement"
+    ],
+    "title": "Improvements to complex AGM",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7719",
+    "user": "cremona"
+}
+```
 Assignee: AlexGhitza
 
 CC:  robertwb
@@ -36,24 +46,63 @@ Some details:  AGM(a,b) is the common limit of two sequences `a_n,b_n` under the
 
 I have a patch, but before posting it I'll ask for some help optimising it cythonically.
 
+Issue created by migration from https://trac.sagemath.org/ticket/7719
+
+
+
+
 
 ---
+
+archive/issue_comments_066291.json:
+```json
+{
+    "body": "Attachment\n\nApplies to 4.3.rc0.  Preliminary version",
+    "created_at": "2009-12-17T11:51:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66291",
+    "user": "cremona"
+}
+```
 
 Attachment
 
 Applies to 4.3.rc0.  Preliminary version
 
 
+
 ---
 
-Comment by cremona created at 2009-12-17 11:53:04
+archive/issue_comments_066292.json:
+```json
+{
+    "body": "The first patch is not yet ready for review (there are some doctest failures in from elliptic curve period computations which will be fixed later).  I have put it here so that I can ask for help making the code more efficient as it's in a cython file, if possible.",
+    "created_at": "2009-12-17T11:53:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66292",
+    "user": "cremona"
+}
+```
 
 The first patch is not yet ready for review (there are some doctest failures in from elliptic curve period computations which will be fixed later).  I have put it here so that I can ask for help making the code more efficient as it's in a cython file, if possible.
 
 
+
 ---
 
-Comment by was created at 2009-12-18 05:56:52
+archive/issue_comments_066293.json:
+```json
+{
+    "body": "Watch out.  The following is a much more accurate reflection of how fast PARI is at this computation (and even then there is still a tiny bit of overhead):\n\n```\nsage: timeit('pari(\"agm(-0.95-0.65*I,0.683+0.747*I)\")')\n625 loops, best of 3: 33.2 \u00b5s per loop\n```\n\nversus\n\n```\nsage: CC = ComplexField(200)\nsage: a = CC(-0.95,-0.65)                \nsage: b = CC(0.683,0.747) \nsage: z = pari(a)\nsage: timeit('z.agm(b)')\n625 loops, best of 3: 309 \u00b5s per loop\n```\n\n\nTo avoid overhead from caching:\n\n```\nsage: time z = pari(\"for(i=1,10^5,agm(-0.95-I*0.65,0.683+I*0.747))\")\nCPU times: user 2.49 s, sys: 0.00 s, total: 2.49 s\nWall time: 2.49 s\n```\n\nwhich is about 25 microseconds. \n\nConclusions:\n\n  (1) How did you come up with an algorithm=\"pari\" that takes 7ms?  That's really long.\n\n  (2) What we do in Sage should hopefully take at most 25 microseconds in just order to be competitive to PARI. \n\nHere's some more to worry about.  Magma evidently does not even have a *complex* AGM.  However, it has a real AGM, and it is an order of magnitude faster than PARI's:\n\n\n```\nage: time z = pari(\"for(i=1,10^5,agm(-0.95,0.683))\")\nCPU times: user 2.07 s, sys: 0.00 s, total: 2.07 s\nWall time: 2.07 s\nsage: magma.eval(\"time for n in [1..10^5] do z := AGM(0.95,0.683); end for;\")\n'Time: 0.170'\nsage: 2.07/0.170\n12.1764705882353\n```\n",
+    "created_at": "2009-12-18T05:56:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66293",
+    "user": "was"
+}
+```
 
 Watch out.  The following is a much more accurate reflection of how fast PARI is at this computation (and even then there is still a tiny bit of overhead):
 
@@ -105,9 +154,20 @@ sage: 2.07/0.170
 
 
 
+
 ---
 
-Comment by cremona created at 2009-12-18 09:13:29
+archive/issue_comments_066294.json:
+```json
+{
+    "body": "Replying to [comment:2 was]:\n> Watch out.  The following is a much more accurate reflection of how fast PARI is at this computation (and even then there is still a tiny bit of overhead):\n> {{{\n> sage: timeit('pari(\"agm(-0.95-0.65*I,0.683+0.747*I)\")')\n> 625 loops, best of 3: 33.2 \u00b5s per loop\n> }}}\n> versus\n> {{{\n> sage: CC = ComplexField(200)\n> sage: a = CC(-0.95,-0.65)                \n> sage: b = CC(0.683,0.747) \n> sage: z = pari(a)\n> sage: timeit('z.agm(b)')\n> 625 loops, best of 3: 309 \u00b5s per loop\n> }}}\n\nIf you instead do timeit('a.agm(b)') you'll see a vast slow-down.   So the difference in speed is mainly coming from conversion to pari.  That is still worth avoiding if we can write a fast native version.\n\n> \n> To avoid overhead from caching:\n> {{{\n> sage: time z = pari(\"for(i=1,10^5,agm(-0.95-I*0.65,0.683+I*0.747))\")\n> CPU times: user 2.49 s, sys: 0.00 s, total: 2.49 s\n> Wall time: 2.49 s\n> }}}\n> which is about 25 microseconds. \n> \n> Conclusions:\n> \n>   (1) How did you come up with an algorithm=\"pari\" that takes 7ms?  That's really long.\n\nI didn't come up with anything!  That code just calls the version of agm we have in Sage already which is two lines, calling pari after conversion.\n\n> \n>   (2) What we do in Sage should hopefully take at most 25 microseconds in just order to be competitive to PARI. \n\nAgreed.  But as I said on sage-devel, what's very important for me is to get the correct (\"optimal\") value of the function.  I hope that will not mean having two versions of the function, one very fast but producing a value which is useless for me (as with the existing pari function) and a slower one I actually use.\n\nBy the way, this is not likely to be a function which is called many times over and over.\n\n> \n> Here's some more to worry about.  Magma evidently does not even have a *complex* AGM.  However, it has a real AGM, and it is an order of magnitude faster than PARI's:\n> \n> {{{\n> age: time z = pari(\"for(i=1,10^5,agm(-0.95,0.683))\")\n> CPU times: user 2.07 s, sys: 0.00 s, total: 2.07 s\n> Wall time: 2.07 s\n> sage: magma.eval(\"time for n in [1..10^5] do z := AGM(0.95,0.683); end for;\")\n> 'Time: 0.170'\n> sage: 2.07/0.170\n> 12.1764705882353\n> }}}\n> \n\nGood point -- that's what we have to try to beat/match!",
+    "created_at": "2009-12-18T09:13:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66294",
+    "user": "cremona"
+}
+```
 
 Replying to [comment:2 was]:
 > Watch out.  The following is a much more accurate reflection of how fast PARI is at this computation (and even then there is still a tiny bit of overhead):
@@ -166,39 +226,96 @@ By the way, this is not likely to be a function which is called many times over 
 Good point -- that's what we have to try to beat/match!
 
 
+
 ---
 
-Comment by robertwb created at 2009-12-18 21:21:14
+archive/issue_comments_066295.json:
+```json
+{
+    "body": "I'm not so sure switching the default from principle to optimal is the best thing to do, at least not without further investigation/justification.",
+    "created_at": "2009-12-18T21:21:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66295",
+    "user": "robertwb"
+}
+```
 
 I'm not so sure switching the default from principle to optimal is the best thing to do, at least not without further investigation/justification.
 
 
+
 ---
 
-Comment by cremona created at 2009-12-18 21:31:29
+archive/issue_comments_066296.json:
+```json
+{
+    "body": "Replying to [comment:4 robertwb]:\n\nI don't mind, as long as I can use the optimal one.  There's nowhere in Sage where the other version is used (except places in alliptic_curves/period_lattice.py where the optimal version _should_ be used).",
+    "created_at": "2009-12-18T21:31:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66296",
+    "user": "cremona"
+}
+```
 
 Replying to [comment:4 robertwb]:
 
 I don't mind, as long as I can use the optimal one.  There's nowhere in Sage where the other version is used (except places in alliptic_curves/period_lattice.py where the optimal version _should_ be used).
 
 
+
 ---
 
-Comment by robertwb created at 2009-12-19 00:02:51
+archive/issue_comments_066297.json:
+```json
+{
+    "body": "That justification to switch is fine for me (I just wanted to raise the issue). \n\nOn another note, see #7739",
+    "created_at": "2009-12-19T00:02:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66297",
+    "user": "robertwb"
+}
+```
 
 That justification to switch is fine for me (I just wanted to raise the issue). 
 
 On another note, see #7739
 
 
+
 ---
+
+archive/issue_comments_066298.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-12-19T09:15:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66298",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by robertwb created at 2009-12-19 09:31:35
+archive/issue_comments_066299.json:
+```json
+{
+    "body": "The speed disparity between AGM over CC and over CDF was bugging me, so I decided to code the arbitrary-precision case directly against mpfr tonight. Made me wish we had mpc ;), or even better if sage/cython could unroll CC arithmetic like this already (though there are several other optimizations)\n\nIn any case, now we have\n\n\n```\nsage: a = CC(-0.95,-0.65)\nsage: b = CC(0.683,0.747)\nsage: %timeit a.agm(b, algorithm=\"optimal\")\n10000 loops, best of 3: 37.9 \u00b5s per loop\nsage: %timeit aa.agm(bb)\n10000 loops, best of 3: 35.2 \u00b5s per loop\n```\n\n\nThe difference may be due to pari's stack-based rather than heap-based memory management. Note, we're getting closer to optimal with this algorithm as good chunk of the time is due to just taking the square roots:\n\n\n```\nsage: %timeit [a.sqrt() for k in range(6)]\n10000 loops, best of 3: 25.9 \u00b5s per loop\n```\n",
+    "created_at": "2009-12-19T09:31:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66299",
+    "user": "robertwb"
+}
+```
 
 The speed disparity between AGM over CC and over CDF was bugging me, so I decided to code the arbitrary-precision case directly against mpfr tonight. Made me wish we had mpc ;), or even better if sage/cython could unroll CC arithmetic like this already (though there are several other optimizations)
 
@@ -225,23 +342,56 @@ sage: %timeit [a.sqrt() for k in range(6)]
 
 
 
+
 ---
 
-Comment by cremona created at 2009-12-19 09:56:47
+archive/issue_comments_066300.json:
+```json
+{
+    "body": "Fantastic piece of work!  I am so pleased that I asked for help doing this -- the results are even better than I hoped.   Later today I'll do a proper review.  Thanks, Robert.",
+    "created_at": "2009-12-19T09:56:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66300",
+    "user": "cremona"
+}
+```
 
 Fantastic piece of work!  I am so pleased that I asked for help doing this -- the results are even better than I hoped.   Later today I'll do a proper review.  Thanks, Robert.
 
 
+
 ---
 
-Comment by cremona created at 2009-12-19 12:52:52
+archive/issue_comments_066301.json:
+```json
+{
+    "body": "Changing status from new to needs_work.",
+    "created_at": "2009-12-19T12:52:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66301",
+    "user": "cremona"
+}
+```
 
 Changing status from new to needs_work.
 
 
+
 ---
 
-Comment by cremona created at 2009-12-19 12:52:52
+archive/issue_comments_066302.json:
+```json
+{
+    "body": "Robert: in line 1508 you set required_prec to self.prec -2.  In my code I used the precision-2 when testing relative error based on nothing more than trial and error (this way it converged while with the same precision it did not), since I am hopeless at working this kind of thing out properly.\n\nBefore merging this, I'll need to fix some doctests in the elliptic curve code -- but before that there's some more work to be done, since the new cmp_abs() does not work on my 32-bit machine (and my 64-bit machine has crashed...):\n\n```\nsage -t  \"devel/sage-cagm/sage/rings/complex_number.pyx\"    \n**********************************************************************\nFile \"/home/john/sage-4.3.rc0/devel/sage-cagm/sage/rings/complex_number.pyx\", line 2190:\n    sage: cmp_abs(CC(5), CC(1))\nExpected:\n    1\nGot:\n    -1\n**********************************************************************\nFile \"/home/john/sage-4.3.rc0/devel/sage-cagm/sage/rings/complex_number.pyx\", line 2192:\n    sage: cmp_abs(CC(5), CC(4))\nExpected:\n    1\nGot:\n    -1\n**********************************************************************\nFile \"/home/john/sage-4.3.rc0/devel/sage-cagm/sage/rings/complex_number.pyx\", line 2194:\n    sage: cmp_abs(CC(5), CC(5))\nExpected:\n    0\nGot:\n    -1\n**********************************************************************\nFile \"/home/john/sage-4.3.rc0/devel/sage-cagm/sage/rings/complex_number.pyx\", line 2200:\n    sage: cmp_abs(CC(-100), CC(1))\nExpected:\n    1\nGot:\n    -1\n**********************************************************************\nFile \"/home/john/sage-4.3.rc0/devel/sage-cagm/sage/rings/complex_number.pyx\", line 2202:\n    sage: cmp_abs(CC(-100), CC(100))\nExpected:\n    0\nGot:\n    -1\n**********************************************************************\nFile \"/home/john/sage-4.3.rc0/devel/sage-cagm/sage/rings/complex_number.pyx\", line 2206:\n    sage: cmp_abs(CC(1,1), CC(1))\nExpected:\n    1\nGot:\n    -1\n**********************************************************************\n1 items had failures:\n   6 of  19 in __main__.example_79\n***Test Failed*** 6 failures.\n```\n",
+    "created_at": "2009-12-19T12:52:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66302",
+    "user": "cremona"
+}
+```
 
 Robert: in line 1508 you set required_prec to self.prec -2.  In my code I used the precision-2 when testing relative error based on nothing more than trial and error (this way it converged while with the same precision it did not), since I am hopeless at working this kind of thing out properly.
 
@@ -299,41 +449,98 @@ Got:
 
 
 
+
 ---
 
-Comment by ylchapuy created at 2009-12-19 14:06:34
+archive/issue_comments_066303.json:
+```json
+{
+    "body": "The failures comes from line 2225 where b.__im is used instead of b.__re .\n\nThere is also a problem line 1513 where we should test for [ComplexNumber](ComplexNumber) instead of real.",
+    "created_at": "2009-12-19T14:06:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66303",
+    "user": "ylchapuy"
+}
+```
 
 The failures comes from line 2225 where b.__im is used instead of b.__re .
 
 There is also a problem line 1513 where we should test for [ComplexNumber](ComplexNumber) instead of real.
 
 
+
 ---
 
-Comment by cremona created at 2009-12-19 14:11:07
+archive/issue_comments_066304.json:
+```json
+{
+    "body": "Well spotted -- I will fix those two things in a 3rd patch, and at the same time fix the related doctest issues.  Later today.\n\nSounds like ylchapuy will be needed for a final review of this one -- thanks.",
+    "created_at": "2009-12-19T14:11:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66304",
+    "user": "cremona"
+}
+```
 
 Well spotted -- I will fix those two things in a 3rd patch, and at the same time fix the related doctest issues.  Later today.
 
 Sounds like ylchapuy will be needed for a final review of this one -- thanks.
 
 
+
 ---
+
+archive/issue_comments_066305.json:
+```json
+{
+    "body": "Attachment\n\nReplaces previous patch",
+    "created_at": "2009-12-19T18:20:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66305",
+    "user": "cremona"
+}
+```
 
 Attachment
 
 Replaces previous patch
 
 
+
 ---
 
-Comment by cremona created at 2009-12-19 18:56:04
+archive/issue_comments_066306.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2009-12-19T18:56:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66306",
+    "user": "cremona"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by cremona created at 2009-12-19 18:56:04
+archive/issue_comments_066307.json:
+```json
+{
+    "body": "This was harder than expected.  After applying the two changes suggested by ylchapuy I found that the code looped on some inputs (e.g. the new test, which arose from testing period_lattice.py).  This led to finding some other bugs in that cmp_abs function (in cases where a or b is zero only), and after fixing that I found that the max_exp function returns something like -2^31 when z=0 which then causes overflow (and the infinite loop) when the difference d is exactly 0 in the agm code (which does happen).  Hence the extra test for that condition (which seemed simpler than changing max_exp).\n\nSome minor doctest fixes in the elliptic_curve directory  were needed (all numerical fuzz).\n\nThe bugfix patch also contains Robert's original changes (sorry) and then my actual bugfixes, so only the first and third should be applied.\n\nAnyone else like to review this?  Otherwise I'll OK Robert's code (as adjusted here), but someone needs to check (I did check on 64-bit as well as 32-bit).",
+    "created_at": "2009-12-19T18:56:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66307",
+    "user": "cremona"
+}
+```
 
 This was harder than expected.  After applying the two changes suggested by ylchapuy I found that the code looped on some inputs (e.g. the new test, which arose from testing period_lattice.py).  This led to finding some other bugs in that cmp_abs function (in cases where a or b is zero only), and after fixing that I found that the max_exp function returns something like -2^31 when z=0 which then causes overflow (and the infinite loop) when the difference d is exactly 0 in the agm code (which does happen).  Hence the extra test for that condition (which seemed simpler than changing max_exp).
 
@@ -344,16 +551,38 @@ The bugfix patch also contains Robert's original changes (sorry) and then my act
 Anyone else like to review this?  Otherwise I'll OK Robert's code (as adjusted here), but someone needs to check (I did check on 64-bit as well as 32-bit).
 
 
+
 ---
 
-Comment by robertwb created at 2009-12-19 19:03:20
+archive/issue_comments_066308.json:
+```json
+{
+    "body": "Thanks. Sorry my code had so many issues--I wrote it pretty quickly and should have tested it more, but wanted to get what I had up. I'll take a look again.",
+    "created_at": "2009-12-19T19:03:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66308",
+    "user": "robertwb"
+}
+```
 
 Thanks. Sorry my code had so many issues--I wrote it pretty quickly and should have tested it more, but wanted to get what I had up. I'll take a look again.
 
 
+
 ---
 
-Comment by cremona created at 2009-12-19 21:01:37
+archive/issue_comments_066309.json:
+```json
+{
+    "body": "Replying to [comment:14 robertwb]:\n> Thanks. Sorry my code had so many issues--I wrote it pretty quickly and should have tested it more, but wanted to get what I had up. I'll take a look again. \n\nNo apology needed.  This way I read it a lot more carefully than I might have done if everything had worked!",
+    "created_at": "2009-12-19T21:01:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66309",
+    "user": "cremona"
+}
+```
 
 Replying to [comment:14 robertwb]:
 > Thanks. Sorry my code had so many issues--I wrote it pretty quickly and should have tested it more, but wanted to get what I had up. I'll take a look again. 
@@ -361,23 +590,58 @@ Replying to [comment:14 robertwb]:
 No apology needed.  This way I read it a lot more carefully than I might have done if everything had worked!
 
 
+
 ---
 
-Comment by robertwb created at 2009-12-19 21:40:21
+archive/issue_comments_066310.json:
+```json
+{
+    "body": "I found another case where it enters into an infinite loop. It's just messy when the required precision is so close to the rounding error, and we're doing many real operations here. Other than that, positive review to the changes you made. \n\nThe solution, it seems, is to require at least half the desired precision on the penultimate iteration. Patch coming up.",
+    "created_at": "2009-12-19T21:40:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66310",
+    "user": "robertwb"
+}
+```
 
 I found another case where it enters into an infinite loop. It's just messy when the required precision is so close to the rounding error, and we're doing many real operations here. Other than that, positive review to the changes you made. 
 
 The solution, it seems, is to require at least half the desired precision on the penultimate iteration. Patch coming up.
 
 
+
 ---
 
-Comment by robertwb created at 2009-12-19 22:41:41
+archive/issue_comments_066311.json:
+```json
+{
+    "body": "apply first and this only",
+    "created_at": "2009-12-19T22:41:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66311",
+    "user": "robertwb"
+}
+```
 
 apply first and this only
 
 
+
 ---
+
+archive/issue_comments_066312.json:
+```json
+{
+    "body": "Attachment\n\nAfter I coded up the previous suggestion, I felt the best way was to simply run the whole thing with a bit of extra precision. This way the last couple bits in the final iteration will actually be correct for that step, not just as correct as they could be due to rounding limitations. I also fixed a bug with a.agm(-a) and added some more tests. \n\nI folded it into the above patch, so apply trac_7719-agm.patch and 7719-bugfix2.patch. I'm positively reviewing cremona's changes--he needs to look at mine.",
+    "created_at": "2009-12-19T22:45:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66312",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
@@ -386,9 +650,20 @@ After I coded up the previous suggestion, I felt the best way was to simply run 
 I folded it into the above patch, so apply trac_7719-agm.patch and 7719-bugfix2.patch. I'm positively reviewing cremona's changes--he needs to look at mine.
 
 
+
 ---
 
-Comment by cremona created at 2009-12-19 23:20:27
+archive/issue_comments_066313.json:
+```json
+{
+    "body": "I'll look at it tomorrow as its too late now in th UK.\n\nAbout a.agm(-a):  it should be put into the specification that a.agm(b) requires a and b nonzero and also a not equal to plus or minus b.  We could either throw an error if any of those hold, or return zero.  (In applications these conditions will not hold anyway).\n\nIf you could add that to your next patch that would be helpful!  thanks",
+    "created_at": "2009-12-19T23:20:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66313",
+    "user": "cremona"
+}
+```
 
 I'll look at it tomorrow as its too late now in th UK.
 
@@ -397,30 +672,78 @@ About a.agm(-a):  it should be put into the specification that a.agm(b) requires
 If you could add that to your next patch that would be helpful!  thanks
 
 
+
 ---
 
-Comment by robertwb created at 2009-12-20 10:03:01
+archive/issue_comments_066314.json:
+```json
+{
+    "body": "apply first and this only",
+    "created_at": "2009-12-20T10:03:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66314",
+    "user": "robertwb"
+}
+```
 
 apply first and this only
 
 
+
 ---
+
+archive/issue_comments_066315.json:
+```json
+{
+    "body": "Attachment\n\nI think returning zero is the right thing to do for these degenerate cases--after all the AGM as a limit of the arithmetic and geometric means does exist. I've updated the patch.",
+    "created_at": "2009-12-20T10:05:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66315",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 I think returning zero is the right thing to do for these degenerate cases--after all the AGM as a limit of the arithmetic and geometric means does exist. I've updated the patch.
 
 
+
 ---
+
+archive/issue_comments_066316.json:
+```json
+{
+    "body": "Attachment\n\napply on top of bugfix3",
+    "created_at": "2009-12-20T11:37:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66316",
+    "user": "ylchapuy"
+}
+```
 
 Attachment
 
 apply on top of bugfix3
 
 
+
 ---
 
-Comment by ylchapuy created at 2009-12-20 11:39:58
+archive/issue_comments_066317.json:
+```json
+{
+    "body": "This seems good to me and I can't think of other degenerate cases.\n\nI added a last patch with a slight improvement, it avoids an add in the loop.\nIt really isn't critical but why not do it?",
+    "created_at": "2009-12-20T11:39:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66317",
+    "user": "ylchapuy"
+}
+```
 
 This seems good to me and I can't think of other degenerate cases.
 
@@ -428,9 +751,20 @@ I added a last patch with a slight improvement, it avoids an add in the loop.
 It really isn't critical but why not do it?
 
 
+
 ---
 
-Comment by cremona created at 2009-12-20 12:12:00
+archive/issue_comments_066318.json:
+```json
+{
+    "body": "Thanks -- ingeneous.\n\nAbout Robert's latest:  luckily he did what I intended which was to deal with the special cases (a,-a), (a,0) and (0,b) while leaving alone the case (a,a) where the limit is (of course) a.  I described that last case as degenerate above since in my application it would be, but as far as the AGM itself is concerned it is clear that the correct value when a=b is a!  (Note, though, that the 'principal' version will not return a when a=b and Re(a)<0.)\n\nSecondly, the better precision handling now means that I can revert the doctest changes for ell_rational_field and period_lattice.  Which probably means that I should not have changed them in the first place...\n\nI'll merge all our patches into a single one for the final review.",
+    "created_at": "2009-12-20T12:12:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66318",
+    "user": "cremona"
+}
+```
 
 Thanks -- ingeneous.
 
@@ -441,70 +775,171 @@ Secondly, the better precision handling now means that I can revert the doctest 
 I'll merge all our patches into a single one for the final review.
 
 
+
 ---
+
+archive/issue_comments_066319.json:
+```json
+{
+    "body": "Attachment\n\nReplaces all previous",
+    "created_at": "2009-12-20T12:42:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66319",
+    "user": "cremona"
+}
+```
 
 Attachment
 
 Replaces all previous
 
 
+
 ---
 
-Comment by cremona created at 2009-12-20 12:47:06
+archive/issue_comments_066320.json:
+```json
+{
+    "body": "The new patch trac_7719-cagm.patch replaces all previous, for ease of application -- and also makes clear that just one file is touched (rings/complex_number.pyx) though testers should also test schemes/elliptic_curves/{period_lattice,ell_number_field,ell_rational_field}.py since these all use the code.\n\nI made this using the \"fold\" system in mercurial queues, which worked fine, though the end result is that I'm the only user listed in the patch.  If anyone knows how to get back in the credit for Robert Miller, and also ylchapuy, please do since the last thing I want to do is take credit for Robert's fantastic work on this.",
+    "created_at": "2009-12-20T12:47:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66320",
+    "user": "cremona"
+}
+```
 
 The new patch trac_7719-cagm.patch replaces all previous, for ease of application -- and also makes clear that just one file is touched (rings/complex_number.pyx) though testers should also test schemes/elliptic_curves/{period_lattice,ell_number_field,ell_rational_field}.py since these all use the code.
 
 I made this using the "fold" system in mercurial queues, which worked fine, though the end result is that I'm the only user listed in the patch.  If anyone knows how to get back in the credit for Robert Miller, and also ylchapuy, please do since the last thing I want to do is take credit for Robert's fantastic work on this.
 
 
+
 ---
 
-Comment by robertwb created at 2010-01-07 10:32:02
+archive/issue_comments_066321.json:
+```json
+{
+    "body": "That's why I avoid the fold command for tickets with multiple authors... (BTW, I'm Bradshaw, not Miller.)",
+    "created_at": "2010-01-07T10:32:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66321",
+    "user": "robertwb"
+}
+```
 
 That's why I avoid the fold command for tickets with multiple authors... (BTW, I'm Bradshaw, not Miller.)
 
 
+
 ---
 
-Comment by cremona created at 2010-01-07 10:41:03
+archive/issue_comments_066322.json:
+```json
+{
+    "body": "Replying to [comment:23 robertwb]:\n> That's why I avoid the fold command for tickets with multiple authors... (BTW, I'm Bradshaw, not Miller.)\nVery sorry -- I seem to have made things worse with my first apology!  I do know which of you is which, honest.",
+    "created_at": "2010-01-07T10:41:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66322",
+    "user": "cremona"
+}
+```
 
 Replying to [comment:23 robertwb]:
 > That's why I avoid the fold command for tickets with multiple authors... (BTW, I'm Bradshaw, not Miller.)
 Very sorry -- I seem to have made things worse with my first apology!  I do know which of you is which, honest.
 
 
+
 ---
 
-Comment by robertwb created at 2010-01-07 10:48:46
+archive/issue_comments_066323.json:
+```json
+{
+    "body": "Don't worry, it's not a big deal (I know you know us both).",
+    "created_at": "2010-01-07T10:48:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66323",
+    "user": "robertwb"
+}
+```
 
 Don't worry, it's not a big deal (I know you know us both).
 
 
+
 ---
 
-Comment by cremona created at 2010-01-21 16:24:42
+archive/issue_comments_066324.json:
+```json
+{
+    "body": "I only just noticed that this was not merged into 4.3.1!  A pity since the similar patch for RDF/CDF is in (#7739).\n\nCan a non-author please test again and (hopefully) give a positive review?",
+    "created_at": "2010-01-21T16:24:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66324",
+    "user": "cremona"
+}
+```
 
 I only just noticed that this was not merged into 4.3.1!  A pity since the similar patch for RDF/CDF is in (#7739).
 
 Can a non-author please test again and (hopefully) give a positive review?
 
 
+
 ---
 
-Comment by rishi created at 2010-01-21 19:02:37
+archive/issue_comments_066325.json:
+```json
+{
+    "body": "Works good. The algorithm is exactly the definition so it was easy to follow the code. And I found out (for my knowlege) that swapping is faster than mpfr_set if you do not care about the other value.",
+    "created_at": "2010-01-21T19:02:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66325",
+    "user": "rishi"
+}
+```
 
 Works good. The algorithm is exactly the definition so it was easy to follow the code. And I found out (for my knowlege) that swapping is faster than mpfr_set if you do not care about the other value.
 
 
+
 ---
 
-Comment by rishi created at 2010-01-21 19:02:37
+archive/issue_comments_066326.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-01-21T19:02:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66326",
+    "user": "rishi"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mvngu created at 2010-01-22 20:15:55
+archive/issue_comments_066327.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-22T20:15:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7719",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7719#issuecomment-66327",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 6313: optional doctest failure -- caused by maxima --> pynac switch ?
 
-Issue created by migration from https://trac.sagemath.org/ticket/6313
-
-Original creator: was
-
-Original creation time: 2009-06-16 14:42:04
-
+archive/issues_006313.json:
+```json
+{
+    "body": "Assignee: tbd\n\n\n```\nsage -t -long --optional devel/sage/sage/symbolic/expression.pyx\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/symbolic/expression.pyx\", line 482:\n    sage: magma(f)                         # optional - magma\nExpected:\n    sin(cos(x^2) + log(x))\nGot:\n    sin(log(x) + cos(x^2))\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/symbolic/expression.pyx\", line 2803:\n    sage: maple.eval('subs(x^2 + y^2 = t, cos(x) + sin(y) + x^2 + y^2 + t)')          # optional requires maple\nExpected:\n    'cos(x)+sin(y)+x^2+y^2+t'\nGot:\n    'read \"/scratch/wstein/sage//temp/sage.math.washington.edu/560//interface//'\n**********************************************************************\n2 items had failures:\n   1 of   7 in __main__.example_14\n   1 of  18 in __main__.example_67\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /home/wstein/build/sage-4.0.2.alpha3/tmp/.doctest_expression.py\n\t [26.8 s]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6313\n\n",
+    "created_at": "2009-06-16T14:42:04Z",
+    "labels": [
+        "packages: optional",
+        "major",
+        "bug"
+    ],
+    "title": "optional doctest failure -- caused by maxima --> pynac switch ?",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6313",
+    "user": "was"
+}
+```
 Assignee: tbd
 
 
@@ -35,37 +45,96 @@ For whitespace errors, see the file /home/wstein/build/sage-4.0.2.alpha3/tmp/.do
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6313
+
+
+
+
 
 ---
 
-Comment by mkoeppe created at 2022-08-06 19:56:06
+archive/issue_comments_050395.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2022-08-06T19:56:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6313",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6313#issuecomment-50395",
+    "user": "mkoeppe"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mkoeppe created at 2022-08-06 19:56:06
+archive/issue_comments_050396.json:
+```json
+{
+    "body": "outdated, should close",
+    "created_at": "2022-08-06T19:56:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6313",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6313#issuecomment-50396",
+    "user": "mkoeppe"
+}
+```
 
 outdated, should close
 
 
+
 ---
 
-Comment by @DaveWitteMorris created at 2022-08-09 05:51:26
+archive/issue_comments_050397.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2022-08-09T05:51:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6313",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6313#issuecomment-50397",
+    "user": "@DaveWitteMorris"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by @DaveWitteMorris created at 2022-08-09 05:51:26
+archive/issue_comments_050398.json:
+```json
+{
+    "body": "I agree.",
+    "created_at": "2022-08-09T05:51:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6313",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6313#issuecomment-50398",
+    "user": "@DaveWitteMorris"
+}
+```
 
 I agree.
 
 
+
 ---
 
-Comment by mkoeppe created at 2022-09-01 02:30:35
+archive/issue_comments_050399.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2022-09-01T02:30:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6313",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6313#issuecomment-50399",
+    "user": "mkoeppe"
+}
+```
 
 Resolution: invalid

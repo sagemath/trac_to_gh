@@ -1,48 +1,119 @@
 # Issue 7919: Doctest in sage/misc/test_class_pickling.py doesn't test anything
 
-Issue created by migration from https://trac.sagemath.org/ticket/7919
-
-Original creator: craigcitro
-
-Original creation time: 2010-01-13 09:40:22
-
+archive/issues_007919.json:
+```json
+{
+    "body": "Assignee: nthiery\n\nCC:  nthiery\n\nThere's a doctest in `sage/misc/test_class_pickling.py` that doesn't actually test anything. I was a reviewer for this patch, which means it's my bad for letting it through. Of course, this code gets tested anyway, so it's not so serious, but we should fix it anyway. Patch attached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7919\n\n",
+    "created_at": "2010-01-13T09:40:22Z",
+    "labels": [
+        "categories",
+        "major",
+        "bug"
+    ],
+    "title": "Doctest in sage/misc/test_class_pickling.py doesn't test anything",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7919",
+    "user": "craigcitro"
+}
+```
 Assignee: nthiery
 
 CC:  nthiery
 
 There's a doctest in `sage/misc/test_class_pickling.py` that doesn't actually test anything. I was a reviewer for this patch, which means it's my bad for letting it through. Of course, this code gets tested anyway, so it's not so serious, but we should fix it anyway. Patch attached.
 
+Issue created by migration from https://trac.sagemath.org/ticket/7919
+
+
+
+
 
 ---
 
-Comment by craigcitro created at 2010-01-13 09:43:37
+archive/issue_comments_068902.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-01-13T09:43:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7919",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7919#issuecomment-68902",
+    "user": "craigcitro"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_068903.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-01-13T09:43:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7919",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7919#issuecomment-68903",
+    "user": "craigcitro"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by nthiery created at 2010-01-13 11:44:51
+archive/issue_comments_068904.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-01-13T11:44:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7919",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7919#issuecomment-68904",
+    "user": "nthiery"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by nthiery created at 2010-01-13 11:44:51
+archive/issue_comments_068905.json:
+```json
+{
+    "body": "Good catch. That actually was a relic from a former (failed) attempt at getting c1 and c2 to be garbage collected by putting them out of scope, and see if this had any influence.\n\nReplacing it by an equality test is sure better. Thanks!",
+    "created_at": "2010-01-13T11:44:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7919",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7919#issuecomment-68905",
+    "user": "nthiery"
+}
+```
 
 Good catch. That actually was a relic from a former (failed) attempt at getting c1 and c2 to be garbage collected by putting them out of scope, and see if this had any influence.
 
 Replacing it by an equality test is sure better. Thanks!
 
 
+
 ---
 
-Comment by rlm created at 2010-01-14 06:52:38
+archive/issue_comments_068906.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-14T06:52:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7919",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7919#issuecomment-68906",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed

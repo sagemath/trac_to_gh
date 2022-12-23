@@ -1,11 +1,21 @@
 # Issue 6933: readline-5.2.p7 builds as 32-bit on Solaris even if SAGE64=yes
 
-Issue created by migration from https://trac.sagemath.org/ticket/6933
-
-Original creator: drkirkby
-
-Original creation time: 2009-09-15 09:27:56
-
+archive/issues_006933.json:
+```json
+{
+    "body": "Assignee: tbd\n\nThe title pretty much says it all. The spkg-install is ignoring SAGE64 unless the OS is Darwin (OS X). \n\nit currently has:\n\n\n```\n\nif [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then\n   echo \"Building 64 bit OSX version of Sage\"\n   CFLAGS=\"-O2 -g -m64 \" && export CFLAGS\n   LDFLAGS=\"-m64\"\nfi\n\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6933\n\n",
+    "created_at": "2009-09-15T09:27:56Z",
+    "labels": [
+        "porting: Solaris",
+        "major",
+        "bug"
+    ],
+    "title": "readline-5.2.p7 builds as 32-bit on Solaris even if SAGE64=yes",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6933",
+    "user": "drkirkby"
+}
+```
 Assignee: tbd
 
 The title pretty much says it all. The spkg-install is ignoring SAGE64 unless the OS is Darwin (OS X). 
@@ -25,16 +35,42 @@ fi
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6933
+
+
+
+
 
 ---
 
-Comment by mvngu created at 2009-09-17 22:13:32
+archive/issue_comments_057291.json:
+```json
+{
+    "body": "Fixed by #6945.",
+    "created_at": "2009-09-17T22:13:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6933",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6933#issuecomment-57291",
+    "user": "mvngu"
+}
+```
 
 Fixed by #6945.
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-17 22:13:32
+archive/issue_comments_057292.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2009-09-17T22:13:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6933",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6933#issuecomment-57292",
+    "user": "mvngu"
+}
+```
 
 Resolution: duplicate

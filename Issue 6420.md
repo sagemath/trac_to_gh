@@ -1,11 +1,21 @@
 # Issue 6420: Maxima integration error with 1/x^3
 
-Issue created by migration from https://trac.sagemath.org/ticket/6420
-
-Original creator: mora
-
-Original creation time: 2009-06-26 07:33:08
-
+archive/issues_006420.json:
+```json
+{
+    "body": "Assignee: mhansen\n\nKeywords: maxima integral\n\n\n```\nsage: integrate(1/x^3,x,1,infinity)\nValueError: Integral is divergent.\n```\n\n\nBut it's NOT!\n\nThe problem comes from Maxima. I could check four versions:\n\n\n```\nMaxima 5.13.0: it's ok\nMaxima 5.16.3: it gives wrong result, Sage 4.0.2 uses this\nMaxima 5.17.1: it gives wrong result\nMaxima 5.18.1: it's ok\n```\n\n\nAn example for wrong result:\n\n```\npetya@desktop:~/download/sage/sage-4.0.2-linux-Ubuntu_9.04-i686-Linux/local/bin$ ./maxima\nMaxima 5.16.3 http://maxima.sourceforge.net\nUsing Lisp ECL 9.4.1\nDistributed under the GNU Public License. See the file COPYING.\nDedicated to the memory of William Schelter.\nThe function bug_report() provides bug reporting information.\n(%i1) integrate(1/x^3,x,1,inf);\n\nIntegral is divergent\n -- an error.  To debug this try debugmode(true);\n```\n\n\nWe would like to teach undergradute students with Sage, and this bug is quite annoying. It would be helpful, if someone could update Maxima in Sage.\n\n\n Thanks,\n  Peter\n\nIssue created by migration from https://trac.sagemath.org/ticket/6420\n\n",
+    "created_at": "2009-06-26T07:33:08Z",
+    "labels": [
+        "interfaces",
+        "major",
+        "bug"
+    ],
+    "title": "Maxima integration error with 1/x^3",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6420",
+    "user": "mora"
+}
+```
 Assignee: mhansen
 
 Keywords: maxima integral
@@ -52,24 +62,61 @@ We would like to teach undergradute students with Sage, and this bug is quite an
  Thanks,
   Peter
 
+Issue created by migration from https://trac.sagemath.org/ticket/6420
+
+
+
+
 
 ---
 
-Comment by AlexGhitza created at 2009-08-24 09:31:46
+archive/issue_comments_051546.json:
+```json
+{
+    "body": "Changing assignee from mhansen to AlexGhitza.",
+    "created_at": "2009-08-24T09:31:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6420#issuecomment-51546",
+    "user": "AlexGhitza"
+}
+```
 
 Changing assignee from mhansen to AlexGhitza.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-08-24 09:31:46
+archive/issue_comments_051547.json:
+```json
+{
+    "body": "This is fixed by the spkg and patch at #6699.  I will put up a patch with a doctest here when #6699 gets merged.",
+    "created_at": "2009-08-24T09:31:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6420#issuecomment-51547",
+    "user": "AlexGhitza"
+}
+```
 
 This is fixed by the spkg and patch at #6699.  I will put up a patch with a doctest here when #6699 gets merged.
 
 
+
 ---
 
-Comment by john_perry created at 2009-09-10 01:27:35
+archive/issue_comments_051548.json:
+```json
+{
+    "body": "A temporary workaround is to use sympy:\n\n```\nsage: integrate(1/x**3,x,1,infinity,algorithm=\"sympy\")\n1/2\nsage: integrate(1/x**10,x,1,infinity,algorithm=\"sympy\")\n1/9\n```\n",
+    "created_at": "2009-09-10T01:27:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6420#issuecomment-51548",
+    "user": "john_perry"
+}
+```
 
 A temporary workaround is to use sympy:
 
@@ -82,14 +129,38 @@ sage: integrate(1/x**10,x,1,infinity,algorithm="sympy")
 
 
 
+
 ---
 
-Comment by kcrisman created at 2009-09-29 14:50:27
+archive/issue_comments_051549.json:
+```json
+{
+    "body": "Patch is now up.",
+    "created_at": "2009-09-29T14:50:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6420#issuecomment-51549",
+    "user": "kcrisman"
+}
+```
 
 Patch is now up.
 
 
+
 ---
+
+archive/issue_comments_051550.json:
+```json
+{
+    "body": "Attachment\n\nI updated the patch to remove some excess blank lines and to remove the \".. note::\" which didn't make sense.  Otherwise, your change is good by me.\n\nkcrisman, could you okay these changes and mark it as a positive review?",
+    "created_at": "2009-10-05T04:57:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6420#issuecomment-51550",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
@@ -98,17 +169,39 @@ I updated the patch to remove some excess blank lines and to remove the ".. note
 kcrisman, could you okay these changes and mark it as a positive review?
 
 
+
 ---
 
-Comment by kcrisman created at 2009-10-05 12:58:05
+archive/issue_comments_051551.json:
+```json
+{
+    "body": "Yup, those are fine.  I should have noticed that, actually, but was just fixing on the item in the ticket.  Strange that the comment was even still in there.\n\nIncidentally, I'm going to post on sage-devel about when to use ::, because just recently I remember a thread where it sounded like some doctests didn't happen if you didn't use it on a separate line (I encountered one recently in an __init__ method), so it would be good to have that on record and easily searchable.",
+    "created_at": "2009-10-05T12:58:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6420#issuecomment-51551",
+    "user": "kcrisman"
+}
+```
 
 Yup, those are fine.  I should have noticed that, actually, but was just fixing on the item in the ticket.  Strange that the comment was even still in there.
 
 Incidentally, I'm going to post on sage-devel about when to use ::, because just recently I remember a thread where it sounded like some doctests didn't happen if you didn't use it on a separate line (I encountered one recently in an __init__ method), so it would be good to have that on record and easily searchable.
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-15 07:07:14
+archive/issue_comments_051552.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-10-15T07:07:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6420",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6420#issuecomment-51552",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

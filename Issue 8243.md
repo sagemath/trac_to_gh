@@ -1,11 +1,21 @@
 # Issue 8243: Annoying warnings when building the HTML reference manual
 
-Issue created by migration from https://trac.sagemath.org/ticket/8243
-
-Original creator: mpatel
-
-Original creation time: 2010-02-11 21:43:21
-
+archive/issues_008243.json:
+```json
+{
+    "body": "Assignee: mvngu\n\nCC:  jhpalmieri mvngu\n\nLet's fix or suppress these, so that it's easier to identify new problems.\n\nSee the attachment.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8243\n\n",
+    "created_at": "2010-02-11T21:43:21Z",
+    "labels": [
+        "documentation",
+        "major",
+        "bug"
+    ],
+    "title": "Annoying warnings when building the HTML reference manual",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8243",
+    "user": "mpatel"
+}
+```
 Assignee: mvngu
 
 CC:  jhpalmieri mvngu
@@ -14,23 +24,60 @@ Let's fix or suppress these, so that it's easier to identify new problems.
 
 See the attachment.
 
+Issue created by migration from https://trac.sagemath.org/ticket/8243
+
+
+
+
 
 ---
 
-Comment by jhpalmieri created at 2010-02-11 22:41:17
+archive/issue_comments_072892.json:
+```json
+{
+    "body": "Is this a duplicate of #8244?",
+    "created_at": "2010-02-11T22:41:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8243",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8243#issuecomment-72892",
+    "user": "jhpalmieri"
+}
+```
 
 Is this a duplicate of #8244?
 
 
+
 ---
 
-Comment by mvngu created at 2010-02-12 03:44:44
+archive/issue_comments_072893.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2010-02-12T03:44:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8243",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8243#issuecomment-72893",
+    "user": "mvngu"
+}
+```
 
 Resolution: duplicate
 
 
+
 ---
 
-Comment by mvngu created at 2010-02-12 03:44:44
+archive/issue_comments_072894.json:
+```json
+{
+    "body": "Closing this ticket as a duplicate of #8244.",
+    "created_at": "2010-02-12T03:44:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8243",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8243#issuecomment-72894",
+    "user": "mvngu"
+}
+```
 
 Closing this ticket as a duplicate of #8244.

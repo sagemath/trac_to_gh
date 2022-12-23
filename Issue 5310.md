@@ -1,11 +1,21 @@
 # Issue 5310: addition to Sage for Msieve factoring program
 
-Issue created by migration from https://trac.sagemath.org/ticket/5310
-
-Original creator: jblakeslee
-
-Original creation time: 2009-02-19 04:25:19
-
+archive/issues_005310.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nCC:  zimmerma wstein boothby leif jpflori\n\nKeywords: msieve, factorization\n\nThis addition of Msieve will hopefully enhance Sage's Integer Factorization ability for all integers of a reasonable size, and provide the opportunity for users to utilize the Number Field Sieve.\n\nspkg located:  \n\nhttp://309codesign.com/code/\n\nAn explanation of Msieve from its documentation:\n\"There are plenty of algorithms for performing integer factorization. \nThe Msieve library implements most of them from scratch, and relies on\noptional external libraries for the rest of them. Trial division and\nPollard Rho is used on all inputs; if the result is less than 25 digits \nin size, tiny custom routines do the factoring. For larger numbers, the code\nswitches to the GMP-ECM library and runs the P-1, P+1 and ECM algorithms,\nexpending a user-configurable amount of effort to do so. If these do not \ncompletely factor the input number, the library switches to the heavy  \nartillery. Unless told otherwise, Msieve runs the self-initializing quadratic\nsieve algorithm, and if this doesn't factor the input number then you've\nfound a library problem. If you know what you're doing, Msieve also contains\na complete implementation of the number field sieve, that has helped complete\nsome of the largest public factorization efforts known.\"\nand\n\"To be as fast as possible. I claim (without proof) that for\n          completely factoring general inputs between 40 and 100 digits\n          in size, Msieve is faster than any other code implementing any\n          other algorithm.\"\n\nIssue created by migration from https://trac.sagemath.org/ticket/5310\n\n",
+    "created_at": "2009-02-19T04:25:19Z",
+    "labels": [
+        "interfaces",
+        "major",
+        "enhancement"
+    ],
+    "title": "addition to Sage for Msieve factoring program",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5310",
+    "user": "jblakeslee"
+}
+```
 Assignee: mabshoff
 
 CC:  zimmerma wstein boothby leif jpflori
@@ -38,15 +48,43 @@ and
           in size, Msieve is faster than any other code implementing any
           other algorithm."
 
+Issue created by migration from https://trac.sagemath.org/ticket/5310
+
+
+
+
 
 ---
+
+archive/issue_comments_040863.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-02-19T04:26:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5310",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40863",
+    "user": "jblakeslee"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2009-02-19 23:31:44
+archive/issue_comments_040864.json:
+```json
+{
+    "body": "I tried to build this on OS X Intel and immediately got this error, which suggests a bug in the spkg-install script itself.\n\n\n```\ngcc version 4.0.1 (Apple Inc. build 5465)\n****************************************************\n./spkg-install: line 5: [: missing `]'\n./spkg-install: line 5: i386: command not found\npick a target:\nx86       32-bit Intel/AMD systems (required if gcc used)\nx86_64    64-bit Intel/AMD systems (required if gcc used)\ngeneric   portable code\nalso add 'ECM=1' if GMP-ECM is available\nError building MSieve -- no file msieve was produced.\n\nreal\t0m0.084s\nuser\t0m0.011s\nsys\t0m0.022s\nsage: An error occurred while installing msieve-1.39\n```\n",
+    "created_at": "2009-02-19T23:31:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5310",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40864",
+    "user": "was"
+}
+```
 
 I tried to build this on OS X Intel and immediately got this error, which suggests a bug in the spkg-install script itself.
 
@@ -71,25 +109,58 @@ sage: An error occurred while installing msieve-1.39
 
 
 
+
 ---
 
-Comment by was created at 2009-02-19 23:34:04
+archive/issue_comments_040865.json:
+```json
+{
+    "body": "The above error also occurs on all linux systems too.",
+    "created_at": "2009-02-19T23:34:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5310",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40865",
+    "user": "was"
+}
+```
 
 The above error also occurs on all linux systems too.
 
 
+
 ---
 
-Comment by jblakeslee created at 2009-02-20 05:24:20
+archive/issue_comments_040866.json:
+```json
+{
+    "body": "I apologize for that.  Please try once again.  I have place the updated spkg in the same location.\n\nhttp://309codesign.com/code/msieve-1.39.spkg",
+    "created_at": "2009-02-20T05:24:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5310",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40866",
+    "user": "jblakeslee"
+}
+```
 
 I apologize for that.  Please try once again.  I have place the updated spkg in the same location.
 
 http://309codesign.com/code/msieve-1.39.spkg
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-20 08:01:04
+archive/issue_comments_040867.json:
+```json
+{
+    "body": "This is too late for Sage 3.3, so bumped to 3.4.1.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-20T08:01:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5310",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40867",
+    "user": "mabshoff"
+}
+```
 
 This is too late for Sage 3.3, so bumped to 3.4.1.
 
@@ -98,9 +169,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-20 09:49:37
+archive/issue_comments_040868.json:
+```json
+{
+    "body": "For mpQS vs. msieve Bill Hart has some numbers: \n\n```\nAnything over about 75 digits will be much slower on mpQS than on \nmsieve, due to the fact that the latter implements the double large \nprime variant and I don't. But the time for the second factorization \nis 15min 35s in mpQS. \n\nHere are some other times: \n\nmsieve mpQS \n\n2891670903938774131753: \n0.010s 0.000s \n\n7223934149780053552120237: \n0.020s 0.020s \n\n10890325463531930685071186191: \n0.070s 0.020s \n\n22746696815551279204773065179537: \n0.100s 0.040s \n\n34714945933810757311137622885134169: \n0.110s 0.050s \n\n10173256651176584336392947473501127227: \n0.130s 0.080s \n\n13018279488865181129955874562185134688337: \n0.200s 0.090s \n\n22301677236991560444759885102875349454660651: \n0.230s 0.210s \n\n8941543217242472708029937221739551760158967009: \n0.340s 0.280s \n\n6399059753136044767573853384689913264328520902553: \n0.570s 1.740s \n\n25506563753254047681462924229892337031031187330409537: \n1.050s 1.250s \n\n37987772559424160043450717911696894399547208398069213931: \n1.930s 2.520s \n\nSo for smaller numbers, mpQS is faster than msieve. I just haven't \nworked on speeding it up for numbers of 75 digits and more. \n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-20T09:49:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5310",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40868",
+    "user": "mabshoff"
+}
+```
 
 For mpQS vs. msieve Bill Hart has some numbers: 
 
@@ -160,9 +242,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by was created at 2009-04-12 06:37:54
+archive/issue_comments_040869.json:
+```json
+{
+    "body": "I tried on sage.math (our x86_64 server with ubuntu 8.04.LTS):\n\n```\n****************************************************\nHost system\nuname -a:\nLinux sage.math.washington.edu 2.6.24-23-server #1 SMP Mon Jan 26 01:36:05 UTC 2009 x86_64 GNU/Linux\n****************************************************\n****************************************************\nGCC Version\ngcc -v\nUsing built-in specs.\nTarget: x86_64-linux-gnu\nConfigured with: ../src/configure -v --enable-languages=c,c++,fortran,objc,obj-c++,treelang --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.2 --program-suffix=-4.2 --enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --enable-mpfr --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu\nThread model: posix\ngcc version 4.2.4 (Ubuntu 4.2.4-1ubuntu3)\n****************************************************\ngcc -D_FILE_OFFSET_BITS=64 -O3 -fomit-frame-pointer -march=athlon-xp -DNDEBUG  -Wall -W -Wconversion -Iinclude -Ignfs/poly -c -o common/lanczos/lanczos.o common/lanczos/lanczos.c\ncommon/lanczos/lanczos.c:1: error: CPU you selected does not support x86-64 instruction set\ncommon/lanczos/lanczos.c:1: error: CPU you selected does not support x86-64 instruction set\nmake: *** [common/lanczos/lanczos.o] Error 1\nError building M-Sieve\n\nreal    0m0.040s\nuser    0m0.010s\nsys     0m0.010s\nsage: An error occurred while installing msieve-1.39\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /scratch/wstein/build/sage-3.4.1.rc2-ref2/install.log.  Describe your computer, operating system, etc.\nIf you want to try to fix the problem, yourself *don't* just cd to\n/scratch/wstein/build/sage-3.4.1.rc2-ref2/spkg/build/msieve-1.39 and type 'make'.\nInstead type \"/scratch/wstein/build/sage-3.4.1.rc2-ref2/sage -sh\"\nin order to set all environment variables correctly, then cd to\n/scratch/wstein/build/sage-3.4.1.rc2-ref2/spkg/build/msieve-1.39\n(When you are done debugging, you can type \"exit\" to leave the\nsubshell.)\nwstein@sage:~/build/sage-3.4.1.rc2-ref2$ \n```\n\n\n\nI also tried building on 32-bit OS X 10.5 (my laptop):\n\n```\nWall -W -Wconversion -Iinclude -Ignfs/poly -c -o common/ap.o common/ap.c\ncommon/ap.c: In function \u2018ap_mul\u2019:\ncommon/ap.c:339: error: can't find a register in class \u2018GENERAL_REGS\u2019 while reloading \u2018asm\u2019\ncommon/ap.c:339: error: can't find a register in class \u2018GENERAL_REGS\u2019 while reloading \u2018asm\u2019\ncommon/ap.c:339: error: can't find a register in class \u2018GENERAL_REGS\u2019 while reloading \u2018asm\u2019\ncommon/ap.c:339: error: can't find a register in class \u2018GENERAL_REGS\u2019 while reloading \u2018asm\u2019\nmake: *** [common/ap.o] Error 1\nError building M-Sieve\n\nreal\t0m5.432s\nuser\t0m1.786s\nsys\t0m0.348s\nsage: An error occurred while installing msieve-1.39\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /Users/wstein/build/sage-3.4.1.rc2/install.log.  Describe your computer, operating system, etc.\nIf you want to try to fix the problem, yourself *don't* just cd to\n/Users/wstein/build/sage-3.4.1.rc2/spkg/build/msieve-1.39 and type 'make'.\nInstead type \"/Users/wstein/build/sage-3.4.1.rc2/sage -sh\"\nin order to set all environment variables correctly, then cd to\n/Users/wstein/build/sage-3.4.1.rc2/spkg/build/msieve-1.39\n(When you are done debugging, you can type \"exit\" to leave the\nsubshell.)\nteragon:~ wstein$ \n```\n\n\nSo I can't build this on either of my main devel machines, so it's hard to go anywhere with.",
+    "created_at": "2009-04-12T06:37:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5310",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40869",
+    "user": "was"
+}
+```
 
 I tried on sage.math (our x86_64 server with ubuntu 8.04.LTS):
 
@@ -239,18 +332,40 @@ teragon:~ wstein$
 So I can't build this on either of my main devel machines, so it's hard to go anywhere with.
 
 
+
 ---
 
-Comment by zimmerma created at 2009-04-17 12:51:16
+archive/issue_comments_040870.json:
+```json
+{
+    "body": "> I tried on sage.math (our x86_64 server with ubuntu 8.04.LTS): [...]\n\nWilliam, you need to disable manually the default -march=athlon-xp in Makefile.",
+    "created_at": "2009-04-17T12:51:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5310",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40870",
+    "user": "zimmerma"
+}
+```
 
 > I tried on sage.math (our x86_64 server with ubuntu 8.04.LTS): [...]
 
 William, you need to disable manually the default -march=athlon-xp in Makefile.
 
 
+
 ---
 
-Comment by jblakeslee created at 2009-04-17 16:03:38
+archive/issue_comments_040871.json:
+```json
+{
+    "body": "Replying to [comment:9 zimmerma]:\n> > I tried on sage.math (our x86_64 server with ubuntu 8.04.LTS): [...]\n> \n> William, you need to disable manually the default -march=athlon-xp in Makefile.\n\nThat change has been added to the .spkg and should now work on x86_64 without having to mess with the Makefile.  The new .spkg hopefully works for intel-based Macs, too, but I haven't had a chance to try it yet. \nThanks.",
+    "created_at": "2009-04-17T16:03:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5310",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40871",
+    "user": "jblakeslee"
+}
+```
 
 Replying to [comment:9 zimmerma]:
 > > I tried on sage.math (our x86_64 server with ubuntu 8.04.LTS): [...]
@@ -261,9 +376,20 @@ That change has been added to the .spkg and should now work on x86_64 without ha
 Thanks.
 
 
+
 ---
 
-Comment by jblakeslee created at 2009-04-20 05:56:30
+archive/issue_comments_040872.json:
+```json
+{
+    "body": "Replying to [comment:10 jblakeslee]:\n> Replying to [comment:9 zimmerma]:\n> > > I tried on sage.math (our x86_64 server with ubuntu 8.04.LTS): [...]\n> > \n> > William, you need to disable manually the default -march=athlon-xp in Makefile.\n> \n> That change has been added to the .spkg and should now work on x86_64 without having to mess with the Makefile.  The new .spkg hopefully works for intel-based Macs, too, but I haven't had a chance to try it yet. \n> Thanks.\n\nThat version didn't work on the Intel Mac I tested, so updated again, and now does compile for me.",
+    "created_at": "2009-04-20T05:56:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5310",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40872",
+    "user": "jblakeslee"
+}
+```
 
 Replying to [comment:10 jblakeslee]:
 > Replying to [comment:9 zimmerma]:
@@ -277,16 +403,38 @@ Replying to [comment:10 jblakeslee]:
 That version didn't work on the Intel Mac I tested, so updated again, and now does compile for me.
 
 
+
 ---
 
-Comment by boothby created at 2009-10-01 05:10:02
+archive/issue_comments_040873.json:
+```json
+{
+    "body": "jblakeslee, the url doesn't appear to be correct.  The file msieve-1.39.spkg appears to be missing, and msieve-1.38.spkg in that directory is broken.  Please upload again.",
+    "created_at": "2009-10-01T05:10:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5310",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40873",
+    "user": "boothby"
+}
+```
 
 jblakeslee, the url doesn't appear to be correct.  The file msieve-1.39.spkg appears to be missing, and msieve-1.38.spkg in that directory is broken.  Please upload again.
 
 
+
 ---
 
-Comment by jblakeslee created at 2009-10-03 04:36:11
+archive/issue_comments_040874.json:
+```json
+{
+    "body": "Replying to [comment:12 boothby]:\n> jblakeslee, the url doesn't appear to be correct.  The file msieve-1.39.spkg appears to be missing, and msieve-1.38.spkg in that directory is broken.  Please upload again.\n\nPlease use this url:\nhttp://309codesign.com/code/msieve-1.38.spkg\n\nPlease try again.  It is working for me with the following command:\nsage -i msieve-1.38.spkg\n\nIf it fails again can you give os type and error info.  Thank you.",
+    "created_at": "2009-10-03T04:36:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5310",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40874",
+    "user": "jblakeslee"
+}
+```
 
 Replying to [comment:12 boothby]:
 > jblakeslee, the url doesn't appear to be correct.  The file msieve-1.39.spkg appears to be missing, and msieve-1.38.spkg in that directory is broken.  Please upload again.
@@ -300,7 +448,20 @@ sage -i msieve-1.38.spkg
 If it fails again can you give os type and error info.  Thank you.
 
 
+
 ---
+
+archive/issue_comments_040875.json:
+```json
+{
+    "body": "Attachment\n\nI attached a patch for the msieve interface updated to version 1.47.\n\nSomeone has to check whether msieve can be compiled on every relevant system and if necessary update the spkg-file.\nIt works on x86_64.",
+    "created_at": "2010-10-27T14:16:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5310",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40875",
+    "user": "aapitzsch"
+}
+```
 
 Attachment
 
@@ -310,40 +471,110 @@ Someone has to check whether msieve can be compiled on every relevant system and
 It works on x86_64.
 
 
+
 ---
 
-Comment by aapitzsch created at 2010-10-28 14:52:38
+archive/issue_comments_040876.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-10-28T14:52:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5310",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40876",
+    "user": "aapitzsch"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by leif created at 2010-10-28 21:56:46
+archive/issue_comments_040877.json:
+```json
+{
+    "body": "Remove assignee mabshoff.",
+    "created_at": "2010-10-28T21:56:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5310",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40877",
+    "user": "leif"
+}
+```
 
 Remove assignee mabshoff.
 
 
+
 ---
+
+archive/issue_comments_040878.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-11-03T08:38:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5310",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40878",
+    "user": "aapitzsch"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_040879.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2011-01-17T17:13:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5310",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40879",
+    "user": "aapitzsch"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by drkirkby created at 2011-04-27 20:57:50
+archive/issue_comments_040880.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2011-04-27T20:57:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5310",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40880",
+    "user": "drkirkby"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by drkirkby created at 2011-04-27 20:57:50
+archive/issue_comments_040881.json:
+```json
+{
+    "body": "Replying to [comment:14 jblakeslee]:\n> Please use this url:\n> http://309codesign.com/code/msieve-1.38.spkg\n\nThat link, which you posted 19 months ago, is not valid\n\n\n```\ndrkirkby@hawk:~/sage-4.7.alpha5/spkg/standard$ wget http://309codesign.com/code/msieve-1.39.spkg\n--2011-04-27 21:55:45--  http://309codesign.com/code/msieve-1.39.spkg\nResolving 309codesign.com (309codesign.com)... 74.220.215.62\nConnecting to 309codesign.com (309codesign.com)|74.220.215.62|:80... connected.\nHTTP request sent, awaiting response... 404 Not Found\n2011-04-27 21:55:56 ERROR 404: Not Found.\n```\n",
+    "created_at": "2011-04-27T20:57:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5310",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40881",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:14 jblakeslee]:
 > Please use this url:
@@ -363,9 +594,20 @@ HTTP request sent, awaiting response... 404 Not Found
 
 
 
+
 ---
 
-Comment by jblakeslee created at 2011-05-03 02:48:02
+archive/issue_comments_040882.json:
+```json
+{
+    "body": "Replying to [comment:18 drkirkby]:\n> Replying to [comment:14 jblakeslee]:\n> > Please use this url:\n> > http://309codesign.com/code/msieve-1.38.spkg\n> \n> That link, which you posted 19 months ago, is not valid\n> \n\nPlease use the msieve-1.48.spkg and patch, that are added by aapitzsch, just before your post, since I have stopped updating my link.  I had good luck with his msieve-1.47.spkg.\nThank you.",
+    "created_at": "2011-05-03T02:48:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5310",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40882",
+    "user": "jblakeslee"
+}
+```
 
 Replying to [comment:18 drkirkby]:
 > Replying to [comment:14 jblakeslee]:
@@ -379,42 +621,110 @@ Please use the msieve-1.48.spkg and patch, that are added by aapitzsch, just bef
 Thank you.
 
 
+
 ---
 
-Comment by leif created at 2011-10-31 18:32:26
+archive/issue_comments_040883.json:
+```json
+{
+    "body": "Ping.",
+    "created_at": "2011-10-31T18:32:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5310",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40883",
+    "user": "leif"
+}
+```
 
 Ping.
 
 
+
 ---
 
-Comment by zimmerma created at 2011-11-01 09:33:43
+archive/issue_comments_040884.json:
+```json
+{
+    "body": "see also #6232",
+    "created_at": "2011-11-01T09:33:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5310",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40884",
+    "user": "zimmerma"
+}
+```
 
 see also #6232
 
 
+
 ---
+
+archive/issue_comments_040885.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2011-11-01T18:36:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5310",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40885",
+    "user": "aapitzsch"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by aapitzsch created at 2011-11-01 18:40:46
+archive/issue_comments_040886.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2011-11-01T18:40:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5310",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40886",
+    "user": "aapitzsch"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by aapitzsch created at 2011-11-01 18:40:46
+archive/issue_comments_040887.json:
+```json
+{
+    "body": "Here is an updated version of msieve.",
+    "created_at": "2011-11-01T18:40:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5310",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40887",
+    "user": "aapitzsch"
+}
+```
 
 Here is an updated version of msieve.
 
 
+
 ---
 
-Comment by leif created at 2011-11-01 19:27:52
+archive/issue_comments_040888.json:
+```json
+{
+    "body": "`EXAMPLE:` and `EXAMPLES:` should have a double-colon (`::`).\n\nThe indentation of the results in the first examples block looks strange; they should line up with the `sage:` prompt.\n\nHaven't tested, but one should make sure that all temporary files are created in or below `SAGE_TMP` (or `SAGE_TMPDIR`?) [at least] during doctesting, since they should also pass if the user doesn't have write access on the Sage installation tree.\n\n(An ordinary user should of course also be able to just *use* the code without permission issues.)",
+    "created_at": "2011-11-01T19:27:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5310",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40888",
+    "user": "leif"
+}
+```
 
 `EXAMPLE:` and `EXAMPLES:` should have a double-colon (`::`).
 
@@ -422,19 +732,41 @@ The indentation of the results in the first examples block looks strange; they s
 
 Haven't tested, but one should make sure that all temporary files are created in or below `SAGE_TMP` (or `SAGE_TMPDIR`?) [at least] during doctesting, since they should also pass if the user doesn't have write access on the Sage installation tree.
 
-(An ordinary user should of course also be able to just _use_ the code without permission issues.)
+(An ordinary user should of course also be able to just *use* the code without permission issues.)
+
 
 
 ---
 
-Comment by leif created at 2011-11-01 19:42:10
+archive/issue_comments_040889.json:
+```json
+{
+    "body": "P.S.: For inclusion into Sage, an spkg usually has to get an optional one first; then there should be a poll on sage-devel to make it a standard spkg.  The code should perhaps take care of that, i.e., not assume that `msieve` is installed, and print a meaningful error message (instructing the user how to install the spkg) in case it isn't.",
+    "created_at": "2011-11-01T19:42:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5310",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40889",
+    "user": "leif"
+}
+```
 
 P.S.: For inclusion into Sage, an spkg usually has to get an optional one first; then there should be a poll on sage-devel to make it a standard spkg.  The code should perhaps take care of that, i.e., not assume that `msieve` is installed, and print a meaningful error message (instructing the user how to install the spkg) in case it isn't.
 
 
+
 ---
 
-Comment by aapitzsch created at 2011-11-01 21:11:54
+archive/issue_comments_040890.json:
+```json
+{
+    "body": "Replying to [comment:23 leif]:\n> `EXAMPLE:` and `EXAMPLES:` should have a double-colon (`::`).\n> \n> The indentation of the results in the first examples block looks strange; they should line up with the `sage:` prompt.\n> \nFixed this.\n\n> Haven't tested, but one should make sure that all temporary files are created in or below `SAGE_TMP` (or `SAGE_TMPDIR`?) [at least] during doctesting, since they should also pass if the user doesn't have write access on the Sage installation tree.\n> \n> (An ordinary user should of course also be able to just *use* the code without permission issues.)\n\nMore or less I copied the TMPDIR part from qsieve.py , so this shouldn't be a problem.\n\nExamples are marked as optional now and in case msieve isn't installed there is warning.\n\nThere was already a discussion about adding msieve in 2009.\nSee http://groups.google.com/group/sage-devel/browse_thread/thread/91f1ecf4dca5511d/d68c74a19b741255",
+    "created_at": "2011-11-01T21:11:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5310",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40890",
+    "user": "aapitzsch"
+}
+```
 
 Replying to [comment:23 leif]:
 > `EXAMPLE:` and `EXAMPLES:` should have a double-colon (`::`).
@@ -445,7 +777,7 @@ Fixed this.
 
 > Haven't tested, but one should make sure that all temporary files are created in or below `SAGE_TMP` (or `SAGE_TMPDIR`?) [at least] during doctesting, since they should also pass if the user doesn't have write access on the Sage installation tree.
 > 
-> (An ordinary user should of course also be able to just _use_ the code without permission issues.)
+> (An ordinary user should of course also be able to just *use* the code without permission issues.)
 
 More or less I copied the TMPDIR part from qsieve.py , so this shouldn't be a problem.
 
@@ -455,18 +787,40 @@ There was already a discussion about adding msieve in 2009.
 See http://groups.google.com/group/sage-devel/browse_thread/thread/91f1ecf4dca5511d/d68c74a19b741255
 
 
+
 ---
 
-Comment by leif created at 2011-11-02 00:04:42
+archive/issue_comments_040891.json:
+```json
+{
+    "body": "The spkg certainly needs some work, which I'll do later.\n\nThe patch to the Sage library could be tweaked w.r.t. markup (e.g. identifiers and program names should be typeset monospaced, i.e. ```parameter```, ```True```, ```msieve``` etc.).  I'll *perhaps* make a reviewer patch as well.",
+    "created_at": "2011-11-02T00:04:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5310",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40891",
+    "user": "leif"
+}
+```
 
 The spkg certainly needs some work, which I'll do later.
 
-The patch to the Sage library could be tweaked w.r.t. markup (e.g. identifiers and program names should be typeset monospaced, i.e. ```parameter```, ```True```, ```msieve``` etc.).  I'll _perhaps_ make a reviewer patch as well.
+The patch to the Sage library could be tweaked w.r.t. markup (e.g. identifiers and program names should be typeset monospaced, i.e. ```parameter```, ```True```, ```msieve``` etc.).  I'll *perhaps* make a reviewer patch as well.
+
 
 
 ---
 
-Comment by leif created at 2011-11-02 00:18:17
+archive/issue_comments_040892.json:
+```json
+{
+    "body": "Replying to [comment:25 aapitzsch]:\n> [...] in case msieve isn't installed there is warning.\n\nHow about printing that message and raising `NotImplementedError` (or `RuntimeError`)?\n\nThat way other (higher-level) functions can call `msieve()` and catch these exceptions.\n\nWe could also put the \"warning\" into the message of the exception, such that the output isn't messed up by just trying to call `msieve()` (from other parts of Sage).\n\n\n\n\n*SAGE* should be *Sage* btw.\n\n\n\n\nThe `TMPDIR` environment variable must not be modified globally; if there's no other way to tell `msieve` where it should put temporary files, a modified environment has to be passed to `msieve`.",
+    "created_at": "2011-11-02T00:18:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5310",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40892",
+    "user": "leif"
+}
+```
 
 Replying to [comment:25 aapitzsch]:
 > [...] in case msieve isn't installed there is warning.
@@ -480,7 +834,7 @@ We could also put the "warning" into the message of the exception, such that the
 
 
 
-_SAGE_ should be _Sage_ btw.
+*SAGE* should be *Sage* btw.
 
 
 
@@ -488,7 +842,20 @@ _SAGE_ should be _Sage_ btw.
 The `TMPDIR` environment variable must not be modified globally; if there's no other way to tell `msieve` where it should put temporary files, a modified environment has to be passed to `msieve`.
 
 
+
 ---
+
+archive/issue_comments_040893.json:
+```json
+{
+    "body": "Attachment\n\nPatch updated.\n\nReplying to [comment:27 leif]:\n> Replying to [comment:25 aapitzsch]:\n> > [...] in case msieve isn't installed there is warning.\n> \n> How about printing that message and raising `NotImplementedError` (or `RuntimeError`)?\n> \nNow `NotImplementedError` is raised.\n> \n> *SAGE* should be *Sage* btw.\n> \nDone.\n> \n> The `TMPDIR` environment variable must not be modified globally; if there's no other way to tell `msieve` where it should put temporary files, a modified environment has to be passed to `msieve`.\n\nFixed.",
+    "created_at": "2011-11-12T15:40:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5310",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40893",
+    "user": "aapitzsch"
+}
+```
 
 Attachment
 
@@ -502,7 +869,7 @@ Replying to [comment:27 leif]:
 > 
 Now `NotImplementedError` is raised.
 > 
-> _SAGE_ should be _Sage_ btw.
+> *SAGE* should be *Sage* btw.
 > 
 Done.
 > 
@@ -511,9 +878,20 @@ Done.
 Fixed.
 
 
+
 ---
 
-Comment by zimmerma created at 2011-12-21 09:51:41
+archive/issue_comments_040894.json:
+```json
+{
+    "body": "I tried installing the spkg with Sage 4.7.2 on a 32-bit computer and it failed:\n\n```\nmacaron% ./sage -i msieve-1.49.p0.spkg\n...\n\nranlib libmsieve.a\ngcc -D_FILE_OFFSET_BITS=64 -O3 -fomit-frame-pointer -march=k8 -DNDEBUG -D_LARGEFILE64_SOURCE  -Wall -W -DMSIEVE_SVN_VERSION=\"\\\"exported\\\"\" -I. -Iinclude -Ignfs -Ignfs/poly -Ignfs/poly/stage1 -DHAVE_GMP_ECM \"-I/localdisk/tmp/sage-4.7.2/local/include\" demo.c -o msieve  \\\n                        libmsieve.a -lecm -lz -lgmp -lm -lpthread\nlibmsieve.a(sieve.qo): In function `do_sieving':\nsieve.c:(.text+0x1335): undefined reference to `qs_core_sieve_p3_64k'\nsieve.c:(.text+0x175b): undefined reference to `qs_core_sieve_p2_64k'\nsieve.c:(.text+0x2556): undefined reference to `qs_core_sieve_pm_32k'\nsieve.c:(.text+0x2603): undefined reference to `qs_core_sieve_k7_64k'\nsieve.c:(.text+0x266b): undefined reference to `qs_core_sieve_k7xp_64k'\ncollect2: ld returned 1 exit status\nmake: *** [x86_64] Error 1\nError building Msieve -- no file msieve was produced.\n\nreal    1m33.556s\nuser    0m29.657s\nsys     0m2.000s\nsage: An error occurred while installing msieve-1.49.p0\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /localdisk/tmp/sage-4.7.2/install.log.  Describe your computer, operating system, etc.\nIf you want to try to fix the problem yourself, *don't* just cd to\n/localdisk/tmp/sage-4.7.2/spkg/build/msieve-1.49.p0 and type 'make check' or whatever is appropriate.\nInstead, the following commands setup all environment variables\ncorrectly and load a subshell for you to debug the error:\n(cd '/localdisk/tmp/sage-4.7.2/spkg/build/msieve-1.49.p0' && '/localdisk/tmp/sage-4.7.2/sage' -sh)\nWhen you are done debugging, you can type \"exit\" to leave the\nsubshell.\nError: Failed to install package 'msieve-1.49.p0'.\n```\n\nThe processor is a Pentium 4. The system is Fedora 10.\n\nPaul Zimmermann",
+    "created_at": "2011-12-21T09:51:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5310",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40894",
+    "user": "zimmerma"
+}
+```
 
 I tried installing the spkg with Sage 4.7.2 on a 32-bit computer and it failed:
 
@@ -556,16 +934,38 @@ The processor is a Pentium 4. The system is Fedora 10.
 Paul Zimmermann
 
 
+
 ---
 
-Comment by zimmerma created at 2011-12-21 09:51:41
+archive/issue_comments_040895.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2011-12-21T09:51:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5310",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40895",
+    "user": "zimmerma"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by drkirkby created at 2012-01-03 23:29:29
+archive/issue_comments_040896.json:
+```json
+{
+    "body": "The fails on my OpenSolaris box, and I can see will fail on any sort of Solaris system. These lines:\n\n\n```\nif [ \"`uname -m`\" = \"SunOS\" ]; then\n    $MAKE generic ECM=1\nfi\n```\n\n\nmake no sense, as the -m option to 'uname' is defined by POSIX to return the hardware, not the operating system. See:\n\nhttp://pubs.opengroup.org/onlinepubs/009695399/utilities/uname.html\n\nSo it produces:\n\n\n```\ndrkirkby@hawk:~$ uname -m\ni86pc\n```\n\n\nand on a SPARC would produce something different, like sun4m, sun4u, sun4v and possibly something else for the newer processors. On my old SPARC\n\n\n```\n-bash-3.00$ uname -m\nsun4u\n```\n\n\n\nRather than invoke the external program 'uname', it is better to use the sage variable UNAME. The following is the most robust way of testing a variable, which will work for any shell, and pretty much any circumstances. \n\n\n```\nif [ \"x$UNAME\" = xSunOS ] ; then\n```\n\n\nThere's nothing to build a 64-bit version on Solaris - the SAGE64 variable is not used. \n\nI also got another failure:\n\n\n```\n****************************************************\npatching file Makefile\nError building Msieve -- no file msieve was produced.\n\nreal\t0m0.022s\nuser\t0m0.006s\nsys\t0m0.015s\nsage: An error occurred while installing msieve-1.49.p0\n```\n\n\nI suspect this is picking up the Solaris version of patch, not the GNU one which is part of Sage, though I've never seen this issue before. \n\nAlso, this seems a bit pointless\n\n\n```\n$CP msieve \"$SAGE_LOCAL\"/bin/\n```\n\n\nWe should just call 'cp' directly. Variables are useful for programs like \"make\", but not for a simple copy like this. \n\nThe whole of spkg-install is a bit of a mess. It basically needs a total re-write. \n\nAlso, there is no spkg-check file. \n\nDave",
+    "created_at": "2012-01-03T23:29:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5310",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40896",
+    "user": "drkirkby"
+}
+```
 
 The fails on my OpenSolaris box, and I can see will fail on any sort of Solaris system. These lines:
 
@@ -644,56 +1044,133 @@ Also, there is no spkg-check file.
 Dave
 
 
+
 ---
 
-Comment by drkirkby created at 2012-01-03 23:43:14
+archive/issue_comments_040897.json:
+```json
+{
+    "body": "Ignore the comment about the wrong version of 'patch'. I somehow thought the error message was being generated during the patch, but its simply that the code does not build, which is hardly surprising, as the operating system is not tested properly. \n\nIt would make sense to default to \"generic\", which according to the makefile produces portable code. So it then has some hope of working on Android, AIX, HP-UX or any of the numerous other operating systems.",
+    "created_at": "2012-01-03T23:43:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5310",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40897",
+    "user": "drkirkby"
+}
+```
 
 Ignore the comment about the wrong version of 'patch'. I somehow thought the error message was being generated during the patch, but its simply that the code does not build, which is hardly surprising, as the operating system is not tested properly. 
 
 It would make sense to default to "generic", which according to the makefile produces portable code. So it then has some hope of working on Android, AIX, HP-UX or any of the numerous other operating systems.
 
 
+
 ---
 
-Comment by jdemeyer created at 2015-06-23 13:49:38
+archive/issue_comments_040898.json:
+```json
+{
+    "body": "Changing component from interfaces to packages: optional.",
+    "created_at": "2015-06-23T13:49:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5310",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40898",
+    "user": "jdemeyer"
+}
+```
 
 Changing component from interfaces to packages: optional.
 
 
+
 ---
 
-Comment by zimmerma created at 2015-06-23 13:57:59
+archive/issue_comments_040899.json:
+```json
+{
+    "body": "in comment [comment:21] I forgot to put CADO-NFS so that we hit this ticket when searching\nfor CADO-NFS. This is the only purpose of this new comment.",
+    "created_at": "2015-06-23T13:57:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5310",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40899",
+    "user": "zimmerma"
+}
+```
 
 in comment [comment:21] I forgot to put CADO-NFS so that we hit this ticket when searching
 for CADO-NFS. This is the only purpose of this new comment.
 
 
+
 ---
 
-Comment by kartikv created at 2015-08-23 03:36:16
+archive/issue_comments_040900.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2015-08-23T03:36:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5310",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40900",
+    "user": "kartikv"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by kartikv created at 2015-08-23 03:36:16
+archive/issue_comments_040901.json:
+```json
+{
+    "body": "Changed to an experimental package in order to get into Sage for 64-bit systems, seems to work fine on those. Reasonably tested with good speed and documentation for main function provided, may be useful to include additional doctests.\n----\nNew commits:",
+    "created_at": "2015-08-23T03:36:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5310",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40901",
+    "user": "kartikv"
+}
+```
 
 Changed to an experimental package in order to get into Sage for 64-bit systems, seems to work fine on those. Reasonably tested with good speed and documentation for main function provided, may be useful to include additional doctests.
 ----
 New commits:
 
 
+
 ---
 
-Comment by kartikv created at 2015-08-23 03:36:16
+archive/issue_comments_040902.json:
+```json
+{
+    "body": "Changing component from packages: optional to packages: experimental.",
+    "created_at": "2015-08-23T03:36:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5310",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40902",
+    "user": "kartikv"
+}
+```
 
 Changing component from packages: optional to packages: experimental.
 
 
+
 ---
 
-Comment by zimmerma created at 2015-08-24 14:39:16
+archive/issue_comments_040903.json:
+```json
+{
+    "body": "I managed to build the git branch, but I failed to install the upstream package\n(renamed to msieve-1.49.tar.gz as mentioned in the description above):\n\n```\nzimmerma@barbecue:/localdisk/tmp/sage-6.7$ ./sage -i /tmp/msieve-1.49.tar.gz \nmsieve-1.49.tar.gz\n====================================================\nExtracting package /tmp/msieve-1.49.tar.gz\n-rw-r----- 1 zimmerma caramel 457682 Aug 24 14:06 /tmp/msieve-1.49.tar.gz\nFinished extraction\n/localdisk/tmp/sage-6.7/build/bin/sage-spkg: line 512: cd: msieve-1.49.tar.gz: No such file or directory\nError: after extracting, the directory msieve-1.49.tar.gz does not exist\n```\n\nWhat did I do wrong?",
+    "created_at": "2015-08-24T14:39:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5310",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40903",
+    "user": "zimmerma"
+}
+```
 
 I managed to build the git branch, but I failed to install the upstream package
 (renamed to msieve-1.49.tar.gz as mentioned in the description above):
@@ -712,43 +1189,109 @@ Error: after extracting, the directory msieve-1.49.tar.gz does not exist
 What did I do wrong?
 
 
+
 ---
 
-Comment by zimmerma created at 2015-08-24 14:39:16
+archive/issue_comments_040904.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_info.",
+    "created_at": "2015-08-24T14:39:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5310",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40904",
+    "user": "zimmerma"
+}
+```
 
 Changing status from needs_review to needs_info.
 
 
+
 ---
 
-Comment by kartikv created at 2015-08-24 17:23:58
+archive/issue_comments_040905.json:
+```json
+{
+    "body": "Move msieve-1.49.tar.gz to SAGE_ROOT/upstream and then ./sage -i msieve should work.",
+    "created_at": "2015-08-24T17:23:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5310",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40905",
+    "user": "kartikv"
+}
+```
 
 Move msieve-1.49.tar.gz to SAGE_ROOT/upstream and then ./sage -i msieve should work.
 
 
+
 ---
 
-Comment by kartikv created at 2015-08-24 17:23:58
+archive/issue_comments_040906.json:
+```json
+{
+    "body": "Changing status from needs_info to needs_review.",
+    "created_at": "2015-08-24T17:23:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5310",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40906",
+    "user": "kartikv"
+}
+```
 
 Changing status from needs_info to needs_review.
 
 
+
 ---
 
-Comment by novoselt created at 2017-01-15 01:10:40
+archive/issue_comments_040907.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2017-01-15T01:10:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5310",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40907",
+    "user": "novoselt"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by mkoeppe created at 2020-06-19 18:16:00
+archive/issue_comments_040908.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_info.",
+    "created_at": "2020-06-19T18:16:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5310",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40908",
+    "user": "mkoeppe"
+}
+```
 
 Changing status from needs_work to needs_info.
 
 
+
 ---
 
-Comment by mkoeppe created at 2020-06-19 18:16:00
+archive/issue_comments_040909.json:
+```json
+{
+    "body": "Setting spkg proposals that have not seen recent activity to \"sage-wishlist\".",
+    "created_at": "2020-06-19T18:16:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5310",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5310#issuecomment-40909",
+    "user": "mkoeppe"
+}
+```
 
 Setting spkg proposals that have not seen recent activity to "sage-wishlist".

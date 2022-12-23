@@ -1,72 +1,189 @@
 # Issue 6822: "empty" .spkg files in binary builds confusing
 
-Issue created by migration from https://trac.sagemath.org/ticket/6822
-
-Original creator: robertwb
-
-Original creation time: 2009-08-25 04:46:21
-
+archive/issues_006822.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  jhpalmieri\n\nFollowup to #4504. Maybe we should ship .txt rather than .spkg placeholders, and update the build system to understand them.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6822\n\n",
+    "created_at": "2009-08-25T04:46:21Z",
+    "labels": [
+        "distribution",
+        "major",
+        "bug"
+    ],
+    "title": "\"empty\" .spkg files in binary builds confusing",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6822",
+    "user": "robertwb"
+}
+```
 Assignee: tbd
 
 CC:  jhpalmieri
 
 Followup to #4504. Maybe we should ship .txt rather than .spkg placeholders, and update the build system to understand them.
 
+Issue created by migration from https://trac.sagemath.org/ticket/6822
+
+
+
+
 
 ---
 
-Comment by mvngu created at 2009-08-25 05:05:47
+archive/issue_comments_056261.json:
+```json
+{
+    "body": "See this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/f66ee83da5ef679f) thread. It was where this issue started.",
+    "created_at": "2009-08-25T05:05:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6822",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6822#issuecomment-56261",
+    "user": "mvngu"
+}
+```
 
 See this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/f66ee83da5ef679f) thread. It was where this issue started.
 
 
+
 ---
+
+archive/issue_comments_056262.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2012-10-05T23:58:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6822",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6822#issuecomment-56262",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_056263.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2012-10-05T23:58:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6822",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6822#issuecomment-56263",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by jhpalmieri created at 2012-10-06 00:00:23
+archive/issue_comments_056264.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2012-10-06T00:00:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6822",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6822#issuecomment-56264",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2012-10-06 00:00:23
+archive/issue_comments_056265.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"bdist spkg\".",
+    "created_at": "2012-10-06T00:00:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6822",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6822#issuecomment-56265",
+    "user": "jhpalmieri"
+}
+```
 
 Changing keywords from "" to "bdist spkg".
 
 
+
 ---
 
-Comment by jhpalmieri created at 2012-10-06 00:00:23
+archive/issue_comments_056266.json:
+```json
+{
+    "body": "Here's a simple-minded approach.",
+    "created_at": "2012-10-06T00:00:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6822",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6822#issuecomment-56266",
+    "user": "jhpalmieri"
+}
+```
 
 Here's a simple-minded approach.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-10-06 09:56:05
+archive/issue_comments_056267.json:
+```json
+{
+    "body": "Probably good, but we should only merge this with #13574.",
+    "created_at": "2012-10-06T09:56:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6822",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6822#issuecomment-56267",
+    "user": "jdemeyer"
+}
+```
 
 Probably good, but we should only merge this with #13574.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-10-08 12:44:23
+archive/issue_comments_056268.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2012-10-08T12:44:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6822",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6822#issuecomment-56268",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-11-12 21:56:54
+archive/issue_comments_056269.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2012-11-12T21:56:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6822",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6822#issuecomment-56269",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 4302: [challenge] improve modular composition in GF(2)[x]
 
-Issue created by migration from https://trac.sagemath.org/ticket/4302
-
-Original creator: zimmerma
-
-Original creation time: 2008-10-15 16:36:18
-
+archive/issues_004302.json:
+```json
+{
+    "body": "Assignee: somebody\n\nCC:  robertwb zimmerma malb\n\nHere is a toy implementation of polynomial modular composition over GF(2). It implements\nBrent-Kung's Algorithm 2.1 (Fast Algorithms for Manipulation Formal Power Series, JACM 1978).\n\n```\n# compute f(g) mod h\ndef ModularComposition(f,g,h,k=None):\n    print \"enter ModularComposition\", f.degree(), g.degree(), h.degree()\n    t = cputime()\n    R = h.parent()\n    n = h.degree()\n    if k is None:\n        k = ceil(Integer(n+1).sqrt_approx())\n    l = ceil((f.degree() + 1) / k)\n    # first compute g^j mod h, 2 <= j < k\n    G = Matrix(GF(2),n,k)\n    gpow = R(1)\n    for j in range(0, k):\n        # gpow = g^j mod h\n        row = gpow.coeffs()\n        if len(row)<n:\n            row.extend([R(0) for _ in range(n - len(row))])\n        G.set_column(j, row)\n        gpow = (gpow * g) % h # we'll need g^k below\n    print \"Creating G took\", cputime(t)\n    t = cputime()\n    # split f in chunks of degree < k\n    F = Matrix(GF(2),k,l)\n    row = f.coeffs()\n    if len(row)<k*l:\n            row.extend([R(0) for _ in range(k*l - len(row))])\n    for j in range(0, l):\n        F.set_column(j, row[j*k:j*k+k])\n    print \"Creating F took\", cputime(t)\n    t = cputime()\n    H = G * F # this is the most time-computing step, but M4RI is fast!\n    print \"Computing H took\", cputime(t)\n    t = cputime()\n    # H is a n x l matrix\n    # now H[i,j] = sum(G[i,m]*F[m,j], m=0..k-1)\n    #            = sum(g^m[i] * f[j*k+m], m=0..k-1)\n    # where g^m[i] is the coefficient of degree i in g^m\n    # and f[j*k+m] is the coefficient of degree j*k+m in f\n    # thus f[j*k+m]*g^m[i] should be multiplied by g^(j*k)\n    # gpow = (g^k) % h\n    x = h.variables()[0]\n    res = R(0)\n    j = l - 1\n    H = H.transpose()\n    while j >= 0:\n        res = (res * gpow) % h\n        # res = res + R([H[j,i] for i in range(0,n)])\n        res = res + R(H.submatrix(j,0,1,n).list())\n        j = j - 1\n    print \"Forming result took\", cputime(t)\n    sys.stdout.flush()\n    return res\n\n# computes x^(2^r) mod f\ndef ModCompPower (f, r):\n    l = r.digits()\n    l.reverse()\n    n = len(l)\n    g = f.variables()[0]\n    for i in range(n):\n        g = ModularComposition(g,g,f)\n        if l[i] == 1:\n           g = (g * g) % f\n    return g\n```\n\nThe following benchmark gives on a 2.4Ghz Core 2:\n\n```\nsage: r=1279\nsage: time a = ModCompPower(R(x^r+x+1), r)\nenter ModularComposition 1 1 1279\n   Creating G took 3.948399\n   Creating F took 0.00299900000005\n   Computing H took 0.000999999999976\n   Forming result took 0.0169980000001\nenter ModularComposition 2 2 1279\n   Creating G took 3.896408\n   Creating F took 0.004999\n   Computing H took 0.0\n   Forming result took 0.018997\nenter ModularComposition 4 4 1279\n   Creating G took 3.802422\n   Creating F took 0.00300000000004\n   Computing H took 0.000999999999976\n   Forming result took 0.018997\nenter ModularComposition 16 16 1279\n   Creating G took 3.208512\n   Creating F took 0.00299900000005\n   Computing H took 0.0\n   Forming result took 0.0169979999999\nenter ModularComposition 512 512 1279\n   Creating G took 2.413633\n   Creating F took 0.004999\n   Computing H took 0.00100000000009\n   Forming result took 0.307953\nenter ModularComposition 1202 1202 1279\n   Creating G took 0.895864\n   Creating F took 0.00999899999999\n   Computing H took 0.0\n   Forming result took 0.787879\nenter ModularComposition 1272 1272 1279\n   Creating G took 0.528921\n   Creating F took 0.009997\n   Computing H took 0.000999999999976\n   Forming result took 0.633905\nenter ModularComposition 1275 1275 1279\n   Creating G took 0.474927\n   Creating F took 0.00899800000002\n   Computing H took 0.000999999999976\n   Forming result took 0.630905\nenter ModularComposition 1278 1278 1279\n   Creating G took 0.533918\n   Creating F took 0.00799899999993\n   Computing H took 0.0\n   Forming result took 0.631904\nenter ModularComposition 1277 1277 1279\n   Creating G took 0.482927\n   Creating F took 0.00599899999997\n   Computing H took 0.000999999999976\n   Forming result took 0.609907\nenter ModularComposition 1277 1277 1279\n   Creating G took 0.563913\n   Creating F took 0.00899900000002\n   Computing H took 0.0\n   Forming result took 0.602908\nCPU times: user 24.37 s, sys: 0.79 s, total: 25.16 s\nWall time: 27.67 s\n```\n\nSeveral remarks: (a) the time spent in M4RI (Computing H) is negligible;\n                 (b) the time spent in \"Creating G\" and \"Forming result\" is large,\n                     and is even larger when the inputs have small degree!\n                     Something strange happens here.\n\nAs a comparison, on the same machine, Magma V2.14-8 takes only 0.02s with the following code:\n\n```\nR<x> := PolynomialRing(GF(2));\n\n/* computes x^(2^r) mod f */\nModCompPower := function(f, r)\n   l := [];\n   t := r;\n   while t ne 0 do\n      l := Append(l, t mod 2);\n      t := t div 2;\n   end while;\n   g := x;\n   for i := #l to 1 by -1 do\n      g := ModularComposition(g,g,f);\n      if l[i] eq 1 then\n         g := Modexp(g,2,f);\n      end if;\n   end for;\n   return g;\nend function;\n\n> r:=1279; time a:=ModCompPower(x^r+x+1, r);\nTime: 0.020\n```\n\nThe challenge is to do better than Magma within Sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4302\n\n",
+    "created_at": "2008-10-15T16:36:18Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "enhancement"
+    ],
+    "title": "[challenge] improve modular composition in GF(2)[x]",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4302",
+    "user": "zimmerma"
+}
+```
 Assignee: somebody
 
 CC:  robertwb zimmerma malb
@@ -178,17 +188,43 @@ Time: 0.020
 
 The challenge is to do better than Magma within Sage.
 
+Issue created by migration from https://trac.sagemath.org/ticket/4302
+
+
+
+
 
 ---
 
-Comment by malb created at 2008-10-17 01:01:59
+archive/issue_comments_031456.json:
+```json
+{
+    "body": "CCing Robert because the patch implements his template idea.",
+    "created_at": "2008-10-17T01:01:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31456",
+    "user": "malb"
+}
+```
 
 CCing Robert because the patch implements his template idea.
 
 
+
 ---
 
-Comment by malb created at 2008-10-17 01:05:42
+archive/issue_comments_031457.json:
+```json
+{
+    "body": "This is what I sent to Paul earlier about the patch\n\n>I've improved said implementation on my train ride after Sage Days. The result \n>is faster than Magma but only competitive with NTL. It seems NTL is already \n>faster than Magma for this problem and that the runtime is dominated by the \n>construction of the matrices (ntl.GF2X arithmetic mainly) and the recovery of \n>the result (ntl.GF2X arithmetic mainly). There is room for improvements \n>w.r.t. the conversion between ntl.GF2X and M4RI but I didn't bother yet \n>because ntl.GF2X arithmetic seems to be the main bottleneck for now. Note \n>that matrix multiplication takes up only a tiny fraction of the overall \n>runtime, it is almost negligible. \n>\n>Maybe, once we switch to the GF2X library things will look different enough to \n>motivate a better tuned conversion routine?\n\n\n```\nf = R.random_element(30000)\ng = R.random_element(30000)\nh = R.random_element(30000*10)\n```\n\n\n\n```\n%time \nset_verbose(1)\n_ = f.modular_composition(g,h)\nverbose 1 (1: , <module>) G 548 x 299999 16.331 s\nverbose 1 (1: , <module>) F 55 x 548 0.000 s\nverbose 1 (1: , <module>) H 55 x 299999 0.230 s\nverbose 1 (1: , <module>) Res 6.359 s\nCPU time: 22.98 s,  Wall time: 23.42 s\n```\n\n\n\n```\n%time _ = f.modular_composition(g,h,'ntl')\nverbose 1 (1: , <module>) NTL 23.998 s\nCPU time: 24.07 s,  Wall time: 24.72 s\n```\n\n\n\n```\nfm = f._magma_()\ngm = g._magma_()\nhm = h._magma_()\nt = magma.cputime()\n_ = fm.ModularComposition(gm,hm)\nmagma.cputime(t)\n83.810000000000002\n```\n",
+    "created_at": "2008-10-17T01:05:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31457",
+    "user": "malb"
+}
+```
 
 This is what I sent to Paul earlier about the patch
 
@@ -247,9 +283,20 @@ magma.cputime(t)
 
 
 
+
 ---
 
-Comment by zimmerma created at 2008-10-17 06:33:55
+archive/issue_comments_031458.json:
+```json
+{
+    "body": "Martin, I have problems trying your patch to 3.1.3:\n\n```\nBuilding sage/rings/polynomial/polynomial_gf2x.cpp because it depends on sage/rings/polynomial/polynomial_gf2x.pyx.\npython2.5 `which cython` --embed-positions --incref-local-binop -I/usr/local/sage-3.1.3/sage/devel/sage-main -o sage/rings/polynomial/polynomial_gf2x.cpp sage/rings/polynomial/polynomial_gf2x.pyx\n\nError converting Pyrex file to C:\n------------------------------------------------------------\n...\nfrom sage.libs.ntl.ntl_GF2_decl cimport GF2_c\nfrom sage.libs.ntl.ntl_ZZ_decl cimport ZZ_c\n^\n------------------------------------------------------------\n```\n\nShould I apply other patches before?",
+    "created_at": "2008-10-17T06:33:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31458",
+    "user": "zimmerma"
+}
+```
 
 Martin, I have problems trying your patch to 3.1.3:
 
@@ -269,16 +316,38 @@ from sage.libs.ntl.ntl_ZZ_decl cimport ZZ_c
 Should I apply other patches before?
 
 
+
 ---
 
-Comment by malb created at 2008-10-17 09:31:57
+archive/issue_comments_031459.json:
+```json
+{
+    "body": "ooop, I forgot to mention that this patch depends on #4304",
+    "created_at": "2008-10-17T09:31:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31459",
+    "user": "malb"
+}
+```
 
 ooop, I forgot to mention that this patch depends on #4304
 
 
+
 ---
 
-Comment by zimmerma created at 2008-10-17 11:16:48
+archive/issue_comments_031460.json:
+```json
+{
+    "body": "I have applied both patches, and done sage -br, but modular_composition is not defined (with sage-3.1.4):\n\n```\nsage: R=PolynomialRing(GF(2),x)\nsage: f=x^2+1\nsage: f.modular_composition\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/users/cacao/zimmerma/.sage/temp/achille.loria.fr/7660/_users_cacao_zimmerma__sage_init_sage_0.py in <module>()\n----> 1 \n      2 \n      3 \n      4 \n      5 \n\nAttributeError: 'SymbolicArithmetic' object has no attribute 'modular_composition'\n```\n",
+    "created_at": "2008-10-17T11:16:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31460",
+    "user": "zimmerma"
+}
+```
 
 I have applied both patches, and done sage -br, but modular_composition is not defined (with sage-3.1.4):
 
@@ -301,9 +370,20 @@ AttributeError: 'SymbolicArithmetic' object has no attribute 'modular_compositio
 
 
 
+
 ---
 
-Comment by malb created at 2008-10-17 11:28:33
+archive/issue_comments_031461.json:
+```json
+{
+    "body": "Hi, you didn't declare 'x' to be a polynomial over GF(2). Try:\n\n\n```\nsage: P.<x> = PolynomialRing(GF(2))\n```\n",
+    "created_at": "2008-10-17T11:28:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31461",
+    "user": "malb"
+}
+```
 
 Hi, you didn't declare 'x' to be a polynomial over GF(2). Try:
 
@@ -314,9 +394,20 @@ sage: P.<x> = PolynomialRing(GF(2))
 
 
 
+
 ---
 
-Comment by zimmerma created at 2008-10-17 12:24:11
+archive/issue_comments_031462.json:
+```json
+{
+    "body": "Yes I did (but did forget to copy/paste it):\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.1.4, Release Date: 2008-10-16                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: P.<x> = PolynomialRing(GF(2))\nsage: f=x^2+1\nsage: f.modular_composition() \n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/users/cacao/zimmerma/.sage/temp/achille.loria.fr/8623/_users_cacao_zimmerma__sage_init_sage_0.py in <module>()\n----> 1 \n      2 \n      3 \n      4 \n      5 \n```\n\nMaybe it is because I applied the current patch before that of #4304. However, I just did \"touch\" on all\nfiles from the current patch, then \"sage -br\" again, and I still get the above.",
+    "created_at": "2008-10-17T12:24:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31462",
+    "user": "zimmerma"
+}
+```
 
 Yes I did (but did forget to copy/paste it):
 
@@ -343,16 +434,38 @@ Maybe it is because I applied the current patch before that of #4304. However, I
 files from the current patch, then "sage -br" again, and I still get the above.
 
 
+
 ---
 
-Comment by malb created at 2008-10-17 12:33:29
+archive/issue_comments_031463.json:
+```json
+{
+    "body": "Maybe you can start with vanilla 3.1.3 again (rm spkgs/installed/sage-3.1.3.spkg; make) and apply the patches again in order? Is there a file called polynomial_gf2x.pyx in sage/rings/polynomial ? I'll be afk for a couple of days btw.",
+    "created_at": "2008-10-17T12:33:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31463",
+    "user": "malb"
+}
+```
 
 Maybe you can start with vanilla 3.1.3 again (rm spkgs/installed/sage-3.1.3.spkg; make) and apply the patches again in order? Is there a file called polynomial_gf2x.pyx in sage/rings/polynomial ? I'll be afk for a couple of days btw.
 
 
+
 ---
 
-Comment by zimmerma created at 2008-10-17 19:29:23
+archive/issue_comments_031464.json:
+```json
+{
+    "body": "I did start from vanilla 3.1.3 again, applied the patches in the right order, but still get the\nsame error:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.1.4, Release Date: 2008-10-16                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: P.<x> = PolynomialRing(GF(2), x)\nsage: f = x^7 + x + 1\nsage: f.modular_composition()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/users/cacao/zimmerma/.sage/temp/achille.loria.fr/16284/_users_cacao_zimmerma__sage_init_sage_0.py in <module>()\n----> 1 \n      2 \n      3 \n      4 \n      5 \n\nAttributeError: 'sage.rings.polynomial.polynomial_modn_dense_ntl.Po' object has no attribute 'modular_composition'\n```\n\nIn particular I don't see a \"modular_composition\" method for polynomial_modn_dense_ntl,\nbut only for Polynomial_GF2X, and polynomial_modn_dense_ntl, does not seem to inherit from\nPolynomial_GF2X:\n\n```\nsage: type(f)\n<type 'sage.rings.polynomial.polynomial_modn_dense_ntl.Polynomial_dense_mod_p'>\n```\n\nHow can I define an object of type Polynomial_GF2X? Can someone reproduce Martin's results?",
+    "created_at": "2008-10-17T19:29:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31464",
+    "user": "zimmerma"
+}
+```
 
 I did start from vanilla 3.1.3 again, applied the patches in the right order, but still get the
 same error:
@@ -390,9 +503,20 @@ sage: type(f)
 How can I define an object of type Polynomial_GF2X? Can someone reproduce Martin's results?
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-17 22:39:42
+archive/issue_comments_031465.json:
+```json
+{
+    "body": "FYI: With this patch and its dependency applied I get the following failures:\n\n```\n\tsage -t -long devel/sage/sage/schemes/elliptic_curves/padics.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/schemes/elliptic_curves/ell_generic.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/modular/modform/j_invariant.py # 1 doctests failed\n\tsage -t -long devel/sage/sage/libs/ntl/ntl_GF2X_linkage.pxi # 1 doctests failed\n\tsage -t -long devel/sage/sage/libs/ntl/ntl_GF2X.pyx # 1 doctests failed\n```\n\nI am now testing only #4304 to see if the problem is this or the other patch.\n\nCheers,\n\nMichael",
+    "created_at": "2008-10-17T22:39:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31465",
+    "user": "mabshoff"
+}
+```
 
 FYI: With this patch and its dependency applied I get the following failures:
 
@@ -411,9 +535,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-17 23:18:57
+archive/issue_comments_031466.json:
+```json
+{
+    "body": "#4304 by itself is fine, so this one needs work.\n\nCheers,\n\nMichael",
+    "created_at": "2008-10-17T23:18:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31466",
+    "user": "mabshoff"
+}
+```
 
 #4304 by itself is fine, so this one needs work.
 
@@ -422,9 +557,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by malb created at 2008-10-18 01:15:38
+archive/issue_comments_031467.json:
+```json
+{
+    "body": "Hi, I started from a vanilla 3.1.3 as follows\n\n\n```\nmalb@road:~/SAGE/devel/sage$ hg qinit\nmalb@road:~/SAGE/devel/sage$ hg qimport ntl_decl_refactor.patch\nadding ntl_decl_refactor.patch to series file\nmalb@road:~/SAGE/devel/sage$ hg qpush\napplying ntl_decl_refactor.patch\npatching file sage/rings/polynomial/polynomial_modn_dense_ntl.pyx\nHunk #4 succeeded at 1277 with fuzz 2 (offset 0 lines).\nNow at: ntl_decl_refactor.patch\nmalb@road:~/SAGE/devel/sage$ hg qimport polynomial_gf2x.patch\nadding polynomial_gf2x.patch to series file\nmalb@road:~/SAGE/devel/sage$ hg qpush\napplying polynomial_gf2x.patch\nNow at: polynomial_gf2x.patch\nmalb@road:~/SAGE/devel/sage$ sage -b\n```\n\n\nafterwars I do have the modular_composition function available. I'll address the doctest failures as soon as possible if noone else beats me to it.",
+    "created_at": "2008-10-18T01:15:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31467",
+    "user": "malb"
+}
+```
 
 Hi, I started from a vanilla 3.1.3 as follows
 
@@ -450,9 +596,20 @@ malb@road:~/SAGE/devel/sage$ sage -b
 afterwars I do have the modular_composition function available. I'll address the doctest failures as soon as possible if noone else beats me to it.
 
 
+
 ---
 
-Comment by zimmerma created at 2008-10-18 08:04:49
+archive/issue_comments_031468.json:
+```json
+{
+    "body": "Replying to [comment:15 malb]:\n> Hi, I started from a vanilla 3.1.3 as follows [...]\n\nMartin, starting from 3.1.4 (which should be ok), I cannot reproduce what you did:\n\n```\nachille% pwd\n/usr/local/sage-3.1.4/sage/devel/sage-main\nachille% hg qinit\nhg: unknown command 'qinit'\nMercurial Distributed SCM\n\nbasic commands:\n\n add        add the specified files on the next commit\n annotate   show changeset information per file line\n clone      make a copy of an existing repository\n commit     commit the specified files or all outstanding changes\n diff       diff repository (or selected files)\n export     dump the header and diffs for one or more changesets\n init       create a new repository in the given directory\n log        show revision history of entire repository or files\n merge      merge working directory with another revision\n parents    show the parents of the working dir or revision\n pull       pull changes from the specified source\n push       push changes to the specified destination\n remove     remove the specified files on the next commit\n serve      export the repository via HTTP\n status     show changed files in the working directory\n update     update working directory\n\nuse \"hg help\" for the full list of commands or \"hg -v\" for details\nachille% hg --version\nMercurial Distributed SCM (version 1.0.2)\n\nCopyright (C) 2005-2008 Matt Mackall <mpm@selenic.com> and others\nThis is free software; see the source for copying conditions. There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n```\n",
+    "created_at": "2008-10-18T08:04:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31468",
+    "user": "zimmerma"
+}
+```
 
 Replying to [comment:15 malb]:
 > Hi, I started from a vanilla 3.1.3 as follows [...]
@@ -496,9 +653,20 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 
 
+
 ---
 
-Comment by AlexGhitza created at 2008-10-18 08:17:21
+archive/issue_comments_031469.json:
+```json
+{
+    "body": "Hi Paul,\n\nIt seems that Mercurial queues are not enabled on your machine.  Try adding the following lines to the file .hgrc in your home directory:\n\n\n```\n[extensions]\nhgext.mq =\n```\n",
+    "created_at": "2008-10-18T08:17:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31469",
+    "user": "AlexGhitza"
+}
+```
 
 Hi Paul,
 
@@ -512,9 +680,20 @@ hgext.mq =
 
 
 
+
 ---
 
-Comment by malb created at 2008-10-18 08:21:00
+archive/issue_comments_031470.json:
+```json
+{
+    "body": "Or, this should be equivalent:\n\n\n```\nmalb@road:~/SAGE/devel/sage$ hg import ntl_decl_refactor.patch\nmalb@road:~/SAGE/devel/sage$ hg import polynomial_gf2x.patch\nmalb@road:~/SAGE/devel/sage$ sage -b\n```\n",
+    "created_at": "2008-10-18T08:21:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31470",
+    "user": "malb"
+}
+```
 
 Or, this should be equivalent:
 
@@ -527,9 +706,20 @@ malb@road:~/SAGE/devel/sage$ sage -b
 
 
 
+
 ---
 
-Comment by zimmerma created at 2008-10-18 09:47:43
+archive/issue_comments_031471.json:
+```json
+{
+    "body": "Replying to [comment:18 malb]:\n> Or, this should be equivalent:\n> \n> {{{\n> malb`@`road:~/SAGE/devel/sage$ hg import ntl_decl_refactor.patch\n> malb`@`road:~/SAGE/devel/sage$ hg import polynomial_gf2x.patch\n> malb`@`road:~/SAGE/devel/sage$ sage -b\n> }}}\n\nthis is basically what I had done before (but from within sage, and with sage -b inbetween).\nNevertheless, I did exactly that with 3.1.4:\n\n```\nachille% pwd\n/usr/local/sage-3.1.4/sage/devel/sage-main\nachille% hg import /tmp/ntl_decl_refactor.patch\napplying /tmp/ntl_decl_refactor.patch\npatching file sage/rings/polynomial/polynomial_modn_dense_ntl.pyx\nHunk #4 succeeded at 1277 with fuzz 2 (offset 0 lines).\nachille% hg import /tmp/polynomial_gf2x.patch\napplying /tmp/polynomial_gf2x.patch\nachille% sage -b\n...\nreal    33m24.231s\nuser    32m25.750s\nsys     0m37.831s\nachille% sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.1.4, Release Date: 2008-10-16                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: P.<x> = PolynomialRing(GF(2))\nsage: f=x^7+x+1\nsage: f.modular_composition()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/users/cacao/zimmerma/.sage/temp/achille.loria.fr/11076/_users_cacao_zimmerma__\\\nsage_init_sage_0.py in <module>()\n----> 1\n      2\n      3\n      4\n      5\n\nAttributeError: 'sage.rings.polynomial.polynomial_modn_dense_ntl.Po' object has\\\n no attribute 'modular_composition'\n```\n\nIs it possible that the problem happens because I am not in the original build directory,\nbut in the directory where I did \"make install\"? However I have successfully applied several\npatches in this way before.\n\nWhat else can I do to identify the problem on my side?",
+    "created_at": "2008-10-18T09:47:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31471",
+    "user": "zimmerma"
+}
+```
 
 Replying to [comment:18 malb]:
 > Or, this should be equivalent:
@@ -587,9 +777,20 @@ patches in this way before.
 What else can I do to identify the problem on my side?
 
 
+
 ---
 
-Comment by zimmerma created at 2008-10-18 15:42:49
+archive/issue_comments_031472.json:
+```json
+{
+    "body": "After fixing my relocation problems (#4317) I was able to reproduce Martin's timings.\n\nThe attached trac_4302_doctest1.patch fixes the doctest failure in ntl_GF2X_linkage.pxi.\nUnfortunately I don't know how to fix the other ones.",
+    "created_at": "2008-10-18T15:42:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31472",
+    "user": "zimmerma"
+}
+```
 
 After fixing my relocation problems (#4317) I was able to reproduce Martin's timings.
 
@@ -597,14 +798,38 @@ The attached trac_4302_doctest1.patch fixes the doctest failure in ntl_GF2X_link
 Unfortunately I don't know how to fix the other ones.
 
 
+
 ---
+
+archive/issue_comments_031473.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-10-18T16:48:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31473",
+    "user": "zimmerma"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by zimmerma created at 2008-10-18 16:58:03
+archive/issue_comments_031474.json:
+```json
+{
+    "body": "The attached 4302_speedup1.patch should speed up the computation of the G matrix, however it does speed it down instead (I had previous timings similar to those of Martin above):\n\n```\nsage: R.<x>=GF(2)[]\nsage: f = R.random_element(30000)\nsage: g = R.random_element(30000)\nsage: h = R.random_element(30000*10)\nsage: set_verbose(1)\nsage: time _ = f.modular_composition(g,h)\nverbose 1 (<module>) G 548 x 300000 33.128 s\nverbose 1 (<module>) F 55 x 548 0.001 s\nverbose 1 (<module>) H 55 x 300000 0.265 s\nverbose 1 (<module>) Res 6.406 s\nCPU times: user 39.79 s, sys: 0.07 s, total: 39.86 s\n```\n\nEither GF2X_SqrMod_pre is slower than GF2X_MulMod_pre, or I did something stupid. Could somebody look at my patch?",
+    "created_at": "2008-10-18T16:58:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31474",
+    "user": "zimmerma"
+}
+```
 
 The attached 4302_speedup1.patch should speed up the computation of the G matrix, however it does speed it down instead (I had previous timings similar to those of Martin above):
 
@@ -625,9 +850,20 @@ CPU times: user 39.79 s, sys: 0.07 s, total: 39.86 s
 Either GF2X_SqrMod_pre is slower than GF2X_MulMod_pre, or I did something stupid. Could somebody look at my patch?
 
 
+
 ---
 
-Comment by zimmerma created at 2008-10-18 20:54:41
+archive/issue_comments_031475.json:
+```json
+{
+    "body": "In fact with the following benchmark 4302_speedup1.patch gives a speedup (ModCompPower is defined\nabove).\n\nWithout 4302_speedup1.patch:\n\n```\nsage: r=132049\nsage: time a=ModCompPower(x^r+x+1, r)\n100.6397\n```\n\nWith 4302_speedup1.patch:\n\n```\nsage: time a=ModCompPower(x^r+x+1, r)\n82.144512\n```\n\nWith NTL:\n\n```\nsage: time a=ModCompPower(x^r+x+1, r, algorithm='ntl')\n86.219893\n```\n",
+    "created_at": "2008-10-18T20:54:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31475",
+    "user": "zimmerma"
+}
+```
 
 In fact with the following benchmark 4302_speedup1.patch gives a speedup (ModCompPower is defined
 above).
@@ -656,9 +892,20 @@ sage: time a=ModCompPower(x^r+x+1, r, algorithm='ntl')
 
 
 
+
 ---
 
-Comment by malb created at 2008-10-19 14:45:26
+archive/issue_comments_031476.json:
+```json
+{
+    "body": "I fixed most doctest failures except one:\n\n\n```\nsage -t  elliptic_curves/ell_generic.py\nFile \"/home/malb/SAGE/tmp/ell_generic.py\", line 2135:\n    sage: [ len(EllipticCurve(GF(q,'a')(0)).automorphisms()) for q in [2,4,3,9,5,25,7,49]]\nException raised:\n...\nTypeError: unsupported operand parent(s) for '-': 'Univariate Polynomial Ring in x over Finite Field of size 2' and 'Finite Field of size 2'\n```\n\n\nMy trouble is, that it works from the command line:\n\n\n```\nsage: [ len(EllipticCurve(GF(q,'a')(0)).automorphisms()) for q in [2,4,3,9,5,25,7,49]]\n[2, 24, 2, 12, 2, 6, 6, 6]\n```\n\n\nRobert, could that be related to some caching of coercion maps?",
+    "created_at": "2008-10-19T14:45:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31476",
+    "user": "malb"
+}
+```
 
 I fixed most doctest failures except one:
 
@@ -685,30 +932,76 @@ sage: [ len(EllipticCurve(GF(q,'a')(0)).automorphisms()) for q in [2,4,3,9,5,25,
 Robert, could that be related to some caching of coercion maps?
 
 
+
 ---
 
-Comment by malb created at 2008-10-19 14:46:07
+archive/issue_comments_031477.json:
+```json
+{
+    "body": "The patch includes Paul's doctest fix but not his speed-improvement, so apply that after the `polynomial_gf2x.patch`.",
+    "created_at": "2008-10-19T14:46:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31477",
+    "user": "malb"
+}
+```
 
 The patch includes Paul's doctest fix but not his speed-improvement, so apply that after the `polynomial_gf2x.patch`.
 
 
+
 ---
 
-Comment by malb created at 2008-10-19 15:16:49
+archive/issue_comments_031478.json:
+```json
+{
+    "body": "fixes all known doctest failures",
+    "created_at": "2008-10-19T15:16:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31478",
+    "user": "malb"
+}
+```
 
 fixes all known doctest failures
 
 
+
 ---
+
+archive/issue_comments_031479.json:
+```json
+{
+    "body": "Attachment\n\nthe updated patch fixes all known doctest failures. The failure was caused by the fact that two GF(2) objects existed such that `x.parent() is parent` wasn't true anymore. Apply Paul's performance patch after `polynomial_gf2x.patch`",
+    "created_at": "2008-10-19T15:18:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31479",
+    "user": "malb"
+}
+```
 
 Attachment
 
 the updated patch fixes all known doctest failures. The failure was caused by the fact that two GF(2) objects existed such that `x.parent() is parent` wasn't true anymore. Apply Paul's performance patch after `polynomial_gf2x.patch`
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-20 12:07:19
+archive/issue_comments_031480.json:
+```json
+{
+    "body": "#4328 seems to be caused by this patch.\n\nCheers,\n\nMichael",
+    "created_at": "2008-10-20T12:07:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31480",
+    "user": "mabshoff"
+}
+```
 
 #4328 seems to be caused by this patch.
 
@@ -717,9 +1010,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by malb created at 2008-10-20 13:24:29
+archive/issue_comments_031481.json:
+```json
+{
+    "body": "Replying to [comment:26 mabshoff]:\n> #4328 seems to be caused by this patch.\n\nI think that was caused by an older version of the patch.",
+    "created_at": "2008-10-20T13:24:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31481",
+    "user": "malb"
+}
+```
 
 Replying to [comment:26 mabshoff]:
 > #4328 seems to be caused by this patch.
@@ -727,23 +1031,56 @@ Replying to [comment:26 mabshoff]:
 I think that was caused by an older version of the patch.
 
 
+
 ---
 
-Comment by malb created at 2008-10-20 16:11:38
+archive/issue_comments_031482.json:
+```json
+{
+    "body": "btw. Robert I think passing `object parent` to `celement_foo()` is not a good choice because it assumes structure on `parent`, e.g. what would one cast to for C attribute access? I'd say it should be a cparent which is some sort of C struct defined in the linkage pxi files? But this can wait until after this patch is applied (because GF2X ignores the parent anyway).",
+    "created_at": "2008-10-20T16:11:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31482",
+    "user": "malb"
+}
+```
 
 btw. Robert I think passing `object parent` to `celement_foo()` is not a good choice because it assumes structure on `parent`, e.g. what would one cast to for C attribute access? I'd say it should be a cparent which is some sort of C struct defined in the linkage pxi files? But this can wait until after this patch is applied (because GF2X ignores the parent anyway).
 
 
+
 ---
 
-Comment by robertwb created at 2008-10-21 15:12:43
+archive/issue_comments_031483.json:
+```json
+{
+    "body": "Yep, perhaps something other than parent would be good to pass, though that would make writing the generic classes more complicated. It would also be handy to have generic wrap/unwrap methods that go to and from the native type to a Sage object.",
+    "created_at": "2008-10-21T15:12:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31483",
+    "user": "robertwb"
+}
+```
 
 Yep, perhaps something other than parent would be good to pass, though that would make writing the generic classes more complicated. It would also be handy to have generic wrap/unwrap methods that go to and from the native type to a Sage object.
 
 
+
 ---
 
-Comment by zimmerma created at 2008-10-23 11:07:12
+archive/issue_comments_031484.json:
+```json
+{
+    "body": "I did apply polynomial_gf2x.patch on a vanilla 3.1.4, after having applied the patch from #4304.\nI can reproduce Martin's timings, and I checked that all the doctests above are ok now. Thus I give\na positive review for that patch.\n\nOf course somebody should review my own patch, or should we create a separate ticket, so that we can include\nMartin's patch?",
+    "created_at": "2008-10-23T11:07:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31484",
+    "user": "zimmerma"
+}
+```
 
 I did apply polynomial_gf2x.patch on a vanilla 3.1.4, after having applied the patch from #4304.
 I can reproduce Martin's timings, and I checked that all the doctests above are ok now. Thus I give
@@ -753,29 +1090,73 @@ Of course somebody should review my own patch, or should we create a separate ti
 Martin's patch?
 
 
+
 ---
 
-Comment by malb created at 2008-10-23 13:48:51
+archive/issue_comments_031485.json:
+```json
+{
+    "body": "Paul, I can review your patch. No need to open another ticket.",
+    "created_at": "2008-10-23T13:48:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31485",
+    "user": "malb"
+}
+```
 
 Paul, I can review your patch. No need to open another ticket.
 
 
----
-
-Comment by malb created at 2008-10-24 23:26:03
-
-Paul's patch applies cleanly and doctests pass in the rings subdirectory. *positive review*
-
 
 ---
 
-Comment by mabshoff created at 2008-10-26 00:51:43
+archive/issue_comments_031486.json:
+```json
+{
+    "body": "Paul's patch applies cleanly and doctests pass in the rings subdirectory. **positive review**",
+    "created_at": "2008-10-24T23:26:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31486",
+    "user": "malb"
+}
+```
+
+Paul's patch applies cleanly and doctests pass in the rings subdirectory. **positive review**
+
+
+
+---
+
+archive/issue_comments_031487.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-10-26T00:51:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31487",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-26 00:51:43
+archive/issue_comments_031488.json:
+```json
+{
+    "body": "Merged both patches in Sage 3.2.alpha1",
+    "created_at": "2008-10-26T00:51:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4302",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4302#issuecomment-31488",
+    "user": "mabshoff"
+}
+```
 
 Merged both patches in Sage 3.2.alpha1

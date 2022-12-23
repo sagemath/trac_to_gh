@@ -1,11 +1,21 @@
 # Issue 9810: sage exits with 0, even if it is unable to install a package.
 
-Issue created by migration from https://trac.sagemath.org/ticket/9811
-
-Original creator: drkirkby
-
-Original creation time: 2010-08-26 21:32:46
-
+archive/issues_009810.json:
+```json
+{
+    "body": "Assignee: GeorgSWeber\n\nCC:  leif mpatel jhpalmieri\n\nI wanted to do some testing of Sage in a loop and would check the return code to see if what I used worked or not. But this is impossible, as Sage appears to exit with 0, even if it should not have. In the example below, I try to install a non-existent package using Sage. The return code in a case like this should be non-zero, but it is not. \n\n\n```\ndrkirkby@hawk:~/sage-4.5.2$ ./sage -f some-non-existant-package\nForce installing some-non-existant-package\nCalling sage-spkg on some-non-existant-package\nWarning: Attempted to overwrite SAGE_ROOT environment variable\nBuilding Sage on Solaris in 64-bit mode\nCreating SAGE_LOCAL/lib/sage-64.txt since it does not exist\nDetected SAGE64 flag\nBuilding Sage on Solaris in 64-bit mode\nsome-non-existant-package\nMachine:\nSunOS hawk 5.11 snv_134 i86pc i386 i86pc\nDeleting directories from past builds of previous/current versions of some-non-existant-package\n/export/home/drkirkby/sage-4.5.2/local/bin/sage-spkg: file some-non-existant-package does not exist\nAttempting to download it.\nhttp://www.sagemath.org//packages/optional/some-non-existant-package.spkg --> some-non-existant-package.spkg\n[ ]\nhttp://www.sagemath.org//packages/standard/some-non-existant-package.spkg --> some-non-existant-package.spkg\n[ ]\nhttp://www.sagemath.org//packages/experimental/some-non-existant-package.spkg --> some-non-existant-package.spkg\n[ ]\nhttp://www.sagemath.org//packages/archive/some-non-existant-package.spkg --> some-non-existant-package.spkg\n[ ]\n**********************************************************************\n* Unable to download some-non-existant-package\n* Please see http://www.sagemath.org//packages for a list of valid\n* packages or check the package name.\n**********************************************************************\nsage: Failed to download package some-non-existant-package from http://www.sagemath.org/\ndrkirkby@hawk:~/sage-4.5.2$ $?\nbash: 0: command not found\ndrkirkby@hawk:~/sage-4.5.2$ \n```\n\n\nIn contrast, if I try this with a well written command like `ls`\n\n\n```\ndrkirkby@hawk:~/sage-4.5.2$ ls some-non-existant-package\nsome-non-existant-package: No such file or directory\ndrkirkby@hawk:~/sage-4.5.2$ $?\nbash: 2: command not found\n```\n\n\nthe exit code is non-zero - in this case 2. \n\nAlso on a similar theme is #9799, showing that `make` can exit with the wrong code too.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9811\n\n",
+    "created_at": "2010-08-26T21:32:46Z",
+    "labels": [
+        "build",
+        "major",
+        "bug"
+    ],
+    "title": "sage exits with 0, even if it is unable to install a package.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9810",
+    "user": "drkirkby"
+}
+```
 Assignee: GeorgSWeber
 
 CC:  leif mpatel jhpalmieri
@@ -63,10 +73,25 @@ the exit code is non-zero - in this case 2.
 
 Also on a similar theme is #9799, showing that `make` can exit with the wrong code too.
 
+Issue created by migration from https://trac.sagemath.org/ticket/9811
+
+
+
+
 
 ---
 
-Comment by leif created at 2010-08-26 23:35:07
+archive/issue_comments_096742.json:
+```json
+{
+    "body": "Replying to [ticket:9811 drkirkby]:\n> \n\n```\ndrkirkby@hawk:~/sage-4.5.2$ ./sage -f some-non-existant-package\n...\ndrkirkby@hawk:~/sage-4.5.2$ $?\nbash: 0: command not found\ndrkirkby@hawk:~/sage-4.5.2$ \n```\n\n\n\n> In contrast, if I try this with a well written command like `ls`\n> [...] the exit code is non-zero - in this case 2.\n\nWell, you did `sage -f ...` ...\n\nA well written command like `rm` exits with a zero status if you use `-f`:\n\n```sh\nleif@quadriga:~/Sage/spkgs/mpir-2.1.1$ rm -f non-existent-package ; echo $?\n0\n```\n\n\nI wonder what Sage returns if you do `sage -i ...` instead... ;-)\n\nBtw, `sage-spkg` has lots of other flaws. I'm considering writing (and using) my own version, since I doubt the bunch of changes I aim at would get merged soon... (Same for the top-level Makefile, which by the way was named `makefile`, I guess by some DOS programmer.)\n\nHopefully not too many people read our tickets... :D",
+    "created_at": "2010-08-26T23:35:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9810",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9810#issuecomment-96742",
+    "user": "leif"
+}
+```
 
 Replying to [ticket:9811 drkirkby]:
 > 
@@ -101,9 +126,20 @@ Btw, `sage-spkg` has lots of other flaws. I'm considering writing (and using) my
 Hopefully not too many people read our tickets... :D
 
 
+
 ---
 
-Comment by drkirkby created at 2010-08-26 23:56:46
+archive/issue_comments_096743.json:
+```json
+{
+    "body": "Replying to [comment:1 leif]:\n\n\n> Well, you did `sage -f ...` ...\n> I wonder what Sage returns if you do `sage -i ...` instead... ;-)\n\nThe Sage. It still exits with an exit code of zero. \n \n> Btw, `sage-spkg` has lots of other flaws. I'm considering writing (and using) my own version, since I doubt the bunch of changes I aim at would get merged soon... (Same for the top-level Makefile, which by the way was named `makefile`, I guess by some DOS programmer.)\n> \n> Hopefully not too many people read our tickets... :D\n  \nMore, should I think. \n\nDave",
+    "created_at": "2010-08-26T23:56:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9810",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9810#issuecomment-96743",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:1 leif]:
 
@@ -122,9 +158,20 @@ More, should I think.
 Dave
 
 
+
 ---
 
-Comment by leif created at 2010-10-19 11:34:09
+archive/issue_comments_096744.json:
+```json
+{
+    "body": "From `sage-sage`:\n\n```sh\n...\ninstall() {\n   cd \"$SAGE_ROOT/spkg\"\n   if [ $# -lt 2 ]; then\n       sage-spkg\n       exit $?\n   fi\n   OPT=\"$1\"\n   shift\n   if [ \"$1\" = '-m' -o \"$1\" = '-s' ]; then\n       OPT=$OPT\" \"$1\n       shift\n   fi\n   SAGE_LOGS=\"$SAGE_ROOT/spkg/logs\"\n   if [ ! -d \"$SAGE_LOGS\" ]; then\n       mkdir -p \"$SAGE_LOGS\"\n   fi\n   for PKG in \"$@\"\n   do\n       echo \"Calling sage-spkg on $PKG\"\n       PKG_NAME=`echo \"$PKG\" | sed -e \"s/\\.spkg$//\"`\n       PKG_NAME=`basename \"$PKG_NAME\"`\n       case $PKG in\n       /*)\n           sage-spkg $OPT \"$PKG\" 2>&1 | (trap \"\" SIGINT; tee -a ../install.log \"$SAGE_LOGS/$PKG_NAME\".log)\n       ;;\n       *)\n           sage-spkg $OPT \"$CUR/$PKG\" 2>&1 | (trap \"\" SIGINT; tee -a ../install.log \"$SAGE_LOGS/$PKG_NAME\".log)\n       ;;\n       esac\n\n       if [ $? -ne 0 ]; then\n          exit 1\n       fi\n       shift\n   done\n   exit $?\n}\n...\nif [ \"$1\" = '-i' ]; then\n   shift\n   echo \"Installing $@\"\n   install \" \" \"$@\"\nfi\n\nif [ \"$1\" = '-f' ]; then\n   shift\n   echo \"Force installing $@\"\n   install -f \"$@\"\nfi\n...\n```\n\n\nSo once again, we get the exit status of `tee` rather than that of `sage-spkg`.",
+    "created_at": "2010-10-19T11:34:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9810",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9810#issuecomment-96744",
+    "user": "leif"
+}
+```
 
 From `sage-sage`:
 
@@ -186,65 +233,166 @@ fi
 So once again, we get the exit status of `tee` rather than that of `sage-spkg`.
 
 
+
 ---
 
-Comment by leif created at 2010-10-23 13:40:33
+archive/issue_comments_096745.json:
+```json
+{
+    "body": "Using `pipestatus` there, too (i.e. in `sage-sage`) most probably requires #10157.",
+    "created_at": "2010-10-23T13:40:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9810",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9810#issuecomment-96745",
+    "user": "leif"
+}
+```
 
 Using `pipestatus` there, too (i.e. in `sage-sage`) most probably requires #10157.
 
 
+
 ---
 
-Comment by leif created at 2010-10-23 13:46:06
+archive/issue_comments_096746.json:
+```json
+{
+    "body": "I intend to move the logging (`tee` / `pipestatus`) to `sage-spkg` anyway, s.t. we only pass the name of the logfile(s), and some option(s) on how much to log [where]; cf. also #10040 and #9799.",
+    "created_at": "2010-10-23T13:46:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9810",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9810#issuecomment-96746",
+    "user": "leif"
+}
+```
 
 I intend to move the logging (`tee` / `pipestatus`) to `sage-spkg` anyway, s.t. we only pass the name of the logfile(s), and some option(s) on how much to log [where]; cf. also #10040 and #9799.
 
 
+
 ---
 
-Comment by leif created at 2011-10-13 14:25:42
+archive/issue_comments_096747.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2011-10-13T14:25:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9810",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9810#issuecomment-96747",
+    "user": "leif"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by leif created at 2011-10-13 14:25:42
+archive/issue_comments_096748.json:
+```json
+{
+    "body": "Changing component from build to scripts.",
+    "created_at": "2011-10-13T14:25:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9810",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9810#issuecomment-96748",
+    "user": "leif"
+}
+```
 
 Changing component from build to scripts.
 
 
+
 ---
 
-Comment by leif created at 2011-10-13 14:25:42
+archive/issue_comments_096749.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"sage-sage return code status pipestatus tee\".",
+    "created_at": "2011-10-13T14:25:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9810",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9810#issuecomment-96749",
+    "user": "leif"
+}
+```
 
 Changing keywords from "" to "sage-sage return code status pipestatus tee".
 
 
+
 ---
 
-Comment by leif created at 2011-10-13 14:25:42
+archive/issue_comments_096750.json:
+```json
+{
+    "body": "Attached patch fixes the exit code (by using `pipestatus`) and a few minor things in that area of `sage-sage`.\n\n(I haven't changed more since there are other tickets already touching `sage-sage` especially there, which may need *slight* rebasing on the patch here though.)",
+    "created_at": "2011-10-13T14:25:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9810",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9810#issuecomment-96750",
+    "user": "leif"
+}
+```
 
 Attached patch fixes the exit code (by using `pipestatus`) and a few minor things in that area of `sage-sage`.
 
-(I haven't changed more since there are other tickets already touching `sage-sage` especially there, which may need _slight_ rebasing on the patch here though.)
+(I haven't changed more since there are other tickets already touching `sage-sage` especially there, which may need *slight* rebasing on the patch here though.)
+
 
 
 ---
 
-Comment by leif created at 2011-10-13 14:30:57
+archive/issue_comments_096751.json:
+```json
+{
+    "body": "CC'ing a potential reviewer... :P",
+    "created_at": "2011-10-13T14:30:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9810",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9810#issuecomment-96751",
+    "user": "leif"
+}
+```
 
 CC'ing a potential reviewer... :P
 
 
+
 ---
 
-Comment by leif created at 2011-10-13 14:34:57
+archive/issue_comments_096752.json:
+```json
+{
+    "body": "SCRIPTS repo. Based on Sage 4.7.2.alpha4.",
+    "created_at": "2011-10-13T14:34:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9810",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9810#issuecomment-96752",
+    "user": "leif"
+}
+```
 
 SCRIPTS repo. Based on Sage 4.7.2.alpha4.
 
 
+
 ---
+
+archive/issue_comments_096753.json:
+```json
+{
+    "body": "Attachment\n\nFixed a typo in a comment.\n\nSorry, patch (diff) doesn't look very nice, as I've changed the indentation (and replaced spaces by tabs).",
+    "created_at": "2011-10-13T14:37:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9810",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9810#issuecomment-96753",
+    "user": "leif"
+}
+```
 
 Attachment
 
@@ -253,22 +401,55 @@ Fixed a typo in a comment.
 Sorry, patch (diff) doesn't look very nice, as I've changed the indentation (and replaced spaces by tabs).
 
 
+
 ---
 
-Comment by jhpalmieri created at 2011-10-14 22:20:55
+archive/issue_comments_096754.json:
+```json
+{
+    "body": "Looks okay to me.",
+    "created_at": "2011-10-14T22:20:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9810",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9810#issuecomment-96754",
+    "user": "jhpalmieri"
+}
+```
 
 Looks okay to me.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2011-10-14 22:20:55
+archive/issue_comments_096755.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2011-10-14T22:20:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9810",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9810#issuecomment-96755",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-10-17 07:59:23
+archive/issue_comments_096756.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2011-10-17T07:59:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9810",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9810#issuecomment-96756",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 5488: optional polymake package fails to build on OS X
 
-Issue created by migration from https://trac.sagemath.org/ticket/5488
-
-Original creator: was
-
-Original creation time: 2009-03-11 17:45:15
-
+archive/issues_005488.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nUsing sage-3.4.rc0 on bsd.math (a standard OSX 10.5 intel-based mac), the optional polymake spkg totally fails to build:\n\n\n```\ng++   -I/Users/was/build/sage-3.4.rc0/local/lib  -I/Users/was/build/sage-3.4.rc0/local/lib  -o cdd_ch_float_client cdd_ch_float_client.o libpolytope.a ../../lib/libpoly.a  -lgmp \nld: duplicate symbol _dd_free_global_constants in libpolytope.a(cdd_interface.o) and libpolytope.a(cdd_float_interface.o)\n\ncollect2: ld returned 1 exit status\nmake[3]: *** [cdd_ch_float_client] Error 1\nmake[2]: *** [do_all] Error 2\nmake[1]: *** [all] Error 2\nmake: *** [all] Error 2\nFailed to configure.\n\nreal    2m40.027s\nuser    1m54.830s\nsys     0m13.814s\nsage: An error occurred while installing polymake-2.2.p5\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /Users/was/build/sage-3.4.rc0/install.log.  Describe your computer, operating system, etc.\nIf you want to try to fix the problem, yourself *don't* just cd to\n/Users/was/build/sage-3.4.rc0/spkg/build/polymake-2.2.p5 and type 'make'.\nInstead type \"/Users/was/build/sage-3.4.rc0/sage -sh\"\nin order to set all environment variables correctly, then cd to\n/Users/was/build/sage-3.4.rc0/spkg/build/polymake-2.2.p5\n(When you are done debugging, you can type \"exit\" to leave the\nsubshell.)\nwas@bsd:~/build/sage-3.4.rc0$ \n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5488\n\n",
+    "created_at": "2009-03-11T17:45:15Z",
+    "labels": [
+        "packages",
+        "major",
+        "bug"
+    ],
+    "title": "optional polymake package fails to build on OS X",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5488",
+    "user": "was"
+}
+```
 Assignee: mabshoff
 
 Using sage-3.4.rc0 on bsd.math (a standard OSX 10.5 intel-based mac), the optional polymake spkg totally fails to build:
@@ -41,38 +51,97 @@ was@bsd:~/build/sage-3.4.rc0$
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5488
+
+
+
+
 
 ---
 
-Comment by kcrisman created at 2011-06-28 16:08:06
+archive/issue_comments_042602.json:
+```json
+{
+    "body": "Changing component from packages to optional packages.",
+    "created_at": "2011-06-28T16:08:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5488",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5488#issuecomment-42602",
+    "user": "kcrisman"
+}
+```
 
 Changing component from packages to optional packages.
 
 
+
 ---
 
-Comment by benjaminfjones created at 2012-05-26 04:25:12
+archive/issue_comments_042603.json:
+```json
+{
+    "body": "Hmm... still fails to build inside sage-5.0 on Mac OS X all the way out here in the year 2012. I'm looking into producing a new spkg.",
+    "created_at": "2012-05-26T04:25:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5488",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5488#issuecomment-42603",
+    "user": "benjaminfjones"
+}
+```
 
 Hmm... still fails to build inside sage-5.0 on Mac OS X all the way out here in the year 2012. I'm looking into producing a new spkg.
 
 
+
 ---
 
-Comment by benjaminfjones created at 2012-05-26 04:25:12
+archive/issue_comments_042604.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"sd40.5\".",
+    "created_at": "2012-05-26T04:25:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5488",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5488#issuecomment-42604",
+    "user": "benjaminfjones"
+}
+```
 
 Changing keywords from "" to "sd40.5".
 
 
+
 ---
 
-Comment by benjaminfjones created at 2012-05-26 04:56:39
+archive/issue_comments_042605.json:
+```json
+{
+    "body": "After futzing around with the spkg-install script, it seems that polymake depends on the system installation of perl. It doesn't build on Mac OS X because it can't find `Config.h` from the system perl installation.",
+    "created_at": "2012-05-26T04:56:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5488",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5488#issuecomment-42605",
+    "user": "benjaminfjones"
+}
+```
 
 After futzing around with the spkg-install script, it seems that polymake depends on the system installation of perl. It doesn't build on Mac OS X because it can't find `Config.h` from the system perl installation.
 
 
+
 ---
 
-Comment by benjaminfjones created at 2012-05-26 05:01:38
+archive/issue_comments_042606.json:
+```json
+{
+    "body": "... more notes to myself ... the polymake Makefile complains:\n\n```\ncan't locate perl's config.h: suspicious perl installation problem?\n```\n\nDo we need a development version of perl or perl sources installed to build polymake?",
+    "created_at": "2012-05-26T05:01:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5488",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5488#issuecomment-42606",
+    "user": "benjaminfjones"
+}
+```
 
 ... more notes to myself ... the polymake Makefile complains:
 
@@ -83,9 +152,20 @@ can't locate perl's config.h: suspicious perl installation problem?
 Do we need a development version of perl or perl sources installed to build polymake?
 
 
+
 ---
 
-Comment by benjaminfjones created at 2012-05-26 05:40:58
+archive/issue_comments_042607.json:
+```json
+{
+    "body": "On a system where `config.h` can be found, polymake still fails to build:\n\n```\njonesbe@sage:~/sage/sage-5.0$ ./sage -f tmp/polymake-2.2.p6.spkg Calling sage-spkg on 'tmp/polymake-2.2.p6.spkg'polymake-2.2.p6====================================================Extracting package /home/jonesbe/sage/sage-5.0/tmp/polymake-2.2.p6.spkg-rw-r--r-- 1 jonesbe jonesbe 1502253 May 26 00:30 /home/jonesbe/sage/sage-5.0/tmp/polymake-2.2.p6.spkg\nFinished extraction\n****************************************************\nHost system:\nLinux sage 2.6.32 #1 SMP Fri Sep 2 21:08:57 CDT 2011 x86_64 GNU/Linux\n****************************************************C compiler: gcc\nC compiler version:\nUsing built-in specs.\nCOLLECT_GCC=gcc\nCOLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.6/lto-wrapper\nTarget: x86_64-linux-gnu\nConfigured with: ../src/configure -v --with-pkgversion='Debian 4.6.3-1' --with-bugurl=file:///usr/share/doc/gcc-4.6/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++,go --prefix=/usr --program-suffix=-4.6 --enable-shared --enable-linker-build-id --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.6 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-plugin --enable-objc-gc --with-arch-32=i586 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnuThread model: posixgcc version 4.6.3 (Debian 4.6.3-1) ****************************************************Using gmp-5.0.4 to build polymakeUsing cddlib-094f.p11 to build polymakeChecking if your kit is complete...\nLooks good\nWriting Makefile for Poly::Ext\nWriting MYMETA.yml\nmake[1]: Entering directory `/home/jonesbe/sage/sage-5.0/spkg/build/polymake-2.2.p6/src/build/perlx-5.14.2-x86_64-linux-gnu-thread-multi'\n/usr/bin/perl /usr/share/perl/5.14/ExtUtils/xsubpp  -typemap /usr/share/perl/5.14/ExtUtils/typemap  Ext.xs > Ext.xsc && mv Ext.xsc Ext.c\ncc -c   -D_REENTRANT -D_GNU_SOURCE -DDEBIAN -fstack-protector -fno-strict-aliasing -pipe -I/usr/local/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -g   -DVERSION=\\\"\\\" -DXS_VERSION=\\\"\\\" -fPIC \"-I/usr/lib/perl/5.14/CORE\"   Ext.c\nExt.xs: In function \u2018dump_me\u2019:\nExt.xs:64:92: error: \u2018XPVHV\u2019 has no member named \u2018xhv_name\u2019\nExt.xs:67:134: error: \u2018XPVAV\u2019 has no member named \u2018xav_flags\u2019\nmake[1]: *** [Ext.o] Error 1\nmake[1]: Leaving directory `/home/jonesbe/sage/sage-5.0/spkg/build/polymake-2.2.p6/src/build/perlx-5.14.2-x86_64-linux-gnu-thread-multi'\n[ -d /home/jonesbe/sage/sage-5.0/spkg/build/polymake-2.2.p6/src/build/perlx-5.14.2-x86_64-linux-gnu-thread-multi ] || perl /home/jonesbe/sage/sage-5.0/spkg/build/polymake-2.2.p6/src/support/install.pl -d -m 755 /home/jonesbe/sage/sage-5.0/spkg/build/polymake-2.2.p6/src/build/perlx-5.14.2-x86_64-linux-gnu-thread-multi\ncd /home/jonesbe/sage/sage-5.0/spkg/build/polymake-2.2.p6/src/build/perlx-5.14.2-x86_64-linux-gnu-thread-multi; TOP=/home/jonesbe/sage/sage-5.0/spkg/build/polymake-2.2.p6/src perl /home/jonesbe/sage/sage-5.0/spkg/build/polymake-2.2.p6/src/perl/ext/Makefile.PL\ncc -c   -D_REENTRANT -D_GNU_SOURCE -DDEBIAN -fstack-protector -fno-strict-aliasing -pipe -I/usr/local/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -g   -DVERSION=\\\"\\\" -DXS_VERSION=\\\"\\\" -fPIC \"-I/usr/lib/perl/5.14/CORE\"   Ext.c\nExt.xs: In function \u2018dump_me\u2019:\nExt.xs:64:92: error: \u2018XPVHV\u2019 has no member named \u2018xhv_name\u2019\nExt.xs:67:134: error: \u2018XPVAV\u2019 has no member named \u2018xav_flags\u2019\nmake[2]: *** [Ext.o] Error 1\nmake[1]: *** [all-perlx] Error 2\nmake: *** [all] Error 2\nFailed to configure.\n```\n\n\n Here is the (still broken) spkg in case anyone feels like diagnosing the build problem: http://sage.math.washington.edu/home/bjones/polymake-2.2.p6.spkg",
+    "created_at": "2012-05-26T05:40:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5488",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5488#issuecomment-42607",
+    "user": "benjaminfjones"
+}
+```
 
 On a system where `config.h` can be found, polymake still fails to build:
 
@@ -129,9 +209,20 @@ Failed to configure.
  Here is the (still broken) spkg in case anyone feels like diagnosing the build problem: http://sage.math.washington.edu/home/bjones/polymake-2.2.p6.spkg
 
 
+
 ---
 
-Comment by vbraun created at 2012-05-28 14:36:59
+archive/issue_comments_042608.json:
+```json
+{
+    "body": "I've packaged the current polymake 2.12 here:\n\nhttp://www.stp.dias.ie/~vbraun/Sage/spkg/polymake-2.12.p0.spkg\n\nIt doesn't compile because it requires more than just our cropped boost. You can't even use the system boost install (on Fedora 16) because it conflicts with our boost version. See also https://groups.google.com/d/topic/sage-devel/s5FftN1hPB0/discussion",
+    "created_at": "2012-05-28T14:36:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5488",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5488#issuecomment-42608",
+    "user": "vbraun"
+}
+```
 
 I've packaged the current polymake 2.12 here:
 
@@ -140,52 +231,129 @@ http://www.stp.dias.ie/~vbraun/Sage/spkg/polymake-2.12.p0.spkg
 It doesn't compile because it requires more than just our cropped boost. You can't even use the system boost install (on Fedora 16) because it conflicts with our boost version. See also https://groups.google.com/d/topic/sage-devel/s5FftN1hPB0/discussion
 
 
+
 ---
 
-Comment by kcrisman created at 2013-02-14 02:05:26
+archive/issue_comments_042609.json:
+```json
+{
+    "body": "See #13768 for something related. It relies on #13767 (additional boost headers).",
+    "created_at": "2013-02-14T02:05:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5488",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5488#issuecomment-42609",
+    "user": "kcrisman"
+}
+```
 
 See #13768 for something related. It relies on #13767 (additional boost headers).
 
 
+
 ---
 
-Comment by kcrisman created at 2014-11-20 14:17:39
+archive/issue_comments_042610.json:
+```json
+{
+    "body": "Volker, can you put your spkg up on a working link?  http://sage.math.washington.edu/home/vbraun/spkg/ seems appropriate.  Unfortunately the spkg link at #13768 also isn't working :( so it would be quite hard to test #14116.\n\n(If you though it was appropriate, one could close this as a dup of #13768, but in principle these could also remain separate.)",
+    "created_at": "2014-11-20T14:17:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5488",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5488#issuecomment-42610",
+    "user": "kcrisman"
+}
+```
 
 Volker, can you put your spkg up on a working link?  http://sage.math.washington.edu/home/vbraun/spkg/ seems appropriate.  Unfortunately the spkg link at #13768 also isn't working :( so it would be quite hard to test #14116.
 
 (If you though it was appropriate, one could close this as a dup of #13768, but in principle these could also remain separate.)
 
 
+
 ---
 
-Comment by kcrisman created at 2014-11-20 20:12:59
+archive/issue_comments_042611.json:
+```json
+{
+    "body": "I'm going to ask to close this, because I was able to use #14116 to compile on Mac.  Now, to be fair, [the polymake doc](http://polymake.org/doku.php/howto/mac_compiling_nofink) [doesn't quite](http://polymake.org/doku.php/howto/mac) [support OS X 10.5](http://polymake.org/doku.php/download/start) but anyway I think we are in good shape with something, if I could get it to compile and work (via library interface only) on 10.7, which is not their top priority.",
+    "created_at": "2014-11-20T20:12:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5488",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5488#issuecomment-42611",
+    "user": "kcrisman"
+}
+```
 
 I'm going to ask to close this, because I was able to use #14116 to compile on Mac.  Now, to be fair, [the polymake doc](http://polymake.org/doku.php/howto/mac_compiling_nofink) [doesn't quite](http://polymake.org/doku.php/howto/mac) [support OS X 10.5](http://polymake.org/doku.php/download/start) but anyway I think we are in good shape with something, if I could get it to compile and work (via library interface only) on 10.7, which is not their top priority.
 
 
+
 ---
 
-Comment by kcrisman created at 2014-11-20 20:12:59
+archive/issue_comments_042612.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2014-11-20T20:12:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5488",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5488#issuecomment-42612",
+    "user": "kcrisman"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by kcrisman created at 2014-11-20 20:13:06
+archive/issue_comments_042613.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2014-11-20T20:13:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5488",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5488#issuecomment-42613",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by vbraun created at 2014-11-20 20:22:58
+archive/issue_comments_042614.json:
+```json
+{
+    "body": "New spkg link for the record: \u200bhttp://sage.math.washington.edu/home/vbraun/spkg/polymake-2.12.p0.spkg",
+    "created_at": "2014-11-20T20:22:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5488",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5488#issuecomment-42614",
+    "user": "vbraun"
+}
+```
 
 New spkg link for the record: ​http://sage.math.washington.edu/home/vbraun/spkg/polymake-2.12.p0.spkg
 
 
+
 ---
 
-Comment by vbraun created at 2014-11-28 18:38:31
+archive/issue_comments_042615.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2014-11-28T18:38:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5488",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5488#issuecomment-42615",
+    "user": "vbraun"
+}
+```
 
 Resolution: fixed

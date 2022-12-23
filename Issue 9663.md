@@ -1,11 +1,21 @@
 # Issue 9663: Fast computation of Stirling numbers of 2nd kind
 
-Issue created by migration from https://trac.sagemath.org/ticket/9663
-
-Original creator: fredrik.johansson
-
-Original creation time: 2010-08-01 18:44:18
-
+archive/issues_009663.json:
+```json
+{
+    "body": "Assignee: sage-combinat\n\nCC:  was\n\nCurrently, Stirling numbers are computed by calling GAP. The patch provides fast Cython code for Stirling numbers of the second kind, and allows using GAP or Maxima as an optional algorithm.\n\nBy having less overhead, the Cython code is about 10000 times faster than GAP or Maxima for tiny inputs, and it remains much faster than GAP for larger inputs as well. Apparently Maxima uses a fast algorithm unlike GAP, but my code is still about twice as fast as Maxima for huge n due to an algorithmic optimization.\n\n\n```\nsage: %timeit stirling_number2(10,5)\n625 loops, best of 3: 2.33 \u00b5s per loop\nsage: %timeit stirling_number2(10,5,algorithm='gap')\n25 loops, best of 3: 20 ms per loop\nsage: %timeit stirling_number2(10,5,algorithm='maxima')\n5 loops, best of 3: 40 ms per loop\n\n625 loops, best of 3: 16.2 \u00b5s per loop\nsage: %timeit stirling_number2(100,50,algorithm='gap')\n25 loops, best of 3: 20 ms per loop\nsage: %timeit stirling_number2(100,50,algorithm='maxima')\n5 loops, best of 3: 40 ms per loop\n\nsage: %timeit stirling_number2(2000,1500)\n25 loops, best of 3: 35.9 ms per loop\nsage: %timeit stirling_number2(2000,1500,algorithm='gap')\n5 loops, best of 3: 348 ms per loop\nsage: %timeit stirling_number2(2000,1500,algorithm='maxima')\n5 loops, best of 3: 210 ms per loop\n\nsage: %timeit stirling_number2(4000,3000)\n5 loops, best of 3: 249 ms per loop\nsage: %timeit stirling_number2(4000,3000,algorithm='gap')\n5 loops, best of 3: 2.96 s per loop\nsage: %timeit stirling_number2(4000,3000,algorithm='maxima')\n5 loops, best of 3: 948 ms per loop\n\nsage: %time stirling_number2(20000,15000);\nCPU times: user 20.30 s, sys: 0.23 s, total: 20.53 s\nWall time: 21.82 s\nsage: %time stirling_number2(20000,15000,algorithm='maxima');\nCPU times: user 0.00 s, sys: 0.01 s, total: 0.01 s\nWall time: 51.90 s\n```\n\n\nMathematica seems to be about as slow as GAP (warning: timed on a different system):\n\n```\nIn[1]:= Timing[StirlingS2[4000,3000];]\nOut[1]= {27.1809, Null}\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9663\n\n",
+    "created_at": "2010-08-01T18:44:18Z",
+    "labels": [
+        "combinatorics",
+        "major",
+        "enhancement"
+    ],
+    "title": "Fast computation of Stirling numbers of 2nd kind",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9663",
+    "user": "fredrik.johansson"
+}
+```
 Assignee: sage-combinat
 
 CC:  was
@@ -60,17 +70,43 @@ Out[1]= {27.1809, Null}
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/9663
+
+
+
+
 
 ---
 
-Comment by fredrik.johansson created at 2010-08-01 19:15:35
+archive/issue_comments_093785.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-08-01T19:15:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9663",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9663#issuecomment-93785",
+    "user": "fredrik.johansson"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by was created at 2010-08-05 02:48:47
+archive/issue_comments_093786.json:
+```json
+{
+    "body": "Please explain the *massive* number of changes to module_list.py of the form:\n\n```\n153\t \t                [[blank looking line]]\n \t153\t                [[another blank looking line]]\n```\n",
+    "created_at": "2010-08-05T02:48:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9663",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9663#issuecomment-93786",
+    "user": "was"
+}
+```
 
 Please explain the *massive* number of changes to module_list.py of the form:
 
@@ -81,30 +117,76 @@ Please explain the *massive* number of changes to module_list.py of the form:
 
 
 
+
 ---
 
-Comment by fredrik.johansson created at 2010-08-05 10:05:16
+archive/issue_comments_093787.json:
+```json
+{
+    "body": "Oops, my editor was set to \"strip trailing whitespace when saving files\".",
+    "created_at": "2010-08-05T10:05:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9663",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9663#issuecomment-93787",
+    "user": "fredrik.johansson"
+}
+```
 
 Oops, my editor was set to "strip trailing whitespace when saving files".
 
 
+
 ---
 
-Comment by fredrik.johansson created at 2010-08-05 22:39:31
+archive/issue_comments_093788.json:
+```json
+{
+    "body": "fast implementation of stirling_number2 -- updated patch",
+    "created_at": "2010-08-05T22:39:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9663",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9663#issuecomment-93788",
+    "user": "fredrik.johansson"
+}
+```
 
 fast implementation of stirling_number2 -- updated patch
 
 
+
 ---
+
+archive/issue_comments_093789.json:
+```json
+{
+    "body": "Attachment\n\nPlease see the new version of the patch.",
+    "created_at": "2010-08-05T22:40:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9663",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9663#issuecomment-93789",
+    "user": "fredrik.johansson"
+}
+```
 
 Attachment
 
 Please see the new version of the patch.
 
 
+
 ---
 
-Comment by ncohen created at 2010-09-05 15:19:56
+archive/issue_comments_093790.json:
+```json
+{
+    "body": "Nice one !!\n\nI learned many things while reviewing this patch `:-)`\n\nWould you mind adding this small doctest in the patch I attach ? If not, you can set this ticket to \"positive_review\" !\n\nThanksssssssssssss !!!\n\nNathann",
+    "created_at": "2010-09-05T15:19:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9663",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9663#issuecomment-93790",
+    "user": "ncohen"
+}
+```
 
 Nice one !!
 
@@ -117,64 +199,154 @@ Thanksssssssssssss !!!
 Nathann
 
 
+
 ---
+
+archive/issue_comments_093791.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-09-05T15:20:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9663",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9663#issuecomment-93791",
+    "user": "ncohen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by ncohen created at 2010-10-04 06:01:13
+archive/issue_comments_093792.json:
+```json
+{
+    "body": "Are you around ? There's basically nothing to do on this patch `:-)`\n\nNathann",
+    "created_at": "2010-10-04T06:01:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9663",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9663#issuecomment-93792",
+    "user": "ncohen"
+}
+```
 
 Are you around ? There's basically nothing to do on this patch `:-)`
 
 Nathann
 
 
+
 ---
 
-Comment by nborie created at 2010-10-24 10:44:09
+archive/issue_comments_093793.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-10-24T10:44:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9663",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9663#issuecomment-93793",
+    "user": "nborie"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by nborie created at 2010-10-24 10:44:09
+archive/issue_comments_093794.json:
+```json
+{
+    "body": "The two patch applied on 4.5.3 All tests pass, no warning in docbuild... Nice documentation, powerful implantation... Good job!\n\nI give the two patch a positive review.\n\nFor the release manager, please apply :\n* stirling2.patch\n* trac_9663 - additional test.patch",
+    "created_at": "2010-10-24T10:44:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9663",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9663#issuecomment-93794",
+    "user": "nborie"
+}
+```
 
 The two patch applied on 4.5.3 All tests pass, no warning in docbuild... Nice documentation, powerful implantation... Good job!
 
 I give the two patch a positive review.
 
 For the release manager, please apply :
- * stirling2.patch
- * trac_9663 - additional test.patch
+* stirling2.patch
+* trac_9663 - additional test.patch
+
 
 
 ---
 
-Comment by jdemeyer created at 2010-10-26 08:52:31
+archive/issue_comments_093795.json:
+```json
+{
+    "body": "I think you should add a patch with a test for \"unknown algorithm\".",
+    "created_at": "2010-10-26T08:52:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9663",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9663#issuecomment-93795",
+    "user": "jdemeyer"
+}
+```
 
 I think you should add a patch with a test for "unknown algorithm".
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-10-26 08:53:19
+archive/issue_comments_093796.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_work.",
+    "created_at": "2010-10-26T08:53:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9663",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9663#issuecomment-93796",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from positive_review to needs_work.
 
 
----
-
-Comment by jdemeyer created at 2010-10-26 08:54:28
-
-Also, *please* do not put spaces in patch filenames.
-
 
 ---
 
-Comment by ncohen created at 2010-10-26 09:15:49
+archive/issue_comments_093797.json:
+```json
+{
+    "body": "Also, **please** do not put spaces in patch filenames.",
+    "created_at": "2010-10-26T08:54:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9663",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9663#issuecomment-93797",
+    "user": "jdemeyer"
+}
+```
+
+Also, **please** do not put spaces in patch filenames.
+
+
+
+---
+
+archive/issue_comments_093798.json:
+```json
+{
+    "body": "Replying to [comment:8 jdemeyer]:\n> I think you should add a patch with a test for \"unknown algorithm\".\n\nWhat do you mean ?\n\nNathann",
+    "created_at": "2010-10-26T09:15:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9663",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9663#issuecomment-93798",
+    "user": "ncohen"
+}
+```
 
 Replying to [comment:8 jdemeyer]:
 > I think you should add a patch with a test for "unknown algorithm".
@@ -184,9 +356,20 @@ What do you mean ?
 Nathann
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-10-26 09:43:31
+archive/issue_comments_093799.json:
+```json
+{
+    "body": "Replying to [comment:11 ncohen]:\n> Replying to [comment:8 jdemeyer]:\n> > I think you should add a patch with a test for \"unknown algorithm\".\n> \n> What do you mean ?\n\nA test which does something like\n\n```\nsage: n = stirling_number2(20,11,algorithm='foobar')\n```\n\nto check the \"unknown algorithm\" code.",
+    "created_at": "2010-10-26T09:43:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9663",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9663#issuecomment-93799",
+    "user": "jdemeyer"
+}
+```
 
 Replying to [comment:11 ncohen]:
 > Replying to [comment:8 jdemeyer]:
@@ -203,25 +386,58 @@ sage: n = stirling_number2(20,11,algorithm='foobar')
 to check the "unknown algorithm" code.
 
 
+
 ---
 
-Comment by ncohen created at 2010-10-26 10:20:33
+archive/issue_comments_093800.json:
+```json
+{
+    "body": "Here is a new version of my patch with the requested doctest.\n\nNathann",
+    "created_at": "2010-10-26T10:20:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9663",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9663#issuecomment-93800",
+    "user": "ncohen"
+}
+```
 
 Here is a new version of my patch with the requested doctest.
 
 Nathann
 
 
+
 ---
 
-Comment by ncohen created at 2010-10-26 10:20:33
+archive/issue_comments_093801.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-10-26T10:20:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9663",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9663#issuecomment-93801",
+    "user": "ncohen"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-10-26 11:50:22
+archive/issue_comments_093802.json:
+```json
+{
+    "body": "Replying to [comment:13 ncohen]:\n> Here is a new version of my patch with the requested doctest.\n> \n> Nathann\n\nOn line 670, `TESTS::` should be `TESTS:` (the :: should precede a block of code, which is not the case here).",
+    "created_at": "2010-10-26T11:50:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9663",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9663#issuecomment-93802",
+    "user": "jdemeyer"
+}
+```
 
 Replying to [comment:13 ncohen]:
 > Here is a new version of my patch with the requested doctest.
@@ -231,43 +447,111 @@ Replying to [comment:13 ncohen]:
 On line 670, `TESTS::` should be `TESTS:` (the :: should precede a block of code, which is not the case here).
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-10-26 11:50:22
+archive/issue_comments_093803.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-10-26T11:50:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9663",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9663#issuecomment-93803",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by ncohen created at 2010-10-26 11:58:18
+archive/issue_comments_093804.json:
+```json
+{
+    "body": "Done.\n\nNathann",
+    "created_at": "2010-10-26T11:58:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9663",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9663#issuecomment-93804",
+    "user": "ncohen"
+}
+```
 
 Done.
 
 Nathann
 
 
+
 ---
 
-Comment by ncohen created at 2010-10-26 11:58:18
+archive/issue_comments_093805.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-10-26T11:58:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9663",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9663#issuecomment-93805",
+    "user": "ncohen"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
+
+archive/issue_comments_093806.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-10-26T11:58:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9663",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9663#issuecomment-93806",
+    "user": "ncohen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-10-27 12:25:15
+archive/issue_comments_093807.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-10-27T12:25:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9663",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9663#issuecomment-93807",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-11-01 10:09:45
+archive/issue_comments_093808.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-11-01T10:09:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9663",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9663#issuecomment-93808",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: fixed

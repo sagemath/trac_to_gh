@@ -1,11 +1,21 @@
 # Issue 3041: optimization setting in LinBox.spkg is broken
 
-Issue created by migration from https://trac.sagemath.org/ticket/3041
-
-Original creator: mabshoff
-
-Original creation time: 2008-04-27 04:54:06
-
+archive/issues_003041.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nFrancois reports:\n\n```\nJust reviewing what options linbox is compiled with for sage,\nwell I was really looking at whether optimizations are enabled.\nIn theory they are, except on Sun:\nif [ $UNAME = \"SunOS\" ]; then\n   OPT=\"--enable-optimization=false\"\n   echo \"Building on SunOS\"\nelse\n   OPT=\"--enable-optimization\"\nfi\n\nOf course in practice they aren't because \"$OPS\" and not\n\"$OPT\" is passed to the configuration. I must admit I didn't\ncheck if it was corrected in 3.0.1.alpha0 but if so I missed\nit in michael's log. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3041\n\n",
+    "created_at": "2008-04-27T04:54:06Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "optimization setting in LinBox.spkg is broken",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3041",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 Francois reports:
@@ -28,8 +38,25 @@ it in michael's log.
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3041
+
+
+
+
 
 ---
+
+archive/issue_comments_020924.json:
+```json
+{
+    "body": "Attachment\n\nThe spkg at \n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0.1/alpha1/linbox-1.1.5.p4.spkg\n\ncontains the fix in form of the above patch. It builds fine for me on sage.math and bsd.\n\nCheers,\n\nMichael",
+    "created_at": "2008-04-27T05:03:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3041",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3041#issuecomment-20924",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -44,30 +71,74 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by jkantor created at 2008-04-27 05:27:30
+archive/issue_comments_020925.json:
+```json
+{
+    "body": "Tested on OSX and Linux. Spkg builds, modular forms doctest all pass.",
+    "created_at": "2008-04-27T05:27:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3041",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3041#issuecomment-20925",
+    "user": "jkantor"
+}
+```
 
 Tested on OSX and Linux. Spkg builds, modular forms doctest all pass.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-27 05:33:45
+archive/issue_comments_020926.json:
+```json
+{
+    "body": "Merged in Sage 3.0.1.alpha1",
+    "created_at": "2008-04-27T05:33:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3041",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3041#issuecomment-20926",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.1.alpha1
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-27 05:33:45
+archive/issue_comments_020927.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-04-27T05:33:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3041",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3041#issuecomment-20927",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-27 05:36:12
+archive/issue_comments_020928.json:
+```json
+{
+    "body": "Partial credit goes to Francois Bissey.\n\nCheers,\n\nMichael",
+    "created_at": "2008-04-27T05:36:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3041",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3041#issuecomment-20928",
+    "user": "mabshoff"
+}
+```
 
 Partial credit goes to Francois Bissey.
 

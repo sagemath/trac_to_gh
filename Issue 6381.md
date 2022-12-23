@@ -1,11 +1,21 @@
 # Issue 6381: bug in integral_points when rank is large
 
-Issue created by migration from https://trac.sagemath.org/ticket/6381
-
-Original creator: was
-
-Original creation time: 2009-06-21 22:12:09
-
+archive/issues_006381.json:
+```json
+{
+    "body": "Assignee: was\n\nI don't know if this would ever finish, but it probably shouldn't stop with the following error! (this is in sage-4.0.2 on sage.math):\n\n```\nwstein@sage:~/build/sage-4.0.2$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: D=6611719866; E = EllipticCurve([0,0,0,-D^2,0])\nsage: time E.integral_points()\n---------------------------------------------------------------------------\nOverflowError                             Traceback (most recent call last)\n| Sage Version 4.0.2, Release Date: 2009-06-18                       |\n| Type notebook() for the GUI, and license() for information.        |\n/scratch/wstein/sage/temp/sage.math.washington.edu/21323/_scratch_wstein_sage_init_sage_0.py in <module>()\n\n/scratch/wstein/build/sage-4.0.2/local/lib/python2.5/site-packages/IPython/iplib.pyc in ipmagic(self, arg_s)\n    951         else:\n    952             magic_args = self.var_expand(magic_args,1)\n--> 953             return fn(magic_args)\n    954 \n    955     def ipalias(self,arg_s):\n\n/scratch/wstein/build/sage-4.0.2/local/lib/python2.5/site-packages/IPython/Magic.pyc in magic_time(self, parameter_s)\n   1905         if mode=='eval':\n   1906             st = clk()\n-> 1907             out = eval(code,glob)\n   1908             end = clk()\n   1909         else:\n\n/scratch/wstein/sage/temp/sage.math.washington.edu/21323/_scratch_wstein_sage_init_sage_0.py in <module>()\n\n/scratch/wstein/build/sage-4.0.2/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.pyc in integral_points(self, mw_base, both_signs, verbose)\n   5801         if disc > 0:\n   5802             ##Points in egg have X(P) between e1 and e2 [X(P)=x(P)+b2/12]:\n-> 5803             x_int_points = self.integral_x_coords_in_interval((e1-b2_12).ceil(), (e2-b2_12).floor()+1)\n   5804             if verbose:\n   5805                 print 'x-coords of points on compact component with ',(e1-b2_12).ceil(),'<=x<=',(e2-b2_12).floor()\n\n/scratch/wstein/build/sage-4.0.2/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.pyc in integral_x_coords_in_interval(self, xmin, xmax)\n   5466         `x`-coordinates of points on this curve.\n   5467         \"\"\"\n-> 5468         return set([x for x  in range(xmin,xmax) if self.is_x_coord(x)])\n   5469 \n   5470     def integral_points(self, mw_base='auto', both_signs=False, verbose=False):\n\nOverflowError: range() result has too many items\n```\n\n\nIt might be better to use xrange, or say that the rank is too big, so the computation would never finish or something meaningful.\n\nOn 32-bit it fails in the same place but with a *different* error:\n\n```\n...\nTypeError: range() integer start argument expected, got sage.rings.integer.Integer.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6381\n\n",
+    "created_at": "2009-06-21T22:12:09Z",
+    "labels": [
+        "number theory",
+        "minor",
+        "bug"
+    ],
+    "title": "bug in integral_points when rank is large",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6381",
+    "user": "was"
+}
+```
 Assignee: was
 
 I don't know if this would ever finish, but it probably shouldn't stop with the following error! (this is in sage-4.0.2 on sage.math):
@@ -58,7 +68,7 @@ OverflowError: range() result has too many items
 
 It might be better to use xrange, or say that the rank is too big, so the computation would never finish or something meaningful.
 
-On 32-bit it fails in the same place but with a _different_ error:
+On 32-bit it fails in the same place but with a *different* error:
 
 ```
 ...
@@ -66,66 +76,171 @@ TypeError: range() integer start argument expected, got sage.rings.integer.Integ
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6381
+
+
+
+
 
 ---
 
-Comment by cremona created at 2009-06-22 08:39:53
+archive/issue_comments_051079.json:
+```json
+{
+    "body": "It should be pretty easy since the rank and gens are found very quickly.  The failure is simply that range() is used to loop over the integers between -D and 0 (to find the integral points on the egg) and D is too big.",
+    "created_at": "2009-06-22T08:39:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6381",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6381#issuecomment-51079",
+    "user": "cremona"
+}
+```
 
 It should be pretty easy since the rank and gens are found very quickly.  The failure is simply that range() is used to loop over the integers between -D and 0 (to find the integral points on the egg) and D is too big.
 
 
+
 ---
 
-Comment by cremona created at 2009-06-24 10:31:54
+archive/issue_comments_051080.json:
+```json
+{
+    "body": "Applies to 4.0.2",
+    "created_at": "2009-06-24T10:31:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6381",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6381#issuecomment-51080",
+    "user": "cremona"
+}
+```
 
 Applies to 4.0.2
 
 
+
 ---
+
+archive/issue_comments_051081.json:
+```json
+{
+    "body": "Attachment\n\nPatch fixes the problem.  I wrote a longer comment but it was lost when I added the patch and I'm not going to type it again!",
+    "created_at": "2009-06-24T10:34:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6381",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6381#issuecomment-51081",
+    "user": "cremona"
+}
+```
 
 Attachment
 
 Patch fixes the problem.  I wrote a longer comment but it was lost when I added the patch and I'm not going to type it again!
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-07-20 20:29:46
+archive/issue_comments_051082.json:
+```json
+{
+    "body": "Changing component from number theory to elliptic curves.",
+    "created_at": "2009-07-20T20:29:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6381",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6381#issuecomment-51082",
+    "user": "davidloeffler"
+}
+```
 
 Changing component from number theory to elliptic curves.
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-07-20 20:29:46
+archive/issue_comments_051083.json:
+```json
+{
+    "body": "Changing assignee from was to davidloeffler.",
+    "created_at": "2009-07-20T20:29:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6381",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6381#issuecomment-51083",
+    "user": "davidloeffler"
+}
+```
 
 Changing assignee from was to davidloeffler.
 
 
+
 ---
 
-Comment by was created at 2009-07-21 04:33:51
+archive/issue_comments_051084.json:
+```json
+{
+    "body": "Looks good to me.  Thanks!",
+    "created_at": "2009-07-21T04:33:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6381",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6381#issuecomment-51084",
+    "user": "was"
+}
+```
 
 Looks good to me.  Thanks!
 
 
+
 ---
 
-Comment by mvngu created at 2009-07-22 18:26:33
+archive/issue_comments_051085.json:
+```json
+{
+    "body": "When using Mercurial queue, one has to be careful about the commit message. I would manually edit the commit message of a patch before uploading it to the trac server. A number of folks who use Mercurial queue upload patches that have nonsensical commit messages.",
+    "created_at": "2009-07-22T18:26:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6381",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6381#issuecomment-51085",
+    "user": "mvngu"
+}
+```
 
 When using Mercurial queue, one has to be careful about the commit message. I would manually edit the commit message of a patch before uploading it to the trac server. A number of folks who use Mercurial queue upload patches that have nonsensical commit messages.
 
 
+
 ---
 
-Comment by mvngu created at 2009-07-23 08:02:56
+archive/issue_comments_051086.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-07-23T08:02:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6381",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6381#issuecomment-51086",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by cremona created at 2009-07-23 17:58:28
+archive/issue_comments_051087.json:
+```json
+{
+    "body": "Replying to [comment:5 mvngu]:\n> When using Mercurial queue, one has to be careful about the commit message. I would manually edit the commit message of a patch before uploading it to the trac server. A number of folks who use Mercurial queue upload patches that have nonsensical commit messages.\n\nVery sorry, I am one of these culprits.  I'll try to remember!",
+    "created_at": "2009-07-23T17:58:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6381",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6381#issuecomment-51087",
+    "user": "cremona"
+}
+```
 
 Replying to [comment:5 mvngu]:
 > When using Mercurial queue, one has to be careful about the commit message. I would manually edit the commit message of a patch before uploading it to the trac server. A number of folks who use Mercurial queue upload patches that have nonsensical commit messages.

@@ -1,11 +1,21 @@
 # Issue 4194: pylab plots cut off
 
-Issue created by migration from https://trac.sagemath.org/ticket/4194
-
-Original creator: malb
-
-Original creation time: 2008-09-25 10:21:00
-
+archive/issues_004194.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  mvgnu mhansen jason\n\nKeywords: plot\n\nOn Thursday 25 September 2008, Stan Schymanski wrote on [sage-support]:\n> Dear all,\n>\n> When I upgraded to 3.1.2, I found that some of my plots generated\n> using pylab in the notebooks miss their bottom bits. It seems to be\n> related to the dpi setting. Example:\n\n```\nimport pylab\nx1 = srange(0,1.1,0.01)\nd1 = [2*x+x^2 for x in x1]\npylab.clf() # clear the figure first\npylab.figure(1)\npylab.plot(x1,d1, label=\"d1\")\npylab.ylabel(\"$f(x)$\") # label the axes\npylab.xlabel(\"$x$\")\npylab.savefig('foo.png',dpi=72) # fire!\n```\n\n> If I leave the \"dpi=72\" out in the last line, the plot is larger and\n> complete. This problem did not occur in sage 3.1.1, so I assume that\n> it is a bug.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4194\n\n",
+    "created_at": "2008-09-25T10:21:00Z",
+    "labels": [
+        "graphics",
+        "major",
+        "bug"
+    ],
+    "title": "pylab plots cut off",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4194",
+    "user": "malb"
+}
+```
 Assignee: was
 
 CC:  mvgnu mhansen jason
@@ -35,17 +45,45 @@ pylab.savefig('foo.png',dpi=72) # fire!
 > complete. This problem did not occur in sage 3.1.1, so I assume that
 > it is a bug.
 
+Issue created by migration from https://trac.sagemath.org/ticket/4194
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2008-09-27 00:36:42
+archive/issue_comments_030436.json:
+```json
+{
+    "body": "This is because matplotlib doesn't like the Sage Integer 72.  If you change the 72 to int(72), then things work.  We should probably write an email to the matplotlib mailing list asking them how hard it would be to make it play nicely with Sage types.\n\nWe also encounter similar issues with numpy and scipy.",
+    "created_at": "2008-09-27T00:36:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4194",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4194#issuecomment-30436",
+    "user": "mhansen"
+}
+```
 
 This is because matplotlib doesn't like the Sage Integer 72.  If you change the 72 to int(72), then things work.  We should probably write an email to the matplotlib mailing list asking them how hard it would be to make it play nicely with Sage types.
 
 We also encounter similar issues with numpy and scipy.
 
 
+
 ---
+
+archive/issue_comments_030437.json:
+```json
+{
+    "body": "Attachment\n\nTo release manager:\nThis now works, given #5448 (and possibly earlier).\n\n```\nsage: import pylab\nsage: x1 = srange(0,1.1,0.01)\nsage: d1 = [2*x+x^2 for x in x1]\nsage: pylab.clf() # clear the figure first\nsage: pylab.figure(1)\n<matplotlib.figure.Figure object at 0x16d41d0>\nsage: pylab.plot(x1,d1, label=\"d1\")\n[<matplotlib.lines.Line2D object at 0x102ceb0>]\nsage: pylab.ylabel(\"$f(x)$\") # label the axes\n<matplotlib.text.Text object at 0x4413f0>\nsage: pylab.xlabel(\"$x$\")\n<matplotlib.text.Text object at 0x1038890>\nsage: pylab.savefig('foo.png',dpi=72)\n```\n\nfoo.png is attached.",
+    "created_at": "2009-09-15T17:34:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4194",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4194#issuecomment-30437",
+    "user": "kcrisman"
+}
+```
 
 Attachment
 
@@ -71,16 +109,38 @@ sage: pylab.savefig('foo.png',dpi=72)
 foo.png is attached.
 
 
+
 ---
 
-Comment by jason created at 2009-09-29 16:05:03
+archive/issue_comments_030438.json:
+```json
+{
+    "body": "kcrisman says this works now, so should be closed.",
+    "created_at": "2009-09-29T16:05:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4194",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4194#issuecomment-30438",
+    "user": "jason"
+}
+```
 
 kcrisman says this works now, so should be closed.
 
 
+
 ---
 
-Comment by jason created at 2009-10-01 03:49:55
+archive/issue_comments_030439.json:
+```json
+{
+    "body": "Don't close this.\n\nSomething really, really weird is going on.\n\nIn a fresh Sage session (not even in the notebook, just in a Sage console session), running the following (simplified from above) code produces png that is cut off which is about 12K:\n\n\n```\nimport matplotlib.pyplot as plt\nimport numpy\nplt.figure()\nplt.plot(numpy.arange(0,1.1,0.01))\nplt.savefig('foo.png',dpi=72) # fire!\n```\n\n\nHowever, immediately saving the figure again using `plt.savefig('foo.png',dpi=72)` writes a 13K file which is not cut off.\n\nDoing the same test with sage -python yields the correct figure the first time.  Doing the same test with the system python yields the correct figure the first time.  This is with the matplotlib 0.99.1 spkg installed.",
+    "created_at": "2009-10-01T03:49:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4194",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4194#issuecomment-30439",
+    "user": "jason"
+}
+```
 
 Don't close this.
 
@@ -103,44 +163,112 @@ However, immediately saving the figure again using `plt.savefig('foo.png',dpi=72
 Doing the same test with sage -python yields the correct figure the first time.  Doing the same test with the system python yields the correct figure the first time.  This is with the matplotlib 0.99.1 spkg installed.
 
 
+
 ---
 
-Comment by jason created at 2009-10-01 16:35:31
+archive/issue_comments_030440.json:
+```json
+{
+    "body": "I've posted to the matplotlib-user mailing list today about this issue.",
+    "created_at": "2009-10-01T16:35:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4194",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4194#issuecomment-30440",
+    "user": "jason"
+}
+```
 
 I've posted to the matplotlib-user mailing list today about this issue.
 
 
+
 ---
 
-Comment by ryan created at 2011-01-11 04:00:51
+archive/issue_comments_030441.json:
+```json
+{
+    "body": "With sage 4.6.0 it is still cut off (matplotlib 1.0.0)",
+    "created_at": "2011-01-11T04:00:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4194",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4194#issuecomment-30441",
+    "user": "ryan"
+}
+```
 
 With sage 4.6.0 it is still cut off (matplotlib 1.0.0)
 
 
+
 ---
 
-Comment by ryan created at 2011-01-11 04:23:19
+archive/issue_comments_030442.json:
+```json
+{
+    "body": "for those interested, here is the matplotlib-users discussion\n\nhttp://sourceforge.net/mailarchive/forum.php?thread_name=6e8d907b0910061125o4f93bfb4u2ec934042c057ddd%40mail.gmail.com&forum_name=matplotlib-users",
+    "created_at": "2011-01-11T04:23:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4194",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4194#issuecomment-30442",
+    "user": "ryan"
+}
+```
 
 for those interested, here is the matplotlib-users discussion
 
 http://sourceforge.net/mailarchive/forum.php?thread_name=6e8d907b0910061125o4f93bfb4u2ec934042c057ddd%40mail.gmail.com&forum_name=matplotlib-users
 
 
+
 ---
 
-Comment by ryan created at 2011-01-11 05:31:05
+archive/issue_comments_030443.json:
+```json
+{
+    "body": "workaround for matplotlib 1.0.0 bug",
+    "created_at": "2011-01-11T05:31:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4194",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4194#issuecomment-30443",
+    "user": "ryan"
+}
+```
 
 workaround for matplotlib 1.0.0 bug
 
 
+
 ---
 
-Comment by ryan created at 2011-01-11 05:33:10
+archive/issue_comments_030444.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2011-01-11T05:33:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4194",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4194#issuecomment-30444",
+    "user": "ryan"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_030445.json:
+```json
+{
+    "body": "Attachment\n\naccording to the matplotlib-users discussion, the issue arises because the file is not flushed before being closed.  This patch correctly opens, writes and most importantly flush the file before closing.\n\nThe bug still appears to exist upstream.",
+    "created_at": "2011-01-11T05:33:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4194",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4194#issuecomment-30445",
+    "user": "ryan"
+}
+```
 
 Attachment
 
@@ -149,29 +277,73 @@ according to the matplotlib-users discussion, the issue arises because the file 
 The bug still appears to exist upstream.
 
 
+
 ---
 
-Comment by ryan created at 2011-01-11 06:04:11
+archive/issue_comments_030446.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2011-01-11T06:04:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4194",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4194#issuecomment-30446",
+    "user": "ryan"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by ryan created at 2011-01-11 06:16:28
+archive/issue_comments_030447.json:
+```json
+{
+    "body": "see #10588.  Upgrading to matplotlib 1.0.1 should fix the issue",
+    "created_at": "2011-01-11T06:16:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4194",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4194#issuecomment-30447",
+    "user": "ryan"
+}
+```
 
 see #10588.  Upgrading to matplotlib 1.0.1 should fix the issue
 
 
+
 ---
 
-Comment by jason created at 2011-10-18 18:25:30
+archive/issue_comments_030448.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2011-10-18T18:25:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4194",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4194#issuecomment-30448",
+    "user": "jason"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by jason created at 2011-10-18 18:25:30
+archive/issue_comments_030449.json:
+```json
+{
+    "body": "Indeed, this is now fixed.",
+    "created_at": "2011-10-18T18:25:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4194",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4194#issuecomment-30449",
+    "user": "jason"
+}
+```
 
 Indeed, this is now fixed.

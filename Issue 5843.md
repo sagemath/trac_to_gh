@@ -1,11 +1,21 @@
 # Issue 5843: race condition in cached_method (should not be shared between instances)
 
-Issue created by migration from https://trac.sagemath.org/ticket/5843
-
-Original creator: nthiery
-
-Original creation time: 2009-04-21 08:43:49
-
+archive/issues_005843.json:
+```json
+{
+    "body": "Assignee: mhansen\n\nCC:  sage-combinat mhansen\n\nKeywords: race condition, cached_method, cache\n\nConsider the following class (simplified from a real life example, after 3 hours of heisenbug debugging):\n\n```\nclass bla:\n    def __init__(self, value):\n        self.value = value\n    #\n    @cached_method\n    def f(self, x):\n        return self.value\n```\n\n\nThe method f ignores its input, and should return self.value:\n\n```\nsage: x = bla(1)\nsage: y = bla(2)\nsage: x.f(None)\n1\nsage: y.f(None)\n2\n```\n\n\nThen, y.f(x.f) should ignore the inner x.f and return 2. It does not:\n\n```\nsage: sage: y.f(x.f)\n1\n```\n\n\nThe reason is that x.f and y.f, and all other instances of bla share the same cached_method object.\n\n```\nsage: x.f is y.f\nTrue\nsage: x.f is x.__class__.f\nTrue\n```\n\n\nand the _instance field is set to the latest instance for which this method has been queried:\n\n```\nsage: yf = y.f\nsage: yf._instance is y\nTrue\nsage: x.f\nCached version of <function f at 0xb532d84>\nsage: yf._instance is y\nFalse\nsage: yf._instance is x\nTrue\n```\n\n\nMost of the time things work well, but there can be race conditions, as in the example above.\n\nNicolas and Florent\n\nIssue created by migration from https://trac.sagemath.org/ticket/5843\n\n",
+    "created_at": "2009-04-21T08:43:49Z",
+    "labels": [
+        "misc",
+        "critical",
+        "bug"
+    ],
+    "title": "race condition in cached_method (should not be shared between instances)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5843",
+    "user": "nthiery"
+}
+```
 Assignee: mhansen
 
 CC:  sage-combinat mhansen
@@ -74,10 +84,25 @@ Most of the time things work well, but there can be race conditions, as in the e
 
 Nicolas and Florent
 
+Issue created by migration from https://trac.sagemath.org/ticket/5843
+
+
+
+
 
 ---
 
-Comment by nthiery created at 2009-04-21 08:59:06
+archive/issue_comments_045942.json:
+```json
+{
+    "body": "Possible correct implementation:\n   cached_method could return a closure instead of function object. Upon assignment to the\n   class, this closure would become just a usual unbound method, removing the need to handle\n   by hand the instance binding.",
+    "created_at": "2009-04-21T08:59:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5843",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5843#issuecomment-45942",
+    "user": "nthiery"
+}
+```
 
 Possible correct implementation:
    cached_method could return a closure instead of function object. Upon assignment to the
@@ -85,21 +110,56 @@ Possible correct implementation:
    by hand the instance binding.
 
 
+
 ---
+
+archive/issue_comments_045943.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-01-18T22:52:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5843",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5843#issuecomment-45943",
+    "user": "wjp"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by wjp created at 2010-01-18 23:52:39
+archive/issue_comments_045944.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-01-18T23:52:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5843",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5843#issuecomment-45944",
+    "user": "wjp"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by wjp created at 2010-01-18 23:52:39
+archive/issue_comments_045945.json:
+```json
+{
+    "body": "I added a patch that returns a (newly created) `CachedMethodCaller` object from `CachedMethod.__get__` that stores the instance on which the `CachedMethod` was called.\n\nAdditionally this object has a `__get__` of its own that does the same to handle stored copies of `CachedMethodCaller`s, which is something that categories seem to do.\n\nUsing a function/closure would also handle the caching (and I added a comment in the patch on how to do it exactly), but you would lose the ability to call methods like `is_in_cache()` which are used in some places in sage.",
+    "created_at": "2010-01-18T23:52:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5843",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5843#issuecomment-45945",
+    "user": "wjp"
+}
+```
 
 I added a patch that returns a (newly created) `CachedMethodCaller` object from `CachedMethod.__get__` that stores the instance on which the `CachedMethod` was called.
 
@@ -108,9 +168,20 @@ Additionally this object has a `__get__` of its own that does the same to handle
 Using a function/closure would also handle the caching (and I added a comment in the patch on how to do it exactly), but you would lose the ability to call methods like `is_in_cache()` which are used in some places in sage.
 
 
+
 ---
 
-Comment by timdumol created at 2010-01-20 11:00:45
+archive/issue_comments_045946.json:
+```json
+{
+    "body": "Excellent patch (I couldn't figure out how to fix this, glad you did), but there doesn't seem to be a test for the main problem:\n\n\n```\nclass bla:\n    def __init__(self, value):\n        self.value = value\n    #\n    @cached_method\n    def f(self, x):\n        return self.value\n```\n\n\nThe method f ignores its input, and should return self.value:\n\n```\nsage: x = bla(1)\nsage: y = bla(2)\nsage: x.f(None)\n1\nsage: y.f(None)\n2\n```\n\n\nThen, y.f(x.f) should ignore the inner x.f and return 2. It does not:\n\n```\nsage: sage: y.f(x.f)\n1\n```\n",
+    "created_at": "2010-01-20T11:00:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5843",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5843#issuecomment-45946",
+    "user": "timdumol"
+}
+```
 
 Excellent patch (I couldn't figure out how to fix this, glad you did), but there doesn't seem to be a test for the main problem:
 
@@ -147,51 +218,134 @@ sage: sage: y.f(x.f)
 
 
 
+
 ---
 
-Comment by timdumol created at 2010-01-20 11:00:45
+archive/issue_comments_045947.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-01-20T11:00:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5843",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5843#issuecomment-45947",
+    "user": "timdumol"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
+
+archive/issue_comments_045948.json:
+```json
+{
+    "body": "Attachment\n\nGood point. I replaced the doctest patch with one that adds a more direct test for this ticket.",
+    "created_at": "2010-01-20T19:06:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5843",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5843#issuecomment-45948",
+    "user": "wjp"
+}
+```
 
 Attachment
 
 Good point. I replaced the doctest patch with one that adds a more direct test for this ticket.
 
 
+
 ---
 
-Comment by wjp created at 2010-01-20 19:06:51
+archive/issue_comments_045949.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-01-20T19:06:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5843",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5843#issuecomment-45949",
+    "user": "wjp"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by timdumol created at 2010-01-20 20:11:09
+archive/issue_comments_045950.json:
+```json
+{
+    "body": "Nice. I'm giving this a positive review, but I've attached a little patch that transfers some of the documentation from the `__init__` method to the the class itself, and adds some more documentation. It would be great for you to review it.",
+    "created_at": "2010-01-20T20:11:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5843",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5843#issuecomment-45950",
+    "user": "timdumol"
+}
+```
 
 Nice. I'm giving this a positive review, but I've attached a little patch that transfers some of the documentation from the `__init__` method to the the class itself, and adds some more documentation. It would be great for you to review it.
 
 
+
 ---
+
+archive/issue_comments_045951.json:
+```json
+{
+    "body": "Attachment\n\nAdds a little bit more documentation to CachedMethod.",
+    "created_at": "2010-01-20T20:18:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5843",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5843#issuecomment-45951",
+    "user": "timdumol"
+}
+```
 
 Attachment
 
 Adds a little bit more documentation to CachedMethod.
 
 
+
 ---
+
+archive/issue_comments_045952.json:
+```json
+{
+    "body": "Attachment\n\nChanges the doctest to use `print` instead of `sleep`",
+    "created_at": "2010-01-20T21:54:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5843",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5843#issuecomment-45952",
+    "user": "timdumol"
+}
+```
 
 Attachment
 
 Changes the doctest to use `print` instead of `sleep`
 
 
+
 ---
 
-Comment by wjp created at 2010-01-20 21:58:56
+archive/issue_comments_045953.json:
+```json
+{
+    "body": "Looks good. Thanks!\n\n\nPatches to apply, in order:\n5843_CachedMethodCaller.patch\n5843_doctests.patch\ntrac_5843-doctests-ref.2.patch",
+    "created_at": "2010-01-20T21:58:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5843",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5843#issuecomment-45953",
+    "user": "wjp"
+}
+```
 
 Looks good. Thanks!
 
@@ -202,40 +356,95 @@ Patches to apply, in order:
 trac_5843-doctests-ref.2.patch
 
 
+
 ---
 
-Comment by wjp created at 2010-01-20 21:58:56
+archive/issue_comments_045954.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-01-20T21:58:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5843",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5843#issuecomment-45954",
+    "user": "wjp"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mvngu created at 2010-01-24 02:09:07
+archive/issue_comments_045955.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-24T02:09:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5843",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5843#issuecomment-45955",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mvngu created at 2010-01-24 02:09:07
+archive/issue_comments_045956.json:
+```json
+{
+    "body": "Merged patches in this order:\n\n1. [5843_CachedMethodCaller.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/5843/5843_CachedMethodCaller.patch)\n2. [5843_doctests.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/5843/5843_doctests.patch)\n3. [trac_5843-doctests-ref.2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/5843/trac_5843-doctests-ref.2.patch) --- timdumol: please remember to put your username in your patch. I have committed this patch in your name.",
+    "created_at": "2010-01-24T02:09:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5843",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5843#issuecomment-45956",
+    "user": "mvngu"
+}
+```
 
 Merged patches in this order:
 
- 1. [5843_CachedMethodCaller.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/5843/5843_CachedMethodCaller.patch)
- 1. [5843_doctests.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/5843/5843_doctests.patch)
- 1. [trac_5843-doctests-ref.2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/5843/trac_5843-doctests-ref.2.patch) --- timdumol: please remember to put your username in your patch. I have committed this patch in your name.
+1. [5843_CachedMethodCaller.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/5843/5843_CachedMethodCaller.patch)
+2. [5843_doctests.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/5843/5843_doctests.patch)
+3. [trac_5843-doctests-ref.2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/5843/trac_5843-doctests-ref.2.patch) --- timdumol: please remember to put your username in your patch. I have committed this patch in your name.
+
 
 
 ---
 
-Comment by nthiery created at 2010-01-24 21:38:04
+archive/issue_comments_045957.json:
+```json
+{
+    "body": "Willem, Tim: thanks so much for fixing this!",
+    "created_at": "2010-01-24T21:38:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5843",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5843#issuecomment-45957",
+    "user": "nthiery"
+}
+```
 
 Willem, Tim: thanks so much for fixing this!
 
 
+
 ---
 
-Comment by nthiery created at 2010-01-24 21:41:52
+archive/issue_comments_045958.json:
+```json
+{
+    "body": "Btw: #383 plays similar trick. Maybe Sage (actually Python) should have a standard tool for method wrappers as there already is for functions (see functools.wrapper).",
+    "created_at": "2010-01-24T21:41:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5843",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5843#issuecomment-45958",
+    "user": "nthiery"
+}
+```
 
 Btw: #383 plays similar trick. Maybe Sage (actually Python) should have a standard tool for method wrappers as there already is for functions (see functools.wrapper).

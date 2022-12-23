@@ -1,11 +1,21 @@
 # Issue 4888: laplacian_matrix() broken for DiGraphs
 
-Issue created by migration from https://trac.sagemath.org/ticket/4888
-
-Original creator: mabshoff
-
-Original creation time: 2008-12-29 21:56:16
-
+archive/issues_004888.json:
+```json
+{
+    "body": "Assignee: rlm\n\nDavid reports in http://groups.google.com/group/sage-devel/t/51fdef25ed45ceee\n\n\n```\nI am running Sage 3.1.4 under Fedora 9 and have found a bug in the \nfile graph.py. \n------------------------------------------------------------------- \nsage: G = DiGraph({0:{}, 1:{0:1}, 2:{0:1}}, weighted = True) \nsage: G.weighted_adjacency_matrix() \n[0] \n[1] \n[1] \nsage: G.adjacency_matrix() \n[0 0 0] \n[1 0 0] \n[1 0 0] \nsage: G.laplacian_matrix() \n--------------------------------------------------------------------------- \nIndexError                                Traceback (most recent call \nlast) \n/home/davidp/.sage/temp/xyzzy/16886/ \n_home_davidp_math_sandpile_sage_sandpile_sage_14.py in <module>() \n----> 1 \n      2 \n      3 \n      4 \n      5 \n/usr/local/sage-3.1.4-fc8-i686-Linux/local/lib/python2.5/site-packages/ \nsage/graphs/graph.pyc in kirchhoff_matrix(self, weighted, \nboundary_first) \n    904         S = [sum(M.row(i)) for i in range(M.nrows())] \n    905         for i in range(len(A)): \n--> 906             A[i][i] = S[i] \n    907         return M.parent()(A) \n    908 \n/usr/local/sage-3.1.4-fc8-i686-Linux/local/lib/python2.5/site-packages/ \nsage/modules/free_module_element.so in \nsage.modules.free_module_element.FreeModuleElement_generic_sparse.__setitem __ \n(sage/modules/free_module_element.c:15074)() \n   1765 \n   1766 \n-> 1767 \n   1768 \n   1769 \nIndexError: index (i=1) must be between 0 and 0 \nsage: \n--------------------------------------------------------------------------- --------- \nThe laplacian_matrix function is not working because \nweighted_adjacency matrix is not returning a square matrix.  A \nsuggested fix is to change line 845 (in the graph.py code for \nweighted_adjacency_matrix) from \nM = matrix(D, sparse=sparse) \nto \nM = matrix(self.num_verts(), D, sparse=sparse) \nDavid \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4888\n\n",
+    "created_at": "2008-12-29T21:56:16Z",
+    "labels": [
+        "graph theory",
+        "major",
+        "bug"
+    ],
+    "title": "laplacian_matrix() broken for DiGraphs",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4888",
+    "user": "mabshoff"
+}
+```
 Assignee: rlm
 
 David reports in http://groups.google.com/group/sage-devel/t/51fdef25ed45ceee
@@ -66,17 +76,43 @@ David
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4888
+
+
+
+
 
 ---
 
-Comment by rlm created at 2009-01-04 18:51:43
+archive/issue_comments_037049.json:
+```json
+{
+    "body": "I agree with David's proposed fix, and blame boothby ;)",
+    "created_at": "2009-01-04T18:51:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4888",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4888#issuecomment-37049",
+    "user": "rlm"
+}
+```
 
 I agree with David's proposed fix, and blame boothby ;)
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-04 19:37:42
+archive/issue_comments_037050.json:
+```json
+{
+    "body": "Let's get this into 3.3 then.\n\nCheers,\n\nMichael",
+    "created_at": "2009-01-04T19:37:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4888",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4888#issuecomment-37050",
+    "user": "mabshoff"
+}
+```
 
 Let's get this into 3.3 then.
 
@@ -85,7 +121,20 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_037051.json:
+```json
+{
+    "body": "Attachment\n\nPositive review for the fix suggested by rlm. I have attached the patch with a doctest and it passes `-t -long` with my current merge tree. Credit for authorship goes to David Perkinson in whose name I committed the patch.\n\nCheers,\n\nMichael",
+    "created_at": "2009-01-18T05:53:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4888",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4888#issuecomment-37051",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -96,15 +145,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-18 05:53:27
+archive/issue_comments_037052.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-01-18T05:53:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4888",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4888#issuecomment-37052",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-18 05:53:27
+archive/issue_comments_037053.json:
+```json
+{
+    "body": "Merged in Sage 3.3.alpha0",
+    "created_at": "2009-01-18T05:53:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4888",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4888#issuecomment-37053",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.3.alpha0

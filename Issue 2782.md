@@ -1,27 +1,63 @@
 # Issue 2782: notebook: Make it so the default reference manual, etc., is static instead of dynamic
 
-Issue created by migration from https://trac.sagemath.org/ticket/2782
-
-Original creator: was
-
-Original creation time: 2008-04-02 22:14:04
-
+archive/issues_002782.json:
+```json
+{
+    "body": "Assignee: boothby\n\nThis should be an easy 1-2 line fix to change the urls that the links to docs pull up. \n\nI got bitten bigtime during my class today when showing how to use the doc search today, since the dynamic \"live\" docs are too slow. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2782\n\n",
+    "created_at": "2008-04-02T22:14:04Z",
+    "labels": [
+        "notebook",
+        "major",
+        "bug"
+    ],
+    "title": "notebook: Make it so the default reference manual, etc., is static instead of dynamic",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2782",
+    "user": "was"
+}
+```
 Assignee: boothby
 
 This should be an easy 1-2 line fix to change the urls that the links to docs pull up. 
 
 I got bitten bigtime during my class today when showing how to use the doc search today, since the dynamic "live" docs are too slow. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2782
+
+
+
+
 
 ---
 
-Comment by was created at 2008-04-08 18:18:05
+archive/issue_comments_019104.json:
+```json
+{
+    "body": "I've decided against this.  Instead I added a prominent easy-to-find link to static docs in #2840.",
+    "created_at": "2008-04-08T18:18:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2782",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2782#issuecomment-19104",
+    "user": "was"
+}
+```
 
 I've decided against this.  Instead I added a prominent easy-to-find link to static docs in #2840.
 
 
+
 ---
 
-Comment by was created at 2008-04-08 18:18:05
+archive/issue_comments_019105.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-04-08T18:18:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2782",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2782#issuecomment-19105",
+    "user": "was"
+}
+```
 
 Resolution: fixed

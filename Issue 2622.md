@@ -1,19 +1,46 @@
 # Issue 2622: [with patches, need review] add PolyBoRi to reference manual
 
-Issue created by migration from https://trac.sagemath.org/ticket/2622
-
-Original creator: malb
-
-Original creation time: 2008-03-20 23:57:57
-
+archive/issues_002622.json:
+```json
+{
+    "body": "Assignee: malb\n\nCC:  burcin\n\nThese patches depend on #2619 and basically add some babel to the top of `sage.rings.polynomial.pbori`\n\nIssue created by migration from https://trac.sagemath.org/ticket/2622\n\n",
+    "created_at": "2008-03-20T23:57:57Z",
+    "labels": [
+        "commutative algebra",
+        "major",
+        "enhancement"
+    ],
+    "title": "[with patches, need review] add PolyBoRi to reference manual",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2622",
+    "user": "malb"
+}
+```
 Assignee: malb
 
 CC:  burcin
 
 These patches depend on #2619 and basically add some babel to the top of `sage.rings.polynomial.pbori`
 
+Issue created by migration from https://trac.sagemath.org/ticket/2622
+
+
+
+
 
 ---
+
+archive/issue_comments_018003.json:
+```json
+{
+    "body": "Attachment\n\npolybori-refman-sage.patch looks good to me: One small typo did sneak in: \"This quptient ring\"\n\npolybori-refman-doc.patch ought to be rebased since it has some unrelated changes included:\n\n```\npatch -p1 --dry-run < polybori-refman-doc.patch\\?format\\=raw\npatching file .hgtags\nHunk #1 FAILED at 122.\n1 out of 1 hunk FAILED -- saving rejects to file .hgtags.rej\npatching file commontex/patchlevel.tex\nHunk #1 FAILED at 1.\n1 out of 1 hunk FAILED -- saving rejects to file commontex/patchlevel.tex.rej\npatching file ref/combinat.tex\nReversed (or previously applied) patch detected!  Assume -R? [n] n\nApply anyway? [n] n\nSkipping patch.\n2 out of 2 hunks ignored -- saving rejects to file ref/combinat.tex.rej\npatching file ref/files\nReversed (or previously applied) patch detected!  Assume -R? [n] n\nApply anyway? [n] n\nSkipping patch.\n4 out of 4 hunks ignored -- saving rejects to file ref/files.rej\npatching file ref/hecke.tex\nReversed (or previously applied) patch detected!  Assume -R? [n] n\nApply anyway? [n] n\nSkipping patch.\n1 out of 1 hunk ignored -- saving rejects to file ref/hecke.tex.rej\npatching file ref/polynomial-rings.tex\npatching file ref/update_script.py\nReversed (or previously applied) patch detected!  Assume -R? [n] n\nApply anyway? [n] n\nSkipping patch.\n2 out of 2 hunks ignored -- saving rejects to file ref/update_script.py.rej\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2008-03-21T01:13:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2622",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2622#issuecomment-18003",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -58,16 +85,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by malb created at 2008-03-21 01:18:45
+archive/issue_comments_018004.json:
+```json
+{
+    "body": "That is odd because I started with a vanilla doc repository. But I'll rebase.",
+    "created_at": "2008-03-21T01:18:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2622",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2622#issuecomment-18004",
+    "user": "malb"
+}
+```
 
 That is odd because I started with a vanilla doc repository. But I'll rebase.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-21 01:26:34
+archive/issue_comments_018005.json:
+```json
+{
+    "body": "Replying to [comment:2 malb]:\n> That is odd because I started with a vanilla doc repository. But I'll rebase.\n\nFor the record: That was my 2.11.alpha0 build on sage.math which has a binary in /home/mabshoff/release-cycles-2.11/. I can throw out the hunks from the patch that are already there. \n\nAnother small issue I forgot: Are we going with Gr\u00f6bner now or will be stick with Groebner. Since we merged your various UTF-8 patches all those should work. Umlaute \u00fcber alles!\n\nMike Hansen will be reviewing the other patches in this series, so they should be merged tonight assuming the get positive reviews.\n\nCheers,\n\nMichael",
+    "created_at": "2008-03-21T01:26:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2622",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2622#issuecomment-18005",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:2 malb]:
 > That is odd because I started with a vanilla doc repository. But I'll rebase.
@@ -83,23 +132,60 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_018006.json:
+```json
+{
+    "body": "Attachment\n\nfixed typo",
+    "created_at": "2008-03-21T01:36:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2622",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2622#issuecomment-18006",
+    "user": "malb"
+}
+```
 
 Attachment
 
 fixed typo
 
 
+
 ---
+
+archive/issue_comments_018007.json:
+```json
+{
+    "body": "Attachment\n\ncleaned up version of the patch",
+    "created_at": "2008-03-21T02:16:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2622",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2622#issuecomment-18007",
+    "user": "malb"
+}
+```
 
 Attachment
 
 cleaned up version of the patch
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-21 02:21:36
+archive/issue_comments_018008.json:
+```json
+{
+    "body": "All issues I had have been resolved.\n\nCheers,\n\nMichael",
+    "created_at": "2008-03-21T02:21:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2622",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2622#issuecomment-18008",
+    "user": "mabshoff"
+}
+```
 
 All issues I had have been resolved.
 
@@ -108,15 +194,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-21 02:22:15
+archive/issue_comments_018009.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-03-21T02:22:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2622",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2622#issuecomment-18009",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-21 02:22:15
+archive/issue_comments_018010.json:
+```json
+{
+    "body": "Merged in Sage 2.11.alpha1",
+    "created_at": "2008-03-21T02:22:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2622",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2622#issuecomment-18010",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.11.alpha1

@@ -1,26 +1,64 @@
 # Issue 5063: major reworking of plotting
 
-Issue created by migration from https://trac.sagemath.org/ticket/5063
-
-Original creator: mhansen
-
-Original creation time: 2009-01-23 01:32:50
-
+archive/issues_005063.json:
+```json
+{
+    "body": "Assignee: was\n\nThis is to allow one to take more advantages of matplotlib functionality.\n\nI'm posting a patch so that I can look at the diff.  It's definitely not ready.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5063\n\n",
+    "created_at": "2009-01-23T01:32:50Z",
+    "labels": [
+        "graphics",
+        "major",
+        "enhancement"
+    ],
+    "title": "major reworking of plotting",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5063",
+    "user": "mhansen"
+}
+```
 Assignee: was
 
 This is to allow one to take more advantages of matplotlib functionality.
 
 I'm posting a patch so that I can look at the diff.  It's definitely not ready.
 
+Issue created by migration from https://trac.sagemath.org/ticket/5063
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2010-01-18 22:39:52
+archive/issue_comments_038571.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2010-01-18T22:39:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5063",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5063#issuecomment-38571",
+    "user": "mhansen"
+}
+```
 
 Resolution: invalid
 
 
+
 ---
+
+archive/issue_comments_038572.json:
+```json
+{
+    "body": "Attachment\n\nI'm going to mark this as invalid.",
+    "created_at": "2010-01-18T22:39:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5063",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5063#issuecomment-38572",
+    "user": "mhansen"
+}
+```
 
 Attachment
 

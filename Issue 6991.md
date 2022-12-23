@@ -1,11 +1,21 @@
 # Issue 6991: lattice polytope nfacets method broken for non-reflexive polytopes
 
-Issue created by migration from https://trac.sagemath.org/ticket/6991
-
-Original creator: mhampton
-
-Original creation time: 2009-09-22 18:45:43
-
+archive/issues_006991.json:
+```json
+{
+    "body": "Assignee: mhampton\n\nCC:  novoselt\n\nIn the nfacets method, for non-reflexive lattice polytopes this is computed from:\n\n```\nself._nfacets = len(self._facet_normals)\n```\n\nbut self._facet_normals is a matrix, which does not have a len method.  So I think this should instead be\n\n```\nself._nfacets = self._facet_normals.nrows()\n```\n\n\nA doctest should also be added for this case.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6991\n\n",
+    "created_at": "2009-09-22T18:45:43Z",
+    "labels": [
+        "geometry",
+        "minor",
+        "bug"
+    ],
+    "title": "lattice polytope nfacets method broken for non-reflexive polytopes",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6991",
+    "user": "mhampton"
+}
+```
 Assignee: mhampton
 
 CC:  novoselt
@@ -25,34 +35,82 @@ self._nfacets = self._facet_normals.nrows()
 
 A doctest should also be added for this case.
 
+Issue created by migration from https://trac.sagemath.org/ticket/6991
+
+
+
+
 
 ---
 
-Comment by novoselt created at 2009-09-22 19:46:19
+archive/issue_comments_057826.json:
+```json
+{
+    "body": "This is actually fixed by this patch (which needs a review):\n\nhttp://trac.sagemath.org/sage_trac/ticket/6778",
+    "created_at": "2009-09-22T19:46:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6991",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6991#issuecomment-57826",
+    "user": "novoselt"
+}
+```
 
 This is actually fixed by this patch (which needs a review):
 
 http://trac.sagemath.org/sage_trac/ticket/6778
 
 
+
 ---
 
-Comment by mhampton created at 2009-09-22 20:51:21
+archive/issue_comments_057827.json:
+```json
+{
+    "body": "OK, sorry about that.  I am working through your tickets and I should have looked more closely.  This ticket can be closed as a duplicate of 6778.\n\n-Marshall",
+    "created_at": "2009-09-22T20:51:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6991",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6991#issuecomment-57827",
+    "user": "mhampton"
+}
+```
 
 OK, sorry about that.  I am working through your tickets and I should have looked more closely.  This ticket can be closed as a duplicate of 6778.
 
 -Marshall
 
 
+
 ---
 
-Comment by mhampton created at 2009-09-22 20:51:21
+archive/issue_comments_057828.json:
+```json
+{
+    "body": "Changing priority from minor to trivial.",
+    "created_at": "2009-09-22T20:51:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6991",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6991#issuecomment-57828",
+    "user": "mhampton"
+}
+```
 
 Changing priority from minor to trivial.
 
 
+
 ---
 
-Comment by novoselt created at 2009-12-19 00:43:03
+archive/issue_comments_057829.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2009-12-19T00:43:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6991",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6991#issuecomment-57829",
+    "user": "novoselt"
+}
+```
 
 Resolution: duplicate

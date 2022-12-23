@@ -1,11 +1,21 @@
 # Issue 2465: 2.10.3 doctest failure in groebner_fan.py
 
-Issue created by migration from https://trac.sagemath.org/ticket/2465
-
-Original creator: mabshoff
-
-Original creation time: 2008-03-11 01:43:15
-
+archive/issues_002465.json:
+```json
+{
+    "body": "Assignee: failure\n\nThe failure is\n\n```\nFile \"groebner_fan.py\", line 42:\n    sage: g.reduced_groebner_bases()\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-2.10.3.rc4/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[3]>\", line 1, in <module>\n        g.reduced_groebner_bases()###line 42:\n    sage: g.reduced_groebner_bases()\n      File \"/scratch/mabshoff/release-cycle/sage-2.10.3.rc4/local/lib/python2.5/site-packages/sage/rings/polynomial/groebner_fan.py\", line 272, in reduced_groebner_bases\n        G0 = self._gfan_reduced_groebner_bases()\n      File \"/scratch/mabshoff/release-cycle/sage-2.10.3.rc4/local/lib/python2.5/site-packages/sage/rings/polynomial/groebner_fan.py\", line 230, in _gfan_reduced_groebner_bases\n        B = self.gfan()\n      File \"/scratch/mabshoff/release-cycle/sage-2.10.3.rc4/local/lib/python2.5/site-packages/sage/rings/polynomial/groebner_fan.py\", line 310, in gfan\n        I = self._gfan_ideal()\n      File \"/scratch/mabshoff/release-cycle/sage-2.10.3.rc4/local/lib/python2.5/site-packages/sage/rings/polynomial/groebner_fan.py\", line 214, in _gfan_ideal\n        J = to_gfan(self.__ideal)\n      File \"morphism.pyx\", line 116, in sage.categories.morphism.Morphism.__call__\n      File \"multi_polynomial_libsingular.pyx\", line 618, in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomialRing_libsingular.__call__\n        return self(str(element))\n      File \"multi_polynomial_libsingular.pyx\", line 525, in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomialRing_libsingular.__call__\n        element = eval(element, d, {})\n      File \"<string>\", line 1\n         Ideal (x**2 - y**2 + 1) of Multivariate Polynomial Ring in x, y over Rational Field\n                                  ^\n     SyntaxError: invalid syntax\n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2465\n\n",
+    "created_at": "2008-03-11T01:43:15Z",
+    "labels": [
+        "doctest coverage",
+        "blocker",
+        "bug"
+    ],
+    "title": "2.10.3 doctest failure in groebner_fan.py",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2465",
+    "user": "mabshoff"
+}
+```
 Assignee: failure
 
 The failure is
@@ -41,29 +51,79 @@ Exception raised:
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2465
+
+
+
+
 
 ---
 
-Comment by was created at 2008-03-11 01:44:44
+archive/issue_comments_016706.json:
+```json
+{
+    "body": "Changing assignee from failure to was.",
+    "created_at": "2008-03-11T01:44:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2465",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2465#issuecomment-16706",
+    "user": "was"
+}
+```
 
 Changing assignee from failure to was.
 
 
+
 ---
+
+archive/issue_comments_016707.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-03-11T02:02:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2465",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2465#issuecomment-16707",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2008-03-11 02:13:30
+archive/issue_comments_016708.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-03-11T02:13:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2465",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2465#issuecomment-16708",
+    "user": "was"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-11 02:31:21
+archive/issue_comments_016709.json:
+```json
+{
+    "body": "The patch fixes the doctest failure. Positive review.\n\nCheers,\n\nMichael",
+    "created_at": "2008-03-11T02:31:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2465",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2465#issuecomment-16709",
+    "user": "mabshoff"
+}
+```
 
 The patch fixes the doctest failure. Positive review.
 
@@ -72,8 +132,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-11 02:37:58
+archive/issue_comments_016710.json:
+```json
+{
+    "body": "Merged in Sage 2.10.3.rc5",
+    "created_at": "2008-03-11T02:37:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2465",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2465#issuecomment-16710",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.3.rc5

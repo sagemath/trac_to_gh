@@ -1,11 +1,21 @@
 # Issue 4499: Fix latex for sech and csch
 
-Issue created by migration from https://trac.sagemath.org/ticket/4499
-
-Original creator: mhansen
-
-Original creation time: 2008-11-12 01:16:42
-
+archive/issues_004499.json:
+```json
+{
+    "body": "Assignee: cwitty\n\nCurrently, we have\n\n\n```\nsage: latex(sech)\n\\sech\nsage: latex(csch)\n\\csch\n```\n\n\nApparently \\sech and \\csch are not recognized in LaTeX.  These should be\n\n\n```\nsage: latex(sech)\n\\text{sech}\nsage: latex(csch)\n\\text{csch}\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4499\n\n",
+    "created_at": "2008-11-12T01:16:42Z",
+    "labels": [
+        "misc",
+        "minor",
+        "bug"
+    ],
+    "title": "Fix latex for sech and csch",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4499",
+    "user": "mhansen"
+}
+```
 Assignee: cwitty
 
 Currently, we have
@@ -30,31 +40,81 @@ sage: latex(csch)
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4499
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2008-11-12 01:25:57
+archive/issue_comments_033302.json:
+```json
+{
+    "body": "Changing assignee from cwitty to mhansen.",
+    "created_at": "2008-11-12T01:25:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4499",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4499#issuecomment-33302",
+    "user": "mhansen"
+}
+```
 
 Changing assignee from cwitty to mhansen.
 
 
+
 ---
+
+archive/issue_comments_033303.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-11-12T01:25:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4499",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4499#issuecomment-33303",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2008-11-12 01:25:57
+archive/issue_comments_033304.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-11-12T01:25:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4499",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4499#issuecomment-33304",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mvngu created at 2008-11-12 03:07:27
+archive/issue_comments_033305.json:
+```json
+{
+    "body": "I'm using sage-3.1.4 here, so I can't say anything about applying this patch against the latest alpha release of sage-3.2. Perhaps other folks can review the patch using the latest alpha release. Before applying the patch **trac_4499.patch** against sage-3.1.4, we'd get these:\n\n```\nsage: # sech and arcsech\nsage: sech._latex_()\n'\\\\sech'\nsage: asech._latex_()\n'\\\\sech^{-1}'\nsage: arcsech._latex_()\n'\\\\sech^{-1}'\nsage: latex(sech)\n\\sech\nsage: latex(asech)\n\\sech^{-1}\nsage: latex(arcsech)\n\\sech^{-1}\nsage:\nsage: # csch and arccsch\nsage: csch._latex_()\n'\\\\csch'\nsage: acsch._latex_()\n'\\\\csch^{-1}'\nsage: arccsch._latex_()\n'\\\\csch^{-1}'\nsage: latex(csch)\n\\csch\nsage: latex(acsch)\n\\csch^{-1}\nsage: latex(arccsch)\n\\csch^{-1}\n```\n\nAs far as I know, the returned LaTeX strings would cause tex-live to go berserk and complain about \"Undefined control sequence\" even if we compile with or without the macro `\\usepackage{amsmath,amssymb,amsthm`} in the preamble of a .tex file.\n\n\n\nAfter applying the patch against sage-3.1.4, we get these:\n\n```\nsage: # sech and arcsech\nsage: sech._latex_()\n'\\\\text{sech}'\nsage: asech._latex_()\n'\\\\text{sech}^{-1}'\nsage: arcsech._latex_()\n'\\\\text{sech}^{-1}'\nsage: latex(sech)\n\\text{sech}\nsage: latex(asech)\n\\text{sech}^{-1}\nsage: latex(arcsech)\n\\text{sech}^{-1}\nsage: \nsage: # csch and arccsch\nsage: csch._latex_()\n'\\\\text{csch}'\nsage: acsch._latex_()\n'\\\\text{csch}^{-1}'\nsage: arccsch._latex_()\n'\\\\text{csch}^{-1}'\nsage: \nsage: latex(csch)\n\\text{csch}\nsage: latex(acsch)\n\\text{csch}^{-1}\nsage: latex(arccsch)\n\\text{csch}^{-1}\n```\n\nThe returned LaTeX strings now look reasonable to me and work as expected when embedded within math mode and using the macro `\\usepackage{amsmath`}.",
+    "created_at": "2008-11-12T03:07:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4499",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4499#issuecomment-33305",
+    "user": "mvngu"
+}
+```
 
-I'm using sage-3.1.4 here, so I can't say anything about applying this patch against the latest alpha release of sage-3.2. Perhaps other folks can review the patch using the latest alpha release. Before applying the patch *trac_4499.patch* against sage-3.1.4, we'd get these:
+I'm using sage-3.1.4 here, so I can't say anything about applying this patch against the latest alpha release of sage-3.2. Perhaps other folks can review the patch using the latest alpha release. Before applying the patch **trac_4499.patch** against sage-3.1.4, we'd get these:
 
 ```
 sage: # sech and arcsech
@@ -126,36 +186,91 @@ sage: latex(arccsch)
 The returned LaTeX strings now look reasonable to me and work as expected when embedded within math mode and using the macro `\usepackage{amsmath`}.
 
 
+
 ---
 
-Comment by was created at 2008-11-12 17:16:43
+archive/issue_comments_033306.json:
+```json
+{
+    "body": "Looks good to me too.",
+    "created_at": "2008-11-12T17:16:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4499",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4499#issuecomment-33306",
+    "user": "was"
+}
+```
 
 Looks good to me too.
 
 
+
 ---
 
-Comment by aginiewicz created at 2008-11-13 10:48:40
+archive/issue_comments_033307.json:
+```json
+{
+    "body": "From pure LaTeX typesetting point of view I would except operators to be consistent with standard operators, that's something like ` \\mathop {\\operator`@`font csch}\\nolimits ` instead of ` \\text{csch} `, when paper/book is in last stages it might be useful to alter behaviour of `\\operator`@`font` for example (that's used in all `\\sin`, `\\cos`, etc...) and then `\\text` might be standing out, anyway the `\\text` workaround seems to work if no style changes are applied",
+    "created_at": "2008-11-13T10:48:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4499",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4499#issuecomment-33307",
+    "user": "aginiewicz"
+}
+```
 
 From pure LaTeX typesetting point of view I would except operators to be consistent with standard operators, that's something like ` \mathop {\operator`@`font csch}\nolimits ` instead of ` \text{csch} `, when paper/book is in last stages it might be useful to alter behaviour of `\operator`@`font` for example (that's used in all `\sin`, `\cos`, etc...) and then `\text` might be standing out, anyway the `\text` workaround seems to work if no style changes are applied
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-14 03:30:33
+archive/issue_comments_033308.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-11-14T03:30:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4499",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4499#issuecomment-33308",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-14 03:30:33
+archive/issue_comments_033309.json:
+```json
+{
+    "body": "Merged in Sage 3.1.rc1",
+    "created_at": "2008-11-14T03:30:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4499",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4499#issuecomment-33309",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.1.rc1
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-15 08:41:25
+archive/issue_comments_033310.json:
+```json
+{
+    "body": "This should be 3.2.rc1",
+    "created_at": "2008-11-15T08:41:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4499",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4499#issuecomment-33310",
+    "user": "mabshoff"
+}
+```
 
 This should be 3.2.rc1

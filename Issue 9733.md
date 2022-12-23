@@ -1,11 +1,21 @@
 # Issue 9733: Parallel build of Singular 3-1-1-4-package fails in rare case
 
-Issue created by migration from https://trac.sagemath.org/ticket/9733
-
-Original creator: AlexanderDreyer
-
-Original creation time: 2010-08-12 12:18:45
-
+archive/issues_009733.json:
+```json
+{
+    "body": "Assignee: AlexGhitza\n\nCC:  polybori drkirkby malb burcin leif\n\nIt was discovered in #8059 , that the parallel build of the Singular 3-1-1-4 packages still breaks in rare cases (many CPU cores, slow hard disk).\n\nThere are two patches which should fix this issue upstream:\nhttp://www.singular.uni-kl.de:8002/trac/ticket/250, see\n\n```\nsvn diff -r 13112:13110 http://www.singular.uni-kl.de/svn/\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9733\n\n",
+    "created_at": "2010-08-12T12:18:45Z",
+    "labels": [
+        "algebra",
+        "major",
+        "bug"
+    ],
+    "title": "Parallel build of Singular 3-1-1-4-package fails in rare case",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9733",
+    "user": "AlexanderDreyer"
+}
+```
 Assignee: AlexGhitza
 
 CC:  polybori drkirkby malb burcin leif
@@ -20,45 +30,117 @@ svn diff -r 13112:13110 http://www.singular.uni-kl.de/svn/
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/9733
+
+
+
+
 
 ---
 
-Comment by AlexanderDreyer created at 2010-08-12 12:20:01
+archive/issue_comments_095117.json:
+```json
+{
+    "body": "svn diff -r 13112:13110 http://www.singular.uni-kl.de/svn/",
+    "created_at": "2010-08-12T12:20:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95117",
+    "user": "AlexanderDreyer"
+}
+```
 
 svn diff -r 13112:13110 http://www.singular.uni-kl.de/svn/
 
 
+
 ---
+
+archive/issue_comments_095118.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-08-12T12:20:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95118",
+    "user": "AlexanderDreyer"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by AlexanderDreyer created at 2010-08-12 12:20:58
+archive/issue_comments_095119.json:
+```json
+{
+    "body": "Changing assignee from AlexGhitza to AlexanderDreyer.",
+    "created_at": "2010-08-12T12:20:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95119",
+    "user": "AlexanderDreyer"
+}
+```
 
 Changing assignee from AlexGhitza to AlexanderDreyer.
 
 
+
 ---
 
-Comment by AlexanderDreyer created at 2010-08-12 12:21:21
+archive/issue_comments_095120.json:
+```json
+{
+    "body": "Changing component from algebra to build.",
+    "created_at": "2010-08-12T12:21:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95120",
+    "user": "AlexanderDreyer"
+}
+```
 
 Changing component from algebra to build.
 
 
+
 ---
 
-Comment by mpatel created at 2010-08-13 01:05:13
+archive/issue_comments_095121.json:
+```json
+{
+    "body": "I repeated the tests in [comment:ticket:8059:112 comment 112] at #8059, this time under `/dev/shm` (a fast RAM disk, I think) on sage.math.  Thirteen of 50 runs failed, all apparently caused by the `gentable*` problem, which should be fixed by [this upstream comment](http://www.singular.uni-kl.de:8002/trac/ticket/250#comment:2).\n\nThanks for filing the fixes!",
+    "created_at": "2010-08-13T01:05:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95121",
+    "user": "mpatel"
+}
+```
 
 I repeated the tests in [comment:ticket:8059:112 comment 112] at #8059, this time under `/dev/shm` (a fast RAM disk, I think) on sage.math.  Thirteen of 50 runs failed, all apparently caused by the `gentable*` problem, which should be fixed by [this upstream comment](http://www.singular.uni-kl.de:8002/trac/ticket/250#comment:2).
 
 Thanks for filing the fixes!
 
 
+
 ---
 
-Comment by fbissey created at 2010-08-13 11:15:18
+archive/issue_comments_095122.json:
+```json
+{
+    "body": "I will add a small patch to this ticket. While I worked on the Gentoo ebuild\nI discovered that parallel make is disabled itself (jobserver not available using -j1) on libsingular and the test because make is called directly as \"make\" and not $(MAKE) or ${MAKE}.\n\nSo while it looks all fine and dandy you are actually not building libsingular in parallel, feel free to forward upstream as I don't have an account with them.",
+    "created_at": "2010-08-13T11:15:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95122",
+    "user": "fbissey"
+}
+```
 
 I will add a small patch to this ticket. While I worked on the Gentoo ebuild
 I discovered that parallel make is disabled itself (jobserver not available using -j1) on libsingular and the test because make is called directly as "make" and not $(MAKE) or ${MAKE}.
@@ -66,23 +148,58 @@ I discovered that parallel make is disabled itself (jobserver not available usin
 So while it looks all fine and dandy you are actually not building libsingular in parallel, feel free to forward upstream as I don't have an account with them.
 
 
+
 ---
 
-Comment by fbissey created at 2010-08-13 11:16:28
+archive/issue_comments_095123.json:
+```json
+{
+    "body": "replace make by ${MAKE} in top Makefile.in",
+    "created_at": "2010-08-13T11:16:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95123",
+    "user": "fbissey"
+}
+```
 
 replace make by ${MAKE} in top Makefile.in
 
 
+
 ---
+
+archive/issue_comments_095124.json:
+```json
+{
+    "body": "Attachment\n\nBut that's actually not a problem for the spkg, because the `spkg-install` does not call these target from the top-level `Makefile`.",
+    "created_at": "2010-08-13T11:35:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95124",
+    "user": "AlexanderDreyer"
+}
+```
 
 Attachment
 
 But that's actually not a problem for the spkg, because the `spkg-install` does not call these target from the top-level `Makefile`.
 
 
+
 ---
 
-Comment by fbissey created at 2010-08-13 11:44:46
+archive/issue_comments_095125.json:
+```json
+{
+    "body": "Replying to [comment:6 AlexanderDreyer]:\n> But that's actually not a problem for the spkg, because the `spkg-install` does not call these target from the top-level `Makefile`.\n\nThen I missed something because I just checked spkg-install from the latest available spkg in #8059 and it does build libsingular by calling the top makefile:\n\n```\nbuild_libsingular()\n{\n    cd $SRC\n    if [ $? -ne 0 ]; then\n        echo \"Unable to change to directory $SRC\"\n        exit 1\n    fi\n\n    make libsingular\n```\n",
+    "created_at": "2010-08-13T11:44:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95125",
+    "user": "fbissey"
+}
+```
 
 Replying to [comment:6 AlexanderDreyer]:
 > But that's actually not a problem for the spkg, because the `spkg-install` does not call these target from the top-level `Makefile`.
@@ -103,74 +220,184 @@ build_libsingular()
 
 
 
+
 ---
 
-Comment by AlexanderDreyer created at 2010-08-13 11:57:28
+archive/issue_comments_095126.json:
+```json
+{
+    "body": "You're right, it's the case for factory and libfac, but not libsingular. But it will not change much, because most of the dependencies of libsingular are already built, when the spkg calls build_libsingular().",
+    "created_at": "2010-08-13T11:57:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95126",
+    "user": "AlexanderDreyer"
+}
+```
 
 You're right, it's the case for factory and libfac, but not libsingular. But it will not change much, because most of the dependencies of libsingular are already built, when the spkg calls build_libsingular().
 
 
+
 ---
 
-Comment by fbissey created at 2010-08-13 12:43:29
+archive/issue_comments_095127.json:
+```json
+{
+    "body": "While it probably doesn't improve much the build time, it should be also thought as a QA patch. You should never ever call make directly from a makefile. That give rise to a pile of problems. The first one being that \"make\" may not be the original Make program invoked.\nI didn't originally think about this but it is in fact a much bigger concern than the build time.",
+    "created_at": "2010-08-13T12:43:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95127",
+    "user": "fbissey"
+}
+```
 
 While it probably doesn't improve much the build time, it should be also thought as a QA patch. You should never ever call make directly from a makefile. That give rise to a pile of problems. The first one being that "make" may not be the original Make program invoked.
 I didn't originally think about this but it is in fact a much bigger concern than the build time.
 
 
+
 ---
 
-Comment by AlexanderDreyer created at 2010-08-13 12:51:43
+archive/issue_comments_095128.json:
+```json
+{
+    "body": "Right, I'll report it upstream.",
+    "created_at": "2010-08-13T12:51:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95128",
+    "user": "AlexanderDreyer"
+}
+```
 
 Right, I'll report it upstream.
 
 
+
 ---
 
-Comment by AlexanderDreyer created at 2010-08-15 14:26:38
+archive/issue_comments_095129.json:
+```json
+{
+    "body": "Just to report back: for the gentable issue, there will be a better solution upstream. But the patch should be a reasonable workaround for sage.",
+    "created_at": "2010-08-15T14:26:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95129",
+    "user": "AlexanderDreyer"
+}
+```
 
 Just to report back: for the gentable issue, there will be a better solution upstream. But the patch should be a reasonable workaround for sage.
 
 
+
 ---
 
-Comment by leif created at 2010-09-09 01:35:05
+archive/issue_comments_095130.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-09-09T01:35:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95130",
+    "user": "leif"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by leif created at 2010-09-09 01:35:05
+archive/issue_comments_095131.json:
+```json
+{
+    "body": "ping",
+    "created_at": "2010-09-09T01:35:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95131",
+    "user": "leif"
+}
+```
 
 ping
 
 
+
 ---
 
-Comment by fbissey created at 2010-09-09 01:48:29
+archive/issue_comments_095132.json:
+```json
+{
+    "body": "Works for me on Gentoo linux for x86, amd64 and ppc.",
+    "created_at": "2010-09-09T01:48:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95132",
+    "user": "fbissey"
+}
+```
 
 Works for me on Gentoo linux for x86, amd64 and ppc.
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-09 02:13:10
+archive/issue_comments_095133.json:
+```json
+{
+    "body": "Can someone make a new spkg and post a link to it?",
+    "created_at": "2010-09-09T02:13:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95133",
+    "user": "mpatel"
+}
+```
 
 Can someone make a new spkg and post a link to it?
 
 
+
 ---
 
-Comment by AlexanderDreyer created at 2010-09-09 08:41:04
+archive/issue_comments_095134.json:
+```json
+{
+    "body": "Please try out this one:\nhttp://sage.math.washington.edu/home/dreyer/spkg/singular-3-1-1-4.p1.spkg",
+    "created_at": "2010-09-09T08:41:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95134",
+    "user": "AlexanderDreyer"
+}
+```
 
 Please try out this one:
 http://sage.math.washington.edu/home/dreyer/spkg/singular-3-1-1-4.p1.spkg
 
 
+
 ---
 
-Comment by leif created at 2010-09-09 16:55:28
+archive/issue_comments_095135.json:
+```json
+{
+    "body": "Replying to [comment:16 AlexanderDreyer]:\n> Please try out this one:\n> http://sage.math.washington.edu/home/dreyer/spkg/singular-3-1-1-4.p1.spkg\n\n\n```sh\n$ hg status\n? spkg-install~\n```\n\n\nInstalls ok with `MAKE=\"make -j16\"` on an already loaded system (Sage 4.5.3, Ubuntu 10.04, Core2). I haven't had any problems previously with parallel builds though, and I don't have slow harddisks... ;-)\n\nUnrelated:\n* Any reason to look for `bison` (despite `--without-bison` btw.), but then hardcoding `bison` instead of using ``@`BISON`@``?\n* `CFLAGS` and `CXXFLAGS` are *partly* ignored. (Instead [only] `CPPFLAGS` are used for compiling C and C++ code.)",
+    "created_at": "2010-09-09T16:55:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95135",
+    "user": "leif"
+}
+```
 
 Replying to [comment:16 AlexanderDreyer]:
 > Please try out this one:
@@ -186,61 +413,127 @@ $ hg status
 Installs ok with `MAKE="make -j16"` on an already loaded system (Sage 4.5.3, Ubuntu 10.04, Core2). I haven't had any problems previously with parallel builds though, and I don't have slow harddisks... ;-)
 
 Unrelated:
- * Any reason to look for `bison` (despite `--without-bison` btw.), but then hardcoding `bison` instead of using ``@`BISON`@``?
- * `CFLAGS` and `CXXFLAGS` are _partly_ ignored. (Instead [only] `CPPFLAGS` are used for compiling C and C++ code.)
+* Any reason to look for `bison` (despite `--without-bison` btw.), but then hardcoding `bison` instead of using ``@`BISON`@``?
+* `CFLAGS` and `CXXFLAGS` are *partly* ignored. (Instead [only] `CPPFLAGS` are used for compiling C and C++ code.)
+
 
 
 ---
 
-Comment by mpatel created at 2010-09-09 21:53:45
+archive/issue_comments_095136.json:
+```json
+{
+    "body": "I think you'll also need to revert changeset 102:017aa4e4766e (\"#8059: Restore building in serial, because of parallel build problems\"), in order to test parallel builds.",
+    "created_at": "2010-09-09T21:53:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95136",
+    "user": "mpatel"
+}
+```
 
 I think you'll also need to revert changeset 102:017aa4e4766e ("#8059: Restore building in serial, because of parallel build problems"), in order to test parallel builds.
 
 
+
 ---
 
-Comment by AlexanderDreyer created at 2010-09-09 22:23:13
+archive/issue_comments_095137.json:
+```json
+{
+    "body": "D'oh! Yeah, I had to revert changeset 102 and removed the tilde-file.\nPlease have a look at: http://sage.math.washington.edu/home/dreyer/spkg/singular-3-1-1-4.p1.spkg (same place as above)",
+    "created_at": "2010-09-09T22:23:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95137",
+    "user": "AlexanderDreyer"
+}
+```
 
 D'oh! Yeah, I had to revert changeset 102 and removed the tilde-file.
 Please have a look at: http://sage.math.washington.edu/home/dreyer/spkg/singular-3-1-1-4.p1.spkg (same place as above)
 
 
+
 ---
 
-Comment by leif created at 2010-09-09 22:53:42
+archive/issue_comments_095138.json:
+```json
+{
+    "body": "Despite being significantly faster, same result. ;-)",
+    "created_at": "2010-09-09T22:53:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95138",
+    "user": "leif"
+}
+```
 
 Despite being significantly faster, same result. ;-)
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-10 01:22:53
+archive/issue_comments_095139.json:
+```json
+{
+    "body": "* 50 of 50 serial installs of `singular-3-1-1-4.p1.spkg` succeed on sage.math with [ccache](http://ccache.samba.org/) *enabled*.  After the last run, I ran the long doctests.  They pass.\n\n  * 50 of 50 parallel installs of `singular-3-1-1-4.p1.spkg` succeed on sage.math with [ccache](http://ccache.samba.org/) *enabled*.  However, 5 of the runs (not including the last) have the message `ranlib: 'libkernel_g.a': No such file`.  Is this a problem?  [Here's](http://sage.math.washington.edu/home/mpatel/trac/9733/singular-3-1-1-4-j20.log.6) a sample log file.  After the last run, I ran the long doctests.  They pass.  \n\n  * 25 of 25 parallel installs of `singular-3-1-1-4.p1.spkg` succeed on sage.math with [ccache](http://ccache.samba.org/) *disabled*.  None gives the ranlib message above.  I'll run the tests after the other 25 runs are done and add a comment if there are problems.\n\n  * Are the object files for `libcf.a`, `libsingcf_g.a`, `libfac.a`, and `libsingfac.a` built in parallel?\n\n  * Is the message `install:  libsingcf_p.a does not exist` harmless?  It's printed three times per install.\n\nI did all of the runs above under `/scratch`.",
+    "created_at": "2010-09-10T01:22:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95139",
+    "user": "mpatel"
+}
+```
 
-* 50 of 50 serial installs of `singular-3-1-1-4.p1.spkg` succeed on sage.math with [ccache](http://ccache.samba.org/) _enabled_.  After the last run, I ran the long doctests.  They pass.
+* 50 of 50 serial installs of `singular-3-1-1-4.p1.spkg` succeed on sage.math with [ccache](http://ccache.samba.org/) *enabled*.  After the last run, I ran the long doctests.  They pass.
 
- * 50 of 50 parallel installs of `singular-3-1-1-4.p1.spkg` succeed on sage.math with [ccache](http://ccache.samba.org/) _enabled_.  However, 5 of the runs (not including the last) have the message `ranlib: 'libkernel_g.a': No such file`.  Is this a problem?  [Here's](http://sage.math.washington.edu/home/mpatel/trac/9733/singular-3-1-1-4-j20.log.6) a sample log file.  After the last run, I ran the long doctests.  They pass.  
+  * 50 of 50 parallel installs of `singular-3-1-1-4.p1.spkg` succeed on sage.math with [ccache](http://ccache.samba.org/) *enabled*.  However, 5 of the runs (not including the last) have the message `ranlib: 'libkernel_g.a': No such file`.  Is this a problem?  [Here's](http://sage.math.washington.edu/home/mpatel/trac/9733/singular-3-1-1-4-j20.log.6) a sample log file.  After the last run, I ran the long doctests.  They pass.  
 
- * 25 of 25 parallel installs of `singular-3-1-1-4.p1.spkg` succeed on sage.math with [ccache](http://ccache.samba.org/) _disabled_.  None gives the ranlib message above.  I'll run the tests after the other 25 runs are done and add a comment if there are problems.
+  * 25 of 25 parallel installs of `singular-3-1-1-4.p1.spkg` succeed on sage.math with [ccache](http://ccache.samba.org/) *disabled*.  None gives the ranlib message above.  I'll run the tests after the other 25 runs are done and add a comment if there are problems.
 
- * Are the object files for `libcf.a`, `libsingcf_g.a`, `libfac.a`, and `libsingfac.a` built in parallel?
+  * Are the object files for `libcf.a`, `libsingcf_g.a`, `libfac.a`, and `libsingfac.a` built in parallel?
 
- * Is the message `install:  libsingcf_p.a does not exist` harmless?  It's printed three times per install.
+  * Is the message `install:  libsingcf_p.a does not exist` harmless?  It's printed three times per install.
 
 I did all of the runs above under `/scratch`.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-09-10 03:40:15
+archive/issue_comments_095140.json:
+```json
+{
+    "body": "> Is the message install: libsingcf_p.a does not exist harmless? It's printed three times per install.\n\nI see this in logs from older versions of singular, too, for what that's worth.",
+    "created_at": "2010-09-10T03:40:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95140",
+    "user": "jhpalmieri"
+}
+```
 
 > Is the message install: libsingcf_p.a does not exist harmless? It's printed three times per install.
 
 I see this in logs from older versions of singular, too, for what that's worth.
 
 
+
 ---
 
-Comment by fbissey created at 2010-09-10 04:11:49
+archive/issue_comments_095141.json:
+```json
+{
+    "body": "Replying to [comment:22 jhpalmieri]:\n> > Is the message install: libsingcf_p.a does not exist harmless? It's printed three times per install.\n> \n> I see this in logs from older versions of singular, too, for what that's worth.\n> \nAnd it is not used by sage itself or macaulay2 as far as I know. I think that's old cruft in the Makefile.",
+    "created_at": "2010-09-10T04:11:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95141",
+    "user": "fbissey"
+}
+```
 
 Replying to [comment:22 jhpalmieri]:
 > > Is the message install: libsingcf_p.a does not exist harmless? It's printed three times per install.
@@ -250,18 +543,42 @@ Replying to [comment:22 jhpalmieri]:
 And it is not used by sage itself or macaulay2 as far as I know. I think that's old cruft in the Makefile.
 
 
+
 ---
 
-Comment by AlexanderDreyer created at 2010-09-10 07:57:15
+archive/issue_comments_095142.json:
+```json
+{
+    "body": "THis patch adresses ranlib issue of comment 21",
+    "created_at": "2010-09-10T07:57:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95142",
+    "user": "AlexanderDreyer"
+}
+```
 
 THis patch adresses ranlib issue of comment 21
 
 
+
 ---
+
+archive/issue_comments_095143.json:
+```json
+{
+    "body": "Attachment\n\n>  * 50 of 50 parallel installs of `singular-3-1-1-4.p1.spkg` succeed on sage.math with [ccache](http://ccache.samba.org/) *enabled*.  However, 5 of the runs (not including the last) have the message `ranlib: 'libkernel_g.a': No such file`.  Is this a problem?  [Here's](http://sage.math.washington.edu/home/mpatel/trac/9733/singular-3-1-1-4-j20.log.6) a sample log file.  After the last run, I ran the long doctests.  They pass.  \nI think I have fixed that issue, see the patche above and the new spkg at http://sage.math.washington.edu/home/dreyer/spkg/singular-3-1-1-4.p1.spkg (same place)\n\n>  * Are the object files for `libcf.a`, `libsingcf_g.a`, `libfac.a`, and `libsingfac.a` built in parallel?\nFrom the Makefiles there's no restriction, so the dependencies of each of which can be build in parallel. But there may be dependencies, that that there is no parallel build in fact.\n\n>  * Is the message `install:  libsingcf_p.a does not exist` harmless?  It's printed three times per install.\n> \n> I did all of the runs above under `/scratch`.\nAs fbissey said, this should not cause problems here.",
+    "created_at": "2010-09-10T08:18:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95143",
+    "user": "AlexanderDreyer"
+}
+```
 
 Attachment
 
->  * 50 of 50 parallel installs of `singular-3-1-1-4.p1.spkg` succeed on sage.math with [ccache](http://ccache.samba.org/) _enabled_.  However, 5 of the runs (not including the last) have the message `ranlib: 'libkernel_g.a': No such file`.  Is this a problem?  [Here's](http://sage.math.washington.edu/home/mpatel/trac/9733/singular-3-1-1-4-j20.log.6) a sample log file.  After the last run, I ran the long doctests.  They pass.  
+>  * 50 of 50 parallel installs of `singular-3-1-1-4.p1.spkg` succeed on sage.math with [ccache](http://ccache.samba.org/) *enabled*.  However, 5 of the runs (not including the last) have the message `ranlib: 'libkernel_g.a': No such file`.  Is this a problem?  [Here's](http://sage.math.washington.edu/home/mpatel/trac/9733/singular-3-1-1-4-j20.log.6) a sample log file.  After the last run, I ran the long doctests.  They pass.  
 I think I have fixed that issue, see the patche above and the new spkg at http://sage.math.washington.edu/home/dreyer/spkg/singular-3-1-1-4.p1.spkg (same place)
 
 >  * Are the object files for `libcf.a`, `libsingcf_g.a`, `libfac.a`, and `libsingfac.a` built in parallel?
@@ -273,12 +590,23 @@ From the Makefiles there's no restriction, so the dependencies of each of which 
 As fbissey said, this should not cause problems here.
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-11 06:08:06
+archive/issue_comments_095144.json:
+```json
+{
+    "body": "Replying to [comment:24 AlexanderDreyer]:\n> >  * 50 of 50 parallel installs of `singular-3-1-1-4.p1.spkg` succeed on sage.math with [ccache](http://ccache.samba.org/) *enabled*.  However, 5 of the runs (not including the last) have the message `ranlib: 'libkernel_g.a': No such file`.  Is this a problem?  [Here's](http://sage.math.washington.edu/home/mpatel/trac/9733/singular-3-1-1-4-j20.log.6) a sample log file.  After the last run, I ran the long doctests.  They pass.  \n> I think I have fixed that issue, see the patche above and the new spkg at http://sage.math.washington.edu/home/dreyer/spkg/singular-3-1-1-4.p1.spkg (same place)\n\nI repeated the three 50-run tests above.  The new package fixes the ranlib problem for me.\n\nCould you fix this:\n\n```sh\n$ hg stat\n? patches/kernel-Makefile.in.orig\n? spkg-install~\n```\n\n?",
+    "created_at": "2010-09-11T06:08:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95144",
+    "user": "mpatel"
+}
+```
 
 Replying to [comment:24 AlexanderDreyer]:
-> >  * 50 of 50 parallel installs of `singular-3-1-1-4.p1.spkg` succeed on sage.math with [ccache](http://ccache.samba.org/) _enabled_.  However, 5 of the runs (not including the last) have the message `ranlib: 'libkernel_g.a': No such file`.  Is this a problem?  [Here's](http://sage.math.washington.edu/home/mpatel/trac/9733/singular-3-1-1-4-j20.log.6) a sample log file.  After the last run, I ran the long doctests.  They pass.  
+> >  * 50 of 50 parallel installs of `singular-3-1-1-4.p1.spkg` succeed on sage.math with [ccache](http://ccache.samba.org/) *enabled*.  However, 5 of the runs (not including the last) have the message `ranlib: 'libkernel_g.a': No such file`.  Is this a problem?  [Here's](http://sage.math.washington.edu/home/mpatel/trac/9733/singular-3-1-1-4-j20.log.6) a sample log file.  After the last run, I ran the long doctests.  They pass.  
 > I think I have fixed that issue, see the patche above and the new spkg at http://sage.math.washington.edu/home/dreyer/spkg/singular-3-1-1-4.p1.spkg (same place)
 
 I repeated the three 50-run tests above.  The new package fixes the ranlib problem for me.
@@ -294,16 +622,38 @@ $ hg stat
 ?
 
 
+
 ---
 
-Comment by AlexanderDreyer created at 2010-09-12 21:17:19
+archive/issue_comments_095145.json:
+```json
+{
+    "body": "Ok, I fixed this also. Is this a positive review then?",
+    "created_at": "2010-09-12T21:17:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95145",
+    "user": "AlexanderDreyer"
+}
+```
 
 Ok, I fixed this also. Is this a positive review then?
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-12 21:39:18
+archive/issue_comments_095146.json:
+```json
+{
+    "body": "Could you change the permissions so the package is accessible?\n\n```sh\n$ ls -l ~dreyer/spkg/singular-3-1-1-4.p1.spkg\n7.9M -rw-r----- 1 dreyer dreyer 7.8M 2010-09-12 14:14 /home/dreyer/spkg/singular-3-1-1-4.p1.spkg\n```\n",
+    "created_at": "2010-09-12T21:39:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95146",
+    "user": "mpatel"
+}
+```
 
 Could you change the permissions so the package is accessible?
 
@@ -314,30 +664,74 @@ $ ls -l ~dreyer/spkg/singular-3-1-1-4.p1.spkg
 
 
 
+
 ---
 
-Comment by AlexanderDreyer created at 2010-09-13 07:23:57
+archive/issue_comments_095147.json:
+```json
+{
+    "body": "Oh, sorry! It readable now.",
+    "created_at": "2010-09-13T07:23:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95147",
+    "user": "AlexanderDreyer"
+}
+```
 
 Oh, sorry! It readable now.
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-13 07:39:32
+archive/issue_comments_095148.json:
+```json
+{
+    "body": "Changing component from build to packages.",
+    "created_at": "2010-09-13T07:39:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95148",
+    "user": "mpatel"
+}
+```
 
 Changing component from build to packages.
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-13 07:39:32
+archive/issue_comments_095149.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-09-13T07:39:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95149",
+    "user": "mpatel"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-13 07:39:32
+archive/issue_comments_095150.json:
+```json
+{
+    "body": "Thanks!\n\n## Release manager\n\nMerge just this package:\n\n http://sage.math.washington.edu/home/dreyer/spkg/singular-3-1-1-4.p1.spkg",
+    "created_at": "2010-09-13T07:39:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95150",
+    "user": "mpatel"
+}
+```
 
 Thanks!
 
@@ -348,21 +742,43 @@ Merge just this package:
  http://sage.math.washington.edu/home/dreyer/spkg/singular-3-1-1-4.p1.spkg
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-13 07:41:39
+archive/issue_comments_095151.json:
+```json
+{
+    "body": "Replying to [comment:17 leif]:\n> Unrelated:\n>  * Any reason to look for `bison` (despite `--without-bison` btw.), but then hardcoding `bison` instead of using ``@`BISON`@``?\n>  * `CFLAGS` and `CXXFLAGS` are *partly* ignored. (Instead [only] `CPPFLAGS` are used for compiling C and C++ code.)\n\nShould we try to push these upstream?",
+    "created_at": "2010-09-13T07:41:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95151",
+    "user": "mpatel"
+}
+```
 
 Replying to [comment:17 leif]:
 > Unrelated:
 >  * Any reason to look for `bison` (despite `--without-bison` btw.), but then hardcoding `bison` instead of using ``@`BISON`@``?
->  * `CFLAGS` and `CXXFLAGS` are _partly_ ignored. (Instead [only] `CPPFLAGS` are used for compiling C and C++ code.)
+>  * `CFLAGS` and `CXXFLAGS` are *partly* ignored. (Instead [only] `CPPFLAGS` are used for compiling C and C++ code.)
 
 Should we try to push these upstream?
 
 
+
 ---
 
-Comment by AlexanderDreyer created at 2010-09-13 08:00:30
+archive/issue_comments_095152.json:
+```json
+{
+    "body": "Sure, I can report this to Singular's trac.\n\nThe bison issue is - at least - confusion. For the flags, I need some additional information; The meaning (and names) of flags highly depend on the build system of a given software. So, each spkg-maintainer does need this knowledge for the system he/she maintains anyway. But `CFLAGS` and `CXXFLAGS` would be more standard-conforming, right?\n\nBTW Singular compiles a lot of C-like code using the C++ compiler. This may result in the observation, that the `CFLAGS` were ignored.",
+    "created_at": "2010-09-13T08:00:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95152",
+    "user": "AlexanderDreyer"
+}
+```
 
 Sure, I can report this to Singular's trac.
 
@@ -371,25 +787,47 @@ The bison issue is - at least - confusion. For the flags, I need some additional
 BTW Singular compiles a lot of C-like code using the C++ compiler. This may result in the observation, that the `CFLAGS` were ignored.
 
 
+
 ---
 
-Comment by leif created at 2010-09-13 09:47:10
+archive/issue_comments_095153.json:
+```json
+{
+    "body": "Replying to [comment:30 mpatel]:\n> Replying to [comment:17 leif]:\n> > Unrelated:\n> >  * Any reason to look for `bison` (despite `--without-bison` btw.), but then hardcoding `bison` instead of using ``@`BISON`@``?\n> > \n> >  * `CFLAGS` and `CXXFLAGS` are *partly* ignored. (Instead [only] `CPPFLAGS` are used for compiling C and C++ code.)\n> \n> Should we try to push these upstream?\n\nThat's why I mentioned it here, considering Alexander upstream (or at least an upstream proxy)... ;-)",
+    "created_at": "2010-09-13T09:47:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95153",
+    "user": "leif"
+}
+```
 
 Replying to [comment:30 mpatel]:
 > Replying to [comment:17 leif]:
 > > Unrelated:
 > >  * Any reason to look for `bison` (despite `--without-bison` btw.), but then hardcoding `bison` instead of using ``@`BISON`@``?
 > > 
-> >  * `CFLAGS` and `CXXFLAGS` are _partly_ ignored. (Instead [only] `CPPFLAGS` are used for compiling C and C++ code.)
+> >  * `CFLAGS` and `CXXFLAGS` are *partly* ignored. (Instead [only] `CPPFLAGS` are used for compiling C and C++ code.)
 > 
 > Should we try to push these upstream?
 
 That's why I mentioned it here, considering Alexander upstream (or at least an upstream proxy)... ;-)
 
 
+
 ---
 
-Comment by leif created at 2010-09-13 10:17:25
+archive/issue_comments_095154.json:
+```json
+{
+    "body": "Replying to [comment:31 AlexanderDreyer]:\n> Sure, I can report this to Singular's trac.\n\nThanks, that would be nice.\n\n> [...] For the flags, I need some additional information; The meaning (and names) of flags highly depend on the build system of a given software.\n\nThe names shouldn't, they're standard. *How* a package uses them might differ, i.e. *some* flags might intentionally get overridden, but they should never be ignored. Also, some packages won't e.g. use `LDFLAGS` because they use `libtool` or use the C compiler driver for linking.\n \n> So, each spkg-maintainer does need this knowledge for the system he/she maintains anyway.\n\nI agree an spkg maintainer should know the upstream's build process... ;-)\n\n> But `CFLAGS` and `CXXFLAGS` would be more standard-conforming, right?\n\n? If this refers to (the use of) `CPPFLAGS`, these are the flags for the C preprocessor, `cpp`. The preprocessor is rarely used directly, but in the other case one should either pass them directly to the compiler driver as well, or e.g. prepend them to `CFLAGS` and `CXXFLAGS`.\n\n> BTW Singular compiles a lot of C-like code using the C++ compiler. This may result in the observation, that the `CFLAGS` were ignored.\n\nI haven't noticed that (but haven't inspected that either).\n\nIn that case, `CXXFLAGS` should have been used (when compiling C code with e.g. `g++`), but that's not the case. I can give more details on which files were compiled only using `CPPFLAGS` later. (To see which flags are actually used, simply `export CFLAGS=-DHONORS_CFLAGS` etc.)",
+    "created_at": "2010-09-13T10:17:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95154",
+    "user": "leif"
+}
+```
 
 Replying to [comment:31 AlexanderDreyer]:
 > Sure, I can report this to Singular's trac.
@@ -398,7 +836,7 @@ Thanks, that would be nice.
 
 > [...] For the flags, I need some additional information; The meaning (and names) of flags highly depend on the build system of a given software.
 
-The names shouldn't, they're standard. _How_ a package uses them might differ, i.e. _some_ flags might intentionally get overridden, but they should never be ignored. Also, some packages won't e.g. use `LDFLAGS` because they use `libtool` or use the C compiler driver for linking.
+The names shouldn't, they're standard. *How* a package uses them might differ, i.e. *some* flags might intentionally get overridden, but they should never be ignored. Also, some packages won't e.g. use `LDFLAGS` because they use `libtool` or use the C compiler driver for linking.
  
 > So, each spkg-maintainer does need this knowledge for the system he/she maintains anyway.
 
@@ -415,9 +853,20 @@ I haven't noticed that (but haven't inspected that either).
 In that case, `CXXFLAGS` should have been used (when compiling C code with e.g. `g++`), but that's not the case. I can give more details on which files were compiled only using `CPPFLAGS` later. (To see which flags are actually used, simply `export CFLAGS=-DHONORS_CFLAGS` etc.)
 
 
+
 ---
 
-Comment by AlexanderDreyer created at 2010-09-13 11:20:48
+archive/issue_comments_095155.json:
+```json
+{
+    "body": "Now I understand: there are *compiled* targets in Singular, for instance the .og files, which do obey `CPPFLAGS`, but neither `CFLAGS` not `CXXFLAGS`.\nI think, these files are intentionally compiled with other options than \"ordinary\" targets. For the .og files there is a `CXXFLAGSG` in the `Makefile.in`, but it is not managed by the `./configure` script.\n\nIs there a best practice for such special targets?",
+    "created_at": "2010-09-13T11:20:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95155",
+    "user": "AlexanderDreyer"
+}
+```
 
 Now I understand: there are *compiled* targets in Singular, for instance the .og files, which do obey `CPPFLAGS`, but neither `CFLAGS` not `CXXFLAGS`.
 I think, these files are intentionally compiled with other options than "ordinary" targets. For the .og files there is a `CXXFLAGSG` in the `Makefile.in`, but it is not managed by the `./configure` script.
@@ -425,54 +874,120 @@ I think, these files are intentionally compiled with other options than "ordinar
 Is there a best practice for such special targets?
 
 
+
 ---
 
-Comment by leif created at 2010-09-13 13:08:13
+archive/issue_comments_095156.json:
+```json
+{
+    "body": "For the purpose of Sage (I think) we should anyway compile with `-g` (and not build the \"special\" targets).\n\n`CXXFLAGSG` should perhaps simply be `\"$CXXFLAGS -g\"` (or `-g` replaced by the appropriate option, depending on the compiler used), if `CXXFLAGS` do not already contain that. Otherwise one could drop the \".og\" targets, or just build those; a matter of taste.\n\nIf nothing else than adding debug symbols differentiates the normal targets from their \".og\" versions, one should simply build **once** *with* debug symbols, copy the generated files, and create \"non-.og\" versions by stripping the made copies, then installing both (if requested).\n\nI haven't yet looked at the sources (`configure`, `Makefile.in` etc.) though.",
+    "created_at": "2010-09-13T13:08:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95156",
+    "user": "leif"
+}
+```
 
 For the purpose of Sage (I think) we should anyway compile with `-g` (and not build the "special" targets).
 
 `CXXFLAGSG` should perhaps simply be `"$CXXFLAGS -g"` (or `-g` replaced by the appropriate option, depending on the compiler used), if `CXXFLAGS` do not already contain that. Otherwise one could drop the ".og" targets, or just build those; a matter of taste.
 
-If nothing else than adding debug symbols differentiates the normal targets from their ".og" versions, one should simply build *once* _with_ debug symbols, copy the generated files, and create "non-.og" versions by stripping the made copies, then installing both (if requested).
+If nothing else than adding debug symbols differentiates the normal targets from their ".og" versions, one should simply build **once** *with* debug symbols, copy the generated files, and create "non-.og" versions by stripping the made copies, then installing both (if requested).
 
 I haven't yet looked at the sources (`configure`, `Makefile.in` etc.) though.
 
 
+
 ---
 
-Comment by AlexanderDreyer created at 2010-09-13 13:23:19
+archive/issue_comments_095157.json:
+```json
+{
+    "body": "> If nothing else than adding debug symbols differentiates the normal targets from their \".og\" versions, one should simply build **once** *with* debug symbols, copy the generated files, and create \"non-.og\" versions by stripping the made copies, then installing both (if requested).\nUnfortunately it's not that easy. Singular's debug version is build via completely different targets. This might change somewhen in the (hopefully) not to far future. (This would obsolete our `CPPFLAGS` issue here also.)",
+    "created_at": "2010-09-13T13:23:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95157",
+    "user": "AlexanderDreyer"
+}
+```
 
-> If nothing else than adding debug symbols differentiates the normal targets from their ".og" versions, one should simply build *once* _with_ debug symbols, copy the generated files, and create "non-.og" versions by stripping the made copies, then installing both (if requested).
+> If nothing else than adding debug symbols differentiates the normal targets from their ".og" versions, one should simply build **once** *with* debug symbols, copy the generated files, and create "non-.og" versions by stripping the made copies, then installing both (if requested).
 Unfortunately it's not that easy. Singular's debug version is build via completely different targets. This might change somewhen in the (hopefully) not to far future. (This would obsolete our `CPPFLAGS` issue here also.)
 
 
+
 ---
 
-Comment by AlexanderDreyer created at 2010-09-13 13:59:10
+archive/issue_comments_095158.json:
+```json
+{
+    "body": "Upstream reports:\n\n* http://www.singular.uni-kl.de:8002/trac/ticket/269\n* http://www.singular.uni-kl.de:8002/trac/ticket/270",
+    "created_at": "2010-09-13T13:59:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95158",
+    "user": "AlexanderDreyer"
+}
+```
 
 Upstream reports:
 
- * http://www.singular.uni-kl.de:8002/trac/ticket/269
- * http://www.singular.uni-kl.de:8002/trac/ticket/270
+* http://www.singular.uni-kl.de:8002/trac/ticket/269
+* http://www.singular.uni-kl.de:8002/trac/ticket/270
+
 
 
 ---
 
-Comment by AlexanderDreyer created at 2010-09-13 21:12:17
+archive/issue_comments_095159.json:
+```json
+{
+    "body": "First responde: the option `--without-bison` is not a valid option of Singular's `./configure` (See `./configure --help`). Bison is not used in the normal build process. (The Singular sources already include the processed files.)",
+    "created_at": "2010-09-13T21:12:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95159",
+    "user": "AlexanderDreyer"
+}
+```
 
 First responde: the option `--without-bison` is not a valid option of Singular's `./configure` (See `./configure --help`). Bison is not used in the normal build process. (The Singular sources already include the processed files.)
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-16 00:48:42
+archive/issue_comments_095160.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-09-16T00:48:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95160",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by drkirkby created at 2010-09-17 07:27:34
+archive/issue_comments_095161.json:
+```json
+{
+    "body": "Despite this being closed as fixed, this has failed for me on OpenSolaris 06/2009, with a missing header file, which would indicate the problem has not been solved. I suggest you might want to revisit this. \n\nI'm attaching a log. \n\nDave",
+    "created_at": "2010-09-17T07:27:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95161",
+    "user": "drkirkby"
+}
+```
 
 Despite this being closed as fixed, this has failed for me on OpenSolaris 06/2009, with a missing header file, which would indicate the problem has not been solved. I suggest you might want to revisit this. 
 
@@ -481,51 +996,132 @@ I'm attaching a log.
 Dave
 
 
+
 ---
+
+archive/issue_comments_095162.json:
+```json
+{
+    "body": "Attachment\n\nLog of a failed build on a Sun Ultra 27 (4 cores, hyperthreaded), using MAKKE=\"make -j12\"",
+    "created_at": "2010-09-17T07:28:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95162",
+    "user": "drkirkby"
+}
+```
 
 Attachment
 
 Log of a failed build on a Sun Ultra 27 (4 cores, hyperthreaded), using MAKKE="make -j12"
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-17 08:30:07
+archive/issue_comments_095163.json:
+```json
+{
+    "body": "Dave, thanks for reporting this problem.  Could someone please investigate it?  I'll \"unmerge\" this ticket from 4.6.alpha1, unless there's a positively reviewed fix within about a day or so.  I'm also waiting for a response to a build error at #4000.",
+    "created_at": "2010-09-17T08:30:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95163",
+    "user": "mpatel"
+}
+```
 
 Dave, thanks for reporting this problem.  Could someone please investigate it?  I'll "unmerge" this ticket from 4.6.alpha1, unless there's a positively reviewed fix within about a day or so.  I'm also waiting for a response to a build error at #4000.
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-17 08:30:07
+archive/issue_comments_095164.json:
+```json
+{
+    "body": "Changing status from closed to needs_work.",
+    "created_at": "2010-09-17T08:30:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95164",
+    "user": "mpatel"
+}
+```
 
 Changing status from closed to needs_work.
 
 
+
 ---
 
-Comment by fbissey created at 2010-09-17 11:27:58
+archive/issue_comments_095165.json:
+```json
+{
+    "body": "The patch I just posted has unforseen issues, so don't use it.",
+    "created_at": "2010-09-17T11:27:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95165",
+    "user": "fbissey"
+}
+```
 
 The patch I just posted has unforseen issues, so don't use it.
 
 
+
 ---
+
+archive/issue_comments_095166.json:
+```json
+{
+    "body": "Attachment\n\ntentative patch for the latest parallel make issue (bis repetitas)",
+    "created_at": "2010-09-17T11:47:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95166",
+    "user": "fbissey"
+}
+```
 
 Attachment
 
 tentative patch for the latest parallel make issue (bis repetitas)
 
 
+
 ---
 
-Comment by leif created at 2010-09-17 12:20:03
+archive/issue_comments_095167.json:
+```json
+{
+    "body": "Dave, can you test Fran\u00e7ois' latest patch? It cannot confirm it solves \"your\" problem (though it should).",
+    "created_at": "2010-09-17T12:20:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95167",
+    "user": "leif"
+}
+```
 
 Dave, can you test François' latest patch? It cannot confirm it solves "your" problem (though it should).
 
 
+
 ---
 
-Comment by fbissey created at 2010-09-17 12:22:46
+archive/issue_comments_095168.json:
+```json
+{
+    "body": "Replying to [comment:44 leif]:\n> Dave, can you test Fran\u00e7ois' latest patch? It cannot confirm it solves \"your\" problem (though it should).\n\nI was in the process of answering. It has to be applied after SingularSvn13111-13112.patch because it touches a neighboring area of code.",
+    "created_at": "2010-09-17T12:22:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95168",
+    "user": "fbissey"
+}
+```
 
 Replying to [comment:44 leif]:
 > Dave, can you test François' latest patch? It cannot confirm it solves "your" problem (though it should).
@@ -533,16 +1129,38 @@ Replying to [comment:44 leif]:
 I was in the process of answering. It has to be applied after SingularSvn13111-13112.patch because it touches a neighboring area of code.
 
 
+
 ---
 
-Comment by leif created at 2010-09-17 12:56:53
+archive/issue_comments_095169.json:
+```json
+{
+    "body": "Works for me with `make -j` (unlimited). I've in addition changed the rule for `libsingcf_p.a`, but this might be superfluous.",
+    "created_at": "2010-09-17T12:56:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95169",
+    "user": "leif"
+}
+```
 
 Works for me with `make -j` (unlimited). I've in addition changed the rule for `libsingcf_p.a`, but this might be superfluous.
 
 
+
 ---
 
-Comment by leif created at 2010-09-17 13:10:52
+archive/issue_comments_095170.json:
+```json
+{
+    "body": "(We do not build `libsingcf_p.a`.)\n\nThere are however race conditions (?) in deleting files and directories:\n\n```\ncd ftest && make -j distclean\nmake[1]: Entering directory `/home/leif/Sage/sage-4.6.alpha1/spkg/build/singular-3-1-1-4.p1-new/src/factory/ftest'\nrm -f commonden degree deriv divides divrem extgcd factorize fbinops feval gcd gcd.ntl insert norm resultant revert sqrfree size totaldegree commonden.cc degree.cc deriv.cc divides.cc divrem.cc extgcd.cc factorize.cc fbinops.cc feval.cc gcd.cc gcd.ntl.cc insert.cc norm.cc resultant.cc revert.cc sqrfree.cc size.cc totaldegree.cc *.o\nrm -f GNUmakefile\nmake[1]: Leaving directory `/home/leif/Sage/sage-4.6.alpha1/spkg/build/singular-3-1-1-4.p1-new/src/factory/ftest'\nrmdir ftest\nrmdir: failed to remove `ftest': Directory not empty\nmake: [ftestdistclean] Error 1 (ignored)\ncd ftest && make -j clean\nmake[1]: Entering directory `/home/leif/Sage/sage-4.6.alpha1/spkg/build/singular-3-1-1-4.p1-new/src/factory/ftest'\nmake[1]: *** No rule to make target `clean'.  Stop.\nmake[1]: Leaving directory `/home/leif/Sage/sage-4.6.alpha1/spkg/build/singular-3-1-1-4.p1-new/src/factory/ftest'\nmake: [ftestclean] Error 2 (ignored)\n```\n\nOr perhaps just the list of files isn't complete.\n\nThough ignored, should probably be fixed upstream, too.",
+    "created_at": "2010-09-17T13:10:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95170",
+    "user": "leif"
+}
+```
 
 (We do not build `libsingcf_p.a`.)
 
@@ -569,14 +1187,38 @@ Or perhaps just the list of files isn't complete.
 Though ignored, should probably be fixed upstream, too.
 
 
+
 ---
 
-Comment by AlexanderDreyer created at 2010-09-17 13:17:42
+archive/issue_comments_095171.json:
+```json
+{
+    "body": "Another missing dependency",
+    "created_at": "2010-09-17T13:17:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95171",
+    "user": "AlexanderDreyer"
+}
+```
 
 Another missing dependency
 
 
+
 ---
+
+archive/issue_comments_095172.json:
+```json
+{
+    "body": "Attachment\n\nI attached another patch, which should fix this issue.\nThe spkg is here:\nhttp://sage.math.washington.edu/home/dreyer/spkg/singular-3-1-1-4.p2.spkg",
+    "created_at": "2010-09-17T13:20:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95172",
+    "user": "AlexanderDreyer"
+}
+```
 
 Attachment
 
@@ -585,9 +1227,20 @@ The spkg is here:
 http://sage.math.washington.edu/home/dreyer/spkg/singular-3-1-1-4.p2.spkg
 
 
+
 ---
 
-Comment by leif created at 2010-09-17 13:40:13
+archive/issue_comments_095173.json:
+```json
+{
+    "body": "Replying to [comment:48 AlexanderDreyer]:\n> I attached another patch, which should fix this issue.\n> The spkg is here:\n> http://sage.math.washington.edu/home/dreyer/spkg/singular-3-1-1-4.p2.spkg\n\nWorks for me as well (`make -j`).",
+    "created_at": "2010-09-17T13:40:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95173",
+    "user": "leif"
+}
+```
 
 Replying to [comment:48 AlexanderDreyer]:
 > I attached another patch, which should fix this issue.
@@ -597,32 +1250,76 @@ Replying to [comment:48 AlexanderDreyer]:
 Works for me as well (`make -j`).
 
 
+
 ---
 
-Comment by leif created at 2010-09-17 13:41:10
+archive/issue_comments_095174.json:
+```json
+{
+    "body": "And all changes committed... :)",
+    "created_at": "2010-09-17T13:41:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95174",
+    "user": "leif"
+}
+```
 
 And all changes committed... :)
 
 
+
 ---
 
-Comment by leif created at 2010-09-17 13:59:56
+archive/issue_comments_095175.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-09-17T13:59:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95175",
+    "user": "leif"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-09-17 15:20:31
+archive/issue_comments_095176.json:
+```json
+{
+    "body": "I'm building this in a loop 100 times. I'll let you know if it fails at all\n\nDave",
+    "created_at": "2010-09-17T15:20:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95176",
+    "user": "drkirkby"
+}
+```
 
 I'm building this in a loop 100 times. I'll let you know if it fails at all
 
 Dave
 
 
+
 ---
 
-Comment by drkirkby created at 2010-09-17 17:11:22
+archive/issue_comments_095177.json:
+```json
+{
+    "body": "This is looking good. Built this package 50 times so far without failure. \n\nShould have 100 done in about 1 hour and 20 minutes from now. \n\nDave",
+    "created_at": "2010-09-17T17:11:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95177",
+    "user": "drkirkby"
+}
+```
 
 This is looking good. Built this package 50 times so far without failure. 
 
@@ -631,30 +1328,41 @@ Should have 100 done in about 1 hour and 20 minutes from now.
 Dave
 
 
+
 ---
 
-Comment by drkirkby created at 2010-09-17 18:46:00
+archive/issue_comments_095178.json:
+```json
+{
+    "body": "I've now built this 110 times, on the following hardware: \n\n* Sun Ultra 27\n* 3.33 GHz Intel Xeon processor\n* 12 GB RAM\n* OpenSolaris 06/2009. \n* Local hard drives using 128-bit ZFS file system. \n\nThe method used was: \n\n* Use 4 previous builds of Sage (different, but fairly recent versions)\n* Copied the `singular-3-1-1-4.p2.spkg` package to `$SAGE_ROOT/spkg/standard`\n* Created a script to run ` sage -f singular-3-1-1-4.p2.spkg`\n* set MAKE=\"make -j2\" in one directory\n* set MAKE=\"make -j12\" in two different directories. \n* set MAKE=\"make -j30\" in another directory. \n\nI did *'not*\n* Test the package with `SAGE_CHECK=yes`\n* Run any doctests. \n\nSo at any one time, 4 builds of singular would take place, each in parallel, with either 2, 12 or 30 threads. The load average of the machine changed from around 9 to 11, but averaged about 10.  Each build took just over 6 minutes, but since 4 builds were taking place in parallel, this was an average build time of about 1.5 minutes/build. \n\nSo there does not appear to be any parallel build issues. \n\nSo positive review.",
+    "created_at": "2010-09-17T18:46:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95178",
+    "user": "drkirkby"
+}
+```
 
 I've now built this 110 times, on the following hardware: 
 
- * Sun Ultra 27
- * 3.33 GHz Intel Xeon processor
- * 12 GB RAM
- * OpenSolaris 06/2009. 
- * Local hard drives using 128-bit ZFS file system. 
+* Sun Ultra 27
+* 3.33 GHz Intel Xeon processor
+* 12 GB RAM
+* OpenSolaris 06/2009. 
+* Local hard drives using 128-bit ZFS file system. 
 
 The method used was: 
 
- * Use 4 previous builds of Sage (different, but fairly recent versions)
- * Copied the `singular-3-1-1-4.p2.spkg` package to `$SAGE_ROOT/spkg/standard`
- * Created a script to run ` sage -f singular-3-1-1-4.p2.spkg`
- * set MAKE="make -j2" in one directory
- * set MAKE="make -j12" in two different directories. 
- * set MAKE="make -j30" in another directory. 
+* Use 4 previous builds of Sage (different, but fairly recent versions)
+* Copied the `singular-3-1-1-4.p2.spkg` package to `$SAGE_ROOT/spkg/standard`
+* Created a script to run ` sage -f singular-3-1-1-4.p2.spkg`
+* set MAKE="make -j2" in one directory
+* set MAKE="make -j12" in two different directories. 
+* set MAKE="make -j30" in another directory. 
 
-I did _'not_
- * Test the package with `SAGE_CHECK=yes`
- * Run any doctests. 
+I did *'not*
+* Test the package with `SAGE_CHECK=yes`
+* Run any doctests. 
 
 So at any one time, 4 builds of singular would take place, each in parallel, with either 2, 12 or 30 threads. The load average of the machine changed from around 9 to 11, but averaged about 10.  Each build took just over 6 minutes, but since 4 builds were taking place in parallel, this was an average build time of about 1.5 minutes/build. 
 
@@ -663,30 +1371,74 @@ So there does not appear to be any parallel build issues.
 So positive review.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-09-17 18:46:00
+archive/issue_comments_095179.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-09-17T18:46:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95179",
+    "user": "drkirkby"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by leif created at 2010-09-17 19:02:18
+archive/issue_comments_095180.json:
+```json
+{
+    "body": "Hope you don't spend the weekend reading the build logs... ;-)",
+    "created_at": "2010-09-17T19:02:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95180",
+    "user": "leif"
+}
+```
 
 Hope you don't spend the weekend reading the build logs... ;-)
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-17 21:32:29
+archive/issue_comments_095181.json:
+```json
+{
+    "body": "Many thanks to everyone for reporting, patching, reviewing, and testing.  I apologize for not having caught this problem.",
+    "created_at": "2010-09-17T21:32:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95181",
+    "user": "mpatel"
+}
+```
 
 Many thanks to everyone for reporting, patching, reviewing, and testing.  I apologize for not having caught this problem.
 
 
+
 ---
 
-Comment by fbissey created at 2010-09-19 02:03:27
+archive/issue_comments_095182.json:
+```json
+{
+    "body": "Would you believe it. I committed the latest patch to the sage-on-gentoo tree 3 hours ago and 1 hour ago about one of our users reported a new parallel make failure at -j2 on x86.... in libfac this time.\n\n```\nar cr libsingcf_g.a canonicalform.og cf_algorithm.og cf_binom.og cf_char.og cf_chinese.og cf_cyclo.og cf_eval.og cf_factor.og cf_factory.og cf_gcd.og cf_gcd_charp.og cf_gcd_smallp.og cf_generator.og cf_globals.og cf_inline.og cf_irred.og cf_iter.og cf_iter_inline.og cf_linsys.og cf_map.og cf_map_ext.og cf_ops.og cf_primes.og cf_random.og cf_resultant.og cf_reval.og cf_switches.og cf_util.og debug.og DegreePattern.og ExtensionInfo.og fac_berlekamp.og fac_cantzass.og fac_distrib.og fac_ezgcd.og fac_iterfor.og fac_multihensel.og fac_multivar.og fac_sqrfree.og fac_univar.og fac_util.og facFqBivar.og facFqBivarUtil.og facFqFactorize.og facFqFactorizeUtil.og facFqSquarefree.og facHensel.og fieldGCD.og ffops.og ffreval.og gf_tabutil.og gfops.og imm.og initgmp.og int_cf.og int_int.og int_intdiv.og int_poly.og int_pp.og int_rat.og sm_sparsemod.og sm_util.og variable.og NTLconvert.og abs_fac.og bifac.og lgs.og singext.og\nranlib libsingcf_g.a\nar cr libsingcf.a canonicalform.o cf_algorithm.o cf_binom.o cf_char.o cf_chinese.o cf_cyclo.o cf_eval.o cf_factor.o cf_factory.o cf_gcd.o cf_gcd_charp.o cf_gcd_smallp.o cf_generator.o cf_globals.o cf_inline.o cf_irred.o cf_iter.o cf_iter_inline.o cf_linsys.o cf_map.o cf_map_ext.o cf_ops.o cf_primes.o cf_random.o cf_resultant.o cf_reval.o cf_switches.o cf_util.o debug.o DegreePattern.o ExtensionInfo.o fac_berlekamp.o fac_cantzass.o fac_distrib.o fac_ezgcd.o fac_iterfor.o fac_multihensel.o fac_multivar.o fac_sqrfree.o fac_univar.o fac_util.o facFqBivar.o facFqBivarUtil.o facFqFactorize.o facFqFactorizeUtil.o facFqSquarefree.o facHensel.o fieldGCD.o ffops.o ffreval.o gf_tabutil.o gfops.o imm.o initgmp.o int_cf.o int_int.o int_intdiv.o int_poly.o int_pp.o int_rat.o sm_sparsemod.o sm_util.o variable.o NTLconvert.o abs_fac.o bifac.o lgs.o singext.o\nranlib libsingcf.a\n./bin/mkinstalldirs /var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/build/lib\n./bin/mkinstalldirs /var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/build/include\n./bin/mkinstalldirs /var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/build/include/templates\nmkdir /var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/build/include/templates\n./bin/install-sh -c -m 644 libsingcf.a /var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/build/lib/libsingcf.a\n./bin/install-sh -c -m 644 libsingcf_g.a /var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/build/lib/libsingcf_g.a\n./bin/install-sh -c -m 644 libsingcf_p.a /var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/build/lib/libsingcf_p.a\ninstall:  libsingcf_p.a does not exist\nmake[2]: [installcf] Error 1 (ignored)\n./bin/install-sh -c -m 644 factory.h /var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/build/include/factory.h\n./bin/install-sh -c -m 644 cf_gmp.h /var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/build/include/cf_gmp.h\n./bin/install-sh -c -m 644 factoryconf.h /var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/build/include/factoryconf.h\n./bin/install-sh -c -m 644 ./ftmpl_inst.cc /var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/build/include/templates/ftmpl_inst.cc\nfor file in ftmpl_array.cc ftmpl_factor.cc ftmpl_functions.h ftmpl_list.cc ftmpl_matrix.cc ftmpl_array.h ftmpl_factor.h ftmpl_list.h ftmpl_matrix.h; do \\\n\t\t  ./bin/install-sh -c -m 644 ./templates/$file /var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/build/include/templates/$file; \\\n\t\tdone\nranlib /var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/build/lib/libsingcf.a\nmake[2]: Leaving directory `/var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/factory'\nmake install in libfac\nmake[2]: Entering directory `/var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/libfac'\n./mkinstalldirs OPTOBJ\ni686-pc-linux-gnu-g++ -O2 -march=athlon-xp -msse2 -pipe -fomit-frame-pointer -fPIC -fno-implicit-templates -I./factor -I./charset -I. -I./factor -I/var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/build/include   -DHAVE_CONFIG_H  -c factor/SqrFree.cc -o OPTOBJ/SqrFree.o\nmkdir OPTOBJ\nAssembler messages:\nFatal error: can't create OPTOBJ/SqrFree.o: No such file or directory\ni686-pc-linux-gnu-g++ -O2 -march=athlon-xp -msse2 -pipe -fomit-frame-pointer -fPIC -fno-implicit-templates -I./factor -I./charset -I. -I./factor -I/var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/build/include   -DHAVE_CONFIG_H  -c factor/Factor.cc -o OPTOBJ/Factor.o\nmake[2]: *** [OPTOBJ/SqrFree.o] Error 2\nmake[2]: *** Waiting for unfinished jobs....\nmake[2]: Leaving directory `/var/tmp/portage/sci-mathematics/singular-3.1.1.4-r1/work/Singular-3-1-1/libfac'\nmake[1]: *** [install] Error 1\n```\n\n\nI have a fix for him to try, I'll report back when I know the fix works for him.",
+    "created_at": "2010-09-19T02:03:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95182",
+    "user": "fbissey"
+}
+```
 
 Would you believe it. I committed the latest patch to the sage-on-gentoo tree 3 hours ago and 1 hour ago about one of our users reported a new parallel make failure at -j2 on x86.... in libfac this time.
 
@@ -731,27 +1483,62 @@ make[1]: *** [install] Error 1
 I have a fix for him to try, I'll report back when I know the fix works for him.
 
 
+
 ---
 
-Comment by fbissey created at 2010-09-19 03:11:37
+archive/issue_comments_095183.json:
+```json
+{
+    "body": "fixing parallel make issue in libfac",
+    "created_at": "2010-09-19T03:11:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95183",
+    "user": "fbissey"
+}
+```
 
 fixing parallel make issue in libfac
 
 
+
 ---
+
+archive/issue_comments_095184.json:
+```json
+{
+    "body": "Attachment\n\nSo he reported back and the patch worked for him.",
+    "created_at": "2010-09-19T03:17:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95184",
+    "user": "fbissey"
+}
+```
 
 Attachment
 
 So he reported back and the patch worked for him.
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-19 05:56:00
+archive/issue_comments_095185.json:
+```json
+{
+    "body": "Replying to [comment:58 fbissey]:\n> So he reported back and the patch worked for him.\n\nFran\u00e7ois, could you add your patch to #9946?\n\nI'm going to release 4.6.alpha1 with #9946 as a known problem, since alpha1 *is* an alpha and we need more real-world tests.",
+    "created_at": "2010-09-19T05:56:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9733#issuecomment-95185",
+    "user": "mpatel"
+}
+```
 
 Replying to [comment:58 fbissey]:
 > So he reported back and the patch worked for him.
 
 François, could you add your patch to #9946?
 
-I'm going to release 4.6.alpha1 with #9946 as a known problem, since alpha1 _is_ an alpha and we need more real-world tests.
+I'm going to release 4.6.alpha1 with #9946 as a known problem, since alpha1 *is* an alpha and we need more real-world tests.

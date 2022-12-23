@@ -1,11 +1,21 @@
 # Issue 8768: gnutls-2.2.1.p5 doesn't build on Solaris 10 x86 (fulvia) with GCC-4.5.0
 
-Issue created by migration from https://trac.sagemath.org/ticket/8768
-
-Original creator: was
-
-Original creation time: 2010-04-26 18:09:29
-
+archive/issues_008768.json:
+```json
+{
+    "body": "Assignee: drkirkby\n\nCC:  jhpalmieri jsp\n\n\n```\ngcc -std=gnu99 -g -O2 -D_REENTRANT -D_THREAD_SAFE -I/home/wstein/screen/fulvia/sage-4.4/local/include -g -O2 -D_REENTRANT -D_THREAD_SAFE -Wno-pointer-sign -o .libs/gnutls-serv serv-gaa.o serv.o common.o select.o  -L/home/wstein/screen/fulvia/sage-4.4/spkg/build/gnutls-2.2.1.p5/src/lib/.libs ../lib/.libs/libgnutls.so -L/home/wstein/screen/fulvia/sage-4.4/local/lib ../libextra/.libs/libgnutls-extra.so /home/wstein/screen/fulvia/sage-4.4/local/lib/libopencdk.so /home/wstein/screen/fulvia/sage-4.4/spkg/build/gnutls-2.2.1.p5/src/lib/.libs/libgnutls.so -lz ../gl/.libs/libgnu.a /home/wstein/screen/fulvia/sage-4.4/local/lib/libgcrypt.so /home/wstein/screen/fulvia/sage-4.4/local/lib/libgpg-error.so -lsocket  -R/home/wstein/screen/fulvia/sage-4.4/local/lib\nserv.o: In function `peer_print_info':\n/home/wstein/screen/fulvia/sage-4.4/spkg/build/gnutls-2.2.1.p5/src/src/serv.c:489: undefined reference to `gnutls_x509_crt_print'\ncommon.o: In function `print_x509_info':\n/home/wstein/screen/fulvia/sage-4.4/spkg/build/gnutls-2.2.1.p5/src/src/common.c:151: undefined reference to `gnutls_x509_crt_check_hostname'\n../libextra/.libs/libgnutls-extra.so: undefined reference to `_gnutls_hostname_compare'\ncollect2: ld returned 1 exit status\nmake[5]: *** [gnutls-serv] Error 1\nmake[5]: Leaving directory `/home/wstein/screen/fulvia/sage-4.4/spkg/build/gnutls-2.2.1.p5/src/src'\nmake[4]: *** [all-recursive] Error 1\nmake[4]: Leaving directory `/home/wstein/screen/fulvia/sage-4.4/spkg/build/gnutls-2.2.1.p5/src/src'\nmake[3]: *** [all-recursive] Error 1\nmake[3]: Leaving directory `/home/wstein/screen/fulvia/sage-4.4/spkg/build/gnutls-2.2.1.p5/src'\n```\n\n\nMore machine details:\n\n```\n-bash-3.00$ uname -a\nSunOS mark 5.10 Generic_127111-01 sun4u sparc SUNW,Sun-Blade-2500\n-bash-3.00$ gcc -v\nUsing built-in specs.\nCOLLECT_GCC=gcc\nCOLLECT_LTO_WRAPPER=/usr/local/gcc-4.5.0/sparc-SunOS-ultrasparc3/libexec/gcc/sparc-sun-solaris2.10/4.5.0/lto-wrapper\nTarget: sparc-sun-solaris2.10\nConfigured with: /usr/local/gcc-4.5.0/src/gcc-4.5.0/configure --enable-languages=c,c++,fortran --with-gnu-as --with-as=/usr/local/binutils-2.20.1/sparc-SunOS-ultrasparc3-gcc-4.4.3/bin/as --with-gnu-ld --with-ld=/usr/local/binutils-2.20.1/sparc-SunOS-ultrasparc3-gcc-4.4.3/bin/ld --with-gmp=/usr/local/mpir-1.2.2/sparc-SunOS-ultrasparc3-gcc-4.4.2-abi32 --with-mpfr=/usr/local/mpfr-2.4.2/sparc-SunOS-ultrasparc3-mpir-1.2.2-gcc-4.4.2-abi32 --with-mpc=/usr/local/mpc-0.8.1/sparc-SunOS-ultrasparc3-mpfr-2.4.2-mpir-1.2.2-gcc-4.4.3-abi32 --prefix=/usr/local/gcc-4.5.0/sparc-SunOS-ultrasparc3\nThread model: posix\ngcc version 4.5.0 (GCC)\n```\n\n\n}}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/8768\n\n",
+    "created_at": "2010-04-26T18:09:29Z",
+    "labels": [
+        "porting: Solaris",
+        "major",
+        "bug"
+    ],
+    "title": "gnutls-2.2.1.p5 doesn't build on Solaris 10 x86 (fulvia) with GCC-4.5.0",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8768",
+    "user": "was"
+}
+```
 Assignee: drkirkby
 
 CC:  jhpalmieri jsp
@@ -46,17 +56,43 @@ gcc version 4.5.0 (GCC)
 
 }}}
 
+Issue created by migration from https://trac.sagemath.org/ticket/8768
+
+
+
+
 
 ---
 
-Comment by was created at 2010-04-26 20:04:13
+archive/issue_comments_080236.json:
+```json
+{
+    "body": "Changing priority from major to critical.",
+    "created_at": "2010-04-26T20:04:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8768",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8768#issuecomment-80236",
+    "user": "was"
+}
+```
 
 Changing priority from major to critical.
 
 
+
 ---
 
-Comment by was created at 2010-04-26 20:04:13
+archive/issue_comments_080237.json:
+```json
+{
+    "body": "Note: On SPARC Solaris 10, GNUtls *also* fails to build, with a similar error.  However, the reported undefined symbol that stops the build is different than on x86. Here is what we get on mark:\n\n```\nchecking whether we are using the GNU Fortran 77 compiler... yes\nchecking whether gfortran accepts -g... yes\nchecking the maximum length of command line arguments... rint_x509_info':\n/home/wstein/screen/fulvia/sage-4.4/spkg/build/gnutls-2.2.1.p5/src/src/common.c:151: undefined reference to\nnutls_x509_crt_check_hostname'\n../libextra/.libs/libgnutls-extra.so: undefined reference to gnutls_hostname_compare'\ncollect2: ld returned 1 exit status\nmake[5]: *** [gnutls-serv] Error 1\nmake[5]: Leaving directory home/wstein/screen/fulvia/sage-4.4/spkg/build/gnutls-2.2.1.p5/src/src'\nmake[4]: *** [all-recursive] Error 1\nmake[4]: Leaving directory home/wstein/screen/fulvia/sage-4.4/spkg/build/gnutls-2.2.1.p5/src/src'\nmake[3]: *** [all-recursive] Error 1\nmake[3]: Leaving directory home/wstein/screen/fulvia/sage-4.4/spkg/build/gnutls-2.2.1.p5/src'\nmake[2]: *** [all] Error 2\nmake[2]: Leaving directory home/wstein/screen/fulvia/sage-4.4/spkg/build/gnutls-2.2.1.p5/src'\nfailed to build GNUTLS\n\nreal    2m45.511s\nuser    0m48.789s\nsys     1m1.201s\nsage: An error occurred while installing gnutls-2.2.1.p5\nq^[^[^[\n\n\n^Cmake: *** [build] Error 130\n-bash-3.00$\n-bash-3.00$  gcc -v\nUsing built-in specs.\nCOLLECT_GCC=gcc\nCOLLECT_LTO_WRAPPER=/usr/local/gcc-4.5.0/sparc-SunOS-ultrasparc3/libexec/gcc/sparc-sun-solaris2.10/4.5.0/lto\n-wrapper\nTarget: sparc-sun-solaris2.10\nConfigured with: /usr/local/gcc-4.5.0/src/gcc-4.5.0/configure --enable-languages=c,c++,fortran --with-gnu-as\n --with-as=/usr/local/binutils-2.20.1/sparc-SunOS-ultrasparc3-gcc-4.4.3/bin/as --with-gnu-ld --with-ld=/usr/\nlocal/binutils-2.20.1/sparc-SunOS-ultrasparc3-gcc-4.4.3/bin/ld --with-gmp=/usr/local/mpir-1.2.2/sparc-SunOS-\nultrasparc3-gcc-4.4.2-abi32 --with-mpfr=/usr/local/mpfr-2.4.2/sparc-SunOS-ultrasparc3-mpir-1.2.2-gcc-4.4.2-a\nbi32 --with-mpc=/usr/local/mpc-0.8.1/sparc-SunOS-ultrasparc3-mpfr-2.4.2-mpir-1.2.2-gcc-4.4.3-abi32 --prefix=\n/usr/local/gcc-4.5.0/sparc-SunOS-ultrasparc3\nThread model: posix\ngcc version 4.5.0 (GCC)\n-bash-3.00$ uname -a\nSunOS mark 5.10 Generic_127111-01 sun4u sparc SUNW,Sun-Blade-2500\n-bash-3.00$ uname -a\nSunOS mark 5.10 Generic_127111-01 sun4u sparc SUNW,Sun-Blade-2500\n-bash-3.00$ gcc -v\nUsing built-in specs.\nCOLLECT_GCC=gcc\nCOLLECT_LTO_WRAPPER=/usr/local/gcc-4.5.0/sparc-SunOS-ultrasparc3/libexec/gcc/sparc-sun-solaris2.10/4.5.0/lto\n-wrapper\nTarget: sparc-sun-solaris2.10\nConfigured with: /usr/local/gcc-4.5.0/src/gcc-4.5.0/configure --enable-languages=c,c++,fortran --with-gnu-as\n --with-as=/usr/local/binutils-2.20.1/sparc-SunOS-ultrasparc3-gcc-4.4.3/bin/as --with-gnu-ld --with-ld=/usr/local/binutils-2.20.1/sparc-SunOS-ultrasparc3-gcc-4.4.3/bin/ld --with-gmp=/usr/local/mpir-1.2.2/sparc-SunOS-ultrasparc3-gcc-4.4.2-abi32 --with-mpfr=/usr/local/mpfr-2.4.2/sparc-SunOS-ultrasparc3-mpir-1.2.2-gcc-4.4.2-abi32 --with-mpc=/usr/local/mpc-0.8.1/sparc-SunOS-ultrasparc3-mpfr-2.4.2-mpir-1.2.2-gcc-4.4.3-abi32 --prefix=/usr/local/gcc-4.5.0/sparc-SunOS-ultrasparc3\nThread model: posix\ngcc version 4.5.0 (GCC)\n-bash-3.00$ hostname\nmark\n```\n",
+    "created_at": "2010-04-26T20:04:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8768",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8768#issuecomment-80237",
+    "user": "was"
+}
+```
 
 Note: On SPARC Solaris 10, GNUtls *also* fails to build, with a similar error.  However, the reported undefined symbol that stops the build is different than on x86. Here is what we get on mark:
 
@@ -121,18 +157,40 @@ mark
 
 
 
+
 ---
 
-Comment by was created at 2010-04-26 20:09:17
+archive/issue_comments_080238.json:
+```json
+{
+    "body": "Changing priority from critical to blocker.",
+    "created_at": "2010-04-26T20:09:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8768",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8768#issuecomment-80238",
+    "user": "was"
+}
+```
 
 Changing priority from critical to blocker.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-05-06 23:02:47
+archive/issue_comments_080239.json:
+```json
+{
+    "body": "Note, gcc 4.5 is **not** the latest gcc, but gcc 4.4.4 is: See\n\nhttp://gcc.gnu.org/\n\n\n```\nNews\n\nApril 29, 2010\n    GCC 4.4.4 has been released.\nApril 14, 2010\n    GCC 4.5.0 has been released.\n```\n\n\nDave",
+    "created_at": "2010-05-06T23:02:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8768",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8768#issuecomment-80239",
+    "user": "drkirkby"
+}
+```
 
-Note, gcc 4.5 is *not* the latest gcc, but gcc 4.4.4 is: See
+Note, gcc 4.5 is **not** the latest gcc, but gcc 4.4.4 is: See
 
 http://gcc.gnu.org/
 
@@ -150,9 +208,20 @@ April 14, 2010
 Dave
 
 
+
 ---
 
-Comment by drkirkby created at 2010-05-07 21:17:18
+archive/issue_comments_080240.json:
+```json
+{
+    "body": "It would probably be better if gcc 4.5 was configured with the Sun linker rather than the GNU linker. On OpenSolaris, best results have been achieved using the GNU assembler and the Sun linker. \n\nOn Solaris 10 (SPARC), both the Sun linker and Sun assembler are used, but that combo does not work too well on OpenSolaris, where the GNU assembler seems to be necessary. \n\n\n\nDave",
+    "created_at": "2010-05-07T21:17:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8768",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8768#issuecomment-80240",
+    "user": "drkirkby"
+}
+```
 
 It would probably be better if gcc 4.5 was configured with the Sun linker rather than the GNU linker. On OpenSolaris, best results have been achieved using the GNU assembler and the Sun linker. 
 
@@ -163,9 +232,20 @@ On Solaris 10 (SPARC), both the Sun linker and Sun assembler are used, but that 
 Dave
 
 
+
 ---
 
-Comment by drkirkby created at 2010-05-22 08:25:27
+archive/issue_comments_080241.json:
+```json
+{
+    "body": "I've not tried gcc 4.5, but gcc 4.4.4 configured with the Sun linker and GNU assembler and it builds OK on my Sun Ultra 27 (Xeon processor) running OpenSolaris 06/2009. \n\nNote the version 4.5 compiler where this problem was observerved was configured with the option\n\n\n\n```\n--with-ld=/usr/local/binutils-2.20.1/sparc-SunOS-ultrasparc3-gcc-4.4.3/bin/ld\n```\n\n\nwhich I've personally always found to cause more problems than the Sun linker. I also note that using the Sun linker is recommended by GNU - see http://gcc.gnu.org/install/specific.html#ix86-x-solaris210 \n\nI think it would be better if the gcc on fulvia was configured the way recommended in the GNU documentation. \n\nDave",
+    "created_at": "2010-05-22T08:25:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8768",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8768#issuecomment-80241",
+    "user": "drkirkby"
+}
+```
 
 I've not tried gcc 4.5, but gcc 4.4.4 configured with the Sun linker and GNU assembler and it builds OK on my Sun Ultra 27 (Xeon processor) running OpenSolaris 06/2009. 
 
@@ -185,9 +265,20 @@ I think it would be better if the gcc on fulvia was configured the way recommend
 Dave
 
 
+
 ---
 
-Comment by drkirkby created at 2010-05-22 08:27:02
+archive/issue_comments_080242.json:
+```json
+{
+    "body": "For the record, this is how gcc 4.4.4 was configured by me:\n\n\n```\ndrkirkby@hawk:~/sage-4.4.2/spkg$ gcc -v\nUsing built-in specs.\nTarget: i386-pc-solaris2.11\nConfigured with: ../gcc-4.4.4/configure --prefix=/usr/local/gcc-4.4.4 --with-as=/usr/local/binutils-2.20/bin/as --with-ld=/usr/ccs/bin/ld --with-gmp=/usr/local --with-mpfr=/usr/local\nThread model: posix\ngcc version 4.4.4 (GCC) \n```\n\n\nusing the Sun linker and GNU assembler, as recommended at http://gcc.gnu.org/install/specific.html#ix86-x-solaris210",
+    "created_at": "2010-05-22T08:27:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8768",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8768#issuecomment-80242",
+    "user": "drkirkby"
+}
+```
 
 For the record, this is how gcc 4.4.4 was configured by me:
 
@@ -205,9 +296,20 @@ gcc version 4.4.4 (GCC)
 using the Sun linker and GNU assembler, as recommended at http://gcc.gnu.org/install/specific.html#ix86-x-solaris210
 
 
+
 ---
 
-Comment by drkirkby created at 2010-05-22 08:30:08
+archive/issue_comments_080243.json:
+```json
+{
+    "body": "Oops, I see this was Solaris 10, not OpenSolaris (aka Solaris 11). But the link I provided is for Solaris 10 or later on x86, so the point is still valid, that this version of gcc is probably not configured in the ideal way. \n\nIt looks like a linker problem.\n\nDave",
+    "created_at": "2010-05-22T08:30:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8768",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8768#issuecomment-80243",
+    "user": "drkirkby"
+}
+```
 
 Oops, I see this was Solaris 10, not OpenSolaris (aka Solaris 11). But the link I provided is for Solaris 10 or later on x86, so the point is still valid, that this version of gcc is probably not configured in the ideal way. 
 
@@ -216,16 +318,38 @@ It looks like a linker problem.
 Dave
 
 
+
 ---
 
-Comment by was created at 2010-06-03 04:07:33
+archive/issue_comments_080244.json:
+```json
+{
+    "body": "This is not a 4.4.3 blocker.",
+    "created_at": "2010-06-03T04:07:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8768",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8768#issuecomment-80244",
+    "user": "was"
+}
+```
 
 This is not a 4.4.3 blocker.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-07-31 01:15:21
+archive/issue_comments_080245.json:
+```json
+{
+    "body": "I'm closing this as invalid. gnutls builds fine on fulvia. I've built it, as has John Palmieri. \n\nThe reason you had trouble was that gcc was mis-configured. I'm of the opinion it is better to use both the Sun linker and Sun assembler on SPARC. Since Mariah provided a gcc configured in this way at:\n\n\n```\n/usr/local/gcc-4.5.0/x86_64-SunOS-core2-sun-ld/bin/gcc\n```\n\n\nthe problem has gone away. Note, the default compiler on fulvia is not configured like this. \n\n\n```\n64 drkirkby@fulvia:[~/fulvia/32/sage-4.5.1] $ gcc -v\nUsing built-in specs.\nCOLLECT_GCC=gcc\nCOLLECT_LTO_WRAPPER=/usr/local/gcc-4.5.0/x86_64-SunOS-core2-sun-ld/libexec/gcc/i386-pc-solaris2.10/4.5.0/lto-wrapper\nTarget: i386-pc-solaris2.10\nConfigured with: /usr/local/gcc-4.5.0/src/gcc-4.5.0/configure --enable-languages=c,c++,fortran --with-gnu-as --with-as=/usr/local/binutils-2.20.1/x86_64-SunOS-core2-gcc-4.4.3/bin/as --with-ld=/usr/ccs/bin/ld --with-gmp=/usr/local/gmp-5.0.1/x86_64-SunOS-core2-gcc-4.5.0-abi32 --with-mpfr=/usr/local/mpfr-3.0.0/x86_64-SunOS-core2-gmp-5.0.1-gcc-4.5.0-abi32 --with-mpc=/usr/local/mpc-0.8.2/x86_64-SunOS-core2-mpfr-3.0.0-gmp-5.0.1-gcc-4.5.0-abi32 --prefix=/usr/local/gcc-4.5.0/x86_64-SunOS-core2-sun-ld\nThread model: posix\ngcc version 4.5.0 (GCC) \n```\n\n\nAn inspection of the log shows gnutls installed OK. \n\n\n```\n64 drkirkby@fulvia:[~/fulvia/32/sage-4.5.1] $ tail -30  spkg/logs/gnutls-2.2.1.p5.log\n  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \\\n    ../build-aux/install-sh -c -m 644 ./$file \\\n\t\t    /home/drkirkby/fulvia/32/sage-4.5.1/local/share/gettext/po/$file; \\\n  done; \\\n  for file in Makevars; do \\\n    rm -f /home/drkirkby/fulvia/32/sage-4.5.1/local/share/gettext/po/$file; \\\n  done; \\\nelse \\\n  : ; \\\nfi\nmake[3]: Leaving directory `/home/drkirkby/fulvia/32/sage-4.5.1/spkg/build/gnutls-2.2.1.p5/src/po'\nmake[3]: Entering directory `/home/drkirkby/fulvia/32/sage-4.5.1/spkg/build/gnutls-2.2.1.p5/src'\nmake[4]: Entering directory `/home/drkirkby/fulvia/32/sage-4.5.1/spkg/build/gnutls-2.2.1.p5/src'\nmake[4]: warning: -jN forced in submake: disabling jobserver mode.\nmake[4]: Nothing to be done for `install-exec-am'.\nmake[4]: Nothing to be done for `install-data-am'.\nmake[4]: Leaving directory `/home/drkirkby/fulvia/32/sage-4.5.1/spkg/build/gnutls-2.2.1.p5/src'\nmake[3]: Leaving directory `/home/drkirkby/fulvia/32/sage-4.5.1/spkg/build/gnutls-2.2.1.p5/src'\nmake[2]: Leaving directory `/home/drkirkby/fulvia/32/sage-4.5.1/spkg/build/gnutls-2.2.1.p5/src'\n\nreal\t39m58.479s\nuser\t1m9.593s\nsys\t1m50.962s\nSuccessfully installed gnutls-2.2.1.p5\nNow cleaning up tmp files.\nrm: Cannot remove any directory in the path of the current working directory\n/home/drkirkby/fulvia/32/sage-4.5.1/spkg/build/gnutls-2.2.1.p5\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing gnutls-2.2.1.p5.spkg\n```\n\n\nDave",
+    "created_at": "2010-07-31T01:15:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8768",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8768#issuecomment-80245",
+    "user": "drkirkby"
+}
+```
 
 I'm closing this as invalid. gnutls builds fine on fulvia. I've built it, as has John Palmieri. 
 
@@ -293,16 +417,38 @@ Finished installing gnutls-2.2.1.p5.spkg
 Dave
 
 
+
 ---
 
-Comment by drkirkby created at 2010-07-31 01:15:21
+archive/issue_comments_080246.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2010-07-31T01:15:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8768",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8768#issuecomment-80246",
+    "user": "drkirkby"
+}
+```
 
 Resolution: invalid
 
 
+
 ---
 
-Comment by drkirkby created at 2010-07-31 01:19:20
+archive/issue_comments_080247.json:
+```json
+{
+    "body": "Replying to [comment:9 drkirkby]:\n\n> The reason you had trouble was that gcc was mis-configured. I'm of the opinion it is better to use both the Sun linker and Sun assembler on SPARC. Since Mariah provided a gcc configured in this way at:\n\nCorrection, this is not SPARC, but x86. In which case, IMHO, gcc should be configured with the Sun linker and GNU assembler. Since Mariah provided such a gcc at \n\n\n```\n/usr/local/gcc-4.5.0/x86_64-SunOS-core2-sun-ld/bin/gcc\n```\n\n\nthe problem has gone. So this remains invalid.",
+    "created_at": "2010-07-31T01:19:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8768",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8768#issuecomment-80247",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:9 drkirkby]:
 
@@ -319,9 +465,20 @@ Correction, this is not SPARC, but x86. In which case, IMHO, gcc should be confi
 the problem has gone. So this remains invalid.
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-12 22:56:06
+archive/issue_comments_080248.json:
+```json
+{
+    "body": "I see the error in the description when I compile 4.5.3 on fulvia.  Perhaps I've misconfigured the environment?  I've sourced `/usr/local/skynet_bash_profile` and I get\n\n```sh\n$ gcc -v\nUsing built-in specs.\nCOLLECT_GCC=gcc\nCOLLECT_LTO_WRAPPER=/usr/local/gcc-4.5.1/x86_64-SunOS-core2/libexec/gcc/i386-pc-solaris2.10/4.5.1/lto-wrapper\nTarget: i386-pc-solaris2.10\nConfigured with: /usr/local/gcc-4.5.1/src/gcc-4.5.1/configure --enable-languages=c,c++,fortran --with-gnu-as --with-as=/usr/local/binutils-2.20.1/x86_64-SunOS-core2-gcc-4.4.3/bin/as --with-gnu-ld --with-ld=/usr/local/binutils-2.20.1/x86_64-SunOS-core2-gcc-4.4.3/bin/ld --with-gmp=/usr/local/gmp-5.0.1/x86_64-SunOS-core2-gcc-4.5.0-abi32 --with-mpfr=/usr/local/mpfr-3.0.0/x86_64-SunOS-core2-gmp-5.0.1-gcc-4.5.0-abi32 --with-mpc=/usr/local/mpc-0.8.2/x86_64-SunOS-core2-mpfr-3.0.0-gmp-5.0.1-gcc-4.5.0-abi32 --prefix=/usr/local/gcc-4.5.1/x86_64-SunOS-core2\nThread model: posix\ngcc version 4.5.1 (GCC) \n```\n",
+    "created_at": "2010-09-12T22:56:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8768",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8768#issuecomment-80248",
+    "user": "mpatel"
+}
+```
 
 I see the error in the description when I compile 4.5.3 on fulvia.  Perhaps I've misconfigured the environment?  I've sourced `/usr/local/skynet_bash_profile` and I get
 
@@ -338,9 +495,20 @@ gcc version 4.5.1 (GCC)
 
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-12 23:42:56
+archive/issue_comments_080249.json:
+```json
+{
+    "body": "Replying to [comment:12 mpatel]:\n> I see the error in the description when I compile 4.5.3 on fulvia.  Perhaps I've misconfigured the environment?  I've sourced `/usr/local/skynet_bash_profile` and I get [...]\n\nPreprending `/usr/local/gcc-4.5.1/x86_64-SunOS-core2-sun-ld/bin` to the `PATH` appears to fix this problem.",
+    "created_at": "2010-09-12T23:42:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8768",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8768#issuecomment-80249",
+    "user": "mpatel"
+}
+```
 
 Replying to [comment:12 mpatel]:
 > I see the error in the description when I compile 4.5.3 on fulvia.  Perhaps I've misconfigured the environment?  I've sourced `/usr/local/skynet_bash_profile` and I get [...]
@@ -348,23 +516,56 @@ Replying to [comment:12 mpatel]:
 Preprending `/usr/local/gcc-4.5.1/x86_64-SunOS-core2-sun-ld/bin` to the `PATH` appears to fix this problem.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-09-13 01:39:06
+archive/issue_comments_080250.json:
+```json
+{
+    "body": "That's right, the settings in /usr/local/skynet_bash_profile are set up this way, even though Sage won't build with those settings.  See [http://wiki.sagemath.org/skynet](http://wiki.sagemath.org/skynet) for instructions on how to set up fulvia to build Sage.",
+    "created_at": "2010-09-13T01:39:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8768",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8768#issuecomment-80250",
+    "user": "jhpalmieri"
+}
+```
 
 That's right, the settings in /usr/local/skynet_bash_profile are set up this way, even though Sage won't build with those settings.  See [http://wiki.sagemath.org/skynet](http://wiki.sagemath.org/skynet) for instructions on how to set up fulvia to build Sage.
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-13 05:51:54
+archive/issue_comments_080251.json:
+```json
+{
+    "body": "Thanks.  I'll adapt the settings for fulvia and the marks from the wiki page.",
+    "created_at": "2010-09-13T05:51:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8768",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8768#issuecomment-80251",
+    "user": "mpatel"
+}
+```
 
 Thanks.  I'll adapt the settings for fulvia and the marks from the wiki page.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-09-13 10:14:57
+archive/issue_comments_080252.json:
+```json
+{
+    "body": "Replying to [comment:15 mpatel]:\n> Thanks.  I'll adapt the settings for fulvia and the marks from the wiki page.\nI've just updated that Wiki (about 10 minutes ago_, as it said Sage would not build on fulvia, but in fact it does. Also, Sage should now build 64-bit on `mark` and `mark2`, though as I remarked there, the build will be unstable. I suggest you re-read the particular section of interest. \n\nI also added the need to read\n\n\n```\n/usr/local/README.background_jobs\n```\n",
+    "created_at": "2010-09-13T10:14:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8768",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8768#issuecomment-80252",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:15 mpatel]:
 > Thanks.  I'll adapt the settings for fulvia and the marks from the wiki page.

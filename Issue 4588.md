@@ -1,26 +1,51 @@
 # Issue 4588: doctest -- get rid of the "feature" where docstrings with require, optional, and package all in them are automatically marked optional
 
-Issue created by migration from https://trac.sagemath.org/ticket/4588
-
-Original creator: was
-
-Original creation time: 2008-11-23 02:44:06
-
+archive/issues_004588.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nThis \"feature\" that I introduced years ago is incredibly confusing.  3 people at least got very confused by this in the last 3-4 days. \n\nTo close this ticket:\n1. remove this functionality from local/bin/sage-*test*\n\n2. rewrite all the files that use this by tediously marking each optional line with #optional.   This is tedious, but it is much much clearer what is going on.  \n\nNote -- only do this *after* apply #4583, which already does some of part 2 above. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4588\n\n",
+    "created_at": "2008-11-23T02:44:06Z",
+    "labels": [
+        "doctest coverage",
+        "major",
+        "bug"
+    ],
+    "title": "doctest -- get rid of the \"feature\" where docstrings with require, optional, and package all in them are automatically marked optional",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4588",
+    "user": "was"
+}
+```
 Assignee: mabshoff
 
 This "feature" that I introduced years ago is incredibly confusing.  3 people at least got very confused by this in the last 3-4 days. 
 
 To close this ticket:
-    1. remove this functionality from local/bin/sage-*test*
+1. remove this functionality from local/bin/sage-*test*
 
-    2. rewrite all the files that use this by tediously marking each optional line with #optional.   This is tedious, but it is much much clearer what is going on.  
+2. rewrite all the files that use this by tediously marking each optional line with #optional.   This is tedious, but it is much much clearer what is going on.  
 
 Note -- only do this *after* apply #4583, which already does some of part 2 above. 
+
+Issue created by migration from https://trac.sagemath.org/ticket/4588
+
+
+
 
 
 ---
 
-Comment by was created at 2008-11-23 02:48:07
+archive/issue_comments_034409.json:
+```json
+{
+    "body": "NOTE: Some people want a \n\n```\n# start optional\n...\n# end optional\n```\n\nsystem to allow for optional blocks. \n\nI'm not sure.  I think I don't like this.\n\nOne way to implement this though would be in sage-doctest when parsing the docstring if start optional appears, just mark everything # optional through to where end optional appears.  I guess.",
+    "created_at": "2008-11-23T02:48:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4588",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4588#issuecomment-34409",
+    "user": "was"
+}
+```
 
 NOTE: Some people want a 
 
@@ -37,7 +62,20 @@ I'm not sure.  I think I don't like this.
 One way to implement this though would be in sage-doctest when parsing the docstring if start optional appears, just mark everything # optional through to where end optional appears.  I guess.
 
 
+
 ---
+
+archive/issue_comments_034410.json:
+```json
+{
+    "body": "Attachment\n\nFallout after applying the patch:\n\n\n```\n----------------------------------------------------------------------\n\nThe following tests failed:\n\n        sage -t  devel/sage/sage/schemes/elliptic_curves/sha_tate.py # 1 doctests failed\n        sage -t  devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py # 1 doctests failed\n        sage -t  devel/sage/sage/interfaces/matlab.py # 1 doctests failed\n        sage -t  devel/sage/sage/interfaces/macaulay2.py # 1 doctests failed\n        sage -t  devel/sage/sage/interfaces/octave.py # 2 doctests failed\n        sage -t  devel/sage/sage/interfaces/scilab.py # 5 doctests failed\n        sage -t  devel/sage/sage/interfaces/lie.py # 1 doctests failed\n        sage -t  devel/sage/sage/interfaces/kash.py # 100 doctests failed\n        sage -t  devel/sage/sage/interfaces/maple.py # 40 doctests failed\n        sage -t  devel/sage/sage/interfaces/mupad.py # 19 doctests failed\n        sage -t  devel/sage/sage/interfaces/qepcad.py # 66 doctests failed\n        sage -t  devel/sage/sage/combinat/designs/incidence_structures.py # 1 doctests failed\n        sage -t  devel/sage/sage/databases/sloane.py # 3 doctests failed\n        sage -t  devel/sage/sage/databases/jones.py # 4 doctests failed\n        sage -t  devel/sage/sage/databases/stein_watkins.py # 21 doctests failed\n        sage -t  devel/sage/sage/groups/perm_gps/permgroup.py # 1 doctests failed\n        sage -t  devel/sage/sage/graphs/graph_database.py # 1 doctests failed\n        sage -t  devel/sage/sage/coding/linear_code.py # 4 doctests failed\n----------------------------------------------------------------------\nTotal time for all tests: 171.8 seconds\n```\n",
+    "created_at": "2009-01-23T01:34:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4588",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4588#issuecomment-34410",
+    "user": "was"
+}
+```
 
 Attachment
 
@@ -73,19 +111,56 @@ Total time for all tests: 171.8 seconds
 
 
 
+
 ---
 
-Comment by was created at 2009-01-23 09:00:42
+archive/issue_comments_034411.json:
+```json
+{
+    "body": "fix fallout in the core library.",
+    "created_at": "2009-01-23T09:00:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4588",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4588#issuecomment-34411",
+    "user": "was"
+}
+```
 
 fix fallout in the core library.
 
 
+
 ---
+
+archive/issue_comments_034412.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-01-23T09:28:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4588",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4588#issuecomment-34412",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_034413.json:
+```json
+{
+    "body": "Attachment\n\nThe attached sage patches fix all missing # optionals after applying the scripts patch (the first one -- trac_4588-scripts.patch).  I also greatly improve the use of \n\n```\n  # optional -- name_of_package\n```\n\nwhile I was at it.\n\nHowever, note that this revealed some bugs in David Joyner's linear_code.py stuff.  See #5067. Thus I believe this patch should receive a positive review *despite* that after applying it suddenly four doctests will fail.   I've made #5067 a blocker.",
+    "created_at": "2009-01-23T09:30:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4588",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4588#issuecomment-34413",
+    "user": "was"
+}
+```
 
 Attachment
 
@@ -100,27 +175,73 @@ while I was at it.
 However, note that this revealed some bugs in David Joyner's linear_code.py stuff.  See #5067. Thus I believe this patch should receive a positive review *despite* that after applying it suddenly four doctests will fail.   I've made #5067 a blocker.
 
 
+
 ---
+
+archive/issue_comments_034414.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-01-24T00:55:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4588",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4588#issuecomment-34414",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by rlm created at 2009-01-24 13:39:30
+archive/issue_comments_034415.json:
+```json
+{
+    "body": "I think that this set of patches should be merged in. They all applied cleanly to alpha0 (I don't know about alpha1), and this definitely needs to be done. I think that any remaining issues which arise once this does get merged should become their own ticket.",
+    "created_at": "2009-01-24T13:39:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4588",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4588#issuecomment-34415",
+    "user": "rlm"
+}
+```
 
 I think that this set of patches should be merged in. They all applied cleanly to alpha0 (I don't know about alpha1), and this definitely needs to be done. I think that any remaining issues which arise once this does get merged should become their own ticket.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-24 15:30:38
+archive/issue_comments_034416.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-01-24T15:30:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4588",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4588#issuecomment-34416",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-24 15:30:38
+archive/issue_comments_034417.json:
+```json
+{
+    "body": "Merged in Sage 3.3.alpha2",
+    "created_at": "2009-01-24T15:30:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4588",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4588#issuecomment-34417",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.3.alpha2

@@ -1,11 +1,21 @@
 # Issue 9037: pynac fails to build on 64-bit OpenSolaris x64.
 
-Issue created by migration from https://trac.sagemath.org/ticket/9037
-
-Original creator: drkirkby
-
-Original creation time: 2010-05-24 17:04:56
-
+archive/issues_009037.json:
+```json
+{
+    "body": "Assignee: drkirkby\n\nCC:  jsp\n\nThe spkg-install of 'pynac' has:\n\n\n```\nif [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then\n    echo \"64 bit MacIntel\"\n    CXXFLAGS=\"-m64 -O2 -g\"; export CXXFLAGS\n    LDFLAGS=\"-m64\"; export LDFLAGS\nfi\n```\n\n\nso obviously does not attempt to build 64-bit when SAGE64=\"yes\", unless the operating systems is OS X. \n\nThe build actually fails on a 64-bit OpenSolaris system, as pynac tries to link to 64-bit objects, which obviously fails. \n\n\n```\nsage: An error occurred while installing pynac-0.1.12\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9037\n\n",
+    "created_at": "2010-05-24T17:04:56Z",
+    "labels": [
+        "porting: Solaris",
+        "major",
+        "bug"
+    ],
+    "title": "pynac fails to build on 64-bit OpenSolaris x64.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9037",
+    "user": "drkirkby"
+}
+```
 Assignee: drkirkby
 
 CC:  jsp
@@ -32,33 +42,81 @@ sage: An error occurred while installing pynac-0.1.12
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/9037
+
+
+
+
 
 ---
 
-Comment by drkirkby created at 2010-05-24 18:19:39
+archive/issue_comments_083660.json:
+```json
+{
+    "body": "For other OpenSolaris issues, see #9026",
+    "created_at": "2010-05-24T18:19:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9037",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9037#issuecomment-83660",
+    "user": "drkirkby"
+}
+```
 
 For other OpenSolaris issues, see #9026
 
 
+
 ---
 
-Comment by mhansen created at 2010-05-25 19:01:25
+archive/issue_comments_083661.json:
+```json
+{
+    "body": "This should be coordinated with #8903.  I can make a new spkg for this issue.",
+    "created_at": "2010-05-25T19:01:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9037",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9037#issuecomment-83661",
+    "user": "mhansen"
+}
+```
 
 This should be coordinated with #8903.  I can make a new spkg for this issue.
 
 
+
 ---
 
-Comment by mhansen created at 2010-05-25 22:21:48
+archive/issue_comments_083662.json:
+```json
+{
+    "body": "There is a new spkg at #8903 which fixes this issue.",
+    "created_at": "2010-05-25T22:21:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9037",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9037#issuecomment-83662",
+    "user": "mhansen"
+}
+```
 
 There is a new spkg at #8903 which fixes this issue.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-05-30 12:01:37
+archive/issue_comments_083663.json:
+```json
+{
+    "body": "#8903 does **not** fix the issue, as it still has:\n\n\n```\nif [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then\n    echo \"64 bit MacIntel\"\n    CXXFLAGS=\"-m64 -O2 -g\"; export CXXFLAGS\n    LDFLAGS=\"-m64\"; export LDFLAGS\nfi\n```\n\n\nI'll have to create a new package based on that at #8031. \n\nDave",
+    "created_at": "2010-05-30T12:01:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9037",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9037#issuecomment-83663",
+    "user": "drkirkby"
+}
+```
 
-#8903 does *not* fix the issue, as it still has:
+#8903 does **not** fix the issue, as it still has:
 
 
 ```
@@ -75,36 +133,91 @@ I'll have to create a new package based on that at #8031.
 Dave
 
 
+
 ---
 
-Comment by drkirkby created at 2010-05-30 12:03:03
+archive/issue_comments_083664.json:
+```json
+{
+    "body": "Oops, I mean I'll have to create a new package based on that at #8903.",
+    "created_at": "2010-05-30T12:03:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9037",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9037#issuecomment-83664",
+    "user": "drkirkby"
+}
+```
 
 Oops, I mean I'll have to create a new package based on that at #8903.
 
 
+
 ---
 
-Comment by mhansen created at 2010-06-03 04:18:27
+archive/issue_comments_083665.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-06-03T04:18:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9037",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9037#issuecomment-83665",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mhansen created at 2010-06-03 04:18:27
+archive/issue_comments_083666.json:
+```json
+{
+    "body": "This change looks good to me and is what is done in lots of other spkgs.",
+    "created_at": "2010-06-03T04:18:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9037",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9037#issuecomment-83666",
+    "user": "mhansen"
+}
+```
 
 This change looks good to me and is what is done in lots of other spkgs.
 
 
+
 ---
 
-Comment by mhansen created at 2010-06-03 04:18:35
+archive/issue_comments_083667.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-06-03T04:18:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9037",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9037#issuecomment-83667",
+    "user": "mhansen"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by was created at 2010-06-03 15:34:36
+archive/issue_comments_083668.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-06-03T15:34:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9037",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9037#issuecomment-83668",
+    "user": "was"
+}
+```
 
 Resolution: fixed

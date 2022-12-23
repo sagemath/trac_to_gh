@@ -1,11 +1,21 @@
 # Issue 4214: elliptic_logarithm gives inaccurate answers
 
-Issue created by migration from https://trac.sagemath.org/ticket/4214
-
-Original creator: AlexGhitza
-
-Original creation time: 2008-09-28 22:47:17
-
+archive/issues_004214.json:
+```json
+{
+    "body": "Assignee: tbd\n\nIt seems that our implementation of `elliptic_logarithm` performs much worse than Pari's `ellpointtoz`.  This is from an actual doctest in `ell_point.py`:\n\n\n```\nsage: E = EllipticCurve([1, 0, 1, -85357462, 303528987048]) #18074g1\nsage: P = E([4458713781401/835903744, -64466909836503771/24167649046528, 1])\nsage: P.elliptic_logarithm(precision=54)\nNaN\nsage: P.elliptic_logarithm(precision=55)\n0.2735052671206336\nsage: P.elliptic_logarithm()  # 100 bits\n0.27656204014107100870070982517\n```\n\n\nNote that, while we ask for a precision of 55 bits (about 16 decimal digits), we seem to only get 2 accurate digits!  Compare this with the following `gp` session:\n\n\n```\n? \\p 16                                           \n   realprecision = 19 significant digits (16 digits displayed)\n? e = ellinit([1, 0, 1, -85357462, 303528987048]);\n? ellpointtoz(e, [4458713781401/835903744, -64466909836503771/24167649046528])\n%6 = 0.2765620403\n? \\p 32                                                                       \n   realprecision = 38 significant digits (32 digits displayed)\n? e = ellinit([1, 0, 1, -85357462, 303528987048]);                            \n? ellpointtoz(e, [4458713781401/835903744, -64466909836503771/24167649046528])\n%8 = 0.27656204014107061464076203097\n```\n\n\nWith the smaller precision, Pari knows that the result is not accurate to its current 16 displayed decimals, and prints only 10 of them (of which only the last is wrong).  We also see that Sage's result with 100 bits of precision has only 14 accurate decimals (less than half of what we asked for).\n\nPossible solutions:\n\n1. add a flag `algorithm` to `elliptic_logarithm` and set it to \"pari\" by default; given the loss of precision that even Pari's more accurate algorithm seems to suffer, we might want to ask it to do the computations with slightly higher precision than we need\n\n2. find where Sage's algorithm loses so much precision and fix it\n\nI tend towards doing 1 right now and working on 2.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/4214\n\n",
+    "created_at": "2008-09-28T22:47:17Z",
+    "labels": [
+        "algebra",
+        "major",
+        "bug"
+    ],
+    "title": "elliptic_logarithm gives inaccurate answers",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4214",
+    "user": "AlexGhitza"
+}
+```
 Assignee: tbd
 
 It seems that our implementation of `elliptic_logarithm` performs much worse than Pari's `ellpointtoz`.  This is from an actual doctest in `ell_point.py`:
@@ -44,44 +54,103 @@ With the smaller precision, Pari knows that the result is not accurate to its cu
 
 Possible solutions:
 
- 1. add a flag `algorithm` to `elliptic_logarithm` and set it to "pari" by default; given the loss of precision that even Pari's more accurate algorithm seems to suffer, we might want to ask it to do the computations with slightly higher precision than we need
+1. add a flag `algorithm` to `elliptic_logarithm` and set it to "pari" by default; given the loss of precision that even Pari's more accurate algorithm seems to suffer, we might want to ask it to do the computations with slightly higher precision than we need
 
- 2. find where Sage's algorithm loses so much precision and fix it
+2. find where Sage's algorithm loses so much precision and fix it
 
 I tend towards doing 1 right now and working on 2.  
+
+Issue created by migration from https://trac.sagemath.org/ticket/4214
+
+
+
 
 
 ---
 
-Comment by AlexGhitza created at 2008-09-28 22:49:31
+archive/issue_comments_030619.json:
+```json
+{
+    "body": "Changing assignee from tbd to was.",
+    "created_at": "2008-09-28T22:49:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4214",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4214#issuecomment-30619",
+    "user": "AlexGhitza"
+}
+```
 
 Changing assignee from tbd to was.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2008-09-28 22:49:31
+archive/issue_comments_030620.json:
+```json
+{
+    "body": "Changing component from algebra to number theory.",
+    "created_at": "2008-09-28T22:49:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4214",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4214#issuecomment-30620",
+    "user": "AlexGhitza"
+}
+```
 
 Changing component from algebra to number theory.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2008-10-01 11:43:23
+archive/issue_comments_030621.json:
+```json
+{
+    "body": "Changing assignee from was to AlexGhitza.",
+    "created_at": "2008-10-01T11:43:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4214",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4214#issuecomment-30621",
+    "user": "AlexGhitza"
+}
+```
 
 Changing assignee from was to AlexGhitza.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2008-10-01 11:43:23
+archive/issue_comments_030622.json:
+```json
+{
+    "body": "The attached patch (based on 3.1.3.alpha2) implements solution 1 described above, in such a way that the result is very likely (if we trust Pari) to have the precision requested by the user.",
+    "created_at": "2008-10-01T11:43:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4214",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4214#issuecomment-30622",
+    "user": "AlexGhitza"
+}
+```
 
 The attached patch (based on 3.1.3.alpha2) implements solution 1 described above, in such a way that the result is very likely (if we trust Pari) to have the precision requested by the user.
 
 
+
 ---
 
-Comment by GeorgSWeber created at 2008-10-09 19:27:00
+archive/issue_comments_030623.json:
+```json
+{
+    "body": "Hi Alex,\nunfortunately, the patch does not work yet. This is what I get before applying the patch:\n\n```\nsage -t -long devel/sage/sage/schemes/elliptic_curves/ell_point.py**********************************************************************\nFile \"/Users/georgweber/Public/sage/sage-3.1.3.alpha3/tmp/ell_point.py\", line 1103:\n    sage: P.elliptic_logarithm(precision=55)\nExpected:\n    0.2735052644156991\nGot:\n    0.2735052671206336\n**********************************************************************\nFile \"/Users/georgweber/Public/sage/sage-3.1.3.alpha3/tmp/ell_point.py\", line 1105:\n    sage: P.elliptic_logarithm()  # 100 bits\nExpected:\n    0.27656204014107100870071052662\nGot:\n    0.27656204014107100870070982517\n**********************************************************************\n1 items had failures:\n   2 of  20 in __main__.example_33\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /Users/georgweber/Public/sage/sage-3.1.3.alpha3/tmp/.doctest_ell_point.py\n         [35.2 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_point.py\nTotal time for all tests: 35.2 seconds\n```\n\n\nBut after applying the patch (to vanilla Sage 3.1.3alpha3 on my Intel Mac OS X 10.4), I still get:\n\n```\nsage -t -long devel/sage/sage/schemes/elliptic_curves/ell_point.py**********************************************************************\nFile \"/Users/georgweber/Public/sage/sage-3.1.3.alpha3/tmp/ell_point.py\", line 1120:\n    sage: P.elliptic_logarithm(algorithm='sage')  # 100 bits\nExpected:\n    0.27656204014107100870071052662\nGot:\n    0.27656204014107100870070982517\n**********************************************************************\n1 items had failures:\n   1 of  21 in __main__.example_33\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /Users/georgweber/Public/sage/sage-3.1.3.alpha3/tmp/.doctest_ell_point.py\n         [28.4 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_point.py\nTotal time for all tests: 28.4 seconds\n```\n\n\nThus the patch got one failure away, but the other pertains.\n\nMaybe just use dots for the time being (see the following line) there in the doctest,\nas even these fewer digits already display what you want to show (accuracy problem\nof the Sage internal algorithm)?\n\n\n```\n0.2765620401410710087...\n```\n",
+    "created_at": "2008-10-09T19:27:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4214",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4214#issuecomment-30623",
+    "user": "GeorgSWeber"
+}
+```
 
 Hi Alex,
 unfortunately, the patch does not work yet. This is what I get before applying the patch:
@@ -158,23 +227,56 @@ of the Sage internal algorithm)?
 
 
 
+
 ---
 
-Comment by AlexGhitza created at 2008-10-09 20:57:34
+archive/issue_comments_030624.json:
+```json
+{
+    "body": "Ah yes.  I'll have some time to do this in a few hours.  I just realized that I probably should also test it on a 64-bit machine.",
+    "created_at": "2008-10-09T20:57:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4214",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4214#issuecomment-30624",
+    "user": "AlexGhitza"
+}
+```
 
 Ah yes.  I'll have some time to do this in a few hours.  I just realized that I probably should also test it on a 64-bit machine.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2008-10-10 02:11:28
+archive/issue_comments_030625.json:
+```json
+{
+    "body": "OK, so I've replaced the patch with one that should take care of these problems.",
+    "created_at": "2008-10-10T02:11:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4214",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4214#issuecomment-30625",
+    "user": "AlexGhitza"
+}
+```
 
 OK, so I've replaced the patch with one that should take care of these problems.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-10 21:23:48
+archive/issue_comments_030626.json:
+```json
+{
+    "body": "Well, it seems like whack-a-mole:\n\n```\nsage -t -long devel/sage/sage/libs/pari/gen.pyx             \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.rc0/tmp/gen.py\", line 4971:\n    sage: e.ellpointtoz([0,0])\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.3.rc0/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_175[3]>\", line 1, in <module>\n        e.ellpointtoz([Integer(0),Integer(0)])###line 4971:\n    sage: e.ellpointtoz([0,0])\n      File \"gen.pyx\", line 4958, in sage.libs.pari.gen.gen.ellpointtoz (sage/libs/pari/gen.c:18454)\n    TypeError: function takes exactly 2 arguments (1 given)\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.rc0/tmp/gen.py\", line 4975:\n    sage: e.ellpointtoz([0])\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.3.rc0/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_175[4]>\", line 1, in <module>\n        e.ellpointtoz([Integer(0)])###line 4975:\n    sage: e.ellpointtoz([0])\n      File \"gen.pyx\", line 4958, in sage.libs.pari.gen.gen.ellpointtoz (sage/libs/pari/gen.c:18454)\n    TypeError: function takes exactly 2 arguments (1 given)\n**********************************************************************\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2008-10-10T21:23:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4214",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4214#issuecomment-30626",
+    "user": "mabshoff"
+}
+```
 
 Well, it seems like whack-a-mole:
 
@@ -213,7 +315,20 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_030627.json:
+```json
+{
+    "body": "Attachment\n\nGrrr.  Yes, I was careless (did I really not test gen.pyx?)\n\nAnyway, it was just a matter of giving a default value to the parameter precision.  It's in the new patch.",
+    "created_at": "2008-10-10T21:40:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4214",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4214#issuecomment-30627",
+    "user": "AlexGhitza"
+}
+```
 
 Attachment
 
@@ -222,9 +337,20 @@ Grrr.  Yes, I was careless (did I really not test gen.pyx?)
 Anyway, it was just a matter of giving a default value to the parameter precision.  It's in the new patch.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-10 23:03:42
+archive/issue_comments_030628.json:
+```json
+{
+    "body": "The patch now passes doctests - also in gen.pyx. Positive review.\n\nCheers,\n\nMichael",
+    "created_at": "2008-10-10T23:03:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4214",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4214#issuecomment-30628",
+    "user": "mabshoff"
+}
+```
 
 The patch now passes doctests - also in gen.pyx. Positive review.
 
@@ -233,15 +359,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-10 23:03:59
+archive/issue_comments_030629.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-10-10T23:03:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4214",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4214#issuecomment-30629",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-10 23:03:59
+archive/issue_comments_030630.json:
+```json
+{
+    "body": "Merged in Sage 3.1.3.rc0",
+    "created_at": "2008-10-10T23:03:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4214",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4214#issuecomment-30630",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.1.3.rc0

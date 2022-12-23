@@ -1,11 +1,21 @@
 # Issue 7475: bug pickling ZZ.residue_field's
 
-Issue created by migration from https://trac.sagemath.org/ticket/7475
-
-Original creator: was
-
-Original creation time: 2009-11-16 17:41:54
-
+archive/issues_007475.json:
+```json
+{
+    "body": "Assignee: tbd\n\n\n```\nsage: K = ZZ.residue_field(2)\nsage: dumps(K)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/wstein/.sage/temp/flat.local/44250/_Users_wstein__sage_init_sage_0.py in <module>()\n\n/Users/wstein/s/local/lib/python2.6/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.dumps (sage/structure/sage_object.c:7951)()\n\n/Users/wstein/s/local/lib/python2.6/site-packages/sage/rings/ring.so in sage.rings.ring.FiniteField.__reduce__ (sage/rings/ring.c:12800)()\n\nTypeError: 'NoneType' object is unsubscriptable\nsage: K = ZZ.residue_field(3)\nsage: dumps(K)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/wstein/.sage/temp/flat.local/44250/_Users_wstein__sage_init_sage_0.py in <module>()\n\n/Users/wstein/s/local/lib/python2.6/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.dumps (sage/structure/sage_object.c:7951)()\n\n/Users/wstein/s/local/lib/python2.6/site-packages/sage/rings/ring.so in sage.rings.ring.FiniteField.__reduce__ (sage/rings/ring.c:12800)()\n\nTypeError: 'NoneType' object is unsubscriptable\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7475\n\n",
+    "created_at": "2009-11-16T17:41:54Z",
+    "labels": [
+        "misc",
+        "major",
+        "bug"
+    ],
+    "title": "bug pickling ZZ.residue_field's",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7475",
+    "user": "was"
+}
+```
 Assignee: tbd
 
 
@@ -37,70 +47,188 @@ TypeError: 'NoneType' object is unsubscriptable
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7475
+
+
+
+
 
 ---
 
-Comment by was created at 2009-11-16 17:42:07
+archive/issue_comments_062997.json:
+```json
+{
+    "body": "Changing component from misc to pickling.",
+    "created_at": "2009-11-16T17:42:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7475",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7475#issuecomment-62997",
+    "user": "was"
+}
+```
 
 Changing component from misc to pickling.
 
 
+
 ---
 
-Comment by was created at 2009-11-16 17:42:07
+archive/issue_comments_062998.json:
+```json
+{
+    "body": "Changing assignee from tbd to was.",
+    "created_at": "2009-11-16T17:42:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7475",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7475#issuecomment-62998",
+    "user": "was"
+}
+```
 
 Changing assignee from tbd to was.
 
 
+
 ---
+
+archive/issue_comments_062999.json:
+```json
+{
+    "body": "Attachment\n\nThe pickle in a different system",
+    "created_at": "2012-02-26T04:47:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7475",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7475#issuecomment-62999",
+    "user": "itaibn"
+}
+```
 
 Attachment
 
 The pickle in a different system
 
 
+
 ---
 
-Comment by itaibn created at 2012-02-26 04:49:43
+archive/issue_comments_063000.json:
+```json
+{
+    "body": "I tested this and the bug doesn't appear in my system. I attached the pickle and the result of `pickle_explain` on the pickle.",
+    "created_at": "2012-02-26T04:49:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7475",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7475#issuecomment-63000",
+    "user": "itaibn"
+}
+```
 
 I tested this and the bug doesn't appear in my system. I attached the pickle and the result of `pickle_explain` on the pickle.
 
 
+
 ---
 
-Comment by itaibn created at 2012-02-26 04:50:17
+archive/issue_comments_063001.json:
+```json
+{
+    "body": "An explanation of the pickle",
+    "created_at": "2012-02-26T04:50:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7475",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7475#issuecomment-63001",
+    "user": "itaibn"
+}
+```
 
 An explanation of the pickle
 
 
+
 ---
+
+archive/issue_comments_063002.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2013-08-13T15:35:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7475",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7475#issuecomment-63002",
+    "user": "jdemeyer"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by itaibn created at 2013-09-03 10:19:54
+archive/issue_comments_063003.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2013-09-03T10:19:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7475",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7475#issuecomment-63003",
+    "user": "itaibn"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2014-02-03 07:25:44
+archive/issue_comments_063004.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2014-02-03T07:25:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7475",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7475#issuecomment-63004",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2014-02-03 07:25:44
+archive/issue_comments_063005.json:
+```json
+{
+    "body": "Looks good.",
+    "created_at": "2014-02-03T07:25:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7475",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7475#issuecomment-63005",
+    "user": "jdemeyer"
+}
+```
 
 Looks good.
 
 
+
 ---
 
-Comment by vbraun created at 2014-02-03 22:59:33
+archive/issue_comments_063006.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2014-02-03T22:59:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7475",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7475#issuecomment-63006",
+    "user": "vbraun"
+}
+```
 
 Resolution: fixed

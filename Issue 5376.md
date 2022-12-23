@@ -1,18 +1,45 @@
 # Issue 5376: [with patch, needs review] minor problems with ReST in plot.py
 
-Issue created by migration from https://trac.sagemath.org/ticket/5376
-
-Original creator: jhpalmieri
-
-Original creation time: 2009-02-26 00:32:42
-
+archive/issues_005376.json:
+```json
+{
+    "body": "Assignee: jhpalmieri\n\nThis fixes the last few issues from #4923.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5376\n\n",
+    "created_at": "2009-02-26T00:32:42Z",
+    "labels": [
+        "documentation",
+        "minor",
+        "bug"
+    ],
+    "title": "[with patch, needs review] minor problems with ReST in plot.py",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5376",
+    "user": "jhpalmieri"
+}
+```
 Assignee: jhpalmieri
 
 This fixes the last few issues from #4923.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5376
+
+
+
+
 
 ---
+
+archive/issue_comments_041403.json:
+```json
+{
+    "body": "Attachment\n\nREFEREE REPORT\n\n\n\nThe patch **plot-rst.patch** applied OK against 3.4.alpha0 and all doctests passed with the options\n\n```\n-t -long -optional\n```\n\nThe reference manual built OK with the command\n\n```\nsage -docbuild reference html\n```\n\nChecking the relevant HTML file\n\n```\n/path/to/html/en/reference/sage/plot/plot.html\n```\n\nI see that the patch fixes the formatting and typo issues. Positive review.",
+    "created_at": "2009-02-27T08:24:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5376",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5376#issuecomment-41403",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
@@ -20,7 +47,7 @@ REFEREE REPORT
 
 
 
-The patch *plot-rst.patch* applied OK against 3.4.alpha0 and all doctests passed with the options
+The patch **plot-rst.patch** applied OK against 3.4.alpha0 and all doctests passed with the options
 
 ```
 -t -long -optional
@@ -41,9 +68,20 @@ Checking the relevant HTML file
 I see that the patch fixes the formatting and typo issues. Positive review.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-28 16:25:52
+archive/issue_comments_041404.json:
+```json
+{
+    "body": "Merged in Sage 3.4.rc0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-28T16:25:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5376",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5376#issuecomment-41404",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.4.rc0.
 
@@ -52,8 +90,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-28 16:25:52
+archive/issue_comments_041405.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-02-28T16:25:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5376",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5376#issuecomment-41405",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

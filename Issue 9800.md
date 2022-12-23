@@ -1,11 +1,21 @@
 # Issue 9800: Linear programming construction doc fixes
 
-Issue created by migration from https://trac.sagemath.org/ticket/9801
-
-Original creator: rhinton
-
-Original creation time: 2010-08-25 13:48:21
-
+archive/issues_009800.json:
+```json
+{
+    "body": "Assignee: ncohen\n\nKeywords: linear programming, constructions, doc\n\nThe linear programming page in the Sage Constructions document has a few errors. \n\n1.  In the vertex cover example, the objective should be to minimize, not maximize the sum.  Also, the example code is missing the objective function.\n\n2.  The maximal matching example code is also missing the objective function.\n\n3.  I couldn't run the examples even after having installed glpk according to the instructions.  Sage complained that no solver was installed.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9801\n\n",
+    "created_at": "2010-08-25T13:48:21Z",
+    "labels": [
+        "documentation",
+        "major",
+        "bug"
+    ],
+    "title": "Linear programming construction doc fixes",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9800",
+    "user": "rhinton"
+}
+```
 Assignee: ncohen
 
 Keywords: linear programming, constructions, doc
@@ -19,22 +29,61 @@ The linear programming page in the Sage Constructions document has a few errors.
 3.  I couldn't run the examples even after having installed glpk according to the instructions.  Sage complained that no solver was installed.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/9801
+
+
+
+
 
 ---
+
+archive/issue_comments_096292.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-08-25T14:01:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9800",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9800#issuecomment-96292",
+    "user": "rhinton"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by rhinton created at 2010-08-25 14:03:49
+archive/issue_comments_096293.json:
+```json
+{
+    "body": "Changing status from new to needs_work.",
+    "created_at": "2010-08-25T14:03:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9800",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9800#issuecomment-96293",
+    "user": "rhinton"
+}
+```
 
 Changing status from new to needs_work.
 
 
+
 ---
 
-Comment by rhinton created at 2010-08-25 14:03:49
+archive/issue_comments_096294.json:
+```json
+{
+    "body": "Attached patch apparently fixes problem (1).  \n\nIt attempts to fix problem (2), but I get an exception\n\n```\nMIPSolverException: 'GLPK : Solution is undefined'\n```\n\n\nRegarding (3), glpk apparently installed just fine on another machine, so I will bring up the problem on sage-devel to get help on the failed install.",
+    "created_at": "2010-08-25T14:03:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9800",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9800#issuecomment-96294",
+    "user": "rhinton"
+}
+```
 
 Attached patch apparently fixes problem (1).  
 
@@ -48,16 +97,38 @@ MIPSolverException: 'GLPK : Solution is undefined'
 Regarding (3), glpk apparently installed just fine on another machine, so I will bring up the problem on sage-devel to get help on the failed install.
 
 
+
 ---
 
-Comment by rhinton created at 2010-08-27 16:37:52
+archive/issue_comments_096295.json:
+```json
+{
+    "body": "Resolution: wontfix",
+    "created_at": "2010-08-27T16:37:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9800",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9800#issuecomment-96295",
+    "user": "rhinton"
+}
+```
 
 Resolution: wontfix
 
 
+
 ---
 
-Comment by rhinton created at 2010-08-27 16:37:52
+archive/issue_comments_096296.json:
+```json
+{
+    "body": "Nathann Cohen promised a rewrite of this documentation soon.  See \n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/330baaf798e51a01\n\nfor details.",
+    "created_at": "2010-08-27T16:37:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9800",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9800#issuecomment-96296",
+    "user": "rhinton"
+}
+```
 
 Nathann Cohen promised a rewrite of this documentation soon.  See 
 

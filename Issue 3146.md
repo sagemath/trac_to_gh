@@ -1,11 +1,21 @@
 # Issue 3146: (latex(a\v), a) gives an error about calling something with too many arguments.
 
-Issue created by migration from https://trac.sagemath.org/ticket/3146
-
-Original creator: jason
-
-Original creation time: 2008-05-09 20:13:03
-
+archive/issues_003146.json:
+```json
+{
+    "body": "Assignee: was\n\n\n```\na=matrix(QQ,3,3,range(9))\nv=matrix(QQ,3,1,range(3))\n(latex(a\\v), a)\n```\n\n\ngives an error.\n\nI think it has to do with the parsing of latex(a\\v); it seems to try doing \"(latex(a._backslash_(v), a)\" (note the missing parenthesis in the call to latex.\n\nYou see this parsing in the error from:\n\n\n```\n@interact\ndef _(a=matrix(QQ,3,3,range(9)), v=matrix(QQ,3,1,range(3))):\n    html('$$%s %s = %s$$'%(latex(a), latex(a\\v), latex(v)))\n```\n\n\nwith the patch from #3121\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3146\n\n",
+    "created_at": "2008-05-09T20:13:03Z",
+    "labels": [
+        "linear algebra",
+        "major",
+        "bug"
+    ],
+    "title": "(latex(a\\v), a) gives an error about calling something with too many arguments.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3146",
+    "user": "jason"
+}
+```
 Assignee: was
 
 
@@ -34,10 +44,25 @@ with the patch from #3121
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3146
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2009-06-04 22:57:37
+archive/issue_comments_021832.json:
+```json
+{
+    "body": "This now works (most likely with the change to how the backslash operator is implemented)\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: a=matrix(QQ,3,3,range(9))\nsage: v=matrix(QQ,3,1,range(3))\nsage: (latex(a\\v), a)\n| Sage Version 4.0.1.rc1, Release Date: 2009-06-04                   |\n| Type notebook() for the GUI, and license() for information.        |\n(\\left(\\begin{array}{r}\n\\frac{1}{3} \\\\\n0 \\\\\n0\n\\end{array}\\right),\n [0 1 2]\n[3 4 5]\n[6 7 8])\n```\n",
+    "created_at": "2009-06-04T22:57:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3146",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3146#issuecomment-21832",
+    "user": "mhansen"
+}
+```
 
 This now works (most likely with the change to how the backslash operator is implemented)
 
@@ -62,8 +87,19 @@ sage: (latex(a\v), a)
 
 
 
+
 ---
 
-Comment by mhansen created at 2009-06-04 22:57:37
+archive/issue_comments_021833.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2009-06-04T22:57:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3146",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3146#issuecomment-21833",
+    "user": "mhansen"
+}
+```
 
 Resolution: invalid

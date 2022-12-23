@@ -1,26 +1,64 @@
 # Issue 4052: [with patch; needs review] readline spkg doesn't build under OpenBSD
 
-Issue created by migration from https://trac.sagemath.org/ticket/4052
-
-Original creator: anakha
-
-Original creation time: 2008-09-03 19:01:06
-
+archive/issues_004052.json:
+```json
+{
+    "body": "Assignee: anakha\n\nThe spkg-install script looks for the library file libreadline.so, but under OpenBSD, no symbolic link is made and the only file that appears is libreadline.so.5.2.\n\nThe attached patch is a little hack to allow successful completion on OpenBSD, but if there is a better and more general method available, please inform me.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4052\n\n",
+    "created_at": "2008-09-03T19:01:06Z",
+    "labels": [
+        "build",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch; needs review] readline spkg doesn't build under OpenBSD",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4052",
+    "user": "anakha"
+}
+```
 Assignee: anakha
 
 The spkg-install script looks for the library file libreadline.so, but under OpenBSD, no symbolic link is made and the only file that appears is libreadline.so.5.2.
 
 The attached patch is a little hack to allow successful completion on OpenBSD, but if there is a better and more general method available, please inform me.
 
+Issue created by migration from https://trac.sagemath.org/ticket/4052
+
+
+
+
 
 ---
+
+archive/issue_comments_029210.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-09-03T19:01:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4052",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4052#issuecomment-29210",
+    "user": "anakha"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-03 19:16:50
+archive/issue_comments_029211.json:
+```json
+{
+    "body": "Patch looks good to me.\n\nNote that an updated spkg should have an updated entry in SPKG.txt. Not all spkgs have an SPKG.txt, but in that case one should add them.\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-03T19:16:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4052",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4052#issuecomment-29211",
+    "user": "mabshoff"
+}
+```
 
 Patch looks good to me.
 
@@ -31,7 +69,20 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_029212.json:
+```json
+{
+    "body": "Attachment\n\nThe new patch adds an entry to the SPKG.txt file.\n\nAlso is there special procedure to bump the patch version of a spkg?",
+    "created_at": "2008-09-03T19:24:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4052",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4052#issuecomment-29212",
+    "user": "anakha"
+}
+```
 
 Attachment
 
@@ -40,9 +91,20 @@ The new patch adds an entry to the SPKG.txt file.
 Also is there special procedure to bump the patch version of a spkg?
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-03 19:38:01
+archive/issue_comments_029213.json:
+```json
+{
+    "body": "Replying to [comment:2 anakha]:\n> The new patch adds an entry to the SPKG.txt file.\n\nThanks.\n\n> Also is there special procedure to bump the patch version of a spkg?\n\nYou need to rename the directory to the updated patchlevel and then recreate the spkg. There is nothing more to it :)\n\nFeel free to create spkgs, but please do not attach them to trac, put post a link. A diff would still be appreciated to make the review process easier.\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-03T19:38:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4052",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4052#issuecomment-29213",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:2 anakha]:
 > The new patch adds an entry to the SPKG.txt file.
@@ -60,9 +122,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-04 01:39:19
+archive/issue_comments_029214.json:
+```json
+{
+    "body": "The spkg at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.1.2/rc0/readline-5.2.p4.spkg\n\ncontains the fixes.",
+    "created_at": "2008-09-04T01:39:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4052",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4052#issuecomment-29214",
+    "user": "mabshoff"
+}
+```
 
 The spkg at
 
@@ -71,15 +144,37 @@ http://sage.math.washington.edu/home/mabshoff/release-cycles-3.1.2/rc0/readline-
 contains the fixes.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-04 01:39:28
+archive/issue_comments_029215.json:
+```json
+{
+    "body": "Merged in Sage 3.1.2.rc0",
+    "created_at": "2008-09-04T01:39:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4052",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4052#issuecomment-29215",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.1.2.rc0
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-04 01:39:28
+archive/issue_comments_029216.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-09-04T01:39:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4052",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4052#issuecomment-29216",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

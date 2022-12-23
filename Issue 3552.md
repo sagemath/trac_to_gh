@@ -1,11 +1,21 @@
 # Issue 3552: sage notebook -- worksheet.py -- bring coverage up to 100%
 
-Issue created by migration from https://trac.sagemath.org/ticket/3552
-
-Original creator: was
-
-Original creation time: 2008-07-05 17:53:08
-
+archive/issues_003552.json:
+```json
+{
+    "body": "Assignee: boothby\n\nBring the doctest coverage for worksheet.py up to 100%. Currently (in 3.0.3) coverage is at 3% with most functions totally undocumented:\n\n\n```\nwas@sage:~/d/sage/server/notebook$ sage -coverage worksheet.py\n----------------------------------------------------------------------\nworksheet.py\nSCORE worksheet.py: 3% (6 of 193)\nMissing documentation:\n         * initialized_sage(server, ulimit)\n         * init_sage_prestart(server, ulimit)\n         * one_prestarted_sage(server, ulimit)\n         * worksheet_filename(name, owner)\n         * __init__(self, name, dirname, notebook, system, owner, docbrowser=False, pretty_print=False)\n         * __cmp__(self, other)\n         * __repr__(self)\n         * __len__(self)\n         * docbrowser(self)\n         * conf(self)\n         * collaborators(self)\n         * set_collaborators(self, v)\n         * viewers(self)\n         * delete_notebook_specific_data(self)\n         * name(self)\n         * set_name(self, name)\n         * set_filename_without_owner(self, nm)\n         * set_filename(self, filename)\n         * filename(self)\n         * directory(self)\n         * data_directory(self)\n         * attached_data_files(self)\n         * cells_directory(self)\n         * notebook(self)\n         * DIR(self)\n         * system(self)\n         * set_system(self, system='sage')\n         * pretty_print(self)\n         * set_pretty_print(self, check='false')\n         * is_published(self)\n         * worksheet_that_was_published(self)\n         * publisher(self)\n         * is_publisher(self, username)\n         * has_published_version(self)\n         * set_published_version(self, filename)\n         * published_version(self)\n         * set_worksheet_that_was_published(self, W)\n         * rate(self, x, comment, username)\n         * is_rater(self, username)\n         * ratings(self)\n         * html_ratings_info(self)\n         * rating(self)\n         * everyone_has_deleted_this_worksheet(self)\n         * user_view(self, user)\n         * set_user_view(self, user, x)\n         * user_view_is(self, user, x)\n         * is_archived(self, user)\n         * is_active(self, user)\n         * is_trashed(self, user)\n         * move_to_archive(self, user)\n         * set_active(self, user)\n         * move_to_trash(self, user)\n         * move_out_of_trash(self, user)\n         * delete_cells_directory(self)\n         * owner(self)\n         * is_owner(self, username)\n         * set_owner(self, owner)\n         * user_is_only_viewer(self, user)\n         * user_is_viewer(self, user)\n         * user_is_collaborator(self, user)\n         * add_viewer(self, user)\n         * add_collaborator(self, user)\n         * save(self)\n         * save_snapshot(self, user, E=None)\n         * get_snapshot_text_filename(self, name)\n         * user_autosave_interval(self, username)\n         * autosave(self, username)\n         * revert_to_snapshot(self, name)\n         * _saved_by_info(self, x)\n         * snapshot_data(self)\n         * uncache_snapshot_data(self)\n         * revert_to_last_saved_state(self)\n         * snapshot_directory(self)\n         * __getstate__(self)\n         * __setstate__(self, state)\n         * html(self, include_title=True, do_print=False, confirm_before_leave=False, read_only=False)\n         * truncated_name(self, max=30)\n         * html_title(self, username='guest')\n         * is_doc_worksheet(self)\n         * set_is_doc_worksheet(self, value)\n         * html_save_discard_buttons(self)\n         * html_share_publish_buttons(self, select=None)\n         * cls(x)\n         * html_data_options_list(self)\n         * html_file_menu(self)\n         * html_menu(self)\n         * html_worksheet_body(self, do_print, publish=False)\n         * javascript_for_being_active_worksheet(self)\n         * javascript_for_jsmath_rendering(self)\n         * last_edited(self)\n         * last_to_edit(self)\n         * record_edit(self, user)\n         * time_since_last_edited(self)\n         * html_time_since_last_edited(self)\n         * html_time_last_edited(self)\n         * cell_id_list(self)\n         * compute_cell_id_list(self)\n         * clear(self)\n         * set_not_computing(self)\n         * quit(self)\n         * next_block_id(self)\n         * initialize_sage(self)\n         * eval_asap_no_output(self, cmd, username=None)\n         * start_next_comp(self)\n         * clear_queue(self)\n         * worksheet_command(self, cmd)\n         * time_idle(self)\n         * last_compute_walltime(self)\n         * _record_that_we_are_computing(self, username=None)\n         * ping(self, username)\n         * queue(self)\n         * queue_id_list(self)\n         * _enqueue_auto(self)\n         * _enqueue_auto_cells(self)\n         * set_cell_counter(self)\n         * _new_text_cell(self, plain_text, id=None)\n         * next_hidden_id(self)\n         * _new_cell(self, id=None, hidden=False, input='')\n         * append(self, L)\n         * __getitem__(self, n)\n         * get_cell_with_id(self, id)\n         * synchronize(self, s)\n         * synchro(self)\n         * is_last_id_and_previous_is_nonempty(self, id)\n         * best_completion(self, s, word)\n         * completions_html(self, id, s, cols=3)\n         * preparse_input(self, input, C)\n         * preparse_introspection_input(self, input, C, introspect)\n         * preparse_nonswitched_input(self, input)\n         * ')\n         * _strip_synchro_from_start_of_output(self, s)\n         * _process_output(self, s)\n         * postprocess_output(self, out, C)\n         * _get_last_identifier(self, s)\n         * preparse(self, s)\n         * attached_files(self)\n         * attach(self, filename)\n         * detach(self, filename)\n         * _normalized_filenames(self, L)\n         * load_path(self)\n         * hunt_file(self, filename)\n         * _load_file(self, filename, files_seen_so_far, this_file)\n         * _save_objects(self, s)\n         * do_sage_extensions_preparsing(self, s, files_seen_so_far=[], this_file='')\n         * _eval_cmd(self, system, cmd, dir)\n         * cython_import(self, cmd, C)\n         * attached_html(self)\n         * show_all(self)\n         * hide_all(self)\n         * foo(x)\n         * first_word(s)\n         * format_completions_as_html(cell_id, completions)\n         * extract_name(text)\n         * extract_system(text)\n         * convert_seconds_to_meaningful_time_span(t)\n         * convert_time_to_string(t)\n         * _get_next(s, quote='\"')\n\n\nMissing doctests:\n         * filename_without_owner(self)\n         * satisfies_search(self, search)\n         * plain_text(self, prompts=False, banner=True)\n         * input_text(self)\n         * edit_text(self)\n         * reset_interact_state(self)\n         * edit_save(self, text, ignore_ids=False)\n         * javascript_confirm_before_leave(self)\n         * warn_about_other_person_editing(self,username, threshold)\n         * cell_list(self)\n         * append_new_cell(self)\n         * new_cell_before(self, id, input=\"\")\n         * new_cell_after(self, id, input=\"\")\n         * delete_cell_with_id(self, id)\n         * computing(self)\n         * compute_process_has_been_started(self)\n         * sage(self)\n         * restart_sage(self)\n         * quit_if_idle(self, timeout)\n         * enqueue(self, C, username=None, next=False)\n         * delete_cell_input_files(self)\n         * check_cell(self, id)\n         * load_any_changed_attached_files(self, s)\n         * check_for_system_switching(self, s, C)\n         * extract_text_before_first_compute_cell(text)\n         * extract_first_compute_cell(text)\n         * after_first_word(s)\n         * dictify(s)\n         * next_available_id(v)\n         * split_search_string_into_keywords(s)\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3552\n\n",
+    "created_at": "2008-07-05T17:53:08Z",
+    "labels": [
+        "notebook",
+        "major",
+        "enhancement"
+    ],
+    "title": "sage notebook -- worksheet.py -- bring coverage up to 100%",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3552",
+    "user": "was"
+}
+```
 Assignee: boothby
 
 Bring the doctest coverage for worksheet.py up to 100%. Currently (in 3.0.3) coverage is at 3% with most functions totally undocumented:
@@ -211,39 +221,115 @@ Missing doctests:
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3552
+
+
+
+
 
 ---
 
-Comment by was created at 2008-07-05 18:49:42
+archive/issue_comments_025122.json:
+```json
+{
+    "body": "document top; optimize opening new worksheets",
+    "created_at": "2008-07-05T18:49:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3552",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3552#issuecomment-25122",
+    "user": "was"
+}
+```
 
 document top; optimize opening new worksheets
 
 
+
 ---
+
+archive/issue_comments_025123.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-07-05T21:08:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3552",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3552#issuecomment-25123",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2008-07-05 21:23:38
+archive/issue_comments_025124.json:
+```json
+{
+    "body": "this brings coverage up to 35% and fixes some bugs.",
+    "created_at": "2008-07-05T21:23:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3552",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3552#issuecomment-25124",
+    "user": "was"
+}
+```
 
 this brings coverage up to 35% and fixes some bugs.
 
 
+
 ---
+
+archive/issue_comments_025125.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-07-05T22:20:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3552",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3552#issuecomment-25125",
+    "user": "TimothyClemans"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_025126.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-07-05T22:21:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3552",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3552#issuecomment-25126",
+    "user": "TimothyClemans"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-05 22:27:45
+archive/issue_comments_025127.json:
+```json
+{
+    "body": "Also positive review on sage-3552-part3.patch.\n\nCheers,\n\nMichael",
+    "created_at": "2008-07-05T22:27:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3552",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3552#issuecomment-25127",
+    "user": "mabshoff"
+}
+```
 
 Also positive review on sage-3552-part3.patch.
 
@@ -252,9 +338,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-05 22:51:09
+archive/issue_comments_025128.json:
+```json
+{
+    "body": "This seems to depend on #3550.\n\nCheers,\n\nMichael",
+    "created_at": "2008-07-05T22:51:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3552",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3552#issuecomment-25128",
+    "user": "mabshoff"
+}
+```
 
 This seems to depend on #3550.
 
@@ -263,15 +360,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-05 23:31:47
+archive/issue_comments_025129.json:
+```json
+{
+    "body": "Merge in Sage 3.0.4.alpha2",
+    "created_at": "2008-07-05T23:31:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3552",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3552#issuecomment-25129",
+    "user": "mabshoff"
+}
+```
 
 Merge in Sage 3.0.4.alpha2
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-05 23:31:47
+archive/issue_comments_025130.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-07-05T23:31:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3552",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3552#issuecomment-25130",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

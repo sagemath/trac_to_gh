@@ -1,24 +1,62 @@
 # Issue 2840: notebook -- remove ALL unused javascript from js.py and DOCUMENT every single function
 
-Issue created by migration from https://trac.sagemath.org/ticket/2840
-
-Original creator: was
-
-Original creation time: 2008-04-07 07:46:41
-
+archive/issues_002840.json:
+```json
+{
+    "body": "Assignee: boothby\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2840\n\n",
+    "created_at": "2008-04-07T07:46:41Z",
+    "labels": [
+        "notebook",
+        "major",
+        "bug"
+    ],
+    "title": "notebook -- remove ALL unused javascript from js.py and DOCUMENT every single function",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2840",
+    "user": "was"
+}
+```
 Assignee: boothby
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2840
+
+
+
+
 
 ---
+
+archive/issue_comments_019480.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-04-07T08:01:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2840",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2840#issuecomment-19480",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2008-04-07 08:04:08
+archive/issue_comments_019481.json:
+```json
+{
+    "body": "This patch depends on #2825, which depends on others.  \n\nIf you just want to get something that works asap, apply this bundle *against sage-3.0-alpha*:\n\nhttp://sage.math.washington.edu/home/was/patches/sage-2840.hg",
+    "created_at": "2008-04-07T08:04:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2840",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2840#issuecomment-19481",
+    "user": "was"
+}
+```
 
 This patch depends on #2825, which depends on others.  
 
@@ -27,41 +65,96 @@ If you just want to get something that works asap, apply this bundle *against sa
 http://sage.math.washington.edu/home/was/patches/sage-2840.hg
 
 
+
 ---
 
-Comment by was created at 2008-04-07 08:50:59
+archive/issue_comments_019482.json:
+```json
+{
+    "body": "Bugs introduced by this patch:  \n* If you tab complete and their is a unique completion, the cursor doesn't get put at the right position.  \n* The left margin of the active an inactive and evaluated cells seems different, which is annoying an inconsistent.",
+    "created_at": "2008-04-07T08:50:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2840",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2840#issuecomment-19482",
+    "user": "was"
+}
+```
 
 Bugs introduced by this patch:  
-  * If you tab complete and their is a unique completion, the cursor doesn't get put at the right position.  
-  * The left margin of the active an inactive and evaluated cells seems different, which is annoying an inconsistent.
+* If you tab complete and their is a unique completion, the cursor doesn't get put at the right position.  
+* The left margin of the active an inactive and evaluated cells seems different, which is annoying an inconsistent.
+
 
 
 ---
 
-Comment by was created at 2008-04-07 08:51:46
+archive/issue_comments_019483.json:
+```json
+{
+    "body": "Bugs introduced by this patch:\n* Type `function_name([tab]` and the cursor jumps to the next cell instead of staying put.",
+    "created_at": "2008-04-07T08:51:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2840",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2840#issuecomment-19483",
+    "user": "was"
+}
+```
 
 Bugs introduced by this patch:
-   * Type `function_name([tab]` and the cursor jumps to the next cell instead of staying put.
+* Type `function_name([tab]` and the cursor jumps to the next cell instead of staying put.
+
 
 
 ---
 
-Comment by boothby created at 2008-04-07 17:45:42
+archive/issue_comments_019484.json:
+```json
+{
+    "body": "I'm giving this a positive review, though I haven't tested it yet.  My justification for this is that  (1) we need this patch badly, and (2) if any bugs are introduced by this, they will be easy to fix.",
+    "created_at": "2008-04-07T17:45:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2840",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2840#issuecomment-19484",
+    "user": "boothby"
+}
+```
 
 I'm giving this a positive review, though I haven't tested it yet.  My justification for this is that  (1) we need this patch badly, and (2) if any bugs are introduced by this, they will be easy to fix.
 
 
+
 ---
 
-Comment by was created at 2008-04-07 17:52:38
+archive/issue_comments_019485.json:
+```json
+{
+    "body": "Another bug introduced by this patch:\n* Sometimes the line count in js.py overestimates.  This is clearly documented, but it is more annoying now given that the code depends 100% on it.  We should fix this to always give exactly the right answer.",
+    "created_at": "2008-04-07T17:52:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2840",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2840#issuecomment-19485",
+    "user": "was"
+}
+```
 
 Another bug introduced by this patch:
-   * Sometimes the line count in js.py overestimates.  This is clearly documented, but it is more annoying now given that the code depends 100% on it.  We should fix this to always give exactly the right answer.
+* Sometimes the line count in js.py overestimates.  This is clearly documented, but it is more annoying now given that the code depends 100% on it.  We should fix this to always give exactly the right answer.
+
 
 
 ---
 
-Comment by mabshoff created at 2008-04-07 18:31:05
+archive/issue_comments_019486.json:
+```json
+{
+    "body": "Ok, applying against my tree has some rejects:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.alpha3/devel/sage$ patch -p1 --dry-run < trac_2840.patch\npatching file sage/server/notebook/cell.py\npatching file sage/server/notebook/config.py\npatching file sage/server/notebook/css.py\npatching file sage/server/notebook/js.py\nHunk #6 FAILED at 294.\nHunk #22 FAILED at 1895.\nHunk #23 succeeded at 1917 (offset -1 lines).\nHunk #24 succeeded at 1957 (offset -1 lines).\nHunk #25 succeeded at 2001 (offset -1 lines).\nHunk #26 succeeded at 2039 (offset -1 lines).\nHunk #27 succeeded at 2099 (offset -1 lines).\nHunk #28 succeeded at 2308 (offset -1 lines).\nHunk #29 succeeded at 2328 (offset -1 lines).\nHunk #30 succeeded at 2348 (offset -1 lines).\nHunk #31 succeeded at 2420 (offset -1 lines).\nHunk #32 succeeded at 2448 (offset -1 lines).\nHunk #33 succeeded at 2496 (offset -1 lines).\nHunk #34 succeeded at 2524 (offset -1 lines).\nHunk #35 succeeded at 2571 (offset -1 lines).\nHunk #36 succeeded at 2585 (offset -1 lines).\nHunk #37 succeeded at 2666 (offset -1 lines).\nHunk #38 succeeded at 2693 (offset -1 lines).\nHunk #39 succeeded at 2709 (offset -1 lines).\nHunk #40 succeeded at 2724 (offset -1 lines).\nHunk #41 succeeded at 2738 (offset -1 lines).\nHunk #42 succeeded at 2753 (offset -1 lines).\nHunk #43 succeeded at 2989 (offset -1 lines).\nHunk #44 succeeded at 3006 (offset -1 lines).\nHunk #45 succeeded at 3042 (offset -1 lines).\nHunk #46 succeeded at 3089 (offset -1 lines).\nHunk #47 succeeded at 3110 (offset -1 lines).\nHunk #48 succeeded at 3139 (offset -1 lines).\nHunk #49 succeeded at 3156 (offset -1 lines).\nHunk #50 succeeded at 3174 (offset -1 lines).\nHunk #51 succeeded at 3224 (offset -1 lines).\nHunk #52 succeeded at 3297 (offset -1 lines).\nHunk #53 succeeded at 3327 (offset -1 lines).\nHunk #54 succeeded at 3370 (offset -1 lines).\nHunk #55 succeeded at 3498 (offset -1 lines).\nHunk #56 succeeded at 3529 (offset -1 lines).\nHunk #57 succeeded at 3619 (offset -1 lines).\nHunk #58 succeeded at 3635 (offset -1 lines).\n2 out of 58 hunks FAILED -- saving rejects to file sage/server/notebook/js.py.rej\npatching file sage/server/notebook/keyboards.py\npatching file sage/server/notebook/notebook.py\nHunk #1 succeeded at 1060 (offset 68 lines).\nHunk #2 succeeded at 1186 (offset 68 lines).\nHunk #3 succeeded at 1807 (offset 68 lines).\nHunk #4 succeeded at 2000 (offset 68 lines).\nHunk #5 succeeded at 2042 (offset 68 lines).\npatching file sage/server/notebook/tutorial.py\npatching file sage/server/notebook/twist.py\npatching file sage/server/notebook/worksheet.py\nHunk #2 succeeded at 875 (offset -1 lines).\nHunk #3 succeeded at 941 (offset -1 lines).\n```\n\nI did apply #2826, so that is either the problem or I am missing some commits. I would prefer to get a rebased patch and not unbundle a 400 kb bundle ;)\n\nCheers,\n\nMichael",
+    "created_at": "2008-04-07T18:31:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2840",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2840#issuecomment-19486",
+    "user": "mabshoff"
+}
+```
 
 Ok, applying against my tree has some rejects:
 
@@ -131,36 +224,95 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-07 19:45:41
+archive/issue_comments_019487.json:
+```json
+{
+    "body": "version of was' patch that I merged",
+    "created_at": "2008-04-07T19:45:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2840",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2840#issuecomment-19487",
+    "user": "mabshoff"
+}
+```
 
 version of was' patch that I merged
 
 
+
 ---
+
+archive/issue_comments_019488.json:
+```json
+{
+    "body": "Attachment\n\nPatch for the two hunks that I merged manually",
+    "created_at": "2008-04-07T19:46:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2840",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2840#issuecomment-19488",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 Patch for the two hunks that I merged manually
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-07 19:46:41
+archive/issue_comments_019489.json:
+```json
+{
+    "body": "The diff between the final merged version and he one provided by was as a reference",
+    "created_at": "2008-04-07T19:46:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2840",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2840#issuecomment-19489",
+    "user": "mabshoff"
+}
+```
 
 The diff between the final merged version and he one provided by was as a reference
 
 
+
 ---
+
+archive/issue_comments_019490.json:
+```json
+{
+    "body": "Attachment\n\nMerged trac_2840-good-hunks.patch and trac_2840-manually_merged-hunks.patch in Sage 3.0.alpha3.",
+    "created_at": "2008-04-07T19:47:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2840",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2840#issuecomment-19490",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 Merged trac_2840-good-hunks.patch and trac_2840-manually_merged-hunks.patch in Sage 3.0.alpha3.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-07 19:47:15
+archive/issue_comments_019491.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-04-07T19:47:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2840",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2840#issuecomment-19491",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

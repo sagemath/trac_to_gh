@@ -1,11 +1,21 @@
 # Issue 2460: some issues with factorization.py
 
-Issue created by migration from https://trac.sagemath.org/ticket/2460
-
-Original creator: was
-
-Original creation time: 2008-03-10 16:02:43
-
+archive/issues_002460.json:
+```json
+{
+    "body": "Assignee: somebody\n\nVarious people worked on factorization.py and unfortunately ignored some implicit \nassumptions in what that code is supposed to do.  In particular, this function\n\n```\n    def base_ring(self):\n        if len(self) > 0:\n            return self[0][0].parent()\n        else:\n            return self.unit().parent()\n```\n\nassumes that (1) ever element has the same parent, and (2) the parent is a ring.\nNeither assumption need be satisfied.   \n\nThis is_commutative function then relies on base_ring working.  \nHere's an example of this leading to *wrong* answers:\n\n```\nsage: R.<x,y> = FreeAlgebra(QQ,2)\nsage: Factorization([(3,1), (x,2), (y,3), (x,1), (y,2)])\n3 * x^3 * y^5\n```\n\n\nProposal: Simply call Sequence on the list of bases in the factorization\nto get a new list where the basis lie in a common university.  Then refine\nis_commutative to mean that the universe is a commuative ring, and only then\ncommute factors automatically.\n\nSecond, after the above is resolved, the sort function for comparison \nshould call universe() (not base_ring) and use some sensible defaults,\nbefore resorting to that mess of code in the current sort method. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2460\n\n",
+    "created_at": "2008-03-10T16:02:43Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "bug"
+    ],
+    "title": "some issues with factorization.py",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2460",
+    "user": "was"
+}
+```
 Assignee: somebody
 
 Various people worked on factorization.py and unfortunately ignored some implicit 
@@ -43,85 +53,223 @@ before resorting to that mess of code in the current sort method.
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2460
+
+
+
+
 
 ---
 
-Comment by was created at 2008-03-10 16:10:24
+archive/issue_comments_016656.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-03-10T16:10:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2460",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2460#issuecomment-16656",
+    "user": "was"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by was created at 2008-03-10 16:10:24
+archive/issue_comments_016657.json:
+```json
+{
+    "body": "Changing assignee from somebody to was.",
+    "created_at": "2008-03-10T16:10:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2460",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2460#issuecomment-16657",
+    "user": "was"
+}
+```
 
 Changing assignee from somebody to was.
 
 
+
 ---
 
-Comment by gfurnish created at 2008-03-10 16:22:25
+archive/issue_comments_016658.json:
+```json
+{
+    "body": "Changing assignee from was to gfurnish.",
+    "created_at": "2008-03-10T16:22:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2460",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2460#issuecomment-16658",
+    "user": "gfurnish"
+}
+```
 
 Changing assignee from was to gfurnish.
 
 
+
 ---
 
-Comment by gfurnish created at 2008-03-10 16:22:25
+archive/issue_comments_016659.json:
+```json
+{
+    "body": "Changing status from assigned to new.",
+    "created_at": "2008-03-10T16:22:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2460",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2460#issuecomment-16659",
+    "user": "gfurnish"
+}
+```
 
 Changing status from assigned to new.
 
 
+
 ---
 
-Comment by gfurnish created at 2008-03-10 16:22:34
+archive/issue_comments_016660.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-03-10T16:22:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2460",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2460#issuecomment-16660",
+    "user": "gfurnish"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
+
+archive/issue_comments_016661.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-03-10T16:29:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2460",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2460#issuecomment-16661",
+    "user": "gfurnish"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by gfurnish created at 2008-03-10 16:33:57
+archive/issue_comments_016662.json:
+```json
+{
+    "body": "There is a possibility that fixing commutativity may other things.",
+    "created_at": "2008-03-10T16:33:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2460",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2460#issuecomment-16662",
+    "user": "gfurnish"
+}
+```
 
 There is a possibility that fixing commutativity may other things.
 
 
+
 ---
 
-Comment by gfurnish created at 2008-03-10 17:12:58
+archive/issue_comments_016663.json:
+```json
+{
+    "body": "Changing assignee from gfurnish to was.",
+    "created_at": "2008-03-10T17:12:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2460",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2460#issuecomment-16663",
+    "user": "gfurnish"
+}
+```
 
 Changing assignee from gfurnish to was.
 
 
+
 ---
 
-Comment by gfurnish created at 2008-03-10 17:12:58
+archive/issue_comments_016664.json:
+```json
+{
+    "body": "Changing status from assigned to new.",
+    "created_at": "2008-03-10T17:12:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2460",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2460#issuecomment-16664",
+    "user": "gfurnish"
+}
+```
 
 Changing status from assigned to new.
 
 
+
 ---
 
-Comment by gfurnish created at 2008-03-10 17:12:58
+archive/issue_comments_016665.json:
+```json
+{
+    "body": "There are non-trivial issues involved with fixing this (namely, moving things to the universe causes issues with repr and commutes, and I can't find a way to fix those issues without refactoring other code to make this work well, so this should probably see some discussion.",
+    "created_at": "2008-03-10T17:12:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2460",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2460#issuecomment-16665",
+    "user": "gfurnish"
+}
+```
 
 There are non-trivial issues involved with fixing this (namely, moving things to the universe causes issues with repr and commutes, and I can't find a way to fix those issues without refactoring other code to make this work well, so this should probably see some discussion.
 
 
+
 ---
 
-Comment by craigcitro created at 2008-06-20 04:46:32
+archive/issue_comments_016666.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2008-06-20T04:46:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2460",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2460#issuecomment-16666",
+    "user": "craigcitro"
+}
+```
 
 Resolution: invalid
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-23 05:56:22
+archive/issue_comments_016667.json:
+```json
+{
+    "body": "Hi Carig,\n\nnot to be prickly Pete, but can give a reason why this was invalidated?\n\nCheers,\n\nMichael",
+    "created_at": "2008-06-23T05:56:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2460",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2460#issuecomment-16667",
+    "user": "mabshoff"
+}
+```
 
 Hi Carig,
 
@@ -132,23 +280,56 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by was created at 2008-06-27 20:20:25
+archive/issue_comments_016668.json:
+```json
+{
+    "body": "Resolution changed from invalid to ",
+    "created_at": "2008-06-27T20:20:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2460",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2460#issuecomment-16668",
+    "user": "was"
+}
+```
 
 Resolution changed from invalid to 
 
 
+
 ---
 
-Comment by was created at 2008-06-27 20:20:25
+archive/issue_comments_016669.json:
+```json
+{
+    "body": "Changing status from closed to reopened.",
+    "created_at": "2008-06-27T20:20:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2460",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2460#issuecomment-16669",
+    "user": "was"
+}
+```
 
 Changing status from closed to reopened.
 
 
+
 ---
 
-Comment by was created at 2008-06-27 20:20:25
+archive/issue_comments_016670.json:
+```json
+{
+    "body": "Woah -- I incorrectly thought this had long since been fixed.  NOT.\n\n```\nsage: R.<x,y> = FreeAlgebra(QQ,2)\nsage: sage: Factorization([(3,1), (x,2), (y,3), (x,1), (y,2)])\n3 * x^3 * y^5\n```\n",
+    "created_at": "2008-06-27T20:20:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2460",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2460#issuecomment-16670",
+    "user": "was"
+}
+```
 
 Woah -- I incorrectly thought this had long since been fixed.  NOT.
 
@@ -160,9 +341,20 @@ sage: sage: Factorization([(3,1), (x,2), (y,3), (x,1), (y,2)])
 
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-03 07:08:33
+archive/issue_comments_016671.json:
+```json
+{
+    "body": "Ok, moving this back to a current milestone so that it can be seen :)\n\nCheers,\n\nMichael",
+    "created_at": "2008-07-03T07:08:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2460",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2460#issuecomment-16671",
+    "user": "mabshoff"
+}
+```
 
 Ok, moving this back to a current milestone so that it can be seen :)
 
@@ -171,9 +363,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-06 11:02:33
+archive/issue_comments_016672.json:
+```json
+{
+    "body": "William, \n\ncan you be the editor of this patch? Feel free to bounce it back to me.\n\nCheers,\n\nMichael",
+    "created_at": "2008-07-06T11:02:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2460",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2460#issuecomment-16672",
+    "user": "mabshoff"
+}
+```
 
 William, 
 
@@ -184,16 +387,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-06 11:02:33
+archive/issue_comments_016673.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"editor_wstein\".",
+    "created_at": "2008-07-06T11:02:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2460",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2460#issuecomment-16673",
+    "user": "mabshoff"
+}
+```
 
 Changing keywords from "" to "editor_wstein".
 
 
+
 ---
 
-Comment by cremona created at 2008-08-22 17:35:50
+archive/issue_comments_016674.json:
+```json
+{
+    "body": "Looking at factorization.py I was all ready to fix all the problems I could see -- using Sequence to get a common universe for the bases on construction, cache this base_ring, only allow operations between factorizations with the same base_ring, and so on.\n\nBut then I saw what appeared to be a totally weird example:\n\n\n```\nsage: F = Factorization([(ZZ^3, 2), (ZZ^2, 5)], cr=True); F\n(Ambient free module of rank 2 over the principal ideal domain Integer Ring)^5 * \n(Ambient free module of rank 3 over the principal ideal domain Integer Ring)^2            \n```\n\nThis bears no relation at all to what I thought the Factorization class was for.  Doing a search_src showed that this is designed in to support splitting of modular symbols spaces (and similar).\n\nThis leaves a question almost certainly for William:  is it really sensible to have one class serve both as the structure to hold \"prime factorizations\" for UFDs and other rings, as well as to hold lists of subspaces with multiplicities?\n\nIf so, perhaps we need to refactor this to have a base class which just handles the basics, with (at least) 2 derived classes, one for rings factorizations and one for additive decompositions?\n\nJohn\n\n# I have added this posting to trac#2460 too.",
+    "created_at": "2008-08-22T17:35:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2460",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2460#issuecomment-16674",
+    "user": "cremona"
+}
+```
 
 Looking at factorization.py I was all ready to fix all the problems I could see -- using Sequence to get a common universe for the bases on construction, cache this base_ring, only allow operations between factorizations with the same base_ring, and so on.
 
@@ -217,24 +442,57 @@ John
 # I have added this posting to trac#2460 too.
 
 
+
 ---
 
-Comment by cremona created at 2008-08-23 16:09:43
+archive/issue_comments_016675.json:
+```json
+{
+    "body": "I think the issues raised here have all been dealt with by the patches I put up at #3927 (which started out as a separate enhancement, hence the new ticket).  In particular the good parts of the patch attached to this ticket have been used there.\n\nI suggest that this ticket be closed, with a link to #3927 instead.",
+    "created_at": "2008-08-23T16:09:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2460",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2460#issuecomment-16675",
+    "user": "cremona"
+}
+```
 
 I think the issues raised here have all been dealt with by the patches I put up at #3927 (which started out as a separate enhancement, hence the new ticket).  In particular the good parts of the patch attached to this ticket have been used there.
 
 I suggest that this ticket be closed, with a link to #3927 instead.
 
 
+
 ---
 
-Comment by mhansen created at 2008-11-14 08:52:38
+archive/issue_comments_016676.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-11-14T08:52:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2460",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2460#issuecomment-16676",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mhansen created at 2008-11-14 08:52:38
+archive/issue_comments_016677.json:
+```json
+{
+    "body": "I think that this can be closed as well due to #3927.",
+    "created_at": "2008-11-14T08:52:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2460",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2460#issuecomment-16677",
+    "user": "mhansen"
+}
+```
 
 I think that this can be closed as well due to #3927.

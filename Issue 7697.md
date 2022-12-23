@@ -1,11 +1,21 @@
 # Issue 7697: Delete OS X meta-crap from gfan-0.3.p4
 
-Issue created by migration from https://trac.sagemath.org/ticket/7697
-
-Original creator: was
-
-Original creation time: 2009-12-16 01:13:31
-
+archive/issues_007697.json:
+```json
+{
+    "body": "Assignee: tbd\n\n\n```\n      sage-4.3.rc0/spkg/standard/gfan-0.3.p4/src/.DS_Store\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7697\n\n",
+    "created_at": "2009-12-16T01:13:31Z",
+    "labels": [
+        "distribution",
+        "minor",
+        "bug"
+    ],
+    "title": "Delete OS X meta-crap from gfan-0.3.p4",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7697",
+    "user": "was"
+}
+```
 Assignee: tbd
 
 
@@ -14,37 +24,96 @@ Assignee: tbd
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7697
+
+
+
+
 
 ---
 
-Comment by was created at 2009-12-18 06:26:39
+archive/issue_comments_066036.json:
+```json
+{
+    "body": "Here is the spkg:  http://wstein.org/home/wstein/patches/gfan-0.3.p5.spkg",
+    "created_at": "2009-12-18T06:26:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7697",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7697#issuecomment-66036",
+    "user": "was"
+}
+```
 
 Here is the spkg:  http://wstein.org/home/wstein/patches/gfan-0.3.p5.spkg
 
 
+
 ---
 
-Comment by was created at 2009-12-18 06:26:39
+archive/issue_comments_066037.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-12-18T06:26:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7697",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7697#issuecomment-66037",
+    "user": "was"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-12-30 03:54:07
+archive/issue_comments_066038.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-12-30T03:54:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7697",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7697#issuecomment-66038",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-12-30 03:54:07
+archive/issue_comments_066039.json:
+```json
+{
+    "body": "This seems fine, and still installs well - SPKG updated, hg fine, passes the (two!) relevant doctest files.  I sometimes have to watch for this as well, which is particularly annoying since Finder doesn't show the dot files.",
+    "created_at": "2009-12-30T03:54:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7697",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7697#issuecomment-66039",
+    "user": "kcrisman"
+}
+```
 
 This seems fine, and still installs well - SPKG updated, hg fine, passes the (two!) relevant doctest files.  I sometimes have to watch for this as well, which is particularly annoying since Finder doesn't show the dot files.
 
 
+
 ---
 
-Comment by mhansen created at 2010-01-03 22:24:03
+archive/issue_comments_066040.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-03T22:24:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7697",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7697#issuecomment-66040",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 2908: Polynomial gcd doesn't take coefficients into account
 
-Issue created by migration from https://trac.sagemath.org/ticket/2908
-
-Original creator: burcin
-
-Original creation time: 2008-04-13 17:47:25
-
+archive/issues_002908.json:
+```json
+{
+    "body": "Assignee: somebody\n\nWith 3.0.alpha2 I get the following:\n\n\n```\nsage: R.<x> = QQ[]\nsage: p = 2*x; q = 2*x\nsage: p.gcd(q)\nx\nsage: R.<x> = ZZ[]\nsage: p = 2*x; q = 2*x\nsage: p.gcd(q)\n2*x\n\nsage: R.<x> = GF(5)[]\nsage: p = 2*x; q = 2*x\nsage: p.gcd(q)\nx\n\nsage: R.<x,y> = QQ[]\nsage: p = 2*x; q = 2*x\nsage: p.gcd(q)\nx\n\nsage: R.<x,y> = ZZ[]\nsage: p = 2*x; q = 2*x\nsage: p.gcd(q)\n2*x\n\nsage: R.<x,y> = GF(5)[]\nsage: p = 2*x; q = 2*x\nsage: p.gcd(q)\nx\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2908\n\n",
+    "created_at": "2008-04-13T17:47:25Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "bug"
+    ],
+    "title": "Polynomial gcd doesn't take coefficients into account",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2908",
+    "user": "burcin"
+}
+```
 Assignee: somebody
 
 With 3.0.alpha2 I get the following:
@@ -45,14 +55,29 @@ x
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2908
+
+
+
+
 
 ---
 
-Comment by cwitty created at 2008-04-13 18:16:50
+archive/issue_comments_020041.json:
+```json
+{
+    "body": "I think that GCDs for polynomials over a field should return monic polynomials (which seems to be the current behavior); that is, I think this bug is invalid.\n\n(According to *Algorithms for Computer Algebra*, for instance, GCD is defined only up to units; so for your first problem, x, 2*x, and 22/7*x would all be GCDs of p and q.  We need to pick one, and picking the monic polynomial seems like the best choice.)\n\nWhat do you think this should return?\n\n```\nsage: R.<x> = QQ[]\nsage: p = (5*x + 7) * (3*x + 1)\nsage: q = (x/7 + 1/5) * (2*x + 2)\nsage: p.gcd(q)\nx + 7/5\n```\n",
+    "created_at": "2008-04-13T18:16:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2908",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2908#issuecomment-20041",
+    "user": "cwitty"
+}
+```
 
 I think that GCDs for polynomials over a field should return monic polynomials (which seems to be the current behavior); that is, I think this bug is invalid.
 
-(According to _Algorithms for Computer Algebra_, for instance, GCD is defined only up to units; so for your first problem, x, 2*x, and 22/7*x would all be GCDs of p and q.  We need to pick one, and picking the monic polynomial seems like the best choice.)
+(According to *Algorithms for Computer Algebra*, for instance, GCD is defined only up to units; so for your first problem, x, 2*x, and 22/7*x would all be GCDs of p and q.  We need to pick one, and picking the monic polynomial seems like the best choice.)
 
 What do you think this should return?
 
@@ -66,15 +91,37 @@ x + 7/5
 
 
 
+
 ---
 
-Comment by burcin created at 2008-04-13 18:51:35
+archive/issue_comments_020042.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2008-04-13T18:51:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2908",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2908#issuecomment-20042",
+    "user": "burcin"
+}
+```
 
 Resolution: invalid
 
 
+
 ---
 
-Comment by burcin created at 2008-04-13 18:51:35
+archive/issue_comments_020043.json:
+```json
+{
+    "body": "You're right, GCD is defined up to units and this is invalid.",
+    "created_at": "2008-04-13T18:51:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2908",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2908#issuecomment-20043",
+    "user": "burcin"
+}
+```
 
 You're right, GCD is defined up to units and this is invalid.

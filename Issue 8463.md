@@ -1,11 +1,21 @@
 # Issue 8463: Test failure of sage/homology/delta_complex.py
 
-Issue created by migration from https://trac.sagemath.org/ticket/8463
-
-Original creator: drkirkby
-
-Original creation time: 2010-03-06 23:23:12
-
+archive/issues_008463.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  jhpalmieri\n\nI'm getting lots of failures on a patched version of 4.3.4.alpha0 for many files related to homology:\n\n\n```\n        sage -t  -long \"devel/sage/sage/homology/delta_complex.py\"\n        sage -t  -long \"devel/sage/sage/homology/cubical_complex.py\"\n        sage -t  -long \"devel/sage/sage/homology/examples.py\"\n        sage -t  -long \"devel/sage/sage/homology/cell_complex.py\"\n        sage -t  -long \"devel/sage/sage/homology/chain_complex.py\"\n        sage -t  -long \"devel/sage/sage/homology/simplicial_complex.py\"\n```\n\n\nThe ones involving simplicial_complex.py all report \n\n\n```\nOSError: [Errno 2] No such file or directory\n```\n\n\nSee below for me detailed information. I think John deals with this sort of thing, but I don't even know what to classify it as, so I've stuck it on *doctest*.  \n\n\n```\n\nsage -t  -long \"devel/sage/sage/homology/delta_complex.py\"\n**********************************************************************\nFile \"/export/home/drkirkby/32/sage-4.3.4.alpha0/devel/sage/sage/homology/delta_complex.py\", line 114:\n    sage: S5.homology()\nException raised:\n    Traceback (most recent call last):\n      File \"/export/home/drkirkby/32/sage-4.3.4.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/export/home/drkirkby/32/sage-4.3.4.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/export/home/drkirkby/32/sage-4.3.4.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_1[5]>\", line 1, in <module>\n        S5.homology()###line 114:\n    sage: S5.homology()\n      File \"/export/home/drkirkby/32/sage-4.3.4.alpha0/local/lib/python/site-packages/sage/homology/cell_complex.py\", line 555, in homology\n        answer = C.homology(**kwds)\n      File \"/export/home/drkirkby/32/sage-4.3.4.alpha0/local/lib/python/site-packages/sage/homology/chain_complex.py\", line 721, in homology\n        H = homchain(self, **kwds)\n      File \"/export/home/drkirkby/32/sage-4.3.4.alpha0/local/lib/python/site-packages/sage/interfaces/chomp.py\", line 584, in homchain\n        return CHomP()('homchain', complex, **kwds)\n      File \"/export/home/drkirkby/32/sage-4.3.4.alpha0/local/lib/python/site-packages/sage/interfaces/chomp.py\", line 250, in __call__\n        output = Popen(cmd, stdout=PIPE).communicate()[0]\n      File \"/export/home/drkirkby/32/sage-4.3.4.alpha0/local/lib/python2.6/subprocess.py\", line 621, in __init__\n        errread, errwrite)\n      File \"/export/home/drkirkby/32/sage-4.3.4.alpha0/local/lib/python2.6/subprocess.py\", line 1126, in _execute_child\n        raise child_exception\n    OSError: [Errno 2] No such file or directory\n**********************************************************************\nFile \"/export/home/drkirkby/32/sage-4.3.4.alpha0/devel/sage/sage/homology/delta_complex.py\", line 186:\n    sage: P.homology(1)\nException raised:\n    Traceback (most recent call last):\n      File \"/export/home/drkirkby/32/sage-4.3.4.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/export/home/drkirkby/32/sage-4.3.4.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/export/home/drkirkby/32/sage-4.3.4.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_1[12]>\", line 1, in <module>\n        P.homology(Integer(1))###line 186:\n    sage: P.homology(1)\n      File \"/export/home/drkirkby/32/sage-4.3.4.alpha0/local/lib/python/site-packages/sage/homology/cell_complex.py\", line 555, in homology\n        answer = C.homology(**kwds)\n      File \"/export/home/drkirkby/32/sage-4.3.4.alpha0/local/lib/python/site-packages/sage/homology/chain_complex.py\", line 721, in homology\n        H = homchain(self, **kwds)\n      File \"/export/home/drkirkby/32/sage-4.3.4.alpha0/local/lib/python/site-packages/sage/interfaces/chomp.py\", line 584, in homchain\n        return CHomP()('homchain', complex, **kwds)\n      File \"/export/home/drkirkby/32/sage-4.3.4.alpha0/local/lib/python/site-packages/sage/interfaces/chomp.py\", line 250, in __call__\n        output = Popen(cmd, stdout=PIPE).communicate()[0]\n      File \"/export/home/drkirkby/32/sage-4.3.4.alpha0/local/lib/python2.6/subprocess.py\", line 621, in __init__\n        errread, errwrite)\n      File \"/export/home/drkirkby/32/sage-4.3.4.alpha0/local/lib/python2.6/subprocess.py\", line 1126, in _execute_child\n        raise child_exception\n    OSError: [Errno 2] No such file or directory\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8463\n\n",
+    "created_at": "2010-03-06T23:23:12Z",
+    "labels": [
+        "doctest coverage",
+        "major",
+        "bug"
+    ],
+    "title": "Test failure of sage/homology/delta_complex.py",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8463",
+    "user": "drkirkby"
+}
+```
 Assignee: tbd
 
 CC:  jhpalmieri
@@ -31,7 +41,7 @@ OSError: [Errno 2] No such file or directory
 ```
 
 
-See below for me detailed information. I think John deals with this sort of thing, but I don't even know what to classify it as, so I've stuck it on _doctest_.  
+See below for me detailed information. I think John deals with this sort of thing, but I don't even know what to classify it as, so I've stuck it on *doctest*.  
 
 
 ```
@@ -95,44 +105,114 @@ Exception raised:
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8463
+
+
+
+
 
 ---
 
-Comment by jhpalmieri created at 2010-03-07 05:18:27
+archive/issue_comments_076177.json:
+```json
+{
+    "body": "I believe this should be fixed by the patch at #8474, which gets to the heart of the matter.",
+    "created_at": "2010-03-07T05:18:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8463",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8463#issuecomment-76177",
+    "user": "jhpalmieri"
+}
+```
 
 I believe this should be fixed by the patch at #8474, which gets to the heart of the matter.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-03-07 14:47:02
+archive/issue_comments_076178.json:
+```json
+{
+    "body": "As I commented on #8474, I not so convinced this is true at least now.",
+    "created_at": "2010-03-07T14:47:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8463",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8463#issuecomment-76178",
+    "user": "drkirkby"
+}
+```
 
 As I commented on #8474, I not so convinced this is true at least now.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-03-09 03:18:20
+archive/issue_comments_076179.json:
+```json
+{
+    "body": "This can now be closed, as #8474, does solve this.",
+    "created_at": "2010-03-09T03:18:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8463",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8463#issuecomment-76179",
+    "user": "drkirkby"
+}
+```
 
 This can now be closed, as #8474, does solve this.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-03-09 03:18:20
+archive/issue_comments_076180.json:
+```json
+{
+    "body": "Changing assignee from tbd to drkirkby.",
+    "created_at": "2010-03-09T03:18:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8463",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8463#issuecomment-76180",
+    "user": "drkirkby"
+}
+```
 
 Changing assignee from tbd to drkirkby.
 
 
+
 ---
 
-Comment by mvngu created at 2010-03-11 04:53:10
+archive/issue_comments_076181.json:
+```json
+{
+    "body": "Close as fixed by #8474.",
+    "created_at": "2010-03-11T04:53:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8463",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8463#issuecomment-76181",
+    "user": "mvngu"
+}
+```
 
 Close as fixed by #8474.
 
 
+
 ---
 
-Comment by mvngu created at 2010-03-11 04:53:10
+archive/issue_comments_076182.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-03-11T04:53:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8463",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8463#issuecomment-76182",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

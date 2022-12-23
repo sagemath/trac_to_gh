@@ -1,11 +1,21 @@
 # Issue 7807: region_plot does not pass extra arguments to show
 
-Issue created by migration from https://trac.sagemath.org/ticket/7807
-
-Original creator: jason
-
-Original creation time: 2010-01-01 18:19:43
-
+archive/issues_007807.json:
+```json
+{
+    "body": "Assignee: was\n\nThis is inconsistent with other plotting functions.\n\n\n```\nsage: region_plot([x^2+y^2<1, x<y], (x,-2,2), (y,-2,2),aspect_ratio=1)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/grout/.sage/temp/tiny/2531/_home_grout__sage_init_sage_0.py in <module>()\n\n/home/grout/downloads/sage-4.3/local/lib/python2.6/site-packages/sage/plot/misc.pyc in wrapper(*args, **kwds)\n    136                 options['__original_opts'] = kwds\n    137             options.update(kwds)\n--> 138             return func(*args, **options)\n    139 \n    140         \n\nTypeError: region_plot() got an unexpected keyword argument 'aspect_ratio'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7807\n\n",
+    "created_at": "2010-01-01T18:19:43Z",
+    "labels": [
+        "graphics",
+        "major",
+        "bug"
+    ],
+    "title": "region_plot does not pass extra arguments to show",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7807",
+    "user": "jason"
+}
+```
 Assignee: was
 
 This is inconsistent with other plotting functions.
@@ -29,31 +39,79 @@ TypeError: region_plot() got an unexpected keyword argument 'aspect_ratio'
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7807
+
+
+
+
 
 ---
 
-Comment by jason created at 2010-01-20 00:14:14
+archive/issue_comments_067536.json:
+```json
+{
+    "body": "The patch at #8004 resolves this.",
+    "created_at": "2010-01-20T00:14:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7807",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7807#issuecomment-67536",
+    "user": "jason"
+}
+```
 
 The patch at #8004 resolves this.
 
 
+
 ---
 
-Comment by jason created at 2010-01-20 00:14:21
+archive/issue_comments_067537.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-01-20T00:14:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7807",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7807#issuecomment-67537",
+    "user": "jason"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by rossk created at 2010-01-31 06:20:57
+archive/issue_comments_067538.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-01-31T06:20:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7807",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7807#issuecomment-67538",
+    "user": "rossk"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by rossk created at 2010-01-31 06:20:57
+archive/issue_comments_067539.json:
+```json
+{
+    "body": "\n```\n# works as advertised\nsage: region_plot([x^2+y^2<1, x<y], (x,-2,2), (y,-2,2),aspect_ratio=1)  \n\n# (Correctly) doesnt complain about a single function\nsage: region_plot([x^2+y^2<1], (x,-2,2), (y,-2,2),aspect_ratio=1) \n\n# using many functions is ok\nsage: region_plot([x^2+y^2<1, x<y, x>-1/2, y>0], (x,-2,2), (y,-2,2),aspect_ratio=1)\n\n# displays a portion of the last example properly\nsage: region_plot([x^2+y^2<1, x<y, x>-1/2, y>0], (x,0,2), (y,-2,2),aspect_ratio=1) \n\n# a little computer art - my picture of a whale ;-) \nsage: region_plot([x^2+y^2<10, y< sin(x)], (x,-5,5), (y,-4,4),aspect_ratio=1)\n```\n",
+    "created_at": "2010-01-31T06:20:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7807",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7807#issuecomment-67539",
+    "user": "rossk"
+}
+```
 
 
 ```
@@ -75,15 +133,37 @@ sage: region_plot([x^2+y^2<10, y< sin(x)], (x,-5,5), (y,-4,4),aspect_ratio=1)
 
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-11 14:58:55
+archive/issue_comments_067540.json:
+```json
+{
+    "body": "Fixed by #8004.",
+    "created_at": "2010-02-11T14:58:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7807",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7807#issuecomment-67540",
+    "user": "mpatel"
+}
+```
 
 Fixed by #8004.
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-11 14:58:55
+archive/issue_comments_067541.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-02-11T14:58:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7807",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7807#issuecomment-67541",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed

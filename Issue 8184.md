@@ -1,41 +1,90 @@
 # Issue 8184: eclib upgrade and bugfix
 
-Issue created by migration from https://trac.sagemath.org/ticket/8184
-
-Original creator: cremona
-
-Original creation time: 2010-02-04 14:27:17
-
+archive/issues_008184.json:
+```json
+{
+    "body": "Assignee: cremona\n\nKeywords: eclib\n\nWe provide an upgrade to eclib to patch-level 9, i.e. eclib-20080310.p9.spkg.  This does two things:\n\n1. Fixes a bug (found by Edray Goins and Jamie Wiegandt) in which second descent quartics were not tested for real-solubility, and so sometimes the rank bounds (and related selmer ranks) could be too high.\n\n2. Enhances the data available from the two_descent class so that the rank_bound and selmer_rank are separated, and both available.\n\nThe second item necessitated changes to the interface, which are here included in the patch.  In turn, some changes were needed in sage/schemes/elliptic_curve/\n\nNote that this affects #7575.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8184\n\n",
+    "created_at": "2010-02-04T14:27:17Z",
+    "labels": [
+        "elliptic curves",
+        "major",
+        "bug"
+    ],
+    "title": "eclib upgrade and bugfix",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8184",
+    "user": "cremona"
+}
+```
 Assignee: cremona
 
 Keywords: eclib
 
 We provide an upgrade to eclib to patch-level 9, i.e. eclib-20080310.p9.spkg.  This does two things:
 
-    1. Fixes a bug (found by Edray Goins and Jamie Wiegandt) in which second descent quartics were not tested for real-solubility, and so sometimes the rank bounds (and related selmer ranks) could be too high.
+1. Fixes a bug (found by Edray Goins and Jamie Wiegandt) in which second descent quartics were not tested for real-solubility, and so sometimes the rank bounds (and related selmer ranks) could be too high.
 
-    2. Enhances the data available from the two_descent class so that the rank_bound and selmer_rank are separated, and both available.
+2. Enhances the data available from the two_descent class so that the rank_bound and selmer_rank are separated, and both available.
 
 The second item necessitated changes to the interface, which are here included in the patch.  In turn, some changes were needed in sage/schemes/elliptic_curve/
 
 Note that this affects #7575.
 
+Issue created by migration from https://trac.sagemath.org/ticket/8184
+
+
+
+
 
 ---
+
+archive/issue_comments_072126.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-02-04T14:28:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8184",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8184#issuecomment-72126",
+    "user": "cremona"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by cremona created at 2010-02-04 14:31:39
+archive/issue_comments_072127.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-02-04T14:31:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8184",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8184#issuecomment-72127",
+    "user": "cremona"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by wuthrich created at 2010-02-04 15:43:59
+archive/issue_comments_072128.json:
+```json
+{
+    "body": "I fear you uploaded the wrong patch.\n\nI am not certain how to review packages and I will read up on it; but someone might be faster at it.\n\nChris.",
+    "created_at": "2010-02-04T15:43:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8184",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8184#issuecomment-72128",
+    "user": "wuthrich"
+}
+```
 
 I fear you uploaded the wrong patch.
 
@@ -44,14 +93,38 @@ I am not certain how to review packages and I will read up on it; but someone mi
 Chris.
 
 
+
 ---
 
-Comment by cremona created at 2010-02-04 15:56:51
+archive/issue_comments_072129.json:
+```json
+{
+    "body": "Applies to 4.3.2.alpha1",
+    "created_at": "2010-02-04T15:56:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8184",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8184#issuecomment-72129",
+    "user": "cremona"
+}
+```
 
 Applies to 4.3.2.alpha1
 
 
+
 ---
+
+archive/issue_comments_072130.json:
+```json
+{
+    "body": "Attachment\n\nSorry -- try this one.\n\nNB After building the new spkg with \"sage -f\" the patch is required before Sage will work properly.  Even in a clone, you'll be stuck with the new spkg.  I am not sure how to revert back to the old eclib (if you want to).\n\nSo I would recommend tetsing this on (say) 4.3.2.alpha1 if you have it, and if all goes wrong you can build 4.3.2.rc0 which is out!",
+    "created_at": "2010-02-04T15:59:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8184",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8184#issuecomment-72130",
+    "user": "cremona"
+}
+```
 
 Attachment
 
@@ -62,50 +135,129 @@ NB After building the new spkg with "sage -f" the patch is required before Sage 
 So I would recommend tetsing this on (say) 4.3.2.alpha1 if you have it, and if all goes wrong you can build 4.3.2.rc0 which is out!
 
 
+
 ---
 
-Comment by rlm created at 2010-02-04 19:08:21
+archive/issue_comments_072131.json:
+```json
+{
+    "body": "Apply on top of trac_8184-eclib.patch",
+    "created_at": "2010-02-04T19:08:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8184",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8184#issuecomment-72131",
+    "user": "rlm"
+}
+```
 
 Apply on top of trac_8184-eclib.patch
 
 
+
 ---
+
+archive/issue_comments_072132.json:
+```json
+{
+    "body": "Attachment\n\nI added a patch which replaces tabs with single spaces (it looks like your editor sees tabs as eight spaces... mine only sees them as four).",
+    "created_at": "2010-02-04T19:09:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8184",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8184#issuecomment-72132",
+    "user": "rlm"
+}
+```
 
 Attachment
 
 I added a patch which replaces tabs with single spaces (it looks like your editor sees tabs as eight spaces... mine only sees them as four).
 
 
+
 ---
 
-Comment by rlm created at 2010-02-04 20:04:47
+archive/issue_comments_072133.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-02-04T20:04:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8184",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8184#issuecomment-72133",
+    "user": "rlm"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by rlm created at 2010-02-04 20:04:47
+archive/issue_comments_072134.json:
+```json
+{
+    "body": "I've tested this on 32-bit OS X and 64-bit Linux, and there are no problems. Looks great!",
+    "created_at": "2010-02-04T20:04:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8184",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8184#issuecomment-72134",
+    "user": "rlm"
+}
+```
 
 I've tested this on 32-bit OS X and 64-bit Linux, and there are no problems. Looks great!
 
 
+
 ---
 
-Comment by wuthrich created at 2010-02-05 10:07:20
+archive/issue_comments_072135.json:
+```json
+{
+    "body": "I knew someone would be faster. Thanks.",
+    "created_at": "2010-02-05T10:07:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8184",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8184#issuecomment-72135",
+    "user": "wuthrich"
+}
+```
 
 I knew someone would be faster. Thanks.
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-10 11:24:19
+archive/issue_comments_072136.json:
+```json
+{
+    "body": "The indentation patch seems to be missing the committer's name and email address, and the commit string does not contain the ticket number.  I've refreshed the patch and applied it to 4.3.3.alpha0.",
+    "created_at": "2010-02-10T11:24:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8184",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8184#issuecomment-72136",
+    "user": "mpatel"
+}
+```
 
 The indentation patch seems to be missing the committer's name and email address, and the commit string does not contain the ticket number.  I've refreshed the patch and applied it to 4.3.3.alpha0.
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-11 14:30:31
+archive/issue_comments_072137.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-02-11T14:30:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8184",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8184#issuecomment-72137",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed

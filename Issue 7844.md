@@ -1,11 +1,21 @@
 # Issue 7844: notebook.address AttributeError
 
-Issue created by migration from https://trac.sagemath.org/ticket/7844
-
-Original creator: mpatel
-
-Original creation time: 2010-01-05 02:24:47
-
+archive/issues_007844.json:
+```json
+{
+    "body": "Assignee: AlexGhitza\n\nCC:  was ddrake\n\nOn publishing a new worksheet:\n\n```python\n          File \"/home/sage/notebook/sagenb-0.4.9/sagenb/notebook/twist.py\", line 1316, in render\n            addr += notebook.address\n        exceptions.AttributeError: 'Notebook' object has no attribute 'address'\n```\n\n\nI think this is a follow-up to #7639.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7844\n\n",
+    "created_at": "2010-01-05T02:24:47Z",
+    "labels": [
+        "algebra",
+        "major",
+        "bug"
+    ],
+    "title": "notebook.address AttributeError",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7844",
+    "user": "mpatel"
+}
+```
 Assignee: AlexGhitza
 
 CC:  was ddrake
@@ -21,51 +31,134 @@ On publishing a new worksheet:
 
 I think this is a follow-up to #7639.
 
+Issue created by migration from https://trac.sagemath.org/ticket/7844
+
+
+
+
 
 ---
 
-Comment by mpatel created at 2010-01-05 02:28:47
+archive/issue_comments_067945.json:
+```json
+{
+    "body": "`notebook.address` --> `notebook.interface`.  sagenb repo.",
+    "created_at": "2010-01-05T02:28:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7844",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7844#issuecomment-67945",
+    "user": "mpatel"
+}
+```
 
 `notebook.address` --> `notebook.interface`.  sagenb repo.
 
 
+
 ---
+
+archive/issue_comments_067946.json:
+```json
+{
+    "body": "Attachment\n\nHave I found them all?",
+    "created_at": "2010-01-05T02:29:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7844",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7844#issuecomment-67946",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
 Have I found them all?
 
 
+
 ---
 
-Comment by mpatel created at 2010-01-05 02:29:29
+archive/issue_comments_067947.json:
+```json
+{
+    "body": "Changing component from algebra to notebook.",
+    "created_at": "2010-01-05T02:29:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7844",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7844#issuecomment-67947",
+    "user": "mpatel"
+}
+```
 
 Changing component from algebra to notebook.
 
 
+
 ---
 
-Comment by mpatel created at 2010-01-05 02:29:29
+archive/issue_comments_067948.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-01-05T02:29:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7844",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7844#issuecomment-67948",
+    "user": "mpatel"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by was created at 2010-01-05 04:00:23
+archive/issue_comments_067949.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-01-05T04:00:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7844",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7844#issuecomment-67949",
+    "user": "was"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by was created at 2010-01-05 04:00:36
+archive/issue_comments_067950.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-05T04:00:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7844",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7844#issuecomment-67950",
+    "user": "was"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by was created at 2010-01-05 04:00:36
+archive/issue_comments_067951.json:
+```json
+{
+    "body": "merged into sagenb-0.5.",
+    "created_at": "2010-01-05T04:00:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7844",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7844#issuecomment-67951",
+    "user": "was"
+}
+```
 
 merged into sagenb-0.5.

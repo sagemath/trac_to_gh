@@ -1,11 +1,21 @@
 # Issue 5247: cuspform_lseries() computing sign of functional equation incorrectly
 
-Issue created by migration from https://trac.sagemath.org/ticket/5247
-
-Original creator: mabshoff
-
-Original creation time: 2009-02-12 16:43:56
-
+archive/issues_005247.json:
+```json
+{
+    "body": "Assignee: craigcitro\n\nSal reports: The following computation should produce identical values in the last line:\n\n```\nE=EllipticCurve('37b2')\nh=E.modular_form()\nLh = h.cuspform_lseries()\nLE=E.lseries()\nh.elliptic_curve()==E, Lh(1), LE(1)\n```\n\nThe output is:\n\n```\n(True, 0, 0.725681061936153)\n```\n\nI'm running Sage 3.3.alpha3 of sage.math.\n\nThe problem seems to be the sign of the functional equation -- it looks like the cuspform_lseries() incorrectly computes it to be -1, forcing the value at s=1 to be 0. In sage/modular/modform/element.py the sign of the functional equation fed into the Dokchister is computed by\n\n```\ne = (-1)**(l/2)*n.atkin_lehner_operator().matrix()[0,0]\n```\n\nwhich Gonzalo and Mark tell me is not correct.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5247\n\n",
+    "created_at": "2009-02-12T16:43:56Z",
+    "labels": [
+        "modular forms",
+        "major",
+        "bug"
+    ],
+    "title": "cuspform_lseries() computing sign of functional equation incorrectly",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5247",
+    "user": "mabshoff"
+}
+```
 Assignee: craigcitro
 
 Sal reports: The following computation should produce identical values in the last line:
@@ -34,10 +44,25 @@ e = (-1)**(l/2)*n.atkin_lehner_operator().matrix()[0,0]
 
 which Gonzalo and Mark tell me is not correct.
 
+Issue created by migration from https://trac.sagemath.org/ticket/5247
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2009-02-14 02:52:41
+archive/issue_comments_040222.json:
+```json
+{
+    "body": "This is a dupe of #5262. William did open the other ticket later, but since #5262 has the better description I am closing this ticket.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-14T02:52:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5247",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5247#issuecomment-40222",
+    "user": "mabshoff"
+}
+```
 
 This is a dupe of #5262. William did open the other ticket later, but since #5262 has the better description I am closing this ticket.
 
@@ -46,8 +71,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-14 02:52:41
+archive/issue_comments_040223.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2009-02-14T02:52:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5247",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5247#issuecomment-40223",
+    "user": "mabshoff"
+}
+```
 
 Resolution: duplicate

@@ -1,11 +1,21 @@
 # Issue 5381: Refactor matrix kernels
 
-Issue created by migration from https://trac.sagemath.org/ticket/5381
-
-Original creator: rbeezer
-
-Original creation time: 2009-02-26 03:24:43
-
+archive/issues_005381.json:
+```json
+{
+    "body": "Assignee: rbeezer\n\nCC:  burcin\n\nKeywords: matrix kernel refactor\n\nFrom proposal on sage-devel:\n\nPlace the guts of kernel computations for each (specialized) class into a right_kernel() method, where it would seem to naturally belong.  Mostly these would replace kernel() methods that are computing left kernels.  A call to kernel() or left_kernel() should arrive at the top of the hierarchy where it would take a transpose and call the (specialized) right_kernel().  So there wouldn't be a change in behavior in routines currently calling kernel () or left_kernel(), and we would retain Sage's preference for the left by having the vanilla kernel() give back a left kernel.  The changes would be more efficient computationally and also make the code more expressive of what is really happening when and where.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5381\n\n",
+    "created_at": "2009-02-26T03:24:43Z",
+    "labels": [
+        "linear algebra",
+        "minor",
+        "enhancement"
+    ],
+    "title": "Refactor matrix kernels",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5381",
+    "user": "rbeezer"
+}
+```
 Assignee: rbeezer
 
 CC:  burcin
@@ -16,22 +26,61 @@ From proposal on sage-devel:
 
 Place the guts of kernel computations for each (specialized) class into a right_kernel() method, where it would seem to naturally belong.  Mostly these would replace kernel() methods that are computing left kernels.  A call to kernel() or left_kernel() should arrive at the top of the hierarchy where it would take a transpose and call the (specialized) right_kernel().  So there wouldn't be a change in behavior in routines currently calling kernel () or left_kernel(), and we would retain Sage's preference for the left by having the vanilla kernel() give back a left kernel.  The changes would be more efficient computationally and also make the code more expressive of what is really happening when and where.
 
+Issue created by migration from https://trac.sagemath.org/ticket/5381
+
+
+
+
 
 ---
+
+archive/issue_comments_041444.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-03-08T23:29:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5381",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5381#issuecomment-41444",
+    "user": "rbeezer"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by jason created at 2009-04-03 21:04:44
+archive/issue_comments_041445.json:
+```json
+{
+    "body": "This patch conflicts with #5408; I get a reject for that part.  Can you rebase this patch?  I'll look at it quickly before it bitrots this time!",
+    "created_at": "2009-04-03T21:04:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5381",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5381#issuecomment-41445",
+    "user": "jason"
+}
+```
 
 This patch conflicts with #5408; I get a reject for that part.  Can you rebase this patch?  I'll look at it quickly before it bitrots this time!
 
 
+
 ---
 
-Comment by rbeezer created at 2009-04-06 04:26:49
+archive/issue_comments_041446.json:
+```json
+{
+    "body": "Replying to [comment:3 jason]:\n\nHi Jason,\n\nThanks for looking at this.  I think the reject was my fault.  Partway through doing this I fixed a bug with #5408 and I don't think I got everything put back together right on this patch.  Apply just the new patch (version 2), and test matrices over ZZ with `algorithm='pari'` since that is where I had to reconstruct the mix-up.  I have tested this against all of the sage/matrix directory.\n\nThanks again - this will let me get to #5135.\n\nRob",
+    "created_at": "2009-04-06T04:26:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5381",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5381#issuecomment-41446",
+    "user": "rbeezer"
+}
+```
 
 Replying to [comment:3 jason]:
 
@@ -44,29 +93,64 @@ Thanks again - this will let me get to #5135.
 Rob
 
 
+
 ---
+
+archive/issue_comments_041447.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-04-06T04:27:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5381",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5381#issuecomment-41447",
+    "user": "rbeezer"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by jason created at 2009-04-15 05:34:33
+archive/issue_comments_041448.json:
+```json
+{
+    "body": "Thanks for rebasing.  This is great work!  Positive review pending taking care of the following comments.\n\n* In matrix2.pyx, the exact same code is repeated for kernel() and for left_kernel().  I think it would be cleaner to just have kernel call left_kernel(), rather than repeating the code to compute and cache the left kernel.\n\n* In matrix_integer_dense.pyx, you add a note to kernel_matrix() that tells the user that the preferred method is to call an underscore function.  It seems odd to direct a user away from an API function to a function that is not an officially supported function.  This is especially odd because the reason is a speculative \"in case this function is deprecated in the future\".  To fix this, I would just delete the note about the deprecation.  If a user wants the left kernel matrix, then that's what they want; they'd rather have the function do the work of the transpose and the right kernel matrix.\n\n* A couple of the functions (I believe in matrix_integer_dense.pyx, for example) that are modified are left without doctests.  These should have at least minimal doctests, and preferably should have doctests for the corner cases (e.g., 0 rows or 0 columns in a matrix).\n\nDoctests pass in matrix/*.pyx.  They should be run on all of Sage for this one, though, since kernels are probably used in lots of places of Sage.",
+    "created_at": "2009-04-15T05:34:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5381",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5381#issuecomment-41448",
+    "user": "jason"
+}
+```
 
 Thanks for rebasing.  This is great work!  Positive review pending taking care of the following comments.
 
- * In matrix2.pyx, the exact same code is repeated for kernel() and for left_kernel().  I think it would be cleaner to just have kernel call left_kernel(), rather than repeating the code to compute and cache the left kernel.
+* In matrix2.pyx, the exact same code is repeated for kernel() and for left_kernel().  I think it would be cleaner to just have kernel call left_kernel(), rather than repeating the code to compute and cache the left kernel.
 
- * In matrix_integer_dense.pyx, you add a note to kernel_matrix() that tells the user that the preferred method is to call an underscore function.  It seems odd to direct a user away from an API function to a function that is not an officially supported function.  This is especially odd because the reason is a speculative "in case this function is deprecated in the future".  To fix this, I would just delete the note about the deprecation.  If a user wants the left kernel matrix, then that's what they want; they'd rather have the function do the work of the transpose and the right kernel matrix.
+* In matrix_integer_dense.pyx, you add a note to kernel_matrix() that tells the user that the preferred method is to call an underscore function.  It seems odd to direct a user away from an API function to a function that is not an officially supported function.  This is especially odd because the reason is a speculative "in case this function is deprecated in the future".  To fix this, I would just delete the note about the deprecation.  If a user wants the left kernel matrix, then that's what they want; they'd rather have the function do the work of the transpose and the right kernel matrix.
 
- * A couple of the functions (I believe in matrix_integer_dense.pyx, for example) that are modified are left without doctests.  These should have at least minimal doctests, and preferably should have doctests for the corner cases (e.g., 0 rows or 0 columns in a matrix).
+* A couple of the functions (I believe in matrix_integer_dense.pyx, for example) that are modified are left without doctests.  These should have at least minimal doctests, and preferably should have doctests for the corner cases (e.g., 0 rows or 0 columns in a matrix).
 
 Doctests pass in matrix/*.pyx.  They should be run on all of Sage for this one, though, since kernels are probably used in lots of places of Sage.
 
 
+
 ---
 
-Comment by rbeezer created at 2009-04-27 03:47:55
+archive/issue_comments_041449.json:
+```json
+{
+    "body": "New patch (\"_3\") addresses all reviewer comments above, though I could only find one function that needed to have doctests added (`_kernel_matrix_using_pari`).\n\nPassed the following tests:\n\nsage -testall\n\nsage -t --randorder sage/matrix/*\n\nsage -docbuild reference pdf\n\n\nApply just this new (third) patch, which was built on 3.4.2.alpha0\n\nMinh - timings are getting a bit dated, but are probably still accurate, though most of the speedup came from improvments discovered in transposes while working through this.  You could say \"a 16% improvement in right kernels by eliminating paired transposes.\"",
+    "created_at": "2009-04-27T03:47:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5381",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5381#issuecomment-41449",
+    "user": "rbeezer"
+}
+```
 
 New patch ("_3") addresses all reviewer comments above, though I could only find one function that needed to have doctests added (`_kernel_matrix_using_pari`).
 
@@ -84,16 +168,40 @@ Apply just this new (third) patch, which was built on 3.4.2.alpha0
 Minh - timings are getting a bit dated, but are probably still accurate, though most of the speedup came from improvments discovered in transposes while working through this.  You could say "a 16% improvement in right kernels by eliminating paired transposes."
 
 
+
 ---
+
+archive/issue_comments_041450.json:
+```json
+{
+    "body": "Attachment\n\nThe latest patch addresses Jason's comments; it applies cleanly and passes testlong.",
+    "created_at": "2009-04-30T11:21:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5381",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5381#issuecomment-41450",
+    "user": "AlexGhitza"
+}
+```
 
 Attachment
 
 The latest patch addresses Jason's comments; it applies cleanly and passes testlong.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-11 13:50:02
+archive/issue_comments_041451.json:
+```json
+{
+    "body": "Merged trac_5381_matrix_kernels_3.patch in Sage 4.0.alpha0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-05-11T13:50:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5381",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5381#issuecomment-41451",
+    "user": "mabshoff"
+}
+```
 
 Merged trac_5381_matrix_kernels_3.patch in Sage 4.0.alpha0.
 
@@ -102,8 +210,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-11 13:50:02
+archive/issue_comments_041452.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-05-11T13:50:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5381",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5381#issuecomment-41452",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

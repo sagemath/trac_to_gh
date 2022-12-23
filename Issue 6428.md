@@ -1,11 +1,21 @@
 # Issue 6428: Large exponents overflow to negative in polydict ring
 
-Issue created by migration from https://trac.sagemath.org/ticket/6428
-
-Original creator: broune
-
-Original creation time: 2009-06-26 18:26:31
-
+archive/issues_006428.json:
+```json
+{
+    "body": "Assignee: tbd\n\nLarge exponents overflow to negative in polydict ring:\n\nsage: from sage.rings.polynomial.multi_polynomial_ring import \\\n...       MPolynomialRing_polydict\nsage: ring = MPolynomialRing_polydict(ZZ, 3, ['a','b','c'], \"lex\")\nsage: a = ring.gens()[0]\n\nsage: a<sup>(2</sup>31-1)\na^2147483647\n\nsage: a<sup>(2</sup>31)\na^-2147483648\n\nsage: a<sup>(2</sup>32)\n1\n\nIssue created by migration from https://trac.sagemath.org/ticket/6428\n\n",
+    "created_at": "2009-06-26T18:26:31Z",
+    "labels": [
+        "algebra",
+        "major",
+        "bug"
+    ],
+    "title": "Large exponents overflow to negative in polydict ring",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6428",
+    "user": "broune"
+}
+```
 Assignee: tbd
 
 Large exponents overflow to negative in polydict ring:
@@ -24,24 +34,61 @@ a^-2147483648
 sage: a<sup>(2</sup>32)
 1
 
+Issue created by migration from https://trac.sagemath.org/ticket/6428
+
+
+
+
 
 ---
 
-Comment by broune created at 2009-06-26 18:29:07
+archive/issue_comments_051619.json:
+```json
+{
+    "body": "Fixed layout.",
+    "created_at": "2009-06-26T18:29:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6428",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6428#issuecomment-51619",
+    "user": "broune"
+}
+```
 
 Fixed layout.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-11-15 13:14:19
+archive/issue_comments_051620.json:
+```json
+{
+    "body": "Changing component from algebra to commutative algebra.",
+    "created_at": "2009-11-15T13:14:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6428",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6428#issuecomment-51620",
+    "user": "AlexGhitza"
+}
+```
 
 Changing component from algebra to commutative algebra.
 
 
+
 ---
 
-Comment by was created at 2010-01-18 01:39:18
+archive/issue_comments_051621.json:
+```json
+{
+    "body": "This is still a bug.   Ick!\n\n\n```\nsage: R.<y,z> =Frac(QQ['x'])[]\nsage: y^(2^32)\n1\nsage: y^(2^32-1)\ny^-1\nsage: y^(2^31)\ny^-2147483648\n```\n",
+    "created_at": "2010-01-18T01:39:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6428",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6428#issuecomment-51621",
+    "user": "was"
+}
+```
 
 This is still a bug.   Ick!
 
@@ -58,9 +105,20 @@ y^-2147483648
 
 
 
+
 ---
 
-Comment by was created at 2010-01-18 09:59:31
+archive/issue_comments_051622.json:
+```json
+{
+    "body": "Here is better input to replicate what is at the core of the problem:\n\n```\nsage: a = sage.rings.polynomial.polydict.PolyDict({(2147483647r,):1r})\nsage: a*a\nPolyDict with representation {(-2,): 1}\n```\n",
+    "created_at": "2010-01-18T09:59:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6428",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6428#issuecomment-51622",
+    "user": "was"
+}
+```
 
 Here is better input to replicate what is at the core of the problem:
 
@@ -72,28 +130,74 @@ PolyDict with representation {(-2,): 1}
 
 
 
+
 ---
+
+archive/issue_comments_051623.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-01-18T10:19:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6428",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6428#issuecomment-51623",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2010-01-18 10:19:29
+archive/issue_comments_051624.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-01-18T10:19:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6428",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6428#issuecomment-51624",
+    "user": "was"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by broune created at 2010-01-18 18:58:53
+archive/issue_comments_051625.json:
+```json
+{
+    "body": "This patch simply reports an error if this happens. I thought the polydict ring was supposed to allow arbitrary precision exponents.",
+    "created_at": "2010-01-18T18:58:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6428",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6428#issuecomment-51625",
+    "user": "broune"
+}
+```
 
 This patch simply reports an error if this happens. I thought the polydict ring was supposed to allow arbitrary precision exponents.
 
 
+
 ---
 
-Comment by was created at 2010-01-18 22:35:52
+archive/issue_comments_051626.json:
+```json
+{
+    "body": "> This patch simply reports an error if this happens. I thought the polydict\n> ring was supposed to allow arbitrary precision exponents. \n\nSince in the entire Cython implementation of polydict, the exponents are represented internally as C ints there is no way it is supposed to represent arbitrary precision exponents.   One could write something that does arbitrary exponents, but that ETuple stuff simply isn't such a thing.",
+    "created_at": "2010-01-18T22:35:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6428",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6428#issuecomment-51626",
+    "user": "was"
+}
+```
 
 > This patch simply reports an error if this happens. I thought the polydict
 > ring was supposed to allow arbitrary precision exponents. 
@@ -101,9 +205,20 @@ Comment by was created at 2010-01-18 22:35:52
 Since in the entire Cython implementation of polydict, the exponents are represented internally as C ints there is no way it is supposed to represent arbitrary precision exponents.   One could write something that does arbitrary exponents, but that ETuple stuff simply isn't such a thing.
 
 
+
 ---
 
-Comment by was created at 2010-01-18 22:37:03
+archive/issue_comments_051627.json:
+```json
+{
+    "body": "By the way, for basic arithmetic, the symbolic ring supports arbitrary exponents. \n\n\n```\nsage: var('y')\ny\nsage: y^(2^32)\ny^4294967296\nsage: y^(2^50)\ny^1125899906842624\nsage: y^(2^50+y)\ny^(y + 1125899906842624)\n```\n",
+    "created_at": "2010-01-18T22:37:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6428",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6428#issuecomment-51627",
+    "user": "was"
+}
+```
 
 By the way, for basic arithmetic, the symbolic ring supports arbitrary exponents. 
 
@@ -121,36 +236,93 @@ y^(y + 1125899906842624)
 
 
 
+
 ---
+
+archive/issue_comments_051628.json:
+```json
+{
+    "body": "Attachment\n\nI added a new patch (to be applied instead of the old one) that also handles negative exponents. (The previous patch broke LaurentPolynomials).",
+    "created_at": "2010-01-21T00:32:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6428",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6428#issuecomment-51628",
+    "user": "wjp"
+}
+```
 
 Attachment
 
 I added a new patch (to be applied instead of the old one) that also handles negative exponents. (The previous patch broke LaurentPolynomials).
 
 
+
 ---
 
-Comment by spancratz created at 2010-01-21 00:57:18
+archive/issue_comments_051629.json:
+```json
+{
+    "body": "This now passes all doctests.",
+    "created_at": "2010-01-21T00:57:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6428",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6428#issuecomment-51629",
+    "user": "spancratz"
+}
+```
 
 This now passes all doctests.
 
 
+
 ---
 
-Comment by spancratz created at 2010-01-21 01:02:16
+archive/issue_comments_051630.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-01-21T01:02:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6428",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6428#issuecomment-51630",
+    "user": "spancratz"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mvngu created at 2010-01-23 09:05:39
+archive/issue_comments_051631.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-23T09:05:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6428",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6428#issuecomment-51631",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mvngu created at 2010-01-23 09:05:39
+archive/issue_comments_051632.json:
+```json
+{
+    "body": "Merged [6428_ETuple_overflow.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/6428/6428_ETuple_overflow.patch).",
+    "created_at": "2010-01-23T09:05:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6428",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6428#issuecomment-51632",
+    "user": "mvngu"
+}
+```
 
 Merged [6428_ETuple_overflow.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/6428/6428_ETuple_overflow.patch).

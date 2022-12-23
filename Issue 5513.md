@@ -1,11 +1,21 @@
 # Issue 5513: Enhanced support for number field unit groups
 
-Issue created by migration from https://trac.sagemath.org/ticket/5513
-
-Original creator: cremona
-
-Original creation time: 2009-03-13 22:02:06
-
+archive/issues_005513.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  davidloeffler\n\nKeywords: number field unit group\n\nThe attached patch (based on 3.4) implements a new class UnitGroup for the unit group of a number field.  As before, the units are computed using the pari library, but now it is easier (for example) to obtain all generators of the unit group.  Also, I have added a wrapping for the pari function bnfisunit() which implements a discrete log function to express any unit in terms of the generators.\n\nAs well as all the documented code and examples in unit_group.py there are added functions in number_field.py.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5513\n\n",
+    "created_at": "2009-03-13T22:02:06Z",
+    "labels": [
+        "number theory",
+        "major",
+        "enhancement"
+    ],
+    "title": "Enhanced support for number field unit groups",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5513",
+    "user": "cremona"
+}
+```
 Assignee: was
 
 CC:  davidloeffler
@@ -16,15 +26,43 @@ The attached patch (based on 3.4) implements a new class UnitGroup for the unit 
 
 As well as all the documented code and examples in unit_group.py there are added functions in number_field.py.
 
+Issue created by migration from https://trac.sagemath.org/ticket/5513
+
+
+
+
 
 ---
+
+archive/issue_comments_042821.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-03-14T20:36:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5513#issuecomment-42821",
+    "user": "cremona"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by fwclarke created at 2009-03-16 14:34:25
+archive/issue_comments_042822.json:
+```json
+{
+    "body": "This seems to work fine, with some exceptions for relative number fields.  \nFor example, with my current favourite extension,\n\n```\nPQ.<X> = QQ[]\nF.<a, b> = NumberField([X^2 - 2, X^2 - 3])\nPF.<Y> = F[]\nK.<c> = F.extension(Y^2 - (1 + a)*(a + b)*a*b)\nK.unit_group()\n```\n\nfails.\n\nBut the cause lies beyond this patch.  There are many problems with the\nexisting code for relative number fields, some addressed in my patch in\n#5508, others to follow soon in a revised patch.\n\nIn this case the culprit is the use of `pari_bnf` in the line `pK = K.pari_bnf(proof)` \nat line 145 of `unit_group.py`.  For in `pari_bnf`,\nthe lines\n\n```\nif self.polynomial().denominator() != 1:\n    raise TypeError, \"Unable to coerce number field defined by ...\"\n```\n  \nexclude extensions like `K`.  The solution is, of course, to use \n`self.absolute_polynomial()`; this change could be included \nin the patch.\n\nSo my review is positive, subject to some small changes listed below,\nwith the expectation that forthcoming changes to other functions will make\nthe code work for all (sufficiently small) relative number fields.\n\n## Minor points\n\n* Three times:\n   \"but we do use if it is already known\"\n   should surely be\n   \"but we do use it if it is already known\"\n\n* In `zeta`,\n   {{{\n           z = self.primitive_root_of_unity() ** (N//n)`\n   }}}\n  would be more consistently written as\n  {{{\n           z = K.primitive_root_of_unity() ** (N//n)`\n  }}}\n\n\n* In `roots_of_unity` \n   {{{\n           n = z.multiplicative_order()\n   }}}\n  would surely be better as\n  {{{\n           n = self.zeta_order()\n  }}}\n\n## Further remark\n\nWhile we're working on units, one thing that should be fixed is the \nfollowing:\n\n```\nsage: K.<b> = NumberField([x^2 - 3])\nsage: K.zeta(5)\nTraceback (most recent call last)\n...\nArithmeticError: There are no roots of unity of order 5 in this unit group\n```\n\ncompared to\n\n```\nsage: C.<z> = CyclotomicField(20)\nsage: C.zeta(7)\nTraceback (most recent call last)\n...\nValueError: n (=7) does not divide order of generator\n```\n\nThere seems to be no reason why the error type should be different, and I \nfound an example where a function failed for cyclotomic fields because of \nthis disparity.",
+    "created_at": "2009-03-16T14:34:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5513#issuecomment-42822",
+    "user": "fwclarke"
+}
+```
 
 This seems to work fine, with some exceptions for relative number fields.  
 For example, with my current favourite extension,
@@ -50,7 +88,8 @@ the lines
 ```
 if self.polynomial().denominator() != 1:
     raise TypeError, "Unable to coerce number field defined by ..."
-}}}  
+```
+  
 exclude extensions like `K`.  The solution is, of course, to use 
 `self.absolute_polynomial()`; this change could be included 
 in the patch.
@@ -61,76 +100,128 @@ the code work for all (sufficiently small) relative number fields.
 
 ## Minor points
 
-   * Three times:
-      "but we do use if it is already known"
-      should surely be
-      "but we do use it if it is already known"
+* Three times:
+   "but we do use if it is already known"
+   should surely be
+   "but we do use it if it is already known"
 
-   * In `zeta`,
-      {{{
-              z = self.primitive_root_of_unity() ** (N//n)`
-      }}}
-     would be more consistently written as
-     {{{
-              z = K.primitive_root_of_unity() ** (N//n)`
-     }}}
+* In `zeta`,
+   {{{
+           z = self.primitive_root_of_unity() ** (N//n)`
+   }}}
+  would be more consistently written as
+  {{{
+           z = K.primitive_root_of_unity() ** (N//n)`
+  }}}
 
 
-   * In `roots_of_unity` 
-      {{{
-              n = z.multiplicative_order()
-      }}}
-     would surely be better as
-     {{{
-              n = self.zeta_order()
-     }}}
+* In `roots_of_unity` 
+   {{{
+           n = z.multiplicative_order()
+   }}}
+  would surely be better as
+  {{{
+           n = self.zeta_order()
+  }}}
 
 ## Further remark
 
 While we're working on units, one thing that should be fixed is the 
 following:
-{{{
+
+```
 sage: K.<b> = NumberField([x^2 - 3])
 sage: K.zeta(5)
 Traceback (most recent call last)
 ...
 ArithmeticError: There are no roots of unity of order 5 in this unit group
-}}}
+```
+
 compared to
-{{{
+
+```
 sage: C.<z> = CyclotomicField(20)
 sage: C.zeta(7)
 Traceback (most recent call last)
 ...
 ValueError: n (=7) does not divide order of generator
-}}}
+```
+
 There seems to be no reason why the error type should be different, and I 
 found an example where a function failed for cyclotomic fields because of 
 this disparity.
 
 
+
 ---
 
-Comment by cremona created at 2009-03-16 14:49:15
+archive/issue_comments_042823.json:
+```json
+{
+    "body": "Thanks a lot Francis!  I will sort out those things and upload a new patch shortly.  John",
+    "created_at": "2009-03-16T14:49:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5513#issuecomment-42823",
+    "user": "cremona"
+}
+```
 
 Thanks a lot Francis!  I will sort out those things and upload a new patch shortly.  John
 
 
+
 ---
 
-Comment by cremona created at 2009-03-16 15:35:01
+archive/issue_comments_042824.json:
+```json
+{
+    "body": "REPLACES the earlier patch",
+    "created_at": "2009-03-16T15:35:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5513#issuecomment-42824",
+    "user": "cremona"
+}
+```
 
 REPLACES the earlier patch
 
 
+
 ---
+
+archive/issue_comments_042825.json:
+```json
+{
+    "body": "Attachment\n\nApply after the earlier patch",
+    "created_at": "2009-03-16T15:36:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5513#issuecomment-42825",
+    "user": "cremona"
+}
+```
 
 Attachment
 
 Apply after the earlier patch
 
 
+
 ---
+
+archive/issue_comments_042826.json:
+```json
+{
+    "body": "Attachment\n\nI have fixed all the issues raised in the review in the new patch trac_5513.patch.  I added a doctest in unit_group.py to show that the relative example now works.  I tested all in sage/rings/number_field.\n\nApologies for the confusion:  I thought that my new patch (called trac_5513.patch) replaced the origianl one because I was using mercurial queues, but (as usual) I was wrong.  You need to apply the original units.patch and then the new one (trac_5513.patch) which appear twice on trac, once with the worng message and once with the right one.  I hope that is clear.",
+    "created_at": "2009-03-16T15:38:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5513#issuecomment-42826",
+    "user": "cremona"
+}
+```
 
 Attachment
 
@@ -139,26 +230,61 @@ I have fixed all the issues raised in the review in the new patch trac_5513.patc
 Apologies for the confusion:  I thought that my new patch (called trac_5513.patch) replaced the origianl one because I was using mercurial queues, but (as usual) I was wrong.  You need to apply the original units.patch and then the new one (trac_5513.patch) which appear twice on trac, once with the worng message and once with the right one.  I hope that is clear.
 
 
+
 ---
 
-Comment by fwclarke created at 2009-03-16 20:08:52
+archive/issue_comments_042827.json:
+```json
+{
+    "body": "A couple more things: \n* two more replacements of `defining_polynomial` by `absolute_polynomial` are needed.\n\n* units can have norm -1.\n\nWith the third patch everything works.",
+    "created_at": "2009-03-16T20:08:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5513#issuecomment-42827",
+    "user": "fwclarke"
+}
+```
 
 A couple more things: 
-   * two more replacements of `defining_polynomial` by `absolute_polynomial` are needed.
+* two more replacements of `defining_polynomial` by `absolute_polynomial` are needed.
 
-   * units can have norm -1.
+* units can have norm -1.
 
 With the third patch everything works.
 
 
+
 ---
 
-Comment by fwclarke created at 2009-03-16 20:11:13
+archive/issue_comments_042828.json:
+```json
+{
+    "body": "apply after the other two",
+    "created_at": "2009-03-16T20:11:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5513#issuecomment-42828",
+    "user": "fwclarke"
+}
+```
 
 apply after the other two
 
 
+
 ---
+
+archive/issue_comments_042829.json:
+```json
+{
+    "body": "Attachment\n\nReplying to [comment:5 fwclarke]:\n> A couple more things: \n>    * two more replacements of `defining_polynomial` by `absolute_polynomial` are needed.\n> \n>    * units can have norm -1.\n> \n> With the third patch everything works.\n\nThanks a lot -- for what it's worth, I am (more than) happy with the third patch, also a little red-faced about the norms!",
+    "created_at": "2009-03-16T20:36:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5513#issuecomment-42829",
+    "user": "cremona"
+}
+```
 
 Attachment
 
@@ -173,9 +299,20 @@ Replying to [comment:5 fwclarke]:
 Thanks a lot -- for what it's worth, I am (more than) happy with the third patch, also a little red-faced about the norms!
 
 
+
 ---
 
-Comment by cremona created at 2009-03-16 20:42:27
+archive/issue_comments_042830.json:
+```json
+{
+    "body": "Replying to [comment:6 cremona]:\n> Replying to [comment:5 fwclarke]:\n> > A couple more things: \n> >    * two more replacements of `defining_polynomial` by `absolute_polynomial` are needed.\n> > \n> >    * units can have norm -1.\n> > \n> > With the third patch everything works.\n> \n> Thanks a lot -- for what it's worth, I am (more than) happy with the third patch, also a little red-faced about the norms!\n\nPS Francis, if yo ufancied looking at #5518 too you can have the satisfaction of adding .norm() in a similar place.  It's a lot simpler and shorter than this one.",
+    "created_at": "2009-03-16T20:42:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5513#issuecomment-42830",
+    "user": "cremona"
+}
+```
 
 Replying to [comment:6 cremona]:
 > Replying to [comment:5 fwclarke]:
@@ -191,9 +328,20 @@ Replying to [comment:6 cremona]:
 PS Francis, if yo ufancied looking at #5518 too you can have the satisfaction of adding .norm() in a similar place.  It's a lot simpler and shorter than this one.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-03-25 09:28:00
+archive/issue_comments_042831.json:
+```json
+{
+    "body": "This patch set no longer applies after merging #5508.\n\nFrancis: Can you rebase this patch set? Once it is rebased the positive review should be reinstated provided the changes are minimal, otherwise we should have another review.\n\nCheers,\n\nMichael",
+    "created_at": "2009-03-25T09:28:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5513#issuecomment-42831",
+    "user": "mabshoff"
+}
+```
 
 This patch set no longer applies after merging #5508.
 
@@ -204,9 +352,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-03-25 09:29:02
+archive/issue_comments_042832.json:
+```json
+{
+    "body": "Ooops, I guess John should do the rebase here :)\n\nCheers,\n\nMichael",
+    "created_at": "2009-03-25T09:29:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5513#issuecomment-42832",
+    "user": "mabshoff"
+}
+```
 
 Ooops, I guess John should do the rebase here :)
 
@@ -215,44 +374,114 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by cremona created at 2009-03-28 16:31:16
+archive/issue_comments_042833.json:
+```json
+{
+    "body": "Replaces all above, reabsed to 3.4 + sage-5508.3.patch",
+    "created_at": "2009-03-28T16:31:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5513#issuecomment-42833",
+    "user": "cremona"
+}
+```
 
 Replaces all above, reabsed to 3.4 + sage-5508.3.patch
 
 
+
 ---
+
+archive/issue_comments_042834.json:
+```json
+{
+    "body": "Attachment\n\nI have attached a single patch which replaces all previous ones and is rebased on 3.4 + sage-5508.3.patch, as requested.",
+    "created_at": "2009-03-28T16:33:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5513#issuecomment-42834",
+    "user": "cremona"
+}
+```
 
 Attachment
 
 I have attached a single patch which replaces all previous ones and is rebased on 3.4 + sage-5508.3.patch, as requested.
 
 
+
 ---
 
-Comment by fwclarke created at 2009-03-29 19:58:14
+archive/issue_comments_042835.json:
+```json
+{
+    "body": "Looks fine to me.  Positive review.",
+    "created_at": "2009-03-29T19:58:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5513#issuecomment-42835",
+    "user": "fwclarke"
+}
+```
 
 Looks fine to me.  Positive review.
 
 
+
 ---
 
-Comment by cremona created at 2009-03-30 09:02:42
+archive/issue_comments_042836.json:
+```json
+{
+    "body": "Alternaitve, rebased to 3.4 + #550 + #5159",
+    "created_at": "2009-03-30T09:02:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5513#issuecomment-42836",
+    "user": "cremona"
+}
+```
 
 Alternaitve, rebased to 3.4 + #550 + #5159
 
 
+
 ---
+
+archive/issue_comments_042837.json:
+```json
+{
+    "body": "Attachment\n\nThanks, Francis.   For ease of merging I have also provided another rebased patch which applies to 3.4 + sage-5508.3.patch + the patches at #5159 since I hope/expect that one to be merged shortly and now the whole lot are compatible.",
+    "created_at": "2009-03-30T09:05:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5513#issuecomment-42837",
+    "user": "cremona"
+}
+```
 
 Attachment
 
 Thanks, Francis.   For ease of merging I have also provided another rebased patch which applies to 3.4 + sage-5508.3.patch + the patches at #5159 since I hope/expect that one to be merged shortly and now the whole lot are compatible.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-03-31 07:47:18
+archive/issue_comments_042838.json:
+```json
+{
+    "body": "[CCing David]\n\nI am waiting to see if #5159 will have all its issues fixed in the next 12 to 24 hours, otherwise I will merge the rebased patch that only depends on 3.4 + #5508.\n\nCheers,\n\nMichael",
+    "created_at": "2009-03-31T07:47:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5513#issuecomment-42838",
+    "user": "mabshoff"
+}
+```
 
 [CCing David]
 
@@ -263,9 +492,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-03-31 08:06:23
+archive/issue_comments_042839.json:
+```json
+{
+    "body": "units_rebase.patch by itself does not apply for me to 3.4.1.alpha0 (which includes #5508), so I am waiting on #5159 to go in before trying again. Does this patch depend on anything else?\n\nCheers,\n\nMichael",
+    "created_at": "2009-03-31T08:06:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5513#issuecomment-42839",
+    "user": "mabshoff"
+}
+```
 
 units_rebase.patch by itself does not apply for me to 3.4.1.alpha0 (which includes #5508), so I am waiting on #5159 to go in before trying again. Does this patch depend on anything else?
 
@@ -274,9 +514,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by cremona created at 2009-03-31 08:11:32
+archive/issue_comments_042840.json:
+```json
+{
+    "body": "Replying to [comment:14 mabshoff]:\n> units_rebase.patch by itself does not apply for me to 3.4.1.alpha0 (which includes #5508), so I am waiting on #5159 to go in before trying again. Does this patch depend on anything else?\n\nIt shouldn't do, but I did not have a working 3.4.1.alpha0 until late yesterday.  I'll look into that right now, as well as #5159.\n\n> \n> Cheers,\n> \n> Michael",
+    "created_at": "2009-03-31T08:11:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5513#issuecomment-42840",
+    "user": "cremona"
+}
+```
 
 Replying to [comment:14 mabshoff]:
 > units_rebase.patch by itself does not apply for me to 3.4.1.alpha0 (which includes #5508), so I am waiting on #5159 to go in before trying again. Does this patch depend on anything else?
@@ -289,9 +540,20 @@ It shouldn't do, but I did not have a working 3.4.1.alpha0 until late yesterday.
 > Michael
 
 
+
 ---
 
-Comment by cremona created at 2009-03-31 08:43:00
+archive/issue_comments_042841.json:
+```json
+{
+    "body": "I cloned a freshly built 3.4.1.alpha0 and (using hg_sage.apply()) successfully applied units_rebase.patch to it.  No warnings.  No problems with sage -br.   BUT then doing sage -t on sage/rings/number_field threw up a large number of very weird errors I have never seen before:  example:\n\n```\n\nsage -t  \"local/sage-3.4.1.alpha0/devel/sage-5513a/sage/rings/number_field/number_field.py\"\n  File \"./number_field.py\", line 18\n    from local/sage-3.4.1.alpha0/devel/sage-5513a/sage/rings/number_field/number_field import *\n              ^\nSyntaxError: invalid syntax\n\n         [0.4 s]\nexit code: 1024\n\n```\n\n\nWhat is that about?   Something seems to have inserts forward slashes into a python file instead of dots.",
+    "created_at": "2009-03-31T08:43:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5513#issuecomment-42841",
+    "user": "cremona"
+}
+```
 
 I cloned a freshly built 3.4.1.alpha0 and (using hg_sage.apply()) successfully applied units_rebase.patch to it.  No warnings.  No problems with sage -br.   BUT then doing sage -t on sage/rings/number_field threw up a large number of very weird errors I have never seen before:  example:
 
@@ -312,25 +574,47 @@ exit code: 1024
 What is that about?   Something seems to have inserts forward slashes into a python file instead of dots.
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-03-31 08:46:52
+archive/issue_comments_042842.json:
+```json
+{
+    "body": "I've been seeing this too: there's been some changes in the doctesting mechanism in 3.4.1.alpha0 that seem to have broken it almost completely.",
+    "created_at": "2009-03-31T08:46:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5513#issuecomment-42842",
+    "user": "davidloeffler"
+}
+```
 
 I've been seeing this too: there's been some changes in the doctesting mechanism in 3.4.1.alpha0 that seem to have broken it almost completely.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-03-31 09:12:12
+archive/issue_comments_042843.json:
+```json
+{
+    "body": "Replying to [comment:17 davidloeffler]:\n> I've been seeing this too: there's been some changes in the doctesting mechanism in 3.4.1.alpha0 that seem to have broken it almost completely. \n\nI cannot reproduce this - but I did not try to apply this patch set. What I tried:\n\n* use -tp\n* use -t from inside the Sage tree\n* use -t from outside the Sage tree\n\nCan someone give me exact instructions on how to reproduce this?\n\nCheers,\n\nMichael",
+    "created_at": "2009-03-31T09:12:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5513#issuecomment-42843",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:17 davidloeffler]:
 > I've been seeing this too: there's been some changes in the doctesting mechanism in 3.4.1.alpha0 that seem to have broken it almost completely. 
 
 I cannot reproduce this - but I did not try to apply this patch set. What I tried:
 
- * use -tp
- * use -t from inside the Sage tree
- * use -t from outside the Sage tree
+* use -tp
+* use -t from inside the Sage tree
+* use -t from outside the Sage tree
 
 Can someone give me exact instructions on how to reproduce this?
 
@@ -339,9 +623,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-03-31 09:13:31
+archive/issue_comments_042844.json:
+```json
+{
+    "body": "Can you try reverting #2129 and see if the problem goes away? That seem to be the only patch I would suspect here to cause trouble.\n\nCheers,\n\nMichael",
+    "created_at": "2009-03-31T09:13:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5513#issuecomment-42844",
+    "user": "mabshoff"
+}
+```
 
 Can you try reverting #2129 and see if the problem goes away? That seem to be the only patch I would suspect here to cause trouble.
 
@@ -350,16 +645,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-03-31 09:44:05
+archive/issue_comments_042845.json:
+```json
+{
+    "body": "I have posted in sage-devel about this. The problem comes up when you use sage -t from within the sage tree.",
+    "created_at": "2009-03-31T09:44:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5513#issuecomment-42845",
+    "user": "davidloeffler"
+}
+```
 
 I have posted in sage-devel about this. The problem comes up when you use sage -t from within the sage tree.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-03-31 09:56:12
+archive/issue_comments_042846.json:
+```json
+{
+    "body": "Using units_rebased2.patch there are a bunch of probably 32 vs. 64 bit doctest failures:\n\n```\nsage -t -long devel/sage/sage/rings/number_field/unit_group.py\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.rc0/devel/sage-main/sage/rings/number_field/unit_group.py\", line 11:\n    sage: UK.gens()\nExpected:\n    [1/12*a^3 - 1/6*a, 1/24*a^3 + 1/4*a^2 - 1/12*a - 1]\nGot:\n    [1/12*a^3 - 1/6*a, 1/24*a^3 - 7/12*a - 1/2]\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.rc0/devel/sage-main/sage/rings/number_field/unit_group.py\", line 31:\n    sage: UK.fundamental_units()\nExpected:\n    [1/24*a^3 + 1/4*a^2 - 1/12*a - 1]\nGot:\n    [1/24*a^3 - 7/12*a - 1/2]\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.rc0/devel/sage-main/sage/rings/number_field/unit_group.py\", line 43:\n    sage: u = UK.exp([13,10]); u\nExpected:\n    -41/8*a^3 - 55/4*a^2 + 41/4*a + 55\nGot:\n    41/8*a^3 + 55/4*a^2 - 41/4*a - 55\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.rc0/devel/sage-main/sage/rings/number_field/unit_group.py\", line 64:\n    sage: UL.gens()\nExpected:\n    [-b^3*a - b^3, -b^3*a + b, (-b^3 - b^2 - b)*a - b - 1, (-b^3 - 1)*a - b^2 + b - 1]\nGot:\n    [-b^3*a - b^3, -b^3*a + b, a - b^3 + 1, (-b^2 - b)*a - b^3 - b^2 + 1]\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.rc0/devel/sage-main/sage/rings/number_field/unit_group.py\", line 374:\n    sage: U.torsion_generator()\nExpected:\n    -1/4*a^3 - 1/4*a + 1/2\nGot:\n    1/4*a^3 + 1/4*a + 1/2\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.rc0/devel/sage-main/sage/rings/number_field/unit_group.py\", line 164:\n    sage: UK.gens()\nExpected:\n    [-z^11, z^5 + z^3, z^6 + z^5, z^9 + z^7 + z^5, z^9 + z^5 + z^4 + 1, z^5 + z]\nGot:\n    [-z^3, z^5 + z^3, z^6 + z^5, z^9 + z^7 + z^5, z^9 + z^5 + z^4 + 1, z^5 + z]\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.rc0/devel/sage-main/sage/rings/number_field/unit_group.py\", line 303:\n    sage: UK.gen(0)\nExpected:\n    -z^11\nGot:\n    -z^3\n**********************************************************************\n4 items had failures:\n   4 of  35 in __main__.example_0\n   1 of   6 in __main__.example_12\n   1 of  12 in __main__.example_2\n   1 of  11 in __main__.example_8\n***Test Failed*** 7 failures.\nFor whitespace errors, see the file /scratch/mabshoff/sage-3.4.1.rc0/tmp/.doctest_unit_group.py\n\t [2.0 s]\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2009-03-31T09:56:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5513#issuecomment-42846",
+    "user": "mabshoff"
+}
+```
 
 Using units_rebased2.patch there are a bunch of probably 32 vs. 64 bit doctest failures:
 
@@ -431,14 +748,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by cremona created at 2009-03-31 09:59:51
+archive/issue_comments_042847.json:
+```json
+{
+    "body": "replace previous",
+    "created_at": "2009-03-31T09:59:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5513#issuecomment-42847",
+    "user": "cremona"
+}
+```
 
 replace previous
 
 
+
 ---
+
+archive/issue_comments_042848.json:
+```json
+{
+    "body": "Attachment\n\nok -- see newest patch (units_rebased3.patch, to replace units_rebased2.patch).\n\nI took the lazy way out and added #random to all the outputs which return actual units.  It may be a 32/64 issue, but not just that since when testing this patch on one machine I kept on getting different generating units out of pari.  I seem to remember that there is a way to \"reset\" pari in doctests  to avoid this random-ness.\n\nMathematically this is not so unreasonable since any f.g. abelian group will lots (infinitely many) sets of generators and there is no way to pick one canonically.  (William and I thought about this for elliptic curve generators and came up against an unsolved problem which prevents this being possible even in principle!).",
+    "created_at": "2009-03-31T10:04:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5513#issuecomment-42848",
+    "user": "cremona"
+}
+```
 
 Attachment
 
@@ -449,9 +790,20 @@ I took the lazy way out and added #random to all the outputs which return actual
 Mathematically this is not so unreasonable since any f.g. abelian group will lots (infinitely many) sets of generators and there is no way to pick one canonically.  (William and I thought about this for elliptic curve generators and came up against an unsolved problem which prevents this being possible even in principle!).
 
 
+
 ---
 
-Comment by cremona created at 2009-04-02 09:42:22
+archive/issue_comments_042849.json:
+```json
+{
+    "body": "Replying to [comment:22 cremona]:\n> ok -- see newest patch (units_rebased3.patch, to replace units_rebased2.patch).\n> \n> I took the lazy way out and added #random to all the outputs which return actual units.  It may be a 32/64 issue, but not just that since when testing this patch on one machine I kept on getting different generating units out of pari.  I seem to remember that there is a way to \"reset\" pari in doctests  to avoid this random-ness.\n> \n> Mathematically this is not so unreasonable since any f.g. abelian group will lots (infinitely many) sets of generators and there is no way to pick one canonically.  (William and I thought about this for elliptic curve generators and came up against an unsolved problem which prevents this being possible even in principle!).\n\nMichael,\n\nsince all I did here was to add #random to the problem tests, does this need more review or could it be merged now?",
+    "created_at": "2009-04-02T09:42:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5513#issuecomment-42849",
+    "user": "cremona"
+}
+```
 
 Replying to [comment:22 cremona]:
 > ok -- see newest patch (units_rebased3.patch, to replace units_rebased2.patch).
@@ -465,9 +817,20 @@ Michael,
 since all I did here was to add #random to the problem tests, does this need more review or could it be merged now?
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-03 00:43:54
+archive/issue_comments_042850.json:
+```json
+{
+    "body": "John,\n\nWilliam has given his \"thumbs up\" to this patch and the latest changes, so let's make this a positive review. This patch also passes doctests with my current 3.4.1.rc0 merge tree.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-03T00:43:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5513#issuecomment-42850",
+    "user": "mabshoff"
+}
+```
 
 John,
 
@@ -478,16 +841,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-03 00:45:04
+archive/issue_comments_042851.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-04-03T00:45:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5513#issuecomment-42851",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-03 00:45:04
+archive/issue_comments_042852.json:
+```json
+{
+    "body": "Merged units_rebased3.patch in Sage 3.4.1.rc0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-03T00:45:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5513#issuecomment-42852",
+    "user": "mabshoff"
+}
+```
 
 Merged units_rebased3.patch in Sage 3.4.1.rc0.
 

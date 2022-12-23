@@ -1,11 +1,21 @@
 # Issue 3451: inaccurate error message in scheme morphisms
 
-Issue created by migration from https://trac.sagemath.org/ticket/3451
-
-Original creator: moretti
-
-Original creation time: 2008-06-17 22:17:24
-
+archive/issues_003451.json:
+```json
+{
+    "body": "Assignee: moretti\n\nCC:  alexghitza\n\nKeywords: affine, scheme, morphism\n\n\n```\nR.<x,y> = QQ[]\nA = AffineSpace(R)\nH = A.Hom(A)\nf = H([x-y, x*y])\nf([0,1])\nTraceback (click to the left for traceback)\n...\nTypeError: x (=[0, 1]) must be a projective point given by coordinates\n```\n\n\nWhen of course the error message should say that x must be an affine point...\n\nThe fix would be trivial, but would it be acceptable to make scheme morphisms try converting their input to elements of their domain, first, so that the above would not raise an error?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3451\n\n",
+    "created_at": "2008-06-17T22:17:24Z",
+    "labels": [
+        "algebraic geometry",
+        "trivial",
+        "bug"
+    ],
+    "title": "inaccurate error message in scheme morphisms",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3451",
+    "user": "moretti"
+}
+```
 Assignee: moretti
 
 CC:  alexghitza
@@ -30,53 +40,136 @@ When of course the error message should say that x must be an affine point...
 The fix would be trivial, but would it be acceptable to make scheme morphisms try converting their input to elements of their domain, first, so that the above would not raise an error?
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3451
+
+
+
+
 
 ---
+
+archive/issue_comments_024335.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-08-27T08:54:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3451",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3451#issuecomment-24335",
+    "user": "AlexGhitza"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by AlexGhitza created at 2008-08-27 08:55:08
+archive/issue_comments_024336.json:
+```json
+{
+    "body": "I have changed things in the following way: if we try to evaluate f(p), then the first step is to coerce p into the domain of f.  If that works, then the evaluation goes forth.  Otherwise, there is of course an error message saying that p has no business being there in the first place.\n\nThe change is in the generic scheme morphism code, so it should work for affine spaces, projective spaces, and whatever else inherits from schemes.",
+    "created_at": "2008-08-27T08:55:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3451",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3451#issuecomment-24336",
+    "user": "AlexGhitza"
+}
+```
 
 I have changed things in the following way: if we try to evaluate f(p), then the first step is to coerce p into the domain of f.  If that works, then the evaluation goes forth.  Otherwise, there is of course an error message saying that p has no business being there in the first place.
 
 The change is in the generic scheme morphism code, so it should work for affine spaces, projective spaces, and whatever else inherits from schemes.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2008-09-01 09:15:23
+archive/issue_comments_024337.json:
+```json
+{
+    "body": "Changing assignee from moretti to AlexGhitza.",
+    "created_at": "2008-09-01T09:15:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3451",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3451#issuecomment-24337",
+    "user": "AlexGhitza"
+}
+```
 
 Changing assignee from moretti to AlexGhitza.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2008-09-01 10:04:03
+archive/issue_comments_024338.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-09-01T10:04:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3451",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3451#issuecomment-24338",
+    "user": "AlexGhitza"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by cremona created at 2008-09-01 19:50:22
+archive/issue_comments_024339.json:
+```json
+{
+    "body": "Looks ok to me.  I see that you are relying on whatever error message is produced by \"dom(x)\" in case x cannot be coerced into dom rather than supplying your own, of the form \"... cannot be coerced into the domain\", but that is ok.\n\nPatch applies cleanly to 3.1.2.alpha3 and all doctests in sage.schemes.generic pass.",
+    "created_at": "2008-09-01T19:50:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3451",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3451#issuecomment-24339",
+    "user": "cremona"
+}
+```
 
 Looks ok to me.  I see that you are relying on whatever error message is produced by "dom(x)" in case x cannot be coerced into dom rather than supplying your own, of the form "... cannot be coerced into the domain", but that is ok.
 
 Patch applies cleanly to 3.1.2.alpha3 and all doctests in sage.schemes.generic pass.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-02 11:46:39
+archive/issue_comments_024340.json:
+```json
+{
+    "body": "Merged in Sage 3.1.2.alpha4",
+    "created_at": "2008-09-02T11:46:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3451",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3451#issuecomment-24340",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.1.2.alpha4
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-02 11:46:39
+archive/issue_comments_024341.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-09-02T11:46:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3451",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3451#issuecomment-24341",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

@@ -1,38 +1,98 @@
 # Issue 8847: pynac.pyx use double precision special functions instead of long double
 
-Issue created by migration from https://trac.sagemath.org/ticket/8847
-
-Original creator: mhansen
-
-Original creation time: 2010-05-03 12:18:24
-
+archive/issues_008847.json:
+```json
+{
+    "body": "Assignee: tbd\n\nMany systems such as cygwin don't have the long double version.  Plus, they are being applied to floats/doubles so the extra precision doesn't buy much.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8847\n\n",
+    "created_at": "2010-05-03T12:18:24Z",
+    "labels": [
+        "porting: Cygwin",
+        "major",
+        "bug"
+    ],
+    "title": "pynac.pyx use double precision special functions instead of long double",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8847",
+    "user": "mhansen"
+}
+```
 Assignee: tbd
 
 Many systems such as cygwin don't have the long double version.  Plus, they are being applied to floats/doubles so the extra precision doesn't buy much.
 
+Issue created by migration from https://trac.sagemath.org/ticket/8847
+
+
+
+
 
 ---
+
+archive/issue_comments_081330.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-05-03T13:22:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8847",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8847#issuecomment-81330",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2010-05-03 13:22:32
+archive/issue_comments_081331.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-05-03T13:22:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8847",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8847#issuecomment-81331",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by burcin created at 2010-05-05 02:26:30
+archive/issue_comments_081332.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-05-05T02:26:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8847",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8847#issuecomment-81332",
+    "user": "burcin"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by burcin created at 2010-05-05 02:26:30
+archive/issue_comments_081333.json:
+```json
+{
+    "body": "This gives the following doctest failures on my 64-bit T9300 Core 2 Duo laptop, with `gcc (Gentoo 4.3.4 p1.0, pie-10.1.5) 4.3.4` and glibc-2.10.1. I have no idea what is relevant, so I give some random information. :)\n\n\n```\n**********************************************************************\nFile \"/home/burcin/sage/sage-4.4.1.alpha2-patched/devel/sage-t/sage/functions/other.py\", line 428:\n    sage: gamma1(float(6))\nExpected:\n    120.0\nGot:\n    119.99999999999997\n**********************************************************************\n```\n\n\n```\n**********************************************************************\nFile \"/home/burcin/sage/sage-4.4.1.alpha2-patched/devel/sage-t/sage/symbolic/expression.pyx\", line 5318:\n    sage: SR(10.0r).gamma()\nExpected:\n    362880.0\nGot:\n    362880.00000000047\n**********************************************************************\n```\n",
+    "created_at": "2010-05-05T02:26:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8847",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8847#issuecomment-81333",
+    "user": "burcin"
+}
+```
 
 This gives the following doctest failures on my 64-bit T9300 Core 2 Duo laptop, with `gcc (Gentoo 4.3.4 p1.0, pie-10.1.5) 4.3.4` and glibc-2.10.1. I have no idea what is relevant, so I give some random information. :)
 
@@ -62,60 +122,163 @@ Got:
 
 
 
+
 ---
 
-Comment by burcin created at 2010-05-05 02:26:30
+archive/issue_comments_081334.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"pynac\".",
+    "created_at": "2010-05-05T02:26:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8847",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8847#issuecomment-81334",
+    "user": "burcin"
+}
+```
 
 Changing keywords from "" to "pynac".
 
 
+
 ---
 
-Comment by mhansen created at 2010-05-05 02:29:49
+archive/issue_comments_081335.json:
+```json
+{
+    "body": "It'd be nice if we could just do like an ifdef in Cython.",
+    "created_at": "2010-05-05T02:29:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8847",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8847#issuecomment-81335",
+    "user": "mhansen"
+}
+```
 
 It'd be nice if we could just do like an ifdef in Cython.
 
 
+
 ---
 
-Comment by burcin created at 2010-05-05 02:33:45
+archive/issue_comments_081336.json:
+```json
+{
+    "body": "We can put the ifdef in `c_lib/include/ginac_wrapper.h` to define the long double versions on Cygwin. Initially, they could just wrap the double precision functions.",
+    "created_at": "2010-05-05T02:33:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8847",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8847#issuecomment-81336",
+    "user": "burcin"
+}
+```
 
 We can put the ifdef in `c_lib/include/ginac_wrapper.h` to define the long double versions on Cygwin. Initially, they could just wrap the double precision functions.
 
 
+
 ---
 
-Comment by was created at 2010-05-26 01:39:58
+archive/issue_comments_081337.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-05-26T01:39:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8847",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8847#issuecomment-81337",
+    "user": "was"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by was created at 2010-05-26 01:39:58
+archive/issue_comments_081338.json:
+```json
+{
+    "body": "I just did something at runtime using a bint.  It's very simple, and will have a very minimal performance hit.",
+    "created_at": "2010-05-26T01:39:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8847",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8847#issuecomment-81338",
+    "user": "was"
+}
+```
 
 I just did something at runtime using a bint.  It's very simple, and will have a very minimal performance hit.
 
 
+
 ---
 
-Comment by was created at 2010-05-26 01:41:03
+archive/issue_comments_081339.json:
+```json
+{
+    "body": "apply only this (not the one below)",
+    "created_at": "2010-05-26T01:41:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8847",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8847#issuecomment-81339",
+    "user": "was"
+}
+```
 
 apply only this (not the one below)
 
 
+
 ---
+
+archive/issue_comments_081340.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-05-26T02:19:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8847",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8847#issuecomment-81340",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_081341.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-05-26T02:50:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8847",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8847#issuecomment-81341",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2010-05-26 02:52:08
+archive/issue_comments_081342.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-05-26T02:52:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8847",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8847#issuecomment-81342",
+    "user": "was"
+}
+```
 
 Resolution: fixed

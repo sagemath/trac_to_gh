@@ -1,11 +1,21 @@
 # Issue 7604: Bug in continued fractions module (contfrac).  Patch attached
 
-Issue created by migration from https://trac.sagemath.org/ticket/7604
-
-Original creator: solevillar
-
-Original creation time: 2009-12-04 16:37:52
-
+archive/issues_007604.json:
+```json
+{
+    "body": "Assignee: AlexGhitza\n\nCC:  solevillar@gmail.com\n\nKeywords: contfrac\n\nI've found this bug in the contfrac module:\n\n\n```\nsage: a=continued_fraction(sqrt(2))\nsage: a.qn(0)\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"_sage_input_4.py\", line 5, in <module>\n    a.qn(_sage_const_0 )\n  File \"\", line 1, in <module>\n    \n  File \"/usr/local/sage/local/lib/python2.6/site-packages/sage/rings/contfrac.py\", line 461, in qn\n    if len(self.__qn) < n+3:\nAttributeError: 'ContinuedFraction' object has no attribute '_ContinuedFraction__qn'\n```\n\n\nBut this actually works:\n\n```\nsage: a=continued_fraction(sqrt(2))\nsage: b=a.pn(0)\nsage: a.qn(0)\n1\n```\n\n\n\nThat's because the method contfrac.pn initializes the attributes pn and qn so if you call contfrac.qn before calling contfrac.pn the attribute qn wont be initialized and that's why it doesn't work in the first snippet.\n\nI wrote a patch that solves this problem (minor changes, very easy to solve). I'm attaching that patch.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7604\n\n",
+    "created_at": "2009-12-04T16:37:52Z",
+    "labels": [
+        "algebra",
+        "minor",
+        "bug"
+    ],
+    "title": "Bug in continued fractions module (contfrac).  Patch attached",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7604",
+    "user": "solevillar"
+}
+```
 Assignee: AlexGhitza
 
 CC:  solevillar@gmail.com
@@ -46,29 +56,79 @@ That's because the method contfrac.pn initializes the attributes pn and qn so if
 I wrote a patch that solves this problem (minor changes, very easy to solve). I'm attaching that patch.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7604
+
+
+
+
 
 ---
 
-Comment by solevillar created at 2009-12-04 16:39:53
+archive/issue_comments_064874.json:
+```json
+{
+    "body": "patch for contfrac module",
+    "created_at": "2009-12-04T16:39:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7604",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7604#issuecomment-64874",
+    "user": "solevillar"
+}
+```
 
 patch for contfrac module
 
 
+
 ---
 
-Comment by solevillar created at 2009-12-04 16:42:14
+archive/issue_comments_064875.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-12-04T16:42:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7604",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7604#issuecomment-64875",
+    "user": "solevillar"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_064876.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-12-04T16:42:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7604",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7604#issuecomment-64876",
+    "user": "solevillar"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by fwclarke created at 2009-12-05 12:48:31
+archive/issue_comments_064877.json:
+```json
+{
+    "body": "There are several problems:\n\n1.  The attachment is not actually a patch but a new version of the `contfrac.py` file.\n\n2.  The change to `is_field` to remove the optional parameter `proof=True` is unhelpful since every other instance of `is_field` has the argument proof, and Sage contains code which uses this argument and will crash without it.\n\n3.  At lines 456-457 the line n = ZZ(n) has been duplicated.  In fact this line is not needed at all.\n\n4.  The correction of the bug is a bit more complicated than necessary.\n\nI have attached a patch which deals with the bug, and have made a minor change to a doctest so that it would have detected the bug.",
+    "created_at": "2009-12-05T12:48:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7604",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7604#issuecomment-64877",
+    "user": "fwclarke"
+}
+```
 
 There are several problems:
 
@@ -83,14 +143,38 @@ There are several problems:
 I have attached a patch which deals with the bug, and have made a minor change to a doctest so that it would have detected the bug.
 
 
+
 ---
 
-Comment by fwclarke created at 2009-12-05 12:49:55
+archive/issue_comments_064878.json:
+```json
+{
+    "body": "Use instead",
+    "created_at": "2009-12-05T12:49:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7604",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7604#issuecomment-64878",
+    "user": "fwclarke"
+}
+```
 
 Use instead
 
 
+
 ---
+
+archive/issue_comments_064879.json:
+```json
+{
+    "body": "Attachment\n\nLooks good to me.\n\nsolevillar`@`gmail.com, could we get your name for the release notes?  Or, you could updated the Authors field on this ticket.  Thanks!",
+    "created_at": "2009-12-07T08:12:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7604",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7604#issuecomment-64879",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
@@ -99,8 +183,19 @@ Looks good to me.
 solevillar`@`gmail.com, could we get your name for the release notes?  Or, you could updated the Authors field on this ticket.  Thanks!
 
 
+
 ---
 
-Comment by mhansen created at 2009-12-07 08:12:11
+archive/issue_comments_064880.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-12-07T08:12:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7604",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7604#issuecomment-64880",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

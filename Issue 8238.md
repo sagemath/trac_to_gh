@@ -1,51 +1,120 @@
 # Issue 8238: heegner_index_bound may be incorrect for curves with rational torsion
 
-Issue created by migration from https://trac.sagemath.org/ticket/8238
-
-Original creator: rlm
-
-Original creation time: 2010-02-11 19:10:09
-
+archive/issues_008238.json:
+```json
+{
+    "body": "Assignee: cremona\n\nCC:  was\n\nResult of a recent conversation with William Stein.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8238\n\n",
+    "created_at": "2010-02-11T19:10:09Z",
+    "labels": [
+        "elliptic curves",
+        "major",
+        "bug"
+    ],
+    "title": "heegner_index_bound may be incorrect for curves with rational torsion",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8238",
+    "user": "rlm"
+}
+```
 Assignee: cremona
 
 CC:  was
 
 Result of a recent conversation with William Stein.
 
+Issue created by migration from https://trac.sagemath.org/ticket/8238
+
+
+
+
 
 ---
 
-Comment by rlm created at 2010-02-12 09:14:59
+archive/issue_comments_072780.json:
+```json
+{
+    "body": "I need to fix this to use `two_torsion_rank` instead of `torsion_order`... tomorrow!",
+    "created_at": "2010-02-12T09:14:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8238",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8238#issuecomment-72780",
+    "user": "rlm"
+}
+```
 
 I need to fix this to use `two_torsion_rank` instead of `torsion_order`... tomorrow!
 
 
+
 ---
 
-Comment by rlm created at 2010-02-14 20:29:45
+archive/issue_comments_072781.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-02-14T20:29:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8238",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8238#issuecomment-72781",
+    "user": "rlm"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by wuthrich created at 2010-02-15 12:50:18
+archive/issue_comments_072782.json:
+```json
+{
+    "body": "I wouldn't mind reviewing this, but I am probably not the right person to do so, since I don't really understand what it changes. Would it be good to have a test example included to illustrate the change.\n\nAlso in 4.3.3.alpha0 I get a test error in heegner.py, which wuld make my review useless.Sorry.",
+    "created_at": "2010-02-15T12:50:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8238",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8238#issuecomment-72782",
+    "user": "wuthrich"
+}
+```
 
 I wouldn't mind reviewing this, but I am probably not the right person to do so, since I don't really understand what it changes. Would it be good to have a test example included to illustrate the change.
 
 Also in 4.3.3.alpha0 I get a test error in heegner.py, which wuld make my review useless.Sorry.
 
 
+
 ---
 
-Comment by was created at 2010-04-19 06:38:13
+archive/issue_comments_072783.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-04-19T06:38:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8238",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8238#issuecomment-72783",
+    "user": "was"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by was created at 2010-04-19 06:38:13
+archive/issue_comments_072784.json:
+```json
+{
+    "body": "Robert,\n\nI think the point of this patch is to change the function so it is no longer off by factors of 2 by default. \nNote that the documentation, even after applying your patch, says:\n\n```\n    r\"\"\"\n    Return an interval that contains the index of the Heegner\n    point `y_K` in the group of `K`-rational points modulo torsion\n    on this elliptic curve, computed using the Gross-Zagier\n    formula and/or a point search, or the index divided by `2`.\n\n    .. note::\n\n       If ``min_p`` is bigger than 2 then the index can be off by\n       any prime less than ``min_p``. This function returns the\n       index divided by `2` exactly when the rank of `E(K)` is\n       greater than 1 and `E(\\QQ)_{/tor} \\oplus E^D(\\QQ)_{/tor}`\n       has index `2` in `E(K)_{/tor}`, where the second factor\n       undergoes a twist.\n```\n\n\nIf you've really fixed the \"factor of 2\" issue, as it seems you have, then the documentation should be changed to reflect this.  Moreover, this is an enhancement, rather than a bug fix.",
+    "created_at": "2010-04-19T06:38:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8238",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8238#issuecomment-72784",
+    "user": "was"
+}
+```
 
 Robert,
 
@@ -73,45 +142,100 @@ Note that the documentation, even after applying your patch, says:
 If you've really fixed the "factor of 2" issue, as it seems you have, then the documentation should be changed to reflect this.  Moreover, this is an enhancement, rather than a bug fix.
 
 
+
 ---
 
-Comment by rlm created at 2010-04-19 14:07:42
+archive/issue_comments_072785.json:
+```json
+{
+    "body": "I was able to fix the output for rank 0 and 1 curves, but not in general. Note it says\n\"This function returns the index divided by `2` exactly when the rank of `E(K)` is greater than 1 and ...\"",
+    "created_at": "2010-04-19T14:07:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8238",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8238#issuecomment-72785",
+    "user": "rlm"
+}
+```
 
 I was able to fix the output for rank 0 and 1 curves, but not in general. Note it says
 "This function returns the index divided by `2` exactly when the rank of `E(K)` is greater than 1 and ..."
 
 
+
 ---
 
-Comment by rlm created at 2010-04-19 14:07:42
+archive/issue_comments_072786.json:
+```json
+{
+    "body": "Changing type from defect to enhancement.",
+    "created_at": "2010-04-19T14:07:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8238",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8238#issuecomment-72786",
+    "user": "rlm"
+}
+```
 
 Changing type from defect to enhancement.
 
 
+
 ---
 
-Comment by rlm created at 2010-05-25 23:24:16
+archive/issue_comments_072787.json:
+```json
+{
+    "body": "Ping! This ticket still needs a review...",
+    "created_at": "2010-05-25T23:24:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8238",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8238#issuecomment-72787",
+    "user": "rlm"
+}
+```
 
 Ping! This ticket still needs a review...
 
 
+
 ---
 
-Comment by rlm created at 2010-05-25 23:24:16
+archive/issue_comments_072788.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-05-25T23:24:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8238",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8238#issuecomment-72788",
+    "user": "rlm"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by cremona created at 2010-06-05 15:06:48
+archive/issue_comments_072789.json:
+```json
+{
+    "body": "I applied the patch to 4.4.3 and it worked fine (patch applies cleanly, all long tests in heegner.py pass, \n\nSome minor quibbles:\n1. on line 6365:  instead of \"an interval that contains the index, or the index over 2\" say \"... or half the index\".\n2. line 6454++:  this code is reached whe then rank is 0 (or it appears to be) but then F.gens()[0] would fail.  If it is the case that the rank would never be 0 here. I would prefer a comment to that effect and change the test to if F.rank() == 1.  (I assume that in this context calling F.rank() and F.gens() is not expensive?)\n3. After setting a=2 in line 6460 the loop should break.  (OK, so there will not be that many torsion points o nEK, but still.)  Even better would be to first compute EK.torsion_points() and only run the loop at all if it has even length?  (But still test if z itself can be divided by 2).  I'm sure I once wrote a function which returned a list of points generating torsion modulo 2*torsion....if you did\n\n```\nsage: for T in EK.torsion_subgroup().gens():\n....:     if T.order()%2==0:\n```\n\nyou would have at most 2 points to check.\n\nI'll give this a positive review once these have been fixed.",
+    "created_at": "2010-06-05T15:06:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8238",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8238#issuecomment-72789",
+    "user": "cremona"
+}
+```
 
 I applied the patch to 4.4.3 and it worked fine (patch applies cleanly, all long tests in heegner.py pass, 
 
 Some minor quibbles:
-   1. on line 6365:  instead of "an interval that contains the index, or the index over 2" say "... or half the index".
-   2. line 6454++:  this code is reached whe then rank is 0 (or it appears to be) but then F.gens()[0] would fail.  If it is the case that the rank would never be 0 here. I would prefer a comment to that effect and change the test to if F.rank() == 1.  (I assume that in this context calling F.rank() and F.gens() is not expensive?)
-   3. After setting a=2 in line 6460 the loop should break.  (OK, so there will not be that many torsion points o nEK, but still.)  Even better would be to first compute EK.torsion_points() and only run the loop at all if it has even length?  (But still test if z itself can be divided by 2).  I'm sure I once wrote a function which returned a list of points generating torsion modulo 2*torsion....if you did
+1. on line 6365:  instead of "an interval that contains the index, or the index over 2" say "... or half the index".
+2. line 6454++:  this code is reached whe then rank is 0 (or it appears to be) but then F.gens()[0] would fail.  If it is the case that the rank would never be 0 here. I would prefer a comment to that effect and change the test to if F.rank() == 1.  (I assume that in this context calling F.rank() and F.gens() is not expensive?)
+3. After setting a=2 in line 6460 the loop should break.  (OK, so there will not be that many torsion points o nEK, but still.)  Even better would be to first compute EK.torsion_points() and only run the loop at all if it has even length?  (But still test if z itself can be divided by 2).  I'm sure I once wrote a function which returned a list of points generating torsion modulo 2*torsion....if you did
 
 ```
 sage: for T in EK.torsion_subgroup().gens():
@@ -123,83 +247,217 @@ you would have at most 2 points to check.
 I'll give this a positive review once these have been fixed.
 
 
+
 ---
 
-Comment by cremona created at 2010-06-05 15:06:48
+archive/issue_comments_072790.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-06-05T15:06:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8238",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8238#issuecomment-72790",
+    "user": "cremona"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by rlm created at 2010-06-05 15:56:41
+archive/issue_comments_072791.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-06-05T15:56:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8238",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8238#issuecomment-72791",
+    "user": "rlm"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by rlm created at 2010-06-05 15:56:41
+archive/issue_comments_072792.json:
+```json
+{
+    "body": "I think I've addressed each of the above concerns. Thank you for the review!",
+    "created_at": "2010-06-05T15:56:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8238",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8238#issuecomment-72792",
+    "user": "rlm"
+}
+```
 
 I think I've addressed each of the above concerns. Thank you for the review!
 
 
+
 ---
 
-Comment by cremona created at 2010-06-05 21:41:46
+archive/issue_comments_072793.json:
+```json
+{
+    "body": "Great -- positive review now.",
+    "created_at": "2010-06-05T21:41:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8238",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8238#issuecomment-72793",
+    "user": "cremona"
+}
+```
 
 Great -- positive review now.
 
 
+
 ---
 
-Comment by cremona created at 2010-06-05 21:41:46
+archive/issue_comments_072794.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-06-05T21:41:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8238",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8238#issuecomment-72794",
+    "user": "cremona"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by cremona created at 2010-06-05 21:45:53
+archive/issue_comments_072795.json:
+```json
+{
+    "body": "very sorry, my mistake -- if there are 2 torsion gens of even order you still needs to also trying adding their sum (i.e. if T/2T has order 4 there should be 4 tests).",
+    "created_at": "2010-06-05T21:45:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8238",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8238#issuecomment-72795",
+    "user": "cremona"
+}
+```
 
 very sorry, my mistake -- if there are 2 torsion gens of even order you still needs to also trying adding their sum (i.e. if T/2T has order 4 there should be 4 tests).
 
 
+
 ---
 
-Comment by cremona created at 2010-06-05 21:45:53
+archive/issue_comments_072796.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_work.",
+    "created_at": "2010-06-05T21:45:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8238",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8238#issuecomment-72796",
+    "user": "cremona"
+}
+```
 
 Changing status from positive_review to needs_work.
 
 
+
 ---
+
+archive/issue_comments_072797.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-06-05T22:08:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8238",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8238#issuecomment-72797",
+    "user": "rlm"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by rlm created at 2010-06-05 22:08:54
+archive/issue_comments_072798.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-06-05T22:08:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8238",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8238#issuecomment-72798",
+    "user": "rlm"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by cremona created at 2010-06-06 10:27:32
+archive/issue_comments_072799.json:
+```json
+{
+    "body": "OK!",
+    "created_at": "2010-06-06T10:27:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8238",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8238#issuecomment-72799",
+    "user": "cremona"
+}
+```
 
 OK!
 
 
+
 ---
 
-Comment by cremona created at 2010-06-06 10:27:32
+archive/issue_comments_072800.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-06-06T10:27:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8238",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8238#issuecomment-72800",
+    "user": "cremona"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mhansen created at 2010-06-07 05:24:25
+archive/issue_comments_072801.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-06-07T05:24:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8238",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8238#issuecomment-72801",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

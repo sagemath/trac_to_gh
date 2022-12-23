@@ -1,38 +1,100 @@
 # Issue 4717: [with patch, needs review] matrix_plot should also accept numpy arrays
 
-Issue created by migration from https://trac.sagemath.org/ticket/4717
-
-Original creator: whuss
-
-Original creation time: 2008-12-05 13:22:19
-
+archive/issues_004717.json:
+```json
+{
+    "body": "Assignee: whuss\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4717\n\n",
+    "created_at": "2008-12-05T13:22:19Z",
+    "labels": [
+        "graphics",
+        "minor",
+        "enhancement"
+    ],
+    "title": "[with patch, needs review] matrix_plot should also accept numpy arrays",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4717",
+    "user": "whuss"
+}
+```
 Assignee: whuss
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4717
+
+
+
+
 
 ---
+
+archive/issue_comments_035579.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-12-05T13:23:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4717",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4717#issuecomment-35579",
+    "user": "whuss"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_035580.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-12-08T01:46:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4717",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4717#issuecomment-35580",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2008-12-08 01:50:23
+archive/issue_comments_035581.json:
+```json
+{
+    "body": "Everything looks good except that it's the transpose of what is what wanted.  I attached a patch which removes the transpose.  I'm not sure if that needs an additional review or not.  Wilfried, do you want to take a look?\n\nApply only trac_4717.patch.",
+    "created_at": "2008-12-08T01:50:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4717",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4717#issuecomment-35581",
+    "user": "mhansen"
+}
+```
 
 Everything looks good except that it's the transpose of what is what wanted.  I attached a patch which removes the transpose.  I'm not sure if that needs an additional review or not.  Wilfried, do you want to take a look?
 
 Apply only trac_4717.patch.
 
 
+
 ---
 
-Comment by whuss created at 2008-12-08 12:59:33
+archive/issue_comments_035582.json:
+```json
+{
+    "body": "With the transpose removed, the following doctest fails,\n\n\n```\nsage -t  \"devel/sage-matrix_plot/sage/plot/matrix_plot.py\"  \n**********************************************************************\nFile \"/local/data/huss/software/sage-3.2.1/devel/sage-matrix_plot/sage/plot/matrix_plot.py\",\nline 40:\n    sage: list(sorted(m.get_minmax_data().items()))\nExpected:\n    [('xmax', 4), ('xmin', 0), ('ymax', 3), ('ymin', 0)]\nGot:\n    [('xmax', 3), ('xmin', 0), ('ymax', 4), ('ymin', 0)]\n**********************************************************************\n```\n\n\nand the rows of matrices are plottet as columns.\n\nGreetings,\n\nWilfried",
+    "created_at": "2008-12-08T12:59:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4717",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4717#issuecomment-35582",
+    "user": "whuss"
+}
+```
 
 With the transpose removed, the following doctest fails,
 
@@ -58,9 +120,20 @@ Greetings,
 Wilfried
 
 
+
 ---
 
-Comment by mhansen created at 2008-12-08 13:06:14
+archive/issue_comments_035583.json:
+```json
+{
+    "body": "Weird, with the transpose I get that the rows are plotted as columns.  For example, with your original patch, \n\n\n```\nsage: matrix_plot([[1,1,10],[1,1,1],[1,1,1]])\n```\n\n\nproduces http://sage.math.washington.edu/home/mhansen/4717.png .",
+    "created_at": "2008-12-08T13:06:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4717",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4717#issuecomment-35583",
+    "user": "mhansen"
+}
+```
 
 Weird, with the transpose I get that the rows are plotted as columns.  For example, with your original patch, 
 
@@ -73,16 +146,40 @@ sage: matrix_plot([[1,1,10],[1,1,1],[1,1,1]])
 produces http://sage.math.washington.edu/home/mhansen/4717.png .
 
 
+
 ---
+
+archive/issue_comments_035584.json:
+```json
+{
+    "body": "Attachment\n\nfinal version",
+    "created_at": "2008-12-09T08:43:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4717",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4717#issuecomment-35584",
+    "user": "whuss"
+}
+```
 
 Attachment
 
 final version
 
 
+
 ---
 
-Comment by whuss created at 2008-12-09 08:49:01
+archive/issue_comments_035585.json:
+```json
+{
+    "body": "You are right, the transpose was wrong.\nBut I also mixed up the xrange and yrange, that was why I got\nstrange results for non square matrices.\n\nThe new patch fixes it. Now matrix_plot behaves the same as\nwithout the patch.\n\nApply only trac_4717.2.patch\n\nGreetings,\n\nWilfried.",
+    "created_at": "2008-12-09T08:49:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4717",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4717#issuecomment-35585",
+    "user": "whuss"
+}
+```
 
 You are right, the transpose was wrong.
 But I also mixed up the xrange and yrange, that was why I got
@@ -98,15 +195,37 @@ Greetings,
 Wilfried.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-10 07:52:53
+archive/issue_comments_035586.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-12-10T07:52:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4717",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4717#issuecomment-35586",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-10 07:52:53
+archive/issue_comments_035587.json:
+```json
+{
+    "body": "Merged trac_4717.2.patch in Sage 3.2.2.alpha1",
+    "created_at": "2008-12-10T07:52:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4717",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4717#issuecomment-35587",
+    "user": "mabshoff"
+}
+```
 
 Merged trac_4717.2.patch in Sage 3.2.2.alpha1

@@ -1,51 +1,133 @@
 # Issue 7224: Spanish doc #12 "A Guided Tour"
 
-Issue created by migration from https://trac.sagemath.org/ticket/7224
-
-Original creator: Loufer
-
-Original creation time: 2009-10-15 02:38:40
-
+archive/issues_007224.json:
+```json
+{
+    "body": "Assignee: tba\n\nFrom: tutorial\n\nIssue created by migration from https://trac.sagemath.org/ticket/7224\n\n",
+    "created_at": "2009-10-15T02:38:40Z",
+    "labels": [
+        "documentation",
+        "major",
+        "enhancement"
+    ],
+    "title": "Spanish doc #12 \"A Guided Tour\"",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7224",
+    "user": "Loufer"
+}
+```
 Assignee: tba
 
 From: tutorial
 
+Issue created by migration from https://trac.sagemath.org/ticket/7224
+
+
+
+
 
 ---
+
+archive/issue_comments_059916.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-10-15T02:38:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7224",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7224#issuecomment-59916",
+    "user": "Loufer"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by chapoton created at 2014-07-18 12:51:38
+archive/issue_comments_059917.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"spanish\".",
+    "created_at": "2014-07-18T12:51:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7224",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7224#issuecomment-59917",
+    "user": "chapoton"
+}
+```
 
 Changing keywords from "" to "spanish".
 
 
+
 ---
 
-Comment by chapoton created at 2014-08-02 13:23:05
+archive/issue_comments_059918.json:
+```json
+{
+    "body": "This has been included in #10165 and probably could be closed now.",
+    "created_at": "2014-08-02T13:23:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7224",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7224#issuecomment-59918",
+    "user": "chapoton"
+}
+```
 
 This has been included in #10165 and probably could be closed now.
 
 
+
 ---
 
-Comment by chapoton created at 2014-08-10 15:23:43
+archive/issue_comments_059919.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2014-08-10T15:23:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7224",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7224#issuecomment-59919",
+    "user": "chapoton"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by kcrisman created at 2014-11-13 14:40:50
+archive/issue_comments_059920.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2014-11-13T14:40:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7224",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7224#issuecomment-59920",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by vbraun created at 2014-11-14 11:12:28
+archive/issue_comments_059921.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2014-11-14T11:12:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7224",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7224#issuecomment-59921",
+    "user": "vbraun"
+}
+```
 
 Resolution: duplicate

@@ -1,11 +1,21 @@
 # Issue 4133: sage.math - sage 3.1.2.rc4 doctest failure in interfaces/maxima.py
 
-Issue created by migration from https://trac.sagemath.org/ticket/4133
-
-Original creator: mabshoff
-
-Original creation time: 2008-09-16 05:26:28
-
+archive/issues_004133.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\n\n```\n********************************************************************** \nFile \"/home/was/build/sage-3.1.2.rc4/tmp/maxima.py\", line 791: \n    sage: 'gcd' in t \nExpected: \n    True \nGot: \n    False \n********************************************************************** \nFile \"/home/was/build/sage-3.1.2.rc4/tmp/maxima.py\", line 1849: \n    sage: 'gcd' in m.trait_names() \nExpected: \n    True \nGot: \n    False \n********************************************************************** \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4133\n\n",
+    "created_at": "2008-09-16T05:26:28Z",
+    "labels": [
+        "doctest coverage",
+        "major",
+        "bug"
+    ],
+    "title": "sage.math - sage 3.1.2.rc4 doctest failure in interfaces/maxima.py",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4133",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 
@@ -28,26 +38,63 @@ Got:
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4133
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2008-09-17 00:43:16
+archive/issue_comments_029978.json:
+```json
+{
+    "body": "This is due to a stale maxima_commandlist_cache.sobj in the DOT_SAGE directory.  It was fixed by doing\n\nrm ~/.sage/maxima_commandlist_cache.sobj",
+    "created_at": "2008-09-17T00:43:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4133",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4133#issuecomment-29978",
+    "user": "mhansen"
+}
+```
 
 This is due to a stale maxima_commandlist_cache.sobj in the DOT_SAGE directory.  It was fixed by doing
 
 rm ~/.sage/maxima_commandlist_cache.sobj
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-17 01:02:37
+archive/issue_comments_029979.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-09-17T01:02:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4133",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4133#issuecomment-29979",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-17 01:02:37
+archive/issue_comments_029980.json:
+```json
+{
+    "body": "The spkg at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.1.2/rc5/maxima-5.16.2.p0.spkg\n\nfixes the problem.\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-17T01:02:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4133",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4133#issuecomment-29980",
+    "user": "mabshoff"
+}
+```
 
 The spkg at
 
@@ -60,15 +107,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-17 01:17:59
+archive/issue_comments_029981.json:
+```json
+{
+    "body": "Merged in Sage 3.1.2.rc5",
+    "created_at": "2008-09-17T01:17:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4133",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4133#issuecomment-29981",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.1.2.rc5
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-17 01:17:59
+archive/issue_comments_029982.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-09-17T01:17:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4133",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4133#issuecomment-29982",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

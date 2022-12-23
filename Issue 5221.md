@@ -1,11 +1,21 @@
 # Issue 5221: default cmap for contour plot makes last contour line invisible when fill=False
 
-Issue created by migration from https://trac.sagemath.org/ticket/5221
-
-Original creator: jason
-
-Original creation time: 2009-02-09 16:12:04
-
+archive/issues_005221.json:
+```json
+{
+    "body": "Assignee: was\n\nExamine the output of \n\n\n```\nvar('x,y')\ncontour_plot(x-y^2,(x,-5,5),(y,-3,3),contours=[-4,0,1], fill=False)\n```\n\n\n\nThe last contour line (level curve at z=1) is invisible because the default cmap makes it white.  Compare that to a different color map:\n\n\n```\nvar('x,y')\ncontour_plot(x-y^2,(x,-5,5),(y,-3,3),contours=[-4,0,1],cmap='winter',fill=False)\n```\n\n\nWe should make the default cmap something less confusing when fill=False.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5221\n\n",
+    "created_at": "2009-02-09T16:12:04Z",
+    "labels": [
+        "graphics",
+        "major",
+        "bug"
+    ],
+    "title": "default cmap for contour plot makes last contour line invisible when fill=False",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5221",
+    "user": "jason"
+}
+```
 Assignee: was
 
 Examine the output of 
@@ -30,62 +40,156 @@ contour_plot(x-y^2,(x,-5,5),(y,-3,3),contours=[-4,0,1],cmap='winter',fill=False)
 We should make the default cmap something less confusing when fill=False.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5221
+
+
+
+
 
 ---
 
-Comment by kcrisman created at 2009-08-27 03:08:35
+archive/issue_comments_040016.json:
+```json
+{
+    "body": "As it turns out, no cmap with any better visibility is any better - many of them have white as one of the options.  So this patch creates a custom cmap which is almost the same as 'gray' for the situation where fill is False, a cmap is not specified, but there are a specific number of contours (or exact contours) specified.\n\nNote this patch depends on the patch at #5145.",
+    "created_at": "2009-08-27T03:08:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5221",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5221#issuecomment-40016",
+    "user": "kcrisman"
+}
+```
 
 As it turns out, no cmap with any better visibility is any better - many of them have white as one of the options.  So this patch creates a custom cmap which is almost the same as 'gray' for the situation where fill is False, a cmap is not specified, but there are a specific number of contours (or exact contours) specified.
 
 Note this patch depends on the patch at #5145.
 
 
+
 ---
 
-Comment by jason created at 2009-09-10 15:24:51
+archive/issue_comments_040017.json:
+```json
+{
+    "body": "Thanks for the patch!\n\nI think this patch needs to be rebased after #5448.  The `@`options decorator for contour_plot is changed in that patch.",
+    "created_at": "2009-09-10T15:24:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5221",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5221#issuecomment-40017",
+    "user": "jason"
+}
+```
 
 Thanks for the patch!
 
 I think this patch needs to be rebased after #5448.  The `@`options decorator for contour_plot is changed in that patch.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-09-10 15:47:01
+archive/issue_comments_040018.json:
+```json
+{
+    "body": "Based on 4.1.1 and #5448 and #5145",
+    "created_at": "2009-09-10T15:47:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5221",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5221#issuecomment-40018",
+    "user": "kcrisman"
+}
+```
 
 Based on 4.1.1 and #5448 and #5145
 
 
+
 ---
+
+archive/issue_comments_040019.json:
+```json
+{
+    "body": "Attachment\n\nTry this.",
+    "created_at": "2009-09-10T15:47:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5221",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5221#issuecomment-40019",
+    "user": "kcrisman"
+}
+```
 
 Attachment
 
 Try this.
 
 
+
 ---
 
-Comment by jason created at 2009-09-22 21:23:44
+archive/issue_comments_040020.json:
+```json
+{
+    "body": "Very nice!",
+    "created_at": "2009-09-22T21:23:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5221",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5221#issuecomment-40020",
+    "user": "jason"
+}
+```
 
 Very nice!
 
 
+
 ---
 
-Comment by jason created at 2009-09-22 21:26:48
+archive/issue_comments_040021.json:
+```json
+{
+    "body": "(generally, you should do: \"if 'cmap' in options\", rather than \"options.has_key('cmap')\".",
+    "created_at": "2009-09-22T21:26:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5221",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5221#issuecomment-40021",
+    "user": "jason"
+}
+```
 
 (generally, you should do: "if 'cmap' in options", rather than "options.has_key('cmap')".
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-23 00:21:55
+archive/issue_comments_040022.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-09-23T00:21:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5221",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5221#issuecomment-40022",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-27 09:41:14
+archive/issue_comments_040023.json:
+```json
+{
+    "body": "There is no 4.1.2.alpha3. Sage 4.1.2.alpha3 was William Stein's release for working on making the notebook a standalone package.",
+    "created_at": "2009-09-27T09:41:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5221",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5221#issuecomment-40023",
+    "user": "mvngu"
+}
+```
 
 There is no 4.1.2.alpha3. Sage 4.1.2.alpha3 was William Stein's release for working on making the notebook a standalone package.

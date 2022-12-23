@@ -1,11 +1,21 @@
 # Issue 5292: Error in FractionField conversion
 
-Issue created by migration from https://trac.sagemath.org/ticket/5292
-
-Original creator: robertwb
-
-Original creation time: 2009-02-17 08:01:35
-
+archive/issues_005292.json:
+```json
+{
+    "body": "Assignee: tbd\n\nOn Feb 16, 2009, at 4:01 PM, Jason Bandlow wrote:\n\n\n```\nsage: R.<x> = QQ[]; S.<q,t> = QQ[]; F = FractionField(S);\nsage: x in S   # this is ok\nFalse\nsage: x in F   # this is not\n\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (857, 0))\n\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (862, 0))\n\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\n...\n/home/jason/<string> in <module>()\n\nNameError: name 'x' is not defined\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5292\n\n",
+    "created_at": "2009-02-17T08:01:35Z",
+    "labels": [
+        "algebra",
+        "major",
+        "bug"
+    ],
+    "title": "Error in FractionField conversion",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5292",
+    "user": "robertwb"
+}
+```
 Assignee: tbd
 
 On Feb 16, 2009, at 4:01 PM, Jason Bandlow wrote:
@@ -34,17 +44,43 @@ NameError: name 'x' is not defined
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5292
+
+
+
+
 
 ---
 
-Comment by robertwb created at 2009-02-17 08:07:19
+archive/issue_comments_040668.json:
+```json
+{
+    "body": "This is because eval is being used in lines 585+ of multi_polynomial_libsingular.pyx .",
+    "created_at": "2009-02-17T08:07:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5292",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5292#issuecomment-40668",
+    "user": "robertwb"
+}
+```
 
 This is because eval is being used in lines 585+ of multi_polynomial_libsingular.pyx .
 
 
+
 ---
 
-Comment by robertwb created at 2009-02-17 08:14:54
+archive/issue_comments_040669.json:
+```json
+{
+    "body": "It's probably bad that it's even using strings here, but this fixes things a bit...\n\nNow, the use of eval() here is bad... for example\n\nsage: sage: R.<x> = QQ[]; S.<q,t> = R[]; F = FractionField(S);\nsage: x in S\nFalse\n\nis still wrong. There are better ways of going about this but at least it doesn't crash. And I'm more OK with a False negative, but if this is accepted a new ticket should be created to follow up.",
+    "created_at": "2009-02-17T08:14:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5292",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5292#issuecomment-40669",
+    "user": "robertwb"
+}
+```
 
 It's probably bad that it's even using strings here, but this fixes things a bit...
 
@@ -57,14 +93,38 @@ False
 is still wrong. There are better ways of going about this but at least it doesn't crash. And I'm more OK with a False negative, but if this is accepted a new ticket should be created to follow up.
 
 
+
 ---
+
+archive/issue_comments_040670.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-02-17T08:19:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5292",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5292#issuecomment-40670",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-17 20:03:16
+archive/issue_comments_040671.json:
+```json
+{
+    "body": "With the patch applied to my 3.3.rc2 merge tree all doctests pass.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-17T20:03:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5292",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5292#issuecomment-40671",
+    "user": "mabshoff"
+}
+```
 
 With the patch applied to my 3.3.rc2 merge tree all doctests pass.
 
@@ -73,9 +133,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by was created at 2009-02-17 23:42:36
+archive/issue_comments_040672.json:
+```json
+{
+    "body": "BAD\n\n```\n15:38 < wstein2> Ouch.\n15:38 < wstein2> It has:\n15:38 < wstein2> \" except SyntaxError, NameError:\"\n15:38 < wstein2> As a new addition.\n15:38 < wstein2> That is a major annoying python gotcha.\n15:38 < wstein2> That assigns the exception to NameError.\n15:38 < wstein2> It should be\n15:38 < wstein2> except (SyntaxError, NameError):\n15:38 < wstein2> Ooops!\n15:39 < mabs> mk\n15:39 < wstein2> I don't know why that would do any good either...\n15:40 < wstein2> also, the patch should have a doctest\n15:40 < mabs> Hmm, that might be difficult to do.\n15:41 < wstein2> in fac the patch does *not* fix the problem.\n15:41 < wstein2> You only wrote \"all tests pass\".\n15:41 < wstein2> But that is because there are no new tests.\n15:41 < wstein2> That ticket is a mess.\n15:41 < mhansen> Patch up for #5298.\n15:41 < wstein2> So you wrote: \"With the patch applied to my 3.3.rc2 merge tree all doctests pass. \"\n15:41 < mabs> I did not write that about #5291.\n15:41 < wstein2> But there was nothing to test that the problem was fixed.\n15:42 < mabs> I wrote that about #5287\n15:42 < wstein2> I'm talking about #5292.\n15:42 < wstein2> Sorry.\n15:42 -!- You're now known as wstein-5292\n15:42 < mabs> Yes.\n```\n",
+    "created_at": "2009-02-17T23:42:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5292",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5292#issuecomment-40672",
+    "user": "was"
+}
+```
 
 BAD
 
@@ -110,39 +181,96 @@ BAD
 
 
 
+
 ---
 
-Comment by was created at 2009-02-17 23:46:12
+archive/issue_comments_040673.json:
+```json
+{
+    "body": "fixed the previous very broken patch.",
+    "created_at": "2009-02-17T23:46:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5292",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5292#issuecomment-40673",
+    "user": "was"
+}
+```
 
 fixed the previous very broken patch.
 
 
+
 ---
+
+archive/issue_comments_040674.json:
+```json
+{
+    "body": "Attachment\n\nI've attached a patch addressing all my remarks.  Somebody review this.  Mabshoff -- apply both patches in order.",
+    "created_at": "2009-02-17T23:46:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5292",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5292#issuecomment-40674",
+    "user": "was"
+}
+```
 
 Attachment
 
 I've attached a patch addressing all my remarks.  Somebody review this.  Mabshoff -- apply both patches in order.
 
 
+
 ---
 
-Comment by mhansen created at 2009-02-17 23:56:26
+archive/issue_comments_040675.json:
+```json
+{
+    "body": "Looks good to me.",
+    "created_at": "2009-02-17T23:56:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5292",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5292#issuecomment-40675",
+    "user": "mhansen"
+}
+```
 
 Looks good to me.
 
 
+
 ---
 
-Comment by robertwb created at 2009-02-18 00:02:39
+archive/issue_comments_040676.json:
+```json
+{
+    "body": "Ouch, sorry. Yeah, that's one \"wart\" that I'm glad is being moved: http://www.python.org/dev/peps/pep-3110/\n\nI should have added a test, but as I mentioned I don't think this resolves the real issue here (and since I found exactly where the problem was I wanted to make note of it).",
+    "created_at": "2009-02-18T00:02:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5292",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5292#issuecomment-40676",
+    "user": "robertwb"
+}
+```
 
 Ouch, sorry. Yeah, that's one "wart" that I'm glad is being moved: http://www.python.org/dev/peps/pep-3110/
 
 I should have added a test, but as I mentioned I don't think this resolves the real issue here (and since I found exactly where the problem was I wanted to make note of it).
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-18 00:26:48
+archive/issue_comments_040677.json:
+```json
+{
+    "body": "Merged both patches in Sage 3.3.rc2.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-18T00:26:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5292",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5292#issuecomment-40677",
+    "user": "mabshoff"
+}
+```
 
 Merged both patches in Sage 3.3.rc2.
 
@@ -151,8 +279,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-18 00:26:48
+archive/issue_comments_040678.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-02-18T00:26:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5292",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5292#issuecomment-40678",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

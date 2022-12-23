@@ -1,11 +1,21 @@
 # Issue 5145: increase default plot_points value for contour_plot
 
-Issue created by migration from https://trac.sagemath.org/ticket/5145
-
-Original creator: was
-
-Original creation time: 2009-01-31 15:19:12
-
+archive/issues_005145.json:
+```json
+{
+    "body": "Assignee: tbd\n\nMotivation: Somewhat regularly on sage-support we get emails like this:\n\n\n```\nHi everyone,\n\nI run into a very strange problem, that looks like critical to me.\nBasically, I plot two functions that I know must be tangent at a given\npoint, and they are not.\n\nFirst, the code:\n\nx,y=var('x,y')\nutility=y*x^2\nbudget = 24-x\ncp=contour_plot(utility,(x,0,24),(y,\n0,24),fill=False,cmap='cool',contours=(100,1000,2048,2700,3500))\nbp=plot(budget,(x,0,24),color='red')\ncp+bp\n\nNow, the plot that comes after calling 'cp+bp' must have the following\nproperty: the straight red line must be tangent to the contour of the\nutility function evaluated at level utility=2048; and they must be\ntangent at the point (16,8). In my system (Sage 3.2.3 on OpenSuse11.1)\nthey are NOT tangent; in fact, the sage plot indicates tangency at a\nlower level, ~1820.\n...\n- Or else is it a calculation problem on the part of sage? I'd find\nthis absolutely strange. And critical: I want to trust Sage to do the\ncalculations correctly.\n\nCan you reproduce it?\n\nThanks,\n```\n\n\nBut putting plot_points=200 fixes things.   Right now the default is a mere 25, which seems absurdly small.   I think we should change the default plot_points parameter.  It was very low, I think, because evaluation of symbolic expressions used to be slow -- now it's extremely fast -- so we should increase the default number of points to at least 200. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5145\n\n",
+    "created_at": "2009-01-31T15:19:12Z",
+    "labels": [
+        "algebra",
+        "major",
+        "bug"
+    ],
+    "title": "increase default plot_points value for contour_plot",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5145",
+    "user": "was"
+}
+```
 Assignee: tbd
 
 Motivation: Somewhat regularly on sage-support we get emails like this:
@@ -47,10 +57,25 @@ Thanks,
 
 But putting plot_points=200 fixes things.   Right now the default is a mere 25, which seems absurdly small.   I think we should change the default plot_points parameter.  It was very low, I think, because evaluation of symbolic expressions used to be slow -- now it's extremely fast -- so we should increase the default number of points to at least 200. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5145
+
+
+
+
 
 ---
 
-Comment by was created at 2009-01-31 16:58:57
+archive/issue_comments_039357.json:
+```json
+{
+    "body": "From the OP: \n\n```\nI second the idea of increaisng the default plot-points, at least to\n100. On my not so recent intel duo it took less than a second with\n200.\n```\n",
+    "created_at": "2009-01-31T16:58:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5145",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5145#issuecomment-39357",
+    "user": "was"
+}
+```
 
 From the OP: 
 
@@ -62,66 +87,167 @@ I second the idea of increaisng the default plot-points, at least to
 
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-07-05 08:08:44
+archive/issue_comments_039358.json:
+```json
+{
+    "body": "Changing assignee from tbd to was.",
+    "created_at": "2009-07-05T08:08:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5145",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5145#issuecomment-39358",
+    "user": "davidloeffler"
+}
+```
 
 Changing assignee from tbd to was.
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-07-05 08:08:44
+archive/issue_comments_039359.json:
+```json
+{
+    "body": "This should be in \"graphics\" I guess.",
+    "created_at": "2009-07-05T08:08:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5145",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5145#issuecomment-39359",
+    "user": "davidloeffler"
+}
+```
 
 This should be in "graphics" I guess.
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-07-05 08:08:44
+archive/issue_comments_039360.json:
+```json
+{
+    "body": "Changing component from algebra to graphics.",
+    "created_at": "2009-07-05T08:08:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5145",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5145#issuecomment-39360",
+    "user": "davidloeffler"
+}
+```
 
 Changing component from algebra to graphics.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-08-27 03:05:18
+archive/issue_comments_039361.json:
+```json
+{
+    "body": "This changes this to 100, except for implicit_plot, which is changed to 150 since it is usually used to see more detail.",
+    "created_at": "2009-08-27T03:05:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5145",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5145#issuecomment-39361",
+    "user": "kcrisman"
+}
+```
 
 This changes this to 100, except for implicit_plot, which is changed to 150 since it is usually used to see more detail.
 
 
+
 ---
 
-Comment by jason created at 2009-09-10 15:23:06
+archive/issue_comments_039362.json:
+```json
+{
+    "body": "Great work!  I'm glad to see this patch!\n\nThis needs to be rebased after #5448.  That patch changes the `@`options decorator for contour_plot, for example, and so there is a reject on applying this patch.",
+    "created_at": "2009-09-10T15:23:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5145",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5145#issuecomment-39362",
+    "user": "jason"
+}
+```
 
 Great work!  I'm glad to see this patch!
 
 This needs to be rebased after #5448.  That patch changes the `@`options decorator for contour_plot, for example, and so there is a reject on applying this patch.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-09-10 15:45:45
+archive/issue_comments_039363.json:
+```json
+{
+    "body": "Based on 4.1.1 and #5448",
+    "created_at": "2009-09-10T15:45:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5145",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5145#issuecomment-39363",
+    "user": "kcrisman"
+}
+```
 
 Based on 4.1.1 and #5448
 
 
+
 ---
+
+archive/issue_comments_039364.json:
+```json
+{
+    "body": "Attachment\n\nTry this.",
+    "created_at": "2009-09-10T15:46:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5145",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5145#issuecomment-39364",
+    "user": "kcrisman"
+}
+```
 
 Attachment
 
 Try this.
 
 
+
 ---
 
-Comment by jason created at 2009-09-15 09:06:39
+archive/issue_comments_039365.json:
+```json
+{
+    "body": "The code looks good; passes doctests in the affected file.",
+    "created_at": "2009-09-15T09:06:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5145",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5145#issuecomment-39365",
+    "user": "jason"
+}
+```
 
 The code looks good; passes doctests in the affected file.
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-15 20:27:25
+archive/issue_comments_039366.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-09-15T20:27:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5145",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5145#issuecomment-39366",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

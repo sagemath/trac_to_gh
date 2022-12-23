@@ -1,11 +1,21 @@
 # Issue 8638: iconv -- make with SAGE_CHECK="yes" fails on iconv with x86_64 ubuntu
 
-Issue created by migration from https://trac.sagemath.org/ticket/8638
-
-Original creator: was
-
-Original creation time: 2010-04-01 00:09:47
-
+archive/issues_008638.json:
+```json
+{
+    "body": "Assignee: kirkby\n\n\n```\n\nI just downloaded the source. and it includes your recent \"don't make\niconv unless it's the right system\"\n\nexport MAKE=\"make -j4\"\nexport SAGE_CHECK=\"yes\"\nmake\n\n... lots of things...\n\n****************************************************\nHost system\nuname -a:\nLinux dellbees 2.6.31-20-generic #58-Ubuntu SMP Fri Mar 12 04:38:19\nUTC 2010 x86_64 GNU/Linux\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: x86_64-linux-gnu\nConfigured with: ../src/configure -v --with-pkgversion='Ubuntu\n4.4.1-4ubuntu9'\n--with-bugurl=file:///usr/share/doc/gcc-4.4/README.Bugs\n--enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr\n--enable-shared --enable-multiarch --enable-linker-build-id\n--with-system-zlib --libexecdir=/usr/lib --without-included-gettext\n--enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.4\n--program-suffix=-4.4 --enable-nls --enable-clocale=gnu\n--enable-libstdcxx-debug --enable-objc-gc --disable-werror\n--with-arch-32=i486 --with-tune=generic --enable-checking=release\n--build=x86_64-linux-gnu --host=x86_64-linux-gnu\n--target=x86_64-linux-gnu\nThread model: posix\ngcc version 4.4.1 (Ubuntu 4.4.1-4ubuntu9)\n****************************************************\nRemoving old iconv files if they exist\niconv will not be installed, as it is only installed on\nSolaris and Cygwin - see:\nhttp://trac.sagemath.org/sage_trac/ticket/8567\n\nreal    0m0.043s\nuser    0m0.000s\nsys     0m0.010s\nSuccessfully installed iconv-1.13.1.p0\nRunning the test suite.\nmake[2]: Entering directory\n`/home/wjlaffin/_sage/spkg/build/iconv-1.13.1.p0/src'\nmake[2]: *** No rule to make target `check'.  Stop.\nmake[2]: Leaving directory `/home/wjlaffin/_sage/spkg/build/iconv-1.13.1.p0/src'\nError encountered while running the iconv testsuite ... exiting\n*************************************\nError testing package ** iconv-1.13.1.p0 **\n*************************************\nsage: An error occurred while testing iconv-1.13.1.p0\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /home/wjlaffin/_sage/install.log.  Describe your computer,\noperating system, etc.\nIf you want to try to fix the problem yourself, *don't* just cd to\n/home/wjlaffin/_sage/spkg/build/iconv-1.13.1.p0 and type 'make check'\nor whatever is appropriate.\nInstead, the following commands setup all environment variables\ncorrectly and load a subshell for you to debug the error:\n(cd '/home/wjlaffin/_sage/spkg/build/iconv-1.13.1.p0' &&\n'/home/wjlaffin/_sage/sage' -sh)\nWhen you are done debugging, you can type \"exit\" to leave the\nsubshell.\nmake[1]: *** [installed/iconv-1.13.1.p0] Error 1\nmake[1]: Leaving directory `/home/wjlaffin/_sage/spkg'\n\nreal    0m2.142s\nuser    0m1.950s\nsys     0m0.140s\nError building Sage.\nwjlaffin@dellbees:~/_sage$\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8638\n\n",
+    "created_at": "2010-04-01T00:09:47Z",
+    "labels": [
+        "build",
+        "blocker",
+        "bug"
+    ],
+    "title": "iconv -- make with SAGE_CHECK=\"yes\" fails on iconv with x86_64 ubuntu",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8638",
+    "user": "was"
+}
+```
 Assignee: kirkby
 
 
@@ -89,40 +99,99 @@ wjlaffin@dellbees:~/_sage$
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8638
+
+
+
+
 
 ---
 
-Comment by jhpalmieri created at 2010-04-01 01:34:18
+archive/issue_comments_078327.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-04-01T01:34:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8638",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8638#issuecomment-78327",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-01 01:34:18
+archive/issue_comments_078328.json:
+```json
+{
+    "body": "Try the spkg here:\n\n[http://sage.math.washington.edu/home/palmieri/SPKG/iconv-1.13.1.p2.spkg](http://sage.math.washington.edu/home/palmieri/SPKG/iconv-1.13.1.p2.spkg)",
+    "created_at": "2010-04-01T01:34:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8638",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8638#issuecomment-78328",
+    "user": "jhpalmieri"
+}
+```
 
 Try the spkg here:
 
 [http://sage.math.washington.edu/home/palmieri/SPKG/iconv-1.13.1.p2.spkg](http://sage.math.washington.edu/home/palmieri/SPKG/iconv-1.13.1.p2.spkg)
 
 
+
 ---
 
-Comment by ddrake created at 2010-04-01 23:21:22
+archive/issue_comments_078329.json:
+```json
+{
+    "body": "This spkg works properly on Linux (Ubuntu) and on t2.math and the change is simple enough. I haven't tested this on Cygwin, though. I think if someone tries this on Cygwin, we can call this a positive review. Or, if someone can confirm that the $UNAME variable in Cygwin is literally \"CYGWIN\", I think we could also make this a positive review, since that's the string that spkg-check tests for.",
+    "created_at": "2010-04-01T23:21:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8638",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8638#issuecomment-78329",
+    "user": "ddrake"
+}
+```
 
 This spkg works properly on Linux (Ubuntu) and on t2.math and the change is simple enough. I haven't tested this on Cygwin, though. I think if someone tries this on Cygwin, we can call this a positive review. Or, if someone can confirm that the $UNAME variable in Cygwin is literally "CYGWIN", I think we could also make this a positive review, since that's the string that spkg-check tests for.
 
 
+
 ---
 
-Comment by was created at 2010-04-02 13:36:14
+archive/issue_comments_078330.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-04-02T13:36:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8638",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8638#issuecomment-78330",
+    "user": "was"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by was created at 2010-04-02 13:36:14
+archive/issue_comments_078331.json:
+```json
+{
+    "body": "Replying to [comment:2 ddrake]:\n>  Or, if someone can confirm that the $UNAME variable in Cygwin is literally \"CYGWIN\",\n>  I think we could also make this a positive review, since that's the string that spkg-check tests for.\n\nI can confirm that, since I wrote the code (which is in sage-env) to set UNAME, and that's what it is set to.\n\n -- William",
+    "created_at": "2010-04-02T13:36:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8638",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8638#issuecomment-78331",
+    "user": "was"
+}
+```
 
 Replying to [comment:2 ddrake]:
 >  Or, if someone can confirm that the $UNAME variable in Cygwin is literally "CYGWIN",
@@ -133,15 +202,37 @@ I can confirm that, since I wrote the code (which is in sage-env) to set UNAME, 
  -- William
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-16 17:23:31
+archive/issue_comments_078332.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-04-16T17:23:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8638",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8638#issuecomment-78332",
+    "user": "jhpalmieri"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-16 17:23:31
+archive/issue_comments_078333.json:
+```json
+{
+    "body": "Merged in 4.4.alpha0.",
+    "created_at": "2010-04-16T17:23:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8638",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8638#issuecomment-78333",
+    "user": "jhpalmieri"
+}
+```
 
 Merged in 4.4.alpha0.

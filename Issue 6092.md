@@ -1,11 +1,21 @@
 # Issue 6092: make subfield/relativize accept multiple elements
 
-Issue created by migration from https://trac.sagemath.org/ticket/6092
-
-Original creator: ncalexan
-
-Original creation time: 2009-05-20 07:29:53
-
+archive/issues_006092.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  fwclarke\n\nKeywords: subfield relativize number field multiple elements\n\nSee #6079 for a first stab patch and discussion.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6092\n\n",
+    "created_at": "2009-05-20T07:29:53Z",
+    "labels": [
+        "number theory",
+        "minor",
+        "enhancement"
+    ],
+    "title": "make subfield/relativize accept multiple elements",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6092",
+    "user": "ncalexan"
+}
+```
 Assignee: was
 
 CC:  fwclarke
@@ -14,16 +24,42 @@ Keywords: subfield relativize number field multiple elements
 
 See #6079 for a first stab patch and discussion.
 
+Issue created by migration from https://trac.sagemath.org/ticket/6092
+
+
+
+
 
 ---
 
-Comment by davidloeffler created at 2009-07-21 08:21:13
+archive/issue_comments_048544.json:
+```json
+{
+    "body": "Changing component from number theory to number fields.",
+    "created_at": "2009-07-21T08:21:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6092",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6092#issuecomment-48544",
+    "user": "davidloeffler"
+}
+```
 
 Changing component from number theory to number fields.
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-07-21 08:21:13
+archive/issue_comments_048545.json:
+```json
+{
+    "body": "Changing assignee from was to davidloeffler.",
+    "created_at": "2009-07-21T08:21:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6092",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6092#issuecomment-48545",
+    "user": "davidloeffler"
+}
+```
 
 Changing assignee from was to davidloeffler.

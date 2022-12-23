@@ -1,11 +1,21 @@
 # Issue 9276: sage notebook: jsmath image fonts -- optional package -- breakage
 
-Issue created by migration from https://trac.sagemath.org/ticket/9276
-
-Original creator: was
-
-Original creation time: 2010-06-19 18:48:12
-
+archive/issues_009276.json:
+```json
+{
+    "body": "Assignee: jason, was\n\nHere's the thread about this:\n\n\n```\n\n\n\nForwarded conversation\nSubject: [sage-support] jsmath image fonts\n------------------------\n\nFrom: marik\nDate: Fri, May 28, 2010 at 11:56 PM\nTo: sage-support <sage-support@googlegroups.com>\n\n\nDear all\n\nI installed jsmath image fonts in fresh 4.4.2, but these fonts remain\nunavailable - the switch to these fonts is still inactive. Does\nanybody have the same issue? Is it a bug in my configuration, or a bug\nin sage? Many thanks and have a nice weekend.\n\nRobert\n\n\n----------\nFrom: marik\nDate: Mon, May 31, 2010 at 12:43 PM\nTo: sage-support <sage-support@googlegroups.com>\n\n\nI copied png files manualy to the correct place and still get no image\nfonts in Sage notebook. Any idea? Many thanks,\n\nRobert\n\n----------\nFrom: William Stein <wstein@gmail.com>\nDate: Mon, May 31, 2010 at 12:44 PM\nTo: sage-notebook <sage-notebook@googlegroups.com>\n\n\n--\nWilliam Stein\n\n\n----------\nFrom: marik@\nDate: Fri, Jun 11, 2010 at 8:44 AM\nTo: sage-notebook <sage-notebook@googlegroups.com>\n\n\nSolved:\npng files install into correct place, but the file /sage/local/LIB/\npython/site-packages/sagenb-0.8-py2.6.egg/sagenb/data/sage/js/\njsmath.js contains lines like\n\n   {% if jsmath_image_fonts %}\n   noImageFonts: 0\n   {% else %}\n   noImageFonts: 1\n   {% endif %}\n\nChange it into\n\n//    {% if jsmath_image_fonts %}\n   noImageFonts: 0\n//    {% else %}\n//    noImageFonts: 1\n//    {% endif %}\n\nand image fonts will work. Tested on recent Sage 4.4.3\n\nwhat is this  {% if jsmath_image_fonts %} ? Where does it come from?\nRobert\n\n\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9276\n\n",
+    "created_at": "2010-06-19T18:48:12Z",
+    "labels": [
+        "notebook",
+        "major",
+        "bug"
+    ],
+    "title": "sage notebook: jsmath image fonts -- optional package -- breakage",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9276",
+    "user": "was"
+}
+```
 Assignee: jason, was
 
 Here's the thread about this:
@@ -90,10 +100,25 @@ Robert
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/9276
+
+
+
+
 
 ---
 
-Comment by robert.marik created at 2010-06-21 06:48:12
+archive/issue_comments_087375.json:
+```json
+{
+    "body": "From [sage-notebok](http://groups.google.cz/group/sage-notebook/browse_thread/thread/79b7b217f4af6e36)\n\n1) I installed jsmath_image_fonts-1.4.p3 with:\naquino`@`aquino-desktop:~$ sage -i jsmath_image_fonts-1.4.p3\n\n2) I change the twist.py file:\nfrom:\n\n```\njsmath_image_fonts = is_package_installed(\"jsmath-image-fonts\")\n```\n\nto:\n\n```\njsmath_image_fonts = is_package_installed(\"jsmath_image_fonts\")\n```\n\n3) I don't change anything in the jsmath.js\n\nWhen I open the jsMath Control Panel (clicking on the small text\n\"jsMath\" at the right bottom corner in the worksheet page), I can set\n\"Options > Use image fonts ([*] scalable)\" and then use the fonts\ninstalled.\n\nOf course, that option was unavailable before I install\njsmath_image_fonts.\n\nMy configuration:\nSystem: Ubuntu 10.04 32 bits\nBrowser: Firefox 3.6.3\nSage: Version 4.4.3, Release Date: 2010-06-04",
+    "created_at": "2010-06-21T06:48:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9276",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9276#issuecomment-87375",
+    "user": "robert.marik"
+}
+```
 
 From [sage-notebok](http://groups.google.cz/group/sage-notebook/browse_thread/thread/79b7b217f4af6e36)
 
@@ -129,29 +154,73 @@ Browser: Firefox 3.6.3
 Sage: Version 4.4.3, Release Date: 2010-06-04
 
 
+
 ---
 
-Comment by knsam created at 2013-02-03 18:35:04
+archive/issue_comments_087376.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2013-02-03T18:35:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9276",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9276#issuecomment-87376",
+    "user": "knsam"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by knsam created at 2013-02-03 18:35:41
+archive/issue_comments_087377.json:
+```json
+{
+    "body": "We use MathJaX now for the notebook! So, the ticket is no longer relevant.",
+    "created_at": "2013-02-03T18:35:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9276",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9276#issuecomment-87377",
+    "user": "knsam"
+}
+```
 
 We use MathJaX now for the notebook! So, the ticket is no longer relevant.
 
 
+
 ---
 
-Comment by novoselt created at 2013-02-03 23:13:06
+archive/issue_comments_087378.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2013-02-03T23:13:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9276",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9276#issuecomment-87378",
+    "user": "novoselt"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-02-08 13:25:48
+archive/issue_comments_087379.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2013-02-08T13:25:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9276",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9276#issuecomment-87379",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: invalid

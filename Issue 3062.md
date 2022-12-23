@@ -1,11 +1,21 @@
 # Issue 3062: implement __oct__ special method for the integers
 
-Issue created by migration from https://trac.sagemath.org/ticket/3062
-
-Original creator: was
-
-Original creation time: 2008-04-30 14:35:57
-
+archive/issues_003062.json:
+```json
+{
+    "body": "Assignee: somebody\n\n\n```\n>  oct(2345) fails in Sage (but works in Python)\n>  oct(int(2345)) works\n>  hex(2345) works\n>  \n>  Irc said it was the preparser. Why would the input of oct be preparsed\n>  correctly and not that of hex ?\n\nI think you asked this question backwards.  Anyway, the problem\nis that nobody implemented __oct__ for Sage integers, but they\ndid implement __hex__.  Note that oct(...) calls __oct__:\n\nsage: a = 2345\nsage: a.__hex__()\n'929'\nsage: a.__oct__()\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/Users/was/<ipython console> in <module>()\n\n<type 'exceptions.AttributeError'>: 'sage.rings.integer.Integer' object has no attribute '__oct__'\n\nIn the meantime you can do either\n\nsage: oct(int(a))\n'04451'\n\nor\n\nsage: a.digits(8)\n[1, 5, 4, 4]\n\nor\n\nsage: a.str(base=8)\n'4451'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3062\n\n",
+    "created_at": "2008-04-30T14:35:57Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "enhancement"
+    ],
+    "title": "implement __oct__ special method for the integers",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3062",
+    "user": "was"
+}
+```
 Assignee: somebody
 
 
@@ -49,24 +59,61 @@ sage: a.str(base=8)
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3062
+
+
+
+
 
 ---
 
-Comment by dmharvey created at 2008-05-01 05:32:56
+archive/issue_comments_021138.json:
+```json
+{
+    "body": "Code looks okay to me but the documentation could do with improvement. \"Numerial\" is not a word. Also I'd like some explanation that the behaviour is *different* from the behaviour on python ints and doctests illustrating the difference, since this is likely to be confusing (i.e. for python ints you get a prepended 0, but not for sage ints). See the documentation of `Integer.__hex__` for an example. Also I want to see an example with negative numbers.",
+    "created_at": "2008-05-01T05:32:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3062",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3062#issuecomment-21138",
+    "user": "dmharvey"
+}
+```
 
 Code looks okay to me but the documentation could do with improvement. "Numerial" is not a word. Also I'd like some explanation that the behaviour is *different* from the behaviour on python ints and doctests illustrating the difference, since this is likely to be confusing (i.e. for python ints you get a prepended 0, but not for sage ints). See the documentation of `Integer.__hex__` for an example. Also I want to see an example with negative numbers.
 
 
+
 ---
 
-Comment by TimothyClemans created at 2008-05-01 05:44:25
+archive/issue_comments_021139.json:
+```json
+{
+    "body": "Improved documentation per David's review.",
+    "created_at": "2008-05-01T05:44:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3062",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3062#issuecomment-21139",
+    "user": "TimothyClemans"
+}
+```
 
 Improved documentation per David's review.
 
 
+
 ---
 
-Comment by dmharvey created at 2008-05-01 05:52:09
+archive/issue_comments_021140.json:
+```json
+{
+    "body": "Tim, there are still no examples showing what happens with plain python ints. I mean like\n\n\n```\nsage: oct(int(10))\n'012'\n```\n\n\nvs oct(Integer(10))",
+    "created_at": "2008-05-01T05:52:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3062",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3062#issuecomment-21140",
+    "user": "dmharvey"
+}
+```
 
 Tim, there are still no examples showing what happens with plain python ints. I mean like
 
@@ -80,50 +127,129 @@ sage: oct(int(10))
 vs oct(Integer(10))
 
 
+
 ---
 
-Comment by TimothyClemans created at 2008-05-01 06:03:50
+archive/issue_comments_021141.json:
+```json
+{
+    "body": "Added examples showing difference between int and Integer oct behavior per David's request.",
+    "created_at": "2008-05-01T06:03:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3062",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3062#issuecomment-21141",
+    "user": "TimothyClemans"
+}
+```
 
 Added examples showing difference between int and Integer oct behavior per David's request.
 
 
+
 ---
 
-Comment by dmharvey created at 2008-05-01 06:10:47
+archive/issue_comments_021142.json:
+```json
+{
+    "body": "Tim... I don't understand now why you have *two* EXAMPLES blocks, and moreover one of them is contained inside the latex \\note block! Why not just keep it simple? Just one block of examples, showing all the key issues, and don't put them inside the latex tags! :-)",
+    "created_at": "2008-05-01T06:10:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3062",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3062#issuecomment-21142",
+    "user": "dmharvey"
+}
+```
 
 Tim... I don't understand now why you have *two* EXAMPLES blocks, and moreover one of them is contained inside the latex \note block! Why not just keep it simple? Just one block of examples, showing all the key issues, and don't put them inside the latex tags! :-)
 
 
+
 ---
+
+archive/issue_comments_021143.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-05-01T06:30:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3062",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3062#issuecomment-21143",
+    "user": "TimothyClemans"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by TimothyClemans created at 2008-05-01 06:30:48
+archive/issue_comments_021144.json:
+```json
+{
+    "body": "Flatten the patches and merged the two example blocks per David's review.",
+    "created_at": "2008-05-01T06:30:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3062",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3062#issuecomment-21144",
+    "user": "TimothyClemans"
+}
+```
 
 Flatten the patches and merged the two example blocks per David's review.
 
 
+
 ---
 
-Comment by dmharvey created at 2008-05-01 15:30:56
+archive/issue_comments_021145.json:
+```json
+{
+    "body": "Ok this is fine.\n\nNote to release manager: only apply the last patch (3062_flatten.patch).",
+    "created_at": "2008-05-01T15:30:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3062",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3062#issuecomment-21145",
+    "user": "dmharvey"
+}
+```
 
 Ok this is fine.
 
 Note to release manager: only apply the last patch (3062_flatten.patch).
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-02 12:57:11
+archive/issue_comments_021146.json:
+```json
+{
+    "body": "Merged in Sage 3.0.1.rc0",
+    "created_at": "2008-05-02T12:57:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3062",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3062#issuecomment-21146",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.1.rc0
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-02 12:57:11
+archive/issue_comments_021147.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-05-02T12:57:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3062",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3062#issuecomment-21147",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

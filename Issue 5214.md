@@ -1,11 +1,21 @@
 # Issue 5214: coercion to orders in relative number fields is not implemented
 
-Issue created by migration from https://trac.sagemath.org/ticket/5214
-
-Original creator: ncalexan
-
-Original creation time: 2009-02-09 05:34:51
-
+archive/issues_005214.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  robertwb\n\nKeywords: relative order number field coercion\n\n\n```\nsage: t = OK.basis()[0]\nsage: x = ZZ['x'].0\nsage: K.<a,b> = NumberField([x^2 + 1, x^2 - 3])\nsage: OK = K.maximal_order(); OK.basis()                                                                                          \n[1, 1/2*a - 1/2*b, -1/2*b*a + 1/2, a]\nsage: OK(a)\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (363, 0))\n\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1152, 0))\n\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/ncalexan/.sage/temp/sage.math.washington.edu/21534/_home_ncalexan__sage_init_sage_0.py in <module>()\n\n/scratch/ncalexan/sage-3.3.alpha5-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/rings/number_field/order.pyc\\\n in __call__(self, x)\n   1192         if x.parent() is not self._K:\n   1193             x = self._K(x)\n-> 1194         x = self._absolute_order(x) # will test membership\n   1195         return OrderElement_relative(self, x)\n   1196\n\n/scratch/ncalexan/sage-3.3.alpha5-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/rings/number_field/order.pyc\\\n in __call__(self, x)\n    900             return x\n    901         if not is_Element(x) or x.parent() is not self._K:\n--> 902             x = self._K(x)\n    903         V, _, embedding = self._K.vector_space()\n    904         if not embedding(x) in self._module_rep:\n\n/scratch/ncalexan/sage-3.3.alpha5-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/structure/parent.so in sage.\\\nstructure.parent.Parent.__call__ (sage/structure/parent.c:3653)()\n\n/scratch/ncalexan/sage-3.3.alpha5-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/structure/coerce_maps.so in \\\nsage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:2793)()\n\n/scratch/ncalexan/sage-3.3.alpha5-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/structure/coerce_maps.so in \\\nsage.structure.coerce_maps._call_ (sage/structure/coerce_maps.c:2700)()\n\n/scratch/ncalexan/sage-3.3.alpha5-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/rings/number_field/number_fi\\\neld.pyc in _element_constructor_(self, x)\n    829                     return self._element_class(self, x)\n    830                 x = L(x)\n--> 831             return self._coerce_from_other_number_field(x)\n    832         elif isinstance(x,str):\n    833             return self._coerce_from_str(x)\n\n/scratch/ncalexan/sage-3.3.alpha5-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/rings/number_field/number_fi\\\neld.pyc in _coerce_from_other_number_field(self, x)\n   3560             return self._element_class(self, f[0])\n   3561         # todo: more general coercion if embedding have been asserted\n-> 3562         raise TypeError, \"Cannot coerce element into this number field\"\n   3563\n   3564     def _coerce_non_number_field_element_in(self, x):\n\nTypeError: Cannot coerce element into this number field\nOK(b)\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (363, 0))\n\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1152, 0))\n\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/ncalexan/.sage/temp/sage.math.washington.edu/21534/_home_ncalexan__sage_init_sage_0.py in <module>()\n\n/scratch/ncalexan/sage-3.3.alpha5-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/rings/number_field/order.pyc\\\n in __call__(self, x)\n   1192         if x.parent() is not self._K:\n   1193             x = self._K(x)\n-> 1194         x = self._absolute_order(x) # will test membership\n   1195         return OrderElement_relative(self, x)\n   1196\n\n/scratch/ncalexan/sage-3.3.alpha5-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/rings/number_field/order.pyc\\\n in __call__(self, x)\n    900             return x\n    901         if not is_Element(x) or x.parent() is not self._K:\n--> 902             x = self._K(x)\n    903         V, _, embedding = self._K.vector_space()\n    904         if not embedding(x) in self._module_rep:\n\n/scratch/ncalexan/sage-3.3.alpha5-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/structure/parent.so in sage.\\\nstructure.parent.Parent.__call__ (sage/structure/parent.c:3653)()\n\n/scratch/ncalexan/sage-3.3.alpha5-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/structure/coerce_maps.so in \\\nsage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:2793)()\n\n/scratch/ncalexan/sage-3.3.alpha5-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/structure/coerce_maps.so in \\\nsage.structure.coerce_maps._call_ (sage/structure/coerce_maps.c:2700)()\n\n/scratch/ncalexan/sage-3.3.alpha5-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/rings/number_field/number_fi\\\neld.pyc in _element_constructor_(self, x)\n    829                     return self._element_class(self, x)\n    830                 x = L(x)\n--> 831             return self._coerce_from_other_number_field(x)\n    832         elif isinstance(x,str):\n    833             return self._coerce_from_str(x)\n\n/scratch/ncalexan/sage-3.3.alpha5-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/rings/number_field/number_fi\\\neld.pyc in _coerce_from_other_number_field(self, x)\n/scratch/ncalexan/sage-3.3.alpha5-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/rings/number_field/number_fi\\\neld.pyc in _coerce_from_other_number_field(self, x)\n   3560             return self._element_class(self, f[0])\n   3561         # todo: more general coercion if embedding have been asserted\n-> 3562         raise TypeError, \"Cannot coerce element into this number field\"\n   3563\n   3564     def _coerce_non_number_field_element_in(self, x):\n\nTypeError: Cannot coerce element into this number field\nsage: OK.basis()[3].list()\n[0, 1]\nsage: OK(OK.basis()[3].list())\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/ncalexan/.sage/temp/sage.math.washington.edu/21534/_home_ncalexan__sage_init_sage_0.py in <module>()\n\n/scratch/ncalexan/sage-3.3.alpha5-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/rings/number_field/order.pyc\\\n in __call__(self, x)\n   1190         Coerce an element into this relative order.\n   1191         \"\"\"                                                                                                               \n-> 1192         if x.parent() is not self._K:                                                                                     \n   1193             x = self._K(x)                                                                                                \n   1194         x = self._absolute_order(x) # will test membership                                                                \n                                                                                                                                  \nAttributeError: 'list' object has no attribute 'parent'                                      \n```\n                                    \n\nIssue created by migration from https://trac.sagemath.org/ticket/5214\n\n",
+    "created_at": "2009-02-09T05:34:51Z",
+    "labels": [
+        "number theory",
+        "minor",
+        "bug"
+    ],
+    "title": "coercion to orders in relative number fields is not implemented",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5214",
+    "user": "ncalexan"
+}
+```
 Assignee: was
 
 CC:  robertwb
@@ -150,12 +160,28 @@ AttributeError                            Traceback (most recent call last)
    1194         x = self._absolute_order(x) # will test membership                                                                
                                                                                                                                   
 AttributeError: 'list' object has no attribute 'parent'                                      
-}}}                                    
+```
+                                    
+
+Issue created by migration from https://trac.sagemath.org/ticket/5214
+
+
+
 
 
 ---
 
-Comment by mabshoff created at 2009-02-09 06:02:07
+archive/issue_comments_039949.json:
+```json
+{
+    "body": "3.4 is mostly about the ReST patches. Once those are in we will likely cut 3.4 as a release and then quickly open 3.4.1 to merge fixes on top of the ReST code.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-09T06:02:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5214",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5214#issuecomment-39949",
+    "user": "mabshoff"
+}
+```
 
 3.4 is mostly about the ReST patches. Once those are in we will likely cut 3.4 as a release and then quickly open 3.4.1 to merge fixes on top of the ReST code.
 
@@ -164,16 +190,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by fwclarke created at 2009-03-13 19:03:22
+archive/issue_comments_039950.json:
+```json
+{
+    "body": "The problem is solved by changes to `__call__` for the class `RelativeOrder` in `sage/rings/number_theory/order.py` to be found in #5508.",
+    "created_at": "2009-03-13T19:03:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5214",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5214#issuecomment-39950",
+    "user": "fwclarke"
+}
+```
 
 The problem is solved by changes to `__call__` for the class `RelativeOrder` in `sage/rings/number_theory/order.py` to be found in #5508.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-03-25 08:55:39
+archive/issue_comments_039951.json:
+```json
+{
+    "body": "To close this we would need a doctest.\n\nCheers,\n\nMichael",
+    "created_at": "2009-03-25T08:55:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5214",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5214#issuecomment-39951",
+    "user": "mabshoff"
+}
+```
 
 To close this we would need a doctest.
 
@@ -182,9 +230,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by fwclarke created at 2009-03-26 08:51:15
+archive/issue_comments_039952.json:
+```json
+{
+    "body": "Replying to [comment:3 mabshoff]:\n> To close this we would need a doctest.\n\nSee lines 1194 to 1199 of sage/rings/number_field/order.py as patched by \n#5508:\n\n```\n            sage: K.<a, b> = NumberField([x^2 + 2, x^2 + 1000*x + 1]) \n            sage: OK = K.ring_of_integers()\n            sage: OK(a)\n            sage: a\n            sage: OK([3, 4])\n            4*a + 3\n```\n",
+    "created_at": "2009-03-26T08:51:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5214",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5214#issuecomment-39952",
+    "user": "fwclarke"
+}
+```
 
 Replying to [comment:3 mabshoff]:
 > To close this we would need a doctest.
@@ -203,16 +262,38 @@ See lines 1194 to 1199 of sage/rings/number_field/order.py as patched by
 
 
 
+
 ---
 
-Comment by mabshoff created at 2009-03-26 20:35:55
+archive/issue_comments_039953.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-03-26T20:35:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5214",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5214#issuecomment-39953",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-03-26 20:35:55
+archive/issue_comments_039954.json:
+```json
+{
+    "body": "Fixed in Sage 3.4.1.alpha0 via #5508. Thanks Francis :)\n\nCheers,\n\nMichael",
+    "created_at": "2009-03-26T20:35:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5214",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5214#issuecomment-39954",
+    "user": "mabshoff"
+}
+```
 
 Fixed in Sage 3.4.1.alpha0 via #5508. Thanks Francis :)
 

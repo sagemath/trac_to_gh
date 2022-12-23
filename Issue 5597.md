@@ -1,11 +1,21 @@
 # Issue 5597: [with patch, needs review] rename coercion action methods
 
-Issue created by migration from https://trac.sagemath.org/ticket/5597
-
-Original creator: robertwb
-
-Original creation time: 2009-03-24 05:09:01
-
+archive/issues_005597.json:
+```json
+{
+    "body": "Assignee: robertwb\n\nCC:  nthiery georgsweber craigcitro\n\n\n```\nCurrently, if A has an action on B (where B is not an A-module) one  \nimplements either a._l_action_ or b._r_action_. This is because  \nsometimes it makes sense to put the method on the actor (e.g. Galois  \ngroups acting on field elements) and sometimes on the acted on (e.g.  \nmatrices acting on quadratic forms). However, the _x_action_ is hard  \nto remember and doesn't always correspond to right/left actions. This  \nmay be why they're hardly used up to this point.\n\nThe proposal is to make the methods a._act_on_(b, self_on_left) and  \nb._acted_upon_(a, self_on_left). In other words, a*b would try  \n\"a._act_on_(b, True)\" and \"b._acted_upon_(a, False)\". \n```\n\n\nSee discussion at \n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/4c6ce1731ace1016\n\nIssue created by migration from https://trac.sagemath.org/ticket/5597\n\n",
+    "created_at": "2009-03-24T05:09:01Z",
+    "labels": [
+        "coercion",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch, needs review] rename coercion action methods",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5597",
+    "user": "robertwb"
+}
+```
 Assignee: robertwb
 
 CC:  nthiery georgsweber craigcitro
@@ -30,22 +40,61 @@ See discussion at
 
 http://groups.google.com/group/sage-devel/browse_thread/thread/4c6ce1731ace1016
 
+Issue created by migration from https://trac.sagemath.org/ticket/5597
+
+
+
+
 
 ---
+
+archive/issue_comments_043602.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-03-24T05:17:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5597",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5597#issuecomment-43602",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by robertwb created at 2009-03-24 05:18:45
+archive/issue_comments_043603.json:
+```json
+{
+    "body": "Rename and cleanup actions. Depends on #5596.",
+    "created_at": "2009-03-24T05:18:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5597",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5597#issuecomment-43603",
+    "user": "robertwb"
+}
+```
 
 Rename and cleanup actions. Depends on #5596.
 
 
+
 ---
 
-Comment by GeorgSWeber created at 2009-03-24 21:00:39
+archive/issue_comments_043604.json:
+```json
+{
+    "body": "Minor issue: in element.pyx, both new actions are commented with \"Use this method to implement self acting on x.\" --- probably a copy'n'paste error for \"_acted_upon_\"?!\n\nCheers,\ngsw",
+    "created_at": "2009-03-24T21:00:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5597",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5597#issuecomment-43604",
+    "user": "GeorgSWeber"
+}
+```
 
 Minor issue: in element.pyx, both new actions are commented with "Use this method to implement self acting on x." --- probably a copy'n'paste error for "_acted_upon_"?!
 
@@ -53,40 +102,112 @@ Cheers,
 gsw
 
 
+
 ---
 
-Comment by was created at 2009-04-12 05:02:12
+archive/issue_comments_043605.json:
+```json
+{
+    "body": "REFEREE REPORT:\n\nThis patch contains substantial new code that has no doctests.  Please post another patch with full coverage.",
+    "created_at": "2009-04-12T05:02:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5597",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5597#issuecomment-43605",
+    "user": "was"
+}
+```
 
 REFEREE REPORT:
 
 This patch contains substantial new code that has no doctests.  Please post another patch with full coverage.
 
 
+
 ---
 
-Comment by robertwb created at 2009-09-25 08:36:48
+archive/issue_comments_043606.json:
+```json
+{
+    "body": "rebased against 4.1.1",
+    "created_at": "2009-09-25T08:36:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5597",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5597#issuecomment-43606",
+    "user": "robertwb"
+}
+```
 
 rebased against 4.1.1
 
 
+
 ---
+
+archive/issue_comments_043607.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-09-25T08:40:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5597",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5597#issuecomment-43607",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_043608.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-09-25T08:41:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5597",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5597#issuecomment-43608",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_043609.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-09-29T18:27:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5597",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5597#issuecomment-43609",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by nthiery created at 2009-10-12 10:51:44
+archive/issue_comments_043610.json:
+```json
+{
+    "body": "Hi Robert,\n\nSorry for hopping so late in the discussion. I am not sure how I understand how left vs right actions are handled.\n\nIn a*b, are you always making the assumption that a is acting on b?\n\nIf I have an algebra B (whose code I don't want to touch), and implement a right B-module A,\nam I supposed to implement:\n\n   a.act_on(b)?\n\nOr will a*b try all of:\n\n   b.act_on(a, False)\n   b.acted_upon(a, False)\n   a.act_on(b, True)\n   a.acted_upon(b, True)",
+    "created_at": "2009-10-12T10:51:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5597",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5597#issuecomment-43610",
+    "user": "nthiery"
+}
+```
 
 Hi Robert,
 
@@ -107,16 +228,38 @@ Or will a*b try all of:
    a.acted_upon(b, True)
 
 
+
 ---
 
-Comment by robertwb created at 2009-10-13 00:29:46
+archive/issue_comments_043611.json:
+```json
+{
+    "body": "Yes, it should be trying all 4 of these options.",
+    "created_at": "2009-10-13T00:29:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5597",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5597#issuecomment-43611",
+    "user": "robertwb"
+}
+```
 
 Yes, it should be trying all 4 of these options.
 
 
+
 ---
 
-Comment by nthiery created at 2009-10-14 10:35:50
+archive/issue_comments_043612.json:
+```json
+{
+    "body": "Replying to [comment:7 robertwb]:\n> Yes, it should be trying all 4 of these options. \n\nOk. Then I would prefer:\n\na.act_on_left(b)\nb.act_on_right(a)\na.acted_upon_right(b)\nb.acted_upon_left(a)\n\nwhich makes it easier to implement independently the left and right actions on a module, and possibly override just one or the other in a subclass.\n\nThat being said, we can leave things as is. Those modules for which left and right action do not coincide can later implement a.acted_upon(...) by delegating the work to\nacted_upon_left and acted_upon_right.",
+    "created_at": "2009-10-14T10:35:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5597",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5597#issuecomment-43612",
+    "user": "nthiery"
+}
+```
 
 Replying to [comment:7 robertwb]:
 > Yes, it should be trying all 4 of these options. 
@@ -134,32 +277,76 @@ That being said, we can leave things as is. Those modules for which left and rig
 acted_upon_left and acted_upon_right.
 
 
+
 ---
 
-Comment by robertwb created at 2009-10-15 05:44:26
+archive/issue_comments_043613.json:
+```json
+{
+    "body": "But then we're back to the same problem of `s.acted_upon_right(p)` not being obvious whether s or p was the one on the right (though it's a bit better). In any case, this behavior is easy to implement in a superclass. \n\nSo, is this a positive review (pending all doctests passing, which they did last I checked)?",
+    "created_at": "2009-10-15T05:44:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5597",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5597#issuecomment-43613",
+    "user": "robertwb"
+}
+```
 
 But then we're back to the same problem of `s.acted_upon_right(p)` not being obvious whether s or p was the one on the right (though it's a bit better). In any case, this behavior is easy to implement in a superclass. 
 
 So, is this a positive review (pending all doctests passing, which they did last I checked)?
 
 
+
 ---
 
-Comment by nthiery created at 2009-10-15 12:15:33
+archive/issue_comments_043614.json:
+```json
+{
+    "body": "Changing type from defect to enhancement.",
+    "created_at": "2009-10-15T12:15:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5597",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5597#issuecomment-43614",
+    "user": "nthiery"
+}
+```
 
 Changing type from defect to enhancement.
 
 
+
 ---
 
-Comment by nthiery created at 2009-10-15 12:15:33
+archive/issue_comments_043615.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-10-15T12:15:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5597",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5597#issuecomment-43615",
+    "user": "nthiery"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by nthiery created at 2009-10-15 12:15:33
+archive/issue_comments_043616.json:
+```json
+{
+    "body": "Replying to [comment:9 robertwb]:\n> But then we're back to the same problem of `s.acted_upon_right(p)` not being obvious whether s or p was the one on the right (though it's a bit better). \n\nIt sounds rather clear to me.\n\n> In any case, this behavior is easy to implement in a superclass. \n\nYes.\n\n> So, is this a positive review (pending all doctests passing, which they did last I checked)?\n\nYes, I just wanted to discuss the matter first. Also, part of this may become obsolete once I will have a prototype implementation of overloaded operators/functions as in MuPAD, with a declarative interface (the Sage-combinat people need them anyway for other purposes). I'll post here a link to the appropriate ticket when times come.",
+    "created_at": "2009-10-15T12:15:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5597",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5597#issuecomment-43616",
+    "user": "nthiery"
+}
+```
 
 Replying to [comment:9 robertwb]:
 > But then we're back to the same problem of `s.acted_upon_right(p)` not being obvious whether s or p was the one on the right (though it's a bit better). 
@@ -175,57 +362,147 @@ Yes.
 Yes, I just wanted to discuss the matter first. Also, part of this may become obsolete once I will have a prototype implementation of overloaded operators/functions as in MuPAD, with a declarative interface (the Sage-combinat people need them anyway for other purposes). I'll post here a link to the appropriate ticket when times come.
 
 
+
 ---
 
-Comment by nthiery created at 2009-10-15 12:15:33
+archive/issue_comments_043617.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"actions, left actions, right actions\".",
+    "created_at": "2009-10-15T12:15:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5597",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5597#issuecomment-43617",
+    "user": "nthiery"
+}
+```
 
 Changing keywords from "" to "actions, left actions, right actions".
 
 
+
 ---
+
+archive/issue_comments_043618.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-10-21T06:03:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5597",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5597#issuecomment-43618",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-21 06:08:25
+archive/issue_comments_043619.json:
+```json
+{
+    "body": "I've attached trac_5597.patch which is all the the relevant patches folded together and then rebased.\n\nI also attached trac_5597-infinite_polynomial_ring.patch which fixes some failures since an_element was returning a \"generator\" and not an actual element.",
+    "created_at": "2009-10-21T06:08:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5597",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5597#issuecomment-43619",
+    "user": "mhansen"
+}
+```
 
 I've attached trac_5597.patch which is all the the relevant patches folded together and then rebased.
 
 I also attached trac_5597-infinite_polynomial_ring.patch which fixes some failures since an_element was returning a "generator" and not an actual element.
 
 
+
 ---
 
-Comment by mpatel created at 2009-10-21 06:16:59
+archive/issue_comments_043620.json:
+```json
+{
+    "body": "I applied just [attachment:trac_5597-infinite_polynomial_ring.patch] to 4.2.alpha0 and doctested `sage/rings/polynomial/infinite_polynomial_ring.py`.  Positive review for this patch.",
+    "created_at": "2009-10-21T06:16:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5597",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5597#issuecomment-43620",
+    "user": "mpatel"
+}
+```
 
 I applied just [attachment:trac_5597-infinite_polynomial_ring.patch] to 4.2.alpha0 and doctested `sage/rings/polynomial/infinite_polynomial_ring.py`.  Positive review for this patch.
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-21 06:18:48
+archive/issue_comments_043621.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-10-21T06:18:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5597",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5597#issuecomment-43621",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-21 06:18:48
+archive/issue_comments_043622.json:
+```json
+{
+    "body": "Merged trac_5597.patch and trac_5597-infinite_polynomial_ring.patch in sage-4.2.alpha1.",
+    "created_at": "2009-10-21T06:18:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5597",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5597#issuecomment-43622",
+    "user": "mhansen"
+}
+```
 
 Merged trac_5597.patch and trac_5597-infinite_polynomial_ring.patch in sage-4.2.alpha1.
 
 
+
 ---
 
-Comment by robertwb created at 2009-10-21 06:50:46
+archive/issue_comments_043623.json:
+```json
+{
+    "body": "Thanks! It's so good to finally see all these coercion and category patches go in.",
+    "created_at": "2009-10-21T06:50:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5597",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5597#issuecomment-43623",
+    "user": "robertwb"
+}
+```
 
 Thanks! It's so good to finally see all these coercion and category patches go in.
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-21 06:54:15
+archive/issue_comments_043624.json:
+```json
+{
+    "body": "Me too! Thanks for doing them!",
+    "created_at": "2009-10-21T06:54:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5597",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5597#issuecomment-43624",
+    "user": "mhansen"
+}
+```
 
 Me too! Thanks for doing them!

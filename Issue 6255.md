@@ -1,11 +1,21 @@
 # Issue 6255: update doc system to latex sphinx and improve build system
 
-Issue created by migration from https://trac.sagemath.org/ticket/6255
-
-Original creator: ncalexan
-
-Original creation time: 2009-06-10 00:32:33
-
+archive/issues_006255.json:
+```json
+{
+    "body": "Assignee: tba\n\nCC:  mhansen craigcitro\n\nKeywords: documentation build sphinx parallel\n\nThis is a reminder ticket for mhansen.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6255\n\n",
+    "created_at": "2009-06-10T00:32:33Z",
+    "labels": [
+        "documentation",
+        "major",
+        "bug"
+    ],
+    "title": "update doc system to latex sphinx and improve build system",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6255",
+    "user": "ncalexan"
+}
+```
 Assignee: tba
 
 CC:  mhansen craigcitro
@@ -14,31 +24,79 @@ Keywords: documentation build sphinx parallel
 
 This is a reminder ticket for mhansen.
 
+Issue created by migration from https://trac.sagemath.org/ticket/6255
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2009-06-10 00:36:07
+archive/issue_comments_049958.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-06-10T00:36:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6255",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6255#issuecomment-49958",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mhansen created at 2009-06-10 00:36:07
+archive/issue_comments_049959.json:
+```json
+{
+    "body": "Changing assignee from tba to mhansen.",
+    "created_at": "2009-06-10T00:36:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6255",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6255#issuecomment-49959",
+    "user": "mhansen"
+}
+```
 
 Changing assignee from tba to mhansen.
 
 
+
 ---
 
-Comment by mpatel created at 2009-11-29 20:24:32
+archive/issue_comments_049960.json:
+```json
+{
+    "body": "Please see #6495 for a tentative approach to parallel doc builds",
+    "created_at": "2009-11-29T20:24:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6255",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6255#issuecomment-49960",
+    "user": "mpatel"
+}
+```
 
 Please see #6495 for a tentative approach to parallel doc builds
 
 
+
 ---
 
-Comment by hivert created at 2012-04-20 22:16:54
+archive/issue_comments_049961.json:
+```json
+{
+    "body": "I made an attempt to have parallel doc build. It seems that I have it for the **write** part of the doc generation process. Here is the diff\n\n```diff\ndiff --git a/builders/__init__.py b/builders/__init__.py\n--- a/builders/__init__.py\n+++ b/builders/__init__.py\n@@ -286,14 +286,27 @@ class Builder(object):\n         # write target files\n         warnings = []\n         self.env.set_warnfunc(lambda *args: warnings.append(args))\n+        #for docname in self.status_iterator(\n+        #    sorted(docnames), 'writing output... ', darkgreen, len(docnames)):\n+        #    doctree = self.env.get_and_resolve_doctree(docname, self)\n+        #    self.write_doc(docname, doctree)\n+        from sage.parallel.decorate import parallel\n+        import itertools\n+        worker = parallel('fork')(self.write_doc_parallel_worker)\n+        pariter = itertools.imap(lambda x:x[1], worker(sorted(docnames)))\n         for docname in self.status_iterator(\n-            sorted(docnames), 'writing output... ', darkgreen, len(docnames)):\n-            doctree = self.env.get_and_resolve_doctree(docname, self)\n-            self.write_doc(docname, doctree)\n+            pariter, 'writing output... ', darkgreen, len(docnames)):\n+            # done in the iterator !!!\n+            pass\n         for warning in warnings:\n             self.warn(*warning)\n         self.env.set_warnfunc(self.warn)\n \n+    def write_doc_parallel_worker(self, docname):\n+        doctree = self.env.get_and_resolve_doctree(docname, self)\n+        self.write_doc(docname, doctree)\n+        return docname\n+\n     def prepare_writing(self, docnames):\n         raise NotImplementedError\n```\n \n\nThe read part could be more tricky but it doesn't seems unfeasible. Note that I may be dreaming here.",
+    "created_at": "2012-04-20T22:16:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6255",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6255#issuecomment-49961",
+    "user": "hivert"
+}
+```
 
 I made an attempt to have parallel doc build. It seems that I have it for the **write** part of the doc generation process. Here is the diff
 
@@ -76,26 +134,64 @@ diff --git a/builders/__init__.py b/builders/__init__.py
 +
      def prepare_writing(self, docnames):
          raise NotImplementedError
-}}} 
+```
+ 
 
 The read part could be more tricky but it doesn't seems unfeasible. Note that I may be dreaming here.
 
 
+
 ---
 
-Comment by hivert created at 2012-04-21 15:59:58
+archive/issue_comments_049962.json:
+```json
+{
+    "body": "Experimental timing patch",
+    "created_at": "2012-04-21T15:59:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6255",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6255#issuecomment-49962",
+    "user": "hivert"
+}
+```
 
 Experimental timing patch
 
 
+
 ---
+
+archive/issue_comments_049963.json:
+```json
+{
+    "body": "Attachment\n\nExperimental parallel doc output patch",
+    "created_at": "2012-04-21T16:00:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6255",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6255#issuecomment-49963",
+    "user": "hivert"
+}
+```
 
 Attachment
 
 Experimental parallel doc output patch
 
 
+
 ---
+
+archive/issue_comments_049964.json:
+```json
+{
+    "body": "Attachment\n\nHi there,\n\nI just attached two patches. They need to be applied in\n\n```\n$SAGE_ROOT/local/lib/python2.7/site-packages/Sphinx-1.1.2-py2.7.egg/sphinx/\n```\n\n(I didn't regenerate a spkg yet). Those two packages are very experimental and\nthey certainly break a lot of things. The goal of `timing.patch` is to\nimprove Sphinx timning and progress report. The second one uses\n``@`parallel` to parallelize the writing part of the doc generation. This is\nvery raw and could certainly be optimized using Pool, Queue and the\nlike. Still the improvement is allready here:\nOn a intel i7 8 multithreaded core:\n- serie:\n\n```\nreading sources...  Elapsed time = 385.334967136\nwriting output...  Elapsed time = 1903.10733795\n```\n\n- parallel:\n\n```\nreading sources...  Elapsed time = 418.675282001\nwriting output...  Elapsed time = 253.907614946\n```\n\nOn a 24 core server:\n- serie:\n\n```\nreading sources...  Elapsed time = 243.982397079\nwriting output...  Elapsed time = 1366.98643208\n```\n\n- parallel:\n\n```\nreading sources...  Elapsed time = 243.729380131\nwriting output...  Elapsed time = 176.76424408\n```\n\n\nFlorent",
+    "created_at": "2012-04-21T16:09:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6255",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6255#issuecomment-49964",
+    "user": "hivert"
+}
+```
 
 Attachment
 
@@ -147,9 +243,20 @@ writing output...  Elapsed time = 176.76424408
 Florent
 
 
+
 ---
 
-Comment by hivert created at 2012-04-21 20:40:17
+archive/issue_comments_049965.json:
+```json
+{
+    "body": "With a little tunning I managed to have\n\n```\nserie    writing output...  Elapsed time = 1366.98643208\nparallel writing output...  Elapsed time = 106.421586037\n```\n\nLooks efficient !",
+    "created_at": "2012-04-21T20:40:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6255",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6255#issuecomment-49965",
+    "user": "hivert"
+}
+```
 
 With a little tunning I managed to have
 
@@ -161,29 +268,73 @@ parallel writing output...  Elapsed time = 106.421586037
 Looks efficient !
 
 
+
 ---
 
-Comment by hivert created at 2013-06-28 22:04:41
+archive/issue_comments_049966.json:
+```json
+{
+    "body": "This should be closed as a duplicate for #6495.",
+    "created_at": "2013-06-28T22:04:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6255",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6255#issuecomment-49966",
+    "user": "hivert"
+}
+```
 
 This should be closed as a duplicate for #6495.
 
 
+
 ---
 
-Comment by hivert created at 2013-06-28 22:04:41
+archive/issue_comments_049967.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2013-06-28T22:04:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6255",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6255#issuecomment-49967",
+    "user": "hivert"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by hivert created at 2013-06-28 22:05:09
+archive/issue_comments_049968.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2013-06-28T22:05:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6255",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6255#issuecomment-49968",
+    "user": "hivert"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-08-13 08:41:09
+archive/issue_comments_049969.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2013-08-13T08:41:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6255",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6255#issuecomment-49969",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: duplicate

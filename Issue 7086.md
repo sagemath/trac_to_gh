@@ -1,11 +1,21 @@
 # Issue 7086: vanilla hg vs. "sage -hg"
 
-Issue created by migration from https://trac.sagemath.org/ticket/7086
-
-Original creator: hemmecke
-
-Original creation time: 2009-09-30 23:20:20
-
+archive/issues_007086.json:
+```json
+{
+    "body": "Assignee: cwitty\n\nCC:  hemmecke\n\nKeywords: hg\n\nVanilla hg accepts something like\n\n  hg commit -m 'some comment'\n\nHowever, if hg is a script that calls \"sage -hg\" (like /usr/local/bin/hg on sage.math.washington.edu), then the above command does not work.\n\nThe following was issued on the above server:\nmkdir a\ncd a\nhg init\necho \"abc def\" > abc\nhg add abc\nhg commit -m 'some comment'\ncomment: No such file or directory\nabort: file comment not found!\n\nIssue created by migration from https://trac.sagemath.org/ticket/7086\n\n",
+    "created_at": "2009-09-30T23:20:20Z",
+    "labels": [
+        "misc",
+        "major",
+        "bug"
+    ],
+    "title": "vanilla hg vs. \"sage -hg\"",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7086",
+    "user": "hemmecke"
+}
+```
 Assignee: cwitty
 
 CC:  hemmecke
@@ -28,23 +38,60 @@ hg commit -m 'some comment'
 comment: No such file or directory
 abort: file comment not found!
 
+Issue created by migration from https://trac.sagemath.org/ticket/7086
+
+
+
+
 
 ---
 
-Comment by jdemeyer created at 2010-10-10 21:36:26
+archive/issue_comments_058575.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-10-10T21:36:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7086",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7086#issuecomment-58575",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-10-10 21:36:26
+archive/issue_comments_058576.json:
+```json
+{
+    "body": "This seems to be fixed now.",
+    "created_at": "2010-10-10T21:36:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7086",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7086#issuecomment-58576",
+    "user": "jdemeyer"
+}
+```
 
 This seems to be fixed now.
 
 
+
 ---
 
-Comment by mpatel created at 2010-10-22 09:20:29
+archive/issue_comments_058577.json:
+```json
+{
+    "body": "Resolution: worksforme",
+    "created_at": "2010-10-22T09:20:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7086",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7086#issuecomment-58577",
+    "user": "mpatel"
+}
+```
 
 Resolution: worksforme

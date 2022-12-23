@@ -1,61 +1,154 @@
 # Issue 4920: convert sage.modular.* docstrings to Sphinx
 
-Issue created by migration from https://trac.sagemath.org/ticket/4920
-
-Original creator: mhansen
-
-Original creation time: 2009-01-01 22:54:21
-
+archive/issues_004920.json:
+```json
+{
+    "body": "Assignee: tba\n\nCC:  craigcitro\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4920\n\n",
+    "created_at": "2009-01-01T22:54:21Z",
+    "labels": [
+        "documentation",
+        "major",
+        "enhancement"
+    ],
+    "title": "convert sage.modular.* docstrings to Sphinx",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4920",
+    "user": "mhansen"
+}
+```
 Assignee: tba
 
 CC:  craigcitro
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4920
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2009-01-02 02:50:18
+archive/issue_comments_037335.json:
+```json
+{
+    "body": "Patch at http://sage.math.washington.edu/home/mhansen/trac_4920.patch",
+    "created_at": "2009-01-02T02:50:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4920",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4920#issuecomment-37335",
+    "user": "mhansen"
+}
+```
 
 Patch at http://sage.math.washington.edu/home/mhansen/trac_4920.patch
 
 
+
 ---
+
+archive/issue_comments_037336.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-01-02T06:50:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4920",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4920#issuecomment-37336",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2009-01-02 06:51:38
+archive/issue_comments_037337.json:
+```json
+{
+    "body": "I've added an additional patch which fixes the documentation for sage.modular.etaproducts.",
+    "created_at": "2009-01-02T06:51:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4920",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4920#issuecomment-37337",
+    "user": "mhansen"
+}
+```
 
 I've added an additional patch which fixes the documentation for sage.modular.etaproducts.
 
 
+
 ---
 
-Comment by GeorgSWeber created at 2009-01-15 21:42:19
+archive/issue_comments_037338.json:
+```json
+{
+    "body": "scheduled for January 20th",
+    "created_at": "2009-01-15T21:42:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4920",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4920#issuecomment-37338",
+    "user": "GeorgSWeber"
+}
+```
 
 scheduled for January 20th
 
 
+
 ---
 
-Comment by GeorgSWeber created at 2009-01-15 21:42:47
+archive/issue_comments_037339.json:
+```json
+{
+    "body": "aargh, don't change the Milestone",
+    "created_at": "2009-01-15T21:42:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4920",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4920#issuecomment-37339",
+    "user": "GeorgSWeber"
+}
+```
 
 aargh, don't change the Milestone
 
 
+
 ---
 
-Comment by mhansen created at 2009-01-15 21:49:08
+archive/issue_comments_037340.json:
+```json
+{
+    "body": "I think we'd like to have it done before then so that we can get the ReST version out before Sage Days 12.  I can ask craigcitro to go through and look at it.",
+    "created_at": "2009-01-15T21:49:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4920",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4920#issuecomment-37340",
+    "user": "mhansen"
+}
+```
 
 I think we'd like to have it done before then so that we can get the ReST version out before Sage Days 12.  I can ask craigcitro to go through and look at it.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-15 22:14:06
+archive/issue_comments_037341.json:
+```json
+{
+    "body": "Georg,\n\neither you do a review or you don't, so please don't mark tickets like this if you plan to do it in the next week.\n\nCheers,\n\nMichael",
+    "created_at": "2009-01-15T22:14:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4920",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4920#issuecomment-37341",
+    "user": "mabshoff"
+}
+```
 
 Georg,
 
@@ -66,9 +159,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by GeorgSWeber created at 2009-01-21 00:28:49
+archive/issue_comments_037342.json:
+```json
+{
+    "body": "Positive review for both patches (they're independent).\n\nOf course there are issues, e.g. the ridiculous name for the \"abvar/morphism\" file resp. chapter. But the polishing can happen only after the ReST switch has been completed, and changes can be \"made visible\".\n\nThe most important thing is that all the original information is still in the files, and this I did check. Looking over the Sage modular module, my fingers itch --- so much work (doctests, better and faster code, etc.), so little time ...",
+    "created_at": "2009-01-21T00:28:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4920",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4920#issuecomment-37342",
+    "user": "GeorgSWeber"
+}
+```
 
 Positive review for both patches (they're independent).
 
@@ -77,28 +181,76 @@ Of course there are issues, e.g. the ridiculous name for the "abvar/morphism" fi
 The most important thing is that all the original information is still in the files, and this I did check. Looking over the Sage modular module, my fingers itch --- so much work (doctests, better and faster code, etc.), so little time ...
 
 
+
 ---
+
+archive/issue_comments_037343.json:
+```json
+{
+    "body": "Attachment\n\nThe patch latex-fix-4920.patch fixes some markup problems that prevented the generation of PDF output.",
+    "created_at": "2009-01-23T08:08:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4920",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4920#issuecomment-37343",
+    "user": "cwitty"
+}
+```
 
 Attachment
 
 The patch latex-fix-4920.patch fixes some markup problems that prevented the generation of PDF output.
 
 
+
 ---
+
+archive/issue_comments_037344.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-02-21T19:20:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4920",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4920#issuecomment-37344",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-24 19:11:36
+archive/issue_comments_037345.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-02-24T19:11:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4920",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4920#issuecomment-37345",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-24 19:11:36
+archive/issue_comments_037346.json:
+```json
+{
+    "body": "Merged in Sage 3.4.alpha0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-24T19:11:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4920",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4920#issuecomment-37346",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.4.alpha0.
 

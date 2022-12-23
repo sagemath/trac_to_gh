@@ -1,11 +1,21 @@
 # Issue 5280: problem with a subposet coming from an order_filter
 
-Issue created by migration from https://trac.sagemath.org/ticket/5280
-
-Original creator: jhpalmieri
-
-Original creation time: 2009-02-15 23:44:24
-
+archive/issues_005280.json:
+```json
+{
+    "body": "Assignee: somebody\n\nCC:  sage-combinat\n\nWith sage-3.3.rc0:\n\n```\nsage: B = BooleanLattice(3)\nsage: 4 in B\nTrue\nsage: B.principal_order_filter(4)  # all elements >= 4\n[4, 5, 6, 7]\nsage: B.subposet(B.principal_order_filter(4))\nFinite poset containing 4 elements\nsage: show(B.subposet(B.principal_order_filter(4)))\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n...\nNotImplementedError: BUG: sort algorithm for elements of 'Finite lattice containing 8 elements' not implemented\n```\n\n\nI get the same problem with 'order_filter' instead of 'principal_order_filter', and also for 'order_ideal' (e.g., `show(B.subposet(B.order_ideal([2, 4])))` produces a similar message).  Note, though, that `show(B.subposet(B.principal_order_ideal(4)))` works just fine.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5280\n\n",
+    "created_at": "2009-02-15T23:44:24Z",
+    "labels": [
+        "combinatorics",
+        "minor",
+        "bug"
+    ],
+    "title": "problem with a subposet coming from an order_filter",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5280",
+    "user": "jhpalmieri"
+}
+```
 Assignee: somebody
 
 CC:  sage-combinat
@@ -32,8 +42,25 @@ I get the same problem with 'order_filter' instead of 'principal_order_filter', 
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5280
+
+
+
+
 
 ---
+
+archive/issue_comments_040523.json:
+```json
+{
+    "body": "Attachment\n\nI implemented `__cmp__` for poset elements, which deals with these problems.\n\nThe patch depends on #5918.",
+    "created_at": "2009-04-30T09:19:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5280",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5280#issuecomment-40523",
+    "user": "saliola"
+}
+```
 
 Attachment
 
@@ -42,30 +69,76 @@ I implemented `__cmp__` for poset elements, which deals with these problems.
 The patch depends on #5918.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-05-03 04:36:15
+archive/issue_comments_040524.json:
+```json
+{
+    "body": "This fixes the problem, and all tests pass.  I'd like to give this a positive review since I reported the original problem, but I'm not familiar enough with the posets code to evaluate all of the changes here.  Can anyone else help out?",
+    "created_at": "2009-05-03T04:36:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5280",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5280#issuecomment-40524",
+    "user": "jhpalmieri"
+}
+```
 
 This fixes the problem, and all tests pass.  I'd like to give this a positive review since I reported the original problem, but I'm not familiar enough with the posets code to evaluate all of the changes here.  Can anyone else help out?
 
 
+
 ---
 
-Comment by rlm created at 2009-06-19 22:44:00
+archive/issue_comments_040525.json:
+```json
+{
+    "body": "I'd also give this a positive review, but I have to ask: why is `__cmp__` returning 1 (`cmp(a,b)==1` indicates `a < b`) when elements are incomparable? Shouldn't it be raising an error instead?",
+    "created_at": "2009-06-19T22:44:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5280",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5280#issuecomment-40525",
+    "user": "rlm"
+}
+```
 
 I'd also give this a positive review, but I have to ask: why is `__cmp__` returning 1 (`cmp(a,b)==1` indicates `a < b`) when elements are incomparable? Shouldn't it be raising an error instead?
 
 
+
 ---
+
+archive/issue_comments_040526.json:
+```json
+{
+    "body": "Attachment\n\nI've added a patch which fixes some doc formatting.",
+    "created_at": "2009-06-20T01:16:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5280",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5280#issuecomment-40526",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 I've added a patch which fixes some doc formatting.
 
 
+
 ---
 
-Comment by rlm created at 2009-06-20 01:24:09
+archive/issue_comments_040527.json:
+```json
+{
+    "body": "mhansen, care to at least comment why this doesn't concern you?:\n\nReplying to [comment:5 rlm]:\n> Why is `__cmp__` returning 1 when elements are incomparable? Shouldn't it be raising an error instead?",
+    "created_at": "2009-06-20T01:24:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5280",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5280#issuecomment-40527",
+    "user": "rlm"
+}
+```
 
 mhansen, care to at least comment why this doesn't concern you?:
 
@@ -73,9 +146,20 @@ Replying to [comment:5 rlm]:
 > Why is `__cmp__` returning 1 when elements are incomparable? Shouldn't it be raising an error instead?
 
 
+
 ---
 
-Comment by saliola created at 2009-06-21 12:39:10
+archive/issue_comments_040528.json:
+```json
+{
+    "body": "Replying to rlm:\n\n> Why is `__cmp__` returning 1 when elements are incomparable? Shouldn't it be raising an error instead?\n\nHere are a couple of reasons why it shouldn't.\n\n(1) `__cmp__` should never raise an error, otherwise you won't be able to\nsort a list of elements:\n\n\n```\nsage: class C(object):\n...       def __cmp__(self, other):\n...           raise ValueError, 'elements are incomparable'\n\nsage: sorted([C(), C()])\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"<ipython console>\", line 3, in __cmp__\nValueError: elements are incomparable\n```\n\n\n(2) All the rich comparisons have been implemented for `PosetElement`, so\n`x<y` is handled by `x.__lt__(y)`. That is, the answer will be correct.\n\n\nSo you might wonder why `__cmp__` even needs to be implemented. Shouldn't\n`cmp` just use the rich comparison methods to determine its value? \n\nIn theory, yes. But `PosetElement` inherits from `Element`, which\ndefines `__cmp__`. It seems to be that since `__cmp__` is not the\ndefault implementation (`object.__cmp__`), the `cmp` function ignores\nall the rich comparison operations and calls `__cmp__` directly. See the\nfollowing example, which was adapted from\n[http://docs.sympy.org/_sources/python-comparisons.txt](http://docs.sympy.org/_sources/python-comparisons.txt).\n\n\n```\nsage: class C_without_cmp(SageObject):\n...       def __init__(self, a):\n...           self.a = a\n...       def __repr__(self):\n...           return str(self.a)\n...       def __eq__(self, o):\n...           print \"%s.__eq__(%s)\" % (self.a, o.a)\n...           return NotImplemented\n...       def __ne__(self, o):\n...           print \"%s.__ne__(%s)\" % (self.a, o.a)\n...           return NotImplemented\n...       def __lt__(self, o):\n...           print \"%s.__lt__(%s)\" % (self.a, o.a)\n...           return NotImplemented\n...       def __le__(self, o):\n...           print \"%s.__le__(%s)\" % (self.a, o.a)\n...           return NotImplemented\n...       def __gt__(self, o):\n...           print \"%s.__gt__(%s)\" % (self.a, o.a)\n...           return NotImplemented\n...       def __ge__(self, o):\n...           print \"%s.__ge__(%s)\" % (self.a, o.a)\n...           return NotImplemented\n\n# cmp uses the rich comparison methods if no __cmp__ is found\nsage: a = C_without_cmp(\"a\"); b = C_without_cmp(\"b\")\nsage: cmp(a,b)\na.__eq__(b)\nb.__eq__(a)\nb.__eq__(a)\na.__eq__(b)\na.__lt__(b)\nb.__gt__(a)\nb.__gt__(a)\na.__lt__(b)\na.__gt__(b)\nb.__lt__(a)\nb.__lt__(a)\na.__gt__(b)\n1\n\nsage: class C_with_cmp(C_without_cmp):\n...       def __cmp__(self, o):\n...           print \"%s.__cmp__(%s)\" % (self.a, o.a)\n...           return NotImplemented\n\n# cmp uses __cmp__, ignoring the rich comparison methods if it is defined\nsage: a = C_with_cmp(\"a\"); b = C_with_cmp(\"b\")\nsage: cmp(a,b)\na.__cmp__(b)\nb.__cmp__(a)\n-1\n```\n\n\nThis leads to the following error for posets, which is what this ticket is about.\n\n\n```\nsage: P = Poset([[1,2],[3],[3],[]])\nsage: sorted(P)\n[0, 1, 2, 3]\nsage: sorted(P, cmp)\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"element.pyx\", line 648, in sage.structure.element.Element.__cmp__ (sage/structure/element.c:6062)\n  File \"element.pyx\", line 561, in sage.structure.element.Element._cmp (sage/structure/element.c:5133)\n  File \"element.pyx\", line 663, in sage.structure.element.Element._cmp_c_impl (sage/structure/element.c:6237)\nNotImplementedError: BUG: sort algorithm for elements of 'Finite poset containing 4 elements' not implemented\n\n> /home/saliola/Applications/sage-4.0.2-busted/local/bin/element.pyx(663)sage.structure.element.Element._cmp_c_impl (sage/structure/element.c:6237)()\n```\n\n\nSo I implemented `__cmp__` for `PosetElement`.\n\nAre these satisfactory reasons?",
+    "created_at": "2009-06-21T12:39:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5280",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5280#issuecomment-40528",
+    "user": "saliola"
+}
+```
 
 Replying to rlm:
 
@@ -197,18 +281,40 @@ So I implemented `__cmp__` for `PosetElement`.
 Are these satisfactory reasons?
 
 
+
 ---
 
-Comment by rlm created at 2009-06-21 12:47:42
+archive/issue_comments_040529.json:
+```json
+{
+    "body": "Franco,\n\nThanks for the incredibly detailed explanation! The main reason I was asking is that there is no indication why this is okay in the code itself. Could you put a sentence or two, maybe just in a comment, explaining why this is done? Maybe something like \"When the user asks for `a<b`, rich comparison is used, and this is implemented only to enable sorting.\" Also, if the result of sorting isn't consistent (e.g. cmp(a,b) == cmp(b,a)), this should be mentioned too, I think.",
+    "created_at": "2009-06-21T12:47:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5280",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5280#issuecomment-40529",
+    "user": "rlm"
+}
+```
 
 Franco,
 
 Thanks for the incredibly detailed explanation! The main reason I was asking is that there is no indication why this is okay in the code itself. Could you put a sentence or two, maybe just in a comment, explaining why this is done? Maybe something like "When the user asks for `a<b`, rich comparison is used, and this is implemented only to enable sorting." Also, if the result of sorting isn't consistent (e.g. cmp(a,b) == cmp(b,a)), this should be mentioned too, I think.
 
 
+
 ---
 
-Comment by saliola created at 2009-06-21 18:43:18
+archive/issue_comments_040530.json:
+```json
+{
+    "body": "Replying to [comment:10 rlm]:\n> Franco,\n> \n> Thanks for the incredibly detailed explanation! The main reason I was asking is that there is no indication why this is okay in the code itself. Could you put a sentence or two, maybe just in a comment, explaining why this is done? Maybe something like \"When the user asks for `a<b`, rich comparison is used, and this is implemented only to enable sorting.\" Also, if the result of sorting isn't consistent (e.g. cmp(a,b) == cmp(b,a)), this should be mentioned too, I think.\n\nI'm attaching a patch with the docfixes, and that also implements the\n`__ne__` method, which I must have forgot to define. (Unfortunately, in\nPython `__ne__` does not default to `!__eq__`.)",
+    "created_at": "2009-06-21T18:43:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5280",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5280#issuecomment-40530",
+    "user": "saliola"
+}
+```
 
 Replying to [comment:10 rlm]:
 > Franco,
@@ -220,23 +326,58 @@ I'm attaching a patch with the docfixes, and that also implements the
 Python `__ne__` does not default to `!__eq__`.)
 
 
+
 ---
+
+archive/issue_comments_040531.json:
+```json
+{
+    "body": "Attachment\n\nApply on top of the previous two.",
+    "created_at": "2009-06-21T18:43:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5280",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5280#issuecomment-40531",
+    "user": "saliola"
+}
+```
 
 Attachment
 
 Apply on top of the previous two.
 
 
+
 ---
 
-Comment by rlm created at 2009-06-21 22:01:39
+archive/issue_comments_040532.json:
+```json
+{
+    "body": "Looks good, applies and passes tests.",
+    "created_at": "2009-06-21T22:01:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5280",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5280#issuecomment-40532",
+    "user": "rlm"
+}
+```
 
 Looks good, applies and passes tests.
 
 
+
 ---
 
-Comment by nthiery created at 2009-06-22 06:26:00
+archive/issue_comments_040533.json:
+```json
+{
+    "body": "Replying to [comment:10 rlm]:\n> Franco,\n> \n> Thanks for the incredibly detailed explanation! The main reason I was asking is that there is no indication why this is okay in the code itself. Could you put a sentence or two, maybe just in a comment, explaining why this is done? Maybe something like \"When the user asks for `a<b`, rich comparison is used, and this is implemented only to enable sorting.\" Also, if the result of sorting isn't consistent (e.g. cmp(a,b) == cmp(b,a)), this should be mentioned too, I think.\n\nThanks also! I am having similar problems in several other places. This really should be though of once for all, and a systematic policy should be set up for\nall occurences of this issue. Actually, it would be best if this could be solved once for all at a higher level (in Element)?\n\nOne fine point (which certainly does not jeopardize this patch): I would feel better returning 0 for incomparable elements rather than +1.\n\nWould you mind starting a discussion about this on sage-devel?",
+    "created_at": "2009-06-22T06:26:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5280",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5280#issuecomment-40533",
+    "user": "nthiery"
+}
+```
 
 Replying to [comment:10 rlm]:
 > Franco,
@@ -251,9 +392,20 @@ One fine point (which certainly does not jeopardize this patch): I would feel be
 Would you mind starting a discussion about this on sage-devel?
 
 
+
 ---
 
-Comment by saliola created at 2009-06-22 10:21:27
+archive/issue_comments_040534.json:
+```json
+{
+    "body": "Replying to [comment:14 nthiery]:\n\n> One fine point (which certainly does not jeopardize this patch): I would feel better returning 0 for incomparable elements rather than +1.\n\nThat's fine with me. I just picked one randomly, but 0 is better. I will make the change.\n\n> Would you mind starting a discussion about this on sage-devel?\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/44dbe252426c3831",
+    "created_at": "2009-06-22T10:21:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5280",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5280#issuecomment-40534",
+    "user": "saliola"
+}
+```
 
 Replying to [comment:14 nthiery]:
 
@@ -266,29 +418,75 @@ That's fine with me. I just picked one randomly, but 0 is better. I will make th
 http://groups.google.com/group/sage-devel/browse_thread/thread/44dbe252426c3831
 
 
+
 ---
+
+archive/issue_comments_040535.json:
+```json
+{
+    "body": "Attachment\n\nApply on top of the previous three",
+    "created_at": "2009-06-22T10:37:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5280",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5280#issuecomment-40535",
+    "user": "saliola"
+}
+```
 
 Attachment
 
 Apply on top of the previous three
 
 
+
 ---
 
-Comment by saliola created at 2009-06-22 10:39:07
+archive/issue_comments_040536.json:
+```json
+{
+    "body": "The last change that switches to returning 0 instead of 1 for incomparable elements needs reviewing.",
+    "created_at": "2009-06-22T10:39:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5280",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5280#issuecomment-40536",
+    "user": "saliola"
+}
+```
 
 The last change that switches to returning 0 instead of 1 for incomparable elements needs reviewing.
 
 
+
 ---
 
-Comment by rlm created at 2009-06-22 10:44:26
+archive/issue_comments_040537.json:
+```json
+{
+    "body": "Looks good.",
+    "created_at": "2009-06-22T10:44:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5280",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5280#issuecomment-40537",
+    "user": "rlm"
+}
+```
 
 Looks good.
 
 
+
 ---
 
-Comment by rlm created at 2009-06-24 10:14:11
+archive/issue_comments_040538.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-06-24T10:14:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5280",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5280#issuecomment-40538",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed

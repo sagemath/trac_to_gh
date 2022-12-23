@@ -1,34 +1,83 @@
 # Issue 6048: [with patch, needs review] fix non-ASCII character in mpolynomialsystem
 
-Issue created by migration from https://trac.sagemath.org/ticket/6048
-
-Original creator: jhpalmieri
-
-Original creation time: 2009-05-16 16:18:50
-
+archive/issues_006048.json:
+```json
+{
+    "body": "Assignee: jhpalmieri\n\nThis patch changes a non-ASCII hyphen to an ASCII hyphen.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6048\n\n",
+    "created_at": "2009-05-16T16:18:50Z",
+    "labels": [
+        "cryptography",
+        "blocker",
+        "bug"
+    ],
+    "title": "[with patch, needs review] fix non-ASCII character in mpolynomialsystem",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6048",
+    "user": "jhpalmieri"
+}
+```
 Assignee: jhpalmieri
 
 This patch changes a non-ASCII hyphen to an ASCII hyphen.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6048
+
+
+
+
 
 ---
+
+archive/issue_comments_048184.json:
+```json
+{
+    "body": "Attachment\n\nWoops, sorry.",
+    "created_at": "2009-05-16T17:23:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6048",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6048#issuecomment-48184",
+    "user": "malb"
+}
+```
 
 Attachment
 
 Woops, sorry.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-18 18:44:06
+archive/issue_comments_048185.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-05-18T18:44:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6048",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6048#issuecomment-48185",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-18 18:44:06
+archive/issue_comments_048186.json:
+```json
+{
+    "body": "Merged in Sage 4.0.rc0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-05-18T18:44:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6048",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6048#issuecomment-48186",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 4.0.rc0.
 

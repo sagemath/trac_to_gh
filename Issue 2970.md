@@ -1,19 +1,44 @@
 # Issue 2970: Permissions on spkg-debian scripts
 
-Issue created by migration from https://trac.sagemath.org/ticket/2970
-
-Original creator: tabbott
-
-Original creation time: 2008-04-20 04:28:47
-
+archive/issues_002970.json:
+```json
+{
+    "body": "Assignee: tabbott\n\nThe gap and scipy_sandbox spkg-debian scripts aren't marked as executable.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2970\n\n",
+    "created_at": "2008-04-20T04:28:47Z",
+    "labels": [
+        "debian-package",
+        "major",
+        "bug"
+    ],
+    "title": "Permissions on spkg-debian scripts",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2970",
+    "user": "tabbott"
+}
+```
 Assignee: tabbott
 
 The gap and scipy_sandbox spkg-debian scripts aren't marked as executable.
 
+Issue created by migration from https://trac.sagemath.org/ticket/2970
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-04-20 04:48:02
+archive/issue_comments_020472.json:
+```json
+{
+    "body": "Hi Tim, \n\nI fixed both spkgs. Since hg doesn't do permissions I can't post a patch ;)\n\nCheers,\n\nMichael",
+    "created_at": "2008-04-20T04:48:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2970",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2970#issuecomment-20472",
+    "user": "mabshoff"
+}
+```
 
 Hi Tim, 
 
@@ -24,15 +49,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-20 04:48:15
+archive/issue_comments_020473.json:
+```json
+{
+    "body": "Fixed in Sage 3.0.rc0",
+    "created_at": "2008-04-20T04:48:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2970",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2970#issuecomment-20473",
+    "user": "mabshoff"
+}
+```
 
 Fixed in Sage 3.0.rc0
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-20 04:48:15
+archive/issue_comments_020474.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-04-20T04:48:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2970",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2970#issuecomment-20474",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

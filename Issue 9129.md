@@ -1,11 +1,21 @@
 # Issue 9129: sqrt memory leaks
 
-Issue created by migration from https://trac.sagemath.org/ticket/9129
-
-Original creator: zimmerma
-
-Original creation time: 2010-06-03 13:00:22
-
+archive/issues_009129.json:
+```json
+{
+    "body": "Assignee: AlexGhitza\n\nCC:  robertwb malb craigcitro mderickx was burcin jpflori\n\ncf http://groups.google.com/group/sage-support/browse_thread/thread/8c18b2b91004c35a#:\n\n```\nsage: m = get_memory_usage()\nsage: while True:\n    a = ZZ(randint(2^400,2^800)).sqrt()\n    print get_memory_usage(m)\n```\n\nI noticed another sqrt-related memory leak:\n\n```\nsage: cat leak.sage\nfor i in range(10^6):\n   Mod(2^32+1,3).sqrt()\n   if i % 10000 == 0:\n      print i, get_memory_usage()\nsage: load leak.sage\n0 947.37109375\n10000 970.4375\n20000 993.8671875\n30000 1017.25\n40000 1040.734375\n50000 1064.19921875\n...\n```\n\nThis leaks about 23Mb per 10^^4 loops, thus about 2.3Kb per loop!\n\nIssue created by migration from https://trac.sagemath.org/ticket/9129\n\n",
+    "created_at": "2010-06-03T13:00:22Z",
+    "labels": [
+        "basic arithmetic",
+        "critical",
+        "bug"
+    ],
+    "title": "sqrt memory leaks",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9129",
+    "user": "zimmerma"
+}
+```
 Assignee: AlexGhitza
 
 CC:  robertwb malb craigcitro mderickx was burcin jpflori
@@ -39,10 +49,25 @@ sage: load leak.sage
 
 This leaks about 23Mb per 10^^4 loops, thus about 2.3Kb per loop!
 
+Issue created by migration from https://trac.sagemath.org/ticket/9129
+
+
+
+
 
 ---
 
-Comment by rlm created at 2010-07-08 12:02:36
+archive/issue_comments_085003.json:
+```json
+{
+    "body": "I've run valgrind with a clean startup and quit:\n\nhttp://sage.math.washington.edu/home/rlmill/sage-clean.mem.log\n\nand with an execution of the following loop:\n\n```\nfor i in range(1000):\n    if i%50 == 0:\n        print i\n    a = ZZ(randint(2^400,2^800)).sqrt()\n    b = Mod(2^32+1,3).sqrt()\n```\n\n\nhttp://sage.math.washington.edu/home/rlmill/sage-sqrt.mem.log\n\nOf particular importance are lines 18757, 16971, 16915, 16831, etc. (Just search through for \"definitely\")",
+    "created_at": "2010-07-08T12:02:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#issuecomment-85003",
+    "user": "rlm"
+}
+```
 
 I've run valgrind with a clean startup and quit:
 
@@ -64,24 +89,57 @@ http://sage.math.washington.edu/home/rlmill/sage-sqrt.mem.log
 Of particular importance are lines 18757, 16971, 16915, 16831, etc. (Just search through for "definitely")
 
 
+
 ---
 
-Comment by zimmerma created at 2010-07-08 12:13:59
+archive/issue_comments_085004.json:
+```json
+{
+    "body": "thanks Robert, however your file is not accessible (neither from the web nor from sage.math).\nPaul",
+    "created_at": "2010-07-08T12:13:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#issuecomment-85004",
+    "user": "zimmerma"
+}
+```
 
 thanks Robert, however your file is not accessible (neither from the web nor from sage.math).
 Paul
 
 
+
 ---
 
-Comment by rlm created at 2010-07-08 12:17:19
+archive/issue_comments_085005.json:
+```json
+{
+    "body": "Fixed.",
+    "created_at": "2010-07-08T12:17:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#issuecomment-85005",
+    "user": "rlm"
+}
+```
 
 Fixed.
 
 
+
 ---
 
-Comment by zimmerma created at 2010-07-08 13:01:09
+archive/issue_comments_085006.json:
+```json
+{
+    "body": "with the following code in Sage 4.4.4:\n\n```\nfor i in range(10^4):\n   a=Mod(2^32+1,3).sqrt()\n```\n\nvalgrind says:\n\n```\n==6861== 5,312,296 bytes in 9,911 blocks are possibly lost in loss record 6,212\\\n of 6,212\n==6861==    at 0x4A0515D: malloc (vg_replace_malloc.c:195)\n==6861==    by 0x4D1E1B8: _PyObject_GC_Malloc (gcmodule.c:1351)\n==6861==    by 0x4D1E2AD: _PyObject_GC_NewVar (gcmodule.c:1383)\n==6861==    by 0x4C78F80: PyFrame_New (frameobject.c:642)\n==6861==    by 0x4CF0324: PyEval_EvalCodeEx (ceval.c:2755)\n==6861==    by 0x4C7997A: function_call (funcobject.c:524)\n==6861==    by 0x4C4EA72: PyObject_Call (abstract.c:2492)\n==6861==    by 0x4C5F0DE: instancemethod_call (classobject.c:2579)\n==6861==    by 0x4C4EA72: PyObject_Call (abstract.c:2492)\n==6861==    by 0x4CE9022: PyEval_CallObjectWithKeywords (ceval.c:3575)\n==6861==    by 0x1E356FA6: __pyx_pf_4sage_9structure_7factory_13UniqueFactory__\\\n_call__ (factory.c:877)\n==6861==    by 0x4C4EA72: PyObject_Call (abstract.c:2492)\n==6861==    by 0x4CAD893: slot_tp_call (typeobject.c:5378)\n==6861==    by 0x4C4EA72: PyObject_Call (abstract.c:2492)\n==6861==    by 0x1BCC2AC6: __pyx_pf_4sage_5rings_12finite_rings_11integer_mod_1\\\n9IntegerMod_abstract_sqrt (integer_mod.c:6959)\n==6861==    by 0x4C4EA72: PyObject_Call (abstract.c:2492)\n==6861==    by 0x4CE9022: PyEval_CallObjectWithKeywords (ceval.c:3575)\n==6861==    by 0x4C6926B: methoddescr_call (descrobject.c:246)\n==6861==    by 0x4C4EA72: PyObject_Call (abstract.c:2492)\n==6861==    by 0x4CE9022: PyEval_CallObjectWithKeywords (ceval.c:3575)\n==6861==    by 0x1BCA21A8: __pyx_pf_4sage_5rings_12finite_rings_11integer_mod_1\\\n4IntegerMod_int_sqrt (integer_mod.c:18128)\n==6861==    by 0x4CEEEDE: PyEval_EvalFrameEx (ceval.c:3706)\n==6861==    by 0x4CF0B44: PyEval_EvalCodeEx (ceval.c:2968)\n==6861==    by 0x4CF0C11: PyEval_EvalCode (ceval.c:522)\n==6861==    by 0x4CF0287: PyEval_EvalFrameEx (ceval.c:4401)\n```\n\nDoes it say something to somebody fluent in Pyrex?",
+    "created_at": "2010-07-08T13:01:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#issuecomment-85006",
+    "user": "zimmerma"
+}
+```
 
 with the following code in Sage 4.4.4:
 
@@ -128,16 +186,38 @@ _call__ (factory.c:877)
 Does it say something to somebody fluent in Pyrex?
 
 
+
 ---
 
-Comment by rlm created at 2010-07-08 13:03:16
+archive/issue_comments_085007.json:
+```json
+{
+    "body": "Possibly lost means that the garbage collector is being lazy and is by Python design. You need to look at the line numbers I highlighted in the above files, which are \"definitely lost.\"",
+    "created_at": "2010-07-08T13:03:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#issuecomment-85007",
+    "user": "rlm"
+}
+```
 
 Possibly lost means that the garbage collector is being lazy and is by Python design. You need to look at the line numbers I highlighted in the above files, which are "definitely lost."
 
 
+
 ---
 
-Comment by zimmerma created at 2010-07-08 13:18:11
+archive/issue_comments_085008.json:
+```json
+{
+    "body": "Replying to [comment:4 rlm]:\n> Fixed.\n\nnot quite:\n\n```\n-rwx--x--x 1 rlmill rlmill 1219074 2010-07-08 04:58 sage-sqrt.mem.log\n```\n",
+    "created_at": "2010-07-08T13:18:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#issuecomment-85008",
+    "user": "zimmerma"
+}
+```
 
 Replying to [comment:4 rlm]:
 > Fixed.
@@ -150,16 +230,38 @@ not quite:
 
 
 
+
 ---
 
-Comment by rlm created at 2010-07-08 13:21:49
+archive/issue_comments_085009.json:
+```json
+{
+    "body": "sorry... jetlag",
+    "created_at": "2010-07-08T13:21:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#issuecomment-85009",
+    "user": "rlm"
+}
+```
 
 sorry... jetlag
 
 
+
 ---
 
-Comment by zimmerma created at 2010-07-08 13:37:11
+archive/issue_comments_085010.json:
+```json
+{
+    "body": "Replying to [comment:2 rlm]:\n> Of particular importance are lines 18757, 16971, 16915, 16831, etc. (Just search through for \"definitely\")\n\nthose lines seem to indicate the problem lies in the Singular and/or GINAC interface. Any specialist of those interfaces out there?",
+    "created_at": "2010-07-08T13:37:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#issuecomment-85010",
+    "user": "zimmerma"
+}
+```
 
 Replying to [comment:2 rlm]:
 > Of particular importance are lines 18757, 16971, 16915, 16831, etc. (Just search through for "definitely")
@@ -167,9 +269,20 @@ Replying to [comment:2 rlm]:
 those lines seem to indicate the problem lies in the Singular and/or GINAC interface. Any specialist of those interfaces out there?
 
 
+
 ---
 
-Comment by rlm created at 2010-08-01 11:52:11
+archive/issue_comments_085011.json:
+```json
+{
+    "body": "Replying to [comment:9 zimmerma]:\n> those lines seem to indicate the problem lies in the Singular and/or GINAC interface.\n\nI'm not so sure about this. Let's pick on this particular leak:\n\n\n```\n==25238== 5,320 (1,680 direct, 3,640 indirect) bytes in 35 blocks are definitely lost in loss record 17,325 of 18,340\n==25238==    at 0x4C22FEB: malloc (vg_replace_malloc.c:207)\n==25238==    by 0x13642E4C: __pyx_f_4sage_5rings_7integer_fast_tp_new (integer.c:29882)\n==25238==    by 0x4EC2232: type_call (typeobject.c:731)\n==25238==    by 0x4E6CC77: PyObject_Call (abstract.c:2492)\n==25238==    by 0x218F6E2B: __pyx_f_4sage_4libs_8singular_8singular_si2sa_ZZ(snumber*, sip_sring*) (singular.cpp:3084)\n==25238==    by 0x21902F6D: __pyx_f_4sage_4libs_8singular_8singular_si2sa(snumber*, sip_sring*, _object*) (singular.cpp:5483)\n==25238==    by 0x2084D51E: __pyx_pf_4sage_5rings_10polynomial_28multi_polynomial_libsingular_23MPolynomial_libsingular_coefficients(_object*, _object*) (multi_polynomial_libsingular.cpp:27385)\n==25238==    by 0x4E6CC77: PyObject_Call (abstract.c:2492)\n==25238==    by 0x20858DB0: __pyx_pf_4sage_5rings_10polynomial_28multi_polynomial_libsingular_23MPolynomial_libsingular_gcd(_object*, _object*, _object*) (multi_polynomial_libsingular.cpp:24344)\n==25238==    by 0x4E6CC77: PyObject_Call (abstract.c:2492)\n==25238==    by 0x4F01D15: PyEval_CallObjectWithKeywords (ceval.c:3575)\n==25238==    by 0x4E87C25: methoddescr_call (descrobject.c:246)\n==25238==    by 0x4E6CC77: PyObject_Call (abstract.c:2492)\n==25238==    by 0x4F01D15: PyEval_CallObjectWithKeywords (ceval.c:3575)\n==25238==    by 0xF9E2BB9: __Pyx_PyEval_CallObjectWithKeywords (element.c:26384)\n==25238==    by 0xF9D7B3C: __pyx_pf_4sage_9structure_7element_16NamedBinopMethod___call__ (element.c:19673)\n==25238==    by 0x4E6CC77: PyObject_Call (abstract.c:2492)\n==25238==    by 0x15AF691C: __pyx_f_4sage_5rings_22fraction_field_element_20FractionFieldElement__add_ (fraction_field_element.c:5090)\n==25238==    by 0xF9BE0A1: __pyx_pf_4sage_9structure_7element_11RingElement___add__ (element.c:10804)\n==25238==    by 0x4E6CF6D: binary_op1 (abstract.c:917)\n==25238==    by 0x4E6D41F: PyNumber_Add (abstract.c:1157)\n==25238==    by 0x4F0611A: PyEval_EvalFrameEx (ceval.c:1189)\n==25238==    by 0x4F0A1C0: PyEval_EvalCodeEx (ceval.c:2968)\n==25238==    by 0x4F0A291: PyEval_EvalCode (ceval.c:522)\n==25238==    by 0x4F1E371: PyImport_ExecCodeModuleEx (import.c:675)\n```\n\n\nOn line 3842 of `multi_polynomial_libsingular.pyx`, we have:\n\n```\n        if _ring.ringtype != 0:\n            if _ring.ringtype == 4:\n                P = self._parent.change_ring(RationalField())\n                res = P(self).gcd(P(right))\n                coef = sage.rings.integer.GCD_list(self.coefficients() + right.coefficients())   <--------------------\n                return self._parent(coef*res)\n```\n\n\nThe calls to `.coefficients()` are creating the integers which are not freed. Here is the definition of that function:\n\n\n```\n        cdef poly *p\n        cdef ring *r\n        r = (<MPolynomialRing_libsingular>self._parent)._ring\n        if r!=currRing: rChangeCurrRing(r)\n        base = (<MPolynomialRing_libsingular>self._parent)._base\n        p = self._poly\n        coeffs = list()\n        while p:\n            coeffs.append(si2sa(p_GetCoeff(p, r), r, base))\n            p = pNext(p)\n        return coeffs\n```\n\n\nLooks innocent enough... `si2sa` ends up calling:\n\n\n```\ncdef Integer si2sa_ZZ(number *n, ring *_ring):\n    ...\n    cdef Integer z\n    z = Integer()\n    z.set_from_mpz(<__mpz_struct*>n)\n    return z\n```\n\n\nI really don't see where any of this could be going wrong. I think it has to do with the fast integer creation functions. Sage has a pool of allocated Integer objects. The `integer_pool_count` seems to go up and down randomly, staying in the low range. From one loop to the next, in the original poster's first example, it goes 9, 8, 11, 10, ...\n\nI think that the experts for this memory pool need to step up to the plate...",
+    "created_at": "2010-08-01T11:52:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#issuecomment-85011",
+    "user": "rlm"
+}
+```
 
 Replying to [comment:9 zimmerma]:
 > those lines seem to indicate the problem lies in the Singular and/or GINAC interface.
@@ -255,9 +368,20 @@ I really don't see where any of this could be going wrong. I think it has to do 
 I think that the experts for this memory pool need to step up to the plate...
 
 
+
 ---
 
-Comment by mderickx created at 2010-11-02 17:15:23
+archive/issue_comments_085012.json:
+```json
+{
+    "body": "I just tried the second leak in 4.6 on OS X 10.6.4 and the results are:\n\n\n```\nfor i in range(10^6):\n   t=Mod(2^32+1,3).sqrt()\n   if i % 10000 == 0:\n      print i, get_memory_usage()\n```\n\n\n```\n0 243.6796875\n10000 243.6796875\n20000 243.6796875\n30000 243.6796875\n40000 243.6796875\n50000 243.6796875\n60000 243.6796875\n70000 243.6796875\n80000 243.6796875\n90000 243.6796875\n100000 243.6796875\n110000 243.6796875\n120000 243.6796875\n130000 243.6796875\n140000 243.6796875\n150000 243.6796875\n160000 243.6796875\n170000 243.6796875\n```\n\nAfter which I interupted the loop since I concluded the leak was no longer there. Can the person who reported this check it on his own machine?",
+    "created_at": "2010-11-02T17:15:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#issuecomment-85012",
+    "user": "mderickx"
+}
+```
 
 I just tried the second leak in 4.6 on OS X 10.6.4 and the results are:
 
@@ -294,9 +418,20 @@ for i in range(10^6):
 After which I interupted the loop since I concluded the leak was no longer there. Can the person who reported this check it on his own machine?
 
 
+
 ---
 
-Comment by mderickx created at 2010-11-02 17:31:12
+archive/issue_comments_085013.json:
+```json
+{
+    "body": "The first reported memory leak is still there, but note that you don't need the extemely large random integers i the example to expose the leak. All you need is a non square integer.\n\nDoing the example only with squares in the interval 2!^400 till 2!^800:\n\n\n```\nm = get_memory_usage()\ni=0\nwhile True:\n    i+=1\n    a = ZZ(randint(2^200,2^400)^2).sqrt()\n    if i%1000==0:\n        print get_memory_usage(m)\n```\n\n\n```\n0.0\n0.0\n0.0\n0.0\n```\n\nThe example using 2 as my favorite non square integer:\n\n\n```\nm = get_memory_usage()\ni=0\nwhile True:\n    i+=1\n    a = 2.sqrt()\n    if i%1000==0:\n        print get_memory_usage(m)\n```\n\n\n```\t\n0.76953125\n1.26953125\n2.01953125\n2.51953125\n3.01953125\n3.76953125\n4.26953125\n5.01953125\n6.51953125\n```\n",
+    "created_at": "2010-11-02T17:31:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#issuecomment-85013",
+    "user": "mderickx"
+}
+```
 
 The first reported memory leak is still there, but note that you don't need the extemely large random integers i the example to expose the leak. All you need is a non square integer.
 
@@ -349,9 +484,20 @@ while True:
 
 
 
+
 ---
 
-Comment by mderickx created at 2010-11-02 19:04:06
+archive/issue_comments_085014.json:
+```json
+{
+    "body": "I dived a bit deeper into the source code to see what is actually going on and I found that in the end the symbolic ring sqrt function is the one where things go wrong. It's not the general symbolic ring framework since other symbolic ring functions dont misbehave.\n\n```\nfunctions=['arccos', 'arccosh',\n'arcsin', 'arcsinh', 'arctan', 'arctanh', 'cos', 'cosh', 'exp', 'log', 'sin', 'sinh', 'sqrt', 'tan', 'tanh']\nfor function in functions:\n    print function\n    a=SR(2)\n    m = get_memory_usage()\n    for i in xrange(10000):\n        b=a.__getattribute__(function)()\n    print get_memory_usage(m)\n```\n\narccos\n0.0\narccosh\n0.0\narcsin\n0.0\narcsinh\n0.0\narctan\n0.0\narctanh\n0.0\ncos\n0.0\ncosh\n0.0\nexp\n0.0\nlog\n0.0\nsin\n0.0\nsinh\n0.0\nsqrt\n7.03125\ntan\n0.0\ntanh\n0.0\n\nI'm not able to figure out which code get's called from the symbolic ring part on, since the internal working of the symbolic ring is a bit to complex for me.\nIe. the source code of SR(2).sqrt is\n\n```\nreturn new_Expression_from_GEx(self._parent,\n                g_hold2_wrapper(g_power_construct, self._gobj, g_ex1_2, hold))\n```\n\nAnd new_Expression_from_GEx doesn't have any documentation or whatsoever.",
+    "created_at": "2010-11-02T19:04:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#issuecomment-85014",
+    "user": "mderickx"
+}
+```
 
 I dived a bit deeper into the source code to see what is actually going on and I found that in the end the symbolic ring sqrt function is the one where things go wrong. It's not the general symbolic ring framework since other symbolic ring functions dont misbehave.
 
@@ -409,9 +555,20 @@ return new_Expression_from_GEx(self._parent,
 And new_Expression_from_GEx doesn't have any documentation or whatsoever.
 
 
+
 ---
 
-Comment by zimmerma created at 2010-11-02 19:55:16
+archive/issue_comments_085015.json:
+```json
+{
+    "body": "I confirm the second leak seems to be fixed now (tried with Sage 4.6 on Fedora and 4.5.2 on\nUbuntu).\n\nThe first one is still present in Sage 4.6.\n\nPaul",
+    "created_at": "2010-11-02T19:55:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#issuecomment-85015",
+    "user": "zimmerma"
+}
+```
 
 I confirm the second leak seems to be fixed now (tried with Sage 4.6 on Fedora and 4.5.2 on
 Ubuntu).
@@ -421,9 +578,20 @@ The first one is still present in Sage 4.6.
 Paul
 
 
+
 ---
 
-Comment by zimmerma created at 2010-11-02 20:44:52
+archive/issue_comments_085016.json:
+```json
+{
+    "body": "the problem seems to be in the power function. With Sage 4.6:\n\n```\nsage: a=SR(2)\nsage: m = get_memory_usage()\nsage: for i in xrange(10000):\n....:     b=a.__pow__(1/3)\n....:     \nsage: print get_memory_usage(m)\n11.953125\n```\n\nPaul",
+    "created_at": "2010-11-02T20:44:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#issuecomment-85016",
+    "user": "zimmerma"
+}
+```
 
 the problem seems to be in the power function. With Sage 4.6:
 
@@ -440,9 +608,20 @@ sage: print get_memory_usage(m)
 Paul
 
 
+
 ---
 
-Comment by zimmerma created at 2010-11-03 17:31:38
+archive/issue_comments_085017.json:
+```json
+{
+    "body": "William, Burcin, the memory leaks seems to be in the `g_pow` call at line 2458 of\n`symbolic/expression.pyx` (in sage 4.6).\n\nI guess the `g_pow` function is a wrapper to Ginac (from file `libs/ginac/decl.pxi`)\nbut I could see no occurrence of pow in `c_lib/include/ginac_wrap.h`.\n\nPlease can you help?\n\nPaul",
+    "created_at": "2010-11-03T17:31:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#issuecomment-85017",
+    "user": "zimmerma"
+}
+```
 
 William, Burcin, the memory leaks seems to be in the `g_pow` call at line 2458 of
 `symbolic/expression.pyx` (in sage 4.6).
@@ -455,9 +634,20 @@ Please can you help?
 Paul
 
 
+
 ---
 
-Comment by burcin created at 2010-11-03 17:54:59
+archive/issue_comments_085018.json:
+```json
+{
+    "body": "I don't have time to check now, but the `pow()` method of `numeric` objects should be called in this case. You can see the code here:\n\nhttp://pynac.sagemath.org/hg/file/b233d9dadcfa/ginac/numeric.cpp#l297\n\nThere is nothing that immediately catches my eye there.\n\nTo experiment, you'll need a pynac development environment:\n\nhttp://wiki.sagemath.org/pynac/start",
+    "created_at": "2010-11-03T17:54:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#issuecomment-85018",
+    "user": "burcin"
+}
+```
 
 I don't have time to check now, but the `pow()` method of `numeric` objects should be called in this case. You can see the code here:
 
@@ -470,16 +660,38 @@ To experiment, you'll need a pynac development environment:
 http://wiki.sagemath.org/pynac/start
 
 
+
 ---
 
-Comment by burcin created at 2010-11-03 17:57:36
+archive/issue_comments_085019.json:
+```json
+{
+    "body": "Sorry for the spam, but is the problem still there with the patch at #8659 applied?",
+    "created_at": "2010-11-03T17:57:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#issuecomment-85019",
+    "user": "burcin"
+}
+```
 
 Sorry for the spam, but is the problem still there with the patch at #8659 applied?
 
 
+
 ---
 
-Comment by zimmerma created at 2010-11-03 18:24:38
+archive/issue_comments_085020.json:
+```json
+{
+    "body": "Replying to [comment:18 burcin]:\n> Sorry for the spam, but is the problem still there with the patch at #8659 applied?\n\nyes, but the leak seems to be smaller:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: 8659\nsage: a=SR(2)\nsage: m = get_memory_usage()\nsage: for i in xrange(10000):\n....:     b=a.__pow__(1/3)\nsage: print get_memory_usage(m)\n4.4140625\n```\n\ninstead of `11.703125` without the #8659 patch.\n| Sage Version 4.6, Release Date: 2010-10-30                         |\n| Type notebook() for the GUI, and license() for information.        |\nPaul",
+    "created_at": "2010-11-03T18:24:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#issuecomment-85020",
+    "user": "zimmerma"
+}
+```
 
 Replying to [comment:18 burcin]:
 > Sorry for the spam, but is the problem still there with the patch at #8659 applied?
@@ -504,9 +716,20 @@ instead of `11.703125` without the #8659 patch.
 Paul
 
 
+
 ---
 
-Comment by zimmerma created at 2012-01-11 19:36:47
+archive/issue_comments_085021.json:
+```json
+{
+    "body": "I added some print-statements in `pynac-0.2.3.p0/src/ginac/numeric.cpp` as follows:\n\n```\n  Number_T pow(const Number_T& base, const Number_T& exp) {\n    std::cerr << \"enter pow, base=\" << base << \" exp=\" << exp << \"\\n\";\n    verbose(\"pow\");\n    if (base.t != exp.t) {\n      Number_T a, b;\n      std::cerr << \"coerce\\n\";\n      coerce(a, b, base, exp);\n      return pow(a,b);\n    }\n    switch (base.t) {\n    case DOUBLE:\n      std::cerr << \"double\\n\";\n      return std::pow(base.v._double, exp.v._double);\n    case LONG:\n      // TODO: change to use GMP!                                               \n      std::cerr << \"long\\n\";\n      return std::pow((double)base.v._long, (double)exp.v._long);\n    case PYOBJECT:\n      std::cerr << \"PYOBJECT\\n\";\n      if PyInt_Check(base.v._pyobject) {\n          PyObject* o = Integer(PyInt_AsLong(base.v._pyobject));\n          PyObject* r = PyNumber_Power(o, exp.v._pyobject, Py_None);\n          std::cerr << \"PyInt_Check\\n\";\n          Py_DECREF(o);\n          return r;\n      }\n      return PyNumber_Power(base.v._pyobject, exp.v._pyobject, Py_None);\n    default:\n      stub(\"invalid type: pow Number_T\");\n    }\n  }\n```\n\nThen it seems that for inexact powers that function is called twice for SR input:\n\n```\nsage: SR(2).__pow__(1/2)\nenter pow, base=2 exp=1/2\nPYOBJECT\nenter pow, base=2 exp=1/2\nPYOBJECT\nsqrt(2)\n```\n\nbut for exact powers only once:\n\n```\nsage: SR(4).__pow__(1/2)\nenter pow, base=4 exp=1/2\nPYOBJECT\n2\n```\n\n\nFor Integer input we get:\n\n```\nsage: Integer(2).__pow__(1/2)\nenter pow, base=2 exp=1/2\nPYOBJECT\nsqrt(2)\nsage: Integer(4).__pow__(1/2)\n2\n```\n\n\nFor ZZ input we get:\n\n```\nsage: ZZ(2).__pow__(1/2)\nenter pow, base=2 exp=1/2\nPYOBJECT\nsqrt(2)\nsage: ZZ(4).__pow__(1/2)\n2\n```\n\nIn all cases there is no memory leak for exact powers, but there is for inexact powers.\nThus I strongly suspect some special code that detects exact powers, but where is it?\n\nPaul",
+    "created_at": "2012-01-11T19:36:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#issuecomment-85021",
+    "user": "zimmerma"
+}
+```
 
 I added some print-statements in `pynac-0.2.3.p0/src/ginac/numeric.cpp` as follows:
 
@@ -594,16 +817,38 @@ Thus I strongly suspect some special code that detects exact powers, but where i
 Paul
 
 
+
 ---
 
-Comment by zimmerma created at 2012-01-11 19:57:18
+archive/issue_comments_085022.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"sd35.5\".",
+    "created_at": "2012-01-11T19:57:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#issuecomment-85022",
+    "user": "zimmerma"
+}
+```
 
 Changing keywords from "" to "sd35.5".
 
 
+
 ---
 
-Comment by burcin created at 2012-02-15 16:46:01
+archive/issue_comments_085023.json:
+```json
+{
+    "body": "Replying to [comment:20 zimmerma]:\n\n> In all cases there is no memory leak for exact powers, but there is for inexact powers.\n> Thus I strongly suspect some special code that detects exact powers, but where is it?\n\nThe `__pow__` method of rational numbers. :) When computing `2^(1/2)`, `Integer.__pow__` delegates the operation to `Rational.__pow__`. If the result is not exact, `Rational.__pow__` returns a symbolic expression.\n\nThis should really be tested with the patch at #8659, which eliminates the need to call `Number_T::pow()` twice. Even with that patch, the leak is still there however.",
+    "created_at": "2012-02-15T16:46:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#issuecomment-85023",
+    "user": "burcin"
+}
+```
 
 Replying to [comment:20 zimmerma]:
 
@@ -615,9 +860,20 @@ The `__pow__` method of rational numbers. :) When computing `2^(1/2)`, `Integer.
 This should really be tested with the patch at #8659, which eliminates the need to call `Number_T::pow()` twice. Even with that patch, the leak is still there however.
 
 
+
 ---
 
-Comment by zimmerma created at 2012-06-22 14:05:17
+archive/issue_comments_085024.json:
+```json
+{
+    "body": "I updated the description.\n\nPaul\n\nPS: it seems the \"stopgaps\" were deleted, but I don't know which value it was...",
+    "created_at": "2012-06-22T14:05:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#issuecomment-85024",
+    "user": "zimmerma"
+}
+```
 
 I updated the description.
 
@@ -626,9 +882,20 @@ Paul
 PS: it seems the "stopgaps" were deleted, but I don't know which value it was...
 
 
+
 ---
 
-Comment by zimmerma created at 2013-08-23 12:07:04
+archive/issue_comments_085025.json:
+```json
+{
+    "body": "update with Sage 5.11, the memory leaks is still there:\n\n```\n+--------------------------------------------------------------------+\n+--------------------------------------------------------------------+\nsage: m = get_memory_usage()\nsage: i=0\nsage: while True:\n....:         i+=1\n....:         a = 2.sqrt()\n....:         if i%1000==0:\n....:                 print get_memory_usage(m)\n....:         \n0.18359375\n0.18359375\n0.18359375\n0.546875\n0.8203125\n1.5859375\n1.96875\n2.34765625\n2.734375\n3.50390625\n```\n\nPaul",
+    "created_at": "2013-08-23T12:07:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#issuecomment-85025",
+    "user": "zimmerma"
+}
+```
 
 update with Sage 5.11, the memory leaks is still there:
 
@@ -658,9 +925,20 @@ sage: while True:
 Paul
 
 
+
 ---
 
-Comment by ryan created at 2014-01-31 06:07:20
+archive/issue_comments_085026.json:
+```json
+{
+    "body": "I'm not sure what the current status of work on this ticket is, but I have noticed that\nthe following functions do not exhibit the demonstrated memory leak.\n\n\n```\ndef memleaksr(n, x, p=1/2):\n    m = get_memory_usage()\n    one_half = SR(.5)\n    for i in xrange(n):\n        a = SR(x)^one_half\n        if(i % 1000 == 0):\n            print get_memory_usage(m)\n```\n\n\n\n\n```\ndef memleakonehalf(n, x, p=1/2):\n    m = get_memory_usage()\n\n    for i in xrange(n):\n        a = SR(x) ** 1/2\n        if(i % 1000 == 0):\n            print get_memory_usage(m)\n```\n\n\nFrom what I understand, \n2.sqrt() calls the sqrt() method of the Integer class.\nsqrt() \neventually sage.functions.other._do_sqrt() is called.  If _do_sqrt is passed a precision argument, everything works fine.  The memory leak seems to occur when no precision is set.  Something about the variable one_half in _do_sqrt() seems to throw a kink in things.\n\nRecap: If any precision is set, then there is no memory leak (2.sqrt(prec=52) == no memory leak)",
+    "created_at": "2014-01-31T06:07:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#issuecomment-85026",
+    "user": "ryan"
+}
+```
 
 I'm not sure what the current status of work on this ticket is, but I have noticed that
 the following functions do not exhibit the demonstrated memory leak.
@@ -698,9 +976,20 @@ eventually sage.functions.other._do_sqrt() is called.  If _do_sqrt is passed a p
 Recap: If any precision is set, then there is no memory leak (2.sqrt(prec=52) == no memory leak)
 
 
+
 ---
 
-Comment by zimmerma created at 2014-01-31 07:52:46
+archive/issue_comments_085027.json:
+```json
+{
+    "body": "the second example in the description still does a memory leak with Sage 6.0:\n\n```\n\u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\u2502 Sage Version 6.0, Release Date: 2013-12-17                         \u2502\n\u2502 Type \"notebook()\" for the browser-based notebook interface.        \u2502\n\u2502 Type \"help()\" for help.                                            \u2502\n\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\nsage: m = get_memory_usage()\nsage: i=0\nsage: while True:\n....:         i+=1\n....:         a = 2.sqrt()\n....:         if i%1000==0:\n....:                 print get_memory_usage(m)\n....:         \n0.0\n0.0\n0.0\n0.58984375\n0.84375\n1.234375\n1.7421875\n2.3828125\n2.76171875\n3.1484375\n3.66796875\n4.3203125\n4.703125\n5.08984375\n5.4765625\n6.23828125\n```\n\nThe fact that it works with `prec` does not help for this ticket, which deals with exact square root.",
+    "created_at": "2014-01-31T07:52:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#issuecomment-85027",
+    "user": "zimmerma"
+}
+```
 
 the second example in the description still does a memory leak with Sage 6.0:
 
@@ -739,34 +1028,78 @@ sage: while True:
 The fact that it works with `prec` does not help for this ticket, which deals with exact square root.
 
 
+
 ---
 
-Comment by ryan created at 2014-01-31 19:07:18
+archive/issue_comments_085028.json:
+```json
+{
+    "body": "Yes, 2.sqrt() does still have a memory leak in 6.0\n\nYou're right, I wasn't thinking.  2.sqrt() returns a symbolic expression.  My examples return a real number.",
+    "created_at": "2014-01-31T19:07:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#issuecomment-85028",
+    "user": "ryan"
+}
+```
 
 Yes, 2.sqrt() does still have a memory leak in 6.0
 
 You're right, I wasn't thinking.  2.sqrt() returns a symbolic expression.  My examples return a real number.
 
 
+
 ---
 
-Comment by mmezzarobba created at 2014-02-15 11:56:22
+archive/issue_comments_085029.json:
+```json
+{
+    "body": "I investigated a bit, and I believe there's a `Py_DECREF(restuple)` missing in Pynac's `GiNaC::power::eval`, around line\u00a0590 of `power.cpp`.",
+    "created_at": "2014-02-15T11:56:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#issuecomment-85029",
+    "user": "mmezzarobba"
+}
+```
 
 I investigated a bit, and I believe there's a `Py_DECREF(restuple)` missing in Pynac's `GiNaC::power::eval`, around line 590 of `power.cpp`.
 
 
+
 ---
 
-Comment by zimmerma created at 2014-02-15 16:43:03
+archive/issue_comments_085030.json:
+```json
+{
+    "body": "well done! Does it solve the memory leak?\n\nPaul",
+    "created_at": "2014-02-15T16:43:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#issuecomment-85030",
+    "user": "zimmerma"
+}
+```
 
 well done! Does it solve the memory leak?
 
 Paul
 
 
+
 ---
 
-Comment by mmezzarobba created at 2014-02-15 17:36:03
+archive/issue_comments_085031.json:
+```json
+{
+    "body": "Replying to [comment:32 zimmerma]:\n> well done! Does it solve the memory leak?\n\nI think it would, but I didn't actually try to fix it.",
+    "created_at": "2014-02-15T17:36:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#issuecomment-85031",
+    "user": "mmezzarobba"
+}
+```
 
 Replying to [comment:32 zimmerma]:
 > well done! Does it solve the memory leak?
@@ -774,18 +1107,40 @@ Replying to [comment:32 zimmerma]:
 I think it would, but I didn't actually try to fix it.
 
 
+
 ---
 
-Comment by mmezzarobba created at 2014-02-21 10:38:50
+archive/issue_comments_085032.json:
+```json
+{
+    "body": "See also:\n\nhttp://hg.pynac.org/pynac/issue/19/memory-leak-in-power-eval",
+    "created_at": "2014-02-21T10:38:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#issuecomment-85032",
+    "user": "mmezzarobba"
+}
+```
 
 See also:
 
 http://hg.pynac.org/pynac/issue/19/memory-leak-in-power-eval
 
 
+
 ---
 
-Comment by vbraun created at 2014-03-19 05:23:47
+archive/issue_comments_085033.json:
+```json
+{
+    "body": "Implemented at https://bitbucket.org/vbraun/pynac/commits/4c798d4cb4b50532fc525ad652d7f0db79eb08c1\n\nWith the patch it still leaks but much slower\n\n```\n:sage: m = get_memory_usage()\n:sage: i=0\n:sage: while True:\n:....:         i+=1\n:....:         a = 2.sqrt()\n:....:         if i%1000==0:\n:....:                 print get_memory_usage(m)\n:....:         \n:--\n0.0\n0.0\n0.0\n0.0\n0.0\n0.0\n0.25\n0.25\n0.25\n0.25\n0.25\n0.5\n0.5\n0.5\n0.5\n0.5\n0.5\n0.875\n0.875\n0.875\n0.875\n1.00390625\n1.28515625\n```\n",
+    "created_at": "2014-03-19T05:23:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#issuecomment-85033",
+    "user": "vbraun"
+}
+```
 
 Implemented at https://bitbucket.org/vbraun/pynac/commits/4c798d4cb4b50532fc525ad652d7f0db79eb08c1
 
@@ -828,34 +1183,78 @@ With the patch it still leaks but much slower
 
 
 
+
 ---
 
-Comment by vbraun created at 2014-03-19 18:20:19
+archive/issue_comments_085034.json:
+```json
+{
+    "body": "Fixed another leak at https://bitbucket.org/vbraun/pynac/commits/598291652f2fc645f2d2f150b39040af07eb6554\n\nNow the above script does not leak any more...",
+    "created_at": "2014-03-19T18:20:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#issuecomment-85034",
+    "user": "vbraun"
+}
+```
 
 Fixed another leak at https://bitbucket.org/vbraun/pynac/commits/598291652f2fc645f2d2f150b39040af07eb6554
 
 Now the above script does not leak any more...
 
 
+
 ---
 
-Comment by zimmerma created at 2014-03-19 22:02:41
+archive/issue_comments_085035.json:
+```json
+{
+    "body": "well done Volker! Just a pity it took 4 years to fix that issue...\n\nPaul",
+    "created_at": "2014-03-19T22:02:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#issuecomment-85035",
+    "user": "zimmerma"
+}
+```
 
 well done Volker! Just a pity it took 4 years to fix that issue...
 
 Paul
 
 
+
 ---
 
-Comment by vbraun created at 2014-03-20 01:51:31
+archive/issue_comments_085036.json:
+```json
+{
+    "body": "Feel free to file the upstream bug report faster next time ;-)",
+    "created_at": "2014-03-20T01:51:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#issuecomment-85036",
+    "user": "vbraun"
+}
+```
 
 Feel free to file the upstream bug report faster next time ;-)
 
 
+
 ---
 
-Comment by zimmerma created at 2014-03-20 09:02:20
+archive/issue_comments_085037.json:
+```json
+{
+    "body": "> Feel free to file the upstream bug report faster next time ;-) \n\nthe problem is that I had no idea in which upstream component the leak was (or in Sage), and I had no idea how to search where the leak was.\n\nIf you can give some information how we can do this in similar cases, it would be very helpful.\n\nPaul",
+    "created_at": "2014-03-20T09:02:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#issuecomment-85037",
+    "user": "zimmerma"
+}
+```
 
 > Feel free to file the upstream bug report faster next time ;-) 
 
@@ -866,23 +1265,56 @@ If you can give some information how we can do this in similar cases, it would b
 Paul
 
 
+
 ---
 
-Comment by vbraun created at 2014-03-20 14:06:52
+archive/issue_comments_085038.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2014-03-20T14:06:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#issuecomment-85038",
+    "user": "vbraun"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by vbraun created at 2014-03-20 14:06:52
+archive/issue_comments_085039.json:
+```json
+{
+    "body": "Will be fixed by the pynac update at #14780",
+    "created_at": "2014-03-20T14:06:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#issuecomment-85039",
+    "user": "vbraun"
+}
+```
 
 Will be fixed by the pynac update at #14780
 
 
+
 ---
 
-Comment by mmezzarobba created at 2014-03-22 07:08:19
+archive/issue_comments_085040.json:
+```json
+{
+    "body": "Replying to [comment:40 zimmerma]:\n> If you can give some information how we can do this in similar cases, it would be very helpful.\n\nFwiw, I used the `objgraph` module to see what kind of objects were being leaked. It turned out to be triples similar to those returned by `pynac.pyx`:`py_rational_power_parts`\u2014the hardest part was probably to discover that function, but the observation that the leak occurred specifically for non-square integers helped.",
+    "created_at": "2014-03-22T07:08:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#issuecomment-85040",
+    "user": "mmezzarobba"
+}
+```
 
 Replying to [comment:40 zimmerma]:
 > If you can give some information how we can do this in similar cases, it would be very helpful.
@@ -890,77 +1322,187 @@ Replying to [comment:40 zimmerma]:
 Fwiw, I used the `objgraph` module to see what kind of objects were being leaked. It turned out to be triples similar to those returned by `pynac.pyx`:`py_rational_power_parts`—the hardest part was probably to discover that function, but the observation that the leak occurred specifically for non-square integers helped.
 
 
+
 ---
 
-Comment by mmezzarobba created at 2014-03-22 07:12:46
+archive/issue_comments_085041.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2014-03-22T07:12:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#issuecomment-85041",
+    "user": "mmezzarobba"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by zimmerma created at 2014-03-22 08:31:41
+archive/issue_comments_085042.json:
+```json
+{
+    "body": "could we add a small doctest checking that the leak is gone?\n\nPaul",
+    "created_at": "2014-03-22T08:31:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#issuecomment-85042",
+    "user": "zimmerma"
+}
+```
 
 could we add a small doctest checking that the leak is gone?
 
 Paul
 
 
+
 ---
 
-Comment by vbraun created at 2014-03-22 14:39:34
+archive/issue_comments_085043.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_review.",
+    "created_at": "2014-03-22T14:39:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#issuecomment-85043",
+    "user": "vbraun"
+}
+```
 
 Changing status from positive_review to needs_review.
 
 
+
 ---
 
-Comment by vbraun created at 2014-03-22 14:39:34
+archive/issue_comments_085044.json:
+```json
+{
+    "body": "Please review, then.\n----\nNew commits:",
+    "created_at": "2014-03-22T14:39:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#issuecomment-85044",
+    "user": "vbraun"
+}
+```
 
 Please review, then.
 ----
 New commits:
 
 
+
 ---
 
-Comment by git created at 2014-03-22 14:41:31
+archive/issue_comments_085045.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2014-03-22T14:41:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#issuecomment-85045",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by mmezzarobba created at 2014-04-11 09:37:11
+archive/issue_comments_085046.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2014-04-11T09:37:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#issuecomment-85046",
+    "user": "mmezzarobba"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mmezzarobba created at 2014-04-11 09:37:11
+archive/issue_comments_085047.json:
+```json
+{
+    "body": "Changing priority from critical to major.",
+    "created_at": "2014-04-11T09:37:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#issuecomment-85047",
+    "user": "mmezzarobba"
+}
+```
 
 Changing priority from critical to major.
 
 
+
 ---
 
-Comment by mmezzarobba created at 2014-04-11 09:37:11
+archive/issue_comments_085048.json:
+```json
+{
+    "body": "lgtm. Paul, please complain if you disagree, since you were the one who asked for a regression test!",
+    "created_at": "2014-04-11T09:37:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#issuecomment-85048",
+    "user": "mmezzarobba"
+}
+```
 
 lgtm. Paul, please complain if you disagree, since you were the one who asked for a regression test!
 
 
+
 ---
 
-Comment by zimmerma created at 2014-04-11 09:50:29
+archive/issue_comments_085049.json:
+```json
+{
+    "body": "> please complain if you disagree\n\nI agree, thank you to everybody!",
+    "created_at": "2014-04-11T09:50:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#issuecomment-85049",
+    "user": "zimmerma"
+}
+```
 
 > please complain if you disagree
 
 I agree, thank you to everybody!
 
 
+
 ---
 
-Comment by vbraun created at 2014-04-13 19:33:30
+archive/issue_comments_085050.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2014-04-13T19:33:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9129",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9129#issuecomment-85050",
+    "user": "vbraun"
+}
+```
 
 Resolution: fixed

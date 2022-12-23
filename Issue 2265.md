@@ -1,11 +1,21 @@
 # Issue 2265: fix shortest_path_all_pairs
 
-Issue created by migration from https://trac.sagemath.org/ticket/2265
-
-Original creator: rlm
-
-Original creation time: 2008-02-22 19:29:13
-
+archive/issues_002265.json:
+```json
+{
+    "body": "Assignee: rlm\n\n\n```\nsage: C = graphs.CubeGraph(4)\nsage: C.shortest_paths('0000')\n\n{'0000': ['0000'],\n...\n '1111': ['0000', '0100', '0110', '1110', '1111']}\nsage: C.shortest_path_all_pairs()\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/rlmill/sage/<ipython console> in <module>()\n\n/Users/rlmill/sage/local/lib/python2.5/site-packages/sage/graphs/graph.py in shortest_path_all_pairs(self)\n   2245             for u in verts:\n   2246                 for v in verts:\n-> 2247                     if dist[u][v] > dist[u][w] + dist[w][v]:\n   2248                         dist[u][v] = dist[u][w] + dist[w][v]\n   2249                         pred[u][v] = pred[w][v]\n\n<type 'exceptions.TypeError'>: unsupported operand type(s) for +: 'int' and 'NoneType'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2265\n\n",
+    "created_at": "2008-02-22T19:29:13Z",
+    "labels": [
+        "graph theory",
+        "major",
+        "bug"
+    ],
+    "title": "fix shortest_path_all_pairs",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2265",
+    "user": "rlm"
+}
+```
 Assignee: rlm
 
 
@@ -33,10 +43,25 @@ sage: C.shortest_path_all_pairs()
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2265
+
+
+
+
 
 ---
 
-Comment by jason created at 2008-02-22 19:32:45
+archive/issue_comments_015004.json:
+```json
+{
+    "body": "This works for me on ubuntu 7.10, 32-bit, sage 2.10.1:\n\n\n```\nsage: C=graphs.CubeGraph(4)\nsage: C.shortest_paths('0000')\n\n{'0000': ['0000'],\n '0001': ['0000', '0001'],\n '0010': ['0000', '0010'],\n '0011': ['0000', '0001', '0011'],\n '0100': ['0000', '0100'],\n '0101': ['0000', '0100', '0101'],\n '0110': ['0000', '0100', '0110'],\n '0111': ['0000', '0100', '0110', '0111'],\n '1000': ['0000', '1000'],\n '1001': ['0000', '1000', '1001'],\n '1010': ['0000', '1000', '1010'],\n '1011': ['0000', '0001', '0011', '1011'],\n '1100': ['0000', '1000', '1100'],\n '1101': ['0000', '0100', '0101', '1101'],\n '1110': ['0000', '0100', '0110', '1110'],\n '1111': ['0000', '0100', '0110', '1110', '1111']}\n```\n",
+    "created_at": "2008-02-22T19:32:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2265",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2265#issuecomment-15004",
+    "user": "jason"
+}
+```
 
 This works for me on ubuntu 7.10, 32-bit, sage 2.10.1:
 
@@ -65,39 +90,96 @@ sage: C.shortest_paths('0000')
 
 
 
+
 ---
 
-Comment by jason created at 2008-02-22 19:33:35
+archive/issue_comments_015005.json:
+```json
+{
+    "body": "Never mind, I see that the error was something different.  I get the same error.",
+    "created_at": "2008-02-22T19:33:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2265",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2265#issuecomment-15005",
+    "user": "jason"
+}
+```
 
 Never mind, I see that the error was something different.  I get the same error.
 
 
+
 ---
 
-Comment by jason created at 2008-02-22 20:04:48
+archive/issue_comments_015006.json:
+```json
+{
+    "body": "The problem was that we were blindly adding the labels to edges, so if an edge didn't have a label, things went boom.\n\nI added a default_weight option which will be applied when an edge doesn't have a weight.",
+    "created_at": "2008-02-22T20:04:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2265",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2265#issuecomment-15006",
+    "user": "jason"
+}
+```
 
 The problem was that we were blindly adding the labels to edges, so if an edge didn't have a label, things went boom.
 
 I added a default_weight option which will be applied when an edge doesn't have a weight.
 
 
+
 ---
+
+archive/issue_comments_015007.json:
+```json
+{
+    "body": "Attachment\n\nI also added a by_weight option as vgermrk suggested to be consistent with the other shortest path functions.",
+    "created_at": "2008-02-22T20:21:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2265",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2265#issuecomment-15007",
+    "user": "jason"
+}
+```
 
 Attachment
 
 I also added a by_weight option as vgermrk suggested to be consistent with the other shortest path functions.
 
 
+
 ---
 
-Comment by rlm created at 2008-02-22 21:22:40
+archive/issue_comments_015008.json:
+```json
+{
+    "body": "I haven't run doctests yet, but pending that, everything looks good.",
+    "created_at": "2008-02-22T21:22:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2265",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2265#issuecomment-15008",
+    "user": "rlm"
+}
+```
 
 I haven't run doctests yet, but pending that, everything looks good.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-24 18:11:45
+archive/issue_comments_015009.json:
+```json
+{
+    "body": "Testall passes with that patch, so with rml's review I am giving this a positive review.\n\nCheers,\n\nMichael",
+    "created_at": "2008-02-24T18:11:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2265",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2265#issuecomment-15009",
+    "user": "mabshoff"
+}
+```
 
 Testall passes with that patch, so with rml's review I am giving this a positive review.
 
@@ -106,15 +188,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-24 18:14:47
+archive/issue_comments_015010.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-02-24T18:14:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2265",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2265#issuecomment-15010",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-24 18:14:47
+archive/issue_comments_015011.json:
+```json
+{
+    "body": "Merged in Sage 2.10.3.alpha0",
+    "created_at": "2008-02-24T18:14:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2265",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2265#issuecomment-15011",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.3.alpha0

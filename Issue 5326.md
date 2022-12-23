@@ -1,11 +1,21 @@
 # Issue 5326: support weighted term orderings
 
-Issue created by migration from https://trac.sagemath.org/ticket/5326
-
-Original creator: malb
-
-Original creation time: 2009-02-21 02:07:21
-
+archive/issues_005326.json:
+```json
+{
+    "body": "Assignee: malb\n\nCC:  john_perry\n\nJacob wrote on [sage-devel]:\n\n> From reading the documentation of the TermOrder command, it looks \n> like if I want to use a term order not defined in SAGE, I should \n> be able to make my term order a string that can be passed to \n> Singular.  This works for some term orderings, but not for those \n> that have commas in their definitions.  Judging from the code, I \n> think that SAGE sees the comma and assumes that I want a block \n> ordering (which I don't).\n\n> For example, if I want weighted reverse lex ordering with some\n> weights, I can do that in Singular:\n {{{\nring rr=0,(x,y),wp(2,3);\npoly f=x2+y3;\ndeg(f);\n9\npoly g = x<sup>3*y+y</sup>3;\nideal I = f,g;\nstd(I);\n_[1]=y3+x2\n_[2]=x3y-x2\n_[3]=x5+x2y2\n }}}\n\n> But not in SAGE:\n\n```\nsage: T = TermOrder(\"wp(2,3)\")\nTraceback (most recent call last):\n...\nTypeError: wp(2,3) is not a valid term ordering\n```\n\n\n```\nsage: R.<x,y> = PolynomialRing(QQ,2,T)\nsage: R._singular_()\n//   characteristic : 0\n//   number of vars : 2\n//        block   1 : ordering dp\n//                  : names    x y\n//        block   2 : ordering C\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5326\n\n",
+    "created_at": "2009-02-21T02:07:21Z",
+    "labels": [
+        "commutative algebra",
+        "major",
+        "enhancement"
+    ],
+    "title": "support weighted term orderings",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5326",
+    "user": "malb"
+}
+```
 Assignee: malb
 
 CC:  john_perry
@@ -56,59 +66,151 @@ sage: R._singular_()
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5326
+
+
+
+
 
 ---
 
-Comment by john_perry created at 2012-01-26 18:48:28
+archive/issue_comments_040998.json:
+```json
+{
+    "body": "Changing status from new to needs_info.",
+    "created_at": "2012-01-26T18:48:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5326",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5326#issuecomment-40998",
+    "user": "john_perry"
+}
+```
 
 Changing status from new to needs_info.
 
 
+
 ---
 
-Comment by john_perry created at 2012-01-26 18:48:28
+archive/issue_comments_040999.json:
+```json
+{
+    "body": "I believe this is a duplicate of #11316, in which case it has been fixed!",
+    "created_at": "2012-01-26T18:48:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5326",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5326#issuecomment-40999",
+    "user": "john_perry"
+}
+```
 
 I believe this is a duplicate of #11316, in which case it has been fixed!
 
 
+
 ---
 
-Comment by chapoton created at 2017-04-06 10:05:56
+archive/issue_comments_041000.json:
+```json
+{
+    "body": "Changing status from needs_info to positive_review.",
+    "created_at": "2017-04-06T10:05:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5326",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5326#issuecomment-41000",
+    "user": "chapoton"
+}
+```
 
 Changing status from needs_info to positive_review.
 
 
+
 ---
 
-Comment by chapoton created at 2017-04-06 10:05:56
+archive/issue_comments_041001.json:
+```json
+{
+    "body": "weighted term orders are implemented since long..",
+    "created_at": "2017-04-06T10:05:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5326",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5326#issuecomment-41001",
+    "user": "chapoton"
+}
+```
 
 weighted term orders are implemented since long..
 
 
+
 ---
 
-Comment by chapoton created at 2017-04-06 10:07:56
+archive/issue_comments_041002.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_info.",
+    "created_at": "2017-04-06T10:07:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5326",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5326#issuecomment-41002",
+    "user": "chapoton"
+}
+```
 
 Changing status from positive_review to needs_info.
 
 
+
 ---
 
-Comment by chapoton created at 2017-04-06 10:07:56
+archive/issue_comments_041003.json:
+```json
+{
+    "body": "maybe not so clear..",
+    "created_at": "2017-04-06T10:07:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5326",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5326#issuecomment-41003",
+    "user": "chapoton"
+}
+```
 
 maybe not so clear..
 
 
+
 ---
 
-Comment by chapoton created at 2017-06-02 13:28:48
+archive/issue_comments_041004.json:
+```json
+{
+    "body": "Changing status from needs_info to positive_review.",
+    "created_at": "2017-06-02T13:28:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5326",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5326#issuecomment-41004",
+    "user": "chapoton"
+}
+```
 
 Changing status from needs_info to positive_review.
 
 
+
 ---
 
-Comment by chapoton created at 2017-06-02 13:28:48
+archive/issue_comments_041005.json:
+```json
+{
+    "body": "The correct syntax is \n\n```\nT =  TermOrder(\"wp\",(2,3))\n```\n",
+    "created_at": "2017-06-02T13:28:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5326",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5326#issuecomment-41005",
+    "user": "chapoton"
+}
+```
 
 The correct syntax is 
 
@@ -118,15 +220,37 @@ T =  TermOrder("wp",(2,3))
 
 
 
+
 ---
 
-Comment by embray created at 2017-07-13 07:54:31
+archive/issue_comments_041006.json:
+```json
+{
+    "body": "Closing tickets in the sage-duplicate/invalid/wontfix module with positive_review (i.e. someone has confirmed they should be closed).",
+    "created_at": "2017-07-13T07:54:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5326",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5326#issuecomment-41006",
+    "user": "embray"
+}
+```
 
 Closing tickets in the sage-duplicate/invalid/wontfix module with positive_review (i.e. someone has confirmed they should be closed).
 
 
+
 ---
 
-Comment by embray created at 2017-07-13 07:54:31
+archive/issue_comments_041007.json:
+```json
+{
+    "body": "Resolution: wontfix",
+    "created_at": "2017-07-13T07:54:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5326",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5326#issuecomment-41007",
+    "user": "embray"
+}
+```
 
 Resolution: wontfix

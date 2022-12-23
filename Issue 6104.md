@@ -1,11 +1,21 @@
 # Issue 6104: [with spkg, needs review] Fix Solaris specific build issue for libfplll.spkg
 
-Issue created by migration from https://trac.sagemath.org/ticket/6104
-
-Original creator: mabshoff
-
-Original creation time: 2009-05-21 04:26:44
-
+archive/issues_006104.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\ndpe.h was not including some headers for finite() and also due to system header differences there are template scope issues with NAN. The spkg at \n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-4.0/rc0/libfplll-3.0.12.p0.spkg\n\nworks around that.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/6104\n\n",
+    "created_at": "2009-05-21T04:26:44Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "[with spkg, needs review] Fix Solaris specific build issue for libfplll.spkg",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6104",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 dpe.h was not including some headers for finite() and also due to system header differences there are template scope issues with NAN. The spkg at 
@@ -18,16 +28,42 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/6104
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2009-05-21 04:27:16
+archive/issue_comments_048763.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-05-21T04:27:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6104",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6104#issuecomment-48763",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by was created at 2009-05-28 06:49:30
+archive/issue_comments_048764.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-05-28T06:49:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6104",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6104#issuecomment-48764",
+    "user": "was"
+}
+```
 
 Resolution: fixed

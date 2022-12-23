@@ -1,11 +1,21 @@
 # Issue 6964: implement computation of Dirichlet character of irreducible cuspidal modular symbols space
 
-Issue created by migration from https://trac.sagemath.org/ticket/6964
-
-Original creator: was
-
-Original creation time: 2009-09-20 00:43:57
-
+archive/issues_006964.json:
+```json
+{
+    "body": "Assignee: tbd\n\nImplement this function q_eigenform_character described below:\n\n```\nsage: f = ModularSymbols(Gamma1(13),2,sign=1).cuspidal_subspace().decomposition()[0]\nsage: f.q_eigenform(5,'a')\nq + a*q^2 + (-2*a - 4)*q^3 + (-a - 1)*q^4 + O(q^5)\nsage: f.q_eigenform_character('a')\nTraceback (most recent call last):\n...\nAttributeError: 'ModularSymbolsSubspace' object has no attribute 'q_eigenform_character'\n```\n\n\nIn case f.character() is not None, the above function should be easy to implement -- just return the character.  Otherwise it is harder.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6964\n\n",
+    "created_at": "2009-09-20T00:43:57Z",
+    "labels": [
+        "algebra",
+        "major",
+        "bug"
+    ],
+    "title": "implement computation of Dirichlet character of irreducible cuspidal modular symbols space",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6964",
+    "user": "was"
+}
+```
 Assignee: tbd
 
 Implement this function q_eigenform_character described below:
@@ -23,58 +33,158 @@ AttributeError: 'ModularSymbolsSubspace' object has no attribute 'q_eigenform_ch
 
 In case f.character() is not None, the above function should be easy to implement -- just return the character.  Otherwise it is harder.
 
+Issue created by migration from https://trac.sagemath.org/ticket/6964
+
+
+
+
 
 ---
+
+archive/issue_comments_057616.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-09-20T04:59:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6964",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6964#issuecomment-57616",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_057617.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-09-20T05:21:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6964",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6964#issuecomment-57617",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_057618.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-09-20T05:44:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6964",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6964#issuecomment-57618",
+    "user": "syazdani"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_057619.json:
+```json
+{
+    "body": "Attachment\n\nfix warning when building reference manual",
+    "created_at": "2009-09-24T15:36:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6964",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6964#issuecomment-57619",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
 fix warning when building reference manual
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-24 15:36:55
+archive/issue_comments_057620.json:
+```json
+{
+    "body": "The patch `trac_6964-formatting-fix.patch` fix a warning when building the reference manual with the previous patches.",
+    "created_at": "2009-09-24T15:36:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6964",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6964#issuecomment-57620",
+    "user": "mvngu"
+}
+```
 
 The patch `trac_6964-formatting-fix.patch` fix a warning when building the reference manual with the previous patches.
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-24 16:13:54
+archive/issue_comments_057621.json:
+```json
+{
+    "body": "Merged patches in this order:\n\n1. `trac_6964.patch`\n2. `trac_6964-part2.patch`\n3. `trac_6964-part3.patch`\n4. `trac_6964-part4.patch`\n5. `trac_6964-formatting-fix.patch`",
+    "created_at": "2009-09-24T16:13:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6964",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6964#issuecomment-57621",
+    "user": "mvngu"
+}
+```
 
 Merged patches in this order:
 
- 1. `trac_6964.patch`
- 1. `trac_6964-part2.patch`
- 1. `trac_6964-part3.patch`
- 1. `trac_6964-part4.patch`
- 1. `trac_6964-formatting-fix.patch`
+1. `trac_6964.patch`
+2. `trac_6964-part2.patch`
+3. `trac_6964-part3.patch`
+4. `trac_6964-part4.patch`
+5. `trac_6964-formatting-fix.patch`
+
 
 
 ---
 
-Comment by mvngu created at 2009-09-24 16:13:54
+archive/issue_comments_057622.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-09-24T16:13:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6964",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6964#issuecomment-57622",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-27 10:23:46
+archive/issue_comments_057623.json:
+```json
+{
+    "body": "There is no 4.1.2.alpha3. Sage 4.1.2.alpha3 was William Stein's release for working on making the notebook a standalone package.",
+    "created_at": "2009-09-27T10:23:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6964",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6964#issuecomment-57623",
+    "user": "mvngu"
+}
+```
 
 There is no 4.1.2.alpha3. Sage 4.1.2.alpha3 was William Stein's release for working on making the notebook a standalone package.

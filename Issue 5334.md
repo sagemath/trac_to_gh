@@ -1,11 +1,21 @@
 # Issue 5334: libgcrypt.spkg: Disable padlock again unconditionally
 
-Issue created by migration from https://trac.sagemath.org/ticket/5334
-
-Original creator: mabshoff
-
-Original creation time: 2009-02-22 10:43:25
-
+archive/issues_005334.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nThis was reported in IRC:\n\n```\n\n[02:28am] tringlarido: I had a problem with compiling the sage3-3 sources.\n[02:29am] mabs: hi\n[02:29am] mabs: What platform are you on?\n[02:29am] tringlarido: The install exit exactly at the same step than \nhttp://groups.google.fr/group/sage-devel/browse_thread/thread/9d4b39e961c24e4f/89bfb1cd2822ffd2?lnk=gst&q=rijndael#89bfb1cd2822ffd2\n[02:29am] tringlarido: Linux iml88 2.6.11-6mdk #1 Tue Mar 22 16:04:32 CET 2005 i686 Intel(R) Pentium(R) 4 CPU 2.80GHz unknown GNU/Linux\n[02:30am] mabs: Ok, I see what the problem is.\n```\n\nI reenabled padlock support in 3.3 since the libgcrypt people claimed that it had been fixed. The spkg at \n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.4/alpha0/libgcrypt-1.4.3.p0.spkg\n\ndisables it again and also adds Solaris 64 bit build support while I am in there :)\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5334\n\n",
+    "created_at": "2009-02-22T10:43:25Z",
+    "labels": [
+        "packages: standard",
+        "critical",
+        "bug"
+    ],
+    "title": "libgcrypt.spkg: Disable padlock again unconditionally",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5334",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 This was reported in IRC:
@@ -31,10 +41,25 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/5334
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2009-02-22 10:46:01
+archive/issue_comments_041088.json:
+```json
+{
+    "body": "And it seems to work:\n\n```\n\n[02:44am] tringlarido: I restart the build, but I don't know where it \nstarts from (the beginning ?). I well tell you if it works. Thanks.\n[02:45am] mabs: It will restart from where it left of.\n[02:45am] mabs: I.e it will build libgrcypt first.\n[02:45am] tringlarido: OK. I saw the libcrypt build just pass.\n[02:45am] mabs: The log should be scrolling by, so you should see \nthen the next one is done.\n[02:45am] mabs: Ok great.\n```\n\n\nWe still do need a formal review of the spkg, but that shouldn't be too much work.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-22T10:46:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5334",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5334#issuecomment-41088",
+    "user": "mabshoff"
+}
+```
 
 And it seems to work:
 
@@ -58,30 +83,74 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-22 11:03:53
+archive/issue_comments_041089.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-02-22T11:03:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5334",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5334#issuecomment-41089",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mhansen created at 2009-02-24 18:01:01
+archive/issue_comments_041090.json:
+```json
+{
+    "body": "Looks good to me.",
+    "created_at": "2009-02-24T18:01:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5334",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5334#issuecomment-41090",
+    "user": "mhansen"
+}
+```
 
 Looks good to me.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-24 19:34:52
+archive/issue_comments_041091.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-02-24T19:34:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5334",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5334#issuecomment-41091",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-24 19:34:52
+archive/issue_comments_041092.json:
+```json
+{
+    "body": "Merged in Sage 3.4.alpha0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-24T19:34:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5334",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5334#issuecomment-41092",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.4.alpha0.
 

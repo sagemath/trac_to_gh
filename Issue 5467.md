@@ -1,11 +1,21 @@
 # Issue 5467: The sage/macaulay2 interface doesn't work at all on large input
 
-Issue created by migration from https://trac.sagemath.org/ticket/5467
-
-Original creator: was
-
-Original creation time: 2009-03-10 18:03:16
-
+archive/issues_005467.json:
+```json
+{
+    "body": "Assignee: mhansen\n\nON OS X and Linux with Macaulay 1.2.\n\n\n```\nteragon:~ wstein$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: macaulay2(10^10000)\nsage0\nsage: macaulay2(10^10000)\nsage1\nsage: macaulay2(10^10000)\nsage2\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5467\n\n",
+    "created_at": "2009-03-10T18:03:16Z",
+    "labels": [
+        "interfaces",
+        "major",
+        "bug"
+    ],
+    "title": "The sage/macaulay2 interface doesn't work at all on large input",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5467",
+    "user": "was"
+}
+```
 Assignee: mhansen
 
 ON OS X and Linux with Macaulay 1.2.
@@ -24,72 +34,190 @@ sage2
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5467
+
+
+
+
 
 ---
 
-Comment by novoselt created at 2010-01-09 07:29:19
+archive/issue_comments_042434.json:
+```json
+{
+    "body": "This is a trivial fix - the problem was in a wrong file loading command passed to Macaulay2.\n\nThe tests in the modified function pass (although optional tests for the whole file give a bunch of unrelated mistakes).",
+    "created_at": "2010-01-09T07:29:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5467",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5467#issuecomment-42434",
+    "user": "novoselt"
+}
+```
 
 This is a trivial fix - the problem was in a wrong file loading command passed to Macaulay2.
 
 The tests in the modified function pass (although optional tests for the whole file give a bunch of unrelated mistakes).
 
 
+
 ---
 
-Comment by novoselt created at 2010-01-09 07:29:19
+archive/issue_comments_042435.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-01-09T07:29:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5467",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5467#issuecomment-42435",
+    "user": "novoselt"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by novoselt created at 2010-01-09 20:41:25
+archive/issue_comments_042436.json:
+```json
+{
+    "body": "Must be applied after the first patch.",
+    "created_at": "2010-01-09T20:41:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5467",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5467#issuecomment-42436",
+    "user": "novoselt"
+}
+```
 
 Must be applied after the first patch.
 
 
+
 ---
+
+archive/issue_comments_042437.json:
+```json
+{
+    "body": "Attachment\n\nI managed to make a trivial mistake in this trivial fix - one of the test lines was not marked with #optional. Now it is.",
+    "created_at": "2010-01-09T20:42:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5467",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5467#issuecomment-42437",
+    "user": "novoselt"
+}
+```
 
 Attachment
 
 I managed to make a trivial mistake in this trivial fix - one of the test lines was not marked with #optional. Now it is.
 
 
+
 ---
 
-Comment by novoselt created at 2010-01-31 23:02:17
+archive/issue_comments_042438.json:
+```json
+{
+    "body": "Converged patches into a single one and made the commit message of standard form.",
+    "created_at": "2010-01-31T23:02:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5467",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5467#issuecomment-42438",
+    "user": "novoselt"
+}
+```
 
 Converged patches into a single one and made the commit message of standard form.
 
 
+
 ---
 
-Comment by novoselt created at 2010-01-31 23:04:22
+archive/issue_comments_042439.json:
+```json
+{
+    "body": "Only this patch should be applied.",
+    "created_at": "2010-01-31T23:04:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5467",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5467#issuecomment-42439",
+    "user": "novoselt"
+}
+```
 
 Only this patch should be applied.
 
 
+
 ---
+
+archive/issue_comments_042440.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-02-07T17:02:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5467",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5467#issuecomment-42440",
+    "user": "novoselt"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2010-07-09 01:03:06
+archive/issue_comments_042441.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-07-09T01:03:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5467",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5467#issuecomment-42441",
+    "user": "mhansen"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mhansen created at 2010-07-09 01:03:06
+archive/issue_comments_042442.json:
+```json
+{
+    "body": "Looks good to me.",
+    "created_at": "2010-07-09T01:03:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5467",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5467#issuecomment-42442",
+    "user": "mhansen"
+}
+```
 
 Looks good to me.
 
 
+
 ---
 
-Comment by mpatel created at 2010-07-21 03:30:21
+archive/issue_comments_042443.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-07-21T03:30:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5467",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5467#issuecomment-42443",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed

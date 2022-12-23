@@ -1,11 +1,21 @@
 # Issue 9164: cygwin: gap.cputime() does not work
 
-Issue created by migration from https://trac.sagemath.org/ticket/9164
-
-Original creator: was
-
-Original creation time: 2010-06-07 04:02:22
-
+archive/issues_009164.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  jpflori dimpase\n\n\n```\n\nsage: gap.cputime()\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\n\n/home/wstein/sage-4.4.3/<ipython console> in <module>()\n\n/home/wstein/sage-4.4.3/local/lib/python2.6/site-packages/sage/interfaces/gap.pyc in cputime(self, t)\n    429         else:\n    430             self.eval('_r_ := Runtimes();')\n--> 431             r = sum(eval(self.eval('[_r_.user_time, _r_.system_time, _r_.user_time_children, _r_.system_time_children]')))\n    432             return r/1000.0\n    433 \n\n/home/wstein/sage-4.4.3/local/lib/python2.6/site-packages/sage/interfaces/gap.pyc in <module>()\n\nNameError: name 'fail' is not defined\nsage: \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9164\n\n",
+    "created_at": "2010-06-07T04:02:22Z",
+    "labels": [
+        "porting: Cygwin",
+        "major",
+        "bug"
+    ],
+    "title": "cygwin: gap.cputime() does not work",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9164",
+    "user": "was"
+}
+```
 Assignee: tbd
 
 CC:  jpflori dimpase
@@ -33,10 +43,25 @@ sage:
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/9164
+
+
+
+
 
 ---
 
-Comment by kcrisman created at 2013-02-27 03:23:37
+archive/issue_comments_085558.json:
+```json
+{
+    "body": "Hey, is this related to the mysterious comment\n\n```\nsage: v, t = qsieve(n, time=True)   # uses the sieve    (optional: time doesn't work on cygwin) \n```\n\nin sage/interfaces/qsieve.py?  And does `time` now work on Cygwin?",
+    "created_at": "2013-02-27T03:23:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9164",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9164#issuecomment-85558",
+    "user": "kcrisman"
+}
+```
 
 Hey, is this related to the mysterious comment
 
@@ -47,16 +72,38 @@ sage: v, t = qsieve(n, time=True)   # uses the sieve    (optional: time doesn't 
 in sage/interfaces/qsieve.py?  And does `time` now work on Cygwin?
 
 
+
 ---
 
-Comment by jpflori created at 2013-02-27 21:40:30
+archive/issue_comments_085559.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2013-02-27T21:40:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9164",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9164#issuecomment-85559",
+    "user": "jpflori"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jpflori created at 2013-02-27 21:40:30
+archive/issue_comments_085560.json:
+```json
+{
+    "body": "Dont think so.\n\ngap.cputime() works on both my systems.\nIt is even so nice it reports twice as much on the 32 bits than on the 64 bits...\n\nSo let's close this one.\n\nNonetheless the other qsieve examples do not work, this should be treated elsewhere.",
+    "created_at": "2013-02-27T21:40:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9164",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9164#issuecomment-85560",
+    "user": "jpflori"
+}
+```
 
 Dont think so.
 
@@ -68,9 +115,20 @@ So let's close this one.
 Nonetheless the other qsieve examples do not work, this should be treated elsewhere.
 
 
+
 ---
 
-Comment by jpflori created at 2013-02-27 22:02:28
+archive/issue_comments_085561.json:
+```json
+{
+    "body": "Replying to [comment:2 jpflori]:\n> Nonetheless the other qsieve examples do not work, this should be treated elsewhere.\nOr not:\nhttp://comments.gmane.org/gmane.os.cygwin/106331\nAlthough the time bash builtin works, there is no time command under Cygwin (nor in any package), so either we should modify the qsieve code (what will have to be done anyway after #12173 gets in and we get rid of qsieve which will then be obsoleted), or live with such code being optional.",
+    "created_at": "2013-02-27T22:02:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9164",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9164#issuecomment-85561",
+    "user": "jpflori"
+}
+```
 
 Replying to [comment:2 jpflori]:
 > Nonetheless the other qsieve examples do not work, this should be treated elsewhere.
@@ -79,9 +137,20 @@ http://comments.gmane.org/gmane.os.cygwin/106331
 Although the time bash builtin works, there is no time command under Cygwin (nor in any package), so either we should modify the qsieve code (what will have to be done anyway after #12173 gets in and we get rid of qsieve which will then be obsoleted), or live with such code being optional.
 
 
+
 ---
 
-Comment by jpflori created at 2013-02-27 22:06:08
+archive/issue_comments_085562.json:
+```json
+{
+    "body": "My bad, I wrongly used cygcheck.\nThere is http://cygwin.com/packages/time/\nSo either we make time a prereq which I would not advocate for, or rather test at runtime if the real time executable is available.\nBut thats for another ticket anyway (unless I get my hand on a Mac, fix #12173 and remove qsieve by that time).",
+    "created_at": "2013-02-27T22:06:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9164",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9164#issuecomment-85562",
+    "user": "jpflori"
+}
+```
 
 My bad, I wrongly used cygcheck.
 There is http://cygwin.com/packages/time/
@@ -89,16 +158,38 @@ So either we make time a prereq which I would not advocate for, or rather test a
 But thats for another ticket anyway (unless I get my hand on a Mac, fix #12173 and remove qsieve by that time).
 
 
+
 ---
 
-Comment by kcrisman created at 2013-02-27 22:07:17
+archive/issue_comments_085563.json:
+```json
+{
+    "body": "JP, see #14184.  What do you think?",
+    "created_at": "2013-02-27T22:07:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9164",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9164#issuecomment-85563",
+    "user": "kcrisman"
+}
+```
 
 JP, see #14184.  What do you think?
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-02-28 07:43:18
+archive/issue_comments_085564.json:
+```json
+{
+    "body": "Replying to [comment:3 jpflori]:\n> Although the time bash builtin works, there is no time command under Cygwin (nor in any package)\nThis has nothing to do with Cygwin. My Gentoo Linux system doesn't have a `time` command either, it does have the `time` keyword (to be pedantic: it's a keyword, not a builtin) in bash.\n\n> so [...] we should modify the qsieve code\nExactly, see #14202.",
+    "created_at": "2013-02-28T07:43:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9164",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9164#issuecomment-85564",
+    "user": "jdemeyer"
+}
+```
 
 Replying to [comment:3 jpflori]:
 > Although the time bash builtin works, there is no time command under Cygwin (nor in any package)
@@ -108,22 +199,55 @@ This has nothing to do with Cygwin. My Gentoo Linux system doesn't have a `time`
 Exactly, see #14202.
 
 
+
 ---
 
-Comment by kcrisman created at 2013-03-08 12:43:30
+archive/issue_comments_085565.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2013-03-08T12:43:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9164",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9164#issuecomment-85565",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by kcrisman created at 2013-03-08 12:43:30
+archive/issue_comments_085566.json:
+```json
+{
+    "body": "After a rebase, this works!  Awesome.",
+    "created_at": "2013-03-08T12:43:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9164",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9164#issuecomment-85566",
+    "user": "kcrisman"
+}
+```
 
 After a rebase, this works!  Awesome.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-03-15 13:02:31
+archive/issue_comments_085567.json:
+```json
+{
+    "body": "Resolution: worksforme",
+    "created_at": "2013-03-15T13:02:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9164",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9164#issuecomment-85567",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: worksforme

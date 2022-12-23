@@ -1,35 +1,84 @@
 # Issue 4476: [with patch, spkg; needs review] Update to Cython 0.10
 
-Issue created by migration from https://trac.sagemath.org/ticket/4476
-
-Original creator: robertwb
-
-Original creation time: 2008-11-09 06:00:17
-
+archive/issues_004476.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nSee http://trac.cython.org/cython_trac/query?group=component&milestone=0.10 (though this is by no means exhaustive). \n\nMost relevant for us are the optimizations, many bugfixes and the ability to use \"cimport *\" for types. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4476\n\n",
+    "created_at": "2008-11-09T06:00:17Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "enhancement"
+    ],
+    "title": "[with patch, spkg; needs review] Update to Cython 0.10",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4476",
+    "user": "robertwb"
+}
+```
 Assignee: mabshoff
 
 See http://trac.cython.org/cython_trac/query?group=component&milestone=0.10 (though this is by no means exhaustive). 
 
 Most relevant for us are the optimizations, many bugfixes and the ability to use "cimport *" for types. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4476
+
+
+
+
 
 ---
+
+archive/issue_comments_033056.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-11-09T06:02:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4476",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4476#issuecomment-33056",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by robertwb created at 2008-11-09 06:02:55
+archive/issue_comments_033057.json:
+```json
+{
+    "body": "Spkg up at http://sage.math.washington.edu/home/robertwb/cython/cython-0.10.spkg\n\nSage builds and all tests pass.",
+    "created_at": "2008-11-09T06:02:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4476",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4476#issuecomment-33057",
+    "user": "robertwb"
+}
+```
 
 Spkg up at http://sage.math.washington.edu/home/robertwb/cython/cython-0.10.spkg
 
 Sage builds and all tests pass.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-09 09:43:48
+archive/issue_comments_033058.json:
+```json
+{
+    "body": "Spkg and patch look good to me. The is one tiny reviewer patch for the following failure:\n\n```\nsage -t -long devel/sage/sage/interfaces/gap.py             \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.rc0/devel/sage/sage/interfaces/gap.py\", line 262:\n    sage: g._next_var_name()\nExpected:\n    '$sage5'\nGot:\n    '$sage3'\n**********************************************************************\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-09T09:43:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4476",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4476#issuecomment-33058",
+    "user": "mabshoff"
+}
+```
 
 Spkg and patch look good to me. The is one tiny reviewer patch for the following failure:
 
@@ -51,15 +100,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-09 09:46:48
+archive/issue_comments_033059.json:
+```json
+{
+    "body": "Merged in Sage 3.2.rc0",
+    "created_at": "2008-11-09T09:46:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4476",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4476#issuecomment-33059",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.2.rc0
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-09 09:46:48
+archive/issue_comments_033060.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-11-09T09:46:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4476",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4476#issuecomment-33060",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

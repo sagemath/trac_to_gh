@@ -1,11 +1,21 @@
 # Issue 7898: Change common variables to names in singular
 
-Issue created by migration from https://trac.sagemath.org/ticket/7898
-
-Original creator: drkirkby
-
-Original creation time: 2010-01-12 03:12:28
-
+archive/issues_007898.json:
+```json
+{
+    "body": "Assignee: GeorgSWeber\n\nCC:  jsp\n\nIt was agreed recently that variables would not be used for very common commands like MV, MKDIR etc. \n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/bd7ae07a1157bead/970aa0dc8fa56ab7?lnk=raot\n\n#7818 usets these, so this package will break. The fix is to simply replace things like \n\n$LN with 'ln'\n\nAn updated .spkg can be found at\n\nhttp://boxen.math.washington.edu/home/kirkby/portability/singular-3-1-0-4-20090818.p3/singular-3-1-0-4-20090818.p3.spkg\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7898\n\n",
+    "created_at": "2010-01-12T03:12:28Z",
+    "labels": [
+        "build",
+        "major",
+        "bug"
+    ],
+    "title": "Change common variables to names in singular",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7898",
+    "user": "drkirkby"
+}
+```
 Assignee: GeorgSWeber
 
 CC:  jsp
@@ -24,38 +34,99 @@ http://boxen.math.washington.edu/home/kirkby/portability/singular-3-1-0-4-200908
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7898
+
+
+
+
 
 ---
 
-Comment by drkirkby created at 2010-01-12 03:13:53
+archive/issue_comments_068691.json:
+```json
+{
+    "body": "Replace all things like $MKDIR with mkdir",
+    "created_at": "2010-01-12T03:13:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7898",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7898#issuecomment-68691",
+    "user": "drkirkby"
+}
+```
 
 Replace all things like $MKDIR with mkdir
 
 
+
 ---
+
+archive/issue_comments_068692.json:
+```json
+{
+    "body": "Attachment\n\nNote, $CP is purposely left as '$CP', since the GNU version of 'cp' have an extra option which can be useful.",
+    "created_at": "2010-01-12T03:41:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7898",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7898#issuecomment-68692",
+    "user": "drkirkby"
+}
+```
 
 Attachment
 
 Note, $CP is purposely left as '$CP', since the GNU version of 'cp' have an extra option which can be useful.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-01-12 03:41:04
+archive/issue_comments_068693.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-01-12T03:41:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7898",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7898#issuecomment-68693",
+    "user": "drkirkby"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jsp created at 2010-01-12 10:24:20
+archive/issue_comments_068694.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-01-12T10:24:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7898",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7898#issuecomment-68694",
+    "user": "jsp"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jsp created at 2010-01-12 10:24:20
+archive/issue_comments_068695.json:
+```json
+{
+    "body": "The new spkg looks good. Checked on Fedora and Open Solaris.\n\nPositive review.\n\nJaap",
+    "created_at": "2010-01-12T10:24:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7898",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7898#issuecomment-68695",
+    "user": "jsp"
+}
+```
 
 The new spkg looks good. Checked on Fedora and Open Solaris.
 
@@ -64,37 +135,92 @@ Positive review.
 Jaap
 
 
+
 ---
 
-Comment by rlm created at 2010-01-14 02:50:33
+archive/issue_comments_068696.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-14T02:50:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7898",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7898#issuecomment-68696",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by rlm created at 2010-01-14 06:35:28
+archive/issue_comments_068697.json:
+```json
+{
+    "body": "Resolution changed from fixed to ",
+    "created_at": "2010-01-14T06:35:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7898",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7898#issuecomment-68697",
+    "user": "rlm"
+}
+```
 
 Resolution changed from fixed to 
 
 
+
 ---
 
-Comment by rlm created at 2010-01-14 06:35:28
+archive/issue_comments_068698.json:
+```json
+{
+    "body": "Changing status from closed to new.",
+    "created_at": "2010-01-14T06:35:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7898",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7898#issuecomment-68698",
+    "user": "rlm"
+}
+```
 
 Changing status from closed to new.
 
 
+
 ---
 
-Comment by rlm created at 2010-01-14 06:36:28
+archive/issue_comments_068699.json:
+```json
+{
+    "body": "Changing status from new to needs_work.",
+    "created_at": "2010-01-14T06:36:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7898",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7898#issuecomment-68699",
+    "user": "rlm"
+}
+```
 
 Changing status from new to needs_work.
 
 
+
 ---
 
-Comment by rlm created at 2010-01-14 06:36:28
+archive/issue_comments_068700.json:
+```json
+{
+    "body": "Sage did not start after building this spkg on boxen:\n\n```\nrlmill@boxen:/scratch/rlm/sage-4.3.1.rc0/devel/sage-main$ ../../sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n| Sage Version 4.3.1.alpha2, Release Date: 2010-01-13                |\n| Type notebook() for the GUI, and license() for information.        |\n/virtual/scratch/rlm/sage-4.3.1.rc0/local/lib/python2.6/site-packages/IPython/ipmaker.pyc\nin force_import(modname)\n    64         reload(sys.modules[modname])\n    65     else:\n---> 66         __import__(modname)\n    67\n    68\n\n/virtual/scratch/rlm/sage-4.3.1.rc0/local/bin/ipy_profile_sage.py in <module>()\n     5     preparser(True)\n     6\n----> 7     import sage.all_cmdline\n     8     sage.all_cmdline._init_cmdline(globals())\n     9\n\n/virtual/scratch/rlm/sage-4.3.1.rc0/local/lib/python2.6/site-packages/sage/all_cmdline.py\nin <module>()\n    12 try:\n    13\n---> 14     from sage.all import *\n    15     from sage.calculus.predefined import x\n    16     preparser(on=True)\n\n/virtual/scratch/rlm/sage-4.3.1.rc0/local/lib/python2.6/site-packages/sage/all.py\nin <module>()\n    70 get_sigs()\n    71\n---> 72 from sage.rings.all      import *\n    73 from sage.matrix.all     import *\n    74\n\n/virtual/scratch/rlm/sage-4.3.1.rc0/local/lib/python2.6/site-packages/sage/rings/all.py\nin <module>()\n    92\n    93 # Algebraic numbers\n\n---> 94 from qqbar import (AlgebraicRealField, is_AlgebraicRealField, AA,\n    95                    AlgebraicReal, is_AlgebraicReal,\n    96                    AlgebraicField, is_AlgebraicField, QQbar,\n\n/virtual/scratch/rlm/sage-4.3.1.rc0/local/lib/python2.6/site-packages/sage/rings/qqbar.py\nin <module>()\n  1414 QQy = QQ['y']\n  1415 QQy_y = QQy.gen()\n-> 1416 QQxy = QQ['x', 'y']\n  1417 QQxy_x = QQxy.gen(0)\n  1418 QQxy_y = QQxy.gen(1)\n\n/virtual/scratch/rlm/sage-4.3.1.rc0/local/lib/python2.6/site-packages/sage/rings/ring.so\nin sage.rings.ring.Ring.__getitem__ (sage/rings/ring.c:2685)()\n\n/virtual/scratch/rlm/sage-4.3.1.rc0/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_ring_constructor.pyc\nin PolynomialRing(base_ring, arg1, arg2, sparse, order, names, name,\nimplementation)\n   353             names = arg1\n   354             n = len(names)\n--> 355             R = _multi_variate(base_ring, names, n, sparse, order)\n   356\n   357     if arg1 is None and arg2 is None:\n\n/virtual/scratch/rlm/sage-4.3.1.rc0/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_ring_constructor.pyc\nin _multi_variate(base_ring, names, n, sparse, order)\n   451         return R\n   452\n--> 453     from sage.rings.polynomial.multi_polynomial_libsingular\nimport MPolynomialRing_libsingular\n   454     if m.integral_domain.is_IntegralDomain(base_ring):\n   455         if n < 1:\n\n/virtual/scratch/rlm/sage-4.3.1.rc0/local/bin/multi_polynomial_libsingular.pyx\nin init sage.rings.polynomial.multi_polynomial_libsingular\n(sage/rings/polynomial/multi_polynomial_libsingular.cpp:29460)()\n\n/virtual/scratch/rlm/sage-4.3.1.rc0/local/lib/python2.6/site-packages/sage/libs/singular/__init__.py\nin <module>()\n     6\n     7 ## We predefine a couple of often used functions here to avoid\nthe fetch overhead ##\n\n----> 8 groebner = singular_function('groebner')\n     9\n    10\n\n/virtual/scratch/rlm/sage-4.3.1.rc0/local/lib/python2.6/site-packages/sage/libs/singular/function.so\nin sage.libs.singular.function.singular_function\n(sage/libs/singular/function.cpp:11103)()\n\n/virtual/scratch/rlm/sage-4.3.1.rc0/local/lib/python2.6/site-packages/sage/libs/singular/function.so\nin sage.libs.singular.function.SingularKernelFunction.__init__\n(sage/libs/singular/function.cpp:10853)()\n\n/virtual/scratch/rlm/sage-4.3.1.rc0/local/lib/python2.6/site-packages/sage/libs/singular/function.so\nin sage.libs.singular.function.SingularFunction.get_call_handler\n(sage/libs/singular/function.cpp:9141)()\n\nNotImplementedError:\nError importing ipy_profile_sage - perhaps you should run %upgrade?\nWARNING: Loading of ipy_profile_sage failed.\n```\n",
+    "created_at": "2010-01-14T06:36:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7898",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7898#issuecomment-68700",
+    "user": "rlm"
+}
+```
 
 Sage did not start after building this spkg on boxen:
 
@@ -213,15 +339,26 @@ WARNING: Loading of ipy_profile_sage failed.
 
 
 
+
 ---
 
-Comment by drkirkby created at 2010-01-14 07:14:17
+archive/issue_comments_068701.json:
+```json
+{
+    "body": "I'm totally baffled how on earth changing \n\n* $CHMOD to 'chmod'\n* $RM to 'rm'\n* $LN to 'ln'\n\nin singular's spkg-install file can break the singular package. All the variables were defined elsewhere (sage-env) to be just the command - no options were given. \n\nI can't help feel there must be some other explanation, but I'll certainly take a closer look at this. \n\nDave",
+    "created_at": "2010-01-14T07:14:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7898",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7898#issuecomment-68701",
+    "user": "drkirkby"
+}
+```
 
 I'm totally baffled how on earth changing 
 
- * $CHMOD to 'chmod'
- * $RM to 'rm'
- * $LN to 'ln'
+* $CHMOD to 'chmod'
+* $RM to 'rm'
+* $LN to 'ln'
 
 in singular's spkg-install file can break the singular package. All the variables were defined elsewhere (sage-env) to be just the command - no options were given. 
 
@@ -230,15 +367,37 @@ I can't help feel there must be some other explanation, but I'll certainly take 
 Dave
 
 
+
 ---
 
-Comment by rlm created at 2010-01-16 01:01:01
+archive/issue_comments_068702.json:
+```json
+{
+    "body": "This looks like the other errors we got from #7818. I'll give this one another try for rc0.",
+    "created_at": "2010-01-16T01:01:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7898",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7898#issuecomment-68702",
+    "user": "rlm"
+}
+```
 
 This looks like the other errors we got from #7818. I'll give this one another try for rc0.
 
 
+
 ---
 
-Comment by rlm created at 2010-01-16 02:29:09
+archive/issue_comments_068703.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-16T02:29:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7898",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7898#issuecomment-68703",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed

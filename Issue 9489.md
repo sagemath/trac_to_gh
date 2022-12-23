@@ -1,22 +1,32 @@
 # Issue 9489: doctest doc/en/thematic_tutorials/group_theory.rst failure on 't2.math' (Solaris 10 SPARC)
 
-Issue created by migration from https://trac.sagemath.org/ticket/9489
-
-Original creator: drkirkby
-
-Original creation time: 2010-07-13 14:09:19
-
+archive/issues_009489.json:
+```json
+{
+    "body": "Assignee: mvngu\n\nCC:  jhpalmieri\n\n## Hardware + software\n* Sun T5240 with two T2+ UltraSPARC processors\n* 2 CPUS = 16 cores = 128 hardware threads \n* 1167 MHz\n* 32 GB RAM\n* Solaris 10 update 7 (5/09)\n* sage-4.5.rc0 with:\n  * A library patch from #7379\n  * An ECL patch from #9187\n\n\nJohn Palmieri run the long doctests. On using John's build, I find the following test fails, even if run from the command line, and with SAGE_TIMEOUT_LONG increased to 10,000 seconds, which ensure there are no timeouts (around 3600 seconds should be sufficient on 't2.math' for SAGE_TIMEOUT_LONG)\n\n\n```\nsage -t -long \"devel/sage/doc/en/thematic_tutorials/group_theory.rst\"\n**********************************************************************\nFile \"/scratch/palmieri/sage-4.5.rc0/devel/sage/doc/en/thematic_tutorials/group_theory.rst\", line 904:\n    sage: map(order, subgroups)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/palmieri/sage-4.5.rc0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/palmieri/sage-4.5.rc0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/palmieri/sage-4.5.rc0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_42[4]>\", line 1, in <module>\n        map(order, subgroups)###line 904:\n    sage: map(order, subgroups)\n      File \"/scratch/palmieri/sage-4.5.rc0/local/lib/python/site-packages/sage/misc/functional.py\", line 1231, in order\n        return x.order()\n      File \"/scratch/palmieri/sage-4.5.rc0/local/lib/python/site-packages/sage/groups/perm_gps/permgroup.py\", line 1105, in order\n        return Integer(self._gap_().Size())\n      File \"/scratch/palmieri/sage-4.5.rc0/local/lib/python/site-packages/sage/interfaces/expect.py\", line 1408, in __call__\n        return self._obj.parent().function_call(self._name, [self._obj] + list(args), kwds)\n      File \"/scratch/palmieri/sage-4.5.rc0/local/lib/python/site-packages/sage/interfaces/gap.py\", line 619, in function_call\n        ['%s=%s'%(key,value.name()) for key, value in kwds.items()])))\n      File \"/scratch/palmieri/sage-4.5.rc0/local/lib/python/site-packages/sage/interfaces/gap.py\", line 354, in eval\n        result = Expect.eval(self, input_line, **kwds)\n      File \"/scratch/palmieri/sage-4.5.rc0/local/lib/python/site-packages/sage/interfaces/expect.py\", line 983, in eval\n        return '\\n'.join([self._eval_line(L, **kwds) for L in code.split('\\n') if L != ''])\n      File \"/scratch/palmieri/sage-4.5.rc0/local/lib/python/site-packages/sage/interfaces/gap.py\", line 492, in _eval_line\n        raise RuntimeError, message\n    RuntimeError: Unexpected EOF from Gap executing Size($sage58);\n**********************************************************************\n1 items had failures:\n   1 of   5 in __main__.example_42\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /rootpool2/local/kirkby/.sage//tmp/.doctest_group_theory.py\n\t [108.3 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -long \"devel/sage/doc/en/thematic_tutorials/group_theory.rst\"\nTotal time for all tests: 108.3 seconds\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9489\n\n",
+    "created_at": "2010-07-13T14:09:19Z",
+    "labels": [
+        "doctest coverage",
+        "major",
+        "bug"
+    ],
+    "title": "doctest doc/en/thematic_tutorials/group_theory.rst failure on 't2.math' (Solaris 10 SPARC)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9489",
+    "user": "drkirkby"
+}
+```
 Assignee: mvngu
 
 CC:  jhpalmieri
 
 ## Hardware + software
- * Sun T5240 with two T2+ UltraSPARC processors
- * 2 CPUS = 16 cores = 128 hardware threads 
- * 1167 MHz
- * 32 GB RAM
- * Solaris 10 update 7 (5/09)
- * sage-4.5.rc0 with:
+* Sun T5240 with two T2+ UltraSPARC processors
+* 2 CPUS = 16 cores = 128 hardware threads 
+* 1167 MHz
+* 32 GB RAM
+* Solaris 10 update 7 (5/09)
+* sage-4.5.rc0 with:
   * A library patch from #7379
   * An ECL patch from #9187
 
@@ -71,24 +81,61 @@ Total time for all tests: 108.3 seconds
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/9489
+
+
+
+
 
 ---
 
-Comment by jhpalmieri created at 2010-07-13 15:35:53
+archive/issue_comments_091101.json:
+```json
+{
+    "body": "Changing priority from major to minor.",
+    "created_at": "2010-07-13T15:35:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9489",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9489#issuecomment-91101",
+    "user": "jhpalmieri"
+}
+```
 
 Changing priority from major to minor.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-07-13 15:35:53
+archive/issue_comments_091102.json:
+```json
+{
+    "body": "I'm downgrading this to minor because when I rerun the test, it passes.  It might have failed originally because of running in parallel: memory issues or clashes in the .sage directory or something like that.  Since it's not repeatable, it will likely be harder to debug.",
+    "created_at": "2010-07-13T15:35:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9489",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9489#issuecomment-91102",
+    "user": "jhpalmieri"
+}
+```
 
 I'm downgrading this to minor because when I rerun the test, it passes.  It might have failed originally because of running in parallel: memory issues or clashes in the .sage directory or something like that.  Since it's not repeatable, it will likely be harder to debug.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-07-13 15:51:37
+archive/issue_comments_091103.json:
+```json
+{
+    "body": "Replying to [comment:2 jhpalmieri]:\n> I'm downgrading this to minor because when I rerun the test, it passes.  It might have failed originally because of running in parallel: memory issues or clashes in the .sage directory or something like that.  Since it's not repeatable, it will likely be harder to debug.\n\nStrange, as it was absolutely repeatable for me. I tried it several times. Now it works ok for me too! So it seems the only real failure on Solaris is #9490, which is also a failure (though a different one) on OS X - see #9445. \n\nAs far as I could tell, all the other failures in your `ptestlong.log` can be explained by a timeout, or pass if I run it from the command line. If you have the patience, it might be worth you checking that too. \n\nDave",
+    "created_at": "2010-07-13T15:51:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9489",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9489#issuecomment-91103",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:2 jhpalmieri]:
 > I'm downgrading this to minor because when I rerun the test, it passes.  It might have failed originally because of running in parallel: memory issues or clashes in the .sage directory or something like that.  Since it's not repeatable, it will likely be harder to debug.
@@ -100,34 +147,78 @@ As far as I could tell, all the other failures in your `ptestlong.log` can be ex
 Dave
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-07-13 15:59:17
+archive/issue_comments_091104.json:
+```json
+{
+    "body": "I checked the short ones, and they all passed.  I haven't retried the ones which timed out, although they look familiar from builds of earlier versions on t2, when I did have the patience to rerun them with large values for the TIMEOUT variables.\n\nI'll see if I can rerun them today.",
+    "created_at": "2010-07-13T15:59:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9489",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9489#issuecomment-91104",
+    "user": "jhpalmieri"
+}
+```
 
 I checked the short ones, and they all passed.  I haven't retried the ones which timed out, although they look familiar from builds of earlier versions on t2, when I did have the patience to rerun them with large values for the TIMEOUT variables.
 
 I'll see if I can rerun them today.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-07-15 22:34:57
+archive/issue_comments_091105.json:
+```json
+{
+    "body": "With 4.5.rc1 and a large value for SAGE_TIMEOUT_LONG, all long tests pass except for `devel/sage/sage/parallel/decorate.py` which sometimes fails with a message `OSError: [Errno 12] Not enough space`.  That looks like an issue with disk space (?) rather than a Sage issue.\n\nIn particular, the test which is the subject of this ticket (group_theory.rst) passed when I ran \"make ptestlong\" and continues to pass when I run it from the command line.  So should we close it?  Dave, are you still seeing this?",
+    "created_at": "2010-07-15T22:34:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9489",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9489#issuecomment-91105",
+    "user": "jhpalmieri"
+}
+```
 
 With 4.5.rc1 and a large value for SAGE_TIMEOUT_LONG, all long tests pass except for `devel/sage/sage/parallel/decorate.py` which sometimes fails with a message `OSError: [Errno 12] Not enough space`.  That looks like an issue with disk space (?) rather than a Sage issue.
 
 In particular, the test which is the subject of this ticket (group_theory.rst) passed when I ran "make ptestlong" and continues to pass when I run it from the command line.  So should we close it?  Dave, are you still seeing this?
 
 
+
 ---
 
-Comment by drkirkby created at 2010-08-16 00:48:46
+archive/issue_comments_091106.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2010-08-16T00:48:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9489",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9489#issuecomment-91106",
+    "user": "drkirkby"
+}
+```
 
 Resolution: invalid
 
 
+
 ---
 
-Comment by drkirkby created at 2010-08-16 00:48:46
+archive/issue_comments_091107.json:
+```json
+{
+    "body": "Replying to [comment:5 jhpalmieri]:\n> In particular, the test which is the subject of this ticket (group_theory.rst) passed when I ran \"make ptestlong\" and continues to pass when I run it from the command line.  So should we close it?  Dave, are you still seeing this?\n\nSorry, I missed this until now. I agree, it should be closed. Lets make it invalid. \n\nDave",
+    "created_at": "2010-08-16T00:48:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9489",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9489#issuecomment-91107",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:5 jhpalmieri]:
 > In particular, the test which is the subject of this ticket (group_theory.rst) passed when I ran "make ptestlong" and continues to pass when I run it from the command line.  So should we close it?  Dave, are you still seeing this?

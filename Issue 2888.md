@@ -1,11 +1,21 @@
 # Issue 2888: matrix slicing fails in degenerate cases
 
-Issue created by migration from https://trac.sagemath.org/ticket/2888
-
-Original creator: AlexGhitza
-
-Original creation time: 2008-04-12 00:47:43
-
+archive/issues_002888.json:
+```json
+{
+    "body": "Assignee: was\n\nKeywords: slice\n\nThe following should return [] but it throws an exception instead:\n\n\n```\nsage: M = matrix(3, 4, range(12))\nsage: M[0:3, 2:2]\n---------------------------------------------------------------------------\n<type 'exceptions.ValueError'>            Traceback (most recent call last)\n\n/opt/sage-3.0.alpha2/devel/sage-main/<ipython console> in <module>()\n\n/opt/sage-3.0.alpha2/devel/sage-main/matrix0.pyx in sage.matrix.matrix0.Matrix.__getitem__()\n\n<type 'exceptions.ValueError'>: max() arg is an empty sequence\n```\n\n\nSame problem if I try M[0:0, 0:0].  This is an obstacle in doing #2616, since submatrix() does handle these cases properly.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2888\n\n",
+    "created_at": "2008-04-12T00:47:43Z",
+    "labels": [
+        "linear algebra",
+        "major",
+        "bug"
+    ],
+    "title": "matrix slicing fails in degenerate cases",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2888",
+    "user": "AlexGhitza"
+}
+```
 Assignee: was
 
 Keywords: slice
@@ -30,38 +40,99 @@ sage: M[0:3, 2:2]
 Same problem if I try M[0:0, 0:0].  This is an obstacle in doing #2616, since submatrix() does handle these cases properly.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2888
+
+
+
+
 
 ---
 
-Comment by dfdeshom created at 2008-04-12 16:47:54
+archive/issue_comments_019857.json:
+```json
+{
+    "body": "Changing assignee from was to dfdeshom.",
+    "created_at": "2008-04-12T16:47:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2888",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2888#issuecomment-19857",
+    "user": "dfdeshom"
+}
+```
 
 Changing assignee from was to dfdeshom.
 
 
+
 ---
+
+archive/issue_comments_019858.json:
+```json
+{
+    "body": "Attachment\n\npatch against alpha3",
+    "created_at": "2008-04-13T03:08:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2888",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2888#issuecomment-19858",
+    "user": "dfdeshom"
+}
+```
 
 Attachment
 
 patch against alpha3
 
 
+
 ---
 
-Comment by dfdeshom created at 2008-04-13 03:11:24
+archive/issue_comments_019859.json:
+```json
+{
+    "body": "A patch has been made against 3.0-alpha3",
+    "created_at": "2008-04-13T03:11:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2888",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2888#issuecomment-19859",
+    "user": "dfdeshom"
+}
+```
 
 A patch has been made against 3.0-alpha3
 
 
+
 ---
 
-Comment by AlexGhitza created at 2008-04-13 03:41:29
+archive/issue_comments_019860.json:
+```json
+{
+    "body": "Looks good.",
+    "created_at": "2008-04-13T03:41:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2888",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2888#issuecomment-19860",
+    "user": "AlexGhitza"
+}
+```
 
 Looks good.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-13 04:10:30
+archive/issue_comments_019861.json:
+```json
+{
+    "body": "Hi,\n\nthe patch doesn't apply cleanly against my merge tree:\n\n```\nsage-3.0.alpha4/devel/sage$ patch -p1 --dry-run < trac_2888.patch\npatching file sage/matrix/matrix0.pyx\nHunk #1 FAILED at 613.\nHunk #2 succeeded at 694 (offset 21 lines).\n1 out of 2 hunks FAILED -- saving rejects to file sage/matrix/matrix0.pyx.rej\n```\n\nThe first hunk are the added doctests, so it is easy enough to do. I won't mind if somebody beasts me to it.\n\nCheers,\n\nMichael",
+    "created_at": "2008-04-13T04:10:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2888",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2888#issuecomment-19861",
+    "user": "mabshoff"
+}
+```
 
 Hi,
 
@@ -82,22 +153,57 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_019862.json:
+```json
+{
+    "body": "Attachment\n\npatch against upcoming alpha release",
+    "created_at": "2008-04-13T04:37:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2888",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2888#issuecomment-19862",
+    "user": "dfdeshom"
+}
+```
 
 Attachment
 
 patch against upcoming alpha release
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-13 05:09:50
+archive/issue_comments_019863.json:
+```json
+{
+    "body": "Merged 2888-incoming-alpha4.patch in Sage 3.0.alpha4",
+    "created_at": "2008-04-13T05:09:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2888",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2888#issuecomment-19863",
+    "user": "mabshoff"
+}
+```
 
 Merged 2888-incoming-alpha4.patch in Sage 3.0.alpha4
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-13 05:09:50
+archive/issue_comments_019864.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-04-13T05:09:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2888",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2888#issuecomment-19864",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

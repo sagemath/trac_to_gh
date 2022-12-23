@@ -1,11 +1,21 @@
 # Issue 5484: improve quotients of univariate polynomial rings
 
-Issue created by migration from https://trac.sagemath.org/ticket/5484
-
-Original creator: AlexGhitza
-
-Original creation time: 2009-03-11 08:16:23
-
+archive/issues_005484.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  jpflori\n\nRoi Docampo and I noticed the following at Sage Days 14.\n\nThis works:\n\n```\nsage: R.<x,y> = ZZ[]\nsage: R.quo(R.ideal(2))\nQuotient of Multivariate Polynomial Ring in x, y over Integer Ring by the ideal (2)\n```\n\n\nBut this doesn't:\n\n```\nsage: R.<x> = ZZ[]\nsage: R.quo(R.ideal(2))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/aghitza/.sage/temp/cartan/12118/_home_aghitza__sage_init_sage_0.py in <module>()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/ring.so in sage.rings.ring.CommutativeRing.quo (sage/rings/ring.c:5717)()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/ring.so in sage.rings.ring.CommutativeRing.quotient (sage/rings/ring.c:5624)()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/quotient_ring.pyc in QuotientRing(R, I, names)\n    120     try:\n    121         if I.is_principal():\n--> 122             return R.quotient_by_principal_ideal(I.gen(), names)\n    123     except (AttributeError, NotImplementedError):\n    124         pass\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring.pyc in quotient_by_principal_ideal(self, f, names)\n   1004         \"\"\"\n   1005         import sage.rings.polynomial.polynomial_quotient_ring\n-> 1006         return sage.rings.polynomial.polynomial_quotient_ring.PolynomialQuotientRing(self, f, names)\n   1007     \n   1008 \n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_quotient_ring.pyc in PolynomialQuotientRing(ring, polynomial, names)\n    133     c = polynomial.leading_coefficient()\n    134     if not c.is_unit():\n--> 135         raise TypeError, \"polynomial must have unit leading coefficient\"\n    136     R = ring.base_ring()\n    137     if isinstance(R, sage.rings.integral_domain.IntegralDomain):\n\nTypeError: polynomial must have unit leading coefficient\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5484\n\n",
+    "created_at": "2009-03-11T08:16:23Z",
+    "labels": [
+        "algebraic geometry",
+        "major",
+        "enhancement"
+    ],
+    "title": "improve quotients of univariate polynomial rings",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5484",
+    "user": "AlexGhitza"
+}
+```
 Assignee: was
 
 CC:  jpflori
@@ -61,31 +71,79 @@ TypeError: polynomial must have unit leading coefficient
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5484
+
+
+
+
 
 ---
 
-Comment by AlexGhitza created at 2009-03-11 08:26:02
+archive/issue_comments_042556.json:
+```json
+{
+    "body": "Changing component from algebraic geometry to commutative algebra.",
+    "created_at": "2009-03-11T08:26:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5484",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5484#issuecomment-42556",
+    "user": "AlexGhitza"
+}
+```
 
 Changing component from algebraic geometry to commutative algebra.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-03-11 08:26:02
+archive/issue_comments_042557.json:
+```json
+{
+    "body": "Changing assignee from was to malb.",
+    "created_at": "2009-03-11T08:26:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5484",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5484#issuecomment-42557",
+    "user": "AlexGhitza"
+}
+```
 
 Changing assignee from was to malb.
 
 
+
 ---
 
-Comment by bruno created at 2015-04-22 15:21:15
+archive/issue_comments_042558.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2015-04-22T15:21:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5484",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5484#issuecomment-42558",
+    "user": "bruno"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by bruno created at 2015-04-22 15:21:15
+archive/issue_comments_042559.json:
+```json
+{
+    "body": "I made the following proposition:\n\nSuppose that `R = PolynomialRing(S,'x')` for some ring `S`, and `f` is a polynomial over `S`. \n* Keep the same thing if `f` has degree `> 0` or `f` is a unit, that is return `PolynomialQuotientRing(S, f, 'x')`;\n* Return `PolynomialRing(S.quo(f), 'x')` when `f` is a non-unit constant.\n\nIn particular:\n\n```\nsage: R = ZZ['x']\nsage: R.quo(2)\nUnivariate Polynomial Ring in x over Ring of integers modulo 2 (using NTL)\n```\n\n\nDoes this make sense?\n----\nNew commits:",
+    "created_at": "2015-04-22T15:21:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5484",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5484#issuecomment-42559",
+    "user": "bruno"
+}
+```
 
 I made the following proposition:
 
@@ -107,39 +165,94 @@ Does this make sense?
 New commits:
 
 
+
 ---
 
-Comment by chapoton created at 2015-06-01 07:52:18
+archive/issue_comments_042560.json:
+```json
+{
+    "body": "doc does not build, see patchbot report\n\nyou wrongly replaced a TEST: by TEST::",
+    "created_at": "2015-06-01T07:52:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5484",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5484#issuecomment-42560",
+    "user": "chapoton"
+}
+```
 
 doc does not build, see patchbot report
 
 you wrongly replaced a TEST: by TEST::
 
 
+
 ---
 
-Comment by chapoton created at 2015-06-01 07:52:18
+archive/issue_comments_042561.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2015-06-01T07:52:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5484",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5484#issuecomment-42561",
+    "user": "chapoton"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by git created at 2015-06-01 08:51:29
+archive/issue_comments_042562.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2015-06-01T08:51:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5484",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5484#issuecomment-42562",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by bruno created at 2015-06-01 08:52:41
+archive/issue_comments_042563.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2015-06-01T08:52:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5484",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5484#issuecomment-42563",
+    "user": "bruno"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by bruno created at 2015-06-01 08:52:41
+archive/issue_comments_042564.json:
+```json
+{
+    "body": "Replying to [comment:9 chapoton]:\n> doc does not build, see patchbot report\n> \n> you wrongly replaced a TEST: by TEST::\n\nShould work now. Sorry for the same mistake on two distinct tickets ;-)",
+    "created_at": "2015-06-01T08:52:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5484",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5484#issuecomment-42564",
+    "user": "bruno"
+}
+```
 
 Replying to [comment:9 chapoton]:
 > doc does not build, see patchbot report
@@ -149,9 +262,20 @@ Replying to [comment:9 chapoton]:
 Should work now. Sorry for the same mistake on two distinct tickets ;-)
 
 
+
 ---
 
-Comment by darij created at 2015-06-06 22:04:01
+archive/issue_comments_042565.json:
+```json
+{
+    "body": "Sorry, but the new quotient rings don't play well with the quotient ring interface (or what could be reasonably expected to be the quotient ring interface):\n\n\n```\nsage: R = ZZ['x']\nsage: x = R.gen()\nsage: J = R.ideal(2)\nsage: T = R.quotient_by_principal_ideal(J)\nsage: T(x)\nx\nsage: T.lift(_)\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n<ipython-input-30-260465055124> in <module>()\n----> 1 T.lift(_)\n\n/home/skraeling/sage/src/sage/structure/parent.pyx in sage.structure.parent.Parent.__getattr__ (build/cythonized/sage/structure/parent.c:7885)()\n    839             return self.__cached_methods[name]\n    840         except KeyError:\n--> 841             attr = getattr_from_other_class(self, self._category.parent_class, name)\n    842             self.__cached_methods[name] = attr\n    843             return attr\n\n/home/skraeling/sage/src/sage/structure/misc.pyx in sage.structure.misc.getattr_from_other_class (build/cythonized/sage/structure/misc.c:1582)()\n    251         dummy_error_message.cls = type(self)\n    252         dummy_error_message.name = name\n--> 253         raise dummy_attribute_error\n    254     try:\n    255         attribute = getattr(cls, name)\n\nAttributeError: 'PolynomialRing_dense_mod_p_with_category' object has no attribute 'lift'\n```\n",
+    "created_at": "2015-06-06T22:04:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5484",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5484#issuecomment-42565",
+    "user": "darij"
+}
+```
 
 Sorry, but the new quotient rings don't play well with the quotient ring interface (or what could be reasonably expected to be the quotient ring interface):
 
@@ -188,9 +312,20 @@ AttributeError: 'PolynomialRing_dense_mod_p_with_category' object has no attribu
 
 
 
+
 ---
 
-Comment by bruno created at 2015-06-08 09:20:20
+archive/issue_comments_042566.json:
+```json
+{
+    "body": "Replying to [comment:12 darij]:\n> Sorry, but the new quotient rings don't play well with the quotient ring interface (or what could be reasonably expected to be the quotient ring interface):\n\nWhat do you suggest? I can imagine three solutions:\n* Make `R.quotient_by_principal_ideal(R.ideal(2))` return a `Polynomial_quotient_ring`: I doubt this is in principle impossible, but at least it requires quite a lot of changes. \n* Keep `R.quotient_by_principal_ideal(R.ideal(2))` return a `TypeError`\n* Implement a `lift` method for `PolynomialRing_dense_mod_p`.\n\nNone of the three solutions is really fine to my mind, so feel free to suggest another one!",
+    "created_at": "2015-06-08T09:20:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5484",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5484#issuecomment-42566",
+    "user": "bruno"
+}
+```
 
 Replying to [comment:12 darij]:
 > Sorry, but the new quotient rings don't play well with the quotient ring interface (or what could be reasonably expected to be the quotient ring interface):
@@ -203,22 +338,55 @@ What do you suggest? I can imagine three solutions:
 None of the three solutions is really fine to my mind, so feel free to suggest another one!
 
 
+
 ---
 
-Comment by darij created at 2015-06-08 09:54:43
+archive/issue_comments_042567.json:
+```json
+{
+    "body": "I fear I cannot help here. If you ask me, the whole system is broken. Methods like \"quotient\" should not return rings but quotient homomorphisms, and these homomorphisms (not their images) should have `lift` attributes...",
+    "created_at": "2015-06-08T09:54:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5484",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5484#issuecomment-42567",
+    "user": "darij"
+}
+```
 
 I fear I cannot help here. If you ask me, the whole system is broken. Methods like "quotient" should not return rings but quotient homomorphisms, and these homomorphisms (not their images) should have `lift` attributes...
 
 
+
 ---
 
-Comment by saraedum created at 2016-05-04 16:25:25
+archive/issue_comments_042568.json:
+```json
+{
+    "body": "I agree that the system is broken. However, I think that the proposed change improves the situation. I think what we should do here is add a comment stating what the previous comment says. After that I think it would be good to go. What do you think?",
+    "created_at": "2016-05-04T16:25:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5484",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5484#issuecomment-42568",
+    "user": "saraedum"
+}
+```
 
 I agree that the system is broken. However, I think that the proposed change improves the situation. I think what we should do here is add a comment stating what the previous comment says. After that I think it would be good to go. What do you think?
 
 
+
 ---
 
-Comment by saraedum created at 2016-05-04 16:25:30
+archive/issue_comments_042569.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_info.",
+    "created_at": "2016-05-04T16:25:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5484",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5484#issuecomment-42569",
+    "user": "saraedum"
+}
+```
 
 Changing status from needs_review to needs_info.

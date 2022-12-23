@@ -1,11 +1,21 @@
 # Issue 6329: optional doctest failure -- bad data type breakage in the sage-->magma interface
 
-Issue created by migration from https://trac.sagemath.org/ticket/6329
-
-Original creator: was
-
-Original creation time: 2009-06-16 15:06:55
-
+archive/issues_006329.json:
+```json
+{
+    "body": "Assignee: tbd\n\n\n```\nsage -t -long --optional devel/sage/sage/rings/rational.pyx\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/rings/rational.pyx\", line 3087:\n    sage: magma(3/1).Type()             # optional\nExpected:\n    FldRatElt\nGot:\n    RngIntElt\n**********************************************************************\n1 items had failures:\n   1 of   5 in __main__.example_84\n***Test Failed*** 1 failures.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6329\n\n",
+    "created_at": "2009-06-16T15:06:55Z",
+    "labels": [
+        "optional packages",
+        "major",
+        "bug"
+    ],
+    "title": "optional doctest failure -- bad data type breakage in the sage-->magma interface",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6329",
+    "user": "was"
+}
+```
 Assignee: tbd
 
 
@@ -25,10 +35,25 @@ Got:
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6329
+
+
+
+
 
 ---
 
-Comment by was created at 2009-06-16 15:10:31
+archive/issue_comments_050521.json:
+```json
+{
+    "body": "More failures:\n\n```\nsage -t -long --optional devel/sage/sage/schemes/hyperelliptic_curves/hyperelliptic_g2_generic.py\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/schemes/hyperelliptic_curves/hyperelliptic_g2_generic.py\", line 218:\n    sage: magma(HyperellipticCurve(f)).IgusaClebschInvariants() # optional - magma\nExpected:\n    [ 0, -2048/375, -4096/25, -4881645568/84375 ]\nGot:\n    [ -640, -20480, 1310720, 52160364544 ]\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/schemes/hyperelliptic_curves/hyperelliptic_g2_generic.py\", line 220:\n    sage: magma(HyperellipticCurve(f(2*x))).IgusaClebschInvariants() # optional - magma\nExpected:\n    [ 0, -8388608/375, -1073741824/25, -5241627016305836032/84375 ]\nGot:\n    [ -40960, -83886080, 343597383680, 56006764965979488256 ]\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/schemes/hyperelliptic_curves/hyperelliptic_g2_generic.py\", line 222:\n    sage: magma(HyperellipticCurve(f, x)).IgusaClebschInvariants() # optional - magma\nExpected:\n    [ -8/15, 17504/5625, -23162896/140625, -420832861216768/7119140625 ]\nGot:\n    [ -640, 17920, -1966656, 52409511936 ]\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/schemes/hyperelliptic_curves/hyperelliptic_g2_generic.py\", line 224:\n    sage: magma(HyperellipticCurve(f(2*x), 2*x)).IgusaClebschInvariants() # optional - magma\nExpected:\n    [ -512/15, 71696384/5625, -6072014209024/140625, -451865844002031331704832/7119140625 ]\nGot:\n    [ -40960, 73400320, -515547070464, 56274284941110411264 ]\n**********************************************************************\n1 items had failures:\n   4 of  12 in __main__.example_7\n***Test Failed*** 4 failures.\n\n```\n",
+    "created_at": "2009-06-16T15:10:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6329#issuecomment-50521",
+    "user": "was"
+}
+```
 
 More failures:
 
@@ -71,9 +96,20 @@ Got:
 
 
 
+
 ---
 
-Comment by was created at 2009-06-16 15:19:18
+archive/issue_comments_050522.json:
+```json
+{
+    "body": "More failures:\n\n```\nsage -t -long --optional devel/sage/sage/interfaces/magma.py\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/interfaces/magma.py\", line 856:\n    sage: magma.attach('%s/data/extcode/magma/sage/basic.m'%Sage_ROOT)    # optional - magma\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_20[2]>\", line 1, in <module>\n        magma.attach('%s/data/extcode/magma/sage/basic.m'%Sage_ROOT)    # optional - magma###line 856:\n    sage: magma.attach('%s/data/extcode/magma/sage/basic.m'%Sage_ROOT)    # optional - magma\n    NameError: name 'Sage_ROOT' is not defined\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/interfaces/magma.py\", line 860:\n    sage: magma.attach('%s/data/extcode/magma/sage/basic2.m'%Sage_ROOT)     # optional - magma\nExpected:\n    Traceback (most recent call last):\n    ...\n    RuntimeError: Error evaluating Magma code...\nGot:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_20[3]>\", line 1, in <module>\n        magma.attach('%s/data/extcode/magma/sage/basic2.m'%Sage_ROOT)     # optional - magma###line 860:\n    sage: magma.attach('%s/data/extcode/magma/sage/basic2.m'%Sage_ROOT)     # optional - magma\n    NameError: name 'Sage_ROOT' is not defined\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/interfaces/magma.py\", line 917:\n    sage: print magma.load(SAGE_TMP + 'a.m')      # optional - magma\nExpected:\n    Loading \".../.sage//temp/.../a.m\"\n    hi\nGot:\n    Loading \"/scratch/wstein/sage//temp/sage.math.washington.edu/31604/a.m\"\n    hi\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/interfaces/magma.py\", line 2148:\n    sage: magma.eval('R<x> := PolynomialRing(RationalField()); f := (x-17/2)^3;')     # optional - magma\nExpected:\n    \"\nGot:\n    ''\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/interfaces/magma.py\", line 2160:\n    sage: magma.eval('K<a> := CyclotomicField(11)')       # optional - magma\nExpected:\n    \"\nGot:\n    ''\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/interfaces/magma.py\", line 463:\n    sage: magma.eval(\"a := %s;\"%(10^10000))    # optional - magma\nExpected:\n    \"\nGot:\n    ''\n**********************************************************************\n4 items had failures:\n   2 of   4 in __main__.example_20\n   1 of   5 in __main__.example_22\n   2 of  28 in __main__.example_64\n   1 of   4 in __main__.example_9\n***Test Failed*** 6 failures.\nFor whitespace errors, see the file /home/wstein/build/sage-4.0.2.alpha3/tmp/.doctest_magma.py\n\t [32.9 s]\n\n```\n",
+    "created_at": "2009-06-16T15:19:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6329#issuecomment-50522",
+    "user": "was"
+}
+```
 
 More failures:
 
@@ -157,52 +193,131 @@ For whitespace errors, see the file /home/wstein/build/sage-4.0.2.alpha3/tmp/.do
 
 
 
+
 ---
+
+archive/issue_comments_050523.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2011-05-25T18:24:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6329#issuecomment-50523",
+    "user": "mariah"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mariah created at 2011-05-25 18:35:39
+archive/issue_comments_050524.json:
+```json
+{
+    "body": "[attachment: trac_6329.patch] corrects the test output in the problem in the description.  The Got output is correct - there is **not** a breakage in the sage<-->magma interface.  'magma(3/1)' returns the integer '3' (after coercion), so Type() returns that\nthe value is an integer.\n\nThe other two reports of failures are no longer valid, as they seem to already be fixed in sage-4.7.rc4.",
+    "created_at": "2011-05-25T18:35:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6329#issuecomment-50524",
+    "user": "mariah"
+}
+```
 
-[attachment: trac_6329.patch] corrects the test output in the problem in the description.  The Got output is correct - there is *not* a breakage in the sage<-->magma interface.  'magma(3/1)' returns the integer '3' (after coercion), so Type() returns that
+[attachment: trac_6329.patch] corrects the test output in the problem in the description.  The Got output is correct - there is **not** a breakage in the sage<-->magma interface.  'magma(3/1)' returns the integer '3' (after coercion), so Type() returns that
 the value is an integer.
 
 The other two reports of failures are no longer valid, as they seem to already be fixed in sage-4.7.rc4.
 
 
+
 ---
 
-Comment by mariah created at 2011-05-25 18:35:39
+archive/issue_comments_050525.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2011-05-25T18:35:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6329#issuecomment-50525",
+    "user": "mariah"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mariah created at 2011-05-25 18:35:39
+archive/issue_comments_050526.json:
+```json
+{
+    "body": "Changing priority from major to minor.",
+    "created_at": "2011-05-25T18:35:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6329#issuecomment-50526",
+    "user": "mariah"
+}
+```
 
 Changing priority from major to minor.
 
 
+
 ---
 
-Comment by kcrisman created at 2011-06-14 03:11:39
+archive/issue_comments_050527.json:
+```json
+{
+    "body": "Changing component from optional packages to interfaces.",
+    "created_at": "2011-06-14T03:11:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6329#issuecomment-50527",
+    "user": "kcrisman"
+}
+```
 
 Changing component from optional packages to interfaces.
 
 
+
 ---
 
-Comment by mhansen created at 2011-08-23 01:15:48
+archive/issue_comments_050528.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_info.",
+    "created_at": "2011-08-23T01:15:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6329#issuecomment-50528",
+    "user": "mhansen"
+}
+```
 
 Changing status from needs_review to needs_info.
 
 
+
 ---
 
-Comment by mhansen created at 2011-08-23 01:15:48
+archive/issue_comments_050529.json:
+```json
+{
+    "body": "It seems like the correct fix would be to always put the denominator in the _magma_init_ method.\n\n\n```\n        s = self.numerator()._magma_init_(magma)\n        s += '/' + self.denominator()._magma_init_(magma)\n        return s\n```\n\n\ninstead of \n\n\n```\n        s = self.numerator()._magma_init_(magma)\n        if not self.is_integral():\n            s += '/' + self.denominator()._magma_init_(magma)\n        return s\n\n```\n",
+    "created_at": "2011-08-23T01:15:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6329#issuecomment-50529",
+    "user": "mhansen"
+}
+```
 
 It seems like the correct fix would be to always put the denominator in the _magma_init_ method.
 
@@ -227,44 +342,112 @@ instead of
 
 
 
+
 ---
 
-Comment by was created at 2011-08-23 05:04:52
+archive/issue_comments_050530.json:
+```json
+{
+    "body": "Mhansen, you're right, the patch Mariah posted is wrong.   I'll post a correct patch, and hopefully you can review it.",
+    "created_at": "2011-08-23T05:04:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6329#issuecomment-50530",
+    "user": "was"
+}
+```
 
 Mhansen, you're right, the patch Mariah posted is wrong.   I'll post a correct patch, and hopefully you can review it.
 
 
+
 ---
+
+archive/issue_comments_050531.json:
+```json
+{
+    "body": "Attachment\n\napply only this one",
+    "created_at": "2011-08-23T05:34:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6329#issuecomment-50531",
+    "user": "was"
+}
+```
 
 Attachment
 
 apply only this one
 
 
+
 ---
 
-Comment by was created at 2011-08-23 05:39:46
+archive/issue_comments_050532.json:
+```json
+{
+    "body": "Changing status from needs_info to needs_review.",
+    "created_at": "2011-08-23T05:39:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6329#issuecomment-50532",
+    "user": "was"
+}
+```
 
 Changing status from needs_info to needs_review.
 
 
+
 ---
 
-Comment by was created at 2011-08-23 05:39:46
+archive/issue_comments_050533.json:
+```json
+{
+    "body": "Patch up that is ready for review (the .2 one).  This was a result of some overzealous optimization on my part a few years ago.  Reverting this change will barely slow things down.",
+    "created_at": "2011-08-23T05:39:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6329#issuecomment-50533",
+    "user": "was"
+}
+```
 
 Patch up that is ready for review (the .2 one).  This was a result of some overzealous optimization on my part a few years ago.  Reverting this change will barely slow things down.
 
 
+
 ---
 
-Comment by mhansen created at 2011-08-23 05:49:03
+archive/issue_comments_050534.json:
+```json
+{
+    "body": "We should add a doctest for the integral case.",
+    "created_at": "2011-08-23T05:49:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6329#issuecomment-50534",
+    "user": "mhansen"
+}
+```
 
 We should add a doctest for the integral case.
 
 
+
 ---
 
-Comment by was created at 2011-08-24 04:49:28
+archive/issue_comments_050535.json:
+```json
+{
+    "body": "Replying to [comment:8 mhansen]:\n> We should add a doctest for the integral case.\n\nWhat do you mean by this?  If you mean `sage: magma(3/1).Type()`, which is in the ticket description, then there is *already* a doctest for this case, which is how we found this bug in the first place. \n\nOr do you mean adding something to integer.pyx???",
+    "created_at": "2011-08-24T04:49:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6329#issuecomment-50535",
+    "user": "was"
+}
+```
 
 Replying to [comment:8 mhansen]:
 > We should add a doctest for the integral case.
@@ -274,38 +457,93 @@ What do you mean by this?  If you mean `sage: magma(3/1).Type()`, which is in th
 Or do you mean adding something to integer.pyx???
 
 
+
 ---
 
-Comment by was created at 2011-08-24 23:36:45
+archive/issue_comments_050536.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"sd32\".",
+    "created_at": "2011-08-24T23:36:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6329#issuecomment-50536",
+    "user": "was"
+}
+```
 
 Changing keywords from "" to "sd32".
 
 
+
 ---
 
-Comment by mhansen created at 2011-08-24 23:40:24
+archive/issue_comments_050537.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2011-08-24T23:40:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6329#issuecomment-50537",
+    "user": "mhansen"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mhansen created at 2011-08-24 23:40:24
+archive/issue_comments_050538.json:
+```json
+{
+    "body": "I was thinking about the old code and verifying that the \"is_integral\" code path worked (since that test was missing before).  However, it is obviously not needed now.\n\nPositive review.",
+    "created_at": "2011-08-24T23:40:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6329#issuecomment-50538",
+    "user": "mhansen"
+}
+```
 
 I was thinking about the old code and verifying that the "is_integral" code path worked (since that test was missing before).  However, it is obviously not needed now.
 
 Positive review.
 
 
+
 ---
 
-Comment by leif created at 2011-09-12 19:27:00
+archive/issue_comments_050539.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2011-09-12T19:27:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6329#issuecomment-50539",
+    "user": "leif"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by was created at 2012-01-22 21:57:34
+archive/issue_comments_050540.json:
+```json
+{
+    "body": "Shame on the idiot who wrote this with no tests... and who forgot that there are optional tests all over Sage that would be broken by this: see #12006, where I'm doing my penance.",
+    "created_at": "2012-01-22T21:57:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6329",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6329#issuecomment-50540",
+    "user": "was"
+}
+```
 
 Shame on the idiot who wrote this with no tests... and who forgot that there are optional tests all over Sage that would be broken by this: see #12006, where I'm doing my penance.

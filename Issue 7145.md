@@ -1,20 +1,30 @@
 # Issue 7145: [with patch, needs review] Interval exchange transformations
 
-Issue created by migration from https://trac.sagemath.org/ticket/7145
-
-Original creator: vdelecroix
-
-Original creation time: 2009-10-07 11:48:19
-
+archive/issues_007145.json:
+```json
+{
+    "body": "Assignee: somebody\n\nCC:  slabbe\n\nThis module implement Interval exchange transformations (iet) (and linear involutions (li)) from a combinatorial point of vue. It also makes the link with strata of Abelian differentials on Riemann surfaces. The three main objects defined in this module are:\n\n- Special kinds of permutations\n- Rauzy diagrams (oriented graph)\n- Strata of differentials\n\nThere are different class of permuttations associated to iet, but all are constructed within a class factory:\n\n\n```\nsage: p = PermutationIET('a b c d','d c b a')\nsage: p\na b c d\nd c b a\nsage: p.stratum()\nH(2)\n```\n\n\nThe object which links those permutations to the dynamic of strata of differentials is the Rauzy diagram:\n\n\n```\nsage: p = PermutationIET('a b c','c b a')\nsage: d = p.rauzy_diagram()\nRauzy diagram with 3 permutations\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7145\n\n",
+    "created_at": "2009-10-07T11:48:19Z",
+    "labels": [
+        "combinatorics",
+        "major",
+        "enhancement"
+    ],
+    "title": "[with patch, needs review] Interval exchange transformations",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7145",
+    "user": "vdelecroix"
+}
+```
 Assignee: somebody
 
 CC:  slabbe
 
 This module implement Interval exchange transformations (iet) (and linear involutions (li)) from a combinatorial point of vue. It also makes the link with strata of Abelian differentials on Riemann surfaces. The three main objects defined in this module are:
 
-  - Special kinds of permutations
-  - Rauzy diagrams (oriented graph)
-  - Strata of differentials
+- Special kinds of permutations
+- Rauzy diagrams (oriented graph)
+- Strata of differentials
 
 There are different class of permuttations associated to iet, but all are constructed within a class factory:
 
@@ -39,36 +49,97 @@ Rauzy diagram with 3 permutations
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7145
+
+
+
+
 
 ---
+
+archive/issue_comments_059190.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-10-07T12:15:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7145",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59190",
+    "user": "vdelecroix"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by vdelecroix created at 2009-10-07 12:15:27
+archive/issue_comments_059191.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-10-07T12:15:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7145",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59191",
+    "user": "vdelecroix"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by vdelecroix created at 2009-10-11 20:45:01
+archive/issue_comments_059192.json:
+```json
+{
+    "body": "Changing assignee from somebody to vdelecroix.",
+    "created_at": "2009-10-11T20:45:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7145",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59192",
+    "user": "vdelecroix"
+}
+```
 
 Changing assignee from somebody to vdelecroix.
 
 
+
 ---
 
-Comment by slabbe created at 2009-12-08 16:30:33
+archive/issue_comments_059193.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2009-12-08T16:30:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7145",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59193",
+    "user": "slabbe"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by slabbe created at 2009-12-08 16:30:33
+archive/issue_comments_059194.json:
+```json
+{
+    "body": "First I must say that I am not expert at all in that field. I just know some of Interval exchange transformations. So, Vincent, I read through your patch today and I will post some small corrections in a patch soon. I have also some comments (sometimes suggestions open to you) below :\n\nI would gather those related functionalities under a same bag where the user could found them (and all of them) more easily. For example.\n\n\n```\nsage: IET.[TAB]\n```\n\n\nor maybe\n\n\n```\nsage: from sage.combinat.iet.all import IET\nsage: IET.[TAB]\n```\n\n\nFor `constructor.py`, I suggest to \n\n- Create a class `constructor` containing the functions `PermutationsIET`, `PermutationIET`, `PermutationLI`, `GeneralizedPermutation`, `RauzyDiagram`, `IntervalExchangeTransformation`.\n- Create the object `IET = constructor()`\n- Rename `PermutationsIET` to `PermutationsIET_iterator`\n- Add a function named `IntervalExchangeTransformation` to the class `constructor` that wrapped the constructor of `IET` in `iet.py`.\n- Do we want `AbelianStratum`, `QuadraticStratum` and `AbelianStrata` to be wrapped in `constructor` as well? I don't know, but if it is realated to everything in iet folder, then it would clearly help the user to know about it.\n\nFor `iet.py`\n\n- Rename `IntervalExchangeTransformation.__mul__` to something like multiply_lengths.\n- Keep `IntervalExchangeTransformation.__mul__` for multiplication of two IET.\n- Change `IntervalExchangeTransformation._repr_` to look more like an IET and less as two tuples. For example it could say Interval exchange transformation from [0, 1[ to [0, 1[ of permutation ?.\n- Rename `IntervalExchangeTransformation.copy` as `__copy__` or `__deepcopy__` if it corresponds to what you want. This may applies to many other classes in the files.\n\nI would like the following to work :\n\n\n```\nsage: p = Permutation([3,2,1])\nsage: t = IntervalExchangeTransformation(p, [0.6, 0.1, 0.3])\nTraceback (most recent call last):\n...\nTypeError: cannot concatenate 'str' and 'int' objects\n```\n\n\nwhere labels of the intervals are facultative:\n\n\n```\nsage: t = IntervalExchangeTransformation(p, [0.6, 0.1, 0.3], labels='abc')\n```\n\n\n\nWhy do the following doesn't work:\n\n\n```\nsage: p = Permutation([3,2,1])\nsage: PermutationIET(p)\n1 2 3\n3 2 1\nsage: PermutationIET([3,2,1])\nTraceback (most recent call last):\n...\nValueError: your argument can not be split in two parts\n```\n\n\n- I don't know if the numerous `_P_IET = PermutationIET` really help the readability. I would not rename them and rather keep them as they are. Or, if so, I would use `from this import longname as shortname` instead because if shortname is new to me, than I don't have to go in the file this to understand that shortname simply means longname.\n\nFor template.py :\n\nI am getting the following :\n\n\n```\nsage -t  \"devel/sage-combinat/sage/combinat/iet/template.py\"\n**********************************************************************\nFile \"/home/slabbe/sage-4.2/devel/sage-combinat/sage/combinat/iet/template.py\", line 1898:\n    sage: g == loads(dumps(g))\nException raised:\n    Traceback (most recent call last):\n      File \"/home/slabbe/sage-4.2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/slabbe/sage-4.2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/slabbe/sage-4.2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_50[5]>\", line 1, in <module>\n        g == loads(dumps(g))###line 1898:\n    sage: g == loads(dumps(g))\n      File \"sage_object.pyx\", line 735, in sage.structure.sage_object.dumps (sage/structure/sage_object.c:8008)\n      File \"sage_object.pyx\", line 165, in sage.structure.sage_object.SageObject.dumps (sage/structure/sage_object.c:2158)\n    PicklingError: Can't pickle <class 'sage.combinat.iet.labeled.Path'>: attribute lookup sage.combinat.iet.labeled.Path failed\n```\n",
+    "created_at": "2009-12-08T16:30:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7145",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59194",
+    "user": "slabbe"
+}
+```
 
 First I must say that I am not expert at all in that field. I just know some of Interval exchange transformations. So, Vincent, I read through your patch today and I will post some small corrections in a patch soon. I have also some comments (sometimes suggestions open to you) below :
 
@@ -170,36 +241,71 @@ Exception raised:
 
 
 
+
 ---
 
-Comment by slabbe created at 2009-12-08 16:36:32
+archive/issue_comments_059195.json:
+```json
+{
+    "body": "I submitted before preview. So I repeat below the lists that I messed up above.\n\nFor constructor.py, I suggest to\n\n- Create a class constructor containing the functions `PermutationsIET`, `PermutationIET`, `PermutationLI`, `GeneralizedPermutation`, `RauzyDiagram`, `IntervalExchangeTransformation`. \n- Create the object `IET` = `constructor()` \n- Rename `PermutationsIET` to `PermutationsIET_iterator` \n- Add a function named `IntervalExchangeTransformation` to the class constructor that wrapped the constructor of IET in `iet.py`. \n- Do we want `AbelianStratum`, `QuadraticStratum` and `AbelianStrata` to be wrapped in constructor as well? I don't know, but if it is realated to everything in iet folder, then it would clearly help the user to know about it.\n\nFor iet.py\n\n- Rename `IntervalExchangeTransformation.__mul__` to something like `multiply_lengths`. \n- Keep `IntervalExchangeTransformation.__mul__` for multiplication of two IET. \n- Change `IntervalExchangeTransformation._repr_` to look more like an `IET` and less as two tuples. For example it could say Interval exchange transformation from [0, 1[ to [0, 1[ of permutation ?. \n- Rename `IntervalExchangeTransformation.copy` as `__copy__` or `__deepcopy__` if it corresponds to what you want. This may applies to many other classes in the files.",
+    "created_at": "2009-12-08T16:36:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7145",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59195",
+    "user": "slabbe"
+}
+```
 
 I submitted before preview. So I repeat below the lists that I messed up above.
 
 For constructor.py, I suggest to
 
- - Create a class constructor containing the functions `PermutationsIET`, `PermutationIET`, `PermutationLI`, `GeneralizedPermutation`, `RauzyDiagram`, `IntervalExchangeTransformation`. 
- - Create the object `IET` = `constructor()` 
- - Rename `PermutationsIET` to `PermutationsIET_iterator` 
- - Add a function named `IntervalExchangeTransformation` to the class constructor that wrapped the constructor of IET in `iet.py`. 
- - Do we want `AbelianStratum`, `QuadraticStratum` and `AbelianStrata` to be wrapped in constructor as well? I don't know, but if it is realated to everything in iet folder, then it would clearly help the user to know about it.
+- Create a class constructor containing the functions `PermutationsIET`, `PermutationIET`, `PermutationLI`, `GeneralizedPermutation`, `RauzyDiagram`, `IntervalExchangeTransformation`. 
+- Create the object `IET` = `constructor()` 
+- Rename `PermutationsIET` to `PermutationsIET_iterator` 
+- Add a function named `IntervalExchangeTransformation` to the class constructor that wrapped the constructor of IET in `iet.py`. 
+- Do we want `AbelianStratum`, `QuadraticStratum` and `AbelianStrata` to be wrapped in constructor as well? I don't know, but if it is realated to everything in iet folder, then it would clearly help the user to know about it.
 
 For iet.py
 
- - Rename `IntervalExchangeTransformation.__mul__` to something like `multiply_lengths`. 
- - Keep `IntervalExchangeTransformation.__mul__` for multiplication of two IET. 
- - Change `IntervalExchangeTransformation._repr_` to look more like an `IET` and less as two tuples. For example it could say Interval exchange transformation from [0, 1[ to [0, 1[ of permutation ?. 
- - Rename `IntervalExchangeTransformation.copy` as `__copy__` or `__deepcopy__` if it corresponds to what you want. This may applies to many other classes in the files.
+- Rename `IntervalExchangeTransformation.__mul__` to something like `multiply_lengths`. 
+- Keep `IntervalExchangeTransformation.__mul__` for multiplication of two IET. 
+- Change `IntervalExchangeTransformation._repr_` to look more like an `IET` and less as two tuples. For example it could say Interval exchange transformation from [0, 1[ to [0, 1[ of permutation ?. 
+- Rename `IntervalExchangeTransformation.copy` as `__copy__` or `__deepcopy__` if it corresponds to what you want. This may applies to many other classes in the files.
+
 
 
 ---
 
-Comment by slabbe created at 2009-12-08 16:38:18
+archive/issue_comments_059196.json:
+```json
+{
+    "body": "Applies over the precedent patch.",
+    "created_at": "2009-12-08T16:38:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7145",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59196",
+    "user": "slabbe"
+}
+```
 
 Applies over the precedent patch.
 
 
+
 ---
+
+archive/issue_comments_059197.json:
+```json
+{
+    "body": "Attachment\n\nVincent, I tried your code again with Thierry Monteil who knows better this field and he liked all the functions you implemented.\n\nHe suggested that you change Permutation* to `LabelledPermutation` or `PermutationwithLabel`... up to you.\n\nAlso, I notice the following. I think it should be a method and not an attribute :\n\n\n```\nsage: p = Permutation([4,3,2,1])\nsage: pp = PermutationIET(p)\nsage: pp.alphabet\nOrdered Alphabet [1, 2, 3, 4]\n```\n",
+    "created_at": "2009-12-10T16:17:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7145",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59197",
+    "user": "slabbe"
+}
+```
 
 Attachment
 
@@ -219,9 +325,20 @@ Ordered Alphabet [1, 2, 3, 4]
 
 
 
+
 ---
 
-Comment by vdelecroix created at 2009-12-10 23:57:26
+archive/issue_comments_059198.json:
+```json
+{
+    "body": "Replying to [comment:5 slabbe]:\n> Vincent, I tried your code again with Thierry Monteil who knows better this field and he liked all the functions you implemented.\n> \n> He suggested that you change Permutation* to `LabelledPermutation` or `PermutationwithLabel`... up to you.\n\nIt won't be possible. I consider two kinds of permutations\n* ReducedPermutation\n* LabelledPermutation\n\nA ReducedPermutation can be identified with a permutation of an ordered alphabet.\nA Labeledpermutation is a couple of bijection (p_t,p_b) : alphabet -> [1,n]\n \n> Also, I notice the following. I think it should be a method and not an attribute :\n> \n> {{{\n> sage: p = Permutation([4,3,2,1])\n> sage: pp = PermutationIET(p)\n> sage: pp.alphabet\n> Ordered Alphabet [1, 2, 3, 4]\n> }}}\n\nThe resason is because it's possible to change the alphabet\nsage: p = PermutationIET('a b c','c b a')\nsage: p\na b c\nc b a\nsage: p.alphabet = [1,2,3]\nsage: p\n1 2 3\n3 2 1\nsage: p.alphabet = 'cd'\n...\nValueError: Your alphabet has not enough letters",
+    "created_at": "2009-12-10T23:57:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7145",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59198",
+    "user": "vdelecroix"
+}
+```
 
 Replying to [comment:5 slabbe]:
 > Vincent, I tried your code again with Thierry Monteil who knows better this field and he liked all the functions you implemented.
@@ -229,8 +346,8 @@ Replying to [comment:5 slabbe]:
 > He suggested that you change Permutation* to `LabelledPermutation` or `PermutationwithLabel`... up to you.
 
 It won't be possible. I consider two kinds of permutations
-  * ReducedPermutation
-  * LabelledPermutation
+* ReducedPermutation
+* LabelledPermutation
 
 A ReducedPermutation can be identified with a permutation of an ordered alphabet.
 A Labeledpermutation is a couple of bijection (p_t,p_b) : alphabet -> [1,n]
@@ -258,16 +375,38 @@ sage: p.alphabet = 'cd'
 ValueError: Your alphabet has not enough letters
 
 
+
 ---
 
-Comment by vdelecroix created at 2009-12-13 13:47:00
+archive/issue_comments_059199.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2009-12-13T13:47:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7145",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59199",
+    "user": "vdelecroix"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by vdelecroix created at 2009-12-13 13:47:00
+archive/issue_comments_059200.json:
+```json
+{
+    "body": ">  - Create a class constructor containing the functions `PermutationsIET`, `PermutationIET`, `PermutationLI`, `GeneralizedPermutation`, `RauzyDiagram`, `IntervalExchangeTransformation`. \n>  - Create the object `IET` = `constructor()` \n\ndone. Everything is in constructor.py which is imported as iet. Then the iet.<tab> gives the (approximately) the following list\n\n   * Permutation\n   * RauzyDiagram\n   * IntervalExchangeTransformation\n\n>  - Rename `PermutationsIET` to `PermutationsIET_iterator` \n\ndone \n\n>  - Add a function named `IntervalExchangeTransformation` to the class constructor that wrapped the constructor of IET in `iet.py`. \n\ndone\n\n>  - Do we want `AbelianStratum`, `QuadraticStratum` and `AbelianStrata` to be wrapped in constructor as well? I don't know, but if it is realated to everything in iet folder, then it would clearly help the user to know about it.\n\nI don't know... the strata here means strata of Abelian differentials on Riemann surfaces. The fact is we need them to understand precisely the structure of Rauzy diagram. It is hence related to Rauzy diagram but somewhat independent of the theory of interval exchange transformations.\n\n> \n> For iet.py\n> \n>  - Rename `IntervalExchangeTransformation.__mul__` to something like `multiply_lengths`. \n\ndone. In fact, it's implemented in .normalize()\n\n>  - Keep `IntervalExchangeTransformation.__mul__` for multiplication of two IET. \n\ndone. But a little todo remains. I choose to create canonic labels from the labels of the two iets and this force a conversion of labels to strings. It's not so beautiful if we do not need the labels.\n\n>  - Change `IntervalExchangeTransformation._repr_` to look more like an `IET` and less as two tuples. For example it could say Interval exchange transformation from [0, 1[ to [0, 1[ of permutation ?. \n\ndone.\n\n>  - Rename `IntervalExchangeTransformation.copy` as `__copy__` or `__deepcopy__` if it corresponds to what you want. This may applies to many other classes in the files. \n\ndone.",
+    "created_at": "2009-12-13T13:47:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7145",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59200",
+    "user": "vdelecroix"
+}
+```
 
 >  - Create a class constructor containing the functions `PermutationsIET`, `PermutationIET`, `PermutationLI`, `GeneralizedPermutation`, `RauzyDiagram`, `IntervalExchangeTransformation`. 
 >  - Create the object `IET` = `constructor()` 
@@ -310,21 +449,56 @@ done.
 done.
 
 
+
 ---
+
+archive/issue_comments_059201.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-12-13T13:52:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7145",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59201",
+    "user": "vdelecroix"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by slabbe created at 2009-12-24 12:54:22
+archive/issue_comments_059202.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2009-12-24T12:54:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7145",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59202",
+    "user": "slabbe"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by slabbe created at 2009-12-24 12:54:22
+archive/issue_comments_059203.json:
+```json
+{
+    "body": "Dear Vincent,\n\nThanks for doing all those changes.\n\nI am now looking at your recent patch and I have a few more comments. I am sorry I was not able to tell them before. I will try now to make a complete review with all my (hopefully) final remarks. After those FIVE remarks answered, I think we will be very near of a positive review!\n\nS\u00e9bastien\n\nONE.\n\n> The resason is because it's possible to change the alphabet \n> sage: p = PermutationIET('a b c','c b a') \n> sage: p a b c c b a \n> sage: p.alphabet = [1,2,3] \n> sage: p 1 2 3 3 2 1 \n> sage: p.alphabet = 'cd' \n> ... \n> ValueError?: Your alphabet has not enough letters \n\nI am not sure this is a good reason for using an attribute instead of a method. See the following example :\n\n\n```\nsage: g = Graph()\nsage: p = g.plot()\nsage: p.xmin()\n-1.0\nsage: p.xmin(-2)\nsage: p.xmin()\n-2.0\n```\n\n\nTWO.\n\nThe documentation and doctest coverage is very good (96%) but not perfect :\n\n\n```\nslabbe@pol:~/sage-4.2/devel/sage-combinat/sage/combinat/iet$ sage -coverage .\nconstructors.py: 75% (6 of 8)\niet.py: 100% (23 of 23)\nlabelled.py: 95% (57 of 60)\nreduced.py: 100% (55 of 55)\nstrata.py: 100% (39 of 39)\ntemplate.py: 96% (89 of 92)\n\nOverall weighted coverage score:  96.9%\nTotal number of functions:  277\nWe need    5 more function to get to 99% coverage.\n```\n\n\nMoreover, `sage -coverage *` tells many `function name doesn't occur in doctests`. Maybe you could add `#indirect doctest` in doctests that are indirect.\n\nWhile you are at it, you may consider to add some INPUT and OUTPUT where there are missing. See the discussion [sage-devel: input and output in docstrings](http://groups.google.com/group/sage-devel/browse_thread/thread/7d529c646c685877/3f7678e55f60759f?hl=en&lnk=gst&q=coverage#3f7678e55f60759f)\n\nTHREE.\n\nI am getting 2 doctests failures :\n\n\n```\nsage -t  \"devel/sage-combinat/sage/combinat/iet/constructors.py\"\n**********************************************************************\nFile \"/home/slabbe/sage-4.2/devel/sage-combinat/sage/combinat/iet/constructors.py\", line 531:\n    sage: for p in P: print p, \"* *\\n\"\nExpected:\n    a b\n    b a\n    * *\nGot:\n    a b\n    b a * *\n    <BLANKLINE>\n    b a\n    a b * *\n    <BLANKLINE>\n**********************************************************************\nFile \"/home/slabbe/sage-4.2/devel/sage-combinat/sage/combinat/iet/constructors.py\", line 536:\n    sage: for p in P: print p, \"\\* * *\\n\"\nExpected:\n    a b c\n    c b a\n    * * *\nGot:\n    a b c\n    b c a \\* * *\n    <BLANKLINE>\n    a b c\n    c a b \\* * *\n    <BLANKLINE>\n    a b c\n    c b a \\* * *\n    <BLANKLINE>\n    a c b\n    b a c \\* * *\n    <BLANKLINE>\n    a c b\n    b c a \\* * *\n    <BLANKLINE>\n    a c b\n    c b a \\* * *\n    <BLANKLINE>\n    b a c\n    a c b \\* * *\n    <BLANKLINE>\n    b a c\n    c a b \\* * *\n    <BLANKLINE>\n    b a c\n    c b a \\* * *\n    <BLANKLINE>\n    b c a\n    a b c \\* * *\n    <BLANKLINE>\n    b c a\n    a c b \\* * *\n    <BLANKLINE>\n    b c a\n    c a b \\* * *\n    <BLANKLINE>\n    c a b\n    a b c \\* * *\n    <BLANKLINE>\n    c a b\n    b a c \\* * *\n    <BLANKLINE>\n    c a b\n    b c a \\* * *\n    <BLANKLINE>\n    c b a\n    a b c \\* * *\n    <BLANKLINE>\n    c b a\n    a c b \\* * *\n    <BLANKLINE>\n    c b a\n    b a c \\* * *\n    <BLANKLINE>\n**********************************************************************\n1 items had failures:\n   2 of   6 in __main__.example_4\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /home/slabbe/.sage//tmp/.doctest_constructors.py\n\t [3.0 s]\nexit code: 1024\n```\n\n\nFOUR.\n\nI use sage-4.2 and I have problem to docbuild a branch of sage. It docbuilds the sage main branch, so I am not able to test if there are no Sphinx warnings and if everythings looks good on the html doc. I am waiting sage-4.3 to come out to test your patch on it and see the doc.\n\nFIVE.\n\nI changed a little bit the `_repr_` of Interval exchange transformation. See the patch attached. Hope you agree.",
+    "created_at": "2009-12-24T12:54:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7145",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59203",
+    "user": "slabbe"
+}
+```
 
 Dear Vincent,
 
@@ -485,16 +659,40 @@ FIVE.
 I changed a little bit the `_repr_` of Interval exchange transformation. See the patch attached. Hope you agree.
 
 
+
 ---
+
+archive/issue_comments_059204.json:
+```json
+{
+    "body": "Attachment\n\nApplies over the precedent 3 patches.",
+    "created_at": "2009-12-24T12:57:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7145",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59204",
+    "user": "slabbe"
+}
+```
 
 Attachment
 
 Applies over the precedent 3 patches.
 
 
+
 ---
 
-Comment by vdelecroix created at 2009-12-29 10:55:30
+archive/issue_comments_059205.json:
+```json
+{
+    "body": "Replying to [comment:8 slabbe]:\nDear Sebastien,\n\n> \n> Thanks for doing all those changes.\n>\n\nThanks for this nice review ! It will be a *very* good patch.\n\n> ONE.\n> \n> > The resason is because it's possible to change the alphabet \n> > sage: p = PermutationIET('a b c','c b a') \n> > sage: p a b c c b a \n> > sage: p.alphabet = [1,2,3] \n> > sage: p 1 2 3 3 2 1 \n> > sage: p.alphabet = 'cd' \n> > ... \n> > ValueError?: Your alphabet has not enough letters \n> \n> I am not sure this is a good reason for using an attribute instead of a method. See the following example :\n> \n> {{{\n> sage: g = Graph()\n> sage: p = g.plot()\n> sage: p.xmin()\n> -1.0\n> sage: p.xmin(-2)\n> sage: p.xmin()\n> -2.0\n> }}}\n\nIt works now as\n\n```\nsage: p = iet.Permutation('a b c','c b a')\nsage: print p\na b c\nc b a\nsage: p.alphabet([1,2,3])\nsage: print p\n1 2 3\n3 2 1\n```\n\n\n \n> TWO.\n> \n> The documentation and doctest coverage is very good (96%) but not perfect :\n>\n\nup to 100% now\n \n> While you are at it, you may consider to add some INPUT and OUTPUT where there are missing. See the discussion [sage-devel: input and output in docstrings](http://groups.google.com/group/sage-devel/browse_thread/thread/7d529c646c685877/3f7678e55f60759f?hl=en&lnk=gst&q=coverage#3f7678e55f60759f)\n\nlot of INPUT/OUTPUT added\n \n> THREE.\n> \n> I am getting 2 doctests failures :\n> \n\ncorrected\n \n> \n> FIVE.\n> \n> I changed a little bit the `_repr_` of Interval exchange transformation. See the patch attached. Hope you agree.\n> \n\nI realy agree. In France, we use the coma instead of points to distinguish the integer part and the decimal that why we use dot comman for intervals... I keep it for the french translation ;-)",
+    "created_at": "2009-12-29T10:55:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7145",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59205",
+    "user": "vdelecroix"
+}
+```
 
 Replying to [comment:8 slabbe]:
 Dear Sebastien,
@@ -570,21 +768,56 @@ corrected
 I realy agree. In France, we use the coma instead of points to distinguish the integer part and the decimal that why we use dot comman for intervals... I keep it for the french translation ;-)
 
 
+
 ---
 
-Comment by vdelecroix created at 2009-12-29 10:55:30
+archive/issue_comments_059206.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2009-12-29T10:55:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7145",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59206",
+    "user": "vdelecroix"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by vdelecroix created at 2009-12-29 10:56:06
+archive/issue_comments_059207.json:
+```json
+{
+    "body": "Applies over the 4 precedings",
+    "created_at": "2009-12-29T10:56:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7145",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59207",
+    "user": "vdelecroix"
+}
+```
 
 Applies over the 4 precedings
 
 
+
 ---
+
+archive/issue_comments_059208.json:
+```json
+{
+    "body": "Attachment\n\nGreat. Point ONE above was addressed. The documentation coverage is now 100% perfect. All tests passed. \n\nI builded the documentation and there was several sphinx issues. I corrected them in a patch that I will upload shortly.",
+    "created_at": "2010-01-06T15:09:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7145",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59208",
+    "user": "slabbe"
+}
+```
 
 Attachment
 
@@ -593,23 +826,58 @@ Great. Point ONE above was addressed. The documentation coverage is now 100% per
 I builded the documentation and there was several sphinx issues. I corrected them in a patch that I will upload shortly.
 
 
+
 ---
+
+archive/issue_comments_059209.json:
+```json
+{
+    "body": "Attachment\n\nApplies over all the precedent patches.",
+    "created_at": "2010-01-06T15:37:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7145",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59209",
+    "user": "slabbe"
+}
+```
 
 Attachment
 
 Applies over all the precedent patches.
 
 
+
 ---
 
-Comment by slabbe created at 2010-01-06 15:43:23
+archive/issue_comments_059210.json:
+```json
+{
+    "body": "Vincent, can you review my last patch and make sure everything is OK with the sphinx output? My patch solved some sphinx syntax, but I feel like more improvements could be done.",
+    "created_at": "2010-01-06T15:43:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7145",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59210",
+    "user": "slabbe"
+}
+```
 
 Vincent, can you review my last patch and make sure everything is OK with the sphinx output? My patch solved some sphinx syntax, but I feel like more improvements could be done.
 
 
+
 ---
 
-Comment by vdelecroix created at 2010-01-08 00:00:56
+archive/issue_comments_059211.json:
+```json
+{
+    "body": "Hi,\n\n> Vincent, can you review my last patch and make sure everything is OK with the sphinx output? My patch solved some sphinx syntax, but I feel like more improvements could be done.\n\nI'm not sure about what you did with the OUTPUT part of the documentation string. It does not correspond to what is written in the \"developer's guide\"\n\n\n```\nOUTPUT:\n\n    integer -- the ...\n```\n\n\nWhat do I do for this ?\n\nI will make a complete review of the documentation after the answer.",
+    "created_at": "2010-01-08T00:00:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7145",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59211",
+    "user": "vdelecroix"
+}
+```
 
 Hi,
 
@@ -630,18 +898,40 @@ What do I do for this ?
 I will make a complete review of the documentation after the answer.
 
 
+
 ---
 
-Comment by slabbe created at 2010-01-08 15:06:54
+archive/issue_comments_059212.json:
+```json
+{
+    "body": "> I'm not sure about what you did with the OUTPUT part of the documentation string. It does not correspond to what is written in the \"developer's guide\"\n\nMy fault. In fact, I should update the way I write the OUTPUT part. I will take a closer look to the developer's guide. Feel free to change those.",
+    "created_at": "2010-01-08T15:06:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7145",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59212",
+    "user": "slabbe"
+}
+```
 
 > I'm not sure about what you did with the OUTPUT part of the documentation string. It does not correspond to what is written in the "developer's guide"
 
 My fault. In fact, I should update the way I write the OUTPUT part. I will take a closer look to the developer's guide. Feel free to change those.
 
 
+
 ---
 
-Comment by vdelecroix created at 2010-01-09 18:56:37
+archive/issue_comments_059213.json:
+```json
+{
+    "body": "I made a complete review of the doc. There is no warning when building the documentation and there is INPUT and OUTPUT fields where there are needed.\n\nI replace your patch trac_7145-review3-sl.patch with my trac-7145-documentation-review-vd.patch (because I find it more natural to erase the OUTPUT field modification than modify it back).\n\nI also made little modifications on default argument on some method (.flips() and .list() of FlippedPermutation) and a change of name (.rauzy_1n() becomes .cylindric()). The latter is due to a forthcoming paper.",
+    "created_at": "2010-01-09T18:56:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7145",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59213",
+    "user": "vdelecroix"
+}
+```
 
 I made a complete review of the doc. There is no warning when building the documentation and there is INPUT and OUTPUT fields where there are needed.
 
@@ -650,54 +940,137 @@ I replace your patch trac_7145-review3-sl.patch with my trac-7145-documentation-
 I also made little modifications on default argument on some method (.flips() and .list() of FlippedPermutation) and a change of name (.rauzy_1n() becomes .cylindric()). The latter is due to a forthcoming paper.
 
 
+
 ---
+
+archive/issue_comments_059214.json:
+```json
+{
+    "body": "Attachment\n\napplies over (trac_7145-iet-vd.patch, trac_7145-review-sl.patch, trac_7145-corrections-vd.patch, trac_7145-review2-sl ,trac_7145-corrections2-vd.patch)",
+    "created_at": "2010-01-09T19:00:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7145",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59214",
+    "user": "vdelecroix"
+}
+```
 
 Attachment
 
 applies over (trac_7145-iet-vd.patch, trac_7145-review-sl.patch, trac_7145-corrections-vd.patch, trac_7145-review2-sl ,trac_7145-corrections2-vd.patch)
 
 
+
 ---
+
+archive/issue_comments_059215.json:
+```json
+{
+    "body": "Attachment\n\napplies over (trac_7145-iet-vd.patch, trac_7145-review-sl.patch, trac_7145-corrections-vd.patch, trac_7145-review2-sl ,trac_7145-corrections2-vd.patch)",
+    "created_at": "2010-01-09T19:00:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7145",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59215",
+    "user": "vdelecroix"
+}
+```
 
 Attachment
 
 applies over (trac_7145-iet-vd.patch, trac_7145-review-sl.patch, trac_7145-corrections-vd.patch, trac_7145-review2-sl ,trac_7145-corrections2-vd.patch)
 
 
+
 ---
+
+archive/issue_comments_059216.json:
+```json
+{
+    "body": "Attachment\n\nApply only this one.",
+    "created_at": "2010-01-13T17:54:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7145",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59216",
+    "user": "slabbe"
+}
+```
 
 Attachment
 
 Apply only this one.
 
 
+
 ---
 
-Comment by slabbe created at 2010-01-13 17:59:23
+archive/issue_comments_059217.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-01-13T17:59:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7145",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59217",
+    "user": "slabbe"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by slabbe created at 2010-01-13 17:59:23
+archive/issue_comments_059218.json:
+```json
+{
+    "body": "I folded the relevant patches together : trac_7145-iet-final.patch .\n\nPositive review.",
+    "created_at": "2010-01-13T17:59:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7145",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59218",
+    "user": "slabbe"
+}
+```
 
 I folded the relevant patches together : trac_7145-iet-final.patch .
 
 Positive review.
 
 
+
 ---
 
-Comment by slabbe created at 2010-01-13 18:01:03
+archive/issue_comments_059219.json:
+```json
+{
+    "body": "> Positive review.\n\nI just want to add that I tested it on a fresh Sage-4.3.",
+    "created_at": "2010-01-13T18:01:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7145",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59219",
+    "user": "slabbe"
+}
+```
 
 > Positive review.
 
 I just want to add that I tested it on a fresh Sage-4.3.
 
 
+
 ---
 
-Comment by rlm created at 2010-01-14 07:01:05
+archive/issue_comments_059220.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-14T07:01:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7145",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7145#issuecomment-59220",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed

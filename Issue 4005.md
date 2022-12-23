@@ -1,24 +1,62 @@
 # Issue 4005: [with patch, needs review] sage-coverage screws up with lambda functions as default arguments
 
-Issue created by migration from https://trac.sagemath.org/ticket/4005
-
-Original creator: rlm
-
-Original creation time: 2008-08-30 18:53:14
-
+archive/issues_004005.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4005\n\n",
+    "created_at": "2008-08-30T18:53:14Z",
+    "labels": [
+        "doctest coverage",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch, needs review] sage-coverage screws up with lambda functions as default arguments",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4005",
+    "user": "rlm"
+}
+```
 Assignee: mabshoff
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4005
+
+
+
+
 
 ---
 
-Comment by rlm created at 2008-08-30 18:54:21
+archive/issue_comments_028920.json:
+```json
+{
+    "body": "Apply to scripts repo.",
+    "created_at": "2008-08-30T18:54:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4005",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4005#issuecomment-28920",
+    "user": "rlm"
+}
+```
 
 Apply to scripts repo.
 
 
+
 ---
+
+archive/issue_comments_028921.json:
+```json
+{
+    "body": "Attachment\n\nThis patch is motivated by\n\n```\n    def min_spanning_tree(self, weight_function=lambda e: 1,\n                          algorithm='Kruskal',\n                          starting_vertex=None ):\n```\n\nfrom sage/graphs/graph.py.\n\nPositive review.\n\nCheers,\n\nMichael",
+    "created_at": "2008-08-30T23:55:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4005",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4005#issuecomment-28921",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -39,9 +77,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-30 23:57:59
+archive/issue_comments_028922.json:
+```json
+{
+    "body": "rlm points out that this is not perfect, but it fixes this one specific issue. \n\nCheers,\n\nMichael",
+    "created_at": "2008-08-30T23:57:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4005",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4005#issuecomment-28922",
+    "user": "mabshoff"
+}
+```
 
 rlm points out that this is not perfect, but it fixes this one specific issue. 
 
@@ -50,15 +99,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-30 23:59:39
+archive/issue_comments_028923.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-08-30T23:59:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4005",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4005#issuecomment-28923",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-30 23:59:39
+archive/issue_comments_028924.json:
+```json
+{
+    "body": "Merged in Sage 3.1.2.alpha3",
+    "created_at": "2008-08-30T23:59:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4005",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4005#issuecomment-28924",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.1.2.alpha3

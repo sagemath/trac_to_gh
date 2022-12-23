@@ -1,11 +1,21 @@
 # Issue 4978: fix NTL tuning issue on Linux/ppc64
 
-Issue created by migration from https://trac.sagemath.org/ticket/4978
-
-Original creator: mabshoff
-
-Original creation time: 2009-01-14 22:55:53
-
+archive/issues_004978.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nspkg-install has the following:\n\n```\n    # Do performance tuning steps.\n    if [ `uname` = \"Linux\" -a `uname -m` = \"ppc64\" ]; then\n        echo \"NTL auto tuning is broken on Linux ppc64.  Please report this to Victor Shoup.  Thanks.\"\n    else\n        do_tune\n    fi\n```\n\nI cannot imagine the tuning code being broken and even if it is the spkg should still at least build, so fix it.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4978\n\n",
+    "created_at": "2009-01-14T22:55:53Z",
+    "labels": [
+        "build",
+        "major",
+        "bug"
+    ],
+    "title": "fix NTL tuning issue on Linux/ppc64",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4978",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 spkg-install has the following:
@@ -25,19 +35,45 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/4978
+
+
+
+
 
 ---
 
-Comment by was created at 2009-01-15 03:00:22
+archive/issue_comments_037953.json:
+```json
+{
+    "body": "> I cannot imagine ... being broken ...\n\nFamous last words :-)",
+    "created_at": "2009-01-15T03:00:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4978",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4978#issuecomment-37953",
+    "user": "was"
+}
+```
 
 > I cannot imagine ... being broken ...
 
 Famous last words :-)
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-29 03:32:45
+archive/issue_comments_037954.json:
+```json
+{
+    "body": "The issue is fixed via the spkg at #5040.\n\nCheers,\n\nMichael",
+    "created_at": "2009-01-29T03:32:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4978",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4978#issuecomment-37954",
+    "user": "mabshoff"
+}
+```
 
 The issue is fixed via the spkg at #5040.
 
@@ -46,16 +82,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-29 03:32:45
+archive/issue_comments_037955.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-01-29T03:32:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4978",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4978#issuecomment-37955",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-29 04:05:46
+archive/issue_comments_037956.json:
+```json
+{
+    "body": "Indirect positive review by Carl Witty via #5040.\n\nCheers,\n\nMichael",
+    "created_at": "2009-01-29T04:05:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4978",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4978#issuecomment-37956",
+    "user": "mabshoff"
+}
+```
 
 Indirect positive review by Carl Witty via #5040.
 
@@ -64,16 +122,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-29 04:06:01
+archive/issue_comments_037957.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-01-29T04:06:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4978",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4978#issuecomment-37957",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-29 04:06:01
+archive/issue_comments_037958.json:
+```json
+{
+    "body": "Merged in Sage 3.3.alpha3.\n\nCheers,\n\nMichael",
+    "created_at": "2009-01-29T04:06:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4978",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4978#issuecomment-37958",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.3.alpha3.
 

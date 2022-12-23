@@ -1,11 +1,21 @@
 # Issue 8031: make graph_editor also available as a *method* on graphs
 
-Issue created by migration from https://trac.sagemath.org/ticket/8031
-
-Original creator: was
-
-Original creation time: 2010-01-21 20:05:00
-
+archive/issues_008031.json:
+```json
+{
+    "body": "Assignee: rlm\n\nCC:  chapoton\n\nThis is nice:\n\n\n```\ng = graphs.CompleteGraph(5)\ngraph_editor(g)\n```\n\n\nbut this would be even better:\n\n```\ng = graphs.CompleteGraph(5)\ng.edit()\n```\n\n\nIt could also fit into a framework where we have \"edit\" methods for all kinds of objects in Sage, including matrices, elliptic curves, etc.,.   These could be implemented using `@`interact in many cases. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8031\n\n",
+    "created_at": "2010-01-21T20:05:00Z",
+    "labels": [
+        "graph theory",
+        "major",
+        "enhancement"
+    ],
+    "title": "make graph_editor also available as a *method* on graphs",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8031",
+    "user": "was"
+}
+```
 Assignee: rlm
 
 CC:  chapoton
@@ -29,44 +39,114 @@ g.edit()
 
 It could also fit into a framework where we have "edit" methods for all kinds of objects in Sage, including matrices, elliptic curves, etc.,.   These could be implemented using `@`interact in many cases. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8031
+
+
+
+
 
 ---
 
-Comment by jdemeyer created at 2014-10-16 08:32:24
+archive/issue_comments_070156.json:
+```json
+{
+    "body": "Changing component from graph theory to notebook.",
+    "created_at": "2014-10-16T08:32:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8031",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8031#issuecomment-70156",
+    "user": "jdemeyer"
+}
+```
 
 Changing component from graph theory to notebook.
 
 
+
 ---
 
-Comment by mkoeppe created at 2020-08-18 00:36:52
+archive/issue_comments_070157.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2020-08-18T00:36:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8031",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8031#issuecomment-70157",
+    "user": "mkoeppe"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mkoeppe created at 2020-08-18 00:36:52
+archive/issue_comments_070158.json:
+```json
+{
+    "body": "Proposing to close all sagenb tickets as outdated, so that all remaining open tickets in the notebook component are about the Jupyter notebook.",
+    "created_at": "2020-08-18T00:36:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8031",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8031#issuecomment-70158",
+    "user": "mkoeppe"
+}
+```
 
 Proposing to close all sagenb tickets as outdated, so that all remaining open tickets in the notebook component are about the Jupyter notebook.
 
 
+
 ---
 
-Comment by dimpase created at 2020-08-25 09:36:34
+archive/issue_comments_070159.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2020-08-25T09:36:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8031",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8031#issuecomment-70159",
+    "user": "dimpase"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by chapoton created at 2020-09-30 09:19:03
+archive/issue_comments_070160.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"graph_editor\".",
+    "created_at": "2020-09-30T09:19:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8031",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8031#issuecomment-70160",
+    "user": "chapoton"
+}
+```
 
 Changing keywords from "" to "graph_editor".
 
 
+
 ---
 
-Comment by chapoton created at 2021-01-01 14:23:25
+archive/issue_comments_070161.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2021-01-01T14:23:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8031",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8031#issuecomment-70161",
+    "user": "chapoton"
+}
+```
 
 Resolution: invalid

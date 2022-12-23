@@ -1,11 +1,21 @@
 # Issue 8700: the libpng-1.2.35.p0 in sage-4.4.alpha0 contains an extra copy of libpng-1.2.35!
 
-Issue created by migration from https://trac.sagemath.org/ticket/8700
-
-Original creator: was
-
-Original creation time: 2010-04-17 06:35:02
-
+archive/issues_008700.json:
+```json
+{
+    "body": "Assignee: tbd\n\n\n```\nwstein@boxen:~/build/sage-4.4.alpha0/spkg/standard/libpng-1.2.35.p0$ ls\nlibpng-1.2.35  spkg-install  SPKG.txt  src\nwstein@boxen:~/build/sage-4.4.alpha0/spkg/standard/libpng-1.2.35.p0$ ls libpng-1.2.35/\nspkg-install  SPKG.txt  src\n```\n\n\nBasically there is an accidental complete copy of the extracted spkg in the spkg!\n\nIssue created by migration from https://trac.sagemath.org/ticket/8700\n\n",
+    "created_at": "2010-04-17T06:35:02Z",
+    "labels": [
+        "packages: standard",
+        "blocker",
+        "bug"
+    ],
+    "title": "the libpng-1.2.35.p0 in sage-4.4.alpha0 contains an extra copy of libpng-1.2.35!",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8700",
+    "user": "was"
+}
+```
 Assignee: tbd
 
 
@@ -19,10 +29,25 @@ spkg-install  SPKG.txt  src
 
 Basically there is an accidental complete copy of the extracted spkg in the spkg!
 
+Issue created by migration from https://trac.sagemath.org/ticket/8700
+
+
+
+
 
 ---
 
-Comment by was created at 2010-04-17 06:36:48
+archive/issue_comments_079268.json:
+```json
+{
+    "body": "Looking in the changelog, the last person to work on the spkg left this message:\n\n```\n### libpng-1.2.35.p0 (Jaap Spies, Feb 1th, 2010)\n *\n```\n\n\nWhat was done?  It doesn't say.    The log shows this though:\n\n```\nchangeset:   13:ae01944f408c\ntag:         tip\nuser:        Jaap Spies <jaapspies@gmail.com>\ndate:        Thu Feb 04 19:32:51 2010 +0100\nsummary:     Corrected stupid typo I thought I had corrected earlier.\n\nchangeset:   12:329a8eb6dd2e\nuser:        Jaap Spies <jaapspies@gmail.com>\ndate:        Wed Feb 03 19:09:41 2010 +0100\nsummary:     Let SAGE64=yes work not only on OSX, but also on Open Solaris and possibly on other platform\n```\n\n\nAnyway, somebody was sloppy refereeing this, etc.",
+    "created_at": "2010-04-17T06:36:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8700",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8700#issuecomment-79268",
+    "user": "was"
+}
+```
 
 Looking in the changelog, the last person to work on the spkg left this message:
 
@@ -51,39 +76,94 @@ summary:     Let SAGE64=yes work not only on OSX, but also on Open Solaris and p
 Anyway, somebody was sloppy refereeing this, etc.
 
 
+
 ---
 
-Comment by was created at 2010-04-17 06:40:20
+archive/issue_comments_079269.json:
+```json
+{
+    "body": "Here's a fixed spkg:\n\n    http://boxen.math.washington.edu/home/wstein/patches/libpng-1.2.35.p1.spkg",
+    "created_at": "2010-04-17T06:40:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8700",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8700#issuecomment-79269",
+    "user": "was"
+}
+```
 
 Here's a fixed spkg:
 
     http://boxen.math.washington.edu/home/wstein/patches/libpng-1.2.35.p1.spkg
 
 
+
 ---
 
-Comment by was created at 2010-04-17 06:40:20
+archive/issue_comments_079270.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-04-17T06:40:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8700",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8700#issuecomment-79270",
+    "user": "was"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-23 04:40:47
+archive/issue_comments_079271.json:
+```json
+{
+    "body": "I'm downgrading this from a blocker to critical: the current spkg makes the Sage source distribution a little bigger, but causes no bugs or test failures.",
+    "created_at": "2010-04-23T04:40:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8700",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8700#issuecomment-79271",
+    "user": "jhpalmieri"
+}
+```
 
 I'm downgrading this from a blocker to critical: the current spkg makes the Sage source distribution a little bigger, but causes no bugs or test failures.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-23 04:40:47
+archive/issue_comments_079272.json:
+```json
+{
+    "body": "Changing priority from blocker to critical.",
+    "created_at": "2010-04-23T04:40:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8700",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8700#issuecomment-79272",
+    "user": "jhpalmieri"
+}
+```
 
 Changing priority from blocker to critical.
 
 
+
 ---
 
-Comment by mvngu created at 2010-06-16 01:59:49
+archive/issue_comments_079273.json:
+```json
+{
+    "body": "Close as fixed:\n\n\n```\n[mvngu@sage libpng-1.2.35.p2]$ pwd\n/dev/shm/mvngu/sage-4.4.4.alpha0/spkg/standard/libpng-1.2.35.p2\n[mvngu@sage libpng-1.2.35.p2]$ ls\nspkg-install  SPKG.txt  src\n```\n",
+    "created_at": "2010-06-16T01:59:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8700",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8700#issuecomment-79273",
+    "user": "mvngu"
+}
+```
 
 Close as fixed:
 
@@ -97,8 +177,19 @@ spkg-install  SPKG.txt  src
 
 
 
+
 ---
 
-Comment by mvngu created at 2010-06-16 01:59:49
+archive/issue_comments_079274.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-06-16T01:59:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8700",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8700#issuecomment-79274",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

@@ -1,51 +1,133 @@
 # Issue 7775: Wrong url in numerical.mip
 
-Issue created by migration from https://trac.sagemath.org/ticket/7775
-
-Original creator: ncohen
-
-Original creation time: 2009-12-27 19:45:04
-
+archive/issues_007775.json:
+```json
+{
+    "body": "Assignee: mvngu\n\nThis patches fixes a bad error message in numerical.mip.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7775\n\n",
+    "created_at": "2009-12-27T19:45:04Z",
+    "labels": [
+        "documentation",
+        "major",
+        "bug"
+    ],
+    "title": "Wrong url in numerical.mip",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7775",
+    "user": "ncohen"
+}
+```
 Assignee: mvngu
 
 This patches fixes a bad error message in numerical.mip.
 
+Issue created by migration from https://trac.sagemath.org/ticket/7775
+
+
+
+
 
 ---
+
+archive/issue_comments_067036.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-12-27T19:45:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7775",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7775#issuecomment-67036",
+    "user": "ncohen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mvngu created at 2009-12-29 17:18:55
+archive/issue_comments_067037.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-12-29T17:18:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7775",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7775#issuecomment-67037",
+    "user": "mvngu"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by ncohen created at 2009-12-29 17:19:39
+archive/issue_comments_067038.json:
+```json
+{
+    "body": "oops, thank you ! :-)",
+    "created_at": "2009-12-29T17:19:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7775",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7775#issuecomment-67038",
+    "user": "ncohen"
+}
+```
 
 oops, thank you ! :-)
 
 
+
 ---
 
-Comment by mvngu created at 2009-12-29 17:21:44
+archive/issue_comments_067039.json:
+```json
+{
+    "body": "Looks good to me. Patch applies OK against Sage 4.3. All doctests pass. The changes are reasonable.",
+    "created_at": "2009-12-29T17:21:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7775",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7775#issuecomment-67039",
+    "user": "mvngu"
+}
+```
 
 Looks good to me. Patch applies OK against Sage 4.3. All doctests pass. The changes are reasonable.
 
 
+
 ---
 
-Comment by mvngu created at 2009-12-29 17:21:44
+archive/issue_comments_067040.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-12-29T17:21:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7775",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7775#issuecomment-67040",
+    "user": "mvngu"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mhansen created at 2010-01-03 20:57:24
+archive/issue_comments_067041.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-03T20:57:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7775",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7775#issuecomment-67041",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

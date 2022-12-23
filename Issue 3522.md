@@ -1,11 +1,21 @@
 # Issue 3522: [with spkgs, needs review] New experimental mayavi2 spkg based on vtk_5.2 for linux
 
-Issue created by migration from https://trac.sagemath.org/ticket/3522
-
-Original creator: jsp
-
-Original creation time: 2008-06-27 14:26:11
-
+archive/issues_003522.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\n\n\n```\nThere were problems building mayavi2 experimental spkg on Fedora 9 and other\nnew Linuxes:\n1) vtk-5.0.4 does not build with tcl/tk-8.5.1\n2) vtk-5.0.4 will not build with gcc-4.3\n\nBoth problems are solved with vtk-5.2 from svn.\n\nI checked out mayavi_2.2.0 and it worked for me on Fedora 8 and Fedora 9:\n```\n\n\nhttp://sage.math.washington.edu/home/jsp/mayavi_2.2.0.spkg\n\n\n```\nDepends on:\n```\n\nhttp://sage.math.washington.edu/home/jsp/vtk-5.2.spkg\n\n```\n(and experimental spkgs cmake-2.4.8 and wxPython-2.8.7.1)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3522\n\n",
+    "created_at": "2008-06-27T14:26:11Z",
+    "labels": [
+        "packages: experimental",
+        "minor",
+        "enhancement"
+    ],
+    "title": "[with spkgs, needs review] New experimental mayavi2 spkg based on vtk_5.2 for linux",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3522",
+    "user": "jsp"
+}
+```
 Assignee: mabshoff
 
 
@@ -37,17 +47,43 @@ http://sage.math.washington.edu/home/jsp/vtk-5.2.spkg
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3522
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-07-02 20:06:02
+archive/issue_comments_024821.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"editor_mabshoff\".",
+    "created_at": "2008-07-02T20:06:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3522",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3522#issuecomment-24821",
+    "user": "mabshoff"
+}
+```
 
 Changing keywords from "" to "editor_mabshoff".
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-11 06:57:30
+archive/issue_comments_024822.json:
+```json
+{
+    "body": "Jaap,\n\nboth spkgs looks good to me. I checked in the relevant files into the repos. One thing I noticed was that both archives contain the full svn history, but after the disaster last time around I left them there. Sorry that it took so long.\n\nCheers,\n\nMichael",
+    "created_at": "2008-08-11T06:57:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3522",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3522#issuecomment-24822",
+    "user": "mabshoff"
+}
+```
 
 Jaap,
 
@@ -58,15 +94,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-11 06:58:44
+archive/issue_comments_024823.json:
+```json
+{
+    "body": "Merged into the experimental package repo in Sage 3.1.alpha1",
+    "created_at": "2008-08-11T06:58:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3522",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3522#issuecomment-24823",
+    "user": "mabshoff"
+}
+```
 
 Merged into the experimental package repo in Sage 3.1.alpha1
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-11 06:58:44
+archive/issue_comments_024824.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-08-11T06:58:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3522",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3522#issuecomment-24824",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 3800: Problem with Cusp constructor
 
-Issue created by migration from https://trac.sagemath.org/ticket/3800
-
-Original creator: craigcitro
-
-Original creation time: 2008-08-10 12:04:44
-
+archive/issues_003800.json:
+```json
+{
+    "body": "Assignee: craigcitro\n\nThere are several issues with the `Cusp.__init__` method. Here's an example:\n\n\n```\nsage: Cusp(1/3,0)\n---------------------------------------------------------------------------\nZeroDivisionError                         Traceback (most recent call last)\n\n/Users/craigcitro/<ipython console> in <module>()\n\n/sage/local/lib/python2.5/site-packages/sage/modular/cusps.py in __init__(self, a, b, construct, parent)\n    194 \n    195         elif isinstance(a, Rational):\n--> 196             a = a/b\n    197             self.__a = a.numer()\n    198             self.__b = a.denom()\n\n/Users/craigcitro/element.pyx in sage.structure.element.RingElement.__div__ (sage/structure/element.c:9074)()\n\n/Users/craigcitro/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.bin_op_c (sage/structure/coerce.c:5100)()\n\n/Users/craigcitro/element.pyx in sage.structure.element.RingElement.__div__ (sage/structure/element.c:9057)()\n\n/Users/craigcitro/coerce.pxi in sage.structure.element._div_c (sage/structure/element.c:16420)()\n\n/Users/craigcitro/rational.pyx in sage.rings.rational.Rational._div_c_impl (sage/rings/rational.c:8135)()\n\nZeroDivisionError: Rational division by zero\n```\n\n\nThis is relevant, since some computations with modular symbols on `GammaH` can lead to exactly this problem. \n\nThe attached patch rewrites the `__init__` method, slightly improving the speed, and vastly improving the consistency. In particular, it was possible to construct two different cusps which both claimed to be `Infinity` (namely `(1,0)` and `(-1,0)`). \n\nIn the process of doing this, I exposed several bits of code that were taking advantage of this \"loophole,\" which then needed to be fixed. In an attempt to make things more clear, I ended up doctesting all of `sage/modular/modsym/boundary.py`, so that's also included.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3800\n\n",
+    "created_at": "2008-08-10T12:04:44Z",
+    "labels": [
+        "modular forms",
+        "major",
+        "bug"
+    ],
+    "title": "Problem with Cusp constructor",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3800",
+    "user": "craigcitro"
+}
+```
 Assignee: craigcitro
 
 There are several issues with the `Cusp.__init__` method. Here's an example:
@@ -45,26 +55,78 @@ The attached patch rewrites the `__init__` method, slightly improving the speed,
 
 In the process of doing this, I exposed several bits of code that were taking advantage of this "loophole," which then needed to be fixed. In an attempt to make things more clear, I ended up doctesting all of `sage/modular/modsym/boundary.py`, so that's also included.
 
+Issue created by migration from https://trac.sagemath.org/ticket/3800
+
+
+
+
 
 ---
+
+archive/issue_comments_027019.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-08-10T12:05:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3800",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3800#issuecomment-27019",
+    "user": "craigcitro"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_027020.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-08-11T05:36:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3800",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3800#issuecomment-27020",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-11 05:40:22
+archive/issue_comments_027021.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-08-11T05:40:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3800",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3800#issuecomment-27021",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-11 05:40:22
+archive/issue_comments_027022.json:
+```json
+{
+    "body": "Merged both patches in Sage 3.1.alpha1",
+    "created_at": "2008-08-11T05:40:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3800",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3800#issuecomment-27022",
+    "user": "mabshoff"
+}
+```
 
 Merged both patches in Sage 3.1.alpha1

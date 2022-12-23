@@ -1,87 +1,215 @@
 # Issue 9803: Remove unnecessary dependy for cliquer in spkg/standard/deps
 
-Issue created by migration from https://trac.sagemath.org/ticket/9804
-
-Original creator: drkirkby
-
-Original creation time: 2010-08-26 01:17:47
-
+archive/issues_009803.json:
+```json
+{
+    "body": "Assignee: GeorgSWeber\n\nCC:  mvngu mpatel ncohen\n\ncliquer used use to SCons, but for various reasons it was replaced by a simple `Makefile`. (IMHO, a good idea, as fighting with SCons seems to be a nightmare). Minh did the replacment, but there is an unnecessary dependency in `spkg/standard/deps`, which potentially means parallel builds are slower than they need be, as currently cliquer can't be built without SCons first being built.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9804\n\n",
+    "created_at": "2010-08-26T01:17:47Z",
+    "labels": [
+        "build",
+        "minor",
+        "bug"
+    ],
+    "title": "Remove unnecessary dependy for cliquer in spkg/standard/deps",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9803",
+    "user": "drkirkby"
+}
+```
 Assignee: GeorgSWeber
 
 CC:  mvngu mpatel ncohen
 
 cliquer used use to SCons, but for various reasons it was replaced by a simple `Makefile`. (IMHO, a good idea, as fighting with SCons seems to be a nightmare). Minh did the replacment, but there is an unnecessary dependency in `spkg/standard/deps`, which potentially means parallel builds are slower than they need be, as currently cliquer can't be built without SCons first being built.
 
+Issue created by migration from https://trac.sagemath.org/ticket/9804
+
+
+
+
 
 ---
+
+archive/issue_comments_096319.json:
+```json
+{
+    "body": "Attachment\n\nReplacement deps, which removes SCONS dependency",
+    "created_at": "2010-08-26T01:21:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9803",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9803#issuecomment-96319",
+    "user": "drkirkby"
+}
+```
 
 Attachment
 
 Replacement deps, which removes SCONS dependency
 
 
+
 ---
 
-Comment by drkirkby created at 2010-08-26 01:22:17
+archive/issue_comments_096320.json:
+```json
+{
+    "body": "Unified diff file for spkg/standard/deps. Relative to 'deps' in sage-4.5.3.alpha2",
+    "created_at": "2010-08-26T01:22:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9803",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9803#issuecomment-96320",
+    "user": "drkirkby"
+}
+```
 
 Unified diff file for spkg/standard/deps. Relative to 'deps' in sage-4.5.3.alpha2
 
 
+
 ---
 
-Comment by drkirkby created at 2010-08-26 01:25:29
+archive/issue_comments_096321.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-08-26T01:25:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9803",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9803#issuecomment-96321",
+    "user": "drkirkby"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_096322.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-08-26T01:25:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9803",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9803#issuecomment-96322",
+    "user": "drkirkby"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by drkirkby created at 2010-08-28 19:08:24
+archive/issue_comments_096323.json:
+```json
+{
+    "body": "I'm adding Nathann Cohen to the CC list, as he is the package maintainer.",
+    "created_at": "2010-08-28T19:08:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9803",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9803#issuecomment-96323",
+    "user": "drkirkby"
+}
+```
 
 I'm adding Nathann Cohen to the CC list, as he is the package maintainer.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-09-04 00:32:40
+archive/issue_comments_096324.json:
+```json
+{
+    "body": "Can you review it Leif? \n\nDave",
+    "created_at": "2010-09-04T00:32:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9803",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9803#issuecomment-96324",
+    "user": "drkirkby"
+}
+```
 
 Can you review it Leif? 
 
 Dave
 
 
+
 ---
 
-Comment by leif created at 2010-09-04 05:06:23
+archive/issue_comments_096325.json:
+```json
+{
+    "body": "Just for the record: Upstream comes with a Makefile, too (no SConscript).\n\nThe attached `deps` and `deps.diff` still apply to Sage 4.5.3.rc0.\n\n**Positive review.**",
+    "created_at": "2010-09-04T05:06:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9803",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9803#issuecomment-96325",
+    "user": "leif"
+}
+```
 
 Just for the record: Upstream comes with a Makefile, too (no SConscript).
 
 The attached `deps` and `deps.diff` still apply to Sage 4.5.3.rc0.
 
-*Positive review.*
+**Positive review.**
+
 
 
 ---
 
-Comment by leif created at 2010-09-04 05:06:23
+archive/issue_comments_096326.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-09-04T05:06:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9803",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9803#issuecomment-96326",
+    "user": "leif"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by leif created at 2010-09-04 05:09:30
+archive/issue_comments_096327.json:
+```json
+{
+    "body": "P.S.: There's a lot wrong with the Cliquer spkg, perhaps to be addressed at #9767.",
+    "created_at": "2010-09-04T05:09:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9803",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9803#issuecomment-96327",
+    "user": "leif"
+}
+```
 
 P.S.: There's a lot wrong with the Cliquer spkg, perhaps to be addressed at #9767.
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-15 22:47:41
+archive/issue_comments_096328.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-09-15T22:47:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9803",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9803#issuecomment-96328",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 5656: add hint to lift() function to docstring of groebner_basis()
 
-Issue created by migration from https://trac.sagemath.org/ticket/5656
-
-Original creator: malb
-
-Original creation time: 2009-04-01 11:25:00
-
+archive/issues_005656.json:
+```json
+{
+    "body": "Assignee: malb\n\nKeywords: docstring, doc, Groebner basis\n\nOn [sage-support]:\n> > On Tuesday 31 March 2009, Florian wrote:\n> > Hello everyone,\n> > \n> > I've been trying to figure out whether the following \n> > functionality is implemented, but so far I could not. I was \n> > hoping that anyone would know if it existed and in that case \n> > what the syntax is.\n> > \n> > Suppose you computed the reduced Groebner Basis G of an ideal \n> > I= (f1,...,fn) in some polynomial ring R, and suppose that \n> > that Groebner Basis turned out to be G=(1). Is there a \n> > function that finds some, maybe even all, combinations of \n> > coefficients h1,...,hn such that h1*f1+...+hn*fn=1?\n> > \n> > This is basically a byproduct of e.g. the Buchberger \n> > Algorithm. The question is whether this information can be \n> > accessed.\n\nMartin answers ... and William Stein replies:\n> Martin, since this is a frequently asked question, do you think\n> something about this should be added to the groebner_basis \n> docstring?  The groebner_basis docstring is 3 pages right now, so \n> this shouldn't be too far down there.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5656\n\n",
+    "created_at": "2009-04-01T11:25:00Z",
+    "labels": [
+        "commutative algebra",
+        "major",
+        "bug"
+    ],
+    "title": "add hint to lift() function to docstring of groebner_basis()",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5656",
+    "user": "malb"
+}
+```
 Assignee: malb
 
 Keywords: docstring, doc, Groebner basis
@@ -35,39 +45,102 @@ Martin answers ... and William Stein replies:
 > docstring?  The groebner_basis docstring is 3 pages right now, so 
 > this shouldn't be too far down there.
 
+Issue created by migration from https://trac.sagemath.org/ticket/5656
+
+
+
+
 
 ---
+
+archive/issue_comments_044229.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-05-12T01:55:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5656",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5656#issuecomment-44229",
+    "user": "malb"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_044230.json:
+```json
+{
+    "body": "Attachment\n\nrevision of Martin's patch",
+    "created_at": "2009-06-04T13:50:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5656",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5656#issuecomment-44230",
+    "user": "burcin"
+}
+```
 
 Attachment
 
 revision of Martin's patch
 
 
+
 ---
 
-Comment by burcin created at 2009-06-04 13:58:22
+archive/issue_comments_044231.json:
+```json
+{
+    "body": "I posted a revised version of Martin's patch, attachment:trac_5656-gb_lift-revised.patch, the changes are:\n\n* fix places where !`` was used for math instead of `\n* provide a link to the .lift() method\n* remove the long lines in the INPUT section",
+    "created_at": "2009-06-04T13:58:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5656",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5656#issuecomment-44231",
+    "user": "burcin"
+}
+```
 
 I posted a revised version of Martin's patch, attachment:trac_5656-gb_lift-revised.patch, the changes are:
 
- * fix places where !`` was used for math instead of `
- * provide a link to the .lift() method
- * remove the long lines in the INPUT section
+* fix places where !`` was used for math instead of `
+* provide a link to the .lift() method
+* remove the long lines in the INPUT section
+
 
 
 ---
 
-Comment by mhansen created at 2009-06-04 18:28:25
+archive/issue_comments_044232.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-06-04T18:28:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5656",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5656#issuecomment-44232",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mhansen created at 2009-06-04 18:28:25
+archive/issue_comments_044233.json:
+```json
+{
+    "body": "Merged trac_5656-gb_lift-revised.patch in 4.0.1.rc1.",
+    "created_at": "2009-06-04T18:28:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5656",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5656#issuecomment-44233",
+    "user": "mhansen"
+}
+```
 
 Merged trac_5656-gb_lift-revised.patch in 4.0.1.rc1.

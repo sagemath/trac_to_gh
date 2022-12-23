@@ -1,11 +1,21 @@
 # Issue 7819: RealInterval(+infinity,+infinity).is_int() blows up
 
-Issue created by migration from https://trac.sagemath.org/ticket/7819
-
-Original creator: rlm
-
-Original creation time: 2010-01-02 15:02:56
-
+archive/issues_007819.json:
+```json
+{
+    "body": "Assignee: AlexGhitza\n\n\n```\nsage: RealInterval(+infinity,+infinity).is_int()\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/Users/rlmill/.sage/temp/rlm_book.local/9535/_Users_rlmill__sage_init_sage_0.py in <module>()\n\n/Users/rlmill/sage-4.3/local/lib/python2.6/site-packages/sage/rings/real_mpfi.so in sage.rings.real_mpfi.RealIntervalFieldElement.is_int (sage/rings/real_mpfi.c:16689)()\n\n/Users/rlmill/sage-4.3/local/lib/python2.6/site-packages/sage/rings/real_mpfr.so in sage.rings.real_mpfr.RealNumber.ceil (sage/rings/real_mpfr.c:14488)()\n\nValueError: Calling ceil() on infinity or NaN\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7819\n\n",
+    "created_at": "2010-01-02T15:02:56Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "bug"
+    ],
+    "title": "RealInterval(+infinity,+infinity).is_int() blows up",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7819",
+    "user": "rlm"
+}
+```
 Assignee: AlexGhitza
 
 
@@ -24,29 +34,79 @@ ValueError: Calling ceil() on infinity or NaN
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7819
+
+
+
+
 
 ---
+
+archive/issue_comments_067673.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-01-02T15:03:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7819",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7819#issuecomment-67673",
+    "user": "rlm"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by rlm created at 2010-01-02 15:03:55
+archive/issue_comments_067674.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-01-02T15:03:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7819",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7819#issuecomment-67674",
+    "user": "rlm"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by kcrisman created at 2010-01-04 15:53:32
+archive/issue_comments_067675.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-01-04T15:53:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7819",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7819#issuecomment-67675",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by kcrisman created at 2010-01-04 15:53:32
+archive/issue_comments_067676.json:
+```json
+{
+    "body": "Positive review.  By the way,\n\n```\nsage: a = RIF(3.9999999999999999999999999999999999,5.000000000000000000000000000000000)\nsage: b = RIF(4.000000000000000000000000000000000,4.9999999999999999999999999999999999)\nsage: a.is_int()\n(False, None)\nsage: b.is_int()\n(False, None)\n```\n\nthough I don't know if that's a bug (except in user input), since\n\n```\nsage: a.str(style='brackets')\n'[3.9999999999999995 .. 5.0000000000000000]'\nsage: b.str(style='brackets')\n'[4.0000000000000000 .. 5.0000000000000000]'\n```\n\nbut anyway wanted to point it out in case this is considered something that should be documented in is_int(), not just in RIF().",
+    "created_at": "2010-01-04T15:53:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7819",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7819#issuecomment-67676",
+    "user": "kcrisman"
+}
+```
 
 Positive review.  By the way,
 
@@ -71,8 +131,19 @@ sage: b.str(style='brackets')
 but anyway wanted to point it out in case this is considered something that should be documented in is_int(), not just in RIF().
 
 
+
 ---
 
-Comment by rlm created at 2010-01-13 05:14:07
+archive/issue_comments_067677.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-13T05:14:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7819",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7819#issuecomment-67677",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed

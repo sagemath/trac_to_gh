@@ -1,11 +1,21 @@
 # Issue 6814: jordan_form transformation lack of precision sage 4.1.1
 
-Issue created by migration from https://trac.sagemath.org/ticket/6814
-
-Original creator: Henryk.Trappmann
-
-Original creation time: 2009-08-23 12:45:16
-
+archive/issues_006814.json:
+```json
+{
+    "body": "Assignee: tbd\n\nKeywords: jordan, precision, matrix, transformation\n\nThere is an example for a lack of precision exception in the doc of jordan_form\n\n```\nsage: b = matrix(ZZ,3,3,range(9))\nsage: jf, p = b.jordan_form(RealField(15), transformation=True)\n...\nValueError: cannot compute the transformation matrix due to lack of precision\n```\n\nBut if one increases the precision to the maximum still the same error occurs\n\n```\nsage: b = matrix(ZZ,3,3,range(9))\nsage: jf, p = b.jordan_form(RealField(16777216), transformation=True)\n...\nValueError: cannot compute the transformation matrix due to lack of precision\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6814\n\n",
+    "created_at": "2009-08-23T12:45:16Z",
+    "labels": [
+        "algebra",
+        "major",
+        "bug"
+    ],
+    "title": "jordan_form transformation lack of precision sage 4.1.1",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6814",
+    "user": "Henryk.Trappmann"
+}
+```
 Assignee: tbd
 
 Keywords: jordan, precision, matrix, transformation
@@ -29,24 +39,61 @@ ValueError: cannot compute the transformation matrix due to lack of precision
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6814
+
+
+
+
 
 ---
 
-Comment by AlexGhitza created at 2009-11-15 13:07:00
+archive/issue_comments_056195.json:
+```json
+{
+    "body": "Changing component from algebra to linear algebra.",
+    "created_at": "2009-11-15T13:07:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6814",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6814#issuecomment-56195",
+    "user": "AlexGhitza"
+}
+```
 
 Changing component from algebra to linear algebra.
 
 
+
 ---
 
-Comment by spancratz created at 2010-01-19 12:26:25
+archive/issue_comments_056196.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2010-01-19T12:26:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6814",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6814#issuecomment-56196",
+    "user": "spancratz"
+}
+```
 
 Resolution: invalid
 
 
+
 ---
 
-Comment by spancratz created at 2010-01-19 12:26:25
+archive/issue_comments_056197.json:
+```json
+{
+    "body": "The error messages come up because the code does not actually detect numerically instability.  Instead, it notices when it fails, and assumes the only possible reason for this could be numerical instability.  Instead, there's a bug in the actual code.\n\nThus, this ticket can be closed as being \"invalid\".",
+    "created_at": "2010-01-19T12:26:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6814",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6814#issuecomment-56197",
+    "user": "spancratz"
+}
+```
 
 The error messages come up because the code does not actually detect numerically instability.  Instead, it notices when it fails, and assumes the only possible reason for this could be numerical instability.  Instead, there's a bug in the actual code.
 

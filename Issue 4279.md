@@ -1,11 +1,21 @@
 # Issue 4279: Sage 3.1.3.rc0: numerical noise in rings/real_lazy.pyx
 
-Issue created by migration from https://trac.sagemath.org/ticket/4279
-
-Original creator: mabshoff
-
-Original creation time: 2008-10-14 09:42:43
-
+archive/issues_004279.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\n\n```\nsage -t  devel/sage/sage/rings/real_lazy.pyx \n********************************************************************** \nFile \"/Users/mh/Desktop/sage-3.1.3.rc0/tmp/real_lazy.py\", line 549: \n    sage: complex(CLF(-1)^(1/4)) \nExpected: \n    (0.70710678118654757+0.70710678118654746j) \nGot: \n    (0.70710678118654746+0.70710678118654757j) \n*********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4279\n\n",
+    "created_at": "2008-10-14T09:42:43Z",
+    "labels": [
+        "doctest coverage",
+        "blocker",
+        "bug"
+    ],
+    "title": "Sage 3.1.3.rc0: numerical noise in rings/real_lazy.pyx",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4279",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 
@@ -22,17 +32,43 @@ Got:
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4279
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-10-14 09:42:49
+archive/issue_comments_031301.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-10-14T09:42:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4279",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4279#issuecomment-31301",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-14 11:18:55
+archive/issue_comments_031302.json:
+```json
+{
+    "body": "On a G5 with 10.4 I am seeing the following issue:\n\n```\nsage -t -long devel/sage/sage/rings/real_lazy.pyx           \n**********************************************************************\nFile \"/Users/mabshoff/sage-3.1.3.rc0/tmp/real_lazy.py\", line 549:\n    sage: complex(CLF(-1)^(1/4))\nExpected:\n    (0.70710678118654757+0.70710678118654746j)\nGot:\n    (0.70710678118654746+0.70710678118654757j)\n**********************************************************************\n```\n",
+    "created_at": "2008-10-14T11:18:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4279",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4279#issuecomment-31302",
+    "user": "mabshoff"
+}
+```
 
 On a G5 with 10.4 I am seeing the following issue:
 
@@ -50,27 +86,73 @@ Got:
 
 
 
+
 ---
+
+archive/issue_comments_031303.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-10-14T11:57:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4279",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4279#issuecomment-31303",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2008-10-14 11:58:15
+archive/issue_comments_031304.json:
+```json
+{
+    "body": "Looks good to me.",
+    "created_at": "2008-10-14T11:58:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4279",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4279#issuecomment-31304",
+    "user": "mhansen"
+}
+```
 
 Looks good to me.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-14 12:25:43
+archive/issue_comments_031305.json:
+```json
+{
+    "body": "Merged in 3.1.3.final",
+    "created_at": "2008-10-14T12:25:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4279",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4279#issuecomment-31305",
+    "user": "mabshoff"
+}
+```
 
 Merged in 3.1.3.final
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-14 12:25:43
+archive/issue_comments_031306.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-10-14T12:25:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4279",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4279#issuecomment-31306",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

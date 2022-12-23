@@ -1,11 +1,21 @@
 # Issue 9030: rubiks is building part 32-bit and part 64-bit on OpenSolaris x64.
 
-Issue created by migration from https://trac.sagemath.org/ticket/9030
-
-Original creator: drkirkby
-
-Original creation time: 2010-05-24 07:52:15
-
+archive/issues_009030.json:
+```json
+{
+    "body": "Assignee: AlexGhitza\n\nCC:  jsp\n\n'rubiks' has code to attempt to build it 64-bit, but that does not seem to be fully functional, as parts are built 32-bit and parts are built 64-bit. \n\n\n```\nrubiks-20070912.p10/dist/debian/changelog\nrubiks-20070912.p10/spkg-install\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS hawk 5.11 snv_134 i86pc i386 i86pc\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: i386-pc-solaris2.11\nConfigured with: ../gcc-4.4.4/configure --prefix=/usr/local/gcc-4.4.4 --with-as=/usr/local/binutils-2.20/bin/as --with-ld=/usr/ccs/bin/ld --with-gmp=/usr/local --with-mpfr=/usr/local\nThread model: posix\ngcc version 4.4.4 (GCC) \n****************************************************\nBuilding a 64-bit version of rubiks\nCode will be built with debugging information present. Set 'SAGE_DEBUG' to 'no' if you don't want that.\nUsing CC=gcc\nUsing CXX=g++\nUsing FC=\nUsing F77=\nUsing SAGE_FORTRAN=/usr/local/gcc-4.4.4/bin/gfortran\nUsing SAGE_FORTRAN_LIB=/usr/local/gcc-4.4.4/lib/amd64/libgfortran.so\nThe following environment variables will be exported\nUsing CFLAGS= -O2  -m64  -g  -Wall \nUsing CXXFLAGS= -O2  -m64  -g  -Wall \nUsing FCFLAGS= -O2  -m64  -g  -Wall \nUsing F77FLAGS= -O2  -m64  -g  -Wall \nUsing CPPFLAGS=\nUsing LDFLAGS= -m64 \nUsing ABI=\nconfigure scripts and/or makefiles might override these later\n \nBuilding Rubiks cube solvers\nfor dir in dietz/cu2 dietz/mcube dietz/solver dik reid; do \\\n\t\t(cd ${dir} && make all)\\\n\tdone\nmake[1]: Entering directory `/export/home/drkirkby/sage-4.4.2/spkg/build/rubiks-20070912.p10/src/dietz/cu2'\ng++  -O2  -m64  -g  -Wall  -c cu2.cpp\ng++  -O2  -m64  -g  -Wall  -c main.cpp\ng++  -O2  -m64  -g  -Wall   -o cubex  cubex.o main.o\n<snip lots of 64-bit builds builds and lots of warnings>\ngcc  -O2  -m64  -g  -Wall    -m64   optimal.c   -o optimal\ngcc  -O2  -m64  -g  -Wall    -m64   twist.c   -o twist\n<snip>\ncp reid/optimal /export/home/drkirkby/sage-4.4.2/local/bin\ncp dietz/solver/cubex /export/home/drkirkby/sage-4.4.2/local/bin\ncp dietz/mcube/mcube /export/home/drkirkby/sage-4.4.2/local/bin\ncp dietz/cu2/cu2 /export/home/drkirkby/sage-4.4.2/local/bin\ncp dik/dikcube /export/home/drkirkby/sage-4.4.2/local/bin\ncp dik/size222 /export/home/drkirkby/sage-4.4.2/local/bin\n```\n\n\nWhen we check files, I note some are built 32-bit and some are built 64-bit. \n\n\n```\ndrkirkby@hawk:~/sage-4.4.2$ file local/bin/size222 \nlocal/bin/size222:\tELF 32-bit LSB executable 80386 Version 1 [FPU], dynamically linked, not stripped, no debugging information available\ndrkirkby@hawk:~/sage-4.4.2$ file local/bin/optimal\nlocal/bin/optimal:\tELF 64-bit LSB executable AMD64 Version 1, dynamically linked, not stripped\n```\n\n\nI expect this would happen on any platform where the default is 32-bit, suggesting to me this never even worked 64-bit on OS X systems where 32-bit was the default. \n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9030\n\n",
+    "created_at": "2010-05-24T07:52:15Z",
+    "labels": [
+        "algebra",
+        "major",
+        "bug"
+    ],
+    "title": "rubiks is building part 32-bit and part 64-bit on OpenSolaris x64.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9030",
+    "user": "drkirkby"
+}
+```
 Assignee: AlexGhitza
 
 CC:  jsp
@@ -85,38 +95,97 @@ I expect this would happen on any platform where the default is 32-bit, suggesti
 
 Dave
 
+Issue created by migration from https://trac.sagemath.org/ticket/9030
+
+
+
+
 
 ---
 
-Comment by drkirkby created at 2010-05-24 18:22:43
+archive/issue_comments_083570.json:
+```json
+{
+    "body": "Changing assignee from AlexGhitza to drkirkby.",
+    "created_at": "2010-05-24T18:22:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9030",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9030#issuecomment-83570",
+    "user": "drkirkby"
+}
+```
 
 Changing assignee from AlexGhitza to drkirkby.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-05-24 18:22:43
+archive/issue_comments_083571.json:
+```json
+{
+    "body": "Changing component from algebra to solaris.",
+    "created_at": "2010-05-24T18:22:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9030",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9030#issuecomment-83571",
+    "user": "drkirkby"
+}
+```
 
 Changing component from algebra to solaris.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-05-24 18:22:43
+archive/issue_comments_083572.json:
+```json
+{
+    "body": "For other OpenSolaris issues, see #9026",
+    "created_at": "2010-05-24T18:22:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9030",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9030#issuecomment-83572",
+    "user": "drkirkby"
+}
+```
 
 For other OpenSolaris issues, see #9026
 
 
+
 ---
 
-Comment by robertwb created at 2010-05-25 05:53:13
+archive/issue_comments_083573.json:
+```json
+{
+    "body": "As this is never linked in directly, there is no need (or advantage, as far as I can tell) to build this 64-bit for a fully functional Sage.",
+    "created_at": "2010-05-25T05:53:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9030",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9030#issuecomment-83573",
+    "user": "robertwb"
+}
+```
 
 As this is never linked in directly, there is no need (or advantage, as far as I can tell) to build this 64-bit for a fully functional Sage.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-05-28 23:38:39
+archive/issue_comments_083574.json:
+```json
+{
+    "body": "Replying to [comment:3 robertwb]:\n> As this is never linked in directly, there is no need (or advantage, as far as I can tell) to build this 64-bit for a fully functional Sage. \n\nI agree there is no technical advantage in using rubiks 64-bit. \n\nHowever, it seems rather unprofessional to have 4 out of the 6 binaries building 64-bit, and two of them building 32-bit. Having all rubiks binaries made 64-bit allows one to quickly find any binaries from any packages that are not being built properly, using a command like\n\n\n```\n$ find local -exec file {} \\; | grep 32-bit\n```\n\n\nas such, I believe it's desirable that a 64-bit build on OpenSolaris, Solaris or any other operating system for that matter creates only 64-bit objects.\n\nA revised package, which add the -m64 flag to the makefile is at \n\nhttp://boxen.math.washington.edu/home/kirkby/patches/rubiks-20070912.p11.spkg\n\nThere were a lot of files not in the repository (I believe this was my fault months ago), which I've checked in. As such, the patch is a lot longer than it needs to be to fix this particular problem. \n\nThe following line:\n\n\n```\nCFLAGS = -O -DLARGE_MEM -DVERBOSE\n```\n\ngets be changed to:\n\n```\nCFLAGS = ${CFLAG64} -O -DLARGE_MEM -DVERBOSE\n```\n\n\nusing 'sed'. \n\n$CFLAG64 is then set to -m64 if building 64-bit, so the -m64 gets added to the makefile. \n\n\nAfter building **all** the rubiks binaries are 64-bit. i.e.\n\n\n```\ndrkirkby@hawk:~/sage-4.4.2$ file local/bin/size222 \nlocal/bin/size222:\tELF 64-bit LSB executable AMD64 Version 1, dynamically linked, not stripped, no debugging information available\ndrkirkby@hawk:~/sage-4.4.2$ file local/bin/dikcube\nlocal/bin/dikcube:\tELF 64-bit LSB executable AMD64 Version 1, dynamically linked, not stripped, no debugging information available\n```\n\n\nPreviously both were being built 32-bit (see the output of the find command shown above, where clearly there was a mix of 32-bit and 64-bit objects). \n\nThis has been compiled on sage.math and bsd.math as well as my own Sun Ultra 27 running OpenSolaris. \n\nDave",
+    "created_at": "2010-05-28T23:38:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9030",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9030#issuecomment-83574",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:3 robertwb]:
 > As this is never linked in directly, there is no need (or advantage, as far as I can tell) to build this 64-bit for a fully functional Sage. 
@@ -158,7 +227,7 @@ using 'sed'.
 $CFLAG64 is then set to -m64 if building 64-bit, so the -m64 gets added to the makefile. 
 
 
-After building *all* the rubiks binaries are 64-bit. i.e.
+After building **all** the rubiks binaries are 64-bit. i.e.
 
 
 ```
@@ -176,38 +245,95 @@ This has been compiled on sage.math and bsd.math as well as my own Sun Ultra 27 
 Dave
 
 
+
 ---
 
-Comment by drkirkby created at 2010-05-28 23:38:52
+archive/issue_comments_083575.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-05-28T23:38:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9030",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9030#issuecomment-83575",
+    "user": "drkirkby"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_083576.json:
+```json
+{
+    "body": "Attachment\n\nMercurial patch to ensure all files build 64-bit on OpenSolaris",
+    "created_at": "2010-05-30T22:58:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9030",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9030#issuecomment-83576",
+    "user": "drkirkby"
+}
+```
 
 Attachment
 
 Mercurial patch to ensure all files build 64-bit on OpenSolaris
 
 
+
 ---
 
-Comment by jsp created at 2010-06-10 16:19:18
+archive/issue_comments_083577.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-06-10T16:19:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9030",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9030#issuecomment-83577",
+    "user": "jsp"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jsp created at 2010-06-10 16:19:18
+archive/issue_comments_083578.json:
+```json
+{
+    "body": "Is ok for me. Positive review.\n\nJaap",
+    "created_at": "2010-06-10T16:19:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9030",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9030#issuecomment-83578",
+    "user": "jsp"
+}
+```
 
 Is ok for me. Positive review.
 
 Jaap
 
 
+
 ---
 
-Comment by rlm created at 2010-06-25 15:48:31
+archive/issue_comments_083579.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-06-25T15:48:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9030",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9030#issuecomment-83579",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed

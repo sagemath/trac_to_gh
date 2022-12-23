@@ -1,11 +1,21 @@
 # Issue 4018: casting of non t_INT pari integers
 
-Issue created by migration from https://trac.sagemath.org/ticket/4018
-
-Original creator: robertwb
-
-Original creation time: 2008-08-31 08:28:22
-
+archive/issues_004018.json:
+```json
+{
+    "body": "Assignee: robertwb\n\n\n```\nsage: t = pari(0*ZZ[x].0); t\n 0\n\nsage: ZZ(t)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/robertwb/<ipython console> in <module>()\n\n/home/robertwb/integer_ring.pyx in sage.rings.integer_ring.IntegerRing_class.__call__ (sage/rings/integer_ring.c:4902)()\n\n/home/robertwb/integer.pyx in sage.rings.integer.Integer.__init__ (sage/rings/integer.c:5812)()\n\n/home/robertwb/gen.pyx in sage.libs.pari.gen.gen.__hex__ (sage/libs/pari/gen.c:5840)()\n\nTypeError: gen must be of PARI type t_INT\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4018\n\n",
+    "created_at": "2008-08-31T08:28:22Z",
+    "labels": [
+        "coercion",
+        "major",
+        "bug"
+    ],
+    "title": "casting of non t_INT pari integers",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4018",
+    "user": "robertwb"
+}
+```
 Assignee: robertwb
 
 
@@ -29,22 +39,61 @@ TypeError: gen must be of PARI type t_INT
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4018
+
+
+
+
 
 ---
+
+archive/issue_comments_028980.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-08-31T08:43:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4018",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4018#issuecomment-28980",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by AlexGhitza created at 2008-09-01 10:33:22
+archive/issue_comments_028981.json:
+```json
+{
+    "body": "Looks good to me (tested it against 3.1.1).",
+    "created_at": "2008-09-01T10:33:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4018",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4018#issuecomment-28981",
+    "user": "AlexGhitza"
+}
+```
 
 Looks good to me (tested it against 3.1.1).
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-01 13:00:44
+archive/issue_comments_028982.json:
+```json
+{
+    "body": "Line 358 in the patch needs to be changed to \n\n```\nsage: t = pari(0*ZZ[x].0 + 3)\n```\n\nWith that change the doctests for integer.pyx actually pass :)\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-01T13:00:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4018",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4018#issuecomment-28982",
+    "user": "mabshoff"
+}
+```
 
 Line 358 in the patch needs to be changed to 
 
@@ -59,15 +108,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-01 13:02:04
+archive/issue_comments_028983.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-09-01T13:02:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4018",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4018#issuecomment-28983",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-01 13:02:04
+archive/issue_comments_028984.json:
+```json
+{
+    "body": "Merged in sage 3.1.2.alpha4",
+    "created_at": "2008-09-01T13:02:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4018",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4018#issuecomment-28984",
+    "user": "mabshoff"
+}
+```
 
 Merged in sage 3.1.2.alpha4

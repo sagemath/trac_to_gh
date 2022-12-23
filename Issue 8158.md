@@ -1,11 +1,21 @@
 # Issue 8158: efficiency problem with polynomials (SymbolicRing vs PolynomialRing)
 
-Issue created by migration from https://trac.sagemath.org/ticket/8158
-
-Original creator: zimmerma
-
-Original creation time: 2010-02-02 22:18:45
-
+archive/issues_008158.json:
+```json
+{
+    "body": "Assignee: malb\n\nConsider the following example:\n\n```\nsage: var('a,b,c')\n(a, b, c)\nsage: time d=expand((a+b+c+1)^100)\nCPU times: user 2.45 s, sys: 0.07 s, total: 2.52 s\nWall time: 2.53 s\n```\n\nI thought it would be more efficient to use PolynomialRing(),\nbut it is not:\n\n```\nsage: P.<a,b,c> = PolynomialRing(QQ)\nsage: time d=(a+b+c+1)^100\nCPU times: user 10.28 s, sys: 0.07 s, total: 10.35 s\nWall time: 12.59 s\n```\n\nHowever if one wants to factor d, then PolynomialRing is faster\n(SymbolicRing seems to loop forever):\n\n```\nsage: time e = d.factor()\nCPU times: user 28.87 s, sys: 0.36 s, total: 29.23 s\nWall time: 34.20 s\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8158\n\n",
+    "created_at": "2010-02-02T22:18:45Z",
+    "labels": [
+        "commutative algebra",
+        "major",
+        "bug"
+    ],
+    "title": "efficiency problem with polynomials (SymbolicRing vs PolynomialRing)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8158",
+    "user": "zimmerma"
+}
+```
 Assignee: malb
 
 Consider the following example:
@@ -38,10 +48,25 @@ Wall time: 34.20 s
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8158
+
+
+
+
 
 ---
 
-Comment by zimmerma created at 2013-08-23 14:48:17
+archive/issue_comments_071747.json:
+```json
+{
+    "body": "PolynomialRing is still slower with Sage 5.11, even with integer coefficients:\n\n```\n+--------------------------------------------------------------------+\n+--------------------------------------------------------------------+\nsage: var('a,b,c')\n(a, b, c)\nsage: %time d=expand((a+b+c+1)^100)\nCPU times: user 16.35 s, sys: 0.26 s, total: 16.61 s\nWall time: 18.59 s\nsage: P.<a,b,c> = PolynomialRing(QQ)\nsage: %time d=(a+b+c+1)^100\nCPU times: user 34.35 s, sys: 0.08 s, total: 34.42 s\nWall time: 35.80 s\nsage: P.<a,b,c> = PolynomialRing(ZZ)\nsage: %time d=(a+b+c+1)^100         \nCPU times: user 32.29 s, sys: 0.07 s, total: 32.36 s\nWall time: 34.89 s\n```\n\nPaul",
+    "created_at": "2013-08-23T14:48:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8158",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8158#issuecomment-71747",
+    "user": "zimmerma"
+}
+```
 
 PolynomialRing is still slower with Sage 5.11, even with integer coefficients:
 
@@ -66,9 +91,20 @@ Wall time: 34.89 s
 Paul
 
 
+
 ---
 
-Comment by mmezzarobba created at 2014-03-15 17:05:18
+archive/issue_comments_071748.json:
+```json
+{
+    "body": "I doubt there is much to do here except reduce the overhead of the singular interface (especially regarding memory management) or singular itself. On my system, ginac (1.6.2)  is already faster than singular (3.1.6):\n  {{{\n   > time(expand((a+b+c+1)^100));\n  1.184s\n  }}}\n  {{{\n  > timer=1;\n  > ring r=0,(a,b,c),lp;\n  > poly p=(a+b+c+1)^100;\n  //used time: 1.95 sec\n  }}}\nBoth interfaces have comparable overhead (sage 6.2.beta4):\n\n```\nsage: %time _=expand((a+b+c+1)^100)\nCPU times: user 3.13 s, sys: 16 ms, total: 3.14 s\nWall time: 3.14 s\n```\n\n\n```\nsage: P.<a,b,c> = PolynomialRing(QQ,order='lex')\nsage: %time _=(a+b+c+1)^100\nCPU times: user 5.59 s, sys: 8 ms, total: 5.6 s\nWall time: 5.59 s\n```\n\nbut not for the same reason\u2014the advantage of standalone singular over libsingular called from sage seems to be due in large part to its faster memory allocator, and we can make the singular version significantly faster by forcing sage to use tcmalloc instead of the system malloc():\n\n```\n$ LD_PRELOAD=\"/usr/lib/libtcmalloc.so.4\" sage\n...\nsage: var('a,b,c')\n(a, b, c)\nsage: %time _=expand((a+b+c+1)^100)\nCPU times: user 2.89 s, sys: 36 ms, total: 2.92 s\nWall time: 2.92 s\nsage: P.<a,b,c> = PolynomialRing(QQ,order='lex')\nsage: %time _=(a+b+c+1)^100\nCPU times: user 3.4 s, sys: 12 ms, total: 3.41 s\nWall time: 3.41 s\n```\n",
+    "created_at": "2014-03-15T17:05:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8158",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8158#issuecomment-71748",
+    "user": "mmezzarobba"
+}
+```
 
 I doubt there is much to do here except reduce the overhead of the singular interface (especially regarding memory management) or singular itself. On my system, ginac (1.6.2)  is already faster than singular (3.1.6):
   {{{
@@ -115,39 +151,94 @@ Wall time: 3.41 s
 
 
 
+
 ---
 
-Comment by zimmerma created at 2014-03-15 22:31:26
+archive/issue_comments_071749.json:
+```json
+{
+    "body": "the speedup obtained with tcmalloc is impressive, could this be useful in other parts of Sage?\n\nPaul",
+    "created_at": "2014-03-15T22:31:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8158",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8158#issuecomment-71749",
+    "user": "zimmerma"
+}
+```
 
 the speedup obtained with tcmalloc is impressive, could this be useful in other parts of Sage?
 
 Paul
 
 
+
 ---
 
-Comment by mmezzarobba created at 2014-03-16 09:19:26
+archive/issue_comments_071750.json:
+```json
+{
+    "body": "Changing component from commutative algebra to performance.",
+    "created_at": "2014-03-16T09:19:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8158",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8158#issuecomment-71750",
+    "user": "mmezzarobba"
+}
+```
 
 Changing component from commutative algebra to performance.
 
 
+
 ---
 
-Comment by mmezzarobba created at 2014-03-16 09:19:26
+archive/issue_comments_071751.json:
+```json
+{
+    "body": "Changing type from defect to enhancement.",
+    "created_at": "2014-03-16T09:19:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8158",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8158#issuecomment-71751",
+    "user": "mmezzarobba"
+}
+```
 
 Changing type from defect to enhancement.
 
 
+
 ---
 
-Comment by mmezzarobba created at 2014-03-16 09:19:26
+archive/issue_comments_071752.json:
+```json
+{
+    "body": "Changing assignee from malb to tbd.",
+    "created_at": "2014-03-16T09:19:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8158",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8158#issuecomment-71752",
+    "user": "mmezzarobba"
+}
+```
 
 Changing assignee from malb to tbd.
 
 
+
 ---
 
-Comment by mmezzarobba created at 2014-03-16 09:42:36
+archive/issue_comments_071753.json:
+```json
+{
+    "body": "Replying to [comment:5 zimmerma]:\n> the speedup obtained with tcmalloc is impressive, could this be useful in other parts of Sage?\n\nI guess so... But that's hard to tell without more profiling, and I don't really know what to test.\n\nSee #15950.",
+    "created_at": "2014-03-16T09:42:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8158",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8158#issuecomment-71753",
+    "user": "mmezzarobba"
+}
+```
 
 Replying to [comment:5 zimmerma]:
 > the speedup obtained with tcmalloc is impressive, could this be useful in other parts of Sage?

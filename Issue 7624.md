@@ -1,25 +1,61 @@
 # Issue 7624: notebook: get rid of nb.sobj stuff from any notebook docs.
 
-Issue created by migration from https://trac.sagemath.org/ticket/7624
-
-Original creator: was
-
-Original creation time: 2009-12-08 16:38:42
-
+archive/issues_007624.json:
+```json
+{
+    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7624\n\n",
+    "created_at": "2009-12-08T16:38:42Z",
+    "labels": [
+        "notebook",
+        "major",
+        "bug"
+    ],
+    "title": "notebook: get rid of nb.sobj stuff from any notebook docs.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7624",
+    "user": "was"
+}
+```
 Assignee: was
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7624
+
+
+
+
 
 ---
 
-Comment by timdumol created at 2010-01-19 09:09:18
+archive/issue_comments_065142.json:
+```json
+{
+    "body": "Duplicate of #7506.",
+    "created_at": "2010-01-19T09:09:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7624",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7624#issuecomment-65142",
+    "user": "timdumol"
+}
+```
 
 Duplicate of #7506.
 
 
+
 ---
 
-Comment by timdumol created at 2010-01-19 09:09:18
+archive/issue_comments_065143.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2010-01-19T09:09:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7624",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7624#issuecomment-65143",
+    "user": "timdumol"
+}
+```
 
 Resolution: duplicate

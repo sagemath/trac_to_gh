@@ -1,11 +1,21 @@
 # Issue 8529: default colors for plot and implicit_plot are not consistent
 
-Issue created by migration from https://trac.sagemath.org/ticket/8529
-
-Original creator: AlexGhitza
-
-Original creation time: 2010-03-13 22:34:10
-
+archive/issues_008529.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  kcrisman\n\nKeywords: plot default color\n\nWhen plotting a function using `plot`, the default color for the graph of the function is blue.  The default color for `implicit_plot` is black.  It would be preferable to have the same default color.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8529\n\n",
+    "created_at": "2010-03-13T22:34:10Z",
+    "labels": [
+        "graphics",
+        "minor",
+        "bug"
+    ],
+    "title": "default colors for plot and implicit_plot are not consistent",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8529",
+    "user": "AlexGhitza"
+}
+```
 Assignee: was
 
 CC:  kcrisman
@@ -14,31 +24,79 @@ Keywords: plot default color
 
 When plotting a function using `plot`, the default color for the graph of the function is blue.  The default color for `implicit_plot` is black.  It would be preferable to have the same default color.
 
+Issue created by migration from https://trac.sagemath.org/ticket/8529
+
+
+
+
 
 ---
 
-Comment by jason created at 2010-05-26 15:44:24
+archive/issue_comments_077074.json:
+```json
+{
+    "body": "Changing keywords from \"plot default color\" to \"plot default color beginner\".",
+    "created_at": "2010-05-26T15:44:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8529",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77074",
+    "user": "jason"
+}
+```
 
 Changing keywords from "plot default color" to "plot default color beginner".
 
 
+
 ---
 
-Comment by ryan created at 2010-07-27 23:39:08
+archive/issue_comments_077075.json:
+```json
+{
+    "body": "the attached patch will change the default color of plot to black (so that it matches implicit_plot).",
+    "created_at": "2010-07-27T23:39:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8529",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77075",
+    "user": "ryan"
+}
+```
 
 the attached patch will change the default color of plot to black (so that it matches implicit_plot).
 
 
+
 ---
 
-Comment by jason created at 2010-07-27 23:44:30
+archive/issue_comments_077076.json:
+```json
+{
+    "body": "Changing status from new to needs_work.",
+    "created_at": "2010-07-27T23:44:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8529",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77076",
+    "user": "jason"
+}
+```
 
 Changing status from new to needs_work.
 
 
+
 ---
 
-Comment by jason created at 2010-07-27 23:44:30
+archive/issue_comments_077077.json:
+```json
+{
+    "body": "Ryan!  Welcome to Trac!  Congratulations on your patch!\n\nI think maybe it would be better to make the implicit plot default color be blue.  I like that a plot is a different color than the axes so that it's easier to distinguish the two.\n\nAlso, when a patch is ready for review, change the state below to \"needs review\".",
+    "created_at": "2010-07-27T23:44:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8529",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77077",
+    "user": "jason"
+}
+```
 
 Ryan!  Welcome to Trac!  Congratulations on your patch!
 
@@ -47,9 +105,20 @@ I think maybe it would be better to make the implicit plot default color be blue
 Also, when a patch is ready for review, change the state below to "needs review".
 
 
+
 ---
 
-Comment by jason created at 2010-07-27 23:55:34
+archive/issue_comments_077078.json:
+```json
+{
+    "body": "See http://sagenb.org/home/jason3/230/ for how to plot implicit plots in a different color:\n\n\n```\nvar('x,y')\nimplicit_plot(x^2-y^2==1, (x,-5,5), (y,-5,5), cmap=[\"red\"])\n```\n\n\nI think it might be enough to give another argument to the `@`options decorator for implicit_plot: `cmap=[\"blue\"]`",
+    "created_at": "2010-07-27T23:55:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8529",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77078",
+    "user": "jason"
+}
+```
 
 See http://sagenb.org/home/jason3/230/ for how to plot implicit plots in a different color:
 
@@ -63,16 +132,38 @@ implicit_plot(x^2-y^2==1, (x,-5,5), (y,-5,5), cmap=["red"])
 I think it might be enough to give another argument to the `@`options decorator for implicit_plot: `cmap=["blue"]`
 
 
+
 ---
 
-Comment by jason created at 2010-07-27 23:59:24
+archive/issue_comments_077079.json:
+```json
+{
+    "body": "Even better, do `cmap=(\"blue\")`, since then the tuple can not be modified by other things.",
+    "created_at": "2010-07-27T23:59:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8529",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77079",
+    "user": "jason"
+}
+```
 
 Even better, do `cmap=("blue")`, since then the tuple can not be modified by other things.
 
 
+
 ---
 
-Comment by jason created at 2010-07-28 00:01:45
+archive/issue_comments_077080.json:
+```json
+{
+    "body": "Replying to [comment:6 jason]:\n> Even better, do `cmap=(\"blue\")`, since then the tuple can not be modified by other things.\n\nI mean `cmap=(\"blue\",)`, so that it's a tuple, not just a string in parentheses.",
+    "created_at": "2010-07-28T00:01:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8529",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77080",
+    "user": "jason"
+}
+```
 
 Replying to [comment:6 jason]:
 > Even better, do `cmap=("blue")`, since then the tuple can not be modified by other things.
@@ -80,9 +171,20 @@ Replying to [comment:6 jason]:
 I mean `cmap=("blue",)`, so that it's a tuple, not just a string in parentheses.
 
 
+
 ---
 
-Comment by kcrisman created at 2010-07-28 01:17:20
+archive/issue_comments_077081.json:
+```json
+{
+    "body": "Replying to [comment:5 jason]:\n> See http://sagenb.org/home/jason3/230/ for how to plot implicit plots in a different color:\n\nIf you published this, you didn't include the link.\n> \n> {{{\n> var('x,y')\n> implicit_plot(x<sup>2-y</sup>2==1, (x,-5,5), (y,-5,5), cmap=[\"red\"])\n> }}}\n\nSo annoying that color='red' wouldn't work.  What happens with that?",
+    "created_at": "2010-07-28T01:17:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8529",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77081",
+    "user": "kcrisman"
+}
+```
 
 Replying to [comment:5 jason]:
 > See http://sagenb.org/home/jason3/230/ for how to plot implicit plots in a different color:
@@ -97,9 +199,20 @@ If you published this, you didn't include the link.
 So annoying that color='red' wouldn't work.  What happens with that?
 
 
+
 ---
 
-Comment by kcrisman created at 2010-07-28 01:18:14
+archive/issue_comments_077082.json:
+```json
+{
+    "body": "Replying to [comment:4 jason]:\n> Ryan!  Welcome to Trac!  Congratulations on your patch!\n> \n\nYes!  You aren't by chance the famed little brother of Jason, are you?",
+    "created_at": "2010-07-28T01:18:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8529",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77082",
+    "user": "kcrisman"
+}
+```
 
 Replying to [comment:4 jason]:
 > Ryan!  Welcome to Trac!  Congratulations on your patch!
@@ -108,9 +221,20 @@ Replying to [comment:4 jason]:
 Yes!  You aren't by chance the famed little brother of Jason, are you?
 
 
+
 ---
 
-Comment by jason created at 2010-07-28 08:00:54
+archive/issue_comments_077083.json:
+```json
+{
+    "body": "Replying to [comment:8 kcrisman]:\n\n\n> So annoying that color='red' wouldn't work.  What happens with that?\n\nThat would take one or two more lines of code to support.  Probably add it to `@`options, and then make a cmap=[<color>] argument that is passed to contour_plot.",
+    "created_at": "2010-07-28T08:00:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8529",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77083",
+    "user": "jason"
+}
+```
 
 Replying to [comment:8 kcrisman]:
 
@@ -120,9 +244,20 @@ Replying to [comment:8 kcrisman]:
 That would take one or two more lines of code to support.  Probably add it to `@`options, and then make a cmap=[<color>] argument that is passed to contour_plot.
 
 
+
 ---
 
-Comment by ryan created at 2010-07-30 20:19:29
+archive/issue_comments_077084.json:
+```json
+{
+    "body": "ok...here's the new patch.\n\nOne can now set the color of implicit_plot using cmap or the \"new\" color option (idea curtesy of kcrisman).  Note: syntax for cmap is still the same.  Syntax for color is ` color='blue' `\n\n`@`kcrisman: Yeah, I'm Jason's little brother.  \n\nHave fun with all those colorful plots :)",
+    "created_at": "2010-07-30T20:19:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8529",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77084",
+    "user": "ryan"
+}
+```
 
 ok...here's the new patch.
 
@@ -133,18 +268,40 @@ One can now set the color of implicit_plot using cmap or the "new" color option 
 Have fun with all those colorful plots :)
 
 
+
 ---
 
-Comment by jason created at 2010-07-31 04:33:42
+archive/issue_comments_077085.json:
+```json
+{
+    "body": "This is great.  Just one more thing: there should be some sort of doctest illustrating this (the question of how to change the color of an implicit plot has come up before, and it's bound to come up again, so it'd be nice to just point them to the documentation of the function).\n\nJust take your favorite example and put it in the EXAMPLES section of the docstring of the function, following the format of the examples around it.",
+    "created_at": "2010-07-31T04:33:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8529",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77085",
+    "user": "jason"
+}
+```
 
 This is great.  Just one more thing: there should be some sort of doctest illustrating this (the question of how to change the color of an implicit plot has come up before, and it's bound to come up again, so it'd be nice to just point them to the documentation of the function).
 
 Just take your favorite example and put it in the EXAMPLES section of the docstring of the function, following the format of the examples around it.
 
 
+
 ---
 
-Comment by jason created at 2010-07-31 04:35:26
+archive/issue_comments_077086.json:
+```json
+{
+    "body": "(and it's more than nice; patches are required to have doctests if they fix a bug or add new features these days...)\n\nAfter you add a doctest, then you can run:\n\n\n```\nsage -b\n```\n\n\nto rebuild, and then \n\n\n```\nsage -t contour_plot.py\n```\n\n\nto run the tests.",
+    "created_at": "2010-07-31T04:35:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8529",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77086",
+    "user": "jason"
+}
+```
 
 (and it's more than nice; patches are required to have doctests if they fix a bug or add new features these days...)
 
@@ -167,14 +324,38 @@ sage -t contour_plot.py
 to run the tests.
 
 
+
 ---
 
-Comment by ryan created at 2010-08-01 01:21:16
+archive/issue_comments_077087.json:
+```json
+{
+    "body": "(Patch + Documentation) Change color of implicit plot.",
+    "created_at": "2010-08-01T01:21:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8529",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77087",
+    "user": "ryan"
+}
+```
 
 (Patch + Documentation) Change color of implicit plot.
 
 
+
 ---
+
+archive/issue_comments_077088.json:
+```json
+{
+    "body": "Attachment\n\nok...updated patch (with documentation).\n\nThanks jason for the reminder add the documentation.  This patch passed the doctests.",
+    "created_at": "2010-08-01T01:22:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8529",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77088",
+    "user": "ryan"
+}
+```
 
 Attachment
 
@@ -183,23 +364,56 @@ ok...updated patch (with documentation).
 Thanks jason for the reminder add the documentation.  This patch passed the doctests.
 
 
+
 ---
 
-Comment by ryan created at 2010-08-03 06:38:52
+archive/issue_comments_077089.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-08-03T06:38:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8529",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77089",
+    "user": "ryan"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by kcrisman created at 2010-08-10 16:06:44
+archive/issue_comments_077090.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-08-10T16:06:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8529",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77090",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by kcrisman created at 2010-08-10 16:06:44
+archive/issue_comments_077091.json:
+```json
+{
+    "body": "This is nice - positive review.  \n\nI fixed some minor doc issues added a really cool example I stumbled upon while testing it (picture attached), and also updated some other minor doc issues which became apparent with this - all of which are basically related to the color or are just typos.\n\nTo release manager: Apply `trac_8529-color-implicit-plot` and then `trac-8529-reviewer`.",
+    "created_at": "2010-08-10T16:06:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8529",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77091",
+    "user": "kcrisman"
+}
+```
 
 This is nice - positive review.  
 
@@ -208,53 +422,134 @@ I fixed some minor doc issues added a really cool example I stumbled upon while 
 To release manager: Apply `trac_8529-color-implicit-plot` and then `trac-8529-reviewer`.
 
 
+
 ---
 
-Comment by kcrisman created at 2010-08-10 16:07:03
+archive/issue_comments_077092.json:
+```json
+{
+    "body": "Apply after initial patch",
+    "created_at": "2010-08-10T16:07:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8529",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77092",
+    "user": "kcrisman"
+}
+```
 
 Apply after initial patch
 
 
+
 ---
+
+archive/issue_comments_077093.json:
+```json
+{
+    "body": "Attachment\n\nSuper-cool example picture of this patch working",
+    "created_at": "2010-08-10T16:07:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8529",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77093",
+    "user": "kcrisman"
+}
+```
 
 Attachment
 
 Super-cool example picture of this patch working
 
 
+
 ---
+
+archive/issue_comments_077094.json:
+```json
+{
+    "body": "Attachment\n\nThis solves #9654 too.",
+    "created_at": "2010-08-14T08:40:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8529",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77094",
+    "user": "jason"
+}
+```
 
 Attachment
 
 This solves #9654 too.
 
 
+
 ---
 
-Comment by jason created at 2010-08-14 14:47:03
+archive/issue_comments_077095.json:
+```json
+{
+    "body": "please apply my reviewer-reviewer patch on top of everything else; it simplifies the doc source a little.",
+    "created_at": "2010-08-14T14:47:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8529",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77095",
+    "user": "jason"
+}
+```
 
 please apply my reviewer-reviewer patch on top of everything else; it simplifies the doc source a little.
 
 
+
 ---
 
-Comment by kcrisman created at 2010-08-16 12:31:10
+archive/issue_comments_077096.json:
+```json
+{
+    "body": "Replying to [comment:18 jason]:\n> please apply my reviewer-reviewer patch on top of everything else; it simplifies the doc source a little.\nThanks, I didn't know about this `~` notation.",
+    "created_at": "2010-08-16T12:31:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8529",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77096",
+    "user": "kcrisman"
+}
+```
 
 Replying to [comment:18 jason]:
 > please apply my reviewer-reviewer patch on top of everything else; it simplifies the doc source a little.
 Thanks, I didn't know about this `~` notation.
 
 
+
 ---
 
-Comment by kcrisman created at 2010-08-16 12:54:28
+archive/issue_comments_077097.json:
+```json
+{
+    "body": "Just FYI, the (essentially) positively reviewed #9203 and #9076 add functions with the same `~` not being used, and won't apply properly with this one.  I recommend that those be applied first, then this one applied to see what would need to be updated, and then this one updated - since those implement actual new functionality.  Or we can split this one up into a different ticket for updating the plot doc, or add that in with #9746.",
+    "created_at": "2010-08-16T12:54:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8529",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77097",
+    "user": "kcrisman"
+}
+```
 
 Just FYI, the (essentially) positively reviewed #9203 and #9076 add functions with the same `~` not being used, and won't apply properly with this one.  I recommend that those be applied first, then this one applied to see what would need to be updated, and then this one updated - since those implement actual new functionality.  Or we can split this one up into a different ticket for updating the plot doc, or add that in with #9746.
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-18 07:37:33
+archive/issue_comments_077098.json:
+```json
+{
+    "body": "With the other tickets merged into 4.6.alpha1, I get\n\n```\n[...]\n$ hg qpush\napplying trac-8529-reviewer-reviewer.patch\npatching file sage/plot/plot.py\nHunk #1 FAILED at 6\n1 out of 3 hunks FAILED -- saving rejects to file sage/plot/plot.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac-8529-reviewer-reviewer.patch\n```\n\nThe .rej file:\n\n```diff\n--- plot.py\n+++ plot.py\n@@ -7,20 +7,20 @@\n The following graphics primitives are supported:\n \n \n--  :func:`arrow() <sage.plot.arrow.arrow>` - an arrow from a min point to a max point.\n-\n--  :func:`circle() <sage.plot.circle.circle>` - a circle with given radius\n-\n--  :func:`disk() <sage.plot.disk.disk>` - a filled disk (i.e. a sector or wedge of a circle)\n-\n--  :func:`line() <sage.plot.line.line>` - a line determined by a sequence of points (this need not\n+-  :func:`~sage.plot.arrow.arrow` - an arrow from a min point to a max point.\n+\n+-  :func:`~sage.plot.circle.circle` - a circle with given radius\n+\n+-  :func:`~sage.plot.disk.disk` - a filled disk (i.e. a sector or wedge of a circle)\n+\n+-  :func:`~sage.plot.line.line` - a line determined by a sequence of points (this need not\n    be straight!)\n \n--  :func:`point() <sage.plot.point.point>` - a point\n-\n--  :func:`text() <sage.plot.text.text>` - some text\n-\n--  :func:`polygon() <sage.plot.polygon.polygon>` - a filled polygon\n+-  :func:`~sage.plot.point.point` - a point\n+\n+-  :func:`~sage.plot.text.text` - some text\n+\n+-  :func:`~sage.plot.polygon.polygon` - a filled polygon\n \n \n The following plotting functions are supported:\n```\n\nCould someone rebase the \"reviewer-reviewer\" patch when 4.6.alpha1 is out?",
+    "created_at": "2010-09-18T07:37:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8529",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77098",
+    "user": "mpatel"
+}
+```
 
 With the other tickets merged into 4.6.alpha1, I get
 
@@ -313,36 +608,93 @@ The .rej file:
 Could someone rebase the "reviewer-reviewer" patch when 4.6.alpha1 is out?
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-18 07:37:33
+archive/issue_comments_077099.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_work.",
+    "created_at": "2010-09-18T07:37:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8529",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77099",
+    "user": "mpatel"
+}
+```
 
 Changing status from positive_review to needs_work.
 
 
+
 ---
 
-Comment by jason created at 2010-10-19 06:12:48
+archive/issue_comments_077100.json:
+```json
+{
+    "body": "apply on top of previous patches",
+    "created_at": "2010-10-19T06:12:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8529",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77100",
+    "user": "jason"
+}
+```
 
 apply on top of previous patches
 
 
+
 ---
+
+archive/issue_comments_077101.json:
+```json
+{
+    "body": "Attachment\n\nI rebased the reviewer-reviewer patch for 4.6.alpha3.  In fact, that reviewer-reviewer patch was so picky, it probably would have been okay to just ignore it anyway.",
+    "created_at": "2010-10-19T06:26:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8529",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77101",
+    "user": "jason"
+}
+```
 
 Attachment
 
 I rebased the reviewer-reviewer patch for 4.6.alpha3.  In fact, that reviewer-reviewer patch was so picky, it probably would have been okay to just ignore it anyway.
 
 
+
 ---
 
-Comment by jason created at 2010-10-19 06:26:26
+archive/issue_comments_077102.json:
+```json
+{
+    "body": "Changing status from needs_work to positive_review.",
+    "created_at": "2010-10-19T06:26:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8529",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77102",
+    "user": "jason"
+}
+```
 
 Changing status from needs_work to positive_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-11-01 10:05:49
+archive/issue_comments_077103.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-11-01T10:05:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8529",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8529#issuecomment-77103",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: fixed

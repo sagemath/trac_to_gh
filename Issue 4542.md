@@ -1,11 +1,21 @@
 # Issue 4542: polyhedra bug fix and improvments
 
-Issue created by migration from https://trac.sagemath.org/ticket/4542
-
-Original creator: mhampton
-
-Original creation time: 2008-11-17 22:48:10
-
+archive/issues_004542.json:
+```json
+{
+    "body": "Assignee: mhampton\n\nKeywords: polytopes\n\nThe attached patch fixes some big problems with defining polytopes through inequalities and linearities - defining via vertices has been tested a lot more.  I also added some new functionality for making prisms, pyramids, taking unions and intersections, and a standard 3D polytope, the small rhombicuboctahedron. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4542\n\n",
+    "created_at": "2008-11-17T22:48:10Z",
+    "labels": [
+        "geometry",
+        "major",
+        "bug"
+    ],
+    "title": "polyhedra bug fix and improvments",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4542",
+    "user": "mhampton"
+}
+```
 Assignee: mhampton
 
 Keywords: polytopes
@@ -14,37 +24,98 @@ The attached patch fixes some big problems with defining polytopes through inequ
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4542
+
+
+
+
 
 ---
 
-Comment by mhampton created at 2008-11-17 22:48:50
+archive/issue_comments_034027.json:
+```json
+{
+    "body": "patch for polyhedra.py, fixes linearity problem",
+    "created_at": "2008-11-17T22:48:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4542",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4542#issuecomment-34027",
+    "user": "mhampton"
+}
+```
 
 patch for polyhedra.py, fixes linearity problem
 
 
+
 ---
+
+archive/issue_comments_034028.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-11-18T02:44:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4542",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4542#issuecomment-34028",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by cwitty created at 2008-11-23 01:33:53
+archive/issue_comments_034029.json:
+```json
+{
+    "body": "Looks good; doctests pass.\n\nPositive review.",
+    "created_at": "2008-11-23T01:33:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4542",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4542#issuecomment-34029",
+    "user": "cwitty"
+}
+```
 
 Looks good; doctests pass.
 
 Positive review.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-23 06:43:06
+archive/issue_comments_034030.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-11-23T06:43:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4542",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4542#issuecomment-34030",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-23 06:43:06
+archive/issue_comments_034031.json:
+```json
+{
+    "body": "Merged in Sage 3.2.1.alpha0",
+    "created_at": "2008-11-23T06:43:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4542",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4542#issuecomment-34031",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.2.1.alpha0

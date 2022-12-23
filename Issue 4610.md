@@ -1,11 +1,21 @@
 # Issue 4610: "sage -tp X"L Move certain long doctests to the start of the list of files to test
 
-Issue created by migration from https://trac.sagemath.org/ticket/4610
-
-Original creator: mabshoff
-
-Original creation time: 2008-11-25 01:06:11
-
+archive/issues_004610.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nThere are various doctests in Sage that take a while, chief among those is\n\n```\nsage -t -long devel/sage/sage/crypto/mq/sr.py\n\t [630.4 s]\n```\n\nWhen running -tp with a high number of parallel threads those tests end up running at the end and making the user wait a while until that test finishes:\n\n```\nTotal time for all tests: 1287.6 seconds\n```\n\nMoving this and a couple other files to the beginning of the list to doctest in local/bin/sage-ptest would likely result in a more even utilization of the cores. This also annoys me personally since I run -tp 8 -long after each patch merged in sage.math and it would shave probably 4 minutes off the total time of each run.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4610\n\n",
+    "created_at": "2008-11-25T01:06:11Z",
+    "labels": [
+        "doctest coverage",
+        "critical",
+        "bug"
+    ],
+    "title": "\"sage -tp X\"L Move certain long doctests to the start of the list of files to test",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4610",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 There are various doctests in Sage that take a while, chief among those is
@@ -27,17 +37,43 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/4610
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-11-25 01:06:25
+archive/issue_comments_034598.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-11-25T01:06:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4610",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4610#issuecomment-34598",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-29 02:58:32
+archive/issue_comments_034599.json:
+```json
+{
+    "body": "The following doctest take more than 100 seconds on sage.math with the current 3.2.1.a2:\n\n```\ndevel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\ndevel/sage/sage/rings/qqbar.py\ndevel/sage/sage/schemes/elliptic_curves/sha_tate.py\ndevel/sage/sage/functions/piecewise.py\ndevel/sage/sage/graphs/graph_generators.py\ndevel/sage/sage/groups/perm_gps/partn_ref/refinement_binary.pyx\ndevel/sage/sage/groups/matrix_gps/matrix_group.py\ndevel/sage/sage/graphs/graph.py\ndevel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx\ndevel/sage/sage/groups/perm_gps/partn_ref/refinement_graphs.pyx\ndevel/sage/sage/combinat/root_system/weyl_characters.py\ndevel/sage/sage/combinat/root_system/weyl_characters.py\ndevel/sage/sage/calculus/calculus.py\ndevel/sage/sage/crypto/mq/sr.py\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-29T02:58:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4610",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4610#issuecomment-34599",
+    "user": "mabshoff"
+}
+```
 
 The following doctest take more than 100 seconds on sage.math with the current 3.2.1.a2:
 
@@ -64,35 +100,92 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_034600.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-12-05T04:06:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4610",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4610#issuecomment-34600",
+    "user": "gfurnish"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by gfurnish created at 2008-12-05 04:07:39
+archive/issue_comments_034601.json:
+```json
+{
+    "body": "Changing assignee from mabshoff to gfurnish.",
+    "created_at": "2008-12-05T04:07:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4610",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4610#issuecomment-34601",
+    "user": "gfurnish"
+}
+```
 
 Changing assignee from mabshoff to gfurnish.
 
 
+
 ---
 
-Comment by gfurnish created at 2008-12-05 04:07:39
+archive/issue_comments_034602.json:
+```json
+{
+    "body": "This patch autotracks timing of files so that they test in the right order.",
+    "created_at": "2008-12-05T04:07:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4610",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4610#issuecomment-34602",
+    "user": "gfurnish"
+}
+```
 
 This patch autotracks timing of files so that they test in the right order.
 
 
+
 ---
 
-Comment by gfurnish created at 2008-12-05 04:07:39
+archive/issue_comments_034603.json:
+```json
+{
+    "body": "Changing status from assigned to new.",
+    "created_at": "2008-12-05T04:07:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4610",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4610#issuecomment-34603",
+    "user": "gfurnish"
+}
+```
 
 Changing status from assigned to new.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-05 05:51:48
+archive/issue_comments_034604.json:
+```json
+{
+    "body": "Nice work, positive review. I am adding some tiny additional print statements to keep the user informed.\n\nCheers,\n\nMichael",
+    "created_at": "2008-12-05T05:51:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4610",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4610#issuecomment-34604",
+    "user": "mabshoff"
+}
+```
 
 Nice work, positive review. I am adding some tiny additional print statements to keep the user informed.
 
@@ -101,15 +194,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-05 06:36:21
+archive/issue_comments_034605.json:
+```json
+{
+    "body": "Merged in Sage 3.2.2.alpha0",
+    "created_at": "2008-12-05T06:36:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4610",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4610#issuecomment-34605",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.2.2.alpha0
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-05 06:36:21
+archive/issue_comments_034606.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-12-05T06:36:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4610",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4610#issuecomment-34606",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

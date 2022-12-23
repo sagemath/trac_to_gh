@@ -1,33 +1,82 @@
 # Issue 9091: check_file() in latex.py spits out warnings every time
 
-Issue created by migration from https://trac.sagemath.org/ticket/9091
-
-Original creator: rbeezer
-
-Original creation time: 2010-05-30 02:22:52
-
+archive/issues_009091.json:
+```json
+{
+    "body": "Assignee: jason\n\nCC:  nthiery jhpalmieri\n\nIn `sage/misc/latex.py` the `check_file()` routine has a mis-aligned block which will issue the `more_info` string whenever it is called, even if the file exists.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9091\n\n",
+    "created_at": "2010-05-30T02:22:52Z",
+    "labels": [
+        "misc",
+        "minor",
+        "bug"
+    ],
+    "title": "check_file() in latex.py spits out warnings every time",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9091",
+    "user": "rbeezer"
+}
+```
 Assignee: jason
 
 CC:  nthiery jhpalmieri
 
 In `sage/misc/latex.py` the `check_file()` routine has a mis-aligned block which will issue the `more_info` string whenever it is called, even if the file exists.
 
+Issue created by migration from https://trac.sagemath.org/ticket/9091
+
+
+
+
 
 ---
+
+archive/issue_comments_084439.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-05-30T02:26:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9091",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9091#issuecomment-84439",
+    "user": "rbeezer"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by rbeezer created at 2010-05-30 02:27:42
+archive/issue_comments_084440.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-05-30T02:27:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9091",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9091#issuecomment-84440",
+    "user": "rbeezer"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by nthiery created at 2010-06-01 09:27:12
+archive/issue_comments_084441.json:
+```json
+{
+    "body": "Hi Robert,\n\nOops, how did that one get through without breaking the tests?\n\nI am all for the change. Please add a test exhibiting the (now fixed)\nproblem to avoid later regression; then, if all test pass, you may set\na positive review on my behalf.",
+    "created_at": "2010-06-01T09:27:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9091",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9091#issuecomment-84441",
+    "user": "nthiery"
+}
+```
 
 Hi Robert,
 
@@ -38,16 +87,38 @@ problem to avoid later regression; then, if all test pass, you may set
 a positive review on my behalf.
 
 
+
 ---
 
-Comment by nthiery created at 2010-06-01 09:27:12
+archive/issue_comments_084442.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-06-01T09:27:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9091",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9091#issuecomment-84442",
+    "user": "nthiery"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by rbeezer created at 2010-06-01 17:43:04
+archive/issue_comments_084443.json:
+```json
+{
+    "body": "Replying to [comment:2 nthiery]:\n> Oops, how did that one get through without breaking the tests?\n\nI think almost everywhere it gets exercised, it is marked \"# random.\"  I did have it messing up on my doctests on the latex() routines, which is how I caught it.\n\n> Please add a test exhibiting the (now fixed)\n> problem to avoid later regression; then, if all test pass, you may set\n> a positive review on my behalf.\n\nI knew that was too easy - totally forgot to add a test against the bug.  ;-)  Will do in the next day or two.  Thanks for the review and the reminder.\n\nRob",
+    "created_at": "2010-06-01T17:43:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9091",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9091#issuecomment-84443",
+    "user": "rbeezer"
+}
+```
 
 Replying to [comment:2 nthiery]:
 > Oops, how did that one get through without breaking the tests?
@@ -63,14 +134,38 @@ I knew that was too easy - totally forgot to add a test against the bug.  ;-)  W
 Rob
 
 
+
 ---
+
+archive/issue_comments_084444.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-06-01T21:33:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9091",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9091#issuecomment-84444",
+    "user": "rbeezer"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by rbeezer created at 2010-06-01 21:37:17
+archive/issue_comments_084445.json:
+```json
+{
+    "body": "Version 2 self-contained patch contains a test with a file that should be in every latex distribution, plus a `more_info` string.  So prior to this fix, the info string (and only the info string) would have printed if someone ran the optional tests and had latex installed.\n\nAs requested by the reviewer, I've marked this \"positive review.\"\n\nRelease manager: just apply the v2 patch only.",
+    "created_at": "2010-06-01T21:37:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9091",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9091#issuecomment-84445",
+    "user": "rbeezer"
+}
+```
 
 Version 2 self-contained patch contains a test with a file that should be in every latex distribution, plus a `more_info` string.  So prior to this fix, the info string (and only the info string) would have printed if someone ran the optional tests and had latex installed.
 
@@ -79,22 +174,55 @@ As requested by the reviewer, I've marked this "positive review."
 Release manager: just apply the v2 patch only.
 
 
+
 ---
 
-Comment by rbeezer created at 2010-06-01 21:37:17
+archive/issue_comments_084446.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-06-01T21:37:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9091",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9091#issuecomment-84446",
+    "user": "rbeezer"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by rbeezer created at 2010-06-01 21:37:33
+archive/issue_comments_084447.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-06-01T21:37:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9091",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9091#issuecomment-84447",
+    "user": "rbeezer"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mhansen created at 2010-06-06 07:27:01
+archive/issue_comments_084448.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-06-06T07:27:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9091",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9091#issuecomment-84448",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

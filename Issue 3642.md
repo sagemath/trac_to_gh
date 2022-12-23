@@ -1,11 +1,21 @@
 # Issue 3642: Append R's lib directory to LD_LIBRARY_PATH in sage-env
 
-Issue created by migration from https://trac.sagemath.org/ticket/3642
-
-Original creator: mabshoff
-
-Original creation time: 2008-07-11 17:56:01
-
+archive/issues_003642.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nIf a Sage install is moved rpy does not find libR.so any more. This fix is an analog to a fix I did on OSX.\n\nPatch coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3642\n\n",
+    "created_at": "2008-07-11T17:56:01Z",
+    "labels": [
+        "build",
+        "major",
+        "bug"
+    ],
+    "title": "Append R's lib directory to LD_LIBRARY_PATH in sage-env",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3642",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 If a Sage install is moved rpy does not find libR.so any more. This fix is an analog to a fix I did on OSX.
@@ -16,14 +26,42 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/3642
+
+
+
+
 
 ---
+
+archive/issue_comments_025753.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-07-11T17:59:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3642",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3642#issuecomment-25753",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2008-07-11 18:09:20
+archive/issue_comments_025754.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-07-11T18:09:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3642",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3642#issuecomment-25754",
+    "user": "was"
+}
+```
 
 Resolution: fixed

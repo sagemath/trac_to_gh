@@ -1,11 +1,21 @@
 # Issue 6502: [with Patch, needs review] Linear Program Solver and Mixed Integer Program Solver in SAGE
 
-Issue created by migration from https://trac.sagemath.org/ticket/6502
-
-Original creator: ncohen
-
-Original creation time: 2009-07-09 16:34:48
-
+archive/issues_006502.json:
+```json
+{
+    "body": "Assignee: jkantor\n\nCC:  schilly\n\nFollowing this message on SAGE-devel :\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/9da47e06bcdfc49f\n\nThis is the class sage.numerical.mip which is meant to be the common interface between SAGE and 3 different LP solvers : GLPK, Coin-Or, and CPLEX.\n\nFor the moment, I only wrote the interface with Coin-Or, which I needed and which seems to work for simple problems. I will improve it over time, but it can already be used and I hope you will like it :-)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6502\n\n",
+    "created_at": "2009-07-09T16:34:48Z",
+    "labels": [
+        "numerical",
+        "major",
+        "enhancement"
+    ],
+    "title": "[with Patch, needs review] Linear Program Solver and Mixed Integer Program Solver in SAGE",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6502",
+    "user": "ncohen"
+}
+```
 Assignee: jkantor
 
 CC:  schilly
@@ -17,15 +27,43 @@ This is the class sage.numerical.mip which is meant to be the common interface b
 
 For the moment, I only wrote the interface with Coin-Or, which I needed and which seems to work for simple problems. I will improve it over time, but it can already be used and I hope you will like it :-)
 
+Issue created by migration from https://trac.sagemath.org/ticket/6502
+
+
+
+
 
 ---
 
-Comment by ncohen created at 2009-07-09 16:35:08
+archive/issue_comments_052883.json:
+```json
+{
+    "body": "Class sage.numerical.mip",
+    "created_at": "2009-07-09T16:35:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52883",
+    "user": "ncohen"
+}
+```
 
 Class sage.numerical.mip
 
 
+
 ---
+
+archive/issue_comments_052884.json:
+```json
+{
+    "body": "Attachment\n\nIf you want to try this code, you will find a short example there :\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/7c13a0a4ba3d87b6",
+    "created_at": "2009-07-09T16:43:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52884",
+    "user": "ncohen"
+}
+```
 
 Attachment
 
@@ -34,9 +72,20 @@ If you want to try this code, you will find a short example there :
 http://groups.google.com/group/sage-devel/browse_thread/thread/7c13a0a4ba3d87b6
 
 
+
 ---
 
-Comment by carlohamalainen created at 2009-07-10 11:14:54
+archive/issue_comments_052885.json:
+```json
+{
+    "body": "Compiles and installs successfully on Sage 4.0.1 on Ubuntu x86.\n\nThe methods in MIP should have doctests/docstrings. e.g. I should be able to type\n\n\n```\nsage: MIP.addBound?\n```\n\n\nand see a nice example for how to add a bound.",
+    "created_at": "2009-07-10T11:14:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52885",
+    "user": "carlohamalainen"
+}
+```
 
 Compiles and installs successfully on Sage 4.0.1 on Ubuntu x86.
 
@@ -51,9 +100,20 @@ sage: MIP.addBound?
 and see a nice example for how to add a bound.
 
 
+
 ---
 
-Comment by wdj created at 2009-07-10 11:49:42
+archive/issue_comments_052886.json:
+```json
+{
+    "body": "I agree, this needs docstrings.\n\nInstallation of the spkg went fine on a macbook running 10.4.11. The patch seemed to apply okay. sage -testall on 4.1.rc1 passed except for failures in parallel/decorate (DeprecationWarning: os.popen2 is deprecated. ) and interfaces/sage0 (which could not be replicated).\n\nThe examples given in the sage-devel email (below) seemed to work okay, though I am not an expert on this stuff.\n\n\n```\ng=graphs.RandomGNP(10,.5)\n\np=MIP(max=True)\n\nobj={}\nfor i in g.vertices():\n   obj[\"V\"+str(i)]=1\n   p.setinteger(\"V\"+str(i))\np.setobj(Constraint(obj,obj=True))\nfor (a,b,c) in g.edges():\n   obj={}\n   obj[\"V\"+str(a)]=1\n   obj[\"V\"+str(b)]=1\n   p.addconstraint(Constraint(obj,lt=1))\np.solve()\n```\n",
+    "created_at": "2009-07-10T11:49:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52886",
+    "user": "wdj"
+}
+```
 
 I agree, this needs docstrings.
 
@@ -82,9 +142,20 @@ p.solve()
 
 
 
+
 ---
 
-Comment by ncohen created at 2009-07-23 14:22:23
+archive/issue_comments_052887.json:
+```json
+{
+    "body": "- solves LP using GLPK ( see http://trac.sagemath.org/sage_trac/ticket/6602 )\n- the interface with the COIN solver has been moved to a SPKG whose link will be added here\n- Doctstrings have been added\n- small modifications everywhere\n\nPatch numerical.mip-2.patch applies on top of 2428.patch\n\nI hope you will like it !! I spent a lot of time on this LP for SAGE ! ;-)",
+    "created_at": "2009-07-23T14:22:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52887",
+    "user": "ncohen"
+}
+```
 
 - solves LP using GLPK ( see http://trac.sagemath.org/sage_trac/ticket/6602 )
 - the interface with the COIN solver has been moved to a SPKG whose link will be added here
@@ -96,28 +167,76 @@ Patch numerical.mip-2.patch applies on top of 2428.patch
 I hope you will like it !! I spent a lot of time on this LP for SAGE ! ;-)
 
 
+
 ---
+
+archive/issue_comments_052888.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-07-23T14:22:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52888",
+    "user": "ncohen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by ncohen created at 2009-07-23 14:56:20
+archive/issue_comments_052889.json:
+```json
+{
+    "body": "A small mistake in the detection of COIN -- fixed ! ;-)",
+    "created_at": "2009-07-23T14:56:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52889",
+    "user": "ncohen"
+}
+```
 
 A small mistake in the detection of COIN -- fixed ! ;-)
 
 
+
 ---
+
+archive/issue_comments_052890.json:
+```json
+{
+    "body": "Attachment\n\nOnce this ticket has positive review, the SPKG at #6602 should also be merged in the standard packages repository. So in a sense, that SPKG is dependent on this ticket.",
+    "created_at": "2009-07-26T02:16:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52890",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
 Once this ticket has positive review, the SPKG at #6602 should also be merged in the standard packages repository. So in a sense, that SPKG is dependent on this ticket.
 
 
+
 ---
 
-Comment by wdj created at 2009-07-26 23:01:45
+archive/issue_comments_052891.json:
+```json
+{
+    "body": "I got this problem:\n\n\n```\nwdj@hera:~/sagefiles/sage-4.1.1.alpha0$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: OR2\nsage: hg_sage.apply(\"/home/wdj/sagefiles/12428.patch\")\ncd \"/home/wdj/sagefiles/sage-4.1.1.alpha0/devel/sage\" && hg status\n/home/wdj/sagefiles/sage-4.1.1.alpha0/local/lib/python2.6/site-packages/sage/misc/hg.py:240: DeprecationWarning: os.popen3 isdeprecated.  Use the subprocess module.\n  x = os.popen3(s)\ncd \"/home/wdj/sagefiles/sage-4.1.1.alpha0/devel/sage\" && hg status\ncd \"/home/wdj/sagefiles/sage-4.1.1.alpha0/devel/sage\" && hg import   \"/home/wdj/sagefiles/12428.patch\"\napplying /home/wdj/sagefiles/12428.patch\npatching file module_list.py\nHunk #1 succeeded at 240 with fuzz 2 (offset 13 lines).\npatching file sage/numerical/all.py\nHunk #1 FAILED at 0\n1 out of 1 hunks FAILED -- saving rejects to file sage/numerical/all.py.rej\nabort: patch failed to apply\n```\n\nAny suggestions?",
+    "created_at": "2009-07-26T23:01:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52891",
+    "user": "wdj"
+}
+```
 
 I got this problem:
 
@@ -145,9 +264,20 @@ abort: patch failed to apply
 Any suggestions?
 
 
+
 ---
 
-Comment by mvngu created at 2009-07-26 23:06:23
+archive/issue_comments_052892.json:
+```json
+{
+    "body": "Replying to [comment:10 wdj]:\n> I got this problem:\n<SNIP>\n> Any suggestions?\nI suggest we wait until 4.1.1 is out.",
+    "created_at": "2009-07-26T23:06:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52892",
+    "user": "mvngu"
+}
+```
 
 Replying to [comment:10 wdj]:
 > I got this problem:
@@ -156,14 +286,38 @@ Replying to [comment:10 wdj]:
 I suggest we wait until 4.1.1 is out.
 
 
+
 ---
 
-Comment by ncohen created at 2009-07-30 22:50:02
+archive/issue_comments_052893.json:
+```json
+{
+    "body": "New patch including all the previously announced features and probably a bit more. It encompasses the previous patches, so you need only apply this one and forget about the others ! ;-)",
+    "created_at": "2009-07-30T22:50:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52893",
+    "user": "ncohen"
+}
+```
 
 New patch including all the previously announced features and probably a bit more. It encompasses the previous patches, so you need only apply this one and forget about the others ! ;-)
 
 
+
 ---
+
+archive/issue_comments_052894.json:
+```json
+{
+    "body": "Attachment\n\nThis was applied to 4.1.1.a0 and the following test failed:\n\n\n```\nzeus:~/sagefiles/sage-4.1.1.alpha0 davidjoyner$ ./sage -t  \"devel/sage/sage/numerical/mip.pyx\"\nsage -t  \"devel/sage/sage/numerical/mip.pyx\"                \nsh: line 1: kpsewhich: command not found\nsh: line 1: kpsewhich: command not found\n**********************************************************************\nFile \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/devel/sage/sage/numerical/mip.pyx\", line 37:\n    sage: p=MIP(sense=1)\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[3]>\", line 1, in <module>\n        p=MIP(sense=Integer(1))###line 37:\n    sage: p=MIP(sense=1)\n    NameError: name 'MIP' is not defined\n**********************************************************************\nFile \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/devel/sage/sage/numerical/mip.pyx\", line 39:\n    sage: for i in g.vertices():\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[5]>\", line 1\n         for i in g.vertices():###line 39:\n    sage: for i in g.vertices():\n                                                                             \n    ^\n     SyntaxError: unexpected EOF while parsing\n**********************************************************************\nFile \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/devel/sage/sage/numerical/mip.pyx\", line 40:\n    sage:     obj[i]=1\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[6]>\", line 1\n         obj[i]=Integer(1)###line 40:\n    sage:     obj[i]=1\n        ^\n     IndentationError: unexpected indent\n**********************************************************************\nFile \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/devel/sage/sage/numerical/mip.pyx\", line 41:\n    sage:     p.setinteger(i)\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[7]>\", line 1\n         p.setinteger(i)###line 41:\n    sage:     p.setinteger(i)\n        ^\n     IndentationError: unexpected indent\n**********************************************************************\nFile \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/devel/sage/sage/numerical/mip.pyx\", line 42:\n    sage: p.setobj(obj)\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[8]>\", line 1, in <module>\n        p.setobj(obj)###line 42:\n    sage: p.setobj(obj)\n    NameError: name 'p' is not defined\n**********************************************************************\nFile \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/devel/sage/sage/numerical/mip.pyx\", line 43:\n    sage: for (a,b,c) in g.edges():\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[9]>\", line 1\n         for (a,b,c) in g.edges():###line 43:\n    sage: for (a,b,c) in g.edges():\n                                                                                   \n    ^\n     SyntaxError: unexpected EOF while parsing\n**********************************************************************\nFile \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/devel/sage/sage/numerical/mip.pyx\", line 44:\n    sage:     cons={}\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[10]>\", line 1\n         cons={}###line 44:\n    sage:     cons={}\n        ^\n     IndentationError: unexpected indent\n**********************************************************************\nFile \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/devel/sage/sage/numerical/mip.pyx\", line 45:\n    sage:     cons[a]=1\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[11]>\", line 1\n         cons[a]=Integer(1)###line 45:\n    sage:     cons[a]=1\n        ^\n     IndentationError: unexpected indent\n**********************************************************************\nFile \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/devel/sage/sage/numerical/mip.pyx\", line 46:\n    sage:     cons[b]=1\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[12]>\", line 1\n         cons[b]=Integer(1)###line 46:\n    sage:     cons[b]=1\n        ^\n     IndentationError: unexpected indent\n**********************************************************************\nFile \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/devel/sage/sage/numerical/mip.pyx\", line 47:\n    sage:     p.addconstraint(cons,max=1)\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[13]>\", line 1\n         p.addconstraint(cons,max=Integer(1))###line 47:\n    sage:     p.addconstraint(cons,max=1)\n        ^\n     IndentationError: unexpected indent\n**********************************************************************\nFile \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/devel/sage/sage/numerical/mip.pyx\", line 48:\n    sage: p.solve()\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[14]>\", line 1, in <module>\n        p.solve()###line 48:\n    sage: p.solve()\n    NameError: name 'p' is not defined\n**********************************************************************\n1 items had failures:\n  11 of  15 in __main__.example_0\n***Test Failed*** 11 failures.\nFor whitespace errors, see the file /Users/davidjoyner/sagefiles/sage-4.1.1.alpha0/tmp/.doctest_mip.py\n         [4.9 s]\nexit code: 1024\n \n```\n\n\nDoes this make sense?",
+    "created_at": "2009-07-31T01:28:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52894",
+    "user": "wdj"
+}
+```
 
 Attachment
 
@@ -364,30 +518,76 @@ exit code: 1024
 Does this make sense?
 
 
+
 ---
 
-Comment by ncohen created at 2009-07-31 06:19:57
+archive/issue_comments_052895.json:
+```json
+{
+    "body": "It seems Sage does not like something dealing with the indentation in the doctest of the class, as the example works when I am copying it manually... If you know the standard ( if there are any ) in this situation, please tell me because I am trying to fix this and changing the indentation ten thousand times hoping it will work is not my preferred way of debugging ^^;",
+    "created_at": "2009-07-31T06:19:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52895",
+    "user": "ncohen"
+}
+```
 
 It seems Sage does not like something dealing with the indentation in the doctest of the class, as the example works when I am copying it manually... If you know the standard ( if there are any ) in this situation, please tell me because I am trying to fix this and changing the indentation ten thousand times hoping it will work is not my preferred way of debugging ^^;
 
 
+
 ---
 
-Comment by ncohen created at 2009-07-31 06:52:04
+archive/issue_comments_052896.json:
+```json
+{
+    "body": "Fixed in patch MIP-2.patch\n\nAs a sidenote, this ranks as the least interesting debugging I ever did, and I just achieved it because there was another example of a loop in a dosctring in Sage. Thanks to the brave developper of sage.combinat.dlx who conquered the docstrings ! ;-)",
+    "created_at": "2009-07-31T06:52:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52896",
+    "user": "ncohen"
+}
+```
 
 Fixed in patch MIP-2.patch
 
 As a sidenote, this ranks as the least interesting debugging I ever did, and I just achieved it because there was another example of a loop in a dosctring in Sage. Thanks to the brave developper of sage.combinat.dlx who conquered the docstrings ! ;-)
 
 
+
 ---
+
+archive/issue_comments_052897.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-07-31T06:52:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52897",
+    "user": "ncohen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by wdj created at 2009-07-31 09:49:05
+archive/issue_comments_052898.json:
+```json
+{
+    "body": "I usually debug by just running sage -t with the file open in an editor until it passes:-) \n\nAm I to apply MIP1 then MIP2? If so, there was a problem compiling (amd64, ubuntu 9.04):\n\n\n```\nwdj@hera:~/sagefiles/sage-4.1.1.alpha1$ ./sage -b                                                             \n\n----------------------------------------------------------\nsage: Building and installing modified Sage library files.\n\n\nInstalling c_lib\nscons: `install' is up to date.\nUpdating Cython code....       \nBuilding modified file sage/numerical/mip.pyx.\npython `which cython` --embed-positions --incref-local-binop -I/home/wdj/sagefiles/sage-4.1.1.alpha1/devel/sage-OR -o sage/numerical/mip.cpp sage/numerical/mip.pyx                                                           \nsage/numerical/mip.pyx --> /home/wdj/sagefiles/sage-4.1.1.alpha1/local//lib/python/site-packages//sage/numerical/mip.pyx                                                                                                      \nTime to execute 1 commands: 0.891119003296 seconds                                                             \nFinished compiling Cython code (time = 1.45167207718 seconds)                                                  \nrunning install                                                                                                \nrunning build                                                                                                  \nrunning build_py                                                                                               \ncopying sage/numerical/all.py -> build/lib.linux-x86_64-2.6/sage/numerical                                     \nrunning build_ext                                                                                              \nbuilding 'sage.numerical.mip' extension                                                                        \ngcc -fno-strict-aliasing -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -Ilocal/include/ -I/home/wdj/sagefiles/sage-4.1.1.alpha1/local//include -I/home/wdj/sagefiles/sage-4.1.1.alpha1/local//include/csage -I/home/wdj/sagefiles/sage-4.1.1.alpha1/devel//sage/sage/ext -I/home/wdj/sagefiles/sage-4.1.1.alpha1/local/include/python2.6 -c sage/numerical/mip.cpp -o build/temp.linux-x86_64-2.6/sage/numerical/mip.o -w                         \ncc1plus: warning: command line option \"-Wstrict-prototypes\" is valid for Ada/C/ObjC but not for C++            \nsage/numerical/mip.cpp:132:38: error: ../../local/include/glpk.h: No such file or directory                    \nsage/numerical/mip.cpp: In function \u2018PyObject* __pyx_pf_4sage_9numerical_3mip_3MIP_solveGLPK(PyObject*, PyObject*, PyObject*)\u2019:                                                                                               \nsage/numerical/mip.cpp:2777: error: \u2018glp_prob\u2019 was not declared in this scope                                  \nsage/numerical/mip.cpp:2777: error: \u2018__pyx_v_lp\u2019 was not declared in this scope                                \nsage/numerical/mip.cpp:2787: error: \u2018glp_iocp\u2019 was not declared in this scope                                  \nsage/numerical/mip.cpp:2787: error: \u2018__pyx_v_iocp\u2019 was not declared in this scope                              \nsage/numerical/mip.cpp:2985: error: \u2018glp_create_prob\u2019 was not declared in this scope                           \nsage/numerical/mip.cpp:2998: error: \u2018glp_add_rows\u2019 was not declared in this scope                              \nsage/numerical/mip.cpp:3011: error: \u2018glp_add_cols\u2019 was not declared in this scope                              \nsage/numerical/mip.cpp:3098: error: \u2018glp_set_obj_coef\u2019 was not declared in this scope                          \nsage/numerical/mip.cpp:3241: error: \u2018GLP_DB\u2019 was not declared in this scope                                    \nsage/numerical/mip.cpp:3241: error: \u2018glp_set_col_bnds\u2019 was not declared in this scope                          \nsage/numerical/mip.cpp:3330: error: \u2018GLP_UP\u2019 was not declared in this scope                                    \nsage/numerical/mip.cpp:3330: error: \u2018glp_set_col_bnds\u2019 was not declared in this scope                          \nsage/numerical/mip.cpp:3419: error: \u2018GLP_LO\u2019 was not declared in this scope                                    \nsage/numerical/mip.cpp:3419: error: \u2018glp_set_col_bnds\u2019 was not declared in this scope                          \nsage/numerical/mip.cpp:3450: error: \u2018GLP_FR\u2019 was not declared in this scope                                    \nsage/numerical/mip.cpp:3450: error: \u2018glp_set_col_bnds\u2019 was not declared in this scope                          \nsage/numerical/mip.cpp:3764: error: \u2018GLP_FX\u2019 was not declared in this scope                                    \nsage/numerical/mip.cpp:3764: error: \u2018glp_set_row_bnds\u2019 was not declared in this scope                          \nsage/numerical/mip.cpp:3791: error: \u2018GLP_DB\u2019 was not declared in this scope                                    \nsage/numerical/mip.cpp:3791: error: \u2018glp_set_row_bnds\u2019 was not declared in this scope                          \nsage/numerical/mip.cpp:3846: error: \u2018GLP_UP\u2019 was not declared in this scope                                    \nsage/numerical/mip.cpp:3846: error: \u2018glp_set_row_bnds\u2019 was not declared in this scope                          \nsage/numerical/mip.cpp:3899: error: \u2018GLP_LO\u2019 was not declared in this scope                                    \nsage/numerical/mip.cpp:3899: error: \u2018glp_set_row_bnds\u2019 was not declared in this scope                          \nsage/numerical/mip.cpp:3912: error: \u2018GLP_FR\u2019 was not declared in this scope                                    \nsage/numerical/mip.cpp:3912: error: \u2018glp_set_row_bnds\u2019 was not declared in this scope                          \nsage/numerical/mip.cpp:3957: error: \u2018GLP_MIN\u2019 was not declared in this scope                                   \nsage/numerical/mip.cpp:3957: error: \u2018glp_set_obj_dir\u2019 was not declared in this scope                           \nsage/numerical/mip.cpp:3969: error: \u2018GLP_MAX\u2019 was not declared in this scope                                   \nsage/numerical/mip.cpp:3969: error: \u2018glp_set_obj_dir\u2019 was not declared in this scope                           \nsage/numerical/mip.cpp:4059: error: \u2018GLP_IV\u2019 was not declared in this scope                                    \nsage/numerical/mip.cpp:4059: error: \u2018glp_set_col_kind\u2019 was not declared in this scope                          \nsage/numerical/mip.cpp:4108: error: \u2018GLP_BV\u2019 was not declared in this scope                                    \nsage/numerical/mip.cpp:4108: error: \u2018glp_set_col_kind\u2019 was not declared in this scope                          \nsage/numerical/mip.cpp:4136: error: \u2018GLP_CV\u2019 was not declared in this scope\nsage/numerical/mip.cpp:4136: error: \u2018glp_set_col_kind\u2019 was not declared in this scope\nsage/numerical/mip.cpp:4156: error: \u2018glp_load_matrix\u2019 was not declared in this scope\nsage/numerical/mip.cpp:4165: error: expected type-specifier before \u2018glp_iocp\u2019\nsage/numerical/mip.cpp:4165: error: expected `;' before \u2018glp_iocp\u2019\nsage/numerical/mip.cpp:4174: error: \u2018glp_init_iocp\u2019 was not declared in this scope\nsage/numerical/mip.cpp:4183: error: \u2018GLP_ON\u2019 was not declared in this scope\nsage/numerical/mip.cpp:4205: error: \u2018GLP_MSG_OFF\u2019 was not declared in this scope\nsage/numerical/mip.cpp:4229: error: \u2018GLP_MSG_ERR\u2019 was not declared in this scope\nsage/numerical/mip.cpp:4253: error: \u2018GLP_MSG_ON\u2019 was not declared in this scope\nsage/numerical/mip.cpp:4265: error: \u2018GLP_MSG_ALL\u2019 was not declared in this scope\nsage/numerical/mip.cpp:4276: error: \u2018glp_intopt\u2019 was not declared in this scope\nsage/numerical/mip.cpp:4285: error: \u2018glp_mip_obj_val\u2019 was not declared in this scope\nsage/numerical/mip.cpp:4314: error: \u2018glp_delete_prob\u2019 was not declared in this scope\nsage/numerical/mip.cpp:4408: error: \u2018glp_mip_col_val\u2019 was not declared in this scope\nsage/numerical/mip.cpp:4422: error: \u2018glp_delete_prob\u2019 was not declared in this scope\nerror: command 'gcc' failed with exit status 1\nsage: There was an error installing modified sage library code.\n\n\nreal    0m3.367s\nuser    0m2.880s\nsys     0m0.428s\n```\n\n\nDo you know what this means?",
+    "created_at": "2009-07-31T09:49:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52898",
+    "user": "wdj"
+}
+```
 
 I usually debug by just running sage -t with the file open in an editor until it passes:-) 
 
@@ -482,9 +682,20 @@ sys     0m0.428s
 Do you know what this means?
 
 
+
 ---
 
-Comment by ncohen created at 2009-07-31 09:54:24
+archive/issue_comments_052899.json:
+```json
+{
+    "body": "Yes, this time I know !!! ;-)\n\nThe first error is : sage/numerical/mip.cpp:132:38: error: ../../local/include/glpk.h: No such file or directory\n\nAnd this is because you did not install GLPK ( http://trac.sagemath.org/sage_trac/ticket/6602 ) which is to be a standanrd package. And MIP-2 applies on top of MIP-1 !\n\nSorry for these details I may have forgotten ! ;-)",
+    "created_at": "2009-07-31T09:54:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52899",
+    "user": "ncohen"
+}
+```
 
 Yes, this time I know !!! ;-)
 
@@ -495,9 +706,20 @@ And this is because you did not install GLPK ( http://trac.sagemath.org/sage_tra
 Sorry for these details I may have forgotten ! ;-)
 
 
+
 ---
 
-Comment by wdj created at 2009-07-31 13:07:24
+archive/issue_comments_052900.json:
+```json
+{
+    "body": "These patches applies to an amd64 ubuntu 9.04 machine passes sage -testall (except for the already reported errors for sage 4.1.1.a1). \n\nThings are improving but there are some remaining issues:\n\n1. There is a possible typo in the docstring for MIP:\n\n\n```\n        For example linear function 3 * x - 2 * y + 3 * z\n        where x,y, and z are objects is represented as { x : 3, y : -2, z : -3 }\n```\n\n\nmight have a sign error and should I think be \n\n\n```\n        For example linear function 3 * x - 2 * y + 3 * z\n        where x,y, and z are objects is represented as { x : 3, y : -2, z : 3 }\n```\n\n\n2. There is no example in the docstring for MIP.solve. There should be at least one \n(fairly simple and well-commented) and preferably more. Please check other \ndocstrings for missing examples. They are *required* as part of the code \ninclusion process. Please read:\nhttp://www.sagemath.org/doc/developer/conventions.html#documentation-strings",
+    "created_at": "2009-07-31T13:07:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52900",
+    "user": "wdj"
+}
+```
 
 These patches applies to an amd64 ubuntu 9.04 machine passes sage -testall (except for the already reported errors for sage 4.1.1.a1). 
 
@@ -528,25 +750,60 @@ inclusion process. Please read:
 http://www.sagemath.org/doc/developer/conventions.html#documentation-strings
 
 
+
 ---
 
-Comment by ncohen created at 2009-07-31 16:18:34
+archive/issue_comments_052901.json:
+```json
+{
+    "body": "You were right about the typo. And I hope you will find in MIP-3.patch all the docstrings you need ;-)",
+    "created_at": "2009-07-31T16:18:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52901",
+    "user": "ncohen"
+}
+```
 
 You were right about the typo. And I hope you will find in MIP-3.patch all the docstrings you need ;-)
 
 
+
 ---
+
+archive/issue_comments_052902.json:
+```json
+{
+    "body": "Attachment\n\nReplying to [comment:9 mvngu]:\n> Once this ticket has positive review, the SPKG at #6602 should also be merged in the standard packages repository. \n**Correction:** Once this ticket has positive review, the SPKG at #6602 should also be merged in the **optional** packages repository.",
+    "created_at": "2009-07-31T23:39:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52902",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
 Replying to [comment:9 mvngu]:
 > Once this ticket has positive review, the SPKG at #6602 should also be merged in the standard packages repository. 
-*Correction:* Once this ticket has positive review, the SPKG at #6602 should also be merged in the *optional* packages repository.
+**Correction:** Once this ticket has positive review, the SPKG at #6602 should also be merged in the **optional** packages repository.
+
 
 
 ---
 
-Comment by wdj created at 2009-08-01 03:07:00
+archive/issue_comments_052903.json:
+```json
+{
+    "body": "The 3 patches applied fione to 4.1.1.a1. But on an ubuntu 9.04 machine, I got the following failures:\n\n\n```\nwdj@hera:~/sagefiles/sage-4.1.1.alpha1$ ./sage -t  \"devel/sage/sage/numerical/mip.pyx\"            \nsage -t  \"devel/sage/sage/numerical/mip.pyx\"                                                      \n**********************************************************************                            \nFile \"/home/wdj/sagefiles/sage-4.1.1.alpha1/devel/sage/sage/numerical/mip.pyx\", line 280:         \n    sage: p.show()                                                                                \nException raised:                                                                                 \n    Traceback (most recent call last):                                                            \n      File \"/home/wdj/sagefiles/sage-4.1.1.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)                                   \n      File \"/home/wdj/sagefiles/sage-4.1.1.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)                  \n      File \"/home/wdj/sagefiles/sage-4.1.1.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs                                                                   \n      File \"<doctest __main__.example_10[5]>\", line 1, in <module>                                       \n        p.show()###line 280:                                                                             \n    sage: p.show()                                                                                       \n      File \"mip.pyx\", line 130, in sage.numerical.mip.MIP.show (sage/numerical/mip.cpp:1335)             \n      File \"mip.pyx\", line 108, in sage.numerical.mip.MIP.export (sage/numerical/mip.cpp:1047)           \n      File \"mip.pyx\", line 604, in sage.numerical.mip.Constraint.__init__ (sage/numerical/mip.cpp:5791)  \n    AttributeError: 'NoneType' object has no attribute 'copy'                                            \n**********************************************************************                                   \nFile \"/home/wdj/sagefiles/sage-4.1.1.alpha1/devel/sage/sage/numerical/mip.pyx\", line 303:                \n    sage: p.addbound(\"x\",min=3,max=8)                                                                    \nException raised:                                                                                        \n    Traceback (most recent call last):                                                                   \n      File \"/home/wdj/sagefiles/sage-4.1.1.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test   \n        self.run_one_example(test, example, filename, compileflags)                                      \n      File \"/home/wdj/sagefiles/sage-4.1.1.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example \n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)                   \n      File \"/home/wdj/sagefiles/sage-4.1.1.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs                                                                   \n      File \"<doctest __main__.example_11[4]>\", line 1, in <module>                                       \n        p.addbound(\"x\",min=Integer(3),max=Integer(8))###line 303:                                        \n    sage: p.addbound(\"x\",min=3,max=8)                                                                    \n    AttributeError: MIP instance has no attribute 'addbound'                                             \n**********************************************************************                                   \nFile \"/home/wdj/sagefiles/sage-4.1.1.alpha1/devel/sage/sage/numerical/mip.pyx\", line 304:                \n    sage: p.show()                                                                                       \nException raised:                                                                                        \n    Traceback (most recent call last):                                                                   \n      File \"/home/wdj/sagefiles/sage-4.1.1.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test   \n        self.run_one_example(test, example, filename, compileflags)                                      \n      File \"/home/wdj/sagefiles/sage-4.1.1.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example \n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)                   \n      File \"/home/wdj/sagefiles/sage-4.1.1.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs                                                                   \n      File \"<doctest __main__.example_11[5]>\", line 1, in <module>                                       \n        p.show()###line 304:                                                                             \n    sage: p.show()                                                                                       \n      File \"mip.pyx\", line 130, in sage.numerical.mip.MIP.show (sage/numerical/mip.cpp:1335)             \n      File \"mip.pyx\", line 108, in sage.numerical.mip.MIP.export (sage/numerical/mip.cpp:1047)           \n      File \"mip.pyx\", line 604, in sage.numerical.mip.Constraint.__init__ (sage/numerical/mip.cpp:5791)  \n    AttributeError: 'NoneType' object has no attribute 'copy'                                            \n**********************************************************************                                   \nFile \"/home/wdj/sagefiles/sage-4.1.1.alpha1/devel/sage/sage/numerical/mip.pyx\", line 372:                \n    sage: p.solve()                                                                                      \nExpected:                                                                                                \n    [4.0, {'x': 2.0, 'y': 0.0}]                                                                          \nGot:                                                                                                     \n    [2.6666666666666665, {'y': 1.3333333333333333, 'x': 0.0}]                                            \n**********************************************************************                                   \nFile \"/home/wdj/sagefiles/sage-4.1.1.alpha1/devel/sage/sage/numerical/mip.pyx\", line 374:                \n    sage: p.solve(objective_only=True)                                                                   \nExpected:                                                                                                \n    4.0                                                                                                  \nGot:                                                                                                     \n    2.6666666666666665                                                                                   \n**********************************************************************                                   \nFile \"/home/wdj/sagefiles/sage-4.1.1.alpha1/devel/sage/sage/numerical/mip.pyx\", line 102:                \n    sage: print p.export(format=\"text\")                                                                  \nException raised:                                                                                        \n    Traceback (most recent call last):                                                                   \n      File \"/home/wdj/sagefiles/sage-4.1.1.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test   \n        self.run_one_example(test, example, filename, compileflags)                                      \n      File \"/home/wdj/sagefiles/sage-4.1.1.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example \n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)                   \n      File \"/home/wdj/sagefiles/sage-4.1.1.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs                                                                   \n      File \"<doctest __main__.example_3[4]>\", line 1, in <module>                                        \n        print p.export(format=\"text\")###line 102:                                                        \n    sage: print p.export(format=\"text\")                                                                  \n      File \"mip.pyx\", line 108, in sage.numerical.mip.MIP.export (sage/numerical/mip.cpp:1047)           \n      File \"mip.pyx\", line 604, in sage.numerical.mip.Constraint.__init__ (sage/numerical/mip.cpp:5791)  \n    AttributeError: 'NoneType' object has no attribute 'copy'                                            \n**********************************************************************                                   \nFile \"/home/wdj/sagefiles/sage-4.1.1.alpha1/devel/sage/sage/numerical/mip.pyx\", line 126:                \n    sage: p.show()                                                                                       \nException raised:                                                                                        \n    Traceback (most recent call last):                                                                   \n      File \"/home/wdj/sagefiles/sage-4.1.1.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test   \n        self.run_one_example(test, example, filename, compileflags)                                      \n      File \"/home/wdj/sagefiles/sage-4.1.1.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example \n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)                   \n      File \"/home/wdj/sagefiles/sage-4.1.1.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs                                                                   \n      File \"<doctest __main__.example_4[5]>\", line 1, in <module>                                        \n        p.show()###line 126:                                                                             \n    sage: p.show()                                                                                       \n      File \"mip.pyx\", line 130, in sage.numerical.mip.MIP.show (sage/numerical/mip.cpp:1335)             \n      File \"mip.pyx\", line 108, in sage.numerical.mip.MIP.export (sage/numerical/mip.cpp:1047)           \n      File \"mip.pyx\", line 604, in sage.numerical.mip.Constraint.__init__ (sage/numerical/mip.cpp:5791)  \n    AttributeError: 'NoneType' object has no attribute 'copy'                                            \n**********************************************************************                                   \nFile \"/home/wdj/sagefiles/sage-4.1.1.alpha1/devel/sage/sage/numerical/mip.pyx\", line 159:                \n    sage: p.solve()                                                                                      \nExpected:                                                                                                \n    [4.0, {'x': 2.0, 'y': 0.0}]                                                                          \nGot:                                                                                                     \n    [2.6666666666666665, {'y': 1.3333333333333333, 'x': 0.0}]                                            \n**********************************************************************                                   \nFile \"/home/wdj/sagefiles/sage-4.1.1.alpha1/devel/sage/sage/numerical/mip.pyx\", line 195:                \n    sage: p.solve()                                                                                      \nExpected:                                                                                                \n    [4.0, {'x': 2.0, 'y': 0.0}]                                                                          \nGot:                                                                                                     \n    [2.6666666666666665, {'y': 1.3333333333333333, 'x': 0.0}]                                            \n**********************************************************************                                   \nFile \"/home/wdj/sagefiles/sage-4.1.1.alpha1/devel/sage/sage/numerical/mip.pyx\", line 214:                \n    sage: p.show()                                                                                       \nException raised:                                                                                        \n    Traceback (most recent call last):                                                                   \n      File \"/home/wdj/sagefiles/sage-4.1.1.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test   \n        self.run_one_example(test, example, filename, compileflags)                                      \n      File \"/home/wdj/sagefiles/sage-4.1.1.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example \n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)                   \n      File \"/home/wdj/sagefiles/sage-4.1.1.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs                                                                   \n      File \"<doctest __main__.example_7[5]>\", line 1, in <module>                                        \n        p.show()###line 214:                                                                             \n    sage: p.show()                                                                                       \n      File \"mip.pyx\", line 130, in sage.numerical.mip.MIP.show (sage/numerical/mip.cpp:1335)             \n      File \"mip.pyx\", line 108, in sage.numerical.mip.MIP.export (sage/numerical/mip.cpp:1047)           \n      File \"mip.pyx\", line 604, in sage.numerical.mip.Constraint.__init__ (sage/numerical/mip.cpp:5791)  \n    AttributeError: 'NoneType' object has no attribute 'copy'                                            \n**********************************************************************                                   \nFile \"/home/wdj/sagefiles/sage-4.1.1.alpha1/devel/sage/sage/numerical/mip.pyx\", line 231:                \n    sage: p.show()                                                                                       \nException raised:                                                                                        \n    Traceback (most recent call last):                                                                   \n      File \"/home/wdj/sagefiles/sage-4.1.1.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test   \n        self.run_one_example(test, example, filename, compileflags)                                      \n      File \"/home/wdj/sagefiles/sage-4.1.1.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example \n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)                   \n      File \"/home/wdj/sagefiles/sage-4.1.1.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs                                                                   \n      File \"<doctest __main__.example_8[5]>\", line 1, in <module>                                        \n        p.show()###line 231:                                                                             \n    sage: p.show()                                                                                       \n      File \"mip.pyx\", line 130, in sage.numerical.mip.MIP.show (sage/numerical/mip.cpp:1335)             \n      File \"mip.pyx\", line 108, in sage.numerical.mip.MIP.export (sage/numerical/mip.cpp:1047)           \n      File \"mip.pyx\", line 604, in sage.numerical.mip.Constraint.__init__ (sage/numerical/mip.cpp:5791)  \n    AttributeError: 'NoneType' object has no attribute 'copy'                                            \n**********************************************************************                                   \nFile \"/home/wdj/sagefiles/sage-4.1.1.alpha1/devel/sage/sage/numerical/mip.pyx\", line 248:                \n    sage: p.show()                                                                                       \nException raised:                                                                                        \n    Traceback (most recent call last):                                                                   \n      File \"/home/wdj/sagefiles/sage-4.1.1.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test   \n        self.run_one_example(test, example, filename, compileflags)                                      \n      File \"/home/wdj/sagefiles/sage-4.1.1.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example \n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)                   \n      File \"/home/wdj/sagefiles/sage-4.1.1.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs                                                                   \n      File \"<doctest __main__.example_9[5]>\", line 1, in <module>                                        \n        p.show()###line 248:                                                                             \n    sage: p.show()                                                                                       \n      File \"mip.pyx\", line 130, in sage.numerical.mip.MIP.show (sage/numerical/mip.cpp:1335)             \n      File \"mip.pyx\", line 108, in sage.numerical.mip.MIP.export (sage/numerical/mip.cpp:1047)           \n      File \"mip.pyx\", line 604, in sage.numerical.mip.Constraint.__init__ (sage/numerical/mip.cpp:5791)  \n    AttributeError: 'NoneType' object has no attribute 'copy'                                            \n**********************************************************************\n10 items had failures:\n   1 of   6 in __main__.example_10\n   2 of   6 in __main__.example_11\n   2 of  15 in __main__.example_12\n   1 of   5 in __main__.example_3\n   1 of   6 in __main__.example_4\n   1 of   7 in __main__.example_5\n   1 of   7 in __main__.example_6\n   1 of   6 in __main__.example_7\n   1 of   6 in __main__.example_8\n   1 of   6 in __main__.example_9\n***Test Failed*** 12 failures.\nFor whitespace errors, see the file /home/wdj/sagefiles/sage-4.1.1.alpha1/tmp/.doctest_mip.py\n         [3.5 s]\nexit code: 1024\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/sage/numerical/mip.pyx\"\nTotal time for all tests: 3.5 seconds\n```\n",
+    "created_at": "2009-08-01T03:07:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52903",
+    "user": "wdj"
+}
+```
 
 The 3 patches applied fione to 4.1.1.a1. But on an ubuntu 9.04 machine, I got the following failures:
 
@@ -749,9 +1006,20 @@ Total time for all tests: 3.5 seconds
 
 
 
+
 ---
 
-Comment by wdj created at 2009-08-01 03:09:42
+archive/issue_comments_052904.json:
+```json
+{
+    "body": "There was also this compiling error:\n\n\n```\nwdj@hera:~/sagefiles/sage-4.1.1.alpha1$ ./sage -b  \n\n----------------------------------------------------------\nsage: Building and installing modified Sage library files.\n\n\nInstalling c_lib\nscons: `install' is up to date.\nUpdating Cython code....       \nBuilding sage/numerical/mip.pyx because it depends on ../../local/include/glpk.h.\npython `which cython` --embed-positions --incref-local-binop -I/home/wdj/sagefiles/sage-4.1.1.alpha1/devel/sage-OR2 -o sage/numerical/mip.cpp sage/numerical/mip.pyx                                                          \nsage/numerical/mip.pyx --> /home/wdj/sagefiles/sage-4.1.1.alpha1/local//lib/python/site-packages//sage/numerical/mip.pyx                                                                                                      \nTime to execute 1 commands: 1.12334299088 seconds                                                              \nFinished compiling Cython code (time = 2.04412698746 seconds)                                                  \nrunning install                                                                                                \nrunning build                                                                                                  \nrunning build_py                                                                                               \nrunning build_ext                                                                                              \nbuilding 'sage.numerical.mip' extension                                                                        \ngcc -fno-strict-aliasing -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -Ilocal/include/ -I/home/wdj/sagefiles/sage-4.1.1.alpha1/local//include -I/home/wdj/sagefiles/sage-4.1.1.alpha1/local//include/csage -I/home/wdj/sagefiles/sage-4.1.1.alpha1/devel//sage/sage/ext -I/home/wdj/sagefiles/sage-4.1.1.alpha1/local/include/python2.6 -c sage/numerical/mip.cpp -o build/temp.linux-x86_64-2.6/sage/numerical/mip.o -w                         \ncc1plus: warning: command line option \"-Wstrict-prototypes\" is valid for Ada/C/ObjC but not for C++            \nsage/numerical/mip.cpp: In function \u2018PyObject* __pyx_pf_4sage_9numerical_3mip_3MIP_solveGLPK(PyObject*, PyObject*, PyObject*)\u2019:                                                                                               \nsage/numerical/mip.cpp:2785: error: \u2018glp_prob\u2019 was not declared in this scope                                  \nsage/numerical/mip.cpp:2785: error: \u2018__pyx_v_lp\u2019 was not declared in this scope                                \nsage/numerical/mip.cpp:2795: error: \u2018glp_iocp\u2019 was not declared in this scope                                  \nsage/numerical/mip.cpp:2795: error: \u2018__pyx_v_iocp\u2019 was not declared in this scope                              \nsage/numerical/mip.cpp:2993: error: \u2018glp_create_prob\u2019 was not declared in this scope                           \nsage/numerical/mip.cpp:3006: error: \u2018glp_add_rows\u2019 was not declared in this scope                              \nsage/numerical/mip.cpp:3019: error: \u2018glp_add_cols\u2019 was not declared in this scope                              \nsage/numerical/mip.cpp:3106: error: \u2018glp_set_obj_coef\u2019 was not declared in this scope                          \nsage/numerical/mip.cpp:3249: error: \u2018GLP_DB\u2019 was not declared in this scope                                    \nsage/numerical/mip.cpp:3249: error: \u2018glp_set_col_bnds\u2019 was not declared in this scope                          \nsage/numerical/mip.cpp:3338: error: \u2018GLP_UP\u2019 was not declared in this scope                                    \nsage/numerical/mip.cpp:3338: error: \u2018glp_set_col_bnds\u2019 was not declared in this scope                          \nsage/numerical/mip.cpp:3427: error: \u2018GLP_LO\u2019 was not declared in this scope                                    \nsage/numerical/mip.cpp:3427: error: \u2018glp_set_col_bnds\u2019 was not declared in this scope                          \nsage/numerical/mip.cpp:3458: error: \u2018GLP_FR\u2019 was not declared in this scope                                    \nsage/numerical/mip.cpp:3458: error: \u2018glp_set_col_bnds\u2019 was not declared in this scope                          \nsage/numerical/mip.cpp:3772: error: \u2018GLP_FX\u2019 was not declared in this scope                                    \nsage/numerical/mip.cpp:3772: error: \u2018glp_set_row_bnds\u2019 was not declared in this scope                          \nsage/numerical/mip.cpp:3799: error: \u2018GLP_DB\u2019 was not declared in this scope                                    \nsage/numerical/mip.cpp:3799: error: \u2018glp_set_row_bnds\u2019 was not declared in this scope                          \nsage/numerical/mip.cpp:3854: error: \u2018GLP_UP\u2019 was not declared in this scope                                    \nsage/numerical/mip.cpp:3854: error: \u2018glp_set_row_bnds\u2019 was not declared in this scope                          \nsage/numerical/mip.cpp:3907: error: \u2018GLP_LO\u2019 was not declared in this scope                                    \nsage/numerical/mip.cpp:3907: error: \u2018glp_set_row_bnds\u2019 was not declared in this scope                          \nsage/numerical/mip.cpp:3920: error: \u2018GLP_FR\u2019 was not declared in this scope                                    \nsage/numerical/mip.cpp:3920: error: \u2018glp_set_row_bnds\u2019 was not declared in this scope                          \nsage/numerical/mip.cpp:3965: error: \u2018GLP_MIN\u2019 was not declared in this scope                                   \nsage/numerical/mip.cpp:3965: error: \u2018glp_set_obj_dir\u2019 was not declared in this scope                           \nsage/numerical/mip.cpp:3977: error: \u2018GLP_MAX\u2019 was not declared in this scope                                   \nsage/numerical/mip.cpp:3977: error: \u2018glp_set_obj_dir\u2019 was not declared in this scope                           \nsage/numerical/mip.cpp:4067: error: \u2018GLP_IV\u2019 was not declared in this scope                                    \nsage/numerical/mip.cpp:4067: error: \u2018glp_set_col_kind\u2019 was not declared in this scope                          \nsage/numerical/mip.cpp:4116: error: \u2018GLP_BV\u2019 was not declared in this scope                                    \nsage/numerical/mip.cpp:4116: error: \u2018glp_set_col_kind\u2019 was not declared in this scope                          \nsage/numerical/mip.cpp:4144: error: \u2018GLP_CV\u2019 was not declared in this scope\nsage/numerical/mip.cpp:4144: error: \u2018glp_set_col_kind\u2019 was not declared in this scope\nsage/numerical/mip.cpp:4164: error: \u2018glp_load_matrix\u2019 was not declared in this scope\nsage/numerical/mip.cpp:4173: error: expected type-specifier before \u2018glp_iocp\u2019\nsage/numerical/mip.cpp:4173: error: expected `;' before \u2018glp_iocp\u2019\nsage/numerical/mip.cpp:4182: error: \u2018glp_init_iocp\u2019 was not declared in this scope\nsage/numerical/mip.cpp:4191: error: \u2018GLP_ON\u2019 was not declared in this scope\nsage/numerical/mip.cpp:4213: error: \u2018GLP_MSG_OFF\u2019 was not declared in this scope\nsage/numerical/mip.cpp:4237: error: \u2018GLP_MSG_ERR\u2019 was not declared in this scope\nsage/numerical/mip.cpp:4261: error: \u2018GLP_MSG_ON\u2019 was not declared in this scope\nsage/numerical/mip.cpp:4273: error: \u2018GLP_MSG_ALL\u2019 was not declared in this scope\nsage/numerical/mip.cpp:4284: error: \u2018glp_intopt\u2019 was not declared in this scope\nsage/numerical/mip.cpp:4293: error: \u2018glp_mip_obj_val\u2019 was not declared in this scope\nsage/numerical/mip.cpp:4322: error: \u2018glp_delete_prob\u2019 was not declared in this scope\nsage/numerical/mip.cpp:4416: error: \u2018glp_mip_col_val\u2019 was not declared in this scope\nsage/numerical/mip.cpp:4430: error: \u2018glp_delete_prob\u2019 was not declared in this scope\nerror: command 'gcc' failed with exit status 1\nsage: There was an error installing modified sage library code.\n\n\nreal    0m6.324s\nuser    0m3.516s\nsys     0m0.604s\n```\n",
+    "created_at": "2009-08-01T03:09:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52904",
+    "user": "wdj"
+}
+```
 
 There was also this compiling error:
 
@@ -840,16 +1108,38 @@ sys     0m0.604s
 
 
 
+
 ---
 
-Comment by wdj created at 2009-08-01 03:17:15
+archive/issue_comments_052905.json:
+```json
+{
+    "body": "Ignore the last 2 errors. I think I know what happened. the experimental package 4ti2 on sage.math seems to be over-writing the glpk package. I need to start over ...",
+    "created_at": "2009-08-01T03:17:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52905",
+    "user": "wdj"
+}
+```
 
 Ignore the last 2 errors. I think I know what happened. the experimental package 4ti2 on sage.math seems to be over-writing the glpk package. I need to start over ...
 
 
+
 ---
 
-Comment by wdj created at 2009-08-01 03:21:49
+archive/issue_comments_052906.json:
+```json
+{
+    "body": "I reinstalled glpk and rebuilt the clone which had MIP1, MIP2, MIP3 applied. This time, it compiled fine:-)\n\nHopwever the was the following error:\n\n\n```\n\nwdj@hera:~/sagefiles/sage-4.1.1.alpha1$ ./sage -t  \"devel/sage/sage/numerical/mip.pyx\"\nsage -t  \"devel/sage/sage/numerical/mip.pyx\"                                          \n**********************************************************************                \nFile \"/home/wdj/sagefiles/sage-4.1.1.alpha1/devel/sage/sage/numerical/mip.pyx\", line 280:\n    sage: p.show()                                                                       \nException raised:                                                                        \n    Traceback (most recent call last):                                                   \n      File \"/home/wdj/sagefiles/sage-4.1.1.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)                                   \n      File \"/home/wdj/sagefiles/sage-4.1.1.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)                  \n      File \"/home/wdj/sagefiles/sage-4.1.1.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs                                                                   \n      File \"<doctest __main__.example_10[5]>\", line 1, in <module>                                       \n        p.show()###line 280:                                                                             \n    sage: p.show()                                                                                       \n      File \"mip.pyx\", line 130, in sage.numerical.mip.MIP.show (sage/numerical/mip.cpp:1335)             \n      File \"mip.pyx\", line 108, in sage.numerical.mip.MIP.export (sage/numerical/mip.cpp:1047)           \n      File \"mip.pyx\", line 604, in sage.numerical.mip.Constraint.__init__ (sage/numerical/mip.cpp:5791)  \n    AttributeError: 'NoneType' object has no attribute 'copy'                                            \n**********************************************************************                                   \nFile \"/home/wdj/sagefiles/sage-4.1.1.alpha1/devel/sage/sage/numerical/mip.pyx\", line 303:                \n    sage: p.addbound(\"x\",min=3,max=8)                                                                    \nException raised:                                                                                        \n    Traceback (most recent call last):                                                                   \n      File \"/home/wdj/sagefiles/sage-4.1.1.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test   \n        self.run_one_example(test, example, filename, compileflags)                                      \n      File \"/home/wdj/sagefiles/sage-4.1.1.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example \n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)                   \n      File \"/home/wdj/sagefiles/sage-4.1.1.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs                                                                   \n      File \"<doctest __main__.example_11[4]>\", line 1, in <module>                                       \n        p.addbound(\"x\",min=Integer(3),max=Integer(8))###line 303:                                        \n    sage: p.addbound(\"x\",min=3,max=8)                                                                    \n    AttributeError: MIP instance has no attribute 'addbound'                                             \n**********************************************************************                                   \nFile \"/home/wdj/sagefiles/sage-4.1.1.alpha1/devel/sage/sage/numerical/mip.pyx\", line 304:                \n    sage: p.show()                                                                                       \nException raised:                                                                                        \n    Traceback (most recent call last):                                                                   \n      File \"/home/wdj/sagefiles/sage-4.1.1.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test   \n        self.run_one_example(test, example, filename, compileflags)                                      \n      File \"/home/wdj/sagefiles/sage-4.1.1.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example \n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)                   \n      File \"/home/wdj/sagefiles/sage-4.1.1.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs                                                                   \n      File \"<doctest __main__.example_11[5]>\", line 1, in <module>                                       \n        p.show()###line 304:                                                                             \n    sage: p.show()                                                                                       \n      File \"mip.pyx\", line 130, in sage.numerical.mip.MIP.show (sage/numerical/mip.cpp:1335)             \n      File \"mip.pyx\", line 108, in sage.numerical.mip.MIP.export (sage/numerical/mip.cpp:1047)           \n      File \"mip.pyx\", line 604, in sage.numerical.mip.Constraint.__init__ (sage/numerical/mip.cpp:5791)  \n    AttributeError: 'NoneType' object has no attribute 'copy'                                            \n**********************************************************************                                   \nFile \"/home/wdj/sagefiles/sage-4.1.1.alpha1/devel/sage/sage/numerical/mip.pyx\", line 372:                \n    sage: p.solve()                                                                                      \nExpected:                                                                                                \n    [4.0, {'x': 2.0, 'y': 0.0}]                                                                          \nGot:                                                                                                     \n    [2.6666666666666665, {'y': 1.3333333333333333, 'x': 0.0}]                                            \n**********************************************************************                                   \nFile \"/home/wdj/sagefiles/sage-4.1.1.alpha1/devel/sage/sage/numerical/mip.pyx\", line 374:                \n    sage: p.solve(objective_only=True)                                                                   \nExpected:                                                                                                \n    4.0                                                                                                  \nGot:                                                                                                     \n    2.6666666666666665                                                                                   \n**********************************************************************                                   \nFile \"/home/wdj/sagefiles/sage-4.1.1.alpha1/devel/sage/sage/numerical/mip.pyx\", line 102:                \n    sage: print p.export(format=\"text\")                                                                  \nException raised:                                                                                        \n    Traceback (most recent call last):                                                                   \n      File \"/home/wdj/sagefiles/sage-4.1.1.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test   \n        self.run_one_example(test, example, filename, compileflags)                                      \n      File \"/home/wdj/sagefiles/sage-4.1.1.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example \n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)                   \n      File \"/home/wdj/sagefiles/sage-4.1.1.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs                                                                   \n      File \"<doctest __main__.example_3[4]>\", line 1, in <module>                                        \n        print p.export(format=\"text\")###line 102:                                                        \n    sage: print p.export(format=\"text\")                                                                  \n      File \"mip.pyx\", line 108, in sage.numerical.mip.MIP.export (sage/numerical/mip.cpp:1047)           \n      File \"mip.pyx\", line 604, in sage.numerical.mip.Constraint.__init__ (sage/numerical/mip.cpp:5791)  \n    AttributeError: 'NoneType' object has no attribute 'copy'                                            \n**********************************************************************                                   \nFile \"/home/wdj/sagefiles/sage-4.1.1.alpha1/devel/sage/sage/numerical/mip.pyx\", line 126:                \n    sage: p.show()                                                                                       \nException raised:                                                                                        \n    Traceback (most recent call last):                                                                   \n      File \"/home/wdj/sagefiles/sage-4.1.1.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test   \n        self.run_one_example(test, example, filename, compileflags)                                      \n      File \"/home/wdj/sagefiles/sage-4.1.1.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example \n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)                   \n      File \"/home/wdj/sagefiles/sage-4.1.1.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs                                                                   \n      File \"<doctest __main__.example_4[5]>\", line 1, in <module>                                        \n        p.show()###line 126:                                                                             \n    sage: p.show()                                                                                       \n      File \"mip.pyx\", line 130, in sage.numerical.mip.MIP.show (sage/numerical/mip.cpp:1335)             \n      File \"mip.pyx\", line 108, in sage.numerical.mip.MIP.export (sage/numerical/mip.cpp:1047)           \n      File \"mip.pyx\", line 604, in sage.numerical.mip.Constraint.__init__ (sage/numerical/mip.cpp:5791)  \n    AttributeError: 'NoneType' object has no attribute 'copy'                                            \n**********************************************************************                                   \nFile \"/home/wdj/sagefiles/sage-4.1.1.alpha1/devel/sage/sage/numerical/mip.pyx\", line 159:                \n    sage: p.solve()                                                                                      \nExpected:                                                                                                \n    [4.0, {'x': 2.0, 'y': 0.0}]                                                                          \nGot:                                                                                                     \n    [2.6666666666666665, {'y': 1.3333333333333333, 'x': 0.0}]                                            \n**********************************************************************                                   \nFile \"/home/wdj/sagefiles/sage-4.1.1.alpha1/devel/sage/sage/numerical/mip.pyx\", line 195:                \n    sage: p.solve()                                                                                      \nExpected:                                                                                                \n    [4.0, {'x': 2.0, 'y': 0.0}]                                                                          \nGot:                                                                                                     \n    [2.6666666666666665, {'y': 1.3333333333333333, 'x': 0.0}]                                            \n**********************************************************************                                   \nFile \"/home/wdj/sagefiles/sage-4.1.1.alpha1/devel/sage/sage/numerical/mip.pyx\", line 214:                \n    sage: p.show()                                                                                       \nException raised:                                                                                        \n    Traceback (most recent call last):                                                                   \n      File \"/home/wdj/sagefiles/sage-4.1.1.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test   \n        self.run_one_example(test, example, filename, compileflags)                                      \n      File \"/home/wdj/sagefiles/sage-4.1.1.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example \n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)                   \n      File \"/home/wdj/sagefiles/sage-4.1.1.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs                                                                   \n      File \"<doctest __main__.example_7[5]>\", line 1, in <module>                                        \n        p.show()###line 214:                                                                             \n    sage: p.show()                                                                                       \n      File \"mip.pyx\", line 130, in sage.numerical.mip.MIP.show (sage/numerical/mip.cpp:1335)             \n      File \"mip.pyx\", line 108, in sage.numerical.mip.MIP.export (sage/numerical/mip.cpp:1047)           \n      File \"mip.pyx\", line 604, in sage.numerical.mip.Constraint.__init__ (sage/numerical/mip.cpp:5791)  \n    AttributeError: 'NoneType' object has no attribute 'copy'                                            \n**********************************************************************                                   \nFile \"/home/wdj/sagefiles/sage-4.1.1.alpha1/devel/sage/sage/numerical/mip.pyx\", line 231:                \n    sage: p.show()                                                                                       \nException raised:                                                                                        \n    Traceback (most recent call last):                                                                   \n      File \"/home/wdj/sagefiles/sage-4.1.1.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test   \n        self.run_one_example(test, example, filename, compileflags)                                      \n      File \"/home/wdj/sagefiles/sage-4.1.1.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example \n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)                   \n      File \"/home/wdj/sagefiles/sage-4.1.1.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs                                                                   \n      File \"<doctest __main__.example_8[5]>\", line 1, in <module>                                        \n        p.show()###line 231:                                                                             \n    sage: p.show()                                                                                       \n      File \"mip.pyx\", line 130, in sage.numerical.mip.MIP.show (sage/numerical/mip.cpp:1335)             \n      File \"mip.pyx\", line 108, in sage.numerical.mip.MIP.export (sage/numerical/mip.cpp:1047)           \n      File \"mip.pyx\", line 604, in sage.numerical.mip.Constraint.__init__ (sage/numerical/mip.cpp:5791)  \n    AttributeError: 'NoneType' object has no attribute 'copy'                                            \n**********************************************************************                                   \nFile \"/home/wdj/sagefiles/sage-4.1.1.alpha1/devel/sage/sage/numerical/mip.pyx\", line 248:                \n    sage: p.show()                                                                                       \nException raised:                                                                                        \n    Traceback (most recent call last):                                                                   \n      File \"/home/wdj/sagefiles/sage-4.1.1.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test   \n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/wdj/sagefiles/sage-4.1.1.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/wdj/sagefiles/sage-4.1.1.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_9[5]>\", line 1, in <module>\n        p.show()###line 248:\n    sage: p.show()\n      File \"mip.pyx\", line 130, in sage.numerical.mip.MIP.show (sage/numerical/mip.cpp:1335)\n      File \"mip.pyx\", line 108, in sage.numerical.mip.MIP.export (sage/numerical/mip.cpp:1047)\n      File \"mip.pyx\", line 604, in sage.numerical.mip.Constraint.__init__ (sage/numerical/mip.cpp:5791)\n    AttributeError: 'NoneType' object has no attribute 'copy'\n**********************************************************************\n10 items had failures:\n   1 of   6 in __main__.example_10\n   2 of   6 in __main__.example_11\n   2 of  15 in __main__.example_12\n   1 of   5 in __main__.example_3\n   1 of   6 in __main__.example_4\n   1 of   7 in __main__.example_5\n   1 of   7 in __main__.example_6\n   1 of   6 in __main__.example_7\n   1 of   6 in __main__.example_8\n   1 of   6 in __main__.example_9\n***Test Failed*** 12 failures.\nFor whitespace errors, see the file /home/wdj/sagefiles/sage-4.1.1.alpha1/tmp/.doctest_mip.py\n         [3.3 s]\nexit code: 1024\n\n```\n\n\nDo you know what these mean?\n\nThis was with sage 4.1.1.a1 and on an amd64 ubuntu 9.04 machine.",
+    "created_at": "2009-08-01T03:21:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52906",
+    "user": "wdj"
+}
+```
 
 I reinstalled glpk and rebuilt the clone which had MIP1, MIP2, MIP3 applied. This time, it compiled fine:-)
 
@@ -1053,9 +1343,20 @@ Do you know what these mean?
 This was with sage 4.1.1.a1 and on an amd64 ubuntu 9.04 machine.
 
 
+
 ---
 
-Comment by ncohen created at 2009-08-01 08:32:36
+archive/issue_comments_052907.json:
+```json
+{
+    "body": "I do !!\n\nIt means first that I sent another patch without testing it in the end again ( for which I am sorry ), and also that I forgot some of the algorithms in the solvers were randomized, which explains for some results being different from time to time. I \"corrected\" this by picking examples for which the solutions are unique ;-)\n\nPatch MIP-4 available ;-)",
+    "created_at": "2009-08-01T08:32:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52907",
+    "user": "ncohen"
+}
+```
 
 I do !!
 
@@ -1064,14 +1365,38 @@ It means first that I sent another patch without testing it in the end again ( f
 Patch MIP-4 available ;-)
 
 
+
 ---
+
+archive/issue_comments_052908.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-08-01T08:33:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52908",
+    "user": "ncohen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by wdj created at 2009-08-01 16:05:46
+archive/issue_comments_052909.json:
+```json
+{
+    "body": "This passed and the docstrings look good.\n\nPositive review from me as an optional package.\n\nGreat job Nathann and thanks for creating this very useful package!",
+    "created_at": "2009-08-01T16:05:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52909",
+    "user": "wdj"
+}
+```
 
 This passed and the docstrings look good.
 
@@ -1080,9 +1405,20 @@ Positive review from me as an optional package.
 Great job Nathann and thanks for creating this very useful package!
 
 
+
 ---
 
-Comment by ncohen created at 2009-08-02 08:24:19
+archive/issue_comments_052910.json:
+```json
+{
+    "body": "MIP-5.patch is available !\n\nTwo lines' worth of modifications to print different messages when wrong solvers are selected.. And I don't think I will have anything to add to that for the moment ;-)\n\nAnd as soon as this patch is accepted into Sage, I post the new graph functions ;-)\n\nThank you so much again !!!",
+    "created_at": "2009-08-02T08:24:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52910",
+    "user": "ncohen"
+}
+```
 
 MIP-5.patch is available !
 
@@ -1093,35 +1429,92 @@ And as soon as this patch is accepted into Sage, I post the new graph functions 
 Thank you so much again !!!
 
 
+
 ---
+
+archive/issue_comments_052911.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-08-02T08:24:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52911",
+    "user": "ncohen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by wdj created at 2009-08-03 02:24:14
+archive/issue_comments_052912.json:
+```json
+{
+    "body": "This passed test as well.",
+    "created_at": "2009-08-03T02:24:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52912",
+    "user": "wdj"
+}
+```
 
 This passed test as well.
 
 
+
 ---
 
-Comment by ncohen created at 2009-08-03 07:15:33
+archive/issue_comments_052913.json:
+```json
+{
+    "body": "is there anything left to do for this patch, now ? ;-)",
+    "created_at": "2009-08-03T07:15:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52913",
+    "user": "ncohen"
+}
+```
 
 is there anything left to do for this patch, now ? ;-)
 
 
+
 ---
 
-Comment by wdj created at 2009-08-03 15:00:45
+archive/issue_comments_052914.json:
+```json
+{
+    "body": "Once someone posts it and your other packages to sagemath.org, you probably should post another email to sage-devel (and maybe sage-edu) to ask people to try it out. If you have looked at pygklp already then you can also comment on how your package compares to it.",
+    "created_at": "2009-08-03T15:00:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52914",
+    "user": "wdj"
+}
+```
 
 Once someone posts it and your other packages to sagemath.org, you probably should post another email to sage-devel (and maybe sage-edu) to ask people to try it out. If you have looked at pygklp already then you can also comment on how your package compares to it.
 
 
+
 ---
 
-Comment by ncohen created at 2009-08-03 16:17:18
+archive/issue_comments_052915.json:
+```json
+{
+    "body": "And how is it possible for me to check on whether the patch have already been included in Sage ? Is there any page I can consult on which I could read when it is possible for the users to use this patch using sage -upgrade ? \n\nThank you for your help ! :-)\n\nNathann",
+    "created_at": "2009-08-03T16:17:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52915",
+    "user": "ncohen"
+}
+```
 
 And how is it possible for me to check on whether the patch have already been included in Sage ? Is there any page I can consult on which I could read when it is possible for the users to use this patch using sage -upgrade ? 
 
@@ -1130,9 +1523,20 @@ Thank you for your help ! :-)
 Nathann
 
 
+
 ---
 
-Comment by wdj created at 2009-08-03 16:50:02
+archive/issue_comments_052916.json:
+```json
+{
+    "body": "Replying to [comment:31 ncohen]:\n> And how is it possible for me to check on whether the patch have already been included in Sage ? \n\nIt will go here:\nhttp://www.sagemath.org/packages/optional/\n\n\n> Is there any page I can consult on which I could read when it is possible for the \n> users to use this patch using sage -upgrade ? \n\n\nThey will use sage -i <spkg-name>, not sage -upgrade, on the bash command line.\nAlso, install_package('<spkg-name>') should work from the Sage command line or \nthe notebook.\n\nOf course, anyone can use \nsage -i http://www-sop.inria.fr/members/Nathann.Cohen/glpk-4.38.spkg\nto install glpk right now (or\nsage -f http://www-sop.inria.fr/members/Nathann.Cohen/glpk-4.38.spkg\nto force a reinstall).\n\n\n> \n> Thank you for your help ! :-)\n> \n> Nathann",
+    "created_at": "2009-08-03T16:50:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52916",
+    "user": "wdj"
+}
+```
 
 Replying to [comment:31 ncohen]:
 > And how is it possible for me to check on whether the patch have already been included in Sage ? 
@@ -1162,16 +1566,38 @@ to force a reinstall).
 > Nathann
 
 
+
 ---
 
-Comment by ncohen created at 2009-08-03 16:53:01
+archive/issue_comments_052917.json:
+```json
+{
+    "body": "They will use sage -upgrade to download the spkg, but what about this very patch ? Will there be any other way to install it than by meddling with hg_sage ? ;-)",
+    "created_at": "2009-08-03T16:53:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52917",
+    "user": "ncohen"
+}
+```
 
 They will use sage -upgrade to download the spkg, but what about this very patch ? Will there be any other way to install it than by meddling with hg_sage ? ;-)
 
 
+
 ---
 
-Comment by wdj created at 2009-08-03 17:12:11
+archive/issue_comments_052918.json:
+```json
+{
+    "body": "Replying to [comment:33 ncohen]:\n> They will use sage -upgrade to download the spkg, \n\nsage -i, not sage -upgrade.\n\n> but what about this very patch ? Will there be any other way to install it than by meddling with hg_sage ? ;-)\n\nOnce Minh or William posts a comment to this trac ticket saying \"applied to sage x.y.z\" and \"status => closed\" (or something like that) then it will be part of the next release of Sage. Until then, yes, a user should create a new clone and then apply your patches using hg_sage.",
+    "created_at": "2009-08-03T17:12:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52918",
+    "user": "wdj"
+}
+```
 
 Replying to [comment:33 ncohen]:
 > They will use sage -upgrade to download the spkg, 
@@ -1183,18 +1609,40 @@ sage -i, not sage -upgrade.
 Once Minh or William posts a comment to this trac ticket saying "applied to sage x.y.z" and "status => closed" (or something like that) then it will be part of the next release of Sage. Until then, yes, a user should create a new clone and then apply your patches using hg_sage.
 
 
+
 ---
 
-Comment by ncohen created at 2009-08-03 17:15:21
+archive/issue_comments_052919.json:
+```json
+{
+    "body": "sage -i, sorry ^^;\n\nThanks for these explanations ! ;-)",
+    "created_at": "2009-08-03T17:15:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52919",
+    "user": "ncohen"
+}
+```
 
 sage -i, sorry ^^;
 
 Thanks for these explanations ! ;-)
 
 
+
 ---
 
-Comment by mvngu created at 2009-08-04 09:25:40
+archive/issue_comments_052920.json:
+```json
+{
+    "body": "One can use the following command in order to install glpk:\n\n```\nsage -f http://www.sagemath.org/packages/optional/glpk-4.38.spkg\n```\n",
+    "created_at": "2009-08-04T09:25:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52920",
+    "user": "mvngu"
+}
+```
 
 One can use the following command in order to install glpk:
 
@@ -1204,9 +1652,20 @@ sage -f http://www.sagemath.org/packages/optional/glpk-4.38.spkg
 
 
 
+
 ---
 
-Comment by wdj created at 2009-08-04 10:15:24
+archive/issue_comments_052921.json:
+```json
+{
+    "body": "Replying to [comment:36 mvngu]:\n> One can use the following command in order to install glpk:\n> {{{\n> sage -f http://www.sagemath.org/packages/optional/glpk-4.38.spkg\n> }}}\n\nI don't see it listed on http://www.sagemath.org/packages/optional/.\nAm I missing something?",
+    "created_at": "2009-08-04T10:15:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52921",
+    "user": "wdj"
+}
+```
 
 Replying to [comment:36 mvngu]:
 > One can use the following command in order to install glpk:
@@ -1218,9 +1677,20 @@ I don't see it listed on http://www.sagemath.org/packages/optional/.
 Am I missing something?
 
 
+
 ---
 
-Comment by mvngu created at 2009-08-04 10:20:55
+archive/issue_comments_052922.json:
+```json
+{
+    "body": "Replying to [comment:37 wdj]:\n> Replying to [comment:36 mvngu]:\n> > One can use the following command in order to install glpk:\n> > {{{\n> > sage -f http://www.sagemath.org/packages/optional/glpk-4.38.spkg\n> > }}}\n> \n> I don't see it listed on http://www.sagemath.org/packages/optional/.\n> Am I missing something?\nThe Python script that is used for regenerating the packages HTML pages is not working for me at the moment. So I can't successfully run it in order to update any of the HTML pages that lists all known packages. But the good news is that you can be sure that the package `glpk-4.38.spkg ` is up on the optional packages repository. If you can't download that package from the link\n\nhttp://www.sagemath.org/packages/optional/glpk-4.38.spkg\n\nplease tell me.",
+    "created_at": "2009-08-04T10:20:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52922",
+    "user": "mvngu"
+}
+```
 
 Replying to [comment:37 wdj]:
 > Replying to [comment:36 mvngu]:
@@ -1238,28 +1708,74 @@ http://www.sagemath.org/packages/optional/glpk-4.38.spkg
 please tell me.
 
 
+
 ---
 
-Comment by ncohen created at 2009-08-06 18:53:27
+archive/issue_comments_052923.json:
+```json
+{
+    "body": "All patches up to MIP-5",
+    "created_at": "2009-08-06T18:53:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52923",
+    "user": "ncohen"
+}
+```
 
 All patches up to MIP-5
 
 
+
 ---
+
+archive/issue_comments_052924.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-08-14T11:23:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52924",
+    "user": "ncohen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mvngu created at 2009-08-14 11:27:22
+archive/issue_comments_052925.json:
+```json
+{
+    "body": "Hi Nathann. The timing of these patches is unfortunate :-(  I'm about to release Sage 4.1.1 in a couple of hours. The release has been delayed far too long.",
+    "created_at": "2009-08-14T11:27:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52925",
+    "user": "mvngu"
+}
+```
 
 Hi Nathann. The timing of these patches is unfortunate :-(  I'm about to release Sage 4.1.1 in a couple of hours. The release has been delayed far too long.
 
 
+
 ---
 
-Comment by mvngu created at 2009-08-14 11:47:26
+archive/issue_comments_052926.json:
+```json
+{
+    "body": "I got the following error after merging the patch `AllMIP.patch` and rebuilding the modified library files. I was merging it on top of Sage 4.1.1.rc2.\n\n```\n<SNIP>\nsage/numerical/mip.cpp:4051: error: \u2018GLP_MIN\u2019 was not declared in this scope\nsage/numerical/mip.cpp:4051: error: \u2018glp_set_obj_dir\u2019 was not declared in this scope\nsage/numerical/mip.cpp:4063: error: \u2018GLP_MAX\u2019 was not declared in this scope\nsage/numerical/mip.cpp:4063: error: \u2018glp_set_obj_dir\u2019 was not declared in this scope\nsage/numerical/mip.cpp:4153: error: \u2018GLP_IV\u2019 was not declared in this scope\nsage/numerical/mip.cpp:4153: error: \u2018glp_set_col_kind\u2019 was not declared in this scope\nsage/numerical/mip.cpp:4202: error: \u2018GLP_BV\u2019 was not declared in this scope\nsage/numerical/mip.cpp:4202: error: \u2018glp_set_col_kind\u2019 was not declared in this scope\nsage/numerical/mip.cpp:4230: error: \u2018GLP_CV\u2019 was not declared in this scope\nsage/numerical/mip.cpp:4230: error: \u2018glp_set_col_kind\u2019 was not declared in this scope\nsage/numerical/mip.cpp:4250: error: \u2018glp_load_matrix\u2019 was not declared in this scope\nsage/numerical/mip.cpp:4259: error: expected type-specifier before \u2018glp_iocp\u2019\nsage/numerical/mip.cpp:4259: error: expected `;' before \u2018glp_iocp\u2019\nsage/numerical/mip.cpp:4268: error: \u2018glp_init_iocp\u2019 was not declared in this scope\nsage/numerical/mip.cpp:4277: error: \u2018GLP_ON\u2019 was not declared in this scope\nsage/numerical/mip.cpp:4299: error: \u2018GLP_MSG_OFF\u2019 was not declared in this scope\nsage/numerical/mip.cpp:4323: error: \u2018GLP_MSG_ERR\u2019 was not declared in this scope\nsage/numerical/mip.cpp:4347: error: \u2018GLP_MSG_ON\u2019 was not declared in this scope\nsage/numerical/mip.cpp:4359: error: \u2018GLP_MSG_ALL\u2019 was not declared in this scope\nsage/numerical/mip.cpp:4370: error: \u2018glp_intopt\u2019 was not declared in this scope\nsage/numerical/mip.cpp:4379: error: \u2018glp_mip_obj_val\u2019 was not declared in this scope\nsage/numerical/mip.cpp:4408: error: \u2018glp_delete_prob\u2019 was not declared in this scope\nsage/numerical/mip.cpp:4502: error: \u2018glp_mip_col_val\u2019 was not declared in this scope\nsage/numerical/mip.cpp:4516: error: \u2018glp_delete_prob\u2019 was not declared in this scope\nerror: command 'gcc' failed with exit status 1\nsage: There was an error installing modified sage library code.\n```\n",
+    "created_at": "2009-08-14T11:47:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52926",
+    "user": "mvngu"
+}
+```
 
 I got the following error after merging the patch `AllMIP.patch` and rebuilding the modified library files. I was merging it on top of Sage 4.1.1.rc2.
 
@@ -1295,37 +1811,92 @@ sage: There was an error installing modified sage library code.
 
 
 
+
 ---
 
-Comment by mvngu created at 2009-08-14 12:24:43
+archive/issue_comments_052927.json:
+```json
+{
+    "body": "I got the above compilation errors because I didn't install the optional package glpk. So that spkg should be installed first, then apply the patch `AllMIP.patch`. I'm putting this back to positive review. My bad :-(",
+    "created_at": "2009-08-14T12:24:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52927",
+    "user": "mvngu"
+}
+```
 
 I got the above compilation errors because I didn't install the optional package glpk. So that spkg should be installed first, then apply the patch `AllMIP.patch`. I'm putting this back to positive review. My bad :-(
 
 
+
 ---
 
-Comment by mvngu created at 2009-08-23 12:16:21
+archive/issue_comments_052928.json:
+```json
+{
+    "body": "GLPK is an optional spkg. So any doctests that use GLPK must be flagged as \"# optional\". Also, it looks like #6765 depends on this ticket.",
+    "created_at": "2009-08-23T12:16:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52928",
+    "user": "mvngu"
+}
+```
 
 GLPK is an optional spkg. So any doctests that use GLPK must be flagged as "# optional". Also, it looks like #6765 depends on this ticket.
 
 
+
 ---
 
-Comment by mvngu created at 2009-08-23 12:17:18
+archive/issue_comments_052929.json:
+```json
+{
+    "body": "I'm marking this ticket as \"needs work\" until the doctests that use GLPK or CBC, etc., are marked as \"# optional\".",
+    "created_at": "2009-08-23T12:17:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52929",
+    "user": "mvngu"
+}
+```
 
 I'm marking this ticket as "needs work" until the doctests that use GLPK or CBC, etc., are marked as "# optional".
 
 
+
 ---
 
-Comment by mvngu created at 2009-08-23 12:52:00
+archive/issue_comments_052930.json:
+```json
+{
+    "body": "The patches and GLPK should be wrapped up into an spkg. The patch `AllMIP.patch` if applied as is would fail to compile. You can rectify that by first installing the optional spkg GLPK. But the patch `AllMIP.patch` is to be applied to the Sage library, and when applied and shipping Sage, Sage would fail to compile because we don't ship optional spkg's. So put everything (the patches plus GLPK) into a self-contained spkg.",
+    "created_at": "2009-08-23T12:52:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52930",
+    "user": "mvngu"
+}
+```
 
 The patches and GLPK should be wrapped up into an spkg. The patch `AllMIP.patch` if applied as is would fail to compile. You can rectify that by first installing the optional spkg GLPK. But the patch `AllMIP.patch` is to be applied to the Sage library, and when applied and shipping Sage, Sage would fail to compile because we don't ship optional spkg's. So put everything (the patches plus GLPK) into a self-contained spkg.
 
 
+
 ---
 
-Comment by ncohen created at 2009-08-24 09:47:06
+archive/issue_comments_052931.json:
+```json
+{
+    "body": "New patch AllMIP-2 available.\n\nAll the calls to solve() are flagged optional. *This class should now compile even without the libraries glpk* ( which have been removed from module_list ) : all is left in this class except the call to solveGlpk, which is now a function defined in the new version of the spkg ( see #6817 ).\n\nIt is a bit better this way, as this was already the case with package CBC ( now, the code is \"symmetric\" between Glpk and Cbc, as both are optional packages )\n\nIn the end :\n* To test this code aply patch AllMIP-2\n* To install the new version of Glpk which is to make this code useful, type \n\n```\nsage -f http://www-sop.inria.fr/members/Nathann.Cohen/glpk-4.38.spkg\n```\n\n\nThis spkg being currently reviewed at #6817 ( it should be pretty quick, there is nothing new in this patch except a function which had already been reviewed here ! )",
+    "created_at": "2009-08-24T09:47:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52931",
+    "user": "ncohen"
+}
+```
 
 New patch AllMIP-2 available.
 
@@ -1345,16 +1916,40 @@ sage -f http://www-sop.inria.fr/members/Nathann.Cohen/glpk-4.38.spkg
 This spkg being currently reviewed at #6817 ( it should be pretty quick, there is nothing new in this patch except a function which had already been reviewed here ! )
 
 
+
 ---
+
+archive/issue_comments_052932.json:
+```json
+{
+    "body": "Attachment\n\nNow **without** solveGlpk !",
+    "created_at": "2009-08-24T09:47:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52932",
+    "user": "ncohen"
+}
+```
 
 Attachment
 
 Now **without** solveGlpk !
 
 
+
 ---
 
-Comment by ncohen created at 2009-08-24 11:08:19
+archive/issue_comments_052933.json:
+```json
+{
+    "body": "Lets make it :\n\n```\nsage -f http://www-sop.inria.fr/members/Nathann.Cohen/glpk-4.38.p0.spkg\n```\n",
+    "created_at": "2009-08-24T11:08:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52933",
+    "user": "ncohen"
+}
+```
 
 Lets make it :
 
@@ -1364,16 +1959,38 @@ sage -f http://www-sop.inria.fr/members/Nathann.Cohen/glpk-4.38.p0.spkg
 
 
 
+
 ---
 
-Comment by wdj created at 2009-08-25 17:53:02
+archive/issue_comments_052934.json:
+```json
+{
+    "body": "I can only test this with glpk installed (having build problems...). Is that okay?",
+    "created_at": "2009-08-25T17:53:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52934",
+    "user": "wdj"
+}
+```
 
 I can only test this with glpk installed (having build problems...). Is that okay?
 
 
+
 ---
 
-Comment by mvngu created at 2009-08-25 18:04:14
+archive/issue_comments_052935.json:
+```json
+{
+    "body": "Replying to [comment:50 wdj]:\n> I can only test this with glpk installed (having build problems...). Is that okay?\nThat is fine by me. But note that since the patch `AllMIP-2.patch` depends on an optional package, its doctests should be marked with \"# optional\" so that running doctests with something like \"./sage -t -long  /path/to/script.py\" would skip over doctests that require optional spkg's. At the moment, most of the doctests in `AllMIP-2.patch` require that the optional package GLPK be installed, but those doctests that require this package are not flagged with \"# optional\". See for example, this doctest:\n\n```\n \t39\t         sage: ### Computation of a maximum stable set in Petersen's graph ### \n \t40\t         sage: g=graphs.PetersenGraph() \n \t41\t         sage: p=MIP(sense=1) \n \t42\t         sage: obj={} \n \t43\t         sage: for i in g.vertices(): \n \t44\t         ...       obj[i]=1  \n \t45\t         ...       p.setinteger(i)  \n \t46\t         sage: p.setobj(obj) \n \t47\t         sage: for (a,b,c) in g.edges(): \n \t48\t         ...       cons={}  \n \t49\t         ...       cons[a]=1  \n \t50\t         ...       cons[b]=1  \n \t51\t         ...       p.addconstraint(cons,max=1)  \n \t52\t         sage: p.solve(objective_only=True) \n \t53\t         4.0\n```\n\nThe line\n\n```\n \t41\t         sage: p=MIP(sense=1) \n```\n\nrequires GLPK and some other patches. But it should be written like this:\n\n```\n \t41\t         sage: p=MIP(sense=1)  # optional\n```\n\nto flag it as requiring an optional package. Any other tests that require the functionalities of an optional spkg must be flagged as such. When testing these, one would do something along this line:\n\n```\n./sage -t -long -optional /path/to/script.py\n```\n",
+    "created_at": "2009-08-25T18:04:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52935",
+    "user": "mvngu"
+}
+```
 
 Replying to [comment:50 wdj]:
 > I can only test this with glpk installed (having build problems...). Is that okay?
@@ -1417,16 +2034,38 @@ to flag it as requiring an optional package. Any other tests that require the fu
 
 
 
+
 ---
 
-Comment by wdj created at 2009-08-25 18:09:44
+archive/issue_comments_052936.json:
+```json
+{
+    "body": "Okay, because of this comment, I'm changing it back to needs work.",
+    "created_at": "2009-08-25T18:09:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52936",
+    "user": "wdj"
+}
+```
 
 Okay, because of this comment, I'm changing it back to needs work.
 
 
+
 ---
 
-Comment by ncohen created at 2009-08-25 18:48:57
+archive/issue_comments_052937.json:
+```json
+{
+    "body": "Hmmm... There's something I do not understand here ^^;\n\nAt first I thought I had made a mistake by not uploading the last version of my patch, in which I added the required \"optional\" flags, but in the end it seems there are included already... You can see they are by looking (Ctrl - f) for the word \"optional\" on the page http://trac.sagemath.org/sage_trac/attachment/ticket/6502/AllMIP-2.patch\n\nI just installed this patch on a brand new install without GLPK, it compiled fine and there were no warnings during the test ( without the -optional flag, obiously)\n\nCould you please check that you downloaded the last version and did not apply a cached file ??\n\nJust to be sure, I upload a flattened version of patch named AllMIP-2-flattened.patch",
+    "created_at": "2009-08-25T18:48:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52937",
+    "user": "ncohen"
+}
+```
 
 Hmmm... There's something I do not understand here ^^;
 
@@ -1439,23 +2078,58 @@ Could you please check that you downloaded the last version and did not apply a 
 Just to be sure, I upload a flattened version of patch named AllMIP-2-flattened.patch
 
 
+
 ---
+
+archive/issue_comments_052938.json:
+```json
+{
+    "body": "Attachment\n\nBTW, the ALLMIP2 patch applied fine for me, as before, and passes sage -testall (mod the known unrelated failures already described). So, positive review from me, but I am testing on a clone of Sage which has glpk installed.",
+    "created_at": "2009-08-25T22:06:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52938",
+    "user": "wdj"
+}
+```
 
 Attachment
 
 BTW, the ALLMIP2 patch applied fine for me, as before, and passes sage -testall (mod the known unrelated failures already described). So, positive review from me, but I am testing on a clone of Sage which has glpk installed.
 
 
+
 ---
 
-Comment by ncohen created at 2009-08-25 22:14:06
+archive/issue_comments_052939.json:
+```json
+{
+    "body": "I tested it on a copy of Sage without GLPK... But as I posted this patch I guess it does not count ^^;",
+    "created_at": "2009-08-25T22:14:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52939",
+    "user": "ncohen"
+}
+```
 
 I tested it on a copy of Sage without GLPK... But as I posted this patch I guess it does not count ^^;
 
 
+
 ---
 
-Comment by ncohen created at 2009-08-31 15:54:44
+archive/issue_comments_052940.json:
+```json
+{
+    "body": "As the functions dealing with LP have not been reviewed, I prefer to rewrite the MIP class for Sage to make it easier to use. I will post a new version of the MIP patch as soon as possible, along with all the patches for functions using it.\n\nSorry for the trouble, I'll try to make it quick !\n\nNathann",
+    "created_at": "2009-08-31T15:54:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52940",
+    "user": "ncohen"
+}
+```
 
 As the functions dealing with LP have not been reviewed, I prefer to rewrite the MIP class for Sage to make it easier to use. I will post a new version of the MIP patch as soon as possible, along with all the patches for functions using it.
 
@@ -1464,17 +2138,39 @@ Sorry for the trouble, I'll try to make it quick !
 Nathann
 
 
+
 ---
 
-Comment by ncohen created at 2009-09-02 17:39:43
+archive/issue_comments_052941.json:
+```json
+{
+    "body": "This ticket should be deleted. A new ticket has been created #6869 with a new version of the class, now using symbolics !\n\nNathann",
+    "created_at": "2009-09-02T17:39:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52941",
+    "user": "ncohen"
+}
+```
 
 This ticket should be deleted. A new ticket has been created #6869 with a new version of the class, now using symbolics !
 
 Nathann
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-02 17:44:51
+archive/issue_comments_052942.json:
+```json
+{
+    "body": "Resolution: wontfix",
+    "created_at": "2009-09-02T17:44:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6502",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6502#issuecomment-52942",
+    "user": "mvngu"
+}
+```
 
 Resolution: wontfix

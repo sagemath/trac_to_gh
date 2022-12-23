@@ -1,11 +1,21 @@
 # Issue 2551: `__getitem__` for relative number field elements is ... surprising
 
-Issue created by migration from https://trac.sagemath.org/ticket/2551
-
-Original creator: craigcitro
-
-Original creation time: 2008-03-16 21:10:56
-
+archive/issues_002551.json:
+```json
+{
+    "body": "Assignee: was\n\nIndexing into a relative number field element does unexpected things:\n\n\n```\nsage: K\n Number Field in b with defining polynomial x^3 - 5 over its base field\nsage: K([1,2,3])\n 3*b^2 + (-6*a + 2)*b - 2*a + 7\nsage: K([1,2,3])[0]\n 1\nsage: K([1,2,3])[1]\n 2\n\nsage: K([1,2,3]).list()\n [-2*a + 7, -6*a + 2, 3]\nsage: K([1,2,3]).list()[0]\n -2*a + 7\n\nsage: K([1,2,3]).polynomial()\n 3*x^2 + 2*x + 1\n```\n\n\nThe issue is that it's giving you the entries in the representation of the element as an *absolute* number field element. It should be fixed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2551\n\n",
+    "created_at": "2008-03-16T21:10:56Z",
+    "labels": [
+        "number theory",
+        "minor",
+        "bug"
+    ],
+    "title": "`__getitem__` for relative number field elements is ... surprising",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2551",
+    "user": "craigcitro"
+}
+```
 Assignee: was
 
 Indexing into a relative number field element does unexpected things:
@@ -33,17 +43,43 @@ sage: K([1,2,3]).polynomial()
 
 The issue is that it's giving you the entries in the representation of the element as an *absolute* number field element. It should be fixed.
 
+Issue created by migration from https://trac.sagemath.org/ticket/2551
+
+
+
+
 
 ---
 
-Comment by fwclarke created at 2009-03-13 18:54:57
+archive/issue_comments_017418.json:
+```json
+{
+    "body": "This is sorted out by the patch in #5508, in particular the changes  there to `__getitem__` for the class `NumberFieldElement_relative` in `sage/rings/number_field/number_field_element.pyx`.",
+    "created_at": "2009-03-13T18:54:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2551",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2551#issuecomment-17418",
+    "user": "fwclarke"
+}
+```
 
 This is sorted out by the patch in #5508, in particular the changes  there to `__getitem__` for the class `NumberFieldElement_relative` in `sage/rings/number_field/number_field_element.pyx`.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-03-25 08:55:53
+archive/issue_comments_017419.json:
+```json
+{
+    "body": "To close this we would need a doctest.\n\nCheers,\n\nMichael",
+    "created_at": "2009-03-25T08:55:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2551",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2551#issuecomment-17419",
+    "user": "mabshoff"
+}
+```
 
 To close this we would need a doctest.
 
@@ -52,9 +88,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by fwclarke created at 2009-03-26 08:59:20
+archive/issue_comments_017420.json:
+```json
+{
+    "body": "Replying to [comment:2 mabshoff]:\n> To close this we would need a doctest.\n\nSee lines 2421 to 2445 of sage/rings/number_field/number_field_element.pyx as patched by #5508:\n\n```\n        EXAMPLES::\n        \n            sage: K.<a, b> = NumberField([x^3 - 5, x^2 + 3])\n            sage: c = (a + b)^3; c\n            3*b*a^2 - 9*a - 3*b + 5\n            sage: c[0]\n            -3*b + 5\n        \n        We illustrate bounds checking::\n        \n            sage: c[-1]\n            Traceback (most recent call last):\n            ...\n            IndexError: index must be between 0 and the relative degree minus 1.\n            sage: c[4]\n            Traceback (most recent call last):\n            ...\n            IndexError: index must be between 0 and the relative degree minus 1.\n        \n        The list method implicitly calls ``__getitem__``::\n        \n            sage: list(c)\n            [-3*b + 5, -9, 3*b]\n            sage: K(list(c)) == c\n            True\n```\n",
+    "created_at": "2009-03-26T08:59:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2551",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2551#issuecomment-17420",
+    "user": "fwclarke"
+}
+```
 
 Replying to [comment:2 mabshoff]:
 > To close this we would need a doctest.
@@ -91,9 +138,20 @@ See lines 2421 to 2445 of sage/rings/number_field/number_field_element.pyx as pa
 
 
 
+
 ---
 
-Comment by mabshoff created at 2009-03-26 20:35:27
+archive/issue_comments_017421.json:
+```json
+{
+    "body": "Fixed in Sage 3.4.1.alpha0 via #5508. Thanks Francis :)\n\nCheers,\n\nMichael",
+    "created_at": "2009-03-26T20:35:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2551",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2551#issuecomment-17421",
+    "user": "mabshoff"
+}
+```
 
 Fixed in Sage 3.4.1.alpha0 via #5508. Thanks Francis :)
 
@@ -102,8 +160,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-03-26 20:35:27
+archive/issue_comments_017422.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-03-26T20:35:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2551",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2551#issuecomment-17422",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

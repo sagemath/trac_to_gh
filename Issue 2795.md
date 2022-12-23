@@ -1,11 +1,21 @@
 # Issue 2795: [with patch,needs review] QuotientRing -> Magma
 
-Issue created by migration from https://trac.sagemath.org/ticket/2795
-
-Original creator: malb
-
-Original creation time: 2008-04-04 11:21:03
-
+archive/issues_002795.json:
+```json
+{
+    "body": "Assignee: malb\n\nKeywords: magma\n\n\n```\nsage: P.<x,y> = PolynomialRing(GF(2))\nsage: Q = P.quotient(sage.rings.ideal.FieldIdeal(P))\nsage: xbar, ybar = Q.gens()\nsage: xbar._magma_() # optional requires magma\nx\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2795\n\n",
+    "created_at": "2008-04-04T11:21:03Z",
+    "labels": [
+        "interfaces",
+        "major",
+        "enhancement"
+    ],
+    "title": "[with patch,needs review] QuotientRing -> Magma",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2795",
+    "user": "malb"
+}
+```
 Assignee: malb
 
 Keywords: magma
@@ -20,31 +30,81 @@ x
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2795
+
+
+
+
 
 ---
+
+archive/issue_comments_019189.json:
+```json
+{
+    "body": "Attachment\n\nLooks good to me.",
+    "created_at": "2008-04-04T19:53:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2795",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2795#issuecomment-19189",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 Looks good to me.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-04 20:07:36
+archive/issue_comments_019190.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-04-04T20:07:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2795",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2795#issuecomment-19190",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-04 20:07:36
+archive/issue_comments_019191.json:
+```json
+{
+    "body": "Merged in Sage 3.0.alpha1",
+    "created_at": "2008-04-04T20:07:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2795",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2795#issuecomment-19191",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.alpha1
 
 
+
 ---
 
-Comment by was created at 2008-04-05 20:26:10
+archive/issue_comments_019192.json:
+```json
+{
+    "body": "I'm changing this from closed -- positive review to \"opened, negative review\", since the given doctest doesn't even work if you *do* have Magma:\n\n\n```\nteragon:~ was$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading SAGE library. Current Mercurial branch is: referee\nsage: sage: P.<x,y> = PolynomialRing(GF(2))\nsage:  sage: Q = P.quotient(sage.rings.ideal.FieldIdeal(P))\nsage:  sage: xbar, ybar = Q.gens()\nsage:  sage: xbar._magma_() \n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n| SAGE Version sage-2.11, Release Date: 2008-03-30                   |\n| Type notebook() for the GUI, and license() for information.        |\n/Users/was/<ipython console> in <module>()\n\n/Users/was/sage_object.pyx in sage.structure.sage_object.SageObject._magma_()\n\n/Users/was/sage_object.pyx in sage.structure.sage_object.SageObject._interface_()\n\n/Users/was/build/sage-2.10.4/local/lib/python2.5/site-packages/sage/interfaces/magma.py in __call__(self, x, gens)\n    332             if isinstance(x, bool):\n    333                 return Expect.__call__(self, str(x).lower())\n--> 334             return Expect.__call__(self, x)\n    335         return self.objgens(x, gens)\n    336         \n\n/Users/was/build/sage-2.10.4/local/lib/python2.5/site-packages/sage/interfaces/expect.py in __call__(self, x)\n    736             return x\n    737         if isinstance(x, basestring):\n--> 738             return cls(self, x)\n    739         try:\n    740             return self._coerce_from_special_method(x)\n\n/Users/was/build/sage-2.10.4/local/lib/python2.5/site-packages/sage/interfaces/expect.py in __init__(self, parent, value, is_name)\n   1005             except (TypeError, KeyboardInterrupt, RuntimeError, ValueError), x:\n   1006                 self._session_number = -1\n-> 1007                 raise TypeError, x\n   1008         self._session_number = parent._session_number\n   1009 \n\n<type 'exceptions.TypeError'>: Error evaluation Magma code.\nIN:_sage_[1] := xbar;\nOUT:\n>> _sage_[1] := xbar;\n                ^\nUser error: Identifier 'xbar' has not been declared or assigned\nsage: \n```\n",
+    "created_at": "2008-04-05T20:26:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2795",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2795#issuecomment-19192",
+    "user": "was"
+}
+```
 
 I'm changing this from closed -- positive review to "opened, negative review", since the given doctest doesn't even work if you *do* have Magma:
 
@@ -100,23 +160,56 @@ sage:
 
 
 
+
 ---
 
-Comment by was created at 2008-04-05 20:26:10
+archive/issue_comments_019193.json:
+```json
+{
+    "body": "Changing status from closed to reopened.",
+    "created_at": "2008-04-05T20:26:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2795",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2795#issuecomment-19193",
+    "user": "was"
+}
+```
 
 Changing status from closed to reopened.
 
 
+
 ---
 
-Comment by was created at 2008-04-05 20:26:10
+archive/issue_comments_019194.json:
+```json
+{
+    "body": "Resolution changed from fixed to ",
+    "created_at": "2008-04-05T20:26:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2795",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2795#issuecomment-19194",
+    "user": "was"
+}
+```
 
 Resolution changed from fixed to 
 
 
+
 ---
 
-Comment by was created at 2008-04-05 20:28:24
+archive/issue_comments_019195.json:
+```json
+{
+    "body": "Never mind:\n\n```\n13:27 < wstein> Ah, I think I mistunderstood what the ticket is about.\n13:27 < wstein> Oops.\n13:27 < wstein> I'll change it back.\n13:28 < wstein> The problem was that the ticket description was a little vague.\n13:28 < wstein> Sorry\n```\n",
+    "created_at": "2008-04-05T20:28:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2795",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2795#issuecomment-19195",
+    "user": "was"
+}
+```
 
 Never mind:
 
@@ -130,8 +223,19 @@ Never mind:
 
 
 
+
 ---
 
-Comment by was created at 2008-04-05 20:28:24
+archive/issue_comments_019196.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-04-05T20:28:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2795",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2795#issuecomment-19196",
+    "user": "was"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 9291: Constructing a root system / coxeter group from a pair of matrices
 
-Issue created by migration from https://trac.sagemath.org/ticket/9291
-
-Original creator: nthiery
-
-Original creation time: 2010-06-21 08:22:28
-
+archive/issues_009291.json:
+```json
+{
+    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat\n\nConstructing root systems / coxeter groups / ... from a pair of\nmatrices describing the coordinates of the roots and coroots in\ntheir respective basis. Interface:\n\n\n```\n    sage: T = CartanType(roots_as_matrix, coroots_as_matrix)\n    sage: T.root_space()\n    sage: T.root_space().simple_roots()\n    sage: T.coroot_space()\n    sage: WeylGroup(T.root_space())\n    sage: WeylGroup(T)\n    sage: ReflectionGroup(T)\n```\n\n\nThe root system code is designed to support such features. Attached: a\none page proof of feasibility (not following the above interface).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9291\n\n",
+    "created_at": "2010-06-21T08:22:28Z",
+    "labels": [
+        "combinatorics",
+        "major",
+        "enhancement"
+    ],
+    "title": "Constructing a root system / coxeter group from a pair of matrices",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9291",
+    "user": "nthiery"
+}
+```
 Assignee: sage-combinat
 
 CC:  sage-combinat
@@ -30,14 +40,42 @@ The root system code is designed to support such features. Attached: a
 one page proof of feasibility (not following the above interface).
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/9291
+
+
+
+
 
 ---
+
+archive/issue_comments_087514.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2012-12-17T17:07:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9291",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9291#issuecomment-87514",
+    "user": "chapoton"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by chapoton created at 2012-12-17 17:07:50
+archive/issue_comments_087515.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"coxeter\".",
+    "created_at": "2012-12-17T17:07:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9291",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9291#issuecomment-87515",
+    "user": "chapoton"
+}
+```
 
 Changing keywords from "" to "coxeter".

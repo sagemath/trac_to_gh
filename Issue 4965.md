@@ -1,26 +1,64 @@
 # Issue 4965: [with patch, needs work] Z/nZ[x] via FLINT's zmod_poly
 
-Issue created by migration from https://trac.sagemath.org/ticket/4965
-
-Original creator: malb
-
-Original creation time: 2009-01-11 22:03:25
-
+archive/issues_004965.json:
+```json
+{
+    "body": "Assignee: somebody\n\nCC:  burcin was\n\nThe attached patches wrap FLINT's Z/nZ[x] for word sized n. This provides a considerable speed-up (~ 20x) for univariate polynomial arithmetic over these rings and also cleans up the code using the `polynomial_template.pxi` mechanism. For that `polynomial_template.pxi` was also cleaned-up which should make it more suitable for other backend implementations.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4965\n\n",
+    "created_at": "2009-01-11T22:03:25Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch, needs work] Z/nZ[x] via FLINT's zmod_poly",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4965",
+    "user": "malb"
+}
+```
 Assignee: somebody
 
 CC:  burcin was
 
 The attached patches wrap FLINT's Z/nZ[x] for word sized n. This provides a considerable speed-up (~ 20x) for univariate polynomial arithmetic over these rings and also cleans up the code using the `polynomial_template.pxi` mechanism. For that `polynomial_template.pxi` was also cleaned-up which should make it more suitable for other backend implementations.
 
+Issue created by migration from https://trac.sagemath.org/ticket/4965
+
+
+
+
 
 ---
 
-Comment by malb created at 2009-01-11 22:03:41
+archive/issue_comments_037746.json:
+```json
+{
+    "body": "apply this first",
+    "created_at": "2009-01-11T22:03:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4965",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37746",
+    "user": "malb"
+}
+```
 
 apply this first
 
 
+
 ---
+
+archive/issue_comments_037747.json:
+```json
+{
+    "body": "Attachment\n\n## Speed-Up on sage.math\n\n### Old\n\n\n```\nsage: P.<x> = PolynomialRing(GF(7))\nsage: type(x)\n<type 'sage.rings.polynomial.polynomial_modn_dense_ntl.Polynomial_dense_mod_p'>\nsage: f = P.random_element(100)\nsage: g = P.random_element(100)\nsage: %timeit f*g\n1000 loops, best of 3: 445 \u00b5s per loop\n```\n\n\n### New\n\n\n```\nsage: P.<x> = PolynomialRing(GF(7))\nsage: type(x)\n<type 'sage.rings.polynomial.polynomial_zmod_flint.Polynomial_zmod_flint'>\nsage: f = P.random_element(100)\nsage: g = P.random_element(100)\nsage: %timeit f*g\n100000 loops, best of 3: 7.92 \u00b5s per loop\n```\n",
+    "created_at": "2009-01-11T22:06:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4965",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37747",
+    "user": "malb"
+}
+```
 
 Attachment
 
@@ -55,9 +93,20 @@ sage: %timeit f*g
 
 
 
+
 ---
 
-Comment by malb created at 2009-01-11 22:07:52
+archive/issue_comments_037748.json:
+```json
+{
+    "body": "At least these two doctests fail.\n\n\n```\nsage -t  \"devel/sage/sage/schemes/hyperelliptic_curves/hyperelliptic_padic_field.py\"\nsage -t  \"devel/sage/sage/schemes/elliptic_curves/ell_number_field.py\"\n```\n\n\nI would greatly appreciate input/pointers where to look for the bug. Once I figured out which of the functions I've touched returns wrong/unexpected answers, I can fix it. However, as of now, I don't know which one it is.",
+    "created_at": "2009-01-11T22:07:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4965",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37748",
+    "user": "malb"
+}
+```
 
 At least these two doctests fail.
 
@@ -71,9 +120,20 @@ sage -t  "devel/sage/sage/schemes/elliptic_curves/ell_number_field.py"
 I would greatly appreciate input/pointers where to look for the bug. Once I figured out which of the functions I've touched returns wrong/unexpected answers, I can fix it. However, as of now, I don't know which one it is.
 
 
+
 ---
 
-Comment by malb created at 2009-01-11 22:17:09
+archive/issue_comments_037749.json:
+```json
+{
+    "body": "More details:\n\n\n```\nsage -t  \".../sage/schemes/hyperelliptic_curves/hyperelliptic_padic_field.py\"\n**********************************************************************\nFile \".../sage/schemes/hyperelliptic_curves/hyperelliptic_padic_field.py\", line 198:\n    sage: w.coleman_integral(P, Q)\nExpected:\n    O(11^6)\nGot:\n    6 + 7*11 + 8*11^2 + 7*11^3 + 3*11^4 + 10*11^5 + O(11^6)\n**********************************************************************\nFile \".../sage/schemes/hyperelliptic_curves/hyperelliptic_padic_field.py\", line 200:\n    sage: C.coleman_integral(x*w, P, Q)\nExpected:\n    O(11^6)\nGot:\n    3 + 11 + 6*11^2 + 2*11^3 + 8*11^5 + O(11^6)\n**********************************************************************\nFile \".../sage/schemes/hyperelliptic_curves/hyperelliptic_padic_field.py\", line 202:\n    sage: C.coleman_integral(x^2*w, P, Q)\nExpected:\n    3*11 + 2*11^2 + 7*11^3 + 2*11^4 + 10*11^5 + O(11^6)\nGot:\n    5 + 11 + 8*11^2 + 11^3 + 7*11^4 + 6*11^5 + O(11^6)\n**********************************************************************\nFile \".../sage/schemes/hyperelliptic_curves/hyperelliptic_padic_field.py\", line 213:\n    sage: w.integrate(P, Q), (x*w).integrate(P, Q)\nExpected:\n    (O(71^4), O(71^4))\nGot:\n    (40 + 4*71 + 21*71^2 + 39*71^3 + O(71^4), 2 + 58*71 + 27*71^2 + 49*71^3 + O(71^4))\n**********************************************************************\nFile \".../sage/schemes/hyperelliptic_curves/hyperelliptic_padic_field.py\", line 216:\n    sage: w.integrate(P, R)\nExpected:\n    42*71 + 63*71^2 + 55*71^3 + O(71^4)\nGot:\n    14 + 27*71 + 46*71^2 + 10*71^3 + O(71^4)\n```\n",
+    "created_at": "2009-01-11T22:17:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4965",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37749",
+    "user": "malb"
+}
+```
 
 More details:
 
@@ -119,9 +179,20 @@ Got:
 
 
 
+
 ---
 
-Comment by malb created at 2009-01-11 22:19:27
+archive/issue_comments_037750.json:
+```json
+{
+    "body": "\n```\nFile \".../sage/schemes/elliptic_curves/ell_number_field.py\", line 728:\n    sage: EllipticCurve([1 + a , -1 + a , 1 + a , -11 + a , 5 -9*a  ]).conductor()\nException raised:\n    Traceback (most recent call last):\n      File \".../sage/schemes/elliptic_curves/ell_number_field.py\", line 747, in conductor\n        for d in self.local_data()],\\\n      File \".../sage/schemes/elliptic_curves/ell_number_field.py\", line 396, in local_data\n        return [self._get_local_data(pr, proof) for pr in primes]\n      File \".../sage/schemes/elliptic_curves/ell_number_field.py\", line 418, in _get_local_data\n        self._local_data[P] = EllipticCurveLocalData(self, P, proof)\n      File \".../schemes/elliptic_curves/ell_local_data.py\", line 140, in __init__\n        self._Emin, ch, self._val_disc, self._fp, self._KS, self._cp, self._split = self._tate(proof)\n      File \".../sage/schemes/elliptic_curves/ell_local_data.py\", line 520, in _tate\n        r = proot(-b6, 3)\n      File \".../sage/schemes/elliptic_curves/ell_local_data.py\", line 451, in <lambda>\n        proot = lambda x,e: F.lift(F(x).nth_root(e, extend = False, all = True)[0])\n      File \"integer_mod.pyx\", line 855, in sage.rings.integer_mod.IntegerMod_abstract.nth_root (sage/rings/integer_mod.c:7712)\n      File \"polynomial_element.pyx\", line 3715, in sage.rings.polynomial.polynomial_element.Polynomial.roots (sage/rings/polynomial/polynomial_element.c:24924)\n      File \"polynomial_element.pyx\", line 2096, in sage.rings.polynomial.polynomial_element.Polynomial.factor (sage/rings/polynomial/polynomial_element.c:15667)\n    ValueError: factorization of 0 not defined\n```\n",
+    "created_at": "2009-01-11T22:19:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4965",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37750",
+    "user": "malb"
+}
+```
 
 
 ```
@@ -149,16 +220,38 @@ Exception raised:
 
 
 
+
 ---
 
-Comment by cremona created at 2009-01-11 22:34:20
+archive/issue_comments_037751.json:
+```json
+{
+    "body": "I'll try to look at the second of those since it seems to crop up in code which I wrote.  But I em extremely busy at the moment so cannot promise anything very quickly.",
+    "created_at": "2009-01-11T22:34:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4965",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37751",
+    "user": "cremona"
+}
+```
 
 I'll try to look at the second of those since it seems to crop up in code which I wrote.  But I em extremely busy at the moment so cannot promise anything very quickly.
 
 
+
 ---
 
-Comment by malb created at 2009-01-11 22:45:42
+archive/issue_comments_037752.json:
+```json
+{
+    "body": "Replying to [comment:5 cremona]:\n> I'll try to look at the second of those since it seems to crop up in code which I wrote.  But I em extremely busy at the moment so cannot promise anything very quickly.\n\nThanks!",
+    "created_at": "2009-01-11T22:45:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4965",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37752",
+    "user": "malb"
+}
+```
 
 Replying to [comment:5 cremona]:
 > I'll try to look at the second of those since it seems to crop up in code which I wrote.  But I em extremely busy at the moment so cannot promise anything very quickly.
@@ -166,20 +259,42 @@ Replying to [comment:5 cremona]:
 Thanks!
 
 
+
 ---
 
-Comment by malb created at 2009-01-12 12:25:58
+archive/issue_comments_037753.json:
+```json
+{
+    "body": "The updated patch\n* addresses a couple of remarks by Bill Hart off-list\n* changes the celement definition (following Burcin's alternative implementation)\n\nBurcin also wrapped `zmod_poly_t` two months ago and our patches match a lot. Thus, copyright should be shared. The only reason I'm using my patches as a basis is because I know them better. Btw. Burcin's patches rearrange a fair amount of stuff in `polynomial_ring.pyx` which I don't. He also splits the `polynomial_template.pxi` in `polynomial_template.pxi` and `polynomial_template_field.pxi`.",
+    "created_at": "2009-01-12T12:25:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4965",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37753",
+    "user": "malb"
+}
+```
 
 The updated patch
- * addresses a couple of remarks by Bill Hart off-list
- * changes the celement definition (following Burcin's alternative implementation)
+* addresses a couple of remarks by Bill Hart off-list
+* changes the celement definition (following Burcin's alternative implementation)
 
 Burcin also wrapped `zmod_poly_t` two months ago and our patches match a lot. Thus, copyright should be shared. The only reason I'm using my patches as a basis is because I know them better. Btw. Burcin's patches rearrange a fair amount of stuff in `polynomial_ring.pyx` which I don't. He also splits the `polynomial_template.pxi` in `polynomial_template.pxi` and `polynomial_template_field.pxi`.
 
 
+
 ---
 
-Comment by malb created at 2009-01-12 12:36:50
+archive/issue_comments_037754.json:
+```json
+{
+    "body": "## \"Long\" Doctest Failures\n\nthis one is easy:\n\n\n```\nsage -t --long \"devel/sage/sage/schemes/elliptic_curves/padics.py\"\n...\nsage.rings.polynomial.polynomial_zmod_flint.Polynomial_zmod_flint._derivative \n...\nsage.libs.ntl.ntl_lzz_pContext.ntl_zz_pContext     ValueError: Modulus (=2384185791015625) is too big\n```\n\n\n\n```\nFile \".../sage/schemes/elliptic_curves/ell_number_field.py\", line 728:\n    sage: EllipticCurve([1 + a , -1 + a , 1 + a , -11 + a , 5 -9*a  ]).conductor()\n...\n    ValueError: factorization of 0 not defined\n```\n\n\n\n```\nsage -t --long \"devel/sage/sage/schemes/elliptic_curves/sha_tate.py\"\n...\n    sage: EllipticCurve('858k2').sha().an_padic(7)  #rank 0, non trivial sha  (long\n...\nsage.libs.ntl.ntl_lzz_pContext.ntl_zz_pContext     ValueError: Modulus (=558545864083284007) is too big\n```\n\n\n\n```\nsage -t --long \"devel/sage/sage/schemes/hyperelliptic_curves/hyperelliptic_padic_field.py\"\n**********************************************************************\n    sage: w.coleman_integral(P, Q)\nExpected:\n    O(11^6)\nGot:\n    6 + 7*11 + 8*11^2 + 7*11^3 + 3*11^4 + 10*11^5 + O(11^6)\n**********************************************************************\n    sage: C.coleman_integral(x*w, P, Q)\nExpected:\n    O(11^6)\nGot:\n    3 + 11 + 6*11^2 + 2*11^3 + 8*11^5 + O(11^6)\n**********************************************************************\n    sage: C.coleman_integral(x^2*w, P, Q)\nExpected:\n    3*11 + 2*11^2 + 7*11^3 + 2*11^4 + 10*11^5 + O(11^6)\nGot:\n    5 + 11 + 8*11^2 + 11^3 + 7*11^4 + 6*11^5 + O(11^6)\n**********************************************************************\n    sage: w.integrate(P, Q), (x*w).integrate(P, Q)\nExpected:\n    (O(71^4), O(71^4))\nGot:\n    (40 + 4*71 + 21*71^2 + 39*71^3 + O(71^4), 2 + 58*71 + 27*71^2 + 49*71^3 + O(71^4))\n**********************************************************************\n    sage: w.integrate(P, R)\nExpected:\n    42*71 + 63*71^2 + 55*71^3 + O(71^4)\nGot:\n    14 + 27*71 + 46*71^2 + 10*71^3 + O(71^4)\n**********************************************************************\n```\n",
+    "created_at": "2009-01-12T12:36:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4965",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37754",
+    "user": "malb"
+}
+```
 
 ## "Long" Doctest Failures
 
@@ -252,9 +367,20 @@ Got:
 
 
 
+
 ---
 
-Comment by malb created at 2009-01-12 16:31:38
+archive/issue_comments_037755.json:
+```json
+{
+    "body": "The updated `zmod_poly.patch` fixes the two \n\n\n```\nValueError: Modulus (...) is too big\n```\n\n\nerrors. So we're back to square one and these two fail:\n\n\n```\nsage -t  \"devel/sage/sage/schemes/hyperelliptic_curves/hyperelliptic_padic_field.py\"\nsage -t  \"devel/sage/sage/schemes/elliptic_curves/ell_number_field.py\"\n```\n",
+    "created_at": "2009-01-12T16:31:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4965",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37755",
+    "user": "malb"
+}
+```
 
 The updated `zmod_poly.patch` fixes the two 
 
@@ -274,9 +400,20 @@ sage -t  "devel/sage/sage/schemes/elliptic_curves/ell_number_field.py"
 
 
 
+
 ---
 
-Comment by malb created at 2009-01-13 01:16:03
+archive/issue_comments_037756.json:
+```json
+{
+    "body": "The patch update adds a simple zn_poly interface to `Polynomial_zmod_flint`.\n\n## Performance\n\n\n```\ndef f(p,n):\n    P = PolynomialRing(GF(next_prime(p)),'x')\n    f = P.random_element(n)\n    g = P.random_element(n)\n\n    t0 = cputime()\n    r0 = f*g\n    t0 = cputime(t0)\n\n    t1 = cputime()\n    r1 = f._mul_zn_poly(g)\n    t1 = cputime(t1)\n\n    assert(r0 == r1)\n\n    return p,n,t0,t1\n\nfor i in range(21): \n   f(2**47,2**i)\n```\n\n\nreturns\n\n\n```\n# (140737488355328, 1, 0.0, 0.0)\n# (140737488355328, 2, 0.0, 0.0)\n# (140737488355328, 4, 0.00099999999999766942, 0.0)\n# (140737488355328, 8, 0.0, 0.0)\n# (140737488355328, 16, 0.0, 0.0)\n# (140737488355328, 32, 0.0059990000000027521, 0.0)\n# (140737488355328, 64, 0.0, 0.0)\n# (140737488355328, 128, 0.0, 0.0)\n# (140737488355328, 256, 0.0, 0.0)\n# (140737488355328, 512, 0.0, 0.00099999999999766942)\n# (140737488355328, 1024, 0.00099999999999766942, 0.0)\n# (140737488355328, 2048, 0.0020000000000024443, 0.0019989999999978636)\n# (140737488355328, 4096, 0.0049989999999979773, 0.005000000000002558)\n# (140737488355328, 8192, 0.010998000000000729, 0.011997999999998399)\n# (140737488355328, 16384, 0.023995999999996798, 0.023997000000001378)\n# (140737488355328, 32768, 0.050992000000000814, 0.052991999999996153)\n# (140737488355328, 65536, 0.1149820000000048, 0.10598499999999689)\n# (140737488355328, 131072, 0.29195599999999189, 0.21996599999999944)\n# (140737488355328, 262144, 0.6119070000000022, 0.45393199999999467)\n# (140737488355328, 524288, 1.5217689999999919, 1.0278430000000043)\n# (140737488355328, 1048576, 3.1365230000000111, 2.0966819999999871)\n```\n",
+    "created_at": "2009-01-13T01:16:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4965",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37756",
+    "user": "malb"
+}
+```
 
 The patch update adds a simple zn_poly interface to `Polynomial_zmod_flint`.
 
@@ -335,9 +472,20 @@ returns
 
 
 
+
 ---
 
-Comment by cremona created at 2009-01-13 23:05:43
+archive/issue_comments_037757.json:
+```json
+{
+    "body": "Here's what is causing the problem in the ell_number_field.py test:\n\nIf F is a field of 3 elements, b=F(0), then b.nth_root(0) gives an error:\n\n```\nsage: K.<a>=NumberField(x^2-x+3)\nsage: F=K.residue_field(a); F; F.order()\nResidue field of Fractional ideal (a)\n3\nsage: b=F(0); b\n0\nsage: b.nth_root(3)\nValueError: factorization of 0 not defined\n```\n\nThe nth_root() function being called here is at fault, but that's as far as I got.",
+    "created_at": "2009-01-13T23:05:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4965",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37757",
+    "user": "cremona"
+}
+```
 
 Here's what is causing the problem in the ell_number_field.py test:
 
@@ -357,23 +505,56 @@ ValueError: factorization of 0 not defined
 The nth_root() function being called here is at fault, but that's as far as I got.
 
 
+
 ---
 
-Comment by cremona created at 2009-01-14 08:54:56
+archive/issue_comments_037758.json:
+```json
+{
+    "body": "PS To the above:  The nth_root() function should definitely catch x=0 as a special trivial case.  But here that would just hide the problem, that calling roots() on the polynomial `x^3` over the field F causes a crash.  I have not time to dig deeper:  I would expect that first one would take `gcd(x<sup>3,x</sup>3-x)` ...",
+    "created_at": "2009-01-14T08:54:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4965",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37758",
+    "user": "cremona"
+}
+```
 
 PS To the above:  The nth_root() function should definitely catch x=0 as a special trivial case.  But here that would just hide the problem, that calling roots() on the polynomial `x^3` over the field F causes a crash.  I have not time to dig deeper:  I would expect that first one would take `gcd(x<sup>3,x</sup>3-x)` ...
 
 
+
 ---
 
-Comment by malb created at 2009-01-14 09:47:27
+archive/issue_comments_037759.json:
+```json
+{
+    "body": "Thanks a lot John! I now have a function to debug which should be sufficient to track down the bug.",
+    "created_at": "2009-01-14T09:47:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4965",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37759",
+    "user": "malb"
+}
+```
 
 Thanks a lot John! I now have a function to debug which should be sufficient to track down the bug.
 
 
+
 ---
 
-Comment by malb created at 2009-01-14 13:41:04
+archive/issue_comments_037760.json:
+```json
+{
+    "body": "Thanks to John's comment we're now down to one doctest failure:\n\n\n```\nsage -t --long ...sage/schemes/hyperelliptic_curves/hyperelliptic_padic_field.py\n```\n\n\n\n```\n**********************************************************************\nFile \".../sage/schemes/hyperelliptic_curves/hyperelliptic_padic_field.py\", line 198:\n    sage: w.coleman_integral(P, Q)\nExpected:\n    O(11^6)\nGot:\n    6 + 7*11 + 8*11^2 + 7*11^3 + 3*11^4 + 10*11^5 + O(11^6)\n**********************************************************************\nFile \".../sage/schemes/hyperelliptic_curves/hyperelliptic_padic_field.py\", line 200:\n    sage: C.coleman_integral(x*w, P, Q)\nExpected:\n    O(11^6)\nGot:\n    3 + 11 + 6*11^2 + 2*11^3 + 8*11^5 + O(11^6)\n**********************************************************************\nFile \".../sage/schemes/hyperelliptic_curves/hyperelliptic_padic_field.py\", line 202:\n    sage: C.coleman_integral(x^2*w, P, Q)\nExpected:\n    3*11 + 2*11^2 + 7*11^3 + 2*11^4 + 10*11^5 + O(11^6)\nGot:\n    5 + 11 + 8*11^2 + 11^3 + 7*11^4 + 6*11^5 + O(11^6)\n**********************************************************************\nFile \".../sage/schemes/hyperelliptic_curves/hyperelliptic_padic_field.py\", line 213:\n    sage: w.integrate(P, Q), (x*w).integrate(P, Q)\nExpected:\n    (O(71^4), O(71^4))\nGot:\n    (40 + 4*71 + 21*71^2 + 39*71^3 + O(71^4), 2 + 58*71 + 27*71^2 + 49*71^3 + O(71^4))\n**********************************************************************\nFile \".../sage/schemes/hyperelliptic_curves/hyperelliptic_padic_field.py\", line 216:\n    sage: w.integrate(P, R)\nExpected:\n    42*71 + 63*71^2 + 55*71^3 + O(71^4)\nGot:\n    14 + 27*71 + 46*71^2 + 10*71^3 + O(71^4)\n```\n",
+    "created_at": "2009-01-14T13:41:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4965",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37760",
+    "user": "malb"
+}
+```
 
 Thanks to John's comment we're now down to one doctest failure:
 
@@ -424,16 +605,38 @@ Got:
 
 
 
+
 ---
 
-Comment by cremona created at 2009-01-14 20:38:14
+archive/issue_comments_037761.json:
+```json
+{
+    "body": "I'm glad that this bug made me look at that code, since what I found was that the only situations where I was calling that nth_root() function were for square roots in residue fields of characteristic 2 and cube roots in char. 3.  In both cases there is a special p'th root function implemented by jhpalmieri in #4553 which I reviewed and which could be used instead, which should be quicker.  So this bug will have had a useful side-effect or two...",
+    "created_at": "2009-01-14T20:38:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4965",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37761",
+    "user": "cremona"
+}
+```
 
 I'm glad that this bug made me look at that code, since what I found was that the only situations where I was calling that nth_root() function were for square roots in residue fields of characteristic 2 and cube roots in char. 3.  In both cases there is a special p'th root function implemented by jhpalmieri in #4553 which I reviewed and which could be used instead, which should be quicker.  So this bug will have had a useful side-effect or two...
 
 
+
 ---
 
-Comment by robertwb created at 2009-01-15 02:17:04
+archive/issue_comments_037762.json:
+```json
+{
+    "body": "Some comments: \n\n1) Is there any reason __len__ was removed from GF(2)[x]? If we're going to take it out, it should at lest be deprecated, but I think it's useful to have. \n2) It is preferable to use .pxd files rather than .pxi files. \n\nI'm still looking into why the doctest failure above, and nothing obvious is coming to mind. Falling back to ntl polynomials gives the same wrong answer, so it must be something different in the way polynomials are interfaced/used.",
+    "created_at": "2009-01-15T02:17:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4965",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37762",
+    "user": "robertwb"
+}
+```
 
 Some comments: 
 
@@ -443,23 +646,58 @@ Some comments:
 I'm still looking into why the doctest failure above, and nothing obvious is coming to mind. Falling back to ntl polynomials gives the same wrong answer, so it must be something different in the way polynomials are interfaced/used.
 
 
+
 ---
+
+archive/issue_comments_037763.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-01-15T05:29:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4965",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37763",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by robertwb created at 2009-01-15 05:32:43
+archive/issue_comments_037764.json:
+```json
+{
+    "body": "See attached. \n\nPerhaps `__rshift__` and `__lshift__` should call shift, it seems redundant to have code in all three. Also, I bet ntl and flint can shift faster than a multiply and/or divide.",
+    "created_at": "2009-01-15T05:32:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4965",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37764",
+    "user": "robertwb"
+}
+```
 
 See attached. 
 
 Perhaps `__rshift__` and `__lshift__` should call shift, it seems redundant to have code in all three. Also, I bet ntl and flint can shift faster than a multiply and/or divide.
 
 
+
 ---
 
-Comment by malb created at 2009-01-15 12:03:34
+archive/issue_comments_037765.json:
+```json
+{
+    "body": "> Perhaps `__rshift__` and `__lshift__` should call shift, it seems \n> redundant to have code in all three. Also, I bet ntl and flint can shift faster\n> than a multiply and/or divide. \n\nI'd expect them to detect shifts, but I might be wrong. Should there be a  `celement_rshift`/`celement_lshift`?",
+    "created_at": "2009-01-15T12:03:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4965",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37765",
+    "user": "malb"
+}
+```
 
 > Perhaps `__rshift__` and `__lshift__` should call shift, it seems 
 > redundant to have code in all three. Also, I bet ntl and flint can shift faster
@@ -468,18 +706,40 @@ Comment by malb created at 2009-01-15 12:03:34
 I'd expect them to detect shifts, but I might be wrong. Should there be a  `celement_rshift`/`celement_lshift`?
 
 
+
 ---
 
-Comment by burcin created at 2009-01-15 12:21:28
+archive/issue_comments_037766.json:
+```json
+{
+    "body": "Malb, my wrapper provides support for the shifts, you can just copy it from there.\n\nI think keeping a generic implementation in the Polynomial_template class, and overriding it if there is support for faster methods is good enough. Though maybe separating the user interface and functionality into 2 different functions (e.g. shift_left(), _shift_left_c()) might be better, so that the user interface and docstrings are consistent for subclasses.",
+    "created_at": "2009-01-15T12:21:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4965",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37766",
+    "user": "burcin"
+}
+```
 
 Malb, my wrapper provides support for the shifts, you can just copy it from there.
 
 I think keeping a generic implementation in the Polynomial_template class, and overriding it if there is support for faster methods is good enough. Though maybe separating the user interface and functionality into 2 different functions (e.g. shift_left(), _shift_left_c()) might be better, so that the user interface and docstrings are consistent for subclasses.
 
 
+
 ---
 
-Comment by malb created at 2009-01-15 12:43:46
+archive/issue_comments_037767.json:
+```json
+{
+    "body": "Replying to [comment:17 robertwb]:\n> Some comments: \n> \n> 1) Is there any reason __len__ was removed from GF(2)[x]? If we're going to take it out, it should at lest be deprecated, but I think it's useful to have. \n\nlen shouldn't have been there in the first place because it is inconsistent with the rest of the univariate polynomials. \n\n> 2) It is preferable to use .pxd files rather than .pxi files. \n\nOkay, I'll change that then.",
+    "created_at": "2009-01-15T12:43:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4965",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37767",
+    "user": "malb"
+}
+```
 
 Replying to [comment:17 robertwb]:
 > Some comments: 
@@ -493,9 +753,20 @@ len shouldn't have been there in the first place because it is inconsistent with
 Okay, I'll change that then.
 
 
+
 ---
 
-Comment by malb created at 2009-01-15 13:55:25
+archive/issue_comments_037768.json:
+```json
+{
+    "body": "Replying to [comment:17 robertwb]:\n> I'm still looking into why the doctest failure above, and nothing obvious is coming to mind. Falling back to ntl polynomials gives the same wrong answer, so it must be something different in the way polynomials are interfaced/used. \n\nI can't reproduce the behaviour you're describing. Maybe you missed that there are two places where `Polynomial_zmod_poly` is constructed (modn and modp). It fails if I leave the modn stuff in.",
+    "created_at": "2009-01-15T13:55:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4965",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37768",
+    "user": "malb"
+}
+```
 
 Replying to [comment:17 robertwb]:
 > I'm still looking into why the doctest failure above, and nothing obvious is coming to mind. Falling back to ntl polynomials gives the same wrong answer, so it must be something different in the way polynomials are interfaced/used. 
@@ -503,16 +774,38 @@ Replying to [comment:17 robertwb]:
 I can't reproduce the behaviour you're describing. Maybe you missed that there are two places where `Polynomial_zmod_poly` is constructed (modn and modp). It fails if I leave the modn stuff in.
 
 
+
 ---
 
-Comment by malb created at 2009-01-15 14:40:43
+archive/issue_comments_037769.json:
+```json
+{
+    "body": "it seems like Robert's patch fixes the issue (I just realized now). I'm running `-t --long` now to see if everything is alright. Then I'll switch stuff around to pxd and do the shift business.",
+    "created_at": "2009-01-15T14:40:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4965",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37769",
+    "user": "malb"
+}
+```
 
 it seems like Robert's patch fixes the issue (I just realized now). I'm running `-t --long` now to see if everything is alright. Then I'll switch stuff around to pxd and do the shift business.
 
 
+
 ---
 
-Comment by malb created at 2009-01-15 16:33:56
+archive/issue_comments_037770.json:
+```json
+{
+    "body": "\n```\nmalb@sage:~/sage-3.2.2/devel/sage$ sage -tp 10 --long sage/\n...\nAll tests passed!\n```\n",
+    "created_at": "2009-01-15T16:33:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4965",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37770",
+    "user": "malb"
+}
+```
 
 
 ```
@@ -523,9 +816,20 @@ All tests passed!
 
 
 
+
 ---
 
-Comment by robertwb created at 2009-01-15 19:58:43
+archive/issue_comments_037771.json:
+```json
+{
+    "body": "malb: Yes, I was missing the fact that I had to change modn and modp, but in any case I found the bug in the end. \n\nRegarding len, I think it would be useful to have for all univariate polynomials, but it's not a big deal. \n\nRegarding shifts, I think we already have too many functions, and shouldn't be introducing even more. I think there should be a celement_shift (which takes positive and negative values), and the template `__lshift__, __rshift__`, and `shift` all call this. It's probably the exception to not have specialized shift methods, and in this case one would manually implement them in celement_shift.",
+    "created_at": "2009-01-15T19:58:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4965",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37771",
+    "user": "robertwb"
+}
+```
 
 malb: Yes, I was missing the fact that I had to change modn and modp, but in any case I found the bug in the end. 
 
@@ -534,59 +838,127 @@ Regarding len, I think it would be useful to have for all univariate polynomials
 Regarding shifts, I think we already have too many functions, and shouldn't be introducing even more. I think there should be a celement_shift (which takes positive and negative values), and the template `__lshift__, __rshift__`, and `shift` all call this. It's probably the exception to not have specialized shift methods, and in this case one would manually implement them in celement_shift.
 
 
+
 ---
 
-Comment by robertwb created at 2009-01-15 19:59:09
+archive/issue_comments_037772.json:
+```json
+{
+    "body": "I've made the shifting issue a new ticket: #4982",
+    "created_at": "2009-01-15T19:59:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4965",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37772",
+    "user": "robertwb"
+}
+```
 
 I've made the shifting issue a new ticket: #4982
 
 
+
 ---
 
-Comment by malb created at 2009-01-15 20:41:28
+archive/issue_comments_037773.json:
+```json
+{
+    "body": "So I need to switch from pxi to pxd for \n* `polynomial_template.pxi`\n* `ntl_GF2X_linkage.pxi`\n* `flint_zmod_poly_linkage.pxi`\nand the ticket is ready for review. Or am I missing something?",
+    "created_at": "2009-01-15T20:41:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4965",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37773",
+    "user": "malb"
+}
+```
 
 So I need to switch from pxi to pxd for 
- * `polynomial_template.pxi`
- * `ntl_GF2X_linkage.pxi`
- * `flint_zmod_poly_linkage.pxi`
+* `polynomial_template.pxi`
+* `ntl_GF2X_linkage.pxi`
+* `flint_zmod_poly_linkage.pxi`
 and the ticket is ready for review. Or am I missing something?
 
 
+
 ---
 
-Comment by robertwb created at 2009-01-15 21:04:10
+archive/issue_comments_037774.json:
+```json
+{
+    "body": "Sorry for not being clear. The files you listed:\n\n* polynomial_template.pxi\n* flint_zmod_poly_linkage.pxi \n\nare the ones that should be .pxi (as they're actually included). The files that should be .pxd are\n\n* flint.pxi\n* ntl_interface.pxi\n* zmod_poly.pxi\n\nas they are declaration files. An example is worth a thousand words, I'll attach a patch (which you can fold into yours if you want).",
+    "created_at": "2009-01-15T21:04:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4965",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37774",
+    "user": "robertwb"
+}
+```
 
 Sorry for not being clear. The files you listed:
 
-    * polynomial_template.pxi
-    * flint_zmod_poly_linkage.pxi 
+* polynomial_template.pxi
+* flint_zmod_poly_linkage.pxi 
 
 are the ones that should be .pxi (as they're actually included). The files that should be .pxd are
 
- * flint.pxi
- * ntl_interface.pxi
- * zmod_poly.pxi
+* flint.pxi
+* ntl_interface.pxi
+* zmod_poly.pxi
 
 as they are declaration files. An example is worth a thousand words, I'll attach a patch (which you can fold into yours if you want).
 
 
+
 ---
 
-Comment by robertwb created at 2009-01-15 21:19:27
+archive/issue_comments_037775.json:
+```json
+{
+    "body": "move pxi declarations to pxd",
+    "created_at": "2009-01-15T21:19:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4965",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37775",
+    "user": "robertwb"
+}
+```
 
 move pxi declarations to pxd
 
 
+
 ---
+
+archive/issue_comments_037776.json:
+```json
+{
+    "body": "Attachment\n\nOK, I attached a patch. This should probably be folded into zmod_poly.patch",
+    "created_at": "2009-01-15T21:20:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4965",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37776",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 OK, I attached a patch. This should probably be folded into zmod_poly.patch
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-15 22:21:53
+archive/issue_comments_037777.json:
+```json
+{
+    "body": "I had a lock and the direct use of ling in the FLINT headers is a bad thing on LLP platforms, i.e. Solaris, for at least efficiency reasons. I will complain about this to Bill and see what happens, but I guess this should not prevent this patch from going in for now.\n\nCheers,\n\nMichael",
+    "created_at": "2009-01-15T22:21:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4965",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37777",
+    "user": "mabshoff"
+}
+```
 
 I had a lock and the direct use of ling in the FLINT headers is a bad thing on LLP platforms, i.e. Solaris, for at least efficiency reasons. I will complain about this to Bill and see what happens, but I guess this should not prevent this patch from going in for now.
 
@@ -595,18 +967,40 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by malb created at 2009-01-19 02:37:36
+archive/issue_comments_037778.json:
+```json
+{
+    "body": "to apply:\n* `polynomial_template.patch`\n* `zmod_poly.patch`",
+    "created_at": "2009-01-19T02:37:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4965",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37778",
+    "user": "malb"
+}
+```
 
 to apply:
- * `polynomial_template.patch`
- * `zmod_poly.patch`
+* `polynomial_template.patch`
+* `zmod_poly.patch`
+
 
 
 ---
 
-Comment by mabshoff created at 2009-01-19 05:45:49
+archive/issue_comments_037779.json:
+```json
+{
+    "body": "For the record: Doctests on sage.math pass.\n\nRobert: If humanly possible can you review this in the next couple hours? Then this patch will make it into 3.3.alpha0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-01-19T05:45:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4965",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37779",
+    "user": "mabshoff"
+}
+```
 
 For the record: Doctests on sage.math pass.
 
@@ -617,9 +1011,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by robertwb created at 2009-01-19 21:28:35
+archive/issue_comments_037780.json:
+```json
+{
+    "body": "The code looks good, and seems to work for me. \n\nOne failure in the doctests: \n\n\n```\nsage -t  \"sage/rings/polynomial//polynomial_zmod_flint.pyx\" \n**********************************************************************\nFile \"/Users/robert/sage/sage-3.1.3/devel/sage-trac4965/sage/rings/polynomial/polynomial_zmod_flint.pyx\", line 236:\n    sage: f*g == f._mul_zn_poly(g)\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/robert/sage/current/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/robert/sage/current/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/robert/sage/current/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_8[5]>\", line 1, in <module>\n        f*g == f._mul_zn_poly(g)###line 236:\n    sage: f*g == f._mul_zn_poly(g)\n    AttributeError: 'sage.rings.polynomial.polynomial_modn_dense_ntl.Po' object has no attribute '_mul_zn_poly'\n**********************************************************************\n1 items had failures:\n   1 of  10 in __main__.example_8\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /Users/robert/sage/current/tmp/.doctest_polynomial_zmod_flint.py\n```\n\n\nshould be an easy fix.",
+    "created_at": "2009-01-19T21:28:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4965",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37780",
+    "user": "robertwb"
+}
+```
 
 The code looks good, and seems to work for me. 
 
@@ -654,30 +1059,74 @@ For whitespace errors, see the file /Users/robert/sage/current/tmp/.doctest_poly
 should be an easy fix.
 
 
+
 ---
 
-Comment by malb created at 2009-01-20 05:53:14
+archive/issue_comments_037781.json:
+```json
+{
+    "body": "I cannot reproduce your failure neither could mabshoff (from the above statement). Maybe there was a problem applying the patches?",
+    "created_at": "2009-01-20T05:53:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4965",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37781",
+    "user": "malb"
+}
+```
 
 I cannot reproduce your failure neither could mabshoff (from the above statement). Maybe there was a problem applying the patches?
 
 
+
 ---
 
-Comment by robertwb created at 2009-01-20 06:01:29
+archive/issue_comments_037782.json:
+```json
+{
+    "body": "I bet I have a different cutoff between flint and ntl for a 32-bit machine.",
+    "created_at": "2009-01-20T06:01:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4965",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37782",
+    "user": "robertwb"
+}
+```
 
 I bet I have a different cutoff between flint and ntl for a 32-bit machine.
 
 
+
 ---
 
-Comment by malb created at 2009-01-20 06:13:11
+archive/issue_comments_037783.json:
+```json
+{
+    "body": "You are of course right. I changed the doctest to use `next_prime(GF(2^31))` which should work on 32-bit systems. However, this raises the question whether we want to be consistent across all platforms for the cutoff: w.r.t. `Matrix_modn_dense` mabshoff and wstein indicated their desire to do so in another ticket.",
+    "created_at": "2009-01-20T06:13:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4965",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37783",
+    "user": "malb"
+}
+```
 
 You are of course right. I changed the doctest to use `next_prime(GF(2^31))` which should work on 32-bit systems. However, this raises the question whether we want to be consistent across all platforms for the cutoff: w.r.t. `Matrix_modn_dense` mabshoff and wstein indicated their desire to do so in another ticket.
 
 
+
 ---
 
-Comment by robertwb created at 2009-01-20 06:20:42
+archive/issue_comments_037784.json:
+```json
+{
+    "body": "Looks like you have to go down to 2^30. \n\n\n```\nsage: P.<x> = PolynomialRing(GF(next_prime(2^31)))\nsage: type(x)\n<type 'sage.rings.polynomial.polynomial_modn_dense_ntl.Polynomial_dense_mod_p'>\nsage: P.<x> = PolynomialRing(GF(next_prime(2^30)))\nsage: type(x)\n<type 'sage.rings.polynomial.polynomial_zmod_flint.Polynomial_zmod_flint'>\n```\n\n\nPersonally, I think it's a bad idea to impose a 32-b it cutoff for 64-bit platforms.",
+    "created_at": "2009-01-20T06:20:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4965",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37784",
+    "user": "robertwb"
+}
+```
 
 Looks like you have to go down to 2^30. 
 
@@ -695,16 +1144,40 @@ sage: type(x)
 Personally, I think it's a bad idea to impose a 32-b it cutoff for 64-bit platforms.
 
 
+
 ---
+
+archive/issue_comments_037785.json:
+```json
+{
+    "body": "Attachment\n\ngoing down to 2^30",
+    "created_at": "2009-01-20T06:26:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4965",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37785",
+    "user": "malb"
+}
+```
 
 Attachment
 
 going down to 2^30
 
 
+
 ---
 
-Comment by malb created at 2009-01-20 06:27:02
+archive/issue_comments_037786.json:
+```json
+{
+    "body": "Replying to [comment:37 robertwb]:\n> Looks like you have to go down to 2^30. \n\ndone.",
+    "created_at": "2009-01-20T06:27:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4965",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37786",
+    "user": "malb"
+}
+```
 
 Replying to [comment:37 robertwb]:
 > Looks like you have to go down to 2^30. 
@@ -712,22 +1185,55 @@ Replying to [comment:37 robertwb]:
 done.
 
 
+
 ---
 
-Comment by robertwb created at 2009-01-20 07:06:28
+archive/issue_comments_037787.json:
+```json
+{
+    "body": "That resolved all of my concerns, positive review.",
+    "created_at": "2009-01-20T07:06:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4965",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37787",
+    "user": "robertwb"
+}
+```
 
 That resolved all of my concerns, positive review.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-22 23:34:40
+archive/issue_comments_037788.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-01-22T23:34:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4965",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37788",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-22 23:34:40
+archive/issue_comments_037789.json:
+```json
+{
+    "body": "Merged polynomial_template.patch and zmod_poly.patch in Sage 3.3.alpha1",
+    "created_at": "2009-01-22T23:34:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4965",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4965#issuecomment-37789",
+    "user": "mabshoff"
+}
+```
 
 Merged polynomial_template.patch and zmod_poly.patch in Sage 3.3.alpha1

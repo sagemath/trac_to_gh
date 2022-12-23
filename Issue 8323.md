@@ -1,11 +1,21 @@
 # Issue 8323: The variable "name" is predefined in Sage
 
-Issue created by migration from https://trac.sagemath.org/ticket/8323
-
-Original creator: roed
-
-Original creation time: 2010-02-22 02:33:45
-
+archive/issues_008323.json:
+```json
+{
+    "body": "Assignee: tbd\n\nTry the following:\n\n```\nsage: name\n'KodairaSymbol'\nsage: type(name)\n<type 'str'>\n```\n\n\nI'm not sure where this gets imported, but it seems wrong.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8323\n\n",
+    "created_at": "2010-02-22T02:33:45Z",
+    "labels": [
+        "misc",
+        "trivial",
+        "bug"
+    ],
+    "title": "The variable \"name\" is predefined in Sage",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8323",
+    "user": "roed"
+}
+```
 Assignee: tbd
 
 Try the following:
@@ -20,17 +30,43 @@ sage: type(name)
 
 I'm not sure where this gets imported, but it seems wrong.
 
+Issue created by migration from https://trac.sagemath.org/ticket/8323
+
+
+
+
 
 ---
 
-Comment by craigcitro created at 2010-02-22 05:40:39
+archive/issue_comments_073865.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-02-22T05:40:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8323",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8323#issuecomment-73865",
+    "user": "craigcitro"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by craigcitro created at 2010-02-22 05:40:39
+archive/issue_comments_073866.json:
+```json
+{
+    "body": "It's coming from near line 150 in `sage/all.py`: \n\n\n```\n#Deprecate the is_* functions from the top level\n#All of these functions should be removed from the top level\n#after a few releases, and this code should be removed.\n#--Mike Hansen 9/25/2008\nglobs = globals()\nfrom functools import wraps, partial\nfor name,func in globs.items():\n```\n\n\n... but then `name` and `func` are never deleted. (Ahh, scoping in Python.) Sure enough, `func` is defined, too:\n\n\n```\nsage: func\n<function KodairaSymbol at 0x10940daa0>\n```\n\n\nSo I'm attaching an obvious patch -- there might be something classier, but this works. (And yes, this is still necessary in Py3.)",
+    "created_at": "2010-02-22T05:40:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8323",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8323#issuecomment-73866",
+    "user": "craigcitro"
+}
+```
 
 It's coming from near line 150 in `sage/all.py`: 
 
@@ -58,61 +94,151 @@ sage: func
 So I'm attaching an obvious patch -- there might be something classier, but this works. (And yes, this is still necessary in Py3.)
 
 
+
 ---
 
-Comment by zimmerma created at 2010-02-25 15:50:20
+archive/issue_comments_073867.json:
+```json
+{
+    "body": "After applying the patch, `sage -t` gives the same 22 failures as with vanilla 4.3.3\n(see #7773). However it would be good to add one test to check that `name` and `func`\nare undefined at start.",
+    "created_at": "2010-02-25T15:50:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8323",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8323#issuecomment-73867",
+    "user": "zimmerma"
+}
+```
 
 After applying the patch, `sage -t` gives the same 22 failures as with vanilla 4.3.3
 (see #7773). However it would be good to add one test to check that `name` and `func`
 are undefined at start.
 
 
+
 ---
 
-Comment by zimmerma created at 2010-02-25 15:50:20
+archive/issue_comments_073868.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-02-25T15:50:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8323",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8323#issuecomment-73868",
+    "user": "zimmerma"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
+
+archive/issue_comments_073869.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-02-25T17:46:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8323",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8323#issuecomment-73869",
+    "user": "craigcitro"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by craigcitro created at 2010-02-25 17:48:54
+archive/issue_comments_073870.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-02-25T17:48:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8323",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8323#issuecomment-73870",
+    "user": "craigcitro"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by craigcitro created at 2010-02-25 17:48:54
+archive/issue_comments_073871.json:
+```json
+{
+    "body": "Ahh, good point. We don't really have a standard place to put doctests for build/startup stuff, so I picked `sage/misc/misc.py`. If anyone can think of a better place, I'm happy to hear. (I don't think it's worth creating a whole new file for until we have a few more tests.)\n\nI've added a test and a new version of the patch.",
+    "created_at": "2010-02-25T17:48:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8323",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8323#issuecomment-73871",
+    "user": "craigcitro"
+}
+```
 
 Ahh, good point. We don't really have a standard place to put doctests for build/startup stuff, so I picked `sage/misc/misc.py`. If anyone can think of a better place, I'm happy to hear. (I don't think it's worth creating a whole new file for until we have a few more tests.)
 
 I've added a test and a new version of the patch.
 
 
+
 ---
 
-Comment by zimmerma created at 2010-02-25 18:10:15
+archive/issue_comments_073872.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-02-25T18:10:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8323",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8323#issuecomment-73872",
+    "user": "zimmerma"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by zimmerma created at 2010-02-25 18:10:15
+archive/issue_comments_073873.json:
+```json
+{
+    "body": "> I've added a test and a new version of the patch. \n\ngreat: positive review for me.",
+    "created_at": "2010-02-25T18:10:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8323",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8323#issuecomment-73873",
+    "user": "zimmerma"
+}
+```
 
 > I've added a test and a new version of the patch. 
 
 great: positive review for me.
 
 
+
 ---
 
-Comment by mvngu created at 2010-03-02 21:02:08
+archive/issue_comments_073874.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-03-02T21:02:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8323",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8323#issuecomment-73874",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

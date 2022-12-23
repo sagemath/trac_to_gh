@@ -1,26 +1,64 @@
 # Issue 9694: Implement direct product of cyclic groups
 
-Issue created by migration from https://trac.sagemath.org/ticket/9694
-
-Original creator: rbeezer
-
-Original creation time: 2010-08-06 02:59:40
-
+archive/issues_009694.json:
+```json
+{
+    "body": "Assignee: joyner\n\nCC:  was davidloeffler cremona\n\nThis will be a straightforward implementation of a direct product of cyclic groups, allowing students to experiment with basic notions of order, cyclicness, subgroups, etc.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9694\n\n",
+    "created_at": "2010-08-06T02:59:40Z",
+    "labels": [
+        "group theory",
+        "major",
+        "enhancement"
+    ],
+    "title": "Implement direct product of cyclic groups",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9694",
+    "user": "rbeezer"
+}
+```
 Assignee: joyner
 
 CC:  was davidloeffler cremona
 
 This will be a straightforward implementation of a direct product of cyclic groups, allowing students to experiment with basic notions of order, cyclicness, subgroups, etc.
 
+Issue created by migration from https://trac.sagemath.org/ticket/9694
+
+
+
+
 
 ---
 
-Comment by rbeezer created at 2010-08-06 03:04:04
+archive/issue_comments_094218.json:
+```json
+{
+    "body": "Preliminary version, no doctests, etc",
+    "created_at": "2010-08-06T03:04:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9694",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9694#issuecomment-94218",
+    "user": "rbeezer"
+}
+```
 
 Preliminary version, no doctests, etc
 
 
+
 ---
+
+archive/issue_comments_094219.json:
+```json
+{
+    "body": "Attachment\n\nPatch is a rough cut. Requires something in the 4.5.2 alpha/rc series to work.\n\nPosted here because of the hack to avoid having the `__call__` function in the derived class not get called during the initialization.\n\nSomewhere (once per invariant, I think) the creation of the optimized quotient module has a \"self()\" call that reaches all the way down into this class and if the optimized module is used for conversion, it just causes infinite recursion.  (Also happens with saving _orig_gens but that is more obvious).\n\nNeed for the conversion is described more fully at #9695.  Help or advice needed!",
+    "created_at": "2010-08-06T03:25:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9694",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9694#issuecomment-94219",
+    "user": "rbeezer"
+}
+```
 
 Attachment
 
@@ -33,22 +71,55 @@ Somewhere (once per invariant, I think) the creation of the optimized quotient m
 Need for the conversion is described more fully at #9695.  Help or advice needed!
 
 
+
 ---
 
-Comment by rbeezer created at 2010-08-06 03:25:50
+archive/issue_comments_094220.json:
+```json
+{
+    "body": "Changing status from new to needs_info.",
+    "created_at": "2010-08-06T03:25:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9694",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9694#issuecomment-94220",
+    "user": "rbeezer"
+}
+```
 
 Changing status from new to needs_info.
 
 
+
 ---
 
-Comment by rbeezer created at 2010-08-23 06:53:50
+archive/issue_comments_094221.json:
+```json
+{
+    "body": "This ticket can be killed.  Work at #9773 supersedes it, while comments at #9695 explains some of my confusion.",
+    "created_at": "2010-08-23T06:53:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9694",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9694#issuecomment-94221",
+    "user": "rbeezer"
+}
+```
 
 This ticket can be killed.  Work at #9773 supersedes it, while comments at #9695 explains some of my confusion.
 
 
+
 ---
 
-Comment by rbeezer created at 2010-08-23 06:53:50
+archive/issue_comments_094222.json:
+```json
+{
+    "body": "Changing status from needs_info to needs_work.",
+    "created_at": "2010-08-23T06:53:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9694",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9694#issuecomment-94222",
+    "user": "rbeezer"
+}
+```
 
 Changing status from needs_info to needs_work.

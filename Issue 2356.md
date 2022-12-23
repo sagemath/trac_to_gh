@@ -1,11 +1,21 @@
 # Issue 2356: Bug in discrete_log_generic
 
-Issue created by migration from https://trac.sagemath.org/ticket/2356
-
-Original creator: cremona
-
-Original creation time: 2008-02-29 21:41:10
-
+archive/issues_002356.json:
+```json
+{
+    "body": "Assignee: joyner\n\nCC:  marshbuck@gmail.com\n\nMarshall Buck reports (email to sage-support 2008-02-29):\n\nProblem 1.  Fails because the list sizes in the baby step giant step\nmethod are too small.\n\nExample. [NB This particular example does *not* fail with 2.10.2]\n\n\n```\nF.<w> = GF(121)\nv = w^120\nv.log(w)\n```\n\nbombs with:\n\n```\nFile \"/usr/local/sage/local/lib/python2.5/site-packages/sage/rings/\narith.py\", line 2164, in discrete_log_generic\n   raise ValueError, \"Log of %s to the base %s does not exist.\"%(a,b)\nValueError: Log of 2*w + 10 to the base w does not exist.\n```\n\nThis can be fixed by changing the append loop to make \"g\"  to {{{range(m\n+1)}}} instead of `range(m)`.  This makes g m+2 long and S2 m-long.  Then {{{(m\n+2)*m >= ord}}}.\n\n\n```\n   m = ord.isqrt()\n   g = [a]\n   c = b**(-m)\n   S2 = [1]\n   for i in range(m+1):  # suggested line change   ---  was range(m)\n       g.append(g[i]*c)\n       if i < m-1:\n           S2.append(S2[i]*b)\n   for y in g:\n       if y in S2:\n           x = S2.index(y)\n           return Z(m*(g.index(y)) + x)\n```\n\n\n2. The other problem is the inefficiency in the lookup \" {{{for y in g:\nif y in S2:}}} \".  The work is proportional to  \"ord\", insead of\nproportional to  \"m\" as intended by BSGS method.  It is quicker to do\na set lookup:\n\n\n```\n S2set = set(S2)\n for y in g:\n     if y in S2set:\n         x = S2.index(y)...\n```\n\n\n----\n\nComents by John Cremona:\n\n1. Note that this is related to #277\n\n2. I already suggested using a dict for the lookup instead of using lists or sets\n\nI will post a patch.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2356\n\n",
+    "created_at": "2008-02-29T21:41:10Z",
+    "labels": [
+        "group theory",
+        "major",
+        "bug"
+    ],
+    "title": "Bug in discrete_log_generic",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2356",
+    "user": "cremona"
+}
+```
 Assignee: joyner
 
 CC:  marshbuck@gmail.com
@@ -79,31 +89,81 @@ Coments by John Cremona:
 I will post a patch.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2356
+
+
+
+
 
 ---
+
+archive/issue_comments_015865.json:
+```json
+{
+    "body": "Attachment\n\nAttached patch 8682 fixes both issues:  increases m by 1 and uses a dict() for fast lookup of the table.",
+    "created_at": "2008-02-29T22:48:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2356",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2356#issuecomment-15865",
+    "user": "cremona"
+}
+```
 
 Attachment
 
 Attached patch 8682 fixes both issues:  increases m by 1 and uses a dict() for fast lookup of the table.
 
 
+
 ---
 
-Comment by cremona created at 2008-03-02 17:35:26
+archive/issue_comments_015866.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-03-02T17:35:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2356",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2356#issuecomment-15866",
+    "user": "cremona"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by cremona created at 2008-03-02 17:35:26
+archive/issue_comments_015867.json:
+```json
+{
+    "body": "Changing assignee from joyner to cremona.",
+    "created_at": "2008-03-02T17:35:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2356",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2356#issuecomment-15867",
+    "user": "cremona"
+}
+```
 
 Changing assignee from joyner to cremona.
 
 
+
 ---
 
-Comment by wdj created at 2008-03-02 19:07:05
+archive/issue_comments_015868.json:
+```json
+{
+    "body": "Applied cleanly to 2.10.3.rc0 and passed sage -testall. Also,\n\n\n```\nsage: F.<w> = GF(121)\nsage: v = w^120\nsage: v.log(w)\n0\n```\n\nworks as it should. Recommend acceptance.",
+    "created_at": "2008-03-02T19:07:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2356",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2356#issuecomment-15868",
+    "user": "wdj"
+}
+```
 
 Applied cleanly to 2.10.3.rc0 and passed sage -testall. Also,
 
@@ -118,16 +178,38 @@ sage: v.log(w)
 works as it should. Recommend acceptance.
 
 
+
 ---
 
-Comment by cremona created at 2008-03-04 18:04:02
+archive/issue_comments_015869.json:
+```json
+{
+    "body": "The two new patches to #2356 -- which have a positive review! -- need to be applied after this one.  They do in fact supercede this one, there therefore this one gets another positive review by default.  I'm sure I am breaking protocol by adding that myself but seriously!",
+    "created_at": "2008-03-04T18:04:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2356",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2356#issuecomment-15869",
+    "user": "cremona"
+}
+```
 
 The two new patches to #2356 -- which have a positive review! -- need to be applied after this one.  They do in fact supercede this one, there therefore this one gets another positive review by default.  I'm sure I am breaking protocol by adding that myself but seriously!
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-04 18:24:47
+archive/issue_comments_015870.json:
+```json
+{
+    "body": "Replying to [comment:4 cremona]:\n> The two new patches to #2356 -- which have a positive review! -- need to be applied after this one.  They do in fact supercede this one, there therefore this one gets another positive review by default.  I'm sure I am breaking protocol by adding that myself but seriously!\n\nHi John,\n\nI assume you refer to the two patches at #277 instead of \"The two new patches to #2356 -- which have a positive review!\". The positive review is fine in this case and not a breaking of protocol - we shouldn't and don't enforce rules for the sake of rules :) \n\nI will merge both patches shortly and close the tickets assuming the patches apply.\n\nCheers,\n\nMichael",
+    "created_at": "2008-03-04T18:24:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2356",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2356#issuecomment-15870",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:4 cremona]:
 > The two new patches to #2356 -- which have a positive review! -- need to be applied after this one.  They do in fact supercede this one, there therefore this one gets another positive review by default.  I'm sure I am breaking protocol by adding that myself but seriously!
@@ -143,22 +225,55 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-05 00:19:50
+archive/issue_comments_015871.json:
+```json
+{
+    "body": "Merged both in Sage 2.10.3.rc2",
+    "created_at": "2008-03-05T00:19:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2356",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2356#issuecomment-15871",
+    "user": "mabshoff"
+}
+```
 
 Merged both in Sage 2.10.3.rc2
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-05 00:19:50
+archive/issue_comments_015872.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-03-05T00:19:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2356",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2356#issuecomment-15872",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-05 00:21:28
+archive/issue_comments_015873.json:
+```json
+{
+    "body": "Merged the *only* patch in Sage 2.10.3.rc2 - sorry for the confusion - I meant ticket #277.",
+    "created_at": "2008-03-05T00:21:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2356",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2356#issuecomment-15873",
+    "user": "mabshoff"
+}
+```
 
 Merged the *only* patch in Sage 2.10.3.rc2 - sorry for the confusion - I meant ticket #277.

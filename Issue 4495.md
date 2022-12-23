@@ -1,27 +1,52 @@
 # Issue 4495: [with algorithm, needs implementation] weight distribution for binary codes
 
-Issue created by migration from https://trac.sagemath.org/ticket/4495
-
-Original creator: rlm
-
-Original creation time: 2008-11-11 21:14:53
-
+archive/issues_004495.json:
+```json
+{
+    "body": "Assignee: tbd\n\nUsing Robert Bradshaw's bitsets, which include hamming weight functions, it should be trivial to implement a weight distribution algorithm for binary codes in pure Cython.\n\nEssential ingredients:\n1. A list of bitsets representing the basis.\n2. A zeroed array to store the weight distribution.\n3. A gray code traversal of the span of the list.\n4. Hamming weight functions.\n\nThis should be nearly trivial to implement, and would remove the dependence (unmerged) ticket #4320 has on Guava, which will make the Windows port even harder...\n\nIssue created by migration from https://trac.sagemath.org/ticket/4495\n\n",
+    "created_at": "2008-11-11T21:14:53Z",
+    "labels": [
+        "algebra",
+        "major",
+        "bug"
+    ],
+    "title": "[with algorithm, needs implementation] weight distribution for binary codes",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4495",
+    "user": "rlm"
+}
+```
 Assignee: tbd
 
 Using Robert Bradshaw's bitsets, which include hamming weight functions, it should be trivial to implement a weight distribution algorithm for binary codes in pure Cython.
 
 Essential ingredients:
- 1. A list of bitsets representing the basis.
- 2. A zeroed array to store the weight distribution.
- 3. A gray code traversal of the span of the list.
- 4. Hamming weight functions.
+1. A list of bitsets representing the basis.
+2. A zeroed array to store the weight distribution.
+3. A gray code traversal of the span of the list.
+4. Hamming weight functions.
 
 This should be nearly trivial to implement, and would remove the dependence (unmerged) ticket #4320 has on Guava, which will make the Windows port even harder...
+
+Issue created by migration from https://trac.sagemath.org/ticket/4495
+
+
+
 
 
 ---
 
-Comment by wdj created at 2008-11-11 21:56:27
+archive/issue_comments_033241.json:
+```json
+{
+    "body": "> This ...\n> would remove the dependence (unmerged) ticket #4320 \n> has on Guava, which will make the Windows port \n> even harder... \n\nJust to clarify a few points. \n\nFirst, the patch #4320 to the spectrum method in \nhttp://www.sagemath.org/hg/sage-main/file/3859ace86968/sage/coding/linear_code.py\ndoes the following: \n(a) if no option is called and q>3 then \nspectrum calls the function wtdist (approximately line 180),\nwhich does not use GUAVA (or leon or tjhal) code at all, but rather a GAP kernel function,\n(b) if q=2 or q=3 and no option is called then spectrum calls the C code written by CJ Tjhal (which does not have the same problems as the leon code), so adding the binary case in Cython would be nice but still there is the issue of q=3,\n(c) there is a new optional method which I added for the user's convenience, to call Leon's C code, which works for q=2,3,5,7. I don't understand why an optional method is bad. If there is a faster way added later, why would anyone use that option?\n\nSecond, GUAVA is cross-platform, as is GAP, though both have parts which are written in C. Does all the C code have to be rewritten for the windows port? \n\nRight now, leon and tjhal are only used for minimum distance and spectrum computations, q<=7. It would be nice to have the luxury of replacing them by Cython code but they are used for cases other than q=2.\n\nAre these comments worthwhile?",
+    "created_at": "2008-11-11T21:56:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4495",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4495#issuecomment-33241",
+    "user": "wdj"
+}
+```
 
 > This ...
 > would remove the dependence (unmerged) ticket #4320 
@@ -46,9 +71,20 @@ Right now, leon and tjhal are only used for minimum distance and spectrum comput
 Are these comments worthwhile?
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-12 14:35:03
+archive/issue_comments_033242.json:
+```json
+{
+    "body": "Replying to [comment:1 wdj]:\n\nHi David,\n\n> Second, GUAVA is cross-platform, as is GAP, though both have parts which are written in C. Does all the C code have to be rewritten for the windows port? \n\nNope, care to point me to a working MSVC port of GAP? Even the Cygwin one sucks :)\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-12T14:35:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4495",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4495#issuecomment-33242",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:1 wdj]:
 
@@ -63,23 +99,56 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by AlexGhitza created at 2008-12-21 05:42:29
+archive/issue_comments_033243.json:
+```json
+{
+    "body": "Changing assignee from tbd to rlm.",
+    "created_at": "2008-12-21T05:42:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4495",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4495#issuecomment-33243",
+    "user": "AlexGhitza"
+}
+```
 
 Changing assignee from tbd to rlm.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2008-12-21 05:42:29
+archive/issue_comments_033244.json:
+```json
+{
+    "body": "Changing component from algebra to coding theory.",
+    "created_at": "2008-12-21T05:42:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4495",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4495#issuecomment-33244",
+    "user": "AlexGhitza"
+}
+```
 
 Changing component from algebra to coding theory.
 
 
+
 ---
 
-Comment by rlm created at 2008-12-24 21:12:37
+archive/issue_comments_033245.json:
+```json
+{
+    "body": "For an 1100 times speedup (which is the real point of not using Guava):\n\nOLD:\nsage: time C.spectrum()\nCPU times: user 0.03 s, sys: 0.02 s, total: 0.05 s\nWall time: 3.36 s\n[1, 0, 0, 7, 7, 0, 0, 1]\nsage: time C.spectrum()\nCPU times: user 0.02 s, sys: 0.01 s, total: 0.03 s\nWall time: 2.20 s\n[1, 0, 0, 7, 7, 0, 0, 1]\nsage: time C.spectrum()\nCPU times: user 0.02 s, sys: 0.01 s, total: 0.03 s\nWall time: 3.26 s\n[1, 0, 0, 7, 7, 0, 0, 1]\nsage: time C.spectrum()\nCPU times: user 0.02 s, sys: 0.01 s, total: 0.03 s\nWall time: 2.74 s\n[1, 0, 0, 7, 7, 0, 0, 1]\n\nNEW:\nsage: timeit('C.spectrum()')\n625 loops, best of 3: 1.86 ms per loop",
+    "created_at": "2008-12-24T21:12:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4495",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4495#issuecomment-33245",
+    "user": "rlm"
+}
+```
 
 For an 1100 times speedup (which is the real point of not using Guava):
 
@@ -106,9 +175,20 @@ sage: timeit('C.spectrum()')
 625 loops, best of 3: 1.86 ms per loop
 
 
+
 ---
 
-Comment by rlm created at 2008-12-24 21:13:51
+archive/issue_comments_033246.json:
+```json
+{
+    "body": "Oops, bad formatting...\n\n\n```\nOLD:\nsage: time C.spectrum()\nCPU times: user 0.03 s, sys: 0.02 s, total: 0.05 s\nWall time: 3.36 s\n[1, 0, 0, 7, 7, 0, 0, 1]\nsage: time C.spectrum()\nCPU times: user 0.02 s, sys: 0.01 s, total: 0.03 s\nWall time: 2.20 s\n[1, 0, 0, 7, 7, 0, 0, 1]\nsage: time C.spectrum()\nCPU times: user 0.02 s, sys: 0.01 s, total: 0.03 s\nWall time: 3.26 s\n[1, 0, 0, 7, 7, 0, 0, 1]\nsage: time C.spectrum()\nCPU times: user 0.02 s, sys: 0.01 s, total: 0.03 s\nWall time: 2.74 s\n[1, 0, 0, 7, 7, 0, 0, 1]\n\nNEW:\nsage: timeit('C.spectrum()')\n625 loops, best of 3: 1.86 ms per loop\n```\n",
+    "created_at": "2008-12-24T21:13:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4495",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4495#issuecomment-33246",
+    "user": "rlm"
+}
+```
 
 Oops, bad formatting...
 
@@ -139,7 +219,20 @@ sage: timeit('C.spectrum()')
 
 
 
+
 ---
+
+archive/issue_comments_033247.json:
+```json
+{
+    "body": "Attachment\n\nThis is a great patch. It applies cleanly and I've done lots of testing, which it passes. \n\nI have a question though and this is what the Wall time on the following test means?\n\n\nfor i in range(20):\n    C = RandomLinearCode(100, 25, GF(2))\n    time s1 = C.spectrum()             \n    time s2 = C.spectrum(method=\"gap\") \n    s1 == s2       \n\n          \t\n\nTime: CPU 0.84 s, Wall: 0.84 s\nTime: CPU 0.94 s, Wall: 5.05 s\nTrue\nTime: CPU 0.87 s, Wall: 0.90 s\nTime: CPU 1.05 s, Wall: 4.99 s\nTrue\nTime: CPU 0.87 s, Wall: 0.90 s\nTime: CPU 0.95 s, Wall: 4.94 s\nTrue\nTime: CPU 0.84 s, Wall: 0.86 s\nTime: CPU 0.96 s, Wall: 4.96 s\nTrue\nTime: CPU 0.88 s, Wall: 0.88 s\nTime: CPU 0.98 s, Wall: 4.98 s\nTrue\nTime: CPU 0.85 s, Wall: 0.85 s\nTime: CPU 0.92 s, Wall: 4.69 s\nTrue\nTime: CPU 0.85 s, Wall: 0.86 s\nTime: CPU 0.84 s, Wall: 4.76 s\nTrue\nTime: CPU 0.84 s, Wall: 0.84 s\nTime: CPU 0.98 s, Wall: 5.01 s\nTrue\nTime: CPU 0.85 s, Wall: 0.85 s\nTime: CPU 0.94 s, Wall: 4.97 s\nTrue\nTime: CPU 0.88 s, Wall: 0.89 s\nTime: CPU 0.94 s, Wall: 4.95 s\nTrue\nTime: CPU 0.85 s, Wall: 0.86 s\nTime: CPU 0.93 s, Wall: 4.99 s\nTrue\nTime: CPU 0.85 s, Wall: 0.85 s\nTime: CPU 1.00 s, Wall: 4.93 s\nTrue\nTime: CPU 0.93 s, Wall: 0.95 s\nTime: CPU 1.03 s, Wall: 4.97 s\nTrue\nTime: CPU 0.85 s, Wall: 0.85 s\nTime: CPU 1.04 s, Wall: 4.92 s\nTrue\nTime: CPU 0.84 s, Wall: 0.85 s\nTime: CPU 1.02 s, Wall: 5.00 s\nTrue\nTime: CPU 0.86 s, Wall: 0.87 s\nTime: CPU 0.85 s, Wall: 4.66 s\nTrue\nTime: CPU 0.85 s, Wall: 0.86 s\nTime: CPU 0.83 s, Wall: 4.59 s\nTrue\nTime: CPU 0.85 s, Wall: 0.85 s\nTime: CPU 0.86 s, Wall: 4.75 s\nTrue\nTime: CPU 0.91 s, Wall: 0.91 s\nTime: CPU 0.90 s, Wall: 4.73 s\nTrue\nTime: CPU 0.91 s, Wall: 0.92 s\nTime: CPU 0.88 s, Wall: 4.71 s\nTrue\n\n\nI wonder if this means that GAP's kernel computation (method=\"gap\" is the slowest of the three) beats binary some percentage of the time but GAP's interface takes a long time to parse that information back to Sage (via pexpect and whatever fiddling GAP does), as indicated by the Wall time?",
+    "created_at": "2008-12-24T22:18:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4495",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4495#issuecomment-33247",
+    "user": "wdj"
+}
+```
 
 Attachment
 
@@ -221,9 +314,20 @@ True
 I wonder if this means that GAP's kernel computation (method="gap" is the slowest of the three) beats binary some percentage of the time but GAP's interface takes a long time to parse that information back to Sage (via pexpect and whatever fiddling GAP does), as indicated by the Wall time?
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-26 18:46:55
+archive/issue_comments_033248.json:
+```json
+{
+    "body": "Replying to [comment:6 wdj]:\n\nHi David,\n\n> This is a great patch. It applies cleanly and I've done lots of testing, which it passes. \n> \n> I have a question though and this is what the Wall time on the following test means?\n\nFixing the formatting:\n\n\n```\n for i in range(20):\n     C = RandomLinearCode(100, 25, GF(2))\n     time s1 = C.spectrum()             \n     time s2 = C.spectrum(method=\"gap\") \n     s1 == s2       \n```\n\nThe timings:\n\n```\n Time: CPU 0.84 s, Wall: 0.84 s\n Time: CPU 0.94 s, Wall: 5.05 s\n True\n Time: CPU 0.87 s, Wall: 0.90 s\n Time: CPU 1.05 s, Wall: 4.99 s\n True\n Time: CPU 0.87 s, Wall: 0.90 s\n Time: CPU 0.95 s, Wall: 4.94 s\n True\n Time: CPU 0.84 s, Wall: 0.86 s\n Time: CPU 0.96 s, Wall: 4.96 s\n True\n Time: CPU 0.88 s, Wall: 0.88 s\n Time: CPU 0.98 s, Wall: 4.98 s\n True\n Time: CPU 0.85 s, Wall: 0.85 s\n Time: CPU 0.92 s, Wall: 4.69 s\n True\n Time: CPU 0.85 s, Wall: 0.86 s\n Time: CPU 0.84 s, Wall: 4.76 s\n True\n Time: CPU 0.84 s, Wall: 0.84 s\n Time: CPU 0.98 s, Wall: 5.01 s\n True\n Time: CPU 0.85 s, Wall: 0.85 s\n Time: CPU 0.94 s, Wall: 4.97 s\n True\n Time: CPU 0.88 s, Wall: 0.89 s\n Time: CPU 0.94 s, Wall: 4.95 s\n True\n Time: CPU 0.85 s, Wall: 0.86 s\n Time: CPU 0.93 s, Wall: 4.99 s\n True\n Time: CPU 0.85 s, Wall: 0.85 s\n Time: CPU 1.00 s, Wall: 4.93 s\n True\n Time: CPU 0.93 s, Wall: 0.95 s\n Time: CPU 1.03 s, Wall: 4.97 s\n True\n Time: CPU 0.85 s, Wall: 0.85 s\n Time: CPU 1.04 s, Wall: 4.92 s\n True\n Time: CPU 0.84 s, Wall: 0.85 s\n Time: CPU 1.02 s, Wall: 5.00 s\n True\n Time: CPU 0.86 s, Wall: 0.87 s\n Time: CPU 0.85 s, Wall: 4.66 s\n True\n Time: CPU 0.85 s, Wall: 0.86 s\n Time: CPU 0.83 s, Wall: 4.59 s\n True\n Time: CPU 0.85 s, Wall: 0.85 s\n Time: CPU 0.86 s, Wall: 4.75 s\n True\n Time: CPU 0.91 s, Wall: 0.91 s\n Time: CPU 0.90 s, Wall: 4.73 s\n True\n Time: CPU 0.91 s, Wall: 0.92 s\n Time: CPU 0.88 s, Wall: 4.71 s\n True\n}}]\n\n> \n> I wonder if this means that GAP's kernel computation (method=\"gap\" is the slowest of the three) \n\nWhat three? I see only two computations. \n\n> beats binary some percentage of the time but GAP's interface takes a long \n> time to parse that information back to Sage (via pexpect and whatever \n> fiddling GAP does), as indicated by the Wall time?  \n\nThat means the new code is beating the pants off GAP+Guava:\n{{{\n Time: CPU 0.91 s, Wall: 0.92 s\n Time: CPU 0.88 s, Wall: 4.71 s\n}}}\n\nWhat counts it the total time, i.e. about 0.92s vs. 4.71s. The first line tells us that the new code spends all its time in Sage while the second line tells us that 4.71-0.88=3.83s were spend in GAP. I assume if we pick larger examples the favor will shift toward Robert's implementation, but that needs to be tested. One aspect here might be that the pexpect transfer to and from GAP is inefficient, but that can also easily be determined. \n\nCheers,\n\nMichael",
+    "created_at": "2008-12-26T18:46:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4495",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4495#issuecomment-33248",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:6 wdj]:
 
@@ -331,15 +435,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-12 01:12:41
+archive/issue_comments_033249.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-01-12T01:12:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4495",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4495#issuecomment-33249",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-12 01:12:41
+archive/issue_comments_033250.json:
+```json
+{
+    "body": "Merged in Sage 3.3.alpha0",
+    "created_at": "2009-01-12T01:12:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4495",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4495#issuecomment-33250",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.3.alpha0

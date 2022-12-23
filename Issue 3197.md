@@ -1,11 +1,21 @@
 # Issue 3197: fix 64 bit OSX build support for m4ri
 
-Issue created by migration from https://trac.sagemath.org/ticket/3197
-
-Original creator: mabshoff
-
-Original creation time: 2008-05-13 16:24:45
-
+archive/issues_003197.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nspkg coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3197\n\n",
+    "created_at": "2008-05-13T16:24:45Z",
+    "labels": [
+        "build",
+        "major",
+        "bug"
+    ],
+    "title": "fix 64 bit OSX build support for m4ri",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3197",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 spkg coming up.
@@ -14,15 +24,43 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/3197
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-05-13 16:26:56
+archive/issue_comments_022098.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-05-13T16:26:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3197",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3197#issuecomment-22098",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
+
+archive/issue_comments_022099.json:
+```json
+{
+    "body": "Attachment\n\nThe updated spkg is at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0.2/alpha1/libm4ri-20071224.p3.spkg\n\nCheers,\n\nMichael",
+    "created_at": "2008-05-19T05:46:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3197",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3197#issuecomment-22099",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -35,15 +73,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-19 05:49:28
+archive/issue_comments_022100.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-05-19T05:49:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3197",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3197#issuecomment-22100",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-19 05:49:28
+archive/issue_comments_022101.json:
+```json
+{
+    "body": "Merged in Sage 3.0.2.alpha1",
+    "created_at": "2008-05-19T05:49:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3197",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3197#issuecomment-22101",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.2.alpha1

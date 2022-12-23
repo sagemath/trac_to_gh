@@ -1,11 +1,21 @@
 # Issue 7415: improve cycle decomposition
 
-Issue created by migration from https://trac.sagemath.org/ticket/7415
-
-Original creator: ylchapuy
-
-Original creation time: 2009-11-08 22:38:16
-
+archive/issues_007415.json:
+```json
+{
+    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nKeywords: permutation\n\nLet's continue using binary search to improve the permutation methods.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7415\n\n",
+    "created_at": "2009-11-08T22:38:16Z",
+    "labels": [
+        "combinatorics",
+        "major",
+        "enhancement"
+    ],
+    "title": "improve cycle decomposition",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7415",
+    "user": "ylchapuy"
+}
+```
 Assignee: mhansen
 
 CC:  sage-combinat
@@ -15,15 +25,43 @@ Keywords: permutation
 Let's continue using binary search to improve the permutation methods.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7415
+
+
+
+
 
 ---
 
-Comment by ylchapuy created at 2009-11-08 22:45:58
+archive/issue_comments_062394.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-11-08T22:45:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7415",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7415#issuecomment-62394",
+    "user": "ylchapuy"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_062395.json:
+```json
+{
+    "body": "Attachment\n\nFor the record,\n\nbefore:\n\n```\nsage: p= Permutations(1000)[1234567123413251514514513541]\nsage: timeit('p.to_cycles()')\n125 loops, best of 3: 5.27 ms per loop\nsage: timeit('p.to_cycles(singletons=False)')\n125 loops, best of 3: 4.37 ms per loop\nsage: p= Permutations(1000).random_element()\nsage: timeit('p.to_cycles()')\n5 loops, best of 3: 440 ms per loop\nsage: timeit('p.to_cycles(singletons=False)')\n5 loops, best of 3: 441 ms per loop\n```\n\n\nafter:\n\n```\nsage: p= Permutations(1000)[1234567123413251514514513541]\nsage: timeit('p.to_cycles()')\n125 loops, best of 3: 4.68 ms per loop\nsage: timeit('p.to_cycles(singletons=False)')\n125 loops, best of 3: 2.35 ms per loop\nsage: p= Permutations(1000).random_element()\nsage: timeit('p.to_cycles()')\n25 loops, best of 3: 21.1 ms per loop\nsage: timeit('p.to_cycles(singletons=False)')\n25 loops, best of 3: 23.3 ms per loop\n```\n\n\nit can be slightly slower for small permutations with `singletons=False` (because of the way we construct L), but I think it's worth it.",
+    "created_at": "2009-11-08T22:45:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7415",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7415#issuecomment-62395",
+    "user": "ylchapuy"
+}
+```
 
 Attachment
 
@@ -64,16 +102,38 @@ sage: timeit('p.to_cycles(singletons=False)')
 it can be slightly slower for small permutations with `singletons=False` (because of the way we construct L), but I think it's worth it.
 
 
+
 ---
 
-Comment by hivert created at 2009-11-09 08:53:12
+archive/issue_comments_062396.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2009-11-09T08:53:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7415",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7415#issuecomment-62396",
+    "user": "hivert"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by hivert created at 2009-11-09 08:53:12
+archive/issue_comments_062397.json:
+```json
+{
+    "body": "Replying to [comment:1 ylchapuy]:\n\n> it can be slightly slower for small permutations with `singletons=False` (because of the way we construct L), but I think it's worth it.\n\nIt is indeed in both cases:\n\nBefore\n\n```\nsage: for i in range(8): timeit('[p.to_cycles(True) for p in Permutations(i)]')\n....: \n625 loops, best of 3: 16.5 \u00b5s per loop\n625 loops, best of 3: 22.3 \u00b5s per loop\n625 loops, best of 3: 41.3 \u00b5s per loop\n625 loops, best of 3: 114 \u00b5s per loop\n625 loops, best of 3: 450 \u00b5s per loop\n125 loops, best of 3: 2.45 ms per loop\n25 loops, best of 3: 15.8 ms per loop\n5 loops, best of 3: 118 ms per loop\nsage: for i in range(8): timeit('[p.to_cycles(False) for p in Permutations(i)]')\n....: \n625 loops, best of 3: 32.4 \u00b5s per loop\n625 loops, best of 3: 20.8 \u00b5s per loop\n625 loops, best of 3: 39.3 \u00b5s per loop\n625 loops, best of 3: 109 \u00b5s per loop\n625 loops, best of 3: 441 \u00b5s per loop\n125 loops, best of 3: 2.41 ms per loop\n25 loops, best of 3: 15.4 ms per loop\n5 loops, best of 3: 113 ms per loop\n```\n\n\nAfter:\n\n```\nsage: for i in range(8): timeit('[p.to_cycles(True) for p in Permutations(i)]')\n....: \n625 loops, best of 3: 23.2 \u00b5s per loop\n625 loops, best of 3: 26.3 \u00b5s per loop\n625 loops, best of 3: 49.6 \u00b5s per loop\n625 loops, best of 3: 136 \u00b5s per loop\n625 loops, best of 3: 542 \u00b5s per loop\n125 loops, best of 3: 2.9 ms per loop\n25 loops, best of 3: 18.1 ms per loop\n5 loops, best of 3: 137 ms per loop\nsage: for i in range(8): timeit('[p.to_cycles(False) for p in Permutations(i)]')\n....: \n625 loops, best of 3: 22.4 \u00b5s per loop\n625 loops, best of 3: 25 \u00b5s per loop\n625 loops, best of 3: 49.2 \u00b5s per loop\n625 loops, best of 3: 134 \u00b5s per loop\n625 loops, best of 3: 542 \u00b5s per loop\n125 loops, best of 3: 2.92 ms per loop\n25 loops, best of 3: 18.8 ms per loop\n5 loops, best of 3: 137 ms per loop\n```\n\nWhy not having the bost of the two world devising a cut-of point ? \n\nOnce again sorry to give you more work,\n\nFlorent",
+    "created_at": "2009-11-09T08:53:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7415",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7415#issuecomment-62397",
+    "user": "hivert"
+}
+```
 
 Replying to [comment:1 ylchapuy]:
 
@@ -139,9 +199,20 @@ Once again sorry to give you more work,
 Florent
 
 
+
 ---
 
-Comment by hivert created at 2009-11-09 09:24:03
+archive/issue_comments_062398.json:
+```json
+{
+    "body": "Actually after some experiment I find out that this is a not a so good idea to use list + bisect. As it should be in a reasonable world, using python set is faster ! I'm preparing a new patch for this. \n\nCheers,\n\nFlorent",
+    "created_at": "2009-11-09T09:24:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7415",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7415#issuecomment-62398",
+    "user": "hivert"
+}
+```
 
 Actually after some experiment I find out that this is a not a so good idea to use list + bisect. As it should be in a reasonable world, using python set is faster ! I'm preparing a new patch for this. 
 
@@ -150,24 +221,48 @@ Cheers,
 Florent
 
 
+
 ---
 
-Comment by hivert created at 2009-11-09 15:21:39
+archive/issue_comments_062399.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2009-11-09T15:21:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7415",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7415#issuecomment-62399",
+    "user": "hivert"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
+
+archive/issue_comments_062400.json:
+```json
+{
+    "body": "Attachment\n\nHi Yann,\n\nI just uploaded a new patch which contains four different methods:\n- `to_cycles      ` : use a binary vector\n- `_to_cycles_orig` : the original implementation\n- `_to_cycles_set ` : the modification of your implementation using a sage set\n- `_to_cycles_list` : your implementation\nI left in the code a little command to benchmark these four functions:\n\nOn small permutations the results are:\n\n```\nsage: for size in range(9): # not tested\n print size\n lp = Permutations(size).list()\n timeit('[p.to_cycles(False) for p in lp]')\n timeit('[p._to_cycles_set(False) for p in lp]')\n timeit('[p._to_cycles_list(False) for p in lp]')\n timeit('[p._to_cycles_orig(False) for p in lp]') \n\n0\n625 loops, best of 3: 4.6 \u00b5s per loop\n625 loops, best of 3: 16.8 \u00b5s per loop\n625 loops, best of 3: 7.59 \u00b5s per loop\n625 loops, best of 3: 2.97 \u00b5s per loop\n1\n625 loops, best of 3: 4.18 \u00b5s per loop\n625 loops, best of 3: 9.06 \u00b5s per loop\n625 loops, best of 3: 7.6 \u00b5s per loop\n625 loops, best of 3: 4.78 \u00b5s per loop\n2\n625 loops, best of 3: 11.3 \u00b5s per loop\n625 loops, best of 3: 22.1 \u00b5s per loop\n625 loops, best of 3: 20.2 \u00b5s per loop\n625 loops, best of 3: 12.9 \u00b5s per loop\n3\n625 loops, best of 3: 42 \u00b5s per loop\n625 loops, best of 3: 73.3 \u00b5s per loop\n625 loops, best of 3: 72.7 \u00b5s per loop\n625 loops, best of 3: 47.7 \u00b5s per loop\n4\n625 loops, best of 3: 192 \u00b5s per loop\n625 loops, best of 3: 325 \u00b5s per loop\n625 loops, best of 3: 333 \u00b5s per loop\n625 loops, best of 3: 224 \u00b5s per loop\n5\n625 loops, best of 3: 1.08 ms per loop\n125 loops, best of 3: 1.75 ms per loop\n125 loops, best of 3: 1.87 ms per loop\n625 loops, best of 3: 1.33 ms per loop\n6\n125 loops, best of 3: 7.34 ms per loop\n25 loops, best of 3: 11.8 ms per loop\n25 loops, best of 3: 12.8 ms per loop\n25 loops, best of 3: 9.28 ms per loop\n7\n5 loops, best of 3: 58.5 ms per loop\n5 loops, best of 3: 91.1 ms per loop\n5 loops, best of 3: 99.1 ms per loop\n5 loops, best of 3: 72.7 ms per loop\n8\n5 loops, best of 3: 501 ms per loop\n5 loops, best of 3: 772 ms per loop\n5 loops, best of 3: 866 ms per loop\n5 loops, best of 3: 631 ms per loop\n```\n\nOn bigger permutations (I don't test the original implantation which is very slow:\n\n```\nfor size in [10, 20, 50, 75, 100, 200, 500, 1000, # not tested\n      2000, 5000, 10000, 15000, 20000, 30000,\n      50000, 80000, 100000]: \n   print(size)\n   lp = [Permutations(size).random_element() for i in range(20)]\n   timeit(\"[p.to_cycles() for p in lp]\")\n   timeit(\"[p._to_cycles_set() for p in lp]\")\n   timeit(\"[p._to_cycles_list() for p in lp]\") # not tested\n\n10\n625 loops, best of 3: 276 \u00b5s per loop\n625 loops, best of 3: 367 \u00b5s per loop\n625 loops, best of 3: 442 \u00b5s per loop\n20\n625 loops, best of 3: 428 \u00b5s per loop\n625 loops, best of 3: 492 \u00b5s per loop\n625 loops, best of 3: 687 \u00b5s per loop\n50\n625 loops, best of 3: 872 \u00b5s per loop\n625 loops, best of 3: 905 \u00b5s per loop\n625 loops, best of 3: 1.45 ms per loop\n75\n625 loops, best of 3: 1.21 ms per loop\n625 loops, best of 3: 1.19 ms per loop\n125 loops, best of 3: 2.08 ms per loop\n100\n125 loops, best of 3: 1.53 ms per loop\n625 loops, best of 3: 1.5 ms per loop\n125 loops, best of 3: 2.68 ms per loop\n200\n125 loops, best of 3: 2.94 ms per loop\n125 loops, best of 3: 2.66 ms per loop\n125 loops, best of 3: 5.31 ms per loop\n500\n125 loops, best of 3: 7.5 ms per loop\n125 loops, best of 3: 7.2 ms per loop\n25 loops, best of 3: 14.7 ms per loop\n1000\n25 loops, best of 3: 14.8 ms per loop\n25 loops, best of 3: 13.9 ms per loop\n25 loops, best of 3: 31.3 ms per loop\n2000\n25 loops, best of 3: 29.1 ms per loop\n25 loops, best of 3: 28.1 ms per loop\n5 loops, best of 3: 72.8 ms per loop\n5000\n5 loops, best of 3: 74 ms per loop\n5 loops, best of 3: 69.1 ms per loop\n5 loops, best of 3: 252 ms per loop\n10000\n5 loops, best of 3: 146 ms per loop\n5 loops, best of 3: 151 ms per loop\n5 loops, best of 3: 833 ms per loop\n15000\n5 loops, best of 3: 229 ms per loop\n5 loops, best of 3: 236 ms per loop\n5 loops, best of 3: 1.71 s per loop\n20000\n5 loops, best of 3: 317 ms per loop\n5 loops, best of 3: 331 ms per loop\n5 loops, best of 3: 2.85 s per loop\n30000\n5 loops, best of 3: 472 ms per loop\n5 loops, best of 3: 553 ms per loop\n5 loops, best of 3: 6.01 s per loop\n50000\n5 loops, best of 3: 844 ms per loop\n5 loops, best of 3: 1.02 s per loop\n5 loops, best of 3: 15.9 s per loop\n80000\n5 loops, best of 3: 1.45 s per loop\n5 loops, best of 3: 1.81 s per loop\n                    > 2 min...\n100000\n5 loops, best of 3: 1.87 s per loop\n5 loops, best of 3: 2.43 s per loop\n                    > 2 min ...\n```\n\nSince the default implementation is only beated by less that 10% I haven't written any algorithm selection. I kept the other implementation because there are some plan to optimize the datastructure for permutations so that those timings can change. \n\nI also took the chance to completely rewrite random_element which was incredibly slow. \n\nConsidering your function as positively reviewed by me, can you please review mine ? \n\nCheers,\n\nFlorent",
+    "created_at": "2009-11-09T15:21:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7415",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7415#issuecomment-62400",
+    "user": "hivert"
+}
+```
 
 Attachment
 
 Hi Yann,
 
 I just uploaded a new patch which contains four different methods:
- - `to_cycles      ` : use a binary vector
- - `_to_cycles_orig` : the original implementation
- - `_to_cycles_set ` : the modification of your implementation using a sage set
- - `_to_cycles_list` : your implementation
+- `to_cycles      ` : use a binary vector
+- `_to_cycles_orig` : the original implementation
+- `_to_cycles_set ` : the modification of your implementation using a sage set
+- `_to_cycles_list` : your implementation
 I left in the code a little command to benchmark these four functions:
 
 On small permutations the results are:
@@ -321,21 +416,56 @@ Cheers,
 Florent
 
 
+
 ---
 
-Comment by hivert created at 2009-11-09 15:22:19
+archive/issue_comments_062401.json:
+```json
+{
+    "body": "Changing assignee from mhansen to hivert.",
+    "created_at": "2009-11-09T15:22:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7415",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7415#issuecomment-62401",
+    "user": "hivert"
+}
+```
 
 Changing assignee from mhansen to hivert.
 
 
+
 ---
 
-Comment by ylchapuy created at 2009-11-09 22:41:50
+archive/issue_comments_062402.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-11-09T22:41:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7415",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7415#issuecomment-62402",
+    "user": "ylchapuy"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
+
+archive/issue_comments_062403.json:
+```json
+{
+    "body": "Attachment\n\nNice work.\n\nI added a tiny patch to correct two typos, otherwise it seems good to me.\nHere is the positive review.\n\nCheers,\n Yann\n\n(note: apply only the last two patches)",
+    "created_at": "2009-11-09T22:41:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7415",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7415#issuecomment-62403",
+    "user": "ylchapuy"
+}
+```
 
 Attachment
 
@@ -350,8 +480,19 @@ Cheers,
 (note: apply only the last two patches)
 
 
+
 ---
 
-Comment by mhansen created at 2009-11-12 06:50:09
+archive/issue_comments_062404.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-11-12T06:50:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7415",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7415#issuecomment-62404",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

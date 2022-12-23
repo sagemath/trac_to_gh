@@ -1,19 +1,44 @@
 # Issue 5299: add functions for Mercurial queues to the hg_sage interface
 
+archive/issues_005299.json:
+```json
+{
+    "body": "Assignee: mhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5299\n\n",
+    "created_at": "2009-02-17T23:44:26Z",
+    "labels": [
+        "misc",
+        "minor",
+        "enhancement"
+    ],
+    "title": "add functions for Mercurial queues to the hg_sage interface",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5299",
+    "user": "mhansen"
+}
+```
+Assignee: mhansen
+
+
+
 Issue created by migration from https://trac.sagemath.org/ticket/5299
 
-Original creator: mhansen
-
-Original creation time: 2009-02-17 23:44:26
-
-Assignee: mhansen
 
 
 
 
 ---
 
-Comment by mhansen created at 2013-07-23 14:21:05
+archive/issue_comments_040770.json:
+```json
+{
+    "body": "This has already been done:\n\n\n```\nsage: hg_sage.q\nhg_sage.qapplied    hg_sage.qimport     hg_sage.qpush       hg_sage.qseries     \nhg_sage.qdelete     hg_sage.qnew        hg_sage.qrefresh    hg_sage.qunapplied  \nhg_sage.qdiff       hg_sage.qpop        hg_sage.qremove     \n```\n",
+    "created_at": "2013-07-23T14:21:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5299",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5299#issuecomment-40770",
+    "user": "mhansen"
+}
+```
 
 This has already been done:
 
@@ -27,8 +52,19 @@ hg_sage.qdiff       hg_sage.qpop        hg_sage.qremove
 
 
 
+
 ---
 
-Comment by mhansen created at 2013-07-23 14:21:05
+archive/issue_comments_040771.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2013-07-23T14:21:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5299",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5299#issuecomment-40771",
+    "user": "mhansen"
+}
+```
 
 Resolution: invalid

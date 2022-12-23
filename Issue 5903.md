@@ -1,11 +1,21 @@
 # Issue 5903: Remove dist directories from Sage distribution
 
-Issue created by migration from https://trac.sagemath.org/ticket/5903
-
-Original creator: tabbott
-
-Original creation time: 2009-04-26 06:03:37
-
+archive/issues_005903.json:
+```json
+{
+    "body": "Assignee: tabbott\n\nCC:  leif\n\nThe dist/ directories currently shipped in various Sage .spkg's have resulted in confusion for people a few times.\n\nThese directories are no longer used (the Debian packaging for these things are now maintained in my own git repositories).  So, they should be deleted before anyone else gets confused.  The list of packages needing this treatment is as follows:\n\n\n```\ncddlib-094f\neclib-20080310.p7\nextcode-3.4.1\nflint-1.2.4.p1\nflintqs-20070817.p4\ngap-4.4.10.p11\ngenus2reduction-0.3.p5\ngfan-0.3.p4\ngivaro-3.2.13rc2\niml-1.0.1.p11\njmol-11.6.16.p0\nlcalc-20080205.p2\nlibfplll-2.1.6-20071129.p5\nlibm4ri-20090128\nlinbox-1.1.6\nntl-5.4.2.p6\npalp-1.1.p1\npolybori-0.5rc.p6\nrubiks-20070912.p8\nscipy_sandbox-20071020.p3\nsingular-3-0-4-4-20080711.p4\nsymmetrica-2.0.p2\nsympow-1.018.1.p6\ntachyon-0.98beta.p8\nzn_poly-0.9.p0\n```\n\n\nSince this is a huge list, we probably want to handle this issue by just deleting the dist/ directories the next time each of these .spkg files is updated.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5903\n\n",
+    "created_at": "2009-04-26T06:03:37Z",
+    "labels": [
+        "debian-package",
+        "major",
+        "enhancement"
+    ],
+    "title": "Remove dist directories from Sage distribution",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5903",
+    "user": "tabbott"
+}
+```
 Assignee: tabbott
 
 CC:  leif
@@ -46,40 +56,99 @@ zn_poly-0.9.p0
 
 Since this is a huge list, we probably want to handle this issue by just deleting the dist/ directories the next time each of these .spkg files is updated.
 
+Issue created by migration from https://trac.sagemath.org/ticket/5903
+
+
+
+
 
 ---
 
-Comment by ddrake created at 2009-09-25 02:58:00
+archive/issue_comments_046657.json:
+```json
+{
+    "body": "As part of #7005, I'll ask that the dist/ be removed from the Singular spkg.",
+    "created_at": "2009-09-25T02:58:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5903",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5903#issuecomment-46657",
+    "user": "ddrake"
+}
+```
 
 As part of #7005, I'll ask that the dist/ be removed from the Singular spkg.
 
 
+
 ---
 
-Comment by mvngu created at 2010-01-25 13:07:48
+archive/issue_comments_046658.json:
+```json
+{
+    "body": "Ticket #7109 removes \"dist/\" from cddlib.",
+    "created_at": "2010-01-25T13:07:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5903",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5903#issuecomment-46658",
+    "user": "mvngu"
+}
+```
 
 Ticket #7109 removes "dist/" from cddlib.
 
 
+
 ---
 
-Comment by mvngu created at 2010-01-25 13:13:14
+archive/issue_comments_046659.json:
+```json
+{
+    "body": "Ticket #7820 removes \"dist/\" from gfan.",
+    "created_at": "2010-01-25T13:13:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5903",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5903#issuecomment-46659",
+    "user": "mvngu"
+}
+```
 
 Ticket #7820 removes "dist/" from gfan.
 
 
+
 ---
 
-Comment by leif created at 2010-09-03 23:05:02
+archive/issue_comments_046660.json:
+```json
+{
+    "body": "I've \"informed\" the Tachyon and the (three) Lcalc upgrade/update tickets...\n\nSome of the packages in the list have meanwhile been upgraded or updated; I'm not sure which of them actually removed the `dist/` directory. (I think I did in the M4RI and/or PolyBoRi spkgs.)",
+    "created_at": "2010-09-03T23:05:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5903",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5903#issuecomment-46660",
+    "user": "leif"
+}
+```
 
 I've "informed" the Tachyon and the (three) Lcalc upgrade/update tickets...
 
 Some of the packages in the list have meanwhile been upgraded or updated; I'm not sure which of them actually removed the `dist/` directory. (I think I did in the M4RI and/or PolyBoRi spkgs.)
 
 
+
 ---
 
-Comment by leif created at 2010-09-03 23:19:42
+archive/issue_comments_046661.json:
+```json
+{
+    "body": "Replying to [comment:4 leif]:\n> I've \"informed\" the Tachyon and the (three) Lcalc upgrade/update tickets...\n\nAnd that of genus2reduction (#9591).",
+    "created_at": "2010-09-03T23:19:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5903",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5903#issuecomment-46661",
+    "user": "leif"
+}
+```
 
 Replying to [comment:4 leif]:
 > I've "informed" the Tachyon and the (three) Lcalc upgrade/update tickets...
@@ -87,23 +156,56 @@ Replying to [comment:4 leif]:
 And that of genus2reduction (#9591).
 
 
+
 ---
 
-Comment by mvngu created at 2010-10-18 09:14:30
+archive/issue_comments_046662.json:
+```json
+{
+    "body": "Ticket #9562 removes `dist/` from libm4ri.",
+    "created_at": "2010-10-18T09:14:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5903",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5903#issuecomment-46662",
+    "user": "mvngu"
+}
+```
 
 Ticket #9562 removes `dist/` from libm4ri.
 
 
+
 ---
 
-Comment by vbraun created at 2011-01-11 09:37:04
+archive/issue_comments_046663.json:
+```json
+{
+    "body": "Ticket #5281 removes the dist directory from tachyon.",
+    "created_at": "2011-01-11T09:37:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5903",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5903#issuecomment-46663",
+    "user": "vbraun"
+}
+```
 
 Ticket #5281 removes the dist directory from tachyon.
 
 
+
 ---
 
-Comment by mariah created at 2011-05-19 19:16:32
+archive/issue_comments_046664.json:
+```json
+{
+    "body": "Code to identify packages with dist directory\n\n\n```/usr/bin/python\n\n# search spkgs for dist directory \n#\n# assumes you start in spkg/standard\n\nimport sys,os,subprocess\n\ncur = os.getcwd()\nprint cur\n\nfor filename in os.listdir(\".\"):\n  if filename.endswith(\".spkg\"):\n    val = subprocess.check_output([\"file\", filename])\n    if val.find(\"bzip2\") > -1:\n      basename=filename.rstrip(\".spkg\")\n      subprocess.check_output([\"cp\", filename,basename +\".tar.bz2\"])\n      subprocess.check_output([\"bunzip2\", basename + \".tar.bz2\"])\n    else: # fortran.spkg (only tar'ed) \n      basename=filename.rstrip(\".spkg\")\n      subprocess.check_output([\"cp\", filename,basename + \".tar\"])\n    subprocess.check_output([\"tar\", \"xf\", basename + \".tar\"])\n    if os.path.exists(cur + \"/\" + basename + \"/dist\") == True:\n      print filename\n```\n",
+    "created_at": "2011-05-19T19:16:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5903",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5903#issuecomment-46664",
+    "user": "mariah"
+}
+```
 
 Code to identify packages with dist directory
 
@@ -136,64 +238,163 @@ for filename in os.listdir("."):
 
 
 
+
 ---
 
-Comment by was created at 2011-08-24 23:44:19
+archive/issue_comments_046665.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"sd32\".",
+    "created_at": "2011-08-24T23:44:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5903",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5903#issuecomment-46665",
+    "user": "was"
+}
+```
 
 Changing keywords from "" to "sd32".
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-04-19 10:01:57
+archive/issue_comments_046666.json:
+```json
+{
+    "body": "Changing component from debian-package to packages.",
+    "created_at": "2012-04-19T10:01:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5903",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5903#issuecomment-46666",
+    "user": "jdemeyer"
+}
+```
 
 Changing component from debian-package to packages.
 
 
+
 ---
 
-Comment by jdemeyer created at 2014-01-07 12:58:39
+archive/issue_comments_046667.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2014-01-07T12:58:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5903",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5903#issuecomment-46667",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2014-01-07 12:58:39
+archive/issue_comments_046668.json:
+```json
+{
+    "body": "New commits:",
+    "created_at": "2014-01-07T12:58:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5903",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5903#issuecomment-46668",
+    "user": "jdemeyer"
+}
+```
 
 New commits:
 
 
+
 ---
 
-Comment by git created at 2014-01-07 14:11:23
+archive/issue_comments_046669.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. This was a forced push. New commits:",
+    "created_at": "2014-01-07T14:11:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5903",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5903#issuecomment-46669",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. This was a forced push. New commits:
 
 
+
 ---
 
-Comment by chapoton created at 2014-01-07 17:02:32
+archive/issue_comments_046670.json:
+```json
+{
+    "body": "Ok, this is indeed the last one where dist still exists. Good enough for me.",
+    "created_at": "2014-01-07T17:02:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5903",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5903#issuecomment-46670",
+    "user": "chapoton"
+}
+```
 
 Ok, this is indeed the last one where dist still exists. Good enough for me.
 
 
+
 ---
 
-Comment by chapoton created at 2014-01-07 17:02:32
+archive/issue_comments_046671.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2014-01-07T17:02:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5903",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5903#issuecomment-46671",
+    "user": "chapoton"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by vbraun created at 2014-01-09 06:41:42
+archive/issue_comments_046672.json:
+```json
+{
+    "body": "fill in the reviewer field...",
+    "created_at": "2014-01-09T06:41:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5903",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5903#issuecomment-46672",
+    "user": "vbraun"
+}
+```
 
 fill in the reviewer field...
 
 
+
 ---
 
-Comment by vbraun created at 2014-01-10 07:29:52
+archive/issue_comments_046673.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2014-01-10T07:29:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5903",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5903#issuecomment-46673",
+    "user": "vbraun"
+}
+```
 
 Resolution: fixed

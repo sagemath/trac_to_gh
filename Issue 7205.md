@@ -1,96 +1,198 @@
 # Issue 7205: fix the list of old sage releases website
 
-Issue created by migration from https://trac.sagemath.org/ticket/7205
-
-Original creator: was
-
-Original creation time: 2009-10-14 02:40:54
-
+archive/issues_007205.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  schilly\n\n1. If I go to http://sagemath.org/src/ there is only the last release.\n\n   2. If I click on \"up one directory level\", I'm just dumped to\nhttp://sagemath.org, which makes no sense.\n\n3. Clicking on changelogs gives\nhttp://sagemath.org/src/changelogs/index.html which does indeed list\nchangelogs.  But it also lists  a file \"OLD_VERSIONS_HERE.txt\",\nrandomly right in the middle.  Looking at that file I find the\ncompletely wrong statement: \"These are archived old versions.  For the\nnew versions see the main SAGE website. http://modular.ucsd.edu/sage\".\n\n4. There is a random \"README.txt\" for no reason also in the middle\nof http://sagemath.org/src/changelogs/\n\n5. Finally, logging into the server I find that\nhttp://sagemath.org/src-old/ has the old versions.  But how could I\nfind that otherwise?   Also, the description at the top of src-old\ndoesn't explain what it is accurately.  It would be better to say\n\"Here you can download the source code for any past version of Sage so\nyou can build it from source.\"\n\n6. This listing at http://sagemath.org/src-old/ also has various\nrandom files like README.txt.in and install.html mixed in.\n\nIt would also be worth mentioning that we have many old sage install on sage.math. \n\nI wonder if it would also be good to archive bdists for one specific Linux release, e.g., 32-bit x86 Ubuntu 8.04 LTS?  Since then one can easily get a virtual machine and drop our binary in it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7205\n\n",
+    "created_at": "2009-10-14T02:40:54Z",
+    "labels": [
+        "distribution",
+        "major",
+        "bug"
+    ],
+    "title": "fix the list of old sage releases website",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7205",
+    "user": "was"
+}
+```
 Assignee: tbd
 
 CC:  schilly
 
 1. If I go to http://sagemath.org/src/ there is only the last release.
 
- 2. If I click on "up one directory level", I'm just dumped to
+   2. If I click on "up one directory level", I'm just dumped to
 http://sagemath.org, which makes no sense.
 
- 3. Clicking on changelogs gives
+3. Clicking on changelogs gives
 http://sagemath.org/src/changelogs/index.html which does indeed list
 changelogs.  But it also lists  a file "OLD_VERSIONS_HERE.txt",
 randomly right in the middle.  Looking at that file I find the
 completely wrong statement: "These are archived old versions.  For the
 new versions see the main SAGE website. http://modular.ucsd.edu/sage".
 
- 4. There is a random "README.txt" for no reason also in the middle
+4. There is a random "README.txt" for no reason also in the middle
 of http://sagemath.org/src/changelogs/
 
- 5. Finally, logging into the server I find that
+5. Finally, logging into the server I find that
 http://sagemath.org/src-old/ has the old versions.  But how could I
 find that otherwise?   Also, the description at the top of src-old
 doesn't explain what it is accurately.  It would be better to say
 "Here you can download the source code for any past version of Sage so
 you can build it from source."
 
- 6. This listing at http://sagemath.org/src-old/ also has various
+6. This listing at http://sagemath.org/src-old/ also has various
 random files like README.txt.in and install.html mixed in.
 
 It would also be worth mentioning that we have many old sage install on sage.math. 
 
 I wonder if it would also be good to archive bdists for one specific Linux release, e.g., 32-bit x86 Ubuntu 8.04 LTS?  Since then one can easily get a virtual machine and drop our binary in it.
 
+Issue created by migration from https://trac.sagemath.org/ticket/7205
+
+
+
+
 
 ---
 
-Comment by was created at 2009-10-14 16:55:52
+archive/issue_comments_059785.json:
+```json
+{
+    "body": "Harald has fixed the problems involving finding the old source.  Some of the directory listing and header problems remain.",
+    "created_at": "2009-10-14T16:55:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7205",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7205#issuecomment-59785",
+    "user": "was"
+}
+```
 
 Harald has fixed the problems involving finding the old source.  Some of the directory listing and header problems remain.
 
 
+
 ---
 
-Comment by timdumol created at 2009-10-25 19:44:26
+archive/issue_comments_059786.json:
+```json
+{
+    "body": "Seems to me that almost every problem except the 6th problem is solved. There are still some random files at http://www.sagemath.org/src-old/",
+    "created_at": "2009-10-25T19:44:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7205",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7205#issuecomment-59786",
+    "user": "timdumol"
+}
+```
 
 Seems to me that almost every problem except the 6th problem is solved. There are still some random files at http://www.sagemath.org/src-old/
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-05-17 22:05:06
+archive/issue_comments_059787.json:
+```json
+{
+    "body": "Harald, it seems to me that none of this is still relevant.  Do you agree?",
+    "created_at": "2012-05-17T22:05:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7205",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7205#issuecomment-59787",
+    "user": "jdemeyer"
+}
+```
 
 Harald, it seems to me that none of this is still relevant.  Do you agree?
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-05-17 22:05:06
+archive/issue_comments_059788.json:
+```json
+{
+    "body": "Changing component from distribution to website/wiki.",
+    "created_at": "2012-05-17T22:05:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7205",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7205#issuecomment-59788",
+    "user": "jdemeyer"
+}
+```
 
 Changing component from distribution to website/wiki.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-05-17 22:05:06
+archive/issue_comments_059789.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2012-05-17T22:05:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7205",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7205#issuecomment-59789",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by schilly created at 2012-05-17 22:16:09
+archive/issue_comments_059790.json:
+```json
+{
+    "body": "`@`jdemeyer: honestly, i have no memory of that. a short introduction note for the src-old files is the only thing that is still open. we can close it, i'll add a note.",
+    "created_at": "2012-05-17T22:16:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7205",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7205#issuecomment-59790",
+    "user": "schilly"
+}
+```
 
 `@`jdemeyer: honestly, i have no memory of that. a short introduction note for the src-old files is the only thing that is still open. we can close it, i'll add a note.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-05-18 09:58:44
+archive/issue_comments_059791.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2012-05-18T09:58:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7205",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7205#issuecomment-59791",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-05-21 08:06:18
+archive/issue_comments_059792.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2012-05-21T08:06:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7205",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7205#issuecomment-59792",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: fixed

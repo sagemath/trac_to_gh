@@ -1,11 +1,21 @@
 # Issue 5380: devmap: allow to search for contributions by trac username
 
-Issue created by migration from https://trac.sagemath.org/ticket/5380
-
-Original creator: mvngu
-
-Original creation time: 2009-02-26 03:15:52
-
+archive/issues_005380.json:
+```json
+{
+    "body": "Assignee: schilly\n\nCC:  schilly\n\nKeywords: devmap\n\nThe development map (devmap) at\n\n\n\nhttp://www.sagemath.org/development-map.html\n\n\n\ncurrently supports search of a developer's contributions by her/his real name. For most developers, their real names diff from their trac usernames. The devmap should support search of contributions by trac usernames as well.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5380\n\n",
+    "created_at": "2009-02-26T03:15:52Z",
+    "labels": [
+        "website/wiki",
+        "minor",
+        "enhancement"
+    ],
+    "title": "devmap: allow to search for contributions by trac username",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5380",
+    "user": "mvngu"
+}
+```
 Assignee: schilly
 
 CC:  schilly
@@ -22,17 +32,45 @@ http://www.sagemath.org/development-map.html
 
 currently supports search of a developer's contributions by her/his real name. For most developers, their real names diff from their trac usernames. The devmap should support search of contributions by trac usernames as well.
 
+Issue created by migration from https://trac.sagemath.org/ticket/5380
+
+
+
+
 
 ---
+
+archive/issue_comments_041429.json:
+```json
+{
+    "body": "Attachment\n\ndiff against previous version of contributors.xml",
+    "created_at": "2009-02-26T03:19:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5380",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5380#issuecomment-41429",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
 diff against previous version of contributors.xml
 
 
+
 ---
 
-Comment by mvngu created at 2009-02-26 03:28:13
+archive/issue_comments_041430.json:
+```json
+{
+    "body": "The attached XML file `contributors.xml` is an updated version of the file\n\n\n\nhttp://www.sagemath.org/res/contributors.xml\n\n\n\nThe new version adds trac usernames of most people listed on the Sage development map. However, there are still a number of developers for whom that I've not been able to determine their trac usernames. These people are:\n1. Antti Ajanki\n2. Bill Allombert\n3. Benjamin Antieau\n4. Jennifer Balakrishnan\n5. Gregory Bard\n6. Karim Belabas\n7. Jonathan Bober\n8. Michael Brickenstein\n9. Nils Bruin\n10. Wilson Cheung\n11. Alex Clemesha\n12. Doug Cutrell\n13. Alyson Deines\n14. Tom Denton\n15. Jan Groenewald\n16. Rob Gross\n17. Bill Hart\n18. Leif Hille\n19. Neal Holtz\n20. Sean Howe\n21. Naqi Jaffery\n22. Peter Jipsen\n23. Michael Kallweit\n24. Jason Martin\n25. Kate Minola\n26. Rich Morin\n27. Gregg Musiker\n28. David Perkinson\n29. Pearu Peterson\n30. Bill Purvis\n31. Dorian Raymer\n32. R. Rishikesh\n33. Gordon Royle\n34. Kyle Schalm\n35. Jack Schmidt\n36. Denis Simone\n37. Steven Sivek\n38. Griffen Thoma\n39. Michel Vandenbergh\n40. Steve Vonn\n41. Mark Watkins\n42. Joe Wetherell\n43. Dal S. Yu\n44. Gary Zablackis\n45. Mike Zabrocki\n46. Bin Zhang\nHowever, Alexander Dreyer's trac username looks suspicious/ambiguous to me. I think his trac username is \"PolyBoRi\". I've also attached the patch file `trac_5380_search-by-username.patch  ` which should be useful for reviewers who want to view differences between the updated version of `contributors.xml` and the previous version at http://www.sagemath.org/res/contributors.xml.",
+    "created_at": "2009-02-26T03:28:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5380",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5380#issuecomment-41430",
+    "user": "mvngu"
+}
+```
 
 The attached XML file `contributors.xml` is an updated version of the file
 
@@ -43,81 +81,114 @@ http://www.sagemath.org/res/contributors.xml
 
 
 The new version adds trac usernames of most people listed on the Sage development map. However, there are still a number of developers for whom that I've not been able to determine their trac usernames. These people are:
- 1. Antti Ajanki
- 1. Bill Allombert
- 1. Benjamin Antieau
- 1. Jennifer Balakrishnan
- 1. Gregory Bard
- 1. Karim Belabas
- 1. Jonathan Bober
- 1. Michael Brickenstein
- 1. Nils Bruin
- 1. Wilson Cheung
- 1. Alex Clemesha
- 1. Doug Cutrell
- 1. Alyson Deines
- 1. Tom Denton
- 1. Jan Groenewald
- 1. Rob Gross
- 1. Bill Hart
- 1. Leif Hille
- 1. Neal Holtz
- 1. Sean Howe
- 1. Naqi Jaffery
- 1. Peter Jipsen
- 1. Michael Kallweit
- 1. Jason Martin
- 1. Kate Minola
- 1. Rich Morin
- 1. Gregg Musiker
- 1. David Perkinson
- 1. Pearu Peterson
- 1. Bill Purvis
- 1. Dorian Raymer
- 1. R. Rishikesh
- 1. Gordon Royle
- 1. Kyle Schalm
- 1. Jack Schmidt
- 1. Denis Simone
- 1. Steven Sivek
- 1. Griffen Thoma
- 1. Michel Vandenbergh
- 1. Steve Vonn
- 1. Mark Watkins
- 1. Joe Wetherell
- 1. Dal S. Yu
- 1. Gary Zablackis
- 1. Mike Zabrocki
- 1. Bin Zhang
+1. Antti Ajanki
+2. Bill Allombert
+3. Benjamin Antieau
+4. Jennifer Balakrishnan
+5. Gregory Bard
+6. Karim Belabas
+7. Jonathan Bober
+8. Michael Brickenstein
+9. Nils Bruin
+10. Wilson Cheung
+11. Alex Clemesha
+12. Doug Cutrell
+13. Alyson Deines
+14. Tom Denton
+15. Jan Groenewald
+16. Rob Gross
+17. Bill Hart
+18. Leif Hille
+19. Neal Holtz
+20. Sean Howe
+21. Naqi Jaffery
+22. Peter Jipsen
+23. Michael Kallweit
+24. Jason Martin
+25. Kate Minola
+26. Rich Morin
+27. Gregg Musiker
+28. David Perkinson
+29. Pearu Peterson
+30. Bill Purvis
+31. Dorian Raymer
+32. R. Rishikesh
+33. Gordon Royle
+34. Kyle Schalm
+35. Jack Schmidt
+36. Denis Simone
+37. Steven Sivek
+38. Griffen Thoma
+39. Michel Vandenbergh
+40. Steve Vonn
+41. Mark Watkins
+42. Joe Wetherell
+43. Dal S. Yu
+44. Gary Zablackis
+45. Mike Zabrocki
+46. Bin Zhang
 However, Alexander Dreyer's trac username looks suspicious/ambiguous to me. I think his trac username is "PolyBoRi". I've also attached the patch file `trac_5380_search-by-username.patch  ` which should be useful for reviewers who want to view differences between the updated version of `contributors.xml` and the previous version at http://www.sagemath.org/res/contributors.xml.
+
 
 
 ---
 
-Comment by mabshoff created at 2009-02-26 03:56:45
+archive/issue_comments_041431.json:
+```json
+{
+    "body": "Hi Minh,\n\n* not all people listed with credit have trac accounts, but I can go over the list\n* PolyBoRi is a single account for Alexander Dreyer and Michael Brickenstein - we might want to fix that.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-26T03:56:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5380",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5380#issuecomment-41431",
+    "user": "mabshoff"
+}
+```
 
 Hi Minh,
 
- * not all people listed with credit have trac accounts, but I can go over the list
- * PolyBoRi is a single account for Alexander Dreyer and Michael Brickenstein - we might want to fix that.
+* not all people listed with credit have trac accounts, but I can go over the list
+* PolyBoRi is a single account for Alexander Dreyer and Michael Brickenstein - we might want to fix that.
 
 Cheers,
 
 Michael
 
 
+
 ---
 
-Comment by schilly created at 2009-02-26 10:18:57
+archive/issue_comments_041432.json:
+```json
+{
+    "body": "ok, thanks, that was fast!\n\nfile uploaded and everything working. just too bad that trac doesn't support searching by username, just this full text stuff, but indeed nice to be able to see where he/she had the fingers in :)",
+    "created_at": "2009-02-26T10:18:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5380",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5380#issuecomment-41432",
+    "user": "schilly"
+}
+```
 
 ok, thanks, that was fast!
 
 file uploaded and everything working. just too bad that trac doesn't support searching by username, just this full text stuff, but indeed nice to be able to see where he/she had the fingers in :)
 
 
+
 ---
 
-Comment by mvngu created at 2009-02-28 01:04:20
+archive/issue_comments_041433.json:
+```json
+{
+    "body": "Replying to [comment:4 schilly]:\n> file uploaded and everything working. just too bad that trac doesn't support\n> searching by username, just this full text stuff, but indeed nice to be able\n> to see where he/she had the fingers in :)\nOK, with `contributors.xml` uploaded, I see that visitors to the devmap are able to search for a developer's contribution. If the said XML file contains a developer's trac username, then the visitor would be presented with a list of (possible) contributions made by the developer in question. However, if the XML file doesn't contain the developer's trac username, then the search query would be made using the developer's full name as provided on the devmap.\n\n\n\nHowever, I still see a number of weird things in the trac search functionalities. Disclaimer: I'm not an expert on how the trac server searches for a developer's contributions.\n1. In cases where a developer's trac username has not appeared on any trac tickets, the search is still performed using the developer's username. I think this would likely result in a misleading list of search results, and the said developer's contribution on trac tickets would be missed by the search. A case in point is Maite Aranes, who has the username \"mtaranes\". After clicking on the link \"search contributions\", the search result is just Maite's name highlighted on the page\n \n \n\n http://trac.sagemath.org/sage_trac/wiki/WikiStart\n  \n \n\n  From the release note of Sage 3.3 and release tour, I'm 99.9% certain that Maite has contributed code in that release, in particular the ticket #4831.\n1. If a developer's trac username is two characters in length, then the search query returns a \"Search Error\" message, with the explanation\n   {{{\n   Search query too short. Query must be at least 3 characters long.\n   }}}\n   For example, Yi Qiang's username is \"yi\" and a search of his contribution returns a search error. This is weird, because Yi has made substantial contributions to the dsage package, and I think he's the original developer of dsage. I'm not sure how to fix this. However, an ad hoc fix might be to have the following policy for trac usernames: i.e. a trac username must be at least 3 characters in length. Perhaps someone can suggest a better workaround.\n\nApart from the above comments, someone else should verify/review this ticket and the updated devmap.",
+    "created_at": "2009-02-28T01:04:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5380",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5380#issuecomment-41433",
+    "user": "mvngu"
+}
+```
 
 Replying to [comment:4 schilly]:
 > file uploaded and everything working. just too bad that trac doesn't support
@@ -128,7 +199,7 @@ OK, with `contributors.xml` uploaded, I see that visitors to the devmap are able
 
 
 However, I still see a number of weird things in the trac search functionalities. Disclaimer: I'm not an expert on how the trac server searches for a developer's contributions.
- 1. In cases where a developer's trac username has not appeared on any trac tickets, the search is still performed using the developer's username. I think this would likely result in a misleading list of search results, and the said developer's contribution on trac tickets would be missed by the search. A case in point is Maite Aranes, who has the username "mtaranes". After clicking on the link "search contributions", the search result is just Maite's name highlighted on the page
+1. In cases where a developer's trac username has not appeared on any trac tickets, the search is still performed using the developer's username. I think this would likely result in a misleading list of search results, and the said developer's contribution on trac tickets would be missed by the search. A case in point is Maite Aranes, who has the username "mtaranes". After clicking on the link "search contributions", the search result is just Maite's name highlighted on the page
  
  
 
@@ -137,7 +208,7 @@ However, I still see a number of weird things in the trac search functionalities
  
 
   From the release note of Sage 3.3 and release tour, I'm 99.9% certain that Maite has contributed code in that release, in particular the ticket #4831.
- 1. If a developer's trac username is two characters in length, then the search query returns a "Search Error" message, with the explanation
+1. If a developer's trac username is two characters in length, then the search query returns a "Search Error" message, with the explanation
    {{{
    Search query too short. Query must be at least 3 characters long.
    }}}
@@ -146,9 +217,20 @@ However, I still see a number of weird things in the trac search functionalities
 Apart from the above comments, someone else should verify/review this ticket and the updated devmap.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-03-01 02:27:49
+archive/issue_comments_041434.json:
+```json
+{
+    "body": "Better luck in 3.4.1.\n\nCheers,\n\nMichael",
+    "created_at": "2009-03-01T02:27:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5380",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5380#issuecomment-41434",
+    "user": "mabshoff"
+}
+```
 
 Better luck in 3.4.1.
 
@@ -157,9 +239,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by schilly created at 2009-03-01 17:43:46
+archive/issue_comments_041435.json:
+```json
+{
+    "body": "Replying to [comment:5 mvngu]:\n> However, if the XML file doesn't contain the developer's trac username, then the search query would be made using the developer's full name as provided on the devmap.\n\ni wanted to find a way to search for contributions where no trac account is known. That's why i take the real name. Plan B would have been to only include the link for those, where a trac account name is given and not for all the others. Testing some names seemed to be good enough to include the real name for those where no trac account is given...\n\nMixing trac account name and real name turned out to be a bad idea. In that case, sometimes nothing at all was found.\n\n> \"yi\" and a search of his contribution returns a search error. \n\nyeahr well, trac search isn't good. probably searching with google (restricted site search on trac.sagemath.org) would be better - at least for two letter words like this one ;)\n\nharald",
+    "created_at": "2009-03-01T17:43:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5380",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5380#issuecomment-41435",
+    "user": "schilly"
+}
+```
 
 Replying to [comment:5 mvngu]:
 > However, if the XML file doesn't contain the developer's trac username, then the search query would be made using the developer's full name as provided on the devmap.
@@ -175,37 +268,87 @@ yeahr well, trac search isn't good. probably searching with google (restricted s
 harald
 
 
+
 ---
+
+archive/issue_comments_041436.json:
+```json
+{
+    "body": "Attachment\n\nRemove Yi Qiang's trac username",
+    "created_at": "2009-03-16T05:27:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5380",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5380#issuecomment-41436",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
 Remove Yi Qiang's trac username
 
 
+
 ---
+
+archive/issue_comments_041437.json:
+```json
+{
+    "body": "Attachment\n\nRemove trac usernames of some people",
+    "created_at": "2009-03-16T05:58:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5380",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5380#issuecomment-41437",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
 Remove trac usernames of some people
 
 
+
 ---
+
+archive/issue_comments_041438.json:
+```json
+{
+    "body": "Attachment\n\nUpdated contributors list",
+    "created_at": "2009-03-16T05:59:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5380",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5380#issuecomment-41438",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
 Updated contributors list
 
 
+
 ---
 
-Comment by mvngu created at 2009-03-16 06:07:18
+archive/issue_comments_041439.json:
+```json
+{
+    "body": "The updated contributors list **contributors.xml** is similar to the previous version, except that Yi Qiang's trac username has been removed so that we can search for his contribution using this full name. This search option would result in more matches than getting an error message when searching with two letters. I encountered another problem while searching contributions of the following people:\n1. Timothy Clemans\n2. Alexander Dreyer\n3. Alex Ghitza\n4. Simon King\n5. Nils-Peter Skoruppa\n\nusing the \"Search contributions\" links at\n\n\n\nhttp://www.sagemath.org/development-map.html\n\n\n\nSearching contributions of each of the above people result in a wiki page that says something like this:\n\n\n\nhttp://trac.sagemath.org/sage_trac/wiki/TimothyClemans\n\n\n\nThat's because the trac search function mistakens the trac usernames of these people as empty wiki pages. So for now, the updated contributors list no longer has the trac usernames of the above people. Once the updated list **contributors.xml** is uploaded, a reviewer should check on the (new) devmap that clicking on the \"Search contributions\" links next to the above people, including Yi Qiang, should return some search results, which should not be error messages, or empty wiki pages. Other than the above comments, I think this messy ticket can be closed, unless someome has suggestions.",
+    "created_at": "2009-03-16T06:07:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5380",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5380#issuecomment-41439",
+    "user": "mvngu"
+}
+```
 
-The updated contributors list *contributors.xml* is similar to the previous version, except that Yi Qiang's trac username has been removed so that we can search for his contribution using this full name. This search option would result in more matches than getting an error message when searching with two letters. I encountered another problem while searching contributions of the following people:
- 1. Timothy Clemans
- 1. Alexander Dreyer
- 1. Alex Ghitza
- 1. Simon King
- 1. Nils-Peter Skoruppa
+The updated contributors list **contributors.xml** is similar to the previous version, except that Yi Qiang's trac username has been removed so that we can search for his contribution using this full name. This search option would result in more matches than getting an error message when searching with two letters. I encountered another problem while searching contributions of the following people:
+1. Timothy Clemans
+2. Alexander Dreyer
+3. Alex Ghitza
+4. Simon King
+5. Nils-Peter Skoruppa
 
 using the "Search contributions" links at
 
@@ -223,26 +366,48 @@ http://trac.sagemath.org/sage_trac/wiki/TimothyClemans
 
 
 
-That's because the trac search function mistakens the trac usernames of these people as empty wiki pages. So for now, the updated contributors list no longer has the trac usernames of the above people. Once the updated list *contributors.xml* is uploaded, a reviewer should check on the (new) devmap that clicking on the "Search contributions" links next to the above people, including Yi Qiang, should return some search results, which should not be error messages, or empty wiki pages. Other than the above comments, I think this messy ticket can be closed, unless someome has suggestions.
+That's because the trac search function mistakens the trac usernames of these people as empty wiki pages. So for now, the updated contributors list no longer has the trac usernames of the above people. Once the updated list **contributors.xml** is uploaded, a reviewer should check on the (new) devmap that clicking on the "Search contributions" links next to the above people, including Yi Qiang, should return some search results, which should not be error messages, or empty wiki pages. Other than the above comments, I think this messy ticket can be closed, unless someome has suggestions.
+
 
 
 ---
 
-Comment by schilly created at 2009-03-16 11:33:49
+archive/issue_comments_041440.json:
+```json
+{
+    "body": "Replying to [comment:8 mvngu]:\n> The updated contributors list **contributors.xml**...\n\nI've updated the website with that file. Changes looked good to me.",
+    "created_at": "2009-03-16T11:33:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5380",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5380#issuecomment-41440",
+    "user": "schilly"
+}
+```
 
 Replying to [comment:8 mvngu]:
-> The updated contributors list *contributors.xml*...
+> The updated contributors list **contributors.xml**...
 
 I've updated the website with that file. Changes looked good to me.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-03-16 15:58:00
+archive/issue_comments_041441.json:
+```json
+{
+    "body": "Replying to [comment:9 schilly]:\n> Replying to [comment:8 mvngu]:\n> > The updated contributors list **contributors.xml**...\n> \n> I've updated the website with that file. Changes looked good to me.\n\nChanging it to a positive review.\n\nCheers,\n\nMichael",
+    "created_at": "2009-03-16T15:58:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5380",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5380#issuecomment-41441",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:9 schilly]:
 > Replying to [comment:8 mvngu]:
-> > The updated contributors list *contributors.xml*...
+> > The updated contributors list **contributors.xml**...
 > 
 > I've updated the website with that file. Changes looked good to me.
 
@@ -253,9 +418,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-03-16 15:59:22
+archive/issue_comments_041442.json:
+```json
+{
+    "body": "Merged in Sage 3.4.1.alpha0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-03-16T15:59:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5380",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5380#issuecomment-41442",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.4.1.alpha0.
 
@@ -264,8 +440,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-03-16 15:59:22
+archive/issue_comments_041443.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-03-16T15:59:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5380",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5380#issuecomment-41443",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

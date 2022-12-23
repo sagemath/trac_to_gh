@@ -1,54 +1,136 @@
 # Issue 4580: [with patch, needs review] move mpfr declarations to a pxd
 
-Issue created by migration from https://trac.sagemath.org/ticket/4580
-
-Original creator: robertwb
-
-Original creation time: 2008-11-22 01:36:22
-
+archive/issues_004580.json:
+```json
+{
+    "body": "Assignee: somebody\n\nfor consistency and in preparation for further cython optimizations\n\nIssue created by migration from https://trac.sagemath.org/ticket/4580\n\n",
+    "created_at": "2008-11-22T01:36:22Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch, needs review] move mpfr declarations to a pxd",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4580",
+    "user": "robertwb"
+}
+```
 Assignee: somebody
 
 for consistency and in preparation for further cython optimizations
 
+Issue created by migration from https://trac.sagemath.org/ticket/4580
+
+
+
+
 
 ---
+
+archive/issue_comments_034342.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-11-22T01:39:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4580",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4580#issuecomment-34342",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by robertwb created at 2008-11-22 01:39:58
+archive/issue_comments_034343.json:
+```json
+{
+    "body": "Followup to #846",
+    "created_at": "2008-11-22T01:39:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4580",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4580#issuecomment-34343",
+    "user": "robertwb"
+}
+```
 
 Followup to #846
 
 
+
 ---
 
-Comment by cwitty created at 2008-11-23 04:57:41
+archive/issue_comments_034344.json:
+```json
+{
+    "body": "I can't get this to compile; see #4592 for what I think is going wrong.",
+    "created_at": "2008-11-23T04:57:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4580",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4580#issuecomment-34344",
+    "user": "cwitty"
+}
+```
 
 I can't get this to compile; see #4592 for what I think is going wrong.
 
 
+
 ---
 
-Comment by cwitty created at 2008-11-23 16:34:25
+archive/issue_comments_034345.json:
+```json
+{
+    "body": "This patch looks good, but exposes a bug in setup.py (see #4597).  I think that if this patch were applied without fixing setup.py, then `sage -upgrade` would fail, unless the user removed the .cython_deps file (or unless `sage -upgrade` automatically removes that file).\n\nSo, positive review on this patch itself, but we might want to hold off applying it until #4597 is fixed.",
+    "created_at": "2008-11-23T16:34:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4580",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4580#issuecomment-34345",
+    "user": "cwitty"
+}
+```
 
 This patch looks good, but exposes a bug in setup.py (see #4597).  I think that if this patch were applied without fixing setup.py, then `sage -upgrade` would fail, unless the user removed the .cython_deps file (or unless `sage -upgrade` automatically removes that file).
 
 So, positive review on this patch itself, but we might want to hold off applying it until #4597 is fixed.
 
 
+
 ---
 
-Comment by cwitty created at 2008-11-25 01:41:32
+archive/issue_comments_034346.json:
+```json
+{
+    "body": "OK, there's a patch up for #4597 with a positive review.",
+    "created_at": "2008-11-25T01:41:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4580",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4580#issuecomment-34346",
+    "user": "cwitty"
+}
+```
 
 OK, there's a patch up for #4597 with a positive review.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-25 02:42:37
+archive/issue_comments_034347.json:
+```json
+{
+    "body": "I had to rebase the following hunk from the above patch:\n\n```\n***************\n*** 10,24 ****\n  from sage.structure.element cimport Element, ModuleElement, RingElement\n  from sage.structure.element import parent\n  \n- # import the mpfr stuff from RealNumber becase it's included, not cimported\n- from sage.rings.real_mpfr cimport mpfr_t, mp_rnd_t\n- from sage.rings.real_mpfr cimport *\n- \n- cdef extern from \"mpfr.h\":\n-     int mpfr_mul_ui (mpfr_t rop, mpfr_t op1, unsigned long int op2, mp_rnd_t rnd)\n-     int mpfr_div_ui (mpfr_t rop, mpfr_t op1, unsigned long int op2, mp_rnd_t rnd)\n-     int mpfr_cmp_si (mpfr_t op1, signed long int op2)\n-     int mpfr_cmpabs (mpfr_t op1, mpfr_t op2)\n          \n  cdef class PolynomialRealDense(Polynomial):\n      \n--- 13,19 ----\n  from sage.structure.element cimport Element, ModuleElement, RingElement\n  from sage.structure.element import parent\n  \n+ from sage.libs.mpfr cimport *\n          \n  cdef class PolynomialRealDense(Polynomial):\n```\n\n\nOther than that everything looks fine. \n\nCheers,\n\nMichael",
+    "created_at": "2008-11-25T02:42:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4580",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4580#issuecomment-34347",
+    "user": "mabshoff"
+}
+```
 
 I had to rebase the following hunk from the above patch:
 
@@ -87,15 +169,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-25 02:42:52
+archive/issue_comments_034348.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-11-25T02:42:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4580",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4580#issuecomment-34348",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-25 02:42:52
+archive/issue_comments_034349.json:
+```json
+{
+    "body": "Merged in Sage 3.2.1.alpha1",
+    "created_at": "2008-11-25T02:42:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4580",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4580#issuecomment-34349",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.2.1.alpha1

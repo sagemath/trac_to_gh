@@ -1,76 +1,158 @@
 # Issue 8698: German translation of the document "A Tour of Sage"
 
-Issue created by migration from https://trac.sagemath.org/ticket/8698
-
-Original creator: mvngu
-
-Original creation time: 2010-04-17 02:49:06
-
+archive/issues_008698.json:
+```json
+{
+    "body": "Assignee: mvngu\n\nCC:  bblochl@arcor.de simon.king@nuigalway.ie leif minz\n\nAs the subject says.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8698\n\n",
+    "created_at": "2010-04-17T02:49:06Z",
+    "labels": [
+        "documentation",
+        "major",
+        "enhancement"
+    ],
+    "title": "German translation of the document \"A Tour of Sage\"",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8698",
+    "user": "mvngu"
+}
+```
 Assignee: mvngu
 
 CC:  bblochl@arcor.de simon.king@nuigalway.ie leif minz
 
 As the subject says.
 
+Issue created by migration from https://trac.sagemath.org/ticket/8698
+
+
+
+
 
 ---
 
-Comment by mvngu created at 2010-04-17 03:21:41
+archive/issue_comments_079228.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-04-17T03:21:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8698",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8698#issuecomment-79228",
+    "user": "mvngu"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mvngu created at 2010-04-17 11:21:54
+archive/issue_comments_079229.json:
+```json
+{
+    "body": "Updated patch in response to Bernhard's new posting at [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/c14c761ee3dc5203).",
+    "created_at": "2010-04-17T11:21:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8698",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8698#issuecomment-79229",
+    "user": "mvngu"
+}
+```
 
 Updated patch in response to Bernhard's new posting at [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/c14c761ee3dc5203).
 
 
+
 ---
 
-Comment by SimonKing created at 2010-04-17 12:33:33
+archive/issue_comments_079230.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-04-17T12:33:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8698",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8698#issuecomment-79230",
+    "user": "SimonKing"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by SimonKing created at 2010-04-17 12:33:33
+archive/issue_comments_079231.json:
+```json
+{
+    "body": "I made some proof reading, based on the html version that Minh posted at http://sage.math.washington.edu/home/mvngu/8698-tour-de/\n\n* `Das ist ein Rundgang durch Sage, der sich eng an der \u201eTour of Mathematica\u201c am Beginn des Mathematica-Buchs folgt.`\n  ---> *Das ist ein Rundgang durch Sage, der sich eng an die \u201eTour of Mathematica\u201c am Beginn des Mathematica-Buchs anlehnt.*\n  oder freier ---> *Das ist ein Rundgang durch Sage, der sich an der \u201eTour of Mathematica\u201c am Beginn des Mathematica-Buchs orientiert.*\n  bzw. ---> *Das ist ein Rundgang durch Sage, der von der \u201eTour of Mathematica\u201c am Beginn des Mathematica-Buchs inspiriert ist.*\n \n* `Wenn Sie das Sage in der Notebook-Version (als Notizbuch) benutzen`. Since Sage is a name, it should be *Wenn Sie Sage in der Notebook-Version...*\n\n* `Die Berechnung und Ausgabe des Wertes erfolgt nach der Eingabe der Tasten shift+return`. Keys are not being entered. So, better\n  *Die Berechnung und Ausgabe des Wertes erfolgt nach gleichzeitigem Dr\u00fccken der Tasten shift+return*\n\n* `Die Invertierung der Matrix 2 \\times 2 in Sage:` should be replaced by `Die Invertierung einer (2 \\times 2)-Matrix in Sage:`.\n\n* `Damit ermittelt Sage eine quadratische Gleichung.` It was not immediately clear to me what \"Damit\" refers to. Moreover, the equation is not \"determined\" but \"solved\". So, perhaps better *Im n\u00e4chsten Beispiel l\u00f6st Sage eine quadratische Gleichung.*\n\n* `Sage ben\u00f6tigt weniger als 5 Sekunden um die Anzahl der m\u00f6glichen Varianten zur Partitionierung von... zu berechnen`: There is a comma missing; I don't think that one would talk about \"number of possible **variants** of partitions\"; Sage is not only computing the number of partitions, but actually finds the partitions (which is stronger); and I think \"partition\" is \"Partition\" in German. So, I suggest *Sage ben\u00f6tigt weniger als 5 Sekunden, um alle Partitionen von... zu ermitteln*.\n\n* Last phrase of section \"Sage-Algorithmen benutzen\": I suggest to remove the parentheses. Perhaps one can make a footnote, but I think the phrase is just fine in normal text.\n\nBest regards, and thank you for working on a German translation,\n\nSimon",
+    "created_at": "2010-04-17T12:33:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8698",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8698#issuecomment-79231",
+    "user": "SimonKing"
+}
+```
 
 I made some proof reading, based on the html version that Minh posted at http://sage.math.washington.edu/home/mvngu/8698-tour-de/
 
- * `Das ist ein Rundgang durch Sage, der sich eng an der „Tour of Mathematica“ am Beginn des Mathematica-Buchs folgt.`
-   ---> _Das ist ein Rundgang durch Sage, der sich eng an die „Tour of Mathematica“ am Beginn des Mathematica-Buchs anlehnt._
-   oder freier ---> _Das ist ein Rundgang durch Sage, der sich an der „Tour of Mathematica“ am Beginn des Mathematica-Buchs orientiert._
-   bzw. ---> _Das ist ein Rundgang durch Sage, der von der „Tour of Mathematica“ am Beginn des Mathematica-Buchs inspiriert ist._
+* `Das ist ein Rundgang durch Sage, der sich eng an der „Tour of Mathematica“ am Beginn des Mathematica-Buchs folgt.`
+  ---> *Das ist ein Rundgang durch Sage, der sich eng an die „Tour of Mathematica“ am Beginn des Mathematica-Buchs anlehnt.*
+  oder freier ---> *Das ist ein Rundgang durch Sage, der sich an der „Tour of Mathematica“ am Beginn des Mathematica-Buchs orientiert.*
+  bzw. ---> *Das ist ein Rundgang durch Sage, der von der „Tour of Mathematica“ am Beginn des Mathematica-Buchs inspiriert ist.*
  
- * `Wenn Sie das Sage in der Notebook-Version (als Notizbuch) benutzen`. Since Sage is a name, it should be _Wenn Sie Sage in der Notebook-Version..._
+* `Wenn Sie das Sage in der Notebook-Version (als Notizbuch) benutzen`. Since Sage is a name, it should be *Wenn Sie Sage in der Notebook-Version...*
 
- * `Die Berechnung und Ausgabe des Wertes erfolgt nach der Eingabe der Tasten shift+return`. Keys are not being entered. So, better
-   _Die Berechnung und Ausgabe des Wertes erfolgt nach gleichzeitigem Drücken der Tasten shift+return_
+* `Die Berechnung und Ausgabe des Wertes erfolgt nach der Eingabe der Tasten shift+return`. Keys are not being entered. So, better
+  *Die Berechnung und Ausgabe des Wertes erfolgt nach gleichzeitigem Drücken der Tasten shift+return*
 
- * `Die Invertierung der Matrix 2 \times 2 in Sage:` should be replaced by `Die Invertierung einer (2 \times 2)-Matrix in Sage:`.
+* `Die Invertierung der Matrix 2 \times 2 in Sage:` should be replaced by `Die Invertierung einer (2 \times 2)-Matrix in Sage:`.
 
- * `Damit ermittelt Sage eine quadratische Gleichung.` It was not immediately clear to me what "Damit" refers to. Moreover, the equation is not "determined" but "solved". So, perhaps better _Im nächsten Beispiel löst Sage eine quadratische Gleichung._
+* `Damit ermittelt Sage eine quadratische Gleichung.` It was not immediately clear to me what "Damit" refers to. Moreover, the equation is not "determined" but "solved". So, perhaps better *Im nächsten Beispiel löst Sage eine quadratische Gleichung.*
 
- * `Sage benötigt weniger als 5 Sekunden um die Anzahl der möglichen Varianten zur Partitionierung von... zu berechnen`: There is a comma missing; I don't think that one would talk about "number of possible *variants* of partitions"; Sage is not only computing the number of partitions, but actually finds the partitions (which is stronger); and I think "partition" is "Partition" in German. So, I suggest _Sage benötigt weniger als 5 Sekunden, um alle Partitionen von... zu ermitteln_.
+* `Sage benötigt weniger als 5 Sekunden um die Anzahl der möglichen Varianten zur Partitionierung von... zu berechnen`: There is a comma missing; I don't think that one would talk about "number of possible **variants** of partitions"; Sage is not only computing the number of partitions, but actually finds the partitions (which is stronger); and I think "partition" is "Partition" in German. So, I suggest *Sage benötigt weniger als 5 Sekunden, um alle Partitionen von... zu ermitteln*.
 
- * Last phrase of section "Sage-Algorithmen benutzen": I suggest to remove the parentheses. Perhaps one can make a footnote, but I think the phrase is just fine in normal text.
+* Last phrase of section "Sage-Algorithmen benutzen": I suggest to remove the parentheses. Perhaps one can make a footnote, but I think the phrase is just fine in normal text.
 
 Best regards, and thank you for working on a German translation,
 
 Simon
 
 
+
 ---
 
-Comment by mvngu created at 2010-04-17 23:47:47
+archive/issue_comments_079232.json:
+```json
+{
+    "body": "based on Sage 4.3.5",
+    "created_at": "2010-04-17T23:47:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8698",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8698#issuecomment-79232",
+    "user": "mvngu"
+}
+```
 
 based on Sage 4.3.5
 
 
+
 ---
+
+archive/issue_comments_079233.json:
+```json
+{
+    "body": "Attachment\n\nThanks, Simon... ;-)\n\nI think what's at all meant by \"Notebook\" has to be explained, too. A typical German reader would first think of his laptop, not a user interface (which is funny if not annoying in the translation of the user guide when talking about `ssh_keygen`...).\n\nIt would be nice if you could supply a patch on top of Minh's.\n\n-Leif",
+    "created_at": "2010-04-19T02:22:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8698",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8698#issuecomment-79233",
+    "user": "leif"
+}
+```
 
 Attachment
 
@@ -83,14 +165,38 @@ It would be nice if you could supply a patch on top of Minh's.
 -Leif
 
 
+
 ---
 
-Comment by SimonKing created at 2010-04-19 09:15:20
+archive/issue_comments_079234.json:
+```json
+{
+    "body": "Adding a section on the notebook; adding the missing plots; some proof reading",
+    "created_at": "2010-04-19T09:15:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8698",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8698#issuecomment-79234",
+    "user": "SimonKing"
+}
+```
 
 Adding a section on the notebook; adding the missing plots; some proof reading
 
 
+
 ---
+
+archive/issue_comments_079235.json:
+```json
+{
+    "body": "Attachment\n\nReplying to [comment:5 leif]:\n> I think what's at all meant by \"Notebook\" has to be explained, too. \n\nGood idea (and perhaps it would make sense to have this in English, too).\n\n> It would be nice if you could supply a patch on top of Minh's.\n\nDone. \n\nMy patch adds a section on the notebook (I hope I didn't write too much nonsense, because I hardly ever use the notebook) and the two png-plots that were missing.\n\nMinh: Is it OK to first finish this ticket off before focusing on #8660? Or should the two tickets be united at an earlier stage?\n\nBest regards, Simon",
+    "created_at": "2010-04-19T09:20:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8698",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8698#issuecomment-79235",
+    "user": "SimonKing"
+}
+```
 
 Attachment
 
@@ -110,16 +216,38 @@ Minh: Is it OK to first finish this ticket off before focusing on #8660? Or shou
 Best regards, Simon
 
 
+
 ---
 
-Comment by SimonKing created at 2010-04-19 09:20:20
+archive/issue_comments_079236.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-04-19T09:20:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8698",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8698#issuecomment-79236",
+    "user": "SimonKing"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by SimonKing created at 2010-04-19 09:23:34
+archive/issue_comments_079237.json:
+```json
+{
+    "body": "Helas.\n\nI just found one typo. I wrote:\n\"Die Anzahl der M\u00f6glichkeiten ist gigantisch, wir geben hier nur die letzten 40 Ziffern an.\"\n\nShould be \"Die Anzahl der M\u00f6glichkeiten ist gigantisch, wir geben hier nur die ersten 40 Ziffern an.\"\n\nBut I think this should be fixed once there are more comments of another reviewer.",
+    "created_at": "2010-04-19T09:23:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8698",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8698#issuecomment-79237",
+    "user": "SimonKing"
+}
+```
 
 Helas.
 
@@ -131,9 +259,20 @@ Should be "Die Anzahl der Möglichkeiten ist gigantisch, wir geben hier nur die 
 But I think this should be fixed once there are more comments of another reviewer.
 
 
+
 ---
 
-Comment by mvngu created at 2010-04-19 10:47:16
+archive/issue_comments_079238.json:
+```json
+{
+    "body": "Replying to [comment:6 SimonKing]:\n> Minh: Is it OK to first finish this ticket off before focusing on #8660? Or should the two tickets be united at an earlier stage?\n\nThe Sage tour is much shorter than the installation guide. So I think the tour would be the first to get into the Sage standard documentation. Thank you for reviewing the tour.",
+    "created_at": "2010-04-19T10:47:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8698",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8698#issuecomment-79238",
+    "user": "mvngu"
+}
+```
 
 Replying to [comment:6 SimonKing]:
 > Minh: Is it OK to first finish this ticket off before focusing on #8660? Or should the two tickets be united at an earlier stage?
@@ -141,112 +280,266 @@ Replying to [comment:6 SimonKing]:
 The Sage tour is much shorter than the installation guide. So I think the tour would be the first to get into the Sage standard documentation. Thank you for reviewing the tour.
 
 
+
 ---
 
-Comment by aapitzsch created at 2010-11-19 16:44:52
+archive/issue_comments_079239.json:
+```json
+{
+    "body": "in conf.py:\n* add `language = 'de'` (to replace *Chapter* by *Kapitel*)\n* set `html_short_title` to `Sage Rundgang`\n\nin index.rst:\n* `Computer-Labors` ---> `Computerlabors`\n* `shift-return` ---> `Shift + Return` or use only the German words\n* `Gleichheitszeichen.(Das Zeichen` ---> `Gleichheitszeichen. (Das Zeichen`\n\nSome pictures (*sin_plot.png, eigen_plot.png*) are missing. I think they should be put inside *doc/common* and not be shipped by every language version itself.\n\nWhen you fixed everything set status back to *needs review*.",
+    "created_at": "2010-11-19T16:44:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8698",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8698#issuecomment-79239",
+    "user": "aapitzsch"
+}
+```
 
 in conf.py:
- * add `language = 'de'` (to replace _Chapter_ by _Kapitel_)
- * set `html_short_title` to `Sage Rundgang`
+* add `language = 'de'` (to replace *Chapter* by *Kapitel*)
+* set `html_short_title` to `Sage Rundgang`
 
 in index.rst:
- * `Computer-Labors` ---> `Computerlabors`
- * `shift-return` ---> `Shift + Return` or use only the German words
- * `Gleichheitszeichen.(Das Zeichen` ---> `Gleichheitszeichen. (Das Zeichen`
+* `Computer-Labors` ---> `Computerlabors`
+* `shift-return` ---> `Shift + Return` or use only the German words
+* `Gleichheitszeichen.(Das Zeichen` ---> `Gleichheitszeichen. (Das Zeichen`
 
-Some pictures (_sin_plot.png, eigen_plot.png_) are missing. I think they should be put inside _doc/common_ and not be shipped by every language version itself.
+Some pictures (*sin_plot.png, eigen_plot.png*) are missing. I think they should be put inside *doc/common* and not be shipped by every language version itself.
 
-When you fixed everything set status back to _needs review_.
+When you fixed everything set status back to *needs review*.
+
 
 
 ---
 
-Comment by aapitzsch created at 2010-11-19 16:44:52
+archive/issue_comments_079240.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-11-19T16:44:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8698",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8698#issuecomment-79240",
+    "user": "aapitzsch"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by chapoton created at 2014-07-18 12:56:03
+archive/issue_comments_079241.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"german\".",
+    "created_at": "2014-07-18T12:56:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8698",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8698#issuecomment-79241",
+    "user": "chapoton"
+}
+```
 
 Changing keywords from "" to "german".
 
 
+
 ---
 
-Comment by chapoton created at 2014-07-19 20:51:57
+archive/issue_comments_079242.json:
+```json
+{
+    "body": "Here is a git branch, passing tests and with html building correctly. I think it can be considered as needs review.\n----\nNew commits:",
+    "created_at": "2014-07-19T20:51:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8698",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8698#issuecomment-79242",
+    "user": "chapoton"
+}
+```
 
 Here is a git branch, passing tests and with html building correctly. I think it can be considered as needs review.
 ----
 New commits:
 
 
+
 ---
 
-Comment by chapoton created at 2014-07-19 20:51:57
+archive/issue_comments_079243.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2014-07-19T20:51:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8698",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8698#issuecomment-79243",
+    "user": "chapoton"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by aapitzsch created at 2014-07-19 21:30:17
+archive/issue_comments_079244.json:
+```json
+{
+    "body": "See comments 7 and 9.",
+    "created_at": "2014-07-19T21:30:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8698",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8698#issuecomment-79244",
+    "user": "aapitzsch"
+}
+```
 
 See comments 7 and 9.
 
 
+
 ---
 
-Comment by aapitzsch created at 2014-07-19 21:30:17
+archive/issue_comments_079245.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2014-07-19T21:30:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8698",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8698#issuecomment-79245",
+    "user": "aapitzsch"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by git created at 2014-07-20 07:34:45
+archive/issue_comments_079246.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2014-07-20T07:34:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8698",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8698#issuecomment-79246",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by chapoton created at 2014-07-20 15:41:10
+archive/issue_comments_079247.json:
+```json
+{
+    "body": "Done. Needs review now.",
+    "created_at": "2014-07-20T15:41:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8698",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8698#issuecomment-79247",
+    "user": "chapoton"
+}
+```
 
 Done. Needs review now.
 
 
+
 ---
 
-Comment by chapoton created at 2014-07-20 15:41:10
+archive/issue_comments_079248.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2014-07-20T15:41:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8698",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8698#issuecomment-79248",
+    "user": "chapoton"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by aapitzsch created at 2014-07-20 17:39:08
+archive/issue_comments_079249.json:
+```json
+{
+    "body": "Fr\u00e9d\u00e9ric, if you are happy with my changes you can set the status to positive review.",
+    "created_at": "2014-07-20T17:39:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8698",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8698#issuecomment-79249",
+    "user": "aapitzsch"
+}
+```
 
 Frédéric, if you are happy with my changes you can set the status to positive review.
 
 
+
 ---
 
-Comment by chapoton created at 2014-07-20 18:13:47
+archive/issue_comments_079250.json:
+```json
+{
+    "body": "Danke sch\u00f6n !",
+    "created_at": "2014-07-20T18:13:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8698",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8698#issuecomment-79250",
+    "user": "chapoton"
+}
+```
 
 Danke schön !
 
 
+
 ---
 
-Comment by chapoton created at 2014-07-20 18:13:47
+archive/issue_comments_079251.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2014-07-20T18:13:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8698",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8698#issuecomment-79251",
+    "user": "chapoton"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by vbraun created at 2014-07-21 17:38:07
+archive/issue_comments_079252.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2014-07-21T17:38:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8698",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8698#issuecomment-79252",
+    "user": "vbraun"
+}
+```
 
 Resolution: fixed

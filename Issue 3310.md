@@ -1,19 +1,29 @@
 # Issue 3310: sage -b fails after touching sage/libs/mwrank/{mwrank.pyx,wrap.cc}
 
-Issue created by migration from https://trac.sagemath.org/ticket/3310
-
-Original creator: cremona
-
-Original creation time: 2008-05-26 19:26:46
-
+archive/issues_003310.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\n\n1. Make a fresh clone of a 3.0.2 build.\n2. touch $SAGE_ROOT/devel/sage-test1/sage/libs/mwrank/mwrank.pyx\n3. sage -b\n4. touch $SAGE_ROOT/devel/sage-test1/sage/libs/mwrank/wrap.cc\n5. sage -b\n\n...produces this:\n\n\n```\n----------------------------------------------------------\nsage: Building and installing modified SAGE library files.\n\n\nInstalling c_lib\nscons: `install' is up to date.\nrunning install\nrunning build\nrunning build_py\nrunning build_ext\nbuilding 'sage.libs.mwrank.mwrank' extension\nerror: unknown file type '.pyx' (from 'sage/libs/mwrank/mwrank.pyx')\nsage: There was an error installing modified sage library code.\n```\n\nbut then after doing again\n\n```\ntouch $SAGE_ROOT/devel/sage-test1/sage/libs/mwrank/mwrank.pyx\n```\n\nsage -br works fine.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3310\n\n",
+    "created_at": "2008-05-26T19:26:46Z",
+    "labels": [
+        "build",
+        "minor",
+        "bug"
+    ],
+    "title": "sage -b fails after touching sage/libs/mwrank/{mwrank.pyx,wrap.cc}",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3310",
+    "user": "cremona"
+}
+```
 Assignee: mabshoff
 
 
-   1. Make a fresh clone of a 3.0.2 build.
-   2. touch $SAGE_ROOT/devel/sage-test1/sage/libs/mwrank/mwrank.pyx
-   3. sage -b
-   4. touch $SAGE_ROOT/devel/sage-test1/sage/libs/mwrank/wrap.cc
-   5. sage -b
+1. Make a fresh clone of a 3.0.2 build.
+2. touch $SAGE_ROOT/devel/sage-test1/sage/libs/mwrank/mwrank.pyx
+3. sage -b
+4. touch $SAGE_ROOT/devel/sage-test1/sage/libs/mwrank/wrap.cc
+5. sage -b
 
 ...produces this:
 
@@ -44,24 +54,61 @@ sage -br works fine.
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3310
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-05-26 20:28:25
+archive/issue_comments_022892.json:
+```json
+{
+    "body": "Changing priority from minor to blocker.",
+    "created_at": "2008-05-26T20:28:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3310",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3310#issuecomment-22892",
+    "user": "mabshoff"
+}
+```
 
 Changing priority from minor to blocker.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-26 20:28:25
+archive/issue_comments_022893.json:
+```json
+{
+    "body": "Changing assignee from mabshoff to was.",
+    "created_at": "2008-05-26T20:28:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3310",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3310#issuecomment-22893",
+    "user": "mabshoff"
+}
+```
 
 Changing assignee from mabshoff to was.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-14 22:49:41
+archive/issue_comments_022894.json:
+```json
+{
+    "body": "For the record: #3491 is a dupe of this and I closed the other ticket.\n\nCheers,\n\nMichael",
+    "created_at": "2008-08-14T22:49:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3310",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3310#issuecomment-22894",
+    "user": "mabshoff"
+}
+```
 
 For the record: #3491 is a dupe of this and I closed the other ticket.
 
@@ -70,16 +117,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-10 08:41:26
+archive/issue_comments_022895.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-11-10T08:41:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3310",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3310#issuecomment-22895",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-10 08:41:26
+archive/issue_comments_022896.json:
+```json
+{
+    "body": "This ticket has been fixed via Craig's and Gonzalo's patch at #4480.\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-10T08:41:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3310",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3310#issuecomment-22896",
+    "user": "mabshoff"
+}
+```
 
 This ticket has been fixed via Craig's and Gonzalo's patch at #4480.
 

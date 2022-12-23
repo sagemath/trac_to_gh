@@ -1,53 +1,135 @@
 # Issue 4579: [with patch, needs review] put mpz_longlong functions in c_lib
 
-Issue created by migration from https://trac.sagemath.org/ticket/4579
-
-Original creator: robertwb
-
-Original creation time: 2008-11-22 00:42:03
-
+archive/issues_004579.json:
+```json
+{
+    "body": "Assignee: somebody\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4579\n\n",
+    "created_at": "2008-11-22T00:42:03Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch, needs review] put mpz_longlong functions in c_lib",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4579",
+    "user": "robertwb"
+}
+```
 Assignee: somebody
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4579
+
+
+
+
 
 ---
+
+archive/issue_comments_034336.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-11-22T00:42:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4579",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4579#issuecomment-34336",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by cwitty created at 2008-11-23 03:37:39
+archive/issue_comments_034337.json:
+```json
+{
+    "body": "This patch removes mpz_set_longlong from integer.pyx; but Sage 3.2 doesn't have that function in integer.pyx at all (in fact, I can't find it anywhere).  Does this depend on some other patch that hasn't been applied yet?",
+    "created_at": "2008-11-23T03:37:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4579",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4579#issuecomment-34337",
+    "user": "cwitty"
+}
+```
 
 This patch removes mpz_set_longlong from integer.pyx; but Sage 3.2 doesn't have that function in integer.pyx at all (in fact, I can't find it anywhere).  Does this depend on some other patch that hasn't been applied yet?
 
 
+
 ---
 
-Comment by cwitty created at 2008-11-23 04:32:08
+archive/issue_comments_034338.json:
+```json
+{
+    "body": "mabshoff points out that #4564 is the patch I was missing.",
+    "created_at": "2008-11-23T04:32:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4579",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4579#issuecomment-34338",
+    "user": "cwitty"
+}
+```
 
 mabshoff points out that #4564 is the patch I was missing.
 
 
+
 ---
 
-Comment by cwitty created at 2008-11-23 05:43:52
+archive/issue_comments_034339.json:
+```json
+{
+    "body": "Patch looks good; doctests pass.\n\nPositive review.",
+    "created_at": "2008-11-23T05:43:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4579",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4579#issuecomment-34339",
+    "user": "cwitty"
+}
+```
 
 Patch looks good; doctests pass.
 
 Positive review.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-23 06:43:16
+archive/issue_comments_034340.json:
+```json
+{
+    "body": "Merged in Sage 3.2.1.alpha0",
+    "created_at": "2008-11-23T06:43:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4579",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4579#issuecomment-34340",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.2.1.alpha0
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-23 06:43:16
+archive/issue_comments_034341.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-11-23T06:43:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4579",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4579#issuecomment-34341",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

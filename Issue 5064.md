@@ -1,11 +1,21 @@
 # Issue 5064: Steenrod algebras are non-unique
 
-Issue created by migration from https://trac.sagemath.org/ticket/5064
-
-Original creator: boothby
-
-Original creation time: 2009-01-23 02:16:15
-
+archive/issues_005064.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  jhpalmieri\n\n\n```\nsage: A = SteenrodAlgebra(17)\nsage: A(0).parent() is A\nFalse\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5064\n\n",
+    "created_at": "2009-01-23T02:16:15Z",
+    "labels": [
+        "algebra",
+        "major",
+        "bug"
+    ],
+    "title": "Steenrod algebras are non-unique",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5064",
+    "user": "boothby"
+}
+```
 Assignee: tbd
 
 CC:  jhpalmieri
@@ -18,78 +28,205 @@ False
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5064
+
+
+
+
 
 ---
 
-Comment by boothby created at 2009-01-23 02:16:45
+archive/issue_comments_038573.json:
+```json
+{
+    "body": "Changing priority from major to minor.",
+    "created_at": "2009-01-23T02:16:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5064",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5064#issuecomment-38573",
+    "user": "boothby"
+}
+```
 
 Changing priority from major to minor.
 
 
+
 ---
 
-Comment by boothby created at 2009-01-23 02:16:45
+archive/issue_comments_038574.json:
+```json
+{
+    "body": "Changing component from algebra to commutative algebra.",
+    "created_at": "2009-01-23T02:16:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5064",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5064#issuecomment-38574",
+    "user": "boothby"
+}
+```
 
 Changing component from algebra to commutative algebra.
 
 
+
 ---
 
-Comment by boothby created at 2009-01-23 02:16:45
+archive/issue_comments_038575.json:
+```json
+{
+    "body": "Changing assignee from tbd to malb.",
+    "created_at": "2009-01-23T02:16:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5064",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5064#issuecomment-38575",
+    "user": "boothby"
+}
+```
 
 Changing assignee from tbd to malb.
 
 
+
 ---
 
-Comment by boothby created at 2009-01-23 02:17:32
+archive/issue_comments_038576.json:
+```json
+{
+    "body": "Changing component from commutative algebra to algebra.",
+    "created_at": "2009-01-23T02:17:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5064",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5064#issuecomment-38576",
+    "user": "boothby"
+}
+```
 
 Changing component from commutative algebra to algebra.
 
 
+
 ---
 
-Comment by boothby created at 2009-01-23 02:17:32
+archive/issue_comments_038577.json:
+```json
+{
+    "body": "Changing assignee from malb to tbd.",
+    "created_at": "2009-01-23T02:17:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5064",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5064#issuecomment-38577",
+    "user": "boothby"
+}
+```
 
 Changing assignee from malb to tbd.
 
 
+
 ---
+
+archive/issue_comments_038578.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-01-24T10:09:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5064",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5064#issuecomment-38578",
+    "user": "boothby"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by shumow created at 2009-01-24 11:42:45
+archive/issue_comments_038579.json:
+```json
+{
+    "body": "tried the patch, it doesn't work for me.",
+    "created_at": "2009-01-24T11:42:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5064",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5064#issuecomment-38579",
+    "user": "shumow"
+}
+```
 
 tried the patch, it doesn't work for me.
 
 
+
 ---
 
-Comment by shumow created at 2009-01-24 11:49:58
+archive/issue_comments_038580.json:
+```json
+{
+    "body": "My bad.  I screwed up the test.  It works for me now.\nI ran the tests and looked the code over, but I don't know enough about Steenrod Algebras to feel comfortable refereeing this.",
+    "created_at": "2009-01-24T11:49:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5064",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5064#issuecomment-38580",
+    "user": "shumow"
+}
+```
 
 My bad.  I screwed up the test.  It works for me now.
 I ran the tests and looked the code over, but I don't know enough about Steenrod Algebras to feel comfortable refereeing this.
 
 
+
 ---
 
-Comment by shumow created at 2009-01-24 12:02:17
+archive/issue_comments_038581.json:
+```json
+{
+    "body": "On closer explanation from boothby, I feel I can give this a positive review.",
+    "created_at": "2009-01-24T12:02:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5064",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5064#issuecomment-38581",
+    "user": "shumow"
+}
+```
 
 On closer explanation from boothby, I feel I can give this a positive review.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-24 16:28:55
+archive/issue_comments_038582.json:
+```json
+{
+    "body": "Merged in Sage 3.3.alpha2",
+    "created_at": "2009-01-24T16:28:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5064",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5064#issuecomment-38582",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.3.alpha2
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-24 16:28:55
+archive/issue_comments_038583.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-01-24T16:28:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5064",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5064#issuecomment-38583",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

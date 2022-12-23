@@ -1,11 +1,21 @@
 # Issue 8161: use Sphinx to produce docstrings from the command line
 
-Issue created by migration from https://trac.sagemath.org/ticket/8161
-
-Original creator: jhpalmieri
-
-Original creation time: 2010-02-03 02:34:04
-
+archive/issues_008161.json:
+```json
+{
+    "body": "Assignee: mvngu\n\nThe attached patch uses Sphinx to produce docstrings from the command line.  The docstrings are still plain text, but among other things, all double colons should be turned into single colons.  The patch also (by hand) changes ```text``` to `\"text\"`, which I think looks better and conveys the same information.\n\nIt also no longer replaces `\\\\` with `\\\\\\\\` for docstrings in the notebook, since there is a line in sphinxify that just undoes this.\n\nThis depends on #8160.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8161\n\n",
+    "created_at": "2010-02-03T02:34:04Z",
+    "labels": [
+        "documentation",
+        "major",
+        "enhancement"
+    ],
+    "title": "use Sphinx to produce docstrings from the command line",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8161",
+    "user": "jhpalmieri"
+}
+```
 Assignee: mvngu
 
 The attached patch uses Sphinx to produce docstrings from the command line.  The docstrings are still plain text, but among other things, all double colons should be turned into single colons.  The patch also (by hand) changes ```text``` to `"text"`, which I think looks better and conveys the same information.
@@ -15,24 +25,61 @@ It also no longer replaces `\\` with `\\\\` for docstrings in the notebook, sinc
 This depends on #8160.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8161
+
+
+
+
 
 ---
 
-Comment by jhpalmieri created at 2010-02-03 02:35:03
+archive/issue_comments_071779.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-02-03T02:35:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8161",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8161#issuecomment-71779",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-02-03 03:47:08
+archive/issue_comments_071780.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-02-03T03:47:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8161",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8161#issuecomment-71780",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-02-03 03:47:08
+archive/issue_comments_071781.json:
+```json
+{
+    "body": "I think the idea is good, but this needs work; I'm getting some doctest failures with this patch:\n\n```\nThe following tests failed:\n\n\tsage -t -long devel/sage/sage/structure/sage_object.pyx # 1 doctests failed\n\tsage -t -long devel/sage/sage/structure/element.pyx # 1 doctests failed\n\tsage -t -long devel/sage/sage/rings/polynomial/multi_polynomial_libsingular.pyx # 6 doctests failed\n\tsage -t -long devel/sage/sage/structure/element_wrapper.py # Segfault\n\tsage -t -long devel/sage/sage/misc/sageinspect.py # 4 doctests failed\n\tsage -t -long devel/sage/sage/structure/dynamic_class.py # 1 doctests failed\n```\n\nI'll try to work on them, and anyone else who is interested can do the same.",
+    "created_at": "2010-02-03T03:47:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8161",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8161#issuecomment-71781",
+    "user": "jhpalmieri"
+}
+```
 
 I think the idea is good, but this needs work; I'm getting some doctest failures with this patch:
 
@@ -50,28 +97,74 @@ The following tests failed:
 I'll try to work on them, and anyone else who is interested can do the same.
 
 
+
 ---
+
+archive/issue_comments_071782.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-02-03T04:40:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8161",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8161#issuecomment-71782",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-02-03 04:41:24
+archive/issue_comments_071783.json:
+```json
+{
+    "body": "With this patch, all tests pass on boxen.",
+    "created_at": "2010-02-03T04:41:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8161",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8161#issuecomment-71783",
+    "user": "jhpalmieri"
+}
+```
 
 With this patch, all tests pass on boxen.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-02-03 04:41:24
+archive/issue_comments_071784.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-02-03T04:41:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8161",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8161#issuecomment-71784",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-04 06:34:08
+archive/issue_comments_071785.json:
+```json
+{
+    "body": "This looks good.  I noticed an existing problem with Unicode docstrings.  With #8051 and with or without #8167,\n\n```python\nsage: sagenb.notebook.worksheet.Worksheet.name?\nsage: sagenb.misc.misc.unicode_str?\n```\n\nhave `'<no docstring>'`.  V2 should fix this.",
+    "created_at": "2010-02-04T06:34:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8161",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8161#issuecomment-71785",
+    "user": "mpatel"
+}
+```
 
 This looks good.  I noticed an existing problem with Unicode docstrings.  With #8051 and with or without #8167,
 
@@ -83,21 +176,58 @@ sage: sagenb.misc.misc.unicode_str?
 have `'<no docstring>'`.  V2 should fix this.
 
 
+
 ---
+
+archive/issue_comments_071786.json:
+```json
+{
+    "body": "Attachment\n\nHandle Unicode docstrings.  Replaces previous.  **sage** repo.",
+    "created_at": "2010-02-04T06:53:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8161",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8161#issuecomment-71786",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
-Handle Unicode docstrings.  Replaces previous.  *sage* repo.
+Handle Unicode docstrings.  Replaces previous.  **sage** repo.
+
+
+
+---
+
+archive/issue_comments_071787.json:
+```json
+{
+    "body": "Update `sagenb.misc.sageinspect` doctests.  **sagenb** repo.",
+    "created_at": "2010-02-04T06:54:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8161",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8161#issuecomment-71787",
+    "user": "mpatel"
+}
+```
+
+Update `sagenb.misc.sageinspect` doctests.  **sagenb** repo.
+
 
 
 ---
 
-Comment by mpatel created at 2010-02-04 06:54:33
-
-Update `sagenb.misc.sageinspect` doctests.  *sagenb* repo.
-
-
----
+archive/issue_comments_071788.json:
+```json
+{
+    "body": "Attachment\n\nV2 replaces `return str(r)` with\n\n```python\n    from sagenb.misc.misc import encoded_str\n    return encoded_str(r)\n```\n\nin `sage.misc.sageinspect._sage_getdoc_unformatted`.\n\nThe sagenb patch depends on #8051 + #8167 + #8102 + #8160.",
+    "created_at": "2010-02-04T06:59:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8161",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8161#issuecomment-71788",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
@@ -113,9 +243,20 @@ in `sage.misc.sageinspect._sage_getdoc_unformatted`.
 The sagenb patch depends on #8051 + #8167 + #8102 + #8160.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-02-05 03:55:50
+archive/issue_comments_071789.json:
+```json
+{
+    "body": "On further reflection, I've decided that replacing ```` with `\"` is a bad idea.  It's complicated, and it can make some docstrings less clear.  For example, should ```\"text\"``` be turned into `\"text\"` or `\"'text'\"`?  What about ```algorithm=\"gap\"```: turn it into `\"algorithm='gap'\"`?  What about (from sage.interfaces.sage0.Sage) the beautiful ```s('\"x\"')```?\n\nIf we eventually decide this is a good idea, we can do it in another ticket (or submit it as a possible customization for text output in Sphinx), but I'm taking it out for now.\n\nA few doctests in sage and sagenb need to be changed as a consequence; see the new patches.",
+    "created_at": "2010-02-05T03:55:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8161",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8161#issuecomment-71789",
+    "user": "jhpalmieri"
+}
+```
 
 On further reflection, I've decided that replacing ```` with `"` is a bad idea.  It's complicated, and it can make some docstrings less clear.  For example, should ```"text"``` be turned into `"text"` or `"'text'"`?  What about ```algorithm="gap"```: turn it into `"algorithm='gap'"`?  What about (from sage.interfaces.sage0.Sage) the beautiful ```s('"x"')```?
 
@@ -124,29 +265,75 @@ If we eventually decide this is a good idea, we can do it in another ticket (or 
 A few doctests in sage and sagenb need to be changed as a consequence; see the new patches.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-02-05 03:56:19
+archive/issue_comments_071790.json:
+```json
+{
+    "body": "for sage repo",
+    "created_at": "2010-02-05T03:56:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8161",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8161#issuecomment-71790",
+    "user": "jhpalmieri"
+}
+```
 
 for sage repo
 
 
+
 ---
+
+archive/issue_comments_071791.json:
+```json
+{
+    "body": "Attachment\n\nfor sagenb repo",
+    "created_at": "2010-02-05T03:56:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8161",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8161#issuecomment-71791",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
 for sagenb repo
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-05 07:02:43
+archive/issue_comments_071792.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-02-05T07:02:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8161",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8161#issuecomment-71792",
+    "user": "mpatel"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-11 14:53:50
+archive/issue_comments_071793.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-02-11T14:53:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8161",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8161#issuecomment-71793",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed

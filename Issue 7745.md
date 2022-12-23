@@ -1,11 +1,21 @@
 # Issue 7745: Update Maxima to 5.20.1
 
-Issue created by migration from https://trac.sagemath.org/ticket/7745
-
-Original creator: kcrisman
-
-Original creation time: 2009-12-21 02:07:46
-
+archive/issues_007745.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  robert.marik burcin\n\nKeywords: maxima\n\nMaxima is now updated, and that will incorporate a number of our bugfixes as well as things we have reported, not to mention other improvements.   See [http://groups.google.com/group/sage-devel/browse_thread/thread/bbd2c801032392f7](http://groups.google.com/group/sage-devel/browse_thread/thread/bbd2c801032392f7) for the announcement.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7745\n\n",
+    "created_at": "2009-12-21T02:07:46Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "enhancement"
+    ],
+    "title": "Update Maxima to 5.20.1",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7745",
+    "user": "kcrisman"
+}
+```
 Assignee: tbd
 
 CC:  robert.marik burcin
@@ -14,10 +24,25 @@ Keywords: maxima
 
 Maxima is now updated, and that will incorporate a number of our bugfixes as well as things we have reported, not to mention other improvements.   See [http://groups.google.com/group/sage-devel/browse_thread/thread/bbd2c801032392f7](http://groups.google.com/group/sage-devel/browse_thread/thread/bbd2c801032392f7) for the announcement.
 
+Issue created by migration from https://trac.sagemath.org/ticket/7745
+
+
+
+
 
 ---
 
-Comment by kcrisman created at 2009-12-22 04:40:19
+archive/issue_comments_066660.json:
+```json
+{
+    "body": "Okay, I have a successful spkg.  BUT there are a number of things that will have to be fixed.  I have most of them (just doctests) but there are a couple bigger ones.  So this needs work (and a patch), but hopefully will be ready for 4.3.1, when that comes.\n\nThe spkg is at [http://sage.math.washington.edu/home/kcrisman/maxima-5.20.1.spkg](http://sage.math.washington.edu/home/kcrisman/maxima-5.20.1.spkg).\n\n1. For some reason, a certain integration with infinity is not working properly.  Maybe Maxima regressed on it?  Or maybe we aren't parsing it properly?  \n\n```\nsage: integrate(t*cos(-theta*t),(t,-oo,oo))\n```\n\n\n2. Because of overall improvements to to_poly_solve/%solve, there are some annoying things we will have to fix.  Some are just in parsing the new %solve and some other things from its new capabilities, like\n\n```\nTypeError: unable to make sense of Maxima expression '[If(cos(pi*...!=0,[x=-...],union())]' in Sage\n```\n\nthough this used to be nicely behaved from \n\n```\nsage: solve(cos(x) * sin(x) == 1/2, x, to_poly_solve=True)\n```\n\nbut unfortunately one of them is yet another hang in the algsys which doesn't automatically resolve (this is line 5948 in symbolic/expression.pyx):\n\n```\nsage: a = .004*(8*e^(-(300*t)) - 8*e^(-(1200*t)))*(720000*e^(-(300*t)) - 11520000*e^(-(1200*t))) +.004*(9600*e^(-(1200*t)) - 2400*e^(-(300*t)))^2\nsage: a.solve(t, to_poly_solve=True)\n<hang>\n```\n\nI'm contacting the author of that for info.",
+    "created_at": "2009-12-22T04:40:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7745",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7745#issuecomment-66660",
+    "user": "kcrisman"
+}
+```
 
 Okay, I have a successful spkg.  BUT there are a number of things that will have to be fixed.  I have most of them (just doctests) but there are a couple bigger ones.  So this needs work (and a patch), but hopefully will be ready for 4.3.1, when that comes.
 
@@ -53,16 +78,38 @@ sage: a.solve(t, to_poly_solve=True)
 I'm contacting the author of that for info.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-12-22 04:40:19
+archive/issue_comments_066661.json:
+```json
+{
+    "body": "Changing status from new to needs_work.",
+    "created_at": "2009-12-22T04:40:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7745",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7745#issuecomment-66661",
+    "user": "kcrisman"
+}
+```
 
 Changing status from new to needs_work.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-12-22 16:32:58
+archive/issue_comments_066662.json:
+```json
+{
+    "body": "> 1. For some reason, a certain integration with infinity is not working properly.  Maybe Maxima regressed on it?  Or maybe we aren't parsing it properly?  \n> {{{\n> sage: integrate(t*cos(-theta*t),(t,-oo,oo))\n> }}}\n> \n\nUpdate: this integral doesn't converge!  It was reported in #6816 but we never checked that it made sense, since Maxima did give an answer - zero, because the limit of the indefinite integral from -N to N is zero.  Maxima now (sensibly) doesn't give that any more, though it would be even better if it returned divergent; however, that would be a different ticket.\n\nStill working on fixing the remaining doctest issues.",
+    "created_at": "2009-12-22T16:32:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7745",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7745#issuecomment-66662",
+    "user": "kcrisman"
+}
+```
 
 > 1. For some reason, a certain integration with infinity is not working properly.  Maybe Maxima regressed on it?  Or maybe we aren't parsing it properly?  
 > {{{
@@ -75,37 +122,94 @@ Update: this integral doesn't converge!  It was reported in #6816 but we never c
 Still working on fixing the remaining doctest issues.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-12-22 21:16:07
+archive/issue_comments_066663.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2009-12-22T21:16:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7745",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7745#issuecomment-66663",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-12-22 21:16:07
+archive/issue_comments_066664.json:
+```json
+{
+    "body": "Came up with fixes of one kind or another for all these things.  The real remaining issue is that there isn't a super-simple way to parse %if when it comes from to_poly_solve, so for now I am just leaving that alone.  As soon as anyone can think of a way to do this, please open a ticket and post a patch.   Otherwise this patch should make the new spkg work.",
+    "created_at": "2009-12-22T21:16:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7745",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7745#issuecomment-66664",
+    "user": "kcrisman"
+}
+```
 
 Came up with fixes of one kind or another for all these things.  The real remaining issue is that there isn't a super-simple way to parse %if when it comes from to_poly_solve, so for now I am just leaving that alone.  As soon as anyone can think of a way to do this, please open a ticket and post a patch.   Otherwise this patch should make the new spkg work.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-12-22 21:16:34
+archive/issue_comments_066665.json:
+```json
+{
+    "body": "Based on 4.3.alpha1",
+    "created_at": "2009-12-22T21:16:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7745",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7745#issuecomment-66665",
+    "user": "kcrisman"
+}
+```
 
 Based on 4.3.alpha1
 
 
+
 ---
+
+archive/issue_comments_066666.json:
+```json
+{
+    "body": "Attachment\n\nSee #6423 and #4142 for other bugs fixed by this spkg.",
+    "created_at": "2009-12-22T21:17:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7745",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7745#issuecomment-66666",
+    "user": "kcrisman"
+}
+```
 
 Attachment
 
 See #6423 and #4142 for other bugs fixed by this spkg.
 
 
+
 ---
 
-Comment by robert.marik created at 2009-12-23 00:35:51
+archive/issue_comments_066667.json:
+```json
+{
+    "body": "Installs fine. Still running tests, but have the following (trivial) errors.\n\n```\nsage -t  \"devel/sage/sage/interfaces/maxima.py\"\n**********************************************************************\nFile \"/opt/sage-4.3.rc0/devel/sage/sage/interfaces/maxima.py\", line 1204:\n    sage: maxima.version()\nExpected:\n    '5.19.1'\nGot:\n    '5.20.1'\n**********************************************************************\nFile \"/opt/sage-4.3.rc0/devel/sage/sage/interfaces/maxima.py\", line 2723:\n    sage: maxima_version()\nExpected:\n    '5.19.1'\nGot:\n    '5.20.1'\n**********************************************************************\n```\n",
+    "created_at": "2009-12-23T00:35:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7745",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7745#issuecomment-66667",
+    "user": "robert.marik"
+}
+```
 
 Installs fine. Still running tests, but have the following (trivial) errors.
 
@@ -130,45 +234,113 @@ Got:
 
 
 
+
 ---
 
-Comment by kcrisman created at 2009-12-23 04:44:35
+archive/issue_comments_066668.json:
+```json
+{
+    "body": "If those are the only ones you get, can you put a reviewer patch of those?  I always forget little things like that, and unfortunately the horsepower I have precludes running full tests if I ever want to get anything done.  I did get the one in rings/number_field, though.",
+    "created_at": "2009-12-23T04:44:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7745",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7745#issuecomment-66668",
+    "user": "kcrisman"
+}
+```
 
 If those are the only ones you get, can you put a reviewer patch of those?  I always forget little things like that, and unfortunately the horsepower I have precludes running full tests if I ever want to get anything done.  I did get the one in rings/number_field, though.
 
 
+
 ---
+
+archive/issue_comments_066669.json:
+```json
+{
+    "body": "Attachment\n\napply on the top of the previous patch and #6423 and #4142",
+    "created_at": "2009-12-23T08:33:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7745",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7745#issuecomment-66669",
+    "user": "robert.marik"
+}
+```
 
 Attachment
 
 apply on the top of the previous patch and #6423 and #4142
 
 
+
 ---
 
-Comment by robert.marik created at 2009-12-23 08:37:18
+archive/issue_comments_066670.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-12-23T08:37:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7745",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7745#issuecomment-66670",
+    "user": "robert.marik"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by robert.marik created at 2009-12-23 08:37:18
+archive/issue_comments_066671.json:
+```json
+{
+    "body": "Positive review! Tested on 4.3.rc0 and got only errors which have been reported on sage-devel and are not relevent to this ticket. Tested together with #6423 and #4142.\n\nPositive review, thanks for upgrading.",
+    "created_at": "2009-12-23T08:37:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7745",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7745#issuecomment-66671",
+    "user": "robert.marik"
+}
+```
 
 Positive review! Tested on 4.3.rc0 and got only errors which have been reported on sage-devel and are not relevent to this ticket. Tested together with #6423 and #4142.
 
 Positive review, thanks for upgrading.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-12-27 03:28:07
+archive/issue_comments_066672.json:
+```json
+{
+    "body": "Note that if sage.math is still down, one can also get this at [http://boxen.math.washington.edu/home/kcrisman/maxima-5.20.1.spkg](http://boxen.math.washington.edu/home/kcrisman/maxima-5.20.1.spkg).",
+    "created_at": "2009-12-27T03:28:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7745",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7745#issuecomment-66672",
+    "user": "kcrisman"
+}
+```
 
 Note that if sage.math is still down, one can also get this at [http://boxen.math.washington.edu/home/kcrisman/maxima-5.20.1.spkg](http://boxen.math.washington.edu/home/kcrisman/maxima-5.20.1.spkg).
 
 
+
 ---
 
-Comment by mhansen created at 2010-01-04 03:09:34
+archive/issue_comments_066673.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-04T03:09:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7745",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7745#issuecomment-66673",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 9936: PARI real precision is broken in many ways
 
-Issue created by migration from https://trac.sagemath.org/ticket/9937
-
-Original creator: jdemeyer
-
-Original creation time: 2010-09-17 20:48:18
-
+archive/issues_009936.json:
+```json
+{
+    "body": "Assignee: was\n\nKeywords: pari gp real precision\n\nThe following do not work as they should (try these examples with a freshly started copy of Sage, such that everything is default). \n\n\n```\n# Default: 2 significant words (while we really should get only 1)\nsage: pari('Pi').debug()\n[&=0000000004fc9620] REAL(lg=4):0400000000000004 (+,expo=1):6000000000000001 c90fdaa22168c234 c4c6628b80dc1cd1\n\n# Change precision and then change it back: we get 1 word\nsage: n = pari.get_real_precision(); pari.set_real_precision(100); pari.set_real_precision(n);\nsage: pari('Pi').debug()\n[&=00000000012bf200] REAL(lg=3):0400000000000003 (+,expo=1):6000000000000001 c90fdaa22168c235\n```\n\n\n\n```\n# We cannot compute constants with high precision:\nsage: pari.set_real_precision(1000);\nsage: pari.euler().debug()\n[&=0000000004f75e20] REAL(lg=3):0400000000000003 (+,expo=-1):5fffffffffffffff 93c467e37db0c7a5\n```\n\n\nDependencies: #9898, #9893\n\nIssue created by migration from https://trac.sagemath.org/ticket/9937\n\n",
+    "created_at": "2010-09-17T20:48:18Z",
+    "labels": [
+        "interfaces",
+        "major",
+        "bug"
+    ],
+    "title": "PARI real precision is broken in many ways",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9936",
+    "user": "jdemeyer"
+}
+```
 Assignee: was
 
 Keywords: pari gp real precision
@@ -36,24 +46,61 @@ sage: pari.euler().debug()
 
 Dependencies: #9898, #9893
 
+Issue created by migration from https://trac.sagemath.org/ticket/9937
+
+
+
+
 
 ---
 
-Comment by jdemeyer created at 2010-09-17 21:05:10
+archive/issue_comments_098924.json:
+```json
+{
+    "body": "Changing keywords from \"pari gp real precision\" to \"pari gp real precision set_real_precision\".",
+    "created_at": "2010-09-17T21:05:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9936",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9936#issuecomment-98924",
+    "user": "jdemeyer"
+}
+```
 
 Changing keywords from "pari gp real precision" to "pari gp real precision set_real_precision".
 
 
+
 ---
 
-Comment by cremona created at 2010-09-21 20:27:05
+archive/issue_comments_098925.json:
+```json
+{
+    "body": "There's a lot of relevant information written by Alex Ghitza and me a couple of years ago in the file gen.pyx.  Yes, it is counterintuitive;  but not undocumented.",
+    "created_at": "2010-09-21T20:27:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9936",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9936#issuecomment-98925",
+    "user": "cremona"
+}
+```
 
 There's a lot of relevant information written by Alex Ghitza and me a couple of years ago in the file gen.pyx.  Yes, it is counterintuitive;  but not undocumented.
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-09-21 20:43:05
+archive/issue_comments_098926.json:
+```json
+{
+    "body": "Replying to [comment:3 cremona]:\n> There's a lot of relevant information written by Alex Ghitza and me a couple of years ago in the file gen.pyx.  Yes, it is counterintuitive;  but not undocumented.\n\nI know it is documented (although not too clearly), but the question is: does it make sense?  (In my opinion: no).",
+    "created_at": "2010-09-21T20:43:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9936",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9936#issuecomment-98926",
+    "user": "jdemeyer"
+}
+```
 
 Replying to [comment:3 cremona]:
 > There's a lot of relevant information written by Alex Ghitza and me a couple of years ago in the file gen.pyx.  Yes, it is counterintuitive;  but not undocumented.
@@ -61,9 +108,20 @@ Replying to [comment:3 cremona]:
 I know it is documented (although not too clearly), but the question is: does it make sense?  (In my opinion: no).
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-09-21 20:47:09
+archive/issue_comments_098927.json:
+```json
+{
+    "body": "More precisely: this is counter-intuitive:\n\n```\nsage: pari.set_real_precision(100);\nsage: pari('Euler')   # Precision changes\n0.5772156649015328606065120900824024310421593359399235988057672348848677267776646709369470632917467495\nsage: pari.euler()    # Precision does NOT change\n0.5772156649015328607\n```\n",
+    "created_at": "2010-09-21T20:47:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9936",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9936#issuecomment-98927",
+    "user": "jdemeyer"
+}
+```
 
 More precisely: this is counter-intuitive:
 
@@ -77,20 +135,55 @@ sage: pari.euler()    # Precision does NOT change
 
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-04-14 20:03:29
+archive/issue_comments_098928.json:
+```json
+{
+    "body": "Changing status from new to needs_work.",
+    "created_at": "2011-04-14T20:03:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9936",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9936#issuecomment-98928",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from new to needs_work.
 
 
+
 ---
+
+archive/issue_comments_098929.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2012-04-29T14:01:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9936",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9936#issuecomment-98929",
+    "user": "jdemeyer"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by jdemeyer created at 2017-02-21 07:56:21
+archive/issue_comments_098930.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2017-02-21T07:56:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9936",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9936#issuecomment-98930",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: invalid

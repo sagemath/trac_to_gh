@@ -1,11 +1,21 @@
 # Issue 4424: magma -- make sure .m files have their precompiled versions shiped with Sage
 
-Issue created by migration from https://trac.sagemath.org/ticket/4424
-
-Original creator: was
-
-Original creation time: 2008-11-02 17:28:12
-
+archive/issues_004424.json:
+```json
+{
+    "body": "Assignee: was\n\n\n```\n\n\nOn Sun, Nov 2, 2008 at 7:38 AM, Kevin Buzzard <k.buzzard@imperial.ac.uk> wrote:\n> I'm still unclear about the philosophy of permissions.\n>\n> I downloaded sage 3.1.4 source and compiled from source. As root. Into\n> /usr/local. Because I wasn't sure how to make the installation global.\n>\n> And today I tried (as a non-root user)\n>\n> sage: magma('sqrt(2)')\n>\n> [yes, I know it should be Sqrt but I'm guessing that isn't the problem]\n>\n> and I got\n>\n> ---------------------------------------------------------------------------\n> TypeError                                 Traceback (most recent call last)\n>\n> /home/buzzard/<ipython console> in <module>()\n>\n> /usr/local/sage-3.1.4/local/lib/python2.5/site-packages/sage/interfaces/magma.pyc\n> in __call__(self, x, gens)\n>    502             if isinstance(x, bool):\n>    503                 return Expect.__call__(self, str(x).lower())\n> --> 504             return Expect.__call__(self, x)\n>    505         return self.objgens(x, gens)\n>    506\n>\n> /usr/local/sage-3.1.4/local/lib/python2.5/site-packages/sage/interfaces/expect.pyc\n> in __call__(self, x, name)\n>    963             return x\n>    964         if isinstance(x, basestring):\n> --> 965             return cls(self, x, name=name)\n>    966         try:\n>    967             return self._coerce_from_special_method(x)\n>\n> /usr/local/sage-3.1.4/local/lib/python2.5/site-packages/sage/interfaces/expect.pyc\n> in __init__(self, parent, value, is_name, name)\n>   1281             except (TypeError, KeyboardInterrupt, RuntimeError,\n> ValueError), x:\n>   1282                 self._session_number = -1\n> -> 1283                 raise TypeError, x\n>   1284         self._session_number = parent._session_number\n>   1285\n>\n> TypeError: While attempting to compile\n> /usr/local/sage-3.1.4/data/extcode//magma/latex/latex.m (Data file\n> non-existent):\n> Can't open lock file\n> /usr/local/sage-3.1.4/data/extcode//magma/latex/latex.lck for writing\n> (Permission denied)\n>\n> While attempting to compile\n> /usr/local/sage-3.1.4/data/extcode//magma/sage/basic.m (Data file\n> non-existent):\n> Can't open lock file\n> /usr/local/sage-3.1.4/data/extcode//magma/sage/basic.lck for writing\n> (Permission denied)\n> sage:\n>\n> ***\n>\n> and I su-ed to root and tried again and got it right and then changed back\n> to\n> a non-root user and now it's OK. But what struck me, as a general user,\n> was that the sage installation instructions didn't seem to explain anything\n> to me about what the \"correct\" way to install sage system-wide on a unix\n> machine was. Did I do the wrong thing?>\n> Kevin\n>\n> PS this is sort of a 'bug report' but I'll send some general comments\n> about your Bordeaux write-up to you later.\n\nI think this is a reasonable bug report.  The fix is for Sage to\ninclude the cached precompiled versions of the Magma files.\nIt used to be with Magma that one had to start it up as root\nonce because they didn't include precompiled files.  I think\nthis has changed, i.e., I think they now ship the precompiled\ncached files in addition to the source files. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4424\n\n",
+    "created_at": "2008-11-02T17:28:12Z",
+    "labels": [
+        "interfaces",
+        "major",
+        "bug"
+    ],
+    "title": "magma -- make sure .m files have their precompiled versions shiped with Sage",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4424",
+    "user": "was"
+}
+```
 Assignee: was
 
 
@@ -93,8 +103,25 @@ cached files in addition to the source files.
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4424
+
+
+
+
 
 ---
+
+archive/issue_comments_032524.json:
+```json
+{
+    "body": "Attachment\n\nI attched each m file from the extcode repo and then added each .sig file to the repo. Pointless, but what the hell :)\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-02T18:05:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4424",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4424#issuecomment-32524",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -105,30 +132,74 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-02 18:05:39
+archive/issue_comments_032525.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-11-02T18:05:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4424",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4424#issuecomment-32525",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-02 18:05:39
+archive/issue_comments_032526.json:
+```json
+{
+    "body": "Changing assignee from was to mabshoff.",
+    "created_at": "2008-11-02T18:05:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4424",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4424#issuecomment-32526",
+    "user": "mabshoff"
+}
+```
 
 Changing assignee from was to mabshoff.
 
 
+
 ---
 
-Comment by was created at 2008-11-02 19:39:26
+archive/issue_comments_032527.json:
+```json
+{
+    "body": "Resolution: wontfix",
+    "created_at": "2008-11-02T19:39:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4424",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4424#issuecomment-32527",
+    "user": "was"
+}
+```
 
 Resolution: wontfix
 
 
+
 ---
 
-Comment by was created at 2008-11-02 19:39:26
+archive/issue_comments_032528.json:
+```json
+{
+    "body": "Unfortunately, this doesn't work.  Probably the .sig files depend on the version of Magma.  I tried applying your patch and got then using it as a different user and got:\n\n\n```\nRuntime error in 'AttachSpec': Could not remove the invalid signature file /Users/wstein/sage/data/extcode//magma/latex/latex.sig\n```\n\n\nSince there are dozens of Magma versions out there, and we can't know which one people are using, there is literally *no possible way* to solve this problem without the user running a command such as \n\n```\nsage: magma('2') \n```\n\nas a user with write permissions to the extcode/magma directory. \n\nSince the error message clearly states that this is a permissions problem, there is nothing further to do really (i.e., nothing on the sage side).  This is just the way Magma works.",
+    "created_at": "2008-11-02T19:39:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4424",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4424#issuecomment-32528",
+    "user": "was"
+}
+```
 
 Unfortunately, this doesn't work.  Probably the .sig files depend on the version of Magma.  I tried applying your patch and got then using it as a different user and got:
 

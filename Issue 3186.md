@@ -1,11 +1,21 @@
 # Issue 3186: fix 64 bit OSX build support for numpy
 
-Issue created by migration from https://trac.sagemath.org/ticket/3186
-
-Original creator: mabshoff
-
-Original creation time: 2008-05-13 13:48:57
-
+archive/issues_003186.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nWe need to create a fake gcc injecting \"-m64\" in the argument list since otherwise the conftest will fail.\n\nSpkg is coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3186\n\n",
+    "created_at": "2008-05-13T13:48:57Z",
+    "labels": [
+        "build",
+        "major",
+        "bug"
+    ],
+    "title": "fix 64 bit OSX build support for numpy",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3186",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 We need to create a fake gcc injecting "-m64" in the argument list since otherwise the conftest will fail.
@@ -16,25 +26,79 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/3186
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-05-13 13:49:04
+archive/issue_comments_022043.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-05-13T13:49:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3186",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3186#issuecomment-22043",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
+
+archive/issue_comments_022044.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-05-19T03:49:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3186",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3186#issuecomment-22044",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_022045.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-05-19T03:49:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3186",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3186#issuecomment-22045",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_022046.json:
+```json
+{
+    "body": "Attachment\n\nThe updated spkg is at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0.2/alpha1/numpy-20080104-1.0.4.p4.spkg\n\nCheers,\n\nMichael",
+    "created_at": "2008-05-19T03:57:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3186",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3186#issuecomment-22046",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -47,15 +111,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-19 04:01:34
+archive/issue_comments_022047.json:
+```json
+{
+    "body": "Merged in Sage 3.0.2.alpha1",
+    "created_at": "2008-05-19T04:01:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3186",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3186#issuecomment-22047",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.2.alpha1
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-19 04:01:34
+archive/issue_comments_022048.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-05-19T04:01:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3186",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3186#issuecomment-22048",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

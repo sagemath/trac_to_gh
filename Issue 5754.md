@@ -1,11 +1,21 @@
 # Issue 5754: docstrings for all the interactive_constructors functions are *all* now completely broken
 
-Issue created by migration from https://trac.sagemath.org/ticket/5754
-
-Original creator: was
-
-Original creation time: 2009-04-11 17:13:58
-
+archive/issues_005754.json:
+```json
+{
+    "body": "Assignee: tba\n\nType\n\n```\nsage: inject_on()\nsage: PolynomialRing?\n```\n\n\nYou won't get a docstring at all, which sucks.  You *should* get \n\n```\n    Construct a finite field and inject the variables of the\n    finite field to the global interactive interpreter.  Use\n    inject=False to not inject the variables.  This is a wrapper\n    around the following function: <<<FiniteField>>>\n```\n\nbut with <<<FiniteField>>> replaced by the docstring for FiniteField.  \n\nThe problem is probably that misc/sagedoc.py contains this line:\n\n```\n            t0 = sage.server.support.get_def(x, obj)\n```\n\nand there is no function sage.server.support.get_def.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5754\n\n",
+    "created_at": "2009-04-11T17:13:58Z",
+    "labels": [
+        "documentation",
+        "major",
+        "bug"
+    ],
+    "title": "docstrings for all the interactive_constructors functions are *all* now completely broken",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5754",
+    "user": "was"
+}
+```
 Assignee: tba
 
 Type
@@ -37,15 +47,43 @@ and there is no function sage.server.support.get_def.
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5754
+
+
+
+
 
 ---
 
-Comment by jhpalmieri created at 2009-04-11 17:31:11
+archive/issue_comments_044978.json:
+```json
+{
+    "body": "fix + new doctests",
+    "created_at": "2009-04-11T17:31:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5754",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5754#issuecomment-44978",
+    "user": "jhpalmieri"
+}
+```
 
 fix + new doctests
 
 
+
 ---
+
+archive/issue_comments_044979.json:
+```json
+{
+    "body": "Attachment\n\nREFEREE REPORT:\n\nThe code looks great.  But it fails doctests on a clean 3.4.1.rc2 install on sage.math:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: \nExiting SAGE (CPU time 0m0.03s, Wall time 0m0.79s).\nwstein@sage:~/build/sage-3.4.1.rc2$ ./sage -t devel/sage/sage/misc/sagedoc.py\nsage -t  \"devel/sage/sage/misc/sagedoc.py\"                  \n**********************************************************************\nFile \"/scratch/wstein/build/sage-3.4.1.rc2/devel/sage/sage/misc/sagedoc.py\", line 366:\n    sage: format_search_as_html('Source', 'algebras/steenrod_algebra_element.py:        an antihomomorphism: if we call the antipode `c`, then', 'antipode antihomomorphism')\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-3.4.1.rc2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-3.4.1.rc2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-3.4.1.rc2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_7[2]>\", line 1, in <module>\n        format_search_as_html('Source', 'algebras/steenrod_algebra_element.py:        an antihomomorphism: if we call the antipode `c`, then', 'antipode antihomomorphism')###line 366:\n    sage: format_search_as_html('Source', 'algebras/steenrod_algebra_element.py:        an antihomomorphism: if we call the antipode `c`, then', 'antipode antihomomorphism')\n    NameError: name 'format_search_as_html' is not defined\n**********************************************************************\nFile \"/scratch/wstein/build/sage-3.4.1.rc2/devel/sage/sage/misc/sagedoc.py\", line 368:\n    sage: format_search_as_html('Other', 'html/en/reference/sage/algebras/steenrod_algebra_element.html:an antihomomorphism: if we call the antipode <span class=\"math\">c</span>, then', 'antipode antihomomorphism')\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-3.4.1.rc2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-3.4.1.rc2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-3.4.1.rc2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_7[3]>\", line 1, in <module>\n        format_search_as_html('Other', 'html/en/reference/sage/algebras/steenrod_algebra_element.html:an antihomomorphism: if we call the antipode <span class=\"math\">c</span>, then', 'antipode antihomomorphism')###line 368:\n    sage: format_search_as_html('Other', 'html/en/reference/sage/algebras/steenrod_algebra_element.html:an antihomomorphism: if we call the antipode <span class=\"math\">c</span>, then', 'antipode antihomomorphism')\n    NameError: name 'format_search_as_html' is not defined\nhtml/en/tutorial/tour_polynomial.html:<p>This creates a polynomial ring and tells Sage to use (the string)\n| Sage Version 3.4.1.rc2, Release Date: 2009-04-10                   |\n| Type notebook() for the GUI, and license() for information.        |\n**********************************************************************\n1 items had failures:\n   2 of   4 in __main__.example_7\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /scratch/wstein/build/sage-3.4.1.rc2/tmp/.doctest_sagedoc.py\n         [16.4 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/sage/misc/sagedoc.py\"\nTotal time for all tests: 16.4 seconds\nwstein@sage:~/build/sage-3.4.1.rc2$ \n```\n\n\nThe rest of the Sage library testsuite passes.",
+    "created_at": "2009-04-11T17:49:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5754",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5754#issuecomment-44979",
+    "user": "was"
+}
+```
 
 Attachment
 
@@ -114,30 +152,76 @@ wstein@sage:~/build/sage-3.4.1.rc2$
 The rest of the Sage library testsuite passes.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-04-11 22:43:43
+archive/issue_comments_044980.json:
+```json
+{
+    "body": "apply this on top of the other patch",
+    "created_at": "2009-04-11T22:43:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5754",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5754#issuecomment-44980",
+    "user": "jhpalmieri"
+}
+```
 
 apply this on top of the other patch
 
 
+
 ---
+
+archive/issue_comments_044981.json:
+```json
+{
+    "body": "Attachment\n\nHere's a patch: apply on top of the other one.",
+    "created_at": "2009-04-11T22:48:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5754",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5754#issuecomment-44981",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
 Here's a patch: apply on top of the other one.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-13 06:33:40
+archive/issue_comments_044982.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-04-13T06:33:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5754",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5754#issuecomment-44982",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-13 06:33:40
+archive/issue_comments_044983.json:
+```json
+{
+    "body": "Merged both patches in Sage 3.4.1.rc3.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-13T06:33:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5754",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5754#issuecomment-44983",
+    "user": "mabshoff"
+}
+```
 
 Merged both patches in Sage 3.4.1.rc3.
 

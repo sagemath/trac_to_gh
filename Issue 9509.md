@@ -1,49 +1,120 @@
 # Issue 9509: graphs() should give you graphs
 
-Issue created by migration from https://trac.sagemath.org/ticket/9509
-
-Original creator: rlm
-
-Original creation time: 2010-07-15 14:43:30
-
+archive/issues_009509.json:
+```json
+{
+    "body": "Assignee: jason, ncohen, rlm\n\nCC:  boothby vdelecroix\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9509\n\n",
+    "created_at": "2010-07-15T14:43:30Z",
+    "labels": [
+        "graph theory",
+        "major",
+        "enhancement"
+    ],
+    "title": "graphs() should give you graphs",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9509",
+    "user": "rlm"
+}
+```
 Assignee: jason, ncohen, rlm
 
 CC:  boothby vdelecroix
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/9509
+
+
+
+
 
 ---
+
+archive/issue_comments_091375.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-07-15T14:46:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9509",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9509#issuecomment-91375",
+    "user": "rlm"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by rlm created at 2010-07-15 14:46:43
+archive/issue_comments_091376.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-07-15T14:46:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9509",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9509#issuecomment-91376",
+    "user": "rlm"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by vdelecroix created at 2010-07-15 17:32:40
+archive/issue_comments_091377.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-07-15T17:32:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9509",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9509#issuecomment-91377",
+    "user": "vdelecroix"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by vdelecroix created at 2010-07-15 17:32:40
+archive/issue_comments_091378.json:
+```json
+{
+    "body": "Great, great, great!\n\nThank you for this very nice mini patch...",
+    "created_at": "2010-07-15T17:32:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9509",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9509#issuecomment-91378",
+    "user": "vdelecroix"
+}
+```
 
 Great, great, great!
 
 Thank you for this very nice mini patch...
 
 
+
 ---
 
-Comment by mpatel created at 2010-07-21 02:36:53
+archive/issue_comments_091379.json:
+```json
+{
+    "body": "I'm about to attach V2, which is rebased for this queue:\n\n```\n[...other, non-graph theory patches to be merged into 4.5.2.alpha0...]\ntrac_9111.patch\ntrac_9111-doc-edits.patch\ntrac_9111-doc_addition.patch\ntrac_9373.patch\ntrac_9375-graph-doctests.patch\ntrac_9485-strongly_connected_componnents_digraph-fix-nt.patch\ntrac_8953.patch\ntrac_9532-graphs-randstate.patch\ntrac-9141-cospectral_graphs.2.patch\ntrac_9141-smallfixes.patch\ntrac_9509-graph_gen.2.patch\n```\n\nPlease check and let me know if there are problems.",
+    "created_at": "2010-07-21T02:36:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9509",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9509#issuecomment-91379",
+    "user": "mpatel"
+}
+```
 
 I'm about to attach V2, which is rebased for this queue:
 
@@ -65,43 +136,111 @@ trac_9509-graph_gen.2.patch
 Please check and let me know if there are problems.
 
 
+
 ---
+
+archive/issue_comments_091380.json:
+```json
+{
+    "body": "Attachment\n\nRebased for queue in comment 3.  Apply only this patch.",
+    "created_at": "2010-07-21T02:37:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9509",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9509#issuecomment-91380",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
 Rebased for queue in comment 3.  Apply only this patch.
 
 
+
 ---
 
-Comment by mpatel created at 2010-07-21 02:39:21
+archive/issue_comments_091381.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_work.",
+    "created_at": "2010-07-21T02:39:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9509",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9509#issuecomment-91381",
+    "user": "mpatel"
+}
+```
 
 Changing status from positive_review to needs_work.
 
 
+
 ---
 
-Comment by mpatel created at 2010-07-21 02:39:28
+archive/issue_comments_091382.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-07-21T02:39:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9509",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9509#issuecomment-91382",
+    "user": "mpatel"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by rlm created at 2010-07-21 08:21:10
+archive/issue_comments_091383.json:
+```json
+{
+    "body": "Looks good to me!",
+    "created_at": "2010-07-21T08:21:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9509",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9509#issuecomment-91383",
+    "user": "rlm"
+}
+```
 
 Looks good to me!
 
 
+
 ---
 
-Comment by rlm created at 2010-07-21 08:21:10
+archive/issue_comments_091384.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-07-21T08:21:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9509",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9509#issuecomment-91384",
+    "user": "rlm"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mpatel created at 2010-07-21 10:27:28
+archive/issue_comments_091385.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-07-21T10:27:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9509",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9509#issuecomment-91385",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed

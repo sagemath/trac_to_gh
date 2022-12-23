@@ -1,11 +1,21 @@
 # Issue 4162: Upgrade trac to 0.11
 
-Issue created by migration from https://trac.sagemath.org/ticket/4162
-
-Original creator: jason
-
-Original creation time: 2008-09-21 02:26:42
-
+archive/issues_004162.json:
+```json
+{
+    "body": "Assignee: was\n\nTrac 0.11.1 is the newest stable release of trac.  Upgrading to trac 0.11 will allow us to make the ticket review process an actual process (with discrete stages and a workflow that we can send tickets through), instead of the current adhoc keyword-based method.  I'm sure there are other things that are good too.\n\nOne thing that may need to be done is to make sure that Robert's extension to display bundles works.\n\nSee the suggestions in http://groups.google.com/group/sage-devel/browse_thread/thread/d794dcc6f98c17fe/cd75d577420d1764?lnk=gst&q=needs+review+needs+more+info#cd75d577420d1764 to see if we can implement these better with the new trac.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4162\n\n",
+    "created_at": "2008-09-21T02:26:42Z",
+    "labels": [
+        "website/wiki",
+        "major",
+        "enhancement"
+    ],
+    "title": "Upgrade trac to 0.11",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4162",
+    "user": "jason"
+}
+```
 Assignee: was
 
 Trac 0.11.1 is the newest stable release of trac.  Upgrading to trac 0.11 will allow us to make the ticket review process an actual process (with discrete stages and a workflow that we can send tickets through), instead of the current adhoc keyword-based method.  I'm sure there are other things that are good too.
@@ -14,10 +24,25 @@ One thing that may need to be done is to make sure that Robert's extension to di
 
 See the suggestions in http://groups.google.com/group/sage-devel/browse_thread/thread/d794dcc6f98c17fe/cd75d577420d1764?lnk=gst&q=needs+review+needs+more+info#cd75d577420d1764 to see if we can implement these better with the new trac.
 
+Issue created by migration from https://trac.sagemath.org/ticket/4162
+
+
+
+
 
 ---
 
-Comment by jason created at 2008-09-21 02:28:23
+archive/issue_comments_030205.json:
+```json
+{
+    "body": "For reference, here is a list from the above mailing list discussion:\n\n\n```\n# Desirable Trac Features #\n\n* more statistics\n* a default CC to a google group sage-trac, this requires that a\n  google group is created [done] and that somebody with admin\n  access to sagemath.org enables smtp for trac [not done yet]\n* mercurial bundle browsing: This is currently not support by\n  the mercurial plugin for trac, but Robert Bradshaw might end up\n  doing some trac hacking as part of his TA appointment at UW so\n  he could perhaps look into this.\n* IRC logs: A trac extension to log IRC channels exists. We should\n  consider using it, but make it clear in #sage-devel that the\n  discussion is logged. We should also consider adding #sage-support\n  so that the signal/noise ratio for development stays high on\n  #sage-devel, but sage newbies could ask questions about Sage use.\n  This would also potentially be a way for people to move up in\n  the food chain from sage newbie to experienced user to eventually\n  sage developer.\n* loads more interesting bits at http://trac-hacks.org/ - but we\n  should not merge in too many extensions because it makes\n  maintainability more difficult once we upgrade to newer trac\n  releases. I maintain several phpBB installations and not\n  adding a wild bunch of mods proved to be a smart choice.\n* Jason Grout has suggested new \"states\" of tickets to make\n  the system more finely grained:\n\n      active\n      active (needs more info)\n      patch (code needs work)\n      patch (code needs review)\n      patch (code needs to be committed)\n      fixed\n      duplicate\n      invalid\n      worksforme\n      wontfix\n      bydesign\n\n   The names have been modeled after Drupal's ticket tracking system \n```\n",
+    "created_at": "2008-09-21T02:28:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4162",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4162#issuecomment-30205",
+    "user": "jason"
+}
+```
 
 For reference, here is a list from the above mailing list discussion:
 
@@ -66,44 +91,99 @@ For reference, here is a list from the above mailing list discussion:
 
 
 
+
 ---
 
-Comment by jason created at 2008-09-21 02:28:57
+archive/issue_comments_030206.json:
+```json
+{
+    "body": "(some of those things have already been done in the current trac, like Robert's bundle browsing extension.)",
+    "created_at": "2008-09-21T02:28:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4162",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4162#issuecomment-30206",
+    "user": "jason"
+}
+```
 
 (some of those things have already been done in the current trac, like Robert's bundle browsing extension.)
 
 
+
 ---
 
-Comment by jason created at 2008-09-21 02:35:34
+archive/issue_comments_030207.json:
+```json
+{
+    "body": "Also, we ought to see if an upgrade would provide a solution for #1768.",
+    "created_at": "2008-09-21T02:35:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4162",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4162#issuecomment-30207",
+    "user": "jason"
+}
+```
 
 Also, we ought to see if an upgrade would provide a solution for #1768.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-21 05:24:06
+archive/issue_comments_030208.json:
+```json
+{
+    "body": "As mhansen pointed out in trac:\n\n* we have a test version of the Sage trac running off-site\n* I am reluctant to first upgrade the Sage trac, but I want to got with the mpir and then cython trac since the smaller install are likely to flush out problems.\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-21T05:24:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4162",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4162#issuecomment-30208",
+    "user": "mabshoff"
+}
+```
 
 As mhansen pointed out in trac:
 
- * we have a test version of the Sage trac running off-site
- * I am reluctant to first upgrade the Sage trac, but I want to got with the mpir and then cython trac since the smaller install are likely to flush out problems.
+* we have a test version of the Sage trac running off-site
+* I am reluctant to first upgrade the Sage trac, but I want to got with the mpir and then cython trac since the smaller install are likely to flush out problems.
 
 Cheers,
 
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-21 08:38:18
+archive/issue_comments_030209.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-02-21T08:38:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4162",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4162#issuecomment-30209",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-21 08:38:18
+archive/issue_comments_030210.json:
+```json
+{
+    "body": "Fixed by William during the modular.math -> VMWare transition.\n\nAny follow up, i.e workflow updates, should go to new tickets.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-21T08:38:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4162",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4162#issuecomment-30210",
+    "user": "mabshoff"
+}
+```
 
 Fixed by William during the modular.math -> VMWare transition.
 

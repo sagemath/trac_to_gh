@@ -1,11 +1,21 @@
 # Issue 2058: [with patch, needs review] PolyBoRi evaluation
 
-Issue created by migration from https://trac.sagemath.org/ticket/2058
-
-Original creator: malb
-
-Original creation time: 2008-02-05 17:05:33
-
+archive/issues_002058.json:
+```json
+{
+    "body": "Assignee: malb\n\nCC:  burcin\n\nKeywords: polybori\n\nWith the attached patches `8314.patch` (by burcin) and `8315.patch` (by malb) the following now works:\n\n\n```\nsage: B.<x,y,z> = BooleanPolynomialRing(3)\nsage: x.subs({x:y})\ny\nsage: x.subs({'x':y})\ny\nsage: x.subs(x=y)\ny\n```\n\n\nThe implementation is far from being perfect but at least the functionality is there now.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2058\n\n",
+    "created_at": "2008-02-05T17:05:33Z",
+    "labels": [
+        "commutative algebra",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch, needs review] PolyBoRi evaluation",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2058",
+    "user": "malb"
+}
+```
 Assignee: malb
 
 CC:  burcin
@@ -28,85 +38,233 @@ y
 
 The implementation is far from being perfect but at least the functionality is there now.
 
+Issue created by migration from https://trac.sagemath.org/ticket/2058
+
+
+
+
 
 ---
+
+archive/issue_comments_013318.json:
+```json
+{
+    "body": "Attachment\n\nBurcin's original __call__ patch",
+    "created_at": "2008-02-05T17:05:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2058",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2058#issuecomment-13318",
+    "user": "malb"
+}
+```
 
 Attachment
 
 Burcin's original __call__ patch
 
 
+
 ---
 
-Comment by malb created at 2008-02-05 17:06:26
+archive/issue_comments_013319.json:
+```json
+{
+    "body": "my doctests/corrections for Burcin's patch",
+    "created_at": "2008-02-05T17:06:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2058",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2058#issuecomment-13319",
+    "user": "malb"
+}
+```
 
 my doctests/corrections for Burcin's patch
 
 
+
 ---
+
+archive/issue_comments_013320.json:
+```json
+{
+    "body": "Attachment\n\npatch to be applied on top of the other two to speed up subs method",
+    "created_at": "2008-02-05T22:08:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2058",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2058#issuecomment-13320",
+    "user": "malb"
+}
+```
 
 Attachment
 
 patch to be applied on top of the other two to speed up subs method
 
 
+
 ---
+
+archive/issue_comments_013321.json:
+```json
+{
+    "body": "Attachment\n\nyet another patch (to be applied on to of the rest) which speeds up substitution and evalutation",
+    "created_at": "2008-02-06T14:55:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2058",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2058#issuecomment-13321",
+    "user": "malb"
+}
+```
 
 Attachment
 
 yet another patch (to be applied on to of the rest) which speeds up substitution and evalutation
 
 
+
 ---
 
-Comment by malb created at 2008-02-06 15:01:52
+archive/issue_comments_013322.json:
+```json
+{
+    "body": "`8316.patch` reorders the coercion by moving integers more to the front. Burcin, if that affects performance for other operations negatively, let me know and I can move it back.",
+    "created_at": "2008-02-06T15:01:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2058",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2058#issuecomment-13322",
+    "user": "malb"
+}
+```
 
 `8316.patch` reorders the coercion by moving integers more to the front. Burcin, if that affects performance for other operations negatively, let me know and I can move it back.
 
 
+
 ---
 
-Comment by malb created at 2008-02-06 16:11:58
+archive/issue_comments_013323.json:
+```json
+{
+    "body": "reintroduces evaluation with aribitrary values again",
+    "created_at": "2008-02-06T16:11:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2058",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2058#issuecomment-13323",
+    "user": "malb"
+}
+```
 
 reintroduces evaluation with aribitrary values again
 
 
+
 ---
+
+archive/issue_comments_013324.json:
+```json
+{
+    "body": "Attachment\n\nPatch `8318.patch` addresses a concern burcin raised in a private conversation.",
+    "created_at": "2008-02-06T16:12:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2058",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2058#issuecomment-13324",
+    "user": "malb"
+}
+```
 
 Attachment
 
 Patch `8318.patch` addresses a concern burcin raised in a private conversation.
 
 
+
 ---
 
-Comment by malb created at 2008-02-14 23:37:43
+archive/issue_comments_013325.json:
+```json
+{
+    "body": "Burcin mentioned some issues in a private communication. Don't apply yet.",
+    "created_at": "2008-02-14T23:37:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2058",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2058#issuecomment-13325",
+    "user": "malb"
+}
+```
 
 Burcin mentioned some issues in a private communication. Don't apply yet.
 
 
+
 ---
+
+archive/issue_comments_013326.json:
+```json
+{
+    "body": "Attachment\n\nthis patch replaces **all** other patches and should address Burcin's off-record concerns",
+    "created_at": "2008-02-26T17:58:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2058",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2058#issuecomment-13326",
+    "user": "malb"
+}
+```
 
 Attachment
 
-this patch replaces *all* other patches and should address Burcin's off-record concerns
+this patch replaces **all** other patches and should address Burcin's off-record concerns
 
-
----
-
-Comment by malb created at 2008-02-26 18:00:09
-
-Burcin, could you check if both `__call__` and `subs` now behave as you would expect? I am trying to get this patch (or a corrected version) into 2.10.3. You only need the _superpatch_.
 
 
 ---
 
-Comment by burcin created at 2008-02-26 19:51:03
+archive/issue_comments_013327.json:
+```json
+{
+    "body": "Burcin, could you check if both `__call__` and `subs` now behave as you would expect? I am trying to get this patch (or a corrected version) into 2.10.3. You only need the *superpatch*.",
+    "created_at": "2008-02-26T18:00:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2058",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2058#issuecomment-13327",
+    "user": "malb"
+}
+```
+
+Burcin, could you check if both `__call__` and `subs` now behave as you would expect? I am trying to get this patch (or a corrected version) into 2.10.3. You only need the *superpatch*.
+
+
+
+---
+
+archive/issue_comments_013328.json:
+```json
+{
+    "body": "add doctest to _eval",
+    "created_at": "2008-02-26T19:51:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2058",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2058#issuecomment-13328",
+    "user": "burcin"
+}
+```
 
 add doctest to _eval
 
 
+
 ---
+
+archive/issue_comments_013329.json:
+```json
+{
+    "body": "Attachment\n\nMartin's patch looks good, it should be applied.\n\nattachment:booleanmonomial_eval_doctest.patch makes it conform to the \"all functions should have a doctest\" rule. :)",
+    "created_at": "2008-02-26T19:55:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2058",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2058#issuecomment-13329",
+    "user": "burcin"
+}
+```
 
 Attachment
 
@@ -115,15 +273,37 @@ Martin's patch looks good, it should be applied.
 attachment:booleanmonomial_eval_doctest.patch makes it conform to the "all functions should have a doctest" rule. :)
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-26 21:36:32
+archive/issue_comments_013330.json:
+```json
+{
+    "body": "Merged trac_2058_superpatch.patch and booleanmonomial_eval_doctest.patch in Sage 2.10.3.rc0",
+    "created_at": "2008-02-26T21:36:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2058",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2058#issuecomment-13330",
+    "user": "mabshoff"
+}
+```
 
 Merged trac_2058_superpatch.patch and booleanmonomial_eval_doctest.patch in Sage 2.10.3.rc0
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-26 21:36:32
+archive/issue_comments_013331.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-02-26T21:36:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2058",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2058#issuecomment-13331",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

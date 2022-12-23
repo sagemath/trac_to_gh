@@ -1,65 +1,171 @@
 # Issue 7655: notebook: make it so worksheets can be organized into a tree structure
 
-Issue created by migration from https://trac.sagemath.org/ticket/7655
-
-Original creator: was
-
-Original creation time: 2009-12-11 01:14:14
-
+archive/issues_007655.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  iandrus jason boothby kcrisman jhpalmieri\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7655\n\n",
+    "created_at": "2009-12-11T01:14:14Z",
+    "labels": [
+        "notebook",
+        "major",
+        "enhancement"
+    ],
+    "title": "notebook: make it so worksheets can be organized into a tree structure",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7655",
+    "user": "was"
+}
+```
 Assignee: was
 
 CC:  iandrus jason boothby kcrisman jhpalmieri
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7655
+
+
+
+
 
 ---
+
+archive/issue_comments_065482.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-12-12T02:34:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7655",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7655#issuecomment-65482",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_065483.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-02-15T19:02:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7655",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7655#issuecomment-65483",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2010-02-15 19:02:14
+archive/issue_comments_065484.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"labels, folders, notebook, sagenb\".",
+    "created_at": "2010-02-15T19:02:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7655",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7655#issuecomment-65484",
+    "user": "was"
+}
+```
 
 Changing keywords from "" to "labels, folders, notebook, sagenb".
 
 
+
 ---
 
-Comment by chapoton created at 2020-03-29 08:15:05
+archive/issue_comments_065485.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2020-03-29T08:15:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7655",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7655#issuecomment-65485",
+    "user": "chapoton"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by chapoton created at 2020-03-29 08:15:05
+archive/issue_comments_065486.json:
+```json
+{
+    "body": "ancient ticket about deprecated sagenb, can we close ?",
+    "created_at": "2020-03-29T08:15:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7655",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7655#issuecomment-65486",
+    "user": "chapoton"
+}
+```
 
 ancient ticket about deprecated sagenb, can we close ?
 
 
+
 ---
 
-Comment by vdelecroix created at 2020-03-29 15:54:02
+archive/issue_comments_065487.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2020-03-29T15:54:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7655",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7655#issuecomment-65487",
+    "user": "vdelecroix"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by vdelecroix created at 2020-03-29 15:54:02
+archive/issue_comments_065488.json:
+```json
+{
+    "body": "Yes. Jupyter uses layout from the filesystem which has a tree structure.",
+    "created_at": "2020-03-29T15:54:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7655",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7655#issuecomment-65488",
+    "user": "vdelecroix"
+}
+```
 
 Yes. Jupyter uses layout from the filesystem which has a tree structure.
 
 
+
 ---
 
-Comment by vdelecroix created at 2020-03-29 15:54:13
+archive/issue_comments_065489.json:
+```json
+{
+    "body": "Resolution: wontfix",
+    "created_at": "2020-03-29T15:54:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7655",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7655#issuecomment-65489",
+    "user": "vdelecroix"
+}
+```
 
 Resolution: wontfix

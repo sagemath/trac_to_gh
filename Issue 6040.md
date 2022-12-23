@@ -1,11 +1,21 @@
 # Issue 6040: Added Doctests for QuadraticForms methods
 
-Issue created by migration from https://trac.sagemath.org/ticket/6040
-
-Original creator: jonhanke
-
-Original creation time: 2009-05-15 03:40:59
-
+archive/issues_006040.json:
+```json
+{
+    "body": "Assignee: justin\n\nCC:  mabshoff wstein tornaria\n\nKeywords: quadraticform\n\nAdding Doctests to bring coverage up to 100% (coming soon).\n\nIssue created by migration from https://trac.sagemath.org/ticket/6040\n\n",
+    "created_at": "2009-05-15T03:40:59Z",
+    "labels": [
+        "quadratic forms",
+        "major",
+        "enhancement"
+    ],
+    "title": "Added Doctests for QuadraticForms methods",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6040",
+    "user": "jonhanke"
+}
+```
 Assignee: justin
 
 CC:  mabshoff wstein tornaria
@@ -14,17 +24,45 @@ Keywords: quadraticform
 
 Adding Doctests to bring coverage up to 100% (coming soon).
 
+Issue created by migration from https://trac.sagemath.org/ticket/6040
+
+
+
+
 
 ---
+
+archive/issue_comments_048090.json:
+```json
+{
+    "body": "Attachment\n\nNote:  There are currently two broken doctests in this patch (using the older routine IsPadic Square()), which should resolve themselves once Cremona's patch (Ticket #5834) is applied.",
+    "created_at": "2009-05-15T03:43:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6040",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6040#issuecomment-48090",
+    "user": "jonhanke"
+}
+```
 
 Attachment
 
 Note:  There are currently two broken doctests in this patch (using the older routine IsPadic Square()), which should resolve themselves once Cremona's patch (Ticket #5834) is applied.
 
 
+
 ---
 
-Comment by jonhanke created at 2009-05-15 11:15:41
+archive/issue_comments_048091.json:
+```json
+{
+    "body": "Additional patch to bring QuadraticForm doctests to 100%.\n\nKnown Issues:\n    Several doctests fail because of the need for hilbert_symbol() to accept rational numbers, and similarly for IsPadicSquare().  These should be addressed by the changes made in Ticket #5834.",
+    "created_at": "2009-05-15T11:15:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6040",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6040#issuecomment-48091",
+    "user": "jonhanke"
+}
+```
 
 Additional patch to bring QuadraticForm doctests to 100%.
 
@@ -32,14 +70,38 @@ Known Issues:
     Several doctests fail because of the need for hilbert_symbol() to accept rational numbers, and similarly for IsPadicSquare().  These should be addressed by the changes made in Ticket #5834.
 
 
+
 ---
+
+archive/issue_comments_048092.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-05-15T11:16:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6040",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6040#issuecomment-48092",
+    "user": "jonhanke"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-15 11:22:49
+archive/issue_comments_048093.json:
+```json
+{
+    "body": "Together with #5954 this brings coverage in the QF code to 100%.\n\nCheers,\n\nMichael",
+    "created_at": "2009-05-15T11:22:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6040",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6040#issuecomment-48093",
+    "user": "mabshoff"
+}
+```
 
 Together with #5954 this brings coverage in the QF code to 100%.
 
@@ -48,16 +110,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by jonhanke created at 2009-05-15 18:19:16
+archive/issue_comments_048094.json:
+```json
+{
+    "body": "Also the patch in Ticket #6037 (rewrite and careful documentation of local density routines) is related to getting the doctest coverage to 100%.",
+    "created_at": "2009-05-15T18:19:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6040",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6040#issuecomment-48094",
+    "user": "jonhanke"
+}
+```
 
 Also the patch in Ticket #6037 (rewrite and careful documentation of local density routines) is related to getting the doctest coverage to 100%.
 
 
+
 ---
 
-Comment by tornaria created at 2009-05-17 21:48:55
+archive/issue_comments_048095.json:
+```json
+{
+    "body": "So, it turns out there are 4 patches in this series, and they must be applied in order. In particular, patch-3 depends on patch-2, which is at #6037, but I misunderstood that.\nThe correct sequence is to apply patch-1 in #5954, then patch-2 in #6037, then patch-3 and patch-4 in this ticket.\n\nIf that order is followed, the patch sequence applies cleanly to 3.4.1 as well as 4.0.alpha0.",
+    "created_at": "2009-05-17T21:48:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6040",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6040#issuecomment-48095",
+    "user": "tornaria"
+}
+```
 
 So, it turns out there are 4 patches in this series, and they must be applied in order. In particular, patch-3 depends on patch-2, which is at #6037, but I misunderstood that.
 The correct sequence is to apply patch-1 in #5954, then patch-2 in #6037, then patch-3 and patch-4 in this ticket.
@@ -65,38 +149,84 @@ The correct sequence is to apply patch-1 in #5954, then patch-2 in #6037, then p
 If that order is followed, the patch sequence applies cleanly to 3.4.1 as well as 4.0.alpha0.
 
 
+
 ---
+
+archive/issue_comments_048096.json:
+```json
+{
+    "body": "Attachment\n\nfix doctests for 4.0.alpha0",
+    "created_at": "2009-05-18T05:46:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6040",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6040#issuecomment-48096",
+    "user": "tornaria"
+}
+```
 
 Attachment
 
 fix doctests for 4.0.alpha0
 
 
+
 ---
 
-Comment by tornaria created at 2009-05-18 05:54:33
+archive/issue_comments_048097.json:
+```json
+{
+    "body": "Some doctests were broken on 4.0.alpha0 + patch-1 (#5954) + patch-2 (#6037) + patch-3 + patch-4.\n\nAll doctests pass for me when adding on top of that\n- attachment:patch-5__QF_reviewer__4.0.alpha0.patch\n- patch in #6059\n- patch in #6062\n- patch in #6064\n\nNote that the `patch-3__QF_misc_doctests__4.0.alpha0.patch` I uploaded earlier is a mistake, just ignore it.",
+    "created_at": "2009-05-18T05:54:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6040",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6040#issuecomment-48097",
+    "user": "tornaria"
+}
+```
 
 Some doctests were broken on 4.0.alpha0 + patch-1 (#5954) + patch-2 (#6037) + patch-3 + patch-4.
 
 All doctests pass for me when adding on top of that
- - attachment:patch-5__QF_reviewer__4.0.alpha0.patch
- - patch in #6059
- - patch in #6062
- - patch in #6064
+- attachment:patch-5__QF_reviewer__4.0.alpha0.patch
+- patch in #6059
+- patch in #6062
+- patch in #6064
 
 Note that the `patch-3__QF_misc_doctests__4.0.alpha0.patch` I uploaded earlier is a mistake, just ignore it.
 
 
+
 ---
 
-Comment by tornaria created at 2009-05-18 05:59:01
+archive/issue_comments_048098.json:
+```json
+{
+    "body": "Note: the patch-5 also adds a few \"#long time\" comments to file `quadratic_form__local_representation_conditions.py`. Skipping these reduces the time for doctesting the whole file from 48 s to 20 s.",
+    "created_at": "2009-05-18T05:59:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6040",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6040#issuecomment-48098",
+    "user": "tornaria"
+}
+```
 
 Note: the patch-5 also adds a few "#long time" comments to file `quadratic_form__local_representation_conditions.py`. Skipping these reduces the time for doctesting the whole file from 48 s to 20 s.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-18 23:57:04
+archive/issue_comments_048099.json:
+```json
+{
+    "body": "Add positive review due to Gonzalo.\n\nCheers,\n\nMichael",
+    "created_at": "2009-05-18T23:57:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6040",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6040#issuecomment-48099",
+    "user": "mabshoff"
+}
+```
 
 Add positive review due to Gonzalo.
 
@@ -105,22 +235,44 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by tornaria created at 2009-05-19 00:37:49
+archive/issue_comments_048100.json:
+```json
+{
+    "body": "I'm ok with the positive review. I'll list the renamed/removed functions as for the other tickets, and I'll post a ticket to add compatibility functions with deprecation warnings.\n- `hanke_mass__maximal` was removed.\n- `GHY_mass_maximal` was renamed `GHY_mass__maximal`.\n- `conway_generic_mass` was removed.\n- `conway_p_mass_adjustment` was removed.\n- `local_diagonal` was removed.\n- `find_primitive_p_divisible_vector__all` was removed.",
+    "created_at": "2009-05-19T00:37:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6040",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6040#issuecomment-48100",
+    "user": "tornaria"
+}
+```
 
 I'm ok with the positive review. I'll list the renamed/removed functions as for the other tickets, and I'll post a ticket to add compatibility functions with deprecation warnings.
- - `hanke_mass__maximal` was removed.
- - `GHY_mass_maximal` was renamed `GHY_mass__maximal`.
- - `conway_generic_mass` was removed.
- - `conway_p_mass_adjustment` was removed.
- - `local_diagonal` was removed.
- - `find_primitive_p_divisible_vector__all` was removed.
+- `hanke_mass__maximal` was removed.
+- `GHY_mass_maximal` was renamed `GHY_mass__maximal`.
+- `conway_generic_mass` was removed.
+- `conway_p_mass_adjustment` was removed.
+- `local_diagonal` was removed.
+- `find_primitive_p_divisible_vector__all` was removed.
+
 
 
 ---
 
-Comment by mabshoff created at 2009-05-19 00:41:25
+archive/issue_comments_048101.json:
+```json
+{
+    "body": "Merged in Sage 4.0.rc0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-05-19T00:41:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6040",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6040#issuecomment-48101",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 4.0.rc0.
 
@@ -129,8 +281,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-19 00:41:25
+archive/issue_comments_048102.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-05-19T00:41:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6040",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6040#issuecomment-48102",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 7578: Slowness of InfinitePolynomialRing basic arithmetic
 
-Issue created by migration from https://trac.sagemath.org/ticket/7578
-
-Original creator: SimonKing
-
-Original creation time: 2009-12-01 23:14:52
-
+archive/issues_007578.json:
+```json
+{
+    "body": "Assignee: SimonKing\n\nKeywords: infinite polynomial ring, basic arithmetic\n\n[Martin Albrecht](http://groups.google.com/group/sage-devel/browse_thread/thread/20e0fc8f5c5be582) reported the following example:\n\n\n```\nsage: X.<x> = InfinitePolynomialRing(QQ)\nsage: x10000 = x[10000]\nsage: x10001 = x[10001]\nsage: %time 1/2*x10000\nCPU times: user 43.09 s, sys: 0.02 s, total: 43.12 s\nWall time: 43.12 s\n1/2*x10000\n```\n\n\nThis is inacceptably slow.\n\nNote that this problem does not occur with the sparse implementation of infinite polynomial rings:\n\n\n```\nsage: X.<x> = InfinitePolynomialRing(QQ,implementation='sparse')\nsage: x10000 = x[10000]\nsage: x10001 = x[10001]\nsage: %time 1/2*x10000\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\n1/2*x10000\n```\n\n\nPart of the problem is a slowness of element conversion in polynomial rings:\n\n\n```\nsage: R1 = PolynomialRing(QQ,'x',10001)\nsage: R2 = PolynomialRing(QQ,'x',10002)\nsage: x10000 = R1('x10000')\nsage: %time a = R2(x10000)\nCPU times: user 4.96 s, sys: 0.12 s, total: 5.08 s\nWall time: 5.11 s\n```\n\nwhich is rather slow as  well.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7578\n\n",
+    "created_at": "2009-12-01T23:14:52Z",
+    "labels": [
+        "commutative algebra",
+        "major",
+        "bug"
+    ],
+    "title": "Slowness of InfinitePolynomialRing basic arithmetic",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7578",
+    "user": "SimonKing"
+}
+```
 Assignee: SimonKing
 
 Keywords: infinite polynomial ring, basic arithmetic
@@ -54,15 +64,43 @@ Wall time: 5.11 s
 
 which is rather slow as  well.
 
+Issue created by migration from https://trac.sagemath.org/ticket/7578
+
+
+
+
 
 ---
 
-Comment by SimonKing created at 2009-12-01 23:22:09
+archive/issue_comments_064543.json:
+```json
+{
+    "body": "Improving basic arithmetic of infinite polynomial rings",
+    "created_at": "2009-12-01T23:22:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7578",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7578#issuecomment-64543",
+    "user": "SimonKing"
+}
+```
 
 Improving basic arithmetic of infinite polynomial rings
 
 
+
 ---
+
+archive/issue_comments_064544.json:
+```json
+{
+    "body": "Attachment\n\nWith the attached patch, the example improves a lot:\n\n```\nsage: X.<x> = InfinitePolynomialRing(QQ)\nsage: x10000 = x[10000]\nsage: x10001 = x[10001]\nsage: %time 1/2*x10000\nCPU times: user 7.37 s, sys: 0.01 s, total: 7.38 s\nWall time: 7.38 s\n1/2*x10000\n```\n\n\nOf course, this is still a shame. But it may be better than nothing.\n\nThe idea / reason for the slowness:\n\n* When x10001 is created, the underlying finite polynomial ring of X changes. At this point, the underlying finite polynomial of x10000 does not belong to the underlying ring of X anymore.\n* In the old code, the underlying finite polynomial of x10000 was not updated.\n* With the patch, it will be updated as soon as x10000 is involved in any multiplication, summation or difference.\n\nHence, the timing is essentially reduced to the time for conversion of the underlying polynomials; namely, after restarting sage (clearing the cache):\n\n```\nsage: X.<x> = InfinitePolynomialRing(QQ)\nsage: x10000 = x[10000]\nsage: x10001 = x[10001]\nsage: %time x10000._p = X._P(x10000._p)\nCPU times: user 6.90 s, sys: 0.01 s, total: 6.91 s\nWall time: 6.91 s\n```\n\n\nI don't think that this is a satisfying time, but it is some progress, and as long as element conversion for polynomial rings isn't improved, I see no way to do it better.",
+    "created_at": "2009-12-01T23:50:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7578",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7578#issuecomment-64544",
+    "user": "SimonKing"
+}
+```
 
 Attachment
 
@@ -83,9 +121,9 @@ Of course, this is still a shame. But it may be better than nothing.
 
 The idea / reason for the slowness:
 
- * When x10001 is created, the underlying finite polynomial ring of X changes. At this point, the underlying finite polynomial of x10000 does not belong to the underlying ring of X anymore.
- * In the old code, the underlying finite polynomial of x10000 was not updated.
- * With the patch, it will be updated as soon as x10000 is involved in any multiplication, summation or difference.
+* When x10001 is created, the underlying finite polynomial ring of X changes. At this point, the underlying finite polynomial of x10000 does not belong to the underlying ring of X anymore.
+* In the old code, the underlying finite polynomial of x10000 was not updated.
+* With the patch, it will be updated as soon as x10000 is involved in any multiplication, summation or difference.
 
 Hence, the timing is essentially reduced to the time for conversion of the underlying polynomials; namely, after restarting sage (clearing the cache):
 
@@ -102,29 +140,73 @@ Wall time: 6.91 s
 I don't think that this is a satisfying time, but it is some progress, and as long as element conversion for polynomial rings isn't improved, I see no way to do it better.
 
 
+
 ---
 
-Comment by SimonKing created at 2009-12-01 23:50:45
+archive/issue_comments_064545.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-12-01T23:50:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7578",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7578#issuecomment-64545",
+    "user": "SimonKing"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by malb created at 2009-12-02 11:36:44
+archive/issue_comments_064546.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-12-02T11:36:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7578",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7578#issuecomment-64546",
+    "user": "malb"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by malb created at 2009-12-02 11:36:44
+archive/issue_comments_064547.json:
+```json
+{
+    "body": "The change seems sensible, applies cleanly against 4.3.alpha0, doctests pass. positive review.",
+    "created_at": "2009-12-02T11:36:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7578",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7578#issuecomment-64547",
+    "user": "malb"
+}
+```
 
 The change seems sensible, applies cleanly against 4.3.alpha0, doctests pass. positive review.
 
 
+
 ---
 
-Comment by mhansen created at 2009-12-02 12:39:08
+archive/issue_comments_064548.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-12-02T12:39:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7578",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7578#issuecomment-64548",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

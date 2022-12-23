@@ -1,11 +1,21 @@
 # Issue 7598: NumberField embedding slightly off
 
-Issue created by migration from https://trac.sagemath.org/ticket/7598
-
-Original creator: mhansen
-
-Original creation time: 2009-12-04 05:35:08
-
+archive/issues_007598.json:
+```json
+{
+    "body": "Assignee: davidloeffler\n\nCC:  burcin\n\n\n```\nsage: Q.<i> = NumberField(x^2+1)\nsage: complex(i)\n0.99999999999999967j\n```\n\n\nIt should give `1j` instead.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7598\n\n",
+    "created_at": "2009-12-04T05:35:08Z",
+    "labels": [
+        "number fields",
+        "major",
+        "bug"
+    ],
+    "title": "NumberField embedding slightly off",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7598",
+    "user": "mhansen"
+}
+```
 Assignee: davidloeffler
 
 CC:  burcin
@@ -20,10 +30,25 @@ sage: complex(i)
 
 It should give `1j` instead.
 
+Issue created by migration from https://trac.sagemath.org/ticket/7598
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2009-12-14 06:02:23
+archive/issue_comments_064808.json:
+```json
+{
+    "body": "This is probably caused by the roots method using NumPy which uses Fortran which is a little off.  If you specify algorithm='pari' to the roots command when computing them, things should be fine.\n\n\n```\nsage: Q.<i> = NumberField(x^2+1)\nsage: Q.defining_polynomial().change_ring(CC).roots()[1][0].imag().exact_rational()\n9007199254740989/9007199254740992\nsage: Q.defining_polynomial().change_ring(ComplexField(100)).roots()[1][0].imag().exact_rational()\n1\n```\n\n\nNote that NumPy is not used for the second example.",
+    "created_at": "2009-12-14T06:02:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7598",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7598#issuecomment-64808",
+    "user": "mhansen"
+}
+```
 
 This is probably caused by the roots method using NumPy which uses Fortran which is a little off.  If you specify algorithm='pari' to the roots command when computing them, things should be fine.
 
@@ -40,7 +65,20 @@ sage: Q.defining_polynomial().change_ring(ComplexField(100)).roots()[1][0].imag(
 Note that NumPy is not used for the second example.
 
 
+
 ---
+
+archive/issue_comments_064809.json:
+```json
+{
+    "body": "Attachment\n\ntrac_7598-more_serious_version.patch  -- this deals with the problems more at the root.  Unfortunately, there are doctests in this file that fail:\n\n```\n\tsage -t  devel/sage-main/sage/modular/dirichlet.py # 4 doctests failed\n```\n\nand I haven't had time to figure out what is wrong.  It probably has to do with a complex embedding not being defined automatically, whereas before it was...\n\nThe design of embeddings was really bad before and relied on numerical errors to mess up the order of roots in case of 53 bit precision.  This was potentially *very* buggy and was I think the result of some absolutely terrible design decisions.    This absolutely must be fixed before releasing sage-4.3.  This patch basically fixes it, modulo some small remaining issue.\n\nHere is an example from sage-4.2.1 that illustrates just how horrendously bad the previous design was (with using CDF when prec=53 but ComplexField(prec) otherwise):\n\n```\nsage: K.<i> = QuadraticField(-1)\nsage: i.complex_em\ni.complex_embedding   i.complex_embeddings  \nsage: i.complex_embedding()\n1.0*I\nsage: i.complex_embedding(100)\n-1.0000000000000000000000000000*I\n```\n",
+    "created_at": "2009-12-14T10:33:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7598",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7598#issuecomment-64809",
+    "user": "was"
+}
+```
 
 Attachment
 
@@ -68,9 +106,20 @@ sage: i.complex_embedding(100)
 
 
 
+
 ---
 
-Comment by mhansen created at 2009-12-14 13:01:28
+archive/issue_comments_064810.json:
+```json
+{
+    "body": "I think the errors in dirichlet.py comes from the following:\n\n\n```\nsage: a = mod(1,3)\nsage: CDF.zeta(3)^a\n-0.5 + 0.866025403784*I\nsage: CC.zeta(3)^a\n---------------------------------------------------------------------------\nTraceback (most recent call last)\n...\nTypeError: unable to coerce <type 'sage.rings.complex_number.ComplexNumber'> to an integer\n```\n\n\nIt'd be nice if the {{{__pow__}} methods were standardized.",
+    "created_at": "2009-12-14T13:01:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7598",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7598#issuecomment-64810",
+    "user": "mhansen"
+}
+```
 
 I think the errors in dirichlet.py comes from the following:
 
@@ -90,14 +139,38 @@ TypeError: unable to coerce <type 'sage.rings.complex_number.ComplexNumber'> to 
 It'd be nice if the {{{__pow__}} methods were standardized.
 
 
+
 ---
+
+archive/issue_comments_064811.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-12-15T03:16:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7598",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7598#issuecomment-64811",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2009-12-15 03:18:41
+archive/issue_comments_064812.json:
+```json
+{
+    "body": "I've added a patch which fixes the errors in dirichlet.py by just forcing the exponent to be an int.\n\nWilliam's changes look good to me so the only thing that needs review is trac_7598-dirichlet.patch.\n\nWe should open another ticket for the `__pow__` discrepencies.",
+    "created_at": "2009-12-15T03:18:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7598",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7598#issuecomment-64812",
+    "user": "mhansen"
+}
+```
 
 I've added a patch which fixes the errors in dirichlet.py by just forcing the exponent to be an int.
 
@@ -106,37 +179,92 @@ William's changes look good to me so the only thing that needs review is trac_75
 We should open another ticket for the `__pow__` discrepencies.
 
 
+
 ---
 
-Comment by mhansen created at 2009-12-15 03:18:41
+archive/issue_comments_064813.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-12-15T03:18:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7598",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7598#issuecomment-64813",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by cremona created at 2009-12-15 09:29:19
+archive/issue_comments_064814.json:
+```json
+{
+    "body": "Do we need to apply both patches?  Or is it that Mike has given a positive review to the first and only needs a review of the second?  I was hoping to test this (being someone who experienced the problems) but as it will take a long time to rebuild, I want to make sure that the time is not wasted.",
+    "created_at": "2009-12-15T09:29:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7598",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7598#issuecomment-64814",
+    "user": "cremona"
+}
+```
 
 Do we need to apply both patches?  Or is it that Mike has given a positive review to the first and only needs a review of the second?  I was hoping to test this (being someone who experienced the problems) but as it will take a long time to rebuild, I want to make sure that the time is not wasted.
 
 
+
 ---
 
-Comment by mhansen created at 2009-12-15 09:32:53
+archive/issue_comments_064815.json:
+```json
+{
+    "body": "You need to apply both patches.  I've given a positive review to the first.  The second is pretty easy since it makes the exponent an integer instead of an integermod.",
+    "created_at": "2009-12-15T09:32:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7598",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7598#issuecomment-64815",
+    "user": "mhansen"
+}
+```
 
 You need to apply both patches.  I've given a positive review to the first.  The second is pretty easy since it makes the exponent an integer instead of an integermod.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-12-15 11:22:18
+archive/issue_comments_064816.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2009-12-15T11:22:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7598",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7598#issuecomment-64816",
+    "user": "AlexGhitza"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-12-15 11:22:18
+archive/issue_comments_064817.json:
+```json
+{
+    "body": "Running long doctests on a 32-bit Arch Linux machine gives one doctest failure related to this ticket:\n\n\n```\nsage -t -long \"devel/sage/doc/en/bordeaux_2008/nf_galois_groups.rst\"\n**********************************************************************\nFile \"/opt/sage-4.3.rc0/devel/sage/doc/en/bordeaux_2008/nf_galois_groups.rst\", line 109:\n    sage: K.complex_embeddings()\nExpected:\n    [\n    Ring morphism:\n      From: Number Field in a with defining polynomial x^3 - 2\n      To:   Complex Double Field\n      Defn: a |--> -0.629960524947 - 1.09112363597*I,\n    Ring morphism:\n      From: Number Field in a with defining polynomial x^3 - 2\n      To:   Complex Double Field\n      Defn: a |--> -0.629960524947 + 1.09112363597*I,\n    Ring morphism:\n      From: Number Field in a with defining polynomial x^3 - 2\n      To:   Complex Double Field\n      Defn: a |--> 1.25992104989\n    ]\nGot:\n    [\n    Ring morphism:\n      From: Number Field in a with defining polynomial x^3 - 2\n      To:   Complex Field with 53 bits of precision\n      Defn: a |--> -0.629960524947437 - 1.09112363597172*I,\n    Ring morphism:\n      From: Number Field in a with defining polynomial x^3 - 2\n      To:   Complex Field with 53 bits of precision\n      Defn: a |--> -0.629960524947437 + 1.09112363597172*I,\n    Ring morphism:\n      From: Number Field in a with defining polynomial x^3 - 2\n      To:   Complex Field with 53 bits of precision\n      Defn: a |--> 1.25992104989487\n    ]\n**********************************************************************\n1 items had failures:\n   1 of   4 in __main__.example_3\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/ghitza/.sage//tmp/.doctest_nf_galois_groups.py\n\t [5.9 s]\nexit code: 1024\n```\n \n\nApart from this small issue, everything looks good.",
+    "created_at": "2009-12-15T11:22:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7598",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7598#issuecomment-64817",
+    "user": "AlexGhitza"
+}
+```
 
 Running long doctests on a 32-bit Arch Linux machine gives one doctest failure related to this ticket:
 
@@ -183,57 +311,137 @@ Got:
 For whitespace errors, see the file /home/ghitza/.sage//tmp/.doctest_nf_galois_groups.py
 	 [5.9 s]
 exit code: 1024
-}}} 
+```
+ 
 
 Apart from this small issue, everything looks good.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-12-15 11:42:27
+archive/issue_comments_064818.json:
+```json
+{
+    "body": "OK, I've added a trivial patch that fixes the last doctest failure.",
+    "created_at": "2009-12-15T11:42:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7598",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7598#issuecomment-64818",
+    "user": "AlexGhitza"
+}
+```
 
 OK, I've added a trivial patch that fixes the last doctest failure.
 
 
+
 ---
+
+archive/issue_comments_064819.json:
+```json
+{
+    "body": "Attachment\n\napply after the previous two patches",
+    "created_at": "2009-12-15T11:43:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7598",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7598#issuecomment-64819",
+    "user": "AlexGhitza"
+}
+```
 
 Attachment
 
 apply after the previous two patches
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-12-15 11:43:15
+archive/issue_comments_064820.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2009-12-15T11:43:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7598",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7598#issuecomment-64820",
+    "user": "AlexGhitza"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by cremona created at 2009-12-15 14:37:40
+archive/issue_comments_064821.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-12-15T14:37:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7598",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7598#issuecomment-64821",
+    "user": "cremona"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by cremona created at 2009-12-15 14:37:40
+archive/issue_comments_064822.json:
+```json
+{
+    "body": "Applied all 3 patches to 4.3.rc0 on both 32-bit Suse (built using system gfortran) and 64-bit ubuntu (using Sage's gfortran).  No problems.  All tests in the files touched pass.  I still get a failure in doc/en/bordeaux_2008/nf_introduction.rst but that has a different cause.\n\nSo, positive review.",
+    "created_at": "2009-12-15T14:37:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7598",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7598#issuecomment-64822",
+    "user": "cremona"
+}
+```
 
 Applied all 3 patches to 4.3.rc0 on both 32-bit Suse (built using system gfortran) and 64-bit ubuntu (using Sage's gfortran).  No problems.  All tests in the files touched pass.  I still get a failure in doc/en/bordeaux_2008/nf_introduction.rst but that has a different cause.
 
 So, positive review.
 
 
+
 ---
 
-Comment by mhansen created at 2009-12-15 14:57:38
+archive/issue_comments_064823.json:
+```json
+{
+    "body": "Excellent.  I'm glad we (you guys) tracked that down.  I'm not sure why I didn't think that the number field was just using the alternate embedding.",
+    "created_at": "2009-12-15T14:57:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7598",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7598#issuecomment-64823",
+    "user": "mhansen"
+}
+```
 
 Excellent.  I'm glad we (you guys) tracked that down.  I'm not sure why I didn't think that the number field was just using the alternate embedding.
 
 
+
 ---
 
-Comment by mhansen created at 2009-12-15 15:16:37
+archive/issue_comments_064824.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-12-15T15:16:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7598",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7598#issuecomment-64824",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

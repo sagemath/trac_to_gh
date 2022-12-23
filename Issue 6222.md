@@ -1,39 +1,99 @@
 # Issue 6222: typos in super-increasing code
 
-Issue created by migration from https://trac.sagemath.org/ticket/6222
-
-Original creator: mvngu
-
-Original creation time: 2009-06-05 05:48:21
-
+archive/issues_006222.json:
+```json
+{
+    "body": "Assignee: tba\n\nKeywords: knapsack.py\n\nI notice some typos in the patch at #5827. Here we fix those typos.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6222\n\n",
+    "created_at": "2009-06-05T05:48:21Z",
+    "labels": [
+        "documentation",
+        "minor",
+        "bug"
+    ],
+    "title": "typos in super-increasing code",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6222",
+    "user": "mvngu"
+}
+```
 Assignee: tba
 
 Keywords: knapsack.py
 
 I notice some typos in the patch at #5827. Here we fix those typos.
 
+Issue created by migration from https://trac.sagemath.org/ticket/6222
+
+
+
+
 
 ---
 
-Comment by mvngu created at 2009-06-05 07:39:59
+archive/issue_comments_049678.json:
+```json
+{
+    "body": "based on Sage 4.0.1.rc1",
+    "created_at": "2009-06-05T07:39:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6222",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6222#issuecomment-49678",
+    "user": "mvngu"
+}
+```
 
 based on Sage 4.0.1.rc1
 
 
+
 ---
+
+archive/issue_comments_049679.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-06-05T07:40:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6222",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6222#issuecomment-49679",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by ncalexan created at 2009-06-06 04:57:15
+archive/issue_comments_049680.json:
+```json
+{
+    "body": "Fine by me.",
+    "created_at": "2009-06-06T04:57:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6222",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6222#issuecomment-49680",
+    "user": "ncalexan"
+}
+```
 
 Fine by me.
 
 
+
 ---
 
-Comment by ncalexan created at 2009-06-13 21:16:57
+archive/issue_comments_049681.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-06-13T21:16:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6222",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6222#issuecomment-49681",
+    "user": "ncalexan"
+}
+```
 
 Resolution: fixed

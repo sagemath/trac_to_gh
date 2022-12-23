@@ -1,11 +1,21 @@
 # Issue 4307: bad error message in SupersingularModule constructor
 
-Issue created by migration from https://trac.sagemath.org/ticket/4307
-
-Original creator: was
-
-Original creation time: 2008-10-16 09:21:45
-
+archive/issues_004307.json:
+```json
+{
+    "body": "Assignee: craigcitro\n\n\n```\nsage: SupersingularModule(15)\nTraceback (most recent call last):\n...\nValueError: order of finite field must be a prime power\n```\n\n\nThe error message should say something like:\n\n```\nNotImplementedError: supersingular module of non-prime level not yet implemented\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4307\n\n",
+    "created_at": "2008-10-16T09:21:45Z",
+    "labels": [
+        "modular forms",
+        "major",
+        "bug"
+    ],
+    "title": "bad error message in SupersingularModule constructor",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4307",
+    "user": "was"
+}
+```
 Assignee: craigcitro
 
 
@@ -24,17 +34,43 @@ NotImplementedError: supersingular module of non-prime level not yet implemented
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4307
+
+
+
+
 
 ---
 
-Comment by was created at 2008-10-16 09:21:55
+archive/issue_comments_031525.json:
+```json
+{
+    "body": "Changing priority from major to minor.",
+    "created_at": "2008-10-16T09:21:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4307",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4307#issuecomment-31525",
+    "user": "was"
+}
+```
 
 Changing priority from major to minor.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2008-10-18 04:13:25
+archive/issue_comments_031526.json:
+```json
+{
+    "body": "Having looked at the code in ssmod.py, it seems to me that any nontrivial functionality is only implemented for level 1 at the moment.  Two things that I tried: dimension() and hecke_matrix().\n\nThe attached patch raises ValueErrors if the characteristic is not prime or if the level is not coprime to the characteristic, and a NotImplementedError if the level is > 1.\n\nExtending the functionality in ssmod.py to general levels is right up my alley, so I'll look into doing it in the near future.  The code could also use more documentation and tests.",
+    "created_at": "2008-10-18T04:13:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4307",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4307#issuecomment-31526",
+    "user": "AlexGhitza"
+}
+```
 
 Having looked at the code in ssmod.py, it seems to me that any nontrivial functionality is only implemented for level 1 at the moment.  Two things that I tried: dimension() and hecke_matrix().
 
@@ -43,9 +79,20 @@ The attached patch raises ValueErrors if the characteristic is not prime or if t
 Extending the functionality in ssmod.py to general levels is right up my alley, so I'll look into doing it in the near future.  The code could also use more documentation and tests.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-20 16:37:35
+archive/issue_comments_031527.json:
+```json
+{
+    "body": "Alex,\n\nplease add doctests that show the new behavior to the not yet existing class SupersingularModule(hecke.HeckeModule_free_module) docstring.\n\nCheers,\n\nMichael",
+    "created_at": "2008-10-20T16:37:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4307",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4307#issuecomment-31527",
+    "user": "mabshoff"
+}
+```
 
 Alex,
 
@@ -56,29 +103,75 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_031528.json:
+```json
+{
+    "body": "Attachment\n\nYes.  Done, and replaced the patch.",
+    "created_at": "2008-10-20T22:01:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4307",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4307#issuecomment-31528",
+    "user": "AlexGhitza"
+}
+```
 
 Attachment
 
 Yes.  Done, and replaced the patch.
 
 
+
 ---
 
-Comment by craigcitro created at 2008-10-22 04:18:41
+archive/issue_comments_031529.json:
+```json
+{
+    "body": "Looks good.",
+    "created_at": "2008-10-22T04:18:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4307",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4307#issuecomment-31529",
+    "user": "craigcitro"
+}
+```
 
 Looks good.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-26 01:35:16
+archive/issue_comments_031530.json:
+```json
+{
+    "body": "Merged in Sage 3.2.alpha1",
+    "created_at": "2008-10-26T01:35:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4307",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4307#issuecomment-31530",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.2.alpha1
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-26 01:35:16
+archive/issue_comments_031531.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-10-26T01:35:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4307",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4307#issuecomment-31531",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 2090: basic univariate polynomial efficiency issues
 
-Issue created by migration from https://trac.sagemath.org/ticket/2090
-
-Original creator: was
-
-Original creation time: 2008-02-07 22:14:38
-
+archive/issues_002090.json:
+```json
+{
+    "body": "Assignee: somebody\n\n\n```\nMarshall Buck to sage-support\n\n(sage 2.10 on X86 linux.)\n\nSuppose you define the ring of polynomials over GF(2):\n\nR.<x> = GF(2)[]\n\nThen a simple polynomial like\n\nf = x^32000\n\ntakes time quadratic in the degree to construct.\nMeanwhile, the left shift operator will construct the polynomial\nalmost instantly:\n\nf = x << (32000 - 1)\n\nAlso, constructing from a list of coefficients takes quadratic time if\nmost of the coefficients are zero.\n\nFor example\n\nf = R( [1]+ 32000*[0] + [1])\n\nis very slow, but a dense list is fast:\n\nf = R(32000*[1])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2090\n\n",
+    "created_at": "2008-02-07T22:14:38Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "enhancement"
+    ],
+    "title": "basic univariate polynomial efficiency issues",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2090",
+    "user": "was"
+}
+```
 Assignee: somebody
 
 
@@ -41,17 +51,43 @@ f = R(32000*[1])
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2090
+
+
+
+
 
 ---
 
-Comment by was created at 2010-11-22 20:22:40
+archive/issue_comments_013525.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-11-22T20:22:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2090",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2090#issuecomment-13525",
+    "user": "was"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by was created at 2010-11-22 20:22:40
+archive/issue_comments_013526.json:
+```json
+{
+    "body": "From James Pfeiffer  from a Math 581d homework problem.\n\n\"Is this still open for a reason?\n\n```\n    sage: sage: R.<x> = GF(2)[]\n    sage: timeit('f = x^32000')\n        625 loops, best of 3: 3.72 \u00b5s per loop\n    sage: timeit('x << (32000 - 1)')\n        625 loops, best of 3: 12.9 \u00b5s per loop\n```\n\n I could just close the ticket, as it seems to be addressed.\"\n\nGood point.  It is definitely addressed. Closing.",
+    "created_at": "2010-11-22T20:22:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2090",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2090#issuecomment-13526",
+    "user": "was"
+}
+```
 
 From James Pfeiffer  from a Math 581d homework problem.
 

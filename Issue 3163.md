@@ -1,11 +1,21 @@
 # Issue 3163: Problems with echelon_form over ComplexField
 
-Issue created by migration from https://trac.sagemath.org/ticket/3163
-
-Original creator: dunfield
-
-Original creation time: 2008-05-12 00:47:17
-
+archive/issues_003163.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  mhansen\n\nFor certain well-conditioned floating-point matrices with entries in ComplexField, echelon_form can return matrices which are not in (approximate) echelon_form.   This breaks methods like rank(), right_solve() and inverse().  I've attached a sample matrix which illustrates this \n\n```\nsage: A = load(\"./prob-sol.sobj\")\nsage: A.parent()\nFull MatrixSpace of 5 by 5 dense matrices over Complex Field with 1010 bits of precision\nsage: matrix(CDF, A.echelon_form())\n\n[                              1.0                                 0                            -3.5*I                                 0                    -20.0 + 12.0*I]\n[                                0                               1.0                               1.0                                 0                      -4.0 + 1.0*I]\n[                                0                                 0        1.0 + 4.55695126222e-305*I                                 0 -2.33592727654 + 0.497614402099*I]\n[                                0                                 0                              -4.0                               1.0                              -2.0]\n[                                0                                 0                              -2.0                                 0                                 0]\nsage: CC(A.det())\n76.1312551138321 - 5.28799080668534*I\nsage: A.rank()\n4\n```\n\n\n\nThis bug is probably related to #2256 and #1132 but there the problem with echelon_form is more subtle (1 entries on the diagonal which aren't quite 1), which is why I opened this new ticket.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/3163\n\n",
+    "created_at": "2008-05-12T00:47:17Z",
+    "labels": [
+        "linear algebra",
+        "major",
+        "bug"
+    ],
+    "title": "Problems with echelon_form over ComplexField",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3163",
+    "user": "dunfield"
+}
+```
 Assignee: was
 
 CC:  mhansen
@@ -33,9 +43,24 @@ sage: A.rank()
 
 This bug is probably related to #2256 and #1132 but there the problem with echelon_form is more subtle (1 entries on the diagonal which aren't quite 1), which is why I opened this new ticket.  
 
+Issue created by migration from https://trac.sagemath.org/ticket/3163
+
+
+
+
 
 ---
 
-Comment by dunfield created at 2008-05-12 00:53:15
+archive/issue_comments_021938.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2008-05-12T00:53:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3163",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3163#issuecomment-21938",
+    "user": "dunfield"
+}
+```
 
 Resolution: duplicate

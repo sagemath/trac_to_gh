@@ -1,11 +1,21 @@
 # Issue 9200: Add left and right directions to limits
 
-Issue created by migration from https://trac.sagemath.org/ticket/9200
-
-Original creator: DanaErnst
-
-Original creation time: 2010-06-10 02:26:53
-
+archive/issues_009200.json:
+```json
+{
+    "body": "Assignee: burcin\n\nCC:  jason rbeezer\n\n1. Add `from_left` and `from_right` for `dir` keyword.\n\n2. Improve error message `dir` keyword.\n\n3. Add doctests and tests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9200\n\n",
+    "created_at": "2010-06-10T02:26:53Z",
+    "labels": [
+        "calculus",
+        "minor",
+        "enhancement"
+    ],
+    "title": "Add left and right directions to limits",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9200",
+    "user": "DanaErnst"
+}
+```
 Assignee: burcin
 
 CC:  jason rbeezer
@@ -16,99 +26,252 @@ CC:  jason rbeezer
 
 3. Add doctests and tests.
 
+Issue created by migration from https://trac.sagemath.org/ticket/9200
+
+
+
+
 
 ---
+
+archive/issue_comments_086062.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-06-10T02:47:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9200",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9200#issuecomment-86062",
+    "user": "DanaErnst"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by DanaErnst created at 2010-06-10 02:53:02
+archive/issue_comments_086063.json:
+```json
+{
+    "body": "Patch passes tests in `sage/calculus`.  Need to test full Sage library.",
+    "created_at": "2010-06-10T02:53:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9200",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9200#issuecomment-86063",
+    "user": "DanaErnst"
+}
+```
 
 Patch passes tests in `sage/calculus`.  Need to test full Sage library.
 
 
+
 ---
 
-Comment by DanaErnst created at 2010-07-22 19:40:22
+archive/issue_comments_086064.json:
+```json
+{
+    "body": "stand alone patch",
+    "created_at": "2010-07-22T19:40:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9200",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9200#issuecomment-86064",
+    "user": "DanaErnst"
+}
+```
 
 stand alone patch
 
 
+
 ---
+
+archive/issue_comments_086065.json:
+```json
+{
+    "body": "Attachment\n\nRebased for version 4.5.1, apply only v2 patch.",
+    "created_at": "2010-07-22T19:42:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9200",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9200#issuecomment-86065",
+    "user": "DanaErnst"
+}
+```
 
 Attachment
 
 Rebased for version 4.5.1, apply only v2 patch.
 
 
+
 ---
 
-Comment by DanaErnst created at 2010-07-23 12:54:51
+archive/issue_comments_086066.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-07-23T12:54:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9200",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9200#issuecomment-86066",
+    "user": "DanaErnst"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by DanaErnst created at 2010-07-23 12:54:51
+archive/issue_comments_086067.json:
+```json
+{
+    "body": "* All tests passed on version 4.5.1 (running OSX 10.6)\n  * HTML & PDF reference built without problem",
+    "created_at": "2010-07-23T12:54:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9200",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9200#issuecomment-86067",
+    "user": "DanaErnst"
+}
+```
 
 * All tests passed on version 4.5.1 (running OSX 10.6)
- * HTML & PDF reference built without problem
+  * HTML & PDF reference built without problem
+
 
 
 ---
 
-Comment by rbeezer created at 2010-07-24 00:13:07
+archive/issue_comments_086068.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-07-24T00:13:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9200",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9200#issuecomment-86068",
+    "user": "rbeezer"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by rbeezer created at 2010-07-24 00:13:07
+archive/issue_comments_086069.json:
+```json
+{
+    "body": "Applies, builds, passes all tests, and docs look fine; on 4.5.2.alpha0.  So this is a positive review.\n\nNice job on your first contribution!",
+    "created_at": "2010-07-24T00:13:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9200",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9200#issuecomment-86069",
+    "user": "rbeezer"
+}
+```
 
 Applies, builds, passes all tests, and docs look fine; on 4.5.2.alpha0.  So this is a positive review.
 
 Nice job on your first contribution!
 
 
+
 ---
 
-Comment by burcin created at 2010-07-24 21:24:10
+archive/issue_comments_086070.json:
+```json
+{
+    "body": "Do we really need new keywords for this? And if we do, should it be `from_{right,left}`?\n\nI think a user interface decision like this needs more input from other developers. I'll post to sage-devel with this question.",
+    "created_at": "2010-07-24T21:24:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9200",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9200#issuecomment-86070",
+    "user": "burcin"
+}
+```
 
 Do we really need new keywords for this? And if we do, should it be `from_{right,left}`?
 
 I think a user interface decision like this needs more input from other developers. I'll post to sage-devel with this question.
 
 
+
 ---
 
-Comment by burcin created at 2010-07-24 21:24:10
+archive/issue_comments_086071.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_info.",
+    "created_at": "2010-07-24T21:24:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9200",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9200#issuecomment-86071",
+    "user": "burcin"
+}
+```
 
 Changing status from positive_review to needs_info.
 
 
+
 ---
 
-Comment by DanaErnst created at 2010-07-25 02:35:50
+archive/issue_comments_086072.json:
+```json
+{
+    "body": "The idea for this came up during one of the online sessions for the MAA PREP Workshop for Sage (organized by Rob Beezer, Jason Grout, and Karl-Dieter Crisman) that I am currently enrolled in.  While we were discussing calculus during one of our workshop sessions, one of the participants remarked that most students learn one-sided limits as \"from the left\" and \"from the right.\"  Rob, Jason, and Karl-Dieter knew that I was interested in getting involved in Sage development and remarked that I could add that this terminology to Sage if I was interested.  I figured that it was an easy way to get my feet wet.\n\nI have been using Sage for almost a year, so I would consider myself a newbie.  I'm not personally attached to this patch and if others feel that it is unnecessary bloat, then my feelings won't be hurt.",
+    "created_at": "2010-07-25T02:35:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9200",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9200#issuecomment-86072",
+    "user": "DanaErnst"
+}
+```
 
 The idea for this came up during one of the online sessions for the MAA PREP Workshop for Sage (organized by Rob Beezer, Jason Grout, and Karl-Dieter Crisman) that I am currently enrolled in.  While we were discussing calculus during one of our workshop sessions, one of the participants remarked that most students learn one-sided limits as "from the left" and "from the right."  Rob, Jason, and Karl-Dieter knew that I was interested in getting involved in Sage development and remarked that I could add that this terminology to Sage if I was interested.  I figured that it was an easy way to get my feet wet.
 
 I have been using Sage for almost a year, so I would consider myself a newbie.  I'm not personally attached to this patch and if others feel that it is unnecessary bloat, then my feelings won't be hurt.
 
 
+
 ---
+
+archive/issue_comments_086073.json:
+```json
+{
+    "body": "Attachment\n\nadd deprecation warnings",
+    "created_at": "2010-09-08T21:13:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9200",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9200#issuecomment-86073",
+    "user": "burcin"
+}
+```
 
 Attachment
 
 add deprecation warnings
 
 
+
 ---
 
-Comment by burcin created at 2010-09-08 21:19:25
+archive/issue_comments_086074.json:
+```json
+{
+    "body": "This was discussed in the thread:\n\nhttp://groups.google.com/group/sage-devel/t/9dd6dfe26f09be93\n\nThe resulting decision was to deprecate 'above' and 'below' and add support for '+', '-', 'right', and 'left'.\n\nattachment:trac_9200-deprecation.patch makes the necessary changes, on top of Dana's patch.\n\nPatches to be applied in this order:\n* attachment:trac_9200-left-right-limits-v2.patch\n* attachment:trac_9200-deprecation.patch",
+    "created_at": "2010-09-08T21:19:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9200",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9200#issuecomment-86074",
+    "user": "burcin"
+}
+```
 
 This was discussed in the thread:
 
@@ -119,20 +282,42 @@ The resulting decision was to deprecate 'above' and 'below' and add support for 
 attachment:trac_9200-deprecation.patch makes the necessary changes, on top of Dana's patch.
 
 Patches to be applied in this order:
- * attachment:trac_9200-left-right-limits-v2.patch
- * attachment:trac_9200-deprecation.patch
+* attachment:trac_9200-left-right-limits-v2.patch
+* attachment:trac_9200-deprecation.patch
+
 
 
 ---
 
-Comment by burcin created at 2010-09-08 21:19:25
+archive/issue_comments_086075.json:
+```json
+{
+    "body": "Changing status from needs_info to needs_review.",
+    "created_at": "2010-09-08T21:19:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9200",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9200#issuecomment-86075",
+    "user": "burcin"
+}
+```
 
 Changing status from needs_info to needs_review.
 
 
+
 ---
 
-Comment by DanaErnst created at 2010-09-09 00:00:58
+archive/issue_comments_086076.json:
+```json
+{
+    "body": "Burcin,\n\nThanks for picking up the ball on this.  I was planning on attacking this in a few weeks after the initial craziness of my semester settled down.  Now, I get to cross something off my todo list:)\n\nDana",
+    "created_at": "2010-09-09T00:00:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9200",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9200#issuecomment-86076",
+    "user": "DanaErnst"
+}
+```
 
 Burcin,
 
@@ -141,14 +326,38 @@ Thanks for picking up the ball on this.  I was planning on attacking this in a f
 Dana
 
 
+
 ---
+
+archive/issue_comments_086077.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-09-09T05:58:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9200",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9200#issuecomment-86077",
+    "user": "rbeezer"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by rbeezer created at 2010-09-09 06:02:03
+archive/issue_comments_086078.json:
+```json
+{
+    "body": "I noticed while reviewing this that there are two \"TEST\" headers in the docstring for limit().  So I removed the second one and uploaded a new version of the \"documentation\" patch - only change is the removal of the header (still has Burcin's name on it too).\n\nI'm running tests overnight and then plan to give this a positive review.  \n\nBurcin - I'll wait for you to check-off on the one change to your patch.\n\nRob",
+    "created_at": "2010-09-09T06:02:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9200",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9200#issuecomment-86078",
+    "user": "rbeezer"
+}
+```
 
 I noticed while reviewing this that there are two "TEST" headers in the docstring for limit().  So I removed the second one and uploaded a new version of the "documentation" patch - only change is the removal of the header (still has Burcin's name on it too).
 
@@ -159,16 +368,38 @@ Burcin - I'll wait for you to check-off on the one change to your patch.
 Rob
 
 
+
 ---
 
-Comment by burcin created at 2010-09-09 07:31:38
+archive/issue_comments_086079.json:
+```json
+{
+    "body": "Thanks for taking care of the `TEST` headers Rob. I'm ok with your change. Looking forward to that positive review. :)",
+    "created_at": "2010-09-09T07:31:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9200",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9200#issuecomment-86079",
+    "user": "burcin"
+}
+```
 
 Thanks for taking care of the `TEST` headers Rob. I'm ok with your change. Looking forward to that positive review. :)
 
 
+
 ---
 
-Comment by rbeezer created at 2010-09-09 20:45:43
+archive/issue_comments_086080.json:
+```json
+{
+    "body": "Thanks, Burcin, for the go-ahead and for prompting the discussion on this one.  Builds (on 4.5.2), docs look good, passes all tests (sage -testall) and is consistent with discussion on sage-devel.  Positive review.\n\nCongrats to Dana Ernst on his first contribution.  Next one will probably engender less discussion.  ;-)\n\n## Release Manager\n\n Patches to be applied in this order:\n* attachment:trac_9200-left-right-limits-v2.patch\n* attachment:trac_9200-deprecation-v2.patch\n\nDana Ernst is first-time contributor (for release notes).",
+    "created_at": "2010-09-09T20:45:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9200",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9200#issuecomment-86080",
+    "user": "rbeezer"
+}
+```
 
 Thanks, Burcin, for the go-ahead and for prompting the discussion on this one.  Builds (on 4.5.2), docs look good, passes all tests (sage -testall) and is consistent with discussion on sage-devel.  Positive review.
 
@@ -177,21 +408,43 @@ Congrats to Dana Ernst on his first contribution.  Next one will probably engend
 ## Release Manager
 
  Patches to be applied in this order:
-  * attachment:trac_9200-left-right-limits-v2.patch
-  * attachment:trac_9200-deprecation-v2.patch
+* attachment:trac_9200-left-right-limits-v2.patch
+* attachment:trac_9200-deprecation-v2.patch
 
 Dana Ernst is first-time contributor (for release notes).
 
 
+
 ---
 
-Comment by rbeezer created at 2010-09-09 20:45:43
+archive/issue_comments_086081.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-09-09T20:45:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9200",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9200#issuecomment-86081",
+    "user": "rbeezer"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-15 11:13:39
+archive/issue_comments_086082.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-09-15T11:13:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9200",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9200#issuecomment-86082",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed

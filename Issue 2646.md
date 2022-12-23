@@ -1,11 +1,21 @@
 # Issue 2646: create plot_vector_field3d function
 
-Issue created by migration from https://trac.sagemath.org/ticket/2646
-
-Original creator: jason
-
-Original creation time: 2008-03-22 15:58:11
-
+archive/issues_002646.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  kcrisman rbeezer\n\nHere is an initial version.\n\n\n```\ndef plot_vector_field3d(vec, xrange, yrange, zrange, plot_points=5, **kwds):\n    xvar, xmin, xmax = xrange\n    yvar, ymin, ymax = yrange\n    zvar, zmin, zmax = zrange\n    ff = SR(vec[0])._fast_float_(xvar, yvar, zvar)\n    gg = SR(vec[1])._fast_float_(xvar, yvar, zvar)\n    hh = SR(vec[2])._fast_float_(xvar, yvar, zvar)\n    xpoints = [xmin..xmax, step=float(xmax-xmin)/(plot_points-1)][0:plot_points]\n    ypoints = [ymin..ymax, step=float(ymax-ymin)/(plot_points-1)][0:plot_points]\n    zpoints = [zmin..zmax, step=float(zmax-zmin)/(plot_points-1)][0:plot_points]\n    points = [(i,j,k) for i in xpoints for j in ypoints for k in zpoints]\n    vectors = [(ff(i,j,k), gg(i,j,k), hh(i,j,k)) for i,j,k in points]\n    max_len = max([math.sqrt(i^2+j^2+k^2) for i,j,k in vectors])\n    scaled_vectors = [(i/max_len, j/max_len, k/max_len) for i,j,k in vectors] \n    return sum([arrow3d( point, (point[0]+vector[0], point[1]+vector[1], point[2]+vector[2]), **kwds) for point,vector in zip(points, scaled_vectors)])\n```\n\n\nIt is used similar to the plot_vector_field function:\n\n\n```\nsage: var('x y z')\nsage: plot_vector_field3d((sin(x),cos(y), x*z), (x,0,3), (y,0,3), (z,0,3), plot_points=6)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2646\n\n",
+    "created_at": "2008-03-22T15:58:11Z",
+    "labels": [
+        "graphics",
+        "major",
+        "enhancement"
+    ],
+    "title": "create plot_vector_field3d function",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2646",
+    "user": "jason"
+}
+```
 Assignee: was
 
 CC:  kcrisman rbeezer
@@ -42,10 +52,25 @@ sage: plot_vector_field3d((sin(x),cos(y), x*z), (x,0,3), (y,0,3), (z,0,3), plot_
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2646
+
+
+
+
 
 ---
 
-Comment by robertwb created at 2008-03-22 18:01:52
+archive/issue_comments_018189.json:
+```json
+{
+    "body": "Looks good, but it would be much faster to use the line3d function, which produces a native arrow rather than triangulating one. For example: \n\n\n```\nline3d([(0,0,0), (1,2,3)], thickness=2, arrow_head=True)\n```\n\n\nperhaps the arrow3d command should be updated to use this when a thickness (as opposed to a radius) is specified.",
+    "created_at": "2008-03-22T18:01:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2646",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2646#issuecomment-18189",
+    "user": "robertwb"
+}
+```
 
 Looks good, but it would be much faster to use the line3d function, which produces a native arrow rather than triangulating one. For example: 
 
@@ -58,18 +83,40 @@ line3d([(0,0,0), (1,2,3)], thickness=2, arrow_head=True)
 perhaps the arrow3d command should be updated to use this when a thickness (as opposed to a radius) is specified.
 
 
+
 ---
 
-Comment by jason created at 2009-03-12 07:45:09
+archive/issue_comments_018190.json:
+```json
+{
+    "body": "See also: http://sagenb.org/home/pub/216/\n\nThat code appears to be better.",
+    "created_at": "2009-03-12T07:45:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2646",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2646#issuecomment-18190",
+    "user": "jason"
+}
+```
 
 See also: http://sagenb.org/home/pub/216/
 
 That code appears to be better.
 
 
+
 ---
 
-Comment by jason created at 2009-04-23 20:17:31
+archive/issue_comments_018191.json:
+```json
+{
+    "body": "I rewrote my code above too.  Now I just plot the vector, since #5450 makes sure that plotting a vector actually plots line3d:\n\n\n```\ndef plot_vector_field3d(vec, xrange, yrange, zrange, plot_points=[5,5,5], **kwds):\n    xvar, xmin, xmax = xrange\n    yvar, ymin, ymax = yrange\n    zvar, zmin, zmax = zrange\n    if not isinstance(plot_points, (list, tuple)):\n        plot_points = [plot_points]*3\n    ff, gg, hh = fast_float(vec, xvar, yvar, zvar)\n    xpoints = [xmin..xmax, step=float(xmax-xmin)/(plot_points[0]-1)][0:plot_points[0]]\n    ypoints = [ymin..ymax, step=float(ymax-ymin)/(plot_points[1]-1)][0:plot_points[1]]\n    zpoints = [zmin..zmax, step=float(zmax-zmin)/(plot_points[2]-1)][0:plot_points[2]]\n    points = [vector((i,j,k)) for i in xpoints for j in ypoints for k in zpoints]\n    vectors = [vector((ff(*point), gg(*point), hh(*point))) for point in points]\n    # scale the vectors\n    max_len = max(v.norm() for v in vectors)\n    scaled_vectors = [v/max_len for v in vectors] \n    return sum([plot(v,**kwds).translate(p) for v,p in zip(scaled_vectors, points)])\n```\n",
+    "created_at": "2009-04-23T20:17:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2646",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2646#issuecomment-18191",
+    "user": "jason"
+}
+```
 
 I rewrote my code above too.  Now I just plot the vector, since #5450 makes sure that plotting a vector actually plots line3d:
 
@@ -95,9 +142,20 @@ def plot_vector_field3d(vec, xrange, yrange, zrange, plot_points=[5,5,5], **kwds
 
 
 
+
 ---
 
-Comment by jason created at 2009-04-23 20:23:43
+archive/issue_comments_018192.json:
+```json
+{
+    "body": "Here's another version that offers the option of centering the arrows on the point.\n\n\n```\ndef plot_vector_field3d(vec, xrange, yrange, zrange, plot_points=[5,5,5], center_arrows=False,**kwds):\n    xvar, xmin, xmax = xrange\n    yvar, ymin, ymax = yrange\n    zvar, zmin, zmax = zrange\n    if not isinstance(plot_points, (list, tuple)):\n        plot_points = [plot_points]*3\n    ff, gg, hh = fast_float(vec, xvar, yvar, zvar)\n    xpoints = [xmin..xmax, step=float(xmax-xmin)/(plot_points[0]-1)][0:plot_points[0]]\n    ypoints = [ymin..ymax, step=float(ymax-ymin)/(plot_points[1]-1)][0:plot_points[1]]\n    zpoints = [zmin..zmax, step=float(zmax-zmin)/(plot_points[2]-1)][0:plot_points[2]]\n    points = [vector((i,j,k)) for i in xpoints for j in ypoints for k in zpoints]\n    vectors = [vector((ff(*point), gg(*point), hh(*point))) for point in points]\n    # scale the vectors\n    max_len = max(v.norm() for v in vectors)\n    scaled_vectors = [v/max_len for v in vectors]\n    if center_arrows:\n        return sum([plot(v,**kwds).translate(p-v/2) for v,p in zip(scaled_vectors, points)])\n    else:\n        return sum([plot(v,**kwds).translate(p) for v,p in zip(scaled_vectors, points)])\n```\n\n\nI think the only other thing that the function in the worksheet linked above does is provide an option to make the arrows thicker (based on the scaling, I believe).",
+    "created_at": "2009-04-23T20:23:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2646",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2646#issuecomment-18192",
+    "user": "jason"
+}
+```
 
 Here's another version that offers the option of centering the arrows on the point.
 
@@ -128,9 +186,20 @@ def plot_vector_field3d(vec, xrange, yrange, zrange, plot_points=[5,5,5], center
 I think the only other thing that the function in the worksheet linked above does is provide an option to make the arrows thicker (based on the scaling, I believe).
 
 
+
 ---
 
-Comment by jason created at 2009-10-29 04:03:14
+archive/issue_comments_018193.json:
+```json
+{
+    "body": "Even shorter, now that we have a better plotting base:\n\n\n```\ndef plot_vector_field3d(vec, xrange, yrange, zrange, plot_points=[5,5,5], center_arrows=False,**kwds):\n    from sage.plot.misc import setup_for_eval_on_grid\n    (ff,gg,hh), ranges = setup_for_eval_on_grid(vec, [xrange, yrange, zrange], plot_points)\n    xpoints, ypoints, zpoints = [srange(*r, include_endpoint=True) for r in ranges]\n    points = [vector((i,j,k)) for i in xpoints for j in ypoints for k in zpoints]\n    vectors = [vector((ff(*point), gg(*point), hh(*point))) for point in points]\n\n    max_len = max(v.norm() for v in vectors)\n    scaled_vectors = [v/max_len for v in vectors]\n\n    if center_arrows:\n        return sum([plot(v,**kwds).translate(p-v/2) for v,p in zip(scaled_vectors, points)])\n    else:\n        return sum([plot(v,**kwds).translate(p) for v,p in zip(scaled_vectors, points)])\n```\n",
+    "created_at": "2009-10-29T04:03:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2646",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2646#issuecomment-18193",
+    "user": "jason"
+}
+```
 
 Even shorter, now that we have a better plotting base:
 
@@ -154,9 +223,20 @@ def plot_vector_field3d(vec, xrange, yrange, zrange, plot_points=[5,5,5], center
 
 
 
+
 ---
 
-Comment by jason created at 2009-10-29 04:31:56
+archive/issue_comments_018194.json:
+```json
+{
+    "body": "Okay, now with coloring based on the norm, using matplotlib colormaps:\n\n\n```\ndef plot_vector_field3d(vec, xrange, yrange, zrange, plot_points=[5,5,5], cmap='jet', center_arrows=False,**kwds):\n    from matplotlib.cm import get_cmap\n    from sage.plot.misc import setup_for_eval_on_grid\n    (ff,gg,hh), ranges = setup_for_eval_on_grid(vec, [xrange, yrange, zrange], plot_points)\n    xpoints, ypoints, zpoints = [srange(*r, include_endpoint=True) for r in ranges]\n    points = [vector((i,j,k)) for i in xpoints for j in ypoints for k in zpoints]\n    vectors = [vector((ff(*point), gg(*point), hh(*point))) for point in points]\n    \n    cm=get_cmap(cmap)\n\n    max_len = max(v.norm() for v in vectors)\n    scaled_vectors = [v/max_len for v in vectors]\n    \n    if center_arrows:\n        return sum([plot(v,color=cm(v.norm()),**kwds).translate(p-v/2) for v,p in zip(scaled_vectors, points)])\n    else:\n        return sum([plot(v,color=cm(v.norm()),**kwds).translate(p) for v,p in zip(scaled_vectors, points)])\n```\n",
+    "created_at": "2009-10-29T04:31:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2646",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2646#issuecomment-18194",
+    "user": "jason"
+}
+```
 
 Okay, now with coloring based on the norm, using matplotlib colormaps:
 
@@ -183,9 +263,20 @@ def plot_vector_field3d(vec, xrange, yrange, zrange, plot_points=[5,5,5], cmap='
 
 
 
+
 ---
 
-Comment by jason created at 2009-10-29 04:47:54
+archive/issue_comments_018195.json:
+```json
+{
+    "body": "One more try, so that colors can take a single matplotlib color specifier, a list of color specifiers, or a name of a matplotlib cmap.\n\n\n```\ndef plot_vector_field3d(vec, xrange, yrange, zrange, plot_points=[5,5,5], colors='jet', center_arrows=False,**kwds):\n    from matplotlib.cm import get_cmap\n    from matplotlib.colors import ListedColormap\n    from sage.plot.misc import setup_for_eval_on_grid\n    (ff,gg,hh), ranges = setup_for_eval_on_grid(vec, [xrange, yrange, zrange], plot_points)\n    xpoints, ypoints, zpoints = [srange(*r, include_endpoint=True) for r in ranges]\n    points = [vector((i,j,k)) for i in xpoints for j in ypoints for k in zpoints]\n    vectors = [vector((ff(*point), gg(*point), hh(*point))) for point in points]\n    \n    try:\n        cm=get_cmap(colors)\n        assert(cm is not None)\n    except:\n        if not isinstance(colors, (list, tuple)):\n            colors=[colors]\n        cm=ListedColormap(colors)\n                \n    max_len = max(v.norm() for v in vectors)\n    scaled_vectors = [v/max_len for v in vectors]\n    \n    if center_arrows:\n        return sum([plot(v,color=cm(v.norm()),**kwds).translate(p-v/2) for v,p in zip(scaled_vectors, points)])\n    else:\n        return sum([plot(v,color=cm(v.norm()),**kwds).translate(p) for v,p in zip(scaled_vectors, points)])\n```\n",
+    "created_at": "2009-10-29T04:47:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2646",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2646#issuecomment-18195",
+    "user": "jason"
+}
+```
 
 One more try, so that colors can take a single matplotlib color specifier, a list of color specifiers, or a name of a matplotlib cmap.
 
@@ -219,43 +310,111 @@ def plot_vector_field3d(vec, xrange, yrange, zrange, plot_points=[5,5,5], colors
 
 
 
+
 ---
 
-Comment by jason created at 2009-10-29 04:48:01
+archive/issue_comments_018196.json:
+```json
+{
+    "body": "Changing status from new to needs_work.",
+    "created_at": "2009-10-29T04:48:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2646",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2646#issuecomment-18196",
+    "user": "jason"
+}
+```
 
 Changing status from new to needs_work.
 
 
+
 ---
+
+archive/issue_comments_018197.json:
+```json
+{
+    "body": "Attachment\n\nFinally, a patch!",
+    "created_at": "2009-10-29T06:29:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2646",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2646#issuecomment-18197",
+    "user": "jason"
+}
+```
 
 Attachment
 
 Finally, a patch!
 
 
+
 ---
 
-Comment by jason created at 2009-10-29 06:29:00
+archive/issue_comments_018198.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2009-10-29T06:29:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2646",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2646#issuecomment-18198",
+    "user": "jason"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by mhampton created at 2009-10-29 19:02:06
+archive/issue_comments_018199.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-10-29T19:02:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2646",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2646#issuecomment-18199",
+    "user": "mhampton"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mhampton created at 2009-10-29 19:02:06
+archive/issue_comments_018200.json:
+```json
+{
+    "body": "Very nice, positive review.  This is great timing since I am about to teach vector fields in a week or two.",
+    "created_at": "2009-10-29T19:02:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2646",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2646#issuecomment-18200",
+    "user": "mhampton"
+}
+```
 
 Very nice, positive review.  This is great timing since I am about to teach vector fields in a week or two.
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-31 05:18:14
+archive/issue_comments_018201.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-10-31T05:18:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2646",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2646#issuecomment-18201",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

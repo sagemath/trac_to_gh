@@ -1,37 +1,84 @@
 # Issue 6273: Improve random_element for number field orders and ideals (easy)
 
-Issue created by migration from https://trac.sagemath.org/ticket/6273
-
-Original creator: davidloeffler
-
-Original creation time: 2009-06-13 10:36:05
-
+archive/issues_006273.json:
+```json
+{
+    "body": "Assignee: was\n\nAt the moment, random_element for number field orders returns a random integer coerced into the order, which isn't very useful. A much better solution would be to use the random_element method of the underlying free ZZ-module. \n\nMore generally, one could ask for the same functionality for fractional ideals (and the above would be the special case for the ideal (1).)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6273\n\n",
+    "created_at": "2009-06-13T10:36:05Z",
+    "labels": [
+        "number theory",
+        "major",
+        "bug"
+    ],
+    "title": "Improve random_element for number field orders and ideals (easy)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6273",
+    "user": "davidloeffler"
+}
+```
 Assignee: was
 
 At the moment, random_element for number field orders returns a random integer coerced into the order, which isn't very useful. A much better solution would be to use the random_element method of the underlying free ZZ-module. 
 
 More generally, one could ask for the same functionality for fractional ideals (and the above would be the special case for the ideal (1).)
 
+Issue created by migration from https://trac.sagemath.org/ticket/6273
+
+
+
+
 
 ---
 
-Comment by cremona created at 2009-06-13 19:44:06
+archive/issue_comments_050104.json:
+```json
+{
+    "body": "I have implemented this.  using the random_element() function for ZZ and integral bases.  It works for absolute and relative orders and ideals.\n\nI started out using the random_element() function for the module class, but that did not work in the relative situation.  It is a little strange that the classes for orders and ideals do not derive from free ZZ-modules.",
+    "created_at": "2009-06-13T19:44:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6273",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6273#issuecomment-50104",
+    "user": "cremona"
+}
+```
 
 I have implemented this.  using the random_element() function for ZZ and integral bases.  It works for absolute and relative orders and ideals.
 
 I started out using the random_element() function for the module class, but that did not work in the relative situation.  It is a little strange that the classes for orders and ideals do not derive from free ZZ-modules.
 
 
+
 ---
 
-Comment by cremona created at 2009-06-13 19:44:26
+archive/issue_comments_050105.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"number field ideal order\".",
+    "created_at": "2009-06-13T19:44:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6273",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6273#issuecomment-50105",
+    "user": "cremona"
+}
+```
 
 Changing keywords from "" to "number field ideal order".
 
 
+
 ---
 
-Comment by was created at 2009-06-14 10:30:39
+archive/issue_comments_050106.json:
+```json
+{
+    "body": "REVIEW:\n\nI think it would be better to do\n\n```\n def random_element(self, *args, **kwds)\n```\n\nthen in the docstring say that the inputs are identical to ZZ.random_element, whatever those are.  This will if ZZ.random_element is ever improved, changed, or extended in any way (and let's hope it is), then this docstring won't have to change. \n\nThen in the call to ZZ.random_element, just do ZZ.random_element(*args, **kwds).  This shorter and more robust.\n\n -- William",
+    "created_at": "2009-06-14T10:30:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6273",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6273#issuecomment-50106",
+    "user": "was"
+}
+```
 
 REVIEW:
 
@@ -48,9 +95,20 @@ Then in the call to ZZ.random_element, just do ZZ.random_element(*args, **kwds).
  -- William
 
 
+
 ---
 
-Comment by cremona created at 2009-06-14 15:36:08
+archive/issue_comments_050107.json:
+```json
+{
+    "body": "Replying to [comment:3 was]:\n> REVIEW:\n> \n> I think it would be better to do\n> {{{\n>  def random_element(self, *args, **kwds)\n> }}}\n> then in the docstring say that the inputs are identical to ZZ.random_element, whatever those are.  This will if ZZ.random_element is ever improved, changed, or extended in any way (and let's hope it is), then this docstring won't have to change. \n> \n> Then in the call to ZZ.random_element, just do ZZ.random_element(*args, **kwds).  This shorter and more robust.\n> \n>  -- William\n\nOK, I'll do that.  John",
+    "created_at": "2009-06-14T15:36:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6273",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6273#issuecomment-50107",
+    "user": "cremona"
+}
+```
 
 Replying to [comment:3 was]:
 > REVIEW:
@@ -68,28 +126,76 @@ Replying to [comment:3 was]:
 OK, I'll do that.  John
 
 
+
 ---
+
+archive/issue_comments_050108.json:
+```json
+{
+    "body": "Attachment\n\nThe revised patch does what was asked for in the review!",
+    "created_at": "2009-06-14T15:44:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6273",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6273#issuecomment-50108",
+    "user": "cremona"
+}
+```
 
 Attachment
 
 The revised patch does what was asked for in the review!
 
 
+
 ---
 
-Comment by ncalexan created at 2009-06-15 20:57:10
+archive/issue_comments_050109.json:
+```json
+{
+    "body": "In the relative case, the parents are wrong.  I am fixing this right now.",
+    "created_at": "2009-06-15T20:57:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6273",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6273#issuecomment-50109",
+    "user": "ncalexan"
+}
+```
 
 In the relative case, the parents are wrong.  I am fixing this right now.
 
 
+
 ---
 
-Comment by cremona created at 2009-06-15 20:58:43
+archive/issue_comments_050110.json:
+```json
+{
+    "body": "Sorry about that.  I'll review your fix as soon as I can.  John",
+    "created_at": "2009-06-15T20:58:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6273",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6273#issuecomment-50110",
+    "user": "cremona"
+}
+```
 
 Sorry about that.  I'll review your fix as soon as I can.  John
 
 
+
 ---
+
+archive/issue_comments_050111.json:
+```json
+{
+    "body": "Attachment\n\nThe new patch sorts out the parent problem ok, with suitable new doctests.  I note that you now delegate the random function for orders to that of ideals -- this means that the new code is *not* used for non-maximal order, unfortunately.  But then the same was true for my version.\n\nSo I would have given this a positive review, while noting that at some point non-maximal orders will need to be dealt with too.\n\nUnfortunately:\n\n```\nsage -t  \"devel/sage-6273/sage/rings/number_field/number_field_ideal.py\"\n**********************************************************************\nFile \"/home/john/sage-4.0.2.rc0/devel/sage-6273/sage/rings/number_field/number_field_ideal.py\", line 1045:\n    sage: I.basis()\nExpected:\n    [3, -a + 1, (-3/2*b - 1497/2)*a, (-1/2*b - 499/2)*a - b - 499]\nGot:\n    [3, a + 2, (3/2*b + 1497/2)*a, (b + 499)*a - b - 499]\n```\n\nso it's still \"needs work\"",
+    "created_at": "2009-06-15T21:53:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6273",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6273#issuecomment-50111",
+    "user": "cremona"
+}
+```
 
 Attachment
 
@@ -113,9 +219,20 @@ Got:
 so it's still "needs work"
 
 
+
 ---
 
-Comment by ncalexan created at 2009-06-15 22:38:02
+archive/issue_comments_050112.json:
+```json
+{
+    "body": "Replying to [comment:8 cremona]:\n> The new patch sorts out the parent problem ok, with suitable new doctests.  I note that you now delegate the random function for orders to that of ideals -- this means that the new code is *not* used for non-maximal order, unfortunately.  But then the same was true for my version.\n> \n> So I would have given this a positive review, while noting that at some point non-maximal orders will need to be dealt with too.\n> \n> Unfortunately:\n> {{{\n> sage -t  \"devel/sage-6273/sage/rings/number_field/number_field_ideal.py\"\n> **********************************************************************\n> File \"/home/john/sage-4.0.2.rc0/devel/sage-6273/sage/rings/number_field/number_field_ideal.py\", line 1045:\n>     sage: I.basis()\n> Expected:\n>     [3, -a + 1, (-3/2*b - 1497/2)*a, (-1/2*b - 499/2)*a - b - 499]\n> Got:\n>     [3, a + 2, (3/2*b + 1497/2)*a, (b + 499)*a - b - 499]\n> }}}\n> so it's still \"needs work\"\n\nLet's just comment out both basis lines (since basis works, and it's essentially random).  Can you make non-maximal orders work with the previous code?  If so, do it and I will review.",
+    "created_at": "2009-06-15T22:38:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6273",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6273#issuecomment-50112",
+    "user": "ncalexan"
+}
+```
 
 Replying to [comment:8 cremona]:
 > The new patch sorts out the parent problem ok, with suitable new doctests.  I note that you now delegate the random function for orders to that of ideals -- this means that the new code is *not* used for non-maximal order, unfortunately.  But then the same was true for my version.
@@ -138,31 +255,77 @@ Replying to [comment:8 cremona]:
 Let's just comment out both basis lines (since basis works, and it's essentially random).  Can you make non-maximal orders work with the previous code?  If so, do it and I will review.
 
 
+
 ---
+
+archive/issue_comments_050113.json:
+```json
+{
+    "body": "Attachment\n\nReplaces both previous",
+    "created_at": "2009-06-16T09:51:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6273",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6273#issuecomment-50113",
+    "user": "cremona"
+}
+```
 
 Attachment
 
 Replaces both previous
 
 
+
 ---
 
-Comment by cremona created at 2009-06-16 09:54:45
+archive/issue_comments_050114.json:
+```json
+{
+    "body": "I removed the lines showing the bases (which were not part of the test exactly, just there for illustration).  I reinstated my original for orders, since it works for non-maximal orders, and added a new doctest to show that;  but I kept in the additional doctests from the review patch to show that theparent are now correct (which I also borrowed from the review patch).\n\nThis one tests ok on both 32- and 64-bit, and I hope contains the best of both earlier patches with none of the problems!  And in view of the trouble this took to get right, I removed the \"(easy)\" from the ticket's title!",
+    "created_at": "2009-06-16T09:54:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6273",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6273#issuecomment-50114",
+    "user": "cremona"
+}
+```
 
 I removed the lines showing the bases (which were not part of the test exactly, just there for illustration).  I reinstated my original for orders, since it works for non-maximal orders, and added a new doctest to show that;  but I kept in the additional doctests from the review patch to show that theparent are now correct (which I also borrowed from the review patch).
 
 This one tests ok on both 32- and 64-bit, and I hope contains the best of both earlier patches with none of the problems!  And in view of the trouble this took to get right, I removed the "(easy)" from the ticket's title!
 
 
+
 ---
 
-Comment by ncalexan created at 2009-06-16 17:54:12
+archive/issue_comments_050115.json:
+```json
+{
+    "body": "I'm a fan!",
+    "created_at": "2009-06-16T17:54:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6273",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6273#issuecomment-50115",
+    "user": "ncalexan"
+}
+```
 
 I'm a fan!
 
 
+
 ---
 
-Comment by rlm created at 2009-06-24 09:59:13
+archive/issue_comments_050116.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-06-24T09:59:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6273",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6273#issuecomment-50116",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed

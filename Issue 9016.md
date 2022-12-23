@@ -1,11 +1,21 @@
 # Issue 9016: make morphisms hashable
 
-Issue created by migration from https://trac.sagemath.org/ticket/9016
-
-Original creator: burcin
-
-Original creation time: 2010-05-22 15:36:30
-
+archive/issues_009016.json:
+```json
+{
+    "body": "Assignee: AlexGhitza\n\nCC:  robertwb\n\nAttached patch makes morphisms hashable in a reasonably fast way by defining the following:\n\n\n```\n    def __hash__(self):\n        return hash((self._domain, self._codomain))\n```\n\n\nIt also defines specialized methods for `sage.rings.morphism.RingHomomorphism_im_gens` and `sage.rings.morphism.RingHomomorphism_from_quotient`.\n\nWhile testing the code for `im_gens`, I fixed a confusing error message in `sage.structure.sequence.Sequence.__hash__()` as well.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9016\n\n",
+    "created_at": "2010-05-22T15:36:30Z",
+    "labels": [
+        "algebra",
+        "major",
+        "bug"
+    ],
+    "title": "make morphisms hashable",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9016",
+    "user": "burcin"
+}
+```
 Assignee: AlexGhitza
 
 CC:  robertwb
@@ -23,22 +33,61 @@ It also defines specialized methods for `sage.rings.morphism.RingHomomorphism_im
 
 While testing the code for `im_gens`, I fixed a confusing error message in `sage.structure.sequence.Sequence.__hash__()` as well.
 
+Issue created by migration from https://trac.sagemath.org/ticket/9016
+
+
+
+
 
 ---
+
+archive/issue_comments_083395.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-05-22T15:38:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9016",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83395",
+    "user": "burcin"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by burcin created at 2010-05-22 15:43:23
+archive/issue_comments_083396.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-05-22T15:43:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9016",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83396",
+    "user": "burcin"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by burcin created at 2010-05-22 15:43:23
+archive/issue_comments_083397.json:
+```json
+{
+    "body": "There seems to be a problem with inheriting `__hash__()` methods. The class `sage.categories.morphism.SetMorphism` derives from `sage.categories.morphism.Morphism` which in turn derives from `sage.categories.map.Map`.\n\nEven after adding a `__hash__()` method to `sage.categories.map.Map`, instances of `SetMorphism` are not hashable:\n\n\n```\nsage: from sage.categories.morphism import SetMorphism\nsage: X.<x> = ZZ[]\nsage: Y = ZZ\nsage: phi = SetMorphism(Hom(X, Y, Rings()), lambda p: p[0])\nsage: hash(phi)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/burcin/sage/sage-4.4.1.alpha2-patched/<ipython console> in <module>()\n\nTypeError: unhashable type: 'sage.categories.morphism.SetMorphism'\n```\n\n\nNote also that `sage.categories.map.Map` derives from `sage.structure.element.Element` which also has a `__hash__()` method.\n\nAny hints?",
+    "created_at": "2010-05-22T15:43:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9016",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83397",
+    "user": "burcin"
+}
+```
 
 There seems to be a problem with inheriting `__hash__()` methods. The class `sage.categories.morphism.SetMorphism` derives from `sage.categories.morphism.Morphism` which in turn derives from `sage.categories.map.Map`.
 
@@ -65,32 +114,76 @@ Note also that `sage.categories.map.Map` derives from `sage.structure.element.El
 Any hints?
 
 
+
 ---
 
-Comment by robertwb created at 2010-05-22 15:51:48
+archive/issue_comments_083398.json:
+```json
+{
+    "body": "`__hash__` must be redefined if `__cmp__` or `__richcmp__` is, as it is an all or none thing with their inheritance. Not my design decision, but that's the way it is. \n\nSee http://docs.python.org/c-api/typeobj.html",
+    "created_at": "2010-05-22T15:51:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9016",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83398",
+    "user": "robertwb"
+}
+```
 
 `__hash__` must be redefined if `__cmp__` or `__richcmp__` is, as it is an all or none thing with their inheritance. Not my design decision, but that's the way it is. 
 
 See http://docs.python.org/c-api/typeobj.html
 
 
+
 ---
 
-Comment by robertwb created at 2010-06-05 09:16:25
+archive/issue_comments_083399.json:
+```json
+{
+    "body": "Changing type from defect to enhancement.",
+    "created_at": "2010-06-05T09:16:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9016",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83399",
+    "user": "robertwb"
+}
+```
 
 Changing type from defect to enhancement.
 
 
+
 ---
 
-Comment by robertwb created at 2010-06-22 20:49:12
+archive/issue_comments_083400.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-06-22T20:49:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9016",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83400",
+    "user": "robertwb"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by davidloeffler created at 2010-07-01 08:12:21
+archive/issue_comments_083401.json:
+```json
+{
+    "body": "This patch causes a doctest failure on vanilla Sage 4.5.alpha1: \n\n```\nsage -t  \"devel/sage-reviewing/sage/modules/fg_pid/fgp_module.py\"\n**********************************************************************\nFile \"/storage/masiao/sage-4.5.alpha1/devel/sage-reviewing/sage/modules/fg_pid/fgp_module.py\", line 383:\n    sage: Q._coerce_map_from_(V.scale(2))\nException raised:\n    Traceback (most recent call last):\n      File \"/storage/masiao/sage-4.5.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/storage/masiao/sage-4.5.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/storage/masiao/sage-4.5.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_7[11]>\", line 1, in <module>\n        Q._coerce_map_from_(V.scale(Integer(2)))###line 383:\n    sage: Q._coerce_map_from_(V.scale(2))\n      File \"/storage/masiao/sage-4.5.alpha1/local/lib/python/site-packages/sage/modules/fg_pid/fgp_module.py\", line 388, in _coerce_map_from_\n        return bool(self._V._coerce_map_from_(S))\n      File \"element.pyx\", line 741, in sage.structure.element.Element.__nonzero__ (sage/structure/element.c:5731)\n      File \"element.pyx\", line 863, in sage.structure.element.Element.__richcmp__ (sage/structure/element.c:7107)\n      File \"element.pyx\", line 835, in sage.structure.element.Element._richcmp (sage/structure/element.c:6989)\n      File \"/storage/masiao/sage-4.5.alpha1/local/lib/python/site-packages/sage/modules/matrix_morphism.py\", line 111, in __cmp__\n        return cmp(self.matrix(), other.matrix())\n      File \"element.pyx\", line 306, in sage.structure.element.Element.__getattr__ (sage/structure/element.c:2632)\n      File \"parent.pyx\", line 268, in sage.structure.parent.getattr_from_other_class (sage/structure/parent.c:2835)\n      File \"parent.pyx\", line 170, in sage.structure.parent.raise_attribute_error (sage/structure/parent.c:2602)\n    AttributeError: 'sage.categories.morphism.CallMorphism' object has no attribute 'matrix'\n**********************************************************************\n1 items had failures:\n   1 of  12 in __main__.example_7\n***Test Failed*** 1 failures.\n```\n",
+    "created_at": "2010-07-01T08:12:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9016",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83401",
+    "user": "davidloeffler"
+}
+```
 
 This patch causes a doctest failure on vanilla Sage 4.5.alpha1: 
 
@@ -129,28 +222,74 @@ Exception raised:
 
 
 
+
 ---
 
-Comment by davidloeffler created at 2010-07-01 08:12:21
+archive/issue_comments_083402.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_work.",
+    "created_at": "2010-07-01T08:12:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9016",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83402",
+    "user": "davidloeffler"
+}
+```
 
 Changing status from positive_review to needs_work.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2010-09-02 10:58:30
+archive/issue_comments_083403.json:
+```json
+{
+    "body": "Changing component from algebra to categories.",
+    "created_at": "2010-09-02T10:58:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9016",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83403",
+    "user": "AlexGhitza"
+}
+```
 
 Changing component from algebra to categories.
 
 
+
 ---
 
-Comment by burcin created at 2010-09-13 10:18:18
+archive/issue_comments_083404.json:
+```json
+{
+    "body": "apply only this patch",
+    "created_at": "2010-09-13T10:18:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9016",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83404",
+    "user": "burcin"
+}
+```
 
 apply only this patch
 
 
+
 ---
+
+archive/issue_comments_083405.json:
+```json
+{
+    "body": "Attachment\n\nReplying to [comment:5 davidloeffler]:\n> This patch causes a doctest failure on vanilla Sage 4.5.alpha1: \n\nI uploaded a new patch which fixes this.\n\nattachment:trac_9016-morphishm_hash.take2.patch also adds `__hash__()` methods to all the classes defined in `sage/{categories/map.pyx,rings/morphism.pyx}` which also define `__cmp__()` or `__richcmp__()` methods, in line with Robert's remarks in comment:2.\n\nRobert, can you take a look at this again?",
+    "created_at": "2010-09-13T10:22:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9016",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83405",
+    "user": "burcin"
+}
+```
 
 Attachment
 
@@ -164,21 +303,56 @@ attachment:trac_9016-morphishm_hash.take2.patch also adds `__hash__()` methods t
 Robert, can you take a look at this again?
 
 
+
 ---
 
-Comment by burcin created at 2010-09-13 10:22:41
+archive/issue_comments_083406.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-09-13T10:22:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9016",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83406",
+    "user": "burcin"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by burcin created at 2011-03-22 19:37:13
+archive/issue_comments_083407.json:
+```json
+{
+    "body": "rebased to 4.7.alpha1",
+    "created_at": "2011-03-22T19:37:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9016",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83407",
+    "user": "burcin"
+}
+```
 
 rebased to 4.7.alpha1
 
 
+
 ---
+
+archive/issue_comments_083408.json:
+```json
+{
+    "body": "Attachment\n\nApparently someone else fixed the problem in `sage/structure/sequence.py`. I rebased the patch to 4.7.alpha1.\n\nApply trac_9016-morphishm_hash.take3.patch",
+    "created_at": "2011-03-22T19:38:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9016",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83408",
+    "user": "burcin"
+}
+```
 
 Attachment
 
@@ -187,16 +361,38 @@ Apparently someone else fixed the problem in `sage/structure/sequence.py`. I reb
 Apply trac_9016-morphishm_hash.take3.patch
 
 
+
 ---
 
-Comment by robertwb created at 2011-05-12 19:17:22
+archive/issue_comments_083409.json:
+```json
+{
+    "body": "I'm not so sure this is a good generic hash function--it means that all morphism has to the same thing.",
+    "created_at": "2011-05-12T19:17:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9016",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83409",
+    "user": "robertwb"
+}
+```
 
 I'm not so sure this is a good generic hash function--it means that all morphism has to the same thing.
 
 
+
 ---
 
-Comment by burcin created at 2011-05-30 20:45:25
+archive/issue_comments_083410.json:
+```json
+{
+    "body": "Replying to [comment:9 robertwb]:\n> I'm not so sure this is a good generic hash function--it means that all morphism has to the same thing. \n\nI looked over the patch once more. The hash functions defined here use all the information I see in the class. Do you have any specific suggestions for improvement?",
+    "created_at": "2011-05-30T20:45:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9016",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83410",
+    "user": "burcin"
+}
+```
 
 Replying to [comment:9 robertwb]:
 > I'm not so sure this is a good generic hash function--it means that all morphism has to the same thing. 
@@ -204,23 +400,56 @@ Replying to [comment:9 robertwb]:
 I looked over the patch once more. The hash functions defined here use all the information I see in the class. Do you have any specific suggestions for improvement?
 
 
+
 ---
 
-Comment by robertwb created at 2011-05-31 04:00:53
+archive/issue_comments_083411.json:
+```json
+{
+    "body": "Hashing the string representation is preferable, or the image of the generators of the codomain (caching the result if the performance isn't sufficient). Either that or raising an error and requiring all specific subclasses (that have the information to distinguish between distinct elements) implement this.",
+    "created_at": "2011-05-31T04:00:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9016",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83411",
+    "user": "robertwb"
+}
+```
 
 Hashing the string representation is preferable, or the image of the generators of the codomain (caching the result if the performance isn't sufficient). Either that or raising an error and requiring all specific subclasses (that have the information to distinguish between distinct elements) implement this.
 
 
+
 ---
 
-Comment by robertwb created at 2011-05-31 04:00:53
+archive/issue_comments_083412.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_info.",
+    "created_at": "2011-05-31T04:00:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9016",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83412",
+    "user": "robertwb"
+}
+```
 
 Changing status from needs_review to needs_info.
 
 
+
 ---
 
-Comment by burcin created at 2011-05-31 09:03:54
+archive/issue_comments_083413.json:
+```json
+{
+    "body": "I don't see how the string representation could provide more information than the data stored in the class. I would be happy to add such data to the tuple that is hashed if you point it out.\n\nThe current patch uses the hash of the images of the generators when the morphism class contains this information. See line 1103 of `sage/rings/morphism.pyx` for example. In order to implement your suggestion we would also have to change the comparison functions, which compare the same data this patch hashes.\n\n<rant>\nRobert, even though you chose to mark this as an enhancement in comment:3, it is actually a bug that effects my work. The category framework relies heavily on cached functions, which in turn need the arguments of these to be hashable. For example, I need unique parents that also depend on a morphism/map (difference/differential rings). I opened this ticket when I ran into this problem a year ago. I know I haven't really pushed it through, but it still is a shame that it takes so long for such a small change to get into a release.\n</rant>",
+    "created_at": "2011-05-31T09:03:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9016",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83413",
+    "user": "burcin"
+}
+```
 
 I don't see how the string representation could provide more information than the data stored in the class. I would be happy to add such data to the tuple that is hashed if you point it out.
 
@@ -231,9 +460,20 @@ Robert, even though you chose to mark this as an enhancement in comment:3, it is
 </rant>
 
 
+
 ---
 
-Comment by robertwb created at 2011-05-31 16:33:41
+archive/issue_comments_083414.json:
+```json
+{
+    "body": "Replying to [comment:12 burcin]:\n> I don't see how the string representation could provide more information than the data stored in the class. I would be happy to add such data to the tuple that is hashed if you point it out.\n\nThe string representation is more often overridden to be distinct for distinct morphisms \n\n> The current patch uses the hash of the images of the generators when the morphism class contains this information. See line 1103 of `sage/rings/morphism.pyx` for example. In order to implement your suggestion we would also have to change the comparison functions, which compare the same data this patch hashes.\n\nAre you saying that any two morphisms in the same homset compare equal? That is a bug for sure. I'd rather not be able to compare such morphisms. \n\n> <rant>\n> Robert, even though you chose to mark this as an enhancement in comment:3, it is actually a bug that effects my work. The category framework relies heavily on cached functions, which in turn need the arguments of these to be hashable. For example, I need unique parents that also depend on a morphism/map (difference/differential rings). I opened this ticket when I ran into this problem a year ago. \n\nHappy to change it back given the context. \n\n> I know I haven't really pushed it through, but it still is a shame that it takes so long for such a small change to get into a release.\n> </rant>\n\nI know this all to well--too much bureaucracy and churn in the code among other things. That was one of my primary motivations for the patchbot, so hopefully simple changes could get approved quickly.",
+    "created_at": "2011-05-31T16:33:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9016",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83414",
+    "user": "robertwb"
+}
+```
 
 Replying to [comment:12 burcin]:
 > I don't see how the string representation could provide more information than the data stored in the class. I would be happy to add such data to the tuple that is hashed if you point it out.
@@ -255,16 +495,38 @@ Happy to change it back given the context.
 I know this all to well--too much bureaucracy and churn in the code among other things. That was one of my primary motivations for the patchbot, so hopefully simple changes could get approved quickly.
 
 
+
 ---
 
-Comment by robertwb created at 2011-05-31 16:33:41
+archive/issue_comments_083415.json:
+```json
+{
+    "body": "Changing type from enhancement to defect.",
+    "created_at": "2011-05-31T16:33:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9016",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83415",
+    "user": "robertwb"
+}
+```
 
 Changing type from enhancement to defect.
 
 
+
 ---
 
-Comment by tscrim created at 2012-11-18 08:20:00
+archive/issue_comments_083416.json:
+```json
+{
+    "body": "This looks good for the most part. I think Robert was thinking the `hash((domain, codomaim))` was the hash for the individual morphism, as opposed to that being the hash for the homset (as it currently is). The morphism's hash is from the image of the generators which I believe is sufficient. (This breaks down if you look at a large amount of maps from different domains to the same image in the same codomain and same number of generators, but this seems like something extremely unlikely to occur in practice. We could also hash in the parent to take care of this...)\n\nHowever this does not pass the doctests on my (virtual) machine which runs with 32-bit instead of 64-bit (which the patchbot runs on). Here are my hash values:\n\n```\nrings/morphism.pyx\n line 542: 1975065480\n line 959: 467020541\n line 1147: -664373037\n line 1554: -644670332\n line 1699: 1917770400\n\ncategories/map.pyx\n line 1047: 433071207\n line 1290: -1460497211\n```\n\nAlso, I don't believe you need `# indirect doctest` for the `hash()`, but this isn't that important.",
+    "created_at": "2012-11-18T08:20:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9016",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83416",
+    "user": "tscrim"
+}
+```
 
 This looks good for the most part. I think Robert was thinking the `hash((domain, codomaim))` was the hash for the individual morphism, as opposed to that being the hash for the homset (as it currently is). The morphism's hash is from the image of the generators which I believe is sufficient. (This breaks down if you look at a large amount of maps from different domains to the same image in the same codomain and same number of generators, but this seems like something extremely unlikely to occur in practice. We could also hash in the parent to take care of this...)
 
@@ -286,30 +548,76 @@ categories/map.pyx
 Also, I don't believe you need `# indirect doctest` for the `hash()`, but this isn't that important.
 
 
+
 ---
+
+archive/issue_comments_083417.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2012-11-19T03:34:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9016",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83417",
+    "user": "burcin"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by burcin created at 2012-11-19 03:39:57
+archive/issue_comments_083418.json:
+```json
+{
+    "body": "Thanks for reviewing this ticket!\n\nNew patch up at [attachment:trac_9016-morphishm_hash.take4.patch] with 32-bit hash values. I removed the `# indirect doctest` messages as well. Perhaps the coverage script improved in the mean time to avoid complaints about not using the name of the function in the tests.",
+    "created_at": "2012-11-19T03:39:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9016",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83418",
+    "user": "burcin"
+}
+```
 
 Thanks for reviewing this ticket!
 
 New patch up at [attachment:trac_9016-morphishm_hash.take4.patch] with 32-bit hash values. I removed the `# indirect doctest` messages as well. Perhaps the coverage script improved in the mean time to avoid complaints about not using the name of the function in the tests.
 
 
+
 ---
 
-Comment by burcin created at 2012-11-19 03:39:57
+archive/issue_comments_083419.json:
+```json
+{
+    "body": "Changing status from needs_info to needs_review.",
+    "created_at": "2012-11-19T03:39:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9016",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83419",
+    "user": "burcin"
+}
+```
 
 Changing status from needs_info to needs_review.
 
 
+
 ---
 
-Comment by tscrim created at 2012-11-19 04:29:30
+archive/issue_comments_083420.json:
+```json
+{
+    "body": "Looks much better now. Two more minor things (sorry for not noticing this earlier):\n\n- Move the `from copy import copy` from the header of `morphism.pyx` to\n  {{{\n  if not im_gens.is_immutable(): \n      from copy import copy\n      im_gens = copy(im_gens)\n      im_gens.set_immutable() \n  }}}\n  (or perhaps a `lazy_import`)\n  This should make the startup plugin happy.\n\n- Could you add a (short) description such as `Return the hash of ``self``` to each `__hash__()` function.\n\nAfter this, that should be it. Thank you.",
+    "created_at": "2012-11-19T04:29:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9016",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83420",
+    "user": "tscrim"
+}
+```
 
 Looks much better now. Two more minor things (sorry for not noticing this earlier):
 
@@ -328,16 +636,40 @@ Looks much better now. Two more minor things (sorry for not noticing this earlie
 After this, that should be it. Thank you.
 
 
+
 ---
+
+archive/issue_comments_083421.json:
+```json
+{
+    "body": "Attachment\n\napply only this patch",
+    "created_at": "2012-11-19T11:14:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9016",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83421",
+    "user": "burcin"
+}
+```
 
 Attachment
 
 apply only this patch
 
 
+
 ---
 
-Comment by burcin created at 2012-11-19 11:21:07
+archive/issue_comments_083422.json:
+```json
+{
+    "body": "Replying to [comment:16 tscrim]:\n> Looks much better now. Two more minor things (sorry for not noticing this earlier):\n\nThanks for the quick feedback. I attached [attachment:trac_9016-morphishm_hash.take5.patch a new patch] fixing the two issues mentioned above.\n\nPatchbot, apply trac_9016-morphishm_hash.take5.patch\n\nI guess it's too late to fix the horrific typo in the file name. :)",
+    "created_at": "2012-11-19T11:21:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9016",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83422",
+    "user": "burcin"
+}
+```
 
 Replying to [comment:16 tscrim]:
 > Looks much better now. Two more minor things (sorry for not noticing this earlier):
@@ -349,21 +681,56 @@ Patchbot, apply trac_9016-morphishm_hash.take5.patch
 I guess it's too late to fix the horrific typo in the file name. :)
 
 
+
 ---
 
-Comment by tscrim created at 2012-11-19 16:09:16
+archive/issue_comments_083423.json:
+```json
+{
+    "body": "No, its not too late to change the name. However there is a change since the last patch in one of the hash values (line 1050 in `categories/map.pyx`) and it's different than what the patchbot returns (I can't reproduce it since I'm using a 32-bit system). Is that the hash value that you get?",
+    "created_at": "2012-11-19T16:09:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9016",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83423",
+    "user": "tscrim"
+}
+```
 
 No, its not too late to change the name. However there is a change since the last patch in one of the hash values (line 1050 in `categories/map.pyx`) and it's different than what the patchbot returns (I can't reproduce it since I'm using a 32-bit system). Is that the hash value that you get?
 
 
+
 ---
 
-Comment by burcin created at 2012-11-19 19:02:01
+archive/issue_comments_083424.json:
+```json
+{
+    "body": "apply only this patch",
+    "created_at": "2012-11-19T19:02:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9016",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83424",
+    "user": "burcin"
+}
+```
 
 apply only this patch
 
 
+
 ---
+
+archive/issue_comments_083425.json:
+```json
+{
+    "body": "Attachment\n\nI had some other patches applied. One of them might have changed the hash value. Corrected patch attached. Just to make sure there is no random error, I ran the tests in these two files 100 times. :)\n\nApply trac_9016-morphism_hash.patch",
+    "created_at": "2012-11-19T19:06:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9016",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83425",
+    "user": "burcin"
+}
+```
 
 Attachment
 
@@ -372,9 +739,20 @@ I had some other patches applied. One of them might have changed the hash value.
 Apply trac_9016-morphism_hash.patch
 
 
+
 ---
 
-Comment by robertwb created at 2012-11-19 19:40:31
+archive/issue_comments_083426.json:
+```json
+{
+    "body": "I would argue that in general it's better to avoid having these arbitrary values for hash tested exactly at all (unless they're meaningful, like hash(ZZ(2)) == 2), especially when they vary for 64 and 32-bit values.  Better to test it functionally, like\n\n\n```\nsage: { phi: 'yes' }[phi]\n'yes'\n```\n\n\nor even\n\n\n```\nhash(phi) == hash(phi)\nTrue\nhash(phi) == hash(rho)\nFalse\n```\n",
+    "created_at": "2012-11-19T19:40:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9016",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83426",
+    "user": "robertwb"
+}
+```
 
 I would argue that in general it's better to avoid having these arbitrary values for hash tested exactly at all (unless they're meaningful, like hash(ZZ(2)) == 2), especially when they vary for 64 and 32-bit values.  Better to test it functionally, like
 
@@ -397,9 +775,20 @@ False
 
 
 
+
 ---
 
-Comment by tscrim created at 2012-11-20 03:32:17
+archive/issue_comments_083427.json:
+```json
+{
+    "body": "For the most part, I would almost argue against doing that, in particular, it does not make sure that hash values do not change in different sage sessions and machines (since the tests are run multiple times generally). For example, say we create an object `O` and use it as a key it in a dictionary `D` (e.g. `D[O] = 5`) and then pickle `D`. Then on another session/machine (with the same bit architecture) we unpickle `D` and to do `D[O]` safely; we want to make sure via doctests that the hashes match.\n\nActually on that note, I wonder if we need to (much less how) send a warning to the users when hash values change from one version to another. In that context, I would argue that these tests are how we should do everything and never update a hash value unless the structure of a class changes. Granted, I am making an assumption about python pickles dictionaries: that python does not recreate the object then reinsert it into the hash table but instead creates the object in the desired location. I have a test in mind that I will run tonight. I hope all of the above makes sense.\n\nHowever I do see your point since the underlying hash values can change and makes the doctests of certain classes harder to maintain. Also I do somewhat like the `hash(phi) == hash(phi)` test since the hash is run multiple times and it checks to make sure the object is hashable.",
+    "created_at": "2012-11-20T03:32:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9016",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83427",
+    "user": "tscrim"
+}
+```
 
 For the most part, I would almost argue against doing that, in particular, it does not make sure that hash values do not change in different sage sessions and machines (since the tests are run multiple times generally). For example, say we create an object `O` and use it as a key it in a dictionary `D` (e.g. `D[O] = 5`) and then pickle `D`. Then on another session/machine (with the same bit architecture) we unpickle `D` and to do `D[O]` safely; we want to make sure via doctests that the hashes match.
 
@@ -408,9 +797,20 @@ Actually on that note, I wonder if we need to (much less how) send a warning to 
 However I do see your point since the underlying hash values can change and makes the doctests of certain classes harder to maintain. Also I do somewhat like the `hash(phi) == hash(phi)` test since the hash is run multiple times and it checks to make sure the object is hashable.
 
 
+
 ---
 
-Comment by robertwb created at 2012-11-20 04:35:55
+archive/issue_comments_083428.json:
+```json
+{
+    "body": "This is getting a bit off topic, but if you have pickling that depends on hash values then it's already broken (e.g. 32-bit vs 64-bit). And, no, hashes do not need to be consistent to pickle dictionaries. All that we need is that hashes are consistent within a given Python session. (On that note, the fix of http://bugs.python.org/issue13703 is to make hashes completely unpredictable between sessions, which will break any hard-coded hash we have that (transitively) depends on something that hashes a string.)\n\n<rant>\nAside from this, I've also been bitten several times from changing a hash (to making it faster, e.g. not simply doing `hash(str(self))`) hand having to change random values all over the library, as well as the nuisance of having to find a 32-bit computer to test on to get the new 32-bit value (because the tests pass just fine for me), both of which provide near zero actual value. \n</rant>",
+    "created_at": "2012-11-20T04:35:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9016",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83428",
+    "user": "robertwb"
+}
+```
 
 This is getting a bit off topic, but if you have pickling that depends on hash values then it's already broken (e.g. 32-bit vs 64-bit). And, no, hashes do not need to be consistent to pickle dictionaries. All that we need is that hashes are consistent within a given Python session. (On that note, the fix of http://bugs.python.org/issue13703 is to make hashes completely unpredictable between sessions, which will break any hard-coded hash we have that (transitively) depends on something that hashes a string.)
 
@@ -419,9 +819,20 @@ Aside from this, I've also been bitten several times from changing a hash (to ma
 </rant>
 
 
+
 ---
 
-Comment by tscrim created at 2012-11-20 16:13:56
+archive/issue_comments_083429.json:
+```json
+{
+    "body": "Hmm..interesting. Also good to know about the dictionary pickling. I cannot disagree at all with your rant; I use the patchbot to get my 64-bit hash values >_<. So would you agree to hash tests of the form:\n\n```\nsage: hash(phi) == hash(phi)\nTrue\n```\n\n?\n\nThanks,\n\nTravis",
+    "created_at": "2012-11-20T16:13:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9016",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83429",
+    "user": "tscrim"
+}
+```
 
 Hmm..interesting. Also good to know about the dictionary pickling. I cannot disagree at all with your rant; I use the patchbot to get my 64-bit hash values >_<. So would you agree to hash tests of the form:
 
@@ -437,45 +848,113 @@ Thanks,
 Travis
 
 
+
 ---
+
+archive/issue_comments_083430.json:
+```json
+{
+    "body": "Attachment\n\napply only this patch",
+    "created_at": "2012-11-20T16:37:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9016",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83430",
+    "user": "burcin"
+}
+```
 
 Attachment
 
 apply only this patch
 
 
+
 ---
 
-Comment by burcin created at 2012-11-20 16:39:36
+archive/issue_comments_083431.json:
+```json
+{
+    "body": "I attached a new patch replacing the doctests with `hash(f) == hash(f)` and `{f: 1}[f]` as Robert suggests.\n\nApply [attachment:trac_9016-morphism_hash.take7.patch].",
+    "created_at": "2012-11-20T16:39:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9016",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83431",
+    "user": "burcin"
+}
+```
 
 I attached a new patch replacing the doctests with `hash(f) == hash(f)` and `{f: 1}[f]` as Robert suggests.
 
 Apply [attachment:trac_9016-morphism_hash.take7.patch].
 
 
+
 ---
 
-Comment by tscrim created at 2012-11-20 20:04:02
+archive/issue_comments_083432.json:
+```json
+{
+    "body": "Looks good to me. Robert?",
+    "created_at": "2012-11-20T20:04:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9016",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83432",
+    "user": "tscrim"
+}
+```
 
 Looks good to me. Robert?
 
 
+
 ---
 
-Comment by robertwb created at 2012-11-21 05:07:43
+archive/issue_comments_083433.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2012-11-21T05:07:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9016",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83433",
+    "user": "robertwb"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by robertwb created at 2012-11-21 05:07:43
+archive/issue_comments_083434.json:
+```json
+{
+    "body": "Looks good to me too. My only comment would be that perhaps `hash((self._domain, self._codomain))` could be pulled to a higher superclass, but I've got no problems with the way it is now.",
+    "created_at": "2012-11-21T05:07:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9016",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83434",
+    "user": "robertwb"
+}
+```
 
 Looks good to me too. My only comment would be that perhaps `hash((self._domain, self._codomain))` could be pulled to a higher superclass, but I've got no problems with the way it is now.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-12-21 09:32:03
+archive/issue_comments_083435.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2012-12-21T09:32:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9016",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9016#issuecomment-83435",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: fixed

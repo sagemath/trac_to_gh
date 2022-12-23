@@ -1,11 +1,21 @@
 # Issue 9828: Implement implicitly multiplied output
 
-Issue created by migration from https://trac.sagemath.org/ticket/9829
-
-Original creator: mpatel
-
-Original creation time: 2010-08-28 01:11:35
-
+archive/issues_009828.json:
+```json
+{
+    "body": "Assignee: was\n\nWith `implicit_multiplication(True)`, we can enter expressions using spaces instead of `*` to separate multiplied subexpressions:\n\n\n```python\nsage: var('x, y, z')\nsage: implicit_multiplication(True)\nsage: 3 x^4 y + 2 z sin(x z 3 y) - 3 y^2\n3*x^4*y - 3*y^2 + 2*z*sin(3*x*y*z)\n```\n\n\nThis works similarly for polynomials.\n\nBut it's not yet possible to set an option so that Sage automatically postparses the output to multiply implicitly.  For example,\n\n\n```python\nsage: R.<a,b,c> = QQ[]; R\nMultivariate Polynomial Ring in a, b, c over Rational Field\nsage: implicit_multiplication_output(True)    # not implemented!\nsage: R.random_element()\n1/7 a b - 1/4 a c - c^2 + c \n```\n\n\nIdeally, we would be able to use the output in later inputs with little or no modification.\n\n[AskSage question](http://ask.sagemath.org/question/46/is-it-possible-to-get-implicitly-multiplied-output) (by me).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9829\n\n",
+    "created_at": "2010-08-28T01:11:35Z",
+    "labels": [
+        "user interface",
+        "major",
+        "enhancement"
+    ],
+    "title": "Implement implicitly multiplied output",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9828",
+    "user": "mpatel"
+}
+```
 Assignee: was
 
 With `implicit_multiplication(True)`, we can enter expressions using spaces instead of `*` to separate multiplied subexpressions:
@@ -37,9 +47,24 @@ Ideally, we would be able to use the output in later inputs with little or no mo
 
 [AskSage question](http://ask.sagemath.org/question/46/is-it-possible-to-get-implicitly-multiplied-output) (by me).
 
+Issue created by migration from https://trac.sagemath.org/ticket/9829
+
+
+
+
 
 ---
 
-Comment by mpatel created at 2010-08-28 01:23:59
+archive/issue_comments_096999.json:
+```json
+{
+    "body": "See [/sage/misc/preparser.py`@`13719#L1209](../tree/master//sage/misc/preparser.py`@`13719#L1209) for the input transformation.",
+    "created_at": "2010-08-28T01:23:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9828",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9828#issuecomment-96999",
+    "user": "mpatel"
+}
+```
 
 See [/sage/misc/preparser.py`@`13719#L1209](../tree/master//sage/misc/preparser.py`@`13719#L1209) for the input transformation.

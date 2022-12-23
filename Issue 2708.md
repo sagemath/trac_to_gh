@@ -1,53 +1,135 @@
 # Issue 2708: add support for nonsymmetric Macdonald polynomials in type A via HHL formula
 
-Issue created by migration from https://trac.sagemath.org/ticket/2708
-
-Original creator: mhansen
-
-Original creation time: 2008-03-28 20:56:37
-
+archive/issues_002708.json:
+```json
+{
+    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2708\n\n",
+    "created_at": "2008-03-28T20:56:37Z",
+    "labels": [
+        "combinatorics",
+        "minor",
+        "enhancement"
+    ],
+    "title": "add support for nonsymmetric Macdonald polynomials in type A via HHL formula",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2708",
+    "user": "mhansen"
+}
+```
 Assignee: mhansen
 
 CC:  sage-combinat
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2708
+
+
+
+
 
 ---
+
+archive/issue_comments_018676.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-03-28T21:36:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2708",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2708#issuecomment-18676",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2008-03-28 21:36:33
+archive/issue_comments_018677.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-03-28T21:36:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2708",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2708#issuecomment-18677",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by rlm created at 2008-03-28 22:56:03
+archive/issue_comments_018678.json:
+```json
+{
+    "body": "depends on #2683",
+    "created_at": "2008-03-28T22:56:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2708",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2708#issuecomment-18678",
+    "user": "rlm"
+}
+```
 
 depends on #2683
 
 
+
 ---
 
-Comment by rlm created at 2008-03-28 23:21:41
+archive/issue_comments_018679.json:
+```json
+{
+    "body": "Looks good, applies to 2.11.alpha1 + #2683, passes doctests.",
+    "created_at": "2008-03-28T23:21:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2708",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2708#issuecomment-18679",
+    "user": "rlm"
+}
+```
 
 Looks good, applies to 2.11.alpha1 + #2683, passes doctests.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-29 00:01:05
+archive/issue_comments_018680.json:
+```json
+{
+    "body": "Merged in Sage 2.11.alpha2",
+    "created_at": "2008-03-29T00:01:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2708",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2708#issuecomment-18680",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.11.alpha2
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-29 00:01:05
+archive/issue_comments_018681.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-03-29T00:01:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2708",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2708#issuecomment-18681",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

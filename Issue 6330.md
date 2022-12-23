@@ -1,11 +1,21 @@
 # Issue 6330: optional doctest failure -- constructions number fields doctest failures
 
-Issue created by migration from https://trac.sagemath.org/ticket/6330
-
-Original creator: was
-
-Original creation time: 2009-06-16 15:07:43
-
+archive/issues_006330.json:
+```json
+{
+    "body": "Assignee: tbd\n\n\n```\nsage -t -long --optional devel/sage/doc/en/constructions/number_fields.rst\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/doc/en/constructions/number_fields.rst\", line 33:\n    sage: [(k.degree(), k.disc()) for k in J.unramified_outside([2])] # requires optional database\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_1[2]>\", line 1, in <module>\n        [(k.degree(), k.disc()) for k in J.unramified_outside([Integer(2)])] # requires optional database###line 33:\n    sage: [(k.degree(), k.disc()) for k in J.unramified_outside([2])] # requires optional database\n    NameError: name 'J' is not defined\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/doc/en/constructions/number_fields.rst\", line 42:\n    sage: [k.disc() for k in J.unramified_outside([2],2)] # requires optional database\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_2[2]>\", line 1, in <module>\n        [k.disc() for k in J.unramified_outside([Integer(2)],Integer(2))] # requires optional database###line 42:\n    sage: [k.disc() for k in J.unramified_outside([2],2)] # requires optional database\n    NameError: name 'J' is not defined\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/doc/en/constructions/number_fields.rst\", line 50:\n    sage: [k.disc() for k in J.ramified_at([3,5],3)] # requires optional database\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_3[2]>\", line 1, in <module>\n        [k.disc() for k in J.ramified_at([Integer(3),Integer(5)],Integer(3))] # requires optional database###line 50:\n    sage: [k.disc() for k in J.ramified_at([3,5],3)] # requires optional database\n    NameError: name 'J' is not defined\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/doc/en/constructions/number_fields.rst\", line 63:\n    sage: J.ramified_at(101)                     # requires optional database\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_4[2]>\", line 1, in <module>\n        J.ramified_at(Integer(101))                     # requires optional database###line 63:\n    sage: J.ramified_at(101)                     # requires optional database\n    NameError: name 'J' is not defined\n**********************************************************************\n4 items had failures:\n   1 of   3 in __main__.example_1\n   1 of   3 in __main__.example_2\n   1 of   6 in __main__.example_3\n   1 of   3 in __main__.example_4\n***Test Failed*** 4 failures.\nFor whitespace errors, see the file /home/wstein/build/sage-4.0.2.alpha3\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6330\n\n",
+    "created_at": "2009-06-16T15:07:43Z",
+    "labels": [
+        "packages: optional",
+        "major",
+        "bug"
+    ],
+    "title": "optional doctest failure -- constructions number fields doctest failures",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6330",
+    "user": "was"
+}
+```
 Assignee: tbd
 
 
@@ -82,30 +92,80 @@ For whitespace errors, see the file /home/wstein/build/sage-4.0.2.alpha3
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6330
+
+
+
+
 
 ---
 
-Comment by jhpalmieri created at 2009-06-16 19:13:35
+archive/issue_comments_050541.json:
+```json
+{
+    "body": "I put in some `.. link` directives so that \"J\" would remain defined from one set of examples to the next.  I also had to reorder a list.",
+    "created_at": "2009-06-16T19:13:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6330",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6330#issuecomment-50541",
+    "user": "jhpalmieri"
+}
+```
 
 I put in some `.. link` directives so that "J" would remain defined from one set of examples to the next.  I also had to reorder a list.
 
 
+
 ---
+
+archive/issue_comments_050542.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-06-16T19:13:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6330",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6330#issuecomment-50542",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by wdj created at 2009-06-16 23:12:01
+archive/issue_comments_050543.json:
+```json
+{
+    "body": "Patch applies fine to 4.0.2.rc1 and passes sage -tp 1\nSAGE_ROOT/devel/sage/doc/en/constructions/. Also the builds sage -docbuild\n constructions html (resp., pdf) went fine.",
+    "created_at": "2009-06-16T23:12:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6330",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6330#issuecomment-50543",
+    "user": "wdj"
+}
+```
 
 Patch applies fine to 4.0.2.rc1 and passes sage -tp 1
- SAGE_ROOT/devel/sage/doc/en/constructions/. Also the builds sage -docbuild
+SAGE_ROOT/devel/sage/doc/en/constructions/. Also the builds sage -docbuild
  constructions html (resp., pdf) went fine.
 
 
+
 ---
 
-Comment by rlm created at 2009-06-24 10:00:21
+archive/issue_comments_050544.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-06-24T10:00:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6330",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6330#issuecomment-50544",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed

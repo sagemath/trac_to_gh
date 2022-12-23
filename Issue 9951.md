@@ -1,11 +1,21 @@
 # Issue 9951: make SAGE_CHECK work with SAGE_ATLAS_LIB
 
-Issue created by migration from https://trac.sagemath.org/ticket/9952
-
-Original creator: jhpalmieri
-
-Original creation time: 2010-09-20 01:43:46
-
+archive/issues_009951.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  drkirkby\n\nIf SAGE_CHECK is set, then the spkg-check file in the ATLAS spkg tries to run the test suite.  But if SAGE_ATLAS_LIB is also set, then there is nothing to test, so SAGE_CHECK fails.  The new spkg (based on the one from #9780) fixes this by skipping the test suite if SAGE_CHECK is set.\n\nNote that if SAGE_ATLAS_LIB is set badly, then spkg-install fails before spkg-check is ever run, so in spkg-check we just need to see whether SAGE_ATLAS_LIB is not empty.\n\nGet the new spkg here:\n\n[http://sage.math.washington.edu/home/palmieri/SPKG/atlas-3.8.3.p16.spkg](http://sage.math.washington.edu/home/palmieri/SPKG/atlas-3.8.3.p16.spkg)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9952\n\n",
+    "created_at": "2010-09-20T01:43:46Z",
+    "labels": [
+        "packages: standard",
+        "minor",
+        "bug"
+    ],
+    "title": "make SAGE_CHECK work with SAGE_ATLAS_LIB",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9951",
+    "user": "jhpalmieri"
+}
+```
 Assignee: tbd
 
 CC:  drkirkby
@@ -19,31 +29,79 @@ Get the new spkg here:
 [http://sage.math.washington.edu/home/palmieri/SPKG/atlas-3.8.3.p16.spkg](http://sage.math.washington.edu/home/palmieri/SPKG/atlas-3.8.3.p16.spkg)
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/9952
+
+
+
+
 
 ---
 
-Comment by leif created at 2010-09-20 02:56:06
+archive/issue_comments_099250.json:
+```json
+{
+    "body": "I think the `$` in the message should be escaped... ;-)",
+    "created_at": "2010-09-20T02:56:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9951",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9951#issuecomment-99250",
+    "user": "leif"
+}
+```
 
 I think the `$` in the message should be escaped... ;-)
 
 
+
 ---
 
-Comment by leif created at 2010-09-20 02:56:06
+archive/issue_comments_099251.json:
+```json
+{
+    "body": "Changing status from new to needs_work.",
+    "created_at": "2010-09-20T02:56:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9951",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9951#issuecomment-99251",
+    "user": "leif"
+}
+```
 
 Changing status from new to needs_work.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-09-20 03:54:41
+archive/issue_comments_099252.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-09-20T03:54:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9951",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9951#issuecomment-99252",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-09-20 03:54:41
+archive/issue_comments_099253.json:
+```json
+{
+    "body": "Oops, you're right.  I've fixed it now.  \n\nBy the way, I didn't know whether to use\n\n```sh\nif [ \"x$SAGE_ATLAS_LIB\" != \"x\" ]; then\n```\n\nor\n\n```sh\nif [ -n \"$SAGE_ATLAS_LIB\" ]; then\n```\n\nor whether it mattered.  Right now I'm using the first of these.",
+    "created_at": "2010-09-20T03:54:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9951",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9951#issuecomment-99253",
+    "user": "jhpalmieri"
+}
+```
 
 Oops, you're right.  I've fixed it now.  
 
@@ -62,32 +120,76 @@ if [ -n "$SAGE_ATLAS_LIB" ]; then
 or whether it mattered.  Right now I'm using the first of these.
 
 
+
 ---
 
-Comment by leif created at 2010-09-20 04:07:34
+archive/issue_comments_099254.json:
+```json
+{
+    "body": "Hmmm, the latter is much nicer (and works with all shells / `test` programs).\n\nSome dead old are only broken in comparing empty strings with `=` or `!=`; `-z` and `-n` always work (otherwise wouldn't make sense at all).",
+    "created_at": "2010-09-20T04:07:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9951",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9951#issuecomment-99254",
+    "user": "leif"
+}
+```
 
 Hmmm, the latter is much nicer (and works with all shells / `test` programs).
 
 Some dead old are only broken in comparing empty strings with `=` or `!=`; `-z` and `-n` always work (otherwise wouldn't make sense at all).
 
 
+
 ---
 
-Comment by leif created at 2010-09-20 04:12:25
+archive/issue_comments_099255.json:
+```json
+{
+    "body": "(... as long as you put the variable to test into quotes.)",
+    "created_at": "2010-09-20T04:12:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9951",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9951#issuecomment-99255",
+    "user": "leif"
+}
+```
 
 (... as long as you put the variable to test into quotes.)
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-09-20 04:54:08
+archive/issue_comments_099256.json:
+```json
+{
+    "body": "Okay, I switched it to the second one.",
+    "created_at": "2010-09-20T04:54:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9951",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9951#issuecomment-99256",
+    "user": "jhpalmieri"
+}
+```
 
 Okay, I switched it to the second one.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-09-20 06:00:02
+archive/issue_comments_099257.json:
+```json
+{
+    "body": "I agree with Leif, the $ in the message should be skipped. We have refereed to SAGE_ATLAS_LIB before, so I think it's best to refer to it as that and not $SAGE_ATLAS_LIB. But it works fine. \n\n\n```\nreal\t0m0.147s\nuser\t0m0.060s\nsys\t0m0.085s\nSuccessfully installed atlas-3.8.3.p16\nRunning the test suite.\n$SAGE_ATLAS_LIB is set; skipping test suite.\nNow cleaning up tmp files.\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing atlas-3.8.3.p16.spkg\ndrkirkby@hawk:~/sage-4.6.alpha1$ \n```\n\n\nArguably a nice touch would be to add \n\n\n```\necho \"SAGE_ATLAS_LIB is set to $SAGE_ATLAS_LIB; skipping test suite.\"\n```\n\n\nBTW, one more stupid thing, which is nothing to do with you, but a result of a bad bit of code being copied around everywhere, is there's no need for the semi-colon on the line\n\n\n```\necho \"SAGE_LOCAL undefined ... exiting\";\n```\n\n\nYou might as well remove that at the same time. \n\nDave",
+    "created_at": "2010-09-20T06:00:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9951",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9951#issuecomment-99257",
+    "user": "drkirkby"
+}
+```
 
 I agree with Leif, the $ in the message should be skipped. We have refereed to SAGE_ATLAS_LIB before, so I think it's best to refer to it as that and not $SAGE_ATLAS_LIB. But it works fine. 
 
@@ -128,9 +230,20 @@ You might as well remove that at the same time.
 Dave
 
 
+
 ---
 
-Comment by drkirkby created at 2010-09-20 06:26:02
+archive/issue_comments_099258.json:
+```json
+{
+    "body": "Replying to [comment:3 leif]:\n> Hmmm, the latter is much nicer (and works with all shells / `test` programs).\n> \n> Some dead old are only broken in comparing empty strings with `=` or `!=`; `-z` and `-n` always work (otherwise wouldn't make sense at all).\n\nActually, I'd have to disagree with that. I've been using -z and -n, as I agree it looks cleaner, but this is a quote from the autoconf mailing list: \n\nhttp://lists.gnu.org/archive/html/autoconf/2010-09/msg00030.html\n\nsays \n\n\n*this is yet another case of `@`var{string} that looks like an operator, and yet another reason that you should ALWAYS use test x\"$val\" = x rather than test -z \"$val\" if you don't know what $val contains.*\n\nThe autoconf developers have a **huge** experience in writing code as portable as possible, so I'm going to switch to the the more portable `\"x$var\" = x`. IMHO, for questions of portability, the autoconf mailing list is the best place to ask. \n\nYou can argue rightly argue it does not matter with bash, which this shell is, but it does matter with some shells. So I would **personally** choose to use the most portable way, so things I write do not rely on bash, but would work with just about any shell. But it's a matter of style. Let John choose what he wants. I believe in order of decreasing portability, they are:\n\n* ` if [ \"x$var\" = x ] ; then` \n* ` if [ -z \"$var\" ] ; then` \n* ` if [ \"$var\" = \"\" ] ; then` \n\nBut all work with modern bash shells. But my **personal** preference is for the first of these, since it would appear to be the most portable. \n\nDave",
+    "created_at": "2010-09-20T06:26:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9951",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9951#issuecomment-99258",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:3 leif]:
 > Hmmm, the latter is much nicer (and works with all shells / `test` programs).
@@ -144,46 +257,68 @@ http://lists.gnu.org/archive/html/autoconf/2010-09/msg00030.html
 says 
 
 
-_this is yet another case of `@`var{string} that looks like an operator, and yet another reason that you should ALWAYS use test x"$val" = x rather than test -z "$val" if you don't know what $val contains._
+*this is yet another case of `@`var{string} that looks like an operator, and yet another reason that you should ALWAYS use test x"$val" = x rather than test -z "$val" if you don't know what $val contains.*
 
-The autoconf developers have a *huge* experience in writing code as portable as possible, so I'm going to switch to the the more portable `"x$var" = x`. IMHO, for questions of portability, the autoconf mailing list is the best place to ask. 
+The autoconf developers have a **huge** experience in writing code as portable as possible, so I'm going to switch to the the more portable `"x$var" = x`. IMHO, for questions of portability, the autoconf mailing list is the best place to ask. 
 
-You can argue rightly argue it does not matter with bash, which this shell is, but it does matter with some shells. So I would *personally* choose to use the most portable way, so things I write do not rely on bash, but would work with just about any shell. But it's a matter of style. Let John choose what he wants. I believe in order of decreasing portability, they are:
+You can argue rightly argue it does not matter with bash, which this shell is, but it does matter with some shells. So I would **personally** choose to use the most portable way, so things I write do not rely on bash, but would work with just about any shell. But it's a matter of style. Let John choose what he wants. I believe in order of decreasing portability, they are:
 
- * ` if [ "x$var" = x ] ; then` 
- * ` if [ -z "$var" ] ; then` 
- * ` if [ "$var" = "" ] ; then` 
+* ` if [ "x$var" = x ] ; then` 
+* ` if [ -z "$var" ] ; then` 
+* ` if [ "$var" = "" ] ; then` 
 
-But all work with modern bash shells. But my *personal* preference is for the first of these, since it would appear to be the most portable. 
+But all work with modern bash shells. But my **personal** preference is for the first of these, since it would appear to be the most portable. 
 
 Dave
 
 
+
 ---
 
-Comment by drkirkby created at 2010-09-20 06:39:42
+archive/issue_comments_099259.json:
+```json
+{
+    "body": "Replying to [comment:1 leif]:\n> I think the `$` in the message should be escaped... ;-)\n> \n> \n\nI realise I was **not** agreeing with Leif - how unusual! \n\nIMHO, the $ should not be there. Leif was saying it should be escaped, I think it should not be there at all, since throughout we have called the variable `SAGE_ATLAS_LIB`, now to switch it to `$SAGE_ATLAS_LIB` seems wrong to me. \n\nDave",
+    "created_at": "2010-09-20T06:39:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9951",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9951#issuecomment-99259",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:1 leif]:
 > I think the `$` in the message should be escaped... ;-)
 > 
 > 
 
-I realise I was *not* agreeing with Leif - how unusual! 
+I realise I was **not** agreeing with Leif - how unusual! 
 
 IMHO, the $ should not be there. Leif was saying it should be escaped, I think it should not be there at all, since throughout we have called the variable `SAGE_ATLAS_LIB`, now to switch it to `$SAGE_ATLAS_LIB` seems wrong to me. 
 
 Dave
 
 
+
 ---
 
-Comment by leif created at 2010-09-20 12:20:00
+archive/issue_comments_099260.json:
+```json
+{
+    "body": "I'd say there's a slight difference between `test -z ...` and `[ -z ... ]`, but I can't confirm that for the example given because my `ksh` isn't broken like the mentioned Solaris one.\n\nI won't consider this a real *portability* issue (at least in our case), but a matter of *robustness*. Furthermore, at that point we can rely on `SAGE_ATLAS_LIB` being unset or empty, or containing a valid filename IIRC.\n\nW.r.t `$`, of course `$SAGE_ATLAS_LIB` refers to *the value* of the environment variable `SAGE_ATLAS_LIB`, but the former might be clearer to some users in case one omits *\"The environment variable ...\"*.\n\nI think Dave's\n\n```sh\n    echo \"SAGE_ATLAS_LIB is set to $SAGE_ATLAS_LIB; skipping test suite.\"\n```\n\nis also more explicit, though I'd add (escaped) double quotes around the variable's value.",
+    "created_at": "2010-09-20T12:20:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9951",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9951#issuecomment-99260",
+    "user": "leif"
+}
+```
 
 I'd say there's a slight difference between `test -z ...` and `[ -z ... ]`, but I can't confirm that for the example given because my `ksh` isn't broken like the mentioned Solaris one.
 
-I won't consider this a real _portability_ issue (at least in our case), but a matter of _robustness_. Furthermore, at that point we can rely on `SAGE_ATLAS_LIB` being unset or empty, or containing a valid filename IIRC.
+I won't consider this a real *portability* issue (at least in our case), but a matter of *robustness*. Furthermore, at that point we can rely on `SAGE_ATLAS_LIB` being unset or empty, or containing a valid filename IIRC.
 
-W.r.t `$`, of course `$SAGE_ATLAS_LIB` refers to _the value_ of the environment variable `SAGE_ATLAS_LIB`, but the former might be clearer to some users in case one omits _"The environment variable ..."_.
+W.r.t `$`, of course `$SAGE_ATLAS_LIB` refers to *the value* of the environment variable `SAGE_ATLAS_LIB`, but the former might be clearer to some users in case one omits *"The environment variable ..."*.
 
 I think Dave's
 
@@ -194,16 +329,40 @@ I think Dave's
 is also more explicit, though I'd add (escaped) double quotes around the variable's value.
 
 
+
 ---
+
+archive/issue_comments_099261.json:
+```json
+{
+    "body": "Attachment\n\nfor reference only: the diff between the old spkg and the new one",
+    "created_at": "2010-09-20T15:06:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9951",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9951#issuecomment-99261",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
 for reference only: the diff between the old spkg and the new one
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-09-20 15:11:56
+archive/issue_comments_099262.json:
+```json
+{
+    "body": "This is an amusingly large amount of discussion for a ticket which will deals with an extremely unusual case.  Anyway, I've changed it now.  It seems to work for me on sage.math and on t2.  Note that setting SAGE_ATLAS_LIB to an empty string causes the build to fail earlier, so we really only need to check whether SAGE_ATLAS_LIB is set.  Nonetheless, I'm using \n\n```sh\nif [ \"x$SAGE_ATLAS_LIB\" != \"x\" ]; then\n```\n",
+    "created_at": "2010-09-20T15:11:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9951",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9951#issuecomment-99262",
+    "user": "jhpalmieri"
+}
+```
 
 This is an amusingly large amount of discussion for a ticket which will deals with an extremely unusual case.  Anyway, I've changed it now.  It seems to work for me on sage.math and on t2.  Note that setting SAGE_ATLAS_LIB to an empty string causes the build to fail earlier, so we really only need to check whether SAGE_ATLAS_LIB is set.  Nonetheless, I'm using 
 
@@ -213,9 +372,20 @@ if [ "x$SAGE_ATLAS_LIB" != "x" ]; then
 
 
 
+
 ---
 
-Comment by leif created at 2010-09-20 15:42:19
+archive/issue_comments_099263.json:
+```json
+{
+    "body": "Replying to [comment:10 jhpalmieri]:\n> This is an amusingly large amount of discussion [...]\n\nYes.\n\n> Nonetheless, I'm using \n\n```sh\nif [ \"x$SAGE_ATLAS_LIB\" != \"x\" ]; then\n```\n\n\nThough quite weird in the presence of\n\n```sh\nif [ \"$SAGE_LOCAL\" = \"\" ]; then\n   echo \"SAGE_LOCAL undefined ... exiting\"\n   echo \"Maybe run 'sage -sh'?\"\n   exit 1\nfi\n```\n\n\nThe \"style\" of autotools is IMHO targeted at (or demanded by) other purposes. We wouldn't discuss the C \"coding style\" of e.g. Cython either... ;-)\n\nReadability and maintainability also count.",
+    "created_at": "2010-09-20T15:42:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9951",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9951#issuecomment-99263",
+    "user": "leif"
+}
+```
 
 Replying to [comment:10 jhpalmieri]:
 > This is an amusingly large amount of discussion [...]
@@ -245,37 +415,92 @@ The "style" of autotools is IMHO targeted at (or demanded by) other purposes. We
 Readability and maintainability also count.
 
 
+
 ---
 
-Comment by leif created at 2010-09-20 15:42:19
+archive/issue_comments_099264.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-09-20T15:42:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9951",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9951#issuecomment-99264",
+    "user": "leif"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by leif created at 2010-09-20 15:51:39
+archive/issue_comments_099265.json:
+```json
+{
+    "body": "P.S.: If the (unescaped) `$` hadn't been there in the first place, the first \"comment\" (by me) would have been \"positive review\". :)",
+    "created_at": "2010-09-20T15:51:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9951",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9951#issuecomment-99265",
+    "user": "leif"
+}
+```
 
 P.S.: If the (unescaped) `$` hadn't been there in the first place, the first "comment" (by me) would have been "positive review". :)
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-09-20 16:04:37
+archive/issue_comments_099266.json:
+```json
+{
+    "body": "Oh, so it's my fault, is it?  ;)",
+    "created_at": "2010-09-20T16:04:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9951",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9951#issuecomment-99266",
+    "user": "jhpalmieri"
+}
+```
 
 Oh, so it's my fault, is it?  ;)
 
 
----
-
-Comment by leif created at 2010-09-20 16:08:37
-
-Yeah, never raise such issues when *both* Dave and me are involved! (We have our separate tickets for endless discussions.)
-
 
 ---
 
-Comment by drkirkby created at 2010-09-20 16:44:23
+archive/issue_comments_099267.json:
+```json
+{
+    "body": "Yeah, never raise such issues when **both** Dave and me are involved! (We have our separate tickets for endless discussions.)",
+    "created_at": "2010-09-20T16:08:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9951",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9951#issuecomment-99267",
+    "user": "leif"
+}
+```
+
+Yeah, never raise such issues when **both** Dave and me are involved! (We have our separate tickets for endless discussions.)
+
+
+
+---
+
+archive/issue_comments_099268.json:
+```json
+{
+    "body": "Replying to [comment:10 jhpalmieri]:\n> This is an amusingly large amount of discussion for a ticket which will deals with an extremely unusual case. \n\nYes, it is rather a case of the bike shed problem. \n\nhttp://en.wikipedia.org/wiki/Parkinson%27s_Law_of_Triviality\n\nThis is the reason I was not willing to write anything for the Sage Developer's Guide about writing shell scripts - note there was a discussion about this matter on sage-devel. Lot's of people have their own ideas, and coming to any sort of agreement is difficult. \n\nDave",
+    "created_at": "2010-09-20T16:44:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9951",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9951#issuecomment-99268",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:10 jhpalmieri]:
 > This is an amusingly large amount of discussion for a ticket which will deals with an extremely unusual case. 
@@ -289,8 +514,19 @@ This is the reason I was not willing to write anything for the Sage Developer's 
 Dave
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-29 08:40:29
+archive/issue_comments_099269.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-09-29T08:40:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9951",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9951#issuecomment-99269",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed

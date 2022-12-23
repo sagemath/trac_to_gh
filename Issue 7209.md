@@ -1,33 +1,82 @@
 # Issue 7209: Make `sage -coverage` aware of TestSuite
 
-Issue created by migration from https://trac.sagemath.org/ticket/7209
-
-Original creator: nthiery
-
-Original creation time: 2009-10-14 13:50:22
-
+archive/issues_007209.json:
+```json
+{
+    "body": "Assignee: nthiery\n\nCC:  sage-combinat\n\nWith the attached patch, sage -coverage looks for either a loads/dumps test or TestSuite, and suggests using the later.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7209\n\n",
+    "created_at": "2009-10-14T13:50:22Z",
+    "labels": [
+        "doctest coverage",
+        "major",
+        "enhancement"
+    ],
+    "title": "Make `sage -coverage` aware of TestSuite",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7209",
+    "user": "nthiery"
+}
+```
 Assignee: nthiery
 
 CC:  sage-combinat
 
 With the attached patch, sage -coverage looks for either a loads/dumps test or TestSuite, and suggests using the later.
 
+Issue created by migration from https://trac.sagemath.org/ticket/7209
+
+
+
+
 
 ---
 
-Comment by nthiery created at 2009-10-14 13:55:04
+archive/issue_comments_059828.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-10-14T13:55:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7209",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7209#issuecomment-59828",
+    "user": "nthiery"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_059829.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-10-14T14:09:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7209",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7209#issuecomment-59829",
+    "user": "nthiery"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by hivert created at 2009-10-19 19:50:54
+archive/issue_comments_059830.json:
+```json
+{
+    "body": "With the new category framework there will be a lot of parent which will be tested by the testsuite machinery. It is very useful that sage-coverage stop complaining about missing `s == loads(dumps(s))` because it is done during\n`TestSuite(s).run()`. The patch looks good and works. Positive review. \n\nCheers,\n\nFlorent",
+    "created_at": "2009-10-19T19:50:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7209",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7209#issuecomment-59830",
+    "user": "hivert"
+}
+```
 
 With the new category framework there will be a lot of parent which will be tested by the testsuite machinery. It is very useful that sage-coverage stop complaining about missing `s == loads(dumps(s))` because it is done during
 `TestSuite(s).run()`. The patch looks good and works. Positive review. 
@@ -37,30 +86,74 @@ Cheers,
 Florent
 
 
+
 ---
 
-Comment by hivert created at 2009-10-19 19:50:54
+archive/issue_comments_059831.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"TestSuite, coverage\".",
+    "created_at": "2009-10-19T19:50:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7209",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7209#issuecomment-59831",
+    "user": "hivert"
+}
+```
 
 Changing keywords from "" to "TestSuite, coverage".
 
 
+
 ---
 
-Comment by hivert created at 2009-10-19 19:50:54
+archive/issue_comments_059832.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-10-19T19:50:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7209",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7209#issuecomment-59832",
+    "user": "hivert"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-10-19 20:20:57
+archive/issue_comments_059833.json:
+```json
+{
+    "body": "Notice that #5819 is somewhat related to this. It would be nice to fix that issue eventually...",
+    "created_at": "2009-10-19T20:20:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7209",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7209#issuecomment-59833",
+    "user": "jhpalmieri"
+}
+```
 
 Notice that #5819 is somewhat related to this. It would be nice to fix that issue eventually...
 
 
+
 ---
 
-Comment by hivert created at 2009-10-19 20:57:50
+archive/issue_comments_059834.json:
+```json
+{
+    "body": "Replying to [comment:5 jhpalmieri]:\n> Notice that #5819 is somewhat related to this. It would be nice to fix that issue eventually...\n\nSure. But right now our primary goal is to finish the category stuff ASAP...\nI'm sorry for this but we really have to take the straight line :-)\n\nCheers,\n\nFlorent",
+    "created_at": "2009-10-19T20:57:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7209",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7209#issuecomment-59834",
+    "user": "hivert"
+}
+```
 
 Replying to [comment:5 jhpalmieri]:
 > Notice that #5819 is somewhat related to this. It would be nice to fix that issue eventually...
@@ -73,8 +166,19 @@ Cheers,
 Florent
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-21 04:01:53
+archive/issue_comments_059835.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-10-21T04:01:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7209",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7209#issuecomment-59835",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

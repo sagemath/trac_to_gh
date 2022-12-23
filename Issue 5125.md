@@ -1,11 +1,21 @@
 # Issue 5125: Ideal.basis_is_groebner() may return wrong results
 
-Issue created by migration from https://trac.sagemath.org/ticket/5125
-
-Original creator: malb
-
-Original creation time: 2009-01-29 00:02:15
-
+archive/issues_005125.json:
+```json
+{
+    "body": "Assignee: malb\n\nCC:  john_perry\n\nFor the attached list, `Ideal(gb).basis_is_groebner()` returns `True` but the basis is not a Gr\u00f6bner basis!\n\nThe code in question:\n\n\n```\n    def basis_is_groebner(self, singular=singular_default):\n        self.ring()._singular_().set_ring()\n\n        F = singular( self.gens(), \"module\" )\n        LTF = singular( [f.lt() for f in self.gens()] , \"module\" )\n\n        M = (F * LTF.syz()).reduce(self._singular_())\n\n        for i in range(M.nrows()):\n            if int(singular.eval(\"%s[1][%s+1]!=0\"%(M.name(),i))):\n                return False\n\n        self._singular_().attrib('isSB',1)\n        return True\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5125\n\n",
+    "created_at": "2009-01-29T00:02:15Z",
+    "labels": [
+        "commutative algebra",
+        "critical",
+        "bug"
+    ],
+    "title": "Ideal.basis_is_groebner() may return wrong results",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5125",
+    "user": "malb"
+}
+```
 Assignee: malb
 
 CC:  john_perry
@@ -33,61 +43,159 @@ The code in question:
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5125
+
+
+
+
 
 ---
+
+archive/issue_comments_039169.json:
+```json
+{
+    "body": "Attachment\n\nload(\"B.sobj\") this file to test if the bug is fixed.",
+    "created_at": "2009-01-29T00:02:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5125",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5125#issuecomment-39169",
+    "user": "malb"
+}
+```
 
 Attachment
 
 load("B.sobj") this file to test if the bug is fixed.
 
 
----
-
-Comment by john_perry created at 2009-01-30 23:09:05
-
-Wait-- sorry, that doesn't work either. Now things that *are* Groebner bases are considered not to be.
-
 
 ---
+
+archive/issue_comments_039170.json:
+```json
+{
+    "body": "Wait-- sorry, that doesn't work either. Now things that **are** Groebner bases are considered not to be.",
+    "created_at": "2009-01-30T23:09:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5125",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5125#issuecomment-39170",
+    "user": "john_perry"
+}
+```
+
+Wait-- sorry, that doesn't work either. Now things that **are** Groebner bases are considered not to be.
+
+
+
+---
+
+archive/issue_comments_039171.json:
+```json
+{
+    "body": "Attachment\n\nnow it works on `B.sobj` as well as on its groebner basis",
+    "created_at": "2009-01-30T23:24:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5125",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5125#issuecomment-39171",
+    "user": "john_perry"
+}
+```
 
 Attachment
 
 now it works on `B.sobj` as well as on its groebner basis
 
 
+
 ---
 
-Comment by john_perry created at 2009-01-30 23:27:40
+archive/issue_comments_039172.json:
+```json
+{
+    "body": "There were two subtle bugs.\n* The first was that `M` only had one row. Thus, `i` would check only the first element of `M`. Hence unpredictable behavior: sometimes the correct answer, sometimes not.\n* The second was that Singular (for whatever reason) expects the arrays to be indexed by `[row,col]` and not by `[row][col]`.",
+    "created_at": "2009-01-30T23:27:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5125",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5125#issuecomment-39172",
+    "user": "john_perry"
+}
+```
 
 There were two subtle bugs.
- * The first was that `M` only had one row. Thus, `i` would check only the first element of `M`. Hence unpredictable behavior: sometimes the correct answer, sometimes not.
- * The second was that Singular (for whatever reason) expects the arrays to be indexed by `[row,col]` and not by `[row][col]`.
+* The first was that `M` only had one row. Thus, `i` would check only the first element of `M`. Hence unpredictable behavior: sometimes the correct answer, sometimes not.
+* The second was that Singular (for whatever reason) expects the arrays to be indexed by `[row,col]` and not by `[row][col]`.
+
 
 
 ---
 
-Comment by malb created at 2009-01-31 15:29:15
+archive/issue_comments_039173.json:
+```json
+{
+    "body": "apply after basis_is_groebner.patch",
+    "created_at": "2009-01-31T15:29:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5125",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5125#issuecomment-39173",
+    "user": "malb"
+}
+```
 
 apply after basis_is_groebner.patch
 
 
+
 ---
+
+archive/issue_comments_039174.json:
+```json
+{
+    "body": "Attachment\n\nThe attached patch fixes the issue for me. I've added a second patch which documents that the bug is indeed fixed. mabshoff, this patch should definitely go in for 3.3 because right now Sage gives wrong answers!",
+    "created_at": "2009-01-31T15:30:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5125",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5125#issuecomment-39174",
+    "user": "malb"
+}
+```
 
 Attachment
 
 The attached patch fixes the issue for me. I've added a second patch which documents that the bug is indeed fixed. mabshoff, this patch should definitely go in for 3.3 because right now Sage gives wrong answers!
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-02 02:46:16
+archive/issue_comments_039175.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-02-02T02:46:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5125",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5125#issuecomment-39175",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-02 02:46:16
+archive/issue_comments_039176.json:
+```json
+{
+    "body": "Merged both patches in Sage 3.3.alpha4.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-02T02:46:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5125",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5125#issuecomment-39176",
+    "user": "mabshoff"
+}
+```
 
 Merged both patches in Sage 3.3.alpha4.
 

@@ -1,31 +1,82 @@
 # Issue 5968: increase doctest coverage of sage/modular/modsym/modular_symbols.py from 0% to 100%
 
-Issue created by migration from https://trac.sagemath.org/ticket/5968
-
-Original creator: was
-
-Original creation time: 2009-05-03 03:18:16
-
+archive/issues_005968.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  cremona\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5968\n\n",
+    "created_at": "2009-05-03T03:18:16Z",
+    "labels": [
+        "number theory",
+        "major",
+        "bug"
+    ],
+    "title": "increase doctest coverage of sage/modular/modsym/modular_symbols.py from 0% to 100%",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5968",
+    "user": "was"
+}
+```
 Assignee: was
 
 CC:  cremona
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5968
+
+
+
+
 
 ---
+
+archive/issue_comments_047295.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-05-03T05:56:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5968",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5968#issuecomment-47295",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_047296.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-05-03T05:58:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5968",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5968#issuecomment-47296",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-05-04 09:15:17
+archive/issue_comments_047297.json:
+```json
+{
+    "body": "I have one microscopically insignificant quibble: might it not be better to add a couple of minus signs into the `__cmp__` method, changing it to \n\n```\nif not isinstance(other, ModularSymbol):\n    return cmp(type(self), type(other))\nreturn cmp((self.__space,-self.__i,self.__alpha,self.__beta),\n           (other.__space,-other.__i,other.__alpha,other.__beta))\n```\n\n?\n\nThis is somehow the sort order that \"feels most natural\" to me -- so X<sup>2</sup>Y comes before XY<sup>2</sup>. This would then need fewer changes to other files, but of course it means most of the new doctests in your file would need rewriting :-). Also, what is the reasoning behind introducing the space in the `_repr_` method? I would advocate leaving `_repr_` as is unless there is a pressing reason to change it, in order to minimise the likelihood of breaking user code.",
+    "created_at": "2009-05-04T09:15:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5968",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5968#issuecomment-47297",
+    "user": "davidloeffler"
+}
+```
 
 I have one microscopically insignificant quibble: might it not be better to add a couple of minus signs into the `__cmp__` method, changing it to 
 
@@ -41,14 +92,38 @@ return cmp((self.__space,-self.__i,self.__alpha,self.__beta),
 This is somehow the sort order that "feels most natural" to me -- so X<sup>2</sup>Y comes before XY<sup>2</sup>. This would then need fewer changes to other files, but of course it means most of the new doctests in your file would need rewriting :-). Also, what is the reasoning behind introducing the space in the `_repr_` method? I would advocate leaving `_repr_` as is unless there is a pressing reason to change it, in order to minimise the likelihood of breaking user code.
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-05-04 14:36:58
+archive/issue_comments_047298.json:
+```json
+{
+    "body": "Apply over previous two patches",
+    "created_at": "2009-05-04T14:36:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5968",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5968#issuecomment-47298",
+    "user": "davidloeffler"
+}
+```
 
 Apply over previous two patches
 
 
+
 ---
+
+archive/issue_comments_047299.json:
+```json
+{
+    "body": "Attachment\n\nThe new patch above adds the suggested minus sign to give a more \"natural\" sort order, and adjusts the doctests accordingly; I've checked that with this modification all doctests still pass on my machine (32-bit Linux). I take back my comment about the `_repr_` method: all the native Python sequence types print with spaces in, so I agree that a space in modular symbols is better for consistency, and it certainly looks nicer.\n\nIn the process of fixing this I realised that the file `modular_symbols.py` isn't included in the reference manual, so the new patch does that too (and includes some ReST syntax fixes, so the manual page builds correctly and looks nice-ish). \n\nWilliam: I'm happy with your changes, so if you're happy with my subsequent ones, I guess we can call this a positive review.",
+    "created_at": "2009-05-04T14:42:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5968",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5968#issuecomment-47299",
+    "user": "davidloeffler"
+}
+```
 
 Attachment
 
@@ -59,32 +134,76 @@ In the process of fixing this I realised that the file `modular_symbols.py` isn'
 William: I'm happy with your changes, so if you're happy with my subsequent ones, I guess we can call this a positive review.
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-05-10 21:57:06
+archive/issue_comments_047300.json:
+```json
+{
+    "body": "Changing component from number theory to modular forms.",
+    "created_at": "2009-05-10T21:57:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5968",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5968#issuecomment-47300",
+    "user": "davidloeffler"
+}
+```
 
 Changing component from number theory to modular forms.
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-05-10 21:57:06
+archive/issue_comments_047301.json:
+```json
+{
+    "body": "William: just in case you've forgotten about this ticket, it would be good if you could take a quick glance at the changes I made in my third patch above.\n\nBTW, I'm moving this ticket to component \"modular forms\", which seems to be a better fit for it.",
+    "created_at": "2009-05-10T21:57:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5968",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5968#issuecomment-47301",
+    "user": "davidloeffler"
+}
+```
 
 William: just in case you've forgotten about this ticket, it would be good if you could take a quick glance at the changes I made in my third patch above.
 
 BTW, I'm moving this ticket to component "modular forms", which seems to be a better fit for it.
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-05-10 21:57:06
+archive/issue_comments_047302.json:
+```json
+{
+    "body": "Changing assignee from was to craigcitro.",
+    "created_at": "2009-05-10T21:57:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5968",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5968#issuecomment-47302",
+    "user": "davidloeffler"
+}
+```
 
 Changing assignee from was to craigcitro.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-15 14:36:13
+archive/issue_comments_047303.json:
+```json
+{
+    "body": "What is the status here? Let's get it into 4.0 :)\n\nCheers,\n\nMichael",
+    "created_at": "2009-05-15T14:36:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5968",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5968#issuecomment-47303",
+    "user": "mabshoff"
+}
+```
 
 What is the status here? Let's get it into 4.0 :)
 
@@ -93,23 +212,56 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-05-15 14:59:23
+archive/issue_comments_047304.json:
+```json
+{
+    "body": "I'm waiting for was or somebody else to OK my patch (the third one), which just adds a minus sign and changes doctests to match. I've asked John Cremona (cc'ed) to have a look at it if he gets a chance.",
+    "created_at": "2009-05-15T14:59:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5968",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5968#issuecomment-47304",
+    "user": "davidloeffler"
+}
+```
 
 I'm waiting for was or somebody else to OK my patch (the third one), which just adds a minus sign and changes doctests to match. I've asked John Cremona (cc'ed) to have a look at it if he gets a chance.
 
 
+
 ---
 
-Comment by cremona created at 2009-05-15 15:03:32
+archive/issue_comments_047305.json:
+```json
+{
+    "body": "I am doing it *now*!",
+    "created_at": "2009-05-15T15:03:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5968",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5968#issuecomment-47305",
+    "user": "cremona"
+}
+```
 
 I am doing it *now*!
 
 
+
 ---
 
-Comment by cremona created at 2009-05-15 15:29:05
+archive/issue_comments_047306.json:
+```json
+{
+    "body": "Review: applied all 3 patches to 3.4.2 with no problem.  All tests in sage/modular and doc/en/bordeaux_2008 pass.  This is on a 64-bit machine.\n\nI did not build the documentation (it takes such ages)  but looking at the docstrings could not see anything wrong.\n\nLet's roll!",
+    "created_at": "2009-05-15T15:29:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5968",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5968#issuecomment-47306",
+    "user": "cremona"
+}
+```
 
 Review: applied all 3 patches to 3.4.2 with no problem.  All tests in sage/modular and doc/en/bordeaux_2008 pass.  This is on a 64-bit machine.
 
@@ -118,9 +270,20 @@ I did not build the documentation (it takes such ages)  but looking at the docst
 Let's roll!
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-16 01:02:34
+archive/issue_comments_047307.json:
+```json
+{
+    "body": "Merged all three patches in Sage 4.0.alpha0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-05-16T01:02:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5968",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5968#issuecomment-47307",
+    "user": "mabshoff"
+}
+```
 
 Merged all three patches in Sage 4.0.alpha0.
 
@@ -129,8 +292,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-16 01:02:34
+archive/issue_comments_047308.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-05-16T01:02:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5968",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5968#issuecomment-47308",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 6966: Shimura subgroup
 
-Issue created by migration from https://trac.sagemath.org/ticket/6966
-
-Original creator: syazdani
-
-Original creation time: 2009-09-20 03:51:08
-
+archive/issues_006966.json:
+```json
+{
+    "body": "Assignee: craigcitro\n\nKeywords: shimura subgroup\n\nsmall patch to compute the Shimura subgroup of an Abelian subvariety of $J_0(N)$.\n\n\n```\nJ=J0(11)\nJ.shimura_subgroup()\n\nFinite subgroup with invariants [5] over QQ of Abelian variety J0(11) of dimension 1\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6966\n\n",
+    "created_at": "2009-09-20T03:51:08Z",
+    "labels": [
+        "modular forms",
+        "major",
+        "enhancement"
+    ],
+    "title": "Shimura subgroup",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6966",
+    "user": "syazdani"
+}
+```
 Assignee: craigcitro
 
 Keywords: shimura subgroup
@@ -22,28 +32,78 @@ Finite subgroup with invariants [5] over QQ of Abelian variety J0(11) of dimensi
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6966
+
+
+
+
 
 ---
 
-Comment by syazdani created at 2009-09-20 04:26:38
+archive/issue_comments_057633.json:
+```json
+{
+    "body": "computes the Shimura subgroup of J0(N) and its subvarieties.",
+    "created_at": "2009-09-20T04:26:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6966",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6966#issuecomment-57633",
+    "user": "syazdani"
+}
+```
 
 computes the Shimura subgroup of J0(N) and its subvarieties.
 
 
+
 ---
+
+archive/issue_comments_057634.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-09-20T07:15:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6966",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6966#issuecomment-57634",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-22 22:09:19
+archive/issue_comments_057635.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-09-22T22:09:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6966",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6966#issuecomment-57635",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-27 09:36:46
+archive/issue_comments_057636.json:
+```json
+{
+    "body": "There is no 4.1.2.alpha3. Sage 4.1.2.alpha3 was William Stein's release for working on making the notebook a standalone package.",
+    "created_at": "2009-09-27T09:36:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6966",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6966#issuecomment-57636",
+    "user": "mvngu"
+}
+```
 
 There is no 4.1.2.alpha3. Sage 4.1.2.alpha3 was William Stein's release for working on making the notebook a standalone package.

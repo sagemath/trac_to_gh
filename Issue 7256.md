@@ -1,11 +1,21 @@
 # Issue 7256: reset() needs to be improved
 
-Issue created by migration from https://trac.sagemath.org/ticket/7256
-
-Original creator: mhampton
-
-Original creation time: 2009-10-20 19:52:35
-
+archive/issues_007256.json:
+```json
+{
+    "body": "Assignee: wstein\n\nKeywords: reset, notebook,sage-4.1.2\n\nIn sage-4.1.2, reset() causes problems by deleting 'sagenb' from the namespace; there may be other important things deleted as well.\n\nA simple fix might be to add 'sagenb' to the sage.misc.reset.EXCLUDE list.  But perhaps a more extensive rewrite of this function would be better.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7256\n\n",
+    "created_at": "2009-10-20T19:52:35Z",
+    "labels": [
+        "notebook",
+        "major",
+        "bug"
+    ],
+    "title": "reset() needs to be improved",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7256",
+    "user": "mhampton"
+}
+```
 Assignee: wstein
 
 Keywords: reset, notebook,sage-4.1.2
@@ -14,16 +24,42 @@ In sage-4.1.2, reset() causes problems by deleting 'sagenb' from the namespace; 
 
 A simple fix might be to add 'sagenb' to the sage.misc.reset.EXCLUDE list.  But perhaps a more extensive rewrite of this function would be better.
 
+Issue created by migration from https://trac.sagemath.org/ticket/7256
+
+
+
+
 
 ---
 
-Comment by mhampton created at 2009-10-20 19:53:49
+archive/issue_comments_060280.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2009-10-20T19:53:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7256",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7256#issuecomment-60280",
+    "user": "mhampton"
+}
+```
 
 Resolution: duplicate
 
 
+
 ---
 
-Comment by mhampton created at 2009-10-20 19:54:11
+archive/issue_comments_060281.json:
+```json
+{
+    "body": "This is a duplicate of #7255, sorry about that.",
+    "created_at": "2009-10-20T19:54:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7256",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7256#issuecomment-60281",
+    "user": "mhampton"
+}
+```
 
 This is a duplicate of #7255, sorry about that.

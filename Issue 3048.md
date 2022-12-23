@@ -1,60 +1,142 @@
 # Issue 3048: add generic LU decomposition
 
-Issue created by migration from https://trac.sagemath.org/ticket/3048
-
-Original creator: mhansen
-
-Original creation time: 2008-04-27 21:40:02
-
+archive/issues_003048.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  rbeezer rishi yzh\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3048\n\n",
+    "created_at": "2008-04-27T21:40:02Z",
+    "labels": [
+        "linear algebra",
+        "minor",
+        "enhancement"
+    ],
+    "title": "add generic LU decomposition",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3048",
+    "user": "mhansen"
+}
+```
 Assignee: was
 
 CC:  rbeezer rishi yzh
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3048
+
+
+
+
 
 ---
+
+archive/issue_comments_020985.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-04-27T21:41:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3048",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3048#issuecomment-20985",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2008-04-27 21:41:40
+archive/issue_comments_020986.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-04-27T21:41:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3048",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3048#issuecomment-20986",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mhansen created at 2008-04-27 21:41:40
+archive/issue_comments_020987.json:
+```json
+{
+    "body": "Changing assignee from was to mhansen.",
+    "created_at": "2008-04-27T21:41:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3048",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3048#issuecomment-20987",
+    "user": "mhansen"
+}
+```
 
 Changing assignee from was to mhansen.
 
 
+
 ---
 
-Comment by dmharvey created at 2008-05-01 06:02:19
+archive/issue_comments_020988.json:
+```json
+{
+    "body": "Couple of comments:\n\n* in the docstring, I want to *see* the decomposition for at least one example. I want to see three matrices of the right form! Is the permutation non-trivial in that example? Can you give examples that give the code a workout? For example, get the test code to loop over all elements of S4 and construct examples with each permutation.\n* does it work in the boundary cases of 0x0 and 1x1 matrices. These should be in the docstring.\n* the docstring should mention that we are working over the fraction field, so this doesn't make sense for example over a non-domain\n* what is the complexity? in terms of ring operations as a function of the matrix dimension? Is it cubic? (would be nice to verify this empirically for example over some GF)\n* you might want to mention that the algorithm is probably not very numerically stable for non-exact rings (or correct me if I'm wrong about this!)",
+    "created_at": "2008-05-01T06:02:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3048",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3048#issuecomment-20988",
+    "user": "dmharvey"
+}
+```
 
 Couple of comments:
 
- * in the docstring, I want to *see* the decomposition for at least one example. I want to see three matrices of the right form! Is the permutation non-trivial in that example? Can you give examples that give the code a workout? For example, get the test code to loop over all elements of S4 and construct examples with each permutation.
- * does it work in the boundary cases of 0x0 and 1x1 matrices. These should be in the docstring.
- * the docstring should mention that we are working over the fraction field, so this doesn't make sense for example over a non-domain
- * what is the complexity? in terms of ring operations as a function of the matrix dimension? Is it cubic? (would be nice to verify this empirically for example over some GF)
- * you might want to mention that the algorithm is probably not very numerically stable for non-exact rings (or correct me if I'm wrong about this!)
+* in the docstring, I want to *see* the decomposition for at least one example. I want to see three matrices of the right form! Is the permutation non-trivial in that example? Can you give examples that give the code a workout? For example, get the test code to loop over all elements of S4 and construct examples with each permutation.
+* does it work in the boundary cases of 0x0 and 1x1 matrices. These should be in the docstring.
+* the docstring should mention that we are working over the fraction field, so this doesn't make sense for example over a non-domain
+* what is the complexity? in terms of ring operations as a function of the matrix dimension? Is it cubic? (would be nice to verify this empirically for example over some GF)
+* you might want to mention that the algorithm is probably not very numerically stable for non-exact rings (or correct me if I'm wrong about this!)
+
 
 
 ---
 
-Comment by mhansen created at 2008-05-01 06:08:10
+archive/issue_comments_020989.json:
+```json
+{
+    "body": "Thanks for the review.  I'll try to get around to these sometime here in the near future.",
+    "created_at": "2008-05-01T06:08:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3048",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3048#issuecomment-20989",
+    "user": "mhansen"
+}
+```
 
 Thanks for the review.  I'll try to get around to these sometime here in the near future.
 
 
+
 ---
 
-Comment by jason created at 2009-06-04 22:48:57
+archive/issue_comments_020990.json:
+```json
+{
+    "body": "Another implementation, based on modifying echelon_form (this isn't PLU, just LU, and it still has leftover cruft from the echelon_form function\n\n\n```\n    def _lu_decomposition_in_place_classical(self):\n        \"\"\"\n        Return a matrix such that the lower-triangular part of the\n        *pivot columns* is L (diagonal of L is assumed to be all\n        ones).  U is found by taking the upper-triangular (including\n        diagonal) submatrix of pivot columns, then inserting the\n        non-pivot columns in the appropriate places.  We should have\n        self=L*U.\n        \n        EXAMPLES::\n        \n            sage: t = matrix(QQ, 3, range(9)); t\n            [0 1 2]\n            [3 4 5]\n            [6 7 8]\n            sage: E = t._echelon_in_place_classical(); t\n            [ 1  0 -1]\n            [ 0  1  2]\n            [ 0  0  0]\n        \"\"\"\n        tm = verbose('generic in-place Gauss elimination on %s x %s matrix'%(self._nrows, self._ncols))\n        cdef Py_ssize_t start_row, c, r, nr, nc, i\n        if self.fetch('in_echelon_form'):\n            return\n\n        self.check_mutability()\n        cdef Matrix A\n\n        nr = self._nrows\n        nc = self._ncols\n        A = self\n        \n        start_row = 0\n        pivots = []\n\n        for c from 0 <= c < nc:\n            print \"checking column \", c\n            if PyErr_CheckSignals(): raise KeyboardInterrupt\n            for r from start_row <= r < nr:\n                print \"checking row \", r\n                if A.get_unsafe(r, c):\n                    #pivots.append(c)\n                    #a_inverse = ~A.get_unsafe(r,c)\n                    #A.rescale_row(r, a_inverse, c)\n                    # We assume that we do not have to do row swaps\n                    # (later, we'll implement PLU decomposition)\n                    if r != start_row:\n                        raise ValueError, \"row reduction required row swaps, which is not allowed in generic LU decomposition\"\n                    #A.swap_rows(r, start_row)\n                    for i from start_row < i < nr:\n                        if A.get_unsafe(i,c):\n                            minus_b = -A.get_unsafe(i, c)*~A.get_unsafe(r,c)\n                            #print \"replacing row \", i, \" with i + \", minus_b, \" times row \", start_row, \", starting at column \", c\n                            #print self.str()\n                                                        \n                            A.add_multiple_of_row(i, start_row, minus_b, c)\n                            A.set_unsafe(i,c,-minus_b)\n                    start_row = start_row + 1\n                    break\n        #self.cache('pivots', pivots)\n        #self.cache('in_echelon_form', True)\n        #self.cache('echelon_form', self)\n        verbose('done with LU decomposition', tm)\n```\n",
+    "created_at": "2009-06-04T22:48:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3048",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3048#issuecomment-20990",
+    "user": "jason"
+}
+```
 
 Another implementation, based on modifying echelon_form (this isn't PLU, just LU, and it still has leftover cruft from the echelon_form function
 
@@ -127,9 +209,20 @@ Another implementation, based on modifying echelon_form (this isn't PLU, just LU
 
 
 
+
 ---
 
-Comment by jason created at 2009-06-04 23:56:39
+archive/issue_comments_020991.json:
+```json
+{
+    "body": "Here is another try.  Next step is maybe to compare the speed of Mike's implementation and my reworking of echelon_form.\n\nThen maybe we can change the generic determinant algorithm to use this and be really fast.\n\n\n```\n    def _lu_decomposition_(self):\n        \"\"\"\n        Return the PLU decomposition P, L, and U such that self=P*L*U.\n        If self is an mxn matrix, then P is an mxm permutation matrix,\n        L is a mxm unit lower-triangular matrix, and U is an mxn\n        upper-triangular matrix.\n        \n        The decomposition is done over the fraction field of self.base_ring().\n        \n        EXAMPLES::\n        \n        \"\"\"\n        tm = verbose('generic in-place LU decomposition on %s x %s matrix'%(self._nrows, self._ncols))\n        cdef Py_ssize_t start_row, c, r, nr, nc, i\n        x = self.fetch('PLU')\n        if x is not None:\n            return x[0].matrix(), x[1], x[2]\n\n        cdef Matrix A, L\n\n        nr = self._nrows\n        nc = self._ncols\n        R = self.base_ring().fraction_field()\n        A = self.change_ring(R).copy()\n        L = A.new_matrix(nr, nr)\n\n        one = R(1)\n        for r from 0<= r < nr:\n            L.set_unsafe(r,r,one)\n        \n        from sage.groups.all import SymmetricGroup \n        S = SymmetricGroup(nr)\n        p = S(1)\n\n        start_row = 0\n        pivots = []\n        for c from 0 <= c < nc:\n            if PyErr_CheckSignals(): raise KeyboardInterrupt\n            for r from start_row <= r < nr:\n                if A.get_unsafe(r, c):\n                    pivots.append(c)\n                    if r != start_row:\n                        A.swap_rows(r, start_row)\n                        p *= S((r+1, start_row+1))\n                    a_inverse = ~A.get_unsafe(start_row,c)\n                    for i from start_row < i < nr:\n                        if A.get_unsafe(i,c):\n                            b = A.get_unsafe(i, c)*a_inverse\n                            A.add_multiple_of_row(i, start_row, -b, c)\n                            L.set_unsafe(i,start_row,b)\n                    start_row += 1\n                    break\n        self.cache('pivots', pivots)\n        self.cache('PLU', (p,L,A))\n        verbose('done with LU decomposition', tm)            \n        return p.matrix(), L, A\n```\n",
+    "created_at": "2009-06-04T23:56:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3048",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3048#issuecomment-20991",
+    "user": "jason"
+}
+```
 
 Here is another try.  Next step is maybe to compare the speed of Mike's implementation and my reworking of echelon_form.
 
@@ -197,75 +290,187 @@ Then maybe we can change the generic determinant algorithm to use this and be re
 
 
 
+
 ---
 
-Comment by jason created at 2009-06-04 23:58:02
+archive/issue_comments_020992.json:
+```json
+{
+    "body": "Also, it would be nice to implement partial pivoting (for this and for generic echelon_form), which would help with the numeric error (and really be easy, in fact).",
+    "created_at": "2009-06-04T23:58:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3048",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3048#issuecomment-20992",
+    "user": "jason"
+}
+```
 
 Also, it would be nice to implement partial pivoting (for this and for generic echelon_form), which would help with the numeric error (and really be easy, in fact).
 
 
+
 ---
 
-Comment by jason created at 2009-06-05 04:43:18
+archive/issue_comments_020993.json:
+```json
+{
+    "body": "The new patch is based on the echelon_form function.  It also touches several other computations that should benefit from lu decompositions.",
+    "created_at": "2009-06-05T04:43:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3048",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3048#issuecomment-20993",
+    "user": "jason"
+}
+```
 
 The new patch is based on the echelon_form function.  It also touches several other computations that should benefit from lu decompositions.
 
 
+
 ---
 
-Comment by jason created at 2009-06-05 04:43:49
+archive/issue_comments_020994.json:
+```json
+{
+    "body": "The lu_decomposition patch still needs documentation and timing tests to make sure there are no regressions in the affected functions.",
+    "created_at": "2009-06-05T04:43:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3048",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3048#issuecomment-20994",
+    "user": "jason"
+}
+```
 
 The lu_decomposition patch still needs documentation and timing tests to make sure there are no regressions in the affected functions.
 
 
+
 ---
 
-Comment by jason created at 2009-06-05 04:47:36
+archive/issue_comments_020995.json:
+```json
+{
+    "body": "sorry, I accidentally changed the description...",
+    "created_at": "2009-06-05T04:47:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3048",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3048#issuecomment-20995",
+    "user": "jason"
+}
+```
 
 sorry, I accidentally changed the description...
 
 
+
 ---
 
-Comment by jason created at 2009-06-05 12:13:16
+archive/issue_comments_020996.json:
+```json
+{
+    "body": "Grr...We need to special-case symbolics because the entire symbolic ring is considered inexact, even though most of the time we are working with symbolics, we are working with exact things.  The lu decomposition of a matrix filled with variables doesn't work now because it assumes that you need partial pivoting.  We need to make sure that if we have variables, we don't use partial pivoting.",
+    "created_at": "2009-06-05T12:13:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3048",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3048#issuecomment-20996",
+    "user": "jason"
+}
+```
 
 Grr...We need to special-case symbolics because the entire symbolic ring is considered inexact, even though most of the time we are working with symbolics, we are working with exact things.  The lu decomposition of a matrix filled with variables doesn't work now because it assumes that you need partial pivoting.  We need to make sure that if we have variables, we don't use partial pivoting.
 
 
+
 ---
 
-Comment by jason created at 2009-09-29 05:54:36
+archive/issue_comments_020997.json:
+```json
+{
+    "body": "Changing assignee from mhansen to jason.",
+    "created_at": "2009-09-29T05:54:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3048",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3048#issuecomment-20997",
+    "user": "jason"
+}
+```
 
 Changing assignee from mhansen to jason.
 
 
+
 ---
 
-Comment by jason created at 2009-09-29 05:54:36
+archive/issue_comments_020998.json:
+```json
+{
+    "body": "Changing status from assigned to new.",
+    "created_at": "2009-09-29T05:54:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3048",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3048#issuecomment-20998",
+    "user": "jason"
+}
+```
 
 Changing status from assigned to new.
 
 
+
 ---
 
-Comment by jason created at 2010-04-15 19:04:13
+archive/issue_comments_020999.json:
+```json
+{
+    "body": "Things to do:\n\n1. This patch does an insane amount of copying because it actually swaps rows, when it should just keep track of indices without actually doing row swaps\n2. implement scaled partial pivoting\n3. implement complete pivoting",
+    "created_at": "2010-04-15T19:04:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3048",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3048#issuecomment-20999",
+    "user": "jason"
+}
+```
 
 Things to do:
 
- 1. This patch does an insane amount of copying because it actually swaps rows, when it should just keep track of indices without actually doing row swaps
- 1. implement scaled partial pivoting
- 1. implement complete pivoting
+1. This patch does an insane amount of copying because it actually swaps rows, when it should just keep track of indices without actually doing row swaps
+2. implement scaled partial pivoting
+3. implement complete pivoting
+
 
 
 ---
+
+archive/issue_comments_021000.json:
+```json
+{
+    "body": "Attachment\n\napply instead of previous patch",
+    "created_at": "2010-04-22T02:57:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3048",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3048#issuecomment-21000",
+    "user": "jason"
+}
+```
 
 Attachment
 
 apply instead of previous patch
 
 
+
 ---
 
-Comment by jason created at 2010-04-22 03:06:04
+archive/issue_comments_021001.json:
+```json
+{
+    "body": "posted a work-in-progress patch that is still broken, but a bit closer.  One nice thing is that it uses maxima to get the lu decomposition of a symbolic matrix.",
+    "created_at": "2010-04-22T03:06:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3048",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3048#issuecomment-21001",
+    "user": "jason"
+}
+```
 
 posted a work-in-progress patch that is still broken, but a bit closer.  One nice thing is that it uses maxima to get the lu decomposition of a symbolic matrix.

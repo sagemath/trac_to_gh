@@ -1,98 +1,208 @@
 # Issue 6342: notebook -- fix that the slideshow mode in the notebook utterly completely broken
 
-Issue created by migration from https://trac.sagemath.org/ticket/6342
-
-Original creator: was
-
-Original creation time: 2009-06-16 22:15:54
-
+archive/issues_006342.json:
+```json
+{
+    "body": "Assignee: boothby\n\nThis patch turns slideshow mode into something actually pretty useful.  It is maybe uglier than it was 2 years ago.  It is maybe \"lame\"-ish, perhaps.  But it is usable!  Which is a million times better than the literally buggy situation now.  \n\nThe actual patch attached here tracks both the cell_list (the compute cells), and adds a new list allcell_list, which contains all the cells (not just the compute cells).\n\nIssue created by migration from https://trac.sagemath.org/ticket/6342\n\n",
+    "created_at": "2009-06-16T22:15:54Z",
+    "labels": [
+        "notebook",
+        "major",
+        "bug"
+    ],
+    "title": "notebook -- fix that the slideshow mode in the notebook utterly completely broken",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6342",
+    "user": "was"
+}
+```
 Assignee: boothby
 
 This patch turns slideshow mode into something actually pretty useful.  It is maybe uglier than it was 2 years ago.  It is maybe "lame"-ish, perhaps.  But it is usable!  Which is a million times better than the literally buggy situation now.  
 
 The actual patch attached here tracks both the cell_list (the compute cells), and adds a new list allcell_list, which contains all the cells (not just the compute cells).
 
+Issue created by migration from https://trac.sagemath.org/ticket/6342
+
+
+
+
 
 ---
+
+archive/issue_comments_050670.json:
+```json
+{
+    "body": "Attachment\n\nUnder Ubuntu j & firefox, I can repeatably hit an infinite memory consumption:\n\n1. Switch into slideshow mode\n2. Shift-click to create an html cell above the first cell\n3. Enter the text, `This is some $foo$`\n4. Shift-enter to save the html cell\n5. Shift-click to edit the html cell just created\n6. Quickly kill firefox before it takes down your system.",
+    "created_at": "2009-06-16T22:41:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6342",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6342#issuecomment-50670",
+    "user": "boothby"
+}
+```
 
 Attachment
 
 Under Ubuntu j & firefox, I can repeatably hit an infinite memory consumption:
 
- 1. Switch into slideshow mode
- 1. Shift-click to create an html cell above the first cell
- 1. Enter the text, `This is some $foo$`
- 1. Shift-enter to save the html cell
- 1. Shift-click to edit the html cell just created
- 1. Quickly kill firefox before it takes down your system.
+1. Switch into slideshow mode
+2. Shift-click to create an html cell above the first cell
+3. Enter the text, `This is some $foo$`
+4. Shift-enter to save the html cell
+5. Shift-click to edit the html cell just created
+6. Quickly kill firefox before it takes down your system.
+
 
 
 ---
 
-Comment by boothby created at 2009-06-16 22:44:22
+archive/issue_comments_050671.json:
+```json
+{
+    "body": "notes on the above comment:\n\nStep 1 may be omitted, this bug is active in normal mode.  Step 5 should read, \"double-click\".",
+    "created_at": "2009-06-16T22:44:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6342",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6342#issuecomment-50671",
+    "user": "boothby"
+}
+```
 
 notes on the above comment:
 
 Step 1 may be omitted, this bug is active in normal mode.  Step 5 should read, "double-click".
 
 
+
 ---
+
+archive/issue_comments_050672.json:
+```json
+{
+    "body": "Attachment\n\na tiny little bugfix",
+    "created_at": "2009-06-17T10:28:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6342",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6342#issuecomment-50672",
+    "user": "was"
+}
+```
 
 Attachment
 
 a tiny little bugfix
 
 
+
 ---
+
+archive/issue_comments_050673.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-06-17T10:29:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6342",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6342#issuecomment-50673",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2009-06-17 19:36:19
+archive/issue_comments_050674.json:
+```json
+{
+    "body": "make it so slides delimited by text cells with <hr>'s; lighten up control css",
+    "created_at": "2009-06-17T19:36:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6342",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6342#issuecomment-50674",
+    "user": "was"
+}
+```
 
 make it so slides delimited by text cells with <hr>'s; lighten up control css
 
 
+
 ---
+
+archive/issue_comments_050675.json:
+```json
+{
+    "body": "Attachment\n\nProblems:\n\n1. Shift-enter is broken in html cells\n2. Up & down buttons are completely broken (as are the pgup/pgdn keys):\n   a. Without any <hr> tags, nothing happens at all\n   b. With one <hr> tag, one can view either the first cell or just the text cell with the <hr> all by itself.\n \nComments:\n\n1. I liked the previous version which showed cells after the current one.\n2. It would be nice if you didn't have to have your mouse in a cell for the pgdn/pgup keys to work. (this would take some effort, as we have no global key handling right now -- so this should be handled in another ticket)",
+    "created_at": "2009-06-17T20:39:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6342",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6342#issuecomment-50675",
+    "user": "boothby"
+}
+```
 
 Attachment
 
 Problems:
 
- 1. Shift-enter is broken in html cells
- 1. Up & down buttons are completely broken (as are the pgup/pgdn keys):
+1. Shift-enter is broken in html cells
+2. Up & down buttons are completely broken (as are the pgup/pgdn keys):
    a. Without any <hr> tags, nothing happens at all
-   a. With one <hr> tag, one can view either the first cell or just the text cell with the <hr> all by itself.
+   b. With one <hr> tag, one can view either the first cell or just the text cell with the <hr> all by itself.
  
 Comments:
 
- 1. I liked the previous version which showed cells after the current one.
- 1. It would be nice if you didn't have to have your mouse in a cell for the pgdn/pgup keys to work. (this would take some effort, as we have no global key handling right now -- so this should be handled in another ticket)
+1. I liked the previous version which showed cells after the current one.
+2. It would be nice if you didn't have to have your mouse in a cell for the pgdn/pgup keys to work. (this would take some effort, as we have no global key handling right now -- so this should be handled in another ticket)
+
 
 
 ---
 
-Comment by boothby created at 2009-06-17 21:08:54
+archive/issue_comments_050676.json:
+```json
+{
+    "body": "I just read the new entry in the tutorial.  According to the specified behavior (which I don't like), the up&down buttons are almost working -- however,\n\n1. Deleting a cell in a 'frame' jumps back to the previous frame, even if it wasn't the first cell in the frame.\n2. The first frame shows up fine, but the second and subsequent frames don't show any code cells -- it's just the HTML cells, and there's no way to view the code cells.  Interestingly, if you add a few cells to the frame, they don't show up -- but after 10 or 20, they start appearing.  However, if you switch out of and back into the frame, it's back to not showing any code cells.\n3. The counter / progress meter shows the number of cells, not the number of frames.  This is counterintuitive.\n\nReasons I don't like the specified behavior:\n\n1. The resulting code is more complex.\n2. Using <hr>'s, while documented, is not intuitive.  I'd never have thought of that, and I'd probably assume that the slideshow mode was just broken crap.\n\nBy contrast, the version before part-2.patch was clean, simple and intuitive.",
+    "created_at": "2009-06-17T21:08:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6342",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6342#issuecomment-50676",
+    "user": "boothby"
+}
+```
 
 I just read the new entry in the tutorial.  According to the specified behavior (which I don't like), the up&down buttons are almost working -- however,
 
- 1. Deleting a cell in a 'frame' jumps back to the previous frame, even if it wasn't the first cell in the frame.
- 1. The first frame shows up fine, but the second and subsequent frames don't show any code cells -- it's just the HTML cells, and there's no way to view the code cells.  Interestingly, if you add a few cells to the frame, they don't show up -- but after 10 or 20, they start appearing.  However, if you switch out of and back into the frame, it's back to not showing any code cells.
- 1. The counter / progress meter shows the number of cells, not the number of frames.  This is counterintuitive.
+1. Deleting a cell in a 'frame' jumps back to the previous frame, even if it wasn't the first cell in the frame.
+2. The first frame shows up fine, but the second and subsequent frames don't show any code cells -- it's just the HTML cells, and there's no way to view the code cells.  Interestingly, if you add a few cells to the frame, they don't show up -- but after 10 or 20, they start appearing.  However, if you switch out of and back into the frame, it's back to not showing any code cells.
+3. The counter / progress meter shows the number of cells, not the number of frames.  This is counterintuitive.
 
 Reasons I don't like the specified behavior:
 
- 1. The resulting code is more complex.
- 1. Using <hr>'s, while documented, is not intuitive.  I'd never have thought of that, and I'd probably assume that the slideshow mode was just broken crap.
+1. The resulting code is more complex.
+2. Using <hr>'s, while documented, is not intuitive.  I'd never have thought of that, and I'd probably assume that the slideshow mode was just broken crap.
 
 By contrast, the version before part-2.patch was clean, simple and intuitive.
 
 
+
 ---
 
-Comment by was created at 2009-06-17 22:50:11
+archive/issue_comments_050677.json:
+```json
+{
+    "body": "> The first frame shows up fine, but the second and subsequent frames don't show any code cells \n\nThis is an unintended bug which I'm fixing. \n\n> Reasons I don't like the specified behavior:\n>   1. The resulting code is more complex.\n>   2. Using <hr>'s, while documented, is not intuitive. I'd never have thought of that, and I'd probably assume that the slideshow mode was just broken crap. \n> By contrast, the version before part-2.patch was clean, simple and intuitive. \n\nI'm trying to give an *actual* talk, and in preparing it, I learned that the version before part-2.patch was actually totally broken crap for actual use.  In contrast, what I've just written is really awesome for actual use.   There is a huge difference between imagining maybe giving a talk and actually writing a talk you're going to give in front of a 130 people.  It is absolutely essential to have slides that are given by a marker.  <hr> is a very reasonable choice for a marker.\n\n> 3. The counter / progress meter shows the number of cells, not the number of frames. This is counterintuitive. \n\nIt's going to be a lot more work to implement the counter to show the frames, and I decided not to implement that in the interest of iterative development.",
+    "created_at": "2009-06-17T22:50:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6342",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6342#issuecomment-50677",
+    "user": "was"
+}
+```
 
 > The first frame shows up fine, but the second and subsequent frames don't show any code cells 
 
@@ -110,56 +220,135 @@ I'm trying to give an *actual* talk, and in preparing it, I learned that the ver
 It's going to be a lot more work to implement the counter to show the frames, and I decided not to implement that in the interest of iterative development.
 
 
+
 ---
+
+archive/issue_comments_050678.json:
+```json
+{
+    "body": "Attachment\n\nSlideshow mode now works, shift-enter on HTML cells is still broken.",
+    "created_at": "2009-06-17T23:46:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6342",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6342#issuecomment-50678",
+    "user": "boothby"
+}
+```
 
 Attachment
 
 Slideshow mode now works, shift-enter on HTML cells is still broken.
 
 
+
 ---
 
-Comment by boothby created at 2009-06-17 23:47:40
+archive/issue_comments_050679.json:
+```json
+{
+    "body": "Oops, the \"bottom\" button now jumps to the last cell instead of the last frame.",
+    "created_at": "2009-06-17T23:47:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6342",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6342#issuecomment-50679",
+    "user": "boothby"
+}
+```
 
 Oops, the "bottom" button now jumps to the last cell instead of the last frame.
 
 
+
 ---
 
-Comment by rlm created at 2009-06-23 09:07:47
+archive/issue_comments_050680.json:
+```json
+{
+    "body": "It would be nice if there were some way to\n\n1. indicate which hr's delimit slide breaks, and which don't, i.e. if you want to use an hr in the middle of a slide, and\n\n2. allow for slides which don't contain any cells.\n\nRegarding 1, we could even use something like <sage_slide_break> instead",
+    "created_at": "2009-06-23T09:07:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6342",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6342#issuecomment-50680",
+    "user": "rlm"
+}
+```
 
 It would be nice if there were some way to
 
- 1. indicate which hr's delimit slide breaks, and which don't, i.e. if you want to use an hr in the middle of a slide, and
+1. indicate which hr's delimit slide breaks, and which don't, i.e. if you want to use an hr in the middle of a slide, and
 
- 2. allow for slides which don't contain any cells.
+2. allow for slides which don't contain any cells.
 
 Regarding 1, we could even use something like <sage_slide_break> instead
 
 
+
 ---
 
-Comment by rlm created at 2009-06-23 10:34:16
+archive/issue_comments_050681.json:
+```json
+{
+    "body": "I think also if there is a newline at the end of an html block, it cuts the slide after the next cell.",
+    "created_at": "2009-06-23T10:34:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6342",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6342#issuecomment-50681",
+    "user": "rlm"
+}
+```
 
 I think also if there is a newline at the end of an html block, it cuts the slide after the next cell.
 
 
+
 ---
 
-Comment by rlm created at 2009-06-23 10:56:31
+archive/issue_comments_050682.json:
+```json
+{
+    "body": "Adding a cell to the end of a slide is also problematic.",
+    "created_at": "2009-06-23T10:56:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6342",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6342#issuecomment-50682",
+    "user": "rlm"
+}
+```
 
 Adding a cell to the end of a slide is also problematic.
 
 
+
 ---
 
-Comment by boothby created at 2020-03-29 02:12:30
+archive/issue_comments_050683.json:
+```json
+{
+    "body": "Closing deprecated notebook tickets",
+    "created_at": "2020-03-29T02:12:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6342",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6342#issuecomment-50683",
+    "user": "boothby"
+}
+```
 
 Closing deprecated notebook tickets
 
 
+
 ---
 
-Comment by boothby created at 2020-03-29 02:12:30
+archive/issue_comments_050684.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2020-03-29T02:12:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6342",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6342#issuecomment-50684",
+    "user": "boothby"
+}
+```
 
 Resolution: invalid

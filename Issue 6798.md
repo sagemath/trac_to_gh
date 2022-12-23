@@ -1,11 +1,21 @@
 # Issue 6798: fix doctest timeout in modules/vector_double_dense.pyx
 
-Issue created by migration from https://trac.sagemath.org/ticket/6798
-
-Original creator: drkirkby
-
-Original creation time: 2009-08-21 08:16:12
-
+archive/issues_006798.json:
+```json
+{
+    "body": "Assignee: tbd\n\nOn Solaris 10 update 7 (SPARC), the following tests timed out. Both ECL and Maxima were updated - ECL version 9.8.4 (see trac #6564); Maxima version 5.19.1 (see trac #6699). Updated spkgs can be found here. I'm not sure if this is new or not since updating Maxima + ECL, so it may or may not be related to that. \n\nhttp://sage.math.washington.edu/home/kirkby/Solaris-fixes/ecl-9.8.4/\n\nhttp://sage.math.washington.edu/home/kirkby/Solaris-fixes/maxima-5.19.1/\n\n\n```\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nThu Aug 20 20:02:37 BST 2009\ndsage-trial tmp directory doesn't exist - creating ...\nThis script will run the unit tests for DSage\n```\n\n| Sage Version 4.1.1, Release Date: 2009-08-14                       |\n| Type notebook() for the GUI, and license() for information.        |\n<SNIP>\n\n```\nsage -t  \"devel/sage/sage/modules/vector_double_dense.pyx\"\n         [71.4 s]\n\nsage -t  \"devel/sage/sage/lfunctions/sympow.py\"\n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\n*** *** Error: TIMED OUT! *** ***\n         [361.1 s]\nsage -t  \"devel/sage/sage/lfunctions/all.py\"\n         [1.2 s]\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6798\n\n",
+    "created_at": "2009-08-21T08:16:12Z",
+    "labels": [
+        "algebra",
+        "major",
+        "bug"
+    ],
+    "title": "fix doctest timeout in modules/vector_double_dense.pyx",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6798",
+    "user": "drkirkby"
+}
+```
 Assignee: tbd
 
 On Solaris 10 update 7 (SPARC), the following tests timed out. Both ECL and Maxima were updated - ECL version 9.8.4 (see trac #6564); Maxima version 5.19.1 (see trac #6699). Updated spkgs can be found here. I'm not sure if this is new or not since updating Maxima + ECL, so it may or may not be related to that. 
@@ -43,30 +53,78 @@ sage -t  "devel/sage/sage/lfunctions/all.py"
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6798
+
+
+
+
 
 ---
 
-Comment by drkirkby created at 2009-11-09 14:05:41
+archive/issue_comments_055987.json:
+```json
+{
+    "body": "Changing component from algebra to solaris.",
+    "created_at": "2009-11-09T14:05:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6798",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6798#issuecomment-55987",
+    "user": "drkirkby"
+}
+```
 
 Changing component from algebra to solaris.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-12-02 20:52:09
+archive/issue_comments_055988.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2013-12-02T20:52:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6798",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6798#issuecomment-55988",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-12-02 20:52:16
+archive/issue_comments_055989.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2013-12-02T20:52:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6798",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6798#issuecomment-55989",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-12-05 08:07:53
+archive/issue_comments_055990.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2013-12-05T08:07:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6798",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6798#issuecomment-55990",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: invalid

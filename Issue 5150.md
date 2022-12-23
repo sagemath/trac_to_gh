@@ -1,11 +1,21 @@
 # Issue 5150: update Nils-Peter Skoruppa's contributions
 
-Issue created by migration from https://trac.sagemath.org/ticket/5150
-
-Original creator: mvngu
-
-Original creation time: 2009-02-01 12:34:08
-
+archive/issues_005150.json:
+```json
+{
+    "body": "Assignee: tba\n\nCC:  mabshoff schilly\n\nKeywords: devmap\n\nAs the subject says. The devmap entry of Nils-Peter Skoruppa as listed at\n\n\n\nhttp://www.sagemath.org/development-map.html\n\n\n\ndoesn't do justice to his contributions. Looking through #3857, notice that he has also contributed to optimizing some binary quadratic forms code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5150\n\n",
+    "created_at": "2009-02-01T12:34:08Z",
+    "labels": [
+        "website/wiki",
+        "trivial",
+        "bug"
+    ],
+    "title": "update Nils-Peter Skoruppa's contributions",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5150",
+    "user": "mvngu"
+}
+```
 Assignee: tba
 
 CC:  mabshoff schilly
@@ -22,17 +32,45 @@ http://www.sagemath.org/development-map.html
 
 doesn't do justice to his contributions. Looking through #3857, notice that he has also contributed to optimizing some binary quadratic forms code.
 
+Issue created by migration from https://trac.sagemath.org/ticket/5150
+
+
+
+
 
 ---
+
+archive/issue_comments_039400.json:
+```json
+{
+    "body": "Attachment\n\nThe patch `trac_5150.patch` can be applied after applying that of #5148.",
+    "created_at": "2009-02-01T12:37:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5150",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5150#issuecomment-39400",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
 The patch `trac_5150.patch` can be applied after applying that of #5148.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-02 01:59:45
+archive/issue_comments_039401.json:
+```json
+{
+    "body": "This might be troublesome to import into the hg repo, but Harald will see that.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-02T01:59:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5150",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5150#issuecomment-39401",
+    "user": "mabshoff"
+}
+```
 
 This might be troublesome to import into the hg repo, but Harald will see that.
 
@@ -41,9 +79,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-02 17:55:32
+archive/issue_comments_039402.json:
+```json
+{
+    "body": "Harald: #5148 seems to have made it to the website, but this one doesn't seem to have made it yet.\n\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-02T17:55:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5150",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5150#issuecomment-39402",
+    "user": "mabshoff"
+}
+```
 
 Harald: #5148 seems to have made it to the website, but this one doesn't seem to have made it yet.
 
@@ -53,9 +102,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by schilly created at 2009-02-02 18:21:00
+archive/issue_comments_039403.json:
+```json
+{
+    "body": "Replying to [comment:3 mabshoff]:\n> Harald: #5148 seems to have made it to the website, but this one doesn't seem to have made it yet.\n\noh thx, there were two of them. i changed the order of the listed conributions to begin with something specific and then the non specific item.\n\nnote to myself: updated old and new website.",
+    "created_at": "2009-02-02T18:21:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5150",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5150#issuecomment-39403",
+    "user": "schilly"
+}
+```
 
 Replying to [comment:3 mabshoff]:
 > Harald: #5148 seems to have made it to the website, but this one doesn't seem to have made it yet.
@@ -65,9 +125,20 @@ oh thx, there were two of them. i changed the order of the listed conributions t
 note to myself: updated old and new website.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-02 18:23:02
+archive/issue_comments_039404.json:
+```json
+{
+    "body": "Replying to [comment:4 schilly]:\n> Replying to [comment:3 mabshoff]:\n> > Harald: #5148 seems to have made it to the website, but this one doesn't seem to have made it yet.\n> \n> oh thx, there were two of them. i changed the order of the listed conributions to begin with something specific and then the non specific item.\n\nCool. Let me know when you are done so I can close this ticket.\n\n> note to myself: updated old and new website.\n\nnew website == website on the new VMware image? I updated lrs last night, so hopefully that update won't get lost.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-02T18:23:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5150",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5150#issuecomment-39404",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:4 schilly]:
 > Replying to [comment:3 mabshoff]:
@@ -86,9 +157,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by schilly created at 2009-02-02 18:27:04
+archive/issue_comments_039405.json:
+```json
+{
+    "body": "Replying to [comment:5 mabshoff]:\n> Cool. Let me know when you are done so I can close this ticket.\n\nyes, all done\n\n> \n> > note to myself: updated old and new website.\n> \n> new website == website on the new VMware image? I updated lrs last night, so hopefully that update won't get lost.\n\nlrs? please don't overwrite the edited files! william has already deleted them once. since python is newer, i had to edit scripts, changed symlinks, etc. *begging* :)\n\ngreetings harald",
+    "created_at": "2009-02-02T18:27:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5150",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5150#issuecomment-39405",
+    "user": "schilly"
+}
+```
 
 Replying to [comment:5 mabshoff]:
 > Cool. Let me know when you are done so I can close this ticket.
@@ -105,9 +187,20 @@ lrs? please don't overwrite the edited files! william has already deleted them o
 greetings harald
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-02 18:29:29
+archive/issue_comments_039406.json:
+```json
+{
+    "body": "Replying to [comment:6 schilly]:\n\n> lrs? please don't overwrite the edited files! \n\nlrs is an spkg, I just ran gen_html. If I am not supposed to do that I won't do it any more.\n\n> william has already deleted them once. since python is newer, i had to edit scripts, changed symlinks, etc. *begging* :)\n\n:)\n\n> greetings harald\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-02T18:29:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5150",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5150#issuecomment-39406",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:6 schilly]:
 
@@ -126,9 +219,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-02 18:29:47
+archive/issue_comments_039407.json:
+```json
+{
+    "body": "Updated on the website during the Sage 3.3 release cycle.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-02T18:29:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5150",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5150#issuecomment-39407",
+    "user": "mabshoff"
+}
+```
 
 Updated on the website during the Sage 3.3 release cycle.
 
@@ -137,8 +241,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-02 18:29:47
+archive/issue_comments_039408.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-02-02T18:29:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5150",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5150#issuecomment-39408",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

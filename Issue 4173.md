@@ -1,11 +1,21 @@
 # Issue 4173: [with spkg, needs review] Solaris: fix cddlib build problem on Solaris x86
 
-Issue created by migration from https://trac.sagemath.org/ticket/4173
-
-Original creator: mabshoff
-
-Original creation time: 2008-09-23 06:41:00
-
+archive/issues_004173.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nLL and SS are reserved numerical constants on Solaris, but cddlib uses them in allface.c The spkg at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.1.3/alpha1/cddlib-094b.p3.spkg\n\nrenames them so that the spkg now builds out of the box on Solaris.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4173\n\n",
+    "created_at": "2008-09-23T06:41:00Z",
+    "labels": [
+        "porting: Solaris",
+        "major",
+        "bug"
+    ],
+    "title": "[with spkg, needs review] Solaris: fix cddlib build problem on Solaris x86",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4173",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 LL and SS are reserved numerical constants on Solaris, but cddlib uses them in allface.c The spkg at
@@ -18,30 +28,78 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/4173
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-09-23 06:41:07
+archive/issue_comments_030278.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-09-23T06:41:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4173",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4173#issuecomment-30278",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mhansen created at 2008-09-23 21:25:01
+archive/issue_comments_030279.json:
+```json
+{
+    "body": "Looks good to me.",
+    "created_at": "2008-09-23T21:25:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4173",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4173#issuecomment-30279",
+    "user": "mhansen"
+}
+```
 
 Looks good to me.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-23 22:01:36
+archive/issue_comments_030280.json:
+```json
+{
+    "body": "Merged in Sage 3.1.3.alpha1",
+    "created_at": "2008-09-23T22:01:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4173",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4173#issuecomment-30280",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.1.3.alpha1
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-23 22:01:36
+archive/issue_comments_030281.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-09-23T22:01:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4173",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4173#issuecomment-30281",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

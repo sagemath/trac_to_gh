@@ -1,11 +1,21 @@
 # Issue 3926: [with spkg, needs review] fix Macaulay2 building
 
-Issue created by migration from https://trac.sagemath.org/ticket/3926
-
-Original creator: malb
-
-Original creation time: 2008-08-22 12:29:12
-
+archive/issues_003926.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nI've uploaded a new SPKG for M2 to:\n\n  http://sage.math.washington.edu/home/malb/spkgs/macaulay2-1.1-r7210.p1.spkg\n\nwhich fixes a couple of compilation problems:\n\n* UNAME might not be defined\n* some standard headers are not included in `overflow.hpp`\n\nIssue created by migration from https://trac.sagemath.org/ticket/3926\n\n",
+    "created_at": "2008-08-22T12:29:12Z",
+    "labels": [
+        "packages: standard",
+        "minor",
+        "bug"
+    ],
+    "title": "[with spkg, needs review] fix Macaulay2 building",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3926",
+    "user": "malb"
+}
+```
 Assignee: mabshoff
 
 I've uploaded a new SPKG for M2 to:
@@ -14,27 +24,53 @@ I've uploaded a new SPKG for M2 to:
 
 which fixes a couple of compilation problems:
 
- * UNAME might not be defined
- * some standard headers are not included in `overflow.hpp`
+* UNAME might not be defined
+* some standard headers are not included in `overflow.hpp`
+
+Issue created by migration from https://trac.sagemath.org/ticket/3926
+
+
+
 
 
 ---
 
-Comment by mabshoff created at 2008-08-25 04:58:37
+archive/issue_comments_028104.json:
+```json
+{
+    "body": "Positive review. A couple remarks:\n\n* The fixes malb did should go upstream.\n* I fixed the boehm_gc and gdbm detection code since it only works for default spkgs and not optional ones - my bad.\n\nCheers,\n\nMichael",
+    "created_at": "2008-08-25T04:58:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3926",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3926#issuecomment-28104",
+    "user": "mabshoff"
+}
+```
 
 Positive review. A couple remarks:
 
- * The fixes malb did should go upstream.
- * I fixed the boehm_gc and gdbm detection code since it only works for default spkgs and not optional ones - my bad.
+* The fixes malb did should go upstream.
+* I fixed the boehm_gc and gdbm detection code since it only works for default spkgs and not optional ones - my bad.
 
 Cheers,
 
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-25 04:59:40
+archive/issue_comments_028105.json:
+```json
+{
+    "body": "Oops, I forgot to mention that the updated spkg is at \n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.1.2/alpha1/macaulay2-1.1-r7210.p1.spkg\n\nCheers,\n\nMichael",
+    "created_at": "2008-08-25T04:59:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3926",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3926#issuecomment-28105",
+    "user": "mabshoff"
+}
+```
 
 Oops, I forgot to mention that the updated spkg is at 
 
@@ -45,15 +81,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-25 04:59:53
+archive/issue_comments_028106.json:
+```json
+{
+    "body": "Merged in Sage 3.1.2.alpha1",
+    "created_at": "2008-08-25T04:59:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3926",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3926#issuecomment-28106",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.1.2.alpha1
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-25 04:59:53
+archive/issue_comments_028107.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-08-25T04:59:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3926",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3926#issuecomment-28107",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

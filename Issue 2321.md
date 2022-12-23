@@ -1,19 +1,44 @@
 # Issue 2321: remove dsage_server.py
 
-Issue created by migration from https://trac.sagemath.org/ticket/2321
-
-Original creator: yi
-
-Original creation time: 2008-02-26 17:47:20
-
+archive/issues_002321.json:
+```json
+{
+    "body": "Assignee: was\n\ndsage switched from using dsage_server.py to using a .tac located in .sage/dsage. When we roll out the next version of sage (2.10.3) we need to remove SAGE_ROOT/local/bin/dsage_server.py.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2321\n\n",
+    "created_at": "2008-02-26T17:47:20Z",
+    "labels": [
+        "dsage",
+        "major",
+        "bug"
+    ],
+    "title": "remove dsage_server.py",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2321",
+    "user": "yi"
+}
+```
 Assignee: was
 
 dsage switched from using dsage_server.py to using a .tac located in .sage/dsage. When we roll out the next version of sage (2.10.3) we need to remove SAGE_ROOT/local/bin/dsage_server.py.
 
+Issue created by migration from https://trac.sagemath.org/ticket/2321
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-02-26 17:58:59
+archive/issue_comments_015438.json:
+```json
+{
+    "body": "Yi: Does this depend on any patches still getting merged for 2.10.3 from your end or can I nuke the file now? A patch for this is obviously trivial.\n\nCheers,\n\nMichael",
+    "created_at": "2008-02-26T17:58:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2321",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2321#issuecomment-15438",
+    "user": "mabshoff"
+}
+```
 
 Yi: Does this depend on any patches still getting merged for 2.10.3 from your end or can I nuke the file now? A patch for this is obviously trivial.
 
@@ -22,16 +47,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by yi created at 2008-02-26 18:09:38
+archive/issue_comments_015439.json:
+```json
+{
+    "body": "Yes, we should not nuke dsage_server.py until we've successfully merged in the huge dsage changes for 2.10.3.",
+    "created_at": "2008-02-26T18:09:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2321",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2321#issuecomment-15439",
+    "user": "yi"
+}
+```
 
 Yes, we should not nuke dsage_server.py until we've successfully merged in the huge dsage changes for 2.10.3.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-14 00:04:25
+archive/issue_comments_015440.json:
+```json
+{
+    "body": "The file has been removed, probably in 2.11. Ergo it is fixed.\n\nCheers,\n\nMichael",
+    "created_at": "2008-04-14T00:04:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2321",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2321#issuecomment-15440",
+    "user": "mabshoff"
+}
+```
 
 The file has been removed, probably in 2.11. Ergo it is fixed.
 
@@ -40,8 +87,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-14 00:04:25
+archive/issue_comments_015441.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-04-14T00:04:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2321",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2321#issuecomment-15441",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

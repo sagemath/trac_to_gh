@@ -1,41 +1,99 @@
 # Issue 4451: notebook - cursor keys do not navigate around text cells
 
-Issue created by migration from https://trac.sagemath.org/ticket/4451
-
-Original creator: jason
-
-Original creation time: 2008-11-06 00:14:34
-
+archive/issues_004451.json:
+```json
+{
+    "body": "Assignee: boothby\n\nCC:  was mhansen\n\nWhen using the cursor to move between cells, the text cells stop the cursor, instead of the cursor skipping the text cells to move to the input cells beyond the text cell.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4451\n\n",
+    "created_at": "2008-11-06T00:14:34Z",
+    "labels": [
+        "notebook",
+        "major",
+        "bug"
+    ],
+    "title": "notebook - cursor keys do not navigate around text cells",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4451",
+    "user": "jason"
+}
+```
 Assignee: boothby
 
 CC:  was mhansen
 
 When using the cursor to move between cells, the text cells stop the cursor, instead of the cursor skipping the text cells to move to the input cells beyond the text cell.
 
+Issue created by migration from https://trac.sagemath.org/ticket/4451
+
+
+
+
 
 ---
 
-Comment by mpatel created at 2009-11-14 06:52:46
+archive/issue_comments_032816.json:
+```json
+{
+    "body": "Is this still a problem?",
+    "created_at": "2009-11-14T06:52:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4451",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4451#issuecomment-32816",
+    "user": "mpatel"
+}
+```
 
 Is this still a problem?
 
 
+
 ---
 
-Comment by timdumol created at 2009-12-06 16:46:00
+archive/issue_comments_032817.json:
+```json
+{
+    "body": "Not for me. Can anyone please confirm and close? Thanks.",
+    "created_at": "2009-12-06T16:46:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4451",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4451#issuecomment-32817",
+    "user": "timdumol"
+}
+```
 
 Not for me. Can anyone please confirm and close? Thanks.
 
 
+
 ---
 
-Comment by was created at 2009-12-09 16:25:02
+archive/issue_comments_032818.json:
+```json
+{
+    "body": "I'm closing this.",
+    "created_at": "2009-12-09T16:25:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4451",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4451#issuecomment-32818",
+    "user": "was"
+}
+```
 
 I'm closing this.
 
 
+
 ---
 
-Comment by was created at 2009-12-09 16:25:02
+archive/issue_comments_032819.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-12-09T16:25:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4451",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4451#issuecomment-32819",
+    "user": "was"
+}
+```
 
 Resolution: fixed

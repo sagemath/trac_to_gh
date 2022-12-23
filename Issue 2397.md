@@ -1,33 +1,80 @@
 # Issue 2397: speed up matrix_from_rows
 
-Issue created by migration from https://trac.sagemath.org/ticket/2397
-
-Original creator: dfdeshom
-
-Original creation time: 2008-03-05 16:47:07
-
+archive/issues_002397.json:
+```json
+{
+    "body": "Assignee: dfdeshom\n\nmatrix_from_rows could be made faster by using  PY_TYPE_CHECK or pyrex-style for loops.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2397\n\n",
+    "created_at": "2008-03-05T16:47:07Z",
+    "labels": [
+        "linear algebra",
+        "minor",
+        "enhancement"
+    ],
+    "title": "speed up matrix_from_rows",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2397",
+    "user": "dfdeshom"
+}
+```
 Assignee: dfdeshom
 
 matrix_from_rows could be made faster by using  PY_TYPE_CHECK or pyrex-style for loops.
 
+Issue created by migration from https://trac.sagemath.org/ticket/2397
+
+
+
+
 
 ---
 
-Comment by dfdeshom created at 2008-03-05 17:31:13
+archive/issue_comments_016166.json:
+```json
+{
+    "body": "I've gone ahead and added the same pyrex stuff to matrix_from_columns too since these methods are nearly identical.",
+    "created_at": "2008-03-05T17:31:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2397",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2397#issuecomment-16166",
+    "user": "dfdeshom"
+}
+```
 
 I've gone ahead and added the same pyrex stuff to matrix_from_columns too since these methods are nearly identical.
 
 
+
 ---
 
-Comment by dfdeshom created at 2008-03-05 17:31:13
+archive/issue_comments_016167.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-03-05T17:31:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2397",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2397#issuecomment-16167",
+    "user": "dfdeshom"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by jsp created at 2008-03-12 11:52:50
+archive/issue_comments_016168.json:
+```json
+{
+    "body": "This could also be done with matrix_from_rows_and_columns(self, rows, columns)\n\nI'll open a new ticket.\n\nPatch worked.\n\nJaap",
+    "created_at": "2008-03-12T11:52:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2397",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2397#issuecomment-16168",
+    "user": "jsp"
+}
+```
 
 This could also be done with matrix_from_rows_and_columns(self, rows, columns)
 
@@ -38,9 +85,20 @@ Patch worked.
 Jaap
 
 
+
 ---
 
-Comment by jsp created at 2008-03-12 19:29:49
+archive/issue_comments_016169.json:
+```json
+{
+    "body": "All test passed with ./sage -t devel/sage/sage/matrix/matrix1.pyx\n\nBut I got a segmentation fault running:\n\n./sage -t devel/sage/sage/matrix/matrix2.pyx\n\neven after ./sage -ba\n\n\n```\n(gdb) r\nStarting program: /home/jaap/work/downloads/sage-2.10.3/local/bin/python .doctest_matrix2.py\n[Thread debugging using libthread_db enabled]\n[New Thread -1209047360 (LWP 30302)]\n[Detaching after fork from child process 30305. (Try `set detach-on-fork off'.)]\n\nProgram received signal SIGSEGV, Segmentation fault.\n[Switching to Thread -1209047360 (LWP 30302)]\n0x0014cd72 in __gmpz_set () from /home/jaap/work/downloads/sage-2.10.3/local/lib/libgmp.so.3\n(gdb) bt\n#0  0x0014cd72 in __gmpz_set () from /home/jaap/work/downloads/sage-2.10.3/local/lib/libgmp.so.3\n#1  0x0b0e86e0 in ?? ()\n#2  0x0b0e86e0 in ?? ()\n#3  0xbfa980d8 in ?? ()\n#4  0x01b9be98 in __pyx_f_4sage_6matrix_20matrix_integer_dense_20Matrix_integer_dense_get_unsafe (__pyx_v_self=0x0, __pyx_v_i=1320220, \n    __pyx_v_j=1348880) at sage/matrix/matrix_integer_dense.c:5143\nBacktrace stopped: previous frame inner to this frame (corrupt stack?)\n(gdb) \n\n\nThis concerns line 373 in matrix2.pyx\n\n\n```\n\n\nThis seems te be related.",
+    "created_at": "2008-03-12T19:29:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2397",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2397#issuecomment-16169",
+    "user": "jsp"
+}
+```
 
 All test passed with ./sage -t devel/sage/sage/matrix/matrix1.pyx
 
@@ -81,48 +139,118 @@ This concerns line 373 in matrix2.pyx
 This seems te be related.
 
 
+
 ---
 
-Comment by jsp created at 2008-03-12 19:53:23
+archive/issue_comments_016170.json:
+```json
+{
+    "body": "This seems to be consistent. I can reproduce this Segmentation fault on an other install.\n\nMy hypothesis is that a cdef is replaced by a def. Is this possible?",
+    "created_at": "2008-03-12T19:53:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2397",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2397#issuecomment-16170",
+    "user": "jsp"
+}
+```
 
 This seems to be consistent. I can reproduce this Segmentation fault on an other install.
 
 My hypothesis is that a cdef is replaced by a def. Is this possible?
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-12 19:56:42
+archive/issue_comments_016171.json:
+```json
+{
+    "body": "This patch actually causes segfaults all over the map.",
+    "created_at": "2008-03-12T19:56:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2397",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2397#issuecomment-16171",
+    "user": "mabshoff"
+}
+```
 
 This patch actually causes segfaults all over the map.
 
 
+
 ---
+
+archive/issue_comments_016172.json:
+```json
+{
+    "body": "Attachment\n\nFound the bug and doctests on matrix0,1,2 pass. I've updated the patch (2397.patch) but please ignore the bundle file (I'm having trouble making hg bundles work). More ewviews, please!",
+    "created_at": "2008-03-12T22:19:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2397",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2397#issuecomment-16172",
+    "user": "dfdeshom"
+}
+```
 
 Attachment
 
 Found the bug and doctests on matrix0,1,2 pass. I've updated the patch (2397.patch) but please ignore the bundle file (I'm having trouble making hg bundles work). More ewviews, please!
 
 
+
 ---
+
+archive/issue_comments_016173.json:
+```json
+{
+    "body": "Attachment\n\nThe hg bundle should also work now.",
+    "created_at": "2008-03-12T23:50:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2397",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2397#issuecomment-16173",
+    "user": "dfdeshom"
+}
+```
 
 Attachment
 
 The hg bundle should also work now.
 
 
+
 ---
 
-Comment by jsp created at 2008-03-14 18:27:24
+archive/issue_comments_016174.json:
+```json
+{
+    "body": "This works for me now (the patch).\n\nNo segfaults anymore. Can someone explain what went wrong?!!",
+    "created_at": "2008-03-14T18:27:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2397",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2397#issuecomment-16174",
+    "user": "jsp"
+}
+```
 
 This works for me now (the patch).
 
 No segfaults anymore. Can someone explain what went wrong?!!
 
 
+
 ---
 
-Comment by dfdeshom created at 2008-03-14 18:34:13
+archive/issue_comments_016175.json:
+```json
+{
+    "body": "Replying to [comment:10 jsp]:\n> This works for me now (the patch).\n> \n> No segfaults anymore. Can someone explain what went wrong?!!\n\n\nGladly. The bug was in `matrix_from_columns`, around line 718.  I was checking against `self._ncols`:\n  \n\n```\n            for r from 0 <= r < self._ncols: \n                A.set_unsafe(r,k, self.get_unsafe(r,columns[i])) \n```\n\n\nwhen I should be checking against `self._nrows`\n\n```\n            for r from 0 <= r < self._nrows: \n                A.set_unsafe(r,k, self.get_unsafe(r,columns[i])) \n```\n\n\nThis didn't go over well for non-sqaure matrices, since we weren't checking bounds anyway.",
+    "created_at": "2008-03-14T18:34:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2397",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2397#issuecomment-16175",
+    "user": "dfdeshom"
+}
+```
 
 Replying to [comment:10 jsp]:
 > This works for me now (the patch).
@@ -150,9 +278,20 @@ when I should be checking against `self._nrows`
 This didn't go over well for non-sqaure matrices, since we weren't checking bounds anyway.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-15 06:29:59
+archive/issue_comments_016176.json:
+```json
+{
+    "body": "Replying to [comment:9 dfdeshom]:\n> The hg bundle should also work now. \n\nHi Didier,\n\nwe have a very strong preference for patches over bundles, especially for single commits. Is there a specific reason you don't use mercurial to export patches?\n\nCheers,\n\nMichael",
+    "created_at": "2008-03-15T06:29:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2397",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2397#issuecomment-16176",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:9 dfdeshom]:
 > The hg bundle should also work now. 
@@ -166,9 +305,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by dfdeshom created at 2008-03-15 06:47:08
+archive/issue_comments_016177.json:
+```json
+{
+    "body": "Replying to [comment:12 mabshoff]:\n> Replying to [comment:9 dfdeshom]:\n> > The hg bundle should also work now. \n> \n> Hi Didier,\n> \n> we have a very strong preference for patches over bundles, especially for single commits. Is there a specific reason you don't use mercurial to export patches?\n\nI remember in another ticket (#2421) you said to submit mercurial patches so I could get credit. I thought you meant bundles, so that's what I started doing. I think the issue here is that there are 2 ways to get patches out of hg: either hg diff > patch or hg export rev > patch. The differences between them are very small, at first glance. So I'm guessing that hg export rev > patch is the way to go? Maybe this should be written somewhere?",
+    "created_at": "2008-03-15T06:47:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2397",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2397#issuecomment-16177",
+    "user": "dfdeshom"
+}
+```
 
 Replying to [comment:12 mabshoff]:
 > Replying to [comment:9 dfdeshom]:
@@ -181,9 +331,20 @@ Replying to [comment:12 mabshoff]:
 I remember in another ticket (#2421) you said to submit mercurial patches so I could get credit. I thought you meant bundles, so that's what I started doing. I think the issue here is that there are 2 ways to get patches out of hg: either hg diff > patch or hg export rev > patch. The differences between them are very small, at first glance. So I'm guessing that hg export rev > patch is the way to go? Maybe this should be written somewhere?
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-15 08:05:38
+archive/issue_comments_016178.json:
+```json
+{
+    "body": "> I remember in another ticket (#2421) you said to submit mercurial patches so I could get credit. I thought you meant bundles, so that's what I started doing. I think the issue here is that there are 2 ways to get patches out of hg: either hg diff > patch or hg export rev > patch. The differences between them are very small, at first glance. So I'm guessing that hg export rev > patch is the way to go? Maybe this should be written somewhere?\n> \n\nYep, hg export is the way to go. It is in the development manual, but I am too lazy to find the exact location. I will merge the bundles from this ticket and also #2459, but it would be great if you could use hg export for future patches.\n\nCheers,\n\nMichael",
+    "created_at": "2008-03-15T08:05:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2397",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2397#issuecomment-16178",
+    "user": "mabshoff"
+}
+```
 
 > I remember in another ticket (#2421) you said to submit mercurial patches so I could get credit. I thought you meant bundles, so that's what I started doing. I think the issue here is that there are 2 ways to get patches out of hg: either hg diff > patch or hg export rev > patch. The differences between them are very small, at first glance. So I'm guessing that hg export rev > patch is the way to go? Maybe this should be written somewhere?
 > 
@@ -195,15 +356,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-15 08:05:48
+archive/issue_comments_016179.json:
+```json
+{
+    "body": "Merged 2397.hg in Sage 2.10.4.alpha0",
+    "created_at": "2008-03-15T08:05:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2397",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2397#issuecomment-16179",
+    "user": "mabshoff"
+}
+```
 
 Merged 2397.hg in Sage 2.10.4.alpha0
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-15 08:05:48
+archive/issue_comments_016180.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-03-15T08:05:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2397",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2397#issuecomment-16180",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

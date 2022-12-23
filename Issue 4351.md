@@ -1,11 +1,21 @@
 # Issue 4351: bugs in abelian variety homspace computation
 
-Issue created by migration from https://trac.sagemath.org/ticket/4351
-
-Original creator: was
-
-Original creation time: 2008-10-23 19:34:51
-
+archive/issues_004351.json:
+```json
+{
+    "body": "Assignee: craigcitro\n\nPlease see #4346 first and apply the patch there.\n\nAfter applying this patch and doctesting all sage, there are a bunch of failures in the modular abelian varieties code:\n\n```\n\tsage -t  devel/sage-main/sage/modular/abvar/abvar_ambient_jacobian.py # 3 doctests failed\n\tsage -t  devel/sage-main/sage/modular/abvar/abvar_newform.py # 3 doctests failed\n\tsage -t  devel/sage-main/sage/modular/abvar/morphism.py # 3 doctests failed\n\tsage -t  devel/sage-main/sage/modular/abvar/homspace.py # 34 doctests failed\n\tsage -t  devel/sage-main/sage/modular/abvar/abvar.py # 11 doctests failed\n```\n\n\nThese are because of bugs in that code exposed by doing proper bounds checking.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4351\n\n",
+    "created_at": "2008-10-23T19:34:51Z",
+    "labels": [
+        "modular forms",
+        "major",
+        "bug"
+    ],
+    "title": "bugs in abelian variety homspace computation",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4351",
+    "user": "was"
+}
+```
 Assignee: craigcitro
 
 Please see #4346 first and apply the patch there.
@@ -23,16 +33,42 @@ After applying this patch and doctesting all sage, there are a bunch of failures
 
 These are because of bugs in that code exposed by doing proper bounds checking.
 
+Issue created by migration from https://trac.sagemath.org/ticket/4351
+
+
+
+
 
 ---
 
-Comment by was created at 2008-10-23 20:27:34
+archive/issue_comments_031957.json:
+```json
+{
+    "body": "This is a red herring.  It is fixed by #4350, and there were never any bugs suggested by this ticket.",
+    "created_at": "2008-10-23T20:27:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4351",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4351#issuecomment-31957",
+    "user": "was"
+}
+```
 
 This is a red herring.  It is fixed by #4350, and there were never any bugs suggested by this ticket.
 
 
+
 ---
 
-Comment by was created at 2008-10-23 20:27:34
+archive/issue_comments_031958.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2008-10-23T20:27:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4351",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4351#issuecomment-31958",
+    "user": "was"
+}
+```
 
 Resolution: invalid

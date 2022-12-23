@@ -1,11 +1,21 @@
 # Issue 5946: bug in content for p-adic polynomials
 
-Issue created by migration from https://trac.sagemath.org/ticket/5946
-
-Original creator: AlexGhitza
-
-Original creation time: 2009-04-30 06:44:15
-
+archive/issues_005946.json:
+```json
+{
+    "body": "Assignee: roed\n\nKeywords: content p-adic polynomial\n\nWe ran into this at #5921.  There are two separate issues: polynomials with coefficients in a p-adic field should not have a `content()` method, since it doesn't make sense (the same way that having a `content()` method for polynomials with rational coefficients doesn't make sense).\n\nThe second issue is with the `content()` method for polynomials with coefficients in p-adic rings.  Here's an example:\n\n\n```\nsage: P.<x> = ZZ[]\nsage: f = x + 2\nsage: f.content()\n1\nsage: fp = f.change_ring(pAdicRing(2, 10))\nsage: fp\n(1 + O(2^10))*x + (2 + O(2^11))\nsage: fp.content()\n0\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5946\n\n",
+    "created_at": "2009-04-30T06:44:15Z",
+    "labels": [
+        "padics",
+        "minor",
+        "bug"
+    ],
+    "title": "bug in content for p-adic polynomials",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5946",
+    "user": "AlexGhitza"
+}
+```
 Assignee: roed
 
 Keywords: content p-adic polynomial
@@ -29,22 +39,61 @@ sage: fp.content()
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5946
+
+
+
+
 
 ---
 
-Comment by AlexGhitza created at 2009-04-30 07:29:40
+archive/issue_comments_047045.json:
+```json
+{
+    "body": "Looks good and passes doctests.",
+    "created_at": "2009-04-30T07:29:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5946",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5946#issuecomment-47045",
+    "user": "AlexGhitza"
+}
+```
 
 Looks good and passes doctests.
 
 
+
 ---
 
-Comment by roed created at 2009-04-30 08:14:31
+archive/issue_comments_047046.json:
+```json
+{
+    "body": "Fixed",
+    "created_at": "2009-04-30T08:14:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5946",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5946#issuecomment-47046",
+    "user": "roed"
+}
+```
 
 Fixed
 
 
+
 ---
+
+archive/issue_comments_047047.json:
+```json
+{
+    "body": "Attachment\n\nMerged in Sage 3.4.2.rc0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-30T08:52:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5946",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5946#issuecomment-47047",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -55,8 +104,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-30 08:52:22
+archive/issue_comments_047048.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-04-30T08:52:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5946",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5946#issuecomment-47048",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

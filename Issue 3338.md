@@ -1,11 +1,21 @@
 # Issue 3338: gfan tarball is not clean upstream
 
-Issue created by migration from https://trac.sagemath.org/ticket/3338
-
-Original creator: tabbott
-
-Original creation time: 2008-05-30 17:32:39
-
+archive/issues_003338.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nCC:  alexghitza mhampton\n\nThe gfan sources in SAGE are not quite the upstream sources:\n\n[tabbott`@`debuild export$] diff -ur tmp/gfan0.3 tmp/gfan-0.3/ | diffstat\n gfan-0.3//.DS_Store         |only\n gfan-0.3//Makefile.orig03   |only\n gfan-0.3//Makefile2.2       |only\n gfan-0.3//Makefile2.2anders |only\n gfan-0.3//SAGE.txt          |only\n gfan-0.3//debian            |only\n gfan-0.3//oldsageMakefile   |only\n gfan-0.3/Makefile           |   55 ++++++++++++++------------------------------\n gfan0.3/doc                 |only\n gfan0.3/examples            |only\n gfan0.3/homepage            |only\n 11 files changed, 18 insertions(+), 37 deletions(-)\n\nI actually think that the SAGE changes may be mostly unecessary; the changes to the install target don't seem to be used, and the other changes aside from the removal of app_construction.o seem like they could be implemented via\n\nmake ADDTIONALINCLUDEOPTIONS=-I$(SAGE_LOCAL)/include ADDITIONALLINKOPTIONS=-lcddgmp -lgmp\n\nIf we can figure out how to fig the compilation problems related to app_construction.o (I don't see this problem on Debian with gfan 0.3), then we can stop modifying gfan at all.  But having a makefile patch isn't a big deal either.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3338\n\n",
+    "created_at": "2008-05-30T17:32:39Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "gfan tarball is not clean upstream",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3338",
+    "user": "tabbott"
+}
+```
 Assignee: mabshoff
 
 CC:  alexghitza mhampton
@@ -32,23 +42,60 @@ make ADDTIONALINCLUDEOPTIONS=-I$(SAGE_LOCAL)/include ADDITIONALLINKOPTIONS=-lcdd
 
 If we can figure out how to fig the compilation problems related to app_construction.o (I don't see this problem on Debian with gfan 0.3), then we can stop modifying gfan at all.  But having a makefile patch isn't a big deal either.
 
+Issue created by migration from https://trac.sagemath.org/ticket/3338
+
+
+
+
 
 ---
 
-Comment by drkirkby created at 2010-01-05 11:24:17
+archive/issue_comments_023187.json:
+```json
+{
+    "body": "Note #7820 is aimed at updating gfan to the latest release, called \"0.4plus\".",
+    "created_at": "2010-01-05T11:24:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3338",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3338#issuecomment-23187",
+    "user": "drkirkby"
+}
+```
 
 Note #7820 is aimed at updating gfan to the latest release, called "0.4plus".
 
 
+
 ---
 
-Comment by mvngu created at 2010-01-25 14:15:40
+archive/issue_comments_023188.json:
+```json
+{
+    "body": "Close as fixed by #7820.",
+    "created_at": "2010-01-25T14:15:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3338",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3338#issuecomment-23188",
+    "user": "mvngu"
+}
+```
 
 Close as fixed by #7820.
 
 
+
 ---
 
-Comment by mvngu created at 2010-01-25 14:15:40
+archive/issue_comments_023189.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-25T14:15:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3338",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3338#issuecomment-23189",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

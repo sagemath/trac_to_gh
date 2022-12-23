@@ -1,11 +1,21 @@
 # Issue 9822: desolve_system is broken for a system of one equation
 
-Issue created by migration from https://trac.sagemath.org/ticket/9823
-
-Original creator: rhinton
-
-Original creation time: 2010-08-27 16:40:56
-
+archive/issues_009822.json:
+```json
+{
+    "body": "Assignee: burcin\n\nCC:  robert.marik\n\nKeywords: calculus, maxima, symbolics\n\ndesolve_system fails for a system with only one equation:\n\n\n```\nsage: t = var('t')\nsage: x = function('x', t)\nsage: de1 = diff(x,t) + 1 == 0\nsage: desolve_system([de1], [x]) \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9823\n\n",
+    "created_at": "2010-08-27T16:40:56Z",
+    "labels": [
+        "calculus",
+        "major",
+        "bug"
+    ],
+    "title": "desolve_system is broken for a system of one equation",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9822",
+    "user": "rhinton"
+}
+```
 Assignee: burcin
 
 CC:  robert.marik
@@ -23,17 +33,43 @@ sage: desolve_system([de1], [x])
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/9823
+
+
+
+
 
 ---
 
-Comment by robert.marik created at 2010-08-29 20:14:32
+archive/issue_comments_096874.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-08-29T20:14:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9822",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9822#issuecomment-96874",
+    "user": "robert.marik"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by robert.marik created at 2010-08-29 20:14:32
+archive/issue_comments_096875.json:
+```json
+{
+    "body": "The patch solves the problem by passing to desolve_laplace. Both desoove_laplace and desolve_system use function desolve from Maxima and perhaps bouth could be merged into one function. Perhaps when solving #9824 ?\n\nAlso removes unnecessary spawned Maxima processes.\n\nInstall after the patch for #9835.",
+    "created_at": "2010-08-29T20:14:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9822",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9822#issuecomment-96875",
+    "user": "robert.marik"
+}
+```
 
 The patch solves the problem by passing to desolve_laplace. Both desoove_laplace and desolve_system use function desolve from Maxima and perhaps bouth could be merged into one function. Perhaps when solving #9824 ?
 
@@ -42,14 +78,38 @@ Also removes unnecessary spawned Maxima processes.
 Install after the patch for #9835.
 
 
+
 ---
 
-Comment by robert.marik created at 2010-08-30 06:27:21
+archive/issue_comments_096876.json:
+```json
+{
+    "body": "Depends on Ticket #9835",
+    "created_at": "2010-08-30T06:27:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9822",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9822#issuecomment-96876",
+    "user": "robert.marik"
+}
+```
 
 Depends on Ticket #9835
 
 
+
 ---
+
+archive/issue_comments_096877.json:
+```json
+{
+    "body": "Attachment\n\nUpdated the patch - removed plotting picture from testing, since Sage complains \n\n```\nverbose 0 (3495: plot.py, generate_plot_points) WARNING: When plotting, failed to evaluate function at 200 points.\n```\n\non one of my computers (Debian, AMD 64 bit).",
+    "created_at": "2010-08-30T06:31:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9822",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9822#issuecomment-96877",
+    "user": "robert.marik"
+}
+```
 
 Attachment
 
@@ -62,54 +122,131 @@ verbose 0 (3495: plot.py, generate_plot_points) WARNING: When plotting, failed t
 on one of my computers (Debian, AMD 64 bit).
 
 
+
 ---
 
-Comment by wdj created at 2010-08-30 16:03:43
+archive/issue_comments_096878.json:
+```json
+{
+    "body": "Does this really depend on 9835? It seemed to apply and test fine for me without it.",
+    "created_at": "2010-08-30T16:03:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9822",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9822#issuecomment-96878",
+    "user": "wdj"
+}
+```
 
 Does this really depend on 9835? It seemed to apply and test fine for me without it.
 
 
+
 ---
 
-Comment by robert.marik created at 2010-08-30 16:52:45
+archive/issue_comments_096879.json:
+```json
+{
+    "body": "You are right, thanks. Both patches touch different part of the same file and I expected numbers from the patch utility. But both patches are independent and #9835 can be installed on the top of this patch. Thanks for mentioning this.",
+    "created_at": "2010-08-30T16:52:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9822",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9822#issuecomment-96879",
+    "user": "robert.marik"
+}
+```
 
 You are right, thanks. Both patches touch different part of the same file and I expected numbers from the patch utility. But both patches are independent and #9835 can be installed on the top of this patch. Thanks for mentioning this.
 
 
+
 ---
 
-Comment by wdj created at 2010-08-30 17:11:39
+archive/issue_comments_096880.json:
+```json
+{
+    "body": "I have tested this without 9835 and it passes fine. Also, the patch is very simple and does as it says and also adds a doctest illustrating the new fix.\n\nPositive review from me, without 9835. I am currently also testing it with 9835.",
+    "created_at": "2010-08-30T17:11:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9822",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9822#issuecomment-96880",
+    "user": "wdj"
+}
+```
 
 I have tested this without 9835 and it passes fine. Also, the patch is very simple and does as it says and also adds a doctest illustrating the new fix.
 
 Positive review from me, without 9835. I am currently also testing it with 9835.
 
 
+
 ---
 
-Comment by wdj created at 2010-08-30 19:23:00
+archive/issue_comments_096881.json:
+```json
+{
+    "body": "All tests passes even with 9835.\n\nPositive review from me but maybe rhinton should look at it?",
+    "created_at": "2010-08-30T19:23:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9822",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9822#issuecomment-96881",
+    "user": "wdj"
+}
+```
 
 All tests passes even with 9835.
 
 Positive review from me but maybe rhinton should look at it?
 
 
+
 ---
 
-Comment by rhinton created at 2010-08-31 03:02:58
+archive/issue_comments_096882.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-08-31T03:02:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9822",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9822#issuecomment-96882",
+    "user": "rhinton"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by rhinton created at 2010-08-31 03:02:58
+archive/issue_comments_096883.json:
+```json
+{
+    "body": "Looks great to me!",
+    "created_at": "2010-08-31T03:02:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9822",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9822#issuecomment-96883",
+    "user": "rhinton"
+}
+```
 
 Looks great to me!
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-29 08:38:49
+archive/issue_comments_096884.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-09-29T08:38:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9822",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9822#issuecomment-96884",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed

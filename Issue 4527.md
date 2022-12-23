@@ -1,11 +1,21 @@
 # Issue 4527: Exception in 'sage.matrix.matrix_integer_dense.Matrix_integer_dense._hnf_modn_impl'
 
-Issue created by migration from https://trac.sagemath.org/ticket/4527
-
-Original creator: syazdani
-
-Original creation time: 2008-11-14 20:13:29
-
+archive/issues_004527.json:
+```json
+{
+    "body": "Assignee: tbd\n\nHi, \n\nthe following code raises an exception that crashes sage on my computer:\n\n```\ncond=206\nJ=J0(206)\nD=J.new_subvariety().decomposition()\nJp=J.old_subvariety(2)\nJpc=Jp.cuspidal_subgroup()\nAc=D[3].cuspidal_subgroup()\nAc.intersection(Jpc)\n```\n\n\nThe error I get (running it through the notebook) is\n\n```\n          \t\n\nException  in\n'sage.matrix.matrix_integer_dense.Matrix_integer_dense._hnf_modn_impl'\nignored\n\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n\n```\n\n\nThis seems very sensitive to the set of inputs, but it is consistent on my computer.\nI'm running sage 3.1.4 (release date 2008-10-20), on mandriva, compiled with gcc 4.2.2 20071128.\n\nSoroosh\n\nIssue created by migration from https://trac.sagemath.org/ticket/4527\n\n",
+    "created_at": "2008-11-14T20:13:29Z",
+    "labels": [
+        "algebra",
+        "major",
+        "bug"
+    ],
+    "title": "Exception in 'sage.matrix.matrix_integer_dense.Matrix_integer_dense._hnf_modn_impl'",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4527",
+    "user": "syazdani"
+}
+```
 Assignee: tbd
 
 Hi, 
@@ -50,17 +60,43 @@ I'm running sage 3.1.4 (release date 2008-10-20), on mandriva, compiled with gcc
 
 Soroosh
 
+Issue created by migration from https://trac.sagemath.org/ticket/4527
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-11-14 20:22:20
+archive/issue_comments_033613.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"segfault\".",
+    "created_at": "2008-11-14T20:22:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4527",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4527#issuecomment-33613",
+    "user": "mabshoff"
+}
+```
 
 Changing keywords from "" to "segfault".
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-14 20:22:20
+archive/issue_comments_033614.json:
+```json
+{
+    "body": "I can reproduce this with the latest and greatest Sage. Gdb says:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n/scratch/mabshoff/release-cycle/sage-3.2.rc1/local/bin/sage-ipython\nGNU gdb 6.4.90-debian\nCopyright (C) 2006 Free Software Foundation, Inc.\nGDB is free software, covered by the GNU General Public License, and you are\nwelcome to change it and/or distribute copies of it under certain conditions.\nType \"show copying\" to see the conditions.\nThere is absolutely no warranty for GDB.  Type \"show warranty\" for details.\nThis GDB was configured as \"x86_64-linux-gnu\"...Using host libthread_db library \"/lib/libthread_db.so.1\".\n| Sage Version 3.2.rc0, Release Date: 2008-11-10                     |\n| Type notebook() for the GUI, and license() for information.        |\n[Thread debugging using libthread_db enabled]\n[New Thread 47755945320288 (LWP 13573)]\nPython 2.5.2 (r252:60911, Nov 10 2008, 22:40:35) \n[GCC 4.1.2 20061115 (prerelease) (Debian 4.1.1-21)] on linux2\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n\nsage: cond=206\nsage: J=J0(206)\nsage: D=J.new_subvariety().decomposition()\nsage: Jp=J.old_subvariety(2)\nsage: Jpc=Jp.cuspidal_subgroup()\nsage: Ac=D[3].cuspidal_subgroup()\nsage: Ac.intersection(Jpc)\nException  in 'sage.matrix.matrix_integer_dense.Matrix_integer_dense._hnf_modn_impl' ignored\n\nProgram received signal SIGSEGV, Segmentation fault.\n[Switching to Thread 47755945320288 (LWP 13573)]\n0x00002b6f1c26f88d in __pyx_f_4sage_6matrix_20matrix_integer_dense_20Matrix_integer_dense__hnf_modn (\n    __pyx_v_self=0x2b6f2485a560, __pyx_v_res=0x2b6f2485a830, __pyx_v_det=<value optimized out>)\n    at sage/matrix/matrix_integer_dense.c:26964\n26964\t      mpz_init_set_si(((__pyx_v_res->_matrix[__pyx_v_i])[__pyx_v_j]), (__pyx_v_res_l[__pyx_v_k]));\n(gdb) bt\n#0  0x00002b6f1c26f88d in __pyx_f_4sage_6matrix_20matrix_integer_dense_20Matrix_integer_dense__hnf_modn (\n    __pyx_v_self=0x2b6f2485a560, __pyx_v_res=0x2b6f2485a830, __pyx_v_det=<value optimized out>)\n    at sage/matrix/matrix_integer_dense.c:26964\n#1  0x00002b6f1c2ac2e7 in __pyx_pf_4sage_6matrix_20matrix_integer_dense_20Matrix_integer_dense__hnf_mod (\n    __pyx_v_self=0x2b6f2485a560, __pyx_v_D=0x7451450) at sage/matrix/matrix_integer_dense.c:26853\n#2  0x0000000000484afc in PyEval_EvalFrameEx (f=0xd7283d0, throwflag=<value optimized out>) at Python/ceval.c:3561\n#3  0x0000000000486182 in PyEval_EvalCodeEx (co=0x2b6f0cf973f0, globals=<value optimized out>, \n    locals=<value optimized out>, args=0x2b6f11211d80, argcount=1, kws=0xd770a78, kwcount=1, defs=0x0, defcount=0, \n    closure=0x0) at Python/ceval.c:2836\n#4  0x0000000000484347 in PyEval_EvalFrameEx (f=0xd770810, throwflag=<value optimized out>) at Python/ceval.c:3669\n#5  0x0000000000486182 in PyEval_EvalCodeEx (co=0x2b6f0c8afe40, globals=<value optimized out>, \n    locals=<value optimized out>, args=0x2b6f11211d80, argcount=1, kws=0xd6fd708, kwcount=2, defs=0x0, defcount=0, \n    closure=0x0) at Python/ceval.c:2836\n<SNIP>\n```\n\n\nI am running the computation under valgrind now if it catches anything.\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-14T20:22:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4527",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4527#issuecomment-33614",
+    "user": "mabshoff"
+}
+```
 
 I can reproduce this with the latest and greatest Sage. Gdb says:
 
@@ -123,35 +159,92 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-14 20:22:20
+archive/issue_comments_033615.json:
+```json
+{
+    "body": "Changing assignee from tbd to craigcitro.",
+    "created_at": "2008-11-14T20:22:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4527",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4527#issuecomment-33615",
+    "user": "mabshoff"
+}
+```
 
 Changing assignee from tbd to craigcitro.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-14 20:22:20
+archive/issue_comments_033616.json:
+```json
+{
+    "body": "Changing component from algebra to modular forms.",
+    "created_at": "2008-11-14T20:22:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4527",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4527#issuecomment-33616",
+    "user": "mabshoff"
+}
+```
 
 Changing component from algebra to modular forms.
 
 
+
 ---
 
-Comment by was created at 2008-11-15 01:32:10
+archive/issue_comments_033617.json:
+```json
+{
+    "body": "this should fix it.  the main bug was an off by a factor of two overflow.",
+    "created_at": "2008-11-15T01:32:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4527",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4527#issuecomment-33617",
+    "user": "was"
+}
+```
 
 this should fix it.  the main bug was an off by a factor of two overflow.
 
 
+
 ---
+
+archive/issue_comments_033618.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-11-15T01:32:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4527",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4527#issuecomment-33618",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-15 07:22:44
+archive/issue_comments_033619.json:
+```json
+{
+    "body": "With the patch applied:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.rc1$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| Sage Version 3.2.rc0, Release Date: 2008-11-10                     |\n| Type notebook() for the GUI, and license() for information.        |\nsage: cond=206\nsage: J=J0(206)\nsage: D=J.new_subvariety().decomposition()\nsage: Jp=J.old_subvariety(2)\nsage: Jpc=Jp.cuspidal_subgroup()\nsage: Ac=D[3].cuspidal_subgroup()\nsage: Ac.intersection(Jpc)\nFinite subgroup with invariants [] over QQ of Simple abelian subvariety 206d(1,206) of dimension 4 of J0(206)\n```\n\nI am currently running doctests.\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-15T07:22:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4527",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4527#issuecomment-33619",
+    "user": "mabshoff"
+}
+```
 
 With the patch applied:
 
@@ -178,9 +271,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-15 07:47:03
+archive/issue_comments_033620.json:
+```json
+{
+    "body": "With the patch applied doctests with \"-long\" pass. Note that the example posted that exposes the problem takes about 30 seconds CPU time, so we should add it as a \"#long time\" example unless someone comes up with a shorter one.\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-15T07:47:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4527",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4527#issuecomment-33620",
+    "user": "mabshoff"
+}
+```
 
 With the patch applied doctests with "-long" pass. Note that the example posted that exposes the problem takes about 30 seconds CPU time, so we should add it as a "#long time" example unless someone comes up with a shorter one.
 
@@ -189,22 +293,57 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_033621.json:
+```json
+{
+    "body": "Attachment\n\nLooks good. I added a doctest based on Soroosh's original example in the extra patch above.",
+    "created_at": "2008-11-15T09:02:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4527",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4527#issuecomment-33621",
+    "user": "craigcitro"
+}
+```
 
 Attachment
 
 Looks good. I added a doctest based on Soroosh's original example in the extra patch above.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-15 09:52:46
+archive/issue_comments_033622.json:
+```json
+{
+    "body": "Merged in Sage 3.2.rc1",
+    "created_at": "2008-11-15T09:52:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4527",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4527#issuecomment-33622",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.2.rc1
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-15 09:52:46
+archive/issue_comments_033623.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-11-15T09:52:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4527",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4527#issuecomment-33623",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

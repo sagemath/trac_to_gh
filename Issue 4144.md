@@ -1,11 +1,21 @@
 # Issue 4144: [with patch, needs review] allow finite field elements in SBox constructor
 
-Issue created by migration from https://trac.sagemath.org/ticket/4144
-
-Original creator: malb
-
-Original creation time: 2008-09-18 10:26:59
-
+archive/issues_004144.json:
+```json
+{
+    "body": "Assignee: malb\n\nKeywords: crypto, aes, sbox, mq\n\nmake it so that this works:\n\n\n```\nsage: sr = mq.SR(1,1,1,4, allow_zero_inversions=True)\nsage: S = mq.SBox([sr.sub_byte(e) for e in list(sr.k)])\nsage: S\n(6, 5, 2, 9, 4, 7, 3, 12, 14, 15, 10, 0, 8, 1, 13, 11)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4144\n\n",
+    "created_at": "2008-09-18T10:26:59Z",
+    "labels": [
+        "misc",
+        "major",
+        "enhancement"
+    ],
+    "title": "[with patch, needs review] allow finite field elements in SBox constructor",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4144",
+    "user": "malb"
+}
+```
 Assignee: malb
 
 Keywords: crypto, aes, sbox, mq
@@ -22,37 +32,98 @@ sage: S
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4144
+
+
+
+
 
 ---
+
+archive/issue_comments_030087.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-09-18T10:27:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4144",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4144#issuecomment-30087",
+    "user": "malb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by malb created at 2008-09-20 15:47:11
+archive/issue_comments_030088.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-09-20T15:47:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4144",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4144#issuecomment-30088",
+    "user": "malb"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by cwitty created at 2008-11-23 02:01:41
+archive/issue_comments_030089.json:
+```json
+{
+    "body": "The code does something that looks reasonable, and doctests pass.  (I don't know enough crypto to be sure that this is a useful thing to do, so I'm relying on malb for that part.)\n\nPositive review.",
+    "created_at": "2008-11-23T02:01:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4144",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4144#issuecomment-30089",
+    "user": "cwitty"
+}
+```
 
 The code does something that looks reasonable, and doctests pass.  (I don't know enough crypto to be sure that this is a useful thing to do, so I'm relying on malb for that part.)
 
 Positive review.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-23 07:56:15
+archive/issue_comments_030090.json:
+```json
+{
+    "body": "Merged in Sage 3.2.1.alpha0",
+    "created_at": "2008-11-23T07:56:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4144",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4144#issuecomment-30090",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.2.1.alpha0
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-23 07:56:15
+archive/issue_comments_030091.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-11-23T07:56:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4144",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4144#issuecomment-30091",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

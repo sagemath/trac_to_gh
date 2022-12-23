@@ -1,11 +1,21 @@
 # Issue 4246: bug in coercing symbolic expressions to polynomial rings
 
-Issue created by migration from https://trac.sagemath.org/ticket/4246
-
-Original creator: AlexGhitza
-
-Original creation time: 2008-10-05 21:46:40
-
+archive/issues_004246.json:
+```json
+{
+    "body": "Assignee: AlexGhitza\n\nCC:  robertwb\n\nThis was reported by William Stein at #4106:\n\n  I did notice this unfortunate property of the _polynomial_ function that is used\n  to implement this patch, namely it does something dumb when given x+y as input: \n\n  {{{\n  sage: var('x')\n  x\n  sage: var('y')\n  y\n  sage: S = PolynomialRing(Integers(4),1,'x')\n  sage: S(x+y)\n  2*x\n  sage: (x+y)._polynomial_(S)\n  2*x\n  }}}\n\n  I think in this case it should raise a TypeError. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4246\n\n",
+    "created_at": "2008-10-05T21:46:40Z",
+    "labels": [
+        "calculus",
+        "major",
+        "bug"
+    ],
+    "title": "bug in coercing symbolic expressions to polynomial rings",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4246",
+    "user": "AlexGhitza"
+}
+```
 Assignee: AlexGhitza
 
 CC:  robertwb
@@ -30,29 +40,79 @@ This was reported by William Stein at #4106:
   I think in this case it should raise a TypeError. 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4246
+
+
+
+
 
 ---
+
+archive/issue_comments_030870.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-10-05T21:49:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4246",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4246#issuecomment-30870",
+    "user": "AlexGhitza"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by AlexGhitza created at 2008-10-05 21:49:01
+archive/issue_comments_030871.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-10-05T21:49:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4246",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4246#issuecomment-30871",
+    "user": "AlexGhitza"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mhansen created at 2008-10-05 23:23:13
+archive/issue_comments_030872.json:
+```json
+{
+    "body": "Looks good to me.",
+    "created_at": "2008-10-05T23:23:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4246",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4246#issuecomment-30872",
+    "user": "mhansen"
+}
+```
 
 Looks good to me.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-07 20:59:20
+archive/issue_comments_030873.json:
+```json
+{
+    "body": "This patch breaks two doctests in coerce_maps.pyx:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.3.alpha3$ ./sage -t -long devel/sage/sage/structure/coerce_maps.pyx\nsage -t -long devel/sage/sage/structure/coerce_maps.pyx     \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.alpha3/tmp/coerce_maps.py\", line 110:\n    sage: mor(x^2/4+1)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.3.alpha3/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_3[4]>\", line 1, in <module>\n        mor(x**Integer(2)/Integer(4)+Integer(1))###line 110:\n    sage: mor(x^2/4+1)\n      File \"map.pyx\", line 133, in sage.categories.map.Map.__call__ (sage/categories/map.c:2755)\n      File \"coerce_maps.pyx\", line 146, in sage.structure.coerce_maps.NamedConvertMap._call_ (sage/structure/coerce_maps.c:3348)\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.3.alpha3/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 1886, in _polynomial_\n        raise TypeError, \"%s is not a variable of %s\" %(v, R)\n    TypeError: x is not a variable of Univariate Polynomial Ring in t over Rational Field\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.alpha3/tmp/coerce_maps.py\", line 113:\n    sage: mor(x^2/4+1)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.3.alpha3/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_3[6]>\", line 1, in <module>\n        mor(x**Integer(2)/Integer(4)+Integer(1))###line 113:\n    sage: mor(x^2/4+1)\n      File \"map.pyx\", line 133, in sage.categories.map.Map.__call__ (sage/categories/map.c:2755)\n      File \"coerce_maps.pyx\", line 146, in sage.structure.coerce_maps.NamedConvertMap._call_ (sage/structure/coerce_maps.c:3348)\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.3.alpha3/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 1886, in _polynomial_\n        raise TypeError, \"%s is not a variable of %s\" %(v, R)\n    TypeError: x is not a variable of Power Series Ring in t over Finite Field of size 7\n**********************************************************************\n```\n\n\nSince this is coercion related I am adding RobertWB to the CC.\n\nCheers,\n\nMichael",
+    "created_at": "2008-10-07T20:59:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4246",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4246#issuecomment-30873",
+    "user": "mabshoff"
+}
+```
 
 This patch breaks two doctests in coerce_maps.pyx:
 
@@ -100,34 +160,91 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_030874.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-11-29T07:27:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4246",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4246#issuecomment-30874",
+    "user": "AlexGhitza"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by AlexGhitza created at 2008-11-29 07:29:04
+archive/issue_comments_030875.json:
+```json
+{
+    "body": "I added a small patch that changes the two failing doctests slightly so that they pass now.  I thought about the behaviour a bit and it seems sensible to me, but Robert should feel free to defend the original doctests if necessary.",
+    "created_at": "2008-11-29T07:29:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4246",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4246#issuecomment-30875",
+    "user": "AlexGhitza"
+}
+```
 
 I added a small patch that changes the two failing doctests slightly so that they pass now.  I thought about the behaviour a bit and it seems sensible to me, but Robert should feel free to defend the original doctests if necessary.
 
 
+
 ---
 
-Comment by mhansen created at 2008-12-04 11:37:57
+archive/issue_comments_030876.json:
+```json
+{
+    "body": "I think the new doctests are fine.",
+    "created_at": "2008-12-04T11:37:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4246",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4246#issuecomment-30876",
+    "user": "mhansen"
+}
+```
 
 I think the new doctests are fine.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-04 14:55:00
+archive/issue_comments_030877.json:
+```json
+{
+    "body": "Merged both patches in Sage 3.2.2.alpha0",
+    "created_at": "2008-12-04T14:55:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4246",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4246#issuecomment-30877",
+    "user": "mabshoff"
+}
+```
 
 Merged both patches in Sage 3.2.2.alpha0
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-04 14:55:00
+archive/issue_comments_030878.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-12-04T14:55:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4246",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4246#issuecomment-30878",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

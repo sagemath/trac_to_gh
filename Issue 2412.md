@@ -1,11 +1,21 @@
 # Issue 2412: basis_matrix returns matrix over wrong ring
 
-Issue created by migration from https://trac.sagemath.org/ticket/2412
-
-Original creator: ncalexan
-
-Original creation time: 2008-03-06 22:54:36
-
+archive/issues_002412.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  ncalexan jason\n\nKeywords: basis matrix basis_matrix ZZ\n\n\n```\nsage: (ZZ**3).basis_matrix()\n\n[1 0 0]\n[0 1 0]\n[0 0 1]\nsage: (ZZ**3).basis_matrix().parent()\nFull MatrixSpace of 3 by 3 dense matrices over Rational Field\n```\n\n\nThat should be over the integer ring; you can't do `(ZZ**3).basis_matrix().smith_form()` otherwise.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2412\n\n",
+    "created_at": "2008-03-06T22:54:36Z",
+    "labels": [
+        "linear algebra",
+        "minor",
+        "bug"
+    ],
+    "title": "basis_matrix returns matrix over wrong ring",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2412",
+    "user": "ncalexan"
+}
+```
 Assignee: was
 
 CC:  ncalexan jason
@@ -26,10 +36,25 @@ Full MatrixSpace of 3 by 3 dense matrices over Rational Field
 
 That should be over the integer ring; you can't do `(ZZ**3).basis_matrix().smith_form()` otherwise.
 
+Issue created by migration from https://trac.sagemath.org/ticket/2412
+
+
+
+
 
 ---
 
-Comment by was created at 2008-03-07 01:47:07
+archive/issue_comments_016279.json:
+```json
+{
+    "body": "This is not a bug, it is a design decision.  ZZ modules in Sage in general need *not* be embedded in ZZ^n -- they can be in QQ^n.  For consistency the basis matrix is thus always over QQ.  Here's an example of a module over ZZ but for which the basis matrix is over QQ. \n\n\n```\nsage: A = (ZZ^3).span([[1,2,3], [1/3,5,6]])\nsage: A\nFree module of degree 3 and rank 2 over Integer Ring\nEchelon basis matrix:\n[1/3   5   6]\n[  0  13  15]\nsage: A.basis_matrix()\n[1/3   5   6]\n[  0  13  15]\n```\n\n\nI'm willing to consider changing the design to *try* to make the basis\nmatrix over ZZ if posible, otherwise make it over QQ.  Thoughts?   I doubt\nthis will break anything.... (famous last words).",
+    "created_at": "2008-03-07T01:47:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2412",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2412#issuecomment-16279",
+    "user": "was"
+}
+```
 
 This is not a bug, it is a design decision.  ZZ modules in Sage in general need *not* be embedded in ZZ^n -- they can be in QQ^n.  For consistency the basis matrix is thus always over QQ.  Here's an example of a module over ZZ but for which the basis matrix is over QQ. 
 
@@ -52,16 +77,38 @@ matrix over ZZ if posible, otherwise make it over QQ.  Thoughts?   I doubt
 this will break anything.... (famous last words).
 
 
+
 ---
 
-Comment by jason created at 2008-11-14 05:20:25
+archive/issue_comments_016280.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2008-11-14T05:20:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2412",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2412#issuecomment-16280",
+    "user": "jason"
+}
+```
 
 Resolution: invalid
 
 
+
 ---
 
-Comment by jason created at 2008-11-14 05:20:25
+archive/issue_comments_016281.json:
+```json
+{
+    "body": "As per request on IRC:\n\n\n```\n[23:17] <ncalexan> jason--: I think that decision is fine.  I say close it as invalid.\n```\n",
+    "created_at": "2008-11-14T05:20:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2412",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2412#issuecomment-16281",
+    "user": "jason"
+}
+```
 
 As per request on IRC:
 

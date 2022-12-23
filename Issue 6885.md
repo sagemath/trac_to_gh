@@ -1,11 +1,21 @@
 # Issue 6885: Excessive nesting in PDF reference manual, possibly from ring.pyx
 
-Issue created by migration from https://trac.sagemath.org/ticket/6885
-
-Original creator: mpatel
-
-Original creation time: 2009-09-04 08:02:16
-
+archive/issues_006885.json:
+```json
+{
+    "body": "Assignee: tba\n\nWhen building the PDF reference manual on 64-bit Fedora 10:\n\n```\n[1913] [1914] [1915] [1916]\nChapter 24.\n\n! LaTeX Error: Too deeply nested.\n\nSee the LaTeX manual or LaTeX Companion for explanation.\nType  H <return>  for immediate help.\n ...\n\nl.154726 \\begin{itemize}\n\n?\n```\n\nI think this is near the beginning of `sage/rings/ring.pyx`.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6885\n\n",
+    "created_at": "2009-09-04T08:02:16Z",
+    "labels": [
+        "documentation",
+        "minor",
+        "bug"
+    ],
+    "title": "Excessive nesting in PDF reference manual, possibly from ring.pyx",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6885",
+    "user": "mpatel"
+}
+```
 Assignee: tba
 
 When building the PDF reference manual on 64-bit Fedora 10:
@@ -28,16 +38,42 @@ l.154726 \begin{itemize}
 I think this is near the beginning of `sage/rings/ring.pyx`.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6885
+
+
+
+
 
 ---
 
-Comment by mvngu created at 2009-09-22 20:14:25
+archive/issue_comments_056894.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2009-09-22T20:14:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6885",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6885#issuecomment-56894",
+    "user": "mvngu"
+}
+```
 
 Resolution: duplicate
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-22 20:14:25
+archive/issue_comments_056895.json:
+```json
+{
+    "body": "Close this ticket as duplicate of #6988.",
+    "created_at": "2009-09-22T20:14:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6885",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6885#issuecomment-56895",
+    "user": "mvngu"
+}
+```
 
 Close this ticket as duplicate of #6988.

@@ -1,11 +1,21 @@
 # Issue 3274: OSX: delete libpng*.la since we also nuke libpng*.dylib
 
-Issue created by migration from https://trac.sagemath.org/ticket/3274
-
-Original creator: mabshoff
-
-Original creation time: 2008-05-23 00:36:54
-
+archive/issues_003274.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nspkg coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3274\n\n",
+    "created_at": "2008-05-23T00:36:54Z",
+    "labels": [
+        "build",
+        "major",
+        "bug"
+    ],
+    "title": "OSX: delete libpng*.la since we also nuke libpng*.dylib",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3274",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 spkg coming up.
@@ -14,22 +24,61 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/3274
+
+
+
+
 
 ---
+
+archive/issue_comments_022649.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-05-23T00:42:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3274",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3274#issuecomment-22649",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-23 00:43:35
+archive/issue_comments_022650.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-05-23T00:43:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3274",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3274#issuecomment-22650",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-23 00:43:35
+archive/issue_comments_022651.json:
+```json
+{
+    "body": "The updated spkg can be found at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0.2//rc0/libpng-1.2.22.p7.spkg\n\nCheers,\n\nMichael",
+    "created_at": "2008-05-23T00:43:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3274",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3274#issuecomment-22651",
+    "user": "mabshoff"
+}
+```
 
 The updated spkg can be found at
 
@@ -40,15 +89,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-23 01:15:03
+archive/issue_comments_022652.json:
+```json
+{
+    "body": "Merged in Sage 3.0.2.rc0",
+    "created_at": "2008-05-23T01:15:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3274",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3274#issuecomment-22652",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.2.rc0
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-23 01:15:03
+archive/issue_comments_022653.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-05-23T01:15:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3274",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3274#issuecomment-22653",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

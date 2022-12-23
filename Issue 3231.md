@@ -1,61 +1,152 @@
 # Issue 3231: Use the randgen framework to set the seeds for controlled Magma, Singular, etc. sessions
 
-Issue created by migration from https://trac.sagemath.org/ticket/3231
-
-Original creator: malb
-
-Original creation time: 2008-05-16 23:14:33
-
+archive/issues_003231.json:
+```json
+{
+    "body": "Assignee: was\n\nIf e.g. Magma is started from Sage then the seed parameter (`-S seed`) should be set using the randgen framework maybe.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3231\n\n",
+    "created_at": "2008-05-16T23:14:33Z",
+    "labels": [
+        "interfaces",
+        "minor",
+        "enhancement"
+    ],
+    "title": "Use the randgen framework to set the seeds for controlled Magma, Singular, etc. sessions",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3231",
+    "user": "malb"
+}
+```
 Assignee: was
 
 If e.g. Magma is started from Sage then the seed parameter (`-S seed`) should be set using the randgen framework maybe.
 
+Issue created by migration from https://trac.sagemath.org/ticket/3231
+
+
+
+
 
 ---
 
-Comment by cwitty created at 2009-02-24 02:15:43
+archive/issue_comments_022345.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-02-24T02:15:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3231",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3231#issuecomment-22345",
+    "user": "cwitty"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by cwitty created at 2009-02-24 02:15:43
+archive/issue_comments_022346.json:
+```json
+{
+    "body": "Changing assignee from was to cwitty.",
+    "created_at": "2009-02-24T02:15:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3231",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3231#issuecomment-22346",
+    "user": "cwitty"
+}
+```
 
 Changing assignee from was to cwitty.
 
 
+
 ---
 
-Comment by tscholl2 created at 2015-05-25 22:53:25
+archive/issue_comments_022347.json:
+```json
+{
+    "body": "New commits:",
+    "created_at": "2015-05-25T22:53:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3231",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3231#issuecomment-22347",
+    "user": "tscholl2"
+}
+```
 
 New commits:
 
 
+
 ---
 
-Comment by git created at 2015-05-26 13:46:34
+archive/issue_comments_022348.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2015-05-26T13:46:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3231",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3231#issuecomment-22348",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by git created at 2015-05-26 15:48:43
+archive/issue_comments_022349.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2015-05-26T15:48:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3231",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3231#issuecomment-22349",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by tscholl2 created at 2015-05-26 15:51:50
+archive/issue_comments_022350.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2015-05-26T15:51:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3231",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3231#issuecomment-22350",
+    "user": "tscholl2"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by tscholl2 created at 2015-05-26 15:55:26
+archive/issue_comments_022351.json:
+```json
+{
+    "body": "I added a `set_seed` function on a lot of the interfaces such as gap, gp, magma, maxima, R, and singular. This allows setting the seed for the corresponding random number generator.\n\nThis made solving the ticket very easy by just calling \"set_seed\" when the interface is started with `_start`.\n\nI think someone should rewrite the `randstate` class to use these methods if possible. However that would require someone with more cython knowledge.\n\nAlso `set_seed` still needs to be implemented on a few more interfaces, but those are not free so they are not as easy to test with.",
+    "created_at": "2015-05-26T15:55:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3231",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3231#issuecomment-22351",
+    "user": "tscholl2"
+}
+```
 
 I added a `set_seed` function on a lot of the interfaces such as gap, gp, magma, maxima, R, and singular. This allows setting the seed for the corresponding random number generator.
 
@@ -66,16 +157,38 @@ I think someone should rewrite the `randstate` class to use these methods if pos
 Also `set_seed` still needs to be implemented on a few more interfaces, but those are not free so they are not as easy to test with.
 
 
+
 ---
 
-Comment by malb created at 2015-05-27 09:23:43
+archive/issue_comments_022352.json:
+```json
+{
+    "body": "Maybe this ticket should be repurposed then and another ticket created to realise the integration into the randgen() framework? It'd be a shame if this bitrots.",
+    "created_at": "2015-05-27T09:23:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3231",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3231#issuecomment-22352",
+    "user": "malb"
+}
+```
 
 Maybe this ticket should be repurposed then and another ticket created to realise the integration into the randgen() framework? It'd be a shame if this bitrots.
 
 
+
 ---
 
-Comment by tscholl2 created at 2015-05-27 14:31:08
+archive/issue_comments_022353.json:
+```json
+{
+    "body": "I think this ticket is fine because it's still a step in the right direction. In my mind the best framework would be for every interface to have a `set_seed` function like these. Then `randstate` would have methods that take in an instance of an interface and set it's seed using that method. Right now there is no control over multiple instances of interfaces, which it seems like there could/should be, and it might even simplify some of the `randstate` code.\n\nAlso `randstate` would still set seeds for non-interfaces such as libraries like `libc` and `python.random` (or wrap the random calls as it does). All of the `set_seed` methods I wrote default to `interface.rand_seed` on startup which uses `randstate`, so I think this fit the description of this ticket.\n\nI think the next ticket should be specifically about `randstate` and be dependent on this one. I am worried repurposing this ticket to do both might be a bit much. Or did you have something else in mind?",
+    "created_at": "2015-05-27T14:31:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3231",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3231#issuecomment-22353",
+    "user": "tscholl2"
+}
+```
 
 I think this ticket is fine because it's still a step in the right direction. In my mind the best framework would be for every interface to have a `set_seed` function like these. Then `randstate` would have methods that take in an instance of an interface and set it's seed using that method. Right now there is no control over multiple instances of interfaces, which it seems like there could/should be, and it might even simplify some of the `randstate` code.
 
@@ -84,46 +197,112 @@ Also `randstate` would still set seeds for non-interfaces such as libraries like
 I think the next ticket should be specifically about `randstate` and be dependent on this one. I am worried repurposing this ticket to do both might be a bit much. Or did you have something else in mind?
 
 
+
 ---
 
-Comment by malb created at 2015-05-28 10:23:20
+archive/issue_comments_022354.json:
+```json
+{
+    "body": "I agree: let's deal with what you've done in this ticket (and change the description accordingly) and then open another follow up ticket which deals with the `randstate` business.",
+    "created_at": "2015-05-28T10:23:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3231",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3231#issuecomment-22354",
+    "user": "malb"
+}
+```
 
 I agree: let's deal with what you've done in this ticket (and change the description accordingly) and then open another follow up ticket which deals with the `randstate` business.
 
 
+
 ---
 
-Comment by git created at 2015-05-29 02:36:26
+archive/issue_comments_022355.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2015-05-29T02:36:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3231",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3231#issuecomment-22355",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by git created at 2015-05-29 02:41:03
+archive/issue_comments_022356.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2015-05-29T02:41:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3231",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3231#issuecomment-22356",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by tscholl2 created at 2015-05-29 02:54:58
+archive/issue_comments_022357.json:
+```json
+{
+    "body": "I repurposed this ticket to match the new directions for the `randstate` class. This ticket is now focused on setting the seeds for the interfaces as the code I uploaded does for many of the interfaces.\n\nThere will be a new ticket to rewrite the `randstate` class to use these methods as well as allow for setting the seed on particular instances of interfaces. This may force a small change in the `randstate` api, but that is for the next ticket.",
+    "created_at": "2015-05-29T02:54:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3231",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3231#issuecomment-22357",
+    "user": "tscholl2"
+}
+```
 
 I repurposed this ticket to match the new directions for the `randstate` class. This ticket is now focused on setting the seeds for the interfaces as the code I uploaded does for many of the interfaces.
 
 There will be a new ticket to rewrite the `randstate` class to use these methods as well as allow for setting the seed on particular instances of interfaces. This may force a small change in the `randstate` api, but that is for the next ticket.
 
 
+
 ---
 
-Comment by malb created at 2015-06-12 17:28:09
+archive/issue_comments_022358.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2015-06-12T17:28:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3231",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3231#issuecomment-22358",
+    "user": "malb"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by malb created at 2015-06-12 17:28:09
+archive/issue_comments_022359.json:
+```json
+{
+    "body": "In /src/sage/interfaces/interface.py the new function\n\n\n```\n+    def get_seed(self):\n+        return self._seed\n```\n\n\nlacks documentation and a doctest. The next two functions lack doctests (I know it's silly)\n\nOther than that, it looks good to me.",
+    "created_at": "2015-06-12T17:28:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3231",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3231#issuecomment-22359",
+    "user": "malb"
+}
+```
 
 In /src/sage/interfaces/interface.py the new function
 
@@ -139,122 +318,298 @@ lacks documentation and a doctest. The next two functions lack doctests (I know 
 Other than that, it looks good to me.
 
 
+
 ---
 
-Comment by git created at 2015-06-12 20:12:50
+archive/issue_comments_022360.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2015-06-12T20:12:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3231",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3231#issuecomment-22360",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by tscholl2 created at 2015-06-12 20:17:22
+archive/issue_comments_022361.json:
+```json
+{
+    "body": "Woops, examples are always helpful!\n\nI added documentation and doctests to the functions in interfaces. I copied them out of octave's file, hopefully that works.",
+    "created_at": "2015-06-12T20:17:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3231",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3231#issuecomment-22361",
+    "user": "tscholl2"
+}
+```
 
 Woops, examples are always helpful!
 
 I added documentation and doctests to the functions in interfaces. I copied them out of octave's file, hopefully that works.
 
 
+
 ---
 
-Comment by tscholl2 created at 2015-06-12 20:17:22
+archive/issue_comments_022362.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2015-06-12T20:17:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3231",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3231#issuecomment-22362",
+    "user": "tscholl2"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by malb created at 2015-06-13 09:55:23
+archive/issue_comments_022363.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_info.",
+    "created_at": "2015-06-13T09:55:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3231",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3231#issuecomment-22363",
+    "user": "malb"
+}
+```
 
 Changing status from needs_review to needs_info.
 
 
+
 ---
 
-Comment by malb created at 2015-06-13 09:55:23
+archive/issue_comments_022364.json:
+```json
+{
+    "body": "Why does your patch drop `set_seed` for Gap? \n\nI'd also say, if possible, then it shouldn't be tested with the Octave example: Octave is optional, e.g. Singular is not. Secondly, the closer to the actual code, the better. So if we can instantiate an `Interface` object directly that'd be best.",
+    "created_at": "2015-06-13T09:55:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3231",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3231#issuecomment-22364",
+    "user": "malb"
+}
+```
 
 Why does your patch drop `set_seed` for Gap? 
 
 I'd also say, if possible, then it shouldn't be tested with the Octave example: Octave is optional, e.g. Singular is not. Secondly, the closer to the actual code, the better. So if we can instantiate an `Interface` object directly that'd be best.
 
 
+
 ---
 
-Comment by git created at 2015-06-13 14:23:42
+archive/issue_comments_022365.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2015-06-13T14:23:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3231",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3231#issuecomment-22365",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by git created at 2015-06-13 14:30:02
+archive/issue_comments_022366.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2015-06-13T14:30:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3231",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3231#issuecomment-22366",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by tscholl2 created at 2015-06-13 14:32:40
+archive/issue_comments_022367.json:
+```json
+{
+    "body": "There was actually two `set_seed` for Gap. The file was long and I accidentally copied another to a slightly different place. You can still see the actual `set_seed` function under the total diff.\n\nThese new pushes change the doc tests in `interface.py` to use Singular (so less optional packages) and also use an instance of `Interface` directly. This is ok for `rand_seed` and `get_seed` but not for `set_seed` as that has to be implemented by the specific interface. Do you think we need a doc test which raises the `NotImplementedError`?",
+    "created_at": "2015-06-13T14:32:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3231",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3231#issuecomment-22367",
+    "user": "tscholl2"
+}
+```
 
 There was actually two `set_seed` for Gap. The file was long and I accidentally copied another to a slightly different place. You can still see the actual `set_seed` function under the total diff.
 
 These new pushes change the doc tests in `interface.py` to use Singular (so less optional packages) and also use an instance of `Interface` directly. This is ok for `rand_seed` and `get_seed` but not for `set_seed` as that has to be implemented by the specific interface. Do you think we need a doc test which raises the `NotImplementedError`?
 
 
+
 ---
 
-Comment by malb created at 2015-06-15 07:31:37
+archive/issue_comments_022368.json:
+```json
+{
+    "body": "Changing status from needs_info to positive_review.",
+    "created_at": "2015-06-15T07:31:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3231",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3231#issuecomment-22368",
+    "user": "malb"
+}
+```
 
 Changing status from needs_info to positive_review.
 
 
+
 ---
 
-Comment by malb created at 2015-06-15 07:31:37
+archive/issue_comments_022369.json:
+```json
+{
+    "body": "Looks good to me. \n\nI guess technically we should actually doctest a `NotImplementedError` but I'll leave it up to you.",
+    "created_at": "2015-06-15T07:31:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3231",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3231#issuecomment-22369",
+    "user": "malb"
+}
+```
 
 Looks good to me. 
 
 I guess technically we should actually doctest a `NotImplementedError` but I'll leave it up to you.
 
 
+
 ---
 
-Comment by git created at 2015-06-15 15:07:03
+archive/issue_comments_022370.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1 and set ticket back to needs_review. New commits:",
+    "created_at": "2015-06-15T15:07:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3231",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3231#issuecomment-22370",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1 and set ticket back to needs_review. New commits:
 
 
+
 ---
 
-Comment by git created at 2015-06-15 15:07:03
+archive/issue_comments_022371.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_review.",
+    "created_at": "2015-06-15T15:07:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3231",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3231#issuecomment-22371",
+    "user": "git"
+}
+```
 
 Changing status from positive_review to needs_review.
 
 
+
 ---
 
-Comment by tscholl2 created at 2015-06-15 15:08:15
+archive/issue_comments_022372.json:
+```json
+{
+    "body": "I added a doc test for the `set_seed` method for the general interface. It was easy to add.",
+    "created_at": "2015-06-15T15:08:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3231",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3231#issuecomment-22372",
+    "user": "tscholl2"
+}
+```
 
 I added a doc test for the `set_seed` method for the general interface. It was easy to add.
 
 
+
 ---
 
-Comment by malb created at 2015-06-15 16:36:09
+archive/issue_comments_022373.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2015-06-15T16:36:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3231",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3231#issuecomment-22373",
+    "user": "malb"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by malb created at 2015-06-15 16:36:09
+archive/issue_comments_022374.json:
+```json
+{
+    "body": "Looks good to me.",
+    "created_at": "2015-06-15T16:36:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3231",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3231#issuecomment-22374",
+    "user": "malb"
+}
+```
 
 Looks good to me.
 
 
+
 ---
 
-Comment by vbraun created at 2015-06-15 20:23:53
+archive/issue_comments_022375.json:
+```json
+{
+    "body": "\n```\nsage -t --long src/sage/interfaces/magma.py  # 2 doctests failed\nsage -t --long src/sage/interfaces/octave.py  # 2 doctests failed\nsage -t --long src/sage/interfaces/scilab.py  # 2 doctests failed\nsage -t --long src/sage/repl/interpreter.py  # 1 doctest failed\n```\n",
+    "created_at": "2015-06-15T20:23:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3231",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3231#issuecomment-22375",
+    "user": "vbraun"
+}
+```
 
 
 ```
@@ -266,16 +621,38 @@ sage -t --long src/sage/repl/interpreter.py  # 1 doctest failed
 
 
 
+
 ---
 
-Comment by vbraun created at 2015-06-15 20:23:53
+archive/issue_comments_022376.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_work.",
+    "created_at": "2015-06-15T20:23:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3231",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3231#issuecomment-22376",
+    "user": "vbraun"
+}
+```
 
 Changing status from positive_review to needs_work.
 
 
+
 ---
 
-Comment by tscholl2 created at 2015-06-17 02:54:58
+archive/issue_comments_022377.json:
+```json
+{
+    "body": "I get the first 3 errors if I run `sage -t --long src/sage/interfaces/magma.py` but not if I run `./sage -t --long src/sage/interfaces/magma.py`. Shouldn't I only be checking if it runs with the version of Sage on the branch and not the user's systems' version?\n\nThe last error seems to be something I didn't notice. Apparently some of the interfaces keep a counter of the commands used and label things with it. The `set_seed` function for some interfaces raises this counter because it needs to call a command in the interface. So running the test in `src/sage/repl/interpreter.py` the counter is off from what it used to be.\n\nThis error doesn't occur if I comment out line 626 in `src/sage/interfaces/maxima.py`:\n\n```\n625 # set random seed\n626 self.set_seed(self._seed)\n```\n\n\nI'm not sure what to do about this. It seems like there is a few options:\n\n* We could reset the counter after the `set_seed` function is called (I actually don't know if this is possible yet).\n* We could change all the doc tests in functions which use this counter and increment it manually.\n* We could not run `set_seed` on start and leave it up to the user to run it.\n\nMartin, do you have any suggestions on which way to proceed?",
+    "created_at": "2015-06-17T02:54:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3231",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3231#issuecomment-22377",
+    "user": "tscholl2"
+}
+```
 
 I get the first 3 errors if I run `sage -t --long src/sage/interfaces/magma.py` but not if I run `./sage -t --long src/sage/interfaces/magma.py`. Shouldn't I only be checking if it runs with the version of Sage on the branch and not the user's systems' version?
 
@@ -298,9 +675,20 @@ I'm not sure what to do about this. It seems like there is a few options:
 Martin, do you have any suggestions on which way to proceed?
 
 
+
 ---
 
-Comment by malb created at 2015-06-18 14:39:44
+archive/issue_comments_022378.json:
+```json
+{
+    "body": "Ah, crap my comments from yesterday seem not to have arrived:\n\n- You are not seeing these errors because you have octave et al. installed in your local development environment. In other words: some doctests are not marked optional but you should be marked optional. \n\n- I'd just update the doctest, `set_seed()` is a proper call, so no point in resetting the counter.",
+    "created_at": "2015-06-18T14:39:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3231",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3231#issuecomment-22378",
+    "user": "malb"
+}
+```
 
 Ah, crap my comments from yesterday seem not to have arrived:
 
@@ -309,30 +697,74 @@ Ah, crap my comments from yesterday seem not to have arrived:
 - I'd just update the doctest, `set_seed()` is a proper call, so no point in resetting the counter.
 
 
+
 ---
 
-Comment by git created at 2015-06-18 16:10:13
+archive/issue_comments_022379.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2015-06-18T16:10:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3231",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3231#issuecomment-22379",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by tscholl2 created at 2015-06-18 18:32:32
+archive/issue_comments_022380.json:
+```json
+{
+    "body": "I added `# optional -` tags to the corresponding doc tests. I think I got all of them, but someone should check. Strangely enough, this also fixed the other test `sage -t --long src/sage/repl/interpreter.py`. Which may mean that either it wasn't actually counting the calls to the interpreter, or something else happened with the optional flags which affected it.",
+    "created_at": "2015-06-18T18:32:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3231",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3231#issuecomment-22380",
+    "user": "tscholl2"
+}
+```
 
 I added `# optional -` tags to the corresponding doc tests. I think I got all of them, but someone should check. Strangely enough, this also fixed the other test `sage -t --long src/sage/repl/interpreter.py`. Which may mean that either it wasn't actually counting the calls to the interpreter, or something else happened with the optional flags which affected it.
 
 
+
 ---
 
-Comment by tscholl2 created at 2015-06-18 18:32:32
+archive/issue_comments_022381.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2015-06-18T18:32:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3231",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3231#issuecomment-22381",
+    "user": "tscholl2"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by malb created at 2015-06-19 08:10:46
+archive/issue_comments_022382.json:
+```json
+{
+    "body": "I still get \n\n\n```\nsage -t --warn-long 33.6 src/sage/repl/interpreter.py  # 1 doctest failed\n**********************************************************************\nFile \"src/sage/repl/interpreter.py\", line 561, in sage.repl.interpreter.InterfaceShellTransformer.preparse_imports_from_sage\nFailed example:\n    ift.preparse_imports_from_sage('2 + maxima(a)')\nExpected:\n    '2 +  sage1 '\nGot:\n    '2 +  sage4 '\n```\n\n\nbut the other three are gone.",
+    "created_at": "2015-06-19T08:10:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3231",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3231#issuecomment-22382",
+    "user": "malb"
+}
+```
 
 I still get 
 
@@ -353,52 +785,129 @@ Got:
 but the other three are gone.
 
 
+
 ---
 
-Comment by malb created at 2015-06-19 08:10:46
+archive/issue_comments_022383.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2015-06-19T08:10:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3231",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3231#issuecomment-22383",
+    "user": "malb"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by git created at 2015-06-21 17:47:36
+archive/issue_comments_022384.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2015-06-21T17:47:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3231",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3231#issuecomment-22384",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by tscholl2 created at 2015-06-21 17:54:16
+archive/issue_comments_022385.json:
+```json
+{
+    "body": "I removed some white space and changed a doctest in `src/sage/repl/interpreter.py`.\n\nThe doc test was failing because `maxima` now calls `set_seed` on startup which uses several calls to the maxima interpreter. Therefore instead of getting back `2 +  sage1`, it should get back `2 + sage4`.",
+    "created_at": "2015-06-21T17:54:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3231",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3231#issuecomment-22385",
+    "user": "tscholl2"
+}
+```
 
 I removed some white space and changed a doctest in `src/sage/repl/interpreter.py`.
 
 The doc test was failing because `maxima` now calls `set_seed` on startup which uses several calls to the maxima interpreter. Therefore instead of getting back `2 +  sage1`, it should get back `2 + sage4`.
 
 
+
 ---
 
-Comment by tscholl2 created at 2015-06-21 17:54:16
+archive/issue_comments_022386.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2015-06-21T17:54:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3231",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3231#issuecomment-22386",
+    "user": "tscholl2"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by malb created at 2015-06-22 13:09:34
+archive/issue_comments_022387.json:
+```json
+{
+    "body": "tests pass here & looks good.",
+    "created_at": "2015-06-22T13:09:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3231",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3231#issuecomment-22387",
+    "user": "malb"
+}
+```
 
 tests pass here & looks good.
 
 
+
 ---
 
-Comment by malb created at 2015-06-22 13:09:34
+archive/issue_comments_022388.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2015-06-22T13:09:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3231",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3231#issuecomment-22388",
+    "user": "malb"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by vbraun created at 2015-06-22 22:25:10
+archive/issue_comments_022389.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2015-06-22T22:25:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3231",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3231#issuecomment-22389",
+    "user": "vbraun"
+}
+```
 
 Resolution: fixed

@@ -1,26 +1,62 @@
 # Issue 4913: convert sage.graphs.* docstrings to Sphinx
 
-Issue created by migration from https://trac.sagemath.org/ticket/4913
-
-Original creator: mhansen
-
-Original creation time: 2009-01-01 22:51:53
-
+archive/issues_004913.json:
+```json
+{
+    "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4913\n\n",
+    "created_at": "2009-01-01T22:51:53Z",
+    "labels": [
+        "documentation",
+        "major",
+        "enhancement"
+    ],
+    "title": "convert sage.graphs.* docstrings to Sphinx",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4913",
+    "user": "mhansen"
+}
+```
 Assignee: tba
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4913
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2009-01-02 02:34:58
+archive/issue_comments_037283.json:
+```json
+{
+    "body": "Patch at http://sage.math.washington.edu/home/mhansen/trac_4913.patch",
+    "created_at": "2009-01-02T02:34:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4913",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4913#issuecomment-37283",
+    "user": "mhansen"
+}
+```
 
 Patch at http://sage.math.washington.edu/home/mhansen/trac_4913.patch
 
 
+
 ---
 
-Comment by rlm created at 2009-01-24 15:26:27
+archive/issue_comments_037284.json:
+```json
+{
+    "body": "Oops:\n\n```\n+-  Robert L. Miller (2007-01-13): refactoring, adjusting for\n+   NetworkX-0.33, fixed plotting bugs (2007-01-23): basic tutorial,\n+   edge labels, loops, multiple edges and arcs (2007-02-07): graph6\n+   and sparse6 formats, matrix input\n```\n",
+    "created_at": "2009-01-24T15:26:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4913",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4913#issuecomment-37284",
+    "user": "rlm"
+}
+```
 
 Oops:
 
@@ -33,21 +69,56 @@ Oops:
 
 
 
+
 ---
+
+archive/issue_comments_037285.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-02-21T19:18:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4913",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4913#issuecomment-37285",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-24 18:04:42
+archive/issue_comments_037286.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-02-24T18:04:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4913",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4913#issuecomment-37286",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-24 18:04:42
+archive/issue_comments_037287.json:
+```json
+{
+    "body": "Merged sage.graphs-final.patch in Sage 3.4.alpha0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-24T18:04:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4913",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4913#issuecomment-37287",
+    "user": "mabshoff"
+}
+```
 
 Merged sage.graphs-final.patch in Sage 3.4.alpha0.
 

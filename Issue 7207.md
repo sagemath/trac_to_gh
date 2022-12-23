@@ -1,54 +1,136 @@
 # Issue 7207: from __future__ import <anything> results in a Syntax Error
 
-Issue created by migration from https://trac.sagemath.org/ticket/7207
-
-Original creator: timdumol
-
-Original creation time: 2009-10-14 11:42:07
-
+archive/issues_007207.json:
+```json
+{
+    "body": "Assignee: boothby\n\nCC:  mpatel was\n\n`from __future__ import *` statements must be the first statements in a file. However, the old Sage Notebook inserts synchronization code before the file, and the new SageNB inserts prompt changing code first. Both of the aforementioned changes break the code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7207\n\n",
+    "created_at": "2009-10-14T11:42:07Z",
+    "labels": [
+        "notebook",
+        "major",
+        "bug"
+    ],
+    "title": "from __future__ import <anything> results in a Syntax Error",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7207",
+    "user": "timdumol"
+}
+```
 Assignee: boothby
 
 CC:  mpatel was
 
 `from __future__ import *` statements must be the first statements in a file. However, the old Sage Notebook inserts synchronization code before the file, and the new SageNB inserts prompt changing code first. Both of the aforementioned changes break the code.
 
+Issue created by migration from https://trac.sagemath.org/ticket/7207
+
+
+
+
 
 ---
 
-Comment by timdumol created at 2009-10-16 11:01:58
+archive/issue_comments_059799.json:
+```json
+{
+    "body": "Fixed formatting to relocate future imports to the top of the file.",
+    "created_at": "2009-10-16T11:01:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7207",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7207#issuecomment-59799",
+    "user": "timdumol"
+}
+```
 
 Fixed formatting to relocate future imports to the top of the file.
 
 
+
 ---
 
-Comment by timdumol created at 2009-10-16 11:03:17
+archive/issue_comments_059800.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-10-16T11:03:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7207",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7207#issuecomment-59800",
+    "user": "timdumol"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_059801.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-10-16T11:03:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7207",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7207#issuecomment-59801",
+    "user": "timdumol"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by timdumol created at 2009-12-05 09:59:42
+archive/issue_comments_059802.json:
+```json
+{
+    "body": "Would anyone mind reviewing this? It just moves the `displayhook_hack` to another file, and adds some tests and a tad of refactoring.",
+    "created_at": "2009-12-05T09:59:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7207",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7207#issuecomment-59802",
+    "user": "timdumol"
+}
+```
 
 Would anyone mind reviewing this? It just moves the `displayhook_hack` to another file, and adds some tests and a tad of refactoring.
 
 
+
 ---
 
-Comment by was created at 2009-12-08 20:18:55
+archive/issue_comments_059803.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2009-12-08T20:18:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7207",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7207#issuecomment-59803",
+    "user": "was"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by was created at 2009-12-08 20:18:55
+archive/issue_comments_059804.json:
+```json
+{
+    "body": "Needs work, since this has a subtle bug, which I bet you can easily fix.  See below.\n\nUsing regular expressions is unfortunately not rock solid.  For example, this input \"mysteriously\" gives a SyntaxError:\n\n```\nprint \"\"\"\nfrom __future__ import division\"\"\"\n```\n\noutputs:\n\n```\nSyntax Error:\n    from __future__ import division\"\"\"\n```\n\nwhereas the similar\n\n```\nprint \"\"\"\nfrom __xfuture__ import division\"\"\"\n```\n\nworks fine.  \n\nI think the right fix is to require that the even in the notebook the `from __future__ import ...` lines appear at the very top.  This would make it possible to use the same method you already used.",
+    "created_at": "2009-12-08T20:18:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7207",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7207#issuecomment-59804",
+    "user": "was"
+}
+```
 
 Needs work, since this has a subtle bug, which I bet you can easily fix.  See below.
 
@@ -78,65 +160,172 @@ works fine.
 I think the right fix is to require that the even in the notebook the `from __future__ import ...` lines appear at the very top.  This would make it possible to use the same method you already used.
 
 
+
 ---
 
-Comment by timdumol created at 2009-12-10 16:13:32
+archive/issue_comments_059805.json:
+```json
+{
+    "body": "Uses stdlib's `ast` to parse the file instead of regexp's.",
+    "created_at": "2009-12-10T16:13:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7207",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7207#issuecomment-59805",
+    "user": "timdumol"
+}
+```
 
 Uses stdlib's `ast` to parse the file instead of regexp's.
 
 
+
 ---
 
-Comment by timdumol created at 2009-12-10 16:14:30
+archive/issue_comments_059806.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2009-12-10T16:14:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7207",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7207#issuecomment-59806",
+    "user": "timdumol"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
+
+archive/issue_comments_059807.json:
+```json
+{
+    "body": "Attachment\n\nThis version of the patch uses `ast` (from stdlib). It should prevent errors such as what you described.",
+    "created_at": "2009-12-10T16:14:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7207",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7207#issuecomment-59807",
+    "user": "timdumol"
+}
+```
 
 Attachment
 
 This version of the patch uses `ast` (from stdlib). It should prevent errors such as what you described.
 
 
+
 ---
+
+archive/issue_comments_059808.json:
+```json
+{
+    "body": "Attachment\n\nRebased on #7650 and its dependencies.",
+    "created_at": "2009-12-16T12:37:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7207",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7207#issuecomment-59808",
+    "user": "timdumol"
+}
+```
 
 Attachment
 
 Rebased on #7650 and its dependencies.
 
 
+
 ---
+
+archive/issue_comments_059809.json:
+```json
+{
+    "body": "Attachment\n\nMissed an import on the rebase.",
+    "created_at": "2009-12-16T13:01:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7207",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7207#issuecomment-59809",
+    "user": "timdumol"
+}
+```
 
 Attachment
 
 Missed an import on the rebase.
 
 
+
 ---
+
+archive/issue_comments_059810.json:
+```json
+{
+    "body": "Attachment\n\nRebased to ~0.60",
+    "created_at": "2010-01-20T07:17:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7207",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7207#issuecomment-59810",
+    "user": "acleone"
+}
+```
 
 Attachment
 
 Rebased to ~0.60
 
 
+
 ---
 
-Comment by acleone created at 2010-01-20 07:18:42
+archive/issue_comments_059811.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-01-20T07:18:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7207",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7207#issuecomment-59811",
+    "user": "acleone"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by acleone created at 2010-01-20 07:18:42
+archive/issue_comments_059812.json:
+```json
+{
+    "body": "Rebased to a bit after 0.60 (see trac_7207-sagenb-future-import.3.patch). Other than that LGTM.",
+    "created_at": "2010-01-20T07:18:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7207",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7207#issuecomment-59812",
+    "user": "acleone"
+}
+```
 
 Rebased to a bit after 0.60 (see trac_7207-sagenb-future-import.3.patch). Other than that LGTM.
 
 
+
 ---
 
-Comment by mpatel created at 2010-01-25 00:38:05
+archive/issue_comments_059813.json:
+```json
+{
+    "body": "V4 is rebased for this queue:\n\n```\nsagenb-0.6\ntrac_7249-jinja2_v9.5.patch\ntrac_7962-link-worksheets-zip-file.patch\ntrac_7969-escaped-backslash.patch\ntrac_4217-html-system-formatting.3.patch\ntrac_3083-print-documentation.5.patch\ntrac_6182-double-quotes-ws.2.patch\ntrac_5263-publish-url.patch\ntrac_7631-republish-name.patch\ntrac_6353-cookies-diff-ports.patch\ntrac_7207-sagenb-future-import.3.patch\n```\n",
+    "created_at": "2010-01-25T00:38:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7207",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7207#issuecomment-59813",
+    "user": "mpatel"
+}
+```
 
 V4 is rebased for this queue:
 
@@ -156,20 +345,55 @@ trac_7207-sagenb-future-import.3.patch
 
 
 
+
 ---
 
-Comment by mpatel created at 2010-01-25 00:39:32
+archive/issue_comments_059814.json:
+```json
+{
+    "body": "Rebased for SageNB 0.6 + queue in comment.  Replaces previous.",
+    "created_at": "2010-01-25T00:39:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7207",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7207#issuecomment-59814",
+    "user": "mpatel"
+}
+```
 
 Rebased for SageNB 0.6 + queue in comment.  Replaces previous.
 
 
+
 ---
+
+archive/issue_comments_059815.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-01-25T00:52:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7207",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7207#issuecomment-59815",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mpatel created at 2010-01-25 00:52:54
+archive/issue_comments_059816.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-25T00:52:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7207",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7207#issuecomment-59816",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed

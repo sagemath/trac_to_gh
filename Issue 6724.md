@@ -1,24 +1,62 @@
 # Issue 6724: spell-check all modules under sage/modules
 
-Issue created by migration from https://trac.sagemath.org/ticket/6724
-
-Original creator: mvngu
-
-Original creation time: 2009-08-10 08:41:04
-
+archive/issues_006724.json:
+```json
+{
+    "body": "Assignee: tba\n\nAs the subject says.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6724\n\n",
+    "created_at": "2009-08-10T08:41:04Z",
+    "labels": [
+        "documentation",
+        "major",
+        "bug"
+    ],
+    "title": "spell-check all modules under sage/modules",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6724",
+    "user": "mvngu"
+}
+```
 Assignee: tba
 
 As the subject says.
 
+Issue created by migration from https://trac.sagemath.org/ticket/6724
+
+
+
+
 
 ---
 
-Comment by mvngu created at 2009-08-11 16:09:29
+archive/issue_comments_055156.json:
+```json
+{
+    "body": "based on Sage 4.1.1.rc2",
+    "created_at": "2009-08-11T16:09:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6724",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6724#issuecomment-55156",
+    "user": "mvngu"
+}
+```
 
 based on Sage 4.1.1.rc2
 
 
+
 ---
+
+archive/issue_comments_055157.json:
+```json
+{
+    "body": "Attachment\n\nI don't think I should give a positive review here. The docbuild gives me :\n\n```\nWarning: could not import sage.modules.fg_pid.fgp_morphism\ncannot import name FGP_Morphism\n```\n",
+    "created_at": "2009-08-12T10:19:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6724",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6724#issuecomment-55157",
+    "user": "wuthrich"
+}
+```
 
 Attachment
 
@@ -31,9 +69,20 @@ cannot import name FGP_Morphism
 
 
 
+
 ---
 
-Comment by mvngu created at 2009-08-12 12:01:40
+archive/issue_comments_055158.json:
+```json
+{
+    "body": "With Sage 4.1.1.rc2, the only warnings I see when building the reference manual are:\n\n```\nWARNING: /scratch/mvngu/sage-4.1.1.rc2-sage.math/local/lib/python2.6/site-packages/sage/graphs/graph.py:docstring of sage.graphs.graph.GenericGraph.kirchhoff_matrix:56: (WARNING/2) Literal block ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/sage-4.1.1.rc2-sage.math/local/lib/python2.6/site-packages/sage/graphs/graph.py:docstring of sage.graphs.graph.GenericGraph.laplacian_matrix:56: (WARNING/2) Literal block ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/sage-4.1.1.rc2-sage.math/local/lib/python2.6/site-packages/sage/graphs/graph.py:docstring of sage.graphs.graph.Graph.clique_number:19: (WARNING/2) Inline literal start-string without end-string.\n```\n\nThese warnings are fixed by #6684. So I applied patches against Sage 4.1.1.rc2 in this order:\n1. the patch at #6684\n2. the patch on this ticket\nThe reference manual then rebuilt without any warnings. So I'm curious where and how you got the warning you reported.",
+    "created_at": "2009-08-12T12:01:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6724",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6724#issuecomment-55158",
+    "user": "mvngu"
+}
+```
 
 With Sage 4.1.1.rc2, the only warnings I see when building the reference manual are:
 
@@ -44,14 +93,25 @@ WARNING: /scratch/mvngu/sage-4.1.1.rc2-sage.math/local/lib/python2.6/site-packag
 ```
 
 These warnings are fixed by #6684. So I applied patches against Sage 4.1.1.rc2 in this order:
- 1. the patch at #6684
- 1. the patch on this ticket
+1. the patch at #6684
+2. the patch on this ticket
 The reference manual then rebuilt without any warnings. So I'm curious where and how you got the warning you reported.
+
 
 
 ---
 
-Comment by wuthrich created at 2009-08-12 12:19:44
+archive/issue_comments_055159.json:
+```json
+{
+    "body": "It was on sage4.1.1.rc2 + the two other spelling-tickets that you just closed #6723 and #6731.\n\nThis warning appeared in sage -docbuild reference html\n\nand the table of contents of the html reference contained as the last entry of Modules\n\n```\nUNABLE TO IMPORT MODULE\n```\n\n\n...\n\nand I just did it again on a brand new clone from sage 4.1.1.rc2; importing only this patch; doing sage -b (which went all fine) and then sage -docbuild reference html gives me the same warning as before, namely\n\n\n```\nchrigu@linux-ljo8:~/sage/trac_spell> sage -docbuild reference html\nWarning: could not import sage.modules.fg_pid.fgp_morphism        \ncannot import name FGP_Morphism                                   \nsphinx-build -b html -d /usr/local/sage/devel/sage/doc/output/doctrees/en/reference   .  /usr/local/sage/devel/sage/doc/output/html/en/reference                                                                                                                          \nSphinx v0.5.1, building html                                                                                                         \nloading pickled environment... done                                                                                                  \nbuilding [html]: targets for 0 source files that are out of date                                                                     \nupdating environment: 0 added, 617 changed, 0 removed                                                                                \nreading sources... algebras etc\n```\n\n\nAm I doing something wrong ?",
+    "created_at": "2009-08-12T12:19:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6724",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6724#issuecomment-55159",
+    "user": "wuthrich"
+}
+```
 
 It was on sage4.1.1.rc2 + the two other spelling-tickets that you just closed #6723 and #6731.
 
@@ -85,19 +145,43 @@ reading sources... algebras etc
 Am I doing something wrong ?
 
 
+
 ---
+
+archive/issue_comments_055160.json:
+```json
+{
+    "body": "Attachment\n\nbased on Sage 4.1.1.rc2",
+    "created_at": "2009-08-12T15:08:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6724",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6724#issuecomment-55160",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
 based on Sage 4.1.1.rc2
 
 
+
 ---
 
-Comment by mvngu created at 2009-08-12 15:23:07
+archive/issue_comments_055161.json:
+```json
+{
+    "body": "Here I start again, outlining specific steps so that we are in sync on what's going on.\n* I took the sage.math binary of Sage 4.1.1.rc2, uncompressed it and ran it:\n {{{\n[mvngu`@`sage mvngu]$ pwd\n/scratch/mvngu\n[mvngu`@`sage mvngu]$ tar -zxf /home/mvngu/release/sage-4.1.1.rc2-sage.math.washington.edu-x86_64-Linux.tar.gz -C .\n[mvngu`@`sage mvngu]$ cd sage-4.1.1.rc2-sage.math.washington.edu-x86_64-Linux/\n[mvngu`@`sage sage-4.1.1.rc2-sage.math.washington.edu-x86_64-Linux]$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nThe Sage install tree may have moved.\nRegenerating Python.pyo and .pyc files that hardcode the install PATH\n(please wait at most a few minutes)...\nDo not interrupt this.\nsage: exit\nExiting SAGE (CPU time 0m0.08s, Wall time 0m2.80s).\nExiting spawned Gap process.\n[mvngu`@`sage sage-4.1.1.rc2-sage.math.washington.edu-x86_64-Linux]$ ./sage -b main\n<more output messages>\n }}}\n* With this clean slate, the content of the file `modules.rst` should be as follows:\n {{{\n[mvngu`@`sage sage-4.1.1.rc2-sage.math.washington.edu-x86_64-Linux]$ cd devel/sage-main/\n[mvngu`@`sage sage-main]$ cat doc/en/reference/modules.rst \n.. _ch:modules:\n| Sage Version 4.1.1.rc2, Release Date: 2009-08-06                   |\n| Type notebook() for the GUI, and license() for information.        |\nModules\n=======\n\n.. toctree::\n   :maxdepth: 2\n\n   sage/modules/module\n   sage/modules/free_module\n   sage/modules/free_module_element\n\n   sage/modules/complex_double_vector\n   sage/modules/real_double_vector\n   \n   sage/modules/free_module_homspace\n   sage/modules/free_module_morphism\n   \n   sage/modules/matrix_morphism\n\n   sage/modules/fg_pid/fgp_module\n   sage/modules/fg_pid/fgp_element\n   sage/modules/fg_pid/fgp_morphism\n   }}}\n   * Now I merge the patches at #6723, #6731, and #6724 (in that order) using Mercurial queue:\n   {{{\n[mvngu`@`sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6723/trac_6723-spell-check-modular.patch && hg qpush\nadding trac_6723-spell-check-modular.patch to series file\napplying trac_6723-spell-check-modular.patch\nNow at: trac_6723-spell-check-modular.patch\n[mvngu`@`sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6731/trac_6731-spell-check-schemes.patch && hg qpush\nadding trac_6731-spell-check-schemes.patch to series file\napplying trac_6731-spell-check-schemes.patch\nNow at: trac_6731-spell-check-schemes.patch\n[mvngu`@`sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6724/trac_6724-spell-check-modules.patch && hg qpush\nadding trac_6724-spell-check-modules.patch to series file\napplying trac_6724-spell-check-modules.patch\nNow at: trac_6724-spell-check-modules.patch\n }}}\n* The content of the file `modules.rst` should not and have not been changed because the patches at #6723, #6731, and #6724 don't touch that file at all. This file controls what goes into the section on modules of the the built reference manual.\n {{{\n[mvngu`@`sage sage-main]$ cat doc/en/reference/modules.rst \n.. _ch:modules:\n\nModules\n=======\n\n.. toctree::\n   :maxdepth: 2\n\n   sage/modules/module\n   sage/modules/free_module\n   sage/modules/free_module_element\n\n   sage/modules/complex_double_vector\n   sage/modules/real_double_vector\n   \n   sage/modules/free_module_homspace\n   sage/modules/free_module_morphism\n   \n   sage/modules/matrix_morphism\n\n   sage/modules/fg_pid/fgp_module\n   sage/modules/fg_pid/fgp_element\n   sage/modules/fg_pid/fgp_morphism\n   }}}\n   * I now rebuild those library files that have changed and then proceed to build the reference manual:\n   {{{\n[mvngu`@`sage sage-main]$ cd ../..\n[mvngu`@`sage sage-4.1.1.rc2-sage.math.washington.edu-x86_64-Linux]$ ./sage -b main\n<compiler messages>\n[mvngu`@`sage sage-4.1.1.rc2-sage.math.washington.edu-x86_64-Linux]$ ./sage -docbuild reference html\n<output messages>\n }}}\n* The only warnings I see are those relating to bad ReST formatting in `sage/graphs/graph.py`:\n {{{\nWARNING: /scratch/mvngu/sage-4.1.1.rc2-sage.math.washington.edu-x86_64-Linux/local/lib/python2.6/site-packages/sage/graphs/graph.py:docstring of sage.graphs.graph.GenericGraph.kirchhoff_matrix:56: (WARNING/2) Literal block ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/sage-4.1.1.rc2-sage.math.washington.edu-x86_64-Linux/local/lib/python2.6/site-packages/sage/graphs/graph.py:docstring of sage.graphs.graph.GenericGraph.laplacian_matrix:56: (WARNING/2) Literal block ends without a blank line; unexpected unindent.\nWARNING: /scratch/mvngu/sage-4.1.1.rc2-sage.math.washington.edu-x86_64-Linux/local/lib/python2.6/site-packages/sage/graphs/graph.py:docstring of sage.graphs.graph.Graph.clique_number:19: (WARNING/2) Inline literal start-string without end-string.\n }}}\n But this can be resolved with the patch at #6684.\n* If after following the steps above and you still get the same warnings you reported above, you might instead want to apply the patch `trac_6724-spell-check-modules-reduced.patch`. It's a reduced version of the patch `trac_6724-spell-check-modules.patch` with the following hunk removed:\n {{{\ndiff -r 87b600f2b8d5 -r e457c012dba6 sage/modules/fg_pid/fgp_morphism.py\n--- a/sage/modules/fg_pid/fgp_morphism.py\n+++ b/sage/modules/fg_pid/fgp_morphism.py\n`@``@` -441,7 +441,7 `@``@`\n             raise ValueError, \"no lift of element to domain\"\n \n         # Write back in terms of rows of B, and delete rows not corresponding to A,\n-        # since those coresponding to relations\n+        # since those corresponding to relations\n         v = (z*U)[:A.nrows()]\n \n         # Take the linear combination that v defines.\n }}}",
+    "created_at": "2009-08-12T15:23:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6724",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6724#issuecomment-55161",
+    "user": "mvngu"
+}
+```
 
 Here I start again, outlining specific steps so that we are in sync on what's going on.
- * I took the sage.math binary of Sage 4.1.1.rc2, uncompressed it and ran it:
+* I took the sage.math binary of Sage 4.1.1.rc2, uncompressed it and ran it:
  {{{
 [mvngu`@`sage mvngu]$ pwd
 /scratch/mvngu
@@ -121,7 +205,7 @@ Exiting spawned Gap process.
 [mvngu`@`sage sage-4.1.1.rc2-sage.math.washington.edu-x86_64-Linux]$ ./sage -b main
 <more output messages>
  }}}
- * With this clean slate, the content of the file `modules.rst` should be as follows:
+* With this clean slate, the content of the file `modules.rst` should be as follows:
  {{{
 [mvngu`@`sage sage-4.1.1.rc2-sage.math.washington.edu-x86_64-Linux]$ cd devel/sage-main/
 [mvngu`@`sage sage-main]$ cat doc/en/reference/modules.rst 
@@ -149,9 +233,9 @@ Modules
    sage/modules/fg_pid/fgp_module
    sage/modules/fg_pid/fgp_element
    sage/modules/fg_pid/fgp_morphism
- }}}
- * Now I merge the patches at #6723, #6731, and #6724 (in that order) using Mercurial queue:
- {{{
+   }}}
+   * Now I merge the patches at #6723, #6731, and #6724 (in that order) using Mercurial queue:
+   {{{
 [mvngu`@`sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6723/trac_6723-spell-check-modular.patch && hg qpush
 adding trac_6723-spell-check-modular.patch to series file
 applying trac_6723-spell-check-modular.patch
@@ -165,7 +249,7 @@ adding trac_6724-spell-check-modules.patch to series file
 applying trac_6724-spell-check-modules.patch
 Now at: trac_6724-spell-check-modules.patch
  }}}
- * The content of the file `modules.rst` should not and have not been changed because the patches at #6723, #6731, and #6724 don't touch that file at all. This file controls what goes into the section on modules of the the built reference manual.
+* The content of the file `modules.rst` should not and have not been changed because the patches at #6723, #6731, and #6724 don't touch that file at all. This file controls what goes into the section on modules of the the built reference manual.
  {{{
 [mvngu`@`sage sage-main]$ cat doc/en/reference/modules.rst 
 .. _ch:modules:
@@ -191,23 +275,23 @@ Modules
    sage/modules/fg_pid/fgp_module
    sage/modules/fg_pid/fgp_element
    sage/modules/fg_pid/fgp_morphism
- }}}
- * I now rebuild those library files that have changed and then proceed to build the reference manual:
- {{{
+   }}}
+   * I now rebuild those library files that have changed and then proceed to build the reference manual:
+   {{{
 [mvngu`@`sage sage-main]$ cd ../..
 [mvngu`@`sage sage-4.1.1.rc2-sage.math.washington.edu-x86_64-Linux]$ ./sage -b main
 <compiler messages>
 [mvngu`@`sage sage-4.1.1.rc2-sage.math.washington.edu-x86_64-Linux]$ ./sage -docbuild reference html
 <output messages>
  }}}
- * The only warnings I see are those relating to bad ReST formatting in `sage/graphs/graph.py`:
+* The only warnings I see are those relating to bad ReST formatting in `sage/graphs/graph.py`:
  {{{
 WARNING: /scratch/mvngu/sage-4.1.1.rc2-sage.math.washington.edu-x86_64-Linux/local/lib/python2.6/site-packages/sage/graphs/graph.py:docstring of sage.graphs.graph.GenericGraph.kirchhoff_matrix:56: (WARNING/2) Literal block ends without a blank line; unexpected unindent.
 WARNING: /scratch/mvngu/sage-4.1.1.rc2-sage.math.washington.edu-x86_64-Linux/local/lib/python2.6/site-packages/sage/graphs/graph.py:docstring of sage.graphs.graph.GenericGraph.laplacian_matrix:56: (WARNING/2) Literal block ends without a blank line; unexpected unindent.
 WARNING: /scratch/mvngu/sage-4.1.1.rc2-sage.math.washington.edu-x86_64-Linux/local/lib/python2.6/site-packages/sage/graphs/graph.py:docstring of sage.graphs.graph.Graph.clique_number:19: (WARNING/2) Inline literal start-string without end-string.
  }}}
  But this can be resolved with the patch at #6684.
- * If after following the steps above and you still get the same warnings you reported above, you might instead want to apply the patch `trac_6724-spell-check-modules-reduced.patch`. It's a reduced version of the patch `trac_6724-spell-check-modules.patch` with the following hunk removed:
+* If after following the steps above and you still get the same warnings you reported above, you might instead want to apply the patch `trac_6724-spell-check-modules-reduced.patch`. It's a reduced version of the patch `trac_6724-spell-check-modules.patch` with the following hunk removed:
  {{{
 diff -r 87b600f2b8d5 -r e457c012dba6 sage/modules/fg_pid/fgp_morphism.py
 --- a/sage/modules/fg_pid/fgp_morphism.py
@@ -224,31 +308,75 @@ diff -r 87b600f2b8d5 -r e457c012dba6 sage/modules/fg_pid/fgp_morphism.py
  }}}
 
 
+
 ---
 
-Comment by wuthrich created at 2009-08-12 15:49:25
+archive/issue_comments_055162.json:
+```json
+{
+    "body": "Sorry, I noticed only now, that I have the same problem in without the patch. Everything looks like in your case except that the title of the file is changed.... I will download from scratch and see if I can get it to work.\n\nSince I won't object any more if someone else gives a positive review I change the summary back; maybe someone else will be faster than me.",
+    "created_at": "2009-08-12T15:49:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6724",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6724#issuecomment-55162",
+    "user": "wuthrich"
+}
+```
 
 Sorry, I noticed only now, that I have the same problem in without the patch. Everything looks like in your case except that the title of the file is changed.... I will download from scratch and see if I can get it to work.
 
 Since I won't object any more if someone else gives a positive review I change the summary back; maybe someone else will be faster than me.
 
 
+
 ---
 
-Comment by mpatel created at 2009-08-14 07:58:07
+archive/issue_comments_055163.json:
+```json
+{
+    "body": "Both patches (separately) work for me.",
+    "created_at": "2009-08-14T07:58:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6724",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6724#issuecomment-55163",
+    "user": "mpatel"
+}
+```
 
 Both patches (separately) work for me.
 
 
+
 ---
 
-Comment by mvngu created at 2009-08-14 08:10:10
+archive/issue_comments_055164.json:
+```json
+{
+    "body": "Merged only `trac_6724-spell-check-modules.patch`.",
+    "created_at": "2009-08-14T08:10:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6724",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6724#issuecomment-55164",
+    "user": "mvngu"
+}
+```
 
 Merged only `trac_6724-spell-check-modules.patch`.
 
 
+
 ---
 
-Comment by mvngu created at 2009-08-14 08:10:10
+archive/issue_comments_055165.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-08-14T08:10:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6724",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6724#issuecomment-55165",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

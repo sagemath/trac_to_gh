@@ -1,11 +1,21 @@
 # Issue 2086: iPython bug? Python decorators don't play nicely with docstrings
 
-Issue created by migration from https://trac.sagemath.org/ticket/2086
-
-Original creator: malb
-
-Original creation time: 2008-02-07 17:22:26
-
+archive/issues_002086.json:
+```json
+{
+    "body": "Assignee: tba\n\nConsider:\n\n\n```\nsage: P.<x,y> = PolynomialRing(QQ)\nsage: I =  Ideal([x, y])\nsage: I.reduced_basis?\n    x.__init__(...) initializes x; see x.__class__.__doc__ for signature\n\nsage: I.reduced_basis??\n    def wrapper(*args, **kwds):\n        with RedSBContext():\n            return func(*args, **kwds)\n```\n\n\nwhich is caused by the ``@`redSB` decorator. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2086\n\n",
+    "created_at": "2008-02-07T17:22:26Z",
+    "labels": [
+        "documentation",
+        "major",
+        "bug"
+    ],
+    "title": "iPython bug? Python decorators don't play nicely with docstrings",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2086",
+    "user": "malb"
+}
+```
 Assignee: tba
 
 Consider:
@@ -26,16 +36,42 @@ sage: I.reduced_basis??
 
 which is caused by the ``@`redSB` decorator. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2086
+
+
+
+
 
 ---
 
-Comment by malb created at 2008-03-28 12:17:09
+archive/issue_comments_013507.json:
+```json
+{
+    "body": "This is invalid because there is a standard (?) way to work around this.",
+    "created_at": "2008-03-28T12:17:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2086",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2086#issuecomment-13507",
+    "user": "malb"
+}
+```
 
 This is invalid because there is a standard (?) way to work around this.
 
 
+
 ---
 
-Comment by malb created at 2008-03-28 12:17:09
+archive/issue_comments_013508.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2008-03-28T12:17:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2086",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2086#issuecomment-13508",
+    "user": "malb"
+}
+```
 
 Resolution: invalid

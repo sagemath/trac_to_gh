@@ -1,11 +1,21 @@
 # Issue 4172: exception in timeit permanetly disables gc
 
-Issue created by migration from https://trac.sagemath.org/ticket/4172
-
-Original creator: anakha
-
-Original creation time: 2008-09-23 05:44:42
-
+archive/issues_004172.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\n\n```\nsage: import gc\nsage: gc.isenabled()\nTrue\nsage: %timeit raise RuntimeError, \"test\"\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n/Volumes/Place/anakha/Applications/sage/devel/sage-tri/sage/geometry/<ipython console> in <module>()\n\n/Volumes/Place/anakha/Applications/sage/local/lib/python2.5/site-packages/IPython/iplib.py in ipmagic(self, arg_s)\n    946         else:\n    947             magic_args = self.var_expand(magic_args,1)\n--> 948             return fn(magic_args)\n    949 \n    950     def ipalias(self,arg_s):\n\n/Volumes/Place/anakha/Applications/sage/local/lib/python2.5/site-packages/IPython/Magic.py in magic_timeit(self, parameter_s)\n   1779             for i in range(1, 10):\n   1780                 number *= 10\n-> 1781                 if timer.timeit(number) >= 0.2:\n   1782                     break\n   1783         \n\n/Volumes/Place/anakha/Applications/sage/local/lib/python/timeit.py in timeit(self, number)\n    159         gcold = gc.isenabled()\n    160         gc.disable()\n--> 161         timing = self.inner(it, self.timer)\n    162         if gcold:\n    163             gc.enable()\n\n/Volumes/Place/anakha/Applications/sage/devel/sage-tri/sage/geometry/<magic-timeit> in inner(_it, _timer)\n\nRuntimeError: test\nsage: gc.isenabled()\nFalse\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4172\n\n",
+    "created_at": "2008-09-23T05:44:42Z",
+    "labels": [
+        "memleak",
+        "major",
+        "bug"
+    ],
+    "title": "exception in timeit permanetly disables gc",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4172",
+    "user": "anakha"
+}
+```
 Assignee: mabshoff
 
 
@@ -48,16 +58,42 @@ False
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4172
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2008-10-23 21:41:28
+archive/issue_comments_030276.json:
+```json
+{
+    "body": "Patch is up at #4353",
+    "created_at": "2008-10-23T21:41:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4172",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4172#issuecomment-30276",
+    "user": "mhansen"
+}
+```
 
 Patch is up at #4353
 
 
+
 ---
 
-Comment by mhansen created at 2008-10-23 21:41:28
+archive/issue_comments_030277.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2008-10-23T21:41:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4172",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4172#issuecomment-30277",
+    "user": "mhansen"
+}
+```
 
 Resolution: duplicate

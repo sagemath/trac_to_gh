@@ -1,11 +1,21 @@
 # Issue 6056: HISTORY.txt for sage-4.0.alpha0 needs updating
 
-Issue created by migration from https://trac.sagemath.org/ticket/6056
-
-Original creator: drkirkby
-
-Original creation time: 2009-05-17 08:40:03
-
+archive/issues_006056.json:
+```json
+{
+    "body": "Assignee: tba\n\nCC:  rlm boothby\n\nThe file starts:\n\n#####################################################################\nSAGE-3.2.3: January 5th, 2009\n#####################################################################\n\nIssue created by migration from https://trac.sagemath.org/ticket/6056\n\n",
+    "created_at": "2009-05-17T08:40:03Z",
+    "labels": [
+        "documentation",
+        "minor",
+        "enhancement"
+    ],
+    "title": "HISTORY.txt for sage-4.0.alpha0 needs updating",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6056",
+    "user": "drkirkby"
+}
+```
 Assignee: tba
 
 CC:  rlm boothby
@@ -16,10 +26,25 @@ The file starts:
 SAGE-3.2.3: January 5th, 2009
 #####################################################################
 
+Issue created by migration from https://trac.sagemath.org/ticket/6056
+
+
+
+
 
 ---
 
-Comment by mvngu created at 2009-06-16 16:18:05
+archive/issue_comments_048226.json:
+```json
+{
+    "body": "New HISTORY.txt file is up at \n\n\n\nhttp://www.sagemath.org/src/announce/HISTORY.txt\n\n\n\nIt includes releases up to and including Sage 4.0.1. Since I'll be updating this file, my working draft is available at\n\n\n\nhttp://sage.math.washington.edu/home/mvngu/doc/changelog/HISTORY.txt\n\n\n\nI think this ticket can be closed now. There's no need to merge any patch. All one has to do is make sure that the above links aren't broken.",
+    "created_at": "2009-06-16T16:18:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6056",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6056#issuecomment-48226",
+    "user": "mvngu"
+}
+```
 
 New HISTORY.txt file is up at 
 
@@ -40,22 +65,55 @@ http://sage.math.washington.edu/home/mvngu/doc/changelog/HISTORY.txt
 I think this ticket can be closed now. There's no need to merge any patch. All one has to do is make sure that the above links aren't broken.
 
 
+
 ---
 
-Comment by mvngu created at 2009-06-26 04:43:09
+archive/issue_comments_048227.json:
+```json
+{
+    "body": "I'll be updating `HISTORY.txt` after each release. I think this ticket can be closed now, since there's no patch to apply.",
+    "created_at": "2009-06-26T04:43:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6056",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6056#issuecomment-48227",
+    "user": "mvngu"
+}
+```
 
 I'll be updating `HISTORY.txt` after each release. I think this ticket can be closed now, since there's no patch to apply.
 
 
+
 ---
 
-Comment by mvngu created at 2009-07-07 03:46:46
+archive/issue_comments_048228.json:
+```json
+{
+    "body": "I'm changing this to positive review so the release manager(s) would pick it up and close it as appropriate.",
+    "created_at": "2009-07-07T03:46:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6056",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6056#issuecomment-48228",
+    "user": "mvngu"
+}
+```
 
 I'm changing this to positive review so the release manager(s) would pick it up and close it as appropriate.
 
 
+
 ---
 
-Comment by rlm created at 2009-07-07 03:51:41
+archive/issue_comments_048229.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-07-07T03:51:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6056",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6056#issuecomment-48229",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed

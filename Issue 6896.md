@@ -1,26 +1,62 @@
 # Issue 6896: update README.txt about GCC versions
 
-Issue created by migration from https://trac.sagemath.org/ticket/6896
-
-Original creator: mvngu
-
-Original creation time: 2009-09-06 02:50:22
-
+archive/issues_006896.json:
+```json
+{
+    "body": "Assignee: tba\n\nThe README.txt file in SAGE_ROOT should be updated on the supported versions of GCC. See this [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/804f2c21b070902b) thread for some background.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6896\n\n",
+    "created_at": "2009-09-06T02:50:22Z",
+    "labels": [
+        "documentation",
+        "major",
+        "bug"
+    ],
+    "title": "update README.txt about GCC versions",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6896",
+    "user": "mvngu"
+}
+```
 Assignee: tba
 
 The README.txt file in SAGE_ROOT should be updated on the supported versions of GCC. See this [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/804f2c21b070902b) thread for some background.
 
+Issue created by migration from https://trac.sagemath.org/ticket/6896
+
+
+
+
 
 ---
 
-Comment by mvngu created at 2009-09-06 03:40:22
+archive/issue_comments_056957.json:
+```json
+{
+    "body": "An updated README.txt is attached with this ticket. That file is not under revision control. But if you want to see the changes new to this updated version, refer to `trac_6896-readme.patch`. That patch is not meant to be applied.",
+    "created_at": "2009-09-06T03:40:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6896",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6896#issuecomment-56957",
+    "user": "mvngu"
+}
+```
 
 An updated README.txt is attached with this ticket. That file is not under revision control. But if you want to see the changes new to this updated version, refer to `trac_6896-readme.patch`. That patch is not meant to be applied.
 
 
+
 ---
 
-Comment by was created at 2009-09-06 04:21:26
+archive/issue_comments_056958.json:
+```json
+{
+    "body": "1. This is redundant:\n\n```\nSage builds with GCC >= 4.x and GCC >= 4.1.x.\n```\n\nhow about just\n\n```\nSage requires GCC >= 4.x.\n```\n",
+    "created_at": "2009-09-06T04:21:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6896",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6896#issuecomment-56958",
+    "user": "was"
+}
+```
 
 1. This is redundant:
 
@@ -36,49 +72,134 @@ Sage requires GCC >= 4.x.
 
 
 
+
 ---
+
+archive/issue_comments_056959.json:
+```json
+{
+    "body": "Attachment\n\ndon't apply this patch",
+    "created_at": "2009-09-06T11:55:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6896",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6896#issuecomment-56959",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
 don't apply this patch
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-06 11:57:41
+archive/issue_comments_056960.json:
+```json
+{
+    "body": "New README.txt is up together with corresponding patch file. Don't apply the patch; it's there to show differences between the README.txt currently in Sage and the new README.txt.",
+    "created_at": "2009-09-06T11:57:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6896",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6896#issuecomment-56960",
+    "user": "mvngu"
+}
+```
 
 New README.txt is up together with corresponding patch file. Don't apply the patch; it's there to show differences between the README.txt currently in Sage and the new README.txt.
 
 
+
 ---
+
+archive/issue_comments_056961.json:
+```json
+{
+    "body": "Attachment\n\nUpdates to Supperted Compilers",
+    "created_at": "2009-09-06T22:41:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6896",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6896#issuecomment-56961",
+    "user": "joskarsson"
+}
+```
 
 Attachment
 
 Updates to Supperted Compilers
 
 
+
 ---
 
-Comment by joskarsson created at 2009-09-06 22:42:27
+archive/issue_comments_056962.json:
+```json
+{
+    "body": "Patch to README.txt, changing supported compilers",
+    "created_at": "2009-09-06T22:42:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6896",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6896#issuecomment-56962",
+    "user": "joskarsson"
+}
+```
 
 Patch to README.txt, changing supported compilers
 
 
+
 ---
+
+archive/issue_comments_056963.json:
+```json
+{
+    "body": "Attachment\n\nThe relevant lines of the file README.2.txt looks very good to me.",
+    "created_at": "2009-09-07T02:07:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6896",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6896#issuecomment-56963",
+    "user": "was"
+}
+```
 
 Attachment
 
 The relevant lines of the file README.2.txt looks very good to me.
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-07 17:51:52
+archive/issue_comments_056964.json:
+```json
+{
+    "body": "with changes suggested by README.txt.trac-6896-1.patch",
+    "created_at": "2009-09-07T17:51:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6896",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6896#issuecomment-56964",
+    "user": "mvngu"
+}
+```
 
 with changes suggested by README.txt.trac-6896-1.patch
 
 
+
 ---
+
+archive/issue_comments_056965.json:
+```json
+{
+    "body": "Attachment\n\nApplied the changes suggested in `README.txt.trac-6896-1.patch` and the updated README.txt is attached. See `README.txt` as `README.2.txt` doesn't have the changes in `README.txt.trac-6896-1.patch`.\n\n\n\njoskarsson --- Please fill in your real name in the \"Author(s):\" field. That way, your contribution is properly acknowledged.",
+    "created_at": "2009-09-07T17:58:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6896",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6896#issuecomment-56965",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
@@ -89,8 +210,19 @@ Applied the changes suggested in `README.txt.trac-6896-1.patch` and the updated 
 joskarsson --- Please fill in your real name in the "Author(s):" field. That way, your contribution is properly acknowledged.
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-07 17:58:18
+archive/issue_comments_056966.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-09-07T17:58:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6896",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6896#issuecomment-56966",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

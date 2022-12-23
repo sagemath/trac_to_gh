@@ -1,11 +1,21 @@
 # Issue 5562: coercion error with vectors and polynomial rings with 1 variable
 
-Issue created by migration from https://trac.sagemath.org/ticket/5562
-
-Original creator: ncalexan
-
-Original creation time: 2009-03-18 23:00:00
-
+archive/issues_005562.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  robertwb\n\nKeywords: coercion vector polynomial ring\n\nThis is strange: it matters how many variables are specified.  This fails and I think this is a bug:\n\n\n```\nsage: R.<u> = PolynomialRing(RDF, 1, 'u')\nsage: v1 = vector([u])\nsage: v2 = vector([CDF(2)])\nsage: v1 * v2\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/ncalexan/sage-3.4.rc0-sage.math-only-x86_64-Linux/devel/sage/sage/functions/riemann_theta.py in <module>()\n\n/home/ncalexan/sage-3.4.rc0-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.el\\\nement.Vector.__mul__ (sage/structure/element.c:10435)()\n\n/home/ncalexan/sage-3.4.rc0-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/structure/coerce.so in sage.structure.coe\\\nrce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:5847)()\n\nTypeError: unsupported operand parent(s) for '*': 'Ambient free module of rank 1 over the integral domain Multivariate Polynomial Ring i\\\nn u over Real Double Field' and 'Vector space of dimension 1 over Complex Double Field'\n```\n\n\nBut both of these succeed:\n\n\n```\nsage: R.<u, v> = RDF[]\nsage: v1 = vector([u])\nsage: v2 = vector([CDF(2)])\nsage: v1 * v2\n2.0*u\n```\n\n\n\n```\nsage: R.<u> = RDF[]\nsage: v1 = vector([u])\nsage: v2 = vector([CDF(2)])\nsage: v1 * v2\n2.0*u\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5562\n\n",
+    "created_at": "2009-03-18T23:00:00Z",
+    "labels": [
+        "linear algebra",
+        "major",
+        "bug"
+    ],
+    "title": "coercion error with vectors and polynomial rings with 1 variable",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5562",
+    "user": "ncalexan"
+}
+```
 Assignee: was
 
 CC:  robertwb
@@ -58,17 +68,43 @@ sage: v1 * v2
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5562
+
+
+
+
 
 ---
 
-Comment by tscrim created at 2012-12-10 21:22:03
+archive/issue_comments_043287.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2012-12-10T21:22:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5562#issuecomment-43287",
+    "user": "tscrim"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by tscrim created at 2012-12-10 21:22:03
+archive/issue_comments_043288.json:
+```json
+{
+    "body": "This seems to be fixed in `5.5.rc0`\n\n```\nsage: R.<u> = PolynomialRing(RDF, 1, 'u')\nsage: v1 = vector([u])\nsage: v2 = vector([CDF(2)])\nsage: v1 * v2\n2.0*u\n```\n",
+    "created_at": "2012-12-10T21:22:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5562#issuecomment-43288",
+    "user": "tscrim"
+}
+```
 
 This seems to be fixed in `5.5.rc0`
 
@@ -82,9 +118,20 @@ sage: v1 * v2
 
 
 
+
 ---
 
-Comment by cnassau created at 2013-01-26 14:54:05
+archive/issue_comments_043289.json:
+```json
+{
+    "body": "I've attached a patch that adds a doctest that makes sure this keeps working.\n\nThe patch also removes plenty of trailing whitespace in the affected file. I got this for free by putting \n\n```\n(add-hook 'before-save-hook 'delete-trailing-whitespace)\n```\n\ninto my \"`.emacs.rc`\".\n\nBut maybe it might have been better to just give the \"wontfix\" a positive review instead...",
+    "created_at": "2013-01-26T14:54:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5562#issuecomment-43289",
+    "user": "cnassau"
+}
+```
 
 I've attached a patch that adds a doctest that makes sure this keeps working.
 
@@ -99,9 +146,20 @@ into my "`.emacs.rc`".
 But maybe it might have been better to just give the "wontfix" a positive review instead...
 
 
+
 ---
 
-Comment by tscrim created at 2013-01-28 17:46:16
+archive/issue_comments_043290.json:
+```json
+{
+    "body": "Hey,\n\nFor doctest formatting, I would change:\n\n```\n    sage: # check that #5562 has been fixed\n    sage: R.<u> = PolynomialRing(RDF, 1, 'u')\n...\n```\n\nto\n\n```\nCheck that :trac:`5562` has been fixed::\n\n    sage: R.<u> = PolynomialRing(RDF, 1, 'u')\n...\n```\n\n\nI think the trailing whitespace removal should be okay...\n\nBest,\n\nTravis",
+    "created_at": "2013-01-28T17:46:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5562#issuecomment-43290",
+    "user": "tscrim"
+}
+```
 
 Hey,
 
@@ -130,9 +188,20 @@ Best,
 Travis
 
 
+
 ---
 
-Comment by cnassau created at 2013-01-29 17:26:22
+archive/issue_comments_043291.json:
+```json
+{
+    "body": "Hi Travis,\n\nI agree, in theory, that the doctest should be reformatted. However, I don't know how to do this because the patch has apparently already been merged in 5.7.beta1. Would I create a new patch based on beta1, or edit the old one?\n\nCheers,\nChristian",
+    "created_at": "2013-01-29T17:26:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5562#issuecomment-43291",
+    "user": "cnassau"
+}
+```
 
 Hi Travis,
 
@@ -142,35 +211,92 @@ Cheers,
 Christian
 
 
+
 ---
 
-Comment by robertwb created at 2013-01-29 17:46:08
+archive/issue_comments_043292.json:
+```json
+{
+    "body": "This won't be merged until it's positively reviewed and closed, it's just the target that was changed. You can create a new patch or edit the old, whichever makes it clearer what your changes were.",
+    "created_at": "2013-01-29T17:46:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5562#issuecomment-43292",
+    "user": "robertwb"
+}
+```
 
 This won't be merged until it's positively reviewed and closed, it's just the target that was changed. You can create a new patch or edit the old, whichever makes it clearer what your changes were.
 
 
+
 ---
+
+archive/issue_comments_043293.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2013-01-29T18:07:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5562#issuecomment-43293",
+    "user": "cnassau"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by tscrim created at 2013-01-29 18:10:20
+archive/issue_comments_043294.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2013-01-29T18:10:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5562#issuecomment-43294",
+    "user": "tscrim"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by tscrim created at 2013-01-29 18:10:20
+archive/issue_comments_043295.json:
+```json
+{
+    "body": "Looks good to me. Thanks Christian.",
+    "created_at": "2013-01-29T18:10:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5562#issuecomment-43295",
+    "user": "tscrim"
+}
+```
 
 Looks good to me. Thanks Christian.
 
 
+
 ---
 
-Comment by cnassau created at 2013-01-29 18:12:41
+archive/issue_comments_043296.json:
+```json
+{
+    "body": "Replying to [comment:6 tscrim]:\n> Looks good to me. Thanks Christian.\n\nIndeed, my working copy had been garbled, presumably by running \"hg import\" earlier when I meant \"hg qimport\" which made me believe that this ticket had somehow magically be merged already... anyway, glad we got rid of this now ;-)\n\nCheers,\nChristian",
+    "created_at": "2013-01-29T18:12:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5562#issuecomment-43296",
+    "user": "cnassau"
+}
+```
 
 Replying to [comment:6 tscrim]:
 > Looks good to me. Thanks Christian.
@@ -181,8 +307,19 @@ Cheers,
 Christian
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-01-31 09:18:52
+archive/issue_comments_043297.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2013-01-31T09:18:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5562",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5562#issuecomment-43297",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: fixed

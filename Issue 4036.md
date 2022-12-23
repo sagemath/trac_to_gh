@@ -1,27 +1,80 @@
 # Issue 4036: [with patch, needs review] minor improvements to the Axiom interface
 
-Issue created by migration from https://trac.sagemath.org/ticket/4036
-
-Original creator: mhansen
-
-Original creation time: 2008-09-01 23:34:49
-
+archive/issues_004036.json:
+```json
+{
+    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4036\n\n",
+    "created_at": "2008-09-01T23:34:49Z",
+    "labels": [
+        "interfaces",
+        "minor",
+        "enhancement"
+    ],
+    "title": "[with patch, needs review] minor improvements to the Axiom interface",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4036",
+    "user": "mhansen"
+}
+```
 Assignee: was
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4036
+
+
+
+
 
 ---
+
+archive/issue_comments_029114.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-09-01T23:35:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4036",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4036#issuecomment-29114",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_029115.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-09-08T02:11:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4036",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4036#issuecomment-29115",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_029116.json:
+```json
+{
+    "body": "Attachment\n\npatches apply to 3.1.2.rc1 and doctests pass in `sage/interfaces`, with the following exceptions:\n\n```\nsage -t  devel/sage/sage/interfaces/psage.py\nEnd Of File (EOF) in read_nonblocking(). Empty string style platform.\n<pexpect.spawn instance at 0x7550f80>\nversion: 2.0 ($Revision: 1.151 $)\ncommand: /Users/rlmill/sage-3.1.2.rc1/sage\nargs: ['/Users/rlmill/sage-3.1.2.rc1/sage']\npatterns:\n    sage: \nbuffer (last 100 chars): \nbefore (last 100 chars): \nafter: <class 'pexpect.EOF'>\nmatch: None\nmatch_index: None\nexitstatus: None\nflag_eof: 1\npid: 27789\nchild_fd: 5\ntimeout: 30\ndelimiter: <class 'pexpect.EOF'>\nlogfile: None\nmaxread: 100000\nsearchwindowsize: None\ndelaybeforesend: 0\n\t [14.6 s]\n```\n\nThis one passes, but...\n\nAnd this one:\n\n```\nsage -t  devel/sage/sage/interfaces/lisp.py\n**********************************************************************\nFile \"/Users/rlmill/sage-3.1.2.rc1/tmp/lisp.py\", line 282:\n    sage: lisp.version()\nExpected:\n    GNU CLISP ... (...) (built ...) (memory ...)\n    ...\nGot:\n    GNU CLISP 2.46 (2008-07-02) (built on robert-millers-macbook-pro-15.local [192.168.0.101])\n    Software: GNU C 4.0.1 (Apple Inc. build 5465) \n    gcc -O0 -g -I/Users/rlmill/sage-3.1.2.rc1/local/include/ -L/Users/rlmill/sage-3.1.2.rc1/local/lib/ -W -Wswitch -Wcomment -Wpointer-arith -Wimplicit -Wreturn-type -Wmissing-declarations -Wno-sign-compare -O0 -fexpensive-optimizations -falign-functions=4 -DUNIX_BINARY_DISTRIB -DUNICODE -DNO_GETTEXT -DNO_SIGSEGV -I. -x none -lreadline -lncurses  -liconv  -L/usr/X11/lib -R/usr/X11/lib\n    SAFETY=0 HEAPCODES STANDARD_HEAPCODES SPVW_BLOCKS SPVW_MIXED TRIVIALMAP_MEMORY\n    libiconv 1.11\n    libreadline 5.2\n    Features: \n    (REGEXP SYSCALLS I18N LOOP COMPILER CLOS MOP CLISP ANSI-CL COMMON-LISP LISP=CL\n     INTERPRETER SOCKETS GENERIC-STREAMS LOGICAL-PATHNAMES SCREEN UNICODE\n     BASE-CHAR=CHARACTER UNIX MACOS)\n    C Modules: (clisp i18n syscalls regexp)\n    Installation directory: /Users/rlmill/sage-3.1.2.rc1/local/lib/clisp-2.46/\n    User language: ENGLISH\n    Machine: I386 (I386) D-69-91-148-44.dhcp4.washington.edu [69.91.148.44]\n    <BLANKLINE>\n**********************************************************************\n1 items had failures:\n   1 of   3 in __main__.example_14\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /Users/rlmill/sage-3.1.2.rc1/tmp/.doctest_lisp.py\n\n\t [3.2 s]\n```\n",
+    "created_at": "2008-09-15T00:55:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4036",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4036#issuecomment-29116",
+    "user": "rlm"
+}
+```
 
 Attachment
 
@@ -93,16 +146,38 @@ For whitespace errors, see the file /Users/rlmill/sage-3.1.2.rc1/tmp/.doctest_li
 
 
 
+
 ---
 
-Comment by rlm created at 2008-09-15 00:59:14
+archive/issue_comments_029117.json:
+```json
+{
+    "body": "...both of which failed before applying too. Looks good to me!",
+    "created_at": "2008-09-15T00:59:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4036",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4036#issuecomment-29117",
+    "user": "rlm"
+}
+```
 
 ...both of which failed before applying too. Looks good to me!
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-15 03:05:08
+archive/issue_comments_029118.json:
+```json
+{
+    "body": "This patch introduces the following problem:\n\n```\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.2.rc4/tmp/parent.py\", line 13:\n    sage: gp(2) + gap(3)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.2.rc4/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[2]>\", line 1, in <module>\n        gp(Integer(2)) + gap(Integer(3))###line 13:\n    sage: gp(2) + gap(3)\n      File \"element.pyx\", line 718, in sage.structure.element.ModuleElement.__add__ (sage/structure/element.c:5748)\n        return coercion_model.bin_op(left, right, add)\n      File \"coerce.pyx\", line 662, in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:6364)\n        raise TypeError, arith_error_message(x,y,op)\n    TypeError: unsupported operand parent(s) for '+': 'GP/PARI interpreter' and 'Gap'\n**********************************************************************\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-15T03:05:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4036",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4036#issuecomment-29118",
+    "user": "mabshoff"
+}
+```
 
 This patch introduces the following problem:
 
@@ -131,9 +206,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-15 03:28:55
+archive/issue_comments_029119.json:
+```json
+{
+    "body": "And this one, too:\n\n```\nsage -t -long devel/sage/sage/matrix/matrix_symbolic_dense.pyx\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.2.rc4/tmp/matrix_symbolic_dense.py\", line 185:\n    sage: print \"ignore this\";  hash(maxima(m)) #random due to architecture dependence\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.2.rc4/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_10[5]>\", line 1, in <module>\n        print \"ignore this\";  hash(maxima(m)) #random due to architecture dependence###line 185:\n    sage: print \"ignore this\";  hash(maxima(m)) #random due to architecture dependence\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.2.rc4/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 984, in __call__\n        return self._coerce_from_special_method(x)\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.2.rc4/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 1008, in _coerce_from_special_method\n        return (x.__getattribute__(s))(self)\n      File \"matrix_symbolic_dense.pyx\", line 383, in sage.matrix.matrix_symbolic_dense.Matrix_symbolic_dense._maxima_ (sage/matrix/matrix_symbolic_dense.c:3536)\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.2.rc4/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 977, in __call__\n        return self(x._sage_())\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.2.rc4/local/lib/python2.5/site-packages/sage/interfaces/maxima.py\", line 1440, in _sage_\n        return symbolic_expression_from_maxima_string(repr(self))\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.2.rc4/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 8515, in symbolic_expression_from_maxima_string\n        raise TypeError, \"unable to make sense of Maxima expression '%s' in SAGE\"%s\n    TypeError: unable to make sense of Maxima expression 'matrix([sqrt(2),3],[pi,e])' in SAGE\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.2.rc4/tmp/matrix_symbolic_dense.py\", line 377:\n    sage: m._maxima_(maxima)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.2.rc4/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_17[4]>\", line 1, in <module>\n        m._maxima_(maxima)###line 377:\n    sage: m._maxima_(maxima)\n      File \"matrix_symbolic_dense.pyx\", line 383, in sage.matrix.matrix_symbolic_dense.Matrix_symbolic_dense._maxima_ (sage/matrix/matrix_symbolic_dense.c:3536)\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.2.rc4/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 977, in __call__\n        return self(x._sage_())\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.2.rc4/local/lib/python2.5/site-packages/sage/interfaces/maxima.py\", line 1440, in _sage_\n        return symbolic_expression_from_maxima_string(repr(self))\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.2.rc4/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 8515, in symbolic_expression_from_maxima_string\n        raise TypeError, \"unable to make sense of Maxima expression '%s' in SAGE\"%s\n    TypeError: unable to make sense of Maxima expression 'matrix([sqrt(2),3],[pi,e])' in SAGE\n**********************************************************************\n```\n",
+    "created_at": "2008-09-15T03:28:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4036",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4036#issuecomment-29119",
+    "user": "mabshoff"
+}
+```
 
 And this one, too:
 
@@ -184,16 +270,40 @@ Exception raised:
 
 
 
+
 ---
+
+archive/issue_comments_029120.json:
+```json
+{
+    "body": "Attachment\n\nThis patch should fix the issues.",
+    "created_at": "2008-09-15T03:51:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4036",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4036#issuecomment-29120",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 This patch should fix the issues.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-28 14:46:24
+archive/issue_comments_029121.json:
+```json
+{
+    "body": "We need a review for the four patches together. The issue rlm saw is unrelated to this patch.\n\nCheers,\n\nMichael",
+    "created_at": "2008-10-28T14:46:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4036",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4036#issuecomment-29121",
+    "user": "mabshoff"
+}
+```
 
 We need a review for the four patches together. The issue rlm saw is unrelated to this patch.
 
@@ -202,9 +312,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by was created at 2008-11-27 17:17:13
+archive/issue_comments_029122.json:
+```json
+{
+    "body": "This needs to be rebased against sage-3.2.1.*:\n\n```\nwas@sage:~/build/sage-3.2.1.alpha1$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/4036/trac_4036.patch')\nAttempting to load remote file: http://trac.sagemath.org/sage_trac/attachment/ticket/4036/trac_4036.patch?format=raw\nLoading: [.]\ncd \"/home/was/build/sage-3.2.1.alpha1/devel/sage\" && hg status\ncd \"/home/was/build/sage-3.2.1.alpha1/devel/sage\" && hg status\ncd \"/home/was/build/sage-3.2.1.alpha1/devel/sage\" && hg import   \"/home/was/.sage/temp/sage/10714/tmp_0.patch\"\napplying /home/was/.sage/temp/sage/10714/tmp_0.patch\npatching file sage/rings/integer_mod.pyx\nHunk #1 FAILED at 361\n1 out of 1 hunk FAILED -- saving rejects to file sage/rings/integer_mod.pyx.rej\nabort: patch failed to apply\n```\n",
+    "created_at": "2008-11-27T17:17:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4036",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4036#issuecomment-29122",
+    "user": "was"
+}
+```
 
 This needs to be rebased against sage-3.2.1.*:
 
@@ -227,38 +348,95 @@ abort: patch failed to apply
 
 
 
+
 ---
+
+archive/issue_comments_029123.json:
+```json
+{
+    "body": "Attachment\n\nadd fricas tests to axiom.py",
+    "created_at": "2009-08-17T15:02:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4036",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4036#issuecomment-29123",
+    "user": "awebb"
+}
+```
 
 Attachment
 
 add fricas tests to axiom.py
 
 
+
 ---
 
-Comment by awebb created at 2009-08-17 15:15:42
+archive/issue_comments_029124.json:
+```json
+{
+    "body": "The content of these patches seems to have already been applied. In fact, most have been expanded with tests for fricas. I added some more tests for fricas, if desired. \n\nAdam",
+    "created_at": "2009-08-17T15:15:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4036",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4036#issuecomment-29124",
+    "user": "awebb"
+}
+```
 
 The content of these patches seems to have already been applied. In fact, most have been expanded with tests for fricas. I added some more tests for fricas, if desired. 
 
 Adam
 
 
+
 ---
 
-Comment by awebb created at 2009-08-27 13:13:12
+archive/issue_comments_029125.json:
+```json
+{
+    "body": "Thinking about it. I think it would be less confusing if this ticket is just closed and anything new for fricas put into a new one.  ~ Adam",
+    "created_at": "2009-08-27T13:13:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4036",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4036#issuecomment-29125",
+    "user": "awebb"
+}
+```
 
 Thinking about it. I think it would be less confusing if this ticket is just closed and anything new for fricas put into a new one.  ~ Adam
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-05 06:53:58
+archive/issue_comments_029126.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2009-10-05T06:53:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4036",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4036#issuecomment-29126",
+    "user": "mhansen"
+}
+```
 
 Resolution: duplicate
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-05 06:53:58
+archive/issue_comments_029127.json:
+```json
+{
+    "body": "This was indeed fixed as part of #5111.  I'm going ahead and closing it.",
+    "created_at": "2009-10-05T06:53:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4036",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4036#issuecomment-29127",
+    "user": "mhansen"
+}
+```
 
 This was indeed fixed as part of #5111.  I'm going ahead and closing it.

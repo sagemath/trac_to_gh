@@ -1,11 +1,21 @@
 # Issue 7260: [with patch; needs review] Inverse mod number field ideals: deal with several remaining problems
 
-Issue created by migration from https://trac.sagemath.org/ticket/7260
-
-Original creator: fwclarke
-
-Original creation time: 2009-10-21 08:54:00
-
+archive/issues_007260.json:
+```json
+{
+    "body": "Assignee: davidloeffler\n\nCC:  mtaranes cremona\n\nKeywords: inverse_mod\n\nAt present the function `inverse_mod` (which computes the inverse of \nelements of number fields modulo integral ideals) suffers from several \ndefects.\n\n1.  It does not work for elements of relative number fields, though it \ndoes for an element of the rings of integers of such a number field.\n\n2.  The behaviour is different depending whether the element's parent is \nthe number field or the maximal order.  Thus with 4.1.2:\n\n```\nsage: k.<a> = NumberField(x^3 + 11)\nsage: R = k.ring_of_integers()\nsage: (a + 13).inverse_mod(k.ideal(a^2))\n-3*a - 5\nsage: R(a + 13).inverse_mod(k.ideal(a^2))\n-123*a^2 + 8*a - 104\n```\n\nThis is because the field version of the function applies `small_residue` \nto the results of the computation, while the order versions do not.\nMoreover\n\n```\nsage: R(a + 13).inverse_mod(k.ideal(a^2)).parent() == k\nTrue\n```\n\nwhen it would make more sense if the inverse of an element of R was an \nelement of R.\n\n3.  Error messages are inconsistent.\n\nThe attached patch deals with these defects and also makes the code run a \nbit faster in some cases.  \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7260\n\n",
+    "created_at": "2009-10-21T08:54:00Z",
+    "labels": [
+        "number fields",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch; needs review] Inverse mod number field ideals: deal with several remaining problems",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7260",
+    "user": "fwclarke"
+}
+```
 Assignee: davidloeffler
 
 CC:  mtaranes cremona
@@ -50,35 +60,96 @@ bit faster in some cases.
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7260
+
+
+
+
 
 ---
+
+archive/issue_comments_060298.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-10-21T08:55:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7260",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7260#issuecomment-60298",
+    "user": "fwclarke"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by ylchapuy created at 2009-10-31 21:46:49
+archive/issue_comments_060299.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-10-31T21:46:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7260",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7260#issuecomment-60299",
+    "user": "ylchapuy"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by cremona created at 2009-11-22 17:26:37
+archive/issue_comments_060300.json:
+```json
+{
+    "body": "This looks good to me.  It applies fine to 4.3.alpha0 and all tests in rings/number_field pass.  I also tested modular/modsym since p1list_nf.py is one place where this code is used and that was fine too.",
+    "created_at": "2009-11-22T17:26:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7260",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7260#issuecomment-60300",
+    "user": "cremona"
+}
+```
 
 This looks good to me.  It applies fine to 4.3.alpha0 and all tests in rings/number_field pass.  I also tested modular/modsym since p1list_nf.py is one place where this code is used and that was fine too.
 
 
+
 ---
 
-Comment by cremona created at 2009-11-22 17:26:37
+archive/issue_comments_060301.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-11-22T17:26:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7260",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7260#issuecomment-60301",
+    "user": "cremona"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mhansen created at 2009-11-29 05:12:13
+archive/issue_comments_060302.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-11-29T05:12:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7260",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7260#issuecomment-60302",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

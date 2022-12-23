@@ -1,11 +1,21 @@
 # Issue 5696: Update libpng to 1.2.35
 
-Issue created by migration from https://trac.sagemath.org/ticket/5696
-
-Original creator: mabshoff
-
-Original creation time: 2009-04-06 18:47:32
-
+archive/issues_005696.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\n1.2.35 is a security release, so we should really upgrade in 3.4.1.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5696\n\n",
+    "created_at": "2009-04-06T18:47:32Z",
+    "labels": [
+        "packages: standard",
+        "blocker",
+        "bug"
+    ],
+    "title": "Update libpng to 1.2.35",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5696",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 1.2.35 is a security release, so we should really upgrade in 3.4.1.
@@ -14,17 +24,43 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/5696
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2009-04-06 18:47:37
+archive/issue_comments_044525.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-04-06T18:47:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5696",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5696#issuecomment-44525",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-10 22:13:19
+archive/issue_comments_044526.json:
+```json
+{
+    "body": "The spkg is at\n\n http://sage.math.washington.edu/home/mabshoff/release-cycles-3.4.1/rc2/libpng-1.2.35.spkg\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-10T22:13:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5696",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5696#issuecomment-44526",
+    "user": "mabshoff"
+}
+```
 
 The spkg is at
 
@@ -35,23 +71,56 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mhansen created at 2009-04-11 00:26:32
+archive/issue_comments_044527.json:
+```json
+{
+    "body": "Looks good to me.",
+    "created_at": "2009-04-11T00:26:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5696",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5696#issuecomment-44527",
+    "user": "mhansen"
+}
+```
 
 Looks good to me.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-11 00:28:10
+archive/issue_comments_044528.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-04-11T00:28:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5696",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5696#issuecomment-44528",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-11 00:28:10
+archive/issue_comments_044529.json:
+```json
+{
+    "body": "Merged in Sage 3.4.1.rc2.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-11T00:28:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5696",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5696#issuecomment-44529",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.4.1.rc2.
 

@@ -1,57 +1,139 @@
 # Issue 5783: [with patch, needs review]  Lazy attributes: fix infinite recursion bug + support for cpdefs methods
 
-Issue created by migration from https://trac.sagemath.org/ticket/5783
-
-Original creator: nthiery
-
-Original creation time: 2009-04-14 06:55:25
-
+archive/issues_005783.json:
+```json
+{
+    "body": "Assignee: cwitty\n\nCC:  sage-combinat\n\nThe summary says it all.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5783\n\n",
+    "created_at": "2009-04-14T06:55:25Z",
+    "labels": [
+        "misc",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch, needs review]  Lazy attributes: fix infinite recursion bug + support for cpdefs methods",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5783",
+    "user": "nthiery"
+}
+```
 Assignee: cwitty
 
 CC:  sage-combinat
 
 The summary says it all.
 
+Issue created by migration from https://trac.sagemath.org/ticket/5783
+
+
+
+
 
 ---
 
-Comment by nthiery created at 2009-05-18 03:07:16
+archive/issue_comments_045268.json:
+```json
+{
+    "body": "Changing assignee from cwitty to nthiery.",
+    "created_at": "2009-05-18T03:07:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5783",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5783#issuecomment-45268",
+    "user": "nthiery"
+}
+```
 
 Changing assignee from cwitty to nthiery.
 
 
+
 ---
+
+archive/issue_comments_045269.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-05-19T06:19:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5783",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5783#issuecomment-45269",
+    "user": "nthiery"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by nthiery created at 2009-05-19 06:21:14
+archive/issue_comments_045270.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-05-19T06:21:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5783",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5783#issuecomment-45270",
+    "user": "nthiery"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by nthiery created at 2009-05-19 06:22:08
+archive/issue_comments_045271.json:
+```json
+{
+    "body": "Updated patch:\n- fix ReST doc (indentation, ::, ...)\n- fix introspection\n- adds a hook for this in sage.misc.sageinspect.sage_getsourcelines",
+    "created_at": "2009-05-19T06:22:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5783",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5783#issuecomment-45271",
+    "user": "nthiery"
+}
+```
 
 Updated patch:
- - fix ReST doc (indentation, ::, ...)
- - fix introspection
- - adds a hook for this in sage.misc.sageinspect.sage_getsourcelines
+- fix ReST doc (indentation, ::, ...)
+- fix introspection
+- adds a hook for this in sage.misc.sageinspect.sage_getsourcelines
+
 
 
 ---
 
-Comment by roed created at 2009-05-19 08:00:59
+archive/issue_comments_045272.json:
+```json
+{
+    "body": "Adds lots of good documentation, fixes some problems, though additional feature requests remain.  Positive review.",
+    "created_at": "2009-05-19T08:00:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5783",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5783#issuecomment-45272",
+    "user": "roed"
+}
+```
 
 Adds lots of good documentation, fixes some problems, though additional feature requests remain.  Positive review.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-19 15:06:52
+archive/issue_comments_045273.json:
+```json
+{
+    "body": "David,\n\nplease remember to change the summary if you do reviews of tickets.\n\nMichael",
+    "created_at": "2009-05-19T15:06:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5783",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5783#issuecomment-45273",
+    "user": "mabshoff"
+}
+```
 
 David,
 
@@ -60,9 +142,20 @@ please remember to change the summary if you do reviews of tickets.
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-19 19:21:58
+archive/issue_comments_045274.json:
+```json
+{
+    "body": "Merged in Sage 4.0.rc0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-05-19T19:21:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5783",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5783#issuecomment-45274",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 4.0.rc0.
 
@@ -71,8 +164,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-19 19:21:58
+archive/issue_comments_045275.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-05-19T19:21:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5783",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5783#issuecomment-45275",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

@@ -1,21 +1,46 @@
 # Issue 5621: doctests for calculus.py
 
-Issue created by migration from https://trac.sagemath.org/ticket/5621
-
-Original creator: mvngu
-
-Original creation time: 2009-03-28 03:55:27
-
+archive/issues_005621.json:
+```json
+{
+    "body": "Assignee: tba\n\nKeywords: doctest, calculus.py\n\nThe objective here is to add more doctests to the file `sage/calculus/calculus.py`, especially documentation for methods/functions that are exposed to readers via the reference manual.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5621\n\n",
+    "created_at": "2009-03-28T03:55:27Z",
+    "labels": [
+        "documentation",
+        "major",
+        "enhancement"
+    ],
+    "title": "doctests for calculus.py",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5621",
+    "user": "mvngu"
+}
+```
 Assignee: tba
 
 Keywords: doctest, calculus.py
 
 The objective here is to add more doctests to the file `sage/calculus/calculus.py`, especially documentation for methods/functions that are exposed to readers via the reference manual.
 
+Issue created by migration from https://trac.sagemath.org/ticket/5621
+
+
+
+
 
 ---
 
-Comment by mvngu created at 2009-03-28 04:09:15
+archive/issue_comments_043892.json:
+```json
+{
+    "body": "The patch `trac_5621-doctests-calculus.patch` adds doctests to 6 functions/methods in `sage/calculus/calculus.py`, raising the coverage of that module by 1% to 52%. Interestingly, with the command\n\n```\nsage -coverage\n```\n\nSage doesn't pick up doctests for functions/methods where there's a blank line between the docstring and the function/method. For example, as it now stands with Sage 3.4, the function `desolve_system_strings()` in the module `sage/calculus/desolvers.py` has doctests but Sage doesn't pick that up. Doing a doctest coverage on Sage 3.4 shows that the coverage for `sage/calculus/desolvers.py` is at 75%. But after removing the blank line between the function signature and its docstring, running the doctest coverage again shows that `sage/calculus/desolvers.py` has 87% coverage.",
+    "created_at": "2009-03-28T04:09:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5621",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5621#issuecomment-43892",
+    "user": "mvngu"
+}
+```
 
 The patch `trac_5621-doctests-calculus.patch` adds doctests to 6 functions/methods in `sage/calculus/calculus.py`, raising the coverage of that module by 1% to 52%. Interestingly, with the command
 
@@ -26,9 +51,20 @@ sage -coverage
 Sage doesn't pick up doctests for functions/methods where there's a blank line between the docstring and the function/method. For example, as it now stands with Sage 3.4, the function `desolve_system_strings()` in the module `sage/calculus/desolvers.py` has doctests but Sage doesn't pick that up. Doing a doctest coverage on Sage 3.4 shows that the coverage for `sage/calculus/desolvers.py` is at 75%. But after removing the blank line between the function signature and its docstring, running the doctest coverage again shows that `sage/calculus/desolvers.py` has 87% coverage.
 
 
+
 ---
 
-Comment by was created at 2009-04-12 06:24:01
+archive/issue_comments_043893.json:
+```json
+{
+    "body": "This patch causes a few tiny doctest failures.  Can you fix them and post another patch:\n\n```\nsage -t  devel/sage/sage/calculus/calculus.py\n**********************************************************************\nFile \"/scratch/wstein/build/sage-3.4.1.rc2-ref2/devel/sage-main/sage/calculus/calculus.py\", line 4921:\n    sage: var(\"x,y,z\");\nExpected nothing\nGot:\n    (x, y, z)\n**********************************************************************\nFile \"/scratch/wstein/build/sage-3.4.1.rc2-ref2/devel/sage-main/sage/calculus/calculus.py\", line 4968:\n    sage: var(\"x,y,z\");\nExpected nothing\nGot:\n    (x, y, z)\n**********************************************************************\nFile \"/scratch/wstein/build/sage-3.4.1.rc2-ref2/devel/sage-main/sage/calculus/calculus.py\", line 5537:\n    sage: var(\"a,b\");\nExpected nothing\nGot:\n    (a, b)\n**********************************************************************\n3 items had failures:\n   1 of   6 in __main__.example_119\n   1 of  12 in __main__.example_121\n   1 of   5 in __main__.example_138\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file /scratch/wstein/build/sage-3.4.1.rc2-ref2/tmp/.doctest_calculus.py\n         [48.7 s]\n \n----------------------------------------------------------------------\n\nThe following tests failed:\n\n        sage -t  devel/sage/sage/calculus/calculus.py # 3 doctests failed\n```\n",
+    "created_at": "2009-04-12T06:24:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5621",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5621#issuecomment-43893",
+    "user": "was"
+}
+```
 
 This patch causes a few tiny doctest failures.  Can you fix them and post another patch:
 
@@ -70,16 +106,40 @@ The following tests failed:
 
 
 
+
 ---
+
+archive/issue_comments_043894.json:
+```json
+{
+    "body": "Attachment\n\nbased on sage-3.4.1.rc3",
+    "created_at": "2009-04-17T03:32:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5621",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5621#issuecomment-43894",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
 based on sage-3.4.1.rc3
 
 
+
 ---
 
-Comment by mvngu created at 2009-04-17 03:34:48
+archive/issue_comments_043895.json:
+```json
+{
+    "body": "Replying to [comment:2 was]:\n> This patch causes a few tiny doctest failures.  Can you fix them and post another patch:\n\n\nYour wish is my command :-)  Please see the new patch, rebased against sage-3.4.1.rc3.",
+    "created_at": "2009-04-17T03:34:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5621",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5621#issuecomment-43895",
+    "user": "mvngu"
+}
+```
 
 Replying to [comment:2 was]:
 > This patch causes a few tiny doctest failures.  Can you fix them and post another patch:
@@ -88,14 +148,38 @@ Replying to [comment:2 was]:
 Your wish is my command :-)  Please see the new patch, rebased against sage-3.4.1.rc3.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-05-10 22:52:34
+archive/issue_comments_043896.json:
+```json
+{
+    "body": "Looks good, all tests pass on sage.math.  There is a trivial typo, corrected in the referee's patch.",
+    "created_at": "2009-05-10T22:52:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5621",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5621#issuecomment-43896",
+    "user": "jhpalmieri"
+}
+```
 
 Looks good, all tests pass on sage.math.  There is a trivial typo, corrected in the referee's patch.
 
 
+
 ---
+
+archive/issue_comments_043897.json:
+```json
+{
+    "body": "Attachment\n\nGiven the pynac transformation I don't think it is a good idea to merge this now. calculus.py will be more or less gone before the end of the week anyway :).\n\nThoughts?\n\nCheers,\n\nMichael",
+    "created_at": "2009-05-11T08:08:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5621",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5621#issuecomment-43897",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -108,9 +192,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-13 18:49:21
+archive/issue_comments_043898.json:
+```json
+{
+    "body": "I talked to Mike Hansen yesterday: The new doctests are going in via new symbolics - no point in creating merge issues when calculus is being more or less completely wiped out :)\n\nCheers,\n\nMichael",
+    "created_at": "2009-05-13T18:49:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5621",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5621#issuecomment-43898",
+    "user": "mabshoff"
+}
+```
 
 I talked to Mike Hansen yesterday: The new doctests are going in via new symbolics - no point in creating merge issues when calculus is being more or less completely wiped out :)
 
@@ -119,9 +214,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-21 01:28:49
+archive/issue_comments_043899.json:
+```json
+{
+    "body": "This has been merged via #5930 into the new symbolics.\n\nCheers,\n\nMichael",
+    "created_at": "2009-05-21T01:28:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5621",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5621#issuecomment-43899",
+    "user": "mabshoff"
+}
+```
 
 This has been merged via #5930 into the new symbolics.
 
@@ -130,8 +236,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-21 01:28:49
+archive/issue_comments_043900.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-05-21T01:28:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5621",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5621#issuecomment-43900",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

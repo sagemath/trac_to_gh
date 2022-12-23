@@ -1,11 +1,21 @@
 # Issue 8316: Remove the Jinja (not Jinja2) package
 
-Issue created by migration from https://trac.sagemath.org/ticket/8316
-
-Original creator: mpatel
-
-Original creation time: 2010-02-20 21:25:03
-
+archive/issues_008316.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  alexghitza cwitty mhansen robertwb timdumol\n\nWith #7249 merged, it now seems that no Sage component depends on the \"slightly outdated version\" of [Jinja](http://jinja.pocoo.org/).  If this is indeed true, we can remove `jinja-*.spkg` from the Sage distribution.\n\nOf course, we'll keep the \"awesome version\", `jinja2-*.spkg`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8316\n\n",
+    "created_at": "2010-02-20T21:25:03Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "enhancement"
+    ],
+    "title": "Remove the Jinja (not Jinja2) package",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8316",
+    "user": "mpatel"
+}
+```
 Assignee: tbd
 
 CC:  alexghitza cwitty mhansen robertwb timdumol
@@ -14,10 +24,25 @@ With #7249 merged, it now seems that no Sage component depends on the "slightly 
 
 Of course, we'll keep the "awesome version", `jinja2-*.spkg`.
 
+Issue created by migration from https://trac.sagemath.org/ticket/8316
+
+
+
+
 
 ---
 
-Comment by mpatel created at 2010-03-05 00:40:59
+archive/issue_comments_073756.json:
+```json
+{
+    "body": "SageNB no longer depends on Jinja.  The Sage library does:\n\n```sh\n$ cd SAGE_ROOT/devel/sage-main/sage\n$ grep jinja `find -name \\*.py\\*` |grep import\n./server/notebook/template.py:import jinja\n./ext/gen_interpreters.py:from jinja import Environment\n./ext/gen_interpreters.py:from jinja.datastructure import ComplainingUndefined\n```\n",
+    "created_at": "2010-03-05T00:40:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8316",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8316#issuecomment-73756",
+    "user": "mpatel"
+}
+```
 
 SageNB no longer depends on Jinja.  The Sage library does:
 
@@ -31,56 +56,154 @@ $ grep jinja `find -name \*.py\*` |grep import
 
 
 
+
 ---
 
-Comment by mpatel created at 2010-03-05 02:07:42
+archive/issue_comments_073757.json:
+```json
+{
+    "body": "Use Jinja2 instead of Jinja.  sage repo.",
+    "created_at": "2010-03-05T02:07:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8316",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8316#issuecomment-73757",
+    "user": "mpatel"
+}
+```
 
 Use Jinja2 instead of Jinja.  sage repo.
 
 
+
 ---
+
+archive/issue_comments_073758.json:
+```json
+{
+    "body": "Attachment\n\nUse `myself` instead of `self`.  Replaces previous.",
+    "created_at": "2010-03-05T02:33:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8316",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8316#issuecomment-73758",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
 Use `myself` instead of `self`.  Replaces previous.
 
 
+
 ---
 
-Comment by mpatel created at 2010-03-05 02:34:34
+archive/issue_comments_073759.json:
+```json
+{
+    "body": "To do: Update `spkg/install` and `spkg/standard/deps`.  I'll wait for #8306.",
+    "created_at": "2010-03-05T02:34:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8316",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8316#issuecomment-73759",
+    "user": "mpatel"
+}
+```
 
 To do: Update `spkg/install` and `spkg/standard/deps`.  I'll wait for #8306.
 
 
+
 ---
+
+archive/issue_comments_073760.json:
+```json
+{
+    "body": "Attachment\n\nUpdated `spkg/standard/deps`.  Based on #8306.",
+    "created_at": "2010-06-14T06:48:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8316",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8316#issuecomment-73760",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
 Updated `spkg/standard/deps`.  Based on #8306.
 
 
+
 ---
+
+archive/issue_comments_073761.json:
+```json
+{
+    "body": "Attachment\n\nDiff of `spkg/standard/deps` vs. #8306.",
+    "created_at": "2010-06-14T06:48:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8316",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8316#issuecomment-73761",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
 Diff of `spkg/standard/deps` vs. #8306.
 
 
+
 ---
+
+archive/issue_comments_073762.json:
+```json
+{
+    "body": "Attachment\n\nUpdated `spkg/install`.  Based on #8306.",
+    "created_at": "2010-06-14T06:49:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8316",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8316#issuecomment-73762",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
 Updated `spkg/install`.  Based on #8306.
 
 
+
 ---
 
-Comment by mpatel created at 2010-06-14 06:50:01
+archive/issue_comments_073763.json:
+```json
+{
+    "body": "Diff of `spkg/install` vs. #8306.",
+    "created_at": "2010-06-14T06:50:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8316",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8316#issuecomment-73763",
+    "user": "mpatel"
+}
+```
 
 Diff of `spkg/install` vs. #8306.
 
 
+
 ---
+
+archive/issue_comments_073764.json:
+```json
+{
+    "body": "Attachment\n\nWith V1 of the patch, `sage -b` gives\n\n\n```python\n[...]\nBuilding interpreters for fast_callable\nTraceback (most recent call last):\n  File \"setup.py\", line 109, in <module>\n    sage.ext.gen_interpreters.rebuild(SAGE_DEVEL + 'sage/sage/ext/interpreters')\n  File \"/mnt/usb1/scratch/mpatel/apps/sage-4.4.4.a0/devel/sage-main/sage/ext/gen_interpreters.py\", line 3823, in rebuild\n    build_interp(interp, dir)\n  File \"/mnt/usb1/scratch/mpatel/apps/sage-4.4.4.a0/devel/sage-main/sage/ext/gen_interpreters.py\", line 3788, in build_interp\n    interp = ig.get_interpreter()\n  File \"/mnt/usb1/scratch/mpatel/apps/sage-4.4.4.a0/devel/sage-main/sage/ext/gen_interpreters.py\", line 3318, in get_interpreter\n    self.write_interpreter(buff.write)\n  File \"/mnt/usb1/scratch/mpatel/apps/sage-4.4.4.a0/devel/sage-main/sage/ext/gen_interpreters.py\", line 2974, in write_interpreter\n    \"\"\", s=s, self=self, i=indent_lines))\n  File \"/mnt/usb1/scratch/mpatel/apps/sage-4.4.4.a0/devel/sage-main/sage/ext/gen_interpreters.py\", line 177, in je\n    return tmpl.render(kwargs)\n  File \"<template>\", line 4, in top-level template code\n  File \"/home/mpatel/apps/sage/local/lib/python2.6/site-packages/Jinja2-2.1.1-py2.6-linux-x86_64.egg/jinja2/runtime.py\", line 132, in call\n    return __obj(*args, **kwargs)\n  File \"/home/mpatel/apps/sage/local/lib/python2.6/site-packages/Jinja2-2.1.1-py2.6-linux-x86_64.egg/jinja2/runtime.py\", line 403, in _fail_with_undefined_error\n    raise self._undefined_exception(hint)\njinja2.exceptions.UndefinedError: 'TemplateReference' object has no attribute 'func_header'\nsage: There was an error installing modified sage library code.\n```\n\nThe docstring for `jinja2.runtime.TemplateReference` is \"The `self` in templates.\"  But I'm not sure why this happens.  Does Jinja2 not allow `self=self`?\n\nV2 of the patch appears to be OK: `sage -b` works, Sage builds from scratch with `SAGE_CHECK`, the long tests pass.  Did I miss any `self` --> `myself` conversions?  Should I run some other tests?\n\nI'm not familiar with `ext/`, so I've included some names from `hg log gen_interpreters.py` in the Cc: list.",
+    "created_at": "2010-06-14T08:58:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8316",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8316#issuecomment-73764",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
@@ -119,44 +242,112 @@ V2 of the patch appears to be OK: `sage -b` works, Sage builds from scratch with
 I'm not familiar with `ext/`, so I've included some names from `hg log gen_interpreters.py` in the Cc: list.
 
 
+
 ---
 
-Comment by mpatel created at 2010-06-14 08:58:58
+archive/issue_comments_073765.json:
+```json
+{
+    "body": "Changing priority from major to minor.",
+    "created_at": "2010-06-14T08:58:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8316",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8316#issuecomment-73765",
+    "user": "mpatel"
+}
+```
 
 Changing priority from major to minor.
 
 
+
 ---
 
-Comment by mpatel created at 2010-06-14 08:58:58
+archive/issue_comments_073766.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-06-14T08:58:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8316",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8316#issuecomment-73766",
+    "user": "mpatel"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by was created at 2010-06-22 04:36:54
+archive/issue_comments_073767.json:
+```json
+{
+    "body": "Milestone sage-4.4.5 deleted",
+    "created_at": "2010-06-22T04:36:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8316",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8316#issuecomment-73767",
+    "user": "was"
+}
+```
 
 Milestone sage-4.4.5 deleted
 
 
+
 ---
+
+archive/issue_comments_073768.json:
+```json
+{
+    "body": "Attachment\n\ndeps.diff rebased to 4.5.rc1",
+    "created_at": "2010-07-16T02:29:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8316",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8316#issuecomment-73768",
+    "user": "cwitty"
+}
+```
 
 Attachment
 
 deps.diff rebased to 4.5.rc1
 
 
+
 ---
 
-Comment by cwitty created at 2010-07-16 02:57:56
+archive/issue_comments_073769.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-07-16T02:57:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8316",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8316#issuecomment-73769",
+    "user": "cwitty"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by cwitty created at 2010-07-16 02:57:56
+archive/issue_comments_073770.json:
+```json
+{
+    "body": "Thanks for fixing up gen_interpreters.py, your changes look fine (and the template output from the patched gen_interpreters.py using jinja2 is byte-for-byte identical to the previous output using jinja).\n\nI tested by starting from sage-4.5.rc1.tar, removing the jinja spkg, and applying install.diff and 4.5.rc1-deps.diff (the original deps.diff would no longer apply, so I rebased it).  I then typed \"make\", waited for the build to fail, applied trac_8316-remove_jinja.2.patch, and restarted the build.  The build was successfull, and all (long) tests passed.\n\nPositive review.",
+    "created_at": "2010-07-16T02:57:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8316",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8316#issuecomment-73770",
+    "user": "cwitty"
+}
+```
 
 Thanks for fixing up gen_interpreters.py, your changes look fine (and the template output from the patched gen_interpreters.py using jinja2 is byte-for-byte identical to the previous output using jinja).
 
@@ -165,21 +356,43 @@ I tested by starting from sage-4.5.rc1.tar, removing the jinja spkg, and applyin
 Positive review.
 
 
+
 ---
 
-Comment by mpatel created at 2010-08-09 09:52:55
+archive/issue_comments_073771.json:
+```json
+{
+    "body": "I'm merging \n\n* [attachment:trac_8316-remove_jinja.2.patch]\n* [attachment:install.diff]\n* [attachment:4.5.rc1-deps.diff]\n\ninto 4.5.3.alpha0.  Thanks for the review and rebasing the latter.",
+    "created_at": "2010-08-09T09:52:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8316",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8316#issuecomment-73771",
+    "user": "mpatel"
+}
+```
 
 I'm merging 
 
- * [attachment:trac_8316-remove_jinja.2.patch]
- * [attachment:install.diff]
- * [attachment:4.5.rc1-deps.diff]
+* [attachment:trac_8316-remove_jinja.2.patch]
+* [attachment:install.diff]
+* [attachment:4.5.rc1-deps.diff]
 
 into 4.5.3.alpha0.  Thanks for the review and rebasing the latter.
 
 
+
 ---
 
-Comment by mpatel created at 2010-08-09 09:52:55
+archive/issue_comments_073772.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-08-09T09:52:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8316",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8316#issuecomment-73772",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed

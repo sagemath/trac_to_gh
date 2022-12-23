@@ -1,34 +1,83 @@
 # Issue 3756: [with patch; needs review] finance -- fix a bug in fractional brownian motion random walks
 
-Issue created by migration from https://trac.sagemath.org/ticket/3756
-
-Original creator: was
-
-Original creation time: 2008-08-02 01:17:43
-
+archive/issues_003756.json:
+```json
+{
+    "body": "Assignee: was\n\nI stupidly forgot to sum the terms in the random walk.  This patch fixes that bug, updates the doctests, etc.   \n\nThis patch depends on #3755!\n\nIssue created by migration from https://trac.sagemath.org/ticket/3756\n\n",
+    "created_at": "2008-08-02T01:17:43Z",
+    "labels": [
+        "finance",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch; needs review] finance -- fix a bug in fractional brownian motion random walks",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3756",
+    "user": "was"
+}
+```
 Assignee: was
 
 I stupidly forgot to sum the terms in the random walk.  This patch fixes that bug, updates the doctests, etc.   
 
 This patch depends on #3755!
 
+Issue created by migration from https://trac.sagemath.org/ticket/3756
+
+
+
+
 
 ---
+
+archive/issue_comments_026682.json:
+```json
+{
+    "body": "Attachment\n\nLooks good. +1",
+    "created_at": "2008-08-02T02:25:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3756",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3756#issuecomment-26682",
+    "user": "itolkov"
+}
+```
 
 Attachment
 
 Looks good. +1
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-06 01:23:28
+archive/issue_comments_026683.json:
+```json
+{
+    "body": "Merged in Sage 3.1.alpha1",
+    "created_at": "2008-08-06T01:23:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3756",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3756#issuecomment-26683",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.1.alpha1
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-06 01:23:28
+archive/issue_comments_026684.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-08-06T01:23:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3756",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3756#issuecomment-26684",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 8407: word paths isometries + improve construction
 
-Issue created by migration from https://trac.sagemath.org/ticket/8407
-
-Original creator: slabbe
-
-Original creation time: 2010-03-01 13:09:35
-
+archive/issues_008407.json:
+```json
+{
+    "body": "Assignee: slabbe\n\nCC:  abmasse\n\n1. Add a function that returns the isometries of word paths on the square grid.\n\n2. Improve the construction of word path parent : creation from 2*n letters and n vectors now works (it takes the opposite of vectors).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8407\n\n",
+    "created_at": "2010-03-01T13:09:35Z",
+    "labels": [
+        "combinatorics",
+        "major",
+        "enhancement"
+    ],
+    "title": "word paths isometries + improve construction",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8407",
+    "user": "slabbe"
+}
+```
 Assignee: slabbe
 
 CC:  abmasse
@@ -14,17 +24,43 @@ CC:  abmasse
 
 2. Improve the construction of word path parent : creation from 2*n letters and n vectors now works (it takes the opposite of vectors).
 
+Issue created by migration from https://trac.sagemath.org/ticket/8407
+
+
+
+
 
 ---
 
-Comment by slabbe created at 2010-03-01 13:17:55
+archive/issue_comments_075323.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-03-01T13:17:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8407",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8407#issuecomment-75323",
+    "user": "slabbe"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by abmasse created at 2010-03-01 22:12:40
+archive/issue_comments_075324.json:
+```json
+{
+    "body": "These functions are really interesting ! I can't wait to use them. However, here are some comments:\n\n1. I think this patch is a good occasion to add functions such as `rotate()` and `reflects()` (with pertinent parameters) that compute ONE rotated or reflected version of the path instead of all EIGHT at the same time. This wouldn't be too long to do and then your function `isometries()` could call them.\n\n2. I don't understand why you use the parameter `reversal`. If I understand it well, it is the word reversal operator, which can be geometrically interpreted as performing a rotation of angle pi (of the path) together with an orientation reversal of the path. It seems more natural to me that the parameter `reversal` correspond simply to the orientation reversal rather than to the word reversal.\n\n3. I noticed that you do not use the word \"self\" while documenting, but you use \"path\" or other similar words. I'm not sure which one is a good practice, but I think it is better to use the first one (I'm really not sure about it, so maybe you can correct me).\n\nWhat do you think ?",
+    "created_at": "2010-03-01T22:12:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8407",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8407#issuecomment-75324",
+    "user": "abmasse"
+}
+```
 
 These functions are really interesting ! I can't wait to use them. However, here are some comments:
 
@@ -37,42 +73,110 @@ These functions are really interesting ! I can't wait to use them. However, here
 What do you think ?
 
 
+
 ---
 
-Comment by abmasse created at 2010-03-21 21:17:30
+archive/issue_comments_075325.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-03-21T21:17:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8407",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8407#issuecomment-75325",
+    "user": "abmasse"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by abmasse created at 2010-03-21 21:17:30
+archive/issue_comments_075326.json:
+```json
+{
+    "body": "Just noticed I should have set this ticket to \"needs work\". Done.",
+    "created_at": "2010-03-21T21:17:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8407",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8407#issuecomment-75326",
+    "user": "abmasse"
+}
+```
 
 Just noticed I should have set this ticket to "needs work". Done.
 
 
+
 ---
 
-Comment by slabbe created at 2010-04-11 15:15:05
+archive/issue_comments_075327.json:
+```json
+{
+    "body": "I removed one of the objectives of the ticket related to isometries. Indeed, I need this function for another problem so I think its use will be more understood in context. So that is why I removed this part from this ticket. I will create a new ticket for it soon.",
+    "created_at": "2010-04-11T15:15:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8407",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8407#issuecomment-75327",
+    "user": "slabbe"
+}
+```
 
 I removed one of the objectives of the ticket related to isometries. Indeed, I need this function for another problem so I think its use will be more understood in context. So that is why I removed this part from this ticket. I will create a new ticket for it soon.
 
 
+
 ---
+
+archive/issue_comments_075328.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-04-11T15:18:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8407",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8407#issuecomment-75328",
+    "user": "slabbe"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by slabbe created at 2010-04-11 15:18:32
+archive/issue_comments_075329.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-04-11T15:18:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8407",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8407#issuecomment-75329",
+    "user": "slabbe"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by ncohen created at 2010-04-24 11:06:23
+archive/issue_comments_075330.json:
+```json
+{
+    "body": "Applies fine, does it job :-)\n\nThank you for your work !\n\nNathann",
+    "created_at": "2010-04-24T11:06:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8407",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8407#issuecomment-75330",
+    "user": "ncohen"
+}
+```
 
 Applies fine, does it job :-)
 
@@ -81,15 +185,37 @@ Thank you for your work !
 Nathann
 
 
+
 ---
 
-Comment by ncohen created at 2010-04-24 11:06:23
+archive/issue_comments_075331.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-04-24T11:06:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8407",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8407#issuecomment-75331",
+    "user": "ncohen"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by was created at 2010-04-29 05:21:10
+archive/issue_comments_075332.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-04-29T05:21:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8407",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8407#issuecomment-75332",
+    "user": "was"
+}
+```
 
 Resolution: fixed

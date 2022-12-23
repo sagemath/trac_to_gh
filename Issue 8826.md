@@ -1,11 +1,21 @@
 # Issue 8826: [build error] ImportError: No module named sage.all
 
-Issue created by migration from https://trac.sagemath.org/ticket/8826
-
-Original creator: gostrc
-
-Original creation time: 2010-04-29 20:38:19
-
+archive/issues_008826.json:
+```json
+{
+    "body": "Assignee: GeorgSWeber\n\nI'm using gcc 4.5 but I'm not sure if this is related. I am on 64bit archlinux. If you need any more info, I'll be happy to provide it.\n\n!`spkg/base/.hg/store/data/bzip2-1.0.5-install.i' -> `/opt/sage/sage/spkg/base/.hg/store/data/bzip2-1.0.5-install.i'\n\n!`spkg/base/.hg/store/data/_r_e_a_d_m_e.txt.i' -> `/opt/sage/sage/spkg/base/.hg/store/data/_r_e_a_d_m_e.txt.i'\n!`spkg/base/.hg/store/data/testcxx.sh.i' -> `/opt/sage/sage/spkg/base/.hg/store/data/testcxx.sh.i'\n!`spkg/base/.hg/store/data/prereq-0.3-install.i' -> `/opt/sage/sage/spkg/base/.hg/store/data/prereq-0.3-install.i'\n!`spkg/base/.hg/store/data/stdint.h___solaris9.i' -> `/opt/sage/sage/spkg/base/.hg/store/data/stdint.h!___solaris9.i'\n!`spkg/base/.hg/store/data/prereq-0.7-install.i' -> `/opt/sage/sage/spkg/base/.hg/store/data/prereq-0.7-install.i'\n!`spkg/base/.hg/store/data/.hgignore.i' -> `/opt/sage/sage/spkg/base/.hg/store/data/.hgignore.i'\n!`spkg/base/.hg/store/data/testcc.sh.i' -> `/opt/sage/sage/spkg/base/.hg/store/data/testcc.sh.i'\n!`spkg/base/.hg/store/data/prereq-0.6-install.i' -> `/opt/sage/sage/spkg/base/.hg/store/data/prereq-0.6-install.i'\n!`spkg/base/.hg/store/00changelog.i' -> `/opt/sage/sage/spkg/base/.hg/store/00changelog.i'\n!`spkg/base/.hg/store/undo' -> `/opt/sage/sage/spkg/base/.hg/store/undo'\n!`spkg/base/.hg/attic' -> `/opt/sage/sage/spkg/base/.hg/attic'\n!`spkg/base/.hg/requires' -> `/opt/sage/sage/spkg/base/.hg/requires'\n!`spkg/base/.hg/branch' -> `/opt/sage/sage/spkg/base/.hg/branch'\n!`spkg/base/sage-make_relative' -> `/opt/sage/sage/spkg/base/sage-make_relative'\n!`spkg/base/bzip2-1.0.5.tar.gz' -> `/opt/sage/sage/spkg/base/bzip2-1.0.5.tar.gz'\n!`spkg/base/.hgignore' -> `/opt/sage/sage/spkg/base/.hgignore'\n!`spkg/base/README.txt' -> `/opt/sage/sage/spkg/base/README.txt'\n!`spkg/base/testcxx.sh' -> `/opt/sage/sage/spkg/base/testcxx.sh'\n!`spkg/base/sage-spkg' -> `/opt/sage/sage/spkg/base/sage-spkg'\n!`spkg/base/testcc.sh' -> `/opt/sage/sage/spkg/base/testcc.sh'\n!`spkg/base/bzip2-1.0.5-install' -> `/opt/sage/sage/spkg/base/bzip2-1.0.5-install'\n!`spkg/base/prereq-0.7-install' -> `/opt/sage/sage/spkg/base/prereq-0.7-install'\n!`tmp' -> `/opt/sage/sage/tmp'\n!`tmp/COPYING.txt' -> `/opt/sage/sage/tmp/COPYING.txt'\n!`tmp/README.txt' -> `/opt/sage/sage/tmp/README.txt'\n!`tmp/sage-README-osx.txt' -> `/opt/sage/sage/tmp/sage-README-osx.txt'\n!`tmp/install' -> `/opt/sage/sage/tmp/install'\npython local/bin/sage-hardcode_sage_root /opt/sage/sage/sage \"/opt/sage\"/sage\ncp /opt/sage/sage/sage /opt/sage/bin/\ncd /opt/sage/bin/; ./sage -c\nTraceback (most recent call last):\n\u00a0 File \"/opt/sage/sage/local/bin/sage-eval\", line 4, in <module>\n\u00a0\u00a0\u00a0 from sage.all import *\nImportError: No module named sage.all\n\nmake: *** [install] Error 1\nerror: command failed to execute correctly\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8826\n\n",
+    "created_at": "2010-04-29T20:38:19Z",
+    "labels": [
+        "build",
+        "major",
+        "bug"
+    ],
+    "title": "[build error] ImportError: No module named sage.all",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8826",
+    "user": "gostrc"
+}
+```
 Assignee: GeorgSWeber
 
 I'm using gcc 4.5 but I'm not sure if this is related. I am on 64bit archlinux. If you need any more info, I'll be happy to provide it.
@@ -51,51 +61,132 @@ make: *** [install] Error 1
 error: command failed to execute correctly
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8826
+
+
+
+
 
 ---
 
-Comment by gostrc created at 2010-05-04 01:36:25
+archive/issue_comments_081050.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-05-04T01:36:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8826",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8826#issuecomment-81050",
+    "user": "gostrc"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by gostrc created at 2010-05-04 01:36:25
+archive/issue_comments_081051.json:
+```json
+{
+    "body": "Fixed in 4.4.1",
+    "created_at": "2010-05-04T01:36:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8826",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8826#issuecomment-81051",
+    "user": "gostrc"
+}
+```
 
 Fixed in 4.4.1
 
 
+
 ---
 
-Comment by gostrc created at 2010-05-18 03:14:16
+archive/issue_comments_081052.json:
+```json
+{
+    "body": "Resolution changed from fixed to ",
+    "created_at": "2010-05-18T03:14:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8826",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8826#issuecomment-81052",
+    "user": "gostrc"
+}
+```
 
 Resolution changed from fixed to 
 
 
+
 ---
 
-Comment by gostrc created at 2010-05-18 03:14:16
+archive/issue_comments_081053.json:
+```json
+{
+    "body": "Changing status from closed to new.",
+    "created_at": "2010-05-18T03:14:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8826",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8826#issuecomment-81053",
+    "user": "gostrc"
+}
+```
 
 Changing status from closed to new.
 
 
+
 ---
 
-Comment by gostrc created at 2010-06-06 20:16:37
+archive/issue_comments_081054.json:
+```json
+{
+    "body": "had to unset LDFLAGS MAKEFLAGS CFLAGS CXXFLAGS",
+    "created_at": "2010-06-06T20:16:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8826",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8826#issuecomment-81054",
+    "user": "gostrc"
+}
+```
 
 had to unset LDFLAGS MAKEFLAGS CFLAGS CXXFLAGS
 
 
+
 ---
 
-Comment by gostrc created at 2010-06-06 20:16:37
+archive/issue_comments_081055.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-06-06T20:16:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8826",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8826#issuecomment-81055",
+    "user": "gostrc"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mhansen created at 2010-06-07 17:22:46
+archive/issue_comments_081056.json:
+```json
+{
+    "body": "Resolution changed from fixed to invalid",
+    "created_at": "2010-06-07T17:22:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8826",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8826#issuecomment-81056",
+    "user": "mhansen"
+}
+```
 
 Resolution changed from fixed to invalid

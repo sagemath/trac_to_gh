@@ -1,18 +1,32 @@
 # Issue 9118: utility for converting between different alphabets
 
-Issue created by migration from https://trac.sagemath.org/ticket/9118
-
-Original creator: mvngu
-
-Original creation time: 2010-06-03 00:08:18
-
+archive/issues_009118.json:
+```json
+{
+    "body": "Assignee: mvngu\n\nFor example, we would like to perform conversions between these alphabets:\n\n* Capital letters of the English alphabet.\n* Binary alphabet.\n* Hexadecimal alphabet.\n* Octal alphabet.\n* The English alphabet.\n* etc.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9118\n\n",
+    "created_at": "2010-06-03T00:08:18Z",
+    "labels": [
+        "cryptography",
+        "major",
+        "enhancement"
+    ],
+    "title": "utility for converting between different alphabets",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9118",
+    "user": "mvngu"
+}
+```
 Assignee: mvngu
 
 For example, we would like to perform conversions between these alphabets:
 
- * Capital letters of the English alphabet.
- * Binary alphabet.
- * Hexadecimal alphabet.
- * Octal alphabet.
- * The English alphabet.
- * etc.
+* Capital letters of the English alphabet.
+* Binary alphabet.
+* Hexadecimal alphabet.
+* Octal alphabet.
+* The English alphabet.
+* etc.
+
+Issue created by migration from https://trac.sagemath.org/ticket/9118
+
+

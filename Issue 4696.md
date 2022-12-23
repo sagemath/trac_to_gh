@@ -1,11 +1,21 @@
 # Issue 4696: coercion system doesn't expect pickled parents
 
-Issue created by migration from https://trac.sagemath.org/ticket/4696
-
-Original creator: burcin
-
-Original creation time: 2008-12-04 21:08:44
-
+archive/issues_004696.json:
+```json
+{
+    "body": "Assignee: robertwb\n\nThe coercion system expects parents to be unique. This doesn't seem to hold when pickled parents are involved.\n\n\n```\nsage: x,y = QQ['x,y'].gens()\nsage: i = ideal(x^2 - y^2 + 1)\nsage: j = loads(dumps(i))\nsage: i == j\nTrue\nsage: j == i\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n/home/burcin/sage/sage-3.2.1.alpha2/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.Element.__richcmp__ (sage/structure/element.c:5329)()\n    575 \n    576 \n--> 577 \n    578 \n    579 \n\n/home/burcin/sage/sage-3.2.1.alpha2/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.Element._richcmp (sage/structure/element.c:4807)()\n    516 \n    517 \n--> 518 \n    519 \n    520 \n\n/home/burcin/sage/sage-3.2.1.alpha2/local/lib/python2.5/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.canonical_coercion (sage/structure/coerce.c:6345)()\n    770 \n    771 \n--> 772 \n    773 \n    774 \n\n/home/burcin/sage/sage-3.2.1.alpha2/local/lib/python2.5/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps._coercion_error (sage/structure/coerce.c:11109)()\n   1275 \n   1276 \n-> 1277 \n   1278 \n   1279 \n\nRuntimeError: There is a bug in the coercion code in SAGE.\nBoth x (=Ideal (x^2 - y^2 + 1) of Multivariate Polynomial Ring in x, y over Rational Field) and y (=Ideal (x^2 - y^2 + 1) of Multivariate Polynomial Ring in x, y over Rational Field) are supposed to have identical parents but they don't.\nIn fact, x has parent 'Monoid of ideals of Multivariate Polynomial Ring in x, y over Rational Field'\nwhereas y has parent 'Monoid of ideals of Multivariate Polynomial Ring in x, y over Rational Field'\nOriginal elements Ideal (x^2 - y^2 + 1) of Multivariate Polynomial Ring in x, y over Rational Field (parent Monoid of ideals of Multivariate Polynomial Ring in x, y over Rational Field) and Ideal (x^2 - y^2 + 1) of Multivariate Polynomial Ring in x, y over Rational Field (parent Monoid of ideals of Multivariate Polynomial Ring in x, y over Rational Field) and maps\n<type 'NoneType'> None\n<type 'sage.categories.morphism.CallMorphism'> Call morphism:\n  From: Monoid of ideals of Multivariate Polynomial Ring in x, y over Rational Field\n  To:   Monoid of ideals of Multivariate Polynomial Ring in x, y over Rational Field\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4696\n\n",
+    "created_at": "2008-12-04T21:08:44Z",
+    "labels": [
+        "coercion",
+        "minor",
+        "bug"
+    ],
+    "title": "coercion system doesn't expect pickled parents",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4696",
+    "user": "burcin"
+}
+```
 Assignee: robertwb
 
 The coercion system expects parents to be unique. This doesn't seem to hold when pickled parents are involved.
@@ -62,17 +72,43 @@ Original elements Ideal (x^2 - y^2 + 1) of Multivariate Polynomial Ring in x, y 
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4696
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2013-07-23 00:32:14
+archive/issue_comments_035383.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2013-07-23T00:32:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4696",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4696#issuecomment-35383",
+    "user": "mhansen"
+}
+```
 
 Resolution: invalid
 
 
+
 ---
 
-Comment by mhansen created at 2013-07-23 00:32:14
+archive/issue_comments_035384.json:
+```json
+{
+    "body": "This works now:\n\n\n```\nsage: sage: x,y = QQ['x,y'].gens()\nsage: sage: i = ideal(x^2 - y^2 + 1)\nsage: sage: j = loads(dumps(i))\nsage: sage: i == j\nTrue\nsage: j == i\nTrue\n```\n",
+    "created_at": "2013-07-23T00:32:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4696",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4696#issuecomment-35384",
+    "user": "mhansen"
+}
+```
 
 This works now:
 

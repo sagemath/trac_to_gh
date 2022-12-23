@@ -1,11 +1,21 @@
 # Issue 5958: [with patch, needs work] MPolynomial_polydict.factor() should accept proof parameter
 
-Issue created by migration from https://trac.sagemath.org/ticket/5958
-
-Original creator: malb
-
-Original creation time: 2009-05-01 15:09:53
-
+archive/issues_005958.json:
+```json
+{
+    "body": "Assignee: malb\n\nCC:  john_perry\n\nKeywords: singular, factor\n\nThe parameter should be ignored, but for compatibility it is necessary.\n\nE.g. this should work:\n\n\n```\nsage: R.<x,y> = CC[]\nsage: I = R.ideal(x^2+y^2-1,x*y-1)\nsage: I.variety()\n```\n\n\nbut it raises an except in 3.4.1.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5958\n\n",
+    "created_at": "2009-05-01T15:09:53Z",
+    "labels": [
+        "commutative algebra",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch, needs work] MPolynomial_polydict.factor() should accept proof parameter",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5958",
+    "user": "malb"
+}
+```
 Assignee: malb
 
 CC:  john_perry
@@ -26,10 +36,25 @@ sage: I.variety()
 
 but it raises an except in 3.4.1.
 
+Issue created by migration from https://trac.sagemath.org/ticket/5958
+
+
+
+
 
 ---
 
-Comment by malb created at 2009-05-01 15:11:04
+archive/issue_comments_047165.json:
+```json
+{
+    "body": "The patch fixes the exception, however:\n\n\n```\nsage: sage: R.<x,y> = CC[]\nsage: sage: I = R.ideal(x^2+y^2-1,x*y-1)\nsage: sage: I.variety()\nverbose 0 (1735: multi_polynomial_ideal.py, variety) Warning: falling back to very slow toy implementation.\n[{y: -1.00000000000000}, {y: 0}, {y: 1.00000000000000}]\n```\n\n\nwhich is certainly the wrong answer (`x` is missing), thus there seems to be another bug.",
+    "created_at": "2009-05-01T15:11:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5958",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47165",
+    "user": "malb"
+}
+```
 
 The patch fixes the exception, however:
 
@@ -46,34 +71,80 @@ verbose 0 (1735: multi_polynomial_ideal.py, variety) Warning: falling back to ve
 which is certainly the wrong answer (`x` is missing), thus there seems to be another bug.
 
 
+
 ---
 
-Comment by malb created at 2009-05-01 15:15:44
+archive/issue_comments_047166.json:
+```json
+{
+    "body": "It seems `toy_variety` does not switch to 'lex' when it should?",
+    "created_at": "2009-05-01T15:15:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5958",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47166",
+    "user": "malb"
+}
+```
 
 It seems `toy_variety` does not switch to 'lex' when it should?
 
 
+
 ---
+
+archive/issue_comments_047167.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-05-01T15:29:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5958",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47167",
+    "user": "malb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by malb created at 2009-05-01 15:30:02
+archive/issue_comments_047168.json:
+```json
+{
+    "body": "The attached patch switches to lex before calling `toy_variety.triangular_factorization`",
+    "created_at": "2009-05-01T15:30:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5958",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47168",
+    "user": "malb"
+}
+```
 
 The attached patch switches to lex before calling `toy_variety.triangular_factorization`
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-05-02 11:26:17
+archive/issue_comments_047169.json:
+```json
+{
+    "body": "Two issues:\n\n* in the first patch, \"proofably\" should be \"provably\"\n \n* I'm getting some slight numerical noise in the doctests from the second patch:\n\n\n```\nsage -t  \"devel/sage-main/sage/rings/polynomial/multi_polynomial_ideal.py\"\n**********************************************************************\nFile \"/opt/sage-devel/devel/sage-main/sage/rings/polynomial/multi_polynomial_ideal.py\", line 1908:\n    sage: for v in I.variety():\n       print v\nExpected:\n    verbose 0 (...: multi_polynomial_ideal.py, variety) Warning: falling back to very slow toy implementation.\n    {y: -0.866025403784439 - 0.500000000000000*I, x: -0.866025403784438 + 0.500000000000000*I}\n    {y: -0.866025403784438 + 0.500000000000000*I, x: -0.866025403784438 - 0.499999999999999*I}\n    {y: 0.866025403784438 + 0.500000000000001*I, x: 0.866025403784440 - 0.499999999999999*I}\n    {y: 0.866025403784439 - 0.500000000000000*I, x: 0.866025403784439 + 0.500000000000000*I}\nGot:\n    verbose 0 (1735: multi_polynomial_ideal.py, variety) Warning: falling back to very slow toy implementation.\n    {y: -0.866025403784439 - 0.500000000000000*I, x: -0.866025403784439 + 0.500000000000001*I}\n    {y: -0.866025403784439 + 0.500000000000000*I, x: -0.866025403784439 - 0.500000000000000*I}\n    {y: 0.866025403784438 + 0.500000000000000*I, x: 0.866025403784438 - 0.499999999999999*I}\n    {y: 0.866025403784439 - 0.500000000000000*I, x: 0.866025403784438 + 0.500000000000001*I}\n**********************************************************************\n1 items had failures:\n   1 of  36 in __main__.example_34\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /opt/sage-devel/tmp/.doctest_multi_polynomial_ideal.py\n\t [12.8 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  \"devel/sage-main/sage/rings/polynomial/multi_polynomial_ideal.py\"\nTotal time for all tests: 12.8 seconds\n```\n",
+    "created_at": "2009-05-02T11:26:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5958",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47169",
+    "user": "AlexGhitza"
+}
+```
 
 Two issues:
 
- * in the first patch, "proofably" should be "provably"
+* in the first patch, "proofably" should be "provably"
  
- * I'm getting some slight numerical noise in the doctests from the second patch:
+* I'm getting some slight numerical noise in the doctests from the second patch:
 
 
 ```
@@ -112,9 +183,20 @@ Total time for all tests: 12.8 seconds
 
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-03 00:18:53
+archive/issue_comments_047170.json:
+```json
+{
+    "body": "Wrong milestone - better luck in Sage 4.0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-05-03T00:18:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5958",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47170",
+    "user": "mabshoff"
+}
+```
 
 Wrong milestone - better luck in Sage 4.0.
 
@@ -123,45 +205,102 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by malb created at 2009-05-07 13:49:16
+archive/issue_comments_047171.json:
+```json
+{
+    "body": "fix typo",
+    "created_at": "2009-05-07T13:49:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5958",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47171",
+    "user": "malb"
+}
+```
 
 fix typo
 
 
+
 ---
+
+archive/issue_comments_047172.json:
+```json
+{
+    "body": "Attachment\n\nI fixed the \"proofable\" vs. \"provable\" typo. However, I am a bit clueless how to deal with the numerical noise. The `...` works for most of it but not for `0.49999999999` vs. {{{0.500000000}}. Ideas?",
+    "created_at": "2009-05-07T13:50:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5958",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47172",
+    "user": "malb"
+}
+```
 
 Attachment
 
 I fixed the "proofable" vs. "provable" typo. However, I am a bit clueless how to deal with the numerical noise. The `...` works for most of it but not for `0.49999999999` vs. {{{0.500000000}}. Ideas?
 
 
+
 ---
 
-Comment by john_perry created at 2009-08-21 17:44:03
+archive/issue_comments_047173.json:
+```json
+{
+    "body": "Martin,\n\nSorry for the late reply, but according to Lazard's paper, the algorithm I used (\"Triangular\") does NOT need a lexicographic term ordering. On p. 124, beginning of Section 6:\n\n*These algorithms do not depend explicitly on the ordering; however, they are mainly designed for degree orderings for which the base is more easily obtained; they work also for lexicographic ordering, but, for them, we dispose of a structure theorem which permit us to provide a better algorithm (section 8).*\n\nThe algorithm I implemented was Triangular (line 6). So the switch the lexicographic is unnecessary.\n\nI don't know how to fix the problem with complex coefficients, though.",
+    "created_at": "2009-08-21T17:44:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5958",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47173",
+    "user": "john_perry"
+}
+```
 
 Martin,
 
 Sorry for the late reply, but according to Lazard's paper, the algorithm I used ("Triangular") does NOT need a lexicographic term ordering. On p. 124, beginning of Section 6:
 
-_These algorithms do not depend explicitly on the ordering; however, they are mainly designed for degree orderings for which the base is more easily obtained; they work also for lexicographic ordering, but, for them, we dispose of a structure theorem which permit us to provide a better algorithm (section 8)._
+*These algorithms do not depend explicitly on the ordering; however, they are mainly designed for degree orderings for which the base is more easily obtained; they work also for lexicographic ordering, but, for them, we dispose of a structure theorem which permit us to provide a better algorithm (section 8).*
 
 The algorithm I implemented was Triangular (line 6). So the switch the lexicographic is unnecessary.
 
 I don't know how to fix the problem with complex coefficients, though.
 
 
+
 ---
 
-Comment by john_perry created at 2009-08-21 17:45:33
+archive/issue_comments_047174.json:
+```json
+{
+    "body": "Incidentally, I'll look at the problem with the missing x as soon as I finish downloading & compiling the latest Sage. (4.1.1?)",
+    "created_at": "2009-08-21T17:45:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5958",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47174",
+    "user": "john_perry"
+}
+```
 
 Incidentally, I'll look at the problem with the missing x as soon as I finish downloading & compiling the latest Sage. (4.1.1?)
 
 
+
 ---
 
-Comment by john_perry created at 2009-08-21 21:02:25
+archive/issue_comments_047175.json:
+```json
+{
+    "body": "I have found two bugs. One of them is not solvable from my end, and possibly not at all (others who know more should comment).\n\nThe first one: elim_pol is not always computing the correct polynomial. After removing the switch to lexicographic order, change line 358 (?) of toy_variety.py from\n\n```\n  for each in xrange(len(coeffs)-1):\n```\n\nto\n\n```\n  for each in xrange(len(coeffs)):\n```\n\n\nI have no idea why I had it count until the next-to-last element of coeffs; all of them are necessary. I can submit a patch if you like.\n\nHowever: even after this fix, a problem remains: line 292 (?) triangular_factorization tries to compute a Groebner basis of an ideal whose generators **should** have a common solution. This is the source of the 1.0 appearing in the triangular variety. Unfortunately, the computed basis is 1.0, suggesting that the ideal has no common solution! I have an idea why this is happening, but I can't yet say for sure.",
+    "created_at": "2009-08-21T21:02:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5958",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47175",
+    "user": "john_perry"
+}
+```
 
 I have found two bugs. One of them is not solvable from my end, and possibly not at all (others who know more should comment).
 
@@ -180,12 +319,23 @@ to
 
 I have no idea why I had it count until the next-to-last element of coeffs; all of them are necessary. I can submit a patch if you like.
 
-However: even after this fix, a problem remains: line 292 (?) triangular_factorization tries to compute a Groebner basis of an ideal whose generators *should* have a common solution. This is the source of the 1.0 appearing in the triangular variety. Unfortunately, the computed basis is 1.0, suggesting that the ideal has no common solution! I have an idea why this is happening, but I can't yet say for sure.
+However: even after this fix, a problem remains: line 292 (?) triangular_factorization tries to compute a Groebner basis of an ideal whose generators **should** have a common solution. This is the source of the 1.0 appearing in the triangular variety. Unfortunately, the computed basis is 1.0, suggesting that the ideal has no common solution! I have an idea why this is happening, but I can't yet say for sure.
+
 
 
 ---
 
-Comment by john_perry created at 2009-08-21 22:41:19
+archive/issue_comments_047176.json:
+```json
+{
+    "body": "To follow up, the problem occurs when computing the Groebner basis over CC.\n\nI'll use the example given:\n\nThe Groebner basis computed is [y^3 + x - y, x^2 + y^2 - 1.00000000000000, x*y - 1.00000000000000].\n\nThe result p from elim_pol is y^4 - y^2 + 1.0. (This reflects the bugfix I identified above; it used to return y<sup>4-y</sup>2.)\n\nThe first factor q of p is y - 0.866025403784439 - 0.500000000000000*I.\n\nThe reduction of B modulo q gives us\n\n[x - 0.866025403784438 + 0.500000000000001*I,\n x^2 - 0.499999999999999 + 0.866025403784439*I,\n (0.866025403784439 + 0.500000000000000*I)*x - 1.00000000000000]\n\n**This should be a consistent system:** the first polynomial is a factor of the second, and the solution to the third is *nearly* the same as the solution to the first: 0.866025403784438 - 0.500000000000001*I vs. 0.866025403784438 - 0.500000000000000*I. This appears to be a roundoff/floating point error.\n\nThe system above should produce a Groebner basis with one polynomial, but it returns [1.00000000000000] instead. This is why nothing is coming back for x. Anyone know how to fix it?",
+    "created_at": "2009-08-21T22:41:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5958",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47176",
+    "user": "john_perry"
+}
+```
 
 To follow up, the problem occurs when computing the Groebner basis over CC.
 
@@ -203,14 +353,25 @@ The reduction of B modulo q gives us
  x^2 - 0.499999999999999 + 0.866025403784439*I,
  (0.866025403784439 + 0.500000000000000*I)*x - 1.00000000000000]
 
-*This should be a consistent system:* the first polynomial is a factor of the second, and the solution to the third is _nearly_ the same as the solution to the first: 0.866025403784438 - 0.500000000000001*I vs. 0.866025403784438 - 0.500000000000000*I. This appears to be a roundoff/floating point error.
+**This should be a consistent system:** the first polynomial is a factor of the second, and the solution to the third is *nearly* the same as the solution to the first: 0.866025403784438 - 0.500000000000001*I vs. 0.866025403784438 - 0.500000000000000*I. This appears to be a roundoff/floating point error.
 
 The system above should produce a Groebner basis with one polynomial, but it returns [1.00000000000000] instead. This is why nothing is coming back for x. Anyone know how to fix it?
 
 
+
 ---
 
-Comment by john_perry created at 2009-08-21 22:43:57
+archive/issue_comments_047177.json:
+```json
+{
+    "body": "Sorry for the repost, but I had some superscript typos in the previou.\n\nTo follow up, the problem occurs when computing the Groebner basis over CC.\n\nI'll use the example given:\n\nThe Groebner basis computed is [y**3 + x - y, x**2 + y**2 - 1.00000000000000, x*y - 1.00000000000000].\n\nThe result p from elim_pol is y**4 - y**2 + 1.0. (This reflects the bugfix I identified above; it used to return y**4-y**2.)\n\nThe first factor q of p is y - 0.866025403784439 - 0.500000000000000*I.\n\nThe reduction of B modulo q gives us\n\n[x - 0.866025403784438 + 0.500000000000001*I,\n x**2 - 0.499999999999999 + 0.866025403784439*I,\n (0.866025403784439 + 0.500000000000000*I)*x - 1.00000000000000]\n\n**This should be a consistent system:** the first polynomial is a factor of the second, and the solution to the third is *nearly* the same as the solution to the first: 0.866025403784438 - 0.500000000000001*I vs. 0.866025403784438 - 0.500000000000000*I. This appears to be a roundoff/floating point error.\n\nThe system above should produce a Groebner basis with one polynomial, but it returns [1.00000000000000] instead. This is why nothing is coming back for x. Anyone know how to fix it?",
+    "created_at": "2009-08-21T22:43:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5958",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47177",
+    "user": "john_perry"
+}
+```
 
 Sorry for the repost, but I had some superscript typos in the previou.
 
@@ -230,21 +391,43 @@ The reduction of B modulo q gives us
  x**2 - 0.499999999999999 + 0.866025403784439*I,
  (0.866025403784439 + 0.500000000000000*I)*x - 1.00000000000000]
 
-*This should be a consistent system:* the first polynomial is a factor of the second, and the solution to the third is _nearly_ the same as the solution to the first: 0.866025403784438 - 0.500000000000001*I vs. 0.866025403784438 - 0.500000000000000*I. This appears to be a roundoff/floating point error.
+**This should be a consistent system:** the first polynomial is a factor of the second, and the solution to the third is *nearly* the same as the solution to the first: 0.866025403784438 - 0.500000000000001*I vs. 0.866025403784438 - 0.500000000000000*I. This appears to be a roundoff/floating point error.
 
 The system above should produce a Groebner basis with one polynomial, but it returns [1.00000000000000] instead. This is why nothing is coming back for x. Anyone know how to fix it?
 
 
+
 ---
 
-Comment by malb created at 2009-08-24 11:54:44
+archive/issue_comments_047178.json:
+```json
+{
+    "body": "Well, we should probably just disallow computing a GB over CC anyway, it doesn't really make sense because CC is not realy a field.",
+    "created_at": "2009-08-24T11:54:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5958",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47178",
+    "user": "malb"
+}
+```
 
 Well, we should probably just disallow computing a GB over CC anyway, it doesn't really make sense because CC is not realy a field.
 
 
+
 ---
 
-Comment by john_perry created at 2009-08-24 17:49:11
+archive/issue_comments_047179.json:
+```json
+{
+    "body": "You mean CC as implemented, not CC in theory?\n\nI could insert a test for whether the field is CC, and if so raise an exception. That said, the roots we're looking for are algebraic, and so can be described symbolically; i.e., without floating point. So if the polynomial starts from QQ, one could in theory construct the roots. Should the exception just reject the user's input, advise the user to try an extension field, or try to construct one itself?\n\nIs this something I should ask about on sage-devel?",
+    "created_at": "2009-08-24T17:49:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5958",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47179",
+    "user": "john_perry"
+}
+```
 
 You mean CC as implemented, not CC in theory?
 
@@ -253,61 +436,164 @@ I could insert a test for whether the field is CC, and if so raise an exception.
 Is this something I should ask about on sage-devel?
 
 
+
 ---
 
-Comment by malb created at 2009-08-24 17:55:40
+archive/issue_comments_047180.json:
+```json
+{
+    "body": "Yes, I mean fixed precision floating point numbers. We could just print a warning? Even if the solutions are algebraic the rounding errors can cause a zero to look like a one.",
+    "created_at": "2009-08-24T17:55:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5958",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47180",
+    "user": "malb"
+}
+```
 
 Yes, I mean fixed precision floating point numbers. We could just print a warning? Even if the solutions are algebraic the rounding errors can cause a zero to look like a one.
 
 
+
 ---
+
+archive/issue_comments_047181.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-08-26T17:31:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5958",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47181",
+    "user": "john_perry"
+}
+```
 
 Attachment
 
 
----
-
-Comment by john_perry created at 2009-08-26 17:33:18
-
-The uploaded patch should incorporate Martin's changes _and_ should also provide a warning if the field is CC. I'd still like to find a way to make it work in CC, though.
-
 
 ---
 
-Comment by malb created at 2009-08-26 17:57:49
+archive/issue_comments_047182.json:
+```json
+{
+    "body": "The uploaded patch should incorporate Martin's changes *and* should also provide a warning if the field is CC. I'd still like to find a way to make it work in CC, though.",
+    "created_at": "2009-08-26T17:33:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5958",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47182",
+    "user": "john_perry"
+}
+```
+
+The uploaded patch should incorporate Martin's changes *and* should also provide a warning if the field is CC. I'd still like to find a way to make it work in CC, though.
+
+
+
+---
+
+archive/issue_comments_047183.json:
+```json
+{
+    "body": "The patch looks good, applies cleanly against 4.1.1 and doctests pass on 64-bit Linux (sage.math). There might be a numerical noise issue (see above) which needs to be addressed.",
+    "created_at": "2009-08-26T17:57:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5958",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47183",
+    "user": "malb"
+}
+```
 
 The patch looks good, applies cleanly against 4.1.1 and doctests pass on 64-bit Linux (sage.math). There might be a numerical noise issue (see above) which needs to be addressed.
 
 
+
 ---
 
-Comment by malb created at 2009-08-26 18:04:45
+archive/issue_comments_047184.json:
+```json
+{
+    "body": "Ah, the doctest needs a `::` prepended otherwise, it won't be run.",
+    "created_at": "2009-08-26T18:04:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5958",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47184",
+    "user": "malb"
+}
+```
 
 Ah, the doctest needs a `::` prepended otherwise, it won't be run.
 
 
+
 ---
 
-Comment by john_perry created at 2009-08-26 18:48:03
+archive/issue_comments_047185.json:
+```json
+{
+    "body": "which doctest? are you talking about line 1848 of multi_polynomial_ideal.py?",
+    "created_at": "2009-08-26T18:48:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5958",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47185",
+    "user": "john_perry"
+}
+```
 
 which doctest? are you talking about line 1848 of multi_polynomial_ideal.py?
 
 
+
 ---
 
-Comment by malb created at 2009-08-26 19:15:31
+archive/issue_comments_047186.json:
+```json
+{
+    "body": "Yes, the doctest starting at 1851.",
+    "created_at": "2009-08-26T19:15:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5958",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47186",
+    "user": "malb"
+}
+```
 
 Yes, the doctest starting at 1851.
 
 
+
 ---
 
-Comment by john_perry created at 2009-08-26 20:48:18
+archive/issue_comments_047187.json:
+```json
+{
+    "body": "apply over variety_CC.patch",
+    "created_at": "2009-08-26T20:48:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5958",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47187",
+    "user": "john_perry"
+}
+```
 
 apply over variety_CC.patch
 
 
+
 ---
+
+archive/issue_comments_047188.json:
+```json
+{
+    "body": "Attachment\n\nOkay, double colons on that file. They aren't prepended to the example, though; they appear at the end of line 1849 in the same way as at the end of 1831.\n\nPLEASE tell me this is okay now. Fixing this drove me crazy with hg...",
+    "created_at": "2009-08-26T20:50:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5958",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47188",
+    "user": "john_perry"
+}
+```
 
 Attachment
 
@@ -316,67 +602,166 @@ Okay, double colons on that file. They aren't prepended to the example, though; 
 PLEASE tell me this is okay now. Fixing this drove me crazy with hg...
 
 
+
 ---
 
-Comment by malb created at 2009-08-26 21:06:00
+archive/issue_comments_047189.json:
+```json
+{
+    "body": "Yes, thats correct this way. However, I expect the doctest will now fail on 32-bit systems (it wasn't run before).",
+    "created_at": "2009-08-26T21:06:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5958",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47189",
+    "user": "malb"
+}
+```
 
 Yes, thats correct this way. However, I expect the doctest will now fail on 32-bit systems (it wasn't run before).
 
 
+
 ---
 
-Comment by john_perry created at 2009-08-26 22:51:56
+archive/issue_comments_047190.json:
+```json
+{
+    "body": "I believe that my system is running as a 32-bit system. I know that Linux is running as 32-bit; does sage run differently?",
+    "created_at": "2009-08-26T22:51:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5958",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47190",
+    "user": "john_perry"
+}
+```
 
 I believe that my system is running as a 32-bit system. I know that Linux is running as 32-bit; does sage run differently?
 
 
+
 ---
 
-Comment by malb created at 2009-08-26 23:37:02
+archive/issue_comments_047191.json:
+```json
+{
+    "body": "No, if your Linux is 32-bit then your Sage is 32-bit :)",
+    "created_at": "2009-08-26T23:37:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5958",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47191",
+    "user": "malb"
+}
+```
 
 No, if your Linux is 32-bit then your Sage is 32-bit :)
 
 
+
 ---
 
-Comment by john_perry created at 2009-08-27 00:28:42
+archive/issue_comments_047192.json:
+```json
+{
+    "body": "still no positive review then? :-( what's still needed?",
+    "created_at": "2009-08-27T00:28:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5958",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47192",
+    "user": "john_perry"
+}
+```
 
 still no positive review then? :-( what's still needed?
 
 
+
 ---
 
-Comment by malb created at 2009-08-27 09:33:17
+archive/issue_comments_047193.json:
+```json
+{
+    "body": "Sorry, here we go.",
+    "created_at": "2009-08-27T09:33:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5958",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47193",
+    "user": "malb"
+}
+```
 
 Sorry, here we go.
 
 
+
 ---
 
-Comment by mvngu created at 2009-08-30 10:40:06
+archive/issue_comments_047194.json:
+```json
+{
+    "body": "Which patches should be applied and in what order? The patch `variety_CC.patch` contains all changes made in `mpoly_factor_proof.patch`. Does that mean `mpoly_factor_proof.patch` can be left out?",
+    "created_at": "2009-08-30T10:40:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5958",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47194",
+    "user": "mvngu"
+}
+```
 
 Which patches should be applied and in what order? The patch `variety_CC.patch` contains all changes made in `mpoly_factor_proof.patch`. Does that mean `mpoly_factor_proof.patch` can be left out?
 
 
+
 ---
 
-Comment by malb created at 2009-08-30 11:43:26
+archive/issue_comments_047195.json:
+```json
+{
+    "body": "Indeed, only `variety_CC.patch` and `variety_CC2.patch` should be applied.",
+    "created_at": "2009-08-30T11:43:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5958",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47195",
+    "user": "malb"
+}
+```
 
 Indeed, only `variety_CC.patch` and `variety_CC2.patch` should be applied.
 
 
+
 ---
 
-Comment by mvngu created at 2009-08-30 12:09:06
+archive/issue_comments_047196.json:
+```json
+{
+    "body": "John -- Please remember to put a sensible commit message in your patch. It's recommended that you reference the ticket number in the commit message. Merged patches in this order:\n\n1. `variety_CC.patch`\n2. `variety_CC2.patch`",
+    "created_at": "2009-08-30T12:09:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5958",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47196",
+    "user": "mvngu"
+}
+```
 
 John -- Please remember to put a sensible commit message in your patch. It's recommended that you reference the ticket number in the commit message. Merged patches in this order:
 
- 1. `variety_CC.patch`
- 1. `variety_CC2.patch`
+1. `variety_CC.patch`
+2. `variety_CC2.patch`
+
 
 
 ---
 
-Comment by mvngu created at 2009-08-30 12:09:06
+archive/issue_comments_047197.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-08-30T12:09:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5958",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5958#issuecomment-47197",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

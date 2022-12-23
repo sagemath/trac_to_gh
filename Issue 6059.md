@@ -1,11 +1,21 @@
 # Issue 6059: speed regresion in hilbert_symbol after #5834
 
-Issue created by migration from https://trac.sagemath.org/ticket/6059
-
-Original creator: tornaria
-
-Original creation time: 2009-05-17 22:54:54
-
+archive/issues_006059.json:
+```json
+{
+    "body": "Assignee: tornaria\n\nCC:  cremona\n\nKeywords: regression\n\nThe following hilbert symbol computation\n\n```\nsage: a=(next_prime(10**22)*next_prime(10**23))\nsage: time hilbert_symbol(a,-1,2)\nCPU times: user 0.62 s, sys: 0.06 s, total: 0.68 s\nWall time: 0.68 s\n1\n```\n\nused to be almost instant before the patch in #5834 (in 4.0.alpha0).\n\nThe patch extends hilbert_symbol to work with rationals, by using the `squarefree_part()` function. However, that function needs to factor. Fortunately, we don't need the actual squarefree part to compute the hilbert symbol, rather we could use `numerator()*denominator()` to achieve the same result; the hilbert symbol can thus be computed without factoring.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6059\n\n",
+    "created_at": "2009-05-17T22:54:54Z",
+    "labels": [
+        "number theory",
+        "major",
+        "bug"
+    ],
+    "title": "speed regresion in hilbert_symbol after #5834",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6059",
+    "user": "tornaria"
+}
+```
 Assignee: tornaria
 
 CC:  cremona
@@ -27,24 +37,63 @@ used to be almost instant before the patch in #5834 (in 4.0.alpha0).
 The patch extends hilbert_symbol to work with rationals, by using the `squarefree_part()` function. However, that function needs to factor. Fortunately, we don't need the actual squarefree part to compute the hilbert symbol, rather we could use `numerator()*denominator()` to achieve the same result; the hilbert symbol can thus be computed without factoring.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6059
+
+
+
+
 
 ---
 
-Comment by tornaria created at 2009-05-18 02:44:53
+archive/issue_comments_048240.json:
+```json
+{
+    "body": "Since this fixes a speed regression, and the patch is really simple, I think it's good if it can make it into 4.0.",
+    "created_at": "2009-05-18T02:44:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6059",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6059#issuecomment-48240",
+    "user": "tornaria"
+}
+```
 
 Since this fixes a speed regression, and the patch is really simple, I think it's good if it can make it into 4.0.
 
 
+
 ---
+
+archive/issue_comments_048241.json:
+```json
+{
+    "body": "Attachment\n\nFix speed regression in hilbert_symbol (revised)",
+    "created_at": "2009-05-18T03:15:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6059",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6059#issuecomment-48241",
+    "user": "tornaria"
+}
+```
 
 Attachment
 
 Fix speed regression in hilbert_symbol (revised)
 
 
+
 ---
 
-Comment by tornaria created at 2009-05-18 03:33:53
+archive/issue_comments_048242.json:
+```json
+{
+    "body": "I screwed it up the first version, because I was trying to avoid overhead. The original code, good for integers only (before #5834) was:\n\n```\na = ZZ(a)\n```\n\nMy first version was\n\n```\na = ZZ(a.numerator() * a.denominator())\n```\n\nwhich breaks when `a` is a (python) `int`. The new version is\n\n```\na = QQ(a).numerator() * QQ(a).denominator()\n```\n\nwhich should be safe for all purposes (my first version was in between).\n\nIndeed, I'm a bit concerned about overhead. Compare the trivial\n\n```\nsage: timeit(\"hilbert_symbol(1,1,-1)\")\n625 loops, best of 3: 10.3 \u00b5s per loop\n```\n\nusing the original code (only good for integers) vs.\n\n```\nsage: timeit(\"hilbert_symbol(1,1,-1)\")\n625 loops, best of 3: 19.1 \u00b5s per loop\n```\n\nwith the new code (good for rationals).\n\nAnd check out the speed of the actual computation:\n\n```\nsage: a = ZZ.random_element(10^50)\nsage: b = ZZ.random_element(10^50)\nsage: p = next_prime(ZZ.random_element(10^50))\nsage: timeit(\"pari(a).hilbert(b,p)\")\n625 loops, best of 3: 3.13 \u00b5s per loop\n```\n\n\nIs there a standard/suggested way of writing the preamble of a function (where parameters are checked, coerced, etc) to minimize overhead in a fast path?\n(I guess this is what one buys with a dynamic language... and moving this to cython could help if really necessary).",
+    "created_at": "2009-05-18T03:33:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6059",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6059#issuecomment-48242",
+    "user": "tornaria"
+}
+```
 
 I screwed it up the first version, because I was trying to avoid overhead. The original code, good for integers only (before #5834) was:
 
@@ -97,18 +146,40 @@ Is there a standard/suggested way of writing the preamble of a function (where p
 (I guess this is what one buys with a dynamic language... and moving this to cython could help if really necessary).
 
 
+
 ---
 
-Comment by cremona created at 2009-05-18 09:12:23
+archive/issue_comments_048243.json:
+```json
+{
+    "body": "Looks good to me.  Sorry about the regression which was my fault.  I needed an integer in the same square class as a (and b) and did the obvious thing without thinking about the conseqences regarding factorization.\n\nWould it be better to check for integrality, since if a and b are integral then using ZZ(a), ZZ(b) would save the conversion to rational and back?  i.e. do something like try: a=ZZ(a); b=ZZ(b) first.",
+    "created_at": "2009-05-18T09:12:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6059",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6059#issuecomment-48243",
+    "user": "cremona"
+}
+```
 
 Looks good to me.  Sorry about the regression which was my fault.  I needed an integer in the same square class as a (and b) and did the obvious thing without thinking about the conseqences regarding factorization.
 
 Would it be better to check for integrality, since if a and b are integral then using ZZ(a), ZZ(b) would save the conversion to rational and back?  i.e. do something like try: a=ZZ(a); b=ZZ(b) first.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-18 15:54:15
+archive/issue_comments_048244.json:
+```json
+{
+    "body": "Merged in Sage 4.0.rc0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-05-18T15:54:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6059",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6059#issuecomment-48244",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 4.0.rc0.
 
@@ -117,8 +188,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-18 15:54:15
+archive/issue_comments_048245.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-05-18T15:54:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6059",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6059#issuecomment-48245",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

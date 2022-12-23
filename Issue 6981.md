@@ -1,11 +1,21 @@
 # Issue 6981: include 64-bit OS X gfortran in standard SAge
 
-Issue created by migration from https://trac.sagemath.org/ticket/6981
-
-Original creator: was
-
-Original creation time: 2009-09-22 01:42:38
-
+archive/issues_006981.json:
+```json
+{
+    "body": "Assignee: tbd\n\nThis will make the tarball bigger (by 24MB), but is the only way to go at present.   With this one spkg update, building Sage 64-bit on OS X will be as simple as typing:\n\n\n```\nexport SAGE64=\"yes\"\nmake\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6981\n\n",
+    "created_at": "2009-09-22T01:42:38Z",
+    "labels": [
+        "build",
+        "blocker",
+        "bug"
+    ],
+    "title": "include 64-bit OS X gfortran in standard SAge",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6981",
+    "user": "was"
+}
+```
 Assignee: tbd
 
 This will make the tarball bigger (by 24MB), but is the only way to go at present.   With this one spkg update, building Sage 64-bit on OS X will be as simple as typing:
@@ -19,19 +29,45 @@ make
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6981
+
+
+
+
 
 ---
 
-Comment by was created at 2009-09-22 02:11:01
+archive/issue_comments_057732.json:
+```json
+{
+    "body": "The spkg is here:\n\n  http://sage.math.washington.edu/home/wstein/patches/fortran-20071120.p6.spkg",
+    "created_at": "2009-09-22T02:11:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6981#issuecomment-57732",
+    "user": "was"
+}
+```
 
 The spkg is here:
 
   http://sage.math.washington.edu/home/wstein/patches/fortran-20071120.p6.spkg
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-09-22 04:11:56
+archive/issue_comments_057733.json:
+```json
+{
+    "body": "For the 64-bit version, is there a reason to copy a big bzipped tar file to SAGE_LOCAL?  If not, then I think that in the file [{{/src/gfortran/fortran-OSX64-20090120/spkg-install}}}, the lines\n\n```\ncp src/gfortran-4.2.3.tar.bz2 $SAGE_LOCAL\ncd $SAGE_LOCAL; tar -xjf gfortran-4.2.3.tar.bz2 -C .\n```\n\nshould be changed to something like\n\n```\ncd $SAGE_LOCAL; tar -xjf $CUR/gfortran-4.2.3.tar.bz2 -C .\n```\n\nAlso, there should be a message about the 64-bit version being installed: in the main spkg-install file, the function `install_fortran_osx64` could start with a message like\n\n```\nprint \"Installing OSX 64-bit gfortran compiler\"\n```\n\nSome people who are sticklers might complain about the format of SPGK.txt, but I don't care that much.",
+    "created_at": "2009-09-22T04:11:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6981#issuecomment-57733",
+    "user": "jhpalmieri"
+}
+```
 
 For the 64-bit version, is there a reason to copy a big bzipped tar file to SAGE_LOCAL?  If not, then I think that in the file [{{/src/gfortran/fortran-OSX64-20090120/spkg-install}}}, the lines
 
@@ -55,16 +91,38 @@ print "Installing OSX 64-bit gfortran compiler"
 Some people who are sticklers might complain about the format of SPGK.txt, but I don't care that much.
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-22 07:18:00
+archive/issue_comments_057734.json:
+```json
+{
+    "body": "Changing component from build to packages.",
+    "created_at": "2009-09-22T07:18:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6981#issuecomment-57734",
+    "user": "mvngu"
+}
+```
 
 Changing component from build to packages.
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-22 07:18:00
+archive/issue_comments_057735.json:
+```json
+{
+    "body": "Replying to [comment:2 jhpalmieri]:\n> For the 64-bit version, is there a reason to copy a big bzipped tar file to SAGE_LOCAL?  If not, then I think that in the file [{{/src/gfortran/fortran-OSX64-20090120/spkg-install}}}, the lines\n> {{{\n> cp src/gfortran-4.2.3.tar.bz2 $SAGE_LOCAL\n> cd $SAGE_LOCAL; tar -xjf gfortran-4.2.3.tar.bz2 -C .\n> }}}\n> should be changed to something like\n> {{{\n> cd $SAGE_LOCAL; tar -xjf $CUR/gfortran-4.2.3.tar.bz2 -C .\n> }}}\nDone. I have added your reviewer comment to `src/gfortran/fortran-OSX64-20090120/spkg-install` and committed this change in your name.\n\n\n\n\n> Also, there should be a message about the 64-bit version being installed: in the main spkg-install file, the function `install_fortran_osx64` could start with a message like\n> {{{\n> print \"Installing OSX 64-bit gfortran compiler\"\n> }}}\nDone. This line is now in the main `spkg-install`. The change has been committed in your name.\n\n\n\n\n\n> Some people who are sticklers might complain about the format of SPGK.txt, but I don't care that much.\nAlso taken care of. An updated spkg with reviewer changes can be found at\n\nhttp://sage.math.washington.edu/home/mvngu/release/spkg/standard/fortran-20071120.p6.spkg\n\nI'm reviewing the actual building of that package now. You're more than welcome to try building Sage 4.1.2.alpha2 from source with this updated Fortran package. The more the merrier :-)",
+    "created_at": "2009-09-22T07:18:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6981#issuecomment-57735",
+    "user": "mvngu"
+}
+```
 
 Replying to [comment:2 jhpalmieri]:
 > For the 64-bit version, is there a reason to copy a big bzipped tar file to SAGE_LOCAL?  If not, then I think that in the file [{{/src/gfortran/fortran-OSX64-20090120/spkg-install}}}, the lines
@@ -99,16 +157,38 @@ http://sage.math.washington.edu/home/mvngu/release/spkg/standard/fortran-2007112
 I'm reviewing the actual building of that package now. You're more than welcome to try building Sage 4.1.2.alpha2 from source with this updated Fortran package. The more the merrier :-)
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-22 07:18:00
+archive/issue_comments_057736.json:
+```json
+{
+    "body": "Changing assignee from tbd to mabshoff.",
+    "created_at": "2009-09-22T07:18:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6981#issuecomment-57736",
+    "user": "mvngu"
+}
+```
 
 Changing assignee from tbd to mabshoff.
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-22 07:32:08
+archive/issue_comments_057737.json:
+```json
+{
+    "body": "Replying to [comment:2 jhpalmieri]:\n> For the 64-bit version, is there a reason to copy a big bzipped tar file to SAGE_LOCAL?  If not, then I think that in the file [{{/src/gfortran/fortran-OSX64-20090120/spkg-install}}}, the lines\n> {{{\n> cp src/gfortran-4.2.3.tar.bz2 $SAGE_LOCAL\n> cd $SAGE_LOCAL; tar -xjf gfortran-4.2.3.tar.bz2 -C .\n> }}}\n> should be changed to something like\n> {{{\n> cd $SAGE_LOCAL; tar -xjf $CUR/gfortran-4.2.3.tar.bz2 -C .\n> }}}\nThis results in the following error:\n\n```\ntar (child): /Volumes/LACIE/scratch/mvngu/sandbox-32/sage-4.1.2.alpha2/spkg/build/fortran-20071120.p6/src/gfortran/fortran-OSX64-20090120/gfortran-4.2.3.tar.bz2: Cannot open: No such file or directory\ntar (child): Error is not recoverable: exiting now\ntar: Child returned status 2\ntar: Error exit delayed from previous errors\nInstalling OS X 64-bit gfortran compiler\n\n\n\n\n\n\n**********************************************************************\n\n\n\n\n\n\nError installing Fortran: Error installing OS X 64-bit gfortran\n```\n\nThe actual command should be \n\n```\ncd $SAGE_LOCAL; tar -xjf $CUR/src/gfortran-4.2.3.tar.bz2 -C .\n```\n\nNotice the \"src\" part. The updated spkg includes this fix.",
+    "created_at": "2009-09-22T07:32:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6981#issuecomment-57737",
+    "user": "mvngu"
+}
+```
 
 Replying to [comment:2 jhpalmieri]:
 > For the 64-bit version, is there a reason to copy a big bzipped tar file to SAGE_LOCAL?  If not, then I think that in the file [{{/src/gfortran/fortran-OSX64-20090120/spkg-install}}}, the lines
@@ -153,9 +233,20 @@ cd $SAGE_LOCAL; tar -xjf $CUR/src/gfortran-4.2.3.tar.bz2 -C .
 Notice the "src" part. The updated spkg includes this fix.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-09-22 14:52:56
+archive/issue_comments_057738.json:
+```json
+{
+    "body": "Mac OS 10.5: open a new terminal (and doublecheck that SAGE64 is not set).  Untar sage-4.1.2.alpha2 and replace the fortran package there with the new one.  Type 'make' and wait: I see\n\n```\nInstalling OS X 64-bit gfortran compiler\n```\n\nI don't know why...",
+    "created_at": "2009-09-22T14:52:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6981#issuecomment-57738",
+    "user": "jhpalmieri"
+}
+```
 
 Mac OS 10.5: open a new terminal (and doublecheck that SAGE64 is not set).  Untar sage-4.1.2.alpha2 and replace the fortran package there with the new one.  Type 'make' and wait: I see
 
@@ -166,16 +257,38 @@ Installing OS X 64-bit gfortran compiler
 I don't know why...
 
 
+
 ---
 
-Comment by was created at 2009-09-22 15:03:36
+archive/issue_comments_057739.json:
+```json
+{
+    "body": "New spkg up here: http://sage.math.washington.edu/home/wstein/patches/fortran-20071120.p7.spkg",
+    "created_at": "2009-09-22T15:03:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6981#issuecomment-57739",
+    "user": "was"
+}
+```
 
 New spkg up here: http://sage.math.washington.edu/home/wstein/patches/fortran-20071120.p7.spkg
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-09-22 15:29:59
+archive/issue_comments_057740.json:
+```json
+{
+    "body": "Almost perfect.  To make it perfect, I would like to see this change from mvngu's version re-incorporated:\n\n> Also, there should be a message about the 64-bit version being installed: in the main spkg-install file, the function install_fortran_osx64 could start with a message like\n\n```\nprint \"Installing OSX 64-bit gfortran compiler\"\n```\n",
+    "created_at": "2009-09-22T15:29:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6981#issuecomment-57740",
+    "user": "jhpalmieri"
+}
+```
 
 Almost perfect.  To make it perfect, I would like to see this change from mvngu's version re-incorporated:
 
@@ -187,32 +300,76 @@ print "Installing OSX 64-bit gfortran compiler"
 
 
 
+
 ---
 
-Comment by was created at 2009-09-22 15:31:55
+archive/issue_comments_057741.json:
+```json
+{
+    "body": "OK, I refreshed the spkg with that.",
+    "created_at": "2009-09-22T15:31:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6981#issuecomment-57741",
+    "user": "was"
+}
+```
 
 OK, I refreshed the spkg with that.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-09-22 15:40:17
+archive/issue_comments_057742.json:
+```json
+{
+    "body": "Looks good to me.  The SPKG.txt file isn't in the right format, but I don't care.",
+    "created_at": "2009-09-22T15:40:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6981#issuecomment-57742",
+    "user": "jhpalmieri"
+}
+```
 
 Looks good to me.  The SPKG.txt file isn't in the right format, but I don't care.
 
 
+
 ---
 
-Comment by was created at 2009-09-25 06:37:57
+archive/issue_comments_057743.json:
+```json
+{
+    "body": "I've made a major improvement to how this spkg detects \"64 bit\" so it will work when building Sage on OS X 10.6 without explicitly specifying SAGE64.  Instead of using that flag it simply checks the bitness of Python.  Without this we would get a 32-bit compiler, which is completely wrong. \n\n  New spkg: http://sage.math.washington.edu/home/wstein/patches/fortran-20071120.p8.spkg",
+    "created_at": "2009-09-25T06:37:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6981#issuecomment-57743",
+    "user": "was"
+}
+```
 
 I've made a major improvement to how this spkg detects "64 bit" so it will work when building Sage on OS X 10.6 without explicitly specifying SAGE64.  Instead of using that flag it simply checks the bitness of Python.  Without this we would get a 32-bit compiler, which is completely wrong. 
 
   New spkg: http://sage.math.washington.edu/home/wstein/patches/fortran-20071120.p8.spkg
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-27 00:11:41
+archive/issue_comments_057744.json:
+```json
+{
+    "body": "New spkg up at\n\nhttp://sage.math.washington.edu/home/mvngu/release/spkg/standard/fortran-20071120.p9.spkg\n\nThe only changes from .p8 are:\n\n* remove junk files: `spkg-install~` and `SPKG.txt~`\n* add info to SPKG.txt",
+    "created_at": "2009-09-27T00:11:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6981#issuecomment-57744",
+    "user": "mvngu"
+}
+```
 
 New spkg up at
 
@@ -220,26 +377,59 @@ http://sage.math.washington.edu/home/mvngu/release/spkg/standard/fortran-2007112
 
 The only changes from .p8 are:
 
- * remove junk files: `spkg-install~` and `SPKG.txt~`
- * add info to SPKG.txt
+* remove junk files: `spkg-install~` and `SPKG.txt~`
+* add info to SPKG.txt
+
 
 
 ---
 
-Comment by mvngu created at 2009-09-27 02:32:55
+archive/issue_comments_057745.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-09-27T02:32:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6981#issuecomment-57745",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-27 02:32:55
+archive/issue_comments_057746.json:
+```json
+{
+    "body": "See palmieri's and my reports at #6849.",
+    "created_at": "2009-09-27T02:32:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6981#issuecomment-57746",
+    "user": "mvngu"
+}
+```
 
 See palmieri's and my reports at #6849.
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-27 10:57:30
+archive/issue_comments_057747.json:
+```json
+{
+    "body": "There is no 4.1.2.alpha3. Sage 4.1.2.alpha3 was William Stein's release for working on making the notebook a standalone package.",
+    "created_at": "2009-09-27T10:57:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6981",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6981#issuecomment-57747",
+    "user": "mvngu"
+}
+```
 
 There is no 4.1.2.alpha3. Sage 4.1.2.alpha3 was William Stein's release for working on making the notebook a standalone package.

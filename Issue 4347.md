@@ -1,11 +1,21 @@
 # Issue 4347: generalized bernoulli numbers -- massively optimize
 
-Issue created by migration from https://trac.sagemath.org/ticket/4347
-
-Original creator: was
-
-Original creation time: 2008-10-23 16:25:31
-
+archive/issues_004347.json:
+```json
+{
+    "body": "Assignee: was\n\nThere is a simple algorithm to massively optimize computation of generalized bernoulli numbers.  This needs to be in Sage and replace the current stupid algorithm.\n\n\n```\nAlready in sage for any character chi you can do\n\n        chi.bernoulli(k)\n\nAmusingly since the B_k (no character) are so fast, and\nthere is a relation between them and the B_{k,chi}, there\nis a 5-line algorithm (see below) for computing B_{k,chi}\nthat with the worst implementation is still way faster than\nSage's built-in chi.bernoulli(k).\n\nFrom page 656 of Cohen:\n\ndef S(n,chi):\n return sum(chi(r)*r^n for r in [0..chi.modulus()-1])\n\ndef bern(k,chi):\n m = chi.modulus()\n return sum([binomial(k,j) * bernoulli(j)*m^(j-1)*S(k-j,chi) for j\nin [0..k]])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4347\n\n",
+    "created_at": "2008-10-23T16:25:31Z",
+    "labels": [
+        "number theory",
+        "major",
+        "enhancement"
+    ],
+    "title": "generalized bernoulli numbers -- massively optimize",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4347",
+    "user": "was"
+}
+```
 Assignee: was
 
 There is a simple algorithm to massively optimize computation of generalized bernoulli numbers.  This needs to be in Sage and replace the current stupid algorithm.
@@ -34,15 +44,43 @@ in [0..k]])
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4347
+
+
+
+
 
 ---
+
+archive/issue_comments_031932.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-10-24T01:44:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4347",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4347#issuecomment-31932",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2008-10-24 01:45:46
+archive/issue_comments_031933.json:
+```json
+{
+    "body": "The attached patch massively speeds things up. For example in this example the new code is over TWO HUNDRED times faster!\n\n\n```\nsage: eps = DirichletGroup(9).0\nsage: time s = eps.bernoulli(197, cache=False)\nCPU time: 0.04 s,  Wall time: 0.04 s\nsage: time s = eps.bernoulli(197, cache=False, algorithm='definition')\nCPU time: 8.27 s,  Wall time: 8.50 s\nsage: 8.27/0.04\n206.750000000000\n```\n",
+    "created_at": "2008-10-24T01:45:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4347",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4347#issuecomment-31933",
+    "user": "was"
+}
+```
 
 The attached patch massively speeds things up. For example in this example the new code is over TWO HUNDRED times faster!
 
@@ -59,9 +97,20 @@ sage: 8.27/0.04
 
 
 
+
 ---
 
-Comment by AlexGhitza created at 2008-10-25 22:28:27
+archive/issue_comments_031934.json:
+```json
+{
+    "body": "I'm seeing doctest failures in sage/modular/ in both 3.1.4 and 3.2.alpha0, namely:\n\n\n```\nThe following tests failed:\n\n\n\tsage -t  3.1.4/devel/sage-main/sage/modular/modform/eisenstein_submodule.py\n\tsage -t  3.1.4/devel/sage-main/sage/modular/modform/space.py\n\tsage -t  3.1.4/devel/sage-main/sage/modular/modform/hecke_operator_on_qexp.py\n\tsage -t  3.1.4/devel/sage-main/sage/modular/modform/ambient.py\n\tsage -t  3.1.4/devel/sage-main/sage/modular/modform/element.py\nTotal time for all tests: 285.7 seconds\n```\n\n\nFor example:\n\n\n```\n[ghitza@artin sage]$ sage -t modular/modform/eisenstein_submodule.py \nsage -t  3.1.4/devel/sage-main/sage/modular/modform/eisenstein_submodule.py\n**********************************************************************\nFile \"/opt/sage/tmp/eisenstein_submodule.py\", line 263:\n    sage: EisensteinForms(22,4)._compute_q_expansion_basis(6)\nExpected:\n    [1 + O(q^6),\n    q + 28*q^3 - 8*q^4 + 126*q^5 + O(q^6),\n    q^2 + 9*q^4 + O(q^6),\n    O(q^6)]\nGot:\n    [O(q^6), O(q^6), O(q^6), O(q^6)]\n**********************************************************************\nFile \"/opt/sage/tmp/eisenstein_submodule.py\", line 268:\n    sage: EisensteinForms(22,4)._compute_q_expansion_basis(15)\nExpected:\n    [1 + O(q^15),\n    q + 28*q^3 - 8*q^4 + 126*q^5 + 344*q^7 - 72*q^8 + 757*q^9 - 224*q^12 + 2198*q^13 + O(q^15),\n    q^2 + 9*q^4 + 28*q^6 + 73*q^8 + 126*q^10 + 252*q^12 + 344*q^14 + O(q^15),\n    q^11 + O(q^15)]\nGot:\n    [O(q^15), O(q^15), O(q^15), O(q^15)]\n**********************************************************************\nFile \"/opt/sage/tmp/eisenstein_submodule.py\", line 310:\n    sage: (11*E.0 + 3*E.1).q_expansion(20)\nExpected:\n    11 + 3*q + 27*q^2 + 84*q^3 + 219*q^4 + 378*q^5 + 756*q^6 + 1032*q^7 + 1755*q^8 + 2271*q^9 + 3402*q^10 + 3996*q^11 + 6132*q^12 + 6594*q^13 + 9288*q^14 + 10584*q^15 + 14043*q^16 + 17379*q^17 + 20439*q^18 + 20580*q^19 + O(q^20)\nGot:\n    O(q^20)\n**********************************************************************\nFile \"/opt/sage/tmp/eisenstein_submodule.py\", line 312:\n    sage: E._q_expansion([0,0,0,0,11,3],20)\nExpected:\n    11 + 3*q + 27*q^2 + 84*q^3 + 219*q^4 + 378*q^5 + 756*q^6 + 1032*q^7 + 1755*q^8 + 2271*q^9 + 3402*q^10 + 3996*q^11 + 6132*q^12 + 6594*q^13 + 9288*q^14 + 10584*q^15 + 14043*q^16 + 17379*q^17 + 20439*q^18 + 20580*q^19 + O(q^20)\nGot:\n    O(q^20)\n**********************************************************************\nFile \"/opt/sage/tmp/eisenstein_submodule.py\", line 205:\n    sage: EisensteinForms(1,4).eisenstein_series()\nExpected:\n    [\n    1/240 + q + 9*q^2 + 28*q^3 + 73*q^4 + 126*q^5 + O(q^6)\n    ]\nGot:\n    [\n    O(q^6)\n    ]\n**********************************************************************\nFile \"/opt/sage/tmp/eisenstein_submodule.py\", line 209:\n    sage: EisensteinForms(1,24).eisenstein_series()\nExpected:\n    [\n    236364091/131040 + q + 8388609*q^2 + 94143178828*q^3 + 70368752566273*q^4 + 11920928955078126*q^5 + O(q^6)\n    ]\nGot:\n    [\n    O(q^6)\n    ]\n**********************************************************************\nFile \"/opt/sage/tmp/eisenstein_submodule.py\", line 213:\n    sage: EisensteinForms(5,4).eisenstein_series()\nExpected:\n    [\n    1/240 + q + 9*q^2 + 28*q^3 + 73*q^4 + 126*q^5 + O(q^6),\n    1/240 + q^5 + O(q^6)\n    ]\nGot:\n    [\n    O(q^6),\n    O(q^6)\n    ]\n**********************************************************************\n3 items had failures:\n   2 of   4 in __main__.example_10\n   2 of   5 in __main__.example_11\n   3 of  14 in __main__.example_9\n***Test Failed*** 7 failures.\nFor whitespace errors, see the file /opt/sage/tmp/.doctest_eisenstein_submodule.py\n\t [3.9 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  3.1.4/devel/sage-main/sage/modular/modform/eisenstein_submodule.py\nTotal time for all tests: 3.9 seconds\n```\n",
+    "created_at": "2008-10-25T22:28:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4347",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4347#issuecomment-31934",
+    "user": "AlexGhitza"
+}
+```
 
 I'm seeing doctest failures in sage/modular/ in both 3.1.4 and 3.2.alpha0, namely:
 
@@ -174,34 +223,91 @@ Total time for all tests: 3.9 seconds
 
 
 
+
 ---
 
-Comment by was created at 2008-10-26 23:16:36
+archive/issue_comments_031935.json:
+```json
+{
+    "body": "There was a bug in the modulus 1 case, which those doctests fortunately caught.  The second patch attached to this ticket fixes that.  Now all the doctests pass.",
+    "created_at": "2008-10-26T23:16:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4347",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4347#issuecomment-31935",
+    "user": "was"
+}
+```
 
 There was a bug in the modulus 1 case, which those doctests fortunately caught.  The second patch attached to this ticket fixes that.  Now all the doctests pass.
 
 
+
 ---
+
+archive/issue_comments_031936.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-10-26T23:17:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4347",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4347#issuecomment-31936",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by AlexGhitza created at 2008-10-27 00:57:43
+archive/issue_comments_031937.json:
+```json
+{
+    "body": "Great stuff!",
+    "created_at": "2008-10-27T00:57:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4347",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4347#issuecomment-31937",
+    "user": "AlexGhitza"
+}
+```
 
 Great stuff!
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-27 01:41:01
+archive/issue_comments_031938.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-10-27T01:41:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4347",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4347#issuecomment-31938",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-27 01:41:01
+archive/issue_comments_031939.json:
+```json
+{
+    "body": "Merged both patches in Sage 3.2.alpha1",
+    "created_at": "2008-10-27T01:41:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4347",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4347#issuecomment-31939",
+    "user": "mabshoff"
+}
+```
 
 Merged both patches in Sage 3.2.alpha1

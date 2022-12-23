@@ -1,11 +1,21 @@
 # Issue 8674: Comparison of combinatorial class of words with word paths is broken
 
-Issue created by migration from https://trac.sagemath.org/ticket/8674
-
-Original creator: slabbe
-
-Original creation time: 2010-04-11 14:17:52
-
+archive/issues_008674.json:
+```json
+{
+    "body": "Assignee: slabbe\n\nCC:  abmasse\n\nThis is fine :\n\n\n```\nsage: m = WordMorphism('a->adab,b->ab,c->cbcd,d->cd')\nsage: m.is_endomorphism()\nTrue\n```\n\n\nBut we would like the following to be an endomorphism as well:\n\n\n```\nsage: P = WordPaths('abcd')\nsage: m = WordMorphism('a->adab,b->ab,c->cbcd,d->cd', codomain=P)\nsage: m.is_endomorphism()\nFalse\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8674\n\n",
+    "created_at": "2010-04-11T14:17:52Z",
+    "labels": [
+        "combinatorics",
+        "major",
+        "bug"
+    ],
+    "title": "Comparison of combinatorial class of words with word paths is broken",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8674",
+    "user": "slabbe"
+}
+```
 Assignee: slabbe
 
 CC:  abmasse
@@ -31,36 +41,97 @@ False
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8674
+
+
+
+
 
 ---
 
-Comment by slabbe created at 2010-04-11 14:41:09
+archive/issue_comments_078933.json:
+```json
+{
+    "body": "Does not depend on any known patch. Applies on 4.3.4.",
+    "created_at": "2010-04-11T14:41:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8674",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8674#issuecomment-78933",
+    "user": "slabbe"
+}
+```
 
 Does not depend on any known patch. Applies on 4.3.4.
 
 
+
 ---
 
-Comment by slabbe created at 2010-04-11 14:41:40
+archive/issue_comments_078934.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-04-11T14:41:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8674",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8674#issuecomment-78934",
+    "user": "slabbe"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_078935.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-04-11T14:41:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8674",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8674#issuecomment-78935",
+    "user": "slabbe"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by abmasse created at 2010-04-17 16:03:54
+archive/issue_comments_078936.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_info.",
+    "created_at": "2010-04-17T16:03:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8674",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8674#issuecomment-78936",
+    "user": "abmasse"
+}
+```
 
 Changing status from needs_review to needs_info.
 
 
+
 ---
 
-Comment by abmasse created at 2010-04-17 16:03:54
+archive/issue_comments_078937.json:
+```json
+{
+    "body": "I understand that you want to correct the function `is_endormorphism`, but there is something strange about combinatorial class comparison.\n\nFor instance, I get the following:\n\n\n```\nsage: Words('ab') == WordPaths('ab')\nFalse\nsage: Words('ab') <= WordPaths('ab')\nTrue\nsage: Words('ab') >= WordPaths('ab')\nFalse\n```\n\n\nWouldn't we want\n\n\n```\nsage: Words('ab') == WordPaths('ab')\nTrue\n```\n\n\nor is there something I miss ?\n\nIf it is a problem, maybe it's not necessary to fix the `__eq__` operator now but do it in another ticket, but since you're at it...",
+    "created_at": "2010-04-17T16:03:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8674",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8674#issuecomment-78937",
+    "user": "abmasse"
+}
+```
 
 I understand that you want to correct the function `is_endormorphism`, but there is something strange about combinatorial class comparison.
 
@@ -91,16 +162,40 @@ or is there something I miss ?
 If it is a problem, maybe it's not necessary to fix the `__eq__` operator now but do it in another ticket, but since you're at it...
 
 
+
 ---
+
+archive/issue_comments_078938.json:
+```json
+{
+    "body": "Attachment\n\nApplies over the precedent patch",
+    "created_at": "2010-04-19T10:23:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8674",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8674#issuecomment-78938",
+    "user": "slabbe"
+}
+```
 
 Attachment
 
 Applies over the precedent patch
 
 
+
 ---
 
-Comment by slabbe created at 2010-04-19 10:30:43
+archive/issue_comments_078939.json:
+```json
+{
+    "body": "The second patch attached answers Alexandre's comments. The equality test is now \n\n* large for Words paths\n\n\n* considers the ordering of the alphabet\n\nwhich can be both discussed. But I think that what is proposed is an extension of what exist. If we want to change the behavior, it could be done in another ticket.\n\nNeeds review again.",
+    "created_at": "2010-04-19T10:30:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8674",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8674#issuecomment-78939",
+    "user": "slabbe"
+}
+```
 
 The second patch attached answers Alexandre's comments. The equality test is now 
 
@@ -114,23 +209,56 @@ which can be both discussed. But I think that what is proposed is an extension o
 Needs review again.
 
 
+
 ---
 
-Comment by slabbe created at 2010-04-19 10:30:43
+archive/issue_comments_078940.json:
+```json
+{
+    "body": "Changing status from needs_info to needs_review.",
+    "created_at": "2010-04-19T10:30:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8674",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8674#issuecomment-78940",
+    "user": "slabbe"
+}
+```
 
 Changing status from needs_info to needs_review.
 
 
+
 ---
 
-Comment by abmasse created at 2010-11-14 01:35:31
+archive/issue_comments_078941.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-11-14T01:35:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8674",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8674#issuecomment-78941",
+    "user": "abmasse"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by abmasse created at 2010-11-14 01:35:31
+archive/issue_comments_078942.json:
+```json
+{
+    "body": "Already 7 months !!!! Sorry again for the delay...\n\nI retested on sage-4.6 the two patches but I get a bunch of doctest failures. Were they already there or do they come from the fact that the patches were submitted seven months ago?\n\n\n```\nlabo [~/Applications/sage/devel/sage-t8674/sage/combinat/words]\n $ sage -t *\nsage -t  \"devel/sage-t8674/sage/combinat/words/__init__.py\" \n\t [0.1 s]\nsage -t  \"devel/sage-t8674/sage/combinat/words/abstract_word.py\"\n\t [2.6 s]\nsage -t  \"devel/sage-t8674/sage/combinat/words/all.py\"      \n\t [0.1 s]\nsage -t  \"devel/sage-t8674/sage/combinat/words/alphabet.py\" \n\t [2.4 s]\nsage -t  \"devel/sage-t8674/sage/combinat/words/finite_word.py\"\n\t [13.2 s]\nsage -t  \"devel/sage-t8674/sage/combinat/words/infinite_word.py\"\n\t [2.4 s]\nsage -t  \"devel/sage-t8674/sage/combinat/words/morphism.py\" \n**********************************************************************\nFile \"/Users/alexandre/Applications/sage/devel/sage-t8674/sage/combinat/words/morphism.py\", line 907:\n    sage: m.is_endomorphism()\nExpected:\n    True\nGot:\n    False\n**********************************************************************\n1 items had failures:\n   1 of  11 in __main__.example_17\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /Users/alexandre/.sage//tmp/.doctest_morphism.py\n\t [2.9 s]\nsage -t  \"devel/sage-t8674/sage/combinat/words/nfactor_enumerable_word.py\"\n\t [5.5 s]\nsage -t  \"devel/sage-t8674/sage/combinat/words/paths.py\"    \n\t [7.5 s]\nsage -t  \"devel/sage-t8674/sage/combinat/words/shuffle_product.py\"\n\t [2.5 s]\nsage -t  \"devel/sage-t8674/sage/combinat/words/suffix_trees.py\"\n\t [5.2 s]\nsage -t  \"devel/sage-t8674/sage/combinat/words/utils.py\"    \n\t [2.4 s]\nsage -t  \"devel/sage-t8674/sage/combinat/words/word.py\"     \n\t [2.5 s]\nsage -t  \"devel/sage-t8674/sage/combinat/words/word_content.py\"\n\t [2.5 s]\nsage -t  \"devel/sage-t8674/sage/combinat/words/word_datatypes.pyx\"\n\t [2.5 s]\nsage -t  \"devel/sage-t8674/sage/combinat/words/word_generators.py\"\n\t [7.9 s]\nsage -t  \"devel/sage-t8674/sage/combinat/words/word_infinite_datatypes.py\"\n\t [2.5 s]\nsage -t  \"devel/sage-t8674/sage/combinat/words/word_options.py\"\n\t [2.6 s]\nsage -t  \"devel/sage-t8674/sage/combinat/words/words.py\"    \n**********************************************************************\nFile \"/Users/alexandre/Applications/sage/devel/sage-t8674/sage/combinat/words/words.py\", line 690:\n    sage: WordPaths('abcd') != Words('abcd')\nExpected:\n    False\nGot:\n    True\n**********************************************************************\nFile \"/Users/alexandre/Applications/sage/devel/sage-t8674/sage/combinat/words/words.py\", line 692:\n    sage: Words('abcd') != WordPaths('abcd')\nExpected:\n    False\nGot:\n    True\n**********************************************************************\nFile \"/Users/alexandre/Applications/sage/devel/sage-t8674/sage/combinat/words/words.py\", line 925:\n    sage: WordPaths('abcd') <= Words('abcd')\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/Users/alexandre/Applications/sage/devel/sage-t8674/sage/combinat/words/words.py\", line 952:\n    sage: Words('abcd') >= WordPaths('abcd')\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/Users/alexandre/Applications/sage/devel/sage-t8674/sage/combinat/words/words.py\", line 437:\n    sage: type(z)\nExpected:\n    <class 'sage.combinat.words.word.FiniteWord_list'>\nGot:\n    <class 'sage.combinat.words.word.FiniteWord_str'>\n**********************************************************************\nFile \"/Users/alexandre/Applications/sage/devel/sage-t8674/sage/combinat/words/words.py\", line 661:\n    sage: WordPaths('abcd') == Words('abcd')\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/Users/alexandre/Applications/sage/devel/sage-t8674/sage/combinat/words/words.py\", line 663:\n    sage: Words('abcd') == WordPaths('abcd')\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/Users/alexandre/Applications/sage/devel/sage-t8674/sage/combinat/words/words.py\", line 667:\n    sage: WordPaths('bacd') == WordPaths('abcd')\nExpected:\n    False\nGot:\n    True\n**********************************************************************\n5 items had failures:\n   2 of   7 in __main__.example_10\n   1 of   7 in __main__.example_22\n   1 of   7 in __main__.example_23\n   1 of  63 in __main__.example_5\n   3 of  12 in __main__.example_9\n***Test Failed*** 8 failures.\nFor whitespace errors, see the file /Users/alexandre/.sage//tmp/.doctest_words.py\n\t [2.9 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  \"devel/sage-t8674/sage/combinat/words/morphism.py\"\n\tsage -t  \"devel/sage-t8674/sage/combinat/words/words.py\"\nTotal time for all tests: 70.4 seconds\n```\n",
+    "created_at": "2010-11-14T01:35:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8674",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8674#issuecomment-78942",
+    "user": "abmasse"
+}
+```
 
 Already 7 months !!!! Sorry again for the delay...
 
@@ -267,32 +395,76 @@ Total time for all tests: 70.4 seconds
 
 
 
+
 ---
 
-Comment by slabbe created at 2010-11-14 06:20:41
+archive/issue_comments_078943.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-11-14T06:20:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8674",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8674#issuecomment-78943",
+    "user": "slabbe"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by slabbe created at 2010-11-14 06:20:41
+archive/issue_comments_078944.json:
+```json
+{
+    "body": "> I retested on sage-4.6 the two patches but I get a bunch of doctest failures.\n\nOn sage-4.6, I get All tests passed. Did you sage -b ?",
+    "created_at": "2010-11-14T06:20:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8674",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8674#issuecomment-78944",
+    "user": "slabbe"
+}
+```
 
 > I retested on sage-4.6 the two patches but I get a bunch of doctest failures.
 
 On sage-4.6, I get All tests passed. Did you sage -b ?
 
 
+
 ---
 
-Comment by abmasse created at 2010-11-14 16:51:52
+archive/issue_comments_078945.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-11-14T16:51:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8674",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8674#issuecomment-78945",
+    "user": "abmasse"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by abmasse created at 2010-11-14 16:51:52
+archive/issue_comments_078946.json:
+```json
+{
+    "body": "Hi!\n\nSorry, I must have forgotten to do it... I'm a bit rusty with all the steps of reviewing a patch. Indeed all tests pass, and the modified functions appear well in the documentation generated by Sphinx. I verified by hand that it solves the defect raised in the subject of this ticket.\n\nPositive review.",
+    "created_at": "2010-11-14T16:51:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8674",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8674#issuecomment-78946",
+    "user": "abmasse"
+}
+```
 
 Hi!
 
@@ -301,8 +473,19 @@ Sorry, I must have forgotten to do it... I'm a bit rusty with all the steps of r
 Positive review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-11-18 22:25:58
+archive/issue_comments_078947.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-11-18T22:25:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8674",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8674#issuecomment-78947",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: fixed

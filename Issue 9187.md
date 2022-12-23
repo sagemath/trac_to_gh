@@ -1,11 +1,21 @@
 # Issue 9187: Update ECL's spkg-install for building multiple spkgs in parallel
 
-Issue created by migration from https://trac.sagemath.org/ticket/9187
-
-Original creator: mpatel
-
-Original creation time: 2010-06-08 08:42:58
-
+archive/issues_009187.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  drkirkby jhpalmieri leif jsp\n\nTo build ECL with `SAGE_PARALLEL_SPKG_BUILD=\"yes\"` on Mac OS X, we need to add, e.g.,\n\n```sh\nMAKEFLAGS=\nexport MAKEFLAGS\n```\n\nto the package's `spkg-install`.\n\nPlease see #8306 about building spkgs in parallel.  For `MAKEFLAGS`, see [the GNU Make manual](http://www.gnu.org/software/make/manual/html_node/Options_002fRecursion.html).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9187\n\n",
+    "created_at": "2010-06-08T08:42:58Z",
+    "labels": [
+        "packages: standard",
+        "minor",
+        "enhancement"
+    ],
+    "title": "Update ECL's spkg-install for building multiple spkgs in parallel",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9187",
+    "user": "mpatel"
+}
+```
 Assignee: tbd
 
 CC:  drkirkby jhpalmieri leif jsp
@@ -21,49 +31,121 @@ to the package's `spkg-install`.
 
 Please see #8306 about building spkgs in parallel.  For `MAKEFLAGS`, see [the GNU Make manual](http://www.gnu.org/software/make/manual/html_node/Options_002fRecursion.html).
 
+Issue created by migration from https://trac.sagemath.org/ticket/9187
+
+
+
+
 
 ---
 
-Comment by mpatel created at 2010-06-08 09:15:26
+archive/issue_comments_085933.json:
+```json
+{
+    "body": "I think we should work from #8951.",
+    "created_at": "2010-06-08T09:15:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85933",
+    "user": "mpatel"
+}
+```
 
 I think we should work from #8951.
 
 
+
 ---
 
-Comment by mpatel created at 2010-06-09 02:26:45
+archive/issue_comments_085934.json:
+```json
+{
+    "body": "spkg patch.  Set empty `MAKEFLAGS`.",
+    "created_at": "2010-06-09T02:26:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85934",
+    "user": "mpatel"
+}
+```
 
 spkg patch.  Set empty `MAKEFLAGS`.
 
 
+
 ---
 
-Comment by mpatel created at 2010-06-09 02:30:02
+archive/issue_comments_085935.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-06-09T02:30:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85935",
+    "user": "mpatel"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_085936.json:
+```json
+{
+    "body": "Attachment\n\nI've put a new spkg at\n\n* http://sage.math.washington.edu/home/mpatel/trac/9187/ecl-10.4.1.p0.spkg\n\n(Or should it be p1?)  This is based against the package mentioned in [comment:ticket:8951:10 this comment] at #8951.",
+    "created_at": "2010-06-09T02:30:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85936",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
 I've put a new spkg at
 
- * http://sage.math.washington.edu/home/mpatel/trac/9187/ecl-10.4.1.p0.spkg
+* http://sage.math.washington.edu/home/mpatel/trac/9187/ecl-10.4.1.p0.spkg
 
 (Or should it be p1?)  This is based against the package mentioned in [comment:ticket:8951:10 this comment] at #8951.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-06-18 12:24:12
+archive/issue_comments_085937.json:
+```json
+{
+    "body": "Changing assignee from tbd to drkirkby.",
+    "created_at": "2010-06-18T12:24:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85937",
+    "user": "drkirkby"
+}
+```
 
 Changing assignee from tbd to drkirkby.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-06-18 12:24:12
+archive/issue_comments_085938.json:
+```json
+{
+    "body": "Unfortunately, there are two spkgs on #8951 and neither have the patches from #8089 and both claim in SPKG.txt to have things they do not. \n\nI intend creating a 10.4.1 package which has this, and all other relevant fixes in the one package. Since no ecl-10.4.1.spkg has been merged, this should be called ecl-10.4.1.spkg. The patch levels start at 0, not 1, but in this case as nothing has been merged, there is no need to increment the patch level. \n\nPlease see #9264, which will have these changes, those which are listed as being in #8591 but are not, and also that at #8089\n\nDave",
+    "created_at": "2010-06-18T12:24:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85938",
+    "user": "drkirkby"
+}
+```
 
 Unfortunately, there are two spkgs on #8951 and neither have the patches from #8089 and both claim in SPKG.txt to have things they do not. 
 
@@ -74,23 +156,56 @@ Please see #9264, which will have these changes, those which are listed as being
 Dave
 
 
+
 ---
 
-Comment by drkirkby created at 2010-06-18 17:05:57
+archive/issue_comments_085939.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-06-18T17:05:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85939",
+    "user": "drkirkby"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-06-18 17:05:57
+archive/issue_comments_085940.json:
+```json
+{
+    "body": "The attached patch is ok and deserves positive review. However, the .spkg attached is not ideal, as it overlooks some other changes which need merging. I think a new .spkg needs to be created, which has all the minor changes together.",
+    "created_at": "2010-06-18T17:05:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85940",
+    "user": "drkirkby"
+}
+```
 
 The attached patch is ok and deserves positive review. However, the .spkg attached is not ideal, as it overlooks some other changes which need merging. I think a new .spkg needs to be created, which has all the minor changes together.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-06-21 08:55:49
+archive/issue_comments_085941.json:
+```json
+{
+    "body": "There is no need to merge this now. \n\n#9264, which has positive review, includes this patch, along with several others related to ECL. All the relevant problems with ECL are solved by #9264, including this one. \n\nDave",
+    "created_at": "2010-06-21T08:55:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85941",
+    "user": "drkirkby"
+}
+```
 
 There is no need to merge this now. 
 
@@ -99,42 +214,110 @@ There is no need to merge this now.
 Dave
 
 
+
 ---
 
-Comment by rlm created at 2010-06-25 11:18:33
+archive/issue_comments_085942.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2010-06-25T11:18:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85942",
+    "user": "rlm"
+}
+```
 
 Resolution: duplicate
 
 
+
 ---
 
-Comment by mpatel created at 2010-07-12 01:29:44
+archive/issue_comments_085943.json:
+```json
+{
+    "body": "Resolution changed from duplicate to ",
+    "created_at": "2010-07-12T01:29:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85943",
+    "user": "mpatel"
+}
+```
 
 Resolution changed from duplicate to 
 
 
+
 ---
 
-Comment by mpatel created at 2010-07-12 01:29:44
+archive/issue_comments_085944.json:
+```json
+{
+    "body": "Related tickets: #9264, #9460, #9474.",
+    "created_at": "2010-07-12T01:29:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85944",
+    "user": "mpatel"
+}
+```
 
 Related tickets: #9264, #9460, #9474.
 
 
+
 ---
 
-Comment by mpatel created at 2010-07-12 01:29:44
+archive/issue_comments_085945.json:
+```json
+{
+    "body": "Changing status from closed to new.",
+    "created_at": "2010-07-12T01:29:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85945",
+    "user": "mpatel"
+}
+```
 
 Changing status from closed to new.
 
 
+
 ---
 
-Comment by mpatel created at 2010-07-12 20:27:15
+archive/issue_comments_085946.json:
+```json
+{
+    "body": "spkg patch rebased vs. #9474.",
+    "created_at": "2010-07-12T20:27:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85946",
+    "user": "mpatel"
+}
+```
 
 spkg patch rebased vs. #9474.
 
 
+
 ---
+
+archive/issue_comments_085947.json:
+```json
+{
+    "body": "Attachment\n\nHere's a new spkg based on #9474:\n\n http://sage.math.washington.edu/home/mpatel/trac/9187/ecl-10.2.1.p1.spkg\n\nIt works for me with 4.5.rc0 + #7379 on sage.math, but I have not yet had a chance to test it on bsd.math.",
+    "created_at": "2010-07-12T20:32:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85947",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
@@ -145,16 +328,38 @@ Here's a new spkg based on #9474:
 It works for me with 4.5.rc0 + #7379 on sage.math, but I have not yet had a chance to test it on bsd.math.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-07-12 21:17:50
+archive/issue_comments_085948.json:
+```json
+{
+    "body": "This works for me on sage.math and on an OS X box running 10.6, in both cases building spkg's in parallel.  I'm building on t2 now; if there are problems, I'll report them.",
+    "created_at": "2010-07-12T21:17:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85948",
+    "user": "jhpalmieri"
+}
+```
 
 This works for me on sage.math and on an OS X box running 10.6, in both cases building spkg's in parallel.  I'm building on t2 now; if there are problems, I'll report them.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-07-12 21:29:47
+archive/issue_comments_085949.json:
+```json
+{
+    "body": "Replying to [comment:9 mpatel]:\n> Here's a new spkg based on #9474:\n> \n>  http://sage.math.washington.edu/home/mpatel/trac/9187/ecl-10.2.1.p1.spkg\n> \n> It works for me with 4.5.rc0 + #7379 on sage.math, but I have not yet had a chance to test it on bsd.math.\n\nIt works for me on bsd.math - at least ecl builds ok. I've not at this time completed the build, but ecl has built ok.",
+    "created_at": "2010-07-12T21:29:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85949",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:9 mpatel]:
 > Here's a new spkg based on #9474:
@@ -166,9 +371,20 @@ Replying to [comment:9 mpatel]:
 It works for me on bsd.math - at least ecl builds ok. I've not at this time completed the build, but ecl has built ok.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-07-12 21:50:56
+archive/issue_comments_085950.json:
+```json
+{
+    "body": "Replying to [comment:11 drkirkby]:\n\n> It works for me on bsd.math - at least ecl builds ok. I've not at this time completed the build, but ecl has built ok. \n\nThat's what I meant, too.  The same is also true on t2 now: this version of ecl has built successfully as part of a parallel build, but the full build has several more hours to go...",
+    "created_at": "2010-07-12T21:50:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85950",
+    "user": "jhpalmieri"
+}
+```
 
 Replying to [comment:11 drkirkby]:
 
@@ -177,16 +393,38 @@ Replying to [comment:11 drkirkby]:
 That's what I meant, too.  The same is also true on t2 now: this version of ecl has built successfully as part of a parallel build, but the full build has several more hours to go...
 
 
+
 ---
 
-Comment by cremona created at 2010-07-13 16:21:31
+archive/issue_comments_085951.json:
+```json
+{
+    "body": "I am testing a new build (on 64-bit ubuntu) of 4.5.rc0 + http://sage.math.washington.edu/home/mpatel/trac/9187/ecl-10.2.1.p1.spkg with SAGE_PARALLEL_SPKG_BUILD=\"yes\" (which I have never tried before) and will report back.  Though these ecl tickets are so confusing that I am not sure this will tell anyone anything useful, I thought it would be fun.  (The other users of the machine may not agree, of course!)",
+    "created_at": "2010-07-13T16:21:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85951",
+    "user": "cremona"
+}
+```
 
 I am testing a new build (on 64-bit ubuntu) of 4.5.rc0 + http://sage.math.washington.edu/home/mpatel/trac/9187/ecl-10.2.1.p1.spkg with SAGE_PARALLEL_SPKG_BUILD="yes" (which I have never tried before) and will report back.  Though these ecl tickets are so confusing that I am not sure this will tell anyone anything useful, I thought it would be fun.  (The other users of the machine may not agree, of course!)
 
 
+
 ---
 
-Comment by drkirkby created at 2010-07-13 16:38:30
+archive/issue_comments_085952.json:
+```json
+{
+    "body": "Replying to [comment:13 cremona]:\n> I am testing a new build (on 64-bit ubuntu) of 4.5.rc0 + http://sage.math.washington.edu/home/mpatel/trac/9187/ecl-10.2.1.p1.spkg with SAGE_PARALLEL_SPKG_BUILD=\"yes\" (which I have never tried before) and will report back.  Though these ecl tickets are so confusing that I am not sure this will tell anyone anything useful, I thought it would be fun.  (The other users of the machine may not agree, of course!)\n\nI think you test results will be very useful, as there is a distinct lack of direct evidence for this working on Linux. There is evidence it is working on OS X and Solaris. \n\nYou also need to export MAKE, with something like\n\n$ export MAKE=\"make -j6\"\n\nor however many threads you want. Do not put a space between the 'j' and the '6'. \n\nDave",
+    "created_at": "2010-07-13T16:38:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85952",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:13 cremona]:
 > I am testing a new build (on 64-bit ubuntu) of 4.5.rc0 + http://sage.math.washington.edu/home/mpatel/trac/9187/ecl-10.2.1.p1.spkg with SAGE_PARALLEL_SPKG_BUILD="yes" (which I have never tried before) and will report back.  Though these ecl tickets are so confusing that I am not sure this will tell anyone anything useful, I thought it would be fun.  (The other users of the machine may not agree, of course!)
@@ -202,9 +440,20 @@ or however many threads you want. Do not put a space between the 'j' and the '6'
 Dave
 
 
+
 ---
 
-Comment by cremona created at 2010-07-13 16:41:17
+archive/issue_comments_085953.json:
+```json
+{
+    "body": "Replying to [comment:14 drkirkby]:\n> Replying to [comment:13 cremona]:\n> > I am testing a new build (on 64-bit ubuntu) of 4.5.rc0 + http://sage.math.washington.edu/home/mpatel/trac/9187/ecl-10.2.1.p1.spkg with SAGE_PARALLEL_SPKG_BUILD=\"yes\" (which I have never tried before) and will report back.  Though these ecl tickets are so confusing that I am not sure this will tell anyone anything useful, I thought it would be fun.  (The other users of the machine may not agree, of course!)\n> \n> I think you test results will be very useful, as there is a distinct lack of direct evidence for this working on Linux. There is evidence it is working on OS X and Solaris. \n> \n> You also need to export MAKE, with something like\n> \n> $ export MAKE=\"make -j6\"\n> \n> or however many threads you want. Do not put a space between the 'j' and the '6'.\n\nThanks -- I use -j 10, and luckily the machine is in an air-conditioned room!\n \n> \n> Dave",
+    "created_at": "2010-07-13T16:41:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85953",
+    "user": "cremona"
+}
+```
 
 Replying to [comment:14 drkirkby]:
 > Replying to [comment:13 cremona]:
@@ -224,9 +473,20 @@ Thanks -- I use -j 10, and luckily the machine is in an air-conditioned room!
 > Dave
 
 
+
 ---
 
-Comment by drkirkby created at 2010-07-13 16:48:19
+archive/issue_comments_085954.json:
+```json
+{
+    "body": "John, \n\nI'm not sure if you mis-understood me there. \n\n`$ export MAKE=\"make -j 10\"`\n\nwill not work as well as it could do. The .spkg's will build in parallel, but when it gets to building the Sage library, that will only build serially. You should use \n\n`$ export MAKE=\"make -j10\"`\n\nI assume you are aware you also need a library patch\n\nhttp://trac.sagemath.org/sage_trac/raw-attachment/ticket/7379/trac-7379-decorator-defaults.patch\n\n(only the library patch, not the sagenb patch on that ticket). Only part of #7379 got merged into 4.5.rc0 \n\n\nDave",
+    "created_at": "2010-07-13T16:48:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85954",
+    "user": "drkirkby"
+}
+```
 
 John, 
 
@@ -248,9 +508,20 @@ http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7379/trac-7379-decorato
 Dave
 
 
+
 ---
 
-Comment by cremona created at 2010-07-13 16:52:17
+archive/issue_comments_085955.json:
+```json
+{
+    "body": "Replying to [comment:16 drkirkby]:\n> John, \n> \n> I'm not sure if you mis-understood me there. \n> \n> `$ export MAKE=\"make -j 10\"`\n> \n> will not work as well as it could do. The .spkg's will build in parallel, but when it gets to building the Sage library, that will only build serially. You should use \n> \n> `$ export MAKE=\"make -j10\"`\n\nIt's ok, I knew that...\n\n> \n> I assume you are aware you also need a library patch\n> \n> http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7379/trac-7379-decorator-defaults.patch\n> \n\n... and that.  83 spkgs now installed and counting....\n\n> (only the library patch, not the sagenb patch on that ticket). Only part of #7379 got merged into 4.5.rc0 \n> \n> \n> Dave",
+    "created_at": "2010-07-13T16:52:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85955",
+    "user": "cremona"
+}
+```
 
 Replying to [comment:16 drkirkby]:
 > John, 
@@ -279,23 +550,56 @@ It's ok, I knew that...
 > Dave
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-07-13 17:18:37
+archive/issue_comments_085956.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-07-13T17:18:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85956",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-07-13 17:18:37
+archive/issue_comments_085957.json:
+```json
+{
+    "body": "I built this successfully on sage.math earlier.  I'm willing to give it a positive review right now.  John (Cremona): I'll give you the last word.  If everything works for you, could you give this a positive review?",
+    "created_at": "2010-07-13T17:18:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85957",
+    "user": "jhpalmieri"
+}
+```
 
 I built this successfully on sage.math earlier.  I'm willing to give it a positive review right now.  John (Cremona): I'll give you the last word.  If everything works for you, could you give this a positive review?
 
 
+
 ---
 
-Comment by leif created at 2010-07-13 17:27:43
+archive/issue_comments_085958.json:
+```json
+{
+    "body": "I think this ecl-10.2.1.p1.spkg can be merged into rc1, but could you MacOS X testers check which version of Boehm GC is used during install (i.e., the one shipped with Sage or the one included in ECL)?\n\n```sh\n$ grep -i boehm spkg/logs/ecl-10.2.1.p1.log | head -n 2\n```\n\nshould show soemthing like\n\n```\nchecking whether we can use the existing Boehm-Weiser library ... yes\nchecking if we need to copy GC private headers ... checking if we use Boehm-Demers-Weiser precise garbage collector... yes\n```\n\nor\n\n```\nchecking if we use Boehm-Demers-Weiser precise garbage collector... yes\nconfigure: Configuring included Boehm GC library:\n```\n\n(The latter is from Dave's install log on bsd.math/MacOS X 10.4.0.)",
+    "created_at": "2010-07-13T17:27:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85958",
+    "user": "leif"
+}
+```
 
 I think this ecl-10.2.1.p1.spkg can be merged into rc1, but could you MacOS X testers check which version of Boehm GC is used during install (i.e., the one shipped with Sage or the one included in ECL)?
 
@@ -320,9 +624,20 @@ configure: Configuring included Boehm GC library:
 (The latter is from Dave's install log on bsd.math/MacOS X 10.4.0.)
 
 
+
 ---
 
-Comment by cremona created at 2010-07-13 17:28:39
+archive/issue_comments_085959.json:
+```json
+{
+    "body": "Replying to [comment:18 jhpalmieri]:\n> I built this successfully on sage.math earlier.  I'm willing to give it a positive review right now.  John (Cremona): I'll give you the last word.  If everything works for you, could you give this a positive review?\n\nIt finished building, now building docs. Then I'll do a ptestlong and report back -- currently I don't know if what was built actually works!",
+    "created_at": "2010-07-13T17:28:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85959",
+    "user": "cremona"
+}
+```
 
 Replying to [comment:18 jhpalmieri]:
 > I built this successfully on sage.math earlier.  I'm willing to give it a positive review right now.  John (Cremona): I'll give you the last word.  If everything works for you, could you give this a positive review?
@@ -330,9 +645,20 @@ Replying to [comment:18 jhpalmieri]:
 It finished building, now building docs. Then I'll do a ptestlong and report back -- currently I don't know if what was built actually works!
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-07-13 17:40:49
+archive/issue_comments_085960.json:
+```json
+{
+    "body": "On my OS X box, it says:\n\n```\nchecking if we use Boehm-Demers-Weiser precise garbage collector... yes\n...\nconfigure: Configuring included Boehm GC library:\n```\n\nI'm not an expert in these things, but in src/src/configure, it says:\n\n```\n        darwin*)\n                thehost='darwin'\n                shared='yes'\n                ...\n                # The Boehm-Weiser GC library shipped with Fink does not work\n                # well with our signal handler.\n                enable_boehm=included\n```\n\nwhich leads me to believe that on OS X, it will be a little work to use Sage's installation of boehm_gc.  I think this should go on a follow-up ticket, and it should probably be done in coordination with the ecl people.",
+    "created_at": "2010-07-13T17:40:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85960",
+    "user": "jhpalmieri"
+}
+```
 
 On my OS X box, it says:
 
@@ -357,58 +683,124 @@ I'm not an expert in these things, but in src/src/configure, it says:
 which leads me to believe that on OS X, it will be a little work to use Sage's installation of boehm_gc.  I think this should go on a follow-up ticket, and it should probably be done in coordination with the ecl people.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-07-13 17:41:38
+archive/issue_comments_085961.json:
+```json
+{
+    "body": "(That is, on OS X, it looks like any setting to the `--enable-boehm` flag gets overridden.)",
+    "created_at": "2010-07-13T17:41:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85961",
+    "user": "jhpalmieri"
+}
+```
 
 (That is, on OS X, it looks like any setting to the `--enable-boehm` flag gets overridden.)
 
 
+
 ---
 
-Comment by leif created at 2010-07-13 17:51:17
+archive/issue_comments_085962.json:
+```json
+{
+    "body": "Replying to [comment:22 jhpalmieri]:\n> (That is, on OS X, it looks like any setting to the `--enable-boehm` flag gets overridden.)\n\nThat's odd, since Sage's Boehm GC includes a patch for MacOS X 10.6.\n\nI agree we should open a *new* ticket for that and perhaps include a p2 spkg in 4.5.rc2(?), 4.5.final or 4.5.1.\n\nThe package has to be cleaned up anyway, and perhaps we switch back to ECL 10.**4**.1.",
+    "created_at": "2010-07-13T17:51:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85962",
+    "user": "leif"
+}
+```
 
 Replying to [comment:22 jhpalmieri]:
 > (That is, on OS X, it looks like any setting to the `--enable-boehm` flag gets overridden.)
 
 That's odd, since Sage's Boehm GC includes a patch for MacOS X 10.6.
 
-I agree we should open a _new_ ticket for that and perhaps include a p2 spkg in 4.5.rc2(?), 4.5.final or 4.5.1.
+I agree we should open a *new* ticket for that and perhaps include a p2 spkg in 4.5.rc2(?), 4.5.final or 4.5.1.
 
-The package has to be cleaned up anyway, and perhaps we switch back to ECL 10.*4*.1.
+The package has to be cleaned up anyway, and perhaps we switch back to ECL 10.**4**.1.
+
 
 
 ---
 
-Comment by rlm created at 2010-07-13 17:54:42
+archive/issue_comments_085963.json:
+```json
+{
+    "body": "Replying to [comment:23 leif]:\n> Replying to [comment:22 jhpalmieri]:\n> I agree we should open a *new* ticket for that and perhaps include a p2 spkg in 4.5.rc2(?), 4.5.final or 4.5.1.\n\n4.5.1.",
+    "created_at": "2010-07-13T17:54:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85963",
+    "user": "rlm"
+}
+```
 
 Replying to [comment:23 leif]:
 > Replying to [comment:22 jhpalmieri]:
-> I agree we should open a _new_ ticket for that and perhaps include a p2 spkg in 4.5.rc2(?), 4.5.final or 4.5.1.
+> I agree we should open a *new* ticket for that and perhaps include a p2 spkg in 4.5.rc2(?), 4.5.final or 4.5.1.
 
 4.5.1.
 
 
+
 ---
 
-Comment by leif created at 2010-07-13 18:03:22
+archive/issue_comments_085964.json:
+```json
+{
+    "body": "Replying to [comment:24 rlm]:\n> 4.5.1.\n\nThat's what I meant by *changing the milestone rather than the priority*. ;-)",
+    "created_at": "2010-07-13T18:03:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85964",
+    "user": "leif"
+}
+```
 
 Replying to [comment:24 rlm]:
 > 4.5.1.
 
-That's what I meant by _changing the milestone rather than the priority_. ;-)
+That's what I meant by *changing the milestone rather than the priority*. ;-)
+
 
 
 ---
 
-Comment by cremona created at 2010-07-13 18:24:56
+archive/issue_comments_085965.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-07-13T18:24:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85965",
+    "user": "cremona"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by cremona created at 2010-07-13 18:24:56
+archive/issue_comments_085966.json:
+```json
+{
+    "body": "Replying to [comment:20 cremona]:\n> Replying to [comment:18 jhpalmieri]:\n> > I built this successfully on sage.math earlier.  I'm willing to give it a positive review right now.  John (Cremona): I'll give you the last word.  If everything works for you, could you give this a positive review?\n> \n> It finished building, now building docs. Then I'll do a ptestlong and report back -- currently I don't know if what was built actually works!\n\nAll tests passed == +++",
+    "created_at": "2010-07-13T18:24:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85966",
+    "user": "cremona"
+}
+```
 
 Replying to [comment:20 cremona]:
 > Replying to [comment:18 jhpalmieri]:
@@ -419,25 +811,58 @@ Replying to [comment:20 cremona]:
 All tests passed == +++
 
 
+
 ---
 
-Comment by rlm created at 2010-07-13 18:38:28
+archive/issue_comments_085967.json:
+```json
+{
+    "body": "Merged\n\nhttp://sage.math.washington.edu/home/mpatel/trac/9187/ecl-10.2.1.p1.spkg",
+    "created_at": "2010-07-13T18:38:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85967",
+    "user": "rlm"
+}
+```
 
 Merged
 
 http://sage.math.washington.edu/home/mpatel/trac/9187/ecl-10.2.1.p1.spkg
 
 
+
 ---
 
-Comment by rlm created at 2010-07-13 18:38:28
+archive/issue_comments_085968.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-07-13T18:38:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85968",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by leif created at 2010-07-13 18:41:30
+archive/issue_comments_085969.json:
+```json
+{
+    "body": "Replying to [comment:23 leif]:\n> Replying to [comment:22 jhpalmieri]:\n> > (That is, on OS X, it looks like any setting to the `--enable-boehm` flag gets overridden.)\n> \n> That's odd, since Sage's Boehm GC includes a patch for MacOS X 10.6.\n\nJust for the record: The patch just avoids a dumb deprecation *error*(!), and it is already included in ECL's Boehm GC (otherwise ECL wouldn't have built on MacOS X 10.6).",
+    "created_at": "2010-07-13T18:41:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85969",
+    "user": "leif"
+}
+```
 
 Replying to [comment:23 leif]:
 > Replying to [comment:22 jhpalmieri]:
@@ -445,12 +870,23 @@ Replying to [comment:23 leif]:
 > 
 > That's odd, since Sage's Boehm GC includes a patch for MacOS X 10.6.
 
-Just for the record: The patch just avoids a dumb deprecation _error_(!), and it is already included in ECL's Boehm GC (otherwise ECL wouldn't have built on MacOS X 10.6).
+Just for the record: The patch just avoids a dumb deprecation *error*(!), and it is already included in ECL's Boehm GC (otherwise ECL wouldn't have built on MacOS X 10.6).
+
 
 
 ---
 
-Comment by leif created at 2010-07-13 19:58:55
+archive/issue_comments_085970.json:
+```json
+{
+    "body": "For a 4.5 final, we should remove the unnecessary baggage, though (as `SPKG.txt` instructs, btw):\n\n```\nleif@portland:~/Sage/spkgs/ecl-10.2.1.p1$ du -ch src/msvc/ src/contrib/encodings/\n16K\tsrc/msvc/ecl\n8.0K\tsrc/msvc/gc\n8.0K\tsrc/msvc/gmp/mpz\n32K\tsrc/msvc/gmp/mpn/generic\n76K\tsrc/msvc/gmp/mpn/amd64i\n48K\tsrc/msvc/gmp/mpn/x86i/pentium4/sse2\n32K\tsrc/msvc/gmp/mpn/x86i/pentium4/mmx\n92K\tsrc/msvc/gmp/mpn/x86i/pentium4\n48K\tsrc/msvc/gmp/mpn/x86i/p6/mmx\n8.0K\tsrc/msvc/gmp/mpn/x86i/p6/p3mmx\n128K\tsrc/msvc/gmp/mpn/x86i/p6\n300K\tsrc/msvc/gmp/mpn/x86i\n412K\tsrc/msvc/gmp/mpn\n12K\tsrc/msvc/gmp/build.vc8/gen-fib\n16K\tsrc/msvc/gmp/build.vc8/gen-fac_ui\n28K\tsrc/msvc/gmp/build.vc8/lib_gmpxx\n256K\tsrc/msvc/gmp/build.vc8/dll_gmp_amd64\n16K\tsrc/msvc/gmp/build.vc8/gen-bases\n372K\tsrc/msvc/gmp/build.vc8/lib_gmp\n240K\tsrc/msvc/gmp/build.vc8/dll_gmp_p4\n40K\tsrc/msvc/gmp/build.vc8/lib_gmp_p0\n36K\tsrc/msvc/gmp/build.vc8/lib_gmp_p3\n240K\tsrc/msvc/gmp/build.vc8/dll_gmp_p0\n180K\tsrc/msvc/gmp/build.vc8/dll_mpfr\n28K\tsrc/msvc/gmp/build.vc8/gen-psqr\n72K\tsrc/msvc/gmp/build.vc8/lib_gmp_gc\n40K\tsrc/msvc/gmp/build.vc8/lib_gmp_p4\n48K\tsrc/msvc/gmp/build.vc8/lib_gmp_amd64\n436K\tsrc/msvc/gmp/build.vc8/dll_gmp_gc\n240K\tsrc/msvc/gmp/build.vc8/dll_gmp_p3\n208K\tsrc/msvc/gmp/build.vc8/lib_mpfr\n4.8M\tsrc/msvc/gmp/build.vc8\n5.2M\tsrc/msvc/gmp\n8.0K\tsrc/msvc/c\n16K\tsrc/msvc/util\n12K\tsrc/msvc/doc\n5.3M\tsrc/msvc/\n544K\tsrc/contrib/encodings/\n5.8M\ttotal\nleif@portland:~/Sage/spkgs/ecl-10.2.1.p1$ tar cj src/msvc/ src/contrib/encodings/ | wc -c\n859300\n```\n",
+    "created_at": "2010-07-13T19:58:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85970",
+    "user": "leif"
+}
+```
 
 For a 4.5 final, we should remove the unnecessary baggage, though (as `SPKG.txt` instructs, btw):
 
@@ -501,9 +937,20 @@ leif@portland:~/Sage/spkgs/ecl-10.2.1.p1$ tar cj src/msvc/ src/contrib/encodings
 
 
 
+
 ---
 
-Comment by drkirkby created at 2010-07-13 20:23:44
+archive/issue_comments_085971.json:
+```json
+{
+    "body": "Replying to [comment:29 leif]:\n> For a 4.5 final, we should remove the unnecessary baggage, though (as `SPKG.txt` instructs, btw):\n\nThat's up to Robert, but I tend to feel saving about 840 KB is of relatively low importance, and can be left for 4.5.1. Especially considering there is a new version of ECL available, and we would expect to resolve the ECL/Maxima issues some time in the near future. So the ecl package will probably be updated for 4.5.1. \n\nDave",
+    "created_at": "2010-07-13T20:23:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85971",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:29 leif]:
 > For a 4.5 final, we should remove the unnecessary baggage, though (as `SPKG.txt` instructs, btw):
@@ -513,9 +960,20 @@ That's up to Robert, but I tend to feel saving about 840 KB is of relatively low
 Dave
 
 
+
 ---
 
-Comment by rlm created at 2010-07-13 21:47:21
+archive/issue_comments_085972.json:
+```json
+{
+    "body": "Replying to [comment:29 leif]:\n> For a 4.5 final, we should remove the unnecessary baggage\n\nPlease open a ticket and make a p2 with only these changes. I think it's too late for 4.5.",
+    "created_at": "2010-07-13T21:47:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85972",
+    "user": "rlm"
+}
+```
 
 Replying to [comment:29 leif]:
 > For a 4.5 final, we should remove the unnecessary baggage
@@ -523,9 +981,20 @@ Replying to [comment:29 leif]:
 Please open a ticket and make a p2 with only these changes. I think it's too late for 4.5.
 
 
+
 ---
 
-Comment by leif created at 2010-07-14 00:09:24
+archive/issue_comments_085973.json:
+```json
+{
+    "body": "Replying to [comment:31 rlm]:\n> Replying to [comment:29 leif]:\n> > For a 4.5 final, we should remove the unnecessary baggage\n> \n> Please open a ticket and make a p2 with only these changes. I think it's too late for 4.5.\n\nTicket up at #9493.\n\nI unfortunately cannot upload an spkg because I don't have an account on sage.math.\n\n(Perhaps I'll ask again someone to upload it from an e-mail attachment, but it's still fairly large.)",
+    "created_at": "2010-07-14T00:09:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9187#issuecomment-85973",
+    "user": "leif"
+}
+```
 
 Replying to [comment:31 rlm]:
 > Replying to [comment:29 leif]:

@@ -1,11 +1,21 @@
 # Issue 4782: construction of some relative quadratic extensions is SERIOUSLY FRICKIN's FOO-bar'd
 
-Issue created by migration from https://trac.sagemath.org/ticket/4782
-
-Original creator: was
-
-Original creation time: 2008-12-13 03:48:49
-
+archive/issues_004782.json:
+```json
+{
+    "body": "Assignee: was\n\nTry this carefully with your finger on kill -9:\n\n```\nsage: NumberField(x^2 + 79*x - 60, 'a').extension(x^2 - 69*x + 38,'b')\n```\n\n\nOn sage.math top shows pretty quickly over 6.9GB memory usage!\n\n```\n15392 was       25   0 8219m 6.9g  21m R  100 10.9   0:53.76 sage-ipython                                                    \n```\n\n\nThe discriminants aren't very big:\n\n```\nsage: R.<x> = QQ[]\nsage: disc(x^2 + 79*x-60)\n6481\nsage: disc(x^2 - 69*x + 38)\n4609\n```\n\n\nSame behavior with Proof false:\n\n\n```\nsage: proof.all(False)\nsage: NumberField(x^2 + 79*x - 60, 'a').extension(x^2 - 69*x + 38,'b')\n...hell....\n```\n\n\nGiving both polys at once (which maybe use polcompositum) works:\n\n```\nsage: NumberField([x^2 + 79*x-60, x^2 - 69*x + 38], 'a')\n\n  ***   Warning: insufficient precision for fundamental units, not given.\nNumber Field in a0 with defining polynomial x^2 + 79*x - 60 over its base field\n```\n\n\nBasically there is something very wrong with how we make relative fields... probably because of something very very wrong in the core of pari itself (and it's relative number fields). \n\nIssue created by migration from https://trac.sagemath.org/ticket/4782\n\n",
+    "created_at": "2008-12-13T03:48:49Z",
+    "labels": [
+        "number theory",
+        "major",
+        "bug"
+    ],
+    "title": "construction of some relative quadratic extensions is SERIOUSLY FRICKIN's FOO-bar'd",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4782",
+    "user": "was"
+}
+```
 Assignee: was
 
 Try this carefully with your finger on kill -9:
@@ -55,17 +65,43 @@ Number Field in a0 with defining polynomial x^2 + 79*x - 60 over its base field
 
 Basically there is something very wrong with how we make relative fields... probably because of something very very wrong in the core of pari itself (and it's relative number fields). 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4782
+
+
+
+
 
 ---
 
-Comment by ncalexan created at 2008-12-17 15:32:15
+archive/issue_comments_036247.json:
+```json
+{
+    "body": "Verify this is a PARI bug and submit it.  I've been amazed at how fast the PARI group addresses bugs!  I haven't seen this particular one, BTW.",
+    "created_at": "2008-12-17T15:32:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4782",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4782#issuecomment-36247",
+    "user": "ncalexan"
+}
+```
 
 Verify this is a PARI bug and submit it.  I've been amazed at how fast the PARI group addresses bugs!  I haven't seen this particular one, BTW.
 
 
+
 ---
 
-Comment by was created at 2009-01-22 00:50:11
+archive/issue_comments_036248.json:
+```json
+{
+    "body": "I just tried this on sage.math with sage-3.3.alpha0:\n\n```\n  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+ \n5160 wstein    20   0 61.7g  43g  21m R  102 34.4   2:48.35 sage-ipython\n```\n\n\nOh my frickin' god?!  That's nuts.",
+    "created_at": "2009-01-22T00:50:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4782",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4782#issuecomment-36248",
+    "user": "was"
+}
+```
 
 I just tried this on sage.math with sage-3.3.alpha0:
 
@@ -78,9 +114,20 @@ I just tried this on sage.math with sage-3.3.alpha0:
 Oh my frickin' god?!  That's nuts.
 
 
+
 ---
 
-Comment by ncalexan created at 2009-01-22 18:34:56
+archive/issue_comments_036249.json:
+```json
+{
+    "body": "This is a pari bug, fixed in svn already:\n\n\n```\nmero:pari-svn ncalexan$ ./gp\n                                          GP/PARI CALCULATOR Version 2.4.3 (development svn-11539)\n                                              i386 running darwin (ix86 kernel) 32-bit version\n                                          compiled: Jan 22 2009, gcc-4.0.1 (Apple Inc. build 5484)\n                                             (readline not compiled in, extended help enabled)\n\n                                                   Copyright (C) 2000-2008 The PARI Group\n\nPARI/GP is free software, covered by the GNU General Public License, and comes WITHOUT ANY WARRANTY WHATSOEVER.\n\nType ? for help, \\q to quit.\nType ?12 for how to get moral (and possibly technical) support.\n\nparisize = 4000000, primelimit = 500000\n? nffactor(nfinit(y^2 + 79*y - 60), x^2 - 69*x + 38)\n%1 = \n[x^2 - 69*x + 38 1]\n```\n",
+    "created_at": "2009-01-22T18:34:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4782",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4782#issuecomment-36249",
+    "user": "ncalexan"
+}
+```
 
 This is a pari bug, fixed in svn already:
 
@@ -107,9 +154,20 @@ parisize = 4000000, primelimit = 500000
 
 
 
+
 ---
 
-Comment by ncalexan created at 2009-01-22 18:40:41
+archive/issue_comments_036250.json:
+```json
+{
+    "body": "And here is gp svn running on sage.math:\n\n\n```\n/scratch/nca/pari-svn $ ./gp\n            GP/PARI CALCULATOR Version 2.4.3 (development svn-11539)\n               amd64 running linux (x86-64 kernel) 64-bit version\n            compiled: Jan 22 2009, gcc-4.2.4 (Ubuntu 4.2.4-1ubuntu3)\n                 (readline v5.2 enabled, extended help enabled)\n\n                     Copyright (C) 2000-2008 The PARI Group\n\nPARI/GP is free software, covered by the GNU General Public License, and comes\nWITHOUT ANY WARRANTY WHATSOEVER.\n\nType ? for help, \\q to quit.\nType ?12 for how to get moral (and possibly technical) support.\n\nparisize = 8000000, primelimit = 500000\n\n? nffactor(nfinit(y^2 + 79*y - 60), x^2 - 69*x + 38)\n%1 =\n[x^2 - 69*x + 38 1]\n```\n",
+    "created_at": "2009-01-22T18:40:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4782",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4782#issuecomment-36250",
+    "user": "ncalexan"
+}
+```
 
 And here is gp svn running on sage.math:
 
@@ -138,16 +196,38 @@ parisize = 8000000, primelimit = 500000
 
 
 
+
 ---
 
-Comment by ncalexan created at 2009-01-22 19:45:14
+archive/issue_comments_036251.json:
+```json
+{
+    "body": "After discussion at SD12, mabs, craigcitro, and ncalexan are going to try to update pari to unstable/trunk.",
+    "created_at": "2009-01-22T19:45:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4782",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4782#issuecomment-36251",
+    "user": "ncalexan"
+}
+```
 
 After discussion at SD12, mabs, craigcitro, and ncalexan are going to try to update pari to unstable/trunk.
 
 
+
 ---
 
-Comment by was created at 2009-02-20 05:19:51
+archive/issue_comments_036252.json:
+```json
+{
+    "body": "I just checked and the stated problem (for this ticket) is gone in 3.3.rc2 some I'm closing this.  (I tested on both sage.math and OS X)\n\n\n```\nsage: NumberField(x^2 + 79*x - 60, 'a').extension(x^2 - 69*x + 38,'b')\nNumber Field in b with defining polynomial x^2 - 69*x + 38 over its base field\n```\n",
+    "created_at": "2009-02-20T05:19:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4782",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4782#issuecomment-36252",
+    "user": "was"
+}
+```
 
 I just checked and the stated problem (for this ticket) is gone in 3.3.rc2 some I'm closing this.  (I tested on both sage.math and OS X)
 
@@ -159,23 +239,56 @@ Number Field in b with defining polynomial x^2 - 69*x + 38 over its base field
 
 
 
+
 ---
 
-Comment by was created at 2009-02-20 05:19:51
+archive/issue_comments_036253.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-02-20T05:19:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4782",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4782#issuecomment-36253",
+    "user": "was"
+}
+```
 
 Resolution: fixed
 
 
----
-
-Comment by ncalexan created at 2009-02-20 05:23:26
-
-The problem is *not* gone, it's just hidden by #5231.  Creation is lazy now: it doesn't actually call pari, which will still fail.  This will be fixed when we upgrade to pari-svn.  I suggest this ticket be re-opened.
-
 
 ---
 
-Comment by was created at 2009-02-20 05:31:58
+archive/issue_comments_036254.json:
+```json
+{
+    "body": "The problem is **not** gone, it's just hidden by #5231.  Creation is lazy now: it doesn't actually call pari, which will still fail.  This will be fixed when we upgrade to pari-svn.  I suggest this ticket be re-opened.",
+    "created_at": "2009-02-20T05:23:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4782",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4782#issuecomment-36254",
+    "user": "ncalexan"
+}
+```
+
+The problem is **not** gone, it's just hidden by #5231.  Creation is lazy now: it doesn't actually call pari, which will still fail.  This will be fixed when we upgrade to pari-svn.  I suggest this ticket be re-opened.
+
+
+
+---
+
+archive/issue_comments_036255.json:
+```json
+{
+    "body": "Nick -- post an example that illustrates things not working.  Because I can't find one. \n\n\n```\nsage: K = NumberField(x^2 + 79*x - 60, 'a').extension(x^2 - 69*x + 38,'b')\nsage: K._pari[try every possible function even class groups]\n<works fine>\n```\n",
+    "created_at": "2009-02-20T05:31:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4782",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4782#issuecomment-36255",
+    "user": "was"
+}
+```
 
 Nick -- post an example that illustrates things not working.  Because I can't find one. 
 
@@ -188,9 +301,20 @@ sage: K._pari[try every possible function even class groups]
 
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-20 07:03:47
+archive/issue_comments_036256.json:
+```json
+{
+    "body": "I just ran into Sage eating *122 GB* in the random ring test:\n\n```\nsage -t -long devel/sage/sage/rings/tests.py\n```\n\nSpecifically\n\n```\n18203 mabshoff  25  5  122g 2.0g  23m R  100  1.6  4:00.82 /scratch/mabshoff/sage-3.3.rc3/local/bin/python /\n```\n\nSo this is a problem, hence I will reopen it :)\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-20T07:03:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4782",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4782#issuecomment-36256",
+    "user": "mabshoff"
+}
+```
 
 I just ran into Sage eating *122 GB* in the random ring test:
 
@@ -211,23 +335,56 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-20 07:03:47
+archive/issue_comments_036257.json:
+```json
+{
+    "body": "Changing status from closed to reopened.",
+    "created_at": "2009-02-20T07:03:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4782",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4782#issuecomment-36257",
+    "user": "mabshoff"
+}
+```
 
 Changing status from closed to reopened.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-20 07:03:47
+archive/issue_comments_036258.json:
+```json
+{
+    "body": "Resolution changed from fixed to ",
+    "created_at": "2009-02-20T07:03:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4782",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4782#issuecomment-36258",
+    "user": "mabshoff"
+}
+```
 
 Resolution changed from fixed to 
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-20 07:09:20
+archive/issue_comments_036259.json:
+```json
+{
+    "body": "Ok, I also just hit this, which might be completely unrelated:\n\n```\nsage -t -long \"devel/sage/sage/rings/tests.py\"              \n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.3.rc3/devel/sage/sage/rings/tests.py\", line 251:\n    sage: sage.rings.tests.test_random_arith(trials=1000)   # long time (5 seconds?)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/sage-3.3.rc3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-3.3.rc3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-3.3.rc3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_12[3]>\", line 1, in <module>\n        sage.rings.tests.test_random_arith(trials=Integer(1000))   # long time (5 seconds?)###line 251:\n    sage: sage.rings.tests.test_random_arith(trials=1000)   # long time (5 seconds?)\n      File \"/scratch/mabshoff/sage-3.3.rc3/local/lib/python2.5/site-packages/sage/rings/tests.py\", line 255, in test_random_arith\n        for x in random_rings(level):\n      File \"/scratch/mabshoff/sage-3.3.rc3/local/lib/python2.5/site-packages/sage/rings/tests.py\", line 209, in random_rings\n        yield random.choice(v)[0]()\n      File \"/scratch/mabshoff/sage-3.3.rc3/local/lib/python2.5/site-packages/sage/rings/tests.py\", line 131, in relative_number_field\n        K = K.extension(f,var)\n      File \"/scratch/mabshoff/sage-3.3.rc3/local/lib/python2.5/site-packages/sage/rings/number_field/number_field.py\", line 2616, in extension\n        return NumberField_relative(self, poly, str(name), check=check, embedding=embedding)\n      File \"/scratch/mabshoff/sage-3.3.rc3/local/lib/python2.5/site-packages/sage/rings/number_field/number_field_rel.py\", line 276, in __init__\n        raise ValueError, \"defining polynomial (%s) must be irreducible\"%polynomial\n    ValueError: defining polynomial (x^2 + 3*x - 20) must be irreducible\n**********************************************************************\n```\n\nBut the ring random test seems to flush out issues :)\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-20T07:09:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4782",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4782#issuecomment-36259",
+    "user": "mabshoff"
+}
+```
 
 Ok, I also just hit this, which might be completely unrelated:
 
@@ -268,9 +425,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-20 08:29:50
+archive/issue_comments_036260.json:
+```json
+{
+    "body": "Remember to turn on relative number field in the ring tester once this spkg has made it - see #4779.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-20T08:29:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4782",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4782#issuecomment-36260",
+    "user": "mabshoff"
+}
+```
 
 Remember to turn on relative number field in the ring tester once this spkg has made it - see #4779.
 
@@ -279,38 +447,93 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-07-21 08:16:36
+archive/issue_comments_036261.json:
+```json
+{
+    "body": "Changing component from number theory to number fields.",
+    "created_at": "2009-07-21T08:16:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4782",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4782#issuecomment-36261",
+    "user": "davidloeffler"
+}
+```
 
 Changing component from number theory to number fields.
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-10-10 21:26:38
+archive/issue_comments_036262.json:
+```json
+{
+    "body": "Can we close this ticket in the light of #9343?",
+    "created_at": "2010-10-10T21:26:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4782",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4782#issuecomment-36262",
+    "user": "jdemeyer"
+}
+```
 
 Can we close this ticket in the light of #9343?
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-10-10 21:26:38
+archive/issue_comments_036263.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-10-10T21:26:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4782",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4782#issuecomment-36263",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by lftabera created at 2010-11-23 22:36:56
+archive/issue_comments_036264.json:
+```json
+{
+    "body": "I cannot reproduce the problem with sage 4.6 on debian linux 32 bits. I just get the relative field and looks ok.\n\nDoes anyone still experience issues?",
+    "created_at": "2010-11-23T22:36:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4782",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4782#issuecomment-36264",
+    "user": "lftabera"
+}
+```
 
 I cannot reproduce the problem with sage 4.6 on debian linux 32 bits. I just get the relative field and looks ok.
 
 Does anyone still experience issues?
 
 
+
 ---
 
-Comment by robertwb created at 2010-12-04 19:40:27
+archive/issue_comments_036265.json:
+```json
+{
+    "body": "Resolution: worksforme",
+    "created_at": "2010-12-04T19:40:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4782",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4782#issuecomment-36265",
+    "user": "robertwb"
+}
+```
 
 Resolution: worksforme

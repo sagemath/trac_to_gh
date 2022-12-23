@@ -1,24 +1,34 @@
 # Issue 9736: gfran totally broken on 32-bit OpenSolaris  on x86 CPU
 
-Issue created by migration from https://trac.sagemath.org/ticket/9736
-
-Original creator: drkirkby
-
-Original creation time: 2010-08-12 17:27:24
-
+archive/issues_009736.json:
+```json
+{
+    "body": "Assignee: mvngu\n\nCC:  jsp jhpalmieri\n\n == Hardware & Software ==\n* Sun Ultra 27 \n* 3.33 GHz Intel W3580 Xeon. Quad core. 8 threads. \n* 12 GB RAM\n* OpenSolaris 2009.06 snv_134b X86\n* Sage 4.5.3.alpha0\n* gcc 4.5.0 configured to use the Sun linker and GNU assembler. \n == The problem ==\nIt would appear 'gfan' is totally broken on this setup, and as a result several tests fail. Strangly, the same problem is **not** observed on a Dell Optiplex 755 running Solaris 10 on x86 - it's only seen on the OpenSolaris machine. \n\n\n\n```\nsage -t  -long devel/sage/doc/en/tutorial/tour_advanced.rst\n**********************************************************************\nFile \"/export/home/drkirkby/32/sage-4.5.3.alpha0/devel/sage-main/doc/en/tutorial/tour_advanced.rst\", line 66:\n    sage: F.reduced_groebner_bases ()\nException raised:\n    Traceback (most recent call last):\n      File \"/export/home/drkirkby/32/sage-4.5.3.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/export/home/drkirkby/32/sage-4.5.3.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/export/home/drkirkby/32/sage-4.5.3.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_1[5]>\", line 1, in <module>\n        F.reduced_groebner_bases ()###line 66:\n    sage: F.reduced_groebner_bases ()\n      File \"/export/home/drkirkby/32/sage-4.5.3.alpha0/local/lib/python/site-packages/sage/rings/polynomial/groebner_fan.py\", line 696, in reduced_groebner_bases\n        G = self._gfan_reduced_groebner_bases()\n      File \"/export/home/drkirkby/32/sage-4.5.3.alpha0/local/lib/python/site-packages/sage/rings/polynomial/groebner_fan.py\", line 647, in _gfan_reduced_groebner_bases\n        B = self.gfan()\n      File \"/export/home/drkirkby/32/sage-4.5.3.alpha0/local/lib/python/site-packages/sage/rings/polynomial/groebner_fan.py\", line 755, in gfan\n        s = gfan(I, cmd, verbose=self.__verbose, format=format)\n      File \"/export/home/drkirkby/32/sage-4.5.3.alpha0/local/lib/python/site-packages/sage/interfaces/gfan.py\", line 67, in __call__\n        raise RuntimeError, err\n    RuntimeError: ld.so.1: gfan: fatal: relocation error: file /export/home/drkirkby/32/sage-4.5.3.alpha0/local/bin/gfan: symbol _ZNSt15_List_node_base7_M_hookEPS_: referenced symbol not found\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9736\n\n",
+    "created_at": "2010-08-12T17:27:24Z",
+    "labels": [
+        "doctest coverage",
+        "major",
+        "bug"
+    ],
+    "title": "gfran totally broken on 32-bit OpenSolaris  on x86 CPU",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9736",
+    "user": "drkirkby"
+}
+```
 Assignee: mvngu
 
 CC:  jsp jhpalmieri
 
-*== Hardware & Software ==
- * Sun Ultra 27 
- * 3.33 GHz Intel W3580 Xeon. Quad core. 8 threads. 
- * 12 GB RAM
- * OpenSolaris 2009.06 snv_134b X86
- * Sage 4.5.3.alpha0
- * gcc 4.5.0 configured to use the Sun linker and GNU assembler. 
+ == Hardware & Software ==
+* Sun Ultra 27 
+* 3.33 GHz Intel W3580 Xeon. Quad core. 8 threads. 
+* 12 GB RAM
+* OpenSolaris 2009.06 snv_134b X86
+* Sage 4.5.3.alpha0
+* gcc 4.5.0 configured to use the Sun linker and GNU assembler. 
  == The problem ==
-It would appear 'gfan' is totally broken on this setup, and as a result several tests fail. Strangly, the same problem is *not* observed on a Dell Optiplex 755 running Solaris 10 on x86 - it's only seen on the OpenSolaris machine. 
+It would appear 'gfan' is totally broken on this setup, and as a result several tests fail. Strangly, the same problem is **not** observed on a Dell Optiplex 755 running Solaris 10 on x86 - it's only seen on the OpenSolaris machine. 
 
 
 
@@ -52,10 +62,25 @@ Exception raised:
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/9736
+
+
+
+
 
 ---
 
-Comment by drkirkby created at 2010-08-14 09:00:15
+archive/issue_comments_095198.json:
+```json
+{
+    "body": "This was an error on my part. `LD_LIBRARY_PATH` was not set, and neither were `LD_OPTIONS`, so gfan was picking up the older gcc header files included with OpenSolaris, and not the newer ones which were part of the gcc 4.5.0 on the system. \n\nAs such, this ticket is invalid. \n\nThe only issues affecting 32-bit build on OpenSolaris on x86 are the same as as those effecting 32-bit builds Solaris 10 x86. These are shown on the METATICKET #9734. The problems effecting the 32-bit builds on x86 hardward are:\n\n* Numerical noise issues, #9689,  #9693 and #9735.\n* Issues related to SYMPOW (#9703), which is a rather dubious package that is presenting problems on multiple systems (Cygwin and ArchLinux being two of them) - see #9166. \n\nDave",
+    "created_at": "2010-08-14T09:00:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9736",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9736#issuecomment-95198",
+    "user": "drkirkby"
+}
+```
 
 This was an error on my part. `LD_LIBRARY_PATH` was not set, and neither were `LD_OPTIONS`, so gfan was picking up the older gcc header files included with OpenSolaris, and not the newer ones which were part of the gcc 4.5.0 on the system. 
 
@@ -63,14 +88,25 @@ As such, this ticket is invalid.
 
 The only issues affecting 32-bit build on OpenSolaris on x86 are the same as as those effecting 32-bit builds Solaris 10 x86. These are shown on the METATICKET #9734. The problems effecting the 32-bit builds on x86 hardward are:
 
- * Numerical noise issues, #9689,  #9693 and #9735.
- * Issues related to SYMPOW (#9703), which is a rather dubious package that is presenting problems on multiple systems (Cygwin and ArchLinux being two of them) - see #9166. 
+* Numerical noise issues, #9689,  #9693 and #9735.
+* Issues related to SYMPOW (#9703), which is a rather dubious package that is presenting problems on multiple systems (Cygwin and ArchLinux being two of them) - see #9166. 
 
 Dave
 
 
+
 ---
 
-Comment by drkirkby created at 2010-08-14 09:00:15
+archive/issue_comments_095199.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2010-08-14T09:00:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9736",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9736#issuecomment-95199",
+    "user": "drkirkby"
+}
+```
 
 Resolution: invalid

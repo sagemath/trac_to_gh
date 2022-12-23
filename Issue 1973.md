@@ -1,11 +1,21 @@
 # Issue 1973: native partition_associated function
 
-Issue created by migration from https://trac.sagemath.org/ticket/1973
-
-Original creator: jason
-
-Original creation time: 2008-01-29 16:13:05
-
+archive/issues_001973.json:
+```json
+{
+    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nThis patch replaces the wrapper around Gap to give the conjugate partition.  It speeds up the computation quite a bit.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1973\n\n",
+    "created_at": "2008-01-29T16:13:05Z",
+    "labels": [
+        "combinatorics",
+        "minor",
+        "enhancement"
+    ],
+    "title": "native partition_associated function",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1973",
+    "user": "jason"
+}
+```
 Assignee: mhansen
 
 CC:  sage-combinat
@@ -13,15 +23,43 @@ CC:  sage-combinat
 This patch replaces the wrapper around Gap to give the conjugate partition.  It speeds up the computation quite a bit.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1973
+
+
+
+
 
 ---
+
+archive/issue_comments_012770.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-01-29T16:21:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1973",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1973#issuecomment-12770",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2008-01-29 17:34:45
+archive/issue_comments_012771.json:
+```json
+{
+    "body": "I'd say it's an improvement, but it may be better to avoid code duplication with the following:\n\n\n```\nsage: Partition([3,1]).conjugate()\n[2, 1, 1]\n```\n",
+    "created_at": "2008-01-29T17:34:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1973",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1973#issuecomment-12771",
+    "user": "mhansen"
+}
+```
 
 I'd say it's an improvement, but it may be better to avoid code duplication with the following:
 
@@ -33,9 +71,20 @@ sage: Partition([3,1]).conjugate()
 
 
 
+
 ---
 
-Comment by jason created at 2008-01-29 18:38:41
+archive/issue_comments_012772.json:
+```json
+{
+    "body": "With the patch:\n\n\n```\nsage: %timeit partition_associated([6,5,5,4,2,2,1])\n100000 loops, best of 3: 9.21 \u00b5s per loop\nsage: %timeit Partition([6,5,5,4,2,2,1]).conjugate()\n10000 loops, best of 3: 154 \u00b5s per loop\nsage: a=Partition([6,5,5,4,2,2,1])\nsage: %timeit a.conjugate()\n1000 loops, best of 3: 268 \u00b5s per loop\n```\n\n\nSo I'll probably delete the partition_associated function and replace the Partition.conjugate() function, if that's all right, and post up another patch.",
+    "created_at": "2008-01-29T18:38:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1973",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1973#issuecomment-12772",
+    "user": "jason"
+}
+```
 
 With the patch:
 
@@ -54,9 +103,20 @@ sage: %timeit a.conjugate()
 So I'll probably delete the partition_associated function and replace the Partition.conjugate() function, if that's all right, and post up another patch.
 
 
+
 ---
 
-Comment by mhansen created at 2008-01-29 19:08:43
+archive/issue_comments_012773.json:
+```json
+{
+    "body": "Well, the resason partition_associated is still there is for backward compatibility reasons.  I would make it so that partition_associated returns list(Partition(p).conjugate()). \n\n\nYou can modify Partition_class.conjugate, but make sure you return Partition_class objects.  Within the function, you can eliminate some overhead by replacing \"return Partition...\" with \"return Partition_class...\" since Partition is a wrapper function which does type-checking, etc.",
+    "created_at": "2008-01-29T19:08:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1973",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1973#issuecomment-12773",
+    "user": "mhansen"
+}
+```
 
 Well, the resason partition_associated is still there is for backward compatibility reasons.  I would make it so that partition_associated returns list(Partition(p).conjugate()). 
 
@@ -64,9 +124,20 @@ Well, the resason partition_associated is still there is for backward compatibil
 You can modify Partition_class.conjugate, but make sure you return Partition_class objects.  Within the function, you can eliminate some overhead by replacing "return Partition..." with "return Partition_class..." since Partition is a wrapper function which does type-checking, etc.
 
 
+
 ---
 
-Comment by jason created at 2008-01-29 21:49:23
+archive/issue_comments_012774.json:
+```json
+{
+    "body": "Some timings after I put my code into partition.py:\n\n\n```\n[15:42] <jason-> sage: a=Partition(sum([[i]*20 for i in range(50,1,-1)],[]))\n[15:42] <jason-> sage: print len(a), len(a.conjugate('mike'))\n[15:42] <jason-> 980 50\n[15:42] <jason-> sage: %timeit a.conjugate('jason')\n[15:42] <jason-> 100 loops, best of 3: 3.34 ms per loop\n[15:42] <jason-> sage: %timeit a.conjugate('mike')\n[15:42] <jason-> 100 loops, best of 3: 3.25 ms per loop\n[15:42] <jason-> sage: %timeit a.conjugate('mikeandjason')\n[15:42] <jason-> 100 loops, best of 3: 3.05 ms per loop\n[15:42] <jason-> sage: a=Partition(sum([[i]*2 for i in range(5000,1,-1)],[]))\n[15:42] <jason-> sage: print len(a), len(a.conjugate('mike'))\n[15:42] <jason-> 9998 5000\n[15:42] <jason-> sage: %timeit a.conjugate('jason')\n[15:42] <jason-> 10 loops, best of 3: 246 ms per loop\n[15:42] <jason-> sage: %timeit a.conjugate('mike')\n[15:42] <jason-> 10 loops, best of 3: 34.8 ms per loop\n[15:42] <jason-> sage: %timeit a.conjugate('mikeandjason')\n[15:42] <jason-> 10 loops, best of 3: 32.4 ms per loop\n[15:42] <jason-> we both win this time.\n[15:42] <jason-> 'mikeandjason' is making a few slight modifications to your algorithm (like using .extend instead of +=, etc.)\n```\n\n\nSo I'll post a minor patch to Mike's code.",
+    "created_at": "2008-01-29T21:49:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1973",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1973#issuecomment-12774",
+    "user": "jason"
+}
+```
 
 Some timings after I put my code into partition.py:
 
@@ -98,65 +169,170 @@ Some timings after I put my code into partition.py:
 So I'll post a minor patch to Mike's code.
 
 
+
 ---
+
+archive/issue_comments_012775.json:
+```json
+{
+    "body": "Attachment\n\napply instead of first patch.",
+    "created_at": "2008-01-29T22:00:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1973",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1973#issuecomment-12775",
+    "user": "jason"
+}
+```
 
 Attachment
 
 apply instead of first patch.
 
 
+
 ---
 
-Comment by jason created at 2008-01-29 22:06:37
+archive/issue_comments_012776.json:
+```json
+{
+    "body": "apply instead of first two patches.",
+    "created_at": "2008-01-29T22:06:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1973",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1973#issuecomment-12776",
+    "user": "jason"
+}
+```
 
 apply instead of first two patches.
 
 
+
 ---
+
+archive/issue_comments_012777.json:
+```json
+{
+    "body": "Attachment\n\nYet again, apply this instead of the previous patches.",
+    "created_at": "2008-01-29T22:17:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1973",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1973#issuecomment-12777",
+    "user": "jason"
+}
+```
 
 Attachment
 
 Yet again, apply this instead of the previous patches.
 
 
+
 ---
+
+archive/issue_comments_012778.json:
+```json
+{
+    "body": "Attachment\n\nLooks good to me.",
+    "created_at": "2008-01-29T22:18:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1973",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1973#issuecomment-12778",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 Looks good to me.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-30 02:51:33
+archive/issue_comments_012779.json:
+```json
+{
+    "body": "Merged conjugate-partition.4.patch in Sage 2.10.1.rc3",
+    "created_at": "2008-01-30T02:51:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1973",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1973#issuecomment-12779",
+    "user": "mabshoff"
+}
+```
 
 Merged conjugate-partition.4.patch in Sage 2.10.1.rc3
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-30 02:51:33
+archive/issue_comments_012780.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-30T02:51:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1973",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1973#issuecomment-12780",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-30 04:07:09
+archive/issue_comments_012781.json:
+```json
+{
+    "body": "Resolution changed from fixed to ",
+    "created_at": "2008-01-30T04:07:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1973",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1973#issuecomment-12781",
+    "user": "mabshoff"
+}
+```
 
 Resolution changed from fixed to 
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-30 04:07:09
+archive/issue_comments_012782.json:
+```json
+{
+    "body": "Changing status from closed to reopened.",
+    "created_at": "2008-01-30T04:07:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1973",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1973#issuecomment-12782",
+    "user": "mabshoff"
+}
+```
 
 Changing status from closed to reopened.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-30 04:07:09
+archive/issue_comments_012783.json:
+```json
+{
+    "body": "The following is probably trivial to fix:\n\n```\n\nException exceptions.ImportError: 'cannot import name is_FractionFieldElement' in 'sage.rings.polynomial.polynomial_element.Polynomial_generic_dense.__normalize' ignored\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n```\n\nbut it happens after a `sage -ba`\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-30T04:07:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1973",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1973#issuecomment-12783",
+    "user": "mabshoff"
+}
+```
 
 The following is probably trivial to fix:
 
@@ -174,9 +350,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-30 08:20:52
+archive/issue_comments_012784.json:
+```json
+{
+    "body": "Reverted for good. Somebody needs to revisit this with 2.10.1.rc3 or later.\n\nCheers,\n\nMichael",
+    "created_at": "2008-01-30T08:20:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1973",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1973#issuecomment-12784",
+    "user": "mabshoff"
+}
+```
 
 Reverted for good. Somebody needs to revisit this with 2.10.1.rc3 or later.
 
@@ -185,9 +372,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by jason created at 2008-01-30 16:28:58
+archive/issue_comments_012785.json:
+```json
+{
+    "body": "The error apparently has to do with the top-level import in combinat.py:\n\n    from sage.combinat.partition import Partition\n\nWhen I move the top-level import into the associated_partition function, the failing doctest passes.\n\nMike, do you know what is going on?",
+    "created_at": "2008-01-30T16:28:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1973",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1973#issuecomment-12785",
+    "user": "jason"
+}
+```
 
 The error apparently has to do with the top-level import in combinat.py:
 
@@ -198,35 +396,94 @@ When I move the top-level import into the associated_partition function, the fai
 Mike, do you know what is going on?
 
 
+
 ---
+
+archive/issue_comments_012786.json:
+```json
+{
+    "body": "Attachment\n\nI posted a new patch which should take care of this issue (although I never experienced the -ba issue on my machine).",
+    "created_at": "2008-01-31T06:35:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1973",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1973#issuecomment-12786",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 I posted a new patch which should take care of this issue (although I never experienced the -ba issue on my machine).
 
 
+
 ---
+
+archive/issue_comments_012787.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-02-01T04:19:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1973",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1973#issuecomment-12787",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-01 04:24:50
+archive/issue_comments_012788.json:
+```json
+{
+    "body": "Merged 1973.patch in Sage 2.10.1.rc4",
+    "created_at": "2008-02-01T04:24:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1973",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1973#issuecomment-12788",
+    "user": "mabshoff"
+}
+```
 
 Merged 1973.patch in Sage 2.10.1.rc4
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-01 04:24:50
+archive/issue_comments_012789.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-02-01T04:24:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1973",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1973#issuecomment-12789",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-01 04:25:18
+archive/issue_comments_012790.json:
+```json
+{
+    "body": "Patch looks good to me.\n\nCheers,\n\nMichael",
+    "created_at": "2008-02-01T04:25:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1973",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1973#issuecomment-12790",
+    "user": "mabshoff"
+}
+```
 
 Patch looks good to me.
 

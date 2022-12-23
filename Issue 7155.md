@@ -1,11 +1,21 @@
 # Issue 7155: Allow solving of inequalities
 
-Issue created by migration from https://trac.sagemath.org/ticket/7155
-
-Original creator: kcrisman
-
-Original creation time: 2009-10-08 14:06:10
-
+archive/issues_007155.json:
+```json
+{
+    "body": "CC:  jason jhpalmieri burcin\n\nKeywords: solve, inequality, Maxima\n\nFrom a Maxima FAQ:\n\n```\n(%i1) load(fourier_elim)$\n\n(%i2) fourier_elim([abs(x - abs(5-x)) < 1],[x]);\n(%o2)                          [2<x,x<3]\n\n(%i3) fourier_elim([x + y < 1, x - y > 9],[x,y]);\n(%o3)                     [y+9<x,x<1-y,y<-4]\n\n(%i4) fourier_elim([max(-x,x) < 7 * x + 1],[x]);\n(%o4)                           [-1/8<x]\n```\n\nFrom pre-release codebase:\n\n```\n (%i79) to_poly_solve((x-1)*(x-6) < 0,x);\n (%o79) %union([1 < x,x < 6])\n\n (%i80) to_poly_solve(min(x,1) < max(-5,x),x);\n (%o80) %union([1 < x],[x < -5])\n\n (%i81) to_poly_solve(min(x,1) # max(x,4),x);\n (%o81) %union([1 < x,x < 4],[4 < x],[x = 1],[x < 1],[x = 4])\n\n (%i82)  to_poly_solve((x+1)/(x-1) < 4,x);\n (%o82) %union([5/3 < x],[x < 1])\n```\n\nSo it should not be too hard to wrap this, checking input/output for < or > or something.   This is one of those basic things people want, but which we assume it's too hard to write from scratch (which it probably is!).\n\nIssue created by migration from https://trac.sagemath.org/ticket/7155\n\n",
+    "created_at": "2009-10-08T14:06:10Z",
+    "labels": [
+        "symbolics",
+        "major",
+        "enhancement"
+    ],
+    "title": "Allow solving of inequalities",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7155",
+    "user": "kcrisman"
+}
+```
 CC:  jason jhpalmieri burcin
 
 Keywords: solve, inequality, Maxima
@@ -43,24 +53,61 @@ From pre-release codebase:
 
 So it should not be too hard to wrap this, checking input/output for < or > or something.   This is one of those basic things people want, but which we assume it's too hard to write from scratch (which it probably is!).
 
+Issue created by migration from https://trac.sagemath.org/ticket/7155
+
+
+
+
 
 ---
 
-Comment by kcrisman created at 2009-10-28 00:54:58
+archive/issue_comments_059288.json:
+```json
+{
+    "body": "This is now a duplicate of #7325, which already has a first patch, so I am closing this ticket.",
+    "created_at": "2009-10-28T00:54:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7155",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7155#issuecomment-59288",
+    "user": "kcrisman"
+}
+```
 
 This is now a duplicate of #7325, which already has a first patch, so I am closing this ticket.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-10-28 00:54:58
+archive/issue_comments_059289.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2009-10-28T00:54:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7155",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7155#issuecomment-59289",
+    "user": "kcrisman"
+}
+```
 
 Resolution: duplicate
 
 
+
 ---
 
-Comment by mvngu created at 2009-10-28 12:31:32
+archive/issue_comments_059290.json:
+```json
+{
+    "body": "Replying to [comment:1 kcrisman]:\n> This is now a duplicate of #7325, which already has a first patch, so I am closing this ticket.\n\nkcrisman, please don't close tickets. That's the job of the release manager.  See [this section](http://www.sagemath.org/doc/developer/trac.html#closing-tickets) of the Developer's Guide for conventions on closing tickets.",
+    "created_at": "2009-10-28T12:31:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7155",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7155#issuecomment-59290",
+    "user": "mvngu"
+}
+```
 
 Replying to [comment:1 kcrisman]:
 > This is now a duplicate of #7325, which already has a first patch, so I am closing this ticket.

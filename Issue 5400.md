@@ -1,11 +1,21 @@
 # Issue 5400: parser error
 
-Issue created by migration from https://trac.sagemath.org/ticket/5400
-
-Original creator: jason
-
-Original creation time: 2009-02-28 16:29:19
-
+archive/issues_005400.json:
+```json
+{
+    "body": "Assignee: cwitty\n\nCC:  mvngu\n\nUsing Sage 3.4.alpha0:\n\n\n```\nsage: RDF(e^(1j))\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1419, 0))\n\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1535, 0))\n\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1419, 0))\n\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1419, 0))\n\n(then a TypeError is thrown since I don't have an RDF value)\n\n```\n\n\nNow, of course, the above gives a TypeError, but there still shouldn't be the scary preparser error.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5400\n\n",
+    "created_at": "2009-02-28T16:29:19Z",
+    "labels": [
+        "misc",
+        "major",
+        "bug"
+    ],
+    "title": "parser error",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5400",
+    "user": "jason"
+}
+```
 Assignee: cwitty
 
 CC:  mvngu
@@ -39,10 +49,25 @@ The error message is: ('EOF in multi-line statement', (1419, 0))
 Now, of course, the above gives a TypeError, but there still shouldn't be the scary preparser error.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5400
+
+
+
+
 
 ---
 
-Comment by jason created at 2009-02-28 16:29:50
+archive/issue_comments_041696.json:
+```json
+{
+    "body": "Trying this again:\n\n\n```\nsage: RDF(e^(1j))\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1419, 0))\n\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1535, 0))\n\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1419, 0))\n\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1419, 0))\n```\n",
+    "created_at": "2009-02-28T16:29:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5400",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5400#issuecomment-41696",
+    "user": "jason"
+}
+```
 
 Trying this again:
 
@@ -68,23 +93,56 @@ The error message is: ('EOF in multi-line statement', (1419, 0))
 
 
 
+
 ---
 
-Comment by jason created at 2009-02-28 16:30:31
+archive/issue_comments_041697.json:
+```json
+{
+    "body": "Changing assignee from cwitty to robertwb.",
+    "created_at": "2009-02-28T16:30:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5400",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5400#issuecomment-41697",
+    "user": "jason"
+}
+```
 
 Changing assignee from cwitty to robertwb.
 
 
+
 ---
 
-Comment by jason created at 2009-02-28 16:31:09
+archive/issue_comments_041698.json:
+```json
+{
+    "body": "Robert, I \"assigned\" you the bug because I don't know an easy way to CC you on the bug report, since you are likely the best person to look at this currently.",
+    "created_at": "2009-02-28T16:31:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5400",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5400#issuecomment-41698",
+    "user": "jason"
+}
+```
 
 Robert, I "assigned" you the bug because I don't know an easy way to CC you on the bug report, since you are likely the best person to look at this currently.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-28 16:33:05
+archive/issue_comments_041699.json:
+```json
+{
+    "body": "Replying to [comment:3 jason]:\n> Robert, I \"assigned\" you the bug because I don't know an easy way to CC you on the bug report, since you are likely the best person to look at this currently.\n\nI assume you know about the CC field, so what is the problem? \n\nMany account holders in trac are listed at http://trac.sagemath.org/sage_trac/wiki\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-28T16:33:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5400",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5400#issuecomment-41699",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:3 jason]:
 > Robert, I "assigned" you the bug because I don't know an easy way to CC you on the bug report, since you are likely the best person to look at this currently.
@@ -98,16 +156,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by jason created at 2009-02-28 16:52:40
+archive/issue_comments_041700.json:
+```json
+{
+    "body": "The only CC option I have now with the new trac is to add myself.  It's not a text box anymore.",
+    "created_at": "2009-02-28T16:52:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5400",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5400#issuecomment-41700",
+    "user": "jason"
+}
+```
 
 The only CC option I have now with the new trac is to add myself.  It's not a text box anymore.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-28 16:56:23
+archive/issue_comments_041701.json:
+```json
+{
+    "body": "Replying to [comment:5 jason]:\n> The only CC option I have now with the new trac is to add myself.  It's not a text box anymore.\n\nOk, this is a permission issue with the new trac since I can CC anybody :) \n\nThis is now #5401.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-28T16:56:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5400",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5400#issuecomment-41701",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:5 jason]:
 > The only CC option I have now with the new trac is to add myself.  It's not a text box anymore.
@@ -121,18 +201,40 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by robertwb created at 2009-02-28 22:08:37
+archive/issue_comments_041702.json:
+```json
+{
+    "body": "Hmm... this doesn't happen in 3.3. \n\nWhat does `sage: preparse('RDF(e^(1j))')` give you?",
+    "created_at": "2009-02-28T22:08:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5400",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5400#issuecomment-41702",
+    "user": "robertwb"
+}
+```
 
 Hmm... this doesn't happen in 3.3. 
 
 What does `sage: preparse('RDF(e^(1j))')` give you?
 
 
+
 ---
 
-Comment by robertwb created at 2009-02-28 22:12:02
+archive/issue_comments_041703.json:
+```json
+{
+    "body": "This is not a preparsing bug. \n\n\n```\nsage: a = sage: a = e^1j; a\n e^(1.0*I)\nsage: RDF(a)\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1088, 0))\n...\n```\n",
+    "created_at": "2009-02-28T22:12:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5400",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5400#issuecomment-41703",
+    "user": "robertwb"
+}
+```
 
 This is not a preparsing bug. 
 
@@ -149,16 +251,38 @@ The error message is: ('EOF in multi-line statement', (1088, 0))
 
 
 
+
 ---
 
-Comment by jason created at 2009-03-01 03:12:02
+archive/issue_comments_041704.json:
+```json
+{
+    "body": "Good point with your test.  The tokenizing statement made me think it was the preparser.",
+    "created_at": "2009-03-01T03:12:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5400",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5400#issuecomment-41704",
+    "user": "jason"
+}
+```
 
 Good point with your test.  The tokenizing statement made me think it was the preparser.
 
 
+
 ---
 
-Comment by robertwb created at 2009-05-18 21:50:44
+archive/issue_comments_041705.json:
+```json
+{
+    "body": "This gives the correct error now. \n\n\n```\nsage: RDF(e^(1j))\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"parent.pyx\", line 288, in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:4320)\n  File \"coerce_maps.pyx\", line 155, in sage.structure.coerce_maps.NamedConvertMap._call_ (sage/structure/coerce_maps.c:4225)\n  File \"/usr/local/sage/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 5834, in _real_double_\n    return self._convert(field)\n  File \"/usr/local/sage/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 5718, in _convert\n    return typ(g)\n  File \"parent.pyx\", line 288, in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:4320)\n  File \"coerce_maps.pyx\", line 155, in sage.structure.coerce_maps.NamedConvertMap._call_ (sage/structure/coerce_maps.c:4225)\n  File \"/usr/local/sage/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 5834, in _real_double_\n    return self._convert(field)\n  File \"/usr/local/sage/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 5712, in _convert\n    fops = [typ(op) for op in self._operands]\n  File \"parent.pyx\", line 288, in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:4320)\n  File \"coerce_maps.pyx\", line 155, in sage.structure.coerce_maps.NamedConvertMap._call_ (sage/structure/coerce_maps.c:4225)\n  File \"/usr/local/sage/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 5834, in _real_double_\n    return self._convert(field)\n  File \"/usr/local/sage/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 5712, in _convert\n    fops = [typ(op) for op in self._operands]\n  File \"parent.pyx\", line 288, in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:4320)\n  File \"coerce_maps.pyx\", line 155, in sage.structure.coerce_maps.NamedConvertMap._call_ (sage/structure/coerce_maps.c:4225)\n  File \"/usr/local/sage/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 4839, in _real_double_\n    return R(self._obj)\n  File \"parent.pyx\", line 288, in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:4320)\n  File \"coerce_maps.pyx\", line 155, in sage.structure.coerce_maps.NamedConvertMap._call_ (sage/structure/coerce_maps.c:4225)\n  File \"/usr/local/sage/local/lib/python2.5/site-packages/sage/functions/constants.py\", line 973, in _real_double_\n    raise TypeError\nTypeError\n\n```\n",
+    "created_at": "2009-05-18T21:50:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5400",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5400#issuecomment-41705",
+    "user": "robertwb"
+}
+```
 
 This gives the correct error now. 
 
@@ -200,9 +324,20 @@ TypeError
 
 
 
+
 ---
 
-Comment by timdumol created at 2010-01-18 01:44:29
+archive/issue_comments_041706.json:
+```json
+{
+    "body": "Right now it gives?:\n\n\n```\nsage: RDF(e^(1j))\n[...]\n/home/timdumol/sage-4.3.1.alpha0/local/lib/python2.6/site-packages/sage/rings/complex_number.so in sage.rings.complex_number.ComplexNumber.__float__ (sage/rings/complex_number.c:7209)()\n\nTypeError: can't convert complex to float; use abs(z)\n```\n\n\nThis seems to be the right error. Should this be closed?",
+    "created_at": "2010-01-18T01:44:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5400",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5400#issuecomment-41706",
+    "user": "timdumol"
+}
+```
 
 Right now it gives?:
 
@@ -219,9 +354,20 @@ TypeError: can't convert complex to float; use abs(z)
 This seems to be the right error. Should this be closed?
 
 
+
 ---
 
-Comment by robertwb created at 2010-01-18 19:51:19
+archive/issue_comments_041707.json:
+```json
+{
+    "body": "I hate the fact that \n\n\n```\nsage: RR(CC(-1))\n-1.00000000000000\n```\n\n\nbut\n\n\n```\nsage: RDF(CDF(-1))\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"parent.pyx\", line 538, in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:5007)\n  File \"coerce_maps.pyx\", line 82, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3109)\n  File \"coerce_maps.pyx\", line 77, in sage.structure.coerce_maps._call_ (sage/structure/coerce_maps.c:3000)\n  File \"real_double.pyx\", line 540, in sage.rings.real_double.RealDoubleElement.__init__ (sage/rings/real_double.c:5553)\n  File \"complex_double.pyx\", line 808, in sage.rings.complex_double.ComplexDoubleElement.__float__ (sage/rings/complex_double.c:6628)\nTypeError: can't convert complex to float; use abs(z)\n```\n",
+    "created_at": "2010-01-18T19:51:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5400",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5400#issuecomment-41707",
+    "user": "robertwb"
+}
+```
 
 I hate the fact that 
 
@@ -250,9 +396,20 @@ TypeError: can't convert complex to float; use abs(z)
 
 
 
+
 ---
 
-Comment by jason created at 2010-05-04 15:53:44
+archive/issue_comments_041708.json:
+```json
+{
+    "body": "Replying to [comment:12 robertwb]:\n> I hate the fact that \n> \n> {{{\n> sage: RR(CC(-1))\n> -1.00000000000000\n> }}}\n> \n> but\n> \n> {{{\n> sage: RDF(CDF(-1))\n> ------------------------------------------------------------\n> Traceback (most recent call last):\n>   File \"<ipython console>\", line 1, in <module>\n>   File \"parent.pyx\", line 538, in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:5007)\n>   File \"coerce_maps.pyx\", line 82, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3109)\n>   File \"coerce_maps.pyx\", line 77, in sage.structure.coerce_maps._call_ (sage/structure/coerce_maps.c:3000)\n>   File \"real_double.pyx\", line 540, in sage.rings.real_double.RealDoubleElement.__init__ (sage/rings/real_double.c:5553)\n>   File \"complex_double.pyx\", line 808, in sage.rings.complex_double.ComplexDoubleElement.__float__ (sage/rings/complex_double.c:6628)\n> TypeError: can't convert complex to float; use abs(z)\n> }}}\n\nThat problem should be a different ticket.\n\nThis ticket should be closed.",
+    "created_at": "2010-05-04T15:53:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5400",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5400#issuecomment-41708",
+    "user": "jason"
+}
+```
 
 Replying to [comment:12 robertwb]:
 > I hate the fact that 
@@ -282,23 +439,56 @@ That problem should be a different ticket.
 This ticket should be closed.
 
 
+
 ---
 
-Comment by jason created at 2010-05-04 15:56:54
+archive/issue_comments_041709.json:
+```json
+{
+    "body": "The CDF float conversion problem is now #8869",
+    "created_at": "2010-05-04T15:56:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5400",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5400#issuecomment-41709",
+    "user": "jason"
+}
+```
 
 The CDF float conversion problem is now #8869
 
 
+
 ---
 
-Comment by jason created at 2010-05-11 20:51:49
+archive/issue_comments_041710.json:
+```json
+{
+    "body": "The issue for this ticket is fixed.  This ticket should be closed.",
+    "created_at": "2010-05-11T20:51:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5400",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5400#issuecomment-41710",
+    "user": "jason"
+}
+```
 
 The issue for this ticket is fixed.  This ticket should be closed.
 
 
+
 ---
 
-Comment by mvngu created at 2010-05-11 21:01:20
+archive/issue_comments_041711.json:
+```json
+{
+    "body": "Close as fixed:\n\n\n```\n[mvngu@sage ~]$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: RR(CC(-1))\n-1.00000000000000\nsage: RDF(CDF(-1))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n| Sage Version 4.4.1, Release Date: 2010-05-02                       |\n| Type notebook() for the GUI, and license() for information.        |\n/home/mvngu/<ipython console> in <module>()\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:6332)()\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3108)()\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3010)()\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/rings/real_double.so in sage.rings.real_double.RealDoubleElement.__init__ (sage/rings/real_double.c:5541)()\n\n/usr/local/sage/local/lib/python2.6/site-packages/sage/rings/complex_double.so in sage.rings.complex_double.ComplexDoubleElement.__float__ (sage/rings/complex_double.c:6510)()\n\nTypeError: can't convert complex to float; use abs(z)\n```\n",
+    "created_at": "2010-05-11T21:01:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5400",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5400#issuecomment-41711",
+    "user": "mvngu"
+}
+```
 
 Close as fixed:
 
@@ -331,8 +521,19 @@ TypeError: can't convert complex to float; use abs(z)
 
 
 
+
 ---
 
-Comment by mvngu created at 2010-05-11 21:01:20
+archive/issue_comments_041712.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-05-11T21:01:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5400",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5400#issuecomment-41712",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

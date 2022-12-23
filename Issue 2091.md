@@ -1,11 +1,21 @@
 # Issue 2091: List of Of Objects for a command
 
-Issue created by migration from https://trac.sagemath.org/ticket/2091
-
-Original creator: gmoose05
-
-Original creation time: 2008-02-07 23:43:50
-
+archive/issues_002091.json:
+```json
+{
+    "body": "Assignee: was\n\nI would like a command so that I can get a list of objects that a particular function acts on\n\n\n```\nsage: Objects(.factor) \n\n[PolynomialRing, MultivariatePolynomialRing, IntegerRing, etc.]\n```\n\n\nbut it wouldn't return FractionFieldofPolynomialRing  (for example)\n\nThis might be accomplished by pruning class_graph(sage) for the highest level that includes such a command \n\nIssue created by migration from https://trac.sagemath.org/ticket/2091\n\n",
+    "created_at": "2008-02-07T23:43:50Z",
+    "labels": [
+        "user interface",
+        "minor",
+        "enhancement"
+    ],
+    "title": "List of Of Objects for a command",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2091",
+    "user": "gmoose05"
+}
+```
 Assignee: was
 
 I would like a command so that I can get a list of objects that a particular function acts on
@@ -21,3 +31,7 @@ sage: Objects(.factor)
 but it wouldn't return FractionFieldofPolynomialRing  (for example)
 
 This might be accomplished by pruning class_graph(sage) for the highest level that includes such a command 
+
+Issue created by migration from https://trac.sagemath.org/ticket/2091
+
+

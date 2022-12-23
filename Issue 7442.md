@@ -1,56 +1,136 @@
 # Issue 7442: Update scipy to the latest version (0.7.1)
 
-Issue created by migration from https://trac.sagemath.org/ticket/7442
-
-Original creator: mhansen
-
-Original creation time: 2009-11-12 07:05:11
-
+archive/issues_007442.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  jason\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7442\n\n",
+    "created_at": "2009-11-12T07:05:11Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "enhancement"
+    ],
+    "title": "Update scipy to the latest version (0.7.1)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7442",
+    "user": "mhansen"
+}
+```
 Assignee: tbd
 
 CC:  jason
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7442
+
+
+
+
 
 ---
 
-Comment by jason created at 2009-11-12 07:22:43
+archive/issue_comments_062655.json:
+```json
+{
+    "body": "spkg up at http://sage.math.washington.edu/home/jason/scipy-0.7.1.spkg",
+    "created_at": "2009-11-12T07:22:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7442",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7442#issuecomment-62655",
+    "user": "jason"
+}
+```
 
 spkg up at http://sage.math.washington.edu/home/jason/scipy-0.7.1.spkg
 
 
+
 ---
 
-Comment by jason created at 2009-11-12 07:22:43
+archive/issue_comments_062656.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-11-12T07:22:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7442",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7442#issuecomment-62656",
+    "user": "jason"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jason created at 2010-01-20 08:48:14
+archive/issue_comments_062657.json:
+```json
+{
+    "body": "The exact same issue is addressed in #6914.",
+    "created_at": "2010-01-20T08:48:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7442",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7442#issuecomment-62657",
+    "user": "jason"
+}
+```
 
 The exact same issue is addressed in #6914.
 
 
+
 ---
 
-Comment by timdumol created at 2010-01-20 10:46:24
+archive/issue_comments_062658.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-01-20T10:46:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7442",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7442#issuecomment-62658",
+    "user": "timdumol"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by timdumol created at 2010-01-20 10:46:24
+archive/issue_comments_062659.json:
+```json
+{
+    "body": "LGTM.",
+    "created_at": "2010-01-20T10:46:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7442",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7442#issuecomment-62659",
+    "user": "timdumol"
+}
+```
 
 LGTM.
 
 
+
 ---
 
-Comment by mvngu created at 2010-01-24 23:48:08
+archive/issue_comments_062660.json:
+```json
+{
+    "body": "The package [scipy-0.7.1.spkg](http://sage.math.washington.edu/home/jason/scipy-0.7.1.spkg) contains some changes not yet checked in:\n\n```\n[mvngu@sage scipy-0.7.1]$ hg status\n? .copy_patches.pl.swp\n? patches/setup.py.special.orig\n```\n\nIs `patches/setup.py.special.orig` meant to be under revision control? The file `.copy_patches.pl.swp` looks like a junk file. If so, it needs to be deleted.",
+    "created_at": "2010-01-24T23:48:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7442",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7442#issuecomment-62660",
+    "user": "mvngu"
+}
+```
 
 The package [scipy-0.7.1.spkg](http://sage.math.washington.edu/home/jason/scipy-0.7.1.spkg) contains some changes not yet checked in:
 
@@ -63,22 +143,55 @@ The package [scipy-0.7.1.spkg](http://sage.math.washington.edu/home/jason/scipy-
 Is `patches/setup.py.special.orig` meant to be under revision control? The file `.copy_patches.pl.swp` looks like a junk file. If so, it needs to be deleted.
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-10 11:03:48
+archive/issue_comments_062661.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_work.",
+    "created_at": "2010-02-10T11:03:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7442",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7442#issuecomment-62661",
+    "user": "mpatel"
+}
+```
 
 Changing status from positive_review to needs_work.
 
 
+
 ---
 
-Comment by jason created at 2011-10-18 18:32:20
+archive/issue_comments_062662.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2011-10-18T18:32:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7442",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7442#issuecomment-62662",
+    "user": "jason"
+}
+```
 
 Resolution: invalid
 
 
+
 ---
 
-Comment by jason created at 2011-10-18 18:32:20
+archive/issue_comments_062663.json:
+```json
+{
+    "body": "Somehow we are at scipy 0.9 now, so this ticket should be closed as invalid now.",
+    "created_at": "2011-10-18T18:32:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7442",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7442#issuecomment-62663",
+    "user": "jason"
+}
+```
 
 Somehow we are at scipy 0.9 now, so this ticket should be closed as invalid now.

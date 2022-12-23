@@ -1,11 +1,21 @@
 # Issue 3692: notebook -- issue with quotes
 
-Issue created by migration from https://trac.sagemath.org/ticket/3692
-
-Original creator: was
-
-Original creation time: 2008-07-21 07:07:29
-
+archive/issues_003692.json:
+```json
+{
+    "body": "Assignee: boothby\n\nUsing notebook mode.\n\n\n```\nProblem:\ncell input: '\\''\noutput: '\\\\u0027'\nexpected output: '\\u0027'\n```\n\n\nSincerely,\nMats\n\nIssue created by migration from https://trac.sagemath.org/ticket/3692\n\n",
+    "created_at": "2008-07-21T07:07:29Z",
+    "labels": [
+        "notebook",
+        "minor",
+        "bug"
+    ],
+    "title": "notebook -- issue with quotes",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3692",
+    "user": "was"
+}
+```
 Assignee: boothby
 
 Using notebook mode.
@@ -22,10 +32,25 @@ expected output: '\u0027'
 Sincerely,
 Mats
 
+Issue created by migration from https://trac.sagemath.org/ticket/3692
+
+
+
+
 
 ---
 
-Comment by was created at 2008-07-21 20:01:55
+archive/issue_comments_026158.json:
+```json
+{
+    "body": "Tom Boothby:\n\n```\n\nEither this is a python bug, \"user error\", or a feature request.  I don't think this is a problem with the notebook.\n\nboothby@eight:~$ sage -python\nPython 2.5.1 (r251:54863, Nov  9 2007, 07:54:29)\n[GCC 4.1.2 20061115 (prerelease) (Debian 4.1.1-21)] on linux2\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> x = '\\u0027'\n>>> x\n'\\\\u0027'\n>>>\n\nThe default behavior is to call repr on the return value of the last line (if not None), yes?  If so, this is consistent.  If not, what?  Should we call print instead of repr? (then, I believe it's a feature request)\n```\n",
+    "created_at": "2008-07-21T20:01:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3692",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3692#issuecomment-26158",
+    "user": "was"
+}
+```
 
 Tom Boothby:
 
@@ -47,8 +72,19 @@ The default behavior is to call repr on the return value of the last line (if no
 
 
 
+
 ---
 
-Comment by was created at 2008-07-21 20:01:55
+archive/issue_comments_026159.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2008-07-21T20:01:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3692",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3692#issuecomment-26159",
+    "user": "was"
+}
+```
 
 Resolution: invalid

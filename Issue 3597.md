@@ -1,11 +1,21 @@
 # Issue 3597: building sage on opensuse x86_64 fails with readline detection error
 
-Issue created by migration from https://trac.sagemath.org/ticket/3597
-
-Original creator: was
-
-Original creation time: 2008-07-07 23:30:37
-
+archive/issues_003597.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nThis is on menas on skynet:\n\n\n```\n\nConfigure findings:\n  FFI:        no (user requested: default)\n  readline:   no (user requested: /home/wstein/menas/build/sage-3.0.4.alpha2/local)\n  libsigsegv: no, consider installing GNU libsigsegv\nAs you requested, we will proceed without libsigsegv...\n./makemake  --with-readline=/home/wstein/menas/build/sage-3.0.4.alpha2/local --prefix=/home/wstein/menas/build/sage-3.0.4.alpha2/local --without-libintl    > Makefile\nmakemake: configure failed to detect readline\nError configuring clisp\n\nreal    0m35.648s\nuser    0m10.957s\nsys     0m10.445s\nsage: An error occurred while installing clisp-2.46.p1\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3597\n\n",
+    "created_at": "2008-07-07T23:30:37Z",
+    "labels": [
+        "packages: standard",
+        "blocker",
+        "bug"
+    ],
+    "title": "building sage on opensuse x86_64 fails with readline detection error",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3597",
+    "user": "was"
+}
+```
 Assignee: mabshoff
 
 This is on menas on skynet:
@@ -30,19 +40,45 @@ sage: An error occurred while installing clisp-2.46.p1
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3597
+
+
+
+
 
 ---
 
-Comment by was created at 2008-07-07 23:47:39
+archive/issue_comments_025416.json:
+```json
+{
+    "body": "Here it is:\n\n  http://sage.math.washington.edu/home/was/patches/clisp-2.46.p2.spkg",
+    "created_at": "2008-07-07T23:47:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3597",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3597#issuecomment-25416",
+    "user": "was"
+}
+```
 
 Here it is:
 
   http://sage.math.washington.edu/home/was/patches/clisp-2.46.p2.spkg
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-08 00:16:56
+archive/issue_comments_025417.json:
+```json
+{
+    "body": "Positive review, it builds for me, but cripples Maxima for now. Oh well, Maxima without readline is better than no Maxima at all.\n\nCheers,\n\nMichael",
+    "created_at": "2008-07-08T00:16:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3597",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3597#issuecomment-25417",
+    "user": "mabshoff"
+}
+```
 
 Positive review, it builds for me, but cripples Maxima for now. Oh well, Maxima without readline is better than no Maxima at all.
 
@@ -51,15 +87,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by was created at 2008-07-08 00:18:45
+archive/issue_comments_025418.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-07-08T00:18:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3597",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3597#issuecomment-25418",
+    "user": "was"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-08 00:40:54
+archive/issue_comments_025419.json:
+```json
+{
+    "body": "Merged in Sage 3.0.4.rc0",
+    "created_at": "2008-07-08T00:40:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3597",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3597#issuecomment-25419",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.4.rc0

@@ -1,11 +1,21 @@
 # Issue 6318: optional doctest failure -- axiom interface -- something doesn't work
 
-Issue created by migration from https://trac.sagemath.org/ticket/6318
-
-Original creator: was
-
-Original creation time: 2009-06-16 14:46:39
-
+archive/issues_006318.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  awebb\n\n\n```\nsage -t -long --optional devel/sage/sage/interfaces/sage0.py\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/interfaces/sage0.py\", line 252:\n    sage: sage0(axiom(x^2+1)) #optional - axiom\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_6[5]>\", line 1, in <module>\n        sage0(axiom(x**Integer(2)+Integer(1))) #optional - axiom###line 252:\n    sage: sage0(axiom(x^2+1)) #optional - axiom\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 1026, in __call__\n        return self._coerce_from_special_method(x)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 1050, in _coerce_from_special_method\n        return (x.__getattribute__(s))(self)\n      File \"sage_object.pyx\", line 310, in sage.structure.sage_object.SageObject._axiom_ (sage/structure/sage_object.c:3875)\n      File \"expression.pyx\", line 404, in sage.symbolic.expression.Expression._interface_ (sage/symbolic/expression.cpp:3275)\n      File \"sage_object.pyx\", line 248, in sage.structure.sage_object.SageObject._interface_ (sage/structure/sage_object.c:2716)\n      File \"sage_object.pyx\", line 315, in sage.structure.sage_object.SageObject._axiom_init_ (sage/structure/sage_object.c:3969)\n      File \"expression.pyx\", line 443, in sage.symbolic.expression.Expression._interface_init_ (sage/symbolic/expression.cpp:3536)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/symbolic/expression_conversions.py\", line 401, in __init__\n        self.relation_symbols = interface._relation_symbols()\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 1139, in _relation_symbols\n        return dict([(operator.eq, self._equality_symbol()), (operator.ne, \"!=\"),\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 1105, in _equality_symbol\n        raise NotImplementedError\n    NotImplementedError\n**********************************************************************\n1 items had failures:\n   1 of   6 in __main__.example_6\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/wstein/build/sage-4.0.2.alpha3/tmp/.doctest_sage0.py\n\t [8.0 s]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6318\n\n",
+    "created_at": "2009-06-16T14:46:39Z",
+    "labels": [
+        "packages: optional",
+        "major",
+        "bug"
+    ],
+    "title": "optional doctest failure -- axiom interface -- something doesn't work",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6318",
+    "user": "was"
+}
+```
 Assignee: tbd
 
 CC:  awebb
@@ -52,10 +62,25 @@ For whitespace errors, see the file /home/wstein/build/sage-4.0.2.alpha3/tmp/.do
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6318
+
+
+
+
 
 ---
 
-Comment by was created at 2009-06-16 14:55:32
+archive/issue_comments_050422.json:
+```json
+{
+    "body": "Here's another optional doctest failure in the sage/axiom/fricas interface:\n\n```\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/rings/integer_mod_ring.py\", line 301:\n    sage: fricas(Z7) #optional - fricas\nExpected:\n    IntegerMod(7)\nGot:\n    IntegerMod 7\n**********************************************************************\n2 items had failures:\n   2 of   4 in __main__.example_6\n```\n",
+    "created_at": "2009-06-16T14:55:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6318",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6318#issuecomment-50422",
+    "user": "was"
+}
+```
 
 Here's another optional doctest failure in the sage/axiom/fricas interface:
 
@@ -74,9 +99,20 @@ Got:
 
 
 
+
 ---
 
-Comment by was created at 2009-06-16 14:58:09
+archive/issue_comments_050423.json:
+```json
+{
+    "body": "Another axiom/fricas failure:\n\n```\nsage -t -long --optional devel/sage/sage/rings/integer_mod.pyx\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/rings/integer_mod.pyx\", line 415:\n    sage: aa.type()          #optional - fricas\nExpected:\n    IntegerMod(15)\nGot:\n    IntegerMod 15\n**********************************************************************\n1 items had failures:\n   1 of   8 in __main__.example_13\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/wstein/build/sage-4.0.2.alpha3/tmp/.doctest_integer_mod.py\n\t [9.0 s]\n```\n",
+    "created_at": "2009-06-16T14:58:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6318",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6318#issuecomment-50423",
+    "user": "was"
+}
+```
 
 Another axiom/fricas failure:
 
@@ -99,9 +135,20 @@ For whitespace errors, see the file /home/wstein/build/sage-4.0.2.alpha3/tmp/.do
 
 
 
+
 ---
 
-Comment by was created at 2009-06-16 15:09:06
+archive/issue_comments_050424.json:
+```json
+{
+    "body": "More failures:\n\n```\nsage -t -long --optional devel/sage/sage/interfaces/fricas.py\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/interfaces/fricas.py\", line 61:\n    sage: F.type()                              # optional - fricas\nExpected:\n    Factored(Polynomial(Integer))\nGot:\n    Factored Polynomial Integer\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/interfaces/fricas.py\", line 84:\n    sage: print fricas.eval('factor(x^5 - y^5)')   # optional - fricas\nExpected:\n               4      3    2 2    3     4\n    - (y - x)(y  + x y  + x y  + x y + x )    Type: Factored(Polynomial(Integer))\nGot:\n                 4      3    2 2    3     4\n\n      - (y - x)(y  + x y  + x y  + x y + x )\n\n                                                                                                                                                                                                                 Type: Factored Polynomial Integer\n\n    <BLANKLINE>\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/interfaces/fricas.py\", line 129:\n    sage: a = fricas(x+2); a  #optional - fricas\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[18]>\", line 1, in <module>\n        a = fricas(x+Integer(2)); a  #optional - fricas###line 129:\n    sage: a = fricas(x+2); a  #optional - fricas\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 1026, in __call__\n        return self._coerce_from_special_method(x)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 1050, in _coerce_from_special_method\n        return (x.__getattribute__(s))(self)\n      File \"sage_object.pyx\", line 321, in sage.structure.sage_object.SageObject._fricas_ (sage/structure/sage_object.c:4113)\n      File \"expression.pyx\", line 404, in sage.symbolic.expression.Expression._interface_ (sage/symbolic/expression.cpp:3275)\n      File \"sage_object.pyx\", line 248, in sage.structure.sage_object.SageObject._interface_ (sage/structure/sage_object.c:2716)\n      File \"sage_object.pyx\", line 324, in sage.structure.sage_object.SageObject._fricas_init_ (sage/structure/sage_object.c:4164)\n    TypeError: _interface_init_() takes exactly one argument (0 given)\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/interfaces/fricas.py\", line 131:\n    sage: a.subst(x=3)       #optional - fricas\nExpected:\n    5\nGot:\n         +-+\n\n      29\\|2  + 41\n**********************************************************************\n1 items had failures:\n   4 of  21 in __main__.example_0\n***Test Failed*** 4 failures.\n\n```\n",
+    "created_at": "2009-06-16T15:09:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6318",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6318#issuecomment-50424",
+    "user": "was"
+}
+```
 
 More failures:
 
@@ -169,9 +216,20 @@ Got:
 
 
 
+
 ---
 
-Comment by was created at 2009-06-16 15:16:24
+archive/issue_comments_050425.json:
+```json
+{
+    "body": "More failures:\n\n```\nsage -t -long --optional devel/sage/sage/interfaces/axiom.py\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/interfaces/axiom.py\", line 152:\n    sage: a = axiom(x+2); a  #optional - axiom\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[18]>\", line 1, in <module>\n        a = axiom(x+Integer(2)); a  #optional - axiom###line 152:\n    sage: a = axiom(x+2); a  #optional - axiom\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 1026, in __call__\n        return self._coerce_from_special_method(x)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 1050, in _coerce_from_special_method\n        return (x.__getattribute__(s))(self)\n      File \"sage_object.pyx\", line 310, in sage.structure.sage_object.SageObject._axiom_ (sage/structure/sage_object.c:3875)\n      File \"expression.pyx\", line 404, in sage.symbolic.expression.Expression._interface_ (sage/symbolic/expression.cpp:3275)\n      File \"sage_object.pyx\", line 248, in sage.structure.sage_object.SageObject._interface_ (sage/structure/sage_object.c:2716)\n      File \"sage_object.pyx\", line 315, in sage.structure.sage_object.SageObject._axiom_init_ (sage/structure/sage_object.c:3969)\n      File \"expression.pyx\", line 443, in sage.symbolic.expression.Expression._interface_init_ (sage/symbolic/expression.cpp:3536)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/symbolic/expression_conversions.py\", line 401, in __init__\n        self.relation_symbols = interface._relation_symbols()\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 1139, in _relation_symbols\n        return dict([(operator.eq, self._equality_symbol()), (operator.ne, \"!=\"),\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 1105, in _equality_symbol\n        raise NotImplementedError\n    NotImplementedError\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/interfaces/axiom.py\", line 154:\n    sage: a.subst(x=3)       #optional - axiom\nExpected:\n    5\nGot:\n         +-+\n      29\\|2  + 41\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/interfaces/axiom.py\", line 551:\n    sage: f = axiom(x+2) #optional - axiom\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_16[2]>\", line 1, in <module>\n        f = axiom(x+Integer(2)) #optional - axiom###line 551:\n    sage: f = axiom(x+2) #optional - axiom\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 1026, in __call__\n        return self._coerce_from_special_method(x)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 1050, in _coerce_from_special_method\n        return (x.__getattribute__(s))(self)\n      File \"sage_object.pyx\", line 310, in sage.structure.sage_object.SageObject._axiom_ (sage/structure/sage_object.c:3875)\n      File \"expression.pyx\", line 404, in sage.symbolic.expression.Expression._interface_ (sage/symbolic/expression.cpp:3275)\n      File \"sage_object.pyx\", line 248, in sage.structure.sage_object.SageObject._interface_ (sage/structure/sage_object.c:2716)\n      File \"sage_object.pyx\", line 315, in sage.structure.sage_object.SageObject._axiom_init_ (sage/structure/sage_object.c:3969)\n      File \"expression.pyx\", line 443, in sage.symbolic.expression.Expression._interface_init_ (sage/symbolic/expression.cpp:3536)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/symbolic/expression_conversions.py\", line 401, in __init__\n        self.relation_symbols = interface._relation_symbols()\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 1139, in _relation_symbols\n        return dict([(operator.eq, self._equality_symbol()), (operator.ne, \"!=\"),\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 1105, in _equality_symbol\n        raise NotImplementedError\n    NotImplementedError\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/interfaces/axiom.py\", line 552:\n    sage: f(2)           #optional - axiom\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_16[3]>\", line 1, in <module>\n        f(Integer(2))           #optional - axiom###line 552:\n    sage: f(2)           #optional - axiom\n    NameError: name 'f' is not defined\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/interfaces/axiom.py\", line 613:\n    sage: axiom(x+2).type()  #optional - axiom\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_18[2]>\", line 1, in <module>\n        axiom(x+Integer(2)).type()  #optional - axiom###line 613:\n    sage: axiom(x+2).type()  #optional - axiom\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 1026, in __call__\n        return self._coerce_from_special_method(x)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 1050, in _coerce_from_special_method\n        return (x.__getattribute__(s))(self)\n      File \"sage_object.pyx\", line 310, in sage.structure.sage_object.SageObject._axiom_ (sage/structure/sage_object.c:3875)\n      File \"expression.pyx\", line 404, in sage.symbolic.expression.Expression._interface_ (sage/symbolic/expression.cpp:3275)\n      File \"sage_object.pyx\", line 248, in sage.structure.sage_object.SageObject._interface_ (sage/structure/sage_object.c:2716)\n      File \"sage_object.pyx\", line 315, in sage.structure.sage_object.SageObject._axiom_init_ (sage/structure/sage_object.c:3969)\n      File \"expression.pyx\", line 443, in sage.symbolic.expression.Expression._interface_init_ (sage/symbolic/expression.cpp:3536)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/symbolic/expression_conversions.py\", line 401, in __init__\n        self.relation_symbols = interface._relation_symbols()\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 1139, in _relation_symbols\n        return dict([(operator.eq, self._equality_symbol()), (operator.ne, \"!=\"),\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 1105, in _equality_symbol\n        raise NotImplementedError\n    NotImplementedError\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/interfaces/axiom.py\", line 704:\n    sage: latex(a)       #optional - axiom\nExpected:\n    \\frac{1}{2}\nGot:\n     1 \\over 2   \n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/interfaces/axiom.py\", line 761:\n    sage: a = axiom(x^2+1); a     #optional - axiom\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_24[2]>\", line 1, in <module>\n        a = axiom(x**Integer(2)+Integer(1)); a     #optional - axiom###line 761:\n    sage: a = axiom(x^2+1); a     #optional - axiom\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 1026, in __call__\n        return self._coerce_from_special_method(x)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 1050, in _coerce_from_special_method\n        return (x.__getattribute__(s))(self)\n      File \"sage_object.pyx\", line 310, in sage.structure.sage_object.SageObject._axiom_ (sage/structure/sage_object.c:3875)\n      File \"expression.pyx\", line 404, in sage.symbolic.expression.Expression._interface_ (sage/symbolic/expression.cpp:3275)\n      File \"sage_object.pyx\", line 248, in sage.structure.sage_object.SageObject._interface_ (sage/structure/sage_object.c:2716)\n      File \"sage_object.pyx\", line 315, in sage.structure.sage_object.SageObject._axiom_init_ (sage/structure/sage_object.c:3969)\n      File \"expression.pyx\", line 443, in sage.symbolic.expression.Expression._interface_init_ (sage/symbolic/expression.cpp:3536)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/symbolic/expression_conversions.py\", line 401, in __init__\n        self.relation_symbols = interface._relation_symbols()\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 1139, in _relation_symbols\n        return dict([(operator.eq, self._equality_symbol()), (operator.ne, \"!=\"),\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 1105, in _equality_symbol\n        raise NotImplementedError\n    NotImplementedError\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/interfaces/axiom.py\", line 764:\n    sage: a.unparsed_input_form() #optional - axiom\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_24[3]>\", line 1, in <module>\n        a.unparsed_input_form() #optional - axiom###line 764:\n    sage: a.unparsed_input_form() #optional - axiom\n    NameError: name 'a' is not defined\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/interfaces/axiom.py\", line 767:\n    sage: a = fricas(x^2+1)       #optional - fricas\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_24[4]>\", line 1, in <module>\n        a = fricas(x**Integer(2)+Integer(1))       #optional - fricas###line 767:\n    sage: a = fricas(x^2+1)       #optional - fricas\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 1026, in __call__\n        return self._coerce_from_special_method(x)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 1050, in _coerce_from_special_method\n        return (x.__getattribute__(s))(self)\n      File \"sage_object.pyx\", line 321, in sage.structure.sage_object.SageObject._fricas_ (sage/structure/sage_object.c:4113)\n      File \"expression.pyx\", line 404, in sage.symbolic.expression.Expression._interface_ (sage/symbolic/expression.cpp:3275)\n      File \"sage_object.pyx\", line 248, in sage.structure.sage_object.SageObject._interface_ (sage/structure/sage_object.c:2716)\n      File \"sage_object.pyx\", line 324, in sage.structure.sage_object.SageObject._fricas_init_ (sage/structure/sage_object.c:4164)\n    TypeError: _interface_init_() takes exactly one argument (0 given)\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/interfaces/axiom.py\", line 768:\n    sage: a.unparsed_input_form() #optional - fricas\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_24[5]>\", line 1, in <module>\n        a.unparsed_input_form() #optional - fricas###line 768:\n    sage: a.unparsed_input_form() #optional - fricas\n    NameError: name 'a' is not defined\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/interfaces/axiom.py\", line 836:\n    sage: a = axiom(x^2 + 1)   #optional - axiom\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_25[17]>\", line 1, in <module>\n        a = axiom(x**Integer(2) + Integer(1))   #optional - axiom###line 836:\n    sage: a = axiom(x^2 + 1)   #optional - axiom\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 1026, in __call__\n        return self._coerce_from_special_method(x)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 1050, in _coerce_from_special_method\n        return (x.__getattribute__(s))(self)\n      File \"sage_object.pyx\", line 310, in sage.structure.sage_object.SageObject._axiom_ (sage/structure/sage_object.c:3875)\n      File \"expression.pyx\", line 404, in sage.symbolic.expression.Expression._interface_ (sage/symbolic/expression.cpp:3275)\n      File \"sage_object.pyx\", line 248, in sage.structure.sage_object.SageObject._interface_ (sage/structure/sage_object.c:2716)\n      File \"sage_object.pyx\", line 315, in sage.structure.sage_object.SageObject._axiom_init_ (sage/structure/sage_object.c:3969)\n      File \"expression.pyx\", line 443, in sage.symbolic.expression.Expression._interface_init_ (sage/symbolic/expression.cpp:3536)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/symbolic/expression_conversions.py\", line 401, in __init__\n        self.relation_symbols = interface._relation_symbols()\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 1139, in _relation_symbols\n        return dict([(operator.eq, self._equality_symbol()), (operator.ne, \"!=\"),\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 1105, in _equality_symbol\n        raise NotImplementedError\n    NotImplementedError\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/interfaces/axiom.py\", line 837:\n    sage: a.type()             #optional - axiom\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_25[18]>\", line 1, in <module>\n        a.type()             #optional - axiom###line 837:\n    sage: a.type()             #optional - axiom\n    AttributeError: 'sage.rings.real_mpfr.RealNumber' object has no attribute 'type'\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/interfaces/axiom.py\", line 839:\n    sage: a.sage()             #optional - axiom\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_25[19]>\", line 1, in <module>\n        a.sage()             #optional - axiom###line 839:\n    sage: a.sage()             #optional - axiom\n    AttributeError: 'sage.rings.real_mpfr.RealNumber' object has no attribute 'sage'\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/interfaces/axiom.py\", line 841:\n    sage: _.parent()           #optional - axiom\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-4.0.2.alpha3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_25[20]>\", line 1, in <module>\n        _.parent()           #optional - axiom###line 841:\n    sage: _.parent()           #optional - axiom\n    AttributeError: 'sage.rings.real_mpfr.RealField' object has no attribute 'parent'\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/interfaces/axiom.py\", line 403:\n    sage: axiom.get(a.name())          #optional - axiom\nExpected:\n    '     +-+\\r\\r\\n  29\\\\|2  + 41'\nGot:\n    '     +-+\\r\\n  29\\\\|2  + 41'\n**********************************************************************\n7 items had failures:\n   2 of  21 in __main__.example_0\n   2 of   4 in __main__.example_16\n   1 of   3 in __main__.example_18\n   1 of   6 in __main__.example_22\n   4 of   6 in __main__.example_24\n   4 of  23 in __main__.example_25\n   1 of   6 in __main__.example_9\n***Test Failed*** 15 failures.\nFor whitespace errors, see the file /hom\n```\n",
+    "created_at": "2009-06-16T15:16:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6318",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6318#issuecomment-50425",
+    "user": "was"
+}
+```
 
 More failures:
 
@@ -477,45 +535,115 @@ For whitespace errors, see the file /hom
 
 
 
+
 ---
+
+archive/issue_comments_050426.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-06-21T13:42:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6318",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6318#issuecomment-50426",
+    "user": "awebb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by awebb created at 2009-06-21 13:48:53
+archive/issue_comments_050427.json:
+```json
+{
+    "body": "Adding an __init__ method to the FriCAS class should clear up a few issues.",
+    "created_at": "2009-06-21T13:48:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6318",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6318#issuecomment-50427",
+    "user": "awebb"
+}
+```
 
 Adding an __init__ method to the FriCAS class should clear up a few issues.
 
 
+
 ---
+
+archive/issue_comments_050428.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-06-27T11:52:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6318",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6318#issuecomment-50428",
+    "user": "awebb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by awebb created at 2009-06-27 12:00:53
+archive/issue_comments_050429.json:
+```json
+{
+    "body": "Most changes were in the axiom.py and fricas.py files in the interfaces. \nChanges:\n* init method for FriCAS class should call fricas instead of axiom\n* expected output from fricas changed for some things e.g. Tuple PositiveInteger ==> Tuple(PositiveInteger)\n* fix fricas_init in sage_object\n* add equality symbol",
+    "created_at": "2009-06-27T12:00:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6318",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6318#issuecomment-50429",
+    "user": "awebb"
+}
+```
 
 Most changes were in the axiom.py and fricas.py files in the interfaces. 
 Changes:
- * init method for FriCAS class should call fricas instead of axiom
- * expected output from fricas changed for some things e.g. Tuple PositiveInteger ==> Tuple(PositiveInteger)
- * fix fricas_init in sage_object
- * add equality symbol
+* init method for FriCAS class should call fricas instead of axiom
+* expected output from fricas changed for some things e.g. Tuple PositiveInteger ==> Tuple(PositiveInteger)
+* fix fricas_init in sage_object
+* add equality symbol
+
 
 
 ---
 
-Comment by mvngu created at 2009-07-12 12:10:08
+archive/issue_comments_050430.json:
+```json
+{
+    "body": "See also ticket #6517 for an spkg of FriCAS 1.0.7.",
+    "created_at": "2009-07-12T12:10:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6318",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6318#issuecomment-50430",
+    "user": "mvngu"
+}
+```
 
 See also ticket #6517 for an spkg of FriCAS 1.0.7.
 
 
+
 ---
 
-Comment by awebb created at 2009-07-24 06:44:38
+archive/issue_comments_050431.json:
+```json
+{
+    "body": "This patch assumes a separate Fricas and Axiom. Axiom was tested using an installed system axiom. I may have not understood something but fricas no longer provides an 'axiom' script. That is, it not longer pretends to be axiom. \n\nMy reading of this thread is that the name axiom is not to used for fricas.\nhttp://trac.sagemath.org/sage_trac/ticket/5111\n\nThis thread points out a deviation where fricas is now different then axiom.\nhttp://groups.google.com/group/fricas-devel/browse_thread/thread/86bff34da5720955#\n\nAdam",
+    "created_at": "2009-07-24T06:44:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6318",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6318#issuecomment-50431",
+    "user": "awebb"
+}
+```
 
 This patch assumes a separate Fricas and Axiom. Axiom was tested using an installed system axiom. I may have not understood something but fricas no longer provides an 'axiom' script. That is, it not longer pretends to be axiom. 
 
@@ -528,40 +656,95 @@ http://groups.google.com/group/fricas-devel/browse_thread/thread/86bff34da572095
 Adam
 
 
+
 ---
 
-Comment by awebb created at 2009-07-24 16:58:28
+archive/issue_comments_050432.json:
+```json
+{
+    "body": "Just to clarify. My understanding is that the name Axiom is only for Axiom for copyright reasons and Sage now uses Fricas. As the two programs diverge it seems unreasonable to have an 'axiom' script' point to fricas. However, I may be totally confused about this. \n\nAdam",
+    "created_at": "2009-07-24T16:58:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6318",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6318#issuecomment-50432",
+    "user": "awebb"
+}
+```
 
 Just to clarify. My understanding is that the name Axiom is only for Axiom for copyright reasons and Sage now uses Fricas. As the two programs diverge it seems unreasonable to have an 'axiom' script' point to fricas. However, I may be totally confused about this. 
 
 Adam
 
 
+
 ---
 
-Comment by awebb created at 2009-11-14 13:55:48
+archive/issue_comments_050433.json:
+```json
+{
+    "body": "I ran the doctests for axiom.py and fricas.py using axiom (compiled from source -July 2009), and fricas 1.0.8 (from #6517). All tests passed on sage 4.2.1.alpha0.  \n\nAdam",
+    "created_at": "2009-11-14T13:55:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6318",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6318#issuecomment-50433",
+    "user": "awebb"
+}
+```
 
 I ran the doctests for axiom.py and fricas.py using axiom (compiled from source -July 2009), and fricas 1.0.8 (from #6517). All tests passed on sage 4.2.1.alpha0.  
 
 Adam
 
 
+
 ---
 
-Comment by mhansen created at 2009-11-20 05:39:12
+archive/issue_comments_050434.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-11-20T05:39:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6318",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6318#issuecomment-50434",
+    "user": "mhansen"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mhansen created at 2009-11-20 05:39:12
+archive/issue_comments_050435.json:
+```json
+{
+    "body": "Looks good to me.",
+    "created_at": "2009-11-20T05:39:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6318",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6318#issuecomment-50435",
+    "user": "mhansen"
+}
+```
 
 Looks good to me.
 
 
+
 ---
 
-Comment by mhansen created at 2009-11-20 05:40:04
+archive/issue_comments_050436.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-11-20T05:40:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6318",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6318#issuecomment-50436",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 9168: cygwin: ratpoints does not work correctly
 
-Issue created by migration from https://trac.sagemath.org/ticket/9168
-
-Original creator: was
-
-Original creation time: 2010-06-07 04:28:53
-
+archive/issues_009168.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  jpflori\n\nSome ratpoints tests fail on cygwin, e.g.:\n\n```\n\nsage -t  \"devel/sage/sage/libs/ratpoints.pyx\"               \n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/libs/ratpoints.pyx\", line 57:\n    sage: for x,y,z in ratpoints([1..6], 200):\n       print -Integer(1)*y**Integer(2) + Integer(1)*z**Integer(6) + Integer(2)*x*z**Integer(5) + Integer(3)*x**Integer(2)*z**Integer(4) + Integer(4)*x**Integer(3)*z**Integer(3) + Integer(5)*x**Integer(4)*z**Integer(2) + Integer(6)*x**Integer(5)*z\nExpected:\n    0\n    0\n    0\n    0\n    0\n    0\n    0\nGot:\n    0\n    0\n    0\n```\n\n\nWhat happens when the same is done manually:\n\n\n```\n\nsage: from sage.libs.ratpoints import ratpoints\nsage: \nsage: for x,y,z in ratpoints([1..6], 200):\n....:     print -1*y^2 + 1*z^6 + 2*x*z^5 + 3*x^2*z^4 + 4*x^3*z^3 + 5*x^4*z^2 + 6*x^5*z\n....:     \n0\n0\n0\n```\n\n\nSo the problem is simply that less points are found.  Sounds pretty serious...\n\nIssue created by migration from https://trac.sagemath.org/ticket/9168\n\n",
+    "created_at": "2010-06-07T04:28:53Z",
+    "labels": [
+        "porting: Cygwin",
+        "major",
+        "bug"
+    ],
+    "title": "cygwin: ratpoints does not work correctly",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9168",
+    "user": "was"
+}
+```
 Assignee: tbd
 
 CC:  jpflori
@@ -52,58 +62,150 @@ sage: for x,y,z in ratpoints([1..6], 200):
 
 So the problem is simply that less points are found.  Sounds pretty serious...
 
+Issue created by migration from https://trac.sagemath.org/ticket/9168
+
+
+
+
 
 ---
 
-Comment by kcrisman created at 2011-08-02 02:28:48
+archive/issue_comments_085725.json:
+```json
+{
+    "body": "This files passes tests on a recent build on XP.",
+    "created_at": "2011-08-02T02:28:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9168",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9168#issuecomment-85725",
+    "user": "kcrisman"
+}
+```
 
 This files passes tests on a recent build on XP.
 
 
+
 ---
 
-Comment by kcrisman created at 2011-08-19 14:45:48
+archive/issue_comments_085726.json:
+```json
+{
+    "body": "But the same thing happens by hand. Why are all these tests passing on Cygwin?",
+    "created_at": "2011-08-19T14:45:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9168",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9168#issuecomment-85726",
+    "user": "kcrisman"
+}
+```
 
 But the same thing happens by hand. Why are all these tests passing on Cygwin?
 
 
+
 ---
 
-Comment by kcrisman created at 2013-01-15 16:16:57
+archive/issue_comments_085727.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2013-01-15T16:16:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9168",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9168#issuecomment-85727",
+    "user": "kcrisman"
+}
+```
 
 Changing status from new to needs_review.
 
 
----
-
-Comment by kcrisman created at 2013-01-15 16:16:57
-
-This now passes, _and_ when I do it by hand I do indeed get seven zeros.  JP, if you can confirm this, then we can close this ticket as no longer valid.
-
 
 ---
 
-Comment by jpflori created at 2013-01-15 17:54:56
+archive/issue_comments_085728.json:
+```json
+{
+    "body": "This now passes, *and* when I do it by hand I do indeed get seven zeros.  JP, if you can confirm this, then we can close this ticket as no longer valid.",
+    "created_at": "2013-01-15T16:16:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9168",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9168#issuecomment-85728",
+    "user": "kcrisman"
+}
+```
+
+This now passes, *and* when I do it by hand I do indeed get seven zeros.  JP, if you can confirm this, then we can close this ticket as no longer valid.
+
+
+
+---
+
+archive/issue_comments_085729.json:
+```json
+{
+    "body": "Works for me too.",
+    "created_at": "2013-01-15T17:54:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9168",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9168#issuecomment-85729",
+    "user": "jpflori"
+}
+```
 
 Works for me too.
 
 
+
 ---
 
-Comment by jpflori created at 2013-01-15 17:54:56
+archive/issue_comments_085730.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"cygwin\".",
+    "created_at": "2013-01-15T17:54:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9168",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9168#issuecomment-85730",
+    "user": "jpflori"
+}
+```
 
 Changing keywords from "" to "cygwin".
 
 
+
 ---
 
-Comment by jpflori created at 2013-01-15 17:54:56
+archive/issue_comments_085731.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2013-01-15T17:54:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9168",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9168#issuecomment-85731",
+    "user": "jpflori"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-01-17 10:04:39
+archive/issue_comments_085732.json:
+```json
+{
+    "body": "Resolution: worksforme",
+    "created_at": "2013-01-17T10:04:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9168",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9168#issuecomment-85732",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: worksforme

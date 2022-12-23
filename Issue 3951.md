@@ -1,11 +1,21 @@
 # Issue 3951: Make a "Tickets in which I have participated" report
 
-Issue created by migration from https://trac.sagemath.org/ticket/3951
-
-Original creator: jason
-
-Original creation time: 2008-08-25 19:52:25
-
+archive/issues_003951.json:
+```json
+{
+    "body": "Assignee: was\n\nIt would be great to have a Trac report that listed all the tickets in which the logged in user has participated (i.e., created, commented on, in the CC list, in the editor list, etc.)  I think this basically would be a report of all tickets that could possibly email you updates.\n\nFor me, it would serve as a \"Tickets that I should follow up on\" report :)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3951\n\n",
+    "created_at": "2008-08-25T19:52:25Z",
+    "labels": [
+        "website/wiki",
+        "major",
+        "enhancement"
+    ],
+    "title": "Make a \"Tickets in which I have participated\" report",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3951",
+    "user": "jason"
+}
+```
 Assignee: was
 
 It would be great to have a Trac report that listed all the tickets in which the logged in user has participated (i.e., created, commented on, in the CC list, in the editor list, etc.)  I think this basically would be a report of all tickets that could possibly email you updates.
@@ -13,16 +23,42 @@ It would be great to have a Trac report that listed all the tickets in which the
 For me, it would serve as a "Tickets that I should follow up on" report :)
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3951
+
+
+
+
 
 ---
 
-Comment by mvngu created at 2009-09-29 15:10:32
+archive/issue_comments_028367.json:
+```json
+{
+    "body": "One needs to login to trac first before getting results for this trac report.",
+    "created_at": "2009-09-29T15:10:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3951",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3951#issuecomment-28367",
+    "user": "mvngu"
+}
+```
 
 One needs to login to trac first before getting results for this trac report.
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-29 15:10:32
+archive/issue_comments_028368.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-09-29T15:10:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3951",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3951#issuecomment-28368",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

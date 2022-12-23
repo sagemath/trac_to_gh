@@ -1,11 +1,21 @@
 # Issue 3640: optional spkg polymake is broken with Sage 3.0.3/3.0.4
 
-Issue created by migration from https://trac.sagemath.org/ticket/3640
-
-Original creator: mabshoff
-
-Original creation time: 2008-07-11 12:40:56
-
+archive/issues_003640.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nCC:  mhampton\n\nSee http://math.univ-lyon1.fr/~tdumont/sageproblems/problems\n\nThe issue is that the spkg-install has hard coded spkg versions of cddlib and gmp.\n\nFixed spkg coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3640\n\n",
+    "created_at": "2008-07-11T12:40:56Z",
+    "labels": [
+        "build",
+        "major",
+        "bug"
+    ],
+    "title": "optional spkg polymake is broken with Sage 3.0.3/3.0.4",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3640",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 CC:  mhampton
@@ -20,10 +30,25 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/3640
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-12-24 11:46:21
+archive/issue_comments_025741.json:
+```json
+{
+    "body": "At\n\nhttp://sage.math.washington.edu/home/mabshoff/polymake-2.2.p5.spkg\n\nthere is an spkg, but it needs cleaning up since it contains a bunch of junk. The actual diff is at \n\nhttp://sage.math.washington.edu/home/mabshoff/polymake-2.2.p5.spkg-install.diff\n\nApplying that to the current spkg is probably less work.\n\nCheers,\n\nMichael",
+    "created_at": "2008-12-24T11:46:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3640",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3640#issuecomment-25741",
+    "user": "mabshoff"
+}
+```
 
 At
 
@@ -40,9 +65,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-24 14:06:39
+archive/issue_comments_025742.json:
+```json
+{
+    "body": "I have updated the spkg at\n\nhttp://sage.math.washington.edu/home/mabshoff/polymake-2.2.p5.spkg\n\nand made substantial improvements over the version I mentioned above a couple hours ago. It is close to something I would find acceptable :)\n\nCheers,\n\nMichael",
+    "created_at": "2008-12-24T14:06:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3640",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3640#issuecomment-25742",
+    "user": "mabshoff"
+}
+```
 
 I have updated the spkg at
 
@@ -55,9 +91,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-24 16:33:44
+archive/issue_comments_025743.json:
+```json
+{
+    "body": "mhampton reported problems on OSX and I can reproduce them:\n\n```\nsage -t -long -optional \"devel/sage/sage/geometry/polytope.py\"\n**********************************************************************\nFile \"/Users/mabshoff/sage-3.2.2/devel/sage/sage/geometry/polytope.py\", line 145:\n    sage: P.facets()                            # optional\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/mabshoff/sage-3.2.2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/mabshoff/sage-3.2.2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/mabshoff/sage-3.2.2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_3[3]>\", line 1, in <module>\n        P.facets()                            # optional###line 145:\n    sage: P.facets()                            # optional\n      File \"/Users/mabshoff/sage-3.2.2/local/lib/python2.5/site-packages/sage/geometry/polytope.py\", line 152, in facets\n        s = self.cmd('FACETS')\n      File \"/Users/mabshoff/sage-3.2.2/local/lib/python2.5/site-packages/sage/geometry/polytope.py\", line 133, in cmd\n        raise RuntimeError, err\n    RuntimeError: polymake: WARNING: directory /Users/mabshoff/.polymake created for keeping individual user settings\n    polymake: WARNING: file rgb.txt not found - no symbolic color names will be allowed\n    polymake: WARNING: common::javaview_configure - autoconfiguration failed:\n    'javaview' start script not found\n    polymake: WARNING: common::postscript.rules - autoconfiguration failed:\n    No known PostScript viewer program found,\n    please specify your favorite viewer in the customization file.\n    polymake: WARNING: common::geomview.rules - autoconfiguration failed:\n    geomview main program not found\n    polymake: WARNING: common::povray.rules - autoconfiguration failed:\n    No known povray rendering program found,\n    please specify your favorite viewer in the customization file.\n    polymake: WARNING: graph::check_iso - autoconfiguration failed:\n    none of the package nauty programs (dreadnaut*) found\n    polymake: WARNING: polytope::porta.rules - autoconfiguration failed:\n    PORTA package not found\n    polymake: WARNING: polytope::bastat.rules - autoconfiguration failed:\n    bastat program 'intpoints' not found\n    polymake: WARNING: polytope::vinci.rules - autoconfiguration failed:\n    'vinci' program not found\n    polymake: WARNING: polytope::qhull.rules - autoconfiguration failed:\n    'qhull' program not found\n    polymake: WARNING: polytope::topcom.rules - autoconfiguration failed:\n    TOPCOM program 'points2chiro' not found\n    polymake: WARNING: polytope::splitstree.rules - autoconfiguration failed:\n    SplitsTree package not found\n     * Remember to run `polymake --reconfigure'\n     * as soon as you have changed the customization file\n     * and/or installed the missing software!\n```\n\n\nBut the same doctest passes flawlessly on Linux, so this is some polymake problem.\n\nGiven the situation I would recommend that we merge the updated polymake.spkg and then sort out the problem on OSX afterwards since as is things are plain broken everywhere, which is even worst.\n\nCheers,\n\nMichael",
+    "created_at": "2008-12-24T16:33:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3640",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3640#issuecomment-25743",
+    "user": "mabshoff"
+}
+```
 
 mhampton reported problems on OSX and I can reproduce them:
 
@@ -122,23 +169,56 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mhampton created at 2008-12-24 21:44:01
+archive/issue_comments_025744.json:
+```json
+{
+    "body": "I agree: it is better than the present situation.  If I have time I will try to figure out the failure on OS X, but it is not my top priority right now.",
+    "created_at": "2008-12-24T21:44:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3640",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3640#issuecomment-25744",
+    "user": "mhampton"
+}
+```
 
 I agree: it is better than the present situation.  If I have time I will try to figure out the failure on OS X, but it is not my top priority right now.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-26 17:09:49
+archive/issue_comments_025745.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-12-26T17:09:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3640",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3640#issuecomment-25745",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-26 17:09:49
+archive/issue_comments_025746.json:
+```json
+{
+    "body": "Merged in Sage 3.2.3.final and uploaded to the optional spkg repo.\n\nCheers,\n\nMichael",
+    "created_at": "2008-12-26T17:09:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3640",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3640#issuecomment-25746",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.2.3.final and uploaded to the optional spkg repo.
 

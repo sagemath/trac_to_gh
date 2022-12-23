@@ -1,11 +1,21 @@
 # Issue 5127: relative number fields have bad names for internal coercion routines
 
-Issue created by migration from https://trac.sagemath.org/ticket/5127
-
-Original creator: ncalexan
-
-Original creation time: 2009-01-29 05:09:02
-
+archive/issues_005127.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  roed tscrim mkoeppe\n\nKeywords: relative number fields names coercion\n\nA naming one issue: in relative number fields, the family of functions coerce_non_number_field_element_in should probably be a convert function rather than a coerce one.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5127\n\n",
+    "created_at": "2009-01-29T05:09:02Z",
+    "labels": [
+        "number theory",
+        "major",
+        "bug"
+    ],
+    "title": "relative number fields have bad names for internal coercion routines",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5127",
+    "user": "ncalexan"
+}
+```
 Assignee: was
 
 CC:  roed tscrim mkoeppe
@@ -15,44 +25,114 @@ Keywords: relative number fields names coercion
 A naming one issue: in relative number fields, the family of functions coerce_non_number_field_element_in should probably be a convert function rather than a coerce one.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5127
+
+
+
+
 
 ---
 
-Comment by davidloeffler created at 2009-07-21 08:03:38
+archive/issue_comments_039179.json:
+```json
+{
+    "body": "Changing component from number theory to number fields.",
+    "created_at": "2009-07-21T08:03:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5127",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5127#issuecomment-39179",
+    "user": "davidloeffler"
+}
+```
 
 Changing component from number theory to number fields.
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-07-21 08:03:38
+archive/issue_comments_039180.json:
+```json
+{
+    "body": "Changing assignee from was to davidloeffler.",
+    "created_at": "2009-07-21T08:03:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5127",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5127#issuecomment-39180",
+    "user": "davidloeffler"
+}
+```
 
 Changing assignee from was to davidloeffler.
 
 
+
 ---
 
-Comment by chapoton created at 2020-07-02 13:42:04
+archive/issue_comments_039181.json:
+```json
+{
+    "body": "This has been done elsewhere, so this is now invalid.",
+    "created_at": "2020-07-02T13:42:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5127",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5127#issuecomment-39181",
+    "user": "chapoton"
+}
+```
 
 This has been done elsewhere, so this is now invalid.
 
 
+
 ---
 
-Comment by chapoton created at 2020-07-02 13:42:04
+archive/issue_comments_039182.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2020-07-02T13:42:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5127",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5127#issuecomment-39182",
+    "user": "chapoton"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mkoeppe created at 2020-07-02 14:04:15
+archive/issue_comments_039183.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2020-07-02T14:04:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5127",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5127#issuecomment-39183",
+    "user": "mkoeppe"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by chapoton created at 2020-07-02 14:05:22
+archive/issue_comments_039184.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2020-07-02T14:05:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5127",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5127#issuecomment-39184",
+    "user": "chapoton"
+}
+```
 
 Resolution: invalid

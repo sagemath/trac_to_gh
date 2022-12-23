@@ -1,46 +1,117 @@
 # Issue 9246: explain the definition of characteristic polynomial for graphs
 
-Issue created by migration from https://trac.sagemath.org/ticket/9246
-
-Original creator: mvngu
-
-Original creation time: 2010-06-15 16:06:20
-
+archive/issues_009246.json:
+```json
+{
+    "body": "Assignee: mvngu\n\nAs the subject says. This arises from this [sage-devel thread](http://groups.google.com/group/sage-devel/browse_thread/thread/711e0208c01f5fe5).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9246\n\n",
+    "created_at": "2010-06-15T16:06:20Z",
+    "labels": [
+        "documentation",
+        "minor",
+        "enhancement"
+    ],
+    "title": "explain the definition of characteristic polynomial for graphs",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9246",
+    "user": "mvngu"
+}
+```
 Assignee: mvngu
 
 As the subject says. This arises from this [sage-devel thread](http://groups.google.com/group/sage-devel/browse_thread/thread/711e0208c01f5fe5).
 
+Issue created by migration from https://trac.sagemath.org/ticket/9246
+
+
+
+
 
 ---
+
+archive/issue_comments_087004.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-06-15T16:12:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9246",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9246#issuecomment-87004",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mvngu created at 2010-06-15 16:12:35
+archive/issue_comments_087005.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-06-15T16:12:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9246",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9246#issuecomment-87005",
+    "user": "mvngu"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by ncohen created at 2010-06-15 17:32:49
+archive/issue_comments_087006.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-06-15T17:32:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9246",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9246#issuecomment-87006",
+    "user": "ncohen"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by ncohen created at 2010-06-15 17:32:49
+archive/issue_comments_087007.json:
+```json
+{
+    "body": "Nothing to add ! Positive review :-)\n\nNathann",
+    "created_at": "2010-06-15T17:32:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9246",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9246#issuecomment-87007",
+    "user": "ncohen"
+}
+```
 
 Nothing to add ! Positive review :-)
 
 Nathann
 
 
+
 ---
 
-Comment by mpatel created at 2010-07-21 10:10:21
+archive/issue_comments_087008.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-07-21T10:10:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9246",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9246#issuecomment-87008",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed

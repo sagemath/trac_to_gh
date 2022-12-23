@@ -1,11 +1,21 @@
 # Issue 6547: deprecate the use of all.py instead of __init__.py
 
-Issue created by migration from https://trac.sagemath.org/ticket/6547
-
-Original creator: malb
-
-Original creation time: 2009-07-17 09:51:16
-
+archive/issues_006547.json:
+```json
+{
+    "body": "Assignee: cwitty\n\nCC:  kini\n\nFor historical reasons, we are using `foo.all.py` instead of `foo.__init__.py`. This is not Pythonic and we should change that (gradually).\n\nAlso, the developer's guide needs an update reflecting this change:\n\nhttp://www.sagemath.org/doc/developer/coding_in_python.html#creating-a-new-directory\n\nThis was discussed on [sage-devel]: http://groups.google.com/group/sage-devel/browse_thread/thread/1112fcc8345ecfd2\n\nIssue created by migration from https://trac.sagemath.org/ticket/6547\n\n",
+    "created_at": "2009-07-17T09:51:16Z",
+    "labels": [
+        "misc",
+        "minor",
+        "enhancement"
+    ],
+    "title": "deprecate the use of all.py instead of __init__.py",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6547",
+    "user": "malb"
+}
+```
 Assignee: cwitty
 
 CC:  kini
@@ -18,10 +28,25 @@ http://www.sagemath.org/doc/developer/coding_in_python.html#creating-a-new-direc
 
 This was discussed on [sage-devel]: http://groups.google.com/group/sage-devel/browse_thread/thread/1112fcc8345ecfd2
 
+Issue created by migration from https://trac.sagemath.org/ticket/6547
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2009-07-17 20:20:15
+archive/issue_comments_053383.json:
+```json
+{
+    "body": "One thing that we need to watch out for is importing an object into `foo/__init__.py` with the same name as a module in `foo/`.  Something like:\n\n\n```\nmike@mike-laptop:~/src/test_init$ ls foo\nbar.py  bar.pyc  __init__.py  __init__.pyc\nmike@mike-laptop:~/src/test_init$ cat foo/__init__.py\nfrom bar import bar\nmike@mike-laptop:~/src/test_init$ cat foo/bar.py\nbar = 200\n```\n\n\nThen, things like `foo.bar.bar` won't work.",
+    "created_at": "2009-07-17T20:20:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6547",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6547#issuecomment-53383",
+    "user": "mhansen"
+}
+```
 
 One thing that we need to watch out for is importing an object into `foo/__init__.py` with the same name as a module in `foo/`.  Something like:
 
@@ -39,9 +64,20 @@ bar = 200
 Then, things like `foo.bar.bar` won't work.
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-01 04:57:57
+archive/issue_comments_053384.json:
+```json
+{
+    "body": "A more specific objection:\n\nCurrently in Sage, we have\n\n\n```\nsage: type(sage.plot.plot)\n<type 'module'>\nsage: type(sage.plot.all.plot)\n<type 'function'>\n```\n\n\nIf we get rid of `all.py`, what should `sage.plot.plot` be?",
+    "created_at": "2009-10-01T04:57:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6547",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6547#issuecomment-53384",
+    "user": "mhansen"
+}
+```
 
 A more specific objection:
 
@@ -59,64 +95,163 @@ sage: type(sage.plot.all.plot)
 If we get rid of `all.py`, what should `sage.plot.plot` be?
 
 
+
 ---
 
-Comment by malb created at 2009-10-01 07:24:17
+archive/issue_comments_053385.json:
+```json
+{
+    "body": "`sage.plot.plot.plot` or wherever it is implemented? I don't see the problem.",
+    "created_at": "2009-10-01T07:24:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6547",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6547#issuecomment-53385",
+    "user": "malb"
+}
+```
 
 `sage.plot.plot.plot` or wherever it is implemented? I don't see the problem.
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-01 07:37:49
+archive/issue_comments_053386.json:
+```json
+{
+    "body": "If `plot` the function is imported in `sage/plot/__init__.py`, then `sage.plot.plot` will be the function.  If someone happens to import `sage/plot/plot.py`, then `sage.plot.plot` becomes the module and not the function.  I'm not convinced that this won't cause troubles.",
+    "created_at": "2009-10-01T07:37:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6547",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6547#issuecomment-53386",
+    "user": "mhansen"
+}
+```
 
 If `plot` the function is imported in `sage/plot/__init__.py`, then `sage.plot.plot` will be the function.  If someone happens to import `sage/plot/plot.py`, then `sage.plot.plot` becomes the module and not the function.  I'm not convinced that this won't cause troubles.
 
 
+
 ---
 
-Comment by malb created at 2009-10-01 09:34:28
+archive/issue_comments_053387.json:
+```json
+{
+    "body": "To me the benefits of following the standard outweights the problems. But we should raise the issue on [sage-devel] and see what happens.",
+    "created_at": "2009-10-01T09:34:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6547",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6547#issuecomment-53387",
+    "user": "malb"
+}
+```
 
 To me the benefits of following the standard outweights the problems. But we should raise the issue on [sage-devel] and see what happens.
 
 
+
 ---
 
-Comment by kini created at 2011-06-14 19:57:15
+archive/issue_comments_053388.json:
+```json
+{
+    "body": "Any news here? I'm not sure I fully understand Mike's objection, but can't we treat this as a deprecation, i.e. tell people that the usage `sage.plot.all.whatever` is deprecated?",
+    "created_at": "2011-06-14T19:57:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6547",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6547#issuecomment-53388",
+    "user": "kini"
+}
+```
 
 Any news here? I'm not sure I fully understand Mike's objection, but can't we treat this as a deprecation, i.e. tell people that the usage `sage.plot.all.whatever` is deprecated?
 
 
+
 ---
 
-Comment by mkoeppe created at 2021-09-07 07:47:32
+archive/issue_comments_053389.json:
+```json
+{
+    "body": "After the switch to using native namespace packages (#29705), we cannot use `__init__.py` any more to populate packages. The modularization effort will certainly require us to think what to do with the `sage....all` packages, but moving stuff to `__init__.py` won't be it. So I am proposing to close this ticket as outdated.",
+    "created_at": "2021-09-07T07:47:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6547",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6547#issuecomment-53389",
+    "user": "mkoeppe"
+}
+```
 
 After the switch to using native namespace packages (#29705), we cannot use `__init__.py` any more to populate packages. The modularization effort will certainly require us to think what to do with the `sage....all` packages, but moving stuff to `__init__.py` won't be it. So I am proposing to close this ticket as outdated.
 
 
+
 ---
 
-Comment by mkoeppe created at 2021-09-07 07:47:32
+archive/issue_comments_053390.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2021-09-07T07:47:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6547",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6547#issuecomment-53390",
+    "user": "mkoeppe"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by klee created at 2021-11-15 12:09:16
+archive/issue_comments_053391.json:
+```json
+{
+    "body": "I agree that the aim of this ticket is not compatible with the modularization effort.",
+    "created_at": "2021-11-15T12:09:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6547",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6547#issuecomment-53391",
+    "user": "klee"
+}
+```
 
 I agree that the aim of this ticket is not compatible with the modularization effort.
 
 
+
 ---
 
-Comment by klee created at 2021-11-15 12:09:16
+archive/issue_comments_053392.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2021-11-15T12:09:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6547",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6547#issuecomment-53392",
+    "user": "klee"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mkoeppe created at 2021-11-20 23:57:15
+archive/issue_comments_053393.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2021-11-20T23:57:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6547",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6547#issuecomment-53393",
+    "user": "mkoeppe"
+}
+```
 
 Resolution: invalid

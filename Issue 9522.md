@@ -1,11 +1,21 @@
 # Issue 9522: MPIR: Don't check SAGE_CHECK in spkg-install
 
-Issue created by migration from https://trac.sagemath.org/ticket/9522
-
-Original creator: mpatel
-
-Original creation time: 2010-07-17 01:02:45
-
+archive/issues_009522.json:
+```json
+{
+    "body": "Assignee: tbd\n\nFrom the end of MPIR's `spkg-install`:\n\n```sh\nif [ \"$SAGE_CHECK\" = \"yes\" ]; then\n    cd ..; ./spkg-check\nfi\n```\n\nWe should remove this, since `SAGE_LOCAL/bin/sage-spkg` already does this check:\n\n```sh\n    cd $BASEDIR\n    if [ \"$SAGE_CHECK\" != \"\" -a -f spkg-check ]; then\n        echo \"Running the test suite.\"\n        chmod +x spkg-check\n        ./spkg-check\n        if [ $? -ne 0 ]; then\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9522\n\n",
+    "created_at": "2010-07-17T01:02:45Z",
+    "labels": [
+        "packages: standard",
+        "minor",
+        "bug"
+    ],
+    "title": "MPIR: Don't check SAGE_CHECK in spkg-install",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9522",
+    "user": "mpatel"
+}
+```
 Assignee: tbd
 
 From the end of MPIR's `spkg-install`:
@@ -28,29 +38,66 @@ We should remove this, since `SAGE_LOCAL/bin/sage-spkg` already does this check:
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/9522
+
+
+
+
 
 ---
 
-Comment by leif created at 2010-08-26 21:02:56
+archive/issue_comments_091534.json:
+```json
+{
+    "body": "There's already [a ticket for updating MPIR to version 2.1.1](http://trac.sagemath.org/sage_trac/ticket/8664) (currently needing review), which apparently is aware of *this* ticket.\n\nI though haven't checked if Mike deleted the superfluous test suite invocation in `spkg-install`.",
+    "created_at": "2010-08-26T21:02:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9522",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9522#issuecomment-91534",
+    "user": "leif"
+}
+```
 
-There's already [a ticket for updating MPIR to version 2.1.1](http://trac.sagemath.org/sage_trac/ticket/8664) (currently needing review), which apparently is aware of _this_ ticket.
+There's already [a ticket for updating MPIR to version 2.1.1](http://trac.sagemath.org/sage_trac/ticket/8664) (currently needing review), which apparently is aware of *this* ticket.
 
 I though haven't checked if Mike deleted the superfluous test suite invocation in `spkg-install`.
 
 
+
 ---
 
-Comment by leif created at 2010-08-26 21:24:52
+archive/issue_comments_091535.json:
+```json
+{
+    "body": "Replying to [comment:1 leif]:\n> I though haven't checked if Mike deleted the superfluous test suite invocation in `spkg-install`.\n\nDone, he *did* remove it. So **this ticket can be closed as duplicate as soon as #8664 gets merged**.",
+    "created_at": "2010-08-26T21:24:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9522",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9522#issuecomment-91535",
+    "user": "leif"
+}
+```
 
 Replying to [comment:1 leif]:
 > I though haven't checked if Mike deleted the superfluous test suite invocation in `spkg-install`.
 
-Done, he _did_ remove it. So *this ticket can be closed as duplicate as soon as #8664 gets merged*.
+Done, he *did* remove it. So **this ticket can be closed as duplicate as soon as #8664 gets merged**.
+
 
 
 ---
 
-Comment by drkirkby created at 2010-09-21 19:45:08
+archive/issue_comments_091536.json:
+```json
+{
+    "body": "I think there's a good argument for running the mpir test suite every time (i.e. from spkg-install), as it has historically caught several compiler bugs. \n\nIt's obviously pointless running it twice. \n\nDave",
+    "created_at": "2010-09-21T19:45:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9522",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9522#issuecomment-91536",
+    "user": "drkirkby"
+}
+```
 
 I think there's a good argument for running the mpir test suite every time (i.e. from spkg-install), as it has historically caught several compiler bugs. 
 
@@ -59,8 +106,19 @@ It's obviously pointless running it twice.
 Dave
 
 
+
 ---
 
-Comment by leif created at 2011-09-29 23:46:49
+archive/issue_comments_091537.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2011-09-29T23:46:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9522",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9522#issuecomment-91537",
+    "user": "leif"
+}
+```
 
 Resolution: fixed

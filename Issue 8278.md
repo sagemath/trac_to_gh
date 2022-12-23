@@ -1,11 +1,21 @@
 # Issue 8278: cygwin: cvxopt doesn't work at all
 
-Issue created by migration from https://trac.sagemath.org/ticket/8278
-
-Original creator: was
-
-Original creation time: 2010-02-15 22:44:34
-
+archive/issues_008278.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  pjeremy\n\nUsing either cvxopt-0.9.p8 (in sage-4.3.3) or cvxopt-1.1.2.p2, which is at http://boxen.math.washington.edu/home/schilly/sage/spkg/, we get this huge error very quickly upon trying to build:\n\n\n```\nbuilding 'base' extension                                                            \ncreating build/temp.cygwin-1.7.1-i686-2.6                                                                                  \ncreating build/temp.cygwin-1.7.1-i686-2.6/C                                                                                \ngcc -fno-strict-aliasing -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I/home/wstein/build/sage-4.3.3.alpha0/local/include/python2.6 -c C/base.c -o build/temp.cygwin-1.7.1-i686-2.6/C/base.o                                                            \nIn file included from C/base.c:23:                                                                                         \nC/cvxopt.h:29:21: error: complex.h: No such file or directory                                                              \nIn file included from C/base.c:24:                                                                                         \nC/misc.h:29: error: expected specifier-qualifier-list before \u2018complex\u2019                                                     \nC/base.c:58: error: \u2018complex\u2019 undeclared here (not in a function)                                                          \nC/base.c: In function \u2018write_znum\u2019:                             \n```\n\n\nIDEAS:\n\n1. Look for complex.h on this page:  http://www.cygwin.com/ml/cygwin/2006-07/threads.html#00763  That has some ideas.\n\n2. I think Mike Hansen said that he recently released (then unreleased!?) numpy-1.4 had a drop-in complex.h?\n\nIssue created by migration from https://trac.sagemath.org/ticket/8278\n\n",
+    "created_at": "2010-02-15T22:44:34Z",
+    "labels": [
+        "porting: Cygwin",
+        "major",
+        "bug"
+    ],
+    "title": "cygwin: cvxopt doesn't work at all",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8278",
+    "user": "was"
+}
+```
 Assignee: tbd
 
 CC:  pjeremy
@@ -29,14 +39,29 @@ C/base.c: In function ‘write_znum’:
 
 IDEAS:
 
- 1. Look for complex.h on this page:  http://www.cygwin.com/ml/cygwin/2006-07/threads.html#00763  That has some ideas.
+1. Look for complex.h on this page:  http://www.cygwin.com/ml/cygwin/2006-07/threads.html#00763  That has some ideas.
 
- 2. I think Mike Hansen said that he recently released (then unreleased!?) numpy-1.4 had a drop-in complex.h?
+2. I think Mike Hansen said that he recently released (then unreleased!?) numpy-1.4 had a drop-in complex.h?
+
+Issue created by migration from https://trac.sagemath.org/ticket/8278
+
+
+
 
 
 ---
 
-Comment by was created at 2010-02-15 23:04:50
+archive/issue_comments_073300.json:
+```json
+{
+    "body": "I put in some fake #defines to get past the complex.h import problem.  Then linking fails due to no libcblas. \n\n```\ngcc -shared -Wl,--enable-auto-image-base build/temp.cygwin-1.7.1-i686-2.6/C/base.o build/temp.cygwin-1.7.1-i686-2.6/C/dense.o build/temp.cygwin-1.7.1-i686-2.6/C/sparse.o -L/home/wstein/build/sage-4.3.3.alpha0/local/lib -L/home/wstein/build/sage-4.3.3.alpha0/local/lib/python2.6/config -lm -llapack -lcblas -lf77blas -latlas -lgfortran -lpython2.6 -o build/lib.cygwin-1.7.1-i686-2.6/cvxopt/base.dll\n/usr/lib/gcc/i686-pc-cygwin/4.3.4/../../../../i686-pc-cygwin/bin/ld: cannot find -lcblas\ncollect2: ld returned 1 exit status\n```\n\nChanging the libraries= line in setup.py to\n\n```\n    libraries = ['m','lapack','blas','gfortran']\n```\n\n(like it is for OS X) gets past this problem.\n\nI think it may be easy to implement complex.h, at least enough for cvxopt, just using what is in GSL...  since cvxopt doesn't need much.  \n\nTo get cvxopt to build, I replaced all references to atlas and cblas by \"blas\".    This *did* work.  I've attached my hacked setup.py (based on the one in cvxopt-1.1.2.p2) to this ticket just 'cause:\n\n```\n/home/wstein/build/sage-4.3.3.alpha0\nsage subshell$ python\nPython 2.6.4 (r264:75706, Feb 12 2010, 22:06:32)\n[GCC 4.3.4 20090804 (release) 1] on cygwin\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> import cvxopt\n>>>\n```\n",
+    "created_at": "2010-02-15T23:04:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8278",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8278#issuecomment-73300",
+    "user": "was"
+}
+```
 
 I put in some fake #defines to get past the complex.h import problem.  Then linking fails due to no libcblas. 
 
@@ -70,19 +95,56 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 
 
+
 ---
 
-Comment by was created at 2010-02-15 23:07:06
+archive/issue_comments_073301.json:
+```json
+{
+    "body": "hacked setup.py that allowed me to build and install cvxopt (though i had to make a fake complex.h)",
+    "created_at": "2010-02-15T23:07:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8278",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8278#issuecomment-73301",
+    "user": "was"
+}
+```
 
 hacked setup.py that allowed me to build and install cvxopt (though i had to make a fake complex.h)
 
 
+
 ---
+
+archive/issue_comments_073302.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-02-15T23:07:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8278",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8278#issuecomment-73302",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_073303.json:
+```json
+{
+    "body": "Attachment\n\nI would like to merge this with cvxopt-1.1.2.p2 (well, p3) that I just finished porting to Solaris, and cleaning up. For the latter, e.g. there is no random stuff in cvxopt any more, they can hook up to GSL (and we can enable this, as GSL is a standard Sage package).\n\nCan I use winxp2.math.washington.edu ?\nI suppose I need a login, and I don't seem to have one (I tried logging in from \nboxen...)\n\nDima",
+    "created_at": "2010-03-18T14:06:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8278",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8278#issuecomment-73303",
+    "user": "dimpase"
+}
+```
 
 Attachment
 
@@ -95,23 +157,56 @@ boxen...)
 Dima
 
 
+
 ---
 
-Comment by mhansen created at 2010-04-27 17:34:47
+archive/issue_comments_073304.json:
+```json
+{
+    "body": "This is fixed by #8780 which provides a working complex.h",
+    "created_at": "2010-04-27T17:34:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8278",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8278#issuecomment-73304",
+    "user": "mhansen"
+}
+```
 
 This is fixed by #8780 which provides a working complex.h
 
 
+
 ---
 
-Comment by mhansen created at 2010-05-24 23:54:01
+archive/issue_comments_073305.json:
+```json
+{
+    "body": "This is actually not fixed by #8780.",
+    "created_at": "2010-05-24T23:54:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8278",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8278#issuecomment-73305",
+    "user": "mhansen"
+}
+```
 
 This is actually not fixed by #8780.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-08-02 04:49:18
+archive/issue_comments_073306.json:
+```json
+{
+    "body": "complex.h is the header file that you need, but you almost certainly need the C99 libraries too. So it's not as simple as just adding a complex.h file.  \n\nI'm cc'ing Peter on this, as I know he has (or at least did have), C99 issues on FreeBSD. I got similar issues when trying to build Sage on HP-UX, though that is of course not a high priority port. \n\nDave",
+    "created_at": "2010-08-02T04:49:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8278",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8278#issuecomment-73306",
+    "user": "drkirkby"
+}
+```
 
 complex.h is the header file that you need, but you almost certainly need the C99 libraries too. So it's not as simple as just adding a complex.h file.  
 
@@ -120,9 +215,20 @@ I'm cc'ing Peter on this, as I know he has (or at least did have), C99 issues on
 Dave
 
 
+
 ---
 
-Comment by pjeremy created at 2010-08-02 11:14:54
+archive/issue_comments_073307.json:
+```json
+{
+    "body": "Replying to [comment:6 drkirkby]:\n> complex.h is the header file that you need, but you almost certainly need the C99 libraries too. So it's not as simple as just adding a complex.h file.\n\nAnd the complex.h needs to match the C99 libraries.\n\n> I'm cc'ing Peter on this, as I know he has (or at least did have), C99 issues on FreeBSD.\n\ncephes was introduced to provide C99 functions for Cygwin.  FreeBSD does not provide a complete C99 library and I've written a number of tickets to use cephes to provide the missing functionality.  See trac tickets #9543 and #9601 (both of which include patches, though they haven't been converted to new SPKG files yet).  numpy also needs the same patch as #9601 but I haven't updated the relevant trac ticket for that yet.\n\nNote that the patch in #9543 relies on some ELF shared library magic (and installs a $SAGE_LOCAL/libm.so that includes the cephes functions and automatically falls back to the base libm.so for other functions) that may not work in Cygwin (on Cygwin, cephes installs C99 libraries as $SAGE_LOCAL/libm{c,d,f,l}.a and any other SPKGs needing to reference those libraries will need patches to their link steps).",
+    "created_at": "2010-08-02T11:14:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8278",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8278#issuecomment-73307",
+    "user": "pjeremy"
+}
+```
 
 Replying to [comment:6 drkirkby]:
 > complex.h is the header file that you need, but you almost certainly need the C99 libraries too. So it's not as simple as just adding a complex.h file.
@@ -136,31 +242,75 @@ cephes was introduced to provide C99 functions for Cygwin.  FreeBSD does not pro
 Note that the patch in #9543 relies on some ELF shared library magic (and installs a $SAGE_LOCAL/libm.so that includes the cephes functions and automatically falls back to the base libm.so for other functions) that may not work in Cygwin (on Cygwin, cephes installs C99 libraries as $SAGE_LOCAL/libm{c,d,f,l}.a and any other SPKGs needing to reference those libraries will need patches to their link steps).
 
 
+
 ---
 
-Comment by kcrisman created at 2011-06-16 02:20:35
+archive/issue_comments_073308.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2011-06-16T02:20:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8278",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8278#issuecomment-73308",
+    "user": "kcrisman"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by kcrisman created at 2011-06-16 02:20:35
+archive/issue_comments_073309.json:
+```json
+{
+    "body": "#6456 fixed this.  Please close.\n\ncvxopt builds, which is how I found this out :)",
+    "created_at": "2011-06-16T02:20:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8278",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8278#issuecomment-73309",
+    "user": "kcrisman"
+}
+```
 
 #6456 fixed this.  Please close.
 
 cvxopt builds, which is how I found this out :)
 
 
+
 ---
 
-Comment by kcrisman created at 2011-06-16 02:20:46
+archive/issue_comments_073310.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2011-06-16T02:20:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8278",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8278#issuecomment-73310",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-06-20 18:55:37
+archive/issue_comments_073311.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2011-06-20T18:55:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8278",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8278#issuecomment-73311",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: duplicate

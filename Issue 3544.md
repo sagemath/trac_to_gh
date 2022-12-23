@@ -1,11 +1,21 @@
 # Issue 3544: PermutationGroup.is_transitive is broken
 
-Issue created by migration from https://trac.sagemath.org/ticket/3544
-
-Original creator: boothby
-
-Original creation time: 2008-07-03 17:57:05
-
+archive/issues_003544.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  alexghitza\n\n\n```\nsage: G = Graph({0:[1],1:[2]}); G.num_verts()\n3\nsage: A = G.automorphism_group(); A\nPermutation Group with generators [(2,3)]\nsage: A.is_transitive()\nTrue\nsage: A.gens()[0].list()\n[1,3,2]\n```\n\n\nHuh?  The cyclic group of order 2 acting on 3 letters is transitive?\n\nIssue created by migration from https://trac.sagemath.org/ticket/3544\n\n",
+    "created_at": "2008-07-03T17:57:05Z",
+    "labels": [
+        "algebra",
+        "major",
+        "bug"
+    ],
+    "title": "PermutationGroup.is_transitive is broken",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3544",
+    "user": "boothby"
+}
+```
 Assignee: tbd
 
 CC:  alexghitza
@@ -25,17 +35,43 @@ sage: A.gens()[0].list()
 
 Huh?  The cyclic group of order 2 acting on 3 letters is transitive?
 
+Issue created by migration from https://trac.sagemath.org/ticket/3544
+
+
+
+
 
 ---
 
-Comment by rlm created at 2008-07-03 18:23:29
+archive/issue_comments_025069.json:
+```json
+{
+    "body": "This is closely related to #3404. See #3545.",
+    "created_at": "2008-07-03T18:23:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3544",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3544#issuecomment-25069",
+    "user": "rlm"
+}
+```
 
 This is closely related to #3404. See #3545.
 
 
+
 ---
 
-Comment by wdj created at 2008-07-03 18:42:19
+archive/issue_comments_025070.json:
+```json
+{
+    "body": "This wraps IsTransitive, which is assuming that the degree is 2:\n\n\n```\nsage: G = Graph({0:[1],1:[2]})\nsage: A = G.automorphism_group(); A\nAPermutation Group with generators [(2,3)]\nsage: GA = gap(A)\nsage: GA.Transitivity()\n2\nsage: GA.IsTransitive()\ntrue\n```\n\n\nHowever, the docstring for is_transitive is wrong. There is no method A.set() implemented.",
+    "created_at": "2008-07-03T18:42:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3544",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3544#issuecomment-25070",
+    "user": "wdj"
+}
+```
 
 This wraps IsTransitive, which is assuming that the degree is 2:
 
@@ -55,9 +91,20 @@ true
 However, the docstring for is_transitive is wrong. There is no method A.set() implemented.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-06 17:52:54
+archive/issue_comments_025071.json:
+```json
+{
+    "body": "Please always assign a milestone.\n\nCheers,\n\nMichael",
+    "created_at": "2008-07-06T17:52:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3544",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3544#issuecomment-25071",
+    "user": "mabshoff"
+}
+```
 
 Please always assign a milestone.
 
@@ -66,9 +113,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by wdj created at 2008-07-06 20:27:00
+archive/issue_comments_025072.json:
+```json
+{
+    "body": "I would suggest the following: \n\n(a) There is no bug in is_transitive but the docstring is wrong. \n\n(b) a \"set\" method should be implemented for the class PermutationGroup.\n\n(c) Possibly a verbose option could be added which prints (if the group\nis transitive) the set on which the group acts transitively?\n\nIf this seems reasonable, I could try working on this.",
+    "created_at": "2008-07-06T20:27:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3544",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3544#issuecomment-25072",
+    "user": "wdj"
+}
+```
 
 I would suggest the following: 
 
@@ -82,51 +140,119 @@ is transitive) the set on which the group acts transitively?
 If this seems reasonable, I could try working on this.
 
 
+
 ---
 
-Comment by rlm created at 2008-07-06 20:29:23
+archive/issue_comments_025073.json:
+```json
+{
+    "body": "I don't like this approach. Instead, you should be able to tell the permutation group what it is acting on, and all the functions should be consistent. This is part of my goal for my summer work with permutation groups.",
+    "created_at": "2008-07-06T20:29:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3544",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3544#issuecomment-25073",
+    "user": "rlm"
+}
+```
 
 I don't like this approach. Instead, you should be able to tell the permutation group what it is acting on, and all the functions should be consistent. This is part of my goal for my summer work with permutation groups.
 
 
+
 ---
 
-Comment by was created at 2009-01-22 12:51:18
+archive/issue_comments_025074.json:
+```json
+{
+    "body": "Some remarks:\n\n* In GAP it is clearly documented that IsTransitive(G) returns whether or not G is transitive on the set of points moved by G.  That's why this \"bug\" happens (this ticket).  \n  \n* In Magma, all permutation groups G are embedded in a specific S_n and IsTransitive returns whether or not G is transitive on [1..n]. \n\n* Sage has a degree method for permutation groups, which gives back an n.\n\nI think we view permutation groups as contained in S_n, which naturally acts on [1..n], so that should be the default.   I think permutations groups should also at some point in the future be equipable with an action on any set.  But the resulting object will be \"a permutation group equipped with an action\", and is_transitive will be defined relative to that.  So for this ticket, we just need to decide on the default set acted on by a permutation group generated by a list of permutations.  I think the most natural choice is the set {1,2, ..., n} given the embedding in S_n. \n\nAnyway, I've attached a patch that fixes the bug, and makes is_transitive() return whether or not the group is transitive on `[1..G.degree()]`.    I also fixed a few surrounding docstrings and added one to load_hap, so that doctest coverage for the file permgroup.py is now 100%.",
+    "created_at": "2009-01-22T12:51:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3544",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3544#issuecomment-25074",
+    "user": "was"
+}
+```
 
 Some remarks:
 
-  * In GAP it is clearly documented that IsTransitive(G) returns whether or not G is transitive on the set of points moved by G.  That's why this "bug" happens (this ticket).  
+* In GAP it is clearly documented that IsTransitive(G) returns whether or not G is transitive on the set of points moved by G.  That's why this "bug" happens (this ticket).  
   
-  * In Magma, all permutation groups G are embedded in a specific S_n and IsTransitive returns whether or not G is transitive on [1..n]. 
+* In Magma, all permutation groups G are embedded in a specific S_n and IsTransitive returns whether or not G is transitive on [1..n]. 
 
-  * Sage has a degree method for permutation groups, which gives back an n.
+* Sage has a degree method for permutation groups, which gives back an n.
 
 I think we view permutation groups as contained in S_n, which naturally acts on [1..n], so that should be the default.   I think permutations groups should also at some point in the future be equipable with an action on any set.  But the resulting object will be "a permutation group equipped with an action", and is_transitive will be defined relative to that.  So for this ticket, we just need to decide on the default set acted on by a permutation group generated by a list of permutations.  I think the most natural choice is the set {1,2, ..., n} given the embedding in S_n. 
 
 Anyway, I've attached a patch that fixes the bug, and makes is_transitive() return whether or not the group is transitive on `[1..G.degree()]`.    I also fixed a few surrounding docstrings and added one to load_hap, so that doctest coverage for the file permgroup.py is now 100%.
 
 
+
 ---
+
+archive/issue_comments_025075.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-01-22T12:52:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3544",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3544#issuecomment-25075",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by rlm created at 2009-01-22 16:46:18
+archive/issue_comments_025076.json:
+```json
+{
+    "body": "Looks good to me!",
+    "created_at": "2009-01-22T16:46:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3544",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3544#issuecomment-25076",
+    "user": "rlm"
+}
+```
 
 Looks good to me!
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-23 07:27:14
+archive/issue_comments_025077.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-01-23T07:27:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3544",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3544#issuecomment-25077",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-23 07:27:14
+archive/issue_comments_025078.json:
+```json
+{
+    "body": "Merged in Sage 3.3.alpha1",
+    "created_at": "2009-01-23T07:27:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3544",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3544#issuecomment-25078",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.3.alpha1

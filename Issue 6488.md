@@ -1,48 +1,119 @@
 # Issue 6488: "sage -docbuild -help" doesn't mention the --jsmath option
 
-Issue created by migration from https://trac.sagemath.org/ticket/6488
-
-Original creator: rlm
-
-Original creation time: 2009-07-08 20:20:40
-
+archive/issues_006488.json:
+```json
+{
+    "body": "Assignee: tba\n\nCC:  mhansen mpatel\n\n...so I don't know how to use it. :)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6488\n\n",
+    "created_at": "2009-07-08T20:20:40Z",
+    "labels": [
+        "documentation",
+        "major",
+        "bug"
+    ],
+    "title": "\"sage -docbuild -help\" doesn't mention the --jsmath option",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6488",
+    "user": "rlm"
+}
+```
 Assignee: tba
 
 CC:  mhansen mpatel
 
 ...so I don't know how to use it. :)
 
+Issue created by migration from https://trac.sagemath.org/ticket/6488
+
+
+
+
 
 ---
 
-Comment by jhpalmieri created at 2009-07-22 02:51:11
+archive/issue_comments_052463.json:
+```json
+{
+    "body": "Here's a patch.  Is it accurate (especially the part about having jsMath installed locally)?",
+    "created_at": "2009-07-22T02:51:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6488",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6488#issuecomment-52463",
+    "user": "jhpalmieri"
+}
+```
 
 Here's a patch.  Is it accurate (especially the part about having jsMath installed locally)?
 
 
+
 ---
+
+archive/issue_comments_052464.json:
+```json
+{
+    "body": "Attachment\n\nI apologize for not posting a note here earlier, but the latest changeset at #6187 \"documents\" the `--jsmath` flag and several new command-line options for `sage -docbuild`.  Of course, that approach may not be right, but if it's OK, should we modify it, instead?",
+    "created_at": "2009-07-22T04:21:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6488",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6488#issuecomment-52464",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
 I apologize for not posting a note here earlier, but the latest changeset at #6187 "documents" the `--jsmath` flag and several new command-line options for `sage -docbuild`.  Of course, that approach may not be right, but if it's OK, should we modify it, instead?
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-07-22 23:23:34
+archive/issue_comments_052465.json:
+```json
+{
+    "body": "That's okay with me.",
+    "created_at": "2009-07-22T23:23:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6488",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6488#issuecomment-52465",
+    "user": "jhpalmieri"
+}
+```
 
 That's okay with me.
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-15 16:33:19
+archive/issue_comments_052466.json:
+```json
+{
+    "body": "This can be closed since #6187 is closed.",
+    "created_at": "2009-10-15T16:33:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6488",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6488#issuecomment-52466",
+    "user": "mhansen"
+}
+```
 
 This can be closed since #6187 is closed.
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-15 16:33:19
+archive/issue_comments_052467.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-10-15T16:33:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6488",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6488#issuecomment-52467",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

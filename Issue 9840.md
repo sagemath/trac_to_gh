@@ -1,11 +1,21 @@
 # Issue 9840: Make Qhull an optional package
 
-Issue created by migration from https://trac.sagemath.org/ticket/9841
-
-Original creator: mhampton
-
-Original creation time: 2010-08-30 16:52:38
-
+archive/issues_009840.json:
+```json
+{
+    "body": "Assignee: mhampton\n\nCC:  novoselt vbraun mvngu schilly mhansen jdemeyer\n\nKeywords: polyhedra, qhull, convex, Delaunay, Voronoi\n\nFrom the README.txt of Qhull:\n\nQhull computes convex hulls, Delaunay triangulations, Voronoi diagrams,\nfurthest-site Voronoi diagrams, and halfspace intersections about a point.\nIt runs in 2-d, 3-d, 4-d, or higher.  It implements the Quickhull algorithm\nfor computing convex hulls.   Qhull handles round-off errors from floating\npoint arithmetic.  It can approximate a convex hull.\n\nThe program includes options for hull volume, facet area, partial hulls,\ninput transformations, randomization, tracing, multiple output formats, and\nexecution statistics.\n\nFirst attempt at a spkg is at:\n\n[http://sage.math.washington.edu/home/mhampton/qhull-2010.1.spkg](http://sage.math.washington.edu/home/mhampton/qhull-2010.1.spkg)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9841\n\n",
+    "created_at": "2010-08-30T16:52:38Z",
+    "labels": [
+        "geometry",
+        "minor",
+        "enhancement"
+    ],
+    "title": "Make Qhull an optional package",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9840",
+    "user": "mhampton"
+}
+```
 Assignee: mhampton
 
 CC:  novoselt vbraun mvngu schilly mhansen jdemeyer
@@ -28,41 +38,100 @@ First attempt at a spkg is at:
 
 [http://sage.math.washington.edu/home/mhampton/qhull-2010.1.spkg](http://sage.math.washington.edu/home/mhampton/qhull-2010.1.spkg)
 
+Issue created by migration from https://trac.sagemath.org/ticket/9841
+
+
+
+
 
 ---
 
-Comment by mhampton created at 2010-08-30 17:39:40
+archive/issue_comments_097123.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-08-30T17:39:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9840",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9840#issuecomment-97123",
+    "user": "mhampton"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mhampton created at 2010-10-20 01:54:59
+archive/issue_comments_097124.json:
+```json
+{
+    "body": "This doesn't require much review - can someone take a look?\nAll this spkg does is install qhull.  I have tested on OS X 10.6 and 10.5 and linux.",
+    "created_at": "2010-10-20T01:54:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9840",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9840#issuecomment-97124",
+    "user": "mhampton"
+}
+```
 
 This doesn't require much review - can someone take a look?
 All this spkg does is install qhull.  I have tested on OS X 10.6 and 10.5 and linux.
 
 
+
 ---
 
-Comment by vbraun created at 2010-10-20 11:51:32
+archive/issue_comments_097125.json:
+```json
+{
+    "body": "Looks good to me! \n\nIts a bit odd that qhull uses no buildsystem except for a bare-bones makefile, but then they don't use any external library nor build a shared library. Still, there are a lot of #ifdef's strewn around the source code. In any case, I'm in favor of having it as an optional package.",
+    "created_at": "2010-10-20T11:51:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9840",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9840#issuecomment-97125",
+    "user": "vbraun"
+}
+```
 
 Looks good to me! 
 
 Its a bit odd that qhull uses no buildsystem except for a bare-bones makefile, but then they don't use any external library nor build a shared library. Still, there are a lot of #ifdef's strewn around the source code. In any case, I'm in favor of having it as an optional package.
 
 
+
 ---
 
-Comment by vbraun created at 2010-10-20 11:51:32
+archive/issue_comments_097126.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-10-20T11:51:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9840",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9840#issuecomment-97126",
+    "user": "vbraun"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mpatel created at 2010-11-01 10:39:50
+archive/issue_comments_097127.json:
+```json
+{
+    "body": "Harald, Mike, or Minh, could you please add\n\n http://sage.math.washington.edu/home/mhampton/qhull-2010.1.spkg\n\nas an optional package?",
+    "created_at": "2010-11-01T10:39:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9840",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9840#issuecomment-97127",
+    "user": "mpatel"
+}
+```
 
 Harald, Mike, or Minh, could you please add
 
@@ -71,9 +140,20 @@ Harald, Mike, or Minh, could you please add
 as an optional package?
 
 
+
 ---
 
-Comment by mvngu created at 2010-11-01 10:48:40
+archive/issue_comments_097128.json:
+```json
+{
+    "body": "Replying to [comment:6 mpatel]:\n> Harald, Mike, or Minh, could you please add\n> \n>  http://sage.math.washington.edu/home/mhampton/qhull-2010.1.spkg\n> \n> as an optional package?\n\nDone. See the updated optional spkg page\n\nhttp://www.sagemath.org/packages/optional/\n\nThe new package is now being mirrored.",
+    "created_at": "2010-11-01T10:48:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9840",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9840#issuecomment-97128",
+    "user": "mvngu"
+}
+```
 
 Replying to [comment:6 mpatel]:
 > Harald, Mike, or Minh, could you please add
@@ -89,8 +169,19 @@ http://www.sagemath.org/packages/optional/
 The new package is now being mirrored.
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-11-01 11:21:53
+archive/issue_comments_097129.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-11-01T11:21:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9840",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9840#issuecomment-97129",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: fixed

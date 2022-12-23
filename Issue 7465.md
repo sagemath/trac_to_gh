@@ -1,11 +1,21 @@
 # Issue 7465: %fortran in the notebook (and fortran.eval on command line) is completely broken on OS X
 
-Issue created by migration from https://trac.sagemath.org/ticket/7465
-
-Original creator: was
-
-Original creation time: 2009-11-14 22:13:25
-
+archive/issues_007465.json:
+```json
+{
+    "body": "Assignee: was\n\nTry this in a notebook cell on OS X:\n\n\n```\n%fortran          \t\nC FILE: FIB1.F\n      SUBROUTINE FIB(A,N)\nC\nC     CALCULATE FIRST N FIBONACCI NUMBERS\nC\n      INTEGER N\n      REAL*8 A(N)\n      DO I=1,N\n         IF (I.EQ.1) THEN\n            A(I) = 0.0D0\n         ELSEIF (I.EQ.2) THEN\n            A(I) = 1.0D0\n         ELSE \n            A(I) = A(I-1) + A(I-2)\n         ENDIF\n      ENDDO\n      END\nC END FILE FIB1.F\n```\n\n\nBoom!!  This despite us shipping a Fortran compiler. \n\nThe problem is really that the doctests for `fortran.eval` were marked (by me, doh) as optional, and we don't test optional doctests frequently.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7465\n\n",
+    "created_at": "2009-11-14T22:13:25Z",
+    "labels": [
+        "interfaces",
+        "major",
+        "bug"
+    ],
+    "title": "%fortran in the notebook (and fortran.eval on command line) is completely broken on OS X",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7465",
+    "user": "was"
+}
+```
 Assignee: was
 
 Try this in a notebook cell on OS X:
@@ -38,28 +48,78 @@ Boom!!  This despite us shipping a Fortran compiler.
 
 The problem is really that the doctests for `fortran.eval` were marked (by me, doh) as optional, and we don't test optional doctests frequently.
 
+Issue created by migration from https://trac.sagemath.org/ticket/7465
+
+
+
+
 
 ---
 
-Comment by flawrence created at 2010-11-03 05:56:06
+archive/issue_comments_062873.json:
+```json
+{
+    "body": "#8010 is a duplicate of this",
+    "created_at": "2010-11-03T05:56:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7465",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7465#issuecomment-62873",
+    "user": "flawrence"
+}
+```
 
 #8010 is a duplicate of this
 
 
+
 ---
+
+archive/issue_comments_062874.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-11-04T11:55:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7465",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7465#issuecomment-62874",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by flawrence created at 2010-11-05 06:48:21
+archive/issue_comments_062875.json:
+```json
+{
+    "body": "No such problem in 4.6.1alpha0 on a computer that previously had this problem.  No further patch required.  This ticket can be closed.",
+    "created_at": "2010-11-05T06:48:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7465",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7465#issuecomment-62875",
+    "user": "flawrence"
+}
+```
 
 No such problem in 4.6.1alpha0 on a computer that previously had this problem.  No further patch required.  This ticket can be closed.
 
 
+
 ---
 
-Comment by mvngu created at 2010-11-05 06:58:00
+archive/issue_comments_062876.json:
+```json
+{
+    "body": "Resolution: worksforme",
+    "created_at": "2010-11-05T06:58:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7465",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7465#issuecomment-62876",
+    "user": "mvngu"
+}
+```
 
 Resolution: worksforme

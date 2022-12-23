@@ -1,11 +1,21 @@
 # Issue 4227: Sage 3.1.3.alpha2: many Magma doctests are not option
 
-Issue created by migration from https://trac.sagemath.org/ticket/4227
-
-Original creator: mabshoff
-
-Original creation time: 2008-10-01 07:21:42
-
+archive/issues_004227.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nALex Ghitza reported a bunch of doctest failures at\n\nhttp://www.ms.unimelb.edu.au/~aghitza/sage/failures\n\nThose failures are cause by Magma doctests not being marked \"optional\"\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4227\n\n",
+    "created_at": "2008-10-01T07:21:42Z",
+    "labels": [
+        "doctest coverage",
+        "blocker",
+        "bug"
+    ],
+    "title": "Sage 3.1.3.alpha2: many Magma doctests are not option",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4227",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 ALex Ghitza reported a bunch of doctest failures at
@@ -18,35 +28,96 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/4227
+
+
+
+
 
 ---
+
+archive/issue_comments_030724.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-10-01T12:06:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4227",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4227#issuecomment-30724",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-01 12:06:28
+archive/issue_comments_030725.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-10-01T12:06:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4227",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4227#issuecomment-30725",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2008-10-01 12:58:28
+archive/issue_comments_030726.json:
+```json
+{
+    "body": "Looks good and fixes the doctest failures.",
+    "created_at": "2008-10-01T12:58:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4227",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4227#issuecomment-30726",
+    "user": "AlexGhitza"
+}
+```
 
 Looks good and fixes the doctest failures.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-01 13:15:49
+archive/issue_comments_030727.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-10-01T13:15:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4227",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4227#issuecomment-30727",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-01 13:15:49
+archive/issue_comments_030728.json:
+```json
+{
+    "body": "Merged in Sage 3.1.3.alpha3",
+    "created_at": "2008-10-01T13:15:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4227",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4227#issuecomment-30728",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.1.3.alpha3

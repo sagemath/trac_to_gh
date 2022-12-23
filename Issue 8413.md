@@ -1,11 +1,21 @@
 # Issue 8413: Add "Unknown" truth value
 
-Issue created by migration from https://trac.sagemath.org/ticket/8413
-
-Original creator: hivert
-
-Original creation time: 2010-03-01 23:05:49
-
+archive/issues_008413.json:
+```json
+{
+    "body": "Assignee: hivert\n\nCC:  robertwb\n\nKeywords: Unknown Boolean\n\nAs discussed on [sage-devel](http://groups.google.com/group/sage-devel/t/5d9c32390ffe3c96) it could be good to have an \"Unkown\" value in sage which semantic is a truth value. Here are the intended truth table:\n\n```\n      and             or\n    F  U  T         F  U  T\n F [F, F, F]     F [F, U, T]\n U [F, U, U]     U [U, U, T]\n T [F, U, T]     T [T, T, T]\n```\n\nUnfortunately, without [PEP 335](http://www.python.org/dev/peps/pep-0335/), there is no way to achieve this with python's \"and\" and \"or\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/8413\n\n",
+    "created_at": "2010-03-01T23:05:49Z",
+    "labels": [
+        "misc",
+        "major",
+        "enhancement"
+    ],
+    "title": "Add \"Unknown\" truth value",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8413",
+    "user": "hivert"
+}
+```
 Assignee: hivert
 
 CC:  robertwb
@@ -24,42 +34,114 @@ As discussed on [sage-devel](http://groups.google.com/group/sage-devel/t/5d9c323
 
 Unfortunately, without [PEP 335](http://www.python.org/dev/peps/pep-0335/), there is no way to achieve this with python's "and" and "or".
 
+Issue created by migration from https://trac.sagemath.org/ticket/8413
+
+
+
+
 
 ---
+
+archive/issue_comments_075379.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-03-02T11:10:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8413",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8413#issuecomment-75379",
+    "user": "hivert"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by hivert created at 2010-03-02 11:10:21
+archive/issue_comments_075380.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-03-02T11:10:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8413",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8413#issuecomment-75380",
+    "user": "hivert"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by nthiery created at 2010-04-16 21:41:13
+archive/issue_comments_075381.json:
+```json
+{
+    "body": "For the record: all test pass.",
+    "created_at": "2010-04-16T21:41:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8413",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8413#issuecomment-75381",
+    "user": "nthiery"
+}
+```
 
 For the record: all test pass.
 
 
+
 ---
 
-Comment by robertwb created at 2010-06-22 23:50:17
+archive/issue_comments_075382.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-06-22T23:50:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8413",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8413#issuecomment-75382",
+    "user": "robertwb"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by robertwb created at 2010-06-22 23:50:17
+archive/issue_comments_075383.json:
+```json
+{
+    "body": "Looks good.",
+    "created_at": "2010-06-22T23:50:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8413",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8413#issuecomment-75383",
+    "user": "robertwb"
+}
+```
 
 Looks good.
 
 
+
 ---
 
-Comment by ddrake created at 2010-07-22 07:35:47
+archive/issue_comments_075384.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-07-22T07:35:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8413",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8413#issuecomment-75384",
+    "user": "ddrake"
+}
+```
 
 Resolution: fixed

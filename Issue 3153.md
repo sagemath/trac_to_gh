@@ -1,37 +1,97 @@
 # Issue 3153: make finite_field_ntl_gf2e use randstate framework
 
-Issue created by migration from https://trac.sagemath.org/ticket/3153
-
-Original creator: cwitty
-
-Original creation time: 2008-05-10 22:41:39
-
+archive/issues_003153.json:
+```json
+{
+    "body": "Assignee: tbd\n\nThe patch from #3020 added a new call to a pseudo-random-number generator, not under the control of the Sage randstate framework.  This patch fixes that up, as well as adding some new documentation to randstate.  Applies on top of the patch from #3020.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3153\n\n",
+    "created_at": "2008-05-10T22:41:39Z",
+    "labels": [
+        "algebra",
+        "major",
+        "bug"
+    ],
+    "title": "make finite_field_ntl_gf2e use randstate framework",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3153",
+    "user": "cwitty"
+}
+```
 Assignee: tbd
 
 The patch from #3020 added a new call to a pseudo-random-number generator, not under the control of the Sage randstate framework.  This patch fixes that up, as well as adding some new documentation to randstate.  Applies on top of the patch from #3020.
 
+Issue created by migration from https://trac.sagemath.org/ticket/3153
+
+
+
+
 
 ---
+
+archive/issue_comments_021863.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-05-10T22:41:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3153",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3153#issuecomment-21863",
+    "user": "cwitty"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by cremona created at 2008-05-14 21:43:13
+archive/issue_comments_021864.json:
+```json
+{
+    "body": "This is a very good idea indeed.  The patch looks fine to me though it would also be agood idea if someone more familiar with Sage's random framework looked at it too.",
+    "created_at": "2008-05-14T21:43:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3153",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3153#issuecomment-21864",
+    "user": "cremona"
+}
+```
 
 This is a very good idea indeed.  The patch looks fine to me though it would also be agood idea if someone more familiar with Sage's random framework looked at it too.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-17 18:31:11
+archive/issue_comments_021865.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-05-17T18:31:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3153",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3153#issuecomment-21865",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-17 18:31:11
+archive/issue_comments_021866.json:
+```json
+{
+    "body": "Merged in Sage 3.0.2.alpha1",
+    "created_at": "2008-05-17T18:31:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3153",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3153#issuecomment-21866",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.2.alpha1

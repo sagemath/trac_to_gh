@@ -1,35 +1,84 @@
 # Issue 5715: [with patch, needs review] show subdivisions for matrices over GF(2)
 
-Issue created by migration from https://trac.sagemath.org/ticket/5715
-
-Original creator: jhpalmieri
-
-Original creation time: 2009-04-08 19:17:10
-
+archive/issues_005715.json:
+```json
+{
+    "body": "Assignee: jhpalmieri\n\nSince `matrix_mod2_dense` defines its own `str` function, it overrides the function for general matrices, so for dense matrices over GF(2), subdivisions are not printed.  (See [this discussion](http://groups.google.com/group/sage-support/browse_frm/thread/a08df4717024f9c0).)\n\nThis patch deletes the `str` method for dense matrices over GF(2).\n\nIssue created by migration from https://trac.sagemath.org/ticket/5715\n\n",
+    "created_at": "2009-04-08T19:17:10Z",
+    "labels": [
+        "linear algebra",
+        "minor",
+        "bug"
+    ],
+    "title": "[with patch, needs review] show subdivisions for matrices over GF(2)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5715",
+    "user": "jhpalmieri"
+}
+```
 Assignee: jhpalmieri
 
 Since `matrix_mod2_dense` defines its own `str` function, it overrides the function for general matrices, so for dense matrices over GF(2), subdivisions are not printed.  (See [this discussion](http://groups.google.com/group/sage-support/browse_frm/thread/a08df4717024f9c0).)
 
 This patch deletes the `str` method for dense matrices over GF(2).
 
+Issue created by migration from https://trac.sagemath.org/ticket/5715
+
+
+
+
 
 ---
+
+archive/issue_comments_044658.json:
+```json
+{
+    "body": "Attachment\n\nThis is a duplicate of #5714.",
+    "created_at": "2009-04-08T19:24:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5715#issuecomment-44658",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
 This is a duplicate of #5714.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-04-08 19:24:40
+archive/issue_comments_044659.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2009-04-08T19:24:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5715#issuecomment-44659",
+    "user": "jhpalmieri"
+}
+```
 
 Resolution: duplicate
 
 
+
 ---
 
-Comment by was created at 2009-04-08 19:27:17
+archive/issue_comments_044660.json:
+```json
+{
+    "body": "Needs work.  There is a *very good* reason that there is a str method for GF(2) -- it's for speed!  Check this out:\n\n```\nBEFORE YOUR PATCH:\nsage: a = random_matrix(GF(2),1000)\nsage: time b = a.str()\nCPU times: user 0.41 s, sys: 0.01 s, total: 0.42 s\nWall time: 0.42 s\n```\n\n\n```\nAFTER YOUR PATCH:\nsage: a = random_matrix(GF(2),1000)\nsage: time b = a.str()\nCPU times: user 5.02 s, sys: 0.86 s, total: 5.88 s\nWall time: 5.89 s\n```\n",
+    "created_at": "2009-04-08T19:27:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5715#issuecomment-44660",
+    "user": "was"
+}
+```
 
 Needs work.  There is a *very good* reason that there is a str method for GF(2) -- it's for speed!  Check this out:
 
@@ -52,16 +101,40 @@ Wall time: 5.89 s
 
 
 
+
 ---
+
+archive/issue_comments_044661.json:
+```json
+{
+    "body": "Attachment\n\napply only this patch",
+    "created_at": "2009-04-09T07:21:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5715#issuecomment-44661",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 apply only this patch
 
 
+
 ---
 
-Comment by robertwb created at 2009-04-09 07:23:44
+archive/issue_comments_044662.json:
+```json
+{
+    "body": "I posted a new patch that handles subdivisions. I went ahead and sped up the str method while I was there too. \n\nBefore\n\n```\nsage: a = random_matrix(GF(2),1000)\nsage: time b = a.str()\nCPU times: user 0.48 s, sys: 0.01 s, total: 0.49 s\nWall time: 0.50 s\n```\n\n\nAfter\n\n```\nsage: a = random_matrix(GF(2),1000)\nsage: time b = a.str()\nCPU times: user 0.01 s, sys: 0.01 s, total: 0.02 s\nWall time: 0.02 s\n```\n",
+    "created_at": "2009-04-09T07:23:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5715#issuecomment-44662",
+    "user": "robertwb"
+}
+```
 
 I posted a new patch that handles subdivisions. I went ahead and sped up the str method while I was there too. 
 
@@ -86,9 +159,20 @@ Wall time: 0.02 s
 
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-09 09:59:45
+archive/issue_comments_044663.json:
+```json
+{
+    "body": "Hmm, shouldn't this patch be reopened or maybe go to another ticket? We need to do one thing since this patch is currently closed as a dupe.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-09T09:59:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5715#issuecomment-44663",
+    "user": "mabshoff"
+}
+```
 
 Hmm, shouldn't this patch be reopened or maybe go to another ticket? We need to do one thing since this patch is currently closed as a dupe.
 
@@ -97,39 +181,94 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by robertwb created at 2009-04-09 10:40:29
+archive/issue_comments_044664.json:
+```json
+{
+    "body": "Resolution changed from duplicate to ",
+    "created_at": "2009-04-09T10:40:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5715#issuecomment-44664",
+    "user": "robertwb"
+}
+```
 
 Resolution changed from duplicate to 
 
 
+
 ---
 
-Comment by robertwb created at 2009-04-09 10:40:29
+archive/issue_comments_044665.json:
+```json
+{
+    "body": "Changing status from closed to reopened.",
+    "created_at": "2009-04-09T10:40:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5715#issuecomment-44665",
+    "user": "robertwb"
+}
+```
 
 Changing status from closed to reopened.
 
 
+
 ---
 
-Comment by robertwb created at 2009-04-09 10:41:09
+archive/issue_comments_044666.json:
+```json
+{
+    "body": "I just reopened this ticket, as it seems to have the most activity.",
+    "created_at": "2009-04-09T10:41:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5715#issuecomment-44666",
+    "user": "robertwb"
+}
+```
 
 I just reopened this ticket, as it seems to have the most activity.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-04-13 00:15:16
+archive/issue_comments_044667.json:
+```json
+{
+    "body": "Looks good, passes all tests when applied to 3.4.1.rc2.  Also fast, as robertwb pointed out above.\n\nA question: how do you tell if a sparse matrix is too big to be converted to a dense one?  If we have a sparse mod 2 matrix, should we consider printing it by converting to a dense one and using this routine?  For a 1000x1000 random matrix, converting and using this one was about 5 times faster than just printing it.  (If this is a good idea, then it belongs in a different ticket, but I don't know if this is a good idea...)",
+    "created_at": "2009-04-13T00:15:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5715#issuecomment-44667",
+    "user": "jhpalmieri"
+}
+```
 
 Looks good, passes all tests when applied to 3.4.1.rc2.  Also fast, as robertwb pointed out above.
 
 A question: how do you tell if a sparse matrix is too big to be converted to a dense one?  If we have a sparse mod 2 matrix, should we consider printing it by converting to a dense one and using this routine?  For a 1000x1000 random matrix, converting and using this one was about 5 times faster than just printing it.  (If this is a good idea, then it belongs in a different ticket, but I don't know if this is a good idea...)
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-13 09:13:43
+archive/issue_comments_044668.json:
+```json
+{
+    "body": "Merged 5715-mat2-subdiv.patch in Sage 3.4.1.rc3.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-13T09:13:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5715#issuecomment-44668",
+    "user": "mabshoff"
+}
+```
 
 Merged 5715-mat2-subdiv.patch in Sage 3.4.1.rc3.
 
@@ -138,15 +277,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-13 09:13:43
+archive/issue_comments_044669.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-04-13T09:13:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5715#issuecomment-44669",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by robertwb created at 2009-04-14 02:12:03
+archive/issue_comments_044670.json:
+```json
+{
+    "body": "How big is too big is an interesting question, but too big to convert > to big to print. Probably should be a separate ticket, but the optimizer in me sees an even easier way: create the zero matrix doing \"[0 0 ... 0]\" * nrows, then set the 1 entries. This wouldn't of course handle subdivisons though, but could be easily adapted to do so the same way as this code.",
+    "created_at": "2009-04-14T02:12:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5715",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5715#issuecomment-44670",
+    "user": "robertwb"
+}
+```
 
 How big is too big is an interesting question, but too big to convert > to big to print. Probably should be a separate ticket, but the optimizer in me sees an even easier way: create the zero matrix doing "[0 0 ... 0]" * nrows, then set the 1 entries. This wouldn't of course handle subdivisons though, but could be easily adapted to do so the same way as this code.

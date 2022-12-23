@@ -1,11 +1,21 @@
 # Issue 7546: Update Mac OS X app and icon
 
-Issue created by migration from https://trac.sagemath.org/ticket/7546
-
-Original creator: iandrus
-
-Original creation time: 2009-11-27 20:43:23
-
+archive/issues_007546.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  was mhansen\n\nKeywords: icon, launcher\n\nThere are new icons created Harald Schilly, so I thought I would take this opportunity to update the OS X launcher to use them and also make it easier to update in the future.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7546\n\n",
+    "created_at": "2009-11-27T20:43:23Z",
+    "labels": [
+        "user interface",
+        "minor",
+        "enhancement"
+    ],
+    "title": "Update Mac OS X app and icon",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7546",
+    "user": "iandrus"
+}
+```
 Assignee: was
 
 CC:  was mhansen
@@ -14,73 +24,189 @@ Keywords: icon, launcher
 
 There are new icons created Harald Schilly, so I thought I would take this opportunity to update the OS X launcher to use them and also make it easier to update in the future.
 
+Issue created by migration from https://trac.sagemath.org/ticket/7546
+
+
+
+
 
 ---
+
+archive/issue_comments_064079.json:
+```json
+{
+    "body": "Attachment\n\nchange the tar file for an app bundle",
+    "created_at": "2009-11-27T20:48:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7546",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7546#issuecomment-64079",
+    "user": "iandrus"
+}
+```
 
 Attachment
 
 change the tar file for an app bundle
 
 
+
 ---
 
-Comment by iandrus created at 2009-11-27 20:51:12
+archive/issue_comments_064080.json:
+```json
+{
+    "body": "In the app-bundle patch I accidentally added a .DS_Store file, but then I removed it.  I hope that doesn't cause any problems with history.",
+    "created_at": "2009-11-27T20:51:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7546",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7546#issuecomment-64080",
+    "user": "iandrus"
+}
+```
 
 In the app-bundle patch I accidentally added a .DS_Store file, but then I removed it.  I hope that doesn't cause any problems with history.
 
 
+
 ---
 
-Comment by iandrus created at 2009-11-27 20:51:12
+archive/issue_comments_064081.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-11-27T20:51:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7546",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7546#issuecomment-64081",
+    "user": "iandrus"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-11-28 04:24:57
+archive/issue_comments_064082.json:
+```json
+{
+    "body": "Is it possible to fix #5261 in here as well (somehow detecting Intel vs. PPC, for instance)?",
+    "created_at": "2009-11-28T04:24:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7546",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7546#issuecomment-64082",
+    "user": "kcrisman"
+}
+```
 
 Is it possible to fix #5261 in here as well (somehow detecting Intel vs. PPC, for instance)?
 
 
+
 ---
 
-Comment by iandrus created at 2009-11-28 09:44:00
+archive/issue_comments_064083.json:
+```json
+{
+    "body": "I haven't added anything to detect Intel/PPC, but I think I have fixed the rest of #5261.  I think detection should be a separate ticket.",
+    "created_at": "2009-11-28T09:44:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7546",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7546#issuecomment-64083",
+    "user": "iandrus"
+}
+```
 
 I haven't added anything to detect Intel/PPC, but I think I have fixed the rest of #5261.  I think detection should be a separate ticket.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-12-04 16:03:03
+archive/issue_comments_064084.json:
+```json
+{
+    "body": "I like the bdist patch, except for some reason it doesn't look like the sage-bdist at [http://hg.sagemath.org/scripts-main](http://hg.sagemath.org/scripts-main).    Does this depend on some other patch (perhaps one in 4.3.alpha0)?",
+    "created_at": "2009-12-04T16:03:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7546",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7546#issuecomment-64084",
+    "user": "kcrisman"
+}
+```
 
 I like the bdist patch, except for some reason it doesn't look like the sage-bdist at [http://hg.sagemath.org/scripts-main](http://hg.sagemath.org/scripts-main).    Does this depend on some other patch (perhaps one in 4.3.alpha0)?
 
 
+
 ---
 
-Comment by kcrisman created at 2009-12-04 16:03:03
+archive/issue_comments_064085.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_info.",
+    "created_at": "2009-12-04T16:03:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7546",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7546#issuecomment-64085",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_review to needs_info.
 
 
+
 ---
 
-Comment by iandrus created at 2009-12-06 21:20:34
+archive/issue_comments_064086.json:
+```json
+{
+    "body": "Oops, very sorry about that.  I had some local changes committed when upgrading.  I have updated the patch to work against 4.3.alpha1, and have started using mercurial queues to prevent this sort of mistake in the future.",
+    "created_at": "2009-12-06T21:20:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7546",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7546#issuecomment-64086",
+    "user": "iandrus"
+}
+```
 
 Oops, very sorry about that.  I had some local changes committed when upgrading.  I have updated the patch to work against 4.3.alpha1, and have started using mercurial queues to prevent this sort of mistake in the future.
 
 
+
 ---
 
-Comment by iandrus created at 2009-12-06 21:20:34
+archive/issue_comments_064087.json:
+```json
+{
+    "body": "Changing status from needs_info to needs_review.",
+    "created_at": "2009-12-06T21:20:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7546",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7546#issuecomment-64087",
+    "user": "iandrus"
+}
+```
 
 Changing status from needs_info to needs_review.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-12-07 17:31:30
+archive/issue_comments_064088.json:
+```json
+{
+    "body": "There is a syntax error with else and fi on consecutive lines.  Maybe this is intended?\n\n```\n        # Rename it with the version number\n        mv Sage.app \"Sage-$SAGE_VERSION.app\"\n    else\n        echo 'If you wish to create an app bundle please set'\n        echo 'SAGE_APP_BUNDLE=yes'\n    fi\n\n    # Go back to the right directory for later copying\n    cd \"$CUR\"/tmp/\n    if [ \"$SAGE_APP_DMG\" = \"yes\" ]; then\n        echo \"Creating dmg\"\n        DYLD_LIBRARY_PATH=$SAGE_ORIG_DYLD_LIBRARY_PATH; export DYLD_LIBRARY_PATH\n        hdiutil create -srcfolder \"$TARGET\" -format UDBZ \"$TARGET\".dmg\n    else\n        echo 'If you wish to create a disk image please set'\n        echo 'SAGE_APP_DMG=yes'\n    fi\n```\n\nI did this and am now testing on Macintel 10.5, hope to do MacPPC 10.4 as well if it doesn't take forever to build.",
+    "created_at": "2009-12-07T17:31:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7546",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7546#issuecomment-64088",
+    "user": "kcrisman"
+}
+```
 
 There is a syntax error with else and fi on consecutive lines.  Maybe this is intended?
 
@@ -107,16 +233,38 @@ There is a syntax error with else and fi on consecutive lines.  Maybe this is in
 I did this and am now testing on Macintel 10.5, hope to do MacPPC 10.4 as well if it doesn't take forever to build.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-12-07 17:31:30
+archive/issue_comments_064089.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2009-12-07T17:31:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7546",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7546#issuecomment-64089",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-12-07 17:36:24
+archive/issue_comments_064090.json:
+```json
+{
+    "body": "I'm really sorry, I think I screwed something up... how do I apply the change of the tar file?  I get \n\n```\ncp: /Users/.../sage-4.3.alpha1/data/extcode/sage/ext/mac-app/Sage.app: No such file or directory\nsed: ./Sage.app/Contents/Info.plist: No such file or directory\nmv: rename sage to ./Sage.app/Contents/Resources/: No such file or directory\nmv: rename Sage.app to Sage-sample.app: No such file or directory\n```\n\nSo obviously hg_sage.import... didn't actually import these files.  Should I put them in manually?  That is difficult given the current patch state, since the various icon files etc. are just binary data on trac.",
+    "created_at": "2009-12-07T17:36:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7546",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7546#issuecomment-64090",
+    "user": "kcrisman"
+}
+```
 
 I'm really sorry, I think I screwed something up... how do I apply the change of the tar file?  I get 
 
@@ -130,9 +278,20 @@ mv: rename Sage.app to Sage-sample.app: No such file or directory
 So obviously hg_sage.import... didn't actually import these files.  Should I put them in manually?  That is difficult given the current patch state, since the various icon files etc. are just binary data on trac.
 
 
+
 ---
 
-Comment by iandrus created at 2009-12-07 22:16:43
+archive/issue_comments_064091.json:
+```json
+{
+    "body": "Ack!  That's exactly what I meant.  That's what I get for not waiting the incredible amount of time it takes to build before posting a patch.  I have uploaded a patch that I actually tested this time :)\n\nAs for the other, try (from the top level sage directory)\n\ncd data/extcode\ncurl http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7546/app-bundle-7546.patch | sage -hg import -\n\nthat seems to have worked for me.  I tried to use hg_sage.import_patch(...) but it put it in the wrong place.  I'm no expert in that part of sage so I probably did something wrong.",
+    "created_at": "2009-12-07T22:16:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7546",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7546#issuecomment-64091",
+    "user": "iandrus"
+}
+```
 
 Ack!  That's exactly what I meant.  That's what I get for not waiting the incredible amount of time it takes to build before posting a patch.  I have uploaded a patch that I actually tested this time :)
 
@@ -144,21 +303,56 @@ curl http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7546/app-bundle-75
 that seems to have worked for me.  I tried to use hg_sage.import_patch(...) but it put it in the wrong place.  I'm no expert in that part of sage so I probably did something wrong.
 
 
+
 ---
 
-Comment by iandrus created at 2009-12-07 22:16:43
+archive/issue_comments_064092.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2009-12-07T22:16:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7546",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7546#issuecomment-64092",
+    "user": "iandrus"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
+
+archive/issue_comments_064093.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-12-07T22:17:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7546",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7546#issuecomment-64093",
+    "user": "iandrus"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by kcrisman created at 2009-12-08 04:10:42
+archive/issue_comments_064094.json:
+```json
+{
+    "body": "Man, Unix commands... I really appreciate it.  I had actually downloaded it, so file:///path worked as an argument to curl.\n\nOkay, this now seems to work on my Macintel 10.5!  It takes a looong time (multiple minutes) to verify the .dmg when I click on it, and then a few more minutes (!) to copy the app bundle.  Is that just because it's well over one gigabyte?\n\nWhen my PPC finishes building (sometime tomorrow) I will check there too.   If I'm really ambitious I will also try #5261, as well as actually moving it from the Intel to PPC (over the network, so probably very slowly).  I don't know if I'll be done in time for 4.3, but certainly for 4.3.1.  Thanks for all the work on this!",
+    "created_at": "2009-12-08T04:10:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7546",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7546#issuecomment-64094",
+    "user": "kcrisman"
+}
+```
 
 Man, Unix commands... I really appreciate it.  I had actually downloaded it, so file:///path worked as an argument to curl.
 
@@ -167,25 +361,58 @@ Okay, this now seems to work on my Macintel 10.5!  It takes a looong time (multi
 When my PPC finishes building (sometime tomorrow) I will check there too.   If I'm really ambitious I will also try #5261, as well as actually moving it from the Intel to PPC (over the network, so probably very slowly).  I don't know if I'll be done in time for 4.3, but certainly for 4.3.1.  Thanks for all the work on this!
 
 
+
 ---
 
-Comment by was created at 2009-12-08 06:05:06
+archive/issue_comments_064095.json:
+```json
+{
+    "body": "> So obviously hg_sage.import... didn't actually import these files.\n\nIt's a patch to the extcode repo, so you have to use `hg_extcode.import`...",
+    "created_at": "2009-12-08T06:05:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7546",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7546#issuecomment-64095",
+    "user": "was"
+}
+```
 
 > So obviously hg_sage.import... didn't actually import these files.
 
 It's a patch to the extcode repo, so you have to use `hg_extcode.import`...
 
 
+
 ---
 
-Comment by iandrus created at 2009-12-08 09:28:54
+archive/issue_comments_064096.json:
+```json
+{
+    "body": "kcrisman thanks for reviewing it even through all the rockiness, and thanks was for the pointer to hg_extcode.  It makes so much more sense now.",
+    "created_at": "2009-12-08T09:28:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7546",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7546#issuecomment-64096",
+    "user": "iandrus"
+}
+```
 
 kcrisman thanks for reviewing it even through all the rockiness, and thanks was for the pointer to hg_extcode.  It makes so much more sense now.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-12-08 16:16:47
+archive/issue_comments_064097.json:
+```json
+{
+    "body": "Yes, thanks was - I only knew about hg_scripts and hg_sage.  Great!\n\nI should point out that the .DS_Store thing does \n\n```\n1 out of 1 hunks FAILED -- saving rejects to file sage/ext/.DS_Store.rej\nsage/ext/.DS_Store not tracked!\nsage/ext/.DS_Store: No such file or directory\nabort: patch failed to apply\n```\n\n\nbut I think everything actually still works out okay.   I'll change to positive review once I've verified a couple more things, which will depend on how fast sage.math and my own network are.\n\nDo you have any idea why it takes so dang long for the dmg to verify (more than five minutes)?  This could be a real turnoff; I haven't downloaded a binary in a while, so I forget whether that also takes a while to verify.  And then it takes another ten minutes to copy - granted, on an older computer, but this is a long time.  Good thing we have sagenb to try it out!\n\nNaming for PPC/Intel is now #7623.",
+    "created_at": "2009-12-08T16:16:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7546",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7546#issuecomment-64097",
+    "user": "kcrisman"
+}
+```
 
 Yes, thanks was - I only knew about hg_scripts and hg_sage.  Great!
 
@@ -206,9 +433,20 @@ Do you have any idea why it takes so dang long for the dmg to verify (more than 
 Naming for PPC/Intel is now #7623.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-12-08 16:38:34
+archive/issue_comments_064098.json:
+```json
+{
+    "body": "Okay, the only problem I have found is the following:\n\nIF someone had a previous Sage install with the old notebook, but now downloads and uses this, the script will ask whether they want to migrate their notebooks.  Like this:\n\n```\n********************************************************************************\n*\n* The Sage notebook at\n*\n*      '/Users/karl-dietercrisman/.sage/sage_notebook'\n*\n* will be upgraded to a new format and stored in\n*\n*      '/Users/karl-dietercrisman/.sage/sage_notebook.sagenb'.\n*\n* Your existing notebook will not be modified in any way.\n*\n********************************************************************************\n\nWould like to continue? [YES or no]\n```\n\nOnly, they can't answer the question, because of how the bundle is made, so you have no choice but to quit.  Maybe there should be something which catches this?  I have absolutely no idea how it would be implemented; I'm cc:ing William in on this in case he has an obvious trick.\n\nOtherwise it all seems to work fine.  Positive review!  \n\nCan we still get this in 4.3?  This would be really good.",
+    "created_at": "2009-12-08T16:38:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7546",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7546#issuecomment-64098",
+    "user": "kcrisman"
+}
+```
 
 Okay, the only problem I have found is the following:
 
@@ -239,31 +477,75 @@ Otherwise it all seems to work fine.  Positive review!
 Can we still get this in 4.3?  This would be really good.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-12-08 16:38:34
+archive/issue_comments_064099.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-12-08T16:38:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7546",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7546#issuecomment-64099",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-12-08 16:57:31
+archive/issue_comments_064100.json:
+```json
+{
+    "body": "I'm also looking to check what happens when I try to run an Intel bundle on a PPC, but unless the network significantly speeds up, that won't happen today.\n\nThe reason why I still put positive review despite the migration issue is that at this point the sage-bdist doesn't make these by default, and sage-support can easily point to downloading the non-notebook version when that time comes.  I'm putting that on #7622 as well.",
+    "created_at": "2009-12-08T16:57:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7546",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7546#issuecomment-64100",
+    "user": "kcrisman"
+}
+```
 
 I'm also looking to check what happens when I try to run an Intel bundle on a PPC, but unless the network significantly speeds up, that won't happen today.
 
 The reason why I still put positive review despite the migration issue is that at this point the sage-bdist doesn't make these by default, and sage-support can easily point to downloading the non-notebook version when that time comes.  I'm putting that on #7622 as well.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-12-08 16:58:58
+archive/issue_comments_064101.json:
+```json
+{
+    "body": "Sorry, that is not the right ticket, so I guess I'll leave it here.",
+    "created_at": "2009-12-08T16:58:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7546",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7546#issuecomment-64101",
+    "user": "kcrisman"
+}
+```
 
 Sorry, that is not the right ticket, so I guess I'll leave it here.
 
 
+
 ---
 
-Comment by mhansen created at 2009-12-09 02:41:13
+archive/issue_comments_064102.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-12-09T02:41:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7546",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7546#issuecomment-64102",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

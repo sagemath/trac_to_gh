@@ -1,11 +1,21 @@
 # Issue 4146: rgbcolor bug bites pdfs, casting to int solves it
 
-Issue created by migration from https://trac.sagemath.org/ticket/4146
-
-Original creator: mhampton
-
-Original creation time: 2008-09-18 19:50:34
-
+archive/issues_004146.json:
+```json
+{
+    "body": "Assignee: was\n\nKeywords: pdf, save, graphics, text, rgbcolor\n\nColored text breaks pdf saves.  PNG saves and show() work fine.  \n\nIt seems to be fixed by forcing the rgbcolor into ints, i.e. rgbcolor = (int(1),int(0),int(0)) works fine.\n\nHere's an example:\n\n```\nt1 = text('Hi, this is a bug',(1,1), rgbcolor = (1,0,0))\nt1.save(DATA+'bugplot.pdf')\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/Users/mh/sagetest-notebook/worksheets/admin/73/code/7.py\", line 6, in <module>\n    t1.save(DATA+\\u0027bugplot.pdf\\u0027)\n  File \"/Volumes/D/sage-3.1.2/local/lib/python2.5/site-packages/SQLAlchemy-0.4.6-py2.5.egg/\", line 1, in <module>\n    \n  File \"/Volumes/D/sage-3.1.2/local/lib/python2.5/site-packages/sage/plot/plot.py\", line 1605, in save\n    canvas.print_figure(filename, dpi=dpi)\n  File \"/Volumes/D/sage-3.1.2/local/lib/python2.5/site-packages/matplotlib/backend_bases.py\", line 1310, in print_figure\n    **kwargs)\n  File \"/Volumes/D/sage-3.1.2/local/lib/python2.5/site-packages/matplotlib/backend_bases.py\", line 1204, in print_pdf\n    return pdf.print_pdf(*args, **kwargs)\n  File \"/Volumes/D/sage-3.1.2/local/lib/python2.5/site-packages/matplotlib/backends/backend_pdf.py\", line 1864, in print_pdf\n    self.figure.draw(renderer)\n  File \"/Volumes/D/sage-3.1.2/local/lib/python2.5/site-packages/matplotlib/figure.py\", line 759, in draw\n    for a in self.axes: a.draw(renderer)\n  File \"/Volumes/D/sage-3.1.2/local/lib/python2.5/site-packages/matplotlib/axes.py\", line 1523, in draw\n    a.draw(renderer)\n  File \"/Volumes/D/sage-3.1.2/local/lib/python2.5/site-packages/matplotlib/text.py\", line 329, in draw\n    ismath=self.is_math_text(line))\n  File \"/Volumes/D/sage-3.1.2/local/lib/python2.5/site-packages/matplotlib/backends/backend_pdf.py\", line 1428, in draw_text\n    self.check_gc(gc, gc._rgb)\n  File \"/Volumes/D/sage-3.1.2/local/lib/python2.5/site-packages/matplotlib/backends/backend_pdf.py\", line 1191, in check_gc\n    if delta: self.file.output(*delta)\n  File \"/Volumes/D/sage-3.1.2/local/lib/python2.5/site-packages/matplotlib/backends/backend_pdf.py\", line 451, in output\n    self.write(fill(map(pdfRepr, data)))\n  File \"/Volumes/D/sage-3.1.2/local/lib/python2.5/site-packages/matplotlib/backends/backend_pdf.py\", line 182, in pdfRepr\n    % type(obj)\nTypeError: Don't know a PDF representation for <type 'sage.rings.integer.Integer'> objects.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4146\n\n",
+    "created_at": "2008-09-18T19:50:34Z",
+    "labels": [
+        "graphics",
+        "major",
+        "bug"
+    ],
+    "title": "rgbcolor bug bites pdfs, casting to int solves it",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4146",
+    "user": "mhampton"
+}
+```
 Assignee: was
 
 Keywords: pdf, save, graphics, text, rgbcolor
@@ -51,16 +61,42 @@ TypeError: Don't know a PDF representation for <type 'sage.rings.integer.Integer
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4146
+
+
+
+
 
 ---
 
-Comment by shumow created at 2009-01-23 10:28:32
+archive/issue_comments_030096.json:
+```json
+{
+    "body": "William suggested that this probably got fixed in matplotlib as pdf rendering got more mature/stable/done and/or less experimental.",
+    "created_at": "2009-01-23T10:28:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4146",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4146#issuecomment-30096",
+    "user": "shumow"
+}
+```
 
 William suggested that this probably got fixed in matplotlib as pdf rendering got more mature/stable/done and/or less experimental.
 
 
+
 ---
 
-Comment by shumow created at 2009-01-23 10:28:32
+archive/issue_comments_030097.json:
+```json
+{
+    "body": "Resolution: worksforme",
+    "created_at": "2009-01-23T10:28:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4146",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4146#issuecomment-30097",
+    "user": "shumow"
+}
+```
 
 Resolution: worksforme

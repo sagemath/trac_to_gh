@@ -1,11 +1,21 @@
 # Issue 3574: [with patch; needs review] optimize startup time by not importing mwrank library until needed
 
-Issue created by migration from https://trac.sagemath.org/ticket/3574
-
-Original creator: was
-
-Original creation time: 2008-07-06 22:00:40
-
+archive/issues_003574.json:
+```json
+{
+    "body": "Assignee: cwitty\n\nBEFORE, with caching, on OS X:\n\n```\nteragon-2:mwrank was$ sage -startuptime|grep mwrank\n           mwrank: 0.000 (sage.interfaces.all)\n     sage.libs.mwrank.all: 0.013 (sage.libs.all)\n      interface: 0.001 (sage.libs.mwrank.all)\nteragon-2:mwrank was$ \n```\n\n\nAFTER:\n\n```\nteragon-2:mwrank was$ sage -startuptime|grep mwrank\n           mwrank: 0.000 (sage.interfaces.all)\n     sage.libs.mwrank.all: 0.001 (sage.libs.all)\n      interface: 0.001 (sage.libs.mwrank.all)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3574\n\n",
+    "created_at": "2008-07-06T22:00:40Z",
+    "labels": [
+        "misc",
+        "major",
+        "enhancement"
+    ],
+    "title": "[with patch; needs review] optimize startup time by not importing mwrank library until needed",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3574",
+    "user": "was"
+}
+```
 Assignee: cwitty
 
 BEFORE, with caching, on OS X:
@@ -29,23 +39,62 @@ teragon-2:mwrank was$ sage -startuptime|grep mwrank
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3574
+
+
+
+
 
 ---
+
+archive/issue_comments_025249.json:
+```json
+{
+    "body": "Attachment\n\nThis applies and passes tests in sage/libs/mwrank/ for me.",
+    "created_at": "2008-07-06T22:44:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3574",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3574#issuecomment-25249",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 This applies and passes tests in sage/libs/mwrank/ for me.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-07 02:35:13
+archive/issue_comments_025250.json:
+```json
+{
+    "body": "Merged in Sage 3.0.4.alpha2",
+    "created_at": "2008-07-07T02:35:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3574",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3574#issuecomment-25250",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.4.alpha2
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-07 02:35:13
+archive/issue_comments_025251.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-07-07T02:35:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3574",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3574#issuecomment-25251",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

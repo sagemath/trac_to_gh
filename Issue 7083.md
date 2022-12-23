@@ -1,53 +1,135 @@
 # Issue 7083: Improve a few special functions
 
-Issue created by migration from https://trac.sagemath.org/ticket/7083
-
-Original creator: kcrisman
-
-Original creation time: 2009-09-30 15:03:10
-
+archive/issues_007083.json:
+```json
+{
+    "body": "Assignee: burcin\n\nA few functions in functions/special.py need a little help to actually accept valid input.  Also, exp_int is duplicated in its functionality.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7083\n\n",
+    "created_at": "2009-09-30T15:03:10Z",
+    "labels": [
+        "calculus",
+        "minor",
+        "bug"
+    ],
+    "title": "Improve a few special functions",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7083",
+    "user": "kcrisman"
+}
+```
 Assignee: burcin
 
 A few functions in functions/special.py need a little help to actually accept valid input.  Also, exp_int is duplicated in its functionality.
 
+Issue created by migration from https://trac.sagemath.org/ticket/7083
+
+
+
+
 
 ---
+
+archive/issue_comments_058549.json:
+```json
+{
+    "body": "Attachment\n\nBased on 4.1.2.alpha4",
+    "created_at": "2009-09-30T15:04:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7083",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7083#issuecomment-58549",
+    "user": "kcrisman"
+}
+```
 
 Attachment
 
 Based on 4.1.2.alpha4
 
 
+
 ---
 
-Comment by kcrisman created at 2009-09-30 15:05:47
+archive/issue_comments_058550.json:
+```json
+{
+    "body": "Another option to deprecating exp_int() is to just make it call exponential_integral_1, and I would be happy to implement either way as a reviewer indicates is useful.",
+    "created_at": "2009-09-30T15:05:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7083",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7083#issuecomment-58550",
+    "user": "kcrisman"
+}
+```
 
 Another option to deprecating exp_int() is to just make it call exponential_integral_1, and I would be happy to implement either way as a reviewer indicates is useful.
 
 
+
 ---
 
-Comment by wdj created at 2009-10-25 13:41:10
+archive/issue_comments_058551.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-10-25T13:41:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7083",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7083#issuecomment-58551",
+    "user": "wdj"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by wdj created at 2009-10-25 13:41:10
+archive/issue_comments_058552.json:
+```json
+{
+    "body": "Passes sage -testall on ubuntu 9.04 32 bit. It seems to pass on an imac running 10.6 but there are so many other failures, I'm not sure. Does what it claims to do and adds nice functionality.",
+    "created_at": "2009-10-25T13:41:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7083",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7083#issuecomment-58552",
+    "user": "wdj"
+}
+```
 
 Passes sage -testall on ubuntu 9.04 32 bit. It seems to pass on an imac running 10.6 but there are so many other failures, I'm not sure. Does what it claims to do and adds nice functionality.
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-31 15:31:28
+archive/issue_comments_058553.json:
+```json
+{
+    "body": "Resolution: ",
+    "created_at": "2009-10-31T15:31:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7083",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7083#issuecomment-58553",
+    "user": "mhansen"
+}
+```
 
 Resolution: 
 
 
+
 ---
 
-Comment by kcrisman created at 2009-11-23 14:25:38
+archive/issue_comments_058554.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-11-23T14:25:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7083",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7083#issuecomment-58554",
+    "user": "kcrisman"
+}
+```
 
 Resolution: fixed

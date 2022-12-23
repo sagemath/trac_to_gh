@@ -1,19 +1,44 @@
 # Issue 4046: add support for Google's new browser to the notebook
 
-Issue created by migration from https://trac.sagemath.org/ticket/4046
-
-Original creator: malb
-
-Original creation time: 2008-09-03 15:50:53
-
+archive/issues_004046.json:
+```json
+{
+    "body": "Assignee: boothby\n\nIt renders fine (rendering is done by WebKit) but the keyboard input doesn't work completely (since it is a new JS engine I suppose).\n\nIssue created by migration from https://trac.sagemath.org/ticket/4046\n\n",
+    "created_at": "2008-09-03T15:50:53Z",
+    "labels": [
+        "notebook",
+        "major",
+        "enhancement"
+    ],
+    "title": "add support for Google's new browser to the notebook",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4046",
+    "user": "malb"
+}
+```
 Assignee: boothby
 
 It renders fine (rendering is done by WebKit) but the keyboard input doesn't work completely (since it is a new JS engine I suppose).
 
+Issue created by migration from https://trac.sagemath.org/ticket/4046
+
+
+
+
 
 ---
 
-Comment by malb created at 2008-09-03 15:51:22
+archive/issue_comments_029173.json:
+```json
+{
+    "body": "Here's what I could get out of \n\nhttp://sage.math.washington.edu/home/boothby/modular.old/www/keys_capture.html\n\nAs you can see, the good keys aren't recognized at all.\n\nkey_shift = \"16,16!\"\nkey_ctrl = \"17,17\"\nkey_alt = \"18,18\"\nkey_home = \nkey_end = \nkey_pgup = \nkey_pgdn = \nkey_bkspc = \nkey_spc = \"32,32\"\nkey_enter = \"13,13\"\nkey_tab = \nkey_q = \"113,113\"\nkey_w = \"119,119\"\nkey_e = \"101,101\"\nkey_r = \"114,114\"\nkey_t = \"116,116\"\nkey_y = \"121,121\"\nkey_u = \"117,117\"\nkey_i = \"105,105\"\nkey_o = \"111,111\"\nkey_p = \"112,112\"\nkey_Qu = \"81,81!\"\nkey_Wu = \"87,87!\"\nkey_Eu = \"69,69!\"\nkey_Ru = \"82,82!\"\nkey_Tu = \"84,84!\"\nkey_Yu = \"89,89!\"\nkey_Uu = \"85,85!\"\nkey_Iu = \"73,73!\"\nkey_Ou = \"79,79!\"\nkey_Pu = \"80,80!\"\nkey_a = \"97,97\"\nkey_s = \"115,115\"\nkey_d = \"100,100\"\nkey_f = \"102,102\"\nkey_g = \"103,103\"\nkey_h = \"104,104\"\nkey_j = \"106,106\"\nkey_k = \"107,107\"\nkey_l = \"108,108\"\nkey_Au = \"65,65!\"\nkey_Su = \"83,83!\"\nkey_Du = \"68,68!\"\nkey_Fu = \"70,70!\"\nkey_Gu = \"71,71!\"\nkey_Hu = \"72,72!\"\nkey_Ju = \"74,74!\"\nkey_Ku = \"75,75!\"\nkey_Lu = \"76,76!\"\nkey_z = \"122,122\"\nkey_x = \"120,120\"\nkey_c = \"99,99\"\nkey_v = \"118,118\"\nkey_b = \"98,98\"\nkey_n = \"110,110\"\nkey_m = \"109,109\"\nkey_Zu = \"90,90!\"\nkey_Xu = \"88,88!\"\nkey_Cu = \"67,67!\"\nkey_Vu = \"86,86!\"\nkey_Bu = \"66,66!\"\nkey_Nu = \"78,78!\"\nkey_Mu = \"77,77!\"\nkey_1 = \"49,49\"\nkey_2 = \"50,50\"\nkey_3 = \"51,51\"\nkey_4 = \"52,52\"\nkey_5 = \"53,53\"\nkey_6 = \"54,54\"\nkey_7 = \"55,55\"\nkey_8 = \"56,56\"\nkey_9 = \"57,57\"\nkey_0 = \"48,48\"\nkey_bang = \"33,33!\"\nkey_at = \"64,64!\"\nkey_hash = \"35,35!\"\nkey_dollar = \"36,36!\"\nkey_mod = \"37,37!\"\nkey_caret = \"94,94!\"\nkey_amp = \"38,38!\"\nkey_ast = \"42,42!\"\nkey_lpar = \"40,40!\"\nkey_rpar = \"41,41!\"\nkey_minus = \"45,45\"\nkey_under = \"95,95!\"\nkey_plus = \"43,43!\"\nkey_eq = \"61,61\"\nkey_lbrace = \"123,123!\"\nkey_rbrace = \"125,125!\"\nkey_lbrack = \"91,91\"\nkey_rbrack = \"93,93\"\nkey_pipe = \"124,124!\"\nkey_slash = \"92,92\"\nkey_colon = \"58,58!\"\nkey_semi = \"59,59\"\nkey_quote = \"34,34!\"\nkey_apos = \"39,39\"\nkey_bslash = \"47,47\"\nkey_quest = \"63,63!\"\nkey_comma = \"44,44\"\nkey_dot = \"46,46\"\nkey_tilde = \"126,126!\"\nkey_tick = \"96,96\"\nkey_lt = \"60,60!\"\nkey_gt = \"62,62!\"\nkey_left = \nkey_up = \nkey_right = \nkey_down =",
+    "created_at": "2008-09-03T15:51:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4046",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4046#issuecomment-29173",
+    "user": "malb"
+}
+```
 
 Here's what I could get out of 
 
@@ -132,9 +157,20 @@ key_right =
 key_down =
 
 
+
 ---
 
-Comment by mhansen created at 2008-09-04 03:29:53
+archive/issue_comments_029174.json:
+```json
+{
+    "body": "From ddrake:\n\n```\nWhen using the notebook with Google Chrome, tab completion does not seem to work; when one hits tab, you just get an orange box around the \"evaluate\" link. It seems to be using tab in the usual way (to move from one input box to another, etc) instead of doing the completion.\n\nOf course, Chrome is so new that this may very well be a bug on their part, but it's worth investigating. \n```\n",
+    "created_at": "2008-09-04T03:29:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4046",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4046#issuecomment-29174",
+    "user": "mhansen"
+}
+```
 
 From ddrake:
 
@@ -146,9 +182,20 @@ Of course, Chrome is so new that this may very well be a bug on their part, but 
 
 
 
+
 ---
 
-Comment by schilly created at 2008-09-05 08:41:17
+archive/issue_comments_029175.json:
+```json
+{
+    "body": "I found something related in their issue tracker\n\n[Issue 1355: Arrow keys do not work in Street View popup window from Google Maps](http://code.google.com/p/chromium/issues/detail?id=1355)\n\ni think, let them first get google maps right ;)",
+    "created_at": "2008-09-05T08:41:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4046",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4046#issuecomment-29175",
+    "user": "schilly"
+}
+```
 
 I found something related in their issue tracker
 
@@ -157,23 +204,58 @@ I found something related in their issue tracker
 i think, let them first get google maps right ;)
 
 
+
 ---
 
-Comment by mpatel created at 2009-08-14 04:49:28
+archive/issue_comments_029176.json:
+```json
+{
+    "body": "Keyboard support for Chrome 2 & Safari 4 on Windows and Chromium 3 on Linux.",
+    "created_at": "2009-08-14T04:49:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4046",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4046#issuecomment-29176",
+    "user": "mpatel"
+}
+```
 
 Keyboard support for Chrome 2 & Safari 4 on Windows and Chromium 3 on Linux.
 
 
+
 ---
+
+archive/issue_comments_029177.json:
+```json
+{
+    "body": "Attachment\n\nModified keys_capture.html that formats key information for keyboard.py.",
+    "created_at": "2009-08-14T04:52:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4046",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4046#issuecomment-29177",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
 Modified keys_capture.html that formats key information for keyboard.py.
 
 
+
 ---
 
-Comment by mpatel created at 2009-08-14 05:00:49
+archive/issue_comments_029178.json:
+```json
+{
+    "body": "`keys_capture_v2.html` can capture key information and output it in `keyboard.py`'s format.\n\nAccording to its output, Chrome 2 and Safari 4 on Windows XP have the same key codes.  The same codes, except for `KEY_SHIFT`, work for Chromium 3 on Linux.\n\nNote: There's still a serious stylesheet gzip-encoding problem with Chrome 2 on Windows, but that should be a separate ticket.",
+    "created_at": "2009-08-14T05:00:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4046",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4046#issuecomment-29178",
+    "user": "mpatel"
+}
+```
 
 `keys_capture_v2.html` can capture key information and output it in `keyboard.py`'s format.
 
@@ -182,38 +264,93 @@ According to its output, Chrome 2 and Safari 4 on Windows XP have the same key c
 Note: There's still a serious stylesheet gzip-encoding problem with Chrome 2 on Windows, but that should be a separate ticket.
 
 
+
 ---
 
-Comment by timdumol created at 2009-09-22 16:55:39
+archive/issue_comments_029179.json:
+```json
+{
+    "body": "Merges fine, and Chromium detects keys properly now.",
+    "created_at": "2009-09-22T16:55:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4046",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4046#issuecomment-29179",
+    "user": "timdumol"
+}
+```
 
 Merges fine, and Chromium detects keys properly now.
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-24 05:37:36
+archive/issue_comments_029180.json:
+```json
+{
+    "body": "What should be merged and in what order?",
+    "created_at": "2009-09-24T05:37:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4046",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4046#issuecomment-29180",
+    "user": "mvngu"
+}
+```
 
 What should be merged and in what order?
 
 
+
 ---
 
-Comment by mpatel created at 2009-09-24 18:41:56
+archive/issue_comments_029181.json:
+```json
+{
+    "body": "Replying to [comment:6 mvngu]:\n> What should be merged and in what order?\nJust [attachment:trac_4046-chrome_and_friends.patch].  The key capture utility *might* be useful in the future, but it'll be available here.  If/when we switch to using [jQuery Hotkeys](http://code.google.com/p/js-hotkeys/) in the notebook, the patch may become obsolete, too.",
+    "created_at": "2009-09-24T18:41:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4046",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4046#issuecomment-29181",
+    "user": "mpatel"
+}
+```
 
 Replying to [comment:6 mvngu]:
 > What should be merged and in what order?
-Just [attachment:trac_4046-chrome_and_friends.patch].  The key capture utility _might_ be useful in the future, but it'll be available here.  If/when we switch to using [jQuery Hotkeys](http://code.google.com/p/js-hotkeys/) in the notebook, the patch may become obsolete, too.
+Just [attachment:trac_4046-chrome_and_friends.patch].  The key capture utility *might* be useful in the future, but it'll be available here.  If/when we switch to using [jQuery Hotkeys](http://code.google.com/p/js-hotkeys/) in the notebook, the patch may become obsolete, too.
+
 
 
 ---
 
-Comment by mvngu created at 2009-09-25 08:43:51
+archive/issue_comments_029182.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-09-25T08:43:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4046",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4046#issuecomment-29182",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-27 10:34:17
+archive/issue_comments_029183.json:
+```json
+{
+    "body": "There is no 4.1.2.alpha3. Sage 4.1.2.alpha3 was William Stein's release for working on making the notebook a standalone package.",
+    "created_at": "2009-09-27T10:34:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4046",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4046#issuecomment-29183",
+    "user": "mvngu"
+}
+```
 
 There is no 4.1.2.alpha3. Sage 4.1.2.alpha3 was William Stein's release for working on making the notebook a standalone package.

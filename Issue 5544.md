@@ -1,11 +1,21 @@
 # Issue 5544: multipolynomial __call__ not consistant
 
-Issue created by migration from https://trac.sagemath.org/ticket/5544
-
-Original creator: robertwb
-
-Original creation time: 2009-03-17 06:21:40
-
+archive/issues_005544.json:
+```json
+{
+    "body": "Assignee: tbd\n\n\n```\nsage: parent(RR['x,y'].gen(1)(0,CC.0))\nComplex Field with 53 bits of precision\nsage: parent(RR['x,y'](0)(0,0))\nInteger Ring\nsage: parent(RR['x,y'](0)(0,CC.0))\nInteger Ring\nsage: parent(RR['x,y'](1)(0,CC.0))\nReal Field with 53 bits of precision\n\nsage: parent(QQ['x,y'](1)(0,CC.0))\nRational Field\nsage: parent(QQ['x,y'](0)(0,0))\nRational Field\nsage: parent(QQ['x,y'](0)(0,CC.0))\nRational Field\nsage: parent(QQ['x,y'].gen(1)(0,CC.0))\nComplex Field with 53 bits of precision\n```\n\n\nThe result should not depend on the specific polynomial, only on its parent and the parent of the inputs. \n\nUnivariate ones get it right:\n\n\n```\nsage: sage: parent(RR['x'](0)(0))\nReal Field with 53 bits of precision\nsage: sage: parent(RR['x'](0)(CC.0))\nComplex Field with 53 bits of precision\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5544\n\n",
+    "created_at": "2009-03-17T06:21:40Z",
+    "labels": [
+        "algebra",
+        "major",
+        "bug"
+    ],
+    "title": "multipolynomial __call__ not consistant",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5544",
+    "user": "robertwb"
+}
+```
 Assignee: tbd
 
 
@@ -43,10 +53,25 @@ Complex Field with 53 bits of precision
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5544
+
+
+
+
 
 ---
 
-Comment by cwitty created at 2009-03-17 06:25:18
+archive/issue_comments_043134.json:
+```json
+{
+    "body": "According to this definition, there are bugs in univariate polynomials as well:\n\n```\nsage: parent(QQ['x'](0)(1))\nInteger Ring\nsage: parent(QQ['x'].gen(0)(1))\nRational Field\n```\n",
+    "created_at": "2009-03-17T06:25:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5544",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5544#issuecomment-43134",
+    "user": "cwitty"
+}
+```
 
 According to this definition, there are bugs in univariate polynomials as well:
 

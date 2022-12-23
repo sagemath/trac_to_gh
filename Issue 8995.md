@@ -1,11 +1,21 @@
 # Issue 8995: @ sign in notebook username prevents TinyMCE from working
 
-Issue created by migration from https://trac.sagemath.org/ticket/8995
-
-Original creator: jason
-
-Original creation time: 2010-05-19 23:35:25
-
+archive/issues_008995.json:
+```json
+{
+    "body": "Assignee: jason, was\n\nCC:  dimpase\n\nSee the thread by Dennis Watson here:\n\nhttp://groups.google.com/group/sage-support/browse_frm/thread/2acd499a566efce1\n\nIn particular, some tinymce javascript files were trying to download from a URL that included the username, like:\n\nhttp://sagenb.org/home/usernamewith`@`/javascript/tiny_mce/langs/en.js\n\nIssue created by migration from https://trac.sagemath.org/ticket/8995\n\n",
+    "created_at": "2010-05-19T23:35:25Z",
+    "labels": [
+        "notebook",
+        "major",
+        "bug"
+    ],
+    "title": "@ sign in notebook username prevents TinyMCE from working",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8995",
+    "user": "jason"
+}
+```
 Assignee: jason, was
 
 CC:  dimpase
@@ -18,10 +28,25 @@ In particular, some tinymce javascript files were trying to download from a URL 
 
 http://sagenb.org/home/usernamewith`@`/javascript/tiny_mce/langs/en.js
 
+Issue created by migration from https://trac.sagemath.org/ticket/8995
+
+
+
+
 
 ---
 
-Comment by ddrake created at 2010-05-20 02:50:42
+archive/issue_comments_083177.json:
+```json
+{
+    "body": "#8996 is a duplicate of this (just beaten by Jason!). Robert there says:\n\n> If it's not to hard, I have a strong preference for allowing `@` in usernames, as I often use my email address as a username because it's both easy to remember and likely to be unique.\n\n...which I agree with.",
+    "created_at": "2010-05-20T02:50:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8995",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8995#issuecomment-83177",
+    "user": "ddrake"
+}
+```
 
 #8996 is a duplicate of this (just beaten by Jason!). Robert there says:
 
@@ -30,29 +55,73 @@ Comment by ddrake created at 2010-05-20 02:50:42
 ...which I agree with.
 
 
+
 ---
 
-Comment by kcrisman created at 2011-09-29 13:06:13
+archive/issue_comments_083178.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2011-09-29T13:06:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8995",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8995#issuecomment-83178",
+    "user": "kcrisman"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by kcrisman created at 2011-09-29 13:06:13
+archive/issue_comments_083179.json:
+```json
+{
+    "body": "dimpase just pointed out that #11343 is a dup of this.  However, there is a lot more discussion there, as well as a patch, so I'm recommending this be the one closed.  I'm copying the description material above there.",
+    "created_at": "2011-09-29T13:06:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8995",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8995#issuecomment-83179",
+    "user": "kcrisman"
+}
+```
 
 dimpase just pointed out that #11343 is a dup of this.  However, there is a lot more discussion there, as well as a patch, so I'm recommending this be the one closed.  I'm copying the description material above there.
 
 
+
 ---
 
-Comment by kcrisman created at 2011-09-29 13:06:29
+archive/issue_comments_083180.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2011-09-29T13:06:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8995",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8995#issuecomment-83180",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-10-05 08:10:09
+archive/issue_comments_083181.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2011-10-05T08:10:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8995",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8995#issuecomment-83181",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: duplicate

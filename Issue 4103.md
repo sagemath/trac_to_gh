@@ -1,26 +1,64 @@
 # Issue 4103: Delete the cmap option for vector field plots
 
-Issue created by migration from https://trac.sagemath.org/ticket/4103
-
-Original creator: jason
-
-Original creation time: 2008-09-12 04:03:03
-
+archive/issues_004103.json:
+```json
+{
+    "body": "Assignee: was\n\nThe cmap argument for vector field plots is not used.  Does anyone know why it's there?  I don't think it's even valid matplotlib code.\n\nThis patch deletes the option.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4103\n\n",
+    "created_at": "2008-09-12T04:03:03Z",
+    "labels": [
+        "graphics",
+        "minor",
+        "bug"
+    ],
+    "title": "Delete the cmap option for vector field plots",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4103",
+    "user": "jason"
+}
+```
 Assignee: was
 
 The cmap argument for vector field plots is not used.  Does anyone know why it's there?  I don't think it's even valid matplotlib code.
 
 This patch deletes the option.
 
+Issue created by migration from https://trac.sagemath.org/ticket/4103
+
+
+
+
 
 ---
+
+archive/issue_comments_029713.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-09-12T04:14:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4103",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4103#issuecomment-29713",
+    "user": "jason"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-19 02:22:12
+archive/issue_comments_029714.json:
+```json
+{
+    "body": "Patch looks good to me. Assuming it passes doctests (which are running now) this is a positive review.\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-19T02:22:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4103",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4103#issuecomment-29714",
+    "user": "mabshoff"
+}
+```
 
 Patch looks good to me. Assuming it passes doctests (which are running now) this is a positive review.
 
@@ -29,15 +67,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-19 03:13:52
+archive/issue_comments_029715.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-09-19T03:13:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4103",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4103#issuecomment-29715",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-19 03:13:52
+archive/issue_comments_029716.json:
+```json
+{
+    "body": "Merged in Sage 3.1.3.alpha0",
+    "created_at": "2008-09-19T03:13:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4103",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4103#issuecomment-29716",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.1.3.alpha0

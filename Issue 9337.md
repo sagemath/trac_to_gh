@@ -1,28 +1,64 @@
 # Issue 9337: Add toric divisors
 
-Issue created by migration from https://trac.sagemath.org/ticket/9337
-
-Original creator: vbraun
-
-Original creation time: 2010-06-25 16:02:40
-
+archive/issues_009337.json:
+```json
+{
+    "body": "Assignee: AlexGhitza\n\nCC:  novoselt\n\nThis patch adds toric (QQ-Weil) divisors. Characteristic classes of associated sheaves as well as computation of the sheaf cohomology groups is implemented.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9337\n\n",
+    "created_at": "2010-06-25T16:02:40Z",
+    "labels": [
+        "algebraic geometry",
+        "major",
+        "enhancement"
+    ],
+    "title": "Add toric divisors",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9337",
+    "user": "vbraun"
+}
+```
 Assignee: AlexGhitza
 
 CC:  novoselt
 
 This patch adds toric (QQ-Weil) divisors. Characteristic classes of associated sheaves as well as computation of the sheaf cohomology groups is implemented.
 
+Issue created by migration from https://trac.sagemath.org/ticket/9337
+
+
+
+
 
 ---
 
-Comment by vbraun created at 2010-06-25 16:07:36
+archive/issue_comments_088157.json:
+```json
+{
+    "body": "Depends on #9326 (cohomology of toric varieties).",
+    "created_at": "2010-06-25T16:07:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88157",
+    "user": "vbraun"
+}
+```
 
 Depends on #9326 (cohomology of toric varieties).
 
 
+
 ---
 
-Comment by novoselt created at 2010-07-07 06:50:37
+archive/issue_comments_088158.json:
+```json
+{
+    "body": "Divisor-related files in schemes/generic were the ones that I didn't look at before, but they turn out to be quite short and simple, especially in the relevant \"truly generic\" part. I think we should try to use them (preferably without putting toric code into those files, I found it rather inconvenient how service-classes of different schemes and spaces are mixed in old files).\n\nThe general framework uses formal sums for the divisor group. Your patch is likely to be more efficient, since it works with a finite rank subgroup of the divisor group, but it does not support divisors on toric varieties that are not toric. Would it be possible to implement instead primitive toric divisors (i.e. those given by \"z_i=0\") and work with their formal sums as elements of the total divisor group?\n\nIf that would be too inconvenient, it would be nice at least to have some class representing the group of torus-invariant divisors with the coercion into the general divisor group.",
+    "created_at": "2010-07-07T06:50:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88158",
+    "user": "novoselt"
+}
+```
 
 Divisor-related files in schemes/generic were the ones that I didn't look at before, but they turn out to be quite short and simple, especially in the relevant "truly generic" part. I think we should try to use them (preferably without putting toric code into those files, I found it rather inconvenient how service-classes of different schemes and spaces are mixed in old files).
 
@@ -31,70 +67,114 @@ The general framework uses formal sums for the divisor group. Your patch is like
 If that would be too inconvenient, it would be nice at least to have some class representing the group of torus-invariant divisors with the coercion into the general divisor group.
 
 
+
 ---
 
-Comment by vbraun created at 2010-07-21 03:57:43
+archive/issue_comments_088159.json:
+```json
+{
+    "body": "I've converted the toric divisor code to derive from DivisorGroup_generic/Divisor_generic. \n\nI noticed that starting from FormalSums/FormalSum upwards the coercion wasn't always up to spec, so there is quite a lot of reworking going on all over the place. But I think that now everything is working as it should. Andrey, can you have a look and tell me if I missed anything?",
+    "created_at": "2010-07-21T03:57:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88159",
+    "user": "vbraun"
+}
+```
 
 I've converted the toric divisor code to derive from DivisorGroup_generic/Divisor_generic. 
 
 I noticed that starting from FormalSums/FormalSum upwards the coercion wasn't always up to spec, so there is quite a lot of reworking going on all over the place. But I think that now everything is working as it should. Andrey, can you have a look and tell me if I missed anything?
 
 
+
 ---
 
-Comment by novoselt created at 2010-07-24 05:38:04
+archive/issue_comments_088160.json:
+```json
+{
+    "body": "Looks impressive, although I will wait till prerequisites are finished before carefully going over the code. Volker, can you split this patch into two so that one \"fixes the old stuff\" and the other deals with our new toric modules?\n\nOne thing I have noticed so far that doctests in `schemes/plane_curves/projective_curve` fail because of renaming `coef` to `coefficient`. Why did you change the name? I.e. is it just your personal preference or it is more consistent with other things? My personal preference is definitely `coefficient`, but since it can break existing code we should either put a deprecation warning in `coef`, or make it an alias to the new coefficient.\n\nWe also should straighten out our patch queue and ticket dependencies, now that a big chunk of it is gone. How about the following one?\n* #9470\n* #9326\n* #9502\n* #9504\n* #9296\n* #9337\n* #9380\n\nDoctesting the patch on this ticket, it seems that it uses code from #9380, and that ticket definitely should not go before this one. However, I don't mind if you completely or partially flatten it into this one (almost all code there is yours anyway).",
+    "created_at": "2010-07-24T05:38:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88160",
+    "user": "novoselt"
+}
+```
 
 Looks impressive, although I will wait till prerequisites are finished before carefully going over the code. Volker, can you split this patch into two so that one "fixes the old stuff" and the other deals with our new toric modules?
 
 One thing I have noticed so far that doctests in `schemes/plane_curves/projective_curve` fail because of renaming `coef` to `coefficient`. Why did you change the name? I.e. is it just your personal preference or it is more consistent with other things? My personal preference is definitely `coefficient`, but since it can break existing code we should either put a deprecation warning in `coef`, or make it an alias to the new coefficient.
 
 We also should straighten out our patch queue and ticket dependencies, now that a big chunk of it is gone. How about the following one?
- * #9470
- * #9326
- * #9502
- * #9504
- * #9296
- * #9337
- * #9380
+* #9470
+* #9326
+* #9502
+* #9504
+* #9296
+* #9337
+* #9380
 
 Doctesting the patch on this ticket, it seems that it uses code from #9380, and that ticket definitely should not go before this one. However, I don't mind if you completely or partially flatten it into this one (almost all code there is yours anyway).
 
 
+
 ---
 
-Comment by vbraun created at 2010-07-26 17:23:50
+archive/issue_comments_088161.json:
+```json
+{
+    "body": "I'm currently splitting this patch into\n\n* `trac_9337_divisor_superclasses_fixes.patch`: fixes for all parent classes\n* `trac_9337_toric_divisors.patch`: The toric divisors\n* `trac_9337_toric_divisor_classes.patch`: Define divisor classes = divisors mod linear equivalence. The Kahler/Mori cone code from #9380 will be added here.\n* `trac_9337_line_bundle_cohomology.patch`: Cohomology computations for line bundles (relies on \"ampleness\")\n\nI did rename `coeff()`->`coefficient()`. Since it is only half-implemented for curves anyways I thought we can get away with it :-)  I'll add a depreciation warning.\n\nI created a tracker bug at #9604 to for the patch queue/dependencies.",
+    "created_at": "2010-07-26T17:23:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88161",
+    "user": "vbraun"
+}
+```
 
 I'm currently splitting this patch into
 
-  * `trac_9337_divisor_superclasses_fixes.patch`: fixes for all parent classes
-  * `trac_9337_toric_divisors.patch`: The toric divisors
-  * `trac_9337_toric_divisor_classes.patch`: Define divisor classes = divisors mod linear equivalence. The Kahler/Mori cone code from #9380 will be added here.
-  * `trac_9337_line_bundle_cohomology.patch`: Cohomology computations for line bundles (relies on "ampleness")
+* `trac_9337_divisor_superclasses_fixes.patch`: fixes for all parent classes
+* `trac_9337_toric_divisors.patch`: The toric divisors
+* `trac_9337_toric_divisor_classes.patch`: Define divisor classes = divisors mod linear equivalence. The Kahler/Mori cone code from #9380 will be added here.
+* `trac_9337_line_bundle_cohomology.patch`: Cohomology computations for line bundles (relies on "ampleness")
 
 I did rename `coeff()`->`coefficient()`. Since it is only half-implemented for curves anyways I thought we can get away with it :-)  I'll add a depreciation warning.
 
 I created a tracker bug at #9604 to for the patch queue/dependencies.
 
 
+
 ---
 
-Comment by novoselt created at 2010-07-30 17:35:54
+archive/issue_comments_088162.json:
+```json
+{
+    "body": "I went over the first patch and it looks great except for the following minor points:\n\n* The name of the argument in this function is confusing. Since such functions take anything as input, I vote for something neutral like `x`:\n {{{\ndef is_DivisorGroup(divisor):\n    ...\n}}}\n\n* In `_element_constructor_(self, x, check=True, reduce=True)` the last line is\n {{{\nreturn Divisor_generic([(self.base_ring()(1), x)], check=False, reduce=False, parent=self)\n}}}\n Why in this case `check` and `reduce` are set to `False` instead of using the passed values?\n\n* As I understood the documentation of `UniqueRepresentation`, derived classes should not have default values in `__init__`, because it leads to this:\n {{{\nsage: from sage.structure.formal_sum import FormalSums_generic\nsage: FormalSums_generic(ZZ) is FormalSums_generic()\nFalse\n}}}\n Note, however,\n {{{\nsage: FormalSums(ZZ) is FormalSums()\nTrue\n}}}\n since each layer repeats default values and the default in the actual class is never used (unless you do it directly as I have done it above). This brings me to the last comment:\n\n* Is there any need in factory functions now that they just call the class? Before they were necessary since they were providing caching/uniqueness, but your new approach is cleaner and more unified (leading to \"unique unique representation\" ;-)).",
+    "created_at": "2010-07-30T17:35:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88162",
+    "user": "novoselt"
+}
+```
 
 I went over the first patch and it looks great except for the following minor points:
 
- * The name of the argument in this function is confusing. Since such functions take anything as input, I vote for something neutral like `x`:
+* The name of the argument in this function is confusing. Since such functions take anything as input, I vote for something neutral like `x`:
  {{{
 def is_DivisorGroup(divisor):
     ...
 }}}
 
- * In `_element_constructor_(self, x, check=True, reduce=True)` the last line is
+* In `_element_constructor_(self, x, check=True, reduce=True)` the last line is
  {{{
 return Divisor_generic([(self.base_ring()(1), x)], check=False, reduce=False, parent=self)
 }}}
  Why in this case `check` and `reduce` are set to `False` instead of using the passed values?
 
- * As I understood the documentation of `UniqueRepresentation`, derived classes should not have default values in `__init__`, because it leads to this:
+* As I understood the documentation of `UniqueRepresentation`, derived classes should not have default values in `__init__`, because it leads to this:
  {{{
 sage: from sage.structure.formal_sum import FormalSums_generic
 sage: FormalSums_generic(ZZ) is FormalSums_generic()
@@ -107,19 +187,41 @@ True
 }}}
  since each layer repeats default values and the default in the actual class is never used (unless you do it directly as I have done it above). This brings me to the last comment:
 
- * Is there any need in factory functions now that they just call the class? Before they were necessary since they were providing caching/uniqueness, but your new approach is cleaner and more unified (leading to "unique unique representation" ;-)).
+* Is there any need in factory functions now that they just call the class? Before they were necessary since they were providing caching/uniqueness, but your new approach is cleaner and more unified (leading to "unique unique representation" ;-)).
+
 
 
 ---
 
-Comment by novoselt created at 2010-07-30 17:35:54
+archive/issue_comments_088163.json:
+```json
+{
+    "body": "Changing status from new to needs_work.",
+    "created_at": "2010-07-30T17:35:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88163",
+    "user": "novoselt"
+}
+```
 
 Changing status from new to needs_work.
 
 
+
 ---
 
-Comment by vbraun created at 2010-07-30 20:07:01
+archive/issue_comments_088164.json:
+```json
+{
+    "body": "Nothing can go wrong (knock on wood) in Divisor_generic([(self.base_ring()(1), x)]) and it cannot be reduced, so I manually set `check=False`, `reduce=False`. The same was already in `FormalSums_generic.__call__()` before I converted it to `_element_constructor_()`:\n\n```\nreturn FormalSum([(self.base_ring()(1), x)], check=False, reduce=False, parent=self)\n```\n\nBut if you don't like this optimization I can take it out.\n\nAbout `UniqueFactory` vs. `UniqueRepresentation`, I guess you answered your own question: If you want default arguments then you need an explicit factory. Otherwise you can just use `UniqueRepresentation`, which is its own factory.",
+    "created_at": "2010-07-30T20:07:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88164",
+    "user": "vbraun"
+}
+```
 
 Nothing can go wrong (knock on wood) in Divisor_generic([(self.base_ring()(1), x)]) and it cannot be reduced, so I manually set `check=False`, `reduce=False`. The same was already in `FormalSums_generic.__call__()` before I converted it to `_element_constructor_()`:
 
@@ -132,9 +234,20 @@ But if you don't like this optimization I can take it out.
 About `UniqueFactory` vs. `UniqueRepresentation`, I guess you answered your own question: If you want default arguments then you need an explicit factory. Otherwise you can just use `UniqueRepresentation`, which is its own factory.
 
 
+
 ---
 
-Comment by novoselt created at 2010-07-30 20:44:59
+archive/issue_comments_088165.json:
+```json
+{
+    "body": "I am fine with the optimization, I just didn't quite get it before.\n\nDefault arguments can work with `UniqueRepresentation`, they just require more work. http://www.sagemath.org/doc/reference/sage/structure/unique_representation.html, section \"Argument preprocessing.\" It was quite interesting to read it, I didn't know about this class before I saw it in your patch.\n\nMy question is not about necessity of `UniqueFactory`, but about necessity of both `FormalSums` and `FormalSums_generic`. It think that after your refactoring the answer is no.",
+    "created_at": "2010-07-30T20:44:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88165",
+    "user": "novoselt"
+}
+```
 
 I am fine with the optimization, I just didn't quite get it before.
 
@@ -143,28 +256,74 @@ Default arguments can work with `UniqueRepresentation`, they just require more w
 My question is not about necessity of `UniqueFactory`, but about necessity of both `FormalSums` and `FormalSums_generic`. It think that after your refactoring the answer is no.
 
 
+
 ---
 
-Comment by vbraun created at 2010-07-30 23:10:22
+archive/issue_comments_088166.json:
+```json
+{
+    "body": "I got rid of the `FormalSums` factory and dropped the `_generic` on the class as you suggested. For the record, this has the side effect that the subclass `DivisorGroup_generic` must override the `__classcall__` since it takes two arguments instead of one!",
+    "created_at": "2010-07-30T23:10:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88166",
+    "user": "vbraun"
+}
+```
 
 I got rid of the `FormalSums` factory and dropped the `_generic` on the class as you suggested. For the record, this has the side effect that the subclass `DivisorGroup_generic` must override the `__classcall__` since it takes two arguments instead of one!
 
 
+
 ---
 
-Comment by vbraun created at 2010-08-09 22:48:44
+archive/issue_comments_088167.json:
+```json
+{
+    "body": "pickling fixes",
+    "created_at": "2010-08-09T22:48:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88167",
+    "user": "vbraun"
+}
+```
 
 pickling fixes
 
 
+
 ---
 
-Comment by vbraun created at 2010-08-09 22:49:52
+archive/issue_comments_088168.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-08-09T22:49:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88168",
+    "user": "vbraun"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
+
+archive/issue_comments_088169.json:
+```json
+{
+    "body": "Attachment\n\nRenaming `FormalSums_generic` -> `FormalSums` broke the pickle jar and, subsequently, one doctest in `sage_object.pyx`. The updated patch uses `register_unpickle_override` to still allow the unpickling of old pickles.\n\nEverything is tested on Sage 4.5.2.",
+    "created_at": "2010-08-09T22:49:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88169",
+    "user": "vbraun"
+}
+```
 
 Attachment
 
@@ -173,27 +332,49 @@ Renaming `FormalSums_generic` -> `FormalSums` broke the pickle jar and, subseque
 Everything is tested on Sage 4.5.2.
 
 
+
 ---
 
-Comment by novoselt created at 2010-08-12 02:04:20
+archive/issue_comments_088170.json:
+```json
+{
+    "body": "Positive review to the last version of \"trac_9337_divisor_superclasses_fixes.patch\"! Working on others...",
+    "created_at": "2010-08-12T02:04:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88170",
+    "user": "novoselt"
+}
+```
 
 Positive review to the last version of "trac_9337_divisor_superclasses_fixes.patch"! Working on others...
 
 
+
 ---
 
-Comment by novoselt created at 2010-08-12 05:15:16
+archive/issue_comments_088171.json:
+```json
+{
+    "body": "Some comments on \"trac_9337_toric_divisors.patch\" (I didn't go through all of it yet).\n\nLittle ones:\n1. Can we change printing from `The divisor x+y` to `Divisor x+y`? Such a form seems to be more common in Sage (and saves 4 characters ;-))\n2. It seems to me that the new module contains unnecessary imports (e.g. `LatticePolytope`) and I think it is better to import only necessary things so that it is clear what does this module depend on.\n3. Line 138, description of OUTPUT in `ngens` seems to be left from some other text.\n4. The last part of example for `ToricVariety.divisor()` is confusing. Can you add a comment in the documentation what exactly it should demonstrate? Why there are two copies of the corresponding ray printed for each divisor?\n\nMore global one:\n1. I don't quite understand if `ToricDivisorGroup` is supposed to be a group of T-Weil divisors only (as its documentation states) or of all (Weil) divisors as it prints and somewhat works:\n {{{\nsage: P2 = toric_varieties.P2()\nsage: P2.coordinate_ring().inject_variables()\nDefining x, y, z\nsage: G = P2.divisor_group()\nsage: G\nGroup of ZZ-Divisors on 2-d CPR-Fano toric variety covered by 3 affine patches\nsage: print G(x)\nThe divisor x\nsage: print G(x+y)\nNone\n}}}\n Is the last line supposed to raise an error (since `x+y` does not define a T-divisor), or return some other divisor object of a different class than `x`? The current behaviour certainly seems to be a bug to me.\n\nI think that ideally there should be a separate group of T-Weil divisors with divisor classes having lifts to this group. This group probably should not derive from `DivisorGroup_generic`, but rather should have a coercion map to it and both T-Weil and Weil groups should be accessible from toric varieties. This way the divisor associated to \"x\" will have two representation (one is likely to be more efficient and relevant for computations) while \"x+y\" will have only a generic one. What do you think?",
+    "created_at": "2010-08-12T05:15:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88171",
+    "user": "novoselt"
+}
+```
 
 Some comments on "trac_9337_toric_divisors.patch" (I didn't go through all of it yet).
 
 Little ones:
- 1. Can we change printing from `The divisor x+y` to `Divisor x+y`? Such a form seems to be more common in Sage (and saves 4 characters ;-))
- 1. It seems to me that the new module contains unnecessary imports (e.g. `LatticePolytope`) and I think it is better to import only necessary things so that it is clear what does this module depend on.
- 1. Line 138, description of OUTPUT in `ngens` seems to be left from some other text.
- 1. The last part of example for `ToricVariety.divisor()` is confusing. Can you add a comment in the documentation what exactly it should demonstrate? Why there are two copies of the corresponding ray printed for each divisor?
+1. Can we change printing from `The divisor x+y` to `Divisor x+y`? Such a form seems to be more common in Sage (and saves 4 characters ;-))
+2. It seems to me that the new module contains unnecessary imports (e.g. `LatticePolytope`) and I think it is better to import only necessary things so that it is clear what does this module depend on.
+3. Line 138, description of OUTPUT in `ngens` seems to be left from some other text.
+4. The last part of example for `ToricVariety.divisor()` is confusing. Can you add a comment in the documentation what exactly it should demonstrate? Why there are two copies of the corresponding ray printed for each divisor?
 
 More global one:
- 1. I don't quite understand if `ToricDivisorGroup` is supposed to be a group of T-Weil divisors only (as its documentation states) or of all (Weil) divisors as it prints and somewhat works:
+1. I don't quite understand if `ToricDivisorGroup` is supposed to be a group of T-Weil divisors only (as its documentation states) or of all (Weil) divisors as it prints and somewhat works:
  {{{
 sage: P2 = toric_varieties.P2()
 sage: P2.coordinate_ring().inject_variables()
@@ -211,16 +392,38 @@ None
 I think that ideally there should be a separate group of T-Weil divisors with divisor classes having lifts to this group. This group probably should not derive from `DivisorGroup_generic`, but rather should have a coercion map to it and both T-Weil and Weil groups should be accessible from toric varieties. This way the divisor associated to "x" will have two representation (one is likely to be more efficient and relevant for computations) while "x+y" will have only a generic one. What do you think?
 
 
+
 ---
 
-Comment by novoselt created at 2010-08-12 05:15:16
+archive/issue_comments_088172.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_info.",
+    "created_at": "2010-08-12T05:15:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88172",
+    "user": "novoselt"
+}
+```
 
 Changing status from needs_review to needs_info.
 
 
+
 ---
 
-Comment by vbraun created at 2010-08-13 20:25:22
+archive/issue_comments_088173.json:
+```json
+{
+    "body": "The `ToricDivisorGroup` is the group of T-Weil divisors. They are `FormalSums` of monomials, whereas a `Divisor_generic` is a formal sum of (homogeneous) polynomials. A `ToricDivisor_generic` is a valid element of its base class `Divisor_generic`, but not the other way round. If you want non-toric divisors then you can already do\n\n```\nsage: from sage.schemes.generic.divisor_group import DivisorGroup\nsage: dP6 = toric_varieties.dP6()\nsage: dP6.inject_variables()\nDefining x, u, y, v, z, w\nsage: Div = DivisorGroup(toric_varieties.dP6()); Div\nGroup of ZZ-Divisors on 2-d CPR-Fano toric variety covered by 6 affine patches\nsage: Div(x^2+u)   # does not know how to check homogeneity\nx^2 + u\nsage: type(_)\n<class 'sage.schemes.generic.divisor.Divisor_generic'>\n```\n\nThe `ToricDivisorGroup` should probably print `Group of toric ZZ-Weil divisors` to be more explicit. I was trying to not print \"T-Weil divisor\" all the time in the output to make things easier to read. I'll change the `ToricDivisorGroup` output but leave its elements as \"Divisor x\", if in doubt you can always use `parent()` or `type()` to find out what you are working with.\n\nI don't see much use to have separate `ToricVariety_field.divisor_group()` and `.toric_divisor_group()` methods, I think newcomers would only be tempted into constructing the generic divisor group and then be disappointed that there is no toric functionality there. \n\nIn your last line, `G(x+y)` should have returned `G(x)+G(y)`, that is, linear polynomials get converted to the analogous sum of T-Weil divisors, but you found a bug. Although this is potentially dangerous it provides a useful shorthand to define the T-Weil divisors.",
+    "created_at": "2010-08-13T20:25:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88173",
+    "user": "vbraun"
+}
+```
 
 The `ToricDivisorGroup` is the group of T-Weil divisors. They are `FormalSums` of monomials, whereas a `Divisor_generic` is a formal sum of (homogeneous) polynomials. A `ToricDivisor_generic` is a valid element of its base class `Divisor_generic`, but not the other way round. If you want non-toric divisors then you can already do
 
@@ -244,9 +447,20 @@ I don't see much use to have separate `ToricVariety_field.divisor_group()` and `
 In your last line, `G(x+y)` should have returned `G(x)+G(y)`, that is, linear polynomials get converted to the analogous sum of T-Weil divisors, but you found a bug. Although this is potentially dangerous it provides a useful shorthand to define the T-Weil divisors.
 
 
+
 ---
 
-Comment by novoselt created at 2010-08-13 22:01:05
+archive/issue_comments_088174.json:
+```json
+{
+    "body": "Replying to [comment:16 vbraun]:\n> The `ToricDivisorGroup` should probably print `Group of toric ZZ-Weil divisors` to be more explicit. I was trying to not print \"T-Weil divisor\" all the time in the output to make things easier to read. I'll change the `ToricDivisorGroup` output but leave its elements as \"Divisor x\", if in doubt you can always use `parent()` or `type()` to find out what you are working with.\n\nAgreed, I think that parents should be more or less descriptive in their `_repr_`, since usually they are looked at by themselves, but elements should try to be compact since they are likely to be used in groups.\n\n> I don't see much use to have separate `ToricVariety_field.divisor_group()` and `.toric_divisor_group()` methods, I think newcomers would only be tempted into constructing the generic divisor group and then be disappointed that there is no toric functionality there. \n\nI think that for most people who know what a divisor is it would be strange that `divisor_group` does not allow working with general divisors. As an alternative to having two groups, we can have `Divisor_of_toric_variety` class which behaves like `generic` but has a method `self.toric()` and when this is true, then certain other methods are accessible. On the other hand, in the context of general divisors it does not make much sense to talk about generators, while for T-divisors it is very useful and natural. So this is an argument for having a separate group. Names, perhaps, should be chosen as `divisor_group`, `divisor_group_toric`, maybe later even `divisor_group_Cartier` etc. This will group all these groups ;-) together in the documentation and TAB-completion, so it will be easy to see that these things exist and names should be clear enough for all people who can use them.\n\nBottom line: I am against calling the group of T-divisors just `divisor_group` and I think that access to all divisor groups should be uniform (e.g. without explicit calls to `DivisorGroup` as in your example above) and they should always be more special than generic (e.g. there is already a way to check homogeneity of polynomials  in homogeneous coordinates, but as you have demonstrated, a generic divisor group was not able to use this functionality).\n\n> In your last line, `G(x+y)` should have returned `G(x)+G(y)`, that is, linear polynomials get converted to the analogous sum of T-Weil divisors, but you found a bug. Although this is potentially dangerous it provides a useful shorthand to define the T-Weil divisors.\n\nI am VERY against interpreting `G(x+y)` as `G(x)+G(y)` because the latter one IS `G(x*y)`. If one wants additive behaviour, it is better to inject generators of the divisor group and write such sums explicitly in terms of divisors rather than coordinates. (I guess it is also a bit confusing here that divisors and coordinates have exactly the same names, but I guess the plan was to address these names later...) By the way - `x*y` is as easy to write as `x+y`, is mathematically correct, and allows things like `x<sup>2*y</sup>3` as well, so instead of removing your special treatment for linear polynomials it should be just switched to monomials!",
+    "created_at": "2010-08-13T22:01:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88174",
+    "user": "novoselt"
+}
+```
 
 Replying to [comment:16 vbraun]:
 > The `ToricDivisorGroup` should probably print `Group of toric ZZ-Weil divisors` to be more explicit. I was trying to not print "T-Weil divisor" all the time in the output to make things easier to read. I'll change the `ToricDivisorGroup` output but leave its elements as "Divisor x", if in doubt you can always use `parent()` or `type()` to find out what you are working with.
@@ -264,9 +478,20 @@ Bottom line: I am against calling the group of T-divisors just `divisor_group` a
 I am VERY against interpreting `G(x+y)` as `G(x)+G(y)` because the latter one IS `G(x*y)`. If one wants additive behaviour, it is better to inject generators of the divisor group and write such sums explicitly in terms of divisors rather than coordinates. (I guess it is also a bit confusing here that divisors and coordinates have exactly the same names, but I guess the plan was to address these names later...) By the way - `x*y` is as easy to write as `x+y`, is mathematically correct, and allows things like `x<sup>2*y</sup>3` as well, so instead of removing your special treatment for linear polynomials it should be just switched to monomials!
 
 
+
 ---
 
-Comment by vbraun created at 2010-08-14 18:03:58
+archive/issue_comments_088175.json:
+```json
+{
+    "body": "About the `divisor_group_*` methods, I agree with your argument but I also hate to give the longer name to the most useful method. And I don't want to introduce a unified parent for divisors, the current inheritance tree fits OOP as well as mathematics nicely. So I propose the following, we'll have only one `divisor_group` method \n\n```\n  def divisor_group(divisors='T-Weil', base_ring=ZZ):\n```\n\nThat'll easily generalize to any other notion of divisor that one might want to introduce and, by default, returns the most useful case for toric varieties.",
+    "created_at": "2010-08-14T18:03:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88175",
+    "user": "vbraun"
+}
+```
 
 About the `divisor_group_*` methods, I agree with your argument but I also hate to give the longer name to the most useful method. And I don't want to introduce a unified parent for divisors, the current inheritance tree fits OOP as well as mathematics nicely. So I propose the following, we'll have only one `divisor_group` method 
 
@@ -277,9 +502,20 @@ About the `divisor_group_*` methods, I agree with your argument but I also hate 
 That'll easily generalize to any other notion of divisor that one might want to introduce and, by default, returns the most useful case for toric varieties.
 
 
+
 ---
 
-Comment by vbraun created at 2010-08-14 21:01:25
+archive/issue_comments_088176.json:
+```json
+{
+    "body": "I made all changes. Now it works as follows:\n\n```\nsage: P2 = toric_varieties.P2()\nsage: P2.coordinate_ring().inject_variables()\nDefining x, y, z\nsage: G = P2.divisor_group()  # same as divisor_group(divisors='T-Weil')\nsage: G(x+y)\n...\nValueError: The polynomial x + y must consist of a single monomial.\nsage: G(x*y)\nDivisor x + y\n```\n",
+    "created_at": "2010-08-14T21:01:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88176",
+    "user": "vbraun"
+}
+```
 
 I made all changes. Now it works as follows:
 
@@ -297,16 +533,38 @@ Divisor x + y
 
 
 
+
 ---
 
-Comment by vbraun created at 2010-08-14 21:01:25
+archive/issue_comments_088177.json:
+```json
+{
+    "body": "Changing status from needs_info to needs_review.",
+    "created_at": "2010-08-14T21:01:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88177",
+    "user": "vbraun"
+}
+```
 
 Changing status from needs_info to needs_review.
 
 
+
 ---
 
-Comment by novoselt created at 2010-08-22 15:00:58
+archive/issue_comments_088178.json:
+```json
+{
+    "body": "Replying to [comment:18 vbraun]:\n> About the `divisor_group_*` methods, I agree with your argument but I also hate to give the longer name to the most useful method. And I don't want to introduce a unified parent for divisors, the current inheritance tree fits OOP as well as mathematics nicely. So I propose the following, we'll have only one `divisor_group` method \n {{{\n   def divisor_group(divisors='T-Weil', base_ring=ZZ):\n}}}\n That'll easily generalize to any other notion of divisor that one might want to introduce and, by default, returns the most useful case for toric varieties.\n\nOne solution to long names is to introduce aliases in the spirit of recent cohomology patches. That is direct reflection of mathematical conventions where you can name a thing either \"in words\" or using some special combination of symbols.\n\nIn principle, I am OK with passing divisor type as an argument, but this way makes it impossible to use TAB-completion and involves actually more typing. So we can keep it if you want, but I'd rather not.\n\nMy main objection however, is that \"divisor group\" is still used to refer to \"**toric** divisor group\" and these are mathematically different. So if we do keep only `divisor_group` method, the default behaviour should be returning the group of general divisors. This is probably inconvenient, but I am definitely not OK with the current default.\n\nReturning to my first point, how about the following names (all take one optional parameter `base_ring`):\n* `X.divisor_group()` -- returns the general group of Weil divisors on `X`;\n* `X.Div()` -- the same, done by `Div = divisor_group` in the class definition;\n* `X.toric_divisor_group()` -- returns the group of T-Weil divisors, which is the one providing actual toric functionality;\n* `X.TDiv()` -- the same, done by `TDiv = toric_divisor_group`.\n(I would be even happy with the short names only, but since `divisor_group` is already used in Sage in other classes, I think that we better have two sets here.)\n\nFulton uses `Div_T(X)` for T-Cartier divisors, but in Hartshorne `Div(X)` stands for Weil divisors. He has no notation for Cartier ones, as far as I can tell, but `CaCl(X)` stands for the class group of Cartier divisors. I like Hartshorne's naming scheme better - when I think about a \"divisor\", I think about a Weil divisor and they are definitely more natural and easy to handle objects in toric world. So I propose names as above with `CaDiv` and `TCaDiv` reserved for possible future methods (with appropriate long versions).\n\nLet me know what you think!",
+    "created_at": "2010-08-22T15:00:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88178",
+    "user": "novoselt"
+}
+```
 
 Replying to [comment:18 vbraun]:
 > About the `divisor_group_*` methods, I agree with your argument but I also hate to give the longer name to the most useful method. And I don't want to introduce a unified parent for divisors, the current inheritance tree fits OOP as well as mathematics nicely. So I propose the following, we'll have only one `divisor_group` method 
@@ -319,13 +577,13 @@ One solution to long names is to introduce aliases in the spirit of recent cohom
 
 In principle, I am OK with passing divisor type as an argument, but this way makes it impossible to use TAB-completion and involves actually more typing. So we can keep it if you want, but I'd rather not.
 
-My main objection however, is that "divisor group" is still used to refer to "*toric* divisor group" and these are mathematically different. So if we do keep only `divisor_group` method, the default behaviour should be returning the group of general divisors. This is probably inconvenient, but I am definitely not OK with the current default.
+My main objection however, is that "divisor group" is still used to refer to "**toric** divisor group" and these are mathematically different. So if we do keep only `divisor_group` method, the default behaviour should be returning the group of general divisors. This is probably inconvenient, but I am definitely not OK with the current default.
 
 Returning to my first point, how about the following names (all take one optional parameter `base_ring`):
- * `X.divisor_group()` -- returns the general group of Weil divisors on `X`;
- * `X.Div()` -- the same, done by `Div = divisor_group` in the class definition;
- * `X.toric_divisor_group()` -- returns the group of T-Weil divisors, which is the one providing actual toric functionality;
- * `X.TDiv()` -- the same, done by `TDiv = toric_divisor_group`.
+* `X.divisor_group()` -- returns the general group of Weil divisors on `X`;
+* `X.Div()` -- the same, done by `Div = divisor_group` in the class definition;
+* `X.toric_divisor_group()` -- returns the group of T-Weil divisors, which is the one providing actual toric functionality;
+* `X.TDiv()` -- the same, done by `TDiv = toric_divisor_group`.
 (I would be even happy with the short names only, but since `divisor_group` is already used in Sage in other classes, I think that we better have two sets here.)
 
 Fulton uses `Div_T(X)` for T-Cartier divisors, but in Hartshorne `Div(X)` stands for Weil divisors. He has no notation for Cartier ones, as far as I can tell, but `CaCl(X)` stands for the class group of Cartier divisors. I like Hartshorne's naming scheme better - when I think about a "divisor", I think about a Weil divisor and they are definitely more natural and easy to handle objects in toric world. So I propose names as above with `CaDiv` and `TCaDiv` reserved for possible future methods (with appropriate long versions).
@@ -333,44 +591,114 @@ Fulton uses `Div_T(X)` for T-Cartier divisors, but in Hartshorne `Div(X)` stands
 Let me know what you think!
 
 
+
 ---
 
-Comment by novoselt created at 2010-08-22 15:00:58
+archive/issue_comments_088179.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_info.",
+    "created_at": "2010-08-22T15:00:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88179",
+    "user": "novoselt"
+}
+```
 
 Changing status from needs_review to needs_info.
 
 
+
 ---
 
-Comment by vbraun created at 2010-08-23 21:40:25
+archive/issue_comments_088180.json:
+```json
+{
+    "body": "I've split the method into `toric_divisor_group` and `divisor_group`. I don't want abbreviations, I think having two methods is already one too many ;-)  Actual computations will be in terms of the elements anyways, you generally don't need to construct the parents manually.",
+    "created_at": "2010-08-23T21:40:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88180",
+    "user": "vbraun"
+}
+```
 
 I've split the method into `toric_divisor_group` and `divisor_group`. I don't want abbreviations, I think having two methods is already one too many ;-)  Actual computations will be in terms of the elements anyways, you generally don't need to construct the parents manually.
 
 
+
 ---
 
-Comment by vbraun created at 2010-08-23 21:40:51
+archive/issue_comments_088181.json:
+```json
+{
+    "body": "Updated patch",
+    "created_at": "2010-08-23T21:40:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88181",
+    "user": "vbraun"
+}
+```
 
 Updated patch
 
 
+
 ---
+
+archive/issue_comments_088182.json:
+```json
+{
+    "body": "Attachment\n\nUpdated patch",
+    "created_at": "2010-08-23T21:41:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88182",
+    "user": "vbraun"
+}
+```
 
 Attachment
 
 Updated patch
 
 
+
 ---
+
+archive/issue_comments_088183.json:
+```json
+{
+    "body": "Attachment\n\nSorry, wrong ticket. Disregard `trac_9713_toric_chow_group.patch`. There is no way to delete an attached patch, is there?",
+    "created_at": "2010-08-23T21:42:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88183",
+    "user": "vbraun"
+}
+```
 
 Attachment
 
 Sorry, wrong ticket. Disregard `trac_9713_toric_chow_group.patch`. There is no way to delete an attached patch, is there?
 
 
+
 ---
 
-Comment by novoselt created at 2010-08-23 23:52:29
+archive/issue_comments_088184.json:
+```json
+{
+    "body": "Replying to [comment:22 vbraun]:\n> Sorry, wrong ticket. Disregard `trac_9713_toric_chow_group.patch`. There is no way to delete an attached patch, is there?\n\nI think the only option is to upload an empty file with the same name, it still will be listed as an attachment though.\n\nThanks for the changes! Looking over...",
+    "created_at": "2010-08-23T23:52:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88184",
+    "user": "novoselt"
+}
+```
 
 Replying to [comment:22 vbraun]:
 > Sorry, wrong ticket. Disregard `trac_9713_toric_chow_group.patch`. There is no way to delete an attached patch, is there?
@@ -380,15 +708,26 @@ I think the only option is to upload an empty file with the same name, it still 
 Thanks for the changes! Looking over...
 
 
+
 ---
 
-Comment by novoselt created at 2010-08-26 20:59:21
+archive/issue_comments_088185.json:
+```json
+{
+    "body": "I have started a little reviewer patch fixing some issues and prettifying documentation, but it grew up ;-)  The patch should go after `trac_9337_toric_divisors.patch`, I didn't work yet with other files. Changes:\n\n1. `ToricDivisorGroup` is removed from the global name space. It probably should not be there, since it is not for other schemes and usually such things are returned by variety methods. The same argument applies to `ToricDivisor`, but it seems from your doctests that you did intend to use it directly. Is it indeed the case? I would prefer to use the form `X.divisor(...)` which is already there.\n2. Only necessary imports are left in the beginning of the file. While it is a little bit annoying to add more imports when you extend functionality, I think that keeping imports to minimal helps with speed, circular references, and clarity.\n3. Simplified `_element_constructor_` in toric divisor group, dealing only with the case when nothing has to be done. There should be no need to check if two divisor groups are equal - if they are equal, they are (at least must be) the same object. More sophisticated cases are left to `ToricDivisor` function to ensure that they always behave in the same way. I worked on this function as well, hopefully for the good ;-) The original version has some bugs, e.g.\n {{{\nsage: P2 = toric_varieties.P2()\nsage: ToricDivisor(P2, [(1/2, P2.gen(0), \"Extra stuff\")])\nDivisor 1/2*x\nsage: ToricDivisor(P2, [(1/2, P2.gen(0), \"Extra stuff\")]).parent()\nGroup of toric ZZ-Weil divisors on 2-d CPR-Fano toric variety covered by 3 affine patches\n}}}\n (note `ZZ` on the last line). The new one on this example gives\n {{{\nsage: P2 = toric_varieties.P2()\nsage: ToricDivisor(P2, [(1/2, P2.gen(0), \"Extra stuff\")]).parent()\nTypeError: cannot deduce coefficient ring for [(1/2, x, 'Extra stuff')]!\nsage: ToricDivisor(P2, [(1/2, P2.gen(0))]).parent()\nGroup of toric QQ-Weil divisors on 2-d CPR-Fano toric variety covered by 3 affine patches\n}}}\n1. Some bugs for non-reduced divisors are fixed, e.g.\n {{{\nsage: P2.divisor([(1,x), (1,x)]).coefficient(x)\n1\n}}}\n while it should be 2.\n1. `cl` is changed to `cohomology_class` as for cones, `ch` is now a synonym for `Chern_caracter` as for toric varieties.\n2. Some simplifications to `is_(QQ)_Cartier` code, using the fact that it is very fast to check Cartier after QQ-Cartier due to your caching of m-vectors.\n3. Some prettifications/clarifications in the documentation, some of them are due to warnings from Florent's patches at #9128. Note also that you should not put class documentation into `__init__` docstring, since it will not show up anywhere.\n\nRemaining questions/issues:\n1. Is there really any use for `divisor.m(cone)` for non-QQ-Cartier divisors? I have a strong desire to check in the beginning of that function if we are in this situation and if not - raise `ValueError`. But I may be wrong. And I see that the check involves computing all these m's. I am also not completely happy about the name `m` which is not very descriptive, but I don't really have an alternative this time (`dual_vector` is not a good choice, in my opinion), so let it be for now.\n2. I decided once again that I don't like `_repr_` of divisors: `Divisor x + y` can be interpreted quite naturally as the zero set of `x+y=0`, while here it means the union of `x=0` and `y=0` (not to mention that in each case the polynomial may not be well-defined). I guess it stems from the general divisor behaviour and one should think what to do with it, but in our case when each \"basic\" divisor is given by a variable I think we should change it to `Divisor D_x + D_y`, maybe even dropping `Divisor ` in front. For general divisors there probably should be something like `V(...)` around each separate equation, but we don't have to worry about this now.\n3. Some of the examples (like `is_Weil`) are somewhat cumbersome using \"raw\" toric varieties. Is there any reason why you didn't want to use examples from toric varieties library? If there are no varieties on which it is possible to demonstrate these functions, let's add some!\n4. How about making `K` return a canonical cohomology class instead of an actual divisor?\n5. I kind of don't like the idea of complete identification of divisors/support functions/sheaves... I would rather have methods `divisor.support_function()` and `divisor.sheaf()`, but of course that requires creating new classes for these objects, i.e. time...\n\nOnce we decide what to do with the above, I can do the changes and incorporate them into my patch.",
+    "created_at": "2010-08-26T20:59:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88185",
+    "user": "novoselt"
+}
+```
 
 I have started a little reviewer patch fixing some issues and prettifying documentation, but it grew up ;-)  The patch should go after `trac_9337_toric_divisors.patch`, I didn't work yet with other files. Changes:
 
- 1. `ToricDivisorGroup` is removed from the global name space. It probably should not be there, since it is not for other schemes and usually such things are returned by variety methods. The same argument applies to `ToricDivisor`, but it seems from your doctests that you did intend to use it directly. Is it indeed the case? I would prefer to use the form `X.divisor(...)` which is already there.
- 1. Only necessary imports are left in the beginning of the file. While it is a little bit annoying to add more imports when you extend functionality, I think that keeping imports to minimal helps with speed, circular references, and clarity.
- 1. Simplified `_element_constructor_` in toric divisor group, dealing only with the case when nothing has to be done. There should be no need to check if two divisor groups are equal - if they are equal, they are (at least must be) the same object. More sophisticated cases are left to `ToricDivisor` function to ensure that they always behave in the same way. I worked on this function as well, hopefully for the good ;-) The original version has some bugs, e.g.
+1. `ToricDivisorGroup` is removed from the global name space. It probably should not be there, since it is not for other schemes and usually such things are returned by variety methods. The same argument applies to `ToricDivisor`, but it seems from your doctests that you did intend to use it directly. Is it indeed the case? I would prefer to use the form `X.divisor(...)` which is already there.
+2. Only necessary imports are left in the beginning of the file. While it is a little bit annoying to add more imports when you extend functionality, I think that keeping imports to minimal helps with speed, circular references, and clarity.
+3. Simplified `_element_constructor_` in toric divisor group, dealing only with the case when nothing has to be done. There should be no need to check if two divisor groups are equal - if they are equal, they are (at least must be) the same object. More sophisticated cases are left to `ToricDivisor` function to ensure that they always behave in the same way. I worked on this function as well, hopefully for the good ;-) The original version has some bugs, e.g.
  {{{
 sage: P2 = toric_varieties.P2()
 sage: ToricDivisor(P2, [(1/2, P2.gen(0), "Extra stuff")])
@@ -404,50 +743,72 @@ TypeError: cannot deduce coefficient ring for [(1/2, x, 'Extra stuff')]!
 sage: ToricDivisor(P2, [(1/2, P2.gen(0))]).parent()
 Group of toric QQ-Weil divisors on 2-d CPR-Fano toric variety covered by 3 affine patches
 }}}
- 1. Some bugs for non-reduced divisors are fixed, e.g.
+1. Some bugs for non-reduced divisors are fixed, e.g.
  {{{
 sage: P2.divisor([(1,x), (1,x)]).coefficient(x)
 1
 }}}
  while it should be 2.
- 1. `cl` is changed to `cohomology_class` as for cones, `ch` is now a synonym for `Chern_caracter` as for toric varieties.
- 1. Some simplifications to `is_(QQ)_Cartier` code, using the fact that it is very fast to check Cartier after QQ-Cartier due to your caching of m-vectors.
- 1. Some prettifications/clarifications in the documentation, some of them are due to warnings from Florent's patches at #9128. Note also that you should not put class documentation into `__init__` docstring, since it will not show up anywhere.
+1. `cl` is changed to `cohomology_class` as for cones, `ch` is now a synonym for `Chern_caracter` as for toric varieties.
+2. Some simplifications to `is_(QQ)_Cartier` code, using the fact that it is very fast to check Cartier after QQ-Cartier due to your caching of m-vectors.
+3. Some prettifications/clarifications in the documentation, some of them are due to warnings from Florent's patches at #9128. Note also that you should not put class documentation into `__init__` docstring, since it will not show up anywhere.
 
 Remaining questions/issues:
- 1. Is there really any use for `divisor.m(cone)` for non-QQ-Cartier divisors? I have a strong desire to check in the beginning of that function if we are in this situation and if not - raise `ValueError`. But I may be wrong. And I see that the check involves computing all these m's. I am also not completely happy about the name `m` which is not very descriptive, but I don't really have an alternative this time (`dual_vector` is not a good choice, in my opinion), so let it be for now.
- 1. I decided once again that I don't like `_repr_` of divisors: `Divisor x + y` can be interpreted quite naturally as the zero set of `x+y=0`, while here it means the union of `x=0` and `y=0` (not to mention that in each case the polynomial may not be well-defined). I guess it stems from the general divisor behaviour and one should think what to do with it, but in our case when each "basic" divisor is given by a variable I think we should change it to `Divisor D_x + D_y`, maybe even dropping `Divisor ` in front. For general divisors there probably should be something like `V(...)` around each separate equation, but we don't have to worry about this now.
- 1. Some of the examples (like `is_Weil`) are somewhat cumbersome using "raw" toric varieties. Is there any reason why you didn't want to use examples from toric varieties library? If there are no varieties on which it is possible to demonstrate these functions, let's add some!
- 1. How about making `K` return a canonical cohomology class instead of an actual divisor?
- 1. I kind of don't like the idea of complete identification of divisors/support functions/sheaves... I would rather have methods `divisor.support_function()` and `divisor.sheaf()`, but of course that requires creating new classes for these objects, i.e. time...
+1. Is there really any use for `divisor.m(cone)` for non-QQ-Cartier divisors? I have a strong desire to check in the beginning of that function if we are in this situation and if not - raise `ValueError`. But I may be wrong. And I see that the check involves computing all these m's. I am also not completely happy about the name `m` which is not very descriptive, but I don't really have an alternative this time (`dual_vector` is not a good choice, in my opinion), so let it be for now.
+2. I decided once again that I don't like `_repr_` of divisors: `Divisor x + y` can be interpreted quite naturally as the zero set of `x+y=0`, while here it means the union of `x=0` and `y=0` (not to mention that in each case the polynomial may not be well-defined). I guess it stems from the general divisor behaviour and one should think what to do with it, but in our case when each "basic" divisor is given by a variable I think we should change it to `Divisor D_x + D_y`, maybe even dropping `Divisor ` in front. For general divisors there probably should be something like `V(...)` around each separate equation, but we don't have to worry about this now.
+3. Some of the examples (like `is_Weil`) are somewhat cumbersome using "raw" toric varieties. Is there any reason why you didn't want to use examples from toric varieties library? If there are no varieties on which it is possible to demonstrate these functions, let's add some!
+4. How about making `K` return a canonical cohomology class instead of an actual divisor?
+5. I kind of don't like the idea of complete identification of divisors/support functions/sheaves... I would rather have methods `divisor.support_function()` and `divisor.sheaf()`, but of course that requires creating new classes for these objects, i.e. time...
 
 Once we decide what to do with the above, I can do the changes and incorporate them into my patch.
 
 
+
 ---
 
-Comment by vbraun created at 2010-08-27 01:56:28
+archive/issue_comments_088186.json:
+```json
+{
+    "body": "1. As you said, to test whether the divisor is Cartier we need to call m(cone). You have to avoid the chicken-egg problem :-)\n   1. How about (x) - 2*(y) + (z), for example? That would be standard notation for principal divisors. I think its cumbersome to introduce prefixes and/or customizable names for every object.\n   2. Its just that some of the code was written before the `toric_varieties` library. Feel free to change those. In one or two places I am explicitly referencing some book/paper, there I was just trying to enumerate things as in the reference.\n   3. I'd rather have the divisor, since I can get its cohomology class but not the other way round.\n   4. Mathematicians do it, too! e.g. \"the divisor is ample\" ...",
+    "created_at": "2010-08-27T01:56:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88186",
+    "user": "vbraun"
+}
+```
 
 1. As you said, to test whether the divisor is Cartier we need to call m(cone). You have to avoid the chicken-egg problem :-)
-  1. How about (x) - 2*(y) + (z), for example? That would be standard notation for principal divisors. I think its cumbersome to introduce prefixes and/or customizable names for every object.
-  1. Its just that some of the code was written before the `toric_varieties` library. Feel free to change those. In one or two places I am explicitly referencing some book/paper, there I was just trying to enumerate things as in the reference.
-  1. I'd rather have the divisor, since I can get its cohomology class but not the other way round.
-  1. Mathematicians do it, too! e.g. "the divisor is ample" ...
+   1. How about (x) - 2*(y) + (z), for example? That would be standard notation for principal divisors. I think its cumbersome to introduce prefixes and/or customizable names for every object.
+   2. Its just that some of the code was written before the `toric_varieties` library. Feel free to change those. In one or two places I am explicitly referencing some book/paper, there I was just trying to enumerate things as in the reference.
+   3. I'd rather have the divisor, since I can get its cohomology class but not the other way round.
+   4. Mathematicians do it, too! e.g. "the divisor is ample" ...
+
 
 
 ---
 
-Comment by novoselt created at 2010-08-27 03:43:26
+archive/issue_comments_088187.json:
+```json
+{
+    "body": "1. OK, let's leave it as is as the simplest solution. I have already added an exception message complaining that the divisor is not QQ-Cartier if the function fails, but it still works peacefully for cones for which it is possible to find m.\n\n2. I thought about using (...) or {...}, but that does not quite distinguish divisors from complicated polynomial expressions on the one hand and (x) will not be used in a traditional sense of a principal divisor when, say, only `x^3` defines a valid function. I'd say that the standard in toric geometry is to have different names for ray generators, variables, and divisors, but have the same index on the corresponding ones, like u_i, z_i, D_i. We don't have any special notation for rays (and I don't see any reason to have it), the standard variables are zi's, and that would suggest using Di's for divisors, but that may not work very good with customized names for coordinates, like (x,y,z) for P2 (Dx may look fine, but will not typeset nicely and Dalpha will be even worse). So I am still thinking about something like:\n   * users have no control over divisor names\n   * if coordinate names are constructed in the standard manner with indices, corresponding divisors are called D0, D1, etc.\n   * if coordinate names are given explicitly, divisors get `D` prefix for printing and `D_{...}` for latexing (I think it is possible to have them different)\n   * we keep an internal polynomial ring (say, `_divisor_ring`) for these purposes, but don't expose it to the user\n   * there is a command like `inject_divisors` that defines names corresponding to this divisors, but not as polynomials: D1 gets associated with `ToricDivisor(X, 1)` which is still a formal sum and users cannot do multiplication of such things etc.\n   * alternatively, instead of messing with extra rings, we put the entire naming algorithm into `_repr_` and `_latex_` of toric divisors - these methods don't have to be fast/cached or anything, people are slower anyway ;-) I think I actually prefer this variant.\nNote that you actually did use names like `Dx, Dy, ...` in the very first example of your toric divisors module. So these names are natural, and it is convenient to have them different from homogeneous coordinates because you are likely to use both in the same time. Yet another advantage of this form compared to some kind of decorators like ()/{} is that Dx is a valid name and so you can have the same notation in the code and in the output. I think that \n\n```\nsage: x\nx\nsage: Dx\nDx\n```\n\nlooks better than\n\n```\nsage: x\nx\nsage: Dx\n(x)\nsage: (x)\nx\n```\n\n\n5. Touch\u00e9! ;-)",
+    "created_at": "2010-08-27T03:43:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88187",
+    "user": "novoselt"
+}
+```
 
 1. OK, let's leave it as is as the simplest solution. I have already added an exception message complaining that the divisor is not QQ-Cartier if the function fails, but it still works peacefully for cones for which it is possible to find m.
 
 2. I thought about using (...) or {...}, but that does not quite distinguish divisors from complicated polynomial expressions on the one hand and (x) will not be used in a traditional sense of a principal divisor when, say, only `x^3` defines a valid function. I'd say that the standard in toric geometry is to have different names for ray generators, variables, and divisors, but have the same index on the corresponding ones, like u_i, z_i, D_i. We don't have any special notation for rays (and I don't see any reason to have it), the standard variables are zi's, and that would suggest using Di's for divisors, but that may not work very good with customized names for coordinates, like (x,y,z) for P2 (Dx may look fine, but will not typeset nicely and Dalpha will be even worse). So I am still thinking about something like:
- * users have no control over divisor names
- * if coordinate names are constructed in the standard manner with indices, corresponding divisors are called D0, D1, etc.
- * if coordinate names are given explicitly, divisors get `D` prefix for printing and `D_{...}` for latexing (I think it is possible to have them different)
- * we keep an internal polynomial ring (say, `_divisor_ring`) for these purposes, but don't expose it to the user
- * there is a command like `inject_divisors` that defines names corresponding to this divisors, but not as polynomials: D1 gets associated with `ToricDivisor(X, 1)` which is still a formal sum and users cannot do multiplication of such things etc.
- * alternatively, instead of messing with extra rings, we put the entire naming algorithm into `_repr_` and `_latex_` of toric divisors - these methods don't have to be fast/cached or anything, people are slower anyway ;-) I think I actually prefer this variant.
+   * users have no control over divisor names
+   * if coordinate names are constructed in the standard manner with indices, corresponding divisors are called D0, D1, etc.
+   * if coordinate names are given explicitly, divisors get `D` prefix for printing and `D_{...}` for latexing (I think it is possible to have them different)
+   * we keep an internal polynomial ring (say, `_divisor_ring`) for these purposes, but don't expose it to the user
+   * there is a command like `inject_divisors` that defines names corresponding to this divisors, but not as polynomials: D1 gets associated with `ToricDivisor(X, 1)` which is still a formal sum and users cannot do multiplication of such things etc.
+   * alternatively, instead of messing with extra rings, we put the entire naming algorithm into `_repr_` and `_latex_` of toric divisors - these methods don't have to be fast/cached or anything, people are slower anyway ;-) I think I actually prefer this variant.
 Note that you actually did use names like `Dx, Dy, ...` in the very first example of your toric divisors module. So these names are natural, and it is convenient to have them different from homogeneous coordinates because you are likely to use both in the same time. Yet another advantage of this form compared to some kind of decorators like ()/{} is that Dx is a valid name and so you can have the same notation in the code and in the output. I think that 
 
 ```
@@ -472,23 +833,45 @@ x
 5. Touché! ;-)
 
 
+
 ---
 
-Comment by vbraun created at 2010-08-27 09:26:36
+archive/issue_comments_088188.json:
+```json
+{
+    "body": "About the divisor `_repr_()`: If you want prefixes then you'll have to live with `Dalpha`, but I think that is acceptable. I think it would be better if we could agree on a naming convention that works only with the homogeneous coordinate names, though. Different users will probably want different names `Dx`, `D1`, `H`, `E_i`, `O_x`, `f_x` ... depending on whether they think of it as a divisor, sheaf, or support function. There is no notation that'll make everyone happy, but if we could do `_repr_()` with just the homogeneous coordinates then the output will be at least uniform.\n\nHow about\n* `O(x*z/y^2)`\n* `The divisor {x=0}-2*{y=0}+{z=0}`\n* Or just `{x=0}-2*{y=0}+{z=0}`\n\nAs for the implementation, I very much prefer stuffing everything into `_repr_`/`_latex_`.",
+    "created_at": "2010-08-27T09:26:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88188",
+    "user": "vbraun"
+}
+```
 
 About the divisor `_repr_()`: If you want prefixes then you'll have to live with `Dalpha`, but I think that is acceptable. I think it would be better if we could agree on a naming convention that works only with the homogeneous coordinate names, though. Different users will probably want different names `Dx`, `D1`, `H`, `E_i`, `O_x`, `f_x` ... depending on whether they think of it as a divisor, sheaf, or support function. There is no notation that'll make everyone happy, but if we could do `_repr_()` with just the homogeneous coordinates then the output will be at least uniform.
 
 How about
-  * `O(x*z/y^2)`
-  * `The divisor {x=0}-2*{y=0}+{z=0}`
-  * Or just `{x=0}-2*{y=0}+{z=0}`
+* `O(x*z/y^2)`
+* `The divisor {x=0}-2*{y=0}+{z=0}`
+* Or just `{x=0}-2*{y=0}+{z=0}`
 
 As for the implementation, I very much prefer stuffing everything into `_repr_`/`_latex_`.
 
 
+
 ---
 
-Comment by novoselt created at 2010-08-27 14:32:13
+archive/issue_comments_088189.json:
+```json
+{
+    "body": "The first variant will not look nicely for non-ZZ-coefficients, so from these three I prefer the last one, `{x=0}-2*{y=0}+{z=0}`. What do you think of `V(x)-2*V(y)+V(z)` to indicate zero sets? It will allow users like me to write something like\n\n```\nsage: V = X.divisor\nsage: V(x)\nV(x)\n```\n\n\nBoth of this will work fine for general divisors given by equations, so I'll try to put this code into the base class.\n\nI agree about concentrating everything in repr/latex - it will allow adding more naming schemes that users can choose and switch on the fly later (I think it would be great to be able to switch between all of the presentations you have listed).",
+    "created_at": "2010-08-27T14:32:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88189",
+    "user": "novoselt"
+}
+```
 
 The first variant will not look nicely for non-ZZ-coefficients, so from these three I prefer the last one, `{x=0}-2*{y=0}+{z=0}`. What do you think of `V(x)-2*V(y)+V(z)` to indicate zero sets? It will allow users like me to write something like
 
@@ -504,9 +887,20 @@ Both of this will work fine for general divisors given by equations, so I'll try
 I agree about concentrating everything in repr/latex - it will allow adding more naming schemes that users can choose and switch on the fly later (I think it would be great to be able to switch between all of the presentations you have listed).
 
 
+
 ---
 
-Comment by novoselt created at 2010-08-28 23:54:17
+archive/issue_comments_088190.json:
+```json
+{
+    "body": "Volker, I have done some more changes to the documentation of the module itself, `function_value`, and `m`, please check that they are OK. It seems to me that traditionally support functions are defined for Cartier divisors only. It is easy to extend the notion to QQ-Cartier divisors, but do they have any meaning for a general Weil divisor?\n\nI have simplified examples for `is_Weil` etc. and moved your more complicated version to the module documentation, where it looks very good, I think, since it shows examples of all divisors which are \"X but not Y\".\n\nI have defined `_repr_` and `_latex_` for generic divisors to wrap the defining part of each term in `V(...)`, which does not look that great on existing examples with ZZ, but I think that `4*V(5)` is still better than `4*5` and in those cases where something else is desired there should be a derived class with overridden `_repr_`, while in most case some kind of a \"zero set notation\" works great. It is a bit annoying how in LaTeX presentation negative coefficients are wrapped in parenthesis, but fixing it the right way requires deeper digging in sage.misc and I'd rather do it sometime later (or wait until someone else fixes it ;-)).\n\nI have not yet tested this patch against the whole library (doing it now), if there are way too many doctests to fix, I'll move this functions to toric divisors only.\n\nThe next patch on the ticket does not apply cleanly anymore and needs to be rebased (after you agree with my patch), sorry!",
+    "created_at": "2010-08-28T23:54:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88190",
+    "user": "novoselt"
+}
+```
 
 Volker, I have done some more changes to the documentation of the module itself, `function_value`, and `m`, please check that they are OK. It seems to me that traditionally support functions are defined for Cartier divisors only. It is easy to extend the notion to QQ-Cartier divisors, but do they have any meaning for a general Weil divisor?
 
@@ -519,23 +913,56 @@ I have not yet tested this patch against the whole library (doing it now), if th
 The next patch on the ticket does not apply cleanly anymore and needs to be rebased (after you agree with my patch), sorry!
 
 
+
 ---
 
-Comment by novoselt created at 2010-08-28 23:54:17
+archive/issue_comments_088191.json:
+```json
+{
+    "body": "Changing status from needs_info to needs_work.",
+    "created_at": "2010-08-28T23:54:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88191",
+    "user": "novoselt"
+}
+```
 
 Changing status from needs_info to needs_work.
 
 
+
 ---
 
-Comment by novoselt created at 2010-08-29 01:14:15
+archive/issue_comments_088192.json:
+```json
+{
+    "body": "OK, looks like all tests including long ones pass with this patch applied!",
+    "created_at": "2010-08-29T01:14:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88192",
+    "user": "novoselt"
+}
+```
 
 OK, looks like all tests including long ones pass with this patch applied!
 
 
+
 ---
 
-Comment by vbraun created at 2010-08-29 22:30:01
+archive/issue_comments_088193.json:
+```json
+{
+    "body": "1) You can remove the `ToricDivisor` from the global namespace as well if you update doctests accordingly. Historically, I only introduced the `X.divisor()` method later on...\n\n2) Can you leave this one in? \n\n```\n # I think there are many rings that should not be used as coefficients \n # but checking for such cases is impractical, so I'll comment this... \n # if isinstance(R,CohomologyRing): \n #    raise TypeError, 'Coefficient ring cannot be a cohomology ring.' \n```\n\nThe point of specifically excluding divisors over coordinate rings is that when you write `(divisor)*(cohomology class)` you want `divisor.cohomology_class() * (cohomology class)`, so we have to forbid the undesirable coercion to the divisor ring over the cohomology class.\n\n3) Closing `>` in \n\n```\nConstruct a :class:`(toric Weil) divisor <ToricDivisor_generic` on the \n```\n\n\nRest looks good. I can rebase the next patches after you update the reviewer patch.",
+    "created_at": "2010-08-29T22:30:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88193",
+    "user": "vbraun"
+}
+```
 
 1) You can remove the `ToricDivisor` from the global namespace as well if you update doctests accordingly. Historically, I only introduced the `X.divisor()` method later on...
 
@@ -560,9 +987,20 @@ Construct a :class:`(toric Weil) divisor <ToricDivisor_generic` on the
 Rest looks good. I can rebase the next patches after you update the reviewer patch.
 
 
+
 ---
 
-Comment by novoselt created at 2010-08-30 05:35:58
+archive/issue_comments_088194.json:
+```json
+{
+    "body": "1) Done!\n\n2) Done! But it seems to me that desirable coercion does not work either. Is it in the remaining patches?\n\n3) Done! (How have you caught it? The compiled documentation still seemed fine to me!)",
+    "created_at": "2010-08-30T05:35:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88194",
+    "user": "novoselt"
+}
+```
 
 1) Done!
 
@@ -571,84 +1009,167 @@ Comment by novoselt created at 2010-08-30 05:35:58
 3) Done! (How have you caught it? The compiled documentation still seemed fine to me!)
 
 
+
 ---
+
+archive/issue_comments_088195.json:
+```json
+{
+    "body": "Attachment\n\nRebased patch",
+    "created_at": "2010-08-30T15:19:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88195",
+    "user": "vbraun"
+}
+```
 
 Attachment
 
 Rebased patch
 
 
+
 ---
+
+archive/issue_comments_088196.json:
+```json
+{
+    "body": "Attachment\n\nignore the .2 patch above, lets keep the same names...",
+    "created_at": "2010-08-30T15:21:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88196",
+    "user": "vbraun"
+}
+```
 
 Attachment
 
 ignore the .2 patch above, lets keep the same names...
 
 
+
 ---
+
+archive/issue_comments_088197.json:
+```json
+{
+    "body": "Attachment\n\nRebased patch",
+    "created_at": "2010-08-30T15:21:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88197",
+    "user": "vbraun"
+}
+```
 
 Attachment
 
 Rebased patch
 
 
+
 ---
 
-Comment by vbraun created at 2010-08-30 15:29:20
+archive/issue_comments_088198.json:
+```json
+{
+    "body": "I've updated the remaining patches on top of your reviewer patch. \n\nI haven't used the dual cone for the `Mori_vectors` since that is more about GLSM notation. Since the Kahler cone can now just be `dual()`ized, we probably don't need a special `Mori_cone` method.",
+    "created_at": "2010-08-30T15:29:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88198",
+    "user": "vbraun"
+}
+```
 
 I've updated the remaining patches on top of your reviewer patch. 
 
 I haven't used the dual cone for the `Mori_vectors` since that is more about GLSM notation. Since the Kahler cone can now just be `dual()`ized, we probably don't need a special `Mori_cone` method.
 
 
+
 ---
 
-Comment by novoselt created at 2010-09-03 17:38:13
+archive/issue_comments_088199.json:
+```json
+{
+    "body": "I couldn't believe my eyes for a long time while I was starring at the part of divisor classes patch related to `polyhedra.py` module, but once I opened the existing library version it made sense ;-)\n\n\nChanges in the reviewer patch (which should be applied on top of all others):\n* I renamed `test` to `region` as an option for `cone._contains`, `test` seems to me somewhat confusing, I would think that it is used as a boolean value, not a string. I also removed underscores from acceptable input since they are not used as Python identifiers and then I think it is better to make them more human.\n* I renamed `divisor.P()` to `divisor.polytope()`, hope it is OK ;-)\n* I renamed `gale_transform` to `Gale_transform` for fans in the spirit of all other names in our files. This breaks backward compatibility with the existing version of Sage, but I think that it is so new that it is OK, especially since it is kind of a bug ;-)\n* I added `Mori_cone` method, `Mori_vectors` now returs its rays (do you think we still need it?). What exactly \"Mori vectors\" refer to? Generators of the cone, or any point inside this cone as well? What about non-simplicial cases, when generators are not unique? `Kaehler_cone.dual()` gives something pretty horrible, so it should not be used by end-users until we make it behave better, but it is useful to construct `Mori_cone`, including non-simplicial cases.\n* Some functions now return tuples instead of lists. I think that for cached values it is important, while for others it is good for consistency (and in case we decide to make them cached as well).\n* Some code optimization/bug fixing (Hal Schenck pointed at some of them while working on examples).\n* Some documentation prettification, e.g. while it is not necessary to give keyword arguments, I like to write `Fan(cones=[...], rays=[...])` in doctests since it makes it more clear for the reader which list is what and where are their boundaries.\n\n\nFood for thoughts:\n1. Do you have any doubts about using the name `Kaehler_cone` for the closure of the actual Kaehler cone? (I am OK with it, just want to make sure that you have thought about it as well).\n2. Is it really necessary to set `_fan` attribute of divisors? It seems to me that if you need it once in a function, it is not that much work to get to the fan though the scheme attribute, while when you need it often you can get it once and name just `fan` which is even more convenient.\n3. I really don't like that \"cohomology\" is used to refer to a vector of integers. I would expect it to return actual cohomology groups (like homology method of simplicial complexes does). How about renaming all relevant method and their documentation and call it something else? \"D.h_vector()\" comes to mind, or maybe even \"D.h()\" to get a vector and \"D.h(2)\" to get the dimension of the given degree only.\n4. I think all cohomology-related functions (including helpers) should have explanations of / references to used algorithms, either in the documentation, or in the form of comments. The second variant may be even more appropriate.\n5. How about changing \"The toric QQ-divisor class group\" to \"The toric rational divisor class group\" in `_repr_`? Since everything else is written out explicitly, it seems to me that it is better without \"QQ\" (but I am OK with the current version, if you prefer it).\n6. I think we must have a space after comma in divisor classes representation, i.e. have in `_repr_` something like `return \"Divisor class %s\" % list(self)`.\n7. I think that we should derive `ToricRationalDivisorClass` from vectors in the same way as it is done for toric lattice elements, because overriding `_new_c` eliminates the necessity to repeat every single arithmetic function, which involves multiple unnecessary conversions.\n8. How about renaming `divisor_class_group` to just `class_group`? Or  better `rational_class_group` to emphasize tensoring with QQ and with a hope to implement eventually `class_group` with potential torsion.\n\nI am happy to do any/all (except for (4)) of the changes above as a part of the reviewer patch, once we agree on them.",
+    "created_at": "2010-09-03T17:38:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88199",
+    "user": "novoselt"
+}
+```
 
 I couldn't believe my eyes for a long time while I was starring at the part of divisor classes patch related to `polyhedra.py` module, but once I opened the existing library version it made sense ;-)
 
 
 Changes in the reviewer patch (which should be applied on top of all others):
- * I renamed `test` to `region` as an option for `cone._contains`, `test` seems to me somewhat confusing, I would think that it is used as a boolean value, not a string. I also removed underscores from acceptable input since they are not used as Python identifiers and then I think it is better to make them more human.
- * I renamed `divisor.P()` to `divisor.polytope()`, hope it is OK ;-)
- * I renamed `gale_transform` to `Gale_transform` for fans in the spirit of all other names in our files. This breaks backward compatibility with the existing version of Sage, but I think that it is so new that it is OK, especially since it is kind of a bug ;-)
- * I added `Mori_cone` method, `Mori_vectors` now returs its rays (do you think we still need it?). What exactly "Mori vectors" refer to? Generators of the cone, or any point inside this cone as well? What about non-simplicial cases, when generators are not unique? `Kaehler_cone.dual()` gives something pretty horrible, so it should not be used by end-users until we make it behave better, but it is useful to construct `Mori_cone`, including non-simplicial cases.
- * Some functions now return tuples instead of lists. I think that for cached values it is important, while for others it is good for consistency (and in case we decide to make them cached as well).
- * Some code optimization/bug fixing (Hal Schenck pointed at some of them while working on examples).
- * Some documentation prettification, e.g. while it is not necessary to give keyword arguments, I like to write `Fan(cones=[...], rays=[...])` in doctests since it makes it more clear for the reader which list is what and where are their boundaries.
+* I renamed `test` to `region` as an option for `cone._contains`, `test` seems to me somewhat confusing, I would think that it is used as a boolean value, not a string. I also removed underscores from acceptable input since they are not used as Python identifiers and then I think it is better to make them more human.
+* I renamed `divisor.P()` to `divisor.polytope()`, hope it is OK ;-)
+* I renamed `gale_transform` to `Gale_transform` for fans in the spirit of all other names in our files. This breaks backward compatibility with the existing version of Sage, but I think that it is so new that it is OK, especially since it is kind of a bug ;-)
+* I added `Mori_cone` method, `Mori_vectors` now returs its rays (do you think we still need it?). What exactly "Mori vectors" refer to? Generators of the cone, or any point inside this cone as well? What about non-simplicial cases, when generators are not unique? `Kaehler_cone.dual()` gives something pretty horrible, so it should not be used by end-users until we make it behave better, but it is useful to construct `Mori_cone`, including non-simplicial cases.
+* Some functions now return tuples instead of lists. I think that for cached values it is important, while for others it is good for consistency (and in case we decide to make them cached as well).
+* Some code optimization/bug fixing (Hal Schenck pointed at some of them while working on examples).
+* Some documentation prettification, e.g. while it is not necessary to give keyword arguments, I like to write `Fan(cones=[...], rays=[...])` in doctests since it makes it more clear for the reader which list is what and where are their boundaries.
 
 
 Food for thoughts:
- 1. Do you have any doubts about using the name `Kaehler_cone` for the closure of the actual Kaehler cone? (I am OK with it, just want to make sure that you have thought about it as well).
- 1. Is it really necessary to set `_fan` attribute of divisors? It seems to me that if you need it once in a function, it is not that much work to get to the fan though the scheme attribute, while when you need it often you can get it once and name just `fan` which is even more convenient.
- 1. I really don't like that "cohomology" is used to refer to a vector of integers. I would expect it to return actual cohomology groups (like homology method of simplicial complexes does). How about renaming all relevant method and their documentation and call it something else? "D.h_vector()" comes to mind, or maybe even "D.h()" to get a vector and "D.h(2)" to get the dimension of the given degree only.
- 1. I think all cohomology-related functions (including helpers) should have explanations of / references to used algorithms, either in the documentation, or in the form of comments. The second variant may be even more appropriate.
- 1. How about changing "The toric QQ-divisor class group" to "The toric rational divisor class group" in `_repr_`? Since everything else is written out explicitly, it seems to me that it is better without "QQ" (but I am OK with the current version, if you prefer it).
- 1. I think we must have a space after comma in divisor classes representation, i.e. have in `_repr_` something like `return "Divisor class %s" % list(self)`.
- 1. I think that we should derive `ToricRationalDivisorClass` from vectors in the same way as it is done for toric lattice elements, because overriding `_new_c` eliminates the necessity to repeat every single arithmetic function, which involves multiple unnecessary conversions.
- 1. How about renaming `divisor_class_group` to just `class_group`? Or  better `rational_class_group` to emphasize tensoring with QQ and with a hope to implement eventually `class_group` with potential torsion.
+1. Do you have any doubts about using the name `Kaehler_cone` for the closure of the actual Kaehler cone? (I am OK with it, just want to make sure that you have thought about it as well).
+2. Is it really necessary to set `_fan` attribute of divisors? It seems to me that if you need it once in a function, it is not that much work to get to the fan though the scheme attribute, while when you need it often you can get it once and name just `fan` which is even more convenient.
+3. I really don't like that "cohomology" is used to refer to a vector of integers. I would expect it to return actual cohomology groups (like homology method of simplicial complexes does). How about renaming all relevant method and their documentation and call it something else? "D.h_vector()" comes to mind, or maybe even "D.h()" to get a vector and "D.h(2)" to get the dimension of the given degree only.
+4. I think all cohomology-related functions (including helpers) should have explanations of / references to used algorithms, either in the documentation, or in the form of comments. The second variant may be even more appropriate.
+5. How about changing "The toric QQ-divisor class group" to "The toric rational divisor class group" in `_repr_`? Since everything else is written out explicitly, it seems to me that it is better without "QQ" (but I am OK with the current version, if you prefer it).
+6. I think we must have a space after comma in divisor classes representation, i.e. have in `_repr_` something like `return "Divisor class %s" % list(self)`.
+7. I think that we should derive `ToricRationalDivisorClass` from vectors in the same way as it is done for toric lattice elements, because overriding `_new_c` eliminates the necessity to repeat every single arithmetic function, which involves multiple unnecessary conversions.
+8. How about renaming `divisor_class_group` to just `class_group`? Or  better `rational_class_group` to emphasize tensoring with QQ and with a hope to implement eventually `class_group` with potential torsion.
 
 I am happy to do any/all (except for (4)) of the changes above as a part of the reviewer patch, once we agree on them.
 
 
+
 ---
 
-Comment by novoselt created at 2010-09-03 17:38:13
+archive/issue_comments_088200.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_info.",
+    "created_at": "2010-09-03T17:38:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88200",
+    "user": "novoselt"
+}
+```
 
 Changing status from needs_work to needs_info.
 
 
+
 ---
 
-Comment by vbraun created at 2010-09-05 12:15:36
+archive/issue_comments_088201.json:
+```json
+{
+    "body": "Some people use \"Mori vector\" for the rays of the Mori cone, but `Mori_cone` is probably better.\n\n1. I'm fine with `Kahler_cone` actually returning the closure... right now we don't have a way of specifying open cones and I don't think that it is a priority. Plus there would be a lot of code complexity in intersecting open/closed cones, which I'd be happy to avoid for toric purposes.\n\n2. Since all toric algorithms end up using the fan I found it useful to have a local reference. I'm fine with either way, though.\n\n3. You are usually the one who advocates the longer names ;-) The toric Chow group prints itself like this:\n\n```\nsage: A = X.Chow_group() \nsage: A.degree() \n(Z, C7, Z^5 x C2 x C2, Z) \n```\n\n    and it would be easy to lift the code from there. But in practice you'll just want the dimension (no torsion here). So I think that, while looking good, be actually in your way when working with it.\n\n5. , 6. Fine with me!\n\n7. In contrast to the toric lattices, the `ToricRationalDivisorClass` is not that speed-sensitive. You probably got the class from a toric divisor which is itself not that efficient either. If you derive from vectors you'll save a few lines because you inherit addition/subtraction but you'll have to write a cython file and override e.g. `__reduce__` now. Judging from `toric_lattice_element.pyx` I think it'll be about the same amount of code. But if you want to rewrite it I'm not going to stop you :-)\n\n8. how about `class_group(base_ring=QQ)`",
+    "created_at": "2010-09-05T12:15:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88201",
+    "user": "vbraun"
+}
+```
 
 Some people use "Mori vector" for the rays of the Mori cone, but `Mori_cone` is probably better.
 
-  1. I'm fine with `Kahler_cone` actually returning the closure... right now we don't have a way of specifying open cones and I don't think that it is a priority. Plus there would be a lot of code complexity in intersecting open/closed cones, which I'd be happy to avoid for toric purposes.
+1. I'm fine with `Kahler_cone` actually returning the closure... right now we don't have a way of specifying open cones and I don't think that it is a priority. Plus there would be a lot of code complexity in intersecting open/closed cones, which I'd be happy to avoid for toric purposes.
 
-  2. Since all toric algorithms end up using the fan I found it useful to have a local reference. I'm fine with either way, though.
+2. Since all toric algorithms end up using the fan I found it useful to have a local reference. I'm fine with either way, though.
 
-  3. You are usually the one who advocates the longer names ;-) The toric Chow group prints itself like this:
+3. You are usually the one who advocates the longer names ;-) The toric Chow group prints itself like this:
 
 ```
 sage: A = X.Chow_group() 
@@ -658,23 +1179,34 @@ sage: A.degree()
 
     and it would be easy to lift the code from there. But in practice you'll just want the dimension (no torsion here). So I think that, while looking good, be actually in your way when working with it.
 
-  5. , 6. Fine with me!
+5. , 6. Fine with me!
 
-  7. In contrast to the toric lattices, the `ToricRationalDivisorClass` is not that speed-sensitive. You probably got the class from a toric divisor which is itself not that efficient either. If you derive from vectors you'll save a few lines because you inherit addition/subtraction but you'll have to write a cython file and override e.g. `__reduce__` now. Judging from `toric_lattice_element.pyx` I think it'll be about the same amount of code. But if you want to rewrite it I'm not going to stop you :-)
+7. In contrast to the toric lattices, the `ToricRationalDivisorClass` is not that speed-sensitive. You probably got the class from a toric divisor which is itself not that efficient either. If you derive from vectors you'll save a few lines because you inherit addition/subtraction but you'll have to write a cython file and override e.g. `__reduce__` now. Judging from `toric_lattice_element.pyx` I think it'll be about the same amount of code. But if you want to rewrite it I'm not going to stop you :-)
 
-  8. how about `class_group(base_ring=QQ)`
+8. how about `class_group(base_ring=QQ)`
+
 
 
 ---
 
-Comment by novoselt created at 2010-09-05 15:31:48
+archive/issue_comments_088202.json:
+```json
+{
+    "body": "1. I did not suggest implementing open cones! Too much work and I don't see any need for them so far. Only changing the name to something like `Kaehler_cone_closure` for clarity. And the more I think about it, the more it seems like a good idea...\n\n   3. I know! Maybe that's your influence ;-) But my point is not that `cohomology` is short, but that it returns a value which is not cohomology, even if that's the peace of information you want to know about it. So I still want to rename the current function to `h_vector` and add just `h` to access degree pieces.\n\n   8. Would it be OK to have the following?\n   {{{\ndef class_group(base_ring=ZZ):\n    if base_ring == ZZ:\n        raise NotImplementedError(\"only rational class group is implemented at the moment \"\n                                  \"please use `class_group(QQ)`!\")\n    ...\n}}}\n\nMeanwhile I will:\n* remove `More_vectors`;\n* remove `_fan` attribute for divisors. My concern (perhaps, unnecessary) is that with two different ways to access them people may wonder what's the difference between `self._fan` and `self.scheme().fan()`;\n* implement 5,6,7 (although I agree with your arguments that divisor classes are not speed-sensitive).",
+    "created_at": "2010-09-05T15:31:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88202",
+    "user": "novoselt"
+}
+```
 
 1. I did not suggest implementing open cones! Too much work and I don't see any need for them so far. Only changing the name to something like `Kaehler_cone_closure` for clarity. And the more I think about it, the more it seems like a good idea...
 
- 3. I know! Maybe that's your influence ;-) But my point is not that `cohomology` is short, but that it returns a value which is not cohomology, even if that's the peace of information you want to know about it. So I still want to rename the current function to `h_vector` and add just `h` to access degree pieces.
+   3. I know! Maybe that's your influence ;-) But my point is not that `cohomology` is short, but that it returns a value which is not cohomology, even if that's the peace of information you want to know about it. So I still want to rename the current function to `h_vector` and add just `h` to access degree pieces.
 
- 8. Would it be OK to have the following?
- {{{
+   8. Would it be OK to have the following?
+   {{{
 def class_group(base_ring=ZZ):
     if base_ring == ZZ:
         raise NotImplementedError("only rational class group is implemented at the moment "
@@ -683,103 +1215,204 @@ def class_group(base_ring=ZZ):
 }}}
 
 Meanwhile I will:
- * remove `More_vectors`;
- * remove `_fan` attribute for divisors. My concern (perhaps, unnecessary) is that with two different ways to access them people may wonder what's the difference between `self._fan` and `self.scheme().fan()`;
- * implement 5,6,7 (although I agree with your arguments that divisor classes are not speed-sensitive).
+* remove `More_vectors`;
+* remove `_fan` attribute for divisors. My concern (perhaps, unnecessary) is that with two different ways to access them people may wonder what's the difference between `self._fan` and `self.scheme().fan()`;
+* implement 5,6,7 (although I agree with your arguments that divisor classes are not speed-sensitive).
+
 
 
 ---
 
-Comment by novoselt created at 2010-09-05 15:58:21
+archive/issue_comments_088203.json:
+```json
+{
+    "body": "What is the mathematical meaning of `_pairwise_product_` of divisor classes?",
+    "created_at": "2010-09-05T15:58:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88203",
+    "user": "novoselt"
+}
+```
 
 What is the mathematical meaning of `_pairwise_product_` of divisor classes?
 
 
+
 ---
 
-Comment by vbraun created at 2010-09-05 16:06:00
+archive/issue_comments_088204.json:
+```json
+{
+    "body": "`_pairwise_product_` is there so you can multiply elements of the Mori and Kahler cone.\n\n1. That would be the nef cone and please don't rename it to `nef_cone`... unless you implement a way to distinguish the rays of an open cone from the rays of a closed cone :-P\n\n3.  I'm against `h(k)` as a synonym for `h_vector()[k]`, this should be handled by polymorphism. If you want you can rename `cohomology`->`h`, but thats against the usual naming conventions. I am confident that returning an integer or integer vector as \"cohomology\" will be a self-explanatory abuse of notation. We could return some object which prints as `CC^n` and has a `dim()` method, but I think thats just a waste of time.\n\n8. The default should be the most useful value, not the one that isn't going to be implemented in the near future ;-)  I implemented the rational divisor class group as the parent of the Kahler cone primarily, and I think that the integral divisor class group is far less useful as a separate object.",
+    "created_at": "2010-09-05T16:06:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88204",
+    "user": "vbraun"
+}
+```
 
 `_pairwise_product_` is there so you can multiply elements of the Mori and Kahler cone.
 
-  1. That would be the nef cone and please don't rename it to `nef_cone`... unless you implement a way to distinguish the rays of an open cone from the rays of a closed cone :-P
+1. That would be the nef cone and please don't rename it to `nef_cone`... unless you implement a way to distinguish the rays of an open cone from the rays of a closed cone :-P
 
-  3.  I'm against `h(k)` as a synonym for `h_vector()[k]`, this should be handled by polymorphism. If you want you can rename `cohomology`->`h`, but thats against the usual naming conventions. I am confident that returning an integer or integer vector as "cohomology" will be a self-explanatory abuse of notation. We could return some object which prints as `CC^n` and has a `dim()` method, but I think thats just a waste of time.
+3.  I'm against `h(k)` as a synonym for `h_vector()[k]`, this should be handled by polymorphism. If you want you can rename `cohomology`->`h`, but thats against the usual naming conventions. I am confident that returning an integer or integer vector as "cohomology" will be a self-explanatory abuse of notation. We could return some object which prints as `CC^n` and has a `dim()` method, but I think thats just a waste of time.
 
-  8. The default should be the most useful value, not the one that isn't going to be implemented in the near future ;-)  I implemented the rational divisor class group as the parent of the Kahler cone primarily, and I think that the integral divisor class group is far less useful as a separate object.
+8. The default should be the most useful value, not the one that isn't going to be implemented in the near future ;-)  I implemented the rational divisor class group as the parent of the Kahler cone primarily, and I think that the integral divisor class group is far less useful as a separate object.
+
 
 
 ---
 
-Comment by novoselt created at 2010-09-05 17:42:08
+archive/issue_comments_088205.json:
+```json
+{
+    "body": "1. OK, let it stay `Kaehler_cone`!\n\n   3. Well, how about `cohomology -> cohomology_dim`? While it clear from the documentation what it returns and how to use it, it is still inconsistent with other uses of `(co)homology`, i.e. in simplicial complexes.\n\n   8. I think integral class group is at least as useful as rational, since it contains all information about the latter, so if we did have it, it would be great, and it is conceivable that someone will eventually implement it. At the present state forcing users to write `class_group(QQ)` instead of `class_group()` is more consistent with the usual mathematical definition of the class group. So if you insist on having `QQ` as default I will give up, but I still will think that it should be `ZZ` ;-)",
+    "created_at": "2010-09-05T17:42:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88205",
+    "user": "novoselt"
+}
+```
 
 1. OK, let it stay `Kaehler_cone`!
 
- 3. Well, how about `cohomology -> cohomology_dim`? While it clear from the documentation what it returns and how to use it, it is still inconsistent with other uses of `(co)homology`, i.e. in simplicial complexes.
+   3. Well, how about `cohomology -> cohomology_dim`? While it clear from the documentation what it returns and how to use it, it is still inconsistent with other uses of `(co)homology`, i.e. in simplicial complexes.
 
- 8. I think integral class group is at least as useful as rational, since it contains all information about the latter, so if we did have it, it would be great, and it is conceivable that someone will eventually implement it. At the present state forcing users to write `class_group(QQ)` instead of `class_group()` is more consistent with the usual mathematical definition of the class group. So if you insist on having `QQ` as default I will give up, but I still will think that it should be `ZZ` ;-)
+   8. I think integral class group is at least as useful as rational, since it contains all information about the latter, so if we did have it, it would be great, and it is conceivable that someone will eventually implement it. At the present state forcing users to write `class_group(QQ)` instead of `class_group()` is more consistent with the usual mathematical definition of the class group. So if you insist on having `QQ` as default I will give up, but I still will think that it should be `ZZ` ;-)
+
 
 
 ---
 
-Comment by vbraun created at 2010-09-05 20:15:04
+archive/issue_comments_088206.json:
+```json
+{
+    "body": "3. I think we should only introduce a `cohomology_dim` if there is already a `cohomology` method, and there isn't. The difference with simplicial complexes is, of course, that their cohomology (over `ZZ`) potentially contains torsion and, therefore, cannot be specified by just an integer.\n\n   8. The toric Chow group (the subsequent patch) contains the integral class group, so the functionality is already there. The raison d'etre of `ToricRationalDivisorClass` is to provide a parent for Kahler cones.",
+    "created_at": "2010-09-05T20:15:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88206",
+    "user": "vbraun"
+}
+```
 
 3. I think we should only introduce a `cohomology_dim` if there is already a `cohomology` method, and there isn't. The difference with simplicial complexes is, of course, that their cohomology (over `ZZ`) potentially contains torsion and, therefore, cannot be specified by just an integer.
 
-  8. The toric Chow group (the subsequent patch) contains the integral class group, so the functionality is already there. The raison d'etre of `ToricRationalDivisorClass` is to provide a parent for Kahler cones.
+   8. The toric Chow group (the subsequent patch) contains the integral class group, so the functionality is already there. The raison d'etre of `ToricRationalDivisorClass` is to provide a parent for Kahler cones.
+
 
 
 ---
+
+archive/issue_comments_088207.json:
+```json
+{
+    "body": "Attachment\n\nUpdated version",
+    "created_at": "2010-09-06T17:55:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88207",
+    "user": "novoselt"
+}
+```
 
 Attachment
 
 Updated version
 
 
+
 ---
 
-Comment by novoselt created at 2010-09-06 18:09:15
+archive/issue_comments_088208.json:
+```json
+{
+    "body": "Changing status from needs_info to needs_work.",
+    "created_at": "2010-09-06T18:09:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88208",
+    "user": "novoselt"
+}
+```
 
 Changing status from needs_info to needs_work.
 
 
+
 ---
 
-Comment by novoselt created at 2010-09-06 18:09:15
+archive/issue_comments_088209.json:
+```json
+{
+    "body": "3. When there is a cohomology method that returns groups, it will be too late to rename the current version, since it will break backward compatibility ;-)\n\n   8. Then I definitely think that we should have a method `class_group()` returning the honest class group, while the rational one should be obtained either as `rational_class_group()` or `class_group(QQ)`...\n\nAnyway, the updated patch deals with everything discussed above except for 4 (which I would like you to do on top) and these two issues, which you can change or leave as is, if I still have not convinced you.\n\nFrom the technical point of view it seems that everything is working fine with my new patch. I will run tests of the whole library, build pdf documentation and report if there are any issues.",
+    "created_at": "2010-09-06T18:09:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88209",
+    "user": "novoselt"
+}
+```
 
 3. When there is a cohomology method that returns groups, it will be too late to rename the current version, since it will break backward compatibility ;-)
 
- 8. Then I definitely think that we should have a method `class_group()` returning the honest class group, while the rational one should be obtained either as `rational_class_group()` or `class_group(QQ)`...
+   8. Then I definitely think that we should have a method `class_group()` returning the honest class group, while the rational one should be obtained either as `rational_class_group()` or `class_group(QQ)`...
 
 Anyway, the updated patch deals with everything discussed above except for 4 (which I would like you to do on top) and these two issues, which you can change or leave as is, if I still have not convinced you.
 
 From the technical point of view it seems that everything is working fine with my new patch. I will run tests of the whole library, build pdf documentation and report if there are any issues.
 
 
+
 ---
 
-Comment by vbraun created at 2010-09-07 12:08:10
+archive/issue_comments_088210.json:
+```json
+{
+    "body": "Here is my final patch :-)\n\n* Polyhedron can now determine integral points in not necessarily integral polytopes.\n* Used this to extend cohomology computation to reflexive sheaves.\n* Renamed `ToricDivisor.polytope()` to `polyhedron()` since its not a lattice polytope in general.\n* Documentation added to cohomology algorithm.\n* Output of `ToricDivisor.cohomology()` is now analogous to the output of `SimplicialComplex.homology()`\n* renamed `ToricVariety.divisor_class_group()` to `rational_class_group()`",
+    "created_at": "2010-09-07T12:08:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88210",
+    "user": "vbraun"
+}
+```
 
 Here is my final patch :-)
 
-  * Polyhedron can now determine integral points in not necessarily integral polytopes.
-  * Used this to extend cohomology computation to reflexive sheaves.
-  * Renamed `ToricDivisor.polytope()` to `polyhedron()` since its not a lattice polytope in general.
-  * Documentation added to cohomology algorithm.
-  * Output of `ToricDivisor.cohomology()` is now analogous to the output of `SimplicialComplex.homology()`
-  * renamed `ToricVariety.divisor_class_group()` to `rational_class_group()`
+* Polyhedron can now determine integral points in not necessarily integral polytopes.
+* Used this to extend cohomology computation to reflexive sheaves.
+* Renamed `ToricDivisor.polytope()` to `polyhedron()` since its not a lattice polytope in general.
+* Documentation added to cohomology algorithm.
+* Output of `ToricDivisor.cohomology()` is now analogous to the output of `SimplicialComplex.homology()`
+* renamed `ToricVariety.divisor_class_group()` to `rational_class_group()`
+
 
 
 ---
 
-Comment by novoselt created at 2010-09-07 21:46:42
+archive/issue_comments_088211.json:
+```json
+{
+    "body": "Awesome!!! I am pretty sure this will be the final patch, although it is not yet in its final shape ;-)\n\n1. Converting back and forth between `Polyhedron` and `LatticePolytope` is something we always had to have and it is a bit surprising that nobody has done it before. Constructing a containing lattice polytope is also quite useful, but can we change the behaviour a little bit? I propose the following:\n   * `is_lattice_polytope()` works exactly as now;\n   * `lattice_polytope()` raises a `ValueError` exception if the polyhedron is not compact OR has non-integral vertices (it is not `NotImplemented` because lattice polytopes must be compact and have only integral vertices by definition);\n   * `enveloping_lattice_polytope()` raises a `ValueError` if the polyhedron is not compact, but otherwise wraps vertices in integral boxes, as it is done now in `lattice_polytope`. Alternatively, `lattice_polytope` function may take some argument that will allow it to construct a polytope which is strictly bigger, e.g. `lattice_polytope(envelope=True)`.\n2. Can you please revert changes that this patch makes in `coefficient` and add the following to its doctest:\n {{{\nsage: P2 = toric_varieties.P2()\nsage: P2.inject_variables()\nDefining x, y, z\nsage: D = P2.divisor([(1,x), (1,x)])\nsage: D\nV(x) + V(x)\nsage: D.coefficient(x)\n1\n}}}\n Note that the output should be 2, not 1, and while nobody is likely to enter divisors in such a weird form, it is conceivable that some code will generate non-reduced divisors.\n1. The same issue makes your code in the new `is_integral` function behave inconsistently:\n {{{\nsage: D = P2.divisor([(1/2,x), (1/2,x)])\nsage: D\n1/2*V(x) + 1/2*V(x)\nsage: D.is_integral()\nFalse\nsage: D.reduce()\nsage: D.is_integral()\nTrue\n}}}\n I would suggest that this function should try to convert the divisor to a `ZZ`-vector to check if it is integral or not (calling `coefficient` for every variable will iterate over divisor again and again). Note that `_vector_` also does not work nicely: if you call `vector(ZZ, D)` before reducing, you will get an error. The solution is to first create just a list of zeroes in `_vector_`, accumulate coefficient values in one iteration through divisor, and then convert this list to a vector. It also seems to me that the best way to address non-reduced divisors in `coefficient` is to `return vector(self)[index]` to avoid code duplication.\n1. You should not have added `Group` on line 1024. If it is not clear in that sentence that this Python-class refers to the divisor-class (and not the group of these classes), the sentence has to be restructured. Thanks for catching \"::\"!\n2. Should we maybe make `_sheaf_cohomology_support` a public method? It seems to me that it is something end-users may care about, at least for educational purposes.",
+    "created_at": "2010-09-07T21:46:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88211",
+    "user": "novoselt"
+}
+```
 
 Awesome!!! I am pretty sure this will be the final patch, although it is not yet in its final shape ;-)
 
- 1. Converting back and forth between `Polyhedron` and `LatticePolytope` is something we always had to have and it is a bit surprising that nobody has done it before. Constructing a containing lattice polytope is also quite useful, but can we change the behaviour a little bit? I propose the following:
-  * `is_lattice_polytope()` works exactly as now;
-  * `lattice_polytope()` raises a `ValueError` exception if the polyhedron is not compact OR has non-integral vertices (it is not `NotImplemented` because lattice polytopes must be compact and have only integral vertices by definition);
-  * `enveloping_lattice_polytope()` raises a `ValueError` if the polyhedron is not compact, but otherwise wraps vertices in integral boxes, as it is done now in `lattice_polytope`. Alternatively, `lattice_polytope` function may take some argument that will allow it to construct a polytope which is strictly bigger, e.g. `lattice_polytope(envelope=True)`.
- 1. Can you please revert changes that this patch makes in `coefficient` and add the following to its doctest:
+1. Converting back and forth between `Polyhedron` and `LatticePolytope` is something we always had to have and it is a bit surprising that nobody has done it before. Constructing a containing lattice polytope is also quite useful, but can we change the behaviour a little bit? I propose the following:
+   * `is_lattice_polytope()` works exactly as now;
+   * `lattice_polytope()` raises a `ValueError` exception if the polyhedron is not compact OR has non-integral vertices (it is not `NotImplemented` because lattice polytopes must be compact and have only integral vertices by definition);
+   * `enveloping_lattice_polytope()` raises a `ValueError` if the polyhedron is not compact, but otherwise wraps vertices in integral boxes, as it is done now in `lattice_polytope`. Alternatively, `lattice_polytope` function may take some argument that will allow it to construct a polytope which is strictly bigger, e.g. `lattice_polytope(envelope=True)`.
+2. Can you please revert changes that this patch makes in `coefficient` and add the following to its doctest:
  {{{
 sage: P2 = toric_varieties.P2()
 sage: P2.inject_variables()
@@ -791,7 +1424,7 @@ sage: D.coefficient(x)
 1
 }}}
  Note that the output should be 2, not 1, and while nobody is likely to enter divisors in such a weird form, it is conceivable that some code will generate non-reduced divisors.
- 1. The same issue makes your code in the new `is_integral` function behave inconsistently:
+1. The same issue makes your code in the new `is_integral` function behave inconsistently:
  {{{
 sage: D = P2.divisor([(1/2,x), (1/2,x)])
 sage: D
@@ -803,29 +1436,51 @@ sage: D.is_integral()
 True
 }}}
  I would suggest that this function should try to convert the divisor to a `ZZ`-vector to check if it is integral or not (calling `coefficient` for every variable will iterate over divisor again and again). Note that `_vector_` also does not work nicely: if you call `vector(ZZ, D)` before reducing, you will get an error. The solution is to first create just a list of zeroes in `_vector_`, accumulate coefficient values in one iteration through divisor, and then convert this list to a vector. It also seems to me that the best way to address non-reduced divisors in `coefficient` is to `return vector(self)[index]` to avoid code duplication.
- 1. You should not have added `Group` on line 1024. If it is not clear in that sentence that this Python-class refers to the divisor-class (and not the group of these classes), the sentence has to be restructured. Thanks for catching "::"!
- 1. Should we maybe make `_sheaf_cohomology_support` a public method? It seems to me that it is something end-users may care about, at least for educational purposes.
+1. You should not have added `Group` on line 1024. If it is not clear in that sentence that this Python-class refers to the divisor-class (and not the group of these classes), the sentence has to be restructured. Thanks for catching "::"!
+2. Should we maybe make `_sheaf_cohomology_support` a public method? It seems to me that it is something end-users may care about, at least for educational purposes.
+
 
 
 ---
 
-Comment by vbraun created at 2010-09-08 12:26:39
+archive/issue_comments_088212.json:
+```json
+{
+    "body": "1. I had thought about this and the canonical thing to do is to enlarge the polytope to a lattice polytope (try to e.g. shrink it to the contained lattice polytope without dualizing twice in the process). So the current behaviour is fine. I definitely don't want multiple `something_lattice_polytope()` methods. We could add an optional parameter `def lattice_polytope(envelope=True):` (note: default should be the most useful option), but then you could always add that later on without breaking the current API.\n\n   2. 3. Divisors constructed manually shall always be reduced. The short-circuit is only for internal use in case you know already that the input is reduced. I'll fix the bug in `ToricVariety.divisor()` and `ToricDivisor_generic` that sets `reduce=False` erroneously.\n\n   4. Done\n\n   5. I'll add a `cohomology_support()` method that computes the actual support and not just a sufficiently large region.",
+    "created_at": "2010-09-08T12:26:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88212",
+    "user": "vbraun"
+}
+```
 
 1. I had thought about this and the canonical thing to do is to enlarge the polytope to a lattice polytope (try to e.g. shrink it to the contained lattice polytope without dualizing twice in the process). So the current behaviour is fine. I definitely don't want multiple `something_lattice_polytope()` methods. We could add an optional parameter `def lattice_polytope(envelope=True):` (note: default should be the most useful option), but then you could always add that later on without breaking the current API.
 
-  2. 3. Divisors constructed manually shall always be reduced. The short-circuit is only for internal use in case you know already that the input is reduced. I'll fix the bug in `ToricVariety.divisor()` and `ToricDivisor_generic` that sets `reduce=False` erroneously.
+   2. 3. Divisors constructed manually shall always be reduced. The short-circuit is only for internal use in case you know already that the input is reduced. I'll fix the bug in `ToricVariety.divisor()` and `ToricDivisor_generic` that sets `reduce=False` erroneously.
 
-  4. Done
+   4. Done
 
-  5. I'll add a `cohomology_support()` method that computes the actual support and not just a sufficiently large region.
+   5. I'll add a `cohomology_support()` method that computes the actual support and not just a sufficiently large region.
+
 
 
 ---
 
-Comment by novoselt created at 2010-09-08 15:54:36
+archive/issue_comments_088213.json:
+```json
+{
+    "body": "1. I agree that `lattice_polytope` should return something canonical. However enlarging is definitely not unique and therefore cannot be canonical. For example, take a polytope consisting of a single point 1/2 in a 1-d space. Your method of enveloping will turn it into `[0,1]`, bumping up the dimension. Now take a point (1/2, 1/2) in a 2-d space. Your method will turn it into a square `[0,1]x[0,1]`. Why not a line segment from (0,0) to (1,1)? I also think that the following two blocks should be equivalent:\n   {{{\nsage: if p.is_lattice_polytope():\n...       lp = p.lattice_polytope()\n}}}\n and\n {{{\nsage: try:\n...       lp = p.lattice_polytope()\n...   except ValueError:\n...      pass\n}}}\n And while for finding integral points inside a polyhedron constructing an envelope is the most useful option, in general I think I would want to convert a polyhedron to a lattice polytope only if I was getting the same mathematical object. Therefore, if my code tries to perform the conversion without any checks, it should mean that I know that the polytope in question is a lattice one and if this is not the case I would like to see and exception, so that I can fix the bug. Envelope can have different dimension, different facet normals, and, ultimately, completely different face structure. So I think that NOT constructing an envelope is actually the most useful option, as well as the most transparent one. If you disagree with these arguments we should bring it up on sage-devel and I promise to conform with the majority ;-)",
+    "created_at": "2010-09-08T15:54:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88213",
+    "user": "novoselt"
+}
+```
 
 1. I agree that `lattice_polytope` should return something canonical. However enlarging is definitely not unique and therefore cannot be canonical. For example, take a polytope consisting of a single point 1/2 in a 1-d space. Your method of enveloping will turn it into `[0,1]`, bumping up the dimension. Now take a point (1/2, 1/2) in a 2-d space. Your method will turn it into a square `[0,1]x[0,1]`. Why not a line segment from (0,0) to (1,1)? I also think that the following two blocks should be equivalent:
- {{{
+   {{{
 sage: if p.is_lattice_polytope():
 ...       lp = p.lattice_polytope()
 }}}
@@ -839,16 +1494,38 @@ sage: try:
  And while for finding integral points inside a polyhedron constructing an envelope is the most useful option, in general I think I would want to convert a polyhedron to a lattice polytope only if I was getting the same mathematical object. Therefore, if my code tries to perform the conversion without any checks, it should mean that I know that the polytope in question is a lattice one and if this is not the case I would like to see and exception, so that I can fix the bug. Envelope can have different dimension, different facet normals, and, ultimately, completely different face structure. So I think that NOT constructing an envelope is actually the most useful option, as well as the most transparent one. If you disagree with these arguments we should bring it up on sage-devel and I promise to conform with the majority ;-)
 
 
+
 ---
 
-Comment by vbraun created at 2010-09-08 16:19:30
+archive/issue_comments_088214.json:
+```json
+{
+    "body": "I didn't say that enlarging is unique, but that it is the only meaningful option. If it makes you happy then I'll rename `lattice_polytope()` to `enveloping_lattice_polytope()` but then I'm against having a `lattice_polytope()` since it adds no useful functionality while cluttering the namespace. Your example of two equivalent code blocks is precisely what should be avoided: two competing ways of getting the desired result. There should be one, and preferably only one, obvious way to do it.",
+    "created_at": "2010-09-08T16:19:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88214",
+    "user": "vbraun"
+}
+```
 
 I didn't say that enlarging is unique, but that it is the only meaningful option. If it makes you happy then I'll rename `lattice_polytope()` to `enveloping_lattice_polytope()` but then I'm against having a `lattice_polytope()` since it adds no useful functionality while cluttering the namespace. Your example of two equivalent code blocks is precisely what should be avoided: two competing ways of getting the desired result. There should be one, and preferably only one, obvious way to do it.
 
 
+
 ---
 
-Comment by novoselt created at 2010-09-08 16:38:30
+archive/issue_comments_088215.json:
+```json
+{
+    "body": "`def lattice_polytope(envelope=False)` will make me most happy, but `enveloping_lattice_polytope` is a compromise ;-)\n\nIt is almost always possible to rewrite code that uses exception into code that uses conditional statements, I think it has more to do with the developer's taste. So I don't think that it is necessarily bad when there are several options to get the same result (that may actually help in checking results). Note also this behaviour:\n\n```\nsage: a = 1/2\nsage: a.is_integral()\nFalse\nsage: Integer(a)\nTypeError: no conversion of this rational to integer\n```\n\nand the last line was actually `a._integer_()`, as I understand it. So if the check for integrality returns False, the conversion fails as well, even though it is possible to agree on some kind of rounding and argue that when someone writes `Integer(a)`, then (s)he wants to get back some integer related to `a`, even if it is not quite `a`.",
+    "created_at": "2010-09-08T16:38:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88215",
+    "user": "novoselt"
+}
+```
 
 `def lattice_polytope(envelope=False)` will make me most happy, but `enveloping_lattice_polytope` is a compromise ;-)
 
@@ -865,23 +1542,56 @@ TypeError: no conversion of this rational to integer
 and the last line was actually `a._integer_()`, as I understand it. So if the check for integrality returns False, the conversion fails as well, even though it is possible to agree on some kind of rounding and argue that when someone writes `Integer(a)`, then (s)he wants to get back some integer related to `a`, even if it is not quite `a`.
 
 
+
 ---
 
-Comment by vbraun created at 2010-09-08 17:42:41
+archive/issue_comments_088216.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-09-08T17:42:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88216",
+    "user": "vbraun"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by vbraun created at 2010-09-08 17:42:41
+archive/issue_comments_088217.json:
+```json
+{
+    "body": "Fine, `def lattice_polytope(envelope=False)` it is.",
+    "created_at": "2010-09-08T17:42:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88217",
+    "user": "vbraun"
+}
+```
 
 Fine, `def lattice_polytope(envelope=False)` it is.
 
 
+
 ---
 
-Comment by novoselt created at 2010-09-09 04:06:08
+archive/issue_comments_088218.json:
+```json
+{
+    "body": "Thank you! ;-)\n\nWith the new patch:\n\n```\n\tsage -t  devel/sage-main/sage/modular/abvar/abvar.py # 4 doctests failed\n\tsage -t  devel/sage-main/sage/modular/modsym/ambient.py # 13 doctests failed\n\tsage -t  devel/sage-main/sage/modular/modform/element.py # 7 doctests failed\n\tsage -t  devel/sage-main/sage/modular/hecke/submodule.py # 1 doctests failed\n\tsage -t  devel/sage-main/sage/modular/hecke/module.py # 7 doctests failed\n\tsage -t  devel/sage-main/sage/tests/book_stein_modform.py # 3 doctests failed\n\tsage -t  devel/sage-main/sage/algebras/group_algebra.py # 10 doctests failed\n\tsage -t  devel/sage-main/doc/en/bordeaux_2008/l_series.rst # 3 doctests failed\n\tsage -t  devel/sage-main/sage/modular/modsym/manin_symbols.py # 1 doctests failed\n\tsage -t  devel/sage-main/sage/modular/modsym/element.py # 5 doctests failed\n\tsage -t  devel/sage-main/sage/modular/modsym/modular_symbols.py # 55 doctests failed\n\tsage -t  devel/sage-main/doc/en/bordeaux_2008/modular_symbols.rst # 1 doctests failed\n```\n\nI am a bit hesitant to prohibit using non-reduced formal sums and divisors. It may make sense for toric divisors, but perhaps in other cases people don't want to force reduce representation (otherwise, what's the point of having a public `reduce` method?). So I think it would be better to stick with fixes to toric modules. In any case existing doctests in the above files should not fail because of modifications on this ticket.",
+    "created_at": "2010-09-09T04:06:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88218",
+    "user": "novoselt"
+}
+```
 
 Thank you! ;-)
 
@@ -905,16 +1615,38 @@ With the new patch:
 I am a bit hesitant to prohibit using non-reduced formal sums and divisors. It may make sense for toric divisors, but perhaps in other cases people don't want to force reduce representation (otherwise, what's the point of having a public `reduce` method?). So I think it would be better to stick with fixes to toric modules. In any case existing doctests in the above files should not fail because of modifications on this ticket.
 
 
+
 ---
 
-Comment by novoselt created at 2010-09-09 04:06:08
+archive/issue_comments_088219.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-09-09T04:06:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88219",
+    "user": "novoselt"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by vbraun created at 2010-09-09 11:54:39
+archive/issue_comments_088220.json:
+```json
+{
+    "body": "I fixed the doctests, that was just a minor issue. Thanks for catching it!\n\nThe divisor code already assumes at places that the divisor is reduced (we should probably call this \"collected\", but I'll stick with it for now), for example in the original code to extract the coefficient. In general I think allowing unreduced divisors is going to be a huge pitfall for future contributors as well as a performance impediment. If one really wanted non-reduced divisors then one needs a flag to remember whether one already did the reduction to avoid doing it over and over. On a final word of warning:\n\n```\nsage: FormalSum([[1,2],[1,2]],reduce=False) == FormalSum([[2,2]])\nFalse\n```\n\n\nThe `reduce()` method is inherited from `FormalSum`, there is nothing more to it. We could add a base class `ReducedFormalSum` without this method if it bugs you, but I think thats not worth the effort.",
+    "created_at": "2010-09-09T11:54:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88220",
+    "user": "vbraun"
+}
+```
 
 I fixed the doctests, that was just a minor issue. Thanks for catching it!
 
@@ -929,45 +1661,102 @@ False
 The `reduce()` method is inherited from `FormalSum`, there is nothing more to it. We could add a base class `ReducedFormalSum` without this method if it bugs you, but I think thats not worth the effort.
 
 
+
 ---
 
-Comment by vbraun created at 2010-09-09 11:54:39
+archive/issue_comments_088221.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-09-09T11:54:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88221",
+    "user": "vbraun"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
+
+archive/issue_comments_088222.json:
+```json
+{
+    "body": "Attachment\n\nUpdated patch",
+    "created_at": "2010-09-09T11:55:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88222",
+    "user": "vbraun"
+}
+```
 
 Attachment
 
 Updated patch
 
 
+
 ---
 
-Comment by novoselt created at 2010-09-10 02:45:47
+archive/issue_comments_088223.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-09-10T02:45:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88223",
+    "user": "novoselt"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by novoselt created at 2010-09-10 02:45:47
+archive/issue_comments_088224.json:
+```json
+{
+    "body": "Positive review! Thanks for satisfying my requests so patiently!\n\nFor the release manager: please apply patches in the following order:\n1. [attachment:trac_9337_divisor_superclasses_fixes.patch]\n2. [attachment:trac_9337_toric_divisors.patch]\n3. [attachment:trac_9337_toric_divisors_reviewer.patch]\n4. [attachment:trac_9337_toric_divisor_classes.patch]\n5. [attachment:trac_9337_line_bundle_cohomology.patch]\n6. [attachment:trac_9337_classes_and_cohomology_reviewer.patch]\n7. [attachment:trac_9337_final.patch]",
+    "created_at": "2010-09-10T02:45:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88224",
+    "user": "novoselt"
+}
+```
 
 Positive review! Thanks for satisfying my requests so patiently!
 
 For the release manager: please apply patches in the following order:
- 1. [attachment:trac_9337_divisor_superclasses_fixes.patch]
- 1. [attachment:trac_9337_toric_divisors.patch]
- 1. [attachment:trac_9337_toric_divisors_reviewer.patch]
- 1. [attachment:trac_9337_toric_divisor_classes.patch]
- 1. [attachment:trac_9337_line_bundle_cohomology.patch]
- 1. [attachment:trac_9337_classes_and_cohomology_reviewer.patch]
- 1. [attachment:trac_9337_final.patch]
+1. [attachment:trac_9337_divisor_superclasses_fixes.patch]
+2. [attachment:trac_9337_toric_divisors.patch]
+3. [attachment:trac_9337_toric_divisors_reviewer.patch]
+4. [attachment:trac_9337_toric_divisor_classes.patch]
+5. [attachment:trac_9337_line_bundle_cohomology.patch]
+6. [attachment:trac_9337_classes_and_cohomology_reviewer.patch]
+7. [attachment:trac_9337_final.patch]
+
 
 
 ---
 
-Comment by mpatel created at 2010-09-15 09:58:22
+archive/issue_comments_088225.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-09-15T09:58:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9337",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9337#issuecomment-88225",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed

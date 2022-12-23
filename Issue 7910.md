@@ -1,11 +1,21 @@
 # Issue 7910: mpir.1.2.2 fails to build on Open Solaris 06/2009 in VirtualBox no ABI=64
 
-Issue created by migration from https://trac.sagemath.org/ticket/7910
-
-Original creator: jsp
-
-Original creation time: 2010-01-12 16:32:08
-
+archive/issues_007910.json:
+```json
+{
+    "body": "Assignee: GeorgSWeber\n\nCC:  drkirkby goodwillhart@googlemail.com\n\nKeywords: mpir Open Solaris\n\nFrom sage-devel:\n\n\n```\nIn Open Solaris in my VirtualBox running under Fedora 12 64 bit on an Intel i7 860:\n\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS opensolaris 5.11 snv_111b i86pc i386 i86pc Solaris\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: i386-pc-solaris2.11\nConfigured with: ../gcc-4.3.4/configure --prefix=/usr/local/gcc-4.3.4-GNU-assembler-Sun-linker --with-as=/usr/local/binutils-2.20/bin/as --with-ld=/usr/ccs/bin/ld --with-gmp=/usr/local --with-mpfr=/usr/local\nThread model: posix\ngcc version 4.3.4 (GCC)\n****************************************************\nBuilding 64 bit Solaris version\nchecking build system type... i486-pc-solaris2.11\nchecking host system type... i486-pc-solaris2.11\nchecking for a BSD-compatible install... /export/home/jaap/sage-bin/install -c\nchecking whether build environment is sane... yes\nchecking for gawk... gawk\nchecking whether make sets $(MAKE)... yes\nchecking whether to enable maintainer-specific portions of Makefiles... no\nconfigure: error: ABI=64 is not among the following valid choices: 32\nFailed to configure.\n\nreal    0m1.743s\nuser    0m0.190s\nsys     0m0.466s\nsage: An error occurred while installing mpir-1.2.2\n\nWhile building the following SAGE related exports are set:\nsage subshell$ env | grep SAGE\nSAGE_SERVER=http://www.sagemath.org/\nSAGE_ORIG_LD_LIBRARY_PATH_SET=True\nSAGE_DATA=/export/home/jaap/Downloads/sage-4.3.1.alpha1/data\nDOT_SAGE=/export/home/jaap/.sage/\nSAGE_LOCAL=/export/home/jaap/Downloads/sage-4.3.1.alpha1/local\nSAGE_STARTUP_FILE=/export/home/jaap/.sage//init.sage\nLC_MESSAGES=en_US.UTF-8\nSAGE_ROOT=/export/home/jaap/Downloads/sage-4.3.1.alpha1\nSAGE_PACKAGES=/export/home/jaap/Downloads/sage-4.3.1.alpha1/spkg\nSAGE_ORIG_LD_LIBRARY_PATH=\nSAGE_DOC=/export/home/jaap/Downloads/sage-4.3.1.alpha1/devel/sage/doc\nSAGE_TESTDIR=/export/home/jaap/.sage//tmp\nSAGE64=yes\n/export/home/jaap/Downloads/sage-4.3.1.alpha1\nsage subshell$ env | grep FLAG\nLDFLAGS=\nFCFLAG64=-m64\nSHARED_FLAG=-shared\nCXXFLAGS= -Wall -g -m64\nFCFLAGS= -Wall -g -m64\nSONAME_FLAG=-soname\nCFLAGS= -Wall -g -m64\nWHOLE_ARCHIVE_FLAG=--whole-archive\nNO_WHOLE_ARCHIVE_FLAG=--no-whole-archive\nCXXFLAG64=-m64\nFPIC_FLAG=-fPIC\nCFLAG64=-m64\n\nI understand that FLAGS are not so relevant while building mpir.\n\n\nThe same Open Solaris on Dave Kirkby's box:\n\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS hawk 5.11 snv_111b i86pc i386 i86pc Solaris\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: i386-pc-solaris2.11\nConfigured with: ../gcc-4.3.4/configure --prefix=/usr/local/gcc-4.3.4-GNU-assembler-Sun-linker --with-as=/usr/local/binutils-2.20/bin/as --with-ld=/usr/ccs/bin/ld --with-gmp=/usr/local --with-mpfr=/usr/local\nThread model: posix\ngcc version 4.3.4 (GCC)\n****************************************************\nBuilding 64 bit Solaris version\nchecking build system type... nehalem-pc-solaris2.11\nchecking host system type... nehalem-pc-solaris2.11\nchecking for a BSD-compatible install... /usr/bin/ginstall -c\nchecking whether build environment is sane... yes\nchecking for gawk... gawk\nchecking whether make sets $(MAKE)... yes\nchecking whether to enable maintainer-specific portions of Makefiles... no\nchecking ABI=64\nchecking compiler gcc  -Wall -g -m64 -Wall -g -m64 ... yes\nchecking for gcc... gcc\nchecking for C compiler default output file name... a.out\n\nThe build seems to work.\n\nHelp needed! Bill? \n```\n\n\nJaap\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7910\n\n",
+    "created_at": "2010-01-12T16:32:08Z",
+    "labels": [
+        "build",
+        "major",
+        "bug"
+    ],
+    "title": "mpir.1.2.2 fails to build on Open Solaris 06/2009 in VirtualBox no ABI=64",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7910",
+    "user": "jsp"
+}
+```
 Assignee: GeorgSWeber
 
 CC:  drkirkby goodwillhart@googlemail.com
@@ -121,10 +131,25 @@ Help needed! Bill?
 Jaap
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7910
+
+
+
+
 
 ---
 
-Comment by drkirkby created at 2010-01-13 02:38:53
+archive/issue_comments_068787.json:
+```json
+{
+    "body": "Note Bill Hart said on sage-devel that your CPU is being mis-detected, as MPIR believes it is a 486 and there are of course no 64-bit 486's, which why it obviously does not offer a 64-bit ABI. \n\n\n```\nchecking build system type... i486-pc-solaris2.11\nchecking host system type... i486-pc-solaris2.11 \n```\n\nwhereas on my system (a Xeon based machine)\n\n\n```\nchecking build system type... nehalem-pc-solaris2.11\nchecking host system type... nehalem-pc-solaris2.11 \n```\n\n\nIf this an autoconf macro, then perhaps the autoconf mailing list might be helpful. \n\nDave",
+    "created_at": "2010-01-13T02:38:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7910",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7910#issuecomment-68787",
+    "user": "drkirkby"
+}
+```
 
 Note Bill Hart said on sage-devel that your CPU is being mis-detected, as MPIR believes it is a 486 and there are of course no 64-bit 486's, which why it obviously does not offer a 64-bit ABI. 
 
@@ -148,9 +173,20 @@ If this an autoconf macro, then perhaps the autoconf mailing list might be helpf
 Dave
 
 
+
 ---
 
-Comment by jsp created at 2010-01-13 10:40:18
+archive/issue_comments_068788.json:
+```json
+{
+    "body": "\n```\njaap@opensolaris:~/Downloads/sage-4.3.1.alpha1$ /usr/sbin/psrinfo -v\nStatus of virtual processor 0 as of: 01/13/2010 11:25:49\n  on-line since 01/12/2010 05:53:06.\n  The i386 processor operates at 2780 MHz,\n    and has an i387 compatible floating point processor.\nStatus of virtual processor 1 as of: 01/13/2010 11:25:49\n  on-line since 01/12/2010 05:53:09.\n  The i386 processor operates at 2780 MHz,\n    and has an i387 compatible floating point processor.\njaap@opensolaris:~/Downloads/sage-4.3.1.alpha1$\n\nThis is in VirtualBox, so virtual processors?\n\nBut I have built dozens of ELF 64 programs!\n\n```\n\n\nJaap",
+    "created_at": "2010-01-13T10:40:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7910",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7910#issuecomment-68788",
+    "user": "jsp"
+}
+```
 
 
 ```
@@ -175,9 +211,20 @@ But I have built dozens of ELF 64 programs!
 Jaap
 
 
+
 ---
 
-Comment by jsp created at 2010-01-13 10:58:45
+archive/issue_comments_068789.json:
+```json
+{
+    "body": "Replying to [comment:2 jsp]:\n\n```\n> \n> {{{\n> jaap@opensolaris:~/Downloads/sage-4.3.1.alpha1$ /usr/sbin/psrinfo -v\n> Status of virtual processor 0 as of: 01/13/2010 11:25:49\n>   on-line since 01/12/2010 05:53:06.\n>   The i386 processor operates at 2780 MHz,\n>     and has an i387 compatible floating point processor.\n> Status of virtual processor 1 as of: 01/13/2010 11:25:49\n>   on-line since 01/12/2010 05:53:09.\n>   The i386 processor operates at 2780 MHz,\n>     and has an i387 compatible floating point processor.\n> jaap@opensolaris:~/Downloads/sage-4.3.1.alpha1$\n> \n> This is in VirtualBox, so virtual processors?\n> \n```\n\n\nNo on Fedora in VirtualBox the real thing seems to be recognized:\n\n\n\n```\n[jaap@pace ~]$ cat /proc/cpuinfo\nprocessor\t: 0\nvendor_id\t: GenuineIntel\ncpu family\t: 6\nmodel\t\t: 30\nmodel name\t: Intel(R) Core(TM) i7 CPU         860  @ 2.80GHz\nstepping\t: 5\ncpu MHz\t\t: 2949.200\ncache size\t: 0 KB\nphysical id\t: 0\nsiblings\t: 2\ncore id\t\t: 0\ncpu cores\t: 2\napicid\t\t: 0\ninitial apicid\t: 0\nfdiv_bug\t: no\nhlt_bug\t\t: no\nf00f_bug\t: no\ncoma_bug\t: no\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 5\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx lm constant_tsc pni lahf_lm\nbogomips\t: 5898.40\nclflush size\t: 64\npower management:\n\nprocessor\t: 1\nvendor_id\t: GenuineIntel\ncpu family\t: 6\nmodel\t\t: 30\nmodel name\t: Intel(R) Core(TM) i7 CPU         860  @ 2.80GHz\nstepping\t: 5\ncpu MHz\t\t: 2949.200\ncache size\t: 0 KB\nphysical id\t: 0\nsiblings\t: 2\ncore id\t\t: 1\ncpu cores\t: 2\napicid\t\t: 1\ninitial apicid\t: 1\nfdiv_bug\t: no\nhlt_bug\t\t: no\nf00f_bug\t: no\ncoma_bug\t: no\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 5\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx lm constant_tsc pni lahf_lm\nbogomips\t: 6129.93\nclflush size\t: 64\npower management:\n\n\n```\n\n\nJaap",
+    "created_at": "2010-01-13T10:58:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7910",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7910#issuecomment-68789",
+    "user": "jsp"
+}
+```
 
 Replying to [comment:2 jsp]:
 
@@ -267,9 +314,20 @@ power management:
 Jaap
 
 
+
 ---
 
-Comment by jsp created at 2010-01-13 11:08:00
+archive/issue_comments_068790.json:
+```json
+{
+    "body": "mpir-1.2.2 in Fedora 12:\n\n\n\n```\ngcc version 4.4.2 20091027 (Red Hat 4.4.2-7) (GCC)\n****************************************************\nchecking build system type... i486-pc-linux-gnu\nchecking host system type... i486-pc-linux-gnu\nchecking for a BSD-compatible install... /usr/bin/install -c\nchecking whether build environment is sane... yes\nchecking for gawk... gawk\nchecking whether make sets $(MAKE)... yes\nchecking whether to enable maintainer-specific portions of Makefiles... no\nchecking ABI=32\nchecking compiler gcc -m32 -O2 -fomit-frame-pointer ... yes\nchecking compiler gcc -m32 -O2 -fomit-frame-pointer has sizeof(long)==4... yes\nchecking compiler gcc -m32 -O2 -fomit-frame-pointer  -mtune=i486... yes\nchecking compiler gcc -m32 -O2 -fomit-frame-pointer -mtune=i486  -march=i486... yes\nchecking for gcc... gcc\n\n```\n\n\nSo it looks like mpir finds a 486!\n\nJaap",
+    "created_at": "2010-01-13T11:08:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7910",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7910#issuecomment-68790",
+    "user": "jsp"
+}
+```
 
 mpir-1.2.2 in Fedora 12:
 
@@ -300,9 +358,20 @@ So it looks like mpir finds a 486!
 Jaap
 
 
+
 ---
 
-Comment by jsp created at 2010-01-13 13:47:49
+archive/issue_comments_068791.json:
+```json
+{
+    "body": "I take back fo former comment. I started the wrong virtual machine.\n\nOn Fedora 12 x86_64 in VirtualBox:\n\n\n\n```\ngcc version 4.4.2 20091222 (Red Hat 4.4.2-20) (GCC)\n****************************************************\nchecking build system type... x86_64-unknown-linux-gnu\nchecking host system type... x86_64-unknown-linux-gnu\nchecking for a BSD-compatible install... /usr/bin/install -c\nchecking whether build environment is sane... yes\nchecking for gawk... gawk\nchecking whether make -j2 sets $(MAKE)... yes\nchecking whether to enable maintainer-specific portions of Makefiles... no\nchecking ABI=64\nchecking compiler gcc -O2 -m64 ... yes\nchecking compiler gcc -O2 -m64  -march=k8... yes\n\n\n```\n\n\n\nThat seems to work.\n\nJaap",
+    "created_at": "2010-01-13T13:47:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7910",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7910#issuecomment-68791",
+    "user": "jsp"
+}
+```
 
 I take back fo former comment. I started the wrong virtual machine.
 
@@ -334,9 +403,20 @@ That seems to work.
 Jaap
 
 
+
 ---
 
-Comment by jsp created at 2010-01-13 18:31:06
+archive/issue_comments_068792.json:
+```json
+{
+    "body": "I could install mpir with an ugly hack. Upstream there are some activities.\n\nThere is a patch for Linux.\n\nJaap",
+    "created_at": "2010-01-13T18:31:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7910",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7910#issuecomment-68792",
+    "user": "jsp"
+}
+```
 
 I could install mpir with an ugly hack. Upstream there are some activities.
 
@@ -345,36 +425,91 @@ There is a patch for Linux.
 Jaap
 
 
+
 ---
 
-Comment by drkirkby created at 2010-01-13 18:59:15
+archive/issue_comments_068793.json:
+```json
+{
+    "body": "I suspect a hack to the configure script directly should work. I'd just make it appear some low-spec 64-bit CPU, but the MPIR developers will I'm sure advise you the best immediate workaround.",
+    "created_at": "2010-01-13T18:59:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7910",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7910#issuecomment-68793",
+    "user": "drkirkby"
+}
+```
 
 I suspect a hack to the configure script directly should work. I'd just make it appear some low-spec 64-bit CPU, but the MPIR developers will I'm sure advise you the best immediate workaround.
 
 
+
 ---
 
-Comment by jdemeyer created at 2015-09-08 12:48:16
+archive/issue_comments_068794.json:
+```json
+{
+    "body": "Changing assignee from GeorgSWeber to jdemeyer.",
+    "created_at": "2015-09-08T12:48:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7910",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7910#issuecomment-68794",
+    "user": "jdemeyer"
+}
+```
 
 Changing assignee from GeorgSWeber to jdemeyer.
 
 
+
 ---
 
-Comment by jdemeyer created at 2015-09-08 12:48:16
+archive/issue_comments_068795.json:
+```json
+{
+    "body": "Changing component from build to packages: standard.",
+    "created_at": "2015-09-08T12:48:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7910",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7910#issuecomment-68795",
+    "user": "jdemeyer"
+}
+```
 
 Changing component from build to packages: standard.
 
 
+
 ---
 
-Comment by jdemeyer created at 2018-03-02 13:52:38
+archive/issue_comments_068796.json:
+```json
+{
+    "body": "Obsolete",
+    "created_at": "2018-03-02T13:52:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7910",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7910#issuecomment-68796",
+    "user": "jdemeyer"
+}
+```
 
 Obsolete
 
 
+
 ---
 
-Comment by jdemeyer created at 2018-03-02 13:52:38
+archive/issue_comments_068797.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2018-03-02T13:52:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7910",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7910#issuecomment-68797",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: invalid

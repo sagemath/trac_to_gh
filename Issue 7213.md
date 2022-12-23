@@ -1,11 +1,21 @@
 # Issue 7213: "sage -upgrade" to 4.1.2 results in issue with symbolic link and ecl
 
-Issue created by migration from https://trac.sagemath.org/ticket/7213
-
-Original creator: was
-
-Original creation time: 2009-10-14 20:28:16
-
+archive/issues_007213.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  schilly\n\nwhen doing an upgrade:\n\n```\nln: target `ecl' is not a directory\nFailed to create ecl library symbolic link ... exiting\n\nreal    1m55.950s\nuser    1m38.540s\nsys     0m12.430s\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7213\n\n",
+    "created_at": "2009-10-14T20:28:16Z",
+    "labels": [
+        "build",
+        "blocker",
+        "bug"
+    ],
+    "title": "\"sage -upgrade\" to 4.1.2 results in issue with symbolic link and ecl",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7213",
+    "user": "was"
+}
+```
 Assignee: tbd
 
 CC:  schilly
@@ -22,45 +32,104 @@ sys     0m12.430s
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7213
+
+
+
+
 
 ---
 
-Comment by was created at 2009-10-14 21:41:57
+archive/issue_comments_059848.json:
+```json
+{
+    "body": "The fixed spkg is here (it's a 3-character change).\n\nhttp://sage.math.washington.edu/home/wstein/patches/ecl-9.8.4-20090913cvs.p3.spkg",
+    "created_at": "2009-10-14T21:41:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7213",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7213#issuecomment-59848",
+    "user": "was"
+}
+```
 
 The fixed spkg is here (it's a 3-character change).
 
 http://sage.math.washington.edu/home/wstein/patches/ecl-9.8.4-20090913cvs.p3.spkg
 
 
+
 ---
 
-Comment by was created at 2009-10-14 21:42:07
+archive/issue_comments_059849.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-10-14T21:42:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7213",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7213#issuecomment-59849",
+    "user": "was"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mvngu created at 2009-10-15 13:48:55
+archive/issue_comments_059850.json:
+```json
+{
+    "body": "Both of the following cases worked OK:\n\n* Replace the ECL spkg of Sage 4.1.2 with the above updated spkg. Make a new source tarball and compile that new tarball from scratch. That works OK.\n* From Sage 4.1.1, upgrade to this new source tarball with the above ECL spkg. This also works fine. The original problem with upgrading from Sage 4.1.1 is now gone.\n\nPositive review.",
+    "created_at": "2009-10-15T13:48:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7213",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7213#issuecomment-59850",
+    "user": "mvngu"
+}
+```
 
 Both of the following cases worked OK:
 
- * Replace the ECL spkg of Sage 4.1.2 with the above updated spkg. Make a new source tarball and compile that new tarball from scratch. That works OK.
- * From Sage 4.1.1, upgrade to this new source tarball with the above ECL spkg. This also works fine. The original problem with upgrading from Sage 4.1.1 is now gone.
+* Replace the ECL spkg of Sage 4.1.2 with the above updated spkg. Make a new source tarball and compile that new tarball from scratch. That works OK.
+* From Sage 4.1.1, upgrade to this new source tarball with the above ECL spkg. This also works fine. The original problem with upgrading from Sage 4.1.1 is now gone.
 
 Positive review.
 
 
+
 ---
 
-Comment by mvngu created at 2009-10-15 13:48:55
+archive/issue_comments_059851.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-10-15T13:48:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7213",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7213#issuecomment-59851",
+    "user": "mvngu"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mvngu created at 2009-10-15 14:51:46
+archive/issue_comments_059852.json:
+```json
+{
+    "body": "This can be closed now. The updated ECL spkg is up in the standard spkg repository on sagemath.org and has been mirrored out. See\n\nhttp://mirror.switch.ch/mirror/sagemath/spkg/standard/ecl-9.8.4-20090913cvs.p3.spkg\n\n```\n07:39 < mvngu> schilly: But you should note ticket #7213.\n07:40 < mvngu> schilly: If people upgrade to Sage 4.1.2 and they have problem\n               with ECL, then ticket #7213\n07:40 < mvngu> is the answer.\n07:40 < mvngu> schilly: I just gave it a postive review.\n07:41 < mvngu> schilly: So the standard packages respository on sagemath.org\n               should have that updated ECL spkg.\n07:41 < mvngu> schilly: Otherwise upgrade would result in a path error with ECL.\n07:42 < schilly> mhm, ok ...\n07:42 < schilly> if it is updated in the usual place, it will be on the mirrors\n07:43 < mvngu> schilly: I mean update the standard spkg on sagemath.org with\n               that ECL spkg, and mirror out this updated spkg.\n07:43 < schilly> ok, filename is the same\n07:43 < schilly> yes, just looked at www-files/packages/standard ... it's the\n                 same\n07:44 < mvngu> schilly: It says \".p3\"?\n07:44 < schilly> http://mirror.switch.ch/mirror/sagemath/spkg/standard/\n07:45 < mvngu> schilly: cool.\n07:45 < schilly> ;)\n07:45 < mvngu> schilly: Maybe wstein took care of updating that repo.\n07:46 < schilly> he copied over to the usual place\n                 (www-files/packages/standard) and that's all he has to do\n07:46 < schilly> then he mirrored it together with the new source\n07:46 < schilly> or i did it when i checked the mirror-ing earlier this day\n07:47 < schilly> so, it's already on the servers\n07:47 < mvngu> That's good to know.\n07:48 < schilly> the only thing i don't understand is, why the source tarball \n                 of 4.1.1 is newer than the newer one for 4.1.2\n07:48 < schilly> probably some copy-activity or replacement. i'll move 4.1.1 to \n                 the older files anyways\n```\n",
+    "created_at": "2009-10-15T14:51:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7213",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7213#issuecomment-59852",
+    "user": "mvngu"
+}
+```
 
 This can be closed now. The updated ECL spkg is up in the standard spkg repository on sagemath.org and has been mirrored out. See
 
@@ -101,8 +170,19 @@ http://mirror.switch.ch/mirror/sagemath/spkg/standard/ecl-9.8.4-20090913cvs.p3.s
 
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-19 04:55:24
+archive/issue_comments_059853.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-10-19T04:55:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7213",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7213#issuecomment-59853",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

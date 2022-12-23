@@ -1,11 +1,21 @@
 # Issue 6102: cohomology ring of simplicial complexes
 
-Issue created by migration from https://trac.sagemath.org/ticket/6102
-
-Original creator: bantieau
-
-Original creation time: 2009-05-21 03:47:14
-
+archive/issues_006102.json:
+```json
+{
+    "body": "Assignee: bantieau\n\nCC:  jhpalmieri fbreuer tscrim chapoton\n\nAdd functionality in sage to compute the cohomology ring of a simplicial complex.\n\nThis relies on #6099, #6100, #6101, and #5882.\n\nThese will be examples of graded alebras, finite as modules over their bases, that are graded-commutative.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6102\n\n",
+    "created_at": "2009-05-21T03:47:14Z",
+    "labels": [
+        "algebraic topology",
+        "minor",
+        "enhancement"
+    ],
+    "title": "cohomology ring of simplicial complexes",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6102",
+    "user": "bantieau"
+}
+```
 Assignee: bantieau
 
 CC:  jhpalmieri fbreuer tscrim chapoton
@@ -16,10 +26,25 @@ This relies on #6099, #6100, #6101, and #5882.
 
 These will be examples of graded alebras, finite as modules over their bases, that are graded-commutative.
 
+Issue created by migration from https://trac.sagemath.org/ticket/6102
+
+
+
+
 
 ---
 
-Comment by jhpalmieri created at 2012-01-04 23:59:42
+archive/issue_comments_048721.json:
+```json
+{
+    "body": "The following code was posted by Felix Breuer on [sage-support](https://groups.google.com/d/topic/sage-support/mdEKXfBTHOY/discussion)\n\n```\ndef cup_product(X,c1,dim1,c2,dim2):\n    d = dim1 + dim2 \n    faces1 = list(X.n_faces(dim1))\n    faces2 = list(X.n_faces(dim2))\n    faces = list(X.n_faces(d))\n    res = []\n    for sigma in faces:\n        sigma1 = Simplex(sigma[0:dim1+1])\n        sigma2 = Simplex(sigma[dim1:d+1])\n        index1 = faces1.index(sigma1)\n        index2 = faces2.index(sigma2)\n        coeff1 = c1[index1]\n        coeff2 = c2[index2]\n        coeff = coeff1 * coeff2\n        res.append(coeff)\n    return vector(tuple(res))\n```\n\nTo use it on the Torus, for example, you can do this:\n\n```\nX = simplicial_complexes.Torus()\nC = X.chain_complex(cochain=True)\nH = C.homology(generators=True)\ngen1 = H[1][1][0]\ngen2 = H[1][1][1]\nd1 = C.differential()[1]\nq = cup_product(X,gen1,1,gen1,1)\nprint q\nprint d1.solve_right(q)\np = cup_product(X,gen1,1,gen2,1)\nprint p\nprint d1.solve_right(p) #error\n```\n",
+    "created_at": "2012-01-04T23:59:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6102",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6102#issuecomment-48721",
+    "user": "jhpalmieri"
+}
+```
 
 The following code was posted by Felix Breuer on [sage-support](https://groups.google.com/d/topic/sage-support/mdEKXfBTHOY/discussion)
 
@@ -61,67 +86,166 @@ print d1.solve_right(p) #error
 
 
 
+
 ---
 
-Comment by jhpalmieri created at 2015-09-10 02:30:15
+archive/issue_comments_048722.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2015-09-10T02:30:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6102",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6102#issuecomment-48722",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2015-09-10 02:30:15
+archive/issue_comments_048723.json:
+```json
+{
+    "body": "Here is an initial attempt. \n----\nNew commits:",
+    "created_at": "2015-09-10T02:30:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6102",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6102#issuecomment-48723",
+    "user": "jhpalmieri"
+}
+```
 
 Here is an initial attempt. 
 ----
 New commits:
 
 
+
 ---
 
-Comment by git created at 2015-09-10 15:24:14
+archive/issue_comments_048724.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2015-09-10T15:24:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6102",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6102#issuecomment-48724",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by jhpalmieri created at 2015-09-10 22:08:35
+archive/issue_comments_048725.json:
+```json
+{
+    "body": "Changing priority from minor to major.",
+    "created_at": "2015-09-10T22:08:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6102",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6102#issuecomment-48725",
+    "user": "jhpalmieri"
+}
+```
 
 Changing priority from minor to major.
 
 
+
 ---
 
-Comment by git created at 2015-09-11 18:24:33
+archive/issue_comments_048726.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2015-09-11T18:24:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6102",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6102#issuecomment-48726",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by git created at 2015-09-12 16:24:36
+archive/issue_comments_048727.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2015-09-12T16:24:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6102",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6102#issuecomment-48727",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by jhpalmieri created at 2015-09-12 16:30:55
+archive/issue_comments_048728.json:
+```json
+{
+    "body": "#18246 broke the default hashing of chain homotopies, so I've added a `__hash__` method, and also one for chain maps. This is necessary so that we can cache the methods `algebraic_topological_model`, `homology_basis`, and `cohomology_ring` in `cell_complex`.",
+    "created_at": "2015-09-12T16:30:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6102",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6102#issuecomment-48728",
+    "user": "jhpalmieri"
+}
+```
 
 #18246 broke the default hashing of chain homotopies, so I've added a `__hash__` method, and also one for chain maps. This is necessary so that we can cache the methods `algebraic_topological_model`, `homology_basis`, and `cohomology_ring` in `cell_complex`.
 
 
+
 ---
 
-Comment by git created at 2015-09-14 15:17:26
+archive/issue_comments_048729.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2015-09-14T15:17:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6102",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6102#issuecomment-48729",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by jhpalmieri created at 2015-09-23 18:04:22
+archive/issue_comments_048730.json:
+```json
+{
+    "body": "An update: I have a new version of `algebraic_topological_model.py`, which is the key to everything here. I'm calling it `AT_model.py`, and I'll attach it to the ticket. The good news:\n\n- it works for Delta complexes\n- it's faster with mod 2 coefficients:\n\n```\nsage: from sage.homology.algebraic_topological_model import algebraic_topological_model\nsage: from sage.homology.AT_model import AT_model\nsage: RP3 = simplicial_complexes.RealProjectiveSpace(3)\nsage: %time phi, H = algebraic_topological_model(RP3, GF(2)) # old version\nCPU times: user 813 ms, sys: 150 ms, total: 963 ms\nWall time: 852 ms\nsage: %time phi, H = AT_model(RP3, GF(2))     # new version\nCPU times: user 345 ms, sys: 32.3 ms, total: 377 ms\nWall time: 354 ms\n```\n\nThe bad news: it's *much* slower with rational coefficients, and I have no idea why:\n\n```\nsage: %time phi, H = algebraic_topological_model(RP3, QQ)   # old version\nCPU times: user 1.27 s, sys: 138 ms, total: 1.41 s\nWall time: 1.35 s\nsage: %time phi, H = AT_model(RP3, QQ)      # new version\nCPU times: user 23.9 s, sys: 69.6 ms, total: 24 s\nWall time: 24 s\n```\n\nProfiling the code with `%prun` was not illuminating to me, and I couldn't run `%crun` because I couldn't get [the Google performance analysis tools](https://github.com/gperftools/gperftools) to install on my machine. Optimizing code is not my strong suit, in any case.\n\nBecause of this, I haven't tried to implement cup products for Delta complexes. I think I know how to do that, but it hasn't felt worth it yet.",
+    "created_at": "2015-09-23T18:04:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6102",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6102#issuecomment-48730",
+    "user": "jhpalmieri"
+}
+```
 
 An update: I have a new version of `algebraic_topological_model.py`, which is the key to everything here. I'm calling it `AT_model.py`, and I'll attach it to the ticket. The good news:
 
@@ -140,7 +264,7 @@ CPU times: user 345 ms, sys: 32.3 ms, total: 377 ms
 Wall time: 354 ms
 ```
 
-The bad news: it's _much_ slower with rational coefficients, and I have no idea why:
+The bad news: it's *much* slower with rational coefficients, and I have no idea why:
 
 ```
 sage: %time phi, H = algebraic_topological_model(RP3, QQ)   # old version
@@ -156,16 +280,40 @@ Profiling the code with `%prun` was not illuminating to me, and I couldn't run `
 Because of this, I haven't tried to implement cup products for Delta complexes. I think I know how to do that, but it hasn't felt worth it yet.
 
 
+
 ---
+
+archive/issue_comments_048731.json:
+```json
+{
+    "body": "Attachment\n\nBranch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2015-10-07T20:04:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6102",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6102#issuecomment-48731",
+    "user": "git"
+}
+```
 
 Attachment
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by tscrim created at 2015-10-08 18:20:11
+archive/issue_comments_048732.json:
+```json
+{
+    "body": "I think the issue comes from the fact that a category pushout is being done. This doesn't seem to happen in the finite fields of prime order cases, but it does show up for prime powers. However, for `GF(4, 'a')`, it took a non-trivial amount of time (over 2 seconds on my machine).\n\nFrom doing a line by line profiling, here's the lines that take the longest over `QQ`:\n\n```\nLine #      Hits         Time  Per Hit   % Time  Line Contents\n==============================================================\n   210       182       745504   4096.2      5.8              c_bar = c - phi_old * diff * c\n   211       182       452404   2485.7      3.5              pi_bdry_c_bar = pi_old * diff * c_bar \n   236      5321     10852810   2039.6     84.1                      eta_ij = (pi_old * c_j)[u_idx]\n   244        90       323096   3590.0      2.5                  phi_old = MS_phi_t.matrix(phi_old_cols).transpose()\n   290         1        27459  27459.0      0.2      phi = ChainContraction(phi_data, pi, iota)\n```\n\nwhere the time is given in microseconds. Over `GF(2)`, these operations are significantly faster per call.",
+    "created_at": "2015-10-08T18:20:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6102",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6102#issuecomment-48732",
+    "user": "tscrim"
+}
+```
 
 I think the issue comes from the fact that a category pushout is being done. This doesn't seem to happen in the finite fields of prime order cases, but it does show up for prime powers. However, for `GF(4, 'a')`, it took a non-trivial amount of time (over 2 seconds on my machine).
 
@@ -184,9 +332,20 @@ Line #      Hits         Time  Per Hit   % Time  Line Contents
 where the time is given in microseconds. Over `GF(2)`, these operations are significantly faster per call.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2015-10-08 22:31:30
+archive/issue_comments_048733.json:
+```json
+{
+    "body": "That's helpful. The change\n\n```diff\n--- Dropbox/prog/sage/Math/Simplicial/homotopies/AT_model.py\t2015-09-23 10:44:42.000000000 -0700\n+++ Desktop/AT_model.py\t2015-10-08 14:14:33.000000000 -0700\n@@ -233,7 +233,7 @@\n                 pi_cols.append(zero_vector)\n                 for c_j_idx, c_j in enumerate(old_cells):\n                     # eta_ij = <u, pi(c_j)>:\n-                    eta_ij = (pi_old * c_j)[u_idx]\n+                    eta_ij = pi_old.row(u_idx).dot_product(c_j)\n \n                     if eta_ij:\n                         # Adjust phi(c_j).\n```\n\ncuts the time for `AT_model(RP3, QQ)` from about 20 seconds to about 3 seconds. Still too long, but better. (At the moment, I'm getting about 7/10 of a second for the old version, just under 3 seconds with this modified new version.)\n\nFor rational matrices with lots of zero entries, it seems to be faster to multiply sparse matrices than dense ones, so I am trying to replace some of the matrices by sparse versions. I found [this bug](http://trac.sagemath.org/ticket/19377) by doing this. Good times.",
+    "created_at": "2015-10-08T22:31:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6102",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6102#issuecomment-48733",
+    "user": "jhpalmieri"
+}
+```
 
 That's helpful. The change
 
@@ -209,16 +368,38 @@ cuts the time for `AT_model(RP3, QQ)` from about 20 seconds to about 3 seconds. 
 For rational matrices with lots of zero entries, it seems to be faster to multiply sparse matrices than dense ones, so I am trying to replace some of the matrices by sparse versions. I found [this bug](http://trac.sagemath.org/ticket/19377) by doing this. Good times.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2015-10-08 23:21:16
+archive/issue_comments_048734.json:
+```json
+{
+    "body": "Another new bug: #19378.",
+    "created_at": "2015-10-08T23:21:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6102",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6102#issuecomment-48734",
+    "user": "jhpalmieri"
+}
+```
 
 Another new bug: #19378.
 
 
+
 ---
 
-Comment by tscrim created at 2015-10-09 03:16:10
+archive/issue_comments_048735.json:
+```json
+{
+    "body": "(I like this line-profiler, it's very useful.) A lot of time seems to be lost with (dense?) matrix operations over `QQ`:\n\n```\n   210       182       741358   4073.4     33.0              c_bar = c - phi_old * diff * c\n   211       182       458238   2517.8     20.4              pi_bdry_c_bar = pi_old * diff * c_bar\n\n\n   244        90       280498   3116.6     12.5                  phi_old = MS_phi_t.matrix(phi_old_cols).transpose()\n   245      3402         4290      1.3      0.2                  indices = [i for i in range(pi_nrows) if i not in to_be_deleted]\n   246        90        16370    181.9      0.7                  keep = vector(base_ring, pi_nrows, {i:1 for i in indices})\n   247      5411       204965     37.9      9.1                  cols = [v.pairwise_product(keep) for v in pi_cols_old]\n   248        90       258909   2876.8     11.5                  pi_old = MS_pi_t.matrix(cols).transpose()\n```\n\nI know we have many specialized algorithms for doing matrix manipulations over finite fields, so perhaps we are also seeing some of that here too. I'm wondering if the difference is just the number of matrix operations is just higher...(perhaps sparse matrices will work better...).\n\nFYI - in the old implementation, this was the line taking the majority of the time\n\n```\n   246      5321       727375    136.7     65.8                      c_j_vec = vector(base_ring, old_rank, {c_j_idx: 1})\n```\n",
+    "created_at": "2015-10-09T03:16:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6102",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6102#issuecomment-48735",
+    "user": "tscrim"
+}
+```
 
 (I like this line-profiler, it's very useful.) A lot of time seems to be lost with (dense?) matrix operations over `QQ`:
 
@@ -244,62 +425,150 @@ FYI - in the old implementation, this was the line taking the majority of the ti
 
 
 
+
 ---
 
-Comment by jhpalmieri created at 2015-10-09 04:11:15
+archive/issue_comments_048736.json:
+```json
+{
+    "body": "Regarding lines like `c_bar = c - phi_old * diff * c`, it seems that matrix-vector multiplication is faster over `QQ` (compared to matrix-matrix multiplication) but slower over finite fields, so over `QQ` I have changed this to `c_bar = c - phi_old * (diff * c)`. I'll look at the other slow parts to see what I can do there, too.\n\nHow do you run the line-profiler?",
+    "created_at": "2015-10-09T04:11:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6102",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6102#issuecomment-48736",
+    "user": "jhpalmieri"
+}
+```
 
 Regarding lines like `c_bar = c - phi_old * diff * c`, it seems that matrix-vector multiplication is faster over `QQ` (compared to matrix-matrix multiplication) but slower over finite fields, so over `QQ` I have changed this to `c_bar = c - phi_old * (diff * c)`. I'll look at the other slow parts to see what I can do there, too.
 
 How do you run the line-profiler?
 
 
+
 ---
 
-Comment by jhpalmieri created at 2015-10-09 04:13:20
+archive/issue_comments_048737.json:
+```json
+{
+    "body": "By the way, I now have: old timing 0.7 seconds, new timing 1.7 seconds over the rationals. Over finite fields, the new version takes about half the time (0.43 seconds compared to 0.2 seconds over `GF(2)`, not quite as good an improvement when working over other prime fields).",
+    "created_at": "2015-10-09T04:13:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6102",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6102#issuecomment-48737",
+    "user": "jhpalmieri"
+}
+```
 
 By the way, I now have: old timing 0.7 seconds, new timing 1.7 seconds over the rationals. Over finite fields, the new version takes about half the time (0.43 seconds compared to 0.2 seconds over `GF(2)`, not quite as good an improvement when working over other prime fields).
 
 
+
 ---
 
-Comment by tscrim created at 2015-10-09 04:15:48
+archive/issue_comments_048738.json:
+```json
+{
+    "body": "See http://doc.sagemath.org/html/en/thematic_tutorials/profiling.html#python-level-line-by-line-profiling-lprun",
+    "created_at": "2015-10-09T04:15:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6102",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6102#issuecomment-48738",
+    "user": "tscrim"
+}
+```
 
 See http://doc.sagemath.org/html/en/thematic_tutorials/profiling.html#python-level-line-by-line-profiling-lprun
 
 
+
 ---
 
-Comment by jhpalmieri created at 2015-10-09 04:34:25
+archive/issue_comments_048739.json:
+```json
+{
+    "body": "Thanks. I'm not sure how I knew about `%prun` but not `%lprun`. `%lprun` looks much more helpful, at least in this case.",
+    "created_at": "2015-10-09T04:34:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6102",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6102#issuecomment-48739",
+    "user": "jhpalmieri"
+}
+```
 
 Thanks. I'm not sure how I knew about `%prun` but not `%lprun`. `%lprun` looks much more helpful, at least in this case.
 
 
+
 ---
 
-Comment by tscrim created at 2015-10-10 15:21:54
+archive/issue_comments_048740.json:
+```json
+{
+    "body": "So do you think you'll switch to the new model? It's roughly a 2x slowdown (to which I'm fairly certain it is just because you are doing more matrix multiplications), but it does offer greater flexibility. The other option would be to include both methods and choose the old one for `QQ` over simplicial complexes...",
+    "created_at": "2015-10-10T15:21:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6102",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6102#issuecomment-48740",
+    "user": "tscrim"
+}
+```
 
 So do you think you'll switch to the new model? It's roughly a 2x slowdown (to which I'm fairly certain it is just because you are doing more matrix multiplications), but it does offer greater flexibility. The other option would be to include both methods and choose the old one for `QQ` over simplicial complexes...
 
 
+
 ---
 
-Comment by jhpalmieri created at 2015-10-10 16:30:11
+archive/issue_comments_048741.json:
+```json
+{
+    "body": "My current plan is indeed to use both methods. By using your `%lprun` analysis (and mine, too), I have managed to speed up both the old and new methods. Over finite fields, the *old* method is now about 20 times faster than it used to be: on one machine, computing `algebraic_topological_model(RP3, GF(2))` used to take over 400 ms, and now takes about 20 ms, and similarly over other prime fields. Over the rationals, it used to take about 700 ms, and now takes just under 300. The new method is now faster than it used to be, but slower over all fields (about 200 ms over `GF(2)`, 1500 ms over `QQ`).\n\nSo the plan is to include both and use the old one for cubical and simplicial complexes, the new one only for Delta complexes. I want to figure out if I can actually implement the cup product for Delta complexes without rewriting the whole class of complexes, providing an actual class for its cells. I will try to update the branch soon in any case.",
+    "created_at": "2015-10-10T16:30:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6102",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6102#issuecomment-48741",
+    "user": "jhpalmieri"
+}
+```
 
-My current plan is indeed to use both methods. By using your `%lprun` analysis (and mine, too), I have managed to speed up both the old and new methods. Over finite fields, the _old_ method is now about 20 times faster than it used to be: on one machine, computing `algebraic_topological_model(RP3, GF(2))` used to take over 400 ms, and now takes about 20 ms, and similarly over other prime fields. Over the rationals, it used to take about 700 ms, and now takes just under 300. The new method is now faster than it used to be, but slower over all fields (about 200 ms over `GF(2)`, 1500 ms over `QQ`).
+My current plan is indeed to use both methods. By using your `%lprun` analysis (and mine, too), I have managed to speed up both the old and new methods. Over finite fields, the *old* method is now about 20 times faster than it used to be: on one machine, computing `algebraic_topological_model(RP3, GF(2))` used to take over 400 ms, and now takes about 20 ms, and similarly over other prime fields. Over the rationals, it used to take about 700 ms, and now takes just under 300. The new method is now faster than it used to be, but slower over all fields (about 200 ms over `GF(2)`, 1500 ms over `QQ`).
 
 So the plan is to include both and use the old one for cubical and simplicial complexes, the new one only for Delta complexes. I want to figure out if I can actually implement the cup product for Delta complexes without rewriting the whole class of complexes, providing an actual class for its cells. I will try to update the branch soon in any case.
 
 
+
 ---
 
-Comment by git created at 2015-10-10 17:55:22
+archive/issue_comments_048742.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2015-10-10T17:55:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6102",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6102#issuecomment-48742",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by tscrim created at 2015-10-10 19:01:01
+archive/issue_comments_048743.json:
+```json
+{
+    "body": "Those are some very good improvements.\n\nI really don't like this:\n\n```python\n# diff is sparse and low density. Dense matrices are faster\n# over finite fields, but for low density matrices, sparse\n# matrices are faster over the rationals.\nif base_ring != QQ:\n    diff = diff.dense_matrix()\n```\n\nIt's not a blocker for this to get a positive review, but it bugs me. Plus the extra time to convert it to a dense matrix...\n\nI did some quick digging and there is apparently a slew of tickets on improving sparse or modn vectors/matrices: #19076 (and therein), #18231, #15104, #10312, #18312, #2705.\n\nWas there anything in your timings to suggest a good place to go look for just using sparse matrices? Did you also test with my fixes for #19377 and #19378 (and forcing sparse matrices, or are they even necessary)?\n\nIs there anything else you'd like to do to this before I set it to positive review?",
+    "created_at": "2015-10-10T19:01:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6102",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6102#issuecomment-48743",
+    "user": "tscrim"
+}
+```
 
 Those are some very good improvements.
 
@@ -322,9 +591,20 @@ Was there anything in your timings to suggest a good place to go look for just u
 Is there anything else you'd like to do to this before I set it to positive review?
 
 
+
 ---
 
-Comment by jhpalmieri created at 2015-10-10 20:10:41
+archive/issue_comments_048744.json:
+```json
+{
+    "body": "Replying to [comment:30 tscrim]:\n> Those are some very good improvements.\n> \n> I really don't like this:\n> {{{#!python\n> # diff is sparse and low density. Dense matrices are faster\n> # over finite fields, but for low density matrices, sparse\n> # matrices are faster over the rationals.\n> if base_ring != QQ:\n>     diff = diff.dense_matrix()\n> }}}\n> It's not a blocker for this to get a positive review, but it bugs me. Plus the extra time to convert it to a dense matrix...\n\nOn my computer, if I do\n\n```\nsage: from sage.homology.algebraic_topological_model import algebraic_topological_model\nsage: RP3 = simplicial_complexes.RealProjectiveSpace(3)\nsage: %timeit algebraic_topological_model(RP3, GF(2))\n```\n\nthen without this change, it takes 104 ms per loop; with the change it takes 19.5 ms per loop. (Similar over `GF(31)`, to pick a random other finite field.) So the time for converting to a dense matrix is outweighed by the speed when multiplying dense vs. sparse matrices and vectors.\n\n> I did some quick digging and there is apparently a slew of tickets on improving sparse or modn vectors/matrices: #19076 (and therein), #18231, #15104, #10312, #18312, #2705.\n> \n> Was there anything in your timings to suggest a good place to go look for just using sparse matrices? Did you also test with my fixes for #19377 and #19378 (and forcing sparse matrices, or are they even necessary)?\n\nThe fixes for #19377 and #19378 won't make much of a difference, because I think the main bottlenecks are matrix-matrix multiplication and matrix-vector multiplication. For #19378, it's easy enough to bypass the whole issue by testing whether the appropriate matrix is `nx0`. #18231 could help, since at least with the Delta-complex version, some of the slowest parts are constructing matrices.\n\nI don't know where to look in the linear algebra code to improve the timings. I ran tests of the form\n\n```\n%timeit random_matrix(QQ, 40, density=0.1, sparse=True) * random_vector(QQ, 40, density=0.1, sparse=False)\n```\n\nand similarly with the second factor being a vector, and then I varied which factors were sparse. I tried with different coefficient fields, also. Over the rationals, as the density decreases, the timing for dense matrices stays pretty constant, but it speeds up for sparse matrices. (This is without even taking into account the fact that it is slower to construct random sparse matrices: see #2705.) Over finite fields, it's constant both ways, and slower for sparse matrices.\n\n> Is there anything else you'd like to do to this before I set it to positive review?\n\nI think that cup products for Delta complexes can come on a separate ticket, if anyone ever figures it out. I'll see what I can do, but I don't want it to hold up this ticket.",
+    "created_at": "2015-10-10T20:10:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6102",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6102#issuecomment-48744",
+    "user": "jhpalmieri"
+}
+```
 
 Replying to [comment:30 tscrim]:
 > Those are some very good improvements.
@@ -368,9 +648,20 @@ and similarly with the second factor being a vector, and then I varied which fac
 I think that cup products for Delta complexes can come on a separate ticket, if anyone ever figures it out. I'll see what I can do, but I don't want it to hold up this ticket.
 
 
+
 ---
 
-Comment by tscrim created at 2015-10-10 22:31:43
+archive/issue_comments_048745.json:
+```json
+{
+    "body": "I made some reviewer changes, and it's mostly tweaking docstrings and copying your sparse/dense hack to get another ~20% in the \"new\" version.\n\nFfrom taking a closer look at things, I bet we could get further speedups by not taking the transpose of the `phi_old` and `pi_old` matrices in the inner loops and using `v * M` multiplication instead of `M' * v`. I tried to do this, but I don't think I understand the interworkings of the code to get this to work (at least for the \"new\" version). Have you tried to do this?\n\nAlso I noticed that `HomologyVectorSpaceWithBasis` represents a graded piece of the (co)homology space. Would you be opposed to me rewriting that such that it becomes the full (co)homology space/ring? I think it would simplify the overall code structure, allow easier extensions to infinite simplicial/cell complexes, and give a better interpretation of `cup_product` as being the product in the cohomology ring. (Also with #18175, we could then give work towards a cap product for manifolds.)\n\nIf you would prefer one/both of these things to be pushed to later tickets, we can do that, but I'd rather get the latter done now.\n----\nNew commits:",
+    "created_at": "2015-10-10T22:31:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6102",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6102#issuecomment-48745",
+    "user": "tscrim"
+}
+```
 
 I made some reviewer changes, and it's mostly tweaking docstrings and copying your sparse/dense hack to get another ~20% in the "new" version.
 
@@ -383,9 +674,20 @@ If you would prefer one/both of these things to be pushed to later tickets, we c
 New commits:
 
 
+
 ---
 
-Comment by tscrim created at 2015-10-10 22:38:57
+archive/issue_comments_048746.json:
+```json
+{
+    "body": "Replying to [comment:31 jhpalmieri]:\n> On my computer, if I do\n> {{{\n> sage: from sage.homology.algebraic_topological_model import algebraic_topological_model\n> sage: RP3 = simplicial_complexes.RealProjectiveSpace(3)\n> sage: %timeit algebraic_topological_model(RP3, GF(2))\n> }}}\n> then without this change, it takes 104 ms per loop; with the change it takes 19.5 ms per loop. (Similar over `GF(31)`, to pick a random other finite field.) So the time for converting to a dense matrix is outweighed by the speed when multiplying dense vs. sparse matrices and vectors.\n\nI didn't mean to imply that it wasn't a significant speedup and I apologize if I did. However that is a much larger difference than I really expected. Eeek!\n\n> The fixes for #19377 and #19378 won't make much of a difference, because I think the main bottlenecks are matrix-matrix multiplication and matrix-vector multiplication. For #19378, it's easy enough to bypass the whole issue by testing whether the appropriate matrix is `nx0`. #18231 could help, since at least with the Delta-complex version, some of the slowest parts are constructing matrices.\n> I don't know where to look in the linear algebra code to improve the timings. I ran tests of the form\n> {{{\n> %timeit random_matrix(QQ, 40, density=0.1, sparse=True) * random_vector(QQ, 40, density=0.1, sparse=False)\n> }}}\n> and similarly with the second factor being a vector, and then I varied which factors were sparse. I tried with different coefficient fields, also. Over the rationals, as the density decreases, the timing for dense matrices stays pretty constant, but it speeds up for sparse matrices. (This is without even taking into account the fact that it is slower to construct random sparse matrices: see #2705.) Over finite fields, it's constant both ways, and slower for sparse matrices.\n\nIt sounds like #2705 will help for the sparse case, but I can dig around in the sparse matrix code and try to find out ways I can squeeze speed out of the matrix operations (and use hints from the tickets I cited) if you think it's worth it for this ticket. See also my previous replay",
+    "created_at": "2015-10-10T22:38:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6102",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6102#issuecomment-48746",
+    "user": "tscrim"
+}
+```
 
 Replying to [comment:31 jhpalmieri]:
 > On my computer, if I do
@@ -408,9 +710,20 @@ I didn't mean to imply that it wasn't a significant speedup and I apologize if I
 It sounds like #2705 will help for the sparse case, but I can dig around in the sparse matrix code and try to find out ways I can squeeze speed out of the matrix operations (and use hints from the tickets I cited) if you think it's worth it for this ticket. See also my previous replay
 
 
+
 ---
 
-Comment by jhpalmieri created at 2015-10-11 02:16:19
+archive/issue_comments_048747.json:
+```json
+{
+    "body": "Replying to [comment:32 tscrim]:\n> I made some reviewer changes, and it's mostly tweaking docstrings and copying your sparse/dense hack to get another ~20% in the \"new\" version.\n\nGreat.\n \n> From taking a closer look at things, I bet we could get further speedups by not taking the transpose of the `phi_old` and `pi_old` matrices in the inner loops and using `v * M` multiplication instead of `M' * v`. I tried to do this, but I don't think I understand the interworkings of the code to get this to work (at least for the \"new\" version). Have you tried to do this?\n\nGood idea. I just tried it and it led to no improvement, surprisingly, over the rationals, and a slow-down in characteristic 2. Maybe the lack of improvement is not that surprising, since I had already moved the slow matrix constructions out of the inner-most loops, so they don't get executed as much. And maybe taking the transpose is not slow compared to the rest of matrix construction.\n\n> Also I noticed that `HomologyVectorSpaceWithBasis` represents a graded piece of the (co)homology space. Would you be opposed to me rewriting that such that it becomes the full (co)homology space/ring? I think it would simplify the overall code structure, allow easier extensions to infinite simplicial/cell complexes, and give a better interpretation of `cup_product` as being the product in the cohomology ring. (Also with #18175, we could then give work towards a cap product for manifolds.)\n\nI think that it is natural to want both structures, the cohomology in a single degree and the cohomology in total. If you want to rewrite this part, that's okay with me. If you want to think about the most natural way to access cohomology classes, too, go ahead. I am not completely satisfied with\n\n```\nsage: a,b,c,d = X.cohomology_with_basis(1, QQ).gens()\n```\n\nMaybe\n\n```\nsage: H.<x> = X.cohomology_with_basis(1, QQ)\n```\n\nwill define `x0`, ..., `x3` if the cohomology is 4-dimensional? Or x10, ..., x13? (The problem with the angle-bracket notation is that we shouldn't have to know how many generators there are ahead of time.)\n\n> I didn't mean to imply that it wasn't a significant speedup and I apologize if I did. However that is a much larger difference than I really expected. Eeek!\n\nNo need to apologize, you had a reasonable question. And it is surprising how much difference that single change makes.",
+    "created_at": "2015-10-11T02:16:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6102",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6102#issuecomment-48747",
+    "user": "jhpalmieri"
+}
+```
 
 Replying to [comment:32 tscrim]:
 > I made some reviewer changes, and it's mostly tweaking docstrings and copying your sparse/dense hack to get another ~20% in the "new" version.
@@ -442,9 +755,20 @@ will define `x0`, ..., `x3` if the cohomology is 4-dimensional? Or x10, ..., x13
 No need to apologize, you had a reasonable question. And it is surprising how much difference that single change makes.
 
 
+
 ---
 
-Comment by tscrim created at 2015-10-11 03:36:37
+archive/issue_comments_048748.json:
+```json
+{
+    "body": "Replying to [comment:34 jhpalmieri]:\n> Replying to [comment:32 tscrim]:\n> > From taking a closer look at things, I bet we could get further speedups by not taking the transpose of the `phi_old` and `pi_old` matrices in the inner loops and using `v * M` multiplication instead of `M' * v`. I tried to do this, but I don't think I understand the interworkings of the code to get this to work (at least for the \"new\" version). Have you tried to do this?\n> \n> Good idea. I just tried it and it led to no improvement, surprisingly, over the rationals, and a slow-down in characteristic 2. Maybe the lack of improvement is not that surprising, since I had already moved the slow matrix constructions out of the inner-most loops, so they don't get executed as much. And maybe taking the transpose is not slow compared to the rest of matrix construction.\n\nYea, I confirm that there is not much time being spent on the transpose by just pulling that part out to a separate line (which I should have done beforehand, sorry). So the way to optimize this further is to speed up the matrix construction, which might depend upon the input data, and then also the dot product is the 3rd slowest line. I think we've gotten to a good point that we should just let it be for now (at least I'm not going to try and optimize it further because I will be doing the refactoring below).\n\n> > Also I noticed that `HomologyVectorSpaceWithBasis` represents a graded piece of the (co)homology space. Would you be opposed to me rewriting that such that it becomes the full (co)homology space/ring? I think it would simplify the overall code structure, allow easier extensions to infinite simplicial/cell complexes, and give a better interpretation of `cup_product` as being the product in the cohomology ring. (Also with #18175, we could then give work towards a cap product for manifolds.)\n> \n> I think that it is natural to want both structures, the cohomology in a single degree and the cohomology in total. If you want to rewrite this part, that's okay with me.\n\nThere is a way to access the part in a single degree with the `basis` function by passing in an integer:\n\n```\nsage: s = SymmetricFunctions(QQ).s()\nsage: list(s.basis(3))\n[s[3], s[2, 1], s[1, 1, 1]]\n```\n\nThis unfortunately doesn't work for most of the infinite dimensional CFM's, but there should be a generic method that works for all objects in `FiniteDimensionalModulesWithBasis`. At which point, we can use the `submodule` to construct the degree part (which also should have a dedicated method):\n\n```\nsage: s.submodule(list(s.basis(3)), already_echelonized=True)\nFree module generated by {0, 1, 2} over Rational Field\n```\n\n\n> If you want to think about the most natural way to access cohomology classes, too, go ahead. I am not completely satisfied with\n> {{{\n> sage: a,b,c,d = X.cohomology_with_basis(1, QQ).gens()\n> }}}\n> Maybe\n> {{{\n> sage: H.<x> = X.cohomology_with_basis(1, QQ)\n> }}}\n> will define `x0`, ..., `x3` if the cohomology is 4-dimensional? Or x10, ..., x13? (The problem with the angle-bracket notation is that we shouldn't have to know how many generators there are ahead of time.)\n\nWhat we could do is specify variable names and then could use the `inject_variables` method. I will think more about this tomorrow when I work on the above refactoring.",
+    "created_at": "2015-10-11T03:36:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6102",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6102#issuecomment-48748",
+    "user": "tscrim"
+}
+```
 
 Replying to [comment:34 jhpalmieri]:
 > Replying to [comment:32 tscrim]:
@@ -487,76 +811,186 @@ Free module generated by {0, 1, 2} over Rational Field
 What we could do is specify variable names and then could use the `inject_variables` method. I will think more about this tomorrow when I work on the above refactoring.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2015-10-12 19:05:38
+archive/issue_comments_048749.json:
+```json
+{
+    "body": "Turns out that cup products for Delta complexes weren't too hard to implement, so I did that.\n----\nNew commits:",
+    "created_at": "2015-10-12T19:05:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6102",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6102#issuecomment-48749",
+    "user": "jhpalmieri"
+}
+```
 
 Turns out that cup products for Delta complexes weren't too hard to implement, so I did that.
 ----
 New commits:
 
 
+
 ---
 
-Comment by git created at 2015-10-12 20:40:05
+archive/issue_comments_048750.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2015-10-12T20:40:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6102",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6102#issuecomment-48750",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by tscrim created at 2015-10-13 00:50:40
+archive/issue_comments_048751.json:
+```json
+{
+    "body": "I'm still working on my refactoring, but I did #19397 for getting the degree `d` components.",
+    "created_at": "2015-10-13T00:50:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6102",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6102#issuecomment-48751",
+    "user": "tscrim"
+}
+```
 
 I'm still working on my refactoring, but I did #19397 for getting the degree `d` components.
 
 
+
 ---
 
-Comment by tscrim created at 2015-10-13 20:33:07
+archive/issue_comments_048752.json:
+```json
+{
+    "body": "Done. I spent so much time trying to get the `cup_product` to iterate over cohomology, but I realized that it was support to be over homology... Anyways, it works now. With the category framework, I was able to remove `__pow__` (at a small cost of a not correct error for negative powers, at least for now I didn't want to muck with the `AlgebrasWithBasis` code). So if you're happy with my changes, then you can set a positive review.\n----\nNew commits:",
+    "created_at": "2015-10-13T20:33:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6102",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6102#issuecomment-48752",
+    "user": "tscrim"
+}
+```
 
 Done. I spent so much time trying to get the `cup_product` to iterate over cohomology, but I realized that it was support to be over homology... Anyways, it works now. With the category framework, I was able to remove `__pow__` (at a small cost of a not correct error for negative powers, at least for now I didn't want to muck with the `AlgebrasWithBasis` code). So if you're happy with my changes, then you can set a positive review.
 ----
 New commits:
 
 
+
 ---
 
-Comment by jhpalmieri created at 2015-10-14 23:05:57
+archive/issue_comments_048753.json:
+```json
+{
+    "body": "I will have some reviewer's changes on top of your changes soon. Meanwhile, I noticed that you removed the code related to the `FiniteDimensionalAlgebra` class. I don't know much about that class, and I don't mind the removal of that code. We could also reinstate it as a method for the class `CohomologyRing` (\"exporting\" it as a `FiniteDimensionalAlgebra`). Is that worth doing?",
+    "created_at": "2015-10-14T23:05:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6102",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6102#issuecomment-48753",
+    "user": "jhpalmieri"
+}
+```
 
 I will have some reviewer's changes on top of your changes soon. Meanwhile, I noticed that you removed the code related to the `FiniteDimensionalAlgebra` class. I don't know much about that class, and I don't mind the removal of that code. We could also reinstate it as a method for the class `CohomologyRing` ("exporting" it as a `FiniteDimensionalAlgebra`). Is that worth doing?
 
 
+
 ---
 
-Comment by tscrim created at 2015-10-15 02:52:59
+archive/issue_comments_048754.json:
+```json
+{
+    "body": "No, the `CohomologyRing` class takes the place of the `FiniteDimensionalAlgebra`. Was there something in that class that you were using that this version can't do? If there was, it is probably something we should generalize (on a followup ticket).",
+    "created_at": "2015-10-15T02:52:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6102",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6102#issuecomment-48754",
+    "user": "tscrim"
+}
+```
 
 No, the `CohomologyRing` class takes the place of the `FiniteDimensionalAlgebra`. Was there something in that class that you were using that this version can't do? If there was, it is probably something we should generalize (on a followup ticket).
 
 
+
 ---
 
-Comment by jhpalmieri created at 2015-10-15 04:30:35
+archive/issue_comments_048755.json:
+```json
+{
+    "body": "There isn't anything that I was using, but it has some methods (`cardinality`, `is_unitary`, `is_commutative`) that I suppose some people might want.",
+    "created_at": "2015-10-15T04:30:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6102",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6102#issuecomment-48755",
+    "user": "jhpalmieri"
+}
+```
 
 There isn't anything that I was using, but it has some methods (`cardinality`, `is_unitary`, `is_commutative`) that I suppose some people might want.
 
 
+
 ---
 
-Comment by tscrim created at 2015-10-15 13:08:39
+archive/issue_comments_048756.json:
+```json
+{
+    "body": "The `cardinality` should work, but it is not there and is something we should implement in generality. A default `is_unitary` that returns `True` could perhaps go in `UnitalAlgebras`, but the cohomology ring is unital as the sum of the 0-th degree components, correct (you had this in your `__pow__` method too)? There should be a generic `is_commutative` test for finite dimensional algebras with basis. I will open up a separate ticket when I get to my office.",
+    "created_at": "2015-10-15T13:08:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6102",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6102#issuecomment-48756",
+    "user": "tscrim"
+}
+```
 
 The `cardinality` should work, but it is not there and is something we should implement in generality. A default `is_unitary` that returns `True` could perhaps go in `UnitalAlgebras`, but the cohomology ring is unital as the sum of the 0-th degree components, correct (you had this in your `__pow__` method too)? There should be a generic `is_commutative` test for finite dimensional algebras with basis. I will open up a separate ticket when I get to my office.
 
 
+
 ---
 
-Comment by tscrim created at 2015-10-15 14:29:18
+archive/issue_comments_048757.json:
+```json
+{
+    "body": "This is now #19416.",
+    "created_at": "2015-10-15T14:29:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6102",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6102#issuecomment-48757",
+    "user": "tscrim"
+}
+```
 
 This is now #19416.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2015-10-15 18:57:15
+archive/issue_comments_048758.json:
+```json
+{
+    "body": "Okay, your turn again. If you're happy with these changes, set it to positive review. A summary of my changes:\n\n- various documentation fixes: some docstrings didn't get changed in your refactoring, some cross-references didn't work, etc.\n- I moved several instances of `if base_ring is None` to the methods in `cell_complex.py`. Before, some were there but some were in `algebraic_topological_model.py`.\n- I removed the explicit check about immutability for simplicial complexes because it wasn't being used: once we cache the method, immutability is checked as soon as the method is called, so checking again in the method is redundant. (And if we ever decide that the method should not be cached, there is no reason to check immutability.)",
+    "created_at": "2015-10-15T18:57:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6102",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6102#issuecomment-48758",
+    "user": "jhpalmieri"
+}
+```
 
 Okay, your turn again. If you're happy with these changes, set it to positive review. A summary of my changes:
 
@@ -565,29 +999,73 @@ Okay, your turn again. If you're happy with these changes, set it to positive re
 - I removed the explicit check about immutability for simplicial complexes because it wasn't being used: once we cache the method, immutability is checked as soon as the method is called, so checking again in the method is redundant. (And if we ever decide that the method should not be cached, there is no reason to check immutability.)
 
 
+
 ---
 
-Comment by tscrim created at 2015-10-15 19:19:26
+archive/issue_comments_048759.json:
+```json
+{
+    "body": "Then it is a positive review. This is a very nice addition to Sage which I'm hoping to get some good use from (especially once #18175 and more of SageManifolds gets merged in). Thanks for all your work.",
+    "created_at": "2015-10-15T19:19:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6102",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6102#issuecomment-48759",
+    "user": "tscrim"
+}
+```
 
 Then it is a positive review. This is a very nice addition to Sage which I'm hoping to get some good use from (especially once #18175 and more of SageManifolds gets merged in). Thanks for all your work.
 
 
+
 ---
 
-Comment by tscrim created at 2015-10-15 19:20:04
+archive/issue_comments_048760.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2015-10-15T19:20:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6102",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6102#issuecomment-48760",
+    "user": "tscrim"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2015-10-15 19:50:06
+archive/issue_comments_048761.json:
+```json
+{
+    "body": "Great! Thanks very much.",
+    "created_at": "2015-10-15T19:50:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6102",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6102#issuecomment-48761",
+    "user": "jhpalmieri"
+}
+```
 
 Great! Thanks very much.
 
 
+
 ---
 
-Comment by vbraun created at 2015-10-18 12:06:14
+archive/issue_comments_048762.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2015-10-18T12:06:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6102",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6102#issuecomment-48762",
+    "user": "vbraun"
+}
+```
 
 Resolution: fixed

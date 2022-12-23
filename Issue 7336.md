@@ -1,11 +1,21 @@
 # Issue 7336: boehm_gc fails to build on Cygwin
 
-Issue created by migration from https://trac.sagemath.org/ticket/7336
-
-Original creator: mhansen
-
-Original creation time: 2009-10-28 19:36:07
-
+archive/issues_007336.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  was\n\nIt fails with \n\n```\n  /bin/sh ./libtool --tag=CC --mode=link gcc -fexceptions -I libatomic_ops/src -g -O2   -o libcord.la -rpath /home/mhansen/sage-4.2/local/lib -version-info 1:3:0 -no-undefined cord/cordbscs.lo cord/cordprnt.lo cord/cordtest.lo cord/cordxtra.lo ./libgc.la \n\n  *** Warning: This system can not link to static lib archive ./libgc.la.\n  *** I have the capability to make that library automatically link in when\n  *** you link to this library.  But I can only do this if you have a\n  *** shared version of the library, which you do not appear to have.\n  rm -fr  .libs/libcord.dll.a\n  gcc -shared  cord/.libs/cordbscs.o cord/.libs/cordprnt.o cord/.libs/cordtest.o cord/.libs/cordxtra.o   -o .libs/cygcord-1.dll -Wl,--enable-auto-image-base -Xlinker --out-implib -Xlinker .libs/libcord.dll.a\n  Creating library file: .libs/libcord.dll.a\n  cord/.libs/cordbscs.o: In function `CORD_from_fn':\n  /home/mhansen/sage-4.2/spkg/build/boehm_gc-7.1.p2/src/cord/cordbscs.c:288: undefined reference to `_GC_malloc_atomic'\n  /home/mhansen/sage-4.2/spkg/build/boehm_gc-7.1.p2/src/cord/cordbscs.c:298: undefined reference to `_GC_malloc'\n  cord/.libs/cordbscs.o: In function `CORD_substr_closure':\n  /home/mhansen/sage-4.2/spkg/build/boehm_gc-7.1.p2/src/cord/cordbscs.c:344: undefined reference to `_GC_malloc'\n```\n\n\nThis can be fixed by setting THREADDLLIBS to be empty.\n\nI'll post an updated spkg here shortly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7336\n\n",
+    "created_at": "2009-10-28T19:36:07Z",
+    "labels": [
+        "porting: Cygwin",
+        "major",
+        "bug"
+    ],
+    "title": "boehm_gc fails to build on Cygwin",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7336",
+    "user": "mhansen"
+}
+```
 Assignee: tbd
 
 CC:  was
@@ -34,52 +44,133 @@ This can be fixed by setting THREADDLLIBS to be empty.
 
 I'll post an updated spkg here shortly.
 
+Issue created by migration from https://trac.sagemath.org/ticket/7336
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2009-11-06 05:30:43
+archive/issue_comments_061383.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-11-06T05:30:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7336",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7336#issuecomment-61383",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mhansen created at 2009-11-06 05:30:43
+archive/issue_comments_061384.json:
+```json
+{
+    "body": "The spkg with the above change (active only when $UNAME = \"CYGWIN\") can be found at http://sage.math.washington.edu/home/mhansen/boehm_gc-7.1.p3.spkg .",
+    "created_at": "2009-11-06T05:30:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7336",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7336#issuecomment-61384",
+    "user": "mhansen"
+}
+```
 
 The spkg with the above change (active only when $UNAME = "CYGWIN") can be found at http://sage.math.washington.edu/home/mhansen/boehm_gc-7.1.p3.spkg .
 
 
+
 ---
 
-Comment by was created at 2010-02-07 05:57:47
+archive/issue_comments_061385.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-02-07T05:57:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7336",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7336#issuecomment-61385",
+    "user": "was"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by was created at 2010-02-07 05:57:47
+archive/issue_comments_061386.json:
+```json
+{
+    "body": "Mike, I was trying to referee this, but the spkg is missing.  Did you delete it?  Can you repost it somewhere?",
+    "created_at": "2010-02-07T05:57:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7336",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7336#issuecomment-61386",
+    "user": "was"
+}
+```
 
 Mike, I was trying to referee this, but the spkg is missing.  Did you delete it?  Can you repost it somewhere?
 
 
+
 ---
 
-Comment by mhansen created at 2010-02-07 06:01:04
+archive/issue_comments_061387.json:
+```json
+{
+    "body": "It should be up now.",
+    "created_at": "2010-02-07T06:01:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7336",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7336#issuecomment-61387",
+    "user": "mhansen"
+}
+```
 
 It should be up now.
 
 
+
 ---
 
-Comment by mhansen created at 2010-02-07 06:01:20
+archive/issue_comments_061388.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-02-07T06:01:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7336",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7336#issuecomment-61388",
+    "user": "mhansen"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by mvngu created at 2010-02-15 05:29:27
+archive/issue_comments_061389.json:
+```json
+{
+    "body": "An updated spkg is available at\n\nhttp://sage.math.washington.edu/home/mvngu/spkg/standard/boehm/boehm_gc-7.1.p4.spkg\n\nThis includes Mike's changes at http://sage.math.washington.edu/home/mhansen/boehm_gc-7.1.p3.spkg, but based on the `boehm_gc` spkg in Sage 4.3.3.alpha0.",
+    "created_at": "2010-02-15T05:29:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7336",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7336#issuecomment-61389",
+    "user": "mvngu"
+}
+```
 
 An updated spkg is available at
 
@@ -88,37 +179,92 @@ http://sage.math.washington.edu/home/mvngu/spkg/standard/boehm/boehm_gc-7.1.p4.s
 This includes Mike's changes at http://sage.math.washington.edu/home/mhansen/boehm_gc-7.1.p3.spkg, but based on the `boehm_gc` spkg in Sage 4.3.3.alpha0.
 
 
+
 ---
 
-Comment by mvngu created at 2010-02-16 04:56:58
+archive/issue_comments_061390.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-02-16T04:56:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7336",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7336#issuecomment-61390",
+    "user": "mvngu"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mvngu created at 2010-02-16 04:56:58
+archive/issue_comments_061391.json:
+```json
+{
+    "body": "I rebased Mike's spkg, reviewed it, built it on Cygwin (winxp1 on boxen.math). The build went fine.",
+    "created_at": "2010-02-16T04:56:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7336",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7336#issuecomment-61391",
+    "user": "mvngu"
+}
+```
 
 I rebased Mike's spkg, reviewed it, built it on Cygwin (winxp1 on boxen.math). The build went fine.
 
 
+
 ---
 
-Comment by mvngu created at 2010-02-16 04:57:35
+archive/issue_comments_061392.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-02-16T04:57:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7336",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7336#issuecomment-61392",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mvngu created at 2010-02-16 04:57:35
+archive/issue_comments_061393.json:
+```json
+{
+    "body": "Merged in the standard spkg repository.",
+    "created_at": "2010-02-16T04:57:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7336",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7336#issuecomment-61393",
+    "user": "mvngu"
+}
+```
 
 Merged in the standard spkg repository.
 
 
+
 ---
 
-Comment by was created at 2010-05-27 02:57:48
+archive/issue_comments_061394.json:
+```json
+{
+    "body": "I just tried this spkg on cygwin and it fails:\n\n\n```\n\ndeps/cordxtra.Tpo -c cord/cordxtra.c -o cord/cordxtra.o >/dev/null 2>&1\n\n/bin/sh ./libtool --tag=CC --mode=link gcc -fexceptions -I libatomic_ops/src -g -O2 \u00a0 -o libcord.la -rpath /home/wstein/sage-4.4.3.alpha0/local/lib -version-info !1:3:0 -no-undefined cord/cordbscs.lo cord/cordprnt.lo cord/cordtest.lo cord/cordxtra.lo ./libgc.la\u00a0\n\n*** Warning: This system can not link to static lib archive ./libgc.la.\n\n*** I have the capability to make that library automatically link in when\n\n*** you link to this library. \u00a0But I can only do this if you have a\n\n*** shared version of the library, which you do not appear to have.\n\ngcc -shared \u00a0cord/.libs/cordbscs.o cord/.libs/cordprnt.o cord/.libs/cordtest.o cord/.libs/cordxtra.o \u00a0 -o .libs/cygcord-1.dll -Wl,--enable-auto-image-base -Xlinker --out-implib -Xlinker .libs/libcord.dll.a\n\nCreating library file: .libs/libcord.dll.acord/.libs/cordbscs.o: In function `CORD_from_fn':\n\n/home/wstein/sage-4.4.3.alpha0/spkg/build/boehm_gc-7.1.p4/src/cord/!cordbscs.c:288: undefined reference to `_GC_malloc_atomic'\n\n/home/wstein/sage-4.4.3.alpha0/spkg/build/boehm_gc-7.1.p4/src/cord/!cordbscs.c:298: undefined reference to `_GC_malloc'\n\ncord/.libs/cordbscs.o: In function `CORD_substr_closure':\n\n/home/wstein/sage-4.4.3.alpha0/spkg/build/boehm_gc-7.1.p4/src/cord/!cordbscs.c:344: undefined reference to `_GC_malloc'\n\ncord/.libs/cordbscs.o: In function `CORD_cat_char_star':\n\n/home/wstein/sage-4.4.3.alpha0/spkg/build/boehm_gc-7.1.p4/src/cord/!cordbscs.c:214: undefined reference to `_GC_malloc'\n\n/home/wstein/sage-4.4.3.alpha0/spkg/build/boehm_gc-7.1.p4/src/cord/!cordbscs.c:159: undefined reference to `_GC_malloc_atomic'\n\n/home/wstein/sage-4.4.3.alpha0/spkg/build/boehm_gc-7.1.p4/src/cord/!cordbscs.c:190: undefined reference to `_GC_malloc_atomic'\n\ncord/.libs/cordbscs.o: In function `CORD_cat':\n\n/home/wstein/sage-4.4.3.alpha0/spkg/build/boehm_gc-7.1.p4/src/cord/!cordbscs.c:255: undefined reference to `_GC_malloc'\n\ncord/.libs/cordbscs.o: In function `CORD_substr_checked':\n\n/home/wstein/sage-4.4.3.alpha0/spkg/build/boehm_gc-7.1.p4/src/cord/!cordbscs.c:367: undefined reference to `_GC_malloc_atomic'\n\n/home/wstein/sage-4.4.3.alpha0/spkg/build/boehm_gc-7.1.p4/src/cord/!cordbscs.c:438: undefined reference to `_GC_malloc_atomic'\n\ncord/.libs/cordprnt.o: In function `CORD_vsprintf':\n\n/home/wstein/sage-4.4.3.alpha0/spkg/build/boehm_gc-7.1.p4/src/cord/!cordprnt.c:276: undefined reference to `_GC_malloc_atomic'\n\n/home/wstein/sage-4.4.3.alpha0/spkg/build/boehm_gc-7.1.p4/src/cord/!cordprnt.c:220: undefined reference to `_GC_malloc_atomic'\n\ncord/.libs/cordtest.o: In function `main':\n\n/home/wstein/sage-4.4.3.alpha0/spkg/build/boehm_gc-7.1.p4/src/cord/!cordtest.c:229: undefined reference to `_GC_add_roots'\n\n/home/wstein/sage-4.4.3.alpha0/spkg/build/boehm_gc-7.1.p4/src/cord/!cordtest.c:229: undefined reference to `_GC_gcollect'\n\ncord/.libs/cordxtra.o: In function `CORD_from_file_lazy_inner':\n\n/home/wstein/sage-4.4.3.alpha0/spkg/build/boehm_gc-7.1.p4/src/cord/!cordxtra.c:565: undefined reference to `_GC_malloc'\n\n/home/wstein/sage-4.4.3.alpha0/spkg/build/boehm_gc-7.1.p4/src/cord/!cordxtra.c:585: undefined reference to `_GC_register_finalizer'\n\ncord/.libs/cordxtra.o: In function `CORD_lf_func':\n\n/home/wstein/sage-4.4.3.alpha0/spkg/build/boehm_gc-7.1.p4/src/cord/!cordxtra.c:547: undefined reference to `_GC_malloc_atomic'\n\n/home/wstein/sage-4.4.3.alpha0/spkg/build/boehm_gc-7.1.p4/src/cord/!cordxtra.c:549: undefined reference to `_GC_call_with_alloc_lock'\n\ncord/.libs/cordxtra.o: In function `CORD_ec_flush_buf':\n\n/home/wstein/sage-4.4.3.alpha0/spkg/build/boehm_gc-7.1.p4/src/cord/!cordxtra.c:416: undefined reference to `_GC_malloc_atomic'\n\ncord/.libs/cordxtra.o: In function `CORD_cat_char':\n\n/home/wstein/sage-4.4.3.alpha0/spkg/build/boehm_gc-7.1.p4/src/cord/!cordxtra.c:63: undefined reference to `_GC_malloc_atomic'\n\ncord/.libs/cordxtra.o: In function `CORD_from_char_star':\n\n/home/wstein/sage-4.4.3.alpha0/spkg/build/boehm_gc-7.1.p4/src/cord/!cordxtra.c:241: undefined reference to `_GC_malloc_atomic'\n\ncord/.libs/cordxtra.o: In function `CORD_to_char_star':\n\n/home/wstein/sage-4.4.3.alpha0/spkg/build/boehm_gc-7.1.p4/src/cord/!cordxtra.c:227: undefined reference to `_GC_malloc_atomic'\n\ncollect2: ld returned 1 exit status\n\nmake![1]: *** [libcord.la] Error 1\n\nmake![1]: Leaving directory `/home/wstein/sage-4.4.3.alpha0/spkg/build/boehm_gc-7.1.p4/src'\n\nmake: *** [all-recursive] Error 1\n\nError building BoehmGC.\n\nreal \u00a0 \u00a023m11.613s\n\nuser \u00a0 \u00a04m16.141s\n\nsys \u00a0 \u00a0 14m45.815s\n\nsage: An error occurred while installing boehm_gc-7.1.p4\n\nPlease email sage-devel !http://groups.google.com/group/sage-devel\n\nexplaining the problem and send the relevant part of\n\nof /home/wstein/sage-4.4.3.alpha0/install.log. \u00a0Describe your computer, operating system, etc.\n\nIf you want to try to fix the problem yourself, *don't* just cd to\n\n/home/wstein/sage-4.4.3.alpha0/spkg/build/boehm_gc-7.1.p4 and type 'make check' or whatever is appropriate.\n\nInstead, the following commands setup all environment variables\n\ncorrectly and load a subshell for you to debug the error:\n\n(cd '/home/wstein/sage-4.4.3.alpha0/spkg/build/boehm_gc-7.1.p4' && '/home/wstein/sage-4.4.3.alpha0/sage' -sh)\n\nWhen you are done debugging, you can type \"exit\" to leave the\n\nsubshell.\n\n```\n",
+    "created_at": "2010-05-27T02:57:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7336",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7336#issuecomment-61394",
+    "user": "was"
+}
+```
 
 I just tried this spkg on cygwin and it fails:
 
@@ -249,8 +395,19 @@ subshell.
 
 
 
+
 ---
 
-Comment by mhansen created at 2010-05-27 07:00:21
+archive/issue_comments_061395.json:
+```json
+{
+    "body": "I think there was a typo in the spkg that Minh made.  There is an spkg at http://sage.math.washington.edu/home/mhansen/boehm_gc-7.1.p5.spkg that should work.  Testing now on winxp1.",
+    "created_at": "2010-05-27T07:00:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7336",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7336#issuecomment-61395",
+    "user": "mhansen"
+}
+```
 
 I think there was a typo in the spkg that Minh made.  There is an spkg at http://sage.math.washington.edu/home/mhansen/boehm_gc-7.1.p5.spkg that should work.  Testing now on winxp1.

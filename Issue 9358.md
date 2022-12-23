@@ -1,11 +1,21 @@
 # Issue 9358: zn_poly passes all tests on on Solaris 10 64-bit SPARC, but fails to install
 
-Issue created by migration from https://trac.sagemath.org/ticket/9358
-
-Original creator: drkirkby
-
-Original creation time: 2010-06-28 16:47:26
-
+archive/issues_009358.json:
+```json
+{
+    "body": "Assignee: drkirkby\n\nCC:  jhpalmieri jsp\n\nznpoly passes about 40 self-tests, but fails to install properly. \n\n\n```\nzn_array_mulmid_fft()... ok\nzn_array_mul_fft_dft()... ok\nzn_array_invert()... ok\n\nAll tests passed.\ngcc -O3 -g -m64 -fPIC -L. -I/export/home/drkirkby/sage-4.5.alpha0/local/include \n-I./include -DNDEBUG -o src/tuning.o -c src/tuning.c\nIn file included from ./include/zn_poly.h:75,\n                 from ./include/zn_poly_internal.h:41,\n                 from src/tuning.c:28:\n./include/wide_arith.h:297:2: warning: #warning No assembly implementation of wi\nde multiplication available for this machine; using generic C code instead.\nar -r libzn_poly.a src/array.o src/invert.o src/ks_support.o src/mulmid.o src/mu\nlmid_ks.o src/misc.o src/mpn_mulmid.o src/mul.o src/mul_fft.o src/mul_fft_dft.o \nsrc/mul_ks.o src/nuss.o src/pack.o src/pmf.o src/pmfvec_fft.o src/tuning.o src/z\nn_mod.o\nar: creating libzn_poly.a\nranlib libzn_poly.a\ngcc -shared -m64  -Wl,-soname,libzn_poly-`cat VERSION`.so -o libzn_poly-`cat VER\nSION`.so src/array.o src/invert.o src/ks_support.o src/mulmid.o src/mulmid_ks.o \nsrc/misc.o src/mpn_mulmid.o src/mul.o src/mul_fft.o src/mul_fft_dft.o src/mul_ks\n.o src/nuss.o src/pack.o src/pmf.o src/pmfvec_fft.o src/tuning.o src/zn_mod.o -L\n/export/home/drkirkby/sage-4.5.alpha0/local/lib -lgmp -lm\nld: warning: option -o appears more than once, first setting taken\nld: fatal: file libzn_poly-0.9.so: unknown file type\nld: fatal: File processing errors. No output written to libzn_poly-0.9.so\ncollect2: ld returned 1 exit status\nmake: *** [libzn_poly.so] Error 1\nError building zn_poly shared library.\n\nreal\t1m38.825s\nuser\t1m34.368s\nsys\t0m3.849s\nsage: An error occurred while installing zn_poly-0.9.p4\n```\n\n\nThis looks like a problem in spkg-install, which is undoubtedly my fault. The script has in if/elif/else/fi which considers\n\n* A 64-bit build\n* A Solaris build with the Sun linker. \n\nIt does **not** cover the possibility of a 64-bit build on Solaris with the Sun linker. \n\nThis should be hopefully quite easy to fix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9358\n\n",
+    "created_at": "2010-06-28T16:47:26Z",
+    "labels": [
+        "porting: Solaris",
+        "major",
+        "bug"
+    ],
+    "title": "zn_poly passes all tests on on Solaris 10 64-bit SPARC, but fails to install",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9358",
+    "user": "drkirkby"
+}
+```
 Assignee: drkirkby
 
 CC:  jhpalmieri jsp
@@ -53,31 +63,70 @@ sage: An error occurred while installing zn_poly-0.9.p4
 
 This looks like a problem in spkg-install, which is undoubtedly my fault. The script has in if/elif/else/fi which considers
 
- * A 64-bit build
- * A Solaris build with the Sun linker. 
+* A 64-bit build
+* A Solaris build with the Sun linker. 
 
-It does *not* cover the possibility of a 64-bit build on Solaris with the Sun linker. 
+It does **not** cover the possibility of a 64-bit build on Solaris with the Sun linker. 
 
 This should be hopefully quite easy to fix.
 
+Issue created by migration from https://trac.sagemath.org/ticket/9358
+
+
+
+
 
 ---
+
+archive/issue_comments_088844.json:
+```json
+{
+    "body": "Attachment\n\nLog file of building on a Sun Blade 1000 SPARC (64-bit build)",
+    "created_at": "2010-06-28T16:48:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9358",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9358#issuecomment-88844",
+    "user": "drkirkby"
+}
+```
 
 Attachment
 
 Log file of building on a Sun Blade 1000 SPARC (64-bit build)
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-08-02 22:49:46
+archive/issue_comments_088845.json:
+```json
+{
+    "body": "This also fails with a 64-bit build on fulvia (Solaris on x86), by the way.",
+    "created_at": "2010-08-02T22:49:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9358",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9358#issuecomment-88845",
+    "user": "jhpalmieri"
+}
+```
 
 This also fails with a 64-bit build on fulvia (Solaris on x86), by the way.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-08-04 00:04:10
+archive/issue_comments_088846.json:
+```json
+{
+    "body": "Replying to [comment:2 jhpalmieri]:\n> This also fails with a 64-bit build on fulvia (Solaris on x86), by the way.\n\nYou do not surprise me. \n\nI have a patch, but I'm working on improving `spkg-install` and `spkg-check`. Currently `spkg-install` runs a quick test suite with `make check`. That does not seem such a bad idea, so I'm not changing that.  With SAGE_CHECK unset, this takes 46 seconds to build and run the quick test suite on my Sun Ultra 27 to build. \n\nHowever, `spkg-check` currently runs the same test suite for a second time, which is clearly pointless. I'm changing `spkg-check` to run run the more extensive test suite. That increases the time to 7 minutes and 37 seconds on my 3.33 GHz Sun Ultra 27. That will probably close to hour on the Sun T5240 't2.math.washington.edu', so if you run with SAGE_CHECK=yes, bear that in mind. \n\nDave",
+    "created_at": "2010-08-04T00:04:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9358",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9358#issuecomment-88846",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:2 jhpalmieri]:
 > This also fails with a 64-bit build on fulvia (Solaris on x86), by the way.
@@ -91,18 +140,40 @@ However, `spkg-check` currently runs the same test suite for a second time, whic
 Dave
 
 
+
 ---
 
-Comment by drkirkby created at 2010-08-04 00:57:56
+archive/issue_comments_088847.json:
+```json
+{
+    "body": "Whilst looking at the zn_poly package, I found what I think is a serious flaw in the dependencies for the package - see #9681. I'd appreciate a second pair of eyes on that one. \n\nDave",
+    "created_at": "2010-08-04T00:57:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9358",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9358#issuecomment-88847",
+    "user": "drkirkby"
+}
+```
 
 Whilst looking at the zn_poly package, I found what I think is a serious flaw in the dependencies for the package - see #9681. I'd appreciate a second pair of eyes on that one. 
 
 Dave
 
 
+
 ---
 
-Comment by drkirkby created at 2010-08-07 20:01:41
+archive/issue_comments_088848.json:
+```json
+{
+    "body": "A fix can now be found. \n\nhttp://boxen.math.washington.edu/home/kirkby/patches/zn_poly-0.9.p5.spkg\n\nA much more extensive test suite can now be run if `SAGE_CHECK` is exported to \"yes\". \n\nDave",
+    "created_at": "2010-08-07T20:01:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9358",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9358#issuecomment-88848",
+    "user": "drkirkby"
+}
+```
 
 A fix can now be found. 
 
@@ -113,34 +184,91 @@ A much more extensive test suite can now be run if `SAGE_CHECK` is exported to "
 Dave
 
 
+
 ---
+
+archive/issue_comments_088849.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-08-07T20:02:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9358",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9358#issuecomment-88849",
+    "user": "drkirkby"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by drkirkby created at 2010-08-07 20:02:51
+archive/issue_comments_088850.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-08-07T20:02:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9358",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9358#issuecomment-88850",
+    "user": "drkirkby"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-08-12 00:03:16
+archive/issue_comments_088851.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-08-12T00:03:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9358",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9358#issuecomment-88851",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-08-12 00:03:16
+archive/issue_comments_088852.json:
+```json
+{
+    "body": "Looks good to me.  Builds successfully on lots of different platforms with SAGE_CHECK='yes' including t2 (both 32- and 64-bit) and fulvia (32-bit, and according to SAGE_CHECK, 64-bit -- since I don't have a working 64-bit build because of maxima, it's hard to be positive).",
+    "created_at": "2010-08-12T00:03:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9358",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9358#issuecomment-88852",
+    "user": "jhpalmieri"
+}
+```
 
 Looks good to me.  Builds successfully on lots of different platforms with SAGE_CHECK='yes' including t2 (both 32- and 64-bit) and fulvia (32-bit, and according to SAGE_CHECK, 64-bit -- since I don't have a working 64-bit build because of maxima, it's hard to be positive).
 
 
+
 ---
 
-Comment by mpatel created at 2010-08-15 08:04:25
+archive/issue_comments_088853.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-08-15T08:04:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9358",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9358#issuecomment-88853",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed

@@ -1,24 +1,62 @@
 # Issue 6968: improve _vector_times_matrix
 
-Issue created by migration from https://trac.sagemath.org/ticket/6968
-
-Original creator: ylchapuy
-
-Original creation time: 2009-09-20 20:30:00
-
+archive/issues_006968.json:
+```json
+{
+    "body": "Assignee: was\n\nVery small patch avoiding multiple copies\n\nIssue created by migration from https://trac.sagemath.org/ticket/6968\n\n",
+    "created_at": "2009-09-20T20:30:00Z",
+    "labels": [
+        "linear algebra",
+        "major",
+        "bug"
+    ],
+    "title": "improve _vector_times_matrix",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6968",
+    "user": "ylchapuy"
+}
+```
 Assignee: was
 
 Very small patch avoiding multiple copies
 
+Issue created by migration from https://trac.sagemath.org/ticket/6968
+
+
+
+
 
 ---
+
+archive/issue_comments_057649.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-09-20T20:31:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6968",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6968#issuecomment-57649",
+    "user": "ylchapuy"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by ylchapuy created at 2009-09-20 20:33:58
+archive/issue_comments_057650.json:
+```json
+{
+    "body": "for the record:\n\nbefore:\n\n```\nsage: m=identity_matrix(1000,sparse=True)\nsage: v=vector([1]*1000,sparse=True)\nsage: time p = v*m\nCPU times: user 2.26 s, sys: 0.00 s, total: 2.26 s\nWall time: 2.26 s \n```\n\n\nafter:\n\n```\nsage: m=identity_matrix(1000,sparse=True)\nsage: v=vector([1]*1000,sparse=True) \nsage: time p = v*m \nCPU times: user 0.20 s, sys: 0.00 s, total: 0.20 s\nWall time: 0.21 s\n```\n",
+    "created_at": "2009-09-20T20:33:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6968",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6968#issuecomment-57650",
+    "user": "ylchapuy"
+}
+```
 
 for the record:
 
@@ -45,22 +83,55 @@ Wall time: 0.21 s
 
 
 
+
 ---
 
-Comment by was created at 2009-09-20 21:55:46
+archive/issue_comments_057651.json:
+```json
+{
+    "body": "Nice!!",
+    "created_at": "2009-09-20T21:55:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6968",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6968#issuecomment-57651",
+    "user": "was"
+}
+```
 
 Nice!!
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-24 16:45:51
+archive/issue_comments_057652.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-09-24T16:45:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6968",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6968#issuecomment-57652",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-27 10:24:47
+archive/issue_comments_057653.json:
+```json
+{
+    "body": "There is no 4.1.2.alpha3. Sage 4.1.2.alpha3 was William Stein's release for working on making the notebook a standalone package.",
+    "created_at": "2009-09-27T10:24:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6968",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6968#issuecomment-57653",
+    "user": "mvngu"
+}
+```
 
 There is no 4.1.2.alpha3. Sage 4.1.2.alpha3 was William Stein's release for working on making the notebook a standalone package.

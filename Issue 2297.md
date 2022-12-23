@@ -1,11 +1,21 @@
 # Issue 2297: Tensor product of matrices [with patch, needs review]
 
-Issue created by migration from https://trac.sagemath.org/ticket/2297
-
-Original creator: SimonKing
-
-Original creation time: 2008-02-24 20:48:15
-
+archive/issues_002297.json:
+```json
+{
+    "body": "Assignee: SimonKing\n\nKeywords: tensor product\n\nI was missing a tensor product for matrices in Sage. While this is easy to obtain using `block_matrix`, it might be nicer to customize this as a method of `Matrix`. Example:\n\n\n```\nsage: M1=Matrix(QQ,[[-1,0],[-1/2,-1]])\nsage: M2=Matrix(ZZ,[[1,-1,2],[-2,4,8]])\nsage: M1.tensor_product(M2)\n\n[  -1    1   -2|   0    0    0]\n[   2   -4   -8|   0    0    0]\n[--------------+--------------]\n[-1/2  1/2   -1|  -1    1   -2]\n[   1   -2   -4|   2   -4   -8]\nsage: M2.tensor_product(M1)\n\n[  -1    0|   1    0|  -2    0]\n[-1/2   -1| 1/2    1|  -1   -2]\n[---------+---------+---------]\n[   2    0|  -4    0|  -8    0]\n[   1    2|  -2   -4|  -4   -8]\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2297\n\n",
+    "created_at": "2008-02-24T20:48:15Z",
+    "labels": [
+        "algebraic geometry",
+        "minor",
+        "enhancement"
+    ],
+    "title": "Tensor product of matrices [with patch, needs review]",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2297",
+    "user": "SimonKing"
+}
+```
 Assignee: SimonKing
 
 Keywords: tensor product
@@ -34,29 +44,79 @@ sage: M2.tensor_product(M1)
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2297
+
+
+
+
 
 ---
+
+archive/issue_comments_015230.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-02-24T21:11:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2297",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2297#issuecomment-15230",
+    "user": "SimonKing"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by SimonKing created at 2008-02-24 21:11:46
+archive/issue_comments_015231.json:
+```json
+{
+    "body": "Changing component from algebraic geometry to linear algebra.",
+    "created_at": "2008-02-24T21:11:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2297",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2297#issuecomment-15231",
+    "user": "SimonKing"
+}
+```
 
 Changing component from algebraic geometry to linear algebra.
 
 
+
 ---
 
-Comment by mhansen created at 2008-02-24 21:52:07
+archive/issue_comments_015232.json:
+```json
+{
+    "body": "Hmm... I personally think that this should be called kronecker_product.",
+    "created_at": "2008-02-24T21:52:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2297",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2297#issuecomment-15232",
+    "user": "mhansen"
+}
+```
 
 Hmm... I personally think that this should be called kronecker_product.
 
 
+
 ---
 
-Comment by SimonKing created at 2008-02-25 08:53:55
+archive/issue_comments_015233.json:
+```json
+{
+    "body": "Replying to [comment:2 mhansen]:\n> Hmm... I personally think that this should be called kronecker_product.\n\nI wouldn't mind to call it like that. However, note that the corresponding function for Singular matrices is called tensor:\n\n```\nsage: R=singular.ring(0,'(x,y)','dp')\nsage: C=singular.matrix(2,2,'1,-1,0, 2')\nsage: D=singular.matrix(3,3,'0,0,-x, 0,y,0, x*y,0,0')\nsage: C.tensor(D)\n\n0,  0,-x,0,    0,  x,\n0,  y,0, 0,    -y, 0,\nx*y,0,0, -x*y, 0,  0,\n0,  0,0, 0,    0,  -2*x,\n0,  0,0, 0,    2*y,0,\n0,  0,0, 2*x*y,0,  0\n```\n\nThe implementation of the Kronecker product is part of a plot to define tensor products for free modules over polynomial rings (this is what i needed, originally).",
+    "created_at": "2008-02-25T08:53:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2297",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2297#issuecomment-15233",
+    "user": "SimonKing"
+}
+```
 
 Replying to [comment:2 mhansen]:
 > Hmm... I personally think that this should be called kronecker_product.
@@ -80,24 +140,57 @@ x*y,0,0, -x*y, 0,  0,
 The implementation of the Kronecker product is part of a plot to define tensor products for free modules over polynomial rings (this is what i needed, originally).
 
 
+
 ---
 
-Comment by AlexGhitza created at 2008-02-26 04:53:56
+archive/issue_comments_015234.json:
+```json
+{
+    "body": "I've played around with it and I think it looks good.  The name \"tensor product\" is just as common as \"Kronecker product\" for this.  (Actually, it's also a much better name than Kronecker product because it says where the operation is coming from).  If there is popular demand for this, we could have another method kronecker_product() that just calls this.\n\nAnyway, I say merge, and I'm eager to see the rest of the tensor product stuff.",
+    "created_at": "2008-02-26T04:53:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2297",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2297#issuecomment-15234",
+    "user": "AlexGhitza"
+}
+```
 
 I've played around with it and I think it looks good.  The name "tensor product" is just as common as "Kronecker product" for this.  (Actually, it's also a much better name than Kronecker product because it says where the operation is coming from).  If there is popular demand for this, we could have another method kronecker_product() that just calls this.
 
 Anyway, I say merge, and I'm eager to see the rest of the tensor product stuff.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-26 05:07:05
+archive/issue_comments_015235.json:
+```json
+{
+    "body": "Merged in Sage 2.10.3.alpha0",
+    "created_at": "2008-02-26T05:07:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2297",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2297#issuecomment-15235",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.3.alpha0
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-26 05:07:05
+archive/issue_comments_015236.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-02-26T05:07:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2297",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2297#issuecomment-15236",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

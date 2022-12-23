@@ -1,11 +1,21 @@
 # Issue 4949: Optionally build spkgs in $SAGE_BUILD_TMPDIR
 
-Issue created by migration from https://trac.sagemath.org/ticket/4949
-
-Original creator: mabshoff
-
-Original creation time: 2009-01-07 05:20:19
-
+archive/issues_004949.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nCC:  drkirkby leif\n\n$HOME can be slow in case it is NFS mounted for example. So using local scratch space or even better a RAM disk should speed up the build by a nice factor. To so so use $SAGE_BUILD_TMPDIR in case it exists instead of $SAGE_ROOT/spkg/build.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4949\n\n",
+    "created_at": "2009-01-07T05:20:19Z",
+    "labels": [
+        "build",
+        "critical",
+        "enhancement"
+    ],
+    "title": "Optionally build spkgs in $SAGE_BUILD_TMPDIR",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4949",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 CC:  drkirkby leif
@@ -16,61 +26,153 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/4949
+
+
+
+
 
 ---
 
-Comment by was created at 2009-01-09 17:28:04
+archive/issue_comments_037570.json:
+```json
+{
+    "body": "As a temporary hack to see how this \"feels\" you could delete spkg/build, then make it a symlink to /tmp/build/.",
+    "created_at": "2009-01-09T17:28:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37570",
+    "user": "was"
+}
+```
 
 As a temporary hack to see how this "feels" you could delete spkg/build, then make it a symlink to /tmp/build/.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-08-06 21:50:30
+archive/issue_comments_037571.json:
+```json
+{
+    "body": "Changing priority from critical to minor.",
+    "created_at": "2010-08-06T21:50:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37571",
+    "user": "jhpalmieri"
+}
+```
 
 Changing priority from critical to minor.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-08-06 21:50:30
+archive/issue_comments_037572.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-08-06T21:50:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37572",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-08-06 21:50:30
+archive/issue_comments_037573.json:
+```json
+{
+    "body": "Here's a patch.  This implements both `SAGE_BUILD_TMPDIR` and `SAGE_KEEP_BUILT_SPKGS` -- see #9444.  (This is an incremental change rather than a complete reworking of the sage-spkg script, which might be called for.)",
+    "created_at": "2010-08-06T21:50:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37573",
+    "user": "jhpalmieri"
+}
+```
 
 Here's a patch.  This implements both `SAGE_BUILD_TMPDIR` and `SAGE_KEEP_BUILT_SPKGS` -- see #9444.  (This is an incremental change rather than a complete reworking of the sage-spkg script, which might be called for.)
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-08-06 22:02:27
+archive/issue_comments_037574.json:
+```json
+{
+    "body": "A little explanation: BUILD is defined (as \"build\") by sage-env, but it was used sporadically in sage-spkg.  With this patch, it is used more consistently.",
+    "created_at": "2010-08-06T22:02:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37574",
+    "user": "jhpalmieri"
+}
+```
 
 A little explanation: BUILD is defined (as "build") by sage-env, but it was used sporadically in sage-spkg.  With this patch, it is used more consistently.
 
 
+
 ---
 
-Comment by mpatel created at 2010-08-06 22:37:49
+archive/issue_comments_037575.json:
+```json
+{
+    "body": "If/when this merges, we should consider closing #6550.  `SAGE_KEEP_BUILT_SPKGS` is a much better name than `SAGE_KEEP_SPKG_BUILD`.",
+    "created_at": "2010-08-06T22:37:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37575",
+    "user": "mpatel"
+}
+```
 
 If/when this merges, we should consider closing #6550.  `SAGE_KEEP_BUILT_SPKGS` is a much better name than `SAGE_KEEP_SPKG_BUILD`.
 
 
+
 ---
 
-Comment by leif created at 2010-08-06 22:41:16
+archive/issue_comments_037576.json:
+```json
+{
+    "body": "Nice to see progress in the build process... :)\n\nSee also http://trac.sagemath.org/sage_trac/ticket/6550#comment:7 .",
+    "created_at": "2010-08-06T22:41:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37576",
+    "user": "leif"
+}
+```
 
 Nice to see progress in the build process... :)
 
 See also http://trac.sagemath.org/sage_trac/ticket/6550#comment:7 .
 
 
+
 ---
 
-Comment by leif created at 2010-08-06 22:47:59
+archive/issue_comments_037577.json:
+```json
+{
+    "body": "Should `SAGE_BUILD_TMPDIR` default to `SAGE_TMPDIR`?\n\n(We have btw. lots of - in some cases not very well-named - environment variables.)\n\nMaking use of e.g. a RAM disk (or some user-provided directory) for doctesting is also worth doing.",
+    "created_at": "2010-08-06T22:47:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37577",
+    "user": "leif"
+}
+```
 
 Should `SAGE_BUILD_TMPDIR` default to `SAGE_TMPDIR`?
 
@@ -79,9 +181,20 @@ Should `SAGE_BUILD_TMPDIR` default to `SAGE_TMPDIR`?
 Making use of e.g. a RAM disk (or some user-provided directory) for doctesting is also worth doing.
 
 
+
 ---
 
-Comment by mpatel created at 2010-08-19 21:59:12
+archive/issue_comments_037578.json:
+```json
+{
+    "body": "Replying to [comment:7 leif]:\n> Making use of e.g. a RAM disk (or some user-provided directory) for doctesting is also worth doing.\n\nYou can already set `SAGE_TESTDIR` (or `DOT_SAGE`) to do this.  Or maybe I misunderstand?",
+    "created_at": "2010-08-19T21:59:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37578",
+    "user": "mpatel"
+}
+```
 
 Replying to [comment:7 leif]:
 > Making use of e.g. a RAM disk (or some user-provided directory) for doctesting is also worth doing.
@@ -89,16 +202,38 @@ Replying to [comment:7 leif]:
 You can already set `SAGE_TESTDIR` (or `DOT_SAGE`) to do this.  Or maybe I misunderstand?
 
 
+
 ---
 
-Comment by mariah created at 2011-05-20 14:01:27
+archive/issue_comments_037579.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2011-05-20T14:01:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37579",
+    "user": "mariah"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by mariah created at 2011-05-20 14:01:27
+archive/issue_comments_037580.json:
+```json
+{
+    "body": "[attachment: trac_4949-scripts.patch] does not apply:\n\n\n```\nsage: hg_sage.apply(\"/home/mariah/trac_4949-scripts.patch\")\ncd \"/home/mariah/sage/sage-4.7.rc2-x86_64-Linux-core2-fc/devel/sage\" && hg status\ncd \"/home/mariah/sage/sage-4.7.rc2-x86_64-Linux-core2-fc/devel/sage\" && hg status\ncd \"/home/mariah/sage/sage-4.7.rc2-x86_64-Linux-core2-fc/devel/sage\" && hg import   \"/home/mariah/trac_4949-scripts.patch\"\napplying /home/mariah/trac_4949-scripts.patch\nunable to find 'sage-spkg' for patching\n5 out of 5 hunks FAILED -- saving rejects to file sage-spkg.rej\nabort: patch failed to apply\nsage: \n```\n",
+    "created_at": "2011-05-20T14:01:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37580",
+    "user": "mariah"
+}
+```
 
 [attachment: trac_4949-scripts.patch] does not apply:
 
@@ -117,53 +252,130 @@ sage:
 
 
 
+
 ---
 
-Comment by jhpalmieri created at 2011-05-20 14:40:52
+archive/issue_comments_037581.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2011-05-20T14:40:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37581",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2011-05-20 14:40:52
+archive/issue_comments_037582.json:
+```json
+{
+    "body": "Here's a rebased version of [attachment:trac_4949-scripts.patch].  Note that it's for the scripts repository, so you have to apply it with \"hg_scripts.apply(...)\" rather than \"hg_sage.apply(...)\".",
+    "created_at": "2011-05-20T14:40:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37582",
+    "user": "jhpalmieri"
+}
+```
 
 Here's a rebased version of [attachment:trac_4949-scripts.patch].  Note that it's for the scripts repository, so you have to apply it with "hg_scripts.apply(...)" rather than "hg_sage.apply(...)".
 
 
+
 ---
 
-Comment by mariah created at 2011-05-25 13:35:20
+archive/issue_comments_037583.json:
+```json
+{
+    "body": "I applied the patch [attachment:trac_4949-scripts.patch], then moved\nthe modified sage-spkg file to a fresh source directory of sage-4.7.rc4.  I set SAGE_BUILD_TMPDIR and SAGE_KEEP_BUILT_SPKGS, and\ndid 'make testlong'.  The builds took place in the location SAGE_BUILD_TMPDIR and all tests passed.  I applied the patch [attachment: trac_4949-installation.patch], did 'sage -b', then 'sage -docbuild installation html' and verified that the documentation change was made and makes sense.  Positive review.",
+    "created_at": "2011-05-25T13:35:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37583",
+    "user": "mariah"
+}
+```
 
 I applied the patch [attachment:trac_4949-scripts.patch], then moved
 the modified sage-spkg file to a fresh source directory of sage-4.7.rc4.  I set SAGE_BUILD_TMPDIR and SAGE_KEEP_BUILT_SPKGS, and
 did 'make testlong'.  The builds took place in the location SAGE_BUILD_TMPDIR and all tests passed.  I applied the patch [attachment: trac_4949-installation.patch], did 'sage -b', then 'sage -docbuild installation html' and verified that the documentation change was made and makes sense.  Positive review.
 
 
+
 ---
 
-Comment by mariah created at 2011-05-25 13:35:20
+archive/issue_comments_037584.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2011-05-25T13:35:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37584",
+    "user": "mariah"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-05-27 08:07:56
+archive/issue_comments_037585.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_info.",
+    "created_at": "2011-05-27T08:07:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37585",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from positive_review to needs_info.
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-05-27 08:07:56
+archive/issue_comments_037586.json:
+```json
+{
+    "body": "I think one should add a note in the documentation about how much disk space this is expected to use.  Are the spkgs first all built and then all deleted or are they built-deleted one by one?",
+    "created_at": "2011-05-27T08:07:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37586",
+    "user": "jdemeyer"
+}
+```
 
 I think one should add a note in the documentation about how much disk space this is expected to use.  Are the spkgs first all built and then all deleted or are they built-deleted one by one?
 
 
+
 ---
 
-Comment by leif created at 2011-08-03 14:09:32
+archive/issue_comments_037587.json:
+```json
+{
+    "body": "Wouldn't it be sufficient to just (keep the -- perhaps slightly modified -- documentation and the three lines honoring `SAGE_KEEP_BUILT_SPKGS` and) change the variable `BUILD` (bad name btw.) in `sage-env` if `SAGE_BUILD_TMPDIR` is set?\n\nThat way this ticket would hardly collide with #11021, which fixes a lot in `sage-spkg` (and a bug in `sage-env` w.r.t. `BUILD`), also using `$BUILD` consistently there.\n\nI also would use `SAGE_BUILD_TMPDIR` \"directly\", without creating yet another subdirectory (`build`) in it; the spkgs are extracted into their own directories anyway.",
+    "created_at": "2011-08-03T14:09:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37587",
+    "user": "leif"
+}
+```
 
 Wouldn't it be sufficient to just (keep the -- perhaps slightly modified -- documentation and the three lines honoring `SAGE_KEEP_BUILT_SPKGS` and) change the variable `BUILD` (bad name btw.) in `sage-env` if `SAGE_BUILD_TMPDIR` is set?
 
@@ -172,39 +384,83 @@ That way this ticket would hardly collide with #11021, which fixes a lot in `sag
 I also would use `SAGE_BUILD_TMPDIR` "directly", without creating yet another subdirectory (`build`) in it; the spkgs are extracted into their own directories anyway.
 
 
----
-
-Comment by leif created at 2011-08-03 14:11:56
-
-Ooops, unfortunately it's not _that_ easy, because `$BUILD` is also just used as a _sub_directory name in `sage-spkg`.
-
 
 ---
 
-Comment by jhpalmieri created at 2011-08-04 15:27:48
+archive/issue_comments_037588.json:
+```json
+{
+    "body": "Ooops, unfortunately it's not *that* easy, because `$BUILD` is also just used as a *sub*directory name in `sage-spkg`.",
+    "created_at": "2011-08-03T14:11:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37588",
+    "user": "leif"
+}
+```
+
+Ooops, unfortunately it's not *that* easy, because `$BUILD` is also just used as a *sub*directory name in `sage-spkg`.
+
+
+
+---
+
+archive/issue_comments_037589.json:
+```json
+{
+    "body": "Replying to [comment:13 jdemeyer]:\n> I think one should add a note in the documentation about how much disk space this is expected to use.  Are the spkgs first all built and then all deleted or are they built-deleted one by one?\n\nI've modified the documentation to try to address this.  I built Sage on various machines (sage.math, David Kirkby's machine hawk, various skynet machines), and found that\n\n- the single largest subdirectory of \"build\" can be up to 1165M (building eclib on the skynet machines iras and cleo, ia64 processors).  On all of the other machines, it took at most 880M.  On sage.math, cicero, and my mac, the largest took 320M.\n\n- the total amount of disk space, if you keep all of the subdirectories can be as large as 5.3G (iras and cleo again) or as small as 2.2G (hawk).\n\nI've put in conservative estimates for these in the documentation.",
+    "created_at": "2011-08-04T15:27:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37589",
+    "user": "jhpalmieri"
+}
+```
 
 Replying to [comment:13 jdemeyer]:
 > I think one should add a note in the documentation about how much disk space this is expected to use.  Are the spkgs first all built and then all deleted or are they built-deleted one by one?
 
 I've modified the documentation to try to address this.  I built Sage on various machines (sage.math, David Kirkby's machine hawk, various skynet machines), and found that
 
- - the single largest subdirectory of "build" can be up to 1165M (building eclib on the skynet machines iras and cleo, ia64 processors).  On all of the other machines, it took at most 880M.  On sage.math, cicero, and my mac, the largest took 320M.
+- the single largest subdirectory of "build" can be up to 1165M (building eclib on the skynet machines iras and cleo, ia64 processors).  On all of the other machines, it took at most 880M.  On sage.math, cicero, and my mac, the largest took 320M.
 
- - the total amount of disk space, if you keep all of the subdirectories can be as large as 5.3G (iras and cleo again) or as small as 2.2G (hawk).
+- the total amount of disk space, if you keep all of the subdirectories can be as large as 5.3G (iras and cleo again) or as small as 2.2G (hawk).
 
 I've put in conservative estimates for these in the documentation.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2011-08-04 15:27:48
+archive/issue_comments_037590.json:
+```json
+{
+    "body": "Changing status from needs_info to needs_review.",
+    "created_at": "2011-08-04T15:27:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37590",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from needs_info to needs_review.
 
 
+
 ---
 
-Comment by leif created at 2011-08-04 18:12:55
+archive/issue_comments_037591.json:
+```json
+{
+    "body": "Replying to [comment:16 jhpalmieri]:\n> I've modified the documentation to try to address this.\n\nThe usage of `$` is a bit inconsistent: `:file:`$SAGE_ROOT/...`` vs. `:file:`SAGE_BUILD_TMPDIR/...``.\n\nI would add a warning that `SAGE_BUILD_TMPDIR` must not contain spaces, and should be an absolute path (starting with a slash or whatever). Note that none of this is checked in `sage-spkg`; also, a broken `test` might return `true` for an empty string, so I would also `test -n \"$SAGE_BUILD_TMPDIR\"`.\n\nAlso, if `SAGE_BUILD_TMPDIR` is set but the directory does not exist, no warning or error message is printed.\n\n\n\n\n> I built Sage on various machines [...] and found that [...]\n> I've put in conservative estimates for these in the documentation.\n\nThe actual space required or used does hardly depend on the platform, but the file system characteristics, i.e. the block size.\n\nThe worst case space usage is theoretically unlimited when taking into account rebuilds and (re)installations of newer packages, as old build dirs are moved to the `$BUILD/old/` directory if `-s` was specified or `SAGE_KEEP_BUILT_SPKGS=yes`.\n\n(Btw., for some reason the build dirs of the base packages never get deleted. Perhaps that's a side-effect of the \"`BUILD` bug\", haven't tracked this down.)\n\nI would mention the relationship to the `-s` parameter when installing packages with `sage`; the main reason for the additional environment variable is that there's no other way to achieve what `-s` does when using `make`.",
+    "created_at": "2011-08-04T18:12:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37591",
+    "user": "leif"
+}
+```
 
 Replying to [comment:16 jhpalmieri]:
 > I've modified the documentation to try to address this.
@@ -230,9 +486,20 @@ The worst case space usage is theoretically unlimited when taking into account r
 I would mention the relationship to the `-s` parameter when installing packages with `sage`; the main reason for the additional environment variable is that there's no other way to achieve what `-s` does when using `make`.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2011-08-07 20:50:52
+archive/issue_comments_037592.json:
+```json
+{
+    "body": "Replying to [comment:17 leif]:\n> The actual space required or used does hardly depend on the platform, but the file system characteristics, i.e. the block size.\n\nWell, many of the systems on which I tested were on skynet, built in subdirectories of a shared home directory -- all of the skynet machines use the same $HOME.  On some of those machines, building eclib took over 1 gigabyte, while on others, it took under 320 megabytes.  There are certainly differences between the types of libraries produced: .so files on linux, .dylib files on darwin, etc.  I would also guess that the size of the library files might vary depending on the compiler, whether it's 32- or 64-bit, etc.\n\n> The worst case space usage is theoretically unlimited when taking into account rebuilds and (re)installations of newer packages, as old build dirs are moved to the $BUILD/old/ directory if -s was specified or SAGE_KEEP_BUILT_SPKGS=yes.\n\nRight, but the documentation as written is accurate (\"After a full build of Sage...\") and I think is good enough.  Anyone who sets this variable should be paying attention to the build directory anyway.\n\n> (Btw., for some reason the build dirs of the base packages never get deleted. Perhaps that's a side-effect of the \"BUILD bug\", haven't tracked this down.)\n\n`prereq` and `bzip` are not installed by sage-spkg but by their own install scripts (`prereq-0.9-install` and `bzip2-1.0.5-install`), which create subdirectories of `build` but don't delete them when they're done.\n\nAdding a comment about the relationship to the `-s` option is a good idea.  I'll try to add some tests for `SAGE_BUILD_TEMPDIR`, too.",
+    "created_at": "2011-08-07T20:50:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37592",
+    "user": "jhpalmieri"
+}
+```
 
 Replying to [comment:17 leif]:
 > The actual space required or used does hardly depend on the platform, but the file system characteristics, i.e. the block size.
@@ -250,21 +517,56 @@ Right, but the documentation as written is accurate ("After a full build of Sage
 Adding a comment about the relationship to the `-s` option is a good idea.  I'll try to add some tests for `SAGE_BUILD_TEMPDIR`, too.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2011-08-08 03:04:25
+archive/issue_comments_037593.json:
+```json
+{
+    "body": "Here are two new patches.  The scripts patch checks for the existence of SAGE_BUILD_TMPDIR, and it also should correctly delete the build subdirectories afterwards -- I had missed this in the previous patch.",
+    "created_at": "2011-08-08T03:04:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37593",
+    "user": "jhpalmieri"
+}
+```
 
 Here are two new patches.  The scripts patch checks for the existence of SAGE_BUILD_TMPDIR, and it also should correctly delete the build subdirectories afterwards -- I had missed this in the previous patch.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2011-08-08 03:05:42
+archive/issue_comments_037594.json:
+```json
+{
+    "body": "scripts repo",
+    "created_at": "2011-08-08T03:05:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37594",
+    "user": "jhpalmieri"
+}
+```
 
 scripts repo
 
 
+
 ---
+
+archive/issue_comments_037595.json:
+```json
+{
+    "body": "Attachment\n\nThere's a `$` missing in\n\n```\n:file:`$SAGE_ROOT/spkg/build` or :file:`SAGE_BUILD_TMPDIR/build`\n```\n\n\nI would clarify that `SAGE_KEEP_BUILT_SPKGS=yes` affects *all* spkg installations (whether with `./sage [-i|-f]` or `make`, the latter also when *re*building [parts of] Sage), and that the build directory (within the Sage tree or in `$SAGE_BUILD_TMPDIR/`) will definitely grow over time, i.e., whenever new packages get installed or already existing / built packages reinstalled, unless one unsets `SAGE_KEEP_BUILT_SPKGS` at some point (which of course doesn't delete existing subdirectories in the first place).\n\n\n\n\nYour observations regarding the build tree sizes on skynet are interesting; there IMHO shouldn't be such a large difference, at least not when doing \"the same thing\".\n\nThere are differences in object code size between RISC and CISC architectures (on the former usually larger, but *at most* by a factor of 2 I think) and between 32-bit and 64-bit (mostly on RISC architectures, and also if there's a lot of static data involving e.g. pointers or integers of different size); other differences might be due to debug symbols and *how and what* we build (e.g. assembly implementations, static or dynamic libraries in addition) on a specific platform.\n\nI would mention the effect of the block size of the file system though (as a note perhaps), since many packages consist of a large number of small files.",
+    "created_at": "2011-08-08T12:58:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37595",
+    "user": "leif"
+}
+```
 
 Attachment
 
@@ -275,37 +577,61 @@ There's a `$` missing in
 ```
 
 
-I would clarify that `SAGE_KEEP_BUILT_SPKGS=yes` affects _all_ spkg installations (whether with `./sage [-i|-f]` or `make`, the latter also when _re_building [parts of] Sage), and that the build directory (within the Sage tree or in `$SAGE_BUILD_TMPDIR/`) will definitely grow over time, i.e., whenever new packages get installed or already existing / built packages reinstalled, unless one unsets `SAGE_KEEP_BUILT_SPKGS` at some point (which of course doesn't delete existing subdirectories in the first place).
+I would clarify that `SAGE_KEEP_BUILT_SPKGS=yes` affects *all* spkg installations (whether with `./sage [-i|-f]` or `make`, the latter also when *re*building [parts of] Sage), and that the build directory (within the Sage tree or in `$SAGE_BUILD_TMPDIR/`) will definitely grow over time, i.e., whenever new packages get installed or already existing / built packages reinstalled, unless one unsets `SAGE_KEEP_BUILT_SPKGS` at some point (which of course doesn't delete existing subdirectories in the first place).
 
 
 
 
 Your observations regarding the build tree sizes on skynet are interesting; there IMHO shouldn't be such a large difference, at least not when doing "the same thing".
 
-There are differences in object code size between RISC and CISC architectures (on the former usually larger, but _at most_ by a factor of 2 I think) and between 32-bit and 64-bit (mostly on RISC architectures, and also if there's a lot of static data involving e.g. pointers or integers of different size); other differences might be due to debug symbols and _how and what_ we build (e.g. assembly implementations, static or dynamic libraries in addition) on a specific platform.
+There are differences in object code size between RISC and CISC architectures (on the former usually larger, but *at most* by a factor of 2 I think) and between 32-bit and 64-bit (mostly on RISC architectures, and also if there's a lot of static data involving e.g. pointers or integers of different size); other differences might be due to debug symbols and *how and what* we build (e.g. assembly implementations, static or dynamic libraries in addition) on a specific platform.
 
 I would mention the effect of the block size of the file system though (as a note perhaps), since many packages consist of a large number of small files.
 
 
+
 ---
+
+archive/issue_comments_037596.json:
+```json
+{
+    "body": "Attachment\n\nsage repo: update installation guide",
+    "created_at": "2011-08-08T15:39:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37596",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
 sage repo: update installation guide
 
 
+
 ---
 
-Comment by jhpalmieri created at 2011-08-08 16:03:14
+archive/issue_comments_037597.json:
+```json
+{
+    "body": "Replying to [comment:20 leif]:\n> I would clarify that `SAGE_KEEP_BUILT_SPKGS=yes` affects *all* spkg installations.\n\nDone\n\n> and that the build directory will definitely grow over time\n\nI've added some explanation.  It doesn't grow quite as fast as it might, since pre-existing subdirectories are moved to SAGE_ROOT/spkg/build/old/, *overwriting* copies that were already there.  So just reinstalling Sage over and over again will just use twice as much as space as doing it once.  Upgrading will then take up more space.\n\n> Your observations regarding the build tree sizes on skynet are interesting; there IMHO shouldn't be such a large difference, at least not when doing \"the same thing\".\n\n\"eclib\" is the usual culprit.  There are huge differences in the amount of disk space it uses, so on some systems it is by far the largest, and on others, it isn't.  On the skynet machines, \"moin\" uses a consistent 320 megabytes, whereas eclib ranges from something under that to over 1 gig, depending on the OS and the processor.\n\n> I would mention the effect of the block size of the file system though (as a note perhaps), since many packages consist of a large number of small files.\n\nDone.",
+    "created_at": "2011-08-08T16:03:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37597",
+    "user": "jhpalmieri"
+}
+```
 
 Replying to [comment:20 leif]:
-> I would clarify that `SAGE_KEEP_BUILT_SPKGS=yes` affects _all_ spkg installations.
+> I would clarify that `SAGE_KEEP_BUILT_SPKGS=yes` affects *all* spkg installations.
 
 Done
 
 > and that the build directory will definitely grow over time
 
-I've added some explanation.  It doesn't grow quite as fast as it might, since pre-existing subdirectories are moved to SAGE_ROOT/spkg/build/old/, _overwriting_ copies that were already there.  So just reinstalling Sage over and over again will just use twice as much as space as doing it once.  Upgrading will then take up more space.
+I've added some explanation.  It doesn't grow quite as fast as it might, since pre-existing subdirectories are moved to SAGE_ROOT/spkg/build/old/, *overwriting* copies that were already there.  So just reinstalling Sage over and over again will just use twice as much as space as doing it once.  Upgrading will then take up more space.
 
 > Your observations regarding the build tree sizes on skynet are interesting; there IMHO shouldn't be such a large difference, at least not when doing "the same thing".
 
@@ -316,46 +642,112 @@ I've added some explanation.  It doesn't grow quite as fast as it might, since p
 Done.
 
 
+
 ---
 
-Comment by mderickx created at 2011-08-24 02:46:18
+archive/issue_comments_037598.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2011-08-24T02:46:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37598",
+    "user": "mderickx"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mderickx created at 2011-08-24 02:46:18
+archive/issue_comments_037599.json:
+```json
+{
+    "body": "I've build sage entirely from scratch after applying the patch and replacing the bootstrap version of sage-spkg in SAGE_ROOT/spkg/base and passing all doctest . Both with and without the environment variables set. So I think this one is ready to get merged.",
+    "created_at": "2011-08-24T02:46:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37599",
+    "user": "mderickx"
+}
+```
 
 I've build sage entirely from scratch after applying the patch and replacing the bootstrap version of sage-spkg in SAGE_ROOT/spkg/base and passing all doctest . Both with and without the environment variables set. So I think this one is ready to get merged.
 
 
+
 ---
 
-Comment by was created at 2011-08-24 23:43:54
+archive/issue_comments_037600.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"sd32\".",
+    "created_at": "2011-08-24T23:43:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37600",
+    "user": "was"
+}
+```
 
 Changing keywords from "" to "sd32".
 
 
+
 ---
 
-Comment by leif created at 2011-08-25 05:16:26
+archive/issue_comments_037601.json:
+```json
+{
+    "body": "Then all of the changes of #11021 will have to be rebased on this one...\n\nPerhaps easier the other way around. (Note that I still haven't updated the patches there though.)",
+    "created_at": "2011-08-25T05:16:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37601",
+    "user": "leif"
+}
+```
 
 Then all of the changes of #11021 will have to be rebased on this one...
 
 Perhaps easier the other way around. (Note that I still haven't updated the patches there though.)
 
 
+
 ---
 
-Comment by jhpalmieri created at 2011-09-09 22:15:26
+archive/issue_comments_037602.json:
+```json
+{
+    "body": "By the way, regarding \"After applying, replace the bootstrap version of `sage-spkg` in `$SAGE_ROOT/spkg/base/` with the new version\": this is taken care of automatically by the `sage-sdist` script, if one is making a new source distribution.  You just have to make sure that the version in local/bin is up to date.",
+    "created_at": "2011-09-09T22:15:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37602",
+    "user": "jhpalmieri"
+}
+```
 
 By the way, regarding "After applying, replace the bootstrap version of `sage-spkg` in `$SAGE_ROOT/spkg/base/` with the new version": this is taken care of automatically by the `sage-sdist` script, if one is making a new source distribution.  You just have to make sure that the version in local/bin is up to date.
 
 
+
 ---
 
-Comment by leif created at 2011-09-09 22:45:25
+archive/issue_comments_037603.json:
+```json
+{
+    "body": "Replying to [comment:27 jhpalmieri]:\n> By the way, regarding \"After applying, replace the bootstrap version of `sage-spkg` in `$SAGE_ROOT/spkg/base/` with the new version\": this is taken care of automatically by the `sage-sdist` script, if one is making a new source distribution.  You just have to make sure that the version in local/bin is up to date.\n\nYep.\n\nHope you don't mind me temporarily moving this to \"sage-pending\"; I intend to finish #11021 and rebase the patch(es) here on that, the latter presumably much easier than the other way around.\n\nIf I don't find the time, I'll set the milestone back to 4.7.2 of course.",
+    "created_at": "2011-09-09T22:45:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37603",
+    "user": "leif"
+}
+```
 
 Replying to [comment:27 jhpalmieri]:
 > By the way, regarding "After applying, replace the bootstrap version of `sage-spkg` in `$SAGE_ROOT/spkg/base/` with the new version": this is taken care of automatically by the `sage-sdist` script, if one is making a new source distribution.  You just have to make sure that the version in local/bin is up to date.
@@ -367,37 +759,94 @@ Hope you don't mind me temporarily moving this to "sage-pending"; I intend to fi
 If I don't find the time, I'll set the milestone back to 4.7.2 of course.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2011-09-10 01:35:39
+archive/issue_comments_037604.json:
+```json
+{
+    "body": "See also #329 which touches sage-spkg, although not in a very complicated way.",
+    "created_at": "2011-09-10T01:35:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37604",
+    "user": "jhpalmieri"
+}
+```
 
 See also #329 which touches sage-spkg, although not in a very complicated way.
 
 
+
 ---
 
-Comment by swenson created at 2012-01-22 21:01:57
+archive/issue_comments_037605.json:
+```json
+{
+    "body": "Is there any update to this?  It has been several months since the last update, and some of us are eagerly anticipating this. :)",
+    "created_at": "2012-01-22T21:01:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37605",
+    "user": "swenson"
+}
+```
 
 Is there any update to this?  It has been several months since the last update, and some of us are eagerly anticipating this. :)
 
 
+
 ---
 
-Comment by jhpalmieri created at 2012-01-23 15:49:28
+archive/issue_comments_037606.json:
+```json
+{
+    "body": "I've rebased this to Sage 5.0.beta1.  It had a positive review already, so I'm leaving it that way.",
+    "created_at": "2012-01-23T15:49:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37606",
+    "user": "jhpalmieri"
+}
+```
 
 I've rebased this to Sage 5.0.beta1.  It had a positive review already, so I'm leaving it that way.
 
 
+
 ---
+
+archive/issue_comments_037607.json:
+```json
+{
+    "body": "Attachment\n\nroot repo",
+    "created_at": "2012-01-23T15:49:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37607",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
 root repo
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-01-23 16:13:59
+archive/issue_comments_037608.json:
+```json
+{
+    "body": "Do we *really* want\n\n```\nBUILD=build\n```\n\n?\n\nI think we have too many variables already.\n\nAlso, why introduce a new variable `$BUILD_DIR` instead of using `$SAGE_BUILD_TMPDIR`?",
+    "created_at": "2012-01-23T16:13:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37608",
+    "user": "jdemeyer"
+}
+```
 
 Do we *really* want
 
@@ -412,9 +861,20 @@ I think we have too many variables already.
 Also, why introduce a new variable `$BUILD_DIR` instead of using `$SAGE_BUILD_TMPDIR`?
 
 
+
 ---
 
-Comment by jhpalmieri created at 2012-01-23 18:07:57
+archive/issue_comments_037609.json:
+```json
+{
+    "body": "Replying to [comment:32 jdemeyer]:\n> Do we *really* want\n {{{\n BUILD=build\n }}}\n> ?\n\nI don't see a reason for it, it was there before.  Should I create a new patch which removes it?  I think that would fix one or two of the issues from #11021.\n\n> Also, why introduce a new variable `$BUILD_DIR` instead of using `$SAGE_BUILD_TMPDIR`?\n\nThe code says, roughly\n\n```\nif $SAGE_BUILD_TMPDIR is not empty and points to an existing directory:\n    BUILD_DIR=$SAGE_BUILD_TMPDIR\nelse\n    BUILD_DIR=$SAGE_PACKAGES\nfi\n\nbuild Sage in $BUILD_DIR\n```\n",
+    "created_at": "2012-01-23T18:07:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37609",
+    "user": "jhpalmieri"
+}
+```
 
 Replying to [comment:32 jdemeyer]:
 > Do we *really* want
@@ -441,9 +901,20 @@ build Sage in $BUILD_DIR
 
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-01-23 18:17:01
+archive/issue_comments_037610.json:
+```json
+{
+    "body": "But why not simplify this to:\n\n```\nif $SAGE_BUILD_TMPDIR is not empty:\n    sanity check $SAGE_BUILD_TMPDIR but don't change any variables\nelse\n    SAGE_BUILD_TMPDIR=$SAGE_PACKAGES\nfi\n\nbuild Sage in $SAGE_BUILD_TMPDIR\n```\n",
+    "created_at": "2012-01-23T18:17:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37610",
+    "user": "jdemeyer"
+}
+```
 
 But why not simplify this to:
 
@@ -459,23 +930,56 @@ build Sage in $SAGE_BUILD_TMPDIR
 
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-01-23 18:17:01
+archive/issue_comments_037611.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_work.",
+    "created_at": "2012-01-23T18:17:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37611",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from positive_review to needs_work.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-01-23 18:18:54
+archive/issue_comments_037612.json:
+```json
+{
+    "body": "Concerning `$BUILD`: it existed before, but was almost not used.  If the variable serves no purpose and is not meant to be customized, it is cleaner to delete it.",
+    "created_at": "2012-01-23T18:18:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37612",
+    "user": "jdemeyer"
+}
+```
 
 Concerning `$BUILD`: it existed before, but was almost not used.  If the variable serves no purpose and is not meant to be customized, it is cleaner to delete it.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-01-23 18:22:41
+archive/issue_comments_037613.json:
+```json
+{
+    "body": "Something else: do we really want to build in\n\n```\n$SAGE_BUILD_TMPDIR/build/atlas-3.8.4.p1/\n```\n\n\nI would find it more natural to build in\n\n```\n$SAGE_BUILD_TMPDIR/atlas-3.8.4.p1/\n```\n\n\nAnd therefore, let $SAGE_BUILD_TMPDIR by default be equal to\n\n```\n$SAGE_ROOT/spkg/build/\n```\n\n\nAnd perhaps drop the requirement for `$SAGE_BUILD_TMPDIR` to be an existing directory: just create it if needed.\n\n(This is just an idea: I don't have strong feelings about this)",
+    "created_at": "2012-01-23T18:22:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37613",
+    "user": "jdemeyer"
+}
+```
 
 Something else: do we really want to build in
 
@@ -503,99 +1007,250 @@ And perhaps drop the requirement for `$SAGE_BUILD_TMPDIR` to be an existing dire
 (This is just an idea: I don't have strong feelings about this)
 
 
+
 ---
 
-Comment by jhpalmieri created at 2012-01-23 23:13:18
+archive/issue_comments_037614.json:
+```json
+{
+    "body": "If you run \"sage -i blah\"  and \"blah\" is an optional spkg which needs to be downloaded, would it make more sense to save the spkg in $SAGE_ROOT/spkg/optional/ or in $SAGE_BUILD_TMPDIR/optional? The previous versions of the patch do the second of these, but I think it makes more sense to do the first: downloading spkg files for optional packages is not the same as building, so setting SAGE_BUILD_TMPDIR shouldn't cause the spkg files to end up somewhere nonstandard.  Another way to say it: I don't view downloaded spkg files for optional spkgs as temporary, the way build directories are.\n\nHere's a new patch.  I've removed the variables \"BUILD\" and \"BUILD_DIR\", and I've appended \"build\" to the setting of \"$SAGE_BUILD_TMPDIR\".  I still check whether `$SAGE_BUILD_TMPDIR` exists, as a safeguard against typos, for example.  Optional spkgs are kept in `$SAGE_PACKAGES/optional` regardless of the setting of `$SAGE_BUILD_TMPDIR.`",
+    "created_at": "2012-01-23T23:13:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37614",
+    "user": "jhpalmieri"
+}
+```
 
 If you run "sage -i blah"  and "blah" is an optional spkg which needs to be downloaded, would it make more sense to save the spkg in $SAGE_ROOT/spkg/optional/ or in $SAGE_BUILD_TMPDIR/optional? The previous versions of the patch do the second of these, but I think it makes more sense to do the first: downloading spkg files for optional packages is not the same as building, so setting SAGE_BUILD_TMPDIR shouldn't cause the spkg files to end up somewhere nonstandard.  Another way to say it: I don't view downloaded spkg files for optional spkgs as temporary, the way build directories are.
 
 Here's a new patch.  I've removed the variables "BUILD" and "BUILD_DIR", and I've appended "build" to the setting of "$SAGE_BUILD_TMPDIR".  I still check whether `$SAGE_BUILD_TMPDIR` exists, as a safeguard against typos, for example.  Optional spkgs are kept in `$SAGE_PACKAGES/optional` regardless of the setting of `$SAGE_BUILD_TMPDIR.`
 
 
+
 ---
 
-Comment by jhpalmieri created at 2012-01-23 23:13:18
+archive/issue_comments_037615.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2012-01-23T23:13:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37615",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
+
+archive/issue_comments_037616.json:
+```json
+{
+    "body": "Attachment\n\nroot repo",
+    "created_at": "2012-01-23T23:13:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37616",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
 root repo
 
 
+
 ---
 
-Comment by ohanar created at 2012-02-10 10:29:04
+archive/issue_comments_037617.json:
+```json
+{
+    "body": "`make clean` does not clean ` $SAGE_BUILD_TMPDIR `...\n\nI would also like ` $SAGE_BUILD_TMPDIR ` to be created if it does not exist, but I can live without.",
+    "created_at": "2012-02-10T10:29:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37617",
+    "user": "ohanar"
+}
+```
 
 `make clean` does not clean ` $SAGE_BUILD_TMPDIR `...
 
 I would also like ` $SAGE_BUILD_TMPDIR ` to be created if it does not exist, but I can live without.
 
 
+
 ---
 
-Comment by ohanar created at 2012-02-10 10:29:04
+archive/issue_comments_037618.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2012-02-10T10:29:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37618",
+    "user": "ohanar"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2012-02-10 22:37:31
+archive/issue_comments_037619.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2012-02-10T22:37:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37619",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2012-02-10 22:37:31
+archive/issue_comments_037620.json:
+```json
+{
+    "body": "Okay, here are new patches.  `make clean` and `make distclean` now clean `$SAGE_BUILD_TMPDIR`, and in sage-spkg, if the directory doesn't exist, it is created.  The documentation has been changed to reflect this.  (The \"delta\" patches are the differences between the old versions and the new ones, for reference.)",
+    "created_at": "2012-02-10T22:37:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37620",
+    "user": "jhpalmieri"
+}
+```
 
 Okay, here are new patches.  `make clean` and `make distclean` now clean `$SAGE_BUILD_TMPDIR`, and in sage-spkg, if the directory doesn't exist, it is created.  The documentation has been changed to reflect this.  (The "delta" patches are the differences between the old versions and the new ones, for reference.)
 
 
+
 ---
 
-Comment by jhpalmieri created at 2012-02-10 22:37:59
+archive/issue_comments_037621.json:
+```json
+{
+    "body": "root repo",
+    "created_at": "2012-02-10T22:37:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37621",
+    "user": "jhpalmieri"
+}
+```
 
 root repo
 
 
+
 ---
+
+archive/issue_comments_037622.json:
+```json
+{
+    "body": "Attachment\n\nroot repo: diff between v2 and v3",
+    "created_at": "2012-02-10T22:38:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37622",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
 root repo: diff between v2 and v3
 
 
+
 ---
+
+archive/issue_comments_037623.json:
+```json
+{
+    "body": "Attachment\n\nsage repo: update installation guide",
+    "created_at": "2012-02-10T22:38:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37623",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
 sage repo: update installation guide
 
 
+
 ---
+
+archive/issue_comments_037624.json:
+```json
+{
+    "body": "Attachment\n\nsage repo: diff between original and v2",
+    "created_at": "2012-02-10T22:38:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37624",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
 sage repo: diff between original and v2
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-02-12 12:33:32
+archive/issue_comments_037625.json:
+```json
+{
+    "body": "Replying to [comment:37 jhpalmieri]:\n> Optional spkgs are kept in `$SAGE_PACKAGES/optional` regardless of the setting of `$SAGE_BUILD_TMPDIR.`\nI totally agree on this.",
+    "created_at": "2012-02-12T12:33:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37625",
+    "user": "jdemeyer"
+}
+```
 
 Replying to [comment:37 jhpalmieri]:
 > Optional spkgs are kept in `$SAGE_PACKAGES/optional` regardless of the setting of `$SAGE_BUILD_TMPDIR.`
 I totally agree on this.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-02-12 12:35:32
+archive/issue_comments_037626.json:
+```json
+{
+    "body": "Replying to [comment:37 jhpalmieri]:\n> I've appended \"build\" to the setting of \"$SAGE_BUILD_TMPDIR\".\n\nI ask you again: why???",
+    "created_at": "2012-02-12T12:35:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37626",
+    "user": "jdemeyer"
+}
+```
 
 Replying to [comment:37 jhpalmieri]:
 > I've appended "build" to the setting of "$SAGE_BUILD_TMPDIR".
@@ -603,16 +1258,38 @@ Replying to [comment:37 jhpalmieri]:
 I ask you again: why???
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-02-12 12:35:32
+archive/issue_comments_037627.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_info.",
+    "created_at": "2012-02-12T12:35:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37627",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from needs_review to needs_info.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2012-02-12 16:03:55
+archive/issue_comments_037628.json:
+```json
+{
+    "body": "Replying to [comment:41 jdemeyer]:\n> Replying to [comment:37 jhpalmieri]:\n> > I've appended \"build\" to the setting of \"$SAGE_BUILD_TMPDIR\".\n> \n> I ask you again: why???\n\nIt feels cleaner to me: if I set `$SAGE_BUILD_TMPDIR=/tmp`, then rather than producing many subdirectories of `tmp`, everything will live in `/tmp/build`.  It's easier to clean up by hand, and `make clean` is easier to implement this way; otherwise, I suppose it would have to delete `/tmp/atlas-3.8.4.p1/`, `/tmp/blas-...`, etc.  Or `make clean` could not modify SAGE_BUILD_TMPDIR at all, but the Make manual suggests that `make clean` (and `make distclean`) should \"Also delete files in other directories if they are created by this makefile.\"",
+    "created_at": "2012-02-12T16:03:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37628",
+    "user": "jhpalmieri"
+}
+```
 
 Replying to [comment:41 jdemeyer]:
 > Replying to [comment:37 jhpalmieri]:
@@ -623,9 +1300,20 @@ Replying to [comment:41 jdemeyer]:
 It feels cleaner to me: if I set `$SAGE_BUILD_TMPDIR=/tmp`, then rather than producing many subdirectories of `tmp`, everything will live in `/tmp/build`.  It's easier to clean up by hand, and `make clean` is easier to implement this way; otherwise, I suppose it would have to delete `/tmp/atlas-3.8.4.p1/`, `/tmp/blas-...`, etc.  Or `make clean` could not modify SAGE_BUILD_TMPDIR at all, but the Make manual suggests that `make clean` (and `make distclean`) should "Also delete files in other directories if they are created by this makefile."
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-02-14 09:33:29
+archive/issue_comments_037629.json:
+```json
+{
+    "body": "Replying to [comment:42 jhpalmieri]:\n> Replying to [comment:41 jdemeyer]:\n> > Replying to [comment:37 jhpalmieri]:\n> > > I've appended \"build\" to the setting of \"$SAGE_BUILD_TMPDIR\".\n> > \n> > I ask you again: why???\n> \n> It feels cleaner to me: if I set `$SAGE_BUILD_TMPDIR=/tmp`, then rather than producing many subdirectories of `tmp`, everything will live in `/tmp/build`.\nMy opinion is that the user should set `SAGE_BUILD_TMPDIR=/tmp/build` if that's what he wants.\n\n> Or `make clean` could not modify SAGE_BUILD_TMPDIR at all, but the Make manual suggests that `make clean` (and `make distclean`) should \"Also delete files in other directories if they are created by this makefile.\"  \nI think it does make sense if `make clean` would always clean `$SAGE_ROOT/spkg/build` and not `SAGE_BUILD_TMPDIR`.\n\nAnyway: I don't want to fight over this.  I'm happy with whatever the outcome.  The last thing I want is that this ticket gets abandoned.",
+    "created_at": "2012-02-14T09:33:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37629",
+    "user": "jdemeyer"
+}
+```
 
 Replying to [comment:42 jhpalmieri]:
 > Replying to [comment:41 jdemeyer]:
@@ -643,9 +1331,20 @@ I think it does make sense if `make clean` would always clean `$SAGE_ROOT/spkg/b
 Anyway: I don't want to fight over this.  I'm happy with whatever the outcome.  The last thing I want is that this ticket gets abandoned.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-02-14 09:46:50
+archive/issue_comments_037630.json:
+```json
+{
+    "body": "One other small thing: I would prefer the directory `build/old` to be created only when needed: replace the line\n\n```\nmkdir -p \"$SAGE_BUILD_TMPDIR/build/old\"\n```\n\nby\n\n```\nmkdir -p \"$SAGE_BUILD_TMPDIR/build\"\n```\n\n(and change the error message below)\n\nAnd also replace\n\n```\n\n    mv -f \"$PKG_BASE-\"* old/  2>/dev/null\n```\n\nby\n\n```\n    mkdir -p old\n    if [ $? -ne 0 ]; then\n        echo >&2 \"Error creating directory $SAGE_BUILD_TMPDIR/old.\"\n        exit 1\n    fi\n    mv -f \"$PKG_BASE-\"* old/\n```\n",
+    "created_at": "2012-02-14T09:46:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37630",
+    "user": "jdemeyer"
+}
+```
 
 One other small thing: I would prefer the directory `build/old` to be created only when needed: replace the line
 
@@ -681,9 +1380,20 @@ by
 
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-02-14 09:46:57
+archive/issue_comments_037631.json:
+```json
+{
+    "body": "If you really want to go with the \"build\" subdirectory, I would prefer appending it immediately:\n\n```\nif [ -n \"$SAGE_BUILD_TMPDIR\" ]; then\n    SAGE_BUILD_TMPDIR=\"$SAGE_BUILD_TMPDIR/build\"\n    if [ ! -d \"$SAGE_BUILD_TMPDIR\" ]; then\n        echo \"Creating directory \\$SAGE_BUILD_TMPDIR (=$SAGE_BUILD_TMPDIR).\"\n        mkdir -p \"$SAGE_BUILD_TMPDIR\"\n    fi\n    echo \"Building in $SAGE_BUILD_TMPDIR.\"\nelse\n    SAGE_BUILD_TMPDIR=\"$SAGE_PACKAGES/build\"\nfi\n```\n\n(Actually, the whole `if [ ! -d ] ... fi` block can be removed).",
+    "created_at": "2012-02-14T09:46:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37631",
+    "user": "jdemeyer"
+}
+```
 
 If you really want to go with the "build" subdirectory, I would prefer appending it immediately:
 
@@ -703,9 +1413,20 @@ fi
 (Actually, the whole `if [ ! -d ] ... fi` block can be removed).
 
 
+
 ---
 
-Comment by drkirkby created at 2012-02-14 22:58:38
+archive/issue_comments_037632.json:
+```json
+{
+    "body": "Replying to [comment:42 jhpalmieri]:\n> Replying to [comment:41 jdemeyer]:\n> > I ask you again: why???\n> \n> It feels cleaner to me: if I set `$SAGE_BUILD_TMPDIR=/tmp`, then rather than producing many subdirectories of `tmp`, everything will live in `/tmp/build`.  It's easier to clean up by hand, and `make clean` is easier to implement this way; otherwise, I suppose it would have to delete `/tmp/atlas-3.8.4.p1/`, `/tmp/blas-...`, etc.  Or `make clean` could not modify SAGE_BUILD_TMPDIR at all, but the Make manual suggests that `make clean` (and `make distclean`) should \"Also delete files in other directories if they are created by this makefile.\"  \n\nJohn, \n\nhow do you avoid a possible race condition if two or more instances of Sage (or some other program), want to use /tmp/build? Perhaps /tmp/$user-sage-$SageVersion.$$ might be better. Someone can then find their own Sage-related files easily (for example \n\n\n```\nrm -rf /tmp/drkirkby-sage-4.5.6*\n```\n\nwithout risk of their being any race condition. \n\n\nDave",
+    "created_at": "2012-02-14T22:58:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37632",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:42 jhpalmieri]:
 > Replying to [comment:41 jdemeyer]:
@@ -728,9 +1449,20 @@ without risk of their being any race condition.
 Dave
 
 
+
 ---
 
-Comment by jhpalmieri created at 2012-02-14 23:19:56
+archive/issue_comments_037633.json:
+```json
+{
+    "body": "Replying to [comment:47 drkirkby]:\n> Replying to [comment:42 jhpalmieri]:\n> > Replying to [comment:41 jdemeyer]:\n> > > I ask you again: why???\n> > \n> > It feels cleaner to me: if I set `$SAGE_BUILD_TMPDIR=/tmp`, then rather than producing many subdirectories of `tmp`, everything will live in `/tmp/build`.  It's easier to clean up by hand, and `make clean` is easier to implement this way; otherwise, I suppose it would have to delete `/tmp/atlas-3.8.4.p1/`, `/tmp/blas-...`, etc.  Or `make clean` could not modify SAGE_BUILD_TMPDIR at all, but the Make manual suggests that `make clean` (and `make distclean`) should \"Also delete files in other directories if they are created by this makefile.\"  \n> \n> John, \n> \n> how do you avoid a possible race condition if two or more instances of Sage (or some other program), want to use /tmp/build? \n\nI don't.  If someone wants to set `$SAGE_BUILD_TMPDIR`, then I'm making it their responsibility to make sure that the directory is available and in good shape.  (If someone does `export SAGE_BUILD_TMPDIR=/tmp/sage` and then we mangle the file name somehow, I think that will lead to confusion much more often than it will help.  We could instead build in `SAGE_BUILD_TMPDIR/subdir` where we choose `subdir` to avoid race conditions.  But I'm not going to do that.)\n\nMeanwhile, I have new versions of the patches.  I'm going to give in on the \"build\" subdirectory: Sage will now build in `SAGE_BUILD_TMPDIR`.  Oh, and I changed the name to `SAGE_BUILD_DIR` instead; I think that name makes more sense.  I also patched bzip2 and prereq so they build in `SAGE_BUILD_DIR` as well \u2014 easy to do now that the base repo has been merged with the root repo.  `make clean` no longer touches `SAGE_BUILD_DIR`, nor does `make distclean`.  (Also, `make clean` no longer recreates `spkg/build` or `spkg/archive` \u2014 what's that directory for, anyway?).\n\nI updated the documentation accordingly.",
+    "created_at": "2012-02-14T23:19:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37633",
+    "user": "jhpalmieri"
+}
+```
 
 Replying to [comment:47 drkirkby]:
 > Replying to [comment:42 jhpalmieri]:
@@ -750,56 +1482,152 @@ Meanwhile, I have new versions of the patches.  I'm going to give in on the "bui
 I updated the documentation accordingly.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2012-02-14 23:19:56
+archive/issue_comments_037634.json:
+```json
+{
+    "body": "Changing status from needs_info to needs_review.",
+    "created_at": "2012-02-14T23:19:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37634",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from needs_info to needs_review.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2012-02-14 23:20:28
+archive/issue_comments_037635.json:
+```json
+{
+    "body": "installation guide: diff between v2 and v3",
+    "created_at": "2012-02-14T23:20:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37635",
+    "user": "jhpalmieri"
+}
+```
 
 installation guide: diff between v2 and v3
 
 
+
 ---
+
+archive/issue_comments_037636.json:
+```json
+{
+    "body": "Attachment\n\nsage repo: update installation guide",
+    "created_at": "2012-02-14T23:20:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37636",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
 sage repo: update installation guide
 
 
+
 ---
+
+archive/issue_comments_037637.json:
+```json
+{
+    "body": "Attachment\n\nroot repo: diff between v3 and v4",
+    "created_at": "2012-02-14T23:21:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37637",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
 root repo: diff between v3 and v4
 
 
+
 ---
+
+archive/issue_comments_037638.json:
+```json
+{
+    "body": "Attachment\n\nroot repo",
+    "created_at": "2012-02-14T23:21:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37638",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
 root repo
 
 
+
 ---
+
+archive/issue_comments_037639.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2012-02-14T23:21:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37639",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-02-15 08:31:21
+archive/issue_comments_037640.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2012-02-15T08:31:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37640",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-02-15 08:31:21
+archive/issue_comments_037641.json:
+```json
+{
+    "body": "Lines 210 and 216 of `sage-spkg`: you have twice cd \"$SAGE_BUILD_DIR\".  Remove the second and move the check (line 219) up, after the first cd.  You probably want to \"exit 1\" if cd fails.\n\nLine 227 of `sage-spkg`: replace\n\n```\nif [ -e \"$dir\" ]; then\n```\n\nby\n\n```\nif [ -d \"$dir\" ]; then\n```\n",
+    "created_at": "2012-02-15T08:31:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37641",
+    "user": "jdemeyer"
+}
+```
 
 Lines 210 and 216 of `sage-spkg`: you have twice cd "$SAGE_BUILD_DIR".  Remove the second and move the check (line 219) up, after the first cd.  You probably want to "exit 1" if cd fails.
 
@@ -817,23 +1645,56 @@ if [ -d "$dir" ]; then
 
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-02-15 09:32:33
+archive/issue_comments_037642.json:
+```json
+{
+    "body": "Line 235: why \"mv -f\" and not simply \"mv\"?",
+    "created_at": "2012-02-15T09:32:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37642",
+    "user": "jdemeyer"
+}
+```
 
 Line 235: why "mv -f" and not simply "mv"?
 
 
+
 ---
 
-Comment by jhpalmieri created at 2012-02-15 18:08:57
+archive/issue_comments_037643.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2012-02-15T18:08:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37643",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2012-02-15 18:08:57
+archive/issue_comments_037644.json:
+```json
+{
+    "body": "Replying to [comment:50 jdemeyer]:\n> Lines 210 and 216 of `sage-spkg`: you have twice cd \"$SAGE_BUILD_DIR\".  Remove the second and move the check (line 219) up, after the first cd.  You probably want to \"exit 1\" if cd fails.\n\nWell, the old version had a second 'cd' command, justified by the comment\n\n```\n# Make triply sure that we are in the build directory before doing  \n# a scary \"rm -rf\"\n```\n\nSo I left the second one in.  You think I should change this?  In any case, you're right about the \"exit 1\".\n\n> Line 227 of `sage-spkg`: replace\n\n```\nif [ -e \"$dir\" ]; then\n```\n\n> by\n\n```\nif [ -d \"$dir\" ]; then\n```\n\n\nOn the off-chance that there is a file (not a directory) in the build directory with the wrong name, shouldn't we move it, too?\n\nReplying to [comment:51 jdemeyer]:\n> Line 235: why \"mv -f\" and not simply \"mv\"?\n\nLeft over from the previous version. I can fix that.",
+    "created_at": "2012-02-15T18:08:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37644",
+    "user": "jhpalmieri"
+}
+```
 
 Replying to [comment:50 jdemeyer]:
 > Lines 210 and 216 of `sage-spkg`: you have twice cd "$SAGE_BUILD_DIR".  Remove the second and move the check (line 219) up, after the first cd.  You probably want to "exit 1" if cd fails.
@@ -868,51 +1729,145 @@ Replying to [comment:51 jdemeyer]:
 Left over from the previous version. I can fix that.
 
 
+
 ---
+
+archive/issue_comments_037645.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2012-02-15T18:09:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37645",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_037646.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2012-02-15T18:09:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37646",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_037647.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2012-02-15T18:39:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37647",
+    "user": "jdemeyer"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by jhpalmieri created at 2012-02-15 21:11:45
+archive/issue_comments_037648.json:
+```json
+{
+    "body": "The review patch looks okay to me.",
+    "created_at": "2012-02-15T21:11:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37648",
+    "user": "jhpalmieri"
+}
+```
 
 The review patch looks okay to me.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-02-16 21:20:19
+archive/issue_comments_037649.json:
+```json
+{
+    "body": "Looks good to me too.",
+    "created_at": "2012-02-16T21:20:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37649",
+    "user": "jdemeyer"
+}
+```
 
 Looks good to me too.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-02-16 21:20:19
+archive/issue_comments_037650.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2012-02-16T21:20:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37650",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-02-22 10:43:54
+archive/issue_comments_037651.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2012-02-22T10:43:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37651",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by jhpalmieri created at 2012-03-06 19:39:09
+archive/issue_comments_037652.json:
+```json
+{
+    "body": "See #12637 for a followup.",
+    "created_at": "2012-03-06T19:39:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4949",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4949#issuecomment-37652",
+    "user": "jhpalmieri"
+}
+```
 
 See #12637 for a followup.

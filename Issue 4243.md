@@ -1,11 +1,21 @@
 # Issue 4243: [with spkg, needs review] pynac package version bump to 0.1.1
 
-Issue created by migration from https://trac.sagemath.org/ticket/4243
-
-Original creator: burcin
-
-Original creation time: 2008-10-04 20:26:25
-
+archive/issues_004243.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nCC:  was mhansen\n\nKeywords: pynac, symbolics\n\nThere is a new version of pynac available. :)\n\nThis version allows setting custom python functions to perform evaluation, numeric evaluation, derivation, series expansion, etc. on symbolic functions.\n\nThe new package is available is here:\n\nhttp://www.risc.jku.at/people/berocal/sage/pynac-0.1.1.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/4243\n\n",
+    "created_at": "2008-10-04T20:26:25Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "enhancement"
+    ],
+    "title": "[with spkg, needs review] pynac package version bump to 0.1.1",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4243",
+    "user": "burcin"
+}
+```
 Assignee: mabshoff
 
 CC:  was mhansen
@@ -20,19 +30,45 @@ The new package is available is here:
 
 http://www.risc.jku.at/people/berocal/sage/pynac-0.1.1.spkg
 
+Issue created by migration from https://trac.sagemath.org/ticket/4243
+
+
+
+
 
 ---
 
-Comment by burcin created at 2008-10-15 09:14:34
+archive/issue_comments_030842.json:
+```json
+{
+    "body": "I updated the package at the address given in the description to correspond to the latest patch added to #4244.\n\nNote that the package will break sage if the patches in #4244 are not applied, since libpynac will complain about missing symbols.",
+    "created_at": "2008-10-15T09:14:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4243",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4243#issuecomment-30842",
+    "user": "burcin"
+}
+```
 
 I updated the package at the address given in the description to correspond to the latest patch added to #4244.
 
 Note that the package will break sage if the patches in #4244 are not applied, since libpynac will complain about missing symbols.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-18 12:26:08
+archive/issue_comments_030843.json:
+```json
+{
+    "body": "Spkg looks good to me. I read Burcin's changes, but having another expert looks over this wouldn't hurt. Either way: damn the torpedoes :)\n\nCheers,\n\nMichael",
+    "created_at": "2008-10-18T12:26:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4243",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4243#issuecomment-30843",
+    "user": "mabshoff"
+}
+```
 
 Spkg looks good to me. I read Burcin's changes, but having another expert looks over this wouldn't hurt. Either way: damn the torpedoes :)
 
@@ -41,15 +77,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-18 13:05:15
+archive/issue_comments_030844.json:
+```json
+{
+    "body": "Merged in Sage 3.2.alpha0",
+    "created_at": "2008-10-18T13:05:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4243",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4243#issuecomment-30844",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.2.alpha0
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-18 13:05:15
+archive/issue_comments_030845.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-10-18T13:05:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4243",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4243#issuecomment-30845",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

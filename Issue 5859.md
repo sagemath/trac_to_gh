@@ -1,11 +1,21 @@
 # Issue 5859: sage -coverageall fails on directories with zero tests
 
-Issue created by migration from https://trac.sagemath.org/ticket/5859
-
-Original creator: mabshoff
-
-Original creation time: 2009-04-22 23:31:00
-
+archive/issues_005859.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nCC:  mjo\n\n\n```\n./sage -coverageall devel/sage/sage/catalogue/\n```\n\nresults in\n\n```\nTraceback (most recent call last):\n  File \"/scratch/mabshoff/sage-3.4.2.alpha0/local/bin/sage-coverageall\", line 44, in <module>\n    coverage_all(sys.argv[1])\n  File \"/scratch/mabshoff/sage-3.4.2.alpha0/local/bin/sage-coverageall\", line 28, in coverage_all\n    score = (float(scr) / total)\nZeroDivisionError: float division\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5859\n\n",
+    "created_at": "2009-04-22T23:31:00Z",
+    "labels": [
+        "doctest coverage",
+        "major",
+        "bug"
+    ],
+    "title": "sage -coverageall fails on directories with zero tests",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5859",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 CC:  mjo
@@ -27,22 +37,61 @@ ZeroDivisionError: float division
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5859
+
+
+
+
 
 ---
 
-Comment by mjo created at 2012-01-09 05:00:53
+archive/issue_comments_046292.json:
+```json
+{
+    "body": "Default to 100% coverage when there are no tests.",
+    "created_at": "2012-01-09T05:00:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5859",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5859#issuecomment-46292",
+    "user": "mjo"
+}
+```
 
 Default to 100% coverage when there are no tests.
 
 
+
 ---
 
-Comment by mjo created at 2012-01-09 05:03:05
+archive/issue_comments_046293.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2012-01-09T05:03:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5859",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5859#issuecomment-46293",
+    "user": "mjo"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_046294.json:
+```json
+{
+    "body": "Attachment\n\nThis was a pretty small fix, so there it is.\n\nThe coverage score would naturally be undefined, but saying it's 100% of zero is a useful fiction in this case.",
+    "created_at": "2012-01-09T05:03:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5859",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5859#issuecomment-46294",
+    "user": "mjo"
+}
+```
 
 Attachment
 
@@ -51,15 +100,37 @@ This was a pretty small fix, so there it is.
 The coverage score would naturally be undefined, but saying it's 100% of zero is a useful fiction in this case.
 
 
+
 ---
 
-Comment by aapitzsch created at 2012-04-29 17:12:45
+archive/issue_comments_046295.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2012-04-29T17:12:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5859",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5859#issuecomment-46295",
+    "user": "aapitzsch"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-05-01 05:07:45
+archive/issue_comments_046296.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2012-05-01T05:07:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5859",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5859#issuecomment-46296",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: fixed

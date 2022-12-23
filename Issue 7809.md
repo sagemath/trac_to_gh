@@ -1,33 +1,82 @@
 # Issue 7809: region_plot does not respect the passed variable order
 
-Issue created by migration from https://trac.sagemath.org/ticket/7809
-
-Original creator: jason
-
-Original creation time: 2010-01-01 18:44:22
-
+archive/issues_007809.json:
+```json
+{
+    "body": "Assignee: was\n\nThe call `region_plot(2/x + 1/y > 1/x * 1/y, (x,-10,10), (y,-10,10))` passes the following function to setup_for_eval_on_grid: `(y, x) |--> -2/x - 1/y + 1/(x*y)`, but passes the variables in the order (x,y).  The problem is the equify function.  This patch simplifies the code in equify to not try to put an ordering on the variables, but to just pass back an expression (not a function).\n\nIn practice, since variables would be substituted by name, I don't think this will make a difference.  But it does make the code cleaner and more correct.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7809\n\n",
+    "created_at": "2010-01-01T18:44:22Z",
+    "labels": [
+        "graphics",
+        "major",
+        "bug"
+    ],
+    "title": "region_plot does not respect the passed variable order",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7809",
+    "user": "jason"
+}
+```
 Assignee: was
 
 The call `region_plot(2/x + 1/y > 1/x * 1/y, (x,-10,10), (y,-10,10))` passes the following function to setup_for_eval_on_grid: `(y, x) |--> -2/x - 1/y + 1/(x*y)`, but passes the variables in the order (x,y).  The problem is the equify function.  This patch simplifies the code in equify to not try to put an ordering on the variables, but to just pass back an expression (not a function).
 
 In practice, since variables would be substituted by name, I don't think this will make a difference.  But it does make the code cleaner and more correct.
 
+Issue created by migration from https://trac.sagemath.org/ticket/7809
+
+
+
+
 
 ---
 
-Comment by jason created at 2010-01-01 18:55:44
+archive/issue_comments_067558.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-01-01T18:55:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7809",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7809#issuecomment-67558",
+    "user": "jason"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_067559.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-01-01T18:55:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7809",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7809#issuecomment-67559",
+    "user": "jason"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by kcrisman created at 2010-01-04 16:11:51
+archive/issue_comments_067560.json:
+```json
+{
+    "body": "Looks like this is the only place equify is used, so I think this does not require any deprecation for the removed optional argument.  There should be another doctest in to show this works, though, like\n\n```\nsage: region_plot([y>.3, x>0, x^2+y^2<1], (x,-1.1, 1.1), (y,-1.1, 1.1), plot_points = 400).show(aspect_ratio=1)\nsage: region_plot([y>.3, x>0, x^2+y^2<1], (y,-1.1, 1.1), (x,-1.1, 1.1), plot_points = 400).show(aspect_ratio=1)\n```\n\nAlso, the example in the description fails!  Though, to be fair, it failed before as well - but I figure I should mention it in case it's related to this ticket after all.  Or was the syntax wrong?\n\n```\nsage: region_plot(2/x + 1/y > 1/x * 1/y, (x,-10,10), (y,-10,10))\nTypeError: reduce() of empty sequence with no initial value\n```\n",
+    "created_at": "2010-01-04T16:11:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7809",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7809#issuecomment-67560",
+    "user": "kcrisman"
+}
+```
 
 Looks like this is the only place equify is used, so I think this does not require any deprecation for the removed optional argument.  There should be another doctest in to show this works, though, like
 
@@ -45,16 +94,38 @@ TypeError: reduce() of empty sequence with no initial value
 
 
 
+
 ---
 
-Comment by kcrisman created at 2010-01-04 16:11:51
+archive/issue_comments_067561.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-01-04T16:11:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7809",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7809#issuecomment-67561",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by jason created at 2010-01-04 16:15:46
+archive/issue_comments_067562.json:
+```json
+{
+    "body": "Replying to [comment:2 kcrisman]:\n> Looks like this is the only place equify is used, so I think this does not require any deprecation for the removed optional argument.  There should be another doctest in to show this works, though, like\n> {{{\n> sage: region_plot([y>.3, x>0, x<sup>2+y</sup>2<1], (x,-1.1, 1.1), (y,-1.1, 1.1), plot_points = 400).show(aspect_ratio=1)\n> sage: region_plot([y>.3, x>0, x<sup>2+y</sup>2<1], (y,-1.1, 1.1), (x,-1.1, 1.1), plot_points = 400).show(aspect_ratio=1)\n> }}}\n\n\nDoes this actually produce an incorrect plot before the patch?  I'll check, but I'm pretty sure it should work.\n\n\n> Also, the example in the description fails!  Though, to be fair, it failed before as well - but I figure I should mention it in case it's related to this ticket after all.  Or was the syntax wrong?\n> {{{\n> sage: region_plot(2/x + 1/y > 1/x * 1/y, (x,-10,10), (y,-10,10))\n> TypeError: reduce() of empty sequence with no initial value\n> }}}\n\nThis is not related to this ticket.  The error is caused by a bug in fast_callable--see #7810.",
+    "created_at": "2010-01-04T16:15:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7809",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7809#issuecomment-67562",
+    "user": "jason"
+}
+```
 
 Replying to [comment:2 kcrisman]:
 > Looks like this is the only place equify is used, so I think this does not require any deprecation for the removed optional argument.  There should be another doctest in to show this works, though, like
@@ -76,9 +147,20 @@ Does this actually produce an incorrect plot before the patch?  I'll check, but 
 This is not related to this ticket.  The error is caused by a bug in fast_callable--see #7810.
 
 
+
 ---
 
-Comment by kcrisman created at 2010-01-04 16:19:36
+archive/issue_comments_067563.json:
+```json
+{
+    "body": "Replying to [comment:3 jason]:\n> Replying to [comment:2 kcrisman]:\n> > Looks like this is the only place equify is used, so I think this does not require any deprecation for the removed optional argument.  There should be another doctest in to show this works, though, like\n> > {{{\n> > sage: region_plot([y>.3, x>0, x<sup>2+y</sup>2<1], (x,-1.1, 1.1), (y,-1.1, 1.1), plot_points = 400).show(aspect_ratio=1)\n> > sage: region_plot([y>.3, x>0, x<sup>2+y</sup>2<1], (y,-1.1, 1.1), (x,-1.1, 1.1), plot_points = 400).show(aspect_ratio=1)\n> > }}}\n> \n> \n> Does this actually produce an incorrect plot before the patch?  I'll check, but I'm pretty sure it should work.\n> \n\nI didn't bother to check, but it seems like this was the concern, or?  At any rate there should be something documented that didn't work before and now does.  Otherwise I don't quite get why we are removing the potential for passing in the variables here.",
+    "created_at": "2010-01-04T16:19:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7809",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7809#issuecomment-67563",
+    "user": "kcrisman"
+}
+```
 
 Replying to [comment:3 jason]:
 > Replying to [comment:2 kcrisman]:
@@ -95,9 +177,20 @@ Replying to [comment:3 jason]:
 I didn't bother to check, but it seems like this was the concern, or?  At any rate there should be something documented that didn't work before and now does.  Otherwise I don't quite get why we are removing the potential for passing in the variables here.
 
 
+
 ---
 
-Comment by jason created at 2010-01-04 16:24:13
+archive/issue_comments_067564.json:
+```json
+{
+    "body": "Replying to [comment:2 kcrisman]:\n> Looks like this is the only place equify is used, so I think this does not require any deprecation for the removed optional argument.  There should be another doctest in to show this works, though, like\n> {{{\n> sage: region_plot([y>.3, x>0, x<sup>2+y</sup>2<1], (x,-1.1, 1.1), (y,-1.1, 1.1), plot_points = 400).show(aspect_ratio=1)\n> sage: region_plot([y>.3, x>0, x<sup>2+y</sup>2<1], (y,-1.1, 1.1), (x,-1.1, 1.1), plot_points = 400).show(aspect_ratio=1)\n> }}}\n\nActually, the second example above produces the wrong image even after the patch is applied!",
+    "created_at": "2010-01-04T16:24:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7809",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7809#issuecomment-67564",
+    "user": "jason"
+}
+```
 
 Replying to [comment:2 kcrisman]:
 > Looks like this is the only place equify is used, so I think this does not require any deprecation for the removed optional argument.  There should be another doctest in to show this works, though, like
@@ -109,28 +202,74 @@ Replying to [comment:2 kcrisman]:
 Actually, the second example above produces the wrong image even after the patch is applied!
 
 
+
 ---
 
-Comment by kcrisman created at 2010-01-04 16:30:33
+archive/issue_comments_067565.json:
+```json
+{
+    "body": "Are you sure?  Are we always putting x on the horizontal axis?  This seems okay to me.",
+    "created_at": "2010-01-04T16:30:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7809",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7809#issuecomment-67565",
+    "user": "kcrisman"
+}
+```
 
 Are you sure?  Are we always putting x on the horizontal axis?  This seems okay to me.
 
 
+
 ---
 
-Comment by jason created at 2010-01-04 16:32:26
+archive/issue_comments_067566.json:
+```json
+{
+    "body": "no, x shouldn't be on the horizontal axis always.  The first variable specified should be on the horizontal axis.  That would then be consistent.",
+    "created_at": "2010-01-04T16:32:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7809",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7809#issuecomment-67566",
+    "user": "jason"
+}
+```
 
 no, x shouldn't be on the horizontal axis always.  The first variable specified should be on the horizontal axis.  That would then be consistent.
 
 
+
 ---
 
-Comment by kcrisman created at 2010-01-04 16:54:14
+archive/issue_comments_067567.json:
+```json
+{
+    "body": "Right, and in the second plot the first variable is on the horizontal axis - see attached graphic.   By the way, note the one-pixel issue still - aargh!  I wonder what the heck is causing that.",
+    "created_at": "2010-01-04T16:54:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7809",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7809#issuecomment-67567",
+    "user": "kcrisman"
+}
+```
 
 Right, and in the second plot the first variable is on the horizontal axis - see attached graphic.   By the way, note the one-pixel issue still - aargh!  I wonder what the heck is causing that.
 
 
+
 ---
+
+archive/issue_comments_067568.json:
+```json
+{
+    "body": "Attachment\n\nOh, you're right.  It is correct.\n\nWell, I just rewrote the mangle_neg part anyway.  I'll attach a patch in a second.",
+    "created_at": "2010-01-04T17:31:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7809",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7809#issuecomment-67568",
+    "user": "jason"
+}
+```
 
 Attachment
 
@@ -139,9 +278,20 @@ Oh, you're right.  It is correct.
 Well, I just rewrote the mangle_neg part anyway.  I'll attach a patch in a second.
 
 
+
 ---
 
-Comment by jason created at 2010-01-04 18:05:43
+archive/issue_comments_067569.json:
+```json
+{
+    "body": "Before the simplify-negative-code:\n\n\n```\nsage: %time region_plot([y>.3, x>0, x^2+y^2<1], (y,-1.1, 1.1), (x,-.5, 1.1)).show(aspect_ratio=1)\nCPU times: user 1.96 s, sys: 0.08 s, total: 2.04 s\nWall time: 2.38 s\nsage: %time region_plot([y>.3, x>0, x^2+y^2<1], (y,-1.1, 1.1), (x,-.5, 1.1),plot_points=400).show(aspect_ratio=1)\nCPU times: user 5.92 s, sys: 0.08 s, total: 5.99 s\nWall time: 6.30 s\n```\n\n\nAfter:\n\n\n```\nsage: %time region_plot([y>.3, x>0, x^2+y^2<1], (y,-1.1, 1.1), (x,-.5, 1.1)).show(aspect_ratio=1)\nCPU times: user 1.27 s, sys: 0.02 s, total: 1.29 s\nWall time: 1.36 s\nsage: %time region_plot([y>.3, x>0, x^2+y^2<1], (y,-1.1, 1.1), (x,-.5, 1.1),plot_points=400).show(aspect_ratio=1)\nCPU times: user 2.49 s, sys: 0.04 s, total: 2.53 s\nWall time: 2.67 s\n```\n",
+    "created_at": "2010-01-04T18:05:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7809",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7809#issuecomment-67569",
+    "user": "jason"
+}
+```
 
 Before the simplify-negative-code:
 
@@ -170,14 +320,38 @@ Wall time: 2.67 s
 
 
 
+
 ---
 
-Comment by jason created at 2010-01-04 18:14:23
+archive/issue_comments_067570.json:
+```json
+{
+    "body": "apply on top of previous patch",
+    "created_at": "2010-01-04T18:14:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7809",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7809#issuecomment-67570",
+    "user": "jason"
+}
+```
 
 apply on top of previous patch
 
 
+
 ---
+
+archive/issue_comments_067571.json:
+```json
+{
+    "body": "Attachment\n\nToo bad about mangle_neg, but it was almost more confusing that way than in the code, I think you are right.  \n\nBe sure to include some test where the order of coordinates is switched.  Incidentally, you should also remove the #long time flag from that one test; it only takes one second on my machine, which I don't think counts as a long time any more.  The file takes nearly a half minute to test for me, though!\n\nOther than that, positive review.",
+    "created_at": "2010-01-04T18:52:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7809",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7809#issuecomment-67571",
+    "user": "kcrisman"
+}
+```
 
 Attachment
 
@@ -188,9 +362,20 @@ Be sure to include some test where the order of coordinates is switched.  Incide
 Other than that, positive review.
 
 
+
 ---
 
-Comment by jason created at 2010-01-04 19:11:38
+archive/issue_comments_067572.json:
+```json
+{
+    "body": "Replying to [comment:11 kcrisman]:\n\n> Be sure to include some test where the order of coordinates is switched. \n\nThe old code gave the correct result too, I think.  I consider this patch more a refactoring of code.  The error that I corrected didn't show up because I think we were more careful in another part of the code.\n\nJason",
+    "created_at": "2010-01-04T19:11:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7809",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7809#issuecomment-67572",
+    "user": "jason"
+}
+```
 
 Replying to [comment:11 kcrisman]:
 
@@ -201,52 +386,131 @@ The old code gave the correct result too, I think.  I consider this patch more a
 Jason
 
 
+
 ---
+
+archive/issue_comments_067573.json:
+```json
+{
+    "body": "Attachment\n\napply on top of previous patch",
+    "created_at": "2010-01-04T19:19:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7809",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7809#issuecomment-67573",
+    "user": "jason"
+}
+```
 
 Attachment
 
 apply on top of previous patch
 
 
+
 ---
 
-Comment by jason created at 2010-01-04 19:19:44
+archive/issue_comments_067574.json:
+```json
+{
+    "body": "Okay, I made the changes you requested to the doctests and attached a patch.  Can you mark this as positively reviewed?",
+    "created_at": "2010-01-04T19:19:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7809",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7809#issuecomment-67574",
+    "user": "jason"
+}
+```
 
 Okay, I made the changes you requested to the doctests and attached a patch.  Can you mark this as positively reviewed?
 
 
+
 ---
 
-Comment by jason created at 2010-01-04 19:19:50
+archive/issue_comments_067575.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-01-04T19:19:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7809",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7809#issuecomment-67575",
+    "user": "jason"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by kcrisman created at 2010-01-04 19:25:33
+archive/issue_comments_067576.json:
+```json
+{
+    "body": "Looks good.  The use of s and t is good because then it's not so clear to the user from convention which one \"should\" be horizontal.  Positive review; apply in the order simplify-equify, simplify-negative-code, variable-order.",
+    "created_at": "2010-01-04T19:25:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7809",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7809#issuecomment-67576",
+    "user": "kcrisman"
+}
+```
 
 Looks good.  The use of s and t is good because then it's not so clear to the user from convention which one "should" be horizontal.  Positive review; apply in the order simplify-equify, simplify-negative-code, variable-order.
 
 
+
 ---
 
-Comment by kcrisman created at 2010-01-04 19:25:33
+archive/issue_comments_067577.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-01-04T19:25:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7809",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7809#issuecomment-67577",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jason created at 2010-01-09 05:35:55
+archive/issue_comments_067578.json:
+```json
+{
+    "body": "This ticket also fixes #5885, so that should be closed when this is.\n\n(the deprecation warning is now printed).",
+    "created_at": "2010-01-09T05:35:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7809",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7809#issuecomment-67578",
+    "user": "jason"
+}
+```
 
 This ticket also fixes #5885, so that should be closed when this is.
 
 (the deprecation warning is now printed).
 
 
+
 ---
 
-Comment by rlm created at 2010-01-13 11:24:24
+archive/issue_comments_067579.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-13T11:24:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7809",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7809#issuecomment-67579",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed

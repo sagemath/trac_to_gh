@@ -1,11 +1,21 @@
 # Issue 7848: Fix misleading stuff about HTML cells on sagenb
 
-Issue created by migration from https://trac.sagemath.org/ticket/7848
-
-Original creator: kcrisman
-
-Original creation time: 2010-01-05 04:12:35
-
+archive/issues_007848.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  timdumol\n\nFrom sage-support:\n\n```\nThe directive given in the help doesn't work: \nShift click between cells to create a new HTML cell. Double click on \nexisting HTML to edit it. \nUse $...$ and $$...$$ to include typeset math in the HTML block. \n```\n\nThere is no mention of the horizontal blue line.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7848\n\n",
+    "created_at": "2010-01-05T04:12:35Z",
+    "labels": [
+        "notebook",
+        "major",
+        "bug"
+    ],
+    "title": "Fix misleading stuff about HTML cells on sagenb",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7848",
+    "user": "kcrisman"
+}
+```
 Assignee: was
 
 CC:  timdumol
@@ -21,38 +31,99 @@ Use $...$ and $$...$$ to include typeset math in the HTML block.
 
 There is no mention of the horizontal blue line.
 
+Issue created by migration from https://trac.sagemath.org/ticket/7848
+
+
+
+
 
 ---
 
-Comment by mpatel created at 2010-01-05 05:37:54
+archive/issue_comments_067978.json:
+```json
+{
+    "body": "Should we move the contents of `tutorial.py` to an HTML file?",
+    "created_at": "2010-01-05T05:37:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7848",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7848#issuecomment-67978",
+    "user": "mpatel"
+}
+```
 
 Should we move the contents of `tutorial.py` to an HTML file?
 
 
+
 ---
 
-Comment by timdumol created at 2010-01-05 12:56:13
+archive/issue_comments_067979.json:
+```json
+{
+    "body": "I believe that some of it can be put into the documentation, under \"The Notebook Interface\", which is a bit lacking.",
+    "created_at": "2010-01-05T12:56:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7848",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7848#issuecomment-67979",
+    "user": "timdumol"
+}
+```
 
 I believe that some of it can be put into the documentation, under "The Notebook Interface", which is a bit lacking.
 
 
+
 ---
+
+archive/issue_comments_067980.json:
+```json
+{
+    "body": "Attachment\n\nChanges the tutorial help verbage regarding text (HTML) cells.  Also replaces all the <b> tags in the tutorial with <strong>",
+    "created_at": "2010-01-19T07:21:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7848",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7848#issuecomment-67980",
+    "user": "acleone"
+}
+```
 
 Attachment
 
 Changes the tutorial help verbage regarding text (HTML) cells.  Also replaces all the <b> tags in the tutorial with <strong>
 
 
+
 ---
 
-Comment by acleone created at 2010-01-19 07:23:31
+archive/issue_comments_067981.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-01-19T07:23:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7848",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7848#issuecomment-67981",
+    "user": "acleone"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by acleone created at 2010-01-19 07:23:31
+archive/issue_comments_067982.json:
+```json
+{
+    "body": "trac_7848-misleading_HTML_cells.patch: changes verbage to:\n\n```\nInsert New Text Cell\n\nMove the mouse between cells until a blue bar appears.\n<strong>Shift-click</strong> on the blue bar to create a new text cell.\nDouble click on existing text to edit it.\nUse $...$ and $$...$$ to include typeset math in the text block.\n```\n",
+    "created_at": "2010-01-19T07:23:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7848",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7848#issuecomment-67982",
+    "user": "acleone"
+}
+```
 
 trac_7848-misleading_HTML_cells.patch: changes verbage to:
 
@@ -67,22 +138,55 @@ Use $...$ and $$...$$ to include typeset math in the text block.
 
 
 
+
 ---
 
-Comment by timdumol created at 2010-01-19 08:54:25
+archive/issue_comments_067983.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-01-19T08:54:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7848",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7848#issuecomment-67983",
+    "user": "timdumol"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by timdumol created at 2010-01-19 08:54:25
+archive/issue_comments_067984.json:
+```json
+{
+    "body": "LGTM.",
+    "created_at": "2010-01-19T08:54:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7848",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7848#issuecomment-67984",
+    "user": "timdumol"
+}
+```
 
 LGTM.
 
 
+
 ---
 
-Comment by mpatel created at 2010-01-25 00:59:47
+archive/issue_comments_067985.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-25T00:59:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7848",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7848#issuecomment-67985",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed

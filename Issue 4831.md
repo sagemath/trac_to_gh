@@ -1,11 +1,21 @@
 # Issue 4831: More number field ideal utilities
 
-Issue created by migration from https://trac.sagemath.org/ticket/4831
-
-Original creator: cremona
-
-Original creation time: 2008-12-19 12:31:40
-
+archive/issues_004831.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  davidloeffler m.t.aranes@warwick.ac.uk\n\nKeywords: number fields, orders, ideals\n\nThis follows on from #4536:\n\n1. New invertible_residues() iterator for iterating though only the invertible residues modulo an integral ideal.\n2. New function like pari's add_to_1 so that A.add_to_1(B) return a in A such that 1-a is in B.  (The name of this might change before we upload a patch).\n\nPatch to follows later today.\n\nJohn Cremona and Maite Aranes\n\nIssue created by migration from https://trac.sagemath.org/ticket/4831\n\n",
+    "created_at": "2008-12-19T12:31:40Z",
+    "labels": [
+        "number theory",
+        "major",
+        "enhancement"
+    ],
+    "title": "More number field ideal utilities",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4831",
+    "user": "cremona"
+}
+```
 Assignee: was
 
 CC:  davidloeffler m.t.aranes@warwick.ac.uk
@@ -14,29 +24,68 @@ Keywords: number fields, orders, ideals
 
 This follows on from #4536:
 
-    1. New invertible_residues() iterator for iterating though only the invertible residues modulo an integral ideal.
-    2. New function like pari's add_to_1 so that A.add_to_1(B) return a in A such that 1-a is in B.  (The name of this might change before we upload a patch).
+1. New invertible_residues() iterator for iterating though only the invertible residues modulo an integral ideal.
+2. New function like pari's add_to_1 so that A.add_to_1(B) return a in A such that 1-a is in B.  (The name of this might change before we upload a patch).
 
 Patch to follows later today.
 
 John Cremona and Maite Aranes
 
+Issue created by migration from https://trac.sagemath.org/ticket/4831
+
+
+
+
 
 ---
+
+archive/issue_comments_036617.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-12-19T16:39:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4831",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4831#issuecomment-36617",
+    "user": "cremona"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by cremona created at 2008-12-19 16:41:48
+archive/issue_comments_036618.json:
+```json
+{
+    "body": "The attached file (based on 3.2.2) adds three functions, the ones mentioned in the description (with the second one called `element_1_mod()` as we could not think of a better name) and a 3rd one which is a version for integral ideas of the `prime_to_m_part()` function for integers.  the second and third of these were written by Maite Aranes.",
+    "created_at": "2008-12-19T16:41:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4831",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4831#issuecomment-36618",
+    "user": "cremona"
+}
+```
 
 The attached file (based on 3.2.2) adds three functions, the ones mentioned in the description (with the second one called `element_1_mod()` as we could not think of a better name) and a 3rd one which is a version for integral ideas of the `prime_to_m_part()` function for integers.  the second and third of these were written by Maite Aranes.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-20 14:07:31
+archive/issue_comments_036619.json:
+```json
+{
+    "body": "John,\n\nwe will probably not merge an aweful lot of patches into 3.3 before all the ReST patches go in.\n\nCheers,\n\nMichael",
+    "created_at": "2008-12-20T14:07:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4831",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4831#issuecomment-36619",
+    "user": "mabshoff"
+}
+```
 
 John,
 
@@ -47,9 +96,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by cremona created at 2008-12-20 16:02:00
+archive/issue_comments_036620.json:
+```json
+{
+    "body": "Replying to [comment:2 mabshoff]:\n> John,\n> \n> we will probably not merge an aweful lot of patches into 3.3 before all the ReST patches go in.\n> \n\nThat's fine, I knew that and meant to put 3.4 on it.\n\n> Cheers,\n> \n> Michael",
+    "created_at": "2008-12-20T16:02:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4831",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4831#issuecomment-36620",
+    "user": "cremona"
+}
+```
 
 Replying to [comment:2 mabshoff]:
 > John,
@@ -64,9 +124,20 @@ That's fine, I knew that and meant to put 3.4 on it.
 > Michael
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-01-15 12:17:58
+archive/issue_comments_036621.json:
+```json
+{
+    "body": "Patch applies fine under 3.2.3; all tests in sage/rings/number_field pass; code looks fine and is very clearly laid out; and some experimentation with various random absolute number fields works fine. (I tried to test it for relative number fields, but they are currently so broken that I didn't succeed in even creating the objects to test it on.)\n\nI like the element_1_mod function, but there is a natural generalisation: given ideals I, J which are not assumed coprime, one might want a function that expresses a given element of I + J as a sum of elements of I and J. But if anyone really wants this we can have a separate ticket for it.\n\nMy one reservation is that the docstrings will need tweaking for compatibility with the new ReST system. Other than that I think this is fine to go in.\n\nDavid",
+    "created_at": "2009-01-15T12:17:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4831",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4831#issuecomment-36621",
+    "user": "davidloeffler"
+}
+```
 
 Patch applies fine under 3.2.3; all tests in sage/rings/number_field pass; code looks fine and is very clearly laid out; and some experimentation with various random absolute number fields works fine. (I tried to test it for relative number fields, but they are currently so broken that I didn't succeed in even creating the objects to test it on.)
 
@@ -77,9 +148,20 @@ My one reservation is that the docstrings will need tweaking for compatibility w
 David
 
 
+
 ---
 
-Comment by cremona created at 2009-01-15 12:42:44
+archive/issue_comments_036622.json:
+```json
+{
+    "body": "I agree that the more general function David suggests is useful, and it is also very easy to write:  set D=I+J, write 1=x+y with x in I/D, y in J/D using the function here, then for any d in D we have d=(dx)+(dy) with the factors in I,J.\n\nOn the other hand implementing this directly using the method we already use would perhaps be more efficient.  So let's not hold this up for that.\n\nOn the docstring comment -- yes, and the same is true for very many patches in there now!",
+    "created_at": "2009-01-15T12:42:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4831",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4831#issuecomment-36622",
+    "user": "cremona"
+}
+```
 
 I agree that the more general function David suggests is useful, and it is also very easy to write:  set D=I+J, write 1=x+y with x in I/D, y in J/D using the function here, then for any d in D we have d=(dx)+(dy) with the factors in I,J.
 
@@ -88,9 +170,20 @@ On the other hand implementing this directly using the method we already use wou
 On the docstring comment -- yes, and the same is true for very many patches in there now!
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-15 12:51:06
+archive/issue_comments_036623.json:
+```json
+{
+    "body": "Replying to [comment:5 cremona]:\n\n> On the docstring comment -- yes, and the same is true for very many patches in there now!\n\nThe patches for the ReST transition will be rebased post Sage 3.3.x, so no need to worry about that now. One of the goals of SD 12 is to get every patch that is ready into 3.3.x (where x probably is equal to 1).\n\nCheers,\n\nMichael",
+    "created_at": "2009-01-15T12:51:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4831",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4831#issuecomment-36623",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:5 cremona]:
 
@@ -103,15 +196,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-19 01:34:44
+archive/issue_comments_036624.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-01-19T01:34:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4831",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4831#issuecomment-36624",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-19 01:34:44
+archive/issue_comments_036625.json:
+```json
+{
+    "body": "Merged in Sage 3.3.alpha0",
+    "created_at": "2009-01-19T01:34:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4831",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4831#issuecomment-36625",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.3.alpha0

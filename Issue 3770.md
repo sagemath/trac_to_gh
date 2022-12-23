@@ -1,25 +1,61 @@
 # Issue 3770: multiple copies of dsage_setup.py
 
-Issue created by migration from https://trac.sagemath.org/ticket/3770
-
-Original creator: tabbott
-
-Original creation time: 2008-08-03 19:32:47
-
+archive/issues_003770.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nThere seems to be more than one copy of dsage_setup.py, (one in the sage_scripts spkg but not in version control there, and one in the sage spkg).  \n\nIssue created by migration from https://trac.sagemath.org/ticket/3770\n\n",
+    "created_at": "2008-08-03T19:32:47Z",
+    "labels": [
+        "packages: standard",
+        "minor",
+        "bug"
+    ],
+    "title": "multiple copies of dsage_setup.py",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3770",
+    "user": "tabbott"
+}
+```
 Assignee: mabshoff
 
 There seems to be more than one copy of dsage_setup.py, (one in the sage_scripts spkg but not in version control there, and one in the sage spkg).  
 
+Issue created by migration from https://trac.sagemath.org/ticket/3770
+
+
+
+
 
 ---
 
-Comment by mvngu created at 2010-02-02 06:41:21
+archive/issue_comments_026826.json:
+```json
+{
+    "body": "As of Sage 4.3.1, ticket #7975 removed dsage from the standard spkg repository. I'm closing this ticket as invalid.",
+    "created_at": "2010-02-02T06:41:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3770",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3770#issuecomment-26826",
+    "user": "mvngu"
+}
+```
 
 As of Sage 4.3.1, ticket #7975 removed dsage from the standard spkg repository. I'm closing this ticket as invalid.
 
 
+
 ---
 
-Comment by mvngu created at 2010-02-02 06:41:21
+archive/issue_comments_026827.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2010-02-02T06:41:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3770",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3770#issuecomment-26827",
+    "user": "mvngu"
+}
+```
 
 Resolution: invalid

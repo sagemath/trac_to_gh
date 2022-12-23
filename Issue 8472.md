@@ -1,11 +1,21 @@
 # Issue 8472: add %xelatex to notebook
 
-Issue created by migration from https://trac.sagemath.org/ticket/8472
-
-Original creator: ddrake
-
-Original creation time: 2010-03-07 04:08:15
-
+archive/issues_008472.json:
+```json
+{
+    "body": "Assignee: was\n\nIn [this sage-support thread](http://groups.google.com/group/sage-support/browse_thread/thread/bbb437ab04ff64d), there is a request for something like this to work in the notebook:\n\n```\n%xelatex\n\uc2e4\uc218 $x$\uc5d0 \ub300\ud574\uc11c \ub2e4\uc74c\uc774 \uc131\ub9bd\ud55c\ub2e4.\n\\[\n    \\sqrt{x^2}=|x|\n\\]\n```\n\n[XeTeX](http://en.wikipedia.org/wiki/XeTeX) is an extension of TeX that makes working with arbitrary fonts very easy. In practice, this means that users of non-European languages can simply set a font that supports their writing system, type their document, and everything just works.\n\nAdding support for this would be useful to anyone who uses both Sage and non-European languages.\n\nNote that it will be necessary for most users to use a function corresponding to `latex.add_to_preamble()`, since XeTeX by default uses the Computer Modern fonts and for non-trivial uses, one needs to tell XeTeX what font to use. Also, XeTeX produces PDFs by default, so it will be necessary to use something other than `dvipng` to get something that we can display in the notebook.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8472\n\n",
+    "created_at": "2010-03-07T04:08:15Z",
+    "labels": [
+        "notebook",
+        "major",
+        "enhancement"
+    ],
+    "title": "add %xelatex to notebook",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8472",
+    "user": "ddrake"
+}
+```
 Assignee: was
 
 In [this sage-support thread](http://groups.google.com/group/sage-support/browse_thread/thread/bbb437ab04ff64d), there is a request for something like this to work in the notebook:
@@ -24,16 +34,42 @@ Adding support for this would be useful to anyone who uses both Sage and non-Eur
 
 Note that it will be necessary for most users to use a function corresponding to `latex.add_to_preamble()`, since XeTeX by default uses the Computer Modern fonts and for non-trivial uses, one needs to tell XeTeX what font to use. Also, XeTeX produces PDFs by default, so it will be necessary to use something other than `dvipng` to get something that we can display in the notebook.
 
+Issue created by migration from https://trac.sagemath.org/ticket/8472
+
+
+
+
 
 ---
 
-Comment by robert.marik created at 2010-03-10 10:15:23
+archive/issue_comments_076310.json:
+```json
+{
+    "body": "duplicate, see #8486",
+    "created_at": "2010-03-10T10:15:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8472",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8472#issuecomment-76310",
+    "user": "robert.marik"
+}
+```
 
 duplicate, see #8486
 
 
+
 ---
 
-Comment by ddrake created at 2010-03-11 01:48:31
+archive/issue_comments_076311.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2010-03-11T01:48:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8472",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8472#issuecomment-76311",
+    "user": "ddrake"
+}
+```
 
 Resolution: duplicate

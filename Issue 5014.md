@@ -1,11 +1,21 @@
 # Issue 5014: matrix rank should call echelon_form over *fraction field*
 
-Issue created by migration from https://trac.sagemath.org/ticket/5014
-
-Original creator: was
-
-Original creation time: 2009-01-18 14:59:32
-
+archive/issues_005014.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  mjo\n\n\n```\n\nOn Sun, Jan 18, 2009 at 6:49 AM, Paul Zimmermann <Paul.Zimmermann@loria.fr> wrote:\n>       Hi,\n>\n> I hit the following:\n>\n> sage: P.<x> = PolynomialRing(GF(17))\n> sage: m = Matrix(P,2,2)\n> sage: m.randomize(); m\n>\n> [ 6*x^2 + 8*x + 12 10*x^2 + 4*x + 11]\n> [8*x^2 + 12*x + 15  8*x^2 + 9*x + 16]\n> sage: m.rank()\n> ...\n> NotImplementedError: echelon form over Univariate Polynomial Ring in x over Finite Field of size 17 not yet implemented\n>\n> Isn't that provided by either GP or Linbox?\n\nYes, by gp.  I have no idea if it is in Linbox.\n\nsage: gp(m).matrank()\n2\nsage: pari(m).matrank()\nboom -- matrank not wrapped\n\nSomebody *could* implement this by wrapping pari's matrank then doing the conversion and calling it.  Of course, much better would be to do:\n\nsage: m.change_ring(m.base_ring().fraction_field()).rank()\n2\n\nwhich already works. \n\nI am puzzled that rank doesn't first change base to the fraction field, *then* call echelon form -- it's stupid that it tries to call echelon form over the same base ring, since that is often much harder (e.g., it is Hermite form over ZZ).\n\nWilliam\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5014\n\n",
+    "created_at": "2009-01-18T14:59:32Z",
+    "labels": [
+        "linear algebra",
+        "major",
+        "bug"
+    ],
+    "title": "matrix rank should call echelon_form over *fraction field*",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5014",
+    "user": "was"
+}
+```
 Assignee: was
 
 CC:  mjo
@@ -50,17 +60,43 @@ William
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5014
+
+
+
+
 
 ---
 
-Comment by jason created at 2009-01-21 08:27:58
+archive/issue_comments_038209.json:
+```json
+{
+    "body": "See #3211 for a related ticket, sort of.",
+    "created_at": "2009-01-21T08:27:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5014",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5014#issuecomment-38209",
+    "user": "jason"
+}
+```
 
 See #3211 for a related ticket, sort of.
 
 
+
 ---
 
-Comment by dsm created at 2011-05-23 13:16:22
+archive/issue_comments_038210.json:
+```json
+{
+    "body": "This seems to work now:\n\n\n```\n\nsage: version()\n'Sage Version 4.6.2, Release Date: 2011-02-25'\nsage: P.<x> = PolynomialRing(GF(17))\nsage: m = Matrix(P,2,2)\nsage: m.randomize()\nsage: m\n[     15*x^2 + 16*x  9*x^2 + 12*x + 12]\n[13*x^2 + 16*x + 16   4*x^2 + 5*x + 12]\nsage: m.rank()\n2\n```\n",
+    "created_at": "2011-05-23T13:16:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5014",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5014#issuecomment-38210",
+    "user": "dsm"
+}
+```
 
 This seems to work now:
 
@@ -81,36 +117,93 @@ sage: m.rank()
 
 
 
+
 ---
+
+archive/issue_comments_038211.json:
+```json
+{
+    "body": "Attachment\n\nAdd a doctest computing the rank of one of these matrices.",
+    "created_at": "2012-01-08T00:07:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5014",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5014#issuecomment-38211",
+    "user": "mjo"
+}
+```
 
 Attachment
 
 Add a doctest computing the rank of one of these matrices.
 
 
+
 ---
 
-Comment by mjo created at 2012-01-08 00:10:39
+archive/issue_comments_038212.json:
+```json
+{
+    "body": "This works now; I've added a doctest using the example in the description.",
+    "created_at": "2012-01-08T00:10:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5014",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5014#issuecomment-38212",
+    "user": "mjo"
+}
+```
 
 This works now; I've added a doctest using the example in the description.
 
 
+
 ---
 
-Comment by mjo created at 2012-01-08 00:10:39
+archive/issue_comments_038213.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2012-01-08T00:10:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5014",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5014#issuecomment-38213",
+    "user": "mjo"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by novoselt created at 2012-01-11 05:16:37
+archive/issue_comments_038214.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2012-01-11T05:16:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5014",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5014#issuecomment-38214",
+    "user": "novoselt"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-01-21 23:39:19
+archive/issue_comments_038215.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2012-01-21T23:39:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5014",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5014#issuecomment-38215",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: fixed

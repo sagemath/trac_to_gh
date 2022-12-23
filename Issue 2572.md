@@ -1,11 +1,21 @@
 # Issue 2572: imag() not defined for Algebraic Real Field
 
-Issue created by migration from https://trac.sagemath.org/ticket/2572
-
-Original creator: ncalexan
-
-Original creation time: 2008-03-17 17:29:07
-
+archive/issues_002572.json:
+```json
+{
+    "body": "Assignee: malb\n\nCC:  ncalexan\n\nKeywords: imag algebraic reals\n\nThis makes it hard to write generic code:\n\n\n```\nsage: L, (_, a), L_into_A = number_field_elements_from_algebraics([sqrt(2), sqrt(-2 + sqrt(2))*I], minimal=True)\nsage: L_into_A\n\nRing morphism:\n  From: Number Field in a with defining polynomial y^4 - 4*y^2 + 2\n  To:   Algebraic Real Field\n  Defn: a |--> [-0.76536686473017957 .. -0.76536686473017945]\nsage: L_into_A(a)\n[-0.76536686473017957 .. -0.76536686473017945]\nsage: L_into_A(a).imag()\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/<ipython console> in <module>()\n\n<type 'exceptions.AttributeError'>: 'AlgebraicReal' object has no attribute 'imag'\nsage: L, (z, ), L_into_A = number_field_elements_from_algebraics([QQbar.zeta(5)], minimal=True)\nsage: L_into_A\n\nRing morphism:\n  From: Cyclotomic Field of order 5 and degree 4\n  To:   Algebraic Field\n  Defn: zeta5 |--> [0.30901699437494739 .. 0.30901699437494746] + [0.95105651629515353 .. 0.95105651629515365]*I\nsage: L_into_A(z)\n[0.30901699437494739 .. 0.30901699437494746] + [0.95105651629515353 .. 0.95105651629515365]*I\nsage: L_into_A(z).imag()\n[0.95105651629515353 .. 0.95105651629515365]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2572\n\n",
+    "created_at": "2008-03-17T17:29:07Z",
+    "labels": [
+        "commutative algebra",
+        "minor",
+        "bug"
+    ],
+    "title": "imag() not defined for Algebraic Real Field",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2572",
+    "user": "ncalexan"
+}
+```
 Assignee: malb
 
 CC:  ncalexan
@@ -46,44 +56,116 @@ sage: L_into_A(z).imag()
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2572
+
+
+
+
 
 ---
 
-Comment by cwitty created at 2008-03-17 21:16:46
+archive/issue_comments_017576.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-03-17T21:16:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2572",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2572#issuecomment-17576",
+    "user": "cwitty"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by cwitty created at 2008-03-17 21:16:46
+archive/issue_comments_017577.json:
+```json
+{
+    "body": "Changing assignee from malb to cwitty.",
+    "created_at": "2008-03-17T21:16:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2572",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2572#issuecomment-17577",
+    "user": "cwitty"
+}
+```
 
 Changing assignee from malb to cwitty.
 
 
+
 ---
+
+archive/issue_comments_017578.json:
+```json
+{
+    "body": "Attachment\n\nThe attached patch adds the requested method (and .real() as well).  Doctests pass in sage/rings.",
+    "created_at": "2008-03-18T02:24:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2572",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2572#issuecomment-17578",
+    "user": "cwitty"
+}
+```
 
 Attachment
 
 The attached patch adds the requested method (and .real() as well).  Doctests pass in sage/rings.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2008-03-20 01:43:44
+archive/issue_comments_017579.json:
+```json
+{
+    "body": "Looks good.",
+    "created_at": "2008-03-20T01:43:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2572",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2572#issuecomment-17579",
+    "user": "AlexGhitza"
+}
+```
 
 Looks good.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-22 04:03:38
+archive/issue_comments_017580.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-03-22T04:03:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2572",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2572#issuecomment-17580",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-22 04:03:38
+archive/issue_comments_017581.json:
+```json
+{
+    "body": "Merged in Sage 2.11.alpha1",
+    "created_at": "2008-03-22T04:03:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2572",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2572#issuecomment-17581",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.11.alpha1

@@ -1,11 +1,21 @@
 # Issue 5857: E.list() for E an elliptic curve over a finite field is broken
 
-Issue created by migration from https://trac.sagemath.org/ticket/5857
-
-Original creator: was
-
-Original creation time: 2009-04-22 15:47:55
-
+archive/issues_005857.json:
+```json
+{
+    "body": "Assignee: was\n\nE.list() doesn't work, but list(E) works fine.\n\n\n```\nsage: E = EllipticCurve(GF(11), [1,2])\nsage: E.list()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/Users/wstein/.sage/temp/teragon.local/15239/_Users_wstein__sage_init_sage_0.py in <module>()\n\n/Users/wstein/build/sage-3.4.1/local/lib/python2.5/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.list (sage/structure/parent.c:5196)()\n\nAttributeError: 'EllipticCurve_finite_field' object has no attribute '__iter__'\nsage: list(E)\n\n[(0 : 1 : 0),\n (1 : 2 : 1),\n (1 : 9 : 1),\n (2 : 1 : 1),\n...\n```\n\n\nSee also #5856\n\nIssue created by migration from https://trac.sagemath.org/ticket/5857\n\n",
+    "created_at": "2009-04-22T15:47:55Z",
+    "labels": [
+        "number theory",
+        "major",
+        "bug"
+    ],
+    "title": "E.list() for E an elliptic curve over a finite field is broken",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5857",
+    "user": "was"
+}
+```
 Assignee: was
 
 E.list() doesn't work, but list(E) works fine.
@@ -34,61 +44,157 @@ sage: list(E)
 
 See also #5856
 
+Issue created by migration from https://trac.sagemath.org/ticket/5857
+
+
+
+
 
 ---
 
-Comment by davidloeffler created at 2009-07-21 08:14:53
+archive/issue_comments_046278.json:
+```json
+{
+    "body": "Changing assignee from was to davidloeffler.",
+    "created_at": "2009-07-21T08:14:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5857",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5857#issuecomment-46278",
+    "user": "davidloeffler"
+}
+```
 
 Changing assignee from was to davidloeffler.
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-07-21 08:14:53
+archive/issue_comments_046279.json:
+```json
+{
+    "body": "Changing component from number theory to elliptic curves.",
+    "created_at": "2009-07-21T08:14:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5857",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5857#issuecomment-46279",
+    "user": "davidloeffler"
+}
+```
 
 Changing component from number theory to elliptic curves.
 
 
+
 ---
+
+archive/issue_comments_046280.json:
+```json
+{
+    "body": "Attachment\n\nApplies to 4.1.1",
+    "created_at": "2009-08-18T20:52:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5857",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5857#issuecomment-46280",
+    "user": "cremona"
+}
+```
 
 Attachment
 
 Applies to 4.1.1
 
 
+
 ---
 
-Comment by cremona created at 2009-08-18 20:53:22
+archive/issue_comments_046281.json:
+```json
+{
+    "body": "I think this does what was wanted.",
+    "created_at": "2009-08-18T20:53:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5857",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5857#issuecomment-46281",
+    "user": "cremona"
+}
+```
 
 I think this does what was wanted.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-08-19 10:34:53
+archive/issue_comments_046282.json:
+```json
+{
+    "body": "Looks good.",
+    "created_at": "2009-08-19T10:34:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5857",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5857#issuecomment-46282",
+    "user": "AlexGhitza"
+}
+```
 
 Looks good.
 
 
+
 ---
 
-Comment by mvngu created at 2009-08-23 02:07:34
+archive/issue_comments_046283.json:
+```json
+{
+    "body": "reviewer patch",
+    "created_at": "2009-08-23T02:07:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5857",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5857#issuecomment-46283",
+    "user": "mvngu"
+}
+```
 
 reviewer patch
 
 
+
 ---
 
-Comment by mvngu created at 2009-08-23 02:11:00
+archive/issue_comments_046284.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-08-23T02:11:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5857",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5857#issuecomment-46284",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
+
+archive/issue_comments_046285.json:
+```json
+{
+    "body": "Attachment\n\nThe reviewer patch `trac_5857-reviewer.patch` fixes a trivial typo in ReST formatting. Merged patches in this order:\n\n1. `trac_5857-elliptic_curve_iterator.patch`\n2. `trac_5857-reviewer.patch`",
+    "created_at": "2009-08-23T02:11:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5857",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5857#issuecomment-46285",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
 The reviewer patch `trac_5857-reviewer.patch` fixes a trivial typo in ReST formatting. Merged patches in this order:
 
- 1. `trac_5857-elliptic_curve_iterator.patch`
- 1. `trac_5857-reviewer.patch`
+1. `trac_5857-elliptic_curve_iterator.patch`
+2. `trac_5857-reviewer.patch`

@@ -1,17 +1,44 @@
 # Issue 3245: [with patch, needs review] provide coefficient and coefficients methods for symbolic expressions
 
-Issue created by migration from https://trac.sagemath.org/ticket/3245
-
-Original creator: mhansen
-
-Original creation time: 2008-05-17 20:50:27
-
+archive/issues_003245.json:
+```json
+{
+    "body": "Assignee: was\n\nRight now, there is just coeff and coeffs while other rings have both or just coefficients.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3245\n\n",
+    "created_at": "2008-05-17T20:50:27Z",
+    "labels": [
+        "calculus",
+        "minor",
+        "bug"
+    ],
+    "title": "[with patch, needs review] provide coefficient and coefficients methods for symbolic expressions",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3245",
+    "user": "mhansen"
+}
+```
 Assignee: was
 
 Right now, there is just coeff and coeffs while other rings have both or just coefficients.
 
+Issue created by migration from https://trac.sagemath.org/ticket/3245
+
+
+
+
 
 ---
+
+archive/issue_comments_022465.json:
+```json
+{
+    "body": "Attachment\n\nPatch looks good to me, I am doctesting to make sure nothing was broken.\n\nCheers,\n\nMichael",
+    "created_at": "2008-05-23T04:27:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3245",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3245#issuecomment-22465",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -22,15 +49,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-23 06:27:25
+archive/issue_comments_022466.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-05-23T06:27:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3245",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3245#issuecomment-22466",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-23 06:27:25
+archive/issue_comments_022467.json:
+```json
+{
+    "body": "Merged in Sage 3.0.2.rc0",
+    "created_at": "2008-05-23T06:27:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3245",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3245#issuecomment-22467",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.2.rc0

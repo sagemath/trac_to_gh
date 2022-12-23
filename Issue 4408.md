@@ -1,11 +1,21 @@
 # Issue 4408: magma interface -- change _magma_init_ to take non-optional magma argument
 
-Issue created by migration from https://trac.sagemath.org/ticket/4408
-
-Original creator: was
-
-Original creation time: 2008-10-31 01:50:04
-
+archive/issues_004408.json:
+```json
+{
+    "body": "Assignee: was\n\nThis patch touches a lot of files in a trivial automatic way.  They main point is it changes the _magma_init_ signature from \n\n_magma_init_(self)\n\nto \n\n_magma_init_(self, magma)\n\nwhere magma is a magma interface.  Also, it introduces some caching for the magma interface itself.  This means that _magma_init_ has access to and can impact the full state of the magma interpreter.   This makes creating a string representation of an element valid for that interpreter dramatically more powerful and flexible, is conceptually very easy to understand, and works.  The caching helps mediate potential efficiency issues. \n\nNote, whether caching should be on or off by default is unclear, and I think can only be answered by implementing a lot more of this framework and doing some profiling. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4408\n\n",
+    "created_at": "2008-10-31T01:50:04Z",
+    "labels": [
+        "interfaces",
+        "major",
+        "enhancement"
+    ],
+    "title": "magma interface -- change _magma_init_ to take non-optional magma argument",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4408",
+    "user": "was"
+}
+```
 Assignee: was
 
 This patch touches a lot of files in a trivial automatic way.  They main point is it changes the _magma_init_ signature from 
@@ -20,39 +30,115 @@ where magma is a magma interface.  Also, it introduces some caching for the magm
 
 Note, whether caching should be on or off by default is unclear, and I think can only be answered by implementing a lot more of this framework and doing some profiling. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4408
+
+
+
+
 
 ---
+
+archive/issue_comments_032412.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-10-31T04:08:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4408",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4408#issuecomment-32412",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2008-11-04 05:07:29
+archive/issue_comments_032413.json:
+```json
+{
+    "body": "I've decided caching is not the default, since I don't want to blatantly introduce memory leaks. The second patch implements this change (one line change), plus changes all _magma_init_()'s to appropriate _magma_init_(magma).",
+    "created_at": "2008-11-04T05:07:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4408",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4408#issuecomment-32413",
+    "user": "was"
+}
+```
 
 I've decided caching is not the default, since I don't want to blatantly introduce memory leaks. The second patch implements this change (one line change), plus changes all _magma_init_()'s to appropriate _magma_init_(magma).
 
 
+
 ---
+
+archive/issue_comments_032414.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-11-04T05:33:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4408",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4408#issuecomment-32414",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_032415.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-11-14T00:53:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4408",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4408#issuecomment-32415",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2008-11-24 03:37:37
+archive/issue_comments_032416.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2008-11-24T03:37:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4408",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4408#issuecomment-32416",
+    "user": "was"
+}
+```
 
 Resolution: invalid
 
 
+
 ---
 
-Comment by was created at 2008-11-24 03:37:37
+archive/issue_comments_032417.json:
+```json
+{
+    "body": "I've decided this approach with caching is the wrong design since it would introduce memory leaks.  I'm closing this ticket/approach as invalid, and opening a new one, which\nimplements related ideas and gets it right.  See #4601.",
+    "created_at": "2008-11-24T03:37:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4408",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4408#issuecomment-32417",
+    "user": "was"
+}
+```
 
 I've decided this approach with caching is the wrong design since it would introduce memory leaks.  I'm closing this ticket/approach as invalid, and opening a new one, which
 implements related ideas and gets it right.  See #4601.

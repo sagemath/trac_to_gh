@@ -1,11 +1,21 @@
 # Issue 2480: problem parsing arguments to NumberField.order()
 
-Issue created by migration from https://trac.sagemath.org/ticket/2480
-
-Original creator: ncalexan
-
-Original creation time: 2008-03-12 03:19:59
-
+archive/issues_002480.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  ncalexan robertwb mhansen\n\nKeywords: number field order arguments\n\n\n```\nsage: y = ZZ['y'].0; K = NumberField(y^4 + 4*y^2 + 2, 'a'); K\nNumber Field in a with defining polynomial y^4 + 4*y^2 + 2\nsage: B = K.integral_basis()\nsage: B\n[1, a, a^2, a^3]\nsage: K.order(B)\nOrder in Number Field in a with defining polynomial y^4 + 4*y^2 + 2\nsage: K.order(gens=B)\n+Infinity\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2480\n\n",
+    "created_at": "2008-03-12T03:19:59Z",
+    "labels": [
+        "number theory",
+        "minor",
+        "bug"
+    ],
+    "title": "problem parsing arguments to NumberField.order()",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2480",
+    "user": "ncalexan"
+}
+```
 Assignee: was
 
 CC:  ncalexan robertwb mhansen
@@ -26,47 +36,117 @@ sage: K.order(gens=B)
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2480
+
+
+
+
 
 ---
 
-Comment by davidloeffler created at 2009-07-20 19:57:01
+archive/issue_comments_016806.json:
+```json
+{
+    "body": "Changing assignee from was to davidloeffler.",
+    "created_at": "2009-07-20T19:57:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2480",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2480#issuecomment-16806",
+    "user": "davidloeffler"
+}
+```
 
 Changing assignee from was to davidloeffler.
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-07-20 19:57:01
+archive/issue_comments_016807.json:
+```json
+{
+    "body": "Changing component from number theory to number fields.",
+    "created_at": "2009-07-20T19:57:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2480",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2480#issuecomment-16807",
+    "user": "davidloeffler"
+}
+```
 
 Changing component from number theory to number fields.
 
 
+
 ---
 
-Comment by craigcitro created at 2010-01-20 06:23:18
+archive/issue_comments_016808.json:
+```json
+{
+    "body": "This wasn't so bad -- the problem was that `gens=` put the list of gens in the `kwds` dict, instead of in the `*`-argument. I've attached a fix, but I'd love for someone to tell me if deleting `gens` out of the `kwds` dict is sufficiently pythonic. (If you don't, the call to `absolute_order_from_ring_generators` rightfully complains that `gens` is specified twice.) Another option would be to reassign `kwds['dict']` at the end, but I don't think that's any nicer. (In fact, that might be epsilon slower, since it's another argument to unpack from the dictionary on the other side.)\n\nAlso, the comment block in the docstring **really** looks like something was accidentally cut off at some point. Amusingly, this isn't the case: I actually dug through the hg logs, and it was really committed just like that.",
+    "created_at": "2010-01-20T06:23:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2480",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2480#issuecomment-16808",
+    "user": "craigcitro"
+}
+```
 
 This wasn't so bad -- the problem was that `gens=` put the list of gens in the `kwds` dict, instead of in the `*`-argument. I've attached a fix, but I'd love for someone to tell me if deleting `gens` out of the `kwds` dict is sufficiently pythonic. (If you don't, the call to `absolute_order_from_ring_generators` rightfully complains that `gens` is specified twice.) Another option would be to reassign `kwds['dict']` at the end, but I don't think that's any nicer. (In fact, that might be epsilon slower, since it's another argument to unpack from the dictionary on the other side.)
 
-Also, the comment block in the docstring *really* looks like something was accidentally cut off at some point. Amusingly, this isn't the case: I actually dug through the hg logs, and it was really committed just like that.
+Also, the comment block in the docstring **really** looks like something was accidentally cut off at some point. Amusingly, this isn't the case: I actually dug through the hg logs, and it was really committed just like that.
+
 
 
 ---
 
-Comment by craigcitro created at 2010-01-20 06:23:18
+archive/issue_comments_016809.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-01-20T06:23:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2480",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2480#issuecomment-16809",
+    "user": "craigcitro"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by craigcitro created at 2010-01-20 06:24:51
+archive/issue_comments_016810.json:
+```json
+{
+    "body": "Mike and Robert, I'm adding you on the cc so that you can tell me if I'm being sufficiently pythonic. `:)`",
+    "created_at": "2010-01-20T06:24:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2480",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2480#issuecomment-16810",
+    "user": "craigcitro"
+}
+```
 
 Mike and Robert, I'm adding you on the cc so that you can tell me if I'm being sufficiently pythonic. `:)`
 
 
+
 ---
 
-Comment by mhansen created at 2010-01-20 07:00:50
+archive/issue_comments_016811.json:
+```json
+{
+    "body": "Hey Craig,\n\n\n```\ngens = kwds.pop('gens')\n```\n\n\nis probably better.",
+    "created_at": "2010-01-20T07:00:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2480",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2480#issuecomment-16811",
+    "user": "mhansen"
+}
+```
 
 Hey Craig,
 
@@ -79,9 +159,20 @@ gens = kwds.pop('gens')
 is probably better.
 
 
+
 ---
 
-Comment by mhansen created at 2010-01-20 07:05:08
+archive/issue_comments_016812.json:
+```json
+{
+    "body": "Err,\n\n\n```\ngens = kwds.pop('gens', args)\n```\n",
+    "created_at": "2010-01-20T07:05:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2480",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2480#issuecomment-16812",
+    "user": "mhansen"
+}
+```
 
 Err,
 
@@ -92,22 +183,57 @@ gens = kwds.pop('gens', args)
 
 
 
+
 ---
+
+archive/issue_comments_016813.json:
+```json
+{
+    "body": "Attachment\n\nNice. New patch with Mike's suggestion incorporated posted.",
+    "created_at": "2010-01-20T07:07:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2480",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2480#issuecomment-16813",
+    "user": "craigcitro"
+}
+```
 
 Attachment
 
 Nice. New patch with Mike's suggestion incorporated posted.
 
 
+
 ---
 
-Comment by mhansen created at 2010-01-20 07:16:08
+archive/issue_comments_016814.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-01-20T07:16:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2480",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2480#issuecomment-16814",
+    "user": "mhansen"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mvngu created at 2010-01-24 03:22:20
+archive/issue_comments_016815.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-24T03:22:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2480",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2480#issuecomment-16815",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

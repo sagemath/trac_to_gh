@@ -1,11 +1,21 @@
 # Issue 6494: sage should *never* ever import numpy by default on startup.  Yet again it does!
 
-Issue created by migration from https://trac.sagemath.org/ticket/6494
-
-Original creator: was
-
-Original creation time: 2009-07-09 04:20:56
-
+archive/issues_006494.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nCC:  was jason robertwb\n\n\n```\n.bash-3.2$ ./sage -startuptime |grep numpy\n           decorators_numpy: 0.000 (IPython.testing)\n             numpy: 0.073 (complex_plot)\n              numpy.__config__: 0.000 (numpy)\n              version: 0.000 (numpy)\n              _import_tools: 0.000 (numpy)\n              add_newdocs: 0.047 (numpy)\n                numpy.version: 0.000 (lib)\n                 numpy.core.numeric: 0.018 (type_check)\n                  multiarray: 0.002 (numpy.core.numeric)\n                  umath: 0.001 (numpy.core.numeric)\n                   numpy.core.multiarray: 0.000 (umath)\n                  _internal: 0.001 (numpy.core.numeric)\n                  numerictypes: 0.002 (numpy.core.numeric)\n                  _sort: 0.000 (numpy.core.numeric)\n                  numeric: 0.004 (numpy.core.numeric)\n                  defmatrix: 0.001 (numpy.core.numeric)\n                  defchararray: 0.000 (numpy.core.numeric)\n                  records: 0.001 (numpy.core.numeric)\n                  memmap: 0.000 (numpy.core.numeric)\n                  scalarmath: 0.001 (numpy.core.numeric)\n                   numpy.core.umath: 0.000 (scalarmath)\n                  numpy.testing: 0.004 (numpy.core.numeric)\n                   decorators: 0.000 (numpy.testing)\n                   utils: 0.003 (numpy.testing)\n                   numpytest: 0.000 (numpy.testing)\n                 numpy.core.numerictypes: 0.000 (index_tricks)\n                  numpy.core.fromnumeric: 0.000 (function_base)\n                  numpy.lib.shape_base: 0.000 (function_base)\n                  numpy.lib.twodim_base: 0.000 (function_base)\n                 numpy.core.defmatrix: 0.000 (index_tricks)\n                 numpy.lib.type_check: 0.000 (scimath)\n                 numpy.core: 0.000 (polynomial)\n                 numpy.lib.getlimits: 0.001 (polynomial)\n                  machar: 0.000 (numpy.lib.getlimits)\n                 numpy.lib.function_base: 0.000 (polynomial)\n                 numpy.linalg: 0.002 (polynomial)\n                  linalg: 0.001 (numpy.linalg)\n                   numpy.lib: 0.000 (linalg)\n                  numpy.lib.utils: 0.000 (format)\n               numpy.lib._compiled_base: 0.000 (add_newdocs)\n               numpy.lib.index_tricks: 0.000 (add_newdocs)\n              testing: 0.000 (numpy)\n              core: 0.000 (numpy)\n              fft: 0.002 (numpy)\n              mtrand: 0.015 (numpy)\n              ctypeslib: 0.001 (numpy)\n               numpy.core._internal: 0.000 (ctypeslib)\n              ma: 0.006 (numpy)\n0.073 numpy (complex_plot)\n```\n\n\nI think this is because of the new complex_plot module, which I think I positively reviewed, so this is my fault.  To resolve this ticket, make that import sufficiently lazy.  Also, make a doctest that verifies that numpy is not imported when Sage starts up.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6494\n\n",
+    "created_at": "2009-07-09T04:20:56Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "sage should *never* ever import numpy by default on startup.  Yet again it does!",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6494",
+    "user": "was"
+}
+```
 Assignee: mabshoff
 
 CC:  was jason robertwb
@@ -67,22 +77,61 @@ CC:  was jason robertwb
 
 I think this is because of the new complex_plot module, which I think I positively reviewed, so this is my fault.  To resolve this ticket, make that import sufficiently lazy.  Also, make a doctest that verifies that numpy is not imported when Sage starts up.
 
+Issue created by migration from https://trac.sagemath.org/ticket/6494
+
+
+
+
 
 ---
+
+archive/issue_comments_052549.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-08-26T19:31:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6494",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6494#issuecomment-52549",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2010-08-26 19:35:16
+archive/issue_comments_052550.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-08-26T19:35:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6494",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6494#issuecomment-52550",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mhansen created at 2010-08-26 19:35:16
+archive/issue_comments_052551.json:
+```json
+{
+    "body": "I don't think you can cimport numpy without causing an import in the module.  Thus, a number of things have to be lazily imported.  This will cause a problem if people do\n\n\n```\nsage: from sage.finance.all import TimeSeries\nsage: isinstance(foo, TimeSeries)\n```\n\n\nsince TimeSeries will be a LazyImport object rather than a class.  I'm not sure the best thing to do, but I've posted a patch anyway.",
+    "created_at": "2010-08-26T19:35:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6494",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6494#issuecomment-52551",
+    "user": "mhansen"
+}
+```
 
 I don't think you can cimport numpy without causing an import in the module.  Thus, a number of things have to be lazily imported.  This will cause a problem if people do
 
@@ -96,23 +145,56 @@ sage: isinstance(foo, TimeSeries)
 since TimeSeries will be a LazyImport object rather than a class.  I'm not sure the best thing to do, but I've posted a patch anyway.
 
 
+
 ---
 
-Comment by jason created at 2010-10-02 20:10:31
+archive/issue_comments_052552.json:
+```json
+{
+    "body": "numpy recently has made great improvements in its import speed, so maybe this isn't quite the issue it used to be?",
+    "created_at": "2010-10-02T20:10:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6494",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6494#issuecomment-52552",
+    "user": "jason"
+}
+```
 
 numpy recently has made great improvements in its import speed, so maybe this isn't quite the issue it used to be?
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-10-15 12:54:49
+archive/issue_comments_052553.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2011-10-15T12:54:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6494",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6494#issuecomment-52553",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-10-15 12:54:49
+archive/issue_comments_052554.json:
+```json
+{
+    "body": "I'm not going to judge whether numpy imports are still an issue or not, but in any case the patch needs to be rebased:\n\n```\npatching file sage/calculus/all.py\nHunk #2 succeeded at 16 (offset 1 line).\npatching file sage/finance/all.py\npatching file sage/interfaces/gnuplot.py\npatching file sage/plot/all.py\nHunk #2 FAILED at 21.\n1 out of 2 hunks FAILED -- saving rejects to file sage/plot/all.py.rej\npatching file sage/plot/plot3d/implicit_plot3d.py\nHunk #2 succeeded at 255 (offset 10 lines).\npatching file sage/stats/all.py\npatching file sage/stats/hmm/all.py\n```\n",
+    "created_at": "2011-10-15T12:54:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6494",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6494#issuecomment-52554",
+    "user": "jdemeyer"
+}
+```
 
 I'm not going to judge whether numpy imports are still an issue or not, but in any case the patch needs to be rebased:
 
@@ -132,22 +214,55 @@ patching file sage/stats/hmm/all.py
 
 
 
+
 ---
 
-Comment by mhansen created at 2012-03-28 21:09:33
+archive/issue_comments_052555.json:
+```json
+{
+    "body": "This ticket is invalid now as all of the changes appearing in it are already in the Sage library.",
+    "created_at": "2012-03-28T21:09:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6494",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6494#issuecomment-52555",
+    "user": "mhansen"
+}
+```
 
 This ticket is invalid now as all of the changes appearing in it are already in the Sage library.
 
 
+
 ---
 
-Comment by mhansen created at 2012-03-28 21:09:33
+archive/issue_comments_052556.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2012-03-28T21:09:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6494",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6494#issuecomment-52556",
+    "user": "mhansen"
+}
+```
 
 Resolution: invalid
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-03-28 22:44:11
+archive/issue_comments_052557.json:
+```json
+{
+    "body": "You shouldn't just close tickets, leave that to the release manager.",
+    "created_at": "2012-03-28T22:44:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6494",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6494#issuecomment-52557",
+    "user": "jdemeyer"
+}
+```
 
 You shouldn't just close tickets, leave that to the release manager.

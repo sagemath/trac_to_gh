@@ -1,11 +1,21 @@
 # Issue 9571: Sphinx Warning: Missing title for sage.misc.exceptions after #9249
 
-Issue created by migration from https://trac.sagemath.org/ticket/9571
-
-Original creator: mpatel
-
-Original creation time: 2010-07-22 02:56:42
-
+archive/issues_009571.json:
+```json
+{
+    "body": "Assignee: mvngu\n\nCC:  ncohen wdj\n\nThe forthcoming 4.5.2.alpha0's includes #9249, which yields this docbuild warning:\n\n```\nWarning: Missing title for sage.misc.exceptions\n```\n\nSphinx substitutes \"MISSING TITLE.\"\n\nIssue created by migration from https://trac.sagemath.org/ticket/9571\n\n",
+    "created_at": "2010-07-22T02:56:42Z",
+    "labels": [
+        "documentation",
+        "blocker",
+        "bug"
+    ],
+    "title": "Sphinx Warning: Missing title for sage.misc.exceptions after #9249",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9571",
+    "user": "mpatel"
+}
+```
 Assignee: mvngu
 
 CC:  ncohen wdj
@@ -18,67 +28,172 @@ Warning: Missing title for sage.misc.exceptions
 
 Sphinx substitutes "MISSING TITLE."
 
+Issue created by migration from https://trac.sagemath.org/ticket/9571
+
+
+
+
 
 ---
 
-Comment by ncohen created at 2010-07-22 03:10:03
+archive/issue_comments_092427.json:
+```json
+{
+    "body": "Would this one suit you ? :-)\n\nNathann",
+    "created_at": "2010-07-22T03:10:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9571",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9571#issuecomment-92427",
+    "user": "ncohen"
+}
+```
 
 Would this one suit you ? :-)
 
 Nathann
 
 
+
 ---
 
-Comment by ncohen created at 2010-07-22 03:10:03
+archive/issue_comments_092428.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-07-22T03:10:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9571",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9571#issuecomment-92428",
+    "user": "ncohen"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mpatel created at 2010-07-22 04:05:57
+archive/issue_comments_092429.json:
+```json
+{
+    "body": "Can you remove \"==========\"?",
+    "created_at": "2010-07-22T04:05:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9571",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9571#issuecomment-92429",
+    "user": "mpatel"
+}
+```
 
 Can you remove "=========="?
 
 
+
 ---
 
-Comment by mpatel created at 2010-07-22 04:05:57
+archive/issue_comments_092430.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-07-22T04:05:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9571",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9571#issuecomment-92430",
+    "user": "mpatel"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by ncohen created at 2010-07-22 04:23:14
+archive/issue_comments_092431.json:
+```json
+{
+    "body": "Done.",
+    "created_at": "2010-07-22T04:23:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9571",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9571#issuecomment-92431",
+    "user": "ncohen"
+}
+```
 
 Done.
 
 
+
 ---
 
-Comment by ncohen created at 2010-07-22 04:23:14
+archive/issue_comments_092432.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-07-22T04:23:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9571",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9571#issuecomment-92432",
+    "user": "ncohen"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
+
+archive/issue_comments_092433.json:
+```json
+{
+    "body": "Attachment\n\nLooks good.",
+    "created_at": "2010-07-23T00:30:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9571",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9571#issuecomment-92433",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
 Looks good.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-07-23 00:30:15
+archive/issue_comments_092434.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-07-23T00:30:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9571",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9571#issuecomment-92434",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by ddrake created at 2010-07-23 02:32:17
+archive/issue_comments_092435.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-07-23T02:32:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9571",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9571#issuecomment-92435",
+    "user": "ddrake"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 4189: hmm documentation buglet
 
-Issue created by migration from https://trac.sagemath.org/ticket/4189
-
-Original creator: mabshoff
-
-Original creation time: 2008-09-24 10:56:05
-
+archive/issues_004189.json:
+```json
+{
+    "body": "Assignee: was\n\nmapb reported in http://groups.google.com/group/sage-devel/t/8109b386f0e94251\n\n```\nThe fourth argument in the following routine is called \n\"emission_symbols\", while the INPUTS section reports \"emission_state\". \nhmm.DiscreteHiddenMarkovModel(A, B, pi=None, emission_symbols=None, \nname=None, normalize=True) \nn \n    INPUTS: \n        A  -- square matrix of doubles; the state change probabilities \n        B  -- matrix of doubles; emission probabilities \n        pi -- list of floats; probabilities for each initial state \n        emission_state -- list of B.ncols() symbols (just used for \nprinting) \n        name -- (optional) name of the model \n        normalize -- (optional; default=True) whether or not to \nnormalize \n                     the model so the probabilities add to 1 \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4189\n\n",
+    "created_at": "2008-09-24T10:56:05Z",
+    "labels": [
+        "documentation",
+        "major",
+        "bug"
+    ],
+    "title": "hmm documentation buglet",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4189",
+    "user": "mabshoff"
+}
+```
 Assignee: was
 
 mapb reported in http://groups.google.com/group/sage-devel/t/8109b386f0e94251
@@ -29,15 +39,43 @@ normalize
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4189
+
+
+
+
 
 ---
+
+archive/issue_comments_030394.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-09-24T23:29:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4189",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4189#issuecomment-30394",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-24 23:31:58
+archive/issue_comments_030395.json:
+```json
+{
+    "body": "Looks good to me, positive review.\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-24T23:31:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4189",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4189#issuecomment-30395",
+    "user": "mabshoff"
+}
+```
 
 Looks good to me, positive review.
 
@@ -46,15 +84,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-25 00:14:25
+archive/issue_comments_030396.json:
+```json
+{
+    "body": "Merged in Sage 3.1.3.alpha2",
+    "created_at": "2008-09-25T00:14:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4189",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4189#issuecomment-30396",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.1.3.alpha2
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-25 00:14:25
+archive/issue_comments_030397.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-09-25T00:14:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4189",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4189#issuecomment-30397",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

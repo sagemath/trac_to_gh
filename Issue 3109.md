@@ -1,17 +1,27 @@
 # Issue 3109: elliptic curves -- implement P.divide(n) for P a point on an elliptic curve and n an integer
 
-Issue created by migration from https://trac.sagemath.org/ticket/3109
-
-Original creator: was
-
-Original creation time: 2008-05-06 02:19:46
-
+archive/issues_003109.json:
+```json
+{
+    "body": "Assignee: was\n\nImplement P.divide(n) for P a point on an elliptic curve and n an integer.  This will:\n\n1. try to find an explicit point Q defined over the same field as P such that n*Q == P.\n2. If no such Q exists, raise a ValueError.\n\nAlso, implement P.is_divisible_by(n) trivially in terms of the above, and document\nthe connection between the two functions.  Also, have both implemented in terms of\na third function that just finds the polynomial whose root is x(Q), so we\ncan implement is_divisible_by more efficiently. \n\nAn algorithm to do this is described at the end of section 3 of \n    http://wstein.org/papers/kolyconj/\n\nIf you see this ticket and think of doing this, please immediately contact me (wstein`@`gmail.com) before, since I'm planning on doing this very soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3109\n\n",
+    "created_at": "2008-05-06T02:19:46Z",
+    "labels": [
+        "number theory",
+        "major",
+        "bug"
+    ],
+    "title": "elliptic curves -- implement P.divide(n) for P a point on an elliptic curve and n an integer",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3109",
+    "user": "was"
+}
+```
 Assignee: was
 
 Implement P.divide(n) for P a point on an elliptic curve and n an integer.  This will:
 
- 1. try to find an explicit point Q defined over the same field as P such that n*Q == P.
- 2. If no such Q exists, raise a ValueError.
+1. try to find an explicit point Q defined over the same field as P such that n*Q == P.
+2. If no such Q exists, raise a ValueError.
 
 Also, implement P.is_divisible_by(n) trivially in terms of the above, and document
 the connection between the two functions.  Also, have both implemented in terms of
@@ -23,15 +33,43 @@ An algorithm to do this is described at the end of section 3 of
 
 If you see this ticket and think of doing this, please immediately contact me (wstein`@`gmail.com) before, since I'm planning on doing this very soon.
 
+Issue created by migration from https://trac.sagemath.org/ticket/3109
+
+
+
+
 
 ---
 
-Comment by was created at 2008-05-06 02:20:01
+archive/issue_comments_021483.json:
+```json
+{
+    "body": "Changing type from defect to enhancement.",
+    "created_at": "2008-05-06T02:20:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3109",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3109#issuecomment-21483",
+    "user": "was"
+}
+```
 
 Changing type from defect to enhancement.
 
 
+
 ---
+
+archive/issue_comments_021484.json:
+```json
+{
+    "body": "Attachment\n\n\n```\n{\nCremona:\n>  For ages Magma would only do Inverse(MultiplicationBymMap(m))(P) which\n>  would throw a run-time error if there were no solutions and give one\n>  solution only if there were any.  So I wronte my own, until they got\n>  around to DivisionPoints(P,m) which returns a list, possibly empty.\n\nSomething like that is next on my list.  Maybe instead of P.divide(m),\nwhich is what I planned, for consistency \nI should do P.division_points(m), which can return a possibly empty list.    \n```\n",
+    "created_at": "2008-05-06T17:24:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3109",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3109#issuecomment-21484",
+    "user": "was"
+}
+```
 
 Attachment
 
@@ -51,33 +89,92 @@ I should do P.division_points(m), which can return a possibly empty list.
 
 
 
+
 ---
 
-Comment by was created at 2008-05-07 04:55:01
+archive/issue_comments_021485.json:
+```json
+{
+    "body": "this adds lots of docs and fixes bugs.  finishes implementing full_division_polynomial and multiplication by n.",
+    "created_at": "2008-05-07T04:55:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3109",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3109#issuecomment-21485",
+    "user": "was"
+}
+```
 
 this adds lots of docs and fixes bugs.  finishes implementing full_division_polynomial and multiplication by n.
 
 
+
 ---
+
+archive/issue_comments_021486.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-05-07T07:10:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3109",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3109#issuecomment-21486",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_021487.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-05-07T07:10:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3109",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3109#issuecomment-21487",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by cremona created at 2008-05-07 07:22:25
+archive/issue_comments_021488.json:
+```json
+{
+    "body": "Review under way.",
+    "created_at": "2008-05-07T07:22:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3109",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3109#issuecomment-21488",
+    "user": "cremona"
+}
+```
 
 Review under way.
 
 
+
 ---
 
-Comment by cremona created at 2008-05-07 08:21:12
+archive/issue_comments_021489.json:
+```json
+{
+    "body": "I applied the 3 patches in succession with no problems, and all the doctests in sage/schemes/elliptic_curves pass.\n\nAll very well written and commented and documented with excellent doctests.  I do have two issues, one more important than the other:\n\n* (less important) We currently have no support for the coordinate ring of an elliptic curve (which would be the quotient ring K[x,y]/(F) where F is the bivariate polynomial defining E, and K is the field of definition.  This lack is rather noticable in the code, where this ring has to be created on the fly to do some reduction and is then thrown away.  A better solution, surely, would be to define a function E.coordinate_ring() and have these division polynomials live there.  I suspect that this suggestion would get a response (probably from David Kohel) that this should all be done as part of much more general scheme machinery, which is correct but will discourage someone (like me) from actually doing what would be pretty simple and useful.\n\n* (more important) You restrict to short Weierstrass equations!  Why?  Users will want the general case.  Don't be nervous about the horrible more general recursion formulae (where as yo uobserve, there are typos in Solverman even in the simple case a1=a2=a3=0) since you can find them *all\" in Sage already, not *once* but *twice* already!  See my gp script ell_divpt.gp and my C++ source file qcurves/divpol.cc\n\nI really really think that we should implement this more general version for division polynomials now, even though your code for P.division_points() cleverly gets around it.\n\nTo end on a more positive note: this is very well written and a model for others to follow!",
+    "created_at": "2008-05-07T08:21:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3109",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3109#issuecomment-21489",
+    "user": "cremona"
+}
+```
 
 I applied the 3 patches in succession with no problems, and all the doctests in sage/schemes/elliptic_curves pass.
 
@@ -92,9 +189,20 @@ I really really think that we should implement this more general version for div
 To end on a more positive note: this is very well written and a model for others to follow!
 
 
+
 ---
 
-Comment by was created at 2008-05-07 15:38:58
+archive/issue_comments_021490.json:
+```json
+{
+    "body": "Regarding the referee's report:\n\n1. Regarding the coordinate ring, the issue is precisely what you say.  However I think that we shouldn't define coordinate ring code until we use it in a couple of places to see what the real issues are.   E.g., term orders, variable order, etc.  I think that should come *later* after the code I've defined has been used and works well and is well tested.  That should only be factored out when it is understood, not the other way around.  If I had written coordinate ring 3 days ago, it would have been completely useless for this code anyways, since I would have got the variable and term orders wrong.   AND maybe the variable and term order needed here is wrong for general affine coordinate rings.\n\n2. Regarding only doing the short Weierstrass case.  It's all I need.  The more general case would be fine to do but should be a separate enhancement ticket.   And if it slows things down a lot -- and this *does* matter, then I will be unhappy.",
+    "created_at": "2008-05-07T15:38:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3109",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3109#issuecomment-21490",
+    "user": "was"
+}
+```
 
 Regarding the referee's report:
 
@@ -103,16 +211,40 @@ Regarding the referee's report:
 2. Regarding only doing the short Weierstrass case.  It's all I need.  The more general case would be fine to do but should be a separate enhancement ticket.   And if it slows things down a lot -- and this *does* matter, then I will be unhappy.
 
 
+
 ---
+
+archive/issue_comments_021491.json:
+```json
+{
+    "body": "Attachment\n\nsome slight refactoring in ell_point.py",
+    "created_at": "2008-05-07T15:39:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3109",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3109#issuecomment-21491",
+    "user": "was"
+}
+```
 
 Attachment
 
 some slight refactoring in ell_point.py
 
 
+
 ---
 
-Comment by cremona created at 2008-05-07 15:45:42
+archive/issue_comments_021492.json:
+```json
+{
+    "body": "Comments on the comments:\n\n1. I agree entirely.  I really believe that we need to get the basics right before being too fancy, since however clever the structures are one still has to get the formulas right!\n\n2. So be it.  I doubt there would be a time penalty.  I may just do that myself (talk is cheap etc) but that should not delay this one.\n\nGo for it!",
+    "created_at": "2008-05-07T15:45:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3109",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3109#issuecomment-21492",
+    "user": "cremona"
+}
+```
 
 Comments on the comments:
 
@@ -123,9 +255,20 @@ Comments on the comments:
 Go for it!
 
 
+
 ---
 
-Comment by was created at 2008-05-07 15:47:43
+archive/issue_comments_021493.json:
+```json
+{
+    "body": "John said:\n> (where as yo uobserve, there are typos in Solverman even in the simple case a1=a2=a3=0)\n\nI just want to point out that there were no typos in Silverman in that case.  What is true\nis that the formula he gives is right except it does not give the multiplication by m\nmap in exact one case -- the y-coordinate for m=2.  That's a special case the exercise\ndoes not treat correctly.  It's not a typo but a mistake.  But for all other m it is right\nand there are no typos.\n\nRegarding your comments on my comments:\nYep, you should definitely go for it!  I just wrote this code since I need it for some research\nI'm doing _now_.  Also, since it is for research I care a *lot* that it is right and that I understand it, which is partly why it is very well documented and tested.  If it is wrong, it is going to confuse me a lot later.  Oh, speed matters some too.",
+    "created_at": "2008-05-07T15:47:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3109",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3109#issuecomment-21493",
+    "user": "was"
+}
+```
 
 John said:
 > (where as yo uobserve, there are typos in Solverman even in the simple case a1=a2=a3=0)
@@ -141,15 +284,37 @@ Yep, you should definitely go for it!  I just wrote this code since I need it fo
 I'm doing _now_.  Also, since it is for research I care a *lot* that it is right and that I understand it, which is partly why it is very well documented and tested.  If it is wrong, it is going to confuse me a lot later.  Oh, speed matters some too.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-07 16:09:17
+archive/issue_comments_021494.json:
+```json
+{
+    "body": "Merged all four patches in Sage 3.0.2.alpha0",
+    "created_at": "2008-05-07T16:09:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3109",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3109#issuecomment-21494",
+    "user": "mabshoff"
+}
+```
 
 Merged all four patches in Sage 3.0.2.alpha0
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-07 16:09:17
+archive/issue_comments_021495.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-05-07T16:09:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3109",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3109#issuecomment-21495",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

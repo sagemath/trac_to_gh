@@ -1,11 +1,21 @@
 # Issue 2504: number field .units() method caches proof=False result and returns it for proof=True
 
-Issue created by migration from https://trac.sagemath.org/ticket/2504
-
-Original creator: cwitty
-
-Original creation time: 2008-03-13 03:14:46
-
+archive/issues_002504.json:
+```json
+{
+    "body": "Assignee: was\n\nThe following was reported by Luis Finotti on sage-support, here: http://groups.google.com/group/sage-support/browse_thread/thread/f01e8661743d36d4#\n\nThe following commands return an error:\n\n```\n   P.<x>=PolynomialRing(QQ)\n   f=x^17+3\n   K=NumberField(f,'a')\n   K.units(proof=True) # default\n```\n\nbecause Sage is incapable of performing the computation with proof=True.\n(The error ends with \"not enough precomputed primes, need primelimit ~  (35)\".)\n\nIf you then do\n\n```\n   K.units(proof=False)\n```\n\nyou get an answer immediately; then repeating the original\n\n```\n   K.units(proof=True)\n```\n\ngives you the unproved answer again even though proof=True is specified.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2504\n\n",
+    "created_at": "2008-03-13T03:14:46Z",
+    "labels": [
+        "number theory",
+        "major",
+        "bug"
+    ],
+    "title": "number field .units() method caches proof=False result and returns it for proof=True",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2504",
+    "user": "cwitty"
+}
+```
 Assignee: was
 
 The following was reported by Luis Finotti on sage-support, here: http://groups.google.com/group/sage-support/browse_thread/thread/f01e8661743d36d4#
@@ -36,44 +46,118 @@ you get an answer immediately; then repeating the original
 
 gives you the unproved answer again even though proof=True is specified.
 
+Issue created by migration from https://trac.sagemath.org/ticket/2504
+
+
+
+
 
 ---
+
+archive/issue_comments_016963.json:
+```json
+{
+    "body": "Attachment\n\nThe attached patch fixes this and adds doctests illustrating the correct behavior.",
+    "created_at": "2008-04-13T02:27:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2504",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2504#issuecomment-16963",
+    "user": "AlexGhitza"
+}
+```
 
 Attachment
 
 The attached patch fixes this and adds doctests illustrating the correct behavior.
 
 
+
 ---
 
-Comment by ncalexan created at 2008-04-15 16:34:06
+archive/issue_comments_016964.json:
+```json
+{
+    "body": "Wait -- if you ask for units with proof, the value is cached.  If you then ask for it without proof, shouldn't we return the cached value?  The code doesn't look like it does that.",
+    "created_at": "2008-04-15T16:34:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2504",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2504#issuecomment-16964",
+    "user": "ncalexan"
+}
+```
 
 Wait -- if you ask for units with proof, the value is cached.  If you then ask for it without proof, shouldn't we return the cached value?  The code doesn't look like it does that.
 
 
+
 ---
+
+archive/issue_comments_016965.json:
+```json
+{
+    "body": "Attachment\n\nYou are completely right.  I've replaced the patch and reorganized the code so it looks a bit cleaner.",
+    "created_at": "2008-04-15T20:18:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2504",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2504#issuecomment-16965",
+    "user": "AlexGhitza"
+}
+```
 
 Attachment
 
 You are completely right.  I've replaced the patch and reorganized the code so it looks a bit cleaner.
 
 
+
 ---
 
-Comment by ncalexan created at 2008-04-26 17:16:53
+archive/issue_comments_016966.json:
+```json
+{
+    "body": "Looks good to me.",
+    "created_at": "2008-04-26T17:16:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2504",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2504#issuecomment-16966",
+    "user": "ncalexan"
+}
+```
 
 Looks good to me.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-26 21:58:58
+archive/issue_comments_016967.json:
+```json
+{
+    "body": "Merged 2504-units_cache.2.patch in Sage 3.0.1.alpha1",
+    "created_at": "2008-04-26T21:58:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2504",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2504#issuecomment-16967",
+    "user": "mabshoff"
+}
+```
 
 Merged 2504-units_cache.2.patch in Sage 3.0.1.alpha1
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-26 21:58:58
+archive/issue_comments_016968.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-04-26T21:58:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2504",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2504#issuecomment-16968",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

@@ -1,28 +1,64 @@
 # Issue 7197: basic statistics functions
 
-Issue created by migration from https://trac.sagemath.org/ticket/7197
-
-Original creator: amhou
-
-Original creation time: 2009-10-12 23:26:09
-
+archive/issues_007197.json:
+```json
+{
+    "body": "Assignee: mhampton\n\nKeywords: statistics, mean, median, mode, standard deviation\n\nBasic statistics functions for a new class in Sage. Only descriptive statistics right now.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7197\n\n",
+    "created_at": "2009-10-12T23:26:09Z",
+    "labels": [
+        "statistics",
+        "minor",
+        "enhancement"
+    ],
+    "title": "basic statistics functions",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7197",
+    "user": "amhou"
+}
+```
 Assignee: mhampton
 
 Keywords: statistics, mean, median, mode, standard deviation
 
 Basic statistics functions for a new class in Sage. Only descriptive statistics right now.
 
+Issue created by migration from https://trac.sagemath.org/ticket/7197
+
+
+
+
 
 ---
 
-Comment by amhou created at 2009-10-14 02:52:45
+archive/issue_comments_059693.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-10-14T02:52:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7197",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7197#issuecomment-59693",
+    "user": "amhou"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jason created at 2009-10-14 21:33:32
+archive/issue_comments_059694.json:
+```json
+{
+    "body": "Some comments:\n\n1. The arguments for std and variance don't seem very user-friendly.  I think it would be much better to have \"sample=True/False\" or \"population=True/False\", or maybe something more general like numpy: \"ddof=<number>\" (delta degrees of freedom), where the denominator is n-ddof (so ddof=1 is sample, ddof=0 is population).\n\n2. When calling the std or variance methods of the object, the population vs. sample distinction is ignored.\n\n2. Why are these methods in a class?  They don't seem to use any benefits of a class; they just seem to be standalone functions.  It seems like it would make much more sense to me to have these methods be just functions inside of the module.  We can still import them into a namespace called \"stats\".",
+    "created_at": "2009-10-14T21:33:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7197",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7197#issuecomment-59694",
+    "user": "jason"
+}
+```
 
 Some comments:
 
@@ -33,28 +69,74 @@ Some comments:
 2. Why are these methods in a class?  They don't seem to use any benefits of a class; they just seem to be standalone functions.  It seems like it would make much more sense to me to have these methods be just functions inside of the module.  We can still import them into a namespace called "stats".
 
 
+
 ---
 
-Comment by jason created at 2009-10-14 21:33:32
+archive/issue_comments_059695.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2009-10-14T21:33:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7197",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7197#issuecomment-59695",
+    "user": "jason"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by jason created at 2009-10-14 21:34:34
+archive/issue_comments_059696.json:
+```json
+{
+    "body": "I should also say I'm glad you are working on these!  I was very surprised to learn a few weeks ago that Sage did not have a generic standard deviation function.  We needed it in the class I was teaching!",
+    "created_at": "2009-10-14T21:34:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7197",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7197#issuecomment-59696",
+    "user": "jason"
+}
+```
 
 I should also say I'm glad you are working on these!  I was very surprised to learn a few weeks ago that Sage did not have a generic standard deviation function.  We needed it in the class I was teaching!
 
 
+
 ---
 
-Comment by amhou created at 2009-10-26 06:05:30
+archive/issue_comments_059697.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2009-10-26T06:05:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7197",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7197#issuecomment-59697",
+    "user": "amhou"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
+
+archive/issue_comments_059698.json:
+```json
+{
+    "body": "Attachment\n\nPatch added. \n\nArguments for std and variance changed to \"bias = True/False\" for division by n and n-1 respectively.",
+    "created_at": "2009-10-26T06:05:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7197",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7197#issuecomment-59698",
+    "user": "amhou"
+}
+```
 
 Attachment
 
@@ -63,73 +145,178 @@ Patch added.
 Arguments for std and variance changed to "bias = True/False" for division by n and n-1 respectively.
 
 
+
 ---
 
-Comment by amhou created at 2009-10-26 06:05:42
+archive/issue_comments_059699.json:
+```json
+{
+    "body": "Changing assignee from mhampton to amhou.",
+    "created_at": "2009-10-26T06:05:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7197",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7197#issuecomment-59699",
+    "user": "amhou"
+}
+```
 
 Changing assignee from mhampton to amhou.
 
 
+
 ---
 
-Comment by jason created at 2009-10-26 14:00:15
+archive/issue_comments_059700.json:
+```json
+{
+    "body": "Is there any way to have \"std_sample\" and \"std_population\" (and same for variance)?  When teaching very basic classes statistics, we just refer to them as population and sample std or variance.  Having specific functions (as excel or their calculators do) would make more sense to students.",
+    "created_at": "2009-10-26T14:00:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7197",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7197#issuecomment-59700",
+    "user": "jason"
+}
+```
 
 Is there any way to have "std_sample" and "std_population" (and same for variance)?  When teaching very basic classes statistics, we just refer to them as population and sample std or variance.  Having specific functions (as excel or their calculators do) would make more sense to students.
 
 
+
 ---
+
+archive/issue_comments_059701.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-10-26T23:06:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7197",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7197#issuecomment-59701",
+    "user": "amhou"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2009-10-26 23:37:59
+archive/issue_comments_059702.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2009-10-26T23:37:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7197",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7197#issuecomment-59702",
+    "user": "was"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by was created at 2009-10-26 23:37:59
+archive/issue_comments_059703.json:
+```json
+{
+    "body": "REFEREE REPORT:\n\n0. All tests pass in the entire tree after applying this.\n\n1. I'm OK with not adding std_sample and std_population simply because R, matlab, mathematica all don't and the instructor can easily add some alias's for their class. \n\n2. Add copyright header block.\n\n3. Add a docstring section at the top with AUTHOR, overview of capabilities, etc. \n\n4. Don't import numpy at top level; it'll just get moved later since we should not import numpy/matplotlib/etc. at startup. \n\n5. For `def std(v, bias=False):` and any other function that handles special types, put in examples that illustrate that your code for handling these types works. \n\nFix all the above and I'll be happy with this patch!",
+    "created_at": "2009-10-26T23:37:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7197",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7197#issuecomment-59703",
+    "user": "was"
+}
+```
 
 REFEREE REPORT:
 
-  0. All tests pass in the entire tree after applying this.
+0. All tests pass in the entire tree after applying this.
 
-  1. I'm OK with not adding std_sample and std_population simply because R, matlab, mathematica all don't and the instructor can easily add some alias's for their class. 
+1. I'm OK with not adding std_sample and std_population simply because R, matlab, mathematica all don't and the instructor can easily add some alias's for their class. 
 
-  2. Add copyright header block.
+2. Add copyright header block.
 
-  3. Add a docstring section at the top with AUTHOR, overview of capabilities, etc. 
+3. Add a docstring section at the top with AUTHOR, overview of capabilities, etc. 
 
-  4. Don't import numpy at top level; it'll just get moved later since we should not import numpy/matplotlib/etc. at startup. 
+4. Don't import numpy at top level; it'll just get moved later since we should not import numpy/matplotlib/etc. at startup. 
 
-  5. For `def std(v, bias=False):` and any other function that handles special types, put in examples that illustrate that your code for handling these types works. 
+5. For `def std(v, bias=False):` and any other function that handles special types, put in examples that illustrate that your code for handling these types works. 
 
 Fix all the above and I'll be happy with this patch!
 
 
+
 ---
+
+archive/issue_comments_059704.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-11-08T00:49:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7197",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7197#issuecomment-59704",
+    "user": "amhou"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by amhou created at 2009-11-08 00:50:20
+archive/issue_comments_059705.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2009-11-08T00:50:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7197",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7197#issuecomment-59705",
+    "user": "amhou"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
+
+archive/issue_comments_059706.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-11-12T22:16:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7197",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7197#issuecomment-59706",
+    "user": "amhou"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2009-11-12 22:43:23
+archive/issue_comments_059707.json:
+```json
+{
+    "body": "REPORT 2:\n\n1. a little too spartan:\n\n```\n\"\"\"\nBasic Statistics\n\nThis file contains basic descriptive functions.\n\nAUTHOR:\n    - Andrew Hou (11/06/2009)\n...\n\"\"\"\n```\n\n\n2. Make sure there is a test that tests this code:\n\n```\n    \"\"\"\n    if hasattr(v, 'mean'): return v.mean()\n```\n\n\n3. Same for mode:\n\n```\n    if hasattr(v, 'mode'): return v.mode()\n```\n\n\n4. Same for this:\n\n```\n    if hasattr(v, 'standard_deviation'): return v.standard_deviation(bias=bias)\n```\n\n\n5. Type checking in python should always use isinstance:\n\n```\n    if type(v) is numpy.ndarray:\n    if type(v) == numpy.ndarray:\n```\n\nshould be\n\n```\n     if isinstance(v, numpy.ndarray):\n```\n\n\n6. Test this:\n\n```\n    if hasattr(v, 'variance'): return v.variance(bias = bias)\n```\n\n\n7. Change this:\n\n```\n    if bias == True:\n        # population variance\n        if isinstance(x, (int,long)):\n            return x/ZZ(len(v))\n        return x/len(v)\n    elif bias == False:\n```\n\nto\n\n```\n    if bias:\n        # population variance\n        if isinstance(x, (int,long)):\n            return x/ZZ(len(v))\n        return x/len(v)\n    else:\n```\n\n\n\n8. Make sure this is tested:\n\n```\n    if hasattr(v, 'median'): return v.median()\n```\n\n\n9. Weird \"\"\" in moving_average:\n\n```\n \t318\t                                                                                    \"\"\" \n \t319\t    x = []    \n```\n\n\n10. Change\n\n```\n    bin_size = len(v)/bins     \n```\n\nto floor division:\n\n```\n    bin_size = int(len(v)//bins)\n```\n\n\n11. You can do this at the very end of each docstring if you want...\n\n```\n    AUTHOR:\n\n       - Andrew Hou (11/06/2009)\n```\n",
+    "created_at": "2009-11-12T22:43:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7197",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7197#issuecomment-59707",
+    "user": "was"
+}
+```
 
 REPORT 2:
 
@@ -253,76 +440,207 @@ to floor division:
 
 
 
+
 ---
 
-Comment by was created at 2009-11-12 22:43:39
+archive/issue_comments_059708.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2009-11-12T22:43:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7197",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7197#issuecomment-59708",
+    "user": "was"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
+
+archive/issue_comments_059709.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-11-16T08:15:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7197",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7197#issuecomment-59709",
+    "user": "amhou"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by amhou created at 2009-11-16 08:15:50
+archive/issue_comments_059710.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2009-11-16T08:15:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7197",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7197#issuecomment-59710",
+    "user": "amhou"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by was created at 2009-11-17 00:30:55
+archive/issue_comments_059711.json:
+```json
+{
+    "body": "Issues:\n\n* Delete \"Included as of 11/06/2009\" and reword.\n\n* Fix: \"returns the most common occuring member of a sample.\"  (and occurring is the right spelling)\n\n* \"Functions have also been imported under the namespace 'stats'.\"  Change to not use the passive voice.  I.e., \"The functions are available in the namespace *stats*, i.e., you can use them by typing *stats.mean*, *stats.median*, etc.\"\n\n* Change all ' to * in the top section.   * (two single quotes as separate characters) means \"monospace\" in ReST markup.",
+    "created_at": "2009-11-17T00:30:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7197",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7197#issuecomment-59711",
+    "user": "was"
+}
+```
 
 Issues:
 
- * Delete "Included as of 11/06/2009" and reword.
+* Delete "Included as of 11/06/2009" and reword.
 
- * Fix: "returns the most common occuring member of a sample."  (and occurring is the right spelling)
+* Fix: "returns the most common occuring member of a sample."  (and occurring is the right spelling)
 
- * "Functions have also been imported under the namespace 'stats'."  Change to not use the passive voice.  I.e., "The functions are available in the namespace _stats_, i.e., you can use them by typing _stats.mean_, _stats.median_, etc."
+* "Functions have also been imported under the namespace 'stats'."  Change to not use the passive voice.  I.e., "The functions are available in the namespace *stats*, i.e., you can use them by typing *stats.mean*, *stats.median*, etc."
 
- * Change all ' to _ in the top section.   _ (two single quotes as separate characters) means "monospace" in ReST markup.
+* Change all ' to * in the top section.   * (two single quotes as separate characters) means "monospace" in ReST markup.
+
 
 
 ---
+
+archive/issue_comments_059712.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-11-17T01:00:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7197",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7197#issuecomment-59712",
+    "user": "amhou"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_059713.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-11-20T22:56:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7197",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7197#issuecomment-59713",
+    "user": "amhou"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_059714.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-11-24T01:04:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7197",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7197#issuecomment-59714",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2009-11-24 01:04:03
+archive/issue_comments_059715.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-11-24T01:04:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7197",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7197#issuecomment-59715",
+    "user": "was"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mhansen created at 2009-11-25 06:45:35
+archive/issue_comments_059716.json:
+```json
+{
+    "body": "All of the above patches folded together.  Apply only this patch.",
+    "created_at": "2009-11-25T06:45:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7197",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7197#issuecomment-59716",
+    "user": "mhansen"
+}
+```
 
 All of the above patches folded together.  Apply only this patch.
 
 
+
 ---
+
+archive/issue_comments_059717.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-11-29T05:07:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7197",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7197#issuecomment-59717",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2009-11-29 05:07:20
+archive/issue_comments_059718.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-11-29T05:07:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7197",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7197#issuecomment-59718",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 8991: Adjust developer walkthrough for two changes to mercurial queues syntax
 
-Issue created by migration from https://trac.sagemath.org/ticket/8991
-
-Original creator: rbeezer
-
-Original creation time: 2010-05-19 00:09:26
-
+archive/issues_008991.json:
+```json
+{
+    "body": "Assignee: mvngu\n\nCC:  alubovsky\n\n\n```\nhg qinit\nhg -f qnew\n```\n\n\nare deprecated in newer versions of Mercurial (1.5) which some may be using (ie not using the version distributed with Sage).  This patch includes text to transition to the new state of the syntax without abandoning the old.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8991\n\n",
+    "created_at": "2010-05-19T00:09:26Z",
+    "labels": [
+        "documentation",
+        "minor",
+        "bug"
+    ],
+    "title": "Adjust developer walkthrough for two changes to mercurial queues syntax",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8991",
+    "user": "rbeezer"
+}
+```
 Assignee: mvngu
 
 CC:  alubovsky
@@ -19,29 +29,79 @@ hg -f qnew
 
 are deprecated in newer versions of Mercurial (1.5) which some may be using (ie not using the version distributed with Sage).  This patch includes text to transition to the new state of the syntax without abandoning the old.
 
+Issue created by migration from https://trac.sagemath.org/ticket/8991
+
+
+
+
 
 ---
+
+archive/issue_comments_083117.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-05-19T01:33:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8991",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8991#issuecomment-83117",
+    "user": "alubovsky"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by alubovsky created at 2010-05-19 01:33:17
+archive/issue_comments_083118.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-05-19T01:33:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8991",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8991#issuecomment-83118",
+    "user": "alubovsky"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by alubovsky created at 2010-05-19 01:34:16
+archive/issue_comments_083119.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-05-19T01:34:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8991",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8991#issuecomment-83119",
+    "user": "alubovsky"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by rbeezer created at 2010-05-19 04:00:50
+archive/issue_comments_083120.json:
+```json
+{
+    "body": "alubovsky -\n\nThanks for the quick review.  Probably best to give the release manager (who makes the final decision about adding this into \"official\" Sage) some idea of what testing you did.  Such as something about building the developers manual without warnings, output looks fine, mq changes are accurately reported, etc.\n\nAlso, please put your real name into the \"Reviewer\" field and you'll get credit in the release tour and the Trac reports.  ;-)\n\ncc me when you submit that patch of typos you are collecting!\n\nRob",
+    "created_at": "2010-05-19T04:00:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8991",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8991#issuecomment-83120",
+    "user": "rbeezer"
+}
+```
 
 alubovsky -
 
@@ -54,9 +114,20 @@ cc me when you submit that patch of typos you are collecting!
 Rob
 
 
+
 ---
 
-Comment by alubovsky created at 2010-05-19 04:41:32
+archive/issue_comments_083121.json:
+```json
+{
+    "body": "Patch output looks fine, no warnings building with\nsage -docbuild developer html\n\npatch applied just fine, (not sure what mq changes are accurately reported means.)",
+    "created_at": "2010-05-19T04:41:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8991",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8991#issuecomment-83121",
+    "user": "alubovsky"
+}
+```
 
 Patch output looks fine, no warnings building with
 sage -docbuild developer html
@@ -64,16 +135,38 @@ sage -docbuild developer html
 patch applied just fine, (not sure what mq changes are accurately reported means.)
 
 
+
 ---
 
-Comment by alubovsky created at 2010-05-19 04:53:39
+archive/issue_comments_083122.json:
+```json
+{
+    "body": "I should add, i applied the patch to the latest version of sage-combinat repository, instead of sage-main, hopefully it makes no difference.",
+    "created_at": "2010-05-19T04:53:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8991",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8991#issuecomment-83122",
+    "user": "alubovsky"
+}
+```
 
 I should add, i applied the patch to the latest version of sage-combinat repository, instead of sage-main, hopefully it makes no difference.
 
 
+
 ---
 
-Comment by rbeezer created at 2010-05-19 05:32:34
+archive/issue_comments_083123.json:
+```json
+{
+    "body": "Replying to [comment:4 alubovsky]:\n> (not sure what mq changes are accurately reported means.)\n\nI was just suggesting you might note the *content* of the changes was correct.  I don't have Mercurial 1.5 installed anywhere, so was working off documantation I could find online (which wsn't always helpful).\n\nIn this case, I think the sage-combinat repo is probably OK.",
+    "created_at": "2010-05-19T05:32:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8991",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8991#issuecomment-83123",
+    "user": "rbeezer"
+}
+```
 
 Replying to [comment:4 alubovsky]:
 > (not sure what mq changes are accurately reported means.)
@@ -83,8 +176,19 @@ I was just suggesting you might note the *content* of the changes was correct.  
 In this case, I think the sage-combinat repo is probably OK.
 
 
+
 ---
 
-Comment by mvngu created at 2010-05-19 07:49:57
+archive/issue_comments_083124.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-05-19T07:49:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8991",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8991#issuecomment-83124",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

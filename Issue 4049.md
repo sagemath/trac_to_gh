@@ -1,11 +1,21 @@
 # Issue 4049: Don't use the -i option to tar as it does not exist on most BSDs
 
-Issue created by migration from https://trac.sagemath.org/ticket/4049
-
-Original creator: anakha
-
-Original creation time: 2008-09-03 17:59:15
-
+archive/issues_004049.json:
+```json
+{
+    "body": "Assignee: cwitty\n\nWhile trying to compile sage under OpenBSD, the first problem I encountered was that it could not extract the spkgs because it passes the -i option to tar which is not recognized.  \n\nAfter reading the description of the meaning of that option on a linux man page:\n\n `--ignore-zeros'\n `-i'\n      With this option, `tar' will ignore zeroed blocks in the archive,\n      which normally signals EOF. \n\nAnd additional information about what is a zero block:\n\n Normally, `tar' stops reading when it encounters a block of zeros\n between file entries (which usually indicates the end of the archive).\n `--ignore-zeros' (`-i') allows `tar' to completely read an archive\n which contains a block of zeros before the end (i.e. a damaged archive,\n or one which was created by concatenating several archives together).\n\nI concluded that unless some spkgs are created by concatenating several tar archives together this option can be safely removed.\n\nIf there is a consensus to keep the option, I could always make a new patch \n\nIssue created by migration from https://trac.sagemath.org/ticket/4049\n\n",
+    "created_at": "2008-09-03T17:59:15Z",
+    "labels": [
+        "misc",
+        "major",
+        "bug"
+    ],
+    "title": "Don't use the -i option to tar as it does not exist on most BSDs",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4049",
+    "user": "anakha"
+}
+```
 Assignee: cwitty
 
 While trying to compile sage under OpenBSD, the first problem I encountered was that it could not extract the spkgs because it passes the -i option to tar which is not recognized.  
@@ -29,22 +39,61 @@ I concluded that unless some spkgs are created by concatenating several tar arch
 
 If there is a consensus to keep the option, I could always make a new patch 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4049
+
+
+
+
 
 ---
 
-Comment by anakha created at 2008-09-03 18:03:35
+archive/issue_comments_029195.json:
+```json
+{
+    "body": "About the new patch, I meant a new patch that only removes the option on systems where it is not supported.",
+    "created_at": "2008-09-03T18:03:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4049",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4049#issuecomment-29195",
+    "user": "anakha"
+}
+```
 
 About the new patch, I meant a new patch that only removes the option on systems where it is not supported.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-03 18:10:25
+archive/issue_comments_029196.json:
+```json
+{
+    "body": "Changing assignee from cwitty to anakha.",
+    "created_at": "2008-09-03T18:10:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4049",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4049#issuecomment-29196",
+    "user": "mabshoff"
+}
+```
 
 Changing assignee from cwitty to anakha.
 
 
+
 ---
+
+archive/issue_comments_029197.json:
+```json
+{
+    "body": "Attachment\n\nPatch looks good to me. Positive review.\n\nOne general problem with Sage is that we depend on gnumake and gtar in a couple places. The shell scripts we use also assume GNUisms in a couple places, but I would be more than happy to get those wiped out.\n\nFor now I would suggest copying gmake into $SAGE_LOCAL/bin and rename it make. You should also treat gld and gas the same way for now.\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-03T18:10:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4049",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4049#issuecomment-29197",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -59,18 +108,40 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by anakha created at 2008-09-03 18:21:42
+archive/issue_comments_029198.json:
+```json
+{
+    "body": "Until now, the regular make has not given me any errors.  I had to install bash though.  I will try to use the native system binaries as much as possible and only revert to the gnu ones if it fails too much.\n\nOtherwise, expect more reports like this one to remove GNUisms where it makes sense.",
+    "created_at": "2008-09-03T18:21:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4049",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4049#issuecomment-29198",
+    "user": "anakha"
+}
+```
 
 Until now, the regular make has not given me any errors.  I had to install bash though.  I will try to use the native system binaries as much as possible and only revert to the gnu ones if it fails too much.
 
 Otherwise, expect more reports like this one to remove GNUisms where it makes sense.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-03 18:26:39
+archive/issue_comments_029199.json:
+```json
+{
+    "body": "Replying to [comment:3 anakha]:\n> Until now, the regular make has not given me any errors.  I had to install bash though.  I will try to use the native system binaries as much as possible and only revert to the gnu ones if it fails too much.\n> \n> Otherwise, expect more reports like this one to remove GNUisms where it makes sense.\n\nfreetype and eclib for now require gmake. We use bash for now and do not really plan to switch to a pure sh env since sh on Solaris is pretty broken. At least on FreeBSD the default location of bash is in /usr/local/bin and all shebangs of the scripts should not hard code the /bin/bash location.\n\nWe should continue this discussion on sage-devel though :)\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-03T18:26:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4049",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4049#issuecomment-29199",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:3 anakha]:
 > Until now, the regular make has not given me any errors.  I had to install bash though.  I will try to use the native system binaries as much as possible and only revert to the gnu ones if it fails too much.
@@ -86,9 +157,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-04 00:31:38
+archive/issue_comments_029200.json:
+```json
+{
+    "body": "Merged in Sage 3.1.2.rc0 - and I merged the patch into both repos, i.e. spkg/base, too.\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-04T00:31:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4049",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4049#issuecomment-29200",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.1.2.rc0 - and I merged the patch into both repos, i.e. spkg/base, too.
 
@@ -97,8 +179,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-04 00:31:38
+archive/issue_comments_029201.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-09-04T00:31:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4049",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4049#issuecomment-29201",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

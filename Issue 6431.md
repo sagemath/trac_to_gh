@@ -1,11 +1,21 @@
 # Issue 6431: no call method from Laurent series into Power series ring
 
-Issue created by migration from https://trac.sagemath.org/ticket/6431
-
-Original creator: ncalexan
-
-Original creation time: 2009-06-27 04:39:42
-
+archive/issues_006431.json:
+```json
+{
+    "body": "Assignee: malb\n\nCC:  robertwb was\n\nKeywords: Laurent series power series call method\n\n\n```\nsage: CDF[['t']]( ~(~CDF[['t']].gen()^2) )\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/ncalexan/Documents/School/period_matrix/riemann_surface.py in <module>()\n\n/Users/ncalexan/sage-4.0.1.alpha0/local/lib/python2.5/site-packages/sage/rings/power_series_ring.pyc in __call__(self, f, prec, check)\n    378             v = sage_eval(f.Eltseq())\n    379             return self(v) * (self.gen(0)**f.Valuation())\n--> 380         return self.__power_series_class(self, f, prec, check=check)\n    381         \n    382     def construction(self):\n\n/Users/ncalexan/sage-4.0.1.alpha0/local/lib/python2.5/site-packages/sage/rings/power_series_poly.so in sage.rings.power_series_poly.PowerSeries_poly.__init__ (sage/rings/power_series_poly.c:2307)()\n\n/Users/ncalexan/sage-4.0.1.alpha0/local/lib/python2.5/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:4150)()\n\n/Users/ncalexan/sage-4.0.1.alpha0/local/lib/python2.5/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_with_args (sage/structure/coerce_maps.c:3448)()\n\n/Users/ncalexan/sage-4.0.1.alpha0/local/lib/python2.5/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps._call_with_args (sage/structure/coerce_maps.c:3262)()\n\n/Users/ncalexan/sage-4.0.1.alpha0/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring.pyc in _element_constructor_(self, x, check, is_gen, construct, **kwds)\n    310                 x = x.Polrev()\n    311 \n--> 312         return C(self, x, check, is_gen, construct=construct, **kwds)\n    313 \n    314     def is_integral_domain(self):\n\n/Users/ncalexan/sage-4.0.1.alpha0/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_element_generic.pyc in __init__(self, parent, x, check, is_gen, construct)\n    581 class Polynomial_generic_dense_field(Polynomial_generic_dense, Polynomial_generic_field):\n    582     def __init__(self, parent, x=None, check=True, is_gen = False, construct=False):\n--> 583         Polynomial_generic_dense.__init__(self, parent, x, check, is_gen)\n    584 \n    585 \n\n/Users/ncalexan/sage-4.0.1.alpha0/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_element.so in sage.rings.polynomial.polynomial_element.Polynomial_generic_dense.__init__ (sage/rings/polynomial/polynomial_element.c:35169)()\n\n/Users/ncalexan/sage-4.0.1.alpha0/local/lib/python2.5/site-packages/sage/rings/complex_double.so in sage.rings.complex_double.ComplexDoubleField_class.__call__ (sage/rings/complex_double.c:3596)()\n\n/Users/ncalexan/sage-4.0.1.alpha0/local/lib/python2.5/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:4130)()\n\n/Users/ncalexan/sage-4.0.1.alpha0/local/lib/python2.5/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3058)()\n\n/Users/ncalexan/sage-4.0.1.alpha0/local/lib/python2.5/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps._call_ (sage/structure/coerce_maps.c:2949)()\n\n/Users/ncalexan/sage-4.0.1.alpha0/local/lib/python2.5/site-packages/sage/rings/complex_double.so in sage.rings.complex_double.ComplexDoubleField_class._element_constructor_ (sage/rings/complex_double.c:4022)()\n\n/Users/ncalexan/sage-4.0.1.alpha0/local/lib/python2.5/site-packages/sage/rings/complex_double.so in sage.rings.complex_double.ComplexDoubleElement.__init__ (sage/rings/complex_double.c:5765)()\n\nTypeError: a float is required\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6431\n\n",
+    "created_at": "2009-06-27T04:39:42Z",
+    "labels": [
+        "commutative algebra",
+        "major",
+        "bug"
+    ],
+    "title": "no call method from Laurent series into Power series ring",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6431",
+    "user": "ncalexan"
+}
+```
 Assignee: malb
 
 CC:  robertwb was
@@ -67,17 +77,43 @@ TypeError: a float is required
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6431
+
+
+
+
 
 ---
 
-Comment by rws created at 2014-03-15 15:07:46
+archive/issue_comments_051649.json:
+```json
+{
+    "body": "I think that the problem here is not the failing conversion from Laurent series to polynomial but that the construction `CDF[This is the Trac macro *'t'* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#'t'-macro)(..)` (or substitute any other ring) tries to convert to `CDF` not `CDF[This is the Trac macro *'t'* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#'t'-macro)` as expected. Right?",
+    "created_at": "2014-03-15T15:07:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6431",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6431#issuecomment-51649",
+    "user": "rws"
+}
+```
 
 I think that the problem here is not the failing conversion from Laurent series to polynomial but that the construction `CDF[This is the Trac macro *'t'* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#'t'-macro)(..)` (or substitute any other ring) tries to convert to `CDF` not `CDF[This is the Trac macro *'t'* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#'t'-macro)` as expected. Right?
 
 
+
 ---
 
-Comment by pbruin created at 2014-04-11 16:45:41
+archive/issue_comments_051650.json:
+```json
+{
+    "body": "No, the problem is that `PowerSeriesRing._element_constructor_(self, f)` does not currently accept Laurent series.  Here is another example:\n\n```\nsage: L.<q> = LaurentSeriesRing(QQ)\nsage: P = L.power_series_ring()\nsage: P(q)\nTraceback (most recent call last):\n...\nTypeError: Unable to coerce q (<type 'sage.rings.laurent_series_ring_element.LaurentSeries'>) to Rational\n```\n\nWorking on a patch...",
+    "created_at": "2014-04-11T16:45:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6431",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6431#issuecomment-51650",
+    "user": "pbruin"
+}
+```
 
 No, the problem is that `PowerSeriesRing._element_constructor_(self, f)` does not currently accept Laurent series.  Here is another example:
 
@@ -93,22 +129,55 @@ TypeError: Unable to coerce q (<type 'sage.rings.laurent_series_ring_element.Lau
 Working on a patch...
 
 
+
 ---
 
-Comment by pbruin created at 2014-04-11 18:04:51
+archive/issue_comments_051651.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2014-04-11T18:04:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6431",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6431#issuecomment-51651",
+    "user": "pbruin"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mmezzarobba created at 2014-04-13 08:05:19
+archive/issue_comments_051652.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2014-04-13T08:05:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6431",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6431#issuecomment-51652",
+    "user": "mmezzarobba"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by vbraun created at 2014-04-14 16:55:55
+archive/issue_comments_051653.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2014-04-14T16:55:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6431",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6431#issuecomment-51653",
+    "user": "vbraun"
+}
+```
 
 Resolution: fixed

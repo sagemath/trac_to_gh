@@ -1,11 +1,21 @@
 # Issue 2545: [with patch, needs review] FractionFieldElement lacks derivative method
 
-Issue created by migration from https://trac.sagemath.org/ticket/2545
-
-Original creator: burcin
-
-Original creation time: 2008-03-16 12:35:22
-
+archive/issues_002545.json:
+```json
+{
+    "body": "Assignee: burcin\n\nAttached patch adds a `derivative` method to `FractionFieldElement`s, and fixes a bug in the `_derivative` method of `Polynomial_rational_dense`.\n\nSo these now work:\n\n\n```\nsage: R = ZZ['x']\nsage: S = R.fraction_field(); x = S.gen()\nsage: R(1).derivative(R(x))\n0\n\nsage: F = FractionField(PolynomialRing(RationalField(),'x,y'))\nsage: x,y = F.gens()\nsage: (1/(x+y)).derivative(x,y)\n2/(x^3 + 3*x^2*y + 3*x*y^2 + y^3)\n```\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2545\n\n",
+    "created_at": "2008-03-16T12:35:22Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "enhancement"
+    ],
+    "title": "[with patch, needs review] FractionFieldElement lacks derivative method",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2545",
+    "user": "burcin"
+}
+```
 Assignee: burcin
 
 Attached patch adds a `derivative` method to `FractionFieldElement`s, and fixes a bug in the `_derivative` method of `Polynomial_rational_dense`.
@@ -29,29 +39,81 @@ sage: (1/(x+y)).derivative(x,y)
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2545
+
+
+
+
 
 ---
 
-Comment by burcin created at 2008-03-16 12:35:51
+archive/issue_comments_017371.json:
+```json
+{
+    "body": "derivative method for FractionFieldElement",
+    "created_at": "2008-03-16T12:35:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2545#issuecomment-17371",
+    "user": "burcin"
+}
+```
 
 derivative method for FractionFieldElement
 
 
+
 ---
+
+archive/issue_comments_017372.json:
+```json
+{
+    "body": "Attachment\n\nThis appears to work as advertised.  I have one request: the docstrings for derivative() and _derivative() refer to \"the derivative of this polynomial\", which is bad since these elements are (most of the time) not polynomials.  This should be replaced with \"rational function\" or something similar.",
+    "created_at": "2008-03-16T14:34:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2545#issuecomment-17372",
+    "user": "AlexGhitza"
+}
+```
 
 Attachment
 
 This appears to work as advertised.  I have one request: the docstrings for derivative() and _derivative() refer to "the derivative of this polynomial", which is bad since these elements are (most of the time) not polynomials.  This should be replaced with "rational function" or something similar.
 
 
+
 ---
 
-Comment by burcin created at 2008-03-16 14:48:47
+archive/issue_comments_017373.json:
+```json
+{
+    "body": "new patch with requested doc changes",
+    "created_at": "2008-03-16T14:48:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2545#issuecomment-17373",
+    "user": "burcin"
+}
+```
 
 new patch with requested doc changes
 
 
+
 ---
+
+archive/issue_comments_017374.json:
+```json
+{
+    "body": "Attachment\n\nYou're right, I copied the text from the docstring for polynomials, and forgot to change it. :)\n\nattachment:2545-sage_fraction_field_derivative-1.patch replaces \"polynomial\" with \"rational function\" as suggested.",
+    "created_at": "2008-03-16T14:51:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2545#issuecomment-17374",
+    "user": "burcin"
+}
+```
 
 Attachment
 
@@ -60,22 +122,55 @@ You're right, I copied the text from the docstring for polynomials, and forgot t
 attachment:2545-sage_fraction_field_derivative-1.patch replaces "polynomial" with "rational function" as suggested.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2008-03-16 15:14:42
+archive/issue_comments_017375.json:
+```json
+{
+    "body": "Cool.  I'm satisfied.",
+    "created_at": "2008-03-16T15:14:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2545#issuecomment-17375",
+    "user": "AlexGhitza"
+}
+```
 
 Cool.  I'm satisfied.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-18 00:06:36
+archive/issue_comments_017376.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-03-18T00:06:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2545#issuecomment-17376",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-18 00:06:36
+archive/issue_comments_017377.json:
+```json
+{
+    "body": "Merged in Sage 2.11.alpha0",
+    "created_at": "2008-03-18T00:06:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2545",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2545#issuecomment-17377",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.11.alpha0

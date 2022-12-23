@@ -1,11 +1,21 @@
 # Issue 9033: Singular does not try to build 64-bit on OpenSolaris.
 
-Issue created by migration from https://trac.sagemath.org/ticket/9033
-
-Original creator: drkirkby
-
-Original creation time: 2010-05-24 10:43:56
-
+archive/issues_009033.json:
+```json
+{
+    "body": "Assignee: drkirkby\n\nCC:  jsp dimpase\n\nOn a Sun Ultra 27 running OpenSolaris x64, Singular is not attempting to build as a 64-bit binary, but also fails to build fully as a 32-bit binary. (It does however build partially as 32-bit).\n\n\n```\nsingular-3-1-0-4-20100214/src/svd/tests/\nsingular-3-1-0-4-20100214/src/svd/tests/testsvdunit.h\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS hawk 5.11 snv_134 i86pc i386 i86pc\n****************************************************\n****************************************************\n\n<snip>\ngcc -O3 -g -fPIC -I. -I/export/home/drkirkby/sage-4.4.2/local/include  -I/export/home/drkirkby/sage-4.4.2/local/include -DHAVE_CONFIG_H -c omBinPage.c\n<snip>\ng++ -c cf_factor.cc -w -fno-implicit-templates -I. -I. -I/export/home/drkirkby/sage-4.4.2/local/include -DHAVE_CONFIG_H -I/export/home/drkirkby/sage-4.4.2/local/include -I/export/home/drkirkby/sage-4.4.2/local/include -I/export/home/drkirkby/sage-4.4.2/local/include  -I/export/home/drkirkby/sage-4.4.2/local/include -O3 -g -fPIC -o cf_factor.o\nIn file included from /export/home/drkirkby/sage-4.4.2/local/include/NTL/vec_ZZ.h:5,\n                 from /export/home/drkirkby/sage-4.4.2/local/include/NTL/ZZX.h:5,\n                 from /export/home/drkirkby/sage-4.4.2/local/include/NTL/ZZXFactoring.h:5,\n                 from NTLconvert.h:23,\n                 from cf_factor.cc:33:\n/export/home/drkirkby/sage-4.4.2/local/include/NTL/ZZ.h: In function \u2018long int NTL::MulModPrecon(long int, long int, long int, long unsigned int)\u2019:\n/export/home/drkirkby/sage-4.4.2/local/include/NTL/ZZ.h:1795: error: \u2018MulHiUL\u2019 was not declared in this scope\nmake[2]: *** [cf_factor.o] Error 1\nmake[2]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/singular-3-1-0-4-20100214/src/factory'\nmake[1]: *** [install] Error 1\nmake[1]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/singular-3-1-0-4-20100214/src'\nmake: *** [/export/home/drkirkby/sage-4.4.2/local/bin/Singular-3-1-0] Error 2\nUnable to build Singular.\n\nreal    0m13.142s\nuser    0m8.853s\nsys     0m4.226s\nsage: An error occurred while installing singular-3-1-0-4-20100214\n```\n\n\nThe files \n\n```\n$SAGE_LOCAL/lib/omalloc_debug.o\n$SAGE_LOCAL/lib/omalloc.o\n```\n\n\nare being installed as 32-bit bit objects. \n\nIt's somewhat worrying this does not build fully. If it built fully as 32-bit, one would expect converting it to 64-bit would be relatively easy (add option -m64), but the problem could be a bit more serious than this. I've not investigated yet. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9033\n\n",
+    "created_at": "2010-05-24T10:43:56Z",
+    "labels": [
+        "porting: Solaris",
+        "major",
+        "bug"
+    ],
+    "title": "Singular does not try to build 64-bit on OpenSolaris.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9033",
+    "user": "drkirkby"
+}
+```
 Assignee: drkirkby
 
 CC:  jsp dimpase
@@ -61,44 +71,114 @@ are being installed as 32-bit bit objects.
 
 It's somewhat worrying this does not build fully. If it built fully as 32-bit, one would expect converting it to 64-bit would be relatively easy (add option -m64), but the problem could be a bit more serious than this. I've not investigated yet. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/9033
+
+
+
+
 
 ---
 
-Comment by drkirkby created at 2010-05-24 18:21:40
+archive/issue_comments_083631.json:
+```json
+{
+    "body": "For other OpenSolaris issues, see #9026",
+    "created_at": "2010-05-24T18:21:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9033",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9033#issuecomment-83631",
+    "user": "drkirkby"
+}
+```
 
 For other OpenSolaris issues, see #9026
 
 
+
 ---
 
-Comment by mkoeppe created at 2020-07-08 16:33:14
+archive/issue_comments_083632.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2020-07-08T16:33:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9033",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9033#issuecomment-83632",
+    "user": "mkoeppe"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mkoeppe created at 2020-07-08 16:33:14
+archive/issue_comments_083633.json:
+```json
+{
+    "body": "outdated, should be closed",
+    "created_at": "2020-07-08T16:33:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9033",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9033#issuecomment-83633",
+    "user": "mkoeppe"
+}
+```
 
 outdated, should be closed
 
 
+
 ---
 
-Comment by dimpase created at 2020-07-08 18:37:26
+archive/issue_comments_083634.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2020-07-08T18:37:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9033",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9033#issuecomment-83634",
+    "user": "dimpase"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by chapoton created at 2020-07-15 07:18:41
+archive/issue_comments_083635.json:
+```json
+{
+    "body": "Closing very old sun/solaris tickets. Any tentative for this OS should start afresh.",
+    "created_at": "2020-07-15T07:18:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9033",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9033#issuecomment-83635",
+    "user": "chapoton"
+}
+```
 
 Closing very old sun/solaris tickets. Any tentative for this OS should start afresh.
 
 
+
 ---
 
-Comment by chapoton created at 2020-07-15 07:18:41
+archive/issue_comments_083636.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2020-07-15T07:18:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9033",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9033#issuecomment-83636",
+    "user": "chapoton"
+}
+```
 
 Resolution: invalid

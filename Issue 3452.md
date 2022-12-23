@@ -1,58 +1,153 @@
 # Issue 3452: implement inline error reporting for registration
 
-Issue created by migration from https://trac.sagemath.org/ticket/3452
-
-Original creator: TimothyClemans
-
-Original creation time: 2008-06-17 22:28:52
-
+archive/issues_003452.json:
+```json
+{
+    "body": "Assignee: boothby\n\nCurrently when a user has incorrectly filled out the registration form she is sent to a page that states the error.\n\nThe error should be reported under the input box related to the error. Also form should stay filled in except for the password input boxes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3452\n\n",
+    "created_at": "2008-06-17T22:28:52Z",
+    "labels": [
+        "notebook",
+        "major",
+        "enhancement"
+    ],
+    "title": "implement inline error reporting for registration",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3452",
+    "user": "TimothyClemans"
+}
+```
 Assignee: boothby
 
 Currently when a user has incorrectly filled out the registration form she is sent to a page that states the error.
 
 The error should be reported under the input box related to the error. Also form should stay filled in except for the password input boxes.
 
+Issue created by migration from https://trac.sagemath.org/ticket/3452
+
+
+
+
 
 ---
 
-Comment by TimothyClemans created at 2008-06-17 22:29:39
+archive/issue_comments_024342.json:
+```json
+{
+    "body": "Changing assignee from boothby to TimothyClemans.",
+    "created_at": "2008-06-17T22:29:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3452",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3452#issuecomment-24342",
+    "user": "TimothyClemans"
+}
+```
 
 Changing assignee from boothby to TimothyClemans.
 
 
+
 ---
 
-Comment by TimothyClemans created at 2008-06-17 22:29:39
+archive/issue_comments_024343.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-06-17T22:29:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3452",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3452#issuecomment-24343",
+    "user": "TimothyClemans"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
+
+archive/issue_comments_024344.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-06-18T00:28:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3452",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3452#issuecomment-24344",
+    "user": "TimothyClemans"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_024345.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-06-18T00:29:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3452",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3452#issuecomment-24345",
+    "user": "TimothyClemans"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by boothby created at 2008-06-24 07:06:33
+archive/issue_comments_024346.json:
+```json
+{
+    "body": "sweet!",
+    "created_at": "2008-06-24T07:06:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3452",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3452#issuecomment-24346",
+    "user": "boothby"
+}
+```
 
 sweet!
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-25 05:49:13
+archive/issue_comments_024347.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-06-25T05:49:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3452",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3452#issuecomment-24347",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-25 05:49:13
+archive/issue_comments_024348.json:
+```json
+{
+    "body": "Merged both patches in Sage 3.0.4.alpha1",
+    "created_at": "2008-06-25T05:49:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3452",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3452#issuecomment-24348",
+    "user": "mabshoff"
+}
+```
 
 Merged both patches in Sage 3.0.4.alpha1

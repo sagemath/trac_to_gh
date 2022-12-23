@@ -1,26 +1,62 @@
 # Issue 3623: Factory and pickling framework (part of coercion branch)
 
-Issue created by migration from https://trac.sagemath.org/ticket/3623
-
-Original creator: robertwb
-
-Original creation time: 2008-07-09 08:03:41
-
+archive/issues_003623.json:
+```json
+{
+    "body": "Assignee: robertwb\n\nUniqueness of parents makes Sage operate much more smoothly. This leads to an enormous amount of nearly identical caching code scattered throughout the library. This factory handles all the caching for you, and also provides a good pickling mechanism. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3623\n\n",
+    "created_at": "2008-07-09T08:03:41Z",
+    "labels": [
+        "coercion",
+        "major",
+        "enhancement"
+    ],
+    "title": "Factory and pickling framework (part of coercion branch)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3623",
+    "user": "robertwb"
+}
+```
 Assignee: robertwb
 
 Uniqueness of parents makes Sage operate much more smoothly. This leads to an enormous amount of nearly identical caching code scattered throughout the library. This factory handles all the caching for you, and also provides a good pickling mechanism. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3623
+
+
+
+
 
 ---
 
-Comment by robertwb created at 2008-07-09 08:16:34
+archive/issue_comments_025615.json:
+```json
+{
+    "body": "Code documented and works great/passes tests. Just need some doctests in factory.pyx (perhaps via a fake test class?)",
+    "created_at": "2008-07-09T08:16:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3623",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3623#issuecomment-25615",
+    "user": "robertwb"
+}
+```
 
 Code documented and works great/passes tests. Just need some doctests in factory.pyx (perhaps via a fake test class?)
 
 
+
 ---
 
-Comment by anakha created at 2008-09-06 15:54:02
+archive/issue_comments_025616.json:
+```json
+{
+    "body": "Needs to be rebased against 3.1.2.alpha4:\n\n\n```\nsage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/3623/3623-factory-2.patch')\nAttempting to load remote file: http://trac.sagemath.org/sage_trac/attachment/ticket/3623/3623-factory-2.patch?format=raw\nLoading: [....]\ncd \"/Volumes/Place/anakha/sage-3.1.2.alpha4/devel/sage\" && hg status\ncd \"/Volumes/Place/anakha/sage-3.1.2.alpha4/devel/sage\" && hg status\ncd \"/Volumes/Place/anakha/sage-3.1.2.alpha4/devel/sage\" && hg import   \"/Users/anakha/.sage/temp/fullmetal.umn/58245/tmp_1.patch\"\napplying /Users/anakha/.sage/temp/fullmetal.umn/58245/tmp_1.patch\npatching file sage/modules/free_module.py\nHunk #1 FAILED at 157\nHunk #2 FAILED at 261\n2 out of 2 hunks FAILED -- saving rejects to file sage/modules/free_module.py.rej\nabort: patch failed to apply\n```\n\n\nOtherwise, I like this very much after having gone through the pain of implementing a unique factory for a parent already, I would have wasted a week less if this had already been in sage.",
+    "created_at": "2008-09-06T15:54:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3623",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3623#issuecomment-25616",
+    "user": "anakha"
+}
+```
 
 Needs to be rebased against 3.1.2.alpha4:
 
@@ -44,38 +80,112 @@ abort: patch failed to apply
 Otherwise, I like this very much after having gone through the pain of implementing a unique factory for a parent already, I would have wasted a week less if this had already been in sage.
 
 
+
 ---
 
-Comment by robertwb created at 2008-09-08 16:26:21
+archive/issue_comments_025617.json:
+```json
+{
+    "body": "Thanks. I'll rebase this as soon as 3.1.2 comes out (as I doubt this ticket will make it into there).",
+    "created_at": "2008-09-08T16:26:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3623",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3623#issuecomment-25617",
+    "user": "robertwb"
+}
+```
 
 Thanks. I'll rebase this as soon as 3.1.2 comes out (as I doubt this ticket will make it into there).
 
 
+
 ---
+
+archive/issue_comments_025618.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-09-23T23:11:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3623",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3623#issuecomment-25618",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_025619.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-09-23T23:11:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3623",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3623#issuecomment-25619",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_025620.json:
+```json
+{
+    "body": "Attachment\n\nAll four patches rebased.",
+    "created_at": "2008-09-23T23:12:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3623",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3623#issuecomment-25620",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 All four patches rebased.
 
 
+
 ---
+
+archive/issue_comments_025621.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-09-24T05:29:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3623",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3623#issuecomment-25621",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2008-11-28 21:36:39
+archive/issue_comments_025622.json:
+```json
+{
+    "body": "Hi Robert,\n\nThis bitrotted again.  Sorry!\n\n```\nwas@sage:~/build/sage-3.2.1.alpha1$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/3623/3623-factory-1.patch')\nAttempting to load remote file: http://trac.sagemath.org/sage_trac/attachment/ticket/3623/3623-factory-1.patch?format=raw\nLoading: [.]\ncd \"/home/was/build/sage-3.2.1.alpha1/devel/sage\" && hg status\ncd \"/home/was/build/sage-3.2.1.alpha1/devel/sage\" && hg status\ncd \"/home/was/build/sage-3.2.1.alpha1/devel/sage\" && hg import   \"/home/was/.sage/temp/sage/14985/tmp_0.patch\"\napplying /home/was/.sage/temp/sage/14985/tmp_0.patch\npatching file setup.py\nHunk #1 FAILED at 533\n1 out of 1 hunk FAILED -- saving rejects to file setup.py.rej\nabort: patch failed to apply\nsage: \n```\n\n| Sage Version 3.2.1.alpha1, Release Date: 2008-11-26                |\n| Type notebook() for the GUI, and license() for information.        |\nCan you rebase it an email me asap so this can get properly refereed and *not* bitrot again.",
+    "created_at": "2008-11-28T21:36:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3623",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3623#issuecomment-25622",
+    "user": "was"
+}
+```
 
 Hi Robert,
 
@@ -104,23 +214,58 @@ sage:
 Can you rebase it an email me asap so this can get properly refereed and *not* bitrot again.
 
 
+
 ---
 
-Comment by robertwb created at 2008-12-02 12:37:34
+archive/issue_comments_025623.json:
+```json
+{
+    "body": "patches 1-5 folded and rebased onto 3.2.1",
+    "created_at": "2008-12-02T12:37:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3623",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3623#issuecomment-25623",
+    "user": "robertwb"
+}
+```
 
 patches 1-5 folded and rebased onto 3.2.1
 
 
+
 ---
+
+archive/issue_comments_025624.json:
+```json
+{
+    "body": "Attachment\n\nOK, this is once again rebased.",
+    "created_at": "2008-12-02T12:42:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3623",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3623#issuecomment-25624",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 OK, this is once again rebased.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-02 15:46:15
+archive/issue_comments_025625.json:
+```json
+{
+    "body": "The patch applies cleanly against 3.2.1 and together with #4276 I am seeing two doctest failures:\n\n```\nsage -t -long \"devel/sage/sage/structure/coerce.pyx\"        \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha0/devel/sage/sage/structure/coerce.pyx\", line 862:\n    sage: V is W\nExpected:\n    False\nGot:\n    True\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha0/devel/sage/sage/structure/coerce.pyx\", line 865:\n    sage: cm.coercion_maps(V, W)\nExpected:\n    (None,\n     Call morphism:\n      From: Vector space of dimension 3 over Rational Field\n      To:   Vector space of dimension 3 over Rational Field)\nGot:\n    (None, None)\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha0/devel/sage/sage/structure/coerce.pyx\", line 870:\n    sage: cm.coercion_maps(W, V)\nExpected:\n    (None,\n     Call morphism:\n      From: Vector space of dimension 3 over Rational Field\n      To:   Vector space of dimension 3 over Rational Field)\nGot:\n    (None, Free module morphism defined by the matrix\n    [1 0 0]\n    [0 1 0]\n    [0 0 1]\n    Domain: Vector space of dimension 3 over Rational Field\n    Codomain: Vector space of dimension 3 over Rational Field)\n**********************************************************************\n1 items had failures:\n   3 of  21 in __main__.example_15\n***Test Failed*** 3 failures.\n```\n\nI guess the first one is worrying while the rest is mostly a printing issue.\n\nThe other failure is:\n\n```\nsage -t -long \"devel/sage/sage/schemes/elliptic_curves/ell_number_field.py\"\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha0/devel/sage/sage/schemes/elliptic_curves/ell_number_field.py\", line 667:\n    sage: [E.tamagawa_exponent(P) for P in K(11).support()]\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_20[7]>\", line 1, in <module>\n        [E.tamagawa_exponent(P) for P in K(Integer(11)).support()]###line 667:\n    sage: [E.tamagawa_exponent(P) for P in K(11).support()]\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha0/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_number_field.py\", line 675, in tamagawa_exponent\n        return self.local_data(P, proof).tamagawa_exponent()\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha0/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_number_field.py\", line 401, in local_data\n        return self._get_local_data(P,proof)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha0/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_number_field.py\", line 418, in _get_local_data\n        self._local_data[P] = EllipticCurveLocalData(self, P, proof)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha0/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_local_data.py\", line 140, in __init__\n        self._Emin, ch, self._val_disc, self._fp, self._KS, self._cp, self._split = self._tate(proof)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha0/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_local_data.py\", line 528, in _tate\n        r = -pinv(12*c4) * (c6 + b2 * c4)\n      File \"element.pyx\", line 1074, in sage.structure.element.RingElement.__mul__ (sage/structure/element.c:8580)\n      File \"coerce.pyx\", line 697, in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:5808)\n    TypeError: unsupported operand parent(s) for '*': 'Maximal Order in Number Field in a with defining polynomial x^2 + 11' and 'Number Field in a with defining polynomial x^2 + 11'\n**********************************************************************\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2008-12-02T15:46:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3623",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3623#issuecomment-25625",
+    "user": "mabshoff"
+}
+```
 
 The patch applies cleanly against 3.2.1 and together with #4276 I am seeing two doctest failures:
 
@@ -206,25 +351,60 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_025626.json:
+```json
+{
+    "body": "Attachment\n\napply after 3623-3.2.1-all.patch",
+    "created_at": "2008-12-02T20:18:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3623",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3623#issuecomment-25626",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 apply after 3623-3.2.1-all.patch
 
 
+
 ---
 
-Comment by robertwb created at 2008-12-02 20:20:23
+archive/issue_comments_025627.json:
+```json
+{
+    "body": "OK, I fixed the doctests in coerce.pyx. The issue was that loads(dumps(V)) wasn't returning a new object anymore (this is *good*) so it wasn't testing what I wanted to test (equal but not identical parents). \n\nThe other one is almost certainly due to #4276, looking into that now.",
+    "created_at": "2008-12-02T20:20:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3623",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3623#issuecomment-25627",
+    "user": "robertwb"
+}
+```
 
 OK, I fixed the doctests in coerce.pyx. The issue was that loads(dumps(V)) wasn't returning a new object anymore (this is *good*) so it wasn't testing what I wanted to test (equal but not identical parents). 
 
 The other one is almost certainly due to #4276, looking into that now.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-02 21:05:39
+archive/issue_comments_025628.json:
+```json
+{
+    "body": "3623-fix.patch does indeed fix the problem and seem to not have any side effects, i.e. the doctest failure in ell_number_field.py is still there. No additional doctests did fail.\n\nCheers,\n\nMichael",
+    "created_at": "2008-12-02T21:05:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3623",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3623#issuecomment-25628",
+    "user": "mabshoff"
+}
+```
 
 3623-fix.patch does indeed fix the problem and seem to not have any side effects, i.e. the doctest failure in ell_number_field.py is still there. No additional doctests did fail.
 
@@ -233,9 +413,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-04 11:56:59
+archive/issue_comments_025629.json:
+```json
+{
+    "body": "Ok, since 3623-all-3.2.1.patch and 3623-fix.patch + the two patches from #4276 make all tests pass I am giving this a positive review. There might still be issues here, so if anyone does take a closer look please open another ticket. The cost of this bitrotting is too high, so if this blows up there is only me and not Robert to blame.\n\nCheers,\n\nMichael",
+    "created_at": "2008-12-04T11:56:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3623",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3623#issuecomment-25629",
+    "user": "mabshoff"
+}
+```
 
 Ok, since 3623-all-3.2.1.patch and 3623-fix.patch + the two patches from #4276 make all tests pass I am giving this a positive review. There might still be issues here, so if anyone does take a closer look please open another ticket. The cost of this bitrotting is too high, so if this blows up there is only me and not Robert to blame.
 
@@ -244,23 +435,56 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-04 11:57:20
+archive/issue_comments_025630.json:
+```json
+{
+    "body": "Merged in Sage 3.2.2.alpha0",
+    "created_at": "2008-12-04T11:57:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3623",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3623#issuecomment-25630",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.2.2.alpha0
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-04 11:57:20
+archive/issue_comments_025631.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-12-04T11:57:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3623",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3623#issuecomment-25631",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-04 12:00:49
+archive/issue_comments_025632.json:
+```json
+{
+    "body": "One last remark: A couple doctests for the various \"create_key\" methods would be nice, but that can be done via a new ticket.\n\nCheers,\n\nMichael",
+    "created_at": "2008-12-04T12:00:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3623",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3623#issuecomment-25632",
+    "user": "mabshoff"
+}
+```
 
 One last remark: A couple doctests for the various "create_key" methods would be nice, but that can be done via a new ticket.
 
@@ -269,9 +493,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by robertwb created at 2008-12-04 20:09:04
+archive/issue_comments_025633.json:
+```json
+{
+    "body": "Thanks you. This one is a real pain to rebase, and I've wanted to use it elsewhere too. \n\nNote that Mike Hansen did look at these during Sage Days 10, and the response was generally positive (though not formal).",
+    "created_at": "2008-12-04T20:09:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3623",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3623#issuecomment-25633",
+    "user": "robertwb"
+}
+```
 
 Thanks you. This one is a real pain to rebase, and I've wanted to use it elsewhere too. 
 

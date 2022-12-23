@@ -1,11 +1,21 @@
 # Issue 3723: alarm doesn't work with the factor command on os x (but control c does)
 
-Issue created by migration from https://trac.sagemath.org/ticket/3723
-
-Original creator: was
-
-Original creation time: 2008-07-25 10:45:37
-
+archive/issues_003723.json:
+```json
+{
+    "body": "Assignee: cwitty\n\n\n```\nteragon-2:~ was$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading SAGE library. Current Mercurial branch is: review\nsage: alarm(3); factor(2^997-1) \n| SAGE Version 3.0.5, Release Date: 2008-07-11                       |\n| Type notebook() for the GUI, and license() for information.        |\n#\n# and I wait 10 seconds then hit control c\n#\n\n^C---------------------------------------------------------------------------\nKeyboardInterrupt                         Traceback (most recent call last)\n\n/Users/was/s/local/lib/python2.5/site-packages/sage/misc/misc.py in __mysig(a, b)\n   1343 __alarm_time=0\n   1344 def __mysig(a,b):\n-> 1345     raise KeyboardInterrupt, \"computation timed out because alarm was set for %s seconds\"%__alarm_time\n   1346 \n   1347 def alarm(seconds):\n\nKeyboardInterrupt: computation timed out because alarm was set for 3 seconds\nsage: \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3723\n\n",
+    "created_at": "2008-07-25T10:45:37Z",
+    "labels": [
+        "misc",
+        "major",
+        "bug"
+    ],
+    "title": "alarm doesn't work with the factor command on os x (but control c does)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3723",
+    "user": "was"
+}
+```
 Assignee: cwitty
 
 
@@ -36,30 +46,78 @@ sage:
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3723
+
+
+
+
 
 ---
 
-Comment by jdemeyer created at 2013-05-15 13:37:50
+archive/issue_comments_026408.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2013-05-15T13:37:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3723",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3723#issuecomment-26408",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-05-15 13:37:50
+archive/issue_comments_026409.json:
+```json
+{
+    "body": "Clearly duplicate of #13311.",
+    "created_at": "2013-05-15T13:37:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3723",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3723#issuecomment-26409",
+    "user": "jdemeyer"
+}
+```
 
 Clearly duplicate of #13311.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-05-15 13:37:58
+archive/issue_comments_026410.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2013-05-15T13:37:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3723",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3723#issuecomment-26410",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-05-16 07:33:38
+archive/issue_comments_026411.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2013-05-16T07:33:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3723",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3723#issuecomment-26411",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: duplicate

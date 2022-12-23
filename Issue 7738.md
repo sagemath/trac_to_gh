@@ -1,11 +1,21 @@
 # Issue 7738: remove Michael Abshoff as maintainer of any of spkg's
 
-Issue created by migration from https://trac.sagemath.org/ticket/7738
-
-Original creator: was
-
-Original creation time: 2009-12-18 22:04:03
-
+archive/issues_007738.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  was\n\nMichael Abshoff is listed as maintainer of many spkg's, but he quit, so we need to delete his name from all of them:\n\n```\noptional/graphviz-2.16.1.p0.txt: * Michael Abshoff\noptional/guppy-0.1.8.txt: * Michael Abshoff\noptional/jsmath-image-fonts-1.4.p2.txt: * Michael Abshoff\noptional/lrs-4.2b.p1.txt: * Michael Abshoff\noptional/valgrind_3.3.1.txt: * Michael Abshoff\nstandard/boost-cropped-1.34.1.txt: * Michael Abshoff\nstandard/eclib-20080310.p7.txt: * Michael Abshoff\nstandard/ecm-6.2.1.p1.txt: * Michael Abshoff\nstandard/gap-4.4.10.p12.txt: * Michael Abshoff\nstandard/gdmodule-0.56.p6.txt: * Michael Abshoff\nstandard/gsl-1.10.p1.txt: * Michael Abshoff\nstandard/iml-1.0.1.p11.txt: * Michael Abshoff\nstandard/ipython-0.9.1.p0.txt: * Michael Abshoff\nstandard/libfplll-3.0.12.p0.txt: * Michael Abshoff\nstandard/libpng-1.2.35.txt: * Michael Abshoff\nstandard/mpfr-2.4.1.p0.txt: * Michael Abshoff \nstandard/networkx-0.99.p1-fake_really-0.36.p1.txt: * Michael Abshoff\nstandard/ntl-5.4.2.p9.txt: * Michael Abshoff\nstandard/numpy-1.3.0.p2.txt:  Michael Abshoff\nstandard/pari-2.3.3.p5.txt: * Michael Abshoff\nstandard/polybori-0.6.3-20090827.txt: * Michael Abshoff\nstandard/pynac-0.1.9.p0.txt: * Michael Abshoff \nstandard/python-2.6.2.p4.txt: * Included a fix by Michael Abshoff: patch posixmodule.c to avoid an\nstandard/scipy_sandbox-20071020.p4.txt: * Michael Abshoff\nstandard/scons-1.2.0.txt: * Michael Abshoff\nstandard/setuptools-0.6c9.p0.txt: * Michael Abshoff\nstandard/symmetrica-2.0.p4.txt: * Michael Abshoff\nstandard/tachyon-0.98beta.p10.txt: * Michael Abshoff\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7738\n\n",
+    "created_at": "2009-12-18T22:04:03Z",
+    "labels": [
+        "packages: standard",
+        "minor",
+        "bug"
+    ],
+    "title": "remove Michael Abshoff as maintainer of any of spkg's",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7738",
+    "user": "was"
+}
+```
 Assignee: tbd
 
 CC:  was
@@ -44,56 +54,137 @@ standard/tachyon-0.98beta.p10.txt: * Michael Abshoff
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7738
+
+
+
+
 
 ---
 
-Comment by jsp created at 2010-01-10 22:14:24
+archive/issue_comments_066487.json:
+```json
+{
+    "body": "Maybe cwitty falls in the same category?\n\nJaap",
+    "created_at": "2010-01-10T22:14:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7738",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7738#issuecomment-66487",
+    "user": "jsp"
+}
+```
 
 Maybe cwitty falls in the same category?
 
 Jaap
 
 
+
 ---
 
-Comment by jason created at 2010-06-11 08:41:19
+archive/issue_comments_066488.json:
+```json
+{
+    "body": "I would be very surprised if cwitty maintained any spkgs.  I remember him telling me that he refused to maintain spkgs, in fact.",
+    "created_at": "2010-06-11T08:41:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7738",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7738#issuecomment-66488",
+    "user": "jason"
+}
+```
 
 I would be very surprised if cwitty maintained any spkgs.  I remember him telling me that he refused to maintain spkgs, in fact.
 
 
+
 ---
 
-Comment by leif created at 2010-07-11 00:22:08
+archive/issue_comments_066489.json:
+```json
+{
+    "body": "I've removed *Michael Abshoff* from the maintainer list in a new polybori-0.6.4.p2 package at #9472 (yet to be reviewed).\n\n-Leif",
+    "created_at": "2010-07-11T00:22:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7738",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7738#issuecomment-66489",
+    "user": "leif"
+}
+```
 
-I've removed _Michael Abshoff_ from the maintainer list in a new polybori-0.6.4.p2 package at #9472 (yet to be reviewed).
+I've removed *Michael Abshoff* from the maintainer list in a new polybori-0.6.4.p2 package at #9472 (yet to be reviewed).
 
 -Leif
 
 
+
 ---
 
-Comment by leif created at 2010-07-28 14:53:49
+archive/issue_comments_066490.json:
+```json
+{
+    "body": "Just came across http://wiki.sagemath.org/Sage_Spkg_Tracking (which is fairly out of date at some points btw); Michael Abshoff is still listed there as package maintainer of many packages, too...",
+    "created_at": "2010-07-28T14:53:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7738",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7738#issuecomment-66490",
+    "user": "leif"
+}
+```
 
 Just came across http://wiki.sagemath.org/Sage_Spkg_Tracking (which is fairly out of date at some points btw); Michael Abshoff is still listed there as package maintainer of many packages, too...
 
 
+
 ---
 
-Comment by leif created at 2010-07-28 16:41:39
+archive/issue_comments_066491.json:
+```json
+{
+    "body": "I've now removed Michael Abshoff from all entries on the [SPKG tracking Wiki page](http://wiki.sagemath.org/Sage_Spkg_Tracking).",
+    "created_at": "2010-07-28T16:41:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7738",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7738#issuecomment-66491",
+    "user": "leif"
+}
+```
 
 I've now removed Michael Abshoff from all entries on the [SPKG tracking Wiki page](http://wiki.sagemath.org/Sage_Spkg_Tracking).
 
 
+
 ---
 
-Comment by aapitzsch created at 2015-01-18 09:40:06
+archive/issue_comments_066492.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2015-01-18T09:40:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7738",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7738#issuecomment-66492",
+    "user": "aapitzsch"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by chapoton created at 2015-01-18 16:16:23
+archive/issue_comments_066493.json:
+```json
+{
+    "body": "missing one:\n\n```\ngrep -r --include=\"*.txt\" \"* Michael Abshoff\" .\n./scons/SPKG.txt: * Michael Abshoff\n./tachyon/SPKG.txt: * Michael Abshoff\n./setuptools/SPKG.txt: * Michael Abshoff\n./boost_cropped/SPKG.txt: * Michael Abshoff\n\n```\n",
+    "created_at": "2015-01-18T16:16:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7738",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7738#issuecomment-66493",
+    "user": "chapoton"
+}
+```
 
 missing one:
 
@@ -108,46 +199,112 @@ grep -r --include="*.txt" "* Michael Abshoff" .
 
 
 
+
 ---
 
-Comment by aapitzsch created at 2015-01-18 19:34:38
+archive/issue_comments_066494.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_info.",
+    "created_at": "2015-01-18T19:34:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7738",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7738#issuecomment-66494",
+    "user": "aapitzsch"
+}
+```
 
 Changing status from needs_review to needs_info.
 
 
+
 ---
 
-Comment by aapitzsch created at 2015-01-18 19:34:38
+archive/issue_comments_066495.json:
+```json
+{
+    "body": "Michael Abshoff is the only maintainer mentioned in `./boost_cropped/SPKG.txt`. Is it okay to have a spkg without maintainer or whom we could add as maintainer?",
+    "created_at": "2015-01-18T19:34:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7738",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7738#issuecomment-66495",
+    "user": "aapitzsch"
+}
+```
 
 Michael Abshoff is the only maintainer mentioned in `./boost_cropped/SPKG.txt`. Is it okay to have a spkg without maintainer or whom we could add as maintainer?
 
 
+
 ---
 
-Comment by kcrisman created at 2015-01-21 04:06:33
+archive/issue_comments_066496.json:
+```json
+{
+    "body": "The concept of maintainer is really a bit misleading anyway.  But yes, just go ahead and remove, it would be inaccurate to do otherwise.",
+    "created_at": "2015-01-21T04:06:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7738",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7738#issuecomment-66496",
+    "user": "kcrisman"
+}
+```
 
 The concept of maintainer is really a bit misleading anyway.  But yes, just go ahead and remove, it would be inaccurate to do otherwise.
 
 
+
 ---
 
-Comment by chapoton created at 2015-01-21 08:48:47
+archive/issue_comments_066497.json:
+```json
+{
+    "body": "Changing status from needs_info to needs_review.",
+    "created_at": "2015-01-21T08:48:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7738",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7738#issuecomment-66497",
+    "user": "chapoton"
+}
+```
 
 Changing status from needs_info to needs_review.
 
 
+
 ---
 
-Comment by chapoton created at 2015-01-21 08:48:47
+archive/issue_comments_066498.json:
+```json
+{
+    "body": "if you agree, please set this to positive review\n----\nNew commits:",
+    "created_at": "2015-01-21T08:48:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7738",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7738#issuecomment-66498",
+    "user": "chapoton"
+}
+```
 
 if you agree, please set this to positive review
 ----
 New commits:
 
 
+
 ---
 
-Comment by jdemeyer created at 2015-01-21 09:15:43
+archive/issue_comments_066499.json:
+```json
+{
+    "body": "Couldn't you just remove\n\n```\n## Maintainers\n\nNone\n```\n\ncompletely?",
+    "created_at": "2015-01-21T09:15:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7738",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7738#issuecomment-66499",
+    "user": "jdemeyer"
+}
+```
 
 Couldn't you just remove
 
@@ -160,29 +317,73 @@ None
 completely?
 
 
+
 ---
 
-Comment by git created at 2015-01-21 09:19:42
+archive/issue_comments_066500.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2015-01-21T09:19:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7738",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7738#issuecomment-66500",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by jdemeyer created at 2015-01-21 09:21:36
+archive/issue_comments_066501.json:
+```json
+{
+    "body": "That was quick :-)",
+    "created_at": "2015-01-21T09:21:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7738",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7738#issuecomment-66501",
+    "user": "jdemeyer"
+}
+```
 
 That was quick :-)
 
 
+
 ---
 
-Comment by jdemeyer created at 2015-01-21 09:21:36
+archive/issue_comments_066502.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2015-01-21T09:21:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7738",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7738#issuecomment-66502",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by vbraun created at 2015-01-24 13:18:47
+archive/issue_comments_066503.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2015-01-24T13:18:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7738",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7738#issuecomment-66503",
+    "user": "vbraun"
+}
+```
 
 Resolution: fixed

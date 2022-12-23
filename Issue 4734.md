@@ -1,11 +1,21 @@
 # Issue 4734: sage -notebook option now broken
 
-Issue created by migration from https://trac.sagemath.org/ticket/4734
-
-Original creator: was
-
-Original creation time: 2008-12-07 04:49:58
-
+archive/issues_004734.json:
+```json
+{
+    "body": "Assignee: boothby\n\n\n```\n\nDear Sage-Devels,\n\nLet me again thank you for the excellent work put in building sage.\n\nI've found a bug in the most recent release. Specifically, when\ninvoked with the -notebook switch, the current release does not\nproperly quote paths. So, if I execute:\n\n/Applications/sage/sage -notebook \"/Users/carson/doc/math/\nsage_notebook/\"\n\nSage says:\n\nTraceback (most recent call last):\n File \"/Applications/sage/local/bin/sage-notebook\", line 14, in\n<module>\n   exec \"notebook(\" + \",\".join(sys.argv[1:]) + \")\"\n File \"<string>\", line 1\n   notebook(/Users/carson/doc/math/sage_notebook/)\n            ^\nSyntaxError: invalid syntax\n\nIf I edit the offending line in local/bin/sage-notebook:\n\n   exec \"notebook(\" + \",\".join(sys.argv[1:]) + \")\"\n\nTo instead read:\n\n   exec \"notebook('\" + \",\".join(sys.argv[1:]) + \"')\"\n\nThen the -notebook switch works as expected. Please consider using the\nfollowing sage-notebook file to correct this bug:\n\nhttp://bentham.k2.t.u-tokyo.ac.jp/media/bugs/sage/sage-notebook\n\nCheers,\n```\n\n\nMakes sense.  This was indeed caused by a patch in the last version of sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4734\n\n",
+    "created_at": "2008-12-07T04:49:58Z",
+    "labels": [
+        "notebook",
+        "major",
+        "bug"
+    ],
+    "title": "sage -notebook option now broken",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4734",
+    "user": "was"
+}
+```
 Assignee: boothby
 
 
@@ -52,10 +62,25 @@ Cheers,
 
 Makes sense.  This was indeed caused by a patch in the last version of sage.
 
+Issue created by migration from https://trac.sagemath.org/ticket/4734
+
+
+
+
 
 ---
 
-Comment by klee created at 2008-12-07 10:28:45
+archive/issue_comments_035734.json:
+```json
+{
+    "body": "The -notebook command line option takes the same arguments as the\nnotebook() sage command. The directory argument to both the command\nline option and the sage command should be a python string. So the\nproper way to write your code is\n\n/Applications/sage/sage -notebook '\"/Users/carson/doc/math/\nsage_notebook/\"'\n\nHere the outer single quotes ' ' quote the python string \"/Users/\ncarson/doc/math/sage_notebook/\". This is a function of your shell.\n\nThe most recent release of Sage also accepts for example\n\n/Applications/sage/sage -notebook '\"/Users/carson/doc/math/\nsage_notebook/\"' secure=True open_viewer=False\n\nThis did not work for the old release of Sage.",
+    "created_at": "2008-12-07T10:28:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4734",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4734#issuecomment-35734",
+    "user": "klee"
+}
+```
 
 The -notebook command line option takes the same arguments as the
 notebook() sage command. The directory argument to both the command
@@ -76,9 +101,20 @@ sage_notebook/"' secure=True open_viewer=False
 This did not work for the old release of Sage.
 
 
+
 ---
 
-Comment by was created at 2008-12-07 19:11:53
+archive/issue_comments_035735.json:
+```json
+{
+    "body": "Since the first input two notebook has to be a string, if there are no named parameters we should rewrite the code to make the original user's input work.  I.e., This should work no matter what, and I see no reason not to make this work:\n\n```\nsage -notebook \"/Users/carson/doc/math/sage_notebook/\"\n```\n",
+    "created_at": "2008-12-07T19:11:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4734",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4734#issuecomment-35735",
+    "user": "was"
+}
+```
 
 Since the first input two notebook has to be a string, if there are no named parameters we should rewrite the code to make the original user's input work.  I.e., This should work no matter what, and I see no reason not to make this work:
 
@@ -88,9 +124,20 @@ sage -notebook "/Users/carson/doc/math/sage_notebook/"
 
 
 
+
 ---
 
-Comment by klee created at 2008-12-08 04:25:45
+archive/issue_comments_035736.json:
+```json
+{
+    "body": "Then the patch for ticket #4641 applied to Sage 3.2.1 should be abolished, and the original code\n\nnotebook(*sys.argv[1:])\n\nshould be recovered, until a better solution be found. The original code seems better than the code proposed by the reporter of this bug.",
+    "created_at": "2008-12-08T04:25:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4734",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4734#issuecomment-35736",
+    "user": "klee"
+}
+```
 
 Then the patch for ticket #4641 applied to Sage 3.2.1 should be abolished, and the original code
 
@@ -99,21 +146,56 @@ notebook(*sys.argv[1:])
 should be recovered, until a better solution be found. The original code seems better than the code proposed by the reporter of this bug.
 
 
+
 ---
+
+archive/issue_comments_035737.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-01-24T15:49:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4734",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4734#issuecomment-35737",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2009-01-24 15:51:08
+archive/issue_comments_035738.json:
+```json
+{
+    "body": "apply the patch to the *SCRIPTS* repo!",
+    "created_at": "2009-01-24T15:51:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4734",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4734#issuecomment-35738",
+    "user": "was"
+}
+```
 
 apply the patch to the *SCRIPTS* repo!
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-02 04:57:59
+archive/issue_comments_035739.json:
+```json
+{
+    "body": "Nice, positive review.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-02T04:57:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4734",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4734#issuecomment-35739",
+    "user": "mabshoff"
+}
+```
 
 Nice, positive review.
 
@@ -122,16 +204,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-02 04:58:16
+archive/issue_comments_035740.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-02-02T04:58:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4734",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4734#issuecomment-35740",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-02 04:58:16
+archive/issue_comments_035741.json:
+```json
+{
+    "body": "Merged in Sage 3.3.alpha4.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-02T04:58:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4734",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4734#issuecomment-35741",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.3.alpha4.
 

@@ -1,11 +1,21 @@
 # Issue 8580: Bug in coercing into a 0-dimensional qotient vector space
 
-Issue created by migration from https://trac.sagemath.org/ticket/8580
-
-Original creator: was
-
-Original creation time: 2010-03-22 21:39:50
-
+archive/issues_008580.json:
+```json
+{
+    "body": "Assignee: was\n\n\n```\nwstein@boxen:~$ /usr/local/bin/sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: V = GF(2)^3\nsage: (V/V)(V.0)\n| Sage Version 4.3.4, Release Date: 2010-03-19                       |\n| Type notebook() for the GUI, and license() for information.        |\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8580\n\n",
+    "created_at": "2010-03-22T21:39:50Z",
+    "labels": [
+        "linear algebra",
+        "major",
+        "bug"
+    ],
+    "title": "Bug in coercing into a 0-dimensional qotient vector space",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8580",
+    "user": "was"
+}
+```
 Assignee: was
 
 
@@ -29,10 +39,25 @@ SAGE will now terminate (sorry).
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8580
+
+
+
+
 
 ---
 
-Comment by was created at 2010-03-22 21:43:12
+archive/issue_comments_077712.json:
+```json
+{
+    "body": "With GDB:\n\n```\nThis GDB was configured as \"x86_64-linux-gnu\"...                             \n[Thread debugging using libthread_db enabled]                                \nPython 2.6.4 (r264:75706, Mar 20 2010, 18:30:21)                             \n[GCC 4.2.4 (Ubuntu 4.2.4-1ubuntu4)] on linux2                                \nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.       \n[New Thread 0x7fd3670706e0 (LWP 623)]                                        \nsage: V = GF(2)^3                                                            \nsage: (V/V)(V.0)                                                             \n\nProgram received signal SIGSEGV, Segmentation fault.\n[Switching to Thread 0x7fd3670706e0 (LWP 623)]      \nmzd_submatrix (S=0x41f5410, M=0x0, startrow=0, startcol=0, endrow=1, endcol=0) at src/packedmatrix.c:810\n810     src/packedmatrix.c: No such file or directory.                                                  \n        in src/packedmatrix.c                                                                           \n(gdb)                                                                                                   \n(gdb)                                                                                                   \n(gdb) bt                                                                                                \n#0  mzd_submatrix (S=0x41f5410, M=0x0, startrow=0, startcol=0, endrow=1, endcol=0)\n    at src/packedmatrix.c:810\n#1  0x00007fd3471bf48a in __pyx_pf_4sage_6matrix_17matrix_mod2_dense_17Matrix_mod2_dense_row (\n    __pyx_v_self=0x7fd366ec82f8, __pyx_args=<value optimized out>, __pyx_kwds=<value optimized out>)\n    at sage/matrix/matrix_mod2_dense.c:4478\n#2  0x000000000041a27d in PyObject_Call (func=0x4308758, arg=0xe9c050, kw=0x0)\n    at Objects/abstract.c:2492\n#3  0x00007fd34a198f6f in __pyx_pf_4sage_6matrix_7matrix1_6Matrix_dense_rows (\n    __pyx_v_self=0x7fd366ec82f8, __pyx_args=<value optimized out>, __pyx_kwds=<value optimized out>)\n    at sage/matrix/matrix1.c:5524\n#4  0x000000000041a27d in PyObject_Call (func=0x422dfc8, arg=0x7fd367030050, kw=0x4356d80)\n    at Objects/abstract.c:2492\n#5  0x00000000004907c6 in PyEval_CallObjectWithKeywords (func=0x422dfc8, arg=0x7fd367030050,\n    kw=0x4356d80) at Python/ceval.c:3575\n#6  0x00007fd34a19b316 in __pyx_pf_4sage_6matrix_7matrix1_6Matrix_rows (__pyx_v_self=0x7fd366ec82f8,\n    __pyx_args=<value optimized out>, __pyx_kwds=<value optimized out>) at sage/matrix/matrix1.c:4990\n#7  0x000000000041a27d in PyObject_Call (func=0x43087a0, arg=0x7fd367030050, kw=0x4356530)\n    at Objects/abstract.c:2492\n#8  0x00000000004907c6 in PyEval_CallObjectWithKeywords (func=0x43087a0, arg=0x7fd367030050,\n    kw=0x4356530) at Python/ceval.c:3575\n```\n",
+    "created_at": "2010-03-22T21:43:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8580",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8580#issuecomment-77712",
+    "user": "was"
+}
+```
 
 With GDB:
 
@@ -78,48 +103,127 @@ mzd_submatrix (S=0x41f5410, M=0x0, startrow=0, startcol=0, endrow=1, endcol=0) a
 
 
 
+
 ---
 
-Comment by was created at 2010-03-22 21:43:24
+archive/issue_comments_077713.json:
+```json
+{
+    "body": "Changing assignee from was to malb.",
+    "created_at": "2010-03-22T21:43:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8580",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8580#issuecomment-77713",
+    "user": "was"
+}
+```
 
 Changing assignee from was to malb.
 
 
+
 ---
+
+archive/issue_comments_077714.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-03-22T23:10:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8580",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8580#issuecomment-77714",
+    "user": "malb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by malb created at 2010-03-22 23:12:02
+archive/issue_comments_077715.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-03-22T23:12:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8580",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8580#issuecomment-77715",
+    "user": "malb"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by was created at 2010-03-29 23:49:14
+archive/issue_comments_077716.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-03-29T23:49:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8580",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8580#issuecomment-77716",
+    "user": "was"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by was created at 2010-03-29 23:49:14
+archive/issue_comments_077717.json:
+```json
+{
+    "body": "Looks good.  Thanks!",
+    "created_at": "2010-03-29T23:49:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8580",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8580#issuecomment-77717",
+    "user": "was"
+}
+```
 
 Looks good.  Thanks!
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-16 18:48:42
+archive/issue_comments_077718.json:
+```json
+{
+    "body": "Merged \"vector_mod2_dense_zero.patch\" in 4.4.alpha0",
+    "created_at": "2010-04-16T18:48:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8580",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8580#issuecomment-77718",
+    "user": "jhpalmieri"
+}
+```
 
 Merged "vector_mod2_dense_zero.patch" in 4.4.alpha0
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-16 18:48:42
+archive/issue_comments_077719.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-04-16T18:48:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8580",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8580#issuecomment-77719",
+    "user": "jhpalmieri"
+}
+```
 
 Resolution: fixed

@@ -1,46 +1,115 @@
 # Issue 8689: sage notebook: add mention of cell:// for referencing data to notebook help page
 
-Issue created by migration from https://trac.sagemath.org/ticket/8689
-
-Original creator: was
-
-Original creation time: 2010-04-14 23:03:49
-
+archive/issues_008689.json:
+```json
+{
+    "body": "Assignee: jason, was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8689\n\n",
+    "created_at": "2010-04-14T23:03:49Z",
+    "labels": [
+        "notebook",
+        "minor",
+        "enhancement"
+    ],
+    "title": "sage notebook: add mention of cell:// for referencing data to notebook help page",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8689",
+    "user": "was"
+}
+```
 Assignee: jason, was
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8689
+
+
+
+
 
 ---
 
-Comment by kcrisman created at 2014-09-17 02:43:26
+archive/issue_comments_079165.json:
+```json
+{
+    "body": "William, what the heck does this mean?  Can we get direct access to a cell's contents in the browser?  In a cell?",
+    "created_at": "2014-09-17T02:43:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8689",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8689#issuecomment-79165",
+    "user": "kcrisman"
+}
+```
 
 William, what the heck does this mean?  Can we get direct access to a cell's contents in the browser?  In a cell?
 
 
+
 ---
 
-Comment by kcrisman created at 2014-09-17 02:43:44
+archive/issue_comments_079166.json:
+```json
+{
+    "body": "Changing status from new to needs_info.",
+    "created_at": "2014-09-17T02:43:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8689",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8689#issuecomment-79166",
+    "user": "kcrisman"
+}
+```
 
 Changing status from new to needs_info.
 
 
+
 ---
 
-Comment by chapoton created at 2019-09-01 15:52:40
+archive/issue_comments_079167.json:
+```json
+{
+    "body": "Changing status from needs_info to positive_review.",
+    "created_at": "2019-09-01T15:52:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8689",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8689#issuecomment-79167",
+    "user": "chapoton"
+}
+```
 
 Changing status from needs_info to positive_review.
 
 
+
 ---
 
-Comment by chapoton created at 2019-09-01 15:52:40
+archive/issue_comments_079168.json:
+```json
+{
+    "body": "obsolete. I will close later if nobody objects",
+    "created_at": "2019-09-01T15:52:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8689",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8689#issuecomment-79168",
+    "user": "chapoton"
+}
+```
 
 obsolete. I will close later if nobody objects
 
 
+
 ---
 
-Comment by chapoton created at 2019-09-06 18:37:37
+archive/issue_comments_079169.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2019-09-06T18:37:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8689",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8689#issuecomment-79169",
+    "user": "chapoton"
+}
+```
 
 Resolution: invalid

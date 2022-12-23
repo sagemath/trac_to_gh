@@ -1,11 +1,21 @@
 # Issue 8869: float(CDF(1)) should return 1.0, not throw an error
 
-Issue created by migration from https://trac.sagemath.org/ticket/8869
-
-Original creator: jason
-
-Original creation time: 2010-05-04 15:56:30
-
+archive/issues_008869.json:
+```json
+{
+    "body": "Assignee: AlexGhitza\n\nRight now, we have the following behavior:\n\n\n```\nsage: float(CC(1.0))\n1.0\n\n\nsage: float(CDF(1.0))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/jason/<ipython console> in <module>()\n\n/home/jason/sage/local/lib/python2.6/site-packages/sage/rings/complex_double.so in sage.rings.complex_double.ComplexDoubleElement.__float__ (sage/rings/complex_double.c:6532)()\n\nTypeError: can't convert complex to float; use abs(z)\n\n\nsage: float(complex(1.0))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/jason/<ipython console> in <module>()\n\nTypeError: can't convert complex to float \n```\n\n\nAs robertwb and was voted (on http://trac.sagemath.org/sage_trac/ticket/5400#comment:12 and on sage-devel), we should make float conversion succeed if the imaginary part is zero.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8869\n\n",
+    "created_at": "2010-05-04T15:56:30Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "bug"
+    ],
+    "title": "float(CDF(1)) should return 1.0, not throw an error",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8869",
+    "user": "jason"
+}
+```
 Assignee: AlexGhitza
 
 Right now, we have the following behavior:
@@ -39,29 +49,79 @@ TypeError: can't convert complex to float
 
 As robertwb and was voted (on http://trac.sagemath.org/sage_trac/ticket/5400#comment:12 and on sage-devel), we should make float conversion succeed if the imaginary part is zero.
 
+Issue created by migration from https://trac.sagemath.org/ticket/8869
+
+
+
+
 
 ---
+
+archive/issue_comments_081525.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-05-04T16:17:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8869",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81525",
+    "user": "jason"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by jason created at 2010-05-04 16:17:26
+archive/issue_comments_081526.json:
+```json
+{
+    "body": "Changing status from new to needs_work.",
+    "created_at": "2010-05-04T16:17:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8869",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81526",
+    "user": "jason"
+}
+```
 
 Changing status from new to needs_work.
 
 
+
 ---
 
-Comment by jason created at 2010-05-04 16:18:04
+archive/issue_comments_081527.json:
+```json
+{
+    "body": "The patch needs to have commit message, and doctests need to be run.",
+    "created_at": "2010-05-04T16:18:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8869",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81527",
+    "user": "jason"
+}
+```
 
 The patch needs to have commit message, and doctests need to be run.
 
 
+
 ---
 
-Comment by leif created at 2010-05-06 01:54:07
+archive/issue_comments_081528.json:
+```json
+{
+    "body": "See also http://groups.google.com/group/sage-devel/browse_thread/thread/75b8f85d22499ceb#\n\n(I don't like the use of Python conversion functions on Sage objects.)\n\nWhy (only) suggest use of `abs()`? What about `real_part()`?\nOr even `imag_part()` and `arg()`, perhaps `norm()`, too?\n\nIs `abs()` really more natural than `real_part()`?",
+    "created_at": "2010-05-06T01:54:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8869",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81528",
+    "user": "leif"
+}
+```
 
 See also http://groups.google.com/group/sage-devel/browse_thread/thread/75b8f85d22499ceb#
 
@@ -73,41 +133,98 @@ Or even `imag_part()` and `arg()`, perhaps `norm()`, too?
 Is `abs()` really more natural than `real_part()`?
 
 
+
 ---
 
-Comment by kcrisman created at 2010-05-26 19:58:40
+archive/issue_comments_081529.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-05-26T19:58:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8869",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81529",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by kcrisman created at 2010-05-26 19:58:40
+archive/issue_comments_081530.json:
+```json
+{
+    "body": "Ready for review.  Leif's comment seems reasonable, so I added one (!) extra option in the error message.  Passes tests on these two files.",
+    "created_at": "2010-05-26T19:58:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8869",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81530",
+    "user": "kcrisman"
+}
+```
 
 Ready for review.  Leif's comment seems reasonable, so I added one (!) extra option in the error message.  Passes tests on these two files.
 
 
+
 ---
+
+archive/issue_comments_081531.json:
+```json
+{
+    "body": "Attachment\n\nBased on 4.4.2, apply only this patch",
+    "created_at": "2010-05-26T19:58:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8869",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81531",
+    "user": "kcrisman"
+}
+```
 
 Attachment
 
 Based on 4.4.2, apply only this patch
 
 
+
 ---
 
-Comment by leif created at 2010-05-26 21:54:53
+archive/issue_comments_081532.json:
+```json
+{
+    "body": "Well, `__long__()` could equally well succeed if the *fractional* (and imaginary) part is zero... ;-)\n\n(And note that `int(1.1)` **silently** *truncates*; i.e. the current situation is overall not very consistent, as I mentioned in the thread.)\n\nNevertheless, I'll test it as soon as the \"normal\" 4.4.3.alpha0 ptestlong finishes on my Pentium 4, just wait a few hours... ;-)",
+    "created_at": "2010-05-26T21:54:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8869",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81532",
+    "user": "leif"
+}
+```
 
-Well, `__long__()` could equally well succeed if the _fractional_ (and imaginary) part is zero... ;-)
+Well, `__long__()` could equally well succeed if the *fractional* (and imaginary) part is zero... ;-)
 
-(And note that `int(1.1)` *silently* _truncates_; i.e. the current situation is overall not very consistent, as I mentioned in the thread.)
+(And note that `int(1.1)` **silently** *truncates*; i.e. the current situation is overall not very consistent, as I mentioned in the thread.)
 
 Nevertheless, I'll test it as soon as the "normal" 4.4.3.alpha0 ptestlong finishes on my Pentium 4, just wait a few hours... ;-)
 
 
+
 ---
 
-Comment by kcrisman created at 2010-05-27 00:40:10
+archive/issue_comments_081533.json:
+```json
+{
+    "body": "I don't think we are trying to be contentious here.  Yes, there are inconsistencies, but that is just to be expected (I would even say it follows from Arrow's Theorem).  The point is to make it as natural to mathematicians as possible, and float(CDF(1)) certainly smells like 1.0 to me.  int is a little different, but it seems to me that since Python isn't consistent anyways\n\n```\n>>> int(1.1)\n1\n>>> float(1+0j)\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in ?\nTypeError: can't convert complex to float; use abs(z)\n```\n\nwe might as well make the best of it and let int be the \"round closest to zero\" function, in essence.  And it's documented, and it's not the natural thing one would do (Integer(1.1) behaves as you would like).",
+    "created_at": "2010-05-27T00:40:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8869",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81533",
+    "user": "kcrisman"
+}
+```
 
 I don't think we are trying to be contentious here.  Yes, there are inconsistencies, but that is just to be expected (I would even say it follows from Arrow's Theorem).  The point is to make it as natural to mathematicians as possible, and float(CDF(1)) certainly smells like 1.0 to me.  int is a little different, but it seems to me that since Python isn't consistent anyways
 
@@ -123,16 +240,38 @@ TypeError: can't convert complex to float; use abs(z)
 we might as well make the best of it and let int be the "round closest to zero" function, in essence.  And it's documented, and it's not the natural thing one would do (Integer(1.1) behaves as you would like).
 
 
+
 ---
 
-Comment by leif created at 2010-05-27 01:50:12
+archive/issue_comments_081534.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-05-27T01:50:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8869",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81534",
+    "user": "leif"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by leif created at 2010-05-27 01:50:12
+archive/issue_comments_081535.json:
+```json
+{
+    "body": "The Python behavior could be \"catched\" by the preparser. There have recently been long discussions about Sage's \"coercion model\"...\n\n----\n\nApplied Karl-Dieter's patch on 4.4.3.alpha0.\n\n`sage -t -long devel/sage/sage/rings` passed all tests.\n\nPositive review.",
+    "created_at": "2010-05-27T01:50:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8869",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81535",
+    "user": "leif"
+}
+```
 
 The Python behavior could be "catched" by the preparser. There have recently been long discussions about Sage's "coercion model"...
 
@@ -145,22 +284,55 @@ Applied Karl-Dieter's patch on 4.4.3.alpha0.
 Positive review.
 
 
----
-
-Comment by leif created at 2010-05-27 12:15:09
-
-`make ptestlong` also did not give errors related to _this_ patch (again Sage 4.4.3.alpha0, Ubuntu 9.04 x86/32-bit).
-
 
 ---
 
-Comment by leif created at 2010-05-27 12:15:09
+archive/issue_comments_081536.json:
+```json
+{
+    "body": "`make ptestlong` also did not give errors related to *this* patch (again Sage 4.4.3.alpha0, Ubuntu 9.04 x86/32-bit).",
+    "created_at": "2010-05-27T12:15:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8869",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81536",
+    "user": "leif"
+}
+```
+
+`make ptestlong` also did not give errors related to *this* patch (again Sage 4.4.3.alpha0, Ubuntu 9.04 x86/32-bit).
+
+
+
+---
+
+archive/issue_comments_081537.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"CDF conversion, complex double\".",
+    "created_at": "2010-05-27T12:15:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8869",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81537",
+    "user": "leif"
+}
+```
 
 Changing keywords from "" to "CDF conversion, complex double".
 
 
+
 ---
 
-Comment by mhansen created at 2010-06-06 01:21:28
+archive/issue_comments_081538.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-06-06T01:21:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8869",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81538",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

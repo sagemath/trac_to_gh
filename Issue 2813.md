@@ -1,11 +1,21 @@
 # Issue 2813: Add keycodes to split / join cells.
 
-Issue created by migration from https://trac.sagemath.org/ticket/2813
-
-Original creator: boothby
-
-Original creation time: 2008-04-05 19:30:19
-
+archive/issues_002813.json:
+```json
+{
+    "body": "Assignee: boothby\n\n\n```\nFrom: Andrey Novoseltsev\nSubject: [sage-devel] Cell splitting/merging in notebook\n\n\nIs it possible to realize some convenient and fast (in the sense of\nkeyboard use) cell splitting/merging? It seems to me that now it\ninvolves manual copying of a part of code and creating/removing a\ncell, or editing the text representation. I really liked the ability\nto do it in Maple (back when I was using it ;-) by pressing some hot\nkeys since it allows you to group cells for executing in one step and\nnicer visual presentation or break them back when you want to interact\nwith intermediate values.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2813\n\n",
+    "created_at": "2008-04-05T19:30:19Z",
+    "labels": [
+        "notebook",
+        "minor",
+        "enhancement"
+    ],
+    "title": "Add keycodes to split / join cells.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2813",
+    "user": "boothby"
+}
+```
 Assignee: boothby
 
 
@@ -25,15 +35,43 @@ with intermediate values.
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2813
+
+
+
+
 
 ---
+
+archive/issue_comments_019307.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-04-05T19:33:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2813",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2813#issuecomment-19307",
+    "user": "boothby"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2008-04-05 20:58:40
+archive/issue_comments_019308.json:
+```json
+{
+    "body": "Hi Tom,\n\nIn OS X firefox I tried this patch and it is really broken.  Splitting cells does absolutely nothing.  Joining works, but puts the active focus in the wrong cell. \n\nI'll see if I can fix it.",
+    "created_at": "2008-04-05T20:58:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2813",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2813#issuecomment-19308",
+    "user": "was"
+}
+```
 
 Hi Tom,
 
@@ -42,16 +80,38 @@ In OS X firefox I tried this patch and it is really broken.  Splitting cells doe
 I'll see if I can fix it.
 
 
+
 ---
 
-Comment by was created at 2008-04-05 20:59:53
+archive/issue_comments_019309.json:
+```json
+{
+    "body": "On OS X with safari split does work.  Join has the same problem as described above.",
+    "created_at": "2008-04-05T20:59:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2813",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2813#issuecomment-19309",
+    "user": "was"
+}
+```
 
 On OS X with safari split does work.  Join has the same problem as described above.
 
 
+
 ---
 
-Comment by was created at 2008-04-05 21:52:37
+archive/issue_comments_019310.json:
+```json
+{
+    "body": "Another REFEREE COMMENT:\n\nAbsolutely none of the functions you added in this patch have any documentation. \nThat has to be fixed before this patch gets accepted.  Even javascript functions have to have docs.   Again, I'm trying to work out what they do -- contact me before working on this.",
+    "created_at": "2008-04-05T21:52:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2813",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2813#issuecomment-19310",
+    "user": "was"
+}
+```
 
 Another REFEREE COMMENT:
 
@@ -59,48 +119,131 @@ Absolutely none of the functions you added in this patch have any documentation.
 That has to be fixed before this patch gets accepted.  Even javascript functions have to have docs.   Again, I'm trying to work out what they do -- contact me before working on this.
 
 
+
 ---
+
+archive/issue_comments_019311.json:
+```json
+{
+    "body": "Attachment\n\nthis should be applied after tom's first patch",
+    "created_at": "2008-04-06T02:29:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2813",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2813#issuecomment-19311",
+    "user": "was"
+}
+```
 
 Attachment
 
 this should be applied after tom's first patch
 
 
+
 ---
+
+archive/issue_comments_019312.json:
+```json
+{
+    "body": "Attachment\n\nthis adds opera support, at least under os x.",
+    "created_at": "2008-04-06T03:58:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2813",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2813#issuecomment-19312",
+    "user": "was"
+}
+```
 
 Attachment
 
 this adds opera support, at least under os x.
 
 
+
 ---
+
+archive/issue_comments_019313.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-04-06T05:31:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2813",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2813#issuecomment-19313",
+    "user": "boothby"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by robertwb created at 2008-04-06 06:37:56
+archive/issue_comments_019314.json:
+```json
+{
+    "body": "Works great in Camino, but it has issues joining cells in Safari 3.1 on OS X 10.4.11.",
+    "created_at": "2008-04-06T06:37:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2813",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2813#issuecomment-19314",
+    "user": "robertwb"
+}
+```
 
 Works great in Camino, but it has issues joining cells in Safari 3.1 on OS X 10.4.11.
 
 
+
 ---
 
-Comment by robertwb created at 2008-04-06 06:40:42
+archive/issue_comments_019315.json:
+```json
+{
+    "body": "Safari 3.1 isn't supported by Sage yet. Works great elsewhere.",
+    "created_at": "2008-04-06T06:40:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2813",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2813#issuecomment-19315",
+    "user": "robertwb"
+}
+```
 
 Safari 3.1 isn't supported by Sage yet. Works great elsewhere.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-06 06:54:20
+archive/issue_comments_019316.json:
+```json
+{
+    "body": "Merged all four patches in Sage 3.0.alpha2",
+    "created_at": "2008-04-06T06:54:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2813",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2813#issuecomment-19316",
+    "user": "mabshoff"
+}
+```
 
 Merged all four patches in Sage 3.0.alpha2
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-06 06:54:20
+archive/issue_comments_019317.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-04-06T06:54:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2813",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2813#issuecomment-19317",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

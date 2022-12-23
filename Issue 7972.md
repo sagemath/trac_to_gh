@@ -1,11 +1,21 @@
 # Issue 7972: show_identifiers is broken in the notebook; needs to not include globals
 
-Issue created by migration from https://trac.sagemath.org/ticket/7972
-
-Original creator: was
-
-Original creation time: 2010-01-18 06:13:19
-
+archive/issues_007972.json:
+```json
+{
+    "body": "Assignee: was\n\n`show_identifiers` works fine on the command line, but not in the notebook.\n\n```\nWhen I use show_identifiers() from the command line, the behaviour is\nas described.  But if I use it from a notebook, then it returns an\narray with 1746 elements, even if I call reset().  The first few\nelements are\n\n['paretovariate', 'is_MPolynomial', 'cartan_matrix',\n'is_NumberFieldElement', 'elliptic_curves', 'sleep',\n\nWould it be more sensible not to display these omnipresent\nidentifiers?  It's hard to find my own variables in the mess!\n(I'm on 10.6, core 2 duo, running 4.3, if this is a bug)\n\nCheers,\nFelix\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7972\n\n",
+    "created_at": "2010-01-18T06:13:19Z",
+    "labels": [
+        "notebook",
+        "major",
+        "bug"
+    ],
+    "title": "show_identifiers is broken in the notebook; needs to not include globals",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7972",
+    "user": "was"
+}
+```
 Assignee: was
 
 `show_identifiers` works fine on the command line, but not in the notebook.
@@ -29,10 +39,25 @@ Felix
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7972
+
+
+
+
 
 ---
 
-Comment by was created at 2010-01-18 06:13:56
+archive/issue_comments_069540.json:
+```json
+{
+    "body": "\n```\n[sage-support] How to list (and remove) loaded objects in a sage session\n\t\t\t\t\n\tInbox\t\tX\t\n\t\t\t\t\nShing Hing Man\t\nHi, In a Sage session (within notebook or command console) , how to list all ...\n\t\nJan 16 (1 day ago)\nSimon King\t\nHi Shing! AFAIK, it is the same as in Python, so, if you need references, it ...\n\t\nJan 16 (1 day ago)\nSimon King\t\nPS: >... That said: The above reference is just meant as some background info...\n\t\nJan 16 (1 day ago)\nWilliam Stein\t\n2010/1/16 Shing Hing Man <matmsh@yahoo.com>: Use show_identifiers and reset: ...\n\t\nJan 16 (1 day ago)\nShing Hing Man\t\nThanks for all the reply! show_identifiers() and reset() are what I am lookin...\n\t\n7:53 AM (14 hours ago)\n \nReply to all\n \nFelix Lawrence\n to sage-support\n\t\nshow details 9:16 PM (56 minutes ago)\n\t\nOn Jan 17, 11:35 am, William Stein <wst...@gmail.com> wrote:\n> 2010/1/16 Shing Hing Man <mat...@yahoo.com>:\n>\n> > Hi,\n> >   In a Sage session (within notebook or command console) ,  how to\n> > list all the loaded objects and how to remove them from the session ?\n>\n> Use show_identifiers and reset:\n>\n> sage: X = 10\n> sage: show_identifiers()\n> ['X', 'Out', 'variables', 'In', 'view_all']\n> sage: reset()\n> sage: show_identifiers()\n> []\n|\nWhen I use show_identifiers() from the command line, the behaviour is\nas described.  But if I use it from a notebook, then it returns an\narray with 1746 elements, even if I call reset().  The first few\nelements are\n\n['paretovariate', 'is_MPolynomial', 'cartan_matrix',\n'is_NumberFieldElement', 'elliptic_curves', 'sleep',\n\nWould it be more sensible not to display these omnipresent\nidentifiers?  It's hard to find my own variables in the mess!\n(I'm on 10.6, core 2 duo, running 4.3, if this is a bug)\n\nCheers,\nFelix\n\n--\nTo post to this group, send email to sage-support@googlegroups.com\nTo unsubscribe from this group, send email to sage-support+unsubscribe@googlegroups.com\nFor more options, visit this group at http://groups.google.com/group/sage-support\nURL: http://www.sagemath.org\n\nReply\n\t\nReply to all\n\t\nForward\n\t\t\n\t\t\nOpen message in new window\n \nSend\n \nSave Now\n \nDiscard\nTo:\t\t \nCc:\t\nBcc:\t\n \tAdd Cc | Add Bcc | Edit Subject    Attach a file    Add event invitation   Canned responses\nSubject:\t\n \t\nAttachment file \t\nAttach a file\nLoading rich text... Rich formatting \u00bb\tCheck SpellingChange language Resume Editing\n \t\n\t \n \nSend\n \nSave Now\n \nDiscard\n \nReply to all\n \nMinh Nguyen\n to sage-support\n\t\nshow details 9:27 PM (45 minutes ago)\n\t\nHi Felix,\n|\nOn Mon, Jan 18, 2010 at 4:16 PM, Felix Lawrence\n<felix@physics.usyd.edu.au> wrote:\n\n<SNIP>\n\n> Would it be more sensible not to display these omnipresent\n> identifiers?  It's hard to find my own variables in the mess!\n\nI can replicate this on Linux (the machine mod.math). With a notebook\nsession of Sage 4.3.1.rc0, issue \"show_identifiers()\". Then issue\n\"reset()\" and execute \"show_identifiers()\" again. This time, I\nreceived a NameError:\n\nTraceback (most recent call last):\n File \"<stdin>\", line 1, in <module>\n File \"_sage_input_7.py\", line 4, in <module>\n   open(\"___code___.py\",\"w\").write(_support_.preparse_worksheet_cell(base64.b64decode(\"c2hvd19pZGVudGlmaWVycygp\"),globals())+\"\\n\");\nexecfile(os.path.abspath(\"___code___.py\"))\n File \"\", line 1, in <module>\n\nNameError: name 'base64' is not defined\n\n--\nRegards\nMinh Van Nguyen\n\t\t\n```\n",
+    "created_at": "2010-01-18T06:13:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7972",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7972#issuecomment-69540",
+    "user": "was"
+}
+```
 
 
 ```
@@ -176,34 +201,91 @@ Minh Van Nguyen
 
 
 
+
 ---
+
+archive/issue_comments_069541.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-01-18T07:09:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7972",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7972#issuecomment-69541",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2010-01-18 07:09:26
+archive/issue_comments_069542.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-01-18T07:09:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7972",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7972#issuecomment-69542",
+    "user": "was"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by flawrence created at 2010-01-19 01:05:57
+archive/issue_comments_069543.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-01-19T01:05:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7972",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7972#issuecomment-69543",
+    "user": "flawrence"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by flawrence created at 2010-01-19 01:05:57
+archive/issue_comments_069544.json:
+```json
+{
+    "body": "Applying the patch to 4.3, this works.  In the notebook, running reset() then show_identifiers() returns only ['DATA', 'base64'], which are excluded from the call to reset().",
+    "created_at": "2010-01-19T01:05:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7972",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7972#issuecomment-69544",
+    "user": "flawrence"
+}
+```
 
 Applying the patch to 4.3, this works.  In the notebook, running reset() then show_identifiers() returns only ['DATA', 'base64'], which are excluded from the call to reset().
 
 
+
 ---
 
-Comment by rlm created at 2010-01-19 05:58:02
+archive/issue_comments_069545.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-19T05:58:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7972",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7972#issuecomment-69545",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed

@@ -1,47 +1,118 @@
 # Issue 9746: documentation for plotting
 
-Issue created by migration from https://trac.sagemath.org/ticket/9746
-
-Original creator: jason
-
-Original creation time: 2010-08-14 14:15:00
-
+archive/issues_009746.json:
+```json
+{
+    "body": "Assignee: jason, was\n\nCC:  kcrisman\n\nI went through the \"live\" documentation for plots and found a number of places that computations should be split into separate cells, plots weren't displayed, etc.  This patch fixes these areas.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9746\n\n",
+    "created_at": "2010-08-14T14:15:00Z",
+    "labels": [
+        "graphics",
+        "major",
+        "bug"
+    ],
+    "title": "documentation for plotting",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9746",
+    "user": "jason"
+}
+```
 Assignee: jason, was
 
 CC:  kcrisman
 
 I went through the "live" documentation for plots and found a number of places that computations should be split into separate cells, plots weren't displayed, etc.  This patch fixes these areas.
 
+Issue created by migration from https://trac.sagemath.org/ticket/9746
+
+
+
+
 
 ---
 
-Comment by jason created at 2010-08-14 16:06:11
+archive/issue_comments_095440.json:
+```json
+{
+    "body": "Depends on #9740, and possibly on #9221",
+    "created_at": "2010-08-14T16:06:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9746",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9746#issuecomment-95440",
+    "user": "jason"
+}
+```
 
 Depends on #9740, and possibly on #9221
 
 
+
 ---
 
-Comment by jason created at 2010-08-14 16:06:17
+archive/issue_comments_095441.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-08-14T16:06:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9746",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9746#issuecomment-95441",
+    "user": "jason"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jason created at 2010-08-14 16:43:39
+archive/issue_comments_095442.json:
+```json
+{
+    "body": "Changing type from defect to enhancement.",
+    "created_at": "2010-08-14T16:43:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9746",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9746#issuecomment-95442",
+    "user": "jason"
+}
+```
 
 Changing type from defect to enhancement.
 
 
+
 ---
 
-Comment by kcrisman created at 2010-09-21 20:03:47
+archive/issue_comments_095443.json:
+```json
+{
+    "body": "There is a typo of 'primitve' in `plot/plot.py`.  Does this still apply to 4.6.alpha1?",
+    "created_at": "2010-09-21T20:03:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9746",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9746#issuecomment-95443",
+    "user": "kcrisman"
+}
+```
 
 There is a typo of 'primitve' in `plot/plot.py`.  Does this still apply to 4.6.alpha1?
 
 
+
 ---
+
+archive/issue_comments_095444.json:
+```json
+{
+    "body": "Attachment\n\nReplying to [comment:4 kcrisman]:\n> There is a typo of 'primitve' in `plot/plot.py`.  Does this still apply to 4.6.alpha1?  \n\nYes.  I also refreshed the patch to correct the typo.  This depends on #9740.  Do you have time to review that and this patch?",
+    "created_at": "2010-09-28T16:01:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9746",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9746#issuecomment-95444",
+    "user": "jason"
+}
+```
 
 Attachment
 
@@ -51,16 +122,38 @@ Replying to [comment:4 kcrisman]:
 Yes.  I also refreshed the patch to correct the typo.  This depends on #9740.  Do you have time to review that and this patch?
 
 
+
 ---
 
-Comment by kcrisman created at 2010-09-28 16:16:24
+archive/issue_comments_095445.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-09-28T16:16:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9746",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9746#issuecomment-95445",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by kcrisman created at 2010-09-28 16:16:24
+archive/issue_comments_095446.json:
+```json
+{
+    "body": "Replying to [comment:5 jason]:\n> Replying to [comment:4 kcrisman]:\n> > There is a typo of 'primitve' in `plot/plot.py`.  Does this still apply to 4.6.alpha1?  \n> \n> Yes.  I also refreshed the patch to correct the typo.  This depends on #9740.  Do you have time to review that and this patch?\nNot totally at this time, though I see some of the things it is trying to fix.  I did take a look at some things while checking out the new matplotlib, and noticed that the example with `plot(1.5/(1+e^(-x))` is not correctly formatted in the documentation, and doesn't become a live cell.  I'm sorry to make this a long process.",
+    "created_at": "2010-09-28T16:16:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9746",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9746#issuecomment-95446",
+    "user": "kcrisman"
+}
+```
 
 Replying to [comment:5 jason]:
 > Replying to [comment:4 kcrisman]:
@@ -70,9 +163,20 @@ Replying to [comment:5 jason]:
 Not totally at this time, though I see some of the things it is trying to fix.  I did take a look at some things while checking out the new matplotlib, and noticed that the example with `plot(1.5/(1+e^(-x))` is not correctly formatted in the documentation, and doesn't become a live cell.  I'm sorry to make this a long process.
 
 
+
 ---
 
-Comment by kcrisman created at 2010-09-28 16:19:26
+archive/issue_comments_095447.json:
+```json
+{
+    "body": "(Also, there are lots of places where there are many specific examples all together, such as in `point?`\n\n```\npoint((1,2))\npoint((1,2,3))\npoint([(0,0), (1,1)])\npoint([(0,0,1), (1,1,1)]\n```\n\nbut that should be a separate ticket.  I may be responsible for some of those, not realizing the live documentation needed these separate - or does it?)",
+    "created_at": "2010-09-28T16:19:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9746",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9746#issuecomment-95447",
+    "user": "kcrisman"
+}
+```
 
 (Also, there are lots of places where there are many specific examples all together, such as in `point?`
 
@@ -86,9 +190,20 @@ point([(0,0,1), (1,1,1)]
 but that should be a separate ticket.  I may be responsible for some of those, not realizing the live documentation needed these separate - or does it?)
 
 
+
 ---
 
-Comment by jason created at 2010-09-28 16:34:59
+archive/issue_comments_095448.json:
+```json
+{
+    "body": "Replying to [comment:7 kcrisman]:\n> (Also, there are lots of places where there are many specific examples all together, such as in `point?`\n> {{{\n> point((1,2))\n> point((1,2,3))\n> point([(0,0), (1,1)])\n> point([(0,0,1), (1,1,1)]\n> }}}\n> but that should be a separate ticket.  I may be responsible for some of those, not realizing the live documentation needed these separate - or does it?)\n\nThose are fixed in my version (after #9740, #9746, and #4342).",
+    "created_at": "2010-09-28T16:34:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9746",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9746#issuecomment-95448",
+    "user": "jason"
+}
+```
 
 Replying to [comment:7 kcrisman]:
 > (Also, there are lots of places where there are many specific examples all together, such as in `point?`
@@ -103,51 +218,130 @@ Replying to [comment:7 kcrisman]:
 Those are fixed in my version (after #9740, #9746, and #4342).
 
 
+
 ---
 
-Comment by kcrisman created at 2010-09-28 16:40:27
+archive/issue_comments_095449.json:
+```json
+{
+    "body": "Hilarious - I didn't make it far enough down to see that this exact one is on this ticket!  Well, like I said, I don't have time to check it all the way... I feel like there were other similar places, though.",
+    "created_at": "2010-09-28T16:40:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9746",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9746#issuecomment-95449",
+    "user": "kcrisman"
+}
+```
 
 Hilarious - I didn't make it far enough down to see that this exact one is on this ticket!  Well, like I said, I don't have time to check it all the way... I feel like there were other similar places, though.
 
 
+
 ---
 
-Comment by jason created at 2010-09-28 16:45:03
+archive/issue_comments_095450.json:
+```json
+{
+    "body": "I've attached a patch which takes care of the error pointed out above, and corrects two or three more things in the docs.",
+    "created_at": "2010-09-28T16:45:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9746",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9746#issuecomment-95450",
+    "user": "jason"
+}
+```
 
 I've attached a patch which takes care of the error pointed out above, and corrects two or three more things in the docs.
 
 
+
 ---
 
-Comment by jason created at 2010-09-28 16:45:03
+archive/issue_comments_095451.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-09-28T16:45:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9746",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9746#issuecomment-95451",
+    "user": "jason"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by jason created at 2010-09-28 16:58:22
+archive/issue_comments_095452.json:
+```json
+{
+    "body": "apply on top of previous patches",
+    "created_at": "2010-09-28T16:58:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9746",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9746#issuecomment-95452",
+    "user": "jason"
+}
+```
 
 apply on top of previous patches
 
 
+
 ---
+
+archive/issue_comments_095453.json:
+```json
+{
+    "body": "Attachment\n\nptestlong in 4.6.alpha1 (Ubuntu 10.04 64-bit) passes with the following tickets applied in order: #9221 (and new spkg), #9740, #9746, #4342.",
+    "created_at": "2010-09-28T19:08:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9746",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9746#issuecomment-95453",
+    "user": "jason"
+}
+```
 
 Attachment
 
 ptestlong in 4.6.alpha1 (Ubuntu 10.04 64-bit) passes with the following tickets applied in order: #9221 (and new spkg), #9740, #9746, #4342.
 
 
+
 ---
 
-Comment by kcrisman created at 2010-09-29 03:31:06
+archive/issue_comments_095454.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-09-29T03:31:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9746",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9746#issuecomment-95454",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by kcrisman created at 2010-09-29 03:31:06
+archive/issue_comments_095455.json:
+```json
+{
+    "body": "Okay, here are comments.  A lot of them are very similar in style, but I tried to be exhaustive within the files you modified.  I am too tired to look for problems in the other files, though they are likely there and I likely introduced them :)  But overall this is good, I just found more of the same for most (a few other errors, though).  Here we go! \n\nIn scatterplot, there is another one of those 'these are equivalent' things, but they're not separated out.  Also, I get code{scatter_plot.options} instead of the actual code.  Should it be show() or `show()`?\n\nIn sage.plot.polygon.polygon we have something similar in the examples - somehow you only got some of them.  Again with the extra options guy, too.\n\nSame with the equivalent in point.py, in both `point` and `points`.\n\nIn the `plot_field.py` file, why did you once add the x,y variable declaration and once not?  It doesn't really matter to me, but I wonder if there is something I'm missing.  Again with the `show()` or show(), and the equivalent.  It's not so important to me with the equivalent showing two things, but I feel like maybe you changed that one place - or maybe not.\n\nIn plot.py, ironically, just above the place where you fixed the `1.5/(1+e^(-x))` thing, there are a bunch of plots I didn't separate in my custom ticks patch.  My apologies - but there they are!  I also still get an error 'ellipsis object not callable' or something in 'add grid lines at specific positions (using lists/tuples)'.  There's an ellipsis that got stuck in there still somehow - I think you got a different one of these.\n\nIn line.py, after the cool cat there are a couple things as in the previous files - one nonseparated, one equivalent issue/show() issue.\n\nIn disk.py, maybe the disk that is parallel to the `xy`-plane should be plotted, not just its type?  Same equiv/show question.\n\nI don't know what happened in density plot, but I think a tick is missing in the `DensityPlot` documentation - likely my fault?  This is in 'Examples'.\n\nIn contour plot, the very last example under `region_plot` should have two plots, but has one.  But they are different.\n\nThe circles also has the parallel to the `xy`-plane issue when it comes to giving the type, but not the plot.",
+    "created_at": "2010-09-29T03:31:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9746",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9746#issuecomment-95455",
+    "user": "kcrisman"
+}
+```
 
 Okay, here are comments.  A lot of them are very similar in style, but I tried to be exhaustive within the files you modified.  I am too tired to look for problems in the other files, though they are likely there and I likely introduced them :)  But overall this is good, I just found more of the same for most (a few other errors, though).  Here we go! 
 
@@ -172,39 +366,94 @@ In contour plot, the very last example under `region_plot` should have two plots
 The circles also has the parallel to the `xy`-plane issue when it comes to giving the type, but not the plot.
 
 
+
 ---
 
-Comment by jason created at 2010-09-29 04:08:29
+archive/issue_comments_095456.json:
+```json
+{
+    "body": "So, since a lot of tickets depend on this one, why don't we make all of these a separate ticket?  That's a great list for improving docs!",
+    "created_at": "2010-09-29T04:08:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9746",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9746#issuecomment-95456",
+    "user": "jason"
+}
+```
 
 So, since a lot of tickets depend on this one, why don't we make all of these a separate ticket?  That's a great list for improving docs!
 
 
+
 ---
 
-Comment by jason created at 2010-09-29 04:08:29
+archive/issue_comments_095457.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-09-29T04:08:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9746",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9746#issuecomment-95457",
+    "user": "jason"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by kcrisman created at 2010-09-29 18:00:11
+archive/issue_comments_095458.json:
+```json
+{
+    "body": "Okay, I'll cave in.  I don't know that 'a lot' of tickets depend on this (if #4342 counts as 'a lot') but a ticket with 'even more plot documentation improvements' sounds okay.  This is now #10032.\n\nPositive review to this patch, but noting that #10032 addresses more issues of a similar nature.",
+    "created_at": "2010-09-29T18:00:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9746",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9746#issuecomment-95458",
+    "user": "kcrisman"
+}
+```
 
 Okay, I'll cave in.  I don't know that 'a lot' of tickets depend on this (if #4342 counts as 'a lot') but a ticket with 'even more plot documentation improvements' sounds okay.  This is now #10032.
 
 Positive review to this patch, but noting that #10032 addresses more issues of a similar nature.
 
 
+
 ---
 
-Comment by kcrisman created at 2010-09-29 18:00:11
+archive/issue_comments_095459.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-09-29T18:00:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9746",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9746#issuecomment-95459",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jason created at 2010-09-29 18:12:11
+archive/issue_comments_095460.json:
+```json
+{
+    "body": "Replying to [comment:15 kcrisman]:\n> Okay, I'll cave in.  I don't know that 'a lot' of tickets depend on this (if #4342 counts as 'a lot') but a ticket with 'even more plot documentation improvements' sounds okay.  This is now #10032.\n\n\nI knew it was in the stack of patches I had applied, and other patches depended on it.  How about \"an important patch that has been waiting a very long time depends on this\"? :)\n\nMy purpose is to just narrow the scope of this ticket to exactly the improvements actually done in the patch.  Thanks for agreeing and opening up another ticket for more improvements.",
+    "created_at": "2010-09-29T18:12:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9746",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9746#issuecomment-95460",
+    "user": "jason"
+}
+```
 
 Replying to [comment:15 kcrisman]:
 > Okay, I'll cave in.  I don't know that 'a lot' of tickets depend on this (if #4342 counts as 'a lot') but a ticket with 'even more plot documentation improvements' sounds okay.  This is now #10032.
@@ -215,9 +464,20 @@ I knew it was in the stack of patches I had applied, and other patches depended 
 My purpose is to just narrow the scope of this ticket to exactly the improvements actually done in the patch.  Thanks for agreeing and opening up another ticket for more improvements.
 
 
+
 ---
 
-Comment by kcrisman created at 2010-09-29 18:26:32
+archive/issue_comments_095461.json:
+```json
+{
+    "body": "Replying to [comment:16 jason]:\n> Replying to [comment:15 kcrisman]:\n> > Okay, I'll cave in.  I don't know that 'a lot' of tickets depend on this (if #4342 counts as 'a lot') but a ticket with 'even more plot documentation improvements' sounds okay.  This is now #10032.\n> \n> \n> I knew it was in the stack of patches I had applied, and other patches depended on it.  How about \"an important patch that has been waiting a very long time depends on this\"? :)\nI agree with that!\n> My purpose is to just narrow the scope of this ticket to exactly the improvements actually done in the patch.  Thanks for agreeing and opening up another ticket for more improvements.\nNo problem - although not using queues made this a little harder for me to test.",
+    "created_at": "2010-09-29T18:26:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9746",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9746#issuecomment-95461",
+    "user": "kcrisman"
+}
+```
 
 Replying to [comment:16 jason]:
 > Replying to [comment:15 kcrisman]:
@@ -230,9 +490,20 @@ I agree with that!
 No problem - although not using queues made this a little harder for me to test.
 
 
+
 ---
 
-Comment by kcrisman created at 2010-09-29 18:40:34
+archive/issue_comments_095462.json:
+```json
+{
+    "body": "This one\n\n```\n I also still get an error 'ellipsis object not callable' or something in 'add grid lines at specific positions (using lists/tuples)'. There's an ellipsis that got stuck in there still somehow - I think you got a different one of these.\n```\n\nin particular is aggravating, and should be fixed quickly, if possible.",
+    "created_at": "2010-09-29T18:40:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9746",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9746#issuecomment-95462",
+    "user": "kcrisman"
+}
+```
 
 This one
 
@@ -243,8 +514,19 @@ This one
 in particular is aggravating, and should be fixed quickly, if possible.
 
 
+
 ---
 
-Comment by mpatel created at 2010-10-03 06:35:58
+archive/issue_comments_095463.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-10-03T06:35:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9746",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9746#issuecomment-95463",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 8594: allow printing of floating point numbers with locale-dependent decimal separators
 
-Issue created by migration from https://trac.sagemath.org/ticket/8594
-
-Original creator: ddrake
-
-Original creation time: 2010-03-24 02:06:27
-
+archive/issues_008594.json:
+```json
+{
+    "body": "Assignee: was\n\nKeywords: i18n\n\nSome people would like floats to print with a comma for the decimal separator: 3,14159 for pi and so on. We should make this possible. Ideally Sage would check the user's locale or have a command to set the default printing style. Python seems to have a bit of support for this, maybe: http://docs.python.org/library/string.html#format-specification-mini-language\n\nThis ticket is prompted by http://groups.google.com/group/sage-support/browse_thread/thread/f2f2277a407b7d21 \n\nMore info: http://en.wikipedia.org/wiki/Decimal_separator\n\nSince commas and dots are a very important part of Python syntax, I'm not sure we should try to change *input* of floating point numbers, but I think it's reasonable to have this support for output.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8594\n\n",
+    "created_at": "2010-03-24T02:06:27Z",
+    "labels": [
+        "user interface",
+        "major",
+        "enhancement"
+    ],
+    "title": "allow printing of floating point numbers with locale-dependent decimal separators",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8594",
+    "user": "ddrake"
+}
+```
 Assignee: was
 
 Keywords: i18n
@@ -18,9 +28,24 @@ More info: http://en.wikipedia.org/wiki/Decimal_separator
 
 Since commas and dots are a very important part of Python syntax, I'm not sure we should try to change *input* of floating point numbers, but I think it's reasonable to have this support for output.
 
+Issue created by migration from https://trac.sagemath.org/ticket/8594
+
+
+
+
 
 ---
 
-Comment by @Kreijstal created at 2021-06-21 19:30:36
+archive/issue_comments_077825.json:
+```json
+{
+    "body": "Has this been solved? I have this issue too.",
+    "created_at": "2021-06-21T19:30:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8594",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8594#issuecomment-77825",
+    "user": "@Kreijstal"
+}
+```
 
 Has this been solved? I have this issue too.

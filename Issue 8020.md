@@ -1,11 +1,21 @@
 # Issue 8020: python-2.6.4.p4 spkg *totally breaks* itanium support
 
-Issue created by migration from https://trac.sagemath.org/ticket/8020
-
-Original creator: was
-
-Original creation time: 2010-01-21 02:18:07
-
+archive/issues_008020.json:
+```json
+{
+    "body": "Assignee: tbd\n\n\n```\ngcc version 4.4.2 (GCC)\n****************************************************\nUpdating readline.c for Linux/Itanium\ncp: cannot create regular file `Modules/readline.c': No such file or directory\nError copying patched readline.c\n\nreal    0m0.029s\nuser    0m0.009s\nsys     0m0.011s\nsage: An error occurred while installing python-2.6.4.p4\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /home/wstein/screen/cleo/sage-4.3.1/install.log.  Describe your c\n```\n\n\nI missed this doing the release, because our Itaniums weren't accessible.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8020\n\n",
+    "created_at": "2010-01-21T02:18:07Z",
+    "labels": [
+        "packages: standard",
+        "blocker",
+        "bug"
+    ],
+    "title": "python-2.6.4.p4 spkg *totally breaks* itanium support",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8020",
+    "user": "was"
+}
+```
 Assignee: tbd
 
 
@@ -28,10 +38,25 @@ of /home/wstein/screen/cleo/sage-4.3.1/install.log.  Describe your c
 
 I missed this doing the release, because our Itaniums weren't accessible.
 
+Issue created by migration from https://trac.sagemath.org/ticket/8020
+
+
+
+
 
 ---
 
-Comment by was created at 2010-01-21 02:25:37
+archive/issue_comments_070079.json:
+```json
+{
+    "body": "This appears to be trivial to fix.  In spkg-install change:\n\n```\n# The following patch for fixing broken readline behavior on Itanium\n# Linux definitely does *not* work on anything else.\nif [ \"`uname -m`\" = \"ia64\" -a \"`uname`\" = \"Linux\" ]; then\n    echo \"Updating readline.c for Linux/Itanium\"\n    cp patches/readline.c-Itanium-fix Modules/readline.c\n```\n   \n\nto\n\n\n```\n# The following patch for fixing broken readline behavior on Itanium\n# Linux definitely does *not* work on anything else.\nif [ \"`uname -m`\" = \"ia64\" -a \"`uname`\" = \"Linux\" ]; then\n    echo \"Updating readline.c for Linux/Itanium\"\n    cp patches/readline.c-Itanium-fix src/Modules/readline.c\n```\n",
+    "created_at": "2010-01-21T02:25:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8020",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8020#issuecomment-70079",
+    "user": "was"
+}
+```
 
 This appears to be trivial to fix.  In spkg-install change:
 
@@ -41,59 +66,128 @@ This appears to be trivial to fix.  In spkg-install change:
 if [ "`uname -m`" = "ia64" -a "`uname`" = "Linux" ]; then
     echo "Updating readline.c for Linux/Itanium"
     cp patches/readline.c-Itanium-fix Modules/readline.c
-}}}   
+```
+   
 
 to
 
-{{{
+
+```
 # The following patch for fixing broken readline behavior on Itanium
 # Linux definitely does *not* work on anything else.
 if [ "`uname -m`" = "ia64" -a "`uname`" = "Linux" ]; then
     echo "Updating readline.c for Linux/Itanium"
     cp patches/readline.c-Itanium-fix src/Modules/readline.c
-}}}
+```
+
+
 
 
 ---
 
-Comment by was created at 2010-01-21 02:31:02
+archive/issue_comments_070080.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-01-21T02:31:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8020",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8020#issuecomment-70080",
+    "user": "was"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by was created at 2010-01-21 02:31:02
+archive/issue_comments_070081.json:
+```json
+{
+    "body": "Here's the new spkg:\n\n   http://sage.math.washington.edu/home/wstein/patches/python-2.6.4.p5.spkg",
+    "created_at": "2010-01-21T02:31:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8020",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8020#issuecomment-70081",
+    "user": "was"
+}
+```
 
 Here's the new spkg:
 
    http://sage.math.washington.edu/home/wstein/patches/python-2.6.4.p5.spkg
 
 
+
 ---
 
-Comment by craigcitro created at 2010-01-21 03:46:58
+archive/issue_comments_070082.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-01-21T03:46:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8020",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8020#issuecomment-70082",
+    "user": "craigcitro"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by craigcitro created at 2010-01-21 03:46:58
+archive/issue_comments_070083.json:
+```json
+{
+    "body": "Oops ... yep, that was totally a typo on my part while moving things around in the file. Sorry about that ... fix is obviously the right one.",
+    "created_at": "2010-01-21T03:46:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8020",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8020#issuecomment-70083",
+    "user": "craigcitro"
+}
+```
 
 Oops ... yep, that was totally a typo on my part while moving things around in the file. Sorry about that ... fix is obviously the right one.
 
 
+
 ---
 
-Comment by mvngu created at 2010-01-24 22:29:02
+archive/issue_comments_070084.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-24T22:29:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8020",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8020#issuecomment-70084",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mvngu created at 2010-01-24 22:29:02
+archive/issue_comments_070085.json:
+```json
+{
+    "body": "William's commit message references ticket #8080, which at present doesn't exist. I've changed the ticket number in his commit message to #8020. For reference, my change (to William's commit message) can be found at\n\nhttp://sage.math.washington.edu/home/mvngu/spkg/standard/python/python-2.6.4.p5.spkg\n\nMerged [python-2.6.4.p5.spkg](http://sage.math.washington.edu/home/mvngu/spkg/standard/python/python-2.6.4.p5.spkg) in the standard spkg repository.",
+    "created_at": "2010-01-24T22:29:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8020",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8020#issuecomment-70085",
+    "user": "mvngu"
+}
+```
 
 William's commit message references ticket #8080, which at present doesn't exist. I've changed the ticket number in his commit message to #8020. For reference, my change (to William's commit message) can be found at
 

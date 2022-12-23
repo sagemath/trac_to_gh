@@ -1,11 +1,21 @@
 # Issue 8914: categories/sets_cat.py in an_element docstring
 
-Issue created by migration from https://trac.sagemath.org/ticket/8914
-
-Original creator: wjlaffin
-
-Original creation time: 2010-05-07 16:02:47
-
+archive/issues_008914.json:
+```json
+{
+    "body": "Assignee: wjlaffin\n\nself appears by latex instead of code. \n\nAs cached method blocks ?? from working, o\n\n\n```\na = Sets.ParentMethods.an_element\na?\n```\n\n\nA patch is coming.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8914\n\n",
+    "created_at": "2010-05-07T16:02:47Z",
+    "labels": [
+        "documentation",
+        "trivial",
+        "bug"
+    ],
+    "title": "categories/sets_cat.py in an_element docstring",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8914",
+    "user": "wjlaffin"
+}
+```
 Assignee: wjlaffin
 
 self appears by latex instead of code. 
@@ -21,35 +31,96 @@ a?
 
 A patch is coming.
 
+Issue created by migration from https://trac.sagemath.org/ticket/8914
+
+
+
+
 
 ---
 
-Comment by wjlaffin created at 2010-05-07 16:25:17
+archive/issue_comments_082111.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-05-07T16:25:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8914",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8914#issuecomment-82111",
+    "user": "wjlaffin"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_082112.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-05-07T16:25:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8914",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8914#issuecomment-82112",
+    "user": "wjlaffin"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mvngu created at 2010-05-08 23:56:17
+archive/issue_comments_082113.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-05-08T23:56:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8914",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8914#issuecomment-82113",
+    "user": "mvngu"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mvngu created at 2010-05-08 23:56:17
+archive/issue_comments_082114.json:
+```json
+{
+    "body": "Looks good to me.",
+    "created_at": "2010-05-08T23:56:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8914",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8914#issuecomment-82114",
+    "user": "mvngu"
+}
+```
 
 Looks good to me.
 
 
+
 ---
 
-Comment by mvngu created at 2010-05-09 04:17:14
+archive/issue_comments_082115.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-05-09T04:17:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8914",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8914#issuecomment-82115",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

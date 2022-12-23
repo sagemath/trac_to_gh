@@ -1,11 +1,21 @@
 # Issue 4042: libm4ri-20080901 fails to build on Itanium Linux
 
-Issue created by migration from https://trac.sagemath.org/ticket/4042
-
-Original creator: mabshoff
-
-Original creation time: 2008-09-02 21:00:38
-
+archive/issues_004042.json:
+```json
+{
+    "body": "Assignee: malb\n\nOne example session:\n\n```\nchecking for a sed that does not truncate output... /usr/bin/sed\nchecking the number of available CPUs... 4 \nchecking the number of available CPUs... 4 \nchecking for x86 cpuid 0x0 output... unknown\nchecking for the processor vendor... Unknown\n./configure: line 21425: test: !=: unary operator expected\nchecking for x86 cpuid 0x80000006 output... unknown\n./configure: line 21618: 16#unknown: value too great for base (error token is \"16#unknown\")\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4042\n\n",
+    "created_at": "2008-09-02T21:00:38Z",
+    "labels": [
+        "build",
+        "blocker",
+        "bug"
+    ],
+    "title": "libm4ri-20080901 fails to build on Itanium Linux",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4042",
+    "user": "mabshoff"
+}
+```
 Assignee: malb
 
 One example session:
@@ -26,12 +36,27 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/4042
+
+
+
+
 
 ---
 
-Comment by malb created at 2008-09-03 13:59:41
+archive/issue_comments_029152.json:
+```json
+{
+    "body": "It does seem to build on **cleo**:\n\n```\n[malb@cleo sage-3.1.2.alpha4]$ cat /proc/cpuinfo\nprocessor  : 0\nvendor     : GenuineIntel\narch       : IA-64\nfamily     : Itanium 2\nmodel      : 0\nrevision   : 7\narchrev    : 0\nfeatures   : branchlong, 16-byte atomic ops\ncpu number : 0\ncpu regs   : 4\ncpu MHz    : 1594.000718\nitc MHz    : 399.177970\nBogoMIPS   : 3186.68\nsiblings   : 2\nphysical id: 0\ncore id    : 0\nthread id  : 0\n```\n\n\n\n```\nchecking mm_malloc.h usability... no\nchecking mm_malloc.h presence... no\nchecking for mm_malloc.h... no\nchecking for a sed that does not truncate output... /bin/sed\nchecking the number of available CPUs... 4\nchecking the number of available CPUs... 4\nchecking for x86 cpuid 0x0 output... unknown\nchecking for the processor vendor... Unknown\nchecking the L1 cache size... 16384 Bytes\nchecking the L2 cache size... 1048576 Bytes\nchecking whether make sets $(MAKE)... (cached) yes\n```\n",
+    "created_at": "2008-09-03T13:59:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4042",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4042#issuecomment-29152",
+    "user": "malb"
+}
+```
 
-It does seem to build on *cleo*:
+It does seem to build on **cleo**:
 
 ```
 [malb@cleo sage-3.1.2.alpha4]$ cat /proc/cpuinfo
@@ -72,9 +97,20 @@ checking whether make sets $(MAKE)... (cached) yes
 
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-03 15:03:31
+archive/issue_comments_029153.json:
+```json
+{
+    "body": "Hmm, might this be a /bin/sh vs. /bin/bash issue?\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-03T15:03:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4042",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4042#issuecomment-29153",
+    "user": "mabshoff"
+}
+```
 
 Hmm, might this be a /bin/sh vs. /bin/bash issue?
 
@@ -83,9 +119,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by malb created at 2008-09-03 18:48:12
+archive/issue_comments_029154.json:
+```json
+{
+    "body": "http://sage.math.washington.edu/home/malb/spkgs/libm4ri-20080903.spkg\n\n\n```\n[19:41] <malb> mabshoff I bow down to you insisting on porting, the Itanium did reveal real bugs\n[19:41] <malb> All tests passed.\n[19:41] <mabshoff> :)[19:42] <malb> okay all tests pass on cleo\n[19:42] <malb> and it compiles on iras\n[19:43] <malb> sage.math:/home/malb/spkgs/libm4ri-20080903.spkg\n[19:43] <mabshoff> Nice. Is that the spkg at http://trac.sagemath.org/sage_trac/ticket/4042\n```\n",
+    "created_at": "2008-09-03T18:48:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4042",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4042#issuecomment-29154",
+    "user": "malb"
+}
+```
 
 http://sage.math.washington.edu/home/malb/spkgs/libm4ri-20080903.spkg
 
@@ -101,9 +148,20 @@ http://sage.math.washington.edu/home/malb/spkgs/libm4ri-20080903.spkg
 
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-03 23:45:37
+archive/issue_comments_029155.json:
+```json
+{
+    "body": "Positive review. It builds fine on OSX, Linux x86-64, Itanium and Solaris x86 and fixes the problem. Nice work malb :)\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-03T23:45:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4042",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4042#issuecomment-29155",
+    "user": "mabshoff"
+}
+```
 
 Positive review. It builds fine on OSX, Linux x86-64, Itanium and Solaris x86 and fixes the problem. Nice work malb :)
 
@@ -112,15 +170,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-03 23:45:52
+archive/issue_comments_029156.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-09-03T23:45:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4042",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4042#issuecomment-29156",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-03 23:45:52
+archive/issue_comments_029157.json:
+```json
+{
+    "body": "Merged in Sage 3.1.2.rc0",
+    "created_at": "2008-09-03T23:45:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4042",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4042#issuecomment-29157",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.1.2.rc0

@@ -1,41 +1,77 @@
 # Issue 9440: document more environment variables
 
-Issue created by migration from https://trac.sagemath.org/ticket/9440
-
-Original creator: jhpalmieri
-
-Original creation time: 2010-07-06 18:10:50
-
+archive/issues_009440.json:
+```json
+{
+    "body": "Assignee: mvngu\n\nCC:  leif\n\nIn ticket #8263, we missed these:\n\n- SAGE_DOC_JSMATH - should force docs to be built using jsMath\n\n- SAGE_DOCBUILD_OPTS - passed as an argument to `sage --docbuild` in the main Sage makefile.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9440\n\n",
+    "created_at": "2010-07-06T18:10:50Z",
+    "labels": [
+        "documentation",
+        "minor",
+        "enhancement"
+    ],
+    "title": "document more environment variables",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9440",
+    "user": "jhpalmieri"
+}
+```
 Assignee: mvngu
 
 CC:  leif
 
 In ticket #8263, we missed these:
 
- - SAGE_DOC_JSMATH - should force docs to be built using jsMath
+- SAGE_DOC_JSMATH - should force docs to be built using jsMath
 
- - SAGE_DOCBUILD_OPTS - passed as an argument to `sage --docbuild` in the main Sage makefile.
+- SAGE_DOCBUILD_OPTS - passed as an argument to `sage --docbuild` in the main Sage makefile.
+
+
+Issue created by migration from https://trac.sagemath.org/ticket/9440
+
+
 
 
 
 ---
 
-Comment by leif created at 2010-07-06 18:14:36
+archive/issue_comments_090448.json:
+```json
+{
+    "body": "I'm quite sure there are more missing... ;-)",
+    "created_at": "2010-07-06T18:14:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9440",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9440#issuecomment-90448",
+    "user": "leif"
+}
+```
 
 I'm quite sure there are more missing... ;-)
 
 
+
 ---
 
-Comment by leif created at 2010-08-20 13:56:24
+archive/issue_comments_090449.json:
+```json
+{
+    "body": "TODO:\n* Add `PARI_EXTRA_OPTS`, which is passed to PARI's `Configure` when building Sage / installing the PARI spkg.\n* Add `CPPFLAGS`, `LDFLAGS`, `CXXFLAG64`?, `LDFLAG64`? `LD`?\n* Document that (e.g.) `export CFLAGS=\"\"` has not the same effect as `unset CFLAGS`.\n* Add note on not putting a space between `-j` and `NUM` in the description of `MAKE`, because doing so has a \"completely\" different meaning...\n* Add warning to (setting) `SAGE_CHECK`, since this currently breaks most builds. This will (or should) be fixed in future releases though; there's afaik a ticket adding more options to the value of this variable...\n* Add a note on / reference to `sage-env`.\n\nAlso, the description of some variables is incomplete, not current (in its use in all spkgs, e.g. `SAGE_DEBUG`), misleading, or even wrong (`SAGE_TIMEOUT*`).\n\nI think the various variations of `SAGE_T[E]MP[[_]DIR]` are missing. (I wonder where e.g. `TMP` and `TMPDIR` are / may be used instead, or as a fall-back / default.)\n\n`SHELL` might be relevant, too.\n\nThe `*ITER*` variables for (parallel) doctesting are missing.\n\nI'm currently not sure if we have a similar section in the *Developer's Guide*, but some variables like `SAGE_ROOT` and `SAGE_LOCAL` should be documented (there?), too.\n\nI'm still pretty sure even more variables are missing... ;-)",
+    "created_at": "2010-08-20T13:56:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9440",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9440#issuecomment-90449",
+    "user": "leif"
+}
+```
 
 TODO:
- * Add `PARI_EXTRA_OPTS`, which is passed to PARI's `Configure` when building Sage / installing the PARI spkg.
- * Add `CPPFLAGS`, `LDFLAGS`, `CXXFLAG64`?, `LDFLAG64`? `LD`?
- * Document that (e.g.) `export CFLAGS=""` has not the same effect as `unset CFLAGS`.
- * Add note on not putting a space between `-j` and `NUM` in the description of `MAKE`, because doing so has a "completely" different meaning...
- * Add warning to (setting) `SAGE_CHECK`, since this currently breaks most builds. This will (or should) be fixed in future releases though; there's afaik a ticket adding more options to the value of this variable...
- * Add a note on / reference to `sage-env`.
+* Add `PARI_EXTRA_OPTS`, which is passed to PARI's `Configure` when building Sage / installing the PARI spkg.
+* Add `CPPFLAGS`, `LDFLAGS`, `CXXFLAG64`?, `LDFLAG64`? `LD`?
+* Document that (e.g.) `export CFLAGS=""` has not the same effect as `unset CFLAGS`.
+* Add note on not putting a space between `-j` and `NUM` in the description of `MAKE`, because doing so has a "completely" different meaning...
+* Add warning to (setting) `SAGE_CHECK`, since this currently breaks most builds. This will (or should) be fixed in future releases though; there's afaik a ticket adding more options to the value of this variable...
+* Add a note on / reference to `sage-env`.
 
 Also, the description of some variables is incomplete, not current (in its use in all spkgs, e.g. `SAGE_DEBUG`), misleading, or even wrong (`SAGE_TIMEOUT*`).
 
@@ -45,14 +81,25 @@ I think the various variations of `SAGE_T[E]MP[[_]DIR]` are missing. (I wonder w
 
 The `*ITER*` variables for (parallel) doctesting are missing.
 
-I'm currently not sure if we have a similar section in the _Developer's Guide_, but some variables like `SAGE_ROOT` and `SAGE_LOCAL` should be documented (there?), too.
+I'm currently not sure if we have a similar section in the *Developer's Guide*, but some variables like `SAGE_ROOT` and `SAGE_LOCAL` should be documented (there?), too.
 
 I'm still pretty sure even more variables are missing... ;-)
 
 
+
 ---
 
-Comment by kcrisman created at 2014-11-20 16:01:00
+archive/issue_comments_090450.json:
+```json
+{
+    "body": "> SAGE_DOC_JSMATH\n`SAGE_DOC_MATHJAX` is now in good shape.\n>  * SAGE_DOCBUILD_OPTS\nif it still exists\n>  * Add `PARI_EXTRA_OPTS`, which is passed to PARI's `Configure` when building Sage / installing the PARI spkg.\n>  * Add `CPPFLAGS`, `LDFLAGS`, `CXXFLAG64`?, `LDFLAG64`? `LD`?\n>  * Document that (e.g.) `export CFLAGS=\"\"` has not the same effect as `unset CFLAGS`.\n>  * Add note on not putting a space between `-j` and `NUM` in the description of `MAKE`, because doing so has a \"completely\" different meaning...\n>  * Add warning to (setting) `SAGE_CHECK`, since this currently breaks most builds. This will (or should) be fixed in future releases though; there's afaik a ticket adding more options to the value of this variable...\nThis is basically fine now\n>  * Add a note on / reference to `sage-env`.\n> Also, the description of some variables is incomplete, not current (in its use in all spkgs, e.g. `SAGE_DEBUG`), misleading, or even wrong (`SAGE_TIMEOUT*`).\n> I think the various variations of `SAGE_T[E]MP[[_]DIR]` are missing. (I wonder where e.g. `TMP` and `TMPDIR` are / may be used instead, or as a fall-back / default.)\n> `SHELL` might be relevant, too.\n> The `*ITER*` variables for (parallel) doctesting are missing.\n> I'm currently not sure if we have a similar section in the *Developer's Guide*, but some variables like `SAGE_ROOT` and `SAGE_LOCAL` should be documented (there?), too.\nThere is a ticket for the latter to be better, and the former is now in good shape.\n> I'm still pretty sure even more variables are missing... ;-)\nIndubitably.",
+    "created_at": "2014-11-20T16:01:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9440",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9440#issuecomment-90450",
+    "user": "kcrisman"
+}
+```
 
 > SAGE_DOC_JSMATH
 `SAGE_DOC_MATHJAX` is now in good shape.
@@ -69,15 +116,26 @@ This is basically fine now
 > I think the various variations of `SAGE_T[E]MP[[_]DIR]` are missing. (I wonder where e.g. `TMP` and `TMPDIR` are / may be used instead, or as a fall-back / default.)
 > `SHELL` might be relevant, too.
 > The `*ITER*` variables for (parallel) doctesting are missing.
-> I'm currently not sure if we have a similar section in the _Developer's Guide_, but some variables like `SAGE_ROOT` and `SAGE_LOCAL` should be documented (there?), too.
+> I'm currently not sure if we have a similar section in the *Developer's Guide*, but some variables like `SAGE_ROOT` and `SAGE_LOCAL` should be documented (there?), too.
 There is a ticket for the latter to be better, and the former is now in good shape.
 > I'm still pretty sure even more variables are missing... ;-)
 Indubitably.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2014-11-20 19:35:53
+archive/issue_comments_090451.json:
+```json
+{
+    "body": "Replying to [comment:7 kcrisman]:\n> >  * SAGE_DOCBUILD_OPTS\n> if it still exists\n\nIt is actually used for docbuilding in the top-level `Makefile`. So it ought to be documented.",
+    "created_at": "2014-11-20T19:35:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9440",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9440#issuecomment-90451",
+    "user": "jhpalmieri"
+}
+```
 
 Replying to [comment:7 kcrisman]:
 > >  * SAGE_DOCBUILD_OPTS
@@ -86,23 +144,56 @@ Replying to [comment:7 kcrisman]:
 It is actually used for docbuilding in the top-level `Makefile`. So it ought to be documented.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2014-11-20 19:36:33
+archive/issue_comments_090452.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2014-11-20T19:36:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9440",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9440#issuecomment-90452",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2014-11-20 19:36:33
+archive/issue_comments_090453.json:
+```json
+{
+    "body": "New commits:",
+    "created_at": "2014-11-20T19:36:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9440",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9440#issuecomment-90453",
+    "user": "jhpalmieri"
+}
+```
 
 New commits:
 
 
+
 ---
 
-Comment by kcrisman created at 2014-11-20 19:43:46
+archive/issue_comments_090454.json:
+```json
+{
+    "body": "Nice!  Though I misled you by the wiki formatting.  I don't know the status of these, and at least some definitely aren't documented.\n\n>  * Add `PARI_EXTRA_OPTS`, which is passed to PARI's `Configure` when building Sage / installing the PARI spkg.\nNeeded?\n>  * Add `CPPFLAGS`, `LDFLAGS`, `CXXFLAG64`?, `LDFLAG64`? `LD`?\nNeeded?\n>  * Document that (e.g.) `export CFLAGS=\"\"` has not the same effect as `unset CFLAGS`.\nNeeded?\n>  * Add note on not putting a space between `-j` and `NUM` in the description of `MAKE`, because doing so has a \"completely\" different meaning...\nNeeded?\n>  * Add a note on / reference to `sage-env`.\nNeeded?\n> Also, the description of some variables is incomplete, not current (in its use in all spkgs, e.g. `SAGE_DEBUG`), misleading, or even wrong (`SAGE_TIMEOUT*`).\nNeeded?\n> I think the various variations of `SAGE_T[E]MP[[_]DIR]` are missing. (I wonder where e.g. `TMP` and `TMPDIR` are / may be used instead, or as a fall-back / default.)\nNeeded?\n> `SHELL` might be relevant, too.\nNeeded?\n> The `*ITER*` variables for (parallel) doctesting are missing.\nNeeded?",
+    "created_at": "2014-11-20T19:43:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9440",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9440#issuecomment-90454",
+    "user": "kcrisman"
+}
+```
 
 Nice!  Though I misled you by the wiki formatting.  I don't know the status of these, and at least some definitely aren't documented.
 
@@ -126,9 +217,20 @@ Needed?
 Needed?
 
 
+
 ---
 
-Comment by kcrisman created at 2014-11-20 19:55:56
+archive/issue_comments_090455.json:
+```json
+{
+    "body": "Indeed, the output of \n\n```\nsage.env.[tab]\n```\n\nis also worth considering.",
+    "created_at": "2014-11-20T19:55:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9440",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9440#issuecomment-90455",
+    "user": "kcrisman"
+}
+```
 
 Indeed, the output of 
 
@@ -139,16 +241,38 @@ sage.env.[tab]
 is also worth considering.
 
 
+
 ---
 
-Comment by git created at 2014-11-21 21:56:13
+archive/issue_comments_090456.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2014-11-21T21:56:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9440",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9440#issuecomment-90456",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by jhpalmieri created at 2014-11-21 21:59:34
+archive/issue_comments_090457.json:
+```json
+{
+    "body": "Replying to [comment:11 kcrisman]:\n> Nice!  Though I misled you by the wiki formatting.  I don't know the status of these, and at least some definitely aren't documented.\n> \n> >  * Add `PARI_EXTRA_OPTS`, which is passed to PARI's `Configure` when building Sage / installing the PARI spkg.\n> Needed?\n\nDoesn't seem to be used, but some other variables are used in Pari's spkg-install file. I've documented those (just copying from spkg-install, basically).\n\n> >  * Add `CPPFLAGS`, `LDFLAGS`, `CXXFLAG64`?, `LDFLAG64`? `LD`?\n> Needed?\n\nI added a bit about them.\n\n> >  * Document that (e.g.) `export CFLAGS=\"\"` has not the same effect as `unset CFLAGS`.\n> Needed?\n\nSame here.\n\n> >  * Add note on not putting a space between `-j` and `NUM` in the description of `MAKE`, because doing so has a \"completely\" different meaning...\n> Needed?\n\nI don't know, this isn't Sage specific. I think we can skip it.\n\n\n> >  * Add a note on / reference to `sage-env`.\n> Needed?\n\nDone.\n\n> > Also, the description of some variables is incomplete, not current (in its use in all spkgs, e.g. `SAGE_DEBUG`), misleading, or even wrong (`SAGE_TIMEOUT*`).\n> Needed?\n\nI noticed that the documented value for SAGE_TIMEOUT was wrong. Beyond that, I don't know what Leif meant by this. If he wants to expand on it at some point, he can open another ticket and clarify.\n\n> > I think the various variations of `SAGE_T[E]MP[[_]DIR]` are missing. (I wonder where e.g. `TMP` and `TMPDIR` are / may be used instead, or as a fall-back / default.)\n> Needed?\n\nI don't think there are such variables anymore. There is a variable SAGE_TMP used while running Sage, but it's not user-customizable and it's not an environment variable. So I don't think we need to document it.\n\n> > `SHELL` might be relevant, too.\n> Needed?\n\nWhy? Let's skip it. What does it have to do with Sage?\n\n> > The `*ITER*` variables for (parallel) doctesting are missing.\n> Needed?\n\nI added something about them.",
+    "created_at": "2014-11-21T21:59:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9440",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9440#issuecomment-90457",
+    "user": "jhpalmieri"
+}
+```
 
 Replying to [comment:11 kcrisman]:
 > Nice!  Though I misled you by the wiki formatting.  I don't know the status of these, and at least some definitely aren't documented.
@@ -200,29 +324,73 @@ Why? Let's skip it. What does it have to do with Sage?
 I added something about them.
 
 
+
 ---
 
-Comment by git created at 2014-11-21 22:19:37
+archive/issue_comments_090458.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2014-11-21T22:19:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9440",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9440#issuecomment-90458",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by jhpalmieri created at 2014-11-21 23:59:28
+archive/issue_comments_090459.json:
+```json
+{
+    "body": "Oh, for what it's worth, I set `SAGE_TUNE_PARI` to yes and rebuilt pari. Without this set, it took 4 minutes. With it set, it took 2 hours. So the comment about being time-consuming is accurate.",
+    "created_at": "2014-11-21T23:59:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9440",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9440#issuecomment-90459",
+    "user": "jhpalmieri"
+}
+```
 
 Oh, for what it's worth, I set `SAGE_TUNE_PARI` to yes and rebuilt pari. Without this set, it took 4 minutes. With it set, it took 2 hours. So the comment about being time-consuming is accurate.
 
 
+
 ---
 
-Comment by kcrisman created at 2014-12-18 04:19:11
+archive/issue_comments_090460.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2014-12-18T04:19:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9440",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9440#issuecomment-90460",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by vbraun created at 2014-12-18 15:51:50
+archive/issue_comments_090461.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2014-12-18T15:51:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9440",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9440#issuecomment-90461",
+    "user": "vbraun"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 7694: change pickle jar doctest to make it a bit more robust and flexible...
 
-Issue created by migration from https://trac.sagemath.org/ticket/7694
-
-Original creator: was
-
-Original creation time: 2009-12-15 23:47:06
-
+archive/issues_007694.json:
+```json
+{
+    "body": "Assignee: tbd\n\nChange the pickle jar doctest in devel/sage/sage/structure/sage_object.pyx to:\n\n\n```\nsage: print \"x\"; sage.structure.sage_object.unpickle_all(std)\nx...\nFailed to unpickle 0 objects.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7694\n\n",
+    "created_at": "2009-12-15T23:47:06Z",
+    "labels": [
+        "doctest coverage",
+        "blocker",
+        "bug"
+    ],
+    "title": "change pickle jar doctest to make it a bit more robust and flexible...",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7694",
+    "user": "was"
+}
+```
 Assignee: tbd
 
 Change the pickle jar doctest in devel/sage/sage/structure/sage_object.pyx to:
@@ -18,31 +28,79 @@ Failed to unpickle 0 objects.
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7694
+
+
+
+
 
 ---
 
-Comment by was created at 2009-12-24 07:07:24
+archive/issue_comments_066012.json:
+```json
+{
+    "body": "I'm declaring a total feature freeze on sage-4.3.",
+    "created_at": "2009-12-24T07:07:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7694",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7694#issuecomment-66012",
+    "user": "was"
+}
+```
 
 I'm declaring a total feature freeze on sage-4.3.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-23 04:57:38
+archive/issue_comments_066013.json:
+```json
+{
+    "body": "Moved to Sage 5.0.   This still needs a patch...",
+    "created_at": "2010-04-23T04:57:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7694",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7694#issuecomment-66013",
+    "user": "jhpalmieri"
+}
+```
 
 Moved to Sage 5.0.   This still needs a patch...
 
 
+
 ---
 
-Comment by was created at 2010-06-03 04:09:49
+archive/issue_comments_066014.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-06-03T04:09:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7694",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7694#issuecomment-66014",
+    "user": "was"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by was created at 2010-06-03 04:09:49
+archive/issue_comments_066015.json:
+```json
+{
+    "body": "Interestingly, I just looked in sage-4.4.3.alpha2, and this is already fixed:\n\n```\n\n\n    ::\n\n        sage: std = os.environ['SAGE_DATA'] + '/extcode/pickle_jar/pickle_jar.tar.bz2'\n        sage: print \"x\"; sage.structure.sage_object.unpickle_all(std)\n        x...\n        Successfully unpickled ... objects.\n        Failed to unpickle 0 objects.\n```\n\nCool.",
+    "created_at": "2010-06-03T04:09:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7694",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7694#issuecomment-66015",
+    "user": "was"
+}
+```
 
 Interestingly, I just looked in sage-4.4.3.alpha2, and this is already fixed:
 

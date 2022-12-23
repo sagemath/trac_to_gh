@@ -1,11 +1,21 @@
 # Issue 5473: create extra pickle jar for old format pickles (followup of #4640)
 
-Issue created by migration from https://trac.sagemath.org/ticket/5473
-
-Original creator: mabshoff
-
-Original creation time: 2009-03-10 20:39:38
-
+archive/issues_005473.json:
+```json
+{
+    "body": "Assignee: cwitty\n\nCC:  mkoeppe\n\nWhen we currently update the pickle jar we do not keep pickles for older versions around. Due to this we could break unconverted pickles without knowing it. \n\nIn that context it might also be nice to check that format conversion works.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5473\n\n",
+    "created_at": "2009-03-10T20:39:38Z",
+    "labels": [
+        "misc",
+        "major",
+        "bug"
+    ],
+    "title": "create extra pickle jar for old format pickles (followup of #4640)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5473",
+    "user": "mabshoff"
+}
+```
 Assignee: cwitty
 
 CC:  mkoeppe
@@ -18,30 +28,78 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/5473
+
+
+
+
 
 ---
 
-Comment by chapoton created at 2021-10-20 08:22:49
+archive/issue_comments_042462.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2021-10-20T08:22:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5473#issuecomment-42462",
+    "user": "chapoton"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by chapoton created at 2021-10-20 08:22:49
+archive/issue_comments_042463.json:
+```json
+{
+    "body": "outdated, can we close ?",
+    "created_at": "2021-10-20T08:22:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5473#issuecomment-42463",
+    "user": "chapoton"
+}
+```
 
 outdated, can we close ?
 
 
+
 ---
 
-Comment by mkoeppe created at 2021-10-20 16:00:23
+archive/issue_comments_042464.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2021-10-20T16:00:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5473#issuecomment-42464",
+    "user": "mkoeppe"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by chapoton created at 2021-10-20 17:49:28
+archive/issue_comments_042465.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2021-10-20T17:49:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5473",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5473#issuecomment-42465",
+    "user": "chapoton"
+}
+```
 
 Resolution: invalid

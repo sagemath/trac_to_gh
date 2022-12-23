@@ -1,51 +1,133 @@
 # Issue 9047: Make sure there aren't unneeded/untracked files on spkg creation.
 
-Issue created by migration from https://trac.sagemath.org/ticket/9047
-
-Original creator: robertwb
-
-Original creation time: 2010-05-25 18:56:37
-
+archive/issues_009047.json:
+```json
+{
+    "body": "Assignee: tbd\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9047\n\n",
+    "created_at": "2010-05-25T18:56:37Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "Make sure there aren't unneeded/untracked files on spkg creation.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9047",
+    "user": "robertwb"
+}
+```
 Assignee: tbd
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/9047
+
+
+
+
 
 ---
 
-Comment by robertwb created at 2010-05-25 18:57:47
+archive/issue_comments_083764.json:
+```json
+{
+    "body": "Apply to sage-scripts.",
+    "created_at": "2010-05-25T18:57:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9047",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9047#issuecomment-83764",
+    "user": "robertwb"
+}
+```
 
 Apply to sage-scripts.
 
 
+
 ---
+
+archive/issue_comments_083765.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2013-08-13T15:35:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9047",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9047#issuecomment-83765",
+    "user": "jdemeyer"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by jdemeyer created at 2014-11-06 15:55:23
+archive/issue_comments_083766.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2014-11-06T15:55:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9047",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9047#issuecomment-83766",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2014-11-06 15:55:23
+archive/issue_comments_083767.json:
+```json
+{
+    "body": "Obsolete",
+    "created_at": "2014-11-06T15:55:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9047",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9047#issuecomment-83767",
+    "user": "jdemeyer"
+}
+```
 
 Obsolete
 
 
+
 ---
 
-Comment by jdemeyer created at 2014-11-06 15:55:27
+archive/issue_comments_083768.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2014-11-06T15:55:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9047",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9047#issuecomment-83768",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by vbraun created at 2014-11-07 16:49:37
+archive/issue_comments_083769.json:
+```json
+{
+    "body": "Resolution: wontfix",
+    "created_at": "2014-11-07T16:49:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9047",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9047#issuecomment-83769",
+    "user": "vbraun"
+}
+```
 
 Resolution: wontfix

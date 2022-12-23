@@ -1,11 +1,21 @@
 # Issue 8101: ntl fails to build in Open Solaris x64 as 64 bit if CFLAGS is not set
 
-Issue created by migration from https://trac.sagemath.org/ticket/8101
-
-Original creator: jsp
-
-Original creation time: 2010-01-27 23:48:53
-
+archive/issues_008101.json:
+```json
+{
+    "body": "Assignee: drkirkby\n\nOn Open Solaris x64 as 64 bit without setting CFLAGS globally build is 32 bit.\n\nA patch is under way.\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/8101\n\n",
+    "created_at": "2010-01-27T23:48:53Z",
+    "labels": [
+        "porting: Solaris",
+        "major",
+        "bug"
+    ],
+    "title": "ntl fails to build in Open Solaris x64 as 64 bit if CFLAGS is not set",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8101",
+    "user": "jsp"
+}
+```
 Assignee: drkirkby
 
 On Open Solaris x64 as 64 bit without setting CFLAGS globally build is 32 bit.
@@ -14,15 +24,43 @@ A patch is under way.
 
 Jaap
 
+Issue created by migration from https://trac.sagemath.org/ticket/8101
+
+
+
+
 
 ---
 
-Comment by jsp created at 2010-01-27 23:58:42
+archive/issue_comments_071081.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-01-27T23:58:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8101",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8101#issuecomment-71081",
+    "user": "jsp"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_071082.json:
+```json
+{
+    "body": "Attachment\n\nAn spkg can be found here:\n\n[http://boxen.math.washington.edu/home/jsp/ports/ntl-5.4.2.p11.spkg](http://boxen.math.washington.edu/home/jsp/ports/ntl-5.4.2.p11.spkg)\n\nJaap",
+    "created_at": "2010-01-27T23:58:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8101",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8101#issuecomment-71082",
+    "user": "jsp"
+}
+```
 
 Attachment
 
@@ -33,9 +71,20 @@ An spkg can be found here:
 Jaap
 
 
+
 ---
 
-Comment by drkirkby created at 2010-01-28 13:51:47
+archive/issue_comments_071083.json:
+```json
+{
+    "body": "Positive review. All shared libraries are indeed 64-bit now. \n\n\n```\ndrkirkby@hawk:~/sage-4.3.1$ file local/lib/lib*ntl*\nlocal/lib/libntl-5.4.2.so:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\nlocal/lib/libntl.a:\tcurrent ar archive, not a dynamic executable or shared object\nlocal/lib/libntl.so:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\n```\n",
+    "created_at": "2010-01-28T13:51:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8101",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8101#issuecomment-71083",
+    "user": "drkirkby"
+}
+```
 
 Positive review. All shared libraries are indeed 64-bit now. 
 
@@ -49,15 +98,37 @@ local/lib/libntl.so:	ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically lin
 
 
 
+
 ---
 
-Comment by drkirkby created at 2010-01-28 13:51:47
+archive/issue_comments_071084.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-01-28T13:51:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8101",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8101#issuecomment-71084",
+    "user": "drkirkby"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-11 15:13:21
+archive/issue_comments_071085.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-02-11T15:13:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8101",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8101#issuecomment-71085",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed

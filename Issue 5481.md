@@ -1,11 +1,21 @@
 # Issue 5481: devel/doc/output/* should be filtered from the list of files to doctest
 
-Issue created by migration from https://trac.sagemath.org/ticket/5481
-
-Original creator: mabshoff
-
-Original creation time: 2009-03-11 06:31:10
-
+archive/issues_005481.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nCC:  mhansen\n\nThere can be many rst files under devel/doc/output - those should be filtered from the list of files to doctest since they are duplicate doctests from the main Sage library in many cases.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5481\n\n",
+    "created_at": "2009-03-11T06:31:10Z",
+    "labels": [
+        "doctest coverage",
+        "blocker",
+        "bug"
+    ],
+    "title": "devel/doc/output/* should be filtered from the list of files to doctest",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5481",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 CC:  mhansen
@@ -16,58 +26,152 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/5481
+
+
+
+
 
 ---
 
-Comment by jhpalmieri created at 2009-06-09 22:11:13
+archive/issue_comments_042524.json:
+```json
+{
+    "body": "Has this been fixed?  The file sage-maketest looks good to me already.",
+    "created_at": "2009-06-09T22:11:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5481",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5481#issuecomment-42524",
+    "user": "jhpalmieri"
+}
+```
 
 Has this been fixed?  The file sage-maketest looks good to me already.
 
 
+
 ---
 
-Comment by was created at 2009-06-15 23:24:05
+archive/issue_comments_042525.json:
+```json
+{
+    "body": "Changing priority from blocker to critical.",
+    "created_at": "2009-06-15T23:24:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5481",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5481#issuecomment-42525",
+    "user": "was"
+}
+```
 
 Changing priority from blocker to critical.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-06-16 03:12:22
+archive/issue_comments_042526.json:
+```json
+{
+    "body": "Maybe sage-ptest needs changing.  I'm still trying to figure out what the issue is here.",
+    "created_at": "2009-06-16T03:12:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5481",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5481#issuecomment-42526",
+    "user": "jhpalmieri"
+}
+```
 
 Maybe sage-ptest needs changing.  I'm still trying to figure out what the issue is here.
 
 
+
 ---
+
+archive/issue_comments_042527.json:
+```json
+{
+    "body": "Attachment\n\nHere's a patch.  (The first change -- deleting all.py and __init__.py -- comes from #6108.)",
+    "created_at": "2009-06-16T03:28:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5481",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5481#issuecomment-42527",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
 Here's a patch.  (The first change -- deleting all.py and __init__.py -- comes from #6108.)
 
 
+
 ---
 
-Comment by mhansen created at 2009-06-20 01:29:00
+archive/issue_comments_042528.json:
+```json
+{
+    "body": "Looks good to me.",
+    "created_at": "2009-06-20T01:29:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5481",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5481#issuecomment-42528",
+    "user": "mhansen"
+}
+```
 
 Looks good to me.
 
 
+
 ---
 
-Comment by mhansen created at 2009-06-20 01:29:00
+archive/issue_comments_042529.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-06-20T01:29:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5481",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5481#issuecomment-42529",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mhansen created at 2009-06-20 01:29:00
+archive/issue_comments_042530.json:
+```json
+{
+    "body": "Changing assignee from mabshoff to mhansen.",
+    "created_at": "2009-06-20T01:29:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5481",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5481#issuecomment-42530",
+    "user": "mhansen"
+}
+```
 
 Changing assignee from mabshoff to mhansen.
 
 
+
 ---
 
-Comment by boothby created at 2009-06-26 17:43:01
+archive/issue_comments_042531.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-06-26T17:43:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5481",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5481#issuecomment-42531",
+    "user": "boothby"
+}
+```
 
 Resolution: fixed

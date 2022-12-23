@@ -1,19 +1,44 @@
 # Issue 3628: [with spkg; needs review] (take 2) building sage on opensuse x86_64 fails with readline detection error
 
-Issue created by migration from https://trac.sagemath.org/ticket/3628
-
-Original creator: was
-
-Original creation time: 2008-07-10 00:36:06
-
+archive/issues_003628.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nThis is take two of #3597.  We were using --with-readline but should have used --with-readline-prefix, as is clearly stated in ./configure --help. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3628\n\n",
+    "created_at": "2008-07-10T00:36:06Z",
+    "labels": [
+        "packages: standard",
+        "blocker",
+        "bug"
+    ],
+    "title": "[with spkg; needs review] (take 2) building sage on opensuse x86_64 fails with readline detection error",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3628",
+    "user": "was"
+}
+```
 Assignee: mabshoff
 
 This is take two of #3597.  We were using --with-readline but should have used --with-readline-prefix, as is clearly stated in ./configure --help. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3628
+
+
+
+
 
 ---
 
-Comment by was created at 2008-07-10 00:39:52
+archive/issue_comments_025674.json:
+```json
+{
+    "body": "The spkg here:\n\nhttp://sage.math.washington.edu/home/was/patches/clisp-2.46.p3.spkg\n\n\ndoes this\n\n```\nsage@modular:~/build/sage-3.0.4.rc2/spkg/standard/clisp-2.46.p2$ hg export tip\n# HG changeset patch\n# User William Stein <wstein@gmail.com>\n# Date 1215650285 25200\n# Node ID 894ef09f7493ecb498cfabae78c94ccadf74e50c\n# Parent  3fb5fefd13e4d8acf4eff5c963397554f9df2574\nAdd -prefix to with-readline option; get rid of stupid fallback.\n\ndiff -r 3fb5fefd13e4 -r 894ef09f7493 spkg-install\n--- a/spkg-install      Mon Jul 07 19:51:11 2008 -0400\n+++ b/spkg-install      Wed Jul 09 17:38:05 2008 -0700\n@@ -26,12 +26,7 @@ cd src/\n\n unset CPPFLAGS   # do this; since otherwise build will fail if CPPFLAGS was se\n\n-CFLAGS=\"-O0 -g\" ./configure --with-readline=\"$SAGE_LOCAL\" --prefix=\"$SAGE_LOCAL\" --ignore-absence-of-libsigsegv --without-libintl\n-\n-if [ $? -ne 0 ]; then\n-    echo \"Building without readline.\"\n-    CFLAGS=\"-O0 -g\" ./configure --without-readline --prefix=\"$SAGE_LOCAL\" --ignore-absence-of-libsigsegv --without-libintl\n-fi\n+CFLAGS=\"-O0 -g\" ./configure --with-readline-prefix=\"$SAGE_LOCAL\" --prefix=\"$SAGE_LOCAL\" --ignore-absence-of-libsigsegv --without-libintl\n\n #if [ $UNAME = \"CYGWIN\" ]; then\n     # This is a hack to get around a bug in the build process under Cygwin.\n```\n",
+    "created_at": "2008-07-10T00:39:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3628",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3628#issuecomment-25674",
+    "user": "was"
+}
+```
 
 The spkg here:
 
@@ -52,25 +77,58 @@ diff -r 3fb5fefd13e4 -r 894ef09f7493 spkg-install
 
 
 
+
 ---
 
-Comment by was created at 2008-07-10 00:42:48
+archive/issue_comments_025675.json:
+```json
+{
+    "body": "WAIT -- this doesn't actually find readline.  So this is no good.",
+    "created_at": "2008-07-10T00:42:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3628",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3628#issuecomment-25675",
+    "user": "was"
+}
+```
 
 WAIT -- this doesn't actually find readline.  So this is no good.
 
 
+
 ---
 
-Comment by was created at 2008-07-10 01:05:31
+archive/issue_comments_025676.json:
+```json
+{
+    "body": "OK, this works perfectly and it *does* fix the hang integrating certain things with maxima too:\n\nhttp://sage.math.washington.edu/home/was/patches/clisp-2.46.p4.spkg",
+    "created_at": "2008-07-10T01:05:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3628",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3628#issuecomment-25676",
+    "user": "was"
+}
+```
 
 OK, this works perfectly and it *does* fix the hang integrating certain things with maxima too:
 
 http://sage.math.washington.edu/home/was/patches/clisp-2.46.p4.spkg
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-10 01:57:22
+archive/issue_comments_025677.json:
+```json
+{
+    "body": "Positive review. Thanks for reading the documentation :)\n\nCheers,\n\nMichael",
+    "created_at": "2008-07-10T01:57:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3628",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3628#issuecomment-25677",
+    "user": "mabshoff"
+}
+```
 
 Positive review. Thanks for reading the documentation :)
 
@@ -79,15 +137,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-10 02:01:54
+archive/issue_comments_025678.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-07-10T02:01:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3628",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3628#issuecomment-25678",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-10 02:01:54
+archive/issue_comments_025679.json:
+```json
+{
+    "body": "Merged in Sage 3.0.4.rc3",
+    "created_at": "2008-07-10T02:01:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3628",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3628#issuecomment-25679",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.4.rc3

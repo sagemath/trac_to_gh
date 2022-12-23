@@ -1,34 +1,83 @@
 # Issue 7076: SageNB -- Do ReST introspection on a `worksheet_process`
 
-Issue created by migration from https://trac.sagemath.org/ticket/7076
-
-Original creator: timdumol
-
-Original creation time: 2009-09-29 19:48:30
-
+archive/issues_007076.json:
+```json
+{
+    "body": "Assignee: boothby\n\nKeywords: sagenb notebook\n\nThis increases security (prevents a DoS by introspecting constantly), and ensures that it is done in a separate process (which may be in an entirely different server)\n\nIssue created by migration from https://trac.sagemath.org/ticket/7076\n\n",
+    "created_at": "2009-09-29T19:48:30Z",
+    "labels": [
+        "notebook",
+        "major",
+        "enhancement"
+    ],
+    "title": "SageNB -- Do ReST introspection on a `worksheet_process`",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7076",
+    "user": "timdumol"
+}
+```
 Assignee: boothby
 
 Keywords: sagenb notebook
 
 This increases security (prevents a DoS by introspecting constantly), and ensures that it is done in a separate process (which may be in an entirely different server)
 
+Issue created by migration from https://trac.sagemath.org/ticket/7076
+
+
+
+
 
 ---
+
+archive/issue_comments_058518.json:
+```json
+{
+    "body": "Attachment\n\nReimplements introspection.",
+    "created_at": "2009-09-29T19:49:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7076",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7076#issuecomment-58518",
+    "user": "timdumol"
+}
+```
 
 Attachment
 
 Reimplements introspection.
 
 
+
 ---
 
-Comment by was created at 2009-09-29 20:14:06
+archive/issue_comments_058519.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-09-29T20:14:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7076",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7076#issuecomment-58519",
+    "user": "was"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by was created at 2009-09-29 20:14:06
+archive/issue_comments_058520.json:
+```json
+{
+    "body": "I've applied this to the notebook.",
+    "created_at": "2009-09-29T20:14:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7076",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7076#issuecomment-58520",
+    "user": "was"
+}
+```
 
 I've applied this to the notebook.

@@ -1,11 +1,21 @@
 # Issue 9834: Make desolve more informative when solving BVP
 
-Issue created by migration from https://trac.sagemath.org/ticket/9835
-
-Original creator: robert.marik
-
-Original creation time: 2010-08-28 21:18:27
-
+archive/issues_009834.json:
+```json
+{
+    "body": "Assignee: burcin\n\nCC:  mhampton\n\nFrom Sage Bugreports :\nconfusing error message\n\n\n```\nTraceback (click to the left of this block for traceback)\n...\nUnboundLocalError: local variable 'maxima_method' referenced before\nassignment\n```\n\nwhen trying\n\n```\nepsilon = 1e-2; vars = var('x'); y = function('y',x);\nde = epsilon*diff(y,x,2)+y*(1-y^2)==0;\nsoln = desolve(de,y[0,-1,1,1]);\n```\n\n\nExplanation: Currently Sage allows to use BVP only if the result is symbolic expression. In this case the result is list of two expresions and Sage fails, as mentioned very briefly in documentation of desolve. However, we could try to improve desolve or make the error message more informative.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9835\n\n",
+    "created_at": "2010-08-28T21:18:27Z",
+    "labels": [
+        "calculus",
+        "minor",
+        "bug"
+    ],
+    "title": "Make desolve more informative when solving BVP",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9834",
+    "user": "robert.marik"
+}
+```
 Assignee: burcin
 
 CC:  mhampton
@@ -32,17 +42,43 @@ soln = desolve(de,y[0,-1,1,1]);
 
 Explanation: Currently Sage allows to use BVP only if the result is symbolic expression. In this case the result is list of two expresions and Sage fails, as mentioned very briefly in documentation of desolve. However, we could try to improve desolve or make the error message more informative.
 
+Issue created by migration from https://trac.sagemath.org/ticket/9835
+
+
+
+
 
 ---
 
-Comment by robert.marik created at 2010-08-29 19:37:59
+archive/issue_comments_097034.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-08-29T19:37:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9834",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9834#issuecomment-97034",
+    "user": "robert.marik"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by robert.marik created at 2010-08-29 19:37:59
+archive/issue_comments_097035.json:
+```json
+{
+    "body": "The patch\n\n* solves the problem\n\n* fixes documentation\n\n* decreases number of spawned Maxima sessions into one session",
+    "created_at": "2010-08-29T19:37:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9834",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9834#issuecomment-97035",
+    "user": "robert.marik"
+}
+```
 
 The patch
 
@@ -53,9 +89,20 @@ The patch
 * decreases number of spawned Maxima sessions into one session
 
 
+
 ---
 
-Comment by kcrisman created at 2010-09-21 13:15:28
+archive/issue_comments_097036.json:
+```json
+{
+    "body": "One very minor comment - no time to review now:\n\n```\n. Remove the initial contition t\n```\n\nat the very end of the patch should be \"condition\".\n\nDo you think it would be worth adding another doctest to show that the sage-support request is fixed as well:\n\n```\nvar('t alpha beta n') \nx=function('x',t) \neq=diff(x,t)^2==alpha-beta abs(x)^n \nassume(n,'integer') \ndesolve(eq,x,ivar=t,contrib_ode=True) \n```\n\n\nThanks for finding and fixing this!",
+    "created_at": "2010-09-21T13:15:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9834",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9834#issuecomment-97036",
+    "user": "kcrisman"
+}
+```
 
 One very minor comment - no time to review now:
 
@@ -79,9 +126,20 @@ desolve(eq,x,ivar=t,contrib_ode=True)
 Thanks for finding and fixing this!
 
 
+
 ---
 
-Comment by robert.marik created at 2010-09-21 13:31:51
+archive/issue_comments_097037.json:
+```json
+{
+    "body": "Thanks, I will update the patch as time permits.\n\nThe equation from sage-support still fails, since Maxima fails to solve it.  Anyway. Sage and Maxima now know that n is integer.\n\n```\nmarik@um-bc107:/opt/sage-4.5.3-Debian_Lenny_64-x86_64-Linux$ ./sage --maxima\n;;; Loading #P\"/opt/sage-4.5.3-Debian_Lenny_64-x86_64-Linux/local/lib/ecl/defsys tem.fas\"\n;;; Loading #P\"/opt/sage-4.5.3-Debian_Lenny_64-x86_64-Linux/local/lib/ecl/cmp.fa s\"\n;;; Loading #P\"/opt/sage-4.5.3-Debian_Lenny_64-x86_64-Linux/local/lib/ecl/sysfun .lsp\"\nMaxima 5.20.1 http://maxima.sourceforge.net\nusing Lisp ECL 10.2.1\nDistributed under the GNU Public License. See the file COPYING.\nDedicated to the memory of William Schelter.\nThe function bug_report() provides bug reporting information.\n(%i1) declare(n,integer);\n(%o1)                                done\n(%i2) eq: 'diff(x,t)^2=alpha-beta*abs(x)^n;\n                          dx 2                      n\n(%o2)                    (--)  = alpha - beta abs(x)\n                          dt\n(%i3) load('contrib_ode)$\n\n(%i4) contrib_ode(eq,x,t);\n                          dx 2                      n\n(%t4)                    (--)  = alpha - beta abs(x)\n                          dt\n\n                     first order equation not linear in y'\n\nImproper argument to ratcoeff:\n0\n#0: linear2(expr=x,x=0)(ode2.mac line 75)\n#1: ode1_a(phi=-sqrt(alpha-beta*abs(x)^n),y=x,x=t)(ode1_lie.mac line 176)\n#2: ode1_lie(phi=-sqrt(alpha-beta*abs(x)^n),y=x,x=t)(ode1_lie.mac line 54)\n -- an error. To debug this try: debugmode(true);\n\n```\n",
+    "created_at": "2010-09-21T13:31:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9834",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9834#issuecomment-97037",
+    "user": "robert.marik"
+}
+```
 
 Thanks, I will update the patch as time permits.
 
@@ -123,9 +181,20 @@ Improper argument to ratcoeff:
 
 
 
+
 ---
 
-Comment by mhampton created at 2010-09-21 13:51:27
+archive/issue_comments_097038.json:
+```json
+{
+    "body": "This doesn't seem fixed to me:\n\n```\nsage: epsilon = 1e-2; vars = var('x'); y = function('y',x);\nsage: de = epsilon*diff(y,x,2)+y*(1-y^2)==0;\nsage: soln = desolve(de,y[0,-1,1,1])\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/mh/<ipython console> in <module>()\n\nTypeError: 'sage.symbolic.expression.Expression' object is unsubscriptable\n```\n",
+    "created_at": "2010-09-21T13:51:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9834",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9834#issuecomment-97038",
+    "user": "mhampton"
+}
+```
 
 This doesn't seem fixed to me:
 
@@ -143,9 +212,20 @@ TypeError: 'sage.symbolic.expression.Expression' object is unsubscriptable
 
 
 
+
 ---
 
-Comment by mhampton created at 2010-09-21 13:58:04
+archive/issue_comments_097039.json:
+```json
+{
+    "body": "Even after fixing the sytax I still get an error:\n\n```\nsage: vars = var('x'); y = function('y',x);\nsage: soln = desolve(diff(y,x,2) + 100*y*(1-y^2),dvar=y,ivar=x,ics=[0,-1,1,1])\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n\n/Users/mh/<ipython console> in <module>()\n\n/Users/mh/sagestuff/sage-4-x/local/lib/python2.6/site-packages/sage/calculus/desolvers.pyc in desolve(de, dvar, ics, ivar, show_method, contrib_ode)\n    436             maxima_method=P(\"method\")\n    437         if not is_SymbolicEquation(soln.sage()):\n--> 438              raise NotImplementedError, \"Unable to use initial condition for this equation (%s).\"%(str(maxima_method).strip())   \n    439         if len(ics) == 2:\n    440             tempic=(ivar==ics[0])._maxima_().str()\n\nNotImplementedError: Unable to use initial condition for this equation (freeofx).\n```\n",
+    "created_at": "2010-09-21T13:58:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9834",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9834#issuecomment-97039",
+    "user": "mhampton"
+}
+```
 
 Even after fixing the sytax I still get an error:
 
@@ -169,16 +249,38 @@ NotImplementedError: Unable to use initial condition for this equation (freeofx)
 
 
 
+
 ---
 
-Comment by mhampton created at 2010-09-21 13:58:04
+archive/issue_comments_097040.json:
+```json
+{
+    "body": "Changing assignee from burcin to mhampton.",
+    "created_at": "2010-09-21T13:58:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9834",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9834#issuecomment-97040",
+    "user": "mhampton"
+}
+```
 
 Changing assignee from burcin to mhampton.
 
 
+
 ---
 
-Comment by robert.marik created at 2010-09-21 14:10:19
+archive/issue_comments_097041.json:
+```json
+{
+    "body": "Thanks for menitioning this. \n\nWihtout this patch we get\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nThe Sage install tree may have moved.\nRegenerating Python.pyo and .pyc files that hardcode the install PATH\n(please wait at most a few minutes)...\nDo not interrupt this.\nsage: vars = var('x'); y = function('y',x);\nsage: soln = desolve(diff(y,x,2) + 100*y*(1-y^2),dvar=y,ivar=x,ics=[0,-1,1,1])\n---------------------------------------------------------------------------\nUnboundLocalError                         Traceback (most recent call last)\n| Sage Version 4.5.3, Release Date: 2010-09-04                       |\n| Type notebook() for the GUI, and license() for information.        |\n/opt/sage-4.5.3-Debian_Lenny_64-x86_64-Linux/<ipython console> in <module>()\n\n/opt/sage-4.5.3-Debian_Lenny_64-x86_64-Linux/local/lib/python2.6/site-packages/sage/calculus/desolvers.py in desolve(de, dvar, ics, ivar, show_method, contrib_ode)\n    358     if (ics is not None):\n    359         if not is_SymbolicEquation(soln.sage()):\n--> 360              raise NotImplementedError, \"Maxima was unable to use initial condition for this equation (%s)\"%(maxima_method.str())\n    361         if len(ics) == 2:\n    362             tempic=(ivar==ics[0])._maxima_().str()\n\nUnboundLocalError: local variable 'maxima_method' referenced before assignment\n```\n\nand the user does not know, what went wrong. With this patch the user knows, that it Sage is not capable to use initial conditions for this ODE.",
+    "created_at": "2010-09-21T14:10:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9834",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9834#issuecomment-97041",
+    "user": "robert.marik"
+}
+```
 
 Thanks for menitioning this. 
 
@@ -212,30 +314,78 @@ UnboundLocalError: local variable 'maxima_method' referenced before assignment
 and the user does not know, what went wrong. With this patch the user knows, that it Sage is not capable to use initial conditions for this ODE.
 
 
+
 ---
+
+archive/issue_comments_097042.json:
+```json
+{
+    "body": "Attachment\n\nrebased for Sage 4.5.3., fixed typo, replaces previous patch with the same name",
+    "created_at": "2010-09-21T14:43:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9834",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9834#issuecomment-97042",
+    "user": "robert.marik"
+}
+```
 
 Attachment
 
 rebased for Sage 4.5.3., fixed typo, replaces previous patch with the same name
 
 
+
 ---
 
-Comment by robert.marik created at 2010-09-21 20:16:48
+archive/issue_comments_097043.json:
+```json
+{
+    "body": "solves also #9710 and #8931",
+    "created_at": "2010-09-21T20:16:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9834",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9834#issuecomment-97043",
+    "user": "robert.marik"
+}
+```
 
 solves also #9710 and #8931
 
 
+
 ---
+
+archive/issue_comments_097044.json:
+```json
+{
+    "body": "Attachment\n\nminor change - apply only this patch",
+    "created_at": "2010-09-26T13:25:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9834",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9834#issuecomment-97044",
+    "user": "burcin"
+}
+```
 
 Attachment
 
 minor change - apply only this patch
 
 
+
 ---
 
-Comment by burcin created at 2010-09-26 13:31:13
+archive/issue_comments_097045.json:
+```json
+{
+    "body": "Patch looks good and it solves a whole bunch of problems, so I'd like to give this a positive review.\n\nI have one minor suggestion. The if clause on line 435-436 only serves the purpose of assigning a value to `maxima_method` to show in the error message. attachment:trac_9835.take2.patch moves these lines right before we raise the error, so that they are not executed unnecessarily.\n\nI give a positive review to Robert's changes. Please switch this to a positive review if you agree with mine.",
+    "created_at": "2010-09-26T13:31:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9834",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9834#issuecomment-97045",
+    "user": "burcin"
+}
+```
 
 Patch looks good and it solves a whole bunch of problems, so I'd like to give this a positive review.
 
@@ -244,31 +394,75 @@ I have one minor suggestion. The if clause on line 435-436 only serves the purpo
 I give a positive review to Robert's changes. Please switch this to a positive review if you agree with mine.
 
 
+
 ---
 
-Comment by robert.marik created at 2010-09-27 07:36:21
+archive/issue_comments_097046.json:
+```json
+{
+    "body": "Positive review to Burcin's change. Thank you.\n\nRelease manager: apply only attachment:trac_9835.take2.patch",
+    "created_at": "2010-09-27T07:36:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9834",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9834#issuecomment-97046",
+    "user": "robert.marik"
+}
+```
 
 Positive review to Burcin's change. Thank you.
 
 Release manager: apply only attachment:trac_9835.take2.patch
 
 
+
 ---
 
-Comment by robert.marik created at 2010-09-27 07:36:21
+archive/issue_comments_097047.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-09-27T07:36:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9834",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9834#issuecomment-97047",
+    "user": "robert.marik"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-28 09:11:40
+archive/issue_comments_097048.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-09-28T09:11:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9834",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9834#issuecomment-97048",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-28 10:36:28
+archive/issue_comments_097049.json:
+```json
+{
+    "body": "Thanks, David!",
+    "created_at": "2010-09-28T10:36:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9834",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9834#issuecomment-97049",
+    "user": "mpatel"
+}
+```
 
 Thanks, David!

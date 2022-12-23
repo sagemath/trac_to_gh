@@ -1,11 +1,21 @@
 # Issue 4942: find_root() is broken when interval borders cannot be evaluated
 
-Issue created by migration from https://trac.sagemath.org/ticket/4942
-
-Original creator: mabshoff
-
-Original creation time: 2009-01-05 20:32:08
-
+archive/issues_004942.json:
+```json
+{
+    "body": "Assignee: jkantor\n\nCC:  kcrisman\n\nReported in http://groups.google.com/group/sage-support/browse_thread/thread/40da8039090c3e8a\n\n\n```\nHi, I'm trying out SAGE for the first time, so I entered what you \nsuggested (see above). \nNow, from the plot, it there seems to be no other roots between 0 and 2 \nso I entered \nsage: find_root(x^2*log(x,2)-1,0, 2) \nand got the root = 0.0 \nwhat am I missing here? \nTIA, \nAJG \n```\n\nBut note the following:\n\n```\nsage: find_root(1/(x-1)+1,0, 2) \n0.0 \nsage: find_root(1/(x-1)+1,0.00001, 2) \n1.0000000000011564 \n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4942\n\n",
+    "created_at": "2009-01-05T20:32:08Z",
+    "labels": [
+        "numerical",
+        "blocker",
+        "bug"
+    ],
+    "title": "find_root() is broken when interval borders cannot be evaluated",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4942",
+    "user": "mabshoff"
+}
+```
 Assignee: jkantor
 
 CC:  kcrisman
@@ -39,24 +49,61 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/4942
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2009-01-30 23:27:11
+archive/issue_comments_037504.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-01-30T23:27:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4942",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4942#issuecomment-37504",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mhansen created at 2009-01-30 23:27:11
+archive/issue_comments_037505.json:
+```json
+{
+    "body": "Changing assignee from jkantor to mhansen.",
+    "created_at": "2009-01-30T23:27:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4942",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4942#issuecomment-37505",
+    "user": "mhansen"
+}
+```
 
 Changing assignee from jkantor to mhansen.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-08 06:41:17
+archive/issue_comments_037506.json:
+```json
+{
+    "body": "This is a critical bug and ought to be fixed in 3.3.\n\nNote that #3870 might be a dupe of this bug.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-08T06:41:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4942",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4942#issuecomment-37506",
+    "user": "mabshoff"
+}
+```
 
 This is a critical bug and ought to be fixed in 3.3.
 
@@ -67,9 +114,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mhansen created at 2009-02-08 23:59:48
+archive/issue_comments_037507.json:
+```json
+{
+    "body": "It seems this is a problem with Scipy:\n\n\n```\nIn [16]: def f(x):         \n   ....:     return 1.0/(x-1.0)+1.0\n   ....: \n\nIn [17]: import scipy.optimize\n\nIn [18]: scipy.optimize.brentq(f, 0, 2)\nOut[18]: 0.0\n\nIn [19]: f(0.001)\nOut[19]: -0.0010010010010010895\n\nIn [20]: f(2)\nOut[20]: 2.0\n\nIn [21]: scipy.optimize.brentq(f, 0.001, 2)                                                   \nOut[21]: 1.0000000000007283\n\nIn [22]: f(1.0000000000007283)\nOut[22]: 1373048666882.2488\n```\n",
+    "created_at": "2009-02-08T23:59:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4942",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4942#issuecomment-37507",
+    "user": "mhansen"
+}
+```
 
 It seems this is a problem with Scipy:
 
@@ -99,18 +157,40 @@ Out[22]: 1373048666882.2488
 
 
 
+
 ---
 
-Comment by cwitty created at 2009-02-15 03:15:54
+archive/issue_comments_037508.json:
+```json
+{
+    "body": "There are at least a couple of issues here.  First, brentq is a variant of a bisection-based solver; if you use any bisection-based solver to find a zero of 1/(x-1) between 0 and 2, it will narrow down and return something very close to 1.  So if we don't like that, we should use a different solver (or at least try to check the output; for instance, a simple check that f(x) is \"small\" would detect this particular problem).\n\nSecond, find_root tries to verify that the function evaluates to different signs at the endpoints of the interval (as required by brentq); but it doesn't check the function evaluation results for NaN.  In the original test case, fast_float(f)(0) gives NaN.",
+    "created_at": "2009-02-15T03:15:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4942",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4942#issuecomment-37508",
+    "user": "cwitty"
+}
+```
 
 There are at least a couple of issues here.  First, brentq is a variant of a bisection-based solver; if you use any bisection-based solver to find a zero of 1/(x-1) between 0 and 2, it will narrow down and return something very close to 1.  So if we don't like that, we should use a different solver (or at least try to check the output; for instance, a simple check that f(x) is "small" would detect this particular problem).
 
 Second, find_root tries to verify that the function evaluates to different signs at the endpoints of the interval (as required by brentq); but it doesn't check the function evaluation results for NaN.  In the original test case, fast_float(f)(0) gives NaN.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-03-01 02:30:48
+archive/issue_comments_037509.json:
+```json
+{
+    "body": "Better luck in 3.4.1. Unfortunately this either requires testing of the result of scipy or some deeper surgery in Scipy.\n\nCheers,\n\nMichael",
+    "created_at": "2009-03-01T02:30:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4942",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4942#issuecomment-37509",
+    "user": "mabshoff"
+}
+```
 
 Better luck in 3.4.1. Unfortunately this either requires testing of the result of scipy or some deeper surgery in Scipy.
 
@@ -119,30 +199,74 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by was created at 2009-06-15 23:23:28
+archive/issue_comments_037510.json:
+```json
+{
+    "body": "Changing priority from blocker to critical.",
+    "created_at": "2009-06-15T23:23:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4942",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4942#issuecomment-37510",
+    "user": "was"
+}
+```
 
 Changing priority from blocker to critical.
 
 
+
 ---
 
-Comment by was created at 2009-06-15 23:23:28
+archive/issue_comments_037511.json:
+```json
+{
+    "body": "If we've released for months and months without fixing this, it doesn't make sense to keep it as a blocker.",
+    "created_at": "2009-06-15T23:23:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4942",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4942#issuecomment-37511",
+    "user": "was"
+}
+```
 
 If we've released for months and months without fixing this, it doesn't make sense to keep it as a blocker.
 
 
+
 ---
 
-Comment by assaferan created at 2018-09-04 11:23:24
+archive/issue_comments_037512.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2018-09-04T11:23:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4942",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4942#issuecomment-37512",
+    "user": "assaferan"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by assaferan created at 2018-09-04 11:23:24
+archive/issue_comments_037513.json:
+```json
+{
+    "body": "Hi, added two small validity checks:\n1. If one of the endpoints is evaluated to NaN we seek a nearby point in the interval which can be evaluated.\n2. If the value of the function at the root found is \"large\", raise an error that we could not find it.\n----\nNew commits:",
+    "created_at": "2018-09-04T11:23:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4942",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4942#issuecomment-37513",
+    "user": "assaferan"
+}
+```
 
 Hi, added two small validity checks:
 1. If one of the endpoints is evaluated to NaN we seek a nearby point in the interval which can be evaluated.
@@ -151,16 +275,38 @@ Hi, added two small validity checks:
 New commits:
 
 
+
 ---
 
-Comment by assaferan created at 2018-09-06 09:21:55
+archive/issue_comments_037514.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2018-09-06T09:21:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4942",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4942#issuecomment-37514",
+    "user": "assaferan"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by tscrim created at 2018-09-06 22:32:32
+archive/issue_comments_037515.json:
+```json
+{
+    "body": "I am not sure 1 is necessarily the best solution to this because what if you get a function that always evaluates to NaN as you increase/decrease the endpoints? For instance\n\n```\nsage: f(x) = 0.0 / max(0, x)\n```\n\nwill be NaN for infinitely many values. So your current test means this runs forever:\n\n```\nsage: find_root(f, -1, 0)\n```\n\n(before it simply gave a wrong value).\n\nAlso, I think for 2 you should raise a `NotImplementedError` as I think that more accurately reflects the situation.",
+    "created_at": "2018-09-06T22:32:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4942",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4942#issuecomment-37515",
+    "user": "tscrim"
+}
+```
 
 I am not sure 1 is necessarily the best solution to this because what if you get a function that always evaluates to NaN as you increase/decrease the endpoints? For instance
 
@@ -179,37 +325,92 @@ sage: find_root(f, -1, 0)
 Also, I think for 2 you should raise a `NotImplementedError` as I think that more accurately reflects the situation.
 
 
+
 ---
 
-Comment by git created at 2018-09-07 10:11:49
+archive/issue_comments_037516.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2018-09-07T10:11:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4942",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4942#issuecomment-37516",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by git created at 2018-09-07 12:01:17
+archive/issue_comments_037517.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2018-09-07T12:01:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4942",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4942#issuecomment-37517",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by assaferan created at 2018-09-07 13:20:40
+archive/issue_comments_037518.json:
+```json
+{
+    "body": "Fixed the bugs and changed behaviour in both cases, as suggested by tscrim",
+    "created_at": "2018-09-07T13:20:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4942",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4942#issuecomment-37518",
+    "user": "assaferan"
+}
+```
 
 Fixed the bugs and changed behaviour in both cases, as suggested by tscrim
 
 
+
 ---
 
-Comment by assaferan created at 2018-09-07 13:20:40
+archive/issue_comments_037519.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2018-09-07T13:20:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4942",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4942#issuecomment-37519",
+    "user": "assaferan"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by tscrim created at 2018-09-07 23:24:14
+archive/issue_comments_037520.json:
+```json
+{
+    "body": "Thanks. Looks better now. A few more little things:\n\n- `ticket 4942` -> `:trac:`4942`` in the documentation.\n- Could you add the test from comment:17.\n- This change:\n  {{{#!diff\n        Traceback (most recent call last):\n-           ...\n+       ...\n        NotImplementedError: Brent's method failed to find a zero for f on the interval\n  }}}\n- Instead of using `...` for imprecision, it would be better to use `# abs tol` (or a `# rel tol`).\n- `if` statements do not need outer parentheses in Python, so remove them from `if (full_output):` and the outermost pair from the other `if` statement 4 lines down.",
+    "created_at": "2018-09-07T23:24:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4942",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4942#issuecomment-37520",
+    "user": "tscrim"
+}
+```
 
 Thanks. Looks better now. A few more little things:
 
@@ -226,29 +427,73 @@ Thanks. Looks better now. A few more little things:
 - `if` statements do not need outer parentheses in Python, so remove them from `if (full_output):` and the outermost pair from the other `if` statement 4 lines down.
 
 
+
 ---
 
-Comment by git created at 2018-09-10 08:39:54
+archive/issue_comments_037521.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2018-09-10T08:39:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4942",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4942#issuecomment-37521",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by tscrim created at 2018-09-17 06:28:47
+archive/issue_comments_037522.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2018-09-17T06:28:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4942",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4942#issuecomment-37522",
+    "user": "tscrim"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by tscrim created at 2018-09-17 06:28:47
+archive/issue_comments_037523.json:
+```json
+{
+    "body": "Thank you. LGTM.",
+    "created_at": "2018-09-17T06:28:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4942",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4942#issuecomment-37523",
+    "user": "tscrim"
+}
+```
 
 Thank you. LGTM.
 
 
+
 ---
 
-Comment by vbraun created at 2018-09-19 08:09:26
+archive/issue_comments_037524.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2018-09-19T08:09:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4942",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4942#issuecomment-37524",
+    "user": "vbraun"
+}
+```
 
 Resolution: fixed

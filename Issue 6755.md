@@ -1,11 +1,21 @@
 # Issue 6755: sage-4.1.1 -- twist.py tests are seriously broken on OS X 10.5 PPC
 
-Issue created by migration from https://trac.sagemath.org/ticket/6755
-
-Original creator: was
-
-Original creation time: 2009-08-15 16:37:47
-
+archive/issues_006755.json:
+```json
+{
+    "body": "Assignee: boothby\n\n\n```\n\npdlc424:sage-4.1.1 wstein$ ./sage -t devel/sage/sage/server/simple/twist.py\nsage -t  \"devel/sage/sage/server/simple/twist.py\"           \n**********************************************************************\nFile \"/Users/wstein/build/sage-4.1.1/devel/sage/sage/server/simple/twist.py\", line 51:\n    sage: print get_url('http://localhost:%s/simple/compute?session=%s&code=2*2' % (port, session))\nExpected:\n    {\n    \"status\": \"done\",\n    \"files\": [],\n    \"cell_id\": 1\n    }\n    ___S_A_G_E___\n    4\nGot:\n    {\n    \"status\": \"computing\",\n    \"files\": [],\n    \"cell_id\": 1\n    }\n    ___S_A_G_E___\n    <BLANKLINE>\n**********************************************************************\nFile \"/Users/wstein/build/sage-4.1.1/devel/sage/sage/server/simple/twist.py\", line 95:\n    sage: print get_url('http://localhost:%s/simple/compute?session=%s&code=%s' % (port, session, urllib.quote(code)))\nExpected:\n    {\n    \"status\": \"done\",\n    \"files\": [\"a.txt\"],\n    \"cell_id\": 3\n    }\n    ___S_A_G_E___\nGot:\n    {\n    \"status\": \"done\",\n    \"files\": [],\n    \"cell_id\": 3\n    }\n    ___S_A_G_E___\n    <BLANKLINE>\n    Traceback (most recent call last):    h = open('a.txt', 'w'); h.write('test'); h.close()\n    NameError: name 'os' is not defined\n    THERE WAS AN ERROR LOADING THE SAGE LIBRARIES.  Try starting Sage from the command line to see what the error is.\n**********************************************************************\nFile \"/Users/wstein/build/sage-4.1.1/devel/sage/sage/server/simple/twist.py\", line 103:\n    sage: print get_url('http://localhost:%s/simple/file?session=%s&cell=3&file=a.txt' % (port, session))\nExpected:\n    test\nGot:\n    No such file a.txt in cell 3.\n**********************************************************************\n1 items had failures:\n   3 of  24 in __main__.example_0\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file /Users/wstein/build/sage-4.1.1/tmp/.doctest_twist.py\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6755\n\n",
+    "created_at": "2009-08-15T16:37:47Z",
+    "labels": [
+        "notebook",
+        "blocker",
+        "bug"
+    ],
+    "title": "sage-4.1.1 -- twist.py tests are seriously broken on OS X 10.5 PPC",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6755",
+    "user": "was"
+}
+```
 Assignee: boothby
 
 
@@ -69,9 +79,24 @@ For whitespace errors, see the file /Users/wstein/build/sage-4.1.1/tmp/.doctest_
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6755
+
+
+
+
 
 ---
 
-Comment by was created at 2009-10-02 16:18:34
+archive/issue_comments_055602.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-10-02T16:18:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6755",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6755#issuecomment-55602",
+    "user": "was"
+}
+```
 
 Resolution: fixed

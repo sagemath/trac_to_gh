@@ -1,19 +1,44 @@
 # Issue 4168: native mpfr polynomials
 
-Issue created by migration from https://trac.sagemath.org/ticket/4168
-
-Original creator: robertwb
-
-Original creation time: 2008-09-22 17:59:42
-
+archive/issues_004168.json:
+```json
+{
+    "body": "Assignee: tbd\n\n#4151 implements these, should be used by default for RR['x']\n\nIssue created by migration from https://trac.sagemath.org/ticket/4168\n\n",
+    "created_at": "2008-09-22T17:59:42Z",
+    "labels": [
+        "algebra",
+        "major",
+        "bug"
+    ],
+    "title": "native mpfr polynomials",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4168",
+    "user": "robertwb"
+}
+```
 Assignee: tbd
 
 #4151 implements these, should be used by default for RR['x']
 
+Issue created by migration from https://trac.sagemath.org/ticket/4168
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-10-26 03:35:47
+archive/issue_comments_030252.json:
+```json
+{
+    "body": "Hi Robert,\n\nwhat is the plan here?\n\nCheers,\n\nMichael",
+    "created_at": "2008-10-26T03:35:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4168",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4168#issuecomment-30252",
+    "user": "mabshoff"
+}
+```
 
 Hi Robert,
 
@@ -24,38 +49,95 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by robertwb created at 2008-10-27 16:32:24
+archive/issue_comments_030253.json:
+```json
+{
+    "body": "Well, this is pretty low-hanging fruit, but I've just got too many things higher on my priority list (sage and otherwise). \n\nIf no one else gets around to this, eventually I will. The code is there, it's just a matter of hooking it up and making sure it still works everywhere (and there might be some numerical noise as it handles polynomial multiplication in a more numerically stable way).",
+    "created_at": "2008-10-27T16:32:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4168",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4168#issuecomment-30253",
+    "user": "robertwb"
+}
+```
 
 Well, this is pretty low-hanging fruit, but I've just got too many things higher on my priority list (sage and otherwise). 
 
 If no one else gets around to this, eventually I will. The code is there, it's just a matter of hooking it up and making sure it still works everywhere (and there might be some numerical noise as it handles polynomial multiplication in a more numerically stable way).
 
 
+
 ---
+
+archive/issue_comments_030254.json:
+```json
+{
+    "body": "Attachment\n\nOK, I did this yesterday during bug days. Ran all tests and fixed a bit of numerical noise this morning.",
+    "created_at": "2008-10-31T17:54:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4168",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4168#issuecomment-30254",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 OK, I did this yesterday during bug days. Ran all tests and fixed a bit of numerical noise this morning.
 
 
+
 ---
 
-Comment by mhansen created at 2008-11-21 15:27:14
+archive/issue_comments_030255.json:
+```json
+{
+    "body": "Looks good and passes tests.",
+    "created_at": "2008-11-21T15:27:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4168",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4168#issuecomment-30255",
+    "user": "mhansen"
+}
+```
 
 Looks good and passes tests.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-21 20:19:41
+archive/issue_comments_030256.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-11-21T20:19:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4168",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4168#issuecomment-30256",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-21 20:19:41
+archive/issue_comments_030257.json:
+```json
+{
+    "body": "Merged in Sage 3.2.1.alpha0",
+    "created_at": "2008-11-21T20:19:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4168",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4168#issuecomment-30257",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.2.1.alpha0

@@ -1,11 +1,21 @@
 # Issue 7541: LexBFS and is_chordal
 
-Issue created by migration from https://trac.sagemath.org/ticket/7541
-
-Original creator: ncohen
-
-Original creation time: 2009-11-27 13:01:17
-
+archive/issues_007541.json:
+```json
+{
+    "body": "Assignee: rlm\n\nLex BFS is a variant of the breadth first search. It is used to detect whether a Graph is chordal. Both algorithms are described there :\n\nhttp://en.wikipedia.org/wiki/Lexicographic_breadth-first_search\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7541\n\n",
+    "created_at": "2009-11-27T13:01:17Z",
+    "labels": [
+        "graph theory",
+        "major",
+        "enhancement"
+    ],
+    "title": "LexBFS and is_chordal",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7541",
+    "user": "ncohen"
+}
+```
 Assignee: rlm
 
 Lex BFS is a variant of the breadth first search. It is used to detect whether a Graph is chordal. Both algorithms are described there :
@@ -14,42 +24,114 @@ http://en.wikipedia.org/wiki/Lexicographic_breadth-first_search
 
 Nathann
 
+Issue created by migration from https://trac.sagemath.org/ticket/7541
+
+
+
+
 
 ---
 
-Comment by ncohen created at 2009-11-29 13:03:58
+archive/issue_comments_063991.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-11-29T13:03:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7541",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7541#issuecomment-63991",
+    "user": "ncohen"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by rlm created at 2009-12-15 17:42:58
+archive/issue_comments_063992.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-12-15T17:42:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7541",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7541#issuecomment-63992",
+    "user": "rlm"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by rlm created at 2009-12-15 17:42:58
+archive/issue_comments_063993.json:
+```json
+{
+    "body": "Looks good!",
+    "created_at": "2009-12-15T17:42:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7541",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7541#issuecomment-63993",
+    "user": "rlm"
+}
+```
 
 Looks good!
 
 
+
 ---
 
-Comment by rlm created at 2009-12-15 17:45:03
+archive/issue_comments_063994.json:
+```json
+{
+    "body": "changed successor to neighbor_out",
+    "created_at": "2009-12-15T17:45:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7541",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7541#issuecomment-63994",
+    "user": "rlm"
+}
+```
 
 changed successor to neighbor_out
 
 
+
 ---
 
-Comment by mhansen created at 2009-12-19 21:26:33
+archive/issue_comments_063995.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-12-19T21:26:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7541",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7541#issuecomment-63995",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
+
+archive/issue_comments_063996.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-12-19T21:26:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7541",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7541#issuecomment-63996",
+    "user": "mhansen"
+}
+```
 
 Attachment

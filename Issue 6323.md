@@ -1,11 +1,21 @@
 # Issue 6323: optional doctest failure -- problem in species code (easy to fix)
 
-Issue created by migration from https://trac.sagemath.org/ticket/6323
-
-Original creator: was
-
-Original creation time: 2009-06-16 14:53:29
-
+archive/issues_006323.json:
+```json
+{
+    "body": "Assignee: tbd\n\n\n```\nsage -t -long --optional devel/sage/sage/combinat/species/library.py\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/combinat/species/library.py\", line 55:\n    sage: number, name, sseq = sloane_find(seq)[0]                    #optional\nExpected nothing\nGot:\n    Searching Sloane's online database...\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/combinat/species/library.py\", line 62:\n    sage: number, name, sseq = sloane_find(seq)[0]    #optional\nExpected nothing\nGot:\n    Searching Sloane's online database...\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/combinat/species/library.py\", line 101:\n    sage: number, name, sseq = sloane_find(seq)[0]                    #optional\nExpected nothing\nGot:\n    Searching Sloane's online database...\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/combinat/species/library.py\", line 135:\n    sage: number, name, sseq = sloane_find(seq)[0]                    #optional\nExpected nothing\nGot:\n    Searching Sloane's online database...\n**********************************************************************\n3 items had failures:\n   2 of  12 in __main__.example_1\n   1 of  12 in __main__.example_2\n   1 of   9 in __main__.example_3\n***Test Failed*** 4 failures.\nFor whitespace errors, see the file /home/wstein/build/sage-4.0.2.alpha3/tmp/.doctest_library.py\n\t [6.9 s]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6323\n\n",
+    "created_at": "2009-06-16T14:53:29Z",
+    "labels": [
+        "packages: optional",
+        "major",
+        "bug"
+    ],
+    "title": "optional doctest failure -- problem in species code (easy to fix)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6323",
+    "user": "was"
+}
+```
 Assignee: tbd
 
 
@@ -46,36 +56,97 @@ For whitespace errors, see the file /home/wstein/build/sage-4.0.2.alpha3/tmp/.do
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6323
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2013-06-21 15:28:39
+archive/issue_comments_050466.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2013-06-21T15:28:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6323",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6323#issuecomment-50466",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mhansen created at 2013-06-21 15:28:39
+archive/issue_comments_050467.json:
+```json
+{
+    "body": "Changing priority from major to trivial.",
+    "created_at": "2013-06-21T15:28:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6323",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6323#issuecomment-50467",
+    "user": "mhansen"
+}
+```
 
 Changing priority from major to trivial.
 
 
+
 ---
 
-Comment by mhansen created at 2013-06-21 15:28:39
+archive/issue_comments_050468.json:
+```json
+{
+    "body": "Changing component from packages: optional to combinatorics.",
+    "created_at": "2013-06-21T15:28:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6323",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6323#issuecomment-50468",
+    "user": "mhansen"
+}
+```
 
 Changing component from packages: optional to combinatorics.
 
 
+
 ---
+
+archive/issue_comments_050469.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2013-06-21T15:29:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6323",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6323#issuecomment-50469",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by ncohen created at 2013-06-25 12:37:21
+archive/issue_comments_050470.json:
+```json
+{
+    "body": "Helloooooooooo !!!\n\nCould you please change the \"#optional\" tag to \"# optional - internet\" ? It will never be run otherwise `:-)`\n\nNathann",
+    "created_at": "2013-06-25T12:37:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6323",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6323#issuecomment-50470",
+    "user": "ncohen"
+}
+```
 
 Helloooooooooo !!!
 
@@ -84,14 +155,38 @@ Could you please change the "#optional" tag to "# optional - internet" ? It will
 Nathann
 
 
+
 ---
 
-Comment by ncohen created at 2013-06-27 17:08:20
+archive/issue_comments_050471.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2013-06-27T17:08:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6323",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6323#issuecomment-50471",
+    "user": "ncohen"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
+
+archive/issue_comments_050472.json:
+```json
+{
+    "body": "Attachment\n\nHmmmmmm... The doctests do not pass because of a bug in Sage's interface with sloane, and #10358 fixes the file anyway !\n\nNathann",
+    "created_at": "2013-06-27T17:08:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6323",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6323#issuecomment-50472",
+    "user": "ncohen"
+}
+```
 
 Attachment
 
@@ -100,8 +195,19 @@ Hmmmmmm... The doctests do not pass because of a bug in Sage's interface with sl
 Nathann
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-08-13 08:46:11
+archive/issue_comments_050473.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2013-08-13T08:46:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6323",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6323#issuecomment-50473",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: duplicate

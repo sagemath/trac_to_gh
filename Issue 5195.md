@@ -1,11 +1,21 @@
 # Issue 5195: Multivariate factorization raises NotImplementedError in sage-3.3.alpha3
 
-Issue created by migration from https://trac.sagemath.org/ticket/5195
-
-Original creator: SimonKing
-
-Original creation time: 2009-02-06 10:06:18
-
+archive/issues_005195.json:
+```json
+{
+    "body": "Assignee: malb\n\nThe following happened to me on `sage.math`\n\n```\nsage: R=PolynomialRing(GF(2),5,'x')\nsage: p=R.random_element()\nsage: p.factor()\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n\n/home/SimonKing/.sage/temp/sage.math.washington.edu/11643/_home_SimonKing__sage_init_sage_0.py in <module>()\n\n/usr/local/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/multi_polynomial_libsingular.so in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular.factor (sage/rings/polynomial/multi_polynomial_libsingular.cpp:23156)()\n\nNotImplementedError: proof = True factorization not implemented.  Call factor with proof=False.\nsage: ver\nverbose      version      vert_to_ieq\nsage: version()\n'Sage Version 3.3.alpha3, Release Date: 2009-01-28'\nsage: p.factor(proof=False)\nx4\n```\n\n\nApparently the optional parameter 'proof' is 'True' by default, but the default case is not implemented.\n\nSince I believe factorization is frequently used, I think this bug is critical.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5195\n\n",
+    "created_at": "2009-02-06T10:06:18Z",
+    "labels": [
+        "commutative algebra",
+        "critical",
+        "bug"
+    ],
+    "title": "Multivariate factorization raises NotImplementedError in sage-3.3.alpha3",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5195",
+    "user": "SimonKing"
+}
+```
 Assignee: malb
 
 The following happened to me on `sage.math`
@@ -35,19 +45,45 @@ Apparently the optional parameter 'proof' is 'True' by default, but the default 
 
 Since I believe factorization is frequently used, I think this bug is critical.
 
+Issue created by migration from https://trac.sagemath.org/ticket/5195
+
+
+
+
 
 ---
 
-Comment by malb created at 2009-02-06 11:28:00
+archive/issue_comments_039828.json:
+```json
+{
+    "body": "Resolution: wontfix",
+    "created_at": "2009-02-06T11:28:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5195",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5195#issuecomment-39828",
+    "user": "malb"
+}
+```
 
 Resolution: wontfix
 
 
+
 ---
 
-Comment by malb created at 2009-02-06 11:28:00
+archive/issue_comments_039829.json:
+```json
+{
+    "body": "This is 'wontfix'\n* by default Sage will always attempt to give an answer which is provably correct\n* we can't give that answer for multivariate factoring because of a bug in Singular\n* thus we need to raise an error.",
+    "created_at": "2009-02-06T11:28:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5195",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5195#issuecomment-39829",
+    "user": "malb"
+}
+```
 
 This is 'wontfix'
- * by default Sage will always attempt to give an answer which is provably correct
- * we can't give that answer for multivariate factoring because of a bug in Singular
- * thus we need to raise an error.
+* by default Sage will always attempt to give an answer which is provably correct
+* we can't give that answer for multivariate factoring because of a bug in Singular
+* thus we need to raise an error.

@@ -1,11 +1,21 @@
 # Issue 5366: graphplot arrowheads are hidden in multi-edge digraphs
 
-Issue created by migration from https://trac.sagemath.org/ticket/5366
-
-Original creator: ekirkman
-
-Original creation time: 2009-02-24 23:53:18
-
+archive/issues_005366.json:
+```json
+{
+    "body": "Assignee: ekirkman, rlm\n\nKristin Lauter pointed out that the following input:\n\n```\nsage: S = SupersingularModule(389)\nsage: D = DiGraph(S.hecke_matrix(2))\nsage: D.plot(vertex_size=50).show(figsize=10)\n```\n\nproduces a graph where the arrowheads of some edges are hidden by the vertex.  (See attachment t2.png for output).\n\nThis is going to be a one-ish line fix that I can post as soon as I'm done building 3.3.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5366\n\n",
+    "created_at": "2009-02-24T23:53:18Z",
+    "labels": [
+        "graphics",
+        "major",
+        "bug"
+    ],
+    "title": "graphplot arrowheads are hidden in multi-edge digraphs",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5366",
+    "user": "ekirkman"
+}
+```
 Assignee: ekirkman, rlm
 
 Kristin Lauter pointed out that the following input:
@@ -21,31 +31,83 @@ produces a graph where the arrowheads of some edges are hidden by the vertex.  (
 This is going to be a one-ish line fix that I can post as soon as I'm done building 3.3.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5366
+
+
+
+
 
 ---
 
-Comment by ekirkman created at 2009-02-24 23:57:52
+archive/issue_comments_041332.json:
+```json
+{
+    "body": "Current buggy output.  (I will repost a new picture with the patch).",
+    "created_at": "2009-02-24T23:57:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5366",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5366#issuecomment-41332",
+    "user": "ekirkman"
+}
+```
 
 Current buggy output.  (I will repost a new picture with the patch).
 
 
+
 ---
+
+archive/issue_comments_041333.json:
+```json
+{
+    "body": "Attachment\n\nhere's the fix...",
+    "created_at": "2009-02-25T05:00:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5366",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5366#issuecomment-41333",
+    "user": "ekirkman"
+}
+```
 
 Attachment
 
 here's the fix...
 
 
+
 ---
+
+archive/issue_comments_041334.json:
+```json
+{
+    "body": "Attachment\n\nAnd the new plot output...",
+    "created_at": "2009-02-25T05:00:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5366",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5366#issuecomment-41334",
+    "user": "ekirkman"
+}
+```
 
 Attachment
 
 And the new plot output...
 
 
+
 ---
 
-Comment by rlm created at 2009-02-26 23:28:17
+archive/issue_comments_041335.json:
+```json
+{
+    "body": "I tested the patch against sage-3.3, and the first run gave errors of the form\n\n```\nsage -t  sage/graphs/graph.py\nTraceback (most recent call last):\n  File \"/Users/rlmill/sage-3.3/tmp/graph.py\", line 2, in <module>\n    from sage.all_cmdline import *; \n  File \"/Users/rlmill/sage-3.3/local/lib/python2.5/site-packages/sage/all_cmdline.py\", line 14, in <module>\n    from sage.all import *\n  File \"/Users/rlmill/sage-3.3/local/lib/python2.5/site-packages/sage/all.py\", line 64, in <module>\n    from sage.misc.all       import *         # takes a while\n  File \"/Users/rlmill/sage-3.3/local/lib/python2.5/site-packages/sage/misc/all.py\", line 70, in <module>\n    from sage_input import sage_input\n  File \"/Users/rlmill/sage-3.3/local/lib/python2.5/site-packages/sage/misc/sage_input.py\", line 163, in <module>\n    from sage.misc.functional import parent\n  File \"/Users/rlmill/sage-3.3/local/lib/python2.5/site-packages/sage/misc/functional.py\", line 34, in <module>\n    from sage.rings.complex_double import CDF\n  File \"complex_double.pyx\", line 85, in sage.rings.complex_double (sage/rings/complex_double.c:11756)\n  File \"/Users/rlmill/sage-3.3/local/lib/python2.5/site-packages/sage/rings/complex_field.py\", line 81, in ComplexField\n    C = ComplexField_class(prec)\n  File \"/Users/rlmill/sage-3.3/local/lib/python2.5/site-packages/sage/rings/complex_field.py\", line 161, in __init__\n    self._populate_coercion_lists_(coerce_list=[complex_number.RRtoCC(self._real_field(), self)])\n  File \"complex_number.pyx\", line 1745, in sage.rings.complex_number.RRtoCC.__init__ (sage/rings/complex_number.c:11017)\n  File \"map.pyx\", line 41, in sage.categories.map.Map.__init__ (sage/categories/map.c:1772)\n  File \"/Users/rlmill/sage-3.3/local/lib/python2.5/site-packages/sage/categories/homset.py\", line 140, in Hom\n    from sage.rings.homset import RingHomset\n  File \"/Users/rlmill/sage-3.3/local/lib/python2.5/site-packages/sage/rings/homset.py\", line 17, in <module>\n    import quotient_ring\n  File \"/Users/rlmill/sage-3.3/local/lib/python2.5/site-packages/sage/rings/quotient_ring.py\", line 30, in <module>\n    import sage.rings.polynomial.multi_polynomial_ideal\n  File \"/Users/rlmill/sage-3.3/local/lib/python2.5/site-packages/sage/rings/polynomial/multi_polynomial_ideal.py\", line 206, in <module>\n    from sage.interfaces.all import (singular as singular_default,\n  File \"/Users/rlmill/sage-3.3/local/lib/python2.5/site-packages/sage/interfaces/all.py\", line 7, in <module>\n    from gap import gap, gap_reset_workspace, gap_console, gap_version, is_GapElement, Gap\n  File \"/Users/rlmill/sage-3.3/local/lib/python2.5/site-packages/sage/interfaces/gap.py\", line 902, in <module>\n    age = now - os.path.getatime(GAP_DIR + '/' + F)\n  File \"/Users/rlmill/sage-3.3/local/lib/python2.5/posixpath.py\", line 147, in getatime\n    return os.stat(filename).st_atime\nOSError: [Errno 2] No such file or directory: '/Users/rlmill/.sage//gap//workspace-90824993'\n```\n\nbut the second run passed all tests. Since this has nothing to do with the patch, I'm assuming this was one-time weirdness.",
+    "created_at": "2009-02-26T23:28:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5366",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5366#issuecomment-41335",
+    "user": "rlm"
+}
+```
 
 I tested the patch against sage-3.3, and the first run gave errors of the form
 
@@ -91,9 +153,20 @@ OSError: [Errno 2] No such file or directory: '/Users/rlmill/.sage//gap//workspa
 but the second run passed all tests. Since this has nothing to do with the patch, I'm assuming this was one-time weirdness.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-26 23:34:22
+archive/issue_comments_041336.json:
+```json
+{
+    "body": "Replying to [comment:2 rlm]:\n> I tested the patch against sage-3.3, and the first run gave errors of the form\n\n<SNIP>\n> OSError: [Errno 2] No such file or directory: '/Users/rlmill/.sage//gap//workspace-90824993'\n\nIf you used -tp there is a race condition in the creation of the GAP workspace, so not surprises there if this was how you tested.\n\n> but the second run passed all tests. Since this has nothing to do with the patch, I'm assuming this was one-time weirdness.\n\nYep, the fix is to run \"sage -c\" once before doctesting with -tp so the GAP workspace is current and then the race condition goes away. This has annoyed me enough on sage.math [with -tp 18 :)] that I made this #5389 even though rlm's problem might be unrelated.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-26T23:34:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5366",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5366#issuecomment-41336",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:2 rlm]:
 > I tested the patch against sage-3.3, and the first run gave errors of the form
@@ -112,16 +185,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by rlm created at 2009-02-26 23:38:44
+archive/issue_comments_041337.json:
+```json
+{
+    "body": "I was testing in parallel, so that must have been what happened, since testing the individually failing files with -t worked fine.",
+    "created_at": "2009-02-26T23:38:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5366",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5366#issuecomment-41337",
+    "user": "rlm"
+}
+```
 
 I was testing in parallel, so that must have been what happened, since testing the individually failing files with -t worked fine.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-28 15:57:48
+archive/issue_comments_041338.json:
+```json
+{
+    "body": "Merged in Sage 3.4.rc0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-28T15:57:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5366",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5366#issuecomment-41338",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.4.rc0.
 
@@ -130,8 +225,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-28 15:57:48
+archive/issue_comments_041339.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-02-28T15:57:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5366",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5366#issuecomment-41339",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

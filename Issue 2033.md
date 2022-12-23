@@ -1,11 +1,21 @@
 # Issue 2033: dsage -- startall is broken
 
-Issue created by migration from https://trac.sagemath.org/ticket/2033
-
-Original creator: was
-
-Original creation time: 2008-02-02 10:22:40
-
+archive/issues_002033.json:
+```json
+{
+    "body": "Assignee: yi\n\nOn OS X (my laptop) this frequently happens, where I get the traceback\nafter a pause.  I've also seen this on Linux machines, but not on sage.math. \n\n\n```\nteragon:sage-2.10.1.rc4 was$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.10.1.rc4, Release Date: 2008-01-31                  |\n| Type notebook() for the GUI, and license() for information.        |\nsage: dsage.start_all()\nSpawned dsage_server.py -d /Users/was/.sage/dsage/db/dsage.db -p 8081 -l 0 -f /Users/was/.sage/dsage/server.log -c /Users/was/.sage/dsage/pubcert.pem -k /Users/was/.sage/dsage/cacert.pem --jobfailures 3 --statsfile=/Users/was/.sage/dsage/dsage.xml --ssl --noblock (pid = 13314)\n\nSpawned dsage_worker.py -s localhost -p 8081 -u was -w 2 --poll 1.0 -l 0 -f /Users/was/.sage/dsage/worker.log --privkey=/Users/was/.sage/dsage/dsage_key --pubkey=/Users/was/.sage/dsage/dsage_key.pub --priority=20  --ssl --noblock (pid = 13317)\n\n---------------------------------------------------------------------------\n<class 'sage.dsage.errors.exceptions.NotConnectedException'>Traceback (most recent call last)\n\n/Users/was/build/sage-2.10.1.rc4/<ipython console> in <module>()\n\n/Users/was/build/sage-2.10.1.rc4/local/lib/python2.5/site-packages/IPython/Prompts.py in __call__(self, arg)\n    521 \n    522             # and now call a possibly user-defined print mechanism\n--> 523             manipulated_val = self.display(arg)\n    524             \n    525             # user display hooks can change the variable to be stored in\n\n/Users/was/build/sage-2.10.1.rc4/local/lib/python2.5/site-packages/IPython/Prompts.py in _display(self, arg)\n    545         \"\"\"\n    546 \n--> 547         return self.shell.hooks.result_display(arg)\n    548 \n    549     # Assign the default display method:\n\n/Users/was/build/sage-2.10.1.rc4/local/lib/python2.5/site-packages/IPython/hooks.py in __call__(self, *args, **kw)\n    132             #print \"prio\",prio,\"cmd\",cmd #dbg\n    133             try:\n--> 134                 ret = cmd(*args, **kw)\n    135                 return ret\n    136             except ipapi.TryNext, exc:\n\n/Users/was/build/sage-2.10.1.rc4/local/lib/python2.5/site-packages/IPython/hooks.py in result_display(self, arg)\n    160     \n    161     if self.rc.pprint:\n--> 162         out = pformat(arg)\n    163         if '\\n' in out:\n    164             # So that multi-line strings line up with the left column of\n\n/Users/was/build/sage-2.10.1.rc4/local/lib/python2.5/pprint.py in pformat(self, object)\n    109     def pformat(self, object):\n    110         sio = _StringIO()\n--> 111         self._format(object, sio, 0, 0, {}, 0)\n    112         return sio.getvalue()\n    113 \n\n/Users/was/build/sage-2.10.1.rc4/local/lib/python2.5/pprint.py in _format(self, object, stream, indent, allowance, context, level)\n    127             self._readable = False\n    128             return\n--> 129         rep = self._repr(object, context, level - 1)\n    130         typ = _type(object)\n    131         sepLines = _len(rep) > (self._width - 1 - indent - allowance)\n\n/Users/was/build/sage-2.10.1.rc4/local/lib/python2.5/pprint.py in _repr(self, object, context, level)\n    193     def _repr(self, object, context, level):\n    194         repr, readable, recursive = self.format(object, context.copy(),\n--> 195                                                 self._depth, level)\n    196         if not readable:\n    197             self._readable = False\n\n/Users/was/build/sage-2.10.1.rc4/local/lib/python2.5/pprint.py in format(self, object, context, maxlevels, level)\n    205         and whether the object represents a recursive construct.\n    206         \"\"\"\n--> 207         return _safe_repr(object, context, maxlevels, level)\n    208 \n    209 \n\n/Users/was/build/sage-2.10.1.rc4/local/lib/python2.5/pprint.py in _safe_repr(object, context, maxlevels, level)\n    290         return format % _commajoin(components), readable, recursive\n    291 \n--> 292     rep = repr(object)\n    293     return rep, (rep and not rep.startswith('<')), False\n    294 \n\n/Users/was/build/sage-2.10.1.rc4/local/lib/python2.5/site-packages/sage/dsage/interface/dsage_interface.py in __repr__(self)\n    114 \n    115     def __repr__(self):\n--> 116         return self.__str__()\n    117         \n    118     def __str__(self):\n\n/Users/was/build/sage-2.10.1.rc4/local/lib/python2.5/site-packages/sage/dsage/interface/dsage_interface.py in __str__(self)\n    117         \n    118     def __str__(self):\n--> 119         self.check_connected()\n    120         return self.info_str % (self.server, self.port)\n    121 \n\n/Users/was/build/sage-2.10.1.rc4/local/lib/python2.5/site-packages/sage/dsage/interface/dsage_interface.py in check_connected(self)\n    352         \n    353         if self.remoteobj == None:\n--> 354             raise NotConnectedException\n    355         if self.remoteobj.broker.disconnected:\n    356             raise NotConnectedException\n\n<class 'sage.dsage.errors.exceptions.NotConnectedException'>: Not connected to a remote server.\nsage: \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2033\n\n",
+    "created_at": "2008-02-02T10:22:40Z",
+    "labels": [
+        "dsage",
+        "major",
+        "bug"
+    ],
+    "title": "dsage -- startall is broken",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2033",
+    "user": "was"
+}
+```
 Assignee: yi
 
 On OS X (my laptop) this frequently happens, where I get the traceback
@@ -117,10 +127,25 @@ sage:
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2033
+
+
+
+
 
 ---
 
-Comment by yi created at 2008-02-03 23:45:41
+archive/issue_comments_013154.json:
+```json
+{
+    "body": "Can you please apply this bundle and see if it fixes your startall problem? You need to do\n\nsage: d = dsage.start_all()\n\nUnfortunately I haven't figured out how to make the dsage() object callable yet. There is some funny business going on with defining the __call__ method and using a twisted reactor in a separate thread.\n\nhttp://sage.math.washington.edu/home/yqiang/dsage-2008-02-03.hg",
+    "created_at": "2008-02-03T23:45:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2033",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2033#issuecomment-13154",
+    "user": "yi"
+}
+```
 
 Can you please apply this bundle and see if it fixes your startall problem? You need to do
 
@@ -131,29 +156,73 @@ Unfortunately I haven't figured out how to make the dsage() object callable yet.
 http://sage.math.washington.edu/home/yqiang/dsage-2008-02-03.hg
 
 
+
 ---
 
-Comment by yi created at 2008-02-03 23:45:41
+archive/issue_comments_013155.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-02-03T23:45:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2033",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2033#issuecomment-13155",
+    "user": "yi"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by yi created at 2008-02-27 22:35:33
+archive/issue_comments_013156.json:
+```json
+{
+    "body": "This issue can be closed when #2322 is closed.",
+    "created_at": "2008-02-27T22:35:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2033",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2033#issuecomment-13156",
+    "user": "yi"
+}
+```
 
 This issue can be closed when #2322 is closed.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-24 16:58:33
+archive/issue_comments_013157.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-03-24T16:58:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2033",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2033#issuecomment-13157",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-24 16:58:33
+archive/issue_comments_013158.json:
+```json
+{
+    "body": "Acaccording to Yi this is fixed, so close this.",
+    "created_at": "2008-03-24T16:58:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2033",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2033#issuecomment-13158",
+    "user": "mabshoff"
+}
+```
 
 Acaccording to Yi this is fixed, so close this.

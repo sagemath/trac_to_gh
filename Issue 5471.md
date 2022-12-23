@@ -1,11 +1,21 @@
 # Issue 5471: loads(dumps()) does not seem to work as wanted for Symbolic Variables
 
-Issue created by migration from https://trac.sagemath.org/ticket/5471
-
-Original creator: GeorgSWeber
-
-Original creation time: 2009-03-10 20:12:58
-
+archive/issues_005471.json:
+```json
+{
+    "body": "Assignee: tbd\n\nConsider the following Sage session (Sage 3.4.rc1):\n\n```\nsage: var('a b c')\n(a, b, c)\nsage: first = a + b + c\nsage: first._operands[0]._operands[0]\na\nsage: first._operands[0]._operands[0] is a\nTrue\nsage: second = loads(dumps(first))\nsage: second._operands[0]._operands[0]\na\nsage: second._operands[0]._operands[0] is a\nFalse\n```\n\nThe last result is unexpected, and may lead to considerable confusion. The topic was raised by \"Maurizio\" in the thread http://groups.google.com/group/sage-devel/browse_thread/thread/9767e3a8d538438d/9ab45b4fa1ce2e36#9ab45b4fa1ce2e36\n\nIssue created by migration from https://trac.sagemath.org/ticket/5471\n\n",
+    "created_at": "2009-03-10T20:12:58Z",
+    "labels": [
+        "symbolics",
+        "minor",
+        "bug"
+    ],
+    "title": "loads(dumps()) does not seem to work as wanted for Symbolic Variables",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5471",
+    "user": "GeorgSWeber"
+}
+```
 Assignee: tbd
 
 Consider the following Sage session (Sage 3.4.rc1):
@@ -27,16 +37,42 @@ False
 
 The last result is unexpected, and may lead to considerable confusion. The topic was raised by "Maurizio" in the thread http://groups.google.com/group/sage-devel/browse_thread/thread/9767e3a8d538438d/9ab45b4fa1ce2e36#9ab45b4fa1ce2e36
 
+Issue created by migration from https://trac.sagemath.org/ticket/5471
+
+
+
+
 
 ---
 
-Comment by GeorgSWeber created at 2009-03-10 20:19:01
+archive/issue_comments_042457.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2009-03-10T20:19:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5471",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5471#issuecomment-42457",
+    "user": "GeorgSWeber"
+}
+```
 
 Resolution: duplicate
 
 
+
 ---
 
-Comment by GeorgSWeber created at 2009-03-10 20:19:01
+archive/issue_comments_042458.json:
+```json
+{
+    "body": "ups, duplicate to #5466, sorry for the fuzz",
+    "created_at": "2009-03-10T20:19:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5471",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5471#issuecomment-42458",
+    "user": "GeorgSWeber"
+}
+```
 
 ups, duplicate to #5466, sorry for the fuzz

@@ -1,11 +1,21 @@
 # Issue 2222: sage-2.10.2.alpha1 -- bessel_K is now broken -- higher precision doesn't work
 
-Issue created by migration from https://trac.sagemath.org/ticket/2222
-
-Original creator: was
-
-Original creation time: 2008-02-20 06:46:29
-
+archive/issues_002222.json:
+```json
+{
+    "body": "Assignee: was\n\n\n```\nsage -t  const.tex                                          **********************************************************************\nFile \"const.py\", line 4626:\n    : bessel_K(3,2,100)\nExpected:\n    0.64738539094863415315923557097\nGot:\n    0.647385390948634\n```\n\n\nNote that the later 100 input is totally ignored.  I think this is due\nto some use of scipy or something for some special functions by David\nJoyner recently??\n\nIssue created by migration from https://trac.sagemath.org/ticket/2222\n\n",
+    "created_at": "2008-02-20T06:46:29Z",
+    "labels": [
+        "calculus",
+        "blocker",
+        "bug"
+    ],
+    "title": "sage-2.10.2.alpha1 -- bessel_K is now broken -- higher precision doesn't work",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2222",
+    "user": "was"
+}
+```
 Assignee: was
 
 
@@ -24,10 +34,25 @@ Note that the later 100 input is totally ignored.  I think this is due
 to some use of scipy or something for some special functions by David
 Joyner recently??
 
+Issue created by migration from https://trac.sagemath.org/ticket/2222
+
+
+
+
 
 ---
 
-Comment by wdj created at 2008-02-20 11:23:57
+archive/issue_comments_014723.json:
+```json
+{
+    "body": "Yes. The correct syntax is bessel_K(3,2,\"pari\",100):\nsage: bessel_K(3,2,\"pari\",100)\n0.64738539094863415315923557097\nI ran \"sage -t\" on the file - I guess I should have run \"sage -testall\" also,\nto find things like this.",
+    "created_at": "2008-02-20T11:23:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2222",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2222#issuecomment-14723",
+    "user": "wdj"
+}
+```
 
 Yes. The correct syntax is bessel_K(3,2,"pari",100):
 sage: bessel_K(3,2,"pari",100)
@@ -36,9 +61,20 @@ I ran "sage -t" on the file - I guess I should have run "sage -testall" also,
 to find things like this.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-20 11:30:53
+archive/issue_comments_014724.json:
+```json
+{
+    "body": "You should just make pari the default algorithm, which would fix the issue in all other files.\n\nCheers,\n\nMichael",
+    "created_at": "2008-02-20T11:30:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2222",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2222#issuecomment-14724",
+    "user": "mabshoff"
+}
+```
 
 You should just make pari the default algorithm, which would fix the issue in all other files.
 
@@ -47,9 +83,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by wdj created at 2008-02-20 19:17:47
+archive/issue_comments_014725.json:
+```json
+{
+    "body": "As I see it. pari is the default:\ndef bessel_K(nu,z,alg=\"pari\",prec=53):\nI must be missing something obvious or else const.tex needs to change.\n\nsage: bessel_K(3,2,\"pari\",100)\n0.64738539094863415315923557097\nsage: bessel_K(3,2,prec=100)\n0.64738539094863415315923557097\nsage: bessel_K(3,2,100)\n0.647385390948634\n\nI'm happy to be corrected but it seems to me that the patch is okay,\nit's just that it's broken const.tex.",
+    "created_at": "2008-02-20T19:17:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2222",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2222#issuecomment-14725",
+    "user": "wdj"
+}
+```
 
 As I see it. pari is the default:
 def bessel_K(nu,z,alg="pari",prec=53):
@@ -66,9 +113,20 @@ I'm happy to be corrected but it seems to me that the patch is okay,
 it's just that it's broken const.tex.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-21 17:05:56
+archive/issue_comments_014726.json:
+```json
+{
+    "body": "The patch at #2246 fixes the issue -> close this ticket.\n\nCheers,\n\nMichael",
+    "created_at": "2008-02-21T17:05:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2222",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2222#issuecomment-14726",
+    "user": "mabshoff"
+}
+```
 
 The patch at #2246 fixes the issue -> close this ticket.
 
@@ -77,8 +135,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-21 17:05:56
+archive/issue_comments_014727.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-02-21T17:05:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2222",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2222#issuecomment-14727",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

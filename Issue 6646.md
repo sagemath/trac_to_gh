@@ -1,11 +1,21 @@
 # Issue 6646: R doctest failed
 
-Issue created by migration from https://trac.sagemath.org/ticket/6646
-
-Original creator: adavid
-
-Original creation time: 2009-07-28 05:54:48
-
+archive/issues_006646.json:
+```json
+{
+    "body": "Assignee: was\n\nKeywords: doctest\n\n\n```\nsage -t  \"devel/sage/sage/interfaces/r.py\"                  \n**********************************************************************\nFile \"/home/anthonyd/sage-4.1.1.alpha0/devel/sage/sage/interfaces/r.py\", line 83\n8:\n    sage: r.completions('tes')\nExpected:\n    ['testPlatformEquivalence', 'testVirtual']\nGot:\n    <BLANKLINE>\n    Building R command completion list (this takes\n    a few seconds only the first time you do it).\n    To force rebuild later, delete /home/anthonyd/.sage//r_commandlist.sobj.\n    ['testPlatformEquivalence', 'testVirtual']\n**********************************************************************\n1 items had failures:\n   1 of   3 in __main__.example_34\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/anthonyd/sage-4.1.1.alpha0/tmp/.doctest_r.py\n\n\ncat /home/anthonyd/sage-4.1.1.alpha0/tmp/.doctest_r.py\nsage -t  \"devel/sage/sage/interfaces/r.py\" \n# -*- coding: utf-8 -*-\nfrom sage.all_cmdline import *; \nimport sage.plot.plot; sage.plot.plot.DOCTEST_MODE=True\n\ndef warning_function(f):\n    import warnings\n\n    def doctest_showwarning(message, category, filename, lineno, file=f, line=None):\n        try:\n            file.write(warnings.formatwarning(message, category, 'doctest', lineno, line))\n        except IOError:\n            pass # the file (probably stdout) is invalid\n    return doctest_showwarning\n\ndef change_warning_output(file):\n    import warnings\n    warnings.showwarning = warning_function(file)\ndef example_0():\tr\"\"\">>> set_random_seed(0L)\n\n>>> change_warning_output(sys.stdout)\n\n\n   T-Test using R\n\n   Arguments:\n      x, y -- vectors of same length\n      conf_level -- confidence level of the interval, [0,1) in percent\n\n   Result:\n      Tuple: (p-value, R return object)\n\n   Example:\n      >>> a, b = ttest([Integer(1),Integer(2),Integer(3),Integer(4),Integer(5)],[Integer(1),Integer(2),Integer(3),RealNumber('3.5'),RealNumber('5.121')]); a###line 30:_sage_    >>> a, b = ttest([1,2,3,4,5],[1,2,3,3.5,5.121]); a\n      0.941026372027427\n   \"\"\"\n\n\nif __name__ ==  '__main__':\n    verbose = False\n    do_timeit = False\n    output_filename = '/home/anthonyd/sage-4.1.1.alpha0/devel/sage/sage/stats/r.py.timeit.sobj'\n\n    import sys\n    sys.path = sys.path + ['/home/anthonyd/sage-4.1.1.alpha0/local/bin']\n    import sagedoctest\n\n    # execfile('/home/anthonyd/sage-4.1.1.alpha0/devel/sage/sage/stats/r.py')\n    m = sys.modules[__name__]\n    m.__file__ = '/home/anthonyd/sage-4.1.1.alpha0/devel/sage/sage/stats/r.py'\n\n    # configure special sage doc test runner\n    runner = sagedoctest.SageDocTestRunner(checker=None, verbose=verbose, optionflags=0)\n    runner._collect_timeit_stats = do_timeit\n    runner._reset_random_seed = True\n\n    runner = sagedoctest.testmod_returning_runner(m,\n                   # filename='/home/anthonyd/sage-4.1.1.alpha0/devel/sage/sage/stats/r.py',\n                   verbose=verbose,\n                   globs=globals(),\n                   runner=runner)\n    runner.save_timeit_stats_to_file_named(output_filename)\n    quit_sage(verbose=False)\n    sys.exit(runner.failures)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6646\n\n",
+    "created_at": "2009-07-28T05:54:48Z",
+    "labels": [
+        "interfaces",
+        "minor",
+        "bug"
+    ],
+    "title": "R doctest failed",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6646",
+    "user": "adavid"
+}
+```
 Assignee: was
 
 Keywords: doctest
@@ -100,10 +110,25 @@ if __name__ ==  '__main__':
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6646
+
+
+
+
 
 ---
 
-Comment by GeorgSWeber created at 2009-07-28 17:08:40
+archive/issue_comments_054508.json:
+```json
+{
+    "body": "That looks like #6594, fixed in Sage-4.1.1.alpha1.\n\nThe paths displayed in the output above indicate that Sage-4.1.1.alpha0 was tested, where the bug definitely occured.\n\nSo IMHO this ticket can safely be closed as a dupe.\n\nCheers,\nGeorg",
+    "created_at": "2009-07-28T17:08:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6646",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6646#issuecomment-54508",
+    "user": "GeorgSWeber"
+}
+```
 
 That looks like #6594, fixed in Sage-4.1.1.alpha1.
 
@@ -115,22 +140,55 @@ Cheers,
 Georg
 
 
+
 ---
 
-Comment by mvngu created at 2009-07-28 18:11:15
+archive/issue_comments_054509.json:
+```json
+{
+    "body": "The path name looks like it's Sage 4.1.1.alpha0. But it may be that adavid upgraded to Sage 4.1.1.alpha1 with that version and then ran doctests. One way to make sure is for adavid to have a look at the patch for #6594 and compare that with the file `sage/interfaces/r.py` in the version he doctested.",
+    "created_at": "2009-07-28T18:11:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6646",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6646#issuecomment-54509",
+    "user": "mvngu"
+}
+```
 
 The path name looks like it's Sage 4.1.1.alpha0. But it may be that adavid upgraded to Sage 4.1.1.alpha1 with that version and then ran doctests. One way to make sure is for adavid to have a look at the patch for #6594 and compare that with the file `sage/interfaces/r.py` in the version he doctested.
 
 
+
 ---
 
-Comment by mvngu created at 2009-08-12 16:10:36
+archive/issue_comments_054510.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2009-08-12T16:10:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6646",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6646#issuecomment-54510",
+    "user": "mvngu"
+}
+```
 
 Resolution: duplicate
 
 
+
 ---
 
-Comment by mvngu created at 2009-08-12 16:10:36
+archive/issue_comments_054511.json:
+```json
+{
+    "body": "This is a duplicate of #6594.",
+    "created_at": "2009-08-12T16:10:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6646",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6646#issuecomment-54511",
+    "user": "mvngu"
+}
+```
 
 This is a duplicate of #6594.

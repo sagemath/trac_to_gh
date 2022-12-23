@@ -1,27 +1,63 @@
 # Issue 2979: clisp -- try to build using -O2; if that fails try again but using -O0.
 
-Issue created by migration from https://trac.sagemath.org/ticket/2979
-
-Original creator: was
-
-Original creation time: 2008-04-21 02:37:55
-
+archive/issues_002979.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nThis is needed on some gcc-4.3 installs, some architectures, etc. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2979\n\n",
+    "created_at": "2008-04-21T02:37:55Z",
+    "labels": [
+        "build",
+        "blocker",
+        "bug"
+    ],
+    "title": "clisp -- try to build using -O2; if that fails try again but using -O0.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2979",
+    "user": "was"
+}
+```
 Assignee: mabshoff
 
 This is needed on some gcc-4.3 installs, some architectures, etc. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2979
+
+
+
+
 
 ---
 
-Comment by was created at 2008-04-21 15:42:57
+archive/issue_comments_020517.json:
+```json
+{
+    "body": "Please see http://sage.math.washington.edu/home/was/build/sage-3.0.rc1/spkg/standard/clisp-2.41.p14.spkg\nwhich at least sets up a simple way to do this.  It might not work though because of CFLAGS possibly being ignored by clisp's build system.",
+    "created_at": "2008-04-21T15:42:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2979",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2979#issuecomment-20517",
+    "user": "was"
+}
+```
 
 Please see http://sage.math.washington.edu/home/was/build/sage-3.0.rc1/spkg/standard/clisp-2.41.p14.spkg
 which at least sets up a simple way to do this.  It might not work though because of CFLAGS possibly being ignored by clisp's build system.
 
 
+
 ---
 
-Comment by was created at 2008-04-21 16:51:19
+archive/issue_comments_020518.json:
+```json
+{
+    "body": "Do not use the spkg I suggested above.  It will just lead to the following error.  Throwing\nin a make distclean to spkg-do-install would probably fix the problem though.  That said,\nthis will not fix the user's problem on the mailing list.  It fixes *some* users's problems\nthough (e.g., Martin Albrecht).\n\n```\nconfigure: loading cache config.cache\nconfigure: error: `CFLAGS' was not set in the previous run\nconfigure: error: changes in the environment can compromise the build\nconfigure: error: run `make distclean' and/or `rm config.cache' and\nstart over\nError configuring clisp\n\nreal    1m19.616s\nuser    0m33.158s\nsys     0m22.378s\nsage: An error occurred while installing clisp-2.41.p14\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /home/zarathustra/Download/sage-3.0.rc1/install.log.  Describe your\ncomputer, operating system, etc.\nIf you want to try to fix the problem, yourself *don't* just cd to\n/home/zarathustra/Download/sage-3.0.rc1/spkg/build/clisp-2.41.p14 and\ntype 'make'.\nInstead type \"/home/zarathustra/Download/sage-3.0.rc1/sage -sh\"\nin order to set all environment variables correctly, then cd to\n/home/zarathustra/Download/sage-3.0.rc1/spkg/build/clisp-2.41.p14\n(When you are done debugging, you can type \"exit\" to leave the\nsubshell.)\nYou must set the SAGE_ROOT environment variable or\nrun this script from the SAGE_ROOT or\nSAGE_ROOT/local/bin/ directory.\nclisp-2.41.p14\nMachine:\nLinux localhost.localdomain 2.6.25-1.fc9.i686 #1 SMP Thu Apr 17\n01:47:10 EDT 2008 i686 i686 i386 GNU/Linux\n\nAnd I get the same error as above after setting the CFLAGS\n```\n",
+    "created_at": "2008-04-21T16:51:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2979",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2979#issuecomment-20518",
+    "user": "was"
+}
+```
 
 Do not use the spkg I suggested above.  It will just lead to the following error.  Throwing
 in a make distclean to spkg-do-install would probably fix the problem though.  That said,
@@ -65,9 +101,20 @@ And I get the same error as above after setting the CFLAGS
 
 
 
+
 ---
 
-Comment by was created at 2008-04-21 20:03:00
+archive/issue_comments_020519.json:
+```json
+{
+    "body": "\n```\n12:57 < gginiu> wstein: I made that clisp build... I noticed that CFLAGS takes no effect, they are set in \n                Makefile, and I only had to enable fix that is there for 4.2.x, patches/makefile.in line \n                1127, changed 4.2* into 4.[2-3]*\n```\n",
+    "created_at": "2008-04-21T20:03:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2979",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2979#issuecomment-20519",
+    "user": "was"
+}
+```
 
 
 ```
@@ -78,18 +125,40 @@ Comment by was created at 2008-04-21 20:03:00
 
 
 
+
 ---
 
-Comment by mhansen created at 2008-04-21 20:39:44
+archive/issue_comments_020520.json:
+```json
+{
+    "body": "There is a new spkg here: http://giniu.ravenlord.ws/clisp-2.41.p15.spkg\n\nIt worked fine on my Ubuntu 7.10 64-bit Core 2 Duo.",
+    "created_at": "2008-04-21T20:39:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2979",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2979#issuecomment-20520",
+    "user": "mhansen"
+}
+```
 
 There is a new spkg here: http://giniu.ravenlord.ws/clisp-2.41.p15.spkg
 
 It worked fine on my Ubuntu 7.10 64-bit Core 2 Duo.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-22 04:57:41
+archive/issue_comments_020521.json:
+```json
+{
+    "body": "The spkg at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0/final/clisp-2.41.p14.spkg\n\ncontains the fix to force \"-O0\" with gcc 4.3.\n\nCredit goes to Andrzej Giniewicz",
+    "created_at": "2008-04-22T04:57:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2979",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2979#issuecomment-20521",
+    "user": "mabshoff"
+}
+```
 
 The spkg at
 
@@ -100,9 +169,20 @@ contains the fix to force "-O0" with gcc 4.3.
 Credit goes to Andrzej Giniewicz
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-22 05:00:20
+archive/issue_comments_020522.json:
+```json
+{
+    "body": "Spkg looks good to me. Positive review.\n\nCheers,\n\nMichael",
+    "created_at": "2008-04-22T05:00:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2979",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2979#issuecomment-20522",
+    "user": "mabshoff"
+}
+```
 
 Spkg looks good to me. Positive review.
 
@@ -111,15 +191,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-22 05:11:54
+archive/issue_comments_020523.json:
+```json
+{
+    "body": "Merged in Sage 3.0.final",
+    "created_at": "2008-04-22T05:11:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2979",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2979#issuecomment-20523",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.final
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-22 05:11:54
+archive/issue_comments_020524.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-04-22T05:11:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2979",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2979#issuecomment-20524",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

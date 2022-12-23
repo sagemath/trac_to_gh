@@ -1,21 +1,46 @@
 # Issue 8437: wrong unix rights/permissions of some files after make dist
 
-Issue created by migration from https://trac.sagemath.org/ticket/8437
-
-Original creator: zimmerma
-
-Original creation time: 2010-03-04 19:12:41
-
+archive/issues_008437.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  thome\n\nsee #1240 for the description (I was told not to reopen tickets).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8437\n\n",
+    "created_at": "2010-03-04T19:12:41Z",
+    "labels": [
+        "distribution",
+        "blocker",
+        "bug"
+    ],
+    "title": "wrong unix rights/permissions of some files after make dist",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8437",
+    "user": "zimmerma"
+}
+```
 Assignee: tbd
 
 CC:  thome
 
 see #1240 for the description (I was told not to reopen tickets).
 
+Issue created by migration from https://trac.sagemath.org/ticket/8437
+
+
+
+
 
 ---
 
-Comment by zimmerma created at 2010-03-05 08:47:20
+archive/issue_comments_075739.json:
+```json
+{
+    "body": "In fact my colleague did not really use `make dist`, but `mv` to install Sage.\nThus I did check again with `make dist`, and there are still wrong permissions:\n\n```\npasta% find /localdisk/tmp/sage433_install \\! -perm -644 -ls\n...\n1975926   76 -rw-r-----   1 zimmerma caramel     71306 Jan 19 00:37 /localdisk/tmp/sage433_install/sage/local/share/moin/underlay/pages/LanguageSetup/attachments/Brazilian_Portuguese--optional_system_pages.zip\n1975927    4 -rw-r-----   1 zimmerma caramel      1848 Jan 19 00:37 /localdisk/tmp/sage433_install/sage/local/share/moin/underlay/pages/LanguageSetup/attachments/Polish--optional_system_pages.zip\n1975928   12 -rw-r-----   1 zimmerma caramel      8587 Jan 19 00:37 /localdisk/tmp/sage433_install/sage/local/share/moin/underlay/pages/LanguageSetup/attachments/Latvian--essential_system_pages.zip\n1975929    8 -rw-r-----   1 zimmerma caramel      4865 Jan 19 00:37 /localdisk/tmp/sage433_install/sage/local/share/moin/underlay/pages/LanguageSetup/attachments/Croatian--essential_system_pages.zip\n2089187    4 -rw-r-----   1 zimmerma caramel         9 Jan 19 00:33 /localdisk/tmp/sage433_install/sage/local/share/moin/underlay/pages/LanguageSetup/current\n1388864 8836 -r-xr-xr-x   1 zimmerma caramel   9029932 Mar  4 15:24 /localdisk/tmp/sage433_install/sage/local/lib/libpython2.6.a\n3426776    4 -rwxr-x---   1 zimmerma caramel      1533 Mar  4 16:58 /localdisk/tmp/sage433_install/sage/local/lib/gap-4.4.12/terminfo/c/cygwin\n3426777    4 -rwxr-x---   1 zimmerma caramel      1885 Mar  4 16:58 /localdisk/tmp/sage433_install/sage/local/lib/gap-4.4.12/terminfo/r/rxvt\n2050275    4 -rwxr-x---   1 zimmerma caramel      2100 Mar  4 16:58 /localdisk/tmp/sage433_install/sage/local/lib/gap-4.4.12/terminfo/x/xterm\n```\n",
+    "created_at": "2010-03-05T08:47:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8437",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8437#issuecomment-75739",
+    "user": "zimmerma"
+}
+```
 
 In fact my colleague did not really use `make dist`, but `mv` to install Sage.
 Thus I did check again with `make dist`, and there are still wrong permissions:
@@ -36,9 +61,20 @@ pasta% find /localdisk/tmp/sage433_install \! -perm -644 -ls
 
 
 
+
 ---
 
-Comment by zimmerma created at 2010-03-05 14:57:22
+archive/issue_comments_075740.json:
+```json
+{
+    "body": "A followup from Emmanuel Thome: the following command should give no output (from an extracted\ntarball of Sage):\n\n```\nfind . -name '*.spkg' | while read f ; do bzip2 -dc $f | tar tvf - | grep -v '^.rw.r..r..'  ; done\n```\n\nCurrently (in sage-4.3.3) it gives many hundred lines:\n\n```\n...\n-rw-r----- wstein/wstein   2382 2006-11-12 23:45 lapack-20071123.p1/src/manpages/man/manl/clatzm.l\n-rw-r----- wstein/wstein   1969 2006-11-12 23:45 lapack-20071123.p1/src/manpages/man/manl/dlange.l\n-rw-r----- wstein/wstein   8989 2006-11-13 23:26 lapack-20071123.p1/src/manpages/man/manl/sstemr.l\n-rw-r----- wstein/wstein   1950 2006-11-12 23:45 lapack-20071123.p1/src/manpages/man/manl/zhpgst.l\n-rw-r----- wstein/wstein   2985 2006-11-12 23:45 lapack-20071123.p1/src/manpages/man/manl/zunmqr.l\n-rwx------ jaap/jaap      1626 2010-01-25 22:11 givaro-3.2.13rc2.p0/spkg-install\n-rw------- jaap/jaap      4041 2010-01-28 14:00 givaro-3.2.13rc2.p0/SPKG.txt\n```\n",
+    "created_at": "2010-03-05T14:57:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8437",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8437#issuecomment-75740",
+    "user": "zimmerma"
+}
+```
 
 A followup from Emmanuel Thome: the following command should give no output (from an extracted
 tarball of Sage):
@@ -62,9 +98,20 @@ Currently (in sage-4.3.3) it gives many hundred lines:
 
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-23 04:56:12
+archive/issue_comments_075741.json:
+```json
+{
+    "body": "I agree with the comment from #1240: \n\n> I declare this as a blocker since this issue should be fixed *once for all* (and automatically checked before doing a release).\n\nThere is no patch doing this (the automatic checking, in particular), so I'm delaying this to Sage 5.0.  Also, this should probably be a meta-ticket: it should point to other tickets, each dealing with a specific spkg which has this problem.",
+    "created_at": "2010-04-23T04:56:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8437",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8437#issuecomment-75741",
+    "user": "jhpalmieri"
+}
+```
 
 I agree with the comment from #1240: 
 
@@ -73,9 +120,20 @@ I agree with the comment from #1240:
 There is no patch doing this (the automatic checking, in particular), so I'm delaying this to Sage 5.0.  Also, this should probably be a meta-ticket: it should point to other tickets, each dealing with a specific spkg which has this problem.
 
 
+
 ---
 
-Comment by zimmerma created at 2010-04-23 07:46:25
+archive/issue_comments_075742.json:
+```json
+{
+    "body": "> There is no patch doing this (the automatic checking, in particular), so I'm delaying this to Sage 5.0. \n\nstrange way to deal with a blocker ticket... Two years ago, such tickets were considered very seriously by the release manager.\n\nPaul Zimmermann",
+    "created_at": "2010-04-23T07:46:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8437",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8437#issuecomment-75742",
+    "user": "zimmerma"
+}
+```
 
 > There is no patch doing this (the automatic checking, in particular), so I'm delaying this to Sage 5.0. 
 
@@ -84,18 +142,40 @@ strange way to deal with a blocker ticket... Two years ago, such tickets were co
 Paul Zimmermann
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-23 14:16:07
+archive/issue_comments_075743.json:
+```json
+{
+    "body": "What else can I do about it?  I'm not even sure it should be labeled a blocker, since Sage seems to function perfectly well without fixing it.\n\nPerhaps you can be the release manager next, rather than suggest that I'm not taking things seriously.",
+    "created_at": "2010-04-23T14:16:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8437",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8437#issuecomment-75743",
+    "user": "jhpalmieri"
+}
+```
 
 What else can I do about it?  I'm not even sure it should be labeled a blocker, since Sage seems to function perfectly well without fixing it.
 
 Perhaps you can be the release manager next, rather than suggest that I'm not taking things seriously.
 
 
+
 ---
 
-Comment by zimmerma created at 2010-04-23 14:26:40
+archive/issue_comments_075744.json:
+```json
+{
+    "body": "> I'm not even sure it should be labeled a blocker, since Sage seems to function perfectly well without fixing it. \n\nplease look at comment 6 in #1240: Sage does not function at all in a multi-user environment.\nI just ask that this item should be added in the \"TODO\" list of the release manager: just run the\ncommand given in comment 2 above before each release (it takes less than one minute) and fix the\ncorresponding permissions if needed.",
+    "created_at": "2010-04-23T14:26:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8437",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8437#issuecomment-75744",
+    "user": "zimmerma"
+}
+```
 
 > I'm not even sure it should be labeled a blocker, since Sage seems to function perfectly well without fixing it. 
 
@@ -105,9 +185,20 @@ command given in comment 2 above before each release (it takes less than one min
 corresponding permissions if needed.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-23 14:42:53
+archive/issue_comments_075745.json:
+```json
+{
+    "body": "To fix the corresponding permissions, I would have to modify over 20 spkgs.  Each of these changes would need review -- the release manager can't just make those changes.  Furthermore, most of those have no effect on Sage's functioning, since most of the files go away after the corresponding spkgs are installed.  If I look at permissions after I've built Sage, I see\n\n```\n392669357        8 -rwxr-x---    1 palmieri admin        1533 Apr 22 00:25 /Applications/sage_builds/sage-4.4.alpha2/local/lib/gap-4.4.12/terminfo/c/cygwin\n392669359        8 -rwxr-x---    1 palmieri admin        1885 Apr 22 00:25 /Applications/sage_builds/sage-4.4.alpha2/local/lib/gap-4.4.12/terminfo/r/rxvt\n392669361        8 -rwxr-x---    1 palmieri admin        2100 Apr 22 00:25 /Applications/sage_builds/sage-4.4.alpha2/local/lib/gap-4.4.12/terminfo/x/xterm\n392451131    13928 -r-xr-xr-x    1 palmieri admin     7129840 Apr 21 20:53 /Applications/sage_builds/sage-4.4.alpha2/local/lib/libpython2.6.a\n```\n\nand a lot of files related to the moin package.  The python library is clearly not a problem, since the only permission issue is that it's not writeable.  Do the gap files really cause Sage to not work in a multi-user environment?\n\nI would assert that comment 6 at #1240 should be ignored, because as you say above, your colleague didn't install Sage properly in the first place.  Please provide other evidence that Sage doesn't function without this ticket being fixed, and then upgrade this to a blocker again.",
+    "created_at": "2010-04-23T14:42:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8437",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8437#issuecomment-75745",
+    "user": "jhpalmieri"
+}
+```
 
 To fix the corresponding permissions, I would have to modify over 20 spkgs.  Each of these changes would need review -- the release manager can't just make those changes.  Furthermore, most of those have no effect on Sage's functioning, since most of the files go away after the corresponding spkgs are installed.  If I look at permissions after I've built Sage, I see
 
@@ -123,30 +214,63 @@ and a lot of files related to the moin package.  The python library is clearly n
 I would assert that comment 6 at #1240 should be ignored, because as you say above, your colleague didn't install Sage properly in the first place.  Please provide other evidence that Sage doesn't function without this ticket being fixed, and then upgrade this to a blocker again.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-23 14:42:53
+archive/issue_comments_075746.json:
+```json
+{
+    "body": "Changing priority from blocker to critical.",
+    "created_at": "2010-04-23T14:42:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8437",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8437#issuecomment-75746",
+    "user": "jhpalmieri"
+}
+```
 
 Changing priority from blocker to critical.
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-10-05 09:47:47
+archive/issue_comments_075747.json:
+```json
+{
+    "body": "Closing this since\n1. Many of the files in spkgs now have the correct permissions.\n2. Even if they don't, it seems all files are *installed* with the correct permissions, which is really what matters, I checked this with:\n\n```\nfind . -not \\( \\( -type f -perm 0644 \\) -or \\( -type f -perm 0755 \\) -or \\( -type d -perm 0755 \\) -or -type l \\) -ls\n```\n\n3. The issue of running Sage as a different user is being tracked at #5155.  If non-readable files would be a problem, then the doctests would fail.",
+    "created_at": "2012-10-05T09:47:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8437",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8437#issuecomment-75747",
+    "user": "jdemeyer"
+}
+```
 
 Closing this since
- 1. Many of the files in spkgs now have the correct permissions.
- 2. Even if they don't, it seems all files are _installed_ with the correct permissions, which is really what matters, I checked this with:
+1. Many of the files in spkgs now have the correct permissions.
+2. Even if they don't, it seems all files are *installed* with the correct permissions, which is really what matters, I checked this with:
 
 ```
 find . -not \( \( -type f -perm 0644 \) -or \( -type f -perm 0755 \) -or \( -type d -perm 0755 \) -or -type l \) -ls
 ```
 
- 3. The issue of running Sage as a different user is being tracked at #5155.  If non-readable files would be a problem, then the doctests would fail.
+3. The issue of running Sage as a different user is being tracked at #5155.  If non-readable files would be a problem, then the doctests would fail.
+
 
 
 ---
 
-Comment by jdemeyer created at 2012-10-05 09:47:47
+archive/issue_comments_075748.json:
+```json
+{
+    "body": "Resolution: worksforme",
+    "created_at": "2012-10-05T09:47:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8437",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8437#issuecomment-75748",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: worksforme

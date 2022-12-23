@@ -1,11 +1,21 @@
 # Issue 2430: is_EuclideanDomain() gives wrong answers
 
-Issue created by migration from https://trac.sagemath.org/ticket/2430
-
-Original creator: cremona
-
-Original creation time: 2008-03-08 20:35:42
-
+archive/issues_002430.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nIn 2.10.2 and 2.10.3.rc2:\n\n```\nsage: is_EuclideanDomain(ZZ)\nFalse\n```\n\n\nI looked to whether any of Sage's rings would ever return True for this function, and came up with pAdicRingGeneric and no others:\n\n```\nsage: is_EuclideanDomain(pAdicRing(7))\nTrue\n```\n\n\nSo this idea (to have EuclideanDomains as a class) just has not been properly implemented.\nAs a start we could make rings which are certainly Euclidean (e,g, ZZ and univariate polynomials over a field) be derived from EuclideanDomain instead of PrincipalIdealDomain as they are now.\n\nThat would not be a complete solution, since (for example) some rings of integers of number fields are Euclidean, though it is not easy to say which;  and there is no functionality to answer the question \"is R Euclidean\" except to see if R's class is (derived from) EuclideanDomain, which for rings of integers it never will be!\n\nOne other puzzling -- and inconsistent -- thing is that EuclideanDomainElement has a broader scope than EuclideanDomain:\n\n```\nsage: is_EuclideanDomain(ZZ)\nFalse\nsage: is_EuclideanDomainElement(ZZ(1))\nTrue\n\nsage: is_EuclideanDomain(R)\nFalse\nsage: is_EuclideanDomainElement(x)\nTrue\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2430\n\n",
+    "created_at": "2008-03-08T20:35:42Z",
+    "labels": [
+        "Cygwin",
+        "major",
+        "bug"
+    ],
+    "title": "is_EuclideanDomain() gives wrong answers",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2430",
+    "user": "cremona"
+}
+```
 Assignee: mabshoff
 
 In 2.10.2 and 2.10.3.rc2:
@@ -46,59 +56,151 @@ True
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2430
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-03-09 00:09:22
+archive/issue_comments_016440.json:
+```json
+{
+    "body": "Changing assignee from mabshoff to was.",
+    "created_at": "2008-03-09T00:09:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2430",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2430#issuecomment-16440",
+    "user": "mabshoff"
+}
+```
 
 Changing assignee from mabshoff to was.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-09 00:09:22
+archive/issue_comments_016441.json:
+```json
+{
+    "body": "Changing component from Cygwin to linear algebra.",
+    "created_at": "2008-03-09T00:09:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2430",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2430#issuecomment-16441",
+    "user": "mabshoff"
+}
+```
 
 Changing component from Cygwin to linear algebra.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2008-03-16 02:29:07
+archive/issue_comments_016442.json:
+```json
+{
+    "body": "Changing assignee from was to malb.",
+    "created_at": "2008-03-16T02:29:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2430",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2430#issuecomment-16442",
+    "user": "AlexGhitza"
+}
+```
 
 Changing assignee from was to malb.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2008-03-16 02:29:07
+archive/issue_comments_016443.json:
+```json
+{
+    "body": "Changing component from linear algebra to commutative algebra.",
+    "created_at": "2008-03-16T02:29:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2430",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2430#issuecomment-16443",
+    "user": "AlexGhitza"
+}
+```
 
 Changing component from linear algebra to commutative algebra.
 
 
+
 ---
 
-Comment by malb created at 2008-06-03 14:20:55
+archive/issue_comments_016444.json:
+```json
+{
+    "body": "Remove assignee malb.",
+    "created_at": "2008-06-03T14:20:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2430",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2430#issuecomment-16444",
+    "user": "malb"
+}
+```
 
 Remove assignee malb.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2008-09-26 18:19:10
+archive/issue_comments_016445.json:
+```json
+{
+    "body": "I think that the current behavior is in line with the issues dealt with by #4192, and so this ticket should be closed.",
+    "created_at": "2008-09-26T18:19:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2430",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2430#issuecomment-16445",
+    "user": "jhpalmieri"
+}
+```
 
 I think that the current behavior is in line with the issues dealt with by #4192, and so this ticket should be closed.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-26 18:48:24
+archive/issue_comments_016446.json:
+```json
+{
+    "body": "Resolution: wontfix",
+    "created_at": "2008-09-26T18:48:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2430",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2430#issuecomment-16446",
+    "user": "mabshoff"
+}
+```
 
 Resolution: wontfix
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-26 18:48:24
+archive/issue_comments_016447.json:
+```json
+{
+    "body": "I agreee. Closed as wontix. \n\nJohn: If you disagree please open another ticket that takes into consideration #4192, i.e. implements the proper methods exposed on the top level.\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-26T18:48:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2430",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2430#issuecomment-16447",
+    "user": "mabshoff"
+}
+```
 
 I agreee. Closed as wontix. 
 

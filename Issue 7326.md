@@ -1,11 +1,21 @@
 # Issue 7326: html.table should run jsmath on the resulting table
 
-Issue created by migration from https://trac.sagemath.org/ticket/7326
-
-Original creator: jason
-
-Original creation time: 2009-10-27 22:02:22
-
+archive/issues_007326.json:
+```json
+{
+    "body": "Assignee: cwitty\n\nCC:  whuss rbeezer kcrisman\n\nIt would be *really* nice if you could include latex code in a table, like this:\n\n\n```\nvar('t')\ndensity=t^2\nhtml.table([\n[\"Density $\\delta(x,y)$\", density]\n])\n```\n\n\nand have it do the jsmath magic on the $\\delta(x,y)$ part.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7326\n\n",
+    "created_at": "2009-10-27T22:02:22Z",
+    "labels": [
+        "misc",
+        "major",
+        "bug"
+    ],
+    "title": "html.table should run jsmath on the resulting table",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7326",
+    "user": "jason"
+}
+```
 Assignee: cwitty
 
 CC:  whuss rbeezer kcrisman
@@ -24,17 +34,43 @@ html.table([
 
 and have it do the jsmath magic on the $\delta(x,y)$ part.
 
+Issue created by migration from https://trac.sagemath.org/ticket/7326
+
+
+
+
 
 ---
 
-Comment by jason created at 2009-10-27 22:03:08
+archive/issue_comments_061269.json:
+```json
+{
+    "body": "Changing type from defect to enhancement.",
+    "created_at": "2009-10-27T22:03:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7326",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7326#issuecomment-61269",
+    "user": "jason"
+}
+```
 
 Changing type from defect to enhancement.
 
 
+
 ---
 
-Comment by whuss created at 2009-10-28 08:13:22
+archive/issue_comments_061270.json:
+```json
+{
+    "body": "As a workaround this already works:\n\n\n```\nvar('t')\ndensity=t^2\nhtml.table([\n['Density <span class=\"math\">\\delta(x,y)</span>', density]\n])\n```\n\n\nI am not sure why jsmath does not pick up the $$s in this case.",
+    "created_at": "2009-10-28T08:13:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7326",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7326#issuecomment-61270",
+    "user": "whuss"
+}
+```
 
 As a workaround this already works:
 
@@ -51,28 +87,74 @@ html.table([
 I am not sure why jsmath does not pick up the $$s in this case.
 
 
+
 ---
+
+archive/issue_comments_061271.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-10-28T08:43:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7326",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7326#issuecomment-61271",
+    "user": "jason"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by jason created at 2009-10-28 08:44:55
+archive/issue_comments_061272.json:
+```json
+{
+    "body": "This is a very easy patch to review.",
+    "created_at": "2009-10-28T08:44:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7326",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7326#issuecomment-61272",
+    "user": "jason"
+}
+```
 
 This is a very easy patch to review.
 
 
+
 ---
 
-Comment by jason created at 2009-10-28 08:44:55
+archive/issue_comments_061273.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-10-28T08:44:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7326",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7326#issuecomment-61273",
+    "user": "jason"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jason created at 2009-10-28 08:58:43
+archive/issue_comments_061274.json:
+```json
+{
+    "body": "Replying to [comment:2 whuss]:\n> As a workaround this already works:\n> \n> {{{\n> var('t')\n> density=t^2\n> html.table([\n> ['Density <span class=\"math\">\\delta(x,y)</span>', density]\n> ])\n> }}}\n\n\nso does html.table([This is the Trac macro *sage.misc.html.math_parse* that was inherited from the migration called with arguments ('hi $x^2$'))](https://trac.sagemath.org/wiki/WikiMacros#sage.misc.html.math_parse-macro))\n\nMaybe what is going on is jsmath seems to be not set up to try to find dollar signs, but to only pay attention to class=\"math\" spans and divs.",
+    "created_at": "2009-10-28T08:58:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7326",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7326#issuecomment-61274",
+    "user": "jason"
+}
+```
 
 Replying to [comment:2 whuss]:
 > As a workaround this already works:
@@ -91,9 +173,20 @@ so does html.table([This is the Trac macro *sage.misc.html.math_parse* that was 
 Maybe what is going on is jsmath seems to be not set up to try to find dollar signs, but to only pay attention to class="math" spans and divs.
 
 
+
 ---
 
-Comment by whuss created at 2009-10-28 12:52:58
+archive/issue_comments_061275.json:
+```json
+{
+    "body": "Replying to [comment:3 jason]:\n> This is a very easy patch to review.\n\nIt works, and passes the tests. Positiv review.",
+    "created_at": "2009-10-28T12:52:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7326",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7326#issuecomment-61275",
+    "user": "whuss"
+}
+```
 
 Replying to [comment:3 jason]:
 > This is a very easy patch to review.
@@ -101,15 +194,37 @@ Replying to [comment:3 jason]:
 It works, and passes the tests. Positiv review.
 
 
+
 ---
 
-Comment by whuss created at 2009-10-28 12:52:58
+archive/issue_comments_061276.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-10-28T12:52:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7326",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7326#issuecomment-61276",
+    "user": "whuss"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-31 15:57:29
+archive/issue_comments_061277.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-10-31T15:57:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7326",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7326#issuecomment-61277",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

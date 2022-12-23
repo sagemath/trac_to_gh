@@ -1,11 +1,21 @@
 # Issue 3726: stats/finance -- add support for hidden markov models to sage
 
-Issue created by migration from https://trac.sagemath.org/ticket/3726
-
-Original creator: was
-
-Original creation time: 2008-07-25 16:21:26
-
+archive/issues_003726.json:
+```json
+{
+    "body": "Assignee: was\n\nThe spkg:\n\n  http://sage.math.washington.edu/home/was/patches/ghmm-20080725.spkg\n\nbuilds ghmm and doesn't depend on anything not in sage (I hope).  It does not\nbuild the official GHMM bindings.  I am replacing those bindings with cleaner\nCython bindings that have better documentation, but initially expose less\nfunctionality.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3726\n\n",
+    "created_at": "2008-07-25T16:21:26Z",
+    "labels": [
+        "finance",
+        "major",
+        "enhancement"
+    ],
+    "title": "stats/finance -- add support for hidden markov models to sage",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3726",
+    "user": "was"
+}
+```
 Assignee: was
 
 The spkg:
@@ -17,59 +27,191 @@ build the official GHMM bindings.  I am replacing those bindings with cleaner
 Cython bindings that have better documentation, but initially expose less
 functionality.
 
+Issue created by migration from https://trac.sagemath.org/ticket/3726
+
+
+
+
 
 ---
+
+archive/issue_comments_026437.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-07-25T16:22:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3726",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3726#issuecomment-26437",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_026438.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-07-26T09:49:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3726",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3726#issuecomment-26438",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_026439.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-07-30T01:33:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3726",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3726#issuecomment-26439",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_026440.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-08-02T07:06:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3726",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3726#issuecomment-26440",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_026441.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-08-03T04:07:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3726",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3726#issuecomment-26441",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_026442.json:
+```json
+{
+    "body": "Attachment\n\nThe attached patches bring the coverage of this code to 100% and cleanly wrap a solid set of functionality.",
+    "created_at": "2008-08-04T01:38:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3726",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3726#issuecomment-26442",
+    "user": "was"
+}
+```
 
 Attachment
 
 The attached patches bring the coverage of this code to 100% and cleanly wrap a solid set of functionality.
 
 
+
 ---
+
+archive/issue_comments_026443.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-08-04T12:33:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3726",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3726#issuecomment-26443",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_026444.json:
+```json
+{
+    "body": "Attachment\n\npatches 1 - 8 in a clean bundle against 3.0.5",
+    "created_at": "2008-08-04T12:34:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3726",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3726#issuecomment-26444",
+    "user": "was"
+}
+```
 
 Attachment
 
 patches 1 - 8 in a clean bundle against 3.0.5
 
 
+
 ---
+
+archive/issue_comments_026445.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-08-05T01:05:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3726",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3726#issuecomment-26445",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by jkantor created at 2008-08-11 05:59:03
+archive/issue_comments_026446.json:
+```json
+{
+    "body": "Code quality is of course excellent and of course positive review\n\nbut\n\nActual Bugs \n\n1. No checks are made that matrices given are valid stochastic matrices (rows add to 1).  Or more importantly that the probabilities are actually positive.  There is a function to normalize but it isn't called by default. Actually I'm not sure if this is a bug but there should be some documentation about what to expect  if the inputs matrices are not stochastic, does it do reasonable things or is the result numerical junk. \n\n\n2. For continuous hidden markov models baum welch does not accept a set of sequences only a single sequence.\n\n\nMiscellaneous comments\n\n1. Doc string locations are sort of hidden. It would be nice if hmm? or hmm.DiscreteHiddenMarkovModel? hit something. \n  \n\n2. (very minor) sample vs sample_single annoyed me, I would have rather sample had the number of sequences be optional which defaulted to 1. \n\n3. Does there need to be a discussion as to whether or not we want to support this in standard or optional since it involves adding another spkg.",
+    "created_at": "2008-08-11T05:59:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3726",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3726#issuecomment-26446",
+    "user": "jkantor"
+}
+```
 
 Code quality is of course excellent and of course positive review
 
@@ -77,25 +219,36 @@ but
 
 Actual Bugs 
 
-   1. No checks are made that matrices given are valid stochastic matrices (rows add to 1).  Or more importantly that the probabilities are actually positive.  There is a function to normalize but it isn't called by default. Actually I'm not sure if this is a bug but there should be some documentation about what to expect  if the inputs matrices are not stochastic, does it do reasonable things or is the result numerical junk. 
+1. No checks are made that matrices given are valid stochastic matrices (rows add to 1).  Or more importantly that the probabilities are actually positive.  There is a function to normalize but it isn't called by default. Actually I'm not sure if this is a bug but there should be some documentation about what to expect  if the inputs matrices are not stochastic, does it do reasonable things or is the result numerical junk. 
 
 
-   2. For continuous hidden markov models baum welch does not accept a set of sequences only a single sequence.
+2. For continuous hidden markov models baum welch does not accept a set of sequences only a single sequence.
 
 
 Miscellaneous comments
 
-   1. Doc string locations are sort of hidden. It would be nice if hmm? or hmm.DiscreteHiddenMarkovModel? hit something. 
+1. Doc string locations are sort of hidden. It would be nice if hmm? or hmm.DiscreteHiddenMarkovModel? hit something. 
   
 
-   2. (very minor) sample vs sample_single annoyed me, I would have rather sample had the number of sequences be optional which defaulted to 1. 
+2. (very minor) sample vs sample_single annoyed me, I would have rather sample had the number of sequences be optional which defaulted to 1. 
 
-   3. Does there need to be a discussion as to whether or not we want to support this in standard or optional since it involves adding another spkg.
+3. Does there need to be a discussion as to whether or not we want to support this in standard or optional since it involves adding another spkg.
+
 
 
 ---
 
-Comment by was created at 2008-08-11 06:11:00
+archive/issue_comments_026447.json:
+```json
+{
+    "body": ">   1. No checks are made that matrices given are valid stochastic matrices (rows add to 1). Or more \n> importantly that the probabilities are actually positive. There is a function to normalize but it\n>  isn't called by default. Actually I'm not sure if this is a bug but there should be some \n> documentation about what to expect if the inputs matrices are not stochastic, does it do \n> reasonable things or is the result numerical junk. \n\nI have no idea what it will do :-).  I will find out by looking at the GHMM docs.   I'm not sure what the best behavior would be on invalid input yet. \n\n>   2. For continuous hidden markov models baum welch does not accept a set of sequences only a single sequence. \n\nYou're right, this is a bug.  It does take multiple sequences but only like this with a weight:\n\n```\nsage: z.baum_welch([([1,2,3], 1), ([1,2,8], 2)])\n```\n\n\nIt should also work with no weights. \n\nDiscreteMarkovModels in this patch don't take single sequences (only multiple), but I fixed that in #3773 (I think).\n\n>   1. Doc string locations are sort of hidden. It would be nice if hmm? or hmm.DiscreteHiddenMarkovModel?? hit something. \n\nThanks for finding this.  I consider this a serious problem and will fix it. \n\n2. (very minor) sample vs sample_single annoyed me, I would have rather sample had the number of sequences be optional which defaulted to 1. \n\nI'm annoyed by not having it since foo.sample(n) returns something like [This is the Trac macro *1,2,5,3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1,2,5,3-macro) so one ends up typing foo.sample(n)[0] a lot, which seems odd.   Wait, this is easy.  Do this:\n\n```\n23:08 < wstein-3514> I can just make M.sample(n, None) give a single list,\n23:08 < wstein-3514> whereas M.sample(n, k) with k >= 1 give a list of lists.\n23:08 < jkantor> right\n23:08 < wstein-3514> That is way better.\n23:08 < wstein-3514> Thanks.\n```\n\n\n>   3. Does there need to be a discussion as to whether or not we want to support this in standard or > optional since it involves adding another spkg. \n\nYes.  This will not go in standard until the spkg is officially voted on in sage-devel.\nThis will happen in the next day, as soon as I fix all the problems you point out above.",
+    "created_at": "2008-08-11T06:11:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3726",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3726#issuecomment-26447",
+    "user": "was"
+}
+```
 
 >   1. No checks are made that matrices given are valid stochastic matrices (rows add to 1). Or more 
 > importantly that the probabilities are actually positive. There is a function to normalize but it
@@ -122,7 +275,7 @@ DiscreteMarkovModels in this patch don't take single sequences (only multiple), 
 
 Thanks for finding this.  I consider this a serious problem and will fix it. 
 
-   2. (very minor) sample vs sample_single annoyed me, I would have rather sample had the number of sequences be optional which defaulted to 1. 
+2. (very minor) sample vs sample_single annoyed me, I would have rather sample had the number of sequences be optional which defaulted to 1. 
 
 I'm annoyed by not having it since foo.sample(n) returns something like [This is the Trac macro *1,2,5,3* that was inherited from the migration](https://trac.sagemath.org/wiki/WikiMacros#1,2,5,3-macro) so one ends up typing foo.sample(n)[0] a lot, which seems odd.   Wait, this is easy.  Do this:
 
@@ -141,9 +294,20 @@ Yes.  This will not go in standard until the spkg is officially voted on in sage
 This will happen in the next day, as soon as I fix all the problems you point out above.
 
 
+
 ---
 
-Comment by jkantor created at 2008-08-11 06:20:54
+archive/issue_comments_026448.json:
+```json
+{
+    "body": "1. Regarding invalid input, I would suggest accepting positive inputs and normalizing but printing a message to that affect (that the probabilities didn't sum to 1  and were normalized) and I would raise an exception on negative inputs.\n\n\n2. The solution to 2 in what I had in mind.",
+    "created_at": "2008-08-11T06:20:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3726",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3726#issuecomment-26448",
+    "user": "jkantor"
+}
+```
 
 1. Regarding invalid input, I would suggest accepting positive inputs and normalizing but printing a message to that affect (that the probabilities didn't sum to 1  and were normalized) and I would raise an exception on negative inputs.
 
@@ -151,9 +315,20 @@ Comment by jkantor created at 2008-08-11 06:20:54
 2. The solution to 2 in what I had in mind.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-18 23:43:14
+archive/issue_comments_026449.json:
+```json
+{
+    "body": "The latest spkg seems to be\n\n  http://sage.math.washington.edu/home/was/patches/ghmm-20080813.spkg\n\nCheers,\n\nMichael",
+    "created_at": "2008-08-18T23:43:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3726",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3726#issuecomment-26449",
+    "user": "mabshoff"
+}
+```
 
 The latest spkg seems to be
 
@@ -164,16 +339,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-19 00:12:37
+archive/issue_comments_026450.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-08-19T00:12:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3726",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3726#issuecomment-26450",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-19 00:12:37
+archive/issue_comments_026451.json:
+```json
+{
+    "body": "Merged hmm-bundle-3.0.5.hg in Sage 3.1.2.alpha0. This bundle contains 12 changesets, so there are some patches missing in the broken out series. Oh well ...\n\nCheers,\n\nMichael",
+    "created_at": "2008-08-19T00:12:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3726",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3726#issuecomment-26451",
+    "user": "mabshoff"
+}
+```
 
 Merged hmm-bundle-3.0.5.hg in Sage 3.1.2.alpha0. This bundle contains 12 changesets, so there are some patches missing in the broken out series. Oh well ...
 

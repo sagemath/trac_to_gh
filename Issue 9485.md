@@ -1,11 +1,21 @@
 # Issue 9485: Fix strongly_connected_components_digraph to actually do something
 
-Issue created by migration from https://trac.sagemath.org/ticket/9485
-
-Original creator: nthiery
-
-Original creation time: 2010-07-12 18:55:21
-
+archive/issues_009485.json:
+```json
+{
+    "body": "Assignee: jason, ncohen, rlm\n\nCC:  sage-combinat rlm\n\nKeywords: strongly connected components\n\nGraphs produced with strongly_connected_components_digraph had no\nedges in them due to a typo in the code:\n\n\n```\n    sage: g = DiGraph({0:[1,2,3],1:[2],2:[1,3]})\n    sage: scc_digraph = g.strongly_connected_components_digraph()\n    sage: scc_digraph.vertices()\n    [{0}, {3}, {1, 2}]\n    sage: scc_digraph.edges()\n    []\n```\n\n\nAfter this patch, the result is more likely to be correct:\n\n\n```\n    [({0}, {3}, None), ({0}, {1, 2}, None), ({1, 2}, {3}, None)]\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9485\n\n",
+    "created_at": "2010-07-12T18:55:21Z",
+    "labels": [
+        "graph theory",
+        "major",
+        "bug"
+    ],
+    "title": "Fix strongly_connected_components_digraph to actually do something",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9485",
+    "user": "nthiery"
+}
+```
 Assignee: jason, ncohen, rlm
 
 CC:  sage-combinat rlm
@@ -35,46 +45,118 @@ After this patch, the result is more likely to be correct:
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/9485
+
+
+
+
 
 ---
+
+archive/issue_comments_091066.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-07-12T19:01:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9485",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9485#issuecomment-91066",
+    "user": "nthiery"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by nthiery created at 2010-07-12 19:03:34
+archive/issue_comments_091067.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-07-12T19:03:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9485",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9485#issuecomment-91067",
+    "user": "nthiery"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by ncohen created at 2010-07-12 23:11:14
+archive/issue_comments_091068.json:
+```json
+{
+    "body": "Oops... Some very, very bad typo ... Thank youuuuuuu ! :-)\n\nNathann",
+    "created_at": "2010-07-12T23:11:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9485",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9485#issuecomment-91068",
+    "user": "ncohen"
+}
+```
 
 Oops... Some very, very bad typo ... Thank youuuuuuu ! :-)
 
 Nathann
 
 
+
 ---
 
-Comment by ncohen created at 2010-07-12 23:11:14
+archive/issue_comments_091069.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-07-12T23:11:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9485",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9485#issuecomment-91069",
+    "user": "ncohen"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by nthiery created at 2010-07-13 13:41:54
+archive/issue_comments_091070.json:
+```json
+{
+    "body": "Thanks for the instantaneous review!\n\nAnd thanks as well for the original code. It was still quicker for me to fix it than to have to implement it myself :-)",
+    "created_at": "2010-07-13T13:41:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9485",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9485#issuecomment-91070",
+    "user": "nthiery"
+}
+```
 
 Thanks for the instantaneous review!
 
 And thanks as well for the original code. It was still quicker for me to fix it than to have to implement it myself :-)
 
 
+
 ---
 
-Comment by mpatel created at 2010-07-21 02:49:04
+archive/issue_comments_091071.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-07-21T02:49:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9485",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9485#issuecomment-91071",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed

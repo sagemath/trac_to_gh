@@ -1,26 +1,62 @@
 # Issue 3929: Merge the max-flow min-cut code from Scott Clifford and Jerin Schneider
 
-Issue created by migration from https://trac.sagemath.org/ticket/3929
-
-Original creator: jason
-
-Original creation time: 2008-08-22 18:06:59
-
+archive/issues_003929.json:
+```json
+{
+    "body": "Assignee: rlm\n\nSee http://wiki.wstein.org/2008/480a/theprojects\n\nIssue created by migration from https://trac.sagemath.org/ticket/3929\n\n",
+    "created_at": "2008-08-22T18:06:59Z",
+    "labels": [
+        "graph theory",
+        "major",
+        "enhancement"
+    ],
+    "title": "Merge the max-flow min-cut code from Scott Clifford and Jerin Schneider",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3929",
+    "user": "jason"
+}
+```
 Assignee: rlm
 
 See http://wiki.wstein.org/2008/480a/theprojects
 
+Issue created by migration from https://trac.sagemath.org/ticket/3929
+
+
+
+
 
 ---
 
-Comment by jason created at 2008-08-25 19:40:23
+archive/issue_comments_028126.json:
+```json
+{
+    "body": "See #1317 for this request.  I think implementing this might close #1317",
+    "created_at": "2008-08-25T19:40:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3929",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3929#issuecomment-28126",
+    "user": "jason"
+}
+```
 
 See #1317 for this request.  I think implementing this might close #1317
 
 
+
 ---
 
-Comment by rlm created at 2008-08-25 23:24:12
+archive/issue_comments_028127.json:
+```json
+{
+    "body": "Jason,\n\nYou need to stop polluting trac like this. If there was already a ticket for this, you should have put your comments there. Also, I'd like to point out how annoying it is when someone opens a bunch of wishlist tickets with no intention of supplying any patches.\n\n-- Robert",
+    "created_at": "2008-08-25T23:24:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3929",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3929#issuecomment-28127",
+    "user": "rlm"
+}
+```
 
 Jason,
 
@@ -29,23 +65,56 @@ You need to stop polluting trac like this. If there was already a ticket for thi
 -- Robert
 
 
+
 ---
 
-Comment by rlm created at 2008-08-25 23:25:10
+archive/issue_comments_028128.json:
+```json
+{
+    "body": "Also, based on the presentation I saw from these two people, it is questionable whether we want to find a more standard implementation of this algorithm (as they are a dime a dozen, and maybe not all of them were undergraduate projects...).",
+    "created_at": "2008-08-25T23:25:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3929",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3929#issuecomment-28128",
+    "user": "rlm"
+}
+```
 
 Also, based on the presentation I saw from these two people, it is questionable whether we want to find a more standard implementation of this algorithm (as they are a dime a dozen, and maybe not all of them were undergraduate projects...).
 
 
+
 ---
 
-Comment by jason created at 2008-08-26 14:39:40
+archive/issue_comments_028129.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2008-08-26T14:39:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3929",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3929#issuecomment-28129",
+    "user": "jason"
+}
+```
 
 Resolution: duplicate
 
 
+
 ---
 
-Comment by jason created at 2008-08-26 14:39:40
+archive/issue_comments_028130.json:
+```json
+{
+    "body": "Sorry.  I didn't remember there was already a ticket for this until I was going through tickets the other day; apparently I should have searched more carefully.  The reason I opened a few tickets is because I saw that it looked like there was work that could be included and didn't want to lose the reference (especially for this ticket, which is something that would be nice to have).\n\nHowever, I think in this case a post to sage-devel asking about the projects from the wiki page would have been better than to create tickets for each one.  Sorry for the annoyance.\n\nThird, I do intend to post patches eventually, if someone else doesn't beat me to it.  As I have time, I go through all the tickets I've entered and work on patches.  The reason to put them up on trac is to make sure that the idea doesn't get lost.  I do agree that I opened up a lot of wishlist tickets (probably too many) when I first started with Sage in my eagerness, but I tried to assign them to the wishlist milestone, which has the purpose: \"We have many tickets for enhancements in trac that depend on somebody with time to make them happen. In order not to lose them we collect them under this milestone. If you are interested in working on one of the tickets in this category please let us know or retag that ticket to an appropriate milestone.\"  (maybe I ought to put more tickets under this wishlist, though...)\n\nGiven your comments, I'm going to close this as a duplicate, though, and note the link on #1317.  Thanks.",
+    "created_at": "2008-08-26T14:39:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3929",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3929#issuecomment-28130",
+    "user": "jason"
+}
+```
 
 Sorry.  I didn't remember there was already a ticket for this until I was going through tickets the other day; apparently I should have searched more carefully.  The reason I opened a few tickets is because I saw that it looked like there was work that could be included and didn't want to lose the reference (especially for this ticket, which is something that would be nice to have).
 
@@ -56,11 +125,22 @@ Third, I do intend to post patches eventually, if someone else doesn't beat me t
 Given your comments, I'm going to close this as a duplicate, though, and note the link on #1317.  Thanks.
 
 
+
 ---
 
-Comment by mvngu created at 2009-05-21 11:23:27
+archive/issue_comments_028131.json:
+```json
+{
+    "body": "Replying to [comment:3 rlm]:\n> Also, based on the presentation I saw from these two people, it is questionable whether we want to find a more standard implementation of this algorithm (as they are a dime a dozen, and maybe not all of them were undergraduate projects...).\nFrom my reading of the [source code](http://wiki.wstein.org/2008/480a/theprojects?action=AttachFile&do=get&target=max_flow_min_cut.py), it looks like the code is using the Ford-Fulkerson algorithm, which is pretty bad for some corner cases. And its complexity is in general not polynomial. Of course, one obvious way to get polynomial complexity is to use the modified algorithm by Edmonds and Karp. Chapter 6 from the following text is very relevant to this ticket.\n* D. Jungnickel. Graphs, Networks and Algorithms. 3rd edition, Springer, 2008.",
+    "created_at": "2009-05-21T11:23:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3929",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3929#issuecomment-28131",
+    "user": "mvngu"
+}
+```
 
 Replying to [comment:3 rlm]:
 > Also, based on the presentation I saw from these two people, it is questionable whether we want to find a more standard implementation of this algorithm (as they are a dime a dozen, and maybe not all of them were undergraduate projects...).
 From my reading of the [source code](http://wiki.wstein.org/2008/480a/theprojects?action=AttachFile&do=get&target=max_flow_min_cut.py), it looks like the code is using the Ford-Fulkerson algorithm, which is pretty bad for some corner cases. And its complexity is in general not polynomial. Of course, one obvious way to get polynomial complexity is to use the modified algorithm by Edmonds and Karp. Chapter 6 from the following text is very relevant to this ticket.
- * D. Jungnickel. Graphs, Networks and Algorithms. 3rd edition, Springer, 2008.
+* D. Jungnickel. Graphs, Networks and Algorithms. 3rd edition, Springer, 2008.

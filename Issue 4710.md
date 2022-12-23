@@ -1,11 +1,21 @@
 # Issue 4710: fix docstring for divisors
 
-Issue created by migration from https://trac.sagemath.org/ticket/4710
-
-Original creator: robertwb
-
-Original creation time: 2008-12-05 06:09:06
-
+archive/issues_004710.json:
+```json
+{
+    "body": "Assignee: tba\n\n\n```\nOn Dec 4, 2008, at 9:35 PM, pong wrote:\n\nIn SAGE 3.2.1 , the docstring of divisors says:\n\nDefinition:\tdivisors(n)\nDocstring:\n\n        Returns a list of all positive integer divisors\n        of the nonzero integer n.\n\n        A second parameter may be passed to surpress sorting\n        of the list (as ordering the list can be more time\n        consuming then creating it).\n\n        INPUT:\n            n -- the element\n            sorted -- whether or not to sort the output (default True)\n\nMy question is how to get an unsorted output?\n\nI tried divisors(300, sorted=False) but SAGE complaints that divisors\nonly takes 1 argument. In fact, the source codes seem to suggest that\nit will always return a sorted list.\n```\n\n\nNow the divisors are always returned sorted (as we have resolved the issue of sorting taking the majority of the time). The documentation needs to be fixed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4710\n\n",
+    "created_at": "2008-12-05T06:09:06Z",
+    "labels": [
+        "documentation",
+        "major",
+        "bug"
+    ],
+    "title": "fix docstring for divisors",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4710",
+    "user": "robertwb"
+}
+```
 Assignee: tba
 
 
@@ -38,29 +48,79 @@ it will always return a sorted list.
 
 Now the divisors are always returned sorted (as we have resolved the issue of sorting taking the majority of the time). The documentation needs to be fixed.
 
+Issue created by migration from https://trac.sagemath.org/ticket/4710
+
+
+
+
 
 ---
 
-Comment by jhpalmieri created at 2009-02-26 17:08:18
+archive/issue_comments_035515.json:
+```json
+{
+    "body": "Here's a trivial patch.  Is this good enough?",
+    "created_at": "2009-02-26T17:08:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4710",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4710#issuecomment-35515",
+    "user": "jhpalmieri"
+}
+```
 
 Here's a trivial patch.  Is this good enough?
 
 
+
 ---
+
+archive/issue_comments_035516.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-02-26T17:08:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4710",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4710#issuecomment-35516",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by robertwb created at 2009-02-26 20:01:28
+archive/issue_comments_035517.json:
+```json
+{
+    "body": "Yep, looks good to me.",
+    "created_at": "2009-02-26T20:01:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4710",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4710#issuecomment-35517",
+    "user": "robertwb"
+}
+```
 
 Yep, looks good to me.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-28 17:07:34
+archive/issue_comments_035518.json:
+```json
+{
+    "body": "Merged in Sage 3.4.rc0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-28T17:07:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4710",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4710#issuecomment-35518",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.4.rc0.
 
@@ -69,8 +129,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-28 17:07:34
+archive/issue_comments_035519.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-02-28T17:07:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4710",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4710#issuecomment-35519",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

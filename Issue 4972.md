@@ -1,11 +1,21 @@
 # Issue 4972: matrix setitem should deal with slicing
 
-Issue created by migration from https://trac.sagemath.org/ticket/4972
-
-Original creator: jason
-
-Original creation time: 2009-01-14 08:33:23
-
+archive/issues_004972.json:
+```json
+{
+    "body": "Assignee: was\n\nThe following should work:\n\n\n```\na=matrix(QQ,3,[1,3,4,3,2,3,6,4,5])\na[1,:]=a[0,:]\n```\n\n\nInstead, I get an error:\n\n\n```\n          \t\n\nTraceback (click to the left for traceback)\n...\nTypeError: 'slice' object cannot be interpreted as an index\n\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/home/grout/.sage/sage_notebook/worksheets/admin/143/code/10.py\", line 7, in <module>\n    a[_sage_const_1 ,:]=a[_sage_const_0 ,:]\n  File \"/home/grout/sage/local/lib/python2.5/site-packages/SQLAlchemy-0.4.6-py2.5.egg/\", line 1, in <module>\n    \n  File \"matrix0.pyx\", line 798, in sage.matrix.matrix0.Matrix.__setitem__ (sage/matrix/matrix0.c:4517)\nTypeError: 'slice' object cannot be interpreted as an index\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4972\n\n",
+    "created_at": "2009-01-14T08:33:23Z",
+    "labels": [
+        "linear algebra",
+        "major",
+        "bug"
+    ],
+    "title": "matrix setitem should deal with slicing",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4972",
+    "user": "jason"
+}
+```
 Assignee: was
 
 The following should work:
@@ -39,52 +49,135 @@ TypeError: 'slice' object cannot be interpreted as an index
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4972
+
+
+
+
 
 ---
 
-Comment by jason created at 2009-01-14 08:46:42
+archive/issue_comments_037862.json:
+```json
+{
+    "body": "To clarify, I think we should support setting a submatrix (and not just getting a submatrix) using slicing.  This will be consistent with numpy, matlab, octave, etc.",
+    "created_at": "2009-01-14T08:46:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4972",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4972#issuecomment-37862",
+    "user": "jason"
+}
+```
 
 To clarify, I think we should support setting a submatrix (and not just getting a submatrix) using slicing.  This will be consistent with numpy, matlab, octave, etc.
 
 
+
 ---
 
-Comment by jason created at 2009-01-16 02:29:25
+archive/issue_comments_037863.json:
+```json
+{
+    "body": "Now that #4973 is pretty much done, what we really should do is factor out the bulk of the setup code in getitem and use it for both setitem and getitem.",
+    "created_at": "2009-01-16T02:29:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4972",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4972#issuecomment-37863",
+    "user": "jason"
+}
+```
 
 Now that #4973 is pretty much done, what we really should do is factor out the bulk of the setup code in getitem and use it for both setitem and getitem.
 
 
+
 ---
 
-Comment by jason created at 2009-02-03 21:41:50
+archive/issue_comments_037864.json:
+```json
+{
+    "body": "See #2396, which should probably be closed when this is fixed.",
+    "created_at": "2009-02-03T21:41:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4972",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4972#issuecomment-37864",
+    "user": "jason"
+}
+```
 
 See #2396, which should probably be closed when this is fixed.
 
 
+
 ---
 
-Comment by jason created at 2009-02-04 21:42:54
+archive/issue_comments_037865.json:
+```json
+{
+    "body": "I'm making some changes.  I'll post an updated patch soon.",
+    "created_at": "2009-02-04T21:42:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4972",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4972#issuecomment-37865",
+    "user": "jason"
+}
+```
 
 I'm making some changes.  I'll post an updated patch soon.
 
 
+
 ---
 
-Comment by jason created at 2009-02-05 06:52:22
+archive/issue_comments_037866.json:
+```json
+{
+    "body": "ignore the .2.patch file.  I've refreshed the original .patch file.",
+    "created_at": "2009-02-05T06:52:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4972",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4972#issuecomment-37866",
+    "user": "jason"
+}
+```
 
 ignore the .2.patch file.  I've refreshed the original .patch file.
 
 
+
 ---
+
+archive/issue_comments_037867.json:
+```json
+{
+    "body": "Attachment\n\nRefreshed patch to fix some doctests.",
+    "created_at": "2009-02-05T08:08:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4972",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4972#issuecomment-37867",
+    "user": "jason"
+}
+```
 
 Attachment
 
 Refreshed patch to fix some doctests.
 
 
+
 ---
 
-Comment by cwitty created at 2009-02-06 02:50:18
+archive/issue_comments_037868.json:
+```json
+{
+    "body": "That's a lot of doctests; cool!  (Maybe some of them should be marked\nas TESTS:, in case we ever get around to having that mean something...)\n\n\n```\n            key -- any legal indexing (i.e., self[key] works)\n```\n\nfeels a little awkward... I had to read it twice to figure out what it\nmeant.  Maybe\n\n```\n            key -- any legal indexing (i.e., such that self[key] works)\n```\n\nwould be better?\n\nI think it's wrong that this works:\n\n```\nsage: M = matrix(3, 2, srange(6)); M[1] = 15; M\n```\n\nbut this raises an exception:\n\n```\nsage: M = matrix(3, 1, srange(3)); M[1] = 15; M\n```\n\n\nA lot of your variables should have type Py_ssize_t rather than int;\nyour current code will give very wrong results on matrices with more\nthan 2<sup>31</sup> rows or columns (which could happen on a 64-bit machine).\n\nOther than that, looks very nice!",
+    "created_at": "2009-02-06T02:50:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4972",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4972#issuecomment-37868",
+    "user": "cwitty"
+}
+```
 
 That's a lot of doctests; cool!  (Maybe some of them should be marked
 as TESTS:, in case we ever get around to having that mean something...)
@@ -123,14 +216,38 @@ than 2<sup>31</sup> rows or columns (which could happen on a 64-bit machine).
 Other than that, looks very nice!
 
 
+
 ---
 
-Comment by jason created at 2009-02-06 06:21:10
+archive/issue_comments_037869.json:
+```json
+{
+    "body": "the fixups.patch addresses cwitty's concerns.  It should be applied on top of trac_4972-matrix-setitem.patch",
+    "created_at": "2009-02-06T06:21:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4972",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4972#issuecomment-37869",
+    "user": "jason"
+}
+```
 
 the fixups.patch addresses cwitty's concerns.  It should be applied on top of trac_4972-matrix-setitem.patch
 
 
+
 ---
+
+archive/issue_comments_037870.json:
+```json
+{
+    "body": "Attachment\n\ngrr, forgot to check the \"replace\" checkbox again.\n\nSo apply the following:\n\ntrac_4972-matrix-setitem.patch, then trac_4972-matrix-setitem-fixups.patch\n\nIgnore both .2.patch files.\n\nThis second refresh corrects some \"int\" cdefs in misc_c.pyx",
+    "created_at": "2009-02-06T06:28:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4972",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4972#issuecomment-37870",
+    "user": "jason"
+}
+```
 
 Attachment
 
@@ -145,9 +262,20 @@ Ignore both .2.patch files.
 This second refresh corrects some "int" cdefs in misc_c.pyx
 
 
+
 ---
 
-Comment by cwitty created at 2009-02-06 06:38:58
+archive/issue_comments_037871.json:
+```json
+{
+    "body": "Code looks good, all doctests pass.\n\nThanks for making the requested changes!\n\nPositive review; apply both patches.",
+    "created_at": "2009-02-06T06:38:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4972",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4972#issuecomment-37871",
+    "user": "cwitty"
+}
+```
 
 Code looks good, all doctests pass.
 
@@ -156,16 +284,38 @@ Thanks for making the requested changes!
 Positive review; apply both patches.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-06 22:27:49
+archive/issue_comments_037872.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-02-06T22:27:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4972",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4972#issuecomment-37872",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-06 22:27:49
+archive/issue_comments_037873.json:
+```json
+{
+    "body": "Merged both patches in Sage 3.3.alpha6.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-06T22:27:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4972",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4972#issuecomment-37873",
+    "user": "mabshoff"
+}
+```
 
 Merged both patches in Sage 3.3.alpha6.
 

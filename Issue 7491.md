@@ -1,11 +1,21 @@
 # Issue 7491: solve(x==x,x) fails
 
-Issue created by migration from https://trac.sagemath.org/ticket/7491
-
-Original creator: robert.marik
-
-Original creation time: 2009-11-19 07:36:11
-
+archive/issues_007491.json:
+```json
+{
+    "body": "Assignee: burcin\n\n\n```\nsage: solve([x==x],x)\n```\n\ngives an exception.\n\nMaxima says this:\n\n```\n$ maxima -q\n(%i1) solve([x=x],x);\n(%o1)                                 all\n(%i2) \n```\n\n\nThere is a short [discussion](http://groups.google.cz/group/sage-devel/browse_thread/thread/ce3a256a9102c7fc) about this topic. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7491\n\n",
+    "created_at": "2009-11-19T07:36:11Z",
+    "labels": [
+        "symbolics",
+        "major",
+        "bug"
+    ],
+    "title": "solve(x==x,x) fails",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7491",
+    "user": "robert.marik"
+}
+```
 Assignee: burcin
 
 
@@ -27,15 +37,43 @@ $ maxima -q
 
 There is a short [discussion](http://groups.google.cz/group/sage-devel/browse_thread/thread/ce3a256a9102c7fc) about this topic. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7491
+
+
+
+
 
 ---
 
-Comment by robert.marik created at 2009-11-19 08:00:39
+archive/issue_comments_063271.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-11-19T08:00:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7491",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7491#issuecomment-63271",
+    "user": "robert.marik"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_063272.json:
+```json
+{
+    "body": "Attachment\n\nattached patch does the following\n\n```\n[marik@um-bc107 /opt/sage]$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: solve\nsage: y=var('y');solve(SR(0),y,solution_dict=True)\n{y: r1}\nsage: y=var('y');solve(SR(0),y,solution_dict=True,multiplicities=True)\n({y: r1}, [])\nsage: solve(x==x,x,multiplicities=True)\n([x == r1], [])\n| Sage Version 4.2.1, Release Date: 2009-11-14                       |\n| Type notebook() for the GUI, and license() for information.        |\n```\n\n\nAll tests in symbolic and calculus passed.",
+    "created_at": "2009-11-19T08:00:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7491",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7491#issuecomment-63272",
+    "user": "robert.marik"
+}
+```
 
 Attachment
 
@@ -60,22 +98,55 @@ sage: solve(x==x,x,multiplicities=True)
 All tests in symbolic and calculus passed.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-12-04 17:02:39
+archive/issue_comments_063273.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-12-04T17:02:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7491",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7491#issuecomment-63273",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-12-04 17:02:39
+archive/issue_comments_063274.json:
+```json
+{
+    "body": "Positive review.  I'm not sure what the changes in relation.py bring to the game, but they don't hurt either.",
+    "created_at": "2009-12-04T17:02:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7491",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7491#issuecomment-63274",
+    "user": "kcrisman"
+}
+```
 
 Positive review.  I'm not sure what the changes in relation.py bring to the game, but they don't hurt either.
 
 
+
 ---
 
-Comment by mhansen created at 2009-12-14 16:45:44
+archive/issue_comments_063275.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-12-14T16:45:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7491",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7491#issuecomment-63275",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

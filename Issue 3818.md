@@ -1,33 +1,82 @@
 # Issue 3818: COPYING.txt doesn't mention jmol but it shold
 
-Issue created by migration from https://trac.sagemath.org/ticket/3818
-
-Original creator: was
-
-Original creation time: 2008-08-12 14:54:43
-
+archive/issues_003818.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nThere's nothing in SAGE_ROOT/COPYING.txt about jmol, but there should be.  It's GPL'd. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3818\n\n",
+    "created_at": "2008-08-12T14:54:43Z",
+    "labels": [
+        "distribution",
+        "major",
+        "bug"
+    ],
+    "title": "COPYING.txt doesn't mention jmol but it shold",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3818",
+    "user": "was"
+}
+```
 Assignee: mabshoff
 
 There's nothing in SAGE_ROOT/COPYING.txt about jmol, but there should be.  It's GPL'd. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3818
+
+
+
+
 
 ---
 
-Comment by was created at 2008-08-12 14:54:52
+archive/issue_comments_027155.json:
+```json
+{
+    "body": "Changing priority from major to minor.",
+    "created_at": "2008-08-12T14:54:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3818",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3818#issuecomment-27155",
+    "user": "was"
+}
+```
 
 Changing priority from major to minor.
 
 
+
 ---
+
+archive/issue_comments_027156.json:
+```json
+{
+    "body": "Attachment\n\nthis file should replace the existing COPYING.txt; this is a modification of the one in sage-3.1.alpha1",
+    "created_at": "2008-08-13T03:59:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3818",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3818#issuecomment-27156",
+    "user": "was"
+}
+```
 
 Attachment
 
 this file should replace the existing COPYING.txt; this is a modification of the one in sage-3.1.alpha1
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-13 06:44:01
+archive/issue_comments_027157.json:
+```json
+{
+    "body": "Even though this is not a patch the diff looks good to me. Positive review.\n\nCheers,\n\nMichael",
+    "created_at": "2008-08-13T06:44:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3818",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3818#issuecomment-27157",
+    "user": "mabshoff"
+}
+```
 
 Even though this is not a patch the diff looks good to me. Positive review.
 
@@ -36,15 +85,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-13 06:44:12
+archive/issue_comments_027158.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-08-13T06:44:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3818",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3818#issuecomment-27158",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-13 06:44:12
+archive/issue_comments_027159.json:
+```json
+{
+    "body": "Merged in Sage 3.1.alpha2",
+    "created_at": "2008-08-13T06:44:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3818",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3818#issuecomment-27159",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.1.alpha2

@@ -1,11 +1,21 @@
 # Issue 2909: notebook -- implement a way of parsing script tags in output as they appear (but none that already appeared)
 
-Issue created by migration from https://trac.sagemath.org/ticket/2909
-
-Original creator: was
-
-Original creation time: 2008-04-13 18:04:03
-
+archive/issues_002909.json:
+```json
+{
+    "body": "Assignee: boothby\n\nCC:  mpatel\n\nThe canonical example to get to work is the following (submitted by Jason Grout):\n\n\n```\nfor i in range(5):\n    print html('<script>alert(%s)</script>'%i)\n    sleep(1)\n```\n\n\nwould pop up a dialog box about every second.\n\n\nThis feature was requested by `gerhard <ge01705`@`yahoo.de>`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2909\n\n",
+    "created_at": "2008-04-13T18:04:03Z",
+    "labels": [
+        "notebook",
+        "major",
+        "bug"
+    ],
+    "title": "notebook -- implement a way of parsing script tags in output as they appear (but none that already appeared)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2909",
+    "user": "was"
+}
+```
 Assignee: boothby
 
 CC:  mpatel
@@ -25,10 +35,25 @@ would pop up a dialog box about every second.
 
 This feature was requested by `gerhard <ge01705`@`yahoo.de>`.
 
+Issue created by migration from https://trac.sagemath.org/ticket/2909
+
+
+
+
 
 ---
 
-Comment by schilly created at 2008-04-14 08:55:11
+archive/issue_comments_020044.json:
+```json
+{
+    "body": "I don't know the details of the notebook source code, but one possible way to run javascript code out of javascript is writing it dynamically into the source, because it get's evaluated. The hack: unescape escaped characters!\n\n\n```\n<html>\n<head>\n<script type=\"text/javascript\">\nfunction run() {\n   eval(cmd);\n}\n</script>\n</head>\n<body>\n\n<script type=\"text/javascript\">\ncmd = 'alert(\"I am an alert\")';\n</script>\n\n<script type=\"text/javascript\">\ndocument.write(unescape(\"%3Cscript type='text/javascript'%3E\" + \"run('\" + cmd + \"');\" + \"%3C/script%3E\"));\n</script>\n\n</body>\n</html>\n```\n\n\nthe generated source code, after running everything, relevant part:\n\n\n```\n<script type=\"text/javascript\">\ndocument.write(unescape(\"%3Cscript type='text/javascript'%3E\" + \"run('\" + cmd + \"');\" + \"%3C/script%3E\"));\n</script><script type=\"text/javascript\">run('alert(\"I am an alert\")');</script>\n```\n",
+    "created_at": "2008-04-14T08:55:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2909",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2909#issuecomment-20044",
+    "user": "schilly"
+}
+```
 
 I don't know the details of the notebook source code, but one possible way to run javascript code out of javascript is writing it dynamically into the source, because it get's evaluated. The hack: unescape escaped characters!
 
@@ -68,38 +93,93 @@ document.write(unescape("%3Cscript type='text/javascript'%3E" + "run('" + cmd + 
 
 
 
+
 ---
 
-Comment by schilly created at 2008-04-14 09:25:41
+archive/issue_comments_020045.json:
+```json
+{
+    "body": "ok, i'm confused, maybe my last comment is helpful for something else - just tested the cannonical exmaple, and it works for me.",
+    "created_at": "2008-04-14T09:25:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2909",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2909#issuecomment-20045",
+    "user": "schilly"
+}
+```
 
 ok, i'm confused, maybe my last comment is helpful for something else - just tested the cannonical exmaple, and it works for me.
 
 
+
 ---
 
-Comment by timdumol created at 2010-01-17 00:13:12
+archive/issue_comments_020046.json:
+```json
+{
+    "body": "Changing type from defect to enhancement.",
+    "created_at": "2010-01-17T00:13:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2909",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2909#issuecomment-20046",
+    "user": "timdumol"
+}
+```
 
 Changing type from defect to enhancement.
 
 
+
 ---
 
-Comment by kcrisman created at 2014-09-18 02:38:17
+archive/issue_comments_020047.json:
+```json
+{
+    "body": "> ok, i'm confused, maybe my last comment is helpful for something else - just tested the cannonical exmaple, and it works for me.\n\nAh, but *does* it?  For me, it first prints out the (empty) lines every second, and only then all the alerts come up (in order) at once.",
+    "created_at": "2014-09-18T02:38:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2909",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2909#issuecomment-20047",
+    "user": "kcrisman"
+}
+```
 
 > ok, i'm confused, maybe my last comment is helpful for something else - just tested the cannonical exmaple, and it works for me.
 
-Ah, but _does_ it?  For me, it first prints out the (empty) lines every second, and only then all the alerts come up (in order) at once.
+Ah, but *does* it?  For me, it first prints out the (empty) lines every second, and only then all the alerts come up (in order) at once.
+
 
 
 ---
 
-Comment by boothby created at 2020-03-29 02:03:43
+archive/issue_comments_020048.json:
+```json
+{
+    "body": "Closing deprecated notebook tickets",
+    "created_at": "2020-03-29T02:03:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2909",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2909#issuecomment-20048",
+    "user": "boothby"
+}
+```
 
 Closing deprecated notebook tickets
 
 
+
 ---
 
-Comment by boothby created at 2020-03-29 02:03:43
+archive/issue_comments_020049.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2020-03-29T02:03:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2909",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2909#issuecomment-20049",
+    "user": "boothby"
+}
+```
 
 Resolution: invalid

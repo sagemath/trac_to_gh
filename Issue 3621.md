@@ -1,11 +1,21 @@
 # Issue 3621: [with patch, needs review] Finance -- Fix Stock.historical(), addition of enddate input
 
-Issue created by migration from https://trac.sagemath.org/ticket/3621
-
-Original creator: cswiercz
-
-Original creation time: 2008-07-09 00:34:15
-
+archive/issues_003621.json:
+```json
+{
+    "body": "Assignee: cswiercz\n\nCC:  jkantor\n\nKeywords: finance, historical, stock, Stock\n\nThere was an issue with Stock.historical() only returning stock information from Jan 1, 1990 onward and no earlier. The addition of an explicit enddate to the Google Finance query seems to fix this. Fix is demonstrated in the doctests of Stock.historical()\n\nUses the datetime.date python module.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3621\n\n",
+    "created_at": "2008-07-09T00:34:15Z",
+    "labels": [
+        "finance",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch, needs review] Finance -- Fix Stock.historical(), addition of enddate input",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3621",
+    "user": "cswiercz"
+}
+```
 Assignee: cswiercz
 
 CC:  jkantor
@@ -16,17 +26,43 @@ There was an issue with Stock.historical() only returning stock information from
 
 Uses the datetime.date python module.
 
+Issue created by migration from https://trac.sagemath.org/ticket/3621
+
+
+
+
 
 ---
 
-Comment by cswiercz created at 2008-07-09 00:35:18
+archive/issue_comments_025565.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-07-09T00:35:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3621",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3621#issuecomment-25565",
+    "user": "cswiercz"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by cswiercz created at 2008-07-09 16:56:11
+archive/issue_comments_025566.json:
+```json
+{
+    "body": "Replying to [ticket:3621 cswiercz]:\n> There was an issue with Stock.historical() only returning stock information from Jan 1, 1990 onward and no earlier. The addition of an explicit enddate to the Google Finance query seems to fix this. Fix is demonstrated in the doctests of Stock.historical()\n> \n> Uses the datetime.date python module.\n\nThis ticket depends on #3356.",
+    "created_at": "2008-07-09T16:56:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3621",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3621#issuecomment-25566",
+    "user": "cswiercz"
+}
+```
 
 Replying to [ticket:3621 cswiercz]:
 > There was an issue with Stock.historical() only returning stock information from Jan 1, 1990 onward and no earlier. The addition of an explicit enddate to the Google Finance query seems to fix this. Fix is demonstrated in the doctests of Stock.historical()
@@ -36,62 +72,139 @@ Replying to [ticket:3621 cswiercz]:
 This ticket depends on #3356.
 
 
+
 ---
 
-Comment by brettnak created at 2008-07-18 21:38:41
+archive/issue_comments_025567.json:
+```json
+{
+    "body": "Changing status from assigned to new.",
+    "created_at": "2008-07-18T21:38:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3621",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3621#issuecomment-25567",
+    "user": "brettnak"
+}
+```
 
 Changing status from assigned to new.
 
 
+
 ---
 
-Comment by brettnak created at 2008-07-18 21:38:41
+archive/issue_comments_025568.json:
+```json
+{
+    "body": "Changing assignee from cswiercz to cswiercz, brettnak.",
+    "created_at": "2008-07-18T21:38:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3621",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3621#issuecomment-25568",
+    "user": "brettnak"
+}
+```
 
 Changing assignee from cswiercz to cswiercz, brettnak.
 
 
+
 ---
 
-Comment by brettnak created at 2008-07-21 02:51:47
+archive/issue_comments_025569.json:
+```json
+{
+    "body": "add_load_file1.patch - Split up .historical into three parts.  Added a .load_file() function that will load data from a specified file if the file formatted correctly.\neg. 'date,open,high,low,close,volume\\n...'",
+    "created_at": "2008-07-21T02:51:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3621",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3621#issuecomment-25569",
+    "user": "brettnak"
+}
+```
 
 add_load_file1.patch - Split up .historical into three parts.  Added a .load_file() function that will load data from a specified file if the file formatted correctly.
 eg. 'date,open,high,low,close,volume\n...'
 
 
+
 ---
 
-Comment by brettnak created at 2008-07-21 03:00:46
+archive/issue_comments_025570.json:
+```json
+{
+    "body": ".load_file() does not work for large files due to python's .read() size limitations.  Next patch will read the file by line to get around this.",
+    "created_at": "2008-07-21T03:00:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3621",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3621#issuecomment-25570",
+    "user": "brettnak"
+}
+```
 
 .load_file() does not work for large files due to python's .read() size limitations.  Next patch will read the file by line to get around this.
 
 
+
 ---
 
-Comment by cswiercz created at 2008-07-28 02:24:25
+archive/issue_comments_025571.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-07-28T02:24:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3621",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3621#issuecomment-25571",
+    "user": "cswiercz"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by cswiercz created at 2008-07-28 02:24:25
+archive/issue_comments_025572.json:
+```json
+{
+    "body": "Changing assignee from cswiercz, brettnak to cswiercz.",
+    "created_at": "2008-07-28T02:24:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3621",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3621#issuecomment-25572",
+    "user": "cswiercz"
+}
+```
 
 Changing assignee from cswiercz, brettnak to cswiercz.
 
 
+
 ---
 
-Comment by was created at 2008-07-29 18:29:02
+archive/issue_comments_025573.json:
+```json
+{
+    "body": "REFEREE REPORT:\n\nGreat work!  Now be professionals and fix everything below :-)\n\n* The function `_load_from_csv(self, R)` in stock.py is missing a doctest\n\n* I like the Day --> OHCL change. \n\n* Member functions in the Sage library should never be upper case, so\n\n```\n    def Open(self, *args, **kwds):\n```\n\nmust become\n\n```\n    def open(self, *args, **kwds):\n```\n\n\n* The doctest for Open contains `\\code{self.google()`.  Since the docstring is a string that \\c gets turned into a weird character.  You have to do either `\\\\code{self.google()` or (better) just replace `\"\"\"` at the top by `r\"\"\"`.  Same for `def Close`, etc.  \n\n* This doctest SUCKS:\n\n```\n+            sage: finance.Stock('goog').load_from_file('/Users/cswiercz/GOOG-minutely.txt')[:5]    # optional -- requires s\nource file\n+            [\n```\n\nWe actually *do* test all optional doctests sometimes, and do expect them to pass on a reasonably configured machine.   I suggest the following workaround.  Make a subdirectory of SAGE_ROOT/examples called \"finance\".  Put your file in there.  Do hg ci in there to add it to the examples repo.  Post a patch using \"hg export tip\" in that repo.  If you get stuck, let me know.   Then in the doctest just put SAGE_ROOT + 'examples/finance/your_filename.txt'.   And you won't have to make it optional, which is always a plus. \n\n* This code in your patch (in the function load_from_file) contains a bug:\n\n```\n+        try:\n+            R = file_obj.read();\n+        except IOError:\n+            raise IOError, msg + \"Bad path or file name\"\n```\n\n\nYou mean to write:\n\n```\n+        try:\n+            R = file_obj.read();\n+        except IOError, msg :\n+            raise IOError, msg + \"Bad path or file name\"\n```\n\nA doctest should illustrate this exception maybe, so you would have caught this bug.\n\n* 5 Doctests in stock.py fail:\n\n```\nsage -t --optional devel/sage-review/sage/finance/stock.py\n**********************************************************************\nFile \"/Users/was/s/tmp/stock.py\", line 274:\n    sage: finance.Stock('vmw').Open()    # optional -- requires internet\nExpected:\n    [52.1100, 60.9900, 59.0000, 56.0500, 57.2500 ... 38.5300, 36.1800, 32.6300, 36.7000, 34.5000]\nGot:\n    [52.1100, 60.9900, 59.0000, 56.0500, 57.2500 ... 36.1800, 32.6300, 36.7000, 34.5000, 34.0000]\n**********************************************************************\nFile \"/Users/was/s/tmp/stock.py\", line 308:\n    sage: c.google(startdate='Feb+1,+2008', enddate='Mar+1,+2008')    # optional -- requires internet\nExpected:\n    [\n     31-Jan-08 55.60 57.35 55.52 56.67    2607800,\n      1-Feb-08 56.98 58.14 55.06 57.85    2489400,\n      4-Feb-08 58.00 60.47 56.91 58.05    1840300,\n      5-Feb-08 57.60 59.30 57.17 59.30    1711700,\n      6-Feb-08 60.32 62.00 59.50 61.52    2209700\n    ]\nGot:\n    [\n     31-Jan-08 55.60 57.35 55.52 56.67    2607800,\n      1-Feb-08 56.98 58.14 55.06 57.85    2489400,\n      4-Feb-08 58.00 60.47 56.91 58.05    1840300,\n      5-Feb-08 57.60 59.30 57.17 59.30    1711700,\n      6-Feb-08 60.32 62.00 59.50 61.52    2209700,\n      7-Feb-08 60.50 62.75 59.56 60.80    1521700,\n      8-Feb-08 60.90 61.39 60.07 60.27     956400,\n     11-Feb-08 61.22 62.24 60.90 61.42    1132600,\n     12-Feb-08 62.00 63.00 61.56 62.26     989000,\n     13-Feb-08 63.00 63.50 62.18 62.93     919500,\n     14-Feb-08 63.10 63.33 61.25 62.10    1333000,\n     15-Feb-08 61.20 62.57 59.25 59.81    1598200,\n     19-Feb-08 60.99 61.50 56.50 57.38    1685900,\n     20-Feb-08 56.23 59.83 56.23 59.45     913600,\n     21-Feb-08 59.46 60.00 57.50 57.91    1124000,\n     22-Feb-08 58.00 58.48 55.00 56.55    1449100,\n     25-Feb-08 56.55 58.60 56.01 58.29     907900,\n     26-Feb-08 59.30 60.70 57.43 60.18    2050400,\n     27-Feb-08 60.00 60.50 58.42 59.86    1285200,\n     28-Feb-08 59.79 60.96 59.16 59.95     984500,\n     29-Feb-08 59.26 59.95 58.32 58.67     842200\n    ]\n**********************************************************************\nFile \"/Users/was/s/tmp/stock.py\", line 321:\n    sage: finance.Stock('vmw').Close()    # optional -- requires internet\nExpected:\n    [57.7100, 56.9900, 55.5500, 57.3300, 65.9900 ... 36.9400, 37.9700, 37.0000, 34.7500, 34.0700]\nGot:\n    [57.7100, 56.9900, 55.5500, 57.3300, 65.9900 ... 37.9700, 37.0000, 34.7500, 34.0700, 34.6900]\n**********************************************************************\nFile \"/Users/was/s/tmp/stock.py\", line 352:\n    sage: finance.Stock('goog').load_from_file('/Users/cswiercz/GOOG-minutely.txt')[:5]    # optional -- requires source file\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/was/s/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_12[1]>\", line 1, in <module>\n        finance.Stock('goog').load_from_file('/Users/cswiercz/GOOG-minutely.txt')[:Integer(5)]    # optional -- requires source file###line 352:\n    sage: finance.Stock('goog').load_from_file('/Users/cswiercz/GOOG-minutely.txt')[:5]    # optional -- requires source file\n      File \"/Users/was/s/local/lib/python2.5/site-packages/sage/finance/stock.py\", line 375, in load_from_file\n        file_obj = open(file, 'r')\n    IOError: [Errno 2] No such file or directory: '/Users/cswiercz/GOOG-minutely.txt'\n**********************************************************************\nFile \"/Users/was/s/tmp/stock.py\", line 366:\n    sage: finance.Stock('goog').load_from_file('/Users/cswiercz/GOOG-minutely.txt')[:5]    # optional -- requires source file\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/was/s/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_12[2]>\", line 1, in <module>\n        finance.Stock('goog').load_from_file('/Users/cswiercz/GOOG-minutely.txt')[:Integer(5)]    # optional -- requires source file###line 366:\n    sage: finance.Stock('goog').load_from_file('/Users/cswiercz/GOOG-minutely.txt')[:5]    # optional -- requires source file\n      File \"/Users/was/s/local/lib/python2.5/site-packages/sage/finance/stock.py\", line 375, in load_from_file\n        file_obj = open(file, 'r')\n    IOError: [Errno 2] No such file or directory: '/Users/cswiercz/GOOG-minutely.txt'\n**********************************************************************\nFile \"/Users/was/s/tmp/stock.py\", line 407:\n    sage: finance.Stock('aapl').google()[:2]    # optional -- requires internet\nExpected:\n    [\n      2-Jan-90 8.81 9.38 8.75 9.31    6542800,\n      3-Jan-90 9.50 9.50 9.38 9.38    7428400\n    ]\nGot:\n    [\n     30-Jul-07 144.33 145.45 139.57 141.43   39535300,\n     31-Jul-07 142.97 143.48 131.52 131.76   62942600\n    ]\n**********************************************************************\nFile \"/Users/was/s/tmp/stock.py\", line 211:\n    sage: sage.finance.stock.Stock(\"AAPL\", 22144).google()[:5] #optional -- requires internet\nExpected:\n        [\n          2-Jan-90 8.81 9.38 8.75 9.31    6542800,\n          3-Jan-90 9.50 9.50 9.38 9.38    7428400,\n          4-Jan-90 9.56 9.69 9.31 9.41    7911200,\n          5-Jan-90 9.44 9.56 9.25 9.44    4404000,\n          8-Jan-90 9.38 9.50 9.25 9.50    3627600\n        ]\nGot:\n    [\n     30-Jul-07 144.33 145.45 139.57 141.43   39535300,\n     31-Jul-07 142.97 143.48 131.52 131.76   62942600,\n      1-Aug-07 133.64 135.38 127.77 135.00   62505600,\n      2-Aug-07 136.65 136.96 134.15 136.49   30451600,\n      3-Aug-07 135.26 135.95 131.50 131.85   24256700\n    ]\n**********************************************************************\n5 items had failures:\n   1 of   6 in __main__.example_10\n   2 of   6 in __main__.example_11\n   2 of   3 in __main__.example_12\n   1 of   2 in __main__.example_14\n   1 of   5 in __main__.example_9\n***Test Failed*** 7 failures.\nFor whitespace errors, see the file /Users/was/s/tmp/.doctest_stock.py\n```\n",
+    "created_at": "2008-07-29T18:29:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3621",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3621#issuecomment-25573",
+    "user": "was"
+}
+```
 
 REFEREE REPORT:
 
 Great work!  Now be professionals and fix everything below :-)
 
- * The function `_load_from_csv(self, R)` in stock.py is missing a doctest
+* The function `_load_from_csv(self, R)` in stock.py is missing a doctest
 
- * I like the Day --> OHCL change. 
+* I like the Day --> OHCL change. 
 
- * Member functions in the Sage library should never be upper case, so
+* Member functions in the Sage library should never be upper case, so
 
 ```
     def Open(self, *args, **kwds):
@@ -104,9 +217,9 @@ must become
 ```
 
 
- * The doctest for Open contains `\code{self.google()`.  Since the docstring is a string that \c gets turned into a weird character.  You have to do either `\\code{self.google()` or (better) just replace `"""` at the top by `r"""`.  Same for `def Close`, etc.  
+* The doctest for Open contains `\code{self.google()`.  Since the docstring is a string that \c gets turned into a weird character.  You have to do either `\\code{self.google()` or (better) just replace `"""` at the top by `r"""`.  Same for `def Close`, etc.  
 
- * This doctest SUCKS:
+* This doctest SUCKS:
 
 ```
 +            sage: finance.Stock('goog').load_from_file('/Users/cswiercz/GOOG-minutely.txt')[:5]    # optional -- requires s
@@ -116,7 +229,7 @@ ource file
 
 We actually *do* test all optional doctests sometimes, and do expect them to pass on a reasonably configured machine.   I suggest the following workaround.  Make a subdirectory of SAGE_ROOT/examples called "finance".  Put your file in there.  Do hg ci in there to add it to the examples repo.  Post a patch using "hg export tip" in that repo.  If you get stuck, let me know.   Then in the doctest just put SAGE_ROOT + 'examples/finance/your_filename.txt'.   And you won't have to make it optional, which is always a plus. 
 
- * This code in your patch (in the function load_from_file) contains a bug:
+* This code in your patch (in the function load_from_file) contains a bug:
 
 ```
 +        try:
@@ -137,7 +250,7 @@ You mean to write:
 
 A doctest should illustrate this exception maybe, so you would have caught this bug.
 
- * 5 Doctests in stock.py fail:
+* 5 Doctests in stock.py fail:
 
 ```
 sage -t --optional devel/sage-review/sage/finance/stock.py
@@ -261,9 +374,20 @@ For whitespace errors, see the file /Users/was/s/tmp/.doctest_stock.py
 
 
 
+
 ---
 
-Comment by cswiercz created at 2008-07-31 21:43:14
+archive/issue_comments_025574.json:
+```json
+{
+    "body": "Faulty formatting with part5.patch? Following error message when applying the patch.\n\n\n\n```\nsage: hg_sage.apply(\"http://trac.sagemath.org/sage_trac/attachment/ticket/3621/sage-3621-part6.patch\")\nAttempting to load remote file: http://trac.sagemath.org/sage_trac/attachment/ticket/3621/sage-3621-part6.patch?format=raw\nLoading: [...]\ncd \"/Users/cswiercz/sage/devel/sage\" && hg status\ncd \"/Users/cswiercz/sage/devel/sage\" && hg status\ncd \"/Users/cswiercz/sage/devel/sage\" && hg import   \"/Users/cswiercz/.sage/temp/D_69_91_144_189.dhcp4.washington.edu/1527/tmp_5.patch\"\napplying /Users/cswiercz/.sage/temp/D_69_91_144_189.dhcp4.washington.edu/1527/tmp_5.patch\npatching file sage/finance/stock.py\nHunk #1 FAILED at 2\nHunk #2 FAILED at 13\nHunk #3 FAILED at 47\nHunk #4 FAILED at 137\nHunk #5 FAILED at 160\nHunk #6 FAILED at 174\nHunk #7 FAILED at 189\nHunk #8 FAILED at 202\nHunk #9 FAILED at 221\nHunk #10 FAILED at 277\n10 out of 10 hunks FAILED -- saving rejects to file sage/finance/stock.py.rej\nabort: patch failed to apply\n```\n",
+    "created_at": "2008-07-31T21:43:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3621",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3621#issuecomment-25574",
+    "user": "cswiercz"
+}
+```
 
 Faulty formatting with part5.patch? Following error message when applying the patch.
 
@@ -294,44 +418,110 @@ abort: patch failed to apply
 
 
 
+
 ---
 
-Comment by brettnak created at 2008-07-31 22:15:14
+archive/issue_comments_025575.json:
+```json
+{
+    "body": "Patch 6 is a duplicate of patch 5.  Part 6 is supposed to add a new doctest.  I will add that shortly.",
+    "created_at": "2008-07-31T22:15:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3621",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3621#issuecomment-25575",
+    "user": "brettnak"
+}
+```
 
 Patch 6 is a duplicate of patch 5.  Part 6 is supposed to add a new doctest.  I will add that shortly.
 
 
+
 ---
 
-Comment by brettnak created at 2008-08-02 21:32:16
+archive/issue_comments_025576.json:
+```json
+{
+    "body": "Changing assignee from cswiercz to cswiercz, brettnak.",
+    "created_at": "2008-08-02T21:32:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3621",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3621#issuecomment-25576",
+    "user": "brettnak"
+}
+```
 
 Changing assignee from cswiercz to cswiercz, brettnak.
 
 
+
 ---
 
-Comment by brettnak created at 2008-08-02 21:32:16
+archive/issue_comments_025577.json:
+```json
+{
+    "body": "Changing status from assigned to new.",
+    "created_at": "2008-08-02T21:32:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3621",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3621#issuecomment-25577",
+    "user": "brettnak"
+}
+```
 
 Changing status from assigned to new.
 
 
+
 ---
 
-Comment by cswiercz created at 2008-08-05 21:01:02
+archive/issue_comments_025578.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-08-05T21:01:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3621",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3621#issuecomment-25578",
+    "user": "cswiercz"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by cswiercz created at 2008-08-05 21:01:02
+archive/issue_comments_025579.json:
+```json
+{
+    "body": "Changing assignee from cswiercz, brettnak to cswiercz.",
+    "created_at": "2008-08-05T21:01:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3621",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3621#issuecomment-25579",
+    "user": "cswiercz"
+}
+```
 
 Changing assignee from cswiercz, brettnak to cswiercz.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-06 01:00:13
+archive/issue_comments_025580.json:
+```json
+{
+    "body": "I am not so sure you guys should give each other positive reviews in this form. I would also either prefer clear instructions on which patches to merge in what order or alternatively a new unified patch. I do not want a bundle.\n\nCheers,\n\nMichael",
+    "created_at": "2008-08-06T01:00:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3621",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3621#issuecomment-25580",
+    "user": "mabshoff"
+}
+```
 
 I am not so sure you guys should give each other positive reviews in this form. I would also either prefer clear instructions on which patches to merge in what order or alternatively a new unified patch. I do not want a bundle.
 
@@ -340,9 +530,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by cswiercz created at 2008-08-06 14:53:01
+archive/issue_comments_025581.json:
+```json
+{
+    "body": "Replying to [comment:16 mabshoff]:\n> I am not so sure you guys should give each other positive reviews in this form. I would also either prefer clear instructions on which patches to merge in what order or alternatively a new unified patch. I do not want a bundle.\n\nThe patches should be merged in order as posted, that is:\n\n\nall_updates_and_cid.patch\n\n\nadd_load_file1.patch\n\n\nadd_close.patch\n\n\nload_file_bug_fix.patch\n\n\nsage-3621-part5.patch\n\n\nsage-3621-example.patch\n\n\nsage-3621-part6.patch\n\n\nsage-3621-part7.patch\n\n\nsage-3621-part8.patch\n\n\nsage-3621-part9.patch\n\n\nsage-3621-part10.patch\n\n\n\nShall I set it back to [with patch, needs review]?",
+    "created_at": "2008-08-06T14:53:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3621",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3621#issuecomment-25581",
+    "user": "cswiercz"
+}
+```
 
 Replying to [comment:16 mabshoff]:
 > I am not so sure you guys should give each other positive reviews in this form. I would also either prefer clear instructions on which patches to merge in what order or alternatively a new unified patch. I do not want a bundle.
@@ -387,9 +588,20 @@ sage-3621-part10.patch
 Shall I set it back to [with patch, needs review]?
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-06 17:08:58
+archive/issue_comments_025582.json:
+```json
+{
+    "body": "Replying to [comment:17 cswiercz]:\n> Replying to [comment:16 mabshoff]:\n> > I am not so sure you guys should give each other positive reviews in this form. I would also either prefer clear instructions on which patches to merge in what order or alternatively a new unified patch. I do not want a bundle.\n> \n> The patches should be merged in order as posted, that is:\n> \n> \n> all_updates_and_cid.patch\n> \n> \n> add_load_file1.patch\n> \n> \n> add_close.patch\n> \n> \n> load_file_bug_fix.patch\n> \n> \n> sage-3621-part5.patch\n> \n> \n> sage-3621-example.patch\n> \n> \n> sage-3621-part6.patch\n> \n> \n> sage-3621-part7.patch\n> \n> \n> sage-3621-part8.patch\n> \n> \n> sage-3621-part9.patch\n> \n> \n> sage-3621-part10.patch\n\nThanks.\n\n> Shall I set it back to [with patch, needs review]?\n\nI am talking with William about this, but it seems unclear to me who gave a review to what. For example: Chris posted sage-3621-part10.patch and also gave that patch a positive review. It seems like a minor patch, but we should follow procedure here.\n\nCheers,\n\nMichael",
+    "created_at": "2008-08-06T17:08:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3621",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3621#issuecomment-25582",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:17 cswiercz]:
 > Replying to [comment:16 mabshoff]:
@@ -441,9 +653,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by cswiercz created at 2008-08-06 17:18:31
+archive/issue_comments_025583.json:
+```json
+{
+    "body": "Replying to [comment:18 mabshoff]:\n> > Shall I set it back to [with patch, needs review]?\n> \n> I am talking with William about this, but it seems unclear to me who gave a review to what. For example: Chris posted sage-3621-part10.patch and also gave that patch a positive review. It seems like a minor patch, but we should follow procedure here.\n\nTo make the situation a bit clearer, Brett asked if I could review his patches. (part6.patch - part9.patch) I found a minor bug and added my own patch at the very end. (part10.patch) My patch was just a small change to a doctest, which I tested thoroughly. I realize just now that it was kinda silly to review this ticket myself since all of the code throughout these patches was done by both of us, equally. Anyway, I'm fine with setting it back to \"needs review\" and waiting for someone to take a look at it. It's your call. :)\n\n--\nChris",
+    "created_at": "2008-08-06T17:18:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3621",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3621#issuecomment-25583",
+    "user": "cswiercz"
+}
+```
 
 Replying to [comment:18 mabshoff]:
 > > Shall I set it back to [with patch, needs review]?
@@ -456,21 +679,32 @@ To make the situation a bit clearer, Brett asked if I could review his patches. 
 Chris
 
 
+
 ---
 
-Comment by cswiercz created at 2008-08-07 22:12:42
+archive/issue_comments_025584.json:
+```json
+{
+    "body": "Alas, several issues need to be resolved and some features need to be added:\n\n* Yahoo doesn't like explicit exchange declarations. (i.e. `finance.Stock(\"NASDAQ:GOOG\")` returns zero.) Parse the input and store the exchange and symbol separately.\n\n* Yahoo should be implemented as a backup to Google Finance historical queries if Google Finance happens to return zero.\n\n* Fix some issues regarding explicit exchange declarations in general. (i.e. `finance.Stock(\"HKG:0700\").historical()` returns zero.) Improve the way queries handle exchange / symbol relationships. For example, only default to `\"NASDAQ\"` if no exchange is given.\n\n* Rename `Stock.google()` back to `Stock.historical()`\n\n* Consolidate the ten+ patches above.\n\nI'm taking care of this right now! :)\n\n--\n\nChris",
+    "created_at": "2008-08-07T22:12:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3621",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3621#issuecomment-25584",
+    "user": "cswiercz"
+}
+```
 
 Alas, several issues need to be resolved and some features need to be added:
 
- * Yahoo doesn't like explicit exchange declarations. (i.e. `finance.Stock("NASDAQ:GOOG")` returns zero.) Parse the input and store the exchange and symbol separately.
+* Yahoo doesn't like explicit exchange declarations. (i.e. `finance.Stock("NASDAQ:GOOG")` returns zero.) Parse the input and store the exchange and symbol separately.
 
- * Yahoo should be implemented as a backup to Google Finance historical queries if Google Finance happens to return zero.
+* Yahoo should be implemented as a backup to Google Finance historical queries if Google Finance happens to return zero.
 
- * Fix some issues regarding explicit exchange declarations in general. (i.e. `finance.Stock("HKG:0700").historical()` returns zero.) Improve the way queries handle exchange / symbol relationships. For example, only default to `"NASDAQ"` if no exchange is given.
+* Fix some issues regarding explicit exchange declarations in general. (i.e. `finance.Stock("HKG:0700").historical()` returns zero.) Improve the way queries handle exchange / symbol relationships. For example, only default to `"NASDAQ"` if no exchange is given.
 
- * Rename `Stock.google()` back to `Stock.historical()`
+* Rename `Stock.google()` back to `Stock.historical()`
 
- * Consolidate the ten+ patches above.
+* Consolidate the ten+ patches above.
 
 I'm taking care of this right now! :)
 
@@ -479,16 +713,40 @@ I'm taking care of this right now! :)
 Chris
 
 
+
 ---
+
+archive/issue_comments_025585.json:
+```json
+{
+    "body": "Attachment\n\nReplacement patch for all patches listed above. Combines all changes.",
+    "created_at": "2008-08-07T23:06:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3621",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3621#issuecomment-25585",
+    "user": "cswiercz"
+}
+```
 
 Attachment
 
 Replacement patch for all patches listed above. Combines all changes.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-08 22:36:37
+archive/issue_comments_025586.json:
+```json
+{
+    "body": "sage-3621-combined.patch is joined work by William, Chris and Brett.\n\nCheers,\n\nMichael",
+    "created_at": "2008-08-08T22:36:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3621",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3621#issuecomment-25586",
+    "user": "mabshoff"
+}
+```
 
 sage-3621-combined.patch is joined work by William, Chris and Brett.
 
@@ -497,16 +755,40 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_025587.json:
+```json
+{
+    "body": "Attachment\n\nAdded Yahoo Finance as a backup to Google Finance historical requests. Additional refinements.",
+    "created_at": "2008-08-13T00:51:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3621",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3621#issuecomment-25587",
+    "user": "cswiercz"
+}
+```
 
 Attachment
 
 Added Yahoo Finance as a backup to Google Finance historical requests. Additional refinements.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-25 06:25:51
+archive/issue_comments_025588.json:
+```json
+{
+    "body": "Josh, \n\ncan you review those two patches?\n\nCheers,\n\nMichael",
+    "created_at": "2008-08-25T06:25:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3621",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3621#issuecomment-25588",
+    "user": "mabshoff"
+}
+```
 
 Josh, 
 
@@ -517,11 +799,22 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by boothby created at 2008-09-11 21:55:51
+archive/issue_comments_025589.json:
+```json
+{
+    "body": "Something's up with the first patch -- the file **SAGE_ROOT/examples/finance/AAPL-minutely.csv** is located at **SAGE_ROOT/finance/AAPL-minutely.csv** when I apply the patch to a fresh 3.1.2.rc1.\n\n\n```\nboothby@eight:~/sage-3.1.2.rc1$ ./sage -t devel/sage/sage/finance/stock.py\nsage -t  devel/sage/sage/finance/stock.py                   **********************************************************************\nFile \"/home/boothby/sage-3.1.2.rc1/tmp/stock.py\", line 417:\n    sage: finance.Stock('aapl').load_from_file(SAGE_ROOT + '/examples/finance/AAPL-minutely.csv')\nExpected:\n    [\n    2008-06-02T05:01:00 188.00 188.00 188.00 188.00        687,\n    2008-06-02T05:00:00 188.00 188.11 188.00 188.00       2877,\n    2008-06-02T04:55:00 188.00 188.00 188.00 188.00       1000,\n    2008-06-02T04:54:00 187.75 188.00 187.75 188.00       2000,\n    2008-06-02T04:23:00 187.80 187.80 187.80 187.80        100\n    ]\nGot:\n    Bad path or file name\n**********************************************************************\nFile \"/home/boothby/sage-3.1.2.rc1/tmp/stock.py\", line 431:\n    sage: finance.Stock('goog').load_from_file(SAGE_ROOT + '/examples/finance/AAPL-minutely.csv')\nExpected:\n    [\n    2008-06-02T05:01:00 188.00 188.00 188.00 188.00        687,\n    2008-06-02T05:00:00 188.00 188.11 188.00 188.00       2877,\n    2008-06-02T04:55:00 188.00 188.00 188.00 188.00       1000,\n    2008-06-02T04:54:00 187.75 188.00 187.75 188.00       2000,\n    2008-06-02T04:23:00 187.80 187.80 187.80 187.80        100\n    ]\nGot:\n    Bad path or file name\n**********************************************************************\n1 items had failures:\n   2 of   5 in __main__.example_12\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /home/boothby/sage-3.1.2.rc1/tmp/.doctest_stock.py\n\t [1.2 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  devel/sage/sage/finance/stock.py\nTotal time for all tests: 1.2 seconds\n```\n",
+    "created_at": "2008-09-11T21:55:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3621",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3621#issuecomment-25589",
+    "user": "boothby"
+}
+```
 
-Something's up with the first patch -- the file *SAGE_ROOT/examples/finance/AAPL-minutely.csv* is located at *SAGE_ROOT/finance/AAPL-minutely.csv* when I apply the patch to a fresh 3.1.2.rc1.
+Something's up with the first patch -- the file **SAGE_ROOT/examples/finance/AAPL-minutely.csv** is located at **SAGE_ROOT/finance/AAPL-minutely.csv** when I apply the patch to a fresh 3.1.2.rc1.
 
 
 ```
@@ -570,42 +863,114 @@ Total time for all tests: 1.2 seconds
 
 
 
+
 ---
 
-Comment by boothby created at 2008-09-11 22:13:49
+archive/issue_comments_025590.json:
+```json
+{
+    "body": "Oops, my bad -- William already commented on that.",
+    "created_at": "2008-09-11T22:13:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3621",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3621#issuecomment-25590",
+    "user": "boothby"
+}
+```
 
 Oops, my bad -- William already commented on that.
 
 
+
 ---
 
-Comment by boothby created at 2008-09-11 22:14:29
+archive/issue_comments_025591.json:
+```json
+{
+    "body": "apply to repository in SAGE_ROOT/examples",
+    "created_at": "2008-09-11T22:14:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3621",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3621#issuecomment-25591",
+    "user": "boothby"
+}
+```
 
 apply to repository in SAGE_ROOT/examples
 
 
+
 ---
+
+archive/issue_comments_025592.json:
+```json
+{
+    "body": "Attachment\n\nremoves creation of example file from original",
+    "created_at": "2008-09-11T22:19:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3621",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3621#issuecomment-25592",
+    "user": "boothby"
+}
+```
 
 Attachment
 
 removes creation of example file from original
 
 
+
 ---
+
+archive/issue_comments_025593.json:
+```json
+{
+    "body": "Attachment\n\nAll (including optional) tests pass!",
+    "created_at": "2008-09-11T22:41:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3621",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3621#issuecomment-25593",
+    "user": "boothby"
+}
+```
 
 Attachment
 
 All (including optional) tests pass!
 
 
+
 ---
+
+archive/issue_comments_025594.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-11-28T03:33:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3621",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3621#issuecomment-25594",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2008-11-28 03:35:07
+archive/issue_comments_025595.json:
+```json
+{
+    "body": "REFEREE REPORT:\n\nPositive Review.   This is superb code.\n\nI had to make a few minor changes since for some reason google changed their database.  I also updated some of the # optional tags for the new system. \n\nMichael, to apply this you must:\n1. Apply 3621-combined.patch and sage-3621-trivial_referee_followup.patch to the Sage library.\n\n2. Apply 3621\u2013example.patch to the repo in SAGE_ROOT/examples/.\n\nThat's it.\n\n -- William",
+    "created_at": "2008-11-28T03:35:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3621",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3621#issuecomment-25595",
+    "user": "was"
+}
+```
 
 REFEREE REPORT:
 
@@ -623,16 +988,27 @@ That's it.
  -- William
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-28 08:35:56
+archive/issue_comments_025596.json:
+```json
+{
+    "body": "Merged the patches William mentioned above in 3.2.1.rc0.\n\nThe credit situation: \n\n* authors: Chris Swierczewski, Brett Nakashima, William Stein\n* reviewers: William Stein, Tom Boothby\n\nPlease let me know if I got anything wrong\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-28T08:35:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3621",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3621#issuecomment-25596",
+    "user": "mabshoff"
+}
+```
 
 Merged the patches William mentioned above in 3.2.1.rc0.
 
 The credit situation: 
 
- * authors: Chris Swierczewski, Brett Nakashima, William Stein
- * reviewers: William Stein, Tom Boothby
+* authors: Chris Swierczewski, Brett Nakashima, William Stein
+* reviewers: William Stein, Tom Boothby
 
 Please let me know if I got anything wrong
 
@@ -641,8 +1017,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-28 08:35:56
+archive/issue_comments_025597.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-11-28T08:35:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3621",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3621#issuecomment-25597",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 8389: Sage eats all memory trying to evaluate MatrixSpace(QQ, 2)['x']
 
-Issue created by migration from https://trac.sagemath.org/ticket/8389
-
-Original creator: mmezzarobba
-
-Original creation time: 2010-02-27 17:22:15
-
+archive/issues_008389.json:
+```json
+{
+    "body": "Assignee: AlexGhitza\n\nCC:  mjo nthiery\n\nThis makes Sage eat all available memory until it gets interrupted:\n\n\n```\n$ ./sage     \n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: MatrixSpace(QQ, 2)['x']\n^C---------------------------------------------------------------------------\nKeyboardInterrupt                         Traceback (most recent call last)  \n| Sage Version 4.3.3, Release Date: 2010-02-21                       |\n| Type notebook() for the GUI, and license() for information.        |\n/home/marc/co/sage-4.3.3/<ipython console> in <module>()\n\n/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__getitem__ (sage/structure/parent.c:7653)()                  \n\n/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent._list_from_iterator_cached (sage/structure/parent.c:7061)()   \n\n/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/matrix/matrix_space.pyc in __iter__(self)                                                                         \n    792             while True:                                                          \n    793                 for iv in sage.combinat.integer_vector.IntegerVectors(weight, number_of_entries):                                                                         \n--> 794                     yield self(entries=[base_elements[i] for i in iv], rows=True)                                                                                         \n    795\n    796                 weight += 1\n\n/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/matrix/matrix_space.pyc in __call__(self, entries, coerce, copy, rows)\n    393             return self(entries.matrix(), copy=False)\n    394\n--> 395         return self.matrix(entries, copy=copy, coerce=coerce, rows=rows)\n    396\n    397     def change_ring(self, R):\n\n/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/matrix/matrix_space.pyc in matrix(self, x, coerce, copy, rows)\n   1068             if isinstance(x[0], list):\n   1069                 x = sum(x,[])\n-> 1070             elif hasattr(x[0], \"is_vector\"): # TODO: is this the best way to test that?\n   1071                 e = []\n   1072                 for v in x:\n\n/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.Element.__getattr__ (sage/structure/element.c:2726)()\n\n/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/rings/ring.so in sage.rings.ring.Field.category (sage/rings/ring.c:8675)()\n\n/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/misc/classcall_metaclass.pyc in __call__(cls, *args, **options)\n    114             return cls\n    115\n--> 116     def __call__(cls, *args, **options):\n    117         \"\"\"\n    118         This method implements ``cls(<some arguments>)``.\n\n/home/marc/co/sage-4.3.3/local/lib/python2.6/site-packages/sage/interfaces/get_sigs.pyc in my_sigint(x, n)\n      7\n      8 def my_sigint(x, n):\n----> 9     raise KeyboardInterrupt\n     10\n     11 def my_sigfpe(x, n):\n```\n\n\nNote that `MatrixSpace(QQ, 2)['x']` is not supposed to *work*, since\n\n\n```\nDefinition:     PolynomialRing [...]\nDocstring:\n       [...]\n       INPUT:\n\n       * ``base_ring`` -- a commutative ring\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8389\n\n",
+    "created_at": "2010-02-27T17:22:15Z",
+    "labels": [
+        "algebra",
+        "major",
+        "bug"
+    ],
+    "title": "Sage eats all memory trying to evaluate MatrixSpace(QQ, 2)['x']",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8389",
+    "user": "mmezzarobba"
+}
+```
 Assignee: AlexGhitza
 
 CC:  mjo nthiery
@@ -69,7 +79,7 @@ KeyboardInterrupt                         Traceback (most recent call last)
 ```
 
 
-Note that `MatrixSpace(QQ, 2)['x']` is not supposed to _work_, since
+Note that `MatrixSpace(QQ, 2)['x']` is not supposed to *work*, since
 
 
 ```
@@ -82,10 +92,25 @@ Docstring:
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8389
+
+
+
+
 
 ---
 
-Comment by davidloeffler created at 2011-01-23 11:12:17
+archive/issue_comments_075105.json:
+```json
+{
+    "body": "The problem's not in the polynomial ring constructor per se:\n\n```\nsage: R = PolynomialRing(MatrixSpace(QQ, 2),'x'); R\nUnivariate Polynomial Ring in x over Full MatrixSpace of 2 by 2 dense matrices over Rational Field\n```\n\nAlmost nothing works with R because printing of elements is broken, but at least you can construct it! \n\nThe problem reported above lies in the `R['x']` syntax; for some reason, the \"list\" method of the matrix ring is getting called, and this (of course) never terminates. If you try this with a matrix space over a *finite* ring, the list call succeeds, and it tries to get the element of index 'x' -- which fails because the string 'x' isn't an integer:\n\n```\nsage: MatrixSpace(GF(3), 2)['x']\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/masiao/<ipython console> in <module>()\n\n/storage/masiao/sage-4.6.2.alpha1/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__getitem__ (sage/structure/parent.c:8072)()\n\nTypeError: list indices must be integers, not str\n```\n",
+    "created_at": "2011-01-23T11:12:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8389#issuecomment-75105",
+    "user": "davidloeffler"
+}
+```
 
 The problem's not in the polynomial ring constructor per se:
 
@@ -112,37 +137,94 @@ TypeError: list indices must be integers, not str
 
 
 
+
 ---
 
-Comment by mjo created at 2012-01-16 02:48:50
+archive/issue_comments_075106.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2012-01-16T02:48:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8389#issuecomment-75106",
+    "user": "mjo"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mjo created at 2012-01-16 02:48:50
+archive/issue_comments_075107.json:
+```json
+{
+    "body": "This is fixed, probably by #10470. I've added a doctest in the parent list() method; hopefully that is the proper place for it.",
+    "created_at": "2012-01-16T02:48:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8389#issuecomment-75107",
+    "user": "mjo"
+}
+```
 
 This is fixed, probably by #10470. I've added a doctest in the parent list() method; hopefully that is the proper place for it.
 
 
+
 ---
+
+archive/issue_comments_075108.json:
+```json
+{
+    "body": "Attachment\n\nAdd a doctest to the parent list() method.",
+    "created_at": "2012-01-16T02:49:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8389#issuecomment-75108",
+    "user": "mjo"
+}
+```
 
 Attachment
 
 Add a doctest to the parent list() method.
 
 
+
 ---
 
-Comment by kcrisman created at 2012-03-16 02:00:30
+archive/issue_comments_075109.json:
+```json
+{
+    "body": "I was about to give this positive review, but after reading comment:2 I wonder.   Are we just hiding a bug here?  In which case this ticket could just be changed to either raising a `NotImplementedError` or making it do what it's supposed to, namely creating a polynomial ring over the matrix space in question.",
+    "created_at": "2012-03-16T02:00:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8389#issuecomment-75109",
+    "user": "kcrisman"
+}
+```
 
 I was about to give this positive review, but after reading comment:2 I wonder.   Are we just hiding a bug here?  In which case this ticket could just be changed to either raising a `NotImplementedError` or making it do what it's supposed to, namely creating a polynomial ring over the matrix space in question.
 
 
+
 ---
 
-Comment by mjo created at 2012-03-16 14:27:30
+archive/issue_comments_075110.json:
+```json
+{
+    "body": "Replying to [comment:4 kcrisman]:\n> I was about to give this positive review, but after reading comment:2 I wonder.   Are we just hiding a bug here?  In which case this ticket could just be changed to either raising a `NotImplementedError` or making it do what it's supposed to, namely creating a polynomial ring over the matrix space in question.\n\nThis is \"easy\" to do for one variable by overriding `MatrixSpace_generic.__getitem__` to check for a string, and then calling `PolynomialRing()`.\n\nBut ideally, we would want to offer the same interface that we do when constructing polynomial rings from other rings or fields. Does constructing a polynomial ring over matrix spaces even make sense mathematically? All of the existing code to do this is in `ring.__getitem__`, which sounds right to me, but this is very much not a strong point of mine.",
+    "created_at": "2012-03-16T14:27:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8389#issuecomment-75110",
+    "user": "mjo"
+}
+```
 
 Replying to [comment:4 kcrisman]:
 > I was about to give this positive review, but after reading comment:2 I wonder.   Are we just hiding a bug here?  In which case this ticket could just be changed to either raising a `NotImplementedError` or making it do what it's supposed to, namely creating a polynomial ring over the matrix space in question.
@@ -152,39 +234,94 @@ This is "easy" to do for one variable by overriding `MatrixSpace_generic.__getit
 But ideally, we would want to offer the same interface that we do when constructing polynomial rings from other rings or fields. Does constructing a polynomial ring over matrix spaces even make sense mathematically? All of the existing code to do this is in `ring.__getitem__`, which sounds right to me, but this is very much not a strong point of mine.
 
 
+
 ---
 
-Comment by kcrisman created at 2012-03-16 14:36:51
+archive/issue_comments_075111.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_info.",
+    "created_at": "2012-03-16T14:36:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8389#issuecomment-75111",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_review to needs_info.
 
 
+
 ---
 
-Comment by kcrisman created at 2012-03-16 14:36:51
+archive/issue_comments_075112.json:
+```json
+{
+    "body": "Changing priority from major to minor.",
+    "created_at": "2012-03-16T14:36:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8389#issuecomment-75112",
+    "user": "kcrisman"
+}
+```
 
 Changing priority from major to minor.
 
 
+
 ---
 
-Comment by kcrisman created at 2012-03-16 14:36:51
+archive/issue_comments_075113.json:
+```json
+{
+    "body": "In any case, I think that this is at least 'needs info' until we decide what to do.  It's not as high priority as it once was since it just raises an error instead of bringing the computer to a crashing halt!",
+    "created_at": "2012-03-16T14:36:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8389#issuecomment-75113",
+    "user": "kcrisman"
+}
+```
 
 In any case, I think that this is at least 'needs info' until we decide what to do.  It's not as high priority as it once was since it just raises an error instead of bringing the computer to a crashing halt!
 
 
+
 ---
 
-Comment by tscrim created at 2013-04-14 14:15:53
+archive/issue_comments_075114.json:
+```json
+{
+    "body": "There is (a duplicate) #10608 which has a patch that gives `MatrixSpace_generic` a `__getitem__()` method, so I think this should be fixed (i.e. return a polynomial ring). Also I don't think this hides a problem and is mathematically correct since all `n x n` matrices form a ring (although not the nicest of rings). Plus `PolynomialRing(MatrixSpace(QQ, 2), 'x')` works.\n\nHowever what I'm thinking as a solution is that any parent in the category of `Rings` should have a default `__getitem__` which checks for string/list input and returns a polynomial/power series ring resp. Thoughts?",
+    "created_at": "2013-04-14T14:15:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8389#issuecomment-75114",
+    "user": "tscrim"
+}
+```
 
 There is (a duplicate) #10608 which has a patch that gives `MatrixSpace_generic` a `__getitem__()` method, so I think this should be fixed (i.e. return a polynomial ring). Also I don't think this hides a problem and is mathematically correct since all `n x n` matrices form a ring (although not the nicest of rings). Plus `PolynomialRing(MatrixSpace(QQ, 2), 'x')` works.
 
 However what I'm thinking as a solution is that any parent in the category of `Rings` should have a default `__getitem__` which checks for string/list input and returns a polynomial/power series ring resp. Thoughts?
 
 
+
 ---
 
-Comment by mmezzarobba created at 2013-12-22 12:43:36
+archive/issue_comments_075115.json:
+```json
+{
+    "body": "Replying to [comment:7 tscrim]:\n> However what I'm thinking as a solution is that any parent in the category of `Rings` should have a default `__getitem__` which checks for string/list input and returns a polynomial/power series ring resp. Thoughts?\n\nIn principle, I agree. Unfortunately, matrix spaces currently do not use the category framework by default (one needs to call `M.full_category_initialisation()` first) for efficiency reasons. So the change you are suggesting would not solve the problem with matrix spaces by itself.\n\nAnd I'm honestly at lost as to how to use the category framework with fundamental, widely used parents.\n\nIn our case, it would make sense (despite the issue with matrix rings) to move the definition of `__getitem__` that deals with polynomials rings and the like from `sage.structure.Rings` to `sage.category.rings.Rings.ParentMethods`. But many common rings do not descend from `Rings().parent_class`, so one would need a wrapper in one direction or the other. Since `Rings.ParentMethods` is supposedly the recommended place to add generic stuff for rings in the long run, it would be natural to move the implementation there and provide a compatibility wrapper in `Ring`. Except that `Ring` comes before `Rings.ParentMethods` in the MRO of (most?) rings that use both...\n\n(On the top of that, there is a hack in `Parent.__getitem__` that one needs to be careful not to break...)",
+    "created_at": "2013-12-22T12:43:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8389#issuecomment-75115",
+    "user": "mmezzarobba"
+}
+```
 
 Replying to [comment:7 tscrim]:
 > However what I'm thinking as a solution is that any parent in the category of `Rings` should have a default `__getitem__` which checks for string/list input and returns a polynomial/power series ring resp. Thoughts?
@@ -198,27 +335,60 @@ In our case, it would make sense (despite the issue with matrix rings) to move t
 (On the top of that, there is a hack in `Parent.__getitem__` that one needs to be careful not to break...)
 
 
+
 ---
 
-Comment by mmezzarobba created at 2014-01-31 20:33:28
+archive/issue_comments_075116.json:
+```json
+{
+    "body": "Changing status from needs_info to needs_review.",
+    "created_at": "2014-01-31T20:33:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8389#issuecomment-75116",
+    "user": "mmezzarobba"
+}
+```
 
 Changing status from needs_info to needs_review.
 
 
+
 ---
 
-Comment by mmezzarobba created at 2014-01-31 20:33:28
+archive/issue_comments_075117.json:
+```json
+{
+    "body": "Ok, after talking with Nicolas I think I understand better what is going on and what should be done. Here is an attempt to streamline the implementation of `__getitem__` for general rings.\n\nI *didn't* leave a version `__getitem__` in `ring.Ring` after all, because virtually all rings properly initialize their category by now. The doctests pass, but there is at least one ring (namely `InfinityRing`) rings for which `R['x']` will fail while it used to work, and there may be more. Thoughts?\n----\nNew commits:",
+    "created_at": "2014-01-31T20:33:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8389#issuecomment-75117",
+    "user": "mmezzarobba"
+}
+```
 
 Ok, after talking with Nicolas I think I understand better what is going on and what should be done. Here is an attempt to streamline the implementation of `__getitem__` for general rings.
 
-I _didn't_ leave a version `__getitem__` in `ring.Ring` after all, because virtually all rings properly initialize their category by now. The doctests pass, but there is at least one ring (namely `InfinityRing`) rings for which `R['x']` will fail while it used to work, and there may be more. Thoughts?
+I *didn't* leave a version `__getitem__` in `ring.Ring` after all, because virtually all rings properly initialize their category by now. The doctests pass, but there is at least one ring (namely `InfinityRing`) rings for which `R['x']` will fail while it used to work, and there may be more. Thoughts?
 ----
 New commits:
 
 
+
 ---
 
-Comment by nthiery created at 2014-02-20 17:32:28
+archive/issue_comments_075118.json:
+```json
+{
+    "body": "Hi Mark!\n\nI went through the changes, and overall it looks good! Thanks so much for the cleanup!\n\nSome tiny remarks / suggestions:\n\n- Doc of __getitem__\n  - TODO -> .. TODO\n  - Is Frac nicer than .fraction_field()?\n- Doc of _gen_names, line 2: replacing `ZZ['x']` by `ZZ[sqrt(5)]` could make it more meaninful?\n- getitem for a matrix space M: could `M[sqrt(5)]` be a meaningful notation to extend the base ring?\n  If yes, I'd be in favor of completely deprecating `M[3]` in favor of `M.unrank(3)`, in order to eventually allow for the notation `M[sqrt(5)]` without ambiguity in the corner case `M[1]`.\n\nBy the way: shall we use the occasion to also move `PrincipalIdealDomain.__getitem__` in the corresponding category? Or are there some principal ideal domains in Sage that are not yet in the `PrincipalIdealDomains` category?\n\nSpeaking of this method: its documentation says \"Create a polynomial or power series ring over ``self`` and inject the variables into the global module scope.\"; the latter statement is wrong, right?\n\nCheers,\n                         Nicolas",
+    "created_at": "2014-02-20T17:32:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8389#issuecomment-75118",
+    "user": "nthiery"
+}
+```
 
 Hi Mark!
 
@@ -241,9 +411,20 @@ Cheers,
                          Nicolas
 
 
+
 ---
 
-Comment by mmezzarobba created at 2014-02-21 09:45:20
+archive/issue_comments_075119.json:
+```json
+{
+    "body": "Thanks for your review!\n\nReplying to [comment:12 nthiery]:\n> - Doc of __getitem__\n>   - TODO -> .. TODO\n\nNo, that was on purpose: the TODO was part of the SEEALSO block. But I added the missing cross-references and removed the TODO line altogether. (I'll push the new commit in a moment.)\n\n>   - Is Frac nicer than .fraction_field()?\n\nNo idea, I didn't touch this part `:-)`.\nLet's mention both.\n\n> - Doc of _gen_names, line 2: replacing `ZZ['x']` by `ZZ[sqrt(5)]` could make it more meaninful?\n\nSame thing here.\n\n> - getitem for a matrix space M: could `M[sqrt(5)]` be a meaningful notation to extend the base ring?\n>   If yes, I'd be in favor of completely deprecating `M[3]` in favor of `M.unrank(3)`, in order to eventually allow for the notation `M[sqrt(5)]` without ambiguity in the corner case `M[1]`.\n\nI believe `M[sqrt(5)]` would make sense, and I wouldn't mind deprecating the notation `parent[integer]` (as a way of enumerating the elements). But I'd rather do that in another ticket.\n\n> By the way: shall we use the occasion to also move `PrincipalIdealDomain.__getitem__` in the corresponding category? Or are there some principal ideal domains in Sage that are not yet in the `PrincipalIdealDomains` category?\n> \n> Speaking of this method: its documentation says \"Create a polynomial or power series ring over ``self`` and inject the variables into the global module scope.\"; the latter statement is wrong, right?\n\nWhat method are you talking about?\n\nThanks again,\n\nMarc",
+    "created_at": "2014-02-21T09:45:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8389#issuecomment-75119",
+    "user": "mmezzarobba"
+}
+```
 
 Thanks for your review!
 
@@ -278,23 +459,56 @@ Thanks again,
 Marc
 
 
+
 ---
 
-Comment by git created at 2014-02-21 10:26:42
+archive/issue_comments_075120.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2014-02-21T10:26:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8389#issuecomment-75120",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by git created at 2014-02-24 12:51:55
+archive/issue_comments_075121.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2014-02-24T12:51:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8389#issuecomment-75121",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by nthiery created at 2014-03-03 13:11:01
+archive/issue_comments_075122.json:
+```json
+{
+    "body": "Replying to [comment:13 mmezzarobba]:\n> No, that was on purpose: the TODO was part of the SEEALSO block. But I added the missing cross-references and removed the TODO line altogether. (I'll push the new commit in a moment.)\n> >   - Is Frac nicer than .fraction_field()?\n> \n> No idea, I didn't touch this part `:-)`.\n> Let's mention both.\n> \n> > - Doc of _gen_names, line 2: replacing `ZZ['x']` by `ZZ[sqrt(5)]` could make it more meaninful?\n> \n> Same thing here.\n\nOk. I double checked your changes and am happy with them!\n\n> I believe `M[sqrt(5)]` would make sense, and I wouldn't mind deprecating the notation `parent[integer]` (as a way of enumerating the elements). But I'd rather do that in another ticket.\n\nFair enough :-) Do you mind creating a ticket for this task?\n\n> > By the way: shall we use the occasion to also move `PrincipalIdealDomain.__getitem__` in the corresponding category? Or are there some principal ideal domains in Sage that are not yet in the `PrincipalIdealDomains` category?\n> > \n> > Speaking of this method: its documentation says \"Create a polynomial or power series ring over ``self`` and inject the variables into the global module scope.\"; the latter statement is wrong, right?\n> \n> What method are you talking about?\n\nSorry, I confused myself with Ring.__getitem__ from another branch ...\n\nBtw: what do you think we should do with IntegerRing.__getitem__ which\ncalls explicitly PrincipalIdealDomains.__getitem__? Just leave it as\nit is?\n\nCheers,\n                           Nicolas",
+    "created_at": "2014-03-03T13:11:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8389#issuecomment-75122",
+    "user": "nthiery"
+}
+```
 
 Replying to [comment:13 mmezzarobba]:
 > No, that was on purpose: the TODO was part of the SEEALSO block. But I added the missing cross-references and removed the TODO line altogether. (I'll push the new commit in a moment.)
@@ -329,9 +543,20 @@ Cheers,
                            Nicolas
 
 
+
 ---
 
-Comment by mmezzarobba created at 2014-03-03 15:14:12
+archive/issue_comments_075123.json:
+```json
+{
+    "body": "Replying to [comment:16 nthiery]:\n> > I believe `M[sqrt(5)]` would make sense, and I wouldn't mind deprecating the notation `parent[integer]` (as a way of enumerating the elements). But I'd rather do that in another ticket.\n> \n> Fair enough :-) Do you mind creating a ticket for this task?\n\nDone (#15885).\n\n> Btw: what do you think we should do with IntegerRing.__getitem__ which\n> calls explicitly PrincipalIdealDomains.__getitem__? Just leave it as\n> it is?\n\nFor now yes.\n\nCan you please set the ticket to positive review if you are happy with it?",
+    "created_at": "2014-03-03T15:14:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8389#issuecomment-75123",
+    "user": "mmezzarobba"
+}
+```
 
 Replying to [comment:16 nthiery]:
 > > I believe `M[sqrt(5)]` would make sense, and I wouldn't mind deprecating the notation `parent[integer]` (as a way of enumerating the elements). But I'd rather do that in another ticket.
@@ -349,9 +574,20 @@ For now yes.
 Can you please set the ticket to positive review if you are happy with it?
 
 
+
 ---
 
-Comment by nthiery created at 2014-03-03 16:37:06
+archive/issue_comments_075124.json:
+```json
+{
+    "body": "Replying to [comment:17 mmezzarobba]:\n> Done (#15885).\n\nThanks!\n\n> For now yes.\n\nOk.\n\n> Can you please set the ticket to positive review if you are happy with it?\n\nDone!",
+    "created_at": "2014-03-03T16:37:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8389#issuecomment-75124",
+    "user": "nthiery"
+}
+```
 
 Replying to [comment:17 mmezzarobba]:
 > Done (#15885).
@@ -367,29 +603,73 @@ Ok.
 Done!
 
 
+
 ---
 
-Comment by nthiery created at 2014-03-03 16:37:24
+archive/issue_comments_075125.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2014-03-03T16:37:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8389#issuecomment-75125",
+    "user": "nthiery"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by nthiery created at 2014-03-03 16:38:12
+archive/issue_comments_075126.json:
+```json
+{
+    "body": "Oh, by the way, should this be a defect fix or an enhancement?",
+    "created_at": "2014-03-03T16:38:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8389#issuecomment-75126",
+    "user": "nthiery"
+}
+```
 
 Oh, by the way, should this be a defect fix or an enhancement?
 
 
+
 ---
 
-Comment by mmezzarobba created at 2014-03-03 18:20:50
+archive/issue_comments_075127.json:
+```json
+{
+    "body": "Changing type from defect to enhancement.",
+    "created_at": "2014-03-03T18:20:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8389#issuecomment-75127",
+    "user": "mmezzarobba"
+}
+```
 
 Changing type from defect to enhancement.
 
 
+
 ---
 
-Comment by vbraun created at 2014-03-03 18:55:36
+archive/issue_comments_075128.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2014-03-03T18:55:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8389#issuecomment-75128",
+    "user": "vbraun"
+}
+```
 
 Resolution: fixed

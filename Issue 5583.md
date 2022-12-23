@@ -1,11 +1,21 @@
 # Issue 5583: coercion bug in perm groups
 
-Issue created by migration from https://trac.sagemath.org/ticket/5583
-
-Original creator: robertwb
-
-Original creation time: 2009-03-22 11:36:05
-
+archive/issues_005583.json:
+```json
+{
+    "body": "Assignee: joyner\n\nCC:  tscrim\n\n\n```\nsage: PermutationGroup([(), (1,3)]).has_coerce_map_from( PermutationGroup([(), (1,2)]) )\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5583\n\n",
+    "created_at": "2009-03-22T11:36:05Z",
+    "labels": [
+        "group theory",
+        "major",
+        "bug"
+    ],
+    "title": "coercion bug in perm groups",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5583",
+    "user": "robertwb"
+}
+```
 Assignee: joyner
 
 CC:  tscrim
@@ -17,10 +27,25 @@ True
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5583
+
+
+
+
 
 ---
 
-Comment by chapoton created at 2019-05-17 17:40:16
+archive/issue_comments_043519.json:
+```json
+{
+    "body": "works in 8.8.b5:\n\n```\nsage: PermutationGroup([(), (1,3)]).has_coerce_map_from( PermutationGroup([(), (\n....: 1,2)]) )\n\nFalse\n```\n",
+    "created_at": "2019-05-17T17:40:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5583",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5583#issuecomment-43519",
+    "user": "chapoton"
+}
+```
 
 works in 8.8.b5:
 
@@ -33,73 +58,183 @@ False
 
 
 
+
 ---
 
-Comment by chapoton created at 2019-05-17 17:40:16
+archive/issue_comments_043520.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2019-05-17T17:40:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5583",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5583#issuecomment-43520",
+    "user": "chapoton"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2019-05-17 17:58:02
+archive/issue_comments_043521.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2019-05-17T17:58:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5583",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5583#issuecomment-43521",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2019-05-17 17:58:02
+archive/issue_comments_043522.json:
+```json
+{
+    "body": "I agree. It works going back to Sage 8.3 (that's the oldest version I have installed), in both Python 2 and Python 3.",
+    "created_at": "2019-05-17T17:58:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5583",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5583#issuecomment-43522",
+    "user": "jhpalmieri"
+}
+```
 
 I agree. It works going back to Sage 8.3 (that's the oldest version I have installed), in both Python 2 and Python 3.
 
 
+
 ---
 
-Comment by chapoton created at 2019-06-01 07:20:35
+archive/issue_comments_043523.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_work.",
+    "created_at": "2019-06-01T07:20:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5583",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5583#issuecomment-43523",
+    "user": "chapoton"
+}
+```
 
 Changing status from positive_review to needs_work.
 
 
+
 ---
 
-Comment by chapoton created at 2019-06-01 07:20:35
+archive/issue_comments_043524.json:
+```json
+{
+    "body": "I have decided to add a doctest, just to be safe.\n----\nNew commits:",
+    "created_at": "2019-06-01T07:20:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5583",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5583#issuecomment-43524",
+    "user": "chapoton"
+}
+```
 
 I have decided to add a doctest, just to be safe.
 ----
 New commits:
 
 
+
 ---
 
-Comment by chapoton created at 2019-06-01 07:20:45
+archive/issue_comments_043525.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2019-06-01T07:20:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5583",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5583#issuecomment-43525",
+    "user": "chapoton"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by chapoton created at 2019-06-01 10:25:49
+archive/issue_comments_043526.json:
+```json
+{
+    "body": "green bot, please review this easy ticket",
+    "created_at": "2019-06-01T10:25:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5583",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5583#issuecomment-43526",
+    "user": "chapoton"
+}
+```
 
 green bot, please review this easy ticket
 
 
+
 ---
 
-Comment by tscrim created at 2019-06-01 23:37:20
+archive/issue_comments_043527.json:
+```json
+{
+    "body": "LGTM.",
+    "created_at": "2019-06-01T23:37:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5583",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5583#issuecomment-43527",
+    "user": "tscrim"
+}
+```
 
 LGTM.
 
 
+
 ---
 
-Comment by tscrim created at 2019-06-01 23:37:20
+archive/issue_comments_043528.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2019-06-01T23:37:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5583",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5583#issuecomment-43528",
+    "user": "tscrim"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by vbraun created at 2019-06-05 18:31:09
+archive/issue_comments_043529.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2019-06-05T18:31:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5583",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5583#issuecomment-43529",
+    "user": "vbraun"
+}
+```
 
 Resolution: fixed

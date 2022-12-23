@@ -1,11 +1,21 @@
 # Issue 5039: Create a class for SetPartition (with no s)
 
-Issue created by migration from https://trac.sagemath.org/ticket/5039
-
-Original creator: slabbe
-
-Original creation time: 2009-01-20 20:17:01
-
+archive/issues_005039.json:
+```json
+{
+    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nThe Elements of `SetPartitions` of a set A are actually Sets of Sets. But there are specific functionalities I would like for those \"Sets of Sets\". For example : merge the classes of a an b and ask what is the representant of a, where a, b are in A.\n\nRight now, Arnaud Bergeron and I coded and named it as `DisjointSet` and it is available in the sage-combinat tree. The implementation is inspired from :\n\nhttp://en.wikipedia.org/wiki/Disjoint_set_data_structure\n\nSee also this thread :\nhttp://groups.google.com/group/sage-combinat-devel/browse_thread/thread/4b6d5bb2983d81c2/f52adb855eb3b09f?lnk=gst&q=disjoint+set#f52adb855eb3b09f\n\nIssue created by migration from https://trac.sagemath.org/ticket/5039\n\n",
+    "created_at": "2009-01-20T20:17:01Z",
+    "labels": [
+        "combinatorics",
+        "major",
+        "enhancement"
+    ],
+    "title": "Create a class for SetPartition (with no s)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5039",
+    "user": "slabbe"
+}
+```
 Assignee: mhansen
 
 CC:  sage-combinat
@@ -19,31 +29,79 @@ http://en.wikipedia.org/wiki/Disjoint_set_data_structure
 See also this thread :
 http://groups.google.com/group/sage-combinat-devel/browse_thread/thread/4b6d5bb2983d81c2/f52adb855eb3b09f?lnk=gst&q=disjoint+set#f52adb855eb3b09f
 
+Issue created by migration from https://trac.sagemath.org/ticket/5039
+
+
+
+
 
 ---
 
-Comment by slabbe created at 2009-01-20 20:17:54
+archive/issue_comments_038373.json:
+```json
+{
+    "body": "Changing assignee from mhansen to slabbe.",
+    "created_at": "2009-01-20T20:17:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5039",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5039#issuecomment-38373",
+    "user": "slabbe"
+}
+```
 
 Changing assignee from mhansen to slabbe.
 
 
+
 ---
 
-Comment by tscrim created at 2013-03-19 17:21:51
+archive/issue_comments_038374.json:
+```json
+{
+    "body": "This was integrated into sage in #6775, but I've reorganized the docs for `DisjointSet` to make the interactive documentation more informative.",
+    "created_at": "2013-03-19T17:21:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5039",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5039#issuecomment-38374",
+    "user": "tscrim"
+}
+```
 
 This was integrated into sage in #6775, but I've reorganized the docs for `DisjointSet` to make the interactive documentation more informative.
 
 
+
 ---
 
-Comment by tscrim created at 2013-03-19 17:21:51
+archive/issue_comments_038375.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2013-03-19T17:21:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5039",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5039#issuecomment-38375",
+    "user": "tscrim"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by ncohen created at 2013-03-24 19:21:51
+archive/issue_comments_038376.json:
+```json
+{
+    "body": "Helloooooooooo !!\n\nSeveral remarks :\n* Could you update the ticket's title and description ?\n* Why did you move the description of the data structure from the module to the function ? `:-/` I prefer when it is at the top of the html documentation, and here you have no idea of what is happening in that module... Plus there is a function and three classes in that module, so something should be said at the module level `:-/`\n* I know it's not the point of this ticket but what would you think of changing `cardinality()` so that it actually returns the cardinality of the partition, and not the cardinality of its union ? And have another method named \"`number_of_elements`\" which would return what `cardinality` currently returns ? Would make more sense, wouldn't it ? It does not have to be in this ticket, though.\n\nNice patch though ! Always good to improve the doc `:-)`\n\nNathann",
+    "created_at": "2013-03-24T19:21:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5039",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5039#issuecomment-38376",
+    "user": "ncohen"
+}
+```
 
 Helloooooooooo !!
 
@@ -57,21 +115,56 @@ Nice patch though ! Always good to improve the doc `:-)`
 Nathann
 
 
+
 ---
 
-Comment by ncohen created at 2013-03-24 19:21:51
+archive/issue_comments_038377.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_info.",
+    "created_at": "2013-03-24T19:21:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5039",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5039#issuecomment-38377",
+    "user": "ncohen"
+}
+```
 
 Changing status from needs_review to needs_info.
 
 
+
 ---
+
+archive/issue_comments_038378.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2013-03-27T23:30:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5039",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5039#issuecomment-38378",
+    "user": "tscrim"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by tscrim created at 2013-03-27 23:41:48
+archive/issue_comments_038379.json:
+```json
+{
+    "body": "Replying to [comment:4 ncohen]:\n> * Could you update the ticket's title and description ?\nDone\n\n> * Why did you move the description of the data structure from the module to the function ? `:-/` I prefer when it is at the top of the html documentation, and here you have no idea of what is happening in that module... Plus there is a function and three classes in that module, so something should be said at the module level `:-/`\n\nThe main reason is for viewing the interactive doc using `DisjoinSet?` since getting the module level doc interactively is unintuitive IMO. I have I've added somethings to the module level directing you to the function for more info.\n\n> * I know it's not the point of this ticket but what would you think of changing `cardinality()` so that it actually returns the cardinality of the partition, and not the cardinality of its union ? And have another method named \"`number_of_elements`\" which would return what `cardinality` currently returns ? Would make more sense, wouldn't it ? It does not have to be in this ticket, though.\n\nPart of me says yes, part no. However because this is how it's been, I don't want to make any changes. If you feel strongly about it, you can make the change on another ticket.\n\n> Nice patch though ! Always good to improve the doc `:-)`\n\nThank you. Ready for review again.",
+    "created_at": "2013-03-27T23:41:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5039",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5039#issuecomment-38379",
+    "user": "tscrim"
+}
+```
 
 Replying to [comment:4 ncohen]:
 > * Could you update the ticket's title and description ?
@@ -90,23 +183,56 @@ Part of me says yes, part no. However because this is how it's been, I don't wan
 Thank you. Ready for review again.
 
 
+
 ---
 
-Comment by tscrim created at 2013-03-27 23:41:48
+archive/issue_comments_038380.json:
+```json
+{
+    "body": "Changing status from needs_info to needs_review.",
+    "created_at": "2013-03-27T23:41:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5039",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5039#issuecomment-38380",
+    "user": "tscrim"
+}
+```
 
 Changing status from needs_info to needs_review.
 
 
+
 ---
 
-Comment by ncohen created at 2013-03-28 09:07:44
+archive/issue_comments_038381.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2013-03-28T09:07:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5039",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5039#issuecomment-38381",
+    "user": "ncohen"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by ncohen created at 2013-03-28 09:07:44
+archive/issue_comments_038382.json:
+```json
+{
+    "body": "Hellooooooooooooo !!!!\n\n> The main reason is for viewing the interactive doc using `DisjoinSet?` since getting the module level doc interactively is unintuitive IMO. I have I've added somethings to the module level directing you to the function for more info.\n\nHmmmmm.. Well, I have the opposite view. With time I add more and more stuff at module level because I use Sage's documentation through Google, and it's hard to find the documentation when it's lost among dozens of functions :-)\n\nhttp://www.sagemath.org/doc/reference/graphs/sage/graphs/graph_decompositions/vertex_separation.html\n\nBut well, for as long as we fight by adding doc in Sage this fight is a good fight `:-P`\n\n> Part of me says yes, part no. However because this is how it's been, I don't want to make any changes. If you feel strongly about it, you can make the change on another ticket.\n\nGot it !\n\nHave fuuuuuuuuuuuuuuuuuuuuun !\n\nNathann",
+    "created_at": "2013-03-28T09:07:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5039",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5039#issuecomment-38382",
+    "user": "ncohen"
+}
+```
 
 Hellooooooooooooo !!!!
 
@@ -127,43 +253,98 @@ Have fuuuuuuuuuuuuuuuuuuuuun !
 Nathann
 
 
+
 ---
 
-Comment by tscrim created at 2013-03-28 12:37:26
+archive/issue_comments_038383.json:
+```json
+{
+    "body": "Thank you for the review.\n\nTravis",
+    "created_at": "2013-03-28T12:37:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5039",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5039#issuecomment-38383",
+    "user": "tscrim"
+}
+```
 
 Thank you for the review.
 
 Travis
 
 
+
 ---
 
-Comment by ncohen created at 2013-03-28 12:44:15
+archive/issue_comments_038384.json:
+```json
+{
+    "body": "A pleasure ! You can cc me for this kind of stuff, they'll be reviewed quickly.\n\nNathann",
+    "created_at": "2013-03-28T12:44:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5039",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5039#issuecomment-38384",
+    "user": "ncohen"
+}
+```
 
 A pleasure ! You can cc me for this kind of stuff, they'll be reviewed quickly.
 
 Nathann
 
 
+
 ---
 
-Comment by ncohen created at 2013-03-28 12:44:46
+archive/issue_comments_038385.json:
+```json
+{
+    "body": "Well, this one was opened 4 years ago but you know what I mean `:-P`\n\nNathann",
+    "created_at": "2013-03-28T12:44:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5039",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5039#issuecomment-38385",
+    "user": "ncohen"
+}
+```
 
 Well, this one was opened 4 years ago but you know what I mean `:-P`
 
 Nathann
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-04-01 10:37:53
+archive/issue_comments_038386.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2013-04-01T10:37:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5039",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5039#issuecomment-38386",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by slabbe created at 2013-04-02 13:09:20
+archive/issue_comments_038387.json:
+```json
+{
+    "body": "Thanks Travis for closing this ticket and Nathann for the review.\n\nHaving doc in the top of the module (for web doc browsing) vs in the the class (for ?  interactive doc browsing) is a good question. One answer could be to copy the same information in both place... At least now, there is a link at the top of the module linking to the class...\n\nS\u00e9bastien",
+    "created_at": "2013-04-02T13:09:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5039",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5039#issuecomment-38387",
+    "user": "slabbe"
+}
+```
 
 Thanks Travis for closing this ticket and Nathann for the review.
 
@@ -172,9 +353,20 @@ Having doc in the top of the module (for web doc browsing) vs in the the class (
 Sébastien
 
 
+
 ---
 
-Comment by nthiery created at 2013-04-02 13:32:23
+archive/issue_comments_038388.json:
+```json
+{
+    "body": "Replying to [comment:11 slabbe]:\n\n> Having doc in the top of the module (for web doc browsing) vs in the\n> the class (for ?  interactive doc browsing) is a good question.\n\nYup.\n\n> One answer could be to copy the same information in both place...\n\nNah, don't duplicate. Better one good piece of documentation than two\nthings that will diverge.\n\n> At least now, there is a link at the top of the module linking to\n> the class...\n\nI aim to put class-specific documentation in the class (so that it can\nbe accessed by introspection on the class; that's often how the user\nwill get to that). And when there is more than one class, to put an\noverview/tutorial in the module. With cross links.\n\nCheers,\n                                   Nicolas",
+    "created_at": "2013-04-02T13:32:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5039",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5039#issuecomment-38388",
+    "user": "nthiery"
+}
+```
 
 Replying to [comment:11 slabbe]:
 

@@ -1,22 +1,47 @@
 # Issue 2415: update NTL to 5.4.2 (bugfix release)
 
-Issue created by migration from https://trac.sagemath.org/ticket/2415
-
-Original creator: dmharvey
-
-Original creation time: 2008-03-07 03:31:08
-
+archive/issues_002415.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nChangelog says:\n\n* Fixed a bug in the sub(ZZ_pEX, ZZ_pE, ZZ_pEX) and sub(zz_pEX, zz_pE, zz_pEX) routines (reported by Charanjit Jutla). Under certain circumstances, these could outout wrong answers.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2415\n\n",
+    "created_at": "2008-03-07T03:31:08Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "update NTL to 5.4.2 (bugfix release)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2415",
+    "user": "dmharvey"
+}
+```
 Assignee: mabshoff
 
 Changelog says:
 
- * Fixed a bug in the sub(ZZ_pEX, ZZ_pE, ZZ_pEX) and sub(zz_pEX, zz_pE, zz_pEX) routines (reported by Charanjit Jutla). Under certain circumstances, these could outout wrong answers.
+* Fixed a bug in the sub(ZZ_pEX, ZZ_pE, ZZ_pEX) and sub(zz_pEX, zz_pE, zz_pEX) routines (reported by Charanjit Jutla). Under certain circumstances, these could outout wrong answers.
+
+
+Issue created by migration from https://trac.sagemath.org/ticket/2415
+
+
 
 
 
 ---
 
-Comment by mabshoff created at 2008-03-24 14:29:42
+archive/issue_comments_016288.json:
+```json
+{
+    "body": "The spkg at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-2.11/alpha2/ntl-5.4.2.spkg\n\nupgrade to the 5.4.2 release, fixes SPKG.txt and also integrates the OSX 10.5 64 bit build support.\n\nBuilds fine on Linux and OSX.\n\nCheers,\n\nMichael",
+    "created_at": "2008-03-24T14:29:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2415",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2415#issuecomment-16288",
+    "user": "mabshoff"
+}
+```
 
 The spkg at
 
@@ -31,29 +56,73 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-24 14:29:42
+archive/issue_comments_016289.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-03-24T14:29:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2415",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2415#issuecomment-16289",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by jkantor created at 2008-03-24 17:15:24
+archive/issue_comments_016290.json:
+```json
+{
+    "body": "Tested that the package built. Also did testall, all tests passed.",
+    "created_at": "2008-03-24T17:15:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2415",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2415#issuecomment-16290",
+    "user": "jkantor"
+}
+```
 
 Tested that the package built. Also did testall, all tests passed.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-24 17:17:12
+archive/issue_comments_016291.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-03-24T17:17:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2415",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2415#issuecomment-16291",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-24 17:17:12
+archive/issue_comments_016292.json:
+```json
+{
+    "body": "Merged in Sage 2.11.alpha2",
+    "created_at": "2008-03-24T17:17:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2415",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2415#issuecomment-16292",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.11.alpha2

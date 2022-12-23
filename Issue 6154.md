@@ -1,25 +1,63 @@
 # Issue 6154: [with patch; needs review] fix some numerical noise in rc2
 
+archive/issues_006154.json:
+```json
+{
+    "body": "Assignee: cwitty\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6154\n\n",
+    "created_at": "2009-05-30T03:39:19Z",
+    "labels": [
+        "misc",
+        "blocker",
+        "bug"
+    ],
+    "title": "[with patch; needs review] fix some numerical noise in rc2",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6154",
+    "user": "was"
+}
+```
+Assignee: cwitty
+
+
+
 Issue created by migration from https://trac.sagemath.org/ticket/6154
 
-Original creator: was
-
-Original creation time: 2009-05-30 03:39:19
-
-Assignee: cwitty
 
 
 
 
 ---
+
+archive/issue_comments_049111.json:
+```json
+{
+    "body": "Attachment\n\nStill passes doctests on my machine for those two files.  Looks good to me.  Positive review.",
+    "created_at": "2009-05-30T03:43:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6154",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6154#issuecomment-49111",
+    "user": "jason"
+}
+```
 
 Attachment
 
 Still passes doctests on my machine for those two files.  Looks good to me.  Positive review.
 
 
+
 ---
 
-Comment by was created at 2009-05-30 04:59:58
+archive/issue_comments_049112.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-05-30T04:59:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6154",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6154#issuecomment-49112",
+    "user": "was"
+}
+```
 
 Resolution: fixed

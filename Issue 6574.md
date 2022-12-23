@@ -1,11 +1,21 @@
 # Issue 6574: Type issue in is_quadratic_twist
 
-Issue created by migration from https://trac.sagemath.org/ticket/6574
-
-Original creator: wuthrich
-
-Original creation time: 2009-07-20 23:03:04
-
+archive/issues_006574.json:
+```json
+{
+    "body": "Assignee: davidloeffler\n\nCC:  cremona\n\nKeywords: elliptic curve, quadratic twist\n\n\n```\nE = EllipticCurve('32a1')\nD = E.is_quadratic_twist(E)\nD, type(D)\n```\n\n\nyields\n\n\n```\n(1, <type 'sage.rings.rational.Rational'>)\n```\n\n\nbut\n\n\n```\nD = E.is_quadratic_twist(E.quadratic_twist(5))\nD, type(D)\n```\n\n\ngives back\n\n\n```\n(5, <type 'sage.rings.integer.Integer'>)\n```\n\n\nI think in the first case, we should also give back the integer 1. The cause of this is in ell_field.py. In the first case we exit is_quadratic_twist at line 353 with\n\n\n```\nreturn K.one_element()\n```\n\n\nIn the second case we exit at the end after\nline 394 has changed the type by \n\n\n```\nif K is rings.QQ:\n    D = D.squarefree_part()\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6574\n\n",
+    "created_at": "2009-07-20T23:03:04Z",
+    "labels": [
+        "elliptic curves",
+        "trivial",
+        "bug"
+    ],
+    "title": "Type issue in is_quadratic_twist",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6574",
+    "user": "wuthrich"
+}
+```
 Assignee: davidloeffler
 
 CC:  cremona
@@ -65,32 +75,82 @@ if K is rings.QQ:
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6574
+
+
+
+
 
 ---
 
-Comment by cremona created at 2009-07-21 08:01:35
+archive/issue_comments_053682.json:
+```json
+{
+    "body": "Well spotted.  But note that this is in ell_field and general fields will not have integers, so the consistent return type should be that of the field.  So I would rather change the second behaviour, which will mean that when K is QQ we coerce back to ZZ after taking the square-free part.\n\nOn second thoughts we already have special code for QQ (calling squarefree_part()) so we could make a special case here and return a square-free integer (in ZZ) in all cases for K=QQ, and otherwise return a field element.  Is that acceptable?",
+    "created_at": "2009-07-21T08:01:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6574",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6574#issuecomment-53682",
+    "user": "cremona"
+}
+```
 
 Well spotted.  But note that this is in ell_field and general fields will not have integers, so the consistent return type should be that of the field.  So I would rather change the second behaviour, which will mean that when K is QQ we coerce back to ZZ after taking the square-free part.
 
 On second thoughts we already have special code for QQ (calling squarefree_part()) so we could make a special case here and return a square-free integer (in ZZ) in all cases for K=QQ, and otherwise return a field element.  Is that acceptable?
 
 
+
 ---
+
+archive/issue_comments_053683.json:
+```json
+{
+    "body": "Attachment\n\nI opted for your second suggestion. In case K is QQ it is ZZ(1) that is returned.",
+    "created_at": "2009-07-21T18:31:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6574",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6574#issuecomment-53683",
+    "user": "wuthrich"
+}
+```
 
 Attachment
 
 I opted for your second suggestion. In case K is QQ it is ZZ(1) that is returned.
 
 
+
 ---
 
-Comment by cremona created at 2009-07-21 21:45:26
+archive/issue_comments_053684.json:
+```json
+{
+    "body": "Positive review.  The patch fixes the problem (according to the above discussion) with a doctest + documentation to explain this special case.",
+    "created_at": "2009-07-21T21:45:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6574",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6574#issuecomment-53684",
+    "user": "cremona"
+}
+```
 
 Positive review.  The patch fixes the problem (according to the above discussion) with a doctest + documentation to explain this special case.
 
 
+
 ---
 
-Comment by mvngu created at 2009-07-23 08:40:09
+archive/issue_comments_053685.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-07-23T08:40:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6574",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6574#issuecomment-53685",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

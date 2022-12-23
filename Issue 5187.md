@@ -1,11 +1,21 @@
 # Issue 5187: fix optional magma doctests that changed in magma-2.15
 
-Issue created by migration from https://trac.sagemath.org/ticket/5187
-
-Original creator: was
-
-Original creation time: 2009-02-05 21:30:50
-
+archive/issues_005187.json:
+```json
+{
+    "body": "Assignee: was\n\nThe latest version of Magma is Magma-2.15, and there are doctests all over that now slightly fail because the output format of certain things in Magma has changed.  \n\nThe file at http://sage.math.washington.edu/home/was/patches/magma-2.15.txt lists all the doctest failures.  It was got by running this script:\n\n```\n        sage -t -only_optional=magma \"devel/sage/sage/rings/polynomial/multi_polynomial_ring_generic.pyx\"\n        sage -t -only_optional=magma \"devel/sage/sage/rings/polynomial/term_order.py\"\n        sage -t -only_optional=magma \"devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py\"\n        sage -t -only_optional=magma \"devel/sage/sage/crypto/mq/mpolynomialsystem.py\"\n        sage -t -only_optional=magma \"devel/sage/sage/interfaces/magma.py\"\n\n```\n\non eno, which has Magma-2.15.\n\nI think all the changes are purely cosmetic, so this should be very straightforward (but tedious).\n\nIssue created by migration from https://trac.sagemath.org/ticket/5187\n\n",
+    "created_at": "2009-02-05T21:30:50Z",
+    "labels": [
+        "interfaces",
+        "minor",
+        "bug"
+    ],
+    "title": "fix optional magma doctests that changed in magma-2.15",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5187",
+    "user": "was"
+}
+```
 Assignee: was
 
 The latest version of Magma is Magma-2.15, and there are doctests all over that now slightly fail because the output format of certain things in Magma has changed.  
@@ -25,10 +35,25 @@ on eno, which has Magma-2.15.
 
 I think all the changes are purely cosmetic, so this should be very straightforward (but tedious).
 
+Issue created by migration from https://trac.sagemath.org/ticket/5187
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2009-02-05 21:39:23
+archive/issue_comments_039783.json:
+```json
+{
+    "body": "It all seems to be \n\n```\nGraded Reverse Lexicographical Order\n```\n\nvs\n\n```\nOrder: Graded Reverse Lexicographical\n```\n\nand \n\n```\nLexicographical Order\n```\n\nvs\n\n```\nOrder: Lexicographical\n```\n\n\nThe question is: Do we make 2.15 the only officially blessed release or do we add a sufficient amount of dots to make the tests also pass with 2.13 to 2.14?\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-05T21:39:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5187#issuecomment-39783",
+    "user": "mabshoff"
+}
+```
 
 It all seems to be 
 
@@ -62,29 +87,73 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mariah created at 2011-05-24 20:13:59
+archive/issue_comments_039784.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2011-05-24T20:13:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5187#issuecomment-39784",
+    "user": "mariah"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mariah created at 2011-05-24 20:13:59
+archive/issue_comments_039785.json:
+```json
+{
+    "body": "I believe this ticket can be closed as it is superceded by #7870.",
+    "created_at": "2011-05-24T20:13:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5187#issuecomment-39785",
+    "user": "mariah"
+}
+```
 
 I believe this ticket can be closed as it is superceded by #7870.
 
 
+
 ---
 
-Comment by was created at 2011-08-23 05:19:54
+archive/issue_comments_039786.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2011-08-23T05:19:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5187#issuecomment-39786",
+    "user": "was"
+}
+```
 
 Resolution: duplicate
 
 
+
 ---
 
-Comment by was created at 2011-08-24 23:45:51
+archive/issue_comments_039787.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"sd32\".",
+    "created_at": "2011-08-24T23:45:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5187",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5187#issuecomment-39787",
+    "user": "was"
+}
+```
 
 Changing keywords from "" to "sd32".

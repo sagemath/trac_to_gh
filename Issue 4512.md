@@ -1,11 +1,21 @@
 # Issue 4512: [with patch, needs review] sage path-related troubles
 
-Issue created by migration from https://trac.sagemath.org/ticket/4512
-
-Original creator: craigcitro
-
-Original creation time: 2008-11-13 10:58:04
-
+archive/issues_004512.json:
+```json
+{
+    "body": "Assignee: craigcitro\n\nUnfortunately, it seems that `sage -sh` doesn't ask the shell to avoid processing the `.profile` or equivalent. In particular, it can lead to things like this:\n\n\n```\n[craigcitro@sharma ~/new-three-two]  $ ./sage -version\nSage Version 3.2.rc0, Release Date: 2008-11-10\n[craigcitro@sharma ~/new-three-two]  $ ./sage -sh\n\nStarting subshell with Sage environment variables set.\nBe sure to exit when you are done and do not do anything\nwith other copies of Sage!\n\n[craigcitro@sharma ~/new-three-two]  $ sage -version\nSAGE Version 3.1.4, Release Date: 2008-10-16\n[craigcitro@sharma ~/new-three-two]  $ which sage\n/usr/local/bin/sage\n```\n\n\nThis comes from the fact that I manually **prepend** certain things to my path in my `.bashrc`. Sadly, this leads to several small, subtle issues. I've attached a patch which turns several calls to `sage` into `$SAGE_ROOT/sage`.\n\nHowever, something more serious is needed. I think that the right approach is to start the new shell without processing any login files, so that we know our path is correct. The patch does that. \n\nI'm listing this as a blocker, because it causes such subtle errors, and because a fix is attached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4512\n\n",
+    "created_at": "2008-11-13T10:58:04Z",
+    "labels": [
+        "build",
+        "blocker",
+        "bug"
+    ],
+    "title": "[with patch, needs review] sage path-related troubles",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4512",
+    "user": "craigcitro"
+}
+```
 Assignee: craigcitro
 
 Unfortunately, it seems that `sage -sh` doesn't ask the shell to avoid processing the `.profile` or equivalent. In particular, it can lead to things like this:
@@ -27,51 +37,123 @@ SAGE Version 3.1.4, Release Date: 2008-10-16
 ```
 
 
-This comes from the fact that I manually *prepend* certain things to my path in my `.bashrc`. Sadly, this leads to several small, subtle issues. I've attached a patch which turns several calls to `sage` into `$SAGE_ROOT/sage`.
+This comes from the fact that I manually **prepend** certain things to my path in my `.bashrc`. Sadly, this leads to several small, subtle issues. I've attached a patch which turns several calls to `sage` into `$SAGE_ROOT/sage`.
 
 However, something more serious is needed. I think that the right approach is to start the new shell without processing any login files, so that we know our path is correct. The patch does that. 
 
 I'm listing this as a blocker, because it causes such subtle errors, and because a fix is attached.
 
+Issue created by migration from https://trac.sagemath.org/ticket/4512
+
+
+
+
 
 ---
+
+archive/issue_comments_033464.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-11-13T10:59:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4512",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4512#issuecomment-33464",
+    "user": "craigcitro"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by craigcitro created at 2008-11-13 10:59:49
+archive/issue_comments_033465.json:
+```json
+{
+    "body": "This patch is for the `sage-scripts` repository, of course.",
+    "created_at": "2008-11-13T10:59:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4512",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4512#issuecomment-33465",
+    "user": "craigcitro"
+}
+```
 
 This patch is for the `sage-scripts` repository, of course.
 
 
+
 ---
 
-Comment by craigcitro created at 2008-11-13 10:59:49
+archive/issue_comments_033466.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-11-13T10:59:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4512",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4512#issuecomment-33466",
+    "user": "craigcitro"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mhansen created at 2008-11-13 12:41:48
+archive/issue_comments_033467.json:
+```json
+{
+    "body": "Could we at least have a PS1 that includes the current directory?  I always hated it when I was on a machine where \"sage -sh\" didn't use my existing PS1.",
+    "created_at": "2008-11-13T12:41:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4512",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4512#issuecomment-33467",
+    "user": "mhansen"
+}
+```
 
 Could we at least have a PS1 that includes the current directory?  I always hated it when I was on a machine where "sage -sh" didn't use my existing PS1.
 
 
+
 ---
 
-Comment by craigcitro created at 2008-11-13 13:16:35
+archive/issue_comments_033468.json:
+```json
+{
+    "body": "Yeah, that would be very reasonable.\n\nActually, we could go one further: have a specific place in `~/.sage/` where one can put `.profile` files and whatnot, with big warnings about paths. The point is really just that we don't want to grab the system-wide ones ...",
+    "created_at": "2008-11-13T13:16:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4512",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4512#issuecomment-33468",
+    "user": "craigcitro"
+}
+```
 
 Yeah, that would be very reasonable.
 
 Actually, we could go one further: have a specific place in `~/.sage/` where one can put `.profile` files and whatnot, with big warnings about paths. The point is really just that we don't want to grab the system-wide ones ...
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-14 04:16:38
+archive/issue_comments_033469.json:
+```json
+{
+    "body": "Craig,\n\nI am not so sure this is a blocker, i.e. just because your .profile is misconfigured doesn't mean that as a consequence somebody else's config will not be broken by fixing it for you. I am inclined to merge this patch, but I need to think about it.\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-14T04:16:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4512",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4512#issuecomment-33469",
+    "user": "mabshoff"
+}
+```
 
 Craig,
 
@@ -82,7 +164,20 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_033470.json:
+```json
+{
+    "body": "Attachment\n\ntrac-4512-pt2.patch addresses all my concerns even though it could be cleaner, i.e. via some special parameter. Craig will do so in a followup ticket, so positive review.\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-14T04:56:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4512",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4512#issuecomment-33470",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -93,15 +188,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-14 06:00:05
+archive/issue_comments_033471.json:
+```json
+{
+    "body": "Merged both patch in Sage 3.2.rc1",
+    "created_at": "2008-11-14T06:00:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4512",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4512#issuecomment-33471",
+    "user": "mabshoff"
+}
+```
 
 Merged both patch in Sage 3.2.rc1
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-14 06:00:05
+archive/issue_comments_033472.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-11-14T06:00:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4512",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4512#issuecomment-33472",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

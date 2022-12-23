@@ -1,11 +1,21 @@
 # Issue 8489: New `sageexample` environment for sagetex
 
-Issue created by migration from https://trac.sagemath.org/ticket/8489
-
-Original creator: nthiery
-
-Original creation time: 2010-03-10 15:24:32
-
+archive/issues_008489.json:
+```json
+{
+    "body": "Assignee: mvngu\n\nCC:  ddrake zimmerma\n\nKeywords: sagetex, doctest\n\nThe attached patch for sagetex adds a new sageexample environment for sagetex:\n\n\n```\n\\begin{sageexample}\n  sage: 1+1\n  2\n  sage: x^3\n  x^3\n\\end{sageexample}\n```\n\n\nThe (ultimate) goal is to allow for straightforward copy paste of\npieces of sage doctests into one's latex document. See the attached\npdf (the sources of which are included in the patch) for details.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8489\n\n",
+    "created_at": "2010-03-10T15:24:32Z",
+    "labels": [
+        "documentation",
+        "major",
+        "enhancement"
+    ],
+    "title": "New `sageexample` environment for sagetex",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8489",
+    "user": "nthiery"
+}
+```
 Assignee: mvngu
 
 CC:  ddrake zimmerma
@@ -31,59 +41,157 @@ pdf (the sources of which are included in the patch) for details.
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8489
+
+
+
+
 
 ---
+
+archive/issue_comments_076538.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-03-10T15:25:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8489",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8489#issuecomment-76538",
+    "user": "nthiery"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_076539.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-03-10T15:27:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8489",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8489#issuecomment-76539",
+    "user": "nthiery"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by nthiery created at 2010-03-10 15:27:52
+archive/issue_comments_076540.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-03-10T15:27:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8489",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8489#issuecomment-76540",
+    "user": "nthiery"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_076541.json:
+```json
+{
+    "body": "Attachment\n\nClone of the current spkg, with patch applied, but version number not bumped up",
+    "created_at": "2010-03-10T15:41:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8489",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8489#issuecomment-76541",
+    "user": "nthiery"
+}
+```
 
 Attachment
 
 Clone of the current spkg, with patch applied, but version number not bumped up
 
 
+
 ---
 
-Comment by ddrake created at 2010-03-11 07:56:19
+archive/issue_comments_076542.json:
+```json
+{
+    "body": "Hrm, your spkg contains a core dump from pdflatex. Perhaps that's a bad sign? :)\n\nI'll take a look at this, and probably include it. My long-term goal is that you shouldn't need to include the answer -- you should just put `((x+1)^3).expand()` and it would automatically insert the nicely typeset version of `x^3 + 3*x^2 + 3*x + 1`.",
+    "created_at": "2010-03-11T07:56:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8489",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8489#issuecomment-76542",
+    "user": "ddrake"
+}
+```
 
 Hrm, your spkg contains a core dump from pdflatex. Perhaps that's a bad sign? :)
 
 I'll take a look at this, and probably include it. My long-term goal is that you shouldn't need to include the answer -- you should just put `((x+1)^3).expand()` and it would automatically insert the nicely typeset version of `x^3 + 3*x^2 + 3*x + 1`.
 
 
+
 ---
 
-Comment by ddrake created at 2010-03-11 08:14:36
+archive/issue_comments_076543.json:
+```json
+{
+    "body": "Also, I should add that a nice way to make improvements to SageTeX is to clone http://bitbucket.org/ddrake/sagetex/ and send me patches. :)  In the spkg, you added your changes into the root hg repo, which just tracks SPKG.txt, spkg-install, and so on.",
+    "created_at": "2010-03-11T08:14:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8489",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8489#issuecomment-76543",
+    "user": "ddrake"
+}
+```
 
 Also, I should add that a nice way to make improvements to SageTeX is to clone http://bitbucket.org/ddrake/sagetex/ and send me patches. :)  In the spkg, you added your changes into the root hg repo, which just tracks SPKG.txt, spkg-install, and so on.
 
 
+
 ---
 
-Comment by ddrake created at 2010-03-15 01:45:14
+archive/issue_comments_076544.json:
+```json
+{
+    "body": "There's a spkg at http://sage.math.washington.edu/home/drake/code/sage/st/sagetex-2.2.4.spkg that includes these changes. It needs further documentation, but you should be able to take the example file included in attachment:trac_8489-sagetex_sageexample-nt.patch and typeset it with the new spkg. There's also some examples in the usual example.tex file.\n\nI have had troubles getting doctesting to work -- every time I try `sage -t my_file.sage`, it fails with a \"mysterious error\". Same thing if I try with the .py file.",
+    "created_at": "2010-03-15T01:45:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8489",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8489#issuecomment-76544",
+    "user": "ddrake"
+}
+```
 
 There's a spkg at http://sage.math.washington.edu/home/drake/code/sage/st/sagetex-2.2.4.spkg that includes these changes. It needs further documentation, but you should be able to take the example file included in attachment:trac_8489-sagetex_sageexample-nt.patch and typeset it with the new spkg. There's also some examples in the usual example.tex file.
 
 I have had troubles getting doctesting to work -- every time I try `sage -t my_file.sage`, it fails with a "mysterious error". Same thing if I try with the .py file.
 
 
+
 ---
 
-Comment by nthiery created at 2010-03-17 22:56:05
+archive/issue_comments_076545.json:
+```json
+{
+    "body": "Replying to [comment:4 ddrake]:\n> Also, I should add that a nice way to make improvements to SageTeX is to clone http://bitbucket.org/ddrake/sagetex/ and send me patches. :)  In the spkg, you added your changes into the root hg repo, which just tracks SPKG.txt, spkg-install, and so on.\n\nAh, great, thanks for the link! I googled for it, somehow missed it, and went for the quickest way to send you a patch.",
+    "created_at": "2010-03-17T22:56:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8489",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8489#issuecomment-76545",
+    "user": "nthiery"
+}
+```
 
 Replying to [comment:4 ddrake]:
 > Also, I should add that a nice way to make improvements to SageTeX is to clone http://bitbucket.org/ddrake/sagetex/ and send me patches. :)  In the spkg, you added your changes into the root hg repo, which just tracks SPKG.txt, spkg-install, and so on.
@@ -91,9 +199,20 @@ Replying to [comment:4 ddrake]:
 Ah, great, thanks for the link! I googled for it, somehow missed it, and went for the quickest way to send you a patch.
 
 
+
 ---
 
-Comment by nthiery created at 2010-03-17 22:58:18
+archive/issue_comments_076546.json:
+```json
+{
+    "body": "Replying to [comment:3 ddrake]:\n> Hrm, your spkg contains a core dump from pdflatex. Perhaps that's a bad sign? :)\n\nYeah, I am not patient, and did kill pdflatex the hard way a couple times while trying things around :-)",
+    "created_at": "2010-03-17T22:58:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8489",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8489#issuecomment-76546",
+    "user": "nthiery"
+}
+```
 
 Replying to [comment:3 ddrake]:
 > Hrm, your spkg contains a core dump from pdflatex. Perhaps that's a bad sign? :)
@@ -101,9 +220,20 @@ Replying to [comment:3 ddrake]:
 Yeah, I am not patient, and did kill pdflatex the hard way a couple times while trying things around :-)
 
 
+
 ---
 
-Comment by nthiery created at 2010-03-17 23:00:12
+archive/issue_comments_076547.json:
+```json
+{
+    "body": "Replying to [comment:5 ddrake]:\n> I have had troubles getting doctesting to work -- every time I try `sage -t my_file.sage`, it fails with a \"mysterious error\". Same thing if I try with the .py file. \n\nYeah, just reusing my_file.sage looked cool, and worked on trivial examples, but that is not robust. I am about to upload a new patch which produces a separate file with just the doctests, and that seems to work fine (and is probably more readable by the user in case of trouble).",
+    "created_at": "2010-03-17T23:00:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8489",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8489#issuecomment-76547",
+    "user": "nthiery"
+}
+```
 
 Replying to [comment:5 ddrake]:
 > I have had troubles getting doctesting to work -- every time I try `sage -t my_file.sage`, it fails with a "mysterious error". Same thing if I try with the .py file. 
@@ -111,21 +241,56 @@ Replying to [comment:5 ddrake]:
 Yeah, just reusing my_file.sage looked cool, and worked on trivial examples, but that is not robust. I am about to upload a new patch which produces a separate file with just the doctests, and that seems to work fine (and is probably more readable by the user in case of trouble).
 
 
+
 ---
+
+archive/issue_comments_076548.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-03-17T23:34:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8489",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8489#issuecomment-76548",
+    "user": "nthiery"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by nthiery created at 2010-03-17 23:34:17
+archive/issue_comments_076549.json:
+```json
+{
+    "body": "Changing assignee from mvngu to nthiery.",
+    "created_at": "2010-03-17T23:34:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8489",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8489#issuecomment-76549",
+    "user": "nthiery"
+}
+```
 
 Changing assignee from mvngu to nthiery.
 
 
+
 ---
 
-Comment by ddrake created at 2010-03-25 03:48:37
+archive/issue_comments_076550.json:
+```json
+{
+    "body": "I've merged your doctest-spacing patch into SageTeX, and made some improvements -- the doctest file is now called `\\jobname_doctest.sage`, and is only created if the user actually has a `sageexample` environment. It also includes a bit of explanatory text.\n\nI also changed your vertical space fix to use `\\abovedisplayskip` and friends, which I just learned about from http://www.ctan.org/tex-archive/info/math/voss/mathmode/.\n\nThere's more fixups to the documentation that should be done, but it seems to be working properly. Please pull from the bitbucket repo and test. I think I'll make a spkg for this new version and see if we can get it into the next Sage release.",
+    "created_at": "2010-03-25T03:48:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8489",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8489#issuecomment-76550",
+    "user": "ddrake"
+}
+```
 
 I've merged your doctest-spacing patch into SageTeX, and made some improvements -- the doctest file is now called `\jobname_doctest.sage`, and is only created if the user actually has a `sageexample` environment. It also includes a bit of explanatory text.
 
@@ -134,16 +299,38 @@ I also changed your vertical space fix to use `\abovedisplayskip` and friends, w
 There's more fixups to the documentation that should be done, but it seems to be working properly. Please pull from the bitbucket repo and test. I think I'll make a spkg for this new version and see if we can get it into the next Sage release.
 
 
+
 ---
 
-Comment by jason created at 2010-03-30 03:52:13
+archive/issue_comments_076551.json:
+```json
+{
+    "body": "This should be closed when #8605 is merged (possibly just closed now, since the changes are for upstream, not for something that is Sage code).",
+    "created_at": "2010-03-30T03:52:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8489",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8489#issuecomment-76551",
+    "user": "jason"
+}
+```
 
 This should be closed when #8605 is merged (possibly just closed now, since the changes are for upstream, not for something that is Sage code).
 
 
+
 ---
 
-Comment by mmeulien created at 2010-03-30 21:51:55
+archive/issue_comments_076552.json:
+```json
+{
+    "body": "For reference: Copy-paste from a PDF document to a Sage session won't necessarily work. That is, if a sageexample environment contains strings defined using (simple) quotes, those quotes can be rendered in PDF by differents characters: backquotes and quotes. The encoding used in TeX sources files seems to have its role here.\n\n\n```\n\\documentclass[12pt]{book}\n\\usepackage[utf8]{inputenc}\n\\usepackage[T1]{fontenc}\n\\usepackage{lmodern}\n\\usepackage{sagetex}\n\\usepackage[frenchb]{babel}\n\\begin{document}\n\\begin{sageexample}\n    sage: x, y, a, b, c, d = var('x y a b c d')\n\\end{sageexample}\n\\end{document}\n```\n\nReplying to [ticket:8489 nthiery]:\n\n> The (ultimate) goal is to allow for straightforward copy paste of pieces of sage doctests into one's latex document. See the attached pdf (the sources of which are included in the patch) for details.^^",
+    "created_at": "2010-03-30T21:51:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8489",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8489#issuecomment-76552",
+    "user": "mmeulien"
+}
+```
 
 For reference: Copy-paste from a PDF document to a Sage session won't necessarily work. That is, if a sageexample environment contains strings defined using (simple) quotes, those quotes can be rendered in PDF by differents characters: backquotes and quotes. The encoding used in TeX sources files seems to have its role here.
 
@@ -167,23 +354,58 @@ Replying to [ticket:8489 nthiery]:
 > The (ultimate) goal is to allow for straightforward copy paste of pieces of sage doctests into one's latex document. See the attached pdf (the sources of which are included in the patch) for details.^^
 
 
+
 ---
 
-Comment by mmeulien created at 2010-03-30 21:54:06
+archive/issue_comments_076553.json:
+```json
+{
+    "body": "Example of quotes changed to backquotes in PDF",
+    "created_at": "2010-03-30T21:54:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8489",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8489#issuecomment-76553",
+    "user": "mmeulien"
+}
+```
 
 Example of quotes changed to backquotes in PDF
 
 
+
 ---
+
+archive/issue_comments_076554.json:
+```json
+{
+    "body": "Attachment\n\nddrake: what do you say about the last comment about quotes being changed?",
+    "created_at": "2010-04-15T02:28:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8489",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8489#issuecomment-76554",
+    "user": "jason"
+}
+```
 
 Attachment
 
 ddrake: what do you say about the last comment about quotes being changed?
 
 
+
 ---
 
-Comment by mmeulien created at 2010-04-19 22:08:50
+archive/issue_comments_076555.json:
+```json
+{
+    "body": "The following has no effect on sageexample environments:\n\n\\setlength{\\sagetexindent}{15ex}\n\nSeems to be a bug, no?",
+    "created_at": "2010-04-19T22:08:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8489",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8489#issuecomment-76555",
+    "user": "mmeulien"
+}
+```
 
 The following has no effect on sageexample environments:
 
@@ -192,9 +414,20 @@ The following has no effect on sageexample environments:
 Seems to be a bug, no?
 
 
+
 ---
 
-Comment by ddrake created at 2010-04-20 06:49:40
+archive/issue_comments_076556.json:
+```json
+{
+    "body": "Replying to [comment:13 jason]:\n> ddrake: what do you say about the last comment about quotes being changed?\n\nI'm not sure how to fix that. I don't think it's an issue about encoding in the document; a single straight quote (ASCII character 39) should be the same in any non-crazy encoding, since all reasonable encodings that I know of agree for characters 0 to 127.\n\nThe issue, I think, is the character that gets put into the final PDF. I'm not sure how to bypass the usual TeX behavior of turning single quotes into curly final quotes.\n\nIn any case, Nicolas' original goal is cut and paste from Sage into a LaTeX document, which works now.\n\nIf this is a highly desired feature, I could work on it, but since cut and paste of things with single quotes generally doesn't work from TeX-generated PDFs anyway, I'm not sure how important this should be.",
+    "created_at": "2010-04-20T06:49:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8489",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8489#issuecomment-76556",
+    "user": "ddrake"
+}
+```
 
 Replying to [comment:13 jason]:
 > ddrake: what do you say about the last comment about quotes being changed?
@@ -208,9 +441,20 @@ In any case, Nicolas' original goal is cut and paste from Sage into a LaTeX docu
 If this is a highly desired feature, I could work on it, but since cut and paste of things with single quotes generally doesn't work from TeX-generated PDFs anyway, I'm not sure how important this should be.
 
 
+
 ---
 
-Comment by ddrake created at 2010-04-20 07:10:42
+archive/issue_comments_076557.json:
+```json
+{
+    "body": "Replying to [comment:14 mmeulien]:\n> The following has no effect on sageexample environments:\n> \n> \\setlength{\\sagetexindent}{15ex}\n> \n> Seems to be a bug, no?\n\nHmmm. I tried to get the indent to work, but adding an hspace in the obvious places didn't work. I can investigate this more, but one problem is that the example environment works in a completely different way than the other verbatim-like environments. I'll look into this and see if I can figure it out. Changing the parindent might work.",
+    "created_at": "2010-04-20T07:10:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8489",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8489#issuecomment-76557",
+    "user": "ddrake"
+}
+```
 
 Replying to [comment:14 mmeulien]:
 > The following has no effect on sageexample environments:
@@ -222,29 +466,73 @@ Replying to [comment:14 mmeulien]:
 Hmmm. I tried to get the indent to work, but adding an hspace in the obvious places didn't work. I can investigate this more, but one problem is that the example environment works in a completely different way than the other verbatim-like environments. I'll look into this and see if I can figure it out. Changing the parindent might work.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-23 17:13:50
+archive/issue_comments_076558.json:
+```json
+{
+    "body": "Since #8605 is closed, should this be closed also?  It looks like there is still discussion going on here...",
+    "created_at": "2010-04-23T17:13:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8489",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8489#issuecomment-76558",
+    "user": "jhpalmieri"
+}
+```
 
 Since #8605 is closed, should this be closed also?  It looks like there is still discussion going on here...
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-07-22 22:45:01
+archive/issue_comments_076559.json:
+```json
+{
+    "body": "This ticket is marked as \"needs review\", but is there anything still to review here?  Have the relevant pieces been merged into the sagetex spkg by now?",
+    "created_at": "2010-07-22T22:45:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8489",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8489#issuecomment-76559",
+    "user": "jhpalmieri"
+}
+```
 
 This ticket is marked as "needs review", but is there anything still to review here?  Have the relevant pieces been merged into the sagetex spkg by now?
 
 
+
 ---
 
-Comment by ddrake created at 2010-07-28 03:23:41
+archive/issue_comments_076560.json:
+```json
+{
+    "body": "I think this ticket should be closed, since the sageexample environment has been implemented, and we ship a version of SageTeX with it. If there are further problems with sageexample, someone should open a new ticket.",
+    "created_at": "2010-07-28T03:23:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8489",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8489#issuecomment-76560",
+    "user": "ddrake"
+}
+```
 
 I think this ticket should be closed, since the sageexample environment has been implemented, and we ship a version of SageTeX with it. If there are further problems with sageexample, someone should open a new ticket.
 
 
+
 ---
 
-Comment by ddrake created at 2010-07-28 03:23:41
+archive/issue_comments_076561.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-07-28T03:23:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8489",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8489#issuecomment-76561",
+    "user": "ddrake"
+}
+```
 
 Resolution: fixed

@@ -1,26 +1,64 @@
 # Issue 5918: bring doctest coverage for posets to 100%
 
-Issue created by migration from https://trac.sagemath.org/ticket/5918
-
-Original creator: saliola
-
-Original creation time: 2009-04-28 14:29:56
-
+archive/issues_005918.json:
+```json
+{
+    "body": "Assignee: saliola\n\nCC:  sage-combinat\n\nI'll post a patch in a few minutes that brings the doctest coverage for posets to 100% (well, except for 2 or 3 nested functions). It also fixes a few bugs that I noticed while adding the doctests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5918\n\n",
+    "created_at": "2009-04-28T14:29:56Z",
+    "labels": [
+        "combinatorics",
+        "major",
+        "enhancement"
+    ],
+    "title": "bring doctest coverage for posets to 100%",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5918",
+    "user": "saliola"
+}
+```
 Assignee: saliola
 
 CC:  sage-combinat
 
 I'll post a patch in a few minutes that brings the doctest coverage for posets to 100% (well, except for 2 or 3 nested functions). It also fixes a few bugs that I noticed while adding the doctests.
 
+Issue created by migration from https://trac.sagemath.org/ticket/5918
+
+
+
+
 
 ---
+
+archive/issue_comments_046767.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-04-28T14:40:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5918",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5918#issuecomment-46767",
+    "user": "saliola"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-04-28 16:52:06
+archive/issue_comments_046768.json:
+```json
+{
+    "body": "The patch fails to apply to Sage 3.4.2.alpha0:\n\n```\napplying /Users/palmieri/Downloads/trac_5918.patch\npatching file sage/combinat/posets/poset_examples.py\nHunk #2 FAILED at 164\n1 out of 2 hunks FAILED -- saving rejects to file sage/combinat/posets/poset_examples.py.rej\npatching file sage/combinat/posets/posets.py\nHunk #12 FAILED at 547\n1 out of 48 hunks FAILED -- saving rejects to file sage/combinat/posets/posets.py.rej\nabort: patch failed to apply\n```\n\n(I was hoping that this patch would fix #5280 and/or #5283, but after applying the rejects by hand, I saw that it didn't.  I'll let someone else do a proper review once there is a rebased patch.)",
+    "created_at": "2009-04-28T16:52:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5918",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5918#issuecomment-46768",
+    "user": "jhpalmieri"
+}
+```
 
 The patch fails to apply to Sage 3.4.2.alpha0:
 
@@ -38,9 +76,20 @@ abort: patch failed to apply
 (I was hoping that this patch would fix #5280 and/or #5283, but after applying the rejects by hand, I saw that it didn't.  I'll let someone else do a proper review once there is a rebased patch.)
 
 
+
 ---
 
-Comment by saliola created at 2009-04-28 17:04:01
+archive/issue_comments_046769.json:
+```json
+{
+    "body": "Hello John,\n\nThanks for taking a look at this. I'm aware of the other issues, and this patch does not deal with them. (It does deal with the issues in the email you posted to the sage-combinat list some time ago.) I decided to wait to fix those issues using a different patch, so not to put too much into this patch. (I'm planning to have the others fixed soon.)\n\nI'll rebase and post an updated patch in a few hours (I have to upgrade...).",
+    "created_at": "2009-04-28T17:04:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5918",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5918#issuecomment-46769",
+    "user": "saliola"
+}
+```
 
 Hello John,
 
@@ -49,27 +98,62 @@ Thanks for taking a look at this. I'm aware of the other issues, and this patch 
 I'll rebase and post an updated patch in a few hours (I have to upgrade...).
 
 
+
 ---
 
-Comment by saliola created at 2009-04-28 20:12:44
+archive/issue_comments_046770.json:
+```json
+{
+    "body": "rebased to 3.4.2.alpha0 (apply only this patch)",
+    "created_at": "2009-04-28T20:12:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5918",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5918#issuecomment-46770",
+    "user": "saliola"
+}
+```
 
 rebased to 3.4.2.alpha0 (apply only this patch)
 
 
+
 ---
+
+archive/issue_comments_046771.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-04-28T20:13:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5918",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5918#issuecomment-46771",
+    "user": "saliola"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by ddrake created at 2009-04-29 09:13:04
+archive/issue_comments_046772.json:
+```json
+{
+    "body": "I'm going to upload a patch which corrects a bunch of typos and formatting bits. I do have a couple comments:\n\n* before, the definitions for order ideal and filter were both obviously wrong. I corrected the definition and took the liberty of rewriting it; please check those.\n* you need a blank line between `EXAMPLES::}} (or {{{TEST::`) and the first line of the doctest; otherwise, the documentation doesn't get typeset correctly.\n* doing ``M\\\"obius`` doesn't work; it automatically uses LaTeX in math mode, and gets messed up. For now I just removed the backticks. (If we add a utf-8 encoding declaration, you can use the umlaut and everything works, but for now, the official rule is that Sage library code is 7-bit clean.)\n\nAlso. there seems to be a lot of duplication between posets.py and hasse_diagram.py. This makes fixing documentation hard, since you have to fix things in two places. Is it possible to somehow combine this stuff so code and documentation doesn't need to be copied? (I'm asking this of everyone, not necessarily Franco.)\n\nI don't have time for this now, but it would be nice to add cross-references: you can do stuff like \"`...see :func:`coolfunction()` for...`\" and get automatically linked cross-references.\n\nFinally, this does raise coverage to (basically) 100% and passes all doctests. I'm glad to see this!",
+    "created_at": "2009-04-29T09:13:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5918",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5918#issuecomment-46772",
+    "user": "ddrake"
+}
+```
 
 I'm going to upload a patch which corrects a bunch of typos and formatting bits. I do have a couple comments:
 
-  * before, the definitions for order ideal and filter were both obviously wrong. I corrected the definition and took the liberty of rewriting it; please check those.
-  * you need a blank line between `EXAMPLES::}} (or {{{TEST::`) and the first line of the doctest; otherwise, the documentation doesn't get typeset correctly.
-  * doing ``M\"obius`` doesn't work; it automatically uses LaTeX in math mode, and gets messed up. For now I just removed the backticks. (If we add a utf-8 encoding declaration, you can use the umlaut and everything works, but for now, the official rule is that Sage library code is 7-bit clean.)
+* before, the definitions for order ideal and filter were both obviously wrong. I corrected the definition and took the liberty of rewriting it; please check those.
+* you need a blank line between `EXAMPLES::}} (or {{{TEST::`) and the first line of the doctest; otherwise, the documentation doesn't get typeset correctly.
+* doing ``M\"obius`` doesn't work; it automatically uses LaTeX in math mode, and gets messed up. For now I just removed the backticks. (If we add a utf-8 encoding declaration, you can use the umlaut and everything works, but for now, the official rule is that Sage library code is 7-bit clean.)
 
 Also. there seems to be a lot of duplication between posets.py and hasse_diagram.py. This makes fixing documentation hard, since you have to fix things in two places. Is it possible to somehow combine this stuff so code and documentation doesn't need to be copied? (I'm asking this of everyone, not necessarily Franco.)
 
@@ -78,16 +162,40 @@ I don't have time for this now, but it would be nice to add cross-references: yo
 Finally, this does raise coverage to (basically) 100% and passes all doctests. I'm glad to see this!
 
 
+
 ---
+
+archive/issue_comments_046773.json:
+```json
+{
+    "body": "Attachment\n\napply on top of trac_5918-rebased.patch",
+    "created_at": "2009-04-29T09:14:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5918",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5918#issuecomment-46773",
+    "user": "ddrake"
+}
+```
 
 Attachment
 
 apply on top of trac_5918-rebased.patch
 
 
+
 ---
 
-Comment by saliola created at 2009-04-29 09:46:09
+archive/issue_comments_046774.json:
+```json
+{
+    "body": "Replying to [comment:5 ddrake]:\n> I'm going to upload a patch which corrects a bunch of typos and formatting bits. I do have a couple comments:\n> \n>   * before, the definitions for order ideal and filter were both obviously wrong. I corrected the definition and took the liberty of rewriting it; please check those.\n\nThanks for catching these. I checked your corrected definitions, and they are correct. (It seems that a bunch of > and < symbols disappeared at some point; most likely during the automatic conversion to ReST).\n\n>   * you need a blank line between `EXAMPLES::}} (or {{{TEST::`) and the first line of the doctest; otherwise, the documentation doesn't get typeset correctly.\n\nThanks for pointing this out. Obviously, I didn't know this.\n\n>   * doing ``M\\\"obius`` doesn't work; it automatically uses LaTeX in math mode, and gets messed up. For now I just removed the backticks. (If we add a utf-8 encoding declaration, you can use the umlaut and everything works, but for now, the official rule is that Sage library code is 7-bit clean.)\n\nIt seems that you are somehow typesetting the documentation. How do you do this? That would obviously make it easier for me to catch these mistakes.\n\n> Also. there seems to be a lot of duplication between posets.py and hasse_diagram.py. This makes fixing documentation hard, since you have to fix things in two places. Is it possible to somehow combine this stuff so code and documentation doesn't need to be copied? (I'm asking this of everyone, not necessarily Franco.)\n\nYeah, it is a bit of a pain. The original code was my first Sage/Python coding project, and some of my design decisions were not great. At some point the code needs to be updated to deal with more general posets (like very large/infinite posets), and I imagine at that point the two classes will merge into something like `FinitePosetWithHasseDiagram`.\n\nEven though there are planned changes, I thought it was very much worth the effort to add the doctests and fix the bugs in the current code.\n\nThanks for taking a look at the patch. I agree with all your changes.",
+    "created_at": "2009-04-29T09:46:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5918",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5918#issuecomment-46774",
+    "user": "saliola"
+}
+```
 
 Replying to [comment:5 ddrake]:
 > I'm going to upload a patch which corrects a bunch of typos and formatting bits. I do have a couple comments:
@@ -113,9 +221,20 @@ Even though there are planned changes, I thought it was very much worth the effo
 Thanks for taking a look at the patch. I agree with all your changes.
 
 
+
 ---
 
-Comment by ddrake created at 2009-04-29 12:12:33
+archive/issue_comments_046775.json:
+```json
+{
+    "body": "Replying to [comment:6 saliola]:\n> It seems that you are somehow typesetting the documentation. How do you do this? That would obviously make it easier for me to catch these mistakes.\n\nDo `sage -docbuild reference html` to build the html reference manual, and `sage -docbuild reference pdf` to make the LaTeX PDF version. The reference manual pulls in all the docstrings from the Sage library. The output will be in `$SAGE_ROOT/devel/sage/doc/output/` and look in the html or pdf directories. You can also create the developer's guide, installation guide, and a bunch of other stuff by replacing \"reference\" with \"developer\", \"installation\", \"constructions\", and others.\n\n> Even though there are planned changes, I thought it was very much worth the effort to add the doctests and fix the bugs in the current code.\n\nYes! Definitely.",
+    "created_at": "2009-04-29T12:12:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5918",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5918#issuecomment-46775",
+    "user": "ddrake"
+}
+```
 
 Replying to [comment:6 saliola]:
 > It seems that you are somehow typesetting the documentation. How do you do this? That would obviously make it easier for me to catch these mistakes.
@@ -127,9 +246,20 @@ Do `sage -docbuild reference html` to build the html reference manual, and `sage
 Yes! Definitely.
 
 
+
 ---
 
-Comment by saliola created at 2009-04-29 15:17:21
+archive/issue_comments_046776.json:
+```json
+{
+    "body": "Replying to [comment:7 ddrake]:\n> Replying to [comment:6 saliola]:\n> > It seems that you are somehow typesetting the documentation. How do you do this? That would obviously make it easier for me to catch these mistakes.\n> \n> Do `sage -docbuild reference html` to build the html reference manual, and `sage -docbuild reference pdf` to make the LaTeX PDF version.\n\nThanks for this answer. This seems to take a while. Is there a way to build just part of the manual? I'm thinking of something along the lines `sage -docbuild posets.py`.",
+    "created_at": "2009-04-29T15:17:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5918",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5918#issuecomment-46776",
+    "user": "saliola"
+}
+```
 
 Replying to [comment:7 ddrake]:
 > Replying to [comment:6 saliola]:
@@ -140,9 +270,20 @@ Replying to [comment:7 ddrake]:
 Thanks for this answer. This seems to take a while. Is there a way to build just part of the manual? I'm thinking of something along the lines `sage -docbuild posets.py`.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-04-29 16:38:08
+archive/issue_comments_046777.json:
+```json
+{
+    "body": "Replying to [comment:8 saliola]:\n> Replying to [comment:7 ddrake]:\n> > Replying to [comment:6 saliola]:\n> > > It seems that you are somehow typesetting the documentation. How do you do this? That would obviously make it easier for me to catch these mistakes.\n> > \n> > Do `sage -docbuild reference html` to build the html reference manual, and `sage -docbuild reference pdf` to make the LaTeX PDF version.\n> \n> Thanks for this answer. This seems to take a while. Is there a way to build just part of the manual? I'm thinking of something along the lines `sage -docbuild posets.py`.\n\nYes and no.  For the PDF version, there is no way to do this right now, as far as I know.  For the html version, once you've built it once for a particular branch, the next time it will only rebuild the files which have changed.  If you install the patch at #5653, you can also view the html output for individual functions from the notebook by typing `function?`.",
+    "created_at": "2009-04-29T16:38:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5918",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5918#issuecomment-46777",
+    "user": "jhpalmieri"
+}
+```
 
 Replying to [comment:8 saliola]:
 > Replying to [comment:7 ddrake]:
@@ -156,16 +297,38 @@ Replying to [comment:8 saliola]:
 Yes and no.  For the PDF version, there is no way to do this right now, as far as I know.  For the html version, once you've built it once for a particular branch, the next time it will only rebuild the files which have changed.  If you install the patch at #5653, you can also view the html output for individual functions from the notebook by typing `function?`.
 
 
+
 ---
 
-Comment by ddrake created at 2009-04-30 01:21:34
+archive/issue_comments_046778.json:
+```json
+{
+    "body": "Okay, after finding typos, I thought I should go through and actually look at everything: this gets a positive review, although I would like someone to comment on doctesting the nested functions. In this instance, it seems okay but someone who knows better may wish to comment/revert the positive review.",
+    "created_at": "2009-04-30T01:21:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5918",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5918#issuecomment-46778",
+    "user": "ddrake"
+}
+```
 
 Okay, after finding typos, I thought I should go through and actually look at everything: this gets a positive review, although I would like someone to comment on doctesting the nested functions. In this instance, it seems okay but someone who knows better may wish to comment/revert the positive review.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-30 01:39:45
+archive/issue_comments_046779.json:
+```json
+{
+    "body": "I looked over Dan's patch and it looks good to me. Doctests do pass.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-30T01:39:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5918",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5918#issuecomment-46779",
+    "user": "mabshoff"
+}
+```
 
 I looked over Dan's patch and it looks good to me. Doctests do pass.
 
@@ -174,9 +337,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-30 01:40:16
+archive/issue_comments_046780.json:
+```json
+{
+    "body": "Merged  trac_5918-rebased.patch and trac_5918-typos-docfixes.patch in Sage 3.4.2.rc0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-30T01:40:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5918",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5918#issuecomment-46780",
+    "user": "mabshoff"
+}
+```
 
 Merged  trac_5918-rebased.patch and trac_5918-typos-docfixes.patch in Sage 3.4.2.rc0.
 
@@ -185,16 +359,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-30 01:40:16
+archive/issue_comments_046781.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-04-30T01:40:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5918",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5918#issuecomment-46781",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by saliola created at 2009-04-30 07:36:39
+archive/issue_comments_046782.json:
+```json
+{
+    "body": "Replying to [comment:9 jhpalmieri]:\n> Replying to [comment:8 saliola]:\n> > Replying to [comment:7 ddrake]:\n> > > Replying to [comment:6 saliola]:\n> > > > It seems that you are somehow typesetting the documentation. How do you do this? That would obviously make it easier for me to catch these mistakes.\n> > > \n> > > Do `sage -docbuild reference html` to build the html reference manual, and `sage -docbuild reference pdf` to make the LaTeX PDF version.\n> > \n> > Thanks for this answer. This seems to take a while. Is there a way to build just part of the manual? I'm thinking of something along the lines `sage -docbuild posets.py`.\n> \n> Yes and no.  For the PDF version, there is no way to do this right now, as far as I know.  For the html version, once you've built it once for a particular branch, the next time it will only rebuild the files which have changed.  If you install the patch at #5653, you can also view the html output for individual functions from the notebook by typing `function?`.\n\nThank you, John and Dan, for you answers. These will be very useful.",
+    "created_at": "2009-04-30T07:36:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5918",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5918#issuecomment-46782",
+    "user": "saliola"
+}
+```
 
 Replying to [comment:9 jhpalmieri]:
 > Replying to [comment:8 saliola]:

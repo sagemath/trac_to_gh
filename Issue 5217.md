@@ -1,11 +1,21 @@
 # Issue 5217: update libpng to 1.2.34
 
-Issue created by migration from https://trac.sagemath.org/ticket/5217
-
-Original creator: mabshoff
-
-Original creation time: 2009-02-09 12:25:13
-
+archive/issues_005217.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nThis is also a security issue and we are shipping quite an outdated libpng. So update it.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5217\n\n",
+    "created_at": "2009-02-09T12:25:13Z",
+    "labels": [
+        "packages: standard",
+        "blocker",
+        "bug"
+    ],
+    "title": "update libpng to 1.2.34",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5217",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 This is also a security issue and we are shipping quite an outdated libpng. So update it.
@@ -14,17 +24,43 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/5217
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2009-02-09 12:25:18
+archive/issue_comments_039969.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-02-09T12:25:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5217",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5217#issuecomment-39969",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by wdj created at 2009-02-11 20:58:18
+archive/issue_comments_039970.json:
+```json
+{
+    "body": "If you interested in help from me on this, I am willing to try. (After the problems with GAP, I'll understand if you want to pass on the offer:-)\n\n\nThere re two tarballs in the source section of http://www.libpng.org/pub/png/libpng.html\n(with config and without). Which one did you get last time?\n\n\nAlso, the wiki page of lists of packages has libpng listed under png. Is this confusing?",
+    "created_at": "2009-02-11T20:58:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5217",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5217#issuecomment-39970",
+    "user": "wdj"
+}
+```
 
 If you interested in help from me on this, I am willing to try. (After the problems with GAP, I'll understand if you want to pass on the offer:-)
 
@@ -36,9 +72,20 @@ There re two tarballs in the source section of http://www.libpng.org/pub/png/lib
 Also, the wiki page of lists of packages has libpng listed under png. Is this confusing?
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-11 21:05:07
+archive/issue_comments_039971.json:
+```json
+{
+    "body": "Replying to [comment:2 wdj]:\n\nHi David,\n\n> If you interested in help from me on this, I am willing to try. (After the problems with GAP, I'll understand if you want to pass on the offer:-)\n\nI have things more or less ready to go for libpng, bzip2 and the Python upgrade, but thanks for the offer.\n\nThe GAP.spkg is a lot more complex than any of the above and hopefully it will be a lot smoother in the future. After the initial learning curve had been climbed the quality of your GAP.spkg did improve enough so I did not need to change anything, but any ticket with 50 comments didn't go well :). I have been rather busy and under pressure to get 3.3 out the last 10 days or so, so my comments might not have always been as appropriate as they should have been, so sorry if I did flame you.\n\nI still want to get the GAP.spkg into 3.3, so I will work on the warning issues later. \n \n> There re two tarballs in the source section of http://www.libpng.org/pub/png/libpng.html\n> (with config and without). Which one did you get last time?\n \nI need to look it up.\n \n> Also, the wiki page of lists of packages has libpng listed under png. Is this confusing?\n\nWell, what we currently do is certainly inconsistent, but given that the name is libpng.spkg it should be changed.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-11T21:05:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5217",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5217#issuecomment-39971",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:2 wdj]:
 
@@ -66,9 +113,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by wdj created at 2009-02-11 22:40:22
+archive/issue_comments_039972.json:
+```json
+{
+    "body": "> my comments might not have always been as appropriate \n> as they should have been, so sorry if I did flame you. \n\nDon't worry - I always wear frame-retardent material while at the keyboard:-) It was probably deserved anyway - garbage at work kept me from focusing.\n\n>>   There re two tarballs in the source section of \n>> http://www.libpng.org/pub/png/libpng.html  (with \n>> config and without). Which one did you get last time?\n\n> I need to look it up. \n\n\nFor the future, if you be more specific in SPKG.txt about which tarball gets downloaded and how it is pre-processed before creating the spkg, I (or someone else) could help out in the future. \n\n\nGenerally, I'm happy to help with group theory (eg, GAP), coding theory (though actually I want to *remove* guava), and image-processing (such as libpng and PIL), if you can use a hand.",
+    "created_at": "2009-02-11T22:40:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5217",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5217#issuecomment-39972",
+    "user": "wdj"
+}
+```
 
 > my comments might not have always been as appropriate 
 > as they should have been, so sorry if I did flame you. 
@@ -88,9 +146,20 @@ For the future, if you be more specific in SPKG.txt about which tarball gets dow
 Generally, I'm happy to help with group theory (eg, GAP), coding theory (though actually I want to *remove* guava), and image-processing (such as libpng and PIL), if you can use a hand.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-11 23:15:46
+archive/issue_comments_039973.json:
+```json
+{
+    "body": "Replying to [comment:4 wdj]:\n\nHi David,\n\n> Don't worry - I always wear frame-retardent material while at the keyboard:-) It was probably deserved anyway - garbage at work kept me from focusing.\n\nWell, I certainly won't claim you deserved it. But then an occasional rude email can make people pay attention to the problem :)\n \n\n > For the future, if you be more specific in SPKG.txt about which tarball gets downloaded and how it is pre-processed before creating the spkg, I (or someone else) could help out in the future. \n\nAbsolutely. I never upgraded the libpng.spkg and it shows, i.e. I tend to write a cleaned up and complete SPKG.txt so that it is easier for other people to upgrade. It also works as a great reminder for myself when I have to revisits spkgs. I have only changed small things like C flags in spkg-install, but never took the time required to truly clean up SPKG.txt in libpng.spkg. That is why I also insisted so much on the SPKG.txt for GAP having all the details you mentioned on the ticket. \n\nAnd the cleaned up SPKG.txt have all ended in the wiki where sooner or later the plan is to automatically extract the info before each release and make it part of the Spkg chapter/appendix in the developer's manual. But that will be post-ReST like so many things.\n\n> Generally, I'm happy to help with group theory (eg, GAP), coding theory (though actually I want to *remove* guava), and image-processing (such as libpng and PIL), if you can use a hand.\n\nI think we will include PIL sooner or later.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-11T23:15:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5217",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5217#issuecomment-39973",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:4 wdj]:
 
@@ -116,9 +185,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-16 04:55:25
+archive/issue_comments_039974.json:
+```json
+{
+    "body": "The spkg at\n\n http://sage.math.washington.edu/home/mabshoff/release-cycles-3.3/rc1/libpng-1.2.34.spkg\n\ndoes the update. Note that you need various other spkgs to keep a working tree:\n\n* #4774 (in 3.3.rc1)\n* #5265 (in 3.3.rc1)\n* #5277 (needs review)",
+    "created_at": "2009-02-16T04:55:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5217",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5217#issuecomment-39974",
+    "user": "mabshoff"
+}
+```
 
 The spkg at
 
@@ -126,28 +206,61 @@ The spkg at
 
 does the update. Note that you need various other spkgs to keep a working tree:
 
- * #4774 (in 3.3.rc1)
- * #5265 (in 3.3.rc1)
- * #5277 (needs review)
+* #4774 (in 3.3.rc1)
+* #5265 (in 3.3.rc1)
+* #5277 (needs review)
+
 
 
 ---
 
-Comment by mhampton created at 2009-02-16 11:09:08
+archive/issue_comments_039975.json:
+```json
+{
+    "body": "This works for me on an intel mac running 10.5.6.  I plotted and saved various 2d graphics objects.  Also tested tachyon with the new spkg, no problems seen.",
+    "created_at": "2009-02-16T11:09:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5217",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5217#issuecomment-39975",
+    "user": "mhampton"
+}
+```
 
 This works for me on an intel mac running 10.5.6.  I plotted and saved various 2d graphics objects.  Also tested tachyon with the new spkg, no problems seen.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-16 11:22:25
+archive/issue_comments_039976.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-02-16T11:22:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5217",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5217#issuecomment-39976",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-16 11:22:25
+archive/issue_comments_039977.json:
+```json
+{
+    "body": "Merged in Sage 3.3.rc1.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-16T11:22:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5217",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5217#issuecomment-39977",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.3.rc1.
 

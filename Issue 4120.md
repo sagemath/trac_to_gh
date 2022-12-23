@@ -1,42 +1,91 @@
 # Issue 4120: New code for binary quadratic forms
 
-Issue created by migration from https://trac.sagemath.org/ticket/4120
-
-Original creator: justin
-
-Original creation time: 2008-09-14 19:31:00
-
+archive/issues_004120.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  justin jonhanke tornaria@math.utexas.edu\n\nThe code supporting binary quadratic forms, in quadratic_forms/binary_qf.py, is missing some functionality, and relies on Magma and Pari.  The patch in this ticket provides the following changes:\n- tests for equivalence, normal, positive and negative definite, indefinite, primitive forms\n- normalize a form\n- action of matrix on a form\n- find content; factor indefinite forms\nIn addition: \n- reduce() no longer calls Pari\n- some cleanup: is_reduced() is rewritten; polynomial() replaced with an instance variable (poly)\n\nDoctests are in place for the new code, so the file remains at 100% coverage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4120\n\n",
+    "created_at": "2008-09-14T19:31:00Z",
+    "labels": [
+        "algebra",
+        "major",
+        "enhancement"
+    ],
+    "title": "New code for binary quadratic forms",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4120",
+    "user": "justin"
+}
+```
 Assignee: tbd
 
 CC:  justin jonhanke tornaria@math.utexas.edu
 
 The code supporting binary quadratic forms, in quadratic_forms/binary_qf.py, is missing some functionality, and relies on Magma and Pari.  The patch in this ticket provides the following changes:
- - tests for equivalence, normal, positive and negative definite, indefinite, primitive forms
- - normalize a form
- - action of matrix on a form
- - find content; factor indefinite forms
+- tests for equivalence, normal, positive and negative definite, indefinite, primitive forms
+- normalize a form
+- action of matrix on a form
+- find content; factor indefinite forms
 In addition: 
- - reduce() no longer calls Pari
- - some cleanup: is_reduced() is rewritten; polynomial() replaced with an instance variable (poly)
+- reduce() no longer calls Pari
+- some cleanup: is_reduced() is rewritten; polynomial() replaced with an instance variable (poly)
 
 Doctests are in place for the new code, so the file remains at 100% coverage.
+
+Issue created by migration from https://trac.sagemath.org/ticket/4120
+
+
+
 
 
 ---
 
-Comment by justin created at 2008-09-14 19:32:11
+archive/issue_comments_029824.json:
+```json
+{
+    "body": "Context diff of new, old versions of quadratic_forms/binary_qf.py",
+    "created_at": "2008-09-14T19:32:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29824",
+    "user": "justin"
+}
+```
 
 Context diff of new, old versions of quadratic_forms/binary_qf.py
 
 
+
 ---
+
+archive/issue_comments_029825.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-09-14T19:48:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29825",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-14 19:59:39
+archive/issue_comments_029826.json:
+```json
+{
+    "body": "Justin,\n\nthe diff is inverse and you should also add an extension patch to the file.\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-14T19:59:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29826",
+    "user": "mabshoff"
+}
+```
 
 Justin,
 
@@ -47,53 +96,134 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_029827.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-09-24T02:56:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29827",
+    "user": "justin"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by justin created at 2008-09-24 02:59:01
+archive/issue_comments_029828.json:
+```json
+{
+    "body": "Updated patch, works with 3.1.1 and 3.1.2.  Needs review.  And maybe testing :-}  Also incorporated performance changes from Holdsworth's changes.",
+    "created_at": "2008-09-24T02:59:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29828",
+    "user": "justin"
+}
+```
 
 Updated patch, works with 3.1.1 and 3.1.2.  Needs review.  And maybe testing :-}  Also incorporated performance changes from Holdsworth's changes.
 
 
+
 ---
 
-Comment by cremona created at 2008-09-24 13:53:13
+archive/issue_comments_029829.json:
+```json
+{
+    "body": "I am planning to review this, which looks pretty good.  First, some preliminary questions/comments:\n* I see that we now have some, but not all, support for indefinite forms.  (e.g. no equivalence testing, no class number).  Why not use pari interface for those, at least until we do our own?  (I would have thought that pari was pretty efficient for these things).\n* Your action of 2x2 matrices is a left action.  Do we want to allow users to use a right action (say, by having RMul and LMul with Mul an alias for one of them)?\n* Your action includes multiplication by det(A).  Now there are lots of application for this code, some will like that and some will want something else.  So why don't we have another parameter for Mul() which is the power of the determinant to be used.  Personally I would set the default to 0 but if you wanted it to be 1 (as in your code) I could live with that.\n* I still think that quite a lot of the functionality could be factored out into a more general binary form class, but that can be done later by someone (e.g. me) who uses higher degree forms.",
+    "created_at": "2008-09-24T13:53:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29829",
+    "user": "cremona"
+}
+```
 
 I am planning to review this, which looks pretty good.  First, some preliminary questions/comments:
-    * I see that we now have some, but not all, support for indefinite forms.  (e.g. no equivalence testing, no class number).  Why not use pari interface for those, at least until we do our own?  (I would have thought that pari was pretty efficient for these things).
-    * Your action of 2x2 matrices is a left action.  Do we want to allow users to use a right action (say, by having RMul and LMul with Mul an alias for one of them)?
-    * Your action includes multiplication by det(A).  Now there are lots of application for this code, some will like that and some will want something else.  So why don't we have another parameter for Mul() which is the power of the determinant to be used.  Personally I would set the default to 0 but if you wanted it to be 1 (as in your code) I could live with that.
-    * I still think that quite a lot of the functionality could be factored out into a more general binary form class, but that can be done later by someone (e.g. me) who uses higher degree forms.
+* I see that we now have some, but not all, support for indefinite forms.  (e.g. no equivalence testing, no class number).  Why not use pari interface for those, at least until we do our own?  (I would have thought that pari was pretty efficient for these things).
+* Your action of 2x2 matrices is a left action.  Do we want to allow users to use a right action (say, by having RMul and LMul with Mul an alias for one of them)?
+* Your action includes multiplication by det(A).  Now there are lots of application for this code, some will like that and some will want something else.  So why don't we have another parameter for Mul() which is the power of the determinant to be used.  Personally I would set the default to 0 but if you wanted it to be 1 (as in your code) I could live with that.
+* I still think that quite a lot of the functionality could be factored out into a more general binary form class, but that can be done later by someone (e.g. me) who uses higher degree forms.
+
 
 
 ---
 
-Comment by justin created at 2008-09-24 21:01:55
+archive/issue_comments_029830.json:
+```json
+{
+    "body": "The patch also works with 3.1.3.alpha1.  Doctests succeed.",
+    "created_at": "2008-09-24T21:01:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29830",
+    "user": "justin"
+}
+```
 
 The patch also works with 3.1.3.alpha1.  Doctests succeed.
 
 
+
 ---
 
-Comment by justin created at 2008-10-03 06:05:57
+archive/issue_comments_029831.json:
+```json
+{
+    "body": "Here's a second patch, to be applied on top of sage-4120.patch.\n\nThis one fixes some bugs and typos in the first, cleans up some code, and adds more support for indefinite forms (equivalence checking, in particular).  Probably adds a few bugs as well, but that's just a by-product.",
+    "created_at": "2008-10-03T06:05:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29831",
+    "user": "justin"
+}
+```
 
 Here's a second patch, to be applied on top of sage-4120.patch.
 
 This one fixes some bugs and typos in the first, cleans up some code, and adds more support for indefinite forms (equivalence checking, in particular).  Probably adds a few bugs as well, but that's just a by-product.
 
 
+
 ---
 
-Comment by justin created at 2008-10-03 06:06:51
+archive/issue_comments_029832.json:
+```json
+{
+    "body": "To be applied on top of sage-4120.patch",
+    "created_at": "2008-10-03T06:06:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29832",
+    "user": "justin"
+}
+```
 
 To be applied on top of sage-4120.patch
 
 
+
 ---
+
+archive/issue_comments_029833.json:
+```json
+{
+    "body": "Attachment\n\nThis is a third patch, applied on sage-4120-2.patch.\n\nThis one extends support for indefinite forms and fixes a few bugs (both in code and in the Buchmann/Vollmer algorithms).\n\nOne change in particular deserves discussion: I have changed the normalization and reduction procedures to return both the form in question and the transformation matrix used to derive that form.  This makes things a bit more awkward in the code, so there are two questions: is this really useful, and if yes, is there a better way to do it?\n\nAlso, I assigned this to me :-}.",
+    "created_at": "2008-10-07T04:22:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29833",
+    "user": "justin"
+}
+```
 
 Attachment
 
@@ -106,58 +236,128 @@ One change in particular deserves discussion: I have changed the normalization a
 Also, I assigned this to me :-}.
 
 
+
 ---
 
-Comment by justin created at 2008-10-07 04:22:34
+archive/issue_comments_029834.json:
+```json
+{
+    "body": "Changing assignee from tbd to justin.",
+    "created_at": "2008-10-07T04:22:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29834",
+    "user": "justin"
+}
+```
 
 Changing assignee from tbd to justin.
 
 
+
 ---
 
-Comment by justin created at 2008-10-07 04:23:12
+archive/issue_comments_029835.json:
+```json
+{
+    "body": "To be applied on top of sage-4120-2.patch",
+    "created_at": "2008-10-07T04:23:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29835",
+    "user": "justin"
+}
+```
 
 To be applied on top of sage-4120-2.patch
 
 
+
 ---
+
+archive/issue_comments_029836.json:
+```json
+{
+    "body": "Attachment\n\nApplied all three patches against 3.1.3.rc0, one at a time, running the doctests each time.  All doctests succeeded.  No problems noted.",
+    "created_at": "2008-10-14T04:31:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29836",
+    "user": "justin"
+}
+```
 
 Attachment
 
 Applied all three patches against 3.1.3.rc0, one at a time, running the doctests each time.  All doctests succeeded.  No problems noted.
 
 
+
 ---
+
+archive/issue_comments_029837.json:
+```json
+{
+    "body": "Attachment\n\nREPLACES earlier patches",
+    "created_at": "2008-10-28T20:46:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29837",
+    "user": "cremona"
+}
+```
 
 Attachment
 
 REPLACES earlier patches
 
 
+
 ---
 
-Comment by cremona created at 2008-10-28 20:53:02
+archive/issue_comments_029838.json:
+```json
+{
+    "body": "My patch sage-trac4120new.patch combines the three earlier ones and adds the following:\n* Fixing various bugs and typos\n* Sorting out a lot of formatting issues in doctests\n* Adds some new functions\n* Renames Mul to `__mul__` so one can say Q*M to apply matrix M to form Q\n\nRegarding the latter I relented and removed the scale parameter;  since the det is either +1 or -1 I am happy with multiplying (or dividing) by the determinant.\n\nIssues do remain:\n* The various transform function which return a new form Q and a transform T really must satisfy self.T==Q, but they don't.  Hence the commented out assertions.\n* We must decide whether we are talking about weak or strict equivalence (GL or SL(2,ZZ)).  At the moment it is hard to tell which.\n* For indefinite forms there are several different notions of \"reduced\".  OK to to stick to one, but we should make this explicit.\n* The class number function looks inefficient to me, it should be replaced by the fast code by Skoruppa to list reduced forms (in the definite case at least).\n\nThat's all I can remember, but this will need more work before it can go in.",
+    "created_at": "2008-10-28T20:53:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29838",
+    "user": "cremona"
+}
+```
 
 My patch sage-trac4120new.patch combines the three earlier ones and adds the following:
-    * Fixing various bugs and typos
-    * Sorting out a lot of formatting issues in doctests
-    * Adds some new functions
-    * Renames Mul to `__mul__` so one can say Q*M to apply matrix M to form Q
+* Fixing various bugs and typos
+* Sorting out a lot of formatting issues in doctests
+* Adds some new functions
+* Renames Mul to `__mul__` so one can say Q*M to apply matrix M to form Q
 
 Regarding the latter I relented and removed the scale parameter;  since the det is either +1 or -1 I am happy with multiplying (or dividing) by the determinant.
 
 Issues do remain:
-    * The various transform function which return a new form Q and a transform T really must satisfy self.T==Q, but they don't.  Hence the commented out assertions.
-    * We must decide whether we are talking about weak or strict equivalence (GL or SL(2,ZZ)).  At the moment it is hard to tell which.
-    * For indefinite forms there are several different notions of "reduced".  OK to to stick to one, but we should make this explicit.
-    * The class number function looks inefficient to me, it should be replaced by the fast code by Skoruppa to list reduced forms (in the definite case at least).
+* The various transform function which return a new form Q and a transform T really must satisfy self.T==Q, but they don't.  Hence the commented out assertions.
+* We must decide whether we are talking about weak or strict equivalence (GL or SL(2,ZZ)).  At the moment it is hard to tell which.
+* For indefinite forms there are several different notions of "reduced".  OK to to stick to one, but we should make this explicit.
+* The class number function looks inefficient to me, it should be replaced by the fast code by Skoruppa to list reduced forms (in the definite case at least).
 
 That's all I can remember, but this will need more work before it can go in.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-08 21:30:45
+archive/issue_comments_029839.json:
+```json
+{
+    "body": "See also #4470 for Jon Hanke's work on quadratic forms.\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-08T21:30:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29839",
+    "user": "mabshoff"
+}
+```
 
 See also #4470 for Jon Hanke's work on quadratic forms.
 
@@ -166,16 +366,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-08 21:32:23
+archive/issue_comments_029840.json:
+```json
+{
+    "body": "Changing component from algebra to quadratic forms.",
+    "created_at": "2008-11-08T21:32:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29840",
+    "user": "mabshoff"
+}
+```
 
 Changing component from algebra to quadratic forms.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-28 22:40:44
+archive/issue_comments_029841.json:
+```json
+{
+    "body": "To comment on the relationship with #4470:\n\n```\nAFAIK the binary quadratic forms are untouched by Jon's work. We\nshould rename the file to bring it more in line with what is coming\nfrom Jon, i.e. all I have left to do to post a patch is to rename\nvarious files to qf_ from quadratic_forms_, fix the imports and rebase\nthe extensions to module_list.py. All trivial, it just needs to be\ndone :p\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-28T22:40:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29841",
+    "user": "mabshoff"
+}
+```
 
 To comment on the relationship with #4470:
 
@@ -194,155 +416,267 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by tornaria created at 2009-02-24 02:36:29
+archive/issue_comments_029842.json:
+```json
+{
+    "body": "I've reviewed the code from the last patch as submitted by John Cremona (sage-trac4120.new.patch). It applies cleanly on 3.3 and also on top of the first two patches in #4470.\n\nBelow are some comments about the code in `binary_qf.py`. I didn't make a difference between old code and code in the patch, since most of the code is in the patch, anyway.\n\n- Constructor:\n  - BinaryQF([1,2,3], 4, 5) should raise an error\n  - I would like to suggest an additional constructor:\n    {{{\n       sage: BinaryQF(2, 1, disc = -23)\n       2*x^2 + x*y + 3*y^2\n    }}}\n    this is handy when the discriminant is fixed and one knows the first two coefficients\n    of a form\n\n- `__repr__`:\n   \n  I don't like the fact that a quadratic form is represented by a polynomial, may lead\n  to potential confusion. What about something like:\n  \"`Binary quadratic form over Integer Ring with coefficients [a, b, c]`\"\n  ?\n\n- polynomial:\n  - the variables for the polynomial are hardcoded... 'x' and 'y'... not very important (I rather not have a \"polynomial\" function... I'd replace it by a `__call__` function which works for elements in any ring, then one can call e.g. `Q(x,y)` where x and y are in `ZZ['x,y']`, etc.\n\n- action by matrices:\n  - Q * M is a left action --> more natural to be right action!!\n    I.e. right now\n    {{{\n       sage: Q = BinaryQF(4,-4,15)\n       sage: M = matrix(ZZ, 2, [1, 1, 0, 1])\n       sage: M1 = matrix(ZZ, 2, [1, 0, 1, 1])\n       sage: Q * M * M1 == Q * (M * M1)\n       False\n       sage: Q * M * M1 == Q * (M1 * M)\n       True\n    }}}\n  - I like the notation `Q(M)` for the action of matrices -- this is consitent with the\n    notation for general quadratic forms and representation by vectors or sublattices (#4470)\n     \n\n    Maybe * should be reserved for composition?\n\n- is_normal: he doctest doesn't explain what it is\n\n- is_equivalent\n  - IMO should return True or False\n  - have extra parameter to request transformation matrix\n  - needs more doctests (in particular indefinite, etc)\n  - sage: Q * Q.is_equivalent(Q1)[1].transpose() == Q1 /// should be True\n   this is just an issue with the action of matrices being left action\n  - for indefinite: should not compute the cycle for every form!!\n   instead, compute `self * other^(-1)`  (in the class group), and check if it is in the\n   principal cycle, which should of course be cached once for each discriminant. This is\n   helpful since one will probably use many forms of the same discriminant together.\n    \n\n   Not sure about how to do memory management though: it'd be nice if every indefinite\n   form of discriminant D holds a reference to the principal cycle of discriminant D, so\n   the cycle is deleted when the last indefinite form of discriminant D is deleted ???\n    \n\n   ALSO: IMO the caching of the cycle should be done by the function Cycle() itself, not by\n   is_equivalent.\n    \n\n   Moreover, the cycle needs to cache the transformation matrix as well, so we can\n   actually figure out the correct transformation matrix.\n\n- matrix: should be the Hessian for consistency with the rest of the code ???\n  the advantage is that it makes the matrix over ZZ (with even diagonal)\n\n- is_zero: should not need a gcd to decide if it is 0\n\n- s and ss: internal, should be prepended with `__` ???\n\n- class number computation should use pari\n\n- implement conversions between pari <--> sage   for BinaryQF and Qfb\n  maybe try to wrap around pari functionality as much as possible, for speed ??? (both\n  runtime and development!!) E.g. composition, etc.",
+    "created_at": "2009-02-24T02:36:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29842",
+    "user": "tornaria"
+}
+```
 
 I've reviewed the code from the last patch as submitted by John Cremona (sage-trac4120.new.patch). It applies cleanly on 3.3 and also on top of the first two patches in #4470.
 
 Below are some comments about the code in `binary_qf.py`. I didn't make a difference between old code and code in the patch, since most of the code is in the patch, anyway.
 
- - Constructor:
-   - BinaryQF([1,2,3], 4, 5) should raise an error
-   - I would like to suggest an additional constructor:
-     {{{
-        sage: BinaryQF(2, 1, disc = -23)
-        2*x^2 + x*y + 3*y^2
-     }}}
-     this is handy when the discriminant is fixed and one knows the first two coefficients
-     of a form
+- Constructor:
+  - BinaryQF([1,2,3], 4, 5) should raise an error
+  - I would like to suggest an additional constructor:
+    {{{
+       sage: BinaryQF(2, 1, disc = -23)
+       2*x^2 + x*y + 3*y^2
+    }}}
+    this is handy when the discriminant is fixed and one knows the first two coefficients
+    of a form
 
- - `__repr__`:
+- `__repr__`:
    
-   I don't like the fact that a quadratic form is represented by a polynomial, may lead
-   to potential confusion. What about something like:
-   "`Binary quadratic form over Integer Ring with coefficients [a, b, c]`"
-   ?
+  I don't like the fact that a quadratic form is represented by a polynomial, may lead
+  to potential confusion. What about something like:
+  "`Binary quadratic form over Integer Ring with coefficients [a, b, c]`"
+  ?
 
- - polynomial:
-   - the variables for the polynomial are hardcoded... 'x' and 'y'... not very important (I rather not have a "polynomial" function... I'd replace it by a `__call__` function which works for elements in any ring, then one can call e.g. `Q(x,y)` where x and y are in `ZZ['x,y']`, etc.
+- polynomial:
+  - the variables for the polynomial are hardcoded... 'x' and 'y'... not very important (I rather not have a "polynomial" function... I'd replace it by a `__call__` function which works for elements in any ring, then one can call e.g. `Q(x,y)` where x and y are in `ZZ['x,y']`, etc.
 
- - action by matrices:
-   - Q * M is a left action --> more natural to be right action!!
-     I.e. right now
-     {{{
-        sage: Q = BinaryQF(4,-4,15)
-        sage: M = matrix(ZZ, 2, [1, 1, 0, 1])
-        sage: M1 = matrix(ZZ, 2, [1, 0, 1, 1])
-        sage: Q * M * M1 == Q * (M * M1)
-        False
-        sage: Q * M * M1 == Q * (M1 * M)
-        True
-     }}}
-   - I like the notation `Q(M)` for the action of matrices -- this is consitent with the
-     notation for general quadratic forms and representation by vectors or sublattices (#4470)
+- action by matrices:
+  - Q * M is a left action --> more natural to be right action!!
+    I.e. right now
+    {{{
+       sage: Q = BinaryQF(4,-4,15)
+       sage: M = matrix(ZZ, 2, [1, 1, 0, 1])
+       sage: M1 = matrix(ZZ, 2, [1, 0, 1, 1])
+       sage: Q * M * M1 == Q * (M * M1)
+       False
+       sage: Q * M * M1 == Q * (M1 * M)
+       True
+    }}}
+  - I like the notation `Q(M)` for the action of matrices -- this is consitent with the
+    notation for general quadratic forms and representation by vectors or sublattices (#4470)
      
 
-     Maybe * should be reserved for composition?
+    Maybe * should be reserved for composition?
 
- - is_normal: he doctest doesn't explain what it is
+- is_normal: he doctest doesn't explain what it is
 
- - is_equivalent
+- is_equivalent
   - IMO should return True or False
   - have extra parameter to request transformation matrix
   - needs more doctests (in particular indefinite, etc)
   - sage: Q * Q.is_equivalent(Q1)[1].transpose() == Q1 /// should be True
-    this is just an issue with the action of matrices being left action
+   this is just an issue with the action of matrices being left action
   - for indefinite: should not compute the cycle for every form!!
-    instead, compute `self * other^(-1)`  (in the class group), and check if it is in the
-    principal cycle, which should of course be cached once for each discriminant. This is
-    helpful since one will probably use many forms of the same discriminant together.
+   instead, compute `self * other^(-1)`  (in the class group), and check if it is in the
+   principal cycle, which should of course be cached once for each discriminant. This is
+   helpful since one will probably use many forms of the same discriminant together.
     
 
-    Not sure about how to do memory management though: it'd be nice if every indefinite
-    form of discriminant D holds a reference to the principal cycle of discriminant D, so
-    the cycle is deleted when the last indefinite form of discriminant D is deleted ???
+   Not sure about how to do memory management though: it'd be nice if every indefinite
+   form of discriminant D holds a reference to the principal cycle of discriminant D, so
+   the cycle is deleted when the last indefinite form of discriminant D is deleted ???
     
 
-    ALSO: IMO the caching of the cycle should be done by the function Cycle() itself, not by
-    is_equivalent.
+   ALSO: IMO the caching of the cycle should be done by the function Cycle() itself, not by
+   is_equivalent.
     
 
-    Moreover, the cycle needs to cache the transformation matrix as well, so we can
-    actually figure out the correct transformation matrix.
+   Moreover, the cycle needs to cache the transformation matrix as well, so we can
+   actually figure out the correct transformation matrix.
 
- - matrix: should be the Hessian for consistency with the rest of the code ???
-   the advantage is that it makes the matrix over ZZ (with even diagonal)
+- matrix: should be the Hessian for consistency with the rest of the code ???
+  the advantage is that it makes the matrix over ZZ (with even diagonal)
 
- - is_zero: should not need a gcd to decide if it is 0
+- is_zero: should not need a gcd to decide if it is 0
 
- - s and ss: internal, should be prepended with `__` ???
+- s and ss: internal, should be prepended with `__` ???
 
- - class number computation should use pari
+- class number computation should use pari
 
- - implement conversions between pari <--> sage   for BinaryQF and Qfb
-   maybe try to wrap around pari functionality as much as possible, for speed ??? (both
-   runtime and development!!) E.g. composition, etc.
+- implement conversions between pari <--> sage   for BinaryQF and Qfb
+  maybe try to wrap around pari functionality as much as possible, for speed ??? (both
+  runtime and development!!) E.g. composition, etc.
+
 
 
 ---
+
+archive/issue_comments_029843.json:
+```json
+{
+    "body": "Attachment\n\nNew patch; replaces previous patches.",
+    "created_at": "2011-03-24T22:55:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29843",
+    "user": "justin"
+}
+```
 
 Attachment
 
 New patch; replaces previous patches.
 
 
+
 ---
 
-Comment by justin created at 2011-03-24 22:56:34
+archive/issue_comments_029844.json:
+```json
+{
+    "body": "New patch.  Primary content is support for indefinite binary forms.",
+    "created_at": "2011-03-24T22:56:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29844",
+    "user": "justin"
+}
+```
 
 New patch.  Primary content is support for indefinite binary forms.
 
 
+
 ---
 
-Comment by justin created at 2011-03-24 22:57:02
+archive/issue_comments_029845.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2011-03-24T22:57:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29845",
+    "user": "justin"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by justin created at 2011-03-24 23:12:10
+archive/issue_comments_029846.json:
+```json
+{
+    "body": "Forgot to make this explicit: Previous patches include a lot more changes than are in the new one, but to simplify the review process (and my life), I've decided to break it up into smaller chunks.  More changes will be forthcoming (new trac tickets).",
+    "created_at": "2011-03-24T23:12:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29846",
+    "user": "justin"
+}
+```
 
 Forgot to make this explicit: Previous patches include a lot more changes than are in the new one, but to simplify the review process (and my life), I've decided to break it up into smaller chunks.  More changes will be forthcoming (new trac tickets).
 
 
+
 ---
 
-Comment by justin created at 2011-03-24 23:21:58
+archive/issue_comments_029847.json:
+```json
+{
+    "body": "NOTE: And another thing: this patch should be applied against Sage 4.7.alpha2 or later (the release with the patch from #10741).",
+    "created_at": "2011-03-24T23:21:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29847",
+    "user": "justin"
+}
+```
 
 NOTE: And another thing: this patch should be applied against Sage 4.7.alpha2 or later (the release with the patch from #10741).
 
 
+
 ---
 
-Comment by cremona created at 2011-03-25 19:24:13
+archive/issue_comments_029848.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2011-03-25T19:24:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29848",
+    "user": "cremona"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by cremona created at 2011-03-25 19:24:13
+archive/issue_comments_029849.json:
+```json
+{
+    "body": "Patch applies and tests pass.\n\nMy only suggestion is that for invalid input you should raise an appropriate error (ValueError) rather than printing something and returning [].  And all integers =0,1(mod 4) should be allowed, even squares?  The docstring should specify exactly what valid inputs are, in any case.",
+    "created_at": "2011-03-25T19:24:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29849",
+    "user": "cremona"
+}
+```
 
 Patch applies and tests pass.
 
 My only suggestion is that for invalid input you should raise an appropriate error (ValueError) rather than printing something and returning [].  And all integers =0,1(mod 4) should be allowed, even squares?  The docstring should specify exactly what valid inputs are, in any case.
 
 
+
 ---
 
-Comment by justin created at 2011-03-25 20:35:42
+archive/issue_comments_029850.json:
+```json
+{
+    "body": "I will make the changes to raise errors rather than return unexpected values; that makes sense.\n\nThere may be cases where restrictions on discriminants make sense.  For example, I don't think that reduction for a degenerate form makes sense, and there are cases where we don't have an implementation for for a specific class of forms (indefinite, say).  Thoughts?",
+    "created_at": "2011-03-25T20:35:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29850",
+    "user": "justin"
+}
+```
 
 I will make the changes to raise errors rather than return unexpected values; that makes sense.
 
 There may be cases where restrictions on discriminants make sense.  For example, I don't think that reduction for a degenerate form makes sense, and there are cases where we don't have an implementation for for a specific class of forms (indefinite, say).  Thoughts?
 
 
+
 ---
 
-Comment by cremona created at 2011-03-25 21:59:19
+archive/issue_comments_029851.json:
+```json
+{
+    "body": "Replying to [comment:23 justin]:\n> I will make the changes to raise errors rather than return unexpected values; that makes sense.\n\nGood!  Thanks.\n\n> \n> There may be cases where restrictions on discriminants make sense.  For example, I don't think that reduction for a degenerate form makes sense, and there are cases where we don't have an implementation for for a specific class of forms (indefinite, say).  Thoughts?\n\nOK by me to restrict to B which are 0 or 1 mod 4 and not squares.",
+    "created_at": "2011-03-25T21:59:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29851",
+    "user": "cremona"
+}
+```
 
 Replying to [comment:23 justin]:
 > I will make the changes to raise errors rather than return unexpected values; that makes sense.
@@ -355,106 +689,260 @@ Good!  Thanks.
 OK by me to restrict to B which are 0 or 1 mod 4 and not squares.
 
 
+
 ---
 
-Comment by pbruin created at 2014-02-26 17:32:07
+archive/issue_comments_029852.json:
+```json
+{
+    "body": "I tried to do some computations with binary quadratic forms of positive discriminant, discovered that a lot of functionality was missing, and then found this ticket, which has been inactive for 3 years...  Is anyone planning to work on it?\n\nSee also #6106.",
+    "created_at": "2014-02-26T17:32:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29852",
+    "user": "pbruin"
+}
+```
 
 I tried to do some computations with binary quadratic forms of positive discriminant, discovered that a lot of functionality was missing, and then found this ticket, which has been inactive for 3 years...  Is anyone planning to work on it?
 
 See also #6106.
 
 
+
 ---
 
-Comment by pbruin created at 2014-02-26 21:13:07
+archive/issue_comments_029853.json:
+```json
+{
+    "body": "Converted the patch to a Git branch; small fixes to make everything compile and pass tests.\n\nStill `needs_work` in view of comment:22.",
+    "created_at": "2014-02-26T21:13:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29853",
+    "user": "pbruin"
+}
+```
 
 Converted the patch to a Git branch; small fixes to make everything compile and pass tests.
 
 Still `needs_work` in view of comment:22.
 
 
+
 ---
 
-Comment by git created at 2014-02-26 23:18:40
+archive/issue_comments_029854.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2014-02-26T23:18:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29854",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by git created at 2014-02-27 14:28:38
+archive/issue_comments_029855.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2014-02-27T14:28:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29855",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by pbruin created at 2014-02-27 14:29:29
+archive/issue_comments_029856.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2014-02-27T14:29:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29856",
+    "user": "pbruin"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by git created at 2014-04-25 00:02:40
+archive/issue_comments_029857.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2014-04-25T00:02:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29857",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by git created at 2014-11-27 23:32:54
+archive/issue_comments_029858.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2014-11-27T23:32:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29858",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by pbruin created at 2014-11-27 23:40:50
+archive/issue_comments_029859.json:
+```json
+{
+    "body": "I guess my commits can count as reviewer patches.  However, I haven't reviewed all the new code in detail, so the branch should probably still be reviewed as a whole.",
+    "created_at": "2014-11-27T23:40:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29859",
+    "user": "pbruin"
+}
+```
 
 I guess my commits can count as reviewer patches.  However, I haven't reviewed all the new code in detail, so the branch should probably still be reviewed as a whole.
 
 
----
-
-Comment by chapoton created at 2015-03-27 08:18:38
-
-This ticket currently confuses the patchbot. Temporarily putting to *needs info* to stop the bot loop-testing it.
-
 
 ---
 
-Comment by chapoton created at 2015-03-27 08:18:38
+archive/issue_comments_029860.json:
+```json
+{
+    "body": "This ticket currently confuses the patchbot. Temporarily putting to **needs info** to stop the bot loop-testing it.",
+    "created_at": "2015-03-27T08:18:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29860",
+    "user": "chapoton"
+}
+```
+
+This ticket currently confuses the patchbot. Temporarily putting to **needs info** to stop the bot loop-testing it.
+
+
+
+---
+
+archive/issue_comments_029861.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_info.",
+    "created_at": "2015-03-27T08:18:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29861",
+    "user": "chapoton"
+}
+```
 
 Changing status from needs_review to needs_info.
 
 
+
 ---
 
-Comment by pbruin created at 2015-06-04 11:12:52
+archive/issue_comments_029862.json:
+```json
+{
+    "body": "Replying to [comment:38 chapoton]:\n> This ticket currently confuses the patchbot. Temporarily putting to **needs info** to stop the bot loop-testing it.\nIt seems that at least the patchbot \"eddy\" is testing this ticket without adverse effects.  Let's see what happens if I set it back to \"needs_review\".  (There was a failure in the last patchbot run, but it seems to be unrelated to this ticket.)",
+    "created_at": "2015-06-04T11:12:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29862",
+    "user": "pbruin"
+}
+```
 
 Replying to [comment:38 chapoton]:
-> This ticket currently confuses the patchbot. Temporarily putting to *needs info* to stop the bot loop-testing it.
+> This ticket currently confuses the patchbot. Temporarily putting to **needs info** to stop the bot loop-testing it.
 It seems that at least the patchbot "eddy" is testing this ticket without adverse effects.  Let's see what happens if I set it back to "needs_review".  (There was a failure in the last patchbot run, but it seems to be unrelated to this ticket.)
 
 
+
 ---
 
-Comment by pbruin created at 2015-06-04 11:12:52
+archive/issue_comments_029863.json:
+```json
+{
+    "body": "Changing status from needs_info to needs_review.",
+    "created_at": "2015-06-04T11:12:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29863",
+    "user": "pbruin"
+}
+```
 
 Changing status from needs_info to needs_review.
 
 
+
 ---
 
-Comment by git created at 2016-01-22 20:34:42
+archive/issue_comments_029864.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2016-01-22T20:34:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29864",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by dimpase created at 2016-11-21 10:41:07
+archive/issue_comments_029865.json:
+```json
+{
+    "body": "[qfbcompraw](http://doc.sagemath.org/html/en/reference/libs/sage/libs/pari/gen.html#sage.libs.pari.gen.gen_auto.qfbcompraw) is now wrapped, so calling pari directly to use it is no longer necessary, and should be fixed.\n\ncf. the patch part:\n\n```\n+            # There could be more elegant ways, but qfbcompraw isn't\n+            # wrapped yet in the PARI C library.  We may as well settle\n+            # for the below, until somebody simply implements composition\n+            # from scratch in Cython.\n+            v = list(pari('qfbcompraw(%s,%s)'%(self._pari_init_(),\n+                                            right._pari_init_())))\n```\n",
+    "created_at": "2016-11-21T10:41:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29865",
+    "user": "dimpase"
+}
+```
 
 [qfbcompraw](http://doc.sagemath.org/html/en/reference/libs/sage/libs/pari/gen.html#sage.libs.pari.gen.gen_auto.qfbcompraw) is now wrapped, so calling pari directly to use it is no longer necessary, and should be fixed.
 
@@ -471,79 +959,200 @@ cf. the patch part:
 
 
 
+
 ---
 
-Comment by dimpase created at 2016-11-21 11:30:14
+archive/issue_comments_029866.json:
+```json
+{
+    "body": "and the same for `qfbred`, which is now also wrapped.",
+    "created_at": "2016-11-21T11:30:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29866",
+    "user": "dimpase"
+}
+```
 
 and the same for `qfbred`, which is now also wrapped.
 
 
+
 ---
 
-Comment by git created at 2016-11-21 13:51:37
+archive/issue_comments_029867.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2016-11-21T13:51:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29867",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by git created at 2017-09-08 05:42:22
+archive/issue_comments_029868.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2017-09-08T05:42:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29868",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by pbruin created at 2017-09-13 15:52:44
+archive/issue_comments_029869.json:
+```json
+{
+    "body": "(added the accent to Gonzalo Tornar\u00eda's name; maybe this will also convince the patchbot to test this ticket)",
+    "created_at": "2017-09-13T15:52:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29869",
+    "user": "pbruin"
+}
+```
 
 (added the accent to Gonzalo Tornaría's name; maybe this will also convince the patchbot to test this ticket)
 
 
+
 ---
 
-Comment by git created at 2017-09-19 05:46:02
+archive/issue_comments_029870.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2017-09-19T05:46:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29870",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by chapoton created at 2018-05-15 07:34:24
+archive/issue_comments_029871.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2018-05-15T07:34:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29871",
+    "user": "chapoton"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by chapoton created at 2018-05-15 07:34:24
+archive/issue_comments_029872.json:
+```json
+{
+    "body": "branch does not apply, needs rebase",
+    "created_at": "2018-05-15T07:34:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29872",
+    "user": "chapoton"
+}
+```
 
 branch does not apply, needs rebase
 
 
+
 ---
 
-Comment by git created at 2018-05-21 12:16:28
+archive/issue_comments_029873.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2018-05-21T12:16:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29873",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by pbruin created at 2018-05-21 12:17:16
+archive/issue_comments_029874.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2018-05-21T12:17:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29874",
+    "user": "pbruin"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by git created at 2018-06-03 17:12:36
+archive/issue_comments_029875.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2018-06-03T17:12:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29875",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by sbrandhorst created at 2018-06-03 17:21:04
+archive/issue_comments_029876.json:
+```json
+{
+    "body": "Some changes I made:\n- removed ``@`cached_method` in `polynomial` as we already cache in `_poly`\n- `reduced_form(self, matrix=False, implementation=None):` `matrix` seems missleading to me. \n  changed the keywords to `transformation` and `algorithm` to stay consistent with other \n  parts of sage (for example .`hermite_form`)   \n- used long names for methods like `is_indef` but keep the short alias\n- ``_RhoTau(self, proper=False)``\n  removed the `proper` keyword as it is not used.\n- use a better bound for `a` in BinaryQF_reduced_representatives from the Buchmann/Vollmer book\n- added a keyword proper for is_equivalent as for indefinite forms we only test improper \n  equivalence, we check if the form is in the cycle of the other form but that cycle is improper\n\nQuestion:\n- This requires a deprecation - do we really want to change it? This ticket changes so much   \n  already I would vote against it:\n  {{{\n  -def BinaryQF_reduced_representatives(D, primitive_only=False):\n  +def BinaryQF_reduced_representatives(D, primitive_only=True):\n  }}}",
+    "created_at": "2018-06-03T17:21:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29876",
+    "user": "sbrandhorst"
+}
+```
 
 Some changes I made:
 - removed ``@`cached_method` in `polynomial` as we already cache in `_poly`
@@ -566,72 +1175,182 @@ Question:
   }}}
 
 
+
 ---
 
-Comment by sbrandhorst created at 2018-06-03 17:22:36
+archive/issue_comments_029877.json:
+```json
+{
+    "body": "The ticket is not perfect but I think it is okay.\nAs the perfect is the enemy of the good - positive review on my part if you are happy with my changes and resolve the issue with the primitive_only keyword.",
+    "created_at": "2018-06-03T17:22:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29877",
+    "user": "sbrandhorst"
+}
+```
 
 The ticket is not perfect but I think it is okay.
 As the perfect is the enemy of the good - positive review on my part if you are happy with my changes and resolve the issue with the primitive_only keyword.
 
 
+
 ---
 
-Comment by sbrandhorst created at 2018-06-03 17:23:45
+archive/issue_comments_029878.json:
+```json
+{
+    "body": "Note on my machine tests pass, doc builds and looks reasonable.",
+    "created_at": "2018-06-03T17:23:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29878",
+    "user": "sbrandhorst"
+}
+```
 
 Note on my machine tests pass, doc builds and looks reasonable.
 
 
+
 ---
 
-Comment by cremona created at 2018-06-04 21:20:16
+archive/issue_comments_029879.json:
+```json
+{
+    "body": "I agree with the decision not to change the default for the primitive-only parameter.",
+    "created_at": "2018-06-04T21:20:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29879",
+    "user": "cremona"
+}
+```
 
 I agree with the decision not to change the default for the primitive-only parameter.
 
 
+
 ---
 
-Comment by pbruin created at 2018-06-04 21:20:46
+archive/issue_comments_029880.json:
+```json
+{
+    "body": "I agree too.",
+    "created_at": "2018-06-04T21:20:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29880",
+    "user": "pbruin"
+}
+```
 
 I agree too.
 
 
+
 ---
 
-Comment by git created at 2018-06-05 06:53:05
+archive/issue_comments_029881.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2018-06-05T06:53:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29881",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by git created at 2018-06-05 06:54:49
+archive/issue_comments_029882.json:
+```json
+{
+    "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
+    "created_at": "2018-06-05T06:54:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29882",
+    "user": "git"
+}
+```
 
 Branch pushed to git repo; I updated commit sha1. New commits:
 
 
+
 ---
 
-Comment by sbrandhorst created at 2018-06-05 06:55:28
+archive/issue_comments_029883.json:
+```json
+{
+    "body": "Then let us finally get this reviewed :)",
+    "created_at": "2018-06-05T06:55:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29883",
+    "user": "sbrandhorst"
+}
+```
 
 Then let us finally get this reviewed :)
 
 
+
 ---
 
-Comment by pbruin created at 2018-06-12 05:43:32
+archive/issue_comments_029884.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2018-06-12T05:43:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29884",
+    "user": "pbruin"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by pbruin created at 2018-06-12 05:43:32
+archive/issue_comments_029885.json:
+```json
+{
+    "body": "Fixed a SEEALSO block (causing docbuild to fail) and two pyflakes complaints.  Let's get this ticket in before its 10-year anniversary.",
+    "created_at": "2018-06-12T05:43:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29885",
+    "user": "pbruin"
+}
+```
 
 Fixed a SEEALSO block (causing docbuild to fail) and two pyflakes complaints.  Let's get this ticket in before its 10-year anniversary.
 
 
+
 ---
 
-Comment by vbraun created at 2018-06-14 07:41:15
+archive/issue_comments_029886.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2018-06-14T07:41:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4120",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29886",
+    "user": "vbraun"
+}
+```
 
 Resolution: fixed

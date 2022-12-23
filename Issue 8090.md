@@ -1,21 +1,31 @@
 # Issue 8090: genus2reduction no building on Open Solaris x64. (32/64 bit issue)
 
-Issue created by migration from https://trac.sagemath.org/ticket/8090
-
-Original creator: drkirkby
-
-Original creation time: 2010-01-27 04:38:31
-
+archive/issues_008090.json:
+```json
+{
+    "body": "Assignee: drkirkby\n\nCC:  jsp\n\n## Build environment\n* Sun Ultra 27 3.33 GHz Intel W3580 Xeon. Quad core. 8 threads. 12 GB RAM\n* OpenSolaris 2009.06 snv_111b X86\n* Sage 4.3.1 (with a few packages hacked to work on 64-bit)\n* gcc 4.3.4 configured with Sun linker and GNU assembler from binutils version 2.20.\n* 64-bit build. SAGE64 was set to yes, plus various other tricks to get -m64 into packages. \n\n## The problem\n\n```\nCompiling genus2reduction.c\nIn file included from /export/home/drkirkby/sage-4.3.1/local/include/pari/pari.h:76,\n                 from genus2reduction.c:18:\n../src/kernel/none/level1.h: In function \u2018evallg\u2019:\n../src/kernel/none/level1.h:180: warning: left shift count >= width of type\n<SNIP>\ngenus2reduction.c:1825: warning: left shift count >= width of type\ngenus2reduction.c:1825: warning: left shift count >= width of type\ngenus2reduction.c:1830: warning: left shift count >= width of type\ngenus2reduction.c:1834: warning: left shift count >= width of type\ngenus2reduction.c:1834: warning: left shift count >= width of type\ngenus2reduction.c: In function \u2018factmz\u2019:\ngenus2reduction.c:2022: warning: left shift count >= width of type\ngenus2reduction.c:2024: warning: left shift count >= width of type\ngenus2reduction.c:2033: warning: left shift count >= width of type\ngenus2reduction.c:2033: warning: right shift count >= width of type\ngenus2reduction.c:2037: warning: left shift count >= width of type\ngenus2reduction.c:2041: warning: left shift count >= width of type\nld: fatal: file /export/home/drkirkby/sage-4.3.1/local/lib/libpari.so: wrong ELF class: ELFCLASS64\nld: fatal: file processing errors. No output written to genus2reduction\ncollect2: ld returned 1 exit status\nError building genus2reduction\n\nreal\t0m0.930s\nuser\t0m0.882s\nsys\t0m0.041s\nsage: An error occurred while installing genus2reduction-0.3.p5\n```\n\n == Probably reason ==\nThis looks like a 32/64 bit issue, as the ELFCLASS is wrong. I suspect this is building 32-bit, not 64-bit, though its not obvious as all one sees is:\n\n```\nCompiling genus2reduction.c\n```\n\nwith no idea what compiler is being used. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8090\n\n",
+    "created_at": "2010-01-27T04:38:31Z",
+    "labels": [
+        "porting: Solaris",
+        "major",
+        "bug"
+    ],
+    "title": "genus2reduction no building on Open Solaris x64. (32/64 bit issue)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8090",
+    "user": "drkirkby"
+}
+```
 Assignee: drkirkby
 
 CC:  jsp
 
 ## Build environment
- * Sun Ultra 27 3.33 GHz Intel W3580 Xeon. Quad core. 8 threads. 12 GB RAM
- * OpenSolaris 2009.06 snv_111b X86
- * Sage 4.3.1 (with a few packages hacked to work on 64-bit)
- * gcc 4.3.4 configured with Sun linker and GNU assembler from binutils version 2.20.
- * 64-bit build. SAGE64 was set to yes, plus various other tricks to get -m64 into packages. 
+* Sun Ultra 27 3.33 GHz Intel W3580 Xeon. Quad core. 8 threads. 12 GB RAM
+* OpenSolaris 2009.06 snv_111b X86
+* Sage 4.3.1 (with a few packages hacked to work on 64-bit)
+* gcc 4.3.4 configured with Sun linker and GNU assembler from binutils version 2.20.
+* 64-bit build. SAGE64 was set to yes, plus various other tricks to get -m64 into packages. 
 
 ## The problem
 
@@ -58,15 +68,43 @@ Compiling genus2reduction.c
 
 with no idea what compiler is being used. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8090
+
+
+
+
 
 ---
+
+archive/issue_comments_070899.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-01-27T20:32:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8090",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8090#issuecomment-70899",
+    "user": "jsp"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by jsp created at 2010-01-27 20:39:40
+archive/issue_comments_070900.json:
+```json
+{
+    "body": "There is a patch and an spkg.\n\n[http://boxen.math.washington.edu/home/jsp/ports/genus2reduction-0.3.p6.spkg](http://boxen.math.washington.edu/home/jsp/ports/genus2reduction-0.3.p6.spkg)\n\nYou gave it a positive review.\nhttp://trac.sagemath.org/sage_trac/ticket/8061#comment:2\n\nSo I think this is a dup.\n\nJaap",
+    "created_at": "2010-01-27T20:39:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8090",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8090#issuecomment-70900",
+    "user": "jsp"
+}
+```
 
 There is a patch and an spkg.
 
@@ -80,15 +118,37 @@ So I think this is a dup.
 Jaap
 
 
+
 ---
 
-Comment by drkirkby created at 2010-01-28 14:47:57
+archive/issue_comments_070901.json:
+```json
+{
+    "body": "Yes, you are correct. This is a duplicate. I'm marking it as a duplicate.",
+    "created_at": "2010-01-28T14:47:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8090",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8090#issuecomment-70901",
+    "user": "drkirkby"
+}
+```
 
 Yes, you are correct. This is a duplicate. I'm marking it as a duplicate.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-01-28 14:47:57
+archive/issue_comments_070902.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2010-01-28T14:47:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8090",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8090#issuecomment-70902",
+    "user": "drkirkby"
+}
+```
 
 Resolution: duplicate

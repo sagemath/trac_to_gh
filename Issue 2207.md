@@ -1,45 +1,116 @@
 # Issue 2207: fcp for matrices over SR
 
-Issue created by migration from https://trac.sagemath.org/ticket/2207
-
-Original creator: jason
-
-Original creation time: 2008-02-18 21:25:50
-
+archive/issues_002207.json:
+```json
+{
+    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2207\n\n",
+    "created_at": "2008-02-18T21:25:50Z",
+    "labels": [
+        "linear algebra",
+        "major",
+        "bug"
+    ],
+    "title": "fcp for matrices over SR",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2207",
+    "user": "jason"
+}
+```
 Assignee: was
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2207
+
+
+
+
 
 ---
 
-Comment by jason created at 2008-02-18 21:26:07
+archive/issue_comments_014566.json:
+```json
+{
+    "body": "tidbits from mhansen's patch at 2028.",
+    "created_at": "2008-02-18T21:26:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2207",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2207#issuecomment-14566",
+    "user": "jason"
+}
+```
 
 tidbits from mhansen's patch at 2028.
 
 
+
 ---
 
-Comment by jason created at 2008-02-18 21:26:29
+archive/issue_comments_014567.json:
+```json
+{
+    "body": "Changing type from defect to enhancement.",
+    "created_at": "2008-02-18T21:26:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2207",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2207#issuecomment-14567",
+    "user": "jason"
+}
+```
 
 Changing type from defect to enhancement.
 
 
+
 ---
+
+archive/issue_comments_014568.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-02-18T21:26:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2207",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2207#issuecomment-14568",
+    "user": "jason"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by ncalexan created at 2008-02-19 00:28:42
+archive/issue_comments_014569.json:
+```json
+{
+    "body": "Apply.",
+    "created_at": "2008-02-19T00:28:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2207",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2207#issuecomment-14569",
+    "user": "ncalexan"
+}
+```
 
 Apply.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-19 15:07:13
+archive/issue_comments_014570.json:
+```json
+{
+    "body": "Please rebase:\n\n```\nsage$ patch -p1 --dry-run < trac-2028-part1.patch\npatching file sage/matrix/matrix_symbolic_dense.pyx\nHunk #1 FAILED at 365.\n1 out of 1 hunk FAILED -- saving rejects to file sage/matrix/matrix_symbolic_dense.pyx.rej\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2008-02-19T15:07:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2207",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2207#issuecomment-14570",
+    "user": "mabshoff"
+}
+```
 
 Please rebase:
 
@@ -56,44 +127,112 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mhansen created at 2008-03-05 00:38:31
+archive/issue_comments_014571.json:
+```json
+{
+    "body": "This code made it in in #2053.",
+    "created_at": "2008-03-05T00:38:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2207",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2207#issuecomment-14571",
+    "user": "mhansen"
+}
+```
 
 This code made it in in #2053.
 
 
+
 ---
 
-Comment by mhansen created at 2008-03-05 00:38:31
+archive/issue_comments_014572.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-03-05T00:38:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2207",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2207#issuecomment-14572",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mhansen created at 2008-03-05 01:09:01
+archive/issue_comments_014573.json:
+```json
+{
+    "body": "Resolution changed from fixed to ",
+    "created_at": "2008-03-05T01:09:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2207",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2207#issuecomment-14573",
+    "user": "mhansen"
+}
+```
 
 Resolution changed from fixed to 
 
 
+
 ---
 
-Comment by mhansen created at 2008-03-05 01:09:01
+archive/issue_comments_014574.json:
+```json
+{
+    "body": "Changing status from closed to reopened.",
+    "created_at": "2008-03-05T01:09:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2207",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2207#issuecomment-14574",
+    "user": "mhansen"
+}
+```
 
 Changing status from closed to reopened.
 
 
+
 ---
+
+archive/issue_comments_014575.json:
+```json
+{
+    "body": "Attachment\n\nNew patch against 2.10.3.rc1 attached which adds missing doctests",
+    "created_at": "2008-03-05T01:09:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2207",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2207#issuecomment-14575",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 New patch against 2.10.3.rc1 attached which adds missing doctests
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-05 05:35:27
+archive/issue_comments_014576.json:
+```json
+{
+    "body": "Merged in Sage 2.10.3.rc2 - due to some hg stupidity parts of this patch made it in rc0. Mike Hansen's latest patch adds the missing docstring and doctest.\n\nCheers,\n\nMichael",
+    "created_at": "2008-03-05T05:35:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2207",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2207#issuecomment-14576",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.3.rc2 - due to some hg stupidity parts of this patch made it in rc0. Mike Hansen's latest patch adds the missing docstring and doctest.
 
@@ -102,16 +241,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-05 05:35:27
+archive/issue_comments_014577.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-03-05T05:35:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2207",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2207#issuecomment-14577",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by cremona created at 2008-03-05 22:08:30
+archive/issue_comments_014578.json:
+```json
+{
+    "body": "When I tested 2.10.3.rc2 I got this:\n\n\n```\nsage -t  devel/sage-main/sage/matrix/matrix_symbolic_dense.pyxemacs devel/sage-main/sage/matrix/matrix_symbolic_dense.pyx**********************************************************************\nFile \"matrix_symbolic_dense.pyx\", line 871:\n    sage: list(a.fcp())\nExpected:\n    [(x^2 - 65*x - 250, 1), (x, 3)]\nGot:\n    [(x, 3), (x^2 - 65*x - 250, 1)]\n**********************************************************************\n```\n\n\nand I suggest changing line 871 from\n\n```\n            sage: list(a.fcp())\n```\n\nto\n\n```\n            sage: sorted(list(a.fcp()))\n```\n",
+    "created_at": "2008-03-05T22:08:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2207",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2207#issuecomment-14578",
+    "user": "cremona"
+}
+```
 
 When I tested 2.10.3.rc2 I got this:
 

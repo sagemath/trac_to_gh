@@ -1,11 +1,21 @@
 # Issue 8326: Sphinx warnings about posets and poset_example
 
-Issue created by migration from https://trac.sagemath.org/ticket/8326
-
-Original creator: mpatel
-
-Original creation time: 2010-02-22 06:06:02
-
+archive/issues_008326.json:
+```json
+{
+    "body": "Assignee: sage-combinat\n\nSphinx warnings from building the HTML reference manual include: \n\n```\ncombinat/posets/poset_examples.rst:6: (WARNING/2) error while formatting signature for sage.combinat.posets.poset_examples.random: arg is not a module, class, method, function, traceback, frame, or code object\ncombinat/posets/posets.rst:6: (WARNING/2) error while formatting signature for sage.combinat.posets.posets.random: arg is not a module, class, method, function, traceback, frame, or code object\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8326\n\n",
+    "created_at": "2010-02-22T06:06:02Z",
+    "labels": [
+        "combinatorics",
+        "minor",
+        "bug"
+    ],
+    "title": "Sphinx warnings about posets and poset_example",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8326",
+    "user": "mpatel"
+}
+```
 Assignee: sage-combinat
 
 Sphinx warnings from building the HTML reference manual include: 
@@ -16,51 +26,134 @@ combinat/posets/posets.rst:6: (WARNING/2) error while formatting signature for s
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8326
+
+
+
+
 
 ---
 
-Comment by mpatel created at 2010-02-22 06:07:34
+archive/issue_comments_073920.json:
+```json
+{
+    "body": "Work around Sphinx poset warnings.  sage repo.",
+    "created_at": "2010-02-22T06:07:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8326",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8326#issuecomment-73920",
+    "user": "mpatel"
+}
+```
 
 Work around Sphinx poset warnings.  sage repo.
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-22 06:12:19
+archive/issue_comments_073921.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-02-22T06:12:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8326",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8326#issuecomment-73921",
+    "user": "mpatel"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-22 06:12:19
+archive/issue_comments_073922.json:
+```json
+{
+    "body": "Changing priority from minor to trivial.",
+    "created_at": "2010-02-22T06:12:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8326",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8326#issuecomment-73922",
+    "user": "mpatel"
+}
+```
 
 Changing priority from minor to trivial.
 
 
+
 ---
+
+archive/issue_comments_073923.json:
+```json
+{
+    "body": "Attachment\n\nThe patch appears to work, but feel free to reject it.",
+    "created_at": "2010-02-22T06:12:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8326",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8326#issuecomment-73923",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
 The patch appears to work, but feel free to reject it.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-02-24 23:25:37
+archive/issue_comments_073924.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-02-24T23:25:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8326",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8326#issuecomment-73924",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-02-24 23:25:37
+archive/issue_comments_073925.json:
+```json
+{
+    "body": "Looks okay to me: the patch is pretty innocuous, and it fixes the docbuild problem.",
+    "created_at": "2010-02-24T23:25:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8326",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8326#issuecomment-73925",
+    "user": "jhpalmieri"
+}
+```
 
 Looks okay to me: the patch is pretty innocuous, and it fixes the docbuild problem.
 
 
+
 ---
 
-Comment by mvngu created at 2010-03-02 21:47:12
+archive/issue_comments_073926.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-03-02T21:47:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8326",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8326#issuecomment-73926",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

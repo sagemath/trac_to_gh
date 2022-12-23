@@ -1,11 +1,21 @@
 # Issue 2081: Add .coefficients() and .exponents() to univariate polynomials and power series
 
-Issue created by migration from https://trac.sagemath.org/ticket/2081
-
-Original creator: jbandlow
-
-Original creation time: 2008-02-07 07:39:15
-
+archive/issues_002081.json:
+```json
+{
+    "body": "Assignee: somebody\n\nThis should work:\n\n\n```\nsage: R.<x> = QQ[]\nsage: f = x^2+2*x\nsage: f.exponents()\n[1, 2]\nsage: f.coefficients()\n[2, 1]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2081\n\n",
+    "created_at": "2008-02-07T07:39:15Z",
+    "labels": [
+        "basic arithmetic",
+        "minor",
+        "bug"
+    ],
+    "title": "Add .coefficients() and .exponents() to univariate polynomials and power series",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2081",
+    "user": "jbandlow"
+}
+```
 Assignee: somebody
 
 This should work:
@@ -21,51 +31,134 @@ sage: f.coefficients()
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2081
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2008-02-07 07:47:50
+archive/issue_comments_013472.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-02-07T07:47:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2081",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2081#issuecomment-13472",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mhansen created at 2008-02-07 07:47:50
+archive/issue_comments_013473.json:
+```json
+{
+    "body": "Changing assignee from somebody to mhansen.",
+    "created_at": "2008-02-07T07:47:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2081",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2081#issuecomment-13473",
+    "user": "mhansen"
+}
+```
 
 Changing assignee from somebody to mhansen.
 
 
+
 ---
 
-Comment by malb created at 2008-02-14 23:43:14
+archive/issue_comments_013474.json:
+```json
+{
+    "body": "The patch looks good, one thing though: every parent is supposed to provide a `zero_element()` method, this could be used (but that isn't really important)",
+    "created_at": "2008-02-14T23:43:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2081",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2081#issuecomment-13474",
+    "user": "malb"
+}
+```
 
 The patch looks good, one thing though: every parent is supposed to provide a `zero_element()` method, this could be used (but that isn't really important)
 
 
+
 ---
+
+archive/issue_comments_013475.json:
+```json
+{
+    "body": "Attachment\n\nUpdated patch to use .zero_element()",
+    "created_at": "2008-02-14T23:56:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2081",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2081#issuecomment-13475",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 Updated patch to use .zero_element()
 
 
+
 ---
 
-Comment by malb created at 2008-02-15 00:37:13
+archive/issue_comments_013476.json:
+```json
+{
+    "body": "`make test` passes, patch looks good, apply!",
+    "created_at": "2008-02-15T00:37:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2081",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2081#issuecomment-13476",
+    "user": "malb"
+}
+```
 
 `make test` passes, patch looks good, apply!
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-15 02:16:11
+archive/issue_comments_013477.json:
+```json
+{
+    "body": "Merged in Sage 2.10.2.alpha0",
+    "created_at": "2008-02-15T02:16:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2081",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2081#issuecomment-13477",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.2.alpha0
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-15 02:16:11
+archive/issue_comments_013478.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-02-15T02:16:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2081",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2081#issuecomment-13478",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

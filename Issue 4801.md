@@ -1,39 +1,99 @@
 # Issue 4801: [with patch, positive review] Add a flag when starting MuPAD so that it can tell when it's being run from Sage
 
-Issue created by migration from https://trac.sagemath.org/ticket/4801
-
-Original creator: mhansen
-
-Original creation time: 2008-12-15 06:11:45
-
+archive/issues_004801.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4801\n\n",
+    "created_at": "2008-12-15T06:11:45Z",
+    "labels": [
+        "interfaces",
+        "minor",
+        "enhancement"
+    ],
+    "title": "[with patch, positive review] Add a flag when starting MuPAD so that it can tell when it's being run from Sage",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4801",
+    "user": "mhansen"
+}
+```
 Assignee: was
 
 CC:  sage-combinat
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4801
+
+
+
+
 
 ---
+
+archive/issue_comments_036396.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-12-15T06:12:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4801",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4801#issuecomment-36396",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2008-12-15 06:13:11
+archive/issue_comments_036397.json:
+```json
+{
+    "body": "Patch by Nicolas Thiery, review by Mike Hansen",
+    "created_at": "2008-12-15T06:13:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4801",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4801#issuecomment-36397",
+    "user": "mhansen"
+}
+```
 
 Patch by Nicolas Thiery, review by Mike Hansen
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-15 17:58:14
+archive/issue_comments_036398.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-12-15T17:58:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4801",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4801#issuecomment-36398",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-15 17:58:14
+archive/issue_comments_036399.json:
+```json
+{
+    "body": "Merged in Sage 3.2.2.rc0",
+    "created_at": "2008-12-15T17:58:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4801",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4801#issuecomment-36399",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.2.2.rc0

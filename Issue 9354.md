@@ -1,11 +1,21 @@
 # Issue 9354: Update FriCAS to 1.0.9
 
-Issue created by migration from https://trac.sagemath.org/ticket/9354
-
-Original creator: mhansen
-
-Original creation time: 2010-06-27 20:06:19
-
+archive/issues_009354.json:
+```json
+{
+    "body": "Assignee: AlexGhitza\n\nCC:  mvngu was\n\nhttp://sage.math.washington.edu/home/hemmecke/pub/fricas-1.0.9.spkg\n\nhttp://sage.math.washington.edu/home/hemmecke/pub/fricasaldor-1.0.9.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/9354\n\n",
+    "created_at": "2010-06-27T20:06:19Z",
+    "labels": [
+        "algebra",
+        "major",
+        "bug"
+    ],
+    "title": "Update FriCAS to 1.0.9",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9354",
+    "user": "mhansen"
+}
+```
 Assignee: AlexGhitza
 
 CC:  mvngu was
@@ -14,60 +24,152 @@ http://sage.math.washington.edu/home/hemmecke/pub/fricas-1.0.9.spkg
 
 http://sage.math.washington.edu/home/hemmecke/pub/fricasaldor-1.0.9.spkg
 
+Issue created by migration from https://trac.sagemath.org/ticket/9354
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2010-06-27 20:06:46
+archive/issue_comments_088792.json:
+```json
+{
+    "body": "See comments at #6517",
+    "created_at": "2010-06-27T20:06:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9354",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9354#issuecomment-88792",
+    "user": "mhansen"
+}
+```
 
 See comments at #6517
 
 
+
 ---
 
-Comment by mhansen created at 2010-06-27 20:06:46
+archive/issue_comments_088793.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-06-27T20:06:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9354",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9354#issuecomment-88793",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mhansen created at 2010-06-27 20:07:00
+archive/issue_comments_088794.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-06-27T20:07:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9354",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9354#issuecomment-88794",
+    "user": "mhansen"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mpatel created at 2010-08-07 06:26:31
+archive/issue_comments_088795.json:
+```json
+{
+    "body": "I assume we need to replace the current optional FriCAS spkg with `fricas-1.0.9.spkg` and *add* `fricasaldor-1.0.9.spkg`.\n\nMinh and William, could one of you please update the repository?  I don't have the privileges to do this.",
+    "created_at": "2010-08-07T06:26:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9354",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9354#issuecomment-88795",
+    "user": "mpatel"
+}
+```
 
-I assume we need to replace the current optional FriCAS spkg with `fricas-1.0.9.spkg` and _add_ `fricasaldor-1.0.9.spkg`.
+I assume we need to replace the current optional FriCAS spkg with `fricas-1.0.9.spkg` and *add* `fricasaldor-1.0.9.spkg`.
 
 Minh and William, could one of you please update the repository?  I don't have the privileges to do this.
 
 
+
 ---
 
-Comment by mpatel created at 2010-08-07 06:26:31
+archive/issue_comments_088796.json:
+```json
+{
+    "body": "Changing component from algebra to optional packages.",
+    "created_at": "2010-08-07T06:26:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9354",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9354#issuecomment-88796",
+    "user": "mpatel"
+}
+```
 
 Changing component from algebra to optional packages.
 
 
+
 ---
 
-Comment by mhansen created at 2010-08-07 06:30:51
+archive/issue_comments_088797.json:
+```json
+{
+    "body": "Done.",
+    "created_at": "2010-08-07T06:30:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9354",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9354#issuecomment-88797",
+    "user": "mhansen"
+}
+```
 
 Done.
 
 
+
 ---
 
-Comment by mpatel created at 2010-08-07 06:39:37
+archive/issue_comments_088798.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-08-07T06:39:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9354",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9354#issuecomment-88798",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mpatel created at 2010-08-07 06:39:37
+archive/issue_comments_088799.json:
+```json
+{
+    "body": "Thanks!",
+    "created_at": "2010-08-07T06:39:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9354",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9354#issuecomment-88799",
+    "user": "mpatel"
+}
+```
 
 Thanks!

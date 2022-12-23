@@ -1,59 +1,152 @@
 # Issue 9667: Use PARI's hash_GEN() for gen.__hash__
 
-Issue created by migration from https://trac.sagemath.org/ticket/9667
-
-Original creator: jdemeyer
-
-Original creation time: 2010-08-02 09:47:20
-
+archive/issues_009667.json:
+```json
+{
+    "body": "Assignee: was\n\nThe latest version of PARI has a function `hash_GEN` which hashes a PARI `GEN`.  Since this is very likely faster than hashing the string representation of a `GEN`, we should use this for the `gen` class in sage/libs/pari/gen.pyx\n\nIssue created by migration from https://trac.sagemath.org/ticket/9667\n\n",
+    "created_at": "2010-08-02T09:47:20Z",
+    "labels": [
+        "interfaces",
+        "minor",
+        "enhancement"
+    ],
+    "title": "Use PARI's hash_GEN() for gen.__hash__",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9667",
+    "user": "jdemeyer"
+}
+```
 Assignee: was
 
 The latest version of PARI has a function `hash_GEN` which hashes a PARI `GEN`.  Since this is very likely faster than hashing the string representation of a `GEN`, we should use this for the `gen` class in sage/libs/pari/gen.pyx
 
+Issue created by migration from https://trac.sagemath.org/ticket/9667
+
+
+
+
 
 ---
 
-Comment by jdemeyer created at 2010-08-02 12:22:58
+archive/issue_comments_093854.json:
+```json
+{
+    "body": "Patch to be applied on top of #9343",
+    "created_at": "2010-08-02T12:22:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9667",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9667#issuecomment-93854",
+    "user": "jdemeyer"
+}
+```
 
 Patch to be applied on top of #9343
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-09-15 17:12:33
+archive/issue_comments_093855.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-09-15T17:12:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9667",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9667#issuecomment-93855",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_093856.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-09-15T17:12:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9667",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9667#issuecomment-93856",
+    "user": "jdemeyer"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-09-15 17:13:13
+archive/issue_comments_093857.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-09-15T17:13:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9667",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9667#issuecomment-93857",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-09-15 17:13:13
+archive/issue_comments_093858.json:
+```json
+{
+    "body": "Ignore this ticket, see #9764 instead.",
+    "created_at": "2010-09-15T17:13:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9667",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9667#issuecomment-93858",
+    "user": "jdemeyer"
+}
+```
 
 Ignore this ticket, see #9764 instead.
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-28 11:15:03
+archive/issue_comments_093859.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2010-09-28T11:15:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9667",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9667#issuecomment-93859",
+    "user": "mpatel"
+}
+```
 
 Resolution: duplicate
 
 
+
 ---
 
-Comment by was created at 2011-07-29 20:19:35
+archive/issue_comments_093860.json:
+```json
+{
+    "body": "Hi,\n\nFor the record, this change introduced a major bug into Sage, because PARI's hash_GEN is itself buggy.  For example, by playing with ideals in Sage (code is complicated though...), I quickly got into this situation:\n\n```\nsage: n0\n[11, 3; 0, 1]\nsage: n1\n[11, 3; 0, 1]\nsage: hash(n0)\n-7493989779944505307\nsage: hash(n1)\n-6341068275337658331\n```\n",
+    "created_at": "2011-07-29T20:19:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9667",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9667#issuecomment-93860",
+    "user": "was"
+}
+```
 
 Hi,
 
@@ -72,18 +165,40 @@ sage: hash(n1)
 
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-08-01 10:03:18
+archive/issue_comments_093861.json:
+```json
+{
+    "body": "Replying to [comment:5 was]:\n> For the record, this change introduced a major bug into Sage, because PARI's hash_GEN is itself buggy.\nSee #11611, I have not tracked it down precisely.",
+    "created_at": "2011-08-01T10:03:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9667",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9667#issuecomment-93861",
+    "user": "jdemeyer"
+}
+```
 
 Replying to [comment:5 was]:
 > For the record, this change introduced a major bug into Sage, because PARI's hash_GEN is itself buggy.
 See #11611, I have not tracked it down precisely.
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-08-03 13:35:49
+archive/issue_comments_093862.json:
+```json
+{
+    "body": "Replying to [comment:5 was]:\n> Hi,\n> \n> For the record, this change introduced a major bug into Sage, because PARI's hash_GEN is itself buggy.\nDon't blaim PARI when the fault is the Sage->PARI interface. The issue is not `hash_GEN()`, it is a problem with how integers are converted from Sage to PARI.  I have a patch for this issue at #11611.",
+    "created_at": "2011-08-03T13:35:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9667",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9667#issuecomment-93862",
+    "user": "jdemeyer"
+}
+```
 
 Replying to [comment:5 was]:
 > Hi,

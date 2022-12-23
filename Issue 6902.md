@@ -1,11 +1,21 @@
 # Issue 6902: log(x) is typeset as \ln x
 
-Issue created by migration from https://trac.sagemath.org/ticket/6902
-
-Original creator: burcin
-
-Original creation time: 2009-09-07 19:05:26
-
+archive/issues_006902.json:
+```json
+{
+    "body": "\n```\nsage: log(x)\nlog(x)\nsage: latex(log(x))\n\\ln\\left(x\\right)\n```\n\n\nWe should switch back to `\\log`. See this thread:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/dc6530a2071bd6db\n\nIssue created by migration from https://trac.sagemath.org/ticket/6902\n\n",
+    "created_at": "2009-09-07T19:05:26Z",
+    "labels": [
+        "symbolics",
+        "major",
+        "bug"
+    ],
+    "title": "log(x) is typeset as \\ln x",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6902",
+    "user": "burcin"
+}
+```
 
 ```
 sage: log(x)
@@ -19,22 +29,61 @@ We should switch back to `\log`. See this thread:
 
 http://groups.google.com/group/sage-devel/browse_thread/thread/dc6530a2071bd6db
 
+Issue created by migration from https://trac.sagemath.org/ticket/6902
+
+
+
+
 
 ---
 
-Comment by burcin created at 2009-09-19 15:11:41
+archive/issue_comments_057015.json:
+```json
+{
+    "body": "Set assignee to burcin.",
+    "created_at": "2009-09-19T15:11:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6902",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6902#issuecomment-57015",
+    "user": "burcin"
+}
+```
 
 Set assignee to burcin.
 
 
+
 ---
 
-Comment by burcin created at 2009-09-19 15:11:41
+archive/issue_comments_057016.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-09-19T15:11:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6902",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6902#issuecomment-57016",
+    "user": "burcin"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
+
+archive/issue_comments_057017.json:
+```json
+{
+    "body": "Attachment\n\nThis is fixed in my pynac tree. Doctest for Sage is in attachment:trac_6902-log_latex.patch.\n\nI will post a new pynac spkg and review instructions soon.",
+    "created_at": "2009-09-19T15:11:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6902",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6902#issuecomment-57017",
+    "user": "burcin"
+}
+```
 
 Attachment
 
@@ -43,29 +92,73 @@ This is fixed in my pynac tree. Doctest for Sage is in attachment:trac_6902-log_
 I will post a new pynac spkg and review instructions soon.
 
 
+
 ---
 
-Comment by burcin created at 2009-09-22 19:28:15
+archive/issue_comments_057018.json:
+```json
+{
+    "body": "New pynac package available at #6993.",
+    "created_at": "2009-09-22T19:28:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6902",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6902#issuecomment-57018",
+    "user": "burcin"
+}
+```
 
 New pynac package available at #6993.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-09-23 02:35:33
+archive/issue_comments_057019.json:
+```json
+{
+    "body": "This works.  Pending of course review of new Pynac as a whole.",
+    "created_at": "2009-09-23T02:35:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6902",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6902#issuecomment-57019",
+    "user": "kcrisman"
+}
+```
 
 This works.  Pending of course review of new Pynac as a whole.
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-25 22:44:59
+archive/issue_comments_057020.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-09-25T22:44:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6902",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6902#issuecomment-57020",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-27 10:39:40
+archive/issue_comments_057021.json:
+```json
+{
+    "body": "There is no 4.1.2.alpha3. Sage 4.1.2.alpha3 was William Stein's release for working on making the notebook a standalone package.",
+    "created_at": "2009-09-27T10:39:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6902",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6902#issuecomment-57021",
+    "user": "mvngu"
+}
+```
 
 There is no 4.1.2.alpha3. Sage 4.1.2.alpha3 was William Stein's release for working on making the notebook a standalone package.

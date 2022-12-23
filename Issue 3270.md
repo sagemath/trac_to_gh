@@ -1,11 +1,21 @@
 # Issue 3270: [with patch, easy review] trivial 100x speedup in coding theory
 
-Issue created by migration from https://trac.sagemath.org/ticket/3270
-
-Original creator: rlm
-
-Original creation time: 2008-05-22 00:26:04
-
+archive/issues_003270.json:
+```json
+{
+    "body": "Assignee: rlm\n\nCC:  wdj\n\nWas:\n\n```\nsage: C = ExtendedBinaryGolayCode()\nsage: time G = C.permutation_automorphism_group()\nCPU times: user 2.39 s, sys: 0.58 s, total: 2.97 s\nWall time: 24.32\n```\n\nNow:\n\n```\nsage: C = ExtendedBinaryGolayCode()\nsage: time G = C.permutation_automorphism_group()\nCPU times: user 0.19 s, sys: 0.04 s, total: 0.23 s\nWall time: 0.24\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3270\n\n",
+    "created_at": "2008-05-22T00:26:04Z",
+    "labels": [
+        "coding theory",
+        "minor",
+        "bug"
+    ],
+    "title": "[with patch, easy review] trivial 100x speedup in coding theory",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3270",
+    "user": "rlm"
+}
+```
 Assignee: rlm
 
 CC:  wdj
@@ -29,23 +39,62 @@ Wall time: 0.24
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3270
+
+
+
+
 
 ---
+
+archive/issue_comments_022636.json:
+```json
+{
+    "body": "Attachment\n\nLooks good to me.",
+    "created_at": "2008-05-22T09:16:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3270",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3270#issuecomment-22636",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 Looks good to me.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-22 10:36:46
+archive/issue_comments_022637.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-05-22T10:36:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3270",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3270#issuecomment-22637",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-22 10:36:46
+archive/issue_comments_022638.json:
+```json
+{
+    "body": "Merged in Sage 3.0.2.rc0",
+    "created_at": "2008-05-22T10:36:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3270",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3270#issuecomment-22638",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.2.rc0

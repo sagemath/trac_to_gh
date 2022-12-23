@@ -1,11 +1,21 @@
 # Issue 5723: sage new symbolics/pynac misbehave when evaluating with CDF elements
 
-Issue created by migration from https://trac.sagemath.org/ticket/5723
-
-Original creator: ncalexan
-
-Original creation time: 2009-04-09 03:10:51
-
+archive/issues_005723.json:
+```json
+{
+    "body": "Keywords: sage symbolics pynac evaluating n CDF\n\n\n```\nsage: u0 = var('u0', ns=1)\nsage: sage.symbolic.function.function('f')(u0).subs(u0=CDF.0).n()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/ncalexan/.sage/temp/pv139196.reshsg.uci.edu/33117/_Users_ncalexan_sage_3_4_rc0_devel_sage_sage_symbolic_test_sage_23.py in <module>()\n\n/Users/ncalexan/sage-3.4.rc0/local/lib/python2.5/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.n (sage/symbolic/expression.cpp:6498)()\n\n/Users/ncalexan/sage-3.4.rc0/local/lib/python2.5/site-packages/sage/symbolic/pynac.so in sage.symbolic.pynac.py_float (sage/symbolic/pynac.cpp:3959)()\n\n/Users/ncalexan/sage-3.4.rc0/local/lib/python2.5/site-packages/sage/rings/complex_double.so in sage.rings.complex_double.ComplexDoubleElement.__float__ (sage/rings/complex_double.c:5799)()\n\nTypeError: can't convert complex to float; use abs(z)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5723\n\n",
+    "created_at": "2009-04-09T03:10:51Z",
+    "labels": [
+        "symbolics",
+        "major",
+        "bug"
+    ],
+    "title": "sage new symbolics/pynac misbehave when evaluating with CDF elements",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5723",
+    "user": "ncalexan"
+}
+```
 Keywords: sage symbolics pynac evaluating n CDF
 
 
@@ -27,38 +37,99 @@ TypeError: can't convert complex to float; use abs(z)
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5723
+
+
+
+
 
 ---
 
-Comment by burcin created at 2009-04-13 16:12:55
+archive/issue_comments_044719.json:
+```json
+{
+    "body": "add doctest",
+    "created_at": "2009-04-13T16:12:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5723",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5723#issuecomment-44719",
+    "user": "burcin"
+}
+```
 
 add doctest
 
 
+
 ---
+
+archive/issue_comments_044720.json:
+```json
+{
+    "body": "Attachment\n\nThis is fixed with the changes in #5777, attached patch adds the doctest to sage/symbolic/function.pyx.",
+    "created_at": "2009-04-13T16:14:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5723",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5723#issuecomment-44720",
+    "user": "burcin"
+}
+```
 
 Attachment
 
 This is fixed with the changes in #5777, attached patch adds the doctest to sage/symbolic/function.pyx.
 
 
+
 ---
 
-Comment by burcin created at 2009-04-13 16:14:55
+archive/issue_comments_044721.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-04-13T16:14:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5723",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5723#issuecomment-44721",
+    "user": "burcin"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by burcin created at 2009-04-13 16:14:55
+archive/issue_comments_044722.json:
+```json
+{
+    "body": "Set assignee to burcin.",
+    "created_at": "2009-04-13T16:14:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5723",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5723#issuecomment-44722",
+    "user": "burcin"
+}
+```
 
 Set assignee to burcin.
 
 
+
 ---
 
-Comment by jason created at 2009-05-30 07:11:34
+archive/issue_comments_044723.json:
+```json
+{
+    "body": "I get a failure for this doctest in 4.0.  Burcin, could you look at this again?\n\n\n```\nsage -t  \"devel/sage-main/sage/symbolic/function.pyx\"       \n**********************************************************************\nFile \"/home/jason/sage/devel/sage-main/sage/symbolic/function.pyx\", line 19:\n    sage: sage.symbolic.function.function('f')(u0).subs(u0=CDF.0).n()\nException raised:\n    Traceback (most recent call last):\n      File \"/home/jason/sage/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/jason/sage/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/jason/sage/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[3]>\", line 1, in <module>\n        sage.symbolic.function.function('f')(u0).subs(u0=CDF.gen(0)).n()###line 19:\n    sage: sage.symbolic.function.function('f')(u0).subs(u0=CDF.0).n()\n      File \"expression.pyx\", line 3211, in sage.symbolic.expression.Expression.n (sage/symbolic/expression.cpp:15832)\n        x = new_Expression_from_GEx(self._parent, self._gobj.evalf(0, prec)).pyobject()\n      File \"expression.pyx\", line 199, in sage.symbolic.expression.Expression.pyobject (sage/symbolic/expression.cpp:2637)\n        raise TypeError, \"self must be a numeric expression\"\n    TypeError: self must be a numeric expression\n**********************************************************************\n1 items had failures:\n   1 of   4 in __main__.example_0\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/jason/sage/tmp/.doctest_function.py\n\t [2.0 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  \"devel/sage-main/sage/symbolic/function.pyx\"\nTotal time for all tests: 2.0 seconds\n```\n",
+    "created_at": "2009-05-30T07:11:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5723",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5723#issuecomment-44723",
+    "user": "jason"
+}
+```
 
 I get a failure for this doctest in 4.0.  Burcin, could you look at this again?
 
@@ -102,9 +173,20 @@ Total time for all tests: 2.0 seconds
 
 
 
+
 ---
 
-Comment by was created at 2009-05-30 13:45:49
+archive/issue_comments_044724.json:
+```json
+{
+    "body": "Wait.  \n\n```\nsage: u0 = var('u0', ns=1)\nsage: sage.symbolic.function.function('f')(u0).subs(u0=CDF.0).n()\n```\n\nWhy should the last line ever work?  You're taking f(I) for formal f and asking to give back a specific number.  That *should* always result in an error.  This ticket looks invalid to me.",
+    "created_at": "2009-05-30T13:45:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5723",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5723#issuecomment-44724",
+    "user": "was"
+}
+```
 
 Wait.  
 
@@ -116,9 +198,20 @@ sage: sage.symbolic.function.function('f')(u0).subs(u0=CDF.0).n()
 Why should the last line ever work?  You're taking f(I) for formal f and asking to give back a specific number.  That *should* always result in an error.  This ticket looks invalid to me.
 
 
+
 ---
 
-Comment by mhansen created at 2009-06-05 02:33:58
+archive/issue_comments_044725.json:
+```json
+{
+    "body": "This now gives\n\n\n```\nsage: function('f')(u0).subs(u0=CDF.0).n()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/mhansen/.sage/temp/sage.math.washington.edu/3525/_home_mhansen__sage_init_sage_0.py in <module>()\n\n/scratch/mhansen/release/4.0.1/rc1/sage-4.0.1.rc1/local/lib/python2.5/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.n (sage/symbolic/expression.cpp:15832)()\n\n/scratch/mhansen/release/4.0.1/rc1/sage-4.0.1.rc1/local/lib/python2.5/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.pyobject (sage/symbolic/expression.cpp:2637)()\n\nTypeError: self must be a numeric expression\n```\n\n\nNick, do you think we can close this?",
+    "created_at": "2009-06-05T02:33:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5723",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5723#issuecomment-44725",
+    "user": "mhansen"
+}
+```
 
 This now gives
 
@@ -141,15 +234,37 @@ TypeError: self must be a numeric expression
 Nick, do you think we can close this?
 
 
+
 ---
 
-Comment by ncalexan created at 2009-06-05 02:43:55
+archive/issue_comments_044726.json:
+```json
+{
+    "body": "Fine by me.",
+    "created_at": "2009-06-05T02:43:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5723",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5723#issuecomment-44726",
+    "user": "ncalexan"
+}
+```
 
 Fine by me.
 
 
+
 ---
 
-Comment by mhansen created at 2009-06-05 02:49:36
+archive/issue_comments_044727.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2009-06-05T02:49:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5723",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5723#issuecomment-44727",
+    "user": "mhansen"
+}
+```
 
 Resolution: invalid

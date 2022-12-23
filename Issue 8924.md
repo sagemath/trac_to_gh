@@ -1,11 +1,21 @@
 # Issue 8924: Comparison between Sage and mpmath numbers is broken
 
-Issue created by migration from https://trac.sagemath.org/ticket/8924
-
-Original creator: fredrik.johansson
-
-Original creation time: 2010-05-07 19:23:24
-
+archive/issues_008924.json:
+```json
+{
+    "body": "Assignee: AlexGhitza\n\nComparison between Sage and mpmath numbers works with mpmath numbers on the left, but not on the right:\n\n\n```\nsage: mpmath.mpf(1) < 3\nTrue\nsage: 1 < mpmath.mpf(3)\nFalse\nsage: 4 == mpmath.mpf(4)\nFalse\n```\n\n\nFound by Harald Schilly (see #8791).\n\nThis appears to be a bug in Sage (or Cython). Sage's numbers do the pure-Python equivalent of not returning NotImplemented when compared to unrecognized types. For a minimal example:\n\n\n```\nsage: class X(object):\n....:         def __init__(self, v): self.v = v\n....:     def __lt__(self, other): return self.v < int(other)\n....:     def __gt__(self, other): return self.v > int(other)\n....:\nsage: X(1) < 3\nTrue\nsage: 1 < X(3)\nFalse\nsage: X(1) < int(3)\nTrue\nsage: int(1) < X(3)\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8924\n\n",
+    "created_at": "2010-05-07T19:23:24Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "bug"
+    ],
+    "title": "Comparison between Sage and mpmath numbers is broken",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8924",
+    "user": "fredrik.johansson"
+}
+```
 Assignee: AlexGhitza
 
 Comparison between Sage and mpmath numbers works with mpmath numbers on the left, but not on the right:
@@ -43,44 +53,114 @@ True
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8924
+
+
+
+
 
 ---
 
-Comment by mkoeppe created at 2016-08-15 17:54:44
+archive/issue_comments_082211.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2016-08-15T17:54:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8924",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8924#issuecomment-82211",
+    "user": "mkoeppe"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mkoeppe created at 2016-08-15 17:54:44
+archive/issue_comments_082212.json:
+```json
+{
+    "body": "The tests from the description work as of 7.4.beta0.",
+    "created_at": "2016-08-15T17:54:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8924",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8924#issuecomment-82212",
+    "user": "mkoeppe"
+}
+```
 
 The tests from the description work as of 7.4.beta0.
 
 
+
 ---
 
-Comment by jdemeyer created at 2016-08-15 17:59:56
+archive/issue_comments_082213.json:
+```json
+{
+    "body": "I think this is fixed by #21163.",
+    "created_at": "2016-08-15T17:59:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8924",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8924#issuecomment-82213",
+    "user": "jdemeyer"
+}
+```
 
 I think this is fixed by #21163.
 
 
+
 ---
 
-Comment by jdemeyer created at 2016-08-15 17:59:56
+archive/issue_comments_082214.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2016-08-15T17:59:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8924",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8924#issuecomment-82214",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by embray created at 2016-08-30 13:32:25
+archive/issue_comments_082215.json:
+```json
+{
+    "body": "Resolution: wontfix",
+    "created_at": "2016-08-30T13:32:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8924",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8924#issuecomment-82215",
+    "user": "embray"
+}
+```
 
 Resolution: wontfix
 
 
+
 ---
 
-Comment by embray created at 2016-08-30 13:32:25
+archive/issue_comments_082216.json:
+```json
+{
+    "body": "Determined to be invalid/duplicate/wontfix (closing as \"wontfix\" as a catch-all resolution).",
+    "created_at": "2016-08-30T13:32:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8924",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8924#issuecomment-82216",
+    "user": "embray"
+}
+```
 
 Determined to be invalid/duplicate/wontfix (closing as "wontfix" as a catch-all resolution).

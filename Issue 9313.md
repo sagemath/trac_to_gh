@@ -1,64 +1,157 @@
 # Issue 9313: delete padic_height.py
 
-Issue created by migration from https://trac.sagemath.org/ticket/9313
-
-Original creator: wuthrich
-
-Original creation time: 2010-06-22 17:11:36
-
+archive/issues_009313.json:
+```json
+{
+    "body": "Assignee: cremona\n\nCC:  wstein\n\nThis file, implementing an interface for the p-adic height computation in MAGMA, is deprecated for a long time and no one is using it any more. This should be deleted now.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9313\n\n",
+    "created_at": "2010-06-22T17:11:36Z",
+    "labels": [
+        "elliptic curves",
+        "minor",
+        "bug"
+    ],
+    "title": "delete padic_height.py",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9313",
+    "user": "wuthrich"
+}
+```
 Assignee: cremona
 
 CC:  wstein
 
 This file, implementing an interface for the p-adic height computation in MAGMA, is deprecated for a long time and no one is using it any more. This should be deleted now.
 
+Issue created by migration from https://trac.sagemath.org/ticket/9313
+
+
+
+
 
 ---
 
-Comment by davidloeffler created at 2010-06-29 09:16:01
+archive/issue_comments_087740.json:
+```json
+{
+    "body": "patch against 4.4.4",
+    "created_at": "2010-06-29T09:16:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9313",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9313#issuecomment-87740",
+    "user": "davidloeffler"
+}
+```
 
 patch against 4.4.4
 
 
+
 ---
 
-Comment by davidloeffler created at 2010-06-29 09:16:25
+archive/issue_comments_087741.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-06-29T09:16:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9313",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9313#issuecomment-87741",
+    "user": "davidloeffler"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_087742.json:
+```json
+{
+    "body": "Attachment\n\nHere's a patch.",
+    "created_at": "2010-06-29T09:16:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9313",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9313#issuecomment-87742",
+    "user": "davidloeffler"
+}
+```
 
 Attachment
 
 Here's a patch.
 
 
+
 ---
 
-Comment by weigandt created at 2010-06-30 03:25:14
+archive/issue_comments_087743.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-06-30T03:25:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9313",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9313#issuecomment-87743",
+    "user": "weigandt"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by weigandt created at 2010-06-30 03:25:14
+archive/issue_comments_087744.json:
+```json
+{
+    "body": "Looks fine. Doctests check out.",
+    "created_at": "2010-06-30T03:25:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9313",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9313#issuecomment-87744",
+    "user": "weigandt"
+}
+```
 
 Looks fine. Doctests check out.
 
 
+
 ---
 
-Comment by wuthrich created at 2010-06-30 04:02:36
+archive/issue_comments_087745.json:
+```json
+{
+    "body": "Agree (though I have not run the tests). Moreover I can confirm that the author, William Stein, is happy that this is deleted.\n\nThanks, Jamie and David.",
+    "created_at": "2010-06-30T04:02:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9313",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9313#issuecomment-87745",
+    "user": "wuthrich"
+}
+```
 
 Agree (though I have not run the tests). Moreover I can confirm that the author, William Stein, is happy that this is deleted.
 
 Thanks, Jamie and David.
 
 
+
 ---
 
-Comment by mpatel created at 2010-07-20 07:18:07
+archive/issue_comments_087746.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-07-20T07:18:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9313",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9313#issuecomment-87746",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed

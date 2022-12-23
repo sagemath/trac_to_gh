@@ -1,11 +1,21 @@
 # Issue 9397: Resolve corrupted patches to permit Singular to build on Solaris x86/x64
 
-Issue created by migration from https://trac.sagemath.org/ticket/9397
-
-Original creator: drkirkby
-
-Original creation time: 2010-06-30 18:02:47
-
+archive/issues_009397.json:
+```json
+{
+    "body": "Assignee: GeorgSWeber\n\nSingular will not build on Solaris or OpenSolaris with x86/x64 processors, nor will it build 64-bit Solaris x64 with SPARC processors.\n\nThere are two different reasons for the two different problems, but they are both addressed by this patch. \n\n## Problem No. 1 Poor patching practice prevents Solaris or OpenSolaris x86/x64 builds\n\nThe first only affects x86/x64 hardware. The second affects \n\nOne patch added the following few lines to a file \n\n```\nifeq ($(SINGUNAME),ix86-SunOS)\nSO_SUFFIX  = so\nLIBSINGULAR_FLAGS = -shared\nLIBSINGULAR_LIBS = -lsingfac -lsingcf -lntl -lreadline -lgmp lomalloc\nendif\n```\n \n\nbut those changes subsequently got overwritten by a latter patch. An inspection of spkg-install in Singular shows the file `src/Singular/Makefile.in` being overwritten twice. See below. \n\n\n```\npatch()\n{\n    # work-around patches\n    cp patches/mminit.cc src/kernel/\n    cp patches/assert.h src/factory/\n    cp patches/kernel.rmodulon.cc src/kernel/rmodulon.cc\n    cp patches/src.Singular.Makefile.in src/Singular/Makefile.in # FIRST\n    cp patches/Singular.libsingular.h src/Singular/libsingular.h\n    cp patches/factory.GNUmakefile.in src/factory/GNUmakefile.in\n    cp patches/libfac.charset.alg_factor.cc src/libfac/charset/alg_factor.cc\n    cp patches/kernel.Makefile.in src/kernel/Makefile.in\n    cp patches/Singular.Makefile.in src/Singular/Makefile.in # OVERWRITES FIRST\n    cp patches/Singular.tesths.cc src/Singular/tesths.cc\n\n    if [ \"$UNAME\" = \"CYGWIN\" ]; then\n        # Fine to make this patch on any system, because it is code that is only compiled on Windows.\n        cp patches/sing_win.cc src/Singular/\n        cp patches/IntegerProgramming-Makefile.in src/IntegerProgramming/Makefile.in\n    fi\n\n    #cp patches/Singular.configure src/Singular/configure\n    #cp patches/Singular.configure.in src/Singular/configure.in\n}\n```\n\n\nRemoving the target `ix86-SunOS` would stop any build on Solaris or OpenSolaris with x86/x64 hardware, but would not affect SPARC builds at all. \n\n## Problem No. 2 Compiler flag -m64 not propagating properly throughout the Singular build process\n\ndding the compiler flag -m64 was not sufficient to permit Singular to build fully 64-bit, as part of it failed with:\n\n```\nmake[1]: Entering directory \n`/export/home/drkirkby/clean/sage-4.5.alpha0/spkg/build/singular-3.1.0.4.p8/src/Singular'\ng++ -O2 -g -m64 -fPIC -pipe -I. -I../kernel \n-I/export/home/drkirkby/clean/sage-4.5.alpha0/local/include \n-I/export/home/drkirkby/clean/sage-4.5.alpha0/local/include \n-I/export/home/drkirkby/clean/sage-4.5.alpha0/local/include -O2 -g -m64 \n-fno-implicit-templates -DNDEBUG -DOM_NDEBUG -Dix86_SunOS -DHAVE_CONFIG_H \n-DLIBSINGULAR \\\n\t   -o libsingular-tesths.o \\\n           -c tesths.cc\ng++   -o libsingular.so \\\n\tlibsingular-tesths.o iparith.o mpsr_Tok.o claptmpl.o \\\n\tgrammar.o scanner.o attrib.o eigenval_ip.o extra.o fehelp.o feOpt.o \nipassign.o \nipconv.o ipid.o iplib.o ipprint.o ipshell.o lists.o sdb.o fglm.o \ninterpolation.o \nsilink.o subexpr.o janet.o wrapper.o libparse.o sing_win.o gms.o pcv.o \nmaps_ip.o \nwalk.o walk_ip.o cntrlc.o misc.o calcSVD.o  slInit_Static.o mpsr_Put.o \nmpsr_PutPoly.o mpsr_GetPoly.o mpsr_sl.o mpsr_Get.o mpsr_GetMisc.o mpsr_Error.o \nndbm.o sing_dbm.o -lkernel -L../kernel -L../factory -L../libfac \n-L/export/home/drkirkby/clean/sage-4.5.alpha0/local/lib -lsingfac -lsingcf -\nlntl \n-lreadline -lgmp -lomalloc\nld: fatal: file libsingular-tesths.o: wrong ELF class: ELFCLASS64\nld: fatal: file processing errors. No output written to libsingular.so\n```\n\n\nNote how the first line has the -m64 flag, but the second line does not - this is despite -m64 being in both CFLAGS and CXXFLAGS. I discovered that using \n\n {{{\nCC=\"gcc -m64\"\nCXX=\"g++ -m64\"\nexport CC\nexport CXX\n }}}\n\nsolved the problem. After sending this to the Singular mailing list, I got a response from Hans Schoenemann, one of the developers saying \"That's the right way.\"\n\n\n\nHence the patch which will be attached later does two things. \n* Resolves the mess created by two patches patching the same file. \n* Ensure the compilers really are called with the -m64 flag.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9397\n\n",
+    "created_at": "2010-06-30T18:02:47Z",
+    "labels": [
+        "build",
+        "major",
+        "bug"
+    ],
+    "title": "Resolve corrupted patches to permit Singular to build on Solaris x86/x64",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9397",
+    "user": "drkirkby"
+}
+```
 Assignee: GeorgSWeber
 
 Singular will not build on Solaris or OpenSolaris with x86/x64 processors, nor will it build 64-bit Solaris x64 with SPARC processors.
@@ -24,11 +34,13 @@ SO_SUFFIX  = so
 LIBSINGULAR_FLAGS = -shared
 LIBSINGULAR_LIBS = -lsingfac -lsingcf -lntl -lreadline -lgmp lomalloc
 endif
-}}} 
+```
+ 
 
 but those changes subsequently got overwritten by a latter patch. An inspection of spkg-install in Singular shows the file `src/Singular/Makefile.in` being overwritten twice. See below. 
 
-{{{
+
+```
 patch()
 {
     # work-around patches
@@ -52,14 +64,16 @@ patch()
     #cp patches/Singular.configure src/Singular/configure
     #cp patches/Singular.configure.in src/Singular/configure.in
 }
-}}}
+```
 
-Removing the target `ix86-SunOS` would stop any build on Solaris or !OpenSolaris with x86/x64 hardware, but would not affect SPARC builds at all. 
+
+Removing the target `ix86-SunOS` would stop any build on Solaris or OpenSolaris with x86/x64 hardware, but would not affect SPARC builds at all. 
 
 ## Problem No. 2 Compiler flag -m64 not propagating properly throughout the Singular build process
 
 dding the compiler flag -m64 was not sufficient to permit Singular to build fully 64-bit, as part of it failed with:
-{{{
+
+```
 make[1]: Entering directory 
 `/export/home/drkirkby/clean/sage-4.5.alpha0/spkg/build/singular-3.1.0.4.p8/src/Singular'
 g++ -O2 -g -m64 -fPIC -pipe -I. -I../kernel 
@@ -86,7 +100,8 @@ lntl
 -lreadline -lgmp -lomalloc
 ld: fatal: file libsingular-tesths.o: wrong ELF class: ELFCLASS64
 ld: fatal: file processing errors. No output written to libsingular.so
-}}}
+```
+
 
 Note how the first line has the -m64 flag, but the second line does not - this is despite -m64 being in both CFLAGS and CXXFLAGS. I discovered that using 
 
@@ -102,64 +117,155 @@ solved the problem. After sending this to the Singular mailing list, I got a res
 
 
 Hence the patch which will be attached later does two things. 
- * Resolves the mess created by two patches patching the same file. 
- * Ensure the compilers really are called with the -m64 flag.
+* Resolves the mess created by two patches patching the same file. 
+* Ensure the compilers really are called with the -m64 flag.
+
+Issue created by migration from https://trac.sagemath.org/ticket/9397
+
+
+
 
 
 ---
+
+archive/issue_comments_089499.json:
+```json
+{
+    "body": "Attachment\n\nCompressed build log on a 64-bit SPARC running Solaris 10, with Sage built 64-bit",
+    "created_at": "2010-06-30T21:44:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9397",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9397#issuecomment-89499",
+    "user": "drkirkby"
+}
+```
 
 Attachment
 
 Compressed build log on a 64-bit SPARC running Solaris 10, with Sage built 64-bit
 
 
+
 ---
 
-Comment by drkirkby created at 2010-06-30 21:45:16
+archive/issue_comments_089500.json:
+```json
+{
+    "body": "Compressed build log on a 64-bit SPARC running Solaris 10, with Sage built 32-bit",
+    "created_at": "2010-06-30T21:45:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9397",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9397#issuecomment-89500",
+    "user": "drkirkby"
+}
+```
 
 Compressed build log on a 64-bit SPARC running Solaris 10, with Sage built 32-bit
 
 
+
 ---
+
+archive/issue_comments_089501.json:
+```json
+{
+    "body": "Attachment\n\nCompressed build log on a MacPro 1 running OS X 10.6.4. Default 64-bit build",
+    "created_at": "2010-06-30T21:46:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9397",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9397#issuecomment-89501",
+    "user": "drkirkby"
+}
+```
 
 Attachment
 
 Compressed build log on a MacPro 1 running OS X 10.6.4. Default 64-bit build
 
 
+
 ---
+
+archive/issue_comments_089502.json:
+```json
+{
+    "body": "Attachment\n\nCompressed build log on a Sun Fire X4450 server running Ubuntu 8.04.4 Linux",
+    "created_at": "2010-06-30T21:49:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9397",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9397#issuecomment-89502",
+    "user": "drkirkby"
+}
+```
 
 Attachment
 
 Compressed build log on a Sun Fire X4450 server running Ubuntu 8.04.4 Linux
 
 
+
 ---
+
+archive/issue_comments_089503.json:
+```json
+{
+    "body": "Attachment\n\nCompressed build log on a Sun Ultra 27 (Xeon processor) running Solaris 10 06/2009. SAGE64=yes, so a 64-bit build",
+    "created_at": "2010-06-30T21:50:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9397",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9397#issuecomment-89503",
+    "user": "drkirkby"
+}
+```
 
 Attachment
 
 Compressed build log on a Sun Ultra 27 (Xeon processor) running Solaris 10 06/2009. SAGE64=yes, so a 64-bit build
 
 
+
 ---
+
+archive/issue_comments_089504.json:
+```json
+{
+    "body": "Attachment\n\nMercurial patch to sort out the mess of the Singular patches overwriting patches",
+    "created_at": "2010-06-30T21:53:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9397",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9397#issuecomment-89504",
+    "user": "drkirkby"
+}
+```
 
 Attachment
 
 Mercurial patch to sort out the mess of the Singular patches overwriting patches
 
 
+
 ---
 
-Comment by drkirkby created at 2010-06-30 21:58:26
+archive/issue_comments_089505.json:
+```json
+{
+    "body": "I've made the changes and tested this on a number of systems. On the Sun Blade 1000 running Solaris 10, it has been tested as both the default 32-bit build, but also as a 64-bit build. \n\nThe build logs attached show this working on\n* Linux (sage.math) Default 64-bit build\n* OS X (bsd.math) Default 64-bit build\n* OpenSolaris 06/2009 on an Intel Xeon processors. Forced a 64-bit build \n* Solaris 10. SPARC processor. Default 32-bit build\n* Solaris 10. SPARC processor. Forced a 64-bit build with SAGE64=yes\n\nThe package may be found at \n\nhttp://boxen.math.washington.edu/home/kirkby/patches/singular-3.1.0.4.p8.spkg\n\nDave",
+    "created_at": "2010-06-30T21:58:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9397",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9397#issuecomment-89505",
+    "user": "drkirkby"
+}
+```
 
 I've made the changes and tested this on a number of systems. On the Sun Blade 1000 running Solaris 10, it has been tested as both the default 32-bit build, but also as a 64-bit build. 
 
 The build logs attached show this working on
- * Linux (sage.math) Default 64-bit build
- * OS X (bsd.math) Default 64-bit build
- * OpenSolaris 06/2009 on an Intel Xeon processors. Forced a 64-bit build 
- * Solaris 10. SPARC processor. Default 32-bit build
- * Solaris 10. SPARC processor. Forced a 64-bit build with SAGE64=yes
+* Linux (sage.math) Default 64-bit build
+* OS X (bsd.math) Default 64-bit build
+* OpenSolaris 06/2009 on an Intel Xeon processors. Forced a 64-bit build 
+* Solaris 10. SPARC processor. Default 32-bit build
+* Solaris 10. SPARC processor. Forced a 64-bit build with SAGE64=yes
 
 The package may be found at 
 
@@ -168,23 +274,56 @@ http://boxen.math.washington.edu/home/kirkby/patches/singular-3.1.0.4.p8.spkg
 Dave
 
 
+
 ---
 
-Comment by drkirkby created at 2010-06-30 21:58:26
+archive/issue_comments_089506.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-06-30T21:58:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9397",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9397#issuecomment-89506",
+    "user": "drkirkby"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-07-24 23:15:53
+archive/issue_comments_089507.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_info.",
+    "created_at": "2010-07-24T23:15:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9397",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9397#issuecomment-89507",
+    "user": "drkirkby"
+}
+```
 
 Changing status from needs_review to needs_info.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-07-24 23:15:53
+archive/issue_comments_089508.json:
+```json
+{
+    "body": "This should now be fixed when a later Singular is committed, which already has positive review at #8059. So I'm setting this back to 'needs info' to save someone a wasted effort in reviewing this. \n\n## Note to the release manager\nThis ticket can be closed when the updated Singular at #8059 is merged. \n\nDave",
+    "created_at": "2010-07-24T23:15:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9397",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9397#issuecomment-89508",
+    "user": "drkirkby"
+}
+```
 
 This should now be fixed when a later Singular is committed, which already has positive review at #8059. So I'm setting this back to 'needs info' to save someone a wasted effort in reviewing this. 
 
@@ -194,23 +333,56 @@ This ticket can be closed when the updated Singular at #8059 is merged.
 Dave
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-08-03 03:23:11
+archive/issue_comments_089509.json:
+```json
+{
+    "body": "For what it's worth, this has worked successfully on every Solaris machine I've tried it on, and it's worked where the previous version of singular didn't.  (I haven't used the spkg from #8059 because this also requires a change to the Sage library.)  I haven't tested this one very systematically, and I haven't tested it at all on non-Solaris machines.  But if there isn't movement on #8059, this one might be ready to go instead.",
+    "created_at": "2010-08-03T03:23:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9397",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9397#issuecomment-89509",
+    "user": "jhpalmieri"
+}
+```
 
 For what it's worth, this has worked successfully on every Solaris machine I've tried it on, and it's worked where the previous version of singular didn't.  (I haven't used the spkg from #8059 because this also requires a change to the Sage library.)  I haven't tested this one very systematically, and I haven't tested it at all on non-Solaris machines.  But if there isn't movement on #8059, this one might be ready to go instead.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-08-03 04:15:52
+archive/issue_comments_089510.json:
+```json
+{
+    "body": "Changing status from needs_info to needs_review.",
+    "created_at": "2010-08-03T04:15:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9397",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9397#issuecomment-89510",
+    "user": "drkirkby"
+}
+```
 
 Changing status from needs_info to needs_review.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-08-03 04:15:52
+archive/issue_comments_089511.json:
+```json
+{
+    "body": "I'm going to put this back to needs review. \n\nI think this is only going to have an effect when SAGE64 is yes. The big patch I removed, which added Solaris x86 support, was not doing anything since a later patch had overwritten it. \n\nSo I think this is pretty safe. I tested it on OS X and Unbunta, and have attached the logs of it building on there.",
+    "created_at": "2010-08-03T04:15:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9397",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9397#issuecomment-89511",
+    "user": "drkirkby"
+}
+```
 
 I'm going to put this back to needs review. 
 
@@ -219,9 +391,20 @@ I think this is only going to have an effect when SAGE64 is yes. The big patch I
 So I think this is pretty safe. I tested it on OS X and Unbunta, and have attached the logs of it building on there.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-08-03 04:19:08
+archive/issue_comments_089512.json:
+```json
+{
+    "body": "I should have perhaps clarified something here. Although I wrote 9 days ago that #8059 had positive review, that has now been removed, as it was causing problems. \n\nSo this is now up for review. \n\nDave",
+    "created_at": "2010-08-03T04:19:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9397",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9397#issuecomment-89512",
+    "user": "drkirkby"
+}
+```
 
 I should have perhaps clarified something here. Although I wrote 9 days ago that #8059 had positive review, that has now been removed, as it was causing problems. 
 
@@ -230,31 +413,75 @@ So this is now up for review.
 Dave
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-08-16 21:49:27
+archive/issue_comments_089513.json:
+```json
+{
+    "body": "Since #8059 has been merged, I think this can be closed now.  Or do you want to wait until 4.5.3 is officially released, not just in alpha versions?",
+    "created_at": "2010-08-16T21:49:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9397",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9397#issuecomment-89513",
+    "user": "jhpalmieri"
+}
+```
 
 Since #8059 has been merged, I think this can be closed now.  Or do you want to wait until 4.5.3 is officially released, not just in alpha versions?
 
 
+
 ---
 
-Comment by drkirkby created at 2010-08-16 22:14:22
+archive/issue_comments_089514.json:
+```json
+{
+    "body": "I think we should wait, just in case there are big problems and Singular gets backed out. I doubt it will happen, but because it used a lot, it's difficult to predict what problems it might cause. \n\nDave",
+    "created_at": "2010-08-16T22:14:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9397",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9397#issuecomment-89514",
+    "user": "drkirkby"
+}
+```
 
 I think we should wait, just in case there are big problems and Singular gets backed out. I doubt it will happen, but because it used a lot, it's difficult to predict what problems it might cause. 
 
 Dave
 
 
+
 ---
 
-Comment by drkirkby created at 2010-09-13 08:58:38
+archive/issue_comments_089515.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-09-13T08:58:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9397",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9397#issuecomment-89515",
+    "user": "drkirkby"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by drkirkby created at 2010-09-13 08:58:38
+archive/issue_comments_089516.json:
+```json
+{
+    "body": "This problem was fixed by #8059  which was merged in sage 4.5.3.alpha1.",
+    "created_at": "2010-09-13T08:58:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9397",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9397#issuecomment-89516",
+    "user": "drkirkby"
+}
+```
 
 This problem was fixed by #8059  which was merged in sage 4.5.3.alpha1.

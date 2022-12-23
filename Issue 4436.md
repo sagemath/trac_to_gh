@@ -1,11 +1,21 @@
 # Issue 4436: Sage 3.2.a2: numerical noise in sage/calculus/calculus.py
 
-Issue created by migration from https://trac.sagemath.org/ticket/4436
-
-Original creator: mabshoff
-
-Original creation time: 2008-11-04 13:52:39
-
+archive/issues_004436.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nOn an Itanium:\n\n```\nsage -t  devel/sage/sage/calculus/calculus.py              \n**********************************************************************\nFile \"/home/mabshoff/build-3.2.a2/sage-3.2.alpha2-iras/tmp/calculus.py\", line 7533:\n    sage: float(sinh(pi))\nExpected:\n    11.548739357257748\nGot:\n    11.548739357257746\n**********************************************************************\nFile \"/home/mabshoff/build-3.2.a2/sage-3.2.alpha2-iras/tmp/calculus.py\", line 7642:\n    sage: float(csch(pi))\nExpected:\n    0.086589537530046945\nGot:\n    0.086589537530046959\n**********************************************************************\n```\n\nOn an x86:\n\n```\nsage -t  devel/sage/sage/calculus/calculus.py               \n**********************************************************************\nFile \"/home/mabshoff/build-3.2.a2/sage-3.2.alpha2-cicero/tmp/calculus.py\", line 120:\n    sage: float(f(pi))\nExpected:\n    6.1232339957367663e-16\nGot:\n    6.1230317691118863e-16\n**********************************************************************\nFile \"/home/mabshoff/build-3.2.a2/sage-3.2.alpha2-cicero/tmp/calculus.py\", line 7533:\n    sage: float(sinh(pi))\nExpected:\n    11.548739357257748\nGot:\n    11.548739357257746\n**********************************************************************\nFile \"/home/mabshoff/build-3.2.a2/sage-3.2.alpha2-cicero/tmp/calculus.py\", line 7642:\n    sage: float(csch(pi))\nExpected:\n    0.086589537530046945\nGot:\n    0.086589537530046959\n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4436\n\n",
+    "created_at": "2008-11-04T13:52:39Z",
+    "labels": [
+        "doctest coverage",
+        "major",
+        "bug"
+    ],
+    "title": "Sage 3.2.a2: numerical noise in sage/calculus/calculus.py",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4436",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 On an Itanium:
@@ -58,10 +68,25 @@ Got:
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4436
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-11-04 13:53:09
+archive/issue_comments_032616.json:
+```json
+{
+    "body": "The is also an issue in a G4:\n\n```\n    sage -t  devel/sage/sage/calculus/calculus.py \n         this has been reported, but I just noticed that there is   \n\"significant bit noise\", not insignificant bit noise: \n            Expected: \n                6.1232339957367663e-16 \n            Got: \n                6.1230317691118863e-16 \n```\n",
+    "created_at": "2008-11-04T13:53:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4436",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4436#issuecomment-32616",
+    "user": "mabshoff"
+}
+```
 
 The is also an issue in a G4:
 
@@ -77,34 +102,91 @@ The is also an issue in a G4:
 
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-04 13:53:09
+archive/issue_comments_032617.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-11-04T13:53:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4436",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4436#issuecomment-32617",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
+
+archive/issue_comments_032618.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-11-05T21:44:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4436",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4436#issuecomment-32618",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2008-11-05 22:08:26
+archive/issue_comments_032619.json:
+```json
+{
+    "body": "Looks fine.",
+    "created_at": "2008-11-05T22:08:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4436",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4436#issuecomment-32619",
+    "user": "mhansen"
+}
+```
 
 Looks fine.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-05 23:12:41
+archive/issue_comments_032620.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-11-05T23:12:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4436",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4436#issuecomment-32620",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-05 23:12:41
+archive/issue_comments_032621.json:
+```json
+{
+    "body": "Merged in Sage 3.2.alpha3",
+    "created_at": "2008-11-05T23:12:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4436",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4436#issuecomment-32621",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.2.alpha3

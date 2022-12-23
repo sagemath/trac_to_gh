@@ -1,36 +1,72 @@
 # Issue 5576: [with patch, needs review] MPolynomialSystem cleanup
 
-Issue created by migration from https://trac.sagemath.org/ticket/5576
-
-Original creator: malb
-
-Original creation time: 2009-03-20 13:39:50
-
+archive/issues_005576.json:
+```json
+{
+    "body": "Assignee: malb\n\nCC:  mhansen\n\nKeywords: crypto\n\n* clean up of ReST in `mq.MPolynomialSystem`\n* improved documentation of `mq.MPolynomialSystem`\n* deprecated `mq.MPolynomialSystem_gf2e.change_ring()`\n* added `mq.MPolynomialSystem_gf2e.weil_restriction()`\n* added `mq.MPolynomialSystem.connected_components()`\n* added `mq.MPolynomialSystem.connection_graph()`\n* added `mq.MPolynomialSystem_gf2.eliminate_linear_variables()`\n\nIssue created by migration from https://trac.sagemath.org/ticket/5576\n\n",
+    "created_at": "2009-03-20T13:39:50Z",
+    "labels": [
+        "commutative algebra",
+        "major",
+        "enhancement"
+    ],
+    "title": "[with patch, needs review] MPolynomialSystem cleanup",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5576",
+    "user": "malb"
+}
+```
 Assignee: malb
 
 CC:  mhansen
 
 Keywords: crypto
 
-** clean up of ReST in `mq.MPolynomialSystem`
- * improved documentation of `mq.MPolynomialSystem`
- * deprecated `mq.MPolynomialSystem_gf2e.change_ring()`
- * added `mq.MPolynomialSystem_gf2e.weil_restriction()`
- * added `mq.MPolynomialSystem.connected_components()`
- * added `mq.MPolynomialSystem.connection_graph()`
- * added `mq.MPolynomialSystem_gf2.eliminate_linear_variables()`
+* clean up of ReST in `mq.MPolynomialSystem`
+* improved documentation of `mq.MPolynomialSystem`
+* deprecated `mq.MPolynomialSystem_gf2e.change_ring()`
+* added `mq.MPolynomialSystem_gf2e.weil_restriction()`
+* added `mq.MPolynomialSystem.connected_components()`
+* added `mq.MPolynomialSystem.connection_graph()`
+* added `mq.MPolynomialSystem_gf2.eliminate_linear_variables()`
+
+Issue created by migration from https://trac.sagemath.org/ticket/5576
+
+
+
 
 
 ---
 
-Comment by malb created at 2009-03-20 13:41:17
+archive/issue_comments_043477.json:
+```json
+{
+    "body": "The attached patch depends on #5569",
+    "created_at": "2009-03-20T13:41:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5576",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5576#issuecomment-43477",
+    "user": "malb"
+}
+```
 
 The attached patch depends on #5569
 
 
+
 ---
 
-Comment by mvngu created at 2009-03-27 06:13:47
+archive/issue_comments_043478.json:
+```json
+{
+    "body": "First I applied the patch at #5569 against Sage 3.4, then I applied the patch on this ticket. Doctesting gave me timed out errors:\n\n```\n[mvngu@sage sage-3.4]$ sage -t -long devel/sage-5576/sage/crypto/mq/\nsage -t -long \"devel/sage-5576/sage/crypto/mq/sbox.py\"      \n         [11.3 s]\nsage -t -long \"devel/sage-5576/sage/crypto/mq/mpolynomialsystemgenerator.py\"\n         [7.6 s]\nsage -t -long \"devel/sage-5576/sage/crypto/mq/sr.py\"        \n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\n*** *** Error: TIMED OUT! *** ***\n         [1800.5 s]\nsage -t -long \"devel/sage-5576/sage/crypto/mq/mpolynomialsystem.py\"\n         [24.4 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long \"devel/sage-5576/sage/crypto/mq/sr.py\"\nTotal time for all tests: 1843.9 seconds\n```\n",
+    "created_at": "2009-03-27T06:13:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5576",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5576#issuecomment-43478",
+    "user": "mvngu"
+}
+```
 
 First I applied the patch at #5569 against Sage 3.4, then I applied the patch on this ticket. Doctesting gave me timed out errors:
 
@@ -58,23 +94,56 @@ Total time for all tests: 1843.9 seconds
 
 
 
+
 ---
 
-Comment by malb created at 2009-03-27 11:04:05
+archive/issue_comments_043479.json:
+```json
+{
+    "body": "I can reproduce your problem and I'll look into it. Thanks.",
+    "created_at": "2009-03-27T11:04:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5576",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5576#issuecomment-43479",
+    "user": "malb"
+}
+```
 
 I can reproduce your problem and I'll look into it. Thanks.
 
 
+
 ---
 
-Comment by malb created at 2009-03-27 11:11:04
+archive/issue_comments_043480.json:
+```json
+{
+    "body": "I fixed the underlying issue and will raise a question on [sage-devel] how to deal with the API change that caused it.",
+    "created_at": "2009-03-27T11:11:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5576",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5576#issuecomment-43480",
+    "user": "malb"
+}
+```
 
 I fixed the underlying issue and will raise a question on [sage-devel] how to deal with the API change that caused it.
 
 
+
 ---
 
-Comment by mvngu created at 2009-05-08 01:16:55
+archive/issue_comments_043481.json:
+```json
+{
+    "body": "With the latest stable version sage-3.4.2, i.e. the \"post-final\" 3.4.2 version, I get the following hunk failures:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: 5576\nsage: hg_sage.apply(\"/home/mvngu/patch/5576/mpolynomialsystem_rest.patch\")\ncd \"/scratch/mvngu/sage-3.4.2-sage.math-only-x86_64-Linux/devel/sage\" && hg status\ncd \"/scratch/mvngu/sage-3.4.2-sage.math-only-x86_64-Linux/devel/sage\" && hg status\ncd \"/scratch/mvngu/sage-3.4.2-sage.math-only-x86_64-Linux/devel/sage\" && hg import   \"/home/mvngu/patch/5576/mpolynomialsystem_rest.patch\"\napplying /home/mvngu/patch/5576/mpolynomialsystem_rest.patch\npatching file sage/crypto/mq/mpolynomialsystem.py\nHunk #7 FAILED at 262\nHunk #8 FAILED at 277\nHunk #9 FAILED at 314\nHunk #22 FAILED at 652\n4 out of 51 hunks FAILED -- saving rejects to file sage/crypto/mq/mpolynomialsystem.py.rej\nabort: patch failed to apply\n```\n",
+    "created_at": "2009-05-08T01:16:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5576",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5576#issuecomment-43481",
+    "user": "mvngu"
+}
+```
 
 With the latest stable version sage-3.4.2, i.e. the "post-final" 3.4.2 version, I get the following hunk failures:
 
@@ -98,21 +167,56 @@ abort: patch failed to apply
 
 
 
+
 ---
 
-Comment by malb created at 2009-05-12 00:07:18
+archive/issue_comments_043482.json:
+```json
+{
+    "body": "I rebased the patch.",
+    "created_at": "2009-05-12T00:07:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5576",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5576#issuecomment-43482",
+    "user": "malb"
+}
+```
 
 I rebased the patch.
 
 
+
 ---
+
+archive/issue_comments_043483.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-05-12T00:34:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5576",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5576#issuecomment-43483",
+    "user": "malb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by malb created at 2009-05-12 00:35:09
+archive/issue_comments_043484.json:
+```json
+{
+    "body": "\n```\n[01:15] <mhansen> malb: You need to fix the REFERENCES section in eliminate_linear_variables([01:16] <malb> what about it?\n[01:18] <mhansen> The text after the .. should all be aligned.\n[01:18] <mhansen> (on the left.\n```\n\n\nfixed in updated patch.",
+    "created_at": "2009-05-12T00:35:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5576",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5576#issuecomment-43484",
+    "user": "malb"
+}
+```
 
 
 ```
@@ -125,16 +229,38 @@ Comment by malb created at 2009-05-12 00:35:09
 fixed in updated patch.
 
 
+
 ---
 
-Comment by burcin created at 2009-05-12 14:33:09
+archive/issue_comments_043485.json:
+```json
+{
+    "body": "Patch looks good, doctests pass.",
+    "created_at": "2009-05-12T14:33:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5576",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5576#issuecomment-43485",
+    "user": "burcin"
+}
+```
 
 Patch looks good, doctests pass.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-12 17:15:31
+archive/issue_comments_043486.json:
+```json
+{
+    "body": "Merged in Sage 4.0.alpha0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-05-12T17:15:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5576",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5576#issuecomment-43486",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 4.0.alpha0.
 
@@ -143,8 +269,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-12 17:15:31
+archive/issue_comments_043487.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-05-12T17:15:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5576",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5576#issuecomment-43487",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

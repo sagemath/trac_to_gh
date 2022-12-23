@@ -1,11 +1,21 @@
 # Issue 6912: parametric regions
 
-Issue created by migration from https://trac.sagemath.org/ticket/6912
-
-Original creator: jason
-
-Original creation time: 2009-09-10 07:15:44
-
+archive/issues_006912.json:
+```json
+{
+    "body": "Assignee: was\n\nMathematica can plot parametric regions:\n\n```\nParametricPlot[r^2 { Sqrt[t] Cos[t], Sin[t]}, {t, 0, 3 Pi/2}, {r, 1, 2}]\n```\n\n\nSee http://reference.wolfram.com/mathematica/ref/ParametricPlot.html for output.  We should be able to do this too.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6912\n\n",
+    "created_at": "2009-09-10T07:15:44Z",
+    "labels": [
+        "graphics",
+        "major",
+        "enhancement"
+    ],
+    "title": "parametric regions",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6912",
+    "user": "jason"
+}
+```
 Assignee: was
 
 Mathematica can plot parametric regions:
@@ -17,10 +27,25 @@ ParametricPlot[r^2 { Sqrt[t] Cos[t], Sin[t]}, {t, 0, 3 Pi/2}, {r, 1, 2}]
 
 See http://reference.wolfram.com/mathematica/ref/ParametricPlot.html for output.  We should be able to do this too.
 
+Issue created by migration from https://trac.sagemath.org/ticket/6912
+
+
+
+
 
 ---
 
-Comment by chapoton created at 2019-06-15 07:25:22
+archive/issue_comments_057095.json:
+```json
+{
+    "body": "Still not done\n\n```\nsage: var('x,y')\n(x, y)\nsage: parametric_plot((x,y),(x,-1,1),(y,-1,1))\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n<ipython-input-5-fad28512a87c> in <module>()\n----> 1 parametric_plot((x,y),(x,-Integer(1),Integer(1)),(y,-Integer(1),Integer(1)))\n\n/home/chapoton/sage3/local/lib/python3.7/site-packages/sage/misc/decorators.py in wrapper(*args, **kwds)\n    491                 options['__original_opts'] = kwds\n    492             options.update(kwds)\n--> 493             return func(*args, **options)\n    494 \n    495         #Add the options specified by @options to the signature of the wrapped\n\n/home/chapoton/sage3/local/lib/python3.7/site-packages/sage/plot/plot.py in parametric_plot(funcs, *args, **kwargs)\n   2623         return sage.plot.plot3d.parametric_plot3d.parametric_plot3d(funcs, *args, **kwargs)\n   2624     else:\n-> 2625         raise ValueError(\"the number of functions and the number of variable ranges is not a supported combination for a 2d or 3d parametric plots\")\n   2626 \n   2627 @options(aspect_ratio=1.0)\n\nValueError: the number of functions and the number of variable ranges is not a supported combination for a 2d or 3d parametric plots\n```\n",
+    "created_at": "2019-06-15T07:25:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6912",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6912#issuecomment-57095",
+    "user": "chapoton"
+}
+```
 
 Still not done
 

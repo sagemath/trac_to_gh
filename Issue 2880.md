@@ -1,11 +1,21 @@
 # Issue 2880: Special code for elliptic curve cardinality for j=0 and j=1728
 
-Issue created by migration from https://trac.sagemath.org/ticket/2880
-
-Original creator: cremona
-
-Original creation time: 2008-04-11 20:07:20
-
+archive/issues_002880.json:
+```json
+{
+    "body": "Assignee: was\n\nWhen the new code for point counting on elliptic curves over arbitrary finite fields was implemented, I left handling the special cases j=0 and j=1728 for a rainy day.  These cases were handled in not too bad a way, but as there are special formulas for these cases it was always going to be a good idea to implement them.\n\nNot having any reference which does everything needed here (especially for the really exceptional cases where the characteristic is 2 or 3 and j=0=1728) I worked it all out from scratch, and here is the result.\n\nThere are copious comments and doctests.  I will write up the full justification in due course.  In the meantime I hope we can merge this patch (based on 3.0.alpha1) quite soon!\n\nIssue created by migration from https://trac.sagemath.org/ticket/2880\n\n",
+    "created_at": "2008-04-11T20:07:20Z",
+    "labels": [
+        "algebraic geometry",
+        "minor",
+        "bug"
+    ],
+    "title": "Special code for elliptic curve cardinality for j=0 and j=1728",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2880",
+    "user": "cremona"
+}
+```
 Assignee: was
 
 When the new code for point counting on elliptic curves over arbitrary finite fields was implemented, I left handling the special cases j=0 and j=1728 for a rainy day.  These cases were handled in not too bad a way, but as there are special formulas for these cases it was always going to be a good idea to implement them.
@@ -14,75 +24,195 @@ Not having any reference which does everything needed here (especially for the r
 
 There are copious comments and doctests.  I will write up the full justification in due course.  In the meantime I hope we can merge this patch (based on 3.0.alpha1) quite soon!
 
+Issue created by migration from https://trac.sagemath.org/ticket/2880
+
+
+
+
 
 ---
+
+archive/issue_comments_019811.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-04-11T20:07:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2880",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2880#issuecomment-19811",
+    "user": "cremona"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by cremona created at 2008-04-11 20:10:03
+archive/issue_comments_019812.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"elliptic curves\".",
+    "created_at": "2008-04-11T20:10:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2880",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2880#issuecomment-19812",
+    "user": "cremona"
+}
+```
 
 Changing keywords from "" to "elliptic curves".
 
 
+
 ---
+
+archive/issue_comments_019813.json:
+```json
+{
+    "body": "Attachment\n\nreplaces previous patch; applies to 3.0.alpha3",
+    "created_at": "2008-04-11T21:17:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2880",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2880#issuecomment-19813",
+    "user": "cremona"
+}
+```
 
 Attachment
 
 replaces previous patch; applies to 3.0.alpha3
 
 
+
 ---
 
-Comment by cremona created at 2008-04-11 21:18:20
+archive/issue_comments_019814.json:
+```json
+{
+    "body": "The original patch was based on 3.0.alpha1 and did not apply to alpha3.  The new one does apply ok to alpha3.",
+    "created_at": "2008-04-11T21:18:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2880",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2880#issuecomment-19814",
+    "user": "cremona"
+}
+```
 
 The original patch was based on 3.0.alpha1 and did not apply to alpha3.  The new one does apply ok to alpha3.
 
 
+
 ---
+
+archive/issue_comments_019815.json:
+```json
+{
+    "body": "Attachment\n\nApply after preceding main patch",
+    "created_at": "2008-04-12T19:12:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2880",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2880#issuecomment-19815",
+    "user": "cremona"
+}
+```
 
 Attachment
 
 Apply after preceding main patch
 
 
+
 ---
 
-Comment by cremona created at 2008-04-12 19:12:55
+archive/issue_comments_019816.json:
+```json
+{
+    "body": "Two small changes to be applied after the main patch:\n\n* In abelian_group() when j=0 or 1728 call cardinality() first, now that it is very fast, as that speeds up the group computation\n\n* In abelian_group(), a small adjustment to speed up the linear_relation() finding for the second generator.",
+    "created_at": "2008-04-12T19:12:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2880",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2880#issuecomment-19816",
+    "user": "cremona"
+}
+```
 
 Two small changes to be applied after the main patch:
 
-   * In abelian_group() when j=0 or 1728 call cardinality() first, now that it is very fast, as that speeds up the group computation
+* In abelian_group() when j=0 or 1728 call cardinality() first, now that it is very fast, as that speeds up the group computation
 
-   * In abelian_group(), a small adjustment to speed up the linear_relation() finding for the second generator.
+* In abelian_group(), a small adjustment to speed up the linear_relation() finding for the second generator.
+
 
 
 ---
 
-Comment by AlexGhitza created at 2008-04-13 15:11:19
+archive/issue_comments_019817.json:
+```json
+{
+    "body": "Patches look good.",
+    "created_at": "2008-04-13T15:11:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2880",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2880#issuecomment-19817",
+    "user": "AlexGhitza"
+}
+```
 
 Patches look good.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-13 16:03:31
+archive/issue_comments_019818.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-04-13T16:03:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2880",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2880#issuecomment-19818",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-13 16:03:31
+archive/issue_comments_019819.json:
+```json
+{
+    "body": "Merged 9467.patch and 9468.patch in Sage 3.0.alpha5",
+    "created_at": "2008-04-13T16:03:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2880",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2880#issuecomment-19819",
+    "user": "mabshoff"
+}
+```
 
 Merged 9467.patch and 9468.patch in Sage 3.0.alpha5
 
 
+
 ---
 
-Comment by cremona created at 2008-04-14 13:25:42
+archive/issue_comments_019820.json:
+```json
+{
+    "body": "Replying to [comment:5 AlexGhitza]:\n> Patches look good.\nThanks!  and sorry for the factor_integer() problem which these caused.  John",
+    "created_at": "2008-04-14T13:25:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2880",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2880#issuecomment-19820",
+    "user": "cremona"
+}
+```
 
 Replying to [comment:5 AlexGhitza]:
 > Patches look good.

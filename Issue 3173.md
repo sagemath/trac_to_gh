@@ -1,26 +1,62 @@
 # Issue 3173: add 64 bit OSX build support to eclib
 
-Issue created by migration from https://trac.sagemath.org/ticket/3173
-
-Original creator: mabshoff
-
-Original creation time: 2008-05-13 00:22:47
-
+archive/issues_003173.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nspkg coming up\n\nIssue created by migration from https://trac.sagemath.org/ticket/3173\n\n",
+    "created_at": "2008-05-13T00:22:47Z",
+    "labels": [
+        "build",
+        "major",
+        "bug"
+    ],
+    "title": "add 64 bit OSX build support to eclib",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3173",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 spkg coming up
 
+Issue created by migration from https://trac.sagemath.org/ticket/3173
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-05-13 00:22:54
+archive/issue_comments_021982.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-05-13T00:22:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3173",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3173#issuecomment-21982",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-08 22:08:33
+archive/issue_comments_021983.json:
+```json
+{
+    "body": "The updated spkg is at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0.3/alpha2/eclib-20080310.p2.spkg\n\nI did test build it on 32 and 64 bit OSX, Linux.\n\nCheers,\n\nMichael",
+    "created_at": "2008-06-08T22:08:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3173",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3173#issuecomment-21983",
+    "user": "mabshoff"
+}
+```
 
 The updated spkg is at
 
@@ -33,22 +69,55 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by gfurnish created at 2008-06-08 22:16:09
+archive/issue_comments_021984.json:
+```json
+{
+    "body": "works on 32 bit linux.",
+    "created_at": "2008-06-08T22:16:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3173",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3173#issuecomment-21984",
+    "user": "gfurnish"
+}
+```
 
 works on 32 bit linux.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-08 22:27:26
+archive/issue_comments_021985.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-06-08T22:27:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3173",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3173#issuecomment-21985",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-08 22:27:26
+archive/issue_comments_021986.json:
+```json
+{
+    "body": "Merged in Sage 3.0.3.alpha2",
+    "created_at": "2008-06-08T22:27:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3173",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3173#issuecomment-21986",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.3.alpha2

@@ -1,11 +1,21 @@
 # Issue 5058: sage -f and sage -i is broken for local files
 
-Issue created by migration from https://trac.sagemath.org/ticket/5058
-
-Original creator: rlm
-
-Original creation time: 2009-01-22 19:23:44
-
+archive/issues_005058.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\n\n```\n[minime sage-3.3.alpha0.spkg_check]$ ./sage -i boehm_gc-7.1.p1.spkg \nInstalling boehm_gc-7.1.p1.spkg\nCalling sage-spkg on boehm_gc-7.1.p1.spkg\nYou must set the SAGE_ROOT environment variable or\nrun this script from the SAGE_ROOT or \nSAGE_ROOT/local/bin/ directory.\nboehm_gc-7.1.p1.spkg\nMachine:\nDarwin minime.local 9.6.0 Darwin Kernel Version 9.6.0: Mon Nov 24 17:37:00 PST 2008; root:xnu-1228.9.59~1/RELEASE_I386 i386 i386 MacBook4,1 Darwin\nDeleting directories from past builds of previous/current versions of boehm_gc-7.1.p1.spkg\nExtracting package /Users/rlmill/sage-3.3.alpha0.spkg_check/boehm_gc-7.1.p1.spkg ...\n-rw-r--r-- 1 rlmill staff 870192 2009-01-22 10:25 /Users/rlmill/sage-3.3.alpha0.spkg_check/boehm_gc-7.1.p1.spkg\n./._boehm_gc-7.1.p1\n\n\n\n...verbose untar...\n\n\n\nFinished extraction\nsage: After decompressing the directory boehm_gc-7.1.p1.spkg does not exist\netc... FAIL\n```\n\n\nThe directory does not have .spkg on the end of it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5058\n\n",
+    "created_at": "2009-01-22T19:23:44Z",
+    "labels": [
+        "build",
+        "major",
+        "bug"
+    ],
+    "title": "sage -f and sage -i is broken for local files",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5058",
+    "user": "rlm"
+}
+```
 Assignee: mabshoff
 
 
@@ -38,28 +48,78 @@ etc... FAIL
 
 The directory does not have .spkg on the end of it.
 
+Issue created by migration from https://trac.sagemath.org/ticket/5058
+
+
+
+
 
 ---
+
+archive/issue_comments_038529.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-01-22T19:40:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5058",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5058#issuecomment-38529",
+    "user": "rlm"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by boothby created at 2009-01-23 10:12:30
+archive/issue_comments_038530.json:
+```json
+{
+    "body": "Looks good to me.",
+    "created_at": "2009-01-23T10:12:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5058",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5058#issuecomment-38530",
+    "user": "boothby"
+}
+```
 
 Looks good to me.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-23 10:35:09
+archive/issue_comments_038531.json:
+```json
+{
+    "body": "Merged in Sage 3.3.alpha1",
+    "created_at": "2009-01-23T10:35:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5058",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5058#issuecomment-38531",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.3.alpha1
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-23 10:35:09
+archive/issue_comments_038532.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-01-23T10:35:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5058",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5058#issuecomment-38532",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

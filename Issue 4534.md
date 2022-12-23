@@ -1,61 +1,156 @@
 # Issue 4534: Stupid error in odd_part
 
-Issue created by migration from https://trac.sagemath.org/ticket/4534
-
-Original creator: craigcitro
-
-Original creation time: 2008-11-16 13:00:42
-
+archive/issues_004534.json:
+```json
+{
+    "body": "Assignee: craigcitro\n\nI introduced an error in `odd_part` while working on #4443; the attached patch is the obvious fix, along with a doctest.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4534\n\n",
+    "created_at": "2008-11-16T13:00:42Z",
+    "labels": [
+        "basic arithmetic",
+        "blocker",
+        "bug"
+    ],
+    "title": "Stupid error in odd_part",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4534",
+    "user": "craigcitro"
+}
+```
 Assignee: craigcitro
 
 I introduced an error in `odd_part` while working on #4443; the attached patch is the obvious fix, along with a doctest.
 
+Issue created by migration from https://trac.sagemath.org/ticket/4534
+
+
+
+
 
 ---
 
-Comment by craigcitro created at 2008-11-16 13:01:26
+archive/issue_comments_033781.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-11-16T13:01:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4534",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4534#issuecomment-33781",
+    "user": "craigcitro"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
+
+archive/issue_comments_033782.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-11-16T13:01:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4534",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4534#issuecomment-33782",
+    "user": "craigcitro"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2008-11-16 13:10:29
+archive/issue_comments_033783.json:
+```json
+{
+    "body": "Looks good.",
+    "created_at": "2008-11-16T13:10:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4534",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4534#issuecomment-33783",
+    "user": "mhansen"
+}
+```
 
 Looks good.
 
 
+
 ---
 
-Comment by robertwb created at 2008-11-17 18:38:15
+archive/issue_comments_033784.json:
+```json
+{
+    "body": "Wouldn't it be much faster to divide out by the valuation at 2?",
+    "created_at": "2008-11-17T18:38:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4534",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4534#issuecomment-33784",
+    "user": "robertwb"
+}
+```
 
 Wouldn't it be much faster to divide out by the valuation at 2?
 
 
+
 ---
 
-Comment by craigcitro created at 2008-11-17 18:52:28
+archive/issue_comments_033785.json:
+```json
+{
+    "body": "Good point. I know I timed it when I wrote it (though I obviously didn't look at the output carefully) -- of course, since the broken version doesn't do much work, it's faster. Correcting it slows it way down. \n\nPatch coming right up.",
+    "created_at": "2008-11-17T18:52:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4534",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4534#issuecomment-33785",
+    "user": "craigcitro"
+}
+```
 
 Good point. I know I timed it when I wrote it (though I obviously didn't look at the output carefully) -- of course, since the broken version doesn't do much work, it's faster. Correcting it slows it way down. 
 
 Patch coming right up.
 
 
+
 ---
+
+archive/issue_comments_033786.json:
+```json
+{
+    "body": "Attachment\n\nNew patch, which should be much better. Unfortunately, it touches `integer.pxd`, so it takes a while to rebuild.",
+    "created_at": "2008-11-17T20:43:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4534",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4534#issuecomment-33786",
+    "user": "craigcitro"
+}
+```
 
 Attachment
 
 New patch, which should be much better. Unfortunately, it touches `integer.pxd`, so it takes a while to rebuild.
 
 
+
 ---
 
-Comment by jsp created at 2008-11-18 15:30:56
+archive/issue_comments_033787.json:
+```json
+{
+    "body": "Applied trac-4534-v2.patch\n\nRun ./sage -b and did a make check\n\nAll tests passed except the known issue with combinat/species/library.py\n\nSo I give this ticket a positive review.\n\nJaap",
+    "created_at": "2008-11-18T15:30:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4534",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4534#issuecomment-33787",
+    "user": "jsp"
+}
+```
 
 Applied trac-4534-v2.patch
 
@@ -68,15 +163,37 @@ So I give this ticket a positive review.
 Jaap
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-18 19:39:41
+archive/issue_comments_033788.json:
+```json
+{
+    "body": "Merged trac-4534-v2.patch in Sage 3.2.rc2",
+    "created_at": "2008-11-18T19:39:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4534",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4534#issuecomment-33788",
+    "user": "mabshoff"
+}
+```
 
 Merged trac-4534-v2.patch in Sage 3.2.rc2
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-18 19:39:41
+archive/issue_comments_033789.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-11-18T19:39:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4534",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4534#issuecomment-33789",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

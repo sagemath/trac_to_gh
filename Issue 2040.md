@@ -1,11 +1,21 @@
 # Issue 2040: 2d graphics -- problems with axes_labels options
 
-Issue created by migration from https://trac.sagemath.org/ticket/2040
-
-Original creator: was
-
-Original creation time: 2008-02-03 22:37:57
-
+archive/issues_002040.json:
+```json
+{
+    "body": "Assignee: was\n\n1. 2d graphics -- the show method of a 2d graphics option *must* document e.g., the axes_labels option, but doesn't, making it useless\n\n\n```\nsage: P = point((0,0))\nsage: P.show?\n```\n\n\nnothing about axes labels.\n\n2. The axes labels appear in the notebook but not from the command line.  Try\nthis in the notebook (good), and command line (bad):\n\n```\nsage: plot(sin,0,1).show(axes_labels=['x','Pr(x)'])\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2040\n\n",
+    "created_at": "2008-02-03T22:37:57Z",
+    "labels": [
+        "graphics",
+        "major",
+        "bug"
+    ],
+    "title": "2d graphics -- problems with axes_labels options",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2040",
+    "user": "was"
+}
+```
 Assignee: was
 
 1. 2d graphics -- the show method of a 2d graphics option *must* document e.g., the axes_labels option, but doesn't, making it useless
@@ -29,45 +39,119 @@ sage: plot(sin,0,1).show(axes_labels=['x','Pr(x)'])
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2040
+
+
+
+
 
 ---
 
-Comment by jhpalmieri created at 2008-05-13 21:52:40
+archive/issue_comments_013209.json:
+```json
+{
+    "body": "add axes_labels to documentation to show",
+    "created_at": "2008-05-13T21:52:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2040",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2040#issuecomment-13209",
+    "user": "jhpalmieri"
+}
+```
 
 add axes_labels to documentation to show
 
 
+
 ---
+
+archive/issue_comments_013210.json:
+```json
+{
+    "body": "Attachment\n\nI've attached a patch for point 1.  I don't know anything about point 2.",
+    "created_at": "2008-05-13T21:54:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2040",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2040#issuecomment-13210",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
 I've attached a patch for point 1.  I don't know anything about point 2.
 
 
+
 ---
+
+archive/issue_comments_013211.json:
+```json
+{
+    "body": "Attachment\n\nshow axes_labels when called from command line",
+    "created_at": "2008-05-13T21:57:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2040",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2040#issuecomment-13211",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
 show axes_labels when called from command line
 
 
+
 ---
 
-Comment by jhpalmieri created at 2008-05-13 21:58:44
+archive/issue_comments_013212.json:
+```json
+{
+    "body": "Actually, I have a patch for point 2, also.",
+    "created_at": "2008-05-13T21:58:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2040",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2040#issuecomment-13212",
+    "user": "jhpalmieri"
+}
+```
 
 Actually, I have a patch for point 2, also.
 
 
+
 ---
 
-Comment by mhampton created at 2008-05-24 20:40:34
+archive/issue_comments_013213.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"show, axes_labels\".",
+    "created_at": "2008-05-24T20:40:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2040",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2040#issuecomment-13213",
+    "user": "mhampton"
+}
+```
 
 Changing keywords from "" to "show, axes_labels".
 
 
+
 ---
 
-Comment by mhampton created at 2008-05-24 20:40:34
+archive/issue_comments_013214.json:
+```json
+{
+    "body": "This is a simple patch that seems to work as it should.  I tested it on 3.0.2.rc3, both the show and save changes; saving to png and pdf.  plot.py passes all tests.   \n\nI think it would be nice to add this to the plot command as well, but that can be another ticket if others agree.\n\n-Marshall Hampton",
+    "created_at": "2008-05-24T20:40:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2040",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2040#issuecomment-13214",
+    "user": "mhampton"
+}
+```
 
 This is a simple patch that seems to work as it should.  I tested it on 3.0.2.rc3, both the show and save changes; saving to png and pdf.  plot.py passes all tests.   
 
@@ -76,9 +160,20 @@ I think it would be nice to add this to the plot command as well, but that can b
 -Marshall Hampton
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-25 04:10:38
+archive/issue_comments_013215.json:
+```json
+{
+    "body": "Merged in Sage 3.0.3.alpha0. Please post Mercurial patches and not diff the next time. The patches have been check in with credit to John.\n\nCheers,\n\nMichael",
+    "created_at": "2008-05-25T04:10:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2040",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2040#issuecomment-13215",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.3.alpha0. Please post Mercurial patches and not diff the next time. The patches have been check in with credit to John.
 
@@ -87,8 +182,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-25 04:10:38
+archive/issue_comments_013216.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-05-25T04:10:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2040",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2040#issuecomment-13216",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

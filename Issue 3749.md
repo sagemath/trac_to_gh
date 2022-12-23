@@ -1,19 +1,44 @@
 # Issue 3749: Request for a method "is_cyclic" for groups in SAGE
 
-Issue created by migration from https://trac.sagemath.org/ticket/3749
-
-Original creator: ljpk
-
-Original creation time: 2008-07-31 14:01:47
-
+archive/issues_003749.json:
+```json
+{
+    "body": "Assignee: joyner\n\nIt appears that there is no method is_cyclic for groups in SAGE; this is a command that MAGMA does have, and one which I think is fairly basic. It would be nice if this was included in a version of SAGE.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3749\n\n",
+    "created_at": "2008-07-31T14:01:47Z",
+    "labels": [
+        "group theory",
+        "minor",
+        "bug"
+    ],
+    "title": "Request for a method \"is_cyclic\" for groups in SAGE",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3749",
+    "user": "ljpk"
+}
+```
 Assignee: joyner
 
 It appears that there is no method is_cyclic for groups in SAGE; this is a command that MAGMA does have, and one which I think is fairly basic. It would be nice if this was included in a version of SAGE.
 
+Issue created by migration from https://trac.sagemath.org/ticket/3749
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-07-31 14:03:23
+archive/issue_comments_026621.json:
+```json
+{
+    "body": "Please remember to assign a default milestone.\n\nCheers,\n\nMichael",
+    "created_at": "2008-07-31T14:03:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3749",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3749#issuecomment-26621",
+    "user": "mabshoff"
+}
+```
 
 Please remember to assign a default milestone.
 
@@ -22,9 +47,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by wdj created at 2008-07-31 14:09:20
+archive/issue_comments_026622.json:
+```json
+{
+    "body": "It's there:\n\n\n```\nsage: G = PermutationGroup(['(1,2,3)(4,5)', '(1,2,3,4,5)'])\nsage: G.is_cyclic()\nFalse\nsage:        \n```\n",
+    "created_at": "2008-07-31T14:09:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3749",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3749#issuecomment-26622",
+    "user": "wdj"
+}
+```
 
 It's there:
 
@@ -38,9 +74,20 @@ sage:
 
 
 
+
 ---
 
-Comment by ljpk created at 2008-07-31 15:22:52
+archive/issue_comments_026623.json:
+```json
+{
+    "body": "It isn't there for AbelianGroup:\n\n\n```\nF = AbelianGroup(3,[2]*3)\nF.is_cyclic()\n```\n\n\ngives\n\n\n```\nTraceback (click to the left for traceback)\n...\nAttributeError: 'AbelianGroup_class' object has no attribute 'is_cyclic'\n```\n",
+    "created_at": "2008-07-31T15:22:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3749",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3749#issuecomment-26623",
+    "user": "ljpk"
+}
+```
 
 It isn't there for AbelianGroup:
 
@@ -62,38 +109,95 @@ AttributeError: 'AbelianGroup_class' object has no attribute 'is_cyclic'
 
 
 
+
 ---
 
-Comment by wdj created at 2008-07-31 16:07:50
+archive/issue_comments_026624.json:
+```json
+{
+    "body": "I could easily create one (and I'd be happy to) but I am concerned with interfering with David Roe's rewrite of the AbelianGroup class. One way to do it (which might break with the new class) is to just look at the invariants. The other way, which is probably unbreakable (though slower, especially for larger groups) is to convert to a permutation group (using the permutation_group method in the AbelianGroup class) and then apply is_cyclic. \nI'd prefer hearing comments from others before going ahead with one of these.",
+    "created_at": "2008-07-31T16:07:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3749",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3749#issuecomment-26624",
+    "user": "wdj"
+}
+```
 
 I could easily create one (and I'd be happy to) but I am concerned with interfering with David Roe's rewrite of the AbelianGroup class. One way to do it (which might break with the new class) is to just look at the invariants. The other way, which is probably unbreakable (though slower, especially for larger groups) is to convert to a permutation group (using the permutation_group method in the AbelianGroup class) and then apply is_cyclic. 
 I'd prefer hearing comments from others before going ahead with one of these.
 
 
+
 ---
 
-Comment by was created at 2008-12-11 06:01:55
+archive/issue_comments_026625.json:
+```json
+{
+    "body": "Don't worry about what David Roe is doing -- this ticket has been idle for nearly 6 months.    And definitely *DON'T* convert to a permutation group -- that's crazy -- you should use the invariants.",
+    "created_at": "2008-12-11T06:01:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3749",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3749#issuecomment-26625",
+    "user": "was"
+}
+```
 
 Don't worry about what David Roe is doing -- this ticket has been idle for nearly 6 months.    And definitely *DON'T* convert to a permutation group -- that's crazy -- you should use the invariants.
 
 
+
 ---
+
+archive/issue_comments_026626.json:
+```json
+{
+    "body": "Attachment\n\nbased on 3.2.2.alpha1",
+    "created_at": "2008-12-11T13:35:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3749",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3749#issuecomment-26626",
+    "user": "wdj"
+}
+```
 
 Attachment
 
 based on 3.2.2.alpha1
 
 
+
 ---
 
-Comment by wdj created at 2008-12-11 13:36:19
+archive/issue_comments_026627.json:
+```json
+{
+    "body": "The attached patch passes sage -t and seems to do the job.",
+    "created_at": "2008-12-11T13:36:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3749",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3749#issuecomment-26627",
+    "user": "wdj"
+}
+```
 
 The attached patch passes sage -t and seems to do the job.
 
 
+
 ---
 
-Comment by was created at 2008-12-11 23:05:26
+archive/issue_comments_026628.json:
+```json
+{
+    "body": "REFEREE REPORT:\n\nThis implementation is wrong and inefficient.\n\n1. Wrong -- the group Z/2 + Z/4 is cyclic.\n\n```\nsage: AbelianGroup([2,4]).is_cyclic()\nTrue\n```\n\n\n\n2. Inefficient -- even if it were right, the actual way it is coded is inefficient, since once you find a duplicate you would be done.  No need to iterate through the whole loop then check a flag at the end.\n\n\n---\n\nI just noticed that the function elementary_divisors on finite abelian groups isn't documented, in that it doesn't say what it does.   Since it could be ambiguous I wish it were documented. \n\nI think A.is_cyclic() should be true if and only if every element of the output of elementary_divisors is coprime.  Given that factoring prime powers is fast, the following should be a reasonable is_cyclic function (and it's only 2 lines!):\n\n```\nsage: def is_cyclic(A):\n    v = [a.factor()[0][0] if a else 0 for a in A.elementary_divisors()]\n    return len(v) == len(set(v))\n```\n\n\nThis works on finite groups:\n\n```\nsage: is_cyclic(AbelianGroup([3,5]))\nTrue\nsage: is_cyclic(AbelianGroup([2,4]))\nFalse\nsage: is_cyclic(AbelianGroup([2,2]))\nFalse\nsage: is_cyclic(AbelianGroup([6]))\nTrue\nsage: is_cyclic(AbelianGroup([15,1,21]))\nFalse\n```\n\n\nThis fails on infinite groups since the function elementary_divisors itself has a bug on infinite groups!\n\n```\nsage: AbelianGroup([0,5]).elementary_divisors()\n...\nArithmeticError: Prime factorization of 0 not defined.\n```\n\n\nI think the above should return [0,5].\n\nThat said, it is disturbing that elementary_divisors isn't documented, and moreover the choice of definition is inconsistent with the one for matrices over ZZ (made by pari, actually):\n\n```\nsage: a = matrix(ZZ, 3, [0,0,0, 0,5,0, 0,0,3]) ; a\n[0 0 0]\n[0 5 0]\n[0 0 3]\nsage: a.elementary_divisors()\n[1, 15, 0]\nsage: AbelianGroup([5,3]).elementary_divisors()\n[3, 5]\n```\n\n\nSo elementary_divisors for matrices gives invariants d_i where d_1 | d_2 | ..., \nWith that choice of elementary divisors definition, the is_cyclic function would be easy:\n\n```\ndef is_cyclic(A):\n    return len(A.elementary_divisors()) <= 1\n```\n\n\nI think the elementary_divisors function for abelian groups could be \"cheesily\" fixed for now by just defining things in terms of matrices:\n\n```\nsage: def elementary_divisors(A):\n....:     v = A.invariants()\n....:     return diagonal_matrix(ZZ,v).elementary_divisors()\n....: \nsage: elementary_divisors(AbelianGroup([5,3]))\n[1, 15]\nsage: elementary_divisors(AbelianGroup([0,0,5,3]))\n[1, 15, 0, 0]\n```\n\nThis obviously sucks because of the waste of memory (a matrix takes more), but is good because at least it is definitely *correct* and consistent, and I think correct and consistent is more important than speed.  We can fix the speed later once this consistency is established and tested. \n\nSummary: \n1. Change elementary_divisors to use matrices for consistency and correctness, and fix all corresponding doctests.\n\n2. Change is_cyclic to just be \"len(self.elementary_divisors()) <= 1\", and add much better doctests for is_cyclic, e.g, testing infinite groups and Z/2 x Z/3, etc.",
+    "created_at": "2008-12-11T23:05:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3749",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3749#issuecomment-26628",
+    "user": "was"
+}
+```
 
 REFEREE REPORT:
 
@@ -195,25 +299,60 @@ Summary:
 2. Change is_cyclic to just be "len(self.elementary_divisors()) <= 1", and add much better doctests for is_cyclic, e.g, testing infinite groups and Z/2 x Z/3, etc.
 
 
+
 ---
 
-Comment by was created at 2008-12-11 23:20:54
+archive/issue_comments_026629.json:
+```json
+{
+    "body": "Robert Miller points that there is an easy algorithm for computing the elementary divisors d1, d2, d3, of a finite abelian group, where elementary divisors means d1 | d2 | d3 | ...\n\nJust factor the numbers a_i that define the abelian group.  Then the biggest d_i is the product of the maximum prime powers dividing some a_j.  I.e., d_i is the product of p^v, where v = max(ord_p(a_j) for all j).  Then divide out all those p^v's, and repeat to compute d_{i-1}.",
+    "created_at": "2008-12-11T23:20:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3749",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3749#issuecomment-26629",
+    "user": "was"
+}
+```
 
 Robert Miller points that there is an easy algorithm for computing the elementary divisors d1, d2, d3, of a finite abelian group, where elementary divisors means d1 | d2 | d3 | ...
 
 Just factor the numbers a_i that define the abelian group.  Then the biggest d_i is the product of the maximum prime powers dividing some a_j.  I.e., d_i is the product of p^v, where v = max(ord_p(a_j) for all j).  Then divide out all those p^v's, and repeat to compute d_{i-1}.
 
 
+
 ---
+
+archive/issue_comments_026630.json:
+```json
+{
+    "body": "Attachment\n\nApply other patch first. Based on 3.2.2.alpha1",
+    "created_at": "2008-12-12T02:07:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3749",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3749#issuecomment-26630",
+    "user": "wdj"
+}
+```
 
 Attachment
 
 Apply other patch first. Based on 3.2.2.alpha1
 
 
+
 ---
 
-Comment by wdj created at 2008-12-12 02:10:51
+archive/issue_comments_026631.json:
+```json
+{
+    "body": "Followed instructions almost to the letter. (I think the code for \n\n\n```\ndef elementary_divisors...\n```\n\n\ngiven above needed a minor change.) Passes sage -t. I will report problems with sage -testall. (This takes a long time on my machine ubuntu 8.10 machine currently.) Hope it is okay to post the patch first.",
+    "created_at": "2008-12-12T02:10:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3749",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3749#issuecomment-26631",
+    "user": "wdj"
+}
+```
 
 Followed instructions almost to the letter. (I think the code for 
 
@@ -226,15 +365,26 @@ def elementary_divisors...
 given above needed a minor change.) Passes sage -t. I will report problems with sage -testall. (This takes a long time on my machine ubuntu 8.10 machine currently.) Hope it is okay to post the patch first.
 
 
+
 ---
 
-Comment by was created at 2008-12-12 17:37:29
+archive/issue_comments_026632.json:
+```json
+{
+    "body": "* Is this statement that is in the docs still true? \"Thus we see that the \"invariants\" are not the invariant factors but the \"elementary divisors\" (in the terminology of Rotman [R]).\"\n\n  * It doesn't make sense to include in the docs that paragraph about how to compute the elementary divisors, because we didn't implement that algorithm.  It would make sense to include that paragraph as a comment and say -- when somebody wants to speed this code up, please implement this algorithm.\n\n  * Is this actually necessary:\n\n```\n \t665\t        if 1 in edivs: \n \t666\t            edivs.remove(1) \n```\n\nSince I think that the only possible way 1 can be in evids is if evids = [1], in which case the group is trivial, hence cyclic.",
+    "created_at": "2008-12-12T17:37:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3749",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3749#issuecomment-26632",
+    "user": "was"
+}
+```
 
 * Is this statement that is in the docs still true? "Thus we see that the "invariants" are not the invariant factors but the "elementary divisors" (in the terminology of Rotman [R])."
 
- * It doesn't make sense to include in the docs that paragraph about how to compute the elementary divisors, because we didn't implement that algorithm.  It would make sense to include that paragraph as a comment and say -- when somebody wants to speed this code up, please implement this algorithm.
+  * It doesn't make sense to include in the docs that paragraph about how to compute the elementary divisors, because we didn't implement that algorithm.  It would make sense to include that paragraph as a comment and say -- when somebody wants to speed this code up, please implement this algorithm.
 
- * Is this actually necessary:
+  * Is this actually necessary:
 
 ```
  	665	        if 1 in edivs: 
@@ -244,9 +394,20 @@ Comment by was created at 2008-12-12 17:37:29
 Since I think that the only possible way 1 can be in evids is if evids = [1], in which case the group is trivial, hence cyclic.
 
 
+
 ---
 
-Comment by wdj created at 2008-12-12 23:28:59
+archive/issue_comments_026633.json:
+```json
+{
+    "body": "In reply to \n\n\n```\nIs this actually necessary:\n\n \t665\t        if 1 in edivs: \n \t666\t            edivs.remove(1) \n```\n\n\nAs elementary_divisors is implemented:\n\n\n```\nsage: J = AbelianGroup([2,3])\nsage: J.invariants()\n[2, 3]\nsage: J.elementary_divisors()\n[1, 6]\n```\n\n\nBut we probably should have \n\n```\nsage: J = AbelianGroup([2,3])\nsage: J.invariants()\n[2, 3]\nsage: J.elementary_divisors()\n[6]\n```\n\n\nsince you want the elementary divisor of AbelianGroup([2,3]) to be the same as that of AbelianGroup([6]). \n\nI'll try to fix this too.",
+    "created_at": "2008-12-12T23:28:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3749",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3749#issuecomment-26633",
+    "user": "wdj"
+}
+```
 
 In reply to 
 
@@ -287,38 +448,95 @@ since you want the elementary divisor of AbelianGroup([2,3]) to be the same as t
 I'll try to fix this too.
 
 
+
 ---
 
-Comment by wdj created at 2008-12-12 23:51:20
+archive/issue_comments_026634.json:
+```json
+{
+    "body": "The others should be applied first. Based on 3.2.2.alpha1",
+    "created_at": "2008-12-12T23:51:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3749",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3749#issuecomment-26634",
+    "user": "wdj"
+}
+```
 
 The others should be applied first. Based on 3.2.2.alpha1
 
 
+
 ---
+
+archive/issue_comments_026635.json:
+```json
+{
+    "body": "Attachment\n\nI think this last patch fixes things the way you suggested. Also, both abelian_groups.py and dual_abelian_groups.py pass sage -t now.",
+    "created_at": "2008-12-12T23:53:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3749",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3749#issuecomment-26635",
+    "user": "wdj"
+}
+```
 
 Attachment
 
 I think this last patch fixes things the way you suggested. Also, both abelian_groups.py and dual_abelian_groups.py pass sage -t now.
 
 
+
 ---
 
-Comment by cremona created at 2009-01-18 18:14:15
+archive/issue_comments_026636.json:
+```json
+{
+    "body": "Review:   I have been avoiding reviewing this for ages since I hate the whole abelian groups code so much that every time I look at it I want to rewrite it from scratch, but am never going to have the time.  But that is silly.\n\nThis code (after applying all three patches in succession to 3.2.3) gives correct answers now for both elementary_divisors() and is_cyclic(), as far as I can see.  So it can pass.",
+    "created_at": "2009-01-18T18:14:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3749",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3749#issuecomment-26636",
+    "user": "cremona"
+}
+```
 
 Review:   I have been avoiding reviewing this for ages since I hate the whole abelian groups code so much that every time I look at it I want to rewrite it from scratch, but am never going to have the time.  But that is silly.
 
 This code (after applying all three patches in succession to 3.2.3) gives correct answers now for both elementary_divisors() and is_cyclic(), as far as I can see.  So it can pass.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-19 06:28:32
+archive/issue_comments_026637.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-01-19T06:28:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3749",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3749#issuecomment-26637",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-19 06:28:32
+archive/issue_comments_026638.json:
+```json
+{
+    "body": "Merged all three patches in Sage 3.3.alpha0",
+    "created_at": "2009-01-19T06:28:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3749",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3749#issuecomment-26638",
+    "user": "mabshoff"
+}
+```
 
 Merged all three patches in Sage 3.3.alpha0

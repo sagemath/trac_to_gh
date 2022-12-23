@@ -1,47 +1,118 @@
 # Issue 4733: matrix exponential for general matrices
 
-Issue created by migration from https://trac.sagemath.org/ticket/4733
-
-Original creator: jason
-
-Original creation time: 2008-12-06 23:35:17
-
+archive/issues_004733.json:
+```json
+{
+    "body": "Assignee: was\n\nThis adds a generic matrix exponential (convert to SR matrix; use maxima, or use scipy if RDF/CDF matrix)\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4733\n\n",
+    "created_at": "2008-12-06T23:35:17Z",
+    "labels": [
+        "linear algebra",
+        "major",
+        "bug"
+    ],
+    "title": "matrix exponential for general matrices",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4733",
+    "user": "jason"
+}
+```
 Assignee: was
 
 This adds a generic matrix exponential (convert to SR matrix; use maxima, or use scipy if RDF/CDF matrix)
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4733
+
+
+
+
 
 ---
 
-Comment by jason created at 2008-12-06 23:36:03
+archive/issue_comments_035721.json:
+```json
+{
+    "body": "Changing type from defect to enhancement.",
+    "created_at": "2008-12-06T23:36:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4733#issuecomment-35721",
+    "user": "jason"
+}
+```
 
 Changing type from defect to enhancement.
 
 
+
 ---
+
+archive/issue_comments_035722.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-12-06T23:36:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4733#issuecomment-35722",
+    "user": "jason"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by jason created at 2008-12-06 23:36:56
+archive/issue_comments_035723.json:
+```json
+{
+    "body": "depends on #4493",
+    "created_at": "2008-12-06T23:36:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4733#issuecomment-35723",
+    "user": "jason"
+}
+```
 
 depends on #4493
 
 
+
 ---
 
-Comment by jason created at 2008-12-07 04:51:14
+archive/issue_comments_035724.json:
+```json
+{
+    "body": "This takes care of #2273 (sorry, I didn't find that one before opening this one).",
+    "created_at": "2008-12-07T04:51:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4733#issuecomment-35724",
+    "user": "jason"
+}
+```
 
 This takes care of #2273 (sorry, I didn't find that one before opening this one).
 
 
+
 ---
 
-Comment by wdj created at 2008-12-07 13:26:45
+archive/issue_comments_035725.json:
+```json
+{
+    "body": "For my teaching, this is a very useful addition. However, the following behavior seems odd. Maybe it is a quirk and not a bug. Still, I'd like someone to comment on it before reviewing this further. \n\n(It is based on the facts that exp(A) commutes with A\nand the derivative of exp(At) equals Aexp(At)=exp(At)A.)\n\n\n```\nsage: t = var('t')                 \nsage: A = matrix([[1,2],[3,4]])\nsage: B = (t*A).exp()\nsage: Bprime = matrix(map(diff,B.list()))\nsage: B(1)*A == Bprime(1)\nFalse                    \nsage: B(1)*A == A*B(1)\nFalse                 \nsage: B*A == A*B\nFalse           \nsage: MS = MatrixSpace(RR,2,2)\nsage: MS(A*B(1)) == MS(Bprime(1))\nFalse\nsage: MS(A*B(1)); MS(Bprime(1))\n\n[276.178649899715 402.884170665423]\n[604.326255998134 880.504905897849]\n\n[276.178649899715 402.884170665423]\n[604.326255998134 880.504905897849]\nsage: MS(A*B(-1)); MS(Bprime(-1))\n\n[-0.405192443954626  0.196757133983140]\n[ 0.295135700974710 -0.110056742979916]\n\n[-0.405192443954626  0.196757133983140]\n[ 0.295135700974710 -0.110056742979916]\nsage: MS(A*B(-1)); MS(B(-1)*A)\n\n[-0.405192443954626  0.196757133983140]\n[ 0.295135700974710 -0.110056742979916]\n\n[-0.405192443954626  0.196757133983140]\n[ 0.295135700974711 -0.110056742979916]\nsage:\n```\n",
+    "created_at": "2008-12-07T13:26:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4733#issuecomment-35725",
+    "user": "wdj"
+}
+```
 
 For my teaching, this is a very useful addition. However, the following behavior seems odd. Maybe it is a quirk and not a bug. Still, I'd like someone to comment on it before reviewing this further. 
 
@@ -89,16 +160,38 @@ sage:
 
 
 
+
 ---
 
-Comment by jason created at 2008-12-12 21:28:42
+archive/issue_comments_035726.json:
+```json
+{
+    "body": "Sorry, I only had a minute to look at your code...What exactly is odd?",
+    "created_at": "2008-12-12T21:28:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4733#issuecomment-35726",
+    "user": "jason"
+}
+```
 
 Sorry, I only had a minute to look at your code...What exactly is odd?
 
 
+
 ---
 
-Comment by jason created at 2008-12-12 21:39:44
+archive/issue_comments_035727.json:
+```json
+{
+    "body": "I think I see what you were saying:\n\n\n```\nsage: t = var('t')     \nsage: A = matrix([[1,2],[3,4]])\nsage: B = (t*A).exp()\nsage: Bprime = matrix(map(diff,B.list())) # This is wrong...\nsage: Bprime.nrows()\n1\nsage: Bprime = B.apply_map(diff) # This is right (and with 3.2.2, we could just do diff(B,x) :).\nsage: Bprime.nrows()\n2\nsage: B(1)*A == Bprime(1)\nFalse\nsage: B(1)*A == A*B(1)\nFalse\nsage: n(B(1)*A - A*B(1)) # Close to zero, should be equal to zero\n[   0.000000000000000 1.42108547152020e-14]\n[5.68434188608080e-14    0.000000000000000]\nsage: n(B(1)*A - Bprime(1)) # Close to zero, should be equal to zero\n\n[ 2.13162820728030e-14 -1.27897692436818e-13]\n[-4.26325641456060e-14  2.84217094304040e-14]\n```\n\n\nEverything is all right, though.  \"==\" returning false just means that Sage can't prove that they are equal.  Let's simplify instead:\n\n\n```\nsage: (B(1)*A - A*B(1)).apply_map(lambda e: e.full_simplify())\n\n[0 0]\n[0 0]\nsage: (B(1)*A - Bprime(1)).apply_map(lambda e: e.full_simplify())\n\n[0 0]\n[0 0]\n```\n\n\nDoes that ease your mind?  Can you review this patch now?",
+    "created_at": "2008-12-12T21:39:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4733#issuecomment-35727",
+    "user": "jason"
+}
+```
 
 I think I see what you were saying:
 
@@ -145,18 +238,40 @@ sage: (B(1)*A - Bprime(1)).apply_map(lambda e: e.full_simplify())
 Does that ease your mind?  Can you review this patch now?
 
 
+
 ---
 
-Comment by wdj created at 2008-12-12 23:11:20
+archive/issue_comments_035728.json:
+```json
+{
+    "body": "Yes, thanks. I just wanted to make sure that wasn't a problem.\n\nApplies cleanly and passes sage -t on both modules it modifies. Looks good to me.",
+    "created_at": "2008-12-12T23:11:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4733#issuecomment-35728",
+    "user": "wdj"
+}
+```
 
 Yes, thanks. I just wanted to make sure that wasn't a problem.
 
 Applies cleanly and passes sage -t on both modules it modifies. Looks good to me.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-13 02:45:21
+archive/issue_comments_035729.json:
+```json
+{
+    "body": "This patch does not compile for me:\n\n```\npython2.5 `which cython` --embed-positions --incref-local-binop \n-I/scratch/mabshoff/release-cycle/sage-3.2.2.alpha2/devel/sage-main \n-o sage/matrix/matrix_mod2_dense.c sage/matrix/matrix_mod2_dense.pyx\n\nError converting Pyrex file to C:\n------------------------------------------------------------\n...\n        a = t.transpose()\n        right_mat = right_mat* s.transpose()\n\n    return left_mat, a, right_mat\n    \n    def exp(self):\n   ^\n------------------------------------------------------------\n\n/scratch/mabshoff/release-cycle/sage-3.2.2.alpha2/devel/sage-main/\nsage/matrix/matrix2.pyx:4914:4: def statement not allowed here\nParallel build failed with status 256.\nsage: There was an error installing modified sage library code.\n```\n\nNote that it applied with huge, i.e. 337 line, offset. This patch probably needs a rebase.\n\nCheers,\n\nMichael",
+    "created_at": "2008-12-13T02:45:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4733#issuecomment-35729",
+    "user": "mabshoff"
+}
+```
 
 This patch does not compile for me:
 
@@ -190,27 +305,73 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-01-22 01:50:48
+archive/issue_comments_035730.json:
+```json
+{
+    "body": "trivial rebase to 3.3.alpha0",
+    "created_at": "2009-01-22T01:50:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4733#issuecomment-35730",
+    "user": "AlexGhitza"
+}
+```
 
 trivial rebase to 3.3.alpha0
 
 
+
 ---
+
+archive/issue_comments_035731.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-01-22T06:18:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4733#issuecomment-35731",
+    "user": "AlexGhitza"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-23 07:30:51
+archive/issue_comments_035732.json:
+```json
+{
+    "body": "Merged in Sage 3.3.alpha1",
+    "created_at": "2009-01-23T07:30:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4733#issuecomment-35732",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.3.alpha1
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-23 07:30:51
+archive/issue_comments_035733.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-01-23T07:30:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4733",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4733#issuecomment-35733",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

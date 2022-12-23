@@ -1,11 +1,21 @@
 # Issue 5240: Updayte FLINT to 1.1.1 (latest upstream)
 
-Issue created by migration from https://trac.sagemath.org/ticket/5240
-
-Original creator: mabshoff
-
-Original creation time: 2009-02-12 01:00:34
-
+archive/issues_005240.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  burcin\n\nFrom the flint-devel mailing list:\n\n```\nI've just release FLINT 1.1.1. This is a service release to fix some\nSERIOUS issues in FLINT 1.1.0. I strongly recommend upgrading!\n\nThe issues fixed were as follows:\n\n* fmpz_poly_gcd had a serious bug in it (which was actually in the\nfunction fmpz_poly_gcd_heuristic) which caused it to return the\n****WRONG ANSWER**** in certain cases, specifically when aliasing one\nof the inputs with the output and where the heuristic gcd was not\nsufficient to compute the gcd. In this case the heuristic gcd would\ncorrupt the output (which is aliased with an input) and pass the\ncorrupted inputs to another gcd algorithm, which would then get things\nwrong. This occurs rarely, as the heuristic gcd cannot compute the gcd\nin rare cases. I was unable to get it to return a wrong answer except\nin the case where the inputs both had a Gaussian content whose gcd was\nnon-trivial. However, it may theoretically occur in other cases.\n\n* fmpz_poly_gcd_subresultant needed a special case to deal with length\n1 polynomials. Actually this probably did not cause a bug, but was\nfixed anyway as a precaution (and for performance reasons).\n\n* _fmpz_poly_scalar_mul_fmpz could cause a segmentation fault. This\nwas due to the fact that GMP, when multiplying integers of n1 and n2\nlimbs, automatically takes n1 + n2 limbs to write the result, even if\nthey are not all needed. I changed the interface of the precached FFT\nmultiplication some time ago to use this same semantics, but did not\nadjust the scalar multiplication function accordingly.\n\n* test__fmpz_poly_scalar_div_fmpz did not allocate sufficient space in\nthe output and so could segfault in very rare cases.\n\n* test_fmpz_poly_scalar_div_fmpz did not allocate sufficient space in\nthe output and so could segfault in very rare cases.\n\n* test_fmpz_poly_scalar_div_mpz did not allocate sufficient space in\nthe output and so could segfault in very rare cases.\n\nBill.\n```\n\nSage is not affected by all of the bugs, but at least some of the crash bugs do affect Sage.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5240\n\n",
+    "created_at": "2009-02-12T01:00:34Z",
+    "labels": [
+        "algebra",
+        "critical",
+        "bug"
+    ],
+    "title": "Updayte FLINT to 1.1.1 (latest upstream)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5240",
+    "user": "mabshoff"
+}
+```
 Assignee: tbd
 
 CC:  burcin
@@ -59,24 +69,61 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/5240
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2009-02-12 01:00:52
+archive/issue_comments_040145.json:
+```json
+{
+    "body": "Changing assignee from tbd to mabshoff.",
+    "created_at": "2009-02-12T01:00:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5240",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5240#issuecomment-40145",
+    "user": "mabshoff"
+}
+```
 
 Changing assignee from tbd to mabshoff.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-12 01:00:52
+archive/issue_comments_040146.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-02-12T01:00:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5240",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5240#issuecomment-40146",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-16 05:17:01
+archive/issue_comments_040147.json:
+```json
+{
+    "body": "We are still shipping FLINT 1.0.21 in Sage 3.3, so let's bump the update post 3.3 since it is rather late to do this.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-16T05:17:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5240",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5240#issuecomment-40147",
+    "user": "mabshoff"
+}
+```
 
 We are still shipping FLINT 1.0.21 in Sage 3.3, so let's bump the update post 3.3 since it is rather late to do this.
 
@@ -85,9 +132,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-16 05:17:30
+archive/issue_comments_040148.json:
+```json
+{
+    "body": "Burcin: Have you done any work to update to FLINT 1.1 in Sage yet?\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-16T05:17:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5240",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5240#issuecomment-40148",
+    "user": "mabshoff"
+}
+```
 
 Burcin: Have you done any work to update to FLINT 1.1 in Sage yet?
 
@@ -96,9 +154,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by burcin created at 2009-02-22 11:13:20
+archive/issue_comments_040149.json:
+```json
+{
+    "body": "Nothing beyond trivially replacing the source directory in the package, and that was only for 1.1.0. Since FLINT will link to zn_poly, I assume the package needs further changes.\n\nIf you put up a package, I can quickly check if any changes are required in the library for the update. Unfortunately, I don't think I'll have time to prepare a package myself.\n\nCheers,\n\nBurcin",
+    "created_at": "2009-02-22T11:13:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5240",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5240#issuecomment-40149",
+    "user": "burcin"
+}
+```
 
 Nothing beyond trivially replacing the source directory in the package, and that was only for 1.1.0. Since FLINT will link to zn_poly, I assume the package needs further changes.
 
@@ -109,18 +178,40 @@ Cheers,
 Burcin
 
 
+
 ---
 
-Comment by was created at 2009-03-01 04:56:13
+archive/issue_comments_040150.json:
+```json
+{
+    "body": "I created an spkg:\n\nhttp://sage.math.washington.edu/home/wstein/patches/flint-1.1.1.spkg",
+    "created_at": "2009-03-01T04:56:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5240",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5240#issuecomment-40150",
+    "user": "was"
+}
+```
 
 I created an spkg:
 
 http://sage.math.washington.edu/home/wstein/patches/flint-1.1.1.spkg
 
 
+
 ---
 
-Comment by burcin created at 2009-03-01 15:28:26
+archive/issue_comments_040151.json:
+```json
+{
+    "body": "With the package from comment:6, I get:\n\n\n```\n...\nFinished extraction\n****************************************************\nHost system\nuname -a:\nLinux karr 2.6.28-tuxonice #1 SMP PREEMPT Tue Jan 13 08:45:33 CET 2009 x86_64 Intel(R) Core(TM)2 Duo CPU T9300 @ 2.50GHz GenuineIntel GNU/Linux\n****************************************************\n****************************************************\nGCC Version\ngcc -v\nUsing built-in specs.\nTarget: x86_64-pc-linux-gnu\nConfigured with: /var/portage/tmp/sys-devel-gcc-4.1.2/work/gcc-4.1.2/configure --prefix=/usr --bindir=/usr/x86_64-pc-linux-gnu/gcc-bin/4.1.2 --includedir=/usr/lib/gcc/x86_64-pc-linux-gnu/4.1.2/include --datadir=/usr/share/gcc-data/x86_64-pc-linux-gnu/4.1.2 --mandir=/usr/share/gcc-data/x86_64-pc-linux-gnu/4.1.2/man --infodir=/usr/share/gcc-data/x86_64-pc-linux-gnu/4.1.2/info --with-gxx-include-dir=/usr/lib/gcc/x86_64-pc-linux-gnu/4.1.2/include/g++-v4 --host=x86_64-pc-linux-gnu --build=x86_64-pc-linux-gnu --disable-altivec --enable-nls --without-included-gettext --with-system-zlib --disable-checking --disable-werror --enable-secureplt --enable-multilib --enable-libmudflap --disable-libssp --disable-libgcj --enable-languages=c,c++,treelang,fortran --enable-shared --enable-threads=posix --enable-__cxa_atexit --enable-clocale=gnu\nThread model: posix\ngcc version 4.1.2 (Gentoo 4.1.2 p1.3)\n****************************************************\nFound gcc 4 or later\nDeleting old FLINT\ngcc -std=c99 -I/home/burcin/sage/sage-3.3.alpha5/local/include/ -I/home/burcin/sage/sage-3.3.alpha5/local/include -I -fPIC -funroll-loops  -O3 -c mpn_extras.c -o mpn_extras.o\n...\ngcc -std=c99 -I/home/burcin/sage/sage-3.3.alpha5/local/include/ -I/home/burcin/sage/sage-3.3.alpha5/local/include -I -fPIC -funroll-loops  -O3 -c mpz_mat.c -o mpz_mat.o\ngcc -std=c99 -fPIC -shared -o libflint.so mpn_extras.o mpz_extras.o memory-manager.o ZmodF.o ZmodF_mul.o ZmodF_mul-tuning.o fmpz.o fmpz_poly.o mpz_poly-tuning.o mpz_poly.o ZmodF_poly.o long_extras.o zmod_poly.o NTL-interface.o theta.o zmod_mat.o mpz_mat.o  -L/home/burcin/sage/sage-3.3.alpha5/local/lib/ -L  -lgmp -lpthread -lntl -lm -lstdc++ \n/usr/lib/gcc/x86_64-pc-linux-gnu/4.1.2/../../../../x86_64-pc-linux-gnu/bin/ld: mpn_extras.o: relocation R_X86_64_32S against `FFT_SQR_TWK' can not be used when making a shared object; recompile with -fPIC\nmpn_extras.o: could not read symbols: Bad value\ncollect2: ld returned 1 exit status\nmake: *** [libflint.so] Error 1\nError building flint shared library.\n\nreal    0m26.358s\nuser    0m21.673s\nsys     0m0.924s\nsage: An error occurred while installing flint-1.1.1\nPlease email sage-devel http://groups.google.com/group/sage-devel\n...\n```\n\n\nI have no idea what the error about the shared library and -fPIC means. Looking at the gcc flags in the previous lines, -fPIC is already there.\n\nBTW, deleting the library files before the build is not a good idea. In this case, the package corrupted my Sage install.",
+    "created_at": "2009-03-01T15:28:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5240",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5240#issuecomment-40151",
+    "user": "burcin"
+}
+```
 
 With the package from comment:6, I get:
 
@@ -168,9 +259,20 @@ I have no idea what the error about the shared library and -fPIC means. Looking 
 BTW, deleting the library files before the build is not a good idea. In this case, the package corrupted my Sage install.
 
 
+
 ---
 
-Comment by was created at 2009-03-01 16:32:02
+archive/issue_comments_040152.json:
+```json
+{
+    "body": "I've posted:\n\nhttp://sage.math.washington.edu/home/wstein/patches/flint-1.1.2.spkg\n\nIt does not address Burcin's comment, but updates the flint version.   This new version works fine on OS X but does *not* work on Linux. \n\nRegarding \"deleting old FLINT\", I didn't write that.  And I strongly agree it is a very annoying thing to do!  One should only do that if the build succeeds.",
+    "created_at": "2009-03-01T16:32:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5240",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5240#issuecomment-40152",
+    "user": "was"
+}
+```
 
 I've posted:
 
@@ -181,9 +283,20 @@ It does not address Burcin's comment, but updates the flint version.   This new 
 Regarding "deleting old FLINT", I didn't write that.  And I strongly agree it is a very annoying thing to do!  One should only do that if the build succeeds.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-03-01 16:37:39
+archive/issue_comments_040153.json:
+```json
+{
+    "body": "I guess we ought to upgrade to 1.1.2 :)\n\n```\nI have issued a bug release for FLINT. This tries to fix some dramatic\nslowdowns that occur in fmpz_poly_divrem and fmpz_poly_pseudo_divrem,\nnoted by William Stein.\n\nEssentially the issue only showed up when calling these functions\nrepeatedly with some of the same polynomials as parameters (perhaps\npermuted). This is common in euclidean gcd-like algorithms (e.g.\npolynomial signature computation using Sturm sequences).\n\nAlong the way, I noted a handful of potentially unsafe lines of code\nand I fixed those (unfortunately the unmanaged _fmpz_poly_left_shift\nfunction doesn't like length 0 polynomials with zero limbs allocated\nfor coefficients), and this can't be fixed without radically altering\nlots of FLINT 1.1.x. The managed version of this function is safe.\nHowever some of the division code uses the unmanaged version and in a\ncouple of places where there may also be no limbs allocated. These\ncould have caused segfaults, though I expect their chance of doing so\nwas pretty low, though it is probably possible to construct\npolynomials which could have caused the issue.\n\nBill.\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2009-03-01T16:37:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5240",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5240#issuecomment-40153",
+    "user": "mabshoff"
+}
+```
 
 I guess we ought to upgrade to 1.1.2 :)
 
@@ -217,9 +330,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by was created at 2009-03-01 18:31:21
+archive/issue_comments_040154.json:
+```json
+{
+    "body": "Hi,\n\nThe spkg here now works for me on sage.math (at least it builds fine).  Bill helped me fix an issue with missing -fPIC.\n\nhttp://sage.math.washington.edu/home/wstein/patches/flint-1.1.2.spkg\n\nI fixed the build issues.  \n\nI ran the full sage test suite and all tests pass on 3.4.alpha0...\n\nHowever, probably related, 190GB of RAM were being used.  So there may be a massive memory leak... somehow.",
+    "created_at": "2009-03-01T18:31:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5240",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5240#issuecomment-40154",
+    "user": "was"
+}
+```
 
 Hi,
 
@@ -234,9 +358,20 @@ I ran the full sage test suite and all tests pass on 3.4.alpha0...
 However, probably related, 190GB of RAM were being used.  So there may be a massive memory leak... somehow.
 
 
+
 ---
 
-Comment by burcin created at 2009-03-15 11:58:46
+archive/issue_comments_040155.json:
+```json
+{
+    "body": "There is a package for the latest FLINT version here:\n\nhttp://sage.math.washington.edu/home/burcin/flint/flint-1.2.1.spkg\n\nIt builds fine on my laptop (Gentoo, gcc 4.1.2, Core2Duo T9300) and sage.math. All sage and FLINT tests pass.\n\nHere are the list of changes (from SPKG.txt):\n\n* Upgraded to newest stable version\n* delay deleting library in local/lib until build is complete\n* added zmod_mat-test and NTL-interface-test to spkg-check\n* spkg-check now exits on error\n* enabled tests\n\nWith this version, I don't see any problems with memory usage during tests.",
+    "created_at": "2009-03-15T11:58:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5240",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5240#issuecomment-40155",
+    "user": "burcin"
+}
+```
 
 There is a package for the latest FLINT version here:
 
@@ -246,34 +381,67 @@ It builds fine on my laptop (Gentoo, gcc 4.1.2, Core2Duo T9300) and sage.math. A
 
 Here are the list of changes (from SPKG.txt):
 
- * Upgraded to newest stable version
- * delay deleting library in local/lib until build is complete
- * added zmod_mat-test and NTL-interface-test to spkg-check
- * spkg-check now exits on error
- * enabled tests
+* Upgraded to newest stable version
+* delay deleting library in local/lib until build is complete
+* added zmod_mat-test and NTL-interface-test to spkg-check
+* spkg-check now exits on error
+* enabled tests
 
 With this version, I don't see any problems with memory usage during tests.
 
 
+
 ---
 
-Comment by burcin created at 2009-03-15 11:58:46
+archive/issue_comments_040156.json:
+```json
+{
+    "body": "Changing component from algebra to packages.",
+    "created_at": "2009-03-15T11:58:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5240",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5240#issuecomment-40156",
+    "user": "burcin"
+}
+```
 
 Changing component from algebra to packages.
 
 
+
 ---
 
-Comment by burcin created at 2009-03-31 09:54:06
+archive/issue_comments_040157.json:
+```json
+{
+    "body": "New version of the package with FLINT 1.2.2 is here:\n\nhttp://sage.math.washington.edu/home/burcin/flint/flint-1.2.2.spkg",
+    "created_at": "2009-03-31T09:54:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5240",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5240#issuecomment-40157",
+    "user": "burcin"
+}
+```
 
 New version of the package with FLINT 1.2.2 is here:
 
 http://sage.math.washington.edu/home/burcin/flint/flint-1.2.2.spkg
 
 
+
 ---
 
-Comment by mabshoff created at 2009-03-31 09:58:37
+archive/issue_comments_040158.json:
+```json
+{
+    "body": "Incidentally Bill asked me about this update, so we should try to get this into 3.4.1.\n\nCheers,\n\nMichael",
+    "created_at": "2009-03-31T09:58:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5240",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5240#issuecomment-40158",
+    "user": "mabshoff"
+}
+```
 
 Incidentally Bill asked me about this update, so we should try to get this into 3.4.1.
 
@@ -282,9 +450,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-03-31 20:35:29
+archive/issue_comments_040159.json:
+```json
+{
+    "body": "FLINT 1.2.3 is out which fixes a bug Burcin pointed out[here](http://sourceforge.net/mailarchive/forum.php?thread_name=20090331192030.7634e082%40karr&forum_name=flint-devel). I will update the spkg shortly unless someone beats me to it.\n\nCheers,\n\nMichael",
+    "created_at": "2009-03-31T20:35:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5240",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5240#issuecomment-40159",
+    "user": "mabshoff"
+}
+```
 
 FLINT 1.2.3 is out which fixes a bug Burcin pointed out[here](http://sourceforge.net/mailarchive/forum.php?thread_name=20090331192030.7634e082%40karr&forum_name=flint-devel). I will update the spkg shortly unless someone beats me to it.
 
@@ -293,9 +472,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-03 02:18:22
+archive/issue_comments_040160.json:
+```json
+{
+    "body": "I update to FLINT 1.2.3, but there is some issue with `__thread` on OSX:\n\n```\ngcc -std=c99 -I/Users/mabshoff/sage-3.3.rc3/local/include/ -I/Users/mabshoff/sage-\n3.3.rc3/local/include  -fPIC -funroll-loops   -O3 -c memory-manager.c -o memory-\nmanager.o\nmemory-manager.c:165: error: thread-local storage not supported for this target\nmemory-manager.c:166: error: thread-local storage not supported for this target\nmemory-manager.c:167: error: thread-local storage not supported for this target\nmemory-manager.c:168: error: thread-local storage not supported for this target\nmemory-manager.c:169: error: thread-local storage not supported for this target\nmemory-manager.c: In function \u2018flint_stack_alloc\u2019:\nmemory-manager.c:175: error: thread-local storage not supported for this target\nmemory-manager.c:176: error: thread-local storage not supported for this target\nmemory-manager.c:177: error: thread-local storage not supported for this target\nmemory-manager.c:178: error: thread-local storage not supported for this target\nmemory-manager.c:179: error: thread-local storage not supported for this target\nmemory-manager.c:180: error: thread-local storage not supported for this target\nmemory-manager.c: At top level:\nmemory-manager.c:329: error: thread-local storage not supported for this target\nmemory-manager.c:330: error: thread-local storage not supported for this target\nmake: *** [memory-manager.o] Error 1\nFailed to build FLINT dylib.\n```\n\n\nBill recommended removing `__thread` for now in Sage since we are not using any threading. There is a workaround for OSX - see http://lists.apple.com/archives/xcode-users/2006/Jun/msg00551.html\n\n```\n__thread is not supported. The specification is somewhat ELF- specific, which makes it a bit of a challenge.\n\nThread-local storage is supported, however. Take a look at the man page for pthread_getspecific, for example.\n```\n\n\nThe latest spkg is at\n\n  http://sage.math.washington.edu/home/mabshoff/SPKG/flint-1.2.3.spkg\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-03T02:18:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5240",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5240#issuecomment-40160",
+    "user": "mabshoff"
+}
+```
 
 I update to FLINT 1.2.3, but there is some issue with `__thread` on OSX:
 
@@ -341,9 +531,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-03 02:57:58
+archive/issue_comments_040161.json:
+```json
+{
+    "body": "There is another issue on Solaris 10:\n\n```\ngcc -std=c99 -I/home/mabshoff/build-3.3/sage-3.3-fulvia/local/include/ \n-I/home/mabshoff/build-3.3/sage-3.3-fulvia/local/include  -fPIC -funroll-loops   \n-O3 -c mpn_extras-test.c -o mpn_extras-test.o\nIn file included from /usr/include/sys/time.h:99,\n                 from profiler.h:30,\n                 from test-support.h:36,\n                 from mpn_extras-test.c:35:\n/usr/include/sys/types.h:536: error: duplicate \u2018unsigned\u2019\nmake: *** [mpn_extras-test.o] Error 1\nError building the test suite for FLINT\n```\n\n\nThe fix here is to undef ulong in profile.h right before including time.h and the other two headers.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-03T02:57:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5240",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5240#issuecomment-40161",
+    "user": "mabshoff"
+}
+```
 
 There is another issue on Solaris 10:
 
@@ -368,9 +569,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-04 04:18:24
+archive/issue_comments_040162.json:
+```json
+{
+    "body": "FLINT 1.2.4 is out which should fix the above problems :)\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-04T04:18:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5240",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5240#issuecomment-40162",
+    "user": "mabshoff"
+}
+```
 
 FLINT 1.2.4 is out which should fix the above problems :)
 
@@ -379,9 +591,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-04 05:10:55
+archive/issue_comments_040163.json:
+```json
+{
+    "body": "The latest spkg is at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.4.1/rc0/flint-1.2.4.spkg\n\nIt builds and passes its test suite fine on Linux, OSX and Solaris.\n\nSince this is merely an updated version of Burcin's spkg I am giving this a positive review.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-04T05:10:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5240",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5240#issuecomment-40163",
+    "user": "mabshoff"
+}
+```
 
 The latest spkg is at
 
@@ -396,9 +619,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-04 05:12:16
+archive/issue_comments_040164.json:
+```json
+{
+    "body": "Merged in Sage 3.4.1.rc0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-04T05:12:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5240",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5240#issuecomment-40164",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.4.1.rc0.
 
@@ -407,16 +641,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-04 05:12:16
+archive/issue_comments_040165.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-04-04T05:12:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5240",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5240#issuecomment-40165",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-04 06:30:36
+archive/issue_comments_040166.json:
+```json
+{
+    "body": "Hmm, the following failure is cause by the new FLINT:\n\n```\nsage -t -long devel/sage/sage/schemes/elliptic_curves/monsky_washnitzer.py\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.rc0/devel/sage-main/sage/schemes/elliptic_curves/monsky_washnitzer.py\", line 1487:\n    sage: B = A.change_ring(Integers(p**prec)); B               # long time\nExpected:\n    [74311982 57996908]\n    [95877067 25828133]\nGot:\n    [54572546 87269244]\n    [10839343 79974813]\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.rc0/devel/sage-main/sage/schemes/elliptic_curves/monsky_washnitzer.py\", line 1490:\n    sage: B.det()                                               # long time\nExpected:\n    10007\nGot:\n    29700776\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.rc0/devel/sage-main/sage/schemes/elliptic_curves/monsky_washnitzer.py\", line 1492:\n    sage: B.trace()                                             # long time\nExpected:\n    66\nGot:\n    34407310\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.rc0/devel/sage-main/sage/schemes/elliptic_curves/monsky_washnitzer.py\", line 1562:\n    sage: B.det()                                               # long time\nExpected:\n    11 + 484*t^2 + 451*t^3 + O(t^4)\nGot:\n    245 + 240*t + 724*t^2 + 808*t^3 + O(t^4)\n**********************************************************************\n```\n",
+    "created_at": "2009-04-04T06:30:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5240",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5240#issuecomment-40166",
+    "user": "mabshoff"
+}
+```
 
 Hmm, the following failure is cause by the new FLINT:
 

@@ -1,11 +1,21 @@
 # Issue 2189: improve functionality of matrix_plot
 
-Issue created by migration from https://trac.sagemath.org/ticket/2189
-
-Original creator: was
-
-Original creation time: 2008-02-17 06:34:18
-
+archive/issues_002189.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  jason kcrisman\n\n\n```\n\n\nOn Feb 16, 2008 10:19 PM, inerkor@gmail.com <inerkor@gmail.com> wrote:\n> \n> Hello all.\n> \n> I have a Matrix of, say, 64x64 and I plot it using matrix_plot(). It\n> is a fractal that fills the square [0,1]x[0,1] so I want to keep a 2D\n> view. I would like to change the x,y axes ranging values to be in the\n> interval [0,1] rather than in {0, ..., 63}. I don't know how to do it.\n> Maybe using another plotting function?.\n> \n\nNobody has implemented a simple clean way to do that in Sage yet,\nthough it would be easy to do.  Here is a hackish way to do exactly\nwhat you want:\n\nsage: a = random_matrix(RDF,64)\nsage: import numpy\nsage: m = matrix_plot(a)\nsage: m[0].xrange =numpy.array([0,1],dtype=float)   # key part of all this\nsage: m[0].yrange =numpy.array([0,1],dtype=float)\nsage: m.xmax(1); m.ymax(1)\nsage: m.show()\n\nThe above will be helpful to whoever does implement this.\n\n -- William\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2189\n\n",
+    "created_at": "2008-02-17T06:34:18Z",
+    "labels": [
+        "graphics",
+        "major",
+        "enhancement"
+    ],
+    "title": "improve functionality of matrix_plot",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2189",
+    "user": "was"
+}
+```
 Assignee: was
 
 CC:  jason kcrisman
@@ -43,17 +53,43 @@ The above will be helpful to whoever does implement this.
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2189
+
+
+
+
 
 ---
 
-Comment by whuss created at 2008-12-11 17:27:25
+archive/issue_comments_014366.json:
+```json
+{
+    "body": "Changing assignee from was to whuss.",
+    "created_at": "2008-12-11T17:27:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2189",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2189#issuecomment-14366",
+    "user": "whuss"
+}
+```
 
 Changing assignee from was to whuss.
 
 
+
 ---
 
-Comment by whuss created at 2008-12-11 17:27:25
+archive/issue_comments_014367.json:
+```json
+{
+    "body": "The patch implements custom ranges, and adds the\noptions interpolation and alpha to matrix_plot.\n\nIt also fixes a few small bugs in the axes code\nfor matrix_plot.\n\nCheers,\nWilfried",
+    "created_at": "2008-12-11T17:27:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2189",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2189#issuecomment-14367",
+    "user": "whuss"
+}
+```
 
 The patch implements custom ranges, and adds the
 options interpolation and alpha to matrix_plot.
@@ -65,9 +101,20 @@ Cheers,
 Wilfried
 
 
+
 ---
 
-Comment by kcrisman created at 2009-01-22 15:47:54
+archive/issue_comments_014368.json:
+```json
+{
+    "body": "Attempted to apply this to 3.3.alpha0 but in the meantime _render_on_subplot method of class MatrixPlot (due to #4884) and the documentation for matrix_plot have both changed, so does not apply cleanly.  Needs a rebase.\n\nNitpicks:\n1. I think this patch might fix the crazy overlap between \"49\" and \"50\" in one of the first examples of matrix_plot,\n\n```\nsage: matrix_plot(random_matrix(RDF, 50), cmap='hsv')\n```\n\nwhich looks horrible, but that should be checked when this is rebased.  \n2. In axes.py, it would be great to fix the misspelling of \"evaluate\".\n3. Possible request for improvement: the current behavior on the custom range seems to be floating point (is that correct?). Would it be possible to include custom ranges that were integer ranges, and (maybe) even ranges that actually labeled all integer values (as an option only, of course!)?  This would be very helpful for examples such as plotting a non-random matrix over GF(p), such as a colored multiplication table or power table.\n\nThis will be very helpful, though, when complete, so thanks for the work!",
+    "created_at": "2009-01-22T15:47:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2189",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2189#issuecomment-14368",
+    "user": "kcrisman"
+}
+```
 
 Attempted to apply this to 3.3.alpha0 but in the meantime _render_on_subplot method of class MatrixPlot (due to #4884) and the documentation for matrix_plot have both changed, so does not apply cleanly.  Needs a rebase.
 
@@ -85,16 +132,40 @@ which looks horrible, but that should be checked when this is rebased.
 This will be very helpful, though, when complete, so thanks for the work!
 
 
+
 ---
+
+archive/issue_comments_014369.json:
+```json
+{
+    "body": "Attachment\n\nrebased for sage-3.3.alpha1",
+    "created_at": "2009-01-23T14:28:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2189",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2189#issuecomment-14369",
+    "user": "whuss"
+}
+```
 
 Attachment
 
 rebased for sage-3.3.alpha1
 
 
+
 ---
 
-Comment by whuss created at 2009-01-23 15:44:50
+archive/issue_comments_014370.json:
+```json
+{
+    "body": "Replying to [comment:3 kcrisman]:\n> Attempted to apply this to 3.3.alpha0 but in the meantime _render_on_subplot method of class MatrixPlot (due to #4884) and the documentation for matrix_plot have both changed, so does not apply cleanly.  Needs a rebase.\n\nI added a new patch based on 3.3.alpha1\n \n> Nitpicks:\n> 1. I think this patch might fix the crazy overlap between \"49\" and \"50\" in one of the first examples of matrix_plot,\n> {{{\n> sage: matrix_plot(random_matrix(RDF, 50), cmap='hsv')\n> }}}\n> which looks horrible, but that should be checked when this is rebased.\n\nYes, the patch fixes the overlapping labels.\n\n> 2. In axes.py, it would be great to fix the misspelling of \"evaluate\".\n\nDone.\n\n> 3. Possible request for improvement: the current behavior on the custom range seems to be floating point (is that correct?). Would it be possible to include custom ranges that were integer ranges,\n\nYou already can use integer ranges. Maybe I am misunderstanding what you mean.\n\n> and (maybe) even ranges that actually labeled all integer values (as an option only, of course!)?  This would be very helpful for examples such as plotting a non-random matrix over GF(p), such as a colored multiplication table or power table.\n\nThere is already a ticket for this: #1431\n\n> This will be very helpful, though, when complete, so thanks for the work!",
+    "created_at": "2009-01-23T15:44:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2189",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2189#issuecomment-14370",
+    "user": "whuss"
+}
+```
 
 Replying to [comment:3 kcrisman]:
 > Attempted to apply this to 3.3.alpha0 but in the meantime _render_on_subplot method of class MatrixPlot (due to #4884) and the documentation for matrix_plot have both changed, so does not apply cleanly.  Needs a rebase.
@@ -125,9 +196,20 @@ There is already a ticket for this: #1431
 > This will be very helpful, though, when complete, so thanks for the work!
 
 
+
 ---
 
-Comment by kcrisman created at 2009-01-23 19:48:42
+archive/issue_comments_014371.json:
+```json
+{
+    "body": "> There is already a ticket for this: #1431\n\nYes, you are correct - I forgot about that ticket because it's not specifically about matrices.\n\nAny reviewer should keep in mind that patch at #4884 has introduced a new way to handle the colormap options, i.e.\n\n```\ncmap         -- a colormap (type cmap_help() for more information).\n```\n\nand that should probably be incorporated in this patch as well.",
+    "created_at": "2009-01-23T19:48:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2189",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2189#issuecomment-14371",
+    "user": "kcrisman"
+}
+```
 
 > There is already a ticket for this: #1431
 
@@ -142,9 +224,20 @@ cmap         -- a colormap (type cmap_help() for more information).
 and that should probably be incorporated in this patch as well.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-01-24 02:33:15
+archive/issue_comments_014372.json:
+```json
+{
+    "body": "For the examples given, this is nice - I have figured out what the purpose in the custom ranges is.\n\nOne trivial typo - in the sine bicubic example, the srange should be -pi to pi, not -pi to -pi.\n\nMore weird is the behavior of \n\n```\nsage: matrix_plot(random_matrix(RDF, 2, 2), xrange=(-100,100), yrange=(0,1))\nsage: matrix_plot(random_matrix(RDF, 2, 2), xrange=(-.01, .01), yrange=(0,1))\n```\n\nwhich both give extremely narrow plots - because of the aspect_ratio scaling technique, maybe?   Anyway, somehow it seems like the idea of a custom range is for labelling purposes (and that's a nice feature), not necessarily for scaling purposes.  If it's at least partly for labelling purposes only, a 2x2 matrix probably shouldn't look like this; an aspect ratio of more or less 1 seems most reasonable in that case.",
+    "created_at": "2009-01-24T02:33:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2189",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2189#issuecomment-14372",
+    "user": "kcrisman"
+}
+```
 
 For the examples given, this is nice - I have figured out what the purpose in the custom ranges is.
 
@@ -160,15 +253,37 @@ sage: matrix_plot(random_matrix(RDF, 2, 2), xrange=(-.01, .01), yrange=(0,1))
 which both give extremely narrow plots - because of the aspect_ratio scaling technique, maybe?   Anyway, somehow it seems like the idea of a custom range is for labelling purposes (and that's a nice feature), not necessarily for scaling purposes.  If it's at least partly for labelling purposes only, a 2x2 matrix probably shouldn't look like this; an aspect ratio of more or less 1 seems most reasonable in that case.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-11-16 16:20:23
+archive/issue_comments_014373.json:
+```json
+{
+    "body": "Assuming that #1431 is finished any time soon, an update should use it for implementation.",
+    "created_at": "2009-11-16T16:20:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2189",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2189#issuecomment-14373",
+    "user": "kcrisman"
+}
+```
 
 Assuming that #1431 is finished any time soon, an update should use it for implementation.
 
 
+
 ---
 
-Comment by kcrisman created at 2010-07-23 01:56:14
+archive/issue_comments_014374.json:
+```json
+{
+    "body": "#9578 might also be relevant.",
+    "created_at": "2010-07-23T01:56:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2189",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2189#issuecomment-14374",
+    "user": "kcrisman"
+}
+```
 
 #9578 might also be relevant.

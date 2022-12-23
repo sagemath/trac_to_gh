@@ -1,24 +1,62 @@
 # Issue 6083: speedup integer division
 
-Issue created by migration from https://trac.sagemath.org/ticket/6083
-
-Original creator: robertwb
-
-Original creation time: 2009-05-19 07:35:58
-
+archive/issues_006083.json:
+```json
+{
+    "body": "Assignee: somebody\n\nremove _sig_on and _sig_off for small operands, specialize for int divisor\n\nIssue created by migration from https://trac.sagemath.org/ticket/6083\n\n",
+    "created_at": "2009-05-19T07:35:58Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "bug"
+    ],
+    "title": "speedup integer division",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6083",
+    "user": "robertwb"
+}
+```
 Assignee: somebody
 
 remove _sig_on and _sig_off for small operands, specialize for int divisor
 
+Issue created by migration from https://trac.sagemath.org/ticket/6083
+
+
+
+
 
 ---
+
+archive/issue_comments_048410.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-05-20T03:53:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6083",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6083#issuecomment-48410",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by fredrik.johansson created at 2009-06-03 18:43:05
+archive/issue_comments_048411.json:
+```json
+{
+    "body": "I now get one trivial test failure (changed exception message):\n\n\n```\nFile \"/home/fredrik/sage-4.0/devel/sage-mpmath/sage/rings/integer.pyx\", line 2163:\n    sage: z % 0\nExpected:\n    Traceback (most recent call last):\n    ...\n    ZeroDivisionError: Integer modulo by zero\nGot:\n    Traceback (most recent call last):\n      File \"/space/wstein/farm/sage-4.0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/space/wstein/farm/sage-4.0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/space/wstein/farm/sage-4.0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_46[4]>\", line 1, in <module>\n        z % Integer(0)###line 2163:\n    sage: z % 0\n      File \"integer.pyx\", line 2189, in sage.rings.integer.Integer.__mod__ (sage/rings/integer.c:15033)\n    ZeroDivisionError: other must be nonzero\n```\n\n\nOtherwise, this patch has my approval.",
+    "created_at": "2009-06-03T18:43:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6083",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6083#issuecomment-48411",
+    "user": "fredrik.johansson"
+}
+```
 
 I now get one trivial test failure (changed exception message):
 
@@ -49,35 +87,79 @@ Got:
 Otherwise, this patch has my approval.
 
 
+
 ---
 
-Comment by robertwb created at 2009-06-03 19:00:04
+archive/issue_comments_048412.json:
+```json
+{
+    "body": "Thanks for looking at these. I'll fix this (the original error seems better).",
+    "created_at": "2009-06-03T19:00:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6083",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6083#issuecomment-48412",
+    "user": "robertwb"
+}
+```
 
 Thanks for looking at these. I'll fix this (the original error seems better).
 
 
+
 ---
 
-Comment by craigcitro created at 2009-06-05 04:47:48
+archive/issue_comments_048413.json:
+```json
+{
+    "body": "This patch looks good. I've added a referee patch that makes a few really minor changes:\n\n* removes the unused `_floordiv` function\n* changes the error messages: they all now say either \"Integer division by zero\" or \"Integer modulo by zero.\" I think these are more informative, and they also now mirror the Python ones (which all say \"integer division or modulus by zero\"). The old ones were of the form `\"other (=%s) must be nonzero\"%other`, and by definition **always** had other equal to 0, so that just seemed silly. \n\nUnless Robert or Fredrik has any objections to the second patch, I'd say this is good to go.",
+    "created_at": "2009-06-05T04:47:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6083",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6083#issuecomment-48413",
+    "user": "craigcitro"
+}
+```
 
 This patch looks good. I've added a referee patch that makes a few really minor changes:
 
- * removes the unused `_floordiv` function
- * changes the error messages: they all now say either "Integer division by zero" or "Integer modulo by zero." I think these are more informative, and they also now mirror the Python ones (which all say "integer division or modulus by zero"). The old ones were of the form `"other (=%s) must be nonzero"%other`, and by definition *always* had other equal to 0, so that just seemed silly. 
+* removes the unused `_floordiv` function
+* changes the error messages: they all now say either "Integer division by zero" or "Integer modulo by zero." I think these are more informative, and they also now mirror the Python ones (which all say "integer division or modulus by zero"). The old ones were of the form `"other (=%s) must be nonzero"%other`, and by definition **always** had other equal to 0, so that just seemed silly. 
 
 Unless Robert or Fredrik has any objections to the second patch, I'd say this is good to go.
 
 
+
 ---
 
-Comment by robertwb created at 2009-06-05 11:15:05
+archive/issue_comments_048414.json:
+```json
+{
+    "body": "Yep, looks good.",
+    "created_at": "2009-06-05T11:15:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6083",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6083#issuecomment-48414",
+    "user": "robertwb"
+}
+```
 
 Yep, looks good.
 
 
+
 ---
 
-Comment by ncalexan created at 2009-06-13 21:06:14
+archive/issue_comments_048415.json:
+```json
+{
+    "body": "Unfortunately, this causes a segfault with the 4.0.2.alpha0 singular:\n\n```\n----------------------------------------------------------------------\n\nThe following tests failed:\n\n        sage -t -long devel/sage/sage/rings/polynomial/multi_polynomial_ideal.py # Segfault\n----------------------------------------------------------------------\nTotal time for all tests: 524.4 seconds\nTests failed!\n```\n",
+    "created_at": "2009-06-13T21:06:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6083",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6083#issuecomment-48415",
+    "user": "ncalexan"
+}
+```
 
 Unfortunately, this causes a segfault with the 4.0.2.alpha0 singular:
 
@@ -94,7 +176,20 @@ Tests failed!
 
 
 
+
 ---
+
+archive/issue_comments_048416.json:
+```json
+{
+    "body": "Attachment\n\nIt turns out the segfault was coming from an infinite loop in Cython. The issue was that after the first patch above, doing `Integer % IntegerMod_gmp` would call into the `__mod__` on `IntegerMod_gmp`, which tried to check if something was zero by doing something of the form `Integer % IntegerMod_gmp` ... and repeat ad infinitum. \n\nSo the new patch adds a small snippet to fix this, and a doctest.",
+    "created_at": "2009-06-22T07:45:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6083",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6083#issuecomment-48416",
+    "user": "craigcitro"
+}
+```
 
 Attachment
 
@@ -103,15 +198,37 @@ It turns out the segfault was coming from an infinite loop in Cython. The issue 
 So the new patch adds a small snippet to fix this, and a doctest.
 
 
+
 ---
 
-Comment by cremona created at 2009-06-28 13:18:18
+archive/issue_comments_048417.json:
+```json
+{
+    "body": "Although I have not been following all the details of this one, I applied all patches successfully to 4.1.alpha2 and ran -testall successfully, so I'm giving it a positive review.",
+    "created_at": "2009-06-28T13:18:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6083",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6083#issuecomment-48417",
+    "user": "cremona"
+}
+```
 
 Although I have not been following all the details of this one, I applied all patches successfully to 4.1.alpha2 and ran -testall successfully, so I'm giving it a positive review.
 
 
+
 ---
 
-Comment by rlm created at 2009-07-04 02:09:23
+archive/issue_comments_048418.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-07-04T02:09:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6083",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6083#issuecomment-48418",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed

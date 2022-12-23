@@ -1,11 +1,21 @@
 # Issue 3879: Constructing a c_graph from a DiGraph doubles the edges.
 
-Issue created by migration from https://trac.sagemath.org/ticket/3879
-
-Original creator: saliola
-
-Original creation time: 2008-08-16 08:49:18
-
+archive/issues_003879.json:
+```json
+{
+    "body": "Assignee: rlm\n\nKeywords: c_graph\n\n\n```\nsage: D = DiGraph({0:[1]})\nsage: D.edges()\n[(0, 1, None)]\nsage: DiGraph(D).edges()\n[(0, 1, None)]\nsage: DiGraph(D,implementation=\"c_graph\").edges()\n[(0, 1, None), (1, 0, None)]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3879\n\n",
+    "created_at": "2008-08-16T08:49:18Z",
+    "labels": [
+        "graph theory",
+        "major",
+        "bug"
+    ],
+    "title": "Constructing a c_graph from a DiGraph doubles the edges.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3879",
+    "user": "saliola"
+}
+```
 Assignee: rlm
 
 Keywords: c_graph
@@ -22,16 +32,42 @@ sage: DiGraph(D,implementation="c_graph").edges()
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3879
+
+
+
+
 
 ---
 
-Comment by saliola created at 2008-08-16 08:52:09
+archive/issue_comments_027678.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2008-08-16T08:52:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3879",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3879#issuecomment-27678",
+    "user": "saliola"
+}
+```
 
 Resolution: duplicate
 
 
+
 ---
 
-Comment by saliola created at 2008-08-16 08:52:09
+archive/issue_comments_027679.json:
+```json
+{
+    "body": "Opps. Browser issues caused a re-submission. This is identical to #3878.",
+    "created_at": "2008-08-16T08:52:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3879",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3879#issuecomment-27679",
+    "user": "saliola"
+}
+```
 
 Opps. Browser issues caused a re-submission. This is identical to #3878.

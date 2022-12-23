@@ -1,11 +1,21 @@
 # Issue 5067: linear_code -- four doctest failures in specture method='leon' exposed by #4588
 
-Issue created by migration from https://trac.sagemath.org/ticket/5067
-
-Original creator: was
-
-Original creation time: 2009-01-23 09:26:08
-
+archive/issues_005067.json:
+```json
+{
+    "body": "Assignee: rlm\n\nWhen doing #4588 to fix some \"doctests never got run\" stuff, I discovered exactly one case of some wrong non-optional doctests that weren't being run. \n\nThey are in linear_code.py:\n\n\n```\nsage -t  devel/sage/sage/coding/linear_code.py\n**********************************************************************\nFile \"/space/wstein/build/sage-3.3.alpha0/devel/sage-main/sage/coding/linear_code.py\", line 1984:\n    sage: C.spectrum(method=\"leon\")\nExpected:\n    [1, 0, 0, 7, 7, 0, 0, 1]\nGot:\n    [0, 0, 0, 0, 0, 0, 0, 0]\n**********************************************************************\nFile \"/space/wstein/build/sage-3.3.alpha0/devel/sage-main/sage/coding/linear_code.py\", line 1988:\n    sage: C.spectrum() == C.spectrum(method=\"leon\")\nExpected:\n    True\n    #[1, 0, 0, 104, 468, 1404, 4056, 8424, 11934, 13442, 11232, 5616, 2080, 288]\nGot: \n    False\n**********************************************************************\nFile \"/space/wstein/build/sage-3.3.alpha0/devel/sage-main/sage/coding/linear_code.py\", line 1993:\n    sage: C.spectrum() == C.spectrum(method=\"leon\")\nExpected:\n    True\n    #[1, 0, 0, 80, 120, 264, 160]\nGot: \n    False\n**********************************************************************\nFile \"/space/wstein/build/sage-3.3.alpha0/devel/sage-main/sage/coding/linear_code.py\", line 1998:\n    sage: C.spectrum() == C.spectrum(method=\"leon\")\nExpected:\n    True\n    #[1, 0, 0, 336, 1680, 9072, 26544, 45744, 34272]\nGot: \n    False\n**********************************************************************\n1 items had failures:\n   4 of  17 in __main__.example_44\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5067\n\n",
+    "created_at": "2009-01-23T09:26:08Z",
+    "labels": [
+        "coding theory",
+        "blocker",
+        "bug"
+    ],
+    "title": "linear_code -- four doctest failures in specture method='leon' exposed by #4588",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5067",
+    "user": "was"
+}
+```
 Assignee: rlm
 
 When doing #4588 to fix some "doctests never got run" stuff, I discovered exactly one case of some wrong non-optional doctests that weren't being run. 
@@ -52,17 +62,43 @@ Got:
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5067
+
+
+
+
 
 ---
 
-Comment by was created at 2009-01-23 09:34:15
+archive/issue_comments_038597.json:
+```json
+{
+    "body": "Changing priority from blocker to major.",
+    "created_at": "2009-01-23T09:34:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5067",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5067#issuecomment-38597",
+    "user": "was"
+}
+```
 
 Changing priority from blocker to major.
 
 
+
 ---
 
-Comment by wdj created at 2009-01-24 02:25:35
+archive/issue_comments_038598.json:
+```json
+{
+    "body": "Applies cleanly to 3.3.alpha1.\n\nHowever, it seems to still fail doctests:\n\n\n```\n\n./sage -t -optional /home/wdj/sagefiles/sage-3.3.alpha1/devel/sage-spectrum/sage/coding/linear_code.py                                                                                          \nsage -t -optional \"devel/sage-spectrum/sage/coding/linear_code.py\"                                                 \n**********************************************************************                                             \nFile \"/home/wdj/sagefiles/sage-3.3.alpha1/devel/sage-spectrum/sage/coding/linear_code.py\", line 1975:              \n    sage: C.spectrum() == C.spectrum(method=\"leon\")                                                                \nExpected:                                                                                                          \n    True                                                                                                           \n    #[1, 0, 0, 104, 468, 1404, 4056, 8424, 11934, 13442, 11232, 5616, 2080, 288]                                   \nGot:                                                                                                               \n    True                                                                                                           \n**********************************************************************                                             \nFile \"/home/wdj/sagefiles/sage-3.3.alpha1/devel/sage-spectrum/sage/coding/linear_code.py\", line 1980:              \n    sage: C.spectrum() == C.spectrum(method=\"leon\")                                                                \nExpected:\n    True\n    #[1, 0, 0, 80, 120, 264, 160]\nGot:\n    True\n**********************************************************************\nFile \"/home/wdj/sagefiles/sage-3.3.alpha1/devel/sage-spectrum/sage/coding/linear_code.py\", line 1985:\n    sage: C.spectrum() == C.spectrum(method=\"leon\")\nExpected:\n    True\n    #[1, 0, 0, 336, 1680, 9072, 26544, 45744, 34272]\nGot:\n    True\n**********************************************************************\n```\n",
+    "created_at": "2009-01-24T02:25:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5067",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5067#issuecomment-38598",
+    "user": "wdj"
+}
+```
 
 Applies cleanly to 3.3.alpha1.
 
@@ -102,36 +138,93 @@ Got:
 
 
 
+
 ---
+
+archive/issue_comments_038599.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-01-24T04:12:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5067",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5067#issuecomment-38599",
+    "user": "rlm"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by rlm created at 2009-01-24 04:12:55
+archive/issue_comments_038600.json:
+```json
+{
+    "body": "OK, I've updated the patch. Please try again.",
+    "created_at": "2009-01-24T04:12:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5067",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5067#issuecomment-38600",
+    "user": "rlm"
+}
+```
 
 OK, I've updated the patch. Please try again.
 
 
+
 ---
 
-Comment by wdj created at 2009-01-24 13:19:02
+archive/issue_comments_038601.json:
+```json
+{
+    "body": "Applies cleanly to 3.3.alpha1 and all tests pass. I also looked at the code and the patch. It looks like a more concise revision of the original code and a (presumably more intelligent) revision of the process of opening and closing files which you have to read+write to for Leon's binaries.\n\nThanks Robert!",
+    "created_at": "2009-01-24T13:19:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5067",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5067#issuecomment-38601",
+    "user": "wdj"
+}
+```
 
 Applies cleanly to 3.3.alpha1 and all tests pass. I also looked at the code and the patch. It looks like a more concise revision of the original code and a (presumably more intelligent) revision of the process of opening and closing files which you have to read+write to for Leon's binaries.
 
 Thanks Robert!
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-24 15:29:36
+archive/issue_comments_038602.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-01-24T15:29:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5067",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5067#issuecomment-38602",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-24 15:29:36
+archive/issue_comments_038603.json:
+```json
+{
+    "body": "Merged in Sage 3.3.alpha2",
+    "created_at": "2009-01-24T15:29:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5067",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5067#issuecomment-38603",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.3.alpha2

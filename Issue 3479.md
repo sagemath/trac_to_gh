@@ -1,11 +1,21 @@
 # Issue 3479: [with patch, needs review] update dsage portion of tut.tex
 
-Issue created by migration from https://trac.sagemath.org/ticket/3479
-
-Original creator: yi
-
-Original creation time: 2008-06-19 22:29:22
-
+archive/issues_003479.json:
+```json
+{
+    "body": "Assignee: tba\n\nThis patch provides 2 more examples on how to use the distributed map() function in dsage as well as the `@`parallel decorator.\n\nTo get the tutorial to build correctly I needed to remove all the temporary files and run the 'build_pdf' script twice to generate the index. \n\nThis patch depends on #3467 and the `@`parallel decorator patches going in.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3479\n\n",
+    "created_at": "2008-06-19T22:29:22Z",
+    "labels": [
+        "documentation",
+        "major",
+        "enhancement"
+    ],
+    "title": "[with patch, needs review] update dsage portion of tut.tex",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3479",
+    "user": "yi"
+}
+```
 Assignee: tba
 
 This patch provides 2 more examples on how to use the distributed map() function in dsage as well as the `@`parallel decorator.
@@ -14,31 +24,81 @@ To get the tutorial to build correctly I needed to remove all the temporary file
 
 This patch depends on #3467 and the `@`parallel decorator patches going in.
 
+Issue created by migration from https://trac.sagemath.org/ticket/3479
+
+
+
+
 
 ---
 
-Comment by yi created at 2008-06-19 22:30:08
+archive/issue_comments_024514.json:
+```json
+{
+    "body": "Patch for doc/tut/tut.tex",
+    "created_at": "2008-06-19T22:30:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3479",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3479#issuecomment-24514",
+    "user": "yi"
+}
+```
 
 Patch for doc/tut/tut.tex
 
 
+
 ---
+
+archive/issue_comments_024515.json:
+```json
+{
+    "body": "Attachment\n\nYi, does your patch apply with #3347 applied?",
+    "created_at": "2008-06-19T22:31:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3479",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3479#issuecomment-24515",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 Yi, does your patch apply with #3347 applied?
 
 
+
 ---
 
-Comment by mhansen created at 2008-06-19 22:37:37
+archive/issue_comments_024516.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"editor_mhansen\".",
+    "created_at": "2008-06-19T22:37:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3479",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3479#issuecomment-24516",
+    "user": "mhansen"
+}
+```
 
 Changing keywords from "" to "editor_mhansen".
 
 
+
 ---
 
-Comment by jhpalmieri created at 2008-08-13 19:13:22
+archive/issue_comments_024517.json:
+```json
+{
+    "body": "The patch fails against the current version of the tutorial.\n\nWhen applied manually, the patch seems okay, and passes all doctests. A few comments:\n\nIn example 3, item 5, I would suggest changing `$f$` to `\\code{f`}, for the sake of better latex to html conversion.\n\nIn example 4, the verbatim block looks odd, especially in the live version of the tutorial.\n\nIf you fix at least example 3, and produce a patch against the current tutorial, I'll give it a positive review.\n\n(In general, I find the style of using numbered instructions, as in all of the dsage examples, at odds with the style of the rest of the tutorial.  It would be nice if this were rewritten, but that can wait for a separate trac item and patch.)",
+    "created_at": "2008-08-13T19:13:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3479",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3479#issuecomment-24517",
+    "user": "jhpalmieri"
+}
+```
 
 The patch fails against the current version of the tutorial.
 
@@ -53,37 +113,92 @@ If you fix at least example 3, and produce a patch against the current tutorial,
 (In general, I find the style of using numbered instructions, as in all of the dsage examples, at odds with the style of the rest of the tutorial.  It would be nice if this were rewritten, but that can wait for a separate trac item and patch.)
 
 
+
 ---
 
-Comment by jhpalmieri created at 2008-08-13 21:00:33
+archive/issue_comments_024518.json:
+```json
+{
+    "body": "By the way, what does \"% (fold)\" mean?  This only appears in the dsage part of the tutorial, and I don't know what role it plays.",
+    "created_at": "2008-08-13T21:00:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3479",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3479#issuecomment-24518",
+    "user": "jhpalmieri"
+}
+```
 
 By the way, what does "% (fold)" mean?  This only appears in the dsage part of the tutorial, and I don't know what role it plays.
 
 
+
 ---
 
-Comment by mhansen created at 2009-01-24 09:56:43
+archive/issue_comments_024519.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-01-24T09:56:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3479",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3479#issuecomment-24519",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mhansen created at 2009-01-24 09:56:43
+archive/issue_comments_024520.json:
+```json
+{
+    "body": "Changing assignee from tba to mhansen.",
+    "created_at": "2009-01-24T09:56:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3479",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3479#issuecomment-24520",
+    "user": "mhansen"
+}
+```
 
 Changing assignee from tba to mhansen.
 
 
+
 ---
 
-Comment by mhansen created at 2009-01-24 09:56:43
+archive/issue_comments_024521.json:
+```json
+{
+    "body": "I addressed the referee's comment and added this to the Sphinx version of the tutorial.",
+    "created_at": "2009-01-24T09:56:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3479",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3479#issuecomment-24521",
+    "user": "mhansen"
+}
+```
 
 I addressed the referee's comment and added this to the Sphinx version of the tutorial.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-24 17:54:50
+archive/issue_comments_024522.json:
+```json
+{
+    "body": "Merged in Sage 3.4.alpha0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-24T17:54:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3479",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3479#issuecomment-24522",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.4.alpha0.
 
@@ -92,8 +207,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-24 17:54:50
+archive/issue_comments_024523.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-02-24T17:54:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3479",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3479#issuecomment-24523",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

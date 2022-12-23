@@ -1,11 +1,21 @@
 # Issue 2910: bug in Integer(string)
 
-Issue created by migration from https://trac.sagemath.org/ticket/2910
-
-Original creator: was
-
-Original creation time: 2008-04-13 19:11:36
-
+archive/issues_002910.json:
+```json
+{
+    "body": "Assignee: robertwb\n\nCC:  timothyclemans\n\nThis behavior is inconsistent and could lead to horrible bugs:\n\n```\nsage: int('070')\n70\nsage: Integer('070')\n56\n```\n\n\nBecause Sage uses Python instead of inventing its own language, there\nare issues like this.   The only options to fix this problem\nare (a) make int('070') return 56 or (b) make Integer('070') return 70.\nIrregardless of what Sage *should* do, (a) is not an option since it\nrequires changing the Python interpreter, and an axiom of Sage development\nis that we will never do that.  So (b) it is.   To resolve this trac tick\none must thus do (b).\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2910\n\n",
+    "created_at": "2008-04-13T19:11:36Z",
+    "labels": [
+        "coercion",
+        "major",
+        "bug"
+    ],
+    "title": "bug in Integer(string)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2910",
+    "user": "was"
+}
+```
 Assignee: robertwb
 
 CC:  timothyclemans
@@ -30,10 +40,25 @@ one must thus do (b).
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2910
+
+
+
+
 
 ---
 
-Comment by robertwb created at 2008-05-01 05:24:44
+archive/issue_comments_020050.json:
+```json
+{
+    "body": "Ugh. This means\n\n\n```\nsage: Integer('070') == Integer(070)\nFalse\n```\n\n\nSo be it I guess...",
+    "created_at": "2008-05-01T05:24:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2910",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2910#issuecomment-20050",
+    "user": "robertwb"
+}
+```
 
 Ugh. This means
 
@@ -47,9 +72,20 @@ False
 So be it I guess...
 
 
+
 ---
 
-Comment by boothby created at 2009-01-23 10:05:56
+archive/issue_comments_020051.json:
+```json
+{
+    "body": "A PEP deals with this:\n\nhttp://mail.python.org/pipermail/python-3000/2007-March/006444.html\n\n\n```\nDuring the present discussion, it was almost universally agreed that::\n\n    eval('010') == 8\n\nshould no longer be true, because that is confusing to new users.\n```\n\n\nAdditional thoughts?",
+    "created_at": "2009-01-23T10:05:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2910",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2910#issuecomment-20051",
+    "user": "boothby"
+}
+```
 
 A PEP deals with this:
 
@@ -68,22 +104,55 @@ should no longer be true, because that is confusing to new users.
 Additional thoughts?
 
 
+
 ---
 
-Comment by boothby created at 2009-01-23 10:10:34
+archive/issue_comments_020052.json:
+```json
+{
+    "body": "Resolution: wontfix",
+    "created_at": "2009-01-23T10:10:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2910",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2910#issuecomment-20052",
+    "user": "boothby"
+}
+```
 
 Resolution: wontfix
 
 
+
 ---
 
-Comment by boothby created at 2009-01-23 10:10:34
+archive/issue_comments_020053.json:
+```json
+{
+    "body": "William said \"hobgoblin something something consistency foolish something.  close it as wontfix\".",
+    "created_at": "2009-01-23T10:10:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2910",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2910#issuecomment-20053",
+    "user": "boothby"
+}
+```
 
 William said "hobgoblin something something consistency foolish something.  close it as wontfix".
 
 
+
 ---
 
-Comment by robertwb created at 2009-01-23 10:16:29
+archive/issue_comments_020054.json:
+```json
+{
+    "body": "+1 to wontfix for me",
+    "created_at": "2009-01-23T10:16:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2910",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2910#issuecomment-20054",
+    "user": "robertwb"
+}
+```
 
 +1 to wontfix for me

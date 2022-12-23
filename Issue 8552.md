@@ -1,40 +1,102 @@
 # Issue 8552: replace os.system calls in latex.py with appropriate replacements
 
-Issue created by migration from https://trac.sagemath.org/ticket/8552
-
-Original creator: ddrake
-
-Original creation time: 2010-03-17 08:35:51
-
+archive/issues_008552.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  jhpalmieri\n\nThis is a followup to #8486, which uses `os.system('which xelatex')` to see if XeLaTeX is available. With #8474 now merged, we should use `have_program` to do that, and also replace other uses of `os.system` with appropriate `subprocess` replacements, since we are [supposed to use subprocess, and not os.system](http://docs.python.org/library/os.html#os.system)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8552\n\n",
+    "created_at": "2010-03-17T08:35:51Z",
+    "labels": [
+        "misc",
+        "major",
+        "bug"
+    ],
+    "title": "replace os.system calls in latex.py with appropriate replacements",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8552",
+    "user": "ddrake"
+}
+```
 Assignee: tbd
 
 CC:  jhpalmieri
 
 This is a followup to #8486, which uses `os.system('which xelatex')` to see if XeLaTeX is available. With #8474 now merged, we should use `have_program` to do that, and also replace other uses of `os.system` with appropriate `subprocess` replacements, since we are [supposed to use subprocess, and not os.system](http://docs.python.org/library/os.html#os.system)
 
+Issue created by migration from https://trac.sagemath.org/ticket/8552
+
+
+
+
 
 ---
+
+archive/issue_comments_077342.json:
+```json
+{
+    "body": "Attachment\n\nclean up unnecessary whitespace in latex.py",
+    "created_at": "2010-03-23T13:54:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8552",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8552#issuecomment-77342",
+    "user": "ddrake"
+}
+```
 
 Attachment
 
 clean up unnecessary whitespace in latex.py
 
 
+
 ---
 
-Comment by ddrake created at 2010-03-23 13:55:31
+archive/issue_comments_077343.json:
+```json
+{
+    "body": "replace os.system with subprocess.call; apply on top of whitespace patch",
+    "created_at": "2010-03-23T13:55:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8552",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8552#issuecomment-77343",
+    "user": "ddrake"
+}
+```
 
 replace os.system with subprocess.call; apply on top of whitespace patch
 
 
+
 ---
 
-Comment by ddrake created at 2010-03-23 14:12:20
+archive/issue_comments_077344.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-03-23T14:12:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8552",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8552#issuecomment-77344",
+    "user": "ddrake"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_077345.json:
+```json
+{
+    "body": "Attachment\n\nThese patches depend on the \"v2\" patch at #8486.\n         \nPlease look this patch over. I think I've tested all the execution paths and have everything working, but I only tested it on one system, so it needs some review and testing.\n\nA design decision that needs to be addressed: it's easiest to just do `subprocess.call()`, which waits for the command to finish; there are a few places where the `os.system` call ended with `&` to put the command in the background. I can reproduce that behavior with the subprocess module, but it's not as convenient, since I have to spawn the process and poll and so on. I can't detect much of a pattern or necessity to those places that possibly put the command in the background; is it okay if we just eliminate that option?\n\nAnother issue: the viewer commands from `misc.viewer` on Linux all return strings with a space in them: `'sage-native-execute xdg-open'`, which does not play nicely with subprocess; when you put that string into its call list, it tries to execute a single command with a space in it, named \"sage-native-execute xdg-open\" and this does not work well. It's easy enough to snag the \"xdg-open\" part, but if we eventually are using subprocess everywhere, we should switch the viewer commands to returning lists of strings.",
+    "created_at": "2010-03-23T14:12:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8552",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8552#issuecomment-77345",
+    "user": "ddrake"
+}
+```
 
 Attachment
 
@@ -47,9 +109,20 @@ A design decision that needs to be addressed: it's easiest to just do `subproces
 Another issue: the viewer commands from `misc.viewer` on Linux all return strings with a space in them: `'sage-native-execute xdg-open'`, which does not play nicely with subprocess; when you put that string into its call list, it tries to execute a single command with a space in it, named "sage-native-execute xdg-open" and this does not work well. It's easy enough to snag the "xdg-open" part, but if we eventually are using subprocess everywhere, we should switch the viewer commands to returning lists of strings.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-06-23 20:35:30
+archive/issue_comments_077346.json:
+```json
+{
+    "body": "Overall, it looks good.\n\nI think line 615, `debug=True` should be deleted.  I also think that before line 1793\n\n```\nprint 'viewer: \"{0}\"'.format(viewer)\n```\n\nwe should have `if debug:`\n\nI notice that you don't seem to be using \"base\" in the switch from \n\n```\nlt = 'cd \"%s\"&& sage-native-execute %s \\\\\\\\nonstopmode \\\\\\\\input{%s.tex} %s'%(base, command, filename, redirect)\n```\n\nto\n\n```\nlt = ['sage-native-execute', command, r'\\nonstopmode', r'\\input{' + filename + '.tex}'] \n```\n\nBut it seems to work with your patch, so I guess it's okay.\n\n> is it okay if we just eliminate that [background] option?\n\nI think so.  If you think it's worth asking around, you could post on sage-devel.  Anyway, I think we can eliminate it, but we should probably keep the argument there for backwards compatibility, but have it do nothing -- this is what your patch does, right?  We (meaning you) just need to document that the option no longer does anything.\n\n> Another issue: the viewer commands from misc.viewer on Linux all return strings with a space in them\n\nIf \"s\" is the output of one of these commands, can we do s.split() to turn it into a list, split at spaces (if there are any)?  Oh, I guess that's what you're doing.\n\n----------\n\nSummary: fix the debugging issues (the print statement), and document the fact that \"do_in_background\" now has no effect, and I think this is ready to go.",
+    "created_at": "2010-06-23T20:35:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8552",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8552#issuecomment-77346",
+    "user": "jhpalmieri"
+}
+```
 
 Overall, it looks good.
 
@@ -88,57 +161,149 @@ If "s" is the output of one of these commands, can we do s.split() to turn it in
 Summary: fix the debugging issues (the print statement), and document the fact that "do_in_background" now has no effect, and I think this is ready to go.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-06-23 20:35:30
+archive/issue_comments_077347.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-06-23T20:35:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8552",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8552#issuecomment-77347",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2011-03-25 19:36:46
+archive/issue_comments_077348.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2011-03-25T19:36:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8552",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8552#issuecomment-77348",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2011-03-25 19:36:46
+archive/issue_comments_077349.json:
+```json
+{
+    "body": "I'm attaching two new patches here.  One is a referee patch, present for review only: do not apply it.  The other combines all of the patches into one.  Dan, if you're happy with my changes, please give this a positive review.",
+    "created_at": "2011-03-25T19:36:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8552",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8552#issuecomment-77349",
+    "user": "jhpalmieri"
+}
+```
 
 I'm attaching two new patches here.  One is a referee patch, present for review only: do not apply it.  The other combines all of the patches into one.  Dan, if you're happy with my changes, please give this a positive review.
 
 
+
 ---
+
+archive/issue_comments_077350.json:
+```json
+{
+    "body": "Attachment\n\nfor review only, do not apply (diff between Dan's two patches and the all-in-one patch)",
+    "created_at": "2011-03-25T19:37:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8552",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8552#issuecomment-77350",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
 for review only, do not apply (diff between Dan's two patches and the all-in-one patch)
 
 
+
 ---
 
-Comment by jhpalmieri created at 2011-03-25 19:37:59
+archive/issue_comments_077351.json:
+```json
+{
+    "body": "apply only this patch",
+    "created_at": "2011-03-25T19:37:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8552",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8552#issuecomment-77351",
+    "user": "jhpalmieri"
+}
+```
 
 apply only this patch
 
 
+
 ---
+
+archive/issue_comments_077352.json:
+```json
+{
+    "body": "Attachment\n\nThanks for finishing this, John. Sorry I left it unfinished. Your changes look good.",
+    "created_at": "2011-03-26T07:55:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8552",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8552#issuecomment-77352",
+    "user": "ddrake"
+}
+```
 
 Attachment
 
 Thanks for finishing this, John. Sorry I left it unfinished. Your changes look good.
 
 
+
 ---
 
-Comment by ddrake created at 2011-03-26 07:55:07
+archive/issue_comments_077353.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2011-03-26T07:55:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8552",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8552#issuecomment-77353",
+    "user": "ddrake"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-04-07 08:38:01
+archive/issue_comments_077354.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2011-04-07T08:38:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8552",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8552#issuecomment-77354",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: fixed

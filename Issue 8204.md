@@ -1,11 +1,21 @@
 # Issue 8204: when upgrading sage, cddlib spkg goes interactive due to some errors in it
 
-Issue created by migration from https://trac.sagemath.org/ticket/8204
-
-Original creator: was
-
-Original creation time: 2010-02-07 05:15:06
-
+archive/issues_008204.json:
+```json
+{
+    "body": "Assignee: tbd\n\nThere is something very broken about the new cddlib-094f.p2 standard spkg.  When I upgrade from sage-4.3.1 on any machine, it always asks me questions about some messed up patch.  This is very, very bad. \n\n\n```\n...\ncddlib-094f.p2/.hg/branch                                         \ncddlib-094f.p2/.hg/branch.cache                                   \ncddlib-094f.p2/.hg/requires                                       \ncddlib-094f.p2/SPKG.txt                                           \nFinished extraction                                               \n****************************************************              \nHost system                                                       \nuname -a:                                                         \nLinux boxen 2.6.24-24-server #1 SMP Fri Sep 18 16:47:05 UTC 2009 x86_64 GNU/Linux\n****************************************************                             \n****************************************************                             \nCC Version                                                                       \ngcc -v                                                                           \nUsing built-in specs.                                                            \nTarget: x86_64-linux-gnu                                                         \nConfigured with: ../src/configure -v --enable-languages=c,c++,fortran,objc,obj-c++,treelang --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.2 --program-suffix=-4.2 --enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --enable-mpfr --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu                           \nThread model: posix                                                                                                         \ngcc version 4.2.4 (Ubuntu 4.2.4-1ubuntu4)                                                                                   \n****************************************************                                                                        \npatching file src/src-gmp/Makefile.am                                                                                       \nReversed (or previously applied) patch detected!  Assume -R? [n]                                                            \nApply anyway? [n]                                                                                                           \nSkipping patch.                                                                                                             \n2 out of 2 hunks ignored -- saving rejects to file src/src-gmp/Makefile.am.rej                                              \npatching file src/src/Makefile.am                                                                                           \nReversed (or previously applied) patch detected!  \nAssume -R? [n]     *** INTERACTIVE QUESTION!!! **** \nApply anyway? [n]                                                                                                           \nSkipping patch.                            \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8204\n\n",
+    "created_at": "2010-02-07T05:15:06Z",
+    "labels": [
+        "packages: standard",
+        "blocker",
+        "bug"
+    ],
+    "title": "when upgrading sage, cddlib spkg goes interactive due to some errors in it",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8204",
+    "user": "was"
+}
+```
 Assignee: tbd
 
 There is something very broken about the new cddlib-094f.p2 standard spkg.  When I upgrade from sage-4.3.1 on any machine, it always asks me questions about some messed up patch.  This is very, very bad. 
@@ -45,44 +55,114 @@ Skipping patch.
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8204
+
+
+
+
 
 ---
 
-Comment by mvngu created at 2010-02-07 05:18:28
+archive/issue_comments_072360.json:
+```json
+{
+    "body": "The problem is due to #7109. See #8115 for the same problem.",
+    "created_at": "2010-02-07T05:18:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8204",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8204#issuecomment-72360",
+    "user": "mvngu"
+}
+```
 
 The problem is due to #7109. See #8115 for the same problem.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-02-07 08:43:20
+archive/issue_comments_072361.json:
+```json
+{
+    "body": "On a similar, but not identical issue, #8122 has edits to the source directly, not via creating new versions of files, or by calling patch. It's bad practice, but not as serious as this one.",
+    "created_at": "2010-02-07T08:43:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8204",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8204#issuecomment-72361",
+    "user": "drkirkby"
+}
+```
 
 On a similar, but not identical issue, #8122 has edits to the source directly, not via creating new versions of files, or by calling patch. It's bad practice, but not as serious as this one.
 
 
+
 ---
 
-Comment by vbraun created at 2010-02-20 17:38:09
+archive/issue_comments_072362.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-02-20T17:38:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8204",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8204#issuecomment-72362",
+    "user": "vbraun"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by vbraun created at 2010-02-20 17:38:09
+archive/issue_comments_072363.json:
+```json
+{
+    "body": "Fixed by cddlib-094f.p4.spkg, see #8115.",
+    "created_at": "2010-02-20T17:38:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8204",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8204#issuecomment-72363",
+    "user": "vbraun"
+}
+```
 
 Fixed by cddlib-094f.p4.spkg, see #8115.
 
 
+
 ---
 
-Comment by mvngu created at 2010-02-20 17:43:19
+archive/issue_comments_072364.json:
+```json
+{
+    "body": "Close as a duplicate of #8115.",
+    "created_at": "2010-02-20T17:43:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8204",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8204#issuecomment-72364",
+    "user": "mvngu"
+}
+```
 
 Close as a duplicate of #8115.
 
 
+
 ---
 
-Comment by mvngu created at 2010-02-20 17:43:19
+archive/issue_comments_072365.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2010-02-20T17:43:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8204",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8204#issuecomment-72365",
+    "user": "mvngu"
+}
+```
 
 Resolution: duplicate

@@ -1,11 +1,21 @@
 # Issue 3527: Build python with "-O2" instead of "-O3" on Itanium
 
-Issue created by migration from https://trac.sagemath.org/ticket/3527
-
-Original creator: mabshoff
-
-Original creation time: 2008-06-28 09:32:34
-
+archive/issues_003527.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nWhen building Sage's pyhton and extensions with gcc 4.3 on Itanium we get some doctest failures that disappear with \"-O2\"\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3527\n\n",
+    "created_at": "2008-06-28T09:32:34Z",
+    "labels": [
+        "build",
+        "blocker",
+        "bug"
+    ],
+    "title": "Build python with \"-O2\" instead of \"-O3\" on Itanium",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3527",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 When building Sage's pyhton and extensions with gcc 4.3 on Itanium we get some doctest failures that disappear with "-O2"
@@ -14,17 +24,43 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/3527
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-06-28 09:32:39
+archive/issue_comments_024881.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-06-28T09:32:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3527",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3527#issuecomment-24881",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-07 22:28:50
+archive/issue_comments_024882.json:
+```json
+{
+    "body": "This is starting to look invalid since all failures I see seem to be triggered by bugs not normally observed on non-Itanium, but valgrind finds faults in those cases on x86-64.\n\nCheers,\n\nMichael",
+    "created_at": "2008-07-07T22:28:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3527",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3527#issuecomment-24882",
+    "user": "mabshoff"
+}
+```
 
 This is starting to look invalid since all failures I see seem to be triggered by bugs not normally observed on non-Itanium, but valgrind finds faults in those cases on x86-64.
 
@@ -33,22 +69,55 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by was created at 2008-07-09 16:09:25
+archive/issue_comments_024883.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-07-09T16:09:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3527",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3527#issuecomment-24883",
+    "user": "was"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by was created at 2008-07-09 16:09:25
+archive/issue_comments_024884.json:
+```json
+{
+    "body": "positive review.",
+    "created_at": "2008-07-09T16:09:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3527",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3527#issuecomment-24884",
+    "user": "was"
+}
+```
 
 positive review.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-09 16:18:11
+archive/issue_comments_024885.json:
+```json
+{
+    "body": "Merged in Sage 3.0.4.rc2",
+    "created_at": "2008-07-09T16:18:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3527",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3527#issuecomment-24885",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.4.rc2

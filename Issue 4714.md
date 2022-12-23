@@ -1,11 +1,21 @@
 # Issue 4714: use easy/load.js when loading jsmath
 
-Issue created by migration from https://trac.sagemath.org/ticket/4714
-
-Original creator: jason
-
-Original creation time: 2008-12-05 10:10:42
-
+archive/issues_004714.json:
+```json
+{
+    "body": "Assignee: boothby\n\nCC:  jhpalmieri timdumol was\n\nFrom http://groups.google.com/group/sage-support/t/178d0bd277044918\n\n\n```\nYes, that looks correct.  I'm not sure why people are getting the \nerror -7 under these conditions.  It means that something has gone \nwrong when trying to load the fallback method, and that usually means \nit can't read the image font definition files.  There are a couple of \nother possibilities as well:  perhaps the noImageFonts plugin was not \nable to be read (permission issue?) or the unicode fallback file could \nnot be read.  Given your use of noImageFonts, I suspect it may be the \nlatter.  If the users who are getting error -7 are using Firefox3, \nthat may well be it.  There were changes to the same-origin security \npolicy in Firefox3 that prevent jsMath from loading local files from \ndirectories other than the one in which the HTML file is found.  I \nworked around this in jsMath v3.6 (released Sept. 2008), so those \nusers should update to the latest version of jsMath to avoid that \nproblem. \n> I'm pretty sure we don't use the easy/load.js (and I'm not sure why). \n\nProbably because it didn't exist when jsMath support was added to \nsage.  The easy/load.js file was a relatively late addition to jsMath, \nbut certainly makes things easier for people.  You might consider \nwhether you want to use that instead. \n\nDavide\n\nIssue created by migration from https://trac.sagemath.org/ticket/4714\n\n",
+    "created_at": "2008-12-05T10:10:42Z",
+    "labels": [
+        "notebook",
+        "major",
+        "bug"
+    ],
+    "title": "use easy/load.js when loading jsmath",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4714",
+    "user": "jason"
+}
+```
 Assignee: boothby
 
 CC:  jhpalmieri timdumol was
@@ -37,10 +47,25 @@ whether you want to use that instead.
 
 Davide
 
+Issue created by migration from https://trac.sagemath.org/ticket/4714
+
+
+
+
 
 ---
 
-Comment by mpatel created at 2009-05-07 00:26:52
+archive/issue_comments_035536.json:
+```json
+{
+    "body": "Copied from [comment:ticket:5653:27 jason]:\n> Replying to [comment:ticket:5653:24 mpatel]:\n> \n> > A related issue:  It would be nice to have just one `<script>` element load jsMath with all of Sage's customizations (extensions, plug-ins, macros, etc.) into regular, published, printed, and docbrowser worksheets, as well as \"torn out\" introspection windows and offline documentation.  Maybe `easy/load.js` is the right place (see #4714),\n> > but I think notebook.py generates the macro list on-the-fly.\n> \n> Davide (author of jsmath) sent these comments about the above paragraph:\n> \n> Mpatel is right that jsMath/easy/load.js could be used for this.  Rather than putting calls to jsMath.Setup.Script() or jsMath.Extention.Require() in-line in the document itself, these can be be put in the loadFiles array in easy/load.js.  It is also possible to put the jsMath.Macro() calls into a file (say jsMath/local/sage.js), and add that file to the loadFiles array as well rather than put them in-line.  Any sage-specific customization could go in local/sage.js as well.  In the latest version of jsMath, there is even a macros array in easy/load.js for custom macros, so you would not even need an extra file for that.  These features are, in fact, one of the important reasons for easy/load.js, so I hope you are able to take advantage of them.",
+    "created_at": "2009-05-07T00:26:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4714",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35536",
+    "user": "mpatel"
+}
+```
 
 Copied from [comment:ticket:5653:27 jason]:
 > Replying to [comment:ticket:5653:24 mpatel]:
@@ -53,87 +78,188 @@ Copied from [comment:ticket:5653:27 jason]:
 > Mpatel is right that jsMath/easy/load.js could be used for this.  Rather than putting calls to jsMath.Setup.Script() or jsMath.Extention.Require() in-line in the document itself, these can be be put in the loadFiles array in easy/load.js.  It is also possible to put the jsMath.Macro() calls into a file (say jsMath/local/sage.js), and add that file to the loadFiles array as well rather than put them in-line.  Any sage-specific customization could go in local/sage.js as well.  In the latest version of jsMath, there is even a macros array in easy/load.js for custom macros, so you would not even need an extra file for that.  These features are, in fact, one of the important reasons for easy/load.js, so I hope you are able to take advantage of them.
 
 
+
 ---
 
-Comment by mpatel created at 2009-06-18 07:51:22
+archive/issue_comments_035537.json:
+```json
+{
+    "body": "A few *estions:\n\n* Should we patch the spkg's `jsmath/easy/load.js`?\n* Add `jsmath/local/sage.js` to its `loadFiles` array?\n* Re-generate this `sage.js` from the list in `sage/misc/latex_macros.py` during\n  1. `sage -docbuild`, in `doc/common/conf.py`?  \n  2. `sage -b`?\n  3. notebook startup?",
+    "created_at": "2009-06-18T07:51:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4714",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35537",
+    "user": "mpatel"
+}
+```
 
 A few *estions:
 
- * Should we patch the spkg's `jsmath/easy/load.js`?
- * Add `jsmath/local/sage.js` to its `loadFiles` array?
- * Re-generate this `sage.js` from the list in `sage/misc/latex_macros.py` during
-   1. `sage -docbuild`, in `doc/common/conf.py`?  
-   2. `sage -b`?
-   3. notebook startup?
+* Should we patch the spkg's `jsmath/easy/load.js`?
+* Add `jsmath/local/sage.js` to its `loadFiles` array?
+* Re-generate this `sage.js` from the list in `sage/misc/latex_macros.py` during
+  1. `sage -docbuild`, in `doc/common/conf.py`?  
+  2. `sage -b`?
+  3. notebook startup?
+
 
 
 ---
 
-Comment by davidloeffler created at 2009-07-13 16:09:02
+archive/issue_comments_035538.json:
+```json
+{
+    "body": "This is misfiled (should be under \"documentation\").",
+    "created_at": "2009-07-13T16:09:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4714",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35538",
+    "user": "davidloeffler"
+}
+```
 
 This is misfiled (should be under "documentation").
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-07-13 16:09:02
+archive/issue_comments_035539.json:
+```json
+{
+    "body": "Changing component from notebook to documentation.",
+    "created_at": "2009-07-13T16:09:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4714",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35539",
+    "user": "davidloeffler"
+}
+```
 
 Changing component from notebook to documentation.
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-07-13 16:09:02
+archive/issue_comments_035540.json:
+```json
+{
+    "body": "Changing assignee from boothby to tba.",
+    "created_at": "2009-07-13T16:09:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4714",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35540",
+    "user": "davidloeffler"
+}
+```
 
 Changing assignee from boothby to tba.
 
 
+
 ---
 
-Comment by mpatel created at 2009-07-17 10:13:42
+archive/issue_comments_035541.json:
+```json
+{
+    "body": "After #5799, we have two copies of the `jsmath` tree, one in `doc/common/static` and another in `javascript_local`.  That is, one from `sage-4.1.spkg` and another from `jsmath-3.6b.p1.spkg`.  Can we avoid this?  Or should we maintain separate `load.js` files for the notebook and documentation?",
+    "created_at": "2009-07-17T10:13:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4714",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35541",
+    "user": "mpatel"
+}
+```
 
 After #5799, we have two copies of the `jsmath` tree, one in `doc/common/static` and another in `javascript_local`.  That is, one from `sage-4.1.spkg` and another from `jsmath-3.6b.p1.spkg`.  Can we avoid this?  Or should we maintain separate `load.js` files for the notebook and documentation?
 
 
+
 ---
 
-Comment by mpatel created at 2009-08-02 21:32:21
+archive/issue_comments_035542.json:
+```json
+{
+    "body": "Replying to [comment:5 mpatel]:\n> After #5799, we have two copies of the `jsmath` tree, one in `doc/common/static` and another in `javascript_local`.  That is, one from `sage-4.1.spkg` and another from `jsmath-3.6b.p1.spkg`.  Can we avoid this?  Or should we maintain separate `load.js` files for the notebook and documentation?\nSee #6614 for a potential resolution.",
+    "created_at": "2009-08-02T21:32:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4714",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35542",
+    "user": "mpatel"
+}
+```
 
 Replying to [comment:5 mpatel]:
 > After #5799, we have two copies of the `jsmath` tree, one in `doc/common/static` and another in `javascript_local`.  That is, one from `sage-4.1.spkg` and another from `jsmath-3.6b.p1.spkg`.  Can we avoid this?  Or should we maintain separate `load.js` files for the notebook and documentation?
 See #6614 for a potential resolution.
 
 
+
 ---
 
-Comment by mpatel created at 2009-08-02 22:27:47
+archive/issue_comments_035543.json:
+```json
+{
+    "body": "The latest patch at #6614 tells Sphinx to copy jsMath directly from `javascript_local` to `doc/output/html/en/*/_static`.  In particular, it does this *before* it copies the files in `doc/common/static`.  How about putting a custom `easy/load.js` there?\n\nIf we're not adding new doc macros frequently, we could just paste them from `latex_macros.py`.  Or we might add an option to `sage -docbuild` to regenerate `load.js` on demand (cf. #6187).  If we overwrite the file during *every* build, we may need to synchronize access from multiple Sphinx processes (cf. #6255).\n\n(Note: Sphinx 0.6.2 supports HTML themes, including [static templates](http://sphinx.pocoo.org/theming.html#static-templates).  It's tempting to create a template `static/easy/load.js_t`.  However, Sphinx does not process user templates in `static`'s *subdirectories*.)\n\nOn the notebook:  I believe we can move nearly all jsMath directives from `notebook.py` to a custom `javascript_local/jsmath/easy/load.js` that's overwritten on notebook start-up.  Perhaps in `twist.py`?\n\nI'd really like to get moving on this, provided there's agreement.  Of course, we can split this into two tickets, [at least] one each for the docs and notebook.  Thoughts?",
+    "created_at": "2009-08-02T22:27:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4714",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35543",
+    "user": "mpatel"
+}
+```
 
-The latest patch at #6614 tells Sphinx to copy jsMath directly from `javascript_local` to `doc/output/html/en/*/_static`.  In particular, it does this _before_ it copies the files in `doc/common/static`.  How about putting a custom `easy/load.js` there?
+The latest patch at #6614 tells Sphinx to copy jsMath directly from `javascript_local` to `doc/output/html/en/*/_static`.  In particular, it does this *before* it copies the files in `doc/common/static`.  How about putting a custom `easy/load.js` there?
 
-If we're not adding new doc macros frequently, we could just paste them from `latex_macros.py`.  Or we might add an option to `sage -docbuild` to regenerate `load.js` on demand (cf. #6187).  If we overwrite the file during _every_ build, we may need to synchronize access from multiple Sphinx processes (cf. #6255).
+If we're not adding new doc macros frequently, we could just paste them from `latex_macros.py`.  Or we might add an option to `sage -docbuild` to regenerate `load.js` on demand (cf. #6187).  If we overwrite the file during *every* build, we may need to synchronize access from multiple Sphinx processes (cf. #6255).
 
-(Note: Sphinx 0.6.2 supports HTML themes, including [static templates](http://sphinx.pocoo.org/theming.html#static-templates).  It's tempting to create a template `static/easy/load.js_t`.  However, Sphinx does not process user templates in `static`'s _subdirectories_.)
+(Note: Sphinx 0.6.2 supports HTML themes, including [static templates](http://sphinx.pocoo.org/theming.html#static-templates).  It's tempting to create a template `static/easy/load.js_t`.  However, Sphinx does not process user templates in `static`'s *subdirectories*.)
 
 On the notebook:  I believe we can move nearly all jsMath directives from `notebook.py` to a custom `javascript_local/jsmath/easy/load.js` that's overwritten on notebook start-up.  Perhaps in `twist.py`?
 
 I'd really like to get moving on this, provided there's agreement.  Of course, we can split this into two tickets, [at least] one each for the docs and notebook.  Thoughts?
 
 
+
 ---
 
-Comment by mpatel created at 2009-08-04 04:13:04
+archive/issue_comments_035544.json:
+```json
+{
+    "body": "Minimal approach for docs.  Depends on #6614.",
+    "created_at": "2009-08-04T04:13:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4714",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35544",
+    "user": "mpatel"
+}
+```
 
 Minimal approach for docs.  Depends on #6614.
 
 
+
 ---
+
+archive/issue_comments_035545.json:
+```json
+{
+    "body": "Attachment\n\nThis [attachment:trac_4714-minimal_doc.patch p(r)oof of concept], which depends on a [attachment:ticket:6614:trac_6614-jsmath_repo_v2.patch patch] at #6614,\n\n* Adds `doc/common/static/jsmath_sage.js`.\n* Sets `jsmath_path=jsmath_sage.js` in `doc/common/conf.py`.\n\nThe new static file is jsMath's \"stock\" `easy/load.js` plus all Sage-related customizations I could find, including extensions, macros, and a few other bits from `notebook.py`.  I've also made changes below `DO NOT MAKE CHANGES BELOW THIS` (gasp!) to help the loader find jsMath from its new [relative] location.\n\nI think this means we don't need to patch the spkg.  Later, we may be able to use Sphinx 0.6.2's static templates to insert an updated macro list at build time (cf. #6586).\n\nPerhaps we can do something similar for the notebook, e.g., in `sage/server/notebook/templates`.",
+    "created_at": "2009-08-04T04:41:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4714",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35545",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
 This [attachment:trac_4714-minimal_doc.patch p(r)oof of concept], which depends on a [attachment:ticket:6614:trac_6614-jsmath_repo_v2.patch patch] at #6614,
 
- * Adds `doc/common/static/jsmath_sage.js`.
- * Sets `jsmath_path=jsmath_sage.js` in `doc/common/conf.py`.
+* Adds `doc/common/static/jsmath_sage.js`.
+* Sets `jsmath_path=jsmath_sage.js` in `doc/common/conf.py`.
 
 The new static file is jsMath's "stock" `easy/load.js` plus all Sage-related customizations I could find, including extensions, macros, and a few other bits from `notebook.py`.  I've also made changes below `DO NOT MAKE CHANGES BELOW THIS` (gasp!) to help the loader find jsMath from its new [relative] location.
 
@@ -142,56 +268,146 @@ I think this means we don't need to patch the spkg.  Later, we may be able to us
 Perhaps we can do something similar for the notebook, e.g., in `sage/server/notebook/templates`.
 
 
+
 ---
 
-Comment by mpatel created at 2009-08-04 07:07:56
+archive/issue_comments_035546.json:
+```json
+{
+    "body": "With major changes in afoot in the notebook at #6568, I've put the doc patch up for review at #6673 and made this ticket specific to the notebook.",
+    "created_at": "2009-08-04T07:07:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4714",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35546",
+    "user": "mpatel"
+}
+```
 
 With major changes in afoot in the notebook at #6568, I've put the doc patch up for review at #6673 and made this ticket specific to the notebook.
 
 
+
 ---
 
-Comment by mpatel created at 2009-08-04 07:07:56
+archive/issue_comments_035547.json:
+```json
+{
+    "body": "Changing component from documentation to notebook.",
+    "created_at": "2009-08-04T07:07:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4714",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35547",
+    "user": "mpatel"
+}
+```
 
 Changing component from documentation to notebook.
 
 
+
 ---
 
-Comment by mpatel created at 2009-08-04 07:07:56
+archive/issue_comments_035548.json:
+```json
+{
+    "body": "Changing assignee from tba to boothby.",
+    "created_at": "2009-08-04T07:07:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4714",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35548",
+    "user": "mpatel"
+}
+```
 
 Changing assignee from tba to boothby.
 
 
+
 ---
 
-Comment by mpatel created at 2009-10-16 07:38:55
+archive/issue_comments_035549.json:
+```json
+{
+    "body": "See [comment:ticket:6673:10 this comment] (and the next one) at #6673 for a suggested path to \"unification.\"",
+    "created_at": "2009-10-16T07:38:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4714",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35549",
+    "user": "mpatel"
+}
+```
 
 See [comment:ticket:6673:10 this comment] (and the next one) at #6673 for a suggested path to "unification."
 
 
+
 ---
 
-Comment by mpatel created at 2009-10-21 19:26:01
+archive/issue_comments_035550.json:
+```json
+{
+    "body": "In `sagenb.notebook.twist`, we can use a cached `sage.misc.latex_macros.sage_jsmath_macros_easy` (cf. #6673's [attachment:trac_6673-jsmath_macros_docs_v3.patch:ticket:6673 v3]) and `JSMATH_IMAGE_FONTS`, plus a user's own macros, to serve a dynamic `javascript/jsmath.js`.",
+    "created_at": "2009-10-21T19:26:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4714",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35550",
+    "user": "mpatel"
+}
+```
 
 In `sagenb.notebook.twist`, we can use a cached `sage.misc.latex_macros.sage_jsmath_macros_easy` (cf. #6673's [attachment:trac_6673-jsmath_macros_docs_v3.patch:ticket:6673 v3]) and `JSMATH_IMAGE_FONTS`, plus a user's own macros, to serve a dynamic `javascript/jsmath.js`.
 
 
+
 ---
 
-Comment by mpatel created at 2009-10-23 07:02:17
+archive/issue_comments_035551.json:
+```json
+{
+    "body": "Consolidate jsMath setup.  Apply to sagenb repository.  Apply only this patch.",
+    "created_at": "2009-10-23T07:02:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4714",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35551",
+    "user": "mpatel"
+}
+```
 
 Consolidate jsMath setup.  Apply to sagenb repository.  Apply only this patch.
 
 
+
 ---
 
-Comment by mpatel created at 2009-10-23 07:10:01
+archive/issue_comments_035552.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-10-23T07:10:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4714",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35552",
+    "user": "mpatel"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_035553.json:
+```json
+{
+    "body": "Attachment\n\nThe patch [attachment:trac_4714-sagenb_jsmath_init.patch] consolidates jsMath setup in `/javascript/jsmath.js`.  It depends on #6673.\n\nThe patch still hard-codes the `sage.misc.latex_macros`'s macros.  Still to do: Generate the macros from server/user settings and `latex_macros`'s helper functions.",
+    "created_at": "2009-10-23T07:10:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4714",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35553",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
@@ -200,23 +416,58 @@ The patch [attachment:trac_4714-sagenb_jsmath_init.patch] consolidates jsMath se
 The patch still hard-codes the `sage.misc.latex_macros`'s macros.  Still to do: Generate the macros from server/user settings and `latex_macros`'s helper functions.
 
 
+
 ---
 
-Comment by mpatel created at 2009-10-24 18:45:46
+archive/issue_comments_035554.json:
+```json
+{
+    "body": "Hard-code jsMath macros.  Apply to sagenb repository.",
+    "created_at": "2009-10-24T18:45:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4714",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35554",
+    "user": "mpatel"
+}
+```
 
 Hard-code jsMath macros.  Apply to sagenb repository.
 
 
+
 ---
+
+archive/issue_comments_035555.json:
+```json
+{
+    "body": "Attachment\n\nI've reattached [attachment:trac_4714-sagenb_hard_code_macros.patch], since my first try didn't work (server problems?).",
+    "created_at": "2009-10-24T18:51:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4714",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35555",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
 I've reattached [attachment:trac_4714-sagenb_hard_code_macros.patch], since my first try didn't work (server problems?).
 
 
+
 ---
 
-Comment by mpatel created at 2009-10-24 19:09:46
+archive/issue_comments_035556.json:
+```json
+{
+    "body": "Note: With Jinja2 (cf. #7269, #7249), we can instead use, e.g.,\n\n```js\n    macros: {\n       {{ jsmath_macros|join(',\\n') }}\n    },\n```\n\nin `jsmath.js` (cf. #6673).",
+    "created_at": "2009-10-24T19:09:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4714",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35556",
+    "user": "mpatel"
+}
+```
 
 Note: With Jinja2 (cf. #7269, #7249), we can instead use, e.g.,
 
@@ -229,42 +480,110 @@ Note: With Jinja2 (cf. #7269, #7249), we can instead use, e.g.,
 in `jsmath.js` (cf. #6673).
 
 
+
 ---
 
-Comment by was created at 2009-10-25 02:22:51
+archive/issue_comments_035557.json:
+```json
+{
+    "body": "This works: trac_4714-sagenb_hard_code_macros.patc",
+    "created_at": "2009-10-25T02:22:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4714",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35557",
+    "user": "was"
+}
+```
 
 This works: trac_4714-sagenb_hard_code_macros.patc
 
 
+
 ---
 
-Comment by mpatel created at 2009-10-25 09:42:10
+archive/issue_comments_035558.json:
+```json
+{
+    "body": "Reminder: Rebase vs. #7269.",
+    "created_at": "2009-10-25T09:42:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4714",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35558",
+    "user": "mpatel"
+}
+```
 
 Reminder: Rebase vs. #7269.
 
 
+
 ---
 
-Comment by mpatel created at 2009-11-26 05:53:18
+archive/issue_comments_035559.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2009-11-26T05:53:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4714",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35559",
+    "user": "mpatel"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by mpatel created at 2009-11-26 06:33:08
+archive/issue_comments_035560.json:
+```json
+{
+    "body": "Rebased.  See the comment for the queue.  Apply only this patch.  sagenb repo.",
+    "created_at": "2009-11-26T06:33:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4714",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35560",
+    "user": "mpatel"
+}
+```
 
 Rebased.  See the comment for the queue.  Apply only this patch.  sagenb repo.
 
 
+
 ---
 
-Comment by mpatel created at 2009-11-26 06:33:37
+archive/issue_comments_035561.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2009-11-26T06:33:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4714",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35561",
+    "user": "mpatel"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
+
+archive/issue_comments_035562.json:
+```json
+{
+    "body": "Attachment\n\nRebased against this sequence:\n\n```\ntrac_7390-sagenb_test_report_A.patch\ntrac_7390-sagenb_test_report_B_v2.patch\ntrac_7390-sagenb_test_report_referee.patch\ntrac_7402-pkg_resources.patch\ntrac_7428-publish_last_edited_v2.patch\ntrac_7444-search_after_publish.patch\ntrac_7376-search_by_username_v2.patch\ntrac_1321-sagenb_graphed.patch\nsagenb_7483.patch\nsagenb_7482.patch\nsagenb-7495.patch\nsagenb_3849.patch\ntrac_4714-sagenb_jsmath_init_v2.patch\n```\n",
+    "created_at": "2009-11-26T06:33:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4714",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35562",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
@@ -288,52 +607,131 @@ trac_4714-sagenb_jsmath_init_v2.patch
 
 
 
+
 ---
 
-Comment by mpatel created at 2009-11-26 06:38:34
+archive/issue_comments_035563.json:
+```json
+{
+    "body": "Changing priority from major to minor.",
+    "created_at": "2009-11-26T06:38:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4714",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35563",
+    "user": "mpatel"
+}
+```
 
 Changing priority from major to minor.
 
 
+
 ---
+
+archive/issue_comments_035564.json:
+```json
+{
+    "body": "Attachment\n\nForce jsMath to load always.  This patch only.  sagenb repo.",
+    "created_at": "2009-12-02T23:35:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4714",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35564",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
 Force jsMath to load always.  This patch only.  sagenb repo.
 
 
+
 ---
 
-Comment by mpatel created at 2009-12-02 23:41:46
+archive/issue_comments_035565.json:
+```json
+{
+    "body": "Version 3:\n\n* Disables jsMath's autoload plug-in.  Otherwise, jsMath does not load itself and run in worksheets that *initially* do not contain expressions to typeset.",
+    "created_at": "2009-12-02T23:41:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4714",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35565",
+    "user": "mpatel"
+}
+```
 
 Version 3:
 
- * Disables jsMath's autoload plug-in.  Otherwise, jsMath does not load itself and run in worksheets that _initially_ do not contain expressions to typeset.
+* Disables jsMath's autoload plug-in.  Otherwise, jsMath does not load itself and run in worksheets that *initially* do not contain expressions to typeset.
+
 
 
 ---
 
-Comment by was created at 2009-12-08 23:25:49
+archive/issue_comments_035566.json:
+```json
+{
+    "body": "Looks good to me.",
+    "created_at": "2009-12-08T23:25:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4714",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35566",
+    "user": "was"
+}
+```
 
 Looks good to me.
 
 
+
 ---
 
-Comment by was created at 2009-12-08 23:25:49
+archive/issue_comments_035567.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-12-08T23:25:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4714",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35567",
+    "user": "was"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by was created at 2009-12-09 01:12:41
+archive/issue_comments_035568.json:
+```json
+{
+    "body": "I merged this patch into sagenb-0.4.6.",
+    "created_at": "2009-12-09T01:12:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4714",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35568",
+    "user": "was"
+}
+```
 
 I merged this patch into sagenb-0.4.6.
 
 
+
 ---
 
-Comment by was created at 2009-12-09 01:12:41
+archive/issue_comments_035569.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-12-09T01:12:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4714",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4714#issuecomment-35569",
+    "user": "was"
+}
+```
 
 Resolution: fixed

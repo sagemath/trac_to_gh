@@ -1,11 +1,21 @@
 # Issue 6776: [with patch, needs review] plot3d improvement for lattice polytopes
 
-Issue created by migration from https://trac.sagemath.org/ticket/6776
-
-Original creator: novoselt
-
-Original creation time: 2009-08-19 20:11:21
-
+archive/issues_006776.json:
+```json
+{
+    "body": "Assignee: mhampton\n\nThis patch allows to\n\n- use plot3d for 1- and 2-dimensional polytopes\n\n- specify different colors for different facets\n\n- specify labels for vertices other than their numbers\n\n\n```\nsage: lattice_polytope.octahedron(2).plot3d(vlabels=[\"A\", \"B\", \"C\", \"D\"])\nsage: o = lattice_polytope.octahedron(3)\nsage: o.plot3d(facet_colors=sage.plot.plot.rainbow(o.nfacets(), 'rgbtuple'))\n```\n\n\nThe positioning of labels is slightly improved 0 they are now shifted away from the barycenter of the polytope, not just the origin.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6776\n\n",
+    "created_at": "2009-08-19T20:11:21Z",
+    "labels": [
+        "geometry",
+        "major",
+        "enhancement"
+    ],
+    "title": "[with patch, needs review] plot3d improvement for lattice polytopes",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6776",
+    "user": "novoselt"
+}
+```
 Assignee: mhampton
 
 This patch allows to
@@ -26,15 +36,43 @@ sage: o.plot3d(facet_colors=sage.plot.plot.rainbow(o.nfacets(), 'rgbtuple'))
 
 The positioning of labels is slightly improved 0 they are now shifted away from the barycenter of the polytope, not just the origin.
 
+Issue created by migration from https://trac.sagemath.org/ticket/6776
+
+
+
+
 
 ---
+
+archive/issue_comments_055817.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-08-19T20:14:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6776",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6776#issuecomment-55817",
+    "user": "novoselt"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhampton created at 2009-09-22 17:43:52
+archive/issue_comments_055818.json:
+```json
+{
+    "body": "Looks good, passes tests and coverage.  I did notice that the code for vertices for 1-D polytopes is broken in plot3d.  I.e., the line:\n\n```\nvertices = [vector(ZZ, list(self.vertex(i))+[0]*(3-dim)) for i in range(self.nvertices())]\n```\n\n\nraises an error, but it isn't the fault of this code.  It turns out that line3d can modify the type of its arguments, which is a totally separate bug which I will make a new ticket for.  So I think that issue is OK for this patch, it should get resolved separately.\n\nI do have one comment about the vertex labels - if the vertex is at the barycenter, then it isn't shifted at all and the label is right on top of the vertex point.  Since its not directly addressed by this patch I don't think that should affect this review though.\n\nAlso, someday soon the polytope code should be unified (i.e. in polyhedra.py and lattice_polytope.py) and refactored.  There are so many functions in both that depend on dimension I think it does make sense to have a polytope-factory class with dimension-specific subclasses.  But that will be a relatively big job and it will be almost impossible not to break backward compatibility.",
+    "created_at": "2009-09-22T17:43:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6776",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6776#issuecomment-55818",
+    "user": "mhampton"
+}
+```
 
 Looks good, passes tests and coverage.  I did notice that the code for vertices for 1-D polytopes is broken in plot3d.  I.e., the line:
 
@@ -50,15 +88,37 @@ I do have one comment about the vertex labels - if the vertex is at the barycent
 Also, someday soon the polytope code should be unified (i.e. in polyhedra.py and lattice_polytope.py) and refactored.  There are so many functions in both that depend on dimension I think it does make sense to have a polytope-factory class with dimension-specific subclasses.  But that will be a relatively big job and it will be almost impossible not to break backward compatibility.
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-22 21:35:32
+archive/issue_comments_055819.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-09-22T21:35:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6776",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6776#issuecomment-55819",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-27 09:33:22
+archive/issue_comments_055820.json:
+```json
+{
+    "body": "There is no 4.1.2.alpha3. Sage 4.1.2.alpha3 was William Stein's release for working on the making the notebook a standalone package.",
+    "created_at": "2009-09-27T09:33:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6776",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6776#issuecomment-55820",
+    "user": "mvngu"
+}
+```
 
 There is no 4.1.2.alpha3. Sage 4.1.2.alpha3 was William Stein's release for working on the making the notebook a standalone package.

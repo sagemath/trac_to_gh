@@ -1,74 +1,184 @@
 # Issue 4973: rewrite the function __getitem__ in matrix0.pyx to not explicitly use the python/C api
 
-Issue created by migration from https://trac.sagemath.org/ticket/4973
-
-Original creator: mabshoff
-
-Original creation time: 2009-01-14 09:30:10
-
+archive/issues_004973.json:
+```json
+{
+    "body": "Assignee: craigcitro\n\nCC:  craigcitro\n\n`__getitem__` in matrix0.pyx uses C Python API and that code should have **never** been merged as is. The C API was used to get maximum speed. If possible rewrite this code to not use the C API, but it should not lose too much speed. This might be impossible or require adding bits to Cython.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4973\n\n",
+    "created_at": "2009-01-14T09:30:10Z",
+    "labels": [
+        "misc",
+        "major",
+        "bug"
+    ],
+    "title": "rewrite the function __getitem__ in matrix0.pyx to not explicitly use the python/C api",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4973",
+    "user": "mabshoff"
+}
+```
 Assignee: craigcitro
 
 CC:  craigcitro
 
-`__getitem__` in matrix0.pyx uses C Python API and that code should have *never* been merged as is. The C API was used to get maximum speed. If possible rewrite this code to not use the C API, but it should not lose too much speed. This might be impossible or require adding bits to Cython.
+`__getitem__` in matrix0.pyx uses C Python API and that code should have **never** been merged as is. The C API was used to get maximum speed. If possible rewrite this code to not use the C API, but it should not lose too much speed. This might be impossible or require adding bits to Cython.
 
 Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/4973
+
+
+
+
 
 ---
 
-Comment by jason created at 2009-01-14 10:25:41
+archive/issue_comments_037874.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-01-14T10:25:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4973",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4973#issuecomment-37874",
+    "user": "jason"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by jason created at 2009-01-14 10:25:41
+archive/issue_comments_037875.json:
+```json
+{
+    "body": "Changing assignee from craigcitro to jason.",
+    "created_at": "2009-01-14T10:25:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4973",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4973#issuecomment-37875",
+    "user": "jason"
+}
+```
 
 Changing assignee from craigcitro to jason.
 
 
+
 ---
+
+archive/issue_comments_037876.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-01-14T12:05:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4973",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4973#issuecomment-37876",
+    "user": "jason"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by jason created at 2009-01-14 15:30:23
+archive/issue_comments_037877.json:
+```json
+{
+    "body": "I didn't mean to mark this as needs review.  There are a few additions to the getitem syntax (like allowing negative indices) for which doctests need to be changed.  The main function should be about done, though.  More speed regression testing should be done as well.",
+    "created_at": "2009-01-14T15:30:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4973",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4973#issuecomment-37877",
+    "user": "jason"
+}
+```
 
 I didn't mean to mark this as needs review.  There are a few additions to the getitem syntax (like allowing negative indices) for which doctests need to be changed.  The main function should be about done, though.  More speed regression testing should be done as well.
 
 
+
 ---
+
+archive/issue_comments_037878.json:
+```json
+{
+    "body": "Attachment\n\nApply matrix-getitem.2.patch only.  This eliminates the C API calls, but keeps the speed, approximately (some cases are a bit slower, some are a bit faster).  This patch also adds more standard slicing functionality to getitem, which actually changes a few behaviors which went against python convention.  See the changed docstrings, for example.",
+    "created_at": "2009-01-15T04:05:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4973",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4973#issuecomment-37878",
+    "user": "jason"
+}
+```
 
 Attachment
 
 Apply matrix-getitem.2.patch only.  This eliminates the C API calls, but keeps the speed, approximately (some cases are a bit slower, some are a bit faster).  This patch also adds more standard slicing functionality to getitem, which actually changes a few behaviors which went against python convention.  See the changed docstrings, for example.
 
 
+
 ---
+
+archive/issue_comments_037879.json:
+```json
+{
+    "body": "Attachment\n\napply only matrix-getitem.3.patch.  This patch replaces the call to normalize_slice with a standard python idiom for the same functionality.",
+    "created_at": "2009-01-15T06:19:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4973",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4973#issuecomment-37879",
+    "user": "jason"
+}
+```
 
 Attachment
 
 apply only matrix-getitem.3.patch.  This patch replaces the call to normalize_slice with a standard python idiom for the same functionality.
 
 
+
 ---
 
-Comment by craigcitro created at 2009-01-15 19:05:36
+archive/issue_comments_037880.json:
+```json
+{
+    "body": "So I've reviewed Jason's patch, and everything looks good -- except that for lots of cases, in particular the primary `M[i,j]` use case, things are noticeably slower (on the order of 25%). This is no good on such a basic operation.\n\nThis code actually does **more** than the previous version (i.e. accepts additional types, negative indices, etc), and is still the same speed. \n\nCython doesn't quite do everything we want to get maximal speed out of this call. I'm going to submit another patch that uses it more judiciously, but gets yet more speed, because this is such an important piece of code.",
+    "created_at": "2009-01-15T19:05:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4973",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4973#issuecomment-37880",
+    "user": "craigcitro"
+}
+```
 
 So I've reviewed Jason's patch, and everything looks good -- except that for lots of cases, in particular the primary `M[i,j]` use case, things are noticeably slower (on the order of 25%). This is no good on such a basic operation.
 
-This code actually does *more* than the previous version (i.e. accepts additional types, negative indices, etc), and is still the same speed. 
+This code actually does **more** than the previous version (i.e. accepts additional types, negative indices, etc), and is still the same speed. 
 
 Cython doesn't quite do everything we want to get maximal speed out of this call. I'm going to submit another patch that uses it more judiciously, but gets yet more speed, because this is such an important piece of code.
 
 
+
 ---
+
+archive/issue_comments_037881.json:
+```json
+{
+    "body": "Attachment\n\nNew version of the patch. So this adds one additional Python/C API call, but gets a 10% speedup for the case of `M[i,j]`, which I think is worthwhile. Furthermore, it's only necessary because this is a case where Cython doesn't do enough specific optimization for us -- one day, when Cython gets smarter, we can clean this up more.\n\nAlso fixed a bug in matrix indexing with tuples, and added a doctest for that case.",
+    "created_at": "2009-01-15T22:50:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4973",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4973#issuecomment-37881",
+    "user": "craigcitro"
+}
+```
 
 Attachment
 
@@ -77,19 +187,41 @@ New version of the patch. So this adds one additional Python/C API call, but get
 Also fixed a bug in matrix indexing with tuples, and added a doctest for that case.
 
 
+
 ---
 
-Comment by craigcitro created at 2009-01-15 22:54:28
+archive/issue_comments_037882.json:
+```json
+{
+    "body": "As a note, the patches to be applied, in order:\n\n* `matrix-getitem.3.patch`\n* `trac-4973-pt2.patch`",
+    "created_at": "2009-01-15T22:54:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4973",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4973#issuecomment-37882",
+    "user": "craigcitro"
+}
+```
 
 As a note, the patches to be applied, in order:
 
- * `matrix-getitem.3.patch`
- * `trac-4973-pt2.patch`
+* `matrix-getitem.3.patch`
+* `trac-4973-pt2.patch`
+
 
 
 ---
 
-Comment by jason created at 2009-01-16 01:57:47
+archive/issue_comments_037883.json:
+```json
+{
+    "body": "Doctests pass. I've tried lots of the doc examples and they are faster or the same as the old code, except for the following case.  These commands are each executed in a fresh Sage session.\n\n\n```\n\nAFTER PATCH:\n\nsage: m=[(1, -2, -1, -1,9), (1, 8, 6, 2,2), (1, 1, -1, 1,4), (-1, 2, -2, -1,4)];M= matrix(m)\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 167 \u00b5s per loop\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 168 \u00b5s per loop\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 166 \u00b5s per loop\n\n\nBEFORE PATCH:\n\nsage: m=[(1, -2, -1, -1,9), (1, 8, 6, 2,2), (1, 1, -1, 1,4), (-1, 2, -2, -1,4)];M= matrix(m)\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 134 \u00b5s per loop\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 138 \u00b5s per loop\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 143 \u00b5s per loop\n```\n\n\nSo, positive review if this regression is fixed.",
+    "created_at": "2009-01-16T01:57:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4973",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4973#issuecomment-37883",
+    "user": "jason"
+}
+```
 
 Doctests pass. I've tried lots of the doc examples and they are faster or the same as the old code, except for the following case.  These commands are each executed in a fresh Sage session.
 
@@ -122,16 +254,40 @@ sage: timeit('M[[1,2],[0,1,2]]')
 So, positive review if this regression is fixed.
 
 
+
 ---
+
+archive/issue_comments_037884.json:
+```json
+{
+    "body": "Attachment\n\nPatch attached that fixes the regression (at least on my machine).",
+    "created_at": "2009-01-16T02:13:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4973",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4973#issuecomment-37884",
+    "user": "craigcitro"
+}
+```
 
 Attachment
 
 Patch attached that fixes the regression (at least on my machine).
 
 
+
 ---
 
-Comment by jason created at 2009-01-16 02:23:50
+archive/issue_comments_037885.json:
+```json
+{
+    "body": "Okay, pt3 fixes the regression.  Here are my new timings:\n\n\n```\nAFTER PATCH:\n\nsage: m=[(1, -2, -1, -1,9), (1, 8, 6, 2,2), (1, 1, -1, 1,4), (-1, 2, -2, -1,4)];M= matrix(m)\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 167 \u00b5s per loop\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 168 \u00b5s per loop\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 166 \u00b5s per loop\n\n\nBEFORE PATCH:\n\nsage: m=[(1, -2, -1, -1,9), (1, 8, 6, 2,2), (1, 1, -1, 1,4), (-1, 2, -2, -1,4)];M= matrix(m)\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 134 \u00b5s per loop\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 138 \u00b5s per loop\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 143 \u00b5s per loop\n```\n\n\nSo we're faster than the original code again.\n\nGreat job. Positive review, with the doctest fix that I'm going to post in a second.  I presume that mabshoff will run all doctests on it to make sure that there are no errors in other code because of the additional capabilities.",
+    "created_at": "2009-01-16T02:23:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4973",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4973#issuecomment-37885",
+    "user": "jason"
+}
+```
 
 Okay, pt3 fixes the regression.  Here are my new timings:
 
@@ -165,21 +321,56 @@ So we're faster than the original code again.
 Great job. Positive review, with the doctest fix that I'm going to post in a second.  I presume that mabshoff will run all doctests on it to make sure that there are no errors in other code because of the additional capabilities.
 
 
+
 ---
 
-Comment by jason created at 2009-01-16 02:24:33
+archive/issue_comments_037886.json:
+```json
+{
+    "body": "apply on top of previous patch",
+    "created_at": "2009-01-16T02:24:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4973",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4973#issuecomment-37886",
+    "user": "jason"
+}
+```
 
 apply on top of previous patch
 
 
+
 ---
+
+archive/issue_comments_037887.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-01-16T02:24:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4973",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4973#issuecomment-37887",
+    "user": "jason"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by jason created at 2009-01-16 02:26:07
+archive/issue_comments_037888.json:
+```json
+{
+    "body": "I mean, *here* are my new timings after the regression fix in pt3.patch:\n\n\n```\nAFTER PATCH:\n\nsage: m=[(1, -2, -1, -1,9), (1, 8, 6, 2,2), (1, 1, -1, 1,4), (-1, 2, -2, -1,4)];M= matrix(m)\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 167 \u00b5s per loop\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 168 \u00b5s per loop\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 166 \u00b5s per loop\n\n\nBEFORE PATCH:\n\nsage: m=[(1, -2, -1, -1,9), (1, 8, 6, 2,2), (1, 1, -1, 1,4), (-1, 2, -2, -1,4)];M= matrix(m)\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 134 \u00b5s per loop\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 138 \u00b5s per loop\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 143 \u00b5s per loop\n```\n\n\nI copied the wrong thing before.",
+    "created_at": "2009-01-16T02:26:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4973",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4973#issuecomment-37888",
+    "user": "jason"
+}
+```
 
 I mean, *here* are my new timings after the regression fix in pt3.patch:
 
@@ -211,9 +402,20 @@ sage: timeit('M[[1,2],[0,1,2]]')
 I copied the wrong thing before.
 
 
+
 ---
 
-Comment by jason created at 2009-01-16 02:27:14
+archive/issue_comments_037889.json:
+```json
+{
+    "body": "Grrr, apparently I again copied the wrong thing.  So much for middle-click vs. ctrl-v.\n\n*here* are the new timings:\n\n\n```\nsage: m=[(1, -2, -1, -1,9), (1, 8, 6, 2,2), (1, 1, -1, 1,4), (-1, 2, -2, -1,4)];M= matrix(m)\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 125 \u00b5s per loop\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 120 \u00b5s per loop\nsage: timeit('M[[1,2],[0,1,2]]')\n625 loops, best of 3: 124 \u00b5s per loop\n```\n",
+    "created_at": "2009-01-16T02:27:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4973",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4973#issuecomment-37889",
+    "user": "jason"
+}
+```
 
 Grrr, apparently I again copied the wrong thing.  So much for middle-click vs. ctrl-v.
 
@@ -232,9 +434,20 @@ sage: timeit('M[[1,2],[0,1,2]]')
 
 
 
+
 ---
 
-Comment by robertwb created at 2009-01-16 19:52:02
+archive/issue_comments_037890.json:
+```json
+{
+    "body": "BTW, now it's even faster to write\n\n\n```\nrow_index, col_index = key_tuple\n```\n\n\nThen \n\n\n```\nrow_index = key_tuple[0] \ncol_index = key_tuple[1]\n```\n",
+    "created_at": "2009-01-16T19:52:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4973",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4973#issuecomment-37890",
+    "user": "robertwb"
+}
+```
 
 BTW, now it's even faster to write
 
@@ -254,16 +467,38 @@ col_index = key_tuple[1]
 
 
 
+
 ---
 
-Comment by craigcitro created at 2009-01-16 20:00:43
+archive/issue_comments_037891.json:
+```json
+{
+    "body": "Though do either of those keep up with directly using `PyTuple_GET_ITEM`? I didn't think they did based on my timings, but I'd be happy to find out otherwise.",
+    "created_at": "2009-01-16T20:00:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4973",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4973#issuecomment-37891",
+    "user": "craigcitro"
+}
+```
 
 Though do either of those keep up with directly using `PyTuple_GET_ITEM`? I didn't think they did based on my timings, but I'd be happy to find out otherwise.
 
 
+
 ---
 
-Comment by robertwb created at 2009-01-16 20:24:34
+archive/issue_comments_037892.json:
+```json
+{
+    "body": "Here's the actual generated code for `x,y = t`\n\n\n```\n    if (PyTuple_CheckExact(__pyx_v_t) && PyTuple_GET_SIZE(__pyx_v_t) == 2) {\n    PyObject* tuple = __pyx_v_t;\n    __pyx_2 = PyTuple_GET_ITEM(tuple, 0);\n    Py_INCREF(__pyx_2);\n    Py_DECREF(__pyx_v_x);\n    __pyx_v_x = __pyx_2;\n    __pyx_2 = 0;\n    __pyx_2 = PyTuple_GET_ITEM(tuple, 1);\n    Py_INCREF(__pyx_2);\n    Py_DECREF(__pyx_v_y);\n    __pyx_v_y = __pyx_2;\n    __pyx_2 = 0;\n  }\n  else {\n     [generic code]\n  }\n```\n\n\nIf `t` is declared to be a tuple, half of the first check shouldn't be needed (I don't think this optimization is in place yet). So it should be as fast as type check + length check + PyTuple_GET_ITEM. In any case, it's faster than indexing not using PyTyple_GET_ITEM.",
+    "created_at": "2009-01-16T20:24:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4973",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4973#issuecomment-37892",
+    "user": "robertwb"
+}
+```
 
 Here's the actual generated code for `x,y = t`
 
@@ -291,41 +526,85 @@ Here's the actual generated code for `x,y = t`
 If `t` is declared to be a tuple, half of the first check shouldn't be needed (I don't think this optimization is in place yet). So it should be as fast as type check + length check + PyTuple_GET_ITEM. In any case, it's faster than indexing not using PyTyple_GET_ITEM.
 
 
+
 ---
 
-Comment by craigcitro created at 2009-01-17 21:31:29
+archive/issue_comments_037893.json:
+```json
+{
+    "body": "Ah, excellent. In this particular case, we've just done both of those checks -- the typecheck and the length check -- so I'm going to say we should stick with the `PyTuple_GET_ITEM` (we also raise an explicit exception if the length is wrong), but I'm happy to know that in general, Cython generates such good code.\n\nIt'd be nice if Cython skipped the typecheck when it knew the type -- should a ticket be filed on the Cython trac server?",
+    "created_at": "2009-01-17T21:31:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4973",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4973#issuecomment-37893",
+    "user": "craigcitro"
+}
+```
 
 Ah, excellent. In this particular case, we've just done both of those checks -- the typecheck and the length check -- so I'm going to say we should stick with the `PyTuple_GET_ITEM` (we also raise an explicit exception if the length is wrong), but I'm happy to know that in general, Cython generates such good code.
 
 It'd be nice if Cython skipped the typecheck when it knew the type -- should a ticket be filed on the Cython trac server?
 
 
+
 ---
 
-Comment by robertwb created at 2009-01-17 21:39:47
+archive/issue_comments_037894.json:
+```json
+{
+    "body": "Sounds like a good course of action for now. \n\nYes, that should be a ticket on the Cython trac.",
+    "created_at": "2009-01-17T21:39:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4973",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4973#issuecomment-37894",
+    "user": "robertwb"
+}
+```
 
 Sounds like a good course of action for now. 
 
 Yes, that should be a ticket on the Cython trac.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-18 14:44:33
+archive/issue_comments_037895.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-01-18T14:44:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4973",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4973#issuecomment-37895",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-18 14:44:33
+archive/issue_comments_037896.json:
+```json
+{
+    "body": "Merged\n\n* matrix-getitem.3.patch\n* trac-4973-pt2.patch\n* trac-4973-pt3.patch\n* doctest-fix.patch \n\nin Sage 3.3.alpha0\n\nCheers,\n\nMichael",
+    "created_at": "2009-01-18T14:44:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4973",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4973#issuecomment-37896",
+    "user": "mabshoff"
+}
+```
 
 Merged
 
- * matrix-getitem.3.patch
- * trac-4973-pt2.patch
- * trac-4973-pt3.patch
- * doctest-fix.patch 
+* matrix-getitem.3.patch
+* trac-4973-pt2.patch
+* trac-4973-pt3.patch
+* doctest-fix.patch 
 
 in Sage 3.3.alpha0
 

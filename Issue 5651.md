@@ -1,11 +1,21 @@
 # Issue 5651: make it so plot(...) passes extra options to show (maybe only those that makes sense)
 
-Issue created by migration from https://trac.sagemath.org/ticket/5651
-
-Original creator: was
-
-Original creation time: 2009-03-31 20:33:43
-
+archive/issues_005651.json:
+```json
+{
+    "body": "Assignee: wcauchois\n\nCC:  wcauchois was jason\n\nThis works now:\n\n```\nplot(sin(x^2),(x,-3,3)).show(figsize=[8,2])\n```\n\n\nThis would be nice:\n\n```\nplot(sin(x^2),(x,-3,3),figsize=[2,8])\n```\n\n\nThe analogue of the above works systematically everywhere for 3d plotting.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5651\n\n",
+    "created_at": "2009-03-31T20:33:43Z",
+    "labels": [
+        "graphics",
+        "major",
+        "bug"
+    ],
+    "title": "make it so plot(...) passes extra options to show (maybe only those that makes sense)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5651",
+    "user": "was"
+}
+```
 Assignee: wcauchois
 
 CC:  wcauchois was jason
@@ -26,10 +36,25 @@ plot(sin(x^2),(x,-3,3),figsize=[2,8])
 
 The analogue of the above works systematically everywhere for 3d plotting.
 
+Issue created by migration from https://trac.sagemath.org/ticket/5651
+
+
+
+
 
 ---
 
-Comment by was created at 2009-04-28 21:16:42
+archive/issue_comments_044124.json:
+```json
+{
+    "body": "This is really awesome.  However, things like this should work too:\n\n```\nsage: line([(0,1), (3,4)],figsize=[10,2])\nTraceback (most recent call last):\n...\nRuntimeError: Error in line(): option 'figsize' not valid.\n```\n\n\nAlso, this should have gridlines:\n\n```\nplot(sin(x^2),(x,-3,3),gridlines=True) + plot(cos(x^2),(x,-3,3))\n```\n\n\nClarify the comment\n\n```\n# If you add parameters to show(), you should update the code below. \n```\n\n}}}",
+    "created_at": "2009-04-28T21:16:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5651",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5651#issuecomment-44124",
+    "user": "was"
+}
+```
 
 This is really awesome.  However, things like this should work too:
 
@@ -57,16 +82,38 @@ Clarify the comment
 }}}
 
 
+
 ---
 
-Comment by wcauchois created at 2009-05-11 22:33:25
+archive/issue_comments_044125.json:
+```json
+{
+    "body": "Now it works for everything, ever!! With doctests too.",
+    "created_at": "2009-05-11T22:33:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5651",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5651#issuecomment-44125",
+    "user": "wcauchois"
+}
+```
 
 Now it works for everything, ever!! With doctests too.
 
 
+
 ---
 
-Comment by was created at 2009-05-12 21:12:29
+archive/issue_comments_044126.json:
+```json
+{
+    "body": "Positive review modulo making so consistent with 3d plotting:\n\n```\nsphere((0,0,0),1, aspect_ratio=[1,4,7]) + sphere((1,1,1),1, aspect_ratio=[1,1,1])\n```\n\n\nNote that it is the *rightmost* thing that has precedence.   Otherwise positive review.",
+    "created_at": "2009-05-12T21:12:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5651",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5651#issuecomment-44126",
+    "user": "was"
+}
+```
 
 Positive review modulo making so consistent with 3d plotting:
 
@@ -78,22 +125,57 @@ sphere((0,0,0),1, aspect_ratio=[1,4,7]) + sphere((1,1,1),1, aspect_ratio=[1,1,1]
 Note that it is the *rightmost* thing that has precedence.   Otherwise positive review.
 
 
+
 ---
+
+archive/issue_comments_044127.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-05-14T03:28:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5651",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5651#issuecomment-44127",
+    "user": "wcauchois"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by wcauchois created at 2009-05-14 03:29:15
+archive/issue_comments_044128.json:
+```json
+{
+    "body": "William,\nI fixed the precedence issue.",
+    "created_at": "2009-05-14T03:29:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5651",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5651#issuecomment-44128",
+    "user": "wcauchois"
+}
+```
 
 William,
 I fixed the precedence issue.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-15 07:42:53
+archive/issue_comments_044129.json:
+```json
+{
+    "body": "This one needs to be rebased due to a doctest merge conflict in arrow.py. On top of that: this is a diff, so please make sure you post a proper patch this time.\n\n```\nmabshoff@sage:/scratch/mabshoff/sage-4.0.alpha0/devel/sage$ patch -p1 --dry-run < trac_5651.patch \npatching file sage/plot/arrow.py\nHunk #1 FAILED at 310.\n1 out of 1 hunk FAILED -- saving rejects to file sage/plot/arrow.py.rej\npatching file sage/plot/bar_chart.py\npatching file sage/plot/bezier_path.py\n<SNIP>\n```\n\nNote that various doctest patches in plot/* are going into 4.0.alpha0, so please rebase post 4.0.a0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-05-15T07:42:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5651",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5651#issuecomment-44129",
+    "user": "mabshoff"
+}
+```
 
 This one needs to be rebased due to a doctest merge conflict in arrow.py. On top of that: this is a diff, so please make sure you post a proper patch this time.
 
@@ -114,9 +196,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-15 07:48:47
+archive/issue_comments_044130.json:
+```json
+{
+    "body": "Note that with #6006, #6023 and #6030 applied there are two more small rejects.\n\nCheers,\n\nMichael",
+    "created_at": "2009-05-15T07:48:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5651",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5651#issuecomment-44130",
+    "user": "mabshoff"
+}
+```
 
 Note that with #6006, #6023 and #6030 applied there are two more small rejects.
 
@@ -125,46 +218,114 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by wcauchois created at 2009-05-22 06:44:48
+archive/issue_comments_044131.json:
+```json
+{
+    "body": "I rebased the patch on Sage 4.0.rc0. As far as I could tell, the doctest failures I encountered were not related to this patch. My apologies for posting a diff beforehand, I'm still learning the idiosyncracies of Mercurial Queues :).",
+    "created_at": "2009-05-22T06:44:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5651",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5651#issuecomment-44131",
+    "user": "wcauchois"
+}
+```
 
 I rebased the patch on Sage 4.0.rc0. As far as I could tell, the doctest failures I encountered were not related to this patch. My apologies for posting a diff beforehand, I'm still learning the idiosyncracies of Mercurial Queues :).
 
 
+
 ---
 
-Comment by mhansen created at 2009-06-01 06:19:36
+archive/issue_comments_044132.json:
+```json
+{
+    "body": "Hi Bill,\n\nI tried applying this to 4.0 and got a bunch of failures.  I can probably rebase it later this evening.",
+    "created_at": "2009-06-01T06:19:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5651",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5651#issuecomment-44132",
+    "user": "mhansen"
+}
+```
 
 Hi Bill,
 
 I tried applying this to 4.0 and got a bunch of failures.  I can probably rebase it later this evening.
 
 
+
 ---
 
-Comment by wcauchois created at 2009-06-01 07:55:54
+archive/issue_comments_044133.json:
+```json
+{
+    "body": "I would appreciate that mhansen, thanks!",
+    "created_at": "2009-06-01T07:55:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5651",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5651#issuecomment-44133",
+    "user": "wcauchois"
+}
+```
 
 I would appreciate that mhansen, thanks!
 
 
+
 ---
 
-Comment by wcauchois created at 2009-07-01 20:44:41
+archive/issue_comments_044134.json:
+```json
+{
+    "body": "I added a new rebase, so if someone could review this then we can finally get this functionality into Sage.\n\nI feel like I did a little bit of a dirty thing with the new linkmode parameter, which was added somewhere along the line. linkmode is intended to be consumed by show() before the keywords are passed onto save(), so I just popped it from the keyword dict at the beginning of the function.",
+    "created_at": "2009-07-01T20:44:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5651",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5651#issuecomment-44134",
+    "user": "wcauchois"
+}
+```
 
 I added a new rebase, so if someone could review this then we can finally get this functionality into Sage.
 
 I feel like I did a little bit of a dirty thing with the new linkmode parameter, which was added somewhere along the line. linkmode is intended to be consumed by show() before the keywords are passed onto save(), so I just popped it from the keyword dict at the beginning of the function.
 
 
+
 ---
 
-Comment by wcauchois created at 2009-07-01 20:48:29
+archive/issue_comments_044135.json:
+```json
+{
+    "body": "based on sage 4.1.alpha2 (fixed, whoops)",
+    "created_at": "2009-07-01T20:48:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5651",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5651#issuecomment-44135",
+    "user": "wcauchois"
+}
+```
 
 based on sage 4.1.alpha2 (fixed, whoops)
 
 
+
 ---
+
+archive/issue_comments_044136.json:
+```json
+{
+    "body": "Attachment\n\nThe rebased patch applies fine to my 4.1 tree.  I tried a few examples and ran the doctests in plot/*.py[x] and plot/plot3d/*.py[x] and everything seems fine.  I'm giving a positive review to the rebasing. That combined with William's almost positive review above adds up to a positive review.\n\nI also looked at the code and it looked reasonable.\n\nThanks and good work!",
+    "created_at": "2009-07-18T23:17:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5651",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5651#issuecomment-44136",
+    "user": "jason"
+}
+```
 
 Attachment
 
@@ -175,16 +336,38 @@ I also looked at the code and it looked reasonable.
 Thanks and good work!
 
 
+
 ---
 
-Comment by mvngu created at 2009-07-19 08:27:20
+archive/issue_comments_044137.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-07-19T08:27:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5651",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5651#issuecomment-44137",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mvngu created at 2009-07-19 08:27:20
+archive/issue_comments_044138.json:
+```json
+{
+    "body": "Merged `trac5651-rebase.patch`. That rebased patch contains doctrings that doesn't conform with conventions for formatting docstrings. In particular, in `sage/plot/bar_chart.py`:\n\n```\n131\t    Extra options will get passed on to show(), as long as they are valid:\n```\n\nIn `sage/plot/bezier_path.py`:\n\n```\n171\t    Extra options will get passed on to show(), as long as they are valid:\n```\n\nIn `sage/plot/matrix_plot.py`:\n\n```\n58\t    Extra options will get passed on to show(), as long as they are valid:\n62\t    Extra options will get passed on to show(), as long as they are valid:\n```\n\nIn `sage/plot/polygon.py`:\n\n```\n255\t    Extra options will get passed on to show(), as long as they are valid:\n```\n\nThese issues should be addressed in another enhancement ticket.",
+    "created_at": "2009-07-19T08:27:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5651",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5651#issuecomment-44138",
+    "user": "mvngu"
+}
+```
 
 Merged `trac5651-rebase.patch`. That rebased patch contains doctrings that doesn't conform with conventions for formatting docstrings. In particular, in `sage/plot/bar_chart.py`:
 
@@ -214,8 +397,19 @@ In `sage/plot/polygon.py`:
 These issues should be addressed in another enhancement ticket.
 
 
+
 ---
 
-Comment by mvngu created at 2009-07-20 20:56:00
+archive/issue_comments_044139.json:
+```json
+{
+    "body": "See #6573 for an enhancement ticket.",
+    "created_at": "2009-07-20T20:56:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5651",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5651#issuecomment-44139",
+    "user": "mvngu"
+}
+```
 
 See #6573 for an enhancement ticket.

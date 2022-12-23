@@ -1,11 +1,21 @@
 # Issue 4520: segfault in cyclotomic matrices
 
-Issue created by migration from https://trac.sagemath.org/ticket/4520
-
-Original creator: robertwb
-
-Original creation time: 2008-11-14 06:52:59
-
+archive/issues_004520.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  craigcitro\n\n\n```\nsage: M = matrix(CyclotomicField(5), 5, 2, 5)\n\n\n------------------------------------------------------------\nUnhandled SIGBUS: A bus error occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4520\n\n",
+    "created_at": "2008-11-14T06:52:59Z",
+    "labels": [
+        "linear algebra",
+        "major",
+        "bug"
+    ],
+    "title": "segfault in cyclotomic matrices",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4520",
+    "user": "robertwb"
+}
+```
 Assignee: was
 
 CC:  craigcitro
@@ -26,49 +36,132 @@ SAGE will now terminate (sorry).
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4520
+
+
+
+
 
 ---
 
-Comment by robertwb created at 2008-11-14 06:58:57
+archive/issue_comments_033547.json:
+```json
+{
+    "body": "It was a missing check.",
+    "created_at": "2008-11-14T06:58:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4520",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4520#issuecomment-33547",
+    "user": "robertwb"
+}
+```
 
 It was a missing check.
 
 
+
 ---
 
-Comment by craigcitro created at 2008-11-14 07:09:08
+archive/issue_comments_033548.json:
+```json
+{
+    "body": "If you add a doctest, I'll give this a positive review.",
+    "created_at": "2008-11-14T07:09:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4520",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4520#issuecomment-33548",
+    "user": "craigcitro"
+}
+```
 
 If you add a doctest, I'll give this a positive review.
 
 
+
 ---
+
+archive/issue_comments_033549.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-11-14T07:18:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4520",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4520#issuecomment-33549",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by robertwb created at 2008-11-14 07:19:52
+archive/issue_comments_033550.json:
+```json
+{
+    "body": "Of course :) I've uploaded a new patch.",
+    "created_at": "2008-11-14T07:19:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4520",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4520#issuecomment-33550",
+    "user": "robertwb"
+}
+```
 
 Of course :) I've uploaded a new patch.
 
 
+
 ---
 
-Comment by craigcitro created at 2008-11-14 07:21:10
+archive/issue_comments_033551.json:
+```json
+{
+    "body": "Looks good.",
+    "created_at": "2008-11-14T07:21:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4520",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4520#issuecomment-33551",
+    "user": "craigcitro"
+}
+```
 
 Looks good.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-14 17:19:13
+archive/issue_comments_033552.json:
+```json
+{
+    "body": "Merged in Sage 3.2.rc1",
+    "created_at": "2008-11-14T17:19:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4520",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4520#issuecomment-33552",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.2.rc1
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-14 17:19:13
+archive/issue_comments_033553.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-11-14T17:19:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4520",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4520#issuecomment-33553",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

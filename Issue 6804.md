@@ -1,11 +1,21 @@
 # Issue 6804: Permutation.weak_excedences inconsistency
 
-Issue created by migration from https://trac.sagemath.org/ticket/6804
-
-Original creator: schilly
-
-Original creation time: 2009-08-22 17:16:29
-
+archive/issues_006804.json:
+```json
+{
+    "body": "Assignee: mhansen\n\nCC:  mjo\n\nEither code or docstring is wrong in 4.1.1, \"=\" vs. \">=\":\n\n\n```\nReturns all the numbers self[i] such that self[i] = i+1\n```\n\n\n\n```\nif self[i] >= i + 1:\n    res.append(self[i])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6804\n\n",
+    "created_at": "2009-08-22T17:16:29Z",
+    "labels": [
+        "combinatorics",
+        "major",
+        "bug"
+    ],
+    "title": "Permutation.weak_excedences inconsistency",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6804",
+    "user": "schilly"
+}
+```
 Assignee: mhansen
 
 CC:  mjo
@@ -25,46 +35,118 @@ if self[i] >= i + 1:
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6804
+
+
+
+
 
 ---
+
+archive/issue_comments_056025.json:
+```json
+{
+    "body": "Attachment\n\nFix the docstring.",
+    "created_at": "2012-01-09T05:24:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6804",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6804#issuecomment-56025",
+    "user": "mjo"
+}
+```
 
 Attachment
 
 Fix the docstring.
 
 
+
 ---
 
-Comment by mjo created at 2012-01-09 05:25:44
+archive/issue_comments_056026.json:
+```json
+{
+    "body": "I found a reference; the bug was in the docstring.",
+    "created_at": "2012-01-09T05:25:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6804",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6804#issuecomment-56026",
+    "user": "mjo"
+}
+```
 
 I found a reference; the bug was in the docstring.
 
 
+
 ---
 
-Comment by mjo created at 2012-01-09 05:25:44
+archive/issue_comments_056027.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2012-01-09T05:25:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6804",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6804#issuecomment-56027",
+    "user": "mjo"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by ncohen created at 2012-01-29 15:58:43
+archive/issue_comments_056028.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2012-01-29T15:58:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6804",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6804#issuecomment-56028",
+    "user": "ncohen"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by ncohen created at 2012-01-29 15:58:43
+archive/issue_comments_056029.json:
+```json
+{
+    "body": "Well, then...`:-)`\n\nNathann",
+    "created_at": "2012-01-29T15:58:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6804",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6804#issuecomment-56029",
+    "user": "ncohen"
+}
+```
 
 Well, then...`:-)`
 
 Nathann
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-02-02 12:51:52
+archive/issue_comments_056030.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2012-02-02T12:51:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6804",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6804#issuecomment-56030",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: fixed

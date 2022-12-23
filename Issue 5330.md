@@ -1,33 +1,80 @@
 # Issue 5330: Move the docs over to the main repository
 
-Issue created by migration from https://trac.sagemath.org/ticket/5330
-
-Original creator: mhansen
-
-Original creation time: 2009-02-21 19:29:23
-
+archive/issues_005330.json:
+```json
+{
+    "body": "Assignee: mhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5330\n\n",
+    "created_at": "2009-02-21T19:29:23Z",
+    "labels": [
+        "documentation",
+        "major",
+        "enhancement"
+    ],
+    "title": "Move the docs over to the main repository",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5330",
+    "user": "mhansen"
+}
+```
 Assignee: mhansen
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5330
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2009-02-21 19:30:17
+archive/issue_comments_041020.json:
+```json
+{
+    "body": "This patch should be applied before any of the ReST patches.",
+    "created_at": "2009-02-21T19:30:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5330",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5330#issuecomment-41020",
+    "user": "mhansen"
+}
+```
 
 This patch should be applied before any of the ReST patches.
 
 
+
 ---
 
-Comment by cwitty created at 2009-02-21 20:56:15
+archive/issue_comments_041021.json:
+```json
+{
+    "body": "I'm starting to review the Python code and the reference manual parts of this patch.  I'm not planning to review doc/en/* or doc/fr/*, except for the reference manual; so somebody else should do those.",
+    "created_at": "2009-02-21T20:56:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5330",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5330#issuecomment-41021",
+    "user": "cwitty"
+}
+```
 
 I'm starting to review the Python code and the reference manual parts of this patch.  I'm not planning to review doc/en/* or doc/fr/*, except for the reference manual; so somebody else should do those.
 
 
+
 ---
 
-Comment by cwitty created at 2009-02-22 02:51:00
+archive/issue_comments_041022.json:
+```json
+{
+    "body": "OK, this is going to be a long and complicated review :)\n\nI'm attaching a reviewer patch that fixes a few problems (makes doctests in builder.py pass, gives builder.py a better help message than \"Help message\", removes a module reference from the documentation that was in there twice (which was actually a carryover from the old documentation)).\n\nWith this patch, I give a positive review to doc/common (the python code behind \"sage -docbuild\").\n\nI believe that the non-automatically-generated portions of the new reference manual are essentially the same as the corresponding parts of the old reference manual, with some very important exceptions. (I did notice some errors that were carried over from the original manual, but I'll file separate tickets for those, with patches, so as not to cloud the issue on this ticket.)\n\nThe exceptions are that several sections (and one entire chapter) got (accidentally?) omitted from the new reference manual.  These include:\n\nthe GPL\n\nsage/schemes/readme.py\n\nand the entire Structures chapter (sage/structure/{sage_object,parent_gens,formal_sum,factorization,element,mutability,sequence,\nparent,coerce,coerce_actions,coerce_maps}, sage/sets/{set,primes}).\n\nI'd still vote in favor of applying this patch (and the rest of the sphinxification patches), under the assumption that these missing sections will get re-added to the reference manual quickly.  So: positive review for doc/en/reference.  Except:\n\nThere's a lot of junk in doc/en/reference/utils included in this patch (perhaps accidentally?).  Mixed in with the junk are, I think, the tools mhansen used to convert the reference manual.  It would be nice to have the junk at least minimally sorted (remove the files that are totally useless, add a four- or five-line comment at the top of each useful file explaining what it does and how to use it).  With the junk mixed in, that lowers the value of the directory considerably.  But still, it's nice to have mhansen's tools, so a weak positive review on doc/en/reference/utils even in its current state.\n\nAnd as I mentioned in my previous comment, I did not review doc/fr/*, or doc/en/* except for the reference manual.  I did notice, though, that doctests in some of the not-previously-doctested files fail:\n\n```\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/doc/en/bordeaux_2008/nf_introduction.rst\"\n        sage -t  \"devel/sage/doc/en/tutorial/distributed.rst\"\n        sage -t  \"devel/sage/doc/fr/tutorial/tour_rings.rst\"\n        sage -t  \"devel/sage/doc/fr/tutorial/tour_numtheory.rst\"\n```\n\nI did not look into the problems at all.",
+    "created_at": "2009-02-22T02:51:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5330",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5330#issuecomment-41022",
+    "user": "cwitty"
+}
+```
 
 OK, this is going to be a long and complicated review :)
 
@@ -65,16 +112,38 @@ The following tests failed:
 I did not look into the problems at all.
 
 
+
 ---
 
-Comment by mhansen created at 2009-02-22 18:34:11
+archive/issue_comments_041023.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-02-22T18:34:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5330",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5330#issuecomment-41023",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mhansen created at 2009-02-22 18:34:11
+archive/issue_comments_041024.json:
+```json
+{
+    "body": "I've posted a patch which does the following:\n\n\n```\n1. Remove reference/utils for now\n2. Fix failing doctests\n3. Added macros.tex and fixed sage.misc.latex to work with the new doc location\n4. Added schemes/readme back into the reference manual\n5. Added the history and license back into the manual\n```\n\n\nThese should not be merged individually, but should be folded together.  I'll post a folded version when it's ready to go in.\n\nI'll try to do sage.structure later today.",
+    "created_at": "2009-02-22T18:34:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5330",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5330#issuecomment-41024",
+    "user": "mhansen"
+}
+```
 
 I've posted a patch which does the following:
 
@@ -93,16 +162,38 @@ These should not be merged individually, but should be folded together.  I'll po
 I'll try to do sage.structure later today.
 
 
+
 ---
 
-Comment by mhansen created at 2009-02-23 00:03:11
+archive/issue_comments_041025.json:
+```json
+{
+    "body": "I've added a patch which adds the structure chapter back into the manual",
+    "created_at": "2009-02-23T00:03:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5330",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5330#issuecomment-41025",
+    "user": "mhansen"
+}
+```
 
 I've added a patch which adds the structure chapter back into the manual
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-02-23 21:01:48
+archive/issue_comments_041026.json:
+```json
+{
+    "body": "A few comments: \n\nin matrices.rst, ```sage/matrix/matrixrealdoubledense.py``` should be ```sage/matrix/matrix_real_double_dense.pyx```.  (Note the trailing 'x', as well as the underscores.)\n\nin databases.rst: this is a pre-existing condition, but in these lines:\n\n```\nSupports databases up to 2 tebibytes (241 bytes) in size.\n\nStrings and BLOBs up to 2 gibibytes (231 bytes) in size.\n```\n\nI think the numbers should be `2^41` and `2^31`, respectively.\n\nin interfaces.rst: I think that paragaphs 2 and 3 (the two indented paragraphs) should be denoted by `.. note::`, or whatever the ReST syntax is.\n\nin interfaces.rst: another pre-existing condition: change \"esp., useful\" to \"especially useful\"\n\nin interfaces.rst: I think that at least the html version would look better if `Chapter :ref:`ch:libraries`` were changed to just `:ref:`ch:libraries``.  This occurs twice in the file.\n\nOh dear, I can't find intro.rst here.  Well, wherever the file which used to be 'ref/intro.tex' is, it has a similar issue: in the html, \"Chapter The Sage Command Line\" would look better as \"The Sage Command Line\", and the same for \"Chapter The Sage Notebook\".\n\n\n(This is only a review of the files which used to be 'ref/blah.tex' -- I didn't look at any other parts of the various patches here.)",
+    "created_at": "2009-02-23T21:01:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5330",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5330#issuecomment-41026",
+    "user": "jhpalmieri"
+}
+```
 
 A few comments: 
 
@@ -130,16 +221,38 @@ Oh dear, I can't find intro.rst here.  Well, wherever the file which used to be 
 (This is only a review of the files which used to be 'ref/blah.tex' -- I didn't look at any other parts of the various patches here.)
 
 
+
 ---
 
-Comment by mhansen created at 2009-02-24 14:05:00
+archive/issue_comments_041027.json:
+```json
+{
+    "body": "I've updated trac_5330-3.patch and structure.patch.",
+    "created_at": "2009-02-24T14:05:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5330",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5330#issuecomment-41027",
+    "user": "mhansen"
+}
+```
 
 I've updated trac_5330-3.patch and structure.patch.
 
 
+
 ---
 
-Comment by mhansen created at 2009-02-24 14:17:49
+archive/issue_comments_041028.json:
+```json
+{
+    "body": "Replying to [comment:6 jhpalmieri]:\n> A few comments: \n> \n> in matrices.rst, ```sage/matrix/matrixrealdoubledense.py``` should be ```sage/matrix/matrix_real_double_dense.pyx```.  (Note the trailing 'x', as well as the underscores.)\n> \n> in databases.rst: this is a pre-existing condition, but in these lines:\n> {{{\n> Supports databases up to 2 tebibytes (241 bytes) in size.\n> \n> Strings and BLOBs up to 2 gibibytes (231 bytes) in size.\n> }}}\n> I think the numbers should be `2^41` and `2^31`, respectively.\n> \n> in interfaces.rst: I think that paragaphs 2 and 3 (the two indented paragraphs) should be denoted by `.. note::`, or whatever the ReST syntax is.\n> \n> in interfaces.rst: another pre-existing condition: change \"esp., useful\" to \"especially useful\"\n> \n> in interfaces.rst: I think that at least the html version would look better if `Chapter :ref:`ch:libraries`` were changed to just `:ref:`ch:libraries``.  This occurs twice in the file.\n\nTaken care of.\n\n> Oh dear, I can't find intro.rst here.  Well, wherever the file which used to be 'ref/intro.tex' is, it has a similar issue: in the html, \"Chapter The Sage Command Line\" would look better as \"The Sage Command Line\", and the same for \"Chapter The Sage Notebook\".\n\nI moved the information in info.tex to the main page of the reference manual.  I've removed the leading \"Chapter\"s.\n\nThese are in trac_5330-4.patch.  Note when these are ready to be merged, I'll provided a single folded patch.",
+    "created_at": "2009-02-24T14:17:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5330",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5330#issuecomment-41028",
+    "user": "mhansen"
+}
+```
 
 Replying to [comment:6 jhpalmieri]:
 > A few comments: 
@@ -169,21 +282,56 @@ I moved the information in info.tex to the main page of the reference manual.  I
 These are in trac_5330-4.patch.  Note when these are ready to be merged, I'll provided a single folded patch.
 
 
+
 ---
+
+archive/issue_comments_041029.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-02-24T18:14:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5330",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5330#issuecomment-41029",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2009-02-24 18:16:20
+archive/issue_comments_041030.json:
+```json
+{
+    "body": "All of the above changes are reference.patch and fixes.patch.",
+    "created_at": "2009-02-24T18:16:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5330",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5330#issuecomment-41030",
+    "user": "mhansen"
+}
+```
 
 All of the above changes are reference.patch and fixes.patch.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-24 19:24:24
+archive/issue_comments_041031.json:
+```json
+{
+    "body": "Merged both patches in Sage 3.4.alpha0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-24T19:24:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5330",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5330#issuecomment-41031",
+    "user": "mabshoff"
+}
+```
 
 Merged both patches in Sage 3.4.alpha0.
 
@@ -192,8 +340,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-24 19:24:24
+archive/issue_comments_041032.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-02-24T19:24:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5330",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5330#issuecomment-41032",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 2697: stupid bug in integrate (easy to fix)
 
-Issue created by migration from https://trac.sagemath.org/ticket/2697
-
-Original creator: was
-
-Original creation time: 2008-03-28 07:39:54
-
+archive/issues_002697.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  robertwb\n\nThis is right:\n\n\n```\nsage: integrate(x, x,-1,1)\n0\n```\n\n\nThis error message (which is because I forgot to give the variable of integration) is\ncompletely broken. The \"raise err\" line in the source code should be just \"raise\", i.e., delete err, which makes no sense. Or?  Anyway, this is just wrong as is.\n\n```\nsage: integrate(x, -1,1)\n---------------------------------------------------------------------------\n<type 'exceptions.ValueError'>            Traceback (most recent call last)\n\n/Users/was/<ipython console> in <module>()\n\n/Users/was/build/sage-2.10.4/local/lib/python2.5/site-packages/sage/calculus/functional.py in integral(f, *args, **kwds)\n    255         return f.integral(*args, **kwds)\n    256     except ValueError, err:\n--> 257         raise err\n    258     except AttributeError:\n    259         pass\n\n<type 'exceptions.ValueError'>: variable name is not a valid Python identifier\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2697\n\n",
+    "created_at": "2008-03-28T07:39:54Z",
+    "labels": [
+        "calculus",
+        "major",
+        "bug"
+    ],
+    "title": "stupid bug in integrate (easy to fix)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2697",
+    "user": "was"
+}
+```
 Assignee: was
 
 CC:  robertwb
@@ -41,10 +51,25 @@ sage: integrate(x, -1,1)
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2697
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-04-09 02:11:28
+archive/issue_comments_018566.json:
+```json
+{
+    "body": "I am not sure that the suggested fix does solve the problem:\n\n```\nsage: integrate(x, -1,1)\n---------------------------------------------------------------------------\n<type 'exceptions.ValueError'>            Traceback (most recent call last)\n\n/scratch/mabshoff/release-cycle/sage-3.0.alpha3/<ipython console> in <module>()\n\n/scratch/mabshoff/release-cycle/sage-3.0.alpha3/local/lib/python2.5/site-packages/sage/calculus/functional.py in integral(f, *args, **kwds)\n    253     \"\"\"\n    254     try:\n--> 255         return f.integral(*args, **kwds)\n    256     except ValueError, err:\n    257         raise\n\n/scratch/mabshoff/release-cycle/sage-3.0.alpha3/local/lib/python2.5/site-packages/sage/calculus/calculus.py in integral(self, v, a, b)\n   2475\n   2476         if not isinstance(v, SymbolicVariable):\n-> 2477             v = var(repr(v))\n   2478             #raise TypeError, 'must integrate with respect to a variable'\n   2479         if (a is None and (not b is None)) or (b is None and (not a is None)):\n\n/scratch/mabshoff/release-cycle/sage-3.0.alpha3/local/lib/python2.5/site-packages/sage/calculus/calculus.py in var(s, create)\n   5238             raise ValueError, \"the variable '%s' has not been defined\"%var\n   5239         pass\n-> 5240     v = SymbolicVariable(s)\n   5241     _vars[s] = v\n   5242     _syms[s] = v\n\n/scratch/mabshoff/release-cycle/sage-3.0.alpha3/local/lib/python2.5/site-packages/sage/calculus/calculus.py in __init__(self, name)\n   5072             raise ValueError, \"variable name must be nonempty\"\n   5073         elif not is_python_identifier.match(name):\n-> 5074             raise ValueError, \"variable name is not a valid Python identifier\"\n   5075\n   5076     def __hash__(self):\n\n<type 'exceptions.ValueError'>: variable name is not a valid Python identifier\nsage:\n```\n\n\nThoughts?\n\nCheers,\n\nMichael",
+    "created_at": "2008-04-09T02:11:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2697",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2697#issuecomment-18566",
+    "user": "mabshoff"
+}
+```
 
 I am not sure that the suggested fix does solve the problem:
 
@@ -95,21 +120,56 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by kcrisman created at 2008-10-17 02:55:07
+archive/issue_comments_018567.json:
+```json
+{
+    "body": "Apply this patch to 3.1.4 to integrate without variables (sometimes)",
+    "created_at": "2008-10-17T02:55:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2697",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2697#issuecomment-18567",
+    "user": "kcrisman"
+}
+```
 
 Apply this patch to 3.1.4 to integrate without variables (sometimes)
 
 
+
 ---
 
-Comment by kcrisman created at 2008-10-17 03:02:38
+archive/issue_comments_018568.json:
+```json
+{
+    "body": "Changing type from defect to enhancement.",
+    "created_at": "2008-10-17T03:02:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2697",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2697#issuecomment-18568",
+    "user": "kcrisman"
+}
+```
 
 Changing type from defect to enhancement.
 
 
+
 ---
+
+archive/issue_comments_018569.json:
+```json
+{
+    "body": "Attachment\n\nThese should now work:\n\n\n```\nsage: integrate(x, -1,1)\n0\nsage: integrate(sin(x),0,pi)\n2\n```\n\n\nSadly, because I don't know enough about Maxima to get it to accept the default variable, we still get this joke one might make in freshman calculus:\n\n\n```\nsage: integrate(sin,0,pi) \npi*sin \n```\n",
+    "created_at": "2008-10-17T03:02:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2697",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2697#issuecomment-18569",
+    "user": "kcrisman"
+}
+```
 
 Attachment
 
@@ -134,9 +194,20 @@ pi*sin
 
 
 
+
 ---
 
-Comment by robertwb created at 2008-10-30 21:31:47
+archive/issue_comments_018570.json:
+```json
+{
+    "body": "I'm getting\n\n\n```\nsage: integrate(sin(x), pi, 2*pi)\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/calculus/functional.py\", line 254, in integral\n    return f.integral(*args, **kwds)\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 2586, in integral\n    raise TypeError, 'only one endpoint given'\nTypeError: only one endpoint given\n```\n\n\nRather than catching the error that, say, 0 is not a valid variable name, perhaps one should look at the number of variables passed to determine how to integrate. E.g. \n\n\n```\nsage: integrate(sin(x))               # 0 args, implicit indefinite\ncos(x)\nsage: integrate(sin(x), y)            # 1 arg, explicit indefinite\nsin(x)*y\nsage: integrate(sin(x), pi, 2*pi)     # 2 args, implicit definite\n-2\nsage: integrate(sin(x), y, pi, 2*pi)  # 3 args, explicit definite\npi*sin(x)\n```\n",
+    "created_at": "2008-10-30T21:31:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2697",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2697#issuecomment-18570",
+    "user": "robertwb"
+}
+```
 
 I'm getting
 
@@ -170,16 +241,38 @@ pi*sin(x)
 
 
 
+
 ---
 
-Comment by kcrisman created at 2008-11-01 03:19:53
+archive/issue_comments_018571.json:
+```json
+{
+    "body": "Changing assignee from was to kcrisman.",
+    "created_at": "2008-11-01T03:19:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2697",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2697#issuecomment-18571",
+    "user": "kcrisman"
+}
+```
 
 Changing assignee from was to kcrisman.
 
 
+
 ---
 
-Comment by kcrisman created at 2008-11-01 03:19:53
+archive/issue_comments_018572.json:
+```json
+{
+    "body": "Replying to [comment:3 robertwb]:\n\nPosting (final? I hope) version of patch, based on 3.2.alpha0.  Passed doctests for calculus.py once, all other times it timed out for me, but I do not believe it changes pre-existing correct behavior.\n\n> I'm getting\n> \n> {{{\n> sage: integrate(sin(x), pi, 2*pi)\n> ------------------------------------------------------------\n> Traceback (most recent call last):\n>   File \"<ipython console>\", line 1, in <module>\n>   File \"/Users/robert/sage/sage-3.1.3/local/lib/python2.5/site-packages/sage/calculus/functional.py\", line 254, in integral\n>     return f.integral(*args, **kwds)\n>   File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 2586, in integral\n>     raise TypeError, 'only one endpoint given'\n> TypeError: only one endpoint given\n> }}}\n> \n\nTurns out that this actually comes from the original code, where the second item was turned into a variable in case someone used some already-in-use identifier for the variable; the problem was that it turned things like e and pi into variables.  \n\n> Rather than catching the error that, say, 0 is not a valid variable name, perhaps one should look at the number of variables passed to determine how to integrate. E.g. \n> \n> {{{\n> sage: integrate(sin(x))               # 0 args, implicit indefinite\n> cos(x)\n> sage: integrate(sin(x), y)            # 1 arg, explicit indefinite\n> sin(x)*y\n> sage: integrate(sin(x), pi, 2*pi)     # 2 args, implicit definite\n> -2\n> sage: integrate(sin(x), y, pi, 2*pi)  # 3 args, explicit definite\n> pi*sin(x)\n> }}}\n\nGood idea!  In the end, though, it was easier for me to just jury-rig the code as is.  When I make my own functions I try to do that sort of planning, but I don't feel confident enough (or have enough time) to completely change the way this type of code works.  Hopefully my final solution is still pretty good, though; it does all of the above, except you will have to declare y beforehand (I couldn't find a way around that), and the first integral is -cos(x) :)\n\nAs a bonus, I was finally able to figure out how to do this, which now works:\n\n```\nsage: integrate(sin,0,pi)\n2\n```\n\nThat alone is worth it for me.",
+    "created_at": "2008-11-01T03:19:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2697",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2697#issuecomment-18572",
+    "user": "kcrisman"
+}
+```
 
 Replying to [comment:3 robertwb]:
 
@@ -227,16 +320,40 @@ sage: integrate(sin,0,pi)
 That alone is worth it for me.
 
 
+
 ---
+
+archive/issue_comments_018573.json:
+```json
+{
+    "body": "Attachment\n\nBased on 3.2.alpha0",
+    "created_at": "2008-11-01T03:20:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2697",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2697#issuecomment-18573",
+    "user": "kcrisman"
+}
+```
 
 Attachment
 
 Based on 3.2.alpha0
 
 
+
 ---
 
-Comment by robertwb created at 2008-11-01 03:40:20
+archive/issue_comments_018574.json:
+```json
+{
+    "body": "Hmm... now I get\n\n\n```\nsage: var('x,a,b')\n(x, a, b)\nsage: integral(x^2, a, b)\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/misc/functional.py\", line 418, in integral\n    return x.integral(*args, **kwds)\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 2594, in integral\n    raise TypeError, 'only one endpoint given'\nTypeError: only one endpoint given\n```\n\n\nwhere I'd expect `(b^3 - a^3)/3`.",
+    "created_at": "2008-11-01T03:40:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2697",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2697#issuecomment-18574",
+    "user": "robertwb"
+}
+```
 
 Hmm... now I get
 
@@ -259,21 +376,56 @@ TypeError: only one endpoint given
 where I'd expect `(b^3 - a^3)/3`.
 
 
+
 ---
 
-Comment by kcrisman created at 2008-11-04 02:43:27
+archive/issue_comments_018575.json:
+```json
+{
+    "body": "Okay, fair enough.  My philosophy was to improve what was there - all the examples you gave were errors before, too - but I agree that having a very robust function is the best goal long term.  However, it may take a little longer to get there.  Thanks for the careful reading of the code to find these (so far) non-examples; if we can get all of them it will make integrate very intuitive indeed.",
+    "created_at": "2008-11-04T02:43:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2697",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2697#issuecomment-18575",
+    "user": "kcrisman"
+}
+```
 
 Okay, fair enough.  My philosophy was to improve what was there - all the examples you gave were errors before, too - but I agree that having a very robust function is the best goal long term.  However, it may take a little longer to get there.  Thanks for the careful reading of the code to find these (so far) non-examples; if we can get all of them it will make integrate very intuitive indeed.
 
 
+
 ---
 
-Comment by robertwb created at 2008-12-20 02:52:59
+archive/issue_comments_018576.json:
+```json
+{
+    "body": "I've attached a new patch that resolves this issue. It should be more robust, as it figures out to do first rather than catching errors.",
+    "created_at": "2008-12-20T02:52:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2697",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2697#issuecomment-18576",
+    "user": "robertwb"
+}
+```
 
 I've attached a new patch that resolves this issue. It should be more robust, as it figures out to do first rather than catching errors.
 
 
+
 ---
+
+archive/issue_comments_018577.json:
+```json
+{
+    "body": "Attachment\n\nI don't have a chance to review this yet (tomorrow?) but at least want to point out that the other day I noticed that the functionality did also not work for CallableSymbolicExpression (e.g. lines 5779 or so the integral() method), which seems to have an even more primitive version of the same code.  E.g., to try the original example for this ticket:\n\n```\nsage: f(x)=x\nsage: f\nx |--> x\nsage: type(f)\n<class 'sage.calculus.calculus.CallableSymbolicExpression'>\nsage: integrate(f,-1,1)\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n<snip>\nsage: f.integral(-1,1)\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n<snip>\n```\n\nBut this does work, so I think one would really have to fix the CallableSymbolicVariable piece:\n\n```\nsage: f.integral(x,-1,1)\n0\nsage: integral(f,x,-1,1)\n0\n```\n\nThanks for working on this - I knew it would be impossible for me to get to it until after the semester, and that proved to be true.",
+    "created_at": "2008-12-21T21:58:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2697",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2697#issuecomment-18577",
+    "user": "kcrisman"
+}
+```
 
 Attachment
 
@@ -307,16 +459,38 @@ sage: integral(f,x,-1,1)
 Thanks for working on this - I knew it would be impossible for me to get to it until after the semester, and that proved to be true.
 
 
+
 ---
 
-Comment by robertwb created at 2008-12-23 18:49:46
+archive/issue_comments_018578.json:
+```json
+{
+    "body": "Thanks for starting to look at this. I think integrating symbolic equations should be a separate ticket.",
+    "created_at": "2008-12-23T18:49:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2697",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2697#issuecomment-18578",
+    "user": "robertwb"
+}
+```
 
 Thanks for starting to look at this. I think integrating symbolic equations should be a separate ticket.
 
 
+
 ---
 
-Comment by kcrisman created at 2008-12-27 04:36:06
+archive/issue_comments_018579.json:
+```json
+{
+    "body": "Okay, I like your patch.  I do think that there should be support for \n\n```\nsage: f(x)=x\nsage: integrate(f,-1,1)\n0\n```\n\nI wasn't suggesting integrating a symbolic equation, just that the same behavior results for \n\n```\nsage: integrate(f,-1,1)\n0\nsage: integrate(x,-1,1)\n0\n```\n\nbecause I don't think most newbie Sage users will get the difference between f(x)=x and f=x, for instance.\nAnyway, the latest patch applies the appropriate parts of your patch to CallableSymbolicExpression as well; there needs to be less checking because of the different return expected, e.g. indefinite integral is already handled by the previous code (still returning a CallableSymbolicExpression, though).\n\nUnfortunately, calculus.py always times out for me when I test it.  I tried to check that I did not change any existing behavior but hopefully you (or someone else) can check this.\n\nOtherwise positive review!",
+    "created_at": "2008-12-27T04:36:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2697",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2697#issuecomment-18579",
+    "user": "kcrisman"
+}
+```
 
 Okay, I like your patch.  I do think that there should be support for 
 
@@ -343,16 +517,38 @@ Unfortunately, calculus.py always times out for me when I test it.  I tried to c
 Otherwise positive review!
 
 
+
 ---
 
-Comment by kcrisman created at 2009-01-15 02:25:20
+archive/issue_comments_018580.json:
+```json
+{
+    "body": "Changing summary - would be good to get this in before bitrot sets in, but wanted robertwb's final followup review on my last tiny change, or to reject that but to open a new ticket for the other thing.  Or whoever else is interested in this ticket could do that; since I made a change I don't feel comfortable doing the last positive review.",
+    "created_at": "2009-01-15T02:25:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2697",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2697#issuecomment-18580",
+    "user": "kcrisman"
+}
+```
 
 Changing summary - would be good to get this in before bitrot sets in, but wanted robertwb's final followup review on my last tiny change, or to reject that but to open a new ticket for the other thing.  Or whoever else is interested in this ticket could do that; since I made a change I don't feel comfortable doing the last positive review.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-15 02:29:32
+archive/issue_comments_018581.json:
+```json
+{
+    "body": "Yes, this would be very nice to get into 3.3, so Robert if you can spare the time please deal with this.\n\nCheers,\n\nMichael",
+    "created_at": "2009-01-15T02:29:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2697",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2697#issuecomment-18581",
+    "user": "mabshoff"
+}
+```
 
 Yes, this would be very nice to get into 3.3, so Robert if you can spare the time please deal with this.
 
@@ -361,16 +557,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by robertwb created at 2009-01-15 03:28:05
+archive/issue_comments_018582.json:
+```json
+{
+    "body": "Sorry this got lost in the shuffle--yes, I approve of this patch.",
+    "created_at": "2009-01-15T03:28:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2697",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2697#issuecomment-18582",
+    "user": "robertwb"
+}
+```
 
 Sorry this got lost in the shuffle--yes, I approve of this patch.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-15 12:11:43
+archive/issue_comments_018583.json:
+```json
+{
+    "body": "Replying to [comment:14 robertwb]:\n> Sorry this got lost in the shuffle--yes, I approve of this patch. \n\nAnd I approve of your approval and change this formally to a positive review :)\n\nI assume I should only apply trac_2697.patch and authorship as well as review credit is shared between Robert and Karl-Dieter?\n\nCheers,\n\nMichael",
+    "created_at": "2009-01-15T12:11:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2697",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2697#issuecomment-18583",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:14 robertwb]:
 > Sorry this got lost in the shuffle--yes, I approve of this patch. 
@@ -384,9 +602,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by kcrisman created at 2009-01-15 15:50:02
+archive/issue_comments_018584.json:
+```json
+{
+    "body": "Replying to [comment:15 mabshoff]:\n> And I approve of your approval and change this formally to a positive review :)\n> \n> I assume I should only apply trac_2697.patch and authorship as well as review credit is shared between Robert and Karl-Dieter?\n\nI think that's right.  It will be good to have this available.",
+    "created_at": "2009-01-15T15:50:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2697",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2697#issuecomment-18584",
+    "user": "kcrisman"
+}
+```
 
 Replying to [comment:15 mabshoff]:
 > And I approve of your approval and change this formally to a positive review :)
@@ -396,16 +625,38 @@ Replying to [comment:15 mabshoff]:
 I think that's right.  It will be good to have this available.
 
 
+
 ---
 
-Comment by robertwb created at 2009-01-15 19:50:01
+archive/issue_comments_018585.json:
+```json
+{
+    "body": "Re authorship, yep, that's right.",
+    "created_at": "2009-01-15T19:50:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2697",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2697#issuecomment-18585",
+    "user": "robertwb"
+}
+```
 
 Re authorship, yep, that's right.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-18 17:52:26
+archive/issue_comments_018586.json:
+```json
+{
+    "body": "trac_2697.patch causes a doctest failure:\n\n```\nsage -t -long devel/sage/sage/functions/piecewise.py\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.3.alpha0/devel/sage-main/sage/functions/piecewise.py\", line 600:\n    sage: f.integral()\nExpected:\n    1/2\nGot:\n    2 - x\n**********************************************************************\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2009-01-18T17:52:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2697",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2697#issuecomment-18586",
+    "user": "mabshoff"
+}
+```
 
 trac_2697.patch causes a doctest failure:
 
@@ -427,9 +678,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by kcrisman created at 2009-01-20 02:12:00
+archive/issue_comments_018587.json:
+```json
+{
+    "body": "Replying to [comment:18 mabshoff]:\n> trac_2697.patch causes a doctest failure:\n\nOk, this is on the CallableSymbolicExpression side so it's my fault; looks like it is adding 1+(1-x) for some reason, which I think I should be able to track down.  I am downloading 3.3.alpha0 currently, it should build overnight, and then hopefully sometime tomorrow I can fix this.",
+    "created_at": "2009-01-20T02:12:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2697",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2697#issuecomment-18587",
+    "user": "kcrisman"
+}
+```
 
 Replying to [comment:18 mabshoff]:
 > trac_2697.patch causes a doctest failure:
@@ -437,9 +699,20 @@ Replying to [comment:18 mabshoff]:
 Ok, this is on the CallableSymbolicExpression side so it's my fault; looks like it is adding 1+(1-x) for some reason, which I think I should be able to track down.  I am downloading 3.3.alpha0 currently, it should build overnight, and then hopefully sometime tomorrow I can fix this.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-01-20 02:33:33
+archive/issue_comments_018588.json:
+```json
+{
+    "body": "Replying to [comment:19 kcrisman]:\n> Replying to [comment:18 mabshoff]:\n> > trac_2697.patch causes a doctest failure:\n> \n\nFor reference (mainly to myself not to forget in morning) - fix is to replace lines 5806 to 5812\n\n```\n\t        elif b is None and a is not None: \n\t            # two arguments, must be endpoints \n\t            a, b = x, a \n\t            x = self.default_variable() \n\t \n\t        if not isinstance(x, SymbolicVariable): \n\t            x = var(repr(x)) \n```\n\nwith\n\n```\n\t        elif b is None and a is not None: \n\t            # two arguments, must be endpoints \n\t            a, b = x, a \n\t            x = None\n\n                if x is None:\n                    x = self.default_variable()\n\n\t        elif not isinstance(x, SymbolicVariable): \n\t            x = var(repr(x)) \n```\n\nas robertwb did in the first part of this. Never occurred to me someone might actually *intentionally* pass None for the variable...\n\nAlso need to add a doctest, and perhaps a comment that Maxima interprets variable=None as intending for integration to be \"d1\" or something like that, while Sage usually looks for whatever variable makes sense. E.g. the surprising last line below:\n\n```\nsage: j(x)=x^2\nsage: integral(j,None,0,1)\n1/3\nsage: j._maxima_().integrate(None,0,1)\nx^2\nsage: j._maxima_().integrate(None,0,2)\n2*x^2\n```\n\nDoes anyone know if that is a feature or a bug in Maxima?  Either seems plausible, though I would think maybe feature.",
+    "created_at": "2009-01-20T02:33:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2697",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2697#issuecomment-18588",
+    "user": "kcrisman"
+}
+```
 
 Replying to [comment:19 kcrisman]:
 > Replying to [comment:18 mabshoff]:
@@ -473,7 +746,7 @@ with
 	            x = var(repr(x)) 
 ```
 
-as robertwb did in the first part of this. Never occurred to me someone might actually _intentionally_ pass None for the variable...
+as robertwb did in the first part of this. Never occurred to me someone might actually *intentionally* pass None for the variable...
 
 Also need to add a doctest, and perhaps a comment that Maxima interprets variable=None as intending for integration to be "d1" or something like that, while Sage usually looks for whatever variable makes sense. E.g. the surprising last line below:
 
@@ -490,36 +763,93 @@ sage: j._maxima_().integrate(None,0,2)
 Does anyone know if that is a feature or a bug in Maxima?  Either seems plausible, though I would think maybe feature.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-01-21 03:48:21
+archive/issue_comments_018589.json:
+```json
+{
+    "body": "Based on 3.3.alpha0",
+    "created_at": "2009-01-21T03:48:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2697",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2697#issuecomment-18589",
+    "user": "kcrisman"
+}
+```
 
 Based on 3.3.alpha0
 
 
+
 ---
+
+archive/issue_comments_018590.json:
+```json
+{
+    "body": "Attachment\n\nThis patch (trac_2697.patch) should take care of the piecewise error and still do the new things, plus adds a little documentation for things like f(x)=x^2.  My calculus.py always times out in testing, but hopefully running that test and the piecewise.py test should lead to a final positive review.",
+    "created_at": "2009-01-21T03:55:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2697",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2697#issuecomment-18590",
+    "user": "kcrisman"
+}
+```
 
 Attachment
 
 This patch (trac_2697.patch) should take care of the piecewise error and still do the new things, plus adds a little documentation for things like f(x)=x^2.  My calculus.py always times out in testing, but hopefully running that test and the piecewise.py test should lead to a final positive review.
 
 
+
 ---
 
-Comment by rlm created at 2009-01-24 15:20:05
+archive/issue_comments_018591.json:
+```json
+{
+    "body": "I'm going to go ahead and give this a positive review. I applied the patch, everything passes doctests, and the code looks reasonable. Robert and Karl should still get review credit, though, since they did much more work than me.",
+    "created_at": "2009-01-24T15:20:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2697",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2697#issuecomment-18591",
+    "user": "rlm"
+}
+```
 
 I'm going to go ahead and give this a positive review. I applied the patch, everything passes doctests, and the code looks reasonable. Robert and Karl should still get review credit, though, since they did much more work than me.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-24 18:41:51
+archive/issue_comments_018592.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-01-24T18:41:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2697",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2697#issuecomment-18592",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-24 18:41:51
+archive/issue_comments_018593.json:
+```json
+{
+    "body": "Merged trac_2697.patch in Sage 3.3.alpha2",
+    "created_at": "2009-01-24T18:41:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2697",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2697#issuecomment-18593",
+    "user": "mabshoff"
+}
+```
 
 Merged trac_2697.patch in Sage 3.3.alpha2

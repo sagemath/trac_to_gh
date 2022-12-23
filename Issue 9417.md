@@ -1,11 +1,21 @@
 # Issue 9417: Tamagawa number calculated incorrectly
 
-Issue created by migration from https://trac.sagemath.org/ticket/9417
-
-Original creator: arminstraub
-
-Original creation time: 2010-07-03 03:41:37
-
+archive/issues_009417.json:
+```json
+{
+    "body": "Assignee: cremona\n\nCC:  was justin\n\nKeywords: tamagawa_number local_data\n\nIn 4.4.4 the following Tamagawa number gets evaluated as 2:\n\n\n```\nsage: K.<a> = NumberField(x^2+18*x+1)\nsage: E = EllipticCurve(K, [0, -36, 0, 320, 0])\nsage: E.tamagawa_number(K.ideal(2))\n2\n```\n\n\nAccording to Magma this should be 4.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9417\n\n",
+    "created_at": "2010-07-03T03:41:37Z",
+    "labels": [
+        "elliptic curves",
+        "major",
+        "bug"
+    ],
+    "title": "Tamagawa number calculated incorrectly",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9417",
+    "user": "arminstraub"
+}
+```
 Assignee: cremona
 
 CC:  was justin
@@ -25,10 +35,25 @@ sage: E.tamagawa_number(K.ideal(2))
 
 According to Magma this should be 4.
 
+Issue created by migration from https://trac.sagemath.org/ticket/9417
+
+
+
+
 
 ---
 
-Comment by cremona created at 2011-03-26 22:50:02
+archive/issue_comments_089747.json:
+```json
+{
+    "body": "As the author of both Sage's and Magma's code for Tamagawa numbers, I have been tracking this one down. It turns out to be due to a bug in how elements of the rings of integers are mapped into residue fields:\n\n```\nsage: K.<a> = NumberField(x^2+18*x+1)\nsage: P = K.ideal(2)\nsage: F = K.residue_field(P)\nsage: R = PolynomialRing(F, 'x')\nsage: R([0, a, a, 1])\nx^3 + abar*x^2 + abar*x\nsage: F(a)\n1\nsage: a.minpoly()\nx^2 + 18*x + 1\nsage: F.gen()\nabar\nsage: F.gen().minpoly()\nx^2 + x + 1\n```\n\nThe polynomial `x<sup>3+a*x</sup>2+a*x` reduced modulo P=(2) wrongly to `x<sup>3+abar*x</sup>2+abar*x`. Although the generator of the residue field F is suggestively called abar, it it *not* the reduction of a mod P (which is 1 mod P).\n\nI will open a new ticket for that, and try to fix it. This ticket can probably then be closed, so watch this space.",
+    "created_at": "2011-03-26T22:50:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9417",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9417#issuecomment-89747",
+    "user": "cremona"
+}
+```
 
 As the author of both Sage's and Magma's code for Tamagawa numbers, I have been tracking this one down. It turns out to be due to a bug in how elements of the rings of integers are mapped into residue fields:
 
@@ -54,30 +79,76 @@ The polynomial `x<sup>3+a*x</sup>2+a*x` reduced modulo P=(2) wrongly to `x<sup>3
 I will open a new ticket for that, and try to fix it. This ticket can probably then be closed, so watch this space.
 
 
+
 ---
 
-Comment by cremona created at 2011-03-26 22:52:30
+archive/issue_comments_089748.json:
+```json
+{
+    "body": "See #11055",
+    "created_at": "2011-03-26T22:52:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9417",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9417#issuecomment-89748",
+    "user": "cremona"
+}
+```
 
 See #11055
 
 
+
 ---
+
+archive/issue_comments_089749.json:
+```json
+{
+    "body": "Attachment\n\nApplies to 4.7.alpha2",
+    "created_at": "2011-03-27T19:13:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9417",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9417#issuecomment-89749",
+    "user": "cremona"
+}
+```
 
 Attachment
 
 Applies to 4.7.alpha2
 
 
+
 ---
 
-Comment by cremona created at 2011-03-27 19:15:35
+archive/issue_comments_089750.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2011-03-27T19:15:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9417",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9417#issuecomment-89750",
+    "user": "cremona"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by cremona created at 2011-03-27 19:15:35
+archive/issue_comments_089751.json:
+```json
+{
+    "body": "The patch applies the simple workaround described at #11055.  Now we correctly get\n\n```\nsage: K.<a> = NumberField(x^2+18*x+1)\nsage: E = EllipticCurve(K, [0, -36, 0, 320, 0])\nsage: E.tamagawa_number(K.ideal(2))\n4\n```\n\nand a doctest has been added.",
+    "created_at": "2011-03-27T19:15:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9417",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9417#issuecomment-89751",
+    "user": "cremona"
+}
+```
 
 The patch applies the simple workaround described at #11055.  Now we correctly get
 
@@ -91,22 +162,55 @@ sage: E.tamagawa_number(K.ideal(2))
 and a doctest has been added.
 
 
+
 ---
 
-Comment by rlm created at 2011-04-17 21:34:31
+archive/issue_comments_089752.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2011-04-17T21:34:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9417",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9417#issuecomment-89752",
+    "user": "rlm"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by rlm created at 2011-04-17 21:34:31
+archive/issue_comments_089753.json:
+```json
+{
+    "body": "Looks good to me!",
+    "created_at": "2011-04-17T21:34:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9417",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9417#issuecomment-89753",
+    "user": "rlm"
+}
+```
 
 Looks good to me!
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-04-20 12:51:16
+archive/issue_comments_089754.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2011-04-20T12:51:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9417",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9417#issuecomment-89754",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: fixed

@@ -1,44 +1,117 @@
 # Issue 6845: bad ReST formatted docstring in #6819
 
-Issue created by migration from https://trac.sagemath.org/ticket/6845
-
-Original creator: mvngu
-
-Original creation time: 2009-08-30 07:36:49
-
+archive/issues_006845.json:
+```json
+{
+    "body": "Assignee: tba\n\nCC:  rishi ncohen\n\nFollow up to #6819 for fixing badly formatted docstring.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6845\n\n",
+    "created_at": "2009-08-30T07:36:49Z",
+    "labels": [
+        "documentation",
+        "trivial",
+        "bug"
+    ],
+    "title": "bad ReST formatted docstring in #6819",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6845",
+    "user": "mvngu"
+}
+```
 Assignee: tba
 
 CC:  rishi ncohen
 
 Follow up to #6819 for fixing badly formatted docstring.
 
+Issue created by migration from https://trac.sagemath.org/ticket/6845
+
+
+
+
 
 ---
 
-Comment by ncohen created at 2009-08-31 06:32:16
+archive/issue_comments_056457.json:
+```json
+{
+    "body": "two tabs, two new line breaks. Shouldn't be hard to review ;-)",
+    "created_at": "2009-08-31T06:32:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6845",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6845#issuecomment-56457",
+    "user": "ncohen"
+}
+```
 
 two tabs, two new line breaks. Shouldn't be hard to review ;-)
 
 
+
 ---
+
+archive/issue_comments_056458.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-08-31T06:44:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6845",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6845#issuecomment-56458",
+    "user": "ncohen"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_056459.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-08-31T06:45:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6845",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6845#issuecomment-56459",
+    "user": "ncohen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mvngu created at 2009-08-31 07:02:15
+archive/issue_comments_056460.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-08-31T07:02:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6845",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6845#issuecomment-56460",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mvngu created at 2009-08-31 07:02:15
+archive/issue_comments_056461.json:
+```json
+{
+    "body": "Merged `multinomial_docstrings.2.patch`.",
+    "created_at": "2009-08-31T07:02:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6845",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6845#issuecomment-56461",
+    "user": "mvngu"
+}
+```
 
 Merged `multinomial_docstrings.2.patch`.

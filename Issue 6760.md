@@ -1,11 +1,21 @@
 # Issue 6760: error in quaternion algebra ideal basis
 
-Issue created by migration from https://trac.sagemath.org/ticket/6760
-
-Original creator: robertwb
-
-Original creation time: 2009-08-16 08:49:58
-
+archive/issues_006760.json:
+```json
+{
+    "body": "Assignee: tbd\n\n\n```\nsage: R.<i,j,k> = QuaternionAlgebra(-1, -13)        \nsage: I = R.ideal([2+i, 3*i, 5*j, j+k]); I\nFractional ideal (2 + i, 3*i, j + k, 5*k)\nsage: I.free_module()\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"/Users/robert/sage/sage-4.0/local/lib/python2.6/site-packages/sage/algebras/quatalg/quaternion_algebra.py\", line 1503, in free_module\n    M = self.hermite_basis_matrix().row_module(ZZ)\nAttributeError: 'QuaternionFractionalIdeal_rational' object has no attribute 'hermite_basis_matrix'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6760\n\n",
+    "created_at": "2009-08-16T08:49:58Z",
+    "labels": [
+        "algebra",
+        "major",
+        "bug"
+    ],
+    "title": "error in quaternion algebra ideal basis",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6760",
+    "user": "robertwb"
+}
+```
 Assignee: tbd
 
 
@@ -23,39 +33,102 @@ AttributeError: 'QuaternionFractionalIdeal_rational' object has no attribute 'he
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6760
+
+
+
+
 
 ---
+
+archive/issue_comments_055662.json:
+```json
+{
+    "body": "Attachment\n\nI think this is the right fix, but someone more familiar with the code should take a look.",
+    "created_at": "2009-08-16T08:53:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6760",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6760#issuecomment-55662",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 I think this is the right fix, but someone more familiar with the code should take a look.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-11-15 10:19:53
+archive/issue_comments_055663.json:
+```json
+{
+    "body": "Looks good to me.  I am adding a patch with a doctest (just the example that was given above).\n\nRobert, if you're happy with the second patch, please change this to a positive review.",
+    "created_at": "2009-11-15T10:19:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6760",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6760#issuecomment-55663",
+    "user": "AlexGhitza"
+}
+```
 
 Looks good to me.  I am adding a patch with a doctest (just the example that was given above).
 
 Robert, if you're happy with the second patch, please change this to a positive review.
 
 
+
 ---
+
+archive/issue_comments_055664.json:
+```json
+{
+    "body": "Attachment\n\napply after the previous patch",
+    "created_at": "2009-11-15T10:20:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6760",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6760#issuecomment-55664",
+    "user": "AlexGhitza"
+}
+```
 
 Attachment
 
 apply after the previous patch
 
 
+
 ---
 
-Comment by robertwb created at 2009-11-16 18:30:23
+archive/issue_comments_055665.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-11-16T18:30:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6760",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6760#issuecomment-55665",
+    "user": "robertwb"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mhansen created at 2009-11-17 06:16:23
+archive/issue_comments_055666.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-11-17T06:16:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6760",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6760#issuecomment-55666",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

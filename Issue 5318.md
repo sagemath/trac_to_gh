@@ -1,11 +1,21 @@
 # Issue 5318: ideas for improving random testers (like #4779)
 
-Issue created by migration from https://trac.sagemath.org/ticket/5318
-
-Original creator: cwitty
-
-Original creation time: 2009-02-20 07:51:47
-
+archive/issues_005318.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nRandom testers (like the ones in #4779) should have a structure something like this (untested):\n\n\n```\ndef test_foo(n_trials, seed=None, verbose=False):\n  with random_seed(seed):\n    used_seed = initial_seed()\n    try:\n        for i in range(n_trials): # or whatever\n            ... do test\n            ... if verbose, then print out the details of the\n                test you're running\n    except:\n        print \"We've detected a failure in random testing.\"\n        print \"Please report this bug; you may be the only person\"\n        print \"in the world to see this particular problem!\"\n        print \"initial seed: \" + used_seed\n        print \"trial: \" + i\n        raise\n```\n\n\nThen the doctests should start with:\n\n```\nsage: test_foo(2, seed=0, verbose=True)\n... verbose output from two tests; should always be the same across machines, etc.\n```\n\nto verify that the test is correctly using the randstate framework, so that failures can be reproduced.\n\nThen you can continue to:\n\n```\nsage: test_foo(10)\nsage: test_foo(100) # long time\n```\n\nwhich will use truly random seeds (with /dev/urandom).\n\nThe above should be adjusted if you want to run the testing function for a very long time; you would want to re-initialize the random seed at least every few seconds, so that if you detect a problem after running for several hours, you don't have to run for the same several hours to reproduce it.\n\nThe simplest way is not to loop for long inside the function; instead, do:\n\n```\nwhile True:\n    test_foo(100)\n```\n\n\n(That's a lot of boilerplate; maybe this whole setup can be encapsulated in a decorator?)\n\nIssue created by migration from https://trac.sagemath.org/ticket/5318\n\n",
+    "created_at": "2009-02-20T07:51:47Z",
+    "labels": [
+        "doctest coverage",
+        "major",
+        "enhancement"
+    ],
+    "title": "ideas for improving random testers (like #4779)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5318",
+    "user": "cwitty"
+}
+```
 Assignee: mabshoff
 
 Random testers (like the ones in #4779) should have a structure something like this (untested):
@@ -60,41 +70,78 @@ while True:
 
 (That's a lot of boilerplate; maybe this whole setup can be encapsulated in a decorator?)
 
+Issue created by migration from https://trac.sagemath.org/ticket/5318
+
+
+
+
 
 ---
 
-Comment by cwitty created at 2009-02-21 03:05:45
+archive/issue_comments_040952.json:
+```json
+{
+    "body": "I've attached a patch implementing the above ideas as a decorator, and adapted the random testers from #4779 to use this decorator.\n\nI'm changing the milestone to Sage 3.3.  I don't actually expect to get this patch into 3.3, and I'm happy to rebase it if it doesn't make it; but I didn't want to rule out the possibility :)",
+    "created_at": "2009-02-21T03:05:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5318",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5318#issuecomment-40952",
+    "user": "cwitty"
+}
+```
 
 I've attached a patch implementing the above ideas as a decorator, and adapted the random testers from #4779 to use this decorator.
 
 I'm changing the milestone to Sage 3.3.  I don't actually expect to get this patch into 3.3, and I'm happy to rebase it if it doesn't make it; but I didn't want to rule out the possibility :)
 
 
+
 ---
 
-Comment by nthiery created at 2009-03-18 08:41:03
+archive/issue_comments_040953.json:
+```json
+{
+    "body": "Hi!\n\nCool stuff. I am about to give it a thumb up!\n\nThree comments:\n- When the category stuff will be in there, we should merge this into the category-held tests.\n  But let's not wait for that.\n\n- The code is not trivially small, so I would put it in a separate file with the same name as the decorator\n\n-  while we are at saving on boiler plate: would it be possible for the wrapper\n   to also handle the iteration loop?\n\n  One nice side benefit is that the wrapper would be aware of the value of the seed at the begining of each iteration, and therefore could report it in case of trouble (I have not yet played with random generators in python, but I assume that we can access the current value of the seed after a couple random generation). Reproducing  the error would then involve a single iteration.",
+    "created_at": "2009-03-18T08:41:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5318",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5318#issuecomment-40953",
+    "user": "nthiery"
+}
+```
 
 Hi!
 
 Cool stuff. I am about to give it a thumb up!
 
 Three comments:
- - When the category stuff will be in there, we should merge this into the category-held tests.
-   But let's not wait for that.
+- When the category stuff will be in there, we should merge this into the category-held tests.
+  But let's not wait for that.
 
- - The code is not trivially small, so I would put it in a separate file with the same name as the decorator
+- The code is not trivially small, so I would put it in a separate file with the same name as the decorator
 
- -  while we are at saving on boiler plate: would it be possible for the wrapper
-    to also handle the iteration loop?
+-  while we are at saving on boiler plate: would it be possible for the wrapper
+   to also handle the iteration loop?
 
-   One nice side benefit is that the wrapper would be aware of the value of the seed at the begining of each iteration, and therefore could report it in case of trouble (I have not yet played with random generators in python, but I assume that we can access the current value of the seed after a couple random generation). Reproducing  the error would then involve a single iteration.
+  One nice side benefit is that the wrapper would be aware of the value of the seed at the begining of each iteration, and therefore could report it in case of trouble (I have not yet played with random generators in python, but I assume that we can access the current value of the seed after a couple random generation). Reproducing  the error would then involve a single iteration.
+
 
 
 ---
 
-Comment by cwitty created at 2009-03-18 15:27:11
+archive/issue_comments_040954.json:
+```json
+{
+    "body": "*the code is not trivially small*\n\nActually, it is; random_testing is 26 lines of code by my count, ignoring docstrings and comments :)\n\nBut yes, once you include the tests, the documentation, and the comments, it does look pretty big.  I'll move it into its own file.\n\nI'm not sure what to do about the iteration loop idea.  I wouldn't want iteration to be always handled in the wrapper; for example, that could vastly slow down testing if the tester were written in Cython, or if the testing function needed to do some non-trivial setup before starting the loop.  And there's no good way to tell the wrapper whether the wrapper or the wrappee should handle iteration (it could key off the argument name, but that doesn't sound like a good way).\n\nAlso, unfortunately, the primary source of random numbers in Sage (GMP's Mersenne Twister implementation) doesn't let you read back the current state.",
+    "created_at": "2009-03-18T15:27:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5318",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5318#issuecomment-40954",
+    "user": "cwitty"
+}
+```
 
-_the code is not trivially small_
+*the code is not trivially small*
 
 Actually, it is; random_testing is 26 lines of code by my count, ignoring docstrings and comments :)
 
@@ -105,23 +152,58 @@ I'm not sure what to do about the iteration loop idea.  I wouldn't want iteratio
 Also, unfortunately, the primary source of random numbers in Sage (GMP's Mersenne Twister implementation) doesn't let you read back the current state.
 
 
+
 ---
+
+archive/issue_comments_040955.json:
+```json
+{
+    "body": "Attachment\n\nI posted a new patch (and deleted the old version) that moves `@`random_testing into its own file (and adds it to the reference manual).  I didn't implement the other requested feature, of providing an iteration loop, for the reasons mentioned in my previous comment.",
+    "created_at": "2009-03-21T04:25:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5318",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5318#issuecomment-40955",
+    "user": "cwitty"
+}
+```
 
 Attachment
 
 I posted a new patch (and deleted the old version) that moves `@`random_testing into its own file (and adds it to the reference manual).  I didn't implement the other requested feature, of providing an iteration loop, for the reasons mentioned in my previous comment.
 
 
+
 ---
 
-Comment by nthiery created at 2009-03-31 03:27:03
+archive/issue_comments_040956.json:
+```json
+{
+    "body": "See #5647 for a follow up.",
+    "created_at": "2009-03-31T03:27:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5318",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5318#issuecomment-40956",
+    "user": "nthiery"
+}
+```
 
 See #5647 for a follow up.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-01 01:54:30
+archive/issue_comments_040957.json:
+```json
+{
+    "body": "Merged in Sage 3.4.1.rc0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-01T01:54:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5318",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5318#issuecomment-40957",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.4.1.rc0.
 
@@ -130,8 +212,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-01 01:54:30
+archive/issue_comments_040958.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-04-01T01:54:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5318",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5318#issuecomment-40958",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

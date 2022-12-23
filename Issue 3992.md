@@ -1,11 +1,21 @@
 # Issue 3992: Sage 3.1.2.alpha2: three tests in sage/interfaces/octave.py need to be optional
 
-Issue created by migration from https://trac.sagemath.org/ticket/3992
-
-Original creator: mabshoff
-
-Original creation time: 2008-08-29 17:07:08
-
+archive/issues_003992.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nCC:  cremona\n\n\n```\nsage -t  devel/sage/sage/interfaces/octave.py \n********************************************************************** \nFile \"/home/jec/sage-3.1.2.alpha2/tmp/octave.py\", line 279: \n    sage: octave.set('x', '2') #optonal -- requires Octave \nException raised: \n    Traceback (most recent call last): \n      File \"/home/jec/sage-3.1.2.alpha2/local/lib/python2.5/doctest.py\", \nline 1228, in __run \n        compileflags, 1) in test.globs \n      File \"<doctest __main__.example_10[2]>\", line 1, in <module> \n        octave.set('x', '2') #optonal -- requires Octave###line 279: \n    sage: octave.set('x', '2') #optonal -- requires Octave \n      File \"/home/jec/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/sage/interfa ces/octave.py\", \nline 284, in set \n        out = self.eval(cmd) \n      File \"/home/jec/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/sage/interfa ces/expect.py\", \nline 935, in eval \n        return '\\n'.join([self._eval_line(L, **kwds) for L in \ncode.split('\\n') if L != '']) \n      File \"/home/jec/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/sage/interfa ces/expect.py\", \nline 631, in _eval_line \n        self._start() \n      File \"/home/jec/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/sage/interfa ces/octave.py\", \nline 270, in _start \n        Expect._start(self) \n      File \"/home/jec/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/sage/interfa ces/expect.py\", \nline 455, in _start \n        self.__name, cmd, self._install_hints()) \n    RuntimeError: Unable to start octave because the command 'octave \n--no-line-editing --silent' failed. \n            You must get the program \"octave\" in order to use Octave \n            from SAGE.   You can read all about Octave at \n                    http://www.gnu.org/software/octave/ \n            LINUX / WINDOWS (colinux): \n               Do apt-get install octave as root on your machine \n               (or, in Windows, in the colinux console). \n            OS X: \n               * This website has links to binaries for OS X PowerPC \n                 and OS X Intel builds of the latest version of Octave: \n                         http://hpc.sourceforge.net/ \n                 Once you get the tarball from there, go to the / directory \n                 and type \n                         tar zxvf octave-intel-bin.tar.gz \n                 to extract it to usr/local/...   Make sure /usr/local/bin \n                 is in your PATH.  Then type \"octave\" and verify that \n                 octave starts up. \n               * Darwin ports and fink have Octave as well. \n********************************************************************** \nFile \"/home/jec/sage-3.1.2.alpha2/tmp/octave.py\", line 293: \n    sage: octave.set('x', '2') #optonal -- requires Octave \nException raised: \n    Traceback (most recent call last): \n      File \"/home/jec/sage-3.1.2.alpha2/local/lib/python2.5/doctest.py\", \nline 1228, in __run \n        compileflags, 1) in test.globs \n      File \"<doctest __main__.example_11[2]>\", line 1, in <module> \n        octave.set('x', '2') #optonal -- requires Octave###line 293: \n    sage: octave.set('x', '2') #optonal -- requires Octave \n      File \"/home/jec/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/sage/interfa ces/octave.py\", \nline 284, in set \n        out = self.eval(cmd) \n      File \"/home/jec/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/sage/interfa ces/expect.py\", \nline 935, in eval \n        return '\\n'.join([self._eval_line(L, **kwds) for L in \ncode.split('\\n') if L != '']) \n      File \"/home/jec/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/sage/interfa ces/expect.py\", \nline 631, in _eval_line \n        self._start() \n      File \"/home/jec/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/sage/interfa ces/octave.py\", \nline 270, in _start \n        Expect._start(self) \n      File \"/home/jec/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/sage/interfa ces/expect.py\", \nline 455, in _start \n        self.__name, cmd, self._install_hints()) \n    RuntimeError: Unable to start octave because the command 'octave \n--no-line-editing --silent' failed. \n            You must get the program \"octave\" in order to use Octave \n            from SAGE.   You can read all about Octave at \n                    http://www.gnu.org/software/octave/ \n            LINUX / WINDOWS (colinux): \n               Do apt-get install octave as root on your machine \n               (or, in Windows, in the colinux console). \n            OS X: \n               * This website has links to binaries for OS X PowerPC \n                 and OS X Intel builds of the latest version of Octave: \n                         http://hpc.sourceforge.net/ \n                 Once you get the tarball from there, go to the / directory \n                 and type \n                         tar zxvf octave-intel-bin.tar.gz \n                 to extract it to usr/local/...   Make sure /usr/local/bin \n                 is in your PATH.  Then type \"octave\" and verify that \n                 octave starts up. \n               * Darwin ports and fink have Octave as well. \n********************************************************************** \nFile \"/home/jec/sage-3.1.2.alpha2/tmp/octave.py\", line 306: \n    sage: octave.set('x', '2') #optonal -- requires Octave \nException raised: \n    Traceback (most recent call last): \n      File \"/home/jec/sage-3.1.2.alpha2/local/lib/python2.5/doctest.py\", \nline 1228, in __run \n        compileflags, 1) in test.globs \n      File \"<doctest __main__.example_12[2]>\", line 1, in <module> \n        octave.set('x', '2') #optonal -- requires Octave###line 306: \n    sage: octave.set('x', '2') #optonal -- requires Octave \n      File \"/home/jec/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/sage/interfa ces/octave.py\", \nline 284, in set \n        out = self.eval(cmd) \n      File \"/home/jec/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/sage/interfa ces/expect.py\", \nline 935, in eval \n        return '\\n'.join([self._eval_line(L, **kwds) for L in \ncode.split('\\n') if L != '']) \n      File \"/home/jec/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/sage/interfa ces/expect.py\", \nline 631, in _eval_line \n        self._start() \n      File \"/home/jec/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/sage/interfa ces/octave.py\", \nline 270, in _start \n        Expect._start(self) \n      File \"/home/jec/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/sage/interfa ces/expect.py\", \nline 455, in _start \n        self.__name, cmd, self._install_hints()) \n    RuntimeError: Unable to start octave because the command 'octave \n--no-line-editing --silent' failed. \n            You must get the program \"octave\" in order to use Octave \n            from SAGE.   You can read all about Octave at \n                    http://www.gnu.org/software/octave/ \n            LINUX / WINDOWS (colinux): \n               Do apt-get install octave as root on your machine \n               (or, in Windows, in the colinux console). \n            OS X: \n               * This website has links to binaries for OS X PowerPC \n                 and OS X Intel builds of the latest version of Octave: \n                         http://hpc.sourceforge.net/ \n                 Once you get the tarball from there, go to the / directory \n                 and type \n                         tar zxvf octave-intel-bin.tar.gz \n                 to extract it to usr/local/...   Make sure /usr/local/bin \n                 is in your PATH.  Then type \"octave\" and verify that \n                 octave starts up. \n               * Darwin ports and fink have Octave as well. \n********************************************************************** \n3 items had failures: \n   1 of   3 in __main__.example_10 \n   1 of   3 in __main__.example_11 \n   1 of   3 in __main__.example_12 \n***Test Failed*** 3 failures. \nFor whitespace errors, see the file \n/home/jec/sage-3.1.2.alpha2/tmp/.doctest_octave.py \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3992\n\n",
+    "created_at": "2008-08-29T17:07:08Z",
+    "labels": [
+        "doctest coverage",
+        "blocker",
+        "bug"
+    ],
+    "title": "Sage 3.1.2.alpha2: three tests in sage/interfaces/octave.py need to be optional",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3992",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 CC:  cremona
@@ -162,15 +172,43 @@ For whitespace errors, see the file
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3992
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-08-29 17:07:21
+archive/issue_comments_028691.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-08-29T17:07:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3992",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3992#issuecomment-28691",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
+
+archive/issue_comments_028692.json:
+```json
+{
+    "body": "Attachment\n\nJohn,\n\nsince you hit this can you do the (trivial) review?\n\nCheers,\n\nMichael",
+    "created_at": "2008-08-29T17:22:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3992",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3992#issuecomment-28692",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -183,24 +221,57 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by cremona created at 2008-08-29 18:16:25
+archive/issue_comments_028693.json:
+```json
+{
+    "body": "Patch applies and pases doctests on both the systems where it failed before.\n\nDone!",
+    "created_at": "2008-08-29T18:16:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3992",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3992#issuecomment-28693",
+    "user": "cremona"
+}
+```
 
 Patch applies and pases doctests on both the systems where it failed before.
 
 Done!
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-29 18:29:24
+archive/issue_comments_028694.json:
+```json
+{
+    "body": "Merged in Sage 3.1.2.alpha3",
+    "created_at": "2008-08-29T18:29:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3992",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3992#issuecomment-28694",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.1.2.alpha3
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-29 18:29:24
+archive/issue_comments_028695.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-08-29T18:29:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3992",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3992#issuecomment-28695",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 6267: Same typesetting for two different variables:
 
-Issue created by migration from https://trac.sagemath.org/ticket/6267
-
-Original creator: gmhossain
-
-Original creation time: 2009-06-12 15:19:15
-
+archive/issues_006267.json:
+```json
+{
+    "body": "Assignee: cwitty\n\nCC:  mvngu\n\nKeywords: latex, variables\n\nSage (4.0.1) typesets two different variables as same latex string\n\n\n```\nvar('xi, xi_')\nlatex(xi)\n\\xi\nlatex(xi_)\n\\xi\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6267\n\n",
+    "created_at": "2009-06-12T15:19:15Z",
+    "labels": [
+        "misc",
+        "major",
+        "bug"
+    ],
+    "title": "Same typesetting for two different variables:",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6267",
+    "user": "gmhossain"
+}
+```
 Assignee: cwitty
 
 CC:  mvngu
@@ -24,17 +34,43 @@ latex(xi_)
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6267
+
+
+
+
 
 ---
 
-Comment by jason created at 2009-06-12 18:06:19
+archive/issue_comments_050059.json:
+```json
+{
+    "body": "Is this a bug?  I thought it was a design decision.",
+    "created_at": "2009-06-12T18:06:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6267",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6267#issuecomment-50059",
+    "user": "jason"
+}
+```
 
 Is this a bug?  I thought it was a design decision.
 
 
+
 ---
 
-Comment by jason created at 2009-06-12 18:07:18
+archive/issue_comments_050060.json:
+```json
+{
+    "body": "Note the following choice Sage makes (by design):\n\n\n```\nsage: latex(var('x0'))\nx_{0}\nsage: latex(var('x_0'))\nx_{0}\n```\n",
+    "created_at": "2009-06-12T18:07:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6267",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6267#issuecomment-50060",
+    "user": "jason"
+}
+```
 
 Note the following choice Sage makes (by design):
 
@@ -48,30 +84,74 @@ x_{0}
 
 
 
+
 ---
 
-Comment by gmhossain created at 2009-06-12 22:24:12
+archive/issue_comments_050061.json:
+```json
+{
+    "body": "Changing priority from major to trivial.",
+    "created_at": "2009-06-12T22:24:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6267",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6267#issuecomment-50061",
+    "user": "gmhossain"
+}
+```
 
 Changing priority from major to trivial.
 
 
+
 ---
 
-Comment by gmhossain created at 2009-06-12 22:24:12
+archive/issue_comments_050062.json:
+```json
+{
+    "body": "I agree. Sage does typeset two different objects as same latex string\nby design. Sorry for the false alarm.",
+    "created_at": "2009-06-12T22:24:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6267",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6267#issuecomment-50062",
+    "user": "gmhossain"
+}
+```
 
 I agree. Sage does typeset two different objects as same latex string
 by design. Sorry for the false alarm.
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-02 05:01:50
+archive/issue_comments_050063.json:
+```json
+{
+    "body": "Should we close this?",
+    "created_at": "2010-02-02T05:01:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6267",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6267#issuecomment-50063",
+    "user": "mpatel"
+}
+```
 
 Should we close this?
 
 
+
 ---
 
-Comment by mvngu created at 2010-02-02 05:04:52
+archive/issue_comments_050064.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2010-02-02T05:04:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6267",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6267#issuecomment-50064",
+    "user": "mvngu"
+}
+```
 
 Resolution: invalid

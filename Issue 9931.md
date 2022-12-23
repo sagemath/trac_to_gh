@@ -1,59 +1,128 @@
 # Issue 9931: Make PyWavelets an experimental package
 
-Issue created by migration from https://trac.sagemath.org/ticket/9932
-
-Original creator: mhampton
-
-Original creation time: 2010-09-17 10:48:37
-
+archive/issues_009931.json:
+```json
+{
+    "body": "Assignee: tbd\n\nPyWavelets is a Python wavelet transforms module that can do:\n\n* 1D and 2D Forward and Inverse Discrete Wavelet Transform (DWT and IDWT)\n* 1D and 2D Stationary Wavelet Transform (Undecimated Wavelet Transform)\n* 1D and 2D Wavelet Packet decomposition and reconstruction\n* Computing Approximations of wavelet and scaling functions\n* Over seventy built-in wavelet filters and support for custom wavelets\n* Single and double precision calculations\n* Results compatibility with Matlab Wavelet Toolbox (tm)\n\nDocumentation and links to more resources is available online\nat http://www.pybytes.com/pywavelets/.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9932\n\n",
+    "created_at": "2010-09-17T10:48:37Z",
+    "labels": [
+        "packages: experimental",
+        "minor",
+        "enhancement"
+    ],
+    "title": "Make PyWavelets an experimental package",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9931",
+    "user": "mhampton"
+}
+```
 Assignee: tbd
 
 PyWavelets is a Python wavelet transforms module that can do:
 
-  * 1D and 2D Forward and Inverse Discrete Wavelet Transform (DWT and IDWT)
-  * 1D and 2D Stationary Wavelet Transform (Undecimated Wavelet Transform)
-  * 1D and 2D Wavelet Packet decomposition and reconstruction
-  * Computing Approximations of wavelet and scaling functions
-  * Over seventy built-in wavelet filters and support for custom wavelets
-  * Single and double precision calculations
-  * Results compatibility with Matlab Wavelet Toolbox (tm)
+* 1D and 2D Forward and Inverse Discrete Wavelet Transform (DWT and IDWT)
+* 1D and 2D Stationary Wavelet Transform (Undecimated Wavelet Transform)
+* 1D and 2D Wavelet Packet decomposition and reconstruction
+* Computing Approximations of wavelet and scaling functions
+* Over seventy built-in wavelet filters and support for custom wavelets
+* Single and double precision calculations
+* Results compatibility with Matlab Wavelet Toolbox (tm)
 
 Documentation and links to more resources is available online
 at http://www.pybytes.com/pywavelets/.
 
+Issue created by migration from https://trac.sagemath.org/ticket/9932
+
+
+
+
 
 ---
 
-Comment by mhampton created at 2010-09-17 10:49:15
+archive/issue_comments_098894.json:
+```json
+{
+    "body": "First attempt is up at:\n\n[http://sage.math.washington.edu/home/mhampton/PyWavelets-0.2.0.p0.spkg](http://sage.math.washington.edu/home/mhampton/PyWavelets-0.2.0.p0.spkg)",
+    "created_at": "2010-09-17T10:49:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9931",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9931#issuecomment-98894",
+    "user": "mhampton"
+}
+```
 
 First attempt is up at:
 
 [http://sage.math.washington.edu/home/mhampton/PyWavelets-0.2.0.p0.spkg](http://sage.math.washington.edu/home/mhampton/PyWavelets-0.2.0.p0.spkg)
 
 
+
 ---
 
-Comment by jdemeyer created at 2016-01-22 10:52:58
+archive/issue_comments_098895.json:
+```json
+{
+    "body": "Old-style packages are obsolete.",
+    "created_at": "2016-01-22T10:52:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9931",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9931#issuecomment-98895",
+    "user": "jdemeyer"
+}
+```
 
 Old-style packages are obsolete.
 
 
+
 ---
 
-Comment by jdemeyer created at 2016-01-22 10:52:58
+archive/issue_comments_098896.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2016-01-22T10:52:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9931",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9931#issuecomment-98896",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2016-01-22 10:53:03
+archive/issue_comments_098897.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2016-01-22T10:53:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9931",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9931#issuecomment-98897",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by vbraun created at 2016-02-23 22:59:46
+archive/issue_comments_098898.json:
+```json
+{
+    "body": "Resolution: wontfix",
+    "created_at": "2016-02-23T22:59:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9931",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9931#issuecomment-98898",
+    "user": "vbraun"
+}
+```
 
 Resolution: wontfix

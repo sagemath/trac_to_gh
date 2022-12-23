@@ -1,11 +1,21 @@
 # Issue 3980: Find_root bug
 
-Issue created by migration from https://trac.sagemath.org/ticket/3980
-
-Original creator: kcrisman
-
-Original creation time: 2008-08-28 20:38:30
-
+archive/issues_003980.json:
+```json
+{
+    "body": "Assignee: jkantor\n\nThe reciprocal of tangent is not a constant function, but Sage says otherwise.  \n\n\n```\nsage: z=tan\nsage: z\ntan\nsage: 1/z\n1/tan\nsage: find_root(1/z,1,2)\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n<snip>\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/numerical/optimize.py in find_root(f, a, b, xtol, rtol, maxiter, full_output)\n     52     \"\"\"\n     53     try:\n---> 54         return f.find_root(a=a,b=b,xtol=xtol,rtol=rtol,maxiter=maxiter,full_output=full_output)\n     55     except AttributeError:\n     56         pass\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/calculus/calculus.py in find_root(self, a, b, var, xtol, rtol, maxiter, full_output)\n   3088                     return a\n   3089                 else:\n-> 3090                     raise RuntimeError, \"no zero in the interval, since constant expression is not 0.\"\n   3091             var = repr(w[0])\n   3092 \n\nRuntimeError: no zero in the interval, since constant expression is not 0.\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3980\n\n",
+    "created_at": "2008-08-28T20:38:30Z",
+    "labels": [
+        "numerical",
+        "minor",
+        "bug"
+    ],
+    "title": "Find_root bug",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3980",
+    "user": "kcrisman"
+}
+```
 Assignee: jkantor
 
 The reciprocal of tangent is not a constant function, but Sage says otherwise.  
@@ -42,24 +52,61 @@ RuntimeError: no zero in the interval, since constant expression is not 0.
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3980
+
+
+
+
 
 ---
 
-Comment by jwmerrill created at 2008-08-31 15:10:00
+archive/issue_comments_028623.json:
+```json
+{
+    "body": "Changing assignee from jkantor to burcin.",
+    "created_at": "2008-08-31T15:10:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3980",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3980#issuecomment-28623",
+    "user": "jwmerrill"
+}
+```
 
 Changing assignee from jkantor to burcin.
 
 
+
 ---
 
-Comment by jwmerrill created at 2008-08-31 15:10:00
+archive/issue_comments_028624.json:
+```json
+{
+    "body": "Changing component from numerical to calculus.",
+    "created_at": "2008-08-31T15:10:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3980",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3980#issuecomment-28624",
+    "user": "jwmerrill"
+}
+```
 
 Changing component from numerical to calculus.
 
 
+
 ---
 
-Comment by anakha created at 2008-09-08 20:43:07
+archive/issue_comments_028625.json:
+```json
+{
+    "body": "I have a less obscure example of this.  \n\n```\nsage: find_root(sin, -1, 1)\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n/Volumes/Place/anakha/sage-3.1.2.alpha4/<ipython console> in <module>()\n\n/Volumes/Place/anakha/sage-3.1.2.alpha4/local/lib/python2.5/site-packages/sage/numerical/optimize.py in find_root(f, a, b, xtol, rtol, maxiter, full_output)\n     52     \"\"\"\n     53     try:\n---> 54         return f.find_root(a=a,b=b,xtol=xtol,rtol=rtol,maxiter=maxiter,full_output=full_output)\n     55     except AttributeError:\n     56         pass\n\n/Volumes/Place/anakha/sage-3.1.2.alpha4/local/lib/python2.5/site-packages/sage/calculus/calculus.py in find_root(self, a, b, var, xtol, rtol, maxiter, full_output)\n   3120                     return a\n   3121                 else:\n-> 3122                     raise RuntimeError, \"no zero in the interval, since constant expression is not 0.\"\n   3123             var = repr(w[0])\n   3124 \n\nRuntimeError: no zero in the interval, since constant expression is not 0.\n```\n\n\nAnd I have traced down the bug to this:\n\n\n```\nsage: sin.variables()\n()\nsage: (1/tan).variables()\n()\n```\n\n\nSince these expressions contain no variables they are deemed constant and since they are not equal to 0 they have no roots.  You can fix your example by trying:\n\n\n```\nsage: find_root(1/tan(x), 1, 2)\n1.5707963267948968\n```\n\n\nAlso note that this works:\n\n\n```\nsage: (1/tan)(1)\n1/tan(1)\n```\n\n\nAlthough, technically no variables are there to be replaced.\n\nI don't know if this is really a bug or not, or how to fix it.",
+    "created_at": "2008-09-08T20:43:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3980",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3980#issuecomment-28625",
+    "user": "anakha"
+}
+```
 
 I have a less obscure example of this.  
 
@@ -122,30 +169,74 @@ Although, technically no variables are there to be replaced.
 I don't know if this is really a bug or not, or how to fix it.
 
 
+
 ---
 
-Comment by jwmerrill created at 2008-09-08 22:19:03
+archive/issue_comments_028626.json:
+```json
+{
+    "body": "The problem is that find_root is asking the wrong question of its first argument.  It asks \"what are your variables?\"  Instead, it should ask \"do you return a number when called with one argument?\"  I will try to code this up when I get a chance.",
+    "created_at": "2008-09-08T22:19:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3980",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3980#issuecomment-28626",
+    "user": "jwmerrill"
+}
+```
 
 The problem is that find_root is asking the wrong question of its first argument.  It asks "what are your variables?"  Instead, it should ask "do you return a number when called with one argument?"  I will try to code this up when I get a chance.
 
 
+
 ---
 
-Comment by jwmerrill created at 2008-09-09 02:01:08
+archive/issue_comments_028627.json:
+```json
+{
+    "body": "Here's a patch that avoids asking the function what it's variables are.",
+    "created_at": "2008-09-09T02:01:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3980",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3980#issuecomment-28627",
+    "user": "jwmerrill"
+}
+```
 
 Here's a patch that avoids asking the function what it's variables are.
 
 
+
 ---
 
-Comment by jwmerrill created at 2008-09-09 02:01:08
+archive/issue_comments_028628.json:
+```json
+{
+    "body": "Changing assignee from burcin to jwmerrill.",
+    "created_at": "2008-09-09T02:01:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3980",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3980#issuecomment-28628",
+    "user": "jwmerrill"
+}
+```
 
 Changing assignee from burcin to jwmerrill.
 
 
+
 ---
 
-Comment by mhampton created at 2008-09-21 03:29:41
+archive/issue_comments_028629.json:
+```json
+{
+    "body": "Somehow this is now too permissive, since the following should return an error:\n\n```\nsage: var('t')\nsage: find_root(1/t-x,0,2)\n     1.0000000000005\n```\n",
+    "created_at": "2008-09-21T03:29:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3980",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3980#issuecomment-28629",
+    "user": "mhampton"
+}
+```
 
 Somehow this is now too permissive, since the following should return an error:
 
@@ -157,21 +248,56 @@ sage: find_root(1/t-x,0,2)
 
 
 
+
 ---
+
+archive/issue_comments_028630.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-09-29T23:26:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3980",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3980#issuecomment-28630",
+    "user": "jwmerrill"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by jwmerrill created at 2008-09-29 23:29:34
+archive/issue_comments_028631.json:
+```json
+{
+    "body": "Good catch mhampton.  I modified the patch to throw a NotImplementedError if self.number_of_variables() is greater than 1.  This is closer to the old behavior.  I added a new test to explicitly check the case you gave above.",
+    "created_at": "2008-09-29T23:29:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3980",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3980#issuecomment-28631",
+    "user": "jwmerrill"
+}
+```
 
 Good catch mhampton.  I modified the patch to throw a NotImplementedError if self.number_of_variables() is greater than 1.  This is closer to the old behavior.  I added a new test to explicitly check the case you gave above.
 
 
+
 ---
 
-Comment by mhampton created at 2008-10-01 01:57:10
+archive/issue_comments_028632.json:
+```json
+{
+    "body": "OK, this passes tests and it seems OK.  One thing I noticed, which I think can be considered beyond the scope of this patch, is that \n\n\n\n```\nvar('t')\nplot(sin(t*x),-1,1)\n```\n\nquickly fails with \"ValueError: free variable: x\", which is good, but:\n\n\n```\nplot(lambda t: sin(t*x),-1,1)\n```\n\ntries to plot 400 values and finally gives \n\n```\nverbose 0 (3585: plot.py, _plot) WARNING: When plotting, failed to evaluate function at 400 points.\nverbose 0 (3585: plot.py, _plot) Last error message: 'float() argument must be a string or a number'\n```\n\nand an empty plot.  It would be nice to speed up that failure if you know an easy way.",
+    "created_at": "2008-10-01T01:57:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3980",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3980#issuecomment-28632",
+    "user": "mhampton"
+}
+```
 
 OK, this passes tests and it seems OK.  One thing I noticed, which I think can be considered beyond the scope of this patch, is that 
 
@@ -199,15 +325,37 @@ verbose 0 (3585: plot.py, _plot) Last error message: 'float() argument must be a
 and an empty plot.  It would be nice to speed up that failure if you know an easy way.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-01 10:32:42
+archive/issue_comments_028633.json:
+```json
+{
+    "body": "Merged in Sage 3.1.3.alpha3.",
+    "created_at": "2008-10-01T10:32:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3980",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3980#issuecomment-28633",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.1.3.alpha3.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-01 10:32:42
+archive/issue_comments_028634.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-10-01T10:32:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3980",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3980#issuecomment-28634",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

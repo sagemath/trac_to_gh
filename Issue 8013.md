@@ -1,11 +1,25 @@
 # Issue 8013: add libSingular interface to reference manual
 
-Issue created by migration from https://trac.sagemath.org/ticket/8013
-
-Original creator: malb
-
-Original creation time: 2010-01-20 19:12:08
-
+archive/issues_008013.json:
+```json
+{
+    "body": "Assignee: mvngu\n\nThe interface is pretty rich these days, probably the richest we have. Yet it isn't in the reference manual.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8013\n\n",
+    "created_at": "2010-01-20T19:12:08Z",
+    "labels": [
+        "documentation",
+        "minor",
+        "enhancement"
+    ],
+    "title": "add libSingular interface to reference manual",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8013",
+    "user": "malb"
+}
+```
 Assignee: mvngu
 
 The interface is pretty rich these days, probably the richest we have. Yet it isn't in the reference manual.
+
+Issue created by migration from https://trac.sagemath.org/ticket/8013
+
+

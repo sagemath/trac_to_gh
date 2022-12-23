@@ -1,11 +1,21 @@
 # Issue 7816: gd fails to build on Open Solaris - missing header file
 
-Issue created by migration from https://trac.sagemath.org/ticket/7816
-
-Original creator: drkirkby
-
-Original creation time: 2010-01-02 07:22:21
-
+archive/issues_007816.json:
+```json
+{
+    "body": "Assignee: drkirkby\n\ngd is not building on Open Solaris due to a missing header file  X11/xpm.h. \n\n```\ngcc -DHAVE_CONFIG_H -I. -I. -I. -I/export/home/drkirkby/sage-4.3/local/include/freetype2 -I/export/home/drkirkby/sage-4.3/local/include -I/export/home/drkirkby/sage-4.3/local/include -Wall -m64 -fPIC -g -I/export/home/drkirkby/sage-4.3/local/include -I/export/home/drkirkby/sage-4.3/local/include/freetype2/ -MT gdkanji.lo -MD -MP -MF .deps/gdkanji.Tpo -c gdkanji.c -o gdkanji.o >/dev/null 2>&1\nif /bin/sh ./libtool --tag=CC --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I.   -I/export/home/drkirkby/sage-4.3/local/include/freetype2 -I/export/home/drkirkby/sage-4.3/local/include -I/export/home/drkirkby/sage-4.3/local/include   -Wall -m64 -fPIC -g -I\"/export/home/drkirkby/sage-4.3/local/include\" -I/export/home/drkirkby/sage-4.3/local/include/freetype2/ -MT gdtables.lo -MD -MP -MF \".deps/gdtables.Tpo\" -c -o gdtables.lo gdtables.c; \\\n\tthen mv -f \".deps/gdtables.Tpo\" \".deps/gdtables.Plo\"; else rm -f \".deps/gdtables.Tpo\"; exit 1; fi\n gcc -DHAVE_CONFIG_H -I. -I. -I. -I/export/home/drkirkby/sage-4.3/local/include/freetype2 -I/export/home/drkirkby/sage-4.3/local/include -I/export/home/drkirkby/sage-4.3/local/include -Wall -m64 -fPIC -g -I/export/home/drkirkby/sage-4.3/local/include -I/export/home/drkirkby/sage-4.3/local/include/freetype2/ -MT gdtables.lo -MD -MP -MF .deps/gdtables.Tpo -c gdtables.c  -fPIC -DPIC -o .libs/gdtables.o\n gcc -DHAVE_CONFIG_H -I. -I. -I. -I/export/home/drkirkby/sage-4.3/local/include/freetype2 -I/export/home/drkirkby/sage-4.3/local/include -I/export/home/drkirkby/sage-4.3/local/include -Wall -m64 -fPIC -g -I/export/home/drkirkby/sage-4.3/local/include -I/export/home/drkirkby/sage-4.3/local/include/freetype2/ -MT gdtables.lo -MD -MP -MF .deps/gdtables.Tpo -c gdtables.c -o gdtables.o >/dev/null 2>&1\nif /bin/sh ./libtool --tag=CC --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I.   -I/export/home/drkirkby/sage-4.3/local/include/freetype2 -I/export/home/drkirkby/sage-4.3/local/include -I/export/home/drkirkby/sage-4.3/local/include   -Wall -m64 -fPIC -g -I\"/export/home/drkirkby/sage-4.3/local/include\" -I/export/home/drkirkby/sage-4.3/local/include/freetype2/ -MT gdxpm.lo -MD -MP -MF \".deps/gdxpm.Tpo\" -c -o gdxpm.lo gdxpm.c; \\\n\tthen mv -f \".deps/gdxpm.Tpo\" \".deps/gdxpm.Plo\"; else rm -f \".deps/gdxpm.Tpo\"; exit 1; fi\n gcc -DHAVE_CONFIG_H -I. -I. -I. -I/export/home/drkirkby/sage-4.3/local/include/freetype2 -I/export/home/drkirkby/sage-4.3/local/include -I/export/home/drkirkby/sage-4.3/local/include -Wall -m64 -fPIC -g -I/export/home/drkirkby/sage-4.3/local/include -I/export/home/drkirkby/sage-4.3/local/include/freetype2/ -MT gdxpm.lo -MD -MP -MF .deps/gdxpm.Tpo -c gdxpm.c  -fPIC -DPIC -o .libs/gdxpm.o\ngdxpm.c:28:21: error: X11/xpm.h: No such file or directory\ngdxpm.c: In function 'gdImageCreateFromXpm':\ngdxpm.c:32: error: 'XpmInfo' undeclared (first use in this function)\ngdxpm.c:32: error: (Each undeclared identifier is reported only once\ngdxpm.c:32: error: for each function it appears in.)\ngdxpm.c:32: error: expected ';' before 'info'\ngdxpm.c:33: error: 'XpmImage' undeclared (first use in this function)\ngdxpm.c:33: error: expected ';' before 'image'\ngdxpm.c:42: warning: implicit declaration of function 'XpmReadFileToXpmImage'\ngdxpm.c:42: error: 'image' undeclared (first use in this function)\ngdxpm.c:42: error: 'info' undeclared (first use in this function)\ngdxpm.c:43: error: 'XpmSuccess' undeclared (first use in this function)\nmake[4]: *** [gdxpm.lo] Error 1\nmake[4]: Leaving directory `/export/home/drkirkby/sage-4.3/spkg/build/gd-2.0.35.p2/src'\nmake[3]: *** [all-recursive] Error 1\nmake[3]: Leaving directory `/export/home/drkirkby/sage-4.3/spkg/build/gd-2.0.35.p2/src'\nmake[2]: *** [all] Error 2\nmake[2]: Leaving directory `/export/home/drkirkby/sage-4.3/spkg/build/gd-2.0.35.p2/src'\nError building gd.\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7816\n\n",
+    "created_at": "2010-01-02T07:22:21Z",
+    "labels": [
+        "porting: Solaris",
+        "major",
+        "bug"
+    ],
+    "title": "gd fails to build on Open Solaris - missing header file",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7816",
+    "user": "drkirkby"
+}
+```
 Assignee: drkirkby
 
 gd is not building on Open Solaris due to a missing header file  X11/xpm.h. 
@@ -42,16 +52,42 @@ Error building gd.
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7816
+
+
+
+
 
 ---
 
-Comment by drkirkby created at 2010-01-02 11:43:07
+archive/issue_comments_067630.json:
+```json
+{
+    "body": "sorry, this is a duplicate of #7162",
+    "created_at": "2010-01-02T11:43:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7816",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7816#issuecomment-67630",
+    "user": "drkirkby"
+}
+```
 
 sorry, this is a duplicate of #7162
 
 
+
 ---
 
-Comment by drkirkby created at 2010-01-02 11:43:07
+archive/issue_comments_067631.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2010-01-02T11:43:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7816",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7816#issuecomment-67631",
+    "user": "drkirkby"
+}
+```
 
 Resolution: duplicate

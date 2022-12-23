@@ -1,11 +1,21 @@
 # Issue 2153: Defined Hom parent of group homomorphisms.
 
-Issue created by migration from https://trac.sagemath.org/ticket/2153
-
-Original creator: kohel
-
-Original creation time: 2008-02-13 22:42:50
-
+archive/issues_002153.json:
+```json
+{
+    "body": "Assignee: joyner\n\nCC:  tscrim\n\nDefined parent of a group homomorphism such that the following example\nworks (and similar for permutation groups):\n\nsage: G.<x,y> = AbelianGroup(2,[2,3]); G \nMultiplicative Abelian Group isomorphic to C2 x C3\nsage: H.<a,b,c> = AbelianGroup(3,[2,3,4]); H\nMultiplicative Abelian Group isomorphic to C2 x C3 x C4\nsage: phi = AbelianGroupMorphism(G,H,[x,y],[a,b])\nsage: phi\n\nAbelianGroup morphism:\n  From: Multiplicative Abelian Group isomorphic to C2 x C3\n  To:   Multiplicative Abelian Group isomorphic to C2 x C3 x C4\nsage: phi.parent()\nSet of Morphisms from Multiplicative Abelian Group isomorphic to C2 x C3 to Multiplicative Abelian Group isomorphic to C2 x C3 x C4 in Category of groups\nsage: Hom(G,H) == phi.parent()\nTrue\n\nIssue created by migration from https://trac.sagemath.org/ticket/2153\n\n",
+    "created_at": "2008-02-13T22:42:50Z",
+    "labels": [
+        "group theory",
+        "major",
+        "enhancement"
+    ],
+    "title": "Defined Hom parent of group homomorphisms.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2153",
+    "user": "kohel"
+}
+```
 Assignee: joyner
 
 CC:  tscrim
@@ -28,15 +38,43 @@ Set of Morphisms from Multiplicative Abelian Group isomorphic to C2 x C3 to Mult
 sage: Hom(G,H) == phi.parent()
 True
 
+Issue created by migration from https://trac.sagemath.org/ticket/2153
+
+
+
+
 
 ---
+
+archive/issue_comments_014129.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-02-14T07:19:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2153",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2153#issuecomment-14129",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by ncalexan created at 2008-02-15 04:29:35
+archive/issue_comments_014130.json:
+```json
+{
+    "body": "Apply aa5061b07eef.  Documentation and tests are fantastic!\n\n45b75671c677 and 25e03ebc5b0d appear to be the same.  Whether it should be applied... I say yes, but I'm worried that it will fail on infinite domains.\n\n02e052cfe50a should be applied, although I don't like leaving commented code around.",
+    "created_at": "2008-02-15T04:29:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2153",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2153#issuecomment-14130",
+    "user": "ncalexan"
+}
+```
 
 Apply aa5061b07eef.  Documentation and tests are fantastic!
 
@@ -45,16 +83,38 @@ Apply aa5061b07eef.  Documentation and tests are fantastic!
 02e052cfe50a should be applied, although I don't like leaving commented code around.
 
 
+
 ---
 
-Comment by ncalexan created at 2008-02-15 04:31:45
+archive/issue_comments_014131.json:
+```json
+{
+    "body": "BTW, why isn't the motivating example a doctest in the attached patch?",
+    "created_at": "2008-02-15T04:31:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2153",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2153#issuecomment-14131",
+    "user": "ncalexan"
+}
+```
 
 BTW, why isn't the motivating example a doctest in the attached patch?
 
 
+
 ---
 
-Comment by ncalexan created at 2008-02-15 04:47:29
+archive/issue_comments_014132.json:
+```json
+{
+    "body": "#1840 is aa5061b07eef.\n\n#1893 is 45b75671c677 and 25e03ebc5b0d.\n\nSo the only new patch is 02e052cfe50a.",
+    "created_at": "2008-02-15T04:47:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2153",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2153#issuecomment-14132",
+    "user": "ncalexan"
+}
+```
 
 #1840 is aa5061b07eef.
 
@@ -63,9 +123,20 @@ Comment by ncalexan created at 2008-02-15 04:47:29
 So the only new patch is 02e052cfe50a.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-12 01:08:04
+archive/issue_comments_014133.json:
+```json
+{
+    "body": "There are various points raised in the previous comments which should be addressed.\n\nCheers,\n\nMichael",
+    "created_at": "2008-03-12T01:08:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2153",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2153#issuecomment-14133",
+    "user": "mabshoff"
+}
+```
 
 There are various points raised in the previous comments which should be addressed.
 
@@ -74,16 +145,40 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_014134.json:
+```json
+{
+    "body": "Attachment\n\ntried to create patch based on sage-3.0.alphaa0 from code D Kohel sent",
+    "created_at": "2008-04-06T00:56:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2153",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2153#issuecomment-14134",
+    "user": "wdj"
+}
+```
 
 Attachment
 
 tried to create patch based on sage-3.0.alphaa0 from code D Kohel sent
 
 
+
 ---
 
-Comment by wdj created at 2008-04-06 01:01:51
+archive/issue_comments_014135.json:
+```json
+{
+    "body": "Maybe others could apply the bundle but I could not. I asked David Kohel for his code, which he emailed me. I tried to create a patch from that. It seems to pass sage -t (I cannot get sage -testall to work without locking up on this machine).  Since I get\n\n\n```\nsage: G.<x,y> = AbelianGroup(2,[2,3]); G\nMultiplicative Abelian Group isomorphic to C2 x C3\nsage: H.<a,b,c> = AbelianGroup(3,[2,3,4]); H\nMultiplicative Abelian Group isomorphic to C2 x C3 x C4\nsage: phi = AbelianGroupMorphism(G,H,[x,y],[a,b])\nsage: phi\n<sage.groups.abelian_gps.abelian_group_morphism.AbelianGroupMorphism instance at 0x364cef0>\nsage: phi.parent()\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/mnt/drive_hda1/sagefiles/sage-3.0.alpha0/<ipython console> in <module>()\n\n<type 'exceptions.AttributeError'>: AbelianGroupMorphism instance has no attribute 'parent'\n```\n\nI apparently made a mistake somewhere....",
+    "created_at": "2008-04-06T01:01:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2153",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2153#issuecomment-14135",
+    "user": "wdj"
+}
+```
 
 Maybe others could apply the bundle but I could not. I asked David Kohel for his code, which he emailed me. I tried to create a patch from that. It seems to pass sage -t (I cannot get sage -testall to work without locking up on this machine).  Since I get
 
@@ -108,30 +203,74 @@ sage: phi.parent()
 I apparently made a mistake somewhere....
 
 
+
 ---
 
-Comment by mmezzarobba created at 2015-04-13 16:21:38
+archive/issue_comments_014136.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_info.",
+    "created_at": "2015-04-13T16:21:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2153",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2153#issuecomment-14136",
+    "user": "mmezzarobba"
+}
+```
 
 Changing status from needs_work to needs_info.
 
 
+
 ---
 
-Comment by mmezzarobba created at 2015-04-13 16:21:38
+archive/issue_comments_014137.json:
+```json
+{
+    "body": "The example in the description now works. In there still something to be done here?",
+    "created_at": "2015-04-13T16:21:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2153",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2153#issuecomment-14137",
+    "user": "mmezzarobba"
+}
+```
 
 The example in the description now works. In there still something to be done here?
 
 
+
 ---
 
-Comment by chapoton created at 2018-01-17 13:35:30
+archive/issue_comments_014138.json:
+```json
+{
+    "body": "Changing status from needs_info to needs_review.",
+    "created_at": "2018-01-17T13:35:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2153",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2153#issuecomment-14138",
+    "user": "chapoton"
+}
+```
 
 Changing status from needs_info to needs_review.
 
 
+
 ---
 
-Comment by chapoton created at 2018-01-17 13:35:30
+archive/issue_comments_014139.json:
+```json
+{
+    "body": "I have added the example as a doctest. \n\nI also took the opportunity to make small improvements in the same file.\n----\nNew commits:",
+    "created_at": "2018-01-17T13:35:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2153",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2153#issuecomment-14139",
+    "user": "chapoton"
+}
+```
 
 I have added the example as a doctest. 
 
@@ -140,46 +279,112 @@ I also took the opportunity to make small improvements in the same file.
 New commits:
 
 
+
 ---
 
-Comment by chapoton created at 2018-01-17 14:39:47
+archive/issue_comments_014140.json:
+```json
+{
+    "body": "green bot",
+    "created_at": "2018-01-17T14:39:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2153",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2153#issuecomment-14140",
+    "user": "chapoton"
+}
+```
 
 green bot
 
 
+
 ---
 
-Comment by sbrandhorst created at 2018-01-19 17:18:20
+archive/issue_comments_014141.json:
+```json
+{
+    "body": "Did you consider using libgap instead of moving strings around?\nGuess one could leave it for a different ticket.",
+    "created_at": "2018-01-19T17:18:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2153",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2153#issuecomment-14141",
+    "user": "sbrandhorst"
+}
+```
 
 Did you consider using libgap instead of moving strings around?
 Guess one could leave it for a different ticket.
 
 
+
 ---
 
-Comment by chapoton created at 2018-01-19 19:11:54
+archive/issue_comments_014142.json:
+```json
+{
+    "body": "It would be certainly much better with libgap, but I am not able to do that, so better keep it for another ticket and for somebody else, yes.",
+    "created_at": "2018-01-19T19:11:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2153",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2153#issuecomment-14142",
+    "user": "chapoton"
+}
+```
 
 It would be certainly much better with libgap, but I am not able to do that, so better keep it for another ticket and for somebody else, yes.
 
 
+
 ---
 
-Comment by sbrandhorst created at 2018-01-21 19:36:13
+archive/issue_comments_014143.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2018-01-21T19:36:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2153",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2153#issuecomment-14143",
+    "user": "sbrandhorst"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by sbrandhorst created at 2018-01-21 19:36:13
+archive/issue_comments_014144.json:
+```json
+{
+    "body": "The class is still a mess but it is certainly better with the cleanup than without.\n\nPositive review.",
+    "created_at": "2018-01-21T19:36:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2153",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2153#issuecomment-14144",
+    "user": "sbrandhorst"
+}
+```
 
 The class is still a mess but it is certainly better with the cleanup than without.
 
 Positive review.
 
 
+
 ---
 
-Comment by vbraun created at 2018-01-27 16:00:08
+archive/issue_comments_014145.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2018-01-27T16:00:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2153",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2153#issuecomment-14145",
+    "user": "vbraun"
+}
+```
 
 Resolution: fixed

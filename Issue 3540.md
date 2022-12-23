@@ -1,11 +1,21 @@
 # Issue 3540: [with patch, needs review] Augment messes up the ncols for flat matrices.
 
-Issue created by migration from https://trac.sagemath.org/ticket/3540
-
-Original creator: rlm
-
-Original creation time: 2008-07-01 19:27:28
-
+archive/issues_003540.json:
+```json
+{
+    "body": "Assignee: was\n\nFor example:\n\n```\nsage: M = Matrix(GF(2), 0, 0, 0)\nsage: M\n[]\nsage: M.nrows()\n0\nsage: M.ncols()\n0\nsage: N = Matrix(GF(2), 0, 19, 0)\nsage: N\n[]\nsage: N.nrows()\n0\nsage: N.ncols()\n19\nsage: W = M.augment(N)\nsage: W\n[]\nsage: W.nrows()\n0\nsage: W.ncols()\n0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3540\n\n",
+    "created_at": "2008-07-01T19:27:28Z",
+    "labels": [
+        "linear algebra",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch, needs review] Augment messes up the ncols for flat matrices.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3540",
+    "user": "rlm"
+}
+```
 Assignee: was
 
 For example:
@@ -35,31 +45,83 @@ sage: W.ncols()
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3540
+
+
+
+
 
 ---
+
+archive/issue_comments_025019.json:
+```json
+{
+    "body": "Attachment\n\nfixes SIGSEGV in first patch",
+    "created_at": "2008-07-02T20:30:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3540",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3540#issuecomment-25019",
+    "user": "malb"
+}
+```
 
 Attachment
 
 fixes SIGSEGV in first patch
 
 
+
 ---
+
+archive/issue_comments_025020.json:
+```json
+{
+    "body": "Attachment\n\nThe original patch introduced a SIGSEGV which I've fixed in `trac-3540-augment-fix.patch`. Together with my fix I'll give it a positive review, so somebody needs to approve my fix.",
+    "created_at": "2008-07-02T20:31:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3540",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3540#issuecomment-25020",
+    "user": "malb"
+}
+```
 
 Attachment
 
 The original patch introduced a SIGSEGV which I've fixed in `trac-3540-augment-fix.patch`. Together with my fix I'll give it a positive review, so somebody needs to approve my fix.
 
 
+
 ---
 
-Comment by rlm created at 2008-07-02 21:38:31
+archive/issue_comments_025021.json:
+```json
+{
+    "body": "If I'm allowed to give malb's patch a positive review, I do.",
+    "created_at": "2008-07-02T21:38:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3540",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3540#issuecomment-25021",
+    "user": "rlm"
+}
+```
 
 If I'm allowed to give malb's patch a positive review, I do.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-03 00:42:10
+archive/issue_comments_025022.json:
+```json
+{
+    "body": "Replying to [comment:2 rlm]:\n> If I'm allowed to give malb's patch a positive review, I do. \n\nYes, since you know the code and his patch corrects an issue with your patch.\n\nCheers,\n\nMichael",
+    "created_at": "2008-07-03T00:42:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3540",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3540#issuecomment-25022",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:2 rlm]:
 > If I'm allowed to give malb's patch a positive review, I do. 
@@ -71,15 +133,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-03 02:53:08
+archive/issue_comments_025023.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-07-03T02:53:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3540",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3540#issuecomment-25023",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-03 02:53:08
+archive/issue_comments_025024.json:
+```json
+{
+    "body": "Merged both patches in Sage 3.0.4.alpha2",
+    "created_at": "2008-07-03T02:53:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3540",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3540#issuecomment-25024",
+    "user": "mabshoff"
+}
+```
 
 Merged both patches in Sage 3.0.4.alpha2

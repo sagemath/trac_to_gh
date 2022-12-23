@@ -1,25 +1,61 @@
 # Issue 9328: implement matrix term orderings for libsingular polynomials
 
-Issue created by migration from https://trac.sagemath.org/ticket/9328
-
-Original creator: malb
-
-Original creation time: 2010-06-24 12:57:41
-
+archive/issues_009328.json:
+```json
+{
+    "body": "Assignee: malb\n\nOnce #6922 is merged we'll have Matrix term orderings but only for the very slow `PolyDict` based polynomials. Singular does support matrix term orderings thus it should be relatively easy to add them.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9328\n\n",
+    "created_at": "2010-06-24T12:57:41Z",
+    "labels": [
+        "commutative algebra",
+        "major",
+        "enhancement"
+    ],
+    "title": "implement matrix term orderings for libsingular polynomials",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9328",
+    "user": "malb"
+}
+```
 Assignee: malb
 
 Once #6922 is merged we'll have Matrix term orderings but only for the very slow `PolyDict` based polynomials. Singular does support matrix term orderings thus it should be relatively easy to add them.
 
+Issue created by migration from https://trac.sagemath.org/ticket/9328
+
+
+
+
 
 ---
 
-Comment by malb created at 2010-06-25 09:00:03
+archive/issue_comments_087990.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2010-06-25T09:00:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9328",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9328#issuecomment-87990",
+    "user": "malb"
+}
+```
 
 Resolution: duplicate
 
 
+
 ---
 
-Comment by malb created at 2010-06-25 09:00:03
+archive/issue_comments_087991.json:
+```json
+{
+    "body": "This is taken care of in #6922.",
+    "created_at": "2010-06-25T09:00:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9328",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9328#issuecomment-87991",
+    "user": "malb"
+}
+```
 
 This is taken care of in #6922.

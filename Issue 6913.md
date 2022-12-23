@@ -1,34 +1,81 @@
 # Issue 6913: __eq__ methods for the classes in numerical.MIP
 
-Issue created by migration from https://trac.sagemath.org/ticket/6913
-
-Original creator: ncohen
-
-Original creation time: 2009-09-10 11:00:13
-
+archive/issues_006913.json:
+```json
+{
+    "body": "Assignee: jkantor\n\nCC:  mvngu\n\nThe classes in numerical.MIP are all missing __eq__ methods.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6913\n\n",
+    "created_at": "2009-09-10T11:00:13Z",
+    "labels": [
+        "numerical",
+        "major",
+        "bug"
+    ],
+    "title": "__eq__ methods for the classes in numerical.MIP",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6913",
+    "user": "ncohen"
+}
+```
 Assignee: jkantor
 
 CC:  mvngu
 
 The classes in numerical.MIP are all missing __eq__ methods.
 
+Issue created by migration from https://trac.sagemath.org/ticket/6913
+
+
+
+
 
 ---
 
-Comment by ncohen created at 2009-10-23 15:40:09
+archive/issue_comments_057096.json:
+```json
+{
+    "body": "This issue is fixed in ticket #7270.",
+    "created_at": "2009-10-23T15:40:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6913",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6913#issuecomment-57096",
+    "user": "ncohen"
+}
+```
 
 This issue is fixed in ticket #7270.
 
 
+
 ---
 
-Comment by mhansen created at 2009-12-02 10:18:06
+archive/issue_comments_057097.json:
+```json
+{
+    "body": "Fixed due to #7270",
+    "created_at": "2009-12-02T10:18:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6913",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6913#issuecomment-57097",
+    "user": "mhansen"
+}
+```
 
 Fixed due to #7270
 
 
+
 ---
 
-Comment by mhansen created at 2009-12-02 10:18:06
+archive/issue_comments_057098.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-12-02T10:18:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6913",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6913#issuecomment-57098",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

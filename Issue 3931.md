@@ -1,19 +1,44 @@
 # Issue 3931: Should we merge the dependency relation graph code by Scot Terry
 
-Issue created by migration from https://trac.sagemath.org/ticket/3931
-
-Original creator: jason
-
-Original creation time: 2008-08-22 18:16:18
-
+archive/issues_003931.json:
+```json
+{
+    "body": "Assignee: rlm\n\nSee http://wiki.wstein.org/2008/480a/theprojects\n\nIssue created by migration from https://trac.sagemath.org/ticket/3931\n\n",
+    "created_at": "2008-08-22T18:16:18Z",
+    "labels": [
+        "graph theory",
+        "major",
+        "enhancement"
+    ],
+    "title": "Should we merge the dependency relation graph code by Scot Terry",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3931",
+    "user": "jason"
+}
+```
 Assignee: rlm
 
 See http://wiki.wstein.org/2008/480a/theprojects
 
+Issue created by migration from https://trac.sagemath.org/ticket/3931
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-08-22 20:02:48
+archive/issue_comments_028146.json:
+```json
+{
+    "body": "Hi Jason,\n\nthis question is not for trac, but should be discussed in [sage-devel].\n\nCheers,\n\nMichael",
+    "created_at": "2008-08-22T20:02:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3931",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3931#issuecomment-28146",
+    "user": "mabshoff"
+}
+```
 
 Hi Jason,
 
@@ -24,15 +49,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by rlm created at 2008-08-24 04:50:59
+archive/issue_comments_028147.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2008-08-24T04:50:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3931",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3931#issuecomment-28147",
+    "user": "rlm"
+}
+```
 
 Resolution: invalid
 
 
+
 ---
 
-Comment by rlm created at 2008-08-24 04:50:59
+archive/issue_comments_028148.json:
+```json
+{
+    "body": "And, the answer is NO.",
+    "created_at": "2008-08-24T04:50:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3931",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3931#issuecomment-28148",
+    "user": "rlm"
+}
+```
 
 And, the answer is NO.

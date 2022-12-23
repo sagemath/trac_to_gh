@@ -1,11 +1,21 @@
 # Issue 7382: MonskyWashnitzer segfault
 
-Issue created by migration from https://trac.sagemath.org/ticket/7382
-
-Original creator: jen
-
-Original creation time: 2009-11-03 17:59:21
-
+archive/issues_007382.json:
+```json
+{
+    "body": "Assignee: robertwb\n\nCC:  jen minz jpflori\n\nSo I don't actually *need* matrix_of_frobenius_hyperelliptic of a curve over an extension field, but I inadvertently passed it in during a computation and caused a segfault. It would be nice for this to work (coercion?), since the curve is defined over QQ anyway.\n\n\n```\nsage: R.<x> = QQ['x']\nsage: H = HyperellipticCurve(x^3-10*x+9)\nsage: K = Qp(3,5)\nsage: J.<a> = K.extension(x^30-3)\nsage: HJ = H.change_ring(J)\nsage: import sage.schemes.elliptic_curves.monsky_washnitzer as mw\nsage: M_frob, forms = mw.matrix_of_frobenius_hyperelliptic(HJ)\n\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7382\n\n",
+    "created_at": "2009-11-03T17:59:21Z",
+    "labels": [
+        "number theory",
+        "major",
+        "bug"
+    ],
+    "title": "MonskyWashnitzer segfault",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7382",
+    "user": "jen"
+}
+```
 Assignee: robertwb
 
 CC:  jen minz jpflori
@@ -34,17 +44,43 @@ SAGE will now terminate (sorry).
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7382
+
+
+
+
 
 ---
 
-Comment by jdemeyer created at 2014-12-12 11:39:17
+archive/issue_comments_062096.json:
+```json
+{
+    "body": "Changing component from number theory to algebraic geometry.",
+    "created_at": "2014-12-12T11:39:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7382",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7382#issuecomment-62096",
+    "user": "jdemeyer"
+}
+```
 
 Changing component from number theory to algebraic geometry.
 
 
+
 ---
 
-Comment by edgarcosta created at 2018-04-25 17:49:12
+archive/issue_comments_062097.json:
+```json
+{
+    "body": "I cannot recreate this error anymore. (most likely it has been fixed indirectly)\n\nJen, could you double check?\n\nThanks!",
+    "created_at": "2018-04-25T17:49:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7382",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7382#issuecomment-62097",
+    "user": "edgarcosta"
+}
+```
 
 I cannot recreate this error anymore. (most likely it has been fixed indirectly)
 
@@ -53,29 +89,73 @@ Jen, could you double check?
 Thanks!
 
 
+
 ---
 
-Comment by chapoton created at 2018-04-26 09:13:05
+archive/issue_comments_062098.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2018-04-26T09:13:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7382",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7382#issuecomment-62098",
+    "user": "chapoton"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by vdelecroix created at 2018-05-01 12:34:39
+archive/issue_comments_062099.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2018-05-01T12:34:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7382",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7382#issuecomment-62099",
+    "user": "vdelecroix"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by vdelecroix created at 2018-05-18 17:16:26
+archive/issue_comments_062100.json:
+```json
+{
+    "body": "Resolution: wontfix",
+    "created_at": "2018-05-18T17:16:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7382",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7382#issuecomment-62100",
+    "user": "vdelecroix"
+}
+```
 
 Resolution: wontfix
 
 
+
 ---
 
-Comment by vdelecroix created at 2018-05-18 17:16:26
+archive/issue_comments_062101.json:
+```json
+{
+    "body": "closing positively reviewed duplicates",
+    "created_at": "2018-05-18T17:16:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7382",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7382#issuecomment-62101",
+    "user": "vdelecroix"
+}
+```
 
 closing positively reviewed duplicates

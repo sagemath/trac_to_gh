@@ -1,11 +1,21 @@
 # Issue 8938: Multivariate polynomials can be incorrectly formatted in LaTeX
 
-Issue created by migration from https://trac.sagemath.org/ticket/8938
-
-Original creator: fwclarke
-
-Original creation time: 2010-05-09 20:46:29
-
+archive/issues_008938.json:
+```json
+{
+    "body": "Assignee: AlexGhitza\n\nKeywords: Multivariate polynomials latex\n\n\n```\nsage: C5.<z> = CyclotomicField(5)\nsage: P.<s, t> = C5[]\nsage: f = (z^2 + z)*s\nsage: f\n(z^2 + z)*s\nsage: latex(f)\nz^{2} + z s\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8938\n\n",
+    "created_at": "2010-05-09T20:46:29Z",
+    "labels": [
+        "algebra",
+        "major",
+        "bug"
+    ],
+    "title": "Multivariate polynomials can be incorrectly formatted in LaTeX",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8938",
+    "user": "fwclarke"
+}
+```
 Assignee: AlexGhitza
 
 Keywords: Multivariate polynomials latex
@@ -22,38 +32,99 @@ z^{2} + z s
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8938
+
+
+
+
 
 ---
+
+archive/issue_comments_082296.json:
+```json
+{
+    "body": "Attachment\n\nThe patch solves this problem, providing latex code which is modelled on that used for single-variable polynomials. \u00a0A few doctests have had to be adjusted and LaTeX output provided for elements of QQbar.",
+    "created_at": "2010-05-09T20:58:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8938",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8938#issuecomment-82296",
+    "user": "fwclarke"
+}
+```
 
 Attachment
 
 The patch solves this problem, providing latex code which is modelled on that used for single-variable polynomials.  A few doctests have had to be adjusted and LaTeX output provided for elements of QQbar.
 
 
+
 ---
 
-Comment by fwclarke created at 2010-05-09 20:58:36
+archive/issue_comments_082297.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-05-09T20:58:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8938",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8938#issuecomment-82297",
+    "user": "fwclarke"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by malb created at 2010-06-24 08:54:48
+archive/issue_comments_082298.json:
+```json
+{
+    "body": "Applies cleanly, doctests pass, reads good.",
+    "created_at": "2010-06-24T08:54:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8938",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8938#issuecomment-82298",
+    "user": "malb"
+}
+```
 
 Applies cleanly, doctests pass, reads good.
 
 
+
 ---
 
-Comment by malb created at 2010-06-24 08:54:48
+archive/issue_comments_082299.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-06-24T08:54:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8938",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8938#issuecomment-82299",
+    "user": "malb"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by davidloeffler created at 2010-07-01 07:36:39
+archive/issue_comments_082300.json:
+```json
+{
+    "body": "I'm getting doctest failures with this under 4.5.alpha1:\n\n```\nsage -t  \"devel/sage-reviewing/sage/rings/polynomial/multi_polynomial_element.py\"\n**********************************************************************           \nFile \"/storage/masiao/sage-4.5.alpha1/devel/sage-reviewing/sage/rings/polynomial/multi_polynomial_element.py\", line 379:                                                                                                    \n    sage: latex(-I*y+I*x^2)                                                                                   \nExpected:                                                                                                     \n    \\sqrt{-1} x^{2} - \\sqrt{-1} y                                                                             \nGot:                                                                                                          \n    \\left(\\sqrt{-1}\\right) x^{2} + \\left(-\\sqrt{-1}\\right) y                                                  \n**********************************************************************                                        \n1 items had failures:                                                                                         \n   1 of   7 in __main__.example_15                                                                            \n***Test Failed*** 1 failures.                                                                                 \nFor whitespace errors, see the file /home/masiao/.sage//tmp/.doctest_multi_polynomial_element.py              \n         [3.7 s]                                                                                              \nsage -t  \"devel/sage-reviewing/sage/rings/qqbar.py\"                                                           \n**********************************************************************                           File \"/storage/masiao/sage-4.5.alpha1/devel/sage-reviewing/sage/rings/qqbar.py\", line 2223:\n    sage: latex(-QQbar.zeta(4) + 5)\nExpected:\n    -i + 5\nGot:\n    -\\sqrt{-1} + 5\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_42\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/masiao/.sage//tmp/.doctest_qqbar.py\n         [19.5 s]\nsage -t  \"devel/sage-reviewing/sage/schemes/generic/algebraic_scheme.py\"\n**********************************************************************\nFile \"/storage/masiao/sage-4.5.alpha1/devel/sage-reviewing/sage/schemes/generic/algebraic_scheme.py\", line 595:\n    sage: S._latex_()\nExpected:\n    '\\\\text{Closed subscheme of } {\\\\mathbf P}_{\\\\Bold{F}_{11}}^2 \\\\text{ defined by } x^{2} - y z'\nGot:\n    '\\\\text{Closed subscheme of } {\\\\mathbf P}_{\\\\Bold{F}_{11}}^2 \\\\text{ defined by } x^{2} + 10 y z'\n**********************************************************************\nFile \"/storage/masiao/sage-4.5.alpha1/devel/sage-reviewing/sage/schemes/generic/algebraic_scheme.py\", line 602:\n    sage: S._latex_()\nExpected:\n    '\\\\text{Closed subscheme of } {\\\\mathbf P}_{\\\\Bold{F}_{11}}^2 \\\\text{ defined by } x^{2} - y z, x^{5}'\nGot:\n    '\\\\text{Closed subscheme of } {\\\\mathbf P}_{\\\\Bold{F}_{11}}^2 \\\\text{ defined by } x^{2} + 10 y z, x^{5}'\n**********************************************************************\n1 items had failures:\n   2 of   9 in __main__.example_23\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /home/masiao/.sage//tmp/.doctest_algebraic_scheme.py\n         [5.4 s]\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"devel/sage-reviewing/sage/rings/polynomial/multi_polynomial_element.py\"\n        sage -t  \"devel/sage-reviewing/sage/rings/qqbar.py\"\n        sage -t  \"devel/sage-reviewing/sage/schemes/generic/algebraic_scheme.py\"\nTotal time for all tests: 28.6 seconds\n```\n",
+    "created_at": "2010-07-01T07:36:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8938",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8938#issuecomment-82300",
+    "user": "davidloeffler"
+}
+```
 
 I'm getting doctest failures with this under 4.5.alpha1:
 
@@ -119,37 +190,92 @@ Total time for all tests: 28.6 seconds
 
 
 
+
 ---
 
-Comment by davidloeffler created at 2010-07-01 07:36:39
+archive/issue_comments_082301.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_work.",
+    "created_at": "2010-07-01T07:36:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8938",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8938#issuecomment-82301",
+    "user": "davidloeffler"
+}
+```
 
 Changing status from positive_review to needs_work.
 
 
+
 ---
 
-Comment by fwclarke created at 2010-07-02 07:34:45
+archive/issue_comments_082302.json:
+```json
+{
+    "body": "It looks like the new failures are caused by\u00a0#9017\u00a0and\u00a0#9108, both of which overtook this patch. \u00a0I'll try to make a new patch compatible with the changes introduced by the other two.",
+    "created_at": "2010-07-02T07:34:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8938",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8938#issuecomment-82302",
+    "user": "fwclarke"
+}
+```
 
 It looks like the new failures are caused by #9017 and #9108, both of which overtook this patch.  I'll try to make a new patch compatible with the changes introduced by the other two.
 
 
+
 ---
 
-Comment by fwclarke created at 2010-07-02 20:00:07
+archive/issue_comments_082303.json:
+```json
+{
+    "body": "See also #9394.",
+    "created_at": "2010-07-02T20:00:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8938",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8938#issuecomment-82303",
+    "user": "fwclarke"
+}
+```
 
 See also #9394.
 
 
+
 ---
 
-Comment by novoselt created at 2010-11-08 15:56:42
+archive/issue_comments_082304.json:
+```json
+{
+    "body": "See also #9478.",
+    "created_at": "2010-11-08T15:56:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8938",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8938#issuecomment-82304",
+    "user": "novoselt"
+}
+```
 
 See also #9478.
 
 
+
 ---
 
-Comment by novoselt created at 2011-07-22 16:39:12
+archive/issue_comments_082305.json:
+```json
+{
+    "body": "In Sage 4.7.1.rc0 I get for the last line\n\n```\n\\left(z^{2} + z\\right) s\n```\n\nso this bug has been fixed along the way.",
+    "created_at": "2011-07-22T16:39:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8938",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8938#issuecomment-82305",
+    "user": "novoselt"
+}
+```
 
 In Sage 4.7.1.rc0 I get for the last line
 
@@ -160,41 +286,109 @@ In Sage 4.7.1.rc0 I get for the last line
 so this bug has been fixed along the way.
 
 
+
 ---
+
+archive/issue_comments_082306.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2011-07-22T16:41:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8938",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8938#issuecomment-82306",
+    "user": "novoselt"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by novoselt created at 2011-07-22 16:41:33
+archive/issue_comments_082307.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2011-07-22T16:41:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8938",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8938#issuecomment-82307",
+    "user": "novoselt"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2011-07-22 20:42:44
+archive/issue_comments_082308.json:
+```json
+{
+    "body": "Changing priority from major to minor.",
+    "created_at": "2011-07-22T20:42:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8938",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8938#issuecomment-82308",
+    "user": "jhpalmieri"
+}
+```
 
 Changing priority from major to minor.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2011-07-22 20:42:44
+archive/issue_comments_082309.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2011-07-22T20:42:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8938",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8938#issuecomment-82309",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2011-07-22 20:42:44
+archive/issue_comments_082310.json:
+```json
+{
+    "body": "Looks good to me.  (There are probably other doctests verifying this from whatever ticket originally fixed it, but having another one can't hurt.)",
+    "created_at": "2011-07-22T20:42:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8938",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8938#issuecomment-82310",
+    "user": "jhpalmieri"
+}
+```
 
 Looks good to me.  (There are probably other doctests verifying this from whatever ticket originally fixed it, but having another one can't hurt.)
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-08-03 14:36:28
+archive/issue_comments_082311.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2011-08-03T14:36:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8938",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8938#issuecomment-82311",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: fixed

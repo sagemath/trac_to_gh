@@ -1,18 +1,43 @@
 # Issue 3769: dsage gets installed to SAGE_ROOT/usr
 
-Issue created by migration from https://trac.sagemath.org/ticket/3769
-
-Original creator: tabbott
-
-Original creation time: 2008-08-03 19:30:17
-
+archive/issues_003769.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nPresumably, dsage should be installed under SAGE_LOCAL like everything else.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3769\n\n",
+    "created_at": "2008-08-03T19:30:17Z",
+    "labels": [
+        "packages: standard",
+        "minor",
+        "bug"
+    ],
+    "title": "dsage gets installed to SAGE_ROOT/usr",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3769",
+    "user": "tabbott"
+}
+```
 Assignee: mabshoff
 
 Presumably, dsage should be installed under SAGE_LOCAL like everything else.
 
+Issue created by migration from https://trac.sagemath.org/ticket/3769
+
+
+
+
 
 ---
 
-Comment by timdumol created at 2010-01-19 10:45:18
+archive/issue_comments_026825.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2010-01-19T10:45:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3769",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3769#issuecomment-26825",
+    "user": "timdumol"
+}
+```
 
 Resolution: invalid

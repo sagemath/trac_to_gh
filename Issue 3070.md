@@ -1,11 +1,21 @@
 # Issue 3070: bug in SymmetricGroup(1).cayley_graph()
 
-Issue created by migration from https://trac.sagemath.org/ticket/3070
-
-Original creator: mabshoff
-
-Original creation time: 2008-05-01 05:20:47
-
+archive/issues_003070.json:
+```json
+{
+    "body": "Assignee: boothby\n\nIn https://groups.google.com/group/sage-support/browse_thread/thread/443ce49730b43396 M. Fix reported:\n\n```\nHello-\nI input the following:\n\nsage: s1 = SymmetricGroup(1)\nsage: s = s1.cayley_graph()\nsage: s.vertices()\n[]\n\nShouldn't the set of vertices have one element in it for the\nidentity?  s1 reports this element, but as shown the graph does not.\nI suppose this is trivial, but it seems like it should be fixed at\nsome point.  I am, however, still fairly new to SAGE, and could easily\nbe missing something.  Any thoughts on this? \n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3070\n\n",
+    "created_at": "2008-05-01T05:20:47Z",
+    "labels": [
+        "graph theory",
+        "major",
+        "bug"
+    ],
+    "title": "bug in SymmetricGroup(1).cayley_graph()",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3070",
+    "user": "mabshoff"
+}
+```
 Assignee: boothby
 
 In https://groups.google.com/group/sage-support/browse_thread/thread/443ce49730b43396 M. Fix reported:
@@ -31,15 +41,43 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/3070
+
+
+
+
 
 ---
+
+archive/issue_comments_021191.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-05-01T18:11:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3070",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3070#issuecomment-21191",
+    "user": "rlm"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by rlm created at 2008-05-01 18:13:17
+archive/issue_comments_021192.json:
+```json
+{
+    "body": "Applied to sage-3.0 on my macbook:\n\n\n```\n$ ./sage -t devel/sage/sage/groups/\n... \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 178.3 seconds\n$ ./sage -t devel/sage/sage/graphs\n...\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 217.6 seconds\n```\n",
+    "created_at": "2008-05-01T18:13:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3070",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3070#issuecomment-21192",
+    "user": "rlm"
+}
+```
 
 Applied to sage-3.0 on my macbook:
 
@@ -59,25 +97,58 @@ Total time for all tests: 217.6 seconds
 
 
 
+
 ---
 
-Comment by rlm created at 2008-05-01 18:14:45
+archive/issue_comments_021193.json:
+```json
+{
+    "body": "Conclusion:\n\nThe function `cayley_graph` was unnecessarily complicated.",
+    "created_at": "2008-05-01T18:14:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3070",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3070#issuecomment-21193",
+    "user": "rlm"
+}
+```
 
 Conclusion:
 
 The function `cayley_graph` was unnecessarily complicated.
 
 
+
 ---
 
-Comment by jason created at 2008-05-02 16:07:44
+archive/issue_comments_021194.json:
+```json
+{
+    "body": "the patch looks good to me.  I didn't apply or doctest it, though.",
+    "created_at": "2008-05-02T16:07:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3070",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3070#issuecomment-21194",
+    "user": "jason"
+}
+```
 
 the patch looks good to me.  I didn't apply or doctest it, though.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-02 17:07:35
+archive/issue_comments_021195.json:
+```json
+{
+    "body": "Doctests pass with the patch applied.\n\nCheers,\n\nMichael",
+    "created_at": "2008-05-02T17:07:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3070",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3070#issuecomment-21195",
+    "user": "mabshoff"
+}
+```
 
 Doctests pass with the patch applied.
 
@@ -86,15 +157,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-02 17:07:53
+archive/issue_comments_021196.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-05-02T17:07:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3070",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3070#issuecomment-21196",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-02 17:07:53
+archive/issue_comments_021197.json:
+```json
+{
+    "body": "Merged in Sage 3.0.1.rc0",
+    "created_at": "2008-05-02T17:07:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3070",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3070#issuecomment-21197",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.1.rc0

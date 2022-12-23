@@ -1,42 +1,78 @@
 # Issue 9281: METATICKET - missing spkg-check files / OpenSolaris test results.
 
-Issue created by migration from https://trac.sagemath.org/ticket/9281
-
-Original creator: drkirkby
-
-Original creation time: 2010-06-20 03:42:55
-
+archive/issues_009281.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  jsp leif jpflori jakobkroeker chapoton\n\nThe purposes of this ticket are to \n* Identify what standard packages have an spkg-check file present. At the time the ticket was opened, only 19 packages had spkg-check files out of 98 packages. (Some don't need them, such as where the package just copies a database)\n* Document whether the package builds on OpenSolaris x64\n* Document whether the package passes tests when Sage is built with SAGE_CHECK=\"yes\" on OpenSolaris x64. \n\nThe following lists: \n\n* The standard packages in Sage\n* Whether the package builds on OpenSolaris x64\n* Whether the package has an spkg-check file\n* Test results when running 'make' while SAGE_CHECK=\"yes\" on OpenSolaris x64\n* Notes, with ticket number if needed for resolving test issues.\n\nThe aim of this ticket is not to give details about build issues for the packages. For that, see #9026. The aim is to show what packages have spkg-check files, and collect data on what the results from the tests are. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9281\n\n",
+    "created_at": "2010-06-20T03:42:55Z",
+    "labels": [
+        "spkg-check",
+        "major",
+        "bug"
+    ],
+    "title": "METATICKET - missing spkg-check files / OpenSolaris test results.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9281",
+    "user": "drkirkby"
+}
+```
 Assignee: tbd
 
 CC:  jsp leif jpflori jakobkroeker chapoton
 
 The purposes of this ticket are to 
- * Identify what standard packages have an spkg-check file present. At the time the ticket was opened, only 19 packages had spkg-check files out of 98 packages. (Some don't need them, such as where the package just copies a database)
- * Document whether the package builds on OpenSolaris x64
- * Document whether the package passes tests when Sage is built with SAGE_CHECK="yes" on OpenSolaris x64. 
+* Identify what standard packages have an spkg-check file present. At the time the ticket was opened, only 19 packages had spkg-check files out of 98 packages. (Some don't need them, such as where the package just copies a database)
+* Document whether the package builds on OpenSolaris x64
+* Document whether the package passes tests when Sage is built with SAGE_CHECK="yes" on OpenSolaris x64. 
 
 The following lists: 
 
- * The standard packages in Sage
- * Whether the package builds on OpenSolaris x64
- * Whether the package has an spkg-check file
- * Test results when running 'make' while SAGE_CHECK="yes" on OpenSolaris x64
- * Notes, with ticket number if needed for resolving test issues.
+* The standard packages in Sage
+* Whether the package builds on OpenSolaris x64
+* Whether the package has an spkg-check file
+* Test results when running 'make' while SAGE_CHECK="yes" on OpenSolaris x64
+* Notes, with ticket number if needed for resolving test issues.
 
 The aim of this ticket is not to give details about build issues for the packages. For that, see #9026. The aim is to show what packages have spkg-check files, and collect data on what the results from the tests are. 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/9281
+
+
+
+
 
 ---
 
-Comment by malb created at 2010-07-11 16:18:56
+archive/issue_comments_087424.json:
+```json
+{
+    "body": "NB: It seems to me this ticket would fit better on the wiki since it is essentially a table.",
+    "created_at": "2010-07-11T16:18:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9281",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9281#issuecomment-87424",
+    "user": "malb"
+}
+```
 
 NB: It seems to me this ticket would fit better on the wiki since it is essentially a table.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-07-11 21:32:21
+archive/issue_comments_087425.json:
+```json
+{
+    "body": "Replying to [comment:9 malb]:\n> NB: It seems to me this ticket would fit better on the wiki since it is essentially a table.\n\nHaving it on a ticket seems quite common for this sort of thing. William calls it a 'metaticket'.If it on the Wiki, one can't see when something has been fixed. \n\nDave",
+    "created_at": "2010-07-11T21:32:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9281",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9281#issuecomment-87425",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:9 malb]:
 > NB: It seems to me this ticket would fit better on the wiki since it is essentially a table.
@@ -46,53 +82,108 @@ Having it on a ticket seems quite common for this sort of thing. William calls i
 Dave
 
 
+
 ---
 
-Comment by cremona created at 2010-07-16 16:39:24
+archive/issue_comments_087426.json:
+```json
+{
+    "body": "pari itself has a \"make test-all\" so there is no reason why we should not have a spkg-test in the pari spkg.",
+    "created_at": "2010-07-16T16:39:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9281",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9281#issuecomment-87426",
+    "user": "cremona"
+}
+```
 
 pari itself has a "make test-all" so there is no reason why we should not have a spkg-test in the pari spkg.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-07-16 17:16:31
+archive/issue_comments_087427.json:
+```json
+{
+    "body": "That's now #9281.",
+    "created_at": "2010-07-16T17:16:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9281",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9281#issuecomment-87427",
+    "user": "drkirkby"
+}
+```
 
 That's now #9281.
 
 
+
 ---
 
-Comment by leif created at 2010-07-16 19:10:37
+archive/issue_comments_087428.json:
+```json
+{
+    "body": "I think we should separate the *presence* of `spkg-check` from testsuite results, i.e. create a single platform-independent ticket that lists spkg improvement progress.\n\nIn addition, some packages might do self-tests during build unconditionally, others do not even have a `check` or `test` Make target or some equivalent. This should be recorded, too.\n\n----\n\nI strongly suggest extending `sage-spkg` s.t. Sage *build* failure on *testsuite* errors gets optional, and an option to continue with installation until all packages have been processed, then reporting in summary which packages were tested and which had failures, similar to the doctesting.\n\nMore complicated, but nice, would be to separate testsuite logs from install logs. (`spkg/installed/PKG_NAME` currently at least shows when a self-test was *successfully* performed, but if it failed, the file is of course removed, since this is considered a *build*/installation error.)",
+    "created_at": "2010-07-16T19:10:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9281",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9281#issuecomment-87428",
+    "user": "leif"
+}
+```
 
-I think we should separate the _presence_ of `spkg-check` from testsuite results, i.e. create a single platform-independent ticket that lists spkg improvement progress.
+I think we should separate the *presence* of `spkg-check` from testsuite results, i.e. create a single platform-independent ticket that lists spkg improvement progress.
 
 In addition, some packages might do self-tests during build unconditionally, others do not even have a `check` or `test` Make target or some equivalent. This should be recorded, too.
 
 ----
 
-I strongly suggest extending `sage-spkg` s.t. Sage _build_ failure on _testsuite_ errors gets optional, and an option to continue with installation until all packages have been processed, then reporting in summary which packages were tested and which had failures, similar to the doctesting.
+I strongly suggest extending `sage-spkg` s.t. Sage *build* failure on *testsuite* errors gets optional, and an option to continue with installation until all packages have been processed, then reporting in summary which packages were tested and which had failures, similar to the doctesting.
 
-More complicated, but nice, would be to separate testsuite logs from install logs. (`spkg/installed/PKG_NAME` currently at least shows when a self-test was _successfully_ performed, but if it failed, the file is of course removed, since this is considered a _build_/installation error.)
+More complicated, but nice, would be to separate testsuite logs from install logs. (`spkg/installed/PKG_NAME` currently at least shows when a self-test was *successfully* performed, but if it failed, the file is of course removed, since this is considered a *build*/installation error.)
+
 
 
 ---
 
-Comment by leif created at 2010-07-16 19:26:40
+archive/issue_comments_087429.json:
+```json
+{
+    "body": "Replying to [comment:14 leif]:\n> (`spkg/installed/PKG_NAME` currently at least shows when a self-test was *successfully* performed, but if it failed, the file is of course removed, since this is considered a *build*/installation error.)\n\nOoops, due to a bug in `sage-spkg`, not even this information is kept. (It is echoed into `$BASEDIR/$PKG_NAME`, which is deleted later unless one does e.g. `sage -i -s ...`.)",
+    "created_at": "2010-07-16T19:26:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9281",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9281#issuecomment-87429",
+    "user": "leif"
+}
+```
 
 Replying to [comment:14 leif]:
-> (`spkg/installed/PKG_NAME` currently at least shows when a self-test was _successfully_ performed, but if it failed, the file is of course removed, since this is considered a _build_/installation error.)
+> (`spkg/installed/PKG_NAME` currently at least shows when a self-test was *successfully* performed, but if it failed, the file is of course removed, since this is considered a *build*/installation error.)
 
 Ooops, due to a bug in `sage-spkg`, not even this information is kept. (It is echoed into `$BASEDIR/$PKG_NAME`, which is deleted later unless one does e.g. `sage -i -s ...`.)
 
 
+
 ---
 
-Comment by drkirkby created at 2010-07-16 21:36:48
+archive/issue_comments_087430.json:
+```json
+{
+    "body": "Replying to [comment:14 leif]:\n> I think we should separate the *presence* of `spkg-check` from testsuite results, i.e. create a single platform-independent ticket that lists spkg improvement progress.\n\nFeel free. I would not argue with that. Either copy my list, or generate it yourself - all I did was list the packages in `$SAGE_ROOT/spkg/standard` and use an *awk* script to generate the table. I guess if you were clever, you could get the script to automatically put \"Yes\" or \"No\", depending on whether there was an spkg-check file present! I just did that bit manually. \n\nI just created this ticket, as a way to keep trac of the OpenSolaris issues. However, in order to have any sensible idea of progress on OpenSolaris, I needed to have a record of what packages had no self-checks. \n\n> In addition, some packages might do self-tests during build unconditionally, others do not even have a `check` or `test` Make target or some equivalent. This should be recorded, too.\n\nI seriously think we should consider running the self-tests unconditionally on packages where this takes very little time. Some packages take less than 10 seconds to run the self-tests. I think any package where the self-test take less than 30 or perhaps 60 s on sage.math, should have the self-tests run unconditionally. I posted this as a suggestion on sage-devel, but it got no response - there does not seem to be a huge appetite for testing Sage. I think there is less than a dozen people who really seem to put much effort into improving the testing of Sage. \n\n> I strongly suggest extending `sage-spkg` s.t. Sage *build* failure on *testsuite* errors gets optional, and an option to continue with installation until all packages have been processed, then reporting in summary which packages were tested and which had failures, similar to the doctesting.\n\nYes, that sounds logical. If you know something builds, you can run ` make -k` I guess, and continue past errors when testing. \n\n> More complicated, but nice, would be to separate testsuite logs from install logs. \n\nI would have thought that easier than producing a summary myself. I don't believe that can be rocket science.",
+    "created_at": "2010-07-16T21:36:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9281",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9281#issuecomment-87430",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:14 leif]:
-> I think we should separate the _presence_ of `spkg-check` from testsuite results, i.e. create a single platform-independent ticket that lists spkg improvement progress.
+> I think we should separate the *presence* of `spkg-check` from testsuite results, i.e. create a single platform-independent ticket that lists spkg improvement progress.
 
-Feel free. I would not argue with that. Either copy my list, or generate it yourself - all I did was list the packages in `$SAGE_ROOT/spkg/standard` and use an _awk_ script to generate the table. I guess if you were clever, you could get the script to automatically put "Yes" or "No", depending on whether there was an spkg-check file present! I just did that bit manually. 
+Feel free. I would not argue with that. Either copy my list, or generate it yourself - all I did was list the packages in `$SAGE_ROOT/spkg/standard` and use an *awk* script to generate the table. I guess if you were clever, you could get the script to automatically put "Yes" or "No", depending on whether there was an spkg-check file present! I just did that bit manually. 
 
 I just created this ticket, as a way to keep trac of the OpenSolaris issues. However, in order to have any sensible idea of progress on OpenSolaris, I needed to have a record of what packages had no self-checks. 
 
@@ -100,7 +191,7 @@ I just created this ticket, as a way to keep trac of the OpenSolaris issues. How
 
 I seriously think we should consider running the self-tests unconditionally on packages where this takes very little time. Some packages take less than 10 seconds to run the self-tests. I think any package where the self-test take less than 30 or perhaps 60 s on sage.math, should have the self-tests run unconditionally. I posted this as a suggestion on sage-devel, but it got no response - there does not seem to be a huge appetite for testing Sage. I think there is less than a dozen people who really seem to put much effort into improving the testing of Sage. 
 
-> I strongly suggest extending `sage-spkg` s.t. Sage _build_ failure on _testsuite_ errors gets optional, and an option to continue with installation until all packages have been processed, then reporting in summary which packages were tested and which had failures, similar to the doctesting.
+> I strongly suggest extending `sage-spkg` s.t. Sage *build* failure on *testsuite* errors gets optional, and an option to continue with installation until all packages have been processed, then reporting in summary which packages were tested and which had failures, similar to the doctesting.
 
 Yes, that sounds logical. If you know something builds, you can run ` make -k` I guess, and continue past errors when testing. 
 
@@ -109,16 +200,38 @@ Yes, that sounds logical. If you know something builds, you can run ` make -k` I
 I would have thought that easier than producing a summary myself. I don't believe that can be rocket science.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-07-16 21:40:26
+archive/issue_comments_087431.json:
+```json
+{
+    "body": "Changing assignee from tbd to drkirkby.",
+    "created_at": "2010-07-16T21:40:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9281",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9281#issuecomment-87431",
+    "user": "drkirkby"
+}
+```
 
 Changing assignee from tbd to drkirkby.
 
 
+
 ---
 
-Comment by leif created at 2010-07-16 23:38:56
+archive/issue_comments_087432.json:
+```json
+{
+    "body": "Replying to [comment:16 drkirkby]:\n> Replying to [comment:14 leif]:\n> > In addition, some packages might do self-tests during build unconditionally, others do not even have a `check` or `test` Make target or some equivalent. This should be recorded, too.\n\nI meant tests unconditionally performed by upstream (i.e. implicitly, without \"make check\" or alike).\n\n> > I strongly suggest extending `sage-spkg` s.t. Sage *build* failure on *testsuite* errors gets optional, and an option to continue with installation until all packages have been processed, then reporting in summary which packages were tested and which had failures, similar to the doctesting.\n> \n> Yes, that sounds logical. If you know something builds, you can run ` make -k` I guess, and continue past errors when testing.\n\n;-) `sage-spkg` currently treats testsuite failures as build errors, so `make -k` would not get (much) further if other packages depend on the \"failed\" ones; rerunning `make` just *deletes* their previous builds, *again unpacks* these packages and starts *rebuilding them from scratch*(!) - again \"failing\", unless one **manually** touches `spkg/installed/$PKG_NAME`, which `sage-spkg` just has deleted...\n \n> > More complicated, but nice, would be to separate testsuite logs from install logs. \n> \n> I would have thought that easier than producing a summary myself. I don't believe that can be rocket science. \n\nIt's not rocket science (if you consider that complicated), but Sage's current build process is rather unsuited for such. Though one could of course *post*-process the spkg install logs, where also testsuite output ends up.\n\nIn contrast, \"ignoring\" testsuite failures (even if `SAGE_CHECK=yes`) and printing a summary report is almost trivial, the biggest \"problem\" being choosing new appropriate environment variable names or extending the \"range\" of existing ones with additional values (like `SAGE_CHECK_KEEP_GOING=yes` vs. `SAGE_CHECK=keepgoing`; `SAGE_CHECK=ignore` e.g. would be rather ambiguous, and we unfortunately have to keep some backwards compatibility).",
+    "created_at": "2010-07-16T23:38:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9281",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9281#issuecomment-87432",
+    "user": "leif"
+}
+```
 
 Replying to [comment:16 drkirkby]:
 > Replying to [comment:14 leif]:
@@ -126,24 +239,35 @@ Replying to [comment:16 drkirkby]:
 
 I meant tests unconditionally performed by upstream (i.e. implicitly, without "make check" or alike).
 
-> > I strongly suggest extending `sage-spkg` s.t. Sage _build_ failure on _testsuite_ errors gets optional, and an option to continue with installation until all packages have been processed, then reporting in summary which packages were tested and which had failures, similar to the doctesting.
+> > I strongly suggest extending `sage-spkg` s.t. Sage *build* failure on *testsuite* errors gets optional, and an option to continue with installation until all packages have been processed, then reporting in summary which packages were tested and which had failures, similar to the doctesting.
 > 
 > Yes, that sounds logical. If you know something builds, you can run ` make -k` I guess, and continue past errors when testing.
 
-;-) `sage-spkg` currently treats testsuite failures as build errors, so `make -k` would not get (much) further if other packages depend on the "failed" ones; rerunning `make` just _deletes_ their previous builds, _again unpacks_ these packages and starts _rebuilding them from scratch_(!) - again "failing", unless one *manually* touches `spkg/installed/$PKG_NAME`, which `sage-spkg` just has deleted...
+;-) `sage-spkg` currently treats testsuite failures as build errors, so `make -k` would not get (much) further if other packages depend on the "failed" ones; rerunning `make` just *deletes* their previous builds, *again unpacks* these packages and starts *rebuilding them from scratch*(!) - again "failing", unless one **manually** touches `spkg/installed/$PKG_NAME`, which `sage-spkg` just has deleted...
  
 > > More complicated, but nice, would be to separate testsuite logs from install logs. 
 > 
 > I would have thought that easier than producing a summary myself. I don't believe that can be rocket science. 
 
-It's not rocket science (if you consider that complicated), but Sage's current build process is rather unsuited for such. Though one could of course _post_-process the spkg install logs, where also testsuite output ends up.
+It's not rocket science (if you consider that complicated), but Sage's current build process is rather unsuited for such. Though one could of course *post*-process the spkg install logs, where also testsuite output ends up.
 
 In contrast, "ignoring" testsuite failures (even if `SAGE_CHECK=yes`) and printing a summary report is almost trivial, the biggest "problem" being choosing new appropriate environment variable names or extending the "range" of existing ones with additional values (like `SAGE_CHECK_KEEP_GOING=yes` vs. `SAGE_CHECK=keepgoing`; `SAGE_CHECK=ignore` e.g. would be rather ambiguous, and we unfortunately have to keep some backwards compatibility).
 
 
+
 ---
 
-Comment by drkirkby created at 2010-07-16 23:59:26
+archive/issue_comments_087433.json:
+```json
+{
+    "body": "Replying to [comment:18 leif]:\n> In contrast, \"ignoring\" testsuite failures (even if `SAGE_CHECK=yes`) and printing a summary report is almost trivial, the biggest \"problem\" being choosing new appropriate environment variable names or extending the \"range\" of existing ones with additional values (like `SAGE_CHECK_KEEP_GOING=yes` vs. `SAGE_CHECK=keepgoing`; `SAGE_CHECK=ignore` e.g. would be rather ambiguous, and we unfortunately have to keep some backwards compatibility).\n> \n\nIf it's trivial, then go for it - make a patch. Personally I think\n\n* `SAGE_CHECK=yes` (Same behavior as now, but issued a depreciated warning.)\n* `SAGE_CHECK=abort_on_failure`\n* `SAGE_CHECK=ignore_failures`",
+    "created_at": "2010-07-16T23:59:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9281",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9281#issuecomment-87433",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:18 leif]:
 > In contrast, "ignoring" testsuite failures (even if `SAGE_CHECK=yes`) and printing a summary report is almost trivial, the biggest "problem" being choosing new appropriate environment variable names or extending the "range" of existing ones with additional values (like `SAGE_CHECK_KEEP_GOING=yes` vs. `SAGE_CHECK=keepgoing`; `SAGE_CHECK=ignore` e.g. would be rather ambiguous, and we unfortunately have to keep some backwards compatibility).
@@ -151,14 +275,25 @@ Replying to [comment:18 leif]:
 
 If it's trivial, then go for it - make a patch. Personally I think
 
- * `SAGE_CHECK=yes` (Same behavior as now, but issued a depreciated warning.)
- * `SAGE_CHECK=abort_on_failure`
- * `SAGE_CHECK=ignore_failures`
+* `SAGE_CHECK=yes` (Same behavior as now, but issued a depreciated warning.)
+* `SAGE_CHECK=abort_on_failure`
+* `SAGE_CHECK=ignore_failures`
+
 
 
 ---
 
-Comment by leif created at 2010-07-17 00:35:47
+archive/issue_comments_087434.json:
+```json
+{
+    "body": "Replying to [comment:19 drkirkby]:\n> If it's trivial, then go for it - make a patch.\nThe biggest problem more or less unpredictable (and embarrassing) interference with other tickets... ;-)\n\nBut I'll do.\n\n> Personally I think:\n* `SAGE_CHECK=yes` (Same behavior as now, but issued a depreciated warning.)\n* `SAGE_CHECK=abort_on_failure`\n* `SAGE_CHECK=ignore_failures`\n \nI'd suggest:\n* `SAGE_CHECK=yes` - yes, deprecation warning, equivalent to `abort_on_failure` I think\n* `SAGE_CHECK=abort_on_failure` - immediate build error\n* `SAGE_CHECK=keep_going` - treat them as (build) errors, but try finishing the build first\n* `SAGE_CHECK=ignore_failures` - really ignore, just give warnings, report *build* success\n* `SAGE_CHECK=no` - do not run testsuites at all (same as empty or unset?)",
+    "created_at": "2010-07-17T00:35:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9281",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9281#issuecomment-87434",
+    "user": "leif"
+}
+```
 
 Replying to [comment:19 drkirkby]:
 > If it's trivial, then go for it - make a patch.
@@ -167,24 +302,35 @@ The biggest problem more or less unpredictable (and embarrassing) interference w
 But I'll do.
 
 > Personally I think:
- * `SAGE_CHECK=yes` (Same behavior as now, but issued a depreciated warning.)
- * `SAGE_CHECK=abort_on_failure`
- * `SAGE_CHECK=ignore_failures`
+* `SAGE_CHECK=yes` (Same behavior as now, but issued a depreciated warning.)
+* `SAGE_CHECK=abort_on_failure`
+* `SAGE_CHECK=ignore_failures`
  
 I'd suggest:
- * `SAGE_CHECK=yes` - yes, deprecation warning, equivalent to `abort_on_failure` I think
- * `SAGE_CHECK=abort_on_failure` - immediate build error
- * `SAGE_CHECK=keep_going` - treat them as (build) errors, but try finishing the build first
- * `SAGE_CHECK=ignore_failures` - really ignore, just give warnings, report _build_ success
- * `SAGE_CHECK=no` - do not run testsuites at all (same as empty or unset?)
+* `SAGE_CHECK=yes` - yes, deprecation warning, equivalent to `abort_on_failure` I think
+* `SAGE_CHECK=abort_on_failure` - immediate build error
+* `SAGE_CHECK=keep_going` - treat them as (build) errors, but try finishing the build first
+* `SAGE_CHECK=ignore_failures` - really ignore, just give warnings, report *build* success
+* `SAGE_CHECK=no` - do not run testsuites at all (same as empty or unset?)
+
 
 
 ---
 
-Comment by drkirkby created at 2010-07-17 19:48:35
+archive/issue_comments_087435.json:
+```json
+{
+    "body": "Replying to [comment:14 leif]:\n> I think we should separate the *presence* of `spkg-check` from testsuite results, i.e. create a single platform-independent ticket that lists spkg improvement progress.\n\nI thought about this some more. I can't see what is wrong with using this ticket to have a simple yes/no whether the package has a `spkg-check` file. If not, just provide a trac number to where that particular spkg-check file is being discussed. For gsl for instance, we have \n\n\"Yes, but broken #9531\"\n\nSo people interested know that more details of the issue can be found at #9531.  \n\nIf you feel the need to have longer comments, or more columns devoted to the status of `spkg-check` then another ticket would be better. \n\nWhen you look at the `spkg-install` and `spkg-check` it is worrying how many simple ignore errors. Sometimes they get reported, but don't exit with 1. Other times they are just ignored. \n\nDave",
+    "created_at": "2010-07-17T19:48:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9281",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9281#issuecomment-87435",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:14 leif]:
-> I think we should separate the _presence_ of `spkg-check` from testsuite results, i.e. create a single platform-independent ticket that lists spkg improvement progress.
+> I think we should separate the *presence* of `spkg-check` from testsuite results, i.e. create a single platform-independent ticket that lists spkg improvement progress.
 
 I thought about this some more. I can't see what is wrong with using this ticket to have a simple yes/no whether the package has a `spkg-check` file. If not, just provide a trac number to where that particular spkg-check file is being discussed. For gsl for instance, we have 
 
@@ -199,17 +345,28 @@ When you look at the `spkg-install` and `spkg-check` it is worrying how many sim
 Dave
 
 
+
 ---
 
-Comment by leif created at 2010-07-17 20:14:28
+archive/issue_comments_087436.json:
+```json
+{
+    "body": "Replying to [comment:27 drkirkby]:\n> Replying to [comment:14 leif]:\n> > I think we should separate the *presence* of `spkg-check` from testsuite results, i.e. create a single platform-independent ticket that lists spkg improvement progress.\n> \n> I thought about this some more. I can't see what is wrong with using this ticket to have a simple yes/no whether the package has a `spkg-check` file.\n\nNo, you misunderstood me. There's nothing wrong with your ticket, I just thought we should *in addition* collect spkg information, e.g. on another ticket. I haven't opened a new one yet, though what you collected so far is already worth stealing.\n\n\n> When you look at the `spkg-install` and `spkg-check` it is worrying how many simple ignore errors. Sometimes they get reported, but don't exit with 1. Other times they are just ignored. \n\nIf it was only the spkgs' scripts... ;-)\n\n-Leif",
+    "created_at": "2010-07-17T20:14:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9281",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9281#issuecomment-87436",
+    "user": "leif"
+}
+```
 
 Replying to [comment:27 drkirkby]:
 > Replying to [comment:14 leif]:
-> > I think we should separate the _presence_ of `spkg-check` from testsuite results, i.e. create a single platform-independent ticket that lists spkg improvement progress.
+> > I think we should separate the *presence* of `spkg-check` from testsuite results, i.e. create a single platform-independent ticket that lists spkg improvement progress.
 > 
 > I thought about this some more. I can't see what is wrong with using this ticket to have a simple yes/no whether the package has a `spkg-check` file.
 
-No, you misunderstood me. There's nothing wrong with your ticket, I just thought we should _in addition_ collect spkg information, e.g. on another ticket. I haven't opened a new one yet, though what you collected so far is already worth stealing.
+No, you misunderstood me. There's nothing wrong with your ticket, I just thought we should *in addition* collect spkg information, e.g. on another ticket. I haven't opened a new one yet, though what you collected so far is already worth stealing.
 
 
 > When you look at the `spkg-install` and `spkg-check` it is worrying how many simple ignore errors. Sometimes they get reported, but don't exit with 1. Other times they are just ignored. 
@@ -219,29 +376,73 @@ If it was only the spkgs' scripts... ;-)
 -Leif
 
 
+
 ---
 
-Comment by mkoeppe created at 2020-04-01 14:09:06
+archive/issue_comments_087437.json:
+```json
+{
+    "body": "Should be closed as outdated.",
+    "created_at": "2020-04-01T14:09:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9281",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9281#issuecomment-87437",
+    "user": "mkoeppe"
+}
+```
 
 Should be closed as outdated.
 
 
+
 ---
 
-Comment by mkoeppe created at 2020-04-01 14:09:06
+archive/issue_comments_087438.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2020-04-01T14:09:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9281",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9281#issuecomment-87438",
+    "user": "mkoeppe"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by chapoton created at 2020-04-01 14:22:15
+archive/issue_comments_087439.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2020-04-01T14:22:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9281",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9281#issuecomment-87439",
+    "user": "chapoton"
+}
+```
 
 Resolution: invalid
 
 
+
 ---
 
-Comment by chapoton created at 2020-04-01 14:22:15
+archive/issue_comments_087440.json:
+```json
+{
+    "body": "ok, agreed.",
+    "created_at": "2020-04-01T14:22:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9281",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9281#issuecomment-87440",
+    "user": "chapoton"
+}
+```
 
 ok, agreed.

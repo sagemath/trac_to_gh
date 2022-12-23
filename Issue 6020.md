@@ -1,11 +1,21 @@
 # Issue 6020: bug in delta_qexp over finite fields
 
-Issue created by migration from https://trac.sagemath.org/ticket/6020
-
-Original creator: AlexGhitza
-
-Original creation time: 2009-05-11 12:08:47
-
+archive/issues_006020.json:
+```json
+{
+    "body": "Assignee: craigcitro\n\nKeywords: delta q-expansion finite field\n\nThis is in sage-3.4.2:\n\n\n```\nsage: delta_qexp(K=GF(5))\nTypeError                                 Traceback (most recent call last)\n...\nTypeError: unable to coerce <type 'sage.libs.ntl.ntl_ZZX.ntl_ZZX'> to an integer\n```\n\n\nI don't have time to investigate this right now, but it might be a similar issue as #5102.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6020\n\n",
+    "created_at": "2009-05-11T12:08:47Z",
+    "labels": [
+        "modular forms",
+        "major",
+        "bug"
+    ],
+    "title": "bug in delta_qexp over finite fields",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6020",
+    "user": "AlexGhitza"
+}
+```
 Assignee: craigcitro
 
 Keywords: delta q-expansion finite field
@@ -24,24 +34,63 @@ TypeError: unable to coerce <type 'sage.libs.ntl.ntl_ZZX.ntl_ZZX'> to an integer
 I don't have time to investigate this right now, but it might be a similar issue as #5102.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6020
+
+
+
+
 
 ---
+
+archive/issue_comments_047927.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-05-11T17:00:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6020",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6020#issuecomment-47927",
+    "user": "craigcitro"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by craigcitro created at 2009-05-11 17:03:42
+archive/issue_comments_047928.json:
+```json
+{
+    "body": "Okay, I've attached a patch. The issue is that we can't coerce from NTL into a finite field.\n\nThis patch isn't anything too clever -- I just do the naive thing and work over the base ring from the start instead of using NTL. It runs at the same speed for `100000` terms, and only loses about `3%` performance at `1000000`, so this should definitely do the job. I'm happy to come back and either unify these (maybe we don't need to manually use NTL anymore?) or do some additional work to speed it up in the finite field case later on.",
+    "created_at": "2009-05-11T17:03:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6020",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6020#issuecomment-47928",
+    "user": "craigcitro"
+}
+```
 
 Okay, I've attached a patch. The issue is that we can't coerce from NTL into a finite field.
 
 This patch isn't anything too clever -- I just do the naive thing and work over the base ring from the start instead of using NTL. It runs at the same speed for `100000` terms, and only loses about `3%` performance at `1000000`, so this should definitely do the job. I'm happy to come back and either unify these (maybe we don't need to manually use NTL anymore?) or do some additional work to speed it up in the finite field case later on.
 
 
+
 ---
 
-Comment by was created at 2009-05-12 06:55:14
+archive/issue_comments_047929.json:
+```json
+{
+    "body": "Wait a minute:  \nChanging \n\n```\n if K is ZZ:\n```\n\nto\n\n```\n if False and K is ZZ:\n```\n\nresults in code that is way *faster*!  That's because FLINT kick's NTL's ass, and FLINT is the default for poly's over ZZ now.  Just get rid of the flint implementation.\n\nWith NTL (on my OS X laptop):\n\n```\nsage: time b = delta_qexp(50000)\nCPU times: user 0.44 s, sys: 0.00 s, total: 0.44 s\nWall time: 0.44 s\nsage: time b = delta_qexp(100000)\nCPU times: user 1.07 s, sys: 0.07 s, total: 1.14 s\nWall time: 1.14 s\nsage: time b = delta_qexp(200000)\nCPU times: user 2.65 s, sys: 0.06 s, total: 2.71 s\nWall time: 2.72 s\n```\n\n\nWith the \"False\" as above inserted, so FLINT gets used:\n\n```\nsage: time b = delta_qexp(50000)\nCPU times: user 0.21 s, sys: 0.08 s, total: 0.29 s\nWall time: 0.30 s\nsage: time b = delta_qexp(100000)\nCPU times: user 0.58 s, sys: 0.12 s, total: 0.70 s\nWall time: 0.70 s\nsage: time b = delta_qexp(200000)\nCPU times: user 1.35 s, sys: 0.33 s, total: 1.68 s\nWall time: 1.68 s\n```\n",
+    "created_at": "2009-05-12T06:55:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6020",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6020#issuecomment-47929",
+    "user": "was"
+}
+```
 
 Wait a minute:  
 Changing 
@@ -89,9 +138,20 @@ Wall time: 1.68 s
 
 
 
+
 ---
 
-Comment by craigcitro created at 2009-05-12 07:22:17
+archive/issue_comments_047930.json:
+```json
+{
+    "body": "This is pretty interesting: I get entirely different timings on my laptop, which is why I didn't remove the NTL code. I wonder if something funky went on with my FLINT compilation?\n\nThe `NTL` version:\n\n\n```\nsage: time b = delta_qexp(50000)\nCPU times: user 0.50 s, sys: 0.02 s, total: 0.52 s\nWall time: 0.53 s\n\nsage: time b = delta_qexp(100000)\nCPU times: user 1.04 s, sys: 0.04 s, total: 1.08 s\nWall time: 1.15 s\n\nsage: time b = delta_qexp(200000)\nCPU times: user 2.08 s, sys: 0.09 s, total: 2.18 s\nWall time: 2.20 s\n```\n\n\nThe `FLINT` version:\n\n\n```\nsage: time b = delta_qexp(50000)\nCPU times: user 1.01 s, sys: 0.35 s, total: 1.36 s\nWall time: 1.37 s\n\nsage: time b = delta_qexp(100000)\nCPU times: user 2.08 s, sys: 0.70 s, total: 2.78 s\nWall time: 2.81 s\n\nsage: time b = delta_qexp(200000)\nCPU times: user 4.34 s, sys: 1.46 s, total: 5.80 s\nWall time: 5.88 s\n```\n\n\nThat seems really weird ... I'm going to try looking at this tomorrow when I'm sitting next to you. This is kinda weird; I'd like to do some random timing comparisons.",
+    "created_at": "2009-05-12T07:22:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6020",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6020#issuecomment-47930",
+    "user": "craigcitro"
+}
+```
 
 This is pretty interesting: I get entirely different timings on my laptop, which is why I didn't remove the NTL code. I wonder if something funky went on with my FLINT compilation?
 
@@ -134,9 +194,20 @@ Wall time: 5.88 s
 That seems really weird ... I'm going to try looking at this tomorrow when I'm sitting next to you. This is kinda weird; I'd like to do some random timing comparisons.
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-05-12 09:20:15
+archive/issue_comments_047931.json:
+```json
+{
+    "body": "On my 32-bit Linux laptop, I get these timings:\n\nWith NTL:\n\n\n```\nsage: sage: time b = delta_qexp(50000)\nCPU times: user 0.95 s, sys: 0.04 s, total: 0.99 s\nWall time: 1.01 s\nsage: sage: time b = delta_qexp(100000)\nCPU times: user 2.03 s, sys: 0.04 s, total: 2.06 s\nWall time: 2.08 s\nsage: sage: time b = delta_qexp(200000)\nCPU times: user 4.46 s, sys: 0.13 s, total: 4.59 s\nWall time: 4.91 s\n```\n\n\nWith FLINT, i.e. with the \"if False\" hack:\n\n\n```\nsage: sage: time b = delta_qexp(50000)\nCPU times: user 0.76 s, sys: 0.07 s, total: 0.83 s\nWall time: 0.85 s\nsage: sage: time b = delta_qexp(100000)\nCPU times: user 1.62 s, sys: 0.16 s, total: 1.78 s\nWall time: 1.79 s\nsage: sage: time b = delta_qexp(200000)\nCPU times: user 3.50 s, sys: 0.40 s, total: 3.91 s\nWall time: 4.03 s\n```\n\n\nSo FLINT is faster for me (but not by so much as for William).",
+    "created_at": "2009-05-12T09:20:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6020",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6020#issuecomment-47931",
+    "user": "davidloeffler"
+}
+```
 
 On my 32-bit Linux laptop, I get these timings:
 
@@ -175,9 +246,20 @@ Wall time: 4.03 s
 So FLINT is faster for me (but not by so much as for William).
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-14 05:27:10
+archive/issue_comments_047932.json:
+```json
+{
+    "body": "What is the status here?\n\nCheers,\n\nMichael",
+    "created_at": "2009-05-14T05:27:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6020",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6020#issuecomment-47932",
+    "user": "mabshoff"
+}
+```
 
 What is the status here?
 
@@ -186,20 +268,42 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by craigcitro created at 2009-05-14 05:56:54
+archive/issue_comments_047933.json:
+```json
+{
+    "body": "I'm going to fix this soon, at SD15 if not before. (Me giving three talks during SD15 may prevent it from happening before.)\n\nHere's the status, though: we've discovered that on 64-bit OSX and on `sage.math`, it's much faster to just call the naive code (the `else` clause in the patch above. However, it's **slower** on 32-bit OSX. So I looked at the code a little more, and we're spending a fair amount of time doing silly things (coercion, poor use of truncation, etc.). So I'm going to make a new ticket with some fixes/additions to the polynomial code, and then rewrite this patch to use these improvements. I suspect that it'll beat the old code on all architectures in that case (I'm basing this on some rough timings on my laptop), in which case we're all set.\n\nI'm changing the status to something slightly snarky to summarize the above. :)",
+    "created_at": "2009-05-14T05:56:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6020",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6020#issuecomment-47933",
+    "user": "craigcitro"
+}
+```
 
 I'm going to fix this soon, at SD15 if not before. (Me giving three talks during SD15 may prevent it from happening before.)
 
-Here's the status, though: we've discovered that on 64-bit OSX and on `sage.math`, it's much faster to just call the naive code (the `else` clause in the patch above. However, it's *slower* on 32-bit OSX. So I looked at the code a little more, and we're spending a fair amount of time doing silly things (coercion, poor use of truncation, etc.). So I'm going to make a new ticket with some fixes/additions to the polynomial code, and then rewrite this patch to use these improvements. I suspect that it'll beat the old code on all architectures in that case (I'm basing this on some rough timings on my laptop), in which case we're all set.
+Here's the status, though: we've discovered that on 64-bit OSX and on `sage.math`, it's much faster to just call the naive code (the `else` clause in the patch above. However, it's **slower** on 32-bit OSX. So I looked at the code a little more, and we're spending a fair amount of time doing silly things (coercion, poor use of truncation, etc.). So I'm going to make a new ticket with some fixes/additions to the polynomial code, and then rewrite this patch to use these improvements. I suspect that it'll beat the old code on all architectures in that case (I'm basing this on some rough timings on my laptop), in which case we're all set.
 
 I'm changing the status to something slightly snarky to summarize the above. :)
 
 
+
 ---
 
-Comment by mraum created at 2010-04-09 17:11:10
+archive/issue_comments_047934.json:
+```json
+{
+    "body": "As I said #6671 I merge this with the new code given there. I did some timings and the result is clear: Coercion into the new ring after using FLINT is fast.\nTimeing:\n\n```\nsage: P = PowerSeriesRing(GF(7), 'q')\nsage: from sage.modular.modform.vm_basis import _delta_poly\n\nsage: %timeit P(_delta_poly(50).list(), check = True)\n625 loops, best of 3: 407 \u00b5s per loop\nsage: %timeit _delta_poly(50, GF(7))\n625 loops, best of 3: 1.41 ms per loop\n\nsage: %timeit P(_delta_poly(10**5).list(), check = True)\n5 loops, best of 3: 620 ms per loop\nsage: %timeit _delta_poly(10**5, GF(7))\n5 loops, best of 3: 1.62 s per loop\n\nsage: %timeit h = P(_delta_poly(10**6).list(), check = True)\n5 loops, best of 3: 7.98 s per loop\nsage: %timeit h =_delta_poly(10**6, GF(7))\n5 loops, best of 3: 16.9 s per loop\n\n```\n\n\nI conclude that it is better to wait for Craig's new code. If nobody is opposed I will asked the current release manager (I think it's Minh) to make this as closed (since it is fixed by #6671).",
+    "created_at": "2010-04-09T17:11:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6020",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6020#issuecomment-47934",
+    "user": "mraum"
+}
+```
 
 As I said #6671 I merge this with the new code given there. I did some timings and the result is clear: Coercion into the new ring after using FLINT is fast.
 Timeing:
@@ -229,29 +333,73 @@ sage: %timeit h =_delta_poly(10**6, GF(7))
 I conclude that it is better to wait for Craig's new code. If nobody is opposed I will asked the current release manager (I think it's Minh) to make this as closed (since it is fixed by #6671).
 
 
+
 ---
 
-Comment by davidloeffler created at 2010-04-12 14:10:52
+archive/issue_comments_047935.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-04-12T14:10:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6020",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6020#issuecomment-47935",
+    "user": "davidloeffler"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by davidloeffler created at 2010-04-12 14:11:05
+archive/issue_comments_047936.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-04-12T14:11:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6020",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6020#issuecomment-47936",
+    "user": "davidloeffler"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-15 05:56:20
+archive/issue_comments_047937.json:
+```json
+{
+    "body": "Resolution: worksforme",
+    "created_at": "2010-04-15T05:56:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6020",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6020#issuecomment-47937",
+    "user": "jhpalmieri"
+}
+```
 
 Resolution: worksforme
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-15 05:56:20
+archive/issue_comments_047938.json:
+```json
+{
+    "body": "Closed as requested (fixed by #6671).",
+    "created_at": "2010-04-15T05:56:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6020",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6020#issuecomment-47938",
+    "user": "jhpalmieri"
+}
+```
 
 Closed as requested (fixed by #6671).

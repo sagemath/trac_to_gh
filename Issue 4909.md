@@ -1,29 +1,80 @@
 # Issue 4909: convert sage.dsage.* docstrings to Sphinx
 
-Issue created by migration from https://trac.sagemath.org/ticket/4909
-
-Original creator: mhansen
-
-Original creation time: 2009-01-01 22:50:29
-
+archive/issues_004909.json:
+```json
+{
+    "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4909\n\n",
+    "created_at": "2009-01-01T22:50:29Z",
+    "labels": [
+        "documentation",
+        "major",
+        "bug"
+    ],
+    "title": "convert sage.dsage.* docstrings to Sphinx",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4909",
+    "user": "mhansen"
+}
+```
 Assignee: tba
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4909
+
+
+
+
 
 ---
+
+archive/issue_comments_037256.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-01-02T02:25:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4909",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4909#issuecomment-37256",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_037257.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-02-21T19:17:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4909",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4909#issuecomment-37257",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by hivert created at 2009-02-24 17:42:44
+archive/issue_comments_037258.json:
+```json
+{
+    "body": "A little problem:\n\n```\nNote that configuration files will be stored in the  \n    directory \\code{\\$DOT\\_SAGE/dsage}.\n```\n\nIs replaced now by\n\n```\nNote that configuration files will be stored in the directory \n``$DOT \nSage/dsage``. \n```\n \nthe \"_\" must be kept. \n\nOtherwise this is correct. \n\nCheers,\n\nFlorent",
+    "created_at": "2009-02-24T17:42:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4909",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4909#issuecomment-37258",
+    "user": "hivert"
+}
+```
 
 A little problem:
 
@@ -38,7 +89,8 @@ Is replaced now by
 Note that configuration files will be stored in the directory 
 ``$DOT 
 Sage/dsage``. 
-}}} 
+```
+ 
 the "_" must be kept. 
 
 Otherwise this is correct. 
@@ -48,9 +100,20 @@ Cheers,
 Florent
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-24 18:33:39
+archive/issue_comments_037259.json:
+```json
+{
+    "body": "Merged in Sage 3.4.alpha0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-24T18:33:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4909",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4909#issuecomment-37259",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.4.alpha0.
 
@@ -59,8 +122,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-24 18:33:39
+archive/issue_comments_037260.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-02-24T18:33:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4909",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4909#issuecomment-37260",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

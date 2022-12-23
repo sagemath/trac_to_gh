@@ -1,11 +1,21 @@
 # Issue 7024: Flint ignores CC and CXX.
 
-Issue created by migration from https://trac.sagemath.org/ticket/7024
-
-Original creator: drkirkby
-
-Original creation time: 2009-09-27 10:57:28
-
+archive/issues_007024.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  jpflori\n\nFlitn 1.3.0.p2 is one of several programs which ignores the settings of CC and CXX and users a gcc and g++ that it finds. \n\n\n\n```\n\nflint-1.3.0.p2/src/profiler.h\nflint-1.3.0.p2/src/mpn_extras-test.c\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS swan 5.10 Generic_139555-08 sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\n/opt/xxxsunstudio12.1/bin/cc -v\nusage: cc [ options] files.  Use 'cc -flags' for details\n****************************************************\nFound gcc 4 or later\nTurning off loop unrolling on Solaris/Sparc\nmake[2]: Entering directory `/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/spkg/build/flint-1.3.0.p2/src'\ngcc -std=c99 -I/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/local/include/ -I/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/local/include  -fPIC  -O2  -DNDEBUG -o zn_mod.o -c zn_poly/src/zn_mod.c\n```\n\n\nThis needs fixing to add support for the Sun Studio compilers.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7024\n\n",
+    "created_at": "2009-09-27T10:57:28Z",
+    "labels": [
+        "build",
+        "major",
+        "bug"
+    ],
+    "title": "Flint ignores CC and CXX.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7024",
+    "user": "drkirkby"
+}
+```
 Assignee: tbd
 
 CC:  jpflori
@@ -38,17 +48,43 @@ gcc -std=c99 -I/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/local/include/
 
 This needs fixing to add support for the Sun Studio compilers.
 
+Issue created by migration from https://trac.sagemath.org/ticket/7024
+
+
+
+
 
 ---
 
-Comment by mvngu created at 2009-09-27 11:09:16
+archive/issue_comments_058166.json:
+```json
+{
+    "body": "See ticket #6919 for an updated FLINT spkg.",
+    "created_at": "2009-09-27T11:09:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7024",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7024#issuecomment-58166",
+    "user": "mvngu"
+}
+```
 
 See ticket #6919 for an updated FLINT spkg.
 
 
+
 ---
 
-Comment by drkirkby created at 2009-11-25 03:00:49
+archive/issue_comments_058167.json:
+```json
+{
+    "body": "Bill Hart reported on 27th September that:\n\n''I've added this to a FLINT todo list and will attend to it in the next release.\n\nThanks for mentioning it.\n\nBill.''\n\nI will chase this up, to find out if it is fixed or not.",
+    "created_at": "2009-11-25T03:00:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7024",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7024#issuecomment-58167",
+    "user": "drkirkby"
+}
+```
 
 Bill Hart reported on 27th September that:
 
@@ -61,45 +97,113 @@ Bill.''
 I will chase this up, to find out if it is fixed or not.
 
 
+
 ---
 
-Comment by ohanar created at 2012-02-09 14:37:57
+archive/issue_comments_058168.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2012-02-09T14:37:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7024",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7024#issuecomment-58168",
+    "user": "ohanar"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_058169.json:
+```json
+{
+    "body": "Attachment\n\nfor review purposes",
+    "created_at": "2012-02-09T14:38:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7024",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7024#issuecomment-58169",
+    "user": "ohanar"
+}
+```
 
 Attachment
 
 for review purposes
 
 
+
 ---
 
-Comment by leif created at 2012-03-17 01:32:28
+archive/issue_comments_058170.json:
+```json
+{
+    "body": "`$CC` and `$CXX` have to be quoted.\n\nNote that the issue is (at least partially) fixed upstream in FLINT 1.5.2 IIRC; I already made an spkg with various other changes (including the `Makefile`) a while ago btw. ... (cf. discussion at #9858)",
+    "created_at": "2012-03-17T01:32:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7024",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7024#issuecomment-58170",
+    "user": "leif"
+}
+```
 
 `$CC` and `$CXX` have to be quoted.
 
 Note that the issue is (at least partially) fixed upstream in FLINT 1.5.2 IIRC; I already made an spkg with various other changes (including the `Makefile`) a while ago btw. ... (cf. discussion at #9858)
 
 
+
 ---
 
-Comment by leif created at 2012-03-17 01:32:28
+archive/issue_comments_058171.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2012-03-17T01:32:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7024",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7024#issuecomment-58171",
+    "user": "leif"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-11-23 10:36:33
+archive/issue_comments_058172.json:
+```json
+{
+    "body": "Works with the newer FLINT 2.x",
+    "created_at": "2013-11-23T10:36:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7024",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7024#issuecomment-58172",
+    "user": "jdemeyer"
+}
+```
 
 Works with the newer FLINT 2.x
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-11-23 10:36:33
+archive/issue_comments_058173.json:
+```json
+{
+    "body": "Resolution: worksforme",
+    "created_at": "2013-11-23T10:36:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7024",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7024#issuecomment-58173",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: worksforme

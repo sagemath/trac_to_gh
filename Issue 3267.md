@@ -1,11 +1,21 @@
 # Issue 3267: Sage 3.0.2.alpha1: doctest failure in sage/server/support.py
 
-Issue created by migration from https://trac.sagemath.org/ticket/3267
-
-Original creator: mabshoff
-
-Original creation time: 2008-05-21 13:55:51
-
+archive/issues_003267.json:
+```json
+{
+    "body": "Assignee: failure\n\n\n```\nsage -t -long devel/sage/sage/server/support.py             \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.0.2.rc0/tmp/support.py\", line 85:\n    sage: sage.server.support.help(numpy.linalg.norm)\nExpected:\n    <html><table notruncate notracebacks bgcolor=\"#386074\" cellpadding=10 cellspacing=10><tr><td bgcolor=\"#f5f5f5\"><font color=\"#37546d\">\n    Help on function norm in module numpy.linalg.linalg:\n    ...\n    For values ord < 0, the result is, strictly speaking, not a\n    mathematical 'norm', but it may still be useful for numerical purposes.\n    </font></tr></td></table></html>\nGot:\n    <html><table notracebacks bgcolor=\"#386074\" cellpadding=10 cellspacing=10><tr><td bgcolor=\"#f5f5f5\"><font color=\"#37546d\">\n    &nbsp;&nbsp;&nbsp;<a target='_new' href='cell://docs-1.html'>Click to open help window</a>&nbsp;&nbsp;&nbsp;\n    <br></font></tr></td></table></html>\n**********************************************************************\n1 items had failures:\n   1 of   3 in __main__.example_2\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.0.2.rc0/tmp/.doctest_support.py\n         [2.4 s]\nexit code: 1024\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long devel/sage/sage/server/support.py\nTotal time for all tests: 2.4 seconds\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3267\n\n",
+    "created_at": "2008-05-21T13:55:51Z",
+    "labels": [
+        "doctest coverage",
+        "blocker",
+        "bug"
+    ],
+    "title": "Sage 3.0.2.alpha1: doctest failure in sage/server/support.py",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3267",
+    "user": "mabshoff"
+}
+```
 Assignee: failure
 
 
@@ -42,29 +52,79 @@ Total time for all tests: 2.4 seconds
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3267
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-05-21 14:12:00
+archive/issue_comments_022617.json:
+```json
+{
+    "body": "prototype patch [actually only a diff]",
+    "created_at": "2008-05-21T14:12:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3267",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3267#issuecomment-22617",
+    "user": "mabshoff"
+}
+```
 
 prototype patch [actually only a diff]
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-21 14:14:43
+archive/issue_comments_022618.json:
+```json
+{
+    "body": "Changing assignee from failure to mabshoff.",
+    "created_at": "2008-05-21T14:14:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3267",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3267#issuecomment-22618",
+    "user": "mabshoff"
+}
+```
 
 Changing assignee from failure to mabshoff.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-21 14:14:43
+archive/issue_comments_022619.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-05-21T14:14:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3267",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3267#issuecomment-22619",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
+
+archive/issue_comments_022620.json:
+```json
+{
+    "body": "Attachment\n\nAfter talking to William in IRC I changed the test to the new, expected error message since we now post a link to the error message instead of the error message itself. I add \"...\" since the number depends if other help files have been produced since they are not deleted, i.e. \"sage/server/docs-0.html\" sticks around. See #3265 for that issue.\n\nCheers,\n\nMichael",
+    "created_at": "2008-05-21T14:14:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3267",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3267#issuecomment-22620",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -75,15 +135,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-23 06:08:28
+archive/issue_comments_022621.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-05-23T06:08:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3267",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3267#issuecomment-22621",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-23 06:08:28
+archive/issue_comments_022622.json:
+```json
+{
+    "body": "Merged in Sage 3.0.2.rc0",
+    "created_at": "2008-05-23T06:08:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3267",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3267#issuecomment-22622",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.2.rc0

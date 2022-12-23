@@ -1,11 +1,21 @@
 # Issue 9837: Bugfix in WeylCharacterRing __call__ method
 
-Issue created by migration from https://trac.sagemath.org/ticket/9838
-
-Original creator: bump
-
-Original creation time: 2010-08-29 19:03:03
-
+archive/issues_009837.json:
+```json
+{
+    "body": "Assignee: AlexGhitza\n\nCC:  sage-combinat\n\nThis addresses a bug that was reported here:\n\nhttp://groups.google.com/group/sage-combinat-devel/msg/252fd7fa0e297214\n\nThe `__call__` method of a Weyl Character ring, when `style=\"coroots\"` is specified, tries to interpret the arguments as the coroots of a weight; that weight\nis then the actual argument. However this is not appropriate if the argument is\nnot a tuple. Therefore this should be tested.\n\nThe patch implements the test.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9838\n\n",
+    "created_at": "2010-08-29T19:03:03Z",
+    "labels": [
+        "algebra",
+        "major",
+        "bug"
+    ],
+    "title": "Bugfix in WeylCharacterRing __call__ method",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9837",
+    "user": "bump"
+}
+```
 Assignee: AlexGhitza
 
 CC:  sage-combinat
@@ -20,77 +30,191 @@ not a tuple. Therefore this should be tested.
 
 The patch implements the test.
 
+Issue created by migration from https://trac.sagemath.org/ticket/9838
+
+
+
+
 
 ---
 
-Comment by bump created at 2010-08-29 19:08:17
+archive/issue_comments_097081.json:
+```json
+{
+    "body": "Changing assignee from AlexGhitza to bump.",
+    "created_at": "2010-08-29T19:08:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9837",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9837#issuecomment-97081",
+    "user": "bump"
+}
+```
 
 Changing assignee from AlexGhitza to bump.
 
 
+
 ---
 
-Comment by bump created at 2010-08-29 19:08:34
+archive/issue_comments_097082.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-08-29T19:08:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9837",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9837#issuecomment-97082",
+    "user": "bump"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by bump created at 2010-08-29 19:10:16
+archive/issue_comments_097083.json:
+```json
+{
+    "body": "Changing component from algebra to group_theory.",
+    "created_at": "2010-08-29T19:10:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9837",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9837#issuecomment-97083",
+    "user": "bump"
+}
+```
 
 Changing component from algebra to group_theory.
 
 
+
 ---
 
-Comment by aschilling created at 2010-10-19 06:31:31
+archive/issue_comments_097084.json:
+```json
+{
+    "body": "Replying to [comment:3 bump]:\n\nThis is a bug fix. All tests pass!",
+    "created_at": "2010-10-19T06:31:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9837",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9837#issuecomment-97084",
+    "user": "aschilling"
+}
+```
 
 Replying to [comment:3 bump]:
 
 This is a bug fix. All tests pass!
 
 
+
 ---
 
-Comment by aschilling created at 2010-10-19 06:31:31
+archive/issue_comments_097085.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-10-19T06:31:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9837",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9837#issuecomment-97085",
+    "user": "aschilling"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-10-26 13:34:43
+archive/issue_comments_097086.json:
+```json
+{
+    "body": "Please change the commit message of the patch trac_9838.patch (use `hg qrefresh -e` for that).",
+    "created_at": "2010-10-26T13:34:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9837",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9837#issuecomment-97086",
+    "user": "jdemeyer"
+}
+```
 
 Please change the commit message of the patch trac_9838.patch (use `hg qrefresh -e` for that).
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-10-26 13:34:43
+archive/issue_comments_097087.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_work.",
+    "created_at": "2010-10-26T13:34:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9837",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9837#issuecomment-97087",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from positive_review to needs_work.
 
 
+
 ---
 
-Comment by bump created at 2010-10-26 15:19:11
+archive/issue_comments_097088.json:
+```json
+{
+    "body": "> Please change the commit message of the patch trac_9838.patch (use hg qrefresh -e for that).\n\nDone. -Dan",
+    "created_at": "2010-10-26T15:19:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9837",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9837#issuecomment-97088",
+    "user": "bump"
+}
+```
 
 > Please change the commit message of the patch trac_9838.patch (use hg qrefresh -e for that).
 
 Done. -Dan
 
 
+
 ---
 
-Comment by bump created at 2010-10-26 15:19:11
+archive/issue_comments_097089.json:
+```json
+{
+    "body": "Changing status from needs_work to positive_review.",
+    "created_at": "2010-10-26T15:19:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9837",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9837#issuecomment-97089",
+    "user": "bump"
+}
+```
 
 Changing status from needs_work to positive_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-10-27 08:52:20
+archive/issue_comments_097090.json:
+```json
+{
+    "body": "Replying to [comment:7 bump]:\n> Done. -Dan\n\nSorry, the ticket number should also be in the first line of the commit message.",
+    "created_at": "2010-10-27T08:52:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9837",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9837#issuecomment-97090",
+    "user": "jdemeyer"
+}
+```
 
 Replying to [comment:7 bump]:
 > Done. -Dan
@@ -98,67 +222,168 @@ Replying to [comment:7 bump]:
 Sorry, the ticket number should also be in the first line of the commit message.
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-10-27 08:52:20
+archive/issue_comments_097091.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_work.",
+    "created_at": "2010-10-27T08:52:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9837",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9837#issuecomment-97091",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from positive_review to needs_work.
 
 
+
 ---
+
+archive/issue_comments_097092.json:
+```json
+{
+    "body": "Attachment\n\n#9838: bugfix in WeylCharac terRing call method",
+    "created_at": "2010-10-27T16:25:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9837",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9837#issuecomment-97092",
+    "user": "bump"
+}
+```
 
 Attachment
 
 #9838: bugfix in WeylCharac terRing call method
 
 
+
 ---
 
-Comment by bump created at 2010-10-27 16:26:11
+archive/issue_comments_097093.json:
+```json
+{
+    "body": "Changing status from needs_work to positive_review.",
+    "created_at": "2010-10-27T16:26:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9837",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9837#issuecomment-97093",
+    "user": "bump"
+}
+```
 
 Changing status from needs_work to positive_review.
 
 
+
 ---
 
-Comment by bump created at 2010-10-27 16:26:11
+archive/issue_comments_097094.json:
+```json
+{
+    "body": "> Sorry, the ticket number should also be in the first line of the commit message. \n\nDone.",
+    "created_at": "2010-10-27T16:26:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9837",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9837#issuecomment-97094",
+    "user": "bump"
+}
+```
 
 > Sorry, the ticket number should also be in the first line of the commit message. 
 
 Done.
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-11-01 10:11:20
+archive/issue_comments_097095.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-11-01T10:11:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9837",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9837#issuecomment-97095",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-11-02 15:34:34
+archive/issue_comments_097096.json:
+```json
+{
+    "body": "Changing status from closed to needs_work.",
+    "created_at": "2010-11-02T15:34:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9837",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9837#issuecomment-97096",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from closed to needs_work.
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-11-02 15:35:17
+archive/issue_comments_097097.json:
+```json
+{
+    "body": "Due to a mistake by me (confusing #9838 with #9893), this ticket did not get merged in sage-4.6.1.alpha0.",
+    "created_at": "2010-11-02T15:35:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9837",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9837#issuecomment-97097",
+    "user": "jdemeyer"
+}
+```
 
 Due to a mistake by me (confusing #9838 with #9893), this ticket did not get merged in sage-4.6.1.alpha0.
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-11-02 15:35:17
+archive/issue_comments_097098.json:
+```json
+{
+    "body": "Changing status from needs_work to positive_review.",
+    "created_at": "2010-11-02T15:35:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9837",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9837#issuecomment-97098",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from needs_work to positive_review.
 
 
+
 ---
 
-Comment by bump created at 2010-11-02 23:36:18
+archive/issue_comments_097099.json:
+```json
+{
+    "body": "The ticket is still described as resolved:fixed.\n\nI don't think I can revert the fixed status: trac admin has to do that.\n(It doesn't matter if this won't cause the release manager to\nforget the patch.)",
+    "created_at": "2010-11-02T23:36:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9837",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9837#issuecomment-97099",
+    "user": "bump"
+}
+```
 
 The ticket is still described as resolved:fixed.
 
@@ -167,37 +392,92 @@ I don't think I can revert the fixed status: trac admin has to do that.
 forget the patch.)
 
 
+
 ---
 
-Comment by mvngu created at 2010-11-04 11:43:42
+archive/issue_comments_097100.json:
+```json
+{
+    "body": "Changing status from closed to new.",
+    "created_at": "2010-11-04T11:43:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9837",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9837#issuecomment-97100",
+    "user": "mvngu"
+}
+```
 
 Changing status from closed to new.
 
 
+
 ---
 
-Comment by mvngu created at 2010-11-04 11:43:42
+archive/issue_comments_097101.json:
+```json
+{
+    "body": "Resolution changed from fixed to ",
+    "created_at": "2010-11-04T11:43:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9837",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9837#issuecomment-97101",
+    "user": "mvngu"
+}
+```
 
 Resolution changed from fixed to 
 
 
+
 ---
 
-Comment by mvngu created at 2010-11-04 11:43:57
+archive/issue_comments_097102.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-11-04T11:43:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9837",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9837#issuecomment-97102",
+    "user": "mvngu"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mvngu created at 2010-11-04 11:44:04
+archive/issue_comments_097103.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-11-04T11:44:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9837",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9837#issuecomment-97103",
+    "user": "mvngu"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mvngu created at 2010-11-04 11:45:07
+archive/issue_comments_097104.json:
+```json
+{
+    "body": "Replying to [comment:13 bump]:\n> I don't think I can revert the fixed status: trac admin has to do that.\n\nDone.",
+    "created_at": "2010-11-04T11:45:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9837",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9837#issuecomment-97104",
+    "user": "mvngu"
+}
+```
 
 Replying to [comment:13 bump]:
 > I don't think I can revert the fixed status: trac admin has to do that.
@@ -205,8 +485,19 @@ Replying to [comment:13 bump]:
 Done.
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-11-10 22:20:13
+archive/issue_comments_097105.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-11-10T22:20:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9837",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9837#issuecomment-97105",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: fixed

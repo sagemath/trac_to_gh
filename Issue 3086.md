@@ -1,11 +1,21 @@
 # Issue 3086: Update R to the 2.7 release and split off rpy.spkg
 
-Issue created by migration from https://trac.sagemath.org/ticket/3086
-
-Original creator: mabshoff
-
-Original creation time: 2008-05-03 03:24:25
-
+archive/issues_003086.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nCC:  jason\n\nR 2.7 is out, so let's upgrade. We should also more rpy to its own top level spkg and update to rpy 1.0.2\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3086\n\n",
+    "created_at": "2008-05-03T03:24:25Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "Update R to the 2.7 release and split off rpy.spkg",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3086",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 CC:  jason
@@ -16,17 +26,43 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/3086
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-05-03 16:58:16
+archive/issue_comments_021308.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-05-03T16:58:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3086",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3086#issuecomment-21308",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-03 16:58:16
+archive/issue_comments_021309.json:
+```json
+{
+    "body": "R 2.6.1 is also broken on FC3:\n\n```\ngcc -std=gnu99 -I. -I../../src/include -I../../src/include -I/usr/local/include -DHAVE_CONFIG_H   -fpic  -I/root/sage-3.0/lo\ncal/include -L/root/sage-3.0/local/lib/  -c signrank.c -o signrank.o\nmake[5]: Leaving directory `/root/sage-3.0/spkg/build/r-2.6.1.p15/src/src/nmath'\nmake[4]: Leaving directory `/root/sage-3.0/spkg/build/r-2.6.1.p15/src/src/nmath'\nmake[4]: Entering directory `/root/sage-3.0/spkg/build/r-2.6.1.p15/src/src/unix'\nconfig.status: creating src/unix/Makefile\nmake[4]: Leaving directory `/root/sage-3.0/spkg/build/r-2.6.1.p15/src/src/unix'\nmake[4]: Entering directory `/root/sage-3.0/spkg/build/r-2.6.1.p15/src/src/unix'\nmake[5]: Entering directory `/root/sage-3.0/spkg/build/r-2.6.1.p15/src/src/unix'\nmaking dynload.d from dynload.c\nmaking edit.d from edit.c\nmaking stubs.d from stubs.c\nmaking system.d from system.c\nmaking sys-unix.d from sys-unix.c\nmaking sys-std.d from sys-std.c\nsys-std.c:401:33: readline/readline.h: No such file or directory\nsys-std.c:431:32: readline/history.h: No such file or directory\nmake[5]: *** [sys-std.d] Error 1\nmake[5]: Leaving directory `/root/sage-3.0/spkg/build/r-2.6.1.p15/src/src/unix'\nmake[4]: *** [R] Error 2\nmake[4]: Leaving directory `/root/sage-3.0/spkg/build/r-2.6.1.p15/src/src/unix'\nmake[3]: *** [R] Error 1\nmake[3]: Leaving directory `/root/sage-3.0/spkg/build/r-2.6.1.p15/src/src'\nmake[2]: *** [R] Error 1\nmake[2]: Leaving directory `/root/sage-3.0/spkg/build/r-2.6.1.p15/src'\nError building R.\n```\n\nThis is most likely cause by R not using Sage's readline. There is a similar issue with R not picking Sage's libpng, so fix both issues when updating to R 2.7.\n\nCheers,\n\nMichael",
+    "created_at": "2008-05-03T16:58:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3086",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3086#issuecomment-21309",
+    "user": "mabshoff"
+}
+```
 
 R 2.6.1 is also broken on FC3:
 
@@ -66,9 +102,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-05-05 03:31:36
+archive/issue_comments_021310.json:
+```json
+{
+    "body": "See also #3011 about the related RHOME issue.\n\nCheers,\n\nMichael",
+    "created_at": "2008-05-05T03:31:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3086",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3086#issuecomment-21310",
+    "user": "mabshoff"
+}
+```
 
 See also #3011 about the related RHOME issue.
 
@@ -77,30 +124,74 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by jason created at 2009-09-16 13:41:16
+archive/issue_comments_021311.json:
+```json
+{
+    "body": "Changing status from assigned to new.",
+    "created_at": "2009-09-16T13:41:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3086",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3086#issuecomment-21311",
+    "user": "jason"
+}
+```
 
 Changing status from assigned to new.
 
 
+
 ---
 
-Comment by jason created at 2009-09-16 13:41:16
+archive/issue_comments_021312.json:
+```json
+{
+    "body": "Changing assignee from mabshoff to jason.",
+    "created_at": "2009-09-16T13:41:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3086",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3086#issuecomment-21312",
+    "user": "jason"
+}
+```
 
 Changing assignee from mabshoff to jason.
 
 
+
 ---
 
-Comment by jason created at 2009-09-16 13:43:13
+archive/issue_comments_021313.json:
+```json
+{
+    "body": "Also, R has its own C interface---I think rpy2 is using it, but if not, it might make sense for us to just write a Cython wrapper around the C interface.",
+    "created_at": "2009-09-16T13:43:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3086",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3086#issuecomment-21313",
+    "user": "jason"
+}
+```
 
 Also, R has its own C interface---I think rpy2 is using it, but if not, it might make sense for us to just write a Cython wrapper around the C interface.
 
 
+
 ---
 
-Comment by jason created at 2009-09-17 04:46:01
+archive/issue_comments_021314.json:
+```json
+{
+    "body": "My draft of an updated R and rpy2 spkg is at \nhttp://sage.math.washington.edu/home/jason/r-2.9.2.spkg.  There are \nunchecked-in changes in the spkg, and I just ignored a bunch of old \npatches to R because I wasn't sure they applied anymore, so the spkg is \nnot finished.",
+    "created_at": "2009-09-17T04:46:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3086",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3086#issuecomment-21314",
+    "user": "jason"
+}
+```
 
 My draft of an updated R and rpy2 spkg is at 
 http://sage.math.washington.edu/home/jason/r-2.9.2.spkg.  There are 
@@ -109,22 +200,55 @@ patches to R because I wasn't sure they applied anymore, so the spkg is
 not finished.
 
 
+
 ---
 
-Comment by jason created at 2009-09-21 13:15:26
+archive/issue_comments_021315.json:
+```json
+{
+    "body": "See #6972 for a continuation of the updated spkg above.",
+    "created_at": "2009-09-21T13:15:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3086",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3086#issuecomment-21315",
+    "user": "jason"
+}
+```
 
 See #6972 for a continuation of the updated spkg above.
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-22 17:02:49
+archive/issue_comments_021316.json:
+```json
+{
+    "body": "Closing this ticket as a duplicate of #6972.",
+    "created_at": "2009-09-22T17:02:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3086",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3086#issuecomment-21316",
+    "user": "mvngu"
+}
+```
 
 Closing this ticket as a duplicate of #6972.
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-22 17:02:49
+archive/issue_comments_021317.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2009-09-22T17:02:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3086",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3086#issuecomment-21317",
+    "user": "mvngu"
+}
+```
 
 Resolution: duplicate

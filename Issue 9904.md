@@ -1,11 +1,21 @@
 # Issue 9904: Spkg logs should get timestamps
 
-Issue created by migration from https://trac.sagemath.org/ticket/9905
-
-Original creator: justin
-
-Original creation time: 2010-09-13 20:49:39
-
+archive/issues_009904.json:
+```json
+{
+    "body": "Assignee: GeorgSWeber\n\nCC:  leif\n\nPut timestamps into the spkg logs, both at the beginning and the end of each build run for the spkg in question.\n\nThis aids both in debugging problems with the build and with evaluating performance issues in the build.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9905\n\n",
+    "created_at": "2010-09-13T20:49:39Z",
+    "labels": [
+        "build",
+        "major",
+        "bug"
+    ],
+    "title": "Spkg logs should get timestamps",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9904",
+    "user": "justin"
+}
+```
 Assignee: GeorgSWeber
 
 CC:  leif
@@ -14,17 +24,43 @@ Put timestamps into the spkg logs, both at the beginning and the end of each bui
 
 This aids both in debugging problems with the build and with evaluating performance issues in the build.
 
+Issue created by migration from https://trac.sagemath.org/ticket/9905
+
+
+
+
 
 ---
 
-Comment by leif created at 2010-09-14 06:59:39
+archive/issue_comments_098463.json:
+```json
+{
+    "body": "The only \"problem\": In which format?",
+    "created_at": "2010-09-14T06:59:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9904",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9904#issuecomment-98463",
+    "user": "leif"
+}
+```
 
 The only "problem": In which format?
 
 
+
 ---
 
-Comment by leif created at 2010-09-16 12:15:44
+archive/issue_comments_098464.json:
+```json
+{
+    "body": "I'd suggest using\n\n```sh\ndate \"+%F %T %z\"\n```\n\nwhich is independent of the current locale, such that we get something like:\n\n```\nSPKG BUILD STARTED:  2010-09-16 13:52:21 +0200\n...\nSPKG BUILD FINISHED: 2010-09-16 13:52:30 +0200\n```\n\n\nDoes anyone also want nanoseconds (`%N`)? (I'm not sure how portable that would be.)\n\nOpinions? Substitute \"BUILD\" by \"INSTALLATION\" (since we might also run a test suite after successful installation)? Or should we add *additional* timestamps for checks?\n\n`spkg/installed/<package name>` currently looks like this:\n\n```\nPACKAGE NAME: pari-2.4.3.svn-12577.p5\nINSTALL DATE: Sat Sep 11 20:54:15 CEST 2010\nUNAME: Linux quadriga 2.6.32-24-generic #41-Ubuntu SMP Thu Aug 19 01:38:40 UTC 2010 x86_64 GNU/Linux\nSage VERSION: | Sage Version 4.6.alpha0, Release Date: 2010-09-10                  |\n```\n\n(I.e. uses \"plain\" `date`, which I don't like. The Sage version also has to be fixed, as already noted somewhere else.)",
+    "created_at": "2010-09-16T12:15:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9904",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9904#issuecomment-98464",
+    "user": "leif"
+}
+```
 
 I'd suggest using
 
@@ -43,7 +79,7 @@ SPKG BUILD FINISHED: 2010-09-16 13:52:30 +0200
 
 Does anyone also want nanoseconds (`%N`)? (I'm not sure how portable that would be.)
 
-Opinions? Substitute "BUILD" by "INSTALLATION" (since we might also run a test suite after successful installation)? Or should we add _additional_ timestamps for checks?
+Opinions? Substitute "BUILD" by "INSTALLATION" (since we might also run a test suite after successful installation)? Or should we add *additional* timestamps for checks?
 
 `spkg/installed/<package name>` currently looks like this:
 
@@ -57,9 +93,20 @@ Sage VERSION: | Sage Version 4.6.alpha0, Release Date: 2010-09-10               
 (I.e. uses "plain" `date`, which I don't like. The Sage version also has to be fixed, as already noted somewhere else.)
 
 
+
 ---
 
-Comment by leif created at 2010-09-16 12:39:16
+archive/issue_comments_098465.json:
+```json
+{
+    "body": "Replying to [comment:2 leif]:\n> \n\n```\n...\nSage VERSION: | Sage Version 4.6.alpha0, Release Date: 2010-09-10                  |\n```\n\n> The Sage version also has to be fixed, as already noted somewhere else.\n\nSee #9434.",
+    "created_at": "2010-09-16T12:39:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9904",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9904#issuecomment-98465",
+    "user": "leif"
+}
+```
 
 Replying to [comment:2 leif]:
 > 
@@ -74,9 +121,20 @@ Sage VERSION: | Sage Version 4.6.alpha0, Release Date: 2010-09-10               
 See #9434.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-09-30 06:08:05
+archive/issue_comments_098466.json:
+```json
+{
+    "body": "Replying to [comment:2 leif]:\n> I'd suggest using\n> {{{\n> #!sh\n> date \"+%F %T %z\"\n> }}}\n> which is independent of the current locale, such that we get something like:\n> {{{\n> SPKG BUILD STARTED:  2010-09-16 13:52:21 +0200\n> ...\n> SPKG BUILD FINISHED: 2010-09-16 13:52:30 +0200\n> }}}\n\n\nBut that would be a portability problem, as %F is not in the [POSIX specification for date](http://www.opengroup.org/onlinepubs/009695399/utilities/date.html). Looking at the man page for date on a Linux machine I see:\n\n\n```\n%F     full date; same as %Y-%m-%d\n```\n\n\n\nSo that would be an obvious improvement. \n\n> Does anyone also want nanoseconds (`%N`)? (I'm not sure how portable that would be.)\n\nJust take a look at http://www.opengroup.org/onlinepubs/009695399/utilities/date.html and you will find it is not portable. \n\n> Opinions? Substitute \"BUILD\" by \"INSTALLATION\" (since we might also run a test suite after successful installation)? Or should we add *additional* timestamps for checks?\n\n\nI think it would be useful to add the output from 'uname -a' too, so when people post logs, we know what system they were built on. \n\nI probably have some other thoughts on this, but I'm very busy today and don't have time to look at tickets in much detail. Just adding an odd comment where I feel I can contribute something. \n\nDave",
+    "created_at": "2010-09-30T06:08:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9904",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9904#issuecomment-98466",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:2 leif]:
 > I'd suggest using
@@ -107,7 +165,7 @@ So that would be an obvious improvement.
 
 Just take a look at http://www.opengroup.org/onlinepubs/009695399/utilities/date.html and you will find it is not portable. 
 
-> Opinions? Substitute "BUILD" by "INSTALLATION" (since we might also run a test suite after successful installation)? Or should we add _additional_ timestamps for checks?
+> Opinions? Substitute "BUILD" by "INSTALLATION" (since we might also run a test suite after successful installation)? Or should we add *additional* timestamps for checks?
 
 
 I think it would be useful to add the output from 'uname -a' too, so when people post logs, we know what system they were built on. 
@@ -117,9 +175,20 @@ I probably have some other thoughts on this, but I'm very busy today and don't h
 Dave
 
 
+
 ---
 
-Comment by drkirkby created at 2010-09-30 06:44:25
+archive/issue_comments_098467.json:
+```json
+{
+    "body": "For performance evaluation, storing the time as seconds since the Epoch would be useful. A portable way to do this is below:\n\n\n```\n# Compute seconds since the Epoch.\n\n# Call 'date'. Note that\n# %Y = year including century\n# %j = day number (1-365)\n# %H = hour (0-23)\n# %M = minute (0-59)\n# %S = seconds (0-60)  - leap seconds mean 60 is permissible. \n\nif type env >/dev/null 2>&1 ; then\n    set -- `env LC_ALL=C LC_TIME=C LANG=C date -u '+%Y %j %H %M %S'`\nelse\n    set -- `date -u '+%Y %j %H %M %S'`\nfi\n\n# $1 = year including century\n# $2 = day number (1-365)\n# $3 = hour (0-23)\n# $4 = minute (0-59)\n# $5 = seconds (0-60)  - leap seconds mean 60 is permissible. \n\nif [ $? -ne 0 ] || [ $# -lt 5 ] ; then\n  TIME=\"Error computing seconds since the Epoch\"\nfi\n\nDAYS=`expr 365 \\* \\( $1 - 1970 \\) + \\( $1 - 1969 \\) / 4 + $2 - 1`\nTIME=`expr $5 + 60 \\* \\( $4 + 60 \\* \\( $3 + 24 \\* $DAYS \\) \\)`\necho $TIME\n```\n\n\nThis was checked by a lot of people on sage-devel\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/1cf804eeb4f88c27/af8893705de4f513?hl=en&lnk=gst&q=please+check+if+this+#af8893705de4f513\n\nand found to work for everyone. It was tested on \n\n* Linux\n* Solaris\n* AIX\n* HP-UX\n* FreeBSD\n* OS X\n\nI've played around with it, setting the dates back in years gone by, and dates in the future, and it always works. It was posted originally on comp.unix.shell. \n\nIf we could save \n* Start time in seconds since the Epoch\n* End time in seconds since the Ephoch\n* Compute the difference, and record that as \"TIME TO BUILD\" or something like that\n\nwe could use the information to determine if certain components are taking significantly longer to build. \n\nI'm **not** suggesting we only store the time in such a non-human readable format, but storing seconds since the Epoch in addition to a more human friendly format seems a good idea to me. \n\nDave",
+    "created_at": "2010-09-30T06:44:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9904",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9904#issuecomment-98467",
+    "user": "drkirkby"
+}
+```
 
 For performance evaluation, storing the time as seconds since the Epoch would be useful. A portable way to do this is below:
 
@@ -162,22 +231,22 @@ http://groups.google.com/group/sage-devel/browse_thread/thread/1cf804eeb4f88c27/
 
 and found to work for everyone. It was tested on 
 
- * Linux
- * Solaris
- * AIX
- * HP-UX
- * FreeBSD
- * OS X
+* Linux
+* Solaris
+* AIX
+* HP-UX
+* FreeBSD
+* OS X
 
 I've played around with it, setting the dates back in years gone by, and dates in the future, and it always works. It was posted originally on comp.unix.shell. 
 
 If we could save 
- * Start time in seconds since the Epoch
- * End time in seconds since the Ephoch
- * Compute the difference, and record that as "TIME TO BUILD" or something like that
+* Start time in seconds since the Epoch
+* End time in seconds since the Ephoch
+* Compute the difference, and record that as "TIME TO BUILD" or something like that
 
 we could use the information to determine if certain components are taking significantly longer to build. 
 
-I'm *not* suggesting we only store the time in such a non-human readable format, but storing seconds since the Epoch in addition to a more human friendly format seems a good idea to me. 
+I'm **not** suggesting we only store the time in such a non-human readable format, but storing seconds since the Epoch in addition to a more human friendly format seems a good idea to me. 
 
 Dave

@@ -1,11 +1,21 @@
 # Issue 2288: tutorial -- fix some typos (easy)
 
-Issue created by migration from https://trac.sagemath.org/ticket/2288
-
-Original creator: was
-
-Original creation time: 2008-02-24 01:18:22
-
+archive/issues_002288.json:
+```json
+{
+    "body": "Assignee: wdjoyner\n\n\n```\nSomebody in france found some typos in the tutorial.\n\nNote, they want to change \"Magma\" to \"MAGMA\" which is WRONG.\nThey also want to change \"Sage\" to \"SAGE\" which is also wrong -- Sage is no\nlonger an acronym.\n- Hide quoted text -\n\n\n---------- Forwarded message ----------\nFrom: Mihai Cipu <cipu@math.u-strasbg.fr>\nDate: Sat, Feb 23, 2008 at 4:03 AM\nSubject: SAGE Tutorial Release 2008.01.18\nTo: wstein@gmail.com\n\n\nDear William,\n\n Congratulations for your excellent work!\n To read the tutorial named above I needed\n 3h10m wall time (I didn't substract the time\n spent drinking a cup of tea). Let me tell\n what typos I've noticed:\n\n p.5, l.2 of the second paragraph\n   \"On some Mac's you...\" instead of \"One some...\"\n\n p.12, l.2 \"comparison\" instead of \"comparision\"\n\n p.14, l.1  \"indeterminate\"  instead of \"interderminate\"\n\n p.15, l.2 of the first paragraph\n         \"MAGMA\" instead of \"Magma\"\n\n p.18, l.1 of the second paragraph\n             \"Gr\\\"obner\"  instead of \"Groebner\"\n\n p.23, l.1 of the first paragraph\n        remove \"+\"   before \" tells SAGE\"\n\n p.26, l.1 \"Maxima\" instead of \"maxima\"\n     l.-1   a blank needed between \"\\latex\" and \"format\"\n\n p.30, l.1 of the second paragraph\n          \"it needs not\" instead of \"it need not\"\n\n p.35, l. 2 of Subsection 2.10.2\n          \"one can use\" instead of \"obe can use\"\n\n p.36, l.8, 13   \"transform\" instead of \"transforms\"\n\n p.37, l.3   \"can be plotted\" instead of \"and be plotted\"\n\n p.39, l.2, 16   \"PARI\" instead of \"pari\"\n     l.3, 19   \"Maxima\" instead of \"maxima\"\n\n p.45, l.-8  \"Maple\" instead of \"maple\"\n\n p.55, l.4  of the Help on class VectorSpace\n             \"To create\" instead of \"Two create\"\n\n p.59, l.-4    \"SAGE\"   instead of \"sage\"\n\n p.61, l.6, 7, 10, 11   \"GAP\"  instead of \"Gap\"  or \"gap\"\n\n p.69, l.3, 7  of Subsection  5.2.1\n        double opening quotes needed\n\n p.85, l.2, 4  from the second paragraph of Section 6.2\n      \"GAP\" instead of \"Gap\"\n\n p.86, l.3 of the first paragraph of Section 6.3\n       remove the  point after \"you used\"\n     l.5  \"GAP\"  instead of \"Gap\"\n\n\n Now it's time time to have fun with SAGE!\n\n Best regards,\n Mihai\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2288\n\n",
+    "created_at": "2008-02-24T01:18:22Z",
+    "labels": [
+        "documentation",
+        "major",
+        "bug"
+    ],
+    "title": "tutorial -- fix some typos (easy)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2288",
+    "user": "was"
+}
+```
 Assignee: wdjoyner
 
 
@@ -92,22 +102,61 @@ Dear William,
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2288
+
+
+
+
 
 ---
+
+archive/issue_comments_015173.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-02-24T22:13:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2288",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2288#issuecomment-15173",
+    "user": "wdj"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by wdj created at 2008-02-24 22:15:32
+archive/issue_comments_015174.json:
+```json
+{
+    "body": "The patch fixes the valid typos reported above.",
+    "created_at": "2008-02-24T22:15:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2288",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2288#issuecomment-15174",
+    "user": "wdj"
+}
+```
 
 The patch fixes the valid typos reported above.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-24 22:17:48
+archive/issue_comments_015175.json:
+```json
+{
+    "body": "Does this patch depend or conflict in any way with #2289?\n\nCheers,\n\nMichael",
+    "created_at": "2008-02-24T22:17:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2288",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2288#issuecomment-15175",
+    "user": "mabshoff"
+}
+```
 
 Does this patch depend or conflict in any way with #2289?
 
@@ -116,9 +165,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-26 02:02:33
+archive/issue_comments_015176.json:
+```json
+{
+    "body": "Patch looks good to me.\n\nCheers,\n\nMichael",
+    "created_at": "2008-02-26T02:02:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2288",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2288#issuecomment-15176",
+    "user": "mabshoff"
+}
+```
 
 Patch looks good to me.
 
@@ -127,15 +187,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-26 02:03:33
+archive/issue_comments_015177.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-02-26T02:03:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2288",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2288#issuecomment-15177",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-26 02:03:33
+archive/issue_comments_015178.json:
+```json
+{
+    "body": "Merged in Sage 2.10.3.alpha0",
+    "created_at": "2008-02-26T02:03:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2288",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2288#issuecomment-15178",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.3.alpha0

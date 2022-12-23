@@ -1,11 +1,21 @@
 # Issue 8404: Computing a H-minor
 
-Issue created by migration from https://trac.sagemath.org/ticket/8404
-
-Original creator: ncohen
-
-Original creation time: 2010-02-28 18:45:33
-
+archive/issues_008404.json:
+```json
+{
+    "body": "Assignee: rlm\n\nThis patch is a linear program to compute a H minor of a graph... I hope you will like it ! :-)\n\nWe say that a graph `G` has a `H`-minor (or that it has a graph isomorphic to `H` as a minor), if for all `h\\in H`, there exist disjoint sets `S_h \\subseteq V(G)` such that once the vertices of each `S_h` have been merged to create a new graph `G'`, this new graph contains `H` as a subgraph.\n\nFor more information of minor theory, see http://en.wikipedia.org/wiki/Minor_(graph_theory)\n\nNathann\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8404\n\n",
+    "created_at": "2010-02-28T18:45:33Z",
+    "labels": [
+        "graph theory",
+        "major",
+        "enhancement"
+    ],
+    "title": "Computing a H-minor",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8404",
+    "user": "ncohen"
+}
+```
 Assignee: rlm
 
 This patch is a linear program to compute a H minor of a graph... I hope you will like it ! :-)
@@ -17,26 +27,63 @@ For more information of minor theory, see http://en.wikipedia.org/wiki/Minor_(gr
 Nathann
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8404
+
+
+
+
 
 ---
 
-Comment by ncohen created at 2010-02-28 18:46:46
+archive/issue_comments_075272.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-02-28T18:46:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8404",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75272",
+    "user": "ncohen"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jason created at 2010-03-01 12:19:13
+archive/issue_comments_075273.json:
+```json
+{
+    "body": "This is awesome to have something like this in Sage.  I noticed in the patch a misspelling: \"exaclty\" -> \"exactly\".\n\nDo you have a reference for the translation of the minor problem into a linear programming problem?  Can you put that into the docstring?",
+    "created_at": "2010-03-01T12:19:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8404",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75273",
+    "user": "jason"
+}
+```
 
 This is awesome to have something like this in Sage.  I noticed in the patch a misspelling: "exaclty" -> "exactly".
 
 Do you have a reference for the translation of the minor problem into a linear programming problem?  Can you put that into the docstring?
 
 
+
 ---
 
-Comment by ncohen created at 2010-03-01 15:32:26
+archive/issue_comments_075274.json:
+```json
+{
+    "body": "No, that's mine. Or at least I did not read it anywhere, as I can not claim no one thought about it before. I recently talked with someone who should have known it if it existed, and who did not.\n\nNote that it can be very slow, though, even if there is no alternative that I know of.\n\nI will fix the typo in a minute :-)\n\nNathann",
+    "created_at": "2010-03-01T15:32:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8404",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75274",
+    "user": "ncohen"
+}
+```
 
 No, that's mine. Or at least I did not read it anywhere, as I can not claim no one thought about it before. I recently talked with someone who should have known it if it existed, and who did not.
 
@@ -47,27 +94,49 @@ I will fix the typo in a minute :-)
 Nathann
 
 
+
 ---
 
-Comment by jason created at 2010-03-01 16:08:29
+archive/issue_comments_075275.json:
+```json
+{
+    "body": "Well, congratulations!  I think it would be interesting to see a short writeup of it, maybe posted on arxiv.org?  Are there any other linear program graph functions that aren't in the literature that you've already incorporated into Sage?  It would make an interesting \"Survey of using linear programming to solve graph problems\".",
+    "created_at": "2010-03-01T16:08:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8404",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75275",
+    "user": "jason"
+}
+```
 
 Well, congratulations!  I think it would be interesting to see a short writeup of it, maybe posted on arxiv.org?  Are there any other linear program graph functions that aren't in the literature that you've already incorporated into Sage?  It would make an interesting "Survey of using linear programming to solve graph problems".
 
 
+
 ---
 
-Comment by ncohen created at 2010-03-01 16:18:44
+archive/issue_comments_075276.json:
+```json
+{
+    "body": "Not really... The only way for me to use LP is through Sage, so most of what I write ends up as a patch. I recently sent a patch for two variations of graph coloring that interest me #8405.\n\nActually, my recent patches of LP formulations :\n\n* #2203 Traveling Salesman Problem\n* #7476 Edge-disjoint spanning trees\n* #7529 Maximum average Degree\n* #8403 Steiner Tree\n* #8405 Linear arboricity / Acyclic edge coloring\n* This very patch\n\nAll have the same thing in common : there is an easy way that I ignored until very recently to write \"acyclicity\" without using column generation. It may be a bit slower, but I do not have to write column generation to define them, at least :p\n\nKnowing how to say \"acyclicity\" enables one to say \"connectedness\". And once you know how to say \"connectedness\", you can say Minor, Steiner Tree, TSP, etc :-)\n\nWhat would you like to find in such a document ? A list of formulations, plus explanations ?\n\nNathann",
+    "created_at": "2010-03-01T16:18:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8404",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75276",
+    "user": "ncohen"
+}
+```
 
 Not really... The only way for me to use LP is through Sage, so most of what I write ends up as a patch. I recently sent a patch for two variations of graph coloring that interest me #8405.
 
 Actually, my recent patches of LP formulations :
 
- * #2203 Traveling Salesman Problem
- * #7476 Edge-disjoint spanning trees
- * #7529 Maximum average Degree
- * #8403 Steiner Tree
- * #8405 Linear arboricity / Acyclic edge coloring
- * This very patch
+* #2203 Traveling Salesman Problem
+* #7476 Edge-disjoint spanning trees
+* #7529 Maximum average Degree
+* #8403 Steiner Tree
+* #8405 Linear arboricity / Acyclic edge coloring
+* This very patch
 
 All have the same thing in common : there is an easy way that I ignored until very recently to write "acyclicity" without using column generation. It may be a bit slower, but I do not have to write column generation to define them, at least :p
 
@@ -78,9 +147,20 @@ What would you like to find in such a document ? A list of formulations, plus ex
 Nathann
 
 
+
 ---
 
-Comment by jason created at 2010-03-01 16:40:58
+archive/issue_comments_075277.json:
+```json
+{
+    "body": "Replying to [comment:5 ncohen]:\n\n\n> What would you like to find in such a document ? A list of formulations, plus explanations ?\n\n\nYes, I think that would be great.  It's also a way for your Sage work to get more traditional credit in academics, especially if you are formulating things that aren't in a standard reference and might be less than straightforward.  And thirdly, it's a way for people like me, who have a minimal understanding of linear programming, to check your code :).",
+    "created_at": "2010-03-01T16:40:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8404",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75277",
+    "user": "jason"
+}
+```
 
 Replying to [comment:5 ncohen]:
 
@@ -91,16 +171,38 @@ Replying to [comment:5 ncohen]:
 Yes, I think that would be great.  It's also a way for your Sage work to get more traditional credit in academics, especially if you are formulating things that aren't in a standard reference and might be less than straightforward.  And thirdly, it's a way for people like me, who have a minimal understanding of linear programming, to check your code :).
 
 
+
 ---
 
-Comment by wdj created at 2010-03-01 21:39:17
+archive/issue_comments_075278.json:
+```json
+{
+    "body": "Nathann: Please do write up the paper Jason suggests. I would also be very interested.",
+    "created_at": "2010-03-01T21:39:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8404",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75278",
+    "user": "wdj"
+}
+```
 
 Nathann: Please do write up the paper Jason suggests. I would also be very interested.
 
 
+
 ---
 
-Comment by ncohen created at 2010-03-04 14:31:27
+archive/issue_comments_075279.json:
+```json
+{
+    "body": "Here it is ! \n\nhttp://www-sop.inria.fr/members/Nathann.Cohen/LP_formulations.pdf\n\nNathann",
+    "created_at": "2010-03-04T14:31:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8404",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75279",
+    "user": "ncohen"
+}
+```
 
 Here it is ! 
 
@@ -109,23 +211,56 @@ http://www-sop.inria.fr/members/Nathann.Cohen/LP_formulations.pdf
 Nathann
 
 
+
 ---
 
-Comment by ncohen created at 2010-03-04 14:31:27
+archive/issue_comments_075280.json:
+```json
+{
+    "body": "Changing assignee from rlm to ncohen.",
+    "created_at": "2010-03-04T14:31:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8404",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75280",
+    "user": "ncohen"
+}
+```
 
 Changing assignee from rlm to ncohen.
 
 
+
 ---
 
-Comment by ncohen created at 2010-03-04 14:31:44
+archive/issue_comments_075281.json:
+```json
+{
+    "body": "Changing assignee from ncohen to rlm.",
+    "created_at": "2010-03-04T14:31:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8404",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75281",
+    "user": "ncohen"
+}
+```
 
 Changing assignee from ncohen to rlm.
 
 
+
 ---
 
-Comment by dimpase created at 2010-03-05 04:16:44
+archive/issue_comments_075282.json:
+```json
+{
+    "body": "Replying to [comment:7 wdj]:\n> Nathann: Please do write up the paper Jason suggests. I would also be very interested.\n\nNathann, you seem to be systematically writing LP where it should be ILP, or MILP, right?\nPlease fix this.\n\nAs well, you need to include meaningful examples: e.g. showing how to use your code to show that some well-known graph (say, Petersen) is not planar by finding a Kuratowski minor. It's not obvious that your code can handle this in reasonable time (I have had my share of using ILP for seemingly small problems, with very limited success).\nAnd, apart from planarity (planarity is easy algorithmically, so it has only theoretical interest here), few other real problems involving graph minors. \nAnd if the code cannot  do anything useful, it should not be included in Sage (not in the standard or optional part, anyway) \n\nI therefore change the status to \"needs work\"... (I wish we had anonymous reviewing, like in journals :-))\n\nDmitrii",
+    "created_at": "2010-03-05T04:16:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8404",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75282",
+    "user": "dimpase"
+}
+```
 
 Replying to [comment:7 wdj]:
 > Nathann: Please do write up the paper Jason suggests. I would also be very interested.
@@ -142,16 +277,38 @@ I therefore change the status to "needs work"... (I wish we had anonymous review
 Dmitrii
 
 
+
 ---
 
-Comment by dimpase created at 2010-03-05 04:16:44
+archive/issue_comments_075283.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-03-05T04:16:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8404",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75283",
+    "user": "dimpase"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by jason created at 2010-03-05 11:26:09
+archive/issue_comments_075284.json:
+```json
+{
+    "body": "Replying to [comment:10 dimpase]:\n\n> And, apart from planarity (planarity is easy algorithmically, so it has only theoretical interest here), few other real problems involving graph minors. \n> And if the code cannot  do anything useful, it should not be included in Sage (not in the standard or optional part, anyway) \n> \n\n\n*I'm* interested in it.  In some of my research in graph parameters (minimum rank of graphs), there are some nice bounds written in terms of the minors of a graph.  Even if it only works for graphs up to 20 vertices, it would be interesting to me and others working in this area (minimum rank of graphs) so that we could quickly compute small examples.",
+    "created_at": "2010-03-05T11:26:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8404",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75284",
+    "user": "jason"
+}
+```
 
 Replying to [comment:10 dimpase]:
 
@@ -163,9 +320,20 @@ Replying to [comment:10 dimpase]:
 *I'm* interested in it.  In some of my research in graph parameters (minimum rank of graphs), there are some nice bounds written in terms of the minors of a graph.  Even if it only works for graphs up to 20 vertices, it would be interesting to me and others working in this area (minimum rank of graphs) so that we could quickly compute small examples.
 
 
+
 ---
 
-Comment by ncohen created at 2010-03-05 11:58:59
+archive/issue_comments_075285.json:
+```json
+{
+    "body": "Hello !!!\n\nHere is a new version of the patch with the examples you requested. \n\nI mever tried to make a mystery that this method is slow. It was one on my first comments about this patch. The thing is that there is no alternative that I know of. Minor theory is not what I should work on, but it is an interesting thing and I tried to find practical algorithms to solve it, and failed most of the time. I sent messages to people who claimed to have one and received no answer... And as for every LP algorithm written in Sage, I consider this one as a quick and lazy way to have some feature available, and the function as bound to be rewritten as soon as someone will want to spend time on it.\n\nI would like very much to send a patch soon to be able to compute the treewidth of a graph, and even heuristics for it.. I would have to ask this code from a researcher who may be kind enough to share it, but those would still remain very slow algorithms. I can not stand the very idea of a heuristic as a mathematician, but sometimes you just have no other alternative...\n\nAs for anonymous reviewing, research has still to learn from Free Software that we are working together, not competing, and most of the time just doing the best we can.\n\nNathann",
+    "created_at": "2010-03-05T11:58:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8404",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75285",
+    "user": "ncohen"
+}
+```
 
 Hello !!!
 
@@ -180,16 +348,38 @@ As for anonymous reviewing, research has still to learn from Free Software that 
 Nathann
 
 
+
 ---
 
-Comment by ncohen created at 2010-03-05 11:58:59
+archive/issue_comments_075286.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-03-05T11:58:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8404",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75286",
+    "user": "ncohen"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by ncohen created at 2010-03-05 12:03:22
+archive/issue_comments_075287.json:
+```json
+{
+    "body": "Oh, and I set the test of K5 and K33 minors in Petersen Graph as both optional and long... It takes on my computer something like 4 seconds for K5 and 2 for K33 with Cbc.. With a bit of luck it will be faster soon enough : the next package for Cbc can handle multithreading and Cplex seems ti be giving free licenses to researchers and students.\n\n( #8171 and #8172 are still waiting for review, btw :-)  )\n\nNathann",
+    "created_at": "2010-03-05T12:03:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8404",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75287",
+    "user": "ncohen"
+}
+```
 
 Oh, and I set the test of K5 and K33 minors in Petersen Graph as both optional and long... It takes on my computer something like 4 seconds for K5 and 2 for K33 with Cbc.. With a bit of luck it will be faster soon enough : the next package for Cbc can handle multithreading and Cplex seems ti be giving free licenses to researchers and students.
 
@@ -198,9 +388,20 @@ Oh, and I set the test of K5 and K33 minors in Petersen Graph as both optional a
 Nathann
 
 
+
 ---
 
-Comment by ncohen created at 2010-03-06 10:01:57
+archive/issue_comments_075288.json:
+```json
+{
+    "body": "By the way... I just retried to solve this problem using CPLEX instead of Coin.. Result :\n\n\n```\nsage: time graphs.PetersenGraph().minor(graphs.CompleteGraph(5))\nWall time: 0.22 s\n{0: [3, 8], 1: [5, 7], 2: [1, 2], 3: [0, 4], 4: [6, 9]}\n```\n\n\n\n```\nsage: time graphs.PetersenGraph().minor(graphs.CompleteBipartiteGraph(3,3))\nWall time: 0.18 s\n{0: [4, 9], 1: [5], 2: [1, 2], 3: [3, 8], 4: [0], 5: [7]}\n```\n\n\nSo it seems it is not that bad after all :-)\n\nNathann",
+    "created_at": "2010-03-06T10:01:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8404",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75288",
+    "user": "ncohen"
+}
+```
 
 By the way... I just retried to solve this problem using CPLEX instead of Coin.. Result :
 
@@ -225,9 +426,20 @@ So it seems it is not that bad after all :-)
 Nathann
 
 
+
 ---
 
-Comment by dimpase created at 2010-03-06 11:34:02
+archive/issue_comments_075289.json:
+```json
+{
+    "body": "Replying to [comment:14 ncohen]:\n> By the way... I just retried to solve this problem using CPLEX instead of Coin.. Result :\n> \n> {{{\n> sage: time graphs.PetersenGraph().minor(graphs.CompleteGraph(5))\n> Wall time: 0.22 s\n> {0: [3, 8], 1: [5, 7], 2: [1, 2], 3: [0, 4], 4: [6, 9]}\n> }}}\n> \n> {{{\n> sage: time graphs.PetersenGraph().minor(graphs.CompleteBipartiteGraph(3,3))\n> Wall time: 0.18 s\n> {0: [4, 9], 1: [5], 2: [1, 2], 3: [3, 8], 4: [0], 5: [7]}\n> }}}\n> \n> So it seems it is not that bad after all :-)\n\nI wonder how does it scale when the number of vertices of G grows.\n\nRegarding CPLEX I would not be that optimistic - they did not say whether\nthey give that free licences for unlimited time.\n\n\n> \n> Nathann",
+    "created_at": "2010-03-06T11:34:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8404",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75289",
+    "user": "dimpase"
+}
+```
 
 Replying to [comment:14 ncohen]:
 > By the way... I just retried to solve this problem using CPLEX instead of Coin.. Result :
@@ -256,18 +468,40 @@ they give that free licences for unlimited time.
 > Nathann
 
 
+
 ---
 
-Comment by ncohen created at 2010-03-06 11:43:46
+archive/issue_comments_075290.json:
+```json
+{
+    "body": "I expect it not to scale ;-)\n\nNathann",
+    "created_at": "2010-03-06T11:43:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8404",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75290",
+    "user": "ncohen"
+}
+```
 
 I expect it not to scale ;-)
 
 Nathann
 
 
+
 ---
 
-Comment by dimpase created at 2010-03-06 11:50:24
+archive/issue_comments_075291.json:
+```json
+{
+    "body": "Replying to [comment:16 ncohen]:\n> I expect it not to scale ;-)\n\nyeah - can you try some 20-25 vertex examples?\n\n(by the way, \"no K_4-minor\" is equivalent to \"treewidth at most 2\", so you can write\nanother short function to test fro just this...)",
+    "created_at": "2010-03-06T11:50:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8404",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75291",
+    "user": "dimpase"
+}
+```
 
 Replying to [comment:16 ncohen]:
 > I expect it not to scale ;-)
@@ -278,9 +512,20 @@ yeah - can you try some 20-25 vertex examples?
 another short function to test fro just this...)
 
 
+
 ---
 
-Comment by ncohen created at 2010-03-06 12:17:47
+archive/issue_comments_075292.json:
+```json
+{
+    "body": "> yeah - can you try some 20-25 vertex examples?\n> \n> (by the way, \"no K_4-minor\" is equivalent to \"treewidth at most 2\", so you can write\n> another short function to test fro just this...)\n\nI would be glad to review your patch if you were to write one :-D\n\n(Sorry, but I really do not have much time available these days....)\n\nNathann",
+    "created_at": "2010-03-06T12:17:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8404",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75292",
+    "user": "ncohen"
+}
+```
 
 > yeah - can you try some 20-25 vertex examples?
 > 
@@ -294,9 +539,20 @@ I would be glad to review your patch if you were to write one :-D
 Nathann
 
 
+
 ---
 
-Comment by dimpase created at 2010-03-06 12:24:33
+archive/issue_comments_075293.json:
+```json
+{
+    "body": "Replying to [comment:18 ncohen]:\n> > yeah - can you try some 20-25 vertex examples?\n> > \n> > (by the way, \"no K_4-minor\" is equivalent to \"treewidth at most 2\", so you can write\n> > another short function to test fro just this...)\n> \n> I would be glad to review your patch if you were to write one :-D\n> \n> (Sorry, but I really do not have much time available these days....)\n\nnobody has any time :)\n\nwell, you still should change \"Linear Programming\" to \"(Mixed) Integer Linear Programming\", at least \nin your patch and in other docs.\n\n> \n> Nathann",
+    "created_at": "2010-03-06T12:24:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8404",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75293",
+    "user": "dimpase"
+}
+```
 
 Replying to [comment:18 ncohen]:
 > > yeah - can you try some 20-25 vertex examples?
@@ -317,23 +573,56 @@ in your patch and in other docs.
 > Nathann
 
 
+
 ---
 
-Comment by ncohen created at 2010-03-08 18:00:55
+archive/issue_comments_075294.json:
+```json
+{
+    "body": "now with *Mixed Integer* linear program",
+    "created_at": "2010-03-08T18:00:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8404",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75294",
+    "user": "ncohen"
+}
+```
 
 now with *Mixed Integer* linear program
 
 
+
 ---
 
-Comment by dimpase created at 2010-03-09 02:52:24
+archive/issue_comments_075295.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-03-09T02:52:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8404",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75295",
+    "user": "dimpase"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by dimpase created at 2010-03-09 02:52:24
+archive/issue_comments_075296.json:
+```json
+{
+    "body": "Replying to [comment:20 ncohen]:\n> now with *Mixed Integer* linear program\nOK, but please also fix\n\n```\nALGORITHM\n\nMixed Integer Linear Program\n```\n\nit must be \"Programming\", not \"Program\" here.\n\nI also notice similar misuses of \"Linear Program/Programming\" (instead of (M)ILP) on\nhttp://www.sagemath.org/doc/reference/sage/numerical/mip.html\n\nand another tutorial-like thing you wrote \n(in the latter you also forget to mention that max. matching problem in a graph\ncan be solved in polynomial time, using LP (or otherwise), so that the MILP formulation is far from the best possible)\n\nPlease fix these too some time soon, please...",
+    "created_at": "2010-03-09T02:52:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8404",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75296",
+    "user": "dimpase"
+}
+```
 
 Replying to [comment:20 ncohen]:
 > now with *Mixed Integer* linear program
@@ -357,9 +646,20 @@ can be solved in polynomial time, using LP (or otherwise), so that the MILP form
 Please fix these too some time soon, please...
 
 
+
 ---
 
-Comment by ncohen created at 2010-03-09 10:04:14
+archive/issue_comments_075297.json:
+```json
+{
+    "body": "This patch has been updated to program*ming*.\n\nI you feel anything else in Sage needs to be fixed, please create the corresponding ticket and -- if possible -- write a patch for it.\n\nYou have set this ticket to \"positive review\". Have you actually tested it, docstring and documentation ?\n\nNathann",
+    "created_at": "2010-03-09T10:04:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8404",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75297",
+    "user": "ncohen"
+}
+```
 
 This patch has been updated to program*ming*.
 
@@ -370,9 +670,20 @@ You have set this ticket to "positive review". Have you actually tested it, docs
 Nathann
 
 
+
 ---
 
-Comment by dimpase created at 2010-03-09 11:14:48
+archive/issue_comments_075298.json:
+```json
+{
+    "body": "Replying to [comment:22 ncohen]:\n> This patch has been updated to program*ming*.\n> \n> I you feel anything else in Sage needs to be fixed, please create the corresponding ticket and -- if possible -- write a patch for it.\n\nwell, I do not know how to patch that writeup on linear programming --- Minh\ndoes not seem to know this, either.\n\n> \n> You have set this ticket to \"positive review\". Have you actually tested it, docstring and documentation ?\n\nI applied the patch, to sage-4.3.3 on boxen (so this is a 64-bit intel linux)\nand did sage -t -optional on graphs/graph.py\nand it all passed (I also did some minor computations at sage prompt, just to make sure there is no screwup anywhere :))\n\nI do not know how to *test* documentation, never heard of --- is there a way?\n\nOh, by the way, there is still a fix needed:\n\nyou should add # optional on the line 1951 of the file, otherwise \nsage -t (no -optional) will complain about undefined gg.\n\nPlease fix this, otherwise I'll have to revert to \"needs work\" :)\n(I wish I had such an efficient means to make my students work hard :))\n\nPS. I do not seem to be able to find out which MILP solver I am actually using --- is there a way to find this out without uninstalling several optional packages?\n\nDima",
+    "created_at": "2010-03-09T11:14:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8404",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75298",
+    "user": "dimpase"
+}
+```
 
 Replying to [comment:22 ncohen]:
 > This patch has been updated to program*ming*.
@@ -404,9 +715,20 @@ PS. I do not seem to be able to find out which MILP solver I am actually using -
 Dima
 
 
+
 ---
 
-Comment by ncohen created at 2010-03-09 11:43:37
+archive/issue_comments_075299.json:
+```json
+{
+    "body": "The difference being that I am not your student, nor do I have any intention of standing your rudeness and the way you give me orders for very long.\n\nI write these patches, even though they require *a lot* of time, because I think people may be interested in them. If you are not (you had the kindness to mention earlier that it should be thrown away as useless), I do not need you here.\n\nThis is the last time I edit the patch, I can not afford to update it each time you change your mind about what needs to be done.\n\nNathann",
+    "created_at": "2010-03-09T11:43:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8404",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75299",
+    "user": "ncohen"
+}
+```
 
 The difference being that I am not your student, nor do I have any intention of standing your rudeness and the way you give me orders for very long.
 
@@ -417,7 +739,20 @@ This is the last time I edit the patch, I can not afford to update it each time 
 Nathann
 
 
+
 ---
+
+archive/issue_comments_075300.json:
+```json
+{
+    "body": "Attachment\n\nReplying to [comment:24 ncohen]:\n> The difference being that I am not your student, nor do I have any intention of standing your rudeness and the way you give me orders for very long.\n> \n\nPlease point me out to a place where I was rude to you.\nI apologize in advance, if you like, anyway.\n\nBy the way, I am considerably older than you, so please also forgive me slipping\ninto patronizing.\n\n> I write these patches, even though they require *a lot* of time, because I think people may be interested in them. If you are not (you had the kindness to mention earlier that it should be thrown away as useless), I do not need you here.\n> \n\nI just want your, and others, patches to be useful to people, this is all.\nI never said that your work should be thrown away, regardless. I said it should be thrown away if it does not work as advertised, and I asked you to provide few more examples to demonstrate the usefulness of them. This is downright normal reviewing process, believe me. \n\nIn fact, I am very patient with you. Many would have said \"meshugene genz, meshugene grivn\", and stopped dealing with you and your patches all together.  \n\nAnd this is exactly the point when I wondered aloud whether it would be better\nto have anonymous reviewers. :-)\n\n> This is the last time I edit the patch, I can not afford to update it each time you change your mind about what needs to be done.\n>\n\nIt's not that I change my mind, that is I see a way to improve it. It's normal process of work. I am only human after all.\n\nDima   \n\n> Nathann",
+    "created_at": "2010-03-09T12:03:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8404",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75300",
+    "user": "dimpase"
+}
+```
 
 Attachment
 
@@ -452,9 +787,20 @@ Dima
 > Nathann
 
 
+
 ---
 
-Comment by ncohen created at 2010-03-13 08:06:44
+archive/issue_comments_075301.json:
+```json
+{
+    "body": "Where the conversation moved : \n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/cd4e971043773fd3\n\nNathann",
+    "created_at": "2010-03-13T08:06:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8404",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75301",
+    "user": "ncohen"
+}
+```
 
 Where the conversation moved : 
 
@@ -463,24 +809,57 @@ http://groups.google.com/group/sage-devel/browse_thread/thread/cd4e971043773fd3
 Nathann
 
 
+
 ---
 
-Comment by ncohen created at 2010-03-16 02:06:33
+archive/issue_comments_075302.json:
+```json
+{
+    "body": "With the new (and free) cplex, it takes 120 seconds to prove there is no K5 in a 4x4 grid. Finding a K4 is instantaneous.\n\nNathann",
+    "created_at": "2010-03-16T02:06:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8404",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75302",
+    "user": "ncohen"
+}
+```
 
 With the new (and free) cplex, it takes 120 seconds to prove there is no K5 in a 4x4 grid. Finding a K4 is instantaneous.
 
 Nathann
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-15 23:45:51
+archive/issue_comments_075303.json:
+```json
+{
+    "body": "Merged \"trac_8404.patch\" into 4.4.alpha0.",
+    "created_at": "2010-04-15T23:45:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8404",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75303",
+    "user": "jhpalmieri"
+}
+```
 
 Merged "trac_8404.patch" into 4.4.alpha0.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-04-15 23:45:51
+archive/issue_comments_075304.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-04-15T23:45:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8404",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8404#issuecomment-75304",
+    "user": "jhpalmieri"
+}
+```
 
 Resolution: fixed

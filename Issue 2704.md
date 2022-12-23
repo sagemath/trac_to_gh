@@ -1,11 +1,21 @@
 # Issue 2704: bug in lcm(a,b) for a,b polynomials in QQ[] if a is constant
 
-Issue created by migration from https://trac.sagemath.org/ticket/2704
-
-Original creator: cremona
-
-Original creation time: 2008-03-28 18:22:46
-
+archive/issues_002704.json:
+```json
+{
+    "body": "Assignee: was\n\nKeywords: lcm, polynomial, singular\n\nIn `QQ[]`, `lcm(X,1)` works fine but not `lcm(1,X)`:\n\n\n```\nsage: R.<X>=QQ[]\nsage: a=R(1)\nsage: b=X\nsage: lcm(b,a)\nX\nsage: lcm(a,b)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/jec/sage-2.11.alpha1/devel/sage-generic/sage/rings/<ipython console> in <module>()\n\n/home/jec/sage-2.11.alpha1/local/lib/python2.5/site-packages/sage/rings/arith.py in lcm(a, b, integer)\n   1096     if not isinstance(a, RingElement):\n   1097         a = integer_ring.ZZ(a)\n-> 1098     return a.lcm(b)\n   1099\n   1100 LCM = lcm\n\n/home/jec/sage-2.11.alpha1/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_singular_interface.py in lcm(self, singular, have_ring)\n    284         return _singular_init_func(self, singular, have_ring, force)\n    285     def lcm(self, singular=singular_default, have_ring=False):\n--> 286         return lcm_func(self, singular, have_ring)\n    287     def resultant(self, other, variable=None):\n    288         return resultant_func(self, other, variable)\n\n/home/jec/sage-2.11.alpha1/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_singular_interface.py in lcm_func(self, right, have_ring)\n    385         (a^2 + a)*x^6*y + (a^3 + a - 1)*x^4*y + (-a)*x^4\n    386     \"\"\"\n--> 387     lcm = self._singular_(have_ring=have_ring).lcm(right._singular_(have_ring=have_ring))\n    388     return lcm.sage_poly(self.parent())\n    389\n\n/home/jec/sage-2.11.alpha1/local/lib/python2.5/site-packages/sage/interfaces/expect.py in __call__(self, *args)\n    970\n    971     def __call__(self, *args):\n--> 972         return self._obj.parent().function_call(self._name, [self._obj] + list(args))\n    973\n    974     def help(self):\n\n/home/jec/sage-2.11.alpha1/local/lib/python2.5/site-packages/sage/interfaces/expect.py in function_call(self, function, args)\n    899             if not isinstance(args[i], ExpectElement):\n    900                 args[i] = self.new(args[i])\n--> 901         return self.new(\"%s(%s)\"%(function, \",\".join([s.name() for s in args])))\n    902\n    903     def call(self, function_name, *args):\n\n/home/jec/sage-2.11.alpha1/local/lib/python2.5/site-packages/sage/interfaces/expect.py in new(self, code)\n    801\n    802     def new(self, code):\n--> 803         return self(code)\n    804\n    805     ###################################################################\n\n/home/jec/sage-2.11.alpha1/local/lib/python2.5/site-packages/sage/interfaces/singular.py in __call__(self, x, type)\n    496             x = str(x)[1:-1]\n    497\n--> 498         return SingularElement(self, type, x, False)\n    499\n    500\n\n/home/jec/sage-2.11.alpha1/local/lib/python2.5/site-packages/sage/interfaces/singular.py in __init__(self, parent, type, value, is_name)\n    817             except (RuntimeError, TypeError, KeyboardInterrupt), x:\n    818                 self._session_number = -1\n--> 819                 raise TypeError, x\n    820         else:\n    821             self._name = value\n\n<type 'exceptions.TypeError'>: Singular error:\n   ? // ** list element must be an integer\n   ? error occurred in poly.lib::lcm line 721: ` ERROR(\"// ** list element must be an integer\");`\n   ? leaving poly.lib::lcm\n   skipping text from `;` error at token `)`\n```\n\n\nIt works fine in ZZ[] so I guess it's a problem with the singular interface.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2704\n\n",
+    "created_at": "2008-03-28T18:22:46Z",
+    "labels": [
+        "interfaces",
+        "major",
+        "bug"
+    ],
+    "title": "bug in lcm(a,b) for a,b polynomials in QQ[] if a is constant",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2704",
+    "user": "cremona"
+}
+```
 Assignee: was
 
 Keywords: lcm, polynomial, singular
@@ -92,31 +102,79 @@ sage: lcm(a,b)
 It works fine in ZZ[] so I guess it's a problem with the singular interface.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2704
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-04-15 04:03:47
+archive/issue_comments_018648.json:
+```json
+{
+    "body": "Changing assignee from was to malb.",
+    "created_at": "2008-04-15T04:03:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2704",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2704#issuecomment-18648",
+    "user": "mabshoff"
+}
+```
 
 Changing assignee from was to malb.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-15 04:03:47
+archive/issue_comments_018649.json:
+```json
+{
+    "body": "Changing priority from major to critical.",
+    "created_at": "2008-04-15T04:03:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2704",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2704#issuecomment-18649",
+    "user": "mabshoff"
+}
+```
 
 Changing priority from major to critical.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-15 04:03:47
+archive/issue_comments_018650.json:
+```json
+{
+    "body": "Changing component from interfaces to commutative algebra.",
+    "created_at": "2008-04-15T04:03:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2704",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2704#issuecomment-18650",
+    "user": "mabshoff"
+}
+```
 
 Changing component from interfaces to commutative algebra.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-15 04:03:47
+archive/issue_comments_018651.json:
+```json
+{
+    "body": "Martin,\n\nthis sounds like something that is in your domain. Can you check it out?\n\nCheers,\n\nMichael",
+    "created_at": "2008-04-15T04:03:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2704",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2704#issuecomment-18651",
+    "user": "mabshoff"
+}
+```
 
 Martin,
 
@@ -127,34 +185,91 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_018652.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-04-15T09:02:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2704",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2704#issuecomment-18652",
+    "user": "malb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by malb created at 2008-04-15 09:03:20
+archive/issue_comments_018653.json:
+```json
+{
+    "body": "patch attached.",
+    "created_at": "2008-04-15T09:03:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2704",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2704#issuecomment-18653",
+    "user": "malb"
+}
+```
 
 patch attached.
 
 
+
 ---
 
-Comment by mhansen created at 2008-04-15 09:15:24
+archive/issue_comments_018654.json:
+```json
+{
+    "body": "Looks good to me.",
+    "created_at": "2008-04-15T09:15:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2704",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2704#issuecomment-18654",
+    "user": "mhansen"
+}
+```
 
 Looks good to me.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-15 09:28:28
+archive/issue_comments_018655.json:
+```json
+{
+    "body": "Merged in Sage 3.0.alpha5",
+    "created_at": "2008-04-15T09:28:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2704",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2704#issuecomment-18655",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.alpha5
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-15 09:28:28
+archive/issue_comments_018656.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-04-15T09:28:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2704",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2704#issuecomment-18656",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

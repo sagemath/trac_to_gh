@@ -1,11 +1,21 @@
 # Issue 6044: Enhanced reduction modulo ideals of number fields
 
-Issue created by migration from https://trac.sagemath.org/ticket/6044
-
-Original creator: mtaranes
-
-Original creation time: 2009-05-15 09:24:14
-
+archive/issues_006044.json:
+```json
+{
+    "body": "Assignee: somebody\n\nCC:  cremona\n\nKeywords: number fields, ideals\n\n1. Modify \"residues\" function so that it returns a canonical set of coset representatives.\n\n2. New \"reduce\" function for number field ideals that returns the canonical reduced representative of a given integral element: I.reduce(f) is an element of the set of representatives returned by I.residues(). \n\n3. Have \"inverse_mod\" working for integral elements of a number field without having to coerce to the ring of integers (using existing  functionality for order elements)\n\n\nPatch based on 3.4.2 to follow soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6044\n\n",
+    "created_at": "2009-05-15T09:24:14Z",
+    "labels": [
+        "number theory",
+        "major",
+        "enhancement"
+    ],
+    "title": "Enhanced reduction modulo ideals of number fields",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6044",
+    "user": "mtaranes"
+}
+```
 Assignee: somebody
 
 CC:  cremona
@@ -21,10 +31,25 @@ Keywords: number fields, ideals
 
 Patch based on 3.4.2 to follow soon.
 
+Issue created by migration from https://trac.sagemath.org/ticket/6044
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2009-05-15 14:47:21
+archive/issue_comments_048133.json:
+```json
+{
+    "body": "This is unlikely to make it into Sage 4.0, so bumping it to 4.0.1.\n\nCheers,\n\nMichael",
+    "created_at": "2009-05-15T14:47:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6044",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6044#issuecomment-48133",
+    "user": "mabshoff"
+}
+```
 
 This is unlikely to make it into Sage 4.0, so bumping it to 4.0.1.
 
@@ -33,9 +58,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by cremona created at 2009-05-15 14:52:23
+archive/issue_comments_048134.json:
+```json
+{
+    "body": "Replying to [comment:1 mabshoff]:\n> This is unlikely to make it into Sage 4.0, so bumping it to 4.0.1.\n> \n> Cheers,\n> \n> Michael\nNo problem, though it is likely to have been reviewed within a day or two!",
+    "created_at": "2009-05-15T14:52:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6044",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6044#issuecomment-48134",
+    "user": "cremona"
+}
+```
 
 Replying to [comment:1 mabshoff]:
 > This is unlikely to make it into Sage 4.0, so bumping it to 4.0.1.
@@ -46,21 +82,58 @@ Replying to [comment:1 mabshoff]:
 No problem, though it is likely to have been reviewed within a day or two!
 
 
+
 ---
+
+archive/issue_comments_048135.json:
+```json
+{
+    "body": "Attachment\n\nHere is the patch, with the new functions, etc, and corrections for the docstrings that were affected by the change in the 'residues' function.",
+    "created_at": "2009-05-16T09:08:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6044",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6044#issuecomment-48135",
+    "user": "mtaranes"
+}
+```
 
 Attachment
 
 Here is the patch, with the new functions, etc, and corrections for the docstrings that were affected by the change in the 'residues' function.
 
 
+
 ---
+
+archive/issue_comments_048136.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-05-20T11:54:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6044",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6044#issuecomment-48136",
+    "user": "cremona"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by cremona created at 2009-05-20 11:55:59
+archive/issue_comments_048137.json:
+```json
+{
+    "body": "The patch applies fine to 4.0.alpha0, and all tests in sage/rings/number_field pass.\n\nThere are some small glitches in the docstrings:  in inverse_mod() in the first line, N should be I.  In reduce(), there is a formatting problem which I think would go away if a space is inserted after the second ` in `I`=self, and later on the single backquotes aroung small_residue should be double.  Ans some small indentation issues (which aer oly seen as problematical when docbuild is used).\n\nI fixed these things in the review patch (which also fixes a few minor documentation issues I noticed that are nothing to do with this ticket as such), but someone else should look at this too.",
+    "created_at": "2009-05-20T11:55:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6044",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6044#issuecomment-48137",
+    "user": "cremona"
+}
+```
 
 The patch applies fine to 4.0.alpha0, and all tests in sage/rings/number_field pass.
 
@@ -69,14 +142,38 @@ There are some small glitches in the docstrings:  in inverse_mod() in the first 
 I fixed these things in the review patch (which also fixes a few minor documentation issues I noticed that are nothing to do with this ticket as such), but someone else should look at this too.
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-06-10 10:49:47
+archive/issue_comments_048138.json:
+```json
+{
+    "body": "Rebased to 4.0.1 and folded into one patch",
+    "created_at": "2009-06-10T10:49:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6044",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6044#issuecomment-48138",
+    "user": "davidloeffler"
+}
+```
 
 Rebased to 4.0.1 and folded into one patch
 
 
+
 ---
+
+archive/issue_comments_048139.json:
+```json
+{
+    "body": "Attachment\n\nGood stuff; it will be much more efficient to use hermite form rather than smith form in residues, besides being more canonical.\n\nI have rebased the patch to 4.0.1, and checked that it commutes with #5842 and #6188. All tests in sage/rings/number_field pass still (on a 32-bit machine), as do those in sage/doc/en/bordeaux_2008 (which have a habit of catching out unwary number theory patch authors). \n\nThis one has been in limbo for three weeks because the trac reports of patches with review / needing review / etc are done using text searches of the summary field, and thus \"with review, needs second opinion\" doesn't get picked up. I guess it would be safer to set it to \"needs review\", but this strikes me as conclusive proof that we need to change the way we use trac -- this is the *fifth* ticket I've spotted today which has been in limbo because of a slightly unusual summary string.",
+    "created_at": "2009-06-10T11:06:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6044",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6044#issuecomment-48139",
+    "user": "davidloeffler"
+}
+```
 
 Attachment
 
@@ -87,17 +184,39 @@ I have rebased the patch to 4.0.1, and checked that it commutes with #5842 and #
 This one has been in limbo for three weeks because the trac reports of patches with review / needing review / etc are done using text searches of the summary field, and thus "with review, needs second opinion" doesn't get picked up. I guess it would be safer to set it to "needs review", but this strikes me as conclusive proof that we need to change the way we use trac -- this is the *fifth* ticket I've spotted today which has been in limbo because of a slightly unusual summary string.
 
 
+
 ---
 
-Comment by cremona created at 2009-06-10 17:30:30
+archive/issue_comments_048140.json:
+```json
+{
+    "body": "Many thanks for spotting this and delivering it out of limbo, especially as you had to rebase it.  I have a habit of forgetting all about my own patches once I have put them up for review (and wish trac had an option to filter out those tickets which I had added a patch to which were still open).\n\nAs for SNF  v. HNF it was just my stupidity in the first place which caused us to use SNF.   HNF is particularly efficient since that's the form pari stores ideals in anyway.",
+    "created_at": "2009-06-10T17:30:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6044",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6044#issuecomment-48140",
+    "user": "cremona"
+}
+```
 
 Many thanks for spotting this and delivering it out of limbo, especially as you had to rebase it.  I have a habit of forgetting all about my own patches once I have put them up for review (and wish trac had an option to filter out those tickets which I had added a patch to which were still open).
 
 As for SNF  v. HNF it was just my stupidity in the first place which caused us to use SNF.   HNF is particularly efficient since that's the form pari stores ideals in anyway.
 
 
+
 ---
 
-Comment by ncalexan created at 2009-06-13 20:46:05
+archive/issue_comments_048141.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-06-13T20:46:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6044",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6044#issuecomment-48141",
+    "user": "ncalexan"
+}
+```
 
 Resolution: fixed

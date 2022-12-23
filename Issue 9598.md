@@ -1,11 +1,21 @@
 # Issue 9598: Make cvxopt be able to use GLPK
 
-Issue created by migration from https://trac.sagemath.org/ticket/9598
-
-Original creator: dunfield
-
-Original creation time: 2010-07-26 00:25:33
-
+archive/issues_009598.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  ncohen\n\nThe convex optimization Python module cvxopt and the linear programming library GLPK are both standard packages in Sage 4.5.  The module cvxopt includes a python interface to GLPK, but currently cvxopt is unaware of the presence of GLPK and does not compile or include that submodule: \n\n\n```\nsage: from cvxopt import glpk\n---------------------------------------------------------------------------\nImportError                               Traceback (most recent call last)\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9598\n\n",
+    "created_at": "2010-07-26T00:25:33Z",
+    "labels": [
+        "packages: standard",
+        "minor",
+        "enhancement"
+    ],
+    "title": "Make cvxopt be able to use GLPK",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9598",
+    "user": "dunfield"
+}
+```
 Assignee: tbd
 
 CC:  ncohen
@@ -22,17 +32,43 @@ ImportError                               Traceback (most recent call last)
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/9598
+
+
+
+
 
 ---
 
-Comment by dunfield created at 2010-07-26 00:26:19
+archive/issue_comments_092858.json:
+```json
+{
+    "body": "Changing assignee from tbd to dunfield.",
+    "created_at": "2010-07-26T00:26:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9598",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9598#issuecomment-92858",
+    "user": "dunfield"
+}
+```
 
 Changing assignee from tbd to dunfield.
 
 
+
 ---
 
-Comment by dunfield created at 2010-07-26 03:02:55
+archive/issue_comments_092859.json:
+```json
+{
+    "body": "To allow cvxopt to find and use glpk there are two things that need to be done to the cvxopt spkg.\n\n1. Modify the two setup.py files in cvxopt-0.9.p8/patches to turn on support for GLPK.  \n\n2. Modify \"spkg/standard/deps\" so that GLPK has to compile before cvxopt.   See Dave Kirkby's explanation of [this](http://groups.google.com/group/sage-devel/msg/866bb0112d4066eb?).  In particular, the cvxopt entry should look like this:\n\n\n```\n$(INST)/$(CVXOPT): $(BASE) $(INST)/$(FORTRAN) $(INST)/$(F2C) \\ \n                    $(INST)/$(LAPACK) $(INST)/$(BLAS) $(INST)/$(NUMPY) \\ \n                    $(INST)/$(ATLAS) $(INST)/$(CEPHES) $(INST)/$(GLPK) \n```\n\n\nI have attached a mercurial patch for (1); as I couldn't figure out how the \"deps\" file is under version control, the above will have to do for (2).",
+    "created_at": "2010-07-26T03:02:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9598",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9598#issuecomment-92859",
+    "user": "dunfield"
+}
+```
 
 To allow cvxopt to find and use glpk there are two things that need to be done to the cvxopt spkg.
 
@@ -51,23 +87,58 @@ $(INST)/$(CVXOPT): $(BASE) $(INST)/$(FORTRAN) $(INST)/$(F2C) \
 I have attached a mercurial patch for (1); as I couldn't figure out how the "deps" file is under version control, the above will have to do for (2).
 
 
+
 ---
 
-Comment by dunfield created at 2010-07-26 03:02:55
+archive/issue_comments_092860.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-07-26T03:02:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9598",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9598#issuecomment-92860",
+    "user": "dunfield"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_092861.json:
+```json
+{
+    "body": "Attachment\n\npatch",
+    "created_at": "2010-07-26T03:03:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9598",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9598#issuecomment-92861",
+    "user": "dunfield"
+}
+```
 
 Attachment
 
 patch
 
 
+
 ---
 
-Comment by drkirkby created at 2010-07-26 09:24:20
+archive/issue_comments_092862.json:
+```json
+{
+    "body": "I can help you out with the `spkg/standard/deps` file. I will attach one in a minute. I'll attach a new deps file, and a unified diff, which makes the changes more obvious. I will also correct the fact that SAGETEX is not shown to depend on BASE, when in fact all packages depend on BASE, with the exception of the four packages in BASE. \n\nBut I don't see any evidence of doctests for this functionality. So it looks like there was extra functionality, but it will be totally untested. There needs to be some examples of use added to the documentation, which will get tested when the Sage testsuite is run. The results need to be verifiable too - in other words, not \n\n\n```\nExpected: [4.1121212232455654, 4334.34]\n```\n\n\njust because you got `[4.1121212232455654, 4334.34]` on your computer. \n\nI would ask what platforms this has been tested on, as Sage does support Linux, OS X and Solaris, but it's not clear to me how this can be tested at all just now.",
+    "created_at": "2010-07-26T09:24:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9598",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9598#issuecomment-92862",
+    "user": "drkirkby"
+}
+```
 
 I can help you out with the `spkg/standard/deps` file. I will attach one in a minute. I'll attach a new deps file, and a unified diff, which makes the changes more obvious. I will also correct the fact that SAGETEX is not shown to depend on BASE, when in fact all packages depend on BASE, with the exception of the four packages in BASE. 
 
@@ -84,16 +155,38 @@ just because you got `[4.1121212232455654, 4334.34]` on your computer.
 I would ask what platforms this has been tested on, as Sage does support Linux, OS X and Solaris, but it's not clear to me how this can be tested at all just now.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-07-26 09:24:20
+archive/issue_comments_092863.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-07-26T09:24:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9598",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9598#issuecomment-92863",
+    "user": "drkirkby"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-07-26 10:40:26
+archive/issue_comments_092864.json:
+```json
+{
+    "body": "Replying to [comment:4 drkirkby]:\n> I can help you out with the `spkg/standard/deps` file. I will attach one in a minute.\n\nI just need to verify if I have the correct original to base this on. I will attach it as soon as possible. But clearly this needs work in order that we can verify that the cvxopt is able to use glpk properly on all supported platforms.",
+    "created_at": "2010-07-26T10:40:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9598",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9598#issuecomment-92864",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:4 drkirkby]:
 > I can help you out with the `spkg/standard/deps` file. I will attach one in a minute.
@@ -101,9 +194,20 @@ Replying to [comment:4 drkirkby]:
 I just need to verify if I have the correct original to base this on. I will attach it as soon as possible. But clearly this needs work in order that we can verify that the cvxopt is able to use glpk properly on all supported platforms.
 
 
+
 ---
 
-Comment by ncohen created at 2010-07-26 15:05:02
+archive/issue_comments_092865.json:
+```json
+{
+    "body": "Hello !! Shouldn't this tickt be coordinated with #6456 ?\n\nPerhaps this modification could be included in the upgrade, which would avoid to update the spkg two times ! :-)\n\nNathann",
+    "created_at": "2010-07-26T15:05:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9598",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9598#issuecomment-92865",
+    "user": "ncohen"
+}
+```
 
 Hello !! Shouldn't this tickt be coordinated with #6456 ?
 
@@ -112,9 +216,20 @@ Perhaps this modification could be included in the upgrade, which would avoid to
 Nathann
 
 
+
 ---
 
-Comment by dunfield created at 2010-07-26 15:13:30
+archive/issue_comments_092866.json:
+```json
+{
+    "body": "Replying to [comment:6 ncohen]:\n> Hello !! Shouldn't this tickt be coordinated with #6456 ?\n> \n> Perhaps this modification could be included in the upgrade, which would avoid to update the spkg two times ! :-)\n> \n> Nathann\n\nNathann,\n\nYes, that makes a lot of sense.",
+    "created_at": "2010-07-26T15:13:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9598",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9598#issuecomment-92866",
+    "user": "dunfield"
+}
+```
 
 Replying to [comment:6 ncohen]:
 > Hello !! Shouldn't this tickt be coordinated with #6456 ?
@@ -128,9 +243,20 @@ Nathann,
 Yes, that makes a lot of sense.
 
 
+
 ---
 
-Comment by dunfield created at 2010-07-26 15:27:28
+archive/issue_comments_092867.json:
+```json
+{
+    "body": "> But I don't see any evidence of doctests for this functionality. So it looks like there was extra functionality, but it will be totally untested. There needs to be some examples of use added to the documentation, which will get tested when the Sage testsuite is run. \n\nYou can specify the which solver cvxopt uses via the \"solvers\" optional argument.   E.g. with the last example in [the current doctest](http://www.sagemath.org/doc/numerical_sage/cvxopt.html) one could follow this example with \n\n```\nsage: sol2 = solvers.lp(c,G,h,solver='glpk')\nGLPK Simplex Optimizer, v4.44\n4 rows, 2 columns, 6 non-zeros\nPreprocessing...\n2 rows, 2 columns, 4 non-zeros\nScaling...\n A: min|aij| =  1.000e+00  max|aij| =  2.000e+00  ratio =  2.000e+00\nProblem data seem to be well scaled\nConstructing initial basis...\nSize of triangular part = 2\n*     0: obj =   0.000000000e+00  infeas =  0.000e+00 (0)\n*     2: obj =  -9.000000000e+00  infeas =  0.000e+00 (0)\nOPTIMAL SOLUTION FOUND\n}}\nNear as I can tell, all that stuff is being printed by glpk directly; I'm not sure if it's platform sensitive or not.  \n\nThere is a more direct interface to glpk as well which one could test instead --- the function names differ between cvxopt 0.9 and cvxopt 1.1, though.  \n\n\n\n> I would ask what platforms this has been tested on, as Sage does support Linux, OS X and Solaris, but it's not clear to me how this can be tested at all just now. \n\nOS X.",
+    "created_at": "2010-07-26T15:27:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9598",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9598#issuecomment-92867",
+    "user": "dunfield"
+}
+```
 
 > But I don't see any evidence of doctests for this functionality. So it looks like there was extra functionality, but it will be totally untested. There needs to be some examples of use added to the documentation, which will get tested when the Sage testsuite is run. 
 
@@ -162,9 +288,20 @@ There is a more direct interface to glpk as well which one could test instead --
 OS X.
 
 
+
 ---
 
-Comment by dimpase created at 2010-07-26 16:04:49
+archive/issue_comments_092868.json:
+```json
+{
+    "body": "Replying to [comment:7 dunfield]:\n> Replying to [comment:6 ncohen]:\n> > Hello !! Shouldn't this tickt be coordinated with #6456 ?\n> > \n> > Perhaps this modification could be included in the upgrade, which would avoid to update the spkg two times ! :-)\n> > \n> > Nathann\n> \n> Nathann,\n> \n> Yes, that makes a lot of sense.  \n\nI just incorporates this patch to my new cvxopt-1.1.2. (we really, really should move to 1.1.2 before doing anything to cvxopt!!!) please see\n\n http://boxen.math.washington.edu/home/dima/packages/cvxopt-1.1.2.p1.spkg\n\nand the developments on #6456\n\nDima",
+    "created_at": "2010-07-26T16:04:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9598",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9598#issuecomment-92868",
+    "user": "dimpase"
+}
+```
 
 Replying to [comment:7 dunfield]:
 > Replying to [comment:6 ncohen]:
@@ -187,16 +324,38 @@ and the developments on #6456
 Dima
 
 
+
 ---
 
-Comment by dimpase created at 2010-07-26 16:04:49
+archive/issue_comments_092869.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-07-26T16:04:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9598",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9598#issuecomment-92869",
+    "user": "dimpase"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-07-26 17:20:27
+archive/issue_comments_092870.json:
+```json
+{
+    "body": "Replying to [comment:8 dunfield]:\n> Near as I can tell, all that stuff is being printed by glpk directly; I'm not sure if it's platform sensitive or not.  \n\nHow can it be ready for review if you are not sure if it's platform sensitive or not? \n\n> > I would ask what platforms this has been tested on, as Sage does support Linux, OS X and Solaris, but it's not clear to me how this can be tested at all just now. \n> \n> OS X.  \n\nSince it's only been tested on OS X, I would suggest this is not ready for review. It has to be shown to work on \n* Linux\n* Solaris\n* OS X. \n\nIf someone has specific questions about building on Solaris, I will answer them if I can. But what I can't do is test everyones patches on Solaris. They will need to do that themselves. \n\nThe page\n\nhttp://www.sagemath.org/doc/numerical_sage/cvxopt.html \n\nhas no reference to GLPK, or the use of other solvers. \n\nIMHO, it would be better to look at update cvxopt while you take the time to test this on multiple platforms and add some examples of how it is used. At the moment, it seems rather rushed to me. \n\nDave",
+    "created_at": "2010-07-26T17:20:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9598",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9598#issuecomment-92870",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:8 dunfield]:
 > Near as I can tell, all that stuff is being printed by glpk directly; I'm not sure if it's platform sensitive or not.  
@@ -208,9 +367,9 @@ How can it be ready for review if you are not sure if it's platform sensitive or
 > OS X.  
 
 Since it's only been tested on OS X, I would suggest this is not ready for review. It has to be shown to work on 
- * Linux
- * Solaris
- * OS X. 
+* Linux
+* Solaris
+* OS X. 
 
 If someone has specific questions about building on Solaris, I will answer them if I can. But what I can't do is test everyones patches on Solaris. They will need to do that themselves. 
 
@@ -225,16 +384,38 @@ IMHO, it would be better to look at update cvxopt while you take the time to tes
 Dave
 
 
+
 ---
 
-Comment by drkirkby created at 2010-07-26 17:20:27
+archive/issue_comments_092871.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-07-26T17:20:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9598",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9598#issuecomment-92871",
+    "user": "drkirkby"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by dunfield created at 2010-07-26 18:13:47
+archive/issue_comments_092872.json:
+```json
+{
+    "body": "Replying to [comment:10 drkirkby]:\n\n> Replying to [comment:8 dunfield]: How can it be ready for review if you are not sure if it's platform sensitive or not?\n\nDave,\n\nYou're responding to my comment, but it was Dima who changed the status after he tested this patch in conjunction with #6456 (the upgrade to cvxopt 1.1.2).  Looking at Dima's current version of cvxopt 1.1.2, he simply changed the needed two lines in \"setup.py\" directly rather than apply the patch included here. \n\nThe combination of #9598 and #6456 has so far been tested on OS X (me), Linux 32 (Dima), and also by shilly (OS not mentioned); see the comments in the #6456 thread.   I don't think it's been tested on Solaris, but I don't have access to any such machines and can't help with that.\n\nNathan",
+    "created_at": "2010-07-26T18:13:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9598",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9598#issuecomment-92872",
+    "user": "dunfield"
+}
+```
 
 Replying to [comment:10 drkirkby]:
 
@@ -249,9 +430,20 @@ The combination of #9598 and #6456 has so far been tested on OS X (me), Linux 32
 Nathan
 
 
+
 ---
 
-Comment by drkirkby created at 2010-07-26 19:18:11
+archive/issue_comments_092873.json:
+```json
+{
+    "body": "Replying to [comment:11 dunfield]:\n\n> Dave,\n> \n> You're responding to my comment, but it was Dima who changed the status after he tested this patch in conjunction with #6456 (the upgrade to cvxopt 1.1.2).  Looking at Dima's current version of cvxopt 1.1.2, he simply changed the needed two lines in \"setup.py\" directly rather than apply the patch included here. \n> \n> The combination of #9598 and #6456 has so far been tested on OS X (me), Linux 32 (Dima), and also by shilly (OS not mentioned); see the comments in the #6456 thread.   I don't think it's been tested on Solaris, but I don't have access to any such machines and can't help with that.\n> \n> Nathan\n\nI've looked at this and can't see any documentation or doctests to accompany the change to cvxopt that will allow it to use glpk. As far as I can see, this just allows cvxopt to link to the glpk library - no proof that is working properly. There's nothing to tell a user of cvxopt that they can use the glpk solver. Whilst I appreciate you and the author know that this is so, the documentation does not reflect this. Once the documentation reflects this, it can be doctested and one determine if there are any problems with the cvxopt/glpk interaction after each release of Sage. It's not clear to me how that can be done with this patch. If I'm mistaken, please correct me. \n\nYou do have access to a Solaris machine. In fact, you have a created a directory in /scratch on 't2'. \n\n\n```\nkirkby@t2:[/scratch] $ ls /scratch\ndima      dreyer    gray      juanjo2   mpatel    ncohen    rishi     sergey    wstein\ndrake     ghitza    jason     mhansen   mvngu     palmieri  scons     sking\n```\n\n\nSo you **can** check it. If you need help, I will try to help you if you can tell me what you done, and what problems or error messages you got. \n\nDave",
+    "created_at": "2010-07-26T19:18:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9598",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9598#issuecomment-92873",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:11 dunfield]:
 
@@ -275,14 +467,25 @@ drake     ghitza    jason     mhansen   mvngu     palmieri  scons     sking
 ```
 
 
-So you *can* check it. If you need help, I will try to help you if you can tell me what you done, and what problems or error messages you got. 
+So you **can** check it. If you need help, I will try to help you if you can tell me what you done, and what problems or error messages you got. 
 
 Dave
 
 
+
 ---
 
-Comment by dunfield created at 2010-07-26 19:42:48
+archive/issue_comments_092874.json:
+```json
+{
+    "body": "> You do have access to a Solaris machine. In fact, you have a created a directory in /scratch on 't2'. \n\nDave,\n\nYou're confusing me (Nathan Dunfield) with Nathann Cohen, whose scratch directory you're referring to.  You can tell us apart because Nathann has three 'n's in his first name ;-).  \n\nAs for a doctest, I think what schilly used in comment 42 of #6456 would work fine.  I've attached a patch for the documentation and also the file itself --- I'm not sure if DIma et al have also modified the docs.",
+    "created_at": "2010-07-26T19:42:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9598",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9598#issuecomment-92874",
+    "user": "dunfield"
+}
+```
 
 > You do have access to a Solaris machine. In fact, you have a created a directory in /scratch on 't2'. 
 
@@ -293,14 +496,40 @@ You're confusing me (Nathan Dunfield) with Nathann Cohen, whose scratch director
 As for a doctest, I think what schilly used in comment 42 of #6456 would work fine.  I've attached a patch for the documentation and also the file itself --- I'm not sure if DIma et al have also modified the docs.
 
 
+
 ---
+
+archive/issue_comments_092875.json:
+```json
+{
+    "body": "Attachment\n\ndevel/sage/doc/en/numerical_sage/cvxopt.rst",
+    "created_at": "2010-07-26T19:44:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9598",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9598#issuecomment-92875",
+    "user": "dunfield"
+}
+```
 
 Attachment
 
 devel/sage/doc/en/numerical_sage/cvxopt.rst
 
 
+
 ---
+
+archive/issue_comments_092876.json:
+```json
+{
+    "body": "Attachment\n\nReplying to [comment:13 dunfield]:\n> > You do have access to a Solaris machine. In fact, you have a created a directory in /scratch on 't2'. \n> \n> Dave,\n> \n> You're confusing me (Nathan Dunfield) with Nathann Cohen, whose scratch directory you're referring to.  You can tell us apart because Nathann has three 'n's in his first name ;-).  \n> \n> As for a doctest, I think what schilly used in comment 42 of #6456 would work fine.  I've attached a patch for the documentation and also the file itself --- I'm not sure if DIma et al have also modified the docs.  \n\nSorry Nathan, you are correct. I am confusing the two of you. It is especially easy as I know Nathann Cohen has been using GLPK - I helped him make the package which is in Sage. I even cc'ed him, as I know he has been working a lot with GLPK. So when there were replies from a Nathan\n\nDo you have an account on sage.math? If so, you can have an account on the Solaris system t2.math and test there - let me know your username on sage.math. I can point you at some instructions on how to test on t2. Testing on the Solaris system sometimes gives slightly different results from other systems, as the floating point processors are not identical. (The CPUs are **totally** different to Intel or AMD CPUs - the code is not binary compatible, though it is at the source code level.)\n\nIt's not clear to me if there is a doc test or not on #6456, as it seems that #6456 is just showing the result of typing the commands at the command line. It is basically a ticket to upgrade cvxopt. \n\n\nDave",
+    "created_at": "2010-07-26T20:40:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9598",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9598#issuecomment-92876",
+    "user": "drkirkby"
+}
+```
 
 Attachment
 
@@ -315,7 +544,7 @@ Replying to [comment:13 dunfield]:
 
 Sorry Nathan, you are correct. I am confusing the two of you. It is especially easy as I know Nathann Cohen has been using GLPK - I helped him make the package which is in Sage. I even cc'ed him, as I know he has been working a lot with GLPK. So when there were replies from a Nathan
 
-Do you have an account on sage.math? If so, you can have an account on the Solaris system t2.math and test there - let me know your username on sage.math. I can point you at some instructions on how to test on t2. Testing on the Solaris system sometimes gives slightly different results from other systems, as the floating point processors are not identical. (The CPUs are *totally* different to Intel or AMD CPUs - the code is not binary compatible, though it is at the source code level.)
+Do you have an account on sage.math? If so, you can have an account on the Solaris system t2.math and test there - let me know your username on sage.math. I can point you at some instructions on how to test on t2. Testing on the Solaris system sometimes gives slightly different results from other systems, as the floating point processors are not identical. (The CPUs are **totally** different to Intel or AMD CPUs - the code is not binary compatible, though it is at the source code level.)
 
 It's not clear to me if there is a doc test or not on #6456, as it seems that #6456 is just showing the result of typing the commands at the command line. It is basically a ticket to upgrade cvxopt. 
 
@@ -323,9 +552,20 @@ It's not clear to me if there is a doc test or not on #6456, as it seems that #6
 Dave
 
 
+
 ---
 
-Comment by dunfield created at 2010-07-26 20:43:28
+archive/issue_comments_092877.json:
+```json
+{
+    "body": "Replying to [comment:14 drkirkby]:\n> Do you have an account on sage.math?\n\nNo, I don't.  \n\nNathan",
+    "created_at": "2010-07-26T20:43:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9598",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9598#issuecomment-92877",
+    "user": "dunfield"
+}
+```
 
 Replying to [comment:14 drkirkby]:
 > Do you have an account on sage.math?
@@ -335,15 +575,37 @@ No, I don't.
 Nathan
 
 
+
 ---
 
-Comment by dunfield created at 2010-12-03 15:20:16
+archive/issue_comments_092878.json:
+```json
+{
+    "body": "This has now been fixed as a small part of  #6456.",
+    "created_at": "2010-12-03T15:20:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9598",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9598#issuecomment-92878",
+    "user": "dunfield"
+}
+```
 
 This has now been fixed as a small part of  #6456.
 
 
+
 ---
 
-Comment by dunfield created at 2010-12-03 15:20:16
+archive/issue_comments_092879.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-12-03T15:20:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9598",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9598#issuecomment-92879",
+    "user": "dunfield"
+}
+```
 
 Resolution: fixed

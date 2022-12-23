@@ -1,11 +1,21 @@
 # Issue 2424: [with patch, needs review] small roots method for polynomials mod N (N composite)
 
-Issue created by migration from https://trac.sagemath.org/ticket/2424
-
-Original creator: malb
-
-Original creation time: 2008-03-07 22:43:01
-
+archive/issues_002424.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  dmharvey\n\nThe attached patch implements ... well, lets just look at the docstring:\n\n```\nLet $N$ be the characteristic of the base ring this polynomial\nis defined over: \\code{N = self.base_ring().characteristic()}.\nThis method returns small roots of this polynomial modulo some\nfactor $b$ of $N$ with the constraint that $b >= N^\\beta$.\nSmall in this context means that if $x$ is a root of $f$ modulo\n$b$ then $|x| < X$.  This $X$ is either provided by the user or\nthe maximum $X$ is chosen such that this algorithm terminates in\npolynomial time. If $X$ is chosen automatically it is $X =\nN^{\\beta^2/\\delta - \\epsilon}$.`This algorithm` in this context\nmeans Coppersmith's algorithm for finding small roots using the\nLLL algorithm. The implementation of this algorithm follows\nAlexander May's PhD thesis referenced below.\n\nINPUT:\n    X -- an absolute bound for the root (default: see above)\n    beta -- compute a root mod $b$ where $b$ is a factor of $N$\n             and $b >= N^\\beta$.  (default: 1.0 => $b = N$)\n    **kwds -- passed through to LLL method of\n              \\code{Matrix_integer_dense}.\n\nEXAMPLES:\n\nFirst consider a small example:\n\n    sage: N = 10001\n    sage: K = Zmod(10001)\n    sage: P.<x> = PolynomialRing(K)\n    sage: f = x^3 + 10*x^2 + 5000*x - 222\n\nThis polynomial is irreducible of $K$\n\n    sage: f.is_irreducible()\n    True\n\nand has no roots without modular reduction (i.e. over $\\mathbb{ZZ}$):\n\n    sage: f.change_ring(ZZ).roots()\n    []\n\nTo compute its roots we need to factor the modulus $N$ and use\nthe chinese remainder theorem:\n\n    sage: p,q = map(lambda (r,m): r, N.factor())\n    sage: f.change_ring(GF(p)).roots()\n    [(4, 1)]\n    sage: f.change_ring(GF(q)).roots()\n    [(4, 1)]\n\n    sage: crt(4, 4, p, q) \n    4\n\nThis root is quite small compared to $N$ so we can attempt to\nrecover it without factoring $N$ using Coppersmith's small root\nmethod:\n\n   sage: f.small_roots()\n   [4]\n\nAn application of this method is to consider RSA. We are using\n512-bit RSA with public exponent $e=3$ to encrypt a 56-bit DES\nkey. Because it would be easy to attack this setting if no\npadding was used we pad the key $K$ with 1s to get a large\nnumber.\n\n    sage: Nbits, Kbits = 512, 56\n    sage: e = 3\n\nWe choose two primes of size 256-bit each.\n\n    sage: p = 2^256 + 2^8 + 2^5 + 2^3 + 1\n    sage: q = 2^256 + 2^8 + 2^5 + 2^3 + 2^2 + 1\n    sage: N = p*q\n    sage: ZmodN = Zmod( N )\n\nWe choose a random key\n\n    sage: K = ZZ.random_element(0, 2^Kbits)\n\nand pad it with 512-56=456 1s\n\n    sage: Kdigits = K.digits()\n    sage: M = [0]*Kbits + [1]*(Nbits-Kbits)\n    sage: for i in range(len(Kdigits)): M[i] = Kdigits[i]\n\n    sage: M = ZZ(M, 2)\n\nNow we encrypt the resulting message:\n\n    sage: C = ZmodN(M)^e\n\nTo recover $K$ we consider the following polynomial modulo $N$:\n\n    sage: P.<x> = PolynomialRing(ZmodN)\n    sage: f = (2^Nbits - 2^Kbits + x)^e - C\n\nand recover its small roots:\n\n    sage: Kbar = f.small_roots()[0]\n    sage: K == Kbar\n    True\n\nThe same algorithm can be used to factor $N = pq$ if partial\nknowledge about $q$ is available. This example is from the MAGMA\nhandbook:\n\nFirst, we set up $p$,$q$ and $N$.\n\n    sage: length = 512\n    sage: hidden = 110\n    sage: p = next_prime(2^int(round(length/2)))\n    sage: q = next_prime( round(pi.n()*p) )\n    sage: N = p*q\n\nNow we disturb the low 110 bits of $q$\n\n     sage: qbar = q + ZZ.random_element(0,2^hidden-1)\n\nAnd try to recover $q$ from it:\n\n     sage: F.<x> = PolynomialRing(Zmod(N))\n     sage: f = x - qbar\n\nWe know that the error is $<= 2^{hidden}-1$ and that the modulus\nwe are looking for is $>= sqrt(N)$.\n\n     sage: set_verbose(2)\n     sage: d = f.small_roots(X=2^hidden-1, beta=0.5)[0]\n     verbose 2 (<module>) m = 4\n     verbose 2 (<module>) t = 4\n     verbose 2 (<module>) X = 1298074214633706907132624082305023\n     verbose 1 (<module>) LLL of 8x8 matrix (algorithm fpLLL:wrapper)\n     verbose 1 (<module>) LLL finished (time = 0.0...)\n     sage: q == qbar - d\n     True\n\nREFERENCES:\n    Don Coppersmith. Finding a small root of a univariate\n        modular equation.  In Advances in Cryptology, EuroCrypt\n        1996, volume 1070 of Lecture Notes in Computer Science,\n        p. 155--165. Springer, 1996.\n        http://cr.yp.to/bib/2001/coppersmith.pdf\n\n  Alexander May. New RSA Vulnerabilities Using Lattice Reduction\n        Methods.  PhD thesis, University of Paderborn, 2003\n        http://www.informatik.tu-darmstadt.de/KP/publications/03/bp.ps\n```\n\n\nWhy should this function be in Sage?\n* Magma has it ;-)\n* It is of some importance in cryptography\n\nIssue created by migration from https://trac.sagemath.org/ticket/2424\n\n",
+    "created_at": "2008-03-07T22:43:01Z",
+    "labels": [
+        "number theory",
+        "minor",
+        "enhancement"
+    ],
+    "title": "[with patch, needs review] small roots method for polynomials mod N (N composite)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2424",
+    "user": "malb"
+}
+```
 Assignee: was
 
 CC:  dmharvey
@@ -162,27 +172,66 @@ REFERENCES:
 
 
 Why should this function be in Sage?
- * Magma has it ;-)
- * It is of some importance in cryptography
+* Magma has it ;-)
+* It is of some importance in cryptography
+
+Issue created by migration from https://trac.sagemath.org/ticket/2424
+
+
+
 
 
 ---
+
+archive/issue_comments_016400.json:
+```json
+{
+    "body": "Attachment\n\nthis patch addresses a concern raised by David via private communication",
+    "created_at": "2008-03-12T16:45:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2424",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2424#issuecomment-16400",
+    "user": "malb"
+}
+```
 
 Attachment
 
 this patch addresses a concern raised by David via private communication
 
 
+
 ---
 
-Comment by dmharvey created at 2008-03-12 17:37:34
+archive/issue_comments_016401.json:
+```json
+{
+    "body": "I can't comment on the mathematical correctness, but the patch looks good otherwise, and the examples are nice. Martin: if you can find someone else who knows about this stuff and is willing to look over the code, that would be good. Otherwise, if we don't have anyone else on the team with this expertise, let's just merge it in.",
+    "created_at": "2008-03-12T17:37:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2424",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2424#issuecomment-16401",
+    "user": "dmharvey"
+}
+```
 
 I can't comment on the mathematical correctness, but the patch looks good otherwise, and the examples are nice. Martin: if you can find someone else who knows about this stuff and is willing to look over the code, that would be good. Otherwise, if we don't have anyone else on the team with this expertise, let's just merge it in.
 
 
+
 ---
 
-Comment by wdj created at 2008-03-13 02:53:41
+archive/issue_comments_016402.json:
+```json
+{
+    "body": "Doesn't this seem like there is an error in the code?\n\n\n```\nsage: R.<x> = PolynomialRing(IntegerModRing(6),\"x\")\nsage: f = x*(x-5)*(x-1)\nsage: [f(i) for i in range(6)]\n[0, 0, 0, 0, 0, 0]\nsage: f.small_roots()\n[]\n```\n\nSeems obviously wrong, compared to\n\n```\nsage: f = (x-1)*(x-2)\nsage: [f(i) for i in range(6)]\n[2, 0, 0, 2, 0, 0]\nsage: f.small_roots()\n[2, 1, -1, -2]\n```\n\nwhich seems right, but with a non-standard way of representing elements\nin ZZ/6ZZ:\n\n```\nsage: IntegerModRing(6).list()\n[0, 1, 2, 3, 4, 5]\n```\n\nIt's also possible I'm completely overlooking something obvious.",
+    "created_at": "2008-03-13T02:53:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2424",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2424#issuecomment-16402",
+    "user": "wdj"
+}
+```
 
 Doesn't this seem like there is an error in the code?
 
@@ -217,9 +266,20 @@ sage: IntegerModRing(6).list()
 It's also possible I'm completely overlooking something obvious.
 
 
+
 ---
 
-Comment by malb created at 2008-03-13 09:55:13
+archive/issue_comments_016403.json:
+```json
+{
+    "body": "Coppersmith's method certainly isn't designed for such very small $N=6$. Note, that Magma gives similar answers:\n\n\n```\nsage: R.<x> = PolynomialRing(IntegerModRing(6),\"x\")\nsage: f = x*(x-5)*(x-1)\nsage: f.small_roots()\n[]\nsage: fM = f.change_ring(ZZ)._magma_()\nsage: fM.SmallRoots(6,1)\n<type 'exceptions.TypeError'>: Error evaluation Magma code.\nIN:_sage_[52] := SmallRoots(_sage_[49],_sage_[50],_sage_[51]);\nOUT:\n>> _sage_[52] := SmallRoots(_sage_[49],_sage_[50],_sage_[51]);\n                           ^\nRuntime error in 'SmallRoots': X is too large\n```\n\n\nand \n\n\n```\nsage: R.<x> = PolynomialRing(IntegerModRing(6),\"x\")\nsage: f = (x-1)*(x-2)\nsage: f.small_roots()\n[2, 1, -1, -2]\nsage: fM = f.change_ring(ZZ)._magma_()\nsage: fM.SmallRoots(6,1)\n[ -1 ]\n```\n\n\nBut there is at least one bug in my code, the return type is `Integer`.",
+    "created_at": "2008-03-13T09:55:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2424",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2424#issuecomment-16403",
+    "user": "malb"
+}
+```
 
 Coppersmith's method certainly isn't designed for such very small $N=6$. Note, that Magma gives similar answers:
 
@@ -257,23 +317,58 @@ sage: fM.SmallRoots(6,1)
 But there is at least one bug in my code, the return type is `Integer`.
 
 
+
 ---
 
-Comment by malb created at 2008-03-13 09:59:32
+archive/issue_comments_016404.json:
+```json
+{
+    "body": "apply on top of coppersmith.patch (fixes issue discovered by wdj)",
+    "created_at": "2008-03-13T09:59:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2424",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2424#issuecomment-16404",
+    "user": "malb"
+}
+```
 
 apply on top of coppersmith.patch (fixes issue discovered by wdj)
 
 
+
 ---
+
+archive/issue_comments_016405.json:
+```json
+{
+    "body": "Attachment\n\nthis patch adapts the bound X such that the examples of David Joyner work",
+    "created_at": "2008-03-14T11:52:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2424",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2424#issuecomment-16405",
+    "user": "malb"
+}
+```
 
 Attachment
 
 this patch adapts the bound X such that the examples of David Joyner work
 
 
+
 ---
 
-Comment by malb created at 2008-03-14 11:53:56
+archive/issue_comments_016406.json:
+```json
+{
+    "body": "I've attached a new patch which fixes the issue reported by David Joyner above:\n\n\n```\nsage: R.<x> = PolynomialRing(IntegerModRing(6),\"x\")\nsage: f = x*(x-5)*(x-1)\nsage: f.small_roots()\n[0, 1, 5]\n```\n",
+    "created_at": "2008-03-14T11:53:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2424",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2424#issuecomment-16406",
+    "user": "malb"
+}
+```
 
 I've attached a new patch which fixes the issue reported by David Joyner above:
 
@@ -287,9 +382,20 @@ sage: f.small_roots()
 
 
 
+
 ---
 
-Comment by malb created at 2008-03-18 15:53:22
+archive/issue_comments_016407.json:
+```json
+{
+    "body": "Review by Bill Hart via private communication:\n\nI think the algorithm will fail if the content of f is not coprime to\nN. Since f is reduced mod N, this implies that a non-trivial factor of\nN has been found, but should be checked for by taking the GCD of the\ncontent and N.\n\nThe polynomial should be made monic by multiplying by an inverse of\nits leading coefficient if it isn't monic. If the user tries to run\nthis algorithm on a non-monic f, I believe that the results are\nundefined.\n\nFurthermore, failure to compute such an inverse of the leading\ncoefficient would imply a factorisation of N, which again, should\ntechnically be checked for. Obviously it is highly unlikely if N is\nlarge, as it should be. But if this algorithm gets used in unintended\nways, it should still operate.\n\nI see that you need the parameter epsilon to be less than beta/7, but\nI am wondering why you choose it fixed at beta/8 rather than allow it\nto be set by the user as a parameter and let epsilon have a default\nvalue of beta/7?\n\nWhat happens if the user enters a value of beta which is negative or\ngreater than 1 (t for example will then be negative)?\n\nCurrently if the user inputs a value of beta with beta <= deg(f)/8\nthen X gets set to 1.\n\nIs LLL always guaranteed to return the vectors in order of length,\nsince the algorithm relies on using the shortest of the LLL reduced\nbasis vectors?\n\nThe algorithm, as currently implemented, may return values which are\nnot roots of the original polynomial f. You need to implement the rest\nof step 4 on page 37 of the thesis.\n\nThe value of X should use the 1/2 factor as on page 34. The technique\nof Coppersmith is proven to return the roots below the bound, however\nthe proof relies on the factor of 1/2 on page 36 (about 2/3 of the way\ndown). Unless it can be reproved without the factor of 1/2 it should\nbe used in the implementation.",
+    "created_at": "2008-03-18T15:53:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2424",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2424#issuecomment-16407",
+    "user": "malb"
+}
+```
 
 Review by Bill Hart via private communication:
 
@@ -335,14 +441,38 @@ down). Unless it can be reproved without the factor of 1/2 it should
 be used in the implementation.
 
 
+
 ---
 
-Comment by malb created at 2008-03-19 11:32:34
+archive/issue_comments_016408.json:
+```json
+{
+    "body": "patch addresses review remarks by Bill Hart",
+    "created_at": "2008-03-19T11:32:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2424",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2424#issuecomment-16408",
+    "user": "malb"
+}
+```
 
 patch addresses review remarks by Bill Hart
 
 
+
 ---
+
+archive/issue_comments_016409.json:
+```json
+{
+    "body": "Attachment\n\nReplying to [comment:7 malb]:\n> I think the algorithm will fail if the content of f is not coprime to\n> N. Since f is reduced mod N, this implies that a non-trivial factor of\n> N has been found, but should be checked for by taking the GCD of the\n> content and N.\n> \n> The polynomial should be made monic by multiplying by an inverse of\n> its leading coefficient if it isn't monic. If the user tries to run\n> this algorithm on a non-monic f, I believe that the results are\n> undefined.\n> \n> Furthermore, failure to compute such an inverse of the leading\n> coefficient would imply a factorisation of N, which again, should\n> technically be checked for. Obviously it is highly unlikely if N is\n> large, as it should be. But if this algorithm gets used in unintended\n> ways, it should still operate.\n\nAll this should be addressed by raising an error if the polynomial is not monic (including the content remark). We don't make the polynomial monic because this way the user has full control and can use the fact of being lucky and just having split N.\n \n> I see that you need the parameter epsilon to be less than beta/7, but\n> I am wondering why you choose it fixed at beta/8 rather than allow it\n> to be set by the user as a parameter and let epsilon have a default\n> value of beta/7?\n\nUpdated accordingly.\n\n> What happens if the user enters a value of beta which is negative or\n> greater than 1 (t for example will then be negative)?\n>\n> Currently if the user inputs a value of beta with beta <= deg(f)/8\n> then X gets set to 1.\n\nThe bounds are now enforced.\n \n> Is LLL always guaranteed to return the vectors in order of length,\n> since the algorithm relies on using the shortest of the LLL reduced\n> basis vectors?\n\nYes.\n\n> The algorithm, as currently implemented, may return values which are\n> not roots of the original polynomial f. You need to implement the rest\n> of step 4 on page 37 of the thesis.\n\nWoops & updated accordingly.\n\n> The value of X should use the 1/2 factor as on page 34. The technique\n> of Coppersmith is proven to return the roots below the bound, however\n> the proof relies on the factor of 1/2 on page 36 (about 2/3 of the way\n> down). Unless it can be reproved without the factor of 1/2 it should\n> be used in the implementation.\n\nFixed. However, I was under the impression that Magma does something different here. In any case, the user can supply his/her own X.",
+    "created_at": "2008-03-19T11:35:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2424",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2424#issuecomment-16409",
+    "user": "malb"
+}
+```
 
 Attachment
 
@@ -401,16 +531,38 @@ Woops & updated accordingly.
 Fixed. However, I was under the impression that Magma does something different here. In any case, the user can supply his/her own X.
 
 
+
 ---
 
-Comment by dmharvey created at 2008-03-19 21:18:59
+archive/issue_comments_016410.json:
+```json
+{
+    "body": "Ummmm. The docstring says default value for epsilon is beta/8. But in the code it selects beta/7. Also, Bill seems to suggest above that epsilon needs to be less than beta/7 (or was it beta/8?) but this is not enforced anywhere in the code.",
+    "created_at": "2008-03-19T21:18:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2424",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2424#issuecomment-16410",
+    "user": "dmharvey"
+}
+```
 
 Ummmm. The docstring says default value for epsilon is beta/8. But in the code it selects beta/7. Also, Bill seems to suggest above that epsilon needs to be less than beta/7 (or was it beta/8?) but this is not enforced anywhere in the code.
 
 
+
 ---
 
-Comment by malb created at 2008-03-19 21:35:36
+archive/issue_comments_016411.json:
+```json
+{
+    "body": "Replying to [comment:9 dmharvey]:\n> Ummmm. The docstring says default value for epsilon is beta/8. But in the code it selects beta/7. \n\nFixed in `small_roots_epsilon.patch`.\n\n> Also, Bill seems to suggest above that epsilon needs to be less than beta/7 (or was it beta/8?) but this is not enforced anywhere in the code.\n\nAFAIK, it doesn't need to be smaller than beta/7 but in my old code I assumed it was. The choice of epsilon is somewhat arbitrary (\"choose an epsilon.\").",
+    "created_at": "2008-03-19T21:35:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2424",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2424#issuecomment-16411",
+    "user": "malb"
+}
+```
 
 Replying to [comment:9 dmharvey]:
 > Ummmm. The docstring says default value for epsilon is beta/8. But in the code it selects beta/7. 
@@ -422,29 +574,75 @@ Fixed in `small_roots_epsilon.patch`.
 AFAIK, it doesn't need to be smaller than beta/7 but in my old code I assumed it was. The choice of epsilon is somewhat arbitrary ("choose an epsilon.").
 
 
+
 ---
+
+archive/issue_comments_016412.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-03-19T21:35:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2424",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2424#issuecomment-16412",
+    "user": "malb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by dmharvey created at 2008-03-19 21:47:19
+archive/issue_comments_016413.json:
+```json
+{
+    "body": "Thumbs up from me.\n\n(Thanks Bill Hart for doing the hard work in this review.)",
+    "created_at": "2008-03-19T21:47:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2424",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2424#issuecomment-16413",
+    "user": "dmharvey"
+}
+```
 
 Thumbs up from me.
 
 (Thanks Bill Hart for doing the hard work in this review.)
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-20 04:51:55
+archive/issue_comments_016414.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-03-20T04:51:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2424",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2424#issuecomment-16414",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-20 04:51:55
+archive/issue_comments_016415.json:
+```json
+{
+    "body": "Merged all five patches in Sage 2.11.alpha0 - great work everybody.",
+    "created_at": "2008-03-20T04:51:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2424",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2424#issuecomment-16415",
+    "user": "mabshoff"
+}
+```
 
 Merged all five patches in Sage 2.11.alpha0 - great work everybody.

@@ -1,11 +1,21 @@
 # Issue 4362: Bug fixes in tableaux latex output [with patches at #4355. Needs review.]
 
-Issue created by migration from https://trac.sagemath.org/ticket/4362
-
-Original creator: bump
-
-Original creation time: 2008-10-24 11:34:13
-
+archive/issues_004362.json:
+```json
+{
+    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nThe latex output of tableaux is a broke, which affects the latex output in CrystalOfTableaux. Patches that fix this were attached to #4355 but I should have created a new ticket for these since that ticket really proposes something different.\n\nSee #4355 for the patches.\n\nSee http://groups.google.com/group/sage-combinat-devel/browse_thread/thread/3fff0cbc6b44b483?hl=en for discussion. But in a nutshell try \n\n\n```\nlatex(Tableau([[1,2,3],[2,2],[3,4],[4]])) \nlatex(Tableau([[1,1,2,3,4],[2,2,2],[3]])) \nlatex(Tableau([[1],[2],[3],[4]])) \nlatex(Tableau([[1,2,3,4]])) \nlatex(Tableau([[1,2,3,4],[5,6,7,8]])) \nlatex(Tableau([[1,2,3,4],[5,6,7,8],[9]])) \nlatex(Tableau([[1,2,],[5,6],[7,9]])) \nlatex(Tableau([[1,2,],[5,6],[7,9],[9]])) \nlatex(Tableau([[1,2,3,4,5,],[6]])) \nlatex(Tableau([[1,2,3,4,5,],[6],[7],[8],[9]])) \n```\n\n\netc or \n\n\n```\nCrystalOfTableaux(\"A2\",shape=[3,1]).latex_file(\"/home/bump/tmp/test.tex\")\n```\n\n\nto see the defect.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4362\n\n",
+    "created_at": "2008-10-24T11:34:13Z",
+    "labels": [
+        "combinatorics",
+        "major",
+        "bug"
+    ],
+    "title": "Bug fixes in tableaux latex output [with patches at #4355. Needs review.]",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4362",
+    "user": "bump"
+}
+```
 Assignee: mhansen
 
 CC:  sage-combinat
@@ -43,24 +53,65 @@ to see the defect.
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4362
+
+
+
+
 
 ---
+
+archive/issue_comments_032044.json:
+```json
+{
+    "body": "Attachment\n\nFirst of Dan's patches from #4355",
+    "created_at": "2008-10-24T11:40:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4362",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4362#issuecomment-32044",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 First of Dan's patches from #4355
 
 
+
 ---
+
+archive/issue_comments_032045.json:
+```json
+{
+    "body": "Attachment\n\nSecond of Dan's patches from #4355",
+    "created_at": "2008-10-24T11:40:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4362",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4362#issuecomment-32045",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 Second of Dan's patches from #4355
 
 
+
 ---
 
-Comment by mabshoff created at 2008-10-24 11:42:08
+archive/issue_comments_032046.json:
+```json
+{
+    "body": "Dan, \n\nI have moved the patches from #4355 over here and will delete them on the other ticket. Having patches from another ticket applied via this ticket will only make things more complicated than they need to be.\n\nCheers,\n\nMichael",
+    "created_at": "2008-10-24T11:42:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4362",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4362#issuecomment-32046",
+    "user": "mabshoff"
+}
+```
 
 Dan, 
 
@@ -71,14 +122,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mhansen created at 2008-11-06 22:25:57
+archive/issue_comments_032047.json:
+```json
+{
+    "body": "I tested this out on all the examples, and it looks good to me.",
+    "created_at": "2008-11-06T22:25:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4362",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4362#issuecomment-32047",
+    "user": "mhansen"
+}
+```
 
 I tested this out on all the examples, and it looks good to me.
 
 
+
 ---
+
+archive/issue_comments_032048.json:
+```json
+{
+    "body": "Attachment\n\nNicolas suggested that the tests should reflect the problem. As it turns out the existing tests all have square tableaux (in tensor_product.py, tableau.py and output.py) which is a rare case that is not broke for the original code.\n\nhttp://groups.google.com/group/sage-combinat-devel/msg/cd0de81b0e2f0ae5?hl=en\n\nNicolas posted this before Mike reviewed the patch. In view of Nicolas' comment I'm uploading\na third patch tableaux_output2.patch that makes the tests non-rectangular tableaux\nfor which the original code was broke.",
+    "created_at": "2008-11-06T23:11:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4362",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4362#issuecomment-32048",
+    "user": "bump"
+}
+```
 
 Attachment
 
@@ -91,16 +166,38 @@ a third patch tableaux_output2.patch that makes the tests non-rectangular tablea
 for which the original code was broke.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-07 16:13:23
+archive/issue_comments_032049.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-11-07T16:13:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4362",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4362#issuecomment-32049",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-07 16:13:23
+archive/issue_comments_032050.json:
+```json
+{
+    "body": "Merged all three patches in Sage 3.2.rc0. \n\nDan: Please make sure that you post patches and not diffs. I did apply and commit the patches above in your name, so no need to update anything here.\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-07T16:13:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4362",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4362#issuecomment-32050",
+    "user": "mabshoff"
+}
+```
 
 Merged all three patches in Sage 3.2.rc0. 
 

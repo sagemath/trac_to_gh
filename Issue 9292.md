@@ -1,25 +1,63 @@
 # Issue 9292: Parabolic and reflection subgroups of Coxeter groups
 
-Issue created by migration from https://trac.sagemath.org/ticket/9292
-
-Original creator: nthiery
-
-Original creation time: 2010-06-21 08:28:06
-
+archive/issues_009292.json:
+```json
+{
+    "body": "Assignee: sage-combinat\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9292\n\n",
+    "created_at": "2010-06-21T08:28:06Z",
+    "labels": [
+        "combinatorics",
+        "major",
+        "enhancement"
+    ],
+    "title": "Parabolic and reflection subgroups of Coxeter groups",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9292",
+    "user": "nthiery"
+}
+```
 Assignee: sage-combinat
 
 CC:  sage-combinat
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/9292
+
+
+
+
 
 ---
+
+archive/issue_comments_087516.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-06-21T08:32:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9292",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9292#issuecomment-87516",
+    "user": "nthiery"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by chapoton created at 2014-03-21 08:47:02
+archive/issue_comments_087517.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"coxeter\".",
+    "created_at": "2014-03-21T08:47:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9292",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9292#issuecomment-87517",
+    "user": "chapoton"
+}
+```
 
 Changing keywords from "" to "coxeter".

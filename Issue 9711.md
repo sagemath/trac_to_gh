@@ -1,11 +1,21 @@
 # Issue 9711: sagenb notebook -- error when downloading worksheets in some cases involving non-ASCII characters
 
-Issue created by migration from https://trac.sagemath.org/ticket/9711
-
-Original creator: was
-
-Original creation time: 2010-08-09 21:20:23
-
+archive/issues_009711.json:
+```json
+{
+    "body": "Assignee: jason, was\n\nCC:  ppurka jason kini\n\nI hope this traceback from the serverlog on prep.sagenb.org will help me to debug and fix this:\n\n```\n\n2010-08-09 14:11:02-0700 [-] Exception rendering:\n2010-08-09 14:11:02-0700 [-] Unhandled Error\n        Traceback (most recent call last):          File \"/usr/local/sage-prep/local/lib/python/threading.py\", line 497, in __bootstrap\n            self.__bootstrap_inner()\n          File \"/usr/local/sage-prep/local/lib/python/threading.py\", line 525, in __bootstrap_inner            self.run()\n          File \"/usr/local/sage-prep/local/lib/python/threading.py\", line 477, in run\n            self.__target(*self.__args, **self.__kwargs)\n        --- <exception caught here> ---\n          File \"/usr/local/sage-prep/local/lib/python2.6/site-packages/twisted/python/threadpool.py\", line 210, in _worker\n            result = context.call(ctx, function, *args, **kwargs)\n          File \"/usr/local/sage-prep/local/lib/python2.6/site-packages/twisted/python/context.py\", line 59, in callWithContext\n            return self.currentContext().callWithContext(ctx, func, *args, **kw)\n          File \"/usr/local/sage-prep/local/lib/python2.6/site-packages/twisted/python/context.py\", line 37, in callWithContext\n            return func(*args,**kw)\n          File \"/usr/local/sage-prep/sagenb-0.8.p2/src/sagenb/sagenb/notebook/twist.py\", line 1448, in f\n            notebook.export_worksheet(worksheet.filename(), sws_filename)\n          File \"/usr/local/sage-prep/sagenb-0.8.p2/src/sagenb/sagenb/notebook/notebook.py\", line 983, in export_work\nsheet\n            S.export_worksheet(username, id_number, output_filename, title=title)\n          File \"/usr/local/sage-prep/sagenb-0.8.p2/src/sagenb/sagenb/storage/filesystem_storage.py\", line 362, in ex\nport_worksheet\n            open(worksheet_txt,'w').write(old_heading + open(worksheet_html).read())\n        exceptions.UnicodeDecodeError: 'ascii' codec can't decode byte 0xc2 in position 180: ordinal not in range(12\n8)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9711\n\n",
+    "created_at": "2010-08-09T21:20:23Z",
+    "labels": [
+        "notebook",
+        "major",
+        "bug"
+    ],
+    "title": "sagenb notebook -- error when downloading worksheets in some cases involving non-ASCII characters",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9711",
+    "user": "was"
+}
+```
 Assignee: jason, was
 
 CC:  ppurka jason kini
@@ -41,87 +51,227 @@ port_worksheet
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/9711
+
+
+
+
 
 ---
+
+archive/issue_comments_094644.json:
+```json
+{
+    "body": "Attachment\n\nWraps the arguments of the write call in an encoded_str() call.",
+    "created_at": "2010-08-19T12:57:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9711",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9711#issuecomment-94644",
+    "user": "timdumol"
+}
+```
 
 Attachment
 
 Wraps the arguments of the write call in an encoded_str() call.
 
 
+
 ---
 
-Comment by timdumol created at 2010-08-19 12:59:45
+archive/issue_comments_094645.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-08-19T12:59:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9711",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9711#issuecomment-94645",
+    "user": "timdumol"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by timdumol created at 2010-08-19 12:59:45
+archive/issue_comments_094646.json:
+```json
+{
+    "body": "I have been unable to replicate the issue, even with rather exotic unicode characters (in the title and the body), but this should fix any possible problems (hopefully).",
+    "created_at": "2010-08-19T12:59:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9711",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9711#issuecomment-94646",
+    "user": "timdumol"
+}
+```
 
 I have been unable to replicate the issue, even with rather exotic unicode characters (in the title and the body), but this should fix any possible problems (hopefully).
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-07-27 20:42:33
+archive/issue_comments_094647.json:
+```json
+{
+    "body": "Please fill in your real name as Author.",
+    "created_at": "2012-07-27T20:42:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9711",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9711#issuecomment-94647",
+    "user": "jdemeyer"
+}
+```
 
 Please fill in your real name as Author.
 
 
+
 ---
 
-Comment by timdumol created at 2012-07-28 04:11:24
+archive/issue_comments_094648.json:
+```json
+{
+    "body": "I think this should be closed. Codec related issues should be long gone, especially with the internationalization changes that have occurred since this.",
+    "created_at": "2012-07-28T04:11:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9711",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9711#issuecomment-94648",
+    "user": "timdumol"
+}
+```
 
 I think this should be closed. Codec related issues should be long gone, especially with the internationalization changes that have occurred since this.
 
 
+
 ---
 
-Comment by kcrisman created at 2013-06-11 16:52:25
+archive/issue_comments_094649.json:
+```json
+{
+    "body": "If this is still valid, [the relevant code](https://github.com/sagemath/sagenb/blob/master/sagenb/storage/filesystem_storage.py#L462) has changed slightly, so this wouldn't apply.  Also, we should probably create a pull request.\n\nOr, as Tim suggests, if not, we could indeed close this.  It's unfortunate William didn't attach a sample sws :(  I'd go with Tim, though I think that we should have at least one current sagenb guru also confirm his statement.",
+    "created_at": "2013-06-11T16:52:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9711",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9711#issuecomment-94649",
+    "user": "kcrisman"
+}
+```
 
 If this is still valid, [the relevant code](https://github.com/sagemath/sagenb/blob/master/sagenb/storage/filesystem_storage.py#L462) has changed slightly, so this wouldn't apply.  Also, we should probably create a pull request.
 
 Or, as Tim suggests, if not, we could indeed close this.  It's unfortunate William didn't attach a sample sws :(  I'd go with Tim, though I think that we should have at least one current sagenb guru also confirm his statement.
 
 
+
 ---
 
-Comment by kcrisman created at 2013-06-11 16:52:25
+archive/issue_comments_094650.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_info.",
+    "created_at": "2013-06-11T16:52:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9711",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9711#issuecomment-94650",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_review to needs_info.
 
 
+
 ---
 
-Comment by jason created at 2013-06-11 16:58:48
+archive/issue_comments_094651.json:
+```json
+{
+    "body": "I know I fixed a lot of issues involving errors like this last year.",
+    "created_at": "2013-06-11T16:58:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9711",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9711#issuecomment-94651",
+    "user": "jason"
+}
+```
 
 I know I fixed a lot of issues involving errors like this last year.
 
 
+
 ---
 
-Comment by slelievre created at 2016-08-30 13:57:18
+archive/issue_comments_094652.json:
+```json
+{
+    "body": "This is now\n[SageNB issue 410: Downloading worksheets can fail with non-ASCII characters](https://github.com/sagemath/sagenb/issues/410)",
+    "created_at": "2016-08-30T13:57:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9711",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9711#issuecomment-94652",
+    "user": "slelievre"
+}
+```
 
 This is now
 [SageNB issue 410: Downloading worksheets can fail with non-ASCII characters](https://github.com/sagemath/sagenb/issues/410)
 
 
+
 ---
+
+archive/issue_comments_094653.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2017-07-25T07:30:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9711",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9711#issuecomment-94653",
+    "user": "chapoton"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by embray created at 2018-08-14 17:16:07
+archive/issue_comments_094654.json:
+```json
+{
+    "body": "Resolution: worksforme",
+    "created_at": "2018-08-14T17:16:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9711",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9711#issuecomment-94654",
+    "user": "embray"
+}
+```
 
 Resolution: worksforme
 
 
+
 ---
 
-Comment by embray created at 2018-08-14 17:16:07
+archive/issue_comments_094655.json:
+```json
+{
+    "body": "Appears to be fixed in SageNB; see the upstream issue.",
+    "created_at": "2018-08-14T17:16:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9711",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9711#issuecomment-94655",
+    "user": "embray"
+}
+```
 
 Appears to be fixed in SageNB; see the upstream issue.

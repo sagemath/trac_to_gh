@@ -1,11 +1,21 @@
 # Issue 3626: Graph.set_boundary only takes lists
 
-Issue created by migration from https://trac.sagemath.org/ticket/3626
-
-Original creator: boothby
-
-Original creation time: 2008-07-09 18:49:36
-
+archive/issues_003626.json:
+```json
+{
+    "body": "Assignee: boothby\n\nCC:  rlm\n\n\n```\nsage: G = Graph(\"George\")\nsage: G.set_boundary(set([1,2,3]))\nsage: G.get_boundary()\n[]\n```\n\n\n... which makes sense, given the code...\n\n\n```\n    def set_boundary(self, boundary):\n        ...\n        if isinstance(boundary,list):\n            self._boundary = boundary\n\n    def set_embedding(self, embedding):\n        ...\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3626\n\n",
+    "created_at": "2008-07-09T18:49:36Z",
+    "labels": [
+        "graph theory",
+        "minor",
+        "bug"
+    ],
+    "title": "Graph.set_boundary only takes lists",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3626",
+    "user": "boothby"
+}
+```
 Assignee: boothby
 
 CC:  rlm
@@ -34,28 +44,78 @@ sage: G.get_boundary()
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3626
+
+
+
+
 
 ---
+
+archive/issue_comments_025661.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-07-09T18:53:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3626",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3626#issuecomment-25661",
+    "user": "boothby"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by rlm created at 2008-07-12 16:51:26
+archive/issue_comments_025662.json:
+```json
+{
+    "body": "+1",
+    "created_at": "2008-07-12T16:51:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3626",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3626#issuecomment-25662",
+    "user": "rlm"
+}
+```
 
 +1
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-16 00:42:12
+archive/issue_comments_025663.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-07-16T00:42:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3626",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3626#issuecomment-25663",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-16 00:42:12
+archive/issue_comments_025664.json:
+```json
+{
+    "body": "Merged in Sage 3.0.6.alpha0",
+    "created_at": "2008-07-16T00:42:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3626",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3626#issuecomment-25664",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.6.alpha0

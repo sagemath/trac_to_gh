@@ -1,20 +1,45 @@
 # Issue 2088: Optional spkgs should be integrated into the automated cython building
 
-Issue created by migration from https://trac.sagemath.org/ticket/2088
-
-Original creator: jason
-
-Original creation time: 2008-02-07 19:52:08
-
+archive/issues_002088.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nThere should be a way of building optional cython interfaces for optional spkgs in a way that is very easy for the user.  For example, it would be nice to have optional spkg cython things automatically built in the sage -b process.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2088\n\n",
+    "created_at": "2008-02-07T19:52:08Z",
+    "labels": [
+        "distribution",
+        "major",
+        "enhancement"
+    ],
+    "title": "Optional spkgs should be integrated into the automated cython building",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2088",
+    "user": "jason"
+}
+```
 Assignee: mabshoff
 
 There should be a way of building optional cython interfaces for optional spkgs in a way that is very easy for the user.  For example, it would be nice to have optional spkg cython things automatically built in the sage -b process.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2088
+
+
+
+
 
 ---
 
-Comment by jdemeyer created at 2013-08-13 15:44:58
+archive/issue_comments_013513.json:
+```json
+{
+    "body": "I guess this works now, using\n\n```\nif is_package_installed('some_package'):\n```\n\nin `module_list.py`.",
+    "created_at": "2013-08-13T15:44:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2088",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2088#issuecomment-13513",
+    "user": "jdemeyer"
+}
+```
 
 I guess this works now, using
 
@@ -25,22 +50,55 @@ if is_package_installed('some_package'):
 in `module_list.py`.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-08-13 15:44:58
+archive/issue_comments_013514.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2013-08-13T15:44:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2088",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2088#issuecomment-13514",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-08-13 15:59:17
+archive/issue_comments_013515.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2013-08-13T15:59:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2088",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2088#issuecomment-13515",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-08-16 11:11:39
+archive/issue_comments_013516.json:
+```json
+{
+    "body": "Resolution: worksforme",
+    "created_at": "2013-08-16T11:11:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2088",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2088#issuecomment-13516",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: worksforme

@@ -1,33 +1,82 @@
 # Issue 7878: remove any spaces in output of testcc.sh and testcxx.sh
 
-Issue created by migration from https://trac.sagemath.org/ticket/7878
-
-Original creator: drkirkby
-
-Original creation time: 2010-01-09 19:11:05
-
+archive/issues_007878.json:
+```json
+{
+    "body": "Assignee: GeorgSWeber\n\nOne of the scripts recently added to sage in ticket #7505 has an extra space in the output when the Sun compiler is used on Solaris. The revised version just used 'sed' to strip out any spaces. \n\nThe problem was not see on the testcc.sh, but I thought it prudent to do do both scripts the same. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7878\n\n",
+    "created_at": "2010-01-09T19:11:05Z",
+    "labels": [
+        "build",
+        "major",
+        "bug"
+    ],
+    "title": "remove any spaces in output of testcc.sh and testcxx.sh",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7878",
+    "user": "drkirkby"
+}
+```
 Assignee: GeorgSWeber
 
 One of the scripts recently added to sage in ticket #7505 has an extra space in the output when the Sun compiler is used on Solaris. The revised version just used 'sed' to strip out any spaces. 
 
 The problem was not see on the testcc.sh, but I thought it prudent to do do both scripts the same. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7878
+
+
+
+
 
 ---
+
+archive/issue_comments_068449.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-01-09T19:13:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7878",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7878#issuecomment-68449",
+    "user": "drkirkby"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by drkirkby created at 2010-01-10 02:22:36
+archive/issue_comments_068450.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-01-10T02:22:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7878",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7878#issuecomment-68450",
+    "user": "drkirkby"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-01-11 20:26:00
+archive/issue_comments_068451.json:
+```json
+{
+    "body": "## How to test\nTo test this patch you will need to have Sun Studio installed. \n\n\n```\n$ local/bin/testcc.sh /opt/sunstudio12.1/bin/cc \ndrkirkby@hawk:~/sage-4.3.1.alpha1$ local/bin/testcc.sh /opt/sunstudio12.1/bin/cc \nSun_Studio\ndrkirkby@hawk:~/sage-4.3.1.alpha1$ local/bin/testcxx.sh /opt/sunstudio12.1/bin/CC \nSun_Studio\ndrkirkby@hawk:~/sage-4.3.1.alpha1$ local/bin/testcxx.sh /opt/sunstudio12.1/bin/CC  | wc \n       1       1      12\ndrkirkby@hawk:~/sage-4.3.1.alpha1$ local/bin/testcc.sh /opt/sunstudio12.1/bin/cc | wc \n       1       1      11\n```\n\n\nNote how the current version of testcxx.sh outputs 12 characters, not 11. There is an extra space. With the attached patch, any spaces are removed, so the outputs from the two commands are identical. This is important if one wishes to test that the compilers are the same.",
+    "created_at": "2010-01-11T20:26:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7878",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7878#issuecomment-68451",
+    "user": "drkirkby"
+}
+```
 
 ## How to test
 To test this patch you will need to have Sun Studio installed. 
@@ -49,9 +98,20 @@ drkirkby@hawk:~/sage-4.3.1.alpha1$ local/bin/testcc.sh /opt/sunstudio12.1/bin/cc
 Note how the current version of testcxx.sh outputs 12 characters, not 11. There is an extra space. With the attached patch, any spaces are removed, so the outputs from the two commands are identical. This is important if one wishes to test that the compilers are the same.
 
 
+
 ---
 
-Comment by jsp created at 2010-01-27 22:47:54
+archive/issue_comments_068452.json:
+```json
+{
+    "body": "Before:\n\n\n\n```\njaap@opensolaris:~/Downloads/sage-4.3.2.alpha0$ local/bin/testcc.sh /opt/sunstudio12.1/bin/cc \nSun_Studio\njaap@opensolaris:~/Downloads/sage-4.3.2.alpha0$ local/bin/testcxx.sh /opt/sunstudio12.1/bin/CC\nSun_Studio \njaap@opensolaris:~/Downloads/sage-4.3.2.alpha0$ local/bin/testcxx.sh /opt/sunstudio12.1/bin/CC  | wc\n      1       1      12\njaap@opensolaris:~/Downloads/sage-4.3.2.alpha0$ local/bin/testcc.sh /opt/sunstudio12.1/bin/cc | wc\n      1       1      11\n\n```\n\n\nAfter the patch\n\n\n\n\n```\njaap@opensolaris:~/Downloads/sage-4.3.2.alpha0$ local/bin/testcxx.sh /opt/sunstudio12.1/bin/CC  | wc\n      1       1      11\njaap@opensolaris:~/Downloads/sage-4.3.2.alpha0$ local/bin/testcc.sh /opt/sunstudio12.1/bin/cc | wc \n      1       1      11\n\n```\n\n\n\nWorks ok, so positive review\n\nJaap",
+    "created_at": "2010-01-27T22:47:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7878",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7878#issuecomment-68452",
+    "user": "jsp"
+}
+```
 
 Before:
 
@@ -90,22 +150,55 @@ Works ok, so positive review
 Jaap
 
 
+
 ---
 
-Comment by jsp created at 2010-01-27 22:47:54
+archive/issue_comments_068453.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-01-27T22:47:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7878",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7878#issuecomment-68453",
+    "user": "jsp"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mvngu created at 2010-01-31 00:11:07
+archive/issue_comments_068454.json:
+```json
+{
+    "body": "Merged [remove-spaces-7878.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7878/remove-spaces-7878.patch) in the base spkg repository. drkirkby: please remember to put the ticket number in your patches. Such information is very useful for tracking down bugs and the ticket in which they were introduced.",
+    "created_at": "2010-01-31T00:11:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7878",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7878#issuecomment-68454",
+    "user": "mvngu"
+}
+```
 
 Merged [remove-spaces-7878.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7878/remove-spaces-7878.patch) in the base spkg repository. drkirkby: please remember to put the ticket number in your patches. Such information is very useful for tracking down bugs and the ticket in which they were introduced.
 
 
+
 ---
 
-Comment by mvngu created at 2010-01-31 00:11:07
+archive/issue_comments_068455.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-31T00:11:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7878",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7878#issuecomment-68455",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

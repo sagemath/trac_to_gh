@@ -1,24 +1,62 @@
 # Issue 6043: optimize the construction of Lagrange interpolating polynomials
 
-Issue created by migration from https://trac.sagemath.org/ticket/6043
-
-Original creator: mvngu
-
-Original creation time: 2009-05-15 08:38:40
-
+archive/issues_006043.json:
+```json
+{
+    "body": "Assignee: tbd\n\nAs the subject says.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6043\n\n",
+    "created_at": "2009-05-15T08:38:40Z",
+    "labels": [
+        "algebra",
+        "major",
+        "enhancement"
+    ],
+    "title": "optimize the construction of Lagrange interpolating polynomials",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6043",
+    "user": "mvngu"
+}
+```
 Assignee: tbd
 
 As the subject says.
 
+Issue created by migration from https://trac.sagemath.org/ticket/6043
+
+
+
+
 
 ---
 
-Comment by mvngu created at 2009-05-31 06:46:51
+archive/issue_comments_048129.json:
+```json
+{
+    "body": "based on Sage 4.0",
+    "created_at": "2009-05-31T06:46:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6043",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6043#issuecomment-48129",
+    "user": "mvngu"
+}
+```
 
 based on Sage 4.0
 
 
+
 ---
+
+archive/issue_comments_048130.json:
+```json
+{
+    "body": "Attachment\n\nLooks good to me.  Nice work!\n\nMerged in 4.0.1.rc1.",
+    "created_at": "2009-06-04T19:04:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6043",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6043#issuecomment-48130",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
@@ -27,15 +65,37 @@ Looks good to me.  Nice work!
 Merged in 4.0.1.rc1.
 
 
+
 ---
 
-Comment by mhansen created at 2009-06-04 19:04:42
+archive/issue_comments_048131.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-06-04T19:04:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6043",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6043#issuecomment-48131",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mvngu created at 2009-06-05 05:45:50
+archive/issue_comments_048132.json:
+```json
+{
+    "body": "I noticed some typos in the patch. This is addressed by #6221.",
+    "created_at": "2009-06-05T05:45:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6043",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6043#issuecomment-48132",
+    "user": "mvngu"
+}
+```
 
 I noticed some typos in the patch. This is addressed by #6221.

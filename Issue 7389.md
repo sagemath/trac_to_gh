@@ -1,11 +1,21 @@
 # Issue 7389: Fallback _point_morphism_class() has wrong signature
 
-Issue created by migration from https://trac.sagemath.org/ticket/7389
-
-Original creator: wjp
-
-Original creation time: 2009-11-04 19:45:30
-
+archive/issues_007389.json:
+```json
+{
+    "body": "Assignee: AlexGhitza\n\nThe default `Scheme._point_morphism_class()` has a different signature than the versions in the subclasses of Scheme, causing a `TypeError` when it is called instead of the intended `NotImplementedError`.\n\nSmall nonsensical example to trigger it in sage 4.2:\n\n\n```\nsage: S = Spec(ZZ)\nsage: f = S.identity_morphism()\nsage: from sage.schemes.generic.glue import GluedScheme\nsage: T = GluedScheme(f,f)\nsage: S.hom([1],T)\nTypeError: _point_morphism_class() takes exactly 1 non-keyword argument (3 given)\n```\n\n\nThe attached patch should fix it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7389\n\n",
+    "created_at": "2009-11-04T19:45:30Z",
+    "labels": [
+        "algebraic geometry",
+        "minor",
+        "bug"
+    ],
+    "title": "Fallback _point_morphism_class() has wrong signature",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7389",
+    "user": "wjp"
+}
+```
 Assignee: AlexGhitza
 
 The default `Scheme._point_morphism_class()` has a different signature than the versions in the subclasses of Scheme, causing a `TypeError` when it is called instead of the intended `NotImplementedError`.
@@ -25,48 +35,133 @@ TypeError: _point_morphism_class() takes exactly 1 non-keyword argument (3 given
 
 The attached patch should fix it.
 
+Issue created by migration from https://trac.sagemath.org/ticket/7389
+
+
+
+
 
 ---
+
+archive/issue_comments_062138.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-11-04T19:47:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7389#issuecomment-62138",
+    "user": "wjp"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by wjp created at 2009-11-04 19:48:05
+archive/issue_comments_062139.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-11-04T19:48:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7389#issuecomment-62139",
+    "user": "wjp"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-11-15 10:07:53
+archive/issue_comments_062140.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2009-11-15T10:07:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7389#issuecomment-62140",
+    "user": "AlexGhitza"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-11-15 10:07:53
+archive/issue_comments_062141.json:
+```json
+{
+    "body": "Please add a doctest that illustrates the problem being fixed (so that if someone messes this up again we can catch it automatically).  Even what you call the \"small nonsensical example\" would do; of course if you can come up with a small sensical one, that would be even better :).",
+    "created_at": "2009-11-15T10:07:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7389#issuecomment-62141",
+    "user": "AlexGhitza"
+}
+```
 
 Please add a doctest that illustrates the problem being fixed (so that if someone messes this up again we can catch it automatically).  Even what you call the "small nonsensical example" would do; of course if you can come up with a small sensical one, that would be even better :).
 
 
+
 ---
 
-Comment by AlexGhitza created at 2010-01-01 23:25:36
+archive/issue_comments_062142.json:
+```json
+{
+    "body": "apply after the previous patch",
+    "created_at": "2010-01-01T23:25:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7389#issuecomment-62142",
+    "user": "AlexGhitza"
+}
+```
 
 apply after the previous patch
 
 
+
 ---
 
-Comment by AlexGhitza created at 2010-01-01 23:36:42
+archive/issue_comments_062143.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-01-01T23:36:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7389#issuecomment-62143",
+    "user": "AlexGhitza"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
+
+archive/issue_comments_062144.json:
+```json
+{
+    "body": "Attachment\n\nOK, I've put up a patch with the doctest given in the description of this ticket.\n\nI'm happy with Willem's patch, now if someone can look at mine we're set.",
+    "created_at": "2010-01-01T23:36:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7389#issuecomment-62144",
+    "user": "AlexGhitza"
+}
+```
 
 Attachment
 
@@ -75,29 +170,73 @@ OK, I've put up a patch with the doctest given in the description of this ticket
 I'm happy with Willem's patch, now if someone can look at mine we're set.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2010-01-20 09:48:13
+archive/issue_comments_062145.json:
+```json
+{
+    "body": "Willem, could you review my patch here?",
+    "created_at": "2010-01-20T09:48:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7389#issuecomment-62145",
+    "user": "AlexGhitza"
+}
+```
 
 Willem, could you review my patch here?
 
 
+
 ---
 
-Comment by wjp created at 2010-01-20 22:13:40
+archive/issue_comments_062146.json:
+```json
+{
+    "body": "Sorry, I completely missed the trac email from your previous comment. Thanks for the review; your doctest patch looks good.",
+    "created_at": "2010-01-20T22:13:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7389#issuecomment-62146",
+    "user": "wjp"
+}
+```
 
 Sorry, I completely missed the trac email from your previous comment. Thanks for the review; your doctest patch looks good.
 
 
+
 ---
 
-Comment by wjp created at 2010-01-20 22:13:40
+archive/issue_comments_062147.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-01-20T22:13:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7389#issuecomment-62147",
+    "user": "wjp"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mvngu created at 2010-01-22 18:02:09
+archive/issue_comments_062148.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-22T18:02:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7389",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7389#issuecomment-62148",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

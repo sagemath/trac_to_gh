@@ -1,28 +1,64 @@
 # Issue 8959: interact layouts with arbitrary html
 
-Issue created by migration from https://trac.sagemath.org/ticket/8959
-
-Original creator: jason
-
-Original creation time: 2010-05-13 09:05:55
-
+archive/issues_008959.json:
+```json
+{
+    "body": "Assignee: itolkov, jason\n\nCC:  was timdumol mhampton\n\nThe layout argument of an interact should also accept a string, maybe a string in the format of either standard python formats (i.e., \"<table><tr><td>{a}</td></tr></table>\"), or using the simple template classes that come with python (i.e., \"<table><tr><td>$a</td></tr></table>\").  Whichever convention is chosen, the string is given the dictionary of {'variable name': 'html for variable control'}, or maybe {'variable name': {'label': HTML label, 'control': 'html for control'}}, so you could do \"<td>{a.label}</td><td>{a.control}</td>\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/8959\n\n",
+    "created_at": "2010-05-13T09:05:55Z",
+    "labels": [
+        "interact",
+        "major",
+        "enhancement"
+    ],
+    "title": "interact layouts with arbitrary html",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8959",
+    "user": "jason"
+}
+```
 Assignee: itolkov, jason
 
 CC:  was timdumol mhampton
 
 The layout argument of an interact should also accept a string, maybe a string in the format of either standard python formats (i.e., "<table><tr><td>{a}</td></tr></table>"), or using the simple template classes that come with python (i.e., "<table><tr><td>$a</td></tr></table>").  Whichever convention is chosen, the string is given the dictionary of {'variable name': 'html for variable control'}, or maybe {'variable name': {'label': HTML label, 'control': 'html for control'}}, so you could do "<td>{a.label}</td><td>{a.control}</td>".
 
+Issue created by migration from https://trac.sagemath.org/ticket/8959
+
+
+
+
 
 ---
 
-Comment by jason created at 2010-05-13 09:07:17
+archive/issue_comments_082577.json:
+```json
+{
+    "body": "See #7379 for the initial implementation of this feature.",
+    "created_at": "2010-05-13T09:07:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8959",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8959#issuecomment-82577",
+    "user": "jason"
+}
+```
 
 See #7379 for the initial implementation of this feature.
 
 
+
 ---
 
-Comment by jason created at 2010-05-14 03:17:37
+archive/issue_comments_082578.json:
+```json
+{
+    "body": "Okay, the attached patch lets you specify controls on each side, as well as the width of the interact.  The following code gives the interact in the screenshot attached.\n\n\n```\n\nvar('x')\n@interact(layout=dict(top=[['f'],['r','plot_points']], bottom=[['color','thickness'],['adaptive_recursion','adaptive_tolerance']], left=[['gridlines'],['fill'],['frame'],['axes']], right=[['linestyle']]))\ndef plot_example(f=sin(x^2),r=range_slider(-5,5,step_size=1/4,default=(-3,3)), \n                 color=color_selector(widget='colorpicker'),\n                 thickness=(3,(1..10)),\n                 adaptive_recursion=(5,(0..10)), adaptive_tolerance=(0.01,(0.001,1)),\n                 plot_points=(20,(1..100)),\n                 linestyle=['-','--','-.',':'],\n                 gridlines=False, fill=False,\n                 frame=False, axes=True\n                 ):\n    show(plot(f, (x,r[0],r[1]), color=color, thickness=thickness, \n                 adaptive_recursion=adaptive_recursion,\n                 adaptive_tolerance=adaptive_tolerance, plot_points=plot_points,\n                 linestyle=linestyle, fill=fill if fill else None), \n                 gridlines=gridlines, frame=frame, axes=axes)\n```\n",
+    "created_at": "2010-05-14T03:17:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8959",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8959#issuecomment-82578",
+    "user": "jason"
+}
+```
 
 Okay, the attached patch lets you specify controls on each side, as well as the width of the interact.  The following code gives the interact in the screenshot attached.
 
@@ -49,14 +85,38 @@ def plot_example(f=sin(x^2),r=range_slider(-5,5,step_size=1/4,default=(-3,3)),
 
 
 
+
 ---
+
+archive/issue_comments_082579.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-05-14T03:23:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8959",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8959#issuecomment-82579",
+    "user": "jason"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by rbeezer created at 2010-05-14 04:45:11
+archive/issue_comments_082580.json:
+```json
+{
+    "body": "Jason,\n\nNice work - this will improve the utilization of screen real estate.\n\nWas there a patch to include?\n\nRob",
+    "created_at": "2010-05-14T04:45:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8959",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8959#issuecomment-82580",
+    "user": "rbeezer"
+}
+```
 
 Jason,
 
@@ -67,44 +127,114 @@ Was there a patch to include?
 Rob
 
 
+
 ---
 
-Comment by jason created at 2010-05-14 07:14:23
+archive/issue_comments_082581.json:
+```json
+{
+    "body": "for SAGENB repository",
+    "created_at": "2010-05-14T07:14:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8959",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8959#issuecomment-82581",
+    "user": "jason"
+}
+```
 
 for SAGENB repository
 
 
+
 ---
 
-Comment by jason created at 2010-05-14 07:15:15
+archive/issue_comments_082582.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-05-14T07:15:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8959",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8959#issuecomment-82582",
+    "user": "jason"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_082583.json:
+```json
+{
+    "body": "Attachment\n\nThis patch depends on #7379 and extends the functionality there.",
+    "created_at": "2010-05-14T07:15:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8959",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8959#issuecomment-82583",
+    "user": "jason"
+}
+```
 
 Attachment
 
 This patch depends on #7379 and extends the functionality there.
 
 
+
 ---
 
-Comment by jason created at 2010-05-16 04:46:40
+archive/issue_comments_082584.json:
+```json
+{
+    "body": "apply on top of previous patches",
+    "created_at": "2010-05-16T04:46:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8959",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8959#issuecomment-82584",
+    "user": "jason"
+}
+```
 
 apply on top of previous patches
 
 
+
 ---
+
+archive/issue_comments_082585.json:
+```json
+{
+    "body": "Attachment\n\nThe handle-update-button patch takes care of the auto_update problem mhampton pointed out on #7379.  At least, I think it does; the feature seems to work.  I don't know how to doctest the notebook after I've done \"sage -python setup.py develop\" to work on notebook files.  When I try to run sage -t, there's just an error about importing jsmath.",
+    "created_at": "2010-05-16T04:48:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8959",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8959#issuecomment-82585",
+    "user": "jason"
+}
+```
 
 Attachment
 
 The handle-update-button patch takes care of the auto_update problem mhampton pointed out on #7379.  At least, I think it does; the feature seems to work.  I don't know how to doctest the notebook after I've done "sage -python setup.py develop" to work on notebook files.  When I try to run sage -t, there's just an error about importing jsmath.
 
 
+
 ---
 
-Comment by mhampton created at 2010-05-16 13:57:24
+archive/issue_comments_082586.json:
+```json
+{
+    "body": "You can do:\n\nsage -t -sagenb\n\nto test the notebook.  I'll try to check the patch out today.",
+    "created_at": "2010-05-16T13:57:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8959",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8959#issuecomment-82586",
+    "user": "mhampton"
+}
+```
 
 You can do:
 
@@ -113,24 +243,57 @@ sage -t -sagenb
 to test the notebook.  I'll try to check the patch out today.
 
 
+
 ---
 
-Comment by mhampton created at 2010-05-16 14:31:35
+archive/issue_comments_082587.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-05-16T14:31:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8959",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8959#issuecomment-82587",
+    "user": "mhampton"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mhampton created at 2010-05-16 14:31:35
+archive/issue_comments_082588.json:
+```json
+{
+    "body": "Tests pass now and a variety of interacts from the wiki work fine as well.  \n\nIt would be nice if there was an easy way to pack things in various ways.  It also makes me desire an option for slider and range_slider to change their lengths, but that's for another day.",
+    "created_at": "2010-05-16T14:31:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8959",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8959#issuecomment-82588",
+    "user": "mhampton"
+}
+```
 
 Tests pass now and a variety of interacts from the wiki work fine as well.  
 
 It would be nice if there was an easy way to pack things in various ways.  It also makes me desire an option for slider and range_slider to change their lengths, but that's for another day.
 
 
+
 ---
 
-Comment by timdumol created at 2010-07-11 06:06:38
+archive/issue_comments_082589.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-07-11T06:06:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8959",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8959#issuecomment-82589",
+    "user": "timdumol"
+}
+```
 
 Resolution: fixed

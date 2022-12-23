@@ -1,17 +1,44 @@
 # Issue 5394: [with patch, needs review] Remove the remnants of the docs from sage-ptest and make it ignore the devel/sage/build directory
 
+archive/issues_005394.json:
+```json
+{
+    "body": "Assignee: cwitty\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5394\n\n",
+    "created_at": "2009-02-27T17:14:13Z",
+    "labels": [
+        "misc",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch, needs review] Remove the remnants of the docs from sage-ptest and make it ignore the devel/sage/build directory",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5394",
+    "user": "mhansen"
+}
+```
+Assignee: cwitty
+
+
+
 Issue created by migration from https://trac.sagemath.org/ticket/5394
 
-Original creator: mhansen
-
-Original creation time: 2009-02-27 17:14:13
-
-Assignee: cwitty
 
 
 
 
 ---
+
+archive/issue_comments_041541.json:
+```json
+{
+    "body": "Attachment\n\nExcellent, couldn't have done it better myself :)\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-27T21:03:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5394",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5394#issuecomment-41541",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
@@ -22,9 +49,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-27 23:07:33
+archive/issue_comments_041542.json:
+```json
+{
+    "body": "Merged in Sage 3.4.rc0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-27T23:07:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5394",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5394#issuecomment-41542",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.4.rc0.
 
@@ -33,16 +71,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-27 23:07:33
+archive/issue_comments_041543.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-02-27T23:07:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5394",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5394#issuecomment-41543",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-28 12:19:57
+archive/issue_comments_041544.json:
+```json
+{
+    "body": "This patch actually does not ignore the bits in build and I am not quite sure why the patch doesn't work.\n\nMike: Thoughts?\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-28T12:19:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5394",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5394#issuecomment-41544",
+    "user": "mabshoff"
+}
+```
 
 This patch actually does not ignore the bits in build and I am not quite sure why the patch doesn't work.
 
@@ -53,9 +113,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-28 12:35:52
+archive/issue_comments_041545.json:
+```json
+{
+    "body": "Ok, figured it out - reviewer patch coming up.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-28T12:35:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5394",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5394#issuecomment-41545",
+    "user": "mabshoff"
+}
+```
 
 Ok, figured it out - reviewer patch coming up.
 
@@ -64,7 +135,20 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_041546.json:
+```json
+{
+    "body": "Attachment\n\nOops, the reviewer patch had some debug output in it. I removed that in the tree and did another checkin.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-28T15:50:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5394",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5394#issuecomment-41546",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 

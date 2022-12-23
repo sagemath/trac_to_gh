@@ -1,36 +1,98 @@
 # Issue 9686: Polish documentation for canonical label
 
-Issue created by migration from https://trac.sagemath.org/ticket/9686
-
-Original creator: rlm
-
-Original creation time: 2010-08-04 13:38:38
-
+archive/issues_009686.json:
+```json
+{
+    "body": "Assignee: jason, ncohen, rlm\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9686\n\n",
+    "created_at": "2010-08-04T13:38:38Z",
+    "labels": [
+        "graph theory",
+        "major",
+        "bug"
+    ],
+    "title": "Polish documentation for canonical label",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9686",
+    "user": "rlm"
+}
+```
 Assignee: jason, ncohen, rlm
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/9686
+
+
+
+
 
 ---
+
+archive/issue_comments_094160.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-08-04T13:39:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9686",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9686#issuecomment-94160",
+    "user": "rlm"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by rlm created at 2010-08-04 13:41:11
+archive/issue_comments_094161.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-08-04T13:41:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9686",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9686#issuecomment-94161",
+    "user": "rlm"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_094162.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-08-04T19:54:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9686",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9686#issuecomment-94162",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mvngu created at 2010-08-04 19:58:54
+archive/issue_comments_094163.json:
+```json
+{
+    "body": "With Sage 4.5.2.rc1 and the patch [attachment:trac_9686.patch], building the reference manual produces the following warning:\n\n```sh\n[mvngu@sage sage-4.5.2.rc1]$ ./sage -docbuild reference html\nsphinx-build -b html -d /dev/shm/mvngu/sage-4.5.2.rc1/devel/sage/doc/output/doctrees/en/reference    /dev/shm/mvngu/sage-4.5.2.rc1/devel/sage/doc/en/reference /dev/shm/mvngu/sage-4.5.2.rc1/devel/sage/doc/output/html/en/reference\nRunning Sphinx v0.6.3\nloading pickled environment... done\nbuilding [html]: targets for 1 source files that are out of date\nupdating environment: 0 added, 1 changed, 0 removed\nreading sources... [100%] sage/graphs/generic_graph\n:0: (ERROR/3) Unexpected indentation.\nlooking for now-outdated files... none found\npickling environment... done\nchecking consistency... done\npreparing documents... done\nwriting output... [100%] sage/graphs/generic_graph\nwriting additional files... genindex modindex search\ncopying static files... done\ndumping search index... done\ndumping object inventory... done\nbuild succeeded, 1 warning.\nBuild finished.  The built documents can be found in /dev/shm/mvngu/sage-4.5.2.rc1/devel/sage/doc/output/html/en/reference\n```\n\nThis is due to how the added list are indented. The indentation of lists in the enclosing method, i.e. `canonical_label`, is inconsistent. Look at how the list of input is indented as compared with the list immediately following the first docstring line and the new list proposed by the patch [attachment:trac_9686.patch]. The reviewer patch [attachment:trac_9686-reviewer.patch] should restore some consistency in how lists in `canonical_label` are indented. The reviewer patch also resolves the above warning. \n\n\n\nI'm happy with the content of [attachment:trac_9686.patch]. We need someone other than me to look over [attachment:trac_9686-reviewer.patch].",
+    "created_at": "2010-08-04T19:58:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9686",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9686#issuecomment-94163",
+    "user": "mvngu"
+}
+```
 
 With Sage 4.5.2.rc1 and the patch [attachment:trac_9686.patch], building the reference manual produces the following warning:
 
@@ -63,22 +125,55 @@ This is due to how the added list are indented. The indentation of lists in the 
 I'm happy with the content of [attachment:trac_9686.patch]. We need someone other than me to look over [attachment:trac_9686-reviewer.patch].
 
 
+
 ---
 
-Comment by rlm created at 2010-08-04 22:45:14
+archive/issue_comments_094164.json:
+```json
+{
+    "body": "Looks good.",
+    "created_at": "2010-08-04T22:45:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9686",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9686#issuecomment-94164",
+    "user": "rlm"
+}
+```
 
 Looks good.
 
 
+
 ---
 
-Comment by rlm created at 2010-08-04 22:45:14
+archive/issue_comments_094165.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-08-04T22:45:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9686",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9686#issuecomment-94165",
+    "user": "rlm"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mpatel created at 2010-08-09 09:47:03
+archive/issue_comments_094166.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-08-09T09:47:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9686",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9686#issuecomment-94166",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed

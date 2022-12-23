@@ -1,20 +1,45 @@
 # Issue 6621: [with patch, needs review] Permutation.inverse too slow
 
-Issue created by migration from https://trac.sagemath.org/ticket/6621
-
-Original creator: aclaesson
-
-Original creation time: 2009-07-25 17:31:34
-
+archive/issues_006621.json:
+```json
+{
+    "body": "Assignee: mhansen\n\nThe running time of the current implementation of Permutation.inverse is quadratic in the length of the permutation. The attached small patch is linear.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6621\n\n",
+    "created_at": "2009-07-25T17:31:34Z",
+    "labels": [
+        "combinatorics",
+        "major",
+        "enhancement"
+    ],
+    "title": "[with patch, needs review] Permutation.inverse too slow",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6621",
+    "user": "aclaesson"
+}
+```
 Assignee: mhansen
 
 The running time of the current implementation of Permutation.inverse is quadratic in the length of the permutation. The attached small patch is linear.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6621
+
+
+
+
 
 ---
 
-Comment by ddrake created at 2009-07-25 17:43:38
+archive/issue_comments_054254.json:
+```json
+{
+    "body": "Uh oh, this doesn't pass doctests: I get\n\n```\nFile \"/var/tmp/sage-4.1/devel/sage/sage/combinat/symmetric_group_algebra.py\", line 141:\n    sage: QS3.cpi([1,1,1])\nException raised:\n    Traceback (most recent call last):\n      File \"/var/tmp/sage-4.1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/var/tmp/sage-4.1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/var/tmp/sage-4.1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_6[5]>\", line 1, in <module>\n        QS3.cpi([Integer(1),Integer(1),Integer(1)])###line 141:\n    sage: QS3.cpi([1,1,1])\n      File \"/var/tmp/sage-4.1/local/lib/python/site-packages/sage/combinat/symmetric_group_algebra.py\", line 158, in cpi\n        cpi += big_coeff * character_table[p_index][np.index(g.inverse().cycle_type())] * self(g)\n    AttributeError: 'list' object has no attribute 'cycle_type'\n```\n\n\nInstead of `return w`, you need `return Permutation(w)`",
+    "created_at": "2009-07-25T17:43:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6621",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6621#issuecomment-54254",
+    "user": "ddrake"
+}
+```
 
 Uh oh, this doesn't pass doctests: I get
 
@@ -41,7 +66,20 @@ Exception raised:
 Instead of `return w`, you need `return Permutation(w)`
 
 
+
 ---
+
+archive/issue_comments_054255.json:
+```json
+{
+    "body": "Attachment\n\nPositive review! Here are some timings:\n\nFor the permutation [6,7,8,9,4,2,3,1,5], on my machine, the timing went from 70.9 \u00b5s per loop to 24.7 \u00b5s per loop. (This is all \"%timeit p.inverse()\".\n\nFor [19, 5, 13, 8, 7, 15, 9, 10, 16, 3, 12, 6, 2, 20, 18, 11, 14, 4, 17, 1], it went from \n263 \u00b5s per loop to 40 \u00b5s per loop.\n\nFor [14, 17, 1, 24, 16, 34, 19, 9, 20, 18, 36, 5, 22, 2, 27, 40, 37, 15, 3, 35, 10, 25, 21, 8, 13, 26, 12, 32, 23, 38, 11, 4, 6, 39, 31, 28, 29, 7, 30, 33], it went from 923 to 64.8. So it does look like this patch turns quadratic behavior into linear behavior.\n\nThis is Anders' first contribution to Sage, by the way.",
+    "created_at": "2009-07-25T18:17:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6621",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6621#issuecomment-54255",
+    "user": "ddrake"
+}
+```
 
 Attachment
 
@@ -57,8 +95,19 @@ For [14, 17, 1, 24, 16, 34, 19, 9, 20, 18, 36, 5, 22, 2, 27, 40, 37, 15, 3, 35, 
 This is Anders' first contribution to Sage, by the way.
 
 
+
 ---
 
-Comment by mvngu created at 2009-07-25 22:01:52
+archive/issue_comments_054256.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-07-25T22:01:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6621",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6621#issuecomment-54256",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 3128: PolynomialRing's behaviour does not match docstring
 
-Issue created by migration from https://trac.sagemath.org/ticket/3128
-
-Original creator: broune
-
-Original creation time: 2008-05-07 22:31:00
-
+archive/issues_003128.json:
+```json
+{
+    "body": "Assignee: tbd\n\nThe docstring for the function PolynomialRing states\n\n```\n    OUTPUT:\n        PolynomialRing(base_ring, name, sparse=False) returns a univariate\n        polynomial ring; all other input formats return a multivariate\n        polynomial ring.\n```\n\nwhich is not what PolynomialRing actually does, since\n\n```\nsage: PolynomialRing(QQ, names=['x'])\nUnivariate Polynomial Ring in x over Rational Field\n```\n\nEither PolynomialRing has a bug or the docstring should be corrected.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3128\n\n",
+    "created_at": "2008-05-07T22:31:00Z",
+    "labels": [
+        "algebra",
+        "minor",
+        "bug"
+    ],
+    "title": "PolynomialRing's behaviour does not match docstring",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3128",
+    "user": "broune"
+}
+```
 Assignee: tbd
 
 The docstring for the function PolynomialRing states
@@ -26,31 +36,81 @@ Univariate Polynomial Ring in x over Rational Field
 
 Either PolynomialRing has a bug or the docstring should be corrected.
 
+Issue created by migration from https://trac.sagemath.org/ticket/3128
+
+
+
+
 
 ---
 
-Comment by broune created at 2008-05-12 10:14:57
+archive/issue_comments_021671.json:
+```json
+{
+    "body": "To be more precise, the problem is that the docstring of PolynomialRing says there is only one way to get a univariate polynomial ring, but in fact PolynomialRing tries to be clever and returns univariate rings in other cases too.",
+    "created_at": "2008-05-12T10:14:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3128",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3128#issuecomment-21671",
+    "user": "broune"
+}
+```
 
 To be more precise, the problem is that the docstring of PolynomialRing says there is only one way to get a univariate polynomial ring, but in fact PolynomialRing tries to be clever and returns univariate rings in other cases too.
 
 
+
 ---
+
+archive/issue_comments_021672.json:
+```json
+{
+    "body": "Attachment\n\nFixing wrong docstring statement and adding more doctests",
+    "created_at": "2009-01-22T06:16:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3128",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3128#issuecomment-21672",
+    "user": "SimonKing"
+}
+```
 
 Attachment
 
 Fixing wrong docstring statement and adding more doctests
 
 
+
 ---
 
-Comment by SimonKing created at 2009-01-22 06:23:32
+archive/issue_comments_021673.json:
+```json
+{
+    "body": "I think the new doc string covers all use cases. It also provides the corner cases (zero or one variables) as doc tests.",
+    "created_at": "2009-01-22T06:23:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3128",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3128#issuecomment-21673",
+    "user": "SimonKing"
+}
+```
 
 I think the new doc string covers all use cases. It also provides the corner cases (zero or one variables) as doc tests.
 
 
+
 ---
 
-Comment by malb created at 2009-01-24 09:09:13
+archive/issue_comments_021674.json:
+```json
+{
+    "body": "\n```\nNote that a multivariate polynomial ring is returned even if the \ngiven number of variables is zero or one. \n```\n\n\nshould be replaced with\n\n\n```\nNote that a multivariate polynomial ring is returned when an explicit number is given.\n```\n",
+    "created_at": "2009-01-24T09:09:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3128",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3128#issuecomment-21674",
+    "user": "malb"
+}
+```
 
 
 ```
@@ -68,36 +128,93 @@ Note that a multivariate polynomial ring is returned when an explicit number is 
 
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-19 19:12:02
+archive/issue_comments_021675.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2009-10-19T19:12:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3128",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3128#issuecomment-21675",
+    "user": "mhansen"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
+
+archive/issue_comments_021676.json:
+```json
+{
+    "body": "Attachment\n\nI rebased the patch and changed the docstring as per malb's suggestion.",
+    "created_at": "2009-10-19T19:12:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3128",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3128#issuecomment-21676",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 I rebased the patch and changed the docstring as per malb's suggestion.
 
 
+
 ---
 
-Comment by mhansen created at 2009-11-05 02:28:01
+archive/issue_comments_021677.json:
+```json
+{
+    "body": "I think that this can go in.",
+    "created_at": "2009-11-05T02:28:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3128",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3128#issuecomment-21677",
+    "user": "mhansen"
+}
+```
 
 I think that this can go in.
 
 
+
 ---
 
-Comment by mhansen created at 2009-11-05 02:28:01
+archive/issue_comments_021678.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-11-05T02:28:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3128",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3128#issuecomment-21678",
+    "user": "mhansen"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mhansen created at 2009-11-05 02:29:02
+archive/issue_comments_021679.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-11-05T02:29:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3128",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3128#issuecomment-21679",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

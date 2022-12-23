@@ -1,11 +1,21 @@
 # Issue 2230: sage-2.10.2.alpha1 -- linear algebra hash not implemented
 
-Issue created by migration from https://trac.sagemath.org/ticket/2230
-
-Original creator: was
-
-Original creation time: 2008-02-20 07:04:30
-
+archive/issues_002230.json:
+```json
+{
+    "body": "Assignee: was\n\nThis was my fault, caused by me not having a 64-bit install to test on when I implemented the patch.  Just fix it by putting the correct answer in under #64-bit\n\n```\n         [1.3 s]\nsage -t  devel/sage-main/sage/modules/quotient_module.py    **********************************************************************\nFile \"quotient_module.py\", line 130:\n    sage: hash(Q)\nExpected:\n    fixme\nGot:\n    -5856620741060301410\n**********************************************************************\nFile \"quotient_module.py\", line 135:\n    sage: hash((V, W))\nExpected:\n    fixme\nGot:\n    -5856620741060301410\n**********************************************************************\n1 items had failures:\n   2 of   4 in __main__.example_3\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file .doctest_quotient_module.py\n         [1.7 s]\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2230\n\n",
+    "created_at": "2008-02-20T07:04:30Z",
+    "labels": [
+        "linear algebra",
+        "blocker",
+        "bug"
+    ],
+    "title": "sage-2.10.2.alpha1 -- linear algebra hash not implemented",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2230",
+    "user": "was"
+}
+```
 Assignee: was
 
 This was my fault, caused by me not having a 64-bit install to test on when I implemented the patch.  Just fix it by putting the correct answer in under #64-bit
@@ -36,15 +46,43 @@ For whitespace errors, see the file .doctest_quotient_module.py
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2230
+
+
+
+
 
 ---
+
+archive/issue_comments_014772.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-02-21T18:34:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2230",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2230#issuecomment-14772",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-21 18:37:44
+archive/issue_comments_014773.json:
+```json
+{
+    "body": "Patch is simple enough, positive review.\n\nCheers,\n\nMichael",
+    "created_at": "2008-02-21T18:37:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2230",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2230#issuecomment-14773",
+    "user": "mabshoff"
+}
+```
 
 Patch is simple enough, positive review.
 
@@ -53,15 +91,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-21 18:52:27
+archive/issue_comments_014774.json:
+```json
+{
+    "body": "Merged in Sage 2.10.2.rc0",
+    "created_at": "2008-02-21T18:52:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2230",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2230#issuecomment-14774",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.10.2.rc0
 
 
+
 ---
 
-Comment by mabshoff created at 2008-02-21 18:52:27
+archive/issue_comments_014775.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-02-21T18:52:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2230",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2230#issuecomment-14775",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

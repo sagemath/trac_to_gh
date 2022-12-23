@@ -1,65 +1,171 @@
 # Issue 8126: fix typo in doc of circle
 
-Issue created by migration from https://trac.sagemath.org/ticket/8126
-
-Original creator: robert.marik
-
-Original creation time: 2010-01-29 21:49:19
-
+archive/issues_008126.json:
+```json
+{
+    "body": "Assignee: mvngu\n\nFix typo in documentation.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8126\n\n",
+    "created_at": "2010-01-29T21:49:19Z",
+    "labels": [
+        "documentation",
+        "trivial",
+        "bug"
+    ],
+    "title": "fix typo in doc of circle",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8126",
+    "user": "robert.marik"
+}
+```
 Assignee: mvngu
 
 Fix typo in documentation.
 
+Issue created by migration from https://trac.sagemath.org/ticket/8126
+
+
+
+
 
 ---
+
+archive/issue_comments_071444.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-01-29T21:49:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8126",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8126#issuecomment-71444",
+    "user": "robert.marik"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-01-29 22:06:16
+archive/issue_comments_071445.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-01-29T22:06:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8126",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8126#issuecomment-71445",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-01-29 22:06:16
+archive/issue_comments_071446.json:
+```json
+{
+    "body": "Looks good.",
+    "created_at": "2010-01-29T22:06:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8126",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8126#issuecomment-71446",
+    "user": "jhpalmieri"
+}
+```
 
 Looks good.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-01-29 22:06:21
+archive/issue_comments_071447.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-01-29T22:06:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8126",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8126#issuecomment-71447",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mvngu created at 2010-01-29 22:48:05
+archive/issue_comments_071448.json:
+```json
+{
+    "body": "Robert, please put the ticket number in your patch. This information is very useful for tracking down changes.",
+    "created_at": "2010-01-29T22:48:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8126",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8126#issuecomment-71448",
+    "user": "mvngu"
+}
+```
 
 Robert, please put the ticket number in your patch. This information is very useful for tracking down changes.
 
 
+
 ---
 
-Comment by robert.marik created at 2010-01-29 23:52:16
+archive/issue_comments_071449.json:
+```json
+{
+    "body": "the same patch, renamed",
+    "created_at": "2010-01-29T23:52:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8126",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8126#issuecomment-71449",
+    "user": "robert.marik"
+}
+```
 
 the same patch, renamed
 
 
+
 ---
+
+archive/issue_comments_071450.json:
+```json
+{
+    "body": "Attachment\n\nMerged [trac_8126.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8126/trac_8126.patch).",
+    "created_at": "2010-01-31T00:17:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8126",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8126#issuecomment-71450",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
 Merged [trac_8126.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8126/trac_8126.patch).
 
 
+
 ---
 
-Comment by mvngu created at 2010-01-31 00:17:03
+archive/issue_comments_071451.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-31T00:17:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8126",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8126#issuecomment-71451",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

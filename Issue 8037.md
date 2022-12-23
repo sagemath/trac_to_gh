@@ -1,68 +1,174 @@
 # Issue 8037: add sagetex to the french tutorial
 
-Issue created by migration from https://trac.sagemath.org/ticket/8037
-
-Original creator: jhpalmieri
-
-Original creation time: 2010-01-22 06:18:10
-
+archive/issues_008037.json:
+```json
+{
+    "body": "Assignee: mvngu\n\nCC:  ddrake\n\nMake changes in the French tutorial corresponding to those in #7617 in the English version.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8037\n\n",
+    "created_at": "2010-01-22T06:18:10Z",
+    "labels": [
+        "documentation",
+        "minor",
+        "bug"
+    ],
+    "title": "add sagetex to the french tutorial",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8037",
+    "user": "jhpalmieri"
+}
+```
 Assignee: mvngu
 
 CC:  ddrake
 
 Make changes in the French tutorial corresponding to those in #7617 in the English version.
 
+Issue created by migration from https://trac.sagemath.org/ticket/8037
+
+
+
+
 
 ---
+
+archive/issue_comments_070208.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-02-25T22:53:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8037",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8037#issuecomment-70208",
+    "user": "mmezzarobba"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mmezzarobba created at 2010-02-25 22:53:42
+archive/issue_comments_070209.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-02-25T22:53:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8037",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8037#issuecomment-70209",
+    "user": "mmezzarobba"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mmezzarobba created at 2010-02-25 22:54:20
+archive/issue_comments_070210.json:
+```json
+{
+    "body": "Changing assignee from mvngu to mmezzarobba.",
+    "created_at": "2010-02-25T22:54:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8037",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8037#issuecomment-70210",
+    "user": "mmezzarobba"
+}
+```
 
 Changing assignee from mvngu to mmezzarobba.
 
 
+
 ---
 
-Comment by ddrake created at 2010-02-26 02:03:36
+archive/issue_comments_070211.json:
+```json
+{
+    "body": "Uh oh, there's a tiny reject with this patch in 4.3.3 -- a \"[SA]\" got turned into \"[Sage]\". I'll upload a new patch.",
+    "created_at": "2010-02-26T02:03:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8037",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8037#issuecomment-70211",
+    "user": "ddrake"
+}
+```
 
 Uh oh, there's a tiny reject with this patch in 4.3.3 -- a "[SA]" got turned into "[Sage]". I'll upload a new patch.
 
 
+
 ---
 
-Comment by ddrake created at 2010-02-26 02:04:21
+archive/issue_comments_070212.json:
+```json
+{
+    "body": "fix a small reject in introduction.rst",
+    "created_at": "2010-02-26T02:04:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8037",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8037#issuecomment-70212",
+    "user": "ddrake"
+}
+```
 
 fix a small reject in introduction.rst
 
 
+
 ---
+
+archive/issue_comments_070213.json:
+```json
+{
+    "body": "Attachment\n\nBy the way, the documentation builds fine and appears as it should. (I'm using 4.3.3.) I think this can be a positive review, although I would prefer to have a French speaker (or at least someone who knows more than I do!) look over the patch.",
+    "created_at": "2010-02-26T02:21:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8037",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8037#issuecomment-70213",
+    "user": "ddrake"
+}
+```
 
 Attachment
 
 By the way, the documentation builds fine and appears as it should. (I'm using 4.3.3.) I think this can be a positive review, although I would prefer to have a French speaker (or at least someone who knows more than I do!) look over the patch.
 
 
+
 ---
 
-Comment by ddrake created at 2010-02-26 02:21:25
+archive/issue_comments_070214.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-02-26T02:21:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8037",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8037#issuecomment-70214",
+    "user": "ddrake"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mvngu created at 2010-03-02 22:11:42
+archive/issue_comments_070215.json:
+```json
+{
+    "body": "Merged [trac_8037_sagetex_french_tutorial.2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8037/trac_8037_sagetex_french_tutorial.2.patch).\n\n\n\nMarc, Dan: Avoid putting the following line at the top of your patch file:\n\n```\nexporting patch:\n```\n\nIt can result in Mercurial ignoring your commit message, so that your commit message won't show up in the changelog.",
+    "created_at": "2010-03-02T22:11:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8037",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8037#issuecomment-70215",
+    "user": "mvngu"
+}
+```
 
 Merged [trac_8037_sagetex_french_tutorial.2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8037/trac_8037_sagetex_french_tutorial.2.patch).
 
@@ -77,8 +183,19 @@ exporting patch:
 It can result in Mercurial ignoring your commit message, so that your commit message won't show up in the changelog.
 
 
+
 ---
 
-Comment by mvngu created at 2010-03-02 22:11:42
+archive/issue_comments_070216.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-03-02T22:11:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8037",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8037#issuecomment-70216",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

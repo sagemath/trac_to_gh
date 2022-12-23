@@ -1,11 +1,21 @@
 # Issue 7122: plot real part and imaginary part of function sqrt.
 
-Issue created by migration from https://trac.sagemath.org/ticket/7122
-
-Original creator: fmaltey
-
-Original creation time: 2009-10-05 15:15:11
-
+archive/issues_007122.json:
+```json
+{
+    "body": "Assignee: was\n\nI try to plot a half-circle with the \n\n\n```\nvar('m')\nparametric_plot ([real(m+sqrt(1-m^2)), imaginary(m+sqrt(1-m^2))],m,-1,1)\n```\n \n\nand get a severe error.\n\nTheses plots are right :\n\n```\nplot([sqrt(m2+1)],m,0,6)\nplot(real (sqrt(m2+1)),m,0,6)\n```\n\n\nBut this one with AND real(...) or imaginary(...) AND list AND sqrt(...)  fails :\n\n\n```\nplot([real (sqrt(m2+1))],m,0,6)\n```\n\n\nOn devel-support kcrisman proposes :\n\n\nAfter looking at the traceback about an extra argument, I have a\nsneaky suspicion this is because sqrt takes an extra keyword prec,\nwhich perhaps is getting caught up in fast_float somehow.  What's\ninteresting is that the problem also only shows up for a list, so\nagain fast_float([]) is what's getting concerned.  Those who know how fast_float and the expression trees work will hopefully check this out as they get an opportunity.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7122\n\n",
+    "created_at": "2009-10-05T15:15:11Z",
+    "labels": [
+        "graphics",
+        "major",
+        "bug"
+    ],
+    "title": "plot real part and imaginary part of function sqrt.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7122",
+    "user": "fmaltey"
+}
+```
 Assignee: was
 
 I try to plot a half-circle with the 
@@ -14,21 +24,26 @@ I try to plot a half-circle with the
 ```
 var('m')
 parametric_plot ([real(m+sqrt(1-m^2)), imaginary(m+sqrt(1-m^2))],m,-1,1)
-}}} 
+```
+ 
 
 and get a severe error.
 
 Theses plots are right :
-{{{
+
+```
 plot([sqrt(m2+1)],m,0,6)
 plot(real (sqrt(m2+1)),m,0,6)
-}}}
+```
+
 
 But this one with AND real(...) or imaginary(...) AND list AND sqrt(...)  fails :
 
-{{{
+
+```
 plot([real (sqrt(m2+1))],m,0,6)
-}}}
+```
+
 
 On devel-support kcrisman proposes :
 
@@ -40,29 +55,79 @@ interesting is that the problem also only shows up for a list, so
 again fast_float([]) is what's getting concerned.  Those who know how fast_float and the expression trees work will hopefully check this out as they get an opportunity.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7122
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2009-10-05 17:27:30
+archive/issue_comments_059034.json:
+```json
+{
+    "body": "I've attached a patch which fixes the error you get.  However, I don't think that's the right equation to draw a half circle since sqrt(1-m^2) is always going to be real for -1 <= m <= 1.",
+    "created_at": "2009-10-05T17:27:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7122",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7122#issuecomment-59034",
+    "user": "mhansen"
+}
+```
 
 I've attached a patch which fixes the error you get.  However, I don't think that's the right equation to draw a half circle since sqrt(1-m^2) is always going to be real for -1 <= m <= 1.
 
 
+
 ---
+
+archive/issue_comments_059035.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-10-05T17:27:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7122",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7122#issuecomment-59035",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by kcrisman created at 2009-10-20 06:49:17
+archive/issue_comments_059036.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-10-20T06:49:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7122",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7122#issuecomment-59036",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-10-20 06:49:17
+archive/issue_comments_059037.json:
+```json
+{
+    "body": "Looks good, passes all the tests I can think of. \n\nIf it's significant enough that \n\n```\nsage: plot([real (sqrt(m^2-1))],m,0,6)\n```\n\nnow works, maybe there should be a doctest in plot/plot.py?\n\nOtherwise positive review.",
+    "created_at": "2009-10-20T06:49:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7122",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7122#issuecomment-59037",
+    "user": "kcrisman"
+}
+```
 
 Looks good, passes all the tests I can think of. 
 
@@ -77,8 +142,19 @@ now works, maybe there should be a doctest in plot/plot.py?
 Otherwise positive review.
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-21 04:04:19
+archive/issue_comments_059038.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-10-21T04:04:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7122",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7122#issuecomment-59038",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

@@ -1,19 +1,44 @@
 # Issue 5557: implement ridiculously fast 4x4 determinant
 
-Issue created by migration from https://trac.sagemath.org/ticket/5557
-
-Original creator: boothby
-
-Original creation time: 2009-03-18 11:48:08
-
+archive/issues_005557.json:
+```json
+{
+    "body": "Assignee: was\n\n#5520 calls M.det() for M a 4x4 matrix a huge number of times.  So, let's optimize the heck out of it!\n\nIssue created by migration from https://trac.sagemath.org/ticket/5557\n\n",
+    "created_at": "2009-03-18T11:48:08Z",
+    "labels": [
+        "linear algebra",
+        "minor",
+        "enhancement"
+    ],
+    "title": "implement ridiculously fast 4x4 determinant",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5557",
+    "user": "boothby"
+}
+```
 Assignee: was
 
 #5520 calls M.det() for M a 4x4 matrix a huge number of times.  So, let's optimize the heck out of it!
 
+Issue created by migration from https://trac.sagemath.org/ticket/5557
+
+
+
+
 
 ---
 
-Comment by cwitty created at 2009-03-18 17:16:01
+archive/issue_comments_043241.json:
+```json
+{
+    "body": "This is a pretty stupid thing to do, but even so, I think an error message would be better than a wrong answer:\n\n```\nsage: foo = random_matrix(ZZ, 5)\nsage: foo.determinant(algorithm='4x4')\n-143\nsage: copy(foo).determinant()\n-159\n```\n",
+    "created_at": "2009-03-18T17:16:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5557",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5557#issuecomment-43241",
+    "user": "cwitty"
+}
+```
 
 This is a pretty stupid thing to do, but even so, I think an error message would be better than a wrong answer:
 
@@ -27,9 +52,20 @@ sage: copy(foo).determinant()
 
 
 
+
 ---
 
-Comment by boothby created at 2009-03-18 23:11:52
+archive/issue_comments_043242.json:
+```json
+{
+    "body": "cwitty, this wasn't quite ready -- but thanks for your diligence!  The new patch makes this method default for dimension 4, and removes the algorithm='4x4' option.  Also, I put the code used to generate this code into the matrix_integer_dense.pyx file.  Finally, the _det_4x4 method has been changed to _det_4x4_unsafe.\n\nTimings:\n\n```\nSage 3.4:\n    sage: S = MatrixSpace(ZZ,4)\n    sage: M = S.random_element(1,10000^200)\n    sage: timeit(\"M.determinant()\")\n    5 loops, best of 3: 1.75 s per loop\nUpdated...\n    sage: S = MatrixSpace(ZZ,4)\n    sage: M = S.random_element(1,10000^200)\n    sage: timeit(\"M.determinant()\")\n    625 loops, best of 3: 175 \u00b5s per loop\nUsing Pari:\n    sage: N = pari(M)\n    sage: timeit(\"N.matdet();\")\n    625 loops, best of 3: 337 \u00b5s per loop\n```\n\n\nSo in general, this is hugely faster than the previous version of Sage, and twice as fast as Pari.",
+    "created_at": "2009-03-18T23:11:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5557",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5557#issuecomment-43242",
+    "user": "boothby"
+}
+```
 
 cwitty, this wasn't quite ready -- but thanks for your diligence!  The new patch makes this method default for dimension 4, and removes the algorithm='4x4' option.  Also, I put the code used to generate this code into the matrix_integer_dense.pyx file.  Finally, the _det_4x4 method has been changed to _det_4x4_unsafe.
 
@@ -56,9 +92,20 @@ Using Pari:
 So in general, this is hugely faster than the previous version of Sage, and twice as fast as Pari.
 
 
+
 ---
 
-Comment by mvngu created at 2009-03-19 04:35:54
+archive/issue_comments_043243.json:
+```json
+{
+    "body": "Replying to [comment:2 boothby]:\n\n```\n> Timings:\n> {{{\n> Sage 3.4:\n>     sage: S = MatrixSpace(ZZ,4)\n>     sage: M = S.random_element(1,10000^200)\n>     sage: timeit(\"M.determinant()\")\n>     5 loops, best of 3: 1.75 s per loop\n> Updated...\n>     sage: S = MatrixSpace(ZZ,4)\n>     sage: M = S.random_element(1,10000^200)\n>     sage: timeit(\"M.determinant()\")\n>     625 loops, best of 3: 175 \u00b5s per loop\n> Using Pari:\n>     sage: N = pari(M)\n>     sage: timeit(\"N.matdet();\")\n>     625 loops, best of 3: 337 \u00b5s per loop\n> }}}\n```\n\n> So in general, this is hugely faster than the previous version of Sage, and twice as fast as Pari.\nHi Tom. Is it possible for you to give some system/architecture info of the machine from which you got the above timing statistics? Such info plus timing statistics are good for a release tour.",
+    "created_at": "2009-03-19T04:35:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5557",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5557#issuecomment-43243",
+    "user": "mvngu"
+}
+```
 
 Replying to [comment:2 boothby]:
 
@@ -86,9 +133,20 @@ Replying to [comment:2 boothby]:
 Hi Tom. Is it possible for you to give some system/architecture info of the machine from which you got the above timing statistics? Such info plus timing statistics are good for a release tour.
 
 
+
 ---
 
-Comment by was created at 2009-03-19 18:07:52
+archive/issue_comments_043244.json:
+```json
+{
+    "body": "How fast is it on smaller input?  Using PARI more efficiently I was able to get the following timings (in my branch of Sage):\n\n\n```\nsage: M = S.random_element(1,10^8)\nsage: timeit('M.det();M._clear_cache()')\n625 loops, best of 3: 14.9 \u00b5s per loop\nsage: M = S.random_element(1,10^10)\nsage: timeit('M.det();M._clear_cache()')\n625 loops, best of 3: 16.3 \u00b5s per loop\n```\n \n\nThings slow down for bigger input though:\n\n```\nsage: M = S.random_element(1,10^200)\nsage: timeit('M.det();M._clear_cache()')\n625 loops, best of 3: 104 \u00b5s per loop\nsage: M = S.random_element(1,10^300)\nsage: timeit('M.det();M._clear_cache()')\n625 loops, best of 3: 186 \u00b5s per loop\nsage: M = S.random_element(1,10^1000)\nsage: timeit('M.det();M._clear_cache()')\n625 loops, best of 3: 1.2 ms per loop\n```\n\n\nThe above is on OS X 32-bit core2duo 2.6Ghz.\n\nWilliam",
+    "created_at": "2009-03-19T18:07:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5557",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5557#issuecomment-43244",
+    "user": "was"
+}
+```
 
 How fast is it on smaller input?  Using PARI more efficiently I was able to get the following timings (in my branch of Sage):
 
@@ -100,10 +158,12 @@ sage: timeit('M.det();M._clear_cache()')
 sage: M = S.random_element(1,10^10)
 sage: timeit('M.det();M._clear_cache()')
 625 loops, best of 3: 16.3 µs per loop
-}}} 
+```
+ 
 
 Things slow down for bigger input though:
-{{{
+
+```
 sage: M = S.random_element(1,10^200)
 sage: timeit('M.det();M._clear_cache()')
 625 loops, best of 3: 104 µs per loop
@@ -113,16 +173,28 @@ sage: timeit('M.det();M._clear_cache()')
 sage: M = S.random_element(1,10^1000)
 sage: timeit('M.det();M._clear_cache()')
 625 loops, best of 3: 1.2 ms per loop
-}}}
+```
+
 
 The above is on OS X 32-bit core2duo 2.6Ghz.
 
 William
 
 
+
 ---
 
-Comment by was created at 2009-03-19 20:24:50
+archive/issue_comments_043245.json:
+```json
+{
+    "body": "Answering my question, on my computer with your code:\n\n```\nsage: M = S.random_element(1,10^8)\nsage: timeit('M.det();M._clear_cache()')\n625 loops, best of 3: 8.82 \u00b5s per loop\nsage: \nsage: M = S.random_element(1,10^10)\nsage: timeit('M.det();M._clear_cache()')\n625 loops, best of 3: 9.86 \u00b5s per loop\nsage: M = S.random_element(1,10^200)\nsage: timeit('M.det();M._clear_cache()')\n625 loops, best of 3: 49.8 \u00b5s per loop\nsage: M = S.random_element(1,10^300)\nsage: timeit('M.det();M._clear_cache()')\n625 loops, best of 3: 92.2 \u00b5s per loop\nsage: M = S.random_element(1,10^1000)\nsage: timeit('M.det();M._clear_cache()')\n625 loops, best of 3: 585 \u00b5s per loop\n```\n",
+    "created_at": "2009-03-19T20:24:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5557",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5557#issuecomment-43245",
+    "user": "was"
+}
+```
 
 Answering my question, on my computer with your code:
 
@@ -147,16 +219,38 @@ sage: timeit('M.det();M._clear_cache()')
 
 
 
+
 ---
 
-Comment by was created at 2009-03-20 09:13:06
+archive/issue_comments_043246.json:
+```json
+{
+    "body": "For the record, despite me giving this a positive review, I'm nervous about putting this in Sage.  The issue is just that it's highly specialized and gives only a very small speedup over PARI, really.  Let the record speak...",
+    "created_at": "2009-03-20T09:13:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5557",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5557#issuecomment-43246",
+    "user": "was"
+}
+```
 
 For the record, despite me giving this a positive review, I'm nervous about putting this in Sage.  The issue is just that it's highly specialized and gives only a very small speedup over PARI, really.  Let the record speak...
 
 
+
 ---
 
-Comment by boothby created at 2009-03-22 07:27:30
+archive/issue_comments_043247.json:
+```json
+{
+    "body": "So, I'm obviously biased.  I think the code is rock-solid, though I admit it's a little silly to optimize to this level except in the case that it's being called hundreds of times.  Also, though the speedup is absolutely small (being on the order of microseconds), this appears to be asymptotically twice as fast as theirs; so relatively, it's a pretty big difference. \n\nSo I guess the real question is; what percentage of the time in the Brandt matrix code is being spent computing determinants?  Will this cut a couple of seconds off, or only a few millis off of a 30-second computation?\n\nOther opinions?",
+    "created_at": "2009-03-22T07:27:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5557",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5557#issuecomment-43247",
+    "user": "boothby"
+}
+```
 
 So, I'm obviously biased.  I think the code is rock-solid, though I admit it's a little silly to optimize to this level except in the case that it's being called hundreds of times.  Also, though the speedup is absolutely small (being on the order of microseconds), this appears to be asymptotically twice as fast as theirs; so relatively, it's a pretty big difference. 
 
@@ -165,9 +259,20 @@ So I guess the real question is; what percentage of the time in the Brandt matri
 Other opinions?
 
 
+
 ---
 
-Comment by mabshoff created at 2009-03-25 09:38:54
+archive/issue_comments_043248.json:
+```json
+{
+    "body": "Well, I am waiting until someone comes up with some opinion what to do. I am personally fine with this going in, so ....\n\nCheers,\n\nMichael",
+    "created_at": "2009-03-25T09:38:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5557",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5557#issuecomment-43248",
+    "user": "mabshoff"
+}
+```
 
 Well, I am waiting until someone comes up with some opinion what to do. I am personally fine with this going in, so ....
 
@@ -176,9 +281,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by was created at 2009-03-25 16:11:46
+archive/issue_comments_043249.json:
+```json
+{
+    "body": "> So I guess the real question is; what percentage of the time \n> in the Brandt matrix code is being spent computing determinants? \n> Will this cut a couple of seconds off, or only a few millis off \n> of a 30-second computation? \n\nIt will definitely only cut \"a few millis\".\n\nBut I guess I'm OK with this code going in.",
+    "created_at": "2009-03-25T16:11:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5557",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5557#issuecomment-43249",
+    "user": "was"
+}
+```
 
 > So I guess the real question is; what percentage of the time 
 > in the Brandt matrix code is being spent computing determinants? 
@@ -190,9 +306,20 @@ It will definitely only cut "a few millis".
 But I guess I'm OK with this code going in.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-03-26 00:57:59
+archive/issue_comments_043250.json:
+```json
+{
+    "body": "The two patches are causing a doctest failure:\n\n```\nsage -t -long \"devel/sage/sage/matrix/matrix_integer_dense.pyx\"\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.alpha0/devel/sage/sage/matrix/matrix_integer_dense.pyx\", line 3050:\n    sage: A.determinant(algorithm='linbox')\nExpected:\n    Traceback (most recent call last):\n    ...\n    RuntimeError: you must pass the proof=False option to the determinant command to use Linbox's det algorithm\nGot:\n    -843\n**********************************************************************\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2009-03-26T00:57:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5557",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5557#issuecomment-43250",
+    "user": "mabshoff"
+}
+```
 
 The two patches are causing a doctest failure:
 
@@ -216,37 +343,92 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by boothby created at 2009-03-28 06:25:22
+archive/issue_comments_043251.json:
+```json
+{
+    "body": "The problem was that the doctest expected a failure where this succeeded.  I changed the doctest to use a 5x5 instead of 4x4 to avoid this.",
+    "created_at": "2009-03-28T06:25:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5557",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5557#issuecomment-43251",
+    "user": "boothby"
+}
+```
 
 The problem was that the doctest expected a failure where this succeeded.  I changed the doctest to use a 5x5 instead of 4x4 to avoid this.
 
 
+
 ---
 
-Comment by was created at 2009-03-28 15:23:12
+archive/issue_comments_043252.json:
+```json
+{
+    "body": "NO.  If you explicitly specify algorithm='linbox', then you *have* to get algorithm='linbox', even in the 4x4 case.  You need to change the code, not the doctest so the 4x4 algorithm doesn't get selected if the user explicitly requests to use linbox.",
+    "created_at": "2009-03-28T15:23:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5557",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5557#issuecomment-43252",
+    "user": "was"
+}
+```
 
 NO.  If you explicitly specify algorithm='linbox', then you *have* to get algorithm='linbox', even in the 4x4 case.  You need to change the code, not the doctest so the 4x4 algorithm doesn't get selected if the user explicitly requests to use linbox.
 
 
+
 ---
 
-Comment by cwitty created at 2009-03-28 16:49:42
+archive/issue_comments_043253.json:
+```json
+{
+    "body": "Note that this wasn't true before Tom's patch; for a 3x3 or smaller matrix, the algorithm='linbox' was ignored.",
+    "created_at": "2009-03-28T16:49:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5557",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5557#issuecomment-43253",
+    "user": "cwitty"
+}
+```
 
 Note that this wasn't true before Tom's patch; for a 3x3 or smaller matrix, the algorithm='linbox' was ignored.
 
 
+
 ---
 
-Comment by boothby created at 2009-03-28 17:34:47
+archive/issue_comments_043254.json:
+```json
+{
+    "body": "cwitty's argument is precisely how I justified (to myself) that this behavior is OK.  If you disagree, then this is an orthogonal issue, and we should allow the user to override the algorithm for dimensions 1,2, and 3.  But, the point of the small special cases is that they're faster than the others methods, so we fast-track their execution to avoid a bunch of python string comparisons.",
+    "created_at": "2009-03-28T17:34:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5557",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5557#issuecomment-43254",
+    "user": "boothby"
+}
+```
 
 cwitty's argument is precisely how I justified (to myself) that this behavior is OK.  If you disagree, then this is an orthogonal issue, and we should allow the user to override the algorithm for dimensions 1,2, and 3.  But, the point of the small special cases is that they're faster than the others methods, so we fast-track their execution to avoid a bunch of python string comparisons.
 
 
+
 ---
 
-Comment by was created at 2009-03-29 18:20:39
+archive/issue_comments_043255.json:
+```json
+{
+    "body": "> cwitty's argument is precisely how I justified (to myself) that this \n> behavior is OK. If you disagree, then this is an orthogonal issue, \n> and we should allow the user to override the\n\nOK, I'm convinced.",
+    "created_at": "2009-03-29T18:20:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5557",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5557#issuecomment-43255",
+    "user": "was"
+}
+```
 
 > cwitty's argument is precisely how I justified (to myself) that this 
 > behavior is OK. If you disagree, then this is an orthogonal issue, 
@@ -255,44 +437,114 @@ Comment by was created at 2009-03-29 18:20:39
 OK, I'm convinced.
 
 
+
 ---
 
-Comment by was created at 2009-04-12 06:41:21
+archive/issue_comments_043256.json:
+```json
+{
+    "body": "Please rebase this against 3.4.1.rc*",
+    "created_at": "2009-04-12T06:41:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5557",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5557#issuecomment-43256",
+    "user": "was"
+}
+```
 
 Please rebase this against 3.4.1.rc*
 
 
+
 ---
+
+archive/issue_comments_043257.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-04-15T18:57:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5557",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5557#issuecomment-43257",
+    "user": "boothby"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by boothby created at 2009-04-15 19:00:43
+archive/issue_comments_043258.json:
+```json
+{
+    "body": "Ready to go.  How does one tag a rebase'd patch?  Does it need another review?",
+    "created_at": "2009-04-15T19:00:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5557",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5557#issuecomment-43258",
+    "user": "boothby"
+}
+```
 
 Ready to go.  How does one tag a rebase'd patch?  Does it need another review?
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-04-30 11:56:13
+archive/issue_comments_043259.json:
+```json
+{
+    "body": "In light of the above discussion, I'm giving this a positive review.  I've checked that it passes doctests.\n\nThere are no doctests for the new code, so I have added fairly trivial indirect doctests for them in the review patch.",
+    "created_at": "2009-04-30T11:56:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5557",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5557#issuecomment-43259",
+    "user": "AlexGhitza"
+}
+```
 
 In light of the above discussion, I'm giving this a positive review.  I've checked that it passes doctests.
 
 There are no doctests for the new code, so I have added fairly trivial indirect doctests for them in the review patch.
 
 
+
 ---
+
+archive/issue_comments_043260.json:
+```json
+{
+    "body": "Attachment\n\napply after the first patch",
+    "created_at": "2009-04-30T11:56:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5557",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5557#issuecomment-43260",
+    "user": "AlexGhitza"
+}
+```
 
 Attachment
 
 apply after the first patch
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-11 13:35:09
+archive/issue_comments_043261.json:
+```json
+{
+    "body": "Merged both patches in Sage 4.0.alpha0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-05-11T13:35:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5557",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5557#issuecomment-43261",
+    "user": "mabshoff"
+}
+```
 
 Merged both patches in Sage 4.0.alpha0.
 
@@ -301,8 +553,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-11 13:35:09
+archive/issue_comments_043262.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-05-11T13:35:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5557",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5557#issuecomment-43262",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

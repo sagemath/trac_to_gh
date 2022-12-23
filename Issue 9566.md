@@ -1,114 +1,288 @@
 # Issue 9566: [with patch, needs review] Allow sage.libs.mpmath.call(..., parent=something)
 
-Issue created by migration from https://trac.sagemath.org/ticket/9566
-
-Original creator: fredrik.johansson
-
-Original creation time: 2010-07-21 17:49:51
-
+archive/issues_009566.json:
+```json
+{
+    "body": "Assignee: AlexGhitza\n\nCC:  burcin\n\nThis can simplify code that needs to call mpmath in some places.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9566\n\n",
+    "created_at": "2010-07-21T17:49:51Z",
+    "labels": [
+        "algebra",
+        "major",
+        "bug"
+    ],
+    "title": "[with patch, needs review] Allow sage.libs.mpmath.call(..., parent=something)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9566",
+    "user": "fredrik.johansson"
+}
+```
 Assignee: AlexGhitza
 
 CC:  burcin
 
 This can simplify code that needs to call mpmath in some places.
 
+Issue created by migration from https://trac.sagemath.org/ticket/9566
+
+
+
+
 
 ---
+
+archive/issue_comments_092346.json:
+```json
+{
+    "body": "Attachment\n\ndoes it make sense to also test for parent RDF ?",
+    "created_at": "2010-07-21T21:17:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9566",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9566#issuecomment-92346",
+    "user": "schilly"
+}
+```
 
 Attachment
 
 does it make sense to also test for parent RDF ?
 
 
+
 ---
+
+archive/issue_comments_092347.json:
+```json
+{
+    "body": "Attachment\n\nworks for me",
+    "created_at": "2010-07-21T21:17:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9566",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9566#issuecomment-92347",
+    "user": "schilly"
+}
+```
 
 Attachment
 
 works for me
 
 
+
 ---
 
-Comment by schilly created at 2010-07-21 21:17:38
+archive/issue_comments_092348.json:
+```json
+{
+    "body": "Changing type from defect to enhancement.",
+    "created_at": "2010-07-21T21:17:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9566",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9566#issuecomment-92348",
+    "user": "schilly"
+}
+```
 
 Changing type from defect to enhancement.
 
 
+
 ---
 
-Comment by schilly created at 2010-07-21 21:17:38
+archive/issue_comments_092349.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-07-21T21:17:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9566",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9566#issuecomment-92349",
+    "user": "schilly"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by schilly created at 2010-07-21 21:17:54
+archive/issue_comments_092350.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-07-21T21:17:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9566",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9566#issuecomment-92350",
+    "user": "schilly"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by ddrake created at 2010-07-22 02:58:46
+archive/issue_comments_092351.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_work.",
+    "created_at": "2010-07-22T02:58:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9566",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9566#issuecomment-92351",
+    "user": "ddrake"
+}
+```
 
 Changing status from positive_review to needs_work.
 
 
+
 ---
 
-Comment by ddrake created at 2010-07-22 02:58:46
+archive/issue_comments_092352.json:
+```json
+{
+    "body": "Please include ticket numbers in commit messages! Please change back to positive review when both patches are fixed up. Thanks.",
+    "created_at": "2010-07-22T02:58:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9566",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9566#issuecomment-92352",
+    "user": "ddrake"
+}
+```
 
 Please include ticket numbers in commit messages! Please change back to positive review when both patches are fixed up. Thanks.
 
 
+
 ---
+
+archive/issue_comments_092353.json:
+```json
+{
+    "body": "Attachment\n\nfixed patch",
+    "created_at": "2010-07-22T20:54:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9566",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9566#issuecomment-92353",
+    "user": "fredrik.johansson"
+}
+```
 
 Attachment
 
 fixed patch
 
 
+
 ---
 
-Comment by fredrik.johansson created at 2010-07-22 20:55:52
+archive/issue_comments_092354.json:
+```json
+{
+    "body": "Added mpmath_call_FIXED.patch\n\nI fixed an error in the first patch (there shouldn't be a new kwarg in mpmath_to_sage) and included Harald's change with an extra line to also print the type of the output.",
+    "created_at": "2010-07-22T20:55:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9566",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9566#issuecomment-92354",
+    "user": "fredrik.johansson"
+}
+```
 
 Added mpmath_call_FIXED.patch
 
 I fixed an error in the first patch (there shouldn't be a new kwarg in mpmath_to_sage) and included Harald's change with an extra line to also print the type of the output.
 
 
+
 ---
 
-Comment by fredrik.johansson created at 2010-07-22 21:05:20
+archive/issue_comments_092355.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-07-22T21:05:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9566",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9566#issuecomment-92355",
+    "user": "fredrik.johansson"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by schilly created at 2010-07-22 23:05:32
+archive/issue_comments_092356.json:
+```json
+{
+    "body": "dear release manager, just merge mpmath_call_FIXED.patch and ignore the others.",
+    "created_at": "2010-07-22T23:05:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9566",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9566#issuecomment-92356",
+    "user": "schilly"
+}
+```
 
 dear release manager, just merge mpmath_call_FIXED.patch and ignore the others.
 
 
+
 ---
 
-Comment by schilly created at 2010-07-22 23:05:32
+archive/issue_comments_092357.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-07-22T23:05:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9566",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9566#issuecomment-92357",
+    "user": "schilly"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by ddrake created at 2010-07-22 23:44:54
+archive/issue_comments_092358.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-07-22T23:44:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9566",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9566#issuecomment-92358",
+    "user": "ddrake"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by ddrake created at 2010-07-22 23:44:54
+archive/issue_comments_092359.json:
+```json
+{
+    "body": "Replying to [comment:6 schilly]:\n> dear release manager, just merge mpmath_call_FIXED.patch and ignore the others. \n\nDone. Thanks for fixing the commit messages!",
+    "created_at": "2010-07-22T23:44:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9566",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9566#issuecomment-92359",
+    "user": "ddrake"
+}
+```
 
 Replying to [comment:6 schilly]:
 > dear release manager, just merge mpmath_call_FIXED.patch and ignore the others. 

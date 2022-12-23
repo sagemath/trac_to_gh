@@ -1,55 +1,115 @@
 # Issue 7920: Common numerical matrix base class
 
-Issue created by migration from https://trac.sagemath.org/ticket/7920
-
-Original creator: dagss
-
-Original creation time: 2010-01-13 14:19:12
-
+archive/issues_007920.json:
+```json
+{
+    "body": "Assignee: was\n\nCurrently, Matrix_double_dense inherits from Matrix_dense and Matrix_double_sparse from Matrix_sparse. However numerical matrices share a lot compared to other matrices and should probably have a common base class:\n\n- Docstrings of numerical decompositions should likely be shared\n- `solve_right` implementation should be shared\n- Even if one matrix uses SuiteSparse and another LAPACK for making decompositions, the code for using those decompositions to find solutions, and iteratively improve the solutions, can be shared\n- In general, a place to put docstrings and examples with terminology more familiar to numerical users\n\nLuckily, Matrix_dense/sparse offers little in terms of implementation for numerical matrices (the exception is the hash value -- which is useless for numerical matrices anyway, but should be implemented).\n\nIn the future, there might be diagonal, Hermitian, triangular, banded etc. matrices, and then it makes even more sense to change the hierarchy, so that sparse/dense isn't a superclass.\n\nSo, this ticket should result in:\n- Introduce Matrix_numerical\n- Change the base class of Matrix_double_dense and Matrix_double_sparse to Matrix_numerical\n- A `Matrix_numerical.solve_right` centered around matrix decompositions\n\nIncidentally, this is likely to result in:\n- A proper pickle implementation for dense double matrices (just pickle the NumPy array; and read back the dtype on unpickle)\n- Loosing the Matrix_real_double_dense and Matrix_complex_double_dense subclasses -- these serve no real purpose at all, and prevents introducing e.g. efficient dense lower-triangular matrices and so on. (Remember to keep stubs aliased to Matrix_double_dense for unpickling backward compatability)\n\nIssue created by migration from https://trac.sagemath.org/ticket/7920\n\n",
+    "created_at": "2010-01-13T14:19:12Z",
+    "labels": [
+        "linear algebra",
+        "major",
+        "bug"
+    ],
+    "title": "Common numerical matrix base class",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7920",
+    "user": "dagss"
+}
+```
 Assignee: was
 
 Currently, Matrix_double_dense inherits from Matrix_dense and Matrix_double_sparse from Matrix_sparse. However numerical matrices share a lot compared to other matrices and should probably have a common base class:
 
- - Docstrings of numerical decompositions should likely be shared
- - `solve_right` implementation should be shared
- - Even if one matrix uses SuiteSparse and another LAPACK for making decompositions, the code for using those decompositions to find solutions, and iteratively improve the solutions, can be shared
- - In general, a place to put docstrings and examples with terminology more familiar to numerical users
+- Docstrings of numerical decompositions should likely be shared
+- `solve_right` implementation should be shared
+- Even if one matrix uses SuiteSparse and another LAPACK for making decompositions, the code for using those decompositions to find solutions, and iteratively improve the solutions, can be shared
+- In general, a place to put docstrings and examples with terminology more familiar to numerical users
 
 Luckily, Matrix_dense/sparse offers little in terms of implementation for numerical matrices (the exception is the hash value -- which is useless for numerical matrices anyway, but should be implemented).
 
 In the future, there might be diagonal, Hermitian, triangular, banded etc. matrices, and then it makes even more sense to change the hierarchy, so that sparse/dense isn't a superclass.
 
 So, this ticket should result in:
- - Introduce Matrix_numerical
- - Change the base class of Matrix_double_dense and Matrix_double_sparse to Matrix_numerical
- - A `Matrix_numerical.solve_right` centered around matrix decompositions
+- Introduce Matrix_numerical
+- Change the base class of Matrix_double_dense and Matrix_double_sparse to Matrix_numerical
+- A `Matrix_numerical.solve_right` centered around matrix decompositions
 
 Incidentally, this is likely to result in:
- - A proper pickle implementation for dense double matrices (just pickle the NumPy array; and read back the dtype on unpickle)
- - Loosing the Matrix_real_double_dense and Matrix_complex_double_dense subclasses -- these serve no real purpose at all, and prevents introducing e.g. efficient dense lower-triangular matrices and so on. (Remember to keep stubs aliased to Matrix_double_dense for unpickling backward compatability)
+- A proper pickle implementation for dense double matrices (just pickle the NumPy array; and read back the dtype on unpickle)
+- Loosing the Matrix_real_double_dense and Matrix_complex_double_dense subclasses -- these serve no real purpose at all, and prevents introducing e.g. efficient dense lower-triangular matrices and so on. (Remember to keep stubs aliased to Matrix_double_dense for unpickling backward compatability)
+
+Issue created by migration from https://trac.sagemath.org/ticket/7920
+
+
+
 
 
 ---
+
+archive/issue_comments_068907.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-01-13T14:22:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7920",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7920#issuecomment-68907",
+    "user": "dagss"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by dagss created at 2010-01-13 14:25:02
+archive/issue_comments_068908.json:
+```json
+{
+    "body": "Changing status from new to needs_work.",
+    "created_at": "2010-01-13T14:25:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7920",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7920#issuecomment-68908",
+    "user": "dagss"
+}
+```
 
 Changing status from new to needs_work.
 
 
+
 ---
 
-Comment by dagss created at 2010-01-13 14:25:02
+archive/issue_comments_068909.json:
+```json
+{
+    "body": "The patch is very much unfinished. There's some stuff that likely belongs to a seperate patch. The interesting part is matrix_numerical.pyx, and the fact that Matrix_double_sparse is \"converted\" to it as a base class.",
+    "created_at": "2010-01-13T14:25:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7920",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7920#issuecomment-68909",
+    "user": "dagss"
+}
+```
 
 The patch is very much unfinished. There's some stuff that likely belongs to a seperate patch. The interesting part is matrix_numerical.pyx, and the fact that Matrix_double_sparse is "converted" to it as a base class.
 
 
+
 ---
 
-Comment by dagss created at 2010-01-13 14:29:35
+archive/issue_comments_068910.json:
+```json
+{
+    "body": "Changing type from defect to task.",
+    "created_at": "2010-01-13T14:29:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7920",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7920#issuecomment-68910",
+    "user": "dagss"
+}
+```
 
 Changing type from defect to task.

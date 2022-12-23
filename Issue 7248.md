@@ -1,11 +1,21 @@
 # Issue 7248: include jinja2 / upgrade jinja spkg
 
-Issue created by migration from https://trac.sagemath.org/ticket/7248
-
-Original creator: ddrake
-
-Original creation time: 2009-10-19 08:42:29
-
+archive/issues_007248.json:
+```json
+{
+    "body": "Assignee: boothby\n\nCC:  jhpalmieri\n\nI'm not sure whether this is an upgrade or a new spkg, but the plan is to switch the notebook to Jinja2, which will require updating/replacing the current Jinja spkg.\n\nJohn Palmieri has a proposed spkg at #6586.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7248\n\n",
+    "created_at": "2009-10-19T08:42:29Z",
+    "labels": [
+        "notebook",
+        "major",
+        "enhancement"
+    ],
+    "title": "include jinja2 / upgrade jinja spkg",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7248",
+    "user": "ddrake"
+}
+```
 Assignee: boothby
 
 CC:  jhpalmieri
@@ -14,10 +24,25 @@ I'm not sure whether this is an upgrade or a new spkg, but the plan is to switch
 
 John Palmieri has a proposed spkg at #6586.
 
+Issue created by migration from https://trac.sagemath.org/ticket/7248
+
+
+
+
 
 ---
 
-Comment by jhpalmieri created at 2009-10-19 19:13:03
+archive/issue_comments_060171.json:
+```json
+{
+    "body": "> John Palmieri has a proposed spkg at #6586.\n\n\"Proposed\"?  It's in Sage 4.2.alpha0.\n\nSome work needs to be done if you want to get rid of Jinja -- last time I checked, some parts of the Sage library use things from Jinja that it wasn't immediately obvious how to replace using Jinja2: see [this comment from #6586](http://trac.sagemath.org/sage_trac/ticket/6586#comment:49).",
+    "created_at": "2009-10-19T19:13:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7248",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7248#issuecomment-60171",
+    "user": "jhpalmieri"
+}
+```
 
 > John Palmieri has a proposed spkg at #6586.
 
@@ -26,9 +51,20 @@ Comment by jhpalmieri created at 2009-10-19 19:13:03
 Some work needs to be done if you want to get rid of Jinja -- last time I checked, some parts of the Sage library use things from Jinja that it wasn't immediately obvious how to replace using Jinja2: see [this comment from #6586](http://trac.sagemath.org/sage_trac/ticket/6586#comment:49).
 
 
+
 ---
 
-Comment by ddrake created at 2009-10-19 23:22:16
+archive/issue_comments_060172.json:
+```json
+{
+    "body": "Replying to [comment:1 jhpalmieri]:\n> > John Palmieri has a proposed spkg at #6586.\n> \n> \"Proposed\"?  It's in Sage 4.2.alpha0.\n\nOops. I didn't know.\n \n> Some work needs to be done if you want to get rid of Jinja\n\nFor this ticket, I was thinking of just getting jinja2 in. We can do another ticket later for removing jinja. I'll close this since it's already done.",
+    "created_at": "2009-10-19T23:22:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7248",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7248#issuecomment-60172",
+    "user": "ddrake"
+}
+```
 
 Replying to [comment:1 jhpalmieri]:
 > > John Palmieri has a proposed spkg at #6586.
@@ -42,37 +78,92 @@ Oops. I didn't know.
 For this ticket, I was thinking of just getting jinja2 in. We can do another ticket later for removing jinja. I'll close this since it's already done.
 
 
+
 ---
 
-Comment by ddrake created at 2009-10-19 23:22:16
+archive/issue_comments_060173.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-10-19T23:22:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7248",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7248#issuecomment-60173",
+    "user": "ddrake"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-20 03:32:06
+archive/issue_comments_060174.json:
+```json
+{
+    "body": "Actually, the notebook hasn't switched over.  The only thing in Sage 4.2 that uses Jinja2 is Sphinx.",
+    "created_at": "2009-10-20T03:32:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7248",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7248#issuecomment-60174",
+    "user": "mhansen"
+}
+```
 
 Actually, the notebook hasn't switched over.  The only thing in Sage 4.2 that uses Jinja2 is Sphinx.
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-20 03:32:06
+archive/issue_comments_060175.json:
+```json
+{
+    "body": "Changing status from closed to new.",
+    "created_at": "2009-10-20T03:32:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7248",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7248#issuecomment-60175",
+    "user": "mhansen"
+}
+```
 
 Changing status from closed to new.
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-20 03:32:06
+archive/issue_comments_060176.json:
+```json
+{
+    "body": "Resolution changed from fixed to ",
+    "created_at": "2009-10-20T03:32:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7248",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7248#issuecomment-60176",
+    "user": "mhansen"
+}
+```
 
 Resolution changed from fixed to 
 
 
+
 ---
 
-Comment by ddrake created at 2009-10-20 05:22:48
+archive/issue_comments_060177.json:
+```json
+{
+    "body": "Replying to [comment:3 mhansen]:\n> Actually, the notebook hasn't switched over.  The only thing in Sage 4.2 that uses Jinja2 is Sphinx.\n\nThis ticket isn't about switching anything to Jinja2. The title is \"include jinja2 / upgrade jinja spkg\", and I closed it because you had already done exactly that in 4.2.alpha0.\n\n#7249 is about switching, and it has a patch and awaits review.",
+    "created_at": "2009-10-20T05:22:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7248",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7248#issuecomment-60177",
+    "user": "ddrake"
+}
+```
 
 Replying to [comment:3 mhansen]:
 > Actually, the notebook hasn't switched over.  The only thing in Sage 4.2 that uses Jinja2 is Sphinx.
@@ -82,15 +173,37 @@ This ticket isn't about switching anything to Jinja2. The title is "include jinj
 #7249 is about switching, and it has a patch and awaits review.
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-20 05:32:51
+archive/issue_comments_060178.json:
+```json
+{
+    "body": "Duplicate of #6586.",
+    "created_at": "2009-10-20T05:32:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7248",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7248#issuecomment-60178",
+    "user": "mhansen"
+}
+```
 
 Duplicate of #6586.
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-20 05:32:51
+archive/issue_comments_060179.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2009-10-20T05:32:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7248",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7248#issuecomment-60179",
+    "user": "mhansen"
+}
+```
 
 Resolution: duplicate

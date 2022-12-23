@@ -1,11 +1,21 @@
 # Issue 3634: minpoly still slow for elements of finte fields
 
-Issue created by migration from https://trac.sagemath.org/ticket/3634
-
-Original creator: robertwb
-
-Original creation time: 2008-07-10 17:11:44
-
+archive/issues_003634.json:
+```json
+{
+    "body": "Assignee: tbd\n\nThe improvement at #3620 is significant, but NTL does have minimal polynomial computations, though provided in http://www.shoup.net/ntl/doc/GF2X.txt rather than http://www.shoup.net/ntl/doc/GF2E.txt . We should probably use the proof flag to decide the algorithm. Trace could be wrapped as well.\n\nAlso, the computation of matrix() is using the completely generic code, which has got to be sub-optimal for manipulating elements of GF(2).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3634\n\n",
+    "created_at": "2008-07-10T17:11:44Z",
+    "labels": [
+        "algebra",
+        "blocker",
+        "bug"
+    ],
+    "title": "minpoly still slow for elements of finte fields",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3634",
+    "user": "robertwb"
+}
+```
 Assignee: tbd
 
 The improvement at #3620 is significant, but NTL does have minimal polynomial computations, though provided in http://www.shoup.net/ntl/doc/GF2X.txt rather than http://www.shoup.net/ntl/doc/GF2E.txt . We should probably use the proof flag to decide the algorithm. Trace could be wrapped as well.
@@ -13,8 +23,25 @@ The improvement at #3620 is significant, but NTL does have minimal polynomial co
 Also, the computation of matrix() is using the completely generic code, which has got to be sub-optimal for manipulating elements of GF(2).
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3634
+
+
+
+
 
 ---
+
+archive/issue_comments_025704.json:
+```json
+{
+    "body": "Attachment\n\n\n```\nsage: sage: k.<a> = GF(2^500)\n\nsage: sage: time g = k.random_element()\nCPU times: user 0.07 s, sys: 0.00 s, total: 0.07 s\nWall time: 0.07 s\n\nsage: time f = g.minpoly()\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.00 s\n\nsage: f(g)\n 0\nsage: timeit(\"g.minpoly()\")\n125 loops, best of 3: 4.03 ms per loop\n```\n",
+    "created_at": "2008-07-10T18:07:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3634",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3634#issuecomment-25704",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
@@ -38,16 +65,40 @@ sage: timeit("g.minpoly()")
 
 
 
+
 ---
+
+archive/issue_comments_025705.json:
+```json
+{
+    "body": "Attachment\n\nadd fast charpoly",
+    "created_at": "2008-07-10T23:21:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3634",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3634#issuecomment-25705",
+    "user": "was"
+}
+```
 
 Attachment
 
 add fast charpoly
 
 
+
 ---
 
-Comment by was created at 2008-07-10 23:22:06
+archive/issue_comments_025706.json:
+```json
+{
+    "body": "Great work Robert!\n\nI added a patch that adds a fast charpoly method by the way.\n\nApply both of them.",
+    "created_at": "2008-07-10T23:22:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3634",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3634#issuecomment-25706",
+    "user": "was"
+}
+```
 
 Great work Robert!
 
@@ -56,16 +107,38 @@ I added a patch that adds a fast charpoly method by the way.
 Apply both of them.
 
 
+
 ---
 
-Comment by robertwb created at 2008-07-11 17:43:08
+archive/issue_comments_025707.json:
+```json
+{
+    "body": "Charpoly method is good too. Apply both patches.",
+    "created_at": "2008-07-11T17:43:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3634",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3634#issuecomment-25707",
+    "user": "robertwb"
+}
+```
 
 Charpoly method is good too. Apply both patches.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-11 17:46:26
+archive/issue_comments_025708.json:
+```json
+{
+    "body": "This is one of the few patches that will be merged in 3.0.5 :)\n\nCheers,\n\nMichael",
+    "created_at": "2008-07-11T17:46:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3634",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3634#issuecomment-25708",
+    "user": "mabshoff"
+}
+```
 
 This is one of the few patches that will be merged in 3.0.5 :)
 
@@ -74,8 +147,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by was created at 2008-07-11 18:09:48
+archive/issue_comments_025709.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-07-11T18:09:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3634",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3634#issuecomment-25709",
+    "user": "was"
+}
+```
 
 Resolution: fixed

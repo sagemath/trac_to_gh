@@ -1,11 +1,21 @@
 # Issue 5601: predefine colors in Sage
 
-Issue created by migration from https://trac.sagemath.org/ticket/5601
-
-Original creator: jason
-
-Original creation time: 2009-03-24 21:26:24
-
+archive/issues_005601.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  kcrisman robertwb wcauchois\n\nSee the end of http://groups.google.com/group/sage-support/browse_thread/thread/44971aa416574675\n\n\n* predefining the colors recognized in strings as Color objects in the global namespace, i.e.,     \n\n```\n    \"red\"   : (1.0,0.0,0.0),\n    \"orange\": (1.0,.5,0.0),\n    \"yellow\": (1.0,1.0,0.0),\n    \"green\" : (0.0,1.0,0.0),\n    \"blue\"  : (0.0,0.0,1.0),\n    \"purple\": (.5,0.0,1.0),\n    \"white\" : (1.0,1.0,1.0),\n    \"black\" : (0.0,0.0,0.0),\n    \"grey\"  : (.5,.5,.5) \n```\n\n\n* predefine a huge number of colors (all x11 or html color strings?), but stick them in the color\nnamespace, so they would be accessed like color.goldenrod\n\nIssue created by migration from https://trac.sagemath.org/ticket/5601\n\n",
+    "created_at": "2009-03-24T21:26:24Z",
+    "labels": [
+        "graphics",
+        "minor",
+        "enhancement"
+    ],
+    "title": "predefine colors in Sage",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5601",
+    "user": "jason"
+}
+```
 Assignee: was
 
 CC:  kcrisman robertwb wcauchois
@@ -31,10 +41,25 @@ See the end of http://groups.google.com/group/sage-support/browse_thread/thread/
 * predefine a huge number of colors (all x11 or html color strings?), but stick them in the color
 namespace, so they would be accessed like color.goldenrod
 
+Issue created by migration from https://trac.sagemath.org/ticket/5601
+
+
+
+
 
 ---
 
-Comment by was created at 2009-03-25 04:35:01
+archive/issue_comments_043670.json:
+```json
+{
+    "body": "Just for clarification, we do *NOT* want even red, orange, etc. all defined in the global namespace.  It would be OK for something like the following to work though:\n\n```\n sage: plot(sin(x), (x,0,1), color = colors.red)\n```\n\n\nMorever, I definitely definitely do not see any advantage at all to predefining a huge number of colors (Jason suggests all HTML -- that's 16777216 different colors!).  Instead one should be able to easily make colors... like you can already do right now.\n\n -- William",
+    "created_at": "2009-03-25T04:35:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43670",
+    "user": "was"
+}
+```
 
 Just for clarification, we do *NOT* want even red, orange, etc. all defined in the global namespace.  It would be OK for something like the following to work though:
 
@@ -48,15 +73,26 @@ Morever, I definitely definitely do not see any advantage at all to predefining 
  -- William
 
 
+
 ---
 
-Comment by mpatel created at 2009-11-14 09:00:19
+archive/issue_comments_043671.json:
+```json
+{
+    "body": "Possibilities:\n\n* CSS3 / SVG colors [alphabetically](http://www.w3.org/TR/css3-color/#svg-color) or [by hue](http://en.wikipedia.org/wiki/Web_colors#X11_color_names) - About 110.\n* [X11 colors](http://en.wikipedia.org/wiki/X11_color_names) - About 500.\n* [Wikipedia's list](http://en.wikipedia.org/wiki/List_of_colors).\n\nWe can make these available as in the comment above.  In effect:\n\n```\nsage.plot.colors.colors['aliceblue'] = (240.0/255.0, 248.0/255.0, 255.0/255.0)\nsage.plot.colors.aliceblue = Color(sage.plot.colors.colors['aliceblue'])\n```\n\n\nShould we define just the official CSS3 / SVG colors?  The X11 colors include four shades for about 75 colors (e.g., `goldenrod1`, `goldenrod2`, `goldenrod3`, and `goldenrod4`), as well as 100 shades of `gray`/`grey` (from black to white).  They may be convenient.  Or we could suggest using `.lighter()` and `.darker()` (cf. #5602).",
+    "created_at": "2009-11-14T09:00:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43671",
+    "user": "mpatel"
+}
+```
 
 Possibilities:
 
- * CSS3 / SVG colors [alphabetically](http://www.w3.org/TR/css3-color/#svg-color) or [by hue](http://en.wikipedia.org/wiki/Web_colors#X11_color_names) - About 110.
- * [X11 colors](http://en.wikipedia.org/wiki/X11_color_names) - About 500.
- * [Wikipedia's list](http://en.wikipedia.org/wiki/List_of_colors).
+* CSS3 / SVG colors [alphabetically](http://www.w3.org/TR/css3-color/#svg-color) or [by hue](http://en.wikipedia.org/wiki/Web_colors#X11_color_names) - About 110.
+* [X11 colors](http://en.wikipedia.org/wiki/X11_color_names) - About 500.
+* [Wikipedia's list](http://en.wikipedia.org/wiki/List_of_colors).
 
 We can make these available as in the comment above.  In effect:
 
@@ -69,9 +105,20 @@ sage.plot.colors.aliceblue = Color(sage.plot.colors.colors['aliceblue'])
 Should we define just the official CSS3 / SVG colors?  The X11 colors include four shades for about 75 colors (e.g., `goldenrod1`, `goldenrod2`, `goldenrod3`, and `goldenrod4`), as well as 100 shades of `gray`/`grey` (from black to white).  They may be convenient.  Or we could suggest using `.lighter()` and `.darker()` (cf. #5602).
 
 
+
 ---
 
-Comment by jason created at 2009-11-14 14:54:32
+archive/issue_comments_043672.json:
+```json
+{
+    "body": "I think just the CSS3 official colors should be sufficient.  Are the names the same for the intersection between CSS3 and X11 colors?  I like the idea of using .lighter and .darker.\n\nWe should also have several lists of colors (like the predefined cmaps in matplotlib) that go well together, so you can do\n\ncolors.winter[0]\n\ncolors.winter[1]\n\netc. for a nice set of colors that go well together.",
+    "created_at": "2009-11-14T14:54:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43672",
+    "user": "jason"
+}
+```
 
 I think just the CSS3 official colors should be sufficient.  Are the names the same for the intersection between CSS3 and X11 colors?  I like the idea of using .lighter and .darker.
 
@@ -84,29 +131,64 @@ colors.winter[1]
 etc. for a nice set of colors that go well together.
 
 
+
 ---
 
-Comment by jason created at 2009-11-14 14:56:48
+archive/issue_comments_043673.json:
+```json
+{
+    "body": "See http://reference.wolfram.com/mathematica/guide/Colors.html for the predefined mma colors (not very many!) and http://reference.wolfram.com/mathematica/guide/ColorSchemes.html for the predefined color schemes.",
+    "created_at": "2009-11-14T14:56:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43673",
+    "user": "jason"
+}
+```
 
 See http://reference.wolfram.com/mathematica/guide/Colors.html for the predefined mma colors (not very many!) and http://reference.wolfram.com/mathematica/guide/ColorSchemes.html for the predefined color schemes.
 
 
+
 ---
+
+archive/issue_comments_043674.json:
+```json
+{
+    "body": "Attachment\n\nAdd CSS3/SVG colors, lighter/darker methods, HSV and HSL/HLS constructors",
+    "created_at": "2009-11-18T04:33:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43674",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
 Add CSS3/SVG colors, lighter/darker methods, HSV and HSL/HLS constructors
 
 
+
 ---
 
-Comment by mpatel created at 2009-11-18 04:41:35
+archive/issue_comments_043675.json:
+```json
+{
+    "body": "The attached patch should add:\n\n* CSS3 / SVG colors - #5601.  Actually, this replaces the previous colors.\n* `Color.lighter` and `Color.darker` - #5602.\n* HSV and HSL/HLS `Color` constructors - #5605.\n\nPredefined palette:\n\n```python\nimport sage.plot.colors as cc\np = Graphics()\nfor i, color in enumerate(cc.colors.keys()):\n    x = floor(i / 12) + 1\n    y = i % 12 + x * 0.5 + 1\n    p += point((x, y), pointsize=500, faceted=True, color=color)\n    p += text(color, (x + 0.15, y), rgbcolor='black', fontsize=10, horizontal_alignment='left')\nshow(p, figsize=[25,10], ymin=0, xmax=14, ymax=19, axes=False)\n```\n",
+    "created_at": "2009-11-18T04:41:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43675",
+    "user": "mpatel"
+}
+```
 
 The attached patch should add:
 
- * CSS3 / SVG colors - #5601.  Actually, this replaces the previous colors.
- * `Color.lighter` and `Color.darker` - #5602.
- * HSV and HSL/HLS `Color` constructors - #5605.
+* CSS3 / SVG colors - #5601.  Actually, this replaces the previous colors.
+* `Color.lighter` and `Color.darker` - #5602.
+* HSV and HSL/HLS `Color` constructors - #5605.
 
 Predefined palette:
 
@@ -123,23 +205,56 @@ show(p, figsize=[25,10], ymin=0, xmax=14, ymax=19, axes=False)
 
 
 
+
 ---
 
-Comment by mpatel created at 2009-11-18 04:41:35
+archive/issue_comments_043676.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-11-18T04:41:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43676",
+    "user": "mpatel"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mpatel created at 2009-11-18 04:44:15
+archive/issue_comments_043677.json:
+```json
+{
+    "body": "The patch should also address [comment:2:ticket:5605 this comment] at #5605.",
+    "created_at": "2009-11-18T04:44:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43677",
+    "user": "mpatel"
+}
+```
 
 The patch should also address [comment:2:ticket:5605 this comment] at #5605.
 
 
+
 ---
 
-Comment by mpatel created at 2009-11-18 05:19:42
+archive/issue_comments_043678.json:
+```json
+{
+    "body": "Replying to [comment:3 jason]:\n> I think just the CSS3 official colors should be sufficient.  Are the names the same for the intersection between CSS3 and X11 colors?\n\nAlmost.  See [this](http://en.wikipedia.org/wiki/X11_color_names#Color_names_that_clash_between_X11_and_HTML.2FCSS).\n\n> We should also have several lists of colors (like the predefined cmaps in matplotlib) that go well together, so you can do\n> \n> colors.winter[0]\n> \n> colors.winter[1]\n> \n> etc. for a nice set of colors that go well together.\n\nOops!  I haven't done this.  Which of matplotlib's [color maps](http://www.scipy.org/Cookbook/Matplotlib/Show_colormaps) should we use?\n\n\n```python\nfrom matplotlib import cm\nsummer = []\nfor i in xrange(cm.summer.N):\n    summer.append(tuple(cm.summer(i)[0:3]))\n```\n\n\n`N = 256` for all of them.  Should we make our lists the same length?",
+    "created_at": "2009-11-18T05:19:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43678",
+    "user": "mpatel"
+}
+```
 
 Replying to [comment:3 jason]:
 > I think just the CSS3 official colors should be sufficient.  Are the names the same for the intersection between CSS3 and X11 colors?
@@ -168,9 +283,20 @@ for i in xrange(cm.summer.N):
 `N = 256` for all of them.  Should we make our lists the same length?
 
 
+
 ---
 
-Comment by jason created at 2009-11-18 06:34:12
+archive/issue_comments_043679.json:
+```json
+{
+    "body": "Replying to [comment:8 mpatel]:\n> \n> Almost.  See [this](http://en.wikipedia.org/wiki/X11_color_names#Color_names_that_clash_between_X11_and_HTML.2FCSS).\n\nInteresting--I didn't know that HTML green was not #00FF00\n\n\n\n> \n> > We should also have several lists of colors (like the predefined cmaps in matplotlib) that go well together, so you can do\n> > \n> > colors.winter[0]\n> > \n> > colors.winter[1]\n> > \n> > etc. for a nice set of colors that go well together.\n> \n> Oops!  I haven't done this.  Which of matplotlib's [color maps](http://www.scipy.org/Cookbook/Matplotlib/Show_colormaps) should we use?\n> \n> {{{\n> #!python\n> from matplotlib import cm\n> summer = []\n> for i in xrange(cm.summer.N):\n>     summer.append(tuple(cm.summer(i)[0:3]))\n> }}}\n> \n> `N = 256` for all of them.  Should we make our lists the same length?\n\n\nHow much do we want to invent/wrap things versus just using their classes directly?  Maybe we should just import their colormaps into our color namespace, so people just have to remember colors.winter, rather than having to import matplotlib?\n\nA *really* cool thing we could do with the gradients, though, is somehow helping people pick gradients according to the criteria here:\n\nhttp://colorbrewer2.org/\n\n(note that lots of the matplotlib color maps came from that website).\n\nNote that on that website, you can easily pick gradients that are color-blind safe, that are safe for photocopying, that are print-friendly, etc.  It would be really cool to have basically the functionality of that flash applet at a user's disposal in Sage.  So, for example:\n\ncolors.gradients(num_colors=5,color_blind=True,print_friendly=True)\n\nwould return a dictionary of gradients that satisfy the criteria (like clicking the boxes on that flash applet).  Additionally, we should incorporate the recommendations from the phd thesis studying the color-blind aspects of the schemes---see p. 87 of http://www.personal.psu.edu/cab38/ColorBrewer/Steve_Gardner_thesis_PSU.pdf\n\n\nThat said, what I describe above is probably work for another ticket (unless you want to take it on in this patch!)",
+    "created_at": "2009-11-18T06:34:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43679",
+    "user": "jason"
+}
+```
 
 Replying to [comment:8 mpatel]:
 > 
@@ -220,9 +346,20 @@ would return a dictionary of gradients that satisfy the criteria (like clicking 
 That said, what I describe above is probably work for another ticket (unless you want to take it on in this patch!)
 
 
+
 ---
 
-Comment by mpatel created at 2009-11-18 09:08:46
+archive/issue_comments_043680.json:
+```json
+{
+    "body": "Replying to [comment:9 jason]:\n> That said, what I describe above is probably work for another ticket (unless you want to take it on in this patch!)\n\nVersion 2 adds the matplotlib colormaps.  Otherwise: Agreed!",
+    "created_at": "2009-11-18T09:08:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43680",
+    "user": "mpatel"
+}
+```
 
 Replying to [comment:9 jason]:
 > That said, what I describe above is probably work for another ticket (unless you want to take it on in this patch!)
@@ -230,50 +367,120 @@ Replying to [comment:9 jason]:
 Version 2 adds the matplotlib colormaps.  Otherwise: Agreed!
 
 
+
 ---
 
-Comment by mpatel created at 2009-11-18 09:10:30
+archive/issue_comments_043681.json:
+```json
+{
+    "body": "Added matplotlib colormaps.  Apply only this patch.",
+    "created_at": "2009-11-18T09:10:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43681",
+    "user": "mpatel"
+}
+```
 
 Added matplotlib colormaps.  Apply only this patch.
 
 
+
 ---
+
+archive/issue_comments_043682.json:
+```json
+{
+    "body": "Attachment\n\nSage colors.  Not a patch.",
+    "created_at": "2009-11-19T00:43:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43682",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
 Sage colors.  Not a patch.
 
 
+
 ---
+
+archive/issue_comments_043683.json:
+```json
+{
+    "body": "Attachment\n\n<img src=\"sage_colors.png\" width=900px>",
+    "created_at": "2009-11-19T00:46:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43683",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
 <img src="sage_colors.png" width=900px>
 
 
+
 ---
 
-Comment by robertwb created at 2009-11-20 05:42:37
+archive/issue_comments_043684.json:
+```json
+{
+    "body": "In general, I like this change, especially being able to do stuff like define color lists and doing lighter/darker(). \n\nThe big color list is verbose, and (at least for me) a bit hard to read. Maybe it would be easier to make a dict of their hex values, then run over the dict converting them?",
+    "created_at": "2009-11-20T05:42:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43684",
+    "user": "robertwb"
+}
+```
 
 In general, I like this change, especially being able to do stuff like define color lists and doing lighter/darker(). 
 
 The big color list is verbose, and (at least for me) a bit hard to read. Maybe it would be easier to make a dict of their hex values, then run over the dict converting them?
 
 
+
 ---
 
-Comment by robertwb created at 2009-11-20 05:53:02
+archive/issue_comments_043685.json:
+```json
+{
+    "body": "Is there a way to do some of this lazily, e.g. not import matplotlib at startup?",
+    "created_at": "2009-11-20T05:53:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43685",
+    "user": "robertwb"
+}
+```
 
 Is there a way to do some of this lazily, e.g. not import matplotlib at startup?
 
 
+
 ---
 
-Comment by mpatel created at 2009-11-20 10:20:45
+archive/issue_comments_043686.json:
+```json
+{
+    "body": "Replying to [comment:14 robertwb]:\n> Is there a way to do some of this lazily, e.g. not import matplotlib at startup? \nThe following is ad hoc, but it appears to work.  I removed the global import and the code that sets up the module-scope colormaps.  To the *end* of `sage.plot.colors` I added\n\n```python\n# matplotlib color maps, loaded on-demand.\nclass ColormapLoader(object):\n    def __init__(self, globs):\n        self.cm = None\n        for key in globs:\n            self.__setattr__(key, globs[key])\n\n    def __getattr__(self, name):\n        if name == '__path__':\n            return __path__\n\n        if not self.cm:\n            print 'loading matplotlib.cm'\n            from matplotlib import cm            \n            self.cm = cm\n\n        try:\n            cmap = self.cm.__getattribute__(name)\n        except AttributeError:\n            raise AttributeError, 'no colormap with name %s' % name\n\n        self.__setattr__(name, cmap)\n        return cmap\n\ncolormaps = ColormapLoader(vars())\n\nimport sys\nsys.modules['sage.plot.colors'] = colormaps\n```\n",
+    "created_at": "2009-11-20T10:20:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43686",
+    "user": "mpatel"
+}
+```
 
 Replying to [comment:14 robertwb]:
 > Is there a way to do some of this lazily, e.g. not import matplotlib at startup? 
-The following is ad hoc, but it appears to work.  I removed the global import and the code that sets up the module-scope colormaps.  To the _end_ of `sage.plot.colors` I added
+The following is ad hoc, but it appears to work.  I removed the global import and the code that sets up the module-scope colormaps.  To the *end* of `sage.plot.colors` I added
 
 ```python
 # matplotlib color maps, loaded on-demand.
@@ -308,9 +515,20 @@ sys.modules['sage.plot.colors'] = colormaps
 
 
 
+
 ---
 
-Comment by jason created at 2009-11-20 10:25:27
+archive/issue_comments_043687.json:
+```json
+{
+    "body": "You can also look how we import numpy/scipy in matrix/matrix_double_dense.pyx:\n\nAt the top, we have:\n\nnumpy=None\n\nwhen we need to use it, we have code like:\n\n```\n        global numpy\n        if numpy is None:\n            import numpy\n```\n",
+    "created_at": "2009-11-20T10:25:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43687",
+    "user": "jason"
+}
+```
 
 You can also look how we import numpy/scipy in matrix/matrix_double_dense.pyx:
 
@@ -328,39 +546,96 @@ when we need to use it, we have code like:
 
 
 
+
 ---
+
+archive/issue_comments_043688.json:
+```json
+{
+    "body": "Attachment\n\nStart with HTML hex colors.  No change to colormap imports.  Apply only this patch.",
+    "created_at": "2009-11-20T11:21:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43688",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
 Start with HTML hex colors.  No change to colormap imports.  Apply only this patch.
 
 
+
 ---
 
-Comment by mpatel created at 2009-11-20 14:41:07
+archive/issue_comments_043689.json:
+```json
+{
+    "body": "The \"ad hoc\" example above adds module-scope colormaps on-the-fly, with or without the \"numpy\" simplification, but it appears to confuse the doctesting script.  If it's OK to make the maps accessible as `sage.plot.colors.colormaps.mapname` instead of `sage.plot.colors.mapname`, say, I can add a simple subclass of [collections.Mapping](http://docs.python.org/library/collections.html#abcs-abstract-base-classes) that lazily loads the maps as attributes of a `sage.plot.colors.colormaps` object.\n\nOn the other hand, importing just `matplotlib.cm` seems to be fast.  We could keep the current code.",
+    "created_at": "2009-11-20T14:41:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43689",
+    "user": "mpatel"
+}
+```
 
 The "ad hoc" example above adds module-scope colormaps on-the-fly, with or without the "numpy" simplification, but it appears to confuse the doctesting script.  If it's OK to make the maps accessible as `sage.plot.colors.colormaps.mapname` instead of `sage.plot.colors.mapname`, say, I can add a simple subclass of [collections.Mapping](http://docs.python.org/library/collections.html#abcs-abstract-base-classes) that lazily loads the maps as attributes of a `sage.plot.colors.colormaps` object.
 
 On the other hand, importing just `matplotlib.cm` seems to be fast.  We could keep the current code.
 
 
+
 ---
 
-Comment by mpatel created at 2009-11-22 00:03:57
+archive/issue_comments_043690.json:
+```json
+{
+    "body": "I just noticed #7502, which could be relevant and useful here.",
+    "created_at": "2009-11-22T00:03:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43690",
+    "user": "mpatel"
+}
+```
 
 I just noticed #7502, which could be relevant and useful here.
 
 
+
 ---
 
-Comment by mpatel created at 2009-11-22 00:08:37
+archive/issue_comments_043691.json:
+```json
+{
+    "body": "I should have entered 'kcrisman' in the \"Cc\" field.  Sorry about that!  Or, if you did not wish to be alerted, the correction...",
+    "created_at": "2009-11-22T00:08:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43691",
+    "user": "mpatel"
+}
+```
 
 I should have entered 'kcrisman' in the "Cc" field.  Sorry about that!  Or, if you did not wish to be alerted, the correction...
 
 
+
 ---
 
-Comment by mpatel created at 2009-11-22 03:41:06
+archive/issue_comments_043692.json:
+```json
+{
+    "body": "From `sage.plot.colors.float_to_html`'s docstring:\n\n```\nThis may not seem necessary, but there are some odd cases where matplotlib is just plain schizophrenic \u2013 for an example, do\n\nsage: vertex_colors = {(1.0, 0.8571428571428571, 0.0): [4, 5, 6], (0.28571428571428559, 0.0, 1.0): [14, 15, 16], (1.0, 0.0, 0.0): [0, 1, 2, 3], (0.0, 0.57142857142857162, 1.0): [12, 13], (1.0, 0.0, 0.85714285714285676): [17, 18, 19], (0.0, 1.0, 0.57142857142857162): [10, 11], (0.28571428571428581, 1.0, 0.0): [7, 8, 9]}\nsage: graphs.DodecahedralGraph().show(vertex_colors=vertex_colors)\n\nNotice how the colors don\u2019t respect the partition at all.....\n```\n\nIs this still true?  The example appears to work for me, but I could be misinterpreting it.",
+    "created_at": "2009-11-22T03:41:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43692",
+    "user": "mpatel"
+}
+```
 
 From `sage.plot.colors.float_to_html`'s docstring:
 
@@ -376,40 +651,86 @@ Notice how the colors don’t respect the partition at all.....
 Is this still true?  The example appears to work for me, but I could be misinterpreting it.
 
 
+
 ---
+
+archive/issue_comments_043693.json:
+```json
+{
+    "body": "Attachment\n\nAdd to reference manual.  Defer loading of color maps.  Apply only this patch.",
+    "created_at": "2009-11-22T05:35:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43693",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
 Add to reference manual.  Defer loading of color maps.  Apply only this patch.
 
 
+
 ---
 
-Comment by mpatel created at 2009-11-22 05:41:47
+archive/issue_comments_043694.json:
+```json
+{
+    "body": "Version 4:\n\n* Tweaks some docstrings.\n* Adds `sage.plot.colors` to the reference manual.\n* Lazily loads matplotlib's colormaps into `sage.plot.colors.colormaps`.\n* Adds `colors` and `colormaps` to the objects imported in `sage.plot.all`.\n* Does not include the `float_to_html` example above.\n\nFeel free to make or suggest changes!",
+    "created_at": "2009-11-22T05:41:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43694",
+    "user": "mpatel"
+}
+```
 
 Version 4:
 
- * Tweaks some docstrings.
- * Adds `sage.plot.colors` to the reference manual.
- * Lazily loads matplotlib's colormaps into `sage.plot.colors.colormaps`.
- * Adds `colors` and `colormaps` to the objects imported in `sage.plot.all`.
- * Does not include the `float_to_html` example above.
+* Tweaks some docstrings.
+* Adds `sage.plot.colors` to the reference manual.
+* Lazily loads matplotlib's colormaps into `sage.plot.colors.colormaps`.
+* Adds `colors` and `colormaps` to the objects imported in `sage.plot.all`.
+* Does not include the `float_to_html` example above.
 
 Feel free to make or suggest changes!
 
 
+
 ---
 
-Comment by kcrisman created at 2009-11-24 01:43:56
+archive/issue_comments_043695.json:
+```json
+{
+    "body": "Sorry I won't be able to review this (travel) in the next little bit.  I do not actually think that the float_to_html thing is broken anymore, but I kept it when I refactored some of this stuff; as long as all the graph coloring and plot coloring things still work in the Sage library, it should be okay.  The more we do from mpl, the better, though.\n\nI do like the pink/punk and grassmann things, that's a little fun but also shows the errors.  Otherwise it seems this keeps the previous behavior while adding good access to important stuff.  One thing I don't like is that the diff is very hard to read for some reason - it might be worth doing a options='--no-commit' and then recommit, just to see if it will be easier to compare new and old!  But that's fairly trivial.",
+    "created_at": "2009-11-24T01:43:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43695",
+    "user": "kcrisman"
+}
+```
 
 Sorry I won't be able to review this (travel) in the next little bit.  I do not actually think that the float_to_html thing is broken anymore, but I kept it when I refactored some of this stuff; as long as all the graph coloring and plot coloring things still work in the Sage library, it should be okay.  The more we do from mpl, the better, though.
 
 I do like the pink/punk and grassmann things, that's a little fun but also shows the errors.  Otherwise it seems this keeps the previous behavior while adding good access to important stuff.  One thing I don't like is that the diff is very hard to read for some reason - it might be worth doing a options='--no-commit' and then recommit, just to see if it will be easier to compare new and old!  But that's fairly trivial.
 
 
+
 ---
 
-Comment by mpatel created at 2009-11-24 08:01:28
+archive/issue_comments_043696.json:
+```json
+{
+    "body": "Replying to [comment:22 kcrisman]:\n> One thing I don't like is that the diff is very hard to read for some reason - [...]\n\nThis may stem from my changing the order of some definitions.",
+    "created_at": "2009-11-24T08:01:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43696",
+    "user": "mpatel"
+}
+```
 
 Replying to [comment:22 kcrisman]:
 > One thing I don't like is that the diff is very hard to read for some reason - [...]
@@ -417,26 +738,61 @@ Replying to [comment:22 kcrisman]:
 This may stem from my changing the order of some definitions.
 
 
+
 ---
 
-Comment by mpatel created at 2009-11-25 08:09:27
+archive/issue_comments_043697.json:
+```json
+{
+    "body": "To do:\n\n* Make `colormaps.<TAB>` list the colormaps, too.\n* Make `colors.<TAB>` list the colors.",
+    "created_at": "2009-11-25T08:09:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43697",
+    "user": "mpatel"
+}
+```
 
 To do:
 
- * Make `colormaps.<TAB>` list the colormaps, too.
- * Make `colors.<TAB>` list the colors.
+* Make `colormaps.<TAB>` list the colormaps, too.
+* Make `colors.<TAB>` list the colors.
+
 
 
 ---
+
+archive/issue_comments_043698.json:
+```json
+{
+    "body": "Attachment\n\nAttribute access for colors and color maps.  Apply only this patch.",
+    "created_at": "2009-11-26T05:37:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43698",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
 Attribute access for colors and color maps.  Apply only this patch.
 
 
+
 ---
 
-Comment by mpatel created at 2009-11-26 05:38:39
+archive/issue_comments_043699.json:
+```json
+{
+    "body": "Replying to [comment:24 mpatel]:\n> To do:\n> \n>  * Make `colormaps.<TAB>` list the colormaps, too.\n>  * Make `colors.<TAB>` list the colors.\n\nVersion 5 does both.",
+    "created_at": "2009-11-26T05:38:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43699",
+    "user": "mpatel"
+}
+```
 
 Replying to [comment:24 mpatel]:
 > To do:
@@ -447,50 +803,118 @@ Replying to [comment:24 mpatel]:
 Version 5 does both.
 
 
+
 ---
 
-Comment by mpatel created at 2009-11-27 08:05:50
+archive/issue_comments_043700.json:
+```json
+{
+    "body": "I just discovered [__add__ and friends](http://docs.python.org/reference/datamodel.html#emulating-numeric-types), so please wait on the review.",
+    "created_at": "2009-11-27T08:05:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43700",
+    "user": "mpatel"
+}
+```
 
 I just discovered [__add__ and friends](http://docs.python.org/reference/datamodel.html#emulating-numeric-types), so please wait on the review.
 
 
+
 ---
+
+archive/issue_comments_043701.json:
+```json
+{
+    "body": "Attachment\n\n[Scalar] add and multiply colors.  This patch only.",
+    "created_at": "2009-12-03T16:00:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43701",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
 [Scalar] add and multiply colors.  This patch only.
 
 
+
 ---
 
-Comment by mpatel created at 2009-12-03 16:24:57
+archive/issue_comments_043702.json:
+```json
+{
+    "body": "Version 6:\n\n* Makes it possible to scalar add and multiply Sage `Color`s (cf. #5604.).  The RGB coordinates are reduced modulo 1.0 after each operation --- watch the order!  The `scale` and `lighter` methods simply cap values at 1.0.  For the sake of clarity: Adding colors does not take the arithmetic mean of their corresponding components.\n\n* Uses Sage `Color`s, instead of 3-tuples, for the values in `sage.plot.colors.colors`.  This is for the sake of uniformity and seems to make sense.  Later, we could extend the class from RGB to RGBA.  I added `__iter__` and `__getitem__` methods, so that doctests under `plot/` pass, but please report any problems!\n\nOn primary, secondary, tertiary, and quaternary colors, see, e.g., [this](http://members.cox.net/sn3nut/color%20theory.htm), [this](http://en.wikipedia.org/wiki/Tertiary_color), or [this](http://books.google.com/books?id=oFmoFNx-pDwC&pg=PA24&lpg=PA24&dq=quaternary+color+tertiary&source=bl&ots=Dnu8NaVDAD&sig=O6AWEkn9FLnf6pLWKT1a96DhcFU&hl=en&ei=yuIXS5HTOIngsQPWya2ZDg&sa=X&oi=book_result&ct=result&resnum=4&ved=0CBAQ6AEwAw#v=onepage&q=quaternary%20color%20tertiary&f=false).",
+    "created_at": "2009-12-03T16:24:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43702",
+    "user": "mpatel"
+}
+```
 
 Version 6:
 
- * Makes it possible to scalar add and multiply Sage `Color`s (cf. #5604.).  The RGB coordinates are reduced modulo 1.0 after each operation --- watch the order!  The `scale` and `lighter` methods simply cap values at 1.0.  For the sake of clarity: Adding colors does not take the arithmetic mean of their corresponding components.
+* Makes it possible to scalar add and multiply Sage `Color`s (cf. #5604.).  The RGB coordinates are reduced modulo 1.0 after each operation --- watch the order!  The `scale` and `lighter` methods simply cap values at 1.0.  For the sake of clarity: Adding colors does not take the arithmetic mean of their corresponding components.
 
- * Uses Sage `Color`s, instead of 3-tuples, for the values in `sage.plot.colors.colors`.  This is for the sake of uniformity and seems to make sense.  Later, we could extend the class from RGB to RGBA.  I added `__iter__` and `__getitem__` methods, so that doctests under `plot/` pass, but please report any problems!
+* Uses Sage `Color`s, instead of 3-tuples, for the values in `sage.plot.colors.colors`.  This is for the sake of uniformity and seems to make sense.  Later, we could extend the class from RGB to RGBA.  I added `__iter__` and `__getitem__` methods, so that doctests under `plot/` pass, but please report any problems!
 
 On primary, secondary, tertiary, and quaternary colors, see, e.g., [this](http://members.cox.net/sn3nut/color%20theory.htm), [this](http://en.wikipedia.org/wiki/Tertiary_color), or [this](http://books.google.com/books?id=oFmoFNx-pDwC&pg=PA24&lpg=PA24&dq=quaternary+color+tertiary&source=bl&ots=Dnu8NaVDAD&sig=O6AWEkn9FLnf6pLWKT1a96DhcFU&hl=en&ei=yuIXS5HTOIngsQPWya2ZDg&sa=X&oi=book_result&ct=result&resnum=4&ved=0CBAQ6AEwAw#v=onepage&q=quaternary%20color%20tertiary&f=false).
 
 
----
-
-Comment by mpatel created at 2009-12-03 16:25:57
-
-By the way, I definitely _won't_ try to roll #5603 into this ticket.
-
 
 ---
 
-Comment by kcrisman created at 2009-12-10 14:21:20
+archive/issue_comments_043703.json:
+```json
+{
+    "body": "By the way, I definitely *won't* try to roll #5603 into this ticket.",
+    "created_at": "2009-12-03T16:25:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43703",
+    "user": "mpatel"
+}
+```
 
-Believe it or not, this _also_ takes care of ticket #5083, I think.  Truly a giant-slayer of a patch.
+By the way, I definitely *won't* try to roll #5603 into this ticket.
+
 
 
 ---
 
-Comment by jason created at 2009-12-10 14:53:59
+archive/issue_comments_043704.json:
+```json
+{
+    "body": "Believe it or not, this *also* takes care of ticket #5083, I think.  Truly a giant-slayer of a patch.",
+    "created_at": "2009-12-10T14:21:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43704",
+    "user": "kcrisman"
+}
+```
+
+Believe it or not, this *also* takes care of ticket #5083, I think.  Truly a giant-slayer of a patch.
+
+
+
+---
+
+archive/issue_comments_043705.json:
+```json
+{
+    "body": "This is great stuff.\n\nSome initial comments:\n\n # Lots of doctests are marked #random that shouldn't be (there should be no #random doctests).  Use ... to take care of memory addresses changing, and use sort(dict.items()) to take care of things like dictionaries.\n\n # .lighter() and .darker() seem to have too little contrast.  Can we make it so that they about double their steps?  In other words, can we make it so that .lighter() does what .lighter().lighter() does in this patch?\n\n # Interestingly, colors.white.darker() gives gray values, but colors.black.lighter() does not give gray values.\n\nOf these the first is the real technical issue.  Other things are fine-tuning that can be put off to another patch.",
+    "created_at": "2009-12-10T14:53:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43705",
+    "user": "jason"
+}
+```
 
 This is great stuff.
 
@@ -505,17 +929,39 @@ Some initial comments:
 Of these the first is the real technical issue.  Other things are fine-tuning that can be put off to another patch.
 
 
+
 ---
 
-Comment by jason created at 2009-12-10 14:57:26
+archive/issue_comments_043706.json:
+```json
+{
+    "body": "Here's another issue:\n`circle((0,0),radius=1,fill=True,facecolor=colors.white+colors.green)` produces a purple circle!",
+    "created_at": "2009-12-10T14:57:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43706",
+    "user": "jason"
+}
+```
 
 Here's another issue:
 `circle((0,0),radius=1,fill=True,facecolor=colors.white+colors.green)` produces a purple circle!
 
 
+
 ---
 
-Comment by kcrisman created at 2009-12-10 18:25:10
+archive/issue_comments_043707.json:
+```json
+{
+    "body": "I just looked at this too.  Overall, a great patch, and well documented and well thought out.  One quibble is whether it should be \"An Red-Green-Blue\" or \"A\"; I know it's \"An RGB\", but this seems awkward.  Is it necessary for ColorMaps to inherit from collections.whatever, also?\n\nBut the downside of such a patch is that all these things are together, so we can't give positive review to the good parts.  And adding colors and the lighter/darker do not function at all properly.  In addition to Jason's example, red+yellow=green, not orange, with this addition; further, you can't make red lighter (to, say, pink) and making it darker gives... brown.  \n\nSo  I think that all of those things should use HSV or HSL, and you can increase or decrease S or L as seems to work best for lighter/darker, and do a color-wheel addition of hues for addition.  This is a little tricky - because the color wheel has nontrivial fundamental group, you can't get a unique answer for adding orange and blue, say.  (There are some interesting psych experiments where subjects shown complementary colors in the two eyes see either a superimposition of the colors, or the colors switching back and forth.)  Oh, and what the heck does multiplying a color by a color mean?  I think that should be removed unless there is a natural interpretation; scalar mult only, please, and that can be the RGB mult.\n\nAnyway, I think this is all doable, but it's a shame this would hold up the excellent refactoring and improvement of colors and colormaps.  Why not just remove the not properly working things, and keep their tickets open, but do the base stuff here?\n\nAnd as for the random doctests... Jason, I think he marked them that way because the default colors and colormaps may change.  But probably that will just be something that should be fixed each time we upgrade matplotlib or something.",
+    "created_at": "2009-12-10T18:25:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43707",
+    "user": "kcrisman"
+}
+```
 
 I just looked at this too.  Overall, a great patch, and well documented and well thought out.  One quibble is whether it should be "An Red-Green-Blue" or "A"; I know it's "An RGB", but this seems awkward.  Is it necessary for ColorMaps to inherit from collections.whatever, also?
 
@@ -528,16 +974,38 @@ Anyway, I think this is all doable, but it's a shame this would hold up the exce
 And as for the random doctests... Jason, I think he marked them that way because the default colors and colormaps may change.  But probably that will just be something that should be fixed each time we upgrade matplotlib or something.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-12-10 18:25:10
+archive/issue_comments_043708.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2009-12-10T18:25:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43708",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by jason created at 2009-12-10 18:30:21
+archive/issue_comments_043709.json:
+```json
+{
+    "body": "Replying to [comment:33 kcrisman]:\n\n> Anyway, I think this is all doable, but it's a shame this would hold up the excellent refactoring and improvement of colors and colormaps.  Why not just remove the not properly working things, and keep their tickets open, but do the base stuff here?\n\nI agree.  Let's remove (or at least comment out) the addition stuff right now until we have a better grasp of what we want and how to get it.\n\nI believe MMA just implements a Blend function, and then makes lighter and darker just blending with black or white, and it's also consistent with blending other colors.\n\n\n> And as for the random doctests... Jason, I think he marked them that way because the default colors and colormaps may change.  But probably that will just be something that should be fixed each time we upgrade matplotlib or something.\n\nI don't think the colormaps in matplotlib have been touched in a long time.  I wouldn't worry too much about having to fix things up very often.  And it's much better to fix it up than to have it not doctested by putting a #random there.",
+    "created_at": "2009-12-10T18:30:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43709",
+    "user": "jason"
+}
+```
 
 Replying to [comment:33 kcrisman]:
 
@@ -553,16 +1021,38 @@ I believe MMA just implements a Blend function, and then makes lighter and darke
 I don't think the colormaps in matplotlib have been touched in a long time.  I wouldn't worry too much about having to fix things up very often.  And it's much better to fix it up than to have it not doctested by putting a #random there.
 
 
+
 ---
 
-Comment by jason created at 2009-12-10 18:32:30
+archive/issue_comments_043710.json:
+```json
+{
+    "body": "MMA Blend function: http://reference.wolfram.com/mathematica/ref/Blend.html",
+    "created_at": "2009-12-10T18:32:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43710",
+    "user": "jason"
+}
+```
 
 MMA Blend function: http://reference.wolfram.com/mathematica/ref/Blend.html
 
 
+
 ---
 
-Comment by jason created at 2009-12-10 18:42:13
+archive/issue_comments_043711.json:
+```json
+{
+    "body": "I think MMA just does a weighted average of colors.  In other words, for each component, color1.blend(color2,fraction) would create a new color (1-fraction)*color1+(fraction)*color2.\n\nI thought color1+color2 would be color1.blend(color2,1/2)\n\nMMA then has:\n\ncolor.lighter() is just color.blend(colors.white,1/3)\n\ncolor.darker() is just color.blend(colors.black,1/2)\n\nI'm not quite sure what this patch does.",
+    "created_at": "2009-12-10T18:42:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43711",
+    "user": "jason"
+}
+```
 
 I think MMA just does a weighted average of colors.  In other words, for each component, color1.blend(color2,fraction) would create a new color (1-fraction)*color1+(fraction)*color2.
 
@@ -577,23 +1067,58 @@ color.darker() is just color.blend(colors.black,1/2)
 I'm not quite sure what this patch does.
 
 
+
 ---
 
-Comment by jason created at 2009-12-10 23:38:13
+archive/issue_comments_043712.json:
+```json
+{
+    "body": "apply on top of previous patch; implements blending",
+    "created_at": "2009-12-10T23:38:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43712",
+    "user": "jason"
+}
+```
 
 apply on top of previous patch; implements blending
 
 
+
 ---
+
+archive/issue_comments_043713.json:
+```json
+{
+    "body": "Attachment\n\nI attached a *rough* patch that implements the mma-style blending, lighter(), and darker().  What do you think?  I don't know that much about color theory, so I don't know what \"should\" happen, but now colors.yellow+colors.green gives yellowgreenish colors.",
+    "created_at": "2009-12-10T23:39:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43713",
+    "user": "jason"
+}
+```
 
 Attachment
 
 I attached a *rough* patch that implements the mma-style blending, lighter(), and darker().  What do you think?  I don't know that much about color theory, so I don't know what "should" happen, but now colors.yellow+colors.green gives yellowgreenish colors.
 
 
+
 ---
 
-Comment by jason created at 2009-12-11 00:05:26
+archive/issue_comments_043714.json:
+```json
+{
+    "body": "According to http://stackoverflow.com/questions/398224/how-to-mix-colors-naturally-with-c/398268#398268, we really want to work in Lab space to mix colors, because then linear changes become linear changes in perception (i.e., Lab is designed so that it is easy to change the perception by a certain amount).\n\nAlso, here's some results using alpha values: http://stackoverflow.com/questions/726549/algorithm-for-additive-color-mixing-for-rgb-values\n\nFor lightening or darkening, some suggestions here are to convert to hsl or hsv and modify the correct component: http://stackoverflow.com/questions/97646/how-do-i-determine-darker-or-lighter-color-variant-of-a-given-color\n\nSo, as always, it is not as easy as it appears at all.  However, it looks like it might be easy to convert to hsl or hsv for the darker/lighter commands pretty easily, especially since we already have functions to do that.",
+    "created_at": "2009-12-11T00:05:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43714",
+    "user": "jason"
+}
+```
 
 According to http://stackoverflow.com/questions/398224/how-to-mix-colors-naturally-with-c/398268#398268, we really want to work in Lab space to mix colors, because then linear changes become linear changes in perception (i.e., Lab is designed so that it is easy to change the perception by a certain amount).
 
@@ -604,18 +1129,40 @@ For lightening or darkening, some suggestions here are to convert to hsl or hsv 
 So, as always, it is not as easy as it appears at all.  However, it looks like it might be easy to convert to hsl or hsv for the darker/lighter commands pretty easily, especially since we already have functions to do that.
 
 
+
 ---
 
-Comment by robertwb created at 2009-12-11 00:47:10
+archive/issue_comments_043715.json:
+```json
+{
+    "body": "+1 to working in non-RGB space for color mixing. \n\nAlso, it might be nice if lighter() and darker() take an optional parameter, so c.lighter(3) would be the same as c.ligher().lighter().lighter()",
+    "created_at": "2009-12-11T00:47:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43715",
+    "user": "robertwb"
+}
+```
 
 +1 to working in non-RGB space for color mixing. 
 
 Also, it might be nice if lighter() and darker() take an optional parameter, so c.lighter(3) would be the same as c.ligher().lighter().lighter()
 
 
+
 ---
 
-Comment by jason created at 2009-12-11 01:04:22
+archive/issue_comments_043716.json:
+```json
+{
+    "body": "Good point.  In the mma model (and my patch), c.lighter() is just c.blend(white,1/3).  c.lighter(k) is just c.blend(white,k), so c.lighter(0) is c, and c.lighter(1) is white.  I can see where your idea would be very useful too, though.  We ought to make lighter/darker take the fraction as a keyword argument, though, and make the number of times the first positional argument:\n\ndef lighter(self, times=1, fraction=1.0/3.0):\n    fraction=float(fraction)\n    c = self\n    for i in range(times):\n        c = c.blend((1.0, 1.0, 1.0), fraction)\n    return c\n\n(that is, if we decide to go with the blending patch for now)",
+    "created_at": "2009-12-11T01:04:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43716",
+    "user": "jason"
+}
+```
 
 Good point.  In the mma model (and my patch), c.lighter() is just c.blend(white,1/3).  c.lighter(k) is just c.blend(white,k), so c.lighter(0) is c, and c.lighter(1) is white.  I can see where your idea would be very useful too, though.  We ought to make lighter/darker take the fraction as a keyword argument, though, and make the number of times the first positional argument:
 
@@ -629,9 +1176,20 @@ def lighter(self, times=1, fraction=1.0/3.0):
 (that is, if we decide to go with the blending patch for now)
 
 
+
 ---
 
-Comment by jason created at 2009-12-11 01:05:06
+archive/issue_comments_043717.json:
+```json
+{
+    "body": "Of course:\n\n```\ndef lighter(self, times=1, fraction=1.0/3.0):\n    fraction=float(fraction) \n    c = self \n    for i in range(times):\n        c = c.blend((1.0, 1.0, 1.0), fraction)\n    return c\n```\n",
+    "created_at": "2009-12-11T01:05:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43717",
+    "user": "jason"
+}
+```
 
 Of course:
 
@@ -646,32 +1204,78 @@ def lighter(self, times=1, fraction=1.0/3.0):
 
 
 
+
 ---
 
-Comment by mpatel created at 2009-12-11 11:11:31
+archive/issue_comments_043718.json:
+```json
+{
+    "body": "On lighter/darker: V6 just scalar multiplied the RGB coordinates, which I think is equivalent to scaling L in HSL or V in HSV.  For scaling up from black, in this approach, I should have returned some grey.  But interpolation looks good to me!\n\nAnyway, I apologize for the mess, especially for claiming to cover #5604.  Thanks for the feedback and corrections!",
+    "created_at": "2009-12-11T11:11:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43718",
+    "user": "mpatel"
+}
+```
 
 On lighter/darker: V6 just scalar multiplied the RGB coordinates, which I think is equivalent to scaling L in HSL or V in HSV.  For scaling up from black, in this approach, I should have returned some grey.  But interpolation looks good to me!
 
 Anyway, I apologize for the mess, especially for claiming to cover #5604.  Thanks for the feedback and corrections!
 
 
+
 ---
+
+archive/issue_comments_043719.json:
+```json
+{
+    "body": "Attachment\n\nDoctest fixes.  Combined patch rebased vs. 4.3.3.alpha1.  Apply only this patch.",
+    "created_at": "2010-02-22T00:51:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43719",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
 Doctest fixes.  Combined patch rebased vs. 4.3.3.alpha1.  Apply only this patch.
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-22 01:01:05
+archive/issue_comments_043720.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-02-22T01:01:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43720",
+    "user": "mpatel"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-22 01:01:05
+archive/issue_comments_043721.json:
+```json
+{
+    "body": "I've attached V7, which is V6 + Jason Grout's \"blending\" patch + doctest / docstring fixes.\n\nPlease review, experiment, blend, plot, test, etc., and let me know if there are problems!\n\nI've added Bill Cauchois to the Cc: list, since I've updated some tests in `sage.plot.plot3d.base` (cf. #7985, #8235).",
+    "created_at": "2010-02-22T01:01:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43721",
+    "user": "mpatel"
+}
+```
 
 I've attached V7, which is V6 + Jason Grout's "blending" patch + doctest / docstring fixes.
 
@@ -680,74 +1284,186 @@ Please review, experiment, blend, plot, test, etc., and let me know if there are
 I've added Bill Cauchois to the Cc: list, since I've updated some tests in `sage.plot.plot3d.base` (cf. #7985, #8235).
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-22 01:01:37
+archive/issue_comments_043722.json:
+```json
+{
+    "body": "Replying to [comment:43 mpatel]:\n> Please review, experiment, blend, plot, test, etc., and let me know if there are problems!\nOr fix them. :)",
+    "created_at": "2010-02-22T01:01:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43722",
+    "user": "mpatel"
+}
+```
 
 Replying to [comment:43 mpatel]:
 > Please review, experiment, blend, plot, test, etc., and let me know if there are problems!
 Or fix them. :)
 
 
+
 ---
+
+archive/issue_comments_043723.json:
+```json
+{
+    "body": "Attachment\n\nFix `interact` doctest.  **sagenb** repo.",
+    "created_at": "2010-02-22T04:18:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43723",
+    "user": "mpatel"
+}
+```
 
 Attachment
 
-Fix `interact` doctest.  *sagenb* repo.
+Fix `interact` doctest.  **sagenb** repo.
+
 
 
 ---
 
-Comment by jason created at 2010-02-27 20:58:26
+archive/issue_comments_043724.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-02-27T20:58:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43724",
+    "user": "jason"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jason created at 2010-02-27 20:58:26
+archive/issue_comments_043725.json:
+```json
+{
+    "body": "I've looked at this pretty carefully before.  The examples I give above seem to work.  I presume that your incorporation of my blending patch is a positive review of that part.  All doctests pass in plot/* and plot/plot3d/*.  I also played around with it a bit more and it seems like everything is very nicely done.  So positive review!",
+    "created_at": "2010-02-27T20:58:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43725",
+    "user": "jason"
+}
+```
 
 I've looked at this pretty carefully before.  The examples I give above seem to work.  I presume that your incorporation of my blending patch is a positive review of that part.  All doctests pass in plot/* and plot/plot3d/*.  I also played around with it a bit more and it seems like everything is very nicely done.  So positive review!
 
 
+
 ---
 
-Comment by mvngu created at 2010-03-03 14:13:29
+archive/issue_comments_043726.json:
+```json
+{
+    "body": "Merged [trac_5601-builtin_colors_v7.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/5601/trac_5601-builtin_colors_v7.patch) in the Sage library. I leave it to the SageNB project manager to merge [trac_5601-sagenb_doctest.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/5601/trac_5601-sagenb_doctest.patch) into the SageNB repository. After doing so, the said manager could close this ticket as fixed.",
+    "created_at": "2010-03-03T14:13:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43726",
+    "user": "mvngu"
+}
+```
 
 Merged [trac_5601-builtin_colors_v7.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/5601/trac_5601-builtin_colors_v7.patch) in the Sage library. I leave it to the SageNB project manager to merge [trac_5601-sagenb_doctest.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/5601/trac_5601-sagenb_doctest.patch) into the SageNB repository. After doing so, the said manager could close this ticket as fixed.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-03-03 22:29:05
+archive/issue_comments_043727.json:
+```json
+{
+    "body": "Note: merging trac_5601-sagenb_doctest.patch should fix one of the doctest failures listed at #8430.",
+    "created_at": "2010-03-03T22:29:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43727",
+    "user": "jhpalmieri"
+}
+```
 
 Note: merging trac_5601-sagenb_doctest.patch should fix one of the doctest failures listed at #8430.
 
 
+
 ---
 
-Comment by mpatel created at 2010-03-04 22:35:45
+archive/issue_comments_043728.json:
+```json
+{
+    "body": "I'm merging [attachment:trac_5601-sagenb_doctest.patch] into SageNB 0.7.5.2.  See #8435.",
+    "created_at": "2010-03-04T22:35:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43728",
+    "user": "mpatel"
+}
+```
 
 I'm merging [attachment:trac_5601-sagenb_doctest.patch] into SageNB 0.7.5.2.  See #8435.
 
 
+
 ---
 
-Comment by mpatel created at 2010-03-04 22:50:24
+archive/issue_comments_043729.json:
+```json
+{
+    "body": "What should we do about #5602, #5603, #5604, and #5605?  Close them and open new tickets for the ideas mentioned above?",
+    "created_at": "2010-03-04T22:50:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43729",
+    "user": "mpatel"
+}
+```
 
 What should we do about #5602, #5603, #5604, and #5605?  Close them and open new tickets for the ideas mentioned above?
 
 
+
 ---
 
-Comment by mpatel created at 2010-03-06 15:50:53
+archive/issue_comments_043730.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-03-06T15:50:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43730",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by drkirkby created at 2010-03-08 02:28:02
+archive/issue_comments_043731.json:
+```json
+{
+    "body": "Unless I am mistaken, the release manager should close this, and mark the resolution as 'fixed'. Since this is not merged yet, it looks to me that this might get overlooked if you are not careful. \n\nDave",
+    "created_at": "2010-03-08T02:28:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5601",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5601#issuecomment-43731",
+    "user": "drkirkby"
+}
+```
 
 Unless I am mistaken, the release manager should close this, and mark the resolution as 'fixed'. Since this is not merged yet, it looks to me that this might get overlooked if you are not careful. 
 

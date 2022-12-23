@@ -1,44 +1,117 @@
 # Issue 1970: [with tiny patch; needs easy review] notebook -- gnutls should not be needed if you're running the notebook insecurely, so don't require it
 
-Issue created by migration from https://trac.sagemath.org/ticket/1970
-
-Original creator: was
-
-Original creation time: 2008-01-29 11:56:32
-
+archive/issues_001970.json:
+```json
+{
+    "body": "Assignee: boothby\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1970\n\n",
+    "created_at": "2008-01-29T11:56:32Z",
+    "labels": [
+        "notebook",
+        "major",
+        "bug"
+    ],
+    "title": "[with tiny patch; needs easy review] notebook -- gnutls should not be needed if you're running the notebook insecurely, so don't require it",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1970",
+    "user": "was"
+}
+```
 Assignee: boothby
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/1970
+
+
+
+
 
 ---
+
+archive/issue_comments_012749.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-01-29T11:57:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1970",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1970#issuecomment-12749",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by malb created at 2008-01-29 16:08:10
+archive/issue_comments_012750.json:
+```json
+{
+    "body": "updated patch use this instead",
+    "created_at": "2008-01-29T16:08:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1970",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1970#issuecomment-12750",
+    "user": "malb"
+}
+```
 
 updated patch use this instead
 
 
+
 ---
+
+archive/issue_comments_012751.json:
+```json
+{
+    "body": "Attachment\n\nI've uploaded a new patch which replaces the old patch. This version checks for an OSError rather than any exception. It is better to check for a specific error only because this way we can spot errors and fix them. I've applied this patch against rc2 but the insecure notebook worked for me before and after the patch (I have GnuTLS installed system wide)",
+    "created_at": "2008-01-29T16:13:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1970",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1970#issuecomment-12751",
+    "user": "malb"
+}
+```
 
 Attachment
 
 I've uploaded a new patch which replaces the old patch. This version checks for an OSError rather than any exception. It is better to check for a specific error only because this way we can spot errors and fix them. I've applied this patch against rc2 but the insecure notebook worked for me before and after the patch (I have GnuTLS installed system wide)
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-29 16:19:33
+archive/issue_comments_012752.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-01-29T16:19:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1970",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1970#issuecomment-12752",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-01-29 16:19:33
+archive/issue_comments_012753.json:
+```json
+{
+    "body": "Merged trac-1970-notebook-gnutls.2.patch in Sage 2.10.1.rc3",
+    "created_at": "2008-01-29T16:19:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1970",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1970#issuecomment-12753",
+    "user": "mabshoff"
+}
+```
 
 Merged trac-1970-notebook-gnutls.2.patch in Sage 2.10.1.rc3

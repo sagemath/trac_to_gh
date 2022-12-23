@@ -1,11 +1,21 @@
 # Issue 3489: DsageNg
 
-Issue created by migration from https://trac.sagemath.org/ticket/3489
-
-Original creator: ghtdak
-
-Original creation time: 2008-06-20 23:55:23
-
+archive/issues_003489.json:
+```json
+{
+    "body": "Assignee: ghtdak\n\nImplement general Distributed Object Computing (DOC) in Sage.  This includes parallel computation, exogenous event handling, and general distributed services (e.g. persistence).\n\nhttp://wiki.sagemath.org/CategoryDsageNg\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3489\n\n",
+    "created_at": "2008-06-20T23:55:23Z",
+    "labels": [
+        "dsage",
+        "major",
+        "enhancement"
+    ],
+    "title": "DsageNg",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3489",
+    "user": "ghtdak"
+}
+```
 Assignee: ghtdak
 
 Implement general Distributed Object Computing (DOC) in Sage.  This includes parallel computation, exogenous event handling, and general distributed services (e.g. persistence).
@@ -13,16 +23,42 @@ Implement general Distributed Object Computing (DOC) in Sage.  This includes par
 http://wiki.sagemath.org/CategoryDsageNg
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3489
+
+
+
+
 
 ---
 
-Comment by ghtdak created at 2008-07-10 19:44:03
+archive/issue_comments_024583.json:
+```json
+{
+    "body": "needs a better name",
+    "created_at": "2008-07-10T19:44:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3489",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3489#issuecomment-24583",
+    "user": "ghtdak"
+}
+```
 
 needs a better name
 
 
+
 ---
 
-Comment by ghtdak created at 2008-07-10 19:44:03
+archive/issue_comments_024584.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2008-07-10T19:44:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3489",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3489#issuecomment-24584",
+    "user": "ghtdak"
+}
+```
 
 Resolution: invalid

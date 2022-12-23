@@ -1,11 +1,21 @@
 # Issue 9600: Fix atlas/liblapack.so linkage on FreeBSD
 
-Issue created by migration from https://trac.sagemath.org/ticket/9600
-
-Original creator: pjeremy
-
-Original creation time: 2010-07-26 10:56:43
-
+archive/issues_009600.json:
+```json
+{
+    "body": "Assignee: pjeremy\n\nCC:  jhpalmieri stephen dimpase\n\nliblapack.so includes undefined references to __powidf2 and __powisf2, which are defined in libgcc (no other Sage shared libraries appear to rely on libgcc helper functions). Unfortunately, for reasons I don't fully understand, linking liblapack.so against libgcc.a fails, even when building a normal executable. The symptom is a message like:\n\nusr/local/bin/ld: _configtest: hidden symbol `__powidf2' in /usr/local/lib/gcc45/gcc/x86_64-portbld-freebsd8.1/4.5.1/libgcc.a(_powidf2.o) is referenced by DSO\n/usr/local/bin/ld: final link failed: Nonrepresentable section on output\n\nThe fix is to add a dependency on libgcc_s.so when (re-)building \nliblapack.so in make_correct_shared.sh.\n\nIt's not clear whether this is a defect in atlas or not - the liblapack.so used in Sage is custom-built for Sage and so this particular fix cannot be reported.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9600\n\n",
+    "created_at": "2010-07-26T10:56:43Z",
+    "labels": [
+        "freebsd",
+        "major",
+        "bug"
+    ],
+    "title": "Fix atlas/liblapack.so linkage on FreeBSD",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9600",
+    "user": "pjeremy"
+}
+```
 Assignee: pjeremy
 
 CC:  jhpalmieri stephen dimpase
@@ -20,8 +30,25 @@ liblapack.so in make_correct_shared.sh.
 
 It's not clear whether this is a defect in atlas or not - the liblapack.so used in Sage is custom-built for Sage and so this particular fix cannot be reported.
 
+Issue created by migration from https://trac.sagemath.org/ticket/9600
+
+
+
+
 
 ---
+
+archive/issue_comments_092892.json:
+```json
+{
+    "body": "Attachment\n\nThis does not seem to be FreeBSD-specific!\nSee http://groups.google.com/group/sage-devel/browse_thread/thread/4cfaff6722c62c9b",
+    "created_at": "2010-08-02T12:43:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9600",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9600#issuecomment-92892",
+    "user": "dimpase"
+}
+```
 
 Attachment
 
@@ -29,16 +56,38 @@ This does not seem to be FreeBSD-specific!
 See http://groups.google.com/group/sage-devel/browse_thread/thread/4cfaff6722c62c9b
 
 
+
 ---
 
-Comment by drkirkby created at 2010-08-02 16:56:07
+archive/issue_comments_092893.json:
+```json
+{
+    "body": "Changing assignee from pjeremy to GeorgSWeber.",
+    "created_at": "2010-08-02T16:56:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9600",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9600#issuecomment-92893",
+    "user": "drkirkby"
+}
+```
 
 Changing assignee from pjeremy to GeorgSWeber.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-08-02 16:56:07
+archive/issue_comments_092894.json:
+```json
+{
+    "body": "This could conceivably be related to an issue observed when building R as a 32-bit SPARC binary on 32-bit SPARC. Currently the ATLAS package deletes one shared libraires and does not make several other shared libraries, so there are a lot less libraries then on Linux. That caused an issue with Linbox, with it believing the static library was 32-bit, which it was not. \n\nWhen I tried to build all the libraries on Solaris, it causes a failure to build R on 32-bit SPARC. The error message \n\n\n```\n  ld.so.1: R: fatal: relocation error: file /home/palmieri/mark2/sage-4.5.2.rc0/local/lib//liblapack.so: symbol __powisf2: referenced symbol not found\n```\n\nSee about comment number 10 on #9508\n\nThis is not an identical message, but given FreeBSD will use a GNU linker and this uses a Sun linker, I would not rule out there being a connection. \n\nI set this from FreBSD -> Build, as it appears to be at least an issue on Linux too, and just possibly related to a Solaris one. \n\nPS,  Does anyone know how I can provide a link to a specific commitment on another track ticket?",
+    "created_at": "2010-08-02T16:56:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9600",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9600#issuecomment-92894",
+    "user": "drkirkby"
+}
+```
 
 This could conceivably be related to an issue observed when building R as a 32-bit SPARC binary on 32-bit SPARC. Currently the ATLAS package deletes one shared libraires and does not make several other shared libraries, so there are a lot less libraries then on Linux. That caused an issue with Linbox, with it believing the static library was 32-bit, which it was not. 
 
@@ -58,23 +107,56 @@ I set this from FreBSD -> Build, as it appears to be at least an issue on Linux 
 PS,  Does anyone know how I can provide a link to a specific commitment on another track ticket?
 
 
+
 ---
 
-Comment by drkirkby created at 2010-08-02 16:56:07
+archive/issue_comments_092895.json:
+```json
+{
+    "body": "Changing component from freebsd to build.",
+    "created_at": "2010-08-02T16:56:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9600",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9600#issuecomment-92895",
+    "user": "drkirkby"
+}
+```
 
 Changing component from freebsd to build.
 
 
+
 ---
 
-Comment by wjp created at 2010-08-02 22:12:38
+archive/issue_comments_092896.json:
+```json
+{
+    "body": "Changing status from new to needs_work.",
+    "created_at": "2010-08-02T22:12:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9600",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9600#issuecomment-92896",
+    "user": "wjp"
+}
+```
 
 Changing status from new to needs_work.
 
 
+
 ---
 
-Comment by wjp created at 2010-08-02 22:12:38
+archive/issue_comments_092897.json:
+```json
+{
+    "body": "This is very likely not the right way to fix this. I don't have the time to try this properly now, but I think using gcc as the linker to produce `liblapack.so` instead of ld directly should fix this:\n\n\n```\n[wjp@eno sage-4.5.2.rc0]$ ./sage -python\nPython 2.6.4 (r264:75706, Aug  1 2010, 12:24:29) \n[GCC 4.5.0] on linux2\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> import cvxopt.base\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nImportError: /home/wjp/eno/sage-4.5.2.rc0/local/lib/liblapack.so: undefined symbol: __powidf2\n>>> \n[wjp@eno sage-4.5.2.rc0]$ cd local/lib\n[wjp@eno lib]$ gcc -shared -o liblapack.so -Wl,-soname,liblapack.so -Wl,--whole-archive liblapack.a -Wl,--no-whole-archive\n[wjp@eno lib]$ cd ../..\n[wjp@eno sage-4.5.2.rc0]$ ./sage -python                                        Python 2.6.4 (r264:75706, Aug  1 2010, 12:24:29) \n[GCC 4.5.0] on linux2\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> import cvxopt.base\n>>> \n```\n\n\n(The gcc line above is adapted from the line in atlas' Make.lib where ld is used to produce `liblapack.so`.)",
+    "created_at": "2010-08-02T22:12:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9600",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9600#issuecomment-92897",
+    "user": "wjp"
+}
+```
 
 This is very likely not the right way to fix this. I don't have the time to try this properly now, but I think using gcc as the linker to produce `liblapack.so` instead of ld directly should fix this:
 
@@ -103,16 +185,38 @@ Type "help", "copyright", "credits" or "license" for more information.
 (The gcc line above is adapted from the line in atlas' Make.lib where ld is used to produce `liblapack.so`.)
 
 
+
 ---
 
-Comment by wjp created at 2010-08-02 22:25:13
+archive/issue_comments_092898.json:
+```json
+{
+    "body": "Sorry for the repeated comment, but it looks like the final ld line generating liblapack.so might also be in (the ironically named) `make_correct_shared.sh` in atlas.",
+    "created_at": "2010-08-02T22:25:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9600",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9600#issuecomment-92898",
+    "user": "wjp"
+}
+```
 
 Sorry for the repeated comment, but it looks like the final ld line generating liblapack.so might also be in (the ironically named) `make_correct_shared.sh` in atlas.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-08-02 22:36:15
+archive/issue_comments_092899.json:
+```json
+{
+    "body": "Replying to [comment:3 wjp]:\n> This is very likely not the right way to fix this. I don't have the time to try this properly now, but I think using gcc as the linker to produce `liblapack.so` instead of ld directly should fix this:\n\nsing gcc might well be a better solution. It would certainly avoid the issues seen with Solaris, where the linker options have to be changed depending on whether the Sun linker or the GNU linker are used. If one called the compiler directly, rather than the linker, this should be a non-issue, as gcc would know what options to send to the linker. \n\nIn ATLAS, mostly static libraries are built, and then these are converted to dynamic by the linker. I don't know if gcc can then convert a static library to a dynamic library. One might need to do that with the linker. \n\ndave",
+    "created_at": "2010-08-02T22:36:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9600",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9600#issuecomment-92899",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:3 wjp]:
 > This is very likely not the right way to fix this. I don't have the time to try this properly now, but I think using gcc as the linker to produce `liblapack.so` instead of ld directly should fix this:
@@ -124,9 +228,20 @@ In ATLAS, mostly static libraries are built, and then these are converted to dyn
 dave
 
 
+
 ---
 
-Comment by wjp created at 2010-08-02 22:48:45
+archive/issue_comments_092900.json:
+```json
+{
+    "body": "Replying to [comment:5 drkirkby]:\n> In ATLAS, mostly static libraries are built, and then these are converted to dynamic by the linker. I don't know if gcc can then convert a static library to a dynamic library. One might need to do that with the linker. \n\nThe command I used in that quick test above does exactly that by using gcc as a frontend to the GNU linker.\n\n\n```\ngcc -shared -o liblapack.so -Wl,-soname,liblapack.so -Wl,--whole-archive liblapack.a -Wl,--no-whole-archive\n```\n\n\n(But I'm not claiming it's the perfect way to do it; it's just a proof of concept, not a well-researched solution.)",
+    "created_at": "2010-08-02T22:48:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9600",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9600#issuecomment-92900",
+    "user": "wjp"
+}
+```
 
 Replying to [comment:5 drkirkby]:
 > In ATLAS, mostly static libraries are built, and then these are converted to dynamic by the linker. I don't know if gcc can then convert a static library to a dynamic library. One might need to do that with the linker. 
@@ -142,9 +257,20 @@ gcc -shared -o liblapack.so -Wl,-soname,liblapack.so -Wl,--whole-archive liblapa
 (But I'm not claiming it's the perfect way to do it; it's just a proof of concept, not a well-researched solution.)
 
 
+
 ---
 
-Comment by drkirkby created at 2010-08-02 23:12:20
+archive/issue_comments_092901.json:
+```json
+{
+    "body": "Replying to [comment:6 wjp]:\n> Replying to [comment:5 drkirkby]:\n> > In ATLAS, mostly static libraries are built, and then these are converted to dynamic by the linker. I don't know if gcc can then convert a static library to a dynamic library. One might need to do that with the linker. \n> \n> The command I used in that quick test above does exactly that by using gcc as a frontend to the GNU linker.\n> \n> {{{\n> gcc -shared -o liblapack.so -Wl,-soname,liblapack.so -Wl,--whole-archive liblapack.a -Wl,--no-whole-archive\n> }}}\n> \n> (But I'm not claiming it's the perfect way to do it; it's just a proof of concept, not a well-researched solution.)\n\nBut you are almost directly using the linker here, since you are passing options directly to the linker. Those options are not portable, as they are GNU-specific. Better still if gcc could handle this. \n\nI would actually be surprised if ATLAS does not have the ability to create the shared libraries, without one needing to mess around like this in a separate stage. That would be worth investigating - whether ATLAS can take care of all this.",
+    "created_at": "2010-08-02T23:12:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9600",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9600#issuecomment-92901",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:6 wjp]:
 > Replying to [comment:5 drkirkby]:
@@ -163,9 +289,20 @@ But you are almost directly using the linker here, since you are passing options
 I would actually be surprised if ATLAS does not have the ability to create the shared libraries, without one needing to mess around like this in a separate stage. That would be worth investigating - whether ATLAS can take care of all this.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-08-02 23:31:34
+archive/issue_comments_092902.json:
+```json
+{
+    "body": "This idea looks better, if it works. Since static libs are just collections of object files, unpack the static library and then use gcc to create the shared library. \n\n\n```\nar -x mylib.a\ngcc -shared *.o -o mylib.so\n```\n\n\nI got that from this link\n\n\nhttp://www.tipcache.com/tip/Convert_a_static_library_%28.a%29_to_a_shared_object_%28.so%29_12.html",
+    "created_at": "2010-08-02T23:31:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9600",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9600#issuecomment-92902",
+    "user": "drkirkby"
+}
+```
 
 This idea looks better, if it works. Since static libs are just collections of object files, unpack the static library and then use gcc to create the shared library. 
 
@@ -182,9 +319,20 @@ I got that from this link
 http://www.tipcache.com/tip/Convert_a_static_library_%28.a%29_to_a_shared_object_%28.so%29_12.html
 
 
+
 ---
 
-Comment by drkirkby created at 2010-08-03 01:32:39
+archive/issue_comments_092903.json:
+```json
+{
+    "body": "I'm attaching a small script, static2shared.sh, which I wrote, which will make shared libraries from the static ones. To build 64-bit shared libraries, the object files in the static library must be 64-bit ones and SAGE64 must be set to \"yes\". \n\nIt works on the libraries libatlas liblapack libf77blas & libcblas. You could trivially modify it to work with others. \n\nThis is what I get.\n\n\n```\ndrkirkby@hawk:~/sage-4.5.1/local/lib$ ./static2shared.sh\n\nChange to the directory $SAGE_LOCAL/lib before running this script\nit's only a test for now.\n\n\nBuilding a 64-bit shared library libatlas.so from the static library libatlas.a\nlibatlas.so has been built on SunOS\nlibatlas.so:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped, no debugging information available\nBuilding a 64-bit shared library liblapack.so from the static library liblapack.a\nliblapack.so has been built on SunOS\nliblapack.so:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped, no debugging information available\nBuilding a 64-bit shared library libf77blas.so from the static library libf77blas.a\nlibf77blas.so has been built on SunOS\nlibf77blas.so:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped, no debugging information available\nBuilding a 64-bit shared library libcblas.so from the static library libcblas.a\nlibcblas.so has been built on SunOS\nlibcblas.so:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped, no debugging information available\n```\n",
+    "created_at": "2010-08-03T01:32:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9600",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9600#issuecomment-92903",
+    "user": "drkirkby"
+}
+```
 
 I'm attaching a small script, static2shared.sh, which I wrote, which will make shared libraries from the static ones. To build 64-bit shared libraries, the object files in the static library must be 64-bit ones and SAGE64 must be set to "yes". 
 
@@ -216,23 +364,58 @@ libcblas.so:	ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not
 
 
 
+
 ---
 
-Comment by drkirkby created at 2010-08-03 01:35:01
+archive/issue_comments_092904.json:
+```json
+{
+    "body": "Test script to convert static to shared libs. Run from $SAGE_LOCAL/lib.",
+    "created_at": "2010-08-03T01:35:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9600",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9600#issuecomment-92904",
+    "user": "drkirkby"
+}
+```
 
 Test script to convert static to shared libs. Run from $SAGE_LOCAL/lib.
 
 
+
 ---
+
+archive/issue_comments_092905.json:
+```json
+{
+    "body": "Attachment\n\nmpatel also [had a suggestion](http://trac.sagemath.org/sage_trac/ticket/9356#comment:7) about creating shared libraries.  I know nothing about this; how do these approaches compare?",
+    "created_at": "2010-08-03T02:21:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9600",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9600#issuecomment-92905",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
 mpatel also [had a suggestion](http://trac.sagemath.org/sage_trac/ticket/9356#comment:7) about creating shared libraries.  I know nothing about this; how do these approaches compare?
 
 
+
 ---
 
-Comment by drkirkby created at 2010-08-03 02:30:20
+archive/issue_comments_092906.json:
+```json
+{
+    "body": "Replying to [comment:10 jhpalmieri]:\n> mpatel also [had a suggestion](http://trac.sagemath.org/sage_trac/ticket/9356#comment:7) about creating shared libraries.  I know nothing about this; how do these approaches compare?\nHis solution again uses a lot of options that are specific to the GNU linker. I don't however know if those flags are optimal. My guess is that Michael wrote that bit of code in Sage now, and if I'm honest I would not be sure he did it right. For pure simplicity, what I put is hard to beat. Whether it works is another matter! \n\nDave",
+    "created_at": "2010-08-03T02:30:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9600",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9600#issuecomment-92906",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:10 jhpalmieri]:
 > mpatel also [had a suggestion](http://trac.sagemath.org/sage_trac/ticket/9356#comment:7) about creating shared libraries.  I know nothing about this; how do these approaches compare?
@@ -241,9 +424,20 @@ His solution again uses a lot of options that are specific to the GNU linker. I 
 Dave
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-08-03 03:17:12
+archive/issue_comments_092907.json:
+```json
+{
+    "body": "This may be a Solaris-specific comment: on mark (skynet machine, Solaris on sparc), I first built the version of ATLAS from #9508, but R refused to build -- see [my comment there](http://trac.sagemath.org/sage_trac/ticket/9508#comment:10).  I applied the script \"static2shared.sh: and got similar output to the above (`liblapack.so has been built on SunOS`, etc.), but R still doesn't build: same error as before:\n\n```\nWarning in solve.default(rgb) :\n  unable to load shared library '/home/palmieri/mark/sage-4.5.2.rc0-shared-script/spkg/build/r-2.1\\\n0.1.p2/src/modules//lapack.so':\n  ld.so.1: R: fatal: libgcc_s.so.1: open failed: No such file or directory\nError in solve.default(rgb) : lapack routines cannot be loaded\nError: unable to load R code in package 'grDevices'\nExecution halted\nmake[4]: *** [mklazy] Error 1\n```\n\n\nOn the other hand, if I built the version of ATLAS from #9508 and then just delete liblapack.so, everything seems to work.",
+    "created_at": "2010-08-03T03:17:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9600",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9600#issuecomment-92907",
+    "user": "jhpalmieri"
+}
+```
 
 This may be a Solaris-specific comment: on mark (skynet machine, Solaris on sparc), I first built the version of ATLAS from #9508, but R refused to build -- see [my comment there](http://trac.sagemath.org/sage_trac/ticket/9508#comment:10).  I applied the script "static2shared.sh: and got similar output to the above (`liblapack.so has been built on SunOS`, etc.), but R still doesn't build: same error as before:
 
@@ -262,9 +456,20 @@ make[4]: *** [mklazy] Error 1
 On the other hand, if I built the version of ATLAS from #9508 and then just delete liblapack.so, everything seems to work.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-08-03 03:47:24
+archive/issue_comments_092908.json:
+```json
+{
+    "body": "Replying to [comment:12 jhpalmieri]:\n> This may be a Solaris-specific comment: on mark (skynet machine, Solaris on sparc), I first built the version of ATLAS from #9508, but R refused to build -- see [my comment there](http://trac.sagemath.org/sage_trac/ticket/9508#comment:10).  I applied the script \"static2shared.sh: and got similar output to the above (`liblapack.so has been built on SunOS`, etc.), but R still doesn't build: same error as before:\n> {{{\n> Warning in solve.default(rgb) :\n>   unable to load shared library '/home/palmieri/mark/sage-4.5.2.rc0-shared-script/spkg/build/r-2.1\\\n> 0.1.p2/src/modules//lapack.so':\n>   ld.so.1: R: fatal: libgcc_s.so.1: open failed: No such file or directory\n> Error in solve.default(rgb) : lapack routines cannot be loaded\n> Error: unable to load R code in package 'grDevices'\n> Execution halted\n> make[4]: *** [mklazy] Error 1\n> }}}\n> \n> On the other hand, if I built the version of ATLAS from #9508 and then just delete liblapack.so, everything seems to work.\n\nWhen I used the ATLAS package at #9508 on a 32-bit SPARC build, it failed with this error message, which is remarkably similar to what Peter got on FreeBSD. In particualr, `powisf2` is specifically mentioned in both Peters and my error messages. \n\n\n```\nmake[6]: Entering directory `/export/home/drkirkby/redstart/32/sage-4.5.1/spkg/build/r-2.10.1.p3/src/src/library/grDevices'\nWarning in solve.default(rgb) :\n  unable to load shared library '/export/home/drkirkby/redstart/32/sage-4.5.1/spkg/build/r-2.10.1.p3/src/modules//lapack.so':\n  ld.so.1: /export/home/drkirkby/redstart/32/sage-4.5.1/spkg/build/r-2.10.1.p3/src/bin/exec/R: fatal: relocation error: file /export/h\nome/drkirkby/redstart/32/sage-4.5.1/local/lib//liblapack.so: symbol __powisf2: referenced symbol not found\nError in solve.default(rgb) : lapack routines cannot be loaded\nError: unable to load R code in package 'grDevices'\nExecution halted\nmake[6]: *** [mklazy] Error 1\n```\n\n\nWhen I used that script, I get:\n\n\n```\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing rpy2-2.0.8.spkg\n\nreal    26m14.008s\nuser    22m45.228s\nsys     3m2.236s\nSuccessfully installed r-2.10.1.p3\n```\n\n\nIn other words, for me that script corrects the problem. I'd be very interested what it does for Peter, as he had the same error message as me. \n\nI've now got 80 packages installed, so are going to leave it running overnight, so the build will have finished when I wake up.",
+    "created_at": "2010-08-03T03:47:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9600",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9600#issuecomment-92908",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:12 jhpalmieri]:
 > This may be a Solaris-specific comment: on mark (skynet machine, Solaris on sparc), I first built the version of ATLAS from #9508, but R refused to build -- see [my comment there](http://trac.sagemath.org/sage_trac/ticket/9508#comment:10).  I applied the script "static2shared.sh: and got similar output to the above (`liblapack.so has been built on SunOS`, etc.), but R still doesn't build: same error as before:
@@ -317,9 +522,20 @@ In other words, for me that script corrects the problem. I'd be very interested 
 I've now got 80 packages installed, so are going to leave it running overnight, so the build will have finished when I wake up.
 
 
+
 ---
 
-Comment by pjeremy created at 2010-08-03 09:45:51
+archive/issue_comments_092909.json:
+```json
+{
+    "body": "Replying to [comment:9 drkirkby]:\n> I'm attaching a small script, static2shared.sh, which I wrote, which will make shared libraries from the static ones. To build 64-bit shared libraries, the object files in the static library must be 64-bit ones and SAGE64 must be set to \"yes\". \n> \n> It works on the libraries libatlas liblapack libf77blas & libcblas. You could trivially modify it to work with others. \n\nUnfortunately, I don't believe this works.\n\nThe libraries I already had installed report:\n\n```\nserver% LD_LIBRARY_PATH=/usr/local/lib/gcc45:$PWD ldd lib{atlas,lapack,f77blas,cblas}.so\nlibatlas.so:\n        libc.so.7 => /lib/libc.so.7 (0x800647000)\n        libm.so.5 => /lib/libm.so.5 (0x800877000)\nliblapack.so:\n        libc.so.7 => /lib/libc.so.7 (0x800647000)\n        libm.so.5 => /lib/libm.so.5 (0x800877000)\n        libgfortran.so.3 => /usr/local/lib/gcc45/libgfortran.so.3 (0x8014bd000)\n        libgcc_s.so.1 => /usr/local/lib/gcc45/libgcc_s.so.1 (0x8017a1000)\nlibf77blas.so:\n        libc.so.7 => /lib/libc.so.7 (0x800647000)\n        libm.so.5 => /lib/libm.so.5 (0x800877000)\n        libgfortran.so.3 => /usr/local/lib/gcc45/libgfortran.so.3 (0x800e1e000)\nlibcblas.so:\nserver%\n```\n\n\nAnd numpy config reports (in part):\n\n```\nC compiler: gcc -fno-strict-aliasing -g -O2 -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I/tank/obj/sage/sage-4.5/local/include -fPIC\n\ncompile options: '-c'\ngcc: _configtest.c\ngcc _configtest.o -L/tank/obj/sage/sage-4.5/local/lib -llapack -lf77blas -lcblas -latlas -o _configtest\nATLAS version 3.8.3 built by peter on Mon 26 Jul 2010 17:37:42 EST:\n   UNAME    : FreeBSD server.vk2pj.dyndns.org 8.1-PRERELEASE FreeBSD 8.1-PRERELEASE #5: Thu Jul 15 05:43:01 EST 2010     root@server.vk2pj.dyndns.org:/var/obj/usr/src/sys/server  amd64\n   INSTFLG  : -1 0 -a 1\n   ARCHDEFS : -DATL_OS_FreeBSD -DATL_ARCH_HAMMER -DATL_SSE3 -DATL_SSE2 -DATL_SSE1 -DATL_3DNow -DATL_USE64BITS -DATL_GAS_x8664\n   F2CDEFS  : -DAdd_ -DF77_INTEGER=int -DStringSunStyle\n   CACHEEDGE: 262144\n   F77      : /tank/obj/sage/sage-4.5/local/bin/sage_fortran, version GNU Fortran (GCC) 4.5.1 20100715 (prerelease)\n   F77FLAGS : -fomit-frame-pointer -mfpmath=387 -O2 -falign-loops=4 -fPIC -m64\n   SMC      : gcc, version gcc (GCC) 4.5.1 20100715 (prerelease)\n   SMCFLAGS : -fomit-frame-pointer -mfpmath=387 -O2 -falign-loops=4 -fPIC -m64\n   SKC      : gcc, version gcc (GCC) 4.5.1 20100715 (prerelease)\n   SKCFLAGS : -fomit-frame-pointer -mfpmath=387 -O2 -falign-loops=4 -fPIC -m64\nsuccess!\nremoving: _configtest.c _configtest.o _configtest\n  FOUND:\n    libraries = ['lapack', 'f77blas', 'cblas', 'atlas']\n    library_dirs = ['/tank/obj/sage/sage-4.5/local/lib']\n    language = f77\n    define_macros = [('ATLAS_INFO', '\"\\\\\"3.8.3\\\\\"\"')]\n    include_dirs = ['/tank/obj/sage/sage-4.5/local/include']\n```\n\n\nWhereas, after rebuilding the shared libraries with your script, I get:\n\n```\nserver% LD_LIBRARY_PATH=/usr/local/lib/gcc45:$PWD ldd lib{atlas,lapack,f77blas,cblas}.so\nlibatlas.so:\n        libc.so.7 => /lib/libc.so.7 (0x800647000)\nliblapack.so:\n        libc.so.7 => /lib/libc.so.7 (0x800647000)\nlibf77blas.so:\n        libc.so.7 => /lib/libc.so.7 (0x800647000)\nlibcblas.so:\n        libc.so.7 => /lib/libc.so.7 (0x800647000)\nserver%\n```\n\n\nAnd building numpy reports that it can't decode atlas info:\n\n```\nC compiler: gcc -fno-strict-aliasing -g -O2 -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I/tank/obj/sage/sage-4.5/local/include -fPIC\ncompile options: '-c'\ngcc: _configtest.c\ngcc _configtest.o -L/tank/obj/sage/sage-4.5/local/lib -llapack -lf77blas -lcblas -latlas -o _configtest/local/lib/liblapack.so: undefined reference to `_gfortran_concat_string'age-4.5/local/lib/liblapack.so: undefined reference to `csqrt'\n/tank/obj/sage/sage-4.5/local/lib/liblapack.so: undefined reference to `sqrt'\n/tank/obj/sage/sage-4.5/local/lib/liblapack.so: undefined reference to `_gfortran_st_write_done'age-4.5/local/lib/liblapack.so: undefined reference to `_gfortran_transfer_integer'-4.5/local/lib/liblapack.so: undefined reference to `cabs'\n/tank/obj/sage/sage-4.5/local/lib/liblapack.so: undefined reference to `csqrtf'\n/tank/obj/sage/sage-4.5/local/lib/liblapack.so: undefined reference to `powf'\n/tank/obj/sage/sage-4.5/local/lib/liblapack.so: undefined reference to `_gfortran_cpu_time_4'e/sage-4.5/local/lib/libf77blas.so: undefined reference to `_gfortran_stop_numeric'age-4.5/local/lib/liblapack.so: undefined reference to `_gfortran_pow_i4_i4'ge/sage-4.5/local/lib/liblapack.so: undefined reference to `_gfortran_st_write'age/sage-4.5/local/lib/liblapack.so: undefined reference to `log'\n/tank/obj/sage/sage-4.5/local/lib/liblapack.so: undefined reference to `lroundf'\n/tank/obj/sage/sage-4.5/local/lib/liblapack.so: undefined reference to `_gfortran_compare_string'ge-4.5/local/lib/liblapack.so: undefined reference to `logf'\n/tank/obj/sage/sage-4.5/local/lib/liblapack.so: undefined reference to `cabsf'\n/tank/obj/sage/sage-4.5/local/lib/liblapack.so: undefined reference to `cosf'\n/tank/obj/sage/sage-4.5/local/lib/liblapack.so: undefined reference to `lround'\n/tank/obj/sage/sage-4.5/local/lib/liblapack.so: undefined reference to `pow'\n/tank/obj/sage/sage-4.5/local/lib/liblapack.so: undefined reference to `cexp'\n/tank/obj/sage/sage-4.5/local/lib/libf77blas.so: undefined reference to `_gfortran_transfer_character'5/local/lib/liblapack.so: undefined reference to `cos'\n/tank/obj/sage/sage-4.5/local/lib/liblapack.so: undefined reference to `cexpf'\n/tank/obj/sage/sage-4.5/local/lib/liblapack.so: undefined reference to `log10'\n/tank/obj/sage/sage-4.5/local/lib/liblapack.so: undefined reference to `log10f'\ncollect2: ld returned 1 exit status\n/tank/obj/sage/sage-4.5/local/lib/liblapack.so: undefined reference to `_gfortran_concat_string'age-4.5/local/lib/liblapack.so: undefined reference to `csqrt'\n/tank/obj/sage/sage-4.5/local/lib/liblapack.so: undefined reference to `sqrt'\n/tank/obj/sage/sage-4.5/local/lib/liblapack.so: undefined reference to `_gfortran_st_write_done'age-4.5/local/lib/liblapack.so: undefined reference to `_gfortran_transfer_integer'-4.5/local/lib/liblapack.so: undefined reference to `cabs'\n/tank/obj/sage/sage-4.5/local/lib/liblapack.so: undefined reference to `csqrtf'\n/tank/obj/sage/sage-4.5/local/lib/liblapack.so: undefined reference to `powf'\n/tank/obj/sage/sage-4.5/local/lib/liblapack.so: undefined reference to `log'\n/tank/obj/sage/sage-4.5/local/lib/liblapack.so: undefined reference to `lroundf'\n/tank/obj/sage/sage-4.5/local/lib/liblapack.so: undefined reference to `_gfortran_compare_string'\n/tank/obj/sage/sage-4.5/local/lib/liblapack.so: undefined reference to `logf'\n/tank/obj/sage/sage-4.5/local/lib/liblapack.so: undefined reference to `cabsf'\n/tank/obj/sage/sage-4.5/local/lib/liblapack.so: undefined reference to `cosf'\n/tank/obj/sage/sage-4.5/local/lib/liblapack.so: undefined reference to `lround'\n/tank/obj/sage/sage-4.5/local/lib/liblapack.so: undefined reference to `pow'\n/tank/obj/sage/sage-4.5/local/lib/liblapack.so: undefined reference to `cexp'\n/tank/obj/sage/sage-4.5/local/lib/libf77blas.so: undefined reference to `_gfortran_transfer_character'\n/tank/obj/sage/sage-4.5/local/lib/liblapack.so: undefined reference to `cos'\n/tank/obj/sage/sage-4.5/local/lib/liblapack.so: undefined reference to `cexpf'\n/tank/obj/sage/sage-4.5/local/lib/liblapack.so: undefined reference to `log10'\n/tank/obj/sage/sage-4.5/local/lib/liblapack.so: undefined reference to `log10f'\ncollect2: ld returned 1 exit status\nfailure.\nremoving: _configtest.c _configtest.o\nStatus: 255\nOutput: \n  FOUND:\n    libraries = ['lapack', 'f77blas', 'cblas', 'atlas']\n    library_dirs = ['/tank/obj/sage/sage-4.5/local/lib']\n    language = f77\n    define_macros = [('NO_ATLAS_INFO', 2)]\n    include_dirs = ['/tank/obj/sage/sage-4.5/local/include']\n```\n",
+    "created_at": "2010-08-03T09:45:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9600",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9600#issuecomment-92909",
+    "user": "pjeremy"
+}
+```
 
 Replying to [comment:9 drkirkby]:
 > I'm attaching a small script, static2shared.sh, which I wrote, which will make shared libraries from the static ones. To build 64-bit shared libraries, the object files in the static library must be 64-bit ones and SAGE64 must be set to "yes". 
@@ -454,16 +670,40 @@ Output:
 
 
 
+
 ---
+
+archive/issue_comments_092910.json:
+```json
+{
+    "body": "Attachment\n\nSecond version of script, which links maths and fortran libraries",
+    "created_at": "2010-08-03T09:53:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9600",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9600#issuecomment-92910",
+    "user": "drkirkby"
+}
+```
 
 Attachment
 
 Second version of script, which links maths and fortran libraries
 
 
+
 ---
 
-Comment by drkirkby created at 2010-08-03 09:57:20
+archive/issue_comments_092911.json:
+```json
+{
+    "body": "Replying to [comment:14 pjeremy]:\n> Replying to [comment:9 drkirkby]:\n> > I'm attaching a small script, static2shared.sh, which I wrote, which will make shared libraries from the static ones. To build 64-bit shared libraries, the object files in the static library must be 64-bit ones and SAGE64 must be set to \"yes\". \n> > \n> > It works on the libraries libatlas liblapack libf77blas & libcblas. You could trivially modify it to work with others. \n> \n> Unfortunately, I don't believe this works.\n> And building numpy reports that it can't decode atlas info:\n> {{{\n> C compiler: gcc -fno-strict-aliasing -g -O2 -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I/tank/obj/sage/sage-4.5/local/include -fPIC\n> compile options: '-c'\n> gcc: _configtest.c\n> \n\nThank you for trying Peter. \n\nSince the failure reports\n\n```\n gcc _configtest.o -L/tank/obj/sage/sage-4.5/local/lib -llapack -lf77blas -lcblas -latlas -o _configtest/local/lib/liblapack.so: undefined reference to `_gfortran_concat_string'age-4.5/local/lib/liblapack.so: undefined reference to `csqrt'\n```\n\n\nI thought it might be wise to link in the Fortran and maths libraries. I note this was done in the original code (at least for some libraries), but when I tried to build something with libraries, it worked OK without that, so I did not include them. I've attached a second version. Let me know how that works\n\nDave",
+    "created_at": "2010-08-03T09:57:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9600",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9600#issuecomment-92911",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:14 pjeremy]:
 > Replying to [comment:9 drkirkby]:
@@ -493,7 +733,20 @@ I thought it might be wise to link in the Fortran and maths libraries. I note th
 Dave
 
 
+
 ---
+
+archive/issue_comments_092912.json:
+```json
+{
+    "body": "Attachment\n\nReplying to [comment:15 drkirkby]:\n> I thought it might be wise to link in the Fortran and maths libraries. I note this was done in the original code (at least for some libraries), but when I tried to build something with libraries, it worked OK without that, so I did not include them. I've attached a second version. Let me know how that works\n\nAnd attached is my adapted variant of make_correct_shared.sh that basically replicates the shared library dependencies from the original.  I have cleaned up the overall structure but haven't touched the OS-X or Solaris since I don't know the correct OS-X incantation and am not sure whether the Solaris section is still valid (I suspect not).",
+    "created_at": "2010-08-03T10:58:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9600",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9600#issuecomment-92912",
+    "user": "pjeremy"
+}
+```
 
 Attachment
 
@@ -503,16 +756,38 @@ Replying to [comment:15 drkirkby]:
 And attached is my adapted variant of make_correct_shared.sh that basically replicates the shared library dependencies from the original.  I have cleaned up the overall structure but haven't touched the OS-X or Solaris since I don't know the correct OS-X incantation and am not sure whether the Solaris section is still valid (I suspect not).
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-08-03 16:31:44
+archive/issue_comments_092913.json:
+```json
+{
+    "body": "With static2shared-ver2.sh, I still can't build R on mark.",
+    "created_at": "2010-08-03T16:31:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9600",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9600#issuecomment-92913",
+    "user": "jhpalmieri"
+}
+```
 
 With static2shared-ver2.sh, I still can't build R on mark.
 
 
+
 ---
 
-Comment by dimpase created at 2010-08-05 20:37:11
+archive/issue_comments_092914.json:
+```json
+{
+    "body": "Replying to [comment:6 wjp]:\n> Replying to [comment:5 drkirkby]:\n> > In ATLAS, mostly static libraries are built, and then these are converted to dynamic by the linker. I don't know if gcc can then convert a static library to a dynamic library. One might need to do that with the linker. \n> \n> The command I used in that quick test above does exactly that by using gcc as a frontend to the GNU linker.\n> \n\n```\n gcc -shared -o liblapack.so -Wl,-soname,liblapack.so -Wl,--whole-archive liblapack.a -Wl,--no-whole-archive\n```\n\n> \n> (But I'm not claiming it's the perfect way to do it; it's just a proof of concept, not a well-researched solution.)\n\nI just rebuilt sage 4.5.1 on skynet's taurus, and can reproduce this bug.\nI also figured out why on that machine liblapack.so does not get built.\n\n(it took a while to figure out why:\nIn the part of the log related to Atlas building, the last mentioning of liblapack.so is as follows:\nld -L/home/dima/sage/taurus/sage-4.5.1/local/lib -shared -soname liblapack.so -o liblapack.so --whole-archive liblapack.a --no-whole-archive -lc -lm -lgfortran\nld: skipping incompatible /home/dima/sage/taurus/sage-4.5.1/local/lib/libgfortran.so when searching for -lgfortran\nld: cannot find -lgfortran\nSo this command fails, resulting in liblapack.so not being build.\n\nThe reason is that $SAGELOCAL/lib/libgfortran.so points to a wrong file, to\n/usr/local/gcc-4.5.1/x86_64-Linux-nehalem-fc/lib/libgfortran.so\ninstead of the proper one:\n/usr/local/gcc-4.5.1/x86_64-Linux-nehalem-fc/lib64/libgfortran.so\n\nThis is just a wrong setup of SAGE_FORTRAN_LIB in /usr/local/skynet_bash_profile for this machine. (I posted on this on sage-skynet, and it is now fixed)\n\nI fixed the link manually and  rebuilt the Atlas spkg, getting the liblapack.so)\n\nAs well, Willem Jan's gcc fix above cures the problem, seemingly.",
+    "created_at": "2010-08-05T20:37:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9600",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9600#issuecomment-92914",
+    "user": "dimpase"
+}
+```
 
 Replying to [comment:6 wjp]:
 > Replying to [comment:5 drkirkby]:
@@ -550,9 +825,20 @@ I fixed the link manually and  rebuilt the Atlas spkg, getting the liblapack.so)
 As well, Willem Jan's gcc fix above cures the problem, seemingly.
 
 
+
 ---
 
-Comment by dimpase created at 2010-08-05 20:38:35
+archive/issue_comments_092915.json:
+```json
+{
+    "body": "Replying to [comment:18 dimpase]:\n> Replying to [comment:6 wjp]:\n> > Replying to [comment:5 drkirkby]:\n> > > In ATLAS, mostly static libraries are built, and then these are converted to dynamic by the linker. I don't know if gcc can then convert a static library to a dynamic library. One might need to do that with the linker. \n> > \n> > The command I used in that quick test above does exactly that by using gcc as a frontend to the GNU linker.\n> > \n> {{{\n>  gcc -shared -o liblapack.so -Wl,-soname,liblapack.so -Wl,--whole-archive liblapack.a -Wl,--no-whole-archive\n> }}}\n> > \n> > (But I'm not claiming it's the perfect way to do it; it's just a proof of concept, not a well-researched solution.)\n> \n> I just rebuilt sage 4.5.1 on skynet's taurus, and can reproduce this bug.\n\nrebuilt with gcc-4.5.1, that is...",
+    "created_at": "2010-08-05T20:38:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9600",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9600#issuecomment-92915",
+    "user": "dimpase"
+}
+```
 
 Replying to [comment:18 dimpase]:
 > Replying to [comment:6 wjp]:
@@ -572,36 +858,91 @@ Replying to [comment:18 dimpase]:
 rebuilt with gcc-4.5.1, that is...
 
 
+
 ---
 
-Comment by kcrisman created at 2013-04-26 01:41:48
+archive/issue_comments_092916.json:
+```json
+{
+    "body": "Changing component from build to porting: BSD.",
+    "created_at": "2013-04-26T01:41:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9600",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9600#issuecomment-92916",
+    "user": "kcrisman"
+}
+```
 
 Changing component from build to porting: BSD.
 
 
+
 ---
 
-Comment by mkoeppe created at 2020-08-17 16:38:58
+archive/issue_comments_092917.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2020-08-17T16:38:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9600",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9600#issuecomment-92917",
+    "user": "mkoeppe"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by mkoeppe created at 2020-08-17 16:38:58
+archive/issue_comments_092918.json:
+```json
+{
+    "body": "Outdated spkg or build system ticket, should be closed",
+    "created_at": "2020-08-17T16:38:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9600",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9600#issuecomment-92918",
+    "user": "mkoeppe"
+}
+```
 
 Outdated spkg or build system ticket, should be closed
 
 
+
 ---
 
-Comment by dimpase created at 2020-09-27 13:00:52
+archive/issue_comments_092919.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2020-09-27T13:00:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9600",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9600#issuecomment-92919",
+    "user": "dimpase"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by chapoton created at 2020-09-27 13:06:22
+archive/issue_comments_092920.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2020-09-27T13:06:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9600",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9600#issuecomment-92920",
+    "user": "chapoton"
+}
+```
 
 Resolution: invalid

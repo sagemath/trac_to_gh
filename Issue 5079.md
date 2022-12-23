@@ -1,11 +1,21 @@
 # Issue 5079: overly greedy RealNumber handling in preparser
 
-Issue created by migration from https://trac.sagemath.org/ticket/5079
-
-Original creator: boothby
-
-Original creation time: 2009-01-23 22:29:27
-
+archive/issues_005079.json:
+```json
+{
+    "body": "Assignee: boothby\n\nThis is an amalgamation of #4806, #4459, and #1599.  The RealNumber wrapper is too greedy.\n\n\n```\n   1.exp() -> RealNumber(1.e)xp()\n   1.rational_reconstruction() -> 1.ational_reconstruction()\n   1.e+10 -> RealNumber(1.e)+10\n   1._xgcd() -> RealNumber(1.)_xgcd()\n```\n\n\nOne patch should do it all.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5079\n\n",
+    "created_at": "2009-01-23T22:29:27Z",
+    "labels": [
+        "interfaces",
+        "major",
+        "bug"
+    ],
+    "title": "overly greedy RealNumber handling in preparser",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5079",
+    "user": "boothby"
+}
+```
 Assignee: boothby
 
 This is an amalgamation of #4806, #4459, and #1599.  The RealNumber wrapper is too greedy.
@@ -21,36 +31,101 @@ This is an amalgamation of #4806, #4459, and #1599.  The RealNumber wrapper is t
 
 One patch should do it all.
 
+Issue created by migration from https://trac.sagemath.org/ticket/5079
+
+
+
+
 
 ---
+
+archive/issue_comments_038673.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-01-24T09:55:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5079",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5079#issuecomment-38673",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_038674.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-01-24T10:25:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5079",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5079#issuecomment-38674",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_038675.json:
+```json
+{
+    "body": "Attachment\n\nAlso takes care of #4501 and parsing numbers of the form 5L, and Py3 binary and octal numbers, as well as simplifying the preparser.",
+    "created_at": "2009-01-24T10:27:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5079",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5079#issuecomment-38675",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 Also takes care of #4501 and parsing numbers of the form 5L, and Py3 binary and octal numbers, as well as simplifying the preparser.
 
 
+
 ---
 
-Comment by mhansen created at 2009-01-24 16:20:20
+archive/issue_comments_038676.json:
+```json
+{
+    "body": "I think the preparsing code is a fair amount easier to follow after this.  Nice work!  I folded all three of the patches into trac_5079.patch for review purposes.\n\nNote that this depends on #5078 being applied.",
+    "created_at": "2009-01-24T16:20:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5079",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5079#issuecomment-38676",
+    "user": "mhansen"
+}
+```
 
 I think the preparsing code is a fair amount easier to follow after this.  Nice work!  I folded all three of the patches into trac_5079.patch for review purposes.
 
 Note that this depends on #5078 being applied.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-24 17:03:55
+archive/issue_comments_038677.json:
+```json
+{
+    "body": "This patch causes various test failures all seemingly of the type\n\n```\nmabshoff@geom:/scratch/mabshoff/sage-3.3.alpha2$ ./sage -t -long devel/sage/sage/server/notebook/twist.py\nsage -t -long \"devel/sage/sage/server/notebook/twist.py\"    \n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.3.alpha2/devel/sage/sage/server/notebook/twist.py\", line 1459:\n    sage: W = n.new_worksheet_with_title_from_text('Sage', owner='sage')\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/sage-3.3.alpha2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-3.3.alpha2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mabshoff/sage-3.3.alpha2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_21[4]>\", line 1, in <module>\n        W = n.new_worksheet_with_title_from_text('Sage', owner='sage')###line 1459:\n    sage: W = n.new_worksheet_with_title_from_text('Sage', owner='sage')\n      File \"/scratch/mabshoff/sage-3.3.alpha2/local/lib/python2.5/site-packages/sage/server/notebook/notebook.py\", line 930, in new_worksheet_with_title_from_text\n        W = self.create_new_worksheet(name, owner)\n      File \"/scratch/mabshoff/sage-3.3.alpha2/local/lib/python2.5/site-packages/sage/server/notebook/notebook.py\", line 623, in create_new_worksheet\n        auto_publish = False)\n      File \"/scratch/mabshoff/sage-3.3.alpha2/local/lib/python2.5/site-packages/sage/server/notebook/worksheet.py\", line 248, in __init__\n        self.save_snapshot(owner)\n      File \"/scratch/mabshoff/sage-3.3.alpha2/local/lib/python2.5/site-packages/sage/server/notebook/worksheet.py\", line 1640, in save_snapshot\n        E = self.edit_text()\n      File \"/scratch/mabshoff/sage-3.3.alpha2/local/lib/python2.5/site-packages/sage/server/notebook/worksheet.py\", line 1823, in edit_text\n        t = C.edit_text().strip()\n      File \"/scratch/mabshoff/sage-3.3.alpha2/local/lib/python2.5/site-packages/sage/server/notebook/cell.py\", line 783, in edit_text\n        s = self.plain_text(ncols, prompts, max_out)\n      File \"/scratch/mabshoff/sage-3.3.alpha2/local/lib/python2.5/site-packages/sage/server/notebook/cell.py\", line 760, in plain_text\n        out = self.output_text(ncols, raw=True, html=False, allow_interact=False)\n      File \"/scratch/mabshoff/sage-3.3.alpha2/local/lib/python2.5/site-packages/sage/server/notebook/cell.py\", line 1240, in output_text\n        is_interact = self.is_interactive_cell()\n      File \"/scratch/mabshoff/sage-3.3.alpha2/local/lib/python2.5/site-packages/sage/server/notebook/cell.py\", line 917, in is_interactive_cell\n        s, _ = strip_string_literals(self.input_text())\n    ValueError: too many values to unpack\n**********************************************************************\n```\n\nThe failures are in \n\n```\n\tsage -t -long devel/sage/sage/server/notebook/cell.py # 85 doctests failed\n\tsage -t -long devel/sage/sage/server/notebook/worksheet.py # 289 doctests failed\n\tsage -t -long devel/sage/sage/server/notebook/twist.py # 3 doctests failed\n\tsage -t -long devel/sage/sage/server/notebook/notebook.py # 19 doctests failed\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2009-01-24T17:03:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5079",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5079#issuecomment-38677",
+    "user": "mabshoff"
+}
+```
 
 This patch causes various test failures all seemingly of the type
 
@@ -108,9 +183,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-24 19:46:14
+archive/issue_comments_038678.json:
+```json
+{
+    "body": "Note that Mike Hansen's patch which I deleted depends on #4405 to be applied. So Mike please repost that patch since I deleted it. Boothby is working on fixing the above issues and will post an incremental patch on top of the three here already.\n\nCheers,\n\nMichael",
+    "created_at": "2009-01-24T19:46:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5079",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5079#issuecomment-38678",
+    "user": "mabshoff"
+}
+```
 
 Note that Mike Hansen's patch which I deleted depends on #4405 to be applied. So Mike please repost that patch since I deleted it. Boothby is working on fixing the above issues and will post an incremental patch on top of the three here already.
 
@@ -119,7 +205,20 @@ Cheers,
 Michael
 
 
+
 ---
+
+archive/issue_comments_038679.json:
+```json
+{
+    "body": "Attachment\n\nThe above was caused by the notebook calling strip_string_literals and not properly handling the returns.  Accept the following as proof that everything in sage is calling it right:\n\n\n\n```\nsage: search_src('strip_string_literals')\nmisc/preparser.py:    -- Robert Bradshaw (2007-09-19): * strip_string_literals, containing_block \nmisc/preparser.py:def strip_string_literals(code, state=None):\nmisc/preparser.py:        sage: from sage.misc.preparser import strip_string_literals\nmisc/preparser.py:        sage: s, literals, state = strip_string_literals(r'''['a', \"b\", 'c', \"d\\\"\"]''')\nmisc/preparser.py:        sage: print strip_string_literals(r'-\"\\\\\\\"\"-\"\\\\\"-')[0]\nmisc/preparser.py:        sage: s, literals, state = strip_string_literals(\"[a, '''b''', c, '']\")\nmisc/preparser.py:        sage: s, literals, state = strip_string_literals(\"code '#' # ccc 't'\"); s\nmisc/preparser.py:        sage: s, literals, state = strip_string_literals('s = \"some'); s\nmisc/preparser.py:        sage: s, literals, state = strip_string_literals('thing\" * 5', state); s\nmisc/preparser.py:        L, literals, quote_state = strip_string_literals(line, quote_state)\nmisc/preparser.py:        contents, literals, state = strip_string_literals(contents)\nmisc/preparser.py:    code, literals, state = strip_string_literals(code)\nserver/notebook/cell.py:from   sage.misc.preparser import strip_string_literals\nserver/notebook/cell.py:        s = strip_string_literals(self.input_text())[0]\n```\n",
+    "created_at": "2009-01-24T19:51:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5079",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5079#issuecomment-38679",
+    "user": "boothby"
+}
+```
 
 Attachment
 
@@ -147,7 +246,20 @@ server/notebook/cell.py:        s = strip_string_literals(self.input_text())[0]
 
 
 
+
 ---
+
+archive/issue_comments_038680.json:
+```json
+{
+    "body": "Attachment\n\nI added a patch which folds all of the above ones together.\n\n+1 on Tom's changes.",
+    "created_at": "2009-01-24T22:58:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5079",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5079#issuecomment-38680",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
@@ -156,22 +268,55 @@ I added a patch which folds all of the above ones together.
 +1 on Tom's changes.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-25 01:45:17
+archive/issue_comments_038681.json:
+```json
+{
+    "body": "Merged trac_5079.patch in Sage 3.3.alpha2",
+    "created_at": "2009-01-25T01:45:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5079",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5079#issuecomment-38681",
+    "user": "mabshoff"
+}
+```
 
 Merged trac_5079.patch in Sage 3.3.alpha2
 
 
+
 ---
 
-Comment by mabshoff created at 2009-01-25 01:45:17
+archive/issue_comments_038682.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-01-25T01:45:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5079",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5079#issuecomment-38682",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by robertwb created at 2009-02-15 09:00:25
+archive/issue_comments_038683.json:
+```json
+{
+    "body": "Changing component from interfaces to user interface.",
+    "created_at": "2009-02-15T09:00:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5079",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5079#issuecomment-38683",
+    "user": "robertwb"
+}
+```
 
 Changing component from interfaces to user interface.

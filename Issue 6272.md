@@ -1,21 +1,46 @@
 # Issue 6272: upgrade to flint-1.3.0
 
-Issue created by migration from https://trac.sagemath.org/ticket/6272
-
-Original creator: ncalexan
-
-Original creation time: 2009-06-12 18:51:11
-
+archive/issues_006272.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  craigcitro\n\npackages on sage.math, Craig knows where.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6272\n\n",
+    "created_at": "2009-06-12T18:51:11Z",
+    "labels": [
+        "distribution",
+        "major",
+        "bug"
+    ],
+    "title": "upgrade to flint-1.3.0",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6272",
+    "user": "ncalexan"
+}
+```
 Assignee: tbd
 
 CC:  craigcitro
 
 packages on sage.math, Craig knows where.
 
+Issue created by migration from https://trac.sagemath.org/ticket/6272
+
+
+
+
 
 ---
 
-Comment by craigcitro created at 2009-06-14 08:31:53
+archive/issue_comments_050102.json:
+```json
+{
+    "body": "Ok, I just reviewed the FLINT spkg. Everything looks good, with the caveat that we need to remember to turn the `spkg-check` back off before the final release.\n\nOn a related note, why do we have a perl script for checking the gcc version? If nothing else, here's a short shell script that does the same thing:\n\n\n```/bin/sh\n\nGCC_VERSION=`gcc -dumpversion`\n\ncase $GCC_VERSION in\n    3.4*)\n        echo \"Found gcc 3.4.x\"\n\texit 0\n\t;;\n    3.*)\n        echo \"WARNING: gcc version less than 3.4.0\"\n\texit 1\n\t;;\n    2.*)\n        echo \"WARNING: gcc version less than 3.4.0\"\n\texit 1\n\t;;\n    1.*)\n        echo \"WARNING: gcc version less than 3.4.0\"\n\texit 1\n\t;;\n    *)\n        echo \"Found gcc 4 or later\"\n\texit 0\n\t;;\nesac\n```\n\n\nI still prefer Python to both, but this seems more likely to be correctly maintained than the perl one. (Well, by me, anyway.)",
+    "created_at": "2009-06-14T08:31:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6272",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6272#issuecomment-50102",
+    "user": "craigcitro"
+}
+```
 
 Ok, I just reviewed the FLINT spkg. Everything looks good, with the caveat that we need to remember to turn the `spkg-check` back off before the final release.
 
@@ -54,8 +79,19 @@ esac
 I still prefer Python to both, but this seems more likely to be correctly maintained than the perl one. (Well, by me, anyway.)
 
 
+
 ---
 
-Comment by craigcitro created at 2009-06-14 22:31:06
+archive/issue_comments_050103.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-06-14T22:31:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6272",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6272#issuecomment-50103",
+    "user": "craigcitro"
+}
+```
 
 Resolution: fixed

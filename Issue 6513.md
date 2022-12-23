@@ -1,21 +1,46 @@
 # Issue 6513: Cythonize sage/numerical/knapsack.py
 
-Issue created by migration from https://trac.sagemath.org/ticket/6513
-
-Original creator: mvngu
-
-Original creation time: 2009-07-11 17:12:47
-
+archive/issues_006513.json:
+```json
+{
+    "body": "Assignee: jkantor\n\nKeywords: knapsack problems\n\nLet's Cythonize the knapsack module `sage/numerical/knapsack.py`. This is in preparation for implementing more algorithms for solving various knapsack problems. The Cythonization proposal was first raised at this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/ac4b9c0f7f7a1513) thread.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6513\n\n",
+    "created_at": "2009-07-11T17:12:47Z",
+    "labels": [
+        "numerical",
+        "major",
+        "enhancement"
+    ],
+    "title": "Cythonize sage/numerical/knapsack.py",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6513",
+    "user": "mvngu"
+}
+```
 Assignee: jkantor
 
 Keywords: knapsack problems
 
 Let's Cythonize the knapsack module `sage/numerical/knapsack.py`. This is in preparation for implementing more algorithms for solving various knapsack problems. The Cythonization proposal was first raised at this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/ac4b9c0f7f7a1513) thread.
 
+Issue created by migration from https://trac.sagemath.org/ticket/6513
+
+
+
+
 
 ---
 
-Comment by ncohen created at 2009-08-14 19:41:26
+archive/issue_comments_053060.json:
+```json
+{
+    "body": "I'll be waiting a LP formulation of the Knapsack problem to help the impatient crowd wait for more efficient functions :-)\n\n( and in the meantime, I send a message to this ticket to be aware of updates :p )",
+    "created_at": "2009-08-14T19:41:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6513",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6513#issuecomment-53060",
+    "user": "ncohen"
+}
+```
 
 I'll be waiting a LP formulation of the Knapsack problem to help the impatient crowd wait for more efficient functions :-)
 

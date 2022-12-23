@@ -1,11 +1,21 @@
 # Issue 4195: [with patch, needs review] implicit plotting for multivariate polynomial ideals
 
-Issue created by migration from https://trac.sagemath.org/ticket/4195
-
-Original creator: malb
-
-Original creation time: 2008-09-25 12:09:01
-
+archive/issues_004195.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  wdj\n\nKeywords: plotting, ideal, polynomial\n\nThis now works without having surf installed:\n\n```\nsage: R.<x,y> = PolynomialRing(QQ,2)\nsage: I = R.ideal([y^3 - x^2])\nsage: I.plot()\nsage: I = R.ideal([y^2 - x^2 - 1])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4195\n\n",
+    "created_at": "2008-09-25T12:09:01Z",
+    "labels": [
+        "graphics",
+        "major",
+        "enhancement"
+    ],
+    "title": "[with patch, needs review] implicit plotting for multivariate polynomial ideals",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4195",
+    "user": "malb"
+}
+```
 Assignee: was
 
 CC:  wdj
@@ -22,30 +32,80 @@ sage: I = R.ideal([y^2 - x^2 - 1])
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4195
+
+
+
+
 
 ---
+
+archive/issue_comments_030450.json:
+```json
+{
+    "body": "Attachment\n\nI'm CCing wdj as he wrote the original plotting code.",
+    "created_at": "2008-09-25T12:09:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4195",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4195#issuecomment-30450",
+    "user": "malb"
+}
+```
 
 Attachment
 
 I'm CCing wdj as he wrote the original plotting code.
 
 
+
 ---
 
-Comment by mhansen created at 2008-09-25 19:10:27
+archive/issue_comments_030451.json:
+```json
+{
+    "body": "Looks good to me.",
+    "created_at": "2008-09-25T19:10:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4195",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4195#issuecomment-30451",
+    "user": "mhansen"
+}
+```
 
 Looks good to me.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-26 05:08:24
+archive/issue_comments_030452.json:
+```json
+{
+    "body": "Merged in Sage 3.1.3.alpha2",
+    "created_at": "2008-09-26T05:08:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4195",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4195#issuecomment-30452",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.1.3.alpha2
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-26 05:08:24
+archive/issue_comments_030453.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-09-26T05:08:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4195",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4195#issuecomment-30453",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

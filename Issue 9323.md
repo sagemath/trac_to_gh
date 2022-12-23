@@ -1,26 +1,62 @@
 # Issue 9323: Remove devel/sage/doc/en/faq/Makefile
 
-Issue created by migration from https://trac.sagemath.org/ticket/9323
-
-Original creator: was
-
-Original creation time: 2010-06-24 03:43:49
-
+archive/issues_009323.json:
+```json
+{
+    "body": "Assignee: mvngu\n\nWhy?  'cause Mike Hansen says so.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9323\n\n",
+    "created_at": "2010-06-24T03:43:49Z",
+    "labels": [
+        "documentation",
+        "minor",
+        "bug"
+    ],
+    "title": "Remove devel/sage/doc/en/faq/Makefile",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9323",
+    "user": "was"
+}
+```
 Assignee: mvngu
 
 Why?  'cause Mike Hansen says so.
 
+Issue created by migration from https://trac.sagemath.org/ticket/9323
+
+
+
+
 
 ---
 
-Comment by mvngu created at 2010-06-24 16:20:42
+archive/issue_comments_087923.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-06-24T16:20:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9323",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9323#issuecomment-87923",
+    "user": "mvngu"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mvngu created at 2010-06-24 16:20:42
+archive/issue_comments_087924.json:
+```json
+{
+    "body": "It is removed in Sage 4.4.4:\n\n```\n[mvngu@sage faq]$ pwd\n/dev/shm/mvngu/sandbox/sage-4.4.4/devel/sage-main/doc/en/faq\n[mvngu@sage faq]$ hg st\n! doc/en/faq/Makefile\n```\n\nThis has not effect on building the HTML or PDF versions of the FAQ. Both of these versions build fine. The release manager can close this ticket as fixed.",
+    "created_at": "2010-06-24T16:20:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9323",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9323#issuecomment-87924",
+    "user": "mvngu"
+}
+```
 
 It is removed in Sage 4.4.4:
 
@@ -34,44 +70,110 @@ It is removed in Sage 4.4.4:
 This has not effect on building the HTML or PDF versions of the FAQ. Both of these versions build fine. The release manager can close this ticket as fixed.
 
 
+
 ---
 
-Comment by mvngu created at 2010-06-24 16:20:49
+archive/issue_comments_087925.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-06-24T16:20:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9323",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9323#issuecomment-87925",
+    "user": "mvngu"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mpatel created at 2010-07-21 03:22:25
+archive/issue_comments_087926.json:
+```json
+{
+    "body": "It appears that someone has already removed the FAQ `Makefile`.",
+    "created_at": "2010-07-21T03:22:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9323",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9323#issuecomment-87926",
+    "user": "mpatel"
+}
+```
 
 It appears that someone has already removed the FAQ `Makefile`.
 
 
+
 ---
 
-Comment by mpatel created at 2010-07-21 03:22:25
+archive/issue_comments_087927.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-07-21T03:22:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9323",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9323#issuecomment-87927",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mpatel created at 2010-07-21 03:24:59
+archive/issue_comments_087928.json:
+```json
+{
+    "body": "Just to check:  Should we keep `doc/en/tutorial/Makefile`?",
+    "created_at": "2010-07-21T03:24:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9323",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9323#issuecomment-87928",
+    "user": "mpatel"
+}
+```
 
 Just to check:  Should we keep `doc/en/tutorial/Makefile`?
 
 
+
 ---
 
-Comment by mpatel created at 2010-07-21 03:27:46
+archive/issue_comments_087929.json:
+```json
+{
+    "body": "Minh, should I select a different resolution and/or milestone?",
+    "created_at": "2010-07-21T03:27:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9323",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9323#issuecomment-87929",
+    "user": "mpatel"
+}
+```
 
 Minh, should I select a different resolution and/or milestone?
 
 
+
 ---
 
-Comment by mvngu created at 2010-07-21 06:08:23
+archive/issue_comments_087930.json:
+```json
+{
+    "body": "Replying to [comment:5 mpatel]:\n> Minh, should I select a different resolution and/or milestone?\n\nThe file `doc/en/faq/Makefile` was removed from revision control in Sage 4.5.alpha1:\n\n```sh\n[mvngu@sage sage-main]$ hg tags | grep '4.5.alpha'\n4.5.alpha4                     14585:31da167254fd\n4.5.alpha3                     14573:8bb71030944a\n4.5.alpha2                     14567:1be02074cf97\n4.5.alpha1                     14563:c25e907dc34d\n4.5.alpha0                     14531:8dec8b43ccca\n[mvngu@sage sage-main]$ hg export 14532 | head\n# HG changeset patch\n# User Robert Miller <rlm@rlmiller.org>\n# Date 1277467893 25200\n# Node ID c3719ae4c319132134fc1ff501e134d9930648d8\n# Parent  8dec8b43ccca5f104b1e280cb33c8f4c2c1b8f85\nAdded tag 4.5.alpha0 for changeset 8dec8b43ccca\n\ndiff --git a/.hgtags b/.hgtags\n--- a/.hgtags\n+++ b/.hgtags\n[mvngu@sage sage-main]$ hg export 14534 | head\n# HG changeset patch\n# User Robert Miller <rlm@rlmiller.org>\n# Date 1277743380 25200\n# Node ID ddd5427e99b9d7ba94842c479bf3bfd5b3e08ff9\n# Parent  5c14ca9acdd371af75f7e9cc8fc342c8bbd2ed05\nRemove doc/en/faq/Makefile from revision control\n\ndiff --git a/doc/en/faq/Makefile b/doc/en/faq/Makefile\ndeleted file mode 100644\n--- a/doc/en/faq/Makefile\n[mvngu@sage sage-main]$ hg export 14564 | head\n# HG changeset patch\n# User Robert Miller <rlm@rlmiller.org>\n# Date 1277828988 25200\n# Node ID 995b80b5b58b0374c04d891c35159cce5c48a0a6\n# Parent  c25e907dc34d83f4ed0b0edf0fdfb06cc5eba957\nAdded tag 4.5.alpha1 for changeset c25e907dc34d\n\ndiff --git a/.hgtags b/.hgtags\n--- a/.hgtags\n+++ b/.hgtags\n```\n\nThe ticket then should be resolved as fixed in milestone 4.5 and merged in 4.5.alpha1.",
+    "created_at": "2010-07-21T06:08:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9323",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9323#issuecomment-87930",
+    "user": "mvngu"
+}
+```
 
 Replying to [comment:5 mpatel]:
 > Minh, should I select a different resolution and/or milestone?
@@ -123,18 +225,40 @@ diff --git a/.hgtags b/.hgtags
 The ticket then should be resolved as fixed in milestone 4.5 and merged in 4.5.alpha1.
 
 
+
 ---
 
-Comment by mvngu created at 2010-07-21 06:12:53
+archive/issue_comments_087931.json:
+```json
+{
+    "body": "Replying to [comment:4 mpatel]:\n> Just to check:  Should we keep `doc/en/tutorial/Makefile`?\nI think it can safely be deleted. We need to ensure that its removal has no effect on building the HTML and PDF versions of the documentation.",
+    "created_at": "2010-07-21T06:12:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9323",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9323#issuecomment-87931",
+    "user": "mvngu"
+}
+```
 
 Replying to [comment:4 mpatel]:
 > Just to check:  Should we keep `doc/en/tutorial/Makefile`?
 I think it can safely be deleted. We need to ensure that its removal has no effect on building the HTML and PDF versions of the documentation.
 
 
+
 ---
 
-Comment by mpatel created at 2010-07-21 11:02:51
+archive/issue_comments_087932.json:
+```json
+{
+    "body": "Thanks, Minh!  (Yes, I should have figured that out myself.)  Do you mind being listed as the reviewer, possibly/albeit after the fact?\n\nI've opened #9563 for removing `doc/en/tutorial/Makefile`.",
+    "created_at": "2010-07-21T11:02:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9323",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9323#issuecomment-87932",
+    "user": "mpatel"
+}
+```
 
 Thanks, Minh!  (Yes, I should have figured that out myself.)  Do you mind being listed as the reviewer, possibly/albeit after the fact?
 

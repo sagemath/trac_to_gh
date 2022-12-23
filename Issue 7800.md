@@ -1,11 +1,21 @@
 # Issue 7800: dsage -- re-enable use of openssl to certificate keys, if openssl is installed  (why the notebook in secure mode is so slow to generate initial kesy!)
 
-Issue created by migration from https://trac.sagemath.org/ticket/7800
-
-Original creator: was
-
-Original creation time: 2009-12-31 17:19:50
-
+archive/issues_007800.json:
+```json
+{
+    "body": "Assignee: tbd\n\nKeywords: notebook secure dsage\n\nFor some mysterious reason somebody disabled use of openssl with dsage to create certificates. This new spkg fixes this problem. The actual patch is a simple 1-liner: \n\n```\nwstein@boxen:~/build/referee/sage-4.3/spkg/standard/dsage-1.0.1.p0/src/dsage/scripts$ hg diff\ndiff --git a/dsage/scripts/dsage_setup.py b/dsage/scripts/dsage_setup.py\n--- a/dsage/scripts/dsage_setup.py\n+++ b/dsage/scripts/dsage_setup.py\n@@ -174,7 +174,7 @@\n     print DELIMITER\n     print \"Generating SSL certificate for server...\"\n     \n-    if False and os.uname()[0] != 'Darwin' and cmd_exists('openssl'):\n+    if os.uname()[0] != 'Darwin' and cmd_exists('openssl'):\n         # We use openssl by default if it exists, since it is *vastly*\n         # faster on Linux.\n         cmd = ['openssl genrsa > %s' % privkey_file]\n```\n\n\nWithout this, on many platforms -- e.g., sage.math -- it takes hours to generate keys, since GNUtls's key generation program is crap.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7800\n\n",
+    "created_at": "2009-12-31T17:19:50Z",
+    "labels": [
+        "dsage",
+        "major",
+        "bug"
+    ],
+    "title": "dsage -- re-enable use of openssl to certificate keys, if openssl is installed  (why the notebook in secure mode is so slow to generate initial kesy!)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7800",
+    "user": "was"
+}
+```
 Assignee: tbd
 
 Keywords: notebook secure dsage
@@ -31,26 +41,63 @@ diff --git a/dsage/scripts/dsage_setup.py b/dsage/scripts/dsage_setup.py
 
 Without this, on many platforms -- e.g., sage.math -- it takes hours to generate keys, since GNUtls's key generation program is crap.
 
+Issue created by migration from https://trac.sagemath.org/ticket/7800
+
+
+
+
 
 ---
 
-Comment by was created at 2009-12-31 17:21:27
+archive/issue_comments_067488.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-12-31T17:21:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7800",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7800#issuecomment-67488",
+    "user": "was"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by was created at 2009-12-31 17:21:27
+archive/issue_comments_067489.json:
+```json
+{
+    "body": "The new spkg is here:\n\n  http://wstein.org/home/wstein/patches/dsage-1.0.1.p1.spkg",
+    "created_at": "2009-12-31T17:21:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7800",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7800#issuecomment-67489",
+    "user": "was"
+}
+```
 
 The new spkg is here:
 
   http://wstein.org/home/wstein/patches/dsage-1.0.1.p1.spkg
 
 
+
 ---
 
-Comment by was created at 2009-12-31 17:25:27
+archive/issue_comments_067490.json:
+```json
+{
+    "body": "Post on mailing list:\n\n\n```\n\nHi,\n\nI kept suggesting the above, because long ago I wrote this code in dsage:\n\n-------------\n    if os.uname()[0] != 'Darwin' and cmd_exists('openssl'):\n        # We use openssl by default if it exists, since it is *vastly*\n        # faster on Linux.\n        cmd = ['openssl genrsa > %s' % privkey_file]\n        print \"Using openssl to generate key\"\n        print cmd[0]\n        subprocess.call(cmd, shell=True)\n-------------\n\nSo I thought people were having issues with slow keys since they didn't have openssl installed.  However, I just checked and the above code mysteriously morphed into:\n\n-------------\n    if False and os.uname()[0] != 'Darwin' and cmd_exists('openssl'):\n        # We use openssl by default if it exists, since it is *vastly*\n        # faster on Linux.\n        cmd = ['openssl genrsa > %s' % privkey_file]\n        print \"Using openssl to generate key\"\n        print cmd[0]\n        subprocess.call(cmd, shell=True)\n    else:...\n-------------\n\nI'm guessing somebody tested certtool on one platform where they got luck and certtool seemed to actually work in a reasonable amount of time, and concluded the issue was fixed.  Nope. \n\nPlease referee\n\n   http://trac.sagemath.org/sage_trac/ticket/7800\n\nwhich reverts this behavior, switching back to using openssl if available. \n```\n",
+    "created_at": "2009-12-31T17:25:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7800",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7800#issuecomment-67490",
+    "user": "was"
+}
+```
 
 Post on mailing list:
 
@@ -95,9 +142,20 @@ which reverts this behavior, switching back to using openssl if available.
 
 
 
+
 ---
 
-Comment by mvngu created at 2010-01-05 22:47:14
+archive/issue_comments_067491.json:
+```json
+{
+    "body": "Can you check in all existing changes?\n\n```\n[mvngu@boxen dsage-1.0.1.p1]$ hg st\nM SPKG.txt\n```\n",
+    "created_at": "2010-01-05T22:47:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7800",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7800#issuecomment-67491",
+    "user": "mvngu"
+}
+```
 
 Can you check in all existing changes?
 
@@ -108,16 +166,38 @@ M SPKG.txt
 
 
 
+
 ---
 
-Comment by mvngu created at 2010-01-06 01:34:00
+archive/issue_comments_067492.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-01-06T01:34:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7800",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7800#issuecomment-67492",
+    "user": "mvngu"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mvngu created at 2010-01-06 01:34:00
+archive/issue_comments_067493.json:
+```json
+{
+    "body": "I took the source tarball of Sage 4.3.1.alpha1, replaced `dsage-1.0.1.p0.spkg` with `dsage-1.0.1.p1.spkg`, and built Sage 4.3.1.alpha1 on mod.math with this updated dsage spkg. The build went OK, the only doctest failure is\n\n```\nsage -t -long devel/sage/sage/misc/sagedoc.py # 1 doctests failed\n```\n\nwhich is already reported at [sage-devel](http://groups.google.com/group/sage-devel/msg/4c7635baffe9b1f3). I then set the variable DOT_SAGE to a directory other than my home directory, loaded the newly compiled Sage, and started the notebook. As advertised, the RSA key generation process now uses openssl (which is available on mod.math). Using openssl, the key generation process is now much faster than previously (almost instantaneous). Before merging the updated dsage spkg, all outstanding changes need to be checked in. This is a positive review, provided that the check in issue is taken care of.",
+    "created_at": "2010-01-06T01:34:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7800",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7800#issuecomment-67493",
+    "user": "mvngu"
+}
+```
 
 I took the source tarball of Sage 4.3.1.alpha1, replaced `dsage-1.0.1.p0.spkg` with `dsage-1.0.1.p1.spkg`, and built Sage 4.3.1.alpha1 on mod.math with this updated dsage spkg. The build went OK, the only doctest failure is
 
@@ -128,9 +208,20 @@ sage -t -long devel/sage/sage/misc/sagedoc.py # 1 doctests failed
 which is already reported at [sage-devel](http://groups.google.com/group/sage-devel/msg/4c7635baffe9b1f3). I then set the variable DOT_SAGE to a directory other than my home directory, loaded the newly compiled Sage, and started the notebook. As advertised, the RSA key generation process now uses openssl (which is available on mod.math). Using openssl, the key generation process is now much faster than previously (almost instantaneous). Before merging the updated dsage spkg, all outstanding changes need to be checked in. This is a positive review, provided that the check in issue is taken care of.
 
 
+
 ---
 
-Comment by was created at 2010-01-06 03:42:45
+archive/issue_comments_067494.json:
+```json
+{
+    "body": "> Before merging the updated dsage spkg, all outstanding changes need to \n> be checked in. This is a positive review, provided that the check in \n> issue is taken care of. \n\nDone.",
+    "created_at": "2010-01-06T03:42:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7800",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7800#issuecomment-67494",
+    "user": "was"
+}
+```
 
 > Before merging the updated dsage spkg, all outstanding changes need to 
 > be checked in. This is a positive review, provided that the check in 
@@ -139,8 +230,19 @@ Comment by was created at 2010-01-06 03:42:45
 Done.
 
 
+
 ---
 
-Comment by rlm created at 2010-01-14 07:17:19
+archive/issue_comments_067495.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-14T07:17:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7800",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7800#issuecomment-67495",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed

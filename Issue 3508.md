@@ -1,18 +1,28 @@
 # Issue 3508: gmp-4.2.2.spkg is severly broken
 
-Issue created by migration from https://trac.sagemath.org/ticket/3508
-
-Original creator: mabshoff
-
-Original creation time: 2008-06-25 02:06:47
-
+archive/issues_003508.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nThere are various issues at play here:\n\n* configure from patches is from GMP 4.2.1\n* the Core2 patches do not apply since Jason's script detects the version mismatch\n* GMP 4.2.2 in general misdetects some very new Core2 Quads and Core2 Xeons as 32 bit Intel CPUs\n\nFix all those issues!\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3508\n\n",
+    "created_at": "2008-06-25T02:06:47Z",
+    "labels": [
+        "build",
+        "blocker",
+        "bug"
+    ],
+    "title": "gmp-4.2.2.spkg is severly broken",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3508",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 There are various issues at play here:
 
- * configure from patches is from GMP 4.2.1
- * the Core2 patches do not apply since Jason's script detects the version mismatch
- * GMP 4.2.2 in general misdetects some very new Core2 Quads and Core2 Xeons as 32 bit Intel CPUs
+* configure from patches is from GMP 4.2.1
+* the Core2 patches do not apply since Jason's script detects the version mismatch
+* GMP 4.2.2 in general misdetects some very new Core2 Quads and Core2 Xeons as 32 bit Intel CPUs
 
 Fix all those issues!
 
@@ -20,17 +30,43 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/3508
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-06-25 02:06:56
+archive/issue_comments_024725.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-06-25T02:06:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3508",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3508#issuecomment-24725",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-07 06:04:16
+archive/issue_comments_024726.json:
+```json
+{
+    "body": "We put the old gmp-4.2.1.p14.spkg into Sage 3.0.4.alpha2 and will deal with this issue later.\n\nCheers,\n\nMichael",
+    "created_at": "2008-07-07T06:04:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3508",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3508#issuecomment-24726",
+    "user": "mabshoff"
+}
+```
 
 We put the old gmp-4.2.1.p14.spkg into Sage 3.0.4.alpha2 and will deal with this issue later.
 
@@ -39,16 +75,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-30 02:57:01
+archive/issue_comments_024727.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2008-08-30T02:57:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3508",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3508#issuecomment-24727",
+    "user": "mabshoff"
+}
+```
 
 Resolution: invalid
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-30 02:57:01
+archive/issue_comments_024728.json:
+```json
+{
+    "body": "We will switch to eMPIRe anyway, so let's invalidate this ticket.\n\nCheers,\n\nMichael",
+    "created_at": "2008-08-30T02:57:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3508",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3508#issuecomment-24728",
+    "user": "mabshoff"
+}
+```
 
 We will switch to eMPIRe anyway, so let's invalidate this ticket.
 

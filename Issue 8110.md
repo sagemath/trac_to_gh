@@ -1,11 +1,21 @@
 # Issue 8110: fix issue with multi_polynomial.pyx in sage-4.3.2.alpha0
 
-Issue created by migration from https://trac.sagemath.org/ticket/8110
-
-Original creator: AlexGhitza
-
-Original creation time: 2010-01-28 12:30:54
-
+archive/issues_008110.json:
+```json
+{
+    "body": "Assignee: malb\n\nThe patch at #7109 mistakenly removed some code from `rings/polynomial/multi_polynomial.pyx`, which causes doctest trouble in sage-4.3.2.alpha0.\n\nA patch fixing this is on its way.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8110\n\n",
+    "created_at": "2010-01-28T12:30:54Z",
+    "labels": [
+        "commutative algebra",
+        "blocker",
+        "bug"
+    ],
+    "title": "fix issue with multi_polynomial.pyx in sage-4.3.2.alpha0",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8110",
+    "user": "AlexGhitza"
+}
+```
 Assignee: malb
 
 The patch at #7109 mistakenly removed some code from `rings/polynomial/multi_polynomial.pyx`, which causes doctest trouble in sage-4.3.2.alpha0.
@@ -13,37 +23,98 @@ The patch at #7109 mistakenly removed some code from `rings/polynomial/multi_pol
 A patch fixing this is on its way.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8110
+
+
+
+
 
 ---
 
-Comment by AlexGhitza created at 2010-01-28 12:35:51
+archive/issue_comments_071194.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-01-28T12:35:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8110",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8110#issuecomment-71194",
+    "user": "AlexGhitza"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_071195.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-01-28T12:35:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8110",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8110#issuecomment-71195",
+    "user": "AlexGhitza"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by malb created at 2010-01-28 13:18:24
+archive/issue_comments_071196.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-01-28T13:18:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8110",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8110#issuecomment-71196",
+    "user": "malb"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by malb created at 2010-01-28 13:18:24
+archive/issue_comments_071197.json:
+```json
+{
+    "body": "* patch looks good\n  * applies cleanly against alpha0\n  * doctests pass on sage.math",
+    "created_at": "2010-01-28T13:18:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8110",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8110#issuecomment-71197",
+    "user": "malb"
+}
+```
 
 * patch looks good
- * applies cleanly against alpha0
- * doctests pass on sage.math
+  * applies cleanly against alpha0
+  * doctests pass on sage.math
+
 
 
 ---
 
-Comment by mvngu created at 2010-01-30 23:33:35
+archive/issue_comments_071198.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-30T23:33:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8110",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8110#issuecomment-71198",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

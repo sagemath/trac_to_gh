@@ -1,11 +1,21 @@
 # Issue 4202: latex derivatives of symbolic functions nicely
 
-Issue created by migration from https://trac.sagemath.org/ticket/4202
-
-Original creator: jason
-
-Original creation time: 2008-09-26 21:41:59
-
+archive/issues_004202.json:
+```json
+{
+    "body": "Assignee: burcin\n\nThis patch makes it so that symbolic functions attempt to call maxima to get a latex representation before printing out the default functionname(arguments) notation.\n\n\nHere is some Sage code that did derivative printing.  I post it here since this code tries to intelligently print partials versus total derivatives, while maxima's seems to only print total derivative \"d\"s.  If there is interest, we can include this as part of the _latex_ function.\n\n```\n        if self._f._name == 'diff':\n            if len(self._args[0].variables())==1:\n                d_latex = \"d\"\n            else:\n                d_latex = \"\\\\partial\"\n\n            variables = [(self._args[2*i+1]._latex_(), self._args[2*i+2]) \n                         for i in xrange((len(self._args)-1)/2)]\n            variables_latex = ''.join([d_latex+var if power==1 else d_latex+var+\"^%r\"%power\n                                       for var,power in variables])\n\n\n            order = sum([power for var,power in variables])\n            if order == 1:\n                order_latex = \"\"\n            else:\n                order_latex = \"^%r\"%order\n        \n            return \"\\\\frac{%s%s}{%s}(%s)\"%(d_latex,\n                                              order_latex,\n                                              variables_latex,\n                                              self._args[0]._latex_())\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4202\n\n",
+    "created_at": "2008-09-26T21:41:59Z",
+    "labels": [
+        "calculus",
+        "major",
+        "enhancement"
+    ],
+    "title": "latex derivatives of symbolic functions nicely",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4202",
+    "user": "jason"
+}
+```
 Assignee: burcin
 
 This patch makes it so that symbolic functions attempt to call maxima to get a latex representation before printing out the default functionname(arguments) notation.
@@ -40,23 +50,62 @@ Here is some Sage code that did derivative printing.  I post it here since this 
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4202
+
+
+
+
 
 ---
+
+archive/issue_comments_030499.json:
+```json
+{
+    "body": "Attachment\n\nNice job.  Looks good to me.",
+    "created_at": "2008-09-26T21:53:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4202",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4202#issuecomment-30499",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 Nice job.  Looks good to me.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-27 00:53:48
+archive/issue_comments_030500.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-09-27T00:53:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4202",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4202#issuecomment-30500",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-27 00:53:48
+archive/issue_comments_030501.json:
+```json
+{
+    "body": "Merged in Sage 3.1.3.alpha2",
+    "created_at": "2008-09-27T00:53:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4202",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4202#issuecomment-30501",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.1.3.alpha2

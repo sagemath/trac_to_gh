@@ -1,11 +1,21 @@
 # Issue 7259: Revert Sets().category() from Sets() to Objects()
 
-Issue created by migration from https://trac.sagemath.org/ticket/7259
-
-Original creator: nthiery
-
-Original creation time: 2009-10-21 08:36:14
-
+archive/issues_007259.json:
+```json
+{
+    "body": "Assignee: nthiery\n\nCC:  sage-combinat\n\nKeywords: categories, sets\n\nIn Sage 4.1, the category of a category was changed from Objects() to\nSets(). I.e. we used to have:\n\n  \tsage: Groups().category()\n  \tCategory of objects\n\nAnd now we have:\n\n\tsage: Groups().category()\n\tCategory of sets\n\nThe former sounds more natural to me, in particular because the\nobjects of Sets() are exactly the parents.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7259\n\n",
+    "created_at": "2009-10-21T08:36:14Z",
+    "labels": [
+        "algebra",
+        "major",
+        "bug"
+    ],
+    "title": "Revert Sets().category() from Sets() to Objects()",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7259",
+    "user": "nthiery"
+}
+```
 Assignee: nthiery
 
 CC:  sage-combinat
@@ -15,8 +25,8 @@ Keywords: categories, sets
 In Sage 4.1, the category of a category was changed from Objects() to
 Sets(). I.e. we used to have:
 
-	sage: Groups().category()
-	Category of objects
+  	sage: Groups().category()
+  	Category of objects
 
 And now we have:
 
@@ -26,42 +36,114 @@ And now we have:
 The former sounds more natural to me, in particular because the
 objects of Sets() are exactly the parents.
 
+Issue created by migration from https://trac.sagemath.org/ticket/7259
+
+
+
+
 
 ---
 
-Comment by nthiery created at 2009-10-21 08:41:43
+archive/issue_comments_060292.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-10-21T08:41:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7259",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7259#issuecomment-60292",
+    "user": "nthiery"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_060293.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-10-21T08:42:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7259",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7259#issuecomment-60293",
+    "user": "nthiery"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-21 13:20:40
+archive/issue_comments_060294.json:
+```json
+{
+    "body": "For the record, all tests pass with this applied.",
+    "created_at": "2009-10-21T13:20:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7259",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7259#issuecomment-60294",
+    "user": "mhansen"
+}
+```
 
 For the record, all tests pass with this applied.
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-23 09:11:19
+archive/issue_comments_060295.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-10-23T09:11:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7259",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7259#issuecomment-60295",
+    "user": "mhansen"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-23 09:11:19
+archive/issue_comments_060296.json:
+```json
+{
+    "body": "I think this can go in now and then we'll switch it over to the \"Category of Categories\" when appropriate.",
+    "created_at": "2009-10-23T09:11:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7259",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7259#issuecomment-60296",
+    "user": "mhansen"
+}
+```
 
 I think this can go in now and then we'll switch it over to the "Category of Categories" when appropriate.
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-23 09:11:54
+archive/issue_comments_060297.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-10-23T09:11:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7259",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7259#issuecomment-60297",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

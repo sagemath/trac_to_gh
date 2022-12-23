@@ -1,11 +1,21 @@
 # Issue 7360: isomorphism_type_info_simple_group returns an exception instead of raising it
 
-Issue created by migration from https://trac.sagemath.org/ticket/7360
-
-Original creator: AlexGhitza
-
-Original creation time: 2009-10-31 13:04:24
-
+archive/issues_007360.json:
+```json
+{
+    "body": "Assignee: joyner\n\nCurrently (sage-4.2):\n\n\n```\nsage: S = KleinFourGroup()\nsage: S.isomorphism_type_info_simple_group()\n(<type 'exceptions.TypeError'>, 'Group must be simple.')\n```\n\n\nThe attached patch fixes this and adds a doctest.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7360\n\n",
+    "created_at": "2009-10-31T13:04:24Z",
+    "labels": [
+        "group theory",
+        "minor",
+        "bug"
+    ],
+    "title": "isomorphism_type_info_simple_group returns an exception instead of raising it",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7360",
+    "user": "AlexGhitza"
+}
+```
 Assignee: joyner
 
 Currently (sage-4.2):
@@ -21,35 +31,96 @@ sage: S.isomorphism_type_info_simple_group()
 The attached patch fixes this and adds a doctest.
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7360
+
+
+
+
 
 ---
+
+archive/issue_comments_061676.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-10-31T13:07:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7360",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7360#issuecomment-61676",
+    "user": "AlexGhitza"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-10-31 13:08:13
+archive/issue_comments_061677.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-10-31T13:08:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7360",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7360#issuecomment-61677",
+    "user": "AlexGhitza"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-11-10 22:34:13
+archive/issue_comments_061678.json:
+```json
+{
+    "body": "Positive review - nice catch.",
+    "created_at": "2009-11-10T22:34:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7360",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7360#issuecomment-61678",
+    "user": "kcrisman"
+}
+```
 
 Positive review - nice catch.
 
 
+
 ---
 
-Comment by kcrisman created at 2009-11-10 22:34:13
+archive/issue_comments_061679.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-11-10T22:34:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7360",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7360#issuecomment-61679",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mhansen created at 2009-11-12 06:50:30
+archive/issue_comments_061680.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-11-12T06:50:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7360",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7360#issuecomment-61680",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

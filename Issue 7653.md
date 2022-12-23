@@ -1,11 +1,21 @@
 # Issue 7653: Ensure that C++ libraries linked are ISO standard with commerical compilers
 
-Issue created by migration from https://trac.sagemath.org/ticket/7653
-
-Original creator: drkirkby
-
-Original creation time: 2009-12-10 16:35:09
-
+archive/issues_007653.json:
+```json
+{
+    "body": "Assignee: GeorgSWeber\n\nCC:  dimpase\n\nSeveral C++ compilers from commercial vendors (Sun and HP being two examples I am aware of), created C++ libraries based on an older version of the C++ standard. This is incompatible with the current standard, so both HP and Sun ship two libraries - one for backward compatibility, the other which implements the last ISO standard, but at the expense of backward compatibility. \n\nIn contrast, g++ only uses on library. \n\nSun take their usual attitude of ensuring Solaris is backward compatible, so by default their C++ compiler uses a library which does not conform to the latest C++ standard. Alexander Dreyer has found that the magic switch to get Sun Studio to use the latest C++ library is \n\n\n```\n-library=stlport4\n```\n\n\nFurther details can be found on the Sun web site at \n\nhttp://developers.sun.com/solaris/articles/cmp_stlport_libCstd.html\n\nLooking at the HP C++ compiler for HP-UX, I see that it too has two C++ libraries - one for backward compatibility, one for latest C++ conformance. \n\nhttp://docs.hp.com/en/14487/faq.htm\n\nLike the Sun compiler, the HP compiler defaults to an older C++ library standard. The option to enable the latest standard is\n\n\n```\n-AA\n```\n\n\nIn both cases, the same library must be used for all objects - you can't mix them. \n\nHence at some point, all code in Sage that uses C++ must have the appropriate option to C++ compiler to use the latest libraries, if it is to be built with Sun Studio or any other compiler which ships with two libraries. \n\nI would invisage creating individual trac tickets for each package which uses C++. The sensible option it to add this flag to a CXXFLAGS and hope all packages respect CXXFLAGS. In practice, this will not happen, so many will require changes to ensure they do respect flags from a global CXX flags. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7653\n\n",
+    "created_at": "2009-12-10T16:35:09Z",
+    "labels": [
+        "build",
+        "major",
+        "bug"
+    ],
+    "title": "Ensure that C++ libraries linked are ISO standard with commerical compilers",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7653",
+    "user": "drkirkby"
+}
+```
 Assignee: GeorgSWeber
 
 CC:  dimpase
@@ -45,30 +55,78 @@ Hence at some point, all code in Sage that uses C++ must have the appropriate op
 I would invisage creating individual trac tickets for each package which uses C++. The sensible option it to add this flag to a CXXFLAGS and hope all packages respect CXXFLAGS. In practice, this will not happen, so many will require changes to ensure they do respect flags from a global CXX flags. 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7653
+
+
+
+
 
 ---
 
-Comment by mkoeppe created at 2020-04-25 02:55:44
+archive/issue_comments_065455.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2020-04-25T02:55:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7653",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7653#issuecomment-65455",
+    "user": "mkoeppe"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mkoeppe created at 2020-04-25 02:55:44
+archive/issue_comments_065456.json:
+```json
+{
+    "body": "outdated, should be closed",
+    "created_at": "2020-04-25T02:55:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7653",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7653#issuecomment-65456",
+    "user": "mkoeppe"
+}
+```
 
 outdated, should be closed
 
 
+
 ---
 
-Comment by dimpase created at 2020-04-26 08:31:56
+archive/issue_comments_065457.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2020-04-26T08:31:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7653",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7653#issuecomment-65457",
+    "user": "dimpase"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by chapoton created at 2020-05-31 12:30:59
+archive/issue_comments_065458.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2020-05-31T12:30:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7653",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7653#issuecomment-65458",
+    "user": "chapoton"
+}
+```
 
 Resolution: invalid

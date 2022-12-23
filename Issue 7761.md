@@ -1,11 +1,21 @@
 # Issue 7761: Python 2.6.2.p4 faills to build on Open Solaris
 
-Issue created by migration from https://trac.sagemath.org/ticket/7761
-
-Original creator: drkirkby
-
-Original creation time: 2009-12-24 16:45:17
-
+archive/issues_007761.json:
+```json
+{
+    "body": "Assignee: drkirkby\n\nCC:  was david.kirkby@onetel.net mvngu\n\nKeywords: python open solaris\n\nI believe William is aware of this bug and said it can be fixed by installing OpenSSL or similar. But I am unable to find a trac ticket for it, so I thought I'd open one. It's interesting this issue does not arise on Solaris 10 (SPARC), despite OpenSSL libraries not being present there either. This bug seems to come up a lot on linux too, as a Google search shows. \n\nOn a Sun Ultra 27 (Intel Xeon processor), running Open Solaris 06/2009, I get the following problem when python is being built. \n\n\n```\ncopying build/scripts-2.6/pydoc -> /export/home/drkirkby/sage-4.3.rc2/local/bin\nchanging mode of /export/home/drkirkby/sage-4.3.rc2/local/bin/2to3 to 755\nchanging mode of /export/home/drkirkby/sage-4.3.rc2/local/bin/smtpd.py to 755\nchanging mode of /export/home/drkirkby/sage-4.3.rc2/local/bin/idle to 755\nchanging mode of /export/home/drkirkby/sage-4.3.rc2/local/bin/pydoc to 755\nrunning install_egg_info\nRemoving /export/home/drkirkby/sage-4.3.rc2/local/lib/python2.6/lib-dynload/Python-2.6.2-py2.6.egg-info\nWriting /export/home/drkirkby/sage-4.3.rc2/local/lib/python2.6/lib-dynload/Python-2.6.2-py2.6.egg-info\nif test -f /export/home/drkirkby/sage-4.3.rc2/local/bin/python -o -h /export/home/drkirkby/sage-4.3.rc2/local/bin/python; \\\n\tthen rm -f /export/home/drkirkby/sage-4.3.rc2/local/bin/python; \\\n\telse true; \\\n\tfi\n(cd /export/home/drkirkby/sage-4.3.rc2/local/bin; ln python2.6 python)\nrm -f /export/home/drkirkby/sage-4.3.rc2/local/bin/python-config\n(cd /export/home/drkirkby/sage-4.3.rc2/local/bin; ln -s python2.6-config python-config)\n/usr/bin/ginstall -c -m 644 ./Misc/python.man \\\n\t\t/export/home/drkirkby/sage-4.3.rc2/local/share/man/man1/python.1\nmake[2]: Leaving directory `/export/home/drkirkby/sage-4.3.rc2/spkg/build/python-2.6.2.p4/src'\nSleeping for three seconds before testing python\nTraceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"/export/home/drkirkby/sage-4.3.rc2/local/lib/python/hashlib.py\", line 136, in <module>\n    md5 = __get_builtin_constructor('md5')\n  File \"/export/home/drkirkby/sage-4.3.rc2/local/lib/python/hashlib.py\", line 63, in __get_builtin_constructor\n    import _md5\nImportError: No module named _md5\n\nreal\t1m38.244s\nuser\t1m15.115s\nsys\t0m13.132s\nsage: An error occurred while installing python-2.6.2.p4\n\n```\n\n\nI'm not sure if this should be reported upstream or not. Some feedback on that might be useful. If so, I will report it to a python bug tracker or similar. The issue seems to arrise often enough. \n\nDave \n\nPS, to even get to this point, I had to delete the following list of files, to get around a gnutls issue in #7387.\n\n\n```\n    * SAGE_LOCAL/include/gcrypt-module.h\n    * SAGE_LOCAL/include/gpg-error.h\n    * SAGE_LOCAL/include/gcrypt.h\n    * SAGE_LOCAL/lib/libgcrypt*\n    * SAGE_LOCAL/lib/libgpg* \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7761\n\n",
+    "created_at": "2009-12-24T16:45:17Z",
+    "labels": [
+        "porting: Solaris",
+        "major",
+        "bug"
+    ],
+    "title": "Python 2.6.2.p4 faills to build on Open Solaris",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7761",
+    "user": "drkirkby"
+}
+```
 Assignee: drkirkby
 
 CC:  was david.kirkby@onetel.net mvngu
@@ -69,10 +79,25 @@ PS, to even get to this point, I had to delete the following list of files, to g
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7761
+
+
+
+
 
 ---
 
-Comment by drkirkby created at 2010-01-02 09:23:14
+archive/issue_comments_066825.json:
+```json
+{
+    "body": "These problems go away if one builds in 64-bit mode, by exporting SAGE64 to yes. However, CFLAGS must be passed properly to Python, otherwise the -m64 does not get added as a CFLAG. That was only happening on OS X. \n\nThis updated spkg file adds:\n\n\n```\nCC=\"$CC $CFLAGS\"\n```\n\non the end of the configure line. Then, as long as CFLAGS contains -m64, so the package will build with 64-bit support. \n\nhttp://boxen.math.washington.edu/home/kirkby/portability/python-2.6.2.p5/",
+    "created_at": "2010-01-02T09:23:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7761",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66825",
+    "user": "drkirkby"
+}
+```
 
 These problems go away if one builds in 64-bit mode, by exporting SAGE64 to yes. However, CFLAGS must be passed properly to Python, otherwise the -m64 does not get added as a CFLAG. That was only happening on OS X. 
 
@@ -88,16 +113,38 @@ on the end of the configure line. Then, as long as CFLAGS contains -m64, so the 
 http://boxen.math.washington.edu/home/kirkby/portability/python-2.6.2.p5/
 
 
+
 ---
 
-Comment by drkirkby created at 2010-01-02 09:23:14
+archive/issue_comments_066826.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-01-02T09:23:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7761",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66826",
+    "user": "drkirkby"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jsp created at 2010-01-03 01:08:25
+archive/issue_comments_066827.json:
+```json
+{
+    "body": "On my Open Solaris build still fails:\n\n```\nSleeping for three seconds before testing python\nTraceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"/export/home/jaap/Downloads/sage-4.3/local/lib/python/hashlib.py\", line 136, in <module>\n    md5 = __get_builtin_constructor('md5')\n  File \"/export/home/jaap/Downloads/sage-4.3/local/lib/python/hashlib.py\", line 63, in __get_builtin_constructor\n    import _md5\nImportError: No module named _md5\n\nreal\t3m11.679s\nuser\t1m47.153s\nsys\t0m36.011s\nsage: An error occurred while installing python-2.6.2.p5\n\n```\n\n\nWhere is openssl supposed to be be installed?\n\n/usr/local/ssl did not work for me.\n\nJaap",
+    "created_at": "2010-01-03T01:08:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7761",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66827",
+    "user": "jsp"
+}
+```
 
 On my Open Solaris build still fails:
 
@@ -126,9 +173,20 @@ Where is openssl supposed to be be installed?
 Jaap
 
 
+
 ---
 
-Comment by drkirkby created at 2010-01-03 02:13:50
+archive/issue_comments_066828.json:
+```json
+{
+    "body": "That is very odd. I just used OpenSSL's default location, which is /usr/local/ssl. Python knows to look there. I manged to get the following all built now in 64-bit mode.  \n\n```\ndrkirkby@hawk:~/sage-4.3/spkg/installed$ ls\nbzip2-1.0.5             libgcrypt-1.4.4.p1      python-2.6.2.p5\ncliquer-1.2.p2          libgpg_error-1.6.p3     readline-6.0.p1\nconway_polynomials-0.2  libpng-1.2.35.p0        sage_scripts-4.3\ndir-0.1                 mercurial-1.3.1.p0      scons-1.2.0\neclib-20080310.p8       mpir-1.2.2              sqlite-3.6.19.p0\nelliptic_curves-0.1     ntl-5.4.2.p9            termcap-1.3.1.p0\nextcode-4.3             opencdk-0.6.6.p3        zlib-1.2.3.p5\ngnutls-2.2.1.p5         pari-2.3.3.p5\ngraphs-20070722.p1      prereq-0.6\n```\n\nbefore Flint decided it did not want to play ball, and exited with an ELFCLASS problem (mixing of 32 and 64-bit objects). \n\nI did something like:\n\n```\n$ export SAGE64=yes\n$ export CFLAGS=-m64\n$ export CXFLAGS=-m64\n$ export FCFLAGS=-m64\n$ export SAGE_FORTRAN_LIB=/usr/local/lib/libgfortran.so\n$ make\n```\n\n\nI've got several gcc's on here, but just noticed the one which got this far was **not** using the GNU asssembler as I advised, but all Sun tools. Note the configure option '--with-build-time-tools=/usr/ccs/bin' Perhaps the GCC bugs are sorted out in 4.4.2 which allow it to work with the Sun assembler. \n\n```\ndrkirkby@hawk:~$ gcc -v\nUsing built-in specs.\nTarget: i386-pc-solaris2.11\nConfigured with: ./configure --with-build-time-tools=/usr/ccs/bin --with-gmp=/usr/local --with-mpfr=/usr/local\nThread model: posix\ngcc version 4.4.2 (GCC) \n```\n",
+    "created_at": "2010-01-03T02:13:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7761",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66828",
+    "user": "drkirkby"
+}
+```
 
 That is very odd. I just used OpenSSL's default location, which is /usr/local/ssl. Python knows to look there. I manged to get the following all built now in 64-bit mode.  
 
@@ -159,7 +217,7 @@ $ make
 ```
 
 
-I've got several gcc's on here, but just noticed the one which got this far was *not* using the GNU asssembler as I advised, but all Sun tools. Note the configure option '--with-build-time-tools=/usr/ccs/bin' Perhaps the GCC bugs are sorted out in 4.4.2 which allow it to work with the Sun assembler. 
+I've got several gcc's on here, but just noticed the one which got this far was **not** using the GNU asssembler as I advised, but all Sun tools. Note the configure option '--with-build-time-tools=/usr/ccs/bin' Perhaps the GCC bugs are sorted out in 4.4.2 which allow it to work with the Sun assembler. 
 
 ```
 drkirkby@hawk:~$ gcc -v
@@ -172,9 +230,20 @@ gcc version 4.4.2 (GCC)
 
 
 
+
 ---
 
-Comment by jsp created at 2010-01-05 14:44:27
+archive/issue_comments_066829.json:
+```json
+{
+    "body": "Replying to [comment:3 drkirkby]:\n> That is very odd. I just used OpenSSL's default location, which is /usr/local/ssl. Python knows to look there. I manged to get the following all built now in 64-bit mode.  \n\nYou are right. The problem I have is again with ld\n\n\n```\nBN_mod_sqrt                         0x1159      /usr/local/lib/libcrypto.a(ecp_smpl.o)\nBN_kronecker                        0x119e      /usr/local/lib/libcrypto.a(ecp_smpl.o)\nBN_kronecker                        0x1f5       /usr/local/lib/libcrypto.a(bn_sqrt.o)\n.rodata (section)                   0x198       /usr/local/lib/libcrypto.a(bn_kron.o)\n.rodata (section)                   0x293       /usr/local/lib/libcrypto.a(bn_kron.o)\n.rodata.str1.1 (merged string section) 0x56             /usr/local/lib/libcrypto.a(bn_sqrt.o)\n.rodata.str1.1 (merged string section) 0x491            /usr/local/lib/libcrypto.a(bn_sqrt.o)\n.rodata.str1.1 (merged string section) 0x529            /usr/local/lib/libcrypto.a(bn_sqrt.o)\n.rodata.str1.1 (merged string section) 0x53e            /usr/local/lib/libcrypto.a(bn_sqrt.o)\nld: fatal: relocations remain against allocatable but non-writable sections\ncollect2: ld returned 1 exit status\n\n```\n\n\nI'll build a new gcc.\n\nJaap",
+    "created_at": "2010-01-05T14:44:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7761",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66829",
+    "user": "jsp"
+}
+```
 
 Replying to [comment:3 drkirkby]:
 > That is very odd. I just used OpenSSL's default location, which is /usr/local/ssl. Python knows to look there. I manged to get the following all built now in 64-bit mode.  
@@ -203,9 +272,20 @@ I'll build a new gcc.
 Jaap
 
 
+
 ---
 
-Comment by drkirkby created at 2010-01-07 17:23:35
+archive/issue_comments_066830.json:
+```json
+{
+    "body": "> .rodata.str1.1 (merged string section) 0x53e            /usr/local/lib/libcrypto.a(bn_sqrt.o)\n> ld: fatal: relocations remain against allocatable but non-writable sections\n> collect2: ld returned 1 exit status\n> \n> }}}\n> \n> I'll build a new gcc.\n> \n> Jaap\n> \nYes, I think building a new gcc is probably your best course of action. Several people have said gcc 4.3.4 is one of the more stable gcc's. \n\nI think ATLAS might dictate the use of the Sun assembler, as some of the assembly looks like it will only work with the GNU assembler. \n\nThe following has allowed me to build python with 'hashlib' support. Try building python with that. If it fails, try building OpenSSL with it. \n\nIf all else fails, I can make some tarbals of my gcc and binutils binaries, upload them, then you try those. Then we would have **exactly** the same build tools. But I don't believe such drastic measures should be necessary, but if they are helpful, I can do it. \n\n```\ndrkirkby@hawk:~/sage-4.3.1.alpha1$ gcc -v\nUsing built-in specs.\nTarget: i386-pc-solaris2.11\nConfigured with: ../gcc-4.3.4/configure --prefix=/usr/local/gcc-4.3.4-GNU-assembler-Sun-linker --with-as=/usr/local/binutils-2.20/bin/as --with-ld=/usr/ccs/bin/ld --with-gmp=/usr/local --with-mpfr=/usr/local\nThread model: posix\ngcc version 4.3.4 (GCC) \n```\n",
+    "created_at": "2010-01-07T17:23:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7761",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66830",
+    "user": "drkirkby"
+}
+```
 
 > .rodata.str1.1 (merged string section) 0x53e            /usr/local/lib/libcrypto.a(bn_sqrt.o)
 > ld: fatal: relocations remain against allocatable but non-writable sections
@@ -223,7 +303,7 @@ I think ATLAS might dictate the use of the Sun assembler, as some of the assembl
 
 The following has allowed me to build python with 'hashlib' support. Try building python with that. If it fails, try building OpenSSL with it. 
 
-If all else fails, I can make some tarbals of my gcc and binutils binaries, upload them, then you try those. Then we would have *exactly* the same build tools. But I don't believe such drastic measures should be necessary, but if they are helpful, I can do it. 
+If all else fails, I can make some tarbals of my gcc and binutils binaries, upload them, then you try those. Then we would have **exactly** the same build tools. But I don't believe such drastic measures should be necessary, but if they are helpful, I can do it. 
 
 ```
 drkirkby@hawk:~/sage-4.3.1.alpha1$ gcc -v
@@ -236,23 +316,56 @@ gcc version 4.3.4 (GCC)
 
 
 
+
 ---
 
-Comment by drkirkby created at 2010-01-10 18:30:12
+archive/issue_comments_066831.json:
+```json
+{
+    "body": "I'm sticking this to 'needs info' as I've noticed another problem in this package (incorrect usage of set -e), and might as well fix the other one at the same time.",
+    "created_at": "2010-01-10T18:30:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7761",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66831",
+    "user": "drkirkby"
+}
+```
 
 I'm sticking this to 'needs info' as I've noticed another problem in this package (incorrect usage of set -e), and might as well fix the other one at the same time.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-01-10 18:30:12
+archive/issue_comments_066832.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_info.",
+    "created_at": "2010-01-10T18:30:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7761",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66832",
+    "user": "drkirkby"
+}
+```
 
 Changing status from needs_review to needs_info.
 
 
+
 ---
 
-Comment by jsp created at 2010-01-10 18:40:01
+archive/issue_comments_066833.json:
+```json
+{
+    "body": "I'm slowly making progress building p5 on my Open Solaris in VirtualBox :)\n\n_ssl.o and ssl.so are now built. _hashlib.so failed on:\n\n\n\n```\ngcc -Wall -g -m64 -Wall -g -m64 -shared -L/export/home/jaap/Downloads/sage-4.3.1.alpha1/local/lib -fno-strict-aliasing -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -IInclude -I./Include -I/export/home/jaap/Downloads/sage-4.3.1.alpha1/local/include build/temp.solaris-2.11-i86pc-2.6/export/home/jaap/Downloads/sage-4.3.1.alpha1/spkg/build/python-2.6.2.p5/src/Modules/_hashopenssl.o -L/export/home/jaap/Downloads/sage-4.3.1.alpha1/local/lib -L/usr/local/lib -lssl -lcrypto -o build/lib.solaris-2.11-i86pc-2.6/_hashlib.so\n*** WARNING: renaming \"_hashlib\" since importing it failed: ld.so.1: python: fatal: relocation error: file build/lib.solaris-2.11-i86pc-2.6/_hashlib.so: symbol EVP_MD_CTX_md: referenced symbol not found\n\n```\n\n\n\nJaap",
+    "created_at": "2010-01-10T18:40:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7761",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66833",
+    "user": "jsp"
+}
+```
 
 I'm slowly making progress building p5 on my Open Solaris in VirtualBox :)
 
@@ -271,9 +384,20 @@ gcc -Wall -g -m64 -Wall -g -m64 -shared -L/export/home/jaap/Downloads/sage-4.3.1
 Jaap
 
 
+
 ---
 
-Comment by jsp created at 2010-01-10 21:09:45
+archive/issue_comments_066834.json:
+```json
+{
+    "body": "I finally got this going on Open Solaris in VirtualBox!\n\nThe problem was related to different ssl libraries.\n\nWe have to be sure there is only one openssl in the process.\n\nIn the end I only used the system ssl and libcrypto\n\nInstalling OpenSLL is probably not the solution in Open Solaris.\n\nIn the standard setup the spkg installs fine.\n\nSo positive review! But leaving it to needs_info. Waiting for David.\n\nJaap",
+    "created_at": "2010-01-10T21:09:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7761",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66834",
+    "user": "jsp"
+}
+```
 
 I finally got this going on Open Solaris in VirtualBox!
 
@@ -292,9 +416,20 @@ So positive review! But leaving it to needs_info. Waiting for David.
 Jaap
 
 
+
 ---
 
-Comment by jsp created at 2010-01-10 21:27:47
+archive/issue_comments_066835.json:
+```json
+{
+    "body": "OK, I see you updated the spkg in\n\n[http://boxen.math.washington.edu/home/kirkby/portability/python-2.6.2.p5/](http://boxen.math.washington.edu/home/kirkby/portability/python-2.6.2.p5/)\n\nLet me test this.\n\nJaap",
+    "created_at": "2010-01-10T21:27:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7761",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66835",
+    "user": "jsp"
+}
+```
 
 OK, I see you updated the spkg in
 
@@ -305,43 +440,100 @@ Let me test this.
 Jaap
 
 
+
 ---
 
-Comment by drkirkby created at 2010-01-10 21:40:30
+archive/issue_comments_066836.json:
+```json
+{
+    "body": "Updated package which \n\n* Fixes the issue on Open Solaris, though it relies on having the new sage-env patch #7818 installed. \n* Removes 'set -e' which was hiding an error message. \n* Added a check that the Itanium fix was actually applied properly. (That was the only thing which was not checked in spkg-install. Almost everything else was properly checked). \n\nThe updated version can be found at: \n\nhttp://boxen.math.washington.edu/home/kirkby/portability/python-2.6.2.p5/",
+    "created_at": "2010-01-10T21:40:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7761",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66836",
+    "user": "drkirkby"
+}
+```
 
 Updated package which 
 
- * Fixes the issue on Open Solaris, though it relies on having the new sage-env patch #7818 installed. 
- * Removes 'set -e' which was hiding an error message. 
- * Added a check that the Itanium fix was actually applied properly. (That was the only thing which was not checked in spkg-install. Almost everything else was properly checked). 
+* Fixes the issue on Open Solaris, though it relies on having the new sage-env patch #7818 installed. 
+* Removes 'set -e' which was hiding an error message. 
+* Added a check that the Itanium fix was actually applied properly. (That was the only thing which was not checked in spkg-install. Almost everything else was properly checked). 
 
 The updated version can be found at: 
 
 http://boxen.math.washington.edu/home/kirkby/portability/python-2.6.2.p5/
 
 
+
 ---
 
-Comment by drkirkby created at 2010-01-10 21:40:30
+archive/issue_comments_066837.json:
+```json
+{
+    "body": "Changing status from needs_info to needs_review.",
+    "created_at": "2010-01-10T21:40:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7761",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66837",
+    "user": "drkirkby"
+}
+```
 
 Changing status from needs_info to needs_review.
 
 
+
 ---
+
+archive/issue_comments_066838.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-01-10T21:41:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7761",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66838",
+    "user": "drkirkby"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by jsp created at 2010-01-10 23:36:50
+archive/issue_comments_066839.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-01-10T23:36:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7761",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66839",
+    "user": "jsp"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jsp created at 2010-01-10 23:36:50
+archive/issue_comments_066840.json:
+```json
+{
+    "body": "On Open Solaris:\n\n\n```\nSleeping for three seconds before testing python\nhashlib module imported\n\nreal\t2m45.196s\nuser\t1m48.948s\nsys\t0m32.524s\nSuccessfully installed python-2.6.2.p5\nYou can safely delete the temporary build directory\n/export/home/jaap/Downloads/sage-4.3.1.alpha1/spkg/build/python-2.6.2.p5\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing python-2.6.2.p5.spkg\njaap@opensolaris:~/Downloads/sage-4.3.1.alpha1$ \n\n\n```\n\n\nFedora 12:\n\n\n```\nSleeping for three seconds before testing python\nhashlib module imported\n\nreal\t2m2.042s\nuser\t1m51.869s\nsys\t0m17.783s\nSuccessfully installed python-2.6.2.p5\nYou can safely delete the temporary build directory\n/home/jaap/downloads/sage-4.3.1.alpha1/spkg/build/python-2.6.2.p5\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing python-2.6.2.p5.spkg\n[jaap@vrede sage-4.3.1.alpha1]$ \n\n```\n\n\nOverall this looks good! Hope this gets into sage-3.4.1.\n\nPositive review.\n\nJaap",
+    "created_at": "2010-01-10T23:36:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7761",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66840",
+    "user": "jsp"
+}
+```
 
 On Open Solaris:
 
@@ -393,30 +585,74 @@ Positive review.
 Jaap
 
 
+
 ---
 
-Comment by rlm created at 2010-01-13 06:10:58
+archive/issue_comments_066841.json:
+```json
+{
+    "body": "Too late for sage-3.4.1, but we'll still merge it ;-)",
+    "created_at": "2010-01-13T06:10:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7761",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66841",
+    "user": "rlm"
+}
+```
 
 Too late for sage-3.4.1, but we'll still merge it ;-)
 
 
+
 ---
 
-Comment by rlm created at 2010-01-13 06:10:58
+archive/issue_comments_066842.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-13T06:10:58Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7761",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66842",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by robertwb created at 2010-01-29 23:59:54
+archive/issue_comments_066843.json:
+```json
+{
+    "body": "Changing status from closed to needs_work.",
+    "created_at": "2010-01-29T23:59:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7761",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66843",
+    "user": "robertwb"
+}
+```
 
 Changing status from closed to needs_work.
 
 
+
 ---
 
-Comment by robertwb created at 2010-01-29 23:59:54
+archive/issue_comments_066844.json:
+```json
+{
+    "body": "Does this still rely on the (unresolved) #7818? Distutils pulls CFLAGS out of the makefile, so I'm not convince that \n\n\n```\nCC=\"$CC $CFLAGS\"\n```\n\n\nis the way to go if extension modules should pick them up as well (but maybe it picks up CC as well). Probably better to pass them into the autoconf script using the OPT variable.",
+    "created_at": "2010-01-29T23:59:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7761",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66844",
+    "user": "robertwb"
+}
+```
 
 Does this still rely on the (unresolved) #7818? Distutils pulls CFLAGS out of the makefile, so I'm not convince that 
 
@@ -429,9 +665,20 @@ CC="$CC $CFLAGS"
 is the way to go if extension modules should pick them up as well (but maybe it picks up CC as well). Probably better to pass them into the autoconf script using the OPT variable.
 
 
+
 ---
 
-Comment by jsp created at 2010-01-30 01:29:22
+archive/issue_comments_066845.json:
+```json
+{
+    "body": "Replying to [comment:15 robertwb]:\n> Does this still rely on the (unresolved) #7818? Distutils pulls CFLAGS out of the makefile, so I'm not convince that \n> \n> {{{\n> CC=\"$CC $CFLAGS\"\n> }}}\n> \n> is the way to go if extension modules should pick them up as well (but maybe it picks up CC as well). Probably better to pass them into the autoconf script using the OPT variable. \n\nI don't like the way you handle this. Dave made a point. It works on Open Solaris when CFLAGS contains -m64.\n\nIt maybe not sufficient, but it works here and let me have a working python.\n\nI think release managers are way due to resolve this issue: having two p5 patches.\n\nLet's get on!\n\nJaap",
+    "created_at": "2010-01-30T01:29:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7761",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66845",
+    "user": "jsp"
+}
+```
 
 Replying to [comment:15 robertwb]:
 > Does this still rely on the (unresolved) #7818? Distutils pulls CFLAGS out of the makefile, so I'm not convince that 
@@ -453,24 +700,46 @@ Let's get on!
 Jaap
 
 
+
 ---
 
-Comment by robertwb created at 2010-01-30 03:27:56
+archive/issue_comments_066846.json:
+```json
+{
+    "body": "I'm just saying that the problems we have later on using setup.py to build extensions may have to do with the fact that Python is built with \"covert\" command line options that Distutils doesn't pick up. I figured this ticket needed to be re-opened 'cause if it never got in it's clearly shouldn't be closed. (At this point, we should probably make a p6 spkg.) I agree with the general goal behind #7818, but it has issues that I don't know how to fix, so shouldn't be a dependancy (unless that gets worked out first).",
+    "created_at": "2010-01-30T03:27:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7761",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66846",
+    "user": "robertwb"
+}
+```
 
 I'm just saying that the problems we have later on using setup.py to build extensions may have to do with the fact that Python is built with "covert" command line options that Distutils doesn't pick up. I figured this ticket needed to be re-opened 'cause if it never got in it's clearly shouldn't be closed. (At this point, we should probably make a p6 spkg.) I agree with the general goal behind #7818, but it has issues that I don't know how to fix, so shouldn't be a dependancy (unless that gets worked out first).
 
 
+
 ---
 
-Comment by drkirkby created at 2010-01-30 04:36:19
+archive/issue_comments_066847.json:
+```json
+{
+    "body": "I can understand why this was not merged. I'm just in the process of updating #7818. I just need to double check everything. But the main change is that \n\n* The user can supply SAGE_CFLAGS to set some CFLAGS they want. Since they are not setting CFLAGS, them doing so will not risk corrupting the Sage environment. \n\n* CFLAGS will not be exported, but instead 'SAGE_COMMON_CFLAGS', which will contain what the user specific in SAGE_CFLAGS, plus those flags I deem sensible. \n\n* Any spkg-install script that wants to use these flags, would have to do so by explicitly doing so via. \n\nCFLAGS=\"$SAGE_COMOON_CFLAGS\"\n\nThat I believe will be safe. No package is forced to use my flags, but they can choose to. Hence I believe the changes to sage-env will be 100% safe, as they will not change any commonly used environment variables. \n\nSo that's what I intend to do with sage-env. Now to the specific of this package. \n\nPrior to writing this new package, I looked at Python's spkg-install to see how the 64-bit build has been enabled on OS X, and you can see it added -m64 to gcc, so \"gcc -m64\" was used as a compiler. Hence I basically used a similar method. \n\nHaving later looked more carefully at the python documentation, the way to pass flags is not the way it is done on the spkg-install for OS X, so whist it may work, it is not the right way to do it. \n\nI think the best solution is that I update sage-env, then update the python package, but in a way that is specific to Solaris, AIX and HP-UX. Then at a later date, we can try in an alpha0 to drop it in without it being specific to that platform. \n\nI think the ability to allow the user to pass their own flags is quite important, as they can use that to optimise gcc for thier processor. At the momemnt, 95% of Sage's code is being built for a generic processor, and not exploiting the features of anyones particular processor. \n\nSo let me update sage-env in a safe way, then update this, to make use of sage-env's changes, but only on some rarer platforms. \n\nI think in the short term, Jaap should not worry about setting CFLAGS globally if it allows a package to build. Progress can then be made. He can always break the build process manually at some point, and unset it, just before cython gets to work. \n\nLeave it with me. I'll make what I believe are sensible decisions, then others can comment of course. In the mean time, I'm happy with this not being merged just now. I do agree it is sub-optimal. \n\nDave",
+    "created_at": "2010-01-30T04:36:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7761",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66847",
+    "user": "drkirkby"
+}
+```
 
 I can understand why this was not merged. I'm just in the process of updating #7818. I just need to double check everything. But the main change is that 
 
- * The user can supply SAGE_CFLAGS to set some CFLAGS they want. Since they are not setting CFLAGS, them doing so will not risk corrupting the Sage environment. 
+* The user can supply SAGE_CFLAGS to set some CFLAGS they want. Since they are not setting CFLAGS, them doing so will not risk corrupting the Sage environment. 
 
- * CFLAGS will not be exported, but instead 'SAGE_COMMON_CFLAGS', which will contain what the user specific in SAGE_CFLAGS, plus those flags I deem sensible. 
+* CFLAGS will not be exported, but instead 'SAGE_COMMON_CFLAGS', which will contain what the user specific in SAGE_CFLAGS, plus those flags I deem sensible. 
 
- * Any spkg-install script that wants to use these flags, would have to do so by explicitly doing so via. 
+* Any spkg-install script that wants to use these flags, would have to do so by explicitly doing so via. 
 
 CFLAGS="$SAGE_COMOON_CFLAGS"
 
@@ -495,9 +764,20 @@ Leave it with me. I'll make what I believe are sensible decisions, then others c
 Dave
 
 
+
 ---
 
-Comment by robertwb created at 2010-01-30 05:41:00
+archive/issue_comments_066848.json:
+```json
+{
+    "body": "Replying to [comment:18 drkirkby]:\n> I can understand why this was not merged. I'm just in the process of updating #7818. I just need to double check everything. But the main change is that \n\nGreat. \n\n> Prior to writing this new package, I looked at Python's spkg-install to see how the 64-bit build has been enabled on OS X, and you can see it added -m64 to gcc, so \"gcc -m64\" was used as a compiler. Hence I basically used a similar method. \n\nAh, OK. For easy reference: \n\n\n```\n    if [ `uname` = \"Darwin\" ]; then\n        if [ \"$SAGE64\" = \"yes\" ]; then\n            echo \"64 bit OSX build enabled\"\n            OPT=\"-g -O3 -m64 -Wall -Wstrict-prototypes\"; export OPT\n            ./configure $EXTRAFLAGS --prefix=\"$SAGE_LOCAL\" --without-libpng \\\n\t    --enable-unicode=ucs4 --with-gcc=\"gcc -m64\" --disable-toolbox-glue\n        else\n            ./configure $EXTRAFLAGS --prefix=\"$SAGE_LOCAL\" --without-libpng \\\n\t    --enable-unicode=ucs4 --disable-toolbox-glue\n        fi\n    else\n        ./configure $EXTRAFLAGS --prefix=\"$SAGE_LOCAL\" --without-libpng --enable-unicode=ucs4 CC=\"$CC $CFLAGS\" CXX=\"$CXX $CXXFLAGS\"\n    fi\n```\n\n\nInterestingly, -m64 gets added to both OPT (used by Python and distutils in making CFLAGS) and gcc. I wonder if both are necessary, or if this is redundant (yielding two -m65s in the final command, which shouldn't hurt). In any case, hopefully we can do this in such a way that all the spkg-installs that are just \"python setup.py install\" won't have to have extra stuff added in there as well.",
+    "created_at": "2010-01-30T05:41:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7761",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66848",
+    "user": "robertwb"
+}
+```
 
 Replying to [comment:18 drkirkby]:
 > I can understand why this was not merged. I'm just in the process of updating #7818. I just need to double check everything. But the main change is that 
@@ -529,9 +809,20 @@ Ah, OK. For easy reference:
 Interestingly, -m64 gets added to both OPT (used by Python and distutils in making CFLAGS) and gcc. I wonder if both are necessary, or if this is redundant (yielding two -m65s in the final command, which shouldn't hurt). In any case, hopefully we can do this in such a way that all the spkg-installs that are just "python setup.py install" won't have to have extra stuff added in there as well.
 
 
+
 ---
 
-Comment by jsp created at 2010-01-30 12:57:47
+archive/issue_comments_066849.json:
+```json
+{
+    "body": "As a work around I changed Darwin to SunOS. This give a working cython!\n\nChecking other packages with python setup.py install.\n\nJaap",
+    "created_at": "2010-01-30T12:57:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7761",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66849",
+    "user": "jsp"
+}
+```
 
 As a work around I changed Darwin to SunOS. This give a working cython!
 
@@ -540,16 +831,40 @@ Checking other packages with python setup.py install.
 Jaap
 
 
+
 ---
 
-Comment by drkirkby created at 2010-01-30 13:44:36
+archive/issue_comments_066850.json:
+```json
+{
+    "body": "That seems fine. Whatever allows you to make progress. Specific issues can be sorted later. There are some quite interesting, and more complex tasks, such as #6028 to be solved. You might want to take a look at something more interesting, if you get fed up with adding -m64!\n\nDave",
+    "created_at": "2010-01-30T13:44:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7761",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66850",
+    "user": "drkirkby"
+}
+```
 
 That seems fine. Whatever allows you to make progress. Specific issues can be sorted later. There are some quite interesting, and more complex tasks, such as #6028 to be solved. You might want to take a look at something more interesting, if you get fed up with adding -m64!
 
 Dave
 
 
+
 ---
+
+archive/issue_comments_066851.json:
+```json
+{
+    "body": "Attachment\n\nMade a new spkg work on Open nSolaris, leaving the OSX solution as is.\n\n[http://boxen.math.washington.edu/home/jsp/ports/python-2.6.4.p6.spkg](http://boxen.math.washington.edu/home/jsp/ports/python-2.6.4.p6.spkg)\n\nSee also the patch:\n[http://boxen.math.washington.edu/home/jsp/ports/python-2.6.4.p6.patch](http://boxen.math.washington.edu/home/jsp/ports/python-2.6.4.p6.patch)\n\nOn 'hawk':\n\n\n```\n(cd /export/home/jaap/sage_port/sage-4.3.2.alpha1/local/bin; ln python2.6 python)\nrm -f /export/home/jaap/sage_port/sage-4.3.2.alpha1/local/bin/python-config\n(cd /export/home/jaap/sage_port/sage-4.3.2.alpha1/local/bin; ln -s python2.6-config python-config)\n/usr/bin/ginstall -c -m 644 ./Misc/python.man \\\n                /export/home/jaap/sage_port/sage-4.3.2.alpha1/local/share/man/man1/python.1\nSleeping for three seconds before testing python\nhashlib module imported\n/export/home/jaap/sage_port/sage-4.3.2.alpha1\n\n```\n\n\nBig question: does this work for Solaris 10?\n\nJaap",
+    "created_at": "2010-02-23T14:33:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7761",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66851",
+    "user": "jsp"
+}
+```
 
 Attachment
 
@@ -581,16 +896,38 @@ Big question: does this work for Solaris 10?
 Jaap
 
 
+
 ---
 
-Comment by jsp created at 2010-02-23 14:33:49
+archive/issue_comments_066852.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-02-23T14:33:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7761",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66852",
+    "user": "jsp"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-02-23 17:00:51
+archive/issue_comments_066853.json:
+```json
+{
+    "body": "I see no reason this should not work on Linux, but have you checked it? I know  you have a linux build of Sage. Assuming you have checked it on Linux, then I'm happy to give it a positive review. It looks fine to me. \n\nIt does build on Solaris 10 in 32-bit mode on SPARC. I've not tested 64-bit mode, but there is currently no effort being put into a 64-bit port on SPARC, so there is no need for it to work there. \n\nPositive review, subject to confirmation from you that  you have tested this on Linux. \n\nDave",
+    "created_at": "2010-02-23T17:00:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7761",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66853",
+    "user": "drkirkby"
+}
+```
 
 I see no reason this should not work on Linux, but have you checked it? I know  you have a linux build of Sage. Assuming you have checked it on Linux, then I'm happy to give it a positive review. It looks fine to me. 
 
@@ -601,9 +938,20 @@ Positive review, subject to confirmation from you that  you have tested this on 
 Dave
 
 
+
 ---
 
-Comment by jsp created at 2010-02-23 17:49:24
+archive/issue_comments_066854.json:
+```json
+{
+    "body": "Replying to [comment:23 drkirkby]:\n> I see no reason this should not work on Linux, but have you checked it? I know  you have a linux build of Sage. Assuming you have checked it on Linux, then I'm happy to give it a positive review. It looks fine to me. \n> \n> It does build on Solaris 10 in 32-bit mode on SPARC. I've not tested 64-bit mode, but there is currently no effort being put into a 64-bit port on SPARC, so there is no need for it to work there. \n> \n> Positive review, subject to confirmation from you that  you have tested this on Linux. \n> \n> Dave \n\n\nSure, I tested this on linux. But the change in spkg-install only affected SunOS. So\nI was not afraid it would break a linux build.\n\nJaap",
+    "created_at": "2010-02-23T17:49:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7761",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66854",
+    "user": "jsp"
+}
+```
 
 Replying to [comment:23 drkirkby]:
 > I see no reason this should not work on Linux, but have you checked it? I know  you have a linux build of Sage. Assuming you have checked it on Linux, then I'm happy to give it a positive review. It looks fine to me. 
@@ -621,25 +969,58 @@ I was not afraid it would break a linux build.
 Jaap
 
 
+
 ---
 
-Comment by drkirkby created at 2010-02-23 18:36:49
+archive/issue_comments_066855.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-02-23T18:36:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7761",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66855",
+    "user": "drkirkby"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-02-23 18:36:49
+archive/issue_comments_066856.json:
+```json
+{
+    "body": "No problem. I think it would be ok, but there is no harm in checking. \n\nPositive review.",
+    "created_at": "2010-02-23T18:36:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7761",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66856",
+    "user": "drkirkby"
+}
+```
 
 No problem. I think it would be ok, but there is no harm in checking. 
 
 Positive review.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-02-23 18:41:01
+archive/issue_comments_066857.json:
+```json
+{
+    "body": "I'm taking myself off this as author, and adding myself as reviewer, as these changes by Jaap are his, and my earlier version was not working completely, so I feel justified in reviewing this. \n\nI'm going to delete the version I have on boxen, so not to cause any confusion. \n\nDave",
+    "created_at": "2010-02-23T18:41:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7761",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66857",
+    "user": "drkirkby"
+}
+```
 
 I'm taking myself off this as author, and adding myself as reviewer, as these changes by Jaap are his, and my earlier version was not working completely, so I feel justified in reviewing this. 
 
@@ -648,9 +1029,20 @@ I'm going to delete the version I have on boxen, so not to cause any confusion.
 Dave
 
 
+
 ---
 
-Comment by jsp created at 2010-02-23 18:58:33
+archive/issue_comments_066858.json:
+```json
+{
+    "body": "I see this ticket is marked as: Ticket #7761 (positive_review defect: fixed)\n\nFixed? At some time it was merged, but reopened.\n\nJaap",
+    "created_at": "2010-02-23T18:58:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7761",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66858",
+    "user": "jsp"
+}
+```
 
 I see this ticket is marked as: Ticket #7761 (positive_review defect: fixed)
 
@@ -659,24 +1051,57 @@ Fixed? At some time it was merged, but reopened.
 Jaap
 
 
+
 ---
 
-Comment by drkirkby created at 2010-02-23 20:02:10
+archive/issue_comments_066859.json:
+```json
+{
+    "body": "Remove assignee drkirkby.",
+    "created_at": "2010-02-23T20:02:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7761",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66859",
+    "user": "drkirkby"
+}
+```
 
 Remove assignee drkirkby.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-02-23 20:02:10
+archive/issue_comments_066860.json:
+```json
+{
+    "body": "Yes, it got merged, but was changed by robertwb  from fixed to needs work. It relied on another patch (#7818) which itself caused problems by setting CFLAGS globally. So whilst my python version worked, the patch it relied on caused other problems. \n\nDave",
+    "created_at": "2010-02-23T20:02:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7761",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66860",
+    "user": "drkirkby"
+}
+```
 
 Yes, it got merged, but was changed by robertwb  from fixed to needs work. It relied on another patch (#7818) which itself caused problems by setting CFLAGS globally. So whilst my python version worked, the patch it relied on caused other problems. 
 
 Dave
 
 
+
 ---
 
-Comment by mvngu created at 2010-03-02 23:31:03
+archive/issue_comments_066861.json:
+```json
+{
+    "body": "Merged [python-2.6.4.p6.spkg](http://boxen.math.washington.edu/home/jsp/ports/python-2.6.4.p6.spkg) in the standard spkg repository.",
+    "created_at": "2010-03-02T23:31:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7761",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7761#issuecomment-66861",
+    "user": "mvngu"
+}
+```
 
 Merged [python-2.6.4.p6.spkg](http://boxen.math.washington.edu/home/jsp/ports/python-2.6.4.p6.spkg) in the standard spkg repository.

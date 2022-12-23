@@ -1,51 +1,133 @@
 # Issue 8219: show(...) is now broken
 
-Issue created by migration from https://trac.sagemath.org/ticket/8219
-
-Original creator: was
-
-Original creation time: 2010-02-09 04:45:20
-
+archive/issues_008219.json:
+```json
+{
+    "body": "Assignee: tbd\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8219\n\n",
+    "created_at": "2010-02-09T04:45:20Z",
+    "labels": [
+        "misc",
+        "blocker",
+        "bug"
+    ],
+    "title": "show(...) is now broken",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8219",
+    "user": "was"
+}
+```
 Assignee: tbd
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8219
+
+
+
+
 
 ---
 
-Comment by was created at 2010-02-09 04:52:16
+archive/issue_comments_072538.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-02-09T04:52:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8219",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8219#issuecomment-72538",
+    "user": "was"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_072539.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-02-09T06:02:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8219",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8219#issuecomment-72539",
+    "user": "mvngu"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by novoselt created at 2010-02-09 06:06:44
+archive/issue_comments_072540.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-02-09T06:06:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8219",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8219#issuecomment-72540",
+    "user": "novoselt"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by novoselt created at 2010-02-09 06:06:44
+archive/issue_comments_072541.json:
+```json
+{
+    "body": "The patch fixes the problem and modified files pass doctests.",
+    "created_at": "2010-02-09T06:06:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8219",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8219#issuecomment-72541",
+    "user": "novoselt"
+}
+```
 
 The patch fixes the problem and modified files pass doctests.
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-11 13:24:31
+archive/issue_comments_072542.json:
+```json
+{
+    "body": "I've put the correct ticket number in the changeset comment for 4.3.3.alpha0.",
+    "created_at": "2010-02-11T13:24:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8219",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8219#issuecomment-72542",
+    "user": "mpatel"
+}
+```
 
 I've put the correct ticket number in the changeset comment for 4.3.3.alpha0.
 
 
+
 ---
 
-Comment by mpatel created at 2010-02-11 14:23:33
+archive/issue_comments_072543.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-02-11T14:23:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8219",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8219#issuecomment-72543",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed

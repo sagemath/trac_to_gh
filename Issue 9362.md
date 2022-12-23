@@ -1,11 +1,21 @@
 # Issue 9362: Invalidate None as a vertex label.
 
-Issue created by migration from https://trac.sagemath.org/ticket/9362
-
-Original creator: boothby
-
-Original creation time: 2010-06-28 19:27:02
-
+archive/issues_009362.json:
+```json
+{
+    "body": "Assignee: jason, mvngu, ncohen, rlm\n\nCC:  brunellus\n\nThe following indicates to me a huge problem:\n\n\n```\nsage: G = Graph()\nsage: G.add_edge(None, 1)\nsage: G.show()\n```\n\n\nthe resulting plot has three vertices, one blank, one labeled \"1\" and the other labeled \"None\".  The blank vertex is floating off in space, and the None and 1 vertices are bunched together.\n\nThis indicates to me that we should not accept \"None\" as a valid vertex label.\n\nOther places where a vertex labeled None will obviously cause problems:\n\n`spanning_trees_count`, `add_vertex`, `add_edge`, `delete_edge`, `has_edge`, `edge_label`, `eccentricity`, `layout_tree`\n\nthis is not an exhaustive list; I merely read method definitions to look where a vertex argument defaults to None (and later uses the condition `if v is None`).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9362\n\n",
+    "created_at": "2010-06-28T19:27:02Z",
+    "labels": [
+        "graph theory",
+        "major",
+        "bug"
+    ],
+    "title": "Invalidate None as a vertex label.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9362",
+    "user": "boothby"
+}
+```
 Assignee: jason, mvngu, ncohen, rlm
 
 CC:  brunellus
@@ -30,17 +40,43 @@ Other places where a vertex labeled None will obviously cause problems:
 
 this is not an exhaustive list; I merely read method definitions to look where a vertex argument defaults to None (and later uses the condition `if v is None`).
 
+Issue created by migration from https://trac.sagemath.org/ticket/9362
+
+
+
+
 
 ---
 
-Comment by dsm created at 2011-12-14 15:33:51
+archive/issue_comments_088911.json:
+```json
+{
+    "body": "It definitely makes sense to forbid None as a vertex label.  add_vertex(), which it makes sense to think of as the fundamental spec, already forbids the use of None, both explicitly in the docstring (\"cannot be None\") and implicitly in practice because it uses the default None to mean \"next unused integer\".  So that you can sneak it in as one through a back channel is a bad thing given the widespread use of None as a special value, just like the OP says.",
+    "created_at": "2011-12-14T15:33:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9362",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9362#issuecomment-88911",
+    "user": "dsm"
+}
+```
 
 It definitely makes sense to forbid None as a vertex label.  add_vertex(), which it makes sense to think of as the fundamental spec, already forbids the use of None, both explicitly in the docstring ("cannot be None") and implicitly in practice because it uses the default None to mean "next unused integer".  So that you can sneak it in as one through a back channel is a bad thing given the widespread use of None as a special value, just like the OP says.
 
 
+
 ---
 
-Comment by brunellus created at 2011-12-31 01:04:00
+archive/issue_comments_088912.json:
+```json
+{
+    "body": "I am not sure whether this patch catches every possible way a None-labeled vertex can sneak in, but I tried to go through the code and repair such cases.\n\nPlease, apply first the patch from #11739 before testing.\n\nDuring testing I noticed that\n\n\n```\nsage: G=Graph(); G.add_edge(None, 4); G.vertices()\n[0, 4]\nsage: G=Graph(); G.add_edge(5, None)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/root/Sage/sageNoneVertex/devel/sage-main/sage/graphs/<ipython console> in <module>()\n\n/root/Sage/sage/local/lib/python2.6/site-packages/sage/graphs/generic_graph.pyc in add_edge(self, u, v, label)\n   7556                     u, v, label = u\n   7557                 except:\n-> 7558                     u, v = u\n   7559                     label = None\n   7560         else:\n\nTypeError: 'sage.rings.integer.Integer' object is not iterable\n```\n\n\nThat is unpleasant asymmetry, don't you think? So I modified the code a little and now it works as expected.\n\n\n```\nsage: G=Graph(); G.add_edge(5, None); G.vertices()\n[0, 5]\n```\n",
+    "created_at": "2011-12-31T01:04:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9362",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9362#issuecomment-88912",
+    "user": "brunellus"
+}
+```
 
 I am not sure whether this patch catches every possible way a None-labeled vertex can sneak in, but I tried to go through the code and repair such cases.
 
@@ -79,28 +115,74 @@ sage: G=Graph(); G.add_edge(5, None); G.vertices()
 
 
 
+
 ---
 
-Comment by brunellus created at 2011-12-31 01:04:00
+archive/issue_comments_088913.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2011-12-31T01:04:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9362",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9362#issuecomment-88913",
+    "user": "brunellus"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_088914.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2011-12-31T01:05:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9362",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9362#issuecomment-88914",
+    "user": "brunellus"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by zimmerma created at 2012-01-10 08:58:01
+archive/issue_comments_088915.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_info.",
+    "created_at": "2012-01-10T08:58:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9362",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9362#issuecomment-88915",
+    "user": "zimmerma"
+}
+```
 
 Changing status from needs_review to needs_info.
 
 
+
 ---
 
-Comment by zimmerma created at 2012-01-10 08:58:01
+archive/issue_comments_088916.json:
+```json
+{
+    "body": "if #11739 is needed, please add it in the dependencies.\n\nI thought from the summary that using None would be forbidden and would raise an exception, but\ncomment [comment:4] seems to still use None as a vertex. Is that wanted?\n\nPaul Zimmermann",
+    "created_at": "2012-01-10T08:58:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9362",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9362#issuecomment-88916",
+    "user": "zimmerma"
+}
+```
 
 if #11739 is needed, please add it in the dependencies.
 
@@ -110,16 +192,38 @@ comment [comment:4] seems to still use None as a vertex. Is that wanted?
 Paul Zimmermann
 
 
+
 ---
 
-Comment by zimmerma created at 2012-01-10 10:43:33
+archive/issue_comments_088917.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"sd35.5\".",
+    "created_at": "2012-01-10T10:43:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9362",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9362#issuecomment-88917",
+    "user": "zimmerma"
+}
+```
 
 Changing keywords from "" to "sd35.5".
 
 
+
 ---
 
-Comment by brunellus created at 2012-01-10 14:03:14
+archive/issue_comments_088918.json:
+```json
+{
+    "body": "Replying to [comment:5 zimmerma]:\n> I thought from the summary that using None would be forbidden and would raise an exception, but\n> comment [comment:4] seems to still use None as a vertex. Is that wanted?\n\nSorry that I didn't discuss this. What do you think? Using None as a special value for \"create a new vertex\" is consistent with add_vertex (that is especially nice in merge_vertices -- maybe that function should return a new vertex name in the [None, ...] case?), but it can make some errors harder to find. I don't have a strong opinion.",
+    "created_at": "2012-01-10T14:03:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9362",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9362#issuecomment-88918",
+    "user": "brunellus"
+}
+```
 
 Replying to [comment:5 zimmerma]:
 > I thought from the summary that using None would be forbidden and would raise an exception, but
@@ -128,9 +232,20 @@ Replying to [comment:5 zimmerma]:
 Sorry that I didn't discuss this. What do you think? Using None as a special value for "create a new vertex" is consistent with add_vertex (that is especially nice in merge_vertices -- maybe that function should return a new vertex name in the [None, ...] case?), but it can make some errors harder to find. I don't have a strong opinion.
 
 
+
 ---
 
-Comment by brunellus created at 2012-01-10 14:41:35
+archive/issue_comments_088919.json:
+```json
+{
+    "body": "BTW: I'm not sure how slow is exception handling in Python, but isn't it little unfortunate that this is used so extensively in the add_edge function? Every call add_edge((u, v)) raises an exception that is immediately caught.\n\n\n```\nsage: G=Graph(multiedge=True)\nsage: timeit(\"G.add_edge(1, 2)\")\n625 loops, best of 3: 8.21 \u00b5s per loop\nsage: timeit(\"G.add_edge((1, 2))\")\n625 loops, best of 3: 12.2 \u00b5s per loop\n```\n",
+    "created_at": "2012-01-10T14:41:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9362",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9362#issuecomment-88919",
+    "user": "brunellus"
+}
+```
 
 BTW: I'm not sure how slow is exception handling in Python, but isn't it little unfortunate that this is used so extensively in the add_edge function? Every call add_edge((u, v)) raises an exception that is immediately caught.
 
@@ -145,16 +260,38 @@ sage: timeit("G.add_edge((1, 2))")
 
 
 
+
 ---
 
-Comment by zimmerma created at 2012-01-11 12:26:15
+archive/issue_comments_088920.json:
+```json
+{
+    "body": "Changing status from needs_info to needs_review.",
+    "created_at": "2012-01-11T12:26:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9362",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9362#issuecomment-88920",
+    "user": "zimmerma"
+}
+```
 
 Changing status from needs_info to needs_review.
 
 
+
 ---
 
-Comment by zimmerma created at 2012-01-11 12:26:15
+archive/issue_comments_088921.json:
+```json
+{
+    "body": "ok, I agree that using None as special value in `add_edge` makes sense, and is consistent\nwith `add_vertex`. Thus I put it back to needs review.\n\nPaul",
+    "created_at": "2012-01-11T12:26:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9362",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9362#issuecomment-88921",
+    "user": "zimmerma"
+}
+```
 
 ok, I agree that using None as special value in `add_edge` makes sense, and is consistent
 with `add_vertex`. Thus I put it back to needs review.
@@ -162,51 +299,130 @@ with `add_vertex`. Thus I put it back to needs review.
 Paul
 
 
+
 ---
 
-Comment by zimmerma created at 2012-01-11 12:28:13
+archive/issue_comments_088922.json:
+```json
+{
+    "body": "All doctests pass, and this is fine for me. Good work!\n\nPaul",
+    "created_at": "2012-01-11T12:28:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9362",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9362#issuecomment-88922",
+    "user": "zimmerma"
+}
+```
 
 All doctests pass, and this is fine for me. Good work!
 
 Paul
 
 
+
 ---
 
-Comment by zimmerma created at 2012-01-11 12:28:13
+archive/issue_comments_088923.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2012-01-11T12:28:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9362",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9362#issuecomment-88923",
+    "user": "zimmerma"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by brunellus created at 2012-01-31 14:04:25
+archive/issue_comments_088924.json:
+```json
+{
+    "body": "Changing status from positive_review to needs_work.",
+    "created_at": "2012-01-31T14:04:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9362",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9362#issuecomment-88924",
+    "user": "brunellus"
+}
+```
 
 Changing status from positive_review to needs_work.
 
 
+
 ---
 
-Comment by brunellus created at 2012-01-31 14:04:25
+archive/issue_comments_088925.json:
+```json
+{
+    "body": "I'm sorry -- the current version isn't compatible with changes in #11739. Would you be so kind to look at this one last time (hopefully)? :-)",
+    "created_at": "2012-01-31T14:04:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9362",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9362#issuecomment-88925",
+    "user": "brunellus"
+}
+```
 
 I'm sorry -- the current version isn't compatible with changes in #11739. Would you be so kind to look at this one last time (hopefully)? :-)
 
 
+
 ---
+
+archive/issue_comments_088926.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2012-01-31T14:04:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9362",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9362#issuecomment-88926",
+    "user": "brunellus"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by brunellus created at 2012-01-31 14:05:18
+archive/issue_comments_088927.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2012-01-31T14:05:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9362",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9362#issuecomment-88927",
+    "user": "brunellus"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by brunellus created at 2012-01-31 14:28:56
+archive/issue_comments_088928.json:
+```json
+{
+    "body": "(I just removed this part:\n\n\n```\n- self._nxg.add_nodes_from(vertices) \n+ for v in vertices: \n+     self.add_vertex(v) \n```\n\n\n. #11739 takes care what happens there.)",
+    "created_at": "2012-01-31T14:28:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9362",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9362#issuecomment-88928",
+    "user": "brunellus"
+}
+```
 
 (I just removed this part:
 
@@ -221,16 +437,38 @@ Comment by brunellus created at 2012-01-31 14:28:56
 . #11739 takes care what happens there.)
 
 
+
 ---
 
-Comment by zimmerma created at 2012-02-02 07:23:32
+archive/issue_comments_088929.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2012-02-02T07:23:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9362",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9362#issuecomment-88929",
+    "user": "zimmerma"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by zimmerma created at 2012-02-02 07:23:32
+archive/issue_comments_088930.json:
+```json
+{
+    "body": "positive review, all doctests still pass with Sage 4.8 (except a timeout in\n`sandpiles/sandpile.py` which already happened before this patch).\n\nPaul",
+    "created_at": "2012-02-02T07:23:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9362",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9362#issuecomment-88930",
+    "user": "zimmerma"
+}
+```
 
 positive review, all doctests still pass with Sage 4.8 (except a timeout in
 `sandpiles/sandpile.py` which already happened before this patch).
@@ -238,8 +476,19 @@ positive review, all doctests still pass with Sage 4.8 (except a timeout in
 Paul
 
 
+
 ---
 
-Comment by jdemeyer created at 2012-02-22 10:44:08
+archive/issue_comments_088931.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2012-02-22T10:44:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9362",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9362#issuecomment-88931",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 4795: Modular forms over finite fields need work
 
-Issue created by migration from https://trac.sagemath.org/ticket/4795
-
-Original creator: craigcitro
-
-Original creation time: 2008-12-14 07:55:10
-
+archive/issues_004795.json:
+```json
+{
+    "body": "Assignee: craigcitro\n\nThe modular forms code hasn't really been tested too much with the base ring being a finite field. There was an old file `sage/modular/modform/bugs.py` which contained two tests, both of which fail.\n\nFirst, we have what seems to be an infinite loop:\n\n```\n sage: m = ModularForms(DirichletGroup(8).1,2,GF(7)); m\n   Modular Forms space of dimension 2, character [1, -1] and weight 2 over Finite Field of size 7\n   sage: m.basis()   # this just goes into infinite loop (???)\n```\n\n\nAnd now for a `NotImplementedError` -- the following **should** work but doesn't:\n\n```\n   sage: ModularForms(DirichletGroup(13, GF(7)).0^6,3).base_ring()\n   Finite Field of size 7\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4795\n\n",
+    "created_at": "2008-12-14T07:55:10Z",
+    "labels": [
+        "modular forms",
+        "major",
+        "bug"
+    ],
+    "title": "Modular forms over finite fields need work",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4795",
+    "user": "craigcitro"
+}
+```
 Assignee: craigcitro
 
 The modular forms code hasn't really been tested too much with the base ring being a finite field. There was an old file `sage/modular/modform/bugs.py` which contained two tests, both of which fail.
@@ -19,7 +29,7 @@ First, we have what seems to be an infinite loop:
 ```
 
 
-And now for a `NotImplementedError` -- the following *should* work but doesn't:
+And now for a `NotImplementedError` -- the following **should** work but doesn't:
 
 ```
    sage: ModularForms(DirichletGroup(13, GF(7)).0^6,3).base_ring()
@@ -28,10 +38,25 @@ And now for a `NotImplementedError` -- the following *should* work but doesn't:
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4795
+
+
+
+
 
 ---
 
-Comment by AlexGhitza created at 2009-01-23 19:47:39
+archive/issue_comments_036353.json:
+```json
+{
+    "body": "Tracking the first problem:\n\n\n```\nsage: m = ModularForms(DirichletGroup(8).1, 2, GF(7))\nsage: bas = m.free_module().basis(); bas\n[\n(1, 0, 0, 0, 0),\n(0, 1, 0, 0, 0),\n(0, 0, 1, 0, 0),\n(0, 0, 0, 1, 0),\n(0, 0, 0, 0, 1)\n]\nsage: m(bas[0])   # infinite loop and bug warning\n```\n\n\nNote that this seems to be specific to using Dirichlet characters over finite fields, since the following works:\n\n\n```\nsage: m = ModularForms(8, 2, GF(7))\nsage: m.basis()\n[\n1 + 3*q^4 + O(q^6),\nq + 4*q^3 + 6*q^5 + O(q^6),\nq^2 + O(q^6)\n]\n```\n",
+    "created_at": "2009-01-23T19:47:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4795",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4795#issuecomment-36353",
+    "user": "AlexGhitza"
+}
+```
 
 Tracking the first problem:
 
@@ -65,9 +90,20 @@ q^2 + O(q^6)
 
 
 
+
 ---
 
-Comment by AlexGhitza created at 2013-07-22 11:26:26
+archive/issue_comments_036354.json:
+```json
+{
+    "body": "Under 5.10, there's a coercion issue at the very beginning:\n\n\n```\nsage: m = ModularForms(DirichletGroup(8).1, 2, GF(7))\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n<ipython-input-3-a5d6a0e5413b> in <module>()\n----> 1 m = ModularForms(DirichletGroup(Integer(8)).gen(1), Integer(2), GF(Integer(7)))\n\n/opt/sage/local/lib/python2.7/site-packages/sage/modular/modform/constructor.pyc in ModularForms(group, weight, base_ring, use_cache, prec)\n    343         M = ambient_eps.ModularFormsAmbient_eps(eps, weight)\n    344         if base_ring != eps.base_ring():\n--> 345             M = M.base_extend(base_ring) # ambient_R.ModularFormsAmbient_R(M, base_ring)\n    346 \n    347     if M is None:\n\n/opt/sage/local/lib/python2.7/site-packages/sage/modular/modform/space.pyc in base_extend(self, base_ring)\n    430         \"\"\"\n    431         if not base_ring.has_coerce_map_from(self.base_ring()):\n--> 432             raise ValueError, \"No coercion defined\"\n    433         else:\n    434             return self.change_ring(base_ring)\n\nValueError: No coercion defined\n```\n",
+    "created_at": "2013-07-22T11:26:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4795",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4795#issuecomment-36354",
+    "user": "AlexGhitza"
+}
+```
 
 Under 5.10, there's a coercion issue at the very beginning:
 
@@ -98,9 +134,20 @@ ValueError: No coercion defined
 
 
 
+
 ---
 
-Comment by AlexGhitza created at 2013-07-22 11:40:25
+archive/issue_comments_036355.json:
+```json
+{
+    "body": "... and the obvious modification raises a NotImplementedError:\n\n\n```\nsage: m = ModularForms(DirichletGroup(8, GF(7)).1, 2, GF(7))\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n<ipython-input-12-a7072f0f67a6> in <module>()\n----> 1 m = ModularForms(DirichletGroup(Integer(8), GF(Integer(7))).gen(1), Integer(2), GF(Integer(7)))\n\n/opt/sage/local/lib/python2.7/site-packages/sage/modular/modform/constructor.pyc in ModularForms(group, weight, base_ring, use_cache, prec)\n    335             # Need to add a lift_to_char_0 function for characters,\n    336             # and need to still remember eps.\n--> 337             raise NotImplementedError, \"currently the character must be over a ring of characteristic 0.\"\n    338         eps = eps.minimize_base_ring()\n    339         if eps.is_trivial():\n\nNotImplementedError: currently the character must be over a ring of characteristic 0.\n```\n\n\nMaybe we should turn this into an enhancement ticket.",
+    "created_at": "2013-07-22T11:40:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4795",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4795#issuecomment-36355",
+    "user": "AlexGhitza"
+}
+```
 
 ... and the obvious modification raises a NotImplementedError:
 

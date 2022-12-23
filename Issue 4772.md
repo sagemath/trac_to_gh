@@ -1,11 +1,21 @@
 # Issue 4772: make determinants of matrices over GF(2) way faster
 
-Issue created by migration from https://trac.sagemath.org/ticket/4772
-
-Original creator: was
-
-Original creation time: 2008-12-12 19:26:24
-
+archive/issues_004772.json:
+```json
+{
+    "body": "Assignee: was\n\nThis is sad:\n\n```\nwas@sage:~/build/sage-3.2.2.alpha0$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: w = random_matrix(GF(2),100)\nsage: time w.determinant()\nCPU times: user 0.18 s, sys: 0.00 s, total: 0.18 s\nWall time: 0.19 s\n0\nsage: w = random_matrix(GF(3),100)\nsage: time w.determinant()\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\n0\n```\n\n| Sage Version 3.2.2.alpha1, Release Date: 2008-12-10                |\n| Type notebook() for the GUI, and license() for information.        |\nThe fix - just compute the rank of the matrix, and if it is less than the nrows, then det is 0.  Otherwise det is 1.  Easy.  Right now, stupid generic code is being used. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4772\n\n",
+    "created_at": "2008-12-12T19:26:24Z",
+    "labels": [
+        "linear algebra",
+        "major",
+        "enhancement"
+    ],
+    "title": "make determinants of matrices over GF(2) way faster",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4772",
+    "user": "was"
+}
+```
 Assignee: was
 
 This is sad:
@@ -30,10 +40,25 @@ Wall time: 0.00 s
 | Type notebook() for the GUI, and license() for information.        |
 The fix - just compute the rank of the matrix, and if it is less than the nrows, then det is 0.  Otherwise det is 1.  Easy.  Right now, stupid generic code is being used. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4772
+
+
+
+
 
 ---
 
-Comment by was created at 2008-12-12 19:40:46
+archive/issue_comments_036144.json:
+```json
+{
+    "body": "BEFORE:\n\n```\nsage: w = random_matrix(GF(2),1000)\nsage: time w.determinant()\nCPU times: user 174.27 s, sys: 0.01 s, total: 174.29 s\nWall time: 174.30 s\n0\n```\n\n\nAFTER:\n\n```\nsage: w = random_matrix(GF(2),1000)\nsage: timeit('w._clear_cache(); w.determinant()')\n125 loops, best of 3: 5.48 ms per loop\n```\n\n\nFor a speedup of a factor of a factor of over THIRTY THOUSAND (!):\n\n```\nsage: 174/(5.48*10^(-3))\n31751.8248175182\n```\n",
+    "created_at": "2008-12-12T19:40:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4772",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4772#issuecomment-36144",
+    "user": "was"
+}
+```
 
 BEFORE:
 
@@ -64,22 +89,57 @@ sage: 174/(5.48*10^(-3))
 
 
 
+
 ---
+
+archive/issue_comments_036145.json:
+```json
+{
+    "body": "Attachment\n\nVery nice speedup!  Positive review.  Doctests pass in the file.",
+    "created_at": "2008-12-12T21:20:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4772",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4772#issuecomment-36145",
+    "user": "jason"
+}
+```
 
 Attachment
 
 Very nice speedup!  Positive review.  Doctests pass in the file.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-13 09:07:36
+archive/issue_comments_036146.json:
+```json
+{
+    "body": "Merged in Sage 3.2.2.alpha2",
+    "created_at": "2008-12-13T09:07:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4772",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4772#issuecomment-36146",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.2.2.alpha2
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-13 09:07:36
+archive/issue_comments_036147.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-12-13T09:07:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4772",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4772#issuecomment-36147",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

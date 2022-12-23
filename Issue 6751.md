@@ -1,31 +1,82 @@
 # Issue 6751: implement ternary quadratic forms associated to orders in rational quaternion algebras
 
-Issue created by migration from https://trac.sagemath.org/ticket/6751
-
-Original creator: was
-
-Original creation time: 2009-08-15 01:18:30
-
+archive/issues_006751.json:
+```json
+{
+    "body": "Assignee: tbd\n\nThis patch could possibly depend on #6745.\n\nThe goal of this patch is to implement computation of the ternary quadratic form associated to an order in a rational quaternion algebra.  These are useful, e.g, in computing with Heegner points, in decided whether quaternion orders have embeddings from orders in quadratic imaginary fields, and in computing elements of the Kohnen + subspace of modular forms of weight 3/2. \n\nIssue created by migration from https://trac.sagemath.org/ticket/6751\n\n",
+    "created_at": "2009-08-15T01:18:30Z",
+    "labels": [
+        "algebra",
+        "major",
+        "enhancement"
+    ],
+    "title": "implement ternary quadratic forms associated to orders in rational quaternion algebras",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6751",
+    "user": "was"
+}
+```
 Assignee: tbd
 
 This patch could possibly depend on #6745.
 
 The goal of this patch is to implement computation of the ternary quadratic form associated to an order in a rational quaternion algebra.  These are useful, e.g, in computing with Heegner points, in decided whether quaternion orders have embeddings from orders in quadratic imaginary fields, and in computing elements of the Kohnen + subspace of modular forms of weight 3/2. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6751
+
+
+
+
 
 ---
+
+archive/issue_comments_055593.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-08-15T01:42:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6751",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6751#issuecomment-55593",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by cremona created at 2009-08-23 16:07:51
+archive/issue_comments_055594.json:
+```json
+{
+    "body": "Apply after previous",
+    "created_at": "2009-08-23T16:07:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6751",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6751#issuecomment-55594",
+    "user": "cremona"
+}
+```
 
 Apply after previous
 
 
+
 ---
+
+archive/issue_comments_055595.json:
+```json
+{
+    "body": "Attachment\n\nLooks good to me:  applies fine to 4.1.1, tests pass, some examples I tried looked correct (as does the code).\n\nThere's one small typo (\"had\" for \"has\" in the docstring) which I put into a second patch (overkill perhaps!)",
+    "created_at": "2009-08-23T16:08:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6751",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6751#issuecomment-55595",
+    "user": "cremona"
+}
+```
 
 Attachment
 
@@ -34,9 +85,20 @@ Looks good to me:  applies fine to 4.1.1, tests pass, some examples I tried look
 There's one small typo ("had" for "has" in the docstring) which I put into a second patch (overkill perhaps!)
 
 
+
 ---
 
-Comment by mvngu created at 2009-08-30 09:29:13
+archive/issue_comments_055596.json:
+```json
+{
+    "body": "Merged both patches. The patch `trac_6751.patch` applies OK, but with fuzz:\n\n```\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6751/trac_6751.patch && hg qpush\nadding trac_6751.patch to series file\napplying trac_6751.patch\npatching file sage/algebras/quatalg/quaternion_algebra_element.pyx\nHunk #1 succeeded at 537 with fuzz 2 (offset -76 lines).\nNow at: trac_6751.patch\n```\n",
+    "created_at": "2009-08-30T09:29:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6751",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6751#issuecomment-55596",
+    "user": "mvngu"
+}
+```
 
 Merged both patches. The patch `trac_6751.patch` applies OK, but with fuzz:
 
@@ -51,15 +113,37 @@ Now at: trac_6751.patch
 
 
 
+
 ---
 
-Comment by mvngu created at 2009-08-30 09:29:13
+archive/issue_comments_055597.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-08-30T09:29:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6751",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6751#issuecomment-55597",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mvngu created at 2009-08-30 09:55:33
+archive/issue_comments_055598.json:
+```json
+{
+    "body": "See #6846 for a follow up to this ticket.",
+    "created_at": "2009-08-30T09:55:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6751",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6751#issuecomment-55598",
+    "user": "mvngu"
+}
+```
 
 See #6846 for a follow up to this ticket.

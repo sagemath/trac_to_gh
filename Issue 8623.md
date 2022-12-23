@@ -1,21 +1,46 @@
 # Issue 8623: User interface to lcalc library
 
-Issue created by migration from https://trac.sagemath.org/ticket/8623
-
-Original creator: rishi
-
-Original creation time: 2010-03-29 12:54:49
-
+archive/issues_008623.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  bober cremona craigcitro was robertwb ylchapuy\n\nI am attaching a patch which gives a user interface to lcalc library wrapper. Please give me feedback. Right now only Elliptic Curve L functions are implemented.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8623\n\n",
+    "created_at": "2010-03-29T12:54:49Z",
+    "labels": [
+        "number theory",
+        "major",
+        "enhancement"
+    ],
+    "title": "User interface to lcalc library",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8623",
+    "user": "rishi"
+}
+```
 Assignee: was
 
 CC:  bober cremona craigcitro was robertwb ylchapuy
 
 I am attaching a patch which gives a user interface to lcalc library wrapper. Please give me feedback. Right now only Elliptic Curve L functions are implemented.
 
+Issue created by migration from https://trac.sagemath.org/ticket/8623
+
+
+
+
 
 ---
 
-Comment by rishi created at 2010-03-29 13:05:21
+archive/issue_comments_078169.json:
+```json
+{
+    "body": "This is an example of user interface for lcalc library. This interface does not assume that the center is half.  This is not finished, but I would like some feedback on the design decisions.\n\nBelow is how to use it\n\n```\nsage: E=EllipticCurve([1,-1,1,-1,-14])\nsage: L=E.lfunction()\nsage: L\nL Function of  Elliptic Curve defined by y^2 + x*y + y = x^3 - x^2 - x - 14 over Rational Field\nsage: L.value(1)\n0.386769938387780\nsage: L(1)\n0.386769938387780\nsage: L.find_zeros_and_verify(4)\n[4.74199315541376, 7.81910395523807, 8.69568671187028, 10.7173409988911]\nsage: L.hardy_z_function(1+2*I)\n1.26747446769888 + 1.11832648738039e-16*I\nsage: L.hardy_z_function(1+3*I)\n1.92712584463710 + 8.78500291880843e-16*I\nsage: L.hardy_z_function(1+4*I)\n1.53230410077723 + 1.82991418837085e-15*I\nsage: L.center()\n1\nsage: L.analytic_rank()\n0\n```\n",
+    "created_at": "2010-03-29T13:05:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8623",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8623#issuecomment-78169",
+    "user": "rishi"
+}
+```
 
 This is an example of user interface for lcalc library. This interface does not assume that the center is half.  This is not finished, but I would like some feedback on the design decisions.
 
@@ -46,13 +71,37 @@ sage: L.analytic_rank()
 
 
 
+
 ---
+
+archive/issue_comments_078170.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-03-29T13:14:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8623",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8623#issuecomment-78170",
+    "user": "rishi"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by chapoton created at 2014-03-06 10:51:31
+archive/issue_comments_078171.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"lcalc\".",
+    "created_at": "2014-03-06T10:51:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8623",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8623#issuecomment-78171",
+    "user": "chapoton"
+}
+```
 
 Changing keywords from "" to "lcalc".

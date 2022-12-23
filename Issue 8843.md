@@ -1,68 +1,172 @@
 # Issue 8843: fix c_lib on Cygwin
 
-Issue created by migration from https://trac.sagemath.org/ticket/8843
-
-Original creator: mhansen
-
-Original creation time: 2010-05-03 04:50:09
-
+archive/issues_008843.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  wstein\n\nCygwin can't load shared libraries via symlinks.  Therefore, we have to actually copy libcsage.so/csage.dll over to $SAGE_LOCAL/lib/.  Note that currently the \"install\" target in SConstruct does nothing.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8843\n\n",
+    "created_at": "2010-05-03T04:50:09Z",
+    "labels": [
+        "porting: Cygwin",
+        "major",
+        "bug"
+    ],
+    "title": "fix c_lib on Cygwin",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8843",
+    "user": "mhansen"
+}
+```
 Assignee: tbd
 
 CC:  wstein
 
 Cygwin can't load shared libraries via symlinks.  Therefore, we have to actually copy libcsage.so/csage.dll over to $SAGE_LOCAL/lib/.  Note that currently the "install" target in SConstruct does nothing.
 
+Issue created by migration from https://trac.sagemath.org/ticket/8843
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2010-05-03 13:26:00
+archive/issue_comments_081292.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-05-03T13:26:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8843",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8843#issuecomment-81292",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by was created at 2010-05-25 06:43:06
+archive/issue_comments_081293.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-05-25T06:43:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8843",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8843#issuecomment-81293",
+    "user": "was"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by was created at 2010-05-25 06:43:06
+archive/issue_comments_081294.json:
+```json
+{
+    "body": "Unfortunately, after applying this, libcsage just doesn't build anymore.",
+    "created_at": "2010-05-25T06:43:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8843",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8843#issuecomment-81294",
+    "user": "was"
+}
+```
 
 Unfortunately, after applying this, libcsage just doesn't build anymore.
 
 
+
 ---
+
+archive/issue_comments_081295.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-05-25T18:21:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8843",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8843#issuecomment-81295",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2010-05-25 18:21:38
+archive/issue_comments_081296.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-05-25T18:21:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8843",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8843#issuecomment-81296",
+    "user": "mhansen"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by mhansen created at 2010-05-25 18:21:38
+archive/issue_comments_081297.json:
+```json
+{
+    "body": "I've posted a new patch which should work.",
+    "created_at": "2010-05-25T18:21:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8843",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8843#issuecomment-81297",
+    "user": "mhansen"
+}
+```
 
 I've posted a new patch which should work.
 
 
+
 ---
 
-Comment by was created at 2010-05-26 00:14:41
+archive/issue_comments_081298.json:
+```json
+{
+    "body": "Changing status from needs_review to needs_work.",
+    "created_at": "2010-05-26T00:14:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8843",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8843#issuecomment-81298",
+    "user": "was"
+}
+```
 
 Changing status from needs_review to needs_work.
 
 
+
 ---
 
-Comment by was created at 2010-05-26 00:14:41
+archive/issue_comments_081299.json:
+```json
+{
+    "body": "Doesn't work:\n\n\n```\nInstalling c_lib\ng++ -o libcsage.so -shared src/convert.os src/interrupt.os src/mpn_pylong.os src/mpz_pylong.os src/mpz_longlong.os src/stdsage.os src/gmp_globals.os src/ZZ_pylong.os src/ntl_wrap.os -L/mnt/usb1/scratch/wstein/build/release/4.4.3/sage-4.4.3.alpha0/local/lib -L/mnt/usb1/scratch/wstein/build/release/4.4.3/sage-4.4.3.alpha0/local/lib/python/config -lntl -lgmp -lpari -lpython2.6\n/usr/bin/ld: /mnt/usb1/scratch/wstein/build/release/4.4.3/sage-4.4.3.alpha0/local/lib/libpython2.6.a(exceptions.o): relocation R_X86_64_32 against `_Py_NoneStruct' can not be used when making a shared object; recompile with -fPIC\n/mnt/usb1/scratch/wstein/build/release/4.4.3/sage-4.4.3.alpha0/local/lib/libpython2.6.a: could not read symbols: Bad value\ncollect2: ld returned 1 exit status\nscons: *** [libcsage.so] Error 1\nERROR: There was an error building c_lib.\n```\n\n\nHowever, Mike says there is a Python spkg that may fix this...",
+    "created_at": "2010-05-26T00:14:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8843",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8843#issuecomment-81299",
+    "user": "was"
+}
+```
 
 Doesn't work:
 
@@ -81,8 +185,19 @@ ERROR: There was an error building c_lib.
 However, Mike says there is a Python spkg that may fix this...
 
 
+
 ---
 
-Comment by was created at 2010-05-26 01:00:10
+archive/issue_comments_081300.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-05-26T01:00:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8843",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8843#issuecomment-81300",
+    "user": "was"
+}
+```
 
 Resolution: fixed

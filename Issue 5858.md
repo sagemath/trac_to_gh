@@ -1,11 +1,21 @@
 # Issue 5858: Octave library linking problems
 
-Issue created by migration from https://trac.sagemath.org/ticket/5858
-
-Original creator: mhampton
-
-Original creation time: 2009-04-22 17:57:18
-
+archive/issues_005858.json:
+```json
+{
+    "body": "Assignee: was\n\nKeywords: octave, library linking\n\nEmail from sage-support describes the problem and Michael Abshoff's comments about what needs to be done:\n\nOn Apr 22, 12:46 am, Ajay Rawat <ajay.rawa...`@`gmail.com> wrote:\n\n> Well i tried the command\n> sage:octave_version()\n> sage:3.0.0\n> but when i tried octave_console\n> it replied...................\n\n> octave:\n> /usr/local/sage-3.2.3-Ubuntu8.04LTS-64bit-Intel-x86_64-Linux/local/lib/l\\\n> ibz.so.1: no version information available (required by\n> /usr/lib/octave-3.0.0/liboctinterp.so)\n\nThe problem is that the libz shipped by Sage and the one used by the\nsystem (and which was linked by Octave) do not play nicely together.\n\nTo work around this write a script called octave (I assume that is the\nname of the octave start script/binary\n\n#!/bin/sh\nLD_LIBRARY_PATH=SAGE_ORIG_LD_LIBRARY_PATH; export LD_LIBRARY_PATH\nexec octave \"$`@`\"\n\nI didn't try this, so you might need to adjust something.\n\nTo fix this once and for all in sage we should use native execute -\nwould someone open a ticket since I am about to go offline for the\nnight :)\n\nCheers,\n\nMichael \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5858\n\n",
+    "created_at": "2009-04-22T17:57:18Z",
+    "labels": [
+        "interfaces",
+        "major",
+        "bug"
+    ],
+    "title": "Octave library linking problems",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5858",
+    "user": "mhampton"
+}
+```
 Assignee: was
 
 Keywords: octave, library linking
@@ -46,42 +56,114 @@ Cheers,
 Michael 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5858
+
+
+
+
 
 ---
 
-Comment by jjh created at 2009-09-11 04:45:56
+archive/issue_comments_046286.json:
+```json
+{
+    "body": "Patch",
+    "created_at": "2009-09-11T04:45:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5858",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5858#issuecomment-46286",
+    "user": "jjh"
+}
+```
 
 Patch
 
 
+
 ---
+
+archive/issue_comments_046287.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-09-11T04:46:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5858",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5858#issuecomment-46287",
+    "user": "jjh"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by jjh created at 2009-09-11 04:47:31
+archive/issue_comments_046288.json:
+```json
+{
+    "body": "This seems to fix the problem. Octave passes all doctests on my machine.",
+    "created_at": "2009-09-11T04:47:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5858",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5858#issuecomment-46288",
+    "user": "jjh"
+}
+```
 
 This seems to fix the problem. Octave passes all doctests on my machine.
 
 
+
 ---
 
-Comment by jason created at 2009-09-15 04:26:13
+archive/issue_comments_046289.json:
+```json
+{
+    "body": "The fix looks right, applies to my tree, and -optional doctests pass.",
+    "created_at": "2009-09-15T04:26:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5858",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5858#issuecomment-46289",
+    "user": "jason"
+}
+```
 
 The fix looks right, applies to my tree, and -optional doctests pass.
 
 
+
 ---
 
-Comment by jason created at 2009-09-15 04:26:33
+archive/issue_comments_046290.json:
+```json
+{
+    "body": "(-optional on octave.py, that is).",
+    "created_at": "2009-09-15T04:26:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5858",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5858#issuecomment-46290",
+    "user": "jason"
+}
+```
 
 (-optional on octave.py, that is).
 
 
+
 ---
 
-Comment by mvngu created at 2009-09-15 23:28:51
+archive/issue_comments_046291.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-09-15T23:28:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5858",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5858#issuecomment-46291",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

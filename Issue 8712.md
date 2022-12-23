@@ -1,47 +1,120 @@
 # Issue 8712: Use `optparse` in sage -merge for increased usability.
 
-Issue created by migration from https://trac.sagemath.org/ticket/8712
-
-Original creator: timdumol
-
-Original creation time: 2010-04-18 08:52:59
-
+archive/issues_008712.json:
+```json
+{
+    "body": "Assignee: GeorgSWeber\n\nUsing `optparse` will, at the very least, show a proper usage message, which displays all the options.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8712\n\n",
+    "created_at": "2010-04-18T08:52:59Z",
+    "labels": [
+        "build",
+        "major",
+        "enhancement"
+    ],
+    "title": "Use `optparse` in sage -merge for increased usability.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8712",
+    "user": "timdumol"
+}
+```
 Assignee: GeorgSWeber
 
 Using `optparse` will, at the very least, show a proper usage message, which displays all the options.
 
+Issue created by migration from https://trac.sagemath.org/ticket/8712
+
+
+
+
 
 ---
 
-Comment by timdumol created at 2010-04-18 12:15:42
+archive/issue_comments_079491.json:
+```json
+{
+    "body": "Makes sage-apply-ticket use `optparse` instead of `getopt`.",
+    "created_at": "2010-04-18T12:15:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8712",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8712#issuecomment-79491",
+    "user": "timdumol"
+}
+```
 
 Makes sage-apply-ticket use `optparse` instead of `getopt`.
 
 
+
 ---
 
-Comment by timdumol created at 2010-04-18 12:16:53
+archive/issue_comments_079492.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-04-18T12:16:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8712",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8712#issuecomment-79492",
+    "user": "timdumol"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
+
+archive/issue_comments_079493.json:
+```json
+{
+    "body": "Attachment\n\nThis patch makes `sage-apply-ticket` use `optparse` instead of `getopt`, making things more robust, and adding a help/usage message, which displays all options and normal usage cases.",
+    "created_at": "2010-04-18T12:16:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8712",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8712#issuecomment-79493",
+    "user": "timdumol"
+}
+```
 
 Attachment
 
 This patch makes `sage-apply-ticket` use `optparse` instead of `getopt`, making things more robust, and adding a help/usage message, which displays all options and normal usage cases.
 
 
+
 ---
+
+archive/issue_comments_079494.json:
+```json
+{
+    "body": "Attachment\n\nFixes at typo. Apply this patch only.",
+    "created_at": "2010-04-18T12:48:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8712",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8712#issuecomment-79494",
+    "user": "timdumol"
+}
+```
 
 Attachment
 
 Fixes at typo. Apply this patch only.
 
 
+
 ---
 
-Comment by timdumol created at 2010-04-18 13:00:29
+archive/issue_comments_079495.json:
+```json
+{
+    "body": "The help message reads:\n\n\n```\nUsage: sage -merge [options] [ticket-number]\n\nTries to automate the process of merging tickets in release management.\nSee http://wiki.sagemath.org/devel/ReleaseManagement for more info.\n\nExample usage:\n\nsage -merge -c or sage -merge --candidates\n\n    * List all candidates for merging, i.e. all trac tickets with positive review. \n\nsage -merge <ticket_number> <options>\n\n    * Download patches from trac for the given ticket number, merge them, run tests, and report the results. \n\nsage -merge -a <options> or sage -merge --all <options>\n\n    * For each ticket on trac with a positive review, download the patches, apply them, and run doctests. At the end, report which tickets passed, which failed, and which didn't have any files to doctest (as is commonly the case with tickets for new spkg's). \n\n\nOptions:\n  -h, --help            show this help message and exit\n  -a, --all             For each ticket on trac with a positive review,\n                        download, apply, and test each. At the end, report\n                        which pass, fail, and have no files to doctest\n  -c, --candidates      List all candidates for merging, i.e., all trac\n                        tickets with positive review\n  -v, --verbose         Display the results of each test\n  -n NUM_THREADS, --num-threads=NUM_THREADS\n                        Number of threads to work with\n  -r REPOSITORY, --repository=REPOSITORY\n                        Which repository to apply to. Choices: ['bin',\n                        'extcode', 'sage', 'examples', 'scripts', 'main']\n  -t TEST, --test=TEST  What things to doctest. Choices: ['none', 'files',\n                        'directory', 'long'] or any prefix of a choice.\n  -o, --overwrite       Whether to overwrite files when downloading.\n  -d DIRECTORY, --directory=DIRECTORY\n                        Directory to store patches in.\n\n  Behavior:\n    Behavior after merging. Default is to pop after merging\n\n    -l, --leave-in-queue\n                        Leaves the patches in mercurial queue. Conflicts with\n                        --finish.\n    -f, --finish        Performs qfinish, commiting the patches. Conflicts\n                        with --leave-in-queue.\n```\n",
+    "created_at": "2010-04-18T13:00:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8712",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8712#issuecomment-79495",
+    "user": "timdumol"
+}
+```
 
 The help message reads:
 
@@ -98,44 +171,112 @@ Options:
 
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-06-22 05:07:09
+archive/issue_comments_079496.json:
+```json
+{
+    "body": "Looks pretty good. I found two small bugs (num_threads wasn't being passed correctly at one point, and the download directory wasn't dealt with right), and I think that the default values (e.g., the number of threads) should be in the help message.  I also think we can add a little statement saying that doctests were skipped if that is the case.  I'm attaching a reviewer patch implementing all of this.  If you're happy with it, I'm happy with the rest, so it can get a positive review.",
+    "created_at": "2010-06-22T05:07:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8712",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8712#issuecomment-79496",
+    "user": "jhpalmieri"
+}
+```
 
 Looks pretty good. I found two small bugs (num_threads wasn't being passed correctly at one point, and the download directory wasn't dealt with right), and I think that the default values (e.g., the number of threads) should be in the help message.  I also think we can add a little statement saying that doctests were skipped if that is the case.  I'm attaching a reviewer patch implementing all of this.  If you're happy with it, I'm happy with the rest, so it can get a positive review.
 
 
+
 ---
+
+archive/issue_comments_079497.json:
+```json
+{
+    "body": "Attachment\n\napply on top of trac_8712-sage-merge-optparse.2.patch",
+    "created_at": "2010-06-22T05:07:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8712",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8712#issuecomment-79497",
+    "user": "jhpalmieri"
+}
+```
 
 Attachment
 
 apply on top of trac_8712-sage-merge-optparse.2.patch
 
 
+
 ---
 
-Comment by timdumol created at 2010-06-23 08:24:46
+archive/issue_comments_079498.json:
+```json
+{
+    "body": "Nice catches! I'm fine with your changes.",
+    "created_at": "2010-06-23T08:24:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8712",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8712#issuecomment-79498",
+    "user": "timdumol"
+}
+```
 
 Nice catches! I'm fine with your changes.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2010-06-23 15:12:47
+archive/issue_comments_079499.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-06-23T15:12:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8712",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8712#issuecomment-79499",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by rlm created at 2010-06-25 15:41:33
+archive/issue_comments_079500.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-06-25T15:41:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8712",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8712#issuecomment-79500",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by rlm created at 2010-06-25 15:41:33
+archive/issue_comments_079501.json:
+```json
+{
+    "body": "Merged:\n\n    trac_8712-sage-merge-optparse.2.patch\n    trac_8712-reviewer.patch",
+    "created_at": "2010-06-25T15:41:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8712",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8712#issuecomment-79501",
+    "user": "rlm"
+}
+```
 
 Merged:
 

@@ -1,11 +1,21 @@
 # Issue 4825: extract worksheets embedded in pdf files
 
-Issue created by migration from https://trac.sagemath.org/ticket/4825
-
-Original creator: jason
-
-Original creation time: 2008-12-18 09:08:05
-
+archive/issues_004825.json:
+```json
+{
+    "body": "Assignee: boothby\n\nCC:  ddrake\n\nThis is an ongoing discussion on sage-devel right now.\n\nBasically, we'd like to embed an sws file in a pdf and then be able to upload the pdf file to the notebook and have the notebook automatically extract the sws file and create the worksheet.\n\nWe can use pdfminer to extract the data.  Here's a sample program which extracts the first embedded file in a pdf named 'foo.pdf'.\n\n\n```\nfrom pdflib.pdfparser import PDFDocument, PDFParser\nimport sys\nstdout = sys.stdout\n\ndoc = PDFDocument()\nfp = file('foo.pdf', 'rb')\nparser = PDFParser(doc, fp)\ndoc.initialize()\n\nfor xref in doc.xrefs:\n    for objid in xref.objids():\n        try:\n            obj = doc.getobj(objid)\n        except:\n            continue\n        if isinstance(obj,dict) and 'Type' in obj and obj['Type'].name == \"Annot\":\n            if 'Subtype' in obj and obj['Subtype'].name == \"FileAttachment\":\n                # We have an attached file!\n                filespec = obj['FS']\n                # Look for embedded file; we could try to extract the\n                # filename too (and make sure it's an sws file). but that is platform dependent.  See page\n                # 182 (Section 3.10.2) of\n                # http://www.adobe.com/devnet/acrobat/pdfs/pdf_reference_1-7.pdf.\n                if 'EF' in filespec:\n                    fileobj = filespec['EF']['F']\n                    embeddedspec = filespec['EF']\n                    stdout.write(fileobj.resolve().get_data())\n                    # Just output the first file found.\n                    exit()\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4825\n\n",
+    "created_at": "2008-12-18T09:08:05Z",
+    "labels": [
+        "notebook",
+        "major",
+        "bug"
+    ],
+    "title": "extract worksheets embedded in pdf files",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4825",
+    "user": "jason"
+}
+```
 Assignee: boothby
 
 CC:  ddrake
@@ -50,10 +60,25 @@ for xref in doc.xrefs:
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4825
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-12-19 11:36:22
+archive/issue_comments_036582.json:
+```json
+{
+    "body": "3.3 is foremost about the ReST transition, so all tickets should be opened against 3.4.\n\nCheers,\n\nMichael",
+    "created_at": "2008-12-19T11:36:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4825",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4825#issuecomment-36582",
+    "user": "mabshoff"
+}
+```
 
 3.3 is foremost about the ReST transition, so all tickets should be opened against 3.4.
 
@@ -62,57 +87,145 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-01-23 02:51:39
+archive/issue_comments_036583.json:
+```json
+{
+    "body": "Changing type from defect to enhancement.",
+    "created_at": "2009-01-23T02:51:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4825",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4825#issuecomment-36583",
+    "user": "AlexGhitza"
+}
+```
 
 Changing type from defect to enhancement.
 
 
+
 ---
 
-Comment by jason created at 2009-12-09 15:10:35
+archive/issue_comments_036584.json:
+```json
+{
+    "body": "pdfminer is about 350Kb of code.",
+    "created_at": "2009-12-09T15:10:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4825",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4825#issuecomment-36584",
+    "user": "jason"
+}
+```
 
 pdfminer is about 350Kb of code.
 
 
+
 ---
 
-Comment by kcrisman created at 2014-09-18 02:29:04
+archive/issue_comments_036585.json:
+```json
+{
+    "body": "I feel like maybe this is possible now?",
+    "created_at": "2014-09-18T02:29:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4825",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4825#issuecomment-36585",
+    "user": "kcrisman"
+}
+```
 
 I feel like maybe this is possible now?
 
 
+
 ---
 
-Comment by boothby created at 2020-03-29 02:08:23
+archive/issue_comments_036586.json:
+```json
+{
+    "body": "Unsure if this should be closed, as it could conceivably be useful for historical purposes.  Thoughts?",
+    "created_at": "2020-03-29T02:08:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4825",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4825#issuecomment-36586",
+    "user": "boothby"
+}
+```
 
 Unsure if this should be closed, as it could conceivably be useful for historical purposes.  Thoughts?
 
 
+
 ---
 
-Comment by dimpase created at 2020-08-25 09:29:41
+archive/issue_comments_036587.json:
+```json
+{
+    "body": "sagenb is gone, so...",
+    "created_at": "2020-08-25T09:29:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4825",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4825#issuecomment-36587",
+    "user": "dimpase"
+}
+```
 
 sagenb is gone, so...
 
 
+
 ---
 
-Comment by dimpase created at 2020-08-25 09:29:41
+archive/issue_comments_036588.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2020-08-25T09:29:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4825",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4825#issuecomment-36588",
+    "user": "dimpase"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by dimpase created at 2020-08-25 09:29:59
+archive/issue_comments_036589.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2020-08-25T09:29:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4825",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4825#issuecomment-36589",
+    "user": "dimpase"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by chapoton created at 2020-08-29 15:28:09
+archive/issue_comments_036590.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2020-08-29T15:28:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4825",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4825#issuecomment-36590",
+    "user": "chapoton"
+}
+```
 
 Resolution: invalid

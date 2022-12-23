@@ -1,11 +1,21 @@
 # Issue 2920: gcc 4.3: fix rubiks.spkg build
 
-Issue created by migration from https://trac.sagemath.org/ticket/2920
-
-Original creator: mabshoff
-
-Original creation time: 2008-04-14 21:09:43
-
+archive/issues_002920.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nThe Dietz solver does not build with gcc 4.3. The attached patch fixes this. The updated spkg is at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0/alpha5/rubiks-20070912.p5.spkg\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2920\n\n",
+    "created_at": "2008-04-14T21:09:43Z",
+    "labels": [
+        "packages: standard",
+        "major",
+        "bug"
+    ],
+    "title": "gcc 4.3: fix rubiks.spkg build",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2920",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 The Dietz solver does not build with gcc 4.3. The attached patch fixes this. The updated spkg is at
@@ -16,37 +26,98 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/2920
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-04-14 21:10:02
+archive/issue_comments_020105.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-04-14T21:10:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2920",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2920#issuecomment-20105",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
+
+archive/issue_comments_020106.json:
+```json
+{
+    "body": "Attachment\n\ncleaned up patch",
+    "created_at": "2008-04-14T22:30:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2920",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2920#issuecomment-20106",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 cleaned up patch
 
 
+
 ---
 
-Comment by wjp created at 2008-04-14 22:35:32
+archive/issue_comments_020107.json:
+```json
+{
+    "body": "Looks good and builds ok.",
+    "created_at": "2008-04-14T22:35:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2920",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2920#issuecomment-20107",
+    "user": "wjp"
+}
+```
 
 Looks good and builds ok.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-14 22:36:15
+archive/issue_comments_020108.json:
+```json
+{
+    "body": "Merged in Sage 3.0.alpha5",
+    "created_at": "2008-04-14T22:36:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2920",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2920#issuecomment-20108",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.alpha5
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-14 22:36:15
+archive/issue_comments_020109.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-04-14T22:36:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2920",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2920#issuecomment-20109",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

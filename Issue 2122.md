@@ -1,18 +1,43 @@
 # Issue 2122: move libecm wrapper from interfaces to libs
 
-Issue created by migration from https://trac.sagemath.org/ticket/2122
-
-Original creator: robertwb
-
-Original creation time: 2008-02-09 01:33:00
-
+archive/issues_002122.json:
+```json
+{
+    "body": "Assignee: was\n\n...yeah...\n\nIssue created by migration from https://trac.sagemath.org/ticket/2122\n\n",
+    "created_at": "2008-02-09T01:33:00Z",
+    "labels": [
+        "interfaces",
+        "major",
+        "bug"
+    ],
+    "title": "move libecm wrapper from interfaces to libs",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2122",
+    "user": "robertwb"
+}
+```
 Assignee: was
 
 ...yeah...
 
+Issue created by migration from https://trac.sagemath.org/ticket/2122
+
+
+
+
 
 ---
 
-Comment by robertwb created at 2008-02-09 01:33:42
+archive/issue_comments_013928.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2008-02-09T01:33:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2122",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2122#issuecomment-13928",
+    "user": "robertwb"
+}
+```
 
 Resolution: duplicate

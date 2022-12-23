@@ -1,11 +1,21 @@
 # Issue 7458: [with patch, needs review] Sylvester matrix for polynomials
 
-Issue created by migration from https://trac.sagemath.org/ticket/7458
-
-Original creator: carlohamalainen
-
-Original creation time: 2009-11-14 13:00:01
-
+archive/issues_007458.json:
+```json
+{
+    "body": "Assignee: malb\n\nSmall patch to add Sylvester matrix calculation for univariate and multivariate polynomials.\n\nI think that my patch is a bit more general (and has doctests) compared to didier deshommes' patch here, which seems to have never been merged:\n\nhttp://sage.math.washington.edu/home/dfdeshom/custom/patches/sylveste...\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7458\n\n",
+    "created_at": "2009-11-14T13:00:01Z",
+    "labels": [
+        "commutative algebra",
+        "minor",
+        "enhancement"
+    ],
+    "title": "[with patch, needs review] Sylvester matrix for polynomials",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7458",
+    "user": "carlohamalainen"
+}
+```
 Assignee: malb
 
 Small patch to add Sylvester matrix calculation for univariate and multivariate polynomials.
@@ -15,20 +25,61 @@ I think that my patch is a bit more general (and has doctests) compared to didie
 http://sage.math.washington.edu/home/dfdeshom/custom/patches/sylveste...
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7458
+
+
+
+
 
 ---
+
+archive/issue_comments_062820.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-11-06T11:47:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7458",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7458#issuecomment-62820",
+    "user": "lftabera"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by lftabera created at 2010-11-06 12:06:38
+archive/issue_comments_062821.json:
+```json
+{
+    "body": "Changing status from new to needs_work.",
+    "created_at": "2010-11-06T12:06:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7458",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7458#issuecomment-62821",
+    "user": "lftabera"
+}
+```
 
 Changing status from new to needs_work.
 
 
+
 ---
+
+archive/issue_comments_062822.json:
+```json
+{
+    "body": "Attachment\n\nThis is a very basic feature that has to be in Sage.\n\nI have rebased Carlo patch to 4.6  but have not touched the code.\n\nI have some concerns that makes me mark the patch as needs work:\n\n- The univariate case should accept the same syntax as the multivariate case. In the univariate case, the preferred call is f.sylvester_matrix(g), but I do not want Sage to throw an error if I wrote f.sylvester_matrix(g, x)\n\n- Corner cases must be well documented. \n\n\n```\nsage: K.<x>=QQ[]\nsage: K(1).sylvester_matrix(K(1))\n[]\n```\n\n\nIn particular, I am not sure how to deal with the sylvester matrix of 0 and constant or 0 and 0\nCurretly it throws an error. My opinion is that this is not defined but  should throw a more meaningful error.\n\nMaple for instance return the empty matrix. So in maple:\n\nDeterminant(Sylvester_Matrix)  != Resultant \n\nIn this corner cases.\n\nI will  try to check what other CAS do to get a wider picture.\n\n- An example explicitly relating Sylvester matrix and resultant should be added.",
+    "created_at": "2010-11-06T12:06:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7458",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7458#issuecomment-62822",
+    "user": "lftabera"
+}
+```
 
 Attachment
 
@@ -64,16 +115,38 @@ I will  try to check what other CAS do to get a wider picture.
 - An example explicitly relating Sylvester matrix and resultant should be added.
 
 
+
 ---
 
-Comment by lftabera created at 2010-11-06 12:06:38
+archive/issue_comments_062823.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"Sylvester matrix\".",
+    "created_at": "2010-11-06T12:06:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7458",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7458#issuecomment-62823",
+    "user": "lftabera"
+}
+```
 
 Changing keywords from "" to "Sylvester matrix".
 
 
+
 ---
 
-Comment by lftabera created at 2010-11-06 17:30:59
+archive/issue_comments_062824.json:
+```json
+{
+    "body": "- I have added more documentation and doctest.\n\n- The variable argument is now optional in both univariate and multivariate. If it is not used, the first variable of the polynomial ring is used.\n\n- I have added coercion to be able to compute the Sylvester matrix of polynomials in different rings, for ex. ZZ[x] and QQ[x] \n\n- solved an issue for the dimension of the matrix of the sylvester matrix of (x**n, 0)\n\nIt is not ready for review because the sylvester matrix of (0,0) is not implemented.",
+    "created_at": "2010-11-06T17:30:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7458",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7458#issuecomment-62824",
+    "user": "lftabera"
+}
+```
 
 - I have added more documentation and doctest.
 
@@ -86,43 +159,111 @@ Comment by lftabera created at 2010-11-06 17:30:59
 It is not ready for review because the sylvester matrix of (0,0) is not implemented.
 
 
+
 ---
 
-Comment by lftabera created at 2010-11-12 13:36:54
+archive/issue_comments_062825.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2010-11-12T13:36:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7458",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7458#issuecomment-62825",
+    "user": "lftabera"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
+
+archive/issue_comments_062826.json:
+```json
+{
+    "body": "Attachment\n\nFinally, if one of the polynomials is zero, the code raises a ValueError.",
+    "created_at": "2010-11-12T13:36:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7458",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7458#issuecomment-62826",
+    "user": "lftabera"
+}
+```
 
 Attachment
 
 Finally, if one of the polynomials is zero, the code raises a ValueError.
 
 
+
 ---
 
-Comment by lftabera created at 2010-12-04 12:51:46
+archive/issue_comments_062827.json:
+```json
+{
+    "body": "Apply trac-7458-sylvester-rebase-4.6.patch, trac-7458-sylvester-improvements.patch",
+    "created_at": "2010-12-04T12:51:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7458",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7458#issuecomment-62827",
+    "user": "lftabera"
+}
+```
 
 Apply trac-7458-sylvester-rebase-4.6.patch, trac-7458-sylvester-improvements.patch
 
 
+
 ---
 
-Comment by davidloeffler created at 2010-12-16 11:38:48
+archive/issue_comments_062828.json:
+```json
+{
+    "body": "Very nice. I am impressed with the thoroughness of the testing of corner cases here. All doctests in sage/rings pass, and the reference manual builds OK.",
+    "created_at": "2010-12-16T11:38:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7458",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7458#issuecomment-62828",
+    "user": "davidloeffler"
+}
+```
 
 Very nice. I am impressed with the thoroughness of the testing of corner cases here. All doctests in sage/rings pass, and the reference manual builds OK.
 
 
+
 ---
 
-Comment by davidloeffler created at 2010-12-16 11:38:48
+archive/issue_comments_062829.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-12-16T11:38:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7458",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7458#issuecomment-62829",
+    "user": "davidloeffler"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2011-01-26 22:26:11
+archive/issue_comments_062830.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2011-01-26T22:26:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7458",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7458#issuecomment-62830",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: fixed

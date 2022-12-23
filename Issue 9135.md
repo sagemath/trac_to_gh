@@ -1,11 +1,21 @@
 # Issue 9135: sage-4.4.3.alpha3: os x ppc 10.4 -- error building pynac
 
-Issue created by migration from https://trac.sagemath.org/ticket/9135
-
-Original creator: was
-
-Original creation time: 2010-06-03 19:57:34
-
+archive/issues_009135.json:
+```json
+{
+    "body": "Assignee: GeorgSWeber\n\n\n```\n/bin/sh ../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I.. -I/home/wstein/screen/varro/sage-4.4.3.alpha3/local/include/p\nython2.6 -fPIC    -g -O2 -MT utils.lo -MD -MP -MF .deps/utils.Tpo -c -o utils.lo utils.cpp\nlibtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/home/wstein/screen/varro/sage-4.4.3.alpha3/local/include/python2.6 -fPIC -g -O2 -MT u\ntils.lo -MD -MP -MF .deps/utils.Tpo -c utils.cpp  -fno-common -DPIC -o .libs/utils.o\nmv -f .deps/utils.Tpo .deps/utils.Plo\n/bin/sh ../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I.. -I/home/wstein/screen/varro/sage-4.4.3.alpha3/local/include/p\nython2.6 -fPIC    -g -O2 -MT wildcard.lo -MD -MP -MF .deps/wildcard.Tpo -c -o wildcard.lo wildcard.cpp\nlibtool: compile:  g++ -DHAVE_CONFIG_H -I. -I.. -I/home/wstein/screen/varro/sage-4.4.3.alpha3/local/include/python2.6 -fPIC -g -O2 -MT wildcard.lo -MD -MP -MF .deps/wildcard.Tpo -c wildcard.cpp  -fno-common -DPIC -o .libs/wildcard.o\nmv -f .deps/wildcard.Tpo .deps/wildcard.Plo\n/bin/sh ../libtool --tag=CXX   --mode=link g++  -g -O2 -version-info 0:0:0 -release 0.2 -no-undefined  -o libpynac.la -rpath /home/wstei\nn/screen/varro/sage-4.4.3.alpha3/local/lib py_funcs.lo add.lo archive.lo basic.lo clifford.lo color.lo constant.lo ex.lo expair.lo expai\nrseq.lo exprseq.lo fail.lo fderivative.lo function.lo idx.lo indexed.lo inifcns.lo inifcns_trans.lo inifcns_gamma.lo inifcns_nstdsums.lo\n integral.lo lst.lo matrix.lo mul.lo ncmul.lo normal.lo numeric.lo operators.lo power.lo registrar.lo relational.lo remember.lo pseries.\nlo print.lo symbol.lo symmetry.lo tensor.lo utils.lo wildcard.lo -L/home/wstein/screen/varro/sage-4.4.3.alpha3/local/lib/python2.6/confi\ng -lpython2.6  \nlibtool: link: g++ -dynamiclib  -o .libs/libpynac-0.2.0.dylib  .libs/py_funcs.o .libs/add.o .libs/archive.o .libs/basic.o .libs/clifford.o .libs/color.o .libs/constant.o .libs/ex.o .libs/expair.o .libs/expairseq.o .libs/exprseq.o .libs/fail.o .libs/fderivative.o .libs/function.o .libs/idx.o .libs/indexed.o .libs/inifcns.o .libs/inifcns_trans.o .libs/inifcns_gamma.o .libs/inifcns_nstdsums.o .libs/integral.o .libs/lst.o .libs/matrix.o .libs/mul.o .libs/ncmul.o .libs/normal.o .libs/numeric.o .libs/operators.o .libs/power.o .libs/registrar.o .libs/relational.o .libs/remember.o .libs/pseries.o .libs/print.o .libs/symbol.o .libs/symmetry.o .libs/tensor.o .libs/utils.o .libs/wildcard.o   -L/home/wstein/screen/varro/sage-4.4.3.alpha3/local/lib/python2.6/config -lpython2.6 -ldl    -install_name  /home/wstein/screen/varro/sage-4.4.3.alpha3/local/lib/libpynac-0.2.0.dylib -compatibility_version 1 -current_version 1.0 -Wl,-single_module\nld: Undefined symbols:\n_environ\n/usr/libexec/gcc/powerpc-apple-darwin8/4.0.1/libtool: internal link edit command failed\nmake[4]: *** [libpynac.la] Error 1\nmake[3]: *** [all-recursive] Error 1\nmake[2]: *** [all] Error 2   \nError building pynac.\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9135\n\n",
+    "created_at": "2010-06-03T19:57:34Z",
+    "labels": [
+        "build",
+        "blocker",
+        "bug"
+    ],
+    "title": "sage-4.4.3.alpha3: os x ppc 10.4 -- error building pynac",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9135",
+    "user": "was"
+}
+```
 Assignee: GeorgSWeber
 
 
@@ -37,10 +47,25 @@ Error building pynac.
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/9135
+
+
+
+
 
 ---
 
-Comment by GeorgSWeber created at 2010-06-04 08:40:22
+archive/issue_comments_085133.json:
+```json
+{
+    "body": "The problem occurs on Intel Mac OS X 10.4, too. Probably also on Mac OS X 10.5. If it doesn't occur on Mac OS 10.6, then Apple finally has heard the complaints from 2003:\n    http://lists.apple.com/archives/Darwin-development/2003/Apr/msg00177.html\n(see the following posts there).\n\nThe solution for Sage was/is for many other spkgs under OS X not to use\n\n```\n... -no-undefined  -o libpynac.la ...\n```\n\nas seen in the above log snippet, but\n\n```\n... -undefined dynamic_lookup  -o libpynac.la...\n```\n\ninstead for building. (Or else we would need to declare conditionally this variable \"environ\", as explained e.g. in\n   http://www.mail-archive.com/bug-gnulib`@`gnu.org/msg09272.html\nbut this would be a more intrusive change to the upstream src).",
+    "created_at": "2010-06-04T08:40:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9135#issuecomment-85133",
+    "user": "GeorgSWeber"
+}
+```
 
 The problem occurs on Intel Mac OS X 10.4, too. Probably also on Mac OS X 10.5. If it doesn't occur on Mac OS 10.6, then Apple finally has heard the complaints from 2003:
     http://lists.apple.com/archives/Darwin-development/2003/Apr/msg00177.html
@@ -63,9 +88,20 @@ instead for building. (Or else we would need to declare conditionally this varia
 but this would be a more intrusive change to the upstream src).
 
 
+
 ---
 
-Comment by was created at 2010-06-04 14:23:23
+archive/issue_comments_085134.json:
+```json
+{
+    "body": "> Probably also on Mac OS X 10.5.\n\nNo, Sage builds fine and passes all tests on 10.5:\n\n```\n\nsage -t  -long \"devel/sage/sage/tests/startup.py\"\n         [2.4 s]\n\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 11236.4 seconds\n\nD-69-91-148-23:~ wstein$ uname -a\nDarwin D-69-91-148-23.dhcp4.washington.edu 9.8.0 Darwin Kernel Version 9.8.0: Wed Jul 15 16:55:01 PDT 2009; root:xnu-1228.15.4~1/RELEASE_I386 i386\n\n```\n",
+    "created_at": "2010-06-04T14:23:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9135#issuecomment-85134",
+    "user": "was"
+}
+```
 
 > Probably also on Mac OS X 10.5.
 
@@ -87,9 +123,20 @@ Darwin D-69-91-148-23.dhcp4.washington.edu 9.8.0 Darwin Kernel Version 9.8.0: We
 
 
 
+
 ---
 
-Comment by was created at 2010-06-04 14:51:57
+archive/issue_comments_085135.json:
+```json
+{
+    "body": "This change was caused by Mike Hansens changeset 154, which was part of getting pynac to work with Cygwin:\n\n```\n\nvarro:~/screen/varro/sage-4.4.3.alpha3/spkg/standard/pynac-0.2.0.p3/src/ginac wstein$ ../../../../../sage -hg history Makefile.am \nchangeset:   154:f92b57e5f035\nuser:        Mike Hansen <mhansen@gmail.com>\ndate:        Thu May 06 05:44:44 2010 +0200\nsummary:     Add Python related autoconf macros.\n\nvarro:~/screen/varro/sage-4.4.3.alpha3/spkg/standard/pynac-0.2.0.p3/src/ginac wstein$ -undefined dynamic_lookup  -sh\n-bash: -undefined: command not found\nvarro:~/screen/varro/sage-4.4.3.alpha3/spkg/standard/pynac-0.2.0.p3/src/ginac wstein$ ../../../../../sage -sh\n\nStarting subshell with Sage environment variables set.\nBe sure to exit when you are done and do not do anything\nwith other copies of Sage!\n\nBypassing shell configuration files ...\n\n/home/wstein/screen/varro/sage-4.4.3.alpha3/spkg/standard/pynac-0.2.0.p3/src/ginac\nsage subshell$ hg diff Makefile.am -r 153\ndiff -r ceb75efa62b7 ginac/Makefile.am\n--- a/ginac/Makefile.am Sat Mar 13 15:37:21 2010 -0800\n+++ b/ginac/Makefile.am Fri Jun 04 11:03:50 2010 -0400\n@@ -1,7 +1,8 @@\n ## Process this file with automake to produce Makefile.in\n \n+INCLUDES = $(PYTHON_INCLUDES) -fPIC\n lib_LTLIBRARIES = libpynac.la\n-libpynac_la_SOURCES = add.cpp archive.cpp basic.cpp clifford.cpp color.cpp \\\n+libpynac_la_SOURCES = py_funcs.cpp add.cpp archive.cpp basic.cpp clifford.cpp color.cpp \\\n   constant.cpp ex.cpp expair.cpp expairseq.cpp exprseq.cpp \\\n   fail.cpp fderivative.cpp function.cpp idx.cpp indexed.cpp inifcns.cpp \\\n   inifcns_trans.cpp inifcns_gamma.cpp inifcns_nstdsums.cpp \\\n@@ -10,9 +11,10 @@\n   pseries.cpp print.cpp symbol.cpp symmetry.cpp tensor.cpp \\\n   utils.cpp wildcard.cpp \\\n   remember.h tostring.h utils.h compiler.h\n-libpynac_la_LDFLAGS = -version-info $(LT_VERSION_INFO) -release $(LT_RELEASE)\n+libpynac_la_LDFLAGS = -version-info $(LT_VERSION_INFO) -release $(LT_RELEASE) -no-undefined\n+libpynac_la_LIBADD = $(PYTHON_LIBS)\n ginacincludedir = $(includedir)/pynac\n-ginacinclude_HEADERS = ginac.h add.h archive.h assertion.h basic.h class_info.h \\\n+ginacinclude_HEADERS = ginac.h py_funcs.h add.h archive.h assertion.h basic.h class_info.h \\\n   clifford.h color.h constant.h container.h ex.h expair.h expairseq.h \\\n   exprseq.h fail.h fderivative.h flags.h function.h hash_map.h idx.h indexed.h \\\n   inifcns.h integral.h lst.h matrix.h mul.h ncmul.h normal.h numeric.h operators.h \\\n/home/wstein/screen/varro/sage-4.4.3.alpha3/spkg/standard/pynac-0.2.0.p3/src/ginac\nsage subshell$  \n```\n",
+    "created_at": "2010-06-04T14:51:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9135#issuecomment-85135",
+    "user": "was"
+}
+```
 
 This change was caused by Mike Hansens changeset 154, which was part of getting pynac to work with Cygwin:
 
@@ -145,9 +192,20 @@ sage subshell$
 
 
 
+
 ---
 
-Comment by was created at 2010-06-04 15:14:25
+archive/issue_comments_085136.json:
+```json
+{
+    "body": "Here's a new spkg that reverts Mike's change:\n\n   http://sage.math.washington.edu/home/wstein/patches/pynac-0.2.0.p3.spkg\n\nand yes, I did autoreconf.",
+    "created_at": "2010-06-04T15:14:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9135#issuecomment-85136",
+    "user": "was"
+}
+```
 
 Here's a new spkg that reverts Mike's change:
 
@@ -156,16 +214,38 @@ Here's a new spkg that reverts Mike's change:
 and yes, I did autoreconf.
 
 
+
 ---
 
-Comment by was created at 2010-06-04 15:14:25
+archive/issue_comments_085137.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-06-04T15:14:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9135#issuecomment-85137",
+    "user": "was"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mhansen created at 2010-06-04 18:39:35
+archive/issue_comments_085138.json:
+```json
+{
+    "body": "Reverting that change will break things on Cygwin.  I've put a new spkg up at \n\nhttp://sage.math.washington.edu/home/mhansen/pynac-0.2.0.p3.spkg\n\nwhich only adds the -no-undefined on Cygwin.",
+    "created_at": "2010-06-04T18:39:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9135#issuecomment-85138",
+    "user": "mhansen"
+}
+```
 
 Reverting that change will break things on Cygwin.  I've put a new spkg up at 
 
@@ -174,23 +254,56 @@ http://sage.math.washington.edu/home/mhansen/pynac-0.2.0.p3.spkg
 which only adds the -no-undefined on Cygwin.
 
 
+
 ---
 
-Comment by mhansen created at 2010-06-04 18:40:56
+archive/issue_comments_085139.json:
+```json
+{
+    "body": "I've tested this on Linux and Cygwin and am testing on t2 now.",
+    "created_at": "2010-06-04T18:40:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9135#issuecomment-85139",
+    "user": "mhansen"
+}
+```
 
 I've tested this on Linux and Cygwin and am testing on t2 now.
 
 
+
 ---
 
-Comment by GeorgSWeber created at 2010-06-04 19:07:39
+archive/issue_comments_085140.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-06-04T19:07:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9135#issuecomment-85140",
+    "user": "GeorgSWeber"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by GeorgSWeber created at 2010-06-04 19:07:39
+archive/issue_comments_085141.json:
+```json
+{
+    "body": "Again, you guys are faster than me ... the SPKG.txt is not checked in in the hg repo, under src/ there are superfluous tilde-files (aclocal.m4~ and config.h.in~) and there is the superfluous \"autom4te.cache\" directory new in this spkg (compared to e.g. the pynac-0.1.12 spkg).\n\nBut I give to\n    http://sage.math.washington.edu/home/mhansen/pynac-0.2.0.p3.spkg\na positive review neverthess. (I just had uploaded myself a pynac spkg where only the \"-no-undefined\" is removed unconditionally, but maybe this is a must-have for Cygwin, so the solution by Mike is better than mine).\n\nAh, before I forget to mention it: this \"p3\" spkg by Mike builds on MacIntel OS X 10.4, but I neither did a complete Sage build / test yet, nor tried it on PPC. From a comparison of the build outputs of the older pynac 0.1.12 spkg, all can be expected to be fine, however.",
+    "created_at": "2010-06-04T19:07:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9135#issuecomment-85141",
+    "user": "GeorgSWeber"
+}
+```
 
 Again, you guys are faster than me ... the SPKG.txt is not checked in in the hg repo, under src/ there are superfluous tilde-files (aclocal.m4~ and config.h.in~) and there is the superfluous "autom4te.cache" directory new in this spkg (compared to e.g. the pynac-0.1.12 spkg).
 
@@ -201,22 +314,44 @@ a positive review neverthess. (I just had uploaded myself a pynac spkg where onl
 Ah, before I forget to mention it: this "p3" spkg by Mike builds on MacIntel OS X 10.4, but I neither did a complete Sage build / test yet, nor tried it on PPC. From a comparison of the build outputs of the older pynac 0.1.12 spkg, all can be expected to be fine, however.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-06-04 20:25:37
+archive/issue_comments_085142.json:
+```json
+{
+    "body": "Replying to [comment:7 GeorgSWeber]:\n> Again, you guys are faster than me ... the SPKG.txt is not checked in in the hg repo, under src/ there are superfluous tilde-files (aclocal.m4~ and config.h.in~) and there is the superfluous \"autom4te.cache\" directory new in this spkg (compared to e.g. the pynac-0.1.12 spkg).\n\nI've often wondered if autom4te.cache is superfluous or not. I have purposly copied that. If you look in the directory, there is usually 4 files. At the top of **one** of them (I forget which), it says it may be safely removed. There is no such comment at the top of the other 3 files. Note the directory is created by autoconf - not when runs the configure script. Hence for safety, I've tended to copy it under the assumption it can't do any harm, the size is small, and there is nothing there to indicate it is safe to remove it. \n\nI will ask on the autoconf list about this some time. \n\nDave",
+    "created_at": "2010-06-04T20:25:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9135#issuecomment-85142",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:7 GeorgSWeber]:
 > Again, you guys are faster than me ... the SPKG.txt is not checked in in the hg repo, under src/ there are superfluous tilde-files (aclocal.m4~ and config.h.in~) and there is the superfluous "autom4te.cache" directory new in this spkg (compared to e.g. the pynac-0.1.12 spkg).
 
-I've often wondered if autom4te.cache is superfluous or not. I have purposly copied that. If you look in the directory, there is usually 4 files. At the top of *one* of them (I forget which), it says it may be safely removed. There is no such comment at the top of the other 3 files. Note the directory is created by autoconf - not when runs the configure script. Hence for safety, I've tended to copy it under the assumption it can't do any harm, the size is small, and there is nothing there to indicate it is safe to remove it. 
+I've often wondered if autom4te.cache is superfluous or not. I have purposly copied that. If you look in the directory, there is usually 4 files. At the top of **one** of them (I forget which), it says it may be safely removed. There is no such comment at the top of the other 3 files. Note the directory is created by autoconf - not when runs the configure script. Hence for safety, I've tended to copy it under the assumption it can't do any harm, the size is small, and there is nothing there to indicate it is safe to remove it. 
 
 I will ask on the autoconf list about this some time. 
 
 Dave
 
 
+
 ---
 
-Comment by was created at 2010-06-05 00:38:59
+archive/issue_comments_085143.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-06-05T00:38:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9135",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9135#issuecomment-85143",
+    "user": "was"
+}
+```
 
 Resolution: fixed

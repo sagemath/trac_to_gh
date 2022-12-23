@@ -1,11 +1,21 @@
 # Issue 6960: silly inconsistency in pari versus magma interface
 
-Issue created by migration from https://trac.sagemath.org/ticket/6960
-
-Original creator: was
-
-Original creation time: 2009-09-19 06:13:32
-
+archive/issues_006960.json:
+```json
+{
+    "body": "Assignee: was\n\n\n```\nsage: a = pari('393')\nsage: a.python()\n393\nsage: a = magma('393')\nsage: a.sage()\n393     \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6960\n\n",
+    "created_at": "2009-09-19T06:13:32Z",
+    "labels": [
+        "interfaces",
+        "minor",
+        "bug"
+    ],
+    "title": "silly inconsistency in pari versus magma interface",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/6960",
+    "user": "was"
+}
+```
 Assignee: was
 
 
@@ -19,28 +29,78 @@ sage: a.sage()
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/6960
+
+
+
+
 
 ---
+
+archive/issue_comments_057571.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-01-18T13:26:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6960",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6960#issuecomment-57571",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2010-01-19 06:36:02
+archive/issue_comments_057572.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-01-19T06:36:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6960",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6960#issuecomment-57572",
+    "user": "was"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by rlm created at 2010-01-19 06:49:49
+archive/issue_comments_057573.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-01-19T06:49:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6960",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6960#issuecomment-57573",
+    "user": "rlm"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by rlm created at 2010-01-19 06:50:00
+archive/issue_comments_057574.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-19T06:50:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/6960",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/6960#issuecomment-57574",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed

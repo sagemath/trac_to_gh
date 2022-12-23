@@ -1,11 +1,21 @@
 # Issue 5192: Improve factor documentation
 
-Issue created by migration from https://trac.sagemath.org/ticket/5192
-
-Original creator: kcrisman
-
-Original creation time: 2009-02-06 01:17:59
-
+archive/issues_005192.json:
+```json
+{
+    "body": "Assignee: tbd\n\nIntegers which result from symbolic expressions live in the symbolic ring, so they are not factored by factor().  E.g.\n\n```\nsage: f(n)=n^2+n+41\nsage: a=f(40)\nsage: factor(a),is_prime(a),a\n(1681, False, 1681)\nsage: factor(1681)\n41^2\n```\n\nBut this is not obvious from the documentation of factor(), which only refers to e.g. a.factor? as the source of this.  Some example like this should be added to the documentation of the global factor().\n\nIssue created by migration from https://trac.sagemath.org/ticket/5192\n\n",
+    "created_at": "2009-02-06T01:17:59Z",
+    "labels": [
+        "algebra",
+        "minor",
+        "enhancement"
+    ],
+    "title": "Improve factor documentation",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5192",
+    "user": "kcrisman"
+}
+```
 Assignee: tbd
 
 Integers which result from symbolic expressions live in the symbolic ring, so they are not factored by factor().  E.g.
@@ -21,24 +31,63 @@ sage: factor(1681)
 
 But this is not obvious from the documentation of factor(), which only refers to e.g. a.factor? as the source of this.  Some example like this should be added to the documentation of the global factor().
 
+Issue created by migration from https://trac.sagemath.org/ticket/5192
+
+
+
+
 
 ---
+
+archive/issue_comments_039804.json:
+```json
+{
+    "body": "Attachment\n\nBased on 3.3.alpha5",
+    "created_at": "2009-02-06T17:28:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5192",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5192#issuecomment-39804",
+    "user": "kcrisman"
+}
+```
 
 Attachment
 
 Based on 3.3.alpha5
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-07 00:55:57
+archive/issue_comments_039805.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-02-07T00:55:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5192",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5192#issuecomment-39805",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-07 00:55:57
+archive/issue_comments_039806.json:
+```json
+{
+    "body": "Merged in Sage 3.3.alpha6.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-07T00:55:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5192",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5192#issuecomment-39806",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.3.alpha6.
 

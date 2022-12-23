@@ -1,11 +1,21 @@
 # Issue 7081: sage -c "..." runs from the local/bin/ directory.  ugh
 
-Issue created by migration from https://trac.sagemath.org/ticket/7081
-
-Original creator: was
-
-Original creation time: 2009-09-30 09:10:31
-
+archive/issues_007081.json:
+```json
+{
+    "body": "Assignee: cwitty\n\nThis is not good:\n\n\n```\nflat:sagenb wstein$ pwd\n/Users/wstein/sage/nb/sagenb\nflat:sagenb wstein$ sage -c \"print os.path.abspath('.')\"\n/Users/wstein/sage/build/64bit/sage/local/bin\n```\n\n\nIt should be when one runs \"sage -c\" that it runs in the *current* directory.  The actual behavior is very confusing.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7081\n\n",
+    "created_at": "2009-09-30T09:10:31Z",
+    "labels": [
+        "misc",
+        "major",
+        "bug"
+    ],
+    "title": "sage -c \"...\" runs from the local/bin/ directory.  ugh",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7081",
+    "user": "was"
+}
+```
 Assignee: cwitty
 
 This is not good:
@@ -21,23 +31,62 @@ flat:sagenb wstein$ sage -c "print os.path.abspath('.')"
 
 It should be when one runs "sage -c" that it runs in the *current* directory.  The actual behavior is very confusing.
 
+Issue created by migration from https://trac.sagemath.org/ticket/7081
+
+
+
+
 
 ---
+
+archive/issue_comments_058542.json:
+```json
+{
+    "body": "Attachment\n\nApply to scripts repo.",
+    "created_at": "2009-09-30T09:16:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7081",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7081#issuecomment-58542",
+    "user": "timdumol"
+}
+```
 
 Attachment
 
 Apply to scripts repo.
 
 
+
 ---
 
-Comment by timdumol created at 2009-09-30 09:17:20
+archive/issue_comments_058543.json:
+```json
+{
+    "body": "Editing $SAGE_LOCAL/bin/sage-eval to os.chdir(os.getenv('CUR')) before evalutation fixes the problem.",
+    "created_at": "2009-09-30T09:17:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7081",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7081#issuecomment-58543",
+    "user": "timdumol"
+}
+```
 
 Editing $SAGE_LOCAL/bin/sage-eval to os.chdir(os.getenv('CUR')) before evalutation fixes the problem.
 
 
+
 ---
 
-Comment by mhansen created at 2009-10-15 08:57:16
+archive/issue_comments_058544.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-10-15T08:57:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7081",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7081#issuecomment-58544",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

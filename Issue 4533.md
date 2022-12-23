@@ -1,21 +1,46 @@
 # Issue 4533: divisors function slow for integers
 
-Issue created by migration from https://trac.sagemath.org/ticket/4533
-
-Original creator: robertwb
-
-Original creation time: 2008-11-16 08:21:30
-
+archive/issues_004533.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  craigcitro\n\nThere's *tons* of room for optimization for the divisors function in sage/rings/arith.py. This should probably be generalized to do more than integers, with a specialized divisors method on Integer. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4533\n\n",
+    "created_at": "2008-11-16T08:21:30Z",
+    "labels": [
+        "algebra",
+        "major",
+        "bug"
+    ],
+    "title": "divisors function slow for integers",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4533",
+    "user": "robertwb"
+}
+```
 Assignee: tbd
 
 CC:  craigcitro
 
 There's *tons* of room for optimization for the divisors function in sage/rings/arith.py. This should probably be generalized to do more than integers, with a specialized divisors method on Integer. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4533
+
+
+
+
 
 ---
 
-Comment by robertwb created at 2008-11-16 08:28:17
+archive/issue_comments_033762.json:
+```json
+{
+    "body": "A comparison\n\n\n```\nsage: n = odd_part(factorial(31))\nsage: time _ = divisors(n)\nCPU times: user 2.27 s, sys: 0.05 s, total: 2.32 s\nWall time: 2.33 s\nsage: nn = gp(n)\nsage: time _ = nn.divisors()\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.15 s\nsage: 2.33 / .15\n15.5333333333333\n```\n",
+    "created_at": "2008-11-16T08:28:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4533",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4533#issuecomment-33762",
+    "user": "robertwb"
+}
+```
 
 A comparison
 
@@ -35,16 +60,38 @@ sage: 2.33 / .15
 
 
 
+
 ---
 
-Comment by robertwb created at 2008-11-16 08:51:16
+archive/issue_comments_033763.json:
+```json
+{
+    "body": "A much simpler and faster algorithm. I'm sure there's a faster, balanced algorithm, but this is a huge improvement over what is there.",
+    "created_at": "2008-11-16T08:51:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4533",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4533#issuecomment-33763",
+    "user": "robertwb"
+}
+```
 
 A much simpler and faster algorithm. I'm sure there's a faster, balanced algorithm, but this is a huge improvement over what is there.
 
 
+
 ---
 
-Comment by robertwb created at 2008-11-16 09:27:13
+archive/issue_comments_033764.json:
+```json
+{
+    "body": "Note that this works for more than integers now too:\n\n\n```\nsage: K.<a> = QuadraticField(7)\nsage: divisors(K.ideal(7))\n[1, Fractional ideal (-a), Fractional ideal (7)]\nsage: divisors(K.ideal(3))\n[1, Fractional ideal (a - 2), Fractional ideal (-a - 2), Fractional ideal (3)]\nsage: divisors(K.ideal(35))\n[1, Fractional ideal (5), Fractional ideal (-a), Fractional ideal (-5*a), Fractional ideal (7), Fractional ideal (35)]\n```\n",
+    "created_at": "2008-11-16T09:27:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4533",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4533#issuecomment-33764",
+    "user": "robertwb"
+}
+```
 
 Note that this works for more than integers now too:
 
@@ -61,9 +108,20 @@ sage: divisors(K.ideal(35))
 
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-16 09:51:45
+archive/issue_comments_033765.json:
+```json
+{
+    "body": "Replying to [comment:3 robertwb]:\n> Note that this works for more than integers now too:\n\nShouldn't that example then be added to the docstrings, too? :)\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-16T09:51:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4533",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4533#issuecomment-33765",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:3 robertwb]:
 > Note that this works for more than integers now too:
@@ -75,16 +133,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by robertwb created at 2008-11-16 09:56:55
+archive/issue_comments_033766.json:
+```json
+{
+    "body": "Of course :). I've posted an updated patch.",
+    "created_at": "2008-11-16T09:56:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4533",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4533#issuecomment-33766",
+    "user": "robertwb"
+}
+```
 
 Of course :). I've posted an updated patch.
 
 
+
 ---
 
-Comment by was created at 2008-11-16 19:37:37
+archive/issue_comments_033767.json:
+```json
+{
+    "body": "1. The new code isn't much faster, but it is certainly better.  Here are some before and after speed comparisons (core2 2.6Ghz 32-bit osx)\n\nBefore:\n\n```\nsage: n = odd_part(factorial(31))\nsage: time _ = divisors(n)\nCPU times: user 1.66 s, sys: 0.03 s, total: 1.70 s\nWall time: 1.73 s\nsage: n = 928304029834092384082304982093480293849028349823948\nsage: time _ = divisors(n)\nCPU times: user 0.30 s, sys: 0.06 s, total: 0.35 s\nWall time: 0.46 s\nsage: n = 9283040298340\nsage: timeit('divisors(n)')\n125 loops, best of 3: 1.75 ms per loop\n```\n\n\n\nAfter:\n\n```\nsage: n = odd_part(factorial(31))\nsage: time _ = divisors(n)\nCPU times: user 0.90 s, sys: 0.06 s, total: 0.96 s\nWall time: 0.98 s\nsage: time a = gp(n).divisors()\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.21 s\nsage: n = 928304029834092384082304982093480293849028349823948\nsage: time _ = divisors(n)\nCPU times: user 0.31 s, sys: 0.06 s, total: 0.37 s\nWall time: 0.40 s\nsage: n = 9283040298340\nsage: timeit('divisors(n)')\n625 loops, best of 3: 341 \u00b5s per loop\n```\n\n\n2. It no longer works on int's, which is a serious problem (this used to work fine):\n\n\n```\nsage: divisors(int(5))\nTraceback (most recent call last):\n...\nAttributeError: 'int' object has no attribute 'parent'\n```\n\n\nThere should be a doctest about that.\n\nFor a positive review fix the code to work on int/long as input, and add a doctest about that.   Regarding speeding it up to be on par with pari, that should be another ticket that *must* be opened before closing this one.  Ideas regarding speed:\n\n* you can easily precompute the length of the output list as \n\n```\nprod(e+1 for _,e in f)\n```\n\n* If the input is an int < long long (or long), could do all arithmetic with\nmachine says data types, since you know a priori the biggest number that will appear.   This should be special cased.   \n* Interestingly, I changed two lines of the function so it uses Python int's instead of Sage MPFR ints everywhere and the function speeds up dramatically so it is almost as fast as pari:\n\n```\n    one = int(1)\n    all = [one]\n    for p, e in f:\n        p = int(p)\n\n...\n\nsage: time d = divisors(n)\nCPU times: user 0.23 s, sys: 0.02 s, total: 0.24 s\nWall time: 0.25 s\nsage: time w = [ZZ(a) for a in d]\nCPU times: user 0.24 s, sys: 0.01 s, total: 0.25 s\nWall time: 0.26 s\nsage: time w = gp(n).divisors()\nCPU times: user 0.00 s, sys: 0.01 s, total: 0.01 s\nWall time: 0.18 s\n```\n\n\nInterestingly, as you can see above, doing everything with python ints, then converting all the python ints back to sage ints, results in something that is *twice* as fast as your code on the same input. \n\n\n3. Other remarks: \n\n   * pari(n).divisors() gives an AttributeError, so I guess we never wrapped that. \n\n   * Why is odd_part(factorial(31)) a RATIONAL?  This seems really weird.\n\n```\nsage: n = odd_part(factorial(31))\nsage: type(n)\n<type 'sage.rings.rational.Rational'>\nsage: type(factorial(31))\n<type 'sage.rings.integer.Integer'>\n```\n",
+    "created_at": "2008-11-16T19:37:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4533",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4533#issuecomment-33767",
+    "user": "was"
+}
+```
 
 1. The new code isn't much faster, but it is certainly better.  Here are some before and after speed comparisons (core2 2.6Ghz 32-bit osx)
 
@@ -141,15 +221,15 @@ There should be a doctest about that.
 
 For a positive review fix the code to work on int/long as input, and add a doctest about that.   Regarding speeding it up to be on par with pari, that should be another ticket that *must* be opened before closing this one.  Ideas regarding speed:
 
-   * you can easily precompute the length of the output list as 
+* you can easily precompute the length of the output list as 
 
 ```
 prod(e+1 for _,e in f)
 ```
 
-   * If the input is an int < long long (or long), could do all arithmetic with
+* If the input is an int < long long (or long), could do all arithmetic with
 machine says data types, since you know a priori the biggest number that will appear.   This should be special cased.   
-   * Interestingly, I changed two lines of the function so it uses Python int's instead of Sage MPFR ints everywhere and the function speeds up dramatically so it is almost as fast as pari:
+* Interestingly, I changed two lines of the function so it uses Python int's instead of Sage MPFR ints everywhere and the function speeds up dramatically so it is almost as fast as pari:
 
 ```
     one = int(1)
@@ -176,9 +256,9 @@ Interestingly, as you can see above, doing everything with python ints, then con
 
 3. Other remarks: 
 
- * pari(n).divisors() gives an AttributeError, so I guess we never wrapped that. 
+   * pari(n).divisors() gives an AttributeError, so I guess we never wrapped that. 
 
- * Why is odd_part(factorial(31)) a RATIONAL?  This seems really weird.
+   * Why is odd_part(factorial(31)) a RATIONAL?  This seems really weird.
 
 ```
 sage: n = odd_part(factorial(31))
@@ -190,21 +270,43 @@ sage: type(factorial(31))
 
 
 
+
 ---
 
-Comment by cremona created at 2008-11-17 09:57:16
+archive/issue_comments_033768.json:
+```json
+{
+    "body": "The new code looks very like my C++ functions in eclib (there for the taking!) which include various other options such as \n* only poitive divisors vs. both signs\n* only divisors d such that `d^2|n`\nwhich I did once need, and so on.\n\nJust a comment.",
+    "created_at": "2008-11-17T09:57:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4533",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4533#issuecomment-33768",
+    "user": "cremona"
+}
+```
 
 The new code looks very like my C++ functions in eclib (there for the taking!) which include various other options such as 
-   * only poitive divisors vs. both signs
-   * only divisors d such that `d^2|n`
+* only poitive divisors vs. both signs
+* only divisors d such that `d^2|n`
 which I did once need, and so on.
 
 Just a comment.
 
 
+
 ---
 
-Comment by robertwb created at 2008-11-17 17:55:43
+archive/issue_comments_033769.json:
+```json
+{
+    "body": "I'll make those fixes, and write a special case for word-sized integers. It should be noted that *sorting* the output often takes the majority of the time\n\n\n```\nsage: sage: n = ZZ(odd_part(factorial(31)))\nsage: sage: time _ = divisors(n)\nCPU times: user 0.53 s, sys: 0.02 s, total: 0.54 s\nWall time: 0.55 s\nsage: sage: time _ = divisors(n, sorted=False)\nCPU times: user 0.15 s, sys: 0.02 s, total: 0.17 s\nWall time: 0.17 s\n\nsage: n = factorial(25)\nsage: time _ = divisors(n)\nCPU times: user 1.07 s, sys: 0.05 s, total: 1.12 s\nWall time: 1.12 s\nsage: time _ = divisors(n, sorted=False)\nCPU times: user 0.33 s, sys: 0.05 s, total: 0.38 s\nWall time: 0.38 s\n```\n\n\nOriginally I wasn't sorting the output, which was why I thought I was so much faster. (The original code sorted the output too, but it was slow enough that the sorting didn't dominate.)",
+    "created_at": "2008-11-17T17:55:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4533",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4533#issuecomment-33769",
+    "user": "robertwb"
+}
+```
 
 I'll make those fixes, and write a special case for word-sized integers. It should be noted that *sorting* the output often takes the majority of the time
 
@@ -231,9 +333,20 @@ Wall time: 0.38 s
 Originally I wasn't sorting the output, which was why I thought I was so much faster. (The original code sorted the output too, but it was slow enough that the sorting didn't dominate.)
 
 
+
 ---
 
-Comment by was created at 2008-11-18 06:29:55
+archive/issue_comments_033770.json:
+```json
+{
+    "body": "> It should be noted that *sorting* the output often takes the majority of the time \n\nThis is perhaps partly because sorting lists of GMP integers is slower than Python ints, i.e., it takes about twice as long to do a comparison:\n\n\n```\nsage: n = ZZ(odd_part(factorial(31)))\nsage: \nsage: m = divisors(n, sorted=False)\nsage: m2 = [int(j) for j in m]\nsage: time m.sort()\nCPU times: user 0.33 s, sys: 0.00 s, total: 0.34 s\nWall time: 0.34 s\nsage: time m2.sort()\nCPU times: user 0.16 s, sys: 0.00 s, total: 0.17 s\nWall time: 0.17 s\nsage: a = 349; b = 678\nsage: timeit('a < b')\n625 loops, best of 3: 389 ns per loop\nsage: a = int(349); b = int(678)\nsage: timeit('a < b')\n625 loops, best of 3: 213 ns per loop\n```\n\n\nIn the timeits at the bottom, probably 100ns is spent just looking up a and b in the globals...\n\nAnyway, some of the ints for the divisors of n above are beyond long long, so this word size discussion doesn't apply.  However, if we consider 25, notice that sorted\ntakes twice as long as computing the divisors:\n\n```\nsage: n = ZZ(odd_part(factorial(25)))\nsage: time m = divisors(n,sorted=False)\nCPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.01 s\nsage: v = [int(a) for a in m]\nsage: time v.sort()    # no better (see below).\nCPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.02 s\nsage: v = numpy.array(m).astype(numpy.int64)\nsage: time v.sort()\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\nsage: time m.sort()\nCPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.02 s\n```\n\n\nHowever, sorting using an numpy int64 array seems to be much faster than sorting a list of GMP ints.  So if we just use some straightforward sort on a Cython long long* we should get good results. \n\nUnrelated: I noticed that n.divisors(...) doesn't have a sorted option.  So maybe some code in integer.pyx should be slightly changed.",
+    "created_at": "2008-11-18T06:29:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4533",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4533#issuecomment-33770",
+    "user": "was"
+}
+```
 
 > It should be noted that *sorting* the output often takes the majority of the time 
 
@@ -289,41 +402,96 @@ However, sorting using an numpy int64 array seems to be much faster than sorting
 Unrelated: I noticed that n.divisors(...) doesn't have a sorted option.  So maybe some code in integer.pyx should be slightly changed.
 
 
+
 ---
 
-Comment by robertwb created at 2008-11-18 06:42:07
+archive/issue_comments_033771.json:
+```json
+{
+    "body": "Yep. I plan to specialize Integer.divisors() and attempt to call that in the top-level divisors function. It will have a much faster sort. \n\nI'm wondering though if the default should be sorted, or if one should use `sorted(divisors(n))` if one wants them in order.",
+    "created_at": "2008-11-18T06:42:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4533",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4533#issuecomment-33771",
+    "user": "robertwb"
+}
+```
 
 Yep. I plan to specialize Integer.divisors() and attempt to call that in the top-level divisors function. It will have a much faster sort. 
 
 I'm wondering though if the default should be sorted, or if one should use `sorted(divisors(n))` if one wants them in order.
 
 
+
 ---
 
-Comment by robertwb created at 2008-11-18 23:40:09
+archive/issue_comments_033772.json:
+```json
+{
+    "body": "OK, here's another patch that should resolve all of the above issues. One of the doctests depends on #4534 (odd_part returning an integer rather than a rational).",
+    "created_at": "2008-11-18T23:40:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4533",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4533#issuecomment-33772",
+    "user": "robertwb"
+}
+```
 
 OK, here's another patch that should resolve all of the above issues. One of the doctests depends on #4534 (odd_part returning an integer rather than a rational).
 
 
+
 ---
 
-Comment by robertwb created at 2008-11-20 13:04:51
+archive/issue_comments_033773.json:
+```json
+{
+    "body": "I updated the patch, now its faster than pari. \n\nThere is a dependancy on #4564 for long long -> mpz_t.",
+    "created_at": "2008-11-20T13:04:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4533",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4533#issuecomment-33773",
+    "user": "robertwb"
+}
+```
 
 I updated the patch, now its faster than pari. 
 
 There is a dependancy on #4564 for long long -> mpz_t.
 
 
+
 ---
 
-Comment by was created at 2008-11-20 17:40:37
+archive/issue_comments_033774.json:
+```json
+{
+    "body": "Is it \"faster than Magma\" too?    Could you do some timings?",
+    "created_at": "2008-11-20T17:40:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4533",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4533#issuecomment-33774",
+    "user": "was"
+}
+```
 
 Is it "faster than Magma" too?    Could you do some timings?
 
 
+
 ---
 
-Comment by robertwb created at 2008-11-20 20:26:20
+archive/issue_comments_033775.json:
+```json
+{
+    "body": "Surprisingly, magma isn't super good at this problem. All timings on sage.math\n\n\n```\nsage: n = factorial(20)\nsage: %timeit v = n.divisors()\n100 loops, best of 3: 15.6 ms per loop\n\nsage: pari_n = gp(n)\nsage: %timeit v = pari_n.divisors()\n10 loops, best of 3: 57.2 ms per loop\n\nsage: magma_n = magma(n)\nsage: %timeit v = magma_n.Divisors()\n10 loops, best of 3: 43.5 ms per loop\n\n\nsage: n = factorial(31) // 2^26\nsage: %timeit v = n.divisors()\n10 loops, best of 3: 145 ms per loop\n\nsage: pari_n = gp(n)\nsage: %timeit v = pari_n.divisors()\n10 loops, best of 3: 408 ms per loop\n\nsage: magma_n = magma(n)\nsage: %timeit v = magma_n.Divisors()\n10 loops, best of 3: 684 ms per loop\n```\n",
+    "created_at": "2008-11-20T20:26:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4533",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4533#issuecomment-33775",
+    "user": "robertwb"
+}
+```
 
 Surprisingly, magma isn't super good at this problem. All timings on sage.math
 
@@ -357,14 +525,38 @@ sage: %timeit v = magma_n.Divisors()
 
 
 
+
 ---
+
+archive/issue_comments_033776.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-11-20T23:54:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4533",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4533#issuecomment-33776",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-21 07:48:13
+archive/issue_comments_033777.json:
+```json
+{
+    "body": "Another oops:\n\n```\nsage -t -long devel/sage/sage/combinat/species/species.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/devel/sage-main/sage/combinat/species/species.py\", line 292:\n    sage: G.isotype_generating_series().coefficients(5)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_12[7]>\", line 1, in <module>\n        G.isotype_generating_series().coefficients(Integer(5))###line 292:\n    sage: G.isotype_generating_series().coefficients(5)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/local/lib/python2.5/site-packages/sage/combinat/species/series.py\", line 668, in coefficients\n        return [self.coefficient(i) for i in range(n)]\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/local/lib/python2.5/site-packages/sage/combinat/species/series.py\", line 830, in coefficient\n        return self._stream[n]\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/local/lib/python2.5/site-packages/sage/combinat/species/stream.py\", line 311, in __getitem__\n        self._list.append(self._gen.next())\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/local/lib/python2.5/site-packages/sage/combinat/species/generating_series.py\", line 428, in _ogs_gen\n        yield sum( self.coefficient(i).coefficients() )\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/local/lib/python2.5/site-packages/sage/combinat/species/series.py\", line 830, in coefficient\n        return self._stream[n]\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/local/lib/python2.5/site-packages/sage/combinat/species/stream.py\", line 311, in __getitem__\n        self._list.append(self._gen.next())\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/local/lib/python2.5/site-packages/sage/combinat/species/generating_series.py\", line 506, in _functorial_compose_gen\n        t = g._cycle_type(s)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/local/lib/python2.5/site-packages/sage/combinat/species/generating_series.py\", line 530, in _cycle_type\n        for d in divisors(k):\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/local/lib/python2.5/site-packages/sage/rings/arith.py\", line 924, in divisors\n        n = integer_ring.ZZ(n) # we have specalized code for this case, make sure it gets used\n    NameError: global name 'integer_ring' is not defined\n**********************************************************************\n```\n\nThe problem pops up in a lot of places.\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-21T07:48:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4533",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4533#issuecomment-33777",
+    "user": "mabshoff"
+}
+```
 
 Another oops:
 
@@ -413,9 +605,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-21 08:09:15
+archive/issue_comments_033778.json:
+```json
+{
+    "body": "\n```\n[11:56pm] craigcitro: mabshoff: there's an easy fix for the problem in #4533\n[11:56pm] craigcitro: it's a rebase issue\n[11:56pm] mabshoff_: mk\n[11:56pm] mabshoff_: if you can rebase the patch it would be cool.\n[11:56pm] craigcitro: integer_ring. occurs in the patch\n[11:56pm] craigcitro: just delete that.\n[11:56pm] mabshoff_: I didn't even look yet\n[11:56pm] mabshoff_: ?\n[11:56pm] mabshoff_: Let me see\n[11:56pm] craigcitro: it refers to\n[11:56pm] craigcitro: integer_ring.ZZ\n[11:57pm] craigcitro: it should just be ZZ\n[11:57pm] craigcitro: it's something i cleaned up when i did stuff to arith.py\n[11:57pm] craigcitro: but rob was using 3.1.4 when he wrote the patch\n[11:57pm] craigcitro: and it's hitting a case we didn't think to try once it was rebased, probably\n[11:57pm] mabshoff_: mk\n[11:58pm] craigcitro: actually, i also just spotted a minor issue in that file\n[11:58pm] craigcitro: where memory is only freed in one case ...\n[11:58pm] mabshoff_: ok:\n[11:58pm] mabshoff_: +    if R in [int, long]:\n[11:58pm] mabshoff_: +        n = ZZ(n) # we have specalized code for this case, make sure it gets used\n[11:58pm] mabshoff_: +    try:\n[11:58pm] craigcitro: yep\n[11:58pm] mabshoff_: Well, post a new patch and I will test it.\n[11:58pm] craigcitro: that should fix the problem you were hitting\n[11:59pm] craigcitro: it's just outdenting one line \n[11:59pm] craigcitro: the sage_free(ptr)\n[11:59pm] craigcitro: should be one level back\n[11:59pm] craigcitro: oh, wait\n[11:59pm] craigcitro: nevermind\n[11:59pm] craigcitro: he already takes care of it somewhere else in the code.\n[12:00am] craigcitro: so that's not an issue.\n[12:00am] mabshoff_: Arrg, I just deleted the edited patch \n[12:00am] craigcitro: doh\n[12:02am] mabshoff_: Well, I can fix it.\n```\n",
+    "created_at": "2008-11-21T08:09:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4533",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4533#issuecomment-33778",
+    "user": "mabshoff"
+}
+```
 
 
 ```
@@ -458,15 +661,37 @@ Comment by mabshoff created at 2008-11-21 08:09:15
 
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-21 08:47:47
+archive/issue_comments_033779.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-11-21T08:47:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4533",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4533#issuecomment-33779",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-21 08:47:47
+archive/issue_comments_033780.json:
+```json
+{
+    "body": "Merged the edited patch in Sage 3.2.1.alpha0",
+    "created_at": "2008-11-21T08:47:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4533",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4533#issuecomment-33780",
+    "user": "mabshoff"
+}
+```
 
 Merged the edited patch in Sage 3.2.1.alpha0

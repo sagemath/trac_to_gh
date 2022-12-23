@@ -1,11 +1,21 @@
 # Issue 4743: [with spkg; needs review] change genus2reduction to include GPL copyright file and email from liu making the program GPL'd
 
-Issue created by migration from https://trac.sagemath.org/ticket/4743
-
-Original creator: was
-
-Original creation time: 2008-12-08 21:11:57
-
+archive/issues_004743.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nThe new spkg is here:\n\n  http://sage.math.washington.edu/home/was/patches/genus2reduction-0.3.p4.spkg\n\nI am upstream for this program.  I modified the src/ subdirectory to include the GPL COPYING file, along with an email Liu sent me where he officially GPL'd genus2reduction. \n\nThis change was caused by a request from Karl Meyer who is packaging sage for Fedora. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4743\n\n",
+    "created_at": "2008-12-08T21:11:57Z",
+    "labels": [
+        "packages: standard",
+        "minor",
+        "enhancement"
+    ],
+    "title": "[with spkg; needs review] change genus2reduction to include GPL copyright file and email from liu making the program GPL'd",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4743",
+    "user": "was"
+}
+```
 Assignee: mabshoff
 
 The new spkg is here:
@@ -16,10 +26,25 @@ I am upstream for this program.  I modified the src/ subdirectory to include the
 
 This change was caused by a request from Karl Meyer who is packaging sage for Fedora. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/4743
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-12-10 06:36:53
+archive/issue_comments_035880.json:
+```json
+{
+    "body": "Looks good to me. One change that was missing was the addition of an SPKG.txt entry which I have added.\n\nCheers,\n\nMichael",
+    "created_at": "2008-12-10T06:36:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4743#issuecomment-35880",
+    "user": "mabshoff"
+}
+```
 
 Looks good to me. One change that was missing was the addition of an SPKG.txt entry which I have added.
 
@@ -28,15 +53,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-10 06:37:05
+archive/issue_comments_035881.json:
+```json
+{
+    "body": "Merged in Sage 3.2.2.alpha1",
+    "created_at": "2008-12-10T06:37:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4743#issuecomment-35881",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.2.2.alpha1
 
 
+
 ---
 
-Comment by mabshoff created at 2008-12-10 06:37:05
+archive/issue_comments_035882.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-12-10T06:37:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4743",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4743#issuecomment-35882",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

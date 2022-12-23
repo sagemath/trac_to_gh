@@ -1,19 +1,44 @@
 # Issue 2800: (trivial to fix): %lisp mode in the notebook doesn't work -- remove it from the menu at the top
 
+archive/issues_002800.json:
+```json
+{
+    "body": "Assignee: boothby\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2800\n\n",
+    "created_at": "2008-04-04T22:05:22Z",
+    "labels": [
+        "notebook",
+        "major",
+        "bug"
+    ],
+    "title": "(trivial to fix): %lisp mode in the notebook doesn't work -- remove it from the menu at the top",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2800",
+    "user": "was"
+}
+```
+Assignee: boothby
+
+
+
 Issue created by migration from https://trac.sagemath.org/ticket/2800
 
-Original creator: was
-
-Original creation time: 2008-04-04 22:05:22
-
-Assignee: boothby
 
 
 
 
 ---
 
-Comment by mabshoff created at 2008-04-04 22:08:10
+archive/issue_comments_019223.json:
+```json
+{
+    "body": "Shouldn't we fix it? Or what is the motivation here? Has it ever worked?\n\nCheers,\n\nMichael",
+    "created_at": "2008-04-04T22:08:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2800",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2800#issuecomment-19223",
+    "user": "mabshoff"
+}
+```
 
 Shouldn't we fix it? Or what is the motivation here? Has it ever worked?
 
@@ -22,9 +47,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-08 17:14:07
+archive/issue_comments_019224.json:
+```json
+{
+    "body": "Once #2820 is merged we can close this.\n\nCheers,\n\nMichael",
+    "created_at": "2008-04-08T17:14:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2800",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2800#issuecomment-19224",
+    "user": "mabshoff"
+}
+```
 
 Once #2820 is merged we can close this.
 
@@ -33,15 +69,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-08 18:14:34
+archive/issue_comments_019225.json:
+```json
+{
+    "body": "Fixed due to #2820.",
+    "created_at": "2008-04-08T18:14:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2800",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2800#issuecomment-19225",
+    "user": "mabshoff"
+}
+```
 
 Fixed due to #2820.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-04-08 18:14:34
+archive/issue_comments_019226.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-04-08T18:14:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2800",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2800#issuecomment-19226",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

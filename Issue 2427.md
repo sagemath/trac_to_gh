@@ -1,34 +1,81 @@
 # Issue 2427: add docstring to Partitions
 
-Issue created by migration from https://trac.sagemath.org/ticket/2427
-
-Original creator: schilly
-
-Original creation time: 2008-03-08 13:51:00
-
+archive/issues_002427.json:
+```json
+{
+    "body": "Assignee: mhansen\n\nCC:  sage-combinat\n\nsee sage-main/sage/combinat/partition.py line 1639\n\nIssue created by migration from https://trac.sagemath.org/ticket/2427\n\n",
+    "created_at": "2008-03-08T13:51:00Z",
+    "labels": [
+        "combinatorics",
+        "minor",
+        "bug"
+    ],
+    "title": "add docstring to Partitions",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2427",
+    "user": "schilly"
+}
+```
 Assignee: mhansen
 
 CC:  sage-combinat
 
 see sage-main/sage/combinat/partition.py line 1639
 
+Issue created by migration from https://trac.sagemath.org/ticket/2427
+
+
+
+
 
 ---
 
-Comment by mhansen created at 2008-03-09 13:06:40
+archive/issue_comments_016431.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-03-09T13:06:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2427",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2427#issuecomment-16431",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mhansen created at 2008-03-09 13:06:40
+archive/issue_comments_016432.json:
+```json
+{
+    "body": "I've added this in my patch to #2432 .",
+    "created_at": "2008-03-09T13:06:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2427",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2427#issuecomment-16432",
+    "user": "mhansen"
+}
+```
 
 I've added this in my patch to #2432 .
 
 
+
 ---
 
-Comment by mhansen created at 2008-03-15 22:01:27
+archive/issue_comments_016433.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-03-15T22:01:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2427",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2427#issuecomment-16433",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

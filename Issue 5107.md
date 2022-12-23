@@ -1,11 +1,21 @@
 # Issue 5107: incorrect trailing digits for continued fraction
 
-Issue created by migration from https://trac.sagemath.org/ticket/5107
-
-Original creator: robertwb
-
-Original creation time: 2009-01-26 19:52:27
-
+archive/issues_005107.json:
+```json
+{
+    "body": "Assignee: somebody\n\n\n```\ncontinued_fraction(sqrt(2))\n[1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1]\n\nthe last two digits are incorrect\n\ncontinued_fraction(sqrt(109))\n[10, 2, 3, 1, 2, 4, 1, 6, 6, 1, 4, 2, 1, 3, 2, 20, 3]\n\nthe last digit (3) is incorrect\n```\n\n\nSee http://groups.google.com/group/sage-devel/browse_thread/thread/ab840e109863fcf3/c38d571a161b7628\n\nIssue created by migration from https://trac.sagemath.org/ticket/5107\n\n",
+    "created_at": "2009-01-26T19:52:27Z",
+    "labels": [
+        "basic arithmetic",
+        "critical",
+        "bug"
+    ],
+    "title": "incorrect trailing digits for continued fraction",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5107",
+    "user": "robertwb"
+}
+```
 Assignee: somebody
 
 
@@ -24,10 +34,25 @@ the last digit (3) is incorrect
 
 See http://groups.google.com/group/sage-devel/browse_thread/thread/ab840e109863fcf3/c38d571a161b7628
 
+Issue created by migration from https://trac.sagemath.org/ticket/5107
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2009-02-06 22:58:18
+archive/issue_comments_039016.json:
+```json
+{
+    "body": "3.4 is for ReST tickets only.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-06T22:58:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5107",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5107#issuecomment-39016",
+    "user": "mabshoff"
+}
+```
 
 3.4 is for ReST tickets only.
 
@@ -36,9 +61,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by AlexGhitza created at 2009-08-25 05:32:55
+archive/issue_comments_039017.json:
+```json
+{
+    "body": "The computation is done in the function `continued_fraction_list()` of `rings/arith.py`, where it says \"This may be slow for real number input, since it's implemented in pure Python. For rational number input the PARI C library is used.\"\n\nI wonder why we're not using PARI also when the input is a real number.  It's fast, and it looks right:\n\n\n```\nsage: x = sqrt(2)\nsage: CFF = ContinuedFractionField()\nsage: CFF(pari(x).contfrac().python())\n[1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]\nsage: timeit(\"CFF(pari(x).contfrac().python())\n625 loops, best of 3: 258 \u00b5s per loop\nsage: timeit(\"CFF(continued_fraction_list(x))\")\n625 loops, best of 3: 1.17 ms per loop\n```\n",
+    "created_at": "2009-08-25T05:32:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5107",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5107#issuecomment-39017",
+    "user": "AlexGhitza"
+}
+```
 
 The computation is done in the function `continued_fraction_list()` of `rings/arith.py`, where it says "This may be slow for real number input, since it's implemented in pure Python. For rational number input the PARI C library is used."
 
@@ -58,50 +94,109 @@ sage: timeit("CFF(continued_fraction_list(x))")
 
 
 
+
 ---
+
+archive/issue_comments_039018.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-01-18T09:20:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5107",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5107#issuecomment-39018",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2010-01-18 09:24:50
+archive/issue_comments_039019.json:
+```json
+{
+    "body": "Hi,\n\nI've looked through this carefully.\n\n1. I strongly disagree that any of the examples above are bugs.  They are the result of users misunderstanding what the `continued_fraction` function is supposed to do.  This may be partly because that function has 0 documentation!   \n\n2. Regarding speed: correctness is much more important for starters, and it's also good to have a precise definition of exactly what is being computed.  That is impossible to do in PARI, mainly because of how PARI's precision can't be set exactly in bits.   This is difficult to appreciate without the function continued_fraction being documented.  The right way to make this function faster is to just reimplement continued_fraction_list in Cython. \n\nSo, I've attached a patch that:\n\n1. Brings the coverage of contfrac.py to 100%.\n\n2. Explains in detail what continued_fraction is actually supposed to compute.  \n\n3. Changes the docs in the whole contfrac.py file to use ReST formatting. \n\n\nIt doesn't change what anything actually does in any significant way.",
+    "created_at": "2010-01-18T09:24:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5107",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5107#issuecomment-39019",
+    "user": "was"
+}
+```
 
 Hi,
 
 I've looked through this carefully.
 
- 1. I strongly disagree that any of the examples above are bugs.  They are the result of users misunderstanding what the `continued_fraction` function is supposed to do.  This may be partly because that function has 0 documentation!   
+1. I strongly disagree that any of the examples above are bugs.  They are the result of users misunderstanding what the `continued_fraction` function is supposed to do.  This may be partly because that function has 0 documentation!   
 
- 2. Regarding speed: correctness is much more important for starters, and it's also good to have a precise definition of exactly what is being computed.  That is impossible to do in PARI, mainly because of how PARI's precision can't be set exactly in bits.   This is difficult to appreciate without the function continued_fraction being documented.  The right way to make this function faster is to just reimplement continued_fraction_list in Cython. 
+2. Regarding speed: correctness is much more important for starters, and it's also good to have a precise definition of exactly what is being computed.  That is impossible to do in PARI, mainly because of how PARI's precision can't be set exactly in bits.   This is difficult to appreciate without the function continued_fraction being documented.  The right way to make this function faster is to just reimplement continued_fraction_list in Cython. 
 
 So, I've attached a patch that:
 
-  1. Brings the coverage of contfrac.py to 100%.
+1. Brings the coverage of contfrac.py to 100%.
 
-  2. Explains in detail what continued_fraction is actually supposed to compute.  
+2. Explains in detail what continued_fraction is actually supposed to compute.  
 
-  3. Changes the docs in the whole contfrac.py file to use ReST formatting. 
+3. Changes the docs in the whole contfrac.py file to use ReST formatting. 
 
 
 It doesn't change what anything actually does in any significant way.
 
 
+
 ---
 
-Comment by was created at 2010-01-18 09:24:50
+archive/issue_comments_039020.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-01-18T09:24:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5107",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5107#issuecomment-39020",
+    "user": "was"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by wjp created at 2010-01-18 18:39:43
+archive/issue_comments_039021.json:
+```json
+{
+    "body": "Positive review, except for two minor typos which I'm adding a separate patch for.",
+    "created_at": "2010-01-18T18:39:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5107",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5107#issuecomment-39021",
+    "user": "wjp"
+}
+```
 
 Positive review, except for two minor typos which I'm adding a separate patch for.
 
 
+
 ---
+
+archive/issue_comments_039022.json:
+```json
+{
+    "body": "Attachment\n\nI find it surprising that `continued_fraction(x)`, where x is symbolic, or even an exact rational, would only give me the continued fraction of a numerical approximation to some number of bits. I guess what would be ideal would be an ideal, lazy continued fraction class. What I would find more useful than bits would be an nterms parameter that specified the (minimum?) number of terms to give, and it would work with sufficient precision to deduce all nterms coefficients correctly (e.g. using interval arithmetic). \n\nThe fact that it's not documented is a huge step forward, so +1 to that.",
+    "created_at": "2010-01-18T19:08:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5107",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5107#issuecomment-39022",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
@@ -110,16 +205,38 @@ I find it surprising that `continued_fraction(x)`, where x is symbolic, or even 
 The fact that it's not documented is a huge step forward, so +1 to that.
 
 
+
 ---
 
-Comment by robertwb created at 2010-01-18 19:10:11
+archive/issue_comments_039023.json:
+```json
+{
+    "body": "I guess I should say regarding the \"incorrect\" results above, that \"this function doesn't do what it looks like it does, read the documentation\" which is somewaht unsatisfactory.",
+    "created_at": "2010-01-18T19:10:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5107",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5107#issuecomment-39023",
+    "user": "robertwb"
+}
+```
 
 I guess I should say regarding the "incorrect" results above, that "this function doesn't do what it looks like it does, read the documentation" which is somewaht unsatisfactory.
 
 
+
 ---
 
-Comment by was created at 2010-01-18 22:34:15
+archive/issue_comments_039024.json:
+```json
+{
+    "body": "+1 to the referee patch.  \nRobert: You expected continued_fraction(symbolic) would be some cool lazy infinite continued fraction object, since the function \"continued_fraction\" didn't have any documentation.   It would be nice to have that capability, but nobody has written it.    At least now continued_fraction clearly documents what it does.       \n\nPerhaps the only thing that would easily make you happy right now would be to require the prec option if the input is symbolic?  That way in the future when somebody writes \"continued_fraction(pi)\", then it will work as you want...  Thoughts?",
+    "created_at": "2010-01-18T22:34:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5107",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5107#issuecomment-39024",
+    "user": "was"
+}
+```
 
 +1 to the referee patch.  
 Robert: You expected continued_fraction(symbolic) would be some cool lazy infinite continued fraction object, since the function "continued_fraction" didn't have any documentation.   It would be nice to have that capability, but nobody has written it.    At least now continued_fraction clearly documents what it does.       
@@ -127,22 +244,55 @@ Robert: You expected continued_fraction(symbolic) would be some cool lazy infini
 Perhaps the only thing that would easily make you happy right now would be to require the prec option if the input is symbolic?  That way in the future when somebody writes "continued_fraction(pi)", then it will work as you want...  Thoughts?
 
 
+
 ---
 
-Comment by AlexGhitza created at 2010-01-20 09:53:11
+archive/issue_comments_039025.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-01-20T09:53:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5107",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5107#issuecomment-39025",
+    "user": "AlexGhitza"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2010-01-20 09:53:11
+archive/issue_comments_039026.json:
+```json
+{
+    "body": "I interpret the discussion above as: (a) William's patch gets a positive review from Willem, (b) Willem's referee patch gets a positive review from William, and (c) there are improvements we should make to the continued fractions code, which should probably be a new enhancement ticket.",
+    "created_at": "2010-01-20T09:53:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5107",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5107#issuecomment-39026",
+    "user": "AlexGhitza"
+}
+```
 
 I interpret the discussion above as: (a) William's patch gets a positive review from Willem, (b) Willem's referee patch gets a positive review from William, and (c) there are improvements we should make to the continued fractions code, which should probably be a new enhancement ticket.
 
 
+
 ---
 
-Comment by mvngu created at 2010-01-22 18:27:44
+archive/issue_comments_039027.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-22T18:27:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5107",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5107#issuecomment-39027",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

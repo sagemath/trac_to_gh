@@ -1,11 +1,21 @@
 # Issue 5666: forming ideals in IntegerModRing_generic does not work
 
-Issue created by migration from https://trac.sagemath.org/ticket/5666
-
-Original creator: cremona
-
-Original creation time: 2009-04-02 15:41:15
-
+archive/issues_005666.json:
+```json
+{
+    "body": "Assignee: tbd\n\nIt is impossible to create ideals in rings of the form Integers mod n:\n\n\n```\nsage: R = Integers(10)\nsage: R.ideal(1)\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/masgaj/.sage/temp/host_56_150/5831/_home_masgaj__sage_init_sage_0.py\nin <module>()\n\n/local/jec/sage-3.4.1.alpha0/local/lib/python2.5/site-packages/sage/rings/quotient_ring.pyc\nin ideal(self, *gens, **kwds)\n   487             gens = gens[0]\n   488         from\nsage.rings.polynomial.multi_polynomial_libsingular import\nMPolynomialRing_libsingular\n--> 489         if not\nisinstance(self.__R,MPolynomialRing_libsingular) and not\nself.__R._has_singular:\n   490             # pass through\n   491             MPolynomialRing_generic.ideal(self,gens,**kwds)\n\nAttributeError: 'sage.rings.integer_ring.IntegerRing_class' object has\nno attribute '_has_singular'\nsage: R.ideal([2,4])\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n(as above)\n```\n\n\nIt looks as if the ideal() method for class  `QuotientRing_generic ` is\nonly really geared to polynomial ring quotients.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5666\n\n",
+    "created_at": "2009-04-02T15:41:15Z",
+    "labels": [
+        "algebra",
+        "major",
+        "bug"
+    ],
+    "title": "forming ideals in IntegerModRing_generic does not work",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5666",
+    "user": "cremona"
+}
+```
 Assignee: tbd
 
 It is impossible to create ideals in rings of the form Integers mod n:
@@ -47,29 +57,79 @@ only really geared to polynomial ring quotients.
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5666
+
+
+
+
 
 ---
+
+archive/issue_comments_044334.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-01-17T06:36:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5666",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5666#issuecomment-44334",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2010-01-17 06:36:24
+archive/issue_comments_044335.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-01-17T06:36:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5666",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5666#issuecomment-44335",
+    "user": "was"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by rbeezer created at 2010-01-18 05:20:32
+archive/issue_comments_044336.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-01-18T05:20:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5666",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5666#issuecomment-44336",
+    "user": "rbeezer"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by rbeezer created at 2010-01-18 05:20:32
+archive/issue_comments_044337.json:
+```json
+{
+    "body": "Passes tests and allows creation of ideals within rings of integers mod n.\n\nBut it seems the resulting ideals still need some work, for example `_contains_()` in `rings.ideal.Ideal_generic` is not implemented.\n\n\n```\nsage: R=Integers(40)\nsage: Q=R.ideal([2,3])\nsage: type(Q)\n<class 'sage.rings.ideal.Ideal_generic'>\nsage: 1 in Q\n------------------\nNotImplementedError\n<snip>\n```\n",
+    "created_at": "2010-01-18T05:20:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5666",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5666#issuecomment-44337",
+    "user": "rbeezer"
+}
+```
 
 Passes tests and allows creation of ideals within rings of integers mod n.
 
@@ -89,8 +149,19 @@ NotImplementedError
 
 
 
+
 ---
 
-Comment by rlm created at 2010-01-18 22:41:43
+archive/issue_comments_044338.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-01-18T22:41:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5666",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5666#issuecomment-44338",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed

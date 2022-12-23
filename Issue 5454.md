@@ -1,84 +1,212 @@
 # Issue 5454: [with patch, needs review] Add coercion documentation to the reference manual
 
-Issue created by migration from https://trac.sagemath.org/ticket/5454
-
-Original creator: mhansen
-
-Original creation time: 2009-03-07 19:18:38
-
+archive/issues_005454.json:
+```json
+{
+    "body": "Assignee: tba\n\nCC:  robertwb\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5454\n\n",
+    "created_at": "2009-03-07T19:18:38Z",
+    "labels": [
+        "documentation",
+        "major",
+        "enhancement"
+    ],
+    "title": "[with patch, needs review] Add coercion documentation to the reference manual",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5454",
+    "user": "mhansen"
+}
+```
 Assignee: tba
 
 CC:  robertwb
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5454
+
+
+
+
 
 ---
+
+archive/issue_comments_042261.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-03-07T19:20:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5454",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5454#issuecomment-42261",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by robertwb created at 2009-03-07 22:00:20
+archive/issue_comments_042262.json:
+```json
+{
+    "body": "sage/structure/coerce* should probably still be in the reference manual.",
+    "created_at": "2009-03-07T22:00:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5454",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5454#issuecomment-42262",
+    "user": "robertwb"
+}
+```
 
 sage/structure/coerce* should probably still be in the reference manual.
 
 
+
 ---
 
-Comment by mhansen created at 2009-03-07 22:01:10
+archive/issue_comments_042263.json:
+```json
+{
+    "body": "They are under the coercion section at the bottom.",
+    "created_at": "2009-03-07T22:01:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5454",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5454#issuecomment-42263",
+    "user": "mhansen"
+}
+```
 
 They are under the coercion section at the bottom.
 
 
+
 ---
 
-Comment by robertwb created at 2009-03-07 22:23:44
+archive/issue_comments_042264.json:
+```json
+{
+    "body": "/me should read the patch more carefully. I haven't applied it, but it looks good. \n\nJust as an aside, based on some conversations with people, I'm thinking about getting rid of _l_action_ and _r_action_ (replacing with _act_on_ and _acted_upon_). Thoughts?",
+    "created_at": "2009-03-07T22:23:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5454",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5454#issuecomment-42264",
+    "user": "robertwb"
+}
+```
 
 /me should read the patch more carefully. I haven't applied it, but it looks good. 
 
 Just as an aside, based on some conversations with people, I'm thinking about getting rid of _l_action_ and _r_action_ (replacing with _act_on_ and _acted_upon_). Thoughts?
 
 
+
 ---
 
-Comment by mhansen created at 2009-03-07 22:27:59
+archive/issue_comments_042265.json:
+```json
+{
+    "body": "Something other than _l_action_ and _r_action_!  I don't know if _act_on_ and _acted_upon_ are better though.  In every case I've ever used it, I'm always defining how things act on my element from the left or the right (modules) in which case _l_action_ and _r_action_ are reversed.",
+    "created_at": "2009-03-07T22:27:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5454",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5454#issuecomment-42265",
+    "user": "mhansen"
+}
+```
 
 Something other than _l_action_ and _r_action_!  I don't know if _act_on_ and _acted_upon_ are better though.  In every case I've ever used it, I'm always defining how things act on my element from the left or the right (modules) in which case _l_action_ and _r_action_ are reversed.
 
 
+
 ---
 
-Comment by robertwb created at 2009-03-07 22:45:20
+archive/issue_comments_042266.json:
+```json
+{
+    "body": "_act_on_ would be self acting on something, _acted_upon_ would be something acting on self. They would both take a self_on_left argument. I'm open for other names, but haven't come up with any yet. \n\nBTW, thanks for rebasing those other patches.",
+    "created_at": "2009-03-07T22:45:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5454",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5454#issuecomment-42266",
+    "user": "robertwb"
+}
+```
 
 _act_on_ would be self acting on something, _acted_upon_ would be something acting on self. They would both take a self_on_left argument. I'm open for other names, but haven't come up with any yet. 
 
 BTW, thanks for rebasing those other patches.
 
 
+
 ---
 
-Comment by mhansen created at 2009-03-07 22:48:59
+archive/issue_comments_042267.json:
+```json
+{
+    "body": "That convention sounds good to me, but we would then have to tell people to only implement one of them.",
+    "created_at": "2009-03-07T22:48:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5454",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5454#issuecomment-42267",
+    "user": "mhansen"
+}
+```
 
 That convention sounds good to me, but we would then have to tell people to only implement one of them.
 
 
+
 ---
 
-Comment by robertwb created at 2009-03-12 02:53:48
+archive/issue_comments_042268.json:
+```json
+{
+    "body": "BTW, the only reason I haven't given this a positive review is because of the potential renaming of _l_action_.",
+    "created_at": "2009-03-12T02:53:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5454",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5454#issuecomment-42268",
+    "user": "robertwb"
+}
+```
 
 BTW, the only reason I haven't given this a positive review is because of the potential renaming of _l_action_.
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-06-10 10:27:03
+archive/issue_comments_042269.json:
+```json
+{
+    "body": "rebased to 4.0.1",
+    "created_at": "2009-06-10T10:27:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5454",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5454#issuecomment-42269",
+    "user": "davidloeffler"
+}
+```
 
 rebased to 4.0.1
 
 
+
 ---
+
+archive/issue_comments_042270.json:
+```json
+{
+    "body": "Attachment\n\nIt looks like the proposed renaming of _l_action_ etc hasn't yet happened, and we *seriously need* some documentation for the coercion model -- I've written or contributed to dozens of sage parent/element classes and I never knew half of this stuff, I learnt loads just from a five-minute skim-read of the new docs. We must get this into a release ASAP.\n\nIt's a great shame that this patch has been in limbo for three months just because our hackish use of text search for \"positive review\" in the summary field missed it due to a typo.",
+    "created_at": "2009-06-10T10:31:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5454",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5454#issuecomment-42270",
+    "user": "davidloeffler"
+}
+```
 
 Attachment
 
@@ -87,16 +215,38 @@ It looks like the proposed renaming of _l_action_ etc hasn't yet happened, and w
 It's a great shame that this patch has been in limbo for three months just because our hackish use of text search for "positive review" in the summary field missed it due to a typo.
 
 
+
 ---
 
-Comment by robertwb created at 2009-06-10 16:05:14
+archive/issue_comments_042271.json:
+```json
+{
+    "body": "Yes, it is a shame. I got busy with other stuff, like working on my thesis... Here's the renaming patch #5597. The categories patch is holding up lots of good examples.",
+    "created_at": "2009-06-10T16:05:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5454",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5454#issuecomment-42271",
+    "user": "robertwb"
+}
+```
 
 Yes, it is a shame. I got busy with other stuff, like working on my thesis... Here's the renaming patch #5597. The categories patch is holding up lots of good examples.
 
 
+
 ---
 
-Comment by ncalexan created at 2009-06-13 20:08:57
+archive/issue_comments_042272.json:
+```json
+{
+    "body": "Unfortunately:\n\n\n```\nsage -t -long devel/sage/doc/en/reference/coercion.rst\n**********************************************************************\nFile \"/scratch/ncalexan/sage-4.0.2.alpha1/devel/sage-nca/doc/en/reference/coercion.rst\", line 206:\n    age: cm = sage.structure.element.get_coercion_model()\nExpected:\n    <sage.structure.coerce.CoercionModel_cache_maps object at 0x2f65960>\nGot nothing\n**********************************************************************\nFile \"/scratch/ncalexan/sage-4.0.2.alpha1/devel/sage-nca/doc/en/reference/coercion.rst\", line 235:\n    age: cm.bin_op(77, 9, gcd)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/ncalexan/sage-4.0.2.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/ncalexan/sage-4.0.2.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/ncalexan/sage-4.0.2.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_3[2]>\", line 1, in <module>\n        cm.bin_op(Integer(77), Integer(9), gcd)###line 235:\n    age: cm.bin_op(77, 9, gcd)\n    NameError: name 'cm' is not defined\n**********************************************************************\nFile \"/scratch/ncalexan/sage-4.0.2.alpha1/devel/sage-nca/doc/en/reference/coercion.rst\", line 244:\n    age: cm.explain(ZZ['x'], ZZ, operator.mul)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/ncalexan/sage-4.0.2.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/ncalexan/sage-4.0.2.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/ncalexan/sage-4.0.2.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_4[2]>\", line 1, in <module>\n        cm.explain(ZZ['x'], ZZ, operator.mul)###line 244:\n    age: cm.explain(ZZ['x'], ZZ, operator.mul)\n    NameError: name 'cm' is not defined\n**********************************************************************\nFile \"/scratch/ncalexan/sage-4.0.2.alpha1/devel/sage-nca/doc/en/reference/coercion.rst\", line 250:\n    age: cm.explain(ZZ['x'], ZZ, operator.div)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/ncalexan/sage-4.0.2.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/ncalexan/sage-4.0.2.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/ncalexan/sage-4.0.2.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_4[3]>\", line 1, in <module>\n        cm.explain(ZZ['x'], ZZ, operator.div)###line 250:\n    age: cm.explain(ZZ['x'], ZZ, operator.div)\n    NameError: name 'cm' is not defined\n**********************************************************************\nFile \"/scratch/ncalexan/sage-4.0.2.alpha1/devel/sage-nca/doc/en/reference/coercion.rst\", line 631:\n    age: sage.categories.pushout.pushout(Frac(ZZ['x,y,z']), QQ['z, t'])\nExpected:\n    Fraction Field of Multivariate Polynomial Ring in x, y, z, t over Rational Field\nGot:\n    Univariate Polynomial Ring in t over Fraction Field of Multivariate Polynomial Ring in x, y, z over Rational Field\n**********************************************************************\n4 items had failures:\n   1 of   6 in __main__.example_2\n   1 of   3 in __main__.example_3\n   2 of  11 in __main__.example_4\n   1 of   3 in __main__.example_6\n***Test Failed*** 5 failures.\nFor whitespace errors, see the file /scratch/ncalexan/sage-4.0.2.alpha1/tmp/.doctest_coercion.py\n         [1.2 s]\n \n----------------------------------------------------------------------\n\nThe following tests failed:\n\n        sage -t -long devel/sage/doc/en/reference/coercion.rst # 5 doctests failed\n----------------------------------------------------------------------\nTotal time for all tests: 1.5 seconds\nTests failed!\n```\n",
+    "created_at": "2009-06-13T20:08:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5454",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5454#issuecomment-42272",
+    "user": "ncalexan"
+}
+```
 
 Unfortunately:
 
@@ -183,22 +333,57 @@ Tests failed!
 
 
 
+
 ---
 
-Comment by davidloeffler created at 2009-06-14 10:45:54
+archive/issue_comments_042273.json:
+```json
+{
+    "body": "apply over trac_5454_rebase.patch",
+    "created_at": "2009-06-14T10:45:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5454",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5454#issuecomment-42273",
+    "user": "davidloeffler"
+}
+```
 
 apply over trac_5454_rebase.patch
 
 
+
 ---
+
+archive/issue_comments_042274.json:
+```json
+{
+    "body": "Attachment\n\nI've fixed the above problems, which were all due to trivial typos/thinkos in the doctests. Silly of me not to have run the tests when I was reviewing. Can I just reinstate the positive review, or do we need a second opinion?",
+    "created_at": "2009-06-14T10:47:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5454",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5454#issuecomment-42274",
+    "user": "davidloeffler"
+}
+```
 
 Attachment
 
 I've fixed the above problems, which were all due to trivial typos/thinkos in the doctests. Silly of me not to have run the tests when I was reviewing. Can I just reinstate the positive review, or do we need a second opinion?
 
 
+
 ---
 
-Comment by ncalexan created at 2009-06-14 21:30:16
+archive/issue_comments_042275.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-06-14T21:30:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5454",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5454#issuecomment-42275",
+    "user": "ncalexan"
+}
+```
 
 Resolution: fixed

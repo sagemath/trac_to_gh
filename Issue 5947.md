@@ -1,11 +1,21 @@
 # Issue 5947: Coleman integrals of exact forms
 
-Issue created by migration from https://trac.sagemath.org/ticket/5947
-
-Original creator: jen
-
-Original creation time: 2009-04-30 14:50:30
-
+archive/issues_005947.json:
+```json
+{
+    "body": "Assignee: was\n\nSay I define a hyperelliptic curve and calculate the action of Frobenius \\phi on basis differentials w_i. Sage outputs the matrix and f_i such that \\phi* w_i = df_i + \\sum A_ij w_j.\nThen for f_i, int(df_i,P,Q) = f_i(Q)-f_i(P). However, it seems Sage is computing f.diff() to be -df instead of df.\n\n\n```\nsage: R.<x> = QQ['x']\nsage: H = HyperellipticCurve(x*(x-1)*(x+9))\nsage: K = Qp(7,10)\nsage: HK = H.change_ring(K)\nsage: import sage.schemes.elliptic_curves.monsky_washnitzer as mw\nsage: M_frob, forms = mw.matrix_of_frobenius_hyperelliptic(HK)\nsage: f = forms[0]\nsage: P = HK(9,36)\nsage: Q = HK.teichmuller(P)\nsage: HK.coleman_integral(f.diff(),P,Q)\n6*7^2 + 5*7^3 + 7^4 + 7^5 + 7^6 + 3*7^7 + 5*7^9 + 4*7^10 + O(7^11)\n```\n\nHowever, it seems that f.diff() is actually -f.diff(), as the answer should be\n\n```\nsage: f(Q[0],Q[1])-f(P[0],P[1])\n7^2 + 7^3 + 5*7^4 + 5*7^5 + 5*7^6 + 3*7^7 + 6*7^8 + 7^9 + 2*7^10 + O(7^11)\n```\n\nwhich is in fact the negation of what it's computing:\n\n```\nsage: f(P[0],P[1])-f(Q[0],Q[1])\n6*7^2 + 5*7^3 + 7^4 + 7^5 + 7^6 + 3*7^7 + 5*7^9 + 4*7^10 + O(7^11)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5947\n\n",
+    "created_at": "2009-04-30T14:50:30Z",
+    "labels": [
+        "algebraic geometry",
+        "major",
+        "bug"
+    ],
+    "title": "Coleman integrals of exact forms",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5947",
+    "user": "jen"
+}
+```
 Assignee: was
 
 Say I define a hyperelliptic curve and calculate the action of Frobenius \phi on basis differentials w_i. Sage outputs the matrix and f_i such that \phi* w_i = df_i + \sum A_ij w_j.
@@ -41,10 +51,25 @@ sage: f(P[0],P[1])-f(Q[0],Q[1])
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5947
+
+
+
+
 
 ---
 
-Comment by robertwb created at 2009-05-19 08:34:16
+archive/issue_comments_047049.json:
+```json
+{
+    "body": "\n```\nsage: sage: R.<x> = QQ['x']\nsage: sage: H = HyperellipticCurve(x*(x-1)*(x+9))\nsage: from sage.schemes.elliptic_curves.monsky_washnitzer import SpecialHyperellipticQuotientRing\nsage: x, y = SpecialHyperellipticQuotientRing(H).gens()\nsage: (x+y).diff()\n((-9+2*y)*1 + 16*x + 3*x^2) dx/2y\nsage: x.diff()\n2*y*1 dx/2y\n```\n\n\nSo it appears that the sign problem is in the coleman_integral, not diff.",
+    "created_at": "2009-05-19T08:34:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5947",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5947#issuecomment-47049",
+    "user": "robertwb"
+}
+```
 
 
 ```
@@ -62,22 +87,55 @@ sage: x.diff()
 So it appears that the sign problem is in the coleman_integral, not diff.
 
 
+
 ---
 
-Comment by robertwb created at 2009-05-20 07:43:46
+archive/issue_comments_047050.json:
+```json
+{
+    "body": "See fix at #5948.",
+    "created_at": "2009-05-20T07:43:46Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5947",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5947#issuecomment-47050",
+    "user": "robertwb"
+}
+```
 
 See fix at #5948.
 
 
+
 ---
 
-Comment by mhansen created at 2009-12-07 08:35:53
+archive/issue_comments_047051.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-12-07T08:35:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5947",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5947#issuecomment-47051",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mhansen created at 2009-12-07 08:35:53
+archive/issue_comments_047052.json:
+```json
+{
+    "body": "This was fixed by #5948.",
+    "created_at": "2009-12-07T08:35:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5947",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5947#issuecomment-47052",
+    "user": "mhansen"
+}
+```
 
 This was fixed by #5948.

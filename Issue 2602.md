@@ -1,32 +1,81 @@
 # Issue 2602: plot_vector_field docs are unnecessarily complicated (and use the slow lambda functions!)
 
-Issue created by migration from https://trac.sagemath.org/ticket/2602
-
-Original creator: jason
-
-Original creation time: 2008-03-19 19:19:00
-
+archive/issues_002602.json:
+```json
+{
+    "body": "Assignee: was\n\nSee the patch for updated examples.  No new functionality is introduced; the examples are just updated.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2602\n\n",
+    "created_at": "2008-03-19T19:19:00Z",
+    "labels": [
+        "graphics",
+        "major",
+        "bug"
+    ],
+    "title": "plot_vector_field docs are unnecessarily complicated (and use the slow lambda functions!)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2602",
+    "user": "jason"
+}
+```
 Assignee: was
 
 See the patch for updated examples.  No new functionality is introduced; the examples are just updated.
 
+Issue created by migration from https://trac.sagemath.org/ticket/2602
+
+
+
+
 
 ---
+
+archive/issue_comments_017804.json:
+```json
+{
+    "body": "Attachment\n\nLooks good to me.",
+    "created_at": "2008-03-19T19:28:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2602",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2602#issuecomment-17804",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 Looks good to me.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-19 23:40:03
+archive/issue_comments_017805.json:
+```json
+{
+    "body": "Merged in Sage 2.11.alpha0",
+    "created_at": "2008-03-19T23:40:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2602",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2602#issuecomment-17805",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 2.11.alpha0
 
 
+
 ---
 
-Comment by mabshoff created at 2008-03-19 23:40:03
+archive/issue_comments_017806.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-03-19T23:40:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2602",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2602#issuecomment-17806",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

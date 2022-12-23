@@ -1,11 +1,21 @@
 # Issue 5940: graph theory -- bug in is_circular_planar
 
-Issue created by migration from https://trac.sagemath.org/ticket/5940
-
-Original creator: was
-
-Original creation time: 2009-04-29 17:03:47
-
+archive/issues_005940.json:
+```json
+{
+    "body": "Assignee: rlm\n\n\n```\nsage: g = graphs.KrackhardtKiteGraph()\nsage: g.is_circular_planar()\nTraceback...\nIndexError: list index out of range\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5940\n\n",
+    "created_at": "2009-04-29T17:03:47Z",
+    "labels": [
+        "graph theory",
+        "major",
+        "bug"
+    ],
+    "title": "graph theory -- bug in is_circular_planar",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5940",
+    "user": "was"
+}
+```
 Assignee: rlm
 
 
@@ -17,41 +27,115 @@ IndexError: list index out of range
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5940
+
+
+
+
 
 ---
+
+archive/issue_comments_046956.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-05-18T19:18:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5940",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5940#issuecomment-46956",
+    "user": "ekirkman"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by rlm created at 2009-05-18 20:35:02
+archive/issue_comments_046957.json:
+```json
+{
+    "body": "The offending example needs to be added as a doctest. Otherwise, positive review.",
+    "created_at": "2009-05-18T20:35:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5940",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5940#issuecomment-46957",
+    "user": "rlm"
+}
+```
 
 The offending example needs to be added as a doctest. Otherwise, positive review.
 
 
+
 ---
 
-Comment by rlm created at 2009-05-18 20:45:49
+archive/issue_comments_046958.json:
+```json
+{
+    "body": "Apply instead.",
+    "created_at": "2009-05-18T20:45:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5940",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5940#issuecomment-46958",
+    "user": "rlm"
+}
+```
 
 Apply instead.
 
 
+
 ---
+
+archive/issue_comments_046959.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-05-18T20:46:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5940",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5940#issuecomment-46959",
+    "user": "rlm"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by ekirkman created at 2009-05-18 20:49:36
+archive/issue_comments_046960.json:
+```json
+{
+    "body": "Thanks for posting the patch with the doctest.  Looks good to me.",
+    "created_at": "2009-05-18T20:49:36Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5940",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5940#issuecomment-46960",
+    "user": "ekirkman"
+}
+```
 
 Thanks for posting the patch with the doctest.  Looks good to me.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-19 20:13:42
+archive/issue_comments_046961.json:
+```json
+{
+    "body": "Merged trac_5940-ref_fix.patch only in Sage 4.0.rc0.\n\nCheers,\n\nMichael",
+    "created_at": "2009-05-19T20:13:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5940",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5940#issuecomment-46961",
+    "user": "mabshoff"
+}
+```
 
 Merged trac_5940-ref_fix.patch only in Sage 4.0.rc0.
 
@@ -60,8 +144,19 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-19 20:13:42
+archive/issue_comments_046962.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-05-19T20:13:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5940",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5940#issuecomment-46962",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed

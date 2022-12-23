@@ -1,43 +1,116 @@
 # Issue 5423: Move calculus to new coercion model
 
-Issue created by migration from https://trac.sagemath.org/ticket/5423
-
-Original creator: robertwb
-
-Original creation time: 2009-03-03 09:23:07
-
+archive/issues_005423.json:
+```json
+{
+    "body": "Assignee: robertwb\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5423\n\n",
+    "created_at": "2009-03-03T09:23:07Z",
+    "labels": [
+        "coercion",
+        "major",
+        "bug"
+    ],
+    "title": "Move calculus to new coercion model",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5423",
+    "user": "robertwb"
+}
+```
 Assignee: robertwb
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5423
+
+
+
+
 
 ---
+
+archive/issue_comments_041970.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-03-03T22:10:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5423",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5423#issuecomment-41970",
+    "user": "robertwb"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_041971.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-03-07T22:01:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5423",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5423#issuecomment-41971",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2009-03-07 22:02:05
+archive/issue_comments_041972.json:
+```json
+{
+    "body": "I've uploaded trac_5423.patch which is the original patch rebased against 3.4.rc1.",
+    "created_at": "2009-03-07T22:02:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5423",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5423#issuecomment-41972",
+    "user": "mhansen"
+}
+```
 
 I've uploaded trac_5423.patch which is the original patch rebased against 3.4.rc1.
 
 
+
 ---
 
-Comment by jason created at 2009-03-24 21:45:10
+archive/issue_comments_041973.json:
+```json
+{
+    "body": "mhansen: did you review trac_5423.patch while you did the rebase?",
+    "created_at": "2009-03-24T21:45:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5423",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5423#issuecomment-41973",
+    "user": "jason"
+}
+```
 
 mhansen: did you review trac_5423.patch while you did the rebase?
 
 
+
 ---
 
-Comment by was created at 2009-04-12 05:03:28
+archive/issue_comments_041974.json:
+```json
+{
+    "body": "The following doctests fail after applying the rebased patch:\n\n```\n**********************************************************************\nFile \"/scratch/wstein/build/sage-3.4.1.rc2/devel/sage-ref2/sage/misc/citation.pyx\", line 56:\n    sage: get_systems('integrate(x^2, x)')\nExpected:\n    ['Maxima']\nGot:\n    ['MPFI', 'MPFR', 'Maxima']\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_0\n***Test Failed*** 1 failures.\n```\n\n\nand\n\n```\nsage -t  devel/sage/sage/rings/complex_interval.pyx\n**********************************************************************\nFile \"/scratch/wstein/build/sage-3.4.1.rc2/devel/sage-ref2/sage/rings/complex_interval.pyx\", line 456:\n    sage: sage_input(ComplexIntervalField(64)(2)^I, preparse=False, verify=True)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/wstein/build/sage-3.4.1.rc2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-3.4.1.rc2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/wstein/build/sage-3.4.1.rc2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_14[3]>\", line 1, in <module>\n        sage_input(ComplexIntervalField(Integer(64))(Integer(2))**I, preparse=False, verify=True)###line 456:\n    sage: sage_input(ComplexIntervalField(64)(2)^I, preparse=False, verify=True)\n      File \"complex_interval.pyx\", line 432, in sage.rings.complex_interval.ComplexIntervalFieldElement.__pow__ (sage/rings/complex_interval.c:6298)\n        return (self.log() * right).exp()\n      File \"element.pyx\", line 1154, in sage.structure.element.RingElement.__mul__ (sage/structure/element.c:10558)\n      File \"coerce.pyx\", line 740, in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:7168)\n    TypeError: unsupported operand parent(s) for '*': 'Complex Interval Field with 64 bits of precision' and 'Symbolic Ring'\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_14\n```\n\n\nOtherwise, this looks very good. \n\nThe above is against sage-3.4.1.rc2.",
+    "created_at": "2009-04-12T05:03:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5423",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5423#issuecomment-41974",
+    "user": "was"
+}
+```
 
 The following doctests fail after applying the rebased patch:
 
@@ -90,15 +163,37 @@ Otherwise, this looks very good.
 The above is against sage-3.4.1.rc2.
 
 
+
 ---
 
-Comment by robertwb created at 2009-05-18 21:51:23
+archive/issue_comments_041975.json:
+```json
+{
+    "body": "Made obsolete by the Pynac switch.",
+    "created_at": "2009-05-18T21:51:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5423",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5423#issuecomment-41975",
+    "user": "robertwb"
+}
+```
 
 Made obsolete by the Pynac switch.
 
 
+
 ---
 
-Comment by mabshoff created at 2009-05-18 22:01:44
+archive/issue_comments_041976.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2009-05-18T22:01:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5423",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5423#issuecomment-41976",
+    "user": "mabshoff"
+}
+```
 
 Resolution: invalid

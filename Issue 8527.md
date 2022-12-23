@@ -1,11 +1,21 @@
 # Issue 8527: libcocoa-0.9930 indicates its sucessfully installed when it has not.
 
-Issue created by migration from https://trac.sagemath.org/ticket/8527
-
-Original creator: drkirkby
-
-Original creation time: 2010-03-13 20:00:31
-
+archive/issues_008527.json:
+```json
+{
+    "body": "Assignee: tbd\n\nIn trying to rid libcocoa-0.9930 of the GNUims that \nprevents this installing on on Solaris (see #8521), I found another problem with this package. It appears that the error codes are not properly checked, so even if there are build failures, the package indicates it has been successfully installed. See below:\n\n\n```\nCompiling RegisterServerOps.o\nCompiling TmpFrobby.o\nCompiling RegisterServerOpsFrobby.o\nCompiling directory CoCoALib/src/AlgebraicCore/TmpFactorDir/\nmake[4]: Entering directory `/export/home/drkirkby/sage-4.3.4.alpha1/local/lib/cocoa-0.9930.p0/src/src/AlgebraicCore/TmpFactorDir'\nMakefile:4: ../../../../configuration/autoconf.mk: No such file or directory\nmake[4]: *** No rule to make target `../../../../configuration/autoconf.mk'.  Stop.\nmake[4]: Leaving directory `/export/home/drkirkby/sage-4.3.4.alpha1/local/lib/cocoa-0.9930.p0/src/src/AlgebraicCore/TmpFactorDir'\n***** Compilation of CoCoALib/src/AlgebraicCore/TmpFactorDir/ FAILED *****\nmake[3]: *** [../../lib/libcocoa.a] Error 1\nmake[3]: Leaving directory `/export/home/drkirkby/sage-4.3.4.alpha1/local/lib/cocoa-0.9930.p0/src/src/AlgebraicCore'\n*****[[Compilation[failed[in[CoCoA[library[source[subdirectory[AlgebraicCore/[[*****\n*****  Compilation failed in CoCoA library source subdirectory AlgebraicCore/  *****\n*****[[Compilation[failed[in[CoCoA[library[source[subdirectory[AlgebraicCore/[[*****\nmake[2]: *** [library] Error 1\nmake[2]: Leaving directory `/export/home/drkirkby/sage-4.3.4.alpha1/local/lib/cocoa-0.9930.p0/src/src'\nmake[1]: *** [library] Error 2\nmake[1]: Leaving directory `/export/home/drkirkby/sage-4.3.4.alpha1/local/lib/cocoa-0.9930.p0/src'\nmake: *** [default] Error 2\nDoing the build in the following directory:\n/export/home/drkirkby/sage-4.3.4.alpha1/local/lib/cocoa-0.9930.p0\n./configure  --with-libgmp=$SAGE_LOCAL/lib/libgmp.so\nNow running Make\nmake\nThere are known test failures that should be listed above.\nThey are literally 'not yet implemented' errors from the\nCoCOA library.   I.e., CoCOA releases purposely don't pass\ntheir own test suite at present.\nlibcocoa.a built!\n\n----------------------------------------------------------------------\n\nTo play with libcocoa, type 'sage -sh', then cd to the directory\n\n   /export/home/drkirkby/sage-4.3.4.alpha1/local/lib/cocoa-0.9930.p0/src/examples\n\nand try making and running some of the examples.\nWhen you're done, it is completely safe to delete directory:\n\n   /export/home/drkirkby/sage-4.3.4.alpha1/local/lib/cocoa-0.9930.p0\n\n----------------------------------------------------------------------\n\nreal    4m38.333s\nuser    4m13.925s\nsys     0m21.973s\nSuccessfully installed libcocoa-0.9930.p0\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8527\n\n",
+    "created_at": "2010-03-13T20:00:31Z",
+    "labels": [
+        "packages: optional",
+        "major",
+        "bug"
+    ],
+    "title": "libcocoa-0.9930 indicates its sucessfully installed when it has not.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8527",
+    "user": "drkirkby"
+}
+```
 Assignee: tbd
 
 In trying to rid libcocoa-0.9930 of the GNUims that 
@@ -64,17 +74,43 @@ Successfully installed libcocoa-0.9930.p0
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/8527
+
+
+
+
 
 ---
 
-Comment by slelievre created at 2019-04-13 13:35:07
+archive/issue_comments_077061.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2019-04-13T13:35:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8527",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8527#issuecomment-77061",
+    "user": "slelievre"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by slelievre created at 2019-04-13 13:35:07
+archive/issue_comments_077062.json:
+```json
+{
+    "body": "Propose to close this ticket as obsolete.\n- The experimental libcocoa package seems to have been removed long ago, see #14962.\n- There is a new cocoalib package, see #25707.\nPlease review.",
+    "created_at": "2019-04-13T13:35:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8527",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8527#issuecomment-77062",
+    "user": "slelievre"
+}
+```
 
 Propose to close this ticket as obsolete.
 - The experimental libcocoa package seems to have been removed long ago, see #14962.
@@ -82,15 +118,37 @@ Propose to close this ticket as obsolete.
 Please review.
 
 
+
 ---
 
-Comment by mkoeppe created at 2019-06-06 18:30:20
+archive/issue_comments_077063.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2019-06-06T18:30:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8527",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8527#issuecomment-77063",
+    "user": "mkoeppe"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by chapoton created at 2019-06-06 18:35:28
+archive/issue_comments_077064.json:
+```json
+{
+    "body": "Resolution: wontfix",
+    "created_at": "2019-06-06T18:35:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8527",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8527#issuecomment-77064",
+    "user": "chapoton"
+}
+```
 
 Resolution: wontfix

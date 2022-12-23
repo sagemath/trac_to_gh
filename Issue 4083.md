@@ -1,11 +1,21 @@
 # Issue 4083: sage.finance - Options pricing implementation
 
-Issue created by migration from https://trac.sagemath.org/ticket/4083
-
-Original creator: cswiercz
-
-Original creation time: 2008-09-09 02:16:17
-
+archive/issues_004083.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  cswiercz software@pacificafog.com slelievre\n\nKeywords: finance, options, black-scholes\n\nIncludes capabilities for options pricing using the Black-Scholes model. The primary class of this ticket is finance.Option, which uses finance.Stock.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4083\n\n",
+    "created_at": "2008-09-09T02:16:17Z",
+    "labels": [
+        "finance",
+        "major",
+        "enhancement"
+    ],
+    "title": "sage.finance - Options pricing implementation",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4083",
+    "user": "cswiercz"
+}
+```
 Assignee: was
 
 CC:  cswiercz software@pacificafog.com slelievre
@@ -14,31 +24,81 @@ Keywords: finance, options, black-scholes
 
 Includes capabilities for options pricing using the Black-Scholes model. The primary class of this ticket is finance.Option, which uses finance.Stock.
 
+Issue created by migration from https://trac.sagemath.org/ticket/4083
+
+
+
+
 
 ---
+
+archive/issue_comments_029454.json:
+```json
+{
+    "body": "Attachment\n\nInitial implementation of the Option class.",
+    "created_at": "2008-09-09T02:17:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4083",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4083#issuecomment-29454",
+    "user": "cswiercz"
+}
+```
 
 Attachment
 
 Initial implementation of the Option class.
 
 
+
 ---
 
-Comment by cswiercz created at 2008-09-16 22:40:55
+archive/issue_comments_029455.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-09-16T22:40:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4083",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4083#issuecomment-29455",
+    "user": "cswiercz"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by cswiercz created at 2008-09-16 22:40:55
+archive/issue_comments_029456.json:
+```json
+{
+    "body": "Changing assignee from was to cswiercz.",
+    "created_at": "2008-09-16T22:40:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4083",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4083#issuecomment-29456",
+    "user": "cswiercz"
+}
+```
 
 Changing assignee from was to cswiercz.
 
 
+
 ---
 
-Comment by was created at 2008-11-28 03:11:22
+archive/issue_comments_029457.json:
+```json
+{
+    "body": "REFEREE:\n\nThis code is *really* good, and I definitely want it in Sage.  There are a bunch of minor issues that need to be fixed. \n\n1. A bunch of doctests fail when run on OSX 10.5 32-bit, which is maybe numerical noise:\n\n```\nteragon-2:finance wstein$ sage -t black_scholes.py \nsage -t  devel/sage-main/sage/finance/black_scholes.py      **********************************************************************\nFile \"/Users/wstein/sage/devel/sage-main/sage/finance/black_scholes.py\", line 43:\n    sage: tenyr_swap.Black(5, 1.2, 0.25, 'n')\nExpected:\n    0.0679829347644\nGot:\n    0.067982934764359987\n**********************************************************************\nFile \"/Users/wstein/sage/devel/sage-main/sage/finance/black_scholes.py\", line 333:\n    sage: opt.Black(5, 1.2, 0.25, 'ln')\nExpected:\n    1.38685477149\nGot:\n    1.3868547714858503\n**********************************************************************\nFile \"/Users/wstein/sage/devel/sage-main/sage/finance/black_scholes.py\", line 335:\n    sage: opt._bs_ln()\nExpected:\n    1.38685477149\nGot:\n    1.3868547714858503\n**********************************************************************\nFile \"/Users/wstein/sage/devel/sage-main/sage/finance/black_scholes.py\", line 272:\n    sage: aapl_200c.Black(175, 0.4, 0.5, 'ln')\nExpected:\n    10.8744664878\nGot:\n    10.874466487776381\n**********************************************************************\nFile \"/Users/wstein/sage/devel/sage-main/sage/finance/black_scholes.py\", line 318:\n    sage: opt.Black(5, 1.2, 0.25, 'n')\nExpected:\n    0.567982934764\nGot:\n    0.5679829347643599\n**********************************************************************\nFile \"/Users/wstein/sage/devel/sage-main/sage/finance/black_scholes.py\", line 320:\n    sage: opt._bs_n()\nExpected:\n    0.567982934764\nGot:\n    0.5679829347643599\n**********************************************************************\n4 items had failures:\n   1 of   7 in __main__.example_1\n   2 of   5 in __main__.example_10\n   1 of   4 in __main__.example_8\n   2 of   5 in __main__.example_9\n***Test Failed*** 6 failures.\nFor whitespace errors, see the file /Users/wstein/sage/tmp/.doctest_black_scholes.py\n\t [13.8 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  devel/sage-main/sage/finance/black_scholes.py\nTotal time for all tests: 13.8 seconds\nteragon-2:finance wstein$ \n```\n\n\n2. There are three convenience functions with no doctests, which breaks the 100% coverage rule:\n\n```\ndef n(x):       return scipy.stats.norm.pdf(float(x))\ndef N(x):       return scipy.stats.norm.cdf(float(x))\ndef invNorm(x): return scipy.stats.norm.ppf(float(x), loc=0, scale=1)\n```\n\nIn fact the coverage score isn't very good:\n\n```\nteragon-2:finance wstein$ sage -coverage black_scholes.py \n----------------------------------------------------------------------\nblack_scholes.py\nERROR: Please define a s == loads(dumps(s)) doctest.\nSCORE black_scholes.py: 50% (9 of 18)\n\nMissing documentation:\n\t * n(x):\n\t * N(x):\n\t * invNorm(x):\n\t * _fullalpha(self, cps):\n\t * _alpha(self):\n\t * _beta(self):\n\t * _ratio(self):\n\t * _d1(self):\n\t * _d2(self):\n```\n\n\n3. There is an empty TESTS: block at the top of the file.  (Just delete it.)\n\n4. There are several instances of % in docstrings, which will confuse latex.  I'm not sure if this matters, since we're switching to Sphinx. \n\n5. I see the text \"Funciton call is inherent:\" in the __init__ method.  It has typos and makes no sense.\n\n6. Change things like this in docstrings\n\n```\n# optional -- requires internet and random\n```\n\nto\n\n```\n# random; optional -- internet\n```\n\nThis will work using the new -only_optional doctesting framework, which allows us to test only particular components (e.g., those that require the internet).",
+    "created_at": "2008-11-28T03:11:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4083",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4083#issuecomment-29457",
+    "user": "was"
+}
+```
 
 REFEREE:
 
@@ -162,57 +222,145 @@ to
 This will work using the new -only_optional doctesting framework, which allows us to test only particular components (e.g., those that require the internet).
 
 
+
 ---
 
-Comment by psinis created at 2009-02-23 22:17:37
+archive/issue_comments_029458.json:
+```json
+{
+    "body": "Changing assignee from cswiercz to psinis.",
+    "created_at": "2009-02-23T22:17:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4083",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4083#issuecomment-29458",
+    "user": "psinis"
+}
+```
 
 Changing assignee from cswiercz to psinis.
 
 
+
 ---
 
-Comment by psinis created at 2009-02-23 22:17:37
+archive/issue_comments_029459.json:
+```json
+{
+    "body": "Changing status from assigned to new.",
+    "created_at": "2009-02-23T22:17:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4083",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4083#issuecomment-29459",
+    "user": "psinis"
+}
+```
 
 Changing status from assigned to new.
 
 
+
 ---
 
-Comment by chapoton created at 2013-09-08 08:23:29
+archive/issue_comments_029460.json:
+```json
+{
+    "body": "See #14671",
+    "created_at": "2013-09-08T08:23:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4083",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4083#issuecomment-29460",
+    "user": "chapoton"
+}
+```
 
 See #14671
 
 
+
 ---
 
-Comment by mkoeppe created at 2021-10-10 20:30:02
+archive/issue_comments_029461.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2021-10-10T20:30:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4083",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4083#issuecomment-29461",
+    "user": "mkoeppe"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by mkoeppe created at 2021-10-10 20:30:02
+archive/issue_comments_029462.json:
+```json
+{
+    "body": "outdated after sage.finance deprecation in #32427",
+    "created_at": "2021-10-10T20:30:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4083",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4083#issuecomment-29462",
+    "user": "mkoeppe"
+}
+```
 
 outdated after sage.finance deprecation in #32427
 
 
+
 ---
 
-Comment by slelievre created at 2021-10-25 10:59:04
+archive/issue_comments_029463.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2021-10-25T10:59:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4083",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4083#issuecomment-29463",
+    "user": "slelievre"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by slelievre created at 2021-10-25 10:59:04
+archive/issue_comments_029464.json:
+```json
+{
+    "body": "Ok.",
+    "created_at": "2021-10-25T10:59:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4083",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4083#issuecomment-29464",
+    "user": "slelievre"
+}
+```
 
 Ok.
 
 
+
 ---
 
-Comment by mkoeppe created at 2021-10-25 15:39:21
+archive/issue_comments_029465.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2021-10-25T15:39:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4083",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4083#issuecomment-29465",
+    "user": "mkoeppe"
+}
+```
 
 Resolution: invalid

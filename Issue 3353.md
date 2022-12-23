@@ -1,11 +1,21 @@
 # Issue 3353: bug in MatrixGroup iterator
 
-Issue created by migration from https://trac.sagemath.org/ticket/3353
-
-Original creator: wdj
-
-Original creation time: 2008-06-03 01:49:52
-
+archive/issues_003353.json:
+```json
+{
+    "body": "Assignee: joyner\n\n\nHere's a problem with the iterator for GL(2,p):\n\n\n```\nsage: p = 5\nsage: G = GL(2,p)\nsage: z = iter(G)\nsage: z\n<iterator object at 0x3c737d0>\nsage: z.next()\n[0 1]\n[1 0]\nsage: z.next()\n[0 1]\n[1 1]\n```\n\nIt takes quite a bit of time to do each .next().\n\nThis is a serious issue for someone trying to compute orbits of matrix group actions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3353\n\n",
+    "created_at": "2008-06-03T01:49:52Z",
+    "labels": [
+        "group theory",
+        "major",
+        "bug"
+    ],
+    "title": "bug in MatrixGroup iterator",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3353",
+    "user": "wdj"
+}
+```
 Assignee: joyner
 
 
@@ -30,10 +40,25 @@ It takes quite a bit of time to do each .next().
 
 This is a serious issue for someone trying to compute orbits of matrix group actions.
 
+Issue created by migration from https://trac.sagemath.org/ticket/3353
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-06-03 02:10:02
+archive/issue_comments_023302.json:
+```json
+{
+    "body": "This because we are calling GAP via pexpect. Notice specifically\n\n```\n        1    0.009    0.009   35.754   35.754 matrix_group.py:390(list)\n```\n\nIn total:\n\n```\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n   104450    5.372    0.000   17.593    0.000 pexpect.py:815(compile_pattern_list)\n   104450    5.350    0.000   10.881    0.000 pexpect.py:914(expect_list)\n  1029995    4.595    0.000    6.616    0.000 re.py:227(_compile)\n  1029995    3.899    0.000   10.515    0.000 re.py:186(compile)\n  1123001    2.472    0.000    2.472    0.000 {built-in method search}\n  1029995    2.021    0.000    2.021    0.000 {method 'get' of 'dict' objects}\n  1103065    1.829    0.000    1.829    0.000 {method 'append' of 'list' objects}\n    28498    1.430    0.000    1.430    0.000 {posix.write}\n   545128    0.942    0.000    0.942    0.000 {built-in method start}\n    14249    0.819    0.000   32.053    0.002 gap.py:379(_execute_line)\n   104450    0.662    0.000   29.136    0.000 pexpect.py:855(expect)\n    27816    0.446    0.000    1.428    0.000 pexpect.py:498(read_nonblocking)\n    14249    0.409    0.000   32.808    0.002 gap.py:468(_eval_line)\n   208900    0.370    0.000    0.370    0.000 {built-in method end}\n   143987    0.318    0.000    0.318    0.000 {method 'index' of 'list' objects}\n     8006    0.261    0.000   18.662    0.002 expect.py:888(eval)\n  960/480    0.250    0.000    5.572    0.012 {method '_gap_' of 'sage.structure.sage_object.SageObject' objects}\n    27816    0.239    0.000    0.239    0.000 {select.select}\n    27816    0.229    0.000    0.229    0.000 {posix.read}\n    27816    0.218    0.000    0.409    0.000 pexpect.py:739(isalive)\n125845/125808    0.207    0.000    0.216    0.000 {len}\n    28498    0.206    0.000    1.745    0.000 pexpect.py:656(send)\n    55632    0.191    0.000    0.191    0.000 {posix.waitpid}\n     6243    0.176    0.000    0.303    0.000 expect.py:1300(__del__)\n     8006    0.159    0.000   18.901    0.002 gap.py:294(eval)\n    11040    0.158    0.000   11.676    0.001 {sage.rings.integer_mod.IntegerMod}\n    14886    0.137    0.000    0.167    0.000 expect.py:1277(_check_valid)\n    60190    0.123    0.000    0.123    0.000 {isinstance}\n    28498    0.109    0.000    0.109    0.000 {time.sleep}\n     6243    0.107    0.000   14.969    0.002 expect.py:1199(__init__)\n    14249    0.100    0.000    1.845    0.000 pexpect.py:668(sendline)\n     1920    0.099    0.000    8.714    0.005 gap.py:739(gfq_gap_to_sage)\n     4802    0.096    0.000   10.702    0.002 expect.py:1326(__repr__)\n7203/6243    0.094    0.000   19.651    0.003 expect.py:930(__call__)\n11040/7520    0.089    0.000   20.444    0.003 integer_mod_ring.py:574(__call__)\n     1600    0.080    0.000    0.083    0.000 {eval}\n      480    0.077    0.000   29.161    0.061 gap.py:677(_matrix_)\n    40827    0.074    0.000    0.074    0.000 {method 'join' of 'str' objects}\n     1440    0.071    0.000    0.137    0.000 matrix_space.py:914(matrix)\n    34218    0.067    0.000    0.067    0.000 {method 'find' of 'str' objects}\n     3360    0.066    0.000    6.191    0.002 gap.py:613(__getitem__)\n    23855    0.058    0.000    0.058    0.000 {method 'replace' of 'str' objects}\n     8006    0.056    0.000    0.083    0.000 expect.py:123(__enter__)\n     2403    0.055    0.000    8.096    0.003 expect.py:1101(function_call)\n     6243    0.054    0.000   14.732    0.002 gap.py:341(set)\n    31216    0.052    0.000    0.052    0.000 {method 'parent' of 'sage.structure.element.Element' objects}\n    27816    0.051    0.000    0.051    0.000 {method 'lower' of 'str' objects}\n     6243    0.049    0.000   14.840    0.002 expect.py:1089(_create)\n     6243    0.049    0.000    0.059    0.000 gap.py:225(_next_var_name)\n 1440/960    0.046    0.000    0.203    0.000 matrix_space.py:243(__call__)\n     1920    0.043    0.000    4.339    0.002 expect.py:1396(_integer_)\n     4802    0.043    0.000   10.755    0.002 gap.py:630(__repr__)\n     8006    0.038    0.000    0.051    0.000 expect.py:127(__exit__)\n    10407    0.034    0.000    0.034    0.000 gap.py:368(__getattr__)\n     7205    0.032    0.000    0.040    0.000 gap.py:608(__getattr__)\n     4802    0.031    0.000   10.535    0.002 gap.py:352(get)\n     2403    0.029    0.000    8.129    0.003 expect.py:1181(__call__)\n     5763    0.027    0.000   14.089    0.002 expect.py:1012(new)\n    14249    0.025    0.000    0.025    0.000 gap.py:222(_quit_string)\n    14088    0.023    0.000    0.023    0.000 {ord}\n     8006    0.023    0.000    0.023    0.000 {method 'split' of 'str' objects}\n     4323    0.019    0.000    0.027    0.000 expect.py:1075(clear)\n      480    0.016    0.000    5.709    0.012 matrix_group_element.py:75(__init__)\n     2882    0.015    0.000    6.466    0.002 {repr}\n     7044    0.015    0.000    0.015    0.000 {chr}\n     8006    0.015    0.000    0.015    0.000 {method 'rstrip' of 'str' objects}\n     8006    0.014    0.000    0.014    0.000 {method 'strip' of 'str' objects}\n     7203    0.014    0.000    0.014    0.000 gap.py:547(_object_class)\n     8006    0.013    0.000    0.013    0.000 {gc.enable}\n     8006    0.013    0.000    0.013    0.000 {gc.isenabled}\n  960/480    0.013    0.000    5.580    0.012 expect.py:963(_coerce_from_special_method)\n     8006    0.013    0.000    0.013    0.000 {gc.disable}\n     4803    0.013    0.000    0.013    0.000 {hasattr}\n     2401    0.012    0.000    0.017    0.000 expect.py:274(_repr_)\n      480    0.011    0.000    0.027    0.000 matrix_space.py:105(MatrixSpace)\n      480    0.010    0.000    0.013    0.000 {method 'has_key' of 'dict' objects}\n     3840    0.010    0.000    0.010    0.000 expect.py:287(name)\n     3360    0.010    0.000    0.010    0.000 finite_field_prime_modn.py:121(characteristic)\n     3844    0.010    0.000    0.010    0.000 {range}\n        1    0.009    0.009   35.754   35.754 matrix_group.py:390(list)\n      480    0.008    0.000    0.011    0.000 {method 'copy' of 'sage.matrix.matrix0.Matrix' objects}\n     1920    0.008    0.000    0.012    0.000 gap.py:736(is_GapElement)\n     2887    0.008    0.000    0.008    0.000 expect.py:1404(name)\n     2403    0.008    0.000    0.008    0.000 expect.py:1174(__init__)\n     1600    0.006    0.000    0.006    0.000 finite_field_prime_modn.py:187(order)\n     3200    0.006    0.000    0.006    0.000 {method 'index' of 'str' objects}\n     1440    0.006    0.000    0.009    0.000 matrix_group_element.py:60(is_MatrixGroupElement)\n      962    0.006    0.000    2.176    0.002 expect.py:1377(__int__)\n     2401    0.005    0.000    0.005    0.000 {method 'capitalize' of 'str' objects}\n     2560    0.005    0.000    0.005    0.000 finite_field_prime_modn.py:238(degree)\n     1440    0.004    0.000    0.004    0.000 matrix_space.py:1001(nrows)\n     1440    0.003    0.000    0.003    0.000 matrix_space.py:990(ncols)\n     1440    0.003    0.000    0.003    0.000 {sage.matrix.matrix.is_Matrix}\n      480    0.003    0.000    0.003    0.000 matrix_group.py:215(matrix_space)\n      481    0.003    0.000    0.861    0.002 expect.py:1224(__iter__)\n      480    0.002    0.000    0.002    0.000 {sum}\n      480    0.002    0.000    0.002    0.000 {sage.modules.free_module_element.is_FreeModuleElement}\n      480    0.001    0.000    0.001    0.000 {sage.rings.ring.is_Ring}\n      480    0.001    0.000    0.001    0.000 {method 'is_immutable' of 'sage.matrix.matrix0.Matrix' objects}\n        1    0.000    0.000    0.000    0.000 matrix_group.py:170(_gap_)\n        2    0.000    0.000    0.020    0.010 gap.py:639(__len__)\n        1    0.000    0.000    0.000    0.000 matrix_group.py:280(is_finite)\n        1    0.000    0.000    0.000    0.000 matrix_group.py:263(base_ring)\n        1    0.000    0.000    0.000    0.000 {method 'is_finite' of 'sage.rings.ring.FiniteField' objects}\n        1    0.000    0.000    0.000    0.000 matrix_group.py:245(field_of_definition)\n        1    0.000    0.000    0.000    0.000 <string>:1(<module>)\n        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2008-06-03T02:10:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3353",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3353#issuecomment-23302",
+    "user": "mabshoff"
+}
+```
 
 This because we are calling GAP via pexpect. Notice specifically
 
@@ -161,23 +186,45 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-03 02:33:12
+archive/issue_comments_023303.json:
+```json
+{
+    "body": "Oh, while I am at it:\n\n* without prun z.next() costs 12 seconds\n* the resulting list created by matrix_group.py:390 is *not* even cached, i.e. each next() is equally expensive.\n\nCheers,\n\nMichael",
+    "created_at": "2008-06-03T02:33:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3353",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3353#issuecomment-23303",
+    "user": "mabshoff"
+}
+```
 
 Oh, while I am at it:
 
- * without prun z.next() costs 12 seconds
- * the resulting list created by matrix_group.py:390 is *not* even cached, i.e. each next() is equally expensive.
+* without prun z.next() costs 12 seconds
+* the resulting list created by matrix_group.py:390 is *not* even cached, i.e. each next() is equally expensive.
 
 Cheers,
 
 Michael
 
 
+
 ---
 
-Comment by was created at 2008-06-03 02:46:54
+archive/issue_comments_023304.json:
+```json
+{
+    "body": "First observation:  Every single time you call .next(), there are about a 1000 calls\nvia pexpect to gap.   Those calls create a list of the 474 elements of the group G.\n\nThe following works a little better:\n\n```\nsage: G = GL(2,p)\nsage: time v = iter(G.list())\nCPU times: user 7.95 s, sys: 2.95 s, total: 10.91 s\nWall time: 11.20 s\nsage: time v.next()\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\n[0 1]\n[1 0]\nsage: time v.next()\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\n[0 1]\n[1 1]\nsage: time v.next()\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\n[0 1]\n[1 2]\n```\n",
+    "created_at": "2008-06-03T02:46:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3353",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3353#issuecomment-23304",
+    "user": "was"
+}
+```
 
 First observation:  Every single time you call .next(), there are about a 1000 calls
 via pexpect to gap.   Those calls create a list of the 474 elements of the group G.
@@ -208,9 +255,20 @@ Wall time: 0.00 s
 
 
 
+
 ---
 
-Comment by was created at 2008-06-03 04:15:23
+archive/issue_comments_023305.json:
+```json
+{
+    "body": "I made some changes to the \"programming model\" to be much better about taking\nadvantage of how pexpect works, then fixed a bunch of major little efficiency\nflaws in some code.  Now things are over 100 times faster:\n\n```\nsage: p = 5\nsage: G = GL(2,p)\nsage: z = iter(G)\nsage: z\n<iterator object at 0x8113910>\nsage: time z.next()\nCPU times: user 0.06 s, sys: 0.02 s, total: 0.08 s\nWall time: 0.37 s\n\n[0 1]\n[1 0]\nsage: time z.next()\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\n\n[0 1]\n[1 1]\nsage: time z.next()\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\n\n[0 1]\n[1 2]\nsage: time z.next()\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\n\n[0 1]\n[1 4]\nsage: time z.next()\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\n\n[0 1]\n[1 3]\n```\n\n\nYou will also find that arithmetic is vastly faster.\n\nBefore:\n\n\n```\nsage: a = z.next()\nsage: timeit('a*a')\n125 loops, best of 3: 3.09 ms per loop\n```\n\n\nAfter\n\n```\nsage: a = z.next()\nsage: timeit('a*a')\n625 loops, best of 3: 80.6 \u00b5s per loop\n```\n\n\nThat's about 40 times faster!",
+    "created_at": "2008-06-03T04:15:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3353",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3353#issuecomment-23305",
+    "user": "was"
+}
+```
 
 I made some changes to the "programming model" to be much better about taking
 advantage of how pexpect works, then fixed a bunch of major little efficiency
@@ -279,14 +337,38 @@ sage: timeit('a*a')
 That's about 40 times faster!
 
 
+
 ---
+
+archive/issue_comments_023306.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-06-03T04:17:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3353",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3353#issuecomment-23306",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by robertwb created at 2008-06-03 05:40:52
+archive/issue_comments_023307.json:
+```json
+{
+    "body": "For the most part the patch looks good, and cleans up a lot of stuff as well as being way faster. Something needs to be handled more carefully with the string substitution though: \n\n\n```\nsage: list(GL(3,3))\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"parent_gens.pyx\", line 218, in sage.structure.parent_gens.ParentWithGens.__len__ (sage/structure/parent_gens.c:1759)\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/groups/matrix_gps/matrix_group.py\", line 443, in list\n    v = eval(s, {'a':a, 'b':b})\n  File \"<string>\", line 757, in <module>\n<type 'exceptions.NameError'>: name 'Z' is not defined\n```\n",
+    "created_at": "2008-06-03T05:40:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3353",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3353#issuecomment-23307",
+    "user": "robertwb"
+}
+```
 
 For the most part the patch looks good, and cleans up a lot of stuff as well as being way faster. Something needs to be handled more carefully with the string substitution though: 
 
@@ -305,41 +387,109 @@ Traceback (most recent call last):
 
 
 
+
 ---
 
-Comment by was created at 2008-06-03 05:49:53
+archive/issue_comments_023308.json:
+```json
+{
+    "body": "this fixes the one bug spotted by the referee",
+    "created_at": "2008-06-03T05:49:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3353",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3353#issuecomment-23308",
+    "user": "was"
+}
+```
 
 this fixes the one bug spotted by the referee
 
 
+
 ---
+
+archive/issue_comments_023309.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-06-03T05:50:05Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3353",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3353#issuecomment-23309",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by robertwb created at 2008-06-03 06:31:48
+archive/issue_comments_023310.json:
+```json
+{
+    "body": "That fixes it for me, and all else works well.",
+    "created_at": "2008-06-03T06:31:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3353",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3353#issuecomment-23310",
+    "user": "robertwb"
+}
+```
 
 That fixes it for me, and all else works well.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-04 20:36:19
+archive/issue_comments_023311.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-06-04T20:36:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3353",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3353#issuecomment-23311",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-04 20:36:19
+archive/issue_comments_023312.json:
+```json
+{
+    "body": "Merged both patches in Sage 3.0.3.alpha1",
+    "created_at": "2008-06-04T20:36:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3353",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3353#issuecomment-23312",
+    "user": "mabshoff"
+}
+```
 
 Merged both patches in Sage 3.0.3.alpha1
 
 
+
 ---
 
-Comment by rlm created at 2008-06-11 16:20:53
+archive/issue_comments_023313.json:
+```json
+{
+    "body": "I know the ticket is closed, but I'd like to add a very positive review to this ticket. A computation I was trying this morning to check a small conjecture was just not going to happen. After applying the patch, I know that my conjecture was right!",
+    "created_at": "2008-06-11T16:20:53Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3353",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3353#issuecomment-23313",
+    "user": "rlm"
+}
+```
 
 I know the ticket is closed, but I'd like to add a very positive review to this ticket. A computation I was trying this morning to check a small conjecture was just not going to happen. After applying the patch, I know that my conjecture was right!

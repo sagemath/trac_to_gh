@@ -1,11 +1,21 @@
 # Issue 9518: Add an spkg-check file for Pari
 
-Issue created by migration from https://trac.sagemath.org/ticket/9518
-
-Original creator: drkirkby
-
-Original creation time: 2010-07-16 17:10:13
-
+archive/issues_009518.json:
+```json
+{
+    "body": "Assignee: drkirkby\n\nCC:  cremona was robertwb\n\nJohn Cremona remarked on #9281 that Pari had a self test that could be run from `make test-all`, so an spkg-check file should be added to do this. I will take care of it. Hopefully John can review it. \n\n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9518\n\n",
+    "created_at": "2010-07-16T17:10:13Z",
+    "labels": [
+        "spkg-check",
+        "major",
+        "bug"
+    ],
+    "title": "Add an spkg-check file for Pari",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9518",
+    "user": "drkirkby"
+}
+```
 Assignee: drkirkby
 
 CC:  cremona was robertwb
@@ -15,26 +25,63 @@ John Cremona remarked on #9281 that Pari had a self test that could be run from 
 
 Dave
 
+Issue created by migration from https://trac.sagemath.org/ticket/9518
+
+
+
+
 
 ---
 
-Comment by cremona created at 2010-07-16 17:36:08
+archive/issue_comments_091500.json:
+```json
+{
+    "body": "Changing type from defect to enhancement.",
+    "created_at": "2010-07-16T17:36:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9518",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9518#issuecomment-91500",
+    "user": "cremona"
+}
+```
 
 Changing type from defect to enhancement.
 
 
+
 ---
 
-Comment by cremona created at 2010-07-16 17:36:08
+archive/issue_comments_091501.json:
+```json
+{
+    "body": "Dave, I suggest that you leave this to be done as part of the #9343 upgrade.  I have already started working on this, including reporting some issues with the testing script upstream to par-dev.\n\nI thought you would like this plan -- and pleasantly surprised to see that after fixing bugs they add tests to the suite.",
+    "created_at": "2010-07-16T17:36:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9518",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9518#issuecomment-91501",
+    "user": "cremona"
+}
+```
 
 Dave, I suggest that you leave this to be done as part of the #9343 upgrade.  I have already started working on this, including reporting some issues with the testing script upstream to par-dev.
 
 I thought you would like this plan -- and pleasantly surprised to see that after fixing bugs they add tests to the suite.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-07-16 17:43:31
+archive/issue_comments_091502.json:
+```json
+{
+    "body": "Replying to [comment:1 cremona]:\n> Dave, I suggest that you leave this to be done as part of the #9343 upgrade. \n\nNo problem. \n\nI actually get some failures. I'll attach the spkg-check file as an attachment, since I'd already done it. It will save you the hassle. \n\nI actually get some failures on my OpenSolaris machine. In fact, whilst Sage builds on OpenSolaris, it crashes at startup. So perhaps I might look at Pari as a possible source of trouble. \n\n\n```\nmake[1]: Leaving directory `/export/home/drkirkby/sage-4.5/spkg/build/pari-2.3.5.p2/src/Osolaris-ix86'\n\nreal\t0m21.787s\nuser\t1m52.919s\nsys\t0m5.264s\nSuccessfully installed pari-2.3.5.p2\nRunning the test suite.\nMaking test-all in Osolaris-ix86\nmake[1]: Entering directory `/export/home/drkirkby/sage-4.5/spkg/build/pari-2.3.5.p2/src/Osolaris-ix86'\nFile ../src/funclist not changed.\nrm -f gp-sta\ngcc  -o gp-sta -O3 -Wall -fno-strict-aliasing -fomit-frame-pointer -fPIC  -g -m64    mp.o mpinl.o Flx.o Qfb.o RgX.o alglin1.o alglin2.o arith1.o arith2.o base1.o base2.o base3.o base4.o base5.o bibli1.o bibli2.o buch1.o buch2.o buch3.o buch4.o galconj.o gen1.o gen2.o gen3.o ifactor1.o perm.o polarit1.o polarit2.o polarit3.o rootpol.o subcyclo.o subgroup.o trans1.o trans2.o trans3.o anal.o compat.o default.o errmsg.o es.o init.o intnum.o members.o sumiter.o aprcl.o elldata.o elliptic.o galois.o groupid.o kummer.o mpqs.o nffactor.o part.o stark.o subfield.o thue.o gp.o gp_init.o gp_rl.o highlvl.o whatnow.o plotport.o plotnull.o    -lm -L/export/home/drkirkby/sage-4.5/local/lib -lgmp\n* Testing objets \tfor gp-sta..TIME=0\tfor gp-dyn..TIME=0\n* Testing analyz \tfor gp-sta..TIME=13\tfor gp-dyn..TIME=15\n* Testing number \tfor gp-sta..TIME=13\tfor gp-dyn..TIME=14\n* Testing polyser \tfor gp-sta..TIME=3\tfor gp-dyn..TIME=7\n* Testing linear \tfor gp-sta..TIME=8\tfor gp-dyn..TIME=5\n* Testing elliptic \tfor gp-sta..TIME=9\tfor gp-dyn..TIME=9\n* Testing sumiter \tfor gp-sta..TIME=17\tfor gp-dyn..TIME=16\n* Testing graph \tfor gp-sta..TIME=4\tfor gp-dyn..TIME=4\n* Testing program \tfor gp-sta..TIME=5\tfor gp-dyn..TIME=8\n* Testing trans \tfor gp-sta..TIME=42\tfor gp-dyn..TIME=27\n* Testing nfields \tfor gp-sta..TIME=137\tfor gp-dyn..TIME=105\n* Testing compat \tfor gp-sta..TIME=157\tfor gp-dyn..TIME=163\n* Testing ellglobalred \tfor gp-sta..BUG [2]\tfor gp-dyn..BUG [2]\n* Testing galois \tfor gp-sta..TIME=7763\tfor gp-dyn..TIME=7455\n* Testing intnum \tfor gp-sta..TIME=7013\tfor gp-dyn..TIME=7214\n* Testing qfbsolve \tfor gp-sta..TIME=1465\tfor gp-dyn..TIME=1460\n* Testing rfrac \tfor gp-sta..TIME=6961\tfor gp-dyn..TIME=7754\n* Testing round4 \tfor gp-sta..TIME=6535\tfor gp-dyn..TIME=6651\n* Testing stark \tfor gp-sta..TIME=16150\tfor gp-dyn..TIME=16396\n+++ [BUG] Total bench for gp-sta is 46187\n+++ [BUG] Total bench for gp-dyn is 47221\n\nPROBLEMS WERE NOTED. The following files list them in diff format: \nDirectory: /export/home/drkirkby/sage-4.5/spkg/build/pari-2.3.5.p2/src/Osolaris-ix86\n\tellglobalred-sta.dif\n\tellglobalred-dyn.dif\nmake[1]: *** [test-all] Error 1\nmake[1]: Leaving directory `/export/home/drkirkby/sage-4.5/spkg/build/pari-2.3.5.p2/src/Osolaris-ix86'\nmake: *** [test-all] Error 2\nPari failed the self-tests when running 'make test-all'\n*************************************\nError testing package ** pari-2.3.5.p2 **\n*************************************\nsage: An error occurred while testing pari-2.3.5.p2\n```\n",
+    "created_at": "2010-07-16T17:43:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9518",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9518#issuecomment-91502",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:1 cremona]:
 > Dave, I suggest that you leave this to be done as part of the #9343 upgrade. 
@@ -97,14 +144,38 @@ sage: An error occurred while testing pari-2.3.5.p2
 
 
 
+
 ---
 
-Comment by drkirkby created at 2010-07-16 17:44:30
+archive/issue_comments_091503.json:
+```json
+{
+    "body": "spkg-check for Pari",
+    "created_at": "2010-07-16T17:44:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9518",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9518#issuecomment-91503",
+    "user": "drkirkby"
+}
+```
 
 spkg-check for Pari
 
 
+
 ---
+
+archive/issue_comments_091504.json:
+```json
+{
+    "body": "Attachment\n\nI note there is an error in `spkg-install` The very first line has some unwanted characters, with what displays as \"B1;2000;0c\". \n\nI leave you to sort that out!\n\n \n\n\n```\ndrkirkby@hawk:~/sage-4.5/spkg/standard/pari-2.3.5.p1$ head  spkg-install\nB1;2000;0c#!/bin/sh\n###########################################\n## PARI\n###########################################\n\nTOP=`pwd`\n\n# As of PARI 2.3.3, the compiler flag -fPIC is not added on Solaris, but it\n# needs to be if using gcc. I assume the equivalent will be needed on \n# other compilers. \ndrkirkby@hawk:~/sage-4.5/spkg/standard/pari-2.3.5.p1$ \n```\n",
+    "created_at": "2010-07-16T17:56:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9518",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9518#issuecomment-91504",
+    "user": "drkirkby"
+}
+```
 
 Attachment
 
@@ -132,38 +203,93 @@ drkirkby@hawk:~/sage-4.5/spkg/standard/pari-2.3.5.p1$
 
 
 
+
 ---
 
-Comment by cremona created at 2010-07-16 19:10:30
+archive/issue_comments_091505.json:
+```json
+{
+    "body": "For an explanation of the errors see my post to pari-dev at http://pari.math.u-bordeaux.fr/archives/pari-dev-1007/threads.html and Karim's reply which I have not yet absorbed.\n\nI have been compiling pari and running its tests for about 20 years...",
+    "created_at": "2010-07-16T19:10:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9518",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9518#issuecomment-91505",
+    "user": "cremona"
+}
+```
 
 For an explanation of the errors see my post to pari-dev at http://pari.math.u-bordeaux.fr/archives/pari-dev-1007/threads.html and Karim's reply which I have not yet absorbed.
 
 I have been compiling pari and running its tests for about 20 years...
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-09-08 08:27:59
+archive/issue_comments_091506.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-09-08T08:27:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9518",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9518#issuecomment-91506",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-09-08 08:28:25
+archive/issue_comments_091507.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-09-08T08:28:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9518",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9518#issuecomment-91507",
+    "user": "jdemeyer"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-09-08 08:28:25
+archive/issue_comments_091508.json:
+```json
+{
+    "body": "There is an spkg-check in #9343 and it seems to work, so positive review.",
+    "created_at": "2010-09-08T08:28:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9518",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9518#issuecomment-91508",
+    "user": "jdemeyer"
+}
+```
 
 There is an spkg-check in #9343 and it seems to work, so positive review.
 
 
+
 ---
 
-Comment by mpatel created at 2010-09-10 10:47:24
+archive/issue_comments_091509.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2010-09-10T10:47:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9518",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9518#issuecomment-91509",
+    "user": "mpatel"
+}
+```
 
 Resolution: duplicate

@@ -1,26 +1,64 @@
 # Issue 5868: Fix libgcrypt shared library name on FreeBSD
 
-Issue created by migration from https://trac.sagemath.org/ticket/5868
-
-Original creator: pjeremy
-
-Original creation time: 2009-04-23 07:00:46
-
+archive/issues_005868.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nEnsure that a symlink is created from libgcrypt.so to the actual .so name on FreeBSD.  This fixes the gnutls build on FreeBSD.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5868\n\n",
+    "created_at": "2009-04-23T07:00:46Z",
+    "labels": [
+        "porting: BSD",
+        "major",
+        "bug"
+    ],
+    "title": "Fix libgcrypt shared library name on FreeBSD",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5868",
+    "user": "pjeremy"
+}
+```
 Assignee: mabshoff
 
 Ensure that a symlink is created from libgcrypt.so to the actual .so name on FreeBSD.  This fixes the gnutls build on FreeBSD.
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5868
+
+
+
+
 
 ---
+
+archive/issue_comments_046351.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-04-23T07:01:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5868",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5868#issuecomment-46351",
+    "user": "pjeremy"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-23 07:31:17
+archive/issue_comments_046352.json:
+```json
+{
+    "body": "I will work on integrating this tomorrow.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-23T07:31:17Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5868",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5868#issuecomment-46352",
+    "user": "mabshoff"
+}
+```
 
 I will work on integrating this tomorrow.
 
@@ -29,31 +67,75 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mhansen created at 2009-06-20 02:12:25
+archive/issue_comments_046353.json:
+```json
+{
+    "body": "Looks good to me.\n\nThe spkg with this change can be found at http://sage.math.washington.edu/home/mhansen/libgcrypt-1.4.3.p1.spkg",
+    "created_at": "2009-06-20T02:12:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5868",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5868#issuecomment-46353",
+    "user": "mhansen"
+}
+```
 
 Looks good to me.
 
 The spkg with this change can be found at http://sage.math.washington.edu/home/mhansen/libgcrypt-1.4.3.p1.spkg
 
 
+
 ---
 
-Comment by mhansen created at 2009-06-20 02:12:25
+archive/issue_comments_046354.json:
+```json
+{
+    "body": "Changing assignee from mabshoff to mhansen.",
+    "created_at": "2009-06-20T02:12:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5868",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5868#issuecomment-46354",
+    "user": "mhansen"
+}
+```
 
 Changing assignee from mabshoff to mhansen.
 
 
+
 ---
 
-Comment by mhansen created at 2009-06-20 02:12:25
+archive/issue_comments_046355.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2009-06-20T02:12:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5868",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5868#issuecomment-46355",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by rlm created at 2009-07-02 22:32:12
+archive/issue_comments_046356.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-07-02T22:32:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5868",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5868#issuecomment-46356",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed

@@ -1,11 +1,21 @@
 # Issue 3372: expand on (x+y)^n fails for non-commutative (x,y) [new symbolics]
 
-Issue created by migration from https://trac.sagemath.org/ticket/3372
-
-Original creator: cwitty
-
-Original creation time: 2008-06-05 19:33:16
-
+archive/issues_003372.json:
+```json
+{
+    "body": "Assignee: gfurnish\n\n\n```\nsage: var('x,y', MatrixSpace(QQ, 5, 5))\n(x, y)\nsage: ((x+y)^3).expand()\nx^3 + x*y*x + y*x*x + x*y^2 + y*x^2 + x*y*y + y*x*y + y^3\n```\n\n\nThis is the wrong answer (it has two terms `x*y*y` and `x*y^2`, when only one should exist; and it does not have an `x^2*y`); also, this answer is printed poorly (`x*y*y + ... + x*y^2` should simplify to `2*x*y^2 + ...`).\n\nIssue created by migration from https://trac.sagemath.org/ticket/3372\n\n",
+    "created_at": "2008-06-05T19:33:16Z",
+    "labels": [
+        "symbolics",
+        "major",
+        "bug"
+    ],
+    "title": "expand on (x+y)^n fails for non-commutative (x,y) [new symbolics]",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3372",
+    "user": "cwitty"
+}
+```
 Assignee: gfurnish
 
 
@@ -19,23 +29,60 @@ x^3 + x*y*x + y*x*x + x*y^2 + y*x^2 + x*y*y + y*x*y + y^3
 
 This is the wrong answer (it has two terms `x*y*y` and `x*y^2`, when only one should exist; and it does not have an `x^2*y`); also, this answer is printed poorly (`x*y*y + ... + x*y^2` should simplify to `2*x*y^2 + ...`).
 
+Issue created by migration from https://trac.sagemath.org/ticket/3372
+
+
+
+
 
 ---
 
-Comment by gfurnish created at 2008-07-18 10:39:27
+archive/issue_comments_023592.json:
+```json
+{
+    "body": "Fixed in sage-symbolics commit 10238.  This was caused by an out of order list reordering while creating a symbolic product.",
+    "created_at": "2008-07-18T10:39:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3372",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3372#issuecomment-23592",
+    "user": "gfurnish"
+}
+```
 
 Fixed in sage-symbolics commit 10238.  This was caused by an out of order list reordering while creating a symbolic product.
 
 
+
 ---
 
-Comment by gfurnish created at 2008-07-18 10:39:27
+archive/issue_comments_023593.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-07-18T10:39:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3372",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3372#issuecomment-23593",
+    "user": "gfurnish"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by was created at 2008-08-23 08:14:14
+archive/issue_comments_023594.json:
+```json
+{
+    "body": "Milestone sage-symbolics deleted",
+    "created_at": "2008-08-23T08:14:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3372",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3372#issuecomment-23594",
+    "user": "was"
+}
+```
 
 Milestone sage-symbolics deleted

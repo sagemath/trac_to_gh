@@ -1,35 +1,82 @@
 # Issue 3549: change pari (and sage) so that one can add to the list of precomputed primes that are used for trial division
 
-Issue created by migration from https://trac.sagemath.org/ticket/3549
-
-Original creator: was
-
-Original creation time: 2008-07-04 04:22:14
-
+archive/issues_003549.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  jdemeyer\n\nThis is a very very useful unique feature that magma has.  We need to change pari so it can do it to and add an interface so sage can use that function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3549\n\n",
+    "created_at": "2008-07-04T04:22:14Z",
+    "labels": [
+        "number theory",
+        "major",
+        "enhancement"
+    ],
+    "title": "change pari (and sage) so that one can add to the list of precomputed primes that are used for trial division",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3549",
+    "user": "was"
+}
+```
 Assignee: was
 
 CC:  jdemeyer
 
 This is a very very useful unique feature that magma has.  We need to change pari so it can do it to and add an interface so sage can use that function.
 
+Issue created by migration from https://trac.sagemath.org/ticket/3549
+
+
+
+
 
 ---
 
-Comment by cwitty created at 2008-07-10 01:20:48
+archive/issue_comments_025102.json:
+```json
+{
+    "body": "Pari can already do this; it's the \"addprimes\" function.",
+    "created_at": "2008-07-10T01:20:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3549",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3549#issuecomment-25102",
+    "user": "cwitty"
+}
+```
 
 Pari can already do this; it's the "addprimes" function.
 
 
+
 ---
 
-Comment by jdemeyer created at 2010-08-01 15:32:42
+archive/issue_comments_025103.json:
+```json
+{
+    "body": "Changing component from number theory to interfaces.",
+    "created_at": "2010-08-01T15:32:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3549",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3549#issuecomment-25103",
+    "user": "jdemeyer"
+}
+```
 
 Changing component from number theory to interfaces.
 
 
+
 ---
 
-Comment by kedlaya created at 2016-04-09 23:22:27
+archive/issue_comments_025104.json:
+```json
+{
+    "body": "The `addprimes` function is currently available via automatic import:\n\n```\nsage: pari([3, 7]).addprimes()\n[3 ,7]\n```\n\nIf this is sufficient, then I would propose to close this ticket as invalid.\n\nA more proactive alternative would be to add a wrapper function somewhere, maybe `sage.rings.fast_arith` where things like `prime_range` live.",
+    "created_at": "2016-04-09T23:22:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3549",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3549#issuecomment-25104",
+    "user": "kedlaya"
+}
+```
 
 The `addprimes` function is currently available via automatic import:
 

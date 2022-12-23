@@ -1,11 +1,21 @@
 # Issue 2943: bug with power series and/or p-adics
 
-Issue created by migration from https://trac.sagemath.org/ticket/2943
-
-Original creator: jen
-
-Original creation time: 2008-04-16 19:37:15
-
+archive/issues_002943.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  roed\n\nKeywords: power series, p-adic extensions\n\nCan't manipulate certain elements of a power series ring:\n\n```\nsage: R.<x> = QQ[]\nsage: p =11\nsage: K = Qp(p,10)\nsage: J.<a> = K.extension(x^2-p)\nsage: C.<t> = LaurentSeriesRing(J)\nsage: D.<s> = PowerSeriesRing(C)\nsage: x = (10 + 10*a^2 + 10*a^4 + 10*a^6 + 10*a^8 + 10*a^10 + 10*a^12 + 10*a^14 + 10*a^16 + 10*a^18 + O(a^20)) + (2 + 2*a^4 + 2*a^8 + 2*a^12 + 2*a^16 + O(a^20))*t^2 + (10*a^2 + 5*a^4 + 7*a^6 + 6*a^8 + 3*a^10 + 2*a^12 + 9*a^14 + 3*a^16 + 2*a^18 + O(a^22))*t^4 + (10 + 7*a^2 + 9*a^4 + 8*a^6 + 5*a^8 + 10*a^12 + 3*a^14 + 6*a^16 + 8*a^18 + O(a^20))*t^6 + (6 + 2*a^4 + 8*a^6 + 6*a^8 + 2*a^10 + 6*a^12 + 6*a^14 + 4*a^16 + 5*a^18 + O(a^20))*t^8 + (9 + a^2 + 4*a^4 + 7*a^6 + a^8 + 2*a^10 + 4*a^12 + a^16 + 5*a^18 + O(a^20))*t^10 + (1 + 4*a^2 + 7*a^4 + 7*a^6 + 4*a^8 + 7*a^12 + 4*a^14 + 7*a^16 + 6*a^18 + O(a^20))*t^12 + ((7 + 4*a + 10*a^2 + 6*a^4 + 4*a^5 + 10*a^6 + 6*a^8 + 4*a^9 + 10*a^10 + 6*a^12 + 4*a^13 + 10*a^14 + 6*a^16 + 4*a^17 + 10*a^18 + O(a^20))*t^2 + O(a^20)*t^3 + (2*a + 4*a^2 + 4*a^3 + 9*a^4 + a^5 + 2*a^6 + 6*a^7 + 6*a^8 + 9*a^9 + 7*a^10 + 5*a^11 + a^12 + 4*a^13 + 7*a^14 + 3*a^15 + 6*a^16 + 8*a^17 + a^18 + 9*a^19 + O(a^20))*t^4 + O(a^20)*t^5 + (6 + 8*a + 7*a^2 + 8*a^3 + 7*a^4 + 7*a^5 + a^6 + 7*a^7 + 9*a^8 + 4*a^9 + 7*a^10 + 5*a^11 + 5*a^12 + 5*a^13 + 9*a^14 + 4*a^15 + 5*a^16 + 7*a^17 + 3*a^18 + a^19 + O(a^20))*t^6 + O(a^20)*t^7 + (7 + 2*a + 6*a^2 + 7*a^3 + 5*a^4 + 6*a^5 + 3*a^7 + a^8 + 3*a^9 + a^10 + 5*a^12 + 5*a^13 + 2*a^14 + 7*a^15 + 7*a^16 + 2*a^17 + 8*a^19 + O(a^20))*t^8 + O(a^20)*t^9 + (9 + 10*a + 3*a^2 + 8*a^3 + 2*a^4 + 2*a^5 + 3*a^6 + 5*a^7 + 5*a^8 + a^9 + 3*a^11 + 2*a^12 + 7*a^14 + a^15 + 8*a^17 + 4*a^18 + 5*a^19 + O(a^20))*t^10 + O(a^20)*t^11 + (10 + 7*a + 5*a^2 + 10*a^3 + 10*a^4 + a^5 + 6*a^6 + 3*a^7 + 9*a^8 + 9*a^9 + 5*a^10 + 7*a^11 + 3*a^12 + 7*a^13 + 10*a^14 + 3*a^15 + 9*a^16 + 9*a^17 + 7*a^18 + 4*a^19 + O(a^20))*t^12 + O(a^20)*t^13 + O(t^14))*s + ((2 + 7*a + 2*a^2 + 10*a^3 + 2*a^4 + 6*a^5 + 2*a^6 + 10*a^7 + 2*a^8 + 6*a^9 + 2*a^10 + 10*a^11 + 2*a^12 + 6*a^13 + 2*a^14 + 10*a^15 + 2*a^16 + 6*a^17 + 2*a^18 + 10*a^19 + O(a^20))*t^2 + O(a^20)*t^3 + (9*a + 7*a^2 + 3*a^3 + 4*a^4 + 6*a^5 + 3*a^6 + 10*a^7 + 6*a^8 + 2*a^9 + 9*a^11 + 5*a^12 + 9*a^13 + 9*a^14 + 10*a^15 + 4*a^17 + 8*a^18 + 4*a^19 + O(a^20))*t^4 + O(a^20)*t^5 + (7 + 5*a + 2*a^2 + 3*a^3 + 4*a^5 + 7*a^6 + 7*a^8 + 10*a^9 + a^10 + 2*a^11 + 9*a^12 + a^13 + a^15 + 3*a^16 + a^17 + 7*a^19 + O(a^20))*t^6 + O(a^20)*t^7 + (3 + 8*a + 2*a^3 + 9*a^4 + 8*a^5 + 10*a^6 + a^7 + 2*a^8 + 8*a^10 + 3*a^11 + 6*a^12 + 5*a^13 + 3*a^14 + 8*a^15 + 6*a^16 + 3*a^18 + 7*a^19 + O(a^20))*t^8 + O(a^20)*t^9 + (9 + 2*a + 6*a^2 + 5*a^3 + 10*a^4 + 10*a^5 + a^6 + a^7 + 10*a^8 + 10*a^10 + a^11 + 3*a^12 + 10*a^13 + 3*a^14 + a^15 + 6*a^16 + a^17 + 2*a^18 + 9*a^19 + O(a^20))*t^10 + O(a^20)*t^11 + (7*a + 6*a^3 + 5*a^4 + 3*a^5 + 9*a^6 + 9*a^7 + 4*a^9 + 7*a^10 + 5*a^11 + 4*a^12 + 9*a^13 + a^14 + 3*a^16 + 5*a^18 + 10*a^19 + O(a^20))*t^12 + O(a^20)*t^13 + O(t^14))*s^2 + ((4*a^2 + 10*a^3 + 10*a^4 + 8*a^6 + 4*a^7 + 3*a^8 + 4*a^10 + 4*a^11 + 2*a^12 + 9*a^13 + a^14 + 9*a^15 + 6*a^16 + 5*a^17 + 10*a^18 + 10*a^19 + 3*a^20 + O(a^22))*t^4 + O(a^22)*t^5 + (9 + 6*a + 8*a^3 + 3*a^4 + 9*a^5 + 8*a^6 + 10*a^7 + 3*a^8 + 6*a^9 + 4*a^10 + 6*a^12 + a^13 + 7*a^14 + 8*a^15 + 2*a^16 + 2*a^17 + 7*a^18 + a^19 + O(a^20))*t^6 + O(a^20)*t^7 + (5 + 10*a + 10*a^3 + 9*a^4 + 4*a^5 + 10*a^6 + 5*a^7 + 6*a^8 + a^10 + 7*a^11 + 6*a^12 + 4*a^13 + 8*a^14 + a^15 + 7*a^16 + 6*a^17 + 8*a^18 + 6*a^19 + O(a^20))*t^8 + O(a^20)*t^9 + (9 + 3*a + 5*a^2 + 9*a^5 + 4*a^6 + 9*a^7 + 6*a^9 + 6*a^10 + 7*a^11 + 9*a^13 + 4*a^14 + 8*a^15 + 6*a^16 + a^17 + 5*a^18 + 5*a^19 + O(a^20))*t^10 + O(a^20)*t^11 + (7*a + a^2 + 2*a^3 + 9*a^4 + 10*a^6 + 8*a^7 + a^8 + 9*a^9 + 4*a^10 + 4*a^11 + 10*a^12 + 8*a^13 + 7*a^14 + a^15 + 7*a^16 + 10*a^17 + 5*a^18 + 6*a^19 + O(a^20))*t^12 + O(a^20)*t^13 + (9*a^2 + 7*a^3 + 2*a^4 + 2*a^5 + 10*a^6 + 10*a^7 + 5*a^8 + 4*a^9 + 2*a^11 + 2*a^12 + 6*a^13 + 6*a^14 + 4*a^15 + a^16 + 6*a^17 + 7*a^18 + 2*a^19 + O(a^20))*t^14 + O(a^20)*t^15 + O(t^16))*s^3 + ((10*a^2 + 4*a^3 + 10*a^4 + 2*a^5 + 8*a^6 + a^7 + 2*a^8 + 9*a^9 + 7*a^10 + 2*a^11 + 8*a^12 + 9*a^13 + 4*a^14 + 8*a^15 + 6*a^16 + 2*a^17 + a^18 + 8*a^19 + 7*a^20 + O(a^22))*t^4 + O(a^22)*t^5 + (7 + 5*a + 6*a^2 + 5*a^3 + 3*a^6 + 6*a^7 + 3*a^10 + 10*a^11 + 6*a^12 + 4*a^13 + 5*a^14 + 7*a^15 + 9*a^17 + 6*a^18 + 2*a^19 + O(a^20))*t^6 + O(a^20)*t^7 + (2 + 4*a^2 + 2*a^3 + 9*a^4 + 2*a^5 + 3*a^6 + 9*a^7 + 7*a^8 + 10*a^9 + 2*a^10 + 7*a^11 + 10*a^12 + 5*a^13 + 6*a^14 + 10*a^15 + 2*a^16 + 10*a^17 + 9*a^18 + 9*a^19 + O(a^20))*t^8 + O(a^20)*t^9 + (9 + 5*a + 9*a^2 + 8*a^5 + 10*a^6 + 4*a^7 + 5*a^8 + 8*a^9 + 8*a^10 + 3*a^11 + 5*a^12 + 3*a^13 + 2*a^14 + 5*a^15 + 3*a^16 + a^17 + 6*a^18 + 6*a^19 + O(a^20))*t^10 + O(a^20)*t^11 + (2*a + 2*a^2 + 10*a^3 + 3*a^4 + 7*a^5 + 7*a^6 + 2*a^7 + 2*a^8 + 5*a^9 + a^10 + 5*a^11 + a^12 + 8*a^14 + 7*a^16 + 4*a^17 + 5*a^18 + 10*a^19 + O(a^20))*t^12 + O(a^20)*t^13 + (2*a + 8*a^2 + 2*a^3 + 8*a^4 + 7*a^5 + 6*a^6 + 3*a^7 + 6*a^9 + 10*a^10 + 4*a^11 + 2*a^12 + 6*a^13 + 7*a^14 + 5*a^15 + 8*a^16 + 2*a^17 + 3*a^18 + 10*a^19 + O(a^20))*t^14 + O(a^20)*t^15 + O(t^16))*s^4 + ((6 + 3*a + a^2 + a^3 + 3*a^4 + a^5 + 6*a^6 + 6*a^7 + 9*a^8 + 6*a^9 + 8*a^10 + 10*a^11 + 8*a^12 + 4*a^13 + 6*a^14 + 8*a^15 + 8*a^16 + a^17 + 10*a^18 + 2*a^19 + O(a^20))*t^6 + O(a^20)*t^7 + (5 + 4*a + 2*a^2 + 5*a^3 + 2*a^4 + 8*a^7 + 10*a^8 + 9*a^9 + 10*a^10 + 2*a^11 + 2*a^12 + 10*a^13 + 5*a^15 + 4*a^16 + 6*a^18 + 7*a^19 + O(a^20))*t^8 + O(a^20)*t^9 + (9 + 8*a + 6*a^2 + 7*a^3 + 9*a^4 + 7*a^5 + 9*a^6 + 7*a^7 + 10*a^8 + 9*a^9 + 5*a^10 + 3*a^12 + 4*a^13 + 5*a^15 + 6*a^16 + 4*a^17 + 6*a^18 + 3*a^19 + O(a^20))*t^10 + O(a^20)*t^11 + (9*a + 10*a^2 + 9*a^3 + 2*a^4 + 8*a^5 + 10*a^6 + 9*a^7 + 10*a^8 + 8*a^9 + 4*a^11 + 6*a^13 + 5*a^14 + 5*a^15 + 5*a^16 + 7*a^17 + 10*a^18 + 2*a^19 + O(a^20))*t^12 + O(a^20)*t^13 + (5*a + 9*a^2 + 7*a^3 + 7*a^4 + 7*a^5 + 3*a^6 + 9*a^7 + 3*a^8 + 7*a^9 + 10*a^10 + a^11 + 4*a^12 + 10*a^13 + 8*a^14 + 3*a^15 + 2*a^16 + 3*a^17 + 8*a^18 + 10*a^19 + O(a^20))*t^14 + O(a^20)*t^15 + (9*a^2 + 10*a^5 + 9*a^6 + 8*a^7 + 10*a^8 + 10*a^9 + 5*a^10 + 9*a^11 + 3*a^12 + 4*a^13 + 9*a^14 + 10*a^15 + 6*a^16 + 8*a^17 + 3*a^18 + 6*a^19 + O(a^20))*t^16 + O(a^20)*t^17 + O(t^18))*s^5 + ((10 + 6*a + 3*a^2 + 5*a^3 + 3*a^4 + 9*a^5 + 8*a^6 + a^7 + 6*a^8 + 4*a^9 + 10*a^10 + 3*a^11 + 3*a^12 + 4*a^13 + 3*a^14 + 3*a^15 + 7*a^16 + 10*a^17 + 7*a^18 + 6*a^19 + O(a^20))*t^6 + O(a^20)*t^7 + (3 + 7*a + a^2 + 9*a^3 + 8*a^4 + 8*a^5 + 5*a^6 + 4*a^7 + 6*a^8 + 8*a^9 + a^10 + 10*a^11 + 2*a^12 + 5*a^14 + 7*a^15 + 6*a^16 + 8*a^17 + 3*a^19 + O(a^20))*t^8 + O(a^20)*t^9 + (9 + 2*a + 4*a^2 + 10*a^3 + 3*a^4 + 10*a^5 + 8*a^6 + 6*a^7 + 8*a^8 + 4*a^9 + 3*a^10 + 7*a^11 + 10*a^12 + 10*a^13 + 5*a^14 + 6*a^15 + 6*a^17 + 10*a^18 + 2*a^19 + O(a^20))*t^10 + O(a^20)*t^11 + (5*a + 4*a^2 + 5*a^3 + 9*a^4 + 4*a^5 + 10*a^6 + 7*a^7 + 4*a^8 + 9*a^9 + 8*a^10 + 3*a^11 + 10*a^12 + 9*a^13 + 6*a^14 + a^15 + 3*a^16 + 8*a^17 + 8*a^18 + 9*a^19 + O(a^20))*t^12 + O(a^20)*t^13 + (a + 7*a^2 + 10*a^3 + 9*a^4 + 3*a^5 + 2*a^6 + 5*a^7 + 6*a^10 + 10*a^11 + 7*a^13 + 5*a^14 + 5*a^15 + 8*a^16 + 6*a^17 + 2*a^18 + 5*a^19 + O(a^20))*t^14 + O(a^20)*t^15 + (5*a + 8*a^2 + 4*a^4 + 2*a^5 + 7*a^6 + 4*a^7 + 8*a^8 + 8*a^9 + 6*a^10 + 10*a^11 + 8*a^12 + 2*a^13 + 6*a^15 + 10*a^16 + 9*a^17 + a^19 + O(a^20))*t^16 + O(a^20)*t^17 + O(t^18))*s^6 + ((7 + 6*a + 10*a^2 + 5*a^3 + 4*a^4 + 10*a^5 + 3*a^6 + 5*a^7 + a^8 + 4*a^9 + 3*a^10 + 5*a^11 + 2*a^12 + 2*a^13 + a^14 + 3*a^16 + 8*a^17 + 10*a^18 + 4*a^19 + O(a^20))*t^8 + O(a^20)*t^9 + (9 + 6*a + 7*a^2 + 8*a^3 + 3*a^4 + 2*a^5 + 4*a^6 + 2*a^7 + 5*a^8 + 9*a^9 + 6*a^10 + 8*a^12 + 6*a^14 + 5*a^15 + 9*a^16 + 2*a^17 + 2*a^18 + a^19 + O(a^20))*t^10 + O(a^20)*t^11 + (6*a + 3*a^2 + 4*a^4 + 2*a^5 + 3*a^6 + a^7 + 3*a^8 + 3*a^9 + 9*a^10 + 5*a^11 + 7*a^13 + 9*a^14 + 5*a^15 + 10*a^17 + 7*a^18 + 4*a^19 + O(a^20))*t^12 + O(a^20)*t^13 + (a + 3*a^2 + 9*a^4 + 10*a^5 + 4*a^6 + 6*a^7 + 10*a^8 + 4*a^9 + 7*a^10 + 7*a^11 + 7*a^12 + 5*a^13 + 5*a^14 + 5*a^15 + 3*a^18 + 6*a^19 + O(a^20))*t^14 + O(a^20)*t^15 + (2*a^2 + 2*a^3 + 8*a^4 + 8*a^5 + 7*a^6 + 10*a^7 + 4*a^8 + 9*a^9 + 10*a^10 + 7*a^11 + 4*a^12 + 4*a^13 + 4*a^14 + 10*a^15 + 10*a^16 + a^17 + 7*a^18 + O(a^20))*t^16 + O(a^20)*t^17 + (9*a + 5*a^2 + 7*a^3 + 5*a^4 + 3*a^5 + 5*a^6 + 6*a^7 + 6*a^8 + 8*a^9 + 8*a^10 + a^11 + 9*a^12 + 3*a^13 + 3*a^14 + 4*a^15 + 9*a^16 + a^17 + 3*a^18 + 9*a^19 + O(a^20))*t^18 + O(a^20)*t^19 + O(t^20))*s^7 + ((6 + 7*a + 3*a^2 + 8*a^4 + 2*a^5 + 7*a^6 + 5*a^7 + 4*a^8 + 6*a^9 + 8*a^10 + 6*a^11 + a^12 + 9*a^13 + 2*a^15 + a^16 + 6*a^17 + a^18 + 7*a^19 + O(a^20))*t^8 + O(a^20)*t^9 + (9 + 3*a + 6*a^2 + 10*a^3 + 4*a^4 + 2*a^5 + 10*a^6 + 2*a^7 + 9*a^9 + a^10 + 7*a^11 + 10*a^12 + 4*a^14 + 9*a^15 + 8*a^16 + 7*a^17 + 10*a^18 + 7*a^19 + O(a^20))*t^10 + O(a^20)*t^11 + (5*a + 8*a^2 + a^3 + 10*a^4 + a^5 + 7*a^6 + 2*a^7 + 8*a^8 + 5*a^9 + 10*a^10 + 4*a^11 + 3*a^12 + 7*a^13 + 4*a^14 + 4*a^15 + 10*a^16 + 2*a^17 + 3*a^18 + 7*a^19 + O(a^20))*t^12 + O(a^20)*t^13 + (2*a^2 + a^3 + 3*a^4 + 7*a^5 + 7*a^6 + 3*a^7 + 4*a^8 + 10*a^9 + 7*a^10 + 5*a^11 + 2*a^12 + a^13 + 9*a^14 + 7*a^15 + 10*a^16 + 7*a^17 + 3*a^18 + 3*a^19 + O(a^20))*t^14 + O(a^20)*t^15 + (10*a + 8*a^2 + 5*a^3 + a^4 + 5*a^5 + 10*a^6 + 2*a^7 + 7*a^8 + 3*a^9 + 2*a^10 + 7*a^11 + 8*a^12 + 9*a^13 + 2*a^14 + 4*a^15 + 4*a^16 + 10*a^17 + 7*a^18 + O(a^20))*t^16 + O(a^20)*t^17 + (2*a^2 + 9*a^3 + 8*a^5 + 8*a^6 + 10*a^7 + 2*a^8 + 9*a^9 + a^10 + 2*a^12 + 5*a^13 + 3*a^14 + 6*a^15 + 8*a^16 + 4*a^17 + 5*a^18 + 4*a^19 + O(a^20))*t^18 + O(a^20)*t^19 + O(t^20))*s^8 + ((9 + 7*a + 8*a^2 + a^3 + 8*a^4 + 9*a^5 + 4*a^6 + 2*a^7 + 4*a^8 + 10*a^9 + 2*a^10 + 3*a^11 + 9*a^12 + 3*a^13 + 9*a^14 + 4*a^15 + 10*a^16 + a^17 + 8*a^18 + 7*a^19 + O(a^20))*t^10 + O(a^20)*t^11 + (9*a + 7*a^2 + 10*a^3 + 6*a^4 + 9*a^5 + 6*a^6 + 9*a^8 + 3*a^9 + 4*a^10 + a^12 + 4*a^13 + 2*a^14 + 4*a^15 + 10*a^16 + 10*a^17 + 5*a^18 + 4*a^19 + O(a^20))*t^12 + O(a^20)*t^13 + (8*a + 6*a^2 + 5*a^3 + 3*a^4 + 7*a^5 + 5*a^6 + 10*a^7 + 7*a^8 + 5*a^9 + a^10 + 5*a^11 + 3*a^12 + 3*a^13 + 3*a^14 + 7*a^15 + 7*a^16 + a^17 + 7*a^18 + 6*a^19 + O(a^20))*t^14 + O(a^20)*t^15 + (10*a + 9*a^2 + 2*a^3 + a^4 + a^5 + 3*a^6 + a^8 + 8*a^10 + 7*a^11 + 5*a^12 + 3*a^14 + 9*a^16 + 3*a^17 + 7*a^18 + 8*a^19 + O(a^20))*t^16 + O(a^20)*t^17 + (6*a + 9*a^2 + 8*a^3 + 7*a^4 + 2*a^5 + 5*a^6 + 3*a^7 + 6*a^8 + 2*a^9 + a^10 + 4*a^12 + 8*a^13 + 10*a^14 + 5*a^15 + 4*a^16 + 3*a^17 + 9*a^18 + 7*a^19 + O(a^20))*t^18 + O(a^20)*t^19 + (2*a + 10*a^2 + a^3 + 2*a^4 + 8*a^5 + 3*a^6 + 4*a^7 + a^8 + 6*a^9 + a^10 + a^11 + a^12 + 10*a^13 + 8*a^14 + 3*a^15 + 2*a^16 + 7*a^19 + O(a^20))*t^20 + O(a^20)*t^21 + O(t^22))*s^9 + ((9 + 9*a + 10*a^2 + a^3 + 6*a^4 + 2*a^5 + 2*a^6 + 4*a^8 + 6*a^9 + 7*a^10 + 7*a^11 + a^12 + a^13 + 8*a^14 + 7*a^15 + 3*a^16 + 8*a^17 + 6*a^19 + O(a^20))*t^10 + O(a^20)*t^11 + (10*a + 4*a^2 + a^4 + 4*a^5 + 5*a^6 + 5*a^7 + 9*a^8 + 3*a^9 + 7*a^11 + 4*a^12 + 2*a^13 + 2*a^14 + 5*a^15 + 3*a^16 + 3*a^17 + 8*a^18 + 4*a^19 + O(a^20))*t^12 + O(a^20)*t^13 + (4*a + 2*a^2 + 7*a^3 + 8*a^4 + 10*a^5 + 3*a^6 + 10*a^7 + 5*a^8 + 6*a^9 + a^10 + 9*a^11 + 6*a^12 + 2*a^13 + 10*a^14 + 8*a^15 + a^16 + 5*a^17 + 6*a^18 + 9*a^19 + O(a^20))*t^14 + O(a^20)*t^15 + (5*a + 3*a^2 + 10*a^3 + 9*a^4 + 7*a^6 + 3*a^7 + 9*a^8 + 5*a^9 + 8*a^10 + 10*a^11 + 10*a^12 + 10*a^13 + 10*a^14 + 3*a^15 + 2*a^16 + 8*a^17 + a^18 + 10*a^19 + O(a^20))*t^16 + O(a^20)*t^17 + (3*a + 3*a^2 + 9*a^3 + 9*a^4 + a^5 + 2*a^6 + 7*a^7 + 7*a^9 + 3*a^10 + 7*a^11 + 2*a^12 + a^13 + 8*a^14 + 3*a^15 + 8*a^16 + 10*a^17 + 9*a^19 + O(a^20))*t^18 + O(a^20)*t^19 + (a + 7*a^2 + 10*a^3 + 2*a^4 + 6*a^5 + 7*a^6 + 5*a^7 + 4*a^8 + 8*a^9 + 10*a^10 + 5*a^14 + a^15 + 2*a^16 + 9*a^17 + 8*a^18 + O(a^20))*t^20 + O(a^20)*t^21 + O(t^22))*s^10 + ((10 + 5*a^2 + a^3 + 5*a^4 + 9*a^5 + 6*a^6 + 8*a^7 + 10*a^8 + a^9 + 6*a^10 + 9*a^11 + 9*a^12 + 8*a^13 + 3*a^14 + a^15 + 8*a^16 + 8*a^17 + 2*a^18 + 2*a^19 + O(a^20))*t^12 + O(a^20)*t^13 + (6*a^3 + 6*a^4 + 10*a^5 + 4*a^6 + 2*a^7 + 7*a^8 + 3*a^9 + 8*a^11 + 10*a^12 + a^13 + 4*a^14 + 10*a^15 + 4*a^16 + 2*a^17 + 3*a^18 + 7*a^19 + O(a^20))*t^14 + O(a^20)*t^15 + (9*a^3 + 5*a^4 + 3*a^5 + 7*a^6 + 3*a^7 + 10*a^9 + 2*a^10 + a^11 + 8*a^12 + a^14 + 3*a^15 + 3*a^16 + 2*a^17 + 7*a^18 + 7*a^19 + O(a^20))*t^16 + O(a^20)*t^17 + (3*a^3 + 2*a^4 + a^5 + 2*a^6 + 2*a^8 + 4*a^9 + 10*a^10 + 10*a^11 + 3*a^12 + 7*a^13 + 7*a^14 + 3*a^15 + 8*a^16 + a^17 + 3*a^18 + 5*a^19 + O(a^20))*t^18 + O(a^20)*t^19 + (4*a^3 + 2*a^4 + 4*a^6 + 5*a^7 + 3*a^8 + 7*a^10 + 7*a^12 + a^13 + 4*a^15 + 7*a^17 + 8*a^18 + 7*a^19 + O(a^20))*t^20 + O(a^20)*t^21 + (5*a^3 + a^4 + 9*a^5 + 8*a^6 + 3*a^7 + 2*a^8 + 2*a^9 + 3*a^10 + 10*a^11 + 2*a^12 + 3*a^13 + 8*a^14 + 3*a^15 + 8*a^16 + 2*a^17 + 3*a^18 + 5*a^19 + O(a^20))*t^22 + O(a^20)*t^23 + O(t^24))*s^11 + ((1 + 10*a + 4*a^2 + 5*a^3 + 2*a^4 + a^5 + 7*a^7 + 9*a^8 + a^9 + 7*a^10 + 7*a^11 + 2*a^12 + 4*a^13 + 2*a^14 + 8*a^15 + 2*a^16 + 2*a^17 + 3*a^18 + 8*a^19 + O(a^20))*t^12 + O(a^20)*t^13 + (5*a + 6*a^3 + 6*a^4 + a^5 + 6*a^6 + 4*a^7 + 2*a^8 + 3*a^9 + 9*a^10 + 8*a^11 + 7*a^12 + 5*a^13 + 5*a^14 + a^15 + 10*a^16 + 7*a^17 + 4*a^18 + 3*a^19 + O(a^20))*t^14 + O(a^20)*t^15 + (2*a + 8*a^3 + 5*a^4 + 5*a^5 + 3*a^6 + 5*a^7 + 3*a^8 + 9*a^9 + 5*a^11 + 9*a^12 + 5*a^13 + 3*a^14 + 9*a^15 + 3*a^16 + 5*a^17 + a^18 + 8*a^19 + O(a^20))*t^16 + O(a^20)*t^17 + (8*a + 5*a^3 + 2*a^4 + 8*a^5 + 3*a^6 + 9*a^7 + 7*a^8 + 8*a^9 + 6*a^10 + 8*a^11 + 9*a^12 + 9*a^13 + 8*a^14 + 8*a^15 + 7*a^16 + 8*a^17 + 7*a^19 + O(a^20))*t^18 + O(a^20)*t^19 + (7*a + 4*a^3 + 2*a^4 + 5*a^5 + 5*a^6 + 8*a^7 + 9*a^8 + 2*a^9 + 6*a^10 + 10*a^11 + 10*a^12 + 6*a^13 + 10*a^14 + 5*a^15 + 7*a^16 + 7*a^17 + 9*a^18 + O(a^20))*t^20 + O(a^20)*t^21 + (6*a + 9*a^3 + a^4 + 8*a^5 + a^6 + a^7 + 2*a^8 + a^10 + 4*a^11 + 3*a^12 + 7*a^13 + 5*a^14 + 8*a^15 + 4*a^17 + 9*a^18 + 5*a^19 + O(a^20))*t^22 + O(a^20)*t^23 + O(t^24))*s^12\nsage: y = (1 + O(a^20))*t + ((10 + a + 10*a^2 + 10*a^4 + 10*a^6 + 10*a^8 + 10*a^10 + 10*a^12 + 10*a^14 + 10*a^16 + 10*a^18 + O(a^20))*t + O(a^21)*t^2 + (6*a + 7*a^3 + 7*a^5 + 5*a^7 + 9*a^9 + 3*a^11 + 2*a^15 + 2*a^17 + O(a^21))*t^3 + O(a^21)*t^4 + (9*a + a^3 + 2*a^5 + 6*a^7 + 2*a^11 + 4*a^13 + 2*a^17 + a^19 + O(a^21))*t^5 + O(a^21)*t^6 + (3*a + a^3 + 5*a^5 + a^11 + 4*a^13 + 9*a^15 + 4*a^17 + 9*a^19 + O(a^21))*t^7 + O(a^21)*t^8 + (4*a + 8*a^3 + 4*a^5 + a^11 + 10*a^13 + 7*a^15 + 2*a^17 + 3*a^19 + O(a^21))*t^9 + O(a^21)*t^10 + (5*a + 9*a^3 + 2*a^5 + 5*a^9 + 8*a^11 + 5*a^13 + 3*a^15 + 5*a^17 + 8*a^19 + O(a^21))*t^11 + O(t^13))*s\nsage: f = x/y                 #ok\nsage: g = x*derivative(x)     #ok\nsage: h = x*derivative(x)/y  \n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/jen/<ipython console> in <module>()\n\n/home/jen/element.pyx in sage.structure.element.RingElement.__div__()\n\n/home/jen/coerce.pxi in sage.structure.element._div_c()\n\n/home/jen/power_series_ring_element.pyx in sage.rings.power_series_ring_element.PowerSeries._div_c_impl()\n\n/home/jen/element.pyx in sage.structure.element.RingElement.__mul__()\n\n/home/jen/coerce.pxi in sage.structure.element._mul_c()\n\n/home/jen/power_series_poly.pyx in sage.rings.power_series_poly.PowerSeries_poly._mul_c_impl()\n\n/home/jen/element.pyx in sage.structure.element.RingElement.__mul__()\n\n/home/jen/coerce.pxi in sage.structure.element._mul_c()\n\n/home/jen/element.pyx in sage.structure.element.RingElement._mul_()\n\n/home/jen/polynomial_element.pyx in sage.rings.polynomial.polynomial_element.Polynomial._mul_c_impl()\n\n/home/jen/polynomial_element.pyx in sage.rings.polynomial.polynomial_element.Polynomial._mul_karatsuba()\n\n/home/jen/polynomial_element.pyx in sage.rings.polynomial.polynomial_element.do_karatsuba()\n\n/home/jen/polynomial_element.pyx in sage.rings.polynomial.polynomial_element._karatsuba_sum()\n\n/home/jen/element.pyx in sage.structure.element.ModuleElement.__add__()\n\n/home/jen/coerce.pxi in sage.structure.element._add_c()\n\n/home/jen/laurent_series_ring_element.pyx in sage.rings.laurent_series_ring_element.LaurentSeries._add_c_impl()\n\n/home/jen/laurent_series_ring_element.pyx in sage.rings.laurent_series_ring_element.LaurentSeries.__init__()\n\n/home/jen/power_series_poly.pyx in sage.rings.power_series_poly.PowerSeries_poly.valuation()\n\n/home/jen/polynomial_element.pyx in sage.rings.polynomial.polynomial_element.Polynomial.valuation()\n\n<type 'exceptions.TypeError'>: The polynomial, p, must have the same parent as self.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2943\n\n",
+    "created_at": "2008-04-16T19:37:15Z",
+    "labels": [
+        "number theory",
+        "major",
+        "bug"
+    ],
+    "title": "bug with power series and/or p-adics",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/2943",
+    "user": "jen"
+}
+```
 Assignee: was
 
 CC:  roed
@@ -73,10 +83,25 @@ sage: h = x*derivative(x)/y
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/2943
+
+
+
+
 
 ---
 
-Comment by jen created at 2008-04-18 14:43:01
+archive/issue_comments_020276.json:
+```json
+{
+    "body": "This is strange:\n\n```\nsage: (derivative(x)).parent()\nPower Series Ring in s over Laurent Series Ring in t over Eisenstein Extension of 11-adic Field with capped relative precision 10 in a defined by (1 + O(11^10))*x^2 + (10*11 + 10*11^2 + 10*11^3 + 10*11^4 + 10*11^5 + 10*11^6 + 10*11^7 + 10*11^8 + 10*11^9 + 10*11^10 + O(11^11))\nsage: y.parent()\nPower Series Ring in s over Laurent Series Ring in t over Eisenstein Extension of 11-adic Field with capped relative precision 10 in a defined by (1 + O(11^10))*x^2 + (10*11 + 10*11^2 + 10*11^3 + 10*11^4 + 10*11^5 + 10*11^6 + 10*11^7 + 10*11^8 + 10*11^9 + 10*11^10 + O(11^11))\nsage: (derivative(x)).parent == y.parent()\nFalse\n```\n",
+    "created_at": "2008-04-18T14:43:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2943",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2943#issuecomment-20276",
+    "user": "jen"
+}
+```
 
 This is strange:
 
@@ -91,16 +116,38 @@ False
 
 
 
+
 ---
 
-Comment by jen created at 2008-04-18 14:43:01
+archive/issue_comments_020277.json:
+```json
+{
+    "body": "Changing priority from major to critical.",
+    "created_at": "2008-04-18T14:43:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2943",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2943#issuecomment-20277",
+    "user": "jen"
+}
+```
 
 Changing priority from major to critical.
 
 
+
 ---
 
-Comment by dmharvey created at 2008-04-29 19:28:47
+archive/issue_comments_020278.json:
+```json
+{
+    "body": "Here is a much smaller example that triggers the bug:\n\n\n```\nsage: R.<u> = QQ[]\nsage: p = 11\nsage: K = Qp(p,10)\nsage: J.<a> = K.extension(u^2-p)\nsage: C.<t> = LaurentSeriesRing(J)\nsage: D.<s> = PowerSeriesRing(C)\n\nsage: y = t + (t^2 + O(t^3))*s\nsage: h = y / y\n[boom]\n```\n\n\nInterestingly, if we use the vanilla p-adics instead of a ramified extension, we get a different traceback, which seems to indicate a different (possibly related?) bug:\n\n\n```\nsage: R.<u> = QQ[]\nsage: p = 11\nsage: K = Qp(p,10)\nsage: C.<t> = LaurentSeriesRing(K)\nsage: D.<s> = PowerSeriesRing(C)\n\nsage: y = t + (t^2 + O(t^3))*s\n\nsage: h = y / y\nTraceback (most recent call last):\n...\nFile \"/Users/david/sage-2.11/local/lib/python2.5/site-packages/sage/rings/polynomial/padics/polynomial_padic_capped_relative_dense.py\", line 379, in __getslice__\n    raise IndexError, \"list index out of range\"\nIndexError: list index out of range\n```\n",
+    "created_at": "2008-04-29T19:28:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2943",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2943#issuecomment-20278",
+    "user": "dmharvey"
+}
+```
 
 Here is a much smaller example that triggers the bug:
 
@@ -141,9 +188,20 @@ IndexError: list index out of range
 
 
 
+
 ---
 
-Comment by dmharvey created at 2008-04-29 20:32:57
+archive/issue_comments_020279.json:
+```json
+{
+    "body": "Even series inversion gives the list index breakage:\n\n\n```\nsage: p = 11\nsage: K = Qp(p,10)\nsage: C.<t> = LaurentSeriesRing(K)\nsage: D.<s> = PowerSeriesRing(C)\nsage: z = 1 + (t^3 + O(t^13))*s\nsage: 1/z\n```\n",
+    "created_at": "2008-04-29T20:32:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2943",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2943#issuecomment-20279",
+    "user": "dmharvey"
+}
+```
 
 Even series inversion gives the list index breakage:
 
@@ -159,9 +217,20 @@ sage: 1/z
 
 
 
+
 ---
 
-Comment by dmharvey created at 2008-04-29 20:48:39
+archive/issue_comments_020280.json:
+```json
+{
+    "body": "Actually even just squaring something really simple can break:\n\n\n```\nsage: K = Qp(p,10)\nsage: C.<t> = LaurentSeriesRing(K)\nsage: D.<s> = PowerSeriesRing(C)\nsage: z = (1 + O(t)) + t*s^2\nsage: z * z\n[boom]\n```\n",
+    "created_at": "2008-04-29T20:48:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2943",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2943#issuecomment-20280",
+    "user": "dmharvey"
+}
+```
 
 Actually even just squaring something really simple can break:
 
@@ -177,9 +246,20 @@ sage: z * z
 
 
 
+
 ---
 
-Comment by dmharvey created at 2008-04-29 20:55:57
+archive/issue_comments_020281.json:
+```json
+{
+    "body": "ok, the bug is in the polynomial mult instead of the power series mult:\n\n\n```\nsage: K = Qp(p,10)\nsage: C.<t> = LaurentSeriesRing(K)\nsage: D.<s> = PolynomialRing(C)\nsage: z = (1 + O(t)) + t*s^2\nsage: z * z\n[boom]\n```\n",
+    "created_at": "2008-04-29T20:55:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2943",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2943#issuecomment-20281",
+    "user": "dmharvey"
+}
+```
 
 ok, the bug is in the polynomial mult instead of the power series mult:
 
@@ -195,9 +275,20 @@ sage: z * z
 
 
 
+
 ---
 
-Comment by dmharvey created at 2008-04-29 21:29:31
+archive/issue_comments_020282.json:
+```json
+{
+    "body": "At least part of this bug is caused by some broken code in p-adic polynomial getslice. Here is the example from the docstring:\n\n\n```\nsage: K = Qp(13,7)\nsage: R.<t> = K[]       \nsage: a = 13^7*t^3 + K(169,4)*t - 13^4\nsage: a[1:2]\n(13^2 + O(13^4))*t\n```\n\n\nbut this one dies:\n\n```\nsage: t[0:1]\n[boom]\n```\n",
+    "created_at": "2008-04-29T21:29:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2943",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2943#issuecomment-20282",
+    "user": "dmharvey"
+}
+```
 
 At least part of this bug is caused by some broken code in p-adic polynomial getslice. Here is the example from the docstring:
 
@@ -220,9 +311,20 @@ sage: t[0:1]
 
 
 
+
 ---
 
-Comment by dmharvey created at 2008-04-30 18:02:40
+archive/issue_comments_020283.json:
+```json
+{
+    "body": "A smaller example of the original bug (this example involves only multiplication, no division):\n\n\n```\nsage: R.<u> = QQ[]\nsage: p = 11\nsage: K = Qp(p,10)\nsage: J.<a> = K.extension(u^2-p)\nsage: C.<t> = LaurentSeriesRing(J)\nsage: D.<s> = PowerSeriesRing(C)\nsage: x = t + (t^2 + O(t^3))*s\nsage: y = t^(-1) + (-1 + O(t))*s + O(s^2)\nsage: x * y\n[boom]\n```\n",
+    "created_at": "2008-04-30T18:02:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2943",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2943#issuecomment-20283",
+    "user": "dmharvey"
+}
+```
 
 A smaller example of the original bug (this example involves only multiplication, no division):
 
@@ -242,9 +344,20 @@ sage: x * y
 
 
 
+
 ---
 
-Comment by dmharvey created at 2008-04-30 18:09:55
+archive/issue_comments_020284.json:
+```json
+{
+    "body": "Even simpler (doesn't need the outer PowerSeries ring):\n\n\n```\nR.<u> = QQ[]\np = 11\nK = Qp(p,10)\nJ.<a> = K.extension(u^2-p)\nC.<t> = LaurentSeriesRing(J)\nD.<s> = PolynomialRing(C)\nx = t + (t^2 + O(t^3))*s\ny = t^(-1) + (-1 + O(t))*s\nh = x * y\n[boom]\n```\n",
+    "created_at": "2008-04-30T18:09:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2943",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2943#issuecomment-20284",
+    "user": "dmharvey"
+}
+```
 
 Even simpler (doesn't need the outer PowerSeries ring):
 
@@ -264,9 +377,20 @@ h = x * y
 
 
 
+
 ---
 
-Comment by dmharvey created at 2008-04-30 20:43:02
+archive/issue_comments_020285.json:
+```json
+{
+    "body": "I just did some more debugging with David Roe and I'm just going to write down our discoveries since I'm exhausted now.\n\nThe problem is, at some point a Laurent series object is coming into existence whose unit part is a power series whose coefficients are all indistinguishable from zero (but not actually zero). Then when calling valuation on that laurent series, something blows up. It only happens when the base ring is unramified extensions of Qp, since something in the underlying polynomial class hasn't been implemented properly. (Maybe.)\n\nThe actual exception generated is a bit misleading. It comes up in the last line of this code in `polynomial_element.pyx`:\n\n\n```\n        if p is None:\n            for k from 0 <= k <= self.degree():\n                if self[k]:\n                    return ZZ(k)\n                \n        if not isinstance(p, Polynomial) or not p.parent() is self.parent():\n            raise TypeError, \"The polynomial, p, must have the same parent as self.\"\n```\n\n\nIt's entering the loop with p == None, but it should never drop out of the bottom of the loop (it expects to find a nonzero-coefficient).",
+    "created_at": "2008-04-30T20:43:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2943",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2943#issuecomment-20285",
+    "user": "dmharvey"
+}
+```
 
 I just did some more debugging with David Roe and I'm just going to write down our discoveries since I'm exhausted now.
 
@@ -289,9 +413,20 @@ The actual exception generated is a bit misleading. It comes up in the last line
 It's entering the loop with p == None, but it should never drop out of the bottom of the loop (it expects to find a nonzero-coefficient).
 
 
+
 ---
 
-Comment by dmharvey created at 2008-05-10 19:02:11
+archive/issue_comments_020286.json:
+```json
+{
+    "body": "Getting closer now.\n\nSet up some polynomial rings over Qp and an unramified extension of Qp. Notice that the polynomial ring over Qp itself uses a specialised type, whereas over the ramified extension uses the generic polynomial ring:\n\n```\nsage: R.<u> = QQ[]\nsage: p = 7\nsage: K = Qp(p, 10)\nsage: J.<a> = K.extension(u^2 - p)\nsage: \nsage: S.<x> = PolynomialRing(K)\nsage: T.<y> = PolynomialRing(J)\nsage: \nsage: type(S)\n<class 'sage.rings.polynomial.polynomial_ring.PolynomialRing_dense_padic_field_capped_relative'>\nsage: type(T)\n<class 'sage.rings.polynomial.polynomial_ring.PolynomialRing_field'>\n```\n\n\nThe specialised type lets you have polynomials whose coefficients are indistinguishable from zero, but it still knows that the whole polynomial is \"zero\":\n\n\n```\nsage: f = S([O(p^5), O(p^5)])\nsage: f\n(O(7^5))*x + (O(7^5))\nsage: f.__nonzero__()\nFalse\n```\n\n\nBut the generic polynomial type just strips them off, since it thinks they are zero:\n\n\n```\nsage: g = T([O(a^5), O(a^5)])\nsage: g\n0\nsage: g.coeffs()\n[]\nsage: g.__nonzero__()\nFalse\n```\n\n\nNow we can try forcing the generic code to let us have coefficients indistinguishable from zero:\n\n```\nsage: g = T([O(a^5), O(a^5)], check=False)\nsage: g\n0\nsage: g.coeffs()\n[O(a^5), O(a^5)]\nsage: g.__nonzero__()\nTrue\n```\n\n\nAnd that's basically the problem. The generic polynomial code thinks that the polynomial is nonzero because its coefficient list is non-empty.",
+    "created_at": "2008-05-10T19:02:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2943",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2943#issuecomment-20286",
+    "user": "dmharvey"
+}
+```
 
 Getting closer now.
 
@@ -355,18 +490,42 @@ True
 And that's basically the problem. The generic polynomial code thinks that the polynomial is nonzero because its coefficient list is non-empty.
 
 
+
 ---
 
-Comment by dmharvey created at 2008-05-10 20:45:31
+archive/issue_comments_020287.json:
+```json
+{
+    "body": "After discussion with broune and cwitty on IRC, the proposed solution is as follows:\n\n* in the long run, implement the specialised class for polynomials over ramified extension rings; but we don't have time to do this right now.\n* change the generic polynomial's `__nonzero__` method to first check the base ring's `is_exact` method. If the base ring is not exact, we need to check whether each coefficient of the polynomial is zero.\n* for performance reasons, change `is_exact` to a cpdef method (also, probably move it up the hierarchy from rings to parents).",
+    "created_at": "2008-05-10T20:45:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2943",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2943#issuecomment-20287",
+    "user": "dmharvey"
+}
+```
 
 After discussion with broune and cwitty on IRC, the proposed solution is as follows:
 
- * in the long run, implement the specialised class for polynomials over ramified extension rings; but we don't have time to do this right now.
- * change the generic polynomial's `__nonzero__` method to first check the base ring's `is_exact` method. If the base ring is not exact, we need to check whether each coefficient of the polynomial is zero.
- * for performance reasons, change `is_exact` to a cpdef method (also, probably move it up the hierarchy from rings to parents).
+* in the long run, implement the specialised class for polynomials over ramified extension rings; but we don't have time to do this right now.
+* change the generic polynomial's `__nonzero__` method to first check the base ring's `is_exact` method. If the base ring is not exact, we need to check whether each coefficient of the polynomial is zero.
+* for performance reasons, change `is_exact` to a cpdef method (also, probably move it up the hierarchy from rings to parents).
+
 
 
 ---
+
+archive/issue_comments_020288.json:
+```json
+{
+    "body": "Attachment\n\nAttached patch should fix this bug.\n\n(Note: this does not fix the \"list index\" exception issue, which also came up in the above discussion. That is now a separate ticket: #3184)",
+    "created_at": "2008-05-13T13:01:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2943",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2943#issuecomment-20288",
+    "user": "dmharvey"
+}
+```
 
 Attachment
 
@@ -375,9 +534,20 @@ Attached patch should fix this bug.
 (Note: this does not fix the "list index" exception issue, which also came up in the above discussion. That is now a separate ticket: #3184)
 
 
+
 ---
 
-Comment by dmharvey created at 2008-05-19 00:16:25
+archive/issue_comments_020289.json:
+```json
+{
+    "body": "After this patch, there is still a bug (thanks Kiran Kedlaya for pointing this out). Here is an example:\n\n\n```\nsage: R.<u> = QQ[]\nsage: p = 11\nsage: K = Qp(p,10)\nsage: J.<a> = K.extension(u^2-p)\nsage: C.<t> = LaurentSeriesRing(J)\nsage: D.<s> = PowerSeriesRing(C)\nsage: y = 1 - (t + O(t^2))*s + O(s^5)\nsage: 1/y\n(1 + O(a^20)) + ((1 + O(a^20))*t + O(t^2))*s + O(s^5)\n```\n\n\nThe output is wrong; there should be s<sup>2</sup>, s<sup>3</sup>, s<sup>4</sup> terms.\n\nKiran's example was:\n\n\n```\nsage: R.<u> = QQ[]\nsage: p = 11\nsage: K = Qp(p,10)\nsage: J.<a> = K.extension(u^2-p)\nsage: C.<t> = LaurentSeriesRing(J)\nsage: D.<s> = PowerSeriesRing(C)\n\nsage: y = t + (t^2 + O(t^3))*s\nsage: h = y / y\nsage: h\n(1 + O(a^20)) + O(t^2)*s + O(t^2)*s^2 + O(t^3)*s^3 + O(t^4)*s^4 +\nO(t^5)*s^5 + ((7 + 10*a^2 + 10*a^4 + 10*a^6 + 10*a^8 + 10*a^10 + 10*a^12\n+ 10*a^14 + 10*a^16 + 10*a^18 + O(a^20))*t^6 + O(t^7))*s^6 + O(s^20)\n```\n\nwhich is distinguishable from 1.",
+    "created_at": "2008-05-19T00:16:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2943",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2943#issuecomment-20289",
+    "user": "dmharvey"
+}
+```
 
 After this patch, there is still a bug (thanks Kiran Kedlaya for pointing this out). Here is an example:
 
@@ -419,18 +589,40 @@ O(t^5)*s^5 + ((7 + 10*a^2 + 10*a^4 + 10*a^6 + 10*a^8 + 10*a^10 + 10*a^12
 which is distinguishable from 1.
 
 
+
 ---
 
-Comment by dmharvey created at 2008-07-17 15:35:12
+archive/issue_comments_020290.json:
+```json
+{
+    "body": "Someone else seems to have hit a related bug, see the following thread:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/56a73f331e6b2977",
+    "created_at": "2008-07-17T15:35:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2943",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2943#issuecomment-20290",
+    "user": "dmharvey"
+}
+```
 
 Someone else seems to have hit a related bug, see the following thread:
 
 http://groups.google.com/group/sage-devel/browse_thread/thread/56a73f331e6b2977
 
 
+
 ---
 
-Comment by mabshoff created at 2008-11-23 10:17:39
+archive/issue_comments_020291.json:
+```json
+{
+    "body": "Any movement here? This ticket seems to have gone stale.\n\nCheers,\n\nMichael",
+    "created_at": "2008-11-23T10:17:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2943",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2943#issuecomment-20291",
+    "user": "mabshoff"
+}
+```
 
 Any movement here? This ticket seems to have gone stale.
 
@@ -439,9 +631,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by kedlaya created at 2009-01-22 03:00:09
+archive/issue_comments_020292.json:
+```json
+{
+    "body": "I can simplify dmharvey's bad example even further. No need to work over the p-adics at all! (This execution is from 3.2.3.)\n\n```\nsage: C.<t> = PowerSeriesRing(Integers())                                       \nsage: D.<s> = PowerSeriesRing(C)                                               \nsage: y = 1 - (t + O(t^2))*s + O(s^5)                                          \nsage: 1/y                                                                      \n1 + (t + O(t^2))*s + (2*t^2 + O(t^3))*s^2 + O(s^5)\n```\n\nSo I dare say this is really a bug in power series, specifically in precision management.",
+    "created_at": "2009-01-22T03:00:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2943",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2943#issuecomment-20292",
+    "user": "kedlaya"
+}
+```
 
 I can simplify dmharvey's bad example even further. No need to work over the p-adics at all! (This execution is from 3.2.3.)
 
@@ -456,9 +659,20 @@ sage: 1/y
 So I dare say this is really a bug in power series, specifically in precision management.
 
 
+
 ---
 
-Comment by kedlaya created at 2009-01-22 05:15:32
+archive/issue_comments_020293.json:
+```json
+{
+    "body": "I traced through the computation of 1/y in my previous example by hand, and this turned up the following perhaps more telling example.\n\n```\nsage: C.<t> = PowerSeriesRing(Integers())\nsage: D.<s> = PolynomialRing(C)\nsage: z = 1 + (t + O(t^2))*s + (t^2 + O(t^3))*s^2\nsage: z*z\n(t^4 + O(t^5))*s^4 + (2*t + O(t^2))*s + 1\n```\n\nBy contrast, this is correct:\n\n```\nsage: z = 1 + (t + O(t^3))*s + (t^2 + O(t^3))*s^2\nsage: z*z\n(t^4 + O(t^5))*s^4 + (2*t^3 + O(t^4))*s^3 + (3*t^2 + O(t^3))*s^2 + (2*t + O(t^3))*s + 1\n```\n\nI think multiplication here uses z._mul_karatsuba, so maybe dmharvey needs to look at this again. Karatsuba may cause problems when working over an inexact coefficient ring.",
+    "created_at": "2009-01-22T05:15:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2943",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2943#issuecomment-20293",
+    "user": "kedlaya"
+}
+```
 
 I traced through the computation of 1/y in my previous example by hand, and this turned up the following perhaps more telling example.
 
@@ -481,9 +695,20 @@ sage: z*z
 I think multiplication here uses z._mul_karatsuba, so maybe dmharvey needs to look at this again. Karatsuba may cause problems when working over an inexact coefficient ring.
 
 
+
 ---
 
-Comment by dmharvey created at 2009-01-22 13:08:10
+archive/issue_comments_020294.json:
+```json
+{
+    "body": "Replying to [comment:17 kedlaya]:\n> I think multiplication here uses z._mul_karatsuba, so maybe dmharvey needs to look at this again. Karatsuba may cause problems when working over an inexact coefficient ring.\n\nI don't know who wrote the karatsuba code. I think it was there long before I started working on sage. Sure, I agree karatsuba should give inaccurate answers over an inexact coefficient ring, but it shouldn't give *wrong* answers. I guess the easiest solution is just to disable or remove karatsuba altogether, or first check whether the coefficient ring is exact.\n\ndavid",
+    "created_at": "2009-01-22T13:08:10Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2943",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2943#issuecomment-20294",
+    "user": "dmharvey"
+}
+```
 
 Replying to [comment:17 kedlaya]:
 > I think multiplication here uses z._mul_karatsuba, so maybe dmharvey needs to look at this again. Karatsuba may cause problems when working over an inexact coefficient ring.
@@ -493,9 +718,20 @@ I don't know who wrote the karatsuba code. I think it was there long before I st
 david
 
 
+
 ---
 
-Comment by dmharvey created at 2009-01-22 13:16:31
+archive/issue_comments_020295.json:
+```json
+{
+    "body": "Replying to [comment:17 kedlaya]:\n\nActually, there's nothing incorrect in your first example, except perhaps the printing:\n\n```\nsage: C.<t> = PowerSeriesRing(Integers())\nsage: D.<s> = PolynomialRing(C)\nsage: z = 1 + (t + O(t^2))*s + (t^2 + O(t^3))*s^2\nsage: z * z\n(t^4 + O(t^5))*s^4 + (2*t + O(t^2))*s + 1\nsage: (z*z).list()\n[1, 2*t + O(t^2), O(t^2), O(t^3), t^4 + O(t^5)]\n# let's do it \"by hand\"\nsage: [sum([z[i] * z[n-i] for i in range(n+1)]) for n in range(5)]\n[1, 2*t + O(t^2), 3*t^2 + O(t^3), 2*t^3 + O(t^4), t^4 + O(t^5)]\n```\n\nSo it's not printing the \"zero\" coefficients, and it's losing precision, but the result is correct up to the known precision.",
+    "created_at": "2009-01-22T13:16:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2943",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2943#issuecomment-20295",
+    "user": "dmharvey"
+}
+```
 
 Replying to [comment:17 kedlaya]:
 
@@ -517,9 +753,20 @@ sage: [sum([z[i] * z[n-i] for i in range(n+1)]) for n in range(5)]
 So it's not printing the "zero" coefficients, and it's losing precision, but the result is correct up to the known precision.
 
 
+
 ---
 
-Comment by kedlaya created at 2009-01-22 15:23:09
+archive/issue_comments_020296.json:
+```json
+{
+    "body": "Replying to [comment:18 dmharvey]:\n> Replying to [comment:17 kedlaya]:\n> > I think multiplication here uses z._mul_karatsuba, so maybe dmharvey needs to look at this again. Karatsuba may cause problems when working over an inexact coefficient ring.\n> \n> I don't know who wrote the karatsuba code. I think it was there long before I started working on sage. Sure, I agree karatsuba should give inaccurate answers over an inexact coefficient ring, but it shouldn't give *wrong* answers. I guess the easiest solution is just to disable or remove karatsuba altogether, or first check whether the coefficient ring is exact.\n> \n> david\n\nFair enough, but the behavior of `__invert__` (in sage/sage/rings/power_series_ring_element.pyx; I believe you wrote this) seems to depend on Karatsuba giving better answers than this. Here's what happens when I go through `__invert__` by hand:\n\n\n```\nsage: sage: y = 1 - (t + O(t^2))*s + O(s^5)\nsage: C.<t> = PowerSeriesRing(Integers())\nsage: D.<s> = PowerSeriesRing(C)\nsage: y = 1 - (t + O(t^2))*s + O(s^5)\nsage: sage.misc.misc.newton_method_sizes(5)\n[1, 2, 3, 5]\nsage: A = y.truncate()\nsage: current = A.parent()(1)\nsage: current\n1\nsage: z = current.square() * A.truncate(1)\nsage: current = 2*current - z.truncate(1)\nsage: current\n1\nsage: z = current.square() * A.truncate(2)\nsage: current = 2*current - z.truncate(2)\nsage: current\n(t + O(t^2))*s + 1\nsage: z = current.square() * A.truncate(3)\nsage: current = 2*current - z.truncate(3)\nsage: current\n(t^2 + O(t^3))*s^2 + (t + O(t^2))*s + 1\nsage: z = current.square() * A.truncate(5)\nsage: z.list()\n[1, t + O(t^2), O(t^2), O(t^3), O(t^4), -t^5 + O(t^6)]\nsage: current = 2*current - z.truncate(5)\nsage: current\n(2*t^2 + O(t^3))*s^2 + (t + O(t^2))*s + 1\n```\n\n\nMy previous example is the `last current.square()` in this sequence, which gives an answer with too little precision. This would be consistent, if undesirable, except for the fact that here:\n\n```\nsage: z.list()\n[1, t + O(t^2), O(t^2), O(t^3), O(t^4), -t^5 + O(t^6)]\nsage: z.truncate(5).list()\n[1, t + O(t^2)]\n```\n\nI lose the extra `O(t^*)` terms at the end. This causes current not to get properly degraded in its `s^2` and higher coefficients, hence the wrong answer.\n\nSo now as I see it, there are actually two different issues.\n\n1. Karatsuba doesn't give best possible answers over inexact rings. This could be fixed by explicitly calling `_mul_generic` instead of implicitly calling `_mul_karatsuba`, but that is a performance tradeoff.\n\n2. Looking into `truncate` (in sage.rings.polynomial.polynomial_element.Polynomial_generic_dense), one sees that the extra terms are tested for being zero by being evaluated in a Boolean context and then negated. This gives the same effect as `is_zero` or comparison with 0, namely something like `O(t^4) == 0` returns `True`. This may be the desired effect in certain contexts, but I think we can't use it in `__invert__` even if we fix the Karatsuba thing, since in some cases the **correct** behavior will involve having an `O(t^n)` term at the end. For example, let's uninvert the example from earlier:\n\n```\nsage: yy\n1 + (t + O(t^2))*s + (t^2 + O(t^3))*s^2 + (t^3 + O(t^4))*s^3 + (t^4 + O(t^5))*s^4 + O(s^5)\nsage: 1/yy                                                                    \n1 + (-t + O(t^2))*s + O(s^5)\nsage: (1/yy).list()                                                           \n[1, -t + O(t^2)]\n```\n\nThis is wrong because the 'zero' terms are actually inexact zeroes to certain precisions, which will lead to errors elsewhere if you try to use them.\n\nThis is a systemic problem with using the generic polynomial module with an inexact ring: it has a habit of truncating leading zeroes after virtually every arithmetic operation. This systemic problem needs a systemic solution: there needs to be a way to check whether an element of an inexact ring is an exact zero or not, so that `truncate` can preserve inexact leading zeroes, i.e., a method called `is_exact_zero` or something.",
+    "created_at": "2009-01-22T15:23:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2943",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2943#issuecomment-20296",
+    "user": "kedlaya"
+}
+```
 
 Replying to [comment:18 dmharvey]:
 > Replying to [comment:17 kedlaya]:
@@ -579,7 +826,7 @@ So now as I see it, there are actually two different issues.
 
 1. Karatsuba doesn't give best possible answers over inexact rings. This could be fixed by explicitly calling `_mul_generic` instead of implicitly calling `_mul_karatsuba`, but that is a performance tradeoff.
 
-2. Looking into `truncate` (in sage.rings.polynomial.polynomial_element.Polynomial_generic_dense), one sees that the extra terms are tested for being zero by being evaluated in a Boolean context and then negated. This gives the same effect as `is_zero` or comparison with 0, namely something like `O(t^4) == 0` returns `True`. This may be the desired effect in certain contexts, but I think we can't use it in `__invert__` even if we fix the Karatsuba thing, since in some cases the *correct* behavior will involve having an `O(t^n)` term at the end. For example, let's uninvert the example from earlier:
+2. Looking into `truncate` (in sage.rings.polynomial.polynomial_element.Polynomial_generic_dense), one sees that the extra terms are tested for being zero by being evaluated in a Boolean context and then negated. This gives the same effect as `is_zero` or comparison with 0, namely something like `O(t^4) == 0` returns `True`. This may be the desired effect in certain contexts, but I think we can't use it in `__invert__` even if we fix the Karatsuba thing, since in some cases the **correct** behavior will involve having an `O(t^n)` term at the end. For example, let's uninvert the example from earlier:
 
 ```
 sage: yy
@@ -595,9 +842,20 @@ This is wrong because the 'zero' terms are actually inexact zeroes to certain pr
 This is a systemic problem with using the generic polynomial module with an inexact ring: it has a habit of truncating leading zeroes after virtually every arithmetic operation. This systemic problem needs a systemic solution: there needs to be a way to check whether an element of an inexact ring is an exact zero or not, so that `truncate` can preserve inexact leading zeroes, i.e., a method called `is_exact_zero` or something.
 
 
+
 ---
 
-Comment by dmharvey created at 2009-01-22 16:10:30
+archive/issue_comments_020297.json:
+```json
+{
+    "body": "> This is a systemic problem with using the generic polynomial module with an inexact ring: it has a habit of truncating leading zeroes after virtually every arithmetic operation. This systemic problem needs a systemic solution: there needs to be a way to check whether an element of an inexact ring is an exact zero or not, so that `truncate` can preserve inexact leading zeroes, i.e., a method called `is_exact_zero` or something.\n\nI agree, this is the key. I believe it's been discussed several times in the past. Unfortunately the Sage development model seems to be very good at introducing systemic design bugs like this, but doesn't seem to be very good at fixing them (my perennial favourite is #3680). What we need is a hero with lots of time on their hands.\n\ndavid",
+    "created_at": "2009-01-22T16:10:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2943",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2943#issuecomment-20297",
+    "user": "dmharvey"
+}
+```
 
 > This is a systemic problem with using the generic polynomial module with an inexact ring: it has a habit of truncating leading zeroes after virtually every arithmetic operation. This systemic problem needs a systemic solution: there needs to be a way to check whether an element of an inexact ring is an exact zero or not, so that `truncate` can preserve inexact leading zeroes, i.e., a method called `is_exact_zero` or something.
 
@@ -606,45 +864,113 @@ I agree, this is the key. I believe it's been discussed several times in the pas
 david
 
 
+
 ---
 
-Comment by kedlaya created at 2009-01-23 19:06:23
+archive/issue_comments_020298.json:
+```json
+{
+    "body": "In order to clarify things for newcomers to this discussion, I created a separate ticket #5075 to deal with the truncation of leading zeroes. Once that gets resolved, we can come back to the Karatsuba issue.",
+    "created_at": "2009-01-23T19:06:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2943",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2943#issuecomment-20298",
+    "user": "kedlaya"
+}
+```
 
 In order to clarify things for newcomers to this discussion, I created a separate ticket #5075 to deal with the truncation of leading zeroes. Once that gets resolved, we can come back to the Karatsuba issue.
 
 
+
 ---
 
-Comment by kedlaya created at 2009-05-22 03:34:59
+archive/issue_comments_020299.json:
+```json
+{
+    "body": "All the examples on this ticket seem to be resolved in 4.0rc0. I'm not sure why, since #5075 is still open, but fixing #3056, #3184, and others may have helped. \n\nEspecially in light of the existence of #6084 (which should fix #5075 among other things), I propose to call this issue fixed and put this ticket out of its misery.",
+    "created_at": "2009-05-22T03:34:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2943",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2943#issuecomment-20299",
+    "user": "kedlaya"
+}
+```
 
 All the examples on this ticket seem to be resolved in 4.0rc0. I'm not sure why, since #5075 is still open, but fixing #3056, #3184, and others may have helped. 
 
 Especially in light of the existence of #6084 (which should fix #5075 among other things), I propose to call this issue fixed and put this ticket out of its misery.
 
 
+
 ---
+
+archive/issue_comments_020300.json:
+```json
+{
+    "body": "Attachment\n\nI decided this ticket should actually end up with a patch and a review, so I added a patch (mislabeled, sorry) to put another doctest from the above discussion into polynomial_element.pyx.",
+    "created_at": "2009-12-03T03:26:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2943",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2943#issuecomment-20300",
+    "user": "kedlaya"
+}
+```
 
 Attachment
 
 I decided this ticket should actually end up with a patch and a review, so I added a patch (mislabeled, sorry) to put another doctest from the above discussion into polynomial_element.pyx.
 
 
+
 ---
 
-Comment by kedlaya created at 2009-12-03 03:26:34
+archive/issue_comments_020301.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2009-12-03T03:26:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2943",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2943#issuecomment-20301",
+    "user": "kedlaya"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by mhansen created at 2009-12-07 08:25:55
+archive/issue_comments_020302.json:
+```json
+{
+    "body": "Looks good.",
+    "created_at": "2009-12-07T08:25:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2943",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2943#issuecomment-20302",
+    "user": "mhansen"
+}
+```
 
 Looks good.
 
 
+
 ---
 
-Comment by mhansen created at 2009-12-07 08:25:55
+archive/issue_comments_020303.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-12-07T08:25:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/2943",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/2943#issuecomment-20303",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

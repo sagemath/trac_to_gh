@@ -1,38 +1,98 @@
 # Issue 5139: add computation of Bach bound of number fields to Sage
 
-Issue created by migration from https://trac.sagemath.org/ticket/5139
-
-Original creator: was
-
-Original creation time: 2009-01-30 19:18:55
-
+archive/issues_005139.json:
+```json
+{
+    "body": "Assignee: was\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5139\n\n",
+    "created_at": "2009-01-30T19:18:55Z",
+    "labels": [
+        "number theory",
+        "minor",
+        "enhancement"
+    ],
+    "title": "add computation of Bach bound of number fields to Sage",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5139",
+    "user": "was"
+}
+```
 Assignee: was
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5139
+
+
+
+
 
 ---
+
+archive/issue_comments_039298.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-01-30T19:28:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5139",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5139#issuecomment-39298",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2009-01-30 19:29:21
+archive/issue_comments_039299.json:
+```json
+{
+    "body": "(the patch trac-5139.patch is against 3.3.alpha3, but should work with almost any sage version)",
+    "created_at": "2009-01-30T19:29:21Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5139",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5139#issuecomment-39299",
+    "user": "was"
+}
+```
 
 (the patch trac-5139.patch is against 3.3.alpha3, but should work with almost any sage version)
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-02 02:30:34
+archive/issue_comments_039300.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-02-02T02:30:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5139",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5139#issuecomment-39300",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2009-02-02 02:30:34
+archive/issue_comments_039301.json:
+```json
+{
+    "body": "Merged in Sage 3.3.alpha4.\n\nCheers,\n\nMichael",
+    "created_at": "2009-02-02T02:30:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5139",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5139#issuecomment-39301",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.3.alpha4.
 

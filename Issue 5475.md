@@ -1,11 +1,21 @@
 # Issue 5475: make it so ipython isn't imported when one does "sage -python"
 
-Issue created by migration from https://trac.sagemath.org/ticket/5475
-
-Original creator: was
-
-Original creation time: 2009-03-10 21:39:27
-
+archive/issues_005475.json:
+```json
+{
+    "body": "Assignee: was\n\nIf one wants to use Sage from a C program, e.g., like this (see below), then it's important that \"from sage.all import *\" not import Ipython.  The point of this ticket is make the import of IPython lazy -- and only happen if needed.  This will also make \"sage -python\" and \"sage -c\" faster, since Ipython startup takes significant time. \n\n\n```\n/*\nsage -sh\ngcc -I$SAGE_LOCAL/include/python2.5 $SAGE_LOCAL/lib/python/config/libpython2.5.a embed.c -o embed; ./embed\n\nSee http://docs.python.org/extending/embedding.html\n*/\n\n\n#include <Python.h>\n\nint\nmain(int argc, char *argv[])\n{\n  Py_Initialize();\n  printf(\"Loading the Sage library...\\n\");\n  PyRun_SimpleString(\"from sage.all import *\");\n  printf(\"Factoring an integer:\\n\");\n  PyRun_SimpleString(\"print factor(193048120380)\");\n  printf(\"Popping up plot of a function:\\n\");\n  PyRun_SimpleString(\"x=var('x'); show(plot(sin(x)))\");\n  printf(\"Popping up plot of a 3-d function:\\n\");\n  PyRun_SimpleString(\"x,y=var('x,y'); show(plot3d(sin(x*y)-cos(x-y), (x,-4,4),(y,-4,4)))\");\n  printf(\"Type 0 then return\\n\");\n  int n;\n  scanf(\"%d\",&n);\n  printf(\"Exiting...\\n\");\n  Py_Finalize();\n  return 0;\n}\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5475\n\n",
+    "created_at": "2009-03-10T21:39:27Z",
+    "labels": [
+        "interfaces",
+        "major",
+        "bug"
+    ],
+    "title": "make it so ipython isn't imported when one does \"sage -python\"",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5475",
+    "user": "was"
+}
+```
 Assignee: was
 
 If one wants to use Sage from a C program, e.g., like this (see below), then it's important that "from sage.all import *" not import Ipython.  The point of this ticket is make the import of IPython lazy -- and only happen if needed.  This will also make "sage -python" and "sage -c" faster, since Ipython startup takes significant time. 
@@ -44,15 +54,43 @@ main(int argc, char *argv[])
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5475
+
+
+
+
 
 ---
+
+archive/issue_comments_042473.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-03-10T22:23:03Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5475",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5475#issuecomment-42473",
+    "user": "mabshoff"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2009-03-10 22:30:12
+archive/issue_comments_042474.json:
+```json
+{
+    "body": "This patch causes some doctesting trouble:\n\n```\n        sage -t -long devel/sage/sage/misc/randstate.pyx # 3 doctests failed\n        sage -t -long devel/sage/sage/interfaces/psage.py # 2 doctests failed\n        sage -t -long devel/sage/sage/interfaces/sage0.py # 37 doctests failed\n        sage -t -long devel/sage/sage/misc/trace.py # 2 doctests failed\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2009-03-10T22:30:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5475",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5475#issuecomment-42474",
+    "user": "mabshoff"
+}
+```
 
 This patch causes some doctesting trouble:
 
@@ -69,15 +107,37 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mhansen created at 2013-07-22 14:38:45
+archive/issue_comments_042475.json:
+```json
+{
+    "body": "Resolution: duplicate",
+    "created_at": "2013-07-22T14:38:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5475",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5475#issuecomment-42475",
+    "user": "mhansen"
+}
+```
 
 Resolution: duplicate
 
 
+
 ---
 
-Comment by mhansen created at 2013-07-22 14:38:45
+archive/issue_comments_042476.json:
+```json
+{
+    "body": "This is a duplicate of #3685.",
+    "created_at": "2013-07-22T14:38:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5475",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5475#issuecomment-42476",
+    "user": "mhansen"
+}
+```
 
 This is a duplicate of #3685.

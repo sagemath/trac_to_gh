@@ -1,11 +1,25 @@
 # Issue 7383: make curved arrows in 3d vector field plots
 
-Issue created by migration from https://trac.sagemath.org/ticket/7383
-
-Original creator: jason
-
-Original creation time: 2009-11-03 19:10:53
-
+archive/issues_007383.json:
+```json
+{
+    "body": "Assignee: was\n\nIt would be cool to have an option to sample the vector field a given number of times and draw curved arrows (i.e., lines approximating the vector field, like a simple euler's method run for each point in the vector field).\n\nIssue created by migration from https://trac.sagemath.org/ticket/7383\n\n",
+    "created_at": "2009-11-03T19:10:53Z",
+    "labels": [
+        "graphics",
+        "major",
+        "enhancement"
+    ],
+    "title": "make curved arrows in 3d vector field plots",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7383",
+    "user": "jason"
+}
+```
 Assignee: was
 
 It would be cool to have an option to sample the vector field a given number of times and draw curved arrows (i.e., lines approximating the vector field, like a simple euler's method run for each point in the vector field).
+
+Issue created by migration from https://trac.sagemath.org/ticket/7383
+
+

@@ -1,11 +1,21 @@
 # Issue 9170: cygwin: get_memory_usage isn't implemented, e.g., because there's no top
 
-Issue created by migration from https://trac.sagemath.org/ticket/9170
-
-Original creator: was
-
-Original creation time: 2010-06-07 04:34:30
-
+archive/issues_009170.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  jpflori\n\n\n```\n\nsage -t  \"devel/sage/sage/misc/getusage.py\"                 \n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/misc/getusage.py\", line 30:\n    sage: print \"ignore this\";  top()              # random output\nException raised:\n    Traceback (most recent call last):\n      File \"/home/wstein/sage-4.4.3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/wstein/sage-4.4.3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/wstein/sage-4.4.3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_1[2]>\", line 1, in <module>\n        print \"ignore this\";  top()              # random output###line 30:\n    sage: print \"ignore this\";  top()              # random output\n      File \"/home/wstein/sage-4.4.3/local/lib/python/site-packages/sage/misc/getusage.py\", line 57, in top\n        raise NotImplementedError(\"top not implemented on platform %s\" % U)\n    NotImplementedError: top not implemented on platform cygwin_nt-5.1\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/misc/getusage.py\", line 92:\n    sage: t = get_memory_usage()\nException raised:\n    Traceback (most recent call last):\n      File \"/home/wstein/sage-4.4.3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/wstein/sage-4.4.3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/wstein/sage-4.4.3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_2[2]>\", line 1, in <module>\n        t = get_memory_usage()###line 92:\n    sage: t = get_memory_usage()\n      File \"/home/wstein/sage-4.4.3/local/lib/python/site-packages/sage/misc/getusage.py\", line 128, in get_memory_usage\n        raise NotImplementedError(\"memory usage not implemented on platform %s\" % U)\n    NotImplementedError: memory usage not implemented on platform cygwin_nt-5.1\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/misc/getusage.py\", line 93:\n    sage: get_memory_usage(t)          # amount of memory more than when we defined t.\nException raised:\n    Traceback (most recent call last):\n      File \"/home/wstein/sage-4.4.3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/wstein/sage-4.4.3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/wstein/sage-4.4.3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_2[3]>\", line 1, in <module>\n        get_memory_usage(t)          # amount of memory more than when we defined t.###line 93:\n    sage: get_memory_usage(t)          # amount of memory more than when we defined t.\n    NameError: name 't' is not defined\n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9170\n\n",
+    "created_at": "2010-06-07T04:34:30Z",
+    "labels": [
+        "porting: Cygwin",
+        "major",
+        "bug"
+    ],
+    "title": "cygwin: get_memory_usage isn't implemented, e.g., because there's no top",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9170",
+    "user": "was"
+}
+```
 Assignee: tbd
 
 CC:  jpflori
@@ -67,10 +77,25 @@ Exception raised:
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/9170
+
+
+
+
 
 ---
 
-Comment by was created at 2010-06-07 04:54:33
+archive/issue_comments_085744.json:
+```json
+{
+    "body": "Another test failure caused by this:\n\n```\n\nsage -t  \"devel/sage/sage/rings/tests.py\"                   \n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/rings/tests.py\", line 229:\n    sage: sage.rings.tests.test_random_elements(trials=2, seed=0)\nExpected:\n```\n",
+    "created_at": "2010-06-07T04:54:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9170",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9170#issuecomment-85744",
+    "user": "was"
+}
+```
 
 Another test failure caused by this:
 
@@ -85,9 +110,20 @@ Expected:
 
 
 
+
 ---
 
-Comment by drkirkby created at 2010-08-02 04:20:12
+archive/issue_comments_085745.json:
+```json
+{
+    "body": "I assume this means that \n\n\n```\nsage: top()\n```\n\n\nwill not work either. I know on Solaris, I called `prstat` rather than `top` as that is a standard part of Solaris, and `top` is not. But I thought on Linux there were some sysem calls in Sage for computing memory usage on Linux. Could it be as simple as changing\n\n\n```\nif [ \"x$UNAME\" = xLinux ] ; then \n   // Use Linux code\nelif [ \"x$UNAME\" = xSunOS ] ; then \n  // call prstat\n```\n\n\nto \n\n\n```\nif [ \"x$UNAME\" = xLinux ] || [ \"x$UNAME\" = xCYGWIN ] ; then \n   // Use Linux code\nelif [ \"x$UNAME\" = xSunOS ] ; then \n  // call prstat\n```\n\n\nDave",
+    "created_at": "2010-08-02T04:20:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9170",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9170#issuecomment-85745",
+    "user": "drkirkby"
+}
+```
 
 I assume this means that 
 
@@ -122,16 +158,38 @@ elif [ "x$UNAME" = xSunOS ] ; then
 Dave
 
 
+
 ---
 
-Comment by gbe created at 2010-10-27 18:12:42
+archive/issue_comments_085746.json:
+```json
+{
+    "body": "Changing status from new to needs_work.",
+    "created_at": "2010-10-27T18:12:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9170",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9170#issuecomment-85746",
+    "user": "gbe"
+}
+```
 
 Changing status from new to needs_work.
 
 
+
 ---
 
-Comment by gbe created at 2010-10-27 18:12:42
+archive/issue_comments_085747.json:
+```json
+{
+    "body": "Replying to [comment:2 drkirkby]:\n> I assume this means that \n> \n> {{{\n> sage: top()\n> }}}\n> \n> will not work either.\n\nI'm not at home so I can't test on my machine, but \n\n\n```\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/misc/getusage.py\", line 30:\n    sage: print \"ignore this\";  top()              # random output\n```\n\n\nlooks like the line that's causing the first error to be throwing. The offending line(s) should be\n\n\n```\n    if U == 'linux':\n        cmd = 'top -b -n 1 -p %s' % pid\n    elif U == 'darwin':\n        cmd = 'top -l 1 |grep \"^ *%s \"' % pid\n    elif U == 'sunos':\n        cmd = '/usr/bin/prstat -n 100000 1 1  | grep \"^ *%s \"' % pid\n    else:\n        raise NotImplementedError(\"top not implemented on platform %s\" % U)\n```\n\n\nI've double checked, and cygwin *does* ship with a top, so I suspect all that needs to be done is add a few instances along the line of \"or U == 'cygwin'\" and these issue would be resolved.\n\nI'll try to test this over the weekend and have a patch prepared.",
+    "created_at": "2010-10-27T18:12:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9170",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9170#issuecomment-85747",
+    "user": "gbe"
+}
+```
 
 Replying to [comment:2 drkirkby]:
 > I assume this means that 
@@ -166,29 +224,51 @@ looks like the line that's causing the first error to be throwing. The offending
 ```
 
 
-I've double checked, and cygwin _does_ ship with a top, so I suspect all that needs to be done is add a few instances along the line of "or U == 'cygwin'" and these issue would be resolved.
+I've double checked, and cygwin *does* ship with a top, so I suspect all that needs to be done is add a few instances along the line of "or U == 'cygwin'" and these issue would be resolved.
 
 I'll try to test this over the weekend and have a patch prepared.
 
 
+
 ---
 
-Comment by drkirkby created at 2010-10-27 18:43:22
+archive/issue_comments_085748.json:
+```json
+{
+    "body": "Irrespective of whether Cygwin comes with top or not, using it can't be the best way to get memory usage. top is not used on Linux exept as a last resort. There are system calls to get the memory usage, which is the most sensible way to do this. If those system calls work on Cygwin, then it would be\n\n* More accurate\n* Faster\n* Not require 'top' to be installed. \n\n`top` is not a standard Unix command. It's not defined by POSIX and will not be installed by default on Cygwin. It's better to avoid calling `top` if at all possible. \n\nDave",
+    "created_at": "2010-10-27T18:43:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9170",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9170#issuecomment-85748",
+    "user": "drkirkby"
+}
+```
 
 Irrespective of whether Cygwin comes with top or not, using it can't be the best way to get memory usage. top is not used on Linux exept as a last resort. There are system calls to get the memory usage, which is the most sensible way to do this. If those system calls work on Cygwin, then it would be
 
- * More accurate
- * Faster
- * Not require 'top' to be installed. 
+* More accurate
+* Faster
+* Not require 'top' to be installed. 
 
 `top` is not a standard Unix command. It's not defined by POSIX and will not be installed by default on Cygwin. It's better to avoid calling `top` if at all possible. 
 
 Dave
 
 
+
 ---
 
-Comment by gbe created at 2010-10-28 00:58:30
+archive/issue_comments_085749.json:
+```json
+{
+    "body": "Very true. I should have thought about what the code was doing, not just how to fix the breakage. As for top not being POSIX, I wasn't aware of that. I had always assumed it was. Since it's not POSIX it seems fine to let top() calls fail on Windows if top() is not installed, leaving an appropriately worded explanation.\n\nThe only time top is called on linux is via a top() call. To get the memory usage under linux, the /proc/<pid>/status is inspected. While they don't seem to document how complete it is, cygwin does populate a /proc directory. I'll poke around to see if the cygwin /proc system has what is needed. As far as I can see this the closest Python has to a memory usage call without using external libraries.\n\nGeoff",
+    "created_at": "2010-10-28T00:58:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9170",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9170#issuecomment-85749",
+    "user": "gbe"
+}
+```
 
 Very true. I should have thought about what the code was doing, not just how to fix the breakage. As for top not being POSIX, I wasn't aware of that. I had always assumed it was. Since it's not POSIX it seems fine to let top() calls fail on Windows if top() is not installed, leaving an appropriately worded explanation.
 
@@ -197,9 +277,20 @@ The only time top is called on linux is via a top() call. To get the memory usag
 Geoff
 
 
+
 ---
 
-Comment by drkirkby created at 2011-03-07 09:26:16
+archive/issue_comments_085750.json:
+```json
+{
+    "body": "Replying to [comment:5 gbe]:\n> Very true. I should have thought about what the code was doing, not just how to fix the breakage. As for top not being POSIX, I wasn't aware of that. I had always assumed it was. Since it's not POSIX it seems fine to let top() calls fail on Windows if top() is not installed, leaving an appropriately worded explanation.\n> \n> The only time top is called on linux is via a top() call. To get the memory usage under linux, the /proc/<pid>/status is inspected. While they don't seem to document how complete it is, cygwin does populate a /proc directory. I'll poke around to see if the cygwin /proc system has what is needed. As far as I can see this the closest Python has to a memory usage call without using external libraries.\n> \n> Geoff\n\nI don't know, but I thought the plan was to make an installer for Cygwin which installed the perquisites, which would include top. So it should not really fail. \n\nAs much as I don't like the idea of using 'top', I think in the short term it is a OK. There are more significant issues causing problems on Cygwin. I would have thought this one of the lower priority ones, but that's just my opinion. \n\nDave",
+    "created_at": "2011-03-07T09:26:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9170",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9170#issuecomment-85750",
+    "user": "drkirkby"
+}
+```
 
 Replying to [comment:5 gbe]:
 > Very true. I should have thought about what the code was doing, not just how to fix the breakage. As for top not being POSIX, I wasn't aware of that. I had always assumed it was. Since it's not POSIX it seems fine to let top() calls fail on Windows if top() is not installed, leaving an appropriately worded explanation.
@@ -215,45 +306,111 @@ As much as I don't like the idea of using 'top', I think in the short term it is
 Dave
 
 
+
 ---
 
-Comment by kcrisman created at 2013-01-15 15:38:44
+archive/issue_comments_085751.json:
+```json
+{
+    "body": "Unsurprisingly, this still doesn't work, though most stuff now does/can on Cygwin.",
+    "created_at": "2013-01-15T15:38:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9170",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9170#issuecomment-85751",
+    "user": "kcrisman"
+}
+```
 
 Unsurprisingly, this still doesn't work, though most stuff now does/can on Cygwin.
 
 
+
 ---
 
-Comment by jpflori created at 2013-01-15 18:11:47
+archive/issue_comments_085752.json:
+```json
+{
+    "body": "I guess we could prereq for the Cygwin procps package but is this really necessary?",
+    "created_at": "2013-01-15T18:11:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9170",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9170#issuecomment-85752",
+    "user": "jpflori"
+}
+```
 
 I guess we could prereq for the Cygwin procps package but is this really necessary?
 
 
+
 ---
 
-Comment by kcrisman created at 2013-01-15 18:13:57
+archive/issue_comments_085753.json:
+```json
+{
+    "body": "Well, `get_memory_usage` is pretty useful.  Otherwise the real question would be how to change these doctests so they pass on Cygwin, which isn't clear to me.",
+    "created_at": "2013-01-15T18:13:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9170",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9170#issuecomment-85753",
+    "user": "kcrisman"
+}
+```
 
 Well, `get_memory_usage` is pretty useful.  Otherwise the real question would be how to change these doctests so they pass on Cygwin, which isn't clear to me.
 
 
+
 ---
 
-Comment by jpflori created at 2013-01-15 22:10:20
+archive/issue_comments_085754.json:
+```json
+{
+    "body": "After fighting with Cygwin to get enough memory to run heegner.py test (did not manage yet... not sure that I changed anything but I can allocate 500000000 bytes, but not 512000000), I'm not really convinced that get_memory_usage is that useful on Cygwin as you won't really be able to allocate as much memory as you want (without fighting with Cygwin...).",
+    "created_at": "2013-01-15T22:10:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9170",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9170#issuecomment-85754",
+    "user": "jpflori"
+}
+```
 
 After fighting with Cygwin to get enough memory to run heegner.py test (did not manage yet... not sure that I changed anything but I can allocate 500000000 bytes, but not 512000000), I'm not really convinced that get_memory_usage is that useful on Cygwin as you won't really be able to allocate as much memory as you want (without fighting with Cygwin...).
 
 
+
 ---
 
-Comment by jpflori created at 2013-01-15 22:13:25
+archive/issue_comments_085755.json:
+```json
+{
+    "body": "Whatsoever, with Cygwin procps package which provides top, the doctests do not pass.\nAnd this is expected as the top function implemented in getusage.py explicitely raises an Error on not explicitely listed systems, which include Cygwin.",
+    "created_at": "2013-01-15T22:13:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9170",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9170#issuecomment-85755",
+    "user": "jpflori"
+}
+```
 
 Whatsoever, with Cygwin procps package which provides top, the doctests do not pass.
 And this is expected as the top function implemented in getusage.py explicitely raises an Error on not explicitely listed systems, which include Cygwin.
 
 
+
 ---
 
-Comment by jpflori created at 2013-01-15 22:19:00
+archive/issue_comments_085756.json:
+```json
+{
+    "body": "So I still think the best solution is not to test this on Cygwin or to expect a different result...\n\nOr if you insist we add procps as a prereq and modify the Sage's top function implem.\n\nAlternatively, we could modify Sage's top so that it raises an Error iff the system top is not available.\nThen only the top implementation would vary, depending on the availability of top, not the doctest which would expect random output on Cygwin (0.0 if top is installed, Error otherwise).\nBut we would still need to deal with doctests producing different output depending on the system (let's say mark it as random Cygwin so that it will (hackingly) deal with both situation (whether procps is installed or not), rather than making it depend on the fact that it is installed which looks impossible; and expect 0.0 on other systems).",
+    "created_at": "2013-01-15T22:19:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9170",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9170#issuecomment-85756",
+    "user": "jpflori"
+}
+```
 
 So I still think the best solution is not to test this on Cygwin or to expect a different result...
 
@@ -264,85 +421,219 @@ Then only the top implementation would vary, depending on the availability of to
 But we would still need to deal with doctests producing different output depending on the system (let's say mark it as random Cygwin so that it will (hackingly) deal with both situation (whether procps is installed or not), rather than making it depend on the fact that it is installed which looks impossible; and expect 0.0 on other systems).
 
 
+
 ---
 
-Comment by kcrisman created at 2013-01-16 01:18:47
+archive/issue_comments_085757.json:
+```json
+{
+    "body": "Given that #12828 just uses completely different commands (i.e., `ps`) to get this information, which should presumably be available (?) on Cygwin, can we just do that?  Note that we also do this on Solaris.  I.e. we just add another case, perhaps on top (no pun intended) of #12828.",
+    "created_at": "2013-01-16T01:18:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9170",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9170#issuecomment-85757",
+    "user": "kcrisman"
+}
+```
 
 Given that #12828 just uses completely different commands (i.e., `ps`) to get this information, which should presumably be available (?) on Cygwin, can we just do that?  Note that we also do this on Solaris.  I.e. we just add another case, perhaps on top (no pun intended) of #12828.
 
 
+
 ---
 
-Comment by jpflori created at 2013-01-16 10:50:43
+archive/issue_comments_085758.json:
+```json
+{
+    "body": "Yes ps is included in the \"cygwin\" package itself so always available.",
+    "created_at": "2013-01-16T10:50:43Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9170",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9170#issuecomment-85758",
+    "user": "jpflori"
+}
+```
 
 Yes ps is included in the "cygwin" package itself so always available.
 
 
+
 ---
 
-Comment by jpflori created at 2013-01-16 11:01:06
+archive/issue_comments_085759.json:
+```json
+{
+    "body": "But that won't help, I guess we are stuck with top.",
+    "created_at": "2013-01-16T11:01:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9170",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9170#issuecomment-85759",
+    "user": "jpflori"
+}
+```
 
 But that won't help, I guess we are stuck with top.
 
 
+
 ---
 
-Comment by jpflori created at 2013-01-16 11:03:45
+archive/issue_comments_085760.json:
+```json
+{
+    "body": "Or we could just directly look into /proc/meminfo, not sure why we don't do that on Linuces.",
+    "created_at": "2013-01-16T11:03:45Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9170",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9170#issuecomment-85760",
+    "user": "jpflori"
+}
+```
 
 Or we could just directly look into /proc/meminfo, not sure why we don't do that on Linuces.
 
 
+
 ---
 
-Comment by jpflori created at 2013-01-16 11:04:49
+archive/issue_comments_085761.json:
+```json
+{
+    "body": "Or rather things in /proc/$PID/",
+    "created_at": "2013-01-16T11:04:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9170",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9170#issuecomment-85761",
+    "user": "jpflori"
+}
+```
 
 Or rather things in /proc/$PID/
 
 
+
 ---
 
-Comment by jpflori created at 2013-01-16 11:05:30
+archive/issue_comments_085762.json:
+```json
+{
+    "body": "Surely that is not portable across a large range of Linuces.",
+    "created_at": "2013-01-16T11:05:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9170",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9170#issuecomment-85762",
+    "user": "jpflori"
+}
+```
 
 Surely that is not portable across a large range of Linuces.
 
 
+
 ---
 
-Comment by dimpase created at 2013-01-27 08:43:13
+archive/issue_comments_085763.json:
+```json
+{
+    "body": "I do have top on my Cygwin install and its output is very much Linux-like. So I propose just to hack `misc/getusage.py` to let it work on cygwin, too.",
+    "created_at": "2013-01-27T08:43:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9170",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9170#issuecomment-85763",
+    "user": "dimpase"
+}
+```
 
 I do have top on my Cygwin install and its output is very much Linux-like. So I propose just to hack `misc/getusage.py` to let it work on cygwin, too.
 
 
+
 ---
+
+archive/issue_comments_085764.json:
+```json
+{
+    "body": "Attachment\n\nenabling it on Cygwin",
+    "created_at": "2013-01-27T09:10:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9170",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9170#issuecomment-85764",
+    "user": "dimpase"
+}
+```
 
 Attachment
 
 enabling it on Cygwin
 
 
+
 ---
 
-Comment by dimpase created at 2013-01-27 09:12:34
+archive/issue_comments_085765.json:
+```json
+{
+    "body": "Changing status from needs_work to needs_review.",
+    "created_at": "2013-01-27T09:12:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9170",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9170#issuecomment-85765",
+    "user": "dimpase"
+}
+```
 
 Changing status from needs_work to needs_review.
 
 
+
 ---
 
-Comment by dimpase created at 2013-01-27 09:18:07
+archive/issue_comments_085766.json:
+```json
+{
+    "body": "please test the patch (on Cygwin you might need to install `top`). The patch works on my Cygwin install just fine.",
+    "created_at": "2013-01-27T09:18:07Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9170",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9170#issuecomment-85766",
+    "user": "dimpase"
+}
+```
 
 please test the patch (on Cygwin you might need to install `top`). The patch works on my Cygwin install just fine.
 
 
+
 ---
 
-Comment by jpflori created at 2013-02-08 12:43:15
+archive/issue_comments_085767.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2013-02-08T12:43:15Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9170",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9170#issuecomment-85767",
+    "user": "jpflori"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-02-09 12:13:09
+archive/issue_comments_085768.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2013-02-09T12:13:09Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9170",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9170#issuecomment-85768",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: fixed

@@ -1,39 +1,99 @@
 # Issue 4887: [with patch, needs review] notebook -- make worksheet autosave inveral configurable from notebook settings
 
-Issue created by migration from https://trac.sagemath.org/ticket/4887
-
-Original creator: TimothyClemans
-
-Original creation time: 2008-12-29 08:34:46
-
+archive/issues_004887.json:
+```json
+{
+    "body": "Assignee: boothby\n\nCC:  wjp\n\nDepends on #4886\n\nIssue created by migration from https://trac.sagemath.org/ticket/4887\n\n",
+    "created_at": "2008-12-29T08:34:46Z",
+    "labels": [
+        "notebook",
+        "major",
+        "enhancement"
+    ],
+    "title": "[with patch, needs review] notebook -- make worksheet autosave inveral configurable from notebook settings",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/4887",
+    "user": "TimothyClemans"
+}
+```
 Assignee: boothby
 
 CC:  wjp
 
 Depends on #4886
 
+Issue created by migration from https://trac.sagemath.org/ticket/4887
+
+
+
+
 
 ---
+
+archive/issue_comments_037045.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-12-29T08:35:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4887",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4887#issuecomment-37045",
+    "user": "TimothyClemans"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by ddrake created at 2009-09-05 02:58:59
+archive/issue_comments_037046.json:
+```json
+{
+    "body": "See comment:ticket:4886:3",
+    "created_at": "2009-09-05T02:58:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4887",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4887#issuecomment-37046",
+    "user": "ddrake"
+}
+```
 
 See comment:ticket:4886:3
 
 
+
 ---
 
-Comment by was created at 2009-12-09 14:27:37
+archive/issue_comments_037047.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2009-12-09T14:27:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4887",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4887#issuecomment-37047",
+    "user": "was"
+}
+```
 
 Resolution: invalid
 
 
+
 ---
 
-Comment by kcrisman created at 2014-09-18 16:06:20
+archive/issue_comments_037048.json:
+```json
+{
+    "body": "See #5459.  This is about the *worksheet* autosave interval.",
+    "created_at": "2014-09-18T16:06:20Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/4887",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/4887#issuecomment-37048",
+    "user": "kcrisman"
+}
+```
 
-See #5459.  This is about the _worksheet_ autosave interval.
+See #5459.  This is about the *worksheet* autosave interval.

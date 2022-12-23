@@ -1,11 +1,21 @@
 # Issue 7460: numerical noise on itanium (iras)
 
-Issue created by migration from https://trac.sagemath.org/ticket/7460
-
-Original creator: was
-
-Original creation time: 2009-11-14 18:08:08
-
+archive/issues_007460.json:
+```json
+{
+    "body": "Assignee: was\n\n\n```\nwstein@iras:~/screen/iras/build/sage-4.2.1.rc0> ./sage -t -long \"devel/sage/doc/en/numerical_sage/cvxopt.rst\"\nsage -t -long \"devel/sage/doc/en/numerical_sage/cvxopt.rst\"\n**********************************************************************\nFile \"/home/wstein/screen/iras/build/sage-4.2.1.rc0/devel/sage/doc/en/numerical_sage/cvxopt.rst\", line 137:\n    sage: print sol['x']\nExpected:\n       1.0000e+00\n       1.0000e+00\nGot:   \n       1.0000e-00\n       1.0000e+00\n    <BLANKLINE>\n**********************************************************************\n1 items had failures:\n   1 of  11 in __main__.example_2\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/wstein/.sage//tmp/.doctest_cvxopt.py\n         [3.8 s]\nexit code: 1024\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7460\n\n",
+    "created_at": "2009-11-14T18:08:08Z",
+    "labels": [
+        "doctest coverage",
+        "blocker",
+        "bug"
+    ],
+    "title": "numerical noise on itanium (iras)",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7460",
+    "user": "was"
+}
+```
 Assignee: was
 
 
@@ -33,10 +43,25 @@ exit code: 1024
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7460
+
+
+
+
 
 ---
 
-Comment by was created at 2009-11-14 18:11:55
+archive/issue_comments_062835.json:
+```json
+{
+    "body": "With the attached patch:\n\n```\nwstein@iras:~/screen/iras/build/sage-4.2.1.rc0> ./sage -t -long \"devel/sage/doc/en/numerical_sage/cvxopt.rst\"\nsage -t -long \"devel/sage/doc/en/numerical_sage/cvxopt.rst\" \n         [3.7 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 3.7 seconds\n```\n",
+    "created_at": "2009-11-14T18:11:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7460",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7460#issuecomment-62835",
+    "user": "was"
+}
+```
 
 With the attached patch:
 
@@ -52,34 +77,91 @@ Total time for all tests: 3.7 seconds
 
 
 
+
 ---
+
+archive/issue_comments_062836.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-11-14T18:13:24Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7460",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7460#issuecomment-62836",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2009-11-14 18:13:33
+archive/issue_comments_062837.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-11-14T18:13:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7460",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7460#issuecomment-62837",
+    "user": "was"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mhansen created at 2009-11-15 14:13:57
+archive/issue_comments_062838.json:
+```json
+{
+    "body": "Looks good to me.",
+    "created_at": "2009-11-15T14:13:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7460",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7460#issuecomment-62838",
+    "user": "mhansen"
+}
+```
 
 Looks good to me.
 
 
+
 ---
 
-Comment by mhansen created at 2009-11-15 14:13:57
+archive/issue_comments_062839.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-11-15T14:13:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7460",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7460#issuecomment-62839",
+    "user": "mhansen"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mhansen created at 2009-11-17 05:55:04
+archive/issue_comments_062840.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-11-17T05:55:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7460",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7460#issuecomment-62840",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

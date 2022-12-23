@@ -1,11 +1,21 @@
 # Issue 3586: twist.py -- doctest doesn't work on some machines due to ports not being open-able
 
-Issue created by migration from https://trac.sagemath.org/ticket/3586
-
-Original creator: was
-
-Original creation time: 2008-07-07 15:29:56
-
+archive/issues_003586.json:
+```json
+{
+    "body": "Assignee: failure\n\nOn sagemath.org (ubuntu 64-bit opteron)\n\n\n```\n\n         [7.2 s]\nsage -t  devel/sage/sage/server/simple/twist.py             **********************************************************************\nFile \"/home2/sage/build/sage-3.0.4.alpha2/tmp/twist.py\", line 27:\n    sage: login_page = get_url('http://localhost:%s/simple/login?username=admin&password=%s' % (port, passwd))\nException raised:\n    Traceback (most recent call last):\n      File \"/home2/sage/build/sage-3.0.4.alpha2/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[8]>\", line 1, in <module>\n        login_page = get_url('http://localhost:%s/simple/login?username=admin&password=%s' % (port, passwd))###line 27:\n    sage: login_page = get_url('http://localhost:%s/simple/login?username=admin&password=%s' % (port, passwd))\n      File \"<doctest __main__.example_0[7]>\", line 1, in get_url\n        def get_url(url): h = urllib.urlopen(url); data = h.read(); h.close(); return data###line 23:\n    sage: def get_url(url): h = urllib.urlopen(url); data = h.read(); h.close(); return data\n      File \"/home2/sage/build/sage-3.0.4.alpha2/local/lib/python2.5/urllib.py\", line 82, in urlopen\n        return opener.open(url)\n      File \"/home2/sage/build/sage-3.0.4.alpha2/local/lib/python2.5/urllib.py\", line 190, in open\n        return getattr(self, name)(url)\n      File \"/home2/sage/build/sage-3.0.4.alpha2/local/lib/python2.5/urllib.py\", line 325, in open_http\n        h.endheaders()\n      File \"/home2/sage/build/sage-3.0.4.alpha2/local/lib/python2.5/httplib.py\", line 860, in endheaders\n        self._send_output()\n      File \"/home2/sage/build/sage-3.0.4.alpha2/local/lib/python2.5/httplib.py\", line 732, in _send_output\n        self.send(msg)\n      File \"/home2/sage/build/sage-3.0.4.alpha2/local/lib/python2.5/httplib.py\", line 699, in send\n        self.connect()\n      File \"/home2/sage/build/sage-3.0.4.alpha2/local/lib/python2.5/httplib.py\", line 683, in connect\n        raise socket.error, msg\n    IOError: [Errno socket error] (111, 'Connection refused')\n**********************************************************************\nFile \"/home2/sage/build/sage-3.0.4.alpha2/tmp/twist.py\", line 28:\n    sage: print \"ignore this\";  print login_page # random session id\nException raised:\n    Traceback (most recent call last):\n      File \"/home2/sage/build/sage-3.0.4.alpha2/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[9]>\", line 1, in <module>\n        print \"ignore this\";  print login_page # random session id###line 28:\n    sage: print \"ignore this\";  print login_page # random session id\n    NameError: name 'login_page' is not defined\n**********************************************************************\nFile \"/home2/sage/build/sage-3.0.4.alpha2/tmp/twist.py\", line 33:\n    sage: session = re.match(r'.*\"session\": \"([^\"]*)\"', login_page, re.DOTALL).groups()[0]\nException raised:\n    Traceback (most recent call last):\n      File \"/home2/sage/build/sage-3.0.4.alpha2/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[10]>\", line 1, in <module>\n        session = re.match(r'.*\"session\": \"([^\"]*)\"', login_page, re.DOTALL).groups()[Integer(0)]###line 33:\n    sage: session = re.match(r'.*\"session\": \"([^\"]*)\"', login_page, re.DOTALL).groups()[0]\n    NameError: name 'login_page' is not defined\n**********************************************************************\nFile \"/home2/sage/build/sage-3.0.4.alpha2/tmp/twist.py\", line 37:\n    sage: print get_url('http://localhost:%s/simple/compute?session=%s&code=2*2' % (port, session))\nException raised:\n    Traceback (most recent call last):\n      File \"/home2/sage/build/sage-3.0.4.alpha2/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[12]>\", line 1, in <module>\n        print get_url('http://localhost:%s/simple/compute?session=%s&code=2*2' % (port, session))###line 37:\n    sage: print get_url('http://localhost:%s/simple/compute?session=%s&code=2*2' % (port, session))\n    NameError: name 'session' is not defined\n**********************************************************************\nFile \"/home2/sage/build/sage-3.0.4.alpha2/tmp/twist.py\", line 48:\n    sage: print get_url('http://localhost:%s/simple/compute?session=%s&code=factor(%s)&timeout=0.1' % (port, session, n))\nException raised:\n    Traceback (most recent call last):\n      File \"/home2/sage/build/sage-3.0.4.alpha2/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[14]>\", line 1, in <module>\n        print get_url('http://localhost:%s/simple/compute?session=%s&code=factor(%s)&timeout=0.1' % (port, session, n))###line 48:\n    sage: print get_url('http://localhost:%s/simple/compute?session=%s&code=factor(%s)&timeout=0.1' % (port, session, n))\n    NameError: name 'session' is not defined\n**********************************************************************\nFile \"/home2/sage/build/sage-3.0.4.alpha2/tmp/twist.py\", line 57:\n    sage: print get_url('http://localhost:%s/simple/status?session=%s&cell=2' % (port, session))\nException raised:\n    Traceback (most recent call last):\n      File \"/home2/sage/build/sage-3.0.4.alpha2/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[15]>\", line 1, in <module>\n        print get_url('http://localhost:%s/simple/status?session=%s&cell=2' % (port, session))###line 57:\n    sage: print get_url('http://localhost:%s/simple/status?session=%s&cell=2' % (port, session))\n    NameError: name 'session' is not defined\n**********************************************************************\nFile \"/home2/sage/build/sage-3.0.4.alpha2/tmp/twist.py\", line 66:\n    sage: _ = get_url('http://localhost:%s/simple/interrupt?session=%s' % (port, session))\nException raised:\n    Traceback (most recent call last):\n      File \"/home2/sage/build/sage-3.0.4.alpha2/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[16]>\", line 1, in <module>\n        _ = get_url('http://localhost:%s/simple/interrupt?session=%s' % (port, session))###line 66:\n    sage: _ = get_url('http://localhost:%s/simple/interrupt?session=%s' % (port, session))\n    NameError: name 'session' is not defined\n**********************************************************************\nFile \"/home2/sage/build/sage-3.0.4.alpha2/tmp/twist.py\", line 70:\n    sage: print get_url('http://localhost:%s/simple/compute?session=%s&code=%s' % (port, session, urllib.quote(code)))\nException raised:\n    Traceback (most recent call last):\n      File \"/home2/sage/build/sage-3.0.4.alpha2/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[18]>\", line 1, in <module>\n        print get_url('http://localhost:%s/simple/compute?session=%s&code=%s' % (port, session, urllib.quote(code)))###line 70:\n    sage: print get_url('http://localhost:%s/simple/compute?session=%s&code=%s' % (port, session, urllib.quote(code)))\n    NameError: name 'session' is not defined\n**********************************************************************\nFile \"/home2/sage/build/sage-3.0.4.alpha2/tmp/twist.py\", line 78:\n    sage: print get_url('http://localhost:%s/simple/file?session=%s&cell=3&file=a.txt' % (port, session))\nException raised:\n    Traceback (most recent call last):\n      File \"/home2/sage/build/sage-3.0.4.alpha2/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[19]>\", line 1, in <module>\n        print get_url('http://localhost:%s/simple/file?session=%s&cell=3&file=a.txt' % (port, session))###line 78:\n    sage: print get_url('http://localhost:%s/simple/file?session=%s&cell=3&file=a.txt' % (port, session))\n    NameError: name 'session' is not defined\n**********************************************************************\nFile \"/home2/sage/build/sage-3.0.4.alpha2/tmp/twist.py\", line 82:\n    sage: _ = get_url('http://localhost:%s/simple/logout?session=%s' % (port, session))\nException raised:\n    Traceback (most recent call last):\n      File \"/home2/sage/build/sage-3.0.4.alpha2/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[20]>\", line 1, in <module>\n        _ = get_url('http://localhost:%s/simple/logout?session=%s' % (port, session))###line 82:\n    sage: _ = get_url('http://localhost:%s/simple/logout?session=%s' % (port, session))\n    NameError: name 'session' is not defined\n**********************************************************************\n1 items had failures:\n  10 of  22 in __main__.example_0\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3586\n\n",
+    "created_at": "2008-07-07T15:29:56Z",
+    "labels": [
+        "doctest coverage",
+        "blocker",
+        "bug"
+    ],
+    "title": "twist.py -- doctest doesn't work on some machines due to ports not being open-able",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3586",
+    "user": "was"
+}
+```
 Assignee: failure
 
 On sagemath.org (ubuntu 64-bit opteron)
@@ -148,19 +158,45 @@ Exception raised:
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/3586
+
+
+
+
 
 ---
 
-Comment by wjp created at 2008-07-07 17:09:48
+archive/issue_comments_025313.json:
+```json
+{
+    "body": "It seems that on the machine where this fails for me, this is probably a race condition between the notebook starting and the first connection being made. At least, when I add a sleep(1) after the test_notebook() call, I can no longer reproduce this.\n\nMaybe we should make the notebook server print a small log message when it is ready to receive connections, and make run_notebook wait for that (through pexpect) when fork=True ?",
+    "created_at": "2008-07-07T17:09:48Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3586",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3586#issuecomment-25313",
+    "user": "wjp"
+}
+```
 
 It seems that on the machine where this fails for me, this is probably a race condition between the notebook starting and the first connection being made. At least, when I add a sleep(1) after the test_notebook() call, I can no longer reproduce this.
 
 Maybe we should make the notebook server print a small log message when it is ready to receive connections, and make run_notebook wait for that (through pexpect) when fork=True ?
 
 
+
 ---
 
-Comment by was created at 2008-07-07 18:52:57
+archive/issue_comments_025314.json:
+```json
+{
+    "body": "wjp is exactly right -- it's a race condition.\n\nI've attached a patch that does what he suggested and it worked 10 times in a row, whereas before the doctest would fail every other time on sagemath.org. \n\nHis suggestion about watching the server log sounds pretty painful to implement, but would be possible. That should be another ticket.",
+    "created_at": "2008-07-07T18:52:57Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3586",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3586#issuecomment-25314",
+    "user": "was"
+}
+```
 
 wjp is exactly right -- it's a race condition.
 
@@ -169,20 +205,55 @@ I've attached a patch that does what he suggested and it worked 10 times in a ro
 His suggestion about watching the server log sounds pretty painful to implement, but would be possible. That should be another ticket.
 
 
+
 ---
+
+archive/issue_comments_025315.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-07-07T18:54:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3586",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3586#issuecomment-25315",
+    "user": "was"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by was created at 2008-07-07 21:46:40
+archive/issue_comments_025316.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-07-07T21:46:40Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3586",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3586#issuecomment-25316",
+    "user": "was"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-07 21:51:42
+archive/issue_comments_025317.json:
+```json
+{
+    "body": "Merged in Sage 3.0.4.rc0",
+    "created_at": "2008-07-07T21:51:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3586",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3586#issuecomment-25317",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.4.rc0

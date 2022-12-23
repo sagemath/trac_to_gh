@@ -1,11 +1,21 @@
 # Issue 7683: sphinx reference manual documentation has a *major* issues: in some cases the input parameters to functions are completely omitted causing great confusion!
 
-Issue created by migration from https://trac.sagemath.org/ticket/7683
-
-Original creator: was
-
-Original creation time: 2009-12-15 02:01:17
-
+archive/issues_007683.json:
+```json
+{
+    "body": "Assignee: mvngu\n\nSee\n\nhttp://sagemath.org/doc/reference/sage/rings/integer.html#sage.rings.integer.Integer.jacobi\n\nNotice that the input parameter b is simply totally omitted from the function signature. In sharp contrast, if you type\n\n```\nsage: a = 5\nsage: a.jacobi(<tab>\n```\n\nin the notebook, then you'll see the correct sphinx-rendered documentation *with* the other input argument.  This is very bad and confusing for some users who trust reference manuals, especially because evidently the use of INPUT/OUTPUT blocks to describe parameters of functions is not being used nearly as much as it should be (there will be another ticket about that).\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7683\n\n",
+    "created_at": "2009-12-15T02:01:17Z",
+    "labels": [
+        "documentation",
+        "critical",
+        "bug"
+    ],
+    "title": "sphinx reference manual documentation has a *major* issues: in some cases the input parameters to functions are completely omitted causing great confusion!",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7683",
+    "user": "was"
+}
+```
 Assignee: mvngu
 
 See
@@ -23,64 +33,171 @@ in the notebook, then you'll see the correct sphinx-rendered documentation *with
 
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7683
+
+
+
+
 
 ---
 
-Comment by jhpalmieri created at 2009-12-15 02:54:13
+archive/issue_comments_065936.json:
+```json
+{
+    "body": "Is this only with .pyx files, or are there problems with .py files, too?  A random search through a few files suggests that it's only .pyx files (and perhaps all .pyx files) which cause problems.  I don't know what this means, but maybe someone can figure it out.",
+    "created_at": "2009-12-15T02:54:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7683",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7683#issuecomment-65936",
+    "user": "jhpalmieri"
+}
+```
 
 Is this only with .pyx files, or are there problems with .py files, too?  A random search through a few files suggests that it's only .pyx files (and perhaps all .pyx files) which cause problems.  I don't know what this means, but maybe someone can figure it out.
 
 
+
 ---
 
-Comment by mhansen created at 2009-12-15 03:58:52
+archive/issue_comments_065937.json:
+```json
+{
+    "body": "The problem is that Sphinx needs to use the functions in sage.misc.sageinspect to get the function signature as inspect.getargspec doesn't work with Cython modules.",
+    "created_at": "2009-12-15T03:58:52Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7683",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7683#issuecomment-65937",
+    "user": "mhansen"
+}
+```
 
 The problem is that Sphinx needs to use the functions in sage.misc.sageinspect to get the function signature as inspect.getargspec doesn't work with Cython modules.
 
 
+
 ---
+
+archive/issue_comments_065938.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-12-15T10:06:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7683",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7683#issuecomment-65938",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_065939.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-12-15T10:06:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7683",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7683#issuecomment-65939",
+    "user": "mhansen"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mhansen created at 2009-12-15 10:09:08
+archive/issue_comments_065940.json:
+```json
+{
+    "body": "I've attached a patch for the Sage library which uses the new spkg at http://sage.math.washington.edu/home/mhansen/sphinx-0.6.3.p3.spkg .  The changes in this spkg are at sphinx-0.6.3.p3.patch .",
+    "created_at": "2009-12-15T10:09:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7683",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7683#issuecomment-65940",
+    "user": "mhansen"
+}
+```
 
 I've attached a patch for the Sage library which uses the new spkg at http://sage.math.washington.edu/home/mhansen/sphinx-0.6.3.p3.spkg .  The changes in this spkg are at sphinx-0.6.3.p3.patch .
 
 
+
 ---
 
-Comment by mhansen created at 2009-12-15 10:09:08
+archive/issue_comments_065941.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2009-12-15T10:09:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7683",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7683#issuecomment-65941",
+    "user": "mhansen"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-12-15 17:46:47
+archive/issue_comments_065942.json:
+```json
+{
+    "body": "It looks good to me, and I understand the general principle behind the patch, but not necessarily the details.  (For instance, and this has more to do with Sphinx than the patch, why is essentially the same code repeated four times?)\n\nThe output seems to fix the complaint, too.  Is this worth reporting to the Sphinx people as a suggested addition to their code?",
+    "created_at": "2009-12-15T17:46:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7683",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7683#issuecomment-65942",
+    "user": "jhpalmieri"
+}
+```
 
 It looks good to me, and I understand the general principle behind the patch, but not necessarily the details.  (For instance, and this has more to do with Sphinx than the patch, why is essentially the same code repeated four times?)
 
 The output seems to fix the complaint, too.  Is this worth reporting to the Sphinx people as a suggested addition to their code?
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-12-15 17:46:47
+archive/issue_comments_065943.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2009-12-15T17:46:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7683",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7683#issuecomment-65943",
+    "user": "jhpalmieri"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jhpalmieri created at 2009-12-15 17:49:02
+archive/issue_comments_065944.json:
+```json
+{
+    "body": "Replying to [comment:5 jhpalmieri]:\n> It looks good to me, and I understand the general principle behind the patch, but not necessarily the details.  (For instance, and this has more to do with Sphinx than the patch, why is essentially the same code repeated four times?)\n\n(Well, twice, not four times, but still.)",
+    "created_at": "2009-12-15T17:49:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7683",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7683#issuecomment-65944",
+    "user": "jhpalmieri"
+}
+```
 
 Replying to [comment:5 jhpalmieri]:
 > It looks good to me, and I understand the general principle behind the patch, but not necessarily the details.  (For instance, and this has more to do with Sphinx than the patch, why is essentially the same code repeated four times?)
@@ -88,24 +205,57 @@ Replying to [comment:5 jhpalmieri]:
 (Well, twice, not four times, but still.)
 
 
+
 ---
 
-Comment by mhansen created at 2009-12-15 17:54:34
+archive/issue_comments_065945.json:
+```json
+{
+    "body": "One place is for methods and the other is for functions.  \n\nI sent Georg a message about it, but I haven't heard back from him.  I'll try to push this upstream",
+    "created_at": "2009-12-15T17:54:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7683",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7683#issuecomment-65945",
+    "user": "mhansen"
+}
+```
 
 One place is for methods and the other is for functions.  
 
 I sent Georg a message about it, but I haven't heard back from him.  I'll try to push this upstream
 
 
+
 ---
 
-Comment by was created at 2009-12-15 18:44:00
+archive/issue_comments_065946.json:
+```json
+{
+    "body": "I also give this a positive review.  I tested the code and also read it, and it makes sense to me and works.",
+    "created_at": "2009-12-15T18:44:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7683",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7683#issuecomment-65946",
+    "user": "was"
+}
+```
 
 I also give this a positive review.  I tested the code and also read it, and it makes sense to me and works.
 
 
+
 ---
 
-Comment by mhansen created at 2009-12-16 02:23:29
+archive/issue_comments_065947.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-12-16T02:23:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7683",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7683#issuecomment-65947",
+    "user": "mhansen"
+}
+```
 
 Resolution: fixed

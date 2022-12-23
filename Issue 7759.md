@@ -1,11 +1,21 @@
 # Issue 7759: Add a 'README.Solaris' file to the root of Sage directory.
 
-Issue created by migration from https://trac.sagemath.org/ticket/7759
-
-Original creator: drkirkby
-
-Original creation time: 2009-12-24 10:20:46
-
+archive/issues_007759.json:
+```json
+{
+    "body": "Assignee: drkirkby\n\nCC:  was dimpase\n\nSince sage-4.3.rc0 should build on Solaris, I think we need a README file. But I agree with William's suggestion some time ago, that this is a link to a Wiki. So the attached README.Solaris basically tells people where to get information on building Sage on Solaris. \n\nI'll update the Wili regularly. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7759\n\n",
+    "created_at": "2009-12-24T10:20:46Z",
+    "labels": [
+        "porting: Solaris",
+        "major",
+        "bug"
+    ],
+    "title": "Add a 'README.Solaris' file to the root of Sage directory.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/7759",
+    "user": "drkirkby"
+}
+```
 Assignee: drkirkby
 
 CC:  was dimpase
@@ -14,51 +24,134 @@ Since sage-4.3.rc0 should build on Solaris, I think we need a README file. But I
 
 I'll update the Wili regularly. 
 
+Issue created by migration from https://trac.sagemath.org/ticket/7759
+
+
+
+
 
 ---
+
+archive/issue_comments_066812.json:
+```json
+{
+    "body": "Attachment\n\nFile to add to $SAGE_ROOT",
+    "created_at": "2009-12-24T10:22:04Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7759",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7759#issuecomment-66812",
+    "user": "drkirkby"
+}
+```
 
 Attachment
 
 File to add to $SAGE_ROOT
 
 
+
 ---
 
-Comment by drkirkby created at 2009-12-24 10:22:47
+archive/issue_comments_066813.json:
+```json
+{
+    "body": "Changing keywords from \"\" to \"Solaris README\".",
+    "created_at": "2009-12-24T10:22:47Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7759",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7759#issuecomment-66813",
+    "user": "drkirkby"
+}
+```
 
 Changing keywords from "" to "Solaris README".
 
 
+
 ---
 
-Comment by mkoeppe created at 2020-07-08 16:51:35
+archive/issue_comments_066814.json:
+```json
+{
+    "body": "Outdated, should be closed",
+    "created_at": "2020-07-08T16:51:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7759",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7759#issuecomment-66814",
+    "user": "mkoeppe"
+}
+```
 
 Outdated, should be closed
 
 
+
 ---
 
-Comment by mkoeppe created at 2020-07-08 16:51:35
+archive/issue_comments_066815.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2020-07-08T16:51:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7759",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7759#issuecomment-66815",
+    "user": "mkoeppe"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by mjo created at 2020-07-12 20:32:37
+archive/issue_comments_066816.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2020-07-12T20:32:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7759",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7759#issuecomment-66816",
+    "user": "mjo"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mjo created at 2020-07-12 20:32:37
+archive/issue_comments_066817.json:
+```json
+{
+    "body": "One of the links is dead, and the wiki hasn't been updated since 2011. I think if we're going to support one of the Solaris descendants in the future, we'll be starting from scratch anyway (ideally with far fewer special instructions). OpenIndiana, for example, now uses GCC.",
+    "created_at": "2020-07-12T20:32:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7759",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7759#issuecomment-66817",
+    "user": "mjo"
+}
+```
 
 One of the links is dead, and the wiki hasn't been updated since 2011. I think if we're going to support one of the Solaris descendants in the future, we'll be starting from scratch anyway (ideally with far fewer special instructions). OpenIndiana, for example, now uses GCC.
 
 
+
 ---
 
-Comment by chapoton created at 2020-07-14 16:33:33
+archive/issue_comments_066818.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2020-07-14T16:33:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/7759",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/7759#issuecomment-66818",
+    "user": "chapoton"
+}
+```
 
 Resolution: invalid

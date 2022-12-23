@@ -1,11 +1,21 @@
 # Issue 5942: bug in RealIntervalField printing
 
-Issue created by migration from https://trac.sagemath.org/ticket/5942
-
-Original creator: ylchapuy
-
-Original creation time: 2009-04-29 22:05:36
-
+archive/issues_005942.json:
+```json
+{
+    "body": "Assignee: somebody\n\nCC:  cwitty mhansen\n\nThis seems bad to me...\n\n```\nsage: p=RealIntervalField(4)(pi)\nsage: p.str(style='brackets')\n'[3.00 .. 3.25]'\nsage: p\n4.?\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5942\n\n",
+    "created_at": "2009-04-29T22:05:36Z",
+    "labels": [
+        "basic arithmetic",
+        "major",
+        "bug"
+    ],
+    "title": "bug in RealIntervalField printing",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5942",
+    "user": "ylchapuy"
+}
+```
 Assignee: somebody
 
 CC:  cwitty mhansen
@@ -21,23 +31,60 @@ sage: p
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/5942
+
+
+
+
 
 ---
 
-Comment by ylchapuy created at 2009-11-26 02:45:12
+archive/issue_comments_046967.json:
+```json
+{
+    "body": "should be closed with won't fix. It's a design choice.",
+    "created_at": "2009-11-26T02:45:12Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5942",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5942#issuecomment-46967",
+    "user": "ylchapuy"
+}
+```
 
 should be closed with won't fix. It's a design choice.
 
 
+
 ---
 
-Comment by AlexGhitza created at 2010-01-02 03:20:33
+archive/issue_comments_046968.json:
+```json
+{
+    "body": "Mike, I'm ccing you as this should apparently be closed.",
+    "created_at": "2010-01-02T03:20:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5942",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5942#issuecomment-46968",
+    "user": "AlexGhitza"
+}
+```
 
 Mike, I'm ccing you as this should apparently be closed.
 
 
+
 ---
 
-Comment by mhansen created at 2010-01-02 03:21:44
+archive/issue_comments_046969.json:
+```json
+{
+    "body": "Resolution: invalid",
+    "created_at": "2010-01-02T03:21:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5942",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5942#issuecomment-46969",
+    "user": "mhansen"
+}
+```
 
 Resolution: invalid

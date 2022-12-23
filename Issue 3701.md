@@ -1,11 +1,21 @@
 # Issue 3701: [with spkg, needs review] Solaris: fix polybori build due to bashism
 
-Issue created by migration from https://trac.sagemath.org/ticket/3701
-
-Original creator: mabshoff
-
-Original creation time: 2008-07-21 21:55:21
-
+archive/issues_003701.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nPolybori.spkg contains some bashism that cause trouble on Solaris. So change the shebang to use \"#1/usr/bin/env bash\". That is the only change in the spkg at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0.6/alpha1/polybori-0.3.1.p4.spkg\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3701\n\n",
+    "created_at": "2008-07-21T21:55:21Z",
+    "labels": [
+        "porting: Solaris",
+        "critical",
+        "bug"
+    ],
+    "title": "[with spkg, needs review] Solaris: fix polybori build due to bashism",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3701",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 Polybori.spkg contains some bashism that cause trouble on Solaris. So change the shebang to use "#1/usr/bin/env bash". That is the only change in the spkg at
@@ -16,23 +26,60 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/3701
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-07-21 21:55:28
+archive/issue_comments_026254.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-07-21T21:55:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3701",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3701#issuecomment-26254",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-21 22:12:32
+archive/issue_comments_026255.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-07-21T22:12:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3701",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3701#issuecomment-26255",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-07-21 22:12:32
+archive/issue_comments_026256.json:
+```json
+{
+    "body": "Merged in Sage 3.0.6.rc0",
+    "created_at": "2008-07-21T22:12:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3701",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3701#issuecomment-26256",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.6.rc0

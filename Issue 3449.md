@@ -1,44 +1,117 @@
 # Issue 3449: notebook -- implement inline error reporting for login
 
-Issue created by migration from https://trac.sagemath.org/ticket/3449
-
-Original creator: TimothyClemans
-
-Original creation time: 2008-06-17 20:23:33
-
+archive/issues_003449.json:
+```json
+{
+    "body": "Assignee: timothyclemans\n\nCurrently when a user has entered incorrect login information she is sent to a page that states the error.\n\nThe error should be reported under the input box related to the error. Also if the user gave an incorrect password than the username should be filled in and the error should be given inline.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3449\n\n",
+    "created_at": "2008-06-17T20:23:33Z",
+    "labels": [
+        "notebook",
+        "major",
+        "enhancement"
+    ],
+    "title": "notebook -- implement inline error reporting for login",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3449",
+    "user": "TimothyClemans"
+}
+```
 Assignee: timothyclemans
 
 Currently when a user has entered incorrect login information she is sent to a page that states the error.
 
 The error should be reported under the input box related to the error. Also if the user gave an incorrect password than the username should be filled in and the error should be given inline.
 
+Issue created by migration from https://trac.sagemath.org/ticket/3449
+
+
+
+
 
 ---
+
+archive/issue_comments_024324.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-06-17T21:01:08Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3449",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3449#issuecomment-24324",
+    "user": "TimothyClemans"
+}
+```
 
 Attachment
 
 
+
 ---
+
+archive/issue_comments_024325.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2008-06-17T21:02:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3449",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3449#issuecomment-24325",
+    "user": "TimothyClemans"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by boothby created at 2008-06-24 07:05:37
+archive/issue_comments_024326.json:
+```json
+{
+    "body": "Works for me",
+    "created_at": "2008-06-24T07:05:37Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3449",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3449#issuecomment-24326",
+    "user": "boothby"
+}
+```
 
 Works for me
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-25 04:12:41
+archive/issue_comments_024327.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-06-25T04:12:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3449",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3449#issuecomment-24327",
+    "user": "mabshoff"
+}
+```
 
 Resolution: fixed
 
 
+
 ---
 
-Comment by mabshoff created at 2008-06-25 04:12:41
+archive/issue_comments_024328.json:
+```json
+{
+    "body": "Merged in Sage 3.0.4.alpha1",
+    "created_at": "2008-06-25T04:12:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3449",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3449#issuecomment-24328",
+    "user": "mabshoff"
+}
+```
 
 Merged in Sage 3.0.4.alpha1

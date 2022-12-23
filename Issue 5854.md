@@ -1,11 +1,21 @@
 # Issue 5854: [with patch, with spkg, needs review] Include Michael Stoll's ratpoints in Sage
 
-Issue created by migration from https://trac.sagemath.org/ticket/5854
-
-Original creator: rlm
-
-Original creation time: 2009-04-22 15:17:52
-
+archive/issues_005854.json:
+```json
+{
+    "body": "Assignee: was\n\nCC:  cremona\n\nThe spkg is located here:\n\nhttp://sage.math.washington.edu/home/rlmill/ratpoints-2.1.1.spkg\n\n(The final version for review was created 22 April 2009-- there were previous versions by the same file name, but this one can be identified as the one possessing an SPKG.txt file.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/5854\n\n",
+    "created_at": "2009-04-22T15:17:52Z",
+    "labels": [
+        "number theory",
+        "major",
+        "enhancement"
+    ],
+    "title": "[with patch, with spkg, needs review] Include Michael Stoll's ratpoints in Sage",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/5854",
+    "user": "rlm"
+}
+```
 Assignee: was
 
 CC:  cremona
@@ -16,15 +26,43 @@ http://sage.math.washington.edu/home/rlmill/ratpoints-2.1.1.spkg
 
 (The final version for review was created 22 April 2009-- there were previous versions by the same file name, but this one can be identified as the one possessing an SPKG.txt file.)
 
+Issue created by migration from https://trac.sagemath.org/ticket/5854
+
+
+
+
 
 ---
+
+archive/issue_comments_046234.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2009-04-22T15:18:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5854",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5854#issuecomment-46234",
+    "user": "rlm"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-22 18:49:27
+archive/issue_comments_046235.json:
+```json
+{
+    "body": "This spkg needs a formal vote and some more widespread testing. I am also curious about the MSVC build, but we can try that in person.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-22T18:49:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5854",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5854#issuecomment-46235",
+    "user": "mabshoff"
+}
+```
 
 This spkg needs a formal vote and some more widespread testing. I am also curious about the MSVC build, but we can try that in person.
 
@@ -33,9 +71,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-22 18:52:29
+archive/issue_comments_046236.json:
+```json
+{
+    "body": "Another thing: Why is the dependency on the header commented out?:\n\n```\n \t386\t    Extension('sage.libs.ratpoints', \n \t387\t              sources = [\"sage/libs/ratpoints.pyx\"], \n \t388\t              #depends = [SAGE_ROOT + 'local/include/ratpoints.h'], \n \t389\t              libraries = [\"ratpoints\", \"gmp\"]),\n```\n\nAnd another question: What is the long term plan here with eclib? Will it use ratpoints in the future?\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-22T18:52:29Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5854",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5854#issuecomment-46236",
+    "user": "mabshoff"
+}
+```
 
 Another thing: Why is the dependency on the header commented out?:
 
@@ -53,33 +102,66 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-22 19:16:50
+archive/issue_comments_046237.json:
+```json
+{
+    "body": "And while I am at it:\n\n* SPKG.txt is missing the license section. Since the code is GPL V2+ again now it would be nice to mention\n* src is under version control - any reason to do that in the spkg since this should be clean upstream? Given the size I don't mind too much, but it is unusual.  \n* there is one PDF in src that isn't in the repo - in case we want src under hg you should put that PDF in .hgignore.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-22T19:16:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5854",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5854#issuecomment-46237",
+    "user": "mabshoff"
+}
+```
 
 And while I am at it:
 
- * SPKG.txt is missing the license section. Since the code is GPL V2+ again now it would be nice to mention
- * src is under version control - any reason to do that in the spkg since this should be clean upstream? Given the size I don't mind too much, but it is unusual.  
- * there is one PDF in src that isn't in the repo - in case we want src under hg you should put that PDF in .hgignore.
+* SPKG.txt is missing the license section. Since the code is GPL V2+ again now it would be nice to mention
+* src is under version control - any reason to do that in the spkg since this should be clean upstream? Given the size I don't mind too much, but it is unusual.  
+* there is one PDF in src that isn't in the repo - in case we want src under hg you should put that PDF in .hgignore.
 
 Cheers,
 
 Michael
 
 
+
 ---
 
-Comment by rlm created at 2009-04-22 20:46:34
+archive/issue_comments_046238.json:
+```json
+{
+    "body": "* SPKG.txt was based directly on the one for eclib, so anything wrong with this one will be wrong with that one too.\n  * `src` was under version control originally because I found a bug and fixed it, but Michael Stoll has merged that fix upstream. I suppose there's no reason now.\n  * The depends line is commented out to demonstrate that it is automatically picked up somewhere, and thus not needed...",
+    "created_at": "2009-04-22T20:46:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5854",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5854#issuecomment-46238",
+    "user": "rlm"
+}
+```
 
 * SPKG.txt was based directly on the one for eclib, so anything wrong with this one will be wrong with that one too.
- * `src` was under version control originally because I found a bug and fixed it, but Michael Stoll has merged that fix upstream. I suppose there's no reason now.
- * The depends line is commented out to demonstrate that it is automatically picked up somewhere, and thus not needed...
+  * `src` was under version control originally because I found a bug and fixed it, but Michael Stoll has merged that fix upstream. I suppose there's no reason now.
+  * The depends line is commented out to demonstrate that it is automatically picked up somewhere, and thus not needed...
+
 
 
 ---
 
-Comment by mabshoff created at 2009-04-22 21:47:50
+archive/issue_comments_046239.json:
+```json
+{
+    "body": "Replying to [comment:4 rlm]:\n>  * SPKG.txt was based directly on the one for eclib, so anything wrong with this one will be wrong with that one too.\n\nYes, that needs to be fixed, too.\n\n>  * `src` was under version control originally because I found a bug and fixed it, but Michael Stoll has merged that fix upstream. I suppose there's no reason now.\n\nGood. Can you post an SPKG that has a clean .hg and .hgignore, i.e. just get rid of the old .hg and check the relevant bits back in again.\n\n>  * The depends line is commented out to demonstrate that it is automatically picked up somewhere, and thus not needed...\n\nHmmm, does rebuilding the spkg lead to \"sage -b\" rebuilding the extension? That does surprise me and I would be curious what this triggers.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-22T21:47:50Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5854",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5854#issuecomment-46239",
+    "user": "mabshoff"
+}
+```
 
 Replying to [comment:4 rlm]:
 >  * SPKG.txt was based directly on the one for eclib, so anything wrong with this one will be wrong with that one too.
@@ -99,9 +181,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2009-04-22 21:50:38
+archive/issue_comments_046240.json:
+```json
+{
+    "body": "Since this ticket is relevant to eclib (I believe in sage-nt John mentioned that he had looked into using ratpoints from eclib again and that the current library interface worked, but my collection is a little hazy here) I am CCing him to keep him uptodate on this development. Once ratpoints is in Sage I consider it desirable to use the library from eclib unless there is some unforeseen technical reason not to do it.\n\nCheers,\n\nMichael",
+    "created_at": "2009-04-22T21:50:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5854",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5854#issuecomment-46240",
+    "user": "mabshoff"
+}
+```
 
 Since this ticket is relevant to eclib (I believe in sage-nt John mentioned that he had looked into using ratpoints from eclib again and that the current library interface worked, but my collection is a little hazy here) I am CCing him to keep him uptodate on this development. Once ratpoints is in Sage I consider it desirable to use the library from eclib unless there is some unforeseen technical reason not to do it.
 
@@ -110,9 +203,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by cremona created at 2009-04-23 08:27:55
+archive/issue_comments_046241.json:
+```json
+{
+    "body": "Replying to [comment:6 mabshoff]:\n> Since this ticket is relevant to eclib (I believe in sage-nt John mentioned that he had looked into using ratpoints from eclib again and that the current library interface worked, but my collection is a little hazy here) I am CCing him to keep him uptodate on this development. Once ratpoints is in Sage I consider it desirable to use the library from eclib unless there is some unforeseen technical reason not to do it.\n> \n> Cheers,\n> \n> Michael\n\nThanks.  It is not quite as easy as that, and one part of eclib will need to be rewritten to use this library, but it has all the ingredients which I needs so that is possible and would only take a day or too.  That would also mean that *either* I put in a compiler switch to eclib Makefiles to tell it to use ratpoints instead of its own code, *or* I rely on ratpoints for ever, which gives people who download mwrank by itself will have something else they need to install first (as well as NTL and pari).",
+    "created_at": "2009-04-23T08:27:55Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5854",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5854#issuecomment-46241",
+    "user": "cremona"
+}
+```
 
 Replying to [comment:6 mabshoff]:
 > Since this ticket is relevant to eclib (I believe in sage-nt John mentioned that he had looked into using ratpoints from eclib again and that the current library interface worked, but my collection is a little hazy here) I am CCing him to keep him uptodate on this development. Once ratpoints is in Sage I consider it desirable to use the library from eclib unless there is some unforeseen technical reason not to do it.
@@ -124,16 +228,38 @@ Replying to [comment:6 mabshoff]:
 Thanks.  It is not quite as easy as that, and one part of eclib will need to be rewritten to use this library, but it has all the ingredients which I needs so that is possible and would only take a day or too.  That would also mean that *either* I put in a compiler switch to eclib Makefiles to tell it to use ratpoints instead of its own code, *or* I rely on ratpoints for ever, which gives people who download mwrank by itself will have something else they need to install first (as well as NTL and pari).
 
 
+
 ---
 
-Comment by cremona created at 2009-04-29 11:46:23
+archive/issue_comments_046242.json:
+```json
+{
+    "body": "What is the correct procedure for testing this.  Is it: (1) install the spkg using \"sage -f\" (2) apply the patch to a clone and do \"sage -b\" (3) do a \"sage -t\" on sage/libs/ratpoints.pyx (and try the functions in there at will) ?",
+    "created_at": "2009-04-29T11:46:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5854",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5854#issuecomment-46242",
+    "user": "cremona"
+}
+```
 
 What is the correct procedure for testing this.  Is it: (1) install the spkg using "sage -f" (2) apply the patch to a clone and do "sage -b" (3) do a "sage -t" on sage/libs/ratpoints.pyx (and try the functions in there at will) ?
 
 
+
 ---
 
-Comment by rlm created at 2009-04-29 14:53:02
+archive/issue_comments_046243.json:
+```json
+{
+    "body": "Replying to [comment:8 cremona]:\n\nMostly:\n\n> (and try the functions in there at will) ?\n\nSomeone should run a valgrind session to check my code and Michael Stoll's code both for leaks. I'll try to get to this today or tomorrow.",
+    "created_at": "2009-04-29T14:53:02Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5854",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5854#issuecomment-46243",
+    "user": "rlm"
+}
+```
 
 Replying to [comment:8 cremona]:
 
@@ -144,9 +270,20 @@ Mostly:
 Someone should run a valgrind session to check my code and Michael Stoll's code both for leaks. I'll try to get to this today or tomorrow.
 
 
+
 ---
 
-Comment by cremona created at 2009-04-29 15:54:34
+archive/issue_comments_046244.json:
+```json
+{
+    "body": "Partial review:  I ran valgrind on ratpoints's own test function and it does reasonably well:\n\n```\nmasgaj@host-56-150%valgrind ./rptest > rptest.out\n==4873== Memcheck, a memory error detector.\n==4873== Copyright (C) 2002-2007, and GNU GPL'd, by Julian Seward et al.\n==4873== Using LibVEX rev 1804, a library for dynamic binary translation.\n==4873== Copyright (C) 2004-2007, and GNU GPL'd, by OpenWorks LLP.\n==4873== Using valgrind-3.3.0, a dynamic binary instrumentation framework.\n==4873== Copyright (C) 2000-2007, and GNU GPL'd, by Julian Seward et al.\n==4873== For more details, rerun with: -v\n==4873==\n==4873==\n==4873== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 5 from 1)\n==4873== malloc/free: in use at exit: 11,204 bytes in 44 blocks.\n==4873== malloc/free: 91,051 allocs, 91,007 frees, 2,895,144 bytes allocated.\n==4873== For counts of detected errors, rerun with: -v\n==4873== searching for pointers to 44 not-freed blocks.\n==4873== checked 128,328 bytes.\n==4873==\n==4873== LEAK SUMMARY:\n==4873==    definitely lost: 11,176 bytes in 37 blocks.\n==4873==      possibly lost: 0 bytes in 0 blocks.\n==4873==    still reachable: 28 bytes in 7 blocks.\n==4873==         suppressed: 0 bytes in 0 blocks.\n==4873== Rerun with --leak-check=full to see details of leaked memory.\n```\n\n\nPerhaps Michael (A) can say whether the leak is significant?  If so we could ask Michael (S) to fix it.",
+    "created_at": "2009-04-29T15:54:34Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5854",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5854#issuecomment-46244",
+    "user": "cremona"
+}
+```
 
 Partial review:  I ran valgrind on ratpoints's own test function and it does reasonably well:
 
@@ -180,27 +317,60 @@ masgaj@host-56-150%valgrind ./rptest > rptest.out
 Perhaps Michael (A) can say whether the leak is significant?  If so we could ask Michael (S) to fix it.
 
 
+
 ---
 
-Comment by rlm created at 2009-04-29 15:59:25
+archive/issue_comments_046245.json:
+```json
+{
+    "body": "John,\n\nSince you've been using Michael Stoll's test suite, do you think you could make an `spkg-check` for this spkg which runs these?",
+    "created_at": "2009-04-29T15:59:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5854",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5854#issuecomment-46245",
+    "user": "rlm"
+}
+```
 
 John,
 
 Since you've been using Michael Stoll's test suite, do you think you could make an `spkg-check` for this spkg which runs these?
 
 
+
 ---
 
-Comment by rlm created at 2009-04-29 16:02:49
+archive/issue_comments_046246.json:
+```json
+{
+    "body": "PS - Any leaks in \"definitely lost\" is never good...\n\nCan you attach/link to the full valgrind logs?",
+    "created_at": "2009-04-29T16:02:49Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5854",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5854#issuecomment-46246",
+    "user": "rlm"
+}
+```
 
 PS - Any leaks in "definitely lost" is never good...
 
 Can you attach/link to the full valgrind logs?
 
 
+
 ---
 
-Comment by cremona created at 2009-04-29 16:15:42
+archive/issue_comments_046247.json:
+```json
+{
+    "body": "Replying to [comment:12 rlm]:\n> PS - Any leaks in \"definitely lost\" is never good...\n> \n> Can you attach/link to the full valgrind logs?\n\nI will if you tell me what flags to put on the valgrind command line....",
+    "created_at": "2009-04-29T16:15:42Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5854",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5854#issuecomment-46247",
+    "user": "cremona"
+}
+```
 
 Replying to [comment:12 rlm]:
 > PS - Any leaks in "definitely lost" is never good...
@@ -210,39 +380,94 @@ Replying to [comment:12 rlm]:
 I will if you tell me what flags to put on the valgrind command line....
 
 
+
 ---
 
-Comment by rlm created at 2009-05-21 15:52:32
+archive/issue_comments_046248.json:
+```json
+{
+    "body": "Build works on Sage-3.4.2, but not on Sage-4.0.alpha0. Build log is attached.",
+    "created_at": "2009-05-21T15:52:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5854",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5854#issuecomment-46248",
+    "user": "rlm"
+}
+```
 
 Build works on Sage-3.4.2, but not on Sage-4.0.alpha0. Build log is attached.
 
 
+
 ---
 
-Comment by rlm created at 2009-05-22 05:55:00
+archive/issue_comments_046249.json:
+```json
+{
+    "body": "The build issues seem resolved in Sage-4.0.rc0.",
+    "created_at": "2009-05-22T05:55:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5854",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5854#issuecomment-46249",
+    "user": "rlm"
+}
+```
 
 The build issues seem resolved in Sage-4.0.rc0.
 
 
+
 ---
 
-Comment by cremona created at 2009-06-19 20:24:22
+archive/issue_comments_046250.json:
+```json
+{
+    "body": "I checked that the spkg installs fine on 4.0.2 and the patch applies and tests pass.\n\nThere were some other issues raised by mabshoff, but as I am not an expert on spkgs I do not know if these are enough to stop the ticket from being merged.  So I am giving it a positive review.",
+    "created_at": "2009-06-19T20:24:22Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5854",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5854#issuecomment-46250",
+    "user": "cremona"
+}
+```
 
 I checked that the spkg installs fine on 4.0.2 and the patch applies and tests pass.
 
 There were some other issues raised by mabshoff, but as I am not an expert on spkgs I do not know if these are enough to stop the ticket from being merged.  So I am giving it a positive review.
 
 
+
 ---
 
-Comment by rlm created at 2009-06-19 21:34:51
+archive/issue_comments_046251.json:
+```json
+{
+    "body": "Wait, there are still memory leaks in 2.1.1. I will update the spkg to 2.1.2 (which fixes the leaks we found at Dagstuhl) in the next few days, once I get some time to do so.",
+    "created_at": "2009-06-19T21:34:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5854",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5854#issuecomment-46251",
+    "user": "rlm"
+}
+```
 
 Wait, there are still memory leaks in 2.1.1. I will update the spkg to 2.1.2 (which fixes the leaks we found at Dagstuhl) in the next few days, once I get some time to do so.
 
 
+
 ---
 
-Comment by rlm created at 2009-06-19 23:20:30
+archive/issue_comments_046252.json:
+```json
+{
+    "body": "Latest version is at:\n\nhttp://sage.math.washington.edu/home/rlmill/ratpoints-2.1.2.spkg\n\nIt also addresses the issues raised by mabshoff.\n\nJohn-- Can you sign off on this?",
+    "created_at": "2009-06-19T23:20:30Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5854",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5854#issuecomment-46252",
+    "user": "rlm"
+}
+```
 
 Latest version is at:
 
@@ -253,22 +478,55 @@ It also addresses the issues raised by mabshoff.
 John-- Can you sign off on this?
 
 
+
 ---
 
-Comment by cremona created at 2009-06-20 08:57:25
+archive/issue_comments_046253.json:
+```json
+{
+    "body": "New spkg built fine for me, and the patch passed tests.",
+    "created_at": "2009-06-20T08:57:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5854",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5854#issuecomment-46253",
+    "user": "cremona"
+}
+```
 
 New spkg built fine for me, and the patch passed tests.
 
 
+
 ---
 
-Comment by cremona created at 2009-06-22 14:10:18
+archive/issue_comments_046254.json:
+```json
+{
+    "body": "I have been using this for real as I try to fix #6381, since this should make it very much faster to find integral points in an interval.  But for that we need to expose the parameter b_high to the sage function ratpoints().  So I am adding to the patch to allow this.",
+    "created_at": "2009-06-22T14:10:18Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5854",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5854#issuecomment-46254",
+    "user": "cremona"
+}
+```
 
 I have been using this for real as I try to fix #6381, since this should make it very much faster to find integral points in an interval.  But for that we need to expose the parameter b_high to the sage function ratpoints().  So I am adding to the patch to allow this.
 
 
+
 ---
 
-Comment by rlm created at 2009-07-02 22:00:28
+archive/issue_comments_046255.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2009-07-02T22:00:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/5854",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/5854#issuecomment-46255",
+    "user": "rlm"
+}
+```
 
 Resolution: fixed

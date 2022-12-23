@@ -1,11 +1,21 @@
 # Issue 9169: cygwin: a cachefunc.py doctest hangs seemingly forever
 
-Issue created by migration from https://trac.sagemath.org/ticket/9169
-
-Original creator: was
-
-Original creation time: 2010-06-07 04:32:34
-
+archive/issues_009169.json:
+```json
+{
+    "body": "Assignee: tbd\n\nCC:  jpflori dimpase kcrisman\n\nOn Cygwin, the following test hangs:\n\n```\n\n            sage: @cached_function\n            ... def oddprime_factors(n):\n            ...     l = [p for p,e in factor(n) if p != 2]\n            ...     return len(l)\n            sage: oddprime_factors.precompute(range(1,100), 4)\n```\n\n\nThe above is very fast on any other platform. \n\nThis results in a doctest file failure:\n\n```\nsage -t  \"devel/sage/sage/misc/cachefunc.py\"                \n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\n\t [361.6 s]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9169\n\n",
+    "created_at": "2010-06-07T04:32:34Z",
+    "labels": [
+        "porting: Cygwin",
+        "major",
+        "bug"
+    ],
+    "title": "cygwin: a cachefunc.py doctest hangs seemingly forever",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9169",
+    "user": "was"
+}
+```
 Assignee: tbd
 
 CC:  jpflori dimpase kcrisman
@@ -34,38 +44,97 @@ sage -t  "devel/sage/sage/misc/cachefunc.py"
 ```
 
 
+Issue created by migration from https://trac.sagemath.org/ticket/9169
+
+
+
+
 
 ---
 
-Comment by kcrisman created at 2013-01-15 15:20:56
+archive/issue_comments_085733.json:
+```json
+{
+    "body": "FWIW, this file is now `cachefunc.pyx`.",
+    "created_at": "2013-01-15T15:20:56Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9169",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9169#issuecomment-85733",
+    "user": "kcrisman"
+}
+```
 
 FWIW, this file is now `cachefunc.pyx`.
 
 
+
 ---
 
-Comment by kcrisman created at 2013-01-15 15:46:33
+archive/issue_comments_085734.json:
+```json
+{
+    "body": "This same test still fails, though for me it is because of forking errors and an inability to start Singular at times (presumably for that reason).",
+    "created_at": "2013-01-15T15:46:33Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9169",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9169#issuecomment-85734",
+    "user": "kcrisman"
+}
+```
 
 This same test still fails, though for me it is because of forking errors and an inability to start Singular at times (presumably for that reason).
 
 
+
 ---
 
-Comment by jpflori created at 2013-01-15 18:00:28
+archive/issue_comments_085735.json:
+```json
+{
+    "body": "On my install (64bits Windows 7 + sage 5.6.rc0) the test passes.",
+    "created_at": "2013-01-15T18:00:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9169",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9169#issuecomment-85735",
+    "user": "jpflori"
+}
+```
 
 On my install (64bits Windows 7 + sage 5.6.rc0) the test passes.
 
 
+
 ---
 
-Comment by kcrisman created at 2013-01-15 18:09:54
+archive/issue_comments_085736.json:
+```json
+{
+    "body": "That's good to hear.  I am frustrated by this forking business.  A complete rebase just shifts the error to a different random file that won't be remapped.  So I can never tell whether things are really a problem or not.",
+    "created_at": "2013-01-15T18:09:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9169",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9169#issuecomment-85736",
+    "user": "kcrisman"
+}
+```
 
 That's good to hear.  I am frustrated by this forking business.  A complete rebase just shifts the error to a different random file that won't be remapped.  So I can never tell whether things are really a problem or not.
 
 
+
 ---
 
-Comment by dimpase created at 2013-01-27 10:07:51
+archive/issue_comments_085737.json:
+```json
+{
+    "body": "Replying to [comment:5 kcrisman]:\n> That's good to hear.  I am frustrated by this forking business.  A complete rebase just shifts the error to a different random file that won't be remapped.  So I can never tell whether things are really a problem or not.\n\nAre you working on a 32-bit Windows? I've given up on attempting to use Cygwin on 32-bit systems.\n\nAnyhow, this test works for me too. Let's close this one.",
+    "created_at": "2013-01-27T10:07:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9169",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9169#issuecomment-85737",
+    "user": "dimpase"
+}
+```
 
 Replying to [comment:5 kcrisman]:
 > That's good to hear.  I am frustrated by this forking business.  A complete rebase just shifts the error to a different random file that won't be remapped.  So I can never tell whether things are really a problem or not.
@@ -75,43 +144,109 @@ Are you working on a 32-bit Windows? I've given up on attempting to use Cygwin o
 Anyhow, this test works for me too. Let's close this one.
 
 
+
 ---
 
-Comment by dimpase created at 2013-01-27 10:07:51
+archive/issue_comments_085738.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2013-01-27T10:07:51Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9169",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9169#issuecomment-85738",
+    "user": "dimpase"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by kcrisman created at 2013-01-28 02:11:23
+archive/issue_comments_085739.json:
+```json
+{
+    "body": "I'd feel best if we were able to try on 32-bit XP... though I recognize this may be impossible unless my box stops acting up.",
+    "created_at": "2013-01-28T02:11:23Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9169",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9169#issuecomment-85739",
+    "user": "kcrisman"
+}
+```
 
 I'd feel best if we were able to try on 32-bit XP... though I recognize this may be impossible unless my box stops acting up.
 
 
+
 ---
 
-Comment by jpflori created at 2013-01-30 10:43:00
+archive/issue_comments_085740.json:
+```json
+{
+    "body": "When the status on my 64 bits Windows 7 looks good enough (which looks close), I'll dig up an old 32 bits install and give it a try.",
+    "created_at": "2013-01-30T10:43:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9169",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9169#issuecomment-85740",
+    "user": "jpflori"
+}
+```
 
 When the status on my 64 bits Windows 7 looks good enough (which looks close), I'll dig up an old 32 bits install and give it a try.
 
 
+
 ---
 
-Comment by jpflori created at 2013-02-08 12:41:16
+archive/issue_comments_085741.json:
+```json
+{
+    "body": "This is ok on 32 bits Windows 7, so I'll close it.",
+    "created_at": "2013-02-08T12:41:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9169",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9169#issuecomment-85741",
+    "user": "jpflori"
+}
+```
 
 This is ok on 32 bits Windows 7, so I'll close it.
 
 
+
 ---
 
-Comment by jpflori created at 2013-02-08 12:41:16
+archive/issue_comments_085742.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2013-02-08T12:41:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9169",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9169#issuecomment-85742",
+    "user": "jpflori"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by jdemeyer created at 2013-02-08 13:21:28
+archive/issue_comments_085743.json:
+```json
+{
+    "body": "Resolution: worksforme",
+    "created_at": "2013-02-08T13:21:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9169",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9169#issuecomment-85743",
+    "user": "jdemeyer"
+}
+```
 
 Resolution: worksforme

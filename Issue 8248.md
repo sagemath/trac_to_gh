@@ -1,11 +1,21 @@
 # Issue 8248: Small improvement in checking for elliptic curve isogenies
 
-Issue created by migration from https://trac.sagemath.org/ticket/8248
-
-Original creator: cremona
-
-Original creation time: 2010-02-12 11:00:54
-
+archive/issues_008248.json:
+```json
+{
+    "body": "Assignee: cremona\n\nCC:  wuthrich\n\nKeywords: isogenies\n\nWhen an isogeny is constructed from a kernel polynomial, by default (unless check=False) it is checked whether the given kernel polynomial divides the appropriate division polynomial.  This is expensive when the degree is large (e.g. 163!).\n\nWe provide a small patch which does this checking more efficiently.\n\nThe example in the patch which now takes 20s, used to take many minutes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8248\n\n",
+    "created_at": "2010-02-12T11:00:54Z",
+    "labels": [
+        "elliptic curves",
+        "minor",
+        "enhancement"
+    ],
+    "title": "Small improvement in checking for elliptic curve isogenies",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/8248",
+    "user": "cremona"
+}
+```
 Assignee: cremona
 
 CC:  wuthrich
@@ -18,17 +28,45 @@ We provide a small patch which does this checking more efficiently.
 
 The example in the patch which now takes 20s, used to take many minutes.
 
+Issue created by migration from https://trac.sagemath.org/ticket/8248
+
+
+
+
 
 ---
+
+archive/issue_comments_072951.json:
+```json
+{
+    "body": "Attachment\n\nApplies to 4.3.2",
+    "created_at": "2010-02-12T11:04:19Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8248",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8248#issuecomment-72951",
+    "user": "cremona"
+}
+```
 
 Attachment
 
 Applies to 4.3.2
 
 
+
 ---
 
-Comment by wuthrich created at 2010-02-15 15:10:14
+archive/issue_comments_072952.json:
+```json
+{
+    "body": "Applies fine to 4.3.3.aplha0.\nAll tests pass. (execpt heegner.py, which has nothing to do with this patch).\n\nThanks, John, for this improvement.\n\nChris.",
+    "created_at": "2010-02-15T15:10:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8248",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8248#issuecomment-72952",
+    "user": "wuthrich"
+}
+```
 
 Applies fine to 4.3.3.aplha0.
 All tests pass. (execpt heegner.py, which has nothing to do with this patch).
@@ -38,22 +76,55 @@ Thanks, John, for this improvement.
 Chris.
 
 
+
 ---
 
-Comment by wuthrich created at 2010-02-15 15:10:14
+archive/issue_comments_072953.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-02-15T15:10:14Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8248",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8248#issuecomment-72953",
+    "user": "wuthrich"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by wuthrich created at 2010-02-15 15:10:32
+archive/issue_comments_072954.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-02-15T15:10:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8248",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8248#issuecomment-72954",
+    "user": "wuthrich"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by mvngu created at 2010-02-17 00:12:35
+archive/issue_comments_072955.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-02-17T00:12:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/8248",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/8248#issuecomment-72955",
+    "user": "mvngu"
+}
+```
 
 Resolution: fixed

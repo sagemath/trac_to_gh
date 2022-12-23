@@ -1,11 +1,21 @@
 # Issue 9088: line3d does not take a tuple of points
 
-Issue created by migration from https://trac.sagemath.org/ticket/9088
-
-Original creator: jason
-
-Original creation time: 2010-05-29 19:47:00
-
+archive/issues_009088.json:
+```json
+{
+    "body": "Assignee: jason, was\n\nCC:  kcrisman mhampton\n\nRight now, this fails:\n\n\n```\nline3d(( (0,0,0), (1,2,3) ))\n```\n\n\nsince the copy of the input data is not converted to a list.  This is an easy fix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9088\n\n",
+    "created_at": "2010-05-29T19:47:00Z",
+    "labels": [
+        "graphics",
+        "minor",
+        "bug"
+    ],
+    "title": "line3d does not take a tuple of points",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/9088",
+    "user": "jason"
+}
+```
 Assignee: jason, was
 
 CC:  kcrisman mhampton
@@ -20,43 +30,115 @@ line3d(( (0,0,0), (1,2,3) ))
 
 since the copy of the input data is not converted to a list.  This is an easy fix.
 
+Issue created by migration from https://trac.sagemath.org/ticket/9088
+
+
+
+
 
 ---
+
+archive/issue_comments_084397.json:
+```json
+{
+    "body": "Attachment",
+    "created_at": "2010-05-29T19:52:11Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9088",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9088#issuecomment-84397",
+    "user": "jason"
+}
+```
 
 Attachment
 
 
+
 ---
 
-Comment by jason created at 2010-05-29 19:53:13
+archive/issue_comments_084398.json:
+```json
+{
+    "body": "Fix attached.  This should be a trivial review!",
+    "created_at": "2010-05-29T19:53:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9088",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9088#issuecomment-84398",
+    "user": "jason"
+}
+```
 
 Fix attached.  This should be a trivial review!
 
 
+
 ---
 
-Comment by jason created at 2010-05-29 19:53:13
+archive/issue_comments_084399.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2010-05-29T19:53:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9088",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9088#issuecomment-84399",
+    "user": "jason"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by kcrisman created at 2010-06-18 18:44:38
+archive/issue_comments_084400.json:
+```json
+{
+    "body": "Positive review.",
+    "created_at": "2010-06-18T18:44:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9088",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9088#issuecomment-84400",
+    "user": "kcrisman"
+}
+```
 
 Positive review.
 
 
+
 ---
 
-Comment by kcrisman created at 2010-06-18 18:44:38
+archive/issue_comments_084401.json:
+```json
+{
+    "body": "Changing status from needs_review to positive_review.",
+    "created_at": "2010-06-18T18:44:38Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9088",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9088#issuecomment-84401",
+    "user": "kcrisman"
+}
+```
 
 Changing status from needs_review to positive_review.
 
 
+
 ---
 
-Comment by davidloeffler created at 2010-07-01 09:03:25
+archive/issue_comments_084402.json:
+```json
+{
+    "body": "This patch and #9066 seem to conflict -- if I apply both, I get a doctest failure:\n\n```\nsage -t  \"devel/sage-reviewing/sage/plot/plot3d/shapes2.py\"\n**********************************************************************\nFile \"/storage/masiao/sage-4.5.alpha1/devel/sage-reviewing/sage/plot/plot3d/shapes2.py\", line 700:\n    sage: P.tachyon_repr(P.default_render_params())\nExpected:\n    'Sphere center 1.0 2.0 3.0 Rad 0.015 texture84'\nGot:\n    'Sphere center 1.0 2.0 3.0 Rad 0.015 texture85'\n**********************************************************************\nFile \"/storage/masiao/sage-4.5.alpha1/devel/sage-reviewing/sage/plot/plot3d/shapes2.py\", line 717:\n    sage: P.obj_repr(P.default_render_params())[0][0:2]\nExpected:\n    ['g obj_1', 'usemtl texture86']\nGot:\n    ['g obj_1', 'usemtl texture87']\n**********************************************************************\nFile \"/storage/masiao/sage-4.5.alpha1/devel/sage-reviewing/sage/plot/plot3d/shapes2.py\", line 825:\n    sage: L.tachyon_repr(L.default_render_params())[0]\nExpected:\n    'FCylinder base 1.0 0.0 0.0 apex 0.999950000417 0.00999983333417 0.0001 rad 0.005 texture126'\nGot:\n    'FCylinder base 1.0 0.0 0.0 apex 0.999950000417 0.00999983333417 0.0001 rad 0.005 texture127'\n**********************************************************************\n3 items had failures:\n   1 of   4 in __main__.example_13\n   1 of   4 in __main__.example_14\n   1 of   4 in __main__.example_19\n***Test Failed*** 3 failures.\n```\n\n\nThis doesn't come up if I apply either one of the patches on its own.",
+    "created_at": "2010-07-01T09:03:25Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9088",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9088#issuecomment-84402",
+    "user": "davidloeffler"
+}
+```
 
 This patch and #9066 seem to conflict -- if I apply both, I get a doctest failure:
 
@@ -95,17 +177,39 @@ Got:
 This doesn't come up if I apply either one of the patches on its own.
 
 
+
 ---
 
-Comment by kcrisman created at 2010-07-01 13:47:32
+archive/issue_comments_084403.json:
+```json
+{
+    "body": "I'm not exactly sure how the texture numbers get decided, but I think there is some linear order involved with their names.  Anyway, this is easy enough to fix.  We should definitely apply #9088 first because it is much more annoying, and then it would be very simple to add a reviewer patch to fix these trivialities.\n\nI'll leave this as positive review until the release manager decides what order to merge these in, though - wouldn't want to overstep his prerogative :)  then he can mark whichever one needs work thus.",
+    "created_at": "2010-07-01T13:47:32Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9088",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9088#issuecomment-84403",
+    "user": "kcrisman"
+}
+```
 
 I'm not exactly sure how the texture numbers get decided, but I think there is some linear order involved with their names.  Anyway, this is easy enough to fix.  We should definitely apply #9088 first because it is much more annoying, and then it would be very simple to add a reviewer patch to fix these trivialities.
 
 I'll leave this as positive review until the release manager decides what order to merge these in, though - wouldn't want to overstep his prerogative :)  then he can mark whichever one needs work thus.
 
 
+
 ---
 
-Comment by mpatel created at 2010-07-20 10:12:39
+archive/issue_comments_084404.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2010-07-20T10:12:39Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/9088",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/9088#issuecomment-84404",
+    "user": "mpatel"
+}
+```
 
 Resolution: fixed

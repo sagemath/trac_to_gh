@@ -1,25 +1,61 @@
 # Issue 1950: When one clicks the print button in the notebook it should render the html with jsmath but with no warning at all.
 
-Issue created by migration from https://trac.sagemath.org/ticket/1950
-
-Original creator: was
-
-Original creation time: 2008-01-27 20:27:56
-
+archive/issues_001950.json:
+```json
+{
+    "body": "Assignee: boothby\n\nSuggested by Bill Purvis.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1950\n\n",
+    "created_at": "2008-01-27T20:27:56Z",
+    "labels": [
+        "notebook",
+        "major",
+        "bug"
+    ],
+    "title": "When one clicks the print button in the notebook it should render the html with jsmath but with no warning at all.",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/1950",
+    "user": "was"
+}
+```
 Assignee: boothby
 
 Suggested by Bill Purvis.
 
+Issue created by migration from https://trac.sagemath.org/ticket/1950
+
+
+
+
 
 ---
 
-Comment by was created at 2008-04-21 14:23:41
+archive/issue_comments_012414.json:
+```json
+{
+    "body": "This is fixed, since now we never show a jsmath warning.",
+    "created_at": "2008-04-21T14:23:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1950",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1950#issuecomment-12414",
+    "user": "was"
+}
+```
 
 This is fixed, since now we never show a jsmath warning.
 
 
+
 ---
 
-Comment by was created at 2008-04-21 14:23:41
+archive/issue_comments_012415.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2008-04-21T14:23:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/1950",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/1950#issuecomment-12415",
+    "user": "was"
+}
+```
 
 Resolution: fixed

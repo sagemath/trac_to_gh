@@ -1,11 +1,21 @@
 # Issue 3984: Sage 3.1.2.alpha1 - Linux Itanium - segfaults in chmm.pyx and hmm.pyx
 
-Issue created by migration from https://trac.sagemath.org/ticket/3984
-
-Original creator: mabshoff
-
-Original creation time: 2008-08-29 01:10:45
-
+archive/issues_003984.json:
+```json
+{
+    "body": "Assignee: mabshoff\n\nCC:  bober\n\nOn Iras:\n\n```\nmabshoff@iras:~/build-3.1.2.alpha2/sage-3.1.2.alpha1-iras-gcc-4.3.1> ./sage -t -long devel/sage/sage/stats/hmm/chmm.pyx\nsage -t -long devel/sage/sage/stats/hmm/chmm.pyx            \n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n\n\nA mysterious error (perphaps a memory error?) occurred, which may have crashed doctest.\n         [4.4 s]\nexit code: 768\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long devel/sage/sage/stats/hmm/chmm.pyx\nTotal time for all tests: 4.4 seconds\nmabshoff@iras:~/build-3.1.2.alpha2/sage-3.1.2.alpha1-iras-gcc-4.3.1> ./sage -t -long devel/sage/sage/stats/hmm/hmm.pyx\nsage -t -long devel/sage/sage/stats/hmm/hmm.pyx             \n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n\n\nA mysterious error (perphaps a memory error?) occurred, which may have crashed doctest.\n         [3.0 s]\nexit code: 768\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long devel/sage/sage/stats/hmm/hmm.pyx\nTotal time for all tests: 3.0 seconds\nmabshoff@iras:~/build-3.1.2.alpha2/sage-3.1.2.alpha1-iras-gcc-4.3.1> \n```\n\n\nAll other doctests for 3.1.2.alpha1 pass on that box.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3984\n\n",
+    "created_at": "2008-08-29T01:10:45Z",
+    "labels": [
+        "doctest coverage",
+        "blocker",
+        "bug"
+    ],
+    "title": "Sage 3.1.2.alpha1 - Linux Itanium - segfaults in chmm.pyx and hmm.pyx",
+    "type": "issue",
+    "url": "https://github.com/sagemath/sagetest/issues/3984",
+    "user": "mabshoff"
+}
+```
 Assignee: mabshoff
 
 CC:  bober
@@ -69,10 +79,25 @@ Cheers,
 
 Michael
 
+Issue created by migration from https://trac.sagemath.org/ticket/3984
+
+
+
+
 
 ---
 
-Comment by mabshoff created at 2008-08-29 01:14:54
+archive/issue_comments_028648.json:
+```json
+{
+    "body": "For chmm.pyx with verbose:\n\n```\nTrying:\n    m = hmm.GaussianHiddenMarkovModel([[RealNumber('0.4'),RealNumber('0.6')],[RealNumber('0.1'),RealNumber('0.9')]], [(RealNumber('0.0'),RealNumber('1.0')),(Integer(1),Integer(1))], [Integer(1),Integer(2)], \"Test 1\", normalize=False)###line 306:_sage_    >>> m = hmm.GaussianHiddenMarkovModel([[0.4,0.6],[0.1,0.9]], [(0.0,1.0),(1,1)], [1,2], \"Test 1\", normalize=False)\nExpecting nothing\n\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\nand gdb says:\n\n```\nProgram received signal SIGSEGV, Segmentation fault.\n[Switching to Thread 2305843009213933088 (LWP 29739)]\n__pyx_pf_4sage_5stats_3hmm_4chmm_25GaussianHiddenMarkovModel__initialize_state (__pyx_v_self=<value optimized out>, __pyx_v_pi=0x200000000d6e9998) at sage/stats/hmm/chmm.c:2748\n2748          ((__pyx_v_state->out_a[0])[__pyx_v_j]) = __pyx_6;\n(gdb) bt\n#0  __pyx_pf_4sage_5stats_3hmm_4chmm_25GaussianHiddenMarkovModel__initialize_state (__pyx_v_self=<value optimized out>, __pyx_v_pi=0x200000000d6e9998) at sage/stats/hmm/chmm.c:2748\n#1  0x4000000000215400 in PyCFunction_Call (func=<value optimized out>, arg=0x200000000b73d390, kw=0x0) at Objects/methodobject.c:82\n#2  0x400000000001fe10 in PyObject_Call (func=0x200000000db0b0a8, arg=0x200000000b73d390, kw=0x0) at Objects/abstract.c:1861\n#3  0x200000000d9113a0 in __pyx_pf_4sage_5stats_3hmm_4chmm_25GaussianHiddenMarkovModel___init__ (__pyx_v_self=0x200000000db0b0a8, __pyx_args=<value optimized out>, __pyx_kwds=<value optimized out>) at sage/stats/hmm/chmm.c:2369\n#4  0x40000000000fb730 in type_call (type=0x200000000d94a4e8, args=0x200000000b73d390, kwds=0x200000000d6f7518) at Objects/typeobject.c:436\n#5  0x400000000001fe10 in PyObject_Call (func=0x200000000d94a4e8, arg=0x200000000047fe10, kw=0x60000000016f73d0) at Objects/abstract.c:1861\n#6  0x4000000000153610 in PyEval_EvalFrameEx (f=0x60000000017140a0, throwflag=<value optimized out>) at Python/ceval.c:3784\n#7  0x4000000000158be0 in PyEval_EvalCodeEx (co=<value optimized out>, globals=0x60000000019f4340, locals=<value optimized out>, args=0x0, argcount=<value optimized out>, kws=0x0, kwcount=0, defs=0x0, defcount=Cannot access memory at address 0x1\n) at Python/ceval.c:2836\n#8  0x40000000001541f0 in PyEval_EvalFrameEx (f=0x60000000016f69b0, throwflag=<value optimized out>) at Python/ceval.c:494\n#9  0x4000000000158be0 in PyEval_EvalCodeEx (co=<value optimized out>, globals=0x20, locals=<value optimized out>, args=0x60000000018ea780, argcount=<value optimized out>, kws=0x60000000018ea7b0, kwcount=0, defs=0x0, defcount=Cannot access memory at address 0x1\n) at Python/ceval.c:2836\n#10 0x4000000000155620 in PyEval_EvalFrameEx (f=0x60000000018ea5d0, throwflag=<value optimized out>) at Python/ceval.c:3669\n#11 0x4000000000158be0 in PyEval_EvalCodeEx (co=<value optimized out>, globals=0x10, locals=<value optimized out>, args=0x60000000000c9310, argcount=<value optimized out>, kws=0x60000000000c9330, kwcount=0, defs=0x20000000018c5c60, defcount=Cannot access memory at address 0x1\n)\n    at Python/ceval.c:2836\n#12 0x4000000000154ba0 in PyEval_EvalFrameEx (f=0x60000000000c9130, throwflag=<value optimized out>) at Python/ceval.c:3669\n#13 0x4000000000158be0 in PyEval_EvalCodeEx (co=<value optimized out>, globals=0x20000000005108a0, locals=<value optimized out>, args=0x600000000006f630, argcount=<value optimized out>, kws=0x60000000000bd9d8, kwcount=3, defs=0x200000000188ceb0, defcount=Cannot access memory at address 0x1\n)\n    at Python/ceval.c:2836\n#14 0x4000000000154ba0 in PyEval_EvalFrameEx (f=0x60000000000bd810, throwflag=<value optimized out>) at Python/ceval.c:3669\n#15 0x4000000000158be0 in PyEval_EvalCodeEx (co=<value optimized out>, globals=0x600000000006f630, locals=<value optimized out>, args=0x0, argcount=<value optimized out>, kws=0x0, kwcount=0, defs=0x0, defcount=Cannot access memory at address 0x1\n) at Python/ceval.c:2836\n#16 0x4000000000158eb0 in PyEval_EvalCode (co=0x2000000000518300, globals=0x600000000006f630, locals=0x600000000006f630) at Python/ceval.c:494\n#17 0x40000000001a5af0 in PyRun_FileExFlags (fp=<value optimized out>, filename=0x607ffffffeeb276c \"/home/mabshoff/build-3.1.2.alpha2/sage-3.1.2.alpha1-iras-gcc-4.3.1/tmp/.doctest_chmm.py\", start=<value optimized out>, globals=0x600000000006f630, \n    locals=0x600000000006f630, closeit=1, flags=0x607ffffffeeb1f70) at Python/pythonrun.c:1273\n#18 0x40000000001a62e0 in PyRun_SimpleFileExFlags (fp=0x600000000004c010, filename=0x607ffffffeeb276c \"/home/mabshoff/build-3.1.2.alpha2/sage-3.1.2.alpha1-iras-gcc-4.3.1/tmp/.doctest_chmm.py\", closeit=1, flags=0x607ffffffeeb1f70) at Python/pythonrun.c:879\n#19 0x4000000000016060 in Py_Main (argc=2, argv=0x607ffffffeeb22a8) at Modules/main.c:523\n#20 0x4000000000014350 in main (argc=2, argv=0x607ffffffeeb22a8) at ./Modules/python.c:23\n```\n\n\n\n\nhmm.pyx on the other side:\n\n```\nTrying:\n    a.viterbi([Integer(1),Integer(0),Integer(0),Integer(1),Integer(0),Integer(0),Integer(1),Integer(1)])###line 678:_sage_    >>> a.viterbi([1,0,0,1,0,0,1,1])\nExpecting:\n    ([1, 0, 0, 1, 1, 0, 1, 1], -11.062453224772216)\n\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\nand gdb says:\n\n```\nProgram received signal SIGSEGV, Segmentation fault.\n[Switching to Thread 2305843009213933088 (LWP 29797)]\n__pyx_pf_4sage_5stats_3hmm_3hmm_25DiscreteHiddenMarkovModel_viterbi (__pyx_v_self=<value optimized out>, __pyx_v_seq=0x200000000dac9f38) at sage/stats/hmm/hmm.c:5310\n5310        __pyx_4 = PyInt_FromLong((__pyx_v_path[__pyx_8])); if (unlikely(!__pyx_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 702; __pyx_clineno = __LINE__; goto __pyx_L1_error;}\n(gdb) bt\n#0  __pyx_pf_4sage_5stats_3hmm_3hmm_25DiscreteHiddenMarkovModel_viterbi (__pyx_v_self=<value optimized out>, __pyx_v_seq=0x200000000dac9f38) at sage/stats/hmm/hmm.c:5310\n#1  0x4000000000154950 in PyEval_EvalFrameEx (f=0x600000000172cec0, throwflag=<value optimized out>) at Python/ceval.c:3561\n#2  0x4000000000158be0 in PyEval_EvalCodeEx (co=<value optimized out>, globals=0x60000000018a78a0, locals=<value optimized out>, args=0x0, argcount=<value optimized out>, kws=0x0, kwcount=0, defs=0x0, defcount=143, closure=0xc0f005800c212018)\n    at Python/ceval.c:2836\n#3  0x40000000001541f0 in PyEval_EvalFrameEx (f=0x600000000171b9f0, throwflag=<value optimized out>) at Python/ceval.c:494\n#4  0x4000000000158be0 in PyEval_EvalCodeEx (co=<value optimized out>, globals=0x20, locals=<value optimized out>, args=0x6000000001993ea0, argcount=<value optimized out>, kws=0x6000000001993ed0, kwcount=0, defs=0x0, defcount=143, closure=0xc0f005800c212018)\n    at Python/ceval.c:2836\n#5  0x4000000000155620 in PyEval_EvalFrameEx (f=0x6000000001993cf0, throwflag=<value optimized out>) at Python/ceval.c:3669\n#6  0x4000000000158be0 in PyEval_EvalCodeEx (co=<value optimized out>, globals=0x10, locals=<value optimized out>, args=0x60000000000cd980, argcount=<value optimized out>, kws=0x60000000000cd9a0, kwcount=0, defs=0x20000000018b5c60, defcount=143, \n    closure=0xc0f005800c212018) at Python/ceval.c:2836\n#7  0x4000000000154ba0 in PyEval_EvalFrameEx (f=0x60000000000cd7a0, throwflag=<value optimized out>) at Python/ceval.c:3669\n#8  0x4000000000158be0 in PyEval_EvalCodeEx (co=<value optimized out>, globals=0x20000000005108a0, locals=<value optimized out>, args=0x600000000006f630, argcount=<value optimized out>, kws=0x60000000000bd9d8, kwcount=3, defs=0x2000000001885bb0, defcount=143, \n    closure=0xc0f005800c212018) at Python/ceval.c:2836\n#9  0x4000000000154ba0 in PyEval_EvalFrameEx (f=0x60000000000bd810, throwflag=<value optimized out>) at Python/ceval.c:3669\n#10 0x4000000000158be0 in PyEval_EvalCodeEx (co=<value optimized out>, globals=0x600000000006f630, locals=<value optimized out>, args=0x0, argcount=<value optimized out>, kws=0x0, kwcount=0, defs=0x0, defcount=143, closure=0xc0f005800c212018)\n    at Python/ceval.c:2836\n#11 0x4000000000158eb0 in PyEval_EvalCode (co=0x20000000005160a8, globals=0x600000000006f630, locals=0x600000000006f630) at Python/ceval.c:494\n#12 0x40000000001a5af0 in PyRun_FileExFlags (fp=<value optimized out>, filename=0x607ffffffef9e76d \"/home/mabshoff/build-3.1.2.alpha2/sage-3.1.2.alpha1-iras-gcc-4.3.1/tmp/.doctest_hmm.py\", start=<value optimized out>, globals=0x600000000006f630, \n    locals=0x600000000006f630, closeit=1, flags=0x607ffffffef9df70) at Python/pythonrun.c:1273\n#13 0x40000000001a62e0 in PyRun_SimpleFileExFlags (fp=0x600000000004c010, filename=0x607ffffffef9e76d \"/home/mabshoff/build-3.1.2.alpha2/sage-3.1.2.alpha1-iras-gcc-4.3.1/tmp/.doctest_hmm.py\", closeit=1, flags=0x607ffffffef9df70) at Python/pythonrun.c:879\n#14 0x4000000000016060 in Py_Main (argc=2, argv=0x607ffffffef9e2a8) at Modules/main.c:523\n#15 0x4000000000014350 in main (argc=2, argv=0x607ffffffef9e2a8) at ./Modules/python.c:23\n```\n\n\nI will poke around with valgrind on an x86-64 box to see if it picks up anything before actually looking at the code.\n\nCheers,\n\nMichael",
+    "created_at": "2008-08-29T01:14:54Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3984",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3984#issuecomment-28648",
+    "user": "mabshoff"
+}
+```
 
 For chmm.pyx with verbose:
 
@@ -193,9 +218,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-29 07:10:31
+archive/issue_comments_028649.json:
+```json
+{
+    "body": "Here are some issues picked up by valgrind in chmm.pyx:\n\n```\n==26797== Invalid write of size 1\n==26797==    at 0x4A1E100: strcpy (mc_replace_strmem.c:268)\n==26797==    by 0x1EDDAFE1: __pyx_pf_4sage_5stats_3hmm_4chmm_27ContinuousHiddenMarkovModel___init__ (chmm.c:2127)\n==26797==    by 0x459350: type_call (typeobject.c:436)\n==26797==    by 0x415832: PyObject_Call (abstract.c:1861)\n==26797==    by 0x482DB9: PyEval_EvalFrameEx (ceval.c:3784)\n==26797==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==26797==    by 0x484AF1: PyEval_EvalFrameEx (ceval.c:494)\n==26797==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==26797==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)\n==26797==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==26797==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)\n==26797==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==26797==  Address 0x77d4b0d is 0 bytes after a block of size 5 alloc'd\n==26797==    at 0x4A1BDEB: malloc (vg_replace_malloc.c:207)\n==26797==    by 0x1EDDAE1D: __pyx_pf_4sage_5stats_3hmm_4chmm_27ContinuousHiddenMarkovModel___init__ (chmm.c:1943)\n==26797==    by 0x459350: type_call (typeobject.c:436)\n==26797==    by 0x415832: PyObject_Call (abstract.c:1861)\n==26797==    by 0x482DB9: PyEval_EvalFrameEx (ceval.c:3784)\n==26797==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==26797==    by 0x484AF1: PyEval_EvalFrameEx (ceval.c:494)\n==26797==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==26797==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)\n==26797==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==26797==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)\n==26797==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n\n==26797== Invalid write of size 1\n==26797==    at 0x4A1E100: strcpy (mc_replace_strmem.c:268)\n==26797==    by 0x1EDDAFE1: __pyx_pf_4sage_5stats_3hmm_4chmm_27ContinuousHiddenMarkovModel___init__ (chmm.c:2127)\n==26797==    by 0x45402B: wrap_init (typeobject.c:4043)\n==26797==    by 0x415832: PyObject_Call (abstract.c:1861)\n==26797==    by 0x47D750: PyEval_CallObjectWithKeywords (ceval.c:3442)\n==26797==    by 0x4CC304: wrapperdescr_call (descrobject.c:304)\n==26797==    by 0x415832: PyObject_Call (abstract.c:1861)\n==26797==    by 0x47D750: PyEval_CallObjectWithKeywords (ceval.c:3442)\n==26797==    by 0x1EDD736C: __pyx_pf_4sage_5stats_3hmm_4chmm_25GaussianHiddenMarkovModel___init__ (chmm.c:2307)\n==26797==    by 0x459350: type_call (typeobject.c:436)\n==26797==    by 0x415832: PyObject_Call (abstract.c:1861)\n==26797==    by 0x482DB9: PyEval_EvalFrameEx (ceval.c:3784)\n==26797==  Address 0x598b686 is 0 bytes after a block of size 6 alloc'd\n==26797==    at 0x4A1BDEB: malloc (vg_replace_malloc.c:207)\n==26797==    by 0x1EDDAE1D: __pyx_pf_4sage_5stats_3hmm_4chmm_27ContinuousHiddenMarkovModel___init__ (chmm.c:1943)\n==26797==    by 0x45402B: wrap_init (typeobject.c:4043)\n==26797==    by 0x415832: PyObject_Call (abstract.c:1861)\n==26797==    by 0x47D750: PyEval_CallObjectWithKeywords (ceval.c:3442)\n==26797==    by 0x4CC304: wrapperdescr_call (descrobject.c:304)\n==26797==    by 0x415832: PyObject_Call (abstract.c:1861)\n==26797==    by 0x47D750: PyEval_CallObjectWithKeywords (ceval.c:3442)\n==26797==    by 0x1EDD736C: __pyx_pf_4sage_5stats_3hmm_4chmm_25GaussianHiddenMarkovModel___init__ (chmm.c:2307)\n==26797==    by 0x459350: type_call (typeobject.c:436)\n==26797==    by 0x415832: PyObject_Call (abstract.c:1861)\n==26797==    by 0x482DB9: PyEval_EvalFrameEx (ceval.c:3784)\n\n==26797== Invalid read of size 1\n==26797==    at 0x4A1CDA3: strlen (mc_replace_strmem.c:242)\n==26797==    by 0x44DACA: PyString_FromString (stringobject.c:108)\n==26797==    by 0x1EDD644A: __pyx_pf_4sage_5stats_3hmm_4chmm_27ContinuousHiddenMarkovModel_name (chmm.c:2191)\n==26797==    by 0x415832: PyObject_Call (abstract.c:1861)\n==26797==    by 0x1EDD6DFC: __pyx_pf_4sage_5stats_3hmm_4chmm_25GaussianHiddenMarkovModel___reduce__ (chmm.c:2899)\n==26797==    by 0x415832: PyObject_Call (abstract.c:1861)\n==26797==    by 0x47D750: PyEval_CallObjectWithKeywords (ceval.c:3442)\n==26797==    by 0x458C0F: object_reduce_ex (typeobject.c:2867)\n==26797==    by 0x415832: PyObject_Call (abstract.c:1861)\n==26797==    by 0x7DE9723: save (cPickle.c:2498)\n==26797==    by 0x7DEB587: cpm_dumps (cPickle.c:2580)\n==26797==    by 0x415832: PyObject_Call (abstract.c:1861)\n==26797==  Address 0x123ea484 is 0 bytes after a block of size 4 alloc'd\n==26797==    at 0x4A1BDEB: malloc (vg_replace_malloc.c:207)\n==26797==    by 0x1EDDAE1D: __pyx_pf_4sage_5stats_3hmm_4chmm_27ContinuousHiddenMarkovModel___init__ (chmm.c:1943)\n==26797==    by 0x45402B: wrap_init (typeobject.c:4043)\n==26797==    by 0x415832: PyObject_Call (abstract.c:1861)\n==26797==    by 0x47D750: PyEval_CallObjectWithKeywords (ceval.c:3442)\n==26797==    by 0x4CC304: wrapperdescr_call (descrobject.c:304)\n==26797==    by 0x415832: PyObject_Call (abstract.c:1861)\n==26797==    by 0x47D750: PyEval_CallObjectWithKeywords (ceval.c:3442)\n==26797==    by 0x1EDD736C: __pyx_pf_4sage_5stats_3hmm_4chmm_25GaussianHiddenMarkovModel___init__ (chmm.c:2307)\n==26797==    by 0x459350: type_call (typeobject.c:436)\n==26797==    by 0x415832: PyObject_Call (abstract.c:1861)\n==26797==    by 0x482DB9: PyEval_EvalFrameEx (ceval.c:3784)\n\n==26797== Invalid read of size 1\n==26797==    at 0x4A1CDA3: strlen (mc_replace_strmem.c:242)\n==26797==    by 0x44DACA: PyString_FromString (stringobject.c:108)\n==26797==    by 0x1EDD7992: __pyx_pf_4sage_5stats_3hmm_4chmm_25GaussianHiddenMarkovModel___repr__ (chmm.c:3548)\n==26797==    by 0x443669: PyObject_Repr (object.c:361)\n==26797==    by 0x429ECB: PyFile_WriteObject (fileobject.c:2195)\n==26797==    by 0x4AD248: sys_displayhook (sysmodule.c:114)\n==26797==    by 0x415832: PyObject_Call (abstract.c:1861)\n==26797==    by 0x47D750: PyEval_CallObjectWithKeywords (ceval.c:3442)\n==26797==    by 0x483599: PyEval_EvalFrameEx (ceval.c:1531)\n==26797==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==26797==    by 0x484AF1: PyEval_EvalFrameEx (ceval.c:494)\n==26797==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==26797==  Address 0x57ddd8c is 0 bytes after a block of size 4 alloc'd\n==26797==    at 0x4A1BDEB: malloc (vg_replace_malloc.c:207)\n==26797==    by 0x1EDDAE1D: __pyx_pf_4sage_5stats_3hmm_4chmm_27ContinuousHiddenMarkovModel___init__ (chmm.c:1943)\n==26797==    by 0x45402B: wrap_init (typeobject.c:4043)\n==26797==    by 0x415832: PyObject_Call (abstract.c:1861)\n==26797==    by 0x47D750: PyEval_CallObjectWithKeywords (ceval.c:3442)\n==26797==    by 0x4CC304: wrapperdescr_call (descrobject.c:304)\n==26797==    by 0x415832: PyObject_Call (abstract.c:1861)\n==26797==    by 0x47D750: PyEval_CallObjectWithKeywords (ceval.c:3442)\n==26797==    by 0x1EDD736C: __pyx_pf_4sage_5stats_3hmm_4chmm_25GaussianHiddenMarkovModel___init__ (chmm.c:2307)\n==26797==    by 0x459350: type_call (typeobject.c:436)\n==26797==    by 0x415832: PyObject_Call (abstract.c:1861)\n==26797==    by 0x1EDD5E62: __pyx_pf_4sage_5stats_3hmm_4chmm_unpickle_gaussian_hmm_v0 (chmm.c:5465)\n\n==26797== Invalid read of size 1\n==26797==    at 0x4A1DEF8: memcpy (mc_replace_strmem.c:402)\n==26797==    by 0x44DB39: PyString_FromString (stringobject.c:136)\n==26797==    by 0x1EDD7992: __pyx_pf_4sage_5stats_3hmm_4chmm_25GaussianHiddenMarkovModel___repr__ (chmm.c:3548)\n==26797==    by 0x443669: PyObject_Repr (object.c:361)\n==26797==    by 0x429ECB: PyFile_WriteObject (fileobject.c:2195)\n==26797==    by 0x4AD248: sys_displayhook (sysmodule.c:114)\n==26797==    by 0x415832: PyObject_Call (abstract.c:1861)\n==26797==    by 0x47D750: PyEval_CallObjectWithKeywords (ceval.c:3442)\n==26797==    by 0x483599: PyEval_EvalFrameEx (ceval.c:1531)\n==26797==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==26797==    by 0x484AF1: PyEval_EvalFrameEx (ceval.c:494)\n==26797==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==26797==  Address 0x57ddd8c is 0 bytes after a block of size 4 alloc'd\n==26797==    at 0x4A1BDEB: malloc (vg_replace_malloc.c:207)\n==26797==    by 0x1EDDAE1D: __pyx_pf_4sage_5stats_3hmm_4chmm_27ContinuousHiddenMarkovModel___init__ (chmm.c:1943)\n==26797==    by 0x45402B: wrap_init (typeobject.c:4043)\n==26797==    by 0x415832: PyObject_Call (abstract.c:1861)\n==26797==    by 0x47D750: PyEval_CallObjectWithKeywords (ceval.c:3442)\n==26797==    by 0x4CC304: wrapperdescr_call (descrobject.c:304)\n==26797==    by 0x415832: PyObject_Call (abstract.c:1861)\n==26797==    by 0x47D750: PyEval_CallObjectWithKeywords (ceval.c:3442)\n==26797==    by 0x1EDD736C: __pyx_pf_4sage_5stats_3hmm_4chmm_25GaussianHiddenMarkovModel___init__ (chmm.c:2307)\n==26797==    by 0x459350: type_call (typeobject.c:436)\n==26797==    by 0x415832: PyObject_Call (abstract.c:1861)\n==26797==    by 0x1EDD5E62: __pyx_pf_4sage_5stats_3hmm_4chmm_unpickle_gaussian_hmm_v0 (chmm.c:5465)\n\n==26797== Invalid read of size 1\n==26797==    at 0x4A1CDA3: strlen (mc_replace_strmem.c:242)\n==26797==    by 0x44DACA: PyString_FromString (stringobject.c:108)\n==26797==    by 0x1EDD644A: __pyx_pf_4sage_5stats_3hmm_4chmm_27ContinuousHiddenMarkovModel_name (chmm.c:2191)\n==26797==    by 0x4841D7: PyEval_EvalFrameEx (ceval.c:3557)\n==26797==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==26797==    by 0x484AF1: PyEval_EvalFrameEx (ceval.c:494)\n==26797==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==26797==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)\n==26797==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==26797==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)\n==26797==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==26797==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)\n==26797==  Address 0x57a88c2 is 0 bytes after a block of size 10 alloc'd\n==26797==    at 0x4A1BDEB: malloc (vg_replace_malloc.c:207)\n==26797==    by 0x1EDDAE1D: __pyx_pf_4sage_5stats_3hmm_4chmm_27ContinuousHiddenMarkovModel___init__ (chmm.c:1943)\n==26797==    by 0x45402B: wrap_init (typeobject.c:4043)\n==26797==    by 0x415832: PyObject_Call (abstract.c:1861)\n==26797==    by 0x47D750: PyEval_CallObjectWithKeywords (ceval.c:3442)\n==26797==    by 0x4CC304: wrapperdescr_call (descrobject.c:304)\n==26797==    by 0x415832: PyObject_Call (abstract.c:1861)\n==26797==    by 0x47D750: PyEval_CallObjectWithKeywords (ceval.c:3442)\n==26797==    by 0x1EDD736C: __pyx_pf_4sage_5stats_3hmm_4chmm_25GaussianHiddenMarkovModel___init__ (chmm.c:2307)\n==26797==    by 0x459350: type_call (typeobject.c:436)\n==26797==    by 0x415832: PyObject_Call (abstract.c:1861)\n==26797==    by 0x482DB9: PyEval_EvalFrameEx (ceval.c:3784)\n```\n\nThere are also some leaks:\n\n```\n==26797== LEAK SUMMARY:\n==26797==    definitely lost: 1,156 bytes in 25 blocks.\n==26797==    indirectly lost: 233 bytes in 14 blocks.\n==26797==      possibly lost: 308,845 bytes in 858 blocks.\n==26797==    still reachable: 31,948,070 bytes in 191,804 blocks.\n==26797==         suppressed: 305,691 bytes in 4,843 blocks.\n```\n",
+    "created_at": "2008-08-29T07:10:31Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3984",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3984#issuecomment-28649",
+    "user": "mabshoff"
+}
+```
 
 Here are some issues picked up by valgrind in chmm.pyx:
 
@@ -376,9 +412,20 @@ There are also some leaks:
 
 
 
+
 ---
 
-Comment by mabshoff created at 2008-08-29 07:13:27
+archive/issue_comments_028650.json:
+```json
+{
+    "body": "And here are some issues from hmm.pyx:\n\n```\n==27543== Invalid write of size 1\n==27543==    at 0x4A1E100: strcpy (mc_replace_strmem.c:268)\n==27543==    by 0x1E9BBE38: __pyx_pf_4sage_5stats_3hmm_3hmm_25DiscreteHiddenMarkovModel___init__ (hmm.c:2786)\n==27543==    by 0x459350: type_call (typeobject.c:436)\n==27543==    by 0x415832: PyObject_Call (abstract.c:1861)\n==27543==    by 0x482DB9: PyEval_EvalFrameEx (ceval.c:3784)\n==27543==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==27543==    by 0x484AF1: PyEval_EvalFrameEx (ceval.c:494)\n==27543==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==27543==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)\n==27543==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==27543==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)\n==27543==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==27543==  Address 0x894890a is 0 bytes after a block of size 10 alloc'd\n==27543==    at 0x4A1BDEB: malloc (vg_replace_malloc.c:207)\n==27543==    by 0x1E9BBCF6: __pyx_pf_4sage_5stats_3hmm_3hmm_25DiscreteHiddenMarkovModel___init__ (hmm.c:1886)\n==27543==    by 0x459350: type_call (typeobject.c:436)\n==27543==    by 0x415832: PyObject_Call (abstract.c:1861)\n==27543==    by 0x482DB9: PyEval_EvalFrameEx (ceval.c:3784)\n==27543==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==27543==    by 0x484AF1: PyEval_EvalFrameEx (ceval.c:494)\n==27543==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==27543==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)\n==27543==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==27543==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)\n==27543==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n\n==27543== Invalid read of size 1\n==27543==    at 0x4A1CDA3: strlen (mc_replace_strmem.c:242)\n==27543==    by 0x44DACA: PyString_FromString (stringobject.c:108)\n==27543==    by 0x1E9B3C4A: __pyx_pf_4sage_5stats_3hmm_3hmm_25DiscreteHiddenMarkovModel_name (hmm.c:4097)\n==27543==    by 0x4841D7: PyEval_EvalFrameEx (ceval.c:3557)\n==27543==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==27543==    by 0x484AF1: PyEval_EvalFrameEx (ceval.c:494)\n==27543==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==27543==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)\n==27543==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==27543==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)\n==27543==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==27543==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)\n==27543==  Address 0x894890a is 0 bytes after a block of size 10 alloc'd\n==27543==    at 0x4A1BDEB: malloc (vg_replace_malloc.c:207)\n==27543==    by 0x1E9BBCF6: __pyx_pf_4sage_5stats_3hmm_3hmm_25DiscreteHiddenMarkovModel___init__ (hmm.c:1886)\n==27543==    by 0x459350: type_call (typeobject.c:436)\n==27543==    by 0x415832: PyObject_Call (abstract.c:1861)\n==27543==    by 0x482DB9: PyEval_EvalFrameEx (ceval.c:3784)\n==27543==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==27543==    by 0x484AF1: PyEval_EvalFrameEx (ceval.c:494)\n==27543==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==27543==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)\n==27543==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==27543==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)\n==27543==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n\n==27543== Conditional jump or move depends on uninitialised value(s)\n==27543==    at 0x1EAE4670: ghmm_dmodel_generate_sequences (in /scratch/mabshoff/release-cycle/sage-3.1.2.alpha1/local/lib/libghmm.so.1.0.0)\n==27543==    by 0x1E9BFB12: __pyx_pf_4sage_5stats_3hmm_3hmm_25DiscreteHiddenMarkovModel_sample (hmm.c:4522)\n==27543==    by 0x483E46: PyEval_EvalFrameEx (ceval.c:3573)\n==27543==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==27543==    by 0x484AF1: PyEval_EvalFrameEx (ceval.c:494)\n==27543==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==27543==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)\n==27543==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==27543==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)\n==27543==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==27543==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)\n==27543==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n\n==27543== Invalid read of size 1\n==27543==    at 0x4A1CDA3: strlen (mc_replace_strmem.c:242)\n==27543==    by 0x44DACA: PyString_FromString (stringobject.c:108)\n==27543==    by 0x1E9B3C4A: __pyx_pf_4sage_5stats_3hmm_3hmm_25DiscreteHiddenMarkovModel_name (hmm.c:4097)\n==27543==    by 0x415832: PyObject_Call (abstract.c:1861)\n==27543==    by 0x1E9B6AFC: __pyx_pf_4sage_5stats_3hmm_3hmm_25DiscreteHiddenMarkovModel___reduce__ (hmm.c:3704)\n==27543==    by 0x415832: PyObject_Call (abstract.c:1861)\n==27543==    by 0x47D750: PyEval_CallObjectWithKeywords (ceval.c:3442)\n==27543==    by 0x458C0F: object_reduce_ex (typeobject.c:2867)\n==27543==    by 0x415832: PyObject_Call (abstract.c:1861)\n==27543==    by 0x7DE9723: save (cPickle.c:2498)\n==27543==    by 0x7DEB587: cpm_dumps (cPickle.c:2580)\n==27543==    by 0x415832: PyObject_Call (abstract.c:1861)\n==27543==  Address 0x5a82f9a is 0 bytes after a block of size 10 alloc'd\n==27543==    at 0x4A1BDEB: malloc (vg_replace_malloc.c:207)\n==27543==    by 0x1E9BBCF6: __pyx_pf_4sage_5stats_3hmm_3hmm_25DiscreteHiddenMarkovModel___init__ (hmm.c:1886)\n==27543==    by 0x459350: type_call (typeobject.c:436)\n==27543==    by 0x415832: PyObject_Call (abstract.c:1861)\n==27543==    by 0x482DB9: PyEval_EvalFrameEx (ceval.c:3784)\n==27543==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==27543==    by 0x484AF1: PyEval_EvalFrameEx (ceval.c:494)\n==27543==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==27543==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)\n==27543==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==27543==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)\n==27543==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n\n==27543== Invalid read of size 1\n==27543==    at 0x4A1DFC3: memcpy (mc_replace_strmem.c:402)\n==27543==    by 0x44DB39: PyString_FromString (stringobject.c:136)\n==27543==    by 0x1E9B3C4A: __pyx_pf_4sage_5stats_3hmm_3hmm_25DiscreteHiddenMarkovModel_name (hmm.c:4097)\n==27543==    by 0x4841D7: PyEval_EvalFrameEx (ceval.c:3557)\n==27543==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==27543==    by 0x484AF1: PyEval_EvalFrameEx (ceval.c:494)\n==27543==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==27543==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)\n==27543==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==27543==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)\n==27543==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==27543==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)\n==27543==  Address 0x57beb62 is 0 bytes after a block of size 10 alloc'd\n==27543==    at 0x4A1BDEB: malloc (vg_replace_malloc.c:207)\n==27543==    by 0x1E9BBCF6: __pyx_pf_4sage_5stats_3hmm_3hmm_25DiscreteHiddenMarkovModel___init__ (hmm.c:1886)\n==27543==    by 0x459350: type_call (typeobject.c:436)\n==27543==    by 0x415832: PyObject_Call (abstract.c:1861)\n==27543==    by 0x1E9B3A05: __pyx_pf_4sage_5stats_3hmm_3hmm_unpickle_discrete_hmm_v0 (hmm.c:5875)\n==27543==    by 0x415832: PyObject_Call (abstract.c:1861)\n==27543==    by 0x47D750: PyEval_CallObjectWithKeywords (ceval.c:3442)\n==27543==    by 0x7DE575D: Instance_New (cPickle.c:3651)\n==27543==    by 0x7DEB7EE: load_reduce (cPickle.c:4417)\n==27543==    by 0x7DEF35C: load (cPickle.c:4712)\n==27543==    by 0x7DEFBFE: cpm_loads (cPickle.c:5488)\n==27543==    by 0x415832: PyObject_Call (abstract.c:1861)\n\n==27543== Invalid read of size 1\n==27543==    at 0x4A1CDA3: strlen (mc_replace_strmem.c:242)\n==27543==    by 0x44DACA: PyString_FromString (stringobject.c:108)\n==27543==    by 0x1E9B506C: __pyx_pf_4sage_5stats_3hmm_3hmm_25DiscreteHiddenMarkovModel___repr__ (hmm.c:3899)\n==27543==    by 0x443669: PyObject_Repr (object.c:361)\n==27543==    by 0x429ECB: PyFile_WriteObject (fileobject.c:2195)\n==27543==    by 0x4AD248: sys_displayhook (sysmodule.c:114)\n==27543==    by 0x415832: PyObject_Call (abstract.c:1861)\n==27543==    by 0x47D750: PyEval_CallObjectWithKeywords (ceval.c:3442)\n==27543==    by 0x483599: PyEval_EvalFrameEx (ceval.c:1531)\n==27543==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==27543==    by 0x484AF1: PyEval_EvalFrameEx (ceval.c:494)\n==27543==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==27543==  Address 0x530b132 is 0 bytes after a block of size 10 alloc'd\n==27543==    at 0x4A1BDEB: malloc (vg_replace_malloc.c:207)\n==27543==    by 0x1E9BBCF6: __pyx_pf_4sage_5stats_3hmm_3hmm_25DiscreteHiddenMarkovModel___init__ (hmm.c:1886)\n==27543==    by 0x459350: type_call (typeobject.c:436)\n==27543==    by 0x415832: PyObject_Call (abstract.c:1861)\n==27543==    by 0x1E9B3A05: __pyx_pf_4sage_5stats_3hmm_3hmm_unpickle_discrete_hmm_v0 (hmm.c:5875)\n==27543==    by 0x483E46: PyEval_EvalFrameEx (ceval.c:3573)\n==27543==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==27543==    by 0x484AF1: PyEval_EvalFrameEx (ceval.c:494)\n==27543==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==27543==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)\n==27543==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==27543==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)\n```\n\nThere are also some memory leaks:\n\n```\n==27543== LEAK SUMMARY:\n==27543==    definitely lost: 1,548 bytes in 52 blocks.\n==27543==    indirectly lost: 8,984 bytes in 58 blocks.\n==27543==      possibly lost: 333,965 bytes in 908 blocks.\n==27543==    still reachable: 31,962,542 bytes in 191,843 blocks.\n==27543==         suppressed: 305,691 bytes in 4,843 blocks.\n```\n\n\nCheers,\n\nMichael",
+    "created_at": "2008-08-29T07:13:27Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3984",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3984#issuecomment-28650",
+    "user": "mabshoff"
+}
+```
 
 And here are some issues from hmm.pyx:
 
@@ -550,16 +597,38 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-05 10:17:59
+archive/issue_comments_028651.json:
+```json
+{
+    "body": "Changing status from new to assigned.",
+    "created_at": "2008-09-05T10:17:59Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3984",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3984#issuecomment-28651",
+    "user": "mabshoff"
+}
+```
 
 Changing status from new to assigned.
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-12 23:12:28
+archive/issue_comments_028652.json:
+```json
+{
+    "body": "This ticket fixes most of the issues. Since we will disable doctests in the two files due to a bug in ghmm itself that only hit us on Itanium the other ones will be fixed down the road.\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-12T23:12:28Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3984",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3984#issuecomment-28652",
+    "user": "mabshoff"
+}
+```
 
 This ticket fixes most of the issues. Since we will disable doctests in the two files due to a bug in ghmm itself that only hit us on Itanium the other ones will be fixed down the road.
 
@@ -568,9 +637,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-12 23:14:06
+archive/issue_comments_028653.json:
+```json
+{
+    "body": "Oops, wrong ticket. But nearly all of the valgrind issue are fixed.\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-12T23:14:06Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3984",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3984#issuecomment-28653",
+    "user": "mabshoff"
+}
+```
 
 Oops, wrong ticket. But nearly all of the valgrind issue are fixed.
 
@@ -579,9 +659,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by mabshoff created at 2008-09-13 02:04:41
+archive/issue_comments_028654.json:
+```json
+{
+    "body": "We will deal with this post 3.1.2.\n\nCheers,\n\nMichael",
+    "created_at": "2008-09-13T02:04:41Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3984",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3984#issuecomment-28654",
+    "user": "mabshoff"
+}
+```
 
 We will deal with this post 3.1.2.
 
@@ -590,9 +681,20 @@ Cheers,
 Michael
 
 
+
 ---
 
-Comment by was created at 2009-04-23 07:37:00
+archive/issue_comments_028655.json:
+```json
+{
+    "body": "On Solaris 3.4.1 x86 right now only two tiny doctests fail:\n\n\n```\n-bash-3.00$ sage -t *\nsage -t  \"devel/sage-main/sage/stats/hmm/all.py\"            \n         [0.3 s]\nsage -t  \"devel/sage-main/sage/stats/hmm/chmm.pyx\"          \n**********************************************************************\nFile \"/home/mabshoff/build-3.4.1.rc4/sage-3.4.1.rc4-fulvia-gcc-4.3.3/devel/sage-main/sage/stats/hmm/chmm.pyx\", line 592:\n    sage: m.log_likelihood(finance.TimeSeries(100).randomize('normal',10,1))\nExpected:\n    -5010.151947016132\nGot:\n    -5010.1519470161311\n**********************************************************************\n1 items had failures:\n   1 of  13 in __main__.example_18\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/mabshoff/build-3.4.1.rc4/sage-3.4.1.rc4-fulvia-gcc-4.3.3/tmp/.doctest_chmm.py\n         [5.8 s]\nexit code: 1024\nsage -t  \"devel/sage-main/sage/stats/hmm/hmm.pyx\"           \n**********************************************************************\nFile \"/home/mabshoff/build-3.4.1.rc4/sage-3.4.1.rc4-fulvia-gcc-4.3.3/devel/sage-main/sage/stats/hmm/hmm.pyx\", line 629:\n    sage: a.log_likelihood([0,0])\nExpected:\n    -inf\nGot:\n    -Infinity\n**********************************************************************\n1 items had failures:\n   1 of  12 in __main__.example_18\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/mabshoff/build-3.4.1.rc4/sage-3.4.1.rc4-fulvia-gcc-4.3.3/tmp/.doctest_hmm.py\n         [7.3 s]\nexit code: 1024\nsage -t  \"devel/sage-main/sage/stats/hmm/misc.pxi\"          \n         [4.9 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n```\n",
+    "created_at": "2009-04-23T07:37:00Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3984",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3984#issuecomment-28655",
+    "user": "was"
+}
+```
 
 On Solaris 3.4.1 x86 right now only two tiny doctests fail:
 
@@ -640,23 +742,56 @@ The following tests failed:
 
 
 
+
 ---
 
-Comment by was created at 2009-06-15 23:22:35
+archive/issue_comments_028656.json:
+```json
+{
+    "body": "Changing priority from blocker to critical.",
+    "created_at": "2009-06-15T23:22:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3984",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3984#issuecomment-28656",
+    "user": "was"
+}
+```
 
 Changing priority from blocker to critical.
 
 
+
 ---
 
-Comment by was created at 2009-06-15 23:22:35
+archive/issue_comments_028657.json:
+```json
+{
+    "body": "If we've released for months and months without fixing this, it doesn't make sense to keep it as a blocker.",
+    "created_at": "2009-06-15T23:22:35Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3984",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3984#issuecomment-28657",
+    "user": "was"
+}
+```
 
 If we've released for months and months without fixing this, it doesn't make sense to keep it as a blocker.
 
 
+
 ---
 
-Comment by was created at 2010-01-17 12:21:16
+archive/issue_comments_028658.json:
+```json
+{
+    "body": "1. I tried enabling the doctests on x86_64, and they still work fine. \n\n2. Here's the backtrace on Itanium, where there are still segfaults:\n\n\n```\nProgram received signal SIGSEGV, Segmentation fault.\n[Switching to Thread 2305843009213932800 (LWP 558)] \n0x2000000011100c51 in __pyx_pf_4sage_5stats_3hmm_3hmm_25DiscreteHiddenMarkovModel_viterbi (\n    __pyx_v_self=0x2000000011639f58, __pyx_v_seq=0x2000000011660098)                       \n    at sage/stats/hmm/hmm.c:6368                                                           \n6368        __pyx_t_4 = PyInt_FromLong((__pyx_v_path[__pyx_t_8])); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[1]; __pyx_lineno = 702; __pyx_clineno = __LINE__; goto __pyx_L1_error;}\n(gdb) bt                                                                                       \n#0  0x2000000011100c51 in __pyx_pf_4sage_5stats_3hmm_3hmm_25DiscreteHiddenMarkovModel_viterbi  \n    (__pyx_v_self=0x2000000011639f58, __pyx_v_seq=0x2000000011660098)                          \n    at sage/stats/hmm/hmm.c:6368                                                               \n#1  0x400000000019efc0 in PyEval_EvalFrameEx (f=0x600000000209e630,                            \n    throwflag=<value optimized out>) at Python/ceval.c:3694                                    \n#2  0x40000000001a26c0 in PyEval_EvalCodeEx (co=<value optimized out>,                         \n    globals=0x6000000002118960, locals=0x6000000002118960, args=0x0, argcount=0, kws=0x0,\n    kwcount=0, defs=0x0, defcount=Cannot access memory at address 0x219a\n) at Python/ceval.c:2968\n#3  0x40000000001a28e0 in PyEval_EvalCode (co=0x200000001163c8a0, globals=0x6000000002118960,\n...\n```\n\n\nUsing --verbose we get an example:\n\n\n```\nsage:  a = hmm.DiscreteHiddenMarkovModel([[0.1,0.9],[0.1,0.9]], [[0.9,0.1],[0.1,0.9]], [0.5,0.5])\nsage: a.viterbi([1,0,0,1,0,0,1,1])\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n",
+    "created_at": "2010-01-17T12:21:16Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3984",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3984#issuecomment-28658",
+    "user": "was"
+}
+```
 
 1. I tried enabling the doctests on x86_64, and they still work fine. 
 
@@ -703,9 +838,20 @@ SAGE will now terminate (sorry).
 
 
 
+
 ---
 
-Comment by was created at 2010-01-17 12:29:01
+archive/issue_comments_028659.json:
+```json
+{
+    "body": "At this point a natural strategy is the following:\n\n (1) try the above with standalone GHMM (but basically the one that comes with Sage).  This will very likely fail due to this likely being a GHMM bug. \n\n (2) try the above calculation on itanium with the latest svn standalone version of GHMM.  \n\n (3) If 2 works, it's a no brainer -- we have to upgrade GHMM.  If 2 fails, then report upstream.",
+    "created_at": "2010-01-17T12:29:01Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3984",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3984#issuecomment-28659",
+    "user": "was"
+}
+```
 
 At this point a natural strategy is the following:
 
@@ -716,22 +862,55 @@ At this point a natural strategy is the following:
  (3) If 2 works, it's a no brainer -- we have to upgrade GHMM.  If 2 fails, then report upstream.
 
 
+
 ---
 
-Comment by bober created at 2012-03-21 00:31:13
+archive/issue_comments_028660.json:
+```json
+{
+    "body": "Changing status from new to needs_review.",
+    "created_at": "2012-03-21T00:31:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3984",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3984#issuecomment-28660",
+    "user": "bober"
+}
+```
 
 Changing status from new to needs_review.
 
 
+
 ---
 
-Comment by bober created at 2012-03-21 00:31:13
+archive/issue_comments_028661.json:
+```json
+{
+    "body": "This is really old and it must have been fixed at some point if tests actually pass sometimes on iras.",
+    "created_at": "2012-03-21T00:31:13Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3984",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3984#issuecomment-28661",
+    "user": "bober"
+}
+```
 
 This is really old and it must have been fixed at some point if tests actually pass sometimes on iras.
 
 
+
 ---
 
-Comment by was created at 2012-03-21 21:10:26
+archive/issue_comments_028662.json:
+```json
+{
+    "body": "Resolution: fixed",
+    "created_at": "2012-03-21T21:10:26Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/3984",
+    "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/3984#issuecomment-28662",
+    "user": "was"
+}
+```
 
 Resolution: fixed
